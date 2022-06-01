@@ -1,24 +1,15 @@
 import React from "react";
+import CssBaseline from "@mui/material/CssBaseline";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { EcoScorePage, LogosPage, SettingsPage, QuestionsPage, InsightsPage } from "./pages";
+import ResponsiveAppBar from "./components/ResponsiveAppBar";
 
 export default function App() {
   return (
     <Router>
+      <CssBaseline />
       <div>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/eco-score">eco-score</Link>
-            </li>
-            <li>
-              <Link to="/logos">logos</Link>
-            </li>
-            <li>
-              <Link to="/settings">settings</Link>
-            </li>
-          </ul>
-        </nav>
+        <ResponsiveAppBar />
         <Routes>
           <Route path="eco-score" element={<EcoScorePage />} />
           <Route path="logos" element={<LogosPage />} />
