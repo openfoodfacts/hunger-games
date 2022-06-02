@@ -1,0 +1,205 @@
+{
+  "questions": {
+    "category": "カテゴリー",
+    "label": "ラベル",
+    "brand": "ブランド",
+    "brands": "ブランド",
+    "ingredients": "原材料",
+    "product_weight": "製品の重量",
+    "popularity_sort": "人気順",
+    "see_examples": "このサンプルを見る ",
+    "no": "いいえ",
+    "skip": "Skip",
+    "yes": "はい",
+    "no_questions_remaining": "質問はありません",
+    "countries": "国",
+    "view": "表示",
+    "edit": "編集",
+    "hide_images": "画像を非表示（読み込み速度優先）",
+    "display_images": "画像を表示",
+    "annotations": "Annotations",
+    "last_annotations": "最後の注釈",
+    "remaining_annotations": "残り:",
+    "annotated_annotations": "注釈付き",
+    "filters": {
+      "short_label": {
+        "value": "値",
+        "country": "国",
+        "brand": "ブランド",
+        "popularity": "人気"
+      },
+      "long_label": {
+        "type": "質問タイプ",
+        "value": "提案された値",
+        "country": "生産国",
+        "brand": "製品ブランド",
+        "popularity": "人気順",
+        "edit": ""
+      },
+      "placeholders": {
+        "value": "値(ファンタ, ja: オーガニック,…)",
+        "brand": "auchan, danone, herta, ..."
+      },
+      "actions": {
+        "edit": "フィルターを編集",
+        "cancel": "取消",
+        "apply": "適用"
+      }
+    }
+  },
+  "menu": {
+    "games": "ゲーム",
+    "questions": "質問",
+    "logos": "Logos",
+    "manage": "管理する",
+    "insights": "情報",
+    "nutritions": "栄養成分表",
+    "settings": "設定",
+    "eco-score": "エコスコア"
+  },
+  "insights": {
+    "insights": "情報",
+    "barcode": "バーコード",
+    "barcode_placeholder": "バーコード",
+    "value_tag": "タグ名",
+    "value_placeholder": "例: ja: ミューズリー, ビオルグ,…",
+    "type": "Type",
+    "annotated": "注釈付き",
+    "annotation": "注記",
+    "not_annotated": "注釈なし",
+    "all": "全て",
+    "label": "ラベル",
+    "product_weight": "製品の重量",
+    "category": "カテゴリー",
+    "expiration_date": "有効期限",
+    "packager_code": "パッケージコード",
+    "skipped": "スキップ (-1)",
+    "rejected": "拒否 (0)",
+    "accepted": "承認済み (1)",
+    "search": "検索",
+    "count": "カウント",
+    "id": "ID",
+    "value": "値：",
+    "created_at": "作成日",
+    "completed_at": "終了日",
+    "automatic": "自動"
+  },
+  "logos": {
+    "annotation": "注釈: ",
+    "annotations": "ロゴの注釈",
+    "select_all": "すべて選択",
+    "unselect_all": "すべての選択を解除",
+    "distance": "距離：",
+    "value": "値：",
+    "submit": "投稿",
+    "type": "Type",
+    "label": "ラベル",
+    "brand": "ブランド（会社名）",
+    "packager_code": "パッケージコード",
+    "packaging": "パッケージング",
+    "qr_code": "QRコード",
+    "category": "カテゴリー",
+    "nutrition_label": "栄養成分表",
+    "store": "店舗",
+    "detail": "ロゴの詳細",
+    "id": "ロゴ ID:",
+    "barcode": "バーコード:",
+    "full_image": "元画像",
+    "update": "更新",
+    "no_found": "ロゴが見つかりません",
+    "search": "検索",
+    "number_of_results": "結果の数: "
+  },
+  "settings": {
+    "settings": "設定",
+    "language": "言語",
+    "save": "保存"
+  },
+  "helper": {
+    "welcome": {
+      "page1": {
+        "title": "ようこそ",
+        "text1": "Hunger Gamesは、さまざまな方法でOpenFoodFactsに貢献するのに役立つミニゲームのコレクションです。製品を分類してニュートリスコアとエコスコアを取得し、エコスコアのラベルを検証し、ブランドと重みを追加し、ロゴ認識システムが検出したロゴについて学習できるようにします。",
+        "text2": "これらはあなたができるエキサイティングなことの一部です。あなたの貢献のクレジットを取得するには、OpenFoodFactsのWebサイトに接続していることを確認してください。間違えた場合は、ウェブサイトにアクセスして修正してください。",
+        "text3": "ゲームについて疑問がある場合は、ページの右上にヘルパーがあります。Slackの＃hunger-gamesチャンネルで私たちに連絡できます。"
+      },
+      "page2": {
+        "title": "質問",
+        "text1": "私たちのAIにはたくさんの質問があります。ここでは、彼女が画像で検出した情報を確認または拒否する必要があります。",
+        "text2": "よくわからない場合は、遠慮なく質問をスキップしてください。他にもたくさんあります。"
+      },
+      "page3": {
+        "title": "Logos",
+        "text1": "製品の世界はロゴでいっぱいです。どれが同じかをAIに説明してください。"
+      }
+    },
+    "logos": {
+      "page1": {
+        "title": "選択",
+        "text1": "同じロゴの切り抜きをクリックして選択します",
+        "text2": "選択したロゴはページの上部に表示されます。もう一度クリックすると選択を解除できます。"
+      },
+      "page2": {
+        "title": "警告",
+        "text1": "切り抜きに複数のロゴが含まれている場合は、選択しないでください。",
+        "text2": "切り抜きにロゴの一部だけが含まれている場合は、選択できます"
+      },
+      "page3": {
+        "title": "検証",
+        "text1": "ロゴの種類（ラベル、ブランド、QRコードなど）を示します",
+        "text2": "ラベルまたはブランドロゴの場合は、それがどちらであるかを示してください",
+        "text3": "これで選択内容を登録できます",
+        "text4": "ありがとうございました！"
+      }
+    },
+    "previous": "前へ",
+    "next": "次",
+    "close": "閉じる"
+  },
+  "nutrition": {
+    "instructions": {
+      "cropTheTable": "画像を切り抜いて注釈を簡単にします",
+      "verifyNutrimentDetected": "検出された栄養素が正しいかどうかを示します",
+      "selectMissingNutriments": "不足している栄養素を追加します（単語にボックスがなくてもクリックできます）",
+      "selectValue": "次の栄養価を選択します: "
+    },
+    "steps": {
+      "1": "切り抜き",
+      "2": "特別な値",
+      "3": "栄養成分の選択",
+      "4": "値の選択"
+    },
+    "next": "次のステップ",
+    "prev": "前のステップ",
+    "skip": "この製品をスキップする",
+    "validate": "表を検証する",
+    "unselect_picture": "栄養情報なし",
+    "basis": "データの目的： ",
+    "servingSize": "一人前の分量",
+    "value": "値",
+    "nutriments": {
+      "nutriment_energy-kj": "エネルギー (kJ)",
+      "nutriment_energy-kcal": "エネルギー (kCal)",
+      "nutriment_fat": "脂肪",
+      "nutriment_saturated-fat": "飽和脂肪酸",
+      "nutriment_carbohydrates": "炭水化物",
+      "nutriment_sugars": "砂糖",
+      "nutriment_proteins": "タンパク質",
+      "nutriment_fiber": "繊維",
+      "nutriment_salt": "食塩",
+      "nutriment_sodium": "ナトリウム"
+    },
+    "history": {
+      "title": "セッション履歴",
+      "status": "状態",
+      "product name": "製品名",
+      "view": "ページを見る",
+      "edit": "ページの編集",
+      "SKIP": "無視済み",
+      "VALIDATED": "編集済み",
+      "WRONG_IMAGE": "未選択の画像",
+      "close": "閉じる",
+      "open": "履歴を開く"
+    }
+  }
+}

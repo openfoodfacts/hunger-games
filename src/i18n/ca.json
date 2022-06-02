@@ -1,0 +1,205 @@
+{
+  "questions": {
+    "category": "categoria",
+    "label": "etiqueta",
+    "brand": "marca",
+    "brands": "Marques",
+    "ingredients": "Ingredients",
+    "product_weight": "pes del producte",
+    "popularity_sort": "Ordena per popularitat",
+    "see_examples": "See examples of this ",
+    "no": "No",
+    "skip": "Omet",
+    "yes": "Sí",
+    "no_questions_remaining": "No queden preguntes",
+    "countries": "Països",
+    "view": "Vista",
+    "edit": "Edita",
+    "hide_images": "Amaga les imatges (es carrega més ràpid)",
+    "display_images": "Mostra imatges",
+    "annotations": "Annotations",
+    "last_annotations": "Darreres anotacions",
+    "remaining_annotations": "Restant:",
+    "annotated_annotations": "Anotat",
+    "filters": {
+      "short_label": {
+        "value": "valor",
+        "country": "país",
+        "brand": "marca",
+        "popularity": "popularity"
+      },
+      "long_label": {
+        "type": "Tipus de pregunta",
+        "value": "Proposta de valor",
+        "country": "País de producció",
+        "brand": "Marca del producte",
+        "popularity": "Ordena per popularitat",
+        "edit": ""
+      },
+      "placeholders": {
+        "value": "Valor (fanta, en: orgànic,...)",
+        "brand": "auchan, danone, herta, ..."
+      },
+      "actions": {
+        "edit": "Edita els filtres",
+        "cancel": "Cancel·lar",
+        "apply": "Aplicar"
+      }
+    }
+  },
+  "menu": {
+    "games": "Jocs",
+    "questions": "Preguntes",
+    "logos": "Logos",
+    "manage": "Gestiona",
+    "insights": "Més detalls",
+    "nutritions": "Informació nutricional",
+    "settings": "Preferències",
+    "eco-score": "Eco-puntuació"
+  },
+  "insights": {
+    "insights": "Més detalls",
+    "barcode": "Codi de barres",
+    "barcode_placeholder": "codi de barres",
+    "value_tag": "Etiqueta",
+    "value_placeholder": "ex: en: mueslis, bjorg,...",
+    "type": "Type",
+    "annotated": "Anotat",
+    "annotation": "Notes",
+    "not_annotated": "Cap anotació",
+    "all": "Tots",
+    "label": "Etiqueta",
+    "product_weight": "Pes del producte",
+    "category": "Categoria",
+    "expiration_date": "Data de caducitat",
+    "packager_code": "Codi empaquetador",
+    "skipped": "Botat (-1)",
+    "rejected": "Rebutjat (0)",
+    "accepted": "Acceptat (1)",
+    "search": "Cerca",
+    "count": "Recompte",
+    "id": "Id",
+    "value": "Value",
+    "created_at": "Creat a",
+    "completed_at": "Completat a",
+    "automatic": "Automàtic"
+  },
+  "logos": {
+    "annotation": "Anotació: ",
+    "annotations": "Indicacions de logo",
+    "select_all": "Selecciona-ho tot",
+    "unselect_all": "Desmarca-ho tot",
+    "distance": "Distància:",
+    "value": "Value",
+    "submit": "Envia",
+    "type": "Type",
+    "label": "Etiqueta",
+    "brand": "Marca",
+    "packager_code": "Codi empaquetador",
+    "packaging": "Empaquetament",
+    "qr_code": "Codi QR",
+    "category": "Categoria",
+    "nutrition_label": "Etiqueta nutricional",
+    "store": "Botiga",
+    "detail": "Detall del logotip",
+    "id": "Identificador del logotip:",
+    "barcode": "Codi de barres:",
+    "full_image": "Imatge completa",
+    "update": "Actualitza",
+    "no_found": "No s'ha trobat cap logotip",
+    "search": "Cerca",
+    "number_of_results": "Nombre de resultats:"
+  },
+  "settings": {
+    "settings": "Preferències",
+    "language": "Idioma",
+    "save": "Desa"
+  },
+  "helper": {
+    "welcome": {
+      "page1": {
+        "title": "Benvinguts",
+        "text1": "Hunger Games és una col·lecció de mini-jocs que ajuden a contribuir a Open Food Facts de moltes maneres. Classifiqueu un producte per a obtenir el Nutri-Score i l'Eco-Score, ajudeu a validar les etiquetes de l’Eco-Score, afegiu marques i pesos, ajudeu el nostre sistema de reconeixement de logotips a aprendre sobre els logotips que ha detectat.",
+        "text2": "Aquestes són algunes de les coses emocionants que podreu fer. Assegureu-vos d’estar connectat al lloc web Open Food Facts per obtenir reconeixement per les vostres contribucions. Si cometeu un error, si us plau, preneu-vos el temps que calgui per corregir-lo tot dirigint-vos al lloc web.",
+        "text3": "En cas de dubte sobre el joc, teniu un ajudant a la part superior dreta de la pàgina i podeu contactar amb nosaltres al canal #hunger-games de Slack"
+      },
+      "page2": {
+        "title": "Preguntes",
+        "text1": "La nostra Intel·ligència Artificial (IA) té moltes preguntes per a tu. Aquí hauràs de confirmar o rebutjar la informació que ha detectat en les imatges.",
+        "text2": "No dubtis a saltar-te una pregunta si no estàs segur de la resposta, n'hi ha moltes més"
+      },
+      "page3": {
+        "title": "Logos",
+        "text1": "El món dels productes està ple de logotips. Expliqueu a la nostra IA quins són iguals."
+      }
+    },
+    "logos": {
+      "page1": {
+        "title": "Selecció",
+        "text1": "Seleccioneu els retalls d’un mateix logotip fent-hi clic",
+        "text2": "Els logotips seleccionats van a la part superior de la pàgina; podeu desmarcar-los fent clic de nou a sobre"
+      },
+      "page2": {
+        "title": "Avís",
+        "text1": "Si el retall conté diversos logotips, no el seleccioneu.",
+        "text2": "Si el retall només conté una part d'un logotip, podeu seleccionar-lo"
+      },
+      "page3": {
+        "title": "Validar",
+        "text1": "Indiqueu el tipus de logotip (etiqueta, marca, codi QR, ...)",
+        "text2": "Si es tracta d’una etiqueta o logotip d'una marca, indiqueu quin és",
+        "text3": "Ara podeu enviar la selecció",
+        "text4": "Gràcies :)"
+      }
+    },
+    "previous": "Previ",
+    "next": "Següent",
+    "close": "Tanca"
+  },
+  "nutrition": {
+    "instructions": {
+      "cropTheTable": "Retalleu la imatge per simplificar l'anotació",
+      "verifyNutrimentDetected": "Indiqueu si el nutrient detectat és correcte",
+      "selectMissingNutriments": "Afegiu els nutrients que falten (podeu clicar encara que la paraula no tingui cap quadre)",
+      "selectValue": "Seleccioneu el valor nutricional de: "
+    },
+    "steps": {
+      "1": "Escapça",
+      "2": "Característiques especials",
+      "3": "Selecció de nutrients",
+      "4": "Selecció de valors"
+    },
+    "next": "Següent pas",
+    "prev": "Pas anterior",
+    "skip": "Botau el producte",
+    "validate": "Valida la graella",
+    "unselect_picture": "Sense dades nutricionals",
+    "basis": "dades per a: ",
+    "servingSize": "ració",
+    "value": "valor",
+    "nutriments": {
+      "nutriment_energy-kj": "Energia (kJ)",
+      "nutriment_energy-kcal": "Energia (kcal)",
+      "nutriment_fat": "Greixos",
+      "nutriment_saturated-fat": "Greixos saturats",
+      "nutriment_carbohydrates": "Carbohidrat",
+      "nutriment_sugars": "Sucres",
+      "nutriment_proteins": "Proteïnes",
+      "nutriment_fiber": "Fibra",
+      "nutriment_salt": "Sal",
+      "nutriment_sodium": "Sodi"
+    },
+    "history": {
+      "title": "Historial de sessions",
+      "status": "estat",
+      "product name": "nom del producte",
+      "view": "visualitza la pàgina",
+      "edit": "edita la pàgina",
+      "SKIP": "ignorat",
+      "VALIDATED": "modificat",
+      "WRONG_IMAGE": "imatge no seleccionada",
+      "close": "tanca",
+      "open": "obre l'historial"
+    }
+  }
+}

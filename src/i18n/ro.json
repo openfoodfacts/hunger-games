@@ -1,0 +1,205 @@
+{
+  "questions": {
+    "category": "categorie",
+    "label": "eticheta",
+    "brand": "marca",
+    "brands": "Mărci",
+    "ingredients": "Ingrediente",
+    "product_weight": "greutatea produsului",
+    "popularity_sort": "Sortați după popularitate",
+    "see_examples": "Vedeți exemple în acest sens ",
+    "no": "Nu",
+    "skip": "Omitere",
+    "yes": "Da",
+    "no_questions_remaining": "Nu au mai rămas întrebări",
+    "countries": "Țări",
+    "view": "Vizualizare",
+    "edit": "Modificare",
+    "hide_images": "Ascunde imagini (încărcare mai rapidă)",
+    "display_images": "Afișează imagini",
+    "annotations": "Adnotări",
+    "last_annotations": "Ultimele adnotări",
+    "remaining_annotations": "Rămas:",
+    "annotated_annotations": "Adnotat",
+    "filters": {
+      "short_label": {
+        "value": "valoare",
+        "country": "tara",
+        "brand": "marca",
+        "popularity": "popularitate"
+      },
+      "long_label": {
+        "type": "Tip de întrebare",
+        "value": "Valoare propusă",
+        "country": "Țara produsului",
+        "brand": "Marca de produs",
+        "popularity": "Sortați după popularitate",
+        "edit": ""
+      },
+      "placeholders": {
+        "value": "Valoare (fanta, en:organic,...)",
+        "brand": "auchan, danone, herta,..."
+      },
+      "actions": {
+        "edit": "Editați filtrele",
+        "cancel": "Anulare",
+        "apply": "Aplică"
+      }
+    }
+  },
+  "menu": {
+    "games": "Jocuri",
+    "questions": "Întrebări",
+    "logos": "Logo",
+    "manage": "Administrează",
+    "insights": "Perspective",
+    "nutritions": "Valori nutriționale",
+    "settings": "Configurări",
+    "eco-score": "Eco-scor"
+  },
+  "insights": {
+    "insights": "Perspective",
+    "barcode": "Cod de bare",
+    "barcode_placeholder": "cod de bare",
+    "value_tag": "Etichetă de valoare",
+    "value_placeholder": "ex: en:mueslis, bjorg,...",
+    "type": "Tip",
+    "annotated": "Adnotat",
+    "annotation": "Adnotare",
+    "not_annotated": "Nu este adnotat",
+    "all": "Toate",
+    "label": "Eticheta",
+    "product_weight": "Greutatea produsului",
+    "category": "Categorie",
+    "expiration_date": "Data expirării",
+    "packager_code": "Codul ambalatorului",
+    "skipped": "Omis (-1)",
+    "rejected": "Respins (0)",
+    "accepted": "Acceptat (1)",
+    "search": "Caută",
+    "count": "Numară",
+    "id": "ID",
+    "value": "Valoare",
+    "created_at": "Creat la",
+    "completed_at": "Completat la",
+    "automatic": "Automat"
+  },
+  "logos": {
+    "annotation": "Adnotare: ",
+    "annotations": "Adnotări de logo",
+    "select_all": "Selectează tot",
+    "unselect_all": "Deselectează-le pe toate",
+    "distance": "Distanţă:",
+    "value": "Valoare",
+    "submit": "Trimite",
+    "type": "Tip",
+    "label": "Eticheta",
+    "brand": "Marca",
+    "packager_code": "Codul ambalatorului",
+    "packaging": "Ambalare",
+    "qr_code": "cod QR",
+    "category": "Categorie",
+    "nutrition_label": "Valori nutriționale",
+    "store": "Magazine",
+    "detail": "Detaliu logo",
+    "id": "ID logo:",
+    "barcode": "Cod de bare:",
+    "full_image": "Imagine completă",
+    "update": "Actualizați",
+    "no_found": "Nu a fost găsită nicio siglă",
+    "search": "Caută",
+    "number_of_results": "Numar de rezultate:"
+  },
+  "settings": {
+    "settings": "Configurări",
+    "language": "Limbă",
+    "save": "Salvează"
+  },
+  "helper": {
+    "welcome": {
+      "page1": {
+        "title": "Bine ați venit",
+        "text1": "Hunger Games este o colecție de mini-jocuri care contribuie la Open Food Facts în multe feluri. Clasificați un produs pentru a obține Nutri-Score și Eco-Score, ajutați la validarea etichetelor pentru Eco-Score, adăugați mărci și greutăți, ajutați sistemul nostru de recunoaștere a siglelor să învețe despre siglele pe care le-a detectat.",
+        "text2": "Acestea sunt câteva dintre lucrurile interesante pe care le veți putea face. Asigurați-vă că sunteți conectat la site-ul Open Food Facts pentru a obține credit pentru contribuțiile dvs. Dacă faceți o greșeală, vă rugăm să faceți timp pentru a o corecta accesând site-ul web.",
+        "text3": "În cazul în care ai îndoieli cu privire la joc, ai un asistent în partea dreaptă sus a paginii și ne puteți contacta pe canalul #hunger-games"
+      },
+      "page2": {
+        "title": "Întrebări",
+        "text1": "AI-ul nostru are o mulțime de întrebări pentru tine. Aici va trebui să confirmați sau să infirmați informațiile pe care le-a detectat pe imagini.",
+        "text2": "Nu ezitați să omiteți o întrebare dacă nu sunteți sigur, există multe altele"
+      },
+      "page3": {
+        "title": "Logo",
+        "text1": "Lumea produselor este plină de logo-uri. Explicați AI-ului nostru care sunt aceleași."
+      }
+    },
+    "logos": {
+      "page1": {
+        "title": "Selecție",
+        "text1": "Selectați decupările aceluiași logo făcând clic pe ele",
+        "text2": "Logo-urile selectate merg în partea de sus a paginii, le poți deselecta făcând clic din nou pe ele"
+      },
+      "page2": {
+        "title": "Atenţie",
+        "text1": "Dacă decuparea conține mai multe sigle, nu o selectați.",
+        "text2": "Dacă decuparea conține doar o parte parțială a unui logo, îl puteți selecta"
+      },
+      "page3": {
+        "title": "Validați",
+        "text1": "Indicați tipul de logo (etichetă, marcă, QRcode, ...)",
+        "text2": "Dacă este o etichetă sau un logo al mărcii, indicați care este",
+        "text3": "Acum puteți trimite selecția dvs",
+        "text4": "Mulțumesc :)"
+      }
+    },
+    "previous": "Anterior",
+    "next": "Următoarea",
+    "close": "Închidere"
+  },
+  "nutrition": {
+    "instructions": {
+      "cropTheTable": "Decupați imaginea pentru a simplifica adnotarea",
+      "verifyNutrimentDetected": "Indicați dacă nutrientul detectat este corect",
+      "selectMissingNutriments": "Adăugați nutrienții lipsă (puteți da click chiar dacă cuvântul nu are casetă)",
+      "selectValue": "Selectați valoarea nutritivă a: "
+    },
+    "steps": {
+      "1": "Decupaţi",
+      "2": "Valori speciale",
+      "3": "Selecția nutrienților",
+      "4": "Selectarea valorilor"
+    },
+    "next": "Pasul următor",
+    "prev": "Pas anterior",
+    "skip": "Sari peste acest produs",
+    "validate": "Validați tabelul",
+    "unselect_picture": "Fără informații nutriționale",
+    "basis": "date pentru: ",
+    "servingSize": "mărimea porției",
+    "value": "valoare",
+    "nutriments": {
+      "nutriment_energy-kj": "Valoare energetică (kJ)",
+      "nutriment_energy-kcal": "Energie (kCal)",
+      "nutriment_fat": "Grăsimi",
+      "nutriment_saturated-fat": "Acizi grași saturați",
+      "nutriment_carbohydrates": "Glucide",
+      "nutriment_sugars": "Zaharuri",
+      "nutriment_proteins": "Proteine",
+      "nutriment_fiber": "Fibre",
+      "nutriment_salt": "Sare",
+      "nutriment_sodium": "Sodiu"
+    },
+    "history": {
+      "title": "Istoricul Sesiunii",
+      "status": "Stare",
+      "product name": "Numele produsului",
+      "view": "Vezi pagină",
+      "edit": "Editați pagina",
+      "SKIP": "Ignoră",
+      "VALIDATED": "editat",
+      "WRONG_IMAGE": "imagine neselectată",
+      "close": "Închideți",
+      "open": "deschide istoric"
+    }
+  }
+}

@@ -7,32 +7,37 @@ import Typography from "@mui/material/Typography";
 import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
-import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
-import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
-import AdbIcon from "@mui/icons-material/Adb";
+import ListSubheader from "@mui/material/ListSubheader";
+import MuiLink from "@mui/material/Link";
+
+import logo from "../assets/logo_30.png";
 import { Link } from "react-router-dom";
 
-const pages = ["eco-score", "logos", "settings", "questions", "insights"];
+import { useTranslation } from "react-i18next";
+
+// Object wit no url are subheader in the menu
+const pages = [
+  { translationKey: "menu.games" },
+  { url: "questions", translationKey: "menu.questions" },
+  { url: "logos", translationKey: "menu.logos" },
+  { url: "eco-score", translationKey: "menu.eco-score" },
+  { translationKey: "menu.manage" },
+  { url: "insights", translationKey: "menu.insights" },
+  { url: "settings", translationKey: "menu.settings" },
+];
 
 const ResponsiveAppBar = () => {
+  const { t } = useTranslation();
   const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const [anchorElUser, setAnchorElUser] = React.useState(null);
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
-  const handleOpenUserMenu = (event) => {
-    setAnchorElUser(event.currentTarget);
-  };
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
-  };
-
-  const handleCloseUserMenu = () => {
-    setAnchorElUser(null);
   };
 
   return (
@@ -62,14 +67,17 @@ const ResponsiveAppBar = () => {
                 display: { xs: "block", md: "none" },
               }}
             >
-              {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu} component={Link} to={`/${page}`}>
-                  <Typography textAlign="center">{page}</Typography>
-                </MenuItem>
-              ))}
+              {pages.map((page) =>
+                page.url ? (
+                  <MenuItem key={page.translationKey} onClick={handleCloseNavMenu} component={Link} to={`/${page.url}`}>
+                    <Typography textAlign="center">{t(page.translationKey)}</Typography>
+                  </MenuItem>
+                ) : (
+                  <ListSubheader key={page.translationKey}>{t(page.translationKey)}</ListSubheader>
+                )
+              )}
             </Menu>
           </Box>
-          <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
           <Typography
             variant="h5"
             noWrap
@@ -86,11 +94,13 @@ const ResponsiveAppBar = () => {
               textDecoration: "none",
             }}
           >
-            LOGO
+            Hunger Game
           </Typography>
 
           {/* Desktop content */}
-          <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
+          <MuiLink sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} href="https://world.openfoodfacts.org/" target="_blank">
+            <img src={logo} width="30px" height="30px" alt="OpenFoodFact logo" />
+          </MuiLink>
           <Typography
             variant="h6"
             noWrap
@@ -106,14 +116,16 @@ const ResponsiveAppBar = () => {
               textDecoration: "none",
             }}
           >
-            LOGO
+            Hunger Game
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-            {pages.map((page) => (
-              <Button key={page} onClick={handleCloseNavMenu} sx={{ my: 2, color: "white", display: "block" }} component={Link} to={`/${page}`}>
-                {page}
-              </Button>
-            ))}
+            {pages.map((page) =>
+              page.url ? (
+                <Button key={page.url} onClick={handleCloseNavMenu} sx={{ my: 2, color: "white", display: "block" }} component={Link} to={`/${page}`}>
+                  {t(page.translationKey)}
+                </Button>
+              ) : null
+            )}
           </Box>
         </Toolbar>
       </Container>

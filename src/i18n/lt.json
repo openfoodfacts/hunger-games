@@ -1,0 +1,205 @@
+{
+  "questions": {
+    "category": "kategorija",
+    "label": "etiketė",
+    "brand": "prekės ženklas",
+    "brands": "Prekės ženklai",
+    "ingredients": "Sudėtis",
+    "product_weight": "produkto svoris",
+    "popularity_sort": "Rikiuoti pagal populiarumą",
+    "see_examples": "See examples of this ",
+    "no": "Ne",
+    "skip": "Skip",
+    "yes": "Taip",
+    "no_questions_remaining": "Neliko klausimų",
+    "countries": "Šalys",
+    "view": "Žiūrėti",
+    "edit": "Edit",
+    "hide_images": "Paslėpti nuotraukas (greitesnis užkrovimas)",
+    "display_images": "Rodyti nuotraukas",
+    "annotations": "Annotations",
+    "last_annotations": "Paskutinės anotacijos",
+    "remaining_annotations": "Liko:",
+    "annotated_annotations": "Anotuotas",
+    "filters": {
+      "short_label": {
+        "value": "vertė",
+        "country": "šalis",
+        "brand": "prekės ženklas",
+        "popularity": "populiarumas"
+      },
+      "long_label": {
+        "type": "Klausimo tipas",
+        "value": "Siūloma vertė",
+        "country": "Produkto šalis",
+        "brand": "Produkto prekės ženklas",
+        "popularity": "Rikiuoti pagal populiarumą",
+        "edit": ""
+      },
+      "placeholders": {
+        "value": "Vertė (fanta, en:organic,...)",
+        "brand": "auchan, danone, herta, ..."
+      },
+      "actions": {
+        "edit": "Redaguoti filtrus",
+        "cancel": "Cancel",
+        "apply": "Taikyti"
+      }
+    }
+  },
+  "menu": {
+    "games": "Žaidimai",
+    "questions": "Klausimai",
+    "logos": "Logos",
+    "manage": "Tvarkyti",
+    "insights": "Įžvalgos",
+    "nutritions": "Nutrition facts",
+    "settings": "Settings",
+    "eco-score": "Ekologinis balas"
+  },
+  "insights": {
+    "insights": "Įžvalgos",
+    "barcode": "Barkodas",
+    "barcode_placeholder": "brūkšninis kodas",
+    "value_tag": "Vertės žyma",
+    "value_placeholder": "pvz.: en:mueslis, bjorg,...",
+    "type": "Type",
+    "annotated": "Anotuotas",
+    "annotation": "Anotacija",
+    "not_annotated": "Neanotuota",
+    "all": "Visi",
+    "label": "Etiketė",
+    "product_weight": "Produkto svoris",
+    "category": "Category",
+    "expiration_date": "Galiojimo laikas",
+    "packager_code": "Pakuotės kodas",
+    "skipped": "Praleista (-1)",
+    "rejected": "Atmesta (0)",
+    "accepted": "Priimta (1)",
+    "search": "Paieška",
+    "count": "Kiekis",
+    "id": "Id",
+    "value": "Vertė",
+    "created_at": "Sukurta",
+    "completed_at": "Baigta",
+    "automatic": "Automatinis"
+  },
+  "logos": {
+    "annotation": "Anotacija: ",
+    "annotations": "Logotipo anotacijos",
+    "select_all": "Pažymėti viską",
+    "unselect_all": "Išžymėti viską",
+    "distance": "Atstumas:",
+    "value": "Vertė",
+    "submit": "Pateikti",
+    "type": "Type",
+    "label": "Etiketė",
+    "brand": "Brand",
+    "packager_code": "Pakuotės kodas",
+    "packaging": "Pakuotė",
+    "qr_code": "QR kodas",
+    "category": "Category",
+    "nutrition_label": "Mitybos etiketė",
+    "store": "Parduotuvė",
+    "detail": "Logotipo detalė",
+    "id": "Logotipo ID:",
+    "barcode": "Brūkšninis kodas:",
+    "full_image": "Visa nuotrauka",
+    "update": "Atnaujinti",
+    "no_found": "Logotipas nerastas",
+    "search": "Paieška",
+    "number_of_results": "Rezultatų skaičius:"
+  },
+  "settings": {
+    "settings": "Settings",
+    "language": "Kalba",
+    "save": "Išsaugoti"
+  },
+  "helper": {
+    "welcome": {
+      "page1": {
+        "title": "Sveiki",
+        "text1": "„Bado žaidynės“ – tai mini žaidimų rinkinys, padedantis įvairiais būdais prisidėti prie „Open Food Facts“. Suskirstykite produktą į kategorijas, kad gautumėte „Nutri-Score“ ir „Eco-Score“, padėkite patvirtinti „Eco-Score“ etiketes, pridėkite prekių ženklus ir svorius, padėkite mūsų logotipų atpažinimo sistemai sužinoti apie aptiktus logotipus.",
+        "text2": "Tai yra keletas įdomių dalykų, kuriuos galėsite padaryti. Įsitikinkite, kad esate prisijungę prie „Open Food Facts“ svetainės, kad gautumėte kreditą už savo indėlį. Jei padarėte klaidą, skirkite laiko jai ištaisyti apsilankę svetainėje.",
+        "text3": "Jei kyla abejonių dėl žaidimo, puslapio viršuje dešinėje turite pagalbininką, o su mumis galite susisiekti kanale #bado žaidimai"
+      },
+      "page2": {
+        "title": "Klausimai",
+        "text1": "Mūsų AI turi jums daug klausimų. Čia turėsite patvirtinti arba paneigti informaciją, kurią ji aptiko vaizduose.",
+        "text2": "Nedvejodami praleiskite klausimą, jei nesate tikri, yra daugybė kitų"
+      },
+      "page3": {
+        "title": "Logos",
+        "text1": "Produktų pasaulis pilnas logotipų. Paaiškinkite mūsų AI, kurie iš jų yra vienodi."
+      }
+    },
+    "logos": {
+      "page1": {
+        "title": "Pasirinkimas",
+        "text1": "Pasirinkite to paties logotipo apkarpas spustelėdami juos",
+        "text2": "Pasirinkti logotipai patenka į puslapio viršų, jų pasirinkimą galite atšaukti paspaudę dar kartą"
+      },
+      "page2": {
+        "title": "Įspėjimas",
+        "text1": "Jei apkarpoje yra keli logotipai, jo nepasirinkite.",
+        "text2": "Jei apkarpoje yra tik dalis logotipo, galite ją pasirinkti"
+      },
+      "page3": {
+        "title": "Patvirtinti",
+        "text1": "Nurodykite logotipo tipą (etiketė, prekės ženklas, QR kodas, ...)",
+        "text2": "Jei tai etiketė arba prekės ženklo logotipas, nurodykite, kuris iš jų",
+        "text3": "Dabar galite pateikti savo pasirinkimą",
+        "text4": "Ačiū :)"
+      }
+    },
+    "previous": "Ankstesnis",
+    "next": "Kitas",
+    "close": "Uždaryti"
+  },
+  "nutrition": {
+    "instructions": {
+      "cropTheTable": "Apkirpkite vaizdą, kad supaprastintumėte komentarą",
+      "verifyNutrimentDetected": "Nurodykite, ar aptikta maistinė medžiaga yra teisinga",
+      "selectMissingNutriments": "Pridėkite trūkstamas maistines medžiagas (galite spustelėti, net jei žodyje nėra langelio)",
+      "selectValue": "Pasirinkite maistinę vertę: "
+    },
+    "steps": {
+      "1": "Apkarpyti",
+      "2": "Ypatingos vertybės",
+      "3": "Maistinių medžiagų pasirinkimas",
+      "4": "Vertybių pasirinkimas"
+    },
+    "next": "Kitas žingsnis",
+    "prev": "Ankstesnis žingsnis",
+    "skip": "Praleisti šį produktą",
+    "validate": "Patvirtinkite lentelę",
+    "unselect_picture": "Nėra informacijos apie maistingumą",
+    "basis": "duomenys, skirti: ",
+    "servingSize": "porcijos dydis",
+    "value": "vertė",
+    "nutriments": {
+      "nutriment_energy-kj": "Energy (kJ)",
+      "nutriment_energy-kcal": "Energija (kCal)",
+      "nutriment_fat": "Riebalai",
+      "nutriment_saturated-fat": "Saturated fat",
+      "nutriment_carbohydrates": "Carbohydrate",
+      "nutriment_sugars": "Cukrus",
+      "nutriment_proteins": "Baltymai",
+      "nutriment_fiber": "Ląsteliena",
+      "nutriment_salt": "Salt",
+      "nutriment_sodium": "Sodium"
+    },
+    "history": {
+      "title": "Sesijos istorija",
+      "status": "būsena",
+      "product name": "produkto pavadinimas",
+      "view": "peržiūrėti puslapį",
+      "edit": "redaguoti puslapį",
+      "SKIP": "ignoruojamas",
+      "VALIDATED": "redagavo",
+      "WRONG_IMAGE": "nepasirinkta nuotrauka",
+      "close": "uždaryti",
+      "open": "atidaryti istoriją"
+    }
+  }
+}

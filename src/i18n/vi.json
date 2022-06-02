@@ -1,0 +1,205 @@
+{
+  "questions": {
+    "category": "danh mục",
+    "label": "nhãn hiệu",
+    "brand": "nhãn hiệu",
+    "brands": "Thương hiệu",
+    "ingredients": "Thành phần",
+    "product_weight": "trọng lượng sản phẩm",
+    "popularity_sort": "Sắp xếp theo mức độ phổ biến",
+    "see_examples": "See examples of this ",
+    "no": "Không",
+    "skip": "Skip",
+    "yes": "Đồng ý",
+    "no_questions_remaining": "Không còn câu hỏi nào",
+    "countries": "Quốc gia",
+    "view": "Hiển thị",
+    "edit": "Chỉnh sửa",
+    "hide_images": "Ẩn hình ảnh (tải nhanh hơn)",
+    "display_images": "Hiển thị hình ảnh",
+    "annotations": "Annotations",
+    "last_annotations": "Chú thích mới nhất",
+    "remaining_annotations": "Còn lại:",
+    "annotated_annotations": "Chú thích",
+    "filters": {
+      "short_label": {
+        "value": "giá trị",
+        "country": "nước",
+        "brand": "nhãn hiệu",
+        "popularity": "mức phổ biến"
+      },
+      "long_label": {
+        "type": "Loại câu hỏi",
+        "value": "Giá trị đề xuất",
+        "country": "Nước sản xuất",
+        "brand": "Thương hiệu sản xuất",
+        "popularity": "Sắp xếp theo mức độ phổ biến",
+        "edit": ""
+      },
+      "placeholders": {
+        "value": "Giá trị (fanta, en: organic,...)",
+        "brand": "auchan, danone, herta, ..."
+      },
+      "actions": {
+        "edit": "Chỉnh sửa bộ lọc",
+        "cancel": "Huỷ",
+        "apply": "Áp dụng"
+      }
+    }
+  },
+  "menu": {
+    "games": "Trò chơi",
+    "questions": "Câu hỏi",
+    "logos": "Logos",
+    "manage": "Quản lý",
+    "insights": "Thông tin chi tiết",
+    "nutritions": "Giá trị dinh dưỡng",
+    "settings": "Cài đặt",
+    "eco-score": "Điểm sinh thái"
+  },
+  "insights": {
+    "insights": "Thông tin chi tiết",
+    "barcode": "Mã vạch",
+    "barcode_placeholder": "mã vạch",
+    "value_tag": "Thẻ giá trị",
+    "value_placeholder": "ví dụ: en: mueslis, bjorg,...",
+    "type": "Type",
+    "annotated": "Chú thích",
+    "annotation": "Chú thích",
+    "not_annotated": "Không được chú thích",
+    "all": "Tất cả",
+    "label": "Nhãn",
+    "product_weight": "Trọng lượng sản phẩm",
+    "category": "Danh mục",
+    "expiration_date": "Ngày hết hạn",
+    "packager_code": "Mã người đóng gói",
+    "skipped": "Đã bỏ qua (-1)",
+    "rejected": "Bị từ chối (0)",
+    "accepted": "Đã chấp nhận (1)",
+    "search": "Tìm kiếm",
+    "count": "Đếm",
+    "id": "Id",
+    "value": "Giá trị",
+    "created_at": "Được tạo lúc",
+    "completed_at": "Hoàn thành lúc",
+    "automatic": "Tự động"
+  },
+  "logos": {
+    "annotation": "Chú thích: ",
+    "annotations": "Chú thích logo",
+    "select_all": "Chọn tất cả",
+    "unselect_all": "Bỏ chọn tất cả",
+    "distance": "Khoảng Cách:",
+    "value": "Giá trị",
+    "submit": "Gửi",
+    "type": "Type",
+    "label": "Nhãn",
+    "brand": "Nhãn hiệu",
+    "packager_code": "Mã người đóng gói",
+    "packaging": "Bao bì",
+    "qr_code": "Mã QR",
+    "category": "Danh mục",
+    "nutrition_label": "Nhãn dinh dưỡng",
+    "store": "Cửa hàng",
+    "detail": "Chi tiết logo",
+    "id": "Logo ID:",
+    "barcode": "Mã vạch:",
+    "full_image": "Hình ảnh đầy đủ",
+    "update": "Cập nhật",
+    "no_found": "Không tìm thấy logo",
+    "search": "Tìm kiếm",
+    "number_of_results": "Số lượng kết quả:"
+  },
+  "settings": {
+    "settings": "Cài đặt",
+    "language": "Ngôn ngữ",
+    "save": "Lưu"
+  },
+  "helper": {
+    "welcome": {
+      "page1": {
+        "title": "Chào mừng bạn",
+        "text1": "Hunger Games là một tập hợp các trò chơi nhỏ giúp đóng góp vào Open Food Facts theo nhiều cách. Phân loại sản phẩm để lấy Điểm dinh dưỡng và Điểm sinh thái, giúp xác thực nhãn cho Điểm sinh thái, thêm nhãn hiệu và trọng lượng, giúp hệ thống nhận dạng \u001dlogo nhận biết về các biểu trưng mà nó phát hiện được.",
+        "text2": "Đó là một số điều thú vị mà bạn có thể làm. Hãy đảm bảo kết nối với trang web Open Food Facts để nhận được tín dụng cho những đóng góp của bạn. Nếu có lỗi sai, bạn có thể sửa lại bằng cách truy cập trang web.",
+        "text3": "Trong trường hợp có thắc mắc về trò chơi, bạn có sự trợ giúp ở trên cùng bên phải của trang và bạn có thể liên hệ với chúng tôi tại kênh #hunger-game"
+      },
+      "page2": {
+        "title": "Câu hỏi",
+        "text1": "AI của chúng tôi có rất nhiều câu hỏi cho bạn. Ở đây bạn sẽ phải xác nhận hoặc phủ nhận thông tin mà AI phát hiện trên hình ảnh.",
+        "text2": "Đừng ngần ngại bỏ qua một câu hỏi nếu bạn không chắc chắn, vẫn còn rất nhiều câu hỏi khác"
+      },
+      "page3": {
+        "title": "Logos",
+        "text1": "Thế giới của các sản phẩm có rất nhiều các loại logo. Hãy giúp AI của chúng tôi nhận biết những logo nào giống nhau."
+      }
+    },
+    "logos": {
+      "page1": {
+        "title": "Lựa chọn",
+        "text1": "Chọn các loại cây trồng của cùng một logo bằng cách nhấp vào chúng",
+        "text2": "Các biểu trưng đã chọn sẽ lên đầu trang, bạn có thể bỏ chọn chúng bằng cách nhấp lại vào chúng"
+      },
+      "page2": {
+        "title": "Cảnh báo",
+        "text1": "Nếu vùng cắt chứa nhiều logo, đừng chọn nó.",
+        "text2": "Nếu vùng cắt chỉ chứa một phần của logo, bạn có thể chọn nó"
+      },
+      "page3": {
+        "title": "Xác thực",
+        "text1": "Cho biết loại logo (nhãn, thương hiệu, mã QRcode, ...)",
+        "text2": "Nếu đó là nhãn hoặc logo của thương hiệu, hãy cho biết đó là nhãn nào",
+        "text3": "Bây giờ bạn có thể gửi lựa chọn của mình",
+        "text4": "Cảm ơn bạn :)"
+      }
+    },
+    "previous": "Trước",
+    "next": "Kế tiếp",
+    "close": "Đóng"
+  },
+  "nutrition": {
+    "instructions": {
+      "cropTheTable": "Cắt hình ảnh để đơn giản hóa chú thích của bạn",
+      "verifyNutrimentDetected": "Cho biết liệu thành phần dinh dưỡng được phát hiện có chính xác hay không",
+      "selectMissingNutriments": "Thêm các chất dinh dưỡng bị thiếu (bạn có thể nhấp vào ngay cả khi từ đó không có ô)",
+      "selectValue": "Chọn giá trị dinh dưỡng của: "
+    },
+    "steps": {
+      "1": "Cắt",
+      "2": "Giá trị đặc biệt",
+      "3": "Lựa chọn chất dinh dưỡng",
+      "4": "Lựa chọn giá trị"
+    },
+    "next": "Bước tiếp theo",
+    "prev": "Bước trước đó",
+    "skip": "Bỏ qua sản phẩm này",
+    "validate": "Xác thực bảng",
+    "unselect_picture": "Không có thông tin dinh dưỡng",
+    "basis": "dữ liệu cho: ",
+    "servingSize": "khẩu phần ăn",
+    "value": "giá trị",
+    "nutriments": {
+      "nutriment_energy-kj": "Energy (kJ)",
+      "nutriment_energy-kcal": "Năng lượng (kCal)",
+      "nutriment_fat": "Fat",
+      "nutriment_saturated-fat": "Chất béo bão hòa",
+      "nutriment_carbohydrates": "Cacbohydrat",
+      "nutriment_sugars": "Đường",
+      "nutriment_proteins": "Chất đạm",
+      "nutriment_fiber": "Chất xơ",
+      "nutriment_salt": "Muối",
+      "nutriment_sodium": "Natri"
+    },
+    "history": {
+      "title": "Lịch sử Phiên",
+      "status": "trạng thái",
+      "product name": "tên sản phẩm",
+      "view": "xem trang",
+      "edit": "chỉnh sửa trang",
+      "SKIP": "đã bỏ qua",
+      "VALIDATED": "đã chỉnh sửa",
+      "WRONG_IMAGE": "hình ảnh không được chọn",
+      "close": "đóng",
+      "open": "mở lịch sử"
+    }
+  }
+}

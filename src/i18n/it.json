@@ -1,0 +1,205 @@
+{
+  "questions": {
+    "category": "categoria",
+    "label": "etichetta",
+    "brand": "marca",
+    "brands": "Marche",
+    "ingredients": "Ingredienti",
+    "product_weight": "peso del prodotto",
+    "popularity_sort": "Ordina per popolarità",
+    "see_examples": "Vedi esempi di questo ",
+    "no": "No",
+    "skip": "Salta",
+    "yes": "Sì",
+    "no_questions_remaining": "Nessuna domanda rimanente",
+    "countries": "Paesi",
+    "view": "Mostra",
+    "edit": "Modifica",
+    "hide_images": "Nascondi immagini (caricamento più veloce)",
+    "display_images": "Mostra immagini",
+    "annotations": "Annotazioni",
+    "last_annotations": "Ultime annotazioni",
+    "remaining_annotations": "Rimanente:",
+    "annotated_annotations": "Annotato",
+    "filters": {
+      "short_label": {
+        "value": "valore",
+        "country": "paese",
+        "brand": "marca",
+        "popularity": "popolarità"
+      },
+      "long_label": {
+        "type": "Tipo di Domanda",
+        "value": "Valore Proposto",
+        "country": "Paese del Prodotto",
+        "brand": "Marchio del Prodotto",
+        "popularity": "Ordina per popolarità",
+        "edit": ""
+      },
+      "placeholders": {
+        "value": "Valore (fanta, it:biologico,...)",
+        "brand": "auchan, danone, herta, ..."
+      },
+      "actions": {
+        "edit": "Modifica Filtri",
+        "cancel": "Annulla",
+        "apply": "Applica"
+      }
+    }
+  },
+  "menu": {
+    "games": "Giochi",
+    "questions": "Domande",
+    "logos": "Loghi",
+    "manage": "Gestisci",
+    "insights": "Approfondimenti",
+    "nutritions": "Valori nutrizionali",
+    "settings": "Impostazioni",
+    "eco-score": "Eco-score"
+  },
+  "insights": {
+    "insights": "Approfondimenti",
+    "barcode": "Codice a Barre",
+    "barcode_placeholder": "codice a barre",
+    "value_tag": "Etichetta valore",
+    "value_placeholder": "ex: en:muesli, bjorg,...",
+    "type": "Tipo",
+    "annotated": "Annotato",
+    "annotation": "Annotazione",
+    "not_annotated": "Non annotato",
+    "all": "Tutti",
+    "label": "Etichetta",
+    "product_weight": "Peso del prodotto",
+    "category": "Categoria",
+    "expiration_date": "Fine effetto",
+    "packager_code": "Codice Packager",
+    "skipped": "Saltato (-1)",
+    "rejected": "Rifiutato (0)",
+    "accepted": "Accettato (1)",
+    "search": "Cerca",
+    "count": "Quantità",
+    "id": "Id",
+    "value": "Valore",
+    "created_at": "Creato con",
+    "completed_at": "Completato a",
+    "automatic": "Automatico"
+  },
+  "logos": {
+    "annotation": "Annotazione: ",
+    "annotations": "Annotazioni logo",
+    "select_all": "Seleziona tutto",
+    "unselect_all": "Deseleziona tutto",
+    "distance": "Distanza:",
+    "value": "Valore",
+    "submit": "Invia",
+    "type": "Tipo",
+    "label": "Etichetta",
+    "brand": "Marche",
+    "packager_code": "Codice Packager",
+    "packaging": "Confezionamento",
+    "qr_code": "Codice QR",
+    "category": "Categoria",
+    "nutrition_label": "Etichetta nutrizionale",
+    "store": "Negozio",
+    "detail": "Dettaglio logo",
+    "id": "ID logo:",
+    "barcode": "Codice a barre:",
+    "full_image": "Immagine intera",
+    "update": "Aggiorna",
+    "no_found": "Nessun logo trovato",
+    "search": "Cerca",
+    "number_of_results": "Numero di risultati:"
+  },
+  "settings": {
+    "settings": "Impostazioni",
+    "language": "Lingua",
+    "save": "Salva"
+  },
+  "helper": {
+    "welcome": {
+      "page1": {
+        "title": "Benvenuto",
+        "text1": "Hunger Games è una raccolta di minigiochi che aiutano a contribuire a Open Food Facts in molti modi. Categorizza un prodotto per ottenere il Nutri-Score e l'Eco-Score, aiuta a convalidare le etichette per l'Eco-Score, aggiungi marche e pesi, aiuta il nostro sistema di riconoscimento dei loghi a imparare sui loghi che ha rilevato.",
+        "text2": "Queste sono alcune delle entusiasmanti cose che potrai fare. Assicurati di esser connesso al sito web di Open Food Facts per ottenere credito per i tuoi contributi. Se commetti un errore, sei pregato di prenderti il tempo di correggerlo andando sul sito web.",
+        "text3": "In caso di dubbi sul gioco, hai un aiutante in alto a destra alla pagina e puoi raggiungerci su Slack al canale #hunger-games"
+      },
+      "page2": {
+        "title": "Domande",
+        "text1": "La nostra IA ha molte domande per te. Qui dovrai confermare o negare le informazioni che ha rilevato sulle immagini.",
+        "text2": "Non esitare a saltare una domanda se sei insicuro, ce ne sono molte altre"
+      },
+      "page3": {
+        "title": "Loghi",
+        "text1": "Il mondo dei prodotti è pieno di loghi. Spiega alla nostra IA quali sono uguali."
+      }
+    },
+    "logos": {
+      "page1": {
+        "title": "Seleziona",
+        "text1": "Seleziona i ritagli di uno stesso logo cliccandoli",
+        "text2": "I loghi selezionati vanno in cima alla pagina, puoi deselezionarli cliccandoli nuovamente"
+      },
+      "page2": {
+        "title": "Attenzione",
+        "text1": "Se il ritaglio contiene più loghi, non selezionarlo.",
+        "text2": "Se il ritaglio contiene solo una parte parziale di un logo, puoi selezionarlo"
+      },
+      "page3": {
+        "title": "Convalida",
+        "text1": "Indica il tipo di logo (etichetta, marca, QRcode, ...)",
+        "text2": "Se è un'etichetta o il logo di una marca, indica qual è",
+        "text3": "Ora puoi inviare la tua selezione",
+        "text4": "Grazie :)"
+      }
+    },
+    "previous": "Prec",
+    "next": "Successiva",
+    "close": "Chiudi"
+  },
+  "nutrition": {
+    "instructions": {
+      "cropTheTable": "Ritaglia l'immagine per semplificare la tua annotazione",
+      "verifyNutrimentDetected": "Indica se il nutriente rilevato è corretto",
+      "selectMissingNutriments": "Aggiungi i nutrienti mancanti (puoi cliccarli anche se la parola non ha una casella)",
+      "selectValue": "Seleziona il valore nutrizionale di: "
+    },
+    "steps": {
+      "1": "Ritaglia",
+      "2": "Valori speciali",
+      "3": "Selezione dei Nutrienti",
+      "4": "Selezione dei Valori"
+    },
+    "next": "Prossimo Passaggio",
+    "prev": "Passaggio Precedente",
+    "skip": "Salta questo prodotto",
+    "validate": "Convalida la Tabella",
+    "unselect_picture": "Nessun'informazione nutrizionale",
+    "basis": "dati per: ",
+    "servingSize": "porzione",
+    "value": "valore",
+    "nutriments": {
+      "nutriment_energy-kj": "Energia (kJ)",
+      "nutriment_energy-kcal": "Energia (kCal)",
+      "nutriment_fat": "Grassi",
+      "nutriment_saturated-fat": "Grassi saturi",
+      "nutriment_carbohydrates": "Carboidrati",
+      "nutriment_sugars": "Zuccheri",
+      "nutriment_proteins": "Proteine",
+      "nutriment_fiber": "Fibre",
+      "nutriment_salt": "Sale",
+      "nutriment_sodium": "Sodio"
+    },
+    "history": {
+      "title": "Cronologia delle Sessioni",
+      "status": "stato",
+      "product name": "nome del prodotto",
+      "view": "visualizza pagina",
+      "edit": "modifica pagina",
+      "SKIP": "ignorata",
+      "VALIDATED": "modificata",
+      "WRONG_IMAGE": "immagine non selezionata",
+      "close": "chiudi",
+      "open": "apri cronologia"
+    }
+  }
+}

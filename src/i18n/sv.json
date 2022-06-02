@@ -1,0 +1,205 @@
+{
+  "questions": {
+    "category": "kategori",
+    "label": "etikett",
+    "brand": "varumärke",
+    "brands": "Varumärken",
+    "ingredients": "Ingredienser",
+    "product_weight": "produktens vikt",
+    "popularity_sort": "Sortera efter popularitet",
+    "see_examples": "See examples of this ",
+    "no": "Nej",
+    "skip": "Hoppa over",
+    "yes": "Ja",
+    "no_questions_remaining": "Inga frågor återstår",
+    "countries": "Länder",
+    "view": "Visa",
+    "edit": "Redigera",
+    "hide_images": "Dölj bilder (snabbare laddning)",
+    "display_images": "Visa bilder",
+    "annotations": "Annotations",
+    "last_annotations": "Senaste anteckningar",
+    "remaining_annotations": "Återstår:",
+    "annotated_annotations": "Antecknad",
+    "filters": {
+      "short_label": {
+        "value": "värde",
+        "country": "land",
+        "brand": "varumärke",
+        "popularity": "popularitet"
+      },
+      "long_label": {
+        "type": "Frågetyp",
+        "value": "Föreslaget värde",
+        "country": "Produktland",
+        "brand": "Produktmärke",
+        "popularity": "Sortera efter popularitet",
+        "edit": ""
+      },
+      "placeholders": {
+        "value": "Värde (fanta, sv:ekologiskt,...)",
+        "brand": "arla, gevalia, risenta, ..."
+      },
+      "actions": {
+        "edit": "Redigera filter",
+        "cancel": "Annulera",
+        "apply": "Verkställ"
+      }
+    }
+  },
+  "menu": {
+    "games": "Spel",
+    "questions": "Frågor",
+    "logos": "Logotyper",
+    "manage": "Hantera",
+    "insights": "Insikter",
+    "nutritions": "Näringsfakta",
+    "settings": "Inställningar",
+    "eco-score": "Eco-Score"
+  },
+  "insights": {
+    "insights": "Insikter",
+    "barcode": "Streckkod",
+    "barcode_placeholder": "streckkod",
+    "value_tag": "Värdetagg",
+    "value_placeholder": "ex: sv:müslis, bjorg,...",
+    "type": "Typ",
+    "annotated": "Antecknad",
+    "annotation": "Anteckning",
+    "not_annotated": "Inte antecknat",
+    "all": "Alla",
+    "label": "Etikett",
+    "product_weight": "Produktens vikt",
+    "category": "Kategori",
+    "expiration_date": "Utgångsdatum",
+    "packager_code": "Förpackningskod",
+    "skipped": "Hoppat över (-1)",
+    "rejected": "Avvisad (0)",
+    "accepted": "Godkänd (1)",
+    "search": "Sök",
+    "count": "Antal",
+    "id": "Id",
+    "value": "Värde",
+    "created_at": "Skapad den",
+    "completed_at": "Slutfördes den",
+    "automatic": "Automatisk"
+  },
+  "logos": {
+    "annotation": "Anteckning: ",
+    "annotations": "Senaste anteckningar",
+    "select_all": "Markera alla",
+    "unselect_all": "Avmarkera alla",
+    "distance": "Avstånd:",
+    "value": "Värde",
+    "submit": "Skicka in",
+    "type": "Typ",
+    "label": "Etikett",
+    "brand": "Varumärke",
+    "packager_code": "Förpackningskod",
+    "packaging": "Förpackning",
+    "qr_code": "QR-kod",
+    "category": "Kategori",
+    "nutrition_label": "Näringstabell",
+    "store": "Butik",
+    "detail": "Logotyp-detalj",
+    "id": "Logo ID:",
+    "barcode": "Streckkod:",
+    "full_image": "Fullständig bild",
+    "update": "Uppdatera",
+    "no_found": "Ingen logotyp hittades",
+    "search": "Sök",
+    "number_of_results": "Antal resultat:"
+  },
+  "settings": {
+    "settings": "Inställningar",
+    "language": "Spåk",
+    "save": "Spara"
+  },
+  "helper": {
+    "welcome": {
+      "page1": {
+        "title": "Välkommen",
+        "text1": "Hunger Games är en samling minispel som bidrar till Open Food Facts på många sätt. Kategorisera en produkt för att få Nutri-Score och Eco-Score, hjälpa till att validera etiketter för Eco-Score, lägg till varumärken och vikter, hjälpa vårt logotypigenkänningssystem att lära sig om logotyperna det upptäckte.",
+        "text2": "Det är några av de spännande saker som du kommer att kunna göra. Se till att vara ansluten till webbplatsen Open Food Facts för att få erkännande för dina bidrag. Om du gör ett misstag, ta dig tid att rätta till det genom att gå till webbplatsen.",
+        "text3": "Om du är osäker på spelet har du en hjälpreda uppe till höger på sidan, och du kan nå oss på slack i kanalen #hunger-games"
+      },
+      "page2": {
+        "title": "Frågor",
+        "text1": "Vår AI har många frågor till dig. Här måste du bekräfta eller neka den information hon upptäckte på bilder.",
+        "text2": "Tveka inte att hoppa över en fråga om du inte är säker, det finns många andra"
+      },
+      "page3": {
+        "title": "Logotyper",
+        "text1": "Världen av produkter är full av logotyper. Förklara för vår AI vilka som är samma."
+      }
+    },
+    "logos": {
+      "page1": {
+        "title": "Urval",
+        "text1": "Välj beskärning av samma logotyp genom att klicka på dem",
+        "text2": "Valda logotyper går högst upp på sidan, du kan avmarkera dem genom att klicka igen på dem"
+      },
+      "page2": {
+        "title": "Varning",
+        "text1": "Om beskärningen innehåller flera logotyper, välj den inte.",
+        "text2": "Om beskärningenn endast innehåller en del av en logotyp kan du välja den"
+      },
+      "page3": {
+        "title": "Validera",
+        "text1": "Ange logotypen (etikett, märke, QRcode, ...)",
+        "text2": "Om det är en etikett eller en varumärkeslogotyp, ange vilken det är",
+        "text3": "Nu kan du skicka in ditt val",
+        "text4": "Tack :)"
+      }
+    },
+    "previous": "Föregående",
+    "next": "Nästa",
+    "close": "Stäng"
+  },
+  "nutrition": {
+    "instructions": {
+      "cropTheTable": "Beskär bilden för att förenkla din anteckning",
+      "verifyNutrimentDetected": "Ange om det upptäckta näringsämnet är korrekt",
+      "selectMissingNutriments": "Lägg till saknade näringsämnen (du kan klicka även om ordet inte har någon ruta)",
+      "selectValue": "Välj näringsvärde för: "
+    },
+    "steps": {
+      "1": "Beskär",
+      "2": "Särskilda värden",
+      "3": "Val av näringsämnen",
+      "4": "Valda värden"
+    },
+    "next": "Nästa Steg",
+    "prev": "Föregående steg",
+    "skip": "Hoppa över denna produkt",
+    "validate": "Validera tabell",
+    "unselect_picture": "Ingen näringsinformation",
+    "basis": "data för: ",
+    "servingSize": "portion storlek",
+    "value": "värde",
+    "nutriments": {
+      "nutriment_energy-kj": "Energi (kJ)",
+      "nutriment_energy-kcal": "Energi (kcal)",
+      "nutriment_fat": "Fett",
+      "nutriment_saturated-fat": "Mättat fett",
+      "nutriment_carbohydrates": "Kolhydrat",
+      "nutriment_sugars": "Socker",
+      "nutriment_proteins": "Proteiner",
+      "nutriment_fiber": "Fibrer",
+      "nutriment_salt": "Salt",
+      "nutriment_sodium": "Natrium"
+    },
+    "history": {
+      "title": "Sessionshistorik",
+      "status": "status",
+      "product name": "produktnamn",
+      "view": "visa sida",
+      "edit": "redigera sida",
+      "SKIP": "ignorerad",
+      "VALIDATED": "redigerad",
+      "WRONG_IMAGE": "avmarkerad bild",
+      "close": "stäng",
+      "open": "öppna historik"
+    }
+  }
+}

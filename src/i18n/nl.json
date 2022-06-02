@@ -1,0 +1,205 @@
+{
+  "questions": {
+    "category": "categorie",
+    "label": "keurmerk",
+    "brand": "merk",
+    "brands": "Merken",
+    "ingredients": "Ingrediënten",
+    "product_weight": "Gewicht van het product",
+    "popularity_sort": "Sorteren op populariteit",
+    "see_examples": "See examples of this ",
+    "no": "Nee",
+    "skip": "Overslaan",
+    "yes": "Ja",
+    "no_questions_remaining": "Geen verdere vragen",
+    "countries": "Landen",
+    "view": "Bekijk",
+    "edit": "Bewerken",
+    "hide_images": "Afbeeldingen verbergen (sneller laden)",
+    "display_images": "Afbeelding weergeven",
+    "annotations": "Aantekeningen",
+    "last_annotations": "Laatste aantekeningen",
+    "remaining_annotations": "Resterend:",
+    "annotated_annotations": "Geannoteerd",
+    "filters": {
+      "short_label": {
+        "value": "waarde",
+        "country": "land",
+        "brand": "merk",
+        "popularity": "populariteit"
+      },
+      "long_label": {
+        "type": "Vraagtype",
+        "value": "Voorgestelde waarde",
+        "country": "Productieland",
+        "brand": "Productmerk",
+        "popularity": "Sorteren op populariteit",
+        "edit": ""
+      },
+      "placeholders": {
+        "value": "Waarde (fanta, en:bio,...)",
+        "brand": "auchan, danone, herta, ..."
+      },
+      "actions": {
+        "edit": "Filters bewerken",
+        "cancel": "Annuleer",
+        "apply": "Toepassen"
+      }
+    }
+  },
+  "menu": {
+    "games": "Spellen",
+    "questions": "Vragen",
+    "logos": "Logo's",
+    "manage": "Beheer",
+    "insights": "Inzichten",
+    "nutritions": "Voedingswaarden",
+    "settings": "Instellingen",
+    "eco-score": "Eco-Score"
+  },
+  "insights": {
+    "insights": "Inzichten",
+    "barcode": "Streepjescode",
+    "barcode_placeholder": "streepjescode",
+    "value_tag": "Waarde tag",
+    "value_placeholder": "vb: en:mueslis, bjorg,...",
+    "type": "Type",
+    "annotated": "Geannoteerd",
+    "annotation": "Aantekening",
+    "not_annotated": "Niet geannoteerd",
+    "all": "Alle",
+    "label": "Keurmerk",
+    "product_weight": "Productgewicht",
+    "category": "Categorie",
+    "expiration_date": "Vervaldatum",
+    "packager_code": "Verpakkerscode",
+    "skipped": "Overgeslagen (-1)",
+    "rejected": "Afgewezen (0)",
+    "accepted": "Geaccepteerd (1)",
+    "search": "Zoeken",
+    "count": "Aantal",
+    "id": "Id",
+    "value": "Waarde",
+    "created_at": "Aangemaakt op",
+    "completed_at": "Voltooid op",
+    "automatic": "Automatisch"
+  },
+  "logos": {
+    "annotation": "Aantekening: ",
+    "annotations": "Logo aantekeningen",
+    "select_all": "Selecteer alles",
+    "unselect_all": "Deselecteer alles",
+    "distance": "Afstand:",
+    "value": "Waarde",
+    "submit": "Verzenden",
+    "type": "Type",
+    "label": "Keurmerk",
+    "brand": "Merk",
+    "packager_code": "Verpakkerscode",
+    "packaging": "Verpakking",
+    "qr_code": "QR code",
+    "category": "Categorie",
+    "nutrition_label": "Voedingsetiket",
+    "store": "Winkel",
+    "detail": "Logo detail",
+    "id": "Logo ID:",
+    "barcode": "Streepjescode:",
+    "full_image": "Volledige afbeelding",
+    "update": "Update",
+    "no_found": "Geen logo gevonden",
+    "search": "Zoeken",
+    "number_of_results": "Aantal resultaten:"
+  },
+  "settings": {
+    "settings": "Instellingen",
+    "language": "Taal",
+    "save": "Bewaar"
+  },
+  "helper": {
+    "welcome": {
+      "page1": {
+        "title": "Welkom",
+        "text1": "Hunger Games is a collection of mini-games that help contribute to Open Food Facts in many ways. Categorize a product to get the Nutri-Score and Eco-Score, help validate labels for the Eco-Score, add brands and weights, help our logo recognition system learn about the logos it detected.",
+        "text2": "Those are some of the exciting things you'll be able to do. Make sure to be connected to the Open Food Facts website to get credit for your contributions. If you make a mistake, please take the time to correct it by heading to the website.",
+        "text3": "In case of doubt about the game, you have an helper at the top right of the page, and you can reach us on slack at the #hunger-games channel"
+      },
+      "page2": {
+        "title": "Vragen",
+        "text1": "Our AI has a lot of questions for you. Here you will have to confirm or deny the information she detected on images.",
+        "text2": "Do not hesitate to skip a question if you're not sure, there are plenty of others"
+      },
+      "page3": {
+        "title": "Logo's",
+        "text1": "The world of products is full of logos. Explain to our AI which ones are the same."
+      }
+    },
+    "logos": {
+      "page1": {
+        "title": "Selectie",
+        "text1": "Select the crops of a same logo by clicking on them",
+        "text2": "Selected logos go to the top of the page, you can unselect them by clicking again on them"
+      },
+      "page2": {
+        "title": "Let op",
+        "text1": "If the crop contains multiple logo do not select it.",
+        "text2": "If the crop contains only a partial part of a logo you can select it"
+      },
+      "page3": {
+        "title": "Validate",
+        "text1": "Indicate the type of logo (label, brand, QRcode, ...)",
+        "text2": "If it is a label or a brand logo, indicate which one it is",
+        "text3": "Now you can submit your selection",
+        "text4": "Bedankt :)"
+      }
+    },
+    "previous": "Vorige",
+    "next": "Volgende",
+    "close": "Sluit"
+  },
+  "nutrition": {
+    "instructions": {
+      "cropTheTable": "Crop the image to simplify your annotation",
+      "verifyNutrimentDetected": "Indicate if the nutriment detected is correct",
+      "selectMissingNutriments": "Add missing nutriments (you can click even if the word has no box)",
+      "selectValue": "Select the nutritional value of: "
+    },
+    "steps": {
+      "1": "Bijsnijden",
+      "2": "Special values",
+      "3": "Selectie van voedingsstoffen",
+      "4": "Values Selection"
+    },
+    "next": "Volgende stap",
+    "prev": "Vorige stap",
+    "skip": "Dit product overslaan",
+    "validate": "Validate Table",
+    "unselect_picture": "Geen voedingsinformatie",
+    "basis": "gegevens voor: ",
+    "servingSize": "serving size",
+    "value": "waarde",
+    "nutriments": {
+      "nutriment_energy-kj": "Energie (kJ)",
+      "nutriment_energy-kcal": "Energie (kcal)",
+      "nutriment_fat": "Vet",
+      "nutriment_saturated-fat": "Verzadigd vet",
+      "nutriment_carbohydrates": "Koolhydraten",
+      "nutriment_sugars": "Suikers",
+      "nutriment_proteins": "Eiwitten",
+      "nutriment_fiber": "Fibers",
+      "nutriment_salt": "Zout",
+      "nutriment_sodium": "Natrium"
+    },
+    "history": {
+      "title": "Session History",
+      "status": "status",
+      "product name": "productnaam",
+      "view": "pagina bekijken",
+      "edit": "pagina bewerken",
+      "SKIP": "genegeerd",
+      "VALIDATED": "bewerkt",
+      "WRONG_IMAGE": "unselected picture",
+      "close": "sluiten",
+      "open": "geschiedenis openen"
+    }
+  }
+}

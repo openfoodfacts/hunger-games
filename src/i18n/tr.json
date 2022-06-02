@@ -1,0 +1,205 @@
+{
+  "questions": {
+    "category": "kategori",
+    "label": "etiket",
+    "brand": "marka",
+    "brands": "Markalar",
+    "ingredients": "İçindekiler",
+    "product_weight": "ürün ağırlığı",
+    "popularity_sort": "Popülerliğe göre sırala",
+    "see_examples": "See examples of this ",
+    "no": "Hayır",
+    "skip": "Atla",
+    "yes": "Evet",
+    "no_questions_remaining": "Kalan soru yok",
+    "countries": "Ülkeler",
+    "view": "Görüntüle",
+    "edit": "Düzenle",
+    "hide_images": "Resimleri gizle (daha hızlı yükleme)",
+    "display_images": "Resimleri görüntüle",
+    "annotations": "3. Annotations",
+    "last_annotations": "Son ek açıklamalar",
+    "remaining_annotations": "Kalan:",
+    "annotated_annotations": "Açıklandı",
+    "filters": {
+      "short_label": {
+        "value": "değer",
+        "country": "ülke",
+        "brand": "marka",
+        "popularity": "popülerlik"
+      },
+      "long_label": {
+        "type": "Soru Tipi",
+        "value": "Önerilen Değer",
+        "country": "Ürünün Ülkesi",
+        "brand": "Ürünün Markası",
+        "popularity": "Popülerliğe göre sırala",
+        "edit": ""
+      },
+      "placeholders": {
+        "value": "Value (fanta, en:organic,...)",
+        "brand": "auchan, danone, herta, ..."
+      },
+      "actions": {
+        "edit": "Süzgeçleri Düzenle",
+        "cancel": "İptal",
+        "apply": "Uygula"
+      }
+    }
+  },
+  "menu": {
+    "games": "Oyunlar",
+    "questions": "Sorular",
+    "logos": "Logolar",
+    "manage": "Yönet",
+    "insights": "Yönelimler",
+    "nutritions": "Beslenme gerçekleri",
+    "settings": "Ayarlar",
+    "eco-score": "Eko-skor"
+  },
+  "insights": {
+    "insights": "Yönelimler",
+    "barcode": "Barkod",
+    "barcode_placeholder": "barkod",
+    "value_tag": "Etiket",
+    "value_placeholder": "örn: en:mueslis, bjorg,...",
+    "type": "Tür",
+    "annotated": "Açıklandı",
+    "annotation": "Açıklama",
+    "not_annotated": "Açıklanmadı",
+    "all": "Hepsi",
+    "label": "Etiket",
+    "product_weight": "Ürün ağırlığı",
+    "category": "Kategori",
+    "expiration_date": "Son kullanma tarihi",
+    "packager_code": "Paketleyici kodu",
+    "skipped": "Atlandı (-1)",
+    "rejected": "Reddedildi (0)",
+    "accepted": "Kabul edildi (1)",
+    "search": "Ara",
+    "count": "Miktar",
+    "id": "Id",
+    "value": "Değer",
+    "created_at": "Oluşturulma tarihi",
+    "completed_at": "Tamamlanma tarihi",
+    "automatic": "Otomatik"
+  },
+  "logos": {
+    "annotation": "Açıklama: ",
+    "annotations": "Logo açıklamaları",
+    "select_all": "Tümünü seç",
+    "unselect_all": "Tümünün seçimini kaldır",
+    "distance": "Mesafe:",
+    "value": "Değer",
+    "submit": "Gönder",
+    "type": "Tür",
+    "label": "Etiket",
+    "brand": "Marka",
+    "packager_code": "Paketleyici kodu",
+    "packaging": "Ambalaj",
+    "qr_code": "QR kodu",
+    "category": "Kategori",
+    "nutrition_label": "Besin Değerleri",
+    "store": "Mağaza",
+    "detail": "Logo detayı",
+    "id": "Logo ID:",
+    "barcode": "Barkod:",
+    "full_image": "Tam resim",
+    "update": "Güncelle",
+    "no_found": "Logo bulunamadı",
+    "search": "Ara",
+    "number_of_results": "Sonuç sayısı:"
+  },
+  "settings": {
+    "settings": "Ayarlar",
+    "language": "Dil",
+    "save": "Kaydet"
+  },
+  "helper": {
+    "welcome": {
+      "page1": {
+        "title": "Hoş Geldin",
+        "text1": "Hunger Games is a collection of mini-games that help contribute to Open Food Facts in many ways. Categorize a product to get the Nutri-Score and Eco-Score, help validate labels for the Eco-Score, add brands and weights, help our logo recognition system learn about the logos it detected.",
+        "text2": "Those are some of the exciting things you'll be able to do. Make sure to be connected to the Open Food Facts website to get credit for your contributions. If you make a mistake, please take the time to correct it by heading to the website.",
+        "text3": "In case of doubt about the game, you have an helper at the top right of the page, and you can reach us on slack at the #hunger-games channel"
+      },
+      "page2": {
+        "title": "Sorular",
+        "text1": "Yapay zekamızın size bir sürü sorusu var. Görüntülerde tespit ettiği bilgileri onaylamanız veya reddetmeniz gerekmektedir.",
+        "text2": "Eğer emin değilseniz bir soruyu atlamaktan çekinmeyin, daha bir sürü var"
+      },
+      "page3": {
+        "title": "Logolar",
+        "text1": "Ürünler dünyası logolar ile doludur. Hangilerinin aynı olduğunu yapay zekamıza söyleyin."
+      }
+    },
+    "logos": {
+      "page1": {
+        "title": "Seçim",
+        "text1": "Aynı logolu ekinleri üzerlerine tıklayarak seçin",
+        "text2": "Seçilen logolar sayfanın üstüne gidecek, üstlerine tekrar tıklayarak seçmeyi geri alabilirsiniz"
+      },
+      "page2": {
+        "title": "Uyarı",
+        "text1": "Eğer ekin çoklu logo içeriyorsa seçmeyin.",
+        "text2": "Eğer ekin bir logonun sadece bir kısmını içeriyorsa onu seçebilirsiniz"
+      },
+      "page3": {
+        "title": "Geçerlilik",
+        "text1": "Indicate the type of logo (label, brand, QRcode, ...)",
+        "text2": "If it is a label or a brand logo, indicate which one it is",
+        "text3": "Now you can submit your selection",
+        "text4": "Teşekkür ederiz :)"
+      }
+    },
+    "previous": "Önce",
+    "next": "Sonraki",
+    "close": "Kapat"
+  },
+  "nutrition": {
+    "instructions": {
+      "cropTheTable": "Crop the image to simplify your annotation",
+      "verifyNutrimentDetected": "Indicate if the nutriment detected is correct",
+      "selectMissingNutriments": "Add missing nutriments (you can click even if the word has no box)",
+      "selectValue": "Select the nutritional value of: "
+    },
+    "steps": {
+      "1": "Kırp",
+      "2": "Özel değerler",
+      "3": "Besinlerin Seçimi",
+      "4": "Değerlerin Seçimi"
+    },
+    "next": "Sıradaki adım",
+    "prev": "Önceki adım",
+    "skip": "Bu ürünü atla",
+    "validate": "Validate Table",
+    "unselect_picture": "Besin değeri yok",
+    "basis": "için veri: ",
+    "servingSize": "serving size",
+    "value": "değer",
+    "nutriments": {
+      "nutriment_energy-kj": "Enerji (kJ)",
+      "nutriment_energy-kcal": "Enerji (kCal)",
+      "nutriment_fat": "Yağ",
+      "nutriment_saturated-fat": "Doymuş yağ",
+      "nutriment_carbohydrates": "Karbonhidrat",
+      "nutriment_sugars": "Şeker",
+      "nutriment_proteins": "Proteinler",
+      "nutriment_fiber": "Fiberler",
+      "nutriment_salt": "Tuz",
+      "nutriment_sodium": "Sodyum"
+    },
+    "history": {
+      "title": "Oturum Geçmişi",
+      "status": "durum",
+      "product name": "ürün ismi",
+      "view": "sayfayı görüntüle",
+      "edit": "sayfayı düzenle",
+      "SKIP": "yoksayıldı",
+      "VALIDATED": "düzenlendi",
+      "WRONG_IMAGE": "seçilmemiş resim",
+      "close": "kapat",
+      "open": "geçmişi aç"
+    }
+  }
+}
