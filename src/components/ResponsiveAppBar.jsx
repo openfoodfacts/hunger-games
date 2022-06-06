@@ -121,7 +121,7 @@ const ResponsiveAppBar = () => {
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) =>
               page.url ? (
-                <Button key={page.url} onClick={handleCloseNavMenu} sx={{ my: 2, color: "white", display: "block" }} component={Link} to={`/${page}`}>
+                <Button key={page.url} onClick={handleCloseNavMenu} sx={{ my: 2, color: "white", display: "block" }} component={Link} to={`/${page.url}`}>
                   {t(page.translationKey)}
                 </Button>
               ) : null
