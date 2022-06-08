@@ -1,15 +1,28 @@
-import { TextField, Autocomplete, Button, MenuItem, FormControl, FormLabel, Stack, Chip, RadioGroup, FormControlLabel, Box, Radio, Divider } from "@mui/material";
 import * as React from "react";
+
+import TextField from "@mui/material/TextField";
+import Autocomplete from "@mui/material/Autocomplete";
+import Checkbox from "@mui/material/Checkbox";
+import Button from "@mui/material/Button";
+import MenuItem from "@mui/material/MenuItem";
+import FormControl from "@mui/material/FormControl";
+import FormLabel from "@mui/material/FormLabel";
+import Stack from "@mui/material/Stack";
+import Chip from "@mui/material/Chip";
+import RadioGroup from "@mui/material/RadioGroup";
+import FormControlLabel from "@mui/material/FormControlLabel";
+import Box from "@mui/material/Box";
+import Radio from "@mui/material/Radio";
+
 import EditIcon from "@mui/icons-material/Edit";
-import { useSearchParams } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
 import brands from "../../assets/brands.json";
-import { countryNames, insightTypesNames, key2urlParam } from "./const";
+import { countryNames, insightTypesNames } from "./const";
 
 const QuestionFilter = ({ filterState, setFilterState }) => {
   const { t } = useTranslation();
-  // let [searchParams, setSearchParams] = useSearchParams();
+
   const [isOpen, setIsOpen] = React.useState(false);
 
   // internal values
@@ -74,7 +87,7 @@ const QuestionFilter = ({ filterState, setFilterState }) => {
           <Chip
             label={`${t("questions.filters.short_label.value")}: ${filterState?.valueTag}`}
             onDelete={() => {
-              setFilterState((state) => ({ ...state, valueTag: undefined }));
+              setFilterState((state) => ({ ...state, valueTag: "" }));
             }}
           />
         )}
@@ -82,7 +95,7 @@ const QuestionFilter = ({ filterState, setFilterState }) => {
           <Chip
             label={`${t("questions.filters.short_label.country")}: ${filterState?.countryFilter}`}
             onDelete={() => {
-              setFilterState((state) => ({ ...state, countryFilter: undefined }));
+              setFilterState((state) => ({ ...state, countryFilter: "" }));
             }}
           />
         )}
@@ -90,7 +103,7 @@ const QuestionFilter = ({ filterState, setFilterState }) => {
           <Chip
             label={`${t("questions.filters.short_label.brand")}: ${filterState?.brandFilter}`}
             onDelete={() => {
-              setFilterState((state) => ({ ...state, brandFilter: undefined }));
+              setFilterState((state) => ({ ...state, brandFilter: "" }));
             }}
           />
         )}
@@ -98,7 +111,7 @@ const QuestionFilter = ({ filterState, setFilterState }) => {
           <Chip
             label={`${t("questions.filters.short_label.popularity")}`}
             onDelete={() => {
-              setFilterState((state) => ({ ...state, sortByPopularity: undefined }));
+              setFilterState((state) => ({ ...state, sortByPopularity: false }));
             }}
           />
         )}
@@ -141,6 +154,14 @@ const QuestionFilter = ({ filterState, setFilterState }) => {
           options={brands}
           renderInput={(params) => <TextField {...params} label={t("questions.filters.long_label.brand")} placeholder={t("questions.filters.placeholders.brand")} />}
         />
+
+        <FormControlLabel
+          value={innerSortByPopularity}
+          onChange={(event) => setInnerSortByPopularity(event.target.checked)}
+          control={<Checkbox />}
+          label={t("questions.filters.long_label.popularity")}
+          labelPlacement="right"
+        />
       </Stack>
       {/* Form opening/validation/cancellation */}
       {isOpen ? (
@@ -164,93 +185,3 @@ const QuestionFilter = ({ filterState, setFilterState }) => {
 };
 
 export default QuestionFilter;
-
-//         <div class="ui field">
-//           <label>{{ $t("questions.filters.long_label.value") }}</label>
-//           <div class="ui icon input ">
-//             <input
-//               :placeholder="$t('questions.filters.placeholders.value')"
-//               v-model="formValues.valueTag"
-//             />
-//             <i
-//               @click="clearFormField('valueTag')"
-//               v-if="formValues.valueTag"
-//               class="times link icon"
-//             ></i>
-//           </div>
-//         </div>
-
-//         <div class="ui field">
-//           <label>{{ $t("questions.filters.long_label.country") }}</label>
-//           <select class="ui fluid dropdown" v-model="formValues.countryFilter">
-//             <option value="">World</option>
-//             <option
-//               :value="country"
-//               v-for="country in countryNames"
-//               :key="country"
-//               >{{ country.slice(3) }}</option
-//             >
-//           </select>
-//         </div>
-
-//     updateURLParams: function(params) {
-//       const urlParams = {};
-//       Object.keys(params).forEach((key) => {
-//         const value =
-//           key === "sortByPopularity"
-//             ? params.sortByPopularity || ""
-//             : params[key];
-//         urlParams[key2urlParam[key]] = value;
-//       });
-
-//       setURLParams(urlParams);
-//     },
-//     validateForm: function() {
-//       this.$emit("input", { ...this.formValues });
-//       this.updateURLParams(this.formValues);
-
-//       this.closeForm();
-//     },
-//     resetForm: function() {
-//       this.formValues = { ...this.$props.value };
-
-//       this.closeForm();
-//     },
-//     removeFilter: function(filterKey) {
-//       this.formValues = {
-//         ...this.formValues,
-//         [filterKey]: filterKey === "sortByPopularity" ? false : "",
-//       };
-//       this.$emit("input", {
-//         ...this.$props.value,
-//         [filterKey]: filterKey === "sortByPopularity" ? false : "",
-//       });
-//     },
-//     loadBrands: async function() {
-//       // Load list of brand when fields is acivated
-//       if (this.brands === undefined) {
-//         this.brands = []; // set empty list to avoid multiple trigge of the json loading
-//         const images = require.context("../../assets/", false, /\.json$/);
-//         this.brands = images("./brands.json").map((x) => ({
-//           text: x,
-//           value: x,
-//           key: x,
-//         }));
-//       }
-//     },
-//     setPopulateBrandFilter: function() {
-//       this.populateBrandFilter = true;
-//     },
-//   },
-// };
-// </script>
-
-// <style scoped>
-// .root {
-//   text-align: start;
-// }
-// .openForm {
-//   width: 100%;
-//   text-align: center;
-// }
-// </style>

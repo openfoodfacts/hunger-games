@@ -1,8 +1,15 @@
 import * as React from "react";
 import { Link } from "react-router-dom";
 
-import { Button, Divider, Stack, Typography } from "@mui/material";
+import Button from "@mui/material/Button";
+import Divider from "@mui/material/Divider";
+import Stack from "@mui/material/Stack";
+import Typography from "@mui/material/Typography";
+
 import LinkIcon from "@mui/icons-material/Link";
+import DeleteIcon from "@mui/icons-material/Delete";
+import DoneIcon from "@mui/icons-material/Done";
+import QuestionMarkIcon from "@mui/icons-material/QuestionMark";
 
 import { useTranslation } from "react-i18next";
 import { NO_QUESTION_LEFT, OFF_URL } from "../../const";
@@ -44,87 +51,24 @@ const QuestionDisplay = ({ question, answerQuestion }) => {
         </Button>
       )}
       {valueTagExamplesURL && (
-        <a href={valueTagExamplesURL} target="_blank">
+        <a href={valueTagExamplesURL} target="_blank" rel="noreferrer">
           <div>{`${t("questions.see_examples")} ${question.insight_type}`}</div>
         </a>
       )}
       <Divider />
       <img src={question.source_image_url || "https://static.openfoodfacts.org/images/image-placeholder.png"} alt="" />
-      <Stack direction="row">
-        <Button onClick={() => answerQuestion({ value: 0, insightId: question.insight_id })}>{t("questions.no")}</Button>
-        <Button onClick={() => answerQuestion({ value: -1, insightId: question.insight_id })}>{t("questions.skip")}</Button>
-        <Button onClick={() => answerQuestion({ value: 1, insightId: question.insight_id })}>{t("questions.yes")}</Button>
+      <Stack direction="row" justifyContent="space-between">
+        <Button onClick={() => answerQuestion({ value: 0, insightId: question.insight_id })} startIcon={<DeleteIcon />} color="error" variant="contained" size="large">
+          {t("questions.no")}
+        </Button>
+        <Button onClick={() => answerQuestion({ value: -1, insightId: question.insight_id })} startIcon={<QuestionMarkIcon />} variant="contained" size="large">
+          {t("questions.skip")}
+        </Button>
+        <Button onClick={() => answerQuestion({ value: 1, insightId: question.insight_id })} startIcon={<DoneIcon />} color="success" variant="contained" size="large">
+          {t("questions.yes")}
+        </Button>
       </Stack>
     </div>
   );
 };
 export default QuestionDisplay;
-{
-  /*
-          <div class="ui divider hidden"></div>
-          <cropper
-            style="height: 300px; margin:auto"
-            :src="currentQuestionImageUrl"
-            :transitions="false"
-            :canvas="false"
-            :checkOrientation="false"
-            :crossOrigine="false"
-            :default-position="{
-              left: 0,
-              top: 0,
-            }"
-            :stencilSize="
-              ({ boundaries }) => {
-                return {
-                  width: boundaries.width,
-                  height: boundaries.height,
-                };
-              }
-            "
-            default-boundaries="fit"
-            :stencil-props="{
-              handlers: {},
-              movable: false,
-              resizable: false,
-            }"
-          />
-          <div class="ui divider hidden"></div>
-          <div>
-            <button
-              data-inverted
-              data-tooltip="Shortcut: N"
-              class="ui big negative button annotate"
-              @click="annotate(0)"
-            >
-              <i class="trash icon"></i>
-              {{ $t("questions.no") }}
-            </button>
-            <button
-              data-inverted
-              data-tooltip="Shortcut: K"
-              class="ui big button annotate"
-              @click="annotate(-1)"
-            >
-              <i class="question icon"></i>
-              {{ $t("questions.skip") }}
-            </button>
-            <button
-              data-inverted
-              data-tooltip="Shortcut: O"
-              class="ui big positive button annotate"
-              @click="annotate(1)"
-            >
-              <i class="check icon"></i>
-              {{ $t("questions.yes") }}
-            </button>
-          </div>
-        </div>
-        <div class="flex-center" v-else style="margin-top: 100px">
-          <LoadingSpinner :show="loading" />
-          <div v-if="noRemainingQuestion">
-            <h2>{{ $t("questions.no_questions_remaining") }}</h2>
-          </div>
-        </div>
-      </div>
-    </div> */
-}

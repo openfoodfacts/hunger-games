@@ -1,4 +1,7 @@
+export const DEFAULT_FILTER_STATE = { insightType: "brand", brandFilter: "", countryFilter: "", sortByPopularity: false, valueTag: "" };
+
 export const countryNames = [
+  "",
   "en:belgium",
   "en:denmark",
   "en:france",
@@ -26,6 +29,13 @@ export const key2urlParam = {
   valueTag: "value_tag",
   brandFilter: "brand",
   countryFilter: "country",
-  selectedInsightType: "type",
+  insightType: "type",
   sortByPopularity: "sorted",
 };
+
+const urlParams2Key = {};
+Object.entries(key2urlParam).forEach(([key, value]) => {
+  urlParams2Key[value] = key;
+});
+
+export { urlParams2Key };

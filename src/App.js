@@ -1,6 +1,6 @@
 import React from "react";
 import CssBaseline from "@mui/material/CssBaseline";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { EcoScorePage, LogosPage, SettingsPage, QuestionsPage, InsightsPage } from "./pages";
 import ResponsiveAppBar from "./components/ResponsiveAppBar";
 

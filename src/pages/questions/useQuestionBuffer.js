@@ -7,11 +7,11 @@ const PAGE_SIZE = 10;
 const BUFFER_THRESHOLD = 5;
 
 const loadQuestions = async (filterState, page = 1) => {
-  const { selectedInsightType, brandFilter, valueTag, countryFilter, sortByPopularity } = filterState;
+  const { insightType, brandFilter, valueTag, countryFilter, sortByPopularity } = filterState;
 
   const { data: dataFetched } = await robotoff.questions(
     sortByPopularity ? "popular" : "random",
-    selectedInsightType,
+    insightType,
     valueTag,
     reformatValueTag(brandFilter),
     countryFilter !== "en:world" ? countryFilter : null,
@@ -26,7 +26,6 @@ const loadQuestions = async (filterState, page = 1) => {
 const initialState = { page: 1, questions: [] };
 
 function reducer(state, action) {
-  console.log(action);
   switch (action.type) {
     case "reset":
       return { page: 1, questions: [] };
@@ -47,11 +46,11 @@ function reducer(state, action) {
   }
 }
 
-export const useQuestionBuffer = ({ sortByPopularity, selectedInsightType, valueTag, brandFilter, countryFilter }) => {
+export const useQuestionBuffer = ({ sortByPopularity, insightType, valueTag, brandFilter, countryFilter }) => {
   const [bufferState, dispatch] = React.useReducer(reducer, initialState);
   const seenInsight = React.useRef([]);
   const isLoadingRef = React.useRef(false);
-  const filteringRef = React.useRef({ sortByPopularity, selectedInsightType, valueTag, brandFilter, countryFilter });
+  const filteringRef = React.useRef({ sortByPopularity, insightType, valueTag, brandFilter, countryFilter });
 
   const answerQuestion = React.useCallback(({ value, insightId }) => {
     seenInsight.current.push(insightId);
@@ -62,27 +61,24 @@ export const useQuestionBuffer = ({ sortByPopularity, selectedInsightType, value
   }, []);
 
   React.useEffect(() => {
-    console.log("filterState useEffect");
-
     if (
       filteringRef.current.sortByPopularity !== sortByPopularity ||
-      filteringRef.current.selectedInsightType !== selectedInsightType ||
+      filteringRef.current.insightType !== insightType ||
       filteringRef.current.brandFilter !== brandFilter ||
       filteringRef.current.countryFilter !== countryFilter
     ) {
       filteringRef.current = {
         sortByPopularity,
-        selectedInsightType,
+        insightType,
         valueTag,
         brandFilter,
         countryFilter,
       };
       dispatch({ type: "reset" });
     }
-  }, [sortByPopularity, selectedInsightType, valueTag, brandFilter, countryFilter]);
+  }, [sortByPopularity, insightType, valueTag, brandFilter, countryFilter]);
 
   React.useEffect(() => {
-    console.log("start buffer effect");
     let filterIsStillValid = true;
     if (bufferState.questions.length < BUFFER_THRESHOLD && !isLoadingRef.current) {
       isLoadingRef.current = true;
@@ -101,7 +97,6 @@ export const useQuestionBuffer = ({ sortByPopularity, selectedInsightType, value
         });
     }
     return () => {
-      console.log("clean useEffect");
       filterIsStillValid = false;
       isLoadingRef.current = false;
     };

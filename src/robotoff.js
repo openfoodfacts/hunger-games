@@ -85,7 +85,7 @@ const robotoff = {
 
   getInsights(barcode, insightTypes, valueTag, annotation, page, count = 25) {
     let annotated;
-    if (annotation.length && annotation == "not_annotated") {
+    if (annotation.length && annotation === "not_annotated") {
       annotated = "0";
     }
     return axios.get(`${ROBOTOFF_API_URL}/insights`, {
@@ -124,7 +124,7 @@ const robotoff = {
     let nutritionKeyWithLangSuffix = `nutrition_${language}`;
 
     for (var key in images) {
-      if (nutritionKeyWithLangSuffix == key) {
+      if (nutritionKeyWithLangSuffix === key) {
         var imgid = images[nutritionKeyWithLangSuffix].imgid;
       }
     }
