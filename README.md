@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+# Hunger Game: One-click categorizer for Open Food Facts
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Hunger Games is a series of mini-apps that let users contribute data to Open Food Facts, in a rather fun way using React.
+You are very welcome to write the game you want.
 
-## Available Scripts
+[![Open Food Facts](https://static.openfoodfacts.org/images/misc/openfoodfacts-logo-en.svg)](https://world.openfoodfacts.org/)
 
-In the project directory, you can run:
+## Try it
 
-### `npm start`
+The production website is available at https://hunger.openfoodfacts.org
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+##  Why Hunger Games?
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Because we are sympathetic to Katniss' fight against Panem.
+- Open Food Facts generates a lot of photos, and we need to turn them into reliable data about food and cosmetics, at very large scale.
+- We process all pictures using top OCR techniques and get a lot of raw text and entities (logos) about the products.
+- We then need to let users leverage this data to easily complete products, in a fun way, on their mobiles.
 
-### `npm test`
+The main goal is: Every OpenFoodFact user can annotate products in a few minutes.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Requirements:
 
-### `npm run build`
+- [Node](https://nodejs.org)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Setup:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Install libraries `yarn install`
+- run the project locally `yarn start` (available on http://localhost:3000)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To test the ingredients parts, add `?type=ingredients` to the URL
 
-### `npm run eject`
+## Libraries:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- React
+- [MUI](mui.com) (UI library based on material design)
+- Axios (HTTP calls)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## APIs:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+OFF APIs and [Robotoff](https://github.com/openfoodfacts/robotoff)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Build
 
-## Learn More
+- `yarn build`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Use a [simple webpack config](https://github.com/facebook/create-react-app/issues/3365#issuecomment-376546407) to bundle in a single file (build/bundle.min.js) and facilitate integration in OFF main site
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Countries list
 
-### Code Splitting
+- `yarn countries`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Generate the JSON file `src/assets/countries.json` which contains all the countries available on OFF taxonomy. Data are obtained from static.openfoodfacts.org

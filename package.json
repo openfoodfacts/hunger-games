@@ -17,9 +17,15 @@
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
+  "devDependencies": {
+    "webpack-cli": "^4.9.2"
+  },
   "scripts": {
     "start": "react-scripts start",
     "countries": "node update-countries.js",
+    "build": "npm run build:react && npm run build:bundle",
+    "build:react": "react-scripts build",
+    "build:bundle": "webpack --config webpack.config.js",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
