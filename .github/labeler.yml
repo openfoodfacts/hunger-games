@@ -1,0 +1,17 @@
+github_actions:
+  - .github/**/*
+
+questions game:
+  - src/pages/questions/**/*
+
+logo game:
+  - src/pages/logos/**/*
+
+insights:
+  - src/pages/insights/**/*
+
+eco-score game:
+  - src/pages/eco-score/**/*
+
+i18n:
+  - src/i18n/**/*
