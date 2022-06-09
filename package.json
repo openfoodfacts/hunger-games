@@ -1,6 +1,7 @@
 {
   "name": "hunger-game",
   "version": "0.1.0",
+  "homepage": "https://openfoodfacts.github.io/hunger-game/",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.9.0",
@@ -27,7 +28,8 @@
     "build:react": "react-scripts build",
     "build:bundle": "webpack --config webpack.config.js",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "bash deploy.sh"
   },
   "eslintConfig": {
     "extends": [
