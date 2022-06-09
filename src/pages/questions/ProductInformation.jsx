@@ -88,17 +88,17 @@ const ProductInformation = ({ question }) => {
         label={t("questions.hide_images")}
         labelPlacement="end"
       />
-      <ImageList variant="masonry" cols={3} gap={8}>
-        {!hideImages &&
-          productData?.images &&
-          getImagesUrls(productData.images, question.barcode).map((src) => (
+      {!hideImages && productData?.images && (
+        <ImageList variant="masonry" cols={3} gap={8}>
+          {getImagesUrls(productData.images, question.barcode).map((src) => (
             <ImageListItem key={src}>
               <Zoom>
                 <img src={src} style={{ maxWidth: 300, maxHeight: 300 }} alt="" loading="lazy" />
               </Zoom>
             </ImageListItem>
           ))}
-      </ImageList>
+        </ImageList>
+      )}
 
       {/* Remaining info */}
       <Divider />

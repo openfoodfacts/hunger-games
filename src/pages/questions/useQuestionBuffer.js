@@ -65,7 +65,8 @@ export const useQuestionBuffer = ({ sortByPopularity, insightType, valueTag, bra
       filteringRef.current.sortByPopularity !== sortByPopularity ||
       filteringRef.current.insightType !== insightType ||
       filteringRef.current.brandFilter !== brandFilter ||
-      filteringRef.current.countryFilter !== countryFilter
+      filteringRef.current.countryFilter !== countryFilter ||
+      filteringRef.current.valueTag !== valueTag
     ) {
       filteringRef.current = {
         sortByPopularity,
