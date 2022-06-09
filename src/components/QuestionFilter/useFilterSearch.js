@@ -2,18 +2,22 @@ import * as React from "react";
 
 import { key2urlParam, DEFAULT_FILTER_STATE } from "./const";
 
-const updateSearchSearchParams = (newState) => {
+export const getQuestionSearchParams = (filterState) => {
   const urlParams = new URLSearchParams(window.location.search);
 
   Object.keys(DEFAULT_FILTER_STATE).forEach((key) => {
     const urlKey = key2urlParam[key];
-    if (urlParams.get(urlKey) !== undefined && !newState[key]) {
+    if (urlParams.get(urlKey) !== undefined && !filterState[key]) {
       urlParams.delete(urlKey);
-    } else if (newState[key] && urlParams.get(urlKey) !== newState[key]) {
-      urlParams.set(urlKey, newState[key]);
+    } else if (filterState[key] && urlParams.get(urlKey) !== filterState[key]) {
+      urlParams.set(urlKey, filterState[key]);
     }
   });
-  const newRelativePathQuery = `${window.location.pathname}?${urlParams.toString()}`;
+  return urlParams.toString();
+};
+
+const updateSearchSearchParams = (newState) => {
+  const newRelativePathQuery = `${window.location.pathname}?${getQuestionSearchParams(newState)}`;
   window.history.pushState(null, "", newRelativePathQuery);
 };
 

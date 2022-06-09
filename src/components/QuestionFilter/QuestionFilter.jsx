@@ -20,7 +20,7 @@ import { useTranslation } from "react-i18next";
 import brands from "../../assets/brands.json";
 import { countryNames, insightTypesNames } from "./const";
 
-const QuestionFilter = ({ filterState, setFilterState }) => {
+export const QuestionFilter = ({ filterState, setFilterState }) => {
   const { t } = useTranslation();
 
   const [isOpen, setIsOpen] = React.useState(false);
@@ -160,7 +160,7 @@ const QuestionFilter = ({ filterState, setFilterState }) => {
           onChange={(event) => setInnerSortByPopularity(event.target.checked)}
           control={<Checkbox />}
           label={t("questions.filters.long_label.popularity")}
-          labelPlacement="right"
+          labelPlacement="end"
         />
       </Stack>
       {/* Form opening/validation/cancellation */}
@@ -183,5 +183,3 @@ const QuestionFilter = ({ filterState, setFilterState }) => {
     </Box>
   );
 };
-
-export default QuestionFilter;
