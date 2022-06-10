@@ -6,7 +6,15 @@ import robotoff from "../../robotoff";
 import offService from "../../off";
 import { IS_DEVELOPMENT_MODE } from "../../const.js";
 import LoadingButton from "@mui/lab/LoadingButton";
-import { Stack, Dialog, MenuItem, Typography, Link, Button, TextField, Divider } from "@mui/material";
+
+import Stack from "@mui/material/Stack";
+import Dialog from "@mui/material/Dialog";
+import MenuItem from "@mui/material/MenuItem";
+import Typography from "@mui/material/Typography";
+import Button from "@mui/material/Button";
+import TextField from "@mui/material/TextField";
+import Divider from "@mui/material/Divider";
+
 import { useTranslation } from "react-i18next";
 
 //  Only for testing purpose
