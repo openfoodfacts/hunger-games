@@ -18,9 +18,7 @@ import Divider from "@mui/material/Divider";
 import { useTranslation } from "react-i18next";
 
 //  Only for testing purpose
-function sleep(ms) {
-  return new Promise((resolve) => setTimeout(resolve, ms));
-}
+import { sleep } from "../../utils";
 
 const getImageURL = (logo) => offService.getImageUrl(logo.image.source_image);
 
