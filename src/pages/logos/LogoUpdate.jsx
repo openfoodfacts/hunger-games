@@ -54,7 +54,7 @@ const logoTypeOptions = [
   { value: "store", labelKey: "logos.store" },
 ];
 
-const UpdateLogoForm = ({ logoId, annotationValue, annotationType, imageURL, cropURL, barcode, isLoading }) => {
+const UpdateLogoForm = ({ logoId, annotationValue = "", annotationType = "", imageURL, cropURL, barcode, isLoading }) => {
   const { t } = useTranslation();
   const [internalValue, setInternalValue] = React.useState("");
   const [internalType, setInternalType] = React.useState("");
@@ -106,7 +106,9 @@ const UpdateLogoForm = ({ logoId, annotationValue, annotationType, imageURL, cro
         <TextField value={internalValue} onChange={(event) => setInternalValue(event.target.value)} label={t("logos.value")} />
         <TextField value={internalType} onChange={(event) => setInternalType(event.target.value)} select label={t("logos.type")}>
           {logoTypeOptions.map(({ value, labelKey }) => (
-            <MenuItem value={value}>{t(labelKey)}</MenuItem>
+            <MenuItem key={labelKey} value={value}>
+              {t(labelKey)}
+            </MenuItem>
           ))}
         </TextField>
         <LoadingButton onClick={validation} loading={isSending} disabled={isLoading || !isDifferent}>
@@ -119,7 +121,14 @@ const UpdateLogoForm = ({ logoId, annotationValue, annotationType, imageURL, cro
 
 export default function LogoUpdate() {
   const { logoId } = useParams();
-  const [fetchedData, setFetchedData] = React.useState();
+  const [fetchedData, setFetchedData] = React.useState({
+    annotationValue: "",
+    annotationType: "",
+    imageURL: "",
+    cropURL: "",
+    barcode: "",
+    isLoading: false,
+  });
 
   React.useEffect(() => {
     let isValid = true;
@@ -129,7 +138,7 @@ export default function LogoUpdate() {
       imageURL: "",
       cropURL: "",
       barcode: "",
-      isLoading: false,
+      isLoading: true,
     });
     robotoff
       .loadLogo(logoId)
@@ -140,8 +149,8 @@ export default function LogoUpdate() {
         setFetchedData({
           imageURL: getImageURL(data),
           cropURL: getCropURL(data),
-          annotationValue: data.annotation_value,
-          annotationType: data.annotation_type,
+          annotationValue: data.annotation_value || "",
+          annotationType: data.annotation_type || "",
           barcode: data.image.barcode,
           isLoading: false,
         });
@@ -150,12 +159,20 @@ export default function LogoUpdate() {
         if (!isValid) {
           return;
         }
-        setFetchedData((prev) => ({ ...prev, isLoading: false }));
+        setFetchedData(() => ({
+          annotationValue: "",
+          annotationType: "",
+          imageURL: "",
+          cropURL: "",
+          barcode: "",
+          isLoading: false,
+        }));
         this.isLoading = false;
       });
     return () => {
       isValid = false;
     };
   }, [logoId]);
+
   return <UpdateLogoForm {...fetchedData} />;
 }

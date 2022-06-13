@@ -1,14 +1,17 @@
 import React from "react";
+import { createTheme, ThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { EcoScorePage, LogoAnnotationPage, LogoSearchPage, LogoUpdatePage, SettingsPage, QuestionsPage, InsightsPage } from "./pages";
 import ResponsiveAppBar from "./components/ResponsiveAppBar";
 
+const theme = createTheme({});
+
 export default function App() {
   return (
     <Router>
-      <CssBaseline />
-      <div>
+      <ThemeProvider theme={theme}>
+        <CssBaseline />
         <ResponsiveAppBar />
         <Routes>
           <Route path="eco-score" element={<EcoScorePage />} />
@@ -19,7 +22,7 @@ export default function App() {
           <Route path="questions" element={<QuestionsPage />} />
           <Route path="insights" element={<InsightsPage />} />
         </Routes>
-      </div>
+      </ThemeProvider>
     </Router>
   );
 }

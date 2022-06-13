@@ -1,11 +1,14 @@
 import * as React from "react";
 
-import { Typography, Card, CardActionArea, CardMedia, CardContent, Divider } from "@mui/material";
+import { Typography, Divider } from "@mui/material";
 import { useTranslation } from "react-i18next";
+import { useLocation } from "react-router-dom";
 
 import robotoff from "../../robotoff";
 import off from "../../off";
 import { IS_DEVELOPMENT_MODE } from "../../const";
+import LogoGrid from "../../components/LogoGrid";
+
 //  Only for testing purpose
 import { sleep } from "../../utils";
 
@@ -36,6 +39,8 @@ const DEFAULT_LOGO_SEARCH_STATE = {
 };
 
 export function useLogoSearchParams() {
+  const { search } = useLocation();
+
   const [logoSearchParams, setInternLogoSearchParams] = React.useState(() => {
     const urlParams = new URLSearchParams(window.location.search);
     const initialSearchParams = DEFAULT_LOGO_SEARCH_STATE;
@@ -46,6 +51,19 @@ export function useLogoSearchParams() {
     }
     return initialSearchParams;
   });
+
+  React.useEffect(() => {
+    setInternLogoSearchParams(() => {
+      const urlParams = new URLSearchParams(window.location.search);
+      const initialSearchParams = DEFAULT_LOGO_SEARCH_STATE;
+      for (let key of Object.keys(DEFAULT_LOGO_SEARCH_STATE)) {
+        if (urlParams.has(key)) {
+          initialSearchParams[key] = urlParams.get(key);
+        }
+      }
+      return { ...initialSearchParams };
+    });
+  }, [search]);
 
   const setLogoSearchParams = React.useCallback(
     (modifier) => {
@@ -135,7 +153,7 @@ export default function LogoAnnotation() {
         });
       });
     return () => {
-      isValid = true;
+      isValid = false;
     };
   }, [logoSearchParams.count, logoSearchParams.logo_id, logoSearchParams.index]);
 
@@ -157,33 +175,21 @@ export default function LogoAnnotation() {
         ],
       };
     });
-  });
+  }, []);
+
   if (logoState.isLoading) {
-    return <p>Loading...</p>;
+    <p>Loading...</p>;
   }
   return (
     <>
       <Typography>{t("logos.annotations")}</Typography>
       {/* put the form here */}
-      {logoState.logos
-        .filter((logo) => !!logo.selected)
-        .map((logo) => (
-          <Card key={logo.id} sx={{ width: 100, height: 150 }}>
-            <CardActionArea onClick={() => toggleSelection(logo.id)}>
-              <CardMedia component="img" height="100" loading="lazy" image={logo.image.src} sx={{ objectFit: "contain" }} />
-            </CardActionArea>
-          </Card>
-        ))}
+
+      <LogoGrid logos={logoState.logos.filter((logo) => logo.selected)} toggleLogoSelection={toggleSelection} />
+
       <Divider sx={{ margin: "1rem" }} />
-      {logoState.logos
-        .filter((logo) => !logo.selected)
-        .map((logo) => (
-          <Card key={logo.id} sx={{ width: 100, height: 150 }}>
-            <CardActionArea onClick={() => toggleSelection(logo.id)}>
-              <CardMedia component="img" height="100" loading="lazy" image={logo.image.src} sx={{ objectFit: "contain" }} />
-            </CardActionArea>
-          </Card>
-        ))}
+
+      <LogoGrid logos={logoState.logos} toggleLogoSelection={toggleSelection} />
     </>
   );
 }
