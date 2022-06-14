@@ -1,6 +1,7 @@
 import * as React from "react";
 
 import { key2urlParam, DEFAULT_FILTER_STATE } from "./const";
+import { useLocation } from "react-router-dom";
 
 export const getQuestionSearchParams = (filterState) => {
   const urlParams = new URLSearchParams(window.location.search);
@@ -21,19 +22,29 @@ const updateSearchSearchParams = (newState) => {
   window.history.pushState(null, "", newRelativePathQuery);
 };
 
-export function useFilterSearch() {
-  const [searchParams, setInternSearchParams] = React.useState(() => {
-    const urlParams = new URLSearchParams(window.location.search);
-    const initialSearchParams = DEFAULT_FILTER_STATE;
-    for (let key of Object.keys(DEFAULT_FILTER_STATE)) {
-      const urlKey = key2urlParam[key];
-      if (urlParams.has(urlKey)) {
-        initialSearchParams[key] = urlParams.get(urlKey);
-      }
+const getSearchFromUrl = () => {
+  const urlParams = new URLSearchParams(window.location.search);
+  const initialSearchParams = DEFAULT_FILTER_STATE;
+  for (let key of Object.keys(DEFAULT_FILTER_STATE)) {
+    const urlKey = key2urlParam[key];
+    if (urlParams.has(urlKey)) {
+      initialSearchParams[key] = urlParams.get(urlKey);
     }
+  }
 
-    return initialSearchParams;
+  return { ...initialSearchParams };
+};
+
+export function useFilterSearch() {
+  const { search } = useLocation();
+
+  const [searchParams, setInternSearchParams] = React.useState(() => {
+    getSearchFromUrl();
   });
+
+  React.useEffect(() => {
+    setInternSearchParams(getSearchFromUrl());
+  }, [search]);
 
   const setSearchParams = React.useCallback(
     (modifier) => {
