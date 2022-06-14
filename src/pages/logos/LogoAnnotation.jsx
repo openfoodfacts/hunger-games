@@ -1,6 +1,8 @@
 import * as React from "react";
 
-import { Typography, Divider } from "@mui/material";
+import Typography from "@mui/material/Typography";
+import Divider from "@mui/material/Divider";
+import Box from "@mui/material/Box";
 import { useTranslation } from "react-i18next";
 import { useLocation } from "react-router-dom";
 
@@ -8,11 +10,10 @@ import robotoff from "../../robotoff";
 import off from "../../off";
 import { IS_DEVELOPMENT_MODE } from "../../const";
 import LogoGrid from "../../components/LogoGrid";
+import LogoForm from "../../components/LogoForm";
 
 //  Only for testing purpose
 import { sleep } from "../../utils";
-
-const TYPE_WITHOUT_VALUE = ["packager_code", "qr_code"];
 
 export const getQuestionSearchParams = (logoSearchState) => {
   const urlParams = new URLSearchParams(window.location.search);
@@ -108,15 +109,15 @@ const loadLogos = async (targetLogoId, index, annotationCount) => {
   return logoData;
 };
 
-const sendAnnotations = async (value, type, selectedIds) => {
-  let formattedValue = value.toLowerCase();
-
-  if (TYPE_WITHOUT_VALUE.includes(type)) {
-    formattedValue = "";
+const request = (selectedIds) => async (data) => {
+  if (data == null) {
+    return;
   }
+  const { type, value } = data;
+
   const annotations = selectedIds.map((id) => ({
     logo_id: id,
-    value: formattedValue,
+    value,
     type,
   }));
 
@@ -131,7 +132,7 @@ const sendAnnotations = async (value, type, selectedIds) => {
 export default function LogoAnnotation() {
   const { t } = useTranslation();
 
-  const [logoSearchParams, setLogoSearchParams] = useLogoSearchParams();
+  const [logoSearchParams] = useLogoSearchParams();
   const [logoState, setLogoState] = React.useState({ logos: [], isLoading: false });
 
   React.useEffect(() => {
@@ -177,19 +178,30 @@ export default function LogoAnnotation() {
     });
   }, []);
 
+  const selectedIds = logoState.logos.filter((logo) => logo.selected).map((logo) => logo.id);
+
   if (logoState.isLoading) {
     <p>Loading...</p>;
   }
   return (
-    <>
+    <Box sx={{ textAlign: "center" }}>
       <Typography>{t("logos.annotations")}</Typography>
-      {/* put the form here */}
+
+      <LogoForm
+        // TODO: if the logoSearchParams.logo_id is defined and the first logo ios labelised, values should by default be initialized with its values
+        value=""
+        type=""
+        request={request(selectedIds)}
+        isLoading={logoState.isLoading}
+      />
+
+      <Divider sx={{ margin: "1rem" }} />
 
       <LogoGrid logos={logoState.logos.filter((logo) => logo.selected)} toggleLogoSelection={toggleSelection} />
 
       <Divider sx={{ margin: "1rem" }} />
 
-      <LogoGrid logos={logoState.logos} toggleLogoSelection={toggleSelection} />
-    </>
+      <LogoGrid logos={logoState.logos} toggleLogoSelection={toggleSelection} sx={{ justifyContent: "center" }} />
+    </Box>
   );
 }
