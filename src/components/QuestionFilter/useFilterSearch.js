@@ -38,9 +38,7 @@ const getSearchFromUrl = () => {
 export function useFilterSearch() {
   const { search } = useLocation();
 
-  const [searchParams, setInternSearchParams] = React.useState(() => {
-    getSearchFromUrl();
-  });
+  const [searchParams, setInternSearchParams] = React.useState(() => getSearchFromUrl());
 
   React.useEffect(() => {
     setInternSearchParams(getSearchFromUrl());
