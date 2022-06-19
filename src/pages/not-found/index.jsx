@@ -1,7 +1,9 @@
 import * as React from "react";
 import Box from "@mui/material/Box";
+import { useTranslation } from "react-i18next";
 
 export default function Insights() {
+  const { t } = useTranslation();
   return (
     <center>
       <Box
@@ -10,7 +12,7 @@ export default function Insights() {
           width: { xs: "100%", md: "60%" },
           height: "auto",
         }}
-        alt="The house from the offer."
+        alt="404 not found"
         src={require("../../assets/404.png")}
       />
       <Box
@@ -20,7 +22,7 @@ export default function Insights() {
           marginTop: "-5rem",
         }}
       >
-        Whoops! The page you're looking for can't be found.
+        {t("notfound.nopage")}
       </Box>
       <Box
         sx={{
@@ -29,7 +31,7 @@ export default function Insights() {
           marginTop: "1rem",
         }}
       >
-        Want to play some games?{" "}
+        {t("notfound.redirect1")}
         <Box
           component="a"
           href="/logos"
@@ -38,7 +40,7 @@ export default function Insights() {
             color: "#6559f6",
           }}
         >
-          Click here
+          {t("notfound.redirect2")}
         </Box>
       </Box>
     </center>
