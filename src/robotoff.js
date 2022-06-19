@@ -83,7 +83,7 @@ const robotoff = {
     );
   },
 
-  getInsights(barcode, insightTypes, valueTag, annotation, page, count = 25) {
+  getInsights(barcode = "", insightTypes = "", valueTag = "", annotation = "", page = 1, count = 25) {
     let annotated;
     if (annotation.length && annotation === "not_annotated") {
       annotated = "0";
