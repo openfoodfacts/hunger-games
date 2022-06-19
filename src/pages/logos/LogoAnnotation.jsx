@@ -184,8 +184,12 @@ export default function LogoAnnotation() {
     <p>Loading...</p>;
   }
   return (
-    <Box sx={{ textAlign: "center" }}>
-      <Typography>{t("logos.annotations")}</Typography>
+    <Box sx={{ margin:"2% 10%" }}>
+      <Box typography="h2" sx={{
+        fontSize:"1.5rem",
+        fontWeight:600,
+        marginBottom:"1%"
+      }}>{t("logos.annotations")}</Box>
 
       <LogoForm
         // TODO: if the logoSearchParams.logo_id is defined and the first logo ios labelised, values should by default be initialized with its values
@@ -195,11 +199,7 @@ export default function LogoAnnotation() {
         isLoading={logoState.isLoading}
       />
 
-      <Divider sx={{ margin: "1rem" }} />
-
       <LogoGrid logos={logoState.logos.filter((logo) => logo.selected)} toggleLogoSelection={toggleSelection} />
-
-      <Divider sx={{ margin: "1rem" }} />
 
       <LogoGrid logos={logoState.logos} toggleLogoSelection={toggleSelection} sx={{ justifyContent: "center" }} />
     </Box>

@@ -67,7 +67,7 @@ const LogoGrid = (props) => {
   return (
     <Box
       sx={{
-        padding: 5,
+        paddingTop: 5,
         display: "grid",
         gridTemplateColumns: "repeat(auto-fill, minmax(200px, 1fr))",
       }}

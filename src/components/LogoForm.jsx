@@ -64,15 +64,15 @@ const LogoForm = (props) => {
 
   return (
     <Stack direction="row" spacing={1} {...other}>
-      <TextField value={innerValue} onChange={(event) => setInnerValue(event.target.value)} label={t("logos.value")} />
-      <TextField value={innerType} onChange={(event) => setInnerType(event.target.value)} select label={t("logos.type")} sx={{ minWidth: 150 }}>
+      <TextField value={innerValue} onChange={(event) => setInnerValue(event.target.value)} label={t("logos.value")} sx={{ minWidth: 350}} size="small"/>
+      <TextField value={innerType} onChange={(event) => setInnerType(event.target.value)} select label={t("logos.type")} sx={{ minWidth: 350}} size="small">
         {logoTypeOptions.map(({ value, labelKey }) => (
           <MenuItem key={labelKey} value={value}>
             {t(labelKey)}
           </MenuItem>
         ))}
       </TextField>
-      <LoadingButton onClick={send} loading={isSending} disabled={isLoading || !isValidAnnotation({ type: innerType, value: innerValue }) || (updateMode && !isDifferent)}>
+      <LoadingButton onClick={send} loading={isSending} disabled={isLoading || !isValidAnnotation({ type: innerType, value: innerValue }) || (updateMode && !isDifferent)} variant="contained" color="primary">
         {t("logos.update")}
       </LoadingButton>
     </Stack>
