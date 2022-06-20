@@ -1,10 +1,15 @@
 import { Divider, Stack } from "@mui/material";
 import * as React from "react";
 
+import Typography from "@mui/material/Typography";
+
 import FilterInsights from "./FilterInsights";
 import InsightGrid from "./InsightsGrid";
+import { useTranslation } from "react-i18next";
 
 export default function Insights() {
+  const { t } = useTranslation();
+
   const [filterState, setFilterState] = React.useState({
     barcode: "",
     valueTag: "",
@@ -13,11 +18,13 @@ export default function Insights() {
   });
 
   return (
-    <Stack spacing={2}>
-      <p>Insights page</p>
+    <Stack spacing={2} sx={{ padding: 2 }}>
+      <Typography>{t("insights.insights")}</Typography>
       <FilterInsights filterState={filterState} setFilterState={setFilterState} />
       <Divider />
-      <InsightGrid filterState={filterState} />
+      <div style={{ height: "250px" }}>
+        <InsightGrid filterState={filterState} />
+      </div>
     </Stack>
   );
 }

@@ -5,8 +5,8 @@ import { useTranslation } from "react-i18next";
 
 const typeOptions = [
   { value: "", labelKey: "insights.all" },
-  { value: "labelKey", abelKey: "insights.labelKey" },
-  { alue: "product_weight", labelKey: "insights.product_weight" },
+  { value: "label", labelKey: "insights.label" },
+  { value: "product_weight", labelKey: "insights.product_weight" },
   { value: "category", labelKey: "insights.category" },
   { value: "expiration_date", labelKey: "insights.expiration_date" },
   { value: "packager_code", labelKey: "insights.packager_code" },
@@ -38,7 +38,7 @@ const FilterForm = ({ filterState = {}, setFilterState }) => {
   }, [innerBarcode, innerValueTag, innerInsightType, innerAnnotationStatus, setFilterState]);
 
   return (
-    <Stack direction="column" spacing={2}>
+    <Stack direction="column" spacing={2} sx={{ padding: 2 }}>
       <Stack direction="row" spacing={2}>
         <TextField
           fullWidth
@@ -72,7 +72,7 @@ const FilterForm = ({ filterState = {}, setFilterState }) => {
         </TextField>
       </Stack>
 
-      <Stack direction="row" spacing={2}>
+      <Stack direction="row" justifyContent="end">
         <Button variant="contained" onClick={validateFilter} sx={{ ml: 2 }}>
           {t("insights.search")}
         </Button>
