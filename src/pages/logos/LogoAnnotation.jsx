@@ -21,7 +21,10 @@ export const getQuestionSearchParams = (logoSearchState) => {
   Object.keys(DEFAULT_LOGO_SEARCH_STATE).forEach((key) => {
     if (urlParams.get(key) !== undefined && !logoSearchState[key]) {
       urlParams.delete(key);
-    } else if (logoSearchState[key] && urlParams.get(key) !== logoSearchState[key]) {
+    } else if (
+      logoSearchState[key] &&
+      urlParams.get(key) !== logoSearchState[key]
+    ) {
       urlParams.set(key, logoSearchState[key]);
     }
   });
@@ -29,7 +32,9 @@ export const getQuestionSearchParams = (logoSearchState) => {
 };
 
 const updateSearchSearchParams = (newState) => {
-  const newRelativePathQuery = `${window.location.pathname}?${getQuestionSearchParams(newState)}`;
+  const newRelativePathQuery = `${
+    window.location.pathname
+  }?${getQuestionSearchParams(newState)}`;
   window.history.pushState(null, "", newRelativePathQuery);
 };
 
@@ -74,7 +79,9 @@ export function useLogoSearchParams() {
       } else {
         newState = modifier;
       }
-      const isDifferent = Object.keys(DEFAULT_LOGO_SEARCH_STATE).some((key) => newState[key] !== logoSearchParams[key]);
+      const isDifferent = Object.keys(DEFAULT_LOGO_SEARCH_STATE).some(
+        (key) => newState[key] !== logoSearchParams[key]
+      );
       if (!isDifferent) {
         return;
       }
@@ -98,7 +105,10 @@ const loadLogos = async (targetLogoId, index, annotationCount) => {
   const logoData = results.map(({ logo_id, distance }) => {
     const annotation = logoImages.find(({ id }) => id === logo_id);
     const image = annotation.image;
-    const src = robotoff.getCroppedImageUrl(off.getImageUrl(image.source_image), annotation.bounding_box);
+    const src = robotoff.getCroppedImageUrl(
+      off.getImageUrl(image.source_image),
+      annotation.bounding_box
+    );
 
     return {
       distance,
@@ -133,12 +143,19 @@ export default function LogoAnnotation() {
   const { t } = useTranslation();
 
   const [logoSearchParams] = useLogoSearchParams();
-  const [logoState, setLogoState] = React.useState({ logos: [], isLoading: false });
+  const [logoState, setLogoState] = React.useState({
+    logos: [],
+    isLoading: false,
+  });
 
   React.useEffect(() => {
     let isValid = true;
     setLogoState({ logos: [], isLoading: true });
-    loadLogos(logoSearchParams.logo_id, logoSearchParams.index, logoSearchParams.count)
+    loadLogos(
+      logoSearchParams.logo_id,
+      logoSearchParams.index,
+      logoSearchParams.count
+    )
       .then((logoData) => {
         if (!isValid) return;
         setLogoState({
@@ -156,7 +173,11 @@ export default function LogoAnnotation() {
     return () => {
       isValid = false;
     };
-  }, [logoSearchParams.count, logoSearchParams.logo_id, logoSearchParams.index]);
+  }, [
+    logoSearchParams.count,
+    logoSearchParams.logo_id,
+    logoSearchParams.index,
+  ]);
 
   const toggleSelection = React.useCallback((id) => {
     setLogoState((state) => {
@@ -178,14 +199,25 @@ export default function LogoAnnotation() {
     });
   }, []);
 
-  const selectedIds = logoState.logos.filter((logo) => logo.selected).map((logo) => logo.id);
+  const selectedIds = logoState.logos
+    .filter((logo) => logo.selected)
+    .map((logo) => logo.id);
 
   if (logoState.isLoading) {
     <p>Loading...</p>;
   }
   return (
-    <Box sx={{ textAlign: "center" }}>
-      <Typography>{t("logos.annotations")}</Typography>
+    <Box sx={{ margin: "2% 10%" }}>
+      <Box
+        typography="h2"
+        sx={{
+          fontSize: "1.5rem",
+          fontWeight: 600,
+          marginBottom: 2,
+        }}
+      >
+        {t("logos.annotations")}
+      </Box>
 
       <LogoForm
         // TODO: if the logoSearchParams.logo_id is defined and the first logo ios labelised, values should by default be initialized with its values
@@ -195,13 +227,16 @@ export default function LogoAnnotation() {
         isLoading={logoState.isLoading}
       />
 
-      <Divider sx={{ margin: "1rem" }} />
+      <LogoGrid
+        logos={logoState.logos.filter((logo) => logo.selected)}
+        toggleLogoSelection={toggleSelection}
+      />
 
-      <LogoGrid logos={logoState.logos.filter((logo) => logo.selected)} toggleLogoSelection={toggleSelection} />
-
-      <Divider sx={{ margin: "1rem" }} />
-
-      <LogoGrid logos={logoState.logos} toggleLogoSelection={toggleSelection} sx={{ justifyContent: "center" }} />
+      <LogoGrid
+        logos={logoState.logos}
+        toggleLogoSelection={toggleSelection}
+        sx={{ justifyContent: "center" }}
+      />
     </Box>
   );
 }
