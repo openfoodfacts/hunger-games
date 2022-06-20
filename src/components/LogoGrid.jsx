@@ -37,7 +37,7 @@ const LogoCard = React.memo(
         disabled={!!annotation_type}
         sx={{
           width: 180,
-          marginBottom: "20px",
+          margin: "20px auto 0 auto",
           boxSizing: "border-box",
           backgroundColor: selected
             ? theme.palette.action.active
