@@ -17,6 +17,7 @@ import "react-medium-image-zoom/dist/styles.css";
 import { useTranslation } from "react-i18next";
 import { NO_QUESTION_LEFT, OFF_URL } from "../../const";
 import { reformatValueTag } from "../../utils";
+import { Box } from "@mui/system";
 
 const getValueTagQuestionsURL = (question) => {
   if (question !== null && question !== NO_QUESTION_LEFT && question.value_tag) {
@@ -47,9 +48,12 @@ const QuestionDisplay = ({ question, answerQuestion }) => {
   }
   return (
     <div>
+    <Box sx={{
+      textAlign:"center"
+    }}>
       <Typography>{question?.question}</Typography>
       {valueTagQuestionsURL && (
-        <Button component={Link} to={valueTagQuestionsURL} endIcon={<LinkIcon />}>
+        <Button component={Link} to={valueTagQuestionsURL} endIcon={<LinkIcon />} >
           {question.value}
         </Button>
       )}
@@ -66,7 +70,7 @@ const QuestionDisplay = ({ question, answerQuestion }) => {
           style={{ maxWidth: "400px", maxHeight: "400px" }}
         />
       </Zoom>
-      <Stack direction="row" justifyContent="space-between">
+      <Stack direction="row" justifyContent="space-around">
         <Button onClick={() => answerQuestion({ value: 0, insightId: question.insight_id })} startIcon={<DeleteIcon />} color="error" variant="contained" size="large">
           {t("questions.no")}
         </Button>
@@ -77,6 +81,7 @@ const QuestionDisplay = ({ question, answerQuestion }) => {
           {t("questions.yes")}
         </Button>
       </Stack>
+    </Box>
     </div>
   );
 };

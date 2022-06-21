@@ -26,11 +26,21 @@ export const QuestionFilter = ({ filterState, setFilterState }) => {
   const [isOpen, setIsOpen] = React.useState(false);
 
   // internal values
-  const [innerInsightType, setInnerInsightType] = React.useState(filterState?.insightType);
-  const [innerValueTag, setInnerValueTag] = React.useState(filterState?.valueTag);
-  const [innerCountryFilter, setInnerCountryFilter] = React.useState(filterState?.countryFilter);
-  const [innerBrandFilter, setInnerBrandFilter] = React.useState(filterState?.brandFilter);
-  const [innerSortByPopularity, setInnerSortByPopularity] = React.useState(filterState?.sortByPopularity);
+  const [innerInsightType, setInnerInsightType] = React.useState(
+    filterState?.insightType
+  );
+  const [innerValueTag, setInnerValueTag] = React.useState(
+    filterState?.valueTag
+  );
+  const [innerCountryFilter, setInnerCountryFilter] = React.useState(
+    filterState?.countryFilter
+  );
+  const [innerBrandFilter, setInnerBrandFilter] = React.useState(
+    filterState?.brandFilter
+  );
+  const [innerSortByPopularity, setInnerSortByPopularity] = React.useState(
+    filterState?.sortByPopularity
+  );
 
   const resetFilter = () => {
     setInnerInsightType(filterState?.insightType);
@@ -53,12 +63,30 @@ export const QuestionFilter = ({ filterState, setFilterState }) => {
 
   React.useEffect(() => {
     // Update internal filter state if `filterState` get updated
-    setInnerInsightType((prevInsightType) => (prevInsightType !== filterState.insightType ? filterState.insightType : prevInsightType));
-    setInnerValueTag((prevInnerValueTag) => (prevInnerValueTag !== filterState?.valueTag ? filterState?.valueTag : prevInnerValueTag));
-    setInnerCountryFilter((prevInnerCountryFilter) => (prevInnerCountryFilter !== filterState?.countryFilter ? filterState?.countryFilter : prevInnerCountryFilter));
-    setInnerBrandFilter((prevInnerBrandFilter) => (prevInnerBrandFilter !== filterState?.brandFilter ? filterState?.brandFilter : prevInnerBrandFilter));
+    setInnerInsightType((prevInsightType) =>
+      prevInsightType !== filterState.insightType
+        ? filterState.insightType
+        : prevInsightType
+    );
+    setInnerValueTag((prevInnerValueTag) =>
+      prevInnerValueTag !== filterState?.valueTag
+        ? filterState?.valueTag
+        : prevInnerValueTag
+    );
+    setInnerCountryFilter((prevInnerCountryFilter) =>
+      prevInnerCountryFilter !== filterState?.countryFilter
+        ? filterState?.countryFilter
+        : prevInnerCountryFilter
+    );
+    setInnerBrandFilter((prevInnerBrandFilter) =>
+      prevInnerBrandFilter !== filterState?.brandFilter
+        ? filterState?.brandFilter
+        : prevInnerBrandFilter
+    );
     setInnerSortByPopularity((prevInnerSortByPopularity) =>
-      prevInnerSortByPopularity !== filterState?.sortByPopularity ? filterState?.sortByPopularity : prevInnerSortByPopularity
+      prevInnerSortByPopularity !== filterState?.sortByPopularity
+        ? filterState?.sortByPopularity
+        : prevInnerSortByPopularity
     );
   }, [filterState]);
 
@@ -76,7 +104,12 @@ export const QuestionFilter = ({ filterState, setFilterState }) => {
     <Box>
       {/* Chip indicating the current state of the filtering */}
       <Stack direction="row" flexWrap="wrap" spacing={1}>
-        <TextField select size="small" value={filterState?.insightType} onChange={handleInsightTypeChange}>
+        <TextField
+          select
+          size="small"
+          value={filterState?.insightType}
+          onChange={handleInsightTypeChange}
+        >
           {Object.keys(insightTypesNames).map((insightType) => (
             <MenuItem key={insightType} value={insightType}>
               {t(`questions.${insightType}`)}{" "}
@@ -85,7 +118,9 @@ export const QuestionFilter = ({ filterState, setFilterState }) => {
         </TextField>
         {filterState?.valueTag && (
           <Chip
-            label={`${t("questions.filters.short_label.value")}: ${filterState?.valueTag}`}
+            label={`${t("questions.filters.short_label.value")}: ${
+              filterState?.valueTag
+            }`}
             onDelete={() => {
               setFilterState((state) => ({ ...state, valueTag: "" }));
             }}
@@ -93,7 +128,9 @@ export const QuestionFilter = ({ filterState, setFilterState }) => {
         )}
         {filterState?.countryFilter && (
           <Chip
-            label={`${t("questions.filters.short_label.country")}: ${filterState?.countryFilter}`}
+            label={`${t("questions.filters.short_label.country")}: ${
+              filterState?.countryFilter
+            }`}
             onDelete={() => {
               setFilterState((state) => ({ ...state, countryFilter: "" }));
             }}
@@ -101,7 +138,9 @@ export const QuestionFilter = ({ filterState, setFilterState }) => {
         )}
         {filterState?.brandFilter && (
           <Chip
-            label={`${t("questions.filters.short_label.brand")}: ${filterState?.brandFilter}`}
+            label={`${t("questions.filters.short_label.brand")}: ${
+              filterState?.brandFilter
+            }`}
             onDelete={() => {
               setFilterState((state) => ({ ...state, brandFilter: "" }));
             }}
@@ -111,7 +150,10 @@ export const QuestionFilter = ({ filterState, setFilterState }) => {
           <Chip
             label={`${t("questions.filters.short_label.popularity")}`}
             onDelete={() => {
-              setFilterState((state) => ({ ...state, sortByPopularity: false }));
+              setFilterState((state) => ({
+                ...state,
+                sortByPopularity: false,
+              }));
             }}
           />
         )}
@@ -120,10 +162,24 @@ export const QuestionFilter = ({ filterState, setFilterState }) => {
       {/* The filter form itself */}
       <Stack spacing={2} sx={{ display: isOpen ? undefined : "none" }}>
         <FormControl>
-          <FormLabel id="insightType-radio-buttons">{t("questions.filters.long_label.type")}</FormLabel>
-          <RadioGroup row aria-labelledby="insightType-radio-buttons" name="insightTypes" value={innerInsightType} onChange={handleInnerInsightTypeChange}>
+          <FormLabel id="insightType-radio-buttons">
+            {t("questions.filters.long_label.type")}
+          </FormLabel>
+          <RadioGroup
+            row
+            aria-labelledby="insightType-radio-buttons"
+            name="insightTypes"
+            value={innerInsightType}
+            onChange={handleInnerInsightTypeChange}
+          >
             {Object.keys(insightTypesNames).map((insightType) => (
-              <FormControlLabel key={insightType} value={insightType} control={<Radio />} label={t(`questions.${insightType}`)} labelPlacement="top" />
+              <FormControlLabel
+                key={insightType}
+                value={insightType}
+                control={<Radio />}
+                label={t(`questions.${insightType}`)}
+                labelPlacement="top"
+              />
             ))}
           </RadioGroup>
         </FormControl>
@@ -143,7 +199,12 @@ export const QuestionFilter = ({ filterState, setFilterState }) => {
           onChange={(event, newValue) => setInnerCountryFilter(newValue)}
           options={countryNames}
           getOptionLabel={(countryTag) => countryTag.slice(3)}
-          renderInput={(params) => <TextField {...params} label={t("questions.filters.long_label.country")} />}
+          renderInput={(params) => (
+            <TextField
+              {...params}
+              label={t("questions.filters.long_label.country")}
+            />
+          )}
         />
 
         <Autocomplete
@@ -152,7 +213,13 @@ export const QuestionFilter = ({ filterState, setFilterState }) => {
           value={innerBrandFilter}
           onChange={(event, newValue) => setInnerBrandFilter(newValue)}
           options={brands}
-          renderInput={(params) => <TextField {...params} label={t("questions.filters.long_label.brand")} placeholder={t("questions.filters.placeholders.brand")} />}
+          renderInput={(params) => (
+            <TextField
+              {...params}
+              label={t("questions.filters.long_label.brand")}
+              placeholder={t("questions.filters.placeholders.brand")}
+            />
+          )}
         />
 
         <FormControlLabel
@@ -175,7 +242,12 @@ export const QuestionFilter = ({ filterState, setFilterState }) => {
         </Stack>
       ) : (
         <Box sx={{ textAlign: "center" }}>
-          <Button variant="contained" onClick={() => setIsOpen(true)} startIcon={<EditIcon />}>
+          <Button
+            variant="contained"
+            onClick={() => setIsOpen(true)}
+            startIcon={<EditIcon />}
+            size="small"
+          >
             {t("questions.filters.actions.edit")}
           </Button>
         </Box>
