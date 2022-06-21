@@ -14,6 +14,7 @@ import FormControlLabel from "@mui/material/FormControlLabel";
 import Box from "@mui/material/Box";
 import Radio from "@mui/material/Radio";
 
+import StarBorderRoundedIcon from "@mui/icons-material/StarBorderRounded";
 import EditIcon from "@mui/icons-material/Edit";
 import { useTranslation } from "react-i18next";
 
@@ -103,60 +104,49 @@ export const QuestionFilter = ({ filterState, setFilterState }) => {
   return (
     <Box>
       {/* Chip indicating the current state of the filtering */}
-      <Stack direction="row" flexWrap="wrap" spacing={1}>
-        <TextField
-          select
-          size="small"
-          value={filterState?.insightType}
-          onChange={handleInsightTypeChange}
-        >
-          {Object.keys(insightTypesNames).map((insightType) => (
-            <MenuItem key={insightType} value={insightType}>
-              {t(`questions.${insightType}`)}{" "}
-            </MenuItem>
-          ))}
-        </TextField>
-        {filterState?.valueTag && (
-          <Chip
-            label={`${t("questions.filters.short_label.value")}: ${
-              filterState?.valueTag
-            }`}
-            onDelete={() => {
-              setFilterState((state) => ({ ...state, valueTag: "" }));
-            }}
-          />
-        )}
-        {filterState?.countryFilter && (
-          <Chip
-            label={`${t("questions.filters.short_label.country")}: ${
-              filterState?.countryFilter
-            }`}
-            onDelete={() => {
-              setFilterState((state) => ({ ...state, countryFilter: "" }));
-            }}
-          />
-        )}
-        {filterState?.brandFilter && (
-          <Chip
-            label={`${t("questions.filters.short_label.brand")}: ${
-              filterState?.brandFilter
-            }`}
-            onDelete={() => {
-              setFilterState((state) => ({ ...state, brandFilter: "" }));
-            }}
-          />
-        )}
-        {filterState?.sortByPopularity && (
-          <Chip
-            label={`${t("questions.filters.short_label.popularity")}`}
-            onDelete={() => {
-              setFilterState((state) => ({
-                ...state,
-                sortByPopularity: false,
-              }));
-            }}
-          />
-        )}
+      <Stack direction="row" spacing={1}>
+        <Stack direction="row" flexWrap="wrap" spacing={1}>
+          <TextField select size="small" value={filterState?.insightType} onChange={handleInsightTypeChange}>
+            {Object.keys(insightTypesNames).map((insightType) => (
+              <MenuItem key={insightType} value={insightType}>
+                {t(`questions.${insightType}`)}{" "}
+              </MenuItem>
+            ))}
+          </TextField>
+          {filterState?.valueTag && (
+            <Chip
+              label={`${t("questions.filters.short_label.value")}: ${filterState?.valueTag}`}
+              onDelete={() => {
+                setFilterState((state) => ({ ...state, valueTag: "" }));
+              }}
+            />
+          )}
+          {filterState?.countryFilter && (
+            <Chip
+              label={`${t("questions.filters.short_label.country")}: ${filterState?.countryFilter}`}
+              onDelete={() => {
+                setFilterState((state) => ({ ...state, countryFilter: "" }));
+              }}
+            />
+          )}
+          {filterState?.brandFilter && (
+            <Chip
+              label={`${t("questions.filters.short_label.brand")}: ${filterState?.brandFilter}`}
+              onDelete={() => {
+                setFilterState((state) => ({ ...state, brandFilter: "" }));
+              }}
+            />
+          )}
+          {filterState?.sortByPopularity && (
+            <Chip
+              label={`${t("questions.filters.short_label.popularity")}`}
+              onDelete={() => {
+                setFilterState((state) => ({ ...state, sortByPopularity: false }));
+              }}
+            />
+          )}
+        </Stack>
+        <StarBorderRoundedIcon />
       </Stack>
 
       {/* The filter form itself */}

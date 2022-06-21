@@ -1,7 +1,5 @@
 import * as React from "react";
 
-import Typography from "@mui/material/Typography";
-import Divider from "@mui/material/Divider";
 import Box from "@mui/material/Box";
 import { useTranslation } from "react-i18next";
 import { useLocation } from "react-router-dom";
