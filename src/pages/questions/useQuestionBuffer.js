@@ -35,8 +35,23 @@ function reducer(state, action) {
       if (action.payload.isLastPage) {
         questionsToAdd.push(NO_QUESTION_LEFT);
       }
-      const remainingQuestionNb = action.payload.availableQuestionsNb - state.skippedIds.length;
-      return { ...state, page: questionsToAdd.length === 0 ? state.page + 1 : state.page, questions: [...state.questions, ...questionsToAdd], remainingQuestionNb };
+      const newSkippedIds = state.skippedIds;
+
+      action.payload.removedInsightIds.forEach((id) => {
+        if (!newSkippedIds.includes(id)) {
+          // To consider insight skipped during a previous game
+          newSkippedIds.push(id);
+        }
+      });
+
+      const remainingQuestionNb = action.payload.availableQuestionsNb - newSkippedIds.length;
+      return {
+        ...state,
+        page: questionsToAdd.length === 0 ? state.page + 1 : state.page,
+        questions: [...state.questions, ...questionsToAdd],
+        remainingQuestionNb,
+        skippedIds: [...newSkippedIds],
+      };
 
     case "remove":
       const answeredQuestion = state.questions.find(({ insight_id }) => insight_id === action.payload.insightId);
@@ -110,8 +125,10 @@ export const useQuestionBuffer = ({ sortByPopularity, insightType, valueTag, bra
       loadQuestions(filteringRef.current, bufferState.page)
         .then(({ isLastPage, questions, availableQuestionsNb }) => {
           if (filterIsStillValid) {
-            let filteredQuestions = questions.filter((question) => !seenInsight.current.includes(question.insight_id));
-            dispatch({ type: "addToBuffer", payload: { questions: filteredQuestions, isLastPage, availableQuestionsNb } });
+            const filteredQuestions = questions.filter((question) => !seenInsight.current.includes(question.insight_id));
+            const removedInsightIds = questions.filter((question) => seenInsight.current.includes(question.insight_id)).map((q) => q.insight_id);
+
+            dispatch({ type: "addToBuffer", payload: { questions: filteredQuestions, isLastPage, availableQuestionsNb, removedInsightIds } });
             isLoadingRef.current = false;
           }
         })
