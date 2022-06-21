@@ -82,9 +82,7 @@ const ProductInformation = ({ question }) => {
 
       {/* Image display section */}
       <FormControlLabel
-        value={hideImages}
-        onChange={(event) => setHideImages(event.target.checked)}
-        control={<Checkbox />}
+        control={<Checkbox checked={hideImages} onChange={(event) => setHideImages(event.target.checked)} />}
         label={t("questions.hide_images")}
         labelPlacement="end"
       />
