@@ -20,27 +20,51 @@ const loadQuestions = async (filterState, page = 1) => {
   );
   const isLastPage = PAGE_SIZE * page > dataFetched.count;
 
-  return { isLastPage, questions: dataFetched.questions.filter((question) => question.source_image_url) };
+  return { isLastPage, questions: dataFetched.questions.filter((question) => question.source_image_url), availableQuestionsNb: dataFetched.count };
 };
 
-const initialState = { page: 1, questions: [] };
+const initialState = { page: 1, questions: [], answers: [], skippedIds: [] };
 
 function reducer(state, action) {
   switch (action.type) {
     case "reset":
-      return { page: 1, questions: [] };
+      return { ...state, page: 1, questions: [], skippedIds: [] };
+
     case "addToBuffer":
       const questionsToAdd = action.payload.questions.filter(({ insight_id }) => state.questions.every((q) => q.insight_id !== insight_id));
       if (action.payload.isLastPage) {
         questionsToAdd.push(NO_QUESTION_LEFT);
       }
-      return { page: questionsToAdd.length === 0 ? state.page + 1 : state.page, questions: [...state.questions, ...questionsToAdd] };
+      const remainingQuestionNb = action.payload.availableQuestionsNb - state.skippedIds.length;
+      return { ...state, page: questionsToAdd.length === 0 ? state.page + 1 : state.page, questions: [...state.questions, ...questionsToAdd], remainingQuestionNb };
+
     case "remove":
+      const answeredQuestion = state.questions.find(({ insight_id }) => insight_id === action.payload.insightId);
+
       const newQuestions = state.questions.filter(({ insight_id }) => insight_id !== action.payload.insightId);
       if (newQuestions.length === state.questions.length) {
         return state;
       }
-      return { ...state, questions: newQuestions };
+
+      // Save the answered question
+      return {
+        ...state,
+        questions: newQuestions,
+        answers: [
+          ...state.answers,
+          {
+            insight_id: answeredQuestion?.insight_id,
+            barcode: answeredQuestion?.barcode,
+            insight_type: answeredQuestion?.insight_type,
+            value: answeredQuestion?.value,
+            validationValue: action.payload.value,
+          },
+        ],
+        remainingQuestionNb: state.remainingQuestionNb - 1,
+        // skipped ids is used to correctly compute remainingQuestionNb after each data fetching
+        skippedIds: [...state.skippedIds, ...(action.payload.value === -1 ? [action.payload.insight_id] : [])],
+      };
+
     default:
       throw new Error();
   }
@@ -57,7 +81,7 @@ export const useQuestionBuffer = ({ sortByPopularity, insightType, valueTag, bra
     if (value !== -1) {
       robotoff.annotate(insightId, value);
     }
-    dispatch({ type: "remove", payload: { insightId } });
+    dispatch({ type: "remove", payload: { insightId, value } });
   }, []);
 
   React.useEffect(() => {
@@ -84,10 +108,10 @@ export const useQuestionBuffer = ({ sortByPopularity, insightType, valueTag, bra
     if (bufferState.questions.length < BUFFER_THRESHOLD && !isLoadingRef.current) {
       isLoadingRef.current = true;
       loadQuestions(filteringRef.current, bufferState.page)
-        .then(({ isLastPage, questions }) => {
+        .then(({ isLastPage, questions, availableQuestionsNb }) => {
           if (filterIsStillValid) {
             let filteredQuestions = questions.filter((question) => !seenInsight.current.includes(question.insight_id));
-            dispatch({ type: "addToBuffer", payload: { questions: filteredQuestions, isLastPage } });
+            dispatch({ type: "addToBuffer", payload: { questions: filteredQuestions, isLastPage, availableQuestionsNb } });
             isLoadingRef.current = false;
           }
         })
@@ -103,5 +127,10 @@ export const useQuestionBuffer = ({ sortByPopularity, insightType, valueTag, bra
     };
   }, [bufferState.questions.length, bufferState.page]);
 
-  return { answerQuestion, buffer: bufferState.questions };
+  return {
+    answerQuestion,
+    buffer: bufferState.questions,
+    remainingQuestionNb: bufferState.remainingQuestionNb,
+    answers: bufferState.answers,
+  };
 };
