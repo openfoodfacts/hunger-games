@@ -1,4 +1,4 @@
-# Hunger Game: One-click categorizer for Open Food Facts
+# Hunger Games: One-click categorizer for Open Food Facts
 
 Hunger Games is a series of mini-apps that let users contribute data to Open Food Facts, in a rather fun way using React.
 You are very welcome to write the game you want.
