@@ -12,7 +12,7 @@ import MenuItem from "@mui/material/MenuItem";
 import ListSubheader from "@mui/material/ListSubheader";
 import MuiLink from "@mui/material/Link";
 
-import logo from "../assets/logo_30.png";
+import logo from "../assets/logo.png";
 import { Link } from "react-router-dom";
 
 import { useTranslation } from "react-i18next";
@@ -94,7 +94,7 @@ const ResponsiveAppBar = () => {
               textDecoration: "none",
             }}
           >
-            Hunger Game
+            Hunger Games
           </Typography>
 
           {/* Desktop content */}
@@ -116,7 +116,7 @@ const ResponsiveAppBar = () => {
               textDecoration: "none",
             }}
           >
-            Hunger Game
+            Hunger Games
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) =>
