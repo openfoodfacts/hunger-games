@@ -2,7 +2,16 @@ import React from "react";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { EcoScorePage, LogoAnnotationPage, LogoSearchPage, LogoUpdatePage, SettingsPage, QuestionsPage, InsightsPage, NotFoundPage } from "./pages";
+import {
+  EcoScorePage,
+  LogoAnnotationPage,
+  // LogoSearchPage,
+  LogoUpdatePage,
+  SettingsPage,
+  QuestionsPage,
+  InsightsPage,
+  NotFoundPage,
+} from "./pages";
 import ResponsiveAppBar from "./components/ResponsiveAppBar";
 
 const theme = createTheme({});
