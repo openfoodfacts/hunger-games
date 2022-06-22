@@ -14,14 +14,16 @@ export default function App() {
         <CssBaseline />
         <ResponsiveAppBar />
         <Routes>
-          <Route path="eco-score" element={<EcoScorePage />} />
+          {/* TODO: put a home page for root url */}
+          <Route path="/" element={<QuestionsPage />} />
+          <Route path="/eco-score" element={<EcoScorePage />} />
           <Route path="/logos" element={<LogoAnnotationPage />} />
-          <Route path="/logos/search" element={<LogoSearchPage />} />
+          {/* <Route path="/logos/search" element={<LogoSearchPage />} /> */}
           <Route path="/logos/:logoId" element={<LogoUpdatePage />} />
-          <Route path="settings" element={<SettingsPage />} />
-          <Route path="questions" element={<QuestionsPage />} />
-          <Route path="insights" element={<InsightsPage />} />
-          <Route path="*" element={<NotFoundPage/>} />
+          <Route path="/settings" element={<SettingsPage />} />
+          <Route path="/questions" element={<QuestionsPage />} />
+          <Route path="/insights" element={<InsightsPage />} />
+          <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </ThemeProvider>
     </Router>
