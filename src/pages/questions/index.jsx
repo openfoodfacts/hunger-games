@@ -14,16 +14,20 @@ import Box from "@mui/material/Box";
 export default function Questions() {
   const [filterState, setFilterState] = useFilterSearch();
 
-  const { buffer, answerQuestion, remainingQuestionNb, answers } = useQuestionBuffer(filterState);
+  const { buffer, answerQuestion, remainingQuestionNb, answers } =
+    useQuestionBuffer(filterState);
   const question = buffer[0] ?? null;
 
   return (
-    <Box sx={{ margin: "2% 5%" }}>
+    <Box sx={{ margin: "2% 5%", overflow: "hidden" }}>
       <Stack
-        direction={{ xs: "column", sm: "row" }}
+        direction={{ xs: "column", sm: "column", md: "row" }}
         spacing={{ xs: 1, sm: 2, md: 4 }}
       >
-        <Stack direction="column" sx={{minWidth:"33%"}}>
+        <Stack
+          direction="column"
+          sx={{ width: { sm: "100%", md: "calc(100%/3)" } }}
+        >
           <QuestionFilter
             filterState={filterState}
             setFilterState={setFilterState}
@@ -35,8 +39,13 @@ export default function Questions() {
             answerQuestion={answerQuestion}
           />
         </Stack>
-        <ProductInformation question={question} />
-        <UserData remainingQuestionNb={remainingQuestionNb} answers={answers} />
+        <ProductInformation
+          question={question}
+        />
+        <UserData
+          remainingQuestionNb={remainingQuestionNb}
+          answers={answers}
+        />
       </Stack>
     </Box>
   );

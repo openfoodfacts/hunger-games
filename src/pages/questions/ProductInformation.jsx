@@ -1,5 +1,5 @@
 import * as React from "react";
-
+import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Link from "@mui/material/Link";
 import Divider from "@mui/material/Divider";
@@ -69,20 +69,33 @@ const ProductInformation = ({ question }) => {
   }
 
   return (
-    <div>
+    <Box sx={{ width: { sm: "100%", md: "calc(100%/2)" } }}>
       {/* Main information about the product */}
       <Typography>{productData?.productName}</Typography>
-      <Button component={Link} target="_blank" href={offService.getProductUrl(question.barcode)}>
+      <Button
+        component={Link}
+        target="_blank"
+        href={offService.getProductUrl(question.barcode)}
+      >
         {t("questions.view")}
       </Button>
-      <Button component={Link} target="_blank" href={offService.getProductEditUrl(question.barcode)}>
+      <Button
+        component={Link}
+        target="_blank"
+        href={offService.getProductEditUrl(question.barcode)}
+      >
         {t("questions.edit")}
       </Button>
       <Divider />
 
       {/* Image display section */}
       <FormControlLabel
-        control={<Checkbox checked={hideImages} onChange={(event) => setHideImages(event.target.checked)} />}
+        control={
+          <Checkbox
+            checked={hideImages}
+            onChange={(event) => setHideImages(event.target.checked)}
+          />
+        }
         label={t("questions.hide_images")}
         labelPlacement="end"
       />
@@ -91,7 +104,12 @@ const ProductInformation = ({ question }) => {
           {getImagesUrls(productData.images, question.barcode).map((src) => (
             <ImageListItem key={src}>
               <Zoom>
-                <img src={src} style={{ maxWidth: 300, maxHeight: 300 }} alt="" loading="lazy" />
+                <img
+                  src={src}
+                  style={{ maxWidth: 300, maxHeight: 300 }}
+                  alt=""
+                  loading="lazy"
+                />
               </Zoom>
             </ImageListItem>
           ))}
@@ -109,7 +127,8 @@ const ProductInformation = ({ question }) => {
       <p>
         {t("questions.countries")}: {productData?.countriesTags}
       </p>
-    </div>
+      <Divider />
+    </Box>
   );
 };
 export default ProductInformation;
