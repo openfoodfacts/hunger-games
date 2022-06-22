@@ -6,19 +6,47 @@ import QuestionDisplay from "./QuestionDisplay";
 import ProductInformation from "./ProductInformation";
 import UserData from "./UserData";
 import { useQuestionBuffer } from "./useQuestionBuffer";
+import Divider from "@mui/material/Divider";
+
+import Stack from "@mui/material/Stack";
+import Box from "@mui/material/Box";
 
 export default function Questions() {
   const [filterState, setFilterState] = useFilterSearch();
 
-  const { buffer, answerQuestion, remainingQuestionNb, answers } = useQuestionBuffer(filterState);
+  const { buffer, answerQuestion, remainingQuestionNb, answers } =
+    useQuestionBuffer(filterState);
   const question = buffer[0] ?? null;
 
   return (
-    <>
-      <QuestionFilter filterState={filterState} setFilterState={setFilterState} />
-      <QuestionDisplay question={question} answerQuestion={answerQuestion} />
-      <ProductInformation question={question} />
-      <UserData remainingQuestionNb={remainingQuestionNb} answers={answers} />
-    </>
+    <Box sx={{ margin: "2% 5%", overflow: "hidden" }}>
+      <Stack
+        direction={{ xs: "column", sm: "column", md: "row" }}
+        spacing={{ xs: 1, sm: 2, md: 4 }}
+      >
+        <Stack
+          direction="column"
+          sx={{ width: { sm: "100%", md: "calc(100%/3)" } }}
+        >
+          <QuestionFilter
+            filterState={filterState}
+            setFilterState={setFilterState}
+          />
+
+          <Divider sx={{ margin: "1rem" }} />
+          <QuestionDisplay
+            question={question}
+            answerQuestion={answerQuestion}
+          />
+        </Stack>
+        <ProductInformation
+          question={question}
+        />
+        <UserData
+          remainingQuestionNb={remainingQuestionNb}
+          answers={answers}
+        />
+      </Stack>
+    </Box>
   );
 }

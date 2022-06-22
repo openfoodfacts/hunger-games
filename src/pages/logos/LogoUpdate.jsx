@@ -12,6 +12,7 @@ import Dialog from "@mui/material/Dialog";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import Divider from "@mui/material/Divider";
+import Box from "@mui/material/Box";
 
 import { useTranslation } from "react-i18next";
 
@@ -24,7 +25,15 @@ const getCropURL = (logo) => {
   return robotoff.getCroppedImageUrl(getImageURL(logo), logo.bounding_box);
 };
 
-const UpdateLogoForm = ({ logoId, annotationValue = "", annotationType = "", imageURL, cropURL, barcode, isLoading }) => {
+const UpdateLogoForm = ({
+  logoId,
+  annotationValue = "",
+  annotationType = "",
+  imageURL,
+  cropURL,
+  barcode,
+  isLoading,
+}) => {
   const { t } = useTranslation();
   const [isImageOpen, setIsImageOpen] = React.useState(false);
 
@@ -45,33 +54,56 @@ const UpdateLogoForm = ({ logoId, annotationValue = "", annotationType = "", ima
   );
 
   return (
-    <>
+    <Box sx={{ margin: "2% 10%" }}>
       <Dialog open={isImageOpen} onClose={() => setIsImageOpen(false)}>
-        <img src={imageURL} alt="" style={{ maxWidth: "90vw", maxHeight: "90vh" }} />
+        <img
+          src={imageURL}
+          alt=""
+          style={{ maxWidth: "90vw", maxHeight: "90vh" }}
+        />
       </Dialog>
-      <Stack spacing={2} sx={{ alignItems: "center", maxWidth: 500 }}>
-        <Typography>{t("logos.detail")}</Typography>
+      <Stack spacing={2}>
+        <Typography
+          variant="h2"
+          sx={{
+            fontSize: "1.5rem",
+            fontWeight: 600,
+            marginBottom: 2,
+          }}
+        >
+          {t("logos.detail")}
+        </Typography>
         <Typography>
           {t("logos.id")} {logoId}
         </Typography>
         <Typography>
           {t("logos.barcode")} {barcode}
         </Typography>
+        <img width="300px" src={cropURL} alt="crop of the logo" />
         <Button
+          sx={{
+            maxWidth: 150,
+            background: "#3f50b5",
+            color: "white",
+            "&:hover": { color: "black" },
+          }}
           onClick={() => {
             setIsImageOpen(true);
           }}
         >
           {t("logos.full_image")}
         </Button>
-
-        <img width="300px" src={cropURL} alt="crop of the logo" />
-
         <Divider />
 
-        <LogoForm value={annotationValue} type={annotationType} updateMode request={request(logoId)} isLoading={isLoading} />
+        <LogoForm
+          value={annotationValue}
+          type={annotationType}
+          updateMode
+          request={request(logoId)}
+          isLoading={isLoading}
+        />
       </Stack>
-    </>
+    </Box>
   );
 };
 

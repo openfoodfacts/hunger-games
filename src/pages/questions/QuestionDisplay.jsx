@@ -17,9 +17,14 @@ import "react-medium-image-zoom/dist/styles.css";
 import { useTranslation } from "react-i18next";
 import { NO_QUESTION_LEFT, OFF_URL } from "../../const";
 import { reformatValueTag } from "../../utils";
+import { Box } from "@mui/system";
 
 const getValueTagQuestionsURL = (question) => {
-  if (question !== null && question !== NO_QUESTION_LEFT && question.value_tag) {
+  if (
+    question !== null &&
+    question !== NO_QUESTION_LEFT &&
+    question.value_tag
+  ) {
     const urlParams = new URLSearchParams();
     urlParams.append("type", question.insight_type);
     urlParams.append("value_tag", reformatValueTag(question.value_tag));
@@ -28,8 +33,15 @@ const getValueTagQuestionsURL = (question) => {
   return null;
 };
 const getValueTagExamplesURL = (question) => {
-  if (question !== null && question !== NO_QUESTION_LEFT && question.value_tag && question.insight_type) {
-    return `${OFF_URL}/${question.insight_type}/${reformatValueTag(question.value_tag)}`;
+  if (
+    question !== null &&
+    question !== NO_QUESTION_LEFT &&
+    question.value_tag &&
+    question.insight_type
+  ) {
+    return `${OFF_URL}/${question.insight_type}/${reformatValueTag(
+      question.value_tag
+    )}`;
   }
   return "";
 };
@@ -47,36 +59,74 @@ const QuestionDisplay = ({ question, answerQuestion }) => {
   }
   return (
     <div>
-      <Typography>{question?.question}</Typography>
-      {valueTagQuestionsURL && (
-        <Button component={Link} to={valueTagQuestionsURL} endIcon={<LinkIcon />}>
-          {question.value}
-        </Button>
-      )}
-      {valueTagExamplesURL && (
-        <a href={valueTagExamplesURL} target="_blank" rel="noreferrer">
-          <div>{`${t("questions.see_examples")} ${question.insight_type}`}</div>
-        </a>
-      )}
-      <Divider />
-      <Zoom>
-        <img
-          src={question.source_image_url.replace("400.jpg", "jpg") || "https://static.openfoodfacts.org/images/image-placeholder.png"}
-          alt=""
-          style={{ maxWidth: "400px", maxHeight: "400px" }}
-        />
-      </Zoom>
-      <Stack direction="row" justifyContent="space-between">
-        <Button onClick={() => answerQuestion({ value: 0, insightId: question.insight_id })} startIcon={<DeleteIcon />} color="error" variant="contained" size="large">
-          {t("questions.no")}
-        </Button>
-        <Button onClick={() => answerQuestion({ value: -1, insightId: question.insight_id })} startIcon={<QuestionMarkIcon />} variant="contained" size="large">
-          {t("questions.skip")}
-        </Button>
-        <Button onClick={() => answerQuestion({ value: 1, insightId: question.insight_id })} startIcon={<DoneIcon />} color="success" variant="contained" size="large">
-          {t("questions.yes")}
-        </Button>
-      </Stack>
+      <Box
+        sx={{
+          textAlign: "center",
+        }}
+      >
+        <Typography>{question?.question}</Typography>
+        {valueTagQuestionsURL && (
+          <Button
+            component={Link}
+            to={valueTagQuestionsURL}
+            endIcon={<LinkIcon />}
+          >
+            {question.value}
+          </Button>
+        )}
+        {valueTagExamplesURL && (
+          <a href={valueTagExamplesURL} target="_blank" rel="noreferrer">
+            <div>{`${t("questions.see_examples")} ${
+              question.insight_type
+            }`}</div>
+          </a>
+        )}
+        <Divider />
+        <Zoom>
+          <img
+            src={
+              question.source_image_url.replace("400.jpg", "jpg") ||
+              "https://static.openfoodfacts.org/images/image-placeholder.png"
+            }
+            alt=""
+            style={{ maxWidth: "100%", maxHeight: "100%" }}
+          />
+        </Zoom>
+        <Stack direction="row" justifyContent="space-around">
+          <Button
+            onClick={() =>
+              answerQuestion({ value: 0, insightId: question.insight_id })
+            }
+            startIcon={<DeleteIcon />}
+            color="error"
+            variant="contained"
+            size="large"
+          >
+            {t("questions.no")}
+          </Button>
+          <Button
+            onClick={() =>
+              answerQuestion({ value: -1, insightId: question.insight_id })
+            }
+            startIcon={<QuestionMarkIcon />}
+            variant="contained"
+            size="large"
+          >
+            {t("questions.skip")}
+          </Button>
+          <Button
+            onClick={() =>
+              answerQuestion({ value: 1, insightId: question.insight_id })
+            }
+            startIcon={<DoneIcon />}
+            color="success"
+            variant="contained"
+            size="large"
+          >
+            {t("questions.yes")}
+          </Button>
+        </Stack>
+      </Box>
     </div>
   );
 };
