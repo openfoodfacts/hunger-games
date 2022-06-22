@@ -14,7 +14,6 @@ import FormControlLabel from "@mui/material/FormControlLabel";
 import Box from "@mui/material/Box";
 import Radio from "@mui/material/Radio";
 
-import StarBorderRoundedIcon from "@mui/icons-material/StarBorderRounded";
 import EditIcon from "@mui/icons-material/Edit";
 import { useTranslation } from "react-i18next";
 
@@ -118,7 +117,6 @@ export const QuestionFilter = ({ filterState, setFilterState }) => {
             />
           )}
         </Stack>
-        <StarBorderRoundedIcon />
       </Stack>
 
       {/* The filter form itself */}
