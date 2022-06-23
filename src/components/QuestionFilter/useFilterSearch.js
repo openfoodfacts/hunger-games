@@ -18,7 +18,9 @@ export const getQuestionSearchParams = (filterState) => {
 };
 
 const updateSearchSearchParams = (newState) => {
-  const newRelativePathQuery = `${window.location.pathname}?${getQuestionSearchParams(newState)}`;
+  const newRelativePathQuery = `${
+    window.location.pathname
+  }?${getQuestionSearchParams(newState)}`;
   window.history.pushState(null, "", newRelativePathQuery);
 };
 
@@ -38,7 +40,9 @@ const getSearchFromUrl = () => {
 export function useFilterSearch() {
   const { search } = useLocation();
 
-  const [searchParams, setInternSearchParams] = React.useState(() => getSearchFromUrl());
+  const [searchParams, setInternSearchParams] = React.useState(() =>
+    getSearchFromUrl()
+  );
 
   React.useEffect(() => {
     setInternSearchParams(getSearchFromUrl());
@@ -52,7 +56,9 @@ export function useFilterSearch() {
       } else {
         newState = modifier;
       }
-      const isDifferent = Object.keys(DEFAULT_FILTER_STATE).some((key) => newState[key] !== searchParams[key]);
+      const isDifferent = Object.keys(DEFAULT_FILTER_STATE).some(
+        (key) => newState[key] !== searchParams[key]
+      );
       if (!isDifferent) {
         return;
       }

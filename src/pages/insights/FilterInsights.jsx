@@ -23,10 +23,18 @@ const annotationOptions = [
 const FilterForm = ({ filterState = {}, setFilterState }) => {
   const { t } = useTranslation();
 
-  const [innerBarcode, setInnerBarcode] = React.useState(filterState.barcode ?? "");
-  const [innerValueTag, setInnerValueTag] = React.useState(filterState.valueTag ?? "");
-  const [innerInsightType, setInnerInsightType] = React.useState(filterState.insightType ?? "");
-  const [innerAnnotationStatus, setInnerAnnotationStatus] = React.useState(filterState.annotationStatus ?? "");
+  const [innerBarcode, setInnerBarcode] = React.useState(
+    filterState.barcode ?? ""
+  );
+  const [innerValueTag, setInnerValueTag] = React.useState(
+    filterState.valueTag ?? ""
+  );
+  const [innerInsightType, setInnerInsightType] = React.useState(
+    filterState.insightType ?? ""
+  );
+  const [innerAnnotationStatus, setInnerAnnotationStatus] = React.useState(
+    filterState.annotationStatus ?? ""
+  );
 
   const validateFilter = React.useCallback(() => {
     setFilterState({
@@ -35,7 +43,13 @@ const FilterForm = ({ filterState = {}, setFilterState }) => {
       insightType: innerInsightType,
       annotationStatus: innerAnnotationStatus,
     });
-  }, [innerBarcode, innerValueTag, innerInsightType, innerAnnotationStatus, setFilterState]);
+  }, [
+    innerBarcode,
+    innerValueTag,
+    innerInsightType,
+    innerAnnotationStatus,
+    setFilterState,
+  ]);
 
   return (
     <Stack direction="column" spacing={2} sx={{ padding: 2 }}>
@@ -56,14 +70,26 @@ const FilterForm = ({ filterState = {}, setFilterState }) => {
         />
       </Stack>
       <Stack direction="row" spacing={2}>
-        <TextField fullWidth label={t("insights.type")} value={innerInsightType} onChange={(event) => setInnerInsightType(event.target.value)} select>
+        <TextField
+          fullWidth
+          label={t("insights.type")}
+          value={innerInsightType}
+          onChange={(event) => setInnerInsightType(event.target.value)}
+          select
+        >
           {typeOptions.map(({ value, labelKey }) => (
             <MenuItem key={value} value={value}>
               {t(labelKey)}
             </MenuItem>
           ))}
         </TextField>
-        <TextField fullWidth label={t("insights.annotated")} value={innerAnnotationStatus} onChange={(event) => setInnerAnnotationStatus(event.target.value)} select>
+        <TextField
+          fullWidth
+          label={t("insights.annotated")}
+          value={innerAnnotationStatus}
+          onChange={(event) => setInnerAnnotationStatus(event.target.value)}
+          select
+        >
           {annotationOptions.map(({ value, labelKey }) => (
             <MenuItem key={value} value={value}>
               {t(labelKey)}

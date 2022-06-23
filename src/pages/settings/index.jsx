@@ -25,7 +25,13 @@ export default function Settings() {
       <Typography variant="h4" component="h2" sx={{ mb: 5 }}>
         Settings
       </Typography>
-      <TextField select sx={{ minWidth: 150 }} label={t("settings.language")} value={language} onChange={handleChange}>
+      <TextField
+        select
+        sx={{ minWidth: 150 }}
+        label={t("settings.language")}
+        value={language}
+        onChange={handleChange}
+      >
         {Object.keys(messages).map((lang) => (
           <MenuItem key={lang} value={lang}>
             {lang.toUpperCase()}

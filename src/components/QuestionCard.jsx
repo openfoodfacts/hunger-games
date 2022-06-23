@@ -14,7 +14,13 @@ import { getQuestionSearchParams } from "./QuestionFilter";
 
 const QuestionCard = (props) => {
   const { filterState, imageSrc, title } = props;
-  const { sortByPopularity, insightType, valueTag, brandFilter, countryFilter } = filterState;
+  const {
+    sortByPopularity,
+    insightType,
+    valueTag,
+    brandFilter,
+    countryFilter,
+  } = filterState;
 
   const targetUrl = `/questions?${getQuestionSearchParams(filterState)}`;
 
@@ -23,7 +29,15 @@ const QuestionCard = (props) => {
   React.useEffect(() => {
     let isValid = true;
     robotoff
-      .questions(sortByPopularity ? "popular" : "random", insightType, valueTag, reformatValueTag(brandFilter), countryFilter !== "en:world" ? countryFilter : null, 1, 1)
+      .questions(
+        sortByPopularity ? "popular" : "random",
+        insightType,
+        valueTag,
+        reformatValueTag(brandFilter),
+        countryFilter !== "en:world" ? countryFilter : null,
+        1,
+        1
+      )
       .then(({ data }) => {
         if (isValid) {
           setQuestionNumber(data?.count ?? 0);
@@ -36,14 +50,36 @@ const QuestionCard = (props) => {
 
   return (
     <Badge
-      sx={{ "& .MuiBadge-badge": { fontSize: "1.5rem", minWidth: "2rem", minHeight: "2rem" } }}
+      sx={{
+        "& .MuiBadge-badge": {
+          fontSize: "1.5rem",
+          minWidth: "2rem",
+          minHeight: "2rem",
+        },
+      }}
       badgeContent={questionNumber}
       showZero
-      color={questionNumber === "?" ? "info" : questionNumber > 0 ? "error" : "success"}
+      color={
+        questionNumber === "?"
+          ? "info"
+          : questionNumber > 0
+          ? "error"
+          : "success"
+      }
     >
       <Card sx={{ width: 300, height: 350 }}>
-        <CardActionArea component={Link} disabled={!questionNumber} href={targetUrl}>
-          <CardMedia component="img" height="300" image={imageSrc} alt="" sx={{ objectFit: "contain" }} />
+        <CardActionArea
+          component={Link}
+          disabled={!questionNumber}
+          href={targetUrl}
+        >
+          <CardMedia
+            component="img"
+            height="300"
+            image={imageSrc}
+            alt=""
+            sx={{ objectFit: "contain" }}
+          />
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
               {title}

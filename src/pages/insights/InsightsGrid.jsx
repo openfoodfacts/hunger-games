@@ -30,7 +30,10 @@ const getProductEditUrl = (code) => {
   return offService.getProductEditUrl(code);
 };
 const getQuestionUrl = (type, value_tag) => {
-  if (!value_tag || !["category", "brand", "product_weight", "label"].includes(type)) {
+  if (
+    !value_tag ||
+    !["category", "brand", "product_weight", "label"].includes(type)
+  ) {
     return "";
   }
   return `/questions?type=${type}&value_tag=${value_tag}`;
@@ -55,7 +58,9 @@ const annotationValueToTranslationKey = {
 
 const TypeCell = ({ value }) => {
   const { t } = useTranslation();
-  const text = typeKeyToTranslationKey[value ?? ""] ? t(typeKeyToTranslationKey[value ?? ""]) : value;
+  const text = typeKeyToTranslationKey[value ?? ""]
+    ? t(typeKeyToTranslationKey[value ?? ""])
+    : value;
 
   return <Typography>{text}</Typography>;
 };
@@ -87,7 +92,13 @@ const AnnotationStateCell = ({ value }) => {
   }
 };
 
-const dateTimeColumn = { type: "dateTime", minWidth: 150, maxWidth: 200, flex: 1, valueGetter: (params) => (params.value ? new Date(params.value) : null) };
+const dateTimeColumn = {
+  type: "dateTime",
+  minWidth: 150,
+  maxWidth: 200,
+  flex: 1,
+  valueGetter: (params) => (params.value ? new Date(params.value) : null),
+};
 
 const columns = [
   {
@@ -116,12 +127,25 @@ const columns = [
       />,
     ],
   },
-  { field: "type", minWidth: 150, flex: 1, maxWidth: 200, renderCell: TypeCell },
+  {
+    field: "type",
+    minWidth: 150,
+    flex: 1,
+    maxWidth: 200,
+    renderCell: TypeCell,
+  },
   {
     field: "value_tag",
     minWidth: 200,
     flex: 1,
-    renderCell: ({ row }) => (row.type && row.value_tag ? <Link href={getQuestionUrl(row.type, row.value_tag)}>{row.value_tag}</Link> : row.value_tag),
+    renderCell: ({ row }) =>
+      row.type && row.value_tag ? (
+        <Link href={getQuestionUrl(row.type, row.value_tag)}>
+          {row.value_tag}
+        </Link>
+      ) : (
+        row.value_tag
+      ),
   },
   { field: "barcode", minWidth: 180, flex: 1, maxWidth: 200 },
   { field: "id" },
@@ -137,7 +161,14 @@ const columns = [
     maxWidth: 110,
     flex: 1,
   },
-  { field: "automatic_processing", type: "boolean", valueGetter: ({ value }) => Boolean(value), minWidth: 70, flex: 1, maxWidth: 110 },
+  {
+    field: "automatic_processing",
+    type: "boolean",
+    valueGetter: ({ value }) => Boolean(value),
+    minWidth: 70,
+    flex: 1,
+    maxWidth: 110,
+  },
 ].map((col) => ({ ...col, sortable: false }));
 
 const PAGE_SIZE = 25;
@@ -153,11 +184,22 @@ const InsightGrid = ({ filterState = {} }) => {
     setIsLoading(true);
     let isValid = true;
     robotoffService
-      .getInsights(filterState.barcode, filterState.insightType, filterState.valueTag, filterState.annotationStatus, pageState.page, PAGE_SIZE)
+      .getInsights(
+        filterState.barcode,
+        filterState.insightType,
+        filterState.valueTag,
+        filterState.annotationStatus,
+        pageState.page,
+        PAGE_SIZE
+      )
       .then((result) => {
         if (isValid) {
           const newRowCount = result.data.count;
-          setPageState((prevState) => (newRowCount !== prevState.rowCount ? { ...prevState, rowCount: newRowCount } : prevState));
+          setPageState((prevState) =>
+            newRowCount !== prevState.rowCount
+              ? { ...prevState, rowCount: newRowCount }
+              : prevState
+          );
           setRows(
             result.data.insights.map((row) => ({
               ...row,
@@ -175,7 +217,14 @@ const InsightGrid = ({ filterState = {} }) => {
     return () => {
       isValid = false;
     };
-  }, [filterState.barcode, filterState.valueTag, filterState.insightType, filterState.annotationStatus, pageState.page, t]);
+  }, [
+    filterState.barcode,
+    filterState.valueTag,
+    filterState.insightType,
+    filterState.annotationStatus,
+    pageState.page,
+    t,
+  ]);
 
   return (
     <DataGrid
@@ -184,13 +233,20 @@ const InsightGrid = ({ filterState = {} }) => {
       rows={rows}
       disableColumnFilter
       disableCol
-      componentsProps={{ toolbar: { printOptions: { disableToolbarButton: true }, csvOptions: { disableToolbarButton: true } } }}
+      componentsProps={{
+        toolbar: {
+          printOptions: { disableToolbarButton: true },
+          csvOptions: { disableToolbarButton: true },
+        },
+      }}
       components={{ Toolbar: GridToolbar }}
       isLoading={isLoading}
       page={pageState.page - 1}
       pageSize={PAGE_SIZE}
       rowsPerPageOptions={[PAGE_SIZE]}
-      onPageChange={(page) => setPageState((prev) => ({ ...prev, page: page + 1 }))}
+      onPageChange={(page) =>
+        setPageState((prev) => ({ ...prev, page: page + 1 }))
+      }
       paginationMode="server"
       rowCount={pageState.rowCount}
       density="compact"

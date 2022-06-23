@@ -46,7 +46,14 @@ const ResponsiveAppBar = () => {
         <Toolbar disableGutters>
           {/* Mobile content */}
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
-            <IconButton size="large" aria-label="account of current user" aria-controls="menu-appbar" aria-haspopup="true" onClick={handleOpenNavMenu} color="inherit">
+            <IconButton
+              size="large"
+              aria-label="account of current user"
+              aria-controls="menu-appbar"
+              aria-haspopup="true"
+              onClick={handleOpenNavMenu}
+              color="inherit"
+            >
               <MenuIcon />
             </IconButton>
             <Menu
@@ -69,11 +76,20 @@ const ResponsiveAppBar = () => {
             >
               {pages.map((page) =>
                 page.url ? (
-                  <MenuItem key={page.translationKey} onClick={handleCloseNavMenu} component={Link} to={`/${page.url}`}>
-                    <Typography textAlign="center">{t(page.translationKey)}</Typography>
+                  <MenuItem
+                    key={page.translationKey}
+                    onClick={handleCloseNavMenu}
+                    component={Link}
+                    to={`/${page.url}`}
+                  >
+                    <Typography textAlign="center">
+                      {t(page.translationKey)}
+                    </Typography>
                   </MenuItem>
                 ) : (
-                  <ListSubheader key={page.translationKey}>{t(page.translationKey)}</ListSubheader>
+                  <ListSubheader key={page.translationKey}>
+                    {t(page.translationKey)}
+                  </ListSubheader>
                 )
               )}
             </Menu>
@@ -98,8 +114,17 @@ const ResponsiveAppBar = () => {
           </Typography>
 
           {/* Desktop content */}
-          <MuiLink sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} href="https://world.openfoodfacts.org/" target="_blank">
-            <img src={logo} width="30px" height="30px" alt="OpenFoodFact logo" />
+          <MuiLink
+            sx={{ display: { xs: "none", md: "flex" }, mr: 1 }}
+            href="https://world.openfoodfacts.org/"
+            target="_blank"
+          >
+            <img
+              src={logo}
+              width="30px"
+              height="30px"
+              alt="OpenFoodFact logo"
+            />
           </MuiLink>
           <Typography
             variant="h6"
@@ -121,7 +146,13 @@ const ResponsiveAppBar = () => {
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) =>
               page.url ? (
-                <Button key={page.url} onClick={handleCloseNavMenu} sx={{ my: 2, color: "white", display: "block" }} component={Link} to={`/${page.url}`}>
+                <Button
+                  key={page.url}
+                  onClick={handleCloseNavMenu}
+                  sx={{ my: 2, color: "white", display: "block" }}
+                  component={Link}
+                  to={`/${page.url}`}
+                >
                   {t(page.translationKey)}
                 </Button>
               ) : null
