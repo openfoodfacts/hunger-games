@@ -5,7 +5,6 @@ import Button from "@mui/material/Button";
 import Divider from "@mui/material/Divider";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
-
 import LinkIcon from "@mui/icons-material/Link";
 import DeleteIcon from "@mui/icons-material/Delete";
 import DoneIcon from "@mui/icons-material/Done";
@@ -58,31 +57,32 @@ const QuestionDisplay = ({ question, answerQuestion }) => {
     return <p>loading</p>;
   }
   return (
-    <div>
-      <Box
-        sx={{
-          textAlign: "center",
-        }}
-      >
-        <Typography>{question?.question}</Typography>
-        {valueTagQuestionsURL && (
-          <Button
-            component={Link}
-            to={valueTagQuestionsURL}
-            endIcon={<LinkIcon />}
-          >
-            {question.value}
-          </Button>
-        )}
-        {valueTagExamplesURL && (
-          <a href={valueTagExamplesURL} target="_blank" rel="noreferrer">
-            <div>{`${t("questions.see_examples")} ${
-              question.insight_type
-            }`}</div>
-          </a>
-        )}
-        <Divider />
-        <Zoom>
+    <Stack
+      sx={{
+        textAlign: "center",
+        flexGrow: 1,
+        flexBasis: 0,
+        flexShrink: 1,
+      }}
+    >
+      <Typography>{question?.question}</Typography>
+      {valueTagQuestionsURL && (
+        <Button
+          component={Link}
+          to={valueTagQuestionsURL}
+          endIcon={<LinkIcon />}
+        >
+          {question.value}
+        </Button>
+      )}
+      {valueTagExamplesURL && (
+        <a href={valueTagExamplesURL} target="_blank" rel="noreferrer">
+          <div>{`${t("questions.see_examples")} ${question.insight_type}`}</div>
+        </a>
+      )}
+      <Divider />
+      <Box flexGrow={1} flexShrink={1} sx={{ height: 0, marginBottom: 1 }}>
+        <Zoom wrapStyle={{ height: "100%" }}>
           <img
             src={
               question.source_image_url.replace("400.jpg", "jpg") ||
@@ -92,42 +92,62 @@ const QuestionDisplay = ({ question, answerQuestion }) => {
             style={{ maxWidth: "100%", maxHeight: "100%" }}
           />
         </Zoom>
-        <Stack direction="row" justifyContent="space-around">
-          <Button
-            onClick={() =>
-              answerQuestion({ value: 0, insightId: question.insight_id })
-            }
-            startIcon={<DeleteIcon />}
-            color="error"
-            variant="contained"
-            size="large"
-          >
-            {t("questions.no")}
-          </Button>
-          <Button
-            onClick={() =>
-              answerQuestion({ value: -1, insightId: question.insight_id })
-            }
-            startIcon={<QuestionMarkIcon />}
-            variant="contained"
-            size="large"
-          >
-            {t("questions.skip")}
-          </Button>
-          <Button
-            onClick={() =>
-              answerQuestion({ value: 1, insightId: question.insight_id })
-            }
-            startIcon={<DoneIcon />}
-            color="success"
-            variant="contained"
-            size="large"
-          >
-            {t("questions.yes")}
-          </Button>
-        </Stack>
       </Box>
-    </div>
+      <Stack
+        direction="row"
+        justifyContent="space-around"
+        flexWrap="wrap"
+        onKeyDown={(event) => {
+          switch (event.key) {
+            case "k":
+              answerQuestion({ value: -1, insightId: question.insight_id });
+              break;
+            case "o":
+              answerQuestion({ value: 1, insightId: question.insight_id });
+              break;
+            case "n":
+              answerQuestion({ value: 0, insightId: question.insight_id });
+              break;
+            default:
+              break;
+          }
+        }}
+      >
+        <Button
+          onClick={() =>
+            answerQuestion({ value: 0, insightId: question.insight_id })
+          }
+          startIcon={<DeleteIcon />}
+          color="error"
+          variant="contained"
+          size="large"
+        >
+          {t("questions.no")} (n)
+        </Button>
+        <Button
+          onClick={() =>
+            answerQuestion({ value: -1, insightId: question.insight_id })
+          }
+          startIcon={<QuestionMarkIcon />}
+          variant="contained"
+          size="large"
+          autoFocus
+        >
+          {t("questions.skip")} (k)
+        </Button>
+        <Button
+          onClick={() =>
+            answerQuestion({ value: 1, insightId: question.insight_id })
+          }
+          startIcon={<DoneIcon />}
+          color="success"
+          variant="contained"
+          size="large"
+        >
+          {t("questions.yes")} (o)
+        </Button>
+      </Stack>
+    </Stack>
   );
 };
 export default QuestionDisplay;

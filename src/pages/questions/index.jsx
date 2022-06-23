@@ -9,7 +9,7 @@ import { useQuestionBuffer } from "./useQuestionBuffer";
 import Divider from "@mui/material/Divider";
 
 import Stack from "@mui/material/Stack";
-import Box from "@mui/material/Box";
+import Grid from "@mui/material/Grid";
 
 export default function Questions() {
   const [filterState, setFilterState] = useFilterSearch();
@@ -19,29 +19,26 @@ export default function Questions() {
   const question = buffer[0] ?? null;
 
   return (
-    <Box sx={{ margin: "2% 5%", overflow: "hidden" }}>
-      <Stack
-        direction={{ xs: "column", sm: "column", md: "row" }}
-        spacing={{ xs: 1, sm: 2, md: 4 }}
-      >
-        <Stack
-          direction="column"
-          sx={{ width: { sm: "100%", md: "calc(100%/3)" } }}
-        >
+    <Grid container spacing={2} p={2}>
+      <Grid item sm={12} md={5}>
+        <Stack direction="column" sx={{ height: "calc(100vh - 100px)" }}>
           <QuestionFilter
             filterState={filterState}
             setFilterState={setFilterState}
           />
-
           <Divider sx={{ margin: "1rem" }} />
           <QuestionDisplay
             question={question}
             answerQuestion={answerQuestion}
           />
         </Stack>
+      </Grid>
+      <Grid item sm={12} md={5}>
         <ProductInformation question={question} />
+      </Grid>
+      <Grid item sm={12} md={2}>
         <UserData remainingQuestionNb={remainingQuestionNb} answers={answers} />
-      </Stack>
-    </Box>
+      </Grid>
+    </Grid>
   );
 }

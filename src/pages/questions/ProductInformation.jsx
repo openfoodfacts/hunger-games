@@ -6,9 +6,7 @@ import Divider from "@mui/material/Divider";
 import Checkbox from "@mui/material/Checkbox";
 import Typography from "@mui/material/Typography";
 import FormControlLabel from "@mui/material/FormControlLabel";
-import ImageList from "@mui/material/ImageList";
-import ImageListItem from "@mui/material/ImageListItem";
-
+import Stack from "@mui/material/Stack";
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 
@@ -69,7 +67,7 @@ const ProductInformation = ({ question }) => {
   }
 
   return (
-    <Box sx={{ width: { sm: "100%", md: "calc(100%/2)" } }}>
+    <Box>
       {/* Main information about the product */}
       <Typography>{productData?.productName}</Typography>
       <Button
@@ -100,20 +98,18 @@ const ProductInformation = ({ question }) => {
         labelPlacement="end"
       />
       {!hideImages && productData?.images && (
-        <ImageList variant="masonry" cols={3} gap={8}>
+        <Stack spacing={2} direction="row" flexWrap="wrap">
           {getImagesUrls(productData.images, question.barcode).map((src) => (
-            <ImageListItem key={src}>
-              <Zoom>
-                <img
-                  src={src}
-                  style={{ maxWidth: 300, maxHeight: 300 }}
-                  alt=""
-                  loading="lazy"
-                />
-              </Zoom>
-            </ImageListItem>
+            <Zoom key={src}>
+              <img
+                src={src}
+                alt=""
+                loading="lazy"
+                style={{ maxWidth: 300, maxHeight: 300 }}
+              />
+            </Zoom>
           ))}
-        </ImageList>
+        </Stack>
       )}
 
       {/* Remaining info */}
