@@ -39,13 +39,8 @@ export default function Questions() {
             answerQuestion={answerQuestion}
           />
         </Stack>
-        <ProductInformation
-          question={question}
-        />
-        <UserData
-          remainingQuestionNb={remainingQuestionNb}
-          answers={answers}
-        />
+        <ProductInformation question={question} />
+        <UserData remainingQuestionNb={remainingQuestionNb} answers={answers} />
       </Stack>
     </Box>
   );

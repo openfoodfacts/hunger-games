@@ -7,7 +7,13 @@ const PAGE_SIZE = 10;
 const BUFFER_THRESHOLD = 5;
 
 const loadQuestions = async (filterState, page = 1) => {
-  const { insightType, brandFilter, valueTag, countryFilter, sortByPopularity } = filterState;
+  const {
+    insightType,
+    brandFilter,
+    valueTag,
+    countryFilter,
+    sortByPopularity,
+  } = filterState;
 
   const { data: dataFetched } = await robotoff.questions(
     sortByPopularity ? "popular" : "random",
@@ -20,7 +26,13 @@ const loadQuestions = async (filterState, page = 1) => {
   );
   const isLastPage = PAGE_SIZE * page > dataFetched.count;
 
-  return { isLastPage, questions: dataFetched.questions.filter((question) => question.source_image_url), availableQuestionsNb: dataFetched.count };
+  return {
+    isLastPage,
+    questions: dataFetched.questions.filter(
+      (question) => question.source_image_url
+    ),
+    availableQuestionsNb: dataFetched.count,
+  };
 };
 
 const initialState = { page: 1, questions: [], answers: [], skippedIds: [] };
@@ -31,7 +43,9 @@ function reducer(state, action) {
       return { ...state, page: 1, questions: [], skippedIds: [] };
 
     case "addToBuffer":
-      const questionsToAdd = action.payload.questions.filter(({ insight_id }) => state.questions.every((q) => q.insight_id !== insight_id));
+      const questionsToAdd = action.payload.questions.filter(({ insight_id }) =>
+        state.questions.every((q) => q.insight_id !== insight_id)
+      );
       if (action.payload.isLastPage) {
         questionsToAdd.push(NO_QUESTION_LEFT);
       }
@@ -44,7 +58,8 @@ function reducer(state, action) {
         }
       });
 
-      const remainingQuestionNb = action.payload.availableQuestionsNb - newSkippedIds.length;
+      const remainingQuestionNb =
+        action.payload.availableQuestionsNb - newSkippedIds.length;
       return {
         ...state,
         page: questionsToAdd.length === 0 ? state.page + 1 : state.page,
@@ -54,9 +69,13 @@ function reducer(state, action) {
       };
 
     case "remove":
-      const answeredQuestion = state.questions.find(({ insight_id }) => insight_id === action.payload.insightId);
+      const answeredQuestion = state.questions.find(
+        ({ insight_id }) => insight_id === action.payload.insightId
+      );
 
-      const newQuestions = state.questions.filter(({ insight_id }) => insight_id !== action.payload.insightId);
+      const newQuestions = state.questions.filter(
+        ({ insight_id }) => insight_id !== action.payload.insightId
+      );
       if (newQuestions.length === state.questions.length) {
         return state;
       }
@@ -77,7 +96,10 @@ function reducer(state, action) {
         ],
         remainingQuestionNb: state.remainingQuestionNb - 1,
         // skipped ids is used to correctly compute remainingQuestionNb after each data fetching
-        skippedIds: [...state.skippedIds, ...(action.payload.value === -1 ? [action.payload.insight_id] : [])],
+        skippedIds: [
+          ...state.skippedIds,
+          ...(action.payload.value === -1 ? [action.payload.insight_id] : []),
+        ],
       };
 
     default:
@@ -85,11 +107,23 @@ function reducer(state, action) {
   }
 }
 
-export const useQuestionBuffer = ({ sortByPopularity, insightType, valueTag, brandFilter, countryFilter }) => {
+export const useQuestionBuffer = ({
+  sortByPopularity,
+  insightType,
+  valueTag,
+  brandFilter,
+  countryFilter,
+}) => {
   const [bufferState, dispatch] = React.useReducer(reducer, initialState);
   const seenInsight = React.useRef([]);
   const isLoadingRef = React.useRef(false);
-  const filteringRef = React.useRef({ sortByPopularity, insightType, valueTag, brandFilter, countryFilter });
+  const filteringRef = React.useRef({
+    sortByPopularity,
+    insightType,
+    valueTag,
+    brandFilter,
+    countryFilter,
+  });
 
   const answerQuestion = React.useCallback(({ value, insightId }) => {
     seenInsight.current.push(insightId);
@@ -120,15 +154,32 @@ export const useQuestionBuffer = ({ sortByPopularity, insightType, valueTag, bra
 
   React.useEffect(() => {
     let filterIsStillValid = true;
-    if (bufferState.questions.length < BUFFER_THRESHOLD && !isLoadingRef.current) {
+    if (
+      bufferState.questions.length < BUFFER_THRESHOLD &&
+      !isLoadingRef.current
+    ) {
       isLoadingRef.current = true;
       loadQuestions(filteringRef.current, bufferState.page)
         .then(({ isLastPage, questions, availableQuestionsNb }) => {
           if (filterIsStillValid) {
-            const filteredQuestions = questions.filter((question) => !seenInsight.current.includes(question.insight_id));
-            const removedInsightIds = questions.filter((question) => seenInsight.current.includes(question.insight_id)).map((q) => q.insight_id);
+            const filteredQuestions = questions.filter(
+              (question) => !seenInsight.current.includes(question.insight_id)
+            );
+            const removedInsightIds = questions
+              .filter((question) =>
+                seenInsight.current.includes(question.insight_id)
+              )
+              .map((q) => q.insight_id);
 
-            dispatch({ type: "addToBuffer", payload: { questions: filteredQuestions, isLastPage, availableQuestionsNb, removedInsightIds } });
+            dispatch({
+              type: "addToBuffer",
+              payload: {
+                questions: filteredQuestions,
+                isLastPage,
+                availableQuestionsNb,
+                removedInsightIds,
+              },
+            });
             isLoadingRef.current = false;
           }
         })

@@ -6,16 +6,30 @@ import { removeEmptyKeys } from "./utils";
 const robotoff = {
   annotate(insightId, annotation) {
     if (IS_DEVELOPMENT_MODE) {
-      console.log(`Annotated, ${ROBOTOFF_API_URL}/insights/annotate`, new URLSearchParams(`insight_id=${insightId}&annotation=${annotation}&update=1`), { withCredentials: true });
+      console.log(
+        `Annotated, ${ROBOTOFF_API_URL}/insights/annotate`,
+        new URLSearchParams(
+          `insight_id=${insightId}&annotation=${annotation}&update=1`
+        ),
+        { withCredentials: true }
+      );
     } else {
-      return axios.post(`${ROBOTOFF_API_URL}/insights/annotate`, new URLSearchParams(`insight_id=${insightId}&annotation=${annotation}&update=1`), { withCredentials: true });
+      return axios.post(
+        `${ROBOTOFF_API_URL}/insights/annotate`,
+        new URLSearchParams(
+          `insight_id=${insightId}&annotation=${annotation}&update=1`
+        ),
+        { withCredentials: true }
+      );
     }
   },
 
   questionsByProductCode(code) {
     return axios.get(`${ROBOTOFF_API_URL}/questions/${code}`).then((result) => {
       let questions = result.data.questions;
-      result.data.questions = questions.filter((question) => question.source_image_url);
+      result.data.questions = questions.filter(
+        (question) => question.source_image_url
+      );
       return result;
     });
   },
@@ -64,7 +78,10 @@ const robotoff = {
   },
 
   getLogoAnnotations(logoId, index, count = 25) {
-    const url = logoId.length > 0 ? `${ROBOTOFF_API_URL}/ann/${logoId}` : `${ROBOTOFF_API_URL}/ann`;
+    const url =
+      logoId.length > 0
+        ? `${ROBOTOFF_API_URL}/ann/${logoId}`
+        : `${ROBOTOFF_API_URL}/ann`;
     return axios.get(url, {
       params: removeEmptyKeys({
         index,
@@ -83,7 +100,14 @@ const robotoff = {
     );
   },
 
-  getInsights(barcode = "", insightTypes = "", valueTag = "", annotation = "", page = 1, count = 25) {
+  getInsights(
+    barcode = "",
+    insightTypes = "",
+    valueTag = "",
+    annotation = "",
+    page = 1,
+    count = 25
+  ) {
     let annotated;
     if (annotation.length && annotation === "not_annotated") {
       annotated = "0";
@@ -111,7 +135,9 @@ const robotoff = {
   },
 
   getLogosImages(logoIds) {
-    return axios.get(`${ROBOTOFF_API_URL}/images/logos?logo_ids=${logoIds.join(",")}`);
+    return axios.get(
+      `${ROBOTOFF_API_URL}/images/logos?logo_ids=${logoIds.join(",")}`
+    );
   },
 
   getNutritionValueFromImage(language, imageOcrUrl, images) {
@@ -131,10 +157,19 @@ const robotoff = {
 
     if (ocrUrlSubString.length > 7) {
       // the productCode is 13 characters long
-      productCodeForOcrUrl = ocrUrlSubString[5] + "/" + ocrUrlSubString[6] + "/" + ocrUrlSubString[7] + "/" + ocrUrlSubString[8];
+      productCodeForOcrUrl =
+        ocrUrlSubString[5] +
+        "/" +
+        ocrUrlSubString[6] +
+        "/" +
+        ocrUrlSubString[7] +
+        "/" +
+        ocrUrlSubString[8];
     }
 
-    return axios.get(`${ROBOTOFF_API_URL}/predict/nutrient?ocr_url=https://images.openfoodfacts.org/images/products/${productCodeForOcrUrl}/${imgid}.json`);
+    return axios.get(
+      `${ROBOTOFF_API_URL}/predict/nutrient?ocr_url=https://images.openfoodfacts.org/images/products/${productCodeForOcrUrl}/${imgid}.json`
+    );
   },
 };
 

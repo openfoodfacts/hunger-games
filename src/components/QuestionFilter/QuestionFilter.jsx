@@ -105,7 +105,12 @@ export const QuestionFilter = ({ filterState, setFilterState }) => {
       {/* Chip indicating the current state of the filtering */}
       <Stack direction="row" spacing={1}>
         <Stack direction="row" flexWrap="wrap" spacing={1}>
-          <TextField select size="small" value={filterState?.insightType} onChange={handleInsightTypeChange}>
+          <TextField
+            select
+            size="small"
+            value={filterState?.insightType}
+            onChange={handleInsightTypeChange}
+          >
             {Object.keys(insightTypesNames).map((insightType) => (
               <MenuItem key={insightType} value={insightType}>
                 {t(`questions.${insightType}`)}{" "}
@@ -114,7 +119,9 @@ export const QuestionFilter = ({ filterState, setFilterState }) => {
           </TextField>
           {filterState?.valueTag && (
             <Chip
-              label={`${t("questions.filters.short_label.value")}: ${filterState?.valueTag}`}
+              label={`${t("questions.filters.short_label.value")}: ${
+                filterState?.valueTag
+              }`}
               onDelete={() => {
                 setFilterState((state) => ({ ...state, valueTag: "" }));
               }}
@@ -122,7 +129,9 @@ export const QuestionFilter = ({ filterState, setFilterState }) => {
           )}
           {filterState?.countryFilter && (
             <Chip
-              label={`${t("questions.filters.short_label.country")}: ${filterState?.countryFilter}`}
+              label={`${t("questions.filters.short_label.country")}: ${
+                filterState?.countryFilter
+              }`}
               onDelete={() => {
                 setFilterState((state) => ({ ...state, countryFilter: "" }));
               }}
@@ -130,7 +139,9 @@ export const QuestionFilter = ({ filterState, setFilterState }) => {
           )}
           {filterState?.brandFilter && (
             <Chip
-              label={`${t("questions.filters.short_label.brand")}: ${filterState?.brandFilter}`}
+              label={`${t("questions.filters.short_label.brand")}: ${
+                filterState?.brandFilter
+              }`}
               onDelete={() => {
                 setFilterState((state) => ({ ...state, brandFilter: "" }));
               }}
@@ -140,7 +151,10 @@ export const QuestionFilter = ({ filterState, setFilterState }) => {
             <Chip
               label={`${t("questions.filters.short_label.popularity")}`}
               onDelete={() => {
-                setFilterState((state) => ({ ...state, sortByPopularity: false }));
+                setFilterState((state) => ({
+                  ...state,
+                  sortByPopularity: false,
+                }));
               }}
             />
           )}
