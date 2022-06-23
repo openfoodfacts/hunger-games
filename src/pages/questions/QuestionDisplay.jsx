@@ -5,7 +5,6 @@ import Button from "@mui/material/Button";
 import Divider from "@mui/material/Divider";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
-
 import LinkIcon from "@mui/icons-material/Link";
 import DeleteIcon from "@mui/icons-material/Delete";
 import DoneIcon from "@mui/icons-material/Done";
@@ -92,7 +91,26 @@ const QuestionDisplay = ({ question, answerQuestion }) => {
             style={{ maxWidth: "100%", maxHeight: "100%" }}
           />
         </Zoom>
-        <Stack direction="row" justifyContent="space-around">
+        <Stack
+          direction="row"
+          justifyContent="space-around"
+          onKeyDown={(event) => {
+            switch (event.key) {
+              case "k":
+                answerQuestion({ value: -1, insightId: question.insight_id });
+                break;
+              case "o":
+                answerQuestion({ value: 1, insightId: question.insight_id });
+                break;
+              case "n":
+                answerQuestion({ value: 0, insightId: question.insight_id });
+                break;
+
+              default:
+                break;
+            }
+          }}
+        >
           <Button
             onClick={() =>
               answerQuestion({ value: 0, insightId: question.insight_id })
@@ -102,7 +120,7 @@ const QuestionDisplay = ({ question, answerQuestion }) => {
             variant="contained"
             size="large"
           >
-            {t("questions.no")}
+            {t("questions.no")} (n)
           </Button>
           <Button
             onClick={() =>
@@ -111,8 +129,9 @@ const QuestionDisplay = ({ question, answerQuestion }) => {
             startIcon={<QuestionMarkIcon />}
             variant="contained"
             size="large"
+            autoFocus
           >
-            {t("questions.skip")}
+            {t("questions.skip")} (k)
           </Button>
           <Button
             onClick={() =>
@@ -123,7 +142,7 @@ const QuestionDisplay = ({ question, answerQuestion }) => {
             variant="contained"
             size="large"
           >
-            {t("questions.yes")}
+            {t("questions.yes")} (o)
           </Button>
         </Stack>
       </Box>
