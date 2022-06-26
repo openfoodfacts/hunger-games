@@ -7,7 +7,7 @@
     "ingredients": "Sudėtis",
     "product_weight": "produkto svoris",
     "popularity_sort": "Rikiuoti pagal populiarumą",
-    "see_examples": "See examples of this ",
+    "see_examples": "Klausimai? -> žiūrėkite pavyzdžius ",
     "no": "Ne",
     "skip": "Skip",
     "yes": "Taip",
@@ -31,13 +31,13 @@
       "long_label": {
         "type": "Klausimo tipas",
         "value": "Siūloma vertė",
-        "country": "Produkto šalis",
+        "country": "Kilmės šalis",
         "brand": "Produkto prekės ženklas",
         "popularity": "Rikiuoti pagal populiarumą",
         "edit": ""
       },
       "placeholders": {
-        "value": "Vertė (fanta, en:organic,...)",
+        "value": "Vertė",
         "brand": "auchan, danone, herta, ..."
       },
       "actions": {
