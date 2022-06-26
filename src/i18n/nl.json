@@ -7,7 +7,7 @@
     "ingredients": "Ingrediënten",
     "product_weight": "Gewicht van het product",
     "popularity_sort": "Sorteren op populariteit",
-    "see_examples": "See examples of this ",
+    "see_examples": "Zie voorbeelden hiervan ",
     "no": "Nee",
     "skip": "Overslaan",
     "yes": "Ja",
@@ -97,7 +97,7 @@
     "brand": "Merk",
     "packager_code": "Verpakkerscode",
     "packaging": "Verpakking",
-    "qr_code": "QR code",
+    "qr_code": "QR-code",
     "category": "Categorie",
     "nutrition_label": "Voedingsetiket",
     "store": "Winkel",
@@ -119,36 +119,36 @@
     "welcome": {
       "page1": {
         "title": "Welkom",
-        "text1": "Hunger Games is a collection of mini-games that help contribute to Open Food Facts in many ways. Categorize a product to get the Nutri-Score and Eco-Score, help validate labels for the Eco-Score, add brands and weights, help our logo recognition system learn about the logos it detected.",
-        "text2": "Those are some of the exciting things you'll be able to do. Make sure to be connected to the Open Food Facts website to get credit for your contributions. If you make a mistake, please take the time to correct it by heading to the website.",
-        "text3": "In case of doubt about the game, you have an helper at the top right of the page, and you can reach us on slack at the #hunger-games channel"
+        "text1": "Honger Games zijn een verzameling mini-games die in veel opzichten bijdragen aan Open Food Facts. Categoriseer een product om Nutri-Score en Eco-score te krijgen, help labels te valideren voor de Eco-score, voeg merken en gewichten toe, help ons logo herkenningssysteem te leren over de logo's die het detecteert.",
+        "text2": "Dat zijn enkele van de spannende dingen die je kunt doen. Zorg ervoor dat u verbonden bent met de Open Food Facts-website om erkenning te krijgen voor uw bijdragen. Als u een fout maakt, neem dan de tijd om deze te corrigeren door naar de website te gaan.",
+        "text3": "In geval van twijfel over het spel, heb je een helper rechtsboven van de pagina en je kunt ons bereiken op slack op het #hunger-games kanaal"
       },
       "page2": {
         "title": "Vragen",
-        "text1": "Our AI has a lot of questions for you. Here you will have to confirm or deny the information she detected on images.",
-        "text2": "Do not hesitate to skip a question if you're not sure, there are plenty of others"
+        "text1": "Onze AI heeft veel vragen voor u. Hier moet je de informatie die ze ontdekt heeft op afbeeldingen bevestigen of weigeren.",
+        "text2": "Aarzel niet om een vraag over te slaan als je het niet zeker weet, er zijn er nog genoeg"
       },
       "page3": {
         "title": "Logo's",
-        "text1": "The world of products is full of logos. Explain to our AI which ones are the same."
+        "text1": "De wereld van producten zit vol met logo's. Leg aan onze AI uit welke hetzelfde zijn."
       }
     },
     "logos": {
       "page1": {
         "title": "Selectie",
-        "text1": "Select the crops of a same logo by clicking on them",
-        "text2": "Selected logos go to the top of the page, you can unselect them by clicking again on them"
+        "text1": "Selecteer de lijnen van hetzelfde logo door erop te klikken",
+        "text2": "Geselecteerde logo's gaan naar de bovenkant van de pagina, u kunt ze deselecteren door er opnieuw op te klikken"
       },
       "page2": {
         "title": "Let op",
-        "text1": "If the crop contains multiple logo do not select it.",
-        "text2": "If the crop contains only a partial part of a logo you can select it"
+        "text1": "Als de uitsnede meerdere logo's bevat, selecteert u deze niet.",
+        "text2": "Als de uitsnede slechts een gedeeltelijk deel van een logo bevat, kunt u deze selecteren"
       },
       "page3": {
-        "title": "Validate",
-        "text1": "Indicate the type of logo (label, brand, QRcode, ...)",
-        "text2": "If it is a label or a brand logo, indicate which one it is",
-        "text3": "Now you can submit your selection",
+        "title": "Bevestigen",
+        "text1": "Geef het type logo aan (label, merk, QR-code, ...)",
+        "text2": "Als het een label of een merklogo is, geef dan aan welke het is",
+        "text3": "Nu kunt u uw selectie indienen",
         "text4": "Bedankt :)"
       }
     },
@@ -158,24 +158,24 @@
   },
   "nutrition": {
     "instructions": {
-      "cropTheTable": "Crop the image to simplify your annotation",
-      "verifyNutrimentDetected": "Indicate if the nutriment detected is correct",
-      "selectMissingNutriments": "Add missing nutriments (you can click even if the word has no box)",
-      "selectValue": "Select the nutritional value of: "
+      "cropTheTable": "Werk de afbeelding bij om uw aantekening te vereenvoudigen",
+      "verifyNutrimentDetected": "Geef aan of de gedetecteerde voeding correct is",
+      "selectMissingNutriments": "Voeg ontbrekende voedingsstoffen toe (u kunt klikken, zelfs als het woord geen vakje heeft)",
+      "selectValue": "Selecteer de voedingswaarde van: "
     },
     "steps": {
       "1": "Bijsnijden",
-      "2": "Special values",
+      "2": "Speciale waarden",
       "3": "Selectie van voedingsstoffen",
-      "4": "Values Selection"
+      "4": "Waarden Selectie"
     },
     "next": "Volgende stap",
     "prev": "Vorige stap",
     "skip": "Dit product overslaan",
-    "validate": "Validate Table",
+    "validate": "Tabel goedkeuren",
     "unselect_picture": "Geen voedingsinformatie",
     "basis": "gegevens voor: ",
-    "servingSize": "serving size",
+    "servingSize": "portiegrootte",
     "value": "waarde",
     "nutriments": {
       "nutriment_energy-kj": "Energie (kJ)",
@@ -185,19 +185,19 @@
       "nutriment_carbohydrates": "Koolhydraten",
       "nutriment_sugars": "Suikers",
       "nutriment_proteins": "Eiwitten",
-      "nutriment_fiber": "Fibers",
+      "nutriment_fiber": "Vezels",
       "nutriment_salt": "Zout",
       "nutriment_sodium": "Natrium"
     },
     "history": {
-      "title": "Session History",
+      "title": "Sessiegeschiedenis",
       "status": "status",
       "product name": "productnaam",
       "view": "pagina bekijken",
       "edit": "pagina bewerken",
       "SKIP": "genegeerd",
       "VALIDATED": "bewerkt",
-      "WRONG_IMAGE": "unselected picture",
+      "WRONG_IMAGE": "ongeselecteerde afbeelding",
       "close": "sluiten",
       "open": "geschiedenis openen"
     }

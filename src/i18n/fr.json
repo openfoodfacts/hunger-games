@@ -7,7 +7,7 @@
     "ingredients": "Ingrédients",
     "product_weight": "poids du produit",
     "popularity_sort": "Trier par popularité",
-    "see_examples": "See examples of this ",
+    "see_examples": "Voir des exemples ",
     "no": "Non",
     "skip": "Ignorer",
     "yes": "Oui",
@@ -201,5 +201,10 @@
       "close": "Fermer",
       "open": "Ouvrir l'historique"
     }
+  },
+  "notfound": {
+    "nopage": "Whoops! The page you're looking for can't be found.",
+    "redirect1": "Want to play some games?",
+    "redirect2": "Click here"
   }
 }
