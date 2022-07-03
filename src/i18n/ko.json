@@ -7,7 +7,7 @@
     "ingredients": "성분",
     "product_weight": "상품 무게",
     "popularity_sort": "인기순 정렬",
-    "see_examples": "See examples of this ",
+    "see_examples": "예시 확인하기 ",
     "no": "아니요",
     "skip": "건너뛰기",
     "yes": "예",
@@ -121,7 +121,7 @@
         "title": "환영합니다",
         "text1": "Hunger Games는 다양한 방식으로 Open Food Facts에 기여하는 데 도움이 되는 미니 게임 모음입니다. 제품을 분류하여 Nutri-Score 및 Eco-Score를 받고, Eco-Score에 대한 레이블의 유효성을 확인하고, 브랜드 및 가중치를 추가하고, 로고 인식 시스템이 감지한 로고에 대해 학습하도록 돕습니다.",
         "text2": "이것들은 여러분이 할 수 있는 흥미진진한 일들 중 일부입니다. 기여에 대한 크레딧을 받으려면 Open Food Facts 웹사이트에 연결해야 합니다. 실수했다면 시간을 내어 웹사이트로 이동하여 수정하시기 바랍니다.",
-        "text3": "In case of doubt about the game, you have an helper at the top right of the page, and you can reach us on slack at the #hunger-games channel"
+        "text3": "게임에 대해 궁금한 점이 있으시다면 페이지 오른쪽 상단에서 도움말을 확인하실 수 있으며, Slack의 #hunger-games 채널에서 문의할 수 있습니다."
       },
       "page2": {
         "title": "질문",
@@ -136,19 +136,19 @@
     "logos": {
       "page1": {
         "title": "선택",
-        "text1": "Select the crops of a same logo by clicking on them",
-        "text2": "Selected logos go to the top of the page, you can unselect them by clicking again on them"
+        "text1": "자르기한 항목들 중 동일한 로고를 눌러 선택하세요",
+        "text2": "선택한 로고는 페이지 상단으로 이동합니다. 로고를 다시 눌러 선택을 취소할 수 있습니다"
       },
       "page2": {
         "title": "경고",
-        "text1": "If the crop contains multiple logo do not select it.",
-        "text2": "If the crop contains only a partial part of a logo you can select it"
+        "text1": "자르기한 항목에 여러 로고가 포함되어 있다면 선택하지 마세요.",
+        "text2": "자르기한 항목에 로고의 일부만 포함된 경우 선택할 수 있습니다"
       },
       "page3": {
-        "title": "Validate",
-        "text1": "Indicate the type of logo (label, brand, QRcode, ...)",
-        "text2": "If it is a label or a brand logo, indicate which one it is",
-        "text3": "Now you can submit your selection",
+        "title": "검사",
+        "text1": "로고 유형 선택 (라벨, 브랜드, QR코드, ...)",
+        "text2": "라벨이거나 브랜드 로고인 경우 어떤 것에 해당하는지 지정하세요",
+        "text3": "이제 선택한 사항을 제출할 수 있습니다",
         "text4": "감사합니다 :)"
       }
     },
@@ -158,24 +158,24 @@
   },
   "nutrition": {
     "instructions": {
-      "cropTheTable": "Crop the image to simplify your annotation",
-      "verifyNutrimentDetected": "Indicate if the nutriment detected is correct",
-      "selectMissingNutriments": "Add missing nutriments (you can click even if the word has no box)",
-      "selectValue": "Select the nutritional value of: "
+      "cropTheTable": "주석을 쉽게 생성하기 위해 사진을 자르세요",
+      "verifyNutrimentDetected": "인식된 영양소가 정확한지 검증해주세요",
+      "selectMissingNutriments": "누락된 영양소를 추가하세요 (단어 상자가 없어도 클릭 가능)",
+      "selectValue": "아래 항목들의 영양학적 가치를 선택하세요: "
     },
     "steps": {
-      "1": "Crop",
-      "2": "Special values",
+      "1": "자르기",
+      "2": "특별한 가치",
       "3": "영양소 선택",
-      "4": "Values Selection"
+      "4": "가치 선택"
     },
     "next": "다음 단계",
     "prev": "이전 단계",
-    "skip": "Skip this product",
-    "validate": "Validate Table",
-    "unselect_picture": "No nutrition info",
-    "basis": "data for: ",
-    "servingSize": "serving size",
+    "skip": "이 상품 건너뛰기",
+    "validate": "표 \b검사",
+    "unselect_picture": "영양 정보 없음",
+    "basis": "데이터 목적: ",
+    "servingSize": "1회 제공량",
     "value": "값",
     "nutriments": {
       "nutriment_energy-kj": "에너지 (kJ)",
@@ -185,21 +185,21 @@
       "nutriment_carbohydrates": "탄수화물",
       "nutriment_sugars": "당류",
       "nutriment_proteins": "단백질",
-      "nutriment_fiber": "Fibers",
+      "nutriment_fiber": "섬유",
       "nutriment_salt": "소금",
       "nutriment_sodium": "나트륨"
     },
     "history": {
-      "title": "Session History",
+      "title": "세션 내역",
       "status": "상태",
       "product name": "제품명",
       "view": "페이지 보기",
       "edit": "페이지 수정",
-      "SKIP": "ignored",
-      "VALIDATED": "edited",
-      "WRONG_IMAGE": "unselected picture",
+      "SKIP": "무시함",
+      "VALIDATED": "편집함",
+      "WRONG_IMAGE": "선택되지 않은 사진",
       "close": "닫기",
-      "open": "open history"
+      "open": "내역 열기"
     }
   }
 }
