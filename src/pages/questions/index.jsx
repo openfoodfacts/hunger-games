@@ -12,7 +12,8 @@ import Stack from "@mui/material/Stack";
 import Grid from "@mui/material/Grid";
 
 export default function Questions() {
-  const [filterState, setFilterState] = useFilterSearch();
+  const [filterState, setFilterState, isFavorite, toggleFavorite] =
+    useFilterSearch();
 
   const { buffer, answerQuestion, remainingQuestionNb, answers } =
     useQuestionBuffer(filterState);
@@ -25,6 +26,8 @@ export default function Questions() {
           <QuestionFilter
             filterState={filterState}
             setFilterState={setFilterState}
+            isFavorite={isFavorite}
+            toggleFavorite={toggleFavorite}
           />
           <Divider sx={{ margin: "1rem" }} />
           <QuestionDisplay

@@ -13,14 +13,22 @@ import RadioGroup from "@mui/material/RadioGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import Box from "@mui/material/Box";
 import Radio from "@mui/material/Radio";
+import IconButton from "@mui/material/IconButton";
 
 import EditIcon from "@mui/icons-material/Edit";
+import StarIcon from "@mui/icons-material/Star";
+import StarBorderIcon from "@mui/icons-material/StarBorder";
 import { useTranslation } from "react-i18next";
 
 import brands from "../../assets/brands.json";
 import { countryNames, insightTypesNames } from "./const";
 
-export const QuestionFilter = ({ filterState, setFilterState }) => {
+export const QuestionFilter = ({
+  filterState,
+  setFilterState,
+  isFavorite,
+  toggleFavorite,
+}) => {
   const { t } = useTranslation();
 
   const [isOpen, setIsOpen] = React.useState(false);
@@ -104,7 +112,7 @@ export const QuestionFilter = ({ filterState, setFilterState }) => {
     <Box>
       {/* Chip indicating the current state of the filtering */}
       <Stack direction="row" spacing={1}>
-        <Stack direction="row" flexWrap="wrap" spacing={1}>
+        <Stack direction="row" flexWrap="wrap" spacing={1} alignItems="center">
           <TextField
             select
             size="small"
@@ -158,6 +166,17 @@ export const QuestionFilter = ({ filterState, setFilterState }) => {
               }}
             />
           )}
+          <IconButton
+            onClick={() => {
+              toggleFavorite();
+            }}
+          >
+            {isFavorite ? (
+              <StarIcon style={{ color: "gold" }} />
+            ) : (
+              <StarBorderIcon style={{ color: "gold" }} />
+            )}
+          </IconButton>
         </Stack>
       </Stack>
 
