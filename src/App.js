@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import {
   EcoScorePage,
   LogoAnnotationPage,
-  // LogoSearchPage,
+  LogoSearchPage,
   LogoUpdatePage,
   SettingsPage,
   QuestionsPage,
@@ -27,7 +27,7 @@ export default function App() {
           <Route path="/" element={<QuestionsPage />} />
           <Route path="/eco-score" element={<EcoScorePage />} />
           <Route path="/logos" element={<LogoAnnotationPage />} />
-          {/* <Route path="/logos/search" element={<LogoSearchPage />} /> */}
+          <Route path="/logos/search" element={<LogoSearchPage />} />
           <Route path="/logos/:logoId" element={<LogoUpdatePage />} />
           <Route path="/settings" element={<SettingsPage />} />
           <Route path="/questions" element={<QuestionsPage />} />
