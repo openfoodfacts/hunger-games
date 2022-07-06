@@ -4,6 +4,7 @@ import LogoSearchForm from "../../components/LogoSearchForm";
 import robotoff from "../../robotoff";
 import off from "../../off";
 import { Box } from "@mui/material";
+import axios from "axios";
 
 const transformLogo = (logo) => {
   const src =
@@ -31,6 +32,15 @@ export default function LogoSearch() {
 
   const validate = React.useCallback((params) => {
     setSearchState(params);
+  }, []);
+
+  React.useEffect(() => {
+    axios
+      .get("https://world.openfoodfacts.org/cgi/auth.pl", {
+        withCredentials: true,
+      })
+      .then((rep) => console.log({ rep }))
+      .catch((err) => console.log({ err }));
   }, []);
 
   React.useEffect(() => {
