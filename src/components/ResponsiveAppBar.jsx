@@ -12,6 +12,7 @@ import MenuItem from "@mui/material/MenuItem";
 import ListSubheader from "@mui/material/ListSubheader";
 import MuiLink from "@mui/material/Link";
 
+import DevModeContext from "../contexts/devMode";
 import logo from "../assets/logo.png";
 import { Link } from "react-router-dom";
 
@@ -39,6 +40,12 @@ const ResponsiveAppBar = () => {
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
+
+  const { devMode: isDevMode } = React.useContext(DevModeContext);
+
+  const displayedPages = pages.filter(
+    (page) => page.url !== "insights" || isDevMode
+  );
 
   return (
     <AppBar position="static">
@@ -74,7 +81,7 @@ const ResponsiveAppBar = () => {
                 display: { xs: "block", md: "none" },
               }}
             >
-              {pages.map((page) =>
+              {displayedPages.map((page) =>
                 page.url ? (
                   <MenuItem
                     key={page.translationKey}
@@ -150,7 +157,7 @@ const ResponsiveAppBar = () => {
               Hunger Games
             </Typography>
             <Box sx={{ display: "flex" }}>
-              {pages.map((page) =>
+              {displayedPages.map((page) =>
                 page.url ? (
                   <Button
                     key={page.url}
