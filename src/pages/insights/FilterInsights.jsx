@@ -10,6 +10,9 @@ const typeOptions = [
   { value: "category", labelKey: "insights.category" },
   { value: "expiration_date", labelKey: "insights.expiration_date" },
   { value: "packager_code", labelKey: "insights.packager_code" },
+  { value: "brand", labelKey: "logos.brand" },
+  { value: "packaging", labelKey: "logos.packaging" },
+  { value: "qr_code", labelKey: "logos.qr_code" },
 ];
 
 const annotationOptions = [

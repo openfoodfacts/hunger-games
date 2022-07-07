@@ -46,6 +46,9 @@ const typeKeyToTranslationKey = {
   category: "insights.category",
   expiration_date: "insights.expiration_date",
   packager_code: "insights.packager_code",
+  brand: "logos.brand",
+  packaging: "logos.packaging",
+  qr_code: "logos.qr_code",
 };
 
 const annotationValueToTranslationKey = {
@@ -141,14 +144,16 @@ const columns = [
     renderCell: ({ row }) =>
       row.type && row.value_tag ? (
         <Link href={getQuestionUrl(row.type, row.value_tag)}>
-          {row.value_tag}
+          {row.value_tag} : {row.value}
         </Link>
       ) : (
-        row.value_tag
+        <span>
+          {row.value_tag} : {row.value}
+        </span>
       ),
   },
   { field: "barcode", minWidth: 180, flex: 1, maxWidth: 200 },
-  { field: "id" },
+  { field: "id", flex: 1 },
   { field: "timestamp", ...dateTimeColumn },
   {
     field: "completed_at",
