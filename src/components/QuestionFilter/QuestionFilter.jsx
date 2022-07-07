@@ -110,6 +110,7 @@ export const QuestionFilter = ({ filterState, setFilterState }) => {
             size="small"
             value={filterState?.insightType}
             onChange={handleInsightTypeChange}
+            label={t(`questions.insightTypeLabel`)}
           >
             {Object.keys(insightTypesNames).map((insightType) => (
               <MenuItem key={insightType} value={insightType}>

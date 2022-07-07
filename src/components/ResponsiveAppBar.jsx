@@ -49,7 +49,7 @@ const ResponsiveAppBar = () => {
 
   return (
     <AppBar position="static">
-      <Container maxWidth="xl">
+      <Container maxWidth={null}>
         <Toolbar disableGutters>
           {/* Mobile content */}
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
