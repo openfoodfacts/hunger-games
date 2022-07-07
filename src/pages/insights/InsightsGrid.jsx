@@ -8,6 +8,8 @@ import VisibilityIcon from "@mui/icons-material/Visibility";
 import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
 import CancelOutlinedIcon from "@mui/icons-material/CancelOutlined";
 import QuestionMarkOutlinedIcon from "@mui/icons-material/QuestionMarkOutlined";
+import FaceIcon from "@mui/icons-material/Face";
+import SmartToyIcon from "@mui/icons-material/SmartToy";
 
 import Tooltip from "@mui/material/Tooltip";
 import Link from "@mui/material/Link";
@@ -16,6 +18,15 @@ import robotoffService from "../../robotoff";
 import offService from "../../off";
 import { useTranslation } from "react-i18next";
 import { Typography } from "@mui/material";
+
+const RenderLink = (props) => {
+  const { value, ...other } = props;
+  return (
+    <Link component="button" {...other}>
+      {props.value}
+    </Link>
+  );
+};
 
 const getProductUrl = (code) => {
   if (!code) {
@@ -103,7 +114,7 @@ const dateTimeColumn = {
   valueGetter: (params) => (params.value ? new Date(params.value) : null),
 };
 
-const columns = [
+const staticColumnsDef = [
   {
     field: "actions",
     type: "actions",
@@ -173,17 +184,49 @@ const columns = [
     minWidth: 70,
     flex: 1,
     maxWidth: 110,
+    renderCell: ({ value }) =>
+      value ? (
+        <Tooltip title="Automatic">
+          <SmartToyIcon color="action" />
+        </Tooltip>
+      ) : (
+        <Tooltip title="Human required">
+          <FaceIcon color="action" />
+        </Tooltip>
+      ),
   },
 ].map((col) => ({ ...col, sortable: false }));
 
 const PAGE_SIZE = 25;
 
-const InsightGrid = ({ filterState = {} }) => {
+const InsightGrid = ({ filterState = {}, setFilterState }) => {
   const { t } = useTranslation();
 
   const [pageState, setPageState] = React.useState({ page: 1, rowCount: 0 });
   const [isLoading, setIsLoading] = React.useState(false);
   const [rows, setRows] = React.useState([]);
+
+  const columns = React.useMemo(() => {
+    return staticColumnsDef.map((col) => {
+      if (col.field !== "barcode") {
+        return col;
+      }
+      return {
+        ...col,
+        renderCell: ({ value, tabIndex }) => {
+          return (
+            <RenderLink
+              value={value}
+              tabIndex={tabIndex}
+              onClick={() => {
+                setFilterState((f) => ({ ...f, barcode: value }));
+              }}
+            />
+          );
+        },
+      };
+    });
+  }, [setFilterState]);
 
   React.useEffect(() => {
     setIsLoading(true);

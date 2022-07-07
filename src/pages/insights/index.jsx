@@ -26,7 +26,10 @@ export default function Insights() {
       />
       <Divider />
       <div style={{ height: "250px" }}>
-        <InsightGrid filterState={filterState} />
+        <InsightGrid
+          filterState={filterState}
+          setFilterState={setFilterState}
+        />
       </div>
     </Stack>
   );
