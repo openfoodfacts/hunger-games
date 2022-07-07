@@ -7,13 +7,16 @@ import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import Badge from "@mui/material/Badge";
 import Link from "@mui/material/Link";
+import Stack from "@mui/material/Stack";
+import Chip from "@mui/material/Chip";
 
 import robotoff from "../robotoff";
 import { reformatValueTag } from "../utils";
 import { getQuestionSearchParams } from "./QuestionFilter";
+import { useTranslation } from "react-i18next";
 
 const QuestionCard = (props) => {
-  const { filterState, imageSrc, title } = props;
+  const { filterState, imageSrc, title, showFilterResume } = props;
   const {
     sortByPopularity,
     insightType,
@@ -21,6 +24,8 @@ const QuestionCard = (props) => {
     brandFilter,
     countryFilter,
   } = filterState;
+
+  const { t } = useTranslation();
 
   const targetUrl = `/questions?${getQuestionSearchParams(filterState)}`;
 
@@ -67,7 +72,7 @@ const QuestionCard = (props) => {
           : "success"
       }
     >
-      <Card sx={{ width: 300, height: 350 }}>
+      <Card sx={{ width: 300, height: 370 }}>
         <CardActionArea
           component={Link}
           disabled={!questionNumber}
@@ -81,6 +86,48 @@ const QuestionCard = (props) => {
             sx={{ objectFit: "contain" }}
           />
           <CardContent>
+            {showFilterResume && (
+              <Stack direction="row" flexWrap="wrap">
+                {filterState?.insightType && (
+                  <Chip
+                    size="small"
+                    label={`${t("questions.filters.short_label.value")}: ${
+                      filterState?.insightType
+                    }`}
+                  />
+                )}
+                {filterState?.valueTag && (
+                  <Chip
+                    size="small"
+                    label={`${t("questions.filters.short_label.value")}: ${
+                      filterState?.valueTag
+                    }`}
+                  />
+                )}
+                {filterState?.countryFilter && (
+                  <Chip
+                    size="small"
+                    label={`${t("questions.filters.short_label.country")}: ${
+                      filterState?.countryFilter
+                    }`}
+                  />
+                )}
+                {filterState?.brandFilter && (
+                  <Chip
+                    size="small"
+                    label={`${t("questions.filters.short_label.brand")}: ${
+                      filterState?.brandFilter
+                    }`}
+                  />
+                )}
+                {filterState?.sortByPopularity && (
+                  <Chip
+                    size="small"
+                    label={`${t("questions.filters.short_label.popularity")}`}
+                  />
+                )}
+              </Stack>
+            )}
             <Typography gutterBottom variant="h5" component="div">
               {title}
             </Typography>
