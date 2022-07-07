@@ -96,7 +96,7 @@
     "label": "Etiqueta",
     "brand": "Marca",
     "packager_code": "Código de envasador",
-    "packaging": "Envases",
+    "packaging": "Envase",
     "qr_code": "Código QR",
     "category": "Categoría",
     "nutrition_label": "Tabla Nutricional",
@@ -140,7 +140,7 @@
         "text2": "Los logos seleccionados van a la parte superior de la página, puedes deseleccionarlos haciendo clic de nuevo en ellos"
       },
       "page2": {
-        "title": "Aviso",
+        "title": "Atención",
         "text1": "Si el recorte contiene varios logotipos, no lo seleccione.",
         "text2": "Si el recorte contiene sólo una parte parcial de un logotipo, puede seleccionarlo"
       },
@@ -201,5 +201,10 @@
       "close": "cerrar",
       "open": "abrir historial"
     }
+  },
+  "notfound": {
+    "nopage": "Whoops! The page you're looking for can't be found.",
+    "redirect1": "Want to play some games?",
+    "redirect2": "Click here"
   }
 }

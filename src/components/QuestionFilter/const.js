@@ -1,4 +1,10 @@
-export const DEFAULT_FILTER_STATE = { insightType: "brand", brandFilter: "", countryFilter: "", sortByPopularity: false, valueTag: "" };
+export const DEFAULT_FILTER_STATE = {
+  insightType: "brand",
+  brandFilter: "",
+  countryFilter: "",
+  sortByPopularity: false,
+  valueTag: "",
+};
 
 export const countryNames = [
   "",

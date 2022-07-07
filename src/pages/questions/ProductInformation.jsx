@@ -1,14 +1,12 @@
 import * as React from "react";
-
+import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Link from "@mui/material/Link";
 import Divider from "@mui/material/Divider";
 import Checkbox from "@mui/material/Checkbox";
 import Typography from "@mui/material/Typography";
 import FormControlLabel from "@mui/material/FormControlLabel";
-import ImageList from "@mui/material/ImageList";
-import ImageListItem from "@mui/material/ImageListItem";
-
+import Stack from "@mui/material/Stack";
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 
@@ -69,33 +67,49 @@ const ProductInformation = ({ question }) => {
   }
 
   return (
-    <div>
+    <Box>
       {/* Main information about the product */}
       <Typography>{productData?.productName}</Typography>
-      <Button component={Link} target="_blank" href={offService.getProductUrl(question.barcode)}>
+      <Button
+        component={Link}
+        target="_blank"
+        href={offService.getProductUrl(question.barcode)}
+      >
         {t("questions.view")}
       </Button>
-      <Button component={Link} target="_blank" href={offService.getProductEditUrl(question.barcode)}>
+      <Button
+        component={Link}
+        target="_blank"
+        href={offService.getProductEditUrl(question.barcode)}
+      >
         {t("questions.edit")}
       </Button>
       <Divider />
 
       {/* Image display section */}
       <FormControlLabel
-        control={<Checkbox checked={hideImages} onChange={(event) => setHideImages(event.target.checked)} />}
+        control={
+          <Checkbox
+            checked={hideImages}
+            onChange={(event) => setHideImages(event.target.checked)}
+          />
+        }
         label={t("questions.hide_images")}
         labelPlacement="end"
       />
       {!hideImages && productData?.images && (
-        <ImageList variant="masonry" cols={3} gap={8}>
+        <Stack spacing={2} direction="row" flexWrap="wrap">
           {getImagesUrls(productData.images, question.barcode).map((src) => (
-            <ImageListItem key={src}>
-              <Zoom>
-                <img src={src} style={{ maxWidth: 300, maxHeight: 300 }} alt="" loading="lazy" />
-              </Zoom>
-            </ImageListItem>
+            <Zoom key={src}>
+              <img
+                src={src}
+                alt=""
+                loading="lazy"
+                style={{ maxWidth: 300, maxHeight: 300 }}
+              />
+            </Zoom>
           ))}
-        </ImageList>
+        </Stack>
       )}
 
       {/* Remaining info */}
@@ -109,7 +123,8 @@ const ProductInformation = ({ question }) => {
       <p>
         {t("questions.countries")}: {productData?.countriesTags}
       </p>
-    </div>
+      <Divider />
+    </Box>
   );
 };
 export default ProductInformation;

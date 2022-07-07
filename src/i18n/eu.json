@@ -42,8 +42,8 @@
       },
       "actions": {
         "edit": "Edit Filters",
-        "cancel": "Utzi",
-        "apply": "Apply"
+        "cancel": "Ezeztatu",
+        "apply": "Ezarri"
       }
     }
   },
@@ -201,5 +201,10 @@
       "close": "close",
       "open": "open history"
     }
+  },
+  "notfound": {
+    "nopage": "Whoops! The page you're looking for can't be found.",
+    "redirect1": "Want to play some games?",
+    "redirect2": "Click here"
   }
 }

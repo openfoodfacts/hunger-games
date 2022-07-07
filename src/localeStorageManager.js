@@ -20,5 +20,9 @@ export const getLang = () => {
   const urlParams = new URLSearchParams(window.location.search);
   const urlLanguage = urlParams.has("language") && urlParams.get("language");
 
-  return urlLanguage || settings.lang || (navigator.language || navigator.userLanguage).split("-")[0];
+  return (
+    urlLanguage ||
+    settings.lang ||
+    (navigator.language || navigator.userLanguage).split("-")[0]
+  );
 };

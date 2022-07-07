@@ -5,7 +5,6 @@ import Button from "@mui/material/Button";
 import Divider from "@mui/material/Divider";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
-
 import LinkIcon from "@mui/icons-material/Link";
 import DeleteIcon from "@mui/icons-material/Delete";
 import DoneIcon from "@mui/icons-material/Done";
@@ -17,9 +16,26 @@ import "react-medium-image-zoom/dist/styles.css";
 import { useTranslation } from "react-i18next";
 import { NO_QUESTION_LEFT, OFF_URL } from "../../const";
 import { reformatValueTag } from "../../utils";
+import { Box } from "@mui/system";
+
+const getFullSizeImage = (src) => {
+  if (!src) {
+    return "https://static.openfoodfacts.org/images/image-placeholder.png";
+  }
+  const needsFull = /\/[a-z_]+.[0-9]*.400.jpg$/gm.test(src);
+
+  if (needsFull) {
+    return src.replace("400.jpg", "full.jpg");
+  }
+  return src.replace("400.jpg", "jpg");
+};
 
 const getValueTagQuestionsURL = (question) => {
-  if (question !== null && question !== NO_QUESTION_LEFT && question.value_tag) {
+  if (
+    question !== null &&
+    question !== NO_QUESTION_LEFT &&
+    question.value_tag
+  ) {
     const urlParams = new URLSearchParams();
     urlParams.append("type", question.insight_type);
     urlParams.append("value_tag", reformatValueTag(question.value_tag));
@@ -28,8 +44,15 @@ const getValueTagQuestionsURL = (question) => {
   return null;
 };
 const getValueTagExamplesURL = (question) => {
-  if (question !== null && question !== NO_QUESTION_LEFT && question.value_tag && question.insight_type) {
-    return `${OFF_URL}/${question.insight_type}/${reformatValueTag(question.value_tag)}`;
+  if (
+    question !== null &&
+    question !== NO_QUESTION_LEFT &&
+    question.value_tag &&
+    question.insight_type
+  ) {
+    return `${OFF_URL}/${question.insight_type}/${reformatValueTag(
+      question.value_tag
+    )}`;
   }
   return "";
 };
@@ -46,10 +69,21 @@ const QuestionDisplay = ({ question, answerQuestion }) => {
     return <p>loading</p>;
   }
   return (
-    <div>
+    <Stack
+      sx={{
+        textAlign: "center",
+        flexGrow: 1,
+        flexBasis: 0,
+        flexShrink: 1,
+      }}
+    >
       <Typography>{question?.question}</Typography>
       {valueTagQuestionsURL && (
-        <Button component={Link} to={valueTagQuestionsURL} endIcon={<LinkIcon />}>
+        <Button
+          component={Link}
+          to={valueTagQuestionsURL}
+          endIcon={<LinkIcon />}
+        >
           {question.value}
         </Button>
       )}
@@ -59,25 +93,70 @@ const QuestionDisplay = ({ question, answerQuestion }) => {
         </a>
       )}
       <Divider />
-      <Zoom>
-        <img
-          src={question.source_image_url.replace("400.jpg", "jpg") || "https://static.openfoodfacts.org/images/image-placeholder.png"}
-          alt=""
-          style={{ maxWidth: "400px", maxHeight: "400px" }}
-        />
-      </Zoom>
-      <Stack direction="row" justifyContent="space-between">
-        <Button onClick={() => answerQuestion({ value: 0, insightId: question.insight_id })} startIcon={<DeleteIcon />} color="error" variant="contained" size="large">
-          {t("questions.no")}
+      <Box flexGrow={1} flexShrink={1} sx={{ height: 0, marginBottom: 1 }}>
+        <Zoom wrapStyle={{ height: "100%" }}>
+          <img
+            src={getFullSizeImage(question.source_image_url)}
+            alt=""
+            style={{ maxWidth: "100%", maxHeight: "100%" }}
+          />
+        </Zoom>
+      </Box>
+      <Stack
+        direction="row"
+        justifyContent="space-around"
+        flexWrap="wrap"
+        onKeyDown={(event) => {
+          switch (event.key) {
+            case "k":
+              answerQuestion({ value: -1, insightId: question.insight_id });
+              break;
+            case "o":
+              answerQuestion({ value: 1, insightId: question.insight_id });
+              break;
+            case "n":
+              answerQuestion({ value: 0, insightId: question.insight_id });
+              break;
+            default:
+              break;
+          }
+        }}
+      >
+        <Button
+          onClick={() =>
+            answerQuestion({ value: 0, insightId: question.insight_id })
+          }
+          startIcon={<DeleteIcon />}
+          color="error"
+          variant="contained"
+          size="large"
+        >
+          {t("questions.no")} (n)
         </Button>
-        <Button onClick={() => answerQuestion({ value: -1, insightId: question.insight_id })} startIcon={<QuestionMarkIcon />} variant="contained" size="large">
-          {t("questions.skip")}
+        <Button
+          onClick={() =>
+            answerQuestion({ value: -1, insightId: question.insight_id })
+          }
+          startIcon={<QuestionMarkIcon />}
+          variant="contained"
+          size="large"
+          autoFocus
+        >
+          {t("questions.skip")} (k)
         </Button>
-        <Button onClick={() => answerQuestion({ value: 1, insightId: question.insight_id })} startIcon={<DoneIcon />} color="success" variant="contained" size="large">
-          {t("questions.yes")}
+        <Button
+          onClick={() =>
+            answerQuestion({ value: 1, insightId: question.insight_id })
+          }
+          startIcon={<DoneIcon />}
+          color="success"
+          variant="contained"
+          size="large"
+        >
+          {t("questions.yes")} (o)
         </Button>
       </Stack>
-    </div>
+    </Stack>
   );
 };
 export default QuestionDisplay;

@@ -9,7 +9,7 @@ You are very welcome to write the game you want.
 
 The production website is available at https://hunger.openfoodfacts.org
 
-##  Why Hunger Games?
+## Why Hunger Games?
 
 - Because we are sympathetic to Katniss' fight against Panem.
 - Open Food Facts generates a lot of photos, and we need to turn them into reliable data about food and cosmetics, at very large scale.

@@ -7,7 +7,7 @@
     "ingredients": "Съставки",
     "product_weight": "тегло на продукта",
     "popularity_sort": "Сортирай по популярност",
-    "see_examples": "See examples of this ",
+    "see_examples": "Виж примери за това ",
     "no": "Не",
     "skip": "Пропусни",
     "yes": "Да",
@@ -15,8 +15,8 @@
     "countries": "Страни",
     "view": "Преглед",
     "edit": "Редактирай",
-    "hide_images": "Скриване на снимки (по-бързо зареждане)",
-    "display_images": "Покажи снимки",
+    "hide_images": "Скриване на снимките (по-бързо зареждане)",
+    "display_images": "Покажи снимките",
     "annotations": "Пояснения",
     "last_annotations": "Последни пояснения",
     "remaining_annotations": "Остава:",
@@ -201,5 +201,10 @@
       "close": "затвори",
       "open": "отвори историята"
     }
+  },
+  "notfound": {
+    "nopage": "Whoops! The page you're looking for can't be found.",
+    "redirect1": "Want to play some games?",
+    "redirect2": "Click here"
   }
 }

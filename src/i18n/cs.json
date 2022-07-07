@@ -7,9 +7,9 @@
     "ingredients": "Složení",
     "product_weight": "hmotnost výrobku",
     "popularity_sort": "Třídit dle oblíbenosti",
-    "see_examples": "See examples of this ",
+    "see_examples": "Viz příklady tohoto ",
     "no": "Ne",
-    "skip": "Skip",
+    "skip": "Přeskočit",
     "yes": "Ano",
     "no_questions_remaining": "Nezbývají žádné otázky",
     "countries": "Země",
@@ -17,98 +17,98 @@
     "edit": "Upravit",
     "hide_images": "Skrýt obrázky (rychlejší načítání)",
     "display_images": "Zobrazovat obrázky",
-    "annotations": "Annotations",
-    "last_annotations": "Last annotations",
-    "remaining_annotations": "Remaining:",
-    "annotated_annotations": "Annotated",
+    "annotations": "Anotace",
+    "last_annotations": "Poslední anotace",
+    "remaining_annotations": "Zbývá:",
+    "annotated_annotations": "Komentováno",
     "filters": {
       "short_label": {
         "value": "hodnota",
         "country": "země",
         "brand": "značka",
-        "popularity": "popularity"
+        "popularity": "oblíbenost"
       },
       "long_label": {
-        "type": "Question Type",
-        "value": "Proposed Value",
-        "country": "Product Country",
-        "brand": "Product Brand",
+        "type": "Typ otázky",
+        "value": "Navrhovaná hodnota",
+        "country": "Země produktu",
+        "brand": "Značka produktu",
         "popularity": "Třídit dle oblíbenosti",
         "edit": ""
       },
       "placeholders": {
-        "value": "Value (fanta, en:organic,...)",
+        "value": "Hodnota (fanta, cs:přírodní,...)",
         "brand": "auchan, danone, herta, ..."
       },
       "actions": {
-        "edit": "Edit Filters",
+        "edit": "Upravit filtry",
         "cancel": "Zrušit",
         "apply": "Použít"
       }
     }
   },
   "menu": {
-    "games": "Games",
-    "questions": "Questions",
-    "logos": "Logos",
-    "manage": "Manage",
-    "insights": "Insights",
+    "games": "Hry",
+    "questions": "Otázky",
+    "logos": "Loga",
+    "manage": "Spravovat",
+    "insights": "Postřehy",
     "nutritions": "Nutriční hodnoty",
     "settings": "Nastavení",
     "eco-score": "Eco-score"
   },
   "insights": {
-    "insights": "Insights",
+    "insights": "Postřehy",
     "barcode": "Čárový kód",
-    "barcode_placeholder": "barcode",
-    "value_tag": "Value tag",
-    "value_placeholder": "ex: en:mueslis, bjorg,...",
-    "type": "Type",
-    "annotated": "Annotated",
-    "annotation": "Annotation",
-    "not_annotated": "Not annotated",
-    "all": "All",
+    "barcode_placeholder": "čárový kód",
+    "value_tag": "Značka hodnoty",
+    "value_placeholder": "např.: cz:müsli, cereálie,...",
+    "type": "Typ",
+    "annotated": "Komentováno",
+    "annotation": "Poznámky",
+    "not_annotated": "Bez poznámek",
+    "all": "Vše",
     "label": "Štítek",
-    "product_weight": "Product weight",
+    "product_weight": "Hmotnost produktu",
     "category": "Kategorie",
-    "expiration_date": "Expiration date",
+    "expiration_date": "Datum spotřeby",
     "packager_code": "Kód balírny",
-    "skipped": "Skipped (-1)",
-    "rejected": "Rejected (0)",
-    "accepted": "Accepted (1)",
+    "skipped": "Přeskočeno (-1)",
+    "rejected": "Zamítnuto (0)",
+    "accepted": "Přijato (1)",
     "search": "Vyhledat",
-    "count": "Count",
+    "count": "Počet",
     "id": "Id",
-    "value": "Value",
-    "created_at": "Created at",
-    "completed_at": "Completed at",
-    "automatic": "Automatic"
+    "value": "Hodnota",
+    "created_at": "Vytvořeno v",
+    "completed_at": "Dokončeno v",
+    "automatic": "Automaticky"
   },
   "logos": {
-    "annotation": "Annotation: ",
-    "annotations": "Logo annotations",
-    "select_all": "Select all",
-    "unselect_all": "Unselect all",
-    "distance": "Distance:",
-    "value": "Value",
-    "submit": "Submit",
-    "type": "Type",
+    "annotation": "Poznámky: ",
+    "annotations": "Anotace loga",
+    "select_all": "Vybrat vše",
+    "unselect_all": "Odznačit vše",
+    "distance": "Vzdálenost:",
+    "value": "Hodnota",
+    "submit": "Odeslat",
+    "type": "Typ",
     "label": "Štítek",
     "brand": "Značka",
     "packager_code": "Kód balírny",
     "packaging": "Obal",
-    "qr_code": "QR code",
+    "qr_code": "QR kód",
     "category": "Kategorie",
-    "nutrition_label": "Nutrition label",
+    "nutrition_label": "Nutriční štítek",
     "store": "Prodejna",
-    "detail": "Logo detail",
+    "detail": "Detail loga",
     "id": "Logo ID:",
-    "barcode": "Barcode:",
-    "full_image": "Full image",
-    "update": "Update",
-    "no_found": "No logo found",
+    "barcode": "Čárový kód:",
+    "full_image": "Plná velikost obrázku",
+    "update": "Aktualizace",
+    "no_found": "Nebylo nalezeno žádné logo",
     "search": "Vyhledat",
-    "number_of_results": "Number of results:"
+    "number_of_results": "Počet výsledků:"
   },
   "settings": {
     "settings": "Nastavení",
@@ -118,88 +118,93 @@
   "helper": {
     "welcome": {
       "page1": {
-        "title": "Welcome",
-        "text1": "Hunger Games is a collection of mini-games that help contribute to Open Food Facts in many ways. Categorize a product to get the Nutri-Score and Eco-Score, help validate labels for the Eco-Score, add brands and weights, help our logo recognition system learn about the logos it detected.",
-        "text2": "Those are some of the exciting things you'll be able to do. Make sure to be connected to the Open Food Facts website to get credit for your contributions. If you make a mistake, please take the time to correct it by heading to the website.",
-        "text3": "In case of doubt about the game, you have an helper at the top right of the page, and you can reach us on slack at the #hunger-games channel"
+        "title": "Vítejte",
+        "text1": "Hunger Games je sbírka miniher, které pomáhají mnoha způsoby přispět k Open Food Facts. Zařaďte produkt do kategorií, abyste získali Nutri-Score a Eco-Score, pomozte ověřit štítky pro Eco-Score, přidejte značky a váhy, pomozte našemu systému rozpoznávání loga zjistit loga, která detekoval.",
+        "text2": "To jsou některé ze vzrušujících věcí, které budete moci dělat. Ujistěte se, že jste připojeni k webu Open Food Facts, abyste získali kredit za své příspěvky. Pokud uděláte chybu, věnujte prosím čas opravě a přejděte na webovou stránku.",
+        "text3": "V případě pochybností o hře máte pomocníka v pravé horní části stránky a můžete nás kontaktovat na slacku na kanálu #hunger-games"
       },
       "page2": {
-        "title": "Questions",
-        "text1": "Our AI has a lot of questions for you. Here you will have to confirm or deny the information she detected on images.",
-        "text2": "Do not hesitate to skip a question if you're not sure, there are plenty of others"
+        "title": "Otázky",
+        "text1": "Naše AI má na vás spoustu otázek. Zde budete muset potvrdit nebo zamítnout informace, které zjistila na snímcích.",
+        "text2": "Pokud si nejste jisti, neváhejte otázku přeskočit, existuje spousta dalších"
       },
       "page3": {
-        "title": "Logos",
+        "title": "Loga",
         "text1": "Svět produktů je plný log. Vysvětlete naší AI, která jsou stejná."
       }
     },
     "logos": {
       "page1": {
-        "title": "Selection",
-        "text1": "Select the crops of a same logo by clicking on them",
-        "text2": "Selected logos go to the top of the page, you can unselect them by clicking again on them"
+        "title": "Výběr",
+        "text1": "Vyberte oříznutí stejného loga kliknutím na ně",
+        "text2": "Vybraná loga jdou do horní části stránky, jejich výběr můžete zrušit opětovným kliknutím na ně"
       },
       "page2": {
         "title": "Varování",
-        "text1": "If the crop contains multiple logo do not select it.",
-        "text2": "If the crop contains only a partial part of a logo you can select it"
+        "text1": "Pokud oříznutí obsahuje více log, nevybírejte je.",
+        "text2": "Pokud oříznutí obsahuje pouze část loga, můžete jej vybrat"
       },
       "page3": {
-        "title": "Validate",
-        "text1": "Indicate the type of logo (label, brand, QRcode, ...)",
-        "text2": "If it is a label or a brand logo, indicate which one it is",
-        "text3": "Now you can submit your selection",
-        "text4": "Thank you :)"
+        "title": "Ověřit",
+        "text1": "Uveďte typ loga (štítek, značka, QRcode, ...)",
+        "text2": "Pokud se jedná o štítek nebo logo značky, uveďte, o které se jedná",
+        "text3": "Nyní můžete odeslat svůj výběr",
+        "text4": "Děkujeme :)"
       }
     },
-    "previous": "Prev",
+    "previous": "Předchozí",
     "next": "Další",
     "close": "Zavřít"
   },
   "nutrition": {
     "instructions": {
-      "cropTheTable": "Crop the image to simplify your annotation",
-      "verifyNutrimentDetected": "Indicate if the nutriment detected is correct",
-      "selectMissingNutriments": "Add missing nutriments (you can click even if the word has no box)",
-      "selectValue": "Select the nutritional value of: "
+      "cropTheTable": "Oříznutím obrázku zjednodušíte anotaci",
+      "verifyNutrimentDetected": "Uveďte, zda je zjištěná výživa správná",
+      "selectMissingNutriments": "Přidejte chybějící živiny (můžete kliknout, i když slovo nemá žádné pole)",
+      "selectValue": "Vyberte nutriční hodnotu: "
     },
     "steps": {
-      "1": "Crop",
-      "2": "Special values",
-      "3": "Nutriments Selection",
-      "4": "Values Selection"
+      "1": "Oříznout",
+      "2": "Zvláštní hodnoty",
+      "3": "Výběr živin",
+      "4": "Výběr hodnot"
     },
-    "next": "Next Step",
-    "prev": "Prev Step",
-    "skip": "Skip this product",
-    "validate": "Validate Table",
-    "unselect_picture": "No nutrition info",
-    "basis": "data for: ",
-    "servingSize": "serving size",
+    "next": "Další krok",
+    "prev": "Předchozí krok",
+    "skip": "Přeskočit tento produkt",
+    "validate": "Ověřit tabulku",
+    "unselect_picture": "Žádné nutriční informace",
+    "basis": "údaje pro: ",
+    "servingSize": "velikost porce",
     "value": "hodnota",
     "nutriments": {
       "nutriment_energy-kj": "Energie (kJ)",
-      "nutriment_energy-kcal": "Energy (kCal)",
+      "nutriment_energy-kcal": "Energie (kCal)",
       "nutriment_fat": "Tuky",
       "nutriment_saturated-fat": "Nasycené tuky",
       "nutriment_carbohydrates": "Sacharidy",
       "nutriment_sugars": "Cukry",
       "nutriment_proteins": "Bílkoviny",
-      "nutriment_fiber": "Fibers",
+      "nutriment_fiber": "Vláknina",
       "nutriment_salt": "Sůl",
       "nutriment_sodium": "Sodík"
     },
     "history": {
-      "title": "Session History",
-      "status": "status",
-      "product name": "product name",
-      "view": "view page",
-      "edit": "edit page",
-      "SKIP": "ignored",
-      "VALIDATED": "edited",
-      "WRONG_IMAGE": "unselected picture",
-      "close": "close",
-      "open": "open history"
+      "title": "Historie relace",
+      "status": "stav",
+      "product name": "název produktu",
+      "view": "zobrazit stránku",
+      "edit": "upravit stránku",
+      "SKIP": "ignorováno",
+      "VALIDATED": "upraveno",
+      "WRONG_IMAGE": "nevybraný obrázek",
+      "close": "zavřít",
+      "open": "otevřít historii"
     }
+  },
+  "notfound": {
+    "nopage": "Whoops! The page you're looking for can't be found.",
+    "redirect1": "Want to play some games?",
+    "redirect2": "Click here"
   }
 }

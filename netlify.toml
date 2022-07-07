@@ -1,0 +1,7 @@
+[build]
+  ignore = "node ignore_build.js"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
