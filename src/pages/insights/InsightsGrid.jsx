@@ -108,9 +108,9 @@ const columns = [
       <GridActionsCellItem
         component="a"
         href={getProductEditUrl(params.row.barcode)}
-        label="Open product page"
+        label="Open product edit"
         icon={
-          <Tooltip title="Open product page">
+          <Tooltip title="Open product edit">
             <EditIcon />
           </Tooltip>
         }
@@ -118,9 +118,9 @@ const columns = [
       <GridActionsCellItem
         component="a"
         href={getProductUrl(params.row.barcode)}
-        label="Open product edit"
+        label="Open product page"
         icon={
-          <Tooltip title="Open product edit">
+          <Tooltip title="Open product page">
             <VisibilityIcon />
           </Tooltip>
         }
