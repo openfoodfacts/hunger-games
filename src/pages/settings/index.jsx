@@ -50,7 +50,7 @@ export default function Settings() {
       </TextField>
 
       <div>
-        <p>To explore data base content, activate the dev mode</p>
+        <p>To explore the database content, activate the dev mode</p>
         <FormControlLabel
           checked={devMode}
           onChange={handleDevModeChange}
