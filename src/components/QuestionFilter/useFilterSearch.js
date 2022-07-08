@@ -2,6 +2,7 @@ import * as React from "react";
 
 import { key2urlParam, DEFAULT_FILTER_STATE } from "./const";
 import { useLocation } from "react-router-dom";
+import { localFavorites } from "../../localeStorageManager";
 
 export const getQuestionSearchParams = (filterState) => {
   const urlParams = new URLSearchParams(window.location.search);
@@ -40,8 +41,12 @@ const getSearchFromUrl = () => {
 export function useFilterSearch() {
   const { search } = useLocation();
 
-  const [searchParams, setInternSearchParams] = React.useState(() =>
-    getSearchFromUrl()
+  const initialParams = getSearchFromUrl();
+  const [searchParams, setInternSearchParams] = React.useState(
+    () => initialParams
+  );
+  const [isFavorite, setIsFavorite] = React.useState(
+    localFavorites.isSaved(initialParams)
   );
 
   React.useEffect(() => {
@@ -63,10 +68,27 @@ export function useFilterSearch() {
         return;
       }
 
+      setIsFavorite(localFavorites.isSaved(newState));
       setInternSearchParams(newState);
       updateSearchSearchParams(newState);
     },
     [searchParams]
   );
-  return [searchParams, setSearchParams];
+
+  const toggleFavorite = React.useCallback(
+    (imageSrc = "", title = "") => {
+      const isSaved = localFavorites.isSaved(searchParams);
+
+      if (isSaved) {
+        localFavorites.removeQuestion(searchParams);
+      } else {
+        localFavorites.addQuestion(searchParams, imageSrc, title);
+      }
+
+      setIsFavorite(!isSaved);
+    },
+    [searchParams]
+  );
+
+  return [searchParams, setSearchParams, isFavorite, toggleFavorite];
 }

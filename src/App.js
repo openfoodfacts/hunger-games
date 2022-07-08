@@ -11,6 +11,7 @@ import {
   QuestionsPage,
   InsightsPage,
   NotFoundPage,
+  Home,
 } from "./pages";
 import ResponsiveAppBar from "./components/ResponsiveAppBar";
 
@@ -24,7 +25,7 @@ export default function App() {
         <ResponsiveAppBar />
         <Routes>
           {/* TODO: put a home page for root url */}
-          <Route path="/" element={<QuestionsPage />} />
+          <Route path="/" element={<Home />} />
           <Route path="/eco-score" element={<EcoScorePage />} />
           <Route path="/logos" element={<LogoAnnotationPage />} />
           <Route path="/logos/search" element={<LogoSearchPage />} />
