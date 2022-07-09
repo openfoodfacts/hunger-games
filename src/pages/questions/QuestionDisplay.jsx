@@ -8,7 +8,6 @@ import Typography from "@mui/material/Typography";
 import LinkIcon from "@mui/icons-material/Link";
 import DeleteIcon from "@mui/icons-material/Delete";
 import DoneIcon from "@mui/icons-material/Done";
-import QuestionMarkIcon from "@mui/icons-material/QuestionMark";
 import MuiLink from "@mui/material/Link";
 
 import Zoom from "react-medium-image-zoom";
@@ -110,8 +109,9 @@ const QuestionDisplay = ({ question, answerQuestion }) => {
       </Box>
       <Stack
         direction="row"
-        justifyContent="space-around"
-        flexWrap="wrap"
+        justifyContent="center"
+        spacing={2}
+        sx={{ mb: 1 }}
         onKeyDown={(event) => {
           switch (event.key) {
             case "k":
@@ -132,23 +132,13 @@ const QuestionDisplay = ({ question, answerQuestion }) => {
           onClick={() =>
             answerQuestion({ value: 0, insightId: question.insight_id })
           }
-          startIcon={<DeleteIcon />}
           color="error"
           variant="contained"
           size="large"
+          sx={{ display: "flex", flexDirection: "column", flexGrow: 1 }}
         >
+          <DeleteIcon />
           {t("questions.no")} (n)
-        </Button>
-        <Button
-          onClick={() =>
-            answerQuestion({ value: -1, insightId: question.insight_id })
-          }
-          startIcon={<QuestionMarkIcon />}
-          variant="contained"
-          size="large"
-          autoFocus
-        >
-          {t("questions.skip")} (k)
         </Button>
         <Button
           onClick={() =>
@@ -158,10 +148,21 @@ const QuestionDisplay = ({ question, answerQuestion }) => {
           color="success"
           variant="contained"
           size="large"
+          sx={{ display: "flex", flexDirection: "column", flexGrow: 1 }}
         >
           {t("questions.yes")} (o)
         </Button>
       </Stack>
+      <Button
+        onClick={() =>
+          answerQuestion({ value: -1, insightId: question.insight_id })
+        }
+        variant="contained"
+        size="medium"
+        autoFocus
+      >
+        {t("questions.skip")} (k)
+      </Button>
     </Stack>
   );
 };
