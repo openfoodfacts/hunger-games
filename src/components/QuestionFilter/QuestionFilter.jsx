@@ -171,12 +171,9 @@ export const QuestionFilter = ({
             onClick={() => {
               toggleFavorite();
             }}
+            color="primary"
           >
-            {isFavorite ? (
-              <StarIcon style={{ color: "gold" }} />
-            ) : (
-              <StarBorderIcon style={{ color: "gold" }} />
-            )}
+            {isFavorite ? <StarIcon /> : <StarBorderIcon />}
           </IconButton>
         </Stack>
       </Stack>
