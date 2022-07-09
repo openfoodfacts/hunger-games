@@ -89,6 +89,7 @@ const QuestionDisplay = ({ question, answerQuestion }) => {
       )}
       {valueTagExamplesURL && (
         <MuiLink
+          variant="body2"
           href={valueTagExamplesURL}
           target="_blank"
           rel="noreferrer"
@@ -157,6 +158,7 @@ const QuestionDisplay = ({ question, answerQuestion }) => {
         onClick={() =>
           answerQuestion({ value: -1, insightId: question.insight_id })
         }
+        color="secondary"
         variant="contained"
         size="medium"
         autoFocus

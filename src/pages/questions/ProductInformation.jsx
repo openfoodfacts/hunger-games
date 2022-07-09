@@ -80,6 +80,7 @@ const ProductInformation = ({ question }) => {
         href={offService.getProductUrl(question.barcode)}
         variant="outlined"
         startIcon={<VisibilityIcon />}
+        sx={{ minWidth: 150 }}
       >
         {t("questions.view")}
       </Button>
@@ -89,8 +90,8 @@ const ProductInformation = ({ question }) => {
         target="_blank"
         href={offService.getProductEditUrl(question.barcode)}
         variant="contained"
-        sx={{ ml: 2 }}
         startIcon={<EditIcon />}
+        sx={{ ml: 2, minWidth: 150 }}
       >
         {t("questions.edit")}
       </Button>

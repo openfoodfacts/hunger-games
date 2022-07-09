@@ -54,7 +54,7 @@ export default function Settings() {
         <FormControlLabel
           checked={devMode}
           onChange={handleDevModeChange}
-          control={<Switch color="primary" />}
+          control={<Switch />}
           label="Dev Mode"
           labelPlacement="end"
         />
