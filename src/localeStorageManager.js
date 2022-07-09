@@ -16,6 +16,11 @@ export const localSettings = {
   },
 };
 
+export const getIsDevMode = () => {
+  const settings = localSettings.fetch();
+  return settings.devMode ?? false;
+};
+
 export const getLang = () => {
   const settings = localSettings.fetch();
 

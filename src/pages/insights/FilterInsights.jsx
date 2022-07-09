@@ -10,6 +10,9 @@ const typeOptions = [
   { value: "category", labelKey: "insights.category" },
   { value: "expiration_date", labelKey: "insights.expiration_date" },
   { value: "packager_code", labelKey: "insights.packager_code" },
+  { value: "brand", labelKey: "logos.brand" },
+  { value: "packaging", labelKey: "logos.packaging" },
+  { value: "qr_code", labelKey: "logos.qr_code" },
 ];
 
 const annotationOptions = [
@@ -20,19 +23,29 @@ const annotationOptions = [
   { value: "not_annotated", labelKey: "insights.not_annotated" },
 ];
 
+const useControled = (exteriorValue) => {
+  const [innerValue, setInnerValue] = React.useState(exteriorValue ?? "");
+
+  React.useEffect(() => {
+    setInnerValue((v) => (v !== exteriorValue ? exteriorValue : v));
+  }, [exteriorValue]);
+
+  return [innerValue, setInnerValue];
+};
+
 const FilterForm = ({ filterState = {}, setFilterState }) => {
   const { t } = useTranslation();
 
-  const [innerBarcode, setInnerBarcode] = React.useState(
+  const [innerBarcode, setInnerBarcode] = useControled(
     filterState.barcode ?? ""
   );
-  const [innerValueTag, setInnerValueTag] = React.useState(
+  const [innerValueTag, setInnerValueTag] = useControled(
     filterState.valueTag ?? ""
   );
-  const [innerInsightType, setInnerInsightType] = React.useState(
+  const [innerInsightType, setInnerInsightType] = useControled(
     filterState.insightType ?? ""
   );
-  const [innerAnnotationStatus, setInnerAnnotationStatus] = React.useState(
+  const [innerAnnotationStatus, setInnerAnnotationStatus] = useControled(
     filterState.annotationStatus ?? ""
   );
 

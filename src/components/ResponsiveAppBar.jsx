@@ -12,6 +12,7 @@ import MenuItem from "@mui/material/MenuItem";
 import ListSubheader from "@mui/material/ListSubheader";
 import MuiLink from "@mui/material/Link";
 
+import DevModeContext from "../contexts/devMode";
 import logo from "../assets/logo.png";
 import { Link } from "react-router-dom";
 
@@ -40,9 +41,15 @@ const ResponsiveAppBar = () => {
     setAnchorElNav(null);
   };
 
+  const { devMode: isDevMode } = React.useContext(DevModeContext);
+
+  const displayedPages = pages.filter(
+    (page) => page.url !== "insights" || isDevMode
+  );
+
   return (
     <AppBar position="static">
-      <Container maxWidth="xl">
+      <Container maxWidth={null}>
         <Toolbar disableGutters>
           {/* Mobile content */}
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
@@ -74,7 +81,7 @@ const ResponsiveAppBar = () => {
                 display: { xs: "block", md: "none" },
               }}
             >
-              {pages.map((page) =>
+              {displayedPages.map((page) =>
                 page.url ? (
                   <MenuItem
                     key={page.translationKey}
@@ -114,49 +121,56 @@ const ResponsiveAppBar = () => {
           </Typography>
 
           {/* Desktop content */}
-          <MuiLink
-            sx={{ display: { xs: "none", md: "flex" }, mr: 1 }}
-            href="https://world.openfoodfacts.org/"
-            target="_blank"
-          >
-            <img
-              src={logo}
-              width="30px"
-              height="30px"
-              alt="OpenFoodFact logo"
-            />
-          </MuiLink>
-          <Typography
-            variant="h6"
-            noWrap
-            component="a"
-            href="/"
+          <Box
             sx={{
-              mr: 2,
               display: { xs: "none", md: "flex" },
-              fontFamily: "monospace",
-              fontWeight: 700,
-              letterSpacing: ".3rem",
-              color: "inherit",
-              textDecoration: "none",
+              flexDirection: "row",
+              alignItems: "center",
             }}
           >
-            Hunger Games
-          </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-            {pages.map((page) =>
-              page.url ? (
-                <Button
-                  key={page.url}
-                  onClick={handleCloseNavMenu}
-                  sx={{ my: 2, color: "white", display: "block" }}
-                  component={Link}
-                  to={`/${page.url}`}
-                >
-                  {t(page.translationKey)}
-                </Button>
-              ) : null
-            )}
+            <MuiLink
+              sx={{ mr: 1, display: "flex" }}
+              href="https://world.openfoodfacts.org/"
+              target="_blank"
+            >
+              <img
+                src={logo}
+                width="30px"
+                height="30px"
+                alt="OpenFoodFact logo"
+              />
+            </MuiLink>
+            <Typography
+              variant="h6"
+              noWrap
+              component="a"
+              href="/"
+              sx={{
+                mr: 2,
+                fontFamily: "monospace",
+                fontWeight: 700,
+                letterSpacing: ".3rem",
+                color: "inherit",
+                textDecoration: "none",
+              }}
+            >
+              Hunger Games
+            </Typography>
+            <Box sx={{ display: "flex" }}>
+              {displayedPages.map((page) =>
+                page.url ? (
+                  <Button
+                    key={page.url}
+                    onClick={handleCloseNavMenu}
+                    sx={{ my: 2, color: "white", display: "block" }}
+                    component={Link}
+                    to={`/${page.url}`}
+                  >
+                    {t(page.translationKey)}
+                  </Button>
+                ) : null
+              )}
+            </Box>
           </Box>
         </Toolbar>
       </Container>

@@ -9,6 +9,7 @@ import LinkIcon from "@mui/icons-material/Link";
 import DeleteIcon from "@mui/icons-material/Delete";
 import DoneIcon from "@mui/icons-material/Done";
 import QuestionMarkIcon from "@mui/icons-material/QuestionMark";
+import MuiLink from "@mui/material/Link";
 
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
@@ -88,9 +89,14 @@ const QuestionDisplay = ({ question, answerQuestion }) => {
         </Button>
       )}
       {valueTagExamplesURL && (
-        <a href={valueTagExamplesURL} target="_blank" rel="noreferrer">
+        <MuiLink
+          href={valueTagExamplesURL}
+          target="_blank"
+          rel="noreferrer"
+          sx={{ mb: 2 }}
+        >
           <div>{`${t("questions.see_examples")} ${question.insight_type}`}</div>
-        </a>
+        </MuiLink>
       )}
       <Divider />
       <Box flexGrow={1} flexShrink={1} sx={{ height: 0, marginBottom: 1 }}>
