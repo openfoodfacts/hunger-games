@@ -11,6 +11,7 @@ import {
   QuestionsPage,
   InsightsPage,
   NotFoundPage,
+  NutriscoreValidator,
   Home,
 } from "./pages";
 import ResponsiveAppBar from "./components/ResponsiveAppBar";
@@ -39,6 +40,8 @@ export default function App() {
             <Route path="/questions" element={<QuestionsPage />} />
             <Route path="/insights" element={<InsightsPage />} />
             <Route path="*" element={<NotFoundPage />} />
+
+            <Route path="/nutriscore" element={<NutriscoreValidator />} />
           </Routes>
         </DevModeContext.Provider>
       </ThemeProvider>
