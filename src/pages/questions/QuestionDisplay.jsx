@@ -19,17 +19,17 @@ import { NO_QUESTION_LEFT, OFF_URL } from "../../const";
 import { reformatValueTag } from "../../utils";
 import { Box } from "@mui/system";
 
-const getFullSizeImage = (src) => {
-  if (!src) {
-    return "https://static.openfoodfacts.org/images/image-placeholder.png";
-  }
-  const needsFull = /\/[a-z_]+.[0-9]*.400.jpg$/gm.test(src);
+// const getFullSizeImage = (src) => {
+//   if (!src) {
+//     return "https://static.openfoodfacts.org/images/image-placeholder.png";
+//   }
+//   const needsFull = /\/[a-z_]+.[0-9]*.400.jpg$/gm.test(src);
 
-  if (needsFull) {
-    return src.replace("400.jpg", "full.jpg");
-  }
-  return src.replace("400.jpg", "jpg");
-};
+//   if (needsFull) {
+//     return src.replace("400.jpg", "full.jpg");
+//   }
+//   return src.replace("400.jpg", "jpg");
+// };
 
 const getValueTagQuestionsURL = (question) => {
   if (
@@ -102,7 +102,12 @@ const QuestionDisplay = ({ question, answerQuestion }) => {
       <Box flexGrow={1} flexShrink={1} sx={{ height: 0, marginBottom: 1 }}>
         <Zoom wrapStyle={{ height: "100%" }}>
           <img
-            src={getFullSizeImage(question.source_image_url)}
+            // TODO: use getFullSizeImage when the zoom is activated
+            // src={getFullSizeImage(question.source_image_url)}
+            src={
+              question.source_image_url ||
+              "https://static.openfoodfacts.org/images/image-placeholder.png"
+            }
             alt=""
             style={{ maxWidth: "100%", maxHeight: "100%" }}
           />
