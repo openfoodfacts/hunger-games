@@ -51,15 +51,35 @@ export const localFavorites = {
     if (!this.mem.questions) {
       this.mem.questions = [];
     }
-    const questionIndex = this.mem.questions.indexOf(
+
+    const questionIndex = this.mem.questions.findIndex(
       ({ filterState: memFilterState }) => isEqual(memFilterState, filterState)
     );
+
     if (questionIndex < 0) {
-      this.mem.questions.push({ filterState, imageSrc, title });
+      let defaultiszedTitle = title;
+      if (!title) {
+        const usedTitles = this.mem.questions.map((q) => q.title);
+        defaultiszedTitle = "saved filter";
+        let counter = 0;
+
+        while (usedTitles.includes(defaultiszedTitle)) {
+          counter += 1;
+          defaultiszedTitle = `saved filter ${counter}`;
+        }
+      }
+      this.mem.questions.push({
+        filterState,
+        imageSrc,
+        title: defaultiszedTitle,
+      });
     } else {
-      this.mem.questions[questionIndex] = { filterState, imageSrc, title };
+      this.mem.questions[questionIndex] = {
+        filterState,
+        imageSrc: imageSrc || this.mem.questions[questionIndex].imageSrc,
+        title: title || this.mem.questions[questionIndex].title,
+      };
     }
-    console.log(this.mem);
     this.save(this.mem);
   },
   removeQuestion: function (filterState) {

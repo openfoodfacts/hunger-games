@@ -9,14 +9,23 @@ import Badge from "@mui/material/Badge";
 import Link from "@mui/material/Link";
 import Stack from "@mui/material/Stack";
 import Chip from "@mui/material/Chip";
+import TextField from "@mui/material/TextField";
+import { Box, IconButton } from "@mui/material";
+
+import EditIcon from "@mui/icons-material/Edit";
+import DoneIcon from "@mui/icons-material/Done";
+import ClearIcon from "@mui/icons-material/Clear";
 
 import robotoff from "../robotoff";
+import { localFavorites } from "../localeStorageManager";
+import logo from "../assets/logo.png";
 import { reformatValueTag } from "../utils";
 import { getQuestionSearchParams } from "./QuestionFilter";
 import { useTranslation } from "react-i18next";
 
 const QuestionCard = (props) => {
-  const { filterState, imageSrc, title, showFilterResume } = props;
+  const { filterState, imageSrc, title, showFilterResume, editableTitle } =
+    props;
   const {
     sortByPopularity,
     insightType,
@@ -53,6 +62,24 @@ const QuestionCard = (props) => {
     };
   }, [sortByPopularity, insightType, valueTag, brandFilter, countryFilter]);
 
+  const [isEditMode, setIsEditMode] = React.useState(false);
+  const [innerTitle, setInnerTitle] = React.useState(title);
+  React.useEffect(() => {
+    setInnerTitle(title);
+  }, [title]);
+
+  const startEdition = () => {
+    setIsEditMode(true);
+  };
+  const validateEdition = () => {
+    localFavorites.addQuestion(filterState, imageSrc, innerTitle);
+
+    setIsEditMode(false);
+  };
+  const stopEdition = () => {
+    setInnerTitle(title);
+    setIsEditMode(false);
+  };
   return (
     <Badge
       sx={{
@@ -72,22 +99,65 @@ const QuestionCard = (props) => {
           : "success"
       }
     >
-      <Card sx={{ width: 300, height: 370 }}>
-        <CardActionArea
-          component={Link}
-          disabled={!questionNumber}
-          href={targetUrl}
-        >
+      <Card sx={{ width: 350 }}>
+        <CardContent>
+          <Stack spacing={1} direction="row" alignItems="center">
+            {isEditMode ? (
+              <>
+                <TextField
+                  variant="standard"
+                  value={innerTitle}
+                  fullWidth
+                  onChange={(event) => {
+                    setInnerTitle(event.target.value);
+                  }}
+                  autoFocus
+                />
+                <IconButton onClick={validateEdition}>
+                  <DoneIcon />
+                </IconButton>
+                <IconButton onClick={stopEdition}>
+                  <ClearIcon />
+                </IconButton>
+              </>
+            ) : (
+              <>
+                <Typography fullWidth>{innerTitle}</Typography>
+                {editableTitle && (
+                  <IconButton
+                    onClick={(event) => {
+                      startEdition();
+                      event.stopPropagation();
+                    }}
+                  >
+                    <EditIcon />
+                  </IconButton>
+                )}
+              </>
+            )}
+          </Stack>
+        </CardContent>
+        <CardActionArea component={Link} href={targetUrl}>
           <CardMedia
             component="img"
-            height="300"
-            image={imageSrc}
+            height="200"
+            image={imageSrc || logo}
             alt=""
             sx={{ objectFit: "contain" }}
           />
           <CardContent>
             {showFilterResume && (
-              <Stack direction="row" flexWrap="wrap">
+              <Box
+                spacing={1}
+                sx={{
+                  mt: 1,
+                  display: "flex",
+                  flexDirection: "row",
+                  flexWrap: "wrap",
+                  justifyContent: "flex-start",
+                  "& .MuiChip-root": { mr: 1, mt: 0.5 },
+                }}
+              >
                 {filterState?.insightType && (
                   <Chip
                     size="small"
@@ -126,11 +196,8 @@ const QuestionCard = (props) => {
                     label={`${t("questions.filters.short_label.popularity")}`}
                   />
                 )}
-              </Stack>
+              </Box>
             )}
-            <Typography gutterBottom variant="h5" component="div">
-              {title}
-            </Typography>
           </CardContent>
         </CardActionArea>
       </Card>
