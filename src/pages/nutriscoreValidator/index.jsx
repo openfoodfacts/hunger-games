@@ -32,6 +32,7 @@ export default function NutriscoreValidator() {
     if (nutriscoreGrade === newGrade) {
       return;
     }
+    setSelectedIds([]);
     setNutriscoreGrade(newGrade);
     setFilterState((prevState) => ({
       ...prevState,
@@ -115,6 +116,7 @@ export default function NutriscoreValidator() {
             selectedIds.forEach((insight_id) =>
               answerQuestion({ value: 0, insightId: insight_id })
             );
+            setSelectedIds([]);
           }}
           fullWidth
         >
@@ -129,6 +131,7 @@ export default function NutriscoreValidator() {
             selectedIds.forEach((insight_id) =>
               answerQuestion({ value: 1, insightId: insight_id })
             );
+            setSelectedIds([]);
           }}
           fullWidth
         >
