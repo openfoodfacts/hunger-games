@@ -122,7 +122,7 @@ const QuestionCard = (props) => {
               </>
             ) : (
               <>
-                <Typography fullWidth>{innerTitle}</Typography>
+                <Typography>{innerTitle}</Typography>
                 {editableTitle && (
                   <IconButton
                     onClick={(event) => {
