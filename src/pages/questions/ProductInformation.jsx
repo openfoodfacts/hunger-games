@@ -24,14 +24,14 @@ const getImagesUrls = (images, barcode) => {
   const formattedCode = offService.getFormatedBarcode(barcode);
   const rootImageUrl = offService.getImageUrl(formattedCode);
   return Object.keys(images)
-    .filter((key) => key)
+    .filter((key) => !isNaN(key))
     .map((key) => `${rootImageUrl}/${key}.jpg`);
 };
 
 const ProductInformation = ({ question }) => {
   const { t } = useTranslation();
   const [productData, setProductData] = React.useState({});
-  const [hideImages, setHideImages] = React.useState(false);
+  const [hideImages, setHideImages] = React.useState(true);
 
   React.useEffect(() => {
     if (!question?.barcode) {
