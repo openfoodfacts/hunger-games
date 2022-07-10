@@ -6,7 +6,7 @@ import { reformatValueTag } from "../../utils";
 const PAGE_SIZE = 10;
 const BUFFER_THRESHOLD = 5;
 
-const loadQuestions = async (filterState, page = 1) => {
+const loadQuestions = async (filterState, page = 1, pageSize = PAGE_SIZE) => {
   const {
     insightType,
     brandFilter,
@@ -21,7 +21,7 @@ const loadQuestions = async (filterState, page = 1) => {
     valueTag,
     reformatValueTag(brandFilter),
     countryFilter !== "en:world" ? countryFilter : null,
-    PAGE_SIZE,
+    pageSize,
     page
   );
   const isLastPage = PAGE_SIZE * page > dataFetched.count;
@@ -107,13 +107,11 @@ function reducer(state, action) {
   }
 }
 
-export const useQuestionBuffer = ({
-  sortByPopularity,
-  insightType,
-  valueTag,
-  brandFilter,
-  countryFilter,
-}) => {
+export const useQuestionBuffer = (
+  { sortByPopularity, insightType, valueTag, brandFilter, countryFilter },
+  pageSize,
+  bufferThreshold = BUFFER_THRESHOLD
+) => {
   const [bufferState, dispatch] = React.useReducer(reducer, initialState);
   const seenInsight = React.useRef([]);
   const isLoadingRef = React.useRef(false);
@@ -155,11 +153,11 @@ export const useQuestionBuffer = ({
   React.useEffect(() => {
     let filterIsStillValid = true;
     if (
-      bufferState.questions.length < BUFFER_THRESHOLD &&
+      bufferState.questions.length < bufferThreshold &&
       !isLoadingRef.current
     ) {
       isLoadingRef.current = true;
-      loadQuestions(filteringRef.current, bufferState.page)
+      loadQuestions(filteringRef.current, bufferState.page, pageSize)
         .then(({ isLastPage, questions, availableQuestionsNb }) => {
           if (filterIsStillValid) {
             const filteredQuestions = questions.filter(
@@ -193,7 +191,12 @@ export const useQuestionBuffer = ({
       filterIsStillValid = false;
       isLoadingRef.current = false;
     };
-  }, [bufferState.questions.length, bufferState.page]);
+  }, [
+    bufferState.questions.length,
+    bufferState.page,
+    pageSize,
+    bufferThreshold,
+  ]);
 
   return {
     answerQuestion,

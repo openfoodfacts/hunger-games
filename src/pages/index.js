@@ -8,3 +8,6 @@ export { default as NotFoundPage } from "./not-found";
 export { default as LogoAnnotationPage } from "./logos/LogoAnnotation";
 export { default as LogoSearchPage } from "./logos/LogoSearch";
 export { default as LogoUpdatePage } from "./logos/LogoUpdate";
+
+// experimental
+export { default as NutriscoreValidator } from "./nutriscoreValidator";
