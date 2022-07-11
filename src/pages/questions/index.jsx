@@ -42,6 +42,18 @@ export default function Questions() {
       <Grid item sm={12} md={2}>
         <UserData remainingQuestionNb={remainingQuestionNb} answers={answers} />
       </Grid>
+      {/* pre-fetch images of the next question */}
+      {buffer
+        .slice(1, 5)
+        .map((q) =>
+          q.source_image_url ? (
+            <link
+              rel="prefetch"
+              key={q.source_image_url}
+              href={q.source_image_url}
+            />
+          ) : null
+        )}
     </Grid>
   );
 }
