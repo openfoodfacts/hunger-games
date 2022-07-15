@@ -11,6 +11,7 @@ import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import ListSubheader from "@mui/material/ListSubheader";
 import MuiLink from "@mui/material/Link";
+import SettingsIcon from '@mui/icons-material/Settings';
 
 
 import DevModeContext from "../contexts/devMode";
@@ -82,7 +83,7 @@ const ResponsiveAppBar = () => {
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
               sx={{
-                display: { xs: "block", md: "none" },
+                display: { xs: "block", md: "none"},
               }}
             >
               {displayedPages.map((page) =>
@@ -123,15 +124,20 @@ const ResponsiveAppBar = () => {
           >
             Hunger Games
           </Typography>
-
           {/* Desktop content */}
           <Box
             sx={{
               display: { xs: "none", md: "flex" },
               flexDirection: "row",
-              alignItems: "baseline",
+              alignItems: "center",
+              width: '100%',
+              justifyContent: 'space-between'
             }}
           >
+            <Box sx={{
+              display: { xs: "none", md: "flex" },
+              flexDirection: "row",
+            }}>
             <MuiLink
               sx={{ mr: 1, display: "flex", alignSelf: 'center'}}
               href="https://world.openfoodfacts.org/"
@@ -160,17 +166,18 @@ const ResponsiveAppBar = () => {
             >
               Hunger Games
             </Typography>
+            </Box>
             <Box sx={{ display: "flex" }}>
               {displayedPages.map((page) =>
                 page.url ? (
                   <Button
                     key={page.url}
                     onClick={handleCloseNavMenu}
-                    sx={{ my: 2, color: "white"}}
+                    sx={{ my: 2, color: "white", justifyContent: 'flex-end'}}
                     component={Link}
                     to={`/${page.url}`}
                   >
-                    {t(page.translationKey)}
+                    {page.url === 'settings' ? <SettingsIcon /> : t(page.translationKey)}
                   </Button>
                 ) : null
               )}
