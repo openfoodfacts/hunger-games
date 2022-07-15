@@ -12,6 +12,7 @@ import MenuItem from "@mui/material/MenuItem";
 import ListSubheader from "@mui/material/ListSubheader";
 import MuiLink from "@mui/material/Link";
 
+
 import DevModeContext from "../contexts/devMode";
 import logo from "../assets/logo.png";
 import { Link } from "react-router-dom";
@@ -48,11 +49,14 @@ const ResponsiveAppBar = () => {
   );
 
   return (
-    <AppBar position="static">
+    <AppBar position="static" >
       <Container maxWidth={null}>
         <Toolbar disableGutters>
           {/* Mobile content */}
-          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
+          <Box sx={{
+            flexGrow: 1,
+            display: { xs: "flex", md: "none" },
+          }}>
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -112,7 +116,7 @@ const ResponsiveAppBar = () => {
               flexGrow: 1,
               fontFamily: "monospace",
               fontWeight: 700,
-              letterSpacing: ".3rem",
+              letterSpacing: ".3em",
               color: "inherit",
               textDecoration: "none",
             }}
@@ -125,11 +129,11 @@ const ResponsiveAppBar = () => {
             sx={{
               display: { xs: "none", md: "flex" },
               flexDirection: "row",
-              alignItems: "center",
+              alignItems: "baseline",
             }}
           >
             <MuiLink
-              sx={{ mr: 1, display: "flex" }}
+              sx={{ mr: 1, display: "flex", alignSelf: 'center'}}
               href="https://world.openfoodfacts.org/"
               target="_blank"
             >
@@ -162,7 +166,7 @@ const ResponsiveAppBar = () => {
                   <Button
                     key={page.url}
                     onClick={handleCloseNavMenu}
-                    sx={{ my: 2, color: "white", display: "block" }}
+                    sx={{ my: 2, color: "white"}}
                     component={Link}
                     to={`/${page.url}`}
                   >
