@@ -115,8 +115,9 @@ const QuestionDisplay = ({ question, answerQuestion }) => {
       </Box>
       <Stack
         direction="row"
-        justifyContent="space-around"
+        justifyContent="center"
         flexWrap="wrap"
+        gap={'.9em'}
         onKeyDown={(event) => {
           switch (event.key) {
             case "k":

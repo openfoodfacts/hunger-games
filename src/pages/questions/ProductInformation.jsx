@@ -70,7 +70,7 @@ const ProductInformation = ({ question }) => {
   }
 
   return (
-    <Box>
+    <Box >
       {/* Main information about the product */}
       <Typography>{productData?.productName}</Typography>
       <Button
