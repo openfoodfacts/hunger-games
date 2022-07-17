@@ -63,6 +63,24 @@ const QuestionDisplay = ({ question, answerQuestion }) => {
   const valueTagQuestionsURL = getValueTagQuestionsURL(question);
   const valueTagExamplesURL = getValueTagExamplesURL(question);
 
+  React.useEffect(() => {
+    window.addEventListener("keydown", function (event) {
+      switch (event.key) {
+        case "k":
+          answerQuestion({ value: -1, insightId: question.insight_id });
+          break;
+        case "o":
+          answerQuestion({ value: 1, insightId: question.insight_id });
+          break;
+        case "n":
+          answerQuestion({ value: 0, insightId: question.insight_id });
+          break;
+        default:
+          break;
+      }
+    });
+  });
+
   if (question === NO_QUESTION_LEFT) {
     return <p>{t("questions.no_questions_remaining")}</p>;
   }
@@ -113,26 +131,7 @@ const QuestionDisplay = ({ question, answerQuestion }) => {
           />
         </Zoom>
       </Box>
-      <Stack
-        direction="row"
-        justifyContent="space-around"
-        flexWrap="wrap"
-        onKeyDown={(event) => {
-          switch (event.key) {
-            case "k":
-              answerQuestion({ value: -1, insightId: question.insight_id });
-              break;
-            case "o":
-              answerQuestion({ value: 1, insightId: question.insight_id });
-              break;
-            case "n":
-              answerQuestion({ value: 0, insightId: question.insight_id });
-              break;
-            default:
-              break;
-          }
-        }}
-      >
+      <Stack direction="row" justifyContent="space-around" flexWrap="wrap">
         <Button
           onClick={() =>
             answerQuestion({ value: 0, insightId: question.insight_id })
