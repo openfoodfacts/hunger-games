@@ -3,6 +3,7 @@ import * as React from "react";
 import { key2urlParam, DEFAULT_FILTER_STATE } from "./const";
 import { useLocation } from "react-router-dom";
 import { localFavorites } from "../../localeStorageManager";
+import logo from "../../assets/logo.png";
 
 export const getQuestionSearchParams = (filterState) => {
   const urlParams = new URLSearchParams(window.location.search);
@@ -76,13 +77,12 @@ export function useFilterSearch() {
   );
 
   const toggleFavorite = React.useCallback(
-    (imageSrc = "", title = "") => {
+    (imageSrc = logo, title = "") => {
       const isSaved = localFavorites.isSaved(searchParams);
-
       if (isSaved) {
         localFavorites.removeQuestion(searchParams);
       } else {
-        localFavorites.addQuestion(searchParams, imageSrc, title);
+        localFavorites.addQuestion(searchParams, logo, title);
       }
 
       setIsFavorite(!isSaved);
