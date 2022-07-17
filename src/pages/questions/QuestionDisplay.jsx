@@ -57,13 +57,67 @@ const getValueTagExamplesURL = (question) => {
   return "";
 };
 
-const QuestionDisplay = ({ question, answerQuestion }) => {
+const QuestionDisplay = ({ question, answerQuestion, resetFilters }) => {
   const { t } = useTranslation();
   const valueTagQuestionsURL = getValueTagQuestionsURL(question);
   const valueTagExamplesURL = getValueTagExamplesURL(question);
 
   if (question === NO_QUESTION_LEFT) {
-    return <p>{t("questions.no_questions_remaining")}</p>;
+    return (
+      <Stack alignItems="center" spacing={2}>
+        <Stack
+          direction={{ xs: "column", sm: "row" }}
+          alignItems="center"
+          spacing={{ xs: 0, sm: 2 }}
+        >
+          <h2>{t("questions.no_questions_remaining")}</h2>
+          <Button size="small" variant="contained" onClick={resetFilters}>
+            Reset filters
+          </Button>
+        </Stack>
+        <h1>OR</h1>
+        <br />
+        <h2 style={{ textAlign: "center" }}>
+          Install the app and contribute even more
+        </h2>
+        <Stack direction="row" spacing={1}>
+          <a href="https://apps.apple.com/app/open-food-facts/id588797948">
+            <img
+              src="https://world.openfoodfacts.org/images/misc/appstore/black/appstore_US.svg"
+              alt="Appstore"
+              width="140px"
+              height="60px"
+            />
+          </a>
+          <a href="https://play.google.com/store/apps/details?id=org.openfoodfacts.scanner&hl=en">
+            <img
+              src="https://static.openfoodfacts.org/images/misc/google-play-badge-svg-master/img/en_get.svg"
+              alt="Appstore"
+              width="140px"
+              height="60px"
+            />
+          </a>
+        </Stack>
+        <Stack direction="row" spacing={1}>
+          <a href="https://www.microsoft.com/en-us/p/openfoodfacts/9nblggh0dkqr">
+            <img
+              src="	https://world.openfoodfacts.org/images/misc/microsoft/English.svg"
+              alt="Appstore"
+              width="140px"
+              height="60px"
+            />
+          </a>
+          <a href="https://world.openfoodfacts.org/files/off.apk">
+            <img
+              src="https://static.openfoodfacts.org/images/misc/android-apk.svg"
+              alt="Android"
+              width="140px"
+              height="60px"
+            />
+          </a>
+        </Stack>
+      </Stack>
+    );
   }
   if (question === null) {
     return <p>loading</p>;
