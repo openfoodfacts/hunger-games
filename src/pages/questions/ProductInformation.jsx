@@ -10,6 +10,9 @@ import Stack from "@mui/material/Stack";
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 
+import EditIcon from "@mui/icons-material/Edit";
+import VisibilityIcon from "@mui/icons-material/Visibility";
+
 import { useTranslation } from "react-i18next";
 import { NO_QUESTION_LEFT } from "../../const";
 import offService from "../../off";
@@ -21,14 +24,14 @@ const getImagesUrls = (images, barcode) => {
   const formattedCode = offService.getFormatedBarcode(barcode);
   const rootImageUrl = offService.getImageUrl(formattedCode);
   return Object.keys(images)
-    .filter((key) => key)
+    .filter((key) => !isNaN(key))
     .map((key) => `${rootImageUrl}/${key}.jpg`);
 };
 
 const ProductInformation = ({ question }) => {
   const { t } = useTranslation();
   const [productData, setProductData] = React.useState({});
-  const [hideImages, setHideImages] = React.useState(false);
+  const [hideImages, setHideImages] = React.useState(true);
 
   React.useEffect(() => {
     if (!question?.barcode) {
@@ -71,20 +74,27 @@ const ProductInformation = ({ question }) => {
       {/* Main information about the product */}
       <Typography>{productData?.productName}</Typography>
       <Button
+        size="small"
         component={Link}
         target="_blank"
         href={offService.getProductUrl(question.barcode)}
+        variant="outlined"
+        startIcon={<VisibilityIcon />}
       >
         {t("questions.view")}
       </Button>
       <Button
+        size="small"
         component={Link}
         target="_blank"
         href={offService.getProductEditUrl(question.barcode)}
+        variant="contained"
+        sx={{ ml: 2 }}
+        startIcon={<EditIcon />}
       >
         {t("questions.edit")}
       </Button>
-      <Divider />
+      <Divider sx={{ my: 1 }} />
 
       {/* Image display section */}
       <FormControlLabel

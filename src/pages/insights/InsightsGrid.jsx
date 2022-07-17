@@ -8,6 +8,8 @@ import VisibilityIcon from "@mui/icons-material/Visibility";
 import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
 import CancelOutlinedIcon from "@mui/icons-material/CancelOutlined";
 import QuestionMarkOutlinedIcon from "@mui/icons-material/QuestionMarkOutlined";
+import FaceIcon from "@mui/icons-material/Face";
+import SmartToyIcon from "@mui/icons-material/SmartToy";
 
 import Tooltip from "@mui/material/Tooltip";
 import Link from "@mui/material/Link";
@@ -16,6 +18,15 @@ import robotoffService from "../../robotoff";
 import offService from "../../off";
 import { useTranslation } from "react-i18next";
 import { Typography } from "@mui/material";
+
+const RenderLink = (props) => {
+  const { value, ...other } = props;
+  return (
+    <Link component="button" {...other}>
+      {props.value}
+    </Link>
+  );
+};
 
 const getProductUrl = (code) => {
   if (!code) {
@@ -46,6 +57,9 @@ const typeKeyToTranslationKey = {
   category: "insights.category",
   expiration_date: "insights.expiration_date",
   packager_code: "insights.packager_code",
+  brand: "logos.brand",
+  packaging: "logos.packaging",
+  qr_code: "logos.qr_code",
 };
 
 const annotationValueToTranslationKey = {
@@ -100,7 +114,7 @@ const dateTimeColumn = {
   valueGetter: (params) => (params.value ? new Date(params.value) : null),
 };
 
-const columns = [
+const staticColumnsDef = [
   {
     field: "actions",
     type: "actions",
@@ -108,9 +122,9 @@ const columns = [
       <GridActionsCellItem
         component="a"
         href={getProductEditUrl(params.row.barcode)}
-        label="Open product page"
+        label="Open product edit"
         icon={
-          <Tooltip title="Open product page">
+          <Tooltip title="Open product edit">
             <EditIcon />
           </Tooltip>
         }
@@ -118,9 +132,9 @@ const columns = [
       <GridActionsCellItem
         component="a"
         href={getProductUrl(params.row.barcode)}
-        label="Open product edit"
+        label="Open product page"
         icon={
-          <Tooltip title="Open product edit">
+          <Tooltip title="Open product page">
             <VisibilityIcon />
           </Tooltip>
         }
@@ -141,14 +155,16 @@ const columns = [
     renderCell: ({ row }) =>
       row.type && row.value_tag ? (
         <Link href={getQuestionUrl(row.type, row.value_tag)}>
-          {row.value_tag}
+          {row.value_tag} : {row.value}
         </Link>
       ) : (
-        row.value_tag
+        <span>
+          {row.value_tag} : {row.value}
+        </span>
       ),
   },
   { field: "barcode", minWidth: 180, flex: 1, maxWidth: 200 },
-  { field: "id" },
+  { field: "id", flex: 1 },
   { field: "timestamp", ...dateTimeColumn },
   {
     field: "completed_at",
@@ -168,17 +184,49 @@ const columns = [
     minWidth: 70,
     flex: 1,
     maxWidth: 110,
+    renderCell: ({ value }) =>
+      value ? (
+        <Tooltip title="Automatic">
+          <SmartToyIcon color="action" />
+        </Tooltip>
+      ) : (
+        <Tooltip title="Human required">
+          <FaceIcon color="action" />
+        </Tooltip>
+      ),
   },
 ].map((col) => ({ ...col, sortable: false }));
 
 const PAGE_SIZE = 25;
 
-const InsightGrid = ({ filterState = {} }) => {
+const InsightGrid = ({ filterState = {}, setFilterState }) => {
   const { t } = useTranslation();
 
   const [pageState, setPageState] = React.useState({ page: 1, rowCount: 0 });
   const [isLoading, setIsLoading] = React.useState(false);
   const [rows, setRows] = React.useState([]);
+
+  const columns = React.useMemo(() => {
+    return staticColumnsDef.map((col) => {
+      if (col.field !== "barcode") {
+        return col;
+      }
+      return {
+        ...col,
+        renderCell: ({ value, tabIndex }) => {
+          return (
+            <RenderLink
+              value={value}
+              tabIndex={tabIndex}
+              onClick={() => {
+                setFilterState((f) => ({ ...f, barcode: value }));
+              }}
+            />
+          );
+        },
+      };
+    });
+  }, [setFilterState]);
 
   React.useEffect(() => {
     setIsLoading(true);

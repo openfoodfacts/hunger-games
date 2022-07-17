@@ -41,9 +41,9 @@
         "brand": "auchan, danone, herta, ..."
       },
       "actions": {
-        "edit": "Edit Filters",
+        "edit": "Rediger filtre",
         "cancel": "Avbryt",
-        "apply": "Apply"
+        "apply": "Bruk"
       }
     }
   },
@@ -201,5 +201,10 @@
       "close": "close",
       "open": "open history"
     }
+  },
+  "notfound": {
+    "nopage": "Whoops! The page you're looking for can't be found.",
+    "redirect1": "Want to play some games?",
+    "redirect2": "Click here"
   }
 }
