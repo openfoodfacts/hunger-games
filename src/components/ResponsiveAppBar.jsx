@@ -11,6 +11,8 @@ import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import ListSubheader from "@mui/material/ListSubheader";
 import MuiLink from "@mui/material/Link";
+import SettingsIcon from '@mui/icons-material/Settings';
+
 
 import DevModeContext from "../contexts/devMode";
 import logo from "../assets/logo.png";
@@ -48,11 +50,16 @@ const ResponsiveAppBar = () => {
   );
 
   return (
-    <AppBar position="static">
+
+    <AppBar position="static" color="secondary">
+    
       <Container maxWidth={null}>
         <Toolbar disableGutters>
           {/* Mobile content */}
-          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
+          <Box sx={{
+            flexGrow: 1,
+            display: { xs: "flex", md: "none" },
+          }}>
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -78,7 +85,7 @@ const ResponsiveAppBar = () => {
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
               sx={{
-                display: { xs: "block", md: "none" },
+                display: { xs: "block", md: "none"},
               }}
             >
               {displayedPages.map((page) =>
@@ -112,24 +119,29 @@ const ResponsiveAppBar = () => {
               flexGrow: 1,
               fontFamily: "monospace",
               fontWeight: 700,
-              letterSpacing: ".3rem",
+              letterSpacing: ".3em",
               color: "inherit",
               textDecoration: "none",
             }}
           >
             Hunger Games
           </Typography>
-
           {/* Desktop content */}
           <Box
             sx={{
               display: { xs: "none", md: "flex" },
               flexDirection: "row",
               alignItems: "center",
+              width: '100%',
+              justifyContent: 'space-between'
             }}
           >
+            <Box sx={{
+              display: { xs: "none", md: "flex" },
+              flexDirection: "row",
+            }}>
             <MuiLink
-              sx={{ mr: 1, display: "flex" }}
+              sx={{ mr: 1, display: "flex", alignSelf: 'center'}}
               href="https://world.openfoodfacts.org/"
               target="_blank"
             >
@@ -156,17 +168,20 @@ const ResponsiveAppBar = () => {
             >
               Hunger Games
             </Typography>
+            </Box>
             <Box sx={{ display: "flex" }}>
               {displayedPages.map((page) =>
                 page.url ? (
                   <Button
+                    color="inherit"
                     key={page.url}
                     onClick={handleCloseNavMenu}
-                    sx={{ my: 2, color: "white", display: "block" }}
+
+                    sx={{ my: 2, color: "white", justifyContent: 'flex-end'}}
                     component={Link}
                     to={`/${page.url}`}
                   >
-                    {t(page.translationKey)}
+                    {page.url === 'settings' ? <SettingsIcon /> : t(page.translationKey)}
                   </Button>
                 ) : null
               )}

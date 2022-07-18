@@ -70,7 +70,7 @@ const ProductInformation = ({ question }) => {
   }
 
   return (
-    <Box>
+    <Box >
       {/* Main information about the product */}
       <Typography>{productData?.productName}</Typography>
       <Button
@@ -80,6 +80,7 @@ const ProductInformation = ({ question }) => {
         href={offService.getProductUrl(question.barcode)}
         variant="outlined"
         startIcon={<VisibilityIcon />}
+        sx={{ minWidth: 150 }}
       >
         {t("questions.view")}
       </Button>
@@ -89,8 +90,8 @@ const ProductInformation = ({ question }) => {
         target="_blank"
         href={offService.getProductEditUrl(question.barcode)}
         variant="contained"
-        sx={{ ml: 2 }}
         startIcon={<EditIcon />}
+        sx={{ ml: 2, minWidth: 150 }}
       >
         {t("questions.edit")}
       </Button>
@@ -108,7 +109,7 @@ const ProductInformation = ({ question }) => {
         labelPlacement="end"
       />
       {!hideImages && productData?.images && (
-        <Stack spacing={2} direction="row" flexWrap="wrap">
+        <Stack direction="row" flexWrap="wrap" gap='1em'>
           {getImagesUrls(productData.images, question.barcode).map((src) => (
             <Zoom key={src}>
               <img
