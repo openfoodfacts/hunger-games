@@ -5,7 +5,6 @@ import CardMedia from "@mui/material/CardMedia";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import Stack from "@mui/material/Stack";
-import { useTranslation } from "react-i18next";
 import home1 from "../../assets/home1.png";
 import home2 from "../../assets/home2.png";
 import home3 from "../../assets/home3.png";
