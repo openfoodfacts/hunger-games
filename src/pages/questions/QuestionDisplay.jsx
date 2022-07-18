@@ -83,7 +83,7 @@ const QuestionDisplay = ({ question, answerQuestion, resetFilters }) => {
 
     window.addEventListener( 'keydown', handleShortCut)
     return () =>  window.removeEventListener('keydown', handleShortCut)
-  }, [question])
+  }, [question, answerQuestion])
 
   if (question === NO_QUESTION_LEFT) {
     return (
