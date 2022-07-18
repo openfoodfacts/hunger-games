@@ -72,7 +72,7 @@ const QuestionCard = (props) => {
           : "success"
       }
     >
-      <Card sx={{ width: 300, height: 370 }}>
+      <Card sx={{ width: 350, height: 300 }}>
         <CardActionArea
           component={Link}
           disabled={!questionNumber}
@@ -80,7 +80,7 @@ const QuestionCard = (props) => {
         >
           <CardMedia
             component="img"
-            height="300"
+            height="250"
             image={imageSrc}
             alt=""
             sx={{ objectFit: "contain" }}
