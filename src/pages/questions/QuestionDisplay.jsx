@@ -2,13 +2,13 @@ import * as React from "react";
 import { Link } from "react-router-dom";
 
 import Button from "@mui/material/Button";
+import Box from "@mui/material/Box";
 import Divider from "@mui/material/Divider";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 import LinkIcon from "@mui/icons-material/Link";
 import DeleteIcon from "@mui/icons-material/Delete";
 import DoneIcon from "@mui/icons-material/Done";
-import QuestionMarkIcon from "@mui/icons-material/QuestionMark";
 import MuiLink from "@mui/material/Link";
 
 import Zoom from "react-medium-image-zoom";
@@ -17,7 +17,6 @@ import "react-medium-image-zoom/dist/styles.css";
 import { useTranslation } from "react-i18next";
 import { NO_QUESTION_LEFT, OFF_URL } from "../../const";
 import { reformatValueTag } from "../../utils";
-import { Box } from "@mui/system";
 
 // const getFullSizeImage = (src) => {
 //   if (!src) {
@@ -58,7 +57,7 @@ const getValueTagExamplesURL = (question) => {
   return "";
 };
 
-const QuestionDisplay = ({ question, answerQuestion }) => {
+const QuestionDisplay = ({ question, answerQuestion, resetFilters }) => {
   const { t } = useTranslation();
   const valueTagQuestionsURL = getValueTagQuestionsURL(question);
   const valueTagExamplesURL = getValueTagExamplesURL(question);
@@ -87,7 +86,14 @@ const QuestionDisplay = ({ question, answerQuestion }) => {
   }, [question])
 
   if (question === NO_QUESTION_LEFT) {
-    return <p>{t("questions.no_questions_remaining")}</p>;
+    return (
+      <Stack direction="row" alignItems="center" spacing={1}>
+        <p>{t("questions.no_questions_remaining")}</p>
+        <Button size="small" variant="contained" onClick={resetFilters}>
+          Reset filters
+        </Button>
+      </Stack>
+    );
   }
   if (question === null) {
     return <p>loading</p>;
@@ -115,6 +121,7 @@ const QuestionDisplay = ({ question, answerQuestion }) => {
       )}
       {valueTagExamplesURL && (
         <MuiLink
+          variant="body2"
           href={valueTagExamplesURL}
           target="_blank"
           rel="noreferrer"
@@ -143,28 +150,19 @@ const QuestionDisplay = ({ question, answerQuestion }) => {
         justifyContent="center"
         flexWrap="wrap"
         gap={'.9em'}
+
       >
         <Button
           onClick={() =>
             answerQuestion({ value: 0, insightId: question.insight_id })
           }
-          startIcon={<DeleteIcon />}
           color="error"
           variant="contained"
           size="large"
+          sx={{ display: "flex", flexDirection: "column", flexGrow: 1 }}
         >
+          <DeleteIcon />
           {t("questions.no")} (n)
-        </Button>
-        <Button
-          onClick={() =>
-            answerQuestion({ value: -1, insightId: question.insight_id })
-          }
-          startIcon={<QuestionMarkIcon />}
-          variant="contained"
-          size="large"
-          autoFocus
-        >
-          {t("questions.skip")} (k)
         </Button>
         <Button
           onClick={() =>
@@ -174,10 +172,22 @@ const QuestionDisplay = ({ question, answerQuestion }) => {
           color="success"
           variant="contained"
           size="large"
+          sx={{ display: "flex", flexDirection: "column", flexGrow: 1 }}
         >
           {t("questions.yes")} (o)
         </Button>
       </Stack>
+      <Button
+        onClick={() =>
+          answerQuestion({ value: -1, insightId: question.insight_id })
+        }
+        color="secondary"
+        variant="contained"
+        size="medium"
+        autoFocus
+      >
+        {t("questions.skip")} (k)
+      </Button>
     </Stack>
   );
 };

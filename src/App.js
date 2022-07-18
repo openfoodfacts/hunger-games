@@ -18,7 +18,31 @@ import ResponsiveAppBar from "./components/ResponsiveAppBar";
 import DevModeContext from "./contexts/devMode";
 import { getIsDevMode } from "./localeStorageManager";
 
-const theme = createTheme({});
+const theme = createTheme({
+  palette: {
+    success: {
+      main: "#8bc34a",
+      contrastText: "#ffffff",
+    },
+    error: {
+      main: "#ff5252",
+      contrastText: "#ffffff",
+    },
+    primary: {
+      main: "#ff8714",
+      contrastText: "#ffffff",
+    },
+    secondary: {
+      main: "#ffefb7",
+      contrastText: "rgba(0, 0, 0, 0.87)",
+    },
+  },
+  components: {
+    MuiLink: {
+      defaultProps: { color: "inherit" },
+    },
+  },
+});
 
 export default function App() {
   const [devMode, setDevMode] = React.useState(getIsDevMode);

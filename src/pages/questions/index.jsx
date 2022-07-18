@@ -19,6 +19,15 @@ export default function Questions() {
     useQuestionBuffer(filterState);
   const question = buffer[0] ?? null;
 
+  const resetFilters = React.useCallback(
+    () =>
+      setFilterState((prevState) => ({
+        insightType: prevState.insightType,
+        sortByPopularity: prevState.sortByPopularity,
+      })),
+    [setFilterState]
+  );
+
   return (
     <Grid container spacing={2} p={2}>
       <Grid item sm={12} md={5}>
@@ -33,6 +42,7 @@ export default function Questions() {
           <QuestionDisplay
             question={question}
             answerQuestion={answerQuestion}
+            resetFilters={resetFilters}
           />
         </Stack>
       </Grid>

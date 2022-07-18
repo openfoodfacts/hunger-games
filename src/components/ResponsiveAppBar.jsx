@@ -50,7 +50,9 @@ const ResponsiveAppBar = () => {
   );
 
   return (
-    <AppBar position="static" >
+
+    <AppBar position="static" color="secondary">
+    
       <Container maxWidth={null}>
         <Toolbar disableGutters>
           {/* Mobile content */}
@@ -171,8 +173,10 @@ const ResponsiveAppBar = () => {
               {displayedPages.map((page) =>
                 page.url ? (
                   <Button
+                    color="inherit"
                     key={page.url}
                     onClick={handleCloseNavMenu}
+
                     sx={{ my: 2, color: "white", justifyContent: 'flex-end'}}
                     component={Link}
                     to={`/${page.url}`}
