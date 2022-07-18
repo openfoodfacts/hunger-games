@@ -32,7 +32,6 @@ const content = [
 ];
 
 const HomeCard = () => {
-  const { t } = useTranslation();
   return (
     <Stack
       spacing={3}
