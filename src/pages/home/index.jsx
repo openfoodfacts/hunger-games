@@ -6,6 +6,7 @@ import Box from "@mui/material/Box";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 
+import HomeCard from "./homeCards";
 import QuestionCard from "../../components/QuestionCard";
 import { localFavorites } from "../../localeStorageManager";
 import Divider from "@mui/material/Divider";
