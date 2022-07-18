@@ -4,6 +4,7 @@ import Box from "@mui/material/Box";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 
+import HomeCard from "./homeCards";
 import QuestionCard from "../../components/QuestionCard";
 import { localFavorites } from "../../localeStorageManager";
 
@@ -13,11 +14,11 @@ const Home = () => {
   });
 
   return (
-    <Box sx={{ p: 2 }}>
-      <Typography>Home</Typography>
-      <Stack spacing={4} flexWrap="wrap" direction="row">
+    <Box sx={{ p: 2, alignItems:"center" }}>
+      <HomeCard/>
+      <Stack spacing={4} flexWrap="wrap" direction={{xs:"column",sm:"row"}} alignItems="center">
         {savedQuestions.map((props) => (
-          <Box sx={{ marginBottom: 5 }} key={props.title}>
+          <Box key={props.title}>
             <QuestionCard showFilterResume {...props} />
           </Box>
         ))}
