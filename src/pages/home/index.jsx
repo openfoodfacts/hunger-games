@@ -7,14 +7,16 @@ import Typography from "@mui/material/Typography";
 import HomeCard from "./homeCards";
 import QuestionCard from "../../components/QuestionCard";
 import { localFavorites } from "../../localeStorageManager";
-import { Button } from "@mui/material";
+import { Button, Modal } from "@mui/material";
 
 const Home = () => {
   const [savedQuestions] = React.useState(() => {
     return localFavorites.fetch().questions ?? [];
   });
   const size = Object.keys(savedQuestions).length;
-
+  const [open, setOpen] = React.useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
   return (
     <>
       <Box sx={{ p: 2, alignItems: "center" }}>
@@ -101,6 +103,49 @@ const Home = () => {
           </Stack>
         </Stack>
       </Box>
+      <Box textAlign="center">
+        <Button
+          onClick={handleOpen}
+          sx={{
+            margin: "20px auto",
+          }}
+        >
+          Learn why your contribution matters
+        </Button>
+      </Box>
+      <Modal
+        open={open}
+        onClose={handleClose}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+      >
+        <Box
+        width={{xs:"90%",sm:"50%"}}
+          sx={{
+            backgroundColor: "#1a76d2",
+            color: "#e6e6e6",
+            position: "absolute",
+            left: "50%",
+            top: "50%",
+            transform: "translate(-50%, -50%)",
+            padding: "20px",
+          }}
+        >
+          <Typography id="modal-modal-title" variant="h6" component="h2" fontWeight={700}>
+            Your contribution matters
+          </Typography>
+          <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+            Hunger Games is an effort to leverage the results of our OCR. When
+            you use Hunger Games by Open Food Facts, you improve our entire
+            database which helps the community make better food choices. We
+            gathers your annotations and use them to make Open Food Facts more
+            accurate and effecient. <br />
+            <br />
+            Thank you for helping us improve Open Food Facts so that more people
+            can use it easily.
+          </Typography>
+        </Box>
+      </Modal>
     </>
   );
 };
