@@ -63,12 +63,37 @@ const QuestionDisplay = ({ question, answerQuestion }) => {
   const valueTagQuestionsURL = getValueTagQuestionsURL(question);
   const valueTagExamplesURL = getValueTagExamplesURL(question);
 
+  React.useEffect(() => {
+
+    function handleShortCut(event) {
+      if (question) {
+        switch (event.key) {
+          case "k":
+            answerQuestion({ value: -1, insightId: question.insight_id });
+            break;
+          case "o":
+            answerQuestion({ value: 1, insightId: question.insight_id });
+            break;
+          case "n":
+            answerQuestion({ value: 0, insightId: question.insight_id });
+            break;
+          default:
+            break;
+        }
+      }}
+
+    window.addEventListener( 'keydown', handleShortCut)
+    return () =>  window.removeEventListener('keydown', handleShortCut)
+  }, [question])
+
   if (question === NO_QUESTION_LEFT) {
     return <p>{t("questions.no_questions_remaining")}</p>;
   }
   if (question === null) {
     return <p>loading</p>;
   }
+
+
   return (
     <Stack
       sx={{
@@ -118,7 +143,7 @@ const QuestionDisplay = ({ question, answerQuestion }) => {
         justifyContent="center"
         flexWrap="wrap"
         gap={'.9em'}
-        onKeyDown={(event) => {
+        /*onKeyDown={(event) => {
           switch (event.key) {
             case "k":
               answerQuestion({ value: -1, insightId: question.insight_id });
@@ -132,7 +157,7 @@ const QuestionDisplay = ({ question, answerQuestion }) => {
             default:
               break;
           }
-        }}
+        }}*/
       >
         <Button
           onClick={() =>
