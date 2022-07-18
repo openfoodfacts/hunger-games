@@ -67,14 +67,14 @@ const QuestionDisplay = ({ question, answerQuestion }) => {
 
     function handleShortCut(event) {
       if (question) {
-        switch (event.key) {
-          case "k":
+        switch (event.code) {
+          case "KeyK":
             answerQuestion({ value: -1, insightId: question.insight_id });
             break;
-          case "o":
+          case "KeyO":
             answerQuestion({ value: 1, insightId: question.insight_id });
             break;
-          case "n":
+          case "KeyN":
             answerQuestion({ value: 0, insightId: question.insight_id });
             break;
           default:
