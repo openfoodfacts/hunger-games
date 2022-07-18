@@ -143,21 +143,6 @@ const QuestionDisplay = ({ question, answerQuestion }) => {
         justifyContent="center"
         flexWrap="wrap"
         gap={'.9em'}
-        /*onKeyDown={(event) => {
-          switch (event.key) {
-            case "k":
-              answerQuestion({ value: -1, insightId: question.insight_id });
-              break;
-            case "o":
-              answerQuestion({ value: 1, insightId: question.insight_id });
-              break;
-            case "n":
-              answerQuestion({ value: 0, insightId: question.insight_id });
-              break;
-            default:
-              break;
-          }
-        }}*/
       >
         <Button
           onClick={() =>
