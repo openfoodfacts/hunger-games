@@ -4,6 +4,7 @@
     "label": "label",
     "brand": "brand",
     "brands": "Brands",
+    "insightTypeLabel": "Only shows",
     "ingredients": "साहित्य",
     "product_weight": "product weight",
     "popularity_sort": "Sort by popularity",
@@ -42,7 +43,7 @@
       },
       "actions": {
         "edit": "Edit Filters",
-        "cancel": "Cancel",
+        "cancel": "रद्द करा",
         "apply": "Lagu Kara"
       }
     }
@@ -113,7 +114,7 @@
   "settings": {
     "settings": "सेटिंग्ज",
     "language": "Language",
-    "save": "Save"
+    "save": "जतन करा"
   },
   "helper": {
     "welcome": {
@@ -154,7 +155,7 @@
     },
     "previous": "Prev",
     "next": "Next",
-    "close": "Close"
+    "close": "बंद करा"
   },
   "nutrition": {
     "instructions": {
