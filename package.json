@@ -22,6 +22,7 @@
     "web-vitals": "^2.1.4"
   },
   "devDependencies": {
+    "prettier": "2.7.1",
     "webpack-cli": "^4.9.2"
   },
   "scripts": {
