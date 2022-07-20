@@ -4,6 +4,7 @@
     "label": "eticheta",
     "brand": "marca",
     "brands": "Mărci",
+    "insightTypeLabel": "Only shows",
     "ingredients": "Ingrediente",
     "product_weight": "greutatea produsului",
     "popularity_sort": "Sortați după popularitate",
@@ -203,8 +204,8 @@
     }
   },
   "notfound": {
-    "nopage": "Whoops! The page you're looking for can't be found.",
-    "redirect1": "Want to play some games?",
-    "redirect2": "Click here"
+    "nopage": "Ups! Pagina pe care o cauți nu poate fi găsită.",
+    "redirect1": "Vrei să joci câteva jocuri?",
+    "redirect2": "Click aici"
   }
 }

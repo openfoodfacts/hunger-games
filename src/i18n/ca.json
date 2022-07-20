@@ -4,6 +4,7 @@
     "label": "etiqueta",
     "brand": "marca",
     "brands": "Marques",
+    "insightTypeLabel": "Mostra només",
     "ingredients": "Ingredients",
     "product_weight": "pes del producte",
     "popularity_sort": "Ordena per popularitat",
@@ -203,8 +204,8 @@
     }
   },
   "notfound": {
-    "nopage": "Whoops! The page you're looking for can't be found.",
-    "redirect1": "Want to play some games?",
-    "redirect2": "Click here"
+    "nopage": "No hem pogut trobar la pàgina que cerqueu.",
+    "redirect1": "Vols jugar a alguns jocs?",
+    "redirect2": "Clicau aquí"
   }
 }
