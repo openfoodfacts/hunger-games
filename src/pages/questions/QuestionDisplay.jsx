@@ -66,15 +66,16 @@ const QuestionDisplay = ({ question, answerQuestion, resetFilters }) => {
 
     function handleShortCut(event) {
       const targetId = event.target.id
+
       if (question && targetId !== ':r5:' && targetId !== 'free-solo-demo') {
-        switch (event.code) {
-          case "KeyK":
+        switch (event.keyCode) {
+          case 75:
             answerQuestion({ value: -1, insightId: question.insight_id });
             break;
-          case "KeyO":
+          case 79:
             answerQuestion({ value: 1, insightId: question.insight_id });
             break;
-          case "KeyN":
+          case 78:
             answerQuestion({ value: 0, insightId: question.insight_id });
             break;
           default:
