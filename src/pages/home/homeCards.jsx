@@ -42,9 +42,9 @@ const HomeCards = () => {
       }}
     >
       {content.map((props) => (
-        <a href={props.link} style={{ textDecoration: "none" }}>
-          <Card sx={{ width: 350, height: 300 }} key={props.title}>
-            <CardMedia
+        <Card sx={{ width: 350, height: 300 }} key={props.title}>
+	 <CardActionArea component={Link} href={targetUrl}>
+          <CardMedia
               component="img"
               height="200"
               image={props.image}
