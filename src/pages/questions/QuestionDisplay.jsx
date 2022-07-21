@@ -101,7 +101,7 @@ const QuestionDisplay = ({ question, answerQuestion, resetFilters }) => {
         <Stack direction="row" spacing={1}>
           <a href="https://www.microsoft.com/en-us/p/openfoodfacts/9nblggh0dkqr">
             <img
-              src="	https://world.openfoodfacts.org/images/misc/microsoft/English.svg"
+              src="https://world.openfoodfacts.org/images/misc/microsoft/English.svg"
               alt="Appstore"
               width="140px"
               height="60px"
