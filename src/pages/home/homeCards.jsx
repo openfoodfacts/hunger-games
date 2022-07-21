@@ -30,7 +30,7 @@ const content = [
   },
 ];
 
-const HomeCard = () => {
+const HomeCards = () => {
   return (
     <Stack
       spacing={3}
