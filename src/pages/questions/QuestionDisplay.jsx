@@ -65,7 +65,8 @@ const QuestionDisplay = ({ question, answerQuestion, resetFilters }) => {
   React.useEffect(() => {
 
     function handleShortCut(event) {
-      if (question) {
+      const targetId = event.target.id
+      if (question && targetId !== ':r5:' && targetId !== 'free-solo-demo') {
         switch (event.code) {
           case "KeyK":
             answerQuestion({ value: -1, insightId: question.insight_id });
