@@ -66,8 +66,8 @@ const QuestionDisplay = ({ question, answerQuestion, resetFilters }) => {
 
     function handleShortCut(event) {
       const targetId = event.target.id
-
-      if (question && targetId !== ':r5:' && targetId !== 'free-solo-demo') {
+      const shortCutStop = targetId !== ':r5:' ? targetId !== 'free-solo-demo' : false
+      if (question && shortCutStop) {
         switch (event.keyCode) {
           case 75:
             answerQuestion({ value: -1, insightId: question.insight_id });
