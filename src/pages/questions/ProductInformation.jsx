@@ -28,6 +28,19 @@ const getImagesUrls = (images, barcode) => {
     .map((key) => `${rootImageUrl}/${key}.jpg`);
 };
 
+
+const formatStringArray = (stringArray) => {
+  if (stringArray.length === 0) return ''
+
+  let result = stringArray[0];
+
+  for(let i = 0; i < stringArray.length; i++) {
+    result += ', ' + stringArray[i]
+  }
+
+  return result + '.';
+}
+
 const ProductInformation = ({ question }) => {
   const { t } = useTranslation();
   const [productData, setProductData] = React.useState({});
@@ -132,7 +145,7 @@ const ProductInformation = ({ question }) => {
         {t("questions.ingredients")}: {productData?.ingredientsText}
       </p>
       <p>
-        {t("questions.countries")}: {productData?.countriesTags}
+        {t("questions.countries")}: {!productData?.countriesTags?null:formatStringArray(productData.countriesTags)}
       </p>
       <Divider />
     </Box>
