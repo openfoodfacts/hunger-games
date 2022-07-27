@@ -3,11 +3,8 @@
 Hunger Games is a series of mini-apps that let users contribute data to Open Food Facts, in a rather fun way using React.
 You are very welcome to write the game you want.
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://static.openfoodfacts.org/images/logos/off-logo-horizontal-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://static.openfoodfacts.org/images/logos/off-logo-horizontal-light.svg">
-  <img height="100" src="https://static.openfoodfacts.org/images/logos/off-logo-horizontal-light.svg">
-</picture>
+![Open Food Facts](https://static.openfoodfacts.org/images/logos/off-logo-horizontal-dark.svg#gh-dark-mode-only)
+![Open Food Facts](https://static.openfoodfacts.org/images/logos/off-logo-horizontal-light.svg#gh-light-mode-only)
 
 ## Try it
 
