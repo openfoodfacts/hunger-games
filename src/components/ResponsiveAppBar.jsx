@@ -11,6 +11,7 @@ import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import ListSubheader from "@mui/material/ListSubheader";
 import MuiLink from "@mui/material/Link";
+import SettingsIcon from '@mui/icons-material/Settings';
 
 import DevModeContext from "../contexts/devMode";
 import logo from "../assets/logo.png";
@@ -126,6 +127,15 @@ const ResponsiveAppBar = () => {
               display: { xs: "none", md: "flex" },
               flexDirection: "row",
               alignItems: "center",
+              width: '100%',
+              justifyContent: 'space-between'
+            }}
+          >
+          <Box
+            sx={{
+              display: { xs: "none", md: "flex" },
+              flexDirection: "row",
+              alignItems: "center",
             }}
           >
             <MuiLink
@@ -156,6 +166,7 @@ const ResponsiveAppBar = () => {
             >
               Hunger Games
             </Typography>
+          </Box>
             <Box sx={{ display: "flex" }}>
               {displayedPages.map((page) =>
                 page.url ? (
@@ -167,7 +178,7 @@ const ResponsiveAppBar = () => {
                     component={Link}
                     to={`/${page.url}`}
                   >
-                    {t(page.translationKey)}
+                    {page.url === 'settings' ? <SettingsIcon /> : t(page.translationKey)}
                   </Button>
                 ) : null
               )}
