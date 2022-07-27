@@ -17,6 +17,8 @@ import { useTranslation } from "react-i18next";
 import { NO_QUESTION_LEFT } from "../../const";
 import offService from "../../off";
 
+import { localSettings,localSettingsKeys,getHideImages } from "../../localeStorageManager";
+
 const getImagesUrls = (images, barcode) => {
   if (!images || !barcode) {
     return [];
@@ -44,7 +46,7 @@ const formatStringArray = (stringArray) => {
 const ProductInformation = ({ question }) => {
   const { t } = useTranslation();
   const [productData, setProductData] = React.useState({});
-  const [hideImages, setHideImages] = React.useState(true);
+  const [hideImages, setHideImages] = React.useState(getHideImages);
 
   React.useEffect(() => {
     if (!question?.barcode) {
@@ -74,6 +76,11 @@ const ProductInformation = ({ question }) => {
       isStillValid = false;
     };
   }, [question?.barcode]);
+
+  const handleHideImages = (event) => {
+    setHideImages(event.target.checked);
+    localSettings.update(localSettingsKeys.hideImages, event.target.checked);
+  }
 
   if (!question || question === NO_QUESTION_LEFT) {
     return null;
@@ -115,7 +122,7 @@ const ProductInformation = ({ question }) => {
         control={
           <Checkbox
             checked={hideImages}
-            onChange={(event) => setHideImages(event.target.checked)}
+            onChange={handleHideImages}
           />
         }
         label={t("questions.hide_images")}

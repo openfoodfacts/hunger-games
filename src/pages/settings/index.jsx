@@ -10,7 +10,8 @@ import Switch from "@mui/material/Switch";
 import { useTranslation } from "react-i18next";
 
 import DevModeContext from "../../contexts/devMode";
-import { localSettings } from "../../localeStorageManager";
+import { localSettings,localSettingsKeys } from "../../localeStorageManager";
+
 
 export default function Settings() {
   const { t, i18n } = useTranslation();
@@ -20,12 +21,12 @@ export default function Settings() {
   const { devMode, setDevMode } = React.useContext(DevModeContext);
 
   const handleDevModeChange = (event) => {
-    localSettings.update("devMode", event.target.checked);
+    localSettings.update(localSettingsKeys.isDevMode, event.target.checked);
     setDevMode(event.target.checked);
   };
 
   const handleLangChange = (e) => {
-    localSettings.update("lang", e.target.value);
+    localSettings.update(localSettingsKeys.language, e.target.value);
     i18n.changeLanguage(e.target.value);
     setLanguage(e.target.value);
   };

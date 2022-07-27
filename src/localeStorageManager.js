@@ -2,9 +2,22 @@ import isEqual from "lodash.isequal";
 
 const STORAGE_KEY = "hunger-game-settings";
 
+export const localSettingsKeys = {
+  language: 'lang',
+  isDevMode: 'devMode',
+  hideImages: 'questions_hideImages',
+}
+
+
 export const localSettings = {
   fetch: function () {
-    return JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}");
+    let storedValue = {};
+    
+    try{
+      storedValue = JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}");
+    } catch(e){}
+
+    return (typeof storedValue === 'object')?storedValue:{};
   },
   save: function (settings) {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(settings));
@@ -18,7 +31,13 @@ export const localSettings = {
 
 export const getIsDevMode = () => {
   const settings = localSettings.fetch();
-  return settings.devMode ?? false;
+  return settings[localSettingsKeys.isDevMode] ?? true;
+};
+
+/** Questions page: returns a boolean for hiding the images. Uses local storage.  */
+export const getHideImages = () => {
+  const settings = localSettings.fetch();
+  return settings[localSettingsKeys.hideImages] ?? true;
 };
 
 export const getLang = () => {
@@ -29,7 +48,7 @@ export const getLang = () => {
 
   return (
     urlLanguage ||
-    settings.lang ||
+    settings[localSettingsKeys.language] ||
     (navigator.language || navigator.userLanguage).split("-")[0]
   );
 };
