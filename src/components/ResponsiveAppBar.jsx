@@ -27,7 +27,7 @@ const pages = [
   { url: "eco-score", translationKey: "menu.eco-score" },
   { translationKey: "menu.manage" },
   { url: "insights", translationKey: "menu.insights" },
-  { url: "settings", translationKey: "menu.settings" },
+  // { url: "settings", translationKey: "menu.settings" },
 ];
 
 const ResponsiveAppBar = () => {
@@ -135,11 +135,11 @@ const ResponsiveAppBar = () => {
             sx={{
               display: { xs: "none", md: "flex" },
               flexDirection: "row",
-              alignItems: "center",
+              alignItems: "baseline",
             }}
           >
             <MuiLink
-              sx={{ mr: 1, display: "flex" }}
+              sx={{ mr: 1, display: "flex", alignSelf: 'center' }}
               href="https://world.openfoodfacts.org/"
               target="_blank"
             >
@@ -166,15 +166,14 @@ const ResponsiveAppBar = () => {
             >
               Hunger Games
             </Typography>
-          </Box>
-            <Box sx={{ display: "flex" }}>
+
               {displayedPages.map((page) =>
                 page.url ? (
                   <Button
                     color="inherit"
                     key={page.url}
                     onClick={handleCloseNavMenu}
-                    sx={{ my: 2, display: "block" }}
+                    sx={{ my: 2, display: "block"}}
                     component={Link}
                     to={`/${page.url}`}
                   >
@@ -182,7 +181,18 @@ const ResponsiveAppBar = () => {
                   </Button>
                 ) : null
               )}
-            </Box>
+
+          </Box>
+
+            <Button
+              color="inherit"
+              onClick={handleCloseNavMenu}
+              sx={{ my: 2, display: "block"}}
+              component={Link}
+              to={`/settings`}
+            >
+              <SettingsIcon />
+            </Button>
           </Box>
         </Toolbar>
       </Container>
