@@ -62,6 +62,30 @@ const QuestionDisplay = ({ question, answerQuestion, resetFilters }) => {
   const valueTagQuestionsURL = getValueTagQuestionsURL(question);
   const valueTagExamplesURL = getValueTagExamplesURL(question);
 
+  React.useEffect(() => {
+
+    function handleShortCut(event) {
+      const preventShortCut = event.target.tagName.toUpperCase() === 'INPUT'
+      if (question && !preventShortCut) {
+        switch (event.keyCode) {
+          case 75:
+            answerQuestion({ value: -1, insightId: question.insight_id });
+            break;
+          case 79:
+            answerQuestion({ value: 1, insightId: question.insight_id });
+            break;
+          case 78:
+            answerQuestion({ value: 0, insightId: question.insight_id });
+            break;
+          default:
+            break;
+        }
+      }}
+
+    window.addEventListener( 'keydown', handleShortCut)
+    return () =>  window.removeEventListener('keydown', handleShortCut)
+  }, [question, answerQuestion])
+
   if (question === NO_QUESTION_LEFT) {
     return (
       <Stack direction="row" alignItems="center" spacing={1}>
@@ -125,7 +149,7 @@ const QuestionDisplay = ({ question, answerQuestion, resetFilters }) => {
         justifyContent="center"
         spacing={2}
         sx={{ mb: 1 }}
-        onKeyDown={(event) => {
+        /*onKeyDown={(event) => {
           switch (event.key) {
             case "k":
               answerQuestion({ value: -1, insightId: question.insight_id });
@@ -139,7 +163,7 @@ const QuestionDisplay = ({ question, answerQuestion, resetFilters }) => {
             default:
               break;
           }
-        }}
+        }}*/
       >
         <Button
           onClick={() =>
