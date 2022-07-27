@@ -122,7 +122,7 @@ const ProductInformation = ({ question }) => {
         labelPlacement="end"
       />
       {!hideImages && productData?.images && (
-        <Stack spacing={2} direction="row" flexWrap="wrap">
+        <Stack direction="row" flexWrap="wrap" gap='1em'>
           {getImagesUrls(productData.images, question.barcode).map((src) => (
             <Zoom key={src}>
               <img
