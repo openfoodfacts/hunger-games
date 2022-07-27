@@ -149,21 +149,6 @@ const QuestionDisplay = ({ question, answerQuestion, resetFilters }) => {
         justifyContent="center"
         spacing={2}
         sx={{ mb: 1 }}
-        /*onKeyDown={(event) => {
-          switch (event.key) {
-            case "k":
-              answerQuestion({ value: -1, insightId: question.insight_id });
-              break;
-            case "o":
-              answerQuestion({ value: 1, insightId: question.insight_id });
-              break;
-            case "n":
-              answerQuestion({ value: 0, insightId: question.insight_id });
-              break;
-            default:
-              break;
-          }
-        }}*/
       >
         <Button
           onClick={() =>
