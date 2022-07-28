@@ -6,6 +6,7 @@ import Typography from "@mui/material/Typography";
 import Stack from "@mui/material/Stack";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import Switch from "@mui/material/Switch";
+import MuiLink from "@mui/material/Link";
 
 import { useTranslation } from "react-i18next";
 
@@ -33,7 +34,7 @@ export default function Settings() {
   return (
     <Stack sx={{ my: 5, mx: 2, alignItems: "flex-start" }} spacing={4}>
       <Typography variant="h4" component="h2" sx={{ mb: 5 }}>
-        Settings
+        {t("settings.settings")}
       </Typography>
       <TextField
         select
@@ -58,6 +59,14 @@ export default function Settings() {
           label="Dev Mode"
           labelPlacement="end"
         />
+      </div>
+      <div>
+      <MuiLink
+              href="https://github.com/openfoodfacts/hunger-games/issues"
+              target="_blank"
+            >
+            {t("settings.reportIssue")}
+            </MuiLink>
       </div>
     </Stack>
   );
