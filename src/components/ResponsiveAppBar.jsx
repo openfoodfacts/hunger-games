@@ -27,7 +27,7 @@ const pages = [
   { url: "eco-score", translationKey: "menu.eco-score" },
   { translationKey: "menu.manage" },
   { url: "insights", translationKey: "menu.insights" },
-  { url: "settings", translationKey: "menu.settings" },
+  // { url: "settings", translationKey: "menu.settings" },
 ];
 
 const ResponsiveAppBar = () => {
@@ -131,50 +131,49 @@ const ResponsiveAppBar = () => {
               justifyContent: 'space-between'
             }}
           >
-          <Box
-            sx={{
-              display: { xs: "none", md: "flex" },
-              flexDirection: "row",
-              alignItems: "center",
-            }}
-          >
-            <MuiLink
-              sx={{ mr: 1, display: "flex" }}
-              href="https://world.openfoodfacts.org/"
-              target="_blank"
-            >
-              <img
-                src={logo}
-                width="30px"
-                height="30px"
-                alt="OpenFoodFact logo"
-              />
-            </MuiLink>
-            <Typography
-              variant="h6"
-              noWrap
-              component="a"
-              href="/"
+            <Box
               sx={{
-                mr: 2,
-                fontFamily: "monospace",
-                fontWeight: 700,
-                letterSpacing: ".3rem",
-                color: "inherit",
-                textDecoration: "none",
+                display: { xs: "none", md: "flex" },
+                flexDirection: "row",
+                alignItems: "baseline",
               }}
             >
-              Hunger Games
-            </Typography>
-          </Box>
-            <Box sx={{ display: "flex" }}>
+              <MuiLink
+                sx={{ mr: 1, display: "flex", alignSelf: 'center' }}
+                href="https://world.openfoodfacts.org/"
+                target="_blank"
+              >
+                <img
+                  src={logo}
+                  width="30px"
+                  height="30px"
+                  alt="OpenFoodFact logo"
+                />
+              </MuiLink>
+              <Typography
+                variant="h6"
+                noWrap
+                component="a"
+                href="/"
+                sx={{
+                  mr: 2,
+                  fontFamily: "monospace",
+                  fontWeight: 700,
+                  letterSpacing: ".3rem",
+                  color: "inherit",
+                  textDecoration: "none",
+                }}
+              >
+                Hunger Games
+              </Typography>
+
               {displayedPages.map((page) =>
                 page.url ? (
                   <Button
                     color="inherit"
                     key={page.url}
                     onClick={handleCloseNavMenu}
-                    sx={{ my: 2, display: "block" }}
+                    sx={{ my: 2, display: "block"}}
                     component={Link}
                     to={`/${page.url}`}
                   >
@@ -182,7 +181,18 @@ const ResponsiveAppBar = () => {
                   </Button>
                 ) : null
               )}
+
             </Box>
+
+            <Button
+              color="inherit"
+              onClick={handleCloseNavMenu}
+              sx={{ my: 2, display: "block"}}
+              component={Link}
+              to={`/settings`}
+            >
+              <SettingsIcon />
+            </Button>
           </Box>
         </Toolbar>
       </Container>

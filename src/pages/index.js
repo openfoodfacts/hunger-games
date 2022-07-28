@@ -11,3 +11,4 @@ export { default as LogoUpdatePage } from "./logos/LogoUpdate";
 
 // experimental
 export { default as NutriscoreValidator } from "./nutriscoreValidator";
+export { default as Nutrition } from "./nutrition"
