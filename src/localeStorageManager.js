@@ -31,7 +31,7 @@ export const localSettings = {
 
 export const getIsDevMode = () => {
   const settings = localSettings.fetch();
-  return settings[localSettingsKeys.isDevMode] ?? true;
+  return settings[localSettingsKeys.isDevMode] ?? false;
 };
 
 /** Questions page: returns a boolean for hiding the images. Uses local storage.  */
