@@ -4,15 +4,16 @@ import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import Stack from "@mui/material/Stack";
 import Link from "@mui/material/Link";
-
 import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
 import CancelOutlinedIcon from "@mui/icons-material/CancelOutlined";
+
+import { useTranslation } from "react-i18next";
 
 import offService from "../../off";
 
 const NB_DISPLAYED_QUESTIONS = 30;
-const UserData = (props) => {
-  const { remainingQuestionNb = 0, answers = [] } = props;
+const UserData = ({ remainingQuestionNb = 0, answers = [] }) => {
+  const { t } = useTranslation();
 
   let displayedAnswers = answers.filter(
     (question) => question.validationValue !== -1
@@ -26,7 +27,7 @@ const UserData = (props) => {
   return (
     <Box>
       <Stack spacing={1}>
-        <Typography sx={{ my: 2 }}>Remaining: {remainingQuestionNb}</Typography>
+        <Typography sx={{ my: 2 }}>{t("questions.remaining_annotations")}: {remainingQuestionNb}</Typography>
         {displayedAnswers.map(
           ({ insight_id, barcode, value, insight_type, validationValue }) => (
             <Stack key={insight_id} direction="row">

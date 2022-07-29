@@ -4,6 +4,7 @@
     "label": "етикет",
     "brand": "марка",
     "brands": "Марки",
+    "insightTypeLabel": "Показва само",
     "ingredients": "Съставки",
     "product_weight": "тегло на продукта",
     "popularity_sort": "Сортирай по популярност",
@@ -19,7 +20,7 @@
     "display_images": "Покажи снимките",
     "annotations": "Пояснения",
     "last_annotations": "Последни пояснения",
-    "remaining_annotations": "Остава:",
+    "remaining_annotations": "Remaining questions",
     "annotated_annotations": "Пояснено",
     "filters": {
       "short_label": {
@@ -50,7 +51,7 @@
   "menu": {
     "games": "Игри",
     "questions": "Въпроси",
-    "logos": "Лога",
+    "logos": "Емблеми",
     "manage": "Управление",
     "insights": "Задълбочен анализ",
     "nutritions": "Хранителни стойности",
@@ -129,7 +130,7 @@
         "text2": "Не се колебай да пропуснеш въпрос, ако не си сигурен, има много други"
       },
       "page3": {
-        "title": "Лога",
+        "title": "Емблеми",
         "text1": "Светът на продуктите е пълен с лога. Обясни на нашия ИИ кои са еднакви."
       }
     },
