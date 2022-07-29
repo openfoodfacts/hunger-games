@@ -5,18 +5,15 @@ import TableCell from "@mui/material/TableCell";
 import TableContainer from "@mui/material/TableContainer";
 import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
-import Paper from "@mui/material/Paper";
 import TextField from "@mui/material/TextField";
 import SelectAutoWidth from "./selectComp";
 import { Box } from "@mui/material";
 import Checkbox from "@mui/material/Checkbox";
 
 function createData(
-  name: string,
-  calories: number,
-  fat: number
+  label, property, unit
 ) {
-  return { name, calories, fat };
+  return { label, property, unit };
 }
 
 const nutritions = [{
@@ -29,7 +26,7 @@ const nutritions = [{
 },
   {
     off_nutriment_id: "energy_kcal",
-    label: "Energie (kCal)",
+    label: "Protein",
     value: "",
     unit: 'null',
     quantification: "<",
@@ -37,7 +34,7 @@ const nutritions = [{
   },
   {
     off_nutriment_id: "energy_kcal",
-    label: "Energie (kCal)",
+    label: "Shugar",
     value: "",
     unit: 'null',
     quantification: "<",
@@ -45,7 +42,7 @@ const nutritions = [{
   },
   {
     off_nutriment_id: "energy_kcal",
-    label: "Energie (kCal)",
+    label: "Fat",
     value: "",
     unit: null,
     quantification: "<",
@@ -78,26 +75,28 @@ const rows = nutritions.map(nutrition => {
 
 export default function NutritionTable() {
   return (
-    <TableContainer component={Paper}>
-      <Table sx={{ maxWidth: "300px", width: '30%', border: "5px solid red" }}
+    <TableContainer sx={{margin: 0, maxWidth: "1000px", minWidth: '400px', width: '30%'}}>
+      <Table sx={{  border: "5px solid red"}}
              aria-label="simple table">
         <TableHead>
           <TableRow>
-            <TableCell sx={{ maxWidth: '8em', fontSize: 'large', fontWeight: 'bold', borderRight: '1px solid gray'}}>nutrition.table.value</TableCell>
+            <TableCell sx={{ maxWidth: '8em', fontSize: 'large', fontWeight: 'bold'}}>nutrition.table.value</TableCell>
             <TableCell align="left" sx={{}}>isPresent</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
           {rows.map((row) => (
             <TableRow
-              key={row.name}
+              key={row.label}
               sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
             >
               <TableCell component="th"
-                         scope="row">
-                {row.name}
+                         scope="row"
+                         sx={{border: '5px solid red', width: 10}}
+                >
+                {row.label}
               </TableCell>
-              <TableCell align="left">{row.calories}</TableCell>
+              <TableCell align="left" sx={{border: '5px solid red'}}>{row.property}</TableCell>
             </TableRow>
           ))}
         </TableBody>
