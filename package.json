@@ -22,9 +22,11 @@
     "web-vitals": "^2.1.4"
   },
   "devDependencies": {
+    "prettier": "2.7.1",
     "webpack-cli": "^4.9.2"
   },
   "scripts": {
+    "prettier": "prettier --write .",
     "start": "react-scripts start",
     "countries": "node update-countries.js",
     "build": "npm run build:react && npm run build:bundle",
