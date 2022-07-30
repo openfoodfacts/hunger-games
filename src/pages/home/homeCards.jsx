@@ -1,7 +1,7 @@
 import * as React from "react";
-
 import Card from "@mui/material/Card";
 import CardMedia from "@mui/material/CardMedia";
+import CardActionArea from "@mui/material/CardActionArea";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import Stack from "@mui/material/Stack";
@@ -43,7 +43,7 @@ const HomeCards = () => {
     >
       {content.map((props) => (
         <Card sx={{ width: 350, height: 300 }} key={props.title}>
-	 <CardActionArea component={Link} href={targetUrl}>
+	        <CardActionArea component={props.link} href={props.title}>
           <CardMedia
               component="img"
               height="200"
@@ -64,11 +64,11 @@ const HomeCards = () => {
                 {props.desc}
               </Typography>
             </CardContent>
-          </Card>
-        </a>
+          </CardActionArea>
+        </Card>
       ))}
     </Stack>
   );
 };
 
-export default HomeCard;
+export default HomeCards;
