@@ -43,7 +43,11 @@ const HomeCards = () => {
     >
       {content.map((props) => (
         <Card sx={{ width: 350, height: 300 }} key={props.title}>
+<<<<<<< HEAD
 	        <CardActionArea component={props.link} href={props.title}>
+=======
+	 <CardActionArea component={Link} href={targetUrl}>
+>>>>>>> 24d9569bb0a34e7ae86ea6899954bcc0e8fe7382
           <CardMedia
               component="img"
               height="200"
@@ -64,11 +68,20 @@ const HomeCards = () => {
                 {props.desc}
               </Typography>
             </CardContent>
+<<<<<<< HEAD
           </CardActionArea>
         </Card>
+=======
+          </Card>
+        </a>
+>>>>>>> 24d9569bb0a34e7ae86ea6899954bcc0e8fe7382
       ))}
     </Stack>
   );
 };
 
+<<<<<<< HEAD
 export default HomeCards;
+=======
+export default HomeCard;
+>>>>>>> 24d9569bb0a34e7ae86ea6899954bcc0e8fe7382
