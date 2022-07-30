@@ -121,8 +121,8 @@ const ProductInformation = ({ question }) => {
       {!hideImages && productData?.images && (
         <Grid container rowSpacing={1.5} spacing={1}>
           {getImagesUrls(productData.images, question.barcode).map((src) => (
-            <Grid item >
-            <Zoom key={src}>
+            <Grid item key={src} >
+            <Zoom >
               <img
                 src={src}
                 alt=""
