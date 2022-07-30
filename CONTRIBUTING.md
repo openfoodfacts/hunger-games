@@ -23,13 +23,13 @@ This project and everyone participating in it is governed by the [Open Food Fact
 
 ## Step 2: Git Set Up & Download
 # Clone the repo
-git clone https://github.com/<User-Name>/openfoodfacts-hungergames.git
+git clone https://github.com/<User-Name>/hunger-games.git
 
 # move to the folder
-cd openfoodfacts-hungergames
+cd hunger-games
 
 # Add upstream remote
-git remote add upstream https://github.com/openfoodfacts/openfoodfacts-hungergames.git
+git remote add upstream https://github.com/openfoodfacts/hunger-games.git
 
 # Fetch and merge with upstream/master
 git fetch upstream
