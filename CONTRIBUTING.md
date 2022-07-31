@@ -69,7 +69,7 @@ git merge upstream/master
 git add .
 
 # Commit all changes with appropriate commit message and description
-git commit -m "your-commit-message" -m "your-commit-description"
+git commit -m "your-commit-message"
 
 # Fetch and merge with upstream/master again
 git fetch upstream
