@@ -106,11 +106,13 @@ const QuestionDisplay = ({
     getNbOfQuestionForValue({
       type: question?.insight_type,
       valueTag: question?.value_tag,
-    }).then((nbQuestions) => {
-      if (validRequest) {
-        setNbOfPotentialQuestions(nbQuestions);
-      }
-    });
+    })
+      .then((nbQuestions) => {
+        if (validRequest) {
+          setNbOfPotentialQuestions(nbQuestions);
+        }
+      })
+      .catch(() => {});
 
     return () => {
       validRequest = false;
