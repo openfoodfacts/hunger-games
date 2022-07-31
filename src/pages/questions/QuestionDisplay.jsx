@@ -63,9 +63,8 @@ const QuestionDisplay = ({ question, answerQuestion, resetFilters }) => {
   const valueTagExamplesURL = getValueTagExamplesURL(question);
 
   React.useEffect(() => {
-
     function handleShortCut(event) {
-      const preventShortCut = event.target.tagName.toUpperCase() === 'INPUT'
+      const preventShortCut = event.target.tagName.toUpperCase() === "INPUT";
       if (question && !preventShortCut) {
         switch (event.keyCode) {
           case 75:
@@ -80,11 +79,12 @@ const QuestionDisplay = ({ question, answerQuestion, resetFilters }) => {
           default:
             break;
         }
-      }}
+      }
+    }
 
-    window.addEventListener( 'keydown', handleShortCut)
-    return () =>  window.removeEventListener('keydown', handleShortCut)
-  }, [question, answerQuestion])
+    window.addEventListener("keydown", handleShortCut);
+    return () => window.removeEventListener("keydown", handleShortCut);
+  }, [question, answerQuestion]);
 
   if (question === NO_QUESTION_LEFT) {
     return (
@@ -144,12 +144,7 @@ const QuestionDisplay = ({ question, answerQuestion, resetFilters }) => {
           />
         </Zoom>
       </Box>
-      <Stack
-        direction="row"
-        justifyContent="center"
-        spacing={2}
-        sx={{ mb: 1 }}
-      >
+      <Stack direction="row" justifyContent="center" spacing={2} sx={{ mb: 1 }}>
         <Button
           onClick={() =>
             answerQuestion({ value: 0, insightId: question.insight_id })

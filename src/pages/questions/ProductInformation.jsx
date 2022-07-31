@@ -6,7 +6,7 @@ import Divider from "@mui/material/Divider";
 import Checkbox from "@mui/material/Checkbox";
 import Typography from "@mui/material/Typography";
 import FormControlLabel from "@mui/material/FormControlLabel";
-import Grid from '@mui/material/Grid';
+import Grid from "@mui/material/Grid";
 
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
@@ -14,12 +14,15 @@ import "react-medium-image-zoom/dist/styles.css";
 import EditIcon from "@mui/icons-material/Edit";
 import VisibilityIcon from "@mui/icons-material/Visibility";
 
-
 import { useTranslation } from "react-i18next";
 import { NO_QUESTION_LEFT } from "../../const";
 import offService from "../../off";
 
-import { localSettings,localSettingsKeys,getHideImages } from "../../localeStorageManager";
+import {
+  localSettings,
+  localSettingsKeys,
+  getHideImages,
+} from "../../localeStorageManager";
 
 const getImagesUrls = (images, barcode) => {
   if (!images || !barcode) {
@@ -31,7 +34,6 @@ const getImagesUrls = (images, barcode) => {
     .filter((key) => !isNaN(key))
     .map((key) => `${rootImageUrl}/${key}.jpg`);
 };
-
 
 const ProductInformation = ({ question }) => {
   const { t } = useTranslation();
@@ -70,7 +72,7 @@ const ProductInformation = ({ question }) => {
   const handleHideImages = (event) => {
     setHideImages(event.target.checked);
     localSettings.update(localSettingsKeys.hideImages, event.target.checked);
-  }
+  };
 
   if (!question || question === NO_QUESTION_LEFT) {
     return null;
@@ -109,28 +111,23 @@ const ProductInformation = ({ question }) => {
 
       {/* Image display section */}
       <FormControlLabel
-        control={
-          <Checkbox
-            checked={hideImages}
-            onChange={handleHideImages}
-          />
-        }
+        control={<Checkbox checked={hideImages} onChange={handleHideImages} />}
         label={t("questions.hide_images")}
         labelPlacement="end"
       />
       {!hideImages && productData?.images && (
         <Grid container rowSpacing={1.5} spacing={1}>
           {getImagesUrls(productData.images, question.barcode).map((src) => (
-            <Grid item key={src} >
-            <Zoom >
-              <img
-                src={src}
-                alt=""
-                loading="lazy"
-                style={{ maxWidth: 300, maxHeight: 300 }}
-              />
-            </Zoom>
-              </Grid>
+            <Grid item key={src}>
+              <Zoom>
+                <img
+                  src={src}
+                  alt=""
+                  loading="lazy"
+                  style={{ maxWidth: 300, maxHeight: 300 }}
+                />
+              </Zoom>
+            </Grid>
           ))}
         </Grid>
       )}
@@ -144,7 +141,10 @@ const ProductInformation = ({ question }) => {
         {t("questions.ingredients")}: {productData?.ingredientsText}
       </p>
       <p>
-        {t("questions.countries")}: {!productData?.countriesTags?null:`${productData.countriesTags.join(", ")}.`}
+        {t("questions.countries")}:{" "}
+        {!productData?.countriesTags
+          ? null
+          : `${productData.countriesTags.join(", ")}.`}
       </p>
       <Divider />
     </Box>
