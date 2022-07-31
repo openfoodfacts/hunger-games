@@ -19,12 +19,7 @@ export default function ControllableStates() {
 
   return (
     <div>
-      <ol>
-        {data.map((obj) => (
-          <li key={obj.label}>{obj.label}</li>
-        ))}
-      </ol>
-      <br />
+
       <Autocomplete
         value={null}
         onChange={(event, newValue) => {

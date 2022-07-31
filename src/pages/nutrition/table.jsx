@@ -56,7 +56,6 @@ export default function NutritionTable() {
 
   function onchangeHandler(e) {
     const {value, name} = e.target
-    console.log('value:', value, 'name:', name)
     setNutriments(prevState => prevState.map(
       nutr => {
         return name === nutr.label? {...nutr, value} : nutr
@@ -71,6 +70,7 @@ export default function NutritionTable() {
           alignItems: "center",
           flexDirection: "row"
         }}><TextField id="outlined-basic"
+                      type={'number'}
                       label={nutrition.label}
                       variant="outlined"
                       sx={{ width: "10rem" }}
