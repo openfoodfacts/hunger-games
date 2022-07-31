@@ -6,7 +6,8 @@ import Divider from "@mui/material/Divider";
 import Checkbox from "@mui/material/Checkbox";
 import Typography from "@mui/material/Typography";
 import FormControlLabel from "@mui/material/FormControlLabel";
-import Stack from "@mui/material/Stack";
+import Grid from '@mui/material/Grid';
+
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 
@@ -31,18 +32,6 @@ const getImagesUrls = (images, barcode) => {
     .map((key) => `${rootImageUrl}/${key}.jpg`);
 };
 
-
-const formatStringArray = (stringArray) => {
-  if (stringArray.length === 0) return ''
-
-  let result = stringArray[0];
-
-  for(let i = 0; i < stringArray.length; i++) {
-    result += ', ' + stringArray[i]
-  }
-
-  return result + '.';
-}
 
 const ProductInformation = ({ question }) => {
   const { t } = useTranslation();
@@ -130,9 +119,10 @@ const ProductInformation = ({ question }) => {
         labelPlacement="end"
       />
       {!hideImages && productData?.images && (
-        <Stack direction="row" flexWrap="wrap" gap='1em'>
+        <Grid container rowSpacing={1.5} spacing={1}>
           {getImagesUrls(productData.images, question.barcode).map((src) => (
-            <Zoom key={src}>
+            <Grid item key={src} >
+            <Zoom >
               <img
                 src={src}
                 alt=""
@@ -140,8 +130,9 @@ const ProductInformation = ({ question }) => {
                 style={{ maxWidth: 300, maxHeight: 300 }}
               />
             </Zoom>
+              </Grid>
           ))}
-        </Stack>
+        </Grid>
       )}
 
       {/* Remaining info */}
@@ -153,7 +144,7 @@ const ProductInformation = ({ question }) => {
         {t("questions.ingredients")}: {productData?.ingredientsText}
       </p>
       <p>
-        {t("questions.countries")}: {!productData?.countriesTags?null:formatStringArray(productData.countriesTags)}
+        {t("questions.countries")}: {!productData?.countriesTags?null:`${productData.countriesTags.join(", ")}.`}
       </p>
       <Divider />
     </Box>
