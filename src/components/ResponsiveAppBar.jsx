@@ -11,7 +11,7 @@ import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import ListSubheader from "@mui/material/ListSubheader";
 import MuiLink from "@mui/material/Link";
-import SettingsIcon from '@mui/icons-material/Settings';
+import SettingsIcon from "@mui/icons-material/Settings";
 
 import DevModeContext from "../contexts/devMode";
 import logo from "../assets/logo.png";
@@ -26,7 +26,8 @@ const pages = [
   { url: "logos", translationKey: "menu.logos" },
   { url: "eco-score", translationKey: "menu.eco-score" },
   { translationKey: "menu.manage" },
-  { url: "insights", translationKey: "menu.insights" },
+  { url: "insights", translationKey: "menu.insights", devModeOnly: true },
+  { url: "nutriscore", translationKey: "menu.nutriscore", devModeOnly: true },
   // { url: "settings", translationKey: "menu.settings" },
 ];
 
@@ -44,9 +45,7 @@ const ResponsiveAppBar = () => {
 
   const { devMode: isDevMode } = React.useContext(DevModeContext);
 
-  const displayedPages = pages.filter(
-    (page) => page.url !== "insights" || isDevMode
-  );
+  const displayedPages = pages.filter((page) => !page.devModeOnly || isDevMode);
 
   return (
     <AppBar position="static" color="secondary">
@@ -127,45 +126,45 @@ const ResponsiveAppBar = () => {
               display: { xs: "none", md: "flex" },
               flexDirection: "row",
               alignItems: "center",
-              width: '100%',
-              justifyContent: 'space-between'
+              width: "100%",
+              justifyContent: "space-between",
             }}
           >
-          <Box
-            sx={{
-              display: { xs: "none", md: "flex" },
-              flexDirection: "row",
-              alignItems: "baseline",
-            }}
-          >
-            <MuiLink
-              sx={{ mr: 1, display: "flex", alignSelf: 'center' }}
-              href="https://world.openfoodfacts.org/"
-              target="_blank"
-            >
-              <img
-                src={logo}
-                width="30px"
-                height="30px"
-                alt="OpenFoodFact logo"
-              />
-            </MuiLink>
-            <Typography
-              variant="h6"
-              noWrap
-              component="a"
-              href="/"
+            <Box
               sx={{
-                mr: 2,
-                fontFamily: "monospace",
-                fontWeight: 700,
-                letterSpacing: ".3rem",
-                color: "inherit",
-                textDecoration: "none",
+                display: { xs: "none", md: "flex" },
+                flexDirection: "row",
+                alignItems: "baseline",
               }}
             >
-              Hunger Games
-            </Typography>
+              <MuiLink
+                sx={{ mr: 1, display: "flex", alignSelf: "center" }}
+                href="https://world.openfoodfacts.org/"
+                target="_blank"
+              >
+                <img
+                  src={logo}
+                  width="30px"
+                  height="30px"
+                  alt="OpenFoodFact logo"
+                />
+              </MuiLink>
+              <Typography
+                variant="h6"
+                noWrap
+                component="a"
+                href="/"
+                sx={{
+                  mr: 2,
+                  fontFamily: "monospace",
+                  fontWeight: 700,
+                  letterSpacing: ".3rem",
+                  color: "inherit",
+                  textDecoration: "none",
+                }}
+              >
+                Hunger Games
+              </Typography>
 
               {displayedPages.map((page) =>
                 page.url ? (
@@ -173,21 +172,24 @@ const ResponsiveAppBar = () => {
                     color="inherit"
                     key={page.url}
                     onClick={handleCloseNavMenu}
-                    sx={{ my: 2, display: "block"}}
+                    sx={{ my: 2, display: "block" }}
                     component={Link}
                     to={`/${page.url}`}
                   >
-                    {page.url === 'settings' ? <SettingsIcon /> : t(page.translationKey)}
+                    {page.url === "settings" ? (
+                      <SettingsIcon />
+                    ) : (
+                      t(page.translationKey)
+                    )}
                   </Button>
                 ) : null
               )}
-
-          </Box>
+            </Box>
 
             <Button
               color="inherit"
               onClick={handleCloseNavMenu}
-              sx={{ my: 2, display: "block"}}
+              sx={{ my: 2, display: "block" }}
               component={Link}
               to={`/settings`}
             >
