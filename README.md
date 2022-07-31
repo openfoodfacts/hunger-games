@@ -31,8 +31,6 @@ The main goal is: Every OpenFoodFact user can annotate products in a few minutes
 - Install libraries `yarn install`
 - run the project locally `yarn start` (available on http://localhost:3000)
 
-To test the ingredients parts, add `?type=ingredients` to the URL
-
 ## Libraries:
 
 - React

@@ -6,11 +6,13 @@ import Typography from "@mui/material/Typography";
 import Stack from "@mui/material/Stack";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import Switch from "@mui/material/Switch";
+import MuiLink from "@mui/material/Link";
 
 import { useTranslation } from "react-i18next";
 
 import DevModeContext from "../../contexts/devMode";
-import { localSettings } from "../../localeStorageManager";
+import { localSettings,localSettingsKeys } from "../../localeStorageManager";
+
 
 export default function Settings() {
   const { t, i18n } = useTranslation();
@@ -20,12 +22,12 @@ export default function Settings() {
   const { devMode, setDevMode } = React.useContext(DevModeContext);
 
   const handleDevModeChange = (event) => {
-    localSettings.update("devMode", event.target.checked);
+    localSettings.update(localSettingsKeys.isDevMode, event.target.checked);
     setDevMode(event.target.checked);
   };
 
   const handleLangChange = (e) => {
-    localSettings.update("lang", e.target.value);
+    localSettings.update(localSettingsKeys.language, e.target.value);
     i18n.changeLanguage(e.target.value);
     setLanguage(e.target.value);
   };
@@ -33,7 +35,7 @@ export default function Settings() {
   return (
     <Stack sx={{ my: 5, mx: 2, alignItems: "flex-start" }} spacing={4}>
       <Typography variant="h4" component="h2" sx={{ mb: 5 }}>
-        Settings
+        {t("settings.settings")}
       </Typography>
       <TextField
         select
@@ -58,6 +60,14 @@ export default function Settings() {
           label="Dev Mode"
           labelPlacement="end"
         />
+      </div>
+      <div>
+      <MuiLink
+              href="https://github.com/openfoodfacts/hunger-games/issues"
+              target="_blank"
+            >
+            {t("settings.reportIssue")}
+            </MuiLink>
       </div>
     </Stack>
   );

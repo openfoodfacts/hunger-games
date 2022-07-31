@@ -6,16 +6,20 @@ import Divider from "@mui/material/Divider";
 import Checkbox from "@mui/material/Checkbox";
 import Typography from "@mui/material/Typography";
 import FormControlLabel from "@mui/material/FormControlLabel";
-import Stack from "@mui/material/Stack";
+import Grid from '@mui/material/Grid';
+
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 
 import EditIcon from "@mui/icons-material/Edit";
 import VisibilityIcon from "@mui/icons-material/Visibility";
 
+
 import { useTranslation } from "react-i18next";
 import { NO_QUESTION_LEFT } from "../../const";
 import offService from "../../off";
+
+import { localSettings,localSettingsKeys,getHideImages } from "../../localeStorageManager";
 
 const getImagesUrls = (images, barcode) => {
   if (!images || !barcode) {
@@ -29,22 +33,10 @@ const getImagesUrls = (images, barcode) => {
 };
 
 
-const formatStringArray = (stringArray) => {
-  if (stringArray.length === 0) return ''
-
-  let result = stringArray[0];
-
-  for(let i = 0; i < stringArray.length; i++) {
-    result += ', ' + stringArray[i]
-  }
-
-  return result + '.';
-}
-
 const ProductInformation = ({ question }) => {
   const { t } = useTranslation();
   const [productData, setProductData] = React.useState({});
-  const [hideImages, setHideImages] = React.useState(true);
+  const [hideImages, setHideImages] = React.useState(getHideImages);
 
   React.useEffect(() => {
     if (!question?.barcode) {
@@ -74,6 +66,11 @@ const ProductInformation = ({ question }) => {
       isStillValid = false;
     };
   }, [question?.barcode]);
+
+  const handleHideImages = (event) => {
+    setHideImages(event.target.checked);
+    localSettings.update(localSettingsKeys.hideImages, event.target.checked);
+  }
 
   if (!question || question === NO_QUESTION_LEFT) {
     return null;
@@ -115,16 +112,17 @@ const ProductInformation = ({ question }) => {
         control={
           <Checkbox
             checked={hideImages}
-            onChange={(event) => setHideImages(event.target.checked)}
+            onChange={handleHideImages}
           />
         }
         label={t("questions.hide_images")}
         labelPlacement="end"
       />
       {!hideImages && productData?.images && (
-        <Stack spacing={2} direction="row" flexWrap="wrap">
+        <Grid container rowSpacing={1.5} spacing={1}>
           {getImagesUrls(productData.images, question.barcode).map((src) => (
-            <Zoom key={src}>
+            <Grid item key={src} >
+            <Zoom >
               <img
                 src={src}
                 alt=""
@@ -132,8 +130,9 @@ const ProductInformation = ({ question }) => {
                 style={{ maxWidth: 300, maxHeight: 300 }}
               />
             </Zoom>
+              </Grid>
           ))}
-        </Stack>
+        </Grid>
       )}
 
       {/* Remaining info */}
@@ -145,7 +144,7 @@ const ProductInformation = ({ question }) => {
         {t("questions.ingredients")}: {productData?.ingredientsText}
       </p>
       <p>
-        {t("questions.countries")}: {!productData?.countriesTags?null:formatStringArray(productData.countriesTags)}
+        {t("questions.countries")}: {!productData?.countriesTags?null:`${productData.countriesTags.join(", ")}.`}
       </p>
       <Divider />
     </Box>
