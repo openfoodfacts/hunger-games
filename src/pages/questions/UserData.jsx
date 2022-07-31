@@ -8,7 +8,7 @@ import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
 import CancelOutlinedIcon from "@mui/icons-material/CancelOutlined";
 
 import { useTranslation } from "react-i18next";
-
+import { CORRECT_INSIGHT, WRONG_INSIGHT } from "../../const";
 import offService from "../../off";
 
 const NB_DISPLAYED_QUESTIONS = 30;
@@ -27,17 +27,19 @@ const UserData = ({ remainingQuestionNb = 0, answers = [] }) => {
   return (
     <Box>
       <Stack spacing={1}>
-        <Typography sx={{ my: 2 }}>{t("questions.remaining_annotations")}: {remainingQuestionNb}</Typography>
+        <Typography sx={{ my: 2 }}>
+          {t("questions.remaining_annotations")}: {remainingQuestionNb}
+        </Typography>
         {displayedAnswers.map(
           ({ insight_id, barcode, value, insight_type, validationValue }) => (
             <Stack key={insight_id} direction="row">
               <Link href={offService.getProductEditUrl(barcode)}>
                 {insight_type}: {value}
               </Link>
-              {validationValue === 0 && (
+              {validationValue === WRONG_INSIGHT && (
                 <CancelOutlinedIcon color="error" sx={{ ml: 2 }} />
               )}
-              {validationValue === 1 && (
+              {validationValue === CORRECT_INSIGHT && (
                 <CheckCircleOutlineIcon color="success" sx={{ ml: 2 }} />
               )}
             </Stack>

@@ -16,7 +16,13 @@ import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 
 import { useTranslation } from "react-i18next";
-import { NO_QUESTION_LEFT, OFF_URL } from "../../const";
+import {
+  NO_QUESTION_LEFT,
+  OFF_URL,
+  CORRECT_INSIGHT,
+  WRONG_INSIGHT,
+  SKIPPED_INSIGHT,
+} from "../../const";
 import { reformatValueTag } from "../../utils";
 import robotoff from "../../robotoff";
 
@@ -85,24 +91,30 @@ const QuestionDisplay = ({
     React.useState(null);
 
   React.useEffect(() => {
-    if (filterState.valueTag) {
+    if (
+      filterState.valueTag ||
+      !question?.insight_type ||
+      !question?.value_tag
+    ) {
       // value is already in the filter so it's a useless information
       setNbOfPotentialQuestions(null);
       return;
-    } else {
-      let validRequest = true;
-      getNbOfQuestionForValue({
-        type: question?.insight_type,
-        valueTag: question?.value_tag,
-      }).then((nbQuestions) => {
-        if (validRequest) {
-          setNbOfPotentialQuestions(nbQuestions);
-        }
-      });
-      return () => {
-        validRequest = false;
-      };
     }
+
+    let validRequest = true;
+
+    getNbOfQuestionForValue({
+      type: question?.insight_type,
+      valueTag: question?.value_tag,
+    }).then((nbQuestions) => {
+      if (validRequest) {
+        setNbOfPotentialQuestions(nbQuestions);
+      }
+    });
+
+    return () => {
+      validRequest = false;
+    };
   }, [filterState.valueTag, question?.insight_type, question?.value_tag]);
 
   React.useEffect(() => {
@@ -110,14 +122,23 @@ const QuestionDisplay = ({
       const preventShortCut = event.target.tagName.toUpperCase() === "INPUT";
       if (question?.insight_id && !preventShortCut) {
         switch (event.keyCode) {
-          case 75:
-            answerQuestion({ value: -1, insightId: question.insight_id });
+          case 75: // K
+            answerQuestion({
+              value: SKIPPED_INSIGHT,
+              insightId: question.insight_id,
+            });
             break;
-          case 79:
-            answerQuestion({ value: 1, insightId: question.insight_id });
+          case 79: // O
+            answerQuestion({
+              value: CORRECT_INSIGHT,
+              insightId: question.insight_id,
+            });
             break;
-          case 78:
-            answerQuestion({ value: 0, insightId: question.insight_id });
+          case 78: // N
+            answerQuestion({
+              value: WRONG_INSIGHT,
+              insightId: question.insight_id,
+            });
             break;
           default:
             break;
@@ -206,7 +227,10 @@ const QuestionDisplay = ({
       <Stack direction="row" justifyContent="center" spacing={2} sx={{ mb: 1 }}>
         <Button
           onClick={() =>
-            answerQuestion({ value: 0, insightId: question.insight_id })
+            answerQuestion({
+              value: WRONG_INSIGHT,
+              insightId: question.insight_id,
+            })
           }
           color="error"
           variant="contained"
@@ -218,7 +242,10 @@ const QuestionDisplay = ({
         </Button>
         <Button
           onClick={() =>
-            answerQuestion({ value: 1, insightId: question.insight_id })
+            answerQuestion({
+              value: CORRECT_INSIGHT,
+              insightId: question.insight_id,
+            })
           }
           startIcon={<DoneIcon />}
           color="success"
@@ -231,7 +258,10 @@ const QuestionDisplay = ({
       </Stack>
       <Button
         onClick={() =>
-          answerQuestion({ value: -1, insightId: question.insight_id })
+          answerQuestion({
+            value: SKIPPED_INSIGHT,
+            insightId: question.insight_id,
+          })
         }
         color="secondary"
         variant="contained"
