@@ -51,6 +51,11 @@ git push origin <type>/<issue-issueNumber>/{<additional-fixes>}
 - On Task Completion:
 
 ```bash
+## Clean your code
+
+# Run prettier to format your code 
+yarn prettier
+
 ## Committing and pushing your work
 
 # Ensure branch
