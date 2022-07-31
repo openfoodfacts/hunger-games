@@ -2,6 +2,7 @@ import * as React from "react";
 import { Link } from "react-router-dom";
 
 import Button from "@mui/material/Button";
+import Badge from "@mui/material/Badge";
 import Box from "@mui/material/Box";
 import Divider from "@mui/material/Divider";
 import Stack from "@mui/material/Stack";
@@ -17,6 +18,7 @@ import "react-medium-image-zoom/dist/styles.css";
 import { useTranslation } from "react-i18next";
 import { NO_QUESTION_LEFT, OFF_URL } from "../../const";
 import { reformatValueTag } from "../../utils";
+import robotoff from "../../robotoff";
 
 // const getFullSizeImage = (src) => {
 //   if (!src) {
@@ -43,6 +45,7 @@ const getValueTagQuestionsURL = (question) => {
   }
   return null;
 };
+
 const getValueTagExamplesURL = (question) => {
   if (
     question !== null &&
@@ -57,16 +60,55 @@ const getValueTagExamplesURL = (question) => {
   return "";
 };
 
-const QuestionDisplay = ({ question, answerQuestion, resetFilters }) => {
+const getNbOfQuestionForValue = async ({ type, valueTag }) => {
+  const { data: dataFetched } = await robotoff.questions(
+    "random",
+    type,
+    valueTag,
+    null,
+    null,
+    1
+  );
+  return dataFetched.count;
+};
+
+const QuestionDisplay = ({
+  question,
+  answerQuestion,
+  resetFilters,
+  filterState,
+}) => {
   const { t } = useTranslation();
   const valueTagQuestionsURL = getValueTagQuestionsURL(question);
   const valueTagExamplesURL = getValueTagExamplesURL(question);
+  const [nbOfPotentialQuestion, setNbOfPotentialQuestions] =
+    React.useState(null);
 
   React.useEffect(() => {
+    if (filterState.valueTag) {
+      // value is already in the filter so it's a useless information
+      setNbOfPotentialQuestions(null);
+      return;
+    } else {
+      let validRequest = true;
+      getNbOfQuestionForValue({
+        type: question?.insight_type,
+        valueTag: question?.value_tag,
+      }).then((nbQuestions) => {
+        if (validRequest) {
+          setNbOfPotentialQuestions(nbQuestions);
+        }
+      });
+      return () => {
+        validRequest = false;
+      };
+    }
+  }, [filterState.valueTag, question?.insight_type, question?.value_tag]);
 
+  React.useEffect(() => {
     function handleShortCut(event) {
-      const preventShortCut = event.target.tagName.toUpperCase() === 'INPUT'
-      if (question && !preventShortCut) {
+      const preventShortCut = event.target.tagName.toUpperCase() === "INPUT";
+      if (question?.insight_id && !preventShortCut) {
         switch (event.keyCode) {
           case 75:
             answerQuestion({ value: -1, insightId: question.insight_id });
@@ -80,11 +122,12 @@ const QuestionDisplay = ({ question, answerQuestion, resetFilters }) => {
           default:
             break;
         }
-      }}
+      }
+    }
 
-    window.addEventListener( 'keydown', handleShortCut)
-    return () =>  window.removeEventListener('keydown', handleShortCut)
-  }, [question, answerQuestion])
+    window.addEventListener("keydown", handleShortCut);
+    return () => window.removeEventListener("keydown", handleShortCut);
+  }, [question?.insight_id, answerQuestion]);
 
   if (question === NO_QUESTION_LEFT) {
     return (
@@ -108,27 +151,43 @@ const QuestionDisplay = ({ question, answerQuestion, resetFilters }) => {
         flexShrink: 1,
       }}
     >
-      <Typography>{question?.question}</Typography>
-      {valueTagQuestionsURL && (
-        <Button
-          component={Link}
-          to={valueTagQuestionsURL}
-          endIcon={<LinkIcon />}
-        >
-          {question.value}
-        </Button>
-      )}
-      {valueTagExamplesURL && (
-        <MuiLink
-          variant="body2"
-          href={valueTagExamplesURL}
-          target="_blank"
-          rel="noreferrer"
-          sx={{ mb: 2 }}
-        >
-          <div>{`${t("questions.see_examples")} ${question.insight_type}`}</div>
-        </MuiLink>
-      )}
+      <Stack
+        sx={{
+          alignItems: "center",
+        }}
+      >
+        <Typography>{question?.question}</Typography>
+        {valueTagQuestionsURL && (
+          <Badge
+            sx={{ marginY: 1 }}
+            badgeContent={nbOfPotentialQuestion}
+            color="primary"
+          >
+            <Button
+              sx={{ paddingX: 4 }}
+              component={Link}
+              to={valueTagQuestionsURL}
+              endIcon={<LinkIcon />}
+              variant="outlined"
+            >
+              {question.value}
+            </Button>
+          </Badge>
+        )}
+        {valueTagExamplesURL && (
+          <MuiLink
+            variant="body2"
+            href={valueTagExamplesURL}
+            target="_blank"
+            rel="noreferrer"
+            sx={{ mb: 2 }}
+          >
+            <div>{`${t("questions.see_examples")} ${
+              question.insight_type
+            }`}</div>
+          </MuiLink>
+        )}
+      </Stack>
       <Divider />
       <Box flexGrow={1} flexShrink={1} sx={{ height: 0, marginBottom: 1 }}>
         <Zoom wrapStyle={{ height: "100%" }}>
@@ -144,12 +203,7 @@ const QuestionDisplay = ({ question, answerQuestion, resetFilters }) => {
           />
         </Zoom>
       </Box>
-      <Stack
-        direction="row"
-        justifyContent="center"
-        spacing={2}
-        sx={{ mb: 1 }}
-      >
+      <Stack direction="row" justifyContent="center" spacing={2} sx={{ mb: 1 }}>
         <Button
           onClick={() =>
             answerQuestion({ value: 0, insightId: question.insight_id })
