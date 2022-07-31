@@ -27,7 +27,9 @@ const UserData = ({ remainingQuestionNb = 0, answers = [] }) => {
   return (
     <Box>
       <Stack spacing={1}>
-        <Typography sx={{ my: 2 }}>{t("questions.remaining_annotations")}: {remainingQuestionNb}</Typography>
+        <Typography sx={{ my: 2 }}>
+          {t("questions.remaining_annotations")}: {remainingQuestionNb}
+        </Typography>
         {displayedAnswers.map(
           ({ insight_id, barcode, value, insight_type, validationValue }) => (
             <Stack key={insight_id} direction="row">

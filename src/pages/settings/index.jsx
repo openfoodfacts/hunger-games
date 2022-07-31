@@ -11,8 +11,7 @@ import MuiLink from "@mui/material/Link";
 import { useTranslation } from "react-i18next";
 
 import DevModeContext from "../../contexts/devMode";
-import { localSettings,localSettingsKeys } from "../../localeStorageManager";
-
+import { localSettings, localSettingsKeys } from "../../localeStorageManager";
 
 export default function Settings() {
   const { t, i18n } = useTranslation();
@@ -62,12 +61,12 @@ export default function Settings() {
         />
       </div>
       <div>
-      <MuiLink
-              href="https://github.com/openfoodfacts/hunger-games/issues"
-              target="_blank"
-            >
-            {t("settings.reportIssue")}
-            </MuiLink>
+        <MuiLink
+          href="https://github.com/openfoodfacts/hunger-games/issues"
+          target="_blank"
+        >
+          {t("settings.reportIssue")}
+        </MuiLink>
       </div>
     </Stack>
   );
