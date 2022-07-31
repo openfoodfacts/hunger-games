@@ -9,9 +9,8 @@ export default function ImageTable() {
     <Box flexGrow={1}
          flexShrink={1}
          sx={{
-           marginBottom: 4,
-           maxWidth: '300px',
-           border: '5px solid red'
+           maxWidth: '380px',
+
          }}>
       <Zoom wrapStyle={{ height: "100%" }}>
         <img
