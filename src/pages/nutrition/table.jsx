@@ -9,7 +9,7 @@ import TextField from "@mui/material/TextField";
 import SelectAutoWidth from "./selectComp";
 import { Box } from "@mui/material";
 import Checkbox from "@mui/material/Checkbox";
-import ControllableStates from "./additionalNutritions";
+import AdditionalNutriments from "./additionalNutritions";
 
 function createData(
   label, property, unit
@@ -20,6 +20,41 @@ function createData(
 export default function NutritionTable() {
 
   const [nutriments, setNutriments] = React.useState([
+    {
+      off_nutriment_id: "energy_kj",
+      label: "Energie (kJ)",
+      value: "",
+      unit: "null",
+      quantification: "=",
+      robotoffPrediction: null
+    },
+    {
+      off_nutriment_id: "energy_kcal",
+      label: "Protein",
+      value: "",
+      unit: "null",
+      quantification: "<",
+      robotoffPrediction: null
+    },
+    {
+      off_nutriment_id: "energy_kcal",
+      label: "Shugar",
+      value: "",
+      unit: "null",
+      quantification: "<",
+      robotoffPrediction: null
+    },
+    {
+      off_nutriment_id: "energy_kcal",
+      label: "Fat",
+      value: "",
+      unit: null,
+      quantification: "<",
+      robotoffPrediction: null
+    }
+  ])
+
+  const [additionalNutriments, setAdditionalNutriments] = React.useState([
     {
       off_nutriment_id: "energy_kj",
       label: "Energie (kJ)",
@@ -115,7 +150,10 @@ export default function NutritionTable() {
           </TableBody>
         </Table>
       </TableContainer>
-      <ControllableStates />
+      <AdditionalNutriments
+        options = {additionalNutriments}
+        setNutriments={setNutriments}
+      />
     </Box>
   );
 }
