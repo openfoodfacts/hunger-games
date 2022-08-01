@@ -173,7 +173,7 @@ const ResponsiveAppBar = () => {
                     color="inherit"
                     key={page.url}
                     onClick={handleCloseNavMenu}
-                    sx={{ my: 2, display: "block"}}
+                    sx={{ my: 2, mr:1, display: "block", textAlign: 'center'}}
                     component={Link}
                     to={`/${page.url}`}
                   >
