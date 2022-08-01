@@ -27,7 +27,7 @@ const pages = [
   { url: "eco-score", translationKey: "menu.eco-score" },
   { translationKey: "menu.manage" },
   { url: "insights", translationKey: "menu.insights" },
-  // { url: "settings", translationKey: "menu.settings" },
+  { url: "nutrition", translationKey: "menu.nutrition" },
 ];
 
 const ResponsiveAppBar = () => {
@@ -156,12 +156,9 @@ const ResponsiveAppBar = () => {
               component="a"
               href="/"
               sx={{
-                mr: 2,
-                fontFamily: "monospace",
-                fontWeight: 700,
-                letterSpacing: ".3rem",
-                color: "inherit",
-                textDecoration: "none",
+                display: { xs: "none", md: "flex" },
+                flexDirection: "row",
+                alignItems: "baseline",
               }}
             >
               Hunger Games
