@@ -153,6 +153,7 @@ export default function NutritionTable() {
       <AdditionalNutriments
         options = {additionalNutriments}
         setNutriments={setNutriments}
+        setAdditionalNutriments={setAdditionalNutriments}
       />
     </Box>
   );
