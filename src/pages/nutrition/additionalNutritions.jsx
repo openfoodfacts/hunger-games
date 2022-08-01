@@ -12,9 +12,9 @@ export default function AdditionalNutriments({options, setNutriments, setAdditio
       onChange={(event) => {
         const nutrIndex = event.target.dataset.optionIndex
         if (nutrIndex) {
-          console.log(Number(nutrIndex))
           setNutriments(prev => [...prev, options[nutrIndex]])
-          setAdditionalNutriments(prev => prev.filter(item => options.indexOf(item) !== nutrIndex))
+          setAdditionalNutriments(prev => prev.filter(elem => elem !== options[nutrIndex]))
+          console.log(options)
       }
 
       }}
