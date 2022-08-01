@@ -145,7 +145,7 @@ export default function EcoScore() {
         "&": {
           padding: 5,
           display: "grid",
-          gridTemplateColumns: "repeat(auto-fill, minmax(310px, 1fr))",
+          gridTemplateColumns: "repeat(auto-fill, minmax(360px, 1fr))",
         },
       }}
     >
