@@ -6,10 +6,11 @@ import TableContainer from "@mui/material/TableContainer";
 import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import TextField from "@mui/material/TextField";
-import SelectAutoWidth from "./selectComp";
+import SelectAutoWidth from "./unitSelect";
 import { Box } from "@mui/material";
 import Checkbox from "@mui/material/Checkbox";
 import AdditionalNutriments from "./additionalNutritions";
+import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline';
 
 function createData(
   label, property, unit
@@ -70,22 +71,6 @@ export default function NutritionTable() {
       unit: "null",
       quantification: "<",
       robotoffPrediction: null
-    },
-    {
-      off_nutriment_id: "energy_kcal",
-      label: "Shugar",
-      value: "",
-      unit: "null",
-      quantification: "<",
-      robotoffPrediction: null
-    },
-    {
-      off_nutriment_id: "energy_kcal",
-      label: "Fat",
-      value: "",
-      unit: null,
-      quantification: "<",
-      robotoffPrediction: null
     }
   ])
 
@@ -96,6 +81,11 @@ export default function NutritionTable() {
         return name === nutr.label? {...nutr, value} : nutr
       }
     ))
+  }
+
+  function deleteItem(nutrition) {
+    setNutriments(prev => prev.filter(elem => elem !== nutrition))
+    setAdditionalNutriments(prev => [...prev, nutrition])
   }
 
   const rows = nutriments.map(nutrition => {
@@ -113,12 +103,12 @@ export default function NutritionTable() {
                       name={nutrition.label}
                       onChange={onchangeHandler}
         /> , <SelectAutoWidth /></Box>,
-        <Checkbox sx={{}} />));
+        <DeleteOutlineIcon sx={{cursor: 'pointer'}} onClick={() => deleteItem(nutrition)}/>));
   });
 
   return (
     <Box>
-      <TableContainer sx={{ margin: 0, maxWidth: "1000px", width: "380px" }}>
+      <TableContainer sx={{ margin: 0, maxWidth: "1000px", width: "340px" }}>
         <Table aria-label="simple table">
           <TableHead>
             <TableRow>
@@ -127,8 +117,7 @@ export default function NutritionTable() {
                 fontSize: "large",
                 fontWeight: "bold"
               }}>nutrition.table.value</TableCell>
-              <TableCell align="left"
-                         sx={{}}>isPresent</TableCell>
+
             </TableRow>
           </TableHead>
           <TableBody>
@@ -144,7 +133,7 @@ export default function NutritionTable() {
                   {row.label}
                 </TableCell>
                 <TableCell align="left"
-                           sx={{ width: "1rem" }}>{row.property}</TableCell>
+                           sx={{ width: "1rem"}}>{row.property}</TableCell>
               </TableRow>
             ))}
           </TableBody>

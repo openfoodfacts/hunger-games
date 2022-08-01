@@ -3,24 +3,30 @@ import TextField from '@mui/material/TextField';
 import Autocomplete from '@mui/material/Autocomplete';
 
 export default function AdditionalNutriments({options, setNutriments, setAdditionalNutriments}) {
+
+  const [inputValue, setInputValue] = React.useState('')
+
   return (
     <Autocomplete
+      value={null}
       disablePortal
-      id="combo-box-demo"
+      id="nutrition-input"
       options={options}
-      sx={{ width: 300 }}
+      sx={{ width: 245, marginLeft: 2, marginTop: 2 }}
       onChange={(event) => {
         const nutrIndex = event.target.dataset.optionIndex
         if (nutrIndex) {
           setNutriments(prev => [...prev, options[nutrIndex]])
           setAdditionalNutriments(prev => prev.filter(elem => elem !== options[nutrIndex]))
-          console.log(options)
+          setInputValue("")
       }
-
       }}
-      renderInput={(params) => <TextField {...params} label="Nutrition" />}
+      inputValue={inputValue}
+      onInputChange={(event, newInputValue) => {
+        setInputValue(newInputValue);
+      }}
+      renderInput={(params) => <TextField {...params} label="Add nutriment" />}
     />
   );
 }
 
-// Top 100 films as rated by IMDb users. http://www.imdb.com/chart/top

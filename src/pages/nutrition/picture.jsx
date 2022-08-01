@@ -2,15 +2,14 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import Zoom from "react-medium-image-zoom";
 import Button from "@mui/material/Button";
-import DeleteIcon from "@mui/icons-material/Delete";
 
 export default function ImageTable() {
+
   return (
     <Box flexGrow={1}
          flexShrink={1}
          sx={{
-           maxWidth: '380px',
-
+           maxWidth: '380px'
          }}>
       <Zoom wrapStyle={{ height: "100%" }}>
         <img

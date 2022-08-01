@@ -27,8 +27,6 @@ export default function SelectAutoWidth({}) {
             <em>None</em>
           </MenuItem>
           <MenuItem value={10}>g</MenuItem>
-          <MenuItem value={21}>mg</MenuItem>
-          <MenuItem value={22}>kg</MenuItem>
         </Select>
       </FormControl>
     </div>

@@ -12,7 +12,7 @@ export default function Nutrition() {
          sx={{
            width: 1,
            height: 1,
-           alignItems: "center",
+           alignItems: { xs: 'center', md:"flex-start" },
            justifyContent: "center",
            padding: 4
          }}>
