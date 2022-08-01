@@ -1,6 +1,6 @@
 import * as React from "react";
 import NutritionTable from "./table";
-import ImageTable from "./picture";
+import ProductNutriments from "./productCard";
 import { Box } from "@mui/material";
 import { flexbox } from "@material-ui/system";
 
@@ -16,7 +16,7 @@ export default function Nutrition() {
            justifyContent: "center",
            padding: 4
          }}>
-      <ImageTable />
+      <ProductNutriments />
       <NutritionTable />
     </Box>
   );
