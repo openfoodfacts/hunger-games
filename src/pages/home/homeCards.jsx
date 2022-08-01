@@ -6,28 +6,28 @@ import CardContent from "@mui/material/CardContent";
 import CardActionArea from "@mui/material/CardActionArea";
 import Typography from "@mui/material/Typography";
 import Stack from "@mui/material/Stack";
-import home1 from "../../assets/home1.png";
-import home2 from "../../assets/home2.png";
-import home3 from "../../assets/home3.png";
+import home_questions from "../../assets/home_questions.png";
+import home_logos from "../../assets/home_logos.png";
+import home_ecoscore from "../../assets/home_ecoscore.png";
 
-const content = [
+const cards = [
   {
     title: "Questions",
     desc: "Tell us if the given image answers the questions",
     link: "/questions",
-    image: home1,
+    image: home_questions,
   },
   {
     title: "Logos",
     desc: "Find all the logos matching the given logo",
     link: "/logos",
-    image: home2,
+    image: home_logos,
   },
   {
     title: "Eco-score",
     desc: "Annotate the questions with the highest value",
     link: "/eco-score",
-    image: home3,
+    image: home_ecoscore,
   },
 ];
 
@@ -42,19 +42,19 @@ const HomeCards = () => {
         marginBottom: "30px",
       }}
     >
-      {content.map((props) => (
-        <Card sx={{ width: 350, height: 300 }} key={props.title}>
-        <CardActionArea component={Link} to={props.link}>     
+      {cards.map((cardInfo) => (
+        <Card sx={{ width: 350, height: 300 }} key={cardInfo.title}>
+        <CardActionArea component={Link} to={cardInfo.link}>     
             <CardMedia
               component="img"
               height="200"
-              image={props.image}
-              alt=""
+              image={cardInfo.image}
+              alt={cardInfo.title}
               sx={{ objectFit: "contain" }}
             />
             <CardContent>
               <Typography variant="h5" component="div">
-                {props.title}
+                {cardInfo.title}
               </Typography>
               <Typography
                 gutterBottom
@@ -62,7 +62,7 @@ const HomeCards = () => {
                 component="div"
                 fontSize={14}
               >
-                {props.desc}
+                {cardInfo.desc}
               </Typography>
             </CardContent>
             </CardActionArea>

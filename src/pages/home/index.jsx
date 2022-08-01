@@ -104,8 +104,8 @@ const Home = () => {
       <Modal
         open={open}
         onClose={handleClose}
-        aria-labelledby="modal-modal-title"
-        aria-describedby="modal-modal-description"
+        aria-labelledby="modal-contribution-title"
+        aria-describedby="modal-contribution-information"
       >
         <Box
         width={{xs:"90%",sm:"50%"}}
@@ -119,16 +119,17 @@ const Home = () => {
             padding: "20px",
           }}
         >
-          <Typography id="modal-modal-title" variant="h6" component="h2" fontWeight={700}>
+          <Typography id="modal-contribution-title" variant="h6" component="h2" fontWeight={700}>
             Your contribution matters
           </Typography>
-          <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+          <Typography class="modal-contribution-information" sx={{ mt: 2 }} component="p">
             Hunger Games is an effort to leverage the results of our OCR. When
             you use Hunger Games by Open Food Facts, you improve our entire
             database which helps the community make better food choices. We
             gathers your annotations and use them to make Open Food Facts more
-            accurate and effecient. <br />
-            <br />
+            accurate and effecient. 
+            </Typography>
+          <Typography class="modal-contribution-information" sx={{ mt: 2 }} component="p">
             Thank you for helping us improve Open Food Facts so that more people
             can use it easily.
           </Typography>
