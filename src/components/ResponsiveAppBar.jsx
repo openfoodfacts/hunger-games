@@ -131,41 +131,38 @@ const ResponsiveAppBar = () => {
               justifyContent: 'space-between'
             }}
           >
-            <Box
+          <Box
+            sx={{
+              display: { xs: "none", md: "flex" },
+              flexDirection: "row",
+              alignItems: "baseline",
+            }}
+          >
+            <MuiLink
+              sx={{ mr: 1, display: "flex", alignSelf: 'center' }}
+              href="https://world.openfoodfacts.org/"
+              target="_blank"
+            >
+              <img
+                src={logo}
+                width="30px"
+                height="30px"
+                alt="OpenFoodFact logo"
+              />
+            </MuiLink>
+            <Typography
+              variant="h6"
+              noWrap
+              component="a"
+              href="/"
               sx={{
                 display: { xs: "none", md: "flex" },
                 flexDirection: "row",
                 alignItems: "baseline",
               }}
             >
-              <MuiLink
-                sx={{ mr: 1, display: "flex", alignSelf: 'center' }}
-                href="https://world.openfoodfacts.org/"
-                target="_blank"
-              >
-                <img
-                  src={logo}
-                  width="30px"
-                  height="30px"
-                  alt="OpenFoodFact logo"
-                />
-              </MuiLink>
-              <Typography
-                variant="h6"
-                noWrap
-                component="a"
-                href="/"
-                sx={{
-                  mr: 2,
-                  fontFamily: "monospace",
-                  fontWeight: 700,
-                  letterSpacing: ".3rem",
-                  color: "inherit",
-                  textDecoration: "none",
-                }}
-              >
-                Hunger Games
-              </Typography>
+              Hunger Games
+            </Typography>
 
               {displayedPages.map((page) =>
                 page.url ? (
@@ -173,7 +170,7 @@ const ResponsiveAppBar = () => {
                     color="inherit"
                     key={page.url}
                     onClick={handleCloseNavMenu}
-                    sx={{ my: 2, display: "block"}}
+                    sx={{ my: 2, mr:1, display: "block", textAlign: 'center'}}
                     component={Link}
                     to={`/${page.url}`}
                   >
@@ -182,7 +179,7 @@ const ResponsiveAppBar = () => {
                 ) : null
               )}
 
-            </Box>
+          </Box>
 
             <Button
               color="inherit"
