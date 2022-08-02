@@ -6,7 +6,7 @@ import  Typography  from '@mui/material/Typography'
 import offService from '../../off'
 import { useEffect } from "react";
 
-export default function ProductNutriments() {
+export default function ProductNutriments({}) {
 
   const { getNutritionToFillUrl } = offService
 
@@ -25,14 +25,7 @@ export default function ProductNutriments() {
   const pictureURL = products[index] ? products[index].image_nutrition_url : "https://static.openfoodfacts.org/images/image-placeholder.png"
 
   function clickHandler(){
-    setIndex(prev => {
-      if (prev < 22 ) return prev += 1;
-      else {
-        setPage(prevPage => prevPage += 1);
-        return 0
-      }
-    })
-
+    setIndex(prev => prev < 22 ? ++prev : 0)
   }
 
   return (
@@ -70,6 +63,7 @@ export default function ProductNutriments() {
           SKIP
         </Button>
         <Button
+          onClick={clickHandler}
           color="success"
           variant="contained"
           size="large"
