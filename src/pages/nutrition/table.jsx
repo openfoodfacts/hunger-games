@@ -103,7 +103,7 @@ export default function NutritionTable() {
                       name={nutrition.label}
                       onChange={onchangeHandler}
         /> , <SelectAutoWidth /></Box>,
-        <DeleteOutlineIcon sx={{cursor: 'pointer'}} onClick={() => deleteItem(nutrition)}/>));
+        <DeleteOutlineIcon sx={{cursor: 'pointer', color: 'red'}} onClick={() => deleteItem(nutrition)}/>));
   });
 
   return (

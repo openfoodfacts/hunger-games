@@ -27,7 +27,7 @@ const pages = [
   { url: "eco-score", translationKey: "menu.eco-score" },
   { translationKey: "menu.manage" },
   { url: "insights", translationKey: "menu.insights" },
-  { url: "nutrition", translationKey: "menu.nutrition" },
+  /*{ url: "nutrition", translationKey: "menu.nutrition" },*/
 ];
 
 const ResponsiveAppBar = () => {

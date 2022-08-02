@@ -3,8 +3,37 @@ import Box from '@mui/material/Box';
 import Zoom from "react-medium-image-zoom";
 import Button from "@mui/material/Button";
 import  Typography  from '@mui/material/Typography'
+import offService from '../../off'
+import { useEffect } from "react";
 
 export default function ProductNutriments() {
+
+  const { getNutritionToFillUrl } = offService
+
+  const [ page, setPage ] = React.useState(1)
+  const [ index, setIndex ] = React.useState(0)
+  const [ products, setProducts ] = React.useState([])
+
+  useEffect(() => {
+    console.log('fetched')
+    const productListUrl = getNutritionToFillUrl({page})
+  fetch(productListUrl)
+    .then(res => res.json())
+    .then(data => setProducts(data.products))
+  }, [page])
+
+  const pictureURL = products[index] ? products[index].image_nutrition_url : "https://static.openfoodfacts.org/images/image-placeholder.png"
+
+  function clickHandler(){
+    setIndex(prev => {
+      if (prev < 22 ) return prev += 1;
+      else {
+        setPage(prevPage => prevPage += 1);
+        return 0
+      }
+    })
+
+  }
 
   return (
 
@@ -25,13 +54,14 @@ export default function ProductNutriments() {
         <img
           // TODO: use getFullSizeImage when the zoom is activated
           // src={getFullSizeImage(question.source_image_url)}
-          src={"https://static.openfoodfacts.org/images/image-placeholder.png"}
+          src={pictureURL}
           alt=""
           style={{ maxWidth: "100%", maxHeight: "100%" }}
         />
       </Zoom>
       <Box display={"flex"} flexDirection={"row"} Gap={'.5em'}>
         <Button
+          onClick={clickHandler}
           color="secondary"
           variant="contained"
           size="large"

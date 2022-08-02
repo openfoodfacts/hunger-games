@@ -5,6 +5,7 @@ import { Box } from "@mui/material";
 import { flexbox } from "@material-ui/system";
 
 export default function Nutrition() {
+
   return (
     <Box display={"flex"}
          flexDirection={{ xs: "column", md: "row" }}
