@@ -33,12 +33,12 @@
         "type": "Vraagtype",
         "value": "Voorgestelde waarde",
         "country": "Productieland",
-        "brand": "Productmerk",
+        "brand": "Producent/merk",
         "popularity": "Sorteren op populariteit",
         "edit": ""
       },
       "placeholders": {
-        "value": "Waarde (fanta, en:bio,...)",
+        "value": "Waarde (fanta, en:organic,...)",
         "brand": "auchan, danone, herta, ..."
       },
       "actions": {
@@ -106,7 +106,7 @@
     "id": "Logo ID:",
     "barcode": "Streepjescode:",
     "full_image": "Volledige afbeelding",
-    "update": "Update",
+    "update": "Bijgewerkt",
     "no_found": "Geen logo gevonden",
     "search": "Zoeken",
     "number_of_results": "Aantal resultaten:"
@@ -114,19 +114,20 @@
   "settings": {
     "settings": "Instellingen",
     "language": "Taal",
-    "save": "Bewaar"
+    "save": "Bewaar",
+    "reportIssue": "Bug gevonden? Laat het ons weten"
   },
   "helper": {
     "welcome": {
       "page1": {
         "title": "Welkom",
-        "text1": "Honger Games zijn een verzameling mini-games die in veel opzichten bijdragen aan Open Food Facts. Categoriseer een product om Nutri-Score en Eco-score te krijgen, help labels te valideren voor de Eco-score, voeg merken en gewichten toe, help ons logo herkenningssysteem te leren over de logo's die het detecteert.",
+        "text1": "Hunger Games is een verzameling minigames die op vele manieren bijdragen aan Open Food Facts. Categoriseer een product om de Nutri-Score en Eco-Score te krijgen, help labels voor de Eco-Score te valideren, voeg merken en gewichten toe, help ons logoherkenningssysteem meer te weten te komen over de logo's die het heeft gedetecteerd.",
         "text2": "Dat zijn enkele van de spannende dingen die je kunt doen. Zorg ervoor dat u verbonden bent met de Open Food Facts-website om erkenning te krijgen voor uw bijdragen. Als u een fout maakt, neem dan de tijd om deze te corrigeren door naar de website te gaan.",
-        "text3": "In geval van twijfel over het spel, heb je een helper rechtsboven van de pagina en je kunt ons bereiken op slack op het #hunger-games kanaal"
+        "text3": "In geval van twijfel over het spel, heb je een helper rechtsboven van de pagina en je kunt ons bereiken op een slack op het #hunger-games kanaal"
       },
       "page2": {
         "title": "Vragen",
-        "text1": "Onze AI heeft veel vragen voor u. Hier moet je de informatie die ze ontdekt heeft op afbeeldingen bevestigen of weigeren.",
+        "text1": "Onze AI heeft veel vragen voor je. Hier moet je de informatie die ze op afbeeldingen heeft gevonden bevestigen of ontkennen.",
         "text2": "Aarzel niet om een vraag over te slaan als je het niet zeker weet, er zijn er nog genoeg"
       },
       "page3": {
@@ -137,19 +138,19 @@
     "logos": {
       "page1": {
         "title": "Selectie",
-        "text1": "Selecteer de lijnen van hetzelfde logo door erop te klikken",
+        "text1": "Selecteer de lijnen rondom het logo door erop te klikken",
         "text2": "Geselecteerde logo's gaan naar de bovenkant van de pagina, u kunt ze deselecteren door er opnieuw op te klikken"
       },
       "page2": {
         "title": "Let op",
         "text1": "Als de uitsnede meerdere logo's bevat, selecteert u deze niet.",
-        "text2": "Als de uitsnede slechts een gedeeltelijk deel van een logo bevat, kunt u deze selecteren"
+        "text2": "Als de bijsnijden slechts een deel van een logo bevat, kun je het selecteren"
       },
       "page3": {
         "title": "Bevestigen",
         "text1": "Geef het type logo aan (label, merk, QR-code, ...)",
         "text2": "Als het een label of een merklogo is, geef dan aan welke het is",
-        "text3": "Nu kunt u uw selectie indienen",
+        "text3": "Je kunt nu je selectie indienen",
         "text4": "Bedankt :)"
       }
     },
@@ -159,9 +160,9 @@
   },
   "nutrition": {
     "instructions": {
-      "cropTheTable": "Werk de afbeelding bij om uw aantekening te vereenvoudigen",
+      "cropTheTable": "Werk de afbeelding bij om je aantekening te vereenvoudigen",
       "verifyNutrimentDetected": "Geef aan of de gedetecteerde voeding correct is",
-      "selectMissingNutriments": "Voeg ontbrekende voedingsstoffen toe (u kunt klikken, zelfs als het woord geen vakje heeft)",
+      "selectMissingNutriments": "Voeg ontbrekende voedingsstoffen toe (je kunt hierop klikken zelfs als het woord geen vakje heeft)",
       "selectValue": "Selecteer de voedingswaarde van: "
     },
     "steps": {
@@ -176,7 +177,7 @@
     "validate": "Tabel goedkeuren",
     "unselect_picture": "Geen voedingsinformatie",
     "basis": "gegevens voor: ",
-    "servingSize": "portiegrootte",
+    "servingSize": "grootte van een portie",
     "value": "waarde",
     "nutriments": {
       "nutriment_energy-kj": "Energie (kJ)",
