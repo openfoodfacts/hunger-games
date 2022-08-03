@@ -4,7 +4,27 @@ import ProductNutriments from "./productCard";
 import { Box } from "@mui/material";
 import { flexbox } from "@material-ui/system";
 
+import {basicNutriments, additionalNutrs} from "./nutritionFields";
+
 export default function Nutrition() {
+
+  const [nutriments, setNutriments] = React.useState(basicNutriments)
+
+  const [additionalNutriments, setAdditionalNutriments] = React.useState(additionalNutrs)
+
+  function onchangeHandler(e) {
+    const {value, name} = e.target
+    setNutriments(prevState => prevState.map(
+      nutr => {
+        return name === nutr.label? {...nutr, value} : nutr
+      }
+    ))
+  }
+
+  function deleteItem(nutrition) {
+    setNutriments(prev => prev.filter(elem => elem !== nutrition))
+    setAdditionalNutriments(prev => [...prev, nutrition])
+  }
 
   return (
     <Box display={"flex"}
@@ -17,8 +37,15 @@ export default function Nutrition() {
            justifyContent: "center",
            padding: 4
          }}>
-      <ProductNutriments />
-      <NutritionTable />
+      <ProductNutriments setNutriments={setNutriments}/>
+      <NutritionTable
+        nutriments={nutriments}
+        setNutriments={setNutriments}
+        additionalNutriments={additionalNutriments}
+        setAdditionalNutriments={setAdditionalNutriments}
+        onchangeHandler={onchangeHandler}
+        deleteItem={deleteItem}
+      />
     </Box>
   );
 }

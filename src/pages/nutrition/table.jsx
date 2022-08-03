@@ -18,75 +18,7 @@ function createData(
   return { label, property, unit };
 }
 
-export default function NutritionTable() {
-
-  const [nutriments, setNutriments] = React.useState([
-    {
-      off_nutriment_id: "energy_kj",
-      label: "Energie (kJ)",
-      value: "",
-      unit: "null",
-      quantification: "=",
-      robotoffPrediction: null
-    },
-    {
-      off_nutriment_id: "energy_kcal",
-      label: "Protein",
-      value: "",
-      unit: "null",
-      quantification: "<",
-      robotoffPrediction: null
-    },
-    {
-      off_nutriment_id: "energy_kcal",
-      label: "Shugar",
-      value: "",
-      unit: "null",
-      quantification: "<",
-      robotoffPrediction: null
-    },
-    {
-      off_nutriment_id: "energy_kcal",
-      label: "Fat",
-      value: "",
-      unit: null,
-      quantification: "<",
-      robotoffPrediction: null
-    }
-  ])
-
-  const [additionalNutriments, setAdditionalNutriments] = React.useState([
-    {
-      off_nutriment_id: "energy_kj",
-      label: "Energie (kJ)",
-      value: "",
-      unit: "null",
-      quantification: "=",
-      robotoffPrediction: null
-    },
-    {
-      off_nutriment_id: "energy_kcal",
-      label: "Protein",
-      value: "",
-      unit: "null",
-      quantification: "<",
-      robotoffPrediction: null
-    }
-  ])
-
-  function onchangeHandler(e) {
-    const {value, name} = e.target
-    setNutriments(prevState => prevState.map(
-      nutr => {
-        return name === nutr.label? {...nutr, value} : nutr
-      }
-    ))
-  }
-
-  function deleteItem(nutrition) {
-    setNutriments(prev => prev.filter(elem => elem !== nutrition))
-    setAdditionalNutriments(prev => [...prev, nutrition])
-  }
+export default function NutritionTable({nutriments, setNutriments, additionalNutriments, deleteItem, setAdditionalNutriments, onchangeHandler}) {
 
   const rows = nutriments.map(nutrition => {
     return (

@@ -6,7 +6,9 @@ import  Typography  from '@mui/material/Typography'
 import offService from '../../off'
 import { useEffect } from "react";
 
-export default function ProductNutriments({}) {
+import {basicNutriments} from "./nutritionFields";
+
+export default function ProductNutriments({setNutriments}) {
 
   const { getNutritionToFillUrl } = offService
 
@@ -26,6 +28,7 @@ export default function ProductNutriments({}) {
 
   function clickHandler(){
     setIndex(prev => prev < 22 ? ++prev : 0)
+    setNutriments(basicNutriments)
   }
 
   return (
