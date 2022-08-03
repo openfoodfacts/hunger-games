@@ -4,7 +4,7 @@ import Zoom from "react-medium-image-zoom";
 import Button from "@mui/material/Button";
 import  Typography  from '@mui/material/Typography'
 import offService from '../../off'
-import { useEffect } from "react";
+
 
 import {basicNutriments} from "./nutritionFields";
 
@@ -16,7 +16,7 @@ export default function ProductNutriments({setNutriments}) {
   const [ index, setIndex ] = React.useState(0)
   const [ products, setProducts ] = React.useState([])
 
-  useEffect(() => {
+  React.useEffect(() => {
     console.log('fetched')
     const productListUrl = getNutritionToFillUrl({page})
   fetch(productListUrl)
