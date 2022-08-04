@@ -216,7 +216,13 @@ export default function LogoAnnotation() {
       >
         {t("logos.annotations")}
       </Box>
-
+      <h3>How to Play</h3><ol>
+        <li>Select all The Logos from the logo grid that look similar</li>
+        <li>You can only select Logos which are <strong>NOT</strong> highlighted in grey</li>
+        <li>After the selection, in the 'Value' box below fill the common value in all logos. </li>
+        <li>Proceed and select the 'Type' box with the type of value you have filled </li>
+        <li>Click on the 'Update' to Annotate the Logos and Your Done !</li>
+        </ol>
       <LogoForm
         // TODO: if the logoSearchParams.logo_id is defined and the first logo ios labelised, values should by default be initialized with its values
         value=""
@@ -224,7 +230,7 @@ export default function LogoAnnotation() {
         request={request(selectedIds)}
         isLoading={logoState.isLoading}
       />
-
+      
       <LogoGrid
         logos={logoState.logos.filter((logo) => logo.selected)}
         toggleLogoSelection={toggleSelection}
