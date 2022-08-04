@@ -6,7 +6,7 @@ import { Button, Modal } from "@mui/material";
 import QuestionCard from "../../components/QuestionCard";
 import { localFavorites } from "../../localeStorageManager";
 import HomeCards from "./homeCards";
-import { useTheme } from '@mui/material/styles';
+import { useTheme } from "@mui/material/styles";
 
 const Home = () => {
   const theme = useTheme();
@@ -19,7 +19,7 @@ const Home = () => {
   const handleClose = () => setOpen(false);
   return (
     <>
-    <Box sx={{ p: 2, alignItems: "center" }}>
+      <Box sx={{ p: 2, alignItems: "center" }}>
         <Typography
           variant="h5"
           sx={{ margin: "20px auto", textAlign: "center" }}
@@ -35,13 +35,13 @@ const Home = () => {
             Saved Filters
           </Typography>
         )}
-      <Stack spacing={4} flexWrap="wrap" direction="row">
-        {savedQuestions.map((props) => (
-          <Box sx={{ marginBottom: 5 }} key={props.title}>
-            <QuestionCard showFilterResume editableTitle {...props} />
-          </Box>
-        ))}
-      </Stack>
+        <Stack spacing={4} flexWrap="wrap" direction="row">
+          {savedQuestions.map((props) => (
+            <Box sx={{ marginBottom: 5 }} key={props.title}>
+              <QuestionCard showFilterResume editableTitle {...props} />
+            </Box>
+          ))}
+        </Stack>
       </Box>
       <Box
         padding={{ xs: "20px", sm: "50px" }}
@@ -108,7 +108,7 @@ const Home = () => {
         aria-describedby="modal-contribution-information"
       >
         <Box
-        width={{xs:"90%",sm:"50%"}}
+          width={{ xs: "90%", sm: "50%" }}
           sx={{
             backgroundColor: theme.palette.secondary.main,
             color: theme.palette.secondary.contrastText,
@@ -119,23 +119,36 @@ const Home = () => {
             padding: "20px",
           }}
         >
-          <Typography id="modal-contribution-title" variant="h6" component="h2" fontWeight={700}>
+          <Typography
+            id="modal-contribution-title"
+            variant="h6"
+            component="h2"
+            fontWeight={700}
+          >
             Your contribution matters
           </Typography>
-          <Typography class="modal-contribution-information" sx={{ mt: 2 }} component="p">
+          <Typography
+            class="modal-contribution-information"
+            sx={{ mt: 2 }}
+            component="p"
+          >
             Hunger Games is an effort to leverage the results of our OCR. When
             you use Hunger Games by Open Food Facts, you improve our entire
             database which helps the community make better food choices. We
             gathers your annotations and use them to make Open Food Facts more
-            accurate and effecient. 
-            </Typography>
-          <Typography class="modal-contribution-information" sx={{ mt: 2 }} component="p">
+            accurate and effecient.
+          </Typography>
+          <Typography
+            class="modal-contribution-information"
+            sx={{ mt: 2 }}
+            component="p"
+          >
             Thank you for helping us improve Open Food Facts so that more people
             can use it easily.
           </Typography>
         </Box>
       </Modal>
-      </>
+    </>
   );
 };
 

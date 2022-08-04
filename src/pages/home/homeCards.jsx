@@ -44,7 +44,7 @@ const HomeCards = () => {
     >
       {cards.map((cardInfo) => (
         <Card sx={{ width: 350, height: 300 }} key={cardInfo.title}>
-        <CardActionArea component={Link} to={cardInfo.link}>     
+          <CardActionArea component={Link} to={cardInfo.link}>
             <CardMedia
               component="img"
               height="200"
@@ -65,8 +65,8 @@ const HomeCards = () => {
                 {cardInfo.desc}
               </Typography>
             </CardContent>
-            </CardActionArea>
-          </Card>
+          </CardActionArea>
+        </Card>
       ))}
     </Stack>
   );
