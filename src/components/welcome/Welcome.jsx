@@ -61,7 +61,7 @@ const steps = [
   },
   {
     style: styles,
-    selector: ".questions",
+    selector: '[data-welcome-tour="questions"]',
     content: () => (
       <Box>
         <Box sx={{ display: "flex" }}>
@@ -116,7 +116,7 @@ const steps = [
   },
   {
     style: styles,
-    selector: ".logos",
+    selector: '[data-welcome-tour="logos"]',
     content: () => (
       <Box>
         <Box sx={{ display: "flex" }}>
@@ -166,7 +166,7 @@ const steps = [
   },
   {
     style: styles,
-    selector: ".eco-score",
+    selector: '[data-welcome-tour="eco-score"]',
     content: () => (
       <Box>
         <Box sx={{ display: "flex" }}>
@@ -221,7 +221,7 @@ const steps = [
     ),
   },
   {
-    selector: ".settings",
+    selector: '[data-welcome-tour="settings"]',
     content: () => (
       <Box>
         <Box sx={{ display: "flex" }}>
@@ -254,7 +254,7 @@ const steps = [
     ),
   },
   {
-    selector: ".tour",
+    selector: '[data-welcome-tour="tour"]',
     content: () => (
       <Box>
         <Box sx={{ display: "flex" }}>
@@ -290,7 +290,6 @@ const steps = [
 
 const Welcome = () => {
   const theme = useTheme();
-  const [showTour, setShowTour] = React.useState(getTour);
   const [isTourOpen, setIsTourOpen] = useState(false);
   const handleShowTour = () => {
     setIsTourOpen(false);
@@ -299,11 +298,12 @@ const Welcome = () => {
 
   React.useEffect(() => {
     if (getTour()) setIsTourOpen(true);
-  }, [showTour]);
+  }, []);
   return (
     <>
       <Tour
         steps={steps}
+        startAt={0}
         isOpen={isTourOpen}
         showButtons={true}
         accentColor={theme.palette.primary.main}
@@ -316,7 +316,7 @@ const Welcome = () => {
         onClick={() => {
           setIsTourOpen(true);
         }}
-        className="tour"
+        data-welcome-tour="tour"
       >
         <QuestionMarkIcon />
       </Button>

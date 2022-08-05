@@ -177,7 +177,7 @@ const ResponsiveAppBar = () => {
                     sx={{ my: 2, mr:1, display: "block", textAlign: 'center'}}
                     component={Link}
                     to={`/${page.url}`}
-                    className={page.url}
+                    data-welcome-tour={page.url}
                   >
                     {page.url === 'settings' ? <SettingsIcon /> : t(page.translationKey)}
                   </Button>
@@ -196,7 +196,7 @@ const ResponsiveAppBar = () => {
               onClick={handleCloseNavMenu}
               component={Link}
               to={`/settings`}
-              className="settings"
+              data-welcome-tour="settings"
             >
               <SettingsIcon />
             </Button>
