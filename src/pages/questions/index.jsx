@@ -43,6 +43,7 @@ export default function Questions() {
             question={question}
             answerQuestion={answerQuestion}
             resetFilters={resetFilters}
+            filterState={filterState}
           />
         </Stack>
       </Grid>
