@@ -152,13 +152,69 @@ const steps = [
             </Typography>
           </Box>
           <img
-            alt="questions game"
+            alt="logos game"
             style={{
               maxWidth: "50%",
               height: "auto",
               justifyContent: "center",
             }}
             src={require("../../assets/logosGame.png")}
+          />
+        </Box>
+      </Box>
+    ),
+  },
+  {
+    style: styles,
+    selector: ".eco-score",
+    content: () => (
+      <Box>
+        <Box sx={{ display: "flex" }}>
+          <img
+            alt="logo"
+            style={{
+              maxWidth: "50px",
+              height: "auto",
+              flex: "20%",
+            }}
+            src={require("../../assets/logo.png")}
+          />
+          <Typography
+            variant="h6"
+            component="h2"
+            sx={{ flex: "80%", marginTop: "8px" }}
+          >
+            Eco-Score Questions Game
+          </Typography>
+        </Box>
+        <Box
+          sx={{ display: "flex", flexDirection: { xs: "column", md: "row" } }}
+        >
+          <Box>
+            <Typography component="p" sx={{ mt: 2 }}>
+              Help us finish the remaining questions in the most high priority
+              labels!
+            </Typography>
+            <Typography component="p" sx={{ mt: 2 }}>
+              These cards are linked to labels used in the computation of the
+              eco-score.
+            </Typography>
+            <Typography component="p" sx={{ mt: 2 }}>
+              <strong>What is Eco-Score?</strong>
+            </Typography>
+            <Typography component="p">
+              Eco-Score captures the total environmental footprint, making it
+              easier for consumers to compare products and decide which is better for the environment.
+            </Typography>
+          </Box>
+          <img
+            alt="eco score game"
+            style={{
+              maxWidth: "50%",
+              height: "auto",
+              justifyContent: "center",
+            }}
+            src={require("../../assets/ecoScoreGame.png")}
           />
         </Box>
       </Box>
