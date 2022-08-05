@@ -11,9 +11,11 @@ import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import ListSubheader from "@mui/material/ListSubheader";
 import MuiLink from "@mui/material/Link";
-import SettingsIcon from '@mui/icons-material/Settings';
+import SettingsIcon from "@mui/icons-material/Settings";
+import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 
 import DevModeContext from "../contexts/devMode";
+import LoginContext from "../contexts/login";
 import logo from "../assets/logo.png";
 import { Link } from "react-router-dom";
 
@@ -43,6 +45,7 @@ const ResponsiveAppBar = () => {
   };
 
   const { devMode: isDevMode } = React.useContext(DevModeContext);
+  const { isLoggedIn } = React.useContext(LoginContext);
 
   const displayedPages = pages.filter(
     (page) => page.url !== "insights" || isDevMode
@@ -53,7 +56,14 @@ const ResponsiveAppBar = () => {
       <Container maxWidth={null}>
         <Toolbar disableGutters>
           {/* Mobile content */}
-          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
+          <Box
+            sx={{
+              flexGrow: 1,
+              display: { xs: "flex", md: "none" },
+              alignItems: "center",
+              justifyContent: "space-between",
+            }}
+          >
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -101,62 +111,13 @@ const ResponsiveAppBar = () => {
                 )
               )}
             </Menu>
-          </Box>
-          <Typography
-            variant="h5"
-            noWrap
-            component="a"
-            href=""
-            sx={{
-              mr: 2,
-              display: { xs: "flex", md: "none" },
-              flexGrow: 1,
-              fontFamily: "monospace",
-              fontWeight: 700,
-              letterSpacing: ".3rem",
-              color: "inherit",
-              textDecoration: "none",
-            }}
-          >
-            Hunger Games
-          </Typography>
-
-          {/* Desktop content */}
-          <Box
-            sx={{
-              display: { xs: "none", md: "flex" },
-              flexDirection: "row",
-              alignItems: "center",
-              width: '100%',
-              justifyContent: 'space-between'
-            }}
-          >
-          <Box
-            sx={{
-              display: { xs: "none", md: "flex" },
-              flexDirection: "row",
-              alignItems: "baseline",
-            }}
-          >
-            <MuiLink
-              sx={{ mr: 1, display: "flex", alignSelf: 'center' }}
-              href="https://world.openfoodfacts.org/"
-              target="_blank"
-            >
-              <img
-                src={logo}
-                width="30px"
-                height="30px"
-                alt="OpenFoodFact logo"
-              />
-            </MuiLink>
             <Typography
-              variant="h6"
+              variant="h5"
               noWrap
               component="a"
-              href="/"
+              href=""
               sx={{
-                mr: 2,
+                flexGrow: 0,
                 fontFamily: "monospace",
                 fontWeight: 700,
                 letterSpacing: ".3rem",
@@ -166,6 +127,54 @@ const ResponsiveAppBar = () => {
             >
               Hunger Games
             </Typography>
+            <AccountCircleIcon color={isLoggedIn ? "success" : "error"} />
+          </Box>
+
+          {/* Desktop content */}
+          <Box
+            sx={{
+              display: { xs: "none", md: "flex" },
+              flexDirection: "row",
+              alignItems: "center",
+              width: "100%",
+              justifyContent: "space-between",
+            }}
+          >
+            <Box
+              sx={{
+                display: { xs: "none", md: "flex" },
+                flexDirection: "row",
+                alignItems: "baseline",
+              }}
+            >
+              <MuiLink
+                sx={{ mr: 1, display: "flex", alignSelf: "center" }}
+                href="https://world.openfoodfacts.org/"
+                target="_blank"
+              >
+                <img
+                  src={logo}
+                  width="30px"
+                  height="30px"
+                  alt="OpenFoodFact logo"
+                />
+              </MuiLink>
+              <Typography
+                variant="h6"
+                noWrap
+                component="a"
+                href="/"
+                sx={{
+                  mr: 2,
+                  fontFamily: "monospace",
+                  fontWeight: 700,
+                  letterSpacing: ".3rem",
+                  color: "inherit",
+                  textDecoration: "none",
+                }}
+              >
+                Hunger Games
+              </Typography>
 
               {displayedPages.map((page) =>
                 page.url ? (
@@ -173,21 +182,24 @@ const ResponsiveAppBar = () => {
                     color="inherit"
                     key={page.url}
                     onClick={handleCloseNavMenu}
-                    sx={{ my: 2, mr:1, display: "block", textAlign: 'center'}}
+                    sx={{ my: 2, mr: 1, display: "block", textAlign: "center" }}
                     component={Link}
                     to={`/${page.url}`}
                   >
-                    {page.url === 'settings' ? <SettingsIcon /> : t(page.translationKey)}
+                    {page.url === "settings" ? (
+                      <SettingsIcon />
+                    ) : (
+                      t(page.translationKey)
+                    )}
                   </Button>
                 ) : null
               )}
-
-          </Box>
+            </Box>
 
             <Button
               color="inherit"
               onClick={handleCloseNavMenu}
-              sx={{ my: 2, display: "block"}}
+              sx={{ my: 2, display: "block" }}
               component={Link}
               to={`/settings`}
             >
