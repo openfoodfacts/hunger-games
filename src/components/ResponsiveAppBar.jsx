@@ -177,22 +177,32 @@ const ResponsiveAppBar = () => {
                     sx={{ my: 2, mr:1, display: "block", textAlign: 'center'}}
                     component={Link}
                     to={`/${page.url}`}
+                    className={page.url}
                   >
                     {page.url === 'settings' ? <SettingsIcon /> : t(page.translationKey)}
                   </Button>
                 ) : null
               )}
           </Box>
-          </Box>
-            <Button
+          <Box
+            sx={{
+              display: { xs: "none", md: "flex" },
+              flexDirection: "row",
+              alignItems: "baseline",
+            }}
+          >
+          <Button
               color="inherit"
               onClick={handleCloseNavMenu}
               component={Link}
               to={`/settings`}
+              className="settings"
             >
               <SettingsIcon />
             </Button>
           <Welcome />
+          </Box>
+          </Box>
         </Toolbar>
       </Container>
     </AppBar>

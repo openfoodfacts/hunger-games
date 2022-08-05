@@ -7,18 +7,21 @@ import {
   localSettingsKeys,
   getTour,
 } from "../../localeStorageManager";
+import { useTheme } from "@mui/material/styles";
+
+const styles = {
+  minWidth: "min(95%, 700px)",
+  position: "absolute",
+  left: "50%",
+  top: "50%",
+  transform: "translate(-50%, -50%)",
+};
 
 const steps = [
   {
-    style: {
-      minWidth: "750px",
-    },
+    style: styles,
     content: () => (
-      <Box
-        sx={{
-          minWidth: "500px",
-        }}
-      >
+      <Box>
         <div style={{ display: "flex" }}>
           <img
             alt="logo"
@@ -57,16 +60,10 @@ const steps = [
     ),
   },
   {
-    style: {
-      minWidth: "750px",
-    },
+    style: styles,
     selector: ".questions",
     content: () => (
-      <Box
-        sx={{
-          minWidth: "500px",
-        }}
-      >
+      <Box>
         <div style={{ display: "flex" }}>
           <img
             alt="logo"
@@ -107,6 +104,7 @@ const steps = [
 ];
 
 const Welcome = () => {
+  const theme = useTheme();
   const [showTour, setShowTour] = React.useState(getTour);
   const [isTourOpen, setIsTourOpen] = useState(false);
   const handleShowTour = () => {
@@ -123,6 +121,7 @@ const Welcome = () => {
         steps={steps}
         isOpen={isTourOpen}
         showButtons={true}
+        accentColor={theme.palette.primary.main}
         onRequestClose={() => {
           handleShowTour();
         }}
