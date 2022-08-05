@@ -200,7 +200,7 @@ const ResponsiveAppBar = () => {
             >
               <SettingsIcon />
             </Button>
-          <Welcome />
+          <Welcome/>
           </Box>
           </Box>
         </Toolbar>

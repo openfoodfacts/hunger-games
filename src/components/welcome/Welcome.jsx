@@ -220,6 +220,72 @@ const steps = [
       </Box>
     ),
   },
+  {
+    selector: ".settings",
+    content: () => (
+      <Box>
+        <Box sx={{ display: "flex" }}>
+          <img
+            alt="logo"
+            style={{
+              maxWidth: "50px",
+              height: "auto",
+              flex: "20%",
+            }}
+            src={require("../../assets/logo.png")}
+          />
+          <Typography
+            variant="h6"
+            component="h2"
+            sx={{ marginTop: "8px" }}
+          >
+            Settings
+          </Typography>
+        </Box>
+          <Box>
+            <Typography component="p" sx={{ mt: 2 }}>
+              Set your preferred language, and report issues from our settings page.
+            </Typography>
+            <Typography component="p" sx={{ mt: 2 }}>
+              If you're a developer, you can also explore our database content using our dev mode.
+            </Typography>
+          </Box>
+      </Box>
+    ),
+  },
+  {
+    selector: ".tour",
+    content: () => (
+      <Box>
+        <Box sx={{ display: "flex" }}>
+          <img
+            alt="logo"
+            style={{
+              maxWidth: "50px",
+              height: "auto",
+              flex: "20%",
+            }}
+            src={require("../../assets/logo.png")}
+          />
+          <Typography
+            variant="h6"
+            component="h2"
+            sx={{ marginTop: "8px" }}
+          >
+            Tour
+          </Typography>
+        </Box>
+          <Box>
+            <Typography component="p" sx={{ mt: 2 }}>
+              Got stuck somewhere? Want to take the tour again?
+            </Typography>
+            <Typography component="p" sx={{ mt: 2 }}>
+              Just click on the question mark and start the journey again!
+            </Typography>
+          </Box>
+      </Box>
+    ),
+  },
 ];
 
 const Welcome = () => {
@@ -250,6 +316,7 @@ const Welcome = () => {
         onClick={() => {
           setIsTourOpen(true);
         }}
+        className="tour"
       >
         <QuestionMarkIcon />
       </Button>
