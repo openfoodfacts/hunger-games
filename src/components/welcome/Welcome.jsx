@@ -95,7 +95,7 @@ const steps = [
               You can also use your keyboard keys o,n and k.
             </Typography>
             <Typography component="p" sx={{ mt: 2 }}>
-              You can <strong>filter</strong> the products based on country, brands, popularity and much more! 
+              You can <strong>filter</strong> the products based on country, brands, popularity and much more!
             </Typography>
             <Typography component="p" sx={{ mt: 2 }}>
             If you don't want to do this every single time, you can also <strong>save the filters</strong> by clicking on the star. Next time you come back, find the saved filters on the home page itself
@@ -109,6 +109,56 @@ const steps = [
               justifyContent: "center"
             }}
             src={require("../../assets/questionsGame.png")}
+          />
+        </Box>
+      </Box>
+    ),
+  },
+  {
+    style: styles,
+    selector: ".logos",
+    content: () => (
+      <Box>
+        <Box sx={{ display: "flex" }}>
+          <img
+            alt="logo"
+            style={{
+              maxWidth: "50px",
+              height: "auto",
+              flex: "20%",
+            }}
+            src={require("../../assets/logo.png")}
+          />
+          <Typography
+            variant="h6"
+            component="h2"
+            sx={{ flex: "80%", marginTop: "8px" }}
+          >
+            Logos Game
+          </Typography>
+        </Box>
+        <Box
+          sx={{ display: "flex", flexDirection: { xs: "column", md: "row" } }}
+        >
+          <Box>
+            <Typography component="p" sx={{ mt: 2 }}>
+              Our another really loved game is the logos game where you have to
+              <strong> select all the logos</strong> you feel are the same.
+            </Typography>
+            <Typography component="p" sx={{ mt: 2 }}>
+              As shown in the example, once you select all the similar logos,
+              just type their value and select where it is a brand, a label or
+              something else. It's that simple!
+            </Typography>
+          </Box>
+          <img
+            alt="questions game"
+            style={{
+              maxWidth: "50%",
+              height: "auto",
+              justifyContent: "center",
+            }}
+            src={require("../../assets/logosGame.png")}
           />
         </Box>
       </Box>
