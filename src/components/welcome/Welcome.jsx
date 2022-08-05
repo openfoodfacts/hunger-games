@@ -1,7 +1,6 @@
 import { Button, Box, Typography } from "@mui/material";
 import React, { useState } from "react";
 import Tour from "reactour";
-import Buttons from "./Buttons";
 import QuestionMarkIcon from "@mui/icons-material/QuestionMark";
 
 const Welcome = () => {
@@ -50,8 +49,6 @@ const Welcome = () => {
             icon at the top right of the page, and you can reach us on slack at
             the #hunger-games channel
           </Typography>
-          <hr />
-          <Buttons />
         </Box>
       ),
     },
@@ -100,8 +97,6 @@ const Welcome = () => {
             icon at the top right of the page, and you can reach us on slack at
             the #hunger-games channel
           </Typography>
-          <hr />
-          <Buttons />
         </Box>
       ),
     },
