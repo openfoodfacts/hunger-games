@@ -299,7 +299,7 @@ const Welcome = () => {
 
   React.useEffect(() => {
     if (getTour()) setIsTourOpen(true);
-  }, [showTour]);
+  }, []);
   return (
     <>
       <Tour
