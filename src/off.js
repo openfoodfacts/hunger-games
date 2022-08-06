@@ -31,7 +31,7 @@ const offService = {
         isNext = true;
       } else if (isNext) {
         username = el;
-        isNext = false   ;
+        isNext = false;
       }
     });
     return username;
