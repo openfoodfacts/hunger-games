@@ -6,6 +6,7 @@ export const localSettingsKeys = {
   language: "lang",
   isDevMode: "devMode",
   hideImages: "questions_hideImages",
+  showTour: "showTour",
 };
 
 export const localSettings = {
@@ -37,6 +38,11 @@ export const getIsDevMode = () => {
 export const getHideImages = () => {
   const settings = localSettings.fetch();
   return settings[localSettingsKeys.hideImages] ?? true;
+};
+
+export const getTour = () => {
+  const settings = localSettings.fetch();
+  return settings[localSettingsKeys.showTour] ?? true;
 };
 
 export const getLang = () => {
