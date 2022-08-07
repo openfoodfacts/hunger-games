@@ -11,13 +11,14 @@ import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import ListSubheader from "@mui/material/ListSubheader";
 import MuiLink from "@mui/material/Link";
-import SettingsIcon from '@mui/icons-material/Settings';
+import SettingsIcon from "@mui/icons-material/Settings";
 
 import DevModeContext from "../contexts/devMode";
 import logo from "../assets/logo.png";
 import { Link } from "react-router-dom";
 
 import { useTranslation } from "react-i18next";
+import Welcome from "./welcome/Welcome";
 
 // Object wit no url are subheader in the menu
 const pages = [
@@ -127,45 +128,45 @@ const ResponsiveAppBar = () => {
               display: { xs: "none", md: "flex" },
               flexDirection: "row",
               alignItems: "center",
-              width: '100%',
-              justifyContent: 'space-between'
+              width: "100%",
+              justifyContent: "space-between",
             }}
           >
-          <Box
-            sx={{
-              display: { xs: "none", md: "flex" },
-              flexDirection: "row",
-              alignItems: "baseline",
-            }}
-          >
-            <MuiLink
-              sx={{ mr: 1, display: "flex", alignSelf: 'center' }}
-              href="https://world.openfoodfacts.org/"
-              target="_blank"
-            >
-              <img
-                src={logo}
-                width="30px"
-                height="30px"
-                alt="OpenFoodFact logo"
-              />
-            </MuiLink>
-            <Typography
-              variant="h6"
-              noWrap
-              component="a"
-              href="/"
+            <Box
               sx={{
-                mr: 2,
-                fontFamily: "monospace",
-                fontWeight: 700,
-                letterSpacing: ".3rem",
-                color: "inherit",
-                textDecoration: "none",
+                display: { xs: "none", md: "flex" },
+                flexDirection: "row",
+                alignItems: "baseline",
               }}
             >
-              Hunger Games
-            </Typography>
+              <MuiLink
+                sx={{ mr: 1, display: "flex", alignSelf: "center" }}
+                href="https://world.openfoodfacts.org/"
+                target="_blank"
+              >
+                <img
+                  src={logo}
+                  width="30px"
+                  height="30px"
+                  alt="OpenFoodFact logo"
+                />
+              </MuiLink>
+              <Typography
+                variant="h6"
+                noWrap
+                component="a"
+                href="/"
+                sx={{
+                  mr: 2,
+                  fontFamily: "monospace",
+                  fontWeight: 700,
+                  letterSpacing: ".3rem",
+                  color: "inherit",
+                  textDecoration: "none",
+                }}
+              >
+                Hunger Games
+              </Typography>
 
               {displayedPages.map((page) =>
                 page.url ? (
@@ -173,26 +174,39 @@ const ResponsiveAppBar = () => {
                     color="inherit"
                     key={page.url}
                     onClick={handleCloseNavMenu}
-                    sx={{ my: 2, mr:1, display: "block", textAlign: 'center'}}
+                    sx={{ my: 2, mr: 1, display: "block", textAlign: "center" }}
                     component={Link}
                     to={`/${page.url}`}
+                    data-welcome-tour={page.url}
                   >
-                    {page.url === 'settings' ? <SettingsIcon /> : t(page.translationKey)}
+                    {page.url === "settings" ? (
+                      <SettingsIcon />
+                    ) : (
+                      t(page.translationKey)
+                    )}
                   </Button>
                 ) : null
               )}
-
-          </Box>
-
-            <Button
-              color="inherit"
-              onClick={handleCloseNavMenu}
-              sx={{ my: 2, display: "block"}}
-              component={Link}
-              to={`/settings`}
+            </Box>
+            <Box
+              sx={{
+                display: "flex",
+                flexDirection: "row",
+                alignItems: "baseline",
+              }}
             >
-              <SettingsIcon />
-            </Button>
+              <Button
+                color="inherit"
+                onClick={handleCloseNavMenu}
+                sx={{ my: 2, display: "block" }}
+                component={Link}
+                to={`/settings`}
+                data-welcome-tour="settings"
+              >
+                <SettingsIcon />
+              </Button>
+              <Welcome />
+            </Box>
           </Box>
         </Toolbar>
       </Container>

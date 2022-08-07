@@ -53,7 +53,7 @@ git push origin <type>/<issue-issueNumber>/{<additional-fixes>}
 ```bash
 ## Clean your code
 
-# Run prettier to format your code 
+# Run prettier to format your code
 yarn prettier
 
 ## Committing and pushing your work
