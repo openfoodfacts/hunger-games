@@ -77,7 +77,7 @@ export default function NutriscoreValidator() {
         <Box sx={{ mx: 2, width: 500, maxWidth: 500, textAlign: "left" }}>
           <Typography gutterBottom>Image sizes</Typography>
           <Slider
-            aria-label="Temperature"
+            aria-label="Image size"
             defaultValue={imageSize}
             onChangeCommitted={(event, newValue) => setImageSize(newValue)}
             valueLabelDisplay="auto"
