@@ -8,6 +8,7 @@ import {
   getTour,
 } from "../../localeStorageManager";
 import { useTheme } from "@mui/material/styles";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 const styles = {
   minWidth: "min(90%, 800px)",
@@ -17,7 +18,7 @@ const styles = {
   transform: "translate(-50%, -50%)",
 };
 
-const steps = [
+const getSteps = (withSelector) => [
   {
     style: styles,
     content: () => (
@@ -61,7 +62,7 @@ const steps = [
   },
   {
     style: styles,
-    selector: '[data-welcome-tour="questions"]',
+    selector: withSelector ? '[data-welcome-tour="questions"]' : undefined,
     content: () => (
       <Box>
         <Box sx={{ display: "flex" }}>
@@ -82,23 +83,28 @@ const steps = [
             Questions Game
           </Typography>
         </Box>
-        <Box sx={{ display: "flex", flexDirection:{xs:"column",md:"row"} }}>
+        <Box
+          sx={{ display: "flex", flexDirection: { xs: "column", md: "row" } }}
+        >
           <Box>
             <Typography component="p" sx={{ mt: 2 }}>
               Does the food product belong to this brand?
             </Typography>
             <Typography component="p" sx={{ mt: 2 }}>
-              Answer simply with a <strong>yes/no</strong>! Don't know the answer? That's
-              alright, just skip it.
+              Answer simply with a <strong>yes/no</strong>! Don't know the
+              answer? That's alright, just skip it.
             </Typography>
             <Typography component="p">
               You can also use your keyboard keys o,n and k.
             </Typography>
             <Typography component="p" sx={{ mt: 2 }}>
-              You can <strong>filter</strong> the products based on country, brands, popularity and much more!
+              You can <strong>filter</strong> the products based on country,
+              brands, popularity and much more!
             </Typography>
             <Typography component="p" sx={{ mt: 2 }}>
-            If you don't want to do this every single time, you can also <strong>save the filters</strong> by clicking on the star. Next time you come back, find the saved filters on the home page itself
+              If you don't want to do this every single time, you can also{" "}
+              <strong>save the filters</strong> by clicking on the star. Next
+              time you come back, find the saved filters on the home page itself
             </Typography>
           </Box>
           <img
@@ -106,7 +112,7 @@ const steps = [
             style={{
               maxWidth: "50%",
               height: "auto",
-              justifyContent: "center"
+              justifyContent: "center",
             }}
             src={require("../../assets/questionsGame.png")}
           />
@@ -116,7 +122,7 @@ const steps = [
   },
   {
     style: styles,
-    selector: '[data-welcome-tour="logos"]',
+    selector: withSelector ? '[data-welcome-tour="logos"]' : undefined,
     content: () => (
       <Box>
         <Box sx={{ display: "flex" }}>
@@ -166,7 +172,7 @@ const steps = [
   },
   {
     style: styles,
-    selector: '[data-welcome-tour="eco-score"]',
+    selector: withSelector ? '[data-welcome-tour="eco-score"]' : undefined,
     content: () => (
       <Box>
         <Box sx={{ display: "flex" }}>
@@ -204,7 +210,8 @@ const steps = [
             </Typography>
             <Typography component="p">
               Eco-Score captures the total environmental footprint, making it
-              easier for consumers to compare products and decide which is better for the environment.
+              easier for consumers to compare products and decide which is
+              better for the environment.
             </Typography>
           </Box>
           <img
@@ -221,7 +228,7 @@ const steps = [
     ),
   },
   {
-    selector: '[data-welcome-tour="settings"]',
+    selector: withSelector ? '[data-welcome-tour="settings"]' : undefined,
     content: () => (
       <Box>
         <Box sx={{ display: "flex" }}>
@@ -234,27 +241,25 @@ const steps = [
             }}
             src={require("../../assets/logo.png")}
           />
-          <Typography
-            variant="h6"
-            component="h2"
-            sx={{ marginTop: "8px" }}
-          >
+          <Typography variant="h6" component="h2" sx={{ marginTop: "8px" }}>
             Settings
           </Typography>
         </Box>
-          <Box>
-            <Typography component="p" sx={{ mt: 2 }}>
-              Set your preferred language, and report issues from our settings page.
-            </Typography>
-            <Typography component="p" sx={{ mt: 2 }}>
-              If you're a developer, you can also explore our database content using our dev mode.
-            </Typography>
-          </Box>
+        <Box>
+          <Typography component="p" sx={{ mt: 2 }}>
+            Set your preferred language, and report issues from our settings
+            page.
+          </Typography>
+          <Typography component="p" sx={{ mt: 2 }}>
+            If you're a developer, you can also explore our database content
+            using our dev mode.
+          </Typography>
+        </Box>
       </Box>
     ),
   },
   {
-    selector: '[data-welcome-tour="tour"]',
+    selector: withSelector ? '[data-welcome-tour="tour"]' : undefined,
     content: () => (
       <Box>
         <Box sx={{ display: "flex" }}>
@@ -267,22 +272,18 @@ const steps = [
             }}
             src={require("../../assets/logo.png")}
           />
-          <Typography
-            variant="h6"
-            component="h2"
-            sx={{ marginTop: "8px" }}
-          >
+          <Typography variant="h6" component="h2" sx={{ marginTop: "8px" }}>
             Tour
           </Typography>
         </Box>
-          <Box>
-            <Typography component="p" sx={{ mt: 2 }}>
-              Got stuck somewhere? Want to take the tour again?
-            </Typography>
-            <Typography component="p" sx={{ mt: 2 }}>
-              Just click on the question mark and start the journey again!
-            </Typography>
-          </Box>
+        <Box>
+          <Typography component="p" sx={{ mt: 2 }}>
+            Got stuck somewhere? Want to take the tour again?
+          </Typography>
+          <Typography component="p" sx={{ mt: 2 }}>
+            Just click on the question mark and start the journey again!
+          </Typography>
+        </Box>
       </Box>
     ),
   },
@@ -290,6 +291,8 @@ const steps = [
 
 const Welcome = () => {
   const theme = useTheme();
+  const isDesktop = useMediaQuery(theme.breakpoints.up("sm"));
+
   const [isTourOpen, setIsTourOpen] = useState(false);
   const handleShowTour = () => {
     setIsTourOpen(false);
@@ -299,6 +302,8 @@ const Welcome = () => {
   React.useEffect(() => {
     if (getTour()) setIsTourOpen(true);
   }, []);
+
+  const steps = React.useMemo(() => getSteps(isDesktop), [isDesktop]);
   return (
     <>
       <Tour
