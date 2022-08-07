@@ -7,12 +7,15 @@ import Checkbox from "@mui/material/Checkbox";
 import Typography from "@mui/material/Typography";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import Grid from "@mui/material/Grid";
+import EditIcon from "@mui/icons-material/Edit";
+import VisibilityIcon from "@mui/icons-material/Visibility";
+import Table from "@mui/material/Table";
+import TableBody from "@mui/material/TableBody";
+import TableCell from "@mui/material/TableCell";
+import TableRow from "@mui/material/TableRow";
 
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
-
-import EditIcon from "@mui/icons-material/Edit";
-import VisibilityIcon from "@mui/icons-material/Visibility";
 
 import { useTranslation } from "react-i18next";
 import { NO_QUESTION_LEFT } from "../../const";
@@ -134,18 +137,40 @@ const ProductInformation = ({ question }) => {
 
       {/* Remaining info */}
       <Divider />
-      <p>
-        {t("questions.brands")}: {productData?.brands}
-      </p>
-      <p>
-        {t("questions.ingredients")}: {productData?.ingredientsText}
-      </p>
-      <p>
-        {t("questions.countries")}:{" "}
-        {!productData?.countriesTags
-          ? null
-          : `${productData.countriesTags.join(", ")}.`}
-      </p>
+
+      <Table size="small" aria-label="a dense table">
+        <TableBody
+          sx={{
+            " td, th": { border: "none" },
+            th: { verticalAlign: "top", pr: 0 },
+          }}
+        >
+          <TableRow>
+            <TableCell component="th" scope="row">
+              {t("questions.brands")}
+            </TableCell>
+            <TableCell>{productData?.brands}</TableCell>
+          </TableRow>
+
+          <TableRow>
+            <TableCell component="th" scope="row">
+              {t("questions.ingredients")}
+            </TableCell>
+            <TableCell>{productData?.ingredientsText}</TableCell>
+          </TableRow>
+
+          <TableRow>
+            <TableCell component="th" scope="row">
+              {t("questions.countries")}
+            </TableCell>
+            <TableCell>
+              {!productData?.countriesTags
+                ? null
+                : `${productData.countriesTags.join(", ")}.`}
+            </TableCell>
+          </TableRow>
+        </TableBody>
+      </Table>
       <Divider />
     </Box>
   );
