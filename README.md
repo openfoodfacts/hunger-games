@@ -24,7 +24,7 @@ The main goal is: Every OpenFoodFact user can annotate products in a few minutes
 
 ## Who do I talk to?
 
-- Join us at [https://openfoodfacts.slack.com/](https://openfoodfacts.slack.com/) in the channel #hunger-games. 
+- Join us at [https://openfoodfacts.slack.com/](https://openfoodfacts.slack.com/) in the channel #hunger-games.
 
 ## Requirements:
 
