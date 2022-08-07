@@ -8,7 +8,7 @@ import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
 import CancelOutlinedIcon from "@mui/icons-material/CancelOutlined";
 
 import { useTranslation } from "react-i18next";
-
+import { CORRECT_INSIGHT, WRONG_INSIGHT } from "../../const";
 import offService from "../../off";
 
 const NB_DISPLAYED_QUESTIONS = 30;
@@ -36,10 +36,10 @@ const UserData = ({ remainingQuestionNb = 0, answers = [] }) => {
               <Link href={offService.getProductEditUrl(barcode)}>
                 {insight_type}: {value}
               </Link>
-              {validationValue === 0 && (
+              {validationValue === WRONG_INSIGHT && (
                 <CancelOutlinedIcon color="error" sx={{ ml: 2 }} />
               )}
-              {validationValue === 1 && (
+              {validationValue === CORRECT_INSIGHT && (
                 <CheckCircleOutlineIcon color="success" sx={{ ml: 2 }} />
               )}
             </Stack>

@@ -18,6 +18,7 @@ import logo from "../assets/logo.png";
 import { Link } from "react-router-dom";
 
 import { useTranslation } from "react-i18next";
+import Welcome from "./welcome/Welcome";
 
 // Object wit no url are subheader in the menu
 const pages = [
@@ -175,6 +176,7 @@ const ResponsiveAppBar = () => {
                     sx={{ my: 2, display: "block" }}
                     component={Link}
                     to={`/${page.url}`}
+                    data-welcome-tour={page.url}
                   >
                     {page.url === "settings" ? (
                       <SettingsIcon />
@@ -185,16 +187,25 @@ const ResponsiveAppBar = () => {
                 ) : null
               )}
             </Box>
-
-            <Button
-              color="inherit"
-              onClick={handleCloseNavMenu}
-              sx={{ my: 2, display: "block" }}
-              component={Link}
-              to={`/settings`}
+            <Box
+              sx={{
+                display: "flex",
+                flexDirection: "row",
+                alignItems: "baseline",
+              }}
             >
-              <SettingsIcon />
-            </Button>
+              <Button
+                color="inherit"
+                onClick={handleCloseNavMenu}
+                sx={{ my: 2, display: "block" }}
+                component={Link}
+                to={`/settings`}
+                data-welcome-tour="settings"
+              >
+                <SettingsIcon />
+              </Button>
+              <Welcome />
+            </Box>
           </Box>
         </Toolbar>
       </Container>

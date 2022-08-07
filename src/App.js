@@ -54,7 +54,6 @@ export default function App() {
           <CssBaseline />
           <ResponsiveAppBar />
           <Routes>
-            {/* TODO: put a home page for root url */}
             <Route path="/" element={<Home />} />
             <Route path="/eco-score" element={<EcoScorePage />} />
             <Route path="/logos" element={<LogoAnnotationPage />} />
