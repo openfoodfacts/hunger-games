@@ -216,7 +216,7 @@ export default function LogoAnnotation() {
       >
         {t("logos.annotations")}
       </Box>
-
+      <p>Select all logos that are exactly the same, and give them a name like "en:EU Organic" and a type like "label".</p>
       <LogoForm
         // TODO: if the logoSearchParams.logo_id is defined and the first logo ios labelised, values should by default be initialized with its values
         value=""
