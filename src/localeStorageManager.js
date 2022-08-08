@@ -7,6 +7,8 @@ export const localSettingsKeys = {
   isDevMode: "devMode",
   hideImages: "questions_hideImages",
   showTour: "showTour",
+  showDatabase: "showDatabase",
+  showNutriscore: "showNutriscore",
 };
 
 export const localSettings = {
@@ -32,6 +34,16 @@ export const localSettings = {
 export const getIsDevMode = () => {
   const settings = localSettings.fetch();
   return settings[localSettingsKeys.isDevMode] ?? false;
+};
+
+export const getShowDatabase = () => {
+  const settings = localSettings.fetch();
+  return settings[localSettingsKeys.showDatabase] ?? false;
+};
+
+export const getShowNutriscore = () => {
+  const settings = localSettings.fetch();
+  return settings[localSettingsKeys.showNutriscore] ?? false;
 };
 
 /** Questions page: returns a boolean for hiding the images. Uses local storage.  */

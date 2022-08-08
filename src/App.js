@@ -16,7 +16,11 @@ import {
 } from "./pages";
 import ResponsiveAppBar from "./components/ResponsiveAppBar";
 import DevModeContext from "./contexts/devMode";
-import { getIsDevMode } from "./localeStorageManager";
+import {
+  getIsDevMode,
+  getShowDatabase,
+  getShowNutriscore,
+} from "./localeStorageManager";
 
 const theme = createTheme({
   palette: {
@@ -46,11 +50,22 @@ const theme = createTheme({
 
 export default function App() {
   const [devMode, setDevMode] = React.useState(getIsDevMode);
+  const [showDatabase, setShowDatabase] = React.useState(getShowDatabase);
+  const [showNutriscore, setShowNutriscore] = React.useState(getShowNutriscore);
 
   return (
     <Router>
       <ThemeProvider theme={theme}>
-        <DevModeContext.Provider value={{ devMode, setDevMode }}>
+        <DevModeContext.Provider
+          value={{
+            devMode,
+            setDevMode,
+            showDatabase,
+            setShowDatabase,
+            showNutriscore,
+            setShowNutriscore,
+          }}
+        >
           <CssBaseline />
           <ResponsiveAppBar />
           <Routes>
@@ -63,7 +78,6 @@ export default function App() {
             <Route path="/questions" element={<QuestionsPage />} />
             <Route path="/insights" element={<InsightsPage />} />
             <Route path="*" element={<NotFoundPage />} />
-
             <Route path="/nutriscore" element={<NutriscoreValidator />} />
           </Routes>
         </DevModeContext.Provider>

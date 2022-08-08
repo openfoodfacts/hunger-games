@@ -28,6 +28,7 @@ const pages = [
   { url: "eco-score", translationKey: "menu.eco-score" },
   { translationKey: "menu.manage" },
   { url: "insights", translationKey: "menu.insights" },
+  { url: "nutriscore", translationKey: "menu.nutritions" },
   // { url: "settings", translationKey: "menu.settings" },
 ];
 
@@ -43,11 +44,16 @@ const ResponsiveAppBar = () => {
     setAnchorElNav(null);
   };
 
-  const { devMode: isDevMode } = React.useContext(DevModeContext);
+  const { showDatabase } = React.useContext(DevModeContext);
+  const { showNutriscore} = React.useContext(DevModeContext);
 
-  const displayedPages = pages.filter(
-    (page) => page.url !== "insights" || isDevMode
+  const newPages = pages.filter(
+    (page) => page.url !== "insights" || showDatabase
   );
+
+  const displayedPages = newPages.filter(
+    (page) => page.url !== "nutriscore" || showNutriscore
+  )
 
   return (
     <AppBar position="static" color="secondary">

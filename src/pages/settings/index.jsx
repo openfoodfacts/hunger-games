@@ -18,11 +18,33 @@ export default function Settings() {
 
   const [language, setLanguage] = React.useState(i18n.language);
 
-  const { devMode, setDevMode } = React.useContext(DevModeContext);
+  const {
+    devMode,
+    setDevMode,
+    showDatabase,
+    setShowDatabase,
+    showNutriscore,
+    setShowNutriscore,
+  } = React.useContext(DevModeContext);
 
   const handleDevModeChange = (event) => {
     localSettings.update(localSettingsKeys.isDevMode, event.target.checked);
     setDevMode(event.target.checked);
+    setShowDatabase(event.target.checked);
+    setShowNutriscore(event.target.checked);
+  };
+
+  const handleDatabaseChange = (event) => {
+    localSettings.update(localSettingsKeys.showDatabase, event.target.checked);
+    setShowDatabase(event.target.checked);
+  };
+
+  const handleNutriscoreChange = (event) => {
+    localSettings.update(
+      localSettingsKeys.showNutriscore,
+      event.target.checked
+    );
+    setShowNutriscore(event.target.checked);
   };
 
   const handleLangChange = (e) => {
@@ -60,6 +82,24 @@ export default function Settings() {
           labelPlacement="end"
         />
       </div>
+      {devMode && (
+        <div>
+          <FormControlLabel
+            checked={showDatabase}
+            onChange={handleDatabaseChange}
+            control={<Switch />}
+            label="Show database"
+            labelPlacement="end"
+          />
+          <FormControlLabel
+            checked={showNutriscore}
+            onChange={handleNutriscoreChange}
+            control={<Switch />}
+            label="Show Nutri-Score game"
+            labelPlacement="end"
+          />
+        </div>
+      )}
       <div>
         <MuiLink
           href="https://github.com/openfoodfacts/hunger-games/issues"
