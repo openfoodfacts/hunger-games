@@ -3,21 +3,21 @@ import isEqual from "lodash.isequal";
 const STORAGE_KEY = "hunger-game-settings";
 
 export const localSettingsKeys = {
-  language: 'lang',
-  isDevMode: 'devMode',
-  hideImages: 'questions_hideImages',
-}
-
+  language: "lang",
+  isDevMode: "devMode",
+  hideImages: "questions_hideImages",
+  showTour: "showTour",
+};
 
 export const localSettings = {
   fetch: function () {
     let storedValue = {};
-    
-    try{
-      storedValue = JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}");
-    } catch(e){}
 
-    return (typeof storedValue === 'object')?storedValue:{};
+    try {
+      storedValue = JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}");
+    } catch (e) {}
+
+    return typeof storedValue === "object" ? storedValue : {};
   },
   save: function (settings) {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(settings));
@@ -38,6 +38,11 @@ export const getIsDevMode = () => {
 export const getHideImages = () => {
   const settings = localSettings.fetch();
   return settings[localSettingsKeys.hideImages] ?? true;
+};
+
+export const getTour = () => {
+  const settings = localSettings.fetch();
+  return settings[localSettingsKeys.showTour] ?? true;
 };
 
 export const getLang = () => {
