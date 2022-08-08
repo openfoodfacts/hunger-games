@@ -4,9 +4,9 @@ Hunger Games is a series of mini-apps that let users contribute data to Open Foo
 You are very welcome to write the game you want.
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://static.openfoodfacts.org/images/logos/off-logo-horizontal-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://static.openfoodfacts.org/images/logos/off-logo-horizontal-light.svg">
-  <img height="100" src="https://static.openfoodfacts.org/images/logos/off-logo-horizontal-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="https://static.openfoodfacts.org/images/logos/off-logo-horizontal-dark.png">
+  <source media="(prefers-color-scheme: light)" srcset="https://static.openfoodfacts.org/images/logos/off-logo-horizontal-light.png">
+  <img height="100" src="https://static.openfoodfacts.org/images/logos/off-logo-horizontal-light.png">
 </picture>
 
 ## Try it
