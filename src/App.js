@@ -53,22 +53,44 @@ export default function App() {
     userName: "",
     isLoggedIn: false,
   });
+  const lastSeenCookie = React.useRef(null);
 
-  const refresh = () => {
+  const refresh = React.useCallback(() => {
+    const sessionCookie = off.getCookie("session");
+    if (sessionCookie === lastSeenCookie.current) {
+      return;
+    }
+    if (!sessionCookie) {
+      setUserState({
+        userName: "",
+        isLoggedIn: false,
+      });
+      lastSeenCookie.current = sessionCookie;
+    }
     axios
       .get("https://world.openfoodfacts.org/cgi/auth.pl", {
         withCredentials: true,
       })
       .then((rep) => {
         const cookieUserName = off.getUsername();
-        setUserState({ userName: cookieUserName, isLoggedIn: true });
+        setUserState({
+          userName: cookieUserName,
+          isLoggedIn: true,
+        });
+        lastSeenCookie.current = sessionCookie;
       })
       .catch((err) => {
-        setUserState({ userName: "", isLoggedIn: false });
+        setUserState({
+          userName: "",
+          isLoggedIn: false,
+        });
+        lastSeenCookie.current = sessionCookie;
       });
-  };
+  }, []);
 
-  React.useEffect(refresh, []);
+  React.useEffect(() => {
+    refresh();
+  }, [refresh]);
 
   return (
     <Router>
