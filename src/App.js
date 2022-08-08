@@ -55,10 +55,10 @@ export default function App() {
   });
   const lastSeenCookie = React.useRef(null);
 
-  const refresh = React.useCallback(() => {
+  const refresh = React.useCallback(async () => {
     const sessionCookie = off.getCookie("session");
     if (sessionCookie === lastSeenCookie.current) {
-      return;
+      return userState.isLoggedIn;
     }
     if (!sessionCookie) {
       setUserState({
@@ -66,8 +66,9 @@ export default function App() {
         isLoggedIn: false,
       });
       lastSeenCookie.current = sessionCookie;
+      return false;
     }
-    axios
+    const isLoggedIn = await axios
       .get("https://world.openfoodfacts.org/cgi/auth.pl", {
         withCredentials: true,
       })
@@ -78,6 +79,7 @@ export default function App() {
           isLoggedIn: true,
         });
         lastSeenCookie.current = sessionCookie;
+        return true;
       })
       .catch((err) => {
         setUserState({
@@ -85,12 +87,20 @@ export default function App() {
           isLoggedIn: false,
         });
         lastSeenCookie.current = sessionCookie;
+        return false;
       });
-  }, []);
+
+    return isLoggedIn;
+  }, [userState.isLoggedIn]);
 
   React.useEffect(() => {
-    refresh();
-  }, [refresh]);
+    async function firstFetch() {
+      const isLoggedIn = await refresh();
+      console.log(isLoggedIn);
+    }
+
+    firstFetch();
+  });
 
   return (
     <Router>
