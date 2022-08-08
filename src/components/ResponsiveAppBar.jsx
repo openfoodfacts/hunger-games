@@ -45,15 +45,11 @@ const ResponsiveAppBar = () => {
   };
 
   const { showDatabase } = React.useContext(DevModeContext);
-  const { showNutriscore} = React.useContext(DevModeContext);
+  const { showNutriscore } = React.useContext(DevModeContext);
 
-  const newPages = pages.filter(
-    (page) => page.url !== "insights" || showDatabase
-  );
-
-  const displayedPages = newPages.filter(
-    (page) => page.url !== "nutriscore" || showNutriscore
-  )
+  const displayedPages = pages
+    .filter((page) => page.url !== "insights" || showDatabase)
+    .filter((page) => page.url !== "nutriscore" || showNutriscore);
 
   return (
     <AppBar position="static" color="secondary">
