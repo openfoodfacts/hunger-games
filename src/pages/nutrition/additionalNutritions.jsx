@@ -13,12 +13,10 @@ export default function AdditionalNutriments({options, setNutriments}) {
       id="nutrition-input"
       options={options}
       sx={{ width: 245, marginLeft: 2, marginTop: 2 }}
-      onChange={(event) => {
-        const nutrIndex = event.target.dataset.optionIndex
-        if (nutrIndex) {
-          setNutriments(prev => [...prev, options[nutrIndex]])
+      onChange={event => {
+        const nutrName = event.target.innerText
+          setNutriments(prev => prev.map( nutr => nutr.label === nutrName ? ({...nutr, display: true}) : nutr))
           setInputValue("")
-      }
       }}
       inputValue={inputValue}
       onInputChange={(event, newInputValue) => {
