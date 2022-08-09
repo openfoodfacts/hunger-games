@@ -4,9 +4,9 @@ Hunger Games is a series of mini-apps that let users contribute data to Open Foo
 You are very welcome to write the game you want.
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://static.openfoodfacts.org/images/logos/off-logo-horizontal-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://static.openfoodfacts.org/images/logos/off-logo-horizontal-light.svg">
-  <img height="100" src="https://static.openfoodfacts.org/images/logos/off-logo-horizontal-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="https://static.openfoodfacts.org/images/logos/off-logo-horizontal-dark.png">
+  <source media="(prefers-color-scheme: light)" srcset="https://static.openfoodfacts.org/images/logos/off-logo-horizontal-light.png">
+  <img height="100" src="https://static.openfoodfacts.org/images/logos/off-logo-horizontal-light.png">
 </picture>
 
 ## Try it
@@ -21,6 +21,10 @@ The production website is available at https://hunger.openfoodfacts.org
 - We then need to let users leverage this data to easily complete products, in a fun way, on their mobiles.
 
 The main goal is: Every OpenFoodFact user can annotate products in a few minutes.
+
+## Who do I talk to?
+
+- Join us at [https://openfoodfacts.slack.com/](https://openfoodfacts.slack.com/) in the channel #hunger-games.
 
 ## Requirements:
 
