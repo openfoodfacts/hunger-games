@@ -83,7 +83,7 @@ export default function Settings() {
         />
       </div>
       {devMode && (
-        <div>
+        <Stack sx={{paddingLeft:"20px"}}>
           <FormControlLabel
             checked={showDatabase}
             onChange={handleDatabaseChange}
@@ -98,7 +98,7 @@ export default function Settings() {
             label="Show Nutri-Score game"
             labelPlacement="end"
           />
-        </div>
+        </Stack>
       )}
       <div>
         <MuiLink
