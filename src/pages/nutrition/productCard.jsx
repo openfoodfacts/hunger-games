@@ -10,18 +10,19 @@ import {basicNutriments} from "./nutritionFields";
 
 export default function ProductNutriments({setNutriments}) {
 
-  const { getNutritionToFillUrl } = offService
-
   const [ page, setPage ] = React.useState(1)
   const [ index, setIndex ] = React.useState(0)
   const [ products, setProducts ] = React.useState([])
 
+  const product = products[index]
+  const productName = product ? product.product_name ? product.product_name: 'Brand Unknown' : 'Loading...'
+
   React.useEffect(() => {
-    console.log('fetched')
-    const productListUrl = getNutritionToFillUrl({page})
+    const productListUrl = offService.getNutritionToFillUrl({page})
+
   fetch(productListUrl)
     .then(res => res.json())
-    .then(data => setProducts(data.products))
+    .then(data => {setProducts(data.products)})
   }, [page])
 
   const pictureURL = products[index] ? products[index].image_nutrition_url : "https://static.openfoodfacts.org/images/image-placeholder.png"
@@ -30,6 +31,8 @@ export default function ProductNutriments({setNutriments}) {
     setIndex(prev => prev < 22 ? ++prev : 0)
     setNutriments(basicNutriments)
   }
+
+
 
   return (
 
@@ -41,11 +44,11 @@ export default function ProductNutriments({setNutriments}) {
            maxWidth: '380px'
          }}>
       <Typography variant="h5" component="h5" sx={{alignSelf: 'center'}}>
-        PRODUCT.BRAND
+        { productName }
       </Typography>
-      <Typography variant="p" component="p" sx={{alignSelf: 'center'}}>
-        PRODUCT DESCRIPTION IF NEEDED
-      </Typography>
+      {/*<Typography variant="p" component="p" sx={{alignSelf: 'center'}}>*/}
+      {/*  PRODUCT DESCRIPTION IF NEEDED*/}
+      {/*</Typography>*/}
       <Zoom wrapStyle={{ height: "100%" }}>
         <img
           // TODO: use getFullSizeImage when the zoom is activated

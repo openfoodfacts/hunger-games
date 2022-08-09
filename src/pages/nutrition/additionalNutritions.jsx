@@ -23,7 +23,7 @@ export default function AdditionalNutriments({options, setNutriments, setAdditio
       }}
       inputValue={inputValue}
       onInputChange={(event, newInputValue) => {
-        setInputValue(newInputValue);
+        setInputValue(newInputValue)
       }}
       renderInput={(params) => <TextField {...params} label="Add nutriment" />}
     />

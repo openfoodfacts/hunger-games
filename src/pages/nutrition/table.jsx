@@ -12,6 +12,8 @@ import Checkbox from "@mui/material/Checkbox";
 import AdditionalNutriments from "./additionalNutritions";
 import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline';
 
+import TableRowComp from "./tableRow";
+
 function createData(
   label, property, unit
 ) {
@@ -20,7 +22,9 @@ function createData(
 
 export default function NutritionTable({nutriments, setNutriments, additionalNutriments, deleteItem, setAdditionalNutriments, onchangeHandler}) {
 
-  const rows = nutriments.map(nutrition => {
+  const rows = nutriments.map(nutriment => <TableRowComp nutriment = {nutriment} onchangeHandler={onchangeHandler} deleteItem={deleteItem} key={nutriment.off_nutriment_id}/>)
+
+  /*const rows = nutriments.map(nutrition => {
     return (
       createData(<Box sx={{
           display: "flex",
@@ -53,7 +57,7 @@ export default function NutritionTable({nutriments, setNutriments, additionalNut
             </TableRow>
           </TableHead>
           <TableBody>
-            {rows.map((row) => (
+            {rows.map(row => (
               <TableRow
                 key={row.label}
                 sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
@@ -76,6 +80,34 @@ export default function NutritionTable({nutriments, setNutriments, additionalNut
         setNutriments={setNutriments}
         setAdditionalNutriments={setAdditionalNutriments}
       />
+
+      <TableRowComp nutriment={nutriments[0]} onchangeHandler={onchangeHandler} deleteItem={deleteItem}/>
+    </Box>)*/
+
+  return (
+    <Box>
+      <TableContainer sx={{ margin: 0, maxWidth: "1000px", width: "340px" }}>
+        <Table aria-label="simple table">
+          <TableHead>
+            <TableRow>
+              <TableCell sx={{
+                maxWidth: "8em",
+                fontSize: "large",
+                fontWeight: "bold"
+              }}>nutrition.table.value</TableCell>
+
+            </TableRow>
+          </TableHead>
+          <TableBody>
+            {rows}
+          </TableBody>
+        </Table>
+      </TableContainer>
+      <AdditionalNutriments
+        options = {additionalNutriments}
+        setNutriments={setNutriments}
+        setAdditionalNutriments={setAdditionalNutriments}
+      />
     </Box>
-  );
+  )
 }

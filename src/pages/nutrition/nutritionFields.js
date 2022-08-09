@@ -5,7 +5,8 @@ const basicNutriments = [
     value: "",
     unit: "null",
     quantification: "=",
-    robotoffPrediction: null
+    robotoffPrediction: null,
+    display: true
   },
   {
     off_nutriment_id: "energy_kcal",
