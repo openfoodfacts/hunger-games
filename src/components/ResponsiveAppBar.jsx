@@ -115,8 +115,8 @@ const ResponsiveAppBar = () => {
             <Typography
               variant="h5"
               noWrap
-              component="a"
-              href=""
+              component={Link}
+              to="/"
               sx={{
                 flexGrow: 0,
                 fontFamily: "monospace",
@@ -163,8 +163,8 @@ const ResponsiveAppBar = () => {
               <Typography
                 variant="h6"
                 noWrap
-                component="a"
-                href="/"
+                component={Link}
+                to="/"
                 sx={{
                   mr: 2,
                   fontFamily: "monospace",
