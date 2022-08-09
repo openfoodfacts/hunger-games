@@ -14,7 +14,8 @@ const basicNutriments = [
     value: "",
     unit: "null",
     quantification: "<",
-    robotoffPrediction: null
+    robotoffPrediction: null,
+    display: true
   },
   {
     off_nutriment_id: "energy_kcal",
@@ -22,7 +23,8 @@ const basicNutriments = [
     value: "",
     unit: "null",
     quantification: "<",
-    robotoffPrediction: null
+    robotoffPrediction: null,
+    display: true
   },
   {
     off_nutriment_id: "energy_kcal",
@@ -30,18 +32,17 @@ const basicNutriments = [
     value: "",
     unit: null,
     quantification: "<",
-    robotoffPrediction: null
-  }
-]
-
-const additionalNutrs = [
+    robotoffPrediction: null,
+    display: true
+  },
   {
     off_nutriment_id: "energy_kj",
     label: "Energie (kJ)",
     value: "",
     unit: "null",
     quantification: "=",
-    robotoffPrediction: null
+    robotoffPrediction: null,
+    display: false
   },
   {
     off_nutriment_id: "energy_kcal",
@@ -49,8 +50,8 @@ const additionalNutrs = [
     value: "",
     unit: "null",
     quantification: "<",
-    robotoffPrediction: null
+    robotoffPrediction: null,
+    display: false
   }
 ]
-
-export {basicNutriments, additionalNutrs}
+export {basicNutriments}

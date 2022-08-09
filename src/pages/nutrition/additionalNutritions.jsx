@@ -2,7 +2,7 @@ import * as React from 'react';
 import TextField from '@mui/material/TextField';
 import Autocomplete from '@mui/material/Autocomplete';
 
-export default function AdditionalNutriments({options, setNutriments, setAdditionalNutriments}) {
+export default function AdditionalNutriments({options, setNutriments}) {
 
   const [inputValue, setInputValue] = React.useState('')
 
@@ -17,7 +17,6 @@ export default function AdditionalNutriments({options, setNutriments, setAdditio
         const nutrIndex = event.target.dataset.optionIndex
         if (nutrIndex) {
           setNutriments(prev => [...prev, options[nutrIndex]])
-          setAdditionalNutriments(prev => prev.filter(elem => elem !== options[nutrIndex]))
           setInputValue("")
       }
       }}
