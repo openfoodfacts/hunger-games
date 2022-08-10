@@ -1,8 +1,8 @@
 import * as React from "react";
 
 import { useQuestionBuffer } from "../questions/useQuestionBuffer";
-import Divider from "@mui/material/Divider";
 
+import Divider from "@mui/material/Divider";
 import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
 import Box from "@mui/material/Box";
@@ -53,7 +53,7 @@ export default function NutriscoreValidator() {
     );
   };
 
-  const { buffer, answerQuestion } = useQuestionBuffer(
+  const { buffer, answerQuestion, remainingQuestionNb } = useQuestionBuffer(
     filterState,
     PAGE_SIZE,
     BUFFER_THRESHOLD
@@ -61,6 +61,14 @@ export default function NutriscoreValidator() {
 
   return (
     <Box>
+      <Box sx={{ padding: 2 }}>
+        <Typography>Annotate nutriscore logo detection by batch.</Typography>
+        <Typography>
+          To do so select all the images showing the correct/wrong nutriscore
+          value (nutriscore {nutriscoreGrade.toUpperCase()}), and click on the
+          bottom buttons to say if you selected a set correct or wrong ones.
+        </Typography>
+      </Box>
       <Stack
         direction="row"
         justifyContent="center"
@@ -74,6 +82,9 @@ export default function NutriscoreValidator() {
           <MenuItem value="d">Nutriscore D</MenuItem>
           <MenuItem value="e">Nutriscore E</MenuItem>
         </TextField>
+        <Typography sx={{ mx: 3 }}>
+          Still {remainingQuestionNb} to annotate
+        </Typography>
         <Box sx={{ mx: 2, width: 500, maxWidth: 500, textAlign: "left" }}>
           <Typography gutterBottom>Image sizes</Typography>
           <Slider
