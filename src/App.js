@@ -17,9 +17,7 @@ import {
 } from "./pages";
 import ResponsiveAppBar from "./components/ResponsiveAppBar";
 import DevModeContext from "./contexts/devMode";
-import {
-  getIsDevMode, getVisiblePages,
-} from "./localeStorageManager";
+import { getIsDevMode, getVisiblePages } from "./localeStorageManager";
 import LoginContext from "./contexts/login";
 import off from "./off";
 
@@ -51,7 +49,7 @@ const theme = createTheme({
 
 export default function App() {
   const [devMode, setDevMode] = React.useState(getIsDevMode);
-  const visiblePages = getVisiblePages();
+  const [visiblePages, setVisiblePages] = React.useState(getVisiblePages);
   const [userState, setUserState] = React.useState({
     userName: "",
     isLoggedIn: false,
@@ -113,7 +111,8 @@ export default function App() {
             value={{
               devMode,
               setDevMode,
-              visiblePages
+              visiblePages,
+              setVisiblePages,
             }}
           >
             <CssBaseline />

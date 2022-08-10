@@ -39,7 +39,13 @@ export const getIsDevMode = () => {
 
 export const getVisiblePages = () => {
   const settings = localSettings.fetch();
-  return settings[localSettingsKeys.visiblePages] ?? { nutriscore: true, insights: true};
+  console.log({ settings });
+  return (
+    settings[localSettingsKeys.visiblePages] ?? {
+      nutriscore: true,
+      insights: true,
+    }
+  );
 };
 
 /** Questions page: returns a boolean for hiding the images. Uses local storage.  */

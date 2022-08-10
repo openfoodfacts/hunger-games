@@ -18,21 +18,21 @@ export default function Settings() {
 
   const [language, setLanguage] = React.useState(i18n.language);
 
-  const { devMode, setDevMode, visiblePages } =
+  const { devMode, setDevMode, visiblePages, setVisiblePages } =
     React.useContext(DevModeContext);
 
   const handleDevModeChange = (event) => {
     localSettings.update(localSettingsKeys.isDevMode, event.target.checked);
     setDevMode(event.target.checked);
-    Object.keys(visiblePages).forEach((pageUrl)=>{
-      visiblePages[pageUrl]=event.target.checked
-      localSettings.update(localSettingsKeys.visiblePages[pageUrl], event.target.checked);
-    })
   };
 
-  const handleVisiblePagesChange = (event, pageUrl) => {
-    localSettings.update(localSettingsKeys.pageUrl, event.target.checked);
-    visiblePages[pageUrl] = event.target.checked;
+  const handleVisiblePagesChange = (pageUrl) => (event) => {
+    const newVisiblePages = {
+      ...visiblePages,
+      [pageUrl]: event.target.checked,
+    };
+    localSettings.update(localSettingsKeys.visiblePages, newVisiblePages);
+    setVisiblePages(newVisiblePages);
   };
 
   const handleLangChange = (e) => {
