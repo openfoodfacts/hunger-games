@@ -18,9 +18,7 @@ import {
 import ResponsiveAppBar from "./components/ResponsiveAppBar";
 import DevModeContext from "./contexts/devMode";
 import {
-  getIsDevMode,
-  getShowDatabase,
-  getShowNutriscore,
+  getIsDevMode, getVisiblePages,
 } from "./localeStorageManager";
 import LoginContext from "./contexts/login";
 import off from "./off";
@@ -53,8 +51,7 @@ const theme = createTheme({
 
 export default function App() {
   const [devMode, setDevMode] = React.useState(getIsDevMode);
-  const [showDatabase, setShowDatabase] = React.useState(getShowDatabase);
-  const [showNutriscore, setShowNutriscore] = React.useState(getShowNutriscore);
+  const visiblePages = getVisiblePages();
   const [userState, setUserState] = React.useState({
     userName: "",
     isLoggedIn: false,
@@ -112,14 +109,13 @@ export default function App() {
     <Router>
       <ThemeProvider theme={theme}>
         <LoginContext.Provider value={{ ...userState, refresh }}>
-          <DevModeContext.Provider value={{ 
-            devMode,
-            setDevMode,
-            showDatabase,
-            setShowDatabase,
-            showNutriscore,
-            setShowNutriscore, 
-           }}>
+          <DevModeContext.Provider
+            value={{
+              devMode,
+              setDevMode,
+              visiblePages
+            }}
+          >
             <CssBaseline />
             <ResponsiveAppBar />
             <Routes>

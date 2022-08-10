@@ -18,33 +18,21 @@ export default function Settings() {
 
   const [language, setLanguage] = React.useState(i18n.language);
 
-  const {
-    devMode,
-    setDevMode,
-    showDatabase,
-    setShowDatabase,
-    showNutriscore,
-    setShowNutriscore,
-  } = React.useContext(DevModeContext);
+  const { devMode, setDevMode, visiblePages } =
+    React.useContext(DevModeContext);
 
   const handleDevModeChange = (event) => {
     localSettings.update(localSettingsKeys.isDevMode, event.target.checked);
     setDevMode(event.target.checked);
-    setShowDatabase(event.target.checked);
-    setShowNutriscore(event.target.checked);
+    Object.keys(visiblePages).forEach((pageUrl)=>{
+      visiblePages[pageUrl]=event.target.checked
+      localSettings.update(localSettingsKeys.visiblePages[pageUrl], event.target.checked);
+    })
   };
 
-  const handleDatabaseChange = (event) => {
-    localSettings.update(localSettingsKeys.showDatabase, event.target.checked);
-    setShowDatabase(event.target.checked);
-  };
-
-  const handleNutriscoreChange = (event) => {
-    localSettings.update(
-      localSettingsKeys.showNutriscore,
-      event.target.checked
-    );
-    setShowNutriscore(event.target.checked);
+  const handleVisiblePagesChange = (event, pageUrl) => {
+    localSettings.update(localSettingsKeys.pageUrl, event.target.checked);
+    visiblePages[pageUrl] = event.target.checked;
   };
 
   const handleLangChange = (e) => {
@@ -82,24 +70,17 @@ export default function Settings() {
           labelPlacement="end"
         />
       </div>
-      {devMode && (
-        <Stack sx={{paddingLeft:"20px"}}>
+      {devMode &&
+        ["nutriscore", "insights"].map((pageUrl) => (
           <FormControlLabel
-            checked={showDatabase}
-            onChange={handleDatabaseChange}
+            key={pageUrl}
+            checked={visiblePages[pageUrl]}
+            onChange={handleVisiblePagesChange(pageUrl)}
             control={<Switch />}
-            label="Show database"
+            label={`Show ${pageUrl} page`}
             labelPlacement="end"
           />
-          <FormControlLabel
-            checked={showNutriscore}
-            onChange={handleNutriscoreChange}
-            control={<Switch />}
-            label="Show Nutri-Score game"
-            labelPlacement="end"
-          />
-        </Stack>
-      )}
+        ))}
       <div>
         <MuiLink
           href="https://github.com/openfoodfacts/hunger-games/issues"

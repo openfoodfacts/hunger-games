@@ -29,8 +29,8 @@ const pages = [
   { url: "logos", translationKey: "menu.logos" },
   { url: "eco-score", translationKey: "menu.eco-score" },
   { translationKey: "menu.manage" },
-  { url: "insights", translationKey: "menu.insights" },
-  { url: "nutriscore", translationKey: "menu.nutritions" },
+  { url: "insights", translationKey: "menu.insights", devModeOnly: true },
+  { url: "nutriscore", translationKey: "menu.nutritions", devModeOnly: true },
   // { url: "settings", translationKey: "menu.settings" },
 ];
 
@@ -46,13 +46,11 @@ const ResponsiveAppBar = () => {
     setAnchorElNav(null);
   };
 
-  const { showDatabase } = React.useContext(DevModeContext);
-  const { showNutriscore } = React.useContext(DevModeContext);
   const { isLoggedIn } = React.useContext(LoginContext);
-
-  const displayedPages = pages
-    .filter((page) => page.url !== "insights" || showDatabase)
-    .filter((page) => page.url !== "nutriscore" || showNutriscore);
+  const { devMode: isDevMode, visiblePages } = React.useContext(DevModeContext);
+  const displayedPages = pages.filter(
+    (page) => !page.devModeOnly || (isDevMode && visiblePages[page.url])
+  );
 
   return (
     <AppBar position="static" color="secondary">

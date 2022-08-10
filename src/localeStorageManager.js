@@ -5,6 +5,7 @@ const STORAGE_KEY = "hunger-game-settings";
 export const localSettingsKeys = {
   language: "lang",
   isDevMode: "devMode",
+  visiblePages: "visiblePages",
   hideImages: "questions_hideImages",
   showTour: "showTour",
   showDatabase: "showDatabase",
@@ -36,14 +37,9 @@ export const getIsDevMode = () => {
   return settings[localSettingsKeys.isDevMode] ?? false;
 };
 
-export const getShowDatabase = () => {
+export const getVisiblePages = () => {
   const settings = localSettings.fetch();
-  return settings[localSettingsKeys.showDatabase] ?? false;
-};
-
-export const getShowNutriscore = () => {
-  const settings = localSettings.fetch();
-  return settings[localSettingsKeys.showNutriscore] ?? false;
+  return settings[localSettingsKeys.visiblePages] ?? { nutriscore: true, insights: true};
 };
 
 /** Questions page: returns a boolean for hiding the images. Uses local storage.  */
