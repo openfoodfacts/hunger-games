@@ -12,8 +12,10 @@ import MenuItem from "@mui/material/MenuItem";
 import ListSubheader from "@mui/material/ListSubheader";
 import MuiLink from "@mui/material/Link";
 import SettingsIcon from "@mui/icons-material/Settings";
+import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 
 import DevModeContext from "../contexts/devMode";
+import LoginContext from "../contexts/login";
 import logo from "../assets/logo.png";
 import { Link } from "react-router-dom";
 
@@ -44,16 +46,25 @@ const ResponsiveAppBar = () => {
     setAnchorElNav(null);
   };
 
-  const { devMode: isDevMode } = React.useContext(DevModeContext);
-
-  const displayedPages = pages.filter((page) => !page.devModeOnly || isDevMode);
+  const { isLoggedIn } = React.useContext(LoginContext);
+  const { devMode: isDevMode, visiblePages } = React.useContext(DevModeContext);
+  const displayedPages = pages.filter(
+    (page) => !page.devModeOnly || (isDevMode && visiblePages[page.url])
+  );
 
   return (
     <AppBar position="static" color="secondary">
       <Container maxWidth={null}>
         <Toolbar disableGutters>
           {/* Mobile content */}
-          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
+          <Box
+            sx={{
+              flexGrow: 1,
+              display: { xs: "flex", md: "none" },
+              alignItems: "center",
+              justifyContent: "space-between",
+            }}
+          >
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -101,25 +112,24 @@ const ResponsiveAppBar = () => {
                 )
               )}
             </Menu>
+            <Typography
+              variant="h5"
+              noWrap
+              component={Link}
+              to="/"
+              sx={{
+                flexGrow: 0,
+                fontFamily: "monospace",
+                fontWeight: 700,
+                letterSpacing: ".3rem",
+                color: "inherit",
+                textDecoration: "none",
+              }}
+            >
+              Hunger Games
+            </Typography>
+            <AccountCircleIcon color={isLoggedIn ? "success" : "error"} />
           </Box>
-          <Typography
-            variant="h5"
-            noWrap
-            component="a"
-            href=""
-            sx={{
-              mr: 2,
-              display: { xs: "flex", md: "none" },
-              flexGrow: 1,
-              fontFamily: "monospace",
-              fontWeight: 700,
-              letterSpacing: ".3rem",
-              color: "inherit",
-              textDecoration: "none",
-            }}
-          >
-            Hunger Games
-          </Typography>
 
           {/* Desktop content */}
           <Box
@@ -153,8 +163,8 @@ const ResponsiveAppBar = () => {
               <Typography
                 variant="h6"
                 noWrap
-                component="a"
-                href="/"
+                component={Link}
+                to="/"
                 sx={{
                   mr: 2,
                   fontFamily: "monospace",
