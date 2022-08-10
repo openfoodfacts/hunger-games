@@ -39,7 +39,6 @@ export const getIsDevMode = () => {
 
 export const getVisiblePages = () => {
   const settings = localSettings.fetch();
-  console.log({ settings });
   return (
     settings[localSettingsKeys.visiblePages] ?? {
       nutriscore: true,
