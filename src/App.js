@@ -17,8 +17,8 @@ import {
 } from "./pages";
 import ResponsiveAppBar from "./components/ResponsiveAppBar";
 import DevModeContext from "./contexts/devMode";
+import { getIsDevMode, getVisiblePages } from "./localeStorageManager";
 import LoginContext from "./contexts/login";
-import { getIsDevMode } from "./localeStorageManager";
 import off from "./off";
 
 const theme = createTheme({
@@ -49,6 +49,7 @@ const theme = createTheme({
 
 export default function App() {
   const [devMode, setDevMode] = React.useState(getIsDevMode);
+  const [visiblePages, setVisiblePages] = React.useState(getVisiblePages);
   const [userState, setUserState] = React.useState({
     userName: "",
     isLoggedIn: false,
@@ -106,7 +107,14 @@ export default function App() {
     <Router>
       <ThemeProvider theme={theme}>
         <LoginContext.Provider value={{ ...userState, refresh }}>
-          <DevModeContext.Provider value={{ devMode, setDevMode }}>
+          <DevModeContext.Provider
+            value={{
+              devMode,
+              setDevMode,
+              visiblePages,
+              setVisiblePages,
+            }}
+          >
             <CssBaseline />
             <ResponsiveAppBar />
             <Routes>
@@ -119,7 +127,6 @@ export default function App() {
               <Route path="/questions" element={<QuestionsPage />} />
               <Route path="/insights" element={<InsightsPage />} />
               <Route path="*" element={<NotFoundPage />} />
-
               <Route path="/nutriscore" element={<NutriscoreValidator />} />
             </Routes>
           </DevModeContext.Provider>
