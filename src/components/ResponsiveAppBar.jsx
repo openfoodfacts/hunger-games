@@ -30,7 +30,7 @@ const pages = [
   { url: "eco-score", translationKey: "menu.eco-score" },
   { translationKey: "menu.manage" },
   { url: "insights", translationKey: "menu.insights", devModeOnly: true },
-  { url: "nutriscore", translationKey: "menu.nutritions", devModeOnly: true },
+  { url: "nutriscore", translationKey: "menu.nutriscore", devModeOnly: true },
   // { url: "settings", translationKey: "menu.settings" },
 ];
 
@@ -183,7 +183,7 @@ const ResponsiveAppBar = () => {
                     color="inherit"
                     key={page.url}
                     onClick={handleCloseNavMenu}
-                    sx={{ my: 2, mr: 1, display: "block", textAlign: "center" }}
+                    sx={{ my: 2, display: "block" }}
                     component={Link}
                     to={`/${page.url}`}
                     data-welcome-tour={page.url}
