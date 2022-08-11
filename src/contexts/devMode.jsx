@@ -1,9 +1,9 @@
 import * as React from "react";
-import { getIsDevMode } from "../localeStorageManager";
+import { getIsDevMode, getVisiblePages } from "../localeStorageManager";
 
 const DevModeContext = React.createContext({
   devMode: getIsDevMode(),
-  setDevMode: () => {},
+  visiblePages: getVisiblePages(),
 });
 
 export default DevModeContext;

@@ -4,7 +4,7 @@
     "label": "etiketė",
     "brand": "prekės ženklas",
     "brands": "Prekės ženklai",
-    "insightTypeLabel": "Only shows",
+    "insightTypeLabel": "Rodyti tik",
     "ingredients": "Sudėtis",
     "product_weight": "produkto svoris",
     "popularity_sort": "Rikiuoti pagal populiarumą",
@@ -20,7 +20,7 @@
     "display_images": "Rodyti nuotraukas",
     "annotations": "Annotations",
     "last_annotations": "Paskutinės anotacijos",
-    "remaining_annotations": "Remaining questions",
+    "remaining_annotations": "Likę klausimai",
     "annotated_annotations": "Anotuotas",
     "filters": {
       "short_label": {
@@ -114,7 +114,8 @@
   "settings": {
     "settings": "Settings",
     "language": "Kalba",
-    "save": "Išsaugoti"
+    "save": "Išsaugoti",
+    "reportIssue": "Radote klaidą? Praneškite mums"
   },
   "helper": {
     "welcome": {
@@ -204,8 +205,8 @@
     }
   },
   "notfound": {
-    "nopage": "Whoops! The page you're looking for can't be found.",
-    "redirect1": "Want to play some games?",
-    "redirect2": "Click here"
+    "nopage": "Atleiskite, puslapis, kurio ieškote, nerastas.",
+    "redirect1": "Norite pažaisti keletą žaidimų?",
+    "redirect2": "Spauskite čia"
   }
 }

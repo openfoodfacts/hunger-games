@@ -4,23 +4,23 @@
     "label": "маркировка",
     "brand": "марка",
     "brands": "Марки",
-    "insightTypeLabel": "Only shows",
+    "insightTypeLabel": "В выдаче только",
     "ingredients": "Ингредиенты",
     "product_weight": "вес продукта",
     "popularity_sort": "Сортировка по популярности",
-    "see_examples": "See examples of this ",
+    "see_examples": "Просмотрите примеры ",
     "no": "Нет",
     "skip": "Пропустить",
     "yes": "Да",
     "no_questions_remaining": "Вопросов не осталось",
     "countries": "Страны",
     "view": "Вид",
-    "edit": "Изменить",
+    "edit": "Редактировать",
     "hide_images": "Скрыть изображения (более быстрая загрузка)",
     "display_images": "Показывать изображения",
     "annotations": "Заметки",
     "last_annotations": "Последние аннотации",
-    "remaining_annotations": "Remaining questions",
+    "remaining_annotations": "Оставшиеся вопросы",
     "annotated_annotations": "Помеченный",
     "filters": {
       "short_label": {
@@ -114,7 +114,8 @@
   "settings": {
     "settings": "Настройки",
     "language": "Язык",
-    "save": "Сохранить"
+    "save": "Сохранить",
+    "reportIssue": "Нашли ошибку? Пожалуйста, сообщите нам"
   },
   "helper": {
     "welcome": {
@@ -192,20 +193,20 @@
     },
     "history": {
       "title": "История сессий",
-      "status": "status",
+      "status": "статус",
       "product name": "product name",
-      "view": "view page",
-      "edit": "edit page",
-      "SKIP": "ignored",
-      "VALIDATED": "edited",
-      "WRONG_IMAGE": "unselected picture",
-      "close": "close",
-      "open": "open history"
+      "view": "показать страницу",
+      "edit": "редактировать страницу",
+      "SKIP": "проигнорировано",
+      "VALIDATED": "отредактировано",
+      "WRONG_IMAGE": "невыбранное изображение",
+      "close": "закрыть",
+      "open": "открыть историю"
     }
   },
   "notfound": {
-    "nopage": "Whoops! The page you're looking for can't be found.",
-    "redirect1": "Want to play some games?",
-    "redirect2": "Click here"
+    "nopage": "Извините, страница, которую вы искали, не найдена.",
+    "redirect1": "Хотите поиграть в игры?",
+    "redirect2": "Нажмите здесь"
   }
 }

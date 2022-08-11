@@ -18,11 +18,21 @@ export default function Settings() {
 
   const [language, setLanguage] = React.useState(i18n.language);
 
-  const { devMode, setDevMode } = React.useContext(DevModeContext);
+  const { devMode, setDevMode, visiblePages, setVisiblePages } =
+    React.useContext(DevModeContext);
 
   const handleDevModeChange = (event) => {
     localSettings.update(localSettingsKeys.isDevMode, event.target.checked);
     setDevMode(event.target.checked);
+  };
+
+  const handleVisiblePagesChange = (pageUrl) => (event) => {
+    const newVisiblePages = {
+      ...visiblePages,
+      [pageUrl]: event.target.checked,
+    };
+    localSettings.update(localSettingsKeys.visiblePages, newVisiblePages);
+    setVisiblePages(newVisiblePages);
   };
 
   const handleLangChange = (e) => {
@@ -60,6 +70,17 @@ export default function Settings() {
           labelPlacement="end"
         />
       </div>
+      {devMode &&
+        ["nutriscore", "insights"].map((pageUrl) => (
+          <FormControlLabel
+            key={pageUrl}
+            checked={visiblePages[pageUrl]}
+            onChange={handleVisiblePagesChange(pageUrl)}
+            control={<Switch />}
+            label={`Show ${pageUrl} page`}
+            labelPlacement="end"
+          />
+        ))}
       <div>
         <MuiLink
           href="https://github.com/openfoodfacts/hunger-games/issues"
