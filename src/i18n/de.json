@@ -4,7 +4,7 @@
     "label": "Etikett",
     "brand": "Marke",
     "brands": "Marken",
-    "insightTypeLabel": "Only shows",
+    "insightTypeLabel": "Zeigt nur",
     "ingredients": "Zutaten",
     "product_weight": "Produktgewicht",
     "popularity_sort": "Nach Beliebtheit sortieren",
@@ -20,7 +20,7 @@
     "display_images": "Abbildungen anzeigen",
     "annotations": "Anmerkungen",
     "last_annotations": "Neueste Anmerkungen",
-    "remaining_annotations": "Remaining questions",
+    "remaining_annotations": "Verbleibende Fragen",
     "annotated_annotations": "Kommentiert",
     "filters": {
       "short_label": {
@@ -114,7 +114,8 @@
   "settings": {
     "settings": "Einstellungen",
     "language": "Sprache",
-    "save": "Speichern"
+    "save": "Speichern",
+    "reportIssue": "Haben Sie einen Fehler gefunden?, lassen Sie es uns bitte wissen"
   },
   "helper": {
     "welcome": {

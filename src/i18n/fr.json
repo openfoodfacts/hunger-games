@@ -20,7 +20,7 @@
     "display_images": "Afficher les images",
     "annotations": "Annotations",
     "last_annotations": "Dernière annotations",
-    "remaining_annotations": "Remaining questions",
+    "remaining_annotations": "Questions restantes",
     "annotated_annotations": "Annoté",
     "filters": {
       "short_label": {
@@ -114,7 +114,8 @@
   "settings": {
     "settings": "Paramètres",
     "language": "Langue",
-    "save": "Enregistrer"
+    "save": "Enregistrer",
+    "reportIssue": "Vous avez trouvé une erreur ? Merci de nous le faire savoir"
   },
   "helper": {
     "welcome": {
@@ -204,8 +205,8 @@
     }
   },
   "notfound": {
-    "nopage": "Whoops! The page you're looking for can't be found.",
-    "redirect1": "Want to play some games?",
-    "redirect2": "Click here"
+    "nopage": "Oups ! La page que vous cherchez est introuvable.",
+    "redirect1": "Voulez‑vous jouer à des jeux ?",
+    "redirect2": "Cliquez ici"
   }
 }
