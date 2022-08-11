@@ -29,7 +29,8 @@ const pages = [
   { url: "logos", translationKey: "menu.logos" },
   { url: "eco-score", translationKey: "menu.eco-score" },
   { translationKey: "menu.manage" },
-  { url: "insights", translationKey: "menu.insights" },
+  { url: "insights", translationKey: "menu.insights", devModeOnly: true },
+  { url: "nutriscore", translationKey: "menu.nutriscore", devModeOnly: true },
   // { url: "settings", translationKey: "menu.settings" },
 ];
 
@@ -45,11 +46,10 @@ const ResponsiveAppBar = () => {
     setAnchorElNav(null);
   };
 
-  const { devMode: isDevMode } = React.useContext(DevModeContext);
   const { isLoggedIn } = React.useContext(LoginContext);
-
+  const { devMode: isDevMode, visiblePages } = React.useContext(DevModeContext);
   const displayedPages = pages.filter(
-    (page) => page.url !== "insights" || isDevMode
+    (page) => !page.devModeOnly || (isDevMode && visiblePages[page.url])
   );
 
   return (
@@ -183,7 +183,7 @@ const ResponsiveAppBar = () => {
                     color="inherit"
                     key={page.url}
                     onClick={handleCloseNavMenu}
-                    sx={{ my: 2, mr: 1, display: "block", textAlign: "center" }}
+                    sx={{ my: 2, display: "block" }}
                     component={Link}
                     to={`/${page.url}`}
                     data-welcome-tour={page.url}

@@ -100,7 +100,6 @@ const QuestionDisplay = ({
       setNbOfPotentialQuestions(null);
       return;
     }
-
     let validRequest = true;
 
     getNbOfQuestionForValue({
