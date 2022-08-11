@@ -41,7 +41,8 @@ import robotoff from "../../robotoff";
 const getValueTagQuestionsURL = (question) => {
   if (
     question !== null &&
-    question !== NO_QUESTION_LEFT &&
+    question &&
+    question?.insight_id !== NO_QUESTION_LEFT &&
     question.value_tag
   ) {
     const urlParams = new URLSearchParams();
@@ -55,7 +56,7 @@ const getValueTagQuestionsURL = (question) => {
 const getValueTagExamplesURL = (question) => {
   if (
     question !== null &&
-    question !== NO_QUESTION_LEFT &&
+    question?.insight_id !== NO_QUESTION_LEFT &&
     question.value_tag &&
     question.insight_type
   ) {
@@ -151,7 +152,7 @@ const QuestionDisplay = ({
     return () => window.removeEventListener("keydown", handleShortCut);
   }, [question?.insight_id, answerQuestion]);
 
-  if (question === NO_QUESTION_LEFT) {
+  if (question?.insight_id === NO_QUESTION_LEFT) {
     return (
       <Stack direction="row" alignItems="center" spacing={1}>
         <p>{t("questions.no_questions_remaining")}</p>
@@ -230,7 +231,7 @@ const QuestionDisplay = ({
           onClick={() =>
             answerQuestion({
               value: WRONG_INSIGHT,
-              insightId: question.insight_id,
+              insightId: question?.insight_id,
             })
           }
           color="error"
@@ -245,7 +246,7 @@ const QuestionDisplay = ({
           onClick={() =>
             answerQuestion({
               value: CORRECT_INSIGHT,
-              insightId: question.insight_id,
+              insightId: question?.insight_id,
             })
           }
           startIcon={<DoneIcon />}
@@ -261,7 +262,7 @@ const QuestionDisplay = ({
         onClick={() =>
           answerQuestion({
             value: SKIPPED_INSIGHT,
-            insightId: question.insight_id,
+            insightId: question?.insight_id,
           })
         }
         color="secondary"

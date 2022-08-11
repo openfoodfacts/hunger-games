@@ -15,8 +15,13 @@ export default function Questions() {
   const [filterState, setFilterState, isFavorite, toggleFavorite] =
     useFilterSearch();
 
-  const { buffer, answerQuestion, remainingQuestionNb, answers } =
-    useQuestionBuffer(filterState);
+  const {
+    buffer,
+    answerQuestion,
+    remainingQuestionNb,
+    answers,
+    preventAnnotation,
+  } = useQuestionBuffer(filterState);
   const question = buffer[0] ?? null;
 
   const resetFilters = React.useCallback(
@@ -51,7 +56,11 @@ export default function Questions() {
         <ProductInformation question={question} />
       </Grid>
       <Grid item sm={12} md={2}>
-        <UserData remainingQuestionNb={remainingQuestionNb} answers={answers} />
+        <UserData
+          remainingQuestionNb={remainingQuestionNb}
+          answers={answers}
+          preventAnnotation={preventAnnotation}
+        />
       </Grid>
       {/* pre-fetch images of the next question */}
       {buffer
