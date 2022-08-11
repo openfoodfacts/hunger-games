@@ -7,18 +7,35 @@ import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import { Box } from "@mui/material";
 import AdditionalNutriments from "./additionalNutritions";
+import { useTranslation } from "react-i18next";
 
 import TableRowComp from "./tableRow";
 
-function createData(
-  label, property, unit
-) {
+function createData(label, property, unit) {
   return { label, property, unit };
 }
 
-export default function NutritionTable({nutriments, setNutriments, additionalNutriments, deleteItem, onchangeHandler}) {
+export default function NutritionTable({
+  nutriments,
+  setNutriments,
+  additionalNutriments,
+  deleteItem,
+  onchangeHandler,
+}) {
+  const { t } = useTranslation();
 
-  const rows = nutriments.map(nutriment => <TableRowComp nutriment = {nutriment} onchangeHandler={onchangeHandler} deleteItem={deleteItem} key={nutriment.off_nutriment_id}/>)
+  const rows = nutriments.map((nutriment) => (
+    <TableRowComp
+      nutriment={nutriment}
+      onchangeHandler={onchangeHandler}
+      deleteItem={deleteItem}
+      key={nutriment.off_nutriment_id}
+    />
+  ));
+  const options = additionalNutriments.map((item) => ({
+    label: t(`nutrition.nutriments.${item.label}`),
+    id: item.label,
+  }));
 
   return (
     <Box>
@@ -26,23 +43,21 @@ export default function NutritionTable({nutriments, setNutriments, additionalNut
         <Table aria-label="simple table">
           <TableHead>
             <TableRow>
-              <TableCell sx={{
-                maxWidth: "8em",
-                fontSize: "large",
-                fontWeight: "bold"
-              }}>nutrition.table.value</TableCell>
-
+              <TableCell
+                sx={{
+                  maxWidth: "8em",
+                  fontSize: "large",
+                  fontWeight: "bold",
+                }}
+              >
+                nutrition.table.value
+              </TableCell>
             </TableRow>
           </TableHead>
-          <TableBody>
-            {rows}
-          </TableBody>
+          <TableBody>{rows}</TableBody>
         </Table>
       </TableContainer>
-      <AdditionalNutriments
-        options = {additionalNutriments}
-        setNutriments={setNutriments}
-      />
+      <AdditionalNutriments options={options} setNutriments={setNutriments} />
     </Box>
-  )
+  );
 }
