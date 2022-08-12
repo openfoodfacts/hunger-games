@@ -4,13 +4,7 @@ import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select, { SelectChangeEvent } from "@mui/material/Select";
 
-export default function SelectUnit({ options, value }) {
-  const [age, setAge] = React.useState();
-
-  const handleChange = (event: SelectChangeEvent) => {
-    setAge(event.target.value);
-  };
-
+export default function SelectUnit({ options, value, onchangeHandler }) {
   return (
     <div>
       <FormControl sx={{ m: 1, minWidth: 80, margin: "0" }}>
@@ -19,8 +13,9 @@ export default function SelectUnit({ options, value }) {
             labelId="demo-simple-select-autowidth-label"
             id="demo-simple-select-autowidth"
             value={options}
-            //onChange={handleChange}
-            autoWidth
+            onChange={onchangeHandler}
+            name={value}
+            // autoWidth
             label=""
           >
             <MenuItem value={options}>{options}</MenuItem>

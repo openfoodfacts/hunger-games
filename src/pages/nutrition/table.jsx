@@ -57,6 +57,7 @@ export default function NutritionTable({
                   fontWeight: "bold",
                   display: "flex",
                   flexDirection: "row",
+                  width: "100%",
                 }}
               >
                 <Box

@@ -9,10 +9,11 @@ export default function Nutrition() {
   const [nutriments, setNutriments] = React.useState(basicNutriments);
 
   function onchangeHandler(e) {
-    const { value, name } = e.target;
+    const { value, name, id } = e.target;
+    console.log(name);
     setNutriments((prevState) =>
       prevState.map((nutr) => {
-        return name === nutr.label ? { ...nutr, value } : nutr;
+        return id === nutr.label ? { ...nutr, [name]: value } : nutr;
       })
     );
   }

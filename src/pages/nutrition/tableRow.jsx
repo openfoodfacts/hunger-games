@@ -38,9 +38,10 @@ export default function TableRowComp({
         <SelectUnit
           options={nutriment.quantification}
           value={"quantification"}
+          onchangeHandler={onchangeHandler}
         />
         <TextField
-          id="outlined-basic"
+          id={nutriment.label}
           type={"number"}
           sx={{
             width: "80px",
@@ -50,11 +51,15 @@ export default function TableRowComp({
           variant="outlined"
           /*sx={{ width: "10rem" }}*/
           value={nutriment.value}
-          name={nutriment.label}
+          name={"value"}
           onChange={onchangeHandler}
         />
 
-        <SelectUnit options={nutriment.unit} value={"unit"} />
+        <SelectUnit
+          options={nutriment.unit}
+          value={"unit"}
+          onchangeHandler={onchangeHandler}
+        />
       </Box>
     </Box>,
     <DeleteOutlineIcon
@@ -62,8 +67,6 @@ export default function TableRowComp({
       onClick={() => deleteItem(nutriment)}
     />
   );
-
-  // console.log(nutriment);
 
   return (
     <TableRow
