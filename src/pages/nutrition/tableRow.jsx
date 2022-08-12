@@ -2,48 +2,68 @@ import * as React from "react";
 import TableCell from "@mui/material/TableCell";
 import TableRow from "@mui/material/TableRow";
 import TextField from "@mui/material/TextField";
-import SelectAutoWidth from "./unitSelect";
+import SelectUnit from "./unitSelect";
+import { Typography } from "@mui/material";
 import { Box } from "@mui/material";
 import DeleteOutlineIcon from "@mui/icons-material/DeleteOutline";
 
 import { useTranslation } from "react-i18next";
+
+function createData(label, property, deleteIcon) {
+  return { label, property, deleteIcon };
+}
 
 export default function TableRowComp({
   nutriment,
   onchangeHandler,
   deleteItem,
 }) {
-  /*{nutrition, onchangeHandler, deleteItem}*/
   const { t } = useTranslation();
-  function createData(label, property, deleteIcon) {
-    return { label, property, deleteIcon };
-  }
 
   const row = createData(
     <Box
       sx={{
         display: "flex",
-        alignItems: "center",
+        justifyContent: "space-between",
         flexDirection: "row",
+        width: "400px",
       }}
     >
-      <TextField
-        id="outlined-basic"
-        type={"number"}
-        label={t(`nutrition.nutriments.${nutriment.label}`)}
-        variant="outlined"
-        sx={{ width: "10rem" }}
-        value={nutriment.value}
-        name={nutriment.label}
-        onChange={onchangeHandler}
-      />{" "}
-      , <SelectAutoWidth />
+      <Typography>{t(`nutrition.nutriments.${nutriment.label}`)}</Typography>
+      <Box
+        sx={{
+          display: "flex",
+        }}
+      >
+        <SelectUnit
+          options={nutriment.quantification}
+          value={"quantification"}
+        />
+        <TextField
+          id="outlined-basic"
+          type={"number"}
+          sx={{
+            width: "80px",
+          }}
+          /*label={t(`nutrition.nutriments.${nutriment.label}`)}*/
+          label="Value"
+          variant="outlined"
+          /*sx={{ width: "10rem" }}*/
+          value={nutriment.value}
+          name={nutriment.label}
+          onChange={onchangeHandler}
+        />
+
+        <SelectUnit options={nutriment.unit} value={"unit"} />
+      </Box>
     </Box>,
     <DeleteOutlineIcon
       sx={{ cursor: "pointer", color: "red" }}
       onClick={() => deleteItem(nutriment)}
     />
   );
+
+  // console.log(nutriment);
 
   return (
     <TableRow

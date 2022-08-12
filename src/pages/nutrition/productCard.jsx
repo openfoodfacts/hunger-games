@@ -1,50 +1,56 @@
-import * as React from 'react';
-import Box from '@mui/material/Box';
+import * as React from "react";
+import Box from "@mui/material/Box";
 import Zoom from "react-medium-image-zoom";
 import Button from "@mui/material/Button";
-import  Typography  from '@mui/material/Typography'
-import offService from '../../off'
+import Typography from "@mui/material/Typography";
+import offService from "../../off";
 
+import { basicNutriments } from "./nutritionFields";
 
-import {basicNutriments} from "./nutritionFields";
+export default function ProductNutriments({ setNutriments }) {
+  const [page, setPage] = React.useState(1);
+  const [index, setIndex] = React.useState(0);
+  const [products, setProducts] = React.useState([]);
 
-export default function ProductNutriments({setNutriments}) {
-
-  const [ page, setPage ] = React.useState(1)
-  const [ index, setIndex ] = React.useState(0)
-  const [ products, setProducts ] = React.useState([])
-
-  const product = products[index]
-  const productName = product ? product.product_name ? product.product_name: 'Brand Unknown' : 'Loading...'
+  const product = products[index];
+  const productName = product
+    ? product.product_name
+      ? product.product_name
+      : "Brand Unknown"
+    : "Loading...";
 
   React.useEffect(() => {
-    const productListUrl = offService.getNutritionToFillUrl({page})
+    const productListUrl = offService.getNutritionToFillUrl({ page });
 
-  fetch(productListUrl)
-    .then(res => res.json())
-    .then(data => {setProducts(data.products)})
-  }, [page])
+    fetch(productListUrl)
+      .then((res) => res.json())
+      .then((data) => {
+        setProducts(data.products);
+      });
+  }, [page]);
 
-  const pictureURL = products[index] ? products[index].image_nutrition_url : "https://static.openfoodfacts.org/images/image-placeholder.png"
+  const pictureURL = products[index]
+    ? products[index].image_nutrition_url
+    : "https://static.openfoodfacts.org/images/image-placeholder.png";
 
-  function clickHandler(){
-    setIndex(prev => prev < 22 ? ++prev : 0)
-    setNutriments(basicNutriments)
+  function clickHandler() {
+    setIndex((prev) => (prev < 22 ? ++prev : 0));
+    setNutriments(basicNutriments);
   }
 
-
-
   return (
-
-    <Box flexGrow={1}
-         flexShrink={1}
-         display={'flex'}
-         flexDirection={'column'}
-         sx={{
-           maxWidth: '380px'
-         }}>
-      <Typography variant="h5" component="h5" sx={{alignSelf: 'center'}}>
-        { productName }
+    <Box
+      flexGrow={1}
+      flexShrink={1}
+      display={"flex"}
+      flexDirection={"column"}
+      sx={{
+        maxWidth: "380px",
+        minHeight: "70vh",
+      }}
+    >
+      <Typography variant="h5" component="h5" sx={{ alignSelf: "center" }}>
+        {productName}
       </Typography>
       {/*<Typography variant="p" component="p" sx={{alignSelf: 'center'}}>*/}
       {/*  PRODUCT DESCRIPTION IF NEEDED*/}
@@ -58,13 +64,18 @@ export default function ProductNutriments({setNutriments}) {
           style={{ maxWidth: "100%", maxHeight: "100%" }}
         />
       </Zoom>
-      <Box display={"flex"} flexDirection={"row"} Gap={'.5em'}>
+      <Box display={"flex"} flexDirection={"row"} Gap={".5em"}>
         <Button
           onClick={clickHandler}
           color="secondary"
           variant="contained"
           size="large"
-          sx={{ display: "flex", flexDirection: "column", flexGrow: 1, width: '47%'  }}
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            flexGrow: 1,
+            width: "47%",
+          }}
         >
           SKIP
         </Button>
@@ -73,10 +84,16 @@ export default function ProductNutriments({setNutriments}) {
           color="success"
           variant="contained"
           size="large"
-          sx={{ display: "flex", flexDirection: "column", flexGrow: 1, width: '47%' }}
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            flexGrow: 1,
+            width: "47%",
+          }}
         >
           VALIDATE
         </Button>
       </Box>
-    </Box>)
+    </Box>
+  );
 }

@@ -36,10 +36,17 @@ export default function NutritionTable({
     label: t(`nutrition.nutriments.${item.label}`),
     id: item.label,
   }));
-
+  //, width: "340px"
   return (
     <Box>
-      <TableContainer sx={{ margin: 0, maxWidth: "1000px", width: "340px" }}>
+      <TableContainer
+        sx={{
+          margin: 0,
+          maxWidth: "1000px",
+          borderRadius: "2%",
+          backgroundColor: "#fdf5e6",
+        }}
+      >
         <Table aria-label="simple table">
           <TableHead>
             <TableRow>
@@ -48,16 +55,27 @@ export default function NutritionTable({
                   maxWidth: "8em",
                   fontSize: "large",
                   fontWeight: "bold",
+                  display: "flex",
+                  flexDirection: "row",
                 }}
               >
-                nutrition.table.value
+                <Box
+                  display={"flex"}
+                  flexDirection={"row"}
+                  sx={{ alignItems: "center" }}
+                >
+                  {t("nutrition.table.value")}
+                  <AdditionalNutriments
+                    options={options}
+                    setNutriments={setNutriments}
+                  />
+                </Box>
               </TableCell>
             </TableRow>
           </TableHead>
           <TableBody>{rows}</TableBody>
         </Table>
       </TableContainer>
-      <AdditionalNutriments options={options} setNutriments={setNutriments} />
     </Box>
   );
 }
