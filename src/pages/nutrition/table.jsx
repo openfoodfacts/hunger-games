@@ -11,10 +11,6 @@ import { useTranslation } from "react-i18next";
 
 import TableRowComp from "./tableRow";
 
-function createData(label, property, unit) {
-  return { label, property, unit };
-}
-
 export default function NutritionTable({
   nutriments,
   setNutriments,
@@ -52,7 +48,6 @@ export default function NutritionTable({
             <TableRow>
               <TableCell
                 sx={{
-                  maxWidth: "8em",
                   fontSize: "large",
                   fontWeight: "bold",
                   display: "flex",
