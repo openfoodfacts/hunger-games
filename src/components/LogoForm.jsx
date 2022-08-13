@@ -56,7 +56,7 @@ const LogoForm = (props) => {
 
   const send = React.useCallback(async () => {
     setIsSending(true);
-    request(getFormattedValues({ type: innerType, value: innerValue }));
+    await request(getFormattedValues({ type: innerType, value: innerValue }));
     setIsSending(false);
   }, [request, innerType, innerValue]);
 
