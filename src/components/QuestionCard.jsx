@@ -111,6 +111,18 @@ const QuestionCard = (props) => {
                   onChange={(event) => {
                     setInnerTitle(event.target.value);
                   }}
+                  onKeyDown={(event) => {
+                    switch (event.key) {
+                      case "Enter":
+                        validateEdition();
+                        break;
+                      case "Escape":
+                        stopEdition();
+                        break;
+                      default:
+                        break;
+                    }
+                  }}
                   autoFocus
                 />
                 <IconButton onClick={validateEdition}>
