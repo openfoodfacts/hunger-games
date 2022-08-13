@@ -15,12 +15,71 @@ import Checkbox from "@mui/material/Checkbox";
 import Paper from "@mui/material/Paper";
 import Slider from "@mui/material/Slider";
 import Typography from "@mui/material/Typography";
+import FormControlLabel from "@mui/material/FormControlLabel";
 
-const BUFFER_THRESHOLD = 30;
+import robotoff from "../../robotoff";
+
+const BUFFER_THRESHOLD = 1;
 const PAGE_SIZE = 50;
+
+const NutriscoreImage = ({ question, imageSize, zoomOnLogo }) => {
+  const [cropArea, setCropArea] = React.useState([0, 0, 1, 1]);
+
+  React.useEffect(() => {
+    if (!zoomOnLogo) {
+      return;
+    }
+    robotoff
+      .insightDetail(question.insight_id)
+      .then(({ data }) => {
+        setCropArea(data.data.bounding_box);
+      })
+      .catch(() => {});
+  }, [question.insight_id, zoomOnLogo]);
+
+  if (!question.insight_id) {
+    return null;
+  }
+
+  const dx = zoomOnLogo ? 1 / (cropArea[3] - cropArea[1]) : 1;
+  const dy = zoomOnLogo ? 1 / (cropArea[2] - cropArea[0]) : 1;
+
+  const sizeX = `${Math.round(Math.max(0.5, dx) * imageSize)}px`;
+  const sizeY = `${Math.round(Math.max(0.5, dy) * imageSize)}px`;
+
+  const useXScale = zoomOnLogo ? dx < dy : sizeX > sizeY;
+  return (
+    <CardMedia
+      component="div"
+      sx={{
+        width: "100%",
+        height: "100%",
+        overflow: "hidden",
+        position: "relative",
+      }}
+    >
+      <img
+        src={question.source_image_url}
+        alt=""
+        style={{
+          width: useXScale ? sizeX : "auto",
+          height: !useXScale ? sizeY : "auto",
+          position: "absolute",
+          top: 0,
+          left: 0,
+          transform: zoomOnLogo
+            ? `translate(-${cropArea[1] * 100}%, -${cropArea[0] * 100}%)`
+            : "",
+        }}
+        loading="lazy"
+      />
+    </CardMedia>
+  );
+};
 
 export default function NutriscoreValidator() {
   const [imageSize, setImageSize] = React.useState(300);
+  const [zoomOnLogo, setZoomOnLogo] = React.useState(true);
 
   const [nutriscoreGrade, setNutriscoreGrade] = React.useState("a");
   const [filterState, setFilterState] = React.useState({
@@ -89,7 +148,7 @@ export default function NutriscoreValidator() {
           <Typography gutterBottom>Image sizes</Typography>
           <Slider
             aria-label="Image size"
-            defaultValue={imageSize}
+            value={imageSize}
             onChangeCommitted={(event, newValue) => setImageSize(newValue)}
             valueLabelDisplay="auto"
             step={50}
@@ -99,6 +158,13 @@ export default function NutriscoreValidator() {
             sx={{ maxWidth: 500 }}
           />
         </Box>
+
+        <FormControlLabel
+          onChange={(event) => setZoomOnLogo(event.target.checked)}
+          control={<Checkbox checked={zoomOnLogo} />}
+          label="zoom on logo"
+          labelPlacement="end"
+        />
       </Stack>
 
       <Divider sx={{ mb: 4 }} />
@@ -121,17 +187,10 @@ export default function NutriscoreValidator() {
               onClick={toggleSelection(question.insight_id)}
               tabIndex={-1}
             >
-              <CardMedia
-                component="img"
-                src={question.source_image_url}
-                alt=""
-                sx={{
-                  maxWidth: "100%",
-                  maxHeight: "100%",
-                  width: "auto",
-                  margin: "auto",
-                }}
-                loading="lazy"
+              <NutriscoreImage
+                question={question}
+                imageSize={imageSize}
+                zoomOnLogo={zoomOnLogo}
               />
               <Checkbox
                 sx={{ position: "absolute", bottom: 10, right: 10 }}
