@@ -37,9 +37,14 @@ export default function Nutrition() {
         alignItems: { xs: "center", md: "flex-start" },
         justifyContent: "center",
         padding: 4,
+        border: "5px solid green",
+        minHeight: "89.4vh",
       }}
     >
-      <ProductNutriments setNutriments={setNutriments} />
+      <ProductNutriments
+        setNutriments={setNutriments}
+        nutriments={nutriments}
+      />
       <NutritionTable
         nutriments={nutriments.filter((nutr) => nutr.display)}
         setNutriments={setNutriments}

@@ -7,7 +7,7 @@ import offService from "../../off";
 
 import { basicNutriments } from "./nutritionFields";
 
-export default function ProductNutriments({ setNutriments }) {
+export default function ProductNutriments({ setNutriments, nutriments }) {
   const [page, setPage] = React.useState(1);
   const [index, setIndex] = React.useState(0);
   const [products, setProducts] = React.useState([]);
@@ -35,6 +35,7 @@ export default function ProductNutriments({ setNutriments }) {
 
   function clickHandler() {
     setIndex((prev) => (prev < 22 ? ++prev : 0));
+    console.log(nutriments.filter((nutr) => nutr.display && nutr.value));
     setNutriments(basicNutriments);
   }
 
@@ -43,12 +44,46 @@ export default function ProductNutriments({ setNutriments }) {
       flexGrow={1}
       flexShrink={1}
       display={"flex"}
+      gap={"1em"}
       flexDirection={"column"}
       sx={{
         maxWidth: "380px",
-        minHeight: "70vh",
+        border: "5px solid red",
+        alignItems: "center",
       }}
     >
+      <Box display={"flex"} flexDirection={"row"} Gap={".5em"}>
+        <Button
+          onClick={clickHandler}
+          color="secondary"
+          variant="contained"
+          size="large"
+          actionType={"skip"}
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            flexGrow: 1,
+            width: "50%",
+          }}
+        >
+          SKIP
+        </Button>
+        <Button
+          onClick={clickHandler}
+          color="success"
+          variant="contained"
+          actionType={"validate"}
+          size="large"
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            flexGrow: 1,
+            width: "50%",
+          }}
+        >
+          VALIDATE
+        </Button>
+      </Box>
       <Typography variant="h5" component="h5" sx={{ alignSelf: "center" }}>
         {productName}
       </Typography>
@@ -61,39 +96,13 @@ export default function ProductNutriments({ setNutriments }) {
           // src={getFullSizeImage(question.source_image_url)}
           src={pictureURL}
           alt=""
-          style={{ maxWidth: "100%", maxHeight: "100%" }}
+          style={{
+            maxWidth: "100%",
+            maxHeight: "100%",
+            border: "5px solid" + " red",
+          }}
         />
       </Zoom>
-      <Box display={"flex"} flexDirection={"row"} Gap={".5em"}>
-        <Button
-          onClick={clickHandler}
-          color="secondary"
-          variant="contained"
-          size="large"
-          sx={{
-            display: "flex",
-            flexDirection: "column",
-            flexGrow: 1,
-            width: "47%",
-          }}
-        >
-          SKIP
-        </Button>
-        <Button
-          onClick={clickHandler}
-          color="success"
-          variant="contained"
-          size="large"
-          sx={{
-            display: "flex",
-            flexDirection: "column",
-            flexGrow: 1,
-            width: "47%",
-          }}
-        >
-          VALIDATE
-        </Button>
-      </Box>
     </Box>
   );
 }

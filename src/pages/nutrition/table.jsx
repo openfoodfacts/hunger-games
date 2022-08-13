@@ -32,7 +32,7 @@ export default function NutritionTable({
     label: t(`nutrition.nutriments.${item.label}`),
     id: item.label,
   }));
-  //, width: "340px"
+
   return (
     <Box>
       <TableContainer
