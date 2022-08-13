@@ -15,8 +15,9 @@ export default function AdditionalNutriments({ options, setNutriments }) {
       options={options}
       sx={{ width: 245, marginLeft: 2, marginTop: 2 }}
       onChange={(event) => {
-        const nutrIndex = +event.target.dataset.optionIndex;
-        const nutrName = options[nutrIndex].id;
+        const nutr = event.target.innerText;
+        const nutrName = options.find((item) => item.label === nutr).id;
+
         setNutriments((prev) =>
           prev.map((nutr) =>
             nutr.label === nutrName ? { ...nutr, display: true } : nutr
