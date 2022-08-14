@@ -13,13 +13,14 @@ import Table from "@mui/material/Table";
 import TableBody from "@mui/material/TableBody";
 import TableCell from "@mui/material/TableCell";
 import TableRow from "@mui/material/TableRow";
-
+import OutlinedFlagIcon from "@mui/icons-material/OutlinedFlag";
+import FlagIcon from "@mui/icons-material/Flag";
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
-
 import { useTranslation } from "react-i18next";
 import { NO_QUESTION_LEFT } from "../../const";
 import offService from "../../off";
+import { updateFlagImage, removeFlagImage } from "../../utils";
 
 import {
   localSettings,
@@ -42,6 +43,21 @@ const ProductInformation = ({ question }) => {
   const { t } = useTranslation();
   const [productData, setProductData] = React.useState({});
   const [hideImages, setHideImages] = React.useState(getHideImages);
+  const [flagged, setFlagged] = React.useState([]);
+
+  const flagImage = (src, barcode, index) => {
+    const response = updateFlagImage(barcode, src);
+    const updatedImageArray = [...flagged];
+    updatedImageArray[index] = true;
+    setFlagged(updatedImageArray);
+  };
+
+  const deleteFlagImage = (src, barcode, index) => {
+    const response = removeFlagImage(barcode, src);
+    const updatedImageArray = [...flagged];
+    updatedImageArray[index] = false;
+    setFlagged(updatedImageArray);
+  };
 
   React.useEffect(() => {
     if (!question?.barcode) {
@@ -121,7 +137,11 @@ const ProductInformation = ({ question }) => {
       {!hideImages && productData?.images && (
         <Grid container rowSpacing={1.5} spacing={1}>
           {getImagesUrls(productData.images, question.barcode).map((src) => (
-            <Grid item key={src}>
+            <Grid
+              item
+              key={src}
+              style={{ display: "inline-flex", alignItems: "flex-start" }}
+            >
               <Zoom>
                 <img
                   src={src}
@@ -130,6 +150,19 @@ const ProductInformation = ({ question }) => {
                   style={{ maxWidth: 300, maxHeight: 300 }}
                 />
               </Zoom>
+              {flagged[src[src.length - 5]] ? (
+                <FlagIcon
+                  onClick={() =>
+                    deleteFlagImage(src, question.barcode, src[src.length - 5])
+                  }
+                />
+              ) : (
+                <OutlinedFlagIcon
+                  onClick={() =>
+                    flagImage(src, question.barcode, src[src.length - 5])
+                  }
+                />
+              )}
             </Grid>
           ))}
         </Grid>

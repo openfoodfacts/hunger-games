@@ -1,3 +1,5 @@
+import axios from "axios";
+
 const reformatTagMapping = {
   " ": "-",
   "'": "-",
@@ -41,3 +43,26 @@ export const removeEmptyKeys = (obj) => {
 export function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
+
+export const updateFlagImage = (barcode, src) => {
+  return axios.put(
+    `https://amathjourney.com/api/off-annotation/flag-image/${barcode}`,
+    {
+      mode: "no-cors",
+      imgid: Number(src[src.length - 5]),
+      url: src,
+    }
+  );
+};
+
+export const removeFlagImage = (barcode, src) => {
+  return axios.delete(
+    `https://amathjourney.com/api/off-annotation/flag-image/${barcode}`,
+    {
+      mode: "no-cors",
+      data: {
+        imgid: Number(src[src.length - 5]),
+      },
+    }
+  );
+};
