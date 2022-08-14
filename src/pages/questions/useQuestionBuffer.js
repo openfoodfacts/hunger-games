@@ -150,10 +150,14 @@ export const useQuestionBuffer = (
     }
   }, [sortByPopularity, insightType, valueTag, brandFilter, countryFilter]);
 
+  const noMoreQuestionsToLoad =
+    bufferState.questions.includes(NO_QUESTION_LEFT);
+
   React.useEffect(() => {
     let filterIsStillValid = true;
     if (
       bufferState.questions.length < bufferThreshold &&
+      !noMoreQuestionsToLoad &&
       !isLoadingRef.current
     ) {
       isLoadingRef.current = true;
@@ -192,6 +196,7 @@ export const useQuestionBuffer = (
       isLoadingRef.current = false;
     };
   }, [
+    noMoreQuestionsToLoad,
     bufferState.questions.length,
     bufferState.page,
     pageSize,
