@@ -21,6 +21,8 @@ import { useTranslation } from "react-i18next";
 import { NO_QUESTION_LEFT } from "../../const";
 import offService from "../../off";
 import { updateFlagImage, removeFlagImage } from "../../utils";
+import IconButton from "@mui/material/IconButton";
+import Tooltip from "@mui/material/Tooltip";
 
 import {
   localSettings,
@@ -151,17 +153,29 @@ const ProductInformation = ({ question }) => {
                 />
               </Zoom>
               {flagged[src[src.length - 5]] ? (
-                <FlagIcon
-                  onClick={() =>
-                    deleteFlagImage(src, question.barcode, src[src.length - 5])
-                  }
-                />
+                <Tooltip title="Unflag Image">
+                  <IconButton>
+                    <FlagIcon
+                      onClick={() =>
+                        deleteFlagImage(
+                          src,
+                          question.barcode,
+                          src[src.length - 5]
+                        )
+                      }
+                    />
+                  </IconButton>
+                </Tooltip>
               ) : (
-                <OutlinedFlagIcon
-                  onClick={() =>
-                    flagImage(src, question.barcode, src[src.length - 5])
-                  }
-                />
+                <Tooltip title="Flag Image">
+                  <IconButton>
+                    <OutlinedFlagIcon
+                      onClick={() =>
+                        flagImage(src, question.barcode, src[src.length - 5])
+                      }
+                    />
+                  </IconButton>
+                </Tooltip>
               )}
             </Grid>
           ))}
