@@ -72,13 +72,6 @@ const LogoForm = (props) => {
       {...other}
     >
       <TextField
-        value={innerValue}
-        onChange={(event) => setInnerValue(event.target.value)}
-        label={t("logos.value")}
-        sx={{ minWidth: { xs: "80%", sm: 350 } }}
-        size="small"
-      />
-      <TextField
         value={innerType}
         onChange={(event) => setInnerType(event.target.value)}
         select
@@ -92,6 +85,13 @@ const LogoForm = (props) => {
           </MenuItem>
         ))}
       </TextField>
+      <TextField
+        value={innerValue}
+        onChange={(event) => setInnerValue(event.target.value)}
+        label={t("logos.value")}
+        sx={{ minWidth: { xs: "80%", sm: 350 } }}
+        size="small"
+      />
       <LoadingButton
         onClick={send}
         loading={isSending}
