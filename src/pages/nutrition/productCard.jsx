@@ -5,8 +5,6 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import offService from "../../off";
 
-// import { basicNutriments } from "./nutritionFields";
-
 export default function ProductNutriments({ setNutriments, nutriments }) {
   const [page, setPage] = React.useState(1);
   const [index, setIndex] = React.useState(0);
@@ -35,9 +33,6 @@ export default function ProductNutriments({ setNutriments, nutriments }) {
 
   function clickHandler() {
     setIndex((prev) => (prev < 22 ? ++prev : 0));
-
-    // console.log(nutriments.filter((nutr) => nutr.display && nutr.value));
-    //setNutriments(basicNutriments);
   }
 
   return (
