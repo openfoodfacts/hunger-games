@@ -28,10 +28,10 @@ export default function Nutrition() {
 
   return (
     <Box
-      display={"flex"}
       flexDirection={{ xs: "column", md: "row" }}
       gap={2}
       sx={{
+        display: "flex",
         width: 1,
         height: 1,
         alignItems: { xs: "center", md: "flex-start" },
