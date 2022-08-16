@@ -32,7 +32,7 @@ export default function ProductNutriments({ setNutriments, nutriments }) {
     : "https://static.openfoodfacts.org/images/image-placeholder.png";
 
   function clickHandler() {
-    if (index < 23) setIndex((prev) => ++prev);
+    if (index < products.length) setIndex((prev) => ++prev);
     else {
       setIndex(0);
       setPage((prevPage) => ++prevPage);
