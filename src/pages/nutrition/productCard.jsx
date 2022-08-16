@@ -5,6 +5,8 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import offService from "../../off";
 
+import { basicNutriments } from "./nutritionFields";
+
 export default function ProductNutriments({ setNutriments, nutriments }) {
   const [page, setPage] = React.useState(1);
   const [index, setIndex] = React.useState(0);
@@ -37,6 +39,14 @@ export default function ProductNutriments({ setNutriments, nutriments }) {
       setIndex(0);
       setPage((prevPage) => ++prevPage);
     }
+    const resArr = nutriments.filter(
+      (nutr) => nutr.display && +nutr.value && +nutr.value > 0
+    );
+    const message = resArr.length
+      ? resArr
+      : "You forgot to input value" + " duuuuuuuuuuuuuuuuude";
+    console.log(message);
+    setNutriments(basicNutriments);
   }
 
   return (
