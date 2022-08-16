@@ -5,8 +5,9 @@ questions game:
   - src/pages/questions/**/*
 
 logo game:
-  - src/pages/logos/**/*
-
+  - src/pages/logos/**/*,
+  - src/components/LogoForm.jsx, 
+  - src/pages/logos/LogoAnnotation.jsx
 insights:
   - src/pages/insights/**/*
 
