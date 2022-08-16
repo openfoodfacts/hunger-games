@@ -14,6 +14,7 @@ import {
   NotFoundPage,
   NutriscoreValidator,
   Home,
+  Nutrition,
 } from "./pages";
 import ResponsiveAppBar from "./components/ResponsiveAppBar";
 import DevModeContext from "./contexts/devMode";
@@ -107,6 +108,7 @@ export default function App() {
           <Route path="/insights" element={<InsightsPage />} />
           <Route path="*" element={<NotFoundPage />} />
           <Route path="/nutriscore" element={<NutriscoreValidator />} />
+          <Route path="/nutrition" element={<Nutrition />} />
         </Routes>
       </DevModeContext.Provider>
     </LoginContext.Provider>
