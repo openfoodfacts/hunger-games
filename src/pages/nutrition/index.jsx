@@ -47,8 +47,6 @@ export default function Nutrition() {
       <NutritionTable
         nutriments={nutriments.filter((nutr) => nutr.display)}
         setNutriments={setNutriments}
-        //additionalNutriments={nutriments.filter((nutr) =>
-        // !nutr.display)}
         onchangeHandler={onchangeHandler}
         deleteItem={deleteItem}
       />
