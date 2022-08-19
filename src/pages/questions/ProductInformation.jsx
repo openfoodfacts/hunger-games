@@ -29,6 +29,13 @@ import {
   getHideImages,
 } from "../../localeStorageManager";
 
+// src looks like: "https://static.openfoodfacts.org/images/products/004/900/053/2258/1.jpg"
+const getImageId = (src) => {
+  const file = src.split("/").at(-1);
+  const imageId = file.replace(/\..+$/, "");
+  return Number(imageId);
+};
+
 const getImagesUrls = (images, barcode) => {
   if (!images || !barcode) {
     return [];
@@ -40,14 +47,6 @@ const getImagesUrls = (images, barcode) => {
     .map((key) => `${rootImageUrl}/${key}.jpg`);
 };
 
-// src looks like: "https://static.openfoodfacts.org/images/products/004/900/053/2258/1.jpg"
-const getImageId = (src) => {
-  var sliced = src.split("/").at(-1);
-  sliced.replace(/\..+$/, "");
-  const imgid = sliced.slice(0, -4);
-  return Number(imgid);
-};
-
 const ProductInformation = ({ question }) => {
   const { t } = useTranslation();
   const [productData, setProductData] = React.useState({});
@@ -56,27 +55,27 @@ const ProductInformation = ({ question }) => {
 
   const flagImage = (src, barcode) => {
     const imgid = getImageId(src);
-    try {
-      const response = axios.put(
+    axios
+      .put(
         `https://amathjourney.com/api/off-annotation/flag-image/${barcode}`,
         {
           mode: "no-cors",
           imgid: imgid,
           url: src,
         }
-      );
-      const updatedImageArray = [...flagged];
-      updatedImageArray[imgid] = true;
-      setFlagged(updatedImageArray);
-    } catch (err) {
-      console.log(err);
-    }
+      )
+      .catch(() => {
+        console.log("Image flagged");
+      });
+    const newFlagged = [...flagged];
+    newFlagged.push(imgid);
+    setFlagged(newFlagged);
   };
 
   const deleteFlagImage = (src, barcode) => {
     const imgid = getImageId(src);
-    try {
-      const response = axios.delete(
+    axios
+      .delete(
         `https://amathjourney.com/api/off-annotation/flag-image/${barcode}`,
         {
           mode: "no-cors",
@@ -84,19 +83,21 @@ const ProductInformation = ({ question }) => {
             imgid: imgid,
           },
         }
-      );
-      const updatedImageArray = [...flagged];
-      updatedImageArray[imgid] = false;
-      setFlagged(updatedImageArray);
-    } catch (err) {
-      console.log(err);
-    }
+      )
+      .catch(() => {
+        console.log("Something went wrong. Image could not be flagged");
+      });
+    const newFlagged = flagged.filter(
+      (flaggedImageId) => flaggedImageId !== imgid
+    );
+    setFlagged(newFlagged);
   };
 
   React.useEffect(() => {
     if (!question?.barcode) {
       return;
     }
+    setFlagged([]);
     let isStillValid = true;
     setProductData({
       code: question.barcode,
@@ -170,41 +171,37 @@ const ProductInformation = ({ question }) => {
       />
       {!hideImages && productData?.images && (
         <Grid container rowSpacing={1.5} spacing={1}>
-          {getImagesUrls(productData.images, question.barcode).map(
-            (src, imgid) => (
-              <Grid
-                item
-                key={src}
-                style={{ display: "inline-flex", alignItems: "flex-start" }}
-              >
-                <Zoom>
-                  <img
-                    src={src}
-                    alt=""
-                    loading="lazy"
-                    style={{ maxWidth: 300, maxHeight: 300 }}
-                  />
-                </Zoom>
-                {flagged[src[src.length - 5]] ? (
-                  <Tooltip title="Unflag the image">
-                    <IconButton
-                      onClick={() => deleteFlagImage(src, question.barcode)}
-                    >
-                      <FlagIcon />
-                    </IconButton>
-                  </Tooltip>
-                ) : (
-                  <Tooltip title="Something wrong? Report/flag the image!">
-                    <IconButton
-                      onClick={() => flagImage(src, question.barcode)}
-                    >
-                      <OutlinedFlagIcon />
-                    </IconButton>
-                  </Tooltip>
-                )}
-              </Grid>
-            )
-          )}
+          {getImagesUrls(productData.images, question.barcode).map((src) => (
+            <Grid
+              item
+              key={src}
+              style={{ display: "inline-flex", alignItems: "flex-start" }}
+            >
+              <Zoom>
+                <img
+                  src={src}
+                  alt=""
+                  loading="lazy"
+                  style={{ maxWidth: 300, maxHeight: 300 }}
+                />
+              </Zoom>
+              {flagged.includes(getImageId(src)) ? (
+                <Tooltip title="Unflag the image">
+                  <IconButton
+                    onClick={() => deleteFlagImage(src, question.barcode)}
+                  >
+                    <FlagIcon />
+                  </IconButton>
+                </Tooltip>
+              ) : (
+                <Tooltip title="Something wrong? Report/flag the image!">
+                  <IconButton onClick={() => flagImage(src, question.barcode)}>
+                    <OutlinedFlagIcon />
+                  </IconButton>
+                </Tooltip>
+              )}
+            </Grid>
+          ))}
         </Grid>
       )}
 
