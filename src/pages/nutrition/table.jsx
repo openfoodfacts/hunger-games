@@ -50,28 +50,17 @@ export default function NutritionTable({
                 sx={{
                   fontSize: "large",
                   fontWeight: "bold",
-                  display: "flex",
-                  flexDirection: "row",
-                  width: "100%",
                 }}
               >
-                <Box
-                  display={"flex"}
-                  flexDirection={"row"}
-                  sx={{ alignItems: "center" }}
-                >
-                  {t("nutrition.table.value")}
-                  {/*<AdditionalNutriments*/}
-                  {/*  options={options}*/}
-                  {/*  setNutriments={setNutriments}*/}
-                  {/*/>*/}
-                </Box>
+                {t("nutrition.table.value")}
               </TableCell>
+              <TableCell colSpan={4} />
             </TableRow>
           </TableHead>
           <TableBody>{rows}</TableBody>
         </Table>
       </TableContainer>
+      {/* <AdditionalNutriments options={options} setNutriments={setNutriments} /> */}
     </Box>
   );
 }

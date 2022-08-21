@@ -3,15 +3,9 @@ import TableCell from "@mui/material/TableCell";
 import TableRow from "@mui/material/TableRow";
 import TextField from "@mui/material/TextField";
 import SelectUnit from "./unitSelect";
-import { Typography } from "@mui/material";
-import { Box } from "@mui/material";
 import DeleteOutlineIcon from "@mui/icons-material/DeleteOutline";
 
 import { useTranslation } from "react-i18next";
-
-function createData(label, property, deleteIcon) {
-  return { label, property, deleteIcon };
-}
 
 export default function TableRowComp({
   nutriment,
@@ -20,31 +14,27 @@ export default function TableRowComp({
 }) {
   const { t } = useTranslation();
 
-  const row = createData(
-    <Box
-      sx={{
-        display: "flex",
-        justifyContent: "space-between",
-        flexDirection: "row",
-        width: "400px",
-      }}
-    >
-      <Typography>{t(`nutrition.nutriments.${nutriment.label}`)}</Typography>
-      <Box
-        sx={{
-          display: "flex",
-        }}
-      >
+  const nutrimentLabel = t(`nutrition.nutriments.${nutriment.label}`);
+
+  return (
+    <TableRow sx={{ "&:last-child td, &:last-child th": { border: 0 } }}>
+      <TableCell component="th" scope="row">
+        {nutrimentLabel}
+      </TableCell>
+      <TableCell>
         <SelectUnit
           options={nutriment.quantification}
           value={"quantification"}
           onchangeHandler={onchangeHandler}
         />
+      </TableCell>
+
+      <TableCell sx={{ width: 20 }}>
         <TextField
           id={nutriment.label}
           type={"number"}
           sx={{
-            width: "80px",
+            minWidth: "8rem",
           }}
           /*label={t(`nutrition.nutriments.${nutriment.label}`)}*/
           label="Value"
@@ -54,30 +44,19 @@ export default function TableRowComp({
           name={"value"}
           onChange={onchangeHandler}
         />
-
+      </TableCell>
+      <TableCell>
         <SelectUnit
           options={nutriment.unit}
           value={"unit"}
           onchangeHandler={onchangeHandler}
         />
-      </Box>
-    </Box>,
-    <DeleteOutlineIcon
-      sx={{ cursor: "pointer", color: "red" }}
-      onClick={() => deleteItem(nutriment)}
-    />
-  );
-
-  return (
-    <TableRow
-      key={row.label}
-      sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
-    >
-      <TableCell component="th" scope="row" sx={{ width: 10 }}>
-        {row.label}
       </TableCell>
-      <TableCell align="left" sx={{ width: "1rem" }}>
-        {row.property}
+      <TableCell>
+        <DeleteOutlineIcon
+          sx={{ cursor: "pointer", color: "red" }}
+          onClick={() => deleteItem(nutriment)}
+        />
       </TableCell>
     </TableRow>
   );
