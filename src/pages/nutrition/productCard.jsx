@@ -44,7 +44,7 @@ export default function ProductNutriments({ setNutriments, nutriments }) {
     );
     const message = resArr.length
       ? resArr
-      : "You forgot to input value" + " duuuuuuuuuuuuuuuuude";
+      : "You forgot to input value duuuuuuuuuuuuuuuuude";
     console.log(message);
     setNutriments(basicNutriments);
   }
@@ -109,7 +109,7 @@ export default function ProductNutriments({ setNutriments, nutriments }) {
           style={{
             maxWidth: "100%",
             maxHeight: "100%",
-            border: "5px solid" + " red",
+            border: "5px solid red",
           }}
         />
       </Zoom>
