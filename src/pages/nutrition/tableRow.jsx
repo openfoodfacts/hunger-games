@@ -35,7 +35,10 @@ export default function TableRowComp({
       <TableCell>
         <TextField
           select
-          onChange={onchangeHandler}
+          onChange={onchangeHandler(
+            nutriment.off_nutriment_id,
+            "quantification"
+          )}
           value={nutriment.quantification}
           sx={{ minWidth: 80 }}
         >
@@ -49,25 +52,21 @@ export default function TableRowComp({
 
       <TableCell sx={{ width: 20 }}>
         <TextField
-          id={nutriment.label}
-          type={"number"}
+          type="number"
           sx={{
             minWidth: "8rem",
           }}
-          /*label={t(`nutrition.nutriments.${nutriment.label}`)}*/
           label="Value"
           variant="outlined"
-          /*sx={{ width: "10rem" }}*/
           value={nutriment.value}
-          name={"value"}
-          onChange={onchangeHandler}
+          onChange={onchangeHandler(nutriment.off_nutriment_id, "value")}
         />
       </TableCell>
       <TableCell>
         {unitOptions.length > 0 && (
           <TextField
             select
-            onChange={onchangeHandler}
+            onChange={onchangeHandler(nutriment.off_nutriment_id, "unit")}
             value={nutriment.unit}
             sx={{ minWidth: 80 }}
             label="Unit"
