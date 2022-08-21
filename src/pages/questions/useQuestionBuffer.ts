@@ -1,5 +1,5 @@
 import React from "react";
-import { NO_QUESTION_LEFT } from "../../const";
+import { NO_QUESTION_LEFT, SKIPPED_INSIGHT } from "../../const";
 import robotoff, { QuestionInterface } from "../../robotoff";
 import { reformatValueTag } from "../../utils";
 
@@ -163,7 +163,7 @@ function reducer(state: ReducerStateInterface, action: Actions) {
       const newAnswers = state.answers.map((answer) => {
         const { sendingTime, isPending, validationValue, insight_id } = answer;
         if (isPending && sendingTime <= minDate) {
-          if (validationValue !== -1) {
+          if (validationValue !== SKIPPED_INSIGHT) {
             robotoff.annotate(insight_id!, validationValue);
             return { ...answer, isPending: false };
           }
@@ -176,6 +176,9 @@ function reducer(state: ReducerStateInterface, action: Actions) {
       const answeredQuestionIndex = state.answers.findIndex(
         ({ insight_id }) => insight_id === action.payload.insightId
       );
+      if (answeredQuestionIndex < 0) {
+        return state;
+      }
       const answer = state.answers[answeredQuestionIndex];
       const { validationValue, isPending, sendingTime, ...question } = answer;
 
