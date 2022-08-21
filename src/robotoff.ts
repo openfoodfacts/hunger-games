@@ -68,6 +68,10 @@ const robotoff = {
     );
   },
 
+  insightDetail(insight_id) {
+    return axios.get(`${ROBOTOFF_API_URL}/insights/detail/${insight_id}`);
+  },
+
   loadLogo(logoId) {
     return axios.get(`${ROBOTOFF_API_URL}/images/logos/${logoId}`);
   },

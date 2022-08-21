@@ -1,6 +1,10 @@
 import * as React from "react";
 
+import Stack from "@mui/material/Stack";
 import Box from "@mui/material/Box";
+import Button from "@mui/material/Button";
+import LoadingButton from "@mui/lab/LoadingButton";
+
 import { useTranslation } from "react-i18next";
 import { useLocation } from "react-router-dom";
 
@@ -137,18 +141,16 @@ const request = (selectedIds) => async (data) => {
   }
 };
 
+const DEFAULT_LOGO_STATE = { logos: [], isLoading: false, referenceLogo: {} };
 export default function LogoAnnotation() {
   const { t } = useTranslation();
 
   const [logoSearchParams] = useLogoSearchParams();
-  const [logoState, setLogoState] = React.useState({
-    logos: [],
-    isLoading: false,
-  });
+  const [logoState, setLogoState] = React.useState(DEFAULT_LOGO_STATE);
 
   React.useEffect(() => {
     let isValid = true;
-    setLogoState({ logos: [], isLoading: true });
+    setLogoState({ isLoading: true, ...DEFAULT_LOGO_STATE });
     loadLogos(
       logoSearchParams.logo_id,
       logoSearchParams.index,
@@ -158,15 +160,19 @@ export default function LogoAnnotation() {
         if (!isValid) return;
         setLogoState({
           isLoading: false,
-          logos: logoData,
+          logos: logoData.map((logo) => ({
+            ...logo,
+            selected: logoSearchParams.logo_id === logo.id.toString(),
+          })),
+          referenceLogo:
+            logoData.find(
+              (logo) => logo.id.toString() === logoSearchParams.logo_id
+            ) || {},
         });
       })
       .catch(() => {
         if (!isValid) return;
-        setLogoState({
-          isLoading: false,
-          logos: [],
-        });
+        setLogoState(DEFAULT_LOGO_STATE);
       });
     return () => {
       isValid = false;
@@ -177,25 +183,75 @@ export default function LogoAnnotation() {
     logoSearchParams.index,
   ]);
 
-  const toggleSelection = React.useCallback((id) => {
-    setLogoState((state) => {
-      const indexToToggle = state.logos.findIndex((logo) => logo.id === id);
-      if (indexToToggle < 0) {
-        return state;
+  const toggleSelection = React.useCallback(
+    (id) => {
+      if (id.toString() === logoSearchParams.logo_id) {
+        return;
       }
-      return {
-        ...state,
-        logos: [
-          ...state.logos.slice(0, indexToToggle),
-          {
-            ...state.logos[indexToToggle],
-            selected: !state.logos[indexToToggle].selected,
-          },
-          ...state.logos.slice(indexToToggle + 1),
-        ],
-      };
-    });
-  }, []);
+      setLogoState((state) => {
+        const indexToToggle = state.logos.findIndex((logo) => logo.id === id);
+        if (indexToToggle < 0) {
+          return state;
+        }
+        return {
+          ...state,
+          logos: [
+            ...state.logos.slice(0, indexToToggle),
+            {
+              ...state.logos[indexToToggle],
+              selected: !state.logos[indexToToggle].selected,
+            },
+            ...state.logos.slice(indexToToggle + 1),
+          ],
+        };
+      });
+    },
+    [logoSearchParams.logo_id]
+  );
+
+  const selectAll = () => {
+    setLogoState((prevState) => ({
+      ...prevState,
+      logos: prevState.logos.map((logo) => ({ ...logo, selected: true })),
+    }));
+  };
+
+  const unselectAll = () => {
+    setLogoState((prevState) => ({
+      ...prevState,
+      logos: prevState.logos.map((logo) => ({
+        ...logo,
+        selected: logo.id.toString() === logoSearchParams.logo_id,
+      })),
+    }));
+  };
+
+  const [isRefreshing, setIsRefreshing] = React.useState(false);
+  const refreshData = async () => {
+    setIsRefreshing(true);
+    try {
+      const logoData = await loadLogos(
+        logoSearchParams.logo_id,
+        logoSearchParams.index,
+        logoSearchParams.count
+      );
+      setLogoState({
+        isLoading: false,
+        logos: logoData.map((logo) => ({
+          ...logo,
+          selected: logoSearchParams.logo_id === logo.id.toString(),
+        })),
+        referenceLogo:
+          logoData.find(
+            (logo) => logo.id.toString() === logoSearchParams.logo_id
+          ) || {},
+      });
+    } catch {
+      setLogoState(DEFAULT_LOGO_STATE);
+    }
+
+    setIsRefreshing(false);
+  };
 
   const selectedIds = logoState.logos
     .filter((logo) => logo.selected)
@@ -221,12 +277,45 @@ export default function LogoAnnotation() {
         "en:EU Organic" and a type like "label".
       </p>
       <LogoForm
-        // TODO: if the logoSearchParams.logo_id is defined and the first logo ios labelised, values should by default be initialized with its values
-        value=""
-        type=""
-        request={request(selectedIds)}
+        value={logoState.referenceLogo.annotation_value ?? ""}
+        type={logoState.referenceLogo.annotation_type ?? ""}
+        request={async () => {
+          await request(selectedIds);
+          setLogoState((prevState) => ({
+            ...prevState,
+            logos: prevState.logos.map((logo) => {
+              return {
+                ...logo,
+                selected: logoSearchParams.logo_id === logo.id.toString(),
+              };
+            }),
+          }));
+        }}
         isLoading={logoState.isLoading}
       />
+      <Stack direction="row" spacing={1} sx={{ my: 1 }}>
+        <Button size="small" onClick={selectAll}>
+          {t("logos.select_all")}
+        </Button>
+        <Button
+          size="small"
+          disabled={
+            selectedIds.length === 0 ||
+            (selectedIds.length === 1 &&
+              selectedIds[0].toString() === logoSearchParams.logo_id)
+          }
+          onClick={unselectAll}
+        >
+          {t("logos.unselect_all")}
+        </Button>
+        <LoadingButton
+          size="small"
+          onClick={refreshData}
+          loading={isRefreshing}
+        >
+          Refresh
+        </LoadingButton>
+      </Stack>
 
       <LogoGrid
         logos={logoState.logos.filter((logo) => logo.selected)}

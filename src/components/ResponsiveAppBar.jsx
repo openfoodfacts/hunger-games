@@ -207,7 +207,7 @@ const ResponsiveAppBar = () => {
               <Button
                 color="inherit"
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, display: "block" }}
+                sx={{ my: 2 }}
                 component={Link}
                 to={`/settings`}
                 data-welcome-tour="settings"
