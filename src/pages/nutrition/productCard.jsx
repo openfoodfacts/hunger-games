@@ -68,7 +68,6 @@ export default function ProductNutriments({ setNutriments, nutriments }) {
           color="secondary"
           variant="contained"
           size="large"
-          actionType={"skip"}
           sx={{
             display: "flex",
             flexDirection: "column",
@@ -82,7 +81,6 @@ export default function ProductNutriments({ setNutriments, nutriments }) {
           onClick={clickHandler}
           color="success"
           variant="contained"
-          actionType={"validate"}
           size="large"
           sx={{
             display: "flex",

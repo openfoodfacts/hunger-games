@@ -26,6 +26,7 @@ export default function TableRowComp({
   const nutrimentLabel = t(`nutrition.nutriments.${nutriment.label}`);
 
   const unitOptions = nutriment.unitOptions ?? defaultUnitOptions;
+
   return (
     <TableRow sx={{ "&:last-child td, &:last-child th": { border: 0 } }}>
       <TableCell component="th" scope="row">
@@ -63,12 +64,13 @@ export default function TableRowComp({
         />
       </TableCell>
       <TableCell>
-        {unitOptions && (
+        {unitOptions.length > 0 && (
           <TextField
             select
             onChange={onchangeHandler}
             value={nutriment.unit}
             sx={{ minWidth: 80 }}
+            label="Unit"
           >
             {unitOptions.map(({ label, value }) => (
               <MenuItem key={label} value={value}>
