@@ -7,6 +7,7 @@ const basicNutriments = [
     quantification: "=",
     robotoffPrediction: null,
     display: true,
+    unitOptions: [],
   },
   {
     off_nutriment_id: "energy-kcal",
@@ -16,6 +17,7 @@ const basicNutriments = [
     quantification: "<",
     robotoffPrediction: null,
     display: true,
+    unitOptions: [],
   },
   {
     off_nutriment_id: "nutriment_fat",
