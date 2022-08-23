@@ -32,7 +32,9 @@ const NutriscoreImage = ({ question, imageSize, zoomOnLogo }) => {
     robotoff
       .insightDetail(question.insight_id)
       .then(({ data }) => {
-        setCropArea(data.data.bounding_box);
+        if (data.data.bounding_box) {
+          setCropArea(data.data.bounding_box);
+        }
       })
       .catch(() => {});
   }, [question.insight_id, zoomOnLogo]);
