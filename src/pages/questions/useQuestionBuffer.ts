@@ -88,8 +88,10 @@ type Actions =
   | { type: "sendAnswers" };
 
 function reducer(state: ReducerStateInterface, action: Actions) {
+  console.log(action);
   switch (action.type) {
     case "reset":
+      console.log("reset");
       return {
         ...state,
         page: 1,
@@ -258,7 +260,7 @@ export const useQuestionBuffer = (
   const noMoreQuestionsToLoad =
     bufferState.questions.findIndex(
       (question) => question.insight_id === NO_QUESTION_LEFT
-    ) < 0;
+    ) >= 0;
 
   React.useEffect(() => {
     let filterIsStillValid = true;
@@ -316,6 +318,10 @@ export const useQuestionBuffer = (
     const timesToSending = bufferState.answers
       .filter(({ isPending }) => isPending)
       .map(({ sendingTime }) => sendingTime - now);
+
+    if (timesToSending.length === 0) {
+      return;
+    }
 
     const nextSending = Math.max(0, Math.min(...timesToSending));
 
