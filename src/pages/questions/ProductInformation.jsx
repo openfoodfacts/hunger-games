@@ -128,7 +128,7 @@ const ProductInformation = ({ question }) => {
     localSettings.update(localSettingsKeys.hideImages, event.target.checked);
   };
 
-  if (!question || question === NO_QUESTION_LEFT) {
+  if (!question || question.insight_id === NO_QUESTION_LEFT) {
     return null;
   }
   if (productData.isLoading) {

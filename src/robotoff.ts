@@ -3,8 +3,21 @@ import { ROBOTOFF_API_URL, IS_DEVELOPMENT_MODE } from "./const";
 import { getLang } from "./localeStorageManager";
 import { removeEmptyKeys } from "./utils";
 
+export interface QuestionInterface {
+  barcode: string;
+  insight_id: string;
+  insight_type: string;
+  question: string;
+  source_image_url?: string;
+  type: string;
+  value: string;
+  value_tag: string;
+}
+
+type GetQuestionsResponse = { count: number; questions: QuestionInterface[] };
+
 const robotoff = {
-  annotate(insightId, annotation) {
+  annotate(insightId: string, annotation) {
     if (IS_DEVELOPMENT_MODE) {
       console.log(
         `Annotated, ${ROBOTOFF_API_URL}/insights/annotate`,
@@ -24,30 +37,35 @@ const robotoff = {
     }
   },
 
-  questionsByProductCode(code) {
-    return axios.get(`${ROBOTOFF_API_URL}/questions/${code}`).then((result) => {
-      let questions = result.data.questions;
-      result.data.questions = questions.filter(
-        (question) => question.source_image_url
-      );
-      return result;
-    });
+  questionsByProductCode(code: string) {
+    return axios
+      .get<GetQuestionsResponse>(`${ROBOTOFF_API_URL}/questions/${code}`)
+      .then((result) => {
+        let questions = result.data.questions;
+        result.data.questions = questions.filter(
+          (question) => question.source_image_url
+        );
+        return result;
+      });
   },
 
   questions(sortBy, insightTypes, valueTag, brands, country, count = 10, page) {
     const lang = getLang();
 
-    return axios.get(`${ROBOTOFF_API_URL}/questions/${sortBy}`, {
-      params: removeEmptyKeys({
-        count,
-        lang,
-        insight_types: insightTypes,
-        value_tag: valueTag,
-        brands,
-        country,
-        page,
-      }),
-    });
+    return axios.get<GetQuestionsResponse>(
+      `${ROBOTOFF_API_URL}/questions/${sortBy}`,
+      {
+        params: removeEmptyKeys({
+          count,
+          lang,
+          insight_types: insightTypes,
+          value_tag: valueTag,
+          brands,
+          country,
+          page,
+        }),
+      }
+    );
   },
 
   insightDetail(insight_id) {

@@ -219,7 +219,11 @@ export default function NutriscoreValidator() {
             color="error"
             onClick={() => {
               selectedIds.forEach((insight_id) =>
-                answerQuestion({ value: 0, insightId: insight_id })
+                answerQuestion({
+                  value: 0,
+                  insightId: insight_id,
+                  pendingDelay: 100,
+                })
               );
               setSelectedIds([]);
             }}
@@ -234,7 +238,11 @@ export default function NutriscoreValidator() {
             color="success"
             onClick={() => {
               selectedIds.forEach((insight_id) =>
-                answerQuestion({ value: 1, insightId: insight_id })
+                answerQuestion({
+                  value: 1,
+                  insightId: insight_id,
+                  pendingDelay: 100,
+                })
               );
               setSelectedIds([]);
             }}

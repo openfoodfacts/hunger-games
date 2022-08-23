@@ -6,7 +6,7 @@ questions game:
 
 logo game:
   - src/pages/logos/**/*,
-  - src/components/LogoForm.jsx, 
+  - src/components/LogoForm.jsx,
   - src/pages/logos/LogoAnnotation.jsx
 insights:
   - src/pages/insights/**/*

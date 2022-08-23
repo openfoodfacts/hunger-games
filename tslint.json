@@ -1,0 +1,7 @@
+{
+  "extends": "tslint:recommended",
+  "defaultSeverity": "warning",
+  "linterOptions": {
+    "exclude": ["config/**/*.js", "build/**", "node_modules/**/*.ts"]
+  }
+}
