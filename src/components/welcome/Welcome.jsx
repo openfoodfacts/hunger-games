@@ -1,14 +1,18 @@
-import { Button, Box, Typography } from "@mui/material";
-import React, { useState } from "react";
-import Tour from "reactour";
+import * as React from "react";
+
+import IconButton from "@mui/material/IconButton";
+import Box from "@mui/material/Box";
+import Typography from "@mui/material/Typography";
 import QuestionMarkIcon from "@mui/icons-material/QuestionMark";
+import { useTheme } from "@mui/material/styles";
+import useMediaQuery from "@mui/material/useMediaQuery";
+
+import Tour from "reactour";
 import {
   localSettings,
   localSettingsKeys,
   getTour,
 } from "../../localeStorageManager";
-import { useTheme } from "@mui/material/styles";
-import useMediaQuery from "@mui/material/useMediaQuery";
 
 const styles = {
   minWidth: "min(90%, 800px)",
@@ -293,7 +297,7 @@ const Welcome = () => {
   const theme = useTheme();
   const isDesktop = useMediaQuery(theme.breakpoints.up("sm"));
 
-  const [isTourOpen, setIsTourOpen] = useState(false);
+  const [isTourOpen, setIsTourOpen] = React.useState(false);
   const handleShowTour = () => {
     setIsTourOpen(false);
     localSettings.update(localSettingsKeys.showTour, false);
@@ -316,7 +320,7 @@ const Welcome = () => {
           handleShowTour();
         }}
       />
-      <Button
+      <IconButton
         color="inherit"
         onClick={() => {
           setIsTourOpen(true);
@@ -324,7 +328,7 @@ const Welcome = () => {
         data-welcome-tour="tour"
       >
         <QuestionMarkIcon />
-      </Button>
+      </IconButton>
     </>
   );
 };
