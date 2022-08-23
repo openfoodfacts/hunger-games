@@ -8,15 +8,18 @@ import { basicNutriments } from "./nutritionFields";
 export default function Nutrition() {
   const [nutriments, setNutriments] = React.useState(basicNutriments);
 
-  function onchangeHandler(e) {
-    const { value, name, id } = e.target;
-    setNutriments((prevState) =>
-      prevState.map((nutr) => {
-        return id === nutr.label ? { ...nutr, [name]: value } : nutr;
-      })
-    );
-  }
-
+  const onchangeHandler = React.useCallback(
+    (nutriment_id, propertyKey) => (event) => {
+      setNutriments((prevState) =>
+        prevState.map((nutriment) => {
+          return nutriment_id === nutriment.off_nutriment_id
+            ? { ...nutriment, [propertyKey]: event.target.value }
+            : nutriment;
+        })
+      );
+    },
+    []
+  );
   function deleteItem(nutr) {
     setNutriments((prev) =>
       prev.map((nutriment) =>
