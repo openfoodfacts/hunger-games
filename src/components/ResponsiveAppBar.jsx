@@ -10,6 +10,7 @@ import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import ListSubheader from "@mui/material/ListSubheader";
+import Tooltip from "@mui/material/Tooltip";
 import MuiLink from "@mui/material/Link";
 import SettingsIcon from "@mui/icons-material/Settings";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
@@ -46,7 +47,7 @@ const ResponsiveAppBar = () => {
     setAnchorElNav(null);
   };
 
-  const { isLoggedIn } = React.useContext(LoginContext);
+  const { isLoggedIn, userName } = React.useContext(LoginContext);
   const { devMode: isDevMode, visiblePages } = React.useContext(DevModeContext);
   const displayedPages = pages.filter(
     (page) => !page.devModeOnly || (isDevMode && visiblePages[page.url])
@@ -188,11 +189,7 @@ const ResponsiveAppBar = () => {
                     to={`/${page.url}`}
                     data-welcome-tour={page.url}
                   >
-                    {page.url === "settings" ? (
-                      <SettingsIcon />
-                    ) : (
-                      t(page.translationKey)
-                    )}
+                    {t(page.translationKey)}
                   </Button>
                 ) : null
               )}
@@ -202,9 +199,12 @@ const ResponsiveAppBar = () => {
                 display: "flex",
                 flexDirection: "row",
                 alignItems: "baseline",
+                "&>*": {
+                  mr: 1.5,
+                },
               }}
             >
-              <Button
+              <IconButton
                 color="inherit"
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2 }}
@@ -213,8 +213,13 @@ const ResponsiveAppBar = () => {
                 data-welcome-tour="settings"
               >
                 <SettingsIcon />
-              </Button>
+              </IconButton>
               <Welcome />
+              <Tooltip
+                title={isLoggedIn ? `logged as ${userName}` : `not logged in`}
+              >
+                <AccountCircleIcon color={isLoggedIn ? "success" : "error"} />
+              </Tooltip>
             </Box>
           </Box>
         </Toolbar>

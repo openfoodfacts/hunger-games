@@ -21,6 +21,7 @@ import DevModeContext from "./contexts/devMode";
 import { getIsDevMode, getVisiblePages } from "./localeStorageManager";
 import LoginContext from "./contexts/login";
 import off from "./off";
+import { IS_DEVELOPMENT_MODE } from "./const";
 
 export default function App() {
   const [devMode, setDevMode] = React.useState(getIsDevMode);
@@ -82,7 +83,9 @@ export default function App() {
   const { trackPageView } = useMatomo();
 
   React.useEffect(() => {
-    trackPageView();
+    if (!IS_DEVELOPMENT_MODE) {
+      trackPageView();
+    }
   }, [location, trackPageView]);
 
   return (
