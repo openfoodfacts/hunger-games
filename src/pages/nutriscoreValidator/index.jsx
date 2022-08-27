@@ -19,7 +19,7 @@ import FormControlLabel from "@mui/material/FormControlLabel";
 
 import robotoff from "../../robotoff";
 
-const BUFFER_THRESHOLD = 1;
+const BUFFER_THRESHOLD = 10;
 const PAGE_SIZE = 50;
 
 const NutriscoreImage = ({ question, imageSize, zoomOnLogo }) => {
@@ -92,6 +92,7 @@ export default function NutriscoreValidator() {
     valueTag: "en:nutriscore-grade-a",
   });
   const [selectedIds, setSelectedIds] = React.useState([]);
+  const [lastClickedId, setLastClickedId] = React.useState(null);
 
   const updateSearchedGrad = (event) => {
     const newGrade = event.target.value;
@@ -106,19 +107,86 @@ export default function NutriscoreValidator() {
     }));
   };
 
-  const toggleSelection = (insight_id) => () => {
-    setSelectedIds((prev) =>
-      prev.includes(insight_id)
-        ? prev.filter((id) => id !== insight_id)
-        : [...prev, insight_id]
-    );
-  };
-
   const { buffer, answerQuestion, remainingQuestionNb } = useQuestionBuffer(
     filterState,
     PAGE_SIZE,
     BUFFER_THRESHOLD
   );
+
+  const toggleSelection = (insight_id) => (event) => {
+    if (event.shiftKey) {
+      setSelectedIds((prev) => {
+        const selectRange = prev.includes(lastClickedId);
+        let isInRange = false;
+        const rangeIds = buffer
+          .map((question) => {
+            if (
+              question.insight_id === insight_id ||
+              question.insight_id === lastClickedId
+            ) {
+              isInRange = !isInRange;
+              if (!isInRange) {
+                return question.insight_id;
+              }
+            }
+            return isInRange ? question.insight_id : null;
+          })
+          .filter((x) => x !== null);
+
+        if (selectRange) {
+          return [...prev, ...rangeIds.filter((id) => !prev.includes(id))];
+        }
+        return prev.filter((id) => !rangeIds.includes(id));
+      });
+    } else {
+      setSelectedIds((prev) =>
+        prev.includes(insight_id)
+          ? prev.filter((id) => id !== insight_id)
+          : [...prev, insight_id]
+      );
+    }
+    setLastClickedId(insight_id);
+  };
+
+  const handleKeyDown = (event) => {
+    if (!event.shiftKey) {
+      return;
+    }
+    const lastClickedIndexInBuffer = buffer.findIndex(
+      (question) => question.insight_id === lastClickedId
+    );
+    if (lastClickedIndexInBuffer === -1) {
+      return;
+    }
+
+    let indexToAdd;
+    if (event.key === "ArrowRight") {
+      indexToAdd = lastClickedIndexInBuffer + 1;
+    } else if (event.key === "ArrowLeft") {
+      indexToAdd = lastClickedIndexInBuffer - 1;
+    } else {
+      return;
+    }
+
+    if (indexToAdd < 0 || indexToAdd >= buffer.length) {
+      return;
+    }
+
+    const idsToAdd = [lastClickedId, buffer[indexToAdd].insight_id];
+
+    setSelectedIds((prev) => [
+      ...prev,
+      ...idsToAdd.filter((id) => !prev.includes(id)),
+    ]);
+    setLastClickedId(buffer[indexToAdd].insight_id);
+  };
+
+  const selectAll = () => {
+    setSelectedIds(buffer.map((question) => question.insight_id));
+  };
+  const unselectAll = () => {
+    setSelectedIds([]);
+  };
 
   return (
     <Box>
@@ -134,7 +202,7 @@ export default function NutriscoreValidator() {
         direction="row"
         justifyContent="center"
         alignItems="center"
-        sx={{ padding: 5, textAlign: "center" }}
+        sx={{ pt: 5, px: 5, pb: 0, textAlign: "center" }}
       >
         <TextField value={nutriscoreGrade} onChange={updateSearchedGrad} select>
           <MenuItem value="a">Nutriscore A</MenuItem>
@@ -168,6 +236,19 @@ export default function NutriscoreValidator() {
           labelPlacement="end"
         />
       </Stack>
+      <Stack
+        direction="row"
+        justifyContent="start"
+        alignItems="center"
+        sx={{ px: 5, py: 1, textAlign: "left" }}
+      >
+        <Button onClick={selectAll} size="small" sx={{ mr: 2 }}>
+          Select all
+        </Button>
+        <Button onClick={unselectAll} size="small">
+          Unselect all
+        </Button>
+      </Stack>
 
       <Divider sx={{ mb: 4 }} />
       <div
@@ -178,6 +259,7 @@ export default function NutriscoreValidator() {
           }px, 1fr))`,
           gridGap: 10,
         }}
+        onKeyDown={handleKeyDown}
       >
         {buffer.map((question) => (
           <Card
