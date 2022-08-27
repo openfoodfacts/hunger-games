@@ -47,7 +47,7 @@ root.render(
       <ThemeProvider theme={theme}>
         <MatomoProvider value={instance}>
           <App />
-        </MatomoProvider>{" "}
+        </MatomoProvider>
       </ThemeProvider>
     </BrowserRouter>
   </React.StrictMode>
