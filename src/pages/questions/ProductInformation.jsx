@@ -22,12 +22,12 @@ import { NO_QUESTION_LEFT } from "../../const";
 import offService from "../../off";
 import IconButton from "@mui/material/IconButton";
 import Tooltip from "@mui/material/Tooltip";
-import axios from "axios";
 import {
   localSettings,
   localSettingsKeys,
   getHideImages,
 } from "../../localeStorageManager";
+import externalApi from "../../externalApi";
 
 // src looks like: "https://static.openfoodfacts.org/images/products/004/900/053/2258/1.jpg"
 const getImageId = (src) => {
@@ -55,18 +55,8 @@ const ProductInformation = ({ question }) => {
 
   const flagImage = (src, barcode) => {
     const imgid = getImageId(src);
-    axios
-      .put(
-        `https://amathjourney.com/api/off-annotation/flag-image/${barcode}`,
-        {
-          mode: "no-cors",
-          imgid: imgid,
-          url: src,
-        }
-      )
-      .catch(() => {
-        console.log("Image flagged");
-      });
+    externalApi.addImageFlag({ barcode, imgid, url: src });
+
     const newFlagged = [...flagged];
     newFlagged.push(imgid);
     setFlagged(newFlagged);
@@ -74,19 +64,7 @@ const ProductInformation = ({ question }) => {
 
   const deleteFlagImage = (src, barcode) => {
     const imgid = getImageId(src);
-    axios
-      .delete(
-        `https://amathjourney.com/api/off-annotation/flag-image/${barcode}`,
-        {
-          mode: "no-cors",
-          data: {
-            imgid: imgid,
-          },
-        }
-      )
-      .catch(() => {
-        console.log("Something went wrong. Image could not be flagged");
-      });
+    externalApi.removeImageFlag({ barcode, imgid });
     const newFlagged = flagged.filter(
       (flaggedImageId) => flaggedImageId !== imgid
     );
