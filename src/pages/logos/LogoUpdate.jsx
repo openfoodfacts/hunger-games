@@ -5,14 +5,20 @@ import { useParams } from "react-router-dom";
 import LogoForm from "../../components/LogoForm";
 import robotoff from "../../robotoff";
 import offService from "../../off";
+import externalApi from "../../externalApi";
 import { IS_DEVELOPMENT_MODE } from "../../const.js";
 
+import Tooltip from "@mui/material/Tooltip";
+import IconButton from "@mui/material/IconButton";
 import Stack from "@mui/material/Stack";
 import Dialog from "@mui/material/Dialog";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import Divider from "@mui/material/Divider";
 import Box from "@mui/material/Box";
+
+import OutlinedFlagIcon from "@mui/icons-material/OutlinedFlag";
+import FlagIcon from "@mui/icons-material/Flag";
 
 import { useTranslation } from "react-i18next";
 
@@ -27,6 +33,7 @@ const getCropURL = (logo) => {
 
 const UpdateLogoForm = ({
   logoId,
+  image_id,
   annotationValue = "",
   annotationType = "",
   imageURL,
@@ -36,6 +43,7 @@ const UpdateLogoForm = ({
 }) => {
   const { t } = useTranslation();
   const [isImageOpen, setIsImageOpen] = React.useState(false);
+  const [isImageFlagged, setIsImageFlagged] = React.useState(false);
 
   const request = React.useCallback(
     (logoId) => async (data) => {
@@ -80,19 +88,49 @@ const UpdateLogoForm = ({
           {t("logos.barcode")} {barcode}
         </Typography>
         <img width="300px" src={cropURL} alt="crop of the logo" />
-        <Button
-          sx={{
-            maxWidth: 150,
-            background: "#3f50b5",
-            color: "white",
-            "&:hover": { color: "black" },
-          }}
-          onClick={() => {
-            setIsImageOpen(true);
-          }}
-        >
-          {t("logos.full_image")}
-        </Button>
+        <Stack direction="row">
+          <Button
+            sx={{
+              maxWidth: 150,
+              mr: 5,
+              background: "#3f50b5",
+              color: "white",
+              "&:hover": { color: "black" },
+            }}
+            onClick={() => {
+              setIsImageOpen(true);
+            }}
+          >
+            {t("logos.full_image")}
+          </Button>
+          {isImageFlagged ? (
+            <Tooltip title="Unflag the image">
+              <IconButton
+                onClick={() => {
+                  externalApi.deleteImageFlag({ barcode, imgid: image_id });
+                  setIsImageFlagged(false);
+                }}
+              >
+                <FlagIcon />
+              </IconButton>
+            </Tooltip>
+          ) : (
+            <Tooltip title="Something wrong? Report/flag the image!">
+              <IconButton
+                onClick={() => {
+                  externalApi.addImageFlag({
+                    barcode,
+                    imgid: image_id,
+                    url: imageURL,
+                  });
+                  setIsImageFlagged(true);
+                }}
+              >
+                <OutlinedFlagIcon />
+              </IconButton>
+            </Tooltip>
+          )}
+        </Stack>
         <Divider />
 
         <LogoForm
@@ -124,6 +162,7 @@ export default function LogoUpdate() {
       annotationValue: "",
       annotationType: "",
       imageURL: "",
+      image_id: "",
       cropURL: "",
       barcode: "",
       isLoading: true,
@@ -136,6 +175,7 @@ export default function LogoUpdate() {
         }
         setFetchedData({
           imageURL: getImageURL(data),
+          image_id: data.image.image_id,
           cropURL: getCropURL(data),
           annotationValue: data.annotation_value || "",
           annotationType: data.annotation_type || "",
@@ -151,6 +191,7 @@ export default function LogoUpdate() {
           annotationValue: "",
           annotationType: "",
           imageURL: "",
+          image_id: "",
           cropURL: "",
           barcode: "",
           isLoading: false,
