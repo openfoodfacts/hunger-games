@@ -15,6 +15,7 @@ import {
   NutriscoreValidator,
   Home,
   Nutrition,
+  FlaggedImages,
 } from "./pages";
 import ResponsiveAppBar from "./components/ResponsiveAppBar";
 import DevModeContext from "./contexts/devMode";
@@ -112,6 +113,7 @@ export default function App() {
           <Route path="*" element={<NotFoundPage />} />
           <Route path="/nutriscore" element={<NutriscoreValidator />} />
           <Route path="/nutrition" element={<Nutrition />} />
+          <Route path="/flagged-images" element={<FlaggedImages />} />
         </Routes>
       </DevModeContext.Provider>
     </LoginContext.Provider>
