@@ -24,6 +24,19 @@ import LoginContext from "./contexts/login";
 import off from "./off";
 import { IS_DEVELOPMENT_MODE } from "./const";
 
+const ADMINS = [
+  "alex-off",
+  "charlesnepote",
+  "gala-nafikova",
+  "hangy",
+  "manoncorneille",
+  "raphael0202",
+  "stephane",
+  "tacinte",
+  "teolemon",
+  "alexfauquette",
+];
+
 export default function App() {
   const [devMode, setDevMode] = React.useState(getIsDevMode);
   const [visiblePages, setVisiblePages] = React.useState(getVisiblePages);
@@ -72,12 +85,7 @@ export default function App() {
   }, [userState.isLoggedIn]);
 
   React.useEffect(() => {
-    async function firstFetch() {
-      const isLoggedIn = await refresh();
-      console.log(isLoggedIn);
-    }
-
-    firstFetch();
+    refresh();
   });
 
   const location = useLocation();
@@ -88,6 +96,8 @@ export default function App() {
       trackPageView();
     }
   }, [location, trackPageView]);
+
+  const showFlaggedImage = ADMINS.includes(userState.userName);
 
   return (
     <LoginContext.Provider value={{ ...userState, refresh }}>
@@ -113,7 +123,9 @@ export default function App() {
           <Route path="*" element={<NotFoundPage />} />
           <Route path="/nutriscore" element={<NutriscoreValidator />} />
           <Route path="/nutrition" element={<Nutrition />} />
-          <Route path="/flagged-images" element={<FlaggedImages />} />
+          {showFlaggedImage && (
+            <Route path="/flagged-images" element={<FlaggedImages />} />
+          )}
         </Routes>
       </DevModeContext.Provider>
     </LoginContext.Provider>
