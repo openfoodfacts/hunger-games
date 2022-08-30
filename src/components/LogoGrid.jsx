@@ -15,6 +15,7 @@ import { useTranslation } from "react-i18next";
 import EditIcon from "@mui/icons-material/Edit";
 import LinkIcon from "@mui/icons-material/Link";
 import { useTheme } from "@mui/system";
+import { Checkbox } from "@mui/material";
 
 const externalLogoURL = (id) => `/logos?logo_id=${id}&count=50`;
 const editLogoURL = (id) => `/logos/${id}`;
@@ -45,6 +46,7 @@ const LogoCard = React.memo(
             ? theme.palette.action.disabled
             : undefined,
           // border: selected ? `solid ${theme.palette.primary.main} ${theme.spacing(1)}` : undefined,
+          position: "relative",
         }}
       >
         <Box
@@ -75,18 +77,25 @@ const LogoCard = React.memo(
             image={image}
             sx={{ objectFit: "contain" }}
           />
-          <Typography sx={{ padding: 1 }} variant="caption">
-            {distance !== undefined &&
-              `${t("logos.distance")} ${distance.toFixed(1)}`}
-          </Typography>
-          <br />
-          <Typography sx={{ padding: 1 }} variant="caption">
-            {(annotation_type || annotation_value) &&
-              `${t("logos.annotation")} ${annotation_value || ""} (${
-                annotation_type || ""
-              })`}
-          </Typography>
         </CardActionArea>
+        <Typography sx={{ padding: 1 }} variant="caption">
+          {distance !== undefined &&
+            `${t("logos.distance")} ${distance.toFixed(1)}`}
+        </Typography>
+        <br />
+        <Typography sx={{ padding: 1 }} variant="caption">
+          {(annotation_type || annotation_value) &&
+            `${t("logos.annotation")} ${annotation_value || ""} (${
+              annotation_type || ""
+            })`}
+        </Typography>
+        <Checkbox
+          checked={selected}
+          disabled={!!annotation_type}
+          size="small"
+          onClick={() => toggleLogoSelection(id)}
+          sx={{ position: "absolute", bottom: 0, right: 0 }}
+        />
       </Card>
     );
   }
