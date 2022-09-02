@@ -129,7 +129,25 @@ const ResponsiveAppBar = () => {
             >
               Hunger Games
             </Typography>
-            <AccountCircleIcon color={isLoggedIn ? "success" : "error"} />
+            {isLoggedIn ? (
+              <AccountCircleIcon color="success" />
+            ) : (
+              <IconButton
+                onClick={async () => {
+                  const isLoggedIn = await refresh();
+                  if (!isLoggedIn) {
+                    window
+                      .open(
+                        "https://world.openfoodfacts.org/cgi/login.pl",
+                        "_blank"
+                      )
+                      .focus();
+                  }
+                }}
+              >
+                <AccountCircleIcon color="error" />
+              </IconButton>
+            )}
           </Box>
 
           {/* Desktop content */}
