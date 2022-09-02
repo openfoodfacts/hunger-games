@@ -4,6 +4,12 @@ import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import Stack from "@mui/material/Stack";
 import Link from "@mui/material/Link";
+import Dialog from "@mui/material/Dialog";
+import DialogTitle from "@mui/material/DialogTitle";
+import DialogContent from "@mui/material/DialogContent";
+import DialogContentText from "@mui/material/DialogContentText";
+import DialogActions from "@mui/material/DialogActions";
+import Button from "@mui/material/Button";
 
 import CancelOutlinedIcon from "@mui/icons-material/CancelOutlined";
 import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
@@ -13,6 +19,7 @@ import CancelScheduleSendIcon from "@mui/icons-material/CancelScheduleSend";
 import { useTranslation } from "react-i18next";
 import { CORRECT_INSIGHT, WRONG_INSIGHT } from "../../const";
 import offService from "../../off";
+import LoginContext from "../../contexts/login";
 import { AnswerInterface } from "./useQuestionBuffer";
 
 interface UserDataProps {
@@ -28,6 +35,17 @@ const UserData = ({
   preventAnnotation,
 }: UserDataProps) => {
   const { t } = useTranslation();
+
+  const [loginAlreadyProposed, setLoginAlreadyProposed] = React.useState(false);
+  const [loginModalOpen, setLoginModalOpen] = React.useState(false);
+
+  const { isLoggedIn } = React.useContext(LoginContext);
+
+  React.useEffect(() => {
+    if (answers.length > 3 && !isLoggedIn && !loginAlreadyProposed) {
+      setLoginModalOpen(true);
+    }
+  }, [answers.length, isLoggedIn, loginAlreadyProposed]);
 
   let displayedAnswers = answers.filter(
     (question) => question.validationValue !== -1
@@ -76,6 +94,40 @@ const UserData = ({
           )
         )}
       </Stack>
+      <Dialog
+        open={loginModalOpen}
+        onClose={() => {
+          setLoginModalOpen(false);
+          setLoginAlreadyProposed(true);
+        }}
+      >
+        <DialogTitle>Make your annotation count</DialogTitle>
+        <DialogContent>
+          <DialogContentText>
+            Currently you are not logged in Openfoodfact. To get your answers
+            directly applied to products, and associated to your account,
+            consider loggin to your open food fact account, or create one
+          </DialogContentText>
+        </DialogContent>
+        <DialogActions>
+          <Button
+            variant="contained"
+            href="https://world.openfoodfacts.org/cgi/login.pl"
+            component={Link}
+            target="_blank"
+          >
+            Login
+          </Button>
+          <Button
+            variant="contained"
+            href="https://world.openfoodfacts.org/cgi/user.pl"
+            component={Link}
+            target="_blank"
+          >
+            Sign up
+          </Button>
+        </DialogActions>
+      </Dialog>
     </Box>
   );
 };
