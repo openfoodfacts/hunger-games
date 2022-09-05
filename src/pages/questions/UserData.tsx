@@ -104,9 +104,9 @@ const UserData = ({
         <DialogTitle>Make your annotation count</DialogTitle>
         <DialogContent>
           <DialogContentText>
-            Currently you are not logged in Openfoodfact. To get your answers
+            Currently you are not logged in Open Food Facts. To get your answers
             directly applied to products, and associated to your account,
-            consider loggin to your open food fact account, or create one
+            consider logging in to your Open Food Facts account, or creating one
           </DialogContentText>
         </DialogContent>
         <DialogActions>
