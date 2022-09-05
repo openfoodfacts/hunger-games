@@ -76,9 +76,9 @@ const UserData = ({ userName }) => {
   }, [userName]);
   console.log(counts);
   return (
-    <Box sx={{ p: 2, my: 5 }}>
+    <Box sx={{ p: 2, mb: 10 }}>
       <Typography component="h3" variant="h5" sx={{ pb: 3 }}>
-        {userName} Statistics:
+        {userName} statistics:
       </Typography>
       <Stack direction={{ xs: "column", sm: "row" }} spacing={2}>
         {Object.keys(counts).map((countType) => (
