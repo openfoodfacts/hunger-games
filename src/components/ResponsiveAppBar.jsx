@@ -47,7 +47,7 @@ const ResponsiveAppBar = () => {
     setAnchorElNav(null);
   };
 
-  const { isLoggedIn, userName } = React.useContext(LoginContext);
+  const { isLoggedIn, userName, refresh } = React.useContext(LoginContext);
   const { devMode: isDevMode, visiblePages } = React.useContext(DevModeContext);
   const displayedPages = pages.filter(
     (page) => !page.devModeOnly || (isDevMode && visiblePages[page.url])
@@ -129,7 +129,25 @@ const ResponsiveAppBar = () => {
             >
               Hunger Games
             </Typography>
-            <AccountCircleIcon color={isLoggedIn ? "success" : "error"} />
+            {isLoggedIn ? (
+              <AccountCircleIcon color="success" />
+            ) : (
+              <IconButton
+                onClick={async () => {
+                  const isLoggedIn = await refresh();
+                  if (!isLoggedIn) {
+                    window
+                      .open(
+                        "https://world.openfoodfacts.org/cgi/login.pl",
+                        "_blank"
+                      )
+                      .focus();
+                  }
+                }}
+              >
+                <AccountCircleIcon color="error" />
+              </IconButton>
+            )}
           </Box>
 
           {/* Desktop content */}
@@ -216,9 +234,27 @@ const ResponsiveAppBar = () => {
               </IconButton>
               <Welcome />
               <Tooltip
-                title={isLoggedIn ? `logged as ${userName}` : `not logged in`}
+                title={isLoggedIn ? `logged as ${userName}` : `click to login`}
               >
-                <AccountCircleIcon color={isLoggedIn ? "success" : "error"} />
+                {isLoggedIn ? (
+                  <AccountCircleIcon color="success" />
+                ) : (
+                  <IconButton
+                    onClick={async () => {
+                      const isLoggedIn = await refresh();
+                      if (!isLoggedIn) {
+                        window
+                          .open(
+                            "https://world.openfoodfacts.org/cgi/login.pl",
+                            "_blank"
+                          )
+                          .focus();
+                      }
+                    }}
+                  >
+                    <AccountCircleIcon color="error" />
+                  </IconButton>
+                )}
               </Tooltip>
             </Box>
           </Box>
