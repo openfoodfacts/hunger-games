@@ -7,6 +7,7 @@ import QuestionCard from "../../components/QuestionCard";
 import { localFavorites } from "../../localeStorageManager";
 import LoginContext from "../../contexts/login";
 import HomeCards from "./homeCards";
+import UserData from "./UserData";
 import { useTheme } from "@mui/material/styles";
 
 const Home = () => {
@@ -15,7 +16,7 @@ const Home = () => {
     return localFavorites.fetch().questions ?? [];
   });
 
-  const { isLoggedIn } = React.useContext(LoginContext);
+  const { isLoggedIn, userName } = React.useContext(LoginContext);
 
   const size = Object.keys(savedQuestions).length;
   const [open, setOpen] = React.useState(false);
@@ -47,7 +48,10 @@ const Home = () => {
           ))}
         </Stack>
       </Box>
-      {!isLoggedIn && (
+
+      {isLoggedIn ? (
+        <UserData userName={userName} />
+      ) : (
         <React.Fragment>
           <Box
             padding={{ xs: "20px", sm: "50px" }}
