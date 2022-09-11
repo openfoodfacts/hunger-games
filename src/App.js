@@ -86,7 +86,7 @@ export default function App() {
 
   React.useEffect(() => {
     refresh();
-  });
+  }, [refresh]);
 
   const location = useLocation();
   const { trackPageView } = useMatomo();
