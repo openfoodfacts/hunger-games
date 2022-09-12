@@ -279,8 +279,8 @@ export default function LogoAnnotation() {
       <LogoForm
         value={logoState.referenceLogo.annotation_value ?? ""}
         type={logoState.referenceLogo.annotation_type ?? ""}
-        request={async () => {
-          await request(selectedIds);
+        request={async (formData) => {
+          await request(selectedIds)(formData);
           setLogoState((prevState) => ({
             ...prevState,
             logos: prevState.logos.map((logo) => {
