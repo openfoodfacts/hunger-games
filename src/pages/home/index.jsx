@@ -2,9 +2,10 @@ import * as React from "react";
 import Box from "@mui/material/Box";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
-import { Button, Modal } from "@mui/material";
+import { Button, Divider, Modal } from "@mui/material";
 import QuestionCard from "../../components/QuestionCard";
 import { localFavorites } from "../../localeStorageManager";
+import Opportunities from "../../components/Opportunities";
 import LoginContext from "../../contexts/login";
 import HomeCards from "./homeCards";
 import UserData from "./UserData";
@@ -111,6 +112,10 @@ const Home = () => {
               Learn why your contribution matters
             </Button>
           </Box>
+          <Divider />
+          <Opportunities type="category" />
+          <Opportunities type="label" />
+          <Opportunities type="brand" />
           <Modal
             open={open}
             onClose={handleClose}
