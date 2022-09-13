@@ -193,6 +193,19 @@ const robotoff = {
       `${ROBOTOFF_API_URL}/predict/nutrient?ocr_url=https://images.openfoodfacts.org/images/products/${productCodeForOcrUrl}/${imgid}.json`
     );
   },
+
+  getUnansweredValues(params: {
+    type: "label" | "brand" | "category";
+    page?: number;
+  }) {
+    const type = params.type;
+    let page = params.page ?? 1;
+    page = page >= 1 ? page : 1;
+
+    return axios.get(
+      `${ROBOTOFF_API_URL}/questions/unanswered/?type=${type}&page=${page}`
+    );
+  },
 };
 
 export default robotoff;
