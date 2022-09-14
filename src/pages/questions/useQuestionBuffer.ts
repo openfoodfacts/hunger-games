@@ -316,7 +316,10 @@ export const useQuestionBuffer = (
     const now = new Date().getTime();
 
     const timesToSending = bufferState.answers
-      .filter(({ isPending }) => isPending)
+      .filter(
+        ({ isPending, validationValue }) =>
+          isPending && validationValue !== SKIPPED_INSIGHT
+      )
       .map(({ sendingTime }) => sendingTime - now);
 
     if (timesToSending.length === 0) {
