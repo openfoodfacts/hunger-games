@@ -113,9 +113,7 @@ const Home = () => {
             </Button>
           </Box>
           <Divider />
-          <Opportunities type="category" />
-          <Opportunities type="label" />
-          <Opportunities type="brand" />
+
           <Modal
             open={open}
             onClose={handleClose}
@@ -165,6 +163,10 @@ const Home = () => {
           </Modal>
         </React.Fragment>
       )}
+
+      <Opportunities type="category" />
+      <Opportunities type="label" />
+      <Opportunities type="brand" />
     </>
   );
 };
