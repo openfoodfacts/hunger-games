@@ -167,8 +167,8 @@ function reducer(state: ReducerStateInterface, action: Actions) {
         if (isPending && sendingTime <= minDate) {
           if (validationValue !== SKIPPED_INSIGHT) {
             robotoff.annotate(insight_id!, validationValue);
-            return { ...answer, isPending: false };
           }
+          return { ...answer, isPending: false };
         }
         return answer;
       });
