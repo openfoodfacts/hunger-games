@@ -88,11 +88,11 @@ const ProductInformation = ({ question }) => {
       const product = result.data.product;
       setProductData({
         code: question.barcode,
-        productName: product.product_name || "",
-        brands: product.brands || "",
-        ingredientsText: product.ingredients_text || "",
-        countriesTags: product.countries_tags || [],
-        images: product.images || {},
+        productName: product?.product_name || "",
+        brands: product?.brands || "",
+        ingredientsText: product?.ingredients_text || "",
+        countriesTags: product?.countries_tags || [],
+        images: product?.images || {},
         isLoading: false,
       });
     });

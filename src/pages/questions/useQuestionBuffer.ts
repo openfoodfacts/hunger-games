@@ -167,8 +167,8 @@ function reducer(state: ReducerStateInterface, action: Actions) {
         if (isPending && sendingTime <= minDate) {
           if (validationValue !== SKIPPED_INSIGHT) {
             robotoff.annotate(insight_id!, validationValue);
-            return { ...answer, isPending: false };
           }
+          return { ...answer, isPending: false };
         }
         return answer;
       });
@@ -316,7 +316,10 @@ export const useQuestionBuffer = (
     const now = new Date().getTime();
 
     const timesToSending = bufferState.answers
-      .filter(({ isPending }) => isPending)
+      .filter(
+        ({ isPending, validationValue }) =>
+          isPending && validationValue !== SKIPPED_INSIGHT
+      )
       .map(({ sendingTime }) => sendingTime - now);
 
     if (timesToSending.length === 0) {
