@@ -30,9 +30,9 @@ const ecoScoreCards = [
     filterState: {
       ...DEFAULT_FILTER_STATE,
       insightType: "label",
-      valueTag: "en:ab-agriculture-biologique",
+      valueTag: "fr:ab-agriculture-biologique",
     },
-    title: "en:ab-agriculture-biologique",
+    title: "fr:ab-agriculture-biologique",
     imageSrc:
       "https://world.openfoodfacts.org/images/lang/en/labels/ab-agriculture-biologique.74x90.svg",
   },
