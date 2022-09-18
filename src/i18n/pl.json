@@ -1,4 +1,20 @@
 {
+  "home": {
+    "statistics": {
+      "editorCount": {
+        "title": "Edytor",
+        "description": "Liczba wykonanych edycji"
+      },
+      "contributorCount": {
+        "title": "Współtwórca",
+        "description": "Dodawanie nowego produktu"
+      },
+      "photographerCount": {
+        "title": "Fotograf",
+        "description": "Wykonywanie zdjęć dla produktu"
+      }
+    }
+  },
   "questions": {
     "category": "kategoria",
     "label": "etykieta",

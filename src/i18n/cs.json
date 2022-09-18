@@ -1,4 +1,20 @@
 {
+  "home": {
+    "statistics": {
+      "editorCount": {
+        "title": "Editor",
+        "description": "Počet dokončených vydání"
+      },
+      "contributorCount": {
+        "title": "Přispěvatel",
+        "description": "Přidání nového produktu"
+      },
+      "photographerCount": {
+        "title": "Fotograf",
+        "description": "Fotografování produktu"
+      }
+    }
+  },
   "questions": {
     "category": "kategorie",
     "label": "štítek",

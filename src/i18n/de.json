@@ -1,4 +1,20 @@
 {
+  "home": {
+    "statistics": {
+      "editorCount": {
+        "title": "Bearbeiter",
+        "description": "Anzahl der durchgeführten Bearbeitungen"
+      },
+      "contributorCount": {
+        "title": "Mitwirkende(r)",
+        "description": "Neues Produkt wird hinzugefügt"
+      },
+      "photographerCount": {
+        "title": "Fotograf",
+        "description": "Foto für ein Produkt wird aufgenommen"
+      }
+    }
+  },
   "questions": {
     "category": "Kategorie",
     "label": "Etikett",

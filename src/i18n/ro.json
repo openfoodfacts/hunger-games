@@ -1,4 +1,20 @@
 {
+  "home": {
+    "statistics": {
+      "editorCount": {
+        "title": "Editor",
+        "description": "Numărul de ediții realizate"
+      },
+      "contributorCount": {
+        "title": "Colaborator",
+        "description": "Adăugați un produs nou"
+      },
+      "photographerCount": {
+        "title": "Fotograf",
+        "description": "Realizarea de fotografii pentru un produs"
+      }
+    }
+  },
   "questions": {
     "category": "categorie",
     "label": "eticheta",

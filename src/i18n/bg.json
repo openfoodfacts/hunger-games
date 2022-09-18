@@ -1,4 +1,20 @@
 {
+  "home": {
+    "statistics": {
+      "editorCount": {
+        "title": "Редактор",
+        "description": "Number of edition done"
+      },
+      "contributorCount": {
+        "title": "Сътрудник",
+        "description": "Adding a new product"
+      },
+      "photographerCount": {
+        "title": "Фотограф",
+        "description": "Taking photos for a product"
+      }
+    }
+  },
   "questions": {
     "category": "категория",
     "label": "етикет",

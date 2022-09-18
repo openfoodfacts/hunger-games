@@ -1,4 +1,20 @@
 {
+  "home": {
+    "statistics": {
+      "editorCount": {
+        "title": "Redaktør",
+        "description": "Antal udførte redigeringer"
+      },
+      "contributorCount": {
+        "title": "Bidragsyder",
+        "description": "Tilføjelse af nyt produkt"
+      },
+      "photographerCount": {
+        "title": "Fotograf",
+        "description": "Taget fotos til et produkt"
+      }
+    }
+  },
   "questions": {
     "category": "kategori",
     "label": "etiket",
