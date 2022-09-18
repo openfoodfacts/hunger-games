@@ -1,4 +1,20 @@
 {
+  "home": {
+    "statistics": {
+      "editorCount": {
+        "title": "Toimittaja",
+        "description": "Number of edition done"
+      },
+      "contributorCount": {
+        "title": "Osallistuja",
+        "description": "Adding a new product"
+      },
+      "photographerCount": {
+        "title": "Photographer",
+        "description": "Taking photos for a product"
+      }
+    }
+  },
   "questions": {
     "category": "tuoteluokka",
     "label": "merkki",

@@ -1,4 +1,20 @@
 {
+  "home": {
+    "statistics": {
+      "editorCount": {
+        "title": "Editor",
+        "description": "Number of edition done"
+      },
+      "contributorCount": {
+        "title": "Panustaja",
+        "description": "Adding a new product"
+      },
+      "photographerCount": {
+        "title": "Photographer",
+        "description": "Taking photos for a product"
+      }
+    }
+  },
   "questions": {
     "category": "kategooria",
     "label": "label",

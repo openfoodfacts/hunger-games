@@ -1,4 +1,20 @@
 {
+  "home": {
+    "statistics": {
+      "editorCount": {
+        "title": "עורך",
+        "description": "מספר העריכות שבוצעו"
+      },
+      "contributorCount": {
+        "title": "תרומה",
+        "description": "הוספת מוצר חדש"
+      },
+      "photographerCount": {
+        "title": "צילום",
+        "description": "צילום תמונות של מוצר"
+      }
+    }
+  },
   "questions": {
     "category": "קטגוריה",
     "label": "תווית",

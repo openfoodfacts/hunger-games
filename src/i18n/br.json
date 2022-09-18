@@ -1,4 +1,20 @@
 {
+  "home": {
+    "statistics": {
+      "editorCount": {
+        "title": "Embanner",
+        "description": "Number of edition done"
+      },
+      "contributorCount": {
+        "title": "Perzhiad",
+        "description": "Adding a new product"
+      },
+      "photographerCount": {
+        "title": "Photographer",
+        "description": "Taking photos for a product"
+      }
+    }
+  },
   "questions": {
     "category": "rummad",
     "label": "skritellig",

@@ -1,4 +1,20 @@
 {
+  "home": {
+    "statistics": {
+      "editorCount": {
+        "title": "Editore",
+        "description": "Numero di edizioni completate"
+      },
+      "contributorCount": {
+        "title": "Contributore",
+        "description": "Aggiungere un nuovo prodotto"
+      },
+      "photographerCount": {
+        "title": "Fotografo",
+        "description": "Scattare foto per un prodotto"
+      }
+    }
+  },
   "questions": {
     "category": "categoria",
     "label": "etichetta",

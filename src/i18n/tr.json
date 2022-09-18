@@ -1,4 +1,20 @@
 {
+  "home": {
+    "statistics": {
+      "editorCount": {
+        "title": "Editör",
+        "description": "Yapılan baskı sayısı"
+      },
+      "contributorCount": {
+        "title": "Katkı sağlayan",
+        "description": "Yeni bir ürün ekleme"
+      },
+      "photographerCount": {
+        "title": "Fotoğrafçı",
+        "description": "Bir ürün için fotoğraf çekmek"
+      }
+    }
+  },
   "questions": {
     "category": "kategori",
     "label": "etiket",

@@ -1,4 +1,20 @@
 {
+  "home": {
+    "statistics": {
+      "editorCount": {
+        "title": "編輯",
+        "description": "Number of edition done"
+      },
+      "contributorCount": {
+        "title": "貢獻者",
+        "description": "Adding a new product"
+      },
+      "photographerCount": {
+        "title": "Photographer",
+        "description": "Taking photos for a product"
+      }
+    }
+  },
   "questions": {
     "category": "分類",
     "label": "標籤",

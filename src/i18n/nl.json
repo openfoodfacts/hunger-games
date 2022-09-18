@@ -1,4 +1,20 @@
 {
+  "home": {
+    "statistics": {
+      "editorCount": {
+        "title": "Bewerkers",
+        "description": "Aantal uitgevoerde edities"
+      },
+      "contributorCount": {
+        "title": "Bijdrager",
+        "description": "Een nieuw product toevoegen"
+      },
+      "photographerCount": {
+        "title": "Fotograaf",
+        "description": "Foto's maken voor een product"
+      }
+    }
+  },
   "questions": {
     "category": "categorie",
     "label": "keurmerk",
