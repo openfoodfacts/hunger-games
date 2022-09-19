@@ -203,5 +203,5 @@ export default function LogoUpdate() {
     };
   }, [logoId]);
 
-  return <UpdateLogoForm {...fetchedData} />;
+  return <UpdateLogoForm {...fetchedData} logoId={logoId} />;
 }
