@@ -264,6 +264,7 @@ const QuestionDisplay = ({
         variant="contained"
         size="medium"
         autoFocus
+        sx={{ py: "1rem" }}
       >
         {t("questions.skip")} (k)
       </Button>

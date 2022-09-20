@@ -35,7 +35,7 @@ export default function Questions() {
 
   return (
     <Grid container spacing={2} p={2}>
-      <Grid item sm={12} md={5}>
+      <Grid item xs={12} md={5}>
         <Stack direction="column" sx={{ height: "calc(100vh - 100px)" }}>
           <QuestionFilter
             filterState={filterState}
@@ -52,10 +52,10 @@ export default function Questions() {
           />
         </Stack>
       </Grid>
-      <Grid item sm={12} md={5}>
+      <Grid item xs={12} md={5}>
         <ProductInformation question={question} />
       </Grid>
-      <Grid item sm={12} md={2}>
+      <Grid item xs={12} md={2}>
         <UserData
           remainingQuestionNb={remainingQuestionNb}
           answers={answers}
