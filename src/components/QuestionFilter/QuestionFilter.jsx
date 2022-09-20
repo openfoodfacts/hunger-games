@@ -203,7 +203,7 @@ export const QuestionFilter = ({
             ))}
           </RadioGroup>
         </FormControl>
-        <p>{innerInsightType}</p>
+
         {["category", "label"].includes(innerInsightType) ? (
           <LabelFilter
             value={innerValueTag}

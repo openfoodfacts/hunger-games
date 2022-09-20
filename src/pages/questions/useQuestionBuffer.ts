@@ -88,10 +88,8 @@ type Actions =
   | { type: "sendAnswers" };
 
 function reducer(state: ReducerStateInterface, action: Actions) {
-  console.log(action);
   switch (action.type) {
     case "reset":
-      console.log("reset");
       return {
         ...state,
         page: 1,

@@ -3,6 +3,7 @@ import Autocomplete from "@mui/material/Autocomplete";
 import TextField from "@mui/material/TextField";
 import { getLang } from "../../localeStorageManager";
 import axios from "axios";
+import { URL_ORIGINE } from "../../const";
 
 // Otherwise fallback on english
 const AVAILABLE_OPTIONS = ["fr", "de", "es"];
@@ -44,11 +45,10 @@ const LabelFilter = (props) => {
         onChange(newValue?.key ?? newValue);
       }}
       onInputChange={(e, inputValue) => {
-        console.log(inputValue);
         if (inputValue.length < 4) {
           axios
             .get(
-              `http://localhost:3000/data/${
+              `${URL_ORIGINE}/data/${
                 AVAILABLE_OPTIONS.includes(lang) ? lang : "en"
               }/${insightType}/${inputValue
                 .toLowerCase()
