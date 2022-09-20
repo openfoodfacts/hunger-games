@@ -20,6 +20,7 @@ import StarIcon from "@mui/icons-material/Star";
 import StarBorderIcon from "@mui/icons-material/StarBorder";
 import { useTranslation } from "react-i18next";
 
+import LabelFilter from "./LabelFilter";
 import brands from "../../assets/brands.json";
 import { countryNames, insightTypesNames } from "./const";
 
@@ -202,15 +203,25 @@ export const QuestionFilter = ({
             ))}
           </RadioGroup>
         </FormControl>
-
-        <TextField
-          value={innerValueTag}
-          onChange={(event) => {
-            setInnerValueTag(event.target.value);
-          }}
-          label={t("questions.filters.long_label.value")}
-          placeholder={t("questions.filters.placeholders.value")}
-        />
+        <p>{innerInsightType}</p>
+        {["category", "label"].includes(innerInsightType) ? (
+          <LabelFilter
+            value={innerValueTag}
+            onChange={setInnerValueTag}
+            insightType={innerInsightType}
+            label={t("questions.filters.long_label.value")}
+            placeholder={t("questions.filters.placeholders.value")}
+          />
+        ) : (
+          <TextField
+            value={innerValueTag}
+            onChange={(event) => {
+              setInnerValueTag(event.target.value);
+            }}
+            label={t("questions.filters.long_label.value")}
+            placeholder={t("questions.filters.placeholders.value")}
+          />
+        )}
 
         <Autocomplete
           id="free-solo-demo"
