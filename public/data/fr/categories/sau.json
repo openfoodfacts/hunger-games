@@ -1,0 +1,762 @@
+[
+  {
+    "key": "en:wild-asparagus",
+    "name": "Asperges sauvages"
+  },
+  {
+    "key": "fr:cabernet-de-saumur",
+    "name": "Cabernet de Saumur"
+  },
+  {
+    "key": "en:german-chamomile",
+    "name": "Camomille sauvage"
+  },
+  {
+    "key": "en:canned-pacific-sauries",
+    "name": "Canned pacific sauries"
+  },
+  {
+    "key": "en:salmon-carpaccio",
+    "name": "Carpaccio de saumon"
+  },
+  {
+    "key": "en:wild-caviars",
+    "name": "Caviars sauvages"
+  },
+  {
+    "key": "fr:coteaux-de-saumur-val-de-loire",
+    "name": "Coteaux de Saumur Val de Loire"
+  },
+  {
+    "key": "en:salmon-fillets",
+    "name": "Filets de saumon"
+  },
+  {
+    "key": "en:wild-rice-flakes",
+    "name": "Flocons de riz sauvage"
+  },
+  {
+    "key": "en:sausage-friands",
+    "name": "Friands à la saucisse"
+  },
+  {
+    "key": "en:brined-cheeses",
+    "name": "Fromages saumurés"
+  },
+  {
+    "key": "en:beef-tongues-with-madeira-sauce",
+    "name": "Langue de bœuf sauce madère"
+  },
+  {
+    "key": "en:tongue-of-beef-with-hot-sauce",
+    "name": "Langues de bœuf sauce piquante"
+  },
+  {
+    "key": "en:salmon-lasagne",
+    "name": "Lasagnes au saumon"
+  },
+  {
+    "key": "fr:mercurey-premier-cru-les-saumonts",
+    "name": "Mercurey premier cru Les Saumonts"
+  },
+  {
+    "key": "fr:miels-de-framboisiers-sauvages",
+    "name": "Miels de framboisiers sauvages"
+  },
+  {
+    "key": "en:nougats-from-sault",
+    "name": "Nougats de Sault"
+  },
+  {
+    "key": "en:green-olives-in-brine",
+    "name": "Olives vertes en saumure"
+  },
+  {
+    "key": "fr:paves-de-saumon",
+    "name": "Pavés de saumon"
+  },
+  {
+    "key": "en:meals-with-salmon",
+    "name": "Plats au saumon"
+  },
+  {
+    "key": "en:pickled-green-peppercorns",
+    "name": "Poivre vert en saumure"
+  },
+  {
+    "key": "fr:pommard-les-saussilles",
+    "name": "Pommard Les Saussilles"
+  },
+  {
+    "key": "en:salmon-quenelles",
+    "name": "Quenelles de saumon"
+  },
+  {
+    "key": "en:quiches-with-fish",
+    "name": "Quiches au saumon"
+  },
+  {
+    "key": "fr:rillettes-de-bar-sauvage",
+    "name": "Rillettes de bar sauvage"
+  },
+  {
+    "key": "en:salmon-rillettes",
+    "name": "Rillettes de saumon"
+  },
+  {
+    "key": "fr:rillettes-de-saumon-rose",
+    "name": "Rillettes de saumon rose"
+  },
+  {
+    "key": "en:salmon-risottos",
+    "name": "Risottos au saumon"
+  },
+  {
+    "key": "en:wild-rice",
+    "name": "Riz sauvage"
+  },
+  {
+    "key": "en:sausage-rolls",
+    "name": "Roulés à la saucisse"
+  },
+  {
+    "key": "en:salmon-sandwiches",
+    "name": "Sandwichs au saumon"
+  },
+  {
+    "key": "en:fried-tomato-sauces",
+    "name": "Sauce tomates frites"
+  },
+  {
+    "key": "en:sauces",
+    "name": "Sauces"
+  },
+  {
+    "key": "fr:sauces-a-base-d-extrait-de-levure",
+    "name": "Sauces à base d'extrait de levure"
+  },
+  {
+    "key": "fr:sauces-a-base-d-extrait-de-viande",
+    "name": "Sauces à base d'extrait de viande"
+  },
+  {
+    "key": "en:oyster-sauces",
+    "name": "Sauces à l'huitre"
+  },
+  {
+    "key": "fr:sauces-a-l-oseille",
+    "name": "Sauces à l'oseille"
+  },
+  {
+    "key": "en:cranberry-sauces",
+    "name": "Sauces à la canneberge"
+  },
+  {
+    "key": "en:mint-sauces",
+    "name": "Sauces à la menthe"
+  },
+  {
+    "key": "en:meat-based-sauces",
+    "name": "Sauces à la viande"
+  },
+  {
+    "key": "en:sweet-and-sour-sauces",
+    "name": "Sauces aigre-douces"
+  },
+  {
+    "key": "fr:sauces-americaines",
+    "name": "Sauces américaines"
+  },
+  {
+    "key": "fr:sauces-andalouses",
+    "name": "Sauces andalouses"
+  },
+  {
+    "key": "fr:sauces-armoricaines",
+    "name": "Sauces armoricaines"
+  },
+  {
+    "key": "en:arrabbiata-sauces",
+    "name": "Sauces Arrabiata"
+  },
+  {
+    "key": "fr:sauces-au-beurre-blanc",
+    "name": "Sauces au beurre blanc"
+  },
+  {
+    "key": "en:curry-sauces",
+    "name": "Sauces au curry"
+  },
+  {
+    "key": "en:cheese-sauces",
+    "name": "Sauces au fromage"
+  },
+  {
+    "key": "fr:sauces-au-lait-de-coco",
+    "name": "Sauces au lait de coco"
+  },
+  {
+    "key": "fr:sauces-au-miel",
+    "name": "Sauces au miel"
+  },
+  {
+    "key": "en:pepper-sauces",
+    "name": "Sauces au poivre"
+  },
+  {
+    "key": "fr:sauces-au-poivre-vert",
+    "name": "Sauces au poivre vert"
+  },
+  {
+    "key": "en:roquefort-sauces",
+    "name": "Sauces au roquefort"
+  },
+  {
+    "key": "en:soy-sauces",
+    "name": "Sauces au soja"
+  },
+  {
+    "key": "fr:sauces-au-soja-salees",
+    "name": "Sauces au soja salées"
+  },
+  {
+    "key": "fr:sauces-au-soja-sucrees",
+    "name": "Sauces au soja sucrées"
+  },
+  {
+    "key": "fr:sauces-au-vin-blanc",
+    "name": "Sauces au vin blanc"
+  },
+  {
+    "key": "fr:sauces-au-vin-rouge",
+    "name": "Sauces au vin rouge"
+  },
+  {
+    "key": "fr:sauces-au-yaourt",
+    "name": "Sauces au yaourt"
+  },
+  {
+    "key": "fr:sauces-aux-cacahuetes",
+    "name": "Sauces aux cacahuètes"
+  },
+  {
+    "key": "en:mushroom-sauces",
+    "name": "Sauces aux champignons"
+  },
+  {
+    "key": "en:redcurrant-sauce",
+    "name": "Sauces aux groseilles"
+  },
+  {
+    "key": "en:vegetable-sauces",
+    "name": "Sauces aux légumes"
+  },
+  {
+    "key": "en:olive-sauces",
+    "name": "Sauces aux olives"
+  },
+  {
+    "key": "en:barbecue-sauces",
+    "name": "Sauces barbecue"
+  },
+  {
+    "key": "fr:sauces-basquaises",
+    "name": "Sauces basquaises"
+  },
+  {
+    "key": "en:bearnaise-sauce",
+    "name": "Sauces béarnaises"
+  },
+  {
+    "key": "en:bechamel-sauces",
+    "name": "Sauces béchamel"
+  },
+  {
+    "key": "fr:sauces-blanches",
+    "name": "Sauces blanches"
+  },
+  {
+    "key": "en:bolognese-sauces",
+    "name": "Sauces bolognaises"
+  },
+  {
+    "key": "fr:sauces-bordelaises",
+    "name": "Sauces bordelaises"
+  },
+  {
+    "key": "fr:sauces-bourguignonnes",
+    "name": "Sauces bourguignonnes"
+  },
+  {
+    "key": "en:brava-sauce",
+    "name": "Sauces bravas"
+  },
+  {
+    "key": "en:brown-sauces",
+    "name": "Sauces brunes"
+  },
+  {
+    "key": "fr:sauces-burger",
+    "name": "Sauces burger"
+  },
+  {
+    "key": "fr:sauces-caesar",
+    "name": "Sauces caesar"
+  },
+  {
+    "key": "fr:sauces-carbonara",
+    "name": "Sauces carbonara"
+  },
+  {
+    "key": "fr:sauces-chasseur",
+    "name": "Sauces chasseur"
+  },
+  {
+    "key": "fr:sauces-chien",
+    "name": "Sauces chien"
+  },
+  {
+    "key": "en:hot-sauces",
+    "name": "Sauces chili"
+  },
+  {
+    "key": "fr:sauces-cocktail",
+    "name": "Sauces cocktail"
+  },
+  {
+    "key": "fr:sauces-crudites",
+    "name": "Sauces crudités"
+  },
+  {
+    "key": "en:dehydrated-sauces",
+    "name": "Sauces déshydratées"
+  },
+  {
+    "key": "fr:sauces-dressing-au-yaourt",
+    "name": "Sauces dressing au yaourt"
+  },
+  {
+    "key": "fr:sauces-hollandaise",
+    "name": "Sauces hollandaise"
+  },
+  {
+    "key": "en:indian-sauces",
+    "name": "Sauces indiennes"
+  },
+  {
+    "key": "en:madere-sauces",
+    "name": "Sauces Madère"
+  },
+  {
+    "key": "fr:sauces-marchand-de-vin",
+    "name": "Sauces marchand de vin"
+  },
+  {
+    "key": "fr:sauces-mornay",
+    "name": "Sauces Mornay"
+  },
+  {
+    "key": "fr:sauces-nantua",
+    "name": "Sauces nantua"
+  },
+  {
+    "key": "en:neapolitan-sauces",
+    "name": "Sauces napolitaines"
+  },
+  {
+    "key": "fr:sauces-nuoc-mam",
+    "name": "Sauces Nuoc-mâm"
+  },
+  {
+    "key": "en:pestos",
+    "name": "Sauces Pesto"
+  },
+  {
+    "key": "en:red-pestos",
+    "name": "Sauces Pesto Rosso"
+  },
+  {
+    "key": "en:pimented-sauces",
+    "name": "Sauces pimentées"
+  },
+  {
+    "key": "en:pita-sauces",
+    "name": "Sauces Pita"
+  },
+  {
+    "key": "fr:sauces-pour-nems",
+    "name": "Sauces pour nems"
+  },
+  {
+    "key": "en:pasta-sauces",
+    "name": "Sauces pour pâtes"
+  },
+  {
+    "key": "en:pizza-sauces",
+    "name": "Sauces pour pizzas"
+  },
+  {
+    "key": "en:sauces-for-fishes",
+    "name": "Sauces pour poissons"
+  },
+  {
+    "key": "en:provencale-sauces",
+    "name": "Sauces provençales"
+  },
+  {
+    "key": "en:salad-dressings",
+    "name": "Sauces salades"
+  },
+  {
+    "key": "en:samourai-sauces",
+    "name": "Sauces samouraï"
+  },
+  {
+    "key": "en:sicilian-sauces",
+    "name": "Sauces siciliennes"
+  },
+  {
+    "key": "en:tandoori-sauces",
+    "name": "Sauces tandoori"
+  },
+  {
+    "key": "en:tartare-sauces",
+    "name": "Sauces tartare"
+  },
+  {
+    "key": "en:teriyaki-sauces",
+    "name": "Sauces Teriyaki"
+  },
+  {
+    "key": "en:tikka-masala-sauce",
+    "name": "Sauces tikka masala"
+  },
+  {
+    "key": "en:tomato-sauces",
+    "name": "Sauces tomate"
+  },
+  {
+    "key": "fr:sauces-tomates-au-basilic",
+    "name": "Sauces tomates au basilic"
+  },
+  {
+    "key": "fr:sauces-tomates-au-parmesan",
+    "name": "Sauces tomates au parmesan"
+  },
+  {
+    "key": "fr:sauces-tomates-aux-champignons",
+    "name": "Sauces tomates aux champignons"
+  },
+  {
+    "key": "fr:sauces-tomates-aux-legumes",
+    "name": "Sauces tomates aux legumes"
+  },
+  {
+    "key": "fr:sauces-tomates-aux-olives",
+    "name": "Sauces tomates aux olives"
+  },
+  {
+    "key": "fr:sauces-tomates-pimentees",
+    "name": "Sauces tomates pimentees"
+  },
+  {
+    "key": "en:worcestershire-sauces",
+    "name": "Sauces Worcestershire"
+  },
+  {
+    "key": "en:yakitori-sauces",
+    "name": "Sauces Yakitori"
+  },
+  {
+    "key": "en:sausages",
+    "name": "Saucisses"
+  },
+  {
+    "key": "en:german-sausages",
+    "name": "Saucisses allemandes"
+  },
+  {
+    "key": "hu:sertés-májkolbászok",
+    "name": "Saucisses aux choux"
+  },
+  {
+    "key": "en:sausages-with-lentils",
+    "name": "Saucisses aux lentilles"
+  },
+  {
+    "key": "fr:saucisses-cocktail",
+    "name": "Saucisses cocktail"
+  },
+  {
+    "key": "en:pickled-sausages",
+    "name": "Saucisses confites"
+  },
+  {
+    "key": "fr:saucisses-d-herbe",
+    "name": "Saucisses d'herbe"
+  },
+  {
+    "key": "en:duck-sausages",
+    "name": "Saucisses de canard"
+  },
+  {
+    "key": "en:turkey-sausages",
+    "name": "Saucisses de dinde"
+  },
+  {
+    "key": "en:liver-sausages",
+    "name": "Saucisses de foie"
+  },
+  {
+    "key": "en:alsatian-liver-sausages",
+    "name": "Saucisses de foie alsacienne"
+  },
+  {
+    "key": "en:liver-sausages-from-ariege",
+    "name": "Saucisses de foie ariégeoise"
+  },
+  {
+    "key": "en:pork-liver-sausages",
+    "name": "Saucisses de foie de porc"
+  },
+  {
+    "key": "fr:saucisses-de-francfort",
+    "name": "Saucisses de Francfort"
+  },
+  {
+    "key": "en:lyon-sausage",
+    "name": "Saucisses de Lyon"
+  },
+  {
+    "key": "en:molene-sausage",
+    "name": "Saucisses de Molène"
+  },
+  {
+    "key": "en:montbeliard-sausages",
+    "name": "Saucisses de Montbéliard"
+  },
+  {
+    "key": "en:morteau-sausages",
+    "name": "Saucisses de Morteau"
+  },
+  {
+    "key": "fr:saucisses-de-nuremberg",
+    "name": "Saucisses de Nuremberg"
+  },
+  {
+    "key": "en:chicken-sausages",
+    "name": "Saucisses de poulet"
+  },
+  {
+    "key": "en:strasbourg-sausages",
+    "name": "Saucisses de Strasbourg"
+  },
+  {
+    "key": "en:toulouse-sausages",
+    "name": "Saucisses de Toulouse"
+  },
+  {
+    "key": "en:poultry-sausages",
+    "name": "Saucisses de volaille"
+  },
+  {
+    "key": "en:sausages-from-spain",
+    "name": "Saucisses espagnoles"
+  },
+  {
+    "key": "en:french-sausages",
+    "name": "Saucisses françaises"
+  },
+  {
+    "key": "en:smoked-sausages",
+    "name": "Saucisses fumées"
+  },
+  {
+    "key": "en:sausages-from-savoy",
+    "name": "Saucisses savoyardes"
+  },
+  {
+    "key": "fr:saucisses-seches",
+    "name": "Saucisses sèches"
+  },
+  {
+    "key": "fr:saucisses-seches-de-jambon",
+    "name": "Saucisses sèches de jambon"
+  },
+  {
+    "key": "en:vegetarian-sausages",
+    "name": "Saucisses végétales"
+  },
+  {
+    "key": "en:vegetarian-frankfurt-sausages",
+    "name": "Saucisses végétales de Francfort"
+  },
+  {
+    "key": "en:vegetarian-vienna-sausages",
+    "name": "Saucisses végétales de Vienne"
+  },
+  {
+    "key": "en:vegetarian-hot-dog-sausages",
+    "name": "Saucisses végétales pour hot-dog"
+  },
+  {
+    "key": "fr:saucissons",
+    "name": "Saucissons"
+  },
+  {
+    "key": "fr:saucissons-a-l-ail",
+    "name": "Saucissons à l'ail"
+  },
+  {
+    "key": "fr:saucissons-artisanaux",
+    "name": "Saucissons artisanaux"
+  },
+  {
+    "key": "fr:saucissons-cuits",
+    "name": "Saucissons cuits"
+  },
+  {
+    "key": "fr:saucissons-secs",
+    "name": "Saucissons secs"
+  },
+  {
+    "key": "fr:saucissons-secs-au-beaufort",
+    "name": "Saucissons secs au Beaufort"
+  },
+  {
+    "key": "fr:saucissons-secs-au-cantal",
+    "name": "Saucissons secs au Cantal"
+  },
+  {
+    "key": "fr:saucissons-secs-au-fromage",
+    "name": "Saucissons secs au fromage"
+  },
+  {
+    "key": "fr:saucissons-secs-au-noix",
+    "name": "Saucissons secs au noix"
+  },
+  {
+    "key": "fr:saucissons-secs-au-piment",
+    "name": "Saucissons secs au piment"
+  },
+  {
+    "key": "fr:saucissons-secs-au-sanglier",
+    "name": "Saucissons secs au sanglier"
+  },
+  {
+    "key": "fr:saucissons-secs-aux-noisettes",
+    "name": "Saucissons secs aux noisettes"
+  },
+  {
+    "key": "fr:saucissons-secs-aux-olives",
+    "name": "Saucissons secs aux olives"
+  },
+  {
+    "key": "fr:saucissons-secs-cacher",
+    "name": "Saucissons secs cacher"
+  },
+  {
+    "key": "fr:saucissons-secs-d-auvergne",
+    "name": "Saucissons secs d'Auvergne"
+  },
+  {
+    "key": "fr:saucissons-secs-de-montagne",
+    "name": "Saucissons secs de montagne"
+  },
+  {
+    "key": "fr:saucissons-secs-de-savoie",
+    "name": "Saucissons secs de Savoie"
+  },
+  {
+    "key": "fr:saucissons-secs-halal",
+    "name": "Saucissons secs halal"
+  },
+  {
+    "key": "fr:saucissons-secs-pur-porc",
+    "name": "Saucissons secs pur porc"
+  },
+  {
+    "key": "fr:saucissons-secs-pur-boeuf",
+    "name": "Saucissons secs pur-bœuf"
+  },
+  {
+    "key": "fr:saucissons-secs-sans-porc",
+    "name": "Saucissons secs sans porc"
+  },
+  {
+    "key": "en:sage",
+    "name": "Sauge"
+  },
+  {
+    "key": "en:ground-dried-sage",
+    "name": "Sauge sèche moulue"
+  },
+  {
+    "key": "en:canned-salmons",
+    "name": "Saumon en conserve"
+  },
+  {
+    "key": "en:salmons",
+    "name": "Saumons"
+  },
+  {
+    "key": "en:salmons-from-farming",
+    "name": "Saumons d'élevage"
+  },
+  {
+    "key": "en:smoked-salmons",
+    "name": "Saumons fumés"
+  },
+  {
+    "key": "en:smoked-salmons-from-farming",
+    "name": "Saumons fumés d'élevage"
+  },
+  {
+    "key": "fr:saumons-fumes-de-degustation",
+    "name": "Saumons fumés de dégustation"
+  },
+  {
+    "key": "en:wild-smoked-salmons",
+    "name": "Saumons fumés sauvages"
+  },
+  {
+    "key": "fr:saumur-val-de-loire-mousseux-or-petillant",
+    "name": "Saumur Val de Loire mousseux or pétillant"
+  },
+  {
+    "key": "fr:saumur-champigny",
+    "name": "Saumur-Champigny"
+  },
+  {
+    "key": "fr:saussignac",
+    "name": "Saussignac"
+  },
+  {
+    "key": "fr:saute-de-veau",
+    "name": "Sauté de veau"
+  },
+  {
+    "key": "fr:sauternes",
+    "name": "Sauternes"
+  },
+  {
+    "key": "en:salmon-sushis",
+    "name": "Sushis au saumon"
+  },
+  {
+    "key": "en:avocado-and-salmon-sushis",
+    "name": "Sushis saumon avocat"
+  },
+  {
+    "key": "en:salmon-taramasalata",
+    "name": "Taramas au saumon"
+  },
+  {
+    "key": "fr:terrine-de-foie-gras-au-sauternes",
+    "name": "Terrine de foie gras au sauternes"
+  },
+  {
+    "key": "en:salmon-terrines",
+    "name": "Terrines de saumon"
+  }
+]
