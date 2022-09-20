@@ -41,7 +41,7 @@ const updateSearchSearchParams = (newState) => {
 };
 
 const DEFAULT_LOGO_SEARCH_STATE = {
-  count: "",
+  count: 50,
   logo_id: "",
   index: "",
 };
@@ -57,6 +57,7 @@ export function useLogoSearchParams() {
         initialSearchParams[key] = urlParams.get(key);
       }
     }
+    initialSearchParams.count = Number.parseInt(initialSearchParams.count);
     return initialSearchParams;
   });
 
@@ -66,7 +67,11 @@ export function useLogoSearchParams() {
       const initialSearchParams = DEFAULT_LOGO_SEARCH_STATE;
       for (let key of Object.keys(DEFAULT_LOGO_SEARCH_STATE)) {
         if (urlParams.has(key)) {
-          initialSearchParams[key] = urlParams.get(key);
+          if (key === "count") {
+            initialSearchParams[key] = Number.parseInt(urlParams.get(key));
+          } else {
+            initialSearchParams[key] = urlParams.get(key);
+          }
         }
       }
       return { ...initialSearchParams };
@@ -96,15 +101,27 @@ export function useLogoSearchParams() {
   return [logoSearchParams, setLogoSearchParams];
 }
 
-const loadLogos = async (targetLogoId, index, annotationCount) => {
+const loadLogos = async (
+  targetLogoId,
+  index,
+  annotationCount = 50,
+  alreadyLoadedData = []
+) => {
   const {
     data: { results },
   } = await robotoff.getLogoAnnotations(targetLogoId, index, annotationCount);
+
+  const seenIds = {};
+  alreadyLoadedData.forEach(({ id }) => {
+    seenIds[id] = true;
+  });
+  const filteredResults = results.filter(({ logo_id }) => !seenIds[logo_id]);
+
   const {
     data: { logos: logoImages },
-  } = await robotoff.getLogosImages(results.map((r) => r.logo_id));
+  } = await robotoff.getLogosImages(filteredResults.map((r) => r.logo_id));
 
-  const logoData = results.map(({ logo_id, distance }) => {
+  const logoData = filteredResults.map(({ logo_id, distance }) => {
     const annotation = logoImages.find(({ id }) => id === logo_id);
     const image = annotation.image;
     const src = robotoff.getCroppedImageUrl(
@@ -118,6 +135,7 @@ const loadLogos = async (targetLogoId, index, annotationCount) => {
       image: { ...image, src },
     };
   });
+
   return logoData;
 };
 
@@ -141,12 +159,44 @@ const request = (selectedIds) => async (data) => {
   }
 };
 
-const DEFAULT_LOGO_STATE = { logos: [], isLoading: false, referenceLogo: {} };
+const DEFAULT_LOGO_STATE = { logos: [], isLoading: true, referenceLogo: {} };
 export default function LogoAnnotation() {
   const { t } = useTranslation();
 
   const [logoSearchParams] = useLogoSearchParams();
   const [logoState, setLogoState] = React.useState(DEFAULT_LOGO_STATE);
+
+  // Restart fetching with higher count
+  const [additionalLogos, setAdditionalLogos] = React.useState(0);
+  const addMoreLogos = async (toAdd) => {
+    const newAdditional = additionalLogos + toAdd;
+    if (newAdditional > 500) {
+      return;
+    }
+    setAdditionalLogos(newAdditional);
+    setLogoState((prev) => ({ ...prev, isLoading: true }));
+
+    loadLogos(
+      logoSearchParams.logo_id,
+      logoSearchParams.index,
+      logoSearchParams.count + newAdditional,
+      logoState.logos
+    )
+      .then((logoData) => {
+        setLogoState((prev) => ({
+          ...prev,
+          isLoading: false,
+          logos: [
+            ...prev.logos,
+            ...logoData.map((logo) => ({
+              ...logo,
+              selected: false,
+            })),
+          ],
+        }));
+      })
+      .catch(() => {});
+  };
 
   React.useEffect(() => {
     let isValid = true;
@@ -327,6 +377,18 @@ export default function LogoAnnotation() {
         toggleLogoSelection={toggleSelection}
         sx={{ justifyContent: "center" }}
       />
+      <Box sx={{ my: 5, textAlign: "center" }}>
+        <Button
+          fullWidth
+          variant="contained"
+          disabled={logoState.isLoading || additionalLogos + 50 > 500}
+          onClick={() => {
+            addMoreLogos(50);
+          }}
+        >
+          Load more
+        </Button>
+      </Box>
     </Box>
   );
 }
