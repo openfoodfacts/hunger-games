@@ -12,7 +12,6 @@ const fetchUserData = async (userName) => {
   const editorPromise = axios
     .get(`https://world.openfoodfacts.org/editor/${userName}.json?fields=count`)
     .then(({ data }) => {
-      console.log({ data });
       return data?.count;
     })
     .catch(() => undefined);
@@ -21,7 +20,6 @@ const fetchUserData = async (userName) => {
       `https://world.openfoodfacts.org/contributor/${userName}.json?fields=count`
     )
     .then(({ data }) => {
-      console.log({ data });
       return data?.count;
     })
     .catch(() => undefined);
@@ -30,7 +28,6 @@ const fetchUserData = async (userName) => {
       `https://world.openfoodfacts.org/photographer/${userName}.json?fields=count`
     )
     .then(({ data }) => {
-      console.log({ data });
       return data?.count;
     })
     .catch(() => undefined);
@@ -80,7 +77,6 @@ const UserData = ({ userName }) => {
   React.useEffect(() => {
     fetchUserData(userName)
       .then((counts) => {
-        console.log({ counts });
         setCounts(counts);
       })
       .catch(() => {});

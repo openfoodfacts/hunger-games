@@ -1,0 +1,654 @@
+[
+  {
+    "key": "fr:beaune-clos-saint-landry",
+    "name": "Beaune Clos Saint-Landry"
+  },
+  {
+    "key": "fr:beaune-sur-les-greves-clos-sainte-anne",
+    "name": "Beaune Sur les Grèves-Clos Sainte-Anne"
+  },
+  {
+    "key": "fr:bourgogne-clairet-cote-saint-jacques",
+    "name": "Bourgogne Clairet Côte Saint-Jacques"
+  },
+  {
+    "key": "fr:bourgogne-cote-saint-jacques",
+    "name": "Bourgogne-côte-saint-jacques"
+  },
+  {
+    "key": "fr:charentais-saint-sornin",
+    "name": "Charentais Saint Sornin"
+  },
+  {
+    "key": "fr:chassagne-montrachet-premier-cru-chassagne-du-clos-saint-jean",
+    "name": "Chassagne-Montrachet premier cru Chassagne du Clos Saint-Jean"
+  },
+  {
+    "key": "fr:chassagne-montrachet-premier-cru-clos-saint-jean",
+    "name": "Chassagne-Montrachet premier cru Clos Saint Jean"
+  },
+  {
+    "key": "fr:clos-saint-denis",
+    "name": "Clos Saint-Denis"
+  },
+  {
+    "key": "en:st-jacques-shells",
+    "name": "Coquilles Saint-Jacques"
+  },
+  {
+    "key": "fr:coquilles-saint-jacques-surgelees",
+    "name": "Coquilles Saint-Jacques surgelées"
+  },
+  {
+    "key": "fr:coteaux-du-languedoc-coteaux-de-saint-christol",
+    "name": "Coteaux du Languedoc Coteaux de Saint-Christol"
+  },
+  {
+    "key": "fr:coteaux-du-languedoc-pic-saint-loup",
+    "name": "Coteaux du Languedoc Pic-Saint-Loup"
+  },
+  {
+    "key": "fr:coteaux-du-languedoc-saint-drezery",
+    "name": "Coteaux du Languedoc Saint-Drézéry"
+  },
+  {
+    "key": "fr:coteaux-du-languedoc-saint-georges-d-orques",
+    "name": "Coteaux du Languedoc Saint-Georges-d'Orques"
+  },
+  {
+    "key": "fr:coteaux-du-languedoc-saint-saturnin",
+    "name": "Coteaux du Languedoc Saint-Saturnin"
+  },
+  {
+    "key": "fr:cotes-de-bordeaux-saint-macaire",
+    "name": "Côtes-de-bordeaux saint-macaire"
+  },
+  {
+    "key": "fr:givry-premier-cru-clos-saint-paul",
+    "name": "Givry premier cru Clos Saint-Paul"
+  },
+  {
+    "key": "fr:givry-premier-cru-clos-saint-pierre",
+    "name": "Givry premier cru Clos Saint-Pierre"
+  },
+  {
+    "key": "fr:lussac-saint-emilion",
+    "name": "Lussac-saint-émilion"
+  },
+  {
+    "key": "fr:macon-saint-gengoux-le-national",
+    "name": "Mâcon Saint-Gengoux-le-National"
+  },
+  {
+    "key": "fr:montagne-saint-emilion",
+    "name": "Montagne-saint-émilion"
+  },
+  {
+    "key": "fr:montagny-premier-cru-saint-morille",
+    "name": "Montagny premier cru Saint-Morille"
+  },
+  {
+    "key": "fr:montagny-premier-cru-saint-ytages",
+    "name": "Montagny premier cru Saint-Ytages"
+  },
+  {
+    "key": "fr:montagny-premier-cru-vignes-saint-pierre",
+    "name": "Montagny premier cru Vignes Saint-Pierre"
+  },
+  {
+    "key": "fr:morey-saint-denis",
+    "name": "Morey-Saint-Denis"
+  },
+  {
+    "key": "fr:morey-saint-denis-premier-cru",
+    "name": "Morey-Saint-Denis premier cru"
+  },
+  {
+    "key": "fr:morey-saint-denis-premier-cru-aux-charmes",
+    "name": "Morey-Saint-Denis premier cru Aux Charmes"
+  },
+  {
+    "key": "fr:morey-saint-denis-premier-cru-aux-cheseaux",
+    "name": "Morey-Saint-Denis premier cru Aux Cheseaux"
+  },
+  {
+    "key": "fr:morey-saint-denis-premier-cru-clos-baulet",
+    "name": "Morey-Saint-Denis premier cru Clos Baulet"
+  },
+  {
+    "key": "fr:morey-saint-denis-premier-cru-clos-des-ormes",
+    "name": "Morey-Saint-Denis premier cru Clos des Ormes"
+  },
+  {
+    "key": "fr:morey-saint-denis-premier-cru-clos-sorbe",
+    "name": "Morey-Saint-Denis premier cru Clos Sorbè"
+  },
+  {
+    "key": "fr:morey-saint-denis-premier-cru-cote-rotie",
+    "name": "Morey-Saint-Denis premier cru Côte Rotie"
+  },
+  {
+    "key": "fr:morey-saint-denis-premier-cru-la-bussiere",
+    "name": "Morey-Saint-Denis premier cru La Bussière"
+  },
+  {
+    "key": "fr:morey-saint-denis-premier-cru-la-riotte",
+    "name": "Morey-Saint-Denis premier cru La Riotte"
+  },
+  {
+    "key": "fr:morey-saint-denis-premier-cru-le-village",
+    "name": "Morey-Saint-Denis premier cru Le Village"
+  },
+  {
+    "key": "fr:morey-saint-denis-premier-cru-les-blanchards",
+    "name": "Morey-Saint-Denis premier cru Les Blanchards"
+  },
+  {
+    "key": "fr:morey-saint-denis-premier-cru-les-chaffots",
+    "name": "Morey-Saint-Denis premier cru Les Chaffots"
+  },
+  {
+    "key": "fr:morey-saint-denis-premier-cru-les-charrieres",
+    "name": "Morey-Saint-Denis premier cru Les Charrières"
+  },
+  {
+    "key": "fr:morey-saint-denis-premier-cru-les-chenevery",
+    "name": "Morey-Saint-Denis premier cru Les Chenevery"
+  },
+  {
+    "key": "fr:morey-saint-denis-premier-cru-les-faconnieres",
+    "name": "Morey-Saint-Denis premier cru Les Faconnières"
+  },
+  {
+    "key": "fr:morey-saint-denis-premier-cru-les-genavrieres",
+    "name": "Morey-Saint-Denis premier cru Les Genavrières"
+  },
+  {
+    "key": "fr:morey-saint-denis-premier-cru-les-gruenchers",
+    "name": "Morey-Saint-Denis premier cru Les Gruenchers"
+  },
+  {
+    "key": "fr:morey-saint-denis-premier-cru-les-milandes",
+    "name": "Morey-Saint-Denis premier cru Les Milandes"
+  },
+  {
+    "key": "fr:morey-saint-denis-premier-cru-les-ruchots",
+    "name": "Morey-Saint-Denis premier cru Les Ruchots"
+  },
+  {
+    "key": "fr:morey-saint-denis-premier-cru-les-sorbes",
+    "name": "Morey-Saint-Denis premier cru Les Sorbès"
+  },
+  {
+    "key": "fr:morey-saint-denis-premier-cru-monts-luisants",
+    "name": "Morey-Saint-Denis premier cru Monts Luisants"
+  },
+  {
+    "key": "fr:moules-de-bouchot-de-la-baie-du-mont-saint-michel",
+    "name": "Moules de Bouchot de la Baie du Mont-Saint-Michel"
+  },
+  {
+    "key": "fr:muscat-de-saint-jean-de-minervois",
+    "name": "Muscat de Saint-Jean-de-Minervois"
+  },
+  {
+    "key": "en:scallop",
+    "name": "Noix de Saint-Jacques"
+  },
+  {
+    "key": "fr:nuits-saint-georges",
+    "name": "Nuits-Saint-Georges"
+  },
+  {
+    "key": "fr:nuits-saint-georges-premier-cru",
+    "name": "Nuits-Saint-Georges premier cru"
+  },
+  {
+    "key": "fr:nuits-saint-georges-premier-cru-aux-argillas",
+    "name": "Nuits-Saint-Georges premier cru Aux Argillas"
+  },
+  {
+    "key": "fr:nuits-saint-georges-premier-cru-aux-boudots",
+    "name": "Nuits-Saint-Georges premier cru Aux Boudots"
+  },
+  {
+    "key": "fr:nuits-saint-georges-premier-cru-aux-bousselots",
+    "name": "Nuits-Saint-Georges premier cru Aux Bousselots"
+  },
+  {
+    "key": "fr:nuits-saint-georges-premier-cru-aux-chaignots",
+    "name": "Nuits-Saint-Georges premier cru Aux Chaignots"
+  },
+  {
+    "key": "fr:nuits-saint-georges-premier-cru-aux-champs-perdrix",
+    "name": "Nuits-Saint-Georges premier cru Aux Champs Perdrix"
+  },
+  {
+    "key": "fr:nuits-saint-georges-premier-cru-aux-cras",
+    "name": "Nuits-Saint-Georges premier cru Aux Cras"
+  },
+  {
+    "key": "fr:nuits-saint-georges-premier-cru-aux-murgers",
+    "name": "Nuits-Saint-Georges premier cru Aux Murgers"
+  },
+  {
+    "key": "fr:nuits-saint-georges-premier-cru-aux-perdrix",
+    "name": "Nuits-Saint-Georges premier cru Aux Perdrix"
+  },
+  {
+    "key": "fr:nuits-saint-georges-premier-cru-aux-thorey",
+    "name": "Nuits-Saint-Georges premier cru Aux Thorey"
+  },
+  {
+    "key": "fr:nuits-saint-georges-premier-cru-chaines-carteaux",
+    "name": "Nuits-Saint-Georges premier cru Chaines Carteaux"
+  },
+  {
+    "key": "fr:nuits-saint-georges-premier-cru-chateau-gris",
+    "name": "Nuits-Saint-Georges premier cru Château Gris"
+  },
+  {
+    "key": "fr:nuits-saint-georges-premier-cru-clos-arlot",
+    "name": "Nuits-Saint-Georges premier cru Clos Arlot"
+  },
+  {
+    "key": "fr:nuits-saint-georges-premier-cru-clos-de-la-marechale",
+    "name": "Nuits-Saint-Georges premier cru Clos de la Maréchale"
+  },
+  {
+    "key": "fr:nuits-saint-georges-premier-cru-clos-des-argillieres",
+    "name": "Nuits-Saint-Georges premier cru Clos des Argillières"
+  },
+  {
+    "key": "fr:nuits-saint-georges-premier-cru-clos-des-corvees",
+    "name": "Nuits-Saint-Georges premier cru Clos des Corvées"
+  },
+  {
+    "key": "fr:nuits-saint-georges-premier-cru-clos-des-corvees-pagets",
+    "name": "Nuits-Saint-Georges premier cru Clos des Corvées Pagets"
+  },
+  {
+    "key": "fr:nuits-saint-georges-premier-cru-clos-des-forets-st-georges",
+    "name": "Nuits-Saint-Georges premier cru Clos des Forêts-St-Georges"
+  },
+  {
+    "key": "fr:nuits-saint-georges-premier-cru-clos-des-grandes-vignes",
+    "name": "Nuits-Saint-Georges premier cru Clos des grandes Vignes"
+  },
+  {
+    "key": "fr:nuits-saint-georges-premier-cru-clos-des-porrets-saint-georges",
+    "name": "Nuits-Saint-Georges premier cru Clos des Porrets Saint-Georges"
+  },
+  {
+    "key": "fr:nuits-saint-georges-premier-cru-clos-saint-marc",
+    "name": "Nuits-Saint-Georges premier cru Clos Saint-Marc"
+  },
+  {
+    "key": "fr:nuits-saint-georges-premier-cru-en-la-perriere-noblot",
+    "name": "Nuits-Saint-Georges premier cru En la Perrière Noblot"
+  },
+  {
+    "key": "fr:nuits-saint-georges-premier-cru-la-richemone",
+    "name": "Nuits-Saint-Georges premier cru La Richemone"
+  },
+  {
+    "key": "fr:nuits-saint-georges-premier-cru-les-argillieres",
+    "name": "Nuits-Saint-Georges premier cru Les Argillières"
+  },
+  {
+    "key": "fr:nuits-saint-georges-premier-cru-les-cailles",
+    "name": "Nuits-Saint-Georges premier cru Les Cailles"
+  },
+  {
+    "key": "fr:nuits-saint-georges-premier-cru-les-chaboeufs",
+    "name": "Nuits-Saint-Georges premier cru Les Chabœufs"
+  },
+  {
+    "key": "fr:nuits-saint-georges-premier-cru-les-crots",
+    "name": "Nuits-Saint-Georges premier cru Les Crots"
+  },
+  {
+    "key": "fr:nuits-saint-georges-premier-cru-les-damodes",
+    "name": "Nuits-Saint-Georges premier cru Les Damodes"
+  },
+  {
+    "key": "fr:nuits-saint-georges-premier-cru-les-didiers",
+    "name": "Nuits-Saint-Georges premier cru Les Didiers"
+  },
+  {
+    "key": "fr:nuits-saint-georges-premier-cru-les-hauts-pruliers",
+    "name": "Nuits-Saint-Georges premier cru Les Hauts Pruliers"
+  },
+  {
+    "key": "fr:nuits-saint-georges-premier-cru-les-perrieres",
+    "name": "Nuits-Saint-Georges premier cru Les Perrières"
+  },
+  {
+    "key": "fr:nuits-saint-georges-premier-cru-les-petits-plets",
+    "name": "Nuits-Saint-Georges premier cru Les Petits Plets"
+  },
+  {
+    "key": "fr:nuits-saint-georges-premier-cru-les-porrets-saint-georges",
+    "name": "Nuits-Saint-Georges premier cru Les Porrets Saint-Georges"
+  },
+  {
+    "key": "fr:nuits-saint-georges-premier-cru-les-poulettes",
+    "name": "Nuits-Saint-Georges premier cru Les Poulettes"
+  },
+  {
+    "key": "fr:nuits-saint-georges-premier-cru-les-proces",
+    "name": "Nuits-Saint-Georges premier cru Les Proces"
+  },
+  {
+    "key": "fr:nuits-saint-georges-premier-cru-les-pruliers",
+    "name": "Nuits-Saint-Georges premier cru Les Pruliers"
+  },
+  {
+    "key": "fr:nuits-saint-georges-premier-cru-les-saints-georges",
+    "name": "Nuits-Saint-Georges premier cru Les Saints-Georges"
+  },
+  {
+    "key": "fr:nuits-saint-georges-premier-cru-les-terres-blanches",
+    "name": "Nuits-Saint-Georges premier cru Les Terres Blanches"
+  },
+  {
+    "key": "fr:nuits-saint-georges-premier-cru-les-vallerots",
+    "name": "Nuits-Saint-Georges premier cru Les Vallerots"
+  },
+  {
+    "key": "fr:nuits-saint-georges-premier-cru-les-vaucrains",
+    "name": "Nuits-Saint-Georges premier cru Les Vaucrains"
+  },
+  {
+    "key": "fr:nuits-saint-georges-premier-cru-ronciere",
+    "name": "Nuits-Saint-Georges premier cru Roncière"
+  },
+  {
+    "key": "fr:nuits-saint-georges-premier-cru-rue-de-chaux",
+    "name": "Nuits-Saint-Georges premier cru Rue de Chaux"
+  },
+  {
+    "key": "fr:nuits-saint-georgesaux-vignerondes-premier-cru-aux-vignerondes",
+    "name": "Nuits-Saint-GeorgesAux Vignerondes premier cru Aux Vignerondes"
+  },
+  {
+    "key": "fr:pic-saint-loup-rose",
+    "name": "Pic Saint-Loup rosé"
+  },
+  {
+    "key": "fr:pic-saint-loup-rouge",
+    "name": "Pic Saint-Loup rouge"
+  },
+  {
+    "key": "en:prepared-dishes-with-scallops",
+    "name": "Plats préparés aux noix de Saint-Jacques"
+  },
+  {
+    "key": "fr:pommard-derriere-saint-jean",
+    "name": "Pommard Derrière Saint-Jean"
+  },
+  {
+    "key": "fr:pouligny-saint-pierre",
+    "name": "Pouligny-Saint-Pierre"
+  },
+  {
+    "key": "fr:produits-saisiers",
+    "name": "Produits saisiers"
+  },
+  {
+    "key": "fr:puisseguin-saint-emilion",
+    "name": "Puisseguin-saint-émilion"
+  },
+  {
+    "key": "fr:rillettes-de-saint-jacques",
+    "name": "Rillettes de Saint-Jacques"
+  },
+  {
+    "key": "fr:romanee-saint-vivant-grand-cru",
+    "name": "Romanée Saint-Vivant grand cru"
+  },
+  {
+    "key": "fr:rully-premier-cru-clos-saint-jacques",
+    "name": "Rully premier cru Clos Saint-Jacques"
+  },
+  {
+    "key": "en:lards",
+    "name": "Saindoux"
+  },
+  {
+    "key": "fr:saint-sardos",
+    "name": "Saint Sardos"
+  },
+  {
+    "key": "fr:saint-amour",
+    "name": "Saint-Amour"
+  },
+  {
+    "key": "fr:saint-aubin",
+    "name": "Saint-Aubin"
+  },
+  {
+    "key": "fr:saint-aubin-cote-de-beaune",
+    "name": "Saint-Aubin Côte de Beaune"
+  },
+  {
+    "key": "fr:saint-aubin-premier-cru",
+    "name": "Saint-Aubin premier cru"
+  },
+  {
+    "key": "fr:saint-aubin-premier-cru-bas-de-vermarain-a-l-est",
+    "name": "Saint-Aubin premier cru Bas de Vermarain à l'est"
+  },
+  {
+    "key": "fr:saint-aubin-premier-cru-derriere-chez-edouard",
+    "name": "Saint-Aubin premier cru Derrière chez Edouard"
+  },
+  {
+    "key": "fr:saint-aubin-premier-cru-derriere-la-tour",
+    "name": "Saint-Aubin premier cru Derrière la Tour"
+  },
+  {
+    "key": "fr:saint-aubin-premier-cru-echaille",
+    "name": "Saint-Aubin premier cru Echaille"
+  },
+  {
+    "key": "fr:saint-aubin-premier-cru-en-creot",
+    "name": "Saint-Aubin premier cru En Créot"
+  },
+  {
+    "key": "fr:saint-aubin-premier-cru-en-la-ranche",
+    "name": "Saint-Aubin premier cru En la Ranché"
+  },
+  {
+    "key": "fr:saint-aubin-premier-cru-en-montceau",
+    "name": "Saint-Aubin premier cru En Montceau"
+  },
+  {
+    "key": "fr:saint-aubin-premier-cru-en-remilly",
+    "name": "Saint-Aubin premier cru En Remilly"
+  },
+  {
+    "key": "fr:saint-aubin-premier-cru-en-vollon-a-l-est",
+    "name": "Saint-Aubin premier cru En Vollon à l'Est"
+  },
+  {
+    "key": "fr:saint-aubin-premier-cru-es-champs",
+    "name": "Saint-Aubin premier cru Es Champs"
+  },
+  {
+    "key": "fr:saint-aubin-premier-cru-la-chateniere",
+    "name": "Saint-Aubin premier cru La Chatenière"
+  },
+  {
+    "key": "fr:saint-aubin-premier-cru-le-bas-de-gamay-a-l-est",
+    "name": "Saint-Aubin premier cru Le Bas de Gamay à l'Est"
+  },
+  {
+    "key": "fr:saint-aubin-premier-cru-le-charmois",
+    "name": "Saint-Aubin premier cru Le Charmois"
+  },
+  {
+    "key": "fr:saint-aubin-premier-cru-le-puits",
+    "name": "Saint-Aubin premier cru Le Puits"
+  },
+  {
+    "key": "fr:saint-aubin-premier-cru-les-castets",
+    "name": "Saint-Aubin premier cru Les Castets"
+  },
+  {
+    "key": "fr:saint-aubin-premier-cru-les-champlots",
+    "name": "Saint-Aubin premier cru Les Champlots"
+  },
+  {
+    "key": "fr:saint-aubin-premier-cru-les-combes",
+    "name": "Saint-Aubin premier cru Les Combes"
+  },
+  {
+    "key": "fr:saint-aubin-premier-cru-les-combes-au-sud",
+    "name": "Saint-Aubin premier cru Les Combes au Sud"
+  },
+  {
+    "key": "fr:saint-aubin-premier-cru-les-cortons",
+    "name": "Saint-Aubin premier cru Les Cortons"
+  },
+  {
+    "key": "fr:saint-aubin-premier-cru-les-frionnes",
+    "name": "Saint-Aubin premier cru Les Frionnes"
+  },
+  {
+    "key": "fr:saint-aubin-premier-cru-les-murgers-des-dents-de-chien",
+    "name": "Saint-Aubin premier cru Les Murgers des Dents de Chien"
+  },
+  {
+    "key": "fr:saint-aubin-premier-cru-les-perrieres",
+    "name": "Saint-Aubin premier cru Les Perrières"
+  },
+  {
+    "key": "fr:saint-aubin-premier-cru-les-travers-de-marinot",
+    "name": "Saint-Aubin premier cru Les Travers de Marinot"
+  },
+  {
+    "key": "fr:saint-aubin-premier-cru-marinot",
+    "name": "Saint-Aubin premier cru Marinot"
+  },
+  {
+    "key": "fr:saint-aubin-premier-cru-pitangeret",
+    "name": "Saint-Aubin premier cru Pitangeret"
+  },
+  {
+    "key": "fr:saint-aubin-premier-cru-sous-roche-dumay",
+    "name": "Saint-Aubin premier cru Sous Roche Dumay"
+  },
+  {
+    "key": "fr:saint-aubin-premier-cru-sur-gamay",
+    "name": "Saint-Aubin premier cru Sur Gamay"
+  },
+  {
+    "key": "fr:saint-aubin-premier-cru-sur-le-sentier-du-clou",
+    "name": "Saint-Aubin premier cru Sur le Sentier du Clou"
+  },
+  {
+    "key": "fr:saint-aubin-premier-cru-vignes-moingeon",
+    "name": "Saint-Aubin premier cru Vignes Moingeon"
+  },
+  {
+    "key": "fr:saint-aubin-premier-cru-village",
+    "name": "Saint-Aubin premier cru Village"
+  },
+  {
+    "key": "fr:saint-bris",
+    "name": "Saint-Bris"
+  },
+  {
+    "key": "fr:saint-chinian",
+    "name": "Saint-Chinian"
+  },
+  {
+    "key": "fr:saint-emilion",
+    "name": "Saint-émilion"
+  },
+  {
+    "key": "fr:saint-emilion-grand-cru",
+    "name": "Saint-émilion grand cru"
+  },
+  {
+    "key": "fr:saint-estephe",
+    "name": "Saint-Estèphe"
+  },
+  {
+    "key": "en:saint-felicien-cheese",
+    "name": "Saint-Félicien"
+  },
+  {
+    "key": "fr:saint-georges-saint-emilion",
+    "name": "Saint-georges-saint-émilion"
+  },
+  {
+    "key": "fr:saint-guilhem-le-desert",
+    "name": "Saint-Guilhem-le-Désert"
+  },
+  {
+    "key": "fr:saint-joseph",
+    "name": "Saint-Joseph"
+  },
+  {
+    "key": "fr:saint-julien",
+    "name": "Saint-Julien"
+  },
+  {
+    "key": "fr:saint-marcellin",
+    "name": "Saint-Marcellin"
+  },
+  {
+    "key": "fr:saint-mont",
+    "name": "Saint-Mont"
+  },
+  {
+    "key": "fr:saint-nectaire",
+    "name": "Saint-nectaire"
+  },
+  {
+    "key": "fr:saint-nicolas-de-bourgueil-val-de-loire",
+    "name": "Saint-Nicolas-de-Bourgueil Val de Loire"
+  },
+  {
+    "key": "fr:saint-peray-mousseux",
+    "name": "Saint-Péray mousseux"
+  },
+  {
+    "key": "fr:saint-pourcain",
+    "name": "Saint-Pourçain"
+  },
+  {
+    "key": "fr:saint-romain",
+    "name": "Saint-Romain"
+  },
+  {
+    "key": "fr:saint-romain-cote-de-beaune",
+    "name": "Saint-Romain côte-de-beaune"
+  },
+  {
+    "key": "fr:saint-veran",
+    "name": "Saint-Véran"
+  },
+  {
+    "key": "fr:sainte-marie-la-blanche",
+    "name": "Sainte Marie la Blanche"
+  },
+  {
+    "key": "fr:sainte-croix-du-mont",
+    "name": "Sainte-croix-du-mont"
+  },
+  {
+    "key": "fr:sainte-foy-bordeaux",
+    "name": "Sainte-foy-bordeaux"
+  },
+  {
+    "key": "fr:sainte-maure-de-touraine",
+    "name": "Sainte-Maure de Touraine"
+  },
+  {
+    "key": "fr:terrines-de-saint-jacques",
+    "name": "Terrines de Saint-Jacques"
+  }
+]
