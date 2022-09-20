@@ -64,6 +64,7 @@ const ResponsiveAppBar = () => {
               display: { xs: "flex", md: "none" },
               alignItems: "center",
               justifyContent: "space-between",
+              maxWidth: "100%",
             }}
           >
             <IconButton
@@ -125,6 +126,7 @@ const ResponsiveAppBar = () => {
                 letterSpacing: ".3rem",
                 color: "inherit",
                 textDecoration: "none",
+                textAlign: "center",
               }}
             >
               Hunger Games

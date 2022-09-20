@@ -12,9 +12,6 @@ import DeleteIcon from "@mui/icons-material/Delete";
 import DoneIcon from "@mui/icons-material/Done";
 import MuiLink from "@mui/material/Link";
 
-import Zoom from "react-medium-image-zoom";
-import "react-medium-image-zoom/dist/styles.css";
-
 import { useTranslation } from "react-i18next";
 import {
   NO_QUESTION_LEFT,
@@ -213,18 +210,16 @@ const QuestionDisplay = ({
       </Stack>
       <Divider />
       <Box flexGrow={1} flexShrink={1} sx={{ height: 0, marginBottom: 1 }}>
-        <Zoom wrapStyle={{ height: "100%" }}>
-          <img
-            // TODO: use getFullSizeImage when the zoom is activated
-            // src={getFullSizeImage(question.source_image_url)}
-            src={
-              question.source_image_url ||
-              "https://static.openfoodfacts.org/images/image-placeholder.png"
-            }
-            alt=""
-            style={{ maxWidth: "100%", maxHeight: "100%" }}
-          />
-        </Zoom>
+        <img
+          // TODO: use getFullSizeImage when the zoom is activated
+          // src={getFullSizeImage(question.source_image_url)}
+          src={
+            question.source_image_url ||
+            "https://static.openfoodfacts.org/images/image-placeholder.png"
+          }
+          alt=""
+          style={{ maxWidth: "100%", maxHeight: "100%" }}
+        />
       </Box>
       <Stack direction="row" justifyContent="center" spacing={2} sx={{ mb: 1 }}>
         <Button
@@ -269,6 +264,7 @@ const QuestionDisplay = ({
         variant="contained"
         size="medium"
         autoFocus
+        sx={{ py: "1rem" }}
       >
         {t("questions.skip")} (k)
       </Button>
