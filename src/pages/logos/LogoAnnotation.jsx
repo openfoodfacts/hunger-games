@@ -3,6 +3,7 @@ import * as React from "react";
 import Stack from "@mui/material/Stack";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
+import CircularProgress from "@mui/material/CircularProgress";
 import LoadingButton from "@mui/lab/LoadingButton";
 
 import { useTranslation } from "react-i18next";
@@ -343,6 +344,7 @@ export default function LogoAnnotation() {
         }}
         isLoading={logoState.isLoading}
       />
+      {/* Selection buttons */}
       <Stack direction="row" spacing={1} sx={{ my: 1 }}>
         <Button size="small" onClick={selectAll}>
           {t("logos.select_all")}
@@ -367,11 +369,18 @@ export default function LogoAnnotation() {
         </LoadingButton>
       </Stack>
 
+      {logoState.isLoading && (
+        <Box sx={{ width: "100%", textAlign: "center", py: 10 }}>
+          <CircularProgress />
+        </Box>
+      )}
+      {/* Selected logos */}
       <LogoGrid
         logos={logoState.logos.filter((logo) => logo.selected)}
         toggleLogoSelection={toggleSelection}
       />
 
+      {/* Logos to select */}
       <LogoGrid
         logos={logoState.logos}
         toggleLogoSelection={toggleSelection}
