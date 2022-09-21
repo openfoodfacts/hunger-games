@@ -7,7 +7,7 @@ import CircularProgress from "@mui/material/CircularProgress";
 import LoadingButton from "@mui/lab/LoadingButton";
 
 import { useTranslation } from "react-i18next";
-import { useLocation } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
 
 import robotoff from "../../robotoff";
 import off from "../../off";
@@ -346,10 +346,11 @@ export default function LogoAnnotation() {
       />
       {/* Selection buttons */}
       <Stack direction="row" spacing={1} sx={{ my: 1 }}>
-        <Button size="small" onClick={selectAll}>
+        <Button variant="outlined" size="small" onClick={selectAll}>
           {t("logos.select_all")}
         </Button>
         <Button
+          variant="outlined"
           size="small"
           disabled={
             selectedIds.length === 0 ||
@@ -361,12 +362,23 @@ export default function LogoAnnotation() {
           {t("logos.unselect_all")}
         </Button>
         <LoadingButton
+          variant="outlined"
           size="small"
           onClick={refreshData}
           loading={isRefreshing}
         >
           Refresh
         </LoadingButton>
+        <div style={{ flexGrow: 1 }} />
+        <Button
+          size="small"
+          variant="contained"
+          color="secondary"
+          component={Link}
+          to="/logos/search/"
+        >
+          Search specific logo
+        </Button>
       </Stack>
 
       {logoState.isLoading && (
