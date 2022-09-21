@@ -16,7 +16,7 @@ const cleanName = (name) =>
     .replace(/[^0-9a-z]/gi, " ");
 
 const LabelFilter = (props) => {
-  const { onChange, value, insightType, ...other } = props;
+  const { showKey, onChange, value, insightType, fullWidth, ...other } = props;
   const [options, setOptions] = React.useState([]);
   const [innerValue, setInnerValue] = React.useState(null);
   const lang = getLang();
@@ -39,6 +39,7 @@ const LabelFilter = (props) => {
 
   return (
     <Autocomplete
+      fullWidth={fullWidth}
       freeSolo
       onChange={(_, newValue) => {
         setInnerValue(newValue);
@@ -74,7 +75,13 @@ const LabelFilter = (props) => {
       value={innerValue}
       options={options}
       getOptionLabel={(option) => option?.name ?? option}
-      renderInput={(params) => <TextField {...params} {...other} />}
+      renderInput={(params) => (
+        <TextField
+          {...params}
+          {...other}
+          helperText={showKey && innerValue?.key}
+        />
+      )}
       filterOptions={(options, state) => {
         return options.filter((option) =>
           option?.cleanName.includes(cleanName(state.inputValue))

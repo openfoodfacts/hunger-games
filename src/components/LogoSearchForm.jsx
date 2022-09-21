@@ -7,6 +7,8 @@ import Button from "@mui/material/Button";
 
 import { useTranslation } from "react-i18next";
 
+import LabelFilter from "../components/QuestionFilter/LabelFilter";
+
 const TYPE_WITHOUT_VALUE = ["packager_code", "qr_code"];
 
 const logoTypeOptions = [
@@ -68,13 +70,6 @@ const LogoSearchForm = (props) => {
       <Stack direction={{ xs: "column", sm: "row" }} spacing={1} wrap="wrap">
         <TextField
           fullWidth
-          value={innerValue}
-          onChange={(event) => setInnerValue(event.target.value)}
-          label={t("logos.value")}
-          size="small"
-        />
-        <TextField
-          fullWidth
           value={innerType}
           onChange={(event) => setInnerType(event.target.value)}
           select
@@ -87,6 +82,25 @@ const LogoSearchForm = (props) => {
             </MenuItem>
           ))}
         </TextField>
+        {["label", "category"].includes(innerType) ? (
+          <LabelFilter
+            showKey
+            fullWidth
+            value={innerValue}
+            onChange={setInnerValue}
+            insightType={innerType}
+            label={t("logos.value")}
+            size="small"
+          />
+        ) : (
+          <TextField
+            fullWidth
+            value={innerValue}
+            onChange={(event) => setInnerValue(event.target.value)}
+            label={t("logos.value")}
+            size="small"
+          />
+        )}
       </Stack>
 
       <Stack direction={{ xs: "column", sm: "row" }} spacing={1}>
