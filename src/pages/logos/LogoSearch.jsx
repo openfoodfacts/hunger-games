@@ -3,7 +3,7 @@ import LogoGrid from "../../components/LogoGrid";
 import LogoSearchForm from "../../components/LogoSearchForm";
 import robotoff from "../../robotoff";
 import off from "../../off";
-import { Box } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 
 const transformLogo = (logo) => {
   const src =
@@ -64,11 +64,20 @@ export default function LogoSearch() {
 
       <LogoGrid logos={result.logos} toggleLogoSelection={null} />
 
-      <p>
+      <Typography
+        variant="h6"
+        sx={{
+          textAlign: "end",
+          p: 2,
+          mt: 5,
+          mb: 10,
+          mr: 20,
+        }}
+      >
         {result.count === 0
           ? `No logo found`
           : `Shows ${result.logos.length} on ${result.count ?? 0} available`}
-      </p>
+      </Typography>
     </Box>
   );
 }

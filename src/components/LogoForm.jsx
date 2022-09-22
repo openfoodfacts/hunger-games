@@ -8,6 +8,8 @@ import LoadingButton from "@mui/lab/LoadingButton";
 
 import { useTranslation } from "react-i18next";
 
+import LabelFilter from "../components/QuestionFilter/LabelFilter";
+
 const TYPE_WITHOUT_VALUE = ["packager_code", "qr_code"];
 
 const logoTypeOptions = [
@@ -85,13 +87,27 @@ const LogoForm = (props) => {
           </MenuItem>
         ))}
       </TextField>
-      <TextField
-        value={innerValue}
-        onChange={(event) => setInnerValue(event.target.value)}
-        label={t("logos.value")}
-        sx={{ minWidth: { xs: "80%", sm: 350 } }}
-        size="small"
-      />
+
+      {["label", "category"].includes(innerType) ? (
+        <LabelFilter
+          showKey
+          value={innerValue}
+          onChange={setInnerValue}
+          insightType={innerType}
+          label={t("logos.value")}
+          size="small"
+          sx={{ minWidth: { xs: "80%", sm: 350 } }}
+        />
+      ) : (
+        <TextField
+          value={innerValue}
+          onChange={(event) => setInnerValue(event.target.value)}
+          label={t("logos.value")}
+          sx={{ minWidth: { xs: "80%", sm: 350 } }}
+          size="small"
+        />
+      )}
+
       <LoadingButton
         onClick={send}
         loading={isSending}
