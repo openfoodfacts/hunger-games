@@ -18,9 +18,8 @@ import TableRow from "@mui/material/TableRow";
 import TableCell from "@mui/material/TableCell";
 
 const fetchData = async (insightId) => {
-  const responce = await robotoff.insightDetail(insightId);
-  console.log(responce);
-  return responce;
+  const response = await robotoff.insightDetail(insightId);
+  return response;
 };
 
 const getCroppedLogoUrl = (debugData) => {
@@ -38,7 +37,14 @@ const DebugQuestion = (props) => {
   const { insightId } = props;
   const [isLoading, setIsLoading] = React.useState(true);
   const [debugData, setDebugData] = React.useState<any>({});
-  const [mageUrl, setImageUrl] = React.useState<any>(null);
+  const [openDetails, setOpenDetails] = React.useState<any>({
+    resume: false,
+    json_details: false,
+  });
+
+  const handleChange = (panelId) => (event, newState) => {
+    setOpenDetails((prev) => ({ ...prev, [panelId]: newState }));
+  };
 
   React.useEffect(() => {
     setIsLoading(true);
@@ -68,7 +74,11 @@ const DebugQuestion = (props) => {
     <>
       <Divider sx={{ mt: 2 }} />
       <Box sx={{ px: 2, my: 2 }}>
-        <Accordion variant="outlined">
+        <Accordion
+          variant="outlined"
+          onChange={handleChange("resume")}
+          expanded={openDetails["resume"]}
+        >
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
             aria-controls="panel1a-content"
@@ -119,7 +129,11 @@ const DebugQuestion = (props) => {
             )}
           </AccordionDetails>
         </Accordion>
-        <Accordion variant="outlined">
+        <Accordion
+          variant="outlined"
+          onChange={handleChange("json_details")}
+          expanded={openDetails["json_details"]}
+        >
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
             aria-controls="panel1a-content"

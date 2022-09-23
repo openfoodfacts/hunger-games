@@ -117,9 +117,6 @@ const ProductInformation = ({ question }) => {
   if (!question || question.insight_id === NO_QUESTION_LEFT) {
     return null;
   }
-  if (productData.isLoading) {
-    return <p>loading...</p>;
-  }
 
   return (
     <Box>
