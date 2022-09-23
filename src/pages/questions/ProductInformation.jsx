@@ -56,7 +56,7 @@ const ProductInformation = ({ question }) => {
 
   const [productData, setProductData] = React.useState({});
   const [hideImages, setHideImages] = React.useState(getHideImages);
-  const [devCustomization, setDevCustomization] = React.useState(
+  const [devCustomization] = React.useState(
     () => getPageCustomization().questionPage
   );
   const [flagged, setFlagged] = React.useState([]);
