@@ -10,6 +10,7 @@ export const localSettingsKeys = {
   showTour: "showTour",
   showDatabase: "showDatabase",
   showNutriscore: "showNutriscore",
+  pageCustomization: "pageCustomization",
 };
 
 export const localSettings = {
@@ -32,12 +33,15 @@ export const localSettings = {
   },
 };
 
-export const getIsDevMode = () => {
+export const getIsDevMode: () => boolean = () => {
   const settings = localSettings.fetch();
   return settings[localSettingsKeys.isDevMode] ?? false;
 };
 
-export const getVisiblePages = () => {
+export const getVisiblePages: () => {
+  nutriscore: boolean;
+  insights: boolean;
+} = () => {
   const settings = localSettings.fetch();
   return (
     settings[localSettingsKeys.visiblePages] ?? {
@@ -45,6 +49,21 @@ export const getVisiblePages = () => {
       insights: true,
     }
   );
+};
+
+export const getPageCustomization: () => {
+  questionPage: {
+    showDebug: boolean;
+    showOtherQuestions: boolean;
+  };
+} = () => {
+  // const settings = localSettings.fetch();
+  return {
+    questionPage: {
+      showDebug: true,
+      showOtherQuestions: true,
+    },
+  };
 };
 
 /** Questions page: returns a boolean for hiding the images. Uses local storage.  */
@@ -67,6 +86,7 @@ export const getLang = () => {
   return (
     urlLanguage ||
     settings[localSettingsKeys.language] ||
+    // @ts-ignore
     (navigator.language || navigator.userLanguage).split("-")[0]
   );
 };
