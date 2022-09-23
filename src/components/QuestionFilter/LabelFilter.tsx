@@ -46,7 +46,7 @@ const LabelFilter = (props) => {
         onChange((newValue?.key ?? newValue) || "");
       }}
       onInputChange={(e, inputValue) => {
-        if (inputValue.length < 4) {
+        if (inputValue.length < 4 && inputValue.length > 0) {
           axios
             .get(
               `${URL_ORIGINE}/data/${
