@@ -43,7 +43,7 @@ const LabelFilter = (props) => {
       freeSolo
       onChange={(_, newValue) => {
         setInnerValue(newValue);
-        onChange(newValue?.key ?? newValue);
+        onChange((newValue?.key ?? newValue) || "");
       }}
       onInputChange={(e, inputValue) => {
         if (inputValue.length < 4) {
