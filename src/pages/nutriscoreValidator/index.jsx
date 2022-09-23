@@ -10,7 +10,6 @@ import MenuItem from "@mui/material/MenuItem";
 import TextField from "@mui/material/TextField";
 import Card from "@mui/material/Card";
 import CardActionArea from "@mui/material/CardActionArea";
-import CardMedia from "@mui/material/CardMedia";
 import Checkbox from "@mui/material/Checkbox";
 import Paper from "@mui/material/Paper";
 import Slider from "@mui/material/Slider";
@@ -18,64 +17,45 @@ import Typography from "@mui/material/Typography";
 import FormControlLabel from "@mui/material/FormControlLabel";
 
 import robotoff from "../../robotoff";
+import off from "../../off";
 
 const BUFFER_THRESHOLD = 10;
 const PAGE_SIZE = 50;
 
 const NutriscoreImage = ({ question, imageSize, zoomOnLogo }) => {
-  const [cropArea, setCropArea] = React.useState([0, 0, 1, 1]);
+  const [croppedImageUrl, setCroppedImageUrl] = React.useState("");
 
   React.useEffect(() => {
     if (!zoomOnLogo) {
+      setCroppedImageUrl(question.source_image_url);
       return;
     }
     robotoff
       .insightDetail(question.insight_id)
       .then(({ data }) => {
-        if (data.data.bounding_box) {
-          setCropArea(data.data.bounding_box);
+        if (data?.data?.bounding_box && data?.source_image) {
+          setCroppedImageUrl(
+            robotoff.getCroppedImageUrl(
+              off.getImageUrl(data?.source_image),
+              data.data.bounding_box
+            )
+          );
         }
       })
       .catch(() => {});
-  }, [question.insight_id, zoomOnLogo]);
+  }, [question.insight_id, question.source_image_url, zoomOnLogo]);
 
-  if (!question.insight_id) {
+  if (!question.insight_id || !croppedImageUrl) {
     return null;
   }
 
-  const dx = zoomOnLogo ? 1 / (cropArea[3] - cropArea[1]) : 1;
-  const dy = zoomOnLogo ? 1 / (cropArea[2] - cropArea[0]) : 1;
-
-  const sizeX = `${Math.round(Math.max(0.5, dx) * imageSize)}px`;
-  const sizeY = `${Math.round(Math.max(0.5, dy) * imageSize)}px`;
-
-  const useXScale = zoomOnLogo ? dx < dy : sizeX > sizeY;
   return (
-    <CardMedia
-      component="div"
-      sx={{
-        width: "100%",
-        height: "100%",
-        overflow: "hidden",
-        position: "relative",
-      }}
-    >
-      <img
-        src={question.source_image_url}
-        alt=""
-        style={{
-          width: useXScale ? sizeX : "auto",
-          height: !useXScale ? sizeY : "auto",
-          position: "absolute",
-          top: 0,
-          left: 0,
-          transform: zoomOnLogo
-            ? `translate(-${cropArea[1] * 100}%, -${cropArea[0] * 100}%)`
-            : "",
-        }}
-        loading="lazy"
-      />
-    </CardMedia>
+    <img
+      src={croppedImageUrl}
+      alt=""
+      loading="lazy"
+      style={{ objectFit: "contain", width: "100%", height: "100%" }}
+    />
   );
 };
 
@@ -261,30 +241,36 @@ export default function NutriscoreValidator() {
         }}
         onKeyDown={handleKeyDown}
       >
-        {buffer.map((question) => (
-          <Card
-            sx={{ width: imageSize, height: imageSize }}
-            key={question.insight_id}
-          >
-            <CardActionArea
-              sx={{ width: imageSize, height: imageSize, position: "relative" }}
-              onClick={toggleSelection(question.insight_id)}
-              tabIndex={-1}
+        {buffer
+          .filter((question) => question.insight_id)
+          .map((question) => (
+            <Card
+              sx={{ width: imageSize, height: imageSize }}
+              key={question.insight_id}
             >
-              <NutriscoreImage
-                question={question}
-                imageSize={imageSize}
-                zoomOnLogo={zoomOnLogo}
-              />
-              <Checkbox
-                sx={{ position: "absolute", bottom: 10, right: 10 }}
-                checked={selectedIds.includes(question.insight_id)}
-                readOnly
-                size="large"
-              />
-            </CardActionArea>
-          </Card>
-        ))}
+              <CardActionArea
+                sx={{
+                  width: imageSize,
+                  height: imageSize,
+                  position: "relative",
+                }}
+                onClick={toggleSelection(question.insight_id)}
+                tabIndex={-1}
+              >
+                <NutriscoreImage
+                  question={question}
+                  imageSize={imageSize}
+                  zoomOnLogo={zoomOnLogo}
+                />
+                <Checkbox
+                  sx={{ position: "absolute", bottom: 10, right: 10 }}
+                  checked={selectedIds.includes(question.insight_id)}
+                  readOnly
+                  size="large"
+                />
+              </CardActionArea>
+            </Card>
+          ))}
       </div>
 
       <Paper
