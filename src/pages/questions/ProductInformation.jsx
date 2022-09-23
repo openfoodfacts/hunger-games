@@ -26,8 +26,11 @@ import {
   localSettings,
   localSettingsKeys,
   getHideImages,
+  getPageCustomization,
+  getIsDevMode,
 } from "../../localeStorageManager";
 import externalApi from "../../externalApi";
+import DebugQuestion from "./DebugQuestion";
 
 // src looks like: "https://static.openfoodfacts.org/images/products/004/900/053/2258/1.jpg"
 const getImageId = (src) => {
@@ -49,8 +52,13 @@ const getImagesUrls = (images, barcode) => {
 
 const ProductInformation = ({ question }) => {
   const { t } = useTranslation();
+  const isDevMode = getIsDevMode();
+
   const [productData, setProductData] = React.useState({});
   const [hideImages, setHideImages] = React.useState(getHideImages);
+  const [devCustomization, setDevCustomization] = React.useState(
+    () => getPageCustomization().questionPage
+  );
   const [flagged, setFlagged] = React.useState([]);
 
   const flagImage = (src, barcode) => {
@@ -108,9 +116,6 @@ const ProductInformation = ({ question }) => {
 
   if (!question || question.insight_id === NO_QUESTION_LEFT) {
     return null;
-  }
-  if (productData.isLoading) {
-    return <p>loading...</p>;
   }
 
   return (
@@ -186,7 +191,7 @@ const ProductInformation = ({ question }) => {
       {/* Remaining info */}
       <Divider />
 
-      <Table size="small" aria-label="a dense table">
+      <Table size="small">
         <TableBody
           sx={{
             " td, th": { border: "none" },
@@ -219,6 +224,9 @@ const ProductInformation = ({ question }) => {
           </TableRow>
         </TableBody>
       </Table>
+      {isDevMode && devCustomization.showDebug && (
+        <DebugQuestion insightId={question.insight_id} />
+      )}
       <Divider />
     </Box>
   );
