@@ -19,24 +19,39 @@ import TableCell from "@mui/material/TableCell";
 
 const fetchData = async (insightId) => {
   const response = await robotoff.insightDetail(insightId);
+
+  if (
+    response?.data?.source_image &&
+    response?.data?.data?.logo_id &&
+    !response?.data?.data?.bounding_box
+  ) {
+    const logoData = await robotoff.getLogosImages([
+      response?.data?.data?.logo_id,
+    ]);
+    const bounding_box = logoData?.data?.logos?.[0]?.bounding_box;
+
+    return { ...response, bounding_box };
+  }
+
   return response;
 };
 
-const getCroppedLogoUrl = (debugData) => {
-  if (!debugData?.source_image || !debugData?.data?.bounding_box) {
+const getCroppedLogoUrl = (debugResponse) => {
+  const debugData = debugResponse?.data;
+  const bounding_box =
+    debugData?.data?.bounding_box || debugResponse?.bounding_box;
+
+  if (!debugData?.source_image || !bounding_box) {
     return null;
   }
 
   const sourceImage = off.getImageUrl(debugData?.source_image);
-  return robotoff.getCroppedImageUrl(
-    sourceImage,
-    debugData?.data?.bounding_box
-  );
+  return robotoff.getCroppedImageUrl(sourceImage, bounding_box);
 };
 const DebugQuestion = (props) => {
   const { insightId } = props;
   const [isLoading, setIsLoading] = React.useState(true);
-  const [debugData, setDebugData] = React.useState<any>({});
+  const [debugResponse, setDebugResponse] = React.useState<any>({});
   const [openDetails, setOpenDetails] = React.useState<any>({
     resume: false,
     json_details: false,
@@ -50,26 +65,26 @@ const DebugQuestion = (props) => {
     setIsLoading(true);
     let isValid = true;
     fetchData(insightId)
-      .then(({ data }) => {
+      .then((response) => {
         if (!isValid) {
           return;
         }
         setIsLoading(false);
-        setDebugData(data);
+        setDebugResponse(response);
       })
       .catch((e) => {
         if (!isValid) {
           return;
         }
         setIsLoading(false);
-        setDebugData(e);
+        setDebugResponse(e);
       });
     return () => {
       isValid = false;
     };
   }, [insightId]);
 
-  const croppedUrl = getCroppedLogoUrl(debugData);
+  const croppedUrl = getCroppedLogoUrl(debugResponse);
   return (
     <>
       <Divider sx={{ mt: 2 }} />
@@ -102,14 +117,14 @@ const DebugQuestion = (props) => {
                       <TableCell component="th" scope="row">
                         insight id
                       </TableCell>
-                      <TableCell>{debugData?.id}</TableCell>
+                      <TableCell>{debugResponse?.data?.id}</TableCell>
                     </TableRow>
 
                     <TableRow>
                       <TableCell component="th" scope="row">
                         generator model
                       </TableCell>
-                      <TableCell>{debugData?.predictor}</TableCell>
+                      <TableCell>{debugResponse?.data?.predictor}</TableCell>
                     </TableRow>
 
                     <TableRow>
@@ -117,13 +132,19 @@ const DebugQuestion = (props) => {
                         timestamp
                       </TableCell>
                       <TableCell>
-                        {new Date(debugData?.timestamp).toLocaleString()}
+                        {new Date(
+                          debugResponse?.data?.timestamp
+                        ).toLocaleString()}
                       </TableCell>
                     </TableRow>
                   </TableBody>
                 </Table>
                 {croppedUrl && (
-                  <img alt="lroUsed for prediction" src={croppedUrl} />
+                  <img
+                    alt="lroUsed for prediction"
+                    src={croppedUrl}
+                    style={{ maxHeight: "150px" }}
+                  />
                 )}
               </div>
             )}
@@ -146,7 +167,7 @@ const DebugQuestion = (props) => {
               <LinearProgress />
             ) : (
               <Typography variant="caption" component="pre">
-                {JSON.stringify(debugData, null, 2)}
+                {JSON.stringify(debugResponse?.data ?? debugResponse, null, 2)}
               </Typography>
             )}
           </AccordionDetails>
