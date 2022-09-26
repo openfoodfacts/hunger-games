@@ -1,5 +1,6 @@
 import * as React from "react";
 import Box from "@mui/material/Box";
+import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
 import Link from "@mui/material/Link";
 import Divider from "@mui/material/Divider";
@@ -18,7 +19,7 @@ import FlagIcon from "@mui/icons-material/Flag";
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 import { useTranslation } from "react-i18next";
-import { NO_QUESTION_LEFT } from "../../const";
+import { NO_QUESTION_LEFT, SKIPPED_INSIGHT } from "../../const";
 import offService from "../../off";
 import IconButton from "@mui/material/IconButton";
 import Tooltip from "@mui/material/Tooltip";
@@ -29,8 +30,10 @@ import {
   getPageCustomization,
   getIsDevMode,
 } from "../../localeStorageManager";
+import { CORRECT_INSIGHT, WRONG_INSIGHT } from "../../const";
 import externalApi from "../../externalApi";
 import DebugQuestion from "./DebugQuestion";
+import robotoff from "../../robotoff";
 
 // src looks like: "https://static.openfoodfacts.org/images/products/004/900/053/2258/1.jpg"
 const getImageId = (src) => {
@@ -48,6 +51,45 @@ const getImagesUrls = (images, barcode) => {
   return Object.keys(images)
     .filter((key) => !isNaN(key))
     .map((key) => `${rootImageUrl}/${key}.jpg`);
+};
+
+// Other questions fetching
+const useOtherQuestions = (code, insight_id) => {
+  const [otherQuestionsState, setOtherQuestionsState] = React.useState({
+    questions: [],
+    isLoading: true,
+  });
+  React.useEffect(() => {
+    if (!code) {
+      return;
+    }
+    let isStillValid = true;
+    setOtherQuestionsState({
+      questions: [],
+      isLoading: true,
+    });
+    robotoff.questionsByProductCode(code).then((result) => {
+      if (!isStillValid) {
+        return;
+      }
+      const newQuestions = result?.data?.questions ?? [];
+      setOtherQuestionsState({
+        questions: newQuestions.filter((q) => q?.insight_id !== insight_id),
+        isLoading: false,
+      });
+    });
+    return () => {
+      isStillValid = false;
+    };
+  }, [code, insight_id]);
+
+  const [pendingAnswers, setPendingAnswers] = React.useState({});
+  return [
+    otherQuestionsState,
+    setOtherQuestionsState,
+    pendingAnswers,
+    setPendingAnswers,
+  ];
 };
 
 const ProductInformation = ({ question }) => {
@@ -79,11 +121,11 @@ const ProductInformation = ({ question }) => {
     setFlagged(newFlagged);
   };
 
+  // product data fetching
   React.useEffect(() => {
     if (!question?.barcode) {
       return;
     }
-    setFlagged([]);
     let isStillValid = true;
     setProductData({
       code: question.barcode,
@@ -108,6 +150,18 @@ const ProductInformation = ({ question }) => {
       isStillValid = false;
     };
   }, [question?.barcode]);
+
+  // Reset flags
+  React.useEffect(() => {
+    setFlagged([]);
+  }, [question?.barcode]);
+
+  const [
+    otherQuestionsState,
+    setOtherQuestionsState,
+    pendingAnswers,
+    setPendingAnswers,
+  ] = useOtherQuestions(question?.barcode, question?.insight_id);
 
   const handleHideImages = (event) => {
     setHideImages(event.target.checked);
@@ -144,6 +198,107 @@ const ProductInformation = ({ question }) => {
       >
         {t("questions.edit")}
       </Button>
+      {
+        /* Other questions */
+
+        isDevMode && (
+          <>
+            <Divider sx={{ my: 1 }} />
+            <Typography variant="h5">Other questions</Typography>
+
+            {otherQuestionsState.isLoading
+              ? null
+              : otherQuestionsState.questions.map((otherQuestion) => (
+                  <Stack
+                    direction="row"
+                    key={otherQuestion.insight_id}
+                    sx={{ mt: 1, alignItems: "flex-start" }}
+                  >
+                    <Typography key={otherQuestion.insight_id}>
+                      {otherQuestion?.question} ({otherQuestion?.value})
+                    </Typography>
+                    <Button
+                      onClick={() => {
+                        setPendingAnswers((prev) => ({
+                          ...prev,
+                          [otherQuestion?.insight_id]:
+                            prev[otherQuestion?.insight_id] === CORRECT_INSIGHT
+                              ? SKIPPED_INSIGHT
+                              : CORRECT_INSIGHT,
+                        }));
+                      }}
+                      color="success"
+                      variant={
+                        pendingAnswers[otherQuestion?.insight_id] ===
+                        CORRECT_INSIGHT
+                          ? "contained"
+                          : "outlined"
+                      }
+                      size="small"
+                      sx={{ ml: 1 }}
+                    >
+                      {t("questions.yes")}
+                    </Button>
+                    <Button
+                      onClick={() => {
+                        setPendingAnswers((prev) => ({
+                          ...prev,
+                          [otherQuestion?.insight_id]:
+                            prev[otherQuestion?.insight_id] === WRONG_INSIGHT
+                              ? SKIPPED_INSIGHT
+                              : WRONG_INSIGHT,
+                        }));
+                      }}
+                      color="error"
+                      variant={
+                        pendingAnswers[otherQuestion?.insight_id] ===
+                        WRONG_INSIGHT
+                          ? "contained"
+                          : "outlined"
+                      }
+                      size="small"
+                    >
+                      {t("questions.no")}
+                    </Button>
+                    <Button
+                      onClick={() => {
+                        const answer =
+                          pendingAnswers[otherQuestion?.insight_id];
+                        if (
+                          answer === CORRECT_INSIGHT ||
+                          answer === WRONG_INSIGHT
+                        ) {
+                          robotoff.annotate(otherQuestion?.insight_id, answer);
+                          setOtherQuestionsState((prev) => ({
+                            ...prev,
+                            questions: prev.questions.filter(
+                              (q) => q?.insight_id !== otherQuestion?.insight_id
+                            ),
+                          }));
+                        }
+                        setPendingAnswers((prev) => ({
+                          ...prev,
+                          [otherQuestion?.insight_id]: WRONG_INSIGHT,
+                        }));
+                      }}
+                      color="secondary"
+                      disabled={
+                        ![CORRECT_INSIGHT, WRONG_INSIGHT].includes(
+                          pendingAnswers[otherQuestion?.insight_id]
+                        )
+                      }
+                      variant="contained"
+                      size="small"
+                      sx={{ ml: 1 }}
+                    >
+                      send
+                    </Button>
+                  </Stack>
+                ))}
+          </>
+        )
+      }
+
       <Divider sx={{ my: 1 }} />
 
       {/* Image display section */}
