@@ -146,7 +146,7 @@ const staticColumnsDef = [
     minWidth: 150,
     flex: 1,
     maxWidth: 200,
-    renderCell: TypeCell,
+    renderCell: (params) => <TypeCell {...params} />,
   },
   {
     field: "value_tag",
@@ -172,7 +172,7 @@ const staticColumnsDef = [
   },
   {
     field: "annotation",
-    renderCell: AnnotationStateCell,
+    renderCell: (params) => <AnnotationStateCell {...params} />,
     minWidth: 70,
     maxWidth: 110,
     flex: 1,
