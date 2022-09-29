@@ -19,6 +19,9 @@ const LabelFilter = (props) => {
   const { showKey, onChange, value, insightType, fullWidth, ...other } = props;
   const [options, setOptions] = React.useState([]);
   const [innerValue, setInnerValue] = React.useState(null);
+  const [inputValue, setInputValue] = React.useState("");
+  const fetchedKeysRef = React.useRef({});
+
   const lang = getLang();
 
   React.useEffect(() => {
@@ -35,7 +38,45 @@ const LabelFilter = (props) => {
     });
   }, [value, options]);
 
-  React.useEffect(() => setOptions([]), [insightType]);
+  React.useEffect(() => {
+    setOptions([]);
+    fetchedKeysRef.current = {};
+  }, [insightType]);
+
+  React.useEffect(() => {
+    const keyToFetch = inputValue.toLowerCase().replace(/[^0-9a-z]/gi, "-");
+
+    [
+      keyToFetch.slice(0, 1),
+      keyToFetch.slice(0, 2),
+      keyToFetch.slice(0, 3),
+    ].forEach((key) => {
+      if (key.length > 0 && !fetchedKeysRef.current[key]) {
+        fetchedKeysRef.current[key] = true;
+        axios
+          .get(
+            `${URL_ORIGINE}/data/${
+              AVAILABLE_OPTIONS.includes(lang) ? lang : "en"
+            }/${insightType}/${key}.json`
+          )
+          .then(({ data }) => {
+            setOptions((prevOptions) => {
+              const existingKeys = prevOptions.map((x) => x.key);
+              return [
+                ...prevOptions,
+                ...data
+                  .filter(({ key }) => !existingKeys.includes(key))
+                  .map((option) => ({
+                    ...option,
+                    cleanName: cleanName(option.name),
+                  })),
+              ];
+            });
+          })
+          .catch(() => {});
+      }
+    });
+  }, [inputValue, insightType, lang]);
 
   return (
     <Autocomplete
@@ -43,35 +84,12 @@ const LabelFilter = (props) => {
       freeSolo
       onChange={(_, newValue) => {
         setInnerValue(newValue);
-        onChange((newValue?.key ?? newValue) || "");
+        onChange(newValue?.key ?? newValue);
       }}
-      onInputChange={(e, inputValue) => {
-        if (inputValue.length < 4 && inputValue.length > 0) {
-          axios
-            .get(
-              `${URL_ORIGINE}/data/${
-                AVAILABLE_OPTIONS.includes(lang) ? lang : "en"
-              }/${insightType}/${inputValue
-                .toLowerCase()
-                .replace(/[^0-9a-z]/gi, "-")}.json`
-            )
-            .then(({ data }) => {
-              setOptions((prevOptions) => {
-                const existingKeys = prevOptions.map((x) => x.key);
-                return [
-                  ...prevOptions,
-                  ...data
-                    .filter(({ key }) => !existingKeys.includes(key))
-                    .map((option) => ({
-                      ...option,
-                      cleanName: cleanName(option.name),
-                    })),
-                ];
-              });
-            })
-            .catch(() => {});
-        }
+      onInputChange={(e, newInputValue, reason) => {
+        setInputValue(newInputValue);
       }}
+      inputValue={inputValue}
       value={innerValue}
       options={options}
       getOptionLabel={(option) => option?.name ?? option}
