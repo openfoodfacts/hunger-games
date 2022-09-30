@@ -143,6 +143,7 @@ const ProductInformation = ({ question }) => {
         ingredientsText: product?.ingredients_text || "",
         countriesTags: product?.countries_tags || [],
         images: product?.images || {},
+        categories: product?.categories || {},
         isLoading: false,
       });
     });
@@ -375,6 +376,15 @@ const ProductInformation = ({ question }) => {
               {!productData?.countriesTags
                 ? null
                 : `${productData.countriesTags.join(", ")}.`}
+            </TableCell>
+          </TableRow>
+
+          <TableRow>
+            <TableCell component="th" scope="row">
+              {t("questions.categories")}
+            </TableCell>
+            <TableCell>
+              {!productData?.categories ? null : productData?.categories}
             </TableCell>
           </TableRow>
         </TableBody>
