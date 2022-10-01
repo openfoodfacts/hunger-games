@@ -133,6 +133,7 @@ const robotoff = {
     let annotated;
     if (annotation.length && annotation === "not_annotated") {
       annotated = "0";
+      annotation = "";
     }
     return axios.get(`${ROBOTOFF_API_URL}/insights`, {
       params: removeEmptyKeys({
