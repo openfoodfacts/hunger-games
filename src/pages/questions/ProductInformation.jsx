@@ -143,7 +143,7 @@ const ProductInformation = ({ question }) => {
         ingredientsText: product?.ingredients_text || "",
         countriesTags: product?.countries_tags || [],
         images: product?.images || {},
-        categories: product?.categories || {},
+        categories: product?.categories || "",
         isLoading: false,
       });
     });
