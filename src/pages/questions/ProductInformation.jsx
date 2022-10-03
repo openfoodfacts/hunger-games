@@ -384,7 +384,10 @@ const ProductInformation = ({ question }) => {
               {t("questions.categories")}
             </TableCell>
             <TableCell>
-              {!productData?.categories ? null : productData?.categories}
+              {!productData?.categories ||
+              typeof productData?.categories === "object"
+                ? null
+                : productData?.categories}
             </TableCell>
           </TableRow>
         </TableBody>
