@@ -4,7 +4,6 @@ import Fab from "@mui/material/Fab";
 import Tooltip from "@mui/material/Tooltip";
 import KeyboardArrowUpRoundedIcon from "@mui/icons-material/KeyboardArrowUpRounded";
 import Fade from "@mui/material/Fade";
-import { Theme } from "@mui/material/styles";
 
 export default function BackToTop() {
   const [open, setOpen] = React.useState(false);
