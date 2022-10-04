@@ -5,14 +5,19 @@ import { useLocation } from "react-router-dom";
 import { localFavorites } from "../../localeStorageManager";
 import logo from "../../assets/logo.png";
 
+const isValid = (value) => value || value === false;
+
 export const getQuestionSearchParams = (filterState) => {
   const urlParams = new URLSearchParams(window.location.search);
 
   Object.keys(DEFAULT_FILTER_STATE).forEach((key) => {
     const urlKey = key2urlParam[key];
-    if (urlParams.get(urlKey) !== undefined && !filterState[key]) {
+    if (urlParams.get(urlKey) !== undefined && !isValid(filterState[key])) {
       urlParams.delete(urlKey);
-    } else if (filterState[key] && urlParams.get(urlKey) !== filterState[key]) {
+    } else if (
+      isValid(filterState[key]) &&
+      urlParams.get(urlKey) !== filterState[key]
+    ) {
       urlParams.set(urlKey, filterState[key]);
     }
   });
