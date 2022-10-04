@@ -16,6 +16,7 @@ import off from "../../off";
 import { IS_DEVELOPMENT_MODE } from "../../const";
 import LogoGrid from "../../components/LogoGrid";
 import LogoForm from "../../components/LogoForm";
+import BackToTop from "../../components/BackToTop";
 
 //  Only for testing purpose
 import { sleep } from "../../utils";
@@ -417,6 +418,7 @@ export default function LogoAnnotation() {
           Load more
         </Button>
       </Box>
+      <BackToTop />
     </Box>
   );
 }
