@@ -2,7 +2,7 @@ export const DEFAULT_FILTER_STATE = {
   insightType: "brand",
   brandFilter: "",
   countryFilter: "",
-  sortByPopularity: false,
+  sortByPopularity: true,
   valueTag: "",
 };
 

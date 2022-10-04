@@ -177,7 +177,7 @@ const QuestionDisplay = ({
         }}
       >
         <Typography>{question?.question}</Typography>
-        {valueTagQuestionsURL && (
+        {valueTagQuestionsURL ? (
           <Badge
             sx={{ marginY: 1 }}
             badgeContent={nbOfPotentialQuestion}
@@ -193,6 +193,10 @@ const QuestionDisplay = ({
               {question.value}
             </Button>
           </Badge>
+        ) : (
+          <Button sx={{ paddingX: 4, marginY: 1 }} variant="outlined">
+            {question.value}
+          </Button>
         )}
         {valueTagExamplesURL && (
           <MuiLink
