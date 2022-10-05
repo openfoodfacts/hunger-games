@@ -3,25 +3,25 @@
     "statistics": {
       "editorCount": {
         "title": "Editor",
-        "description": "Number of edition done"
+        "description": "Số lượng ấn bản đã hoàn thành"
       },
       "contributorCount": {
         "title": "Người đóng góp",
-        "description": "Adding a new product"
+        "description": "Đang thêm sản phẩm mới"
       },
       "photographerCount": {
-        "title": "Photographer",
-        "description": "Taking photos for a product"
+        "title": "Nhiếp ảnh gia",
+        "description": "Đang chụp ảnh cho một sản phẩm"
       }
     }
   },
   "questions": {
     "category": "danh mục",
-    "categories": "danh mục",
+    "categories": "Thể loại",
     "label": "nhãn hiệu",
     "brand": "nhãn hiệu",
     "brands": "Thương hiệu",
-    "insightTypeLabel": "Only shows",
+    "insightTypeLabel": "Chỉ hiển thị",
     "ingredients": "Thành phần",
     "product_weight": "trọng lượng sản phẩm",
     "popularity_sort": "Sắp xếp theo mức độ phổ biến",
@@ -37,7 +37,7 @@
     "display_images": "Hiển thị hình ảnh",
     "annotations": "Annotations",
     "last_annotations": "Chú thích mới nhất",
-    "remaining_annotations": "Remaining questions",
+    "remaining_annotations": "Câu hỏi đang có",
     "annotated_annotations": "Chú thích",
     "filters": {
       "short_label": {
@@ -133,7 +133,7 @@
     "settings": "Cài đặt",
     "language": "Ngôn ngữ",
     "save": "Lưu",
-    "reportIssue": "Found a bug?, please let us know"
+    "reportIssue": "Có lỗi? Hãy báo cho chúng tôi"
   },
   "helper": {
     "welcome": {
@@ -223,8 +223,8 @@
     }
   },
   "notfound": {
-    "nopage": "Whoops! The page you're looking for can't be found.",
-    "redirect1": "Want to play some games?",
-    "redirect2": "Click here"
+    "nopage": "Ối! Trang bạn đang tìm kiếm không thể tìm thấy.",
+    "redirect1": "Muốn chơi một số trò chơi?",
+    "redirect2": "Nhấn vào đây"
   }
 }
