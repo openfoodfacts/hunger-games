@@ -4,6 +4,8 @@ import Stack from "@mui/material/Stack";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import CircularProgress from "@mui/material/CircularProgress";
+import Typography from "@mui/material/Typography";
+import Paper from "@mui/material/Paper";
 import LoadingButton from "@mui/lab/LoadingButton";
 
 import { useTranslation } from "react-i18next";
@@ -14,6 +16,7 @@ import off from "../../off";
 import { IS_DEVELOPMENT_MODE } from "../../const";
 import LogoGrid from "../../components/LogoGrid";
 import LogoForm from "../../components/LogoForm";
+import BackToTop from "../../components/BackToTop";
 
 //  Only for testing purpose
 import { sleep } from "../../utils";
@@ -313,7 +316,7 @@ export default function LogoAnnotation() {
   }
   return (
     <Box sx={{ margin: "2% 10%" }}>
-      <Box
+      <Typography
         typography="h2"
         sx={{
           fontSize: "1.5rem",
@@ -322,64 +325,69 @@ export default function LogoAnnotation() {
         }}
       >
         {t("logos.annotations")}
-      </Box>
-      <p>
+      </Typography>
+      <Typography>
         Select all logos that are exactly the same, and give them a name like
         "en:EU Organic" and a type like "label".
-      </p>
-      <LogoForm
-        value={logoState.referenceLogo.annotation_value ?? ""}
-        type={logoState.referenceLogo.annotation_type ?? ""}
-        request={async (formData) => {
-          await request(selectedIds)(formData);
-          setLogoState((prevState) => ({
-            ...prevState,
-            logos: prevState.logos.map((logo) => {
-              return {
-                ...logo,
-                selected: logoSearchParams.logo_id === logo.id.toString(),
-              };
-            }),
-          }));
-        }}
-        isLoading={logoState.isLoading}
-      />
-      {/* Selection buttons */}
-      <Stack direction="row" spacing={1} sx={{ my: 1 }}>
-        <Button variant="outlined" size="small" onClick={selectAll}>
-          {t("logos.select_all")}
-        </Button>
-        <Button
-          variant="outlined"
-          size="small"
-          disabled={
-            selectedIds.length === 0 ||
-            (selectedIds.length === 1 &&
-              selectedIds[0].toString() === logoSearchParams.logo_id)
-          }
-          onClick={unselectAll}
-        >
-          {t("logos.unselect_all")}
-        </Button>
-        <LoadingButton
-          variant="outlined"
-          size="small"
-          onClick={refreshData}
-          loading={isRefreshing}
-        >
-          Refresh
-        </LoadingButton>
-        <div style={{ flexGrow: 1 }} />
-        <Button
-          size="small"
-          variant="contained"
-          color="secondary"
-          component={Link}
-          to="/logos/search/"
-        >
-          Search specific logo
-        </Button>
-      </Stack>
+      </Typography>
+      <Paper
+        sx={{ position: "sticky", top: 0, zIndex: 1, paddingY: 2 }}
+        elevation={0}
+      >
+        <LogoForm
+          value={logoState.referenceLogo.annotation_value ?? ""}
+          type={logoState.referenceLogo.annotation_type ?? ""}
+          request={async (formData) => {
+            await request(selectedIds)(formData);
+            setLogoState((prevState) => ({
+              ...prevState,
+              logos: prevState.logos.map((logo) => {
+                return {
+                  ...logo,
+                  selected: logoSearchParams.logo_id === logo.id.toString(),
+                };
+              }),
+            }));
+          }}
+          isLoading={logoState.isLoading}
+        />
+        {/* Selection buttons */}
+        <Stack direction="row" spacing={1} sx={{ my: 1 }}>
+          <Button variant="outlined" size="small" onClick={selectAll}>
+            {t("logos.select_all")}
+          </Button>
+          <Button
+            variant="outlined"
+            size="small"
+            disabled={
+              selectedIds.length === 0 ||
+              (selectedIds.length === 1 &&
+                selectedIds[0].toString() === logoSearchParams.logo_id)
+            }
+            onClick={unselectAll}
+          >
+            {t("logos.unselect_all")}
+          </Button>
+          <LoadingButton
+            variant="outlined"
+            size="small"
+            onClick={refreshData}
+            loading={isRefreshing}
+          >
+            Refresh
+          </LoadingButton>
+          <div style={{ flexGrow: 1 }} />
+          <Button
+            size="small"
+            variant="contained"
+            color="secondary"
+            component={Link}
+            to="/logos/search/"
+          >
+            Search specific logo
+          </Button>
+        </Stack>
+      </Paper>
 
       {logoState.isLoading && (
         <Box sx={{ width: "100%", textAlign: "center", py: 10 }}>
@@ -410,6 +418,7 @@ export default function LogoAnnotation() {
           Load more
         </Button>
       </Box>
+      <BackToTop />
     </Box>
   );
 }
