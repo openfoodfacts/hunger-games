@@ -56,7 +56,7 @@ export default function TableRowComp({
           sx={{
             minWidth: "8rem",
           }}
-          label="Value"
+          label={t("nutrition.value")}
           variant="outlined"
           value={nutriment.value}
           onChange={onchangeHandler(nutriment.off_nutriment_id, "value")}
@@ -69,7 +69,7 @@ export default function TableRowComp({
             onChange={onchangeHandler(nutriment.off_nutriment_id, "unit")}
             value={nutriment.unit}
             sx={{ minWidth: 80 }}
-            label="Unit"
+            label={t("nutrition.unit")}
           >
             {unitOptions.map(({ label, value }) => (
               <MenuItem key={label} value={value}>

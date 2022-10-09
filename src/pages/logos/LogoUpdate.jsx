@@ -87,7 +87,7 @@ const UpdateLogoForm = ({
         <Typography>
           {t("logos.barcode")} {barcode}
         </Typography>
-        <img width="300px" src={cropURL} alt="crop of the logo" />
+        <img width="300px" src={cropURL} alt={t("logos.crop_image_title")} />
         <Stack direction="row">
           <Button
             sx={{
@@ -104,7 +104,7 @@ const UpdateLogoForm = ({
             {t("logos.full_image")}
           </Button>
           {isImageFlagged ? (
-            <Tooltip title="Unflag the image">
+            <Tooltip title={t("logos.unflag")}>
               <IconButton
                 onClick={() => {
                   externalApi.deleteImageFlag({ barcode, imgid: image_id });
@@ -115,7 +115,7 @@ const UpdateLogoForm = ({
               </IconButton>
             </Tooltip>
           ) : (
-            <Tooltip title="Something wrong? Report/flag the image!">
+            <Tooltip title={t("logos.flag")}>
               <IconButton
                 onClick={() => {
                   externalApi.addImageFlag({

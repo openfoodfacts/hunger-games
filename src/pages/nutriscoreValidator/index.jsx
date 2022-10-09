@@ -1,6 +1,5 @@
 import * as React from "react";
-
-import { useQuestionBuffer } from "../questions/useQuestionBuffer";
+import { useTranslation } from "react-i18next";
 
 import Divider from "@mui/material/Divider";
 import Stack from "@mui/material/Stack";
@@ -16,6 +15,7 @@ import Slider from "@mui/material/Slider";
 import Typography from "@mui/material/Typography";
 import FormControlLabel from "@mui/material/FormControlLabel";
 
+import { useQuestionBuffer } from "../questions/useQuestionBuffer";
 import robotoff from "../../robotoff";
 import off from "../../off";
 
@@ -23,6 +23,7 @@ const BUFFER_THRESHOLD = 10;
 const PAGE_SIZE = 50;
 
 const NutriscoreImage = ({ question, imageSize, zoomOnLogo }) => {
+  const { t } = useTranslation();
   const [croppedImageUrl, setCroppedImageUrl] = React.useState("");
 
   React.useEffect(() => {
@@ -52,7 +53,7 @@ const NutriscoreImage = ({ question, imageSize, zoomOnLogo }) => {
   return (
     <img
       src={croppedImageUrl}
-      alt=""
+      alt={t("nutriscore.image_alt")}
       loading="lazy"
       style={{ objectFit: "contain", width: "100%", height: "100%" }}
     />
@@ -60,6 +61,7 @@ const NutriscoreImage = ({ question, imageSize, zoomOnLogo }) => {
 };
 
 export default function NutriscoreValidator() {
+  const { t } = useTranslation();
   const [imageSize, setImageSize] = React.useState(300);
   const [zoomOnLogo, setZoomOnLogo] = React.useState(true);
 
@@ -171,11 +173,11 @@ export default function NutriscoreValidator() {
   return (
     <Box>
       <Box sx={{ padding: 2 }}>
-        <Typography>Annotate nutriscore logo detection by batch.</Typography>
+        <Typography>{t("nutriscore.label")}</Typography>
         <Typography>
-          To do so select all the images showing the correct/wrong nutriscore
-          value (nutriscore {nutriscoreGrade.toUpperCase()}), and click on the
-          bottom buttons to say if you selected a set correct or wrong ones.
+          {t("nutriscore.description", {
+            grade: nutriscoreGrade.toUpperCase(),
+          })}
         </Typography>
       </Box>
       <Stack
@@ -185,19 +187,29 @@ export default function NutriscoreValidator() {
         sx={{ pt: 5, px: 5, pb: 0, textAlign: "center" }}
       >
         <TextField value={nutriscoreGrade} onChange={updateSearchedGrad} select>
-          <MenuItem value="a">Nutriscore A</MenuItem>
-          <MenuItem value="b">Nutriscore B</MenuItem>
-          <MenuItem value="c">Nutriscore C</MenuItem>
-          <MenuItem value="d">Nutriscore D</MenuItem>
-          <MenuItem value="e">Nutriscore E</MenuItem>
+          <MenuItem value="a">
+            {t("nutriscore.nutriscore_value", { value: "A" })}
+          </MenuItem>
+          <MenuItem value="b">
+            {t("nutriscore.nutriscore_value", { value: "B" })}
+          </MenuItem>
+          <MenuItem value="c">
+            {t("nutriscore.nutriscore_value", { value: "C" })}
+          </MenuItem>
+          <MenuItem value="d">
+            {t("nutriscore.nutriscore_value", { value: "D" })}
+          </MenuItem>
+          <MenuItem value="e">
+            {t("nutriscore.nutriscore_value", { value: "E" })}
+          </MenuItem>
         </TextField>
         <Typography sx={{ mx: 3 }}>
-          Still {remainingQuestionNb} to annotate
+          {t("nutriscore.images_remaining", { remaining: remainingQuestionNb })}
         </Typography>
         <Box sx={{ mx: 2, width: 500, maxWidth: 500, textAlign: "left" }}>
-          <Typography gutterBottom>Image sizes</Typography>
+          <Typography gutterBottom>{t("nutriscore.image_sizes")}</Typography>
           <Slider
-            aria-label="Image size"
+            aria-label={t("nutriscore.image_sizes")}
             value={imageSize}
             onChangeCommitted={(event, newValue) => setImageSize(newValue)}
             valueLabelDisplay="auto"
@@ -212,7 +224,7 @@ export default function NutriscoreValidator() {
         <FormControlLabel
           onChange={(event) => setZoomOnLogo(event.target.checked)}
           control={<Checkbox checked={zoomOnLogo} />}
-          label="zoom on logo"
+          label={t("nutriscore.zoom_on_logo")}
           labelPlacement="end"
         />
       </Stack>
@@ -223,10 +235,10 @@ export default function NutriscoreValidator() {
         sx={{ px: 5, py: 1, textAlign: "left" }}
       >
         <Button onClick={selectAll} size="small" sx={{ mr: 2 }}>
-          Select all
+          {t("nutriscore.select_all")}
         </Button>
         <Button onClick={unselectAll} size="small">
-          Unselect all
+          {t("nutriscore.deselect_all")}
         </Button>
       </Stack>
 
@@ -299,7 +311,7 @@ export default function NutriscoreValidator() {
             }}
             fullWidth
           >
-            Wrong
+            {t("nutriscore.incorrect")}
           </Button>
           <Button
             sx={{ ml: 3 }}
@@ -318,7 +330,7 @@ export default function NutriscoreValidator() {
             }}
             fullWidth
           >
-            Correct (Nutriscore {nutriscoreGrade.toUpperCase()})
+            {t("nutriscore.correct", { score: nutriscoreGrade.toUpperCase() })}
           </Button>
         </Stack>
       </Paper>

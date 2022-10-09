@@ -1,8 +1,7 @@
 import * as React from "react";
+import { useTranslation } from "react-i18next";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
-
-import { useTranslation } from "react-i18next";
 
 export default function Insights() {
   const { t } = useTranslation();
@@ -15,7 +14,7 @@ export default function Insights() {
           width: { xs: "100%", sm: 600 },
           height: "auto",
         }}
-        alt="404 not found"
+        alt={t("notfound.image_alt")}
         src={require("../../assets/404.png")}
       />
       <Typography variant="h4">{t("notfound.nopage")}</Typography>

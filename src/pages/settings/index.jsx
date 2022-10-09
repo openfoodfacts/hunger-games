@@ -61,12 +61,12 @@ export default function Settings() {
       </TextField>
 
       <div>
-        <p>To explore the database content, activate the dev mode</p>
+        <p>{t("settings.dev_mode_title")}</p>
         <FormControlLabel
           checked={devMode}
           onChange={handleDevModeChange}
           control={<Switch />}
-          label="Dev Mode"
+          label={t("settings.dev_mode_label")}
           labelPlacement="end"
         />
       </div>
@@ -77,7 +77,7 @@ export default function Settings() {
             checked={visiblePages[pageUrl]}
             onChange={handleVisiblePagesChange(pageUrl)}
             control={<Switch />}
-            label={`Show ${pageUrl} page`}
+            label={t("settings.dev_page_toggle", { name: pageUrl })}
             labelPlacement="end"
           />
         ))}

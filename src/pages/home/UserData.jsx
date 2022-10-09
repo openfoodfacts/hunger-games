@@ -72,6 +72,7 @@ const CountCard = (props) => {
 };
 
 const UserData = ({ userName }) => {
+  const { t } = useTranslation();
   const [counts, setCounts] = React.useState({});
 
   React.useEffect(() => {
@@ -85,7 +86,7 @@ const UserData = ({ userName }) => {
   return (
     <Box sx={{ p: 2, mb: 10 }}>
       <Typography component="h3" variant="h5" sx={{ pb: 3 }}>
-        {userName} statistics:
+        {t("home.statistics.title", { userName })}
       </Typography>
       <Stack direction={{ xs: "column", sm: "row" }} spacing={2}>
         {Object.keys(counts).map((countType) => (

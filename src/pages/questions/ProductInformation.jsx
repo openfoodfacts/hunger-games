@@ -205,7 +205,9 @@ const ProductInformation = ({ question }) => {
         isDevMode && (
           <>
             <Divider sx={{ my: 1 }} />
-            <Typography variant="h5">Other questions</Typography>
+            <Typography variant="h5">
+              {t("questions.other_questions")}
+            </Typography>
 
             {otherQuestionsState.isLoading
               ? null
@@ -292,7 +294,7 @@ const ProductInformation = ({ question }) => {
                       size="small"
                       sx={{ ml: 1 }}
                     >
-                      send
+                      {t("questions.send")}
                     </Button>
                   </Stack>
                 ))}
@@ -325,7 +327,7 @@ const ProductInformation = ({ question }) => {
                 />
               </Zoom>
               {flagged.includes(getImageId(src)) ? (
-                <Tooltip title="Unflag the image">
+                <Tooltip title={t("questions.unflag")}>
                   <IconButton
                     onClick={() => deleteFlagImage(src, question.barcode)}
                   >
@@ -333,7 +335,7 @@ const ProductInformation = ({ question }) => {
                   </IconButton>
                 </Tooltip>
               ) : (
-                <Tooltip title="Something wrong? Report/flag the image!">
+                <Tooltip title={t("questions.flag")}>
                   <IconButton onClick={() => flagImage(src, question.barcode)}>
                     <OutlinedFlagIcon />
                   </IconButton>
