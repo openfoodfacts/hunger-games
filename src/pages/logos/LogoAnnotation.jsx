@@ -5,7 +5,6 @@ import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import CircularProgress from "@mui/material/CircularProgress";
 import Typography from "@mui/material/Typography";
-import Paper from "@mui/material/Paper";
 import LoadingButton from "@mui/lab/LoadingButton";
 
 import { useTranslation } from "react-i18next";
@@ -330,8 +329,16 @@ export default function LogoAnnotation() {
         Select all logos that are exactly the same, and give them a name like
         "en:EU Organic" and a type like "label".
       </Typography>
-      <Paper
-        sx={{ position: "sticky", top: 0, zIndex: 1, paddingY: 2 }}
+      <Box
+        sx={{
+          position: "sticky",
+          top: 0,
+          zIndex: 1,
+          paddingY: 2,
+          background:
+            "linear-gradient(0deg, rgba(2,0,36,0) 0%, rgba(255,255,255,1) 25px, rgba(255,255,255,1) 100%)",
+          backdropFilter: "blur(5px)",
+        }}
         elevation={0}
       >
         <LogoForm
@@ -387,7 +394,7 @@ export default function LogoAnnotation() {
             Search specific logo
           </Button>
         </Stack>
-      </Paper>
+      </Box>
 
       {logoState.isLoading && (
         <Box sx={{ width: "100%", textAlign: "center", py: 10 }}>
