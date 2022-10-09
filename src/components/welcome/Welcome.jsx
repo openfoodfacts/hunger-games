@@ -1,5 +1,5 @@
 import * as React from "react";
-import { useTranslation } from "react-i18next";
+import { Trans, useTranslation } from "react-i18next";
 import IconButton from "@mui/material/IconButton";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
@@ -87,33 +87,27 @@ const getSteps = ({ t, withSelector }) => [
             <Typography component="p" sx={{ mt: 2 }}>
               {t("helper.welcome.page2.text1")}
             </Typography>
-            <Typography
-              component="p"
-              sx={{ mt: 2 }}
-              dangerouslySetInnerHTML={{
-                // https://github.com/i18next/react-i18next/issues/189#issuecomment-235181562
-                __html: t("helper.welcome.page2.text2"),
-              }}
-            />
+            <Typography component="p" sx={{ mt: 2 }}>
+              <Trans
+                i18nKey="helper.welcome.page2.text2"
+                components={{ strong: <strong /> }}
+              />
+            </Typography>
             <Typography component="p">
               {t("helper.welcome.page2.text3")}
             </Typography>
-            <Typography
-              component="p"
-              sx={{ mt: 2 }}
-              dangerouslySetInnerHTML={{
-                // https://github.com/i18next/react-i18next/issues/189#issuecomment-235181562
-                __html: t("helper.welcome.page2.text4"),
-              }}
-            />
-            <Typography
-              component="p"
-              sx={{ mt: 2 }}
-              dangerouslySetInnerHTML={{
-                // https://github.com/i18next/react-i18next/issues/189#issuecomment-235181562
-                __html: t("helper.welcome.page2.text5"),
-              }}
-            />
+            <Typography component="p" sx={{ mt: 2 }}>
+              <Trans
+                i18nKey="helper.welcome.page2.text4"
+                components={{ strong: <strong /> }}
+              />
+            </Typography>
+            <Typography component="p" sx={{ mt: 2 }}>
+              <Trans
+                i18nKey="helper.welcome.page2.text5"
+                components={{ strong: <strong /> }}
+              />
+            </Typography>
           </Box>
           <img
             alt={t("helper.welcome.page2.title")}
@@ -155,14 +149,12 @@ const getSteps = ({ t, withSelector }) => [
           sx={{ display: "flex", flexDirection: { xs: "column", md: "row" } }}
         >
           <Box>
-            <Typography
-              component="p"
-              sx={{ mt: 2 }}
-              dangerouslySetInnerHTML={{
-                // https://github.com/i18next/react-i18next/issues/189#issuecomment-235181562
-                __html: t("helper.welcome.page3.text1"),
-              }}
-            />
+            <Typography component="p" sx={{ mt: 2 }}>
+              <Trans
+                i18nKey="helper.welcome.page3.text1"
+                components={{ strong: <strong /> }}
+              />
+            </Typography>
             <Typography component="p" sx={{ mt: 2 }}>
               {t("helper.welcome.page3.text2")}
             </Typography>
@@ -214,7 +206,10 @@ const getSteps = ({ t, withSelector }) => [
               {t("helper.welcome.page4.text2")}
             </Typography>
             <Typography component="p" sx={{ mt: 2 }}>
-              <strong>{t("helper.welcome.page4.text3")}</strong>
+              <Trans
+                i18nKey="helper.welcome.page4.text3"
+                components={{ strong: <strong /> }}
+              />
             </Typography>
             <Typography component="p">
               {t("helper.welcome.page4.text4")}
