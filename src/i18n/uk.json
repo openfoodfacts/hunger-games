@@ -1,6 +1,36 @@
 {
   "home": {
+    "game_selector": {
+      "title": "What game would you like to play?",
+      "cards": {
+        "questions": {
+          "title": "Запитання",
+          "description": "Tell us if the given image answers the questions"
+        },
+        "logos": {
+          "title": "Логотипи",
+          "description": "Find all the logos matching the given logo"
+        },
+        "eco_score": {
+          "title": "Показник впливу на довкілля",
+          "description": "Annotate the questions with the highest value"
+        }
+      }
+    },
+    "account_band": {
+      "title": "Want to make your contribution count? Create an account or sign in on Open Food Facts!",
+      "log_in": "Ім'я користувача",
+      "sign_up": "Зареєструватися",
+      "contribution_details": "Learn why your contribution matters"
+    },
+    "saved_filters": "Saved Filters",
+    "contribution_modal": {
+      "title": "Your contribution matters",
+      "information": "Hunger Games is an effort to leverage the results of our OCR. When you use Hunger Games by Open Food Facts, you improve our entire database which helps the community make better food choices. We gathers your annotations and use them to make Open Food Facts more accurate and effecient.",
+      "thank_you": "Thank you for helping us improve Open Food Facts so that more people can use it easily."
+    },
     "statistics": {
+      "title": "{{userName}} statistics:",
       "editorCount": {
         "title": "Редактор",
         "description": "Number of edition done"
@@ -14,6 +44,10 @@
         "description": "Taking photos for a product"
       }
     }
+  },
+  "flagged_images": {
+    "title": "Images flagged by users",
+    "loading": "Loading"
   },
   "questions": {
     "category": "категорія",
@@ -63,9 +97,19 @@
         "cancel": "Відмінити",
         "apply": "Застосувати"
       }
-    }
+    },
+    "other_questions": "Other questions",
+    "send": "Send",
+    "flag": "Something wrong? Report/flag the image!",
+    "unflag": "Unflag the image",
+    "reset_filters": "Reset filters",
+    "log_in": "Ім'я користувача",
+    "sign_up": "Зареєструватися",
+    "login_title": "Make your annotation count",
+    "login_description": "Currently you are not logged in Open Food Facts. To get your answers directly applied to products, and associated to your account, consider logging in to your Open Food Facts account, or creating one"
   },
   "menu": {
+    "title": "Hunger Games",
     "games": "Ігри",
     "questions": "Запитання",
     "logos": "Логотипи",
@@ -74,7 +118,9 @@
     "nutritions": "Харчова цінність",
     "settings": "Налаштування",
     "eco-score": "Показник впливу на довкілля",
-    "nutriscore": "Nutri-Score"
+    "nutriscore": "Nutri-Score",
+    "logged_in_user": "logged as {{userName}}",
+    "log_in": "click to login"
   },
   "insights": {
     "insights": "Статистика",
@@ -101,11 +147,15 @@
     "value": "Цінність",
     "created_at": "Створено",
     "completed_at": "Завершено",
-    "automatic": "Автоматичний"
+    "automatic": "Автоматичний",
+    "human_required": "Human required",
+    "edit_product": "Open product edit",
+    "view_product": "Open product page"
   },
   "logos": {
     "annotation": "Анотації:",
     "annotations": "Анотації логотипу",
+    "task_description": "Select all logos that are exactly the same, and give them a name like \"en:EU Organic\" and a type like \"label\".",
     "select_all": "Вибрати все",
     "unselect_all": "Очистити все",
     "distance": "Відстань:",
@@ -127,30 +177,63 @@
     "update": "Редагувати",
     "no_found": "Логотип не знайдено",
     "search": "Пошук",
-    "number_of_results": "Кількість результатів"
+    "number_of_results": "Кількість результатів",
+    "loading": "Loading...",
+    "refresh": "Оновлення",
+    "search_specific": "Search specific logo",
+    "load_more": "Load more",
+    "no_results": "Логотип не знайдено",
+    "result_count": "Shows {{showing}} on {{available}} available",
+    "flag": "Something wrong? Report/flag the image!",
+    "unflag": "Unflag the image",
+    "crop_image_title": "crop of the logo"
   },
   "settings": {
     "settings": "Налаштування",
     "language": "Мова",
     "save": "Зберегти",
-    "reportIssue": "Found a bug?, please let us know"
+    "reportIssue": "Found a bug?, please let us know",
+    "dev_mode_title": "To explore the database content, activate the dev mode",
+    "dev_mode_label": "Dev Mode",
+    "dev_page_toggle": "Show {{name}} page"
   },
   "helper": {
     "welcome": {
       "page1": {
-        "title": "Ласкаво просимо",
-        "text1": "Голодні ігри - це колекція міні-ігор, які допомагають зробити внесок у Open Food Facts різними способами. Призначте товар, щоб отримати Nutri-Score та Eco-Score, допоможіть перевірити позначки на Eco-Score, додати бренди та вагу, допоможіть нашій системі розпізнавання логотипів дізнатися про знайдені логотипи.",
-        "text2": "Це деякі захопливі речі, які ви зможете зробити. Переконайтеся, що ви підключені до сайту Open Food Facts, щоб отримати кредит для ваших внесків. Якщо ви помилилися, будь ласка, знайдіть час, щоб виправити помилку, перейшовши на веб-сайті.",
-        "text3": "У випадку сумнівів у грі, ви маєте помічника у верхній правому куті сторінки, і ви можете зв'язатися з нами на каналі #голодні-ігри"
+        "title": "Welcome to Hunger Games",
+        "text1": "Hunger Games is a collection of mini-games that help contribute to Open Food Facts in many ways. You can play are really exciting games from anywhere. Here is a guided tour of the entire website which will get you started.",
+        "text2": "Make sure to login to the Open Food Facts website to get credit for your contributions. If you make a mistake, please take the time to correct it by heading to the website.",
+        "text3": "In case of any doubt about the games, click on the question mark icon at the top right of the page, and you can reach us on slack at the #hunger-games channel"
       },
       "page2": {
-        "title": "Запитання",
-        "text1": "Наш ШІ має до вас багато запитань. Тут вам потрібно буде підтвердити або відхилити інформацію, яку він виявив на зображеннях.",
-        "text2": "Не думайте довго над тим, щоб пропустити запитання, якщо ви не впевнені, є багато інших"
+        "title": "Questions Game",
+        "text1": "Does the food product belong to this brand?",
+        "text2": "Answer simply with a <strong>yes/no</strong>! Don't know the answer? That's alright, just skip it.",
+        "text3": "You can also use your keyboard keys o,n and k.",
+        "text4": "You can <strong>filter</strong> the products based on country, brands, popularity and much more!",
+        "text5": "If you don't want to do this every single time, you can also <strong>save the filters</strong> by clicking on the star. Next time you come back, find the saved filters on the home page itself"
       },
       "page3": {
-        "title": "Логотипи",
-        "text1": "Світ продуктів повний логотипів. Поясни нашому ШІ які з них однакові."
+        "title": "Logos Game",
+        "text1": "Our another really loved game is the logos game where you have to <strong> select all the logos</strong> you feel are the same.",
+        "text2": "As shown in the example, once you select all the similar logos, just type their value and select where it is a brand, a label or something else. It's that simple!"
+      },
+      "page4": {
+        "title": "Eco-Score Questions Game",
+        "text1": "Help us finish the remaining questions in the most high priority labels!",
+        "text2": "These cards are linked to labels used in the computation of the eco-score.",
+        "text3": "<strong>What is Eco-Score?</strong>",
+        "text4": "Eco-Score captures the total environmental footprint, making it easier for consumers to compare products and decide which is better for the environment."
+      },
+      "page5": {
+        "title": "Налаштування",
+        "text1": "Set your preferred language, and report issues from our settings page.",
+        "text2": "If you're a developer, you can also explore our database content using our dev mode."
+      },
+      "page6": {
+        "title": "Tour",
+        "text1": "Got stuck somewhere? Want to take the tour again?",
+        "text2": "Just click on the question mark and start the journey again!"
       }
     },
     "logos": {
@@ -189,6 +272,9 @@
       "3": "Вибір поживних речовин",
       "4": "Вибір значень"
     },
+    "loading": "Loading...",
+    "unknown_brand": "Brand Unknown",
+    "value_missing": "You forgot to input value duuuuuuuuuuuuuuuuude",
     "next": "Наступний крок",
     "prev": "Попередній крок",
     "skip": "Пропустіть цей продукт",
@@ -196,7 +282,8 @@
     "unselect_picture": "Інформація про харчування відсутня",
     "basis": "дані для: ",
     "servingSize": "розмір порції",
-    "value": "вартість",
+    "value": "Цінність",
+    "unit": "Одиниця вимірювання",
     "nutriments": {
       "nutriment_energy-kj": "Енергетична цінність (kJ)",
       "nutriment_energy-kcal": "Енергетична цінність (kcal)",
@@ -223,8 +310,21 @@
     }
   },
   "notfound": {
+    "image_alt": "404 not found",
     "nopage": "Whoops! The page you're looking for can't be found.",
     "redirect1": "Want to play some games?",
     "redirect2": "Click here"
+  },
+  "nutriscore": {
+    "image_alt": "cropped image",
+    "label": "Annotate nutriscore logo detection by batch.",
+    "description": "To do so select all the images showing the correct/wrong nutriscore value ({{label}}), and click on the bottom buttons to say if you selected a set correct or wrong ones.",
+    "images_remaining": "Still {{remaining}} to annotate",
+    "image_sizes": "Image sizes",
+    "zoom_on_logo": "zoom on logo",
+    "select_all": "Вибрати все",
+    "deselect_all": "Очистити все",
+    "incorrect": "Wrong",
+    "correct": "Correct ({{label}})"
   }
 }

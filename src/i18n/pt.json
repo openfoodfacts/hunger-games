@@ -1,6 +1,36 @@
 {
   "home": {
+    "game_selector": {
+      "title": "What game would you like to play?",
+      "cards": {
+        "questions": {
+          "title": "Perguntas",
+          "description": "Tell us if the given image answers the questions"
+        },
+        "logos": {
+          "title": "Logótipos",
+          "description": "Find all the logos matching the given logo"
+        },
+        "eco_score": {
+          "title": "Eco-score",
+          "description": "Annotate the questions with the highest value"
+        }
+      }
+    },
+    "account_band": {
+      "title": "Want to make your contribution count? Create an account or sign in on Open Food Facts!",
+      "log_in": "Nome de Utilizador",
+      "sign_up": "Inscrever",
+      "contribution_details": "Learn why your contribution matters"
+    },
+    "saved_filters": "Saved Filters",
+    "contribution_modal": {
+      "title": "Your contribution matters",
+      "information": "Hunger Games is an effort to leverage the results of our OCR. When you use Hunger Games by Open Food Facts, you improve our entire database which helps the community make better food choices. We gathers your annotations and use them to make Open Food Facts more accurate and effecient.",
+      "thank_you": "Thank you for helping us improve Open Food Facts so that more people can use it easily."
+    },
     "statistics": {
+      "title": "{{userName}} statistics:",
       "editorCount": {
         "title": "Editor",
         "description": "Número de edições feitas"
@@ -14,6 +44,10 @@
         "description": "Fotografando um produto"
       }
     }
+  },
+  "flagged_images": {
+    "title": "Images flagged by users",
+    "loading": "Loading"
   },
   "questions": {
     "category": "categoria",
@@ -63,9 +97,19 @@
         "cancel": "Cancelar",
         "apply": "Candidatar"
       }
-    }
+    },
+    "other_questions": "Other questions",
+    "send": "Send",
+    "flag": "Something wrong? Report/flag the image!",
+    "unflag": "Unflag the image",
+    "reset_filters": "Reset filters",
+    "log_in": "Nome de Utilizador",
+    "sign_up": "Inscrever",
+    "login_title": "Make your annotation count",
+    "login_description": "Currently you are not logged in Open Food Facts. To get your answers directly applied to products, and associated to your account, consider logging in to your Open Food Facts account, or creating one"
   },
   "menu": {
+    "title": "Hunger Games",
     "games": "Jogos",
     "questions": "Perguntas",
     "logos": "Logótipos",
@@ -74,7 +118,9 @@
     "nutritions": "Informação nutricional",
     "settings": "Definições",
     "eco-score": "Eco-score",
-    "nutriscore": "Nutri-Score"
+    "nutriscore": "Nutri-Score",
+    "logged_in_user": "logged as {{userName}}",
+    "log_in": "click to login"
   },
   "insights": {
     "insights": "Percepções",
@@ -101,11 +147,15 @@
     "value": "Valor",
     "created_at": "Criado em",
     "completed_at": "Completado em",
-    "automatic": "Automático"
+    "automatic": "Automático",
+    "human_required": "Human required",
+    "edit_product": "Open product edit",
+    "view_product": "Open product page"
   },
   "logos": {
     "annotation": "Anotação: ",
     "annotations": "Anotações de logotipo",
+    "task_description": "Select all logos that are exactly the same, and give them a name like \"en:EU Organic\" and a type like \"label\".",
     "select_all": "Selecione tudo",
     "unselect_all": "Desmarque todos",
     "distance": "Distância:",
@@ -127,30 +177,63 @@
     "update": "Atualização",
     "no_found": "Nenhuma logo encontrada",
     "search": "Procurar",
-    "number_of_results": "Número de resultados:"
+    "number_of_results": "Número de resultados:",
+    "loading": "Loading...",
+    "refresh": "Atualizar",
+    "search_specific": "Search specific logo",
+    "load_more": "Load more",
+    "no_results": "Nenhuma logo encontrada",
+    "result_count": "Shows {{showing}} on {{available}} available",
+    "flag": "Something wrong? Report/flag the image!",
+    "unflag": "Unflag the image",
+    "crop_image_title": "crop of the logo"
   },
   "settings": {
     "settings": "Definições",
     "language": "Idioma",
     "save": "Guardar",
-    "reportIssue": "Encontrou um bug? por favor nos avise"
+    "reportIssue": "Encontrou um bug? por favor nos avise",
+    "dev_mode_title": "To explore the database content, activate the dev mode",
+    "dev_mode_label": "Dev Mode",
+    "dev_page_toggle": "Show {{name}} page"
   },
   "helper": {
     "welcome": {
       "page1": {
-        "title": "Boas vindas",
-        "text1": "Hunger Games é uma coleção de minijogos que ajudam a contribuir ao Open Food Facts de várias maneiras. Categorize um produto para obter o Nutri-Socre e o Eco-Score, ajude a validar rótulos para o Eco-Score, adicione marcas e pesos, ajude nosso sistema de reconhecimento de logotipos a aprender sobre os logotipos detectados.",
-        "text2": "Estas são algumas das coisas emocionantes que você poderá fazer. Certifique-se de estar conectado ao site da Open Food Facts para ganhar crédito pelas suas contribuições. Se você cometer um erro, por favor reserve um tempo para corrigi-lo acessando o site.",
-        "text3": "Em caso de dúvidas sobre o jogo, você tem um auxiliar no canto superior direito da página, e você pode encontrar-nos no canal #hunger-games"
+        "title": "Welcome to Hunger Games",
+        "text1": "Hunger Games is a collection of mini-games that help contribute to Open Food Facts in many ways. You can play are really exciting games from anywhere. Here is a guided tour of the entire website which will get you started.",
+        "text2": "Make sure to login to the Open Food Facts website to get credit for your contributions. If you make a mistake, please take the time to correct it by heading to the website.",
+        "text3": "In case of any doubt about the games, click on the question mark icon at the top right of the page, and you can reach us on slack at the #hunger-games channel"
       },
       "page2": {
-        "title": "Perguntas",
-        "text1": "Nossa IA tem muitas questões para você. Aqui você terá de confirmar ou negar a informação que ela detectou em imagens.",
-        "text2": "Não hesite em pular de questão se você não tiver certeza, ainda há muitas outras"
+        "title": "Questions Game",
+        "text1": "Does the food product belong to this brand?",
+        "text2": "Answer simply with a <strong>yes/no</strong>! Don't know the answer? That's alright, just skip it.",
+        "text3": "You can also use your keyboard keys o,n and k.",
+        "text4": "You can <strong>filter</strong> the products based on country, brands, popularity and much more!",
+        "text5": "If you don't want to do this every single time, you can also <strong>save the filters</strong> by clicking on the star. Next time you come back, find the saved filters on the home page itself"
       },
       "page3": {
-        "title": "Logótipos",
-        "text1": "O mundo de produtos é cheio de logotipos. Explique à nossa IA quais são os mesmos."
+        "title": "Logos Game",
+        "text1": "Our another really loved game is the logos game where you have to <strong> select all the logos</strong> you feel are the same.",
+        "text2": "As shown in the example, once you select all the similar logos, just type their value and select where it is a brand, a label or something else. It's that simple!"
+      },
+      "page4": {
+        "title": "Eco-Score Questions Game",
+        "text1": "Help us finish the remaining questions in the most high priority labels!",
+        "text2": "These cards are linked to labels used in the computation of the eco-score.",
+        "text3": "<strong>What is Eco-Score?</strong>",
+        "text4": "Eco-Score captures the total environmental footprint, making it easier for consumers to compare products and decide which is better for the environment."
+      },
+      "page5": {
+        "title": "Definições",
+        "text1": "Set your preferred language, and report issues from our settings page.",
+        "text2": "If you're a developer, you can also explore our database content using our dev mode."
+      },
+      "page6": {
+        "title": "Tour",
+        "text1": "Got stuck somewhere? Want to take the tour again?",
+        "text2": "Just click on the question mark and start the journey again!"
       }
     },
     "logos": {
@@ -189,6 +272,9 @@
       "3": "Seleção de Nutrientes",
       "4": "Seleção de Valores"
     },
+    "loading": "Loading...",
+    "unknown_brand": "Brand Unknown",
+    "value_missing": "You forgot to input value duuuuuuuuuuuuuuuuude",
     "next": "Próximo Passo",
     "prev": "Passo Anterior",
     "skip": "Pular este produto",
@@ -196,7 +282,8 @@
     "unselect_picture": "Sem informações nutricionais",
     "basis": "dados para: ",
     "servingSize": "tamanho da porção",
-    "value": "valor",
+    "value": "Valor",
+    "unit": "Unidade",
     "nutriments": {
       "nutriment_energy-kj": "Energia (kJ)",
       "nutriment_energy-kcal": "Energia (kCal)",
@@ -223,8 +310,21 @@
     }
   },
   "notfound": {
+    "image_alt": "404 not found",
     "nopage": "Opa! A página que você está procurando não foi encontrada.",
     "redirect1": "Quer jogar alguns jogos?",
     "redirect2": "Clique aqui"
+  },
+  "nutriscore": {
+    "image_alt": "cropped image",
+    "label": "Annotate nutriscore logo detection by batch.",
+    "description": "To do so select all the images showing the correct/wrong nutriscore value ({{label}}), and click on the bottom buttons to say if you selected a set correct or wrong ones.",
+    "images_remaining": "Still {{remaining}} to annotate",
+    "image_sizes": "Image sizes",
+    "zoom_on_logo": "zoom on logo",
+    "select_all": "Selecione tudo",
+    "deselect_all": "Desmarque todos",
+    "incorrect": "Wrong",
+    "correct": "Correct ({{label}})"
   }
 }
