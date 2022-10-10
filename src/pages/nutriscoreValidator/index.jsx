@@ -22,6 +22,35 @@ import off from "../../off";
 const BUFFER_THRESHOLD = 10;
 const PAGE_SIZE = 50;
 
+const OPTIONS = [
+  { tag: "en:nutriscore-grade-a", label: "Nutriscore A" },
+  { tag: "en:nutriscore-grade-b", label: "Nutriscore B" },
+  { tag: "en:nutriscore-grade-c", label: "Nutriscore C" },
+  { tag: "en:nutriscore-grade-d", label: "Nutriscore D" },
+  { tag: "en:nutriscore-grade-e", label: "Nutriscore E" },
+  { tag: "fr:ab-agriculture-biologique", label: "AB (Agriculture Bio)" },
+  { tag: "en:eu-organic", label: "Bio Européen" },
+];
+
+const fetchData = async (insightId) => {
+  const response = await robotoff.insightDetail(insightId);
+
+  if (
+    response?.data?.source_image &&
+    response?.data?.data?.logo_id &&
+    !response?.data?.data?.bounding_box
+  ) {
+    const logoData = await robotoff.getLogosImages([
+      response?.data?.data?.logo_id,
+    ]);
+    const bounding_box = logoData?.data?.logos?.[0]?.bounding_box;
+
+    return { ...response, bounding_box };
+  }
+
+  return response;
+};
+
 const NutriscoreImage = ({ question, imageSize, zoomOnLogo }) => {
   const { t } = useTranslation();
   const [croppedImageUrl, setCroppedImageUrl] = React.useState("");
@@ -31,14 +60,20 @@ const NutriscoreImage = ({ question, imageSize, zoomOnLogo }) => {
       setCroppedImageUrl(question.source_image_url);
       return;
     }
-    robotoff
-      .insightDetail(question.insight_id)
-      .then(({ data }) => {
+    fetchData(question.insight_id)
+      .then(({ data, bounding_box }) => {
         if (data?.data?.bounding_box && data?.source_image) {
           setCroppedImageUrl(
             robotoff.getCroppedImageUrl(
               off.getImageUrl(data?.source_image),
               data.data.bounding_box
+            )
+          );
+        } else if (bounding_box && data?.source_image) {
+          setCroppedImageUrl(
+            robotoff.getCroppedImageUrl(
+              off.getImageUrl(data?.source_image),
+              bounding_box
             )
           );
         }
@@ -65,7 +100,7 @@ export default function NutriscoreValidator() {
   const [imageSize, setImageSize] = React.useState(300);
   const [zoomOnLogo, setZoomOnLogo] = React.useState(true);
 
-  const [nutriscoreGrade, setNutriscoreGrade] = React.useState("a");
+  const [selectedOption, setSelectedOption] = React.useState(OPTIONS[0]);
   const [filterState, setFilterState] = React.useState({
     insightType: "label",
     brandFilter: "",
@@ -77,15 +112,18 @@ export default function NutriscoreValidator() {
   const [lastClickedId, setLastClickedId] = React.useState(null);
 
   const updateSearchedGrad = (event) => {
-    const newGrade = event.target.value;
-    if (nutriscoreGrade === newGrade) {
+    const newSelectedTag = event.target.value;
+    if (selectedOption.tag === newSelectedTag) {
       return;
     }
+    const newSelectedOption = OPTIONS.find(
+      (option) => option.tag === newSelectedTag
+    );
     setSelectedIds([]);
-    setNutriscoreGrade(newGrade);
+    setSelectedOption(newSelectedOption);
     setFilterState((prevState) => ({
       ...prevState,
-      valueTag: `en:nutriscore-grade-${newGrade}`,
+      valueTag: newSelectedOption.tag,
     }));
   };
 
@@ -176,7 +214,7 @@ export default function NutriscoreValidator() {
         <Typography>{t("nutriscore.label")}</Typography>
         <Typography>
           {t("nutriscore.description", {
-            grade: nutriscoreGrade.toUpperCase(),
+            grade: selectedOption.label,
           })}
         </Typography>
       </Box>
@@ -186,22 +224,16 @@ export default function NutriscoreValidator() {
         alignItems="center"
         sx={{ pt: 5, px: 5, pb: 0, textAlign: "center" }}
       >
-        <TextField value={nutriscoreGrade} onChange={updateSearchedGrad} select>
-          <MenuItem value="a">
-            {t("nutriscore.nutriscore_value", { value: "A" })}
-          </MenuItem>
-          <MenuItem value="b">
-            {t("nutriscore.nutriscore_value", { value: "B" })}
-          </MenuItem>
-          <MenuItem value="c">
-            {t("nutriscore.nutriscore_value", { value: "C" })}
-          </MenuItem>
-          <MenuItem value="d">
-            {t("nutriscore.nutriscore_value", { value: "D" })}
-          </MenuItem>
-          <MenuItem value="e">
-            {t("nutriscore.nutriscore_value", { value: "E" })}
-          </MenuItem>
+        <TextField
+          value={selectedOption.tag}
+          onChange={updateSearchedGrad}
+          select
+        >
+          {OPTIONS.map(({ tag, label }) => (
+            <MenuItem value={tag} key={tag}>
+              {label}
+            </MenuItem>
+          ))}
         </TextField>
         <Typography sx={{ mx: 3 }}>
           {t("nutriscore.images_remaining", { remaining: remainingQuestionNb })}
@@ -330,7 +362,7 @@ export default function NutriscoreValidator() {
             }}
             fullWidth
           >
-            {t("nutriscore.correct", { score: nutriscoreGrade.toUpperCase() })}
+            Correct ({selectedOption.label})
           </Button>
         </Stack>
       </Paper>
