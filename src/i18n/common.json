@@ -318,14 +318,13 @@
   "nutriscore": {
     "image_alt": "cropped image",
     "label": "Annotate nutriscore logo detection by batch.",
-    "description": "To do so select all the images showing the correct/wrong nutriscore value (nutriscore {{grade}}), and click on the bottom buttons to say if you selected a set correct or wrong ones.",
-    "nutriscore_value": "Nutriscore {{value}}",
+    "description": "To do so select all the images showing the correct/wrong nutriscore value ({{label}}), and click on the bottom buttons to say if you selected a set correct or wrong ones.",
     "images_remaining": "Still {{remaining}} to annotate",
     "image_sizes": "Image sizes",
     "zoom_on_logo": "zoom on logo",
     "select_all": "Select all",
     "deselect_all": "Unselect all",
     "incorrect": "Wrong",
-    "correct": "Correct (Nutriscore {{score}})"
+    "correct": "Correct ({{label}})"
   }
 }

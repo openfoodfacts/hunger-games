@@ -214,7 +214,7 @@ export default function NutriscoreValidator() {
         <Typography>{t("nutriscore.label")}</Typography>
         <Typography>
           {t("nutriscore.description", {
-            grade: selectedOption.label,
+            label: selectedOption.label,
           })}
         </Typography>
       </Box>
@@ -362,7 +362,9 @@ export default function NutriscoreValidator() {
             }}
             fullWidth
           >
-            Correct ({selectedOption.label})
+            {t("nutriscore.correct", {
+              label: selectedOption.label,
+            })}
           </Button>
         </Stack>
       </Paper>
