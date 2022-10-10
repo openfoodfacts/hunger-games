@@ -1,6 +1,36 @@
 {
   "home": {
+    "game_selector": {
+      "title": "crwdns204702:0crwdne204702:0",
+      "cards": {
+        "questions": {
+          "title": "crwdns204704:0crwdne204704:0",
+          "description": "crwdns204706:0crwdne204706:0"
+        },
+        "logos": {
+          "title": "crwdns204708:0crwdne204708:0",
+          "description": "crwdns204710:0crwdne204710:0"
+        },
+        "eco_score": {
+          "title": "crwdns204712:0crwdne204712:0",
+          "description": "crwdns204714:0crwdne204714:0"
+        }
+      }
+    },
+    "account_band": {
+      "title": "crwdns204716:0crwdne204716:0",
+      "log_in": "crwdns204718:0crwdne204718:0",
+      "sign_up": "crwdns204720:0crwdne204720:0",
+      "contribution_details": "crwdns204722:0crwdne204722:0"
+    },
+    "saved_filters": "crwdns204724:0crwdne204724:0",
+    "contribution_modal": {
+      "title": "crwdns204726:0crwdne204726:0",
+      "information": "crwdns204728:0crwdne204728:0",
+      "thank_you": "crwdns204730:0crwdne204730:0"
+    },
     "statistics": {
+      "title": "crwdns204732:0{{userName}}crwdne204732:0",
       "editorCount": {
         "title": "crwdns204572:0crwdne204572:0",
         "description": "crwdns204574:0crwdne204574:0"
@@ -14,6 +44,10 @@
         "description": "crwdns204582:0crwdne204582:0"
       }
     }
+  },
+  "flagged_images": {
+    "title": "crwdns204734:0crwdne204734:0",
+    "loading": "crwdns204736:0crwdne204736:0"
   },
   "questions": {
     "category": "crwdns173370:0crwdne173370:0",
@@ -63,9 +97,19 @@
         "cancel": "crwdns190983:0crwdne190983:0",
         "apply": "crwdns190985:0crwdne190985:0"
       }
-    }
+    },
+    "other_questions": "crwdns204738:0crwdne204738:0",
+    "send": "crwdns204740:0crwdne204740:0",
+    "flag": "crwdns204742:0crwdne204742:0",
+    "unflag": "crwdns204744:0crwdne204744:0",
+    "reset_filters": "crwdns204746:0crwdne204746:0",
+    "log_in": "crwdns204748:0crwdne204748:0",
+    "sign_up": "crwdns204750:0crwdne204750:0",
+    "login_title": "crwdns204752:0crwdne204752:0",
+    "login_description": "crwdns204754:0crwdne204754:0"
   },
   "menu": {
+    "title": "crwdns204756:0crwdne204756:0",
     "games": "crwdns173412:0crwdne173412:0",
     "questions": "crwdns173414:0crwdne173414:0",
     "logos": "crwdns173416:0crwdne173416:0",
@@ -74,7 +118,9 @@
     "nutritions": "crwdns173422:0crwdne173422:0",
     "settings": "crwdns187559:0crwdne187559:0",
     "eco-score": "crwdns190665:0crwdne190665:0",
-    "nutriscore": "crwdns200232:0crwdne200232:0"
+    "nutriscore": "crwdns200232:0crwdne200232:0",
+    "logged_in_user": "crwdns204758:0{{userName}}crwdne204758:0",
+    "log_in": "crwdns204760:0crwdne204760:0"
   },
   "insights": {
     "insights": "crwdns173426:0crwdne173426:0",
@@ -101,11 +147,15 @@
     "value": "crwdns173468:0crwdne173468:0",
     "created_at": "crwdns173470:0crwdne173470:0",
     "completed_at": "crwdns173472:0crwdne173472:0",
-    "automatic": "crwdns173474:0crwdne173474:0"
+    "automatic": "crwdns173474:0crwdne173474:0",
+    "human_required": "crwdns204762:0crwdne204762:0",
+    "edit_product": "crwdns204764:0crwdne204764:0",
+    "view_product": "crwdns204766:0crwdne204766:0"
   },
   "logos": {
     "annotation": "crwdns173476:0crwdne173476:0",
     "annotations": "crwdns173478:0crwdne173478:0",
+    "task_description": "crwdns204768:0crwdne204768:0",
     "select_all": "crwdns173480:0crwdne173480:0",
     "unselect_all": "crwdns173482:0crwdne173482:0",
     "distance": "crwdns173484:0crwdne173484:0",
@@ -127,30 +177,63 @@
     "update": "crwdns173516:0crwdne173516:0",
     "no_found": "crwdns173518:0crwdne173518:0",
     "search": "crwdns173520:0crwdne173520:0",
-    "number_of_results": "crwdns173522:0crwdne173522:0"
+    "number_of_results": "crwdns173522:0crwdne173522:0",
+    "loading": "crwdns204770:0crwdne204770:0",
+    "refresh": "crwdns204772:0crwdne204772:0",
+    "search_specific": "crwdns204774:0crwdne204774:0",
+    "load_more": "crwdns204776:0crwdne204776:0",
+    "no_results": "crwdns204778:0crwdne204778:0",
+    "result_count": "crwdns204780:0{{showing}}crwdnd204780:0{{available}}crwdne204780:0",
+    "flag": "crwdns204782:0crwdne204782:0",
+    "unflag": "crwdns204784:0crwdne204784:0",
+    "crop_image_title": "crwdns204786:0crwdne204786:0"
   },
   "settings": {
     "settings": "crwdns173524:0crwdne173524:0",
     "language": "crwdns173526:0crwdne173526:0",
     "save": "crwdns173528:0crwdne173528:0",
-    "reportIssue": "crwdns200024:0crwdne200024:0"
+    "reportIssue": "crwdns200024:0crwdne200024:0",
+    "dev_mode_title": "crwdns204788:0crwdne204788:0",
+    "dev_mode_label": "crwdns204790:0crwdne204790:0",
+    "dev_page_toggle": "crwdns204792:0{{name}}crwdne204792:0"
   },
   "helper": {
     "welcome": {
       "page1": {
-        "title": "crwdns187561:0crwdne187561:0",
-        "text1": "crwdns187563:0crwdne187563:0",
-        "text2": "crwdns187565:0crwdne187565:0",
-        "text3": "crwdns187567:0crwdne187567:0"
+        "title": "crwdns204794:0crwdne204794:0",
+        "text1": "crwdns204796:0crwdne204796:0",
+        "text2": "crwdns204798:0crwdne204798:0",
+        "text3": "crwdns204800:0crwdne204800:0"
       },
       "page2": {
-        "title": "crwdns187569:0crwdne187569:0",
-        "text1": "crwdns187571:0crwdne187571:0",
-        "text2": "crwdns187681:0crwdne187681:0"
+        "title": "crwdns204802:0crwdne204802:0",
+        "text1": "crwdns204804:0crwdne204804:0",
+        "text2": "crwdns204806:0crwdne204806:0",
+        "text3": "crwdns204808:0crwdne204808:0",
+        "text4": "crwdns204810:0crwdne204810:0",
+        "text5": "crwdns204812:0crwdne204812:0"
       },
       "page3": {
-        "title": "crwdns187575:0crwdne187575:0",
-        "text1": "crwdns190667:0crwdne190667:0"
+        "title": "crwdns204814:0crwdne204814:0",
+        "text1": "crwdns204816:0crwdne204816:0",
+        "text2": "crwdns204818:0crwdne204818:0"
+      },
+      "page4": {
+        "title": "crwdns204820:0crwdne204820:0",
+        "text1": "crwdns204822:0crwdne204822:0",
+        "text2": "crwdns204824:0crwdne204824:0",
+        "text3": "crwdns204826:0crwdne204826:0",
+        "text4": "crwdns204828:0crwdne204828:0"
+      },
+      "page5": {
+        "title": "crwdns204830:0crwdne204830:0",
+        "text1": "crwdns204832:0crwdne204832:0",
+        "text2": "crwdns204834:0crwdne204834:0"
+      },
+      "page6": {
+        "title": "crwdns204836:0crwdne204836:0",
+        "text1": "crwdns204838:0crwdne204838:0",
+        "text2": "crwdns204840:0crwdne204840:0"
       }
     },
     "logos": {
@@ -189,6 +272,9 @@
       "3": "crwdns187613:0crwdne187613:0",
       "4": "crwdns187615:0crwdne187615:0"
     },
+    "loading": "crwdns204842:0crwdne204842:0",
+    "unknown_brand": "crwdns204844:0crwdne204844:0",
+    "value_missing": "crwdns204846:0crwdne204846:0",
     "next": "crwdns187617:0crwdne187617:0",
     "prev": "crwdns187619:0crwdne187619:0",
     "skip": "crwdns187621:0crwdne187621:0",
@@ -196,7 +282,8 @@
     "unselect_picture": "crwdns187625:0crwdne187625:0",
     "basis": "crwdns187687:0crwdne187687:0",
     "servingSize": "crwdns187629:0crwdne187629:0",
-    "value": "crwdns187631:0crwdne187631:0",
+    "value": "crwdns204848:0crwdne204848:0",
+    "unit": "crwdns204850:0crwdne204850:0",
     "nutriments": {
       "nutriment_energy-kj": "crwdns187689:0crwdne187689:0",
       "nutriment_energy-kcal": "crwdns187691:0crwdne187691:0",
@@ -223,8 +310,21 @@
     }
   },
   "notfound": {
+    "image_alt": "crwdns204852:0crwdne204852:0",
     "nopage": "crwdns194630:0crwdne194630:0",
     "redirect1": "crwdns194632:0crwdne194632:0",
     "redirect2": "crwdns194634:0crwdne194634:0"
+  },
+  "nutriscore": {
+    "image_alt": "crwdns204854:0crwdne204854:0",
+    "label": "crwdns204856:0crwdne204856:0",
+    "description": "crwdns204858:0{{label}}crwdne204858:0",
+    "images_remaining": "crwdns204860:0{{remaining}}crwdne204860:0",
+    "image_sizes": "crwdns204862:0crwdne204862:0",
+    "zoom_on_logo": "crwdns204864:0crwdne204864:0",
+    "select_all": "crwdns204866:0crwdne204866:0",
+    "deselect_all": "crwdns204868:0crwdne204868:0",
+    "incorrect": "crwdns204870:0crwdne204870:0",
+    "correct": "crwdns204872:0{{label}}crwdne204872:0"
   }
 }
