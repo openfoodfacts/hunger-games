@@ -1,5 +1,5 @@
 import * as React from "react";
-
+import { Trans, useTranslation } from "react-i18next";
 import IconButton from "@mui/material/IconButton";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
@@ -22,7 +22,7 @@ const styles = {
   transform: "translate(-50%, -50%)",
 };
 
-const getSteps = (withSelector) => [
+const getSteps = ({ t, withSelector }) => [
   {
     style: styles,
     content: () => (
@@ -42,24 +42,17 @@ const getSteps = (withSelector) => [
             component="h2"
             sx={{ flex: "80%", marginTop: "8px" }}
           >
-            Welcome to Hunger Games
+            {t("helper.welcome.page1.title")}
           </Typography>
         </Box>
         <Typography sx={{ mt: 2 }} component="p">
-          Hunger Games is a collection of mini-games that help contribute to
-          Open Food Facts in many ways. You can play are really exciting games
-          from anywhere. Here is a guided tour of the entire website which will
-          get you started.
+          {t("helper.welcome.page1.text1")}
         </Typography>
         <Typography sx={{ mt: 2 }} component="p">
-          Make sure to login to the Open Food Facts website to get credit for
-          your contributions. If you make a mistake, please take the time to
-          correct it by heading to the website.
+          {t("helper.welcome.page1.text2")}
         </Typography>
         <Typography sx={{ mt: 2 }} component="p">
-          In case of any doubt about the games, click on the question mark icon
-          at the top right of the page, and you can reach us on slack at the
-          #hunger-games channel
+          {t("helper.welcome.page1.text3")}
         </Typography>
       </Box>
     ),
@@ -84,7 +77,7 @@ const getSteps = (withSelector) => [
             component="h2"
             sx={{ flex: "80%", marginTop: "8px" }}
           >
-            Questions Game
+            {t("helper.welcome.page2.title")}
           </Typography>
         </Box>
         <Box
@@ -92,27 +85,32 @@ const getSteps = (withSelector) => [
         >
           <Box>
             <Typography component="p" sx={{ mt: 2 }}>
-              Does the food product belong to this brand?
+              {t("helper.welcome.page2.text1")}
             </Typography>
             <Typography component="p" sx={{ mt: 2 }}>
-              Answer simply with a <strong>yes/no</strong>! Don't know the
-              answer? That's alright, just skip it.
+              <Trans
+                i18nKey="helper.welcome.page2.text2"
+                components={{ strong: <strong /> }}
+              />
             </Typography>
             <Typography component="p">
-              You can also use your keyboard keys o,n and k.
+              {t("helper.welcome.page2.text3")}
             </Typography>
             <Typography component="p" sx={{ mt: 2 }}>
-              You can <strong>filter</strong> the products based on country,
-              brands, popularity and much more!
+              <Trans
+                i18nKey="helper.welcome.page2.text4"
+                components={{ strong: <strong /> }}
+              />
             </Typography>
             <Typography component="p" sx={{ mt: 2 }}>
-              If you don't want to do this every single time, you can also{" "}
-              <strong>save the filters</strong> by clicking on the star. Next
-              time you come back, find the saved filters on the home page itself
+              <Trans
+                i18nKey="helper.welcome.page2.text5"
+                components={{ strong: <strong /> }}
+              />
             </Typography>
           </Box>
           <img
-            alt="questions game"
+            alt={t("helper.welcome.page2.title")}
             style={{
               maxWidth: "50%",
               height: "auto",
@@ -144,7 +142,7 @@ const getSteps = (withSelector) => [
             component="h2"
             sx={{ flex: "80%", marginTop: "8px" }}
           >
-            Logos Game
+            {t("helper.welcome.page3.title")}
           </Typography>
         </Box>
         <Box
@@ -152,17 +150,17 @@ const getSteps = (withSelector) => [
         >
           <Box>
             <Typography component="p" sx={{ mt: 2 }}>
-              Our another really loved game is the logos game where you have to
-              <strong> select all the logos</strong> you feel are the same.
+              <Trans
+                i18nKey="helper.welcome.page3.text1"
+                components={{ strong: <strong /> }}
+              />
             </Typography>
             <Typography component="p" sx={{ mt: 2 }}>
-              As shown in the example, once you select all the similar logos,
-              just type their value and select where it is a brand, a label or
-              something else. It's that simple!
+              {t("helper.welcome.page3.text2")}
             </Typography>
           </Box>
           <img
-            alt="logos game"
+            alt={t("helper.welcome.page3.title")}
             style={{
               maxWidth: "50%",
               height: "auto",
@@ -194,7 +192,7 @@ const getSteps = (withSelector) => [
             component="h2"
             sx={{ flex: "80%", marginTop: "8px" }}
           >
-            Eco-Score Questions Game
+            {t("helper.welcome.page4.title")}
           </Typography>
         </Box>
         <Box
@@ -202,24 +200,23 @@ const getSteps = (withSelector) => [
         >
           <Box>
             <Typography component="p" sx={{ mt: 2 }}>
-              Help us finish the remaining questions in the most high priority
-              labels!
+              {t("helper.welcome.page4.text1")}
             </Typography>
             <Typography component="p" sx={{ mt: 2 }}>
-              These cards are linked to labels used in the computation of the
-              eco-score.
+              {t("helper.welcome.page4.text2")}
             </Typography>
             <Typography component="p" sx={{ mt: 2 }}>
-              <strong>What is Eco-Score?</strong>
+              <Trans
+                i18nKey="helper.welcome.page4.text3"
+                components={{ strong: <strong /> }}
+              />
             </Typography>
             <Typography component="p">
-              Eco-Score captures the total environmental footprint, making it
-              easier for consumers to compare products and decide which is
-              better for the environment.
+              {t("helper.welcome.page4.text4")}
             </Typography>
           </Box>
           <img
-            alt="eco score game"
+            alt={t("helper.welcome.page4.title")}
             style={{
               maxWidth: "50%",
               height: "auto",
@@ -246,17 +243,15 @@ const getSteps = (withSelector) => [
             src={require("../../assets/logo.png")}
           />
           <Typography variant="h6" component="h2" sx={{ marginTop: "8px" }}>
-            Settings
+            {t("helper.welcome.page5.title")}
           </Typography>
         </Box>
         <Box>
           <Typography component="p" sx={{ mt: 2 }}>
-            Set your preferred language, and report issues from our settings
-            page.
+            {t("helper.welcome.page5.text1")}
           </Typography>
           <Typography component="p" sx={{ mt: 2 }}>
-            If you're a developer, you can also explore our database content
-            using our dev mode.
+            {t("helper.welcome.page5.text2")}
           </Typography>
         </Box>
       </Box>
@@ -277,15 +272,15 @@ const getSteps = (withSelector) => [
             src={require("../../assets/logo.png")}
           />
           <Typography variant="h6" component="h2" sx={{ marginTop: "8px" }}>
-            Tour
+            {t("helper.welcome.page6.title")}
           </Typography>
         </Box>
         <Box>
           <Typography component="p" sx={{ mt: 2 }}>
-            Got stuck somewhere? Want to take the tour again?
+            {t("helper.welcome.page6.text1")}
           </Typography>
           <Typography component="p" sx={{ mt: 2 }}>
-            Just click on the question mark and start the journey again!
+            {t("helper.welcome.page6.text2")}
           </Typography>
         </Box>
       </Box>
@@ -294,6 +289,7 @@ const getSteps = (withSelector) => [
 ];
 
 const Welcome = () => {
+  const { t } = useTranslation();
   const theme = useTheme();
   const isDesktop = useMediaQuery(theme.breakpoints.up("sm"));
 
@@ -307,7 +303,10 @@ const Welcome = () => {
     if (getTour()) setIsTourOpen(true);
   }, []);
 
-  const steps = React.useMemo(() => getSteps(isDesktop), [isDesktop]);
+  const steps = React.useMemo(
+    () => getSteps({ t, withSelector: isDesktop }),
+    [t, isDesktop]
+  );
   return (
     <>
       <Tour

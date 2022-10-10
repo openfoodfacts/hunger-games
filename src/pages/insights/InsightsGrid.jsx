@@ -114,89 +114,6 @@ const dateTimeColumn = {
   valueGetter: (params) => (params.value ? new Date(params.value) : null),
 };
 
-const staticColumnsDef = [
-  {
-    field: "actions",
-    type: "actions",
-    getActions: (params) => [
-      <GridActionsCellItem
-        component="a"
-        href={getProductEditUrl(params.row.barcode)}
-        label="Open product edit"
-        icon={
-          <Tooltip title="Open product edit">
-            <EditIcon />
-          </Tooltip>
-        }
-      />,
-      <GridActionsCellItem
-        component="a"
-        href={getProductUrl(params.row.barcode)}
-        label="Open product page"
-        icon={
-          <Tooltip title="Open product page">
-            <VisibilityIcon />
-          </Tooltip>
-        }
-      />,
-    ],
-  },
-  {
-    field: "type",
-    minWidth: 150,
-    flex: 1,
-    maxWidth: 200,
-    renderCell: (params) => <TypeCell {...params} />,
-  },
-  {
-    field: "value_tag",
-    minWidth: 200,
-    flex: 1,
-    renderCell: ({ row }) =>
-      row.type && row.value_tag ? (
-        <Link href={getQuestionUrl(row.type, row.value_tag)}>
-          {row.value_tag} : {row.value}
-        </Link>
-      ) : (
-        <span>
-          {row.value_tag} : {row.value}
-        </span>
-      ),
-  },
-  { field: "barcode", minWidth: 180, flex: 1, maxWidth: 200 },
-  { field: "id", flex: 1 },
-  { field: "timestamp", ...dateTimeColumn },
-  {
-    field: "completed_at",
-    ...dateTimeColumn,
-  },
-  {
-    field: "annotation",
-    renderCell: (params) => <AnnotationStateCell {...params} />,
-    minWidth: 70,
-    maxWidth: 110,
-    flex: 1,
-  },
-  {
-    field: "automatic_processing",
-    type: "boolean",
-    valueGetter: ({ value }) => Boolean(value),
-    minWidth: 70,
-    flex: 1,
-    maxWidth: 110,
-    renderCell: ({ value }) =>
-      value ? (
-        <Tooltip title="Automatic">
-          <SmartToyIcon color="action" />
-        </Tooltip>
-      ) : (
-        <Tooltip title="Human required">
-          <FaceIcon color="action" />
-        </Tooltip>
-      ),
-  },
-].map((col) => ({ ...col, sortable: false }));
-
 const PAGE_SIZE = 25;
 
 const InsightGrid = ({ filterState = {}, setFilterState }) => {
@@ -207,12 +124,57 @@ const InsightGrid = ({ filterState = {}, setFilterState }) => {
   const [rows, setRows] = React.useState([]);
 
   const columns = React.useMemo(() => {
-    return staticColumnsDef.map((col) => {
-      if (col.field !== "barcode") {
-        return col;
-      }
-      return {
-        ...col,
+    return [
+      {
+        field: "actions",
+        type: "actions",
+        getActions: (params) => [
+          <GridActionsCellItem
+            component="a"
+            href={getProductEditUrl(params.row.barcode)}
+            label={t("insights.edit_product")}
+            icon={
+              <Tooltip title={t("insights.edit_product")}>
+                <EditIcon />
+              </Tooltip>
+            }
+          />,
+          <GridActionsCellItem
+            component="a"
+            href={getProductUrl(params.row.barcode)}
+            label={t("insights.view_product")}
+            icon={
+              <Tooltip title={t("insights.view_product")}>
+                <VisibilityIcon />
+              </Tooltip>
+            }
+          />,
+        ],
+      },
+      {
+        field: "type",
+        minWidth: 150,
+        flex: 1,
+        maxWidth: 200,
+        renderCell: (params) => <TypeCell {...params} />,
+      },
+      {
+        field: "value_tag",
+        minWidth: 200,
+        flex: 1,
+        renderCell: ({ row }) =>
+          row.type && row.value_tag ? (
+            <Link href={getQuestionUrl(row.type, row.value_tag)}>
+              {row.value_tag} : {row.value}
+            </Link>
+          ) : (
+            <span>
+              {row.value_tag} : {row.value}
+            </span>
+          ),
+      },
+      {
+        field: "barcode",
         renderCell: ({ value, tabIndex }) => {
           return (
             <RenderLink
@@ -224,9 +186,43 @@ const InsightGrid = ({ filterState = {}, setFilterState }) => {
             />
           );
         },
-      };
-    });
-  }, [setFilterState]);
+        minWidth: 180,
+        flex: 1,
+        maxWidth: 200,
+      },
+      { field: "id", flex: 1 },
+      { field: "timestamp", ...dateTimeColumn },
+      {
+        field: "completed_at",
+        ...dateTimeColumn,
+      },
+      {
+        field: "annotation",
+        renderCell: (params) => <AnnotationStateCell {...params} />,
+        minWidth: 70,
+        maxWidth: 110,
+        flex: 1,
+      },
+      {
+        field: "automatic_processing",
+        type: "boolean",
+        valueGetter: ({ value }) => Boolean(value),
+        minWidth: 70,
+        flex: 1,
+        maxWidth: 110,
+        renderCell: ({ value }) =>
+          value ? (
+            <Tooltip title={t("insights.automatic")}>
+              <SmartToyIcon color="action" />
+            </Tooltip>
+          ) : (
+            <Tooltip title={t("insights.human_required")}>
+              <FaceIcon color="action" />
+            </Tooltip>
+          ),
+      },
+    ].map((col) => ({ ...col, sortable: false }));
+  }, [setFilterState, t]);
 
   React.useEffect(() => {
     setIsLoading(true);

@@ -1,6 +1,7 @@
 import * as React from "react";
 
 import axios from "axios";
+import { useTranslation } from "react-i18next";
 import Box from "@mui/material/Box";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
@@ -13,6 +14,7 @@ const getImageUrl = (code, imgid) =>
   `${OFF_IMAGE_URL}/${off.getFormatedBarcode(code)}/${imgid}.jpg`;
 
 export default function FlaggedImages() {
+  const { t } = useTranslation();
   const [data, setData] = React.useState(null);
 
   React.useEffect(() => {
@@ -25,12 +27,12 @@ export default function FlaggedImages() {
   }, []);
 
   if (data === null) {
-    return <p>Loading</p>;
+    return <p>{t(`flagged_images.loading`)}</p>;
   }
   return (
     <Box>
       <Box sx={{ padding: 2 }}>
-        <Typography>Images flagged by users</Typography>
+        <Typography>{t("flagged_images.title")}</Typography>
         <table>
           {data.map(({ code, imgid }) => (
             <tr key={`${code}-${imgid}`}>

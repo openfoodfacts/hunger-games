@@ -1,4 +1,5 @@
 import * as React from "react";
+import { useTranslation } from "react-i18next";
 import Box from "@mui/material/Box";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
@@ -13,6 +14,7 @@ import { useTheme } from "@mui/material/styles";
 
 const Home = () => {
   const theme = useTheme();
+  const { t } = useTranslation();
   const [savedQuestions] = React.useState(() => {
     return localFavorites.fetch().questions ?? [];
   });
@@ -30,7 +32,7 @@ const Home = () => {
           variant="h5"
           sx={{ margin: "20px auto", textAlign: "center" }}
         >
-          What game would you like to play?
+          {t("home.game_selector.title")}
         </Typography>
         <HomeCards />
         {size > 0 && (
@@ -38,7 +40,7 @@ const Home = () => {
             variant="h5"
             sx={{ margin: "40px auto", textAlign: "center" }}
           >
-            Saved Filters
+            {t("home.saved_filters")}
           </Typography>
         )}
         <Stack spacing={4} flexWrap="wrap" direction="row">
@@ -74,8 +76,7 @@ const Home = () => {
                   lineHeight: "1.75",
                 }}
               >
-                Want to make your contribution count? Create an account or sign
-                in on Open Food Facts!
+                {t("home.account_band.title")}
               </Typography>
               <Stack direction="row">
                 <Button
@@ -87,7 +88,7 @@ const Home = () => {
                     margin: "0 20px",
                   }}
                 >
-                  Login
+                  {t("home.account_band.log_in")}
                 </Button>
                 <Button
                   variant="contained"
@@ -97,7 +98,7 @@ const Home = () => {
                     color: "black",
                   }}
                 >
-                  Sign up
+                  {t("home.account_band.sign_up")}
                 </Button>
               </Stack>
             </Stack>
@@ -109,7 +110,7 @@ const Home = () => {
                 margin: "20px auto",
               }}
             >
-              Learn why your contribution matters
+              {t("home.account_band.contribution_details")}
             </Button>
           </Box>
           <Divider />
@@ -138,26 +139,21 @@ const Home = () => {
                 component="h2"
                 fontWeight={700}
               >
-                Your contribution matters
+                {t("home.contribution_modal.title")}
               </Typography>
               <Typography
                 class="modal-contribution-information"
                 sx={{ mt: 2 }}
                 component="p"
               >
-                Hunger Games is an effort to leverage the results of our OCR.
-                When you use Hunger Games by Open Food Facts, you improve our
-                entire database which helps the community make better food
-                choices. We gathers your annotations and use them to make Open
-                Food Facts more accurate and effecient.
+                {t("home.contribution_modal.information")}
               </Typography>
               <Typography
                 class="modal-contribution-information"
                 sx={{ mt: 2 }}
                 component="p"
               >
-                Thank you for helping us improve Open Food Facts so that more
-                people can use it easily.
+                {t("home.contribution_modal.thank_you")}
               </Typography>
             </Box>
           </Modal>

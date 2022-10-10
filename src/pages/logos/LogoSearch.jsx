@@ -1,4 +1,5 @@
 import * as React from "react";
+import { useTranslation } from "react-i18next";
 import LogoGrid from "../../components/LogoGrid";
 import LogoSearchForm from "../../components/LogoSearchForm";
 import robotoff from "../../robotoff";
@@ -26,6 +27,7 @@ const request = async ({ barcode, value, type, count }) => {
 };
 
 export default function LogoSearch() {
+  const { t } = useTranslation();
   const [searchState, setSearchState] = React.useState({});
   const [result, setResult] = React.useState({ logos: [], count: undefined });
 
@@ -75,8 +77,11 @@ export default function LogoSearch() {
         }}
       >
         {result.count === 0
-          ? `No logo found`
-          : `Shows ${result.logos.length} on ${result.count ?? 0} available`}
+          ? t("logos.no_results")
+          : t("logos.result_count", {
+              showing: result.logos.length,
+              available: result.count ?? 0,
+            })}
       </Typography>
     </Box>
   );

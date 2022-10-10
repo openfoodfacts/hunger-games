@@ -129,7 +129,7 @@ const ResponsiveAppBar = () => {
                 textAlign: "center",
               }}
             >
-              Hunger Games
+              {t("menu.title")}
             </Typography>
             {isLoggedIn ? (
               <AccountCircleIcon color="success" />
@@ -195,7 +195,7 @@ const ResponsiveAppBar = () => {
                   textDecoration: "none",
                 }}
               >
-                Hunger Games
+                {t("menu.title")}
               </Typography>
 
               {displayedPages.map((page) =>
@@ -236,7 +236,11 @@ const ResponsiveAppBar = () => {
               </IconButton>
               <Welcome />
               <Tooltip
-                title={isLoggedIn ? `logged as ${userName}` : `click to login`}
+                title={
+                  isLoggedIn
+                    ? t("menu.logged_in_user", { userName })
+                    : t("menu.log_in")
+                }
               >
                 {isLoggedIn ? (
                   <AccountCircleIcon color="success" />

@@ -101,12 +101,10 @@ const UserData = ({
           setLoginAlreadyProposed(true);
         }}
       >
-        <DialogTitle>Make your annotation count</DialogTitle>
+        <DialogTitle>{t("questions.login_title")}</DialogTitle>
         <DialogContent>
           <DialogContentText>
-            Currently you are not logged in Open Food Facts. To get your answers
-            directly applied to products, and associated to your account,
-            consider logging in to your Open Food Facts account, or creating one
+            {t("questions.login_description")}
           </DialogContentText>
         </DialogContent>
         <DialogActions>
@@ -116,7 +114,7 @@ const UserData = ({
             component={Link}
             target="_blank"
           >
-            Login
+            {t("questions.log_in")}
           </Button>
           <Button
             variant="contained"
@@ -124,7 +122,7 @@ const UserData = ({
             component={Link}
             target="_blank"
           >
-            Sign up
+            {t("questions.sign_up")}
           </Button>
         </DialogActions>
       </Dialog>

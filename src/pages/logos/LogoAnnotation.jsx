@@ -311,7 +311,7 @@ export default function LogoAnnotation() {
     .map((logo) => logo.id);
 
   if (logoState.isLoading) {
-    <p>Loading...</p>;
+    <p>{t("logos.loading")}</p>;
   }
   return (
     <Box sx={{ margin: "2% 10%" }}>
@@ -325,10 +325,7 @@ export default function LogoAnnotation() {
       >
         {t("logos.annotations")}
       </Typography>
-      <Typography>
-        Select all logos that are exactly the same, and give them a name like
-        "en:EU Organic" and a type like "label".
-      </Typography>
+      <Typography>{t("logos.task_description")}</Typography>
       <Box
         sx={{
           position: "sticky",
@@ -381,7 +378,7 @@ export default function LogoAnnotation() {
             onClick={refreshData}
             loading={isRefreshing}
           >
-            Refresh
+            {t("logos.refresh")}
           </LoadingButton>
           <div style={{ flexGrow: 1 }} />
           <Button
@@ -391,7 +388,7 @@ export default function LogoAnnotation() {
             component={Link}
             to="/logos/search/"
           >
-            Search specific logo
+            {t("logos.search_specific")}
           </Button>
         </Stack>
       </Box>
@@ -422,7 +419,7 @@ export default function LogoAnnotation() {
             addMoreLogos(50);
           }}
         >
-          Load more
+          {t("logos.load_more")}
         </Button>
       </Box>
       <BackToTop />

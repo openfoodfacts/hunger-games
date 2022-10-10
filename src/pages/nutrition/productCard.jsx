@@ -1,6 +1,7 @@
 import * as React from "react";
-import Box from "@mui/material/Box";
+import { useTranslation } from "react-i18next";
 import Zoom from "react-medium-image-zoom";
+import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import offService from "../../off";
@@ -8,6 +9,7 @@ import offService from "../../off";
 import { basicNutriments } from "./nutritionFields";
 
 export default function ProductNutriments({ setNutriments, nutriments }) {
+  const { t } = useTranslation();
   const [page, setPage] = React.useState(1);
   const [index, setIndex] = React.useState(0);
   const [products, setProducts] = React.useState([]);
@@ -16,8 +18,8 @@ export default function ProductNutriments({ setNutriments, nutriments }) {
   const productName = product
     ? product.product_name
       ? product.product_name
-      : "Brand Unknown"
-    : "Loading...";
+      : t("nutrition.unknown_brand")
+    : t("nutrition.loading");
 
   React.useEffect(() => {
     const productListUrl = offService.getNutritionToFillUrl({ page });
@@ -42,9 +44,7 @@ export default function ProductNutriments({ setNutriments, nutriments }) {
     const resArr = nutriments.filter(
       (nutr) => nutr.display && nutr.value !== null && nutr.value >= 0
     );
-    const message = resArr.length
-      ? resArr
-      : "You forgot to input value duuuuuuuuuuuuuuuuude";
+    const message = resArr.length ? resArr : t("nutrition.value_missing");
     console.log(message);
     setNutriments(basicNutriments);
   }

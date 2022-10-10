@@ -1,4 +1,5 @@
 import * as React from "react";
+import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import Card from "@mui/material/Card";
 import CardMedia from "@mui/material/CardMedia";
@@ -12,26 +13,27 @@ import home_ecoscore from "../../assets/home_ecoscore.png";
 
 const cards = [
   {
-    title: "Questions",
-    desc: "Tell us if the given image answers the questions",
+    title: "home.game_selector.cards.questions.title",
+    desc: "home.game_selector.cards.questions.description",
     link: "/questions",
     image: home_questions,
   },
   {
-    title: "Logos",
-    desc: "Find all the logos matching the given logo",
+    title: "home.game_selector.cards.logos.title",
+    desc: "home.game_selector.cards.logos.description",
     link: "/logos",
     image: home_logos,
   },
   {
-    title: "Eco-score",
-    desc: "Annotate the questions with the highest value",
+    title: "home.game_selector.cards.eco_score.title",
+    desc: "home.game_selector.cards.eco_score.description",
     link: "/eco-score",
     image: home_ecoscore,
   },
 ];
 
 const HomeCards = () => {
+  const { t } = useTranslation();
   return (
     <Stack
       spacing={3}
@@ -49,12 +51,12 @@ const HomeCards = () => {
               component="img"
               height="200"
               image={cardInfo.image}
-              alt={cardInfo.title}
+              alt={t(cardInfo.title)}
               sx={{ objectFit: "contain" }}
             />
             <CardContent>
               <Typography variant="h5" component="div">
-                {cardInfo.title}
+                {t(cardInfo.title)}
               </Typography>
               <Typography
                 gutterBottom
@@ -62,7 +64,7 @@ const HomeCards = () => {
                 component="div"
                 fontSize={14}
               >
-                {cardInfo.desc}
+                {t(cardInfo.desc)}
               </Typography>
             </CardContent>
           </CardActionArea>
