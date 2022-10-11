@@ -37,13 +37,6 @@ export const getQuestionSearchParams = (logoSearchState) => {
   return urlParams.toString();
 };
 
-const updateSearchSearchParams = (newState) => {
-  const newRelativePathQuery = `${
-    window.location.pathname
-  }?${getQuestionSearchParams(newState)}`;
-  window.history.pushState(null, "", newRelativePathQuery);
-};
-
 const DEFAULT_LOGO_SEARCH_STATE = {
   count: 50,
   logo_id: "",
