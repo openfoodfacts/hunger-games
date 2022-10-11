@@ -37,7 +37,11 @@ const getSearchFromUrl = () => {
   for (let key of Object.keys(DEFAULT_FILTER_STATE)) {
     const urlKey = key2urlParam[key];
     if (urlParams.has(urlKey)) {
-      initialSearchParams[key] = urlParams.get(urlKey);
+      let value = urlParams.get(urlKey);
+      if (["true", "false"].includes(value)) {
+        value = JSON.parse(value);
+      }
+      initialSearchParams[key] = value;
     }
   }
 

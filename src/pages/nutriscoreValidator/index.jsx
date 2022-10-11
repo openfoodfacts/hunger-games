@@ -60,25 +60,37 @@ const NutriscoreImage = ({ question, imageSize, zoomOnLogo }) => {
       setCroppedImageUrl(question.source_image_url);
       return;
     }
-    fetchData(question.insight_id)
-      .then(({ data, bounding_box }) => {
-        if (data?.data?.bounding_box && data?.source_image) {
-          setCroppedImageUrl(
-            robotoff.getCroppedImageUrl(
-              off.getImageUrl(data?.source_image),
-              data.data.bounding_box
-            )
-          );
-        } else if (bounding_box && data?.source_image) {
-          setCroppedImageUrl(
-            robotoff.getCroppedImageUrl(
-              off.getImageUrl(data?.source_image),
-              bounding_box
-            )
-          );
-        }
-      })
-      .catch(() => {});
+
+    let isValidQuery = true;
+
+    const getImageUrl = async () => {
+      const { data, bounding_box } = await fetchData(question.insight_id);
+
+      if (!isValidQuery) {
+        return;
+      }
+
+      if (data?.data?.bounding_box && data?.source_image) {
+        setCroppedImageUrl(
+          robotoff.getCroppedImageUrl(
+            off.getImageUrl(data?.source_image),
+            data.data.bounding_box
+          )
+        );
+      } else if (bounding_box && data?.source_image) {
+        setCroppedImageUrl(
+          robotoff.getCroppedImageUrl(
+            off.getImageUrl(data?.source_image),
+            bounding_box
+          )
+        );
+      }
+    };
+    getImageUrl().catch(() => {});
+
+    return () => {
+      isValidQuery = false;
+    };
   }, [question.insight_id, question.source_image_url, zoomOnLogo]);
 
   if (!question.insight_id || !croppedImageUrl) {
