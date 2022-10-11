@@ -1,36 +1,36 @@
 {
   "home": {
     "game_selector": {
-      "title": "What game would you like to play?",
+      "title": "Каква игра бихте искали да играете?",
       "cards": {
         "questions": {
           "title": "Въпроси",
-          "description": "Tell us if the given image answers the questions"
+          "description": "Кажете ни дали даденото изображение отговаря на въпросите"
         },
         "logos": {
           "title": "Емблеми",
-          "description": "Find all the logos matching the given logo"
+          "description": "Намерете всички емблеми, съответстващи на даденото емблема"
         },
         "eco_score": {
           "title": "Eco-score",
-          "description": "Annotate the questions with the highest value"
+          "description": "Коментирайте въпросите с най-висока стойност"
         }
       }
     },
     "account_band": {
-      "title": "Want to make your contribution count? Create an account or sign in on Open Food Facts!",
+      "title": "Искате ли вашият принос да се брои? Създайте акаунт или влезте в Open Food Facts!",
       "log_in": "Потребителско име",
       "sign_up": "Регистрирай се",
-      "contribution_details": "Learn why your contribution matters"
+      "contribution_details": "Научете защо вашият принос има значение"
     },
-    "saved_filters": "Saved Filters",
+    "saved_filters": "Запазени филтри",
     "contribution_modal": {
-      "title": "Your contribution matters",
-      "information": "Hunger Games is an effort to leverage the results of our OCR. When you use Hunger Games by Open Food Facts, you improve our entire database which helps the community make better food choices. We gathers your annotations and use them to make Open Food Facts more accurate and effecient.",
-      "thank_you": "Thank you for helping us improve Open Food Facts so that more people can use it easily."
+      "title": "Вашият принос има значение",
+      "information": "Игрите на глада са опит да се използват резултатите от нашият OCR. Когато използвате Игрите на глада от Open Food Facts, подобрявате цялата ни база данни, което помага на общността да прави по-добър избор на храна. Ние събираме вашите пояснения и ги използваме, за да направим Open Food Facts по-точен и ефективен.",
+      "thank_you": "Благодарим ви, че ни помагате да подобрим Open Food Facts, така че повече хора да могат да го използват лесно."
     },
     "statistics": {
-      "title": "{{userName}} statistics:",
+      "title": "{{userName}} статистики:",
       "editorCount": {
         "title": "Редактор",
         "description": "Number of edition done"
@@ -46,7 +46,7 @@
     }
   },
   "flagged_images": {
-    "title": "Images flagged by users",
+    "title": "Изображения, маркирани от потребители",
     "loading": "Loading"
   },
   "questions": {

@@ -1,19 +1,19 @@
 {
   "home": {
     "game_selector": {
-      "title": "What game would you like to play?",
+      "title": "Hvad ønsker du at spille?",
       "cards": {
         "questions": {
           "title": "Spørgsmål",
-          "description": "Tell us if the given image answers the questions"
+          "description": "Fortæl os, om det givne billede besvarer spørgsmålene"
         },
         "logos": {
           "title": "Logoer",
-          "description": "Find all the logos matching the given logo"
+          "description": "Find alle logoer matchende det givne logo"
         },
         "eco_score": {
           "title": "Øko-Score",
-          "description": "Annotate the questions with the highest value"
+          "description": "Anmærk spørgsmålene med den højeste værdi"
         }
       }
     },

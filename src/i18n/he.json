@@ -1,15 +1,15 @@
 {
   "home": {
     "game_selector": {
-      "title": "What game would you like to play?",
+      "title": "איזה משחק בא לך לשחק?",
       "cards": {
         "questions": {
           "title": "שאלות",
-          "description": "Tell us if the given image answers the questions"
+          "description": "לספר לנו האם התמונה שמוצגת עונה על השאלות"
         },
         "logos": {
           "title": "לוגואים",
-          "description": "Find all the logos matching the given logo"
+          "description": "איתור כל הלוגואים שתואמים ללוגו המוצג"
         },
         "eco_score": {
           "title": "Eco-Score",
@@ -18,19 +18,19 @@
       }
     },
     "account_band": {
-      "title": "Want to make your contribution count? Create an account or sign in on Open Food Facts!",
+      "title": "רוצה שהתרומות שלך ייזקפו לזכותך? אפשר ליצור חשבון או להיכנס ל־Open Food Facts!",
       "log_in": "שם משתמש",
       "sign_up": "הרשמה",
-      "contribution_details": "Learn why your contribution matters"
+      "contribution_details": "הסבר על חשיבות התרומה שלך"
     },
-    "saved_filters": "Saved Filters",
+    "saved_filters": "מסננים שמורים",
     "contribution_modal": {
-      "title": "Your contribution matters",
+      "title": "התרומות שלך מביאות לשינוי",
       "information": "Hunger Games is an effort to leverage the results of our OCR. When you use Hunger Games by Open Food Facts, you improve our entire database which helps the community make better food choices. We gathers your annotations and use them to make Open Food Facts more accurate and effecient.",
       "thank_you": "Thank you for helping us improve Open Food Facts so that more people can use it easily."
     },
     "statistics": {
-      "title": "{{userName}} statistics:",
+      "title": "סטטיסטיקה על {{userName}}:",
       "editorCount": {
         "title": "עורך",
         "description": "מספר העריכות שבוצעו"
@@ -46,8 +46,8 @@
     }
   },
   "flagged_images": {
-    "title": "Images flagged by users",
-    "loading": "Loading"
+    "title": "תמונות שסומנו על ידי משתמשים",
+    "loading": "בטעינה"
   },
   "questions": {
     "category": "קטגוריה",
@@ -98,18 +98,18 @@
         "apply": "החלה"
       }
     },
-    "other_questions": "Other questions",
-    "send": "Send",
-    "flag": "Something wrong? Report/flag the image!",
-    "unflag": "Unflag the image",
-    "reset_filters": "Reset filters",
+    "other_questions": "שאלות אחרות",
+    "send": "שליחה",
+    "flag": "משהו לא תקין? אפשר לדווח/לסמן את התמונה!",
+    "unflag": "ביטול סימון התמונה",
+    "reset_filters": "איפוס מסננים",
     "log_in": "שם משתמש",
     "sign_up": "הרשמה",
-    "login_title": "Make your annotation count",
+    "login_title": "להעניק ערך להערות שלך",
     "login_description": "Currently you are not logged in Open Food Facts. To get your answers directly applied to products, and associated to your account, consider logging in to your Open Food Facts account, or creating one"
   },
   "menu": {
-    "title": "Hunger Games",
+    "title": "משחקי הרעב",
     "games": "משחקים",
     "questions": "שאלות",
     "logos": "לוגואים",
@@ -119,8 +119,8 @@
     "settings": "הגדרות",
     "eco-score": "Eco-Score",
     "nutriscore": "Nutri-Score",
-    "logged_in_user": "logged as {{userName}}",
-    "log_in": "click to login"
+    "logged_in_user": "נכנסת בשם {{userName}}",
+    "log_in": "לחיצה תכניס אותך למערכת"
   },
   "insights": {
     "insights": "תובנות",
@@ -148,9 +148,9 @@
     "created_at": "נוצר ב־",
     "completed_at": "הושלם ב־",
     "automatic": "אוטומטית",
-    "human_required": "Human required",
-    "edit_product": "Open product edit",
-    "view_product": "Open product page"
+    "human_required": "נדרש בן אדם",
+    "edit_product": "פתיחת עריכת מוצר",
+    "view_product": "פתיחת עמוד מוצר"
   },
   "logos": {
     "annotation": "הערה: ",
@@ -178,62 +178,62 @@
     "no_found": "לא נמצא לוגו",
     "search": "חיפוש",
     "number_of_results": "מספר התוצאות:",
-    "loading": "Loading...",
+    "loading": "בטעינה…",
     "refresh": "רענון",
-    "search_specific": "Search specific logo",
-    "load_more": "Load more",
+    "search_specific": "חיפוש לוגו מסוים",
+    "load_more": "לטעון עוד",
     "no_results": "לא נמצא לוגו",
-    "result_count": "Shows {{showing}} on {{available}} available",
-    "flag": "Something wrong? Report/flag the image!",
-    "unflag": "Unflag the image",
-    "crop_image_title": "crop of the logo"
+    "result_count": "מוצגים {{showing}} מתוך {{available}} הזמינים",
+    "flag": "משהו לא תקין? אפשר לדווח/לסמן את התמונה!",
+    "unflag": "ביטול סימון התמונה",
+    "crop_image_title": "חיתוך של הלוגו"
   },
   "settings": {
     "settings": "הגדרות",
     "language": "שפה",
     "save": "שמירה",
     "reportIssue": "מצאת תקלה? נא ליידע אותנו",
-    "dev_mode_title": "To explore the database content, activate the dev mode",
-    "dev_mode_label": "Dev Mode",
-    "dev_page_toggle": "Show {{name}} page"
+    "dev_mode_title": "כדי לחקור את תוכן מסד הנתונים, יש להפעיל את מצב הפיתוח",
+    "dev_mode_label": "מצב פיתוח",
+    "dev_page_toggle": "הצגת העמוד {{name}}"
   },
   "helper": {
     "welcome": {
       "page1": {
-        "title": "Welcome to Hunger Games",
+        "title": "ברוך בואך למשחקי הרעב",
         "text1": "Hunger Games is a collection of mini-games that help contribute to Open Food Facts in many ways. You can play are really exciting games from anywhere. Here is a guided tour of the entire website which will get you started.",
         "text2": "Make sure to login to the Open Food Facts website to get credit for your contributions. If you make a mistake, please take the time to correct it by heading to the website.",
         "text3": "In case of any doubt about the games, click on the question mark icon at the top right of the page, and you can reach us on slack at the #hunger-games channel"
       },
       "page2": {
-        "title": "Questions Game",
-        "text1": "Does the food product belong to this brand?",
-        "text2": "Answer simply with a <strong>yes/no</strong>! Don't know the answer? That's alright, just skip it.",
-        "text3": "You can also use your keyboard keys o,n and k.",
+        "title": "משחק שאלות",
+        "text1": "האם מוצר המזון שייך למותג הזה?",
+        "text2": "יש לענות בפשטות עם <strong>כן/לא</strong>! אין לך תשובה? זה בסדר, אפשר פשוט לדלג על זה.",
+        "text3": "אפשר גם להשתמש במקשי המקלדת o,‏ n ו־k.",
         "text4": "You can <strong>filter</strong> the products based on country, brands, popularity and much more!",
         "text5": "If you don't want to do this every single time, you can also <strong>save the filters</strong> by clicking on the star. Next time you come back, find the saved filters on the home page itself"
       },
       "page3": {
-        "title": "Logos Game",
-        "text1": "Our another really loved game is the logos game where you have to <strong> select all the logos</strong> you feel are the same.",
+        "title": "משחק לוגואים",
+        "text1": "עוד משחק מעולה הוא משחק הלוגואים שבו צריך <strong> לבחור את כל הלוגואים</strong> שלדעתך הם זהים.",
         "text2": "As shown in the example, once you select all the similar logos, just type their value and select where it is a brand, a label or something else. It's that simple!"
       },
       "page4": {
-        "title": "Eco-Score Questions Game",
+        "title": "משחק שאלות על Eco-Score",
         "text1": "Help us finish the remaining questions in the most high priority labels!",
         "text2": "These cards are linked to labels used in the computation of the eco-score.",
-        "text3": "<strong>What is Eco-Score?</strong>",
+        "text3": "<strong>מה זה Eco-Score?</strong>",
         "text4": "Eco-Score captures the total environmental footprint, making it easier for consumers to compare products and decide which is better for the environment."
       },
       "page5": {
         "title": "הגדרות",
-        "text1": "Set your preferred language, and report issues from our settings page.",
+        "text1": "ניתן להגדיר את השפה המועדפת עליך ולדווח על תקלות דרך עמוד ההגדרות שלנו.",
         "text2": "If you're a developer, you can also explore our database content using our dev mode."
       },
       "page6": {
-        "title": "Tour",
-        "text1": "Got stuck somewhere? Want to take the tour again?",
-        "text2": "Just click on the question mark and start the journey again!"
+        "title": "סיור",
+        "text1": "נתקעת איפשהו? רוצה לחזור לסיור נוסף?",
+        "text2": "לחיצה על סימן השאלה תוביל אותך היישר לתחילת המסע מחדש!"
       }
     },
     "logos": {
@@ -272,9 +272,9 @@
       "3": "בחירת חומרי הזנה",
       "4": "בחירת ערכים"
     },
-    "loading": "Loading...",
-    "unknown_brand": "Brand Unknown",
-    "value_missing": "You forgot to input value duuuuuuuuuuuuuuuuude",
+    "loading": "בטעינה…",
+    "unknown_brand": "מותג לא ידוע",
+    "value_missing": "שכחת למלא ערך אחיייייייייייייייייי",
     "next": "השלב הבא",
     "prev": "השלב הקודם",
     "skip": "דילוג על מוצר זה",
@@ -310,21 +310,21 @@
     }
   },
   "notfound": {
-    "image_alt": "404 not found",
+    "image_alt": "404 לא נמצא",
     "nopage": "אוווופס! הדף המבוקש לא נמצא.",
     "redirect1": "בא לך לשחק?",
     "redirect2": "צריך ללחוץ כאן"
   },
   "nutriscore": {
-    "image_alt": "cropped image",
+    "image_alt": "תמונה חתוכה",
     "label": "Annotate nutriscore logo detection by batch.",
     "description": "To do so select all the images showing the correct/wrong nutriscore value ({{label}}), and click on the bottom buttons to say if you selected a set correct or wrong ones.",
     "images_remaining": "Still {{remaining}} to annotate",
-    "image_sizes": "Image sizes",
-    "zoom_on_logo": "zoom on logo",
+    "image_sizes": "גדלי תמונות",
+    "zoom_on_logo": "התמקדות על לוגו",
     "select_all": "לבחור הכול",
     "deselect_all": "ביטול בחירה",
-    "incorrect": "Wrong",
-    "correct": "Correct ({{label}})"
+    "incorrect": "שגוי",
+    "correct": "נכון ({{label}})"
   }
 }
