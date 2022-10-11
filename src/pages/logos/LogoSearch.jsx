@@ -1,10 +1,14 @@
 import * as React from "react";
 import { useTranslation } from "react-i18next";
+
+import Box from "@mui/material/Box";
+import Typography from "@mui/material/Typography";
+
 import LogoGrid from "../../components/LogoGrid";
 import LogoSearchForm from "../../components/LogoSearchForm";
 import robotoff from "../../robotoff";
 import off from "../../off";
-import { Box, Typography } from "@mui/material";
+import useUrlParams from "../../hooks/useUrlParams";
 
 const transformLogo = (logo) => {
   const src =
@@ -18,7 +22,12 @@ const transformLogo = (logo) => {
 };
 
 const request = async ({ barcode, value, type, count }) => {
-  const { data } = await robotoff.searchLogos(barcode, value, type, count);
+  const { data } = await robotoff.searchLogos(
+    barcode,
+    value,
+    type,
+    Number.parseInt(count)
+  );
 
   return {
     logos: data.logos.map(transformLogo),
@@ -28,12 +37,22 @@ const request = async ({ barcode, value, type, count }) => {
 
 export default function LogoSearch() {
   const { t } = useTranslation();
-  const [searchState, setSearchState] = React.useState({});
+  const [searchState, setSearchState] = useUrlParams({
+    type: "",
+    value: "",
+    barcode: "",
+    count: 25,
+  });
+  console.log({ searchState });
+
   const [result, setResult] = React.useState({ logos: [], count: undefined });
 
-  const validate = React.useCallback((params) => {
-    setSearchState(params);
-  }, []);
+  const validate = React.useCallback(
+    (params) => {
+      setSearchState(params);
+    },
+    [setSearchState]
+  );
 
   React.useEffect(() => {
     let isValidRequest = true;
