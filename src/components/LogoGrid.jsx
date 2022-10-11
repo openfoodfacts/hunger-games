@@ -29,13 +29,13 @@ const LogoCard = React.memo(
     image,
     annotation_type,
     distance,
+    readOnly,
   }) => {
     const { t } = useTranslation();
     const theme = useTheme();
 
     return (
       <Card
-        disabled={!!annotation_type}
         sx={{
           width: 180,
           margin: "20px auto 0 auto",
@@ -65,7 +65,7 @@ const LogoCard = React.memo(
         </Box>
         <Divider />
         <CardActionArea
-          disabled={!!annotation_type}
+          disabled={readOnly || !!annotation_type}
           onClick={() => toggleLogoSelection(id)}
           sx={{ flexGrow: 1 }}
         >
@@ -89,20 +89,22 @@ const LogoCard = React.memo(
               annotation_type || ""
             })`}
         </Typography>
-        <Checkbox
-          checked={selected}
-          disabled={!!annotation_type}
-          size="small"
-          onClick={() => toggleLogoSelection(id)}
-          sx={{ position: "absolute", bottom: 0, right: 0 }}
-        />
+        {!readOnly && (
+          <Checkbox
+            checked={selected}
+            disabled={!!annotation_type}
+            size="small"
+            onClick={() => toggleLogoSelection(id)}
+            sx={{ position: "absolute", bottom: 0, right: 0 }}
+          />
+        )}
       </Card>
     );
   }
 );
 
 const LogoGrid = (props) => {
-  const { logos, toggleLogoSelection } = props;
+  const { logos, toggleLogoSelection, readOnly } = props;
 
   return (
     <Box
@@ -124,6 +126,7 @@ const LogoGrid = (props) => {
           image={logo.image.src}
           annotation_type={logo.annotation_type}
           distance={logo.distance}
+          readOnly={readOnly}
         />
       ))}
     </Box>

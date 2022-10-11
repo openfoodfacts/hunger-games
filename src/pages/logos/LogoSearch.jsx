@@ -1,10 +1,14 @@
 import * as React from "react";
+
+import LinearProgress from "@mui/material/LinearProgress";
+import Box from "@mui/material/Box";
+import Typography from "@mui/material/Typography";
+
 import { useTranslation } from "react-i18next";
 import LogoGrid from "../../components/LogoGrid";
 import LogoSearchForm from "../../components/LogoSearchForm";
 import robotoff from "../../robotoff";
 import off from "../../off";
-import { Box, Typography } from "@mui/material";
 
 const transformLogo = (logo) => {
   const src =
@@ -29,6 +33,7 @@ const request = async ({ barcode, value, type, count }) => {
 export default function LogoSearch() {
   const { t } = useTranslation();
   const [searchState, setSearchState] = React.useState({});
+  const [isLoading, setIsLoading] = React.useState(true);
   const [result, setResult] = React.useState({ logos: [], count: undefined });
 
   const validate = React.useCallback((params) => {
@@ -37,17 +42,21 @@ export default function LogoSearch() {
 
   React.useEffect(() => {
     let isValidRequest = true;
+    setIsLoading(true);
+    setResult({ logos: [], count: undefined });
     request(searchState)
       .then((rep) => {
         if (!isValidRequest) {
           return;
         }
+        setIsLoading(false);
         setResult(rep);
       })
       .catch(() => {
         if (!isValidRequest) {
           return;
         }
+        setIsLoading(false);
         setResult({ logos: [], count: undefined });
       });
 
@@ -64,25 +73,31 @@ export default function LogoSearch() {
         validate={validate}
       />
 
-      <LogoGrid logos={result.logos} toggleLogoSelection={null} />
+      {isLoading ? (
+        <LinearProgress sx={{ mt: 5 }} />
+      ) : (
+        <>
+          <LogoGrid logos={result.logos} toggleLogoSelection={null} readOnly />
 
-      <Typography
-        variant="h6"
-        sx={{
-          textAlign: "end",
-          p: 2,
-          mt: 5,
-          mb: 10,
-          mr: 20,
-        }}
-      >
-        {result.count === 0
-          ? t("logos.no_results")
-          : t("logos.result_count", {
-              showing: result.logos.length,
-              available: result.count ?? 0,
-            })}
-      </Typography>
+          <Typography
+            variant="h6"
+            sx={{
+              textAlign: "end",
+              p: 2,
+              mt: 5,
+              mb: 10,
+              mr: 20,
+            }}
+          >
+            {result.count === 0
+              ? t("logos.no_results")
+              : t("logos.result_count", {
+                  showing: result.logos.length,
+                  available: result.count ?? 0,
+                })}
+          </Typography>
+        </>
+      )}
     </Box>
   );
 }

@@ -124,9 +124,9 @@ const LogoSearchForm = (props) => {
         onClick={() =>
           validate(
             getFormattedValues({
-              type: innerType,
-              value: innerValue,
-              barcode: innerBarcode,
+              type: innerType || "",
+              value: innerValue || "",
+              barcode: innerBarcode || "",
               count: innerCount,
             })
           )
