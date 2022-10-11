@@ -18,6 +18,7 @@ import FormControlLabel from "@mui/material/FormControlLabel";
 import { useQuestionBuffer } from "../questions/useQuestionBuffer";
 import robotoff from "../../robotoff";
 import off from "../../off";
+import useUrlParams from "../../hooks/useUrlParams";
 
 const BUFFER_THRESHOLD = 10;
 const PAGE_SIZE = 50;
@@ -109,17 +110,29 @@ const NutriscoreImage = ({ question, imageSize, zoomOnLogo }) => {
 
 export default function NutriscoreValidator() {
   const { t } = useTranslation();
-  const [imageSize, setImageSize] = React.useState(300);
-  const [zoomOnLogo, setZoomOnLogo] = React.useState(true);
 
   const [selectedOption, setSelectedOption] = React.useState(OPTIONS[0]);
-  const [filterState, setFilterState] = React.useState({
-    insightType: "label",
-    brandFilter: "",
-    countryFilter: "",
-    sortByPopularity: false,
+  const [controlledState, setControlledState] = useUrlParams({
     valueTag: "en:nutriscore-grade-a",
+    imageSize: 200,
+    zoomOnLogo: true,
   });
+
+  const valueTag = controlledState.valueTag;
+  const imageSize = Number.parseInt(controlledState.imageSize);
+  const zoomOnLogo = JSON.parse(controlledState.zoomOnLogo);
+
+  const filterState = React.useMemo(
+    () => ({
+      insightType: "label",
+      brandFilter: "",
+      countryFilter: "",
+      sortByPopularity: false,
+      valueTag,
+    }),
+    [valueTag]
+  );
+
   const [selectedIds, setSelectedIds] = React.useState([]);
   const [lastClickedId, setLastClickedId] = React.useState(null);
 
@@ -133,7 +146,7 @@ export default function NutriscoreValidator() {
     );
     setSelectedIds([]);
     setSelectedOption(newSelectedOption);
-    setFilterState((prevState) => ({
+    setControlledState((prevState) => ({
       ...prevState,
       valueTag: newSelectedOption.tag,
     }));
@@ -255,7 +268,9 @@ export default function NutriscoreValidator() {
           <Slider
             aria-label={t("nutriscore.image_sizes")}
             value={imageSize}
-            onChangeCommitted={(event, newValue) => setImageSize(newValue)}
+            onChangeCommitted={(event, newValue) =>
+              setControlledState((prev) => ({ ...prev, imageSize: newValue }))
+            }
             valueLabelDisplay="auto"
             step={50}
             marks
@@ -266,7 +281,12 @@ export default function NutriscoreValidator() {
         </Box>
 
         <FormControlLabel
-          onChange={(event) => setZoomOnLogo(event.target.checked)}
+          onChange={(event) =>
+            setControlledState((prev) => ({
+              ...prev,
+              zoomOnLogo: event.target.checked,
+            }))
+          }
           control={<Checkbox checked={zoomOnLogo} />}
           label={t("nutriscore.zoom_on_logo")}
           labelPlacement="end"
@@ -298,7 +318,10 @@ export default function NutriscoreValidator() {
         onKeyDown={handleKeyDown}
       >
         {buffer
-          .filter((question) => question.insight_id)
+          .filter(
+            (question) =>
+              question.insight_id && question.insight_id !== "NO_QUESTION_LEFT"
+          )
           .map((question) => (
             <Card
               sx={{ width: imageSize, height: imageSize }}

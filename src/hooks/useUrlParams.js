@@ -72,11 +72,17 @@ const useUrlParams = (defaultParams) => {
   }, [search, defaultParams]);
 
   const updateParameters = React.useCallback(
-    (newParams) => {
+    (modifier) => {
+      let newParams;
+      if (typeof modifier === "function") {
+        newParams = modifier(parameters);
+      } else {
+        newParams = parameters;
+      }
       setParameters(newParams);
       setUrlParams(newParams, defaultParams);
     },
-    [defaultParams]
+    [parameters, defaultParams]
   );
   return [parameters, updateParameters];
 };
