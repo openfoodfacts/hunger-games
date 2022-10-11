@@ -1,104 +1,85 @@
 import * as React from "react";
 
-import { key2urlParam, DEFAULT_FILTER_STATE } from "./const";
-import { useLocation } from "react-router-dom";
+import { key2urlParam, urlParams2Key, DEFAULT_FILTER_STATE } from "./const";
 import { localFavorites } from "../../localeStorageManager";
 import logo from "../../assets/logo.png";
+import useUrlParams, {
+  convertObjectParamsToUrlParams,
+} from "../../hooks/useUrlParams";
 
-const isValid = (value) => value || value === false;
-
-export const getQuestionSearchParams = (filterState) => {
-  const urlParams = new URLSearchParams(window.location.search);
-
-  Object.keys(DEFAULT_FILTER_STATE).forEach((key) => {
-    const urlKey = key2urlParam[key];
-    if (urlParams.get(urlKey) !== undefined && !isValid(filterState[key])) {
-      urlParams.delete(urlKey);
-    } else if (
-      isValid(filterState[key]) &&
-      urlParams.get(urlKey) !== filterState[key]
-    ) {
-      urlParams.set(urlKey, filterState[key]);
-    }
+const convertParamsToUrl = (params) => {
+  const rep = {};
+  Object.keys(params).forEach((key) => {
+    rep[key2urlParam[key]] = params[key];
   });
-  return urlParams.toString();
+  return rep;
 };
 
-const updateSearchSearchParams = (newState) => {
-  const newRelativePathQuery = `${
-    window.location.pathname
-  }?${getQuestionSearchParams(newState)}`;
-  window.history.pushState(null, "", newRelativePathQuery);
+const convertUrlToParams = (params) => {
+  const rep = {};
+  Object.keys(params).forEach((key) => {
+    rep[urlParams2Key[key]] = params[key];
+  });
+  return rep;
 };
 
-const getSearchFromUrl = () => {
-  const urlParams = new URLSearchParams(window.location.search);
-  const initialSearchParams = DEFAULT_FILTER_STATE;
-  for (let key of Object.keys(DEFAULT_FILTER_STATE)) {
-    const urlKey = key2urlParam[key];
-    if (urlParams.has(urlKey)) {
-      let value = urlParams.get(urlKey);
-      if (["true", "false"].includes(value)) {
-        value = JSON.parse(value);
-      }
-      initialSearchParams[key] = value;
-    }
-  }
+const DEFAULT_FILTER_URL_PARAMS = convertParamsToUrl(DEFAULT_FILTER_STATE);
 
-  return { ...initialSearchParams };
-};
+export const getQuestionSearchParams = (params) =>
+  convertObjectParamsToUrlParams(convertParamsToUrl(params));
 
 export function useFilterSearch() {
-  const { search } = useLocation();
+  // Search filter is a bit special because it's the first API we created and url_params are reused in other applications.
+  // To avoid breaking deep link, we maintainthe previouse search params in url, but use more detailed on in the app
+  // This hook do the translation
 
-  const initialParams = getSearchFromUrl();
-  const [searchParams, setInternSearchParams] = React.useState(
-    () => initialParams
+  const [urlSearchParams, setUrlSearchParams] = useUrlParams(
+    DEFAULT_FILTER_URL_PARAMS
   );
+  const exposedParameters = React.useMemo(
+    () => convertUrlToParams(urlSearchParams),
+    [urlSearchParams]
+  );
+
   const [isFavorite, setIsFavorite] = React.useState(
-    localFavorites.isSaved(initialParams)
+    localFavorites.isSaved(exposedParameters)
   );
-
-  React.useEffect(() => {
-    setInternSearchParams(getSearchFromUrl());
-  }, [search]);
 
   const setSearchParams = React.useCallback(
     (modifier) => {
-      let newState;
+      let newExposedParameters;
       if (typeof modifier === "function") {
-        newState = modifier(searchParams);
+        newExposedParameters = modifier(exposedParameters);
       } else {
-        newState = modifier;
+        newExposedParameters = modifier;
       }
       const isDifferent = Object.keys(DEFAULT_FILTER_STATE).some(
-        (key) => newState[key] !== searchParams[key]
+        (key) => newExposedParameters[key] !== exposedParameters[key]
       );
       if (!isDifferent) {
         return;
       }
 
-      setIsFavorite(localFavorites.isSaved(newState));
-      setInternSearchParams(newState);
-      updateSearchSearchParams(newState);
+      setIsFavorite(localFavorites.isSaved(newExposedParameters));
+      setUrlSearchParams(convertParamsToUrl(newExposedParameters));
     },
-    [searchParams]
+    [exposedParameters, setUrlSearchParams]
   );
 
   const toggleFavorite = React.useCallback(
     (imageSrc = logo, title = "") => {
-      const isSaved = localFavorites.isSaved(searchParams);
+      const isSaved = localFavorites.isSaved(exposedParameters);
 
       if (isSaved) {
-        localFavorites.removeQuestion(searchParams);
+        localFavorites.removeQuestion(exposedParameters);
       } else {
-        localFavorites.addQuestion(searchParams, logo, title);
+        localFavorites.addQuestion(exposedParameters, logo, title);
       }
 
       setIsFavorite(!isSaved);
     },
-    [searchParams]
+    [exposedParameters]
   );
 
-  return [searchParams, setSearchParams, isFavorite, toggleFavorite];
+  return [exposedParameters, setSearchParams, isFavorite, toggleFavorite];
 }

@@ -8,7 +8,7 @@ import Typography from "@mui/material/Typography";
 import LoadingButton from "@mui/lab/LoadingButton";
 
 import { useTranslation } from "react-i18next";
-import { useLocation, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import robotoff from "../../robotoff";
 import off from "../../off";
@@ -16,6 +16,7 @@ import { IS_DEVELOPMENT_MODE } from "../../const";
 import LogoGrid from "../../components/LogoGrid";
 import LogoForm from "../../components/LogoForm";
 import BackToTop from "../../components/BackToTop";
+import useUrlParams from "../../hooks/useUrlParams";
 
 //  Only for testing purpose
 import { sleep } from "../../utils";
@@ -48,61 +49,6 @@ const DEFAULT_LOGO_SEARCH_STATE = {
   logo_id: "",
   index: "",
 };
-
-export function useLogoSearchParams() {
-  const { search } = useLocation();
-
-  const [logoSearchParams, setInternLogoSearchParams] = React.useState(() => {
-    const urlParams = new URLSearchParams(window.location.search);
-    const initialSearchParams = DEFAULT_LOGO_SEARCH_STATE;
-    for (let key of Object.keys(DEFAULT_LOGO_SEARCH_STATE)) {
-      if (urlParams.has(key)) {
-        initialSearchParams[key] = urlParams.get(key);
-      }
-    }
-    initialSearchParams.count = Number.parseInt(initialSearchParams.count);
-    return initialSearchParams;
-  });
-
-  React.useEffect(() => {
-    setInternLogoSearchParams(() => {
-      const urlParams = new URLSearchParams(window.location.search);
-      const initialSearchParams = DEFAULT_LOGO_SEARCH_STATE;
-      for (let key of Object.keys(DEFAULT_LOGO_SEARCH_STATE)) {
-        if (urlParams.has(key)) {
-          if (key === "count") {
-            initialSearchParams[key] = Number.parseInt(urlParams.get(key));
-          } else {
-            initialSearchParams[key] = urlParams.get(key);
-          }
-        }
-      }
-      return { ...initialSearchParams };
-    });
-  }, [search]);
-
-  const setLogoSearchParams = React.useCallback(
-    (modifier) => {
-      let newState;
-      if (typeof modifier === "function") {
-        newState = modifier(logoSearchParams);
-      } else {
-        newState = modifier;
-      }
-      const isDifferent = Object.keys(DEFAULT_LOGO_SEARCH_STATE).some(
-        (key) => newState[key] !== logoSearchParams[key]
-      );
-      if (!isDifferent) {
-        return;
-      }
-
-      setInternLogoSearchParams(newState);
-      updateSearchSearchParams(newState);
-    },
-    [logoSearchParams]
-  );
-  return [logoSearchParams, setLogoSearchParams];
-}
 
 const loadLogos = async (
   targetLogoId,
@@ -166,7 +112,8 @@ const DEFAULT_LOGO_STATE = { logos: [], isLoading: true, referenceLogo: {} };
 export default function LogoAnnotation() {
   const { t } = useTranslation();
 
-  const [logoSearchParams] = useLogoSearchParams();
+  const [logoSearchParams] = useUrlParams(DEFAULT_LOGO_SEARCH_STATE);
+
   const [logoState, setLogoState] = React.useState(DEFAULT_LOGO_STATE);
 
   // Restart fetching with higher count
