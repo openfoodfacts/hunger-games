@@ -1,36 +1,36 @@
 {
   "home": {
     "game_selector": {
-      "title": "What game would you like to play?",
+      "title": "Welk spel zou je willen spelen?",
       "cards": {
         "questions": {
           "title": "Vragen",
-          "description": "Tell us if the given image answers the questions"
+          "description": "Vertel ons of de gegeven afbeelding de vragen beantwoordt"
         },
         "logos": {
           "title": "Logo's",
-          "description": "Find all the logos matching the given logo"
+          "description": "Vind alle logo's die overeenkomen met het gegeven logo"
         },
         "eco_score": {
           "title": "Eco-Score",
-          "description": "Annotate the questions with the highest value"
+          "description": "Annoteer de vragen met de hoogste waarde"
         }
       }
     },
     "account_band": {
-      "title": "Want to make your contribution count? Create an account or sign in on Open Food Facts!",
+      "title": "Wil je je bijdrage tellen? Maak een account aan of log in op Open Food Facts!",
       "log_in": "Log in",
       "sign_up": "Aanmelden",
-      "contribution_details": "Learn why your contribution matters"
+      "contribution_details": "Ontdek waarom uw bijdrage ertoe doet"
     },
-    "saved_filters": "Saved Filters",
+    "saved_filters": "Opgeslagen filters",
     "contribution_modal": {
-      "title": "Your contribution matters",
-      "information": "Hunger Games is an effort to leverage the results of our OCR. When you use Hunger Games by Open Food Facts, you improve our entire database which helps the community make better food choices. We gathers your annotations and use them to make Open Food Facts more accurate and effecient.",
-      "thank_you": "Thank you for helping us improve Open Food Facts so that more people can use it easily."
+      "title": "Jouw bijdrage doet ertoe",
+      "information": "Hunger Games is een poging om de resultaten van onze OCR te benutten. Wanneer u Hunger Games van Open Food Facts gebruikt, verbetert u onze hele database, waardoor de gemeenschap betere voedselkeuzes kan maken. We verzamelen uw annotaties en gebruiken ze om Open Food Facts nauwkeuriger en efficiënter te maken.",
+      "thank_you": "Bedankt dat je ons helpt Open Food Facts te verbeteren, zodat meer mensen het gemakkelijk kunnen gebruiken."
     },
     "statistics": {
-      "title": "{{userName}} statistics:",
+      "title": "{{userName}} statistieken:",
       "editorCount": {
         "title": "Bewerkers",
         "description": "Aantal uitgevoerde edities"
@@ -46,8 +46,8 @@
     }
   },
   "flagged_images": {
-    "title": "Images flagged by users",
-    "loading": "Loading"
+    "title": "Afbeeldingen gemarkeerd door gebruikers",
+    "loading": "Aan het laden"
   },
   "questions": {
     "category": "categorie",
@@ -98,15 +98,15 @@
         "apply": "Toepassen"
       }
     },
-    "other_questions": "Other questions",
-    "send": "Send",
-    "flag": "Something wrong? Report/flag the image!",
-    "unflag": "Unflag the image",
-    "reset_filters": "Reset filters",
+    "other_questions": "Overige vragen",
+    "send": "Verzenden",
+    "flag": "Iets mis? Meld/markeer de afbeelding!",
+    "unflag": "Onmarkeer de afbeelding",
+    "reset_filters": "Filters resetten",
     "log_in": "Log in",
     "sign_up": "Aanmelden",
-    "login_title": "Make your annotation count",
-    "login_description": "Currently you are not logged in Open Food Facts. To get your answers directly applied to products, and associated to your account, consider logging in to your Open Food Facts account, or creating one"
+    "login_title": "Laat uw annotatie tellen",
+    "login_description": "Momenteel bent u niet ingelogd in Open Food Facts. Als u uw antwoorden direct op producten wilt toepassen en aan uw account wilt koppelen, kunt u overwegen om in te loggen op uw Open Food Facts-account of om er een te maken"
   },
   "menu": {
     "title": "Hunger Games",
@@ -119,8 +119,8 @@
     "settings": "Instellingen",
     "eco-score": "Eco-Score",
     "nutriscore": "Nutri-Score",
-    "logged_in_user": "logged as {{userName}}",
-    "log_in": "click to login"
+    "logged_in_user": "ingelogd als {{userName}}",
+    "log_in": "klik om in te loggen"
   },
   "insights": {
     "insights": "Inzichten",
@@ -148,14 +148,14 @@
     "created_at": "Aangemaakt op",
     "completed_at": "Voltooid op",
     "automatic": "Automatisch",
-    "human_required": "Human required",
-    "edit_product": "Open product edit",
-    "view_product": "Open product page"
+    "human_required": "Mens vereist",
+    "edit_product": "Product bewerken openen",
+    "view_product": "Productpagina openen"
   },
   "logos": {
     "annotation": "Aantekening: ",
     "annotations": "Logo aantekeningen",
-    "task_description": "Select all logos that are exactly the same, and give them a name like \"en:EU Organic\" and a type like \"label\".",
+    "task_description": "Selecteer alle logo's die exact hetzelfde zijn, en geef ze een naam zoals \"en:EU Organic\" en een type zoals \"label\".",
     "select_all": "Selecteer alles",
     "unselect_all": "Deselecteer alles",
     "distance": "Afstand:",
@@ -178,62 +178,62 @@
     "no_found": "Geen logo gevonden",
     "search": "Zoeken",
     "number_of_results": "Aantal resultaten:",
-    "loading": "Loading...",
+    "loading": "Bezig met laden...",
     "refresh": "Herladen",
-    "search_specific": "Search specific logo",
-    "load_more": "Load more",
+    "search_specific": "Zoek specifiek logo",
+    "load_more": "Meer laden",
     "no_results": "Geen logo gevonden",
-    "result_count": "Shows {{showing}} on {{available}} available",
-    "flag": "Something wrong? Report/flag the image!",
-    "unflag": "Unflag the image",
-    "crop_image_title": "crop of the logo"
+    "result_count": "Toont {{showing}} op {{available}} beschikbaar",
+    "flag": "Iets mis? Meld/markeer de afbeelding!",
+    "unflag": "Onmarkeer de afbeelding",
+    "crop_image_title": "bijsnijden van het logo"
   },
   "settings": {
     "settings": "Instellingen",
     "language": "Taal",
     "save": "Opslaan",
     "reportIssue": "Bug gevonden? Laat het ons weten",
-    "dev_mode_title": "To explore the database content, activate the dev mode",
-    "dev_mode_label": "Dev Mode",
-    "dev_page_toggle": "Show {{name}} page"
+    "dev_mode_title": "Activeer de dev-modus om de database-inhoud te verkennen",
+    "dev_mode_label": "Dev-modus",
+    "dev_page_toggle": "Toon {{name}} pagina"
   },
   "helper": {
     "welcome": {
       "page1": {
-        "title": "Welcome to Hunger Games",
-        "text1": "Hunger Games is a collection of mini-games that help contribute to Open Food Facts in many ways. You can play are really exciting games from anywhere. Here is a guided tour of the entire website which will get you started.",
-        "text2": "Make sure to login to the Open Food Facts website to get credit for your contributions. If you make a mistake, please take the time to correct it by heading to the website.",
-        "text3": "In case of any doubt about the games, click on the question mark icon at the top right of the page, and you can reach us on slack at the #hunger-games channel"
+        "title": "Welkom bij Hunger Games",
+        "text1": "Hunger Games is een verzameling minigames die op vele manieren bijdragen aan Open Food Facts. Je kunt overal echt spannende spellen spelen. Hier is een rondleiding door de hele website waarmee u aan de slag kunt.",
+        "text2": "Zorg ervoor dat u inlogt op de Open Food Facts-website om krediet te krijgen voor uw bijdragen. Als je een fout maakt, neem dan de tijd om deze te corrigeren door naar de website te gaan.",
+        "text3": "In het geval van twijfel over de spellen, klik op het vraagteken icoon rechtsboven op de pagina en je kunt ons bereiken op slack op het #hunger-games kanaal"
       },
       "page2": {
-        "title": "Questions Game",
-        "text1": "Does the food product belong to this brand?",
-        "text2": "Answer simply with a <strong>yes/no</strong>! Don't know the answer? That's alright, just skip it.",
-        "text3": "You can also use your keyboard keys o,n and k.",
-        "text4": "You can <strong>filter</strong> the products based on country, brands, popularity and much more!",
-        "text5": "If you don't want to do this every single time, you can also <strong>save the filters</strong> by clicking on the star. Next time you come back, find the saved filters on the home page itself"
+        "title": "Vragen Spel",
+        "text1": "Is het voedingsproduct van dit merk?",
+        "text2": "Antwoord gewoon met een <strong>ja/nee</strong>! Weet u het antwoord niet? Dat is prima, sla het gewoon over.",
+        "text3": "Je kunt ook je toetsenbord toetsen o,n en k gebruiken.",
+        "text4": "U kunt <strong>producten <strong> filteren</strong> op basis van land, merken, populariteit en nog veel meer!",
+        "text5": "Als u dit niet elke keer wilt doen, kunt u ook de filters <strong>opslaan</strong> door op de ster te klikken. De volgende keer dat u terugkomt, vindt u de opgeslagen filters op de startpagina zelf"
       },
       "page3": {
-        "title": "Logos Game",
-        "text1": "Our another really loved game is the logos game where you have to <strong> select all the logos</strong> you feel are the same.",
-        "text2": "As shown in the example, once you select all the similar logos, just type their value and select where it is a brand, a label or something else. It's that simple!"
+        "title": "Logo's spel",
+        "text1": "Onze andere echt geliefde game is het logo-spel waarbij je <strong> alle logo's</strong> moet selecteren waarvan je denkt dat ze hetzelfde zijn.",
+        "text2": "Zoals in het voorbeeld wordt getoond, typt u, zodra u alle vergelijkbare logo's hebt geselecteerd, hun waarde en selecteert u of het een merk, een label of iets anders is. Het is zo simpel!"
       },
       "page4": {
-        "title": "Eco-Score Questions Game",
-        "text1": "Help us finish the remaining questions in the most high priority labels!",
-        "text2": "These cards are linked to labels used in the computation of the eco-score.",
-        "text3": "<strong>What is Eco-Score?</strong>",
-        "text4": "Eco-Score captures the total environmental footprint, making it easier for consumers to compare products and decide which is better for the environment."
+        "title": "Eco-Score Vragen Spel",
+        "text1": "Help ons de resterende vragen met de hoogste prioriteit af te ronden!",
+        "text2": "Deze kaarten zijn gekoppeld aan labels die gebruikt worden bij de berekening van de eco-score.",
+        "text3": "<strong>Wat is de Eco-score?</strong>",
+        "text4": "Eco-Score legt de totale ecologische voetafdruk vast, waardoor het voor consumenten gemakkelijker wordt om producten te vergelijken en te beslissen welke beter is voor het milieu."
       },
       "page5": {
         "title": "Instellingen",
-        "text1": "Set your preferred language, and report issues from our settings page.",
-        "text2": "If you're a developer, you can also explore our database content using our dev mode."
+        "text1": "Stel uw voorkeurstaal in en rapporteer problemen op onze instellingenpagina.",
+        "text2": "Als u een ontwikkelaar bent, kunt u ook onze database-inhoud verkennen met behulp van onze dev-modus."
       },
       "page6": {
-        "title": "Tour",
-        "text1": "Got stuck somewhere? Want to take the tour again?",
-        "text2": "Just click on the question mark and start the journey again!"
+        "title": "Rondleiding",
+        "text1": "Zit je ergens vast? Wil je de rondleiding nog een keer doen?",
+        "text2": "Klik gewoon op het vraagteken en start de reis opnieuw!"
       }
     },
     "logos": {
@@ -272,9 +272,9 @@
       "3": "Selectie van voedingsstoffen",
       "4": "Waarden Selectie"
     },
-    "loading": "Loading...",
-    "unknown_brand": "Brand Unknown",
-    "value_missing": "You forgot to input value duuuuuuuuuuuuuuuuude",
+    "loading": "Bezig met laden...",
+    "unknown_brand": "Merk onbekend",
+    "value_missing": "U bent vergeten de waarde in te voeren",
     "next": "Volgende stap",
     "prev": "Vorige stap",
     "skip": "Dit product overslaan",
@@ -310,21 +310,21 @@
     }
   },
   "notfound": {
-    "image_alt": "404 not found",
+    "image_alt": "404 niet gevonden",
     "nopage": "Oeps! De pagina die je zoekt kan niet worden gevonden.",
     "redirect1": "Wil je wat spelletjes spelen?",
     "redirect2": "Klik hier"
   },
   "nutriscore": {
-    "image_alt": "cropped image",
-    "label": "Annotate nutriscore logo detection by batch.",
-    "description": "To do so select all the images showing the correct/wrong nutriscore value ({{label}}), and click on the bottom buttons to say if you selected a set correct or wrong ones.",
-    "images_remaining": "Still {{remaining}} to annotate",
-    "image_sizes": "Image sizes",
-    "zoom_on_logo": "zoom on logo",
+    "image_alt": "bijgesneden afbeelding",
+    "label": "Annoteer nutriscore-logodetectie per batch.",
+    "description": "Selecteer hiervoor alle afbeeldingen met de juiste/foute nutriscore-waarde ({{label}}), en klik op de onderste knoppen om aan te geven of u een juiste of verkeerde set hebt geselecteerd.",
+    "images_remaining": "Nog {{remaining}} over om te annoteren",
+    "image_sizes": "Afbeeldingsgrootte",
+    "zoom_on_logo": "zoom op logo",
     "select_all": "Selecteer alles",
     "deselect_all": "Deselecteer alles",
-    "incorrect": "Wrong",
+    "incorrect": "Mis",
     "correct": "Correct ({{label}})"
   }
 }

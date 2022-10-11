@@ -1,36 +1,36 @@
 {
   "home": {
     "game_selector": {
-      "title": "What game would you like to play?",
+      "title": "Hangi oyunu oynamak istersin?",
       "cards": {
         "questions": {
           "title": "Sorular",
-          "description": "Tell us if the given image answers the questions"
+          "description": "Verilen görüntünün soruları yanıtlayıp yanıtlamadığını bize bildirin"
         },
         "logos": {
           "title": "Logolar",
-          "description": "Find all the logos matching the given logo"
+          "description": "Verilen logoyla eşleşen tüm logoları bulun"
         },
         "eco_score": {
           "title": "Eko-skor",
-          "description": "Annotate the questions with the highest value"
+          "description": "En yüksek değere sahip sorulara açıklama ekleyin"
         }
       }
     },
     "account_band": {
-      "title": "Want to make your contribution count? Create an account or sign in on Open Food Facts!",
+      "title": "Katkılarınızı saymak ister misiniz? Bir hesap oluşturun veya Open Food Facts'te oturum açın!",
       "log_in": "Kullanıcı adı",
       "sign_up": "Kaydol",
-      "contribution_details": "Learn why your contribution matters"
+      "contribution_details": "Katkınızın neden önemli olduğunu öğrenin"
     },
-    "saved_filters": "Saved Filters",
+    "saved_filters": "Kaydedilen Filtreler",
     "contribution_modal": {
-      "title": "Your contribution matters",
-      "information": "Hunger Games is an effort to leverage the results of our OCR. When you use Hunger Games by Open Food Facts, you improve our entire database which helps the community make better food choices. We gathers your annotations and use them to make Open Food Facts more accurate and effecient.",
-      "thank_you": "Thank you for helping us improve Open Food Facts so that more people can use it easily."
+      "title": "Katkınız önemlidir",
+      "information": "Açlık Oyunları, OCR'mizin sonuçlarından yararlanma çabasıdır. Open Food Facts tarafından Açlık Oyunları'nı kullandığınızda, topluluğun daha iyi yemek seçimleri yapmasına yardımcı olan tüm veritabanımızı geliştirirsiniz. Ek açıklamalarınızı toplar ve bunları Open Food Facts'i daha doğru ve verimli hale getirmek için kullanırız.",
+      "thank_you": "Daha fazla insanın kolayca kullanabilmesi için Open Food Facts'i geliştirmemize yardımcı olduğunuz için teşekkür ederiz."
     },
     "statistics": {
-      "title": "{{userName}} statistics:",
+      "title": "{{userName}} istatistikler:",
       "editorCount": {
         "title": "Editör",
         "description": "Yapılan baskı sayısı"
@@ -46,8 +46,8 @@
     }
   },
   "flagged_images": {
-    "title": "Images flagged by users",
-    "loading": "Loading"
+    "title": "Kullanıcılar tarafından işaretlenen resimler",
+    "loading": "Yükleniyor"
   },
   "questions": {
     "category": "kategori",
@@ -98,18 +98,18 @@
         "apply": "Uygula"
       }
     },
-    "other_questions": "Other questions",
-    "send": "Send",
-    "flag": "Something wrong? Report/flag the image!",
-    "unflag": "Unflag the image",
-    "reset_filters": "Reset filters",
+    "other_questions": "Diğer sorular",
+    "send": "Gönder",
+    "flag": "Ters giden birşey mi var? Resmi rapor edin/işaretleyin!",
+    "unflag": "Resmin işaretini kaldır",
+    "reset_filters": "Filtreleri sıfırla",
     "log_in": "Kullanıcı adı",
     "sign_up": "Kaydol",
-    "login_title": "Make your annotation count",
-    "login_description": "Currently you are not logged in Open Food Facts. To get your answers directly applied to products, and associated to your account, consider logging in to your Open Food Facts account, or creating one"
+    "login_title": "Ek açıklama sayınızı yapın",
+    "login_description": "Şu anda Open Food Facts'e giriş yapmadınız. Yanıtlarınızın doğrudan ürünlere uygulanmasını ve hesabınızla ilişkilendirilmesini sağlamak için Open Food Facts hesabınıza giriş yapmayı veya bir hesap oluşturmayı düşünün"
   },
   "menu": {
-    "title": "Hunger Games",
+    "title": "Açlık Oyunları",
     "games": "Oyunlar",
     "questions": "Sorular",
     "logos": "Logolar",
@@ -119,8 +119,8 @@
     "settings": "Ayarlar",
     "eco-score": "Eko-skor",
     "nutriscore": "Nutri-Score",
-    "logged_in_user": "logged as {{userName}}",
-    "log_in": "click to login"
+    "logged_in_user": "{{userName}} olarak günlüğe kaydedildi",
+    "log_in": "giriş yapmak için tıklayın"
   },
   "insights": {
     "insights": "Yönelimler",
@@ -148,14 +148,14 @@
     "created_at": "Oluşturulma tarihi",
     "completed_at": "Tamamlanma tarihi",
     "automatic": "Otomatik",
-    "human_required": "Human required",
-    "edit_product": "Open product edit",
-    "view_product": "Open product page"
+    "human_required": "İnsan gerekli",
+    "edit_product": "Ürün düzenlemeyi aç",
+    "view_product": "Ürün sayfasını aç"
   },
   "logos": {
     "annotation": "Açıklama: ",
     "annotations": "Logo açıklamaları",
-    "task_description": "Select all logos that are exactly the same, and give them a name like \"en:EU Organic\" and a type like \"label\".",
+    "task_description": "Tamamen aynı olan tüm logoları seçin ve onlara \"en:EU Organik\" gibi bir ad ve \"etiket\" gibi bir tür verin.",
     "select_all": "Tümünü seç",
     "unselect_all": "Tümünün seçimini kaldır",
     "distance": "Mesafe:",
@@ -178,62 +178,62 @@
     "no_found": "Logo bulunamadı",
     "search": "Ara",
     "number_of_results": "Sonuç sayısı:",
-    "loading": "Loading...",
+    "loading": "Yükleniyor...",
     "refresh": "Yenile",
-    "search_specific": "Search specific logo",
-    "load_more": "Load more",
+    "search_specific": "Belirli bir logoyu ara",
+    "load_more": "Daha fazla yükle",
     "no_results": "Logo bulunamadı",
-    "result_count": "Shows {{showing}} on {{available}} available",
-    "flag": "Something wrong? Report/flag the image!",
-    "unflag": "Unflag the image",
-    "crop_image_title": "crop of the logo"
+    "result_count": "Mevcut {{showing}} üzerinde {{available}} gösteriliyor",
+    "flag": "Ters giden birşey mi var? Resmi rapor edin/işaretleyin!",
+    "unflag": "Resmin işaretini kaldır",
+    "crop_image_title": "logoyu kırp"
   },
   "settings": {
     "settings": "Ayarlar",
     "language": "Dil",
     "save": "Kaydet",
     "reportIssue": "Bir hata mı buldun?, lütfen bizi bilgilendirin",
-    "dev_mode_title": "To explore the database content, activate the dev mode",
-    "dev_mode_label": "Dev Mode",
-    "dev_page_toggle": "Show {{name}} page"
+    "dev_mode_title": "Veritabanı içeriğini keşfetmek için geliştirme modunu etkinleştirin",
+    "dev_mode_label": "Geliştirici Modu",
+    "dev_page_toggle": "{{name}} sayfayı göster"
   },
   "helper": {
     "welcome": {
       "page1": {
-        "title": "Welcome to Hunger Games",
-        "text1": "Hunger Games is a collection of mini-games that help contribute to Open Food Facts in many ways. You can play are really exciting games from anywhere. Here is a guided tour of the entire website which will get you started.",
-        "text2": "Make sure to login to the Open Food Facts website to get credit for your contributions. If you make a mistake, please take the time to correct it by heading to the website.",
-        "text3": "In case of any doubt about the games, click on the question mark icon at the top right of the page, and you can reach us on slack at the #hunger-games channel"
+        "title": "Açlık Oyunları'na hoş geldiniz",
+        "text1": "Açlık Oyunları, Open Food Facts'e birçok yönden katkıda bulunmaya yardımcı olan bir mini oyunlar koleksiyonudur. Gerçekten heyecan verici oyunları her yerden oynayabilirsiniz. İşte başlamanıza yardımcı olacak tüm web sitesinin rehberli bir turu.",
+        "text2": "Katkılarınız için kredi almak için Open Food Facts web sitesine giriş yaptığınızdan emin olun. Bir hata yaparsanız, lütfen web sitesine giderek düzeltmek için zaman ayırın.",
+        "text3": "Oyunlarla ilgili herhangi bir şüpheniz olması durumunda sayfanın sağ üst köşesindeki soru işareti ikonuna tıklayarak bize #açlık-oyunları kanalından slack'ten ulaşabilirsiniz"
       },
       "page2": {
-        "title": "Questions Game",
-        "text1": "Does the food product belong to this brand?",
-        "text2": "Answer simply with a <strong>yes/no</strong>! Don't know the answer? That's alright, just skip it.",
-        "text3": "You can also use your keyboard keys o,n and k.",
-        "text4": "You can <strong>filter</strong> the products based on country, brands, popularity and much more!",
-        "text5": "If you don't want to do this every single time, you can also <strong>save the filters</strong> by clicking on the star. Next time you come back, find the saved filters on the home page itself"
+        "title": "Sorular Oyunu",
+        "text1": "Gıda ürünü bu markaya mı ait?",
+        "text2": "Sadece <strong>evet/hayır</strong>ile yanıtlayın! Cevabı bilmiyor musun? Sorun değil, sadece atlayın.",
+        "text3": "Ayrıca o,n ve k klavye tuşlarınızı da kullanabilirsiniz.",
+        "text4": "Ürünleri ülke, marka, popülerlik ve çok daha fazlasına göre <strong>filtreleyebilirsiniz</strong>!",
+        "text5": "Bunu her seferinde yapmak istemiyorsanız, yıldızı tıklayarak <strong>filtreleri kaydedebilirsiniz</strong>. Bir dahaki sefere geri döndüğünüzde, kayıtlı filtreleri ana sayfanın kendisinde bulun"
       },
       "page3": {
-        "title": "Logos Game",
-        "text1": "Our another really loved game is the logos game where you have to <strong> select all the logos</strong> you feel are the same.",
-        "text2": "As shown in the example, once you select all the similar logos, just type their value and select where it is a brand, a label or something else. It's that simple!"
+        "title": "Logolar Oyunu",
+        "text1": "Gerçekten sevdiğimiz bir başka oyun da, aynı olduğunu düşündüğünüz <strong> tüm logoları seçmeniz</strong> gereken logolar oyunudur.",
+        "text2": "Örnekte gösterildiği gibi, tüm benzer logoları seçtikten sonra, değerlerini yazın ve nerede bir marka, bir etiket veya başka bir şey olduğunu seçin. Bu kadar basit!"
       },
       "page4": {
-        "title": "Eco-Score Questions Game",
-        "text1": "Help us finish the remaining questions in the most high priority labels!",
-        "text2": "These cards are linked to labels used in the computation of the eco-score.",
-        "text3": "<strong>What is Eco-Score?</strong>",
-        "text4": "Eco-Score captures the total environmental footprint, making it easier for consumers to compare products and decide which is better for the environment."
+        "title": "Eko-Skor Soruları Oyunu",
+        "text1": "En yüksek öncelikli etiketlerde kalan soruları bitirmemize yardım edin!",
+        "text2": "Bu kartlar eko-skorun hesaplanmasında kullanılan etiketlerle bağlantılıdır.",
+        "text3": "<strong>Eko-Skor nedir?</strong>",
+        "text4": "Eco-Score, toplam çevresel ayak izini yakalayarak tüketicilerin ürünleri karşılaştırmasını ve hangisinin çevre için daha iyi olduğuna karar vermesini kolaylaştırır."
       },
       "page5": {
         "title": "Ayarlar",
-        "text1": "Set your preferred language, and report issues from our settings page.",
-        "text2": "If you're a developer, you can also explore our database content using our dev mode."
+        "text1": "Tercih ettiğiniz dili ayarlayın ve ayarlar sayfamızdan sorunları bildirin.",
+        "text2": "Bir geliştiriciyseniz, geliştirme modumuzu kullanarak veritabanı içeriğimizi de keşfedebilirsiniz."
       },
       "page6": {
-        "title": "Tour",
-        "text1": "Got stuck somewhere? Want to take the tour again?",
-        "text2": "Just click on the question mark and start the journey again!"
+        "title": "Tur",
+        "text1": "Bir yere mi takıldınız? Turu tekrar yapmak ister misiniz?",
+        "text2": "Sadece soru işaretine tıklayın ve yolculuğa yeniden başlayın!"
       }
     },
     "logos": {
@@ -272,9 +272,9 @@
       "3": "Besinlerin Seçimi",
       "4": "Değerlerin Seçimi"
     },
-    "loading": "Loading...",
-    "unknown_brand": "Brand Unknown",
-    "value_missing": "You forgot to input value duuuuuuuuuuuuuuuuude",
+    "loading": "Yükleniyor...",
+    "unknown_brand": "Marka Bilinmiyor",
+    "value_missing": "Değer girmeyi unuttun duuuuuuuuuuuuuuuuuude",
     "next": "Sıradaki adım",
     "prev": "Önceki adım",
     "skip": "Bu ürünü atla",
@@ -310,21 +310,21 @@
     }
   },
   "notfound": {
-    "image_alt": "404 not found",
+    "image_alt": "404 Bulunamadı",
     "nopage": "Tüh! Aradığınız sayfa bulunamadı.",
     "redirect1": "Biraz oyun oynamak ister misin?",
     "redirect2": "Buraya tıklayın"
   },
   "nutriscore": {
-    "image_alt": "cropped image",
-    "label": "Annotate nutriscore logo detection by batch.",
-    "description": "To do so select all the images showing the correct/wrong nutriscore value ({{label}}), and click on the bottom buttons to say if you selected a set correct or wrong ones.",
-    "images_remaining": "Still {{remaining}} to annotate",
-    "image_sizes": "Image sizes",
-    "zoom_on_logo": "zoom on logo",
+    "image_alt": "kırpılmış görüntü",
+    "label": "Toplu olarak Nutriscore logosu algılamasına açıklama ekleyin.",
+    "description": "Bunu yapmak için doğru/yanlış nutriscore değerini ({{label}}) gösteren tüm resimleri seçin ve doğru veya yanlış olanları seçip seçmediğinizi belirtmek için alttaki düğmelere tıklayın.",
+    "images_remaining": "Hala {{remaining}} açıklama eklenecek",
+    "image_sizes": "Görüntü boyutları",
+    "zoom_on_logo": "logoyu yakınlaştır",
     "select_all": "Tümünü seç",
     "deselect_all": "Tümünün seçimini kaldır",
-    "incorrect": "Wrong",
-    "correct": "Correct ({{label}})"
+    "incorrect": "Yanlış",
+    "correct": "Doğru ({{label}})"
   }
 }
