@@ -77,7 +77,7 @@ const useUrlParams = (defaultParams) => {
       if (typeof modifier === "function") {
         newParams = modifier(parameters);
       } else {
-        newParams = parameters;
+        newParams = modifier;
       }
       setParameters(newParams);
       setUrlParams(newParams, defaultParams);
