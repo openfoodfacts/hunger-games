@@ -6,7 +6,6 @@ import Typography from "@mui/material/Typography";
 import { Button, Divider, Modal } from "@mui/material";
 import QuestionCard from "../../components/QuestionCard";
 import { localFavorites } from "../../localeStorageManager";
-import Opportunities from "../../components/Opportunities";
 import LoginContext from "../../contexts/login";
 import HomeCards from "./homeCards";
 import UserData from "./UserData";
@@ -159,10 +158,6 @@ const Home = () => {
           </Modal>
         </React.Fragment>
       )}
-
-      <Opportunities type="category" />
-      <Opportunities type="label" />
-      <Opportunities type="brand" />
     </>
   );
 };

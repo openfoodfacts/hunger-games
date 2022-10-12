@@ -2,7 +2,6 @@ import * as React from "react";
 import { Link } from "react-router-dom";
 
 import Typography from "@mui/material/Typography";
-import Stack from "@mui/material/Stack";
 import Card from "@mui/material/Card";
 import CardActionArea from "@mui/material/CardActionArea";
 import CardContent from "@mui/material/CardContent";
@@ -13,11 +12,13 @@ import robotoff from "../robotoff";
 import { getQuestionSearchParams } from "./QuestionFilter/useFilterSearch";
 
 const OpportunityCard = (props) => {
-  const { type, value, questionNumber } = props;
+  const { type, value, campaign, country, questionNumber } = props;
 
   const targetUrl = `/questions?${getQuestionSearchParams({
     valueTag: value,
     insightType: type,
+    campaign,
+    country,
     sortByPopularity: true,
   })}`;
   return (
@@ -58,7 +59,7 @@ const CardSkeleton = () => (
 );
 
 const Opportunities = (props) => {
-  const { type } = props;
+  const { type, campaign, country } = props;
   const [remainingQuestions, setRemainingQuestions] = React.useState([]);
   const [isLoading, setIsLoading] = React.useState(true);
 
@@ -67,7 +68,7 @@ const Opportunities = (props) => {
     setIsLoading(true);
 
     robotoff
-      .getUnansweredValues({ type, page: 1 })
+      .getUnansweredValues({ type, campaign, country, page: 1 })
       .then(({ data }) => {
         if (isValid) {
           setRemainingQuestions(data.questions);
@@ -81,20 +82,18 @@ const Opportunities = (props) => {
     return () => {
       isValid = false;
     };
-  }, [type]);
+  }, [type, campaign, country]);
 
   return (
     <Box sx={{ mt: 2, px: 2 }}>
       <Typography variant="h6" component="h3">
         {type}
       </Typography>
-      <Stack
-        spacing={2}
-        direction="row"
+      <Box
         sx={{
-          maxWidth: "100%",
-          overflow: "auto",
-          py: 2,
+          display: "grid",
+          gridTemplateColumns: "repeat(auto-fill, minmax(200px, 1fr))",
+          gridGap: "10px 50px",
         }}
       >
         {isLoading &&
@@ -107,10 +106,12 @@ const Opportunities = (props) => {
               key={value}
               value={value}
               type={type}
+              campaign={campaign}
+              country={country}
               questionNumber={questionNumber}
             />
           ))}
-      </Stack>
+      </Box>
     </Box>
   );
 };
