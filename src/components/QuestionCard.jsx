@@ -19,21 +19,12 @@ import ClearIcon from "@mui/icons-material/Clear";
 import robotoff from "../robotoff";
 import { localFavorites } from "../localeStorageManager";
 import logo from "../assets/logo.png";
-import { reformatValueTag } from "../utils";
 import { getQuestionSearchParams } from "./QuestionFilter";
 import { useTranslation } from "react-i18next";
 
 const QuestionCard = (props) => {
   const { filterState, imageSrc, title, showFilterResume, editableTitle } =
     props;
-  const {
-    sortByPopularity,
-    insightType,
-    valueTag,
-    brandFilter,
-    countryFilter,
-    campaign,
-  } = filterState;
 
   const { t } = useTranslation();
 
@@ -43,35 +34,15 @@ const QuestionCard = (props) => {
 
   React.useEffect(() => {
     let isValid = true;
-    robotoff
-      .questions(
-        {
-          sortBy: sortByPopularity ? "popular" : "random",
-          insightType,
-          valueTag,
-          brands: reformatValueTag(brandFilter),
-          country: countryFilter !== "en:world" ? countryFilter : null,
-          campaign,
-        },
-        1,
-        1
-      )
-      .then(({ data }) => {
-        if (isValid) {
-          setQuestionNumber(data?.count ?? 0);
-        }
-      });
+    robotoff.questions(filterState, 1, 1).then(({ data }) => {
+      if (isValid) {
+        setQuestionNumber(data?.count ?? 0);
+      }
+    });
     return () => {
       isValid = false;
     };
-  }, [
-    sortByPopularity,
-    insightType,
-    valueTag,
-    brandFilter,
-    countryFilter,
-    campaign,
-  ]);
+  }, [filterState]);
 
   const [isEditMode, setIsEditMode] = React.useState(false);
   const [innerTitle, setInnerTitle] = React.useState(title);

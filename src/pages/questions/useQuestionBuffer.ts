@@ -1,32 +1,14 @@
 import React from "react";
 import { NO_QUESTION_LEFT, SKIPPED_INSIGHT } from "../../const";
 import robotoff, { QuestionInterface } from "../../robotoff";
-import { reformatValueTag } from "../../utils";
 
 const PAGE_SIZE = 10;
 const BUFFER_THRESHOLD = 5;
 const DEFAULT_ANSWER_DELAY = 5000;
 
 const loadQuestions = async (filterState, page = 1, pageSize = PAGE_SIZE) => {
-  const {
-    insightType,
-    brandFilter,
-    valueTag,
-    countryFilter,
-    sortByPopularity,
-    campaign,
-  } = filterState;
-
-  console.log({ insightType });
   const { data: dataFetched } = await robotoff.questions(
-    {
-      sortBy: sortByPopularity ? "popular" : "random",
-      insightType,
-      valueTag,
-      brands: reformatValueTag(brandFilter),
-      country: countryFilter !== "en:world" ? countryFilter : null,
-      campaign,
-    },
+    filterState,
     pageSize,
     page
   );
