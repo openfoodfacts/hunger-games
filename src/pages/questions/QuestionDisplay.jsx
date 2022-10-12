@@ -66,11 +66,7 @@ const getValueTagExamplesURL = (question) => {
 
 const getNbOfQuestionForValue = async ({ type, valueTag }) => {
   const { data: dataFetched } = await robotoff.questions(
-    "random",
-    type,
-    valueTag,
-    null,
-    null,
+    { sortBy: "random", insightType: type, valueTag },
     1
   );
   return dataFetched.count;

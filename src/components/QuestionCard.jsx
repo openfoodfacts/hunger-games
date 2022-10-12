@@ -32,6 +32,7 @@ const QuestionCard = (props) => {
     valueTag,
     brandFilter,
     countryFilter,
+    campaign,
   } = filterState;
 
   const { t } = useTranslation();
@@ -44,11 +45,14 @@ const QuestionCard = (props) => {
     let isValid = true;
     robotoff
       .questions(
-        sortByPopularity ? "popular" : "random",
-        insightType,
-        valueTag,
-        reformatValueTag(brandFilter),
-        countryFilter !== "en:world" ? countryFilter : null,
+        {
+          sortBy: sortByPopularity ? "popular" : "random",
+          insightType,
+          valueTag,
+          brands: reformatValueTag(brandFilter),
+          country: countryFilter !== "en:world" ? countryFilter : null,
+          campaign,
+        },
         1,
         1
       )
@@ -60,7 +64,14 @@ const QuestionCard = (props) => {
     return () => {
       isValid = false;
     };
-  }, [sortByPopularity, insightType, valueTag, brandFilter, countryFilter]);
+  }, [
+    sortByPopularity,
+    insightType,
+    valueTag,
+    brandFilter,
+    countryFilter,
+    campaign,
+  ]);
 
   const [isEditMode, setIsEditMode] = React.useState(false);
   const [innerTitle, setInnerTitle] = React.useState(title);
@@ -206,6 +217,14 @@ const QuestionCard = (props) => {
                   <Chip
                     size="small"
                     label={`${t("questions.filters.short_label.popularity")}`}
+                  />
+                )}
+                {filterState?.campaign && (
+                  <Chip
+                    size="small"
+                    label={`${t("questions.filters.short_label.campaign")}: ${
+                      filterState?.campaign
+                    }`}
                   />
                 )}
               </Box>
