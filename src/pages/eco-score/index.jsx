@@ -5,10 +5,12 @@ import Stack from "@mui/material/Stack";
 import TextField from "@mui/material/TextField";
 import MenuItem from "@mui/material/MenuItem";
 import Divider from "@mui/material/Divider";
+import Typography from "@mui/material/Typography";
 
 import QuestionCard from "../../components/QuestionCard";
 import Opportunities from "../../components/Opportunities";
 import { DEFAULT_FILTER_STATE } from "../../components/QuestionFilter/const";
+import { useTranslation } from "react-i18next";
 
 const ecoScoreCards = [
   {
@@ -161,6 +163,7 @@ export const countryNames = [
 ];
 
 export default function EcoScore() {
+  const { t } = useTranslation();
   const [selectedCountry, setSelectedCountry] = React.useState(countryNames[0]);
 
   return (
@@ -170,6 +173,7 @@ export default function EcoScore() {
         padding: 5,
       }}
     >
+      <Typography>{t("eco-score.description")}</Typography>
       <Box
         sx={{
           display: "grid",
@@ -187,6 +191,7 @@ export default function EcoScore() {
       <Divider />
       <TextField
         select
+        label={t("eco-score.countryLabel")}
         value={selectedCountry}
         onChange={(event) => {
           console.log(event.target.value);
