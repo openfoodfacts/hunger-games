@@ -27,7 +27,7 @@
     "contribution_modal": {
       "title": "התרומות שלך מביאות לשינוי",
       "information": "Hunger Games is an effort to leverage the results of our OCR. When you use Hunger Games by Open Food Facts, you improve our entire database which helps the community make better food choices. We gathers your annotations and use them to make Open Food Facts more accurate and effecient.",
-      "thank_you": "Thank you for helping us improve Open Food Facts so that more people can use it easily."
+      "thank_you": "תודה לך על הסיוע בשיפור Open Food Facts כדי שיותר אנשים יוכלו להשתמש בשירות בקלות."
     },
     "statistics": {
       "title": "סטטיסטיקה על {{userName}}:",
@@ -106,7 +106,7 @@
     "log_in": "שם משתמש",
     "sign_up": "הרשמה",
     "login_title": "להעניק ערך להערות שלך",
-    "login_description": "Currently you are not logged in Open Food Facts. To get your answers directly applied to products, and associated to your account, consider logging in to your Open Food Facts account, or creating one"
+    "login_description": "לא נכנסת ל־Open Food Facts. כדי שהשאלות יחולו ישירות על מוצרים וישויכו לחשבון שלך, כדאי להיכנס לחשבון שלך ב־Open Food Facts או ליצור אחד"
   },
   "menu": {
     "title": "משחקי הרעב",
@@ -202,7 +202,7 @@
       "page1": {
         "title": "ברוך בואך למשחקי הרעב",
         "text1": "Hunger Games is a collection of mini-games that help contribute to Open Food Facts in many ways. You can play are really exciting games from anywhere. Here is a guided tour of the entire website which will get you started.",
-        "text2": "Make sure to login to the Open Food Facts website to get credit for your contributions. If you make a mistake, please take the time to correct it by heading to the website.",
+        "text2": "נא לוודא שנכנסת לחשבון שלך באתר של Open Food Facts כדי לקבל קרדיט על התרומות שלך. אם שגית, נא להשקיע מזמנך לגשת לאתר ולתקן את הטעות.",
         "text3": "In case of any doubt about the games, click on the question mark icon at the top right of the page, and you can reach us on slack at the #hunger-games channel"
       },
       "page2": {
@@ -210,25 +210,25 @@
         "text1": "האם מוצר המזון שייך למותג הזה?",
         "text2": "יש לענות בפשטות עם <strong>כן/לא</strong>! אין לך תשובה? זה בסדר, אפשר פשוט לדלג על זה.",
         "text3": "אפשר גם להשתמש במקשי המקלדת o,‏ n ו־k.",
-        "text4": "You can <strong>filter</strong> the products based on country, brands, popularity and much more!",
-        "text5": "If you don't want to do this every single time, you can also <strong>save the filters</strong> by clicking on the star. Next time you come back, find the saved filters on the home page itself"
+        "text4": "אפשר <strong>לסנן</strong> את המוצרים לפי מדינה, מותגים, פופולריות ועוד!",
+        "text5": "כדי להימנע מחזרה על הפעולה הזאת כל פעם מחדש, אפשר <strong>לשמור את המסננים</strong> בלחיצה על הכוכב. עם שובך, ניתן למצוא את המסננים השמורים בעמוד הבית עצמו"
       },
       "page3": {
         "title": "משחק לוגואים",
         "text1": "עוד משחק מעולה הוא משחק הלוגואים שבו צריך <strong> לבחור את כל הלוגואים</strong> שלדעתך הם זהים.",
-        "text2": "As shown in the example, once you select all the similar logos, just type their value and select where it is a brand, a label or something else. It's that simple!"
+        "text2": "כפי שמופיע בתמונה, לאחר שבחרת את כל הלוגואים הדומים, עליך פשוט להקליד את הערך שלהם ולבחור האם זה מותג, תוויות או משהו אחר. זה עד כדי כך פשוט!"
       },
       "page4": {
         "title": "משחק שאלות על Eco-Score",
-        "text1": "Help us finish the remaining questions in the most high priority labels!",
-        "text2": "These cards are linked to labels used in the computation of the eco-score.",
+        "text1": "מזמינים אותך לסייע לנו לסיים את השאלות הנותרות בתוויות עם העדיפות הגבוהה ביותר!",
+        "text2": "הכרטיסים האלו מקושרים לתוויות שנעשה בהן שימוש בחישוב ה־Eco-Score.",
         "text3": "<strong>מה זה Eco-Score?</strong>",
-        "text4": "Eco-Score captures the total environmental footprint, making it easier for consumers to compare products and decide which is better for the environment."
+        "text4": "Eco-Score מתחשב בטביעת הרגל הסביבתית הכוללת, מה שמקל על צרכנים להשוות בין מוצרים ולהחליט מה עדיף לאיכות הסביבה."
       },
       "page5": {
         "title": "הגדרות",
         "text1": "ניתן להגדיר את השפה המועדפת עליך ולדווח על תקלות דרך עמוד ההגדרות שלנו.",
-        "text2": "If you're a developer, you can also explore our database content using our dev mode."
+        "text2": "מפתחים יכולים גם לחקור את תוכן מסד הנתונים שלנו באמצעות המצב למפתחים."
       },
       "page6": {
         "title": "סיור",

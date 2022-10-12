@@ -1,7 +1,7 @@
 {
   "home": {
     "game_selector": {
-      "title": "Hvad ønsker du at spille?",
+      "title": "Hvilket spil ønskes spillet?",
       "cards": {
         "questions": {
           "title": "Spørgsmål",
@@ -18,19 +18,19 @@
       }
     },
     "account_band": {
-      "title": "Want to make your contribution count? Create an account or sign in on Open Food Facts!",
+      "title": "Vil ha' dit bidrag til at tælle? Opret en konto eller log ind på Open Food Facts!",
       "log_in": "Brugernavn",
       "sign_up": "Tilmeld dig",
-      "contribution_details": "Learn why your contribution matters"
+      "contribution_details": "Læs, hvorfor individuelle bidrag er vigtige"
     },
-    "saved_filters": "Saved Filters",
+    "saved_filters": "Gemte filtre",
     "contribution_modal": {
-      "title": "Your contribution matters",
-      "information": "Hunger Games is an effort to leverage the results of our OCR. When you use Hunger Games by Open Food Facts, you improve our entire database which helps the community make better food choices. We gathers your annotations and use them to make Open Food Facts more accurate and effecient.",
-      "thank_you": "Thank you for helping us improve Open Food Facts so that more people can use it easily."
+      "title": "Individuelle bidrag gør en forskel",
+      "information": "Hunger Games er et forsøg på at udnytte resultaterne af vores OCR. Når Hunger Games fra Open Food Facts benyttes, forbedres hele databasen, hvilket hjælper fællesskabet med at træffe bedre madvalg. Individuelle annoteringer indsamles mhp. at gøre Open Food Facts mere præcis og effektiv.",
+      "thank_you": "Tak, for hjælpen med at forbedre Open Food Facts, så flere nemt kan bruge den."
     },
     "statistics": {
-      "title": "{{userName}} statistics:",
+      "title": "{{userName}}-statistik:",
       "editorCount": {
         "title": "Redaktør",
         "description": "Antal udførte redigeringer"
@@ -46,8 +46,8 @@
     }
   },
   "flagged_images": {
-    "title": "Images flagged by users",
-    "loading": "Loading"
+    "title": "Brugermarkerede fotos",
+    "loading": "Indlæser"
   },
   "questions": {
     "category": "kategori",
@@ -98,15 +98,15 @@
         "apply": "Anvend"
       }
     },
-    "other_questions": "Other questions",
-    "send": "Send",
-    "flag": "Something wrong? Report/flag the image!",
-    "unflag": "Unflag the image",
-    "reset_filters": "Reset filters",
+    "other_questions": "Andre spørgsmål",
+    "send": "Indsend",
+    "flag": "Noget galt? Anmeld/markér fotoet!",
+    "unflag": "Afmarkér fotoet",
+    "reset_filters": "Nulstil filtre",
     "log_in": "Brugernavn",
     "sign_up": "Tilmeld dig",
-    "login_title": "Make your annotation count",
-    "login_description": "Currently you are not logged in Open Food Facts. To get your answers directly applied to products, and associated to your account, consider logging in to your Open Food Facts account, or creating one"
+    "login_title": "Få din anmærkning til at tælle",
+    "login_description": "Der er pt. ikke logget på Open Food Facts. For at få svar direkte anvendt på produkter samt knyttet til en konto, kan man overveje at logge ind på sin Open Food Facts-konto (eller oprette én)"
   },
   "menu": {
     "title": "Hunger Games",
@@ -119,8 +119,8 @@
     "settings": "Indstillinger",
     "eco-score": "Øko-Score",
     "nutriscore": "Nutri-Score",
-    "logged_in_user": "logged as {{userName}}",
-    "log_in": "click to login"
+    "logged_in_user": "logget som {{userName}}",
+    "log_in": "klik for at logge ind"
   },
   "insights": {
     "insights": "Indblik",
@@ -148,14 +148,14 @@
     "created_at": "Oprettet d.",
     "completed_at": "Færdiggjort d.",
     "automatic": "Automatisk",
-    "human_required": "Human required",
-    "edit_product": "Open product edit",
-    "view_product": "Open product page"
+    "human_required": "Person nødvendig",
+    "edit_product": "Åbn produktredigering",
+    "view_product": "Åbn produktside"
   },
   "logos": {
     "annotation": "Anmærkning: ",
     "annotations": "Logoanmærkninger",
-    "task_description": "Select all logos that are exactly the same, and give them a name like \"en:EU Organic\" and a type like \"label\".",
+    "task_description": "Vælg alle logoer, som er nøjagtigt ens, og giv dem et navn og type, såsom \"da:EU Organisk\" og \"etiket\".",
     "select_all": "Vælg alle",
     "unselect_all": "Fravælg alle",
     "distance": "Afstand:",
@@ -178,14 +178,14 @@
     "no_found": "Intet logo fundet",
     "search": "Søg",
     "number_of_results": "Antal resultater:",
-    "loading": "Loading...",
+    "loading": "Indlæser...",
     "refresh": "Opfrisk",
-    "search_specific": "Search specific logo",
-    "load_more": "Load more",
+    "search_specific": "Søg efter bestemt logo",
+    "load_more": "Indlæs mere",
     "no_results": "Intet logo fundet",
     "result_count": "Shows {{showing}} on {{available}} available",
-    "flag": "Something wrong? Report/flag the image!",
-    "unflag": "Unflag the image",
+    "flag": "Noget galt? Anmeld/markér fotoet!",
+    "unflag": "Afmarkér fotoet",
     "crop_image_title": "crop of the logo"
   },
   "settings": {
@@ -193,47 +193,47 @@
     "language": "Sprog",
     "save": "Gem",
     "reportIssue": "Fundet en fejl? Fortæl os det venligst",
-    "dev_mode_title": "To explore the database content, activate the dev mode",
-    "dev_mode_label": "Dev Mode",
-    "dev_page_toggle": "Show {{name}} page"
+    "dev_mode_title": "For at udforske databaseindholdet, så aktivér udviklertilstand",
+    "dev_mode_label": "Dev-tilstand",
+    "dev_page_toggle": "Vis {{name}}side"
   },
   "helper": {
     "welcome": {
       "page1": {
-        "title": "Welcome to Hunger Games",
-        "text1": "Hunger Games is a collection of mini-games that help contribute to Open Food Facts in many ways. You can play are really exciting games from anywhere. Here is a guided tour of the entire website which will get you started.",
-        "text2": "Make sure to login to the Open Food Facts website to get credit for your contributions. If you make a mistake, please take the time to correct it by heading to the website.",
-        "text3": "In case of any doubt about the games, click on the question mark icon at the top right of the page, and you can reach us on slack at the #hunger-games channel"
+        "title": "Velkommen til Hunger Games",
+        "text1": "Hunger Games er en samling minispil, som hver især bidrager til Open Food Facts på mange måder. Man kan spille virkelig spændende spil, uanset hvor man er. Her er en guidet rundtur på hele webstedet for at komme i gang.",
+        "text2": "Sørg for at være logget ind på Open Food Facts-webstedet for at blive krediteret for bidrag. Får man lavet en fejl, så tag venligst tiden til korrigere den via webstedet.",
+        "text3": "Ved tvivl omkring spillene, så klik på spørgsmålstegnet øverst til højre på siden, og man kan nå os via slack på kanalen #hunger-games"
       },
       "page2": {
-        "title": "Questions Game",
-        "text1": "Does the food product belong to this brand?",
-        "text2": "Answer simply with a <strong>yes/no</strong>! Don't know the answer? That's alright, just skip it.",
-        "text3": "You can also use your keyboard keys o,n and k.",
-        "text4": "You can <strong>filter</strong> the products based on country, brands, popularity and much more!",
-        "text5": "If you don't want to do this every single time, you can also <strong>save the filters</strong> by clicking on the star. Next time you come back, find the saved filters on the home page itself"
+        "title": "Spørgsmålsspil",
+        "text1": "Tilhører fødevareproduktet dette mærke?",
+        "text2": "Besvares med <strong>ja/nej</strong>! Kendes svaret ikke? Det er OK, bare overspring det.",
+        "text3": "Tastaturtasterne o, n og k kan også bruges.",
+        "text4": "Produkterne kan <strong>filtreres</strong> baseret på land, mærker, popularitet mv.!",
+        "text5": "Vil man ikke at gøre dette hver eneste gang, kan man også <strong>gemme filtrene</strong> ved at klikke på stjernen. Næste gang man vender tilbage, findes de gemte filtre på selve hjemmesiden"
       },
       "page3": {
-        "title": "Logos Game",
-        "text1": "Our another really loved game is the logos game where you have to <strong> select all the logos</strong> you feel are the same.",
-        "text2": "As shown in the example, once you select all the similar logos, just type their value and select where it is a brand, a label or something else. It's that simple!"
+        "title": "Logospil",
+        "text1": "Et andet virkelig elsket spil er logospillet, hvor man skal <strong> vælge alle de logoer</strong>, man mener er ens.",
+        "text2": "Som vist i eksemplet, når alle lignende logoer er valgt, så skriv blot deres værdi og vælg, hvilke er mærker, etiketter eller andet. Så enkelt er det!"
       },
       "page4": {
-        "title": "Eco-Score Questions Game",
-        "text1": "Help us finish the remaining questions in the most high priority labels!",
-        "text2": "These cards are linked to labels used in the computation of the eco-score.",
-        "text3": "<strong>What is Eco-Score?</strong>",
-        "text4": "Eco-Score captures the total environmental footprint, making it easier for consumers to compare products and decide which is better for the environment."
+        "title": "Øko-Score Spørgsmålsspil",
+        "text1": "Hjælp os færdiggøre de resterende spørgsmål i de højest prioriterede etiketter!",
+        "text2": "Disse kort er knyttet til etiketter brugt i beregningen af Øko-Score.",
+        "text3": "<strong>Hvad er Øko-Score?</strong>",
+        "text4": "Øko-Score udtrykker det samlede miljøaftryk, og hjælper dermed forbrugerne med at sammenligne produkter og afgøre, hvad der er bedre for miljøet."
       },
       "page5": {
         "title": "Indstillinger",
-        "text1": "Set your preferred language, and report issues from our settings page.",
-        "text2": "If you're a developer, you can also explore our database content using our dev mode."
+        "text1": "Angiv foretrukne sprog, og anmeld problematikker via indstillingssiden.",
+        "text2": "Er man udvikler, kan databaseindholdet også udforskes vha. dev-tilstanden."
       },
       "page6": {
-        "title": "Tour",
-        "text1": "Got stuck somewhere? Want to take the tour again?",
-        "text2": "Just click on the question mark and start the journey again!"
+        "title": "Rundvisning",
+        "text1": "Hæger fast et sted? Vil tage rundvisningen igen?",
+        "text2": "Klik blot på spørgsmålstegnet og start rejsen igen!"
       }
     },
     "logos": {
@@ -272,9 +272,9 @@
       "3": "Næringsstofvalg",
       "4": "Vværdivalg"
     },
-    "loading": "Loading...",
-    "unknown_brand": "Brand Unknown",
-    "value_missing": "You forgot to input value duuuuuuuuuuuuuuuuude",
+    "loading": "Indlæser...",
+    "unknown_brand": "Mærke ukendt",
+    "value_missing": "Hov, der blev ikke angivet nogen værdi",
     "next": "Næste trin",
     "prev": "Foreg. trin",
     "skip": "Overspring dette produkt",
@@ -310,21 +310,21 @@
     }
   },
   "notfound": {
-    "image_alt": "404 not found",
+    "image_alt": "404 - Ikke fundet",
     "nopage": "Den søgte side findes ikke.",
     "redirect1": "Spille nogle spil?",
     "redirect2": "Klik hér"
   },
   "nutriscore": {
-    "image_alt": "cropped image",
-    "label": "Annotate nutriscore logo detection by batch.",
-    "description": "To do so select all the images showing the correct/wrong nutriscore value ({{label}}), and click on the bottom buttons to say if you selected a set correct or wrong ones.",
-    "images_remaining": "Still {{remaining}} to annotate",
-    "image_sizes": "Image sizes",
-    "zoom_on_logo": "zoom on logo",
+    "image_alt": "beskåret foto",
+    "label": "Anmærk Nutri-Score via masselogodetektering.",
+    "description": "For at gøre dette, så vælg alle fotos med korrekte/forkerte Nutri-Score værdier ({{label}}), og klik på knapperne nederst for at angive, om det valgte sæt er korrekt/forkert.",
+    "images_remaining": "Stadig {{remaining}} at kommentere",
+    "image_sizes": "Fotostørrelser",
+    "zoom_on_logo": "zoom på logo",
     "select_all": "Vælg alle",
     "deselect_all": "Fravælg alle",
-    "incorrect": "Wrong",
-    "correct": "Correct ({{label}})"
+    "incorrect": "Forkert",
+    "correct": "Korrekt ({{label}})"
   }
 }
