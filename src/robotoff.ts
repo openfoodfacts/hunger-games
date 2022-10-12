@@ -1,7 +1,7 @@
 import axios from "axios";
 import { ROBOTOFF_API_URL, IS_DEVELOPMENT_MODE } from "./const";
 import { getLang } from "./localeStorageManager";
-import { removeEmptyKeys } from "./utils";
+import { reformatValueTag, removeEmptyKeys } from "./utils";
 
 export interface QuestionInterface {
   barcode: string;
@@ -49,28 +49,35 @@ const robotoff = {
       });
   },
 
-  questions(searchParams, count = 10, page) {
+  questions(filterState, count = 10, page) {
     const {
-      sortBy = "popular",
       insightType,
+      brandFilter,
       valueTag,
-      brands,
-      country,
+      countryFilter,
+      sortByPopularity,
       campaign,
-    } = searchParams;
+    } = filterState;
+
+    const searchParams = {
+      insight_types: insightType,
+      value_tag: valueTag,
+      brands: reformatValueTag(brandFilter),
+      country: countryFilter !== "en:world" ? countryFilter : null,
+      campaign,
+    };
+
     const lang = getLang();
 
     console.log(searchParams);
     return axios.get<GetQuestionsResponse>(
-      `${ROBOTOFF_API_URL}/questions/${sortBy}`,
+      `${ROBOTOFF_API_URL}/questions/${
+        sortByPopularity ? "popular" : "random"
+      }`,
       {
         params: removeEmptyKeys({
+          ...searchParams,
           lang,
-          insight_types: insightType,
-          value_tag: valueTag,
-          brands,
-          country,
-          campaign,
           count,
           page,
         }),
