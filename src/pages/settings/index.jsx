@@ -71,7 +71,7 @@ export default function Settings() {
         />
       </div>
       {devMode &&
-        ["nutriscore", "insights"].map((pageUrl) => (
+        ["logos", "nutriscore", "insights"].map((pageUrl) => (
           <FormControlLabel
             key={pageUrl}
             checked={visiblePages[pageUrl]}

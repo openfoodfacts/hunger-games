@@ -27,7 +27,7 @@ import Welcome from "./welcome/Welcome";
 const pages = [
   { translationKey: "menu.games" },
   { url: "questions", translationKey: "menu.questions" },
-  { url: "logos", translationKey: "menu.logos" },
+  { url: "logos", translationKey: "menu.logos", devModeOnly: true },
   { url: "eco-score", translationKey: "menu.eco-score" },
   { translationKey: "menu.manage" },
   { url: "insights", translationKey: "menu.insights", devModeOnly: true },
