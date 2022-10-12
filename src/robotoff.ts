@@ -69,7 +69,6 @@ const robotoff = {
 
     const lang = getLang();
 
-    console.log(searchParams);
     return axios.get<GetQuestionsResponse>(
       `${ROBOTOFF_API_URL}/questions/${
         sortByPopularity ? "popular" : "random"
@@ -214,14 +213,21 @@ const robotoff = {
 
   getUnansweredValues(params: {
     type: "label" | "brand" | "category";
+    country;
+    campaign;
     page?: number;
   }) {
-    const type = params.type;
     let page = params.page ?? 1;
     page = page >= 1 ? page : 1;
 
     return axios.get(
-      `${ROBOTOFF_API_URL}/questions/unanswered/?type=${type}&page=${page}`
+      `${ROBOTOFF_API_URL}/questions/unanswered/?${Object.keys({
+        ...params,
+        page,
+      })
+        .filter((key) => params[key] !== undefined)
+        .map((key) => `${key}=${params[key]}`)
+        .join("&")}`
     );
   },
 };

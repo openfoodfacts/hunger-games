@@ -81,7 +81,7 @@ const QuestionCard = (props) => {
           : "success"
       }
     >
-      <Card sx={{ width: 350 }}>
+      <Card sx={{ minWidth: 200, maxWidth: 350 }}>
         <CardContent>
           <Stack spacing={1} direction="row" alignItems="center">
             {isEditMode ? (
