@@ -49,19 +49,29 @@ const robotoff = {
       });
   },
 
-  questions(sortBy, insightTypes, valueTag, brands, country, count = 10, page) {
+  questions(searchParams, count = 10, page) {
+    const {
+      sortBy = "popular",
+      insightType,
+      valueTag,
+      brands,
+      country,
+      campaign,
+    } = searchParams;
     const lang = getLang();
 
+    console.log(searchParams);
     return axios.get<GetQuestionsResponse>(
       `${ROBOTOFF_API_URL}/questions/${sortBy}`,
       {
         params: removeEmptyKeys({
-          count,
           lang,
-          insight_types: insightTypes,
+          insight_types: insightType,
           value_tag: valueTag,
           brands,
           country,
+          campaign,
+          count,
           page,
         }),
       }
@@ -124,7 +134,7 @@ const robotoff = {
 
   getInsights(
     barcode = "",
-    insightTypes = "",
+    insightType = "",
     valueTag = "",
     annotation = "",
     page = 1,
@@ -138,7 +148,7 @@ const robotoff = {
     return axios.get(`${ROBOTOFF_API_URL}/insights`, {
       params: removeEmptyKeys({
         barcode,
-        insight_types: insightTypes,
+        insight_types: insightType,
         value_tag: valueTag,
         annotation,
         page,

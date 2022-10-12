@@ -78,7 +78,8 @@
         "value": "value",
         "country": "country",
         "brand": "brand",
-        "popularity": "popularity"
+        "popularity": "popularity",
+        "campaign": "camp"
       },
       "long_label": {
         "type": "Question Type",
@@ -86,11 +87,13 @@
         "country": "Product Country",
         "brand": "Product Brand",
         "popularity": "Sort by popularity",
-        "edit": ""
+        "edit": "",
+        "campaign": "Campaign"
       },
       "placeholders": {
         "value": "Value (fanta, en:organic,...)",
-        "brand": "auchan, danone, herta, ..."
+        "brand": "auchan, danone, herta, ...",
+        "campaign": "Annotation campaigns"
       },
       "actions": {
         "edit": "Edit Filters",

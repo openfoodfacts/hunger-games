@@ -4,7 +4,10 @@ export const DEFAULT_FILTER_STATE = {
   countryFilter: "",
   sortByPopularity: true,
   valueTag: "",
+  campaign: "",
 };
+
+export const campagnes = ["agribalyse-category"];
 
 export const countryNames = [
   "",
@@ -37,6 +40,7 @@ export const key2urlParam = {
   countryFilter: "country",
   insightType: "type",
   sortByPopularity: "sorted",
+  campaign: "campaign",
 };
 
 const urlParams2Key = {};

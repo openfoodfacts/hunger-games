@@ -23,7 +23,7 @@ import { useTranslation } from "react-i18next";
 
 import LabelFilter from "./LabelFilter";
 import brands from "../../assets/brands.json";
-import { countryNames, insightTypesNames } from "./const";
+import { countryNames, insightTypesNames, campagnes } from "./const";
 import { DialogActions, DialogContent } from "@mui/material";
 
 export const QuestionFilter = ({
@@ -52,6 +52,9 @@ export const QuestionFilter = ({
   const [innerSortByPopularity, setInnerSortByPopularity] = React.useState(
     filterState?.sortByPopularity
   );
+  const [innerCampaign, setInnerCampaign] = React.useState(
+    filterState?.campaign
+  );
 
   const resetFilter = () => {
     setInnerInsightType(filterState?.insightType);
@@ -59,15 +62,25 @@ export const QuestionFilter = ({
     setInnerCountryFilter(filterState?.countryFilter);
     setInnerBrandFilter(filterState?.brandFilter);
     setInnerSortByPopularity(filterState?.sortByPopularity);
+    setInnerCampaign(filterState?.campaign);
     setIsOpen(false);
   };
   const applyFilter = () => {
+    console.log({
+      insightType: innerInsightType,
+      valueTag: innerValueTag,
+      countryFilter: innerCountryFilter,
+      brandFilter: innerBrandFilter,
+      sortByPopularity: innerSortByPopularity,
+      campaign: innerCampaign,
+    });
     setFilterState({
       insightType: innerInsightType,
       valueTag: innerValueTag,
       countryFilter: innerCountryFilter,
       brandFilter: innerBrandFilter,
       sortByPopularity: innerSortByPopularity,
+      campaign: innerCampaign,
     });
     setIsOpen(false);
   };
@@ -98,6 +111,11 @@ export const QuestionFilter = ({
       prevInnerSortByPopularity !== filterState?.sortByPopularity
         ? filterState?.sortByPopularity
         : prevInnerSortByPopularity
+    );
+    setInnerCampaign((prevInnerInnerCampaign) =>
+      prevInnerInnerCampaign !== filterState?.campaign
+        ? filterState?.campaign
+        : prevInnerInnerCampaign
     );
   }, [filterState]);
 
@@ -166,6 +184,19 @@ export const QuestionFilter = ({
                 setFilterState((state) => ({
                   ...state,
                   sortByPopularity: false,
+                }));
+              }}
+            />
+          )}
+          {filterState?.campaign && (
+            <Chip
+              label={`${t("questions.filters.short_label.campaign")}: ${
+                filterState?.campaign
+              }`}
+              onDelete={() => {
+                setFilterState((state) => ({
+                  ...state,
+                  campaign: "",
                 }));
               }}
             />
@@ -261,6 +292,22 @@ export const QuestionFilter = ({
                 />
               )}
             />
+
+            <TextField
+              select
+              value={innerCampaign}
+              onChange={(event) => {
+                setInnerCampaign(event.target.value);
+              }}
+              label={t("questions.filters.long_label.campaign")}
+              placeholder={t("questions.filters.placeholders.campaign")}
+            >
+              {campagnes.map((val) => (
+                <MenuItem key={val} value={val}>
+                  {val}
+                </MenuItem>
+              ))}
+            </TextField>
 
             <FormControlLabel
               value={innerSortByPopularity}
