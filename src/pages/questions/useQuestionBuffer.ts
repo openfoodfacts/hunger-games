@@ -1,30 +1,18 @@
 import React from "react";
 import { NO_QUESTION_LEFT, SKIPPED_INSIGHT } from "../../const";
 import robotoff, { QuestionInterface } from "../../robotoff";
-import { reformatValueTag } from "../../utils";
 
 const PAGE_SIZE = 10;
 const BUFFER_THRESHOLD = 5;
 const DEFAULT_ANSWER_DELAY = 5000;
 
 const loadQuestions = async (filterState, page = 1, pageSize = PAGE_SIZE) => {
-  const {
-    insightType,
-    brandFilter,
-    valueTag,
-    countryFilter,
-    sortByPopularity,
-  } = filterState;
-
   const { data: dataFetched } = await robotoff.questions(
-    sortByPopularity ? "popular" : "random",
-    insightType,
-    valueTag,
-    reformatValueTag(brandFilter),
-    countryFilter !== "en:world" ? countryFilter : null,
+    filterState,
     pageSize,
     page
   );
+
   const isLastPage = PAGE_SIZE * page > dataFetched.count;
 
   return {
@@ -204,7 +192,14 @@ function reducer(state: ReducerStateInterface, action: Actions) {
 }
 
 export const useQuestionBuffer = (
-  { sortByPopularity, insightType, valueTag, brandFilter, countryFilter },
+  {
+    sortByPopularity,
+    insightType,
+    valueTag,
+    brandFilter,
+    countryFilter,
+    campaign,
+  },
   pageSize,
   bufferThreshold = BUFFER_THRESHOLD
 ) => {
@@ -219,6 +214,7 @@ export const useQuestionBuffer = (
     valueTag,
     brandFilter,
     countryFilter,
+    campaign,
   });
 
   const answerQuestion = React.useCallback(
@@ -242,7 +238,8 @@ export const useQuestionBuffer = (
       filteringRef.current.insightType !== insightType ||
       filteringRef.current.brandFilter !== brandFilter ||
       filteringRef.current.countryFilter !== countryFilter ||
-      filteringRef.current.valueTag !== valueTag
+      filteringRef.current.valueTag !== valueTag ||
+      filteringRef.current.campaign !== campaign
     ) {
       filteringRef.current = {
         sortByPopularity,
@@ -250,10 +247,18 @@ export const useQuestionBuffer = (
         valueTag,
         brandFilter,
         countryFilter,
+        campaign,
       };
       dispatch({ type: "reset" });
     }
-  }, [sortByPopularity, insightType, valueTag, brandFilter, countryFilter]);
+  }, [
+    sortByPopularity,
+    insightType,
+    valueTag,
+    brandFilter,
+    countryFilter,
+    campaign,
+  ]);
 
   const noMoreQuestionsToLoad =
     bufferState.questions.findIndex(

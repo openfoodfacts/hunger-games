@@ -1,7 +1,7 @@
 import axios from "axios";
 import { ROBOTOFF_API_URL, IS_DEVELOPMENT_MODE } from "./const";
 import { getLang } from "./localeStorageManager";
-import { removeEmptyKeys } from "./utils";
+import { reformatValueTag, removeEmptyKeys } from "./utils";
 
 export interface QuestionInterface {
   barcode: string;
@@ -49,19 +49,35 @@ const robotoff = {
       });
   },
 
-  questions(sortBy, insightTypes, valueTag, brands, country, count = 10, page) {
+  questions(filterState, count = 10, page) {
+    const {
+      insightType,
+      brandFilter,
+      valueTag,
+      countryFilter,
+      sortByPopularity,
+      campaign,
+    } = filterState;
+
+    const searchParams = {
+      insight_types: insightType,
+      value_tag: valueTag,
+      brands: reformatValueTag(brandFilter),
+      country: countryFilter !== "en:world" ? countryFilter : null,
+      campaign,
+    };
+
     const lang = getLang();
 
     return axios.get<GetQuestionsResponse>(
-      `${ROBOTOFF_API_URL}/questions/${sortBy}`,
+      `${ROBOTOFF_API_URL}/questions/${
+        sortByPopularity ? "popular" : "random"
+      }`,
       {
         params: removeEmptyKeys({
-          count,
+          ...searchParams,
           lang,
-          insight_types: insightTypes,
-          value_tag: valueTag,
-          brands,
-          country,
+          count,
           page,
         }),
       }
@@ -124,7 +140,7 @@ const robotoff = {
 
   getInsights(
     barcode = "",
-    insightTypes = "",
+    insightType = "",
     valueTag = "",
     annotation = "",
     page = 1,
@@ -138,7 +154,7 @@ const robotoff = {
     return axios.get(`${ROBOTOFF_API_URL}/insights`, {
       params: removeEmptyKeys({
         barcode,
-        insight_types: insightTypes,
+        insight_types: insightType,
         value_tag: valueTag,
         annotation,
         page,
@@ -197,14 +213,21 @@ const robotoff = {
 
   getUnansweredValues(params: {
     type: "label" | "brand" | "category";
+    country;
+    campaign;
     page?: number;
   }) {
-    const type = params.type;
     let page = params.page ?? 1;
     page = page >= 1 ? page : 1;
 
     return axios.get(
-      `${ROBOTOFF_API_URL}/questions/unanswered/?type=${type}&page=${page}`
+      `${ROBOTOFF_API_URL}/questions/unanswered/?${Object.keys({
+        ...params,
+        page,
+      })
+        .filter((key) => params[key] !== undefined)
+        .map((key) => `${key}=${params[key]}`)
+        .join("&")}`
     );
   },
 };

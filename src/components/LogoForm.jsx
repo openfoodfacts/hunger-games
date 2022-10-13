@@ -69,7 +69,7 @@ const LogoForm = (props) => {
 
   return (
     <Stack
-      direction={{ xs: "column", sm: "row" }}
+      direction={{ xs: "column", md: "row" }}
       spacing={{ xs: 1, sm: 2, md: 4 }}
       {...other}
     >

@@ -22,6 +22,7 @@ import {
 } from "../../const";
 import { reformatValueTag } from "../../utils";
 import robotoff from "../../robotoff";
+import { getQuestionSearchParams } from "../../components/QuestionFilter/useFilterSearch";
 
 // const getFullSizeImage = (src) => {
 //   if (!src) {
@@ -35,7 +36,7 @@ import robotoff from "../../robotoff";
 //   return src.replace("400.jpg", "jpg");
 // };
 
-const getValueTagQuestionsURL = (question) => {
+const getValueTagQuestionsURL = (filterState, question) => {
   if (
     question !== null &&
     question &&
@@ -45,7 +46,11 @@ const getValueTagQuestionsURL = (question) => {
     const urlParams = new URLSearchParams();
     urlParams.append("type", question.insight_type);
     urlParams.append("value_tag", reformatValueTag(question.value_tag));
-    return `/questions?${urlParams.toString()}`;
+    return `/questions?${getQuestionSearchParams({
+      ...filterState,
+      insightType: question.insight_type,
+      valueTag: question.value_tag,
+    })}`;
   }
   return null;
 };
@@ -64,15 +69,8 @@ const getValueTagExamplesURL = (question) => {
   return "";
 };
 
-const getNbOfQuestionForValue = async ({ type, valueTag }) => {
-  const { data: dataFetched } = await robotoff.questions(
-    "random",
-    type,
-    valueTag,
-    null,
-    null,
-    1
-  );
+const getNbOfQuestionForValue = async (filterState) => {
+  const { data: dataFetched } = await robotoff.questions(filterState, 1);
   return dataFetched.count;
 };
 
@@ -83,7 +81,7 @@ const QuestionDisplay = ({
   filterState,
 }) => {
   const { t } = useTranslation();
-  const valueTagQuestionsURL = getValueTagQuestionsURL(question);
+  const valueTagQuestionsURL = getValueTagQuestionsURL(filterState, question);
   const valueTagExamplesURL = getValueTagExamplesURL(question);
   const [nbOfPotentialQuestion, setNbOfPotentialQuestions] =
     React.useState(null);
@@ -101,7 +99,8 @@ const QuestionDisplay = ({
     let validRequest = true;
 
     getNbOfQuestionForValue({
-      type: question?.insight_type,
+      ...filterState,
+      insightType: question?.insight_type,
       valueTag: question?.value_tag,
     })
       .then((nbQuestions) => {
@@ -114,7 +113,7 @@ const QuestionDisplay = ({
     return () => {
       validRequest = false;
     };
-  }, [filterState.valueTag, question?.insight_type, question?.value_tag]);
+  }, [filterState, question?.insight_type, question?.value_tag]);
 
   React.useEffect(() => {
     function handleShortCut(event) {

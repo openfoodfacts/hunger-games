@@ -2,6 +2,8 @@ import * as React from "react";
 
 import QuestionFilter from "../../components/QuestionFilter";
 import { useFilterSearch } from "../../components/QuestionFilter/useFilterSearch";
+import { DEFAULT_FILTER_STATE } from "../../components/QuestionFilter/const";
+
 import QuestionDisplay from "./QuestionDisplay";
 import ProductInformation from "./ProductInformation";
 import UserData from "./UserData";
@@ -27,12 +29,13 @@ export default function Questions() {
   const resetFilters = React.useCallback(
     () =>
       setFilterState((prevState) => ({
+        ...DEFAULT_FILTER_STATE,
         insightType: prevState.insightType,
         sortByPopularity: prevState.sortByPopularity,
       })),
     [setFilterState]
   );
-
+  console.log({ filterState });
   return (
     <Grid container spacing={2} p={2}>
       <Grid item xs={12} md={5}>

@@ -7,10 +7,12 @@ import FilterInsights from "./FilterInsights";
 import InsightGrid from "./InsightsGrid";
 import { useTranslation } from "react-i18next";
 
+import useUrlParams from "../../hooks/useUrlParams";
+
 export default function Insights() {
   const { t } = useTranslation();
 
-  const [filterState, setFilterState] = React.useState({
+  const [filterState, setFilterState] = useUrlParams({
     barcode: "",
     valueTag: "",
     insightType: "",

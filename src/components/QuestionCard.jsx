@@ -19,20 +19,12 @@ import ClearIcon from "@mui/icons-material/Clear";
 import robotoff from "../robotoff";
 import { localFavorites } from "../localeStorageManager";
 import logo from "../assets/logo.png";
-import { reformatValueTag } from "../utils";
 import { getQuestionSearchParams } from "./QuestionFilter";
 import { useTranslation } from "react-i18next";
 
 const QuestionCard = (props) => {
   const { filterState, imageSrc, title, showFilterResume, editableTitle } =
     props;
-  const {
-    sortByPopularity,
-    insightType,
-    valueTag,
-    brandFilter,
-    countryFilter,
-  } = filterState;
 
   const { t } = useTranslation();
 
@@ -42,25 +34,15 @@ const QuestionCard = (props) => {
 
   React.useEffect(() => {
     let isValid = true;
-    robotoff
-      .questions(
-        sortByPopularity ? "popular" : "random",
-        insightType,
-        valueTag,
-        reformatValueTag(brandFilter),
-        countryFilter !== "en:world" ? countryFilter : null,
-        1,
-        1
-      )
-      .then(({ data }) => {
-        if (isValid) {
-          setQuestionNumber(data?.count ?? 0);
-        }
-      });
+    robotoff.questions(filterState, 1, 1).then(({ data }) => {
+      if (isValid) {
+        setQuestionNumber(data?.count ?? 0);
+      }
+    });
     return () => {
       isValid = false;
     };
-  }, [sortByPopularity, insightType, valueTag, brandFilter, countryFilter]);
+  }, [filterState]);
 
   const [isEditMode, setIsEditMode] = React.useState(false);
   const [innerTitle, setInnerTitle] = React.useState(title);
@@ -99,7 +81,7 @@ const QuestionCard = (props) => {
           : "success"
       }
     >
-      <Card sx={{ width: 350 }}>
+      <Card sx={{ minWidth: 200, maxWidth: 350 }}>
         <CardContent>
           <Stack spacing={1} direction="row" alignItems="center">
             {isEditMode ? (
@@ -206,6 +188,14 @@ const QuestionCard = (props) => {
                   <Chip
                     size="small"
                     label={`${t("questions.filters.short_label.popularity")}`}
+                  />
+                )}
+                {filterState?.campaign && (
+                  <Chip
+                    size="small"
+                    label={`${t("questions.filters.short_label.campaign")}: ${
+                      filterState?.campaign
+                    }`}
                   />
                 )}
               </Box>
