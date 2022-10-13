@@ -78,7 +78,8 @@
         "value": "värde",
         "country": "land",
         "brand": "varumärke",
-        "popularity": "popularitet"
+        "popularity": "popularitet",
+        "campaign": "camp"
       },
       "long_label": {
         "type": "Frågetyp",
@@ -86,11 +87,13 @@
         "country": "Produktland",
         "brand": "Produktmärke",
         "popularity": "Sortera efter popularitet",
-        "edit": ""
+        "edit": "",
+        "campaign": "Campaign"
       },
       "placeholders": {
         "value": "Värde (fanta, sv:ekologiskt,...)",
-        "brand": "arla, gevalia, risenta, ..."
+        "brand": "arla, gevalia, risenta, ...",
+        "campaign": "Annotation campaigns"
       },
       "actions": {
         "edit": "Redigera filter",
@@ -190,7 +193,7 @@
   },
   "settings": {
     "settings": "Inställningar",
-    "language": "Spåk",
+    "language": "Språk",
     "save": "Spara",
     "reportIssue": "Found a bug?, please let us know",
     "dev_mode_title": "To explore the database content, activate the dev mode",
@@ -326,5 +329,9 @@
     "deselect_all": "Avmarkera alla",
     "incorrect": "Wrong",
     "correct": "Correct ({{label}})"
+  },
+  "eco-score": {
+    "description": "Here is a summary of questions that could improve Eco-Score computation",
+    "countryLabel": "Land"
   }
 }

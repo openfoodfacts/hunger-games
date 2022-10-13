@@ -78,7 +78,8 @@
         "value": "값",
         "country": "국가",
         "brand": "브랜드",
-        "popularity": "인기도"
+        "popularity": "인기도",
+        "campaign": "camp"
       },
       "long_label": {
         "type": "질문 유형",
@@ -86,11 +87,13 @@
         "country": "제조국",
         "brand": "제품 제조사",
         "popularity": "인기순 정렬",
-        "edit": ""
+        "edit": "",
+        "campaign": "Campaign"
       },
       "placeholders": {
         "value": "가치 (환타, 영어:오가닉,...)",
-        "brand": "auchan, danone, herta, ..."
+        "brand": "auchan, danone, herta, ...",
+        "campaign": "Annotation campaigns"
       },
       "actions": {
         "edit": "필터 수정",
@@ -326,5 +329,9 @@
     "deselect_all": "선택 해제",
     "incorrect": "Wrong",
     "correct": "Correct ({{label}})"
+  },
+  "eco-score": {
+    "description": "Here is a summary of questions that could improve Eco-Score computation",
+    "countryLabel": "국가"
   }
 }

@@ -78,7 +78,8 @@
         "value": "значение",
         "country": "страна",
         "brand": "марка",
-        "popularity": "популярность"
+        "popularity": "популярность",
+        "campaign": "camp"
       },
       "long_label": {
         "type": "Тип вопроса",
@@ -86,11 +87,13 @@
         "country": "Страна продукта",
         "brand": "Марка продукта",
         "popularity": "Сортировка по популярности",
-        "edit": ""
+        "edit": "",
+        "campaign": "Campaign"
       },
       "placeholders": {
         "value": "Ценность(фанта, ru: органический)",
-        "brand": "ашан, данон, херта, ..."
+        "brand": "ашан, данон, херта, ...",
+        "campaign": "Annotation campaigns"
       },
       "actions": {
         "edit": "Редактировать фильтры",
@@ -190,7 +193,7 @@
   },
   "settings": {
     "settings": "Настройки",
-    "language": "Язык",
+    "language": "Языки",
     "save": "Сохранить",
     "reportIssue": "Нашли ошибку? Пожалуйста, сообщите нам",
     "dev_mode_title": "To explore the database content, activate the dev mode",
@@ -326,5 +329,9 @@
     "deselect_all": "Снять выделение",
     "incorrect": "Wrong",
     "correct": "Correct ({{label}})"
+  },
+  "eco-score": {
+    "description": "Here is a summary of questions that could improve Eco-Score computation",
+    "countryLabel": "Страна"
   }
 }

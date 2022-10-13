@@ -78,7 +78,8 @@
         "value": "値",
         "country": "国",
         "brand": "ブランド",
-        "popularity": "人気"
+        "popularity": "人気",
+        "campaign": "camp"
       },
       "long_label": {
         "type": "質問タイプ",
@@ -86,11 +87,13 @@
         "country": "生産国",
         "brand": "製品ブランド",
         "popularity": "人気順",
-        "edit": ""
+        "edit": "",
+        "campaign": "Campaign"
       },
       "placeholders": {
         "value": "値(ファンタ, ja: オーガニック,…)",
-        "brand": "auchan, danone, herta, ..."
+        "brand": "auchan, danone, herta, ...",
+        "campaign": "Annotation campaigns"
       },
       "actions": {
         "edit": "フィルターを編集",
@@ -326,5 +329,9 @@
     "deselect_all": "すべての選択を解除",
     "incorrect": "Wrong",
     "correct": "Correct ({{label}})"
+  },
+  "eco-score": {
+    "description": "Here is a summary of questions that could improve Eco-Score computation",
+    "countryLabel": "国"
   }
 }

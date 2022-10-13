@@ -78,7 +78,8 @@
         "value": "قيمة",
         "country": "الدولة",
         "brand": "3alama-tijariya",
-        "popularity": "شعبية"
+        "popularity": "شعبية",
+        "campaign": "camp"
       },
       "long_label": {
         "type": "نوع السؤال",
@@ -86,11 +87,13 @@
         "country": "بلد المنتج",
         "brand": "العلامة التجارية للمنتج",
         "popularity": "التصنيف عبر الشعبية",
-        "edit": ""
+        "edit": "",
+        "campaign": "Campaign"
       },
       "placeholders": {
         "value": "القيمة (فانتا،عضوي ، ...)",
-        "brand": "أوشان ، دانون ، هيرتا ، ..."
+        "brand": "أوشان ، دانون ، هيرتا ، ...",
+        "campaign": "Annotation campaigns"
       },
       "actions": {
         "edit": "تعديل الفلاتر",
@@ -190,7 +193,7 @@
   },
   "settings": {
     "settings": "الإعدادات",
-    "language": "اللغة",
+    "language": "اللغات",
     "save": "حفظ",
     "reportIssue": "Found a bug?, please let us know",
     "dev_mode_title": "To explore the database content, activate the dev mode",
@@ -326,5 +329,9 @@
     "deselect_all": "إلغاء تحديد الكل",
     "incorrect": "Wrong",
     "correct": "Correct ({{label}})"
+  },
+  "eco-score": {
+    "description": "Here is a summary of questions that could improve Eco-Score computation",
+    "countryLabel": "Country"
   }
 }

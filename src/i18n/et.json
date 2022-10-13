@@ -78,7 +78,8 @@
         "value": "value",
         "country": "riik",
         "brand": "kaubamärk",
-        "popularity": "popularity"
+        "popularity": "popularity",
+        "campaign": "camp"
       },
       "long_label": {
         "type": "Küsimuse tüüp",
@@ -86,11 +87,13 @@
         "country": "Tootja maa",
         "brand": "Toote kaubamärk",
         "popularity": "Sordi populaarsuse alusel",
-        "edit": ""
+        "edit": "",
+        "campaign": "Campaign"
       },
       "placeholders": {
         "value": "Väärtus (fanta, en:organic,...)",
-        "brand": "auchan, danone, herta, ..."
+        "brand": "auchan, danone, herta, ...",
+        "campaign": "Annotation campaigns"
       },
       "actions": {
         "edit": "Edit Filters",
@@ -190,7 +193,7 @@
   },
   "settings": {
     "settings": "Seaded",
-    "language": "Language",
+    "language": "Keeled",
     "save": "Salvesta",
     "reportIssue": "Found a bug?, please let us know",
     "dev_mode_title": "To explore the database content, activate the dev mode",
@@ -326,5 +329,9 @@
     "deselect_all": "Eemalda kõik valikud",
     "incorrect": "Wrong",
     "correct": "Correct ({{label}})"
+  },
+  "eco-score": {
+    "description": "Here is a summary of questions that could improve Eco-Score computation",
+    "countryLabel": "Country"
   }
 }

@@ -78,7 +78,8 @@
         "value": "ערך",
         "country": "מדינה",
         "brand": "מותג",
-        "popularity": "פופולריות"
+        "popularity": "פופולריות",
+        "campaign": "camp"
       },
       "long_label": {
         "type": "סוג שאלה",
@@ -86,11 +87,13 @@
         "country": "ארץ המוצר",
         "brand": "מותג המוצר",
         "popularity": "מיון לפי פופולריות",
-        "edit": ""
+        "edit": "",
+        "campaign": "Campaign"
       },
       "placeholders": {
         "value": "ערך (פאנטה, en:organic,…)",
-        "brand": "טרה, אסם, צבר, …"
+        "brand": "טרה, אסם, צבר, …",
+        "campaign": "Annotation campaigns"
       },
       "actions": {
         "edit": "עריכת מסננים",
@@ -190,7 +193,7 @@
   },
   "settings": {
     "settings": "הגדרות",
-    "language": "שפה",
+    "language": "שפות",
     "save": "שמירה",
     "reportIssue": "מצאת תקלה? נא ליידע אותנו",
     "dev_mode_title": "כדי לחקור את תוכן מסד הנתונים, יש להפעיל את מצב הפיתוח",
@@ -318,7 +321,7 @@
   "nutriscore": {
     "image_alt": "תמונה חתוכה",
     "label": "Annotate nutriscore logo detection by batch.",
-    "description": "To do so select all the images showing the correct/wrong nutriscore value ({{label}}), and click on the bottom buttons to say if you selected a set correct or wrong ones.",
+    "description": "כדי לעשות זאת, יש לבחור את כל התמונות המציגות את הערך התזונתי הנכון/שגוי ({{label}}), וללחוץ על הכפתורים שלמטה כדי לומר אם בחרת קבוצה נכונה או שגויה.",
     "images_remaining": "Still {{remaining}} to annotate",
     "image_sizes": "גדלי תמונות",
     "zoom_on_logo": "התמקדות על לוגו",
@@ -326,5 +329,9 @@
     "deselect_all": "ביטול בחירה",
     "incorrect": "שגוי",
     "correct": "נכון ({{label}})"
+  },
+  "eco-score": {
+    "description": "Here is a summary of questions that could improve Eco-Score computation",
+    "countryLabel": "מדינה"
   }
 }

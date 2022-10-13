@@ -78,7 +78,8 @@
         "value": "crwdns190957:0crwdne190957:0",
         "country": "crwdns190959:0crwdne190959:0",
         "brand": "crwdns190961:0crwdne190961:0",
-        "popularity": "crwdns190963:0crwdne190963:0"
+        "popularity": "crwdns190963:0crwdne190963:0",
+        "campaign": "crwdns204916:0crwdne204916:0"
       },
       "long_label": {
         "type": "crwdns190965:0crwdne190965:0",
@@ -86,11 +87,13 @@
         "country": "crwdns190969:0crwdne190969:0",
         "brand": "crwdns190971:0crwdne190971:0",
         "popularity": "crwdns190973:0crwdne190973:0",
-        "edit": "crwdns190975:0crwdne190975:0"
+        "edit": "crwdns190975:0crwdne190975:0",
+        "campaign": "crwdns204918:0crwdne204918:0"
       },
       "placeholders": {
         "value": "crwdns190977:0crwdne190977:0",
-        "brand": "crwdns190979:0crwdne190979:0"
+        "brand": "crwdns190979:0crwdne190979:0",
+        "campaign": "crwdns204920:0crwdne204920:0"
       },
       "actions": {
         "edit": "crwdns190981:0crwdne190981:0",
@@ -190,7 +193,7 @@
   },
   "settings": {
     "settings": "crwdns173524:0crwdne173524:0",
-    "language": "crwdns173526:0crwdne173526:0",
+    "language": "crwdns204922:0crwdne204922:0",
     "save": "crwdns173528:0crwdne173528:0",
     "reportIssue": "crwdns200024:0crwdne200024:0",
     "dev_mode_title": "crwdns204788:0crwdne204788:0",
@@ -326,5 +329,9 @@
     "deselect_all": "crwdns204868:0crwdne204868:0",
     "incorrect": "crwdns204870:0crwdne204870:0",
     "correct": "crwdns204872:0{{label}}crwdne204872:0"
+  },
+  "eco-score": {
+    "description": "crwdns204924:0crwdne204924:0",
+    "countryLabel": "crwdns204926:0crwdne204926:0"
   }
 }
