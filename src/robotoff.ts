@@ -104,9 +104,8 @@ const robotoff = {
   },
 
   searchLogos(barcode, value, type, count = 25) {
-    return axios.get(`${ROBOTOFF_API_URL}/images/logos`, {
+    return axios.get(`${ROBOTOFF_API_URL}/images/logos/search/`, {
       params: removeEmptyKeys({
-        annotated: type || value ? 1 : undefined,
         barcode,
         value,
         type,
