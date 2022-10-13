@@ -78,7 +78,8 @@
         "value": "valoare",
         "country": "tara",
         "brand": "marca",
-        "popularity": "popularitate"
+        "popularity": "popularitate",
+        "campaign": "camp"
       },
       "long_label": {
         "type": "Tip de întrebare",
@@ -86,11 +87,13 @@
         "country": "Țara produsului",
         "brand": "Marca de produs",
         "popularity": "Sortați după popularitate",
-        "edit": ""
+        "edit": "",
+        "campaign": "Campaign"
       },
       "placeholders": {
         "value": "Valoare (fanta, en:organic,...)",
-        "brand": "auchan, danone, herta,..."
+        "brand": "auchan, danone, herta,...",
+        "campaign": "Annotation campaigns"
       },
       "actions": {
         "edit": "Editați filtrele",
@@ -190,7 +193,7 @@
   },
   "settings": {
     "settings": "Configurări",
-    "language": "Limbă",
+    "language": "Limbi",
     "save": "Salvează",
     "reportIssue": "Ați găsit o eroare?, vă rugăm să ne anunțați",
     "dev_mode_title": "To explore the database content, activate the dev mode",
@@ -326,5 +329,9 @@
     "deselect_all": "Deselectează-le pe toate",
     "incorrect": "Wrong",
     "correct": "Correct ({{label}})"
+  },
+  "eco-score": {
+    "description": "Here is a summary of questions that could improve Eco-Score computation",
+    "countryLabel": "Țară"
   }
 }

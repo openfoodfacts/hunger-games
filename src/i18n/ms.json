@@ -78,7 +78,8 @@
         "value": "nilai",
         "country": "negara",
         "brand": "jenama",
-        "popularity": "popularity"
+        "popularity": "popularity",
+        "campaign": "camp"
       },
       "long_label": {
         "type": "Question Type",
@@ -86,11 +87,13 @@
         "country": "Product Country",
         "brand": "Product Brand",
         "popularity": "Isih mengikut populariti",
-        "edit": ""
+        "edit": "",
+        "campaign": "Campaign"
       },
       "placeholders": {
         "value": "Value (fanta, en:organic,...)",
-        "brand": "auchan, danone, herta, ..."
+        "brand": "auchan, danone, herta, ...",
+        "campaign": "Annotation campaigns"
       },
       "actions": {
         "edit": "Edit Filters",
@@ -190,7 +193,7 @@
   },
   "settings": {
     "settings": "Tetapan",
-    "language": "Bahasa",
+    "language": "Languages",
     "save": "Simpan",
     "reportIssue": "Found a bug?, please let us know",
     "dev_mode_title": "To explore the database content, activate the dev mode",
@@ -326,5 +329,9 @@
     "deselect_all": "Nyahpilih semua",
     "incorrect": "Wrong",
     "correct": "Correct ({{label}})"
+  },
+  "eco-score": {
+    "description": "Here is a summary of questions that could improve Eco-Score computation",
+    "countryLabel": "Country"
   }
 }

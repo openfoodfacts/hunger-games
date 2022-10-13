@@ -78,7 +78,8 @@
         "value": "value",
         "country": "ประเทศ",
         "brand": "ยี่ห้อสินค้า",
-        "popularity": "popularity"
+        "popularity": "popularity",
+        "campaign": "camp"
       },
       "long_label": {
         "type": "Question Type",
@@ -86,11 +87,13 @@
         "country": "Product Country",
         "brand": "Product Brand",
         "popularity": "Sort by popularity",
-        "edit": ""
+        "edit": "",
+        "campaign": "Campaign"
       },
       "placeholders": {
         "value": "Value (fanta, en:organic,...)",
-        "brand": "auchan, danone, herta, ..."
+        "brand": "auchan, danone, herta, ...",
+        "campaign": "Annotation campaigns"
       },
       "actions": {
         "edit": "Edit Filters",
@@ -326,5 +329,9 @@
     "deselect_all": "Unselect all",
     "incorrect": "Wrong",
     "correct": "Correct ({{label}})"
+  },
+  "eco-score": {
+    "description": "Here is a summary of questions that could improve Eco-Score computation",
+    "countryLabel": "Country"
   }
 }

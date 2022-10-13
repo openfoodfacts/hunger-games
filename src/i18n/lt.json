@@ -78,7 +78,8 @@
         "value": "vertė",
         "country": "šalis",
         "brand": "prekės ženklas",
-        "popularity": "populiarumas"
+        "popularity": "populiarumas",
+        "campaign": "camp"
       },
       "long_label": {
         "type": "Klausimo tipas",
@@ -86,11 +87,13 @@
         "country": "Kilmės šalis",
         "brand": "Produkto prekės ženklas",
         "popularity": "Rikiuoti pagal populiarumą",
-        "edit": ""
+        "edit": "",
+        "campaign": "Campaign"
       },
       "placeholders": {
         "value": "Vertė",
-        "brand": "auchan, danone, herta, ..."
+        "brand": "auchan, danone, herta, ...",
+        "campaign": "Annotation campaigns"
       },
       "actions": {
         "edit": "Redaguoti filtrus",
@@ -190,7 +193,7 @@
   },
   "settings": {
     "settings": "Settings",
-    "language": "Kalba",
+    "language": "Languages",
     "save": "Išsaugoti",
     "reportIssue": "Radote klaidą? Praneškite mums",
     "dev_mode_title": "To explore the database content, activate the dev mode",
@@ -326,5 +329,9 @@
     "deselect_all": "Išžymėti viską",
     "incorrect": "Wrong",
     "correct": "Correct ({{label}})"
+  },
+  "eco-score": {
+    "description": "Here is a summary of questions that could improve Eco-Score computation",
+    "countryLabel": "Country"
   }
 }

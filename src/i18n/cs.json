@@ -78,7 +78,8 @@
         "value": "hodnota",
         "country": "země",
         "brand": "značka",
-        "popularity": "oblíbenost"
+        "popularity": "oblíbenost",
+        "campaign": "camp"
       },
       "long_label": {
         "type": "Typ otázky",
@@ -86,11 +87,13 @@
         "country": "Země produktu",
         "brand": "Značka produktu",
         "popularity": "Třídit dle oblíbenosti",
-        "edit": ""
+        "edit": "",
+        "campaign": "Campaign"
       },
       "placeholders": {
         "value": "Hodnota (fanta, cs:přírodní,...)",
-        "brand": "auchan, danone, herta, ..."
+        "brand": "auchan, danone, herta, ...",
+        "campaign": "Annotation campaigns"
       },
       "actions": {
         "edit": "Upravit filtry",
@@ -190,7 +193,7 @@
   },
   "settings": {
     "settings": "Nastavení",
-    "language": "Jazyk",
+    "language": "Jazyky",
     "save": "Uložit",
     "reportIssue": "Našli jste chybu?, dejte nám prosím vědět",
     "dev_mode_title": "Chcete-li prozkoumat obsah databáze, aktivujte vývojářský režim",
@@ -326,5 +329,9 @@
     "deselect_all": "Odznačit vše",
     "incorrect": "Špatně",
     "correct": "Správně ({{label}})"
+  },
+  "eco-score": {
+    "description": "Here is a summary of questions that could improve Eco-Score computation",
+    "countryLabel": "Země"
   }
 }

@@ -78,7 +78,8 @@
         "value": "nilai",
         "country": "negara",
         "brand": "merek",
-        "popularity": "popularitas"
+        "popularity": "popularitas",
+        "campaign": "camp"
       },
       "long_label": {
         "type": "Tipe Pertanyaan",
@@ -86,11 +87,13 @@
         "country": "Negara Pembuat Produk",
         "brand": "Merek Produk",
         "popularity": "Urutkan berdasarkan popularitas",
-        "edit": ""
+        "edit": "",
+        "campaign": "Campaign"
       },
       "placeholders": {
         "value": "Nilai (fanta, en:organik,...)",
-        "brand": "auchan, danone, herta, ..."
+        "brand": "auchan, danone, herta, ...",
+        "campaign": "Annotation campaigns"
       },
       "actions": {
         "edit": "Ubah Penyaringan",
@@ -326,5 +329,9 @@
     "deselect_all": "Batalkan semua pilihan",
     "incorrect": "Wrong",
     "correct": "Correct ({{label}})"
+  },
+  "eco-score": {
+    "description": "Here is a summary of questions that could improve Eco-Score computation",
+    "countryLabel": "Negara"
   }
 }
