@@ -56,3 +56,7 @@ Use a [simple webpack config](https://github.com/facebook/create-react-app/issue
 - `yarn countries`
 
 Generate the JSON file `src/assets/countries.json` which contains all the countries available on OFF taxonomy. Data are obtained from static.openfoodfacts.org
+
+## How you can help
+- https://wiki.openfoodfacts.org/Hunger_Games
+- [Help translate Hunger Games to your language](https://translate.openfoodfacts.org/translate/openfoodfacts/1942/en-fr?filter=basic&value=0)
