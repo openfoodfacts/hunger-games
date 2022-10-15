@@ -22,7 +22,7 @@ import pl from "./pl";
 import hr from "./hr";
 import ko from "./ko";
 import et from "./et";
-import ha from "./ja";
+import ja from "./ja";
 
 const messages = {
   en: { translation: { ...en } },
