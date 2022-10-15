@@ -79,7 +79,7 @@
         "country": "ülke",
         "brand": "marka",
         "popularity": "popülerlik",
-        "campaign": "camp"
+        "campaign": "kamp"
       },
       "long_label": {
         "type": "Soru Tipi",
@@ -88,12 +88,12 @@
         "brand": "Ürünün Markası",
         "popularity": "Popülerliğe göre sırala",
         "edit": "",
-        "campaign": "Campaign"
+        "campaign": "Kampanya"
       },
       "placeholders": {
         "value": "Value (fanta, en:organic,...)",
         "brand": "auchan, danone, herta, ...",
-        "campaign": "Annotation campaigns"
+        "campaign": "Ek açıklama kampanyaları"
       },
       "actions": {
         "edit": "Süzgeçleri Düzenle",
@@ -331,7 +331,7 @@
     "correct": "Doğru ({{label}})"
   },
   "eco-score": {
-    "description": "Here is a summary of questions that could improve Eco-Score computation",
+    "description": "Eko-Skor hesaplamasını iyileştirebilecek soruların bir özetini burada bulabilirsiniz",
     "countryLabel": "Ülke"
   }
 }

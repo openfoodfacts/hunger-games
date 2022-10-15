@@ -88,12 +88,12 @@
         "brand": "Marca do Produto",
         "popularity": "Ordenar por popularidade",
         "edit": "",
-        "campaign": "Campaign"
+        "campaign": "Campanha"
       },
       "placeholders": {
         "value": "Valor (fanta, en: orgânico, ...)",
         "brand": "auchan, danone, herta, ...",
-        "campaign": "Annotation campaigns"
+        "campaign": "Campanha de anotações"
       },
       "actions": {
         "edit": "Editar Filtros",
@@ -331,7 +331,7 @@
     "correct": "Correto ({{label}})"
   },
   "eco-score": {
-    "description": "Here is a summary of questions that could improve Eco-Score computation",
+    "description": "Aqui está um resumo das perguntas que podem melhorar o cálculo do Eco-Score",
     "countryLabel": "País"
   }
 }

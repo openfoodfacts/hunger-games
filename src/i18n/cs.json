@@ -88,7 +88,7 @@
         "brand": "Značka produktu",
         "popularity": "Třídit dle oblíbenosti",
         "edit": "",
-        "campaign": "Campaign"
+        "campaign": "Kampaň"
       },
       "placeholders": {
         "value": "Hodnota (fanta, cs:přírodní,...)",
@@ -331,7 +331,7 @@
     "correct": "Správně ({{label}})"
   },
   "eco-score": {
-    "description": "Here is a summary of questions that could improve Eco-Score computation",
+    "description": "Zde je souhrn otázek, které by mohly zlepšit výpočet Eco-score",
     "countryLabel": "Země"
   }
 }

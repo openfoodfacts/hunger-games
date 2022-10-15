@@ -13,7 +13,7 @@
         },
         "eco_score": {
           "title": "Eco-Score",
-          "description": "Annotate the questions with the highest value"
+          "description": "תיוג השאלות עם הערך הגבוה ביותר"
         }
       }
     },
@@ -79,7 +79,7 @@
         "country": "מדינה",
         "brand": "מותג",
         "popularity": "פופולריות",
-        "campaign": "camp"
+        "campaign": "פרסום"
       },
       "long_label": {
         "type": "סוג שאלה",
@@ -88,12 +88,12 @@
         "brand": "מותג המוצר",
         "popularity": "מיון לפי פופולריות",
         "edit": "",
-        "campaign": "Campaign"
+        "campaign": "מסע פרסום"
       },
       "placeholders": {
         "value": "ערך (פאנטה, en:organic,…)",
         "brand": "טרה, אסם, צבר, …",
-        "campaign": "Annotation campaigns"
+        "campaign": "מסעות פרסום לתיוג"
       },
       "actions": {
         "edit": "עריכת מסננים",
@@ -158,7 +158,7 @@
   "logos": {
     "annotation": "הערה: ",
     "annotations": "הערות על הלוגו",
-    "task_description": "Select all logos that are exactly the same, and give them a name like \"en:EU Organic\" and a type like \"label\".",
+    "task_description": "יש לבחור את כל הלוגואים הזהים לחלוטין ולתת להם שם כמו „en:EU Organic” וסוג כמו „label” (תווית).",
     "select_all": "לבחור הכול",
     "unselect_all": "ביטול בחירה",
     "distance": "מרחק:",
@@ -322,7 +322,7 @@
     "image_alt": "תמונה חתוכה",
     "label": "Annotate nutriscore logo detection by batch.",
     "description": "כדי לעשות זאת, יש לבחור את כל התמונות המציגות את הערך התזונתי הנכון/שגוי ({{label}}), וללחוץ על הכפתורים שלמטה כדי לומר אם בחרת קבוצה נכונה או שגויה.",
-    "images_remaining": "Still {{remaining}} to annotate",
+    "images_remaining": "נותרו {{remaining}} לתיוג",
     "image_sizes": "גדלי תמונות",
     "zoom_on_logo": "התמקדות על לוגו",
     "select_all": "לבחור הכול",
@@ -331,7 +331,7 @@
     "correct": "נכון ({{label}})"
   },
   "eco-score": {
-    "description": "Here is a summary of questions that could improve Eco-Score computation",
+    "description": "הנה תקציר לשאלות שיכולות לשפר את החישוב של Eco-Score",
     "countryLabel": "מדינה"
   }
 }
