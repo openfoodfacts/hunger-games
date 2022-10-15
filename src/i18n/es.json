@@ -79,7 +79,7 @@
         "country": "país",
         "brand": "marca",
         "popularity": "popularidad",
-        "campaign": "camp"
+        "campaign": "campamento"
       },
       "long_label": {
         "type": "Tipo de pregunta",
@@ -88,12 +88,12 @@
         "brand": "Marca del producto",
         "popularity": "Ordenar por popularidad",
         "edit": "",
-        "campaign": "Campaign"
+        "campaign": "Campaña"
       },
       "placeholders": {
         "value": "Valor (fanta, es:orgánico,...)",
         "brand": "auchan, danone, herta, ...",
-        "campaign": "Annotation campaigns"
+        "campaign": "Campañas de notificación"
       },
       "actions": {
         "edit": "Editar filtros",
@@ -331,7 +331,7 @@
     "correct": "Correct ({{label}})"
   },
   "eco-score": {
-    "description": "Here is a summary of questions that could improve Eco-Score computation",
+    "description": "Aquí hay un resumen de preguntas que podrían mejorar el cálculo del Eco-Score",
     "countryLabel": "País"
   }
 }

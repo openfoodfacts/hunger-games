@@ -79,7 +79,7 @@
         "country": "land",
         "brand": "varemærke",
         "popularity": "popularitet",
-        "campaign": "camp"
+        "campaign": "kamp."
       },
       "long_label": {
         "type": "Spørgsmålstype",
@@ -88,12 +88,12 @@
         "brand": "Produktmærke",
         "popularity": "Sortér efter popularitet",
         "edit": "",
-        "campaign": "Campaign"
+        "campaign": "Kampagne"
       },
       "placeholders": {
         "value": "Værdi (fanta, da: organisk,...)",
         "brand": "auchan, danone, herta,...",
-        "campaign": "Annotation campaigns"
+        "campaign": "Anmærkningskampagner"
       },
       "actions": {
         "edit": "Redigér filtre",
@@ -331,7 +331,7 @@
     "correct": "Korrekt ({{label}})"
   },
   "eco-score": {
-    "description": "Here is a summary of questions that could improve Eco-Score computation",
+    "description": "Her er en oversigt over spørgsmål, som kunne forbedre Øko-Score beregningen",
     "countryLabel": "Land"
   }
 }

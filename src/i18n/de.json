@@ -79,7 +79,7 @@
         "country": "Land",
         "brand": "Marke",
         "popularity": "Beliebtheit",
-        "campaign": "camp"
+        "campaign": "Kampagne"
       },
       "long_label": {
         "type": "Fragentyp",
@@ -88,12 +88,12 @@
         "brand": "Marke des Produkts",
         "popularity": "Nach Beliebtheit sortieren",
         "edit": "",
-        "campaign": "Campaign"
+        "campaign": "Kampagne"
       },
       "placeholders": {
         "value": "Wert (fanta, de:bio,...)",
         "brand": "Aldi, Landliebe, Rügenwalder Mühle...",
-        "campaign": "Annotation campaigns"
+        "campaign": "Kampagnen kommentieren"
       },
       "actions": {
         "edit": "Filter bearbeiten",
@@ -331,7 +331,7 @@
     "correct": "Richtig ({{label}})"
   },
   "eco-score": {
-    "description": "Here is a summary of questions that could improve Eco-Score computation",
+    "description": "Hier ist eine Zusammenfassung von Fragen, die die Berechnung des Eco-Score verbessern könnten",
     "countryLabel": "Land"
   }
 }
