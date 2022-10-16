@@ -1,36 +1,36 @@
 {
   "home": {
     "game_selector": {
-      "title": "What game would you like to play?",
+      "title": "Ce joc ai vrea să joci?",
       "cards": {
         "questions": {
           "title": "Întrebări",
-          "description": "Tell us if the given image answers the questions"
+          "description": "Spune-ne dacă imaginea dată răspunde la întrebări"
         },
         "logos": {
           "title": "Logo",
-          "description": "Find all the logos matching the given logo"
+          "description": "Găsiți toate siglele care se potrivesc cu logo-ul dat"
         },
         "eco_score": {
           "title": "Eco-scor",
-          "description": "Annotate the questions with the highest value"
+          "description": "Notează întrebările cu cea mai mare valoare"
         }
       }
     },
     "account_band": {
-      "title": "Want to make your contribution count? Create an account or sign in on Open Food Facts!",
+      "title": "Vrei să faci contribuția ta să conteze? Creează un cont sau conectează-te la Open Food Facts!",
       "log_in": "Nume de utilizator",
       "sign_up": "Înregistrare",
-      "contribution_details": "Learn why your contribution matters"
+      "contribution_details": "Aflați de ce contează contribuția dvs"
     },
-    "saved_filters": "Saved Filters",
+    "saved_filters": "Filtre salvate",
     "contribution_modal": {
-      "title": "Your contribution matters",
-      "information": "Hunger Games is an effort to leverage the results of our OCR. When you use Hunger Games by Open Food Facts, you improve our entire database which helps the community make better food choices. We gathers your annotations and use them to make Open Food Facts more accurate and effecient.",
-      "thank_you": "Thank you for helping us improve Open Food Facts so that more people can use it easily."
+      "title": "Contribuția ta contează",
+      "information": "Jocurile Foametei reprezintă un efort de a valorifica rezultatele OCR-ului nostru. Când utilizați Jocurile Foametei pe Open Food Facts, îmbunătățiți întreaga noastră bază de date care ajută comunitatea să facă alegeri alimentare mai bune. Colectăm adnotările tale și le folosim pentru a face Open Food Facts mai precis și mai efecient.",
+      "thank_you": "Vă mulțumim că ne ajutați să îmbunătățim Open Food Facts, astfel încât mai mulți oameni să îl poată folosi cu ușurință."
     },
     "statistics": {
-      "title": "{{userName}} statistics:",
+      "title": "{{userName}} statistici:",
       "editorCount": {
         "title": "Editor",
         "description": "Numărul de ediții realizate"
@@ -46,8 +46,8 @@
     }
   },
   "flagged_images": {
-    "title": "Images flagged by users",
-    "loading": "Loading"
+    "title": "Imagini semnalate de utilizatori",
+    "loading": "Se încarcă"
   },
   "questions": {
     "category": "categorie",
@@ -79,7 +79,7 @@
         "country": "tara",
         "brand": "marca",
         "popularity": "popularitate",
-        "campaign": "camp"
+        "campaign": "tabără"
       },
       "long_label": {
         "type": "Tip de întrebare",
@@ -88,12 +88,12 @@
         "brand": "Marca de produs",
         "popularity": "Sortați după popularitate",
         "edit": "",
-        "campaign": "Campaign"
+        "campaign": "Campanie"
       },
       "placeholders": {
         "value": "Valoare (fanta, en:organic,...)",
         "brand": "auchan, danone, herta,...",
-        "campaign": "Annotation campaigns"
+        "campaign": "Campanii de adnotare"
       },
       "actions": {
         "edit": "Editați filtrele",
@@ -101,18 +101,18 @@
         "apply": "Aplică"
       }
     },
-    "other_questions": "Other questions",
-    "send": "Send",
-    "flag": "Something wrong? Report/flag the image!",
-    "unflag": "Unflag the image",
-    "reset_filters": "Reset filters",
+    "other_questions": "Alte întrebări",
+    "send": "Trimite",
+    "flag": "Ceva greșit? Raportează/marchează imaginea!",
+    "unflag": "Anulați semnalizarea imaginii",
+    "reset_filters": "Resetați filtrele",
     "log_in": "Nume de utilizator",
     "sign_up": "Înregistrare",
-    "login_title": "Make your annotation count",
-    "login_description": "Currently you are not logged in Open Food Facts. To get your answers directly applied to products, and associated to your account, consider logging in to your Open Food Facts account, or creating one"
+    "login_title": "Faceți ca adnotarea dvs. să conteze",
+    "login_description": "Momentan nu sunteți autentificat în Open Food Facts. Pentru a obține răspunsurile dvs. aplicate direct produselor și asociate contului dvs., vă recomandăm să vă conectați la contul dvs. Open Food Facts sau să creați unul"
   },
   "menu": {
-    "title": "Hunger Games",
+    "title": "Jocurile foamei",
     "games": "Jocuri",
     "questions": "Întrebări",
     "logos": "Logo",
@@ -122,8 +122,8 @@
     "settings": "Configurări",
     "eco-score": "Eco-scor",
     "nutriscore": "Nutri-Scor",
-    "logged_in_user": "logged as {{userName}}",
-    "log_in": "click to login"
+    "logged_in_user": "conectat ca {{userName}}",
+    "log_in": "faceți clic pentru a vă autentifica"
   },
   "insights": {
     "insights": "Perspective",
@@ -151,14 +151,14 @@
     "created_at": "Creat la",
     "completed_at": "Completat la",
     "automatic": "Automat",
-    "human_required": "Human required",
-    "edit_product": "Open product edit",
-    "view_product": "Open product page"
+    "human_required": "Necesar uman",
+    "edit_product": "Deschideți editarea produsului",
+    "view_product": "Deschideți pagina produsului"
   },
   "logos": {
     "annotation": "Adnotare: ",
     "annotations": "Adnotări de logo",
-    "task_description": "Select all logos that are exactly the same, and give them a name like \"en:EU Organic\" and a type like \"label\".",
+    "task_description": "Selectați toate siglele care sunt exact aceleași și acordați-le un nume precum „en:EU Organic” și un tip precum „etichetă”.",
     "select_all": "Selectează tot",
     "unselect_all": "Deselectează-le pe toate",
     "distance": "Distanţă:",
@@ -181,49 +181,49 @@
     "no_found": "Nu a fost găsită nicio siglă",
     "search": "Caută",
     "number_of_results": "Numar de rezultate:",
-    "loading": "Loading...",
+    "loading": "Se încarcă...",
     "refresh": "Reîmprospătare",
-    "search_specific": "Search specific logo",
-    "load_more": "Load more",
+    "search_specific": "Căutați un logo specific",
+    "load_more": "Încarcă mai mult",
     "no_results": "Nu a fost găsită nicio siglă",
-    "result_count": "Shows {{showing}} on {{available}} available",
-    "flag": "Something wrong? Report/flag the image!",
-    "unflag": "Unflag the image",
-    "crop_image_title": "crop of the logo"
+    "result_count": "Afișează {{showing}} la {{available}} disponibil",
+    "flag": "Ceva greșit? Raportează/marchează imaginea!",
+    "unflag": "Anulați semnalizarea imaginii",
+    "crop_image_title": "decuparea siglei"
   },
   "settings": {
     "settings": "Configurări",
     "language": "Limbi",
     "save": "Salvează",
     "reportIssue": "Ați găsit o eroare?, vă rugăm să ne anunțați",
-    "dev_mode_title": "To explore the database content, activate the dev mode",
-    "dev_mode_label": "Dev Mode",
-    "dev_page_toggle": "Show {{name}} page"
+    "dev_mode_title": "Pentru a explora conținutul bazei de date, activați modul dezvoltator",
+    "dev_mode_label": "Mod dezvoltator",
+    "dev_page_toggle": "Arată pagina {{name}}"
   },
   "helper": {
     "welcome": {
       "page1": {
-        "title": "Welcome to Hunger Games",
-        "text1": "Hunger Games is a collection of mini-games that help contribute to Open Food Facts in many ways. You can play are really exciting games from anywhere. Here is a guided tour of the entire website which will get you started.",
-        "text2": "Make sure to login to the Open Food Facts website to get credit for your contributions. If you make a mistake, please take the time to correct it by heading to the website.",
-        "text3": "In case of any doubt about the games, click on the question mark icon at the top right of the page, and you can reach us on slack at the #hunger-games channel"
+        "title": "Bun venit la Jocurile Foamei",
+        "text1": "Jocurile Foamei este o colecție de mini-jocuri care contribuie la Open Food Facts în multe feluri. Puteți juca jocuri cu adevărat interesante de oriunde. Iată un tur ghidat al întregului site, care vă va ajuta să începeți.",
+        "text2": "Asigurați-vă că vă conectați la site-ul Open Food Facts pentru a obține credit pentru contribuțiile dvs. Dacă faceți o greșeală, vă rugăm să faceți timp pentru a o corecta, accesând site-ul web.",
+        "text3": "În caz de îndoială cu privire la jocuri, faceți clic pe pictograma semn de întrebare din dreapta sus a paginii și ne puteți contacta pe canalul #hunger-games."
       },
       "page2": {
-        "title": "Questions Game",
-        "text1": "Does the food product belong to this brand?",
-        "text2": "Answer simply with a <strong>yes/no</strong>! Don't know the answer? That's alright, just skip it.",
-        "text3": "You can also use your keyboard keys o,n and k.",
-        "text4": "You can <strong>filter</strong> the products based on country, brands, popularity and much more!",
-        "text5": "If you don't want to do this every single time, you can also <strong>save the filters</strong> by clicking on the star. Next time you come back, find the saved filters on the home page itself"
+        "title": "Joc Întrebări",
+        "text1": "Produsul alimentar aparține acestei mărci?",
+        "text2": "Răspundeți pur și simplu cu un <strong>da/nu</strong></strong> ! Nu știți răspunsul? E în regulă, săriți peste el.",
+        "text3": "De asemenea, puteți utiliza tastele de la tastatură o,n și k.",
+        "text4": "Puteți <strong>filtra</strong> produsele în funcție de țară, mărci, popularitate și multe altele!",
+        "text5": "Dacă nu doriți să faceți acest lucru de fiecare dată, puteți, de asemenea, să <strong>salvați filtrele</strong> făcând clic pe stea. Data viitoare când reveniți, găsiți filtrele salvate chiar pe pagina de pornire"
       },
       "page3": {
-        "title": "Logos Game",
-        "text1": "Our another really loved game is the logos game where you have to <strong> select all the logos</strong> you feel are the same.",
-        "text2": "As shown in the example, once you select all the similar logos, just type their value and select where it is a brand, a label or something else. It's that simple!"
+        "title": "Joc Logos",
+        "text1": "Un alt joc al nostru cu adevărat iubit este jocul cu logouri în care trebuie să <strong> selectați toate siglele</strong> pe care le simțiți la fel.",
+        "text2": "După cum se arată în exemplu, odată ce ați selectat toate logo-urile similare, introduceți valoarea acestora și selectați unde este o marcă, o etichetă sau altceva. Este atat de simplu!"
       },
       "page4": {
-        "title": "Eco-Score Questions Game",
-        "text1": "Help us finish the remaining questions in the most high priority labels!",
+        "title": "Joc Întrebări Eco-Scor",
+        "text1": "Ajutați-ne să terminăm întrebările rămase în etichetele cu cea mai mare prioritate!",
         "text2": "These cards are linked to labels used in the computation of the eco-score.",
         "text3": "<strong>What is Eco-Score?</strong>",
         "text4": "Eco-Score captures the total environmental footprint, making it easier for consumers to compare products and decide which is better for the environment."
@@ -275,7 +275,7 @@
       "3": "Selecția nutrienților",
       "4": "Selectarea valorilor"
     },
-    "loading": "Loading...",
+    "loading": "Se încarcă...",
     "unknown_brand": "Brand Unknown",
     "value_missing": "You forgot to input value duuuuuuuuuuuuuuuuude",
     "next": "Pasul următor",
@@ -331,7 +331,7 @@
     "correct": "Correct ({{label}})"
   },
   "eco-score": {
-    "description": "Here is a summary of questions that could improve Eco-Score computation",
+    "description": "Iată un rezumat al întrebărilor care ar putea îmbunătăți calculul Eco-Score",
     "countryLabel": "Țară"
   }
 }
