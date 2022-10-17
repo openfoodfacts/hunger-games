@@ -151,7 +151,10 @@ function reducer(state: ReducerStateInterface, action: Actions) {
       const newAnswers = state.answers.map((answer) => {
         const { sendingTime, isPending, validationValue, insight_id } = answer;
         if (isPending && sendingTime <= minDate) {
-          if (validationValue !== SKIPPED_INSIGHT) {
+          if (
+            validationValue !== SKIPPED_INSIGHT &&
+            insight_id !== "NO_QUESTION_LEFT"
+          ) {
             robotoff.annotate(insight_id!, validationValue);
           }
           return { ...answer, isPending: false };
