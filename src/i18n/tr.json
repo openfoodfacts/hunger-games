@@ -78,7 +78,8 @@
         "value": "değer",
         "country": "ülke",
         "brand": "marka",
-        "popularity": "popülerlik"
+        "popularity": "popülerlik",
+        "campaign": "kamp"
       },
       "long_label": {
         "type": "Soru Tipi",
@@ -86,11 +87,13 @@
         "country": "Ürünün Ülkesi",
         "brand": "Ürünün Markası",
         "popularity": "Popülerliğe göre sırala",
-        "edit": ""
+        "edit": "",
+        "campaign": "Kampanya"
       },
       "placeholders": {
         "value": "Value (fanta, en:organic,...)",
-        "brand": "auchan, danone, herta, ..."
+        "brand": "auchan, danone, herta, ...",
+        "campaign": "Ek açıklama kampanyaları"
       },
       "actions": {
         "edit": "Süzgeçleri Düzenle",
@@ -190,7 +193,7 @@
   },
   "settings": {
     "settings": "Ayarlar",
-    "language": "Dil",
+    "language": "Diller",
     "save": "Kaydet",
     "reportIssue": "Bir hata mı buldun?, lütfen bizi bilgilendirin",
     "dev_mode_title": "Veritabanı içeriğini keşfetmek için geliştirme modunu etkinleştirin",
@@ -326,5 +329,9 @@
     "deselect_all": "Tümünün seçimini kaldır",
     "incorrect": "Yanlış",
     "correct": "Doğru ({{label}})"
+  },
+  "eco-score": {
+    "description": "Eko-Skor hesaplamasını iyileştirebilecek soruların bir özetini burada bulabilirsiniz",
+    "countryLabel": "Ülke"
   }
 }

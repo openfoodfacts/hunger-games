@@ -78,7 +78,8 @@
         "value": "Wert",
         "country": "Land",
         "brand": "Marke",
-        "popularity": "Beliebtheit"
+        "popularity": "Beliebtheit",
+        "campaign": "Kampagne"
       },
       "long_label": {
         "type": "Fragentyp",
@@ -86,11 +87,13 @@
         "country": "Produktionsland",
         "brand": "Marke des Produkts",
         "popularity": "Nach Beliebtheit sortieren",
-        "edit": ""
+        "edit": "",
+        "campaign": "Kampagne"
       },
       "placeholders": {
         "value": "Wert (fanta, de:bio,...)",
-        "brand": "Aldi, Landliebe, Rügenwalder Mühle..."
+        "brand": "Aldi, Landliebe, Rügenwalder Mühle...",
+        "campaign": "Kampagnen kommentieren"
       },
       "actions": {
         "edit": "Filter bearbeiten",
@@ -155,7 +158,7 @@
   "logos": {
     "annotation": "Anmerkung: ",
     "annotations": "Anmerkungen zum Logo",
-    "task_description": "Select all logos that are exactly the same, and give them a name like \"en:EU Organic\" and a type like \"label\".",
+    "task_description": "Wählen Sie alle Logos aus, die genau gleich sind, und geben Sie ihnen einen Namen wie „en:EU Bio” und einen Typ wie „Etikett”.",
     "select_all": "Alles auswählen",
     "unselect_all": "Alle abwählen",
     "distance": "Entfernung:",
@@ -190,7 +193,7 @@
   },
   "settings": {
     "settings": "Einstellungen",
-    "language": "Sprache",
+    "language": "Sprachen",
     "save": "Speichern",
     "reportIssue": "Haben Sie einen Fehler gefunden?, lassen Sie es uns bitte wissen",
     "dev_mode_title": "Um den Inhalt der Datenbank zu untersuchen, aktivieren Sie den Entwicklermodus",
@@ -326,5 +329,9 @@
     "deselect_all": "Alle abwählen",
     "incorrect": "Falsch",
     "correct": "Richtig ({{label}})"
+  },
+  "eco-score": {
+    "description": "Hier ist eine Zusammenfassung von Fragen, die die Berechnung des Eco-Score verbessern könnten",
+    "countryLabel": "Land"
   }
 }

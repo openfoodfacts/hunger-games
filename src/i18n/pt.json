@@ -78,7 +78,8 @@
         "value": "valor",
         "country": "país",
         "brand": "marca",
-        "popularity": "popularidade"
+        "popularity": "popularidade",
+        "campaign": "camp"
       },
       "long_label": {
         "type": "Tipo de Questão",
@@ -86,11 +87,13 @@
         "country": "País do Produto",
         "brand": "Marca do Produto",
         "popularity": "Ordenar por popularidade",
-        "edit": ""
+        "edit": "",
+        "campaign": "Campanha"
       },
       "placeholders": {
         "value": "Valor (fanta, en: orgânico, ...)",
-        "brand": "auchan, danone, herta, ..."
+        "brand": "auchan, danone, herta, ...",
+        "campaign": "Campanha de anotações"
       },
       "actions": {
         "edit": "Editar Filtros",
@@ -190,7 +193,7 @@
   },
   "settings": {
     "settings": "Definições",
-    "language": "Idioma",
+    "language": "Línguas",
     "save": "Guardar",
     "reportIssue": "Encontrou um bug? por favor nos avise",
     "dev_mode_title": "Para explorar o conteúdo do banco de dados, ative o modo de desenvolvimento",
@@ -326,5 +329,9 @@
     "deselect_all": "Desmarque todos",
     "incorrect": "Errado",
     "correct": "Correto ({{label}})"
+  },
+  "eco-score": {
+    "description": "Aqui está um resumo das perguntas que podem melhorar o cálculo do Eco-Score",
+    "countryLabel": "País"
   }
 }

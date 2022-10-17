@@ -1,7 +1,7 @@
 {
   "home": {
     "game_selector": {
-      "title": "What game would you like to play?",
+      "title": "A quel jeu voulez-vous jouer ?",
       "cards": {
         "questions": {
           "title": "Questions",
@@ -9,7 +9,7 @@
         },
         "logos": {
           "title": "Logos",
-          "description": "Find all the logos matching the given logo"
+          "description": "Trouver tous les logos correspondant au logo donné"
         },
         "eco_score": {
           "title": "Éco-Score",
@@ -18,14 +18,14 @@
       }
     },
     "account_band": {
-      "title": "Want to make your contribution count? Create an account or sign in on Open Food Facts!",
+      "title": "Vous voulez que votre contribution compte ? Créez un compte ou connectez-vous sur Open Food Facts !",
       "log_in": "Nom d'utilisateur",
       "sign_up": "S'inscrire",
-      "contribution_details": "Learn why your contribution matters"
+      "contribution_details": "Découvrez pourquoi votre contribution est importante"
     },
-    "saved_filters": "Saved Filters",
+    "saved_filters": "Filtres enregistrés",
     "contribution_modal": {
-      "title": "Your contribution matters",
+      "title": "Votre contribution compte",
       "information": "Hunger Games is an effort to leverage the results of our OCR. When you use Hunger Games by Open Food Facts, you improve our entire database which helps the community make better food choices. We gathers your annotations and use them to make Open Food Facts more accurate and effecient.",
       "thank_you": "Thank you for helping us improve Open Food Facts so that more people can use it easily."
     },
@@ -46,7 +46,7 @@
     }
   },
   "flagged_images": {
-    "title": "Images flagged by users",
+    "title": "Images signalées par les utilisateurs",
     "loading": "Loading"
   },
   "questions": {
@@ -78,7 +78,8 @@
         "value": "valeur",
         "country": "pays",
         "brand": "marque",
-        "popularity": "popularité"
+        "popularity": "popularité",
+        "campaign": "camp"
       },
       "long_label": {
         "type": "Type de question",
@@ -86,11 +87,13 @@
         "country": "Pays du produit",
         "brand": "Marque du produit",
         "popularity": "Trier par popularité",
-        "edit": ""
+        "edit": "",
+        "campaign": "Campaign"
       },
       "placeholders": {
         "value": "Valeur (fanta, fr:bio,...)",
-        "brand": "auchan, danone, herta, ..."
+        "brand": "auchan, danone, herta, ...",
+        "campaign": "Annotation campaigns"
       },
       "actions": {
         "edit": "Modifier les filtres",
@@ -98,9 +101,9 @@
         "apply": "Appliquer"
       }
     },
-    "other_questions": "Other questions",
-    "send": "Send",
-    "flag": "Something wrong? Report/flag the image!",
+    "other_questions": "Autres questions",
+    "send": "Envoyer",
+    "flag": "Quelque chose ne va pas? Signalez l'image !",
     "unflag": "Unflag the image",
     "reset_filters": "Reset filters",
     "log_in": "Nom d'utilisateur",
@@ -184,7 +187,7 @@
     "load_more": "Load more",
     "no_results": "Aucun logo trouvé",
     "result_count": "Shows {{showing}} on {{available}} available",
-    "flag": "Something wrong? Report/flag the image!",
+    "flag": "Quelque chose ne va pas? Signalez l'image !",
     "unflag": "Unflag the image",
     "crop_image_title": "crop of the logo"
   },
@@ -194,27 +197,27 @@
     "save": "Enregistrer",
     "reportIssue": "Vous avez trouvé une erreur ? Merci de nous le faire savoir",
     "dev_mode_title": "To explore the database content, activate the dev mode",
-    "dev_mode_label": "Dev Mode",
+    "dev_mode_label": "Mode développeur",
     "dev_page_toggle": "Show {{name}} page"
   },
   "helper": {
     "welcome": {
       "page1": {
-        "title": "Welcome to Hunger Games",
+        "title": "Bienvenue sur Hunger Games",
         "text1": "Hunger Games is a collection of mini-games that help contribute to Open Food Facts in many ways. You can play are really exciting games from anywhere. Here is a guided tour of the entire website which will get you started.",
         "text2": "Make sure to login to the Open Food Facts website to get credit for your contributions. If you make a mistake, please take the time to correct it by heading to the website.",
         "text3": "In case of any doubt about the games, click on the question mark icon at the top right of the page, and you can reach us on slack at the #hunger-games channel"
       },
       "page2": {
-        "title": "Questions Game",
-        "text1": "Does the food product belong to this brand?",
+        "title": "Jeu des questions",
+        "text1": "Le produit appartient-il à cette marque ?",
         "text2": "Answer simply with a <strong>yes/no</strong>! Don't know the answer? That's alright, just skip it.",
         "text3": "You can also use your keyboard keys o,n and k.",
         "text4": "You can <strong>filter</strong> the products based on country, brands, popularity and much more!",
         "text5": "If you don't want to do this every single time, you can also <strong>save the filters</strong> by clicking on the star. Next time you come back, find the saved filters on the home page itself"
       },
       "page3": {
-        "title": "Logos Game",
+        "title": "Jeu des Logos",
         "text1": "Our another really loved game is the logos game where you have to <strong> select all the logos</strong> you feel are the same.",
         "text2": "As shown in the example, once you select all the similar logos, just type their value and select where it is a brand, a label or something else. It's that simple!"
       },
@@ -321,10 +324,14 @@
     "description": "To do so select all the images showing the correct/wrong nutriscore value ({{label}}), and click on the bottom buttons to say if you selected a set correct or wrong ones.",
     "images_remaining": "Still {{remaining}} to annotate",
     "image_sizes": "Image sizes",
-    "zoom_on_logo": "zoom on logo",
+    "zoom_on_logo": "zoomer sur le logo",
     "select_all": "Tout sélectionner",
     "deselect_all": "Tout désélectionner",
     "incorrect": "Wrong",
     "correct": "Correct ({{label}})"
+  },
+  "eco-score": {
+    "description": "Here is a summary of questions that could improve Eco-Score computation",
+    "countryLabel": "Pays"
   }
 }

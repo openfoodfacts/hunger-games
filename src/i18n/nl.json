@@ -78,7 +78,8 @@
         "value": "waarde",
         "country": "land",
         "brand": "merk",
-        "popularity": "populariteit"
+        "popularity": "populariteit",
+        "campaign": "camp"
       },
       "long_label": {
         "type": "Vraagtype",
@@ -86,11 +87,13 @@
         "country": "Productieland",
         "brand": "Producent/merk",
         "popularity": "Sorteren op populariteit",
-        "edit": ""
+        "edit": "",
+        "campaign": "Campaign"
       },
       "placeholders": {
         "value": "Waarde (fanta, en:organic,...)",
-        "brand": "auchan, danone, herta, ..."
+        "brand": "auchan, danone, herta, ...",
+        "campaign": "Annotation campaigns"
       },
       "actions": {
         "edit": "Filters bewerken",
@@ -190,7 +193,7 @@
   },
   "settings": {
     "settings": "Instellingen",
-    "language": "Taal",
+    "language": "Talen",
     "save": "Opslaan",
     "reportIssue": "Bug gevonden? Laat het ons weten",
     "dev_mode_title": "Activeer de dev-modus om de database-inhoud te verkennen",
@@ -326,5 +329,9 @@
     "deselect_all": "Deselecteer alles",
     "incorrect": "Mis",
     "correct": "Correct ({{label}})"
+  },
+  "eco-score": {
+    "description": "Here is a summary of questions that could improve Eco-Score computation",
+    "countryLabel": "Land"
   }
 }

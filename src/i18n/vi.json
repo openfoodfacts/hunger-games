@@ -78,7 +78,8 @@
         "value": "giá trị",
         "country": "nước",
         "brand": "nhãn hiệu",
-        "popularity": "mức phổ biến"
+        "popularity": "mức phổ biến",
+        "campaign": "camp"
       },
       "long_label": {
         "type": "Loại câu hỏi",
@@ -86,11 +87,13 @@
         "country": "Nước sản xuất",
         "brand": "Thương hiệu sản xuất",
         "popularity": "Sắp xếp theo mức độ phổ biến",
-        "edit": ""
+        "edit": "",
+        "campaign": "Campaign"
       },
       "placeholders": {
         "value": "Giá trị (fanta, en: organic,...)",
-        "brand": "auchan, danone, herta, ..."
+        "brand": "auchan, danone, herta, ...",
+        "campaign": "Annotation campaigns"
       },
       "actions": {
         "edit": "Chỉnh sửa bộ lọc",
@@ -326,5 +329,9 @@
     "deselect_all": "Bỏ chọn tất cả",
     "incorrect": "Wrong",
     "correct": "Correct ({{label}})"
+  },
+  "eco-score": {
+    "description": "Here is a summary of questions that could improve Eco-Score computation",
+    "countryLabel": "Quốc gia"
   }
 }

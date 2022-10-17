@@ -1,7 +1,7 @@
 {
   "home": {
     "game_selector": {
-      "title": "What game would you like to play?",
+      "title": "У яку гру ви хотіли б зіграти?",
       "cards": {
         "questions": {
           "title": "Запитання",
@@ -78,7 +78,8 @@
         "value": "вартість",
         "country": "країна",
         "brand": "виробник",
-        "popularity": "поширеність"
+        "popularity": "поширеність",
+        "campaign": "camp"
       },
       "long_label": {
         "type": "Тип запитання",
@@ -86,11 +87,13 @@
         "country": "Країна походження продукту",
         "brand": "Торгова марка продукту",
         "popularity": "Сортувати за популярністю",
-        "edit": ""
+        "edit": "",
+        "campaign": "Campaign"
       },
       "placeholders": {
         "value": "Змінна (fanta, en:organic,...)",
-        "brand": "Ашан, Данон, Герта, тощо"
+        "brand": "Ашан, Данон, Герта, тощо",
+        "campaign": "Annotation campaigns"
       },
       "actions": {
         "edit": "Редагувати фільтри",
@@ -190,7 +193,7 @@
   },
   "settings": {
     "settings": "Налаштування",
-    "language": "Мова",
+    "language": "Мови",
     "save": "Зберегти",
     "reportIssue": "Found a bug?, please let us know",
     "dev_mode_title": "To explore the database content, activate the dev mode",
@@ -326,5 +329,9 @@
     "deselect_all": "Очистити все",
     "incorrect": "Wrong",
     "correct": "Correct ({{label}})"
+  },
+  "eco-score": {
+    "description": "Here is a summary of questions that could improve Eco-Score computation",
+    "countryLabel": "Країна"
   }
 }

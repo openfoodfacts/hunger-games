@@ -78,7 +78,8 @@
         "value": "érték",
         "country": "ország",
         "brand": "márkanév",
-        "popularity": "népszerűség"
+        "popularity": "népszerűség",
+        "campaign": "camp"
       },
       "long_label": {
         "type": "Kérdés típusa",
@@ -86,11 +87,13 @@
         "country": "Termék országa",
         "brand": "Termék márkája",
         "popularity": "Rendezés népszerűség szerint",
-        "edit": ""
+        "edit": "",
+        "campaign": "Campaign"
       },
       "placeholders": {
         "value": "Érték (fanta, en:organic, …)",
-        "brand": "Auchan, Danone, Aldi, …"
+        "brand": "Auchan, Danone, Aldi, …",
+        "campaign": "Annotation campaigns"
       },
       "actions": {
         "edit": "Szűrők módosítása",
@@ -190,7 +193,7 @@
   },
   "settings": {
     "settings": "Beállítások",
-    "language": "Nyelv",
+    "language": "Nyelvek",
     "save": "Mentés",
     "reportIssue": "Found a bug?, please let us know",
     "dev_mode_title": "To explore the database content, activate the dev mode",
@@ -326,5 +329,9 @@
     "deselect_all": "Kijelölés megszüntetése",
     "incorrect": "Wrong",
     "correct": "Correct ({{label}})"
+  },
+  "eco-score": {
+    "description": "Here is a summary of questions that could improve Eco-Score computation",
+    "countryLabel": "Ország"
   }
 }

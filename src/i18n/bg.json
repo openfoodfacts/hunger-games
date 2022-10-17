@@ -1,33 +1,33 @@
 {
   "home": {
     "game_selector": {
-      "title": "Каква игра бихте искали да играете?",
+      "title": "Каква игра би искал да играеш?",
       "cards": {
         "questions": {
           "title": "Въпроси",
-          "description": "Кажете ни дали даденото изображение отговаря на въпросите"
+          "description": "Кажи ни дали дадената снимка отговаря на въпросите"
         },
         "logos": {
           "title": "Емблеми",
-          "description": "Намерете всички емблеми, съответстващи на даденото емблема"
+          "description": "Намери всички емблеми, съответстващи на дадената емблема"
         },
         "eco_score": {
           "title": "Eco-score",
-          "description": "Коментирайте въпросите с най-висока стойност"
+          "description": "Коментирай въпросите с най-висока стойност"
         }
       }
     },
     "account_band": {
-      "title": "Искате ли вашият принос да се брои? Създайте акаунт или влезте в Open Food Facts!",
+      "title": "Искаш ли твоят принос да се брои? Създай акаунт или влез в Open Food Facts!",
       "log_in": "Потребителско име",
       "sign_up": "Регистрирай се",
-      "contribution_details": "Научете защо вашият принос има значение"
+      "contribution_details": "Научи защо твоят принос има значение"
     },
     "saved_filters": "Запазени филтри",
     "contribution_modal": {
-      "title": "Вашият принос има значение",
+      "title": "Твоят принос има значение",
       "information": "Игрите на глада са опит да се използват резултатите от нашият OCR. Когато използвате Игрите на глада от Open Food Facts, подобрявате цялата ни база данни, което помага на общността да прави по-добър избор на храна. Ние събираме вашите пояснения и ги използваме, за да направим Open Food Facts по-точен и ефективен.",
-      "thank_you": "Благодарим ви, че ни помагате да подобрим Open Food Facts, така че повече хора да могат да го използват лесно."
+      "thank_you": "Благодарим ти, че ни помагаш да подобрим Open Food Facts, така че повече хора да могат да го използват лесно."
     },
     "statistics": {
       "title": "{{userName}} статистики:",
@@ -46,8 +46,8 @@
     }
   },
   "flagged_images": {
-    "title": "Изображения, маркирани от потребители",
-    "loading": "Loading"
+    "title": "Снимки, маркирани от потребители",
+    "loading": "Зареждане"
   },
   "questions": {
     "category": "категория",
@@ -78,7 +78,8 @@
         "value": "стойност",
         "country": "страна",
         "brand": "марка",
-        "popularity": "популярност"
+        "popularity": "популярност",
+        "campaign": "лагер"
       },
       "long_label": {
         "type": "Тип на въпроса",
@@ -86,11 +87,13 @@
         "country": "Страна на произход",
         "brand": "Марка на продукта",
         "popularity": "Сортирай по популярност",
-        "edit": ""
+        "edit": "",
+        "campaign": "Кампания"
       },
       "placeholders": {
         "value": "Стойност (fanta, bg:био,...)",
-        "brand": "Auchan, Danone, Herta, ..."
+        "brand": "Auchan, Danone, Herta, ...",
+        "campaign": "Кампания за коментари"
       },
       "actions": {
         "edit": "Редакция на филтри",
@@ -98,18 +101,18 @@
         "apply": "Приложи"
       }
     },
-    "other_questions": "Other questions",
-    "send": "Send",
-    "flag": "Something wrong? Report/flag the image!",
-    "unflag": "Unflag the image",
-    "reset_filters": "Reset filters",
+    "other_questions": "Други въпроси",
+    "send": "Изпрати",
+    "flag": "Нещо грешно? Докладвай/маркирай снимката!",
+    "unflag": "Размаркирай снимката",
+    "reset_filters": "Нулирай филтрите",
     "log_in": "Потребителско име",
     "sign_up": "Регистрирай се",
-    "login_title": "Make your annotation count",
-    "login_description": "Currently you are not logged in Open Food Facts. To get your answers directly applied to products, and associated to your account, consider logging in to your Open Food Facts account, or creating one"
+    "login_title": "Направи коментарът си полезен",
+    "login_description": "В момента не сте влезли в Open Food Facts. За да получите вашите отговори директно приложени към продукти и свързани с вашия акаунт, помислете дали да влезете във вашия акаунт Open Food Facts или да създадете такъв"
   },
   "menu": {
-    "title": "Hunger Games",
+    "title": "Игри на глада",
     "games": "Игри",
     "questions": "Въпроси",
     "logos": "Емблеми",
@@ -119,8 +122,8 @@
     "settings": "Настройки",
     "eco-score": "Eco-score",
     "nutriscore": "Nutri-Score",
-    "logged_in_user": "logged as {{userName}}",
-    "log_in": "click to login"
+    "logged_in_user": "влязъл като {{userName}}",
+    "log_in": "щракни, за да влезеш"
   },
   "insights": {
     "insights": "Задълбочен анализ",
@@ -148,14 +151,14 @@
     "created_at": "Създадено на",
     "completed_at": "Завършено на",
     "automatic": "Автоматично",
-    "human_required": "Human required",
-    "edit_product": "Open product edit",
-    "view_product": "Open product page"
+    "human_required": "Изисква се човек",
+    "edit_product": "Отвори редакцията на продукта",
+    "view_product": "Отвори страницата на продукта"
   },
   "logos": {
     "annotation": "Бележка: ",
     "annotations": "Пояснение към лого",
-    "task_description": "Select all logos that are exactly the same, and give them a name like \"en:EU Organic\" and a type like \"label\".",
+    "task_description": "Изберете всички емблеми, които са абсолютно еднакви, и им дайте име като „en:EU Organic“ и тип като „етикет“.",
     "select_all": "Избери всички",
     "unselect_all": "Размаркирай всичко",
     "distance": "Разстояние:",
@@ -178,62 +181,62 @@
     "no_found": "Няма намерено лого",
     "search": "Търсене",
     "number_of_results": "Брой резултати:",
-    "loading": "Loading...",
+    "loading": "Зареждане...",
     "refresh": "Опресни",
-    "search_specific": "Search specific logo",
-    "load_more": "Load more",
+    "search_specific": "Търси определена емблема",
+    "load_more": "Зареди още",
     "no_results": "Няма намерено лого",
-    "result_count": "Shows {{showing}} on {{available}} available",
-    "flag": "Something wrong? Report/flag the image!",
-    "unflag": "Unflag the image",
-    "crop_image_title": "crop of the logo"
+    "result_count": "Показва {{showing}} към {{available}} налични",
+    "flag": "Нещо грешно? Докладвай/маркирай снимката!",
+    "unflag": "Размаркирай снимката",
+    "crop_image_title": "изрязване на емблемата"
   },
   "settings": {
     "settings": "Настройки",
-    "language": "Език",
+    "language": "Езици",
     "save": "Запис",
     "reportIssue": "Откри грешка? Моля, уведоми ни",
-    "dev_mode_title": "To explore the database content, activate the dev mode",
-    "dev_mode_label": "Dev Mode",
-    "dev_page_toggle": "Show {{name}} page"
+    "dev_mode_title": "За да разгледате съдържанието на базата данни, активирайте режима за разработка",
+    "dev_mode_label": "Режим на разработчик",
+    "dev_page_toggle": "Покажи {{name}} страница"
   },
   "helper": {
     "welcome": {
       "page1": {
-        "title": "Welcome to Hunger Games",
-        "text1": "Hunger Games is a collection of mini-games that help contribute to Open Food Facts in many ways. You can play are really exciting games from anywhere. Here is a guided tour of the entire website which will get you started.",
-        "text2": "Make sure to login to the Open Food Facts website to get credit for your contributions. If you make a mistake, please take the time to correct it by heading to the website.",
-        "text3": "In case of any doubt about the games, click on the question mark icon at the top right of the page, and you can reach us on slack at the #hunger-games channel"
+        "title": "Добре дошли в Игрите на глада",
+        "text1": "Игрите на Глада е колекция от мини-игри, които допринасят за Open Food Facts по много начини. Можете да играете наистина вълнуващи игри отвсякъде. Ето обиколка с екскурзовод на целия уебсайт, която ще ви помогне да започнете.",
+        "text2": "Не забравяйте да влезете в уебсайта Open Food Facts, за да получите кредит за вашите приноси. Ако направите грешка, моля, отделете време да я поправите, като отидете на уебсайта.",
+        "text3": "В случай на съмнение относно игрите, щракнете върху иконата с въпросителен знак в горния десен ъгъл на страницата и можете да се свържете с нас на slack в канала #hunger-games"
       },
       "page2": {
-        "title": "Questions Game",
-        "text1": "Does the food product belong to this brand?",
-        "text2": "Answer simply with a <strong>yes/no</strong>! Don't know the answer? That's alright, just skip it.",
-        "text3": "You can also use your keyboard keys o,n and k.",
-        "text4": "You can <strong>filter</strong> the products based on country, brands, popularity and much more!",
-        "text5": "If you don't want to do this every single time, you can also <strong>save the filters</strong> by clicking on the star. Next time you come back, find the saved filters on the home page itself"
+        "title": "Игра с въпроси",
+        "text1": "Хранителният продукт принадлежи ли към тази марка?",
+        "text2": "Отговорете просто с <strong>да/не</strong>! Не знаете отговора? Всичко е наред, просто го пропуснете.",
+        "text3": "Можете също да използвате клавишите на клавиатурата o,n и k.",
+        "text4": "Можете да <strong>филтрирате</strong> продуктите въз основа на държава, марки, популярност и много повече!",
+        "text5": "Ако не искате да правите това всеки път, можете също да <strong>запазите филтрите</strong> като щракнете върху звездата. Следващият път, когато се върнете, намерете запазените филтри на самата начална страница"
       },
       "page3": {
-        "title": "Logos Game",
-        "text1": "Our another really loved game is the logos game where you have to <strong> select all the logos</strong> you feel are the same.",
-        "text2": "As shown in the example, once you select all the similar logos, just type their value and select where it is a brand, a label or something else. It's that simple!"
+        "title": "Игра с емблеми",
+        "text1": "Нашата друга много обичана игра е играта с емблеми, където трябва да <strong> изберете всички емблеми</strong>, които смятате, че са еднакви.",
+        "text2": "Както е показано в примера, след като изберете всички подобни емблеми, просто въведете тяхната стойност и изберете къде е марка, етикет или нещо друго. Толкова е просто!"
       },
       "page4": {
-        "title": "Eco-Score Questions Game",
-        "text1": "Help us finish the remaining questions in the most high priority labels!",
-        "text2": "These cards are linked to labels used in the computation of the eco-score.",
-        "text3": "<strong>What is Eco-Score?</strong>",
-        "text4": "Eco-Score captures the total environmental footprint, making it easier for consumers to compare products and decide which is better for the environment."
+        "title": "Игра с въпроси за Eco-Score",
+        "text1": "Помогнете ни да завършим оставащите въпроси в етикетите с най-висок приоритет!",
+        "text2": "Тези карти са свързани с етикети, използвани при изчисляването на екологичния резултат.",
+        "text3": "<strong>Какво е Eco-Score?</strong>",
+        "text4": "Eco-Score улавя общия отпечатък върху околната среда, което улеснява потребителите да сравняват продуктите и да решават кой е по-добър за околната среда."
       },
       "page5": {
         "title": "Настройки",
-        "text1": "Set your preferred language, and report issues from our settings page.",
-        "text2": "If you're a developer, you can also explore our database content using our dev mode."
+        "text1": "Задайте предпочитания от вас език и докладвайте за проблеми от нашата страница с настройки.",
+        "text2": "Ако сте разработчик, можете също да изследвате съдържанието на нашата база данни, като използвате нашия режим за разработка."
       },
       "page6": {
-        "title": "Tour",
-        "text1": "Got stuck somewhere? Want to take the tour again?",
-        "text2": "Just click on the question mark and start the journey again!"
+        "title": "Обиколка",
+        "text1": "Закъсахте някъде? Искате ли да предприемете обиколката отново?",
+        "text2": "Просто кликнете върху въпросителния знак и започнете пътуването отново!"
       }
     },
     "logos": {
@@ -272,9 +275,9 @@
       "3": "Избор на хранителни вещества",
       "4": "Избор на стойности"
     },
-    "loading": "Loading...",
-    "unknown_brand": "Brand Unknown",
-    "value_missing": "You forgot to input value duuuuuuuuuuuuuuuuude",
+    "loading": "Зареждане...",
+    "unknown_brand": "Марка Неизвестна",
+    "value_missing": "Забравихте да въведете стойност приииииииииииятел",
     "next": "Следваща стъпка",
     "prev": "Предишна стъпка",
     "skip": "Пропусни този продукт",
@@ -310,7 +313,7 @@
     }
   },
   "notfound": {
-    "image_alt": "404 not found",
+    "image_alt": "404 не е намерен",
     "nopage": "Опа! Страницата, която търсиш, не може да бъде намерена.",
     "redirect1": "Искаш ли да поиграеш?",
     "redirect2": "Натисни тук"
@@ -324,7 +327,11 @@
     "zoom_on_logo": "zoom on logo",
     "select_all": "Избери всички",
     "deselect_all": "Размаркирай всичко",
-    "incorrect": "Wrong",
+    "incorrect": "Грешно",
     "correct": "Correct ({{label}})"
+  },
+  "eco-score": {
+    "description": "Ето обобщение на въпросите, които биха могли да подобрят изчисляването на Eco-Score",
+    "countryLabel": "Страна"
   }
 }
