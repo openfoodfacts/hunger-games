@@ -107,9 +107,9 @@ const ecoScoreCards = [
     filterState: {
       ...DEFAULT_FILTER_STATE,
       insightType: "label",
-      valueTag: "fr:fairtrade",
+      valueTag: "en:fairtrade-international",
     },
-    title: "fr:fairtrade",
+    title: "en:fairtrade-international",
     imageSrc:
       "https://world-fr.openfoodfacts.org/images/lang/en/labels/fairtrade-international.77x90.svg",
   },
@@ -117,11 +117,11 @@ const ecoScoreCards = [
     filterState: {
       ...DEFAULT_FILTER_STATE,
       insightType: "label",
-      valueTag: "fr:max-havelaar",
+      valueTag: "en:max-havelaar",
     },
-    title: "fr:Max-Havelaar",
+    title: "en:Max-Havelaar",
     imageSrc:
-      "https://world-fr.openfoodfacts.org/images/lang/en/labels/fairtrade-international.77x90.svg",
+      "https://world-fr.openfoodfacts.org/images/lang/en/labels/max-havelaar.64x90.svg",
   },
   {
     filterState: {
