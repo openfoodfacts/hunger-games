@@ -92,6 +92,38 @@ const useOtherQuestions = (code, insight_id) => {
   ];
 };
 
+const useFlagImage = (barcode) => {
+  const [flagged, setFlagged] = React.useState([]);
+
+  const flagImage = React.useCallback(
+    (src) => {
+      const imgid = getImageId(src);
+      externalApi.addImageFlag({ barcode, imgid, url: src });
+      setFlagged((prev) => [...prev, imgid]);
+    },
+    [barcode]
+  );
+
+  const deleteFlagImage = React.useCallback(
+    (src) => {
+      const imgid = getImageId(src);
+      externalApi.removeImageFlag({ barcode, imgid });
+
+      setFlagged((prev) =>
+        prev.filter((flaggedImageId) => flaggedImageId !== imgid)
+      );
+    },
+    [barcode]
+  );
+
+  // Reset flags
+  React.useEffect(() => {
+    setFlagged([]);
+  }, [barcode]);
+
+  return [flagged, flagImage, deleteFlagImage];
+};
+
 const ProductInformation = ({ question }) => {
   const { t } = useTranslation();
   const isDevMode = getIsDevMode();
@@ -101,25 +133,7 @@ const ProductInformation = ({ question }) => {
   const [devCustomization] = React.useState(
     () => getPageCustomization().questionPage
   );
-  const [flagged, setFlagged] = React.useState([]);
-
-  const flagImage = (src, barcode) => {
-    const imgid = getImageId(src);
-    externalApi.addImageFlag({ barcode, imgid, url: src });
-
-    const newFlagged = [...flagged];
-    newFlagged.push(imgid);
-    setFlagged(newFlagged);
-  };
-
-  const deleteFlagImage = (src, barcode) => {
-    const imgid = getImageId(src);
-    externalApi.removeImageFlag({ barcode, imgid });
-    const newFlagged = flagged.filter(
-      (flaggedImageId) => flaggedImageId !== imgid
-    );
-    setFlagged(newFlagged);
-  };
+  const [flagged, flagImage, deleteFlagImage] = useFlagImage(question?.barcode);
 
   // product data fetching
   React.useEffect(() => {
@@ -150,11 +164,6 @@ const ProductInformation = ({ question }) => {
     return () => {
       isStillValid = false;
     };
-  }, [question?.barcode]);
-
-  // Reset flags
-  React.useEffect(() => {
-    setFlagged([]);
   }, [question?.barcode]);
 
   const [
