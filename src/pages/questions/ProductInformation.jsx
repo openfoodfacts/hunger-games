@@ -35,6 +35,15 @@ import externalApi from "../../externalApi";
 import DebugQuestion from "./DebugQuestion";
 import robotoff from "../../robotoff";
 
+const ADDITIONAL_INFO_TRANSLATION = {
+  brands: "brands",
+  ingredientsText: "ingredients",
+  countriesTags: "countries",
+  categories: "categories",
+  labels_tags: "labels",
+  quantity: "quantity",
+};
+
 // src looks like: "https://static.openfoodfacts.org/images/products/004/900/053/2258/1.jpg"
 const getImageId = (src) => {
   const file = src.split("/").at(-1);
@@ -153,11 +162,15 @@ const ProductInformation = ({ question }) => {
       setProductData({
         code: question.barcode,
         productName: product?.product_name || "",
-        brands: product?.brands || "",
-        ingredientsText: product?.ingredients_text || "",
-        countriesTags: product?.countries_tags || [],
+        brands: product?.brands || "?",
+        ingredientsText: product?.ingredients_text || "?",
+        countriesTags: product?.countries_tags
+          ? `${product?.countries_tags.join(", ")}.`
+          : "?",
         images: product?.images || {},
-        categories: product?.categories || "",
+        categories: product?.categories || "?",
+        labels_tags: product?.labels_tags.join(", ") || "?",
+        quantity: product?.quantity || "?",
         isLoading: false,
       });
     });
@@ -365,42 +378,14 @@ const ProductInformation = ({ question }) => {
             th: { verticalAlign: "top", pr: 0 },
           }}
         >
-          <TableRow>
-            <TableCell component="th" scope="row">
-              {t("questions.brands")}
-            </TableCell>
-            <TableCell>{productData?.brands}</TableCell>
-          </TableRow>
-
-          <TableRow>
-            <TableCell component="th" scope="row">
-              {t("questions.ingredients")}
-            </TableCell>
-            <TableCell>{productData?.ingredientsText}</TableCell>
-          </TableRow>
-
-          <TableRow>
-            <TableCell component="th" scope="row">
-              {t("questions.countries")}
-            </TableCell>
-            <TableCell>
-              {!productData?.countriesTags
-                ? null
-                : `${productData.countriesTags.join(", ")}.`}
-            </TableCell>
-          </TableRow>
-
-          <TableRow>
-            <TableCell component="th" scope="row">
-              {t("questions.categories")}
-            </TableCell>
-            <TableCell>
-              {!productData?.categories ||
-              typeof productData?.categories === "object"
-                ? null
-                : productData?.categories}
-            </TableCell>
-          </TableRow>
+          {Object.keys(ADDITIONAL_INFO_TRANSLATION).map((infoKey) => (
+            <TableRow key={infoKey}>
+              <TableCell component="th" scope="row">
+                {t(`questions.${ADDITIONAL_INFO_TRANSLATION[infoKey]}`)}
+              </TableCell>
+              <TableCell>{productData?.[infoKey]}</TableCell>
+            </TableRow>
+          ))}
         </TableBody>
       </Table>
       {isDevMode && devCustomization.showDebug && (
