@@ -96,10 +96,10 @@ const robotoff = {
     return axios.put(
       `${ROBOTOFF_API_URL}/images/logos/${logoId}`,
       removeEmptyKeys({
-        withCredentials: true,
         value,
         type,
-      })
+      }),
+      { withCredentials: true }
     );
   },
 
@@ -131,9 +131,9 @@ const robotoff = {
     return axios.post(
       `${ROBOTOFF_API_URL}/images/logos/annotate`,
       removeEmptyKeys({
-        withCredentials: true,
         annotations,
-      })
+      }),
+      { withCredentials: true }
     );
   },
 
