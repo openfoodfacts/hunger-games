@@ -7,9 +7,12 @@ import CardActionArea from "@mui/material/CardActionArea";
 import CardContent from "@mui/material/CardContent";
 import Box from "@mui/material/Box";
 import Skeleton from "@mui/material/Skeleton";
+import Button from "@mui/material/Button";
 
 import robotoff from "../robotoff";
 import { getQuestionSearchParams } from "./QuestionFilter/useFilterSearch";
+
+const pageSize = 25;
 
 const OpportunityCard = (props) => {
   const { type, value, campaign, country, questionNumber } = props;
@@ -62,16 +65,22 @@ const Opportunities = (props) => {
   const { type, campaign, country } = props;
   const [remainingQuestions, setRemainingQuestions] = React.useState([]);
   const [isLoading, setIsLoading] = React.useState(true);
+  const [page, setPage] = React.useState(1);
+
+  React.useEffect(() => {
+    setRemainingQuestions([]);
+  }, [type, campaign, country]);
 
   React.useEffect(() => {
     let isValid = true;
     setIsLoading(true);
 
     robotoff
-      .getUnansweredValues({ type, campaign, country, page: 1 })
+      .getUnansweredValues({ type, campaign, country, page, count: pageSize })
       .then(({ data }) => {
+        console.log(data);
         if (isValid) {
-          setRemainingQuestions(data.questions);
+          setRemainingQuestions((prev) => [...prev, ...data.questions]);
           setIsLoading(false);
         }
       })
@@ -82,7 +91,7 @@ const Opportunities = (props) => {
     return () => {
       isValid = false;
     };
-  }, [type, campaign, country]);
+  }, [type, campaign, country, page]);
 
   return (
     <Box sx={{ mt: 2, px: 2 }}>
@@ -96,21 +105,29 @@ const Opportunities = (props) => {
           gridGap: "10px 50px",
         }}
       >
+        {remainingQuestions.map(([value, questionNumber]) => (
+          <OpportunityCard
+            key={value}
+            value={value}
+            type={type}
+            campaign={campaign}
+            country={country}
+            questionNumber={questionNumber}
+          />
+        ))}
         {isLoading &&
-          [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((id) => (
-            <CardSkeleton key={id} />
-          ))}
-        {!isLoading &&
-          remainingQuestions.map(([value, questionNumber]) => (
-            <OpportunityCard
-              key={value}
-              value={value}
-              type={type}
-              campaign={campaign}
-              country={country}
-              questionNumber={questionNumber}
-            />
-          ))}
+          [
+            0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18,
+            19, 20, 21, 22, 23, 24,
+          ].map((id) => <CardSkeleton key={id} />)}
+        <Button
+          disabled={isLoading}
+          variant="contained"
+          fullWidth
+          onClick={() => setPage((p) => p + 1)}
+        >
+          Load more
+        </Button>
       </Box>
     </Box>
   );

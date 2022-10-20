@@ -215,6 +215,7 @@ const robotoff = {
     country;
     campaign;
     page?: number;
+    count?: number;
   }) {
     let page = params.page ?? 1;
     page = page >= 1 ? page : 1;
