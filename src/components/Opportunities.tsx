@@ -18,7 +18,7 @@ const OpportunityCard = (props) => {
     valueTag: value,
     insightType: type,
     campaign,
-    country,
+    countryFilter: country,
     sortByPopularity: true,
   })}`;
   return (
