@@ -10,7 +10,9 @@ import Skeleton from "@mui/material/Skeleton";
 import Button from "@mui/material/Button";
 
 import robotoff from "../robotoff";
+import off from "../off";
 import { getQuestionSearchParams } from "./QuestionFilter/useFilterSearch";
+import { getLang } from "../localeStorageManager";
 
 const pageSize = 25;
 
@@ -24,6 +26,7 @@ const OpportunityCard = (props) => {
     countryFilter: country,
     sortByPopularity: true,
   })}`;
+
   return (
     <Card
       sx={{
@@ -61,6 +64,29 @@ const CardSkeleton = () => (
   </Card>
 );
 
+const useTranslation = (toTranslate) => {
+  const [translation, setTranslation] = React.useState({});
+
+  React.useEffect(() => {
+    const remaining = toTranslate.filter((key) => !translation[key]);
+
+    if (remaining.length > 0) {
+      off
+        .getCategoriesTranslations({ categories: remaining })
+        .then(({ data }) => {
+          setTranslation((prev) => ({
+            ...prev,
+            ...data,
+          }));
+        })
+        .catch(() => {});
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [toTranslate]);
+
+  return translation;
+};
+
 const Opportunities = (props) => {
   const { type, campaign, country } = props;
   const [remainingQuestions, setRemainingQuestions] = React.useState([]);
@@ -93,6 +119,11 @@ const Opportunities = (props) => {
     };
   }, [type, campaign, country, page]);
 
+  const translation = useTranslation(
+    remainingQuestions.map(([value, questionNumber]) => value)
+  );
+
+  const lang = getLang();
   return (
     <Box sx={{ mt: 2, px: 2 }}>
       <Typography variant="h6" component="h3">
@@ -105,16 +136,22 @@ const Opportunities = (props) => {
           gridGap: "10px 50px",
         }}
       >
-        {remainingQuestions.map(([value, questionNumber]) => (
-          <OpportunityCard
-            key={value}
-            value={value}
-            type={type}
-            campaign={campaign}
-            country={country}
-            questionNumber={questionNumber}
-          />
-        ))}
+        {remainingQuestions.map(([value, questionNumber]) => {
+          const name =
+            translation[value]?.name?.[lang] ??
+            translation[value]?.name?.en ??
+            value;
+          return (
+            <OpportunityCard
+              key={value}
+              value={name}
+              type={type}
+              campaign={campaign}
+              country={country}
+              questionNumber={questionNumber}
+            />
+          );
+        })}
         {isLoading &&
           [
             0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18,

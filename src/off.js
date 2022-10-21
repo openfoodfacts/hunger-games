@@ -1,5 +1,10 @@
 import { getLang } from "./localeStorageManager";
-import { OFF_API_URL, OFF_IMAGE_URL, OFF_SEARCH } from "./const";
+import {
+  OFF_API_URL,
+  OFF_API_URL_V2,
+  OFF_IMAGE_URL,
+  OFF_SEARCH,
+} from "./const";
 import axios from "axios";
 import combineURLs from "axios/lib/helpers/combineURLs";
 
@@ -46,6 +51,15 @@ const offService = {
     }
 
     return barcode;
+  },
+
+  getCategoriesTranslations({ categories }) {
+    const lang = getLang();
+    return axios.get(
+      `${OFF_API_URL_V2}/taxonomy?tagtype=categories&lc=en%2C${lang}&cc=fr&fields=name,wikidata&tags=${categories.join(
+        ","
+      )}`
+    );
   },
 
   getProduct(barcode) {
