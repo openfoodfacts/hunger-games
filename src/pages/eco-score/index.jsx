@@ -7,7 +7,7 @@ import MenuItem from "@mui/material/MenuItem";
 import Divider from "@mui/material/Divider";
 import Typography from "@mui/material/Typography";
 
-import QuestionCard from "../../components/QuestionCard";
+import SmallQuestionCard from "../../components/SmallQuestionCard";
 import Opportunities from "../../components/Opportunities";
 import { DEFAULT_FILTER_STATE } from "../../components/QuestionFilter/const";
 import { useTranslation } from "react-i18next";
@@ -183,7 +183,7 @@ export default function EcoScore() {
       >
         {ecoScoreCards.map((props) => (
           <Box key={props.title}>
-            <QuestionCard {...props} />
+            <SmallQuestionCard {...props} />
           </Box>
         ))}
       </Box>
