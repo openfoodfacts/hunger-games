@@ -104,12 +104,16 @@ const robotoff = {
   },
 
   searchLogos(barcode, value, type, count = 25) {
+    const formattedValue = ["label", "category"].includes(type)
+      ? { taxonomy_value: value }
+      : { value };
+
     return axios.get(`${ROBOTOFF_API_URL}/images/logos/search/`, {
       params: removeEmptyKeys({
         barcode,
-        value,
         type,
         count,
+        ...formattedValue,
       }),
     });
   },
