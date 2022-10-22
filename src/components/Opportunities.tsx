@@ -17,7 +17,7 @@ import { getLang } from "../localeStorageManager";
 const pageSize = 25;
 
 const OpportunityCard = (props) => {
-  const { type, value, campaign, country, questionNumber } = props;
+  const { type, value, name, campaign, country, questionNumber } = props;
 
   const targetUrl = `/questions?${getQuestionSearchParams({
     valueTag: value,
@@ -36,7 +36,7 @@ const OpportunityCard = (props) => {
     >
       <CardActionArea component={Link} to={targetUrl} sx={{ height: "100%" }}>
         <CardContent>
-          <Typography variant="h6">{value}</Typography>
+          <Typography variant="h6">{name}</Typography>
           <Typography sx={{ textAlign: "end", mt: 3, fontSize: "1.5rem" }}>
             {questionNumber.toLocaleString()}
           </Typography>
@@ -144,7 +144,8 @@ const Opportunities = (props) => {
           return (
             <OpportunityCard
               key={value}
-              value={name}
+              value={value}
+              name={name}
               type={type}
               campaign={campaign}
               country={country}
