@@ -1,7 +1,47 @@
 [
   {
+    "key": "fr:assortiment-de-croissants-et-pains-au-chocolat",
+    "name": "Assortiment de croissants et pains au chocolat"
+  },
+  {
+    "key": "en:crunchy-peanut-butters",
+    "name": "Beurres de cacahuetes croustillants"
+  },
+  {
+    "key": "en:diet-crispy-biscuit",
+    "name": "Biscuit sec croquant allégé en matière grasse"
+  },
+  {
+    "key": "en:crispy-biscuit-with-reduced-fat-chocolate",
+    "name": "Biscuit sec croquant au chocolat allégé en matière grasse"
+  },
+  {
     "key": "fr:chassagne-montrachet-premier-cru-ez-crottes",
     "name": "Chassagne-Montrachet premier cru Ez Crottes"
+  },
+  {
+    "key": "fr:chassagne-montrachet-premier-cru-ez-crottes-blanc",
+    "name": "Chassagne-Montrachet premier cru Ez Crottes blanc"
+  },
+  {
+    "key": "fr:chassagne-montrachet-premier-cru-ez-crottes-rouge",
+    "name": "Chassagne-Montrachet premier cru Ez Crottes rouge"
+  },
+  {
+    "key": "en:puffed-cereal-milk-chocolates",
+    "name": "Chocolats au lait aux céréales croustillantes"
+  },
+  {
+    "key": "en:croatian-fruit-spirit",
+    "name": "Croatian fruit spirit"
+  },
+  {
+    "key": "en:croatian-liqueur",
+    "name": "Croatian liqueur"
+  },
+  {
+    "key": "en:croatian-spirit-drinks",
+    "name": "Croatian spirit drinks"
   },
   {
     "key": "en:gummy-crocodiles",
@@ -10,6 +50,14 @@
   {
     "key": "en:croglin",
     "name": "Croglin"
+  },
+  {
+    "key": "en:croissant-from-bakery",
+    "name": "Croissant artisanal"
+  },
+  {
+    "key": "en:croissant-with-almonds-from-bakery",
+    "name": "Croissant aux amandes artisanal"
   },
   {
     "key": "en:croissants",
@@ -24,6 +72,14 @@
     "name": "Croissants au jambon"
   },
   {
+    "key": "en:ham-and-cheese-croissants",
+    "name": "Croissants au jambon fromage"
+  },
+  {
+    "key": "en:filled-croissants",
+    "name": "Croissants fourrés"
+  },
+  {
     "key": "en:croissant-filled-with-jam",
     "name": "Croissants fourrés à la confiture"
   },
@@ -36,6 +92,10 @@
     "name": "Croissants fourrés au chocolat"
   },
   {
+    "key": "fr:croissants-ordinaires",
+    "name": "Croissants ordinaires"
+  },
+  {
     "key": "fr:croissants-surgeles",
     "name": "Croissants surgelés"
   },
@@ -44,15 +104,19 @@
     "name": "Croquants aux amandes"
   },
   {
-    "key": "fr:croque-madame",
+    "key": "en:toasted-ham-sandwich-topped-with-grated-cheese-and-a-fried-egg",
     "name": "Croque-madame"
   },
   {
-    "key": "fr:croque-monsieur",
+    "key": "en:toasted-ham-sandwich-topped-with-grated-cheese",
     "name": "Croque-monsieur"
   },
   {
-    "key": "fr:croquettes-au-fromage",
+    "key": "en:grilled-cheese-ham-sandwich-prepacked",
+    "name": "Croque-monsieur frais"
+  },
+  {
+    "key": "en:cheese-croquettes",
     "name": "Croquettes au fromage"
   },
   {
@@ -60,8 +124,8 @@
     "name": "Croquettes aux crevettes"
   },
   {
-    "key": "fr:croquettes-de-poisson",
-    "name": "Croquettes de poisson"
+    "key": "en:fried-fish-croquette",
+    "name": "Croquettes de poisson frites"
   },
   {
     "key": "fr:croquettes-de-pommes-de-terre-surgelees",
@@ -76,8 +140,56 @@
     "name": "Croquettes pour chien"
   },
   {
-    "key": "fr:crottins-de-chavignol",
+    "key": "en:chinese-artichokes",
+    "name": "Crosnes"
+  },
+  {
+    "key": "en:frozen-chinese-artichokes",
+    "name": "Crosnes surgelés"
+  },
+  {
+    "key": "en:crostata",
+    "name": "Crostata"
+  },
+  {
+    "key": "en:crostatina",
+    "name": "Crostatina"
+  },
+  {
+    "key": "en:crottin-cheese-from-goat-s-milk",
+    "name": "Crottin de chèvre"
+  },
+  {
+    "key": "en:crottin-cheese-from-goat-s-milk-from-raw-milk",
+    "name": "Crottin de chèvre au lait cru"
+  },
+  {
+    "key": "en:crottin-de-chavignol-cheese",
     "name": "Crottins de Chavignol"
+  },
+  {
+    "key": "en:croutons",
+    "name": "Croûtons"
+  },
+  {
+    "key": "en:croutons-with-garlic",
+    "name": "Croûtons à l'ail"
+  },
+  {
+    "key": "en:croutons-for-spreads",
+    "name": "Croûtons à tartiner"
+  },
+  {
+    "key": "en:croutons-with-herbs",
+    "name": "Croûtons aux fines herbes"
+  },
+  {
+    "key": "en:croutons-with-onions",
+    "name": "Croûtons aux oignons"
+  },
+  {
+    "key": "en:plain-croutons",
+    "name": "Croûtons nature"
   },
   {
     "key": "en:crowdie",
@@ -92,6 +204,42 @@
     "name": "Crozets"
   },
   {
+    "key": "fr:crozets-de-savoie",
+    "name": "Crozets de Savoie"
+  },
+  {
+    "key": "en:soft-ripened-washed-rind-cheese-from-pasteurised-milk",
+    "name": "Fromage à pâte molle à croûte lavée au lait pasteurisé"
+  },
+  {
+    "key": "en:soft-ripened-cheese-with-bloomy-rind",
+    "name": "Fromage à pâte molle et croûte fleurie"
+  },
+  {
+    "key": "en:soft-ripened-washed-rind-cheese-reduced-fat-around-13-fat",
+    "name": "Fromage à pâte molle et croûte lavée allégé environ 13% MG"
+  },
+  {
+    "key": "en:soft-ripened-washed-bloomy-and-coloured-rind-cheese",
+    "name": "Fromage à pâte molle et croûte mixte (lavée et fleurie) colorée"
+  },
+  {
+    "key": "en:soft-ripened-cheese-with-bloomy-rind-from-goat-s-milk",
+    "name": "Fromage de chèvre à pâte molle et croûte fleurie"
+  },
+  {
+    "key": "en:soft-ripened-round-cheese-with-bloomy-rind-5-to-11-fat",
+    "name": "Fromage rond à pâte molle et croûte fleurie 5 à 11% MG"
+  },
+  {
+    "key": "en:soft-ripened-round-cheese-with-bloomy-rind-around-11-fat-coulommiers-type-cheese-reduced-fat",
+    "name": "Fromage rond à pâte molle et croûte fleurie environ 11% MG type coulommiers allégé en matière grasse"
+  },
+  {
+    "key": "en:soft-ripened-round-cheese-with-bloomy-rind-around-5-fat-camembert-type-cheese-reduced-fat",
+    "name": "Fromage rond à pâte molle et croûte fleurie environ 5% MG type camembert allégé en matière grasse"
+  },
+  {
     "key": "en:soft-cheeses-with-bloomy-rind",
     "name": "Fromages à pâte molle à croûte fleurie"
   },
@@ -104,8 +252,28 @@
     "name": "Fromages à pâte molle à croûte naturelle"
   },
   {
+    "key": "en:croatian-cheeses",
+    "name": "Fromages de Croatie"
+  },
+  {
+    "key": "en:thin-crunchy-wafer-biscuit-with-chocolate",
+    "name": "Gaufre croustillante fine chocolatée"
+  },
+  {
     "key": "fr:gevrey-chambertin-premier-cru-les-crobeaux",
     "name": "Gevrey-Chambertin premier cru Les Crobeaux"
+  },
+  {
+    "key": "en:olive-oils-from-alto-crotonese",
+    "name": "Huiles d'olive de Alto Crotonese"
+  },
+  {
+    "key": "en:croatian-oils-and-fats",
+    "name": "Huiles et graisses croates"
+  },
+  {
+    "key": "en:ready-to-feed-baby-growing-up-milk",
+    "name": "Lait de croissance pour enfants en bas âge"
   },
   {
     "key": "en:growth-milks",
@@ -120,28 +288,92 @@
     "name": "Mercurey premier cru Les Croichots"
   },
   {
+    "key": "en:crunchy-chocolate-muesli-fortified-with-vitamins-and-chemical-elements",
+    "name": "Muesli croustillant au chocolat enrichi en vitamines et minéraux"
+  },
+  {
+    "key": "en:crunchy-muesli-with-chocolate-not-fortified-with-vitamins-and-chemical-elements",
+    "name": "Muesli croustillant au chocolat non enrichi en vitamines et minéraux"
+  },
+  {
+    "key": "en:crunchy-muesli-with-fruits-fortified-with-vitamins-and-chemical-elements",
+    "name": "Muesli croustillant aux fruits enrichi en vitamines et minéraux"
+  },
+  {
+    "key": "en:crunchy-muesli-with-fruits-not-fortified-with-vitamins-and-chemical-elements",
+    "name": "Muesli croustillant aux fruits non enrichi en vitamines et minéraux"
+  },
+  {
+    "key": "en:crunchy-mueslis-with-chocolate",
+    "name": "Mueslis croustillant au chocolat"
+  },
+  {
+    "key": "en:crunchy-mueslis",
+    "name": "Mueslis croustillants"
+  },
+  {
+    "key": "en:crunchy-mueslis-with-fruits",
+    "name": "Mueslis croustillants aux fruits"
+  },
+  {
     "key": "fr:nuits-saint-georges-premier-cru-les-crots",
     "name": "Nuits-Saint-Georges premier cru Les Crots"
   },
   {
-    "key": "fr:pains-croustillants",
+    "key": "fr:nuits-saint-georges-premier-cru-les-crots-blanc",
+    "name": "Nuits-Saint-Georges premier cru Les Crots blanc"
+  },
+  {
+    "key": "fr:nuits-saint-georges-premier-cru-les-crots-rouge",
+    "name": "Nuits-Saint-Georges premier cru Les Crots rouge"
+  },
+  {
+    "key": "en:crispbreads",
     "name": "Pains croustillants"
   },
   {
-    "key": "en:english-bread-without-crust",
+    "key": "en:sliced-breads-without-crust",
     "name": "Pains de mie sans croûte"
+  },
+  {
+    "key": "en:pate-in-crust",
+    "name": "Pâté en croûte"
+  },
+  {
+    "key": "en:crunchy-cereal-clusters",
+    "name": "Pépites de céréales croustillantes"
   },
   {
     "key": "fr:pommard-les-croix-noires",
     "name": "Pommard Les Croix Noires"
   },
   {
+    "key": "en:croatian-meat-products",
+    "name": "Produits carnés croates"
+  },
+  {
+    "key": "en:croatian-bakery-products",
+    "name": "Produits de boulangerie croates"
+  },
+  {
     "key": "fr:sainte-croix-du-mont",
     "name": "Sainte-croix-du-mont"
   },
   {
+    "key": "en:croatian-salts",
+    "name": "Sels croates"
+  },
+  {
     "key": "en:crunchy-almond-turron",
     "name": "Tourons croquants aux amandes"
+  },
+  {
+    "key": "en:crunchy-peanut-turron",
+    "name": "Tourons croquants aux cacahuètes"
+  },
+  {
+    "key": "en:crocodile-meats",
+    "name": "Viande de crocodile"
   },
   {
     "key": "fr:vosne-romanee-premier-cru-la-croix-rameau",

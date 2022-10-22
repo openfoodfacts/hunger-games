@@ -1,7 +1,67 @@
 [
   {
+    "key": "en:cream-sauce-for-pizza-base",
+    "name": "Base de pizza à la crème"
+  },
+  {
+    "key": "en:tomato-sauce-for-pizza-base",
+    "name": "Base de pizza tomatée"
+  },
+  {
+    "key": "en:raw-pizza-base",
+    "name": "Pâte à pizza crue"
+  },
+  {
+    "key": "en:cooked-pizza-base",
+    "name": "Pâte à pizza cuite"
+  },
+  {
+    "key": "en:thin-crust-pizza-shell",
+    "name": "Pâte à pizza fine"
+  },
+  {
+    "key": "en:raw-thin-crust-pizza-shell",
+    "name": "Pâte à pizza fine crue"
+  },
+  {
     "key": "en:pizza-dough",
     "name": "Pâtes à pizza"
+  },
+  {
+    "key": "en:chicken-pizza",
+    "name": "Pizza au poulet"
+  },
+  {
+    "key": "en:salmon-pizza",
+    "name": "Pizza au saumon"
+  },
+  {
+    "key": "en:cured-ham-pizza",
+    "name": "Pizza au speck"
+  },
+  {
+    "key": "en:seafood-pizza",
+    "name": "Pizza aux fruits de mer"
+  },
+  {
+    "key": "en:cheese-and-onion-pizza-with-lardoons",
+    "name": "Pizza aux lardons oignons et fromage"
+  },
+  {
+    "key": "en:vegetable-pizza",
+    "name": "Pizza aux légumes"
+  },
+  {
+    "key": "en:cheese-and-mushrooms-pizza",
+    "name": "Pizza champignons fromage"
+  },
+  {
+    "key": "en:pizza-with-ham-and-cheese",
+    "name": "Pizza jambon fromage"
+  },
+  {
+    "key": "en:pizza-with-raclette-cheese-and-lardoons",
+    "name": "Pizza type raclette"
   },
   {
     "key": "en:pizzas",
@@ -64,10 +124,6 @@
     "name": "Pizzas et tartes surgelées"
   },
   {
-    "key": "en:pizza-with-ham-and-cheese",
-    "name": "Pizzas jambon-fromage"
-  },
-  {
     "key": "en:margherita-pizza",
     "name": "Pizzas margherita"
   },
@@ -88,7 +144,19 @@
     "name": "Pizzas tartes salées et quiches"
   },
   {
+    "key": "en:pizza-pastry-base",
+    "name": "Préparation pour pâte à pizza"
+  },
+  {
+    "key": "en:topping-sauce-for-pizza",
+    "name": "Sauce pour pizza"
+  },
+  {
     "key": "en:pizza-sauces",
     "name": "Sauces pour pizzas"
+  },
+  {
+    "key": "en:speck-pizza",
+    "name": "Speck pizza"
   }
 ]

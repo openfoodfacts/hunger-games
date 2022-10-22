@@ -24,10 +24,6 @@
     "name": "Low or no sugar"
   },
   {
-    "key": "en:fsc-c002324",
-    "name": "Multi Packaging Solutions Pharmaceutical and Healthcare Packaging Nottingham"
-  },
-  {
     "key": "en:no-added-fat",
     "name": "No added fat"
   },
@@ -56,12 +52,20 @@
     "name": "No alcohol"
   },
   {
+    "key": "en:no-antibiotics",
+    "name": "No antibiotics"
+  },
+  {
     "key": "en:no-artificial-additives",
     "name": "No artificial additives"
   },
   {
     "key": "en:no-artificial-colors",
     "name": "No artificial colors"
+  },
+  {
+    "key": "en:no-artificial-colours-and-preservatives",
+    "name": "No artificial colours and preservatives"
   },
   {
     "key": "en:no-artificial-colours-or-flavours",
@@ -74,6 +78,10 @@
   {
     "key": "en:no-artificial-flavour-enhancer",
     "name": "No artificial flavour enhancer"
+  },
+  {
+    "key": "en:no-artificial-flavourings-or-sweeteners",
+    "name": "No artificial flavourings or sweeteners"
   },
   {
     "key": "en:no-artificial-preservatives",
@@ -120,6 +128,14 @@
     "name": "No flavour enhancer"
   },
   {
+    "key": "en:no-gelatin",
+    "name": "No gelatin"
+  },
+  {
+    "key": "en:no-gluten",
+    "name": "No gluten"
+  },
+  {
     "key": "en:no-gmos",
     "name": "No GMOs"
   },
@@ -142,6 +158,18 @@
   {
     "key": "en:no-msg",
     "name": "No MSG"
+  },
+  {
+    "key": "en:no-nuts",
+    "name": "No nuts"
+  },
+  {
+    "key": "en:no-palm-oil",
+    "name": "No palm oil"
+  },
+  {
+    "key": "en:no-peanuts",
+    "name": "No peanuts"
   },
   {
     "key": "en:no-preservatives",
@@ -172,6 +200,10 @@
     "name": "No Trans Fat"
   },
   {
+    "key": "en:no-wheat",
+    "name": "No wheat"
+  },
+  {
     "key": "en:no-øko-01",
     "name": "NO-ØKO-01"
   },
@@ -182,6 +214,18 @@
   {
     "key": "en:non-eu-agriculture",
     "name": "Non-EU Agriculture"
+  },
+  {
+    "key": "en:non-fair-trade",
+    "name": "Non-fair trade"
+  },
+  {
+    "key": "en:non-organic",
+    "name": "Non-organic"
+  },
+  {
+    "key": "en:non-vegan",
+    "name": "Non-vegan"
   },
   {
     "key": "en:non-vegetarian",

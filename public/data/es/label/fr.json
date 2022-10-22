@@ -24,8 +24,16 @@
     "name": "Cultivado en Francia"
   },
   {
+    "key": "en:dzg-gluten-free",
+    "name": "DZG Gluten free"
+  },
+  {
     "key": "en:egg-laid-in-france",
     "name": "Egg laid in France"
+  },
+  {
+    "key": "en:eggs-from-animals-fed-without-gmos",
+    "name": "Eggs from animals fed without GMOs"
   },
   {
     "key": "en:packaged-in-france",
@@ -72,16 +80,8 @@
     "name": "Free from E number"
   },
   {
-    "key": "en:free-range",
-    "name": "Free range"
-  },
-  {
     "key": "en:free-range-chicken",
     "name": "Free range chicken"
-  },
-  {
-    "key": "en:free-range-eggs",
-    "name": "Free range eggs"
   },
   {
     "key": "en:free-range-pork",
@@ -96,6 +96,18 @@
     "name": "Freedom Food"
   },
   {
+    "key": "en:french-agriculture",
+    "name": "French agriculture"
+  },
+  {
+    "key": "en:french-beef",
+    "name": "French beef"
+  },
+  {
+    "key": "en:french-poultry",
+    "name": "French poultry"
+  },
+  {
     "key": "en:made-in-france",
     "name": "Hecho en Francia"
   },
@@ -106,6 +118,10 @@
   {
     "key": "en:french-eggs",
     "name": "Huevos originados en Francia"
+  },
+  {
+    "key": "en:institut-fresenius",
+    "name": "Institut Fresenius"
   },
   {
     "key": "en:french-milk",
@@ -120,12 +136,20 @@
     "name": "Manzanas de Francia"
   },
   {
+    "key": "en:max-havelaar-france",
+    "name": "Max Havelaar France"
+  },
+  {
     "key": "en:potatoes-from-france",
     "name": "Patatas originadas en Francia"
   },
   {
     "key": "en:french-duck",
     "name": "Pato francés"
+  },
+  {
+    "key": "en:pesticide-free",
+    "name": "Pesticide-free"
   },
   {
     "key": "en:quality-food-from-hungary",
@@ -138,10 +162,6 @@
   {
     "key": "en:san-francisco-international-wine-competition",
     "name": "San Francisco International Wine Competition"
-  },
-  {
-    "key": "en:saveurs-de-l-annee-france",
-    "name": "Saveurs de l'Année (France)"
   },
   {
     "key": "en:some-ingredients-not-from-france",

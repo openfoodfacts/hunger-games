@@ -96,12 +96,20 @@
     "name": "Silver medal of the German Agricultural Society"
   },
   {
+    "key": "en:small-producers-symbol",
+    "name": "Símbolo de Pequeños Productores"
+  },
+  {
     "key": "en:without",
     "name": "Sin"
   },
   {
-    "key": "en:palm-oil-free",
+    "key": "en:no-palm-oil",
     "name": "Sin aceite de palma"
+  },
+  {
+    "key": "en:without-vegetable-oils",
+    "name": "Sin aceites vegetales"
   },
   {
     "key": "en:no-trans-fat",
@@ -112,7 +120,7 @@
     "name": "Sin aditivos"
   },
   {
-    "key": "en:no-artificial-additives",
+    "key": "bg:без-изкуствени-добавки",
     "name": "Sin aditivos artificiales"
   },
   {
@@ -120,8 +128,12 @@
     "name": "Sin alcohol"
   },
   {
-    "key": "en:without-antibiotics",
+    "key": "en:no-antibiotics",
     "name": "Sin antibióticos"
+  },
+  {
+    "key": "en:without-antibiotics-since-birth",
+    "name": "Sin antibióticos desde el nacimiento"
   },
   {
     "key": "en:no-flavors",
@@ -148,7 +160,7 @@
     "name": "Sin bisfenol A"
   },
   {
-    "key": "en:peanut-free",
+    "key": "en:no-peanuts",
     "name": "Sin cacahuetes"
   },
   {
@@ -192,7 +204,11 @@
     "name": "Sin edulcorantes artificiales"
   },
   {
-    "key": "en:without-gelatin",
+    "key": "en:no-added-thickener",
+    "name": "Sin espesantes añadidos"
+  },
+  {
+    "key": "en:no-gelatin",
     "name": "Sin gelatina"
   },
   {
@@ -200,8 +216,12 @@
     "name": "Sin glutamato"
   },
   {
-    "key": "en:gluten-free",
+    "key": "en:no-gluten",
     "name": "Sin gluten"
+  },
+  {
+    "key": "en:no-added-msg",
+    "name": "Sin GMS añadido"
   },
   {
     "key": "en:no-fat",
@@ -252,6 +272,18 @@
     "name": "Sin potenciador artificial del sabor"
   },
   {
+    "key": "en:no-flavour-enhancer",
+    "name": "Sin potenciadores del sabor"
+  },
+  {
+    "key": "en:without-addition-of-dairy-products",
+    "name": "Sin productos lácteos añadidos"
+  },
+  {
+    "key": "en:dolphin-safe",
+    "name": "Sin riesgo para los delfines"
+  },
+  {
     "key": "en:no-salt",
     "name": "Sin sal"
   },
@@ -268,7 +300,7 @@
     "name": "Sin sulfitos"
   },
   {
-    "key": "en:without-antibiotics-since-birth",
-    "name": "Without antibiotics since birth"
+    "key": "es:sin-tacc",
+    "name": "Sin TACC"
   }
 ]

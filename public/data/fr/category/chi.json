@@ -1,5 +1,13 @@
 [
   {
+    "key": "fr:assortiments-chipolatas-et-merguez",
+    "name": "Assortiments chipolatas et merguez"
+  },
+  {
+    "key": "en:chinese-dumplings",
+    "name": "Bouchées à la vapeur chinoises cuites"
+  },
+  {
     "key": "fr:bourgogne-clairet-chitry",
     "name": "Bourgogne Clairet Chitry"
   },
@@ -8,8 +16,20 @@
     "name": "Bourgogne-chitry"
   },
   {
+    "key": "en:butter-chicken",
+    "name": "Butter chicken"
+  },
+  {
     "key": "fr:chassagne-montrachet-premier-cru-dent-de-chien",
     "name": "Chassagne-Montrachet premier cru Dent de Chien"
+  },
+  {
+    "key": "fr:chassagne-montrachet-premier-cru-dent-de-chien-rouge",
+    "name": "Chassagne-Montrachet premier cru Dent de Chien rouge"
+  },
+  {
+    "key": "en:cheddar-with-chili",
+    "name": "Cheddar with chili"
   },
   {
     "key": "en:chia",
@@ -20,12 +40,48 @@
     "name": "Chianti"
   },
   {
+    "key": "en:chicken-salads",
+    "name": "Chicken salads"
+  },
+  {
+    "key": "en:chicken-tikka",
+    "name": "Chicken Tikka"
+  },
+  {
+    "key": "en:instant-mix-of-chicory-and-coffee-powder",
+    "name": "Chicorée et café en poudre soluble"
+  },
+  {
+    "key": "en:mix-of-chicory-and-coffee-instant-without-sugar-ready-to-drink-reconstituted-with-standard-semi-skimmed-milk",
+    "name": "Chicorée et café instantané non sucré prête à boire (reconstituée avec du lait demi-écrémé standard)"
+  },
+  {
+    "key": "en:curly-endives",
+    "name": "Chicorée frisée"
+  },
+  {
+    "key": "en:sugar-free-ready-to-drink-instant-chicory-with-artificial-sweeteners-reconstituted-with-standard-semi-skimmed-milk",
+    "name": "Chicorée instantanée non sucrée prête à boire reconstituée avec du lait demi-écrémé standard"
+  },
+  {
+    "key": "en:red-endives",
+    "name": "Chicorée rouge"
+  },
+  {
     "key": "en:instant-chicory",
     "name": "Chicorée soluble"
   },
   {
+    "key": "en:green-endive",
+    "name": "Chicorée verte"
+  },
+  {
     "key": "en:chili-con-carne",
     "name": "Chili con carne"
+  },
+  {
+    "key": "en:chili-powders",
+    "name": "Chili powders"
   },
   {
     "key": "en:chili-sin-carne",
@@ -40,16 +96,36 @@
     "name": "Chimayo"
   },
   {
+    "key": "en:horse-mackerel",
+    "name": "Chinchard"
+  },
+  {
+    "key": "en:oily-horse-mackerel",
+    "name": "Chinchard gras"
+  },
+  {
+    "key": "en:lean-horse-mackerel",
+    "name": "Chinchard maigre"
+  },
+  {
+    "key": "en:chinese-pasta",
+    "name": "Chinese pasta"
+  },
+  {
     "key": "fr:chinon",
     "name": "Chinon"
   },
   {
-    "key": "fr:chipolatas",
+    "key": "en:chipolatas",
     "name": "Chipolatas"
   },
   {
     "key": "fr:chipolatas-aux-herbes",
     "name": "Chipolatas aux herbes"
+  },
+  {
+    "key": "en:cooked-chipolata-sausages",
+    "name": "Chipolatas cuites"
   },
   {
     "key": "en:crisps",
@@ -136,12 +212,28 @@
     "name": "Chips de patate douce"
   },
   {
+    "key": "en:chickpea-crisps",
+    "name": "Chips de pois chiches"
+  },
+  {
+    "key": "en:crisps-made-from-reconstituted-potato",
+    "name": "Chips de pomme de terre reconstituée"
+  },
+  {
     "key": "en:potato-crisps",
     "name": "Chips de pommes de terre"
   },
   {
+    "key": "en:potato-crisps-a-l-ancienne",
+    "name": "Chips de pommes de terre à l'ancienne"
+  },
+  {
     "key": "en:potato-crisps-in-olive-oil",
     "name": "Chips de pommes de terre à l'huile d'olive"
+  },
+  {
+    "key": "en:potato-crisps-in-coco-oil",
+    "name": "Chips de pommes de terre à l'huile de coco"
   },
   {
     "key": "en:potato-crisps-in-sunflower-oil",
@@ -164,7 +256,7 @@
     "name": "Chips de pommes de terre lisses"
   },
   {
-    "key": "fr:chips-de-pommes-de-terre-ondulees",
+    "key": "en:wavy-potato-crisps",
     "name": "Chips de pommes de terre ondulées"
   },
   {
@@ -184,8 +276,28 @@
     "name": "Chips paysannes"
   },
   {
+    "key": "fr:chirashi",
+    "name": "Chirashi"
+  },
+  {
+    "key": "fr:chirashi-au-saumon",
+    "name": "Chirashi au saumon"
+  },
+  {
     "key": "fr:chiroubles",
     "name": "Chiroubles"
+  },
+  {
+    "key": "en:chinese-cabbage",
+    "name": "Chou chinois"
+  },
+  {
+    "key": "en:cooked-chinese-cabbage",
+    "name": "Chou chinois cuit"
+  },
+  {
+    "key": "en:coronation-chicken",
+    "name": "Coronation chicken"
   },
   {
     "key": "en:dry-dog-food",
@@ -196,20 +308,44 @@
     "name": "Escacena chickpeas"
   },
   {
-    "key": "en:chickpeas-flours",
+    "key": "fr:escaveche-de-chimay",
+    "name": "Escavèche de Chimay"
+  },
+  {
+    "key": "en:chickpea-flours",
     "name": "Farines de pois chiche"
+  },
+  {
+    "key": "en:fried-chicken-wraps",
+    "name": "Fried chicken wraps"
   },
   {
     "key": "en:fuentesauco-chickpeas",
     "name": "Fuentesaúco chickpeas"
   },
   {
-    "key": "en:gummy-chips",
-    "name": "Gummy chips"
+    "key": "en:olive-oils-from-chianti-classico",
+    "name": "Huiles d'olive de Chianti Classico"
+  },
+  {
+    "key": "en:instant-chicory-with-water",
+    "name": "Instant chicory with water"
+  },
+  {
+    "key": "en:jerk-chicken-wraps",
+    "name": "Jerk chicken wraps"
   },
   {
     "key": "en:lechoso-chickpeas",
     "name": "Lechoso chickpeas"
+  },
+  {
+    "key": "en:baking-powder-or-raising-agent",
+    "name": "Levure chimique"
+  },
+  {
+    "key": "en:liquid-chicken-broths",
+    "name": "Liquid chicken broths"
   },
   {
     "key": "en:chinese-nougats",
@@ -232,8 +368,16 @@
     "name": "Pâtées pour chien"
   },
   {
+    "key": "en:chickpea-pasta",
+    "name": "Pâtes de pois chiche"
+  },
+  {
     "key": "en:pedrosillano-chickpeas",
     "name": "Pedrosillano chickpeas"
+  },
+  {
+    "key": "en:cooked-chick-peas",
+    "name": "Pois chiche cuits"
   },
   {
     "key": "en:chickpeas",
@@ -256,16 +400,48 @@
     "name": "Pois chiches en conserve"
   },
   {
+    "key": "en:chocolate-covered-chickpeas",
+    "name": "Pois chiches enrobés de chocolat"
+  },
+  {
+    "key": "en:salty-roasted-chickpeas",
+    "name": "Pois chiches grillés salés"
+  },
+  {
+    "key": "en:dried-chickpeas",
+    "name": "Pois chiches secs"
+  },
+  {
     "key": "en:frozen-chickpeas",
     "name": "Pois chiches surgelés"
+  },
+  {
+    "key": "en:chinese-sea-products",
+    "name": "Produits de la mer chinois"
+  },
+  {
+    "key": "en:pummelo-pulp",
+    "name": "Pulpe de pamplemousse chinois"
   },
   {
     "key": "en:chinese-raviolis",
     "name": "Ravioli chinois"
   },
   {
+    "key": "en:cooked-steamed-shrimp-dumplings",
+    "name": "Ravioli vapeur chinois à la crevette cuit"
+  },
+  {
     "key": "fr:saint-aubin-premier-cru-les-murgers-des-dents-de-chien",
     "name": "Saint-Aubin premier cru Les Murgers des Dents de Chien"
+  },
+  {
+    "key": "fr:saint-aubin-premier-cru-les-murgers-des-dents-de-chien-blanc",
+    "name": "Saint-Aubin premier cru Les Murgers des dents de chien blanc"
+  },
+  {
+    "key": "fr:saint-aubin-premier-cru-les-murgers-des-dents-de-chien-rouge",
+    "name": "Saint-Aubin premier cru Les Murgers des dents de chien rouge"
   },
   {
     "key": "fr:saint-chinian",
@@ -278,6 +454,10 @@
   {
     "key": "en:hot-sauces",
     "name": "Sauces chili"
+  },
+  {
+    "key": "en:sweet-and-sour-chicken",
+    "name": "Sweet and sour chicken"
   },
   {
     "key": "en:chinese-green-teas",

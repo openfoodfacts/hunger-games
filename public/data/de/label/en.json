@@ -1,7 +1,15 @@
 [
   {
+    "key": "en:blue-angel",
+    "name": "Blauer Engel"
+  },
+  {
     "key": "en:enriched-wih-minerals",
     "name": "Enriched wih minerals"
+  },
+  {
+    "key": "en:contains-alcohol",
+    "name": "Enthält Alkohol"
   },
   {
     "key": "en:contains-a-source-of-phenylalanine",
@@ -12,8 +20,16 @@
     "name": "Enthält Gluten"
   },
   {
+    "key": "en:contains-gmos",
+    "name": "Enthält GVO"
+  },
+  {
     "key": "en:contains-milk",
     "name": "Enthält Milch"
+  },
+  {
+    "key": "en:with-natural-sulfites",
+    "name": "Enthält natürliche Sulfite"
   },
   {
     "key": "en:contains-soy",
@@ -22,5 +38,13 @@
   {
     "key": "en:with-sulfites",
     "name": "Enthält Sulfite"
+  },
+  {
+    "key": "en:french-duck",
+    "name": "Französische Ente"
+  },
+  {
+    "key": "de:haltungsform-3-außenklima",
+    "name": "Haltungsform 3 Außenklima"
   }
 ]

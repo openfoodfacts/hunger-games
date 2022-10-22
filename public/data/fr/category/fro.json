@@ -16,16 +16,36 @@
     "name": "Beers from Dortmund"
   },
   {
-    "key": "en:beers-from-united-kingdom",
-    "name": "Beers from United Kingdom"
+    "key": "fr:biscottes-de-froment",
+    "name": "Biscottes de froment"
   },
   {
-    "key": "fr:biscottes-au-froment",
-    "name": "Biscottes au froment"
-  },
-  {
-    "key": "fr:biscuits-aperitifs-fourres-au-fromage",
+    "key": "en:salty-snacks-crackers-garnished-with-cheese",
     "name": "Biscuits apéritifs fourrés au fromage"
+  },
+  {
+    "key": "fr:box-de-radiatori-au-fromage",
+    "name": "Box de radiatori au fromage"
+  },
+  {
+    "key": "en:savoury-cake-with-cheese",
+    "name": "Cake salé au fromage"
+  },
+  {
+    "key": "fr:calzones-au-fromage",
+    "name": "Calzones au fromage"
+  },
+  {
+    "key": "fr:calzones-jambon-fromage",
+    "name": "Calzones jambon fromage"
+  },
+  {
+    "key": "en:cannelloni-with-goat-cheese-and-spinach",
+    "name": "Cannelloni au fromage et aux épinards"
+  },
+  {
+    "key": "en:cannelloni-with-cooked-vegetables-and-goat-cheese",
+    "name": "Cannelloni aux légumes cuits et au fromage de chèvre"
   },
   {
     "key": "fr:canon-fronsac",
@@ -40,7 +60,23 @@
     "name": "Chips fromage et oignon"
   },
   {
-    "key": "fr:crepes-au-fromage",
+    "key": "fr:concombres-au-fromage-blanc",
+    "name": "Concombres au fromage blanc"
+  },
+  {
+    "key": "fr:coquillettes-jambon-fromage",
+    "name": "Coquillettes jambon-fromage"
+  },
+  {
+    "key": "en:wheat-crackers",
+    "name": "Crackers au froment"
+  },
+  {
+    "key": "en:crepe-filled-with-cheese-and-bechamel-sauce",
+    "name": "Crêpe fourrée béchamel fromage"
+  },
+  {
+    "key": "en:crepe-filled-with-cheese",
     "name": "Crêpes au fromage"
   },
   {
@@ -48,7 +84,19 @@
     "name": "Crêpes de froment"
   },
   {
-    "key": "fr:croquettes-au-fromage",
+    "key": "en:salted-crispy-crepe-with-cheese",
+    "name": "Crêpes dentelle au fromage"
+  },
+  {
+    "key": "en:buckwheat-crepe-filled-with-cheese-ham-and-mushrooms",
+    "name": "Crêpes jambon fromage champignon"
+  },
+  {
+    "key": "en:ham-and-cheese-croissants",
+    "name": "Croissants au jambon fromage"
+  },
+  {
+    "key": "en:cheese-croquettes",
     "name": "Croquettes au fromage"
   },
   {
@@ -60,7 +108,7 @@
     "name": "Farines de froment"
   },
   {
-    "key": "en:wheat-flour-t110",
+    "key": "fr:farines-de-froment-t110",
     "name": "Farines de froment T110"
   },
   {
@@ -76,12 +124,20 @@
     "name": "Farines de froment T55"
   },
   {
-    "key": "en:wheat-flour-t65",
+    "key": "fr:farines-de-froment-t65",
     "name": "Farines de froment T65"
   },
   {
     "key": "en:semi-polished-common-wheat-flours",
     "name": "Farines de froment T80"
+  },
+  {
+    "key": "en:cheese-in-puff-pastry",
+    "name": "Feuilleté au fromage"
+  },
+  {
+    "key": "en:ham-and-cheese-in-puffed-pastry",
+    "name": "Feuilleté jambon fromage"
   },
   {
     "key": "en:puff-pastries-with-ham-and-cheese",
@@ -92,12 +148,200 @@
     "name": "From 3 years"
   },
   {
-    "key": "fr:fromage-de-tete",
-    "name": "Fromage de tête"
+    "key": "en:soft-ripened-washed-rind-cheese-from-pasteurised-milk",
+    "name": "Fromage à pâte molle à croûte lavée au lait pasteurisé"
+  },
+  {
+    "key": "en:soft-ripened-cheese-double-cream-around-30-fat",
+    "name": "Fromage à pâte molle double crème environ 30% MG"
+  },
+  {
+    "key": "en:soft-ripened-cheese-with-bloomy-rind",
+    "name": "Fromage à pâte molle et croûte fleurie"
+  },
+  {
+    "key": "en:soft-ripened-washed-rind-cheese-reduced-fat-around-13-fat",
+    "name": "Fromage à pâte molle et croûte lavée allégé environ 13% MG"
+  },
+  {
+    "key": "en:soft-ripened-washed-bloomy-and-coloured-rind-cheese",
+    "name": "Fromage à pâte molle et croûte mixte (lavée et fleurie) colorée"
+  },
+  {
+    "key": "en:soft-ripened-cheese-triple-cream-around-40-fat",
+    "name": "Fromage à pâte molle triple crème environ 40% MG"
+  },
+  {
+    "key": "en:uncured-soft-cheese-spreadable-with-around-20-fat",
+    "name": "Fromage à tartiner à environ 20% MG"
+  },
+  {
+    "key": "en:uncured-soft-cheese-spreadable-with-around-25-fat",
+    "name": "Fromage à tartiner à environ 25% MG"
+  },
+  {
+    "key": "en:cubed-appetizer-cheese",
+    "name": "Fromage apéritif en cube"
+  },
+  {
+    "key": "en:fat-free-plain-fresh-cream-cheese",
+    "name": "Fromage blanc nature à 0% de matières grasses"
+  },
+  {
+    "key": "en:plain-fresh-cream-cheese-around-3-fat",
+    "name": "Fromage blanc nature à 3% de matières grasses environ"
+  },
+  {
+    "key": "en:plain-creamy-fresh-cream-cheese-around-8-fat",
+    "name": "Fromage blanc nature gourmand à 8% de matières grasses environ"
+  },
+  {
+    "key": "en:bresse-blue-cheese-from-cow-s-milk",
+    "name": "Fromage bleu de Bresse"
+  },
+  {
+    "key": "en:bresse-blue-cheese-from-cow-s-milk-reduced-fat-around-15-fat",
+    "name": "Fromage bleu de Bresse allegé environ 15% MG"
+  },
+  {
+    "key": "fr:fromage-de-beersel",
+    "name": "Fromage de Beersel"
+  },
+  {
+    "key": "en:semi-hard-cheeses",
+    "name": "Fromage de brebis à pâte pressée"
+  },
+  {
+    "key": "en:pyrenees-cheeses",
+    "name": "Fromage de brebis des Pyrénées"
+  },
+  {
+    "key": "fr:fromage-de-bruxelles",
+    "name": "Fromage de Bruxelles"
+  },
+  {
+    "key": "en:soft-ripened-cheese-with-bloomy-rind-from-goat-s-milk",
+    "name": "Fromage de chèvre à pâte molle et croûte fleurie"
+  },
+  {
+    "key": "en:spreadable-goat-cheese",
+    "name": "Fromage de chèvre à tartiner"
+  },
+  {
+    "key": "en:semi-dry-cheese-from-goat-s-milk",
+    "name": "Fromage de chèvre demi-sec"
+  },
+  {
+    "key": "en:fresh-goat-cheese",
+    "name": "Fromage de chèvre frais"
+  },
+  {
+    "key": "en:cheese-from-goat-s-milk-fresh-from-raw-milk",
+    "name": "Fromage de chèvre frais au lait cru"
+  },
+  {
+    "key": "en:cheese-from-goat-s-milk-fresh",
+    "name": "Fromage de chèvre frais au lait pasteurisé ou cru"
+  },
+  {
+    "key": "en:cheese-from-goat-s-milk-from-pasteurised-milk",
+    "name": "Fromage de chèvre lactique affiné au lait pasteurisé"
+  },
+  {
+    "key": "en:dry-cheese-from-goat-s-milk",
+    "name": "Fromage de chèvre sec"
+  },
+  {
+    "key": "bg:ерве",
+    "name": "Fromage de Herve"
+  },
+  {
+    "key": "en:cheese-from-ewe-s-whey",
+    "name": "Fromage de lactosérum de brebis"
+  },
+  {
+    "key": "en:hard-cheese-emmental-type-cheese-reduced-fat",
+    "name": "Fromage de type emmental"
+  },
+  {
+    "key": "en:processed-cheese-double-cream-around-31-fat",
+    "name": "Fromage fondu double crème environ 31% MG"
+  },
+  {
+    "key": "en:processed-cheese-around-20-fat-in-cubes",
+    "name": "Fromage fondu en cubes environ 20% MG"
+  },
+  {
+    "key": "en:processed-cheese-around-20-fat-in-wedges",
+    "name": "Fromage fondu en portions environ 20% MG"
+  },
+  {
+    "key": "en:processed-cheese-in-slices",
+    "name": "Fromage fondu en tranchettes"
+  },
+  {
+    "key": "en:fruits-flavoured-fat-fresh-cream-cheese",
+    "name": "Fromage frais aromatisé aux fruits"
+  },
+  {
+    "key": "en:2-3-fat-petit-suisse-fruits-flavoured-fortified-with-calcium-and-vitamin-d",
+    "name": "Fromage frais aromatisé aux fruits à 2-3% de matières grasses enrichi en calcium et vitamine D"
+  },
+  {
+    "key": "en:2-3-fat-petit-suisse-with-fruits-fortified-with-calcium-and-vitamin-d",
+    "name": "Fromage frais aux fruits à 2-3% de matières grasses enrichi en calcium et vitamine D"
+  },
+  {
+    "key": "en:petit-suisse-fortified-with-calcium-and-vitamin-d",
+    "name": "Fromage frais enrichi en calcium et vitamine D"
+  },
+  {
+    "key": "en:plain-petit-suisse-around-9-fat",
+    "name": "Fromage frais nature à 10% de matières grasses environ"
+  },
+  {
+    "key": "en:plain-petit-suisse-around-4-fat",
+    "name": "Fromage frais nature à 4% de matières grasses environ"
+  },
+  {
+    "key": "en:cheese-and-ham-breaded",
+    "name": "Fromage pané au jambon"
+  },
+  {
+    "key": "en:soft-ripened-round-cheese-with-bloomy-rind-5-to-11-fat",
+    "name": "Fromage rond à pâte molle et croûte fleurie 5 à 11% MG"
+  },
+  {
+    "key": "en:soft-ripened-round-cheese-with-bloomy-rind-around-11-fat-coulommiers-type-cheese-reduced-fat",
+    "name": "Fromage rond à pâte molle et croûte fleurie environ 11% MG type coulommiers allégé en matière grasse"
+  },
+  {
+    "key": "en:soft-ripened-round-cheese-with-bloomy-rind-around-5-fat-camembert-type-cheese-reduced-fat",
+    "name": "Fromage rond à pâte molle et croûte fleurie environ 5% MG type camembert allégé en matière grasse"
+  },
+  {
+    "key": "en:feta-type-cheese-from-cow-s-milk",
+    "name": "Fromage type feta au lait de vache"
+  },
+  {
+    "key": "en:feta-type-cheese-from-cow-s-milk-in-oil-and-spices",
+    "name": "Fromage type feta au lait de vache à l'huile et aux aromates"
+  },
+  {
+    "key": "en:firm-cheese-around-27-fat-maasdam-type-cheese",
+    "name": "Fromage type Maasdam 27% MG"
   },
   {
     "key": "en:cheeses",
     "name": "Fromages"
+  },
+  {
+    "key": "en:grilling-cheeses",
+    "name": "Fromages à griller"
+  },
+  {
+    "key": "en:cream-cheeses",
+    "name": "Fromages à la crème"
   },
   {
     "key": "en:stretched-curd-cheeses",
@@ -108,7 +352,7 @@
     "name": "Fromages à pâte fondue"
   },
   {
-    "key": "en:cream-cheeses",
+    "key": "en:fresh-cheeses",
     "name": "Fromages à pâte fraîche"
   },
   {
@@ -148,8 +392,12 @@
     "name": "Fromages à tartiner"
   },
   {
-    "key": "fr:fromages-ail-et-fines-herbes",
+    "key": "en:flavoured-uncured-soft-cheese-spreadable-with-around-30-40-fat",
     "name": "Fromages Ail et fines herbes"
+  },
+  {
+    "key": "en:german-cheeses",
+    "name": "Fromages allemands"
   },
   {
     "key": "fr:fromages-aperitif",
@@ -164,7 +412,7 @@
     "name": "Fromages au lait cru"
   },
   {
-    "key": "en:buffalo-s-milk-cheese",
+    "key": "en:buffalo-cheeses",
     "name": "Fromages au lait de bufflonne"
   },
   {
@@ -172,8 +420,16 @@
     "name": "Fromages au lait thermisé"
   },
   {
+    "key": "en:austrian-cheeses",
+    "name": "Fromages autrichiens"
+  },
+  {
     "key": "en:cheeses-with-walnuts",
     "name": "Fromages aux noix"
+  },
+  {
+    "key": "en:belgian-cheeses",
+    "name": "Fromages belges"
   },
   {
     "key": "fr:fromages-blancs",
@@ -192,11 +448,11 @@
     "name": "Fromages blancs au lait de chèvre"
   },
   {
-    "key": "fr:fromages-blancs-au-lait-de-vache",
+    "key": "en:fresh-cream-cheese-with-cow-s-milk",
     "name": "Fromages blancs au lait de vache"
   },
   {
-    "key": "fr:fromages-blancs-aux-fruits",
+    "key": "en:fromages-blancs-with-fruits",
     "name": "Fromages blancs aux fruits"
   },
   {
@@ -236,6 +492,10 @@
     "name": "Fromages de Corse"
   },
   {
+    "key": "en:croatian-cheeses",
+    "name": "Fromages de Croatie"
+  },
+  {
     "key": "en:french-cheeses",
     "name": "Fromages de France"
   },
@@ -272,10 +532,6 @@
     "name": "Fromages double crème"
   },
   {
-    "key": "fr:fromages-du-nord-pas-de-calais",
-    "name": "Fromages du Nord-Pas-de-Calais"
-  },
-  {
     "key": "en:cheeses-from-wales",
     "name": "Fromages du Pays de Galles"
   },
@@ -302,6 +558,10 @@
   {
     "key": "en:smoked-cheeses",
     "name": "Fromages fumés"
+  },
+  {
+    "key": "en:hungarian-cheeses",
+    "name": "Fromages hongrois"
   },
   {
     "key": "en:industrial-cheese",
@@ -340,12 +600,16 @@
     "name": "Fromages portugais"
   },
   {
-    "key": "fr:fromages-pour-enfants",
+    "key": "en:cheeses-for-kids",
     "name": "Fromages pour enfants"
   },
   {
     "key": "en:grated-cheese",
     "name": "Fromages râpés"
+  },
+  {
+    "key": "en:romanian-cheeses",
+    "name": "Fromages roumains"
   },
   {
     "key": "en:lactose-free-cheeses",
@@ -400,6 +664,10 @@
     "name": "Frozen chopped green beans"
   },
   {
+    "key": "en:frozen-meat-and-vegetable-mixes",
+    "name": "Frozen meat and vegetable mixes"
+  },
+  {
     "key": "en:frozen-vegetables-for-paella",
     "name": "Frozen vegetables for paella"
   },
@@ -416,12 +684,84 @@
     "name": "Frozen whole green beans"
   },
   {
+    "key": "en:buckwheat-crepe-with-cheese-and-ham",
+    "name": "Galettes jambon fromage"
+  },
+  {
+    "key": "en:fresh-cream-cheese-cake",
+    "name": "Gâteau au fromage blanc"
+  },
+  {
+    "key": "en:herbal-vodka-from-the-north-podlasie-lowland-aromatised-with-an-extract-of-bison-grass",
+    "name": "Herbal vodka from the North Podlasie Lowland aromatised with an extract of bison grass"
+  },
+  {
+    "key": "en:lasagne-with-goat-cheese-and-spinach",
+    "name": "Lasagnes au fromage de chèvre et épinards"
+  },
+  {
+    "key": "en:lasagna-with-cooked-vegetables-and-goat-cheese",
+    "name": "Lasagnes aux légumes cuits et au fromage de chèvre"
+  },
+  {
     "key": "fr:muscat-de-frontignan",
     "name": "Muscat de Frontignan"
   },
   {
+    "key": "en:olive-oils-from-hungary",
+    "name": "Olive oils from Hungary"
+  },
+  {
+    "key": "en:omelettes-with-cheese",
+    "name": "Omelettes au fromage"
+  },
+  {
+    "key": "en:wheat-rusk-slices",
+    "name": "Pain grillé en tranches au froment"
+  },
+  {
+    "key": "en:wheat-swedish-toast",
+    "name": "Pain grillé suédois au froment"
+  },
+  {
     "key": "fr:pains-azymes-a-la-farine-de-froment",
     "name": "Pains azymes à la farine de froment"
+  },
+  {
+    "key": "en:pasta-with-cheese-sauce",
+    "name": "Pâtes en sauce aux fromages"
+  },
+  {
+    "key": "en:pasta-stuffed-with-cheese",
+    "name": "Pâtes farcies au fromage"
+  },
+  {
+    "key": "en:fresh-pasta-stuffed-with-cheese",
+    "name": "Pâtes fraîches au fromage"
+  },
+  {
+    "key": "en:cooked-fresh-pasta-stuffed-with-cheese-and-vegetables",
+    "name": "Pâtes fraîches cuits farcies au fromage et aux légumes"
+  },
+  {
+    "key": "en:fresh-pasta-stuffed-with-cheese-and-vegetables",
+    "name": "Pâtes fraîches farcies au fromage et aux légumes"
+  },
+  {
+    "key": "en:instant-pasta-with-cheese",
+    "name": "Pâtes instantanées au fromage"
+  },
+  {
+    "key": "en:cheese-and-onion-pizza-with-lardoons",
+    "name": "Pizza aux lardons oignons et fromage"
+  },
+  {
+    "key": "en:cheese-and-mushrooms-pizza",
+    "name": "Pizza champignons fromage"
+  },
+  {
+    "key": "en:pizza-with-ham-and-cheese",
+    "name": "Pizza jambon fromage"
   },
   {
     "key": "en:cheese-pizzas",
@@ -444,16 +784,32 @@
     "name": "Pizzas aux trois fromages"
   },
   {
-    "key": "en:pizza-with-ham-and-cheese",
-    "name": "Pizzas jambon-fromage"
-  },
-  {
     "key": "en:cheese-ravioli",
     "name": "Ravioli au fromage"
   },
   {
+    "key": "fr:raviolis-frais-au-fromage",
+    "name": "Raviolis fraîs au fromage"
+  },
+  {
+    "key": "en:risotto-with-cheese",
+    "name": "Risotto aux fromages"
+  },
+  {
     "key": "en:cheese-samosas",
     "name": "Samoussas au fromage"
+  },
+  {
+    "key": "en:sandwich-with-ham-and-vegetables-and-cheese",
+    "name": "Sandwich jambon crudités fromage"
+  },
+  {
+    "key": "en:sandwich-made-with-wholemeal-loaf-bread-and-ham-and-vegetables-and-cheese",
+    "name": "Sandwich pain de mie complet jambon crudités fromage"
+  },
+  {
+    "key": "en:sandwich-made-with-wholemeal-loaf-bread-ham-and-cheese",
+    "name": "Sandwich triangle jambon fromage"
   },
   {
     "key": "en:cheese-sandwiches",
@@ -464,32 +820,100 @@
     "name": "Sandwichs Jambon Fromage"
   },
   {
+    "key": "en:sauce-pepper-prepacked",
+    "name": "Sauce au poivre condimentaire froide"
+  },
+  {
+    "key": "fr:sauces-3-fromages",
+    "name": "Sauces 3 fromages"
+  },
+  {
+    "key": "fr:sauces-4-fromages",
+    "name": "Sauces 4 fromages"
+  },
+  {
     "key": "en:cheese-sauces",
     "name": "Sauces au fromage"
+  },
+  {
+    "key": "en:tomato-sauces-with-cheese",
+    "name": "Sauces tomate au fromage"
   },
   {
     "key": "fr:saucissons-secs-au-fromage",
     "name": "Saucissons secs au fromage"
   },
   {
+    "key": "en:slivova-rakya-from-lovech",
+    "name": "Slivova rakya from Lovech"
+  },
+  {
+    "key": "en:slivova-rakya-from-troyan",
+    "name": "Slivova rakya from Troyan"
+  },
+  {
+    "key": "en:cheese-souffle",
+    "name": "Soufflé au fromage"
+  },
+  {
+    "key": "en:reheatable-vegetables-soups-with-cheese",
+    "name": "Soupes aux légumes avec fromage à réchauffer"
+  },
+  {
     "key": "en:cold-soups",
     "name": "Soupes froides"
   },
   {
-    "key": "en:non-dairy-cheeses",
+    "key": "en:spaghetti-with-cheese-sauce",
+    "name": "Spaghetti en sauce aux fromages"
+  },
+  {
+    "key": "en:processed-cheese-with-fresh-cream-cheese-and-walnuts",
+    "name": "Spécialité fromagère fondante au fromage blanc et aux noix"
+  },
+  {
+    "key": "en:cheese-spreads-substitutes",
+    "name": "Substituts de fromages à tartiner"
+  },
+  {
+    "key": "en:cheese-substitutes",
     "name": "Substituts du fromage"
+  },
+  {
+    "key": "en:surimi-filled-with-cheese",
+    "name": "Surimi fourré au fromage"
+  },
+  {
+    "key": "en:tagliatelle-with-cheese-sauce",
+    "name": "Tagliatelle en sauce aux fromages"
   },
   {
     "key": "en:cheese-pies",
     "name": "Tartes au fromage"
   },
   {
-    "key": "fr:tortellini-4-fromages",
-    "name": "Tortellini 4 fromages"
+    "key": "fr:tortellini-au-fromage",
+    "name": "Tortellini au fromage"
   },
   {
-    "key": "en:valencay-cheese",
-    "name": "Valençay (fromage)"
+    "key": "fr:tortellini-aux-quatre-fromages",
+    "name": "Tortellini aux quatre fromages"
+  },
+  {
+    "key": "en:wines-from-albania",
+    "name": "Wines from Albania"
+  },
+  {
+    "key": "en:wines-from-algeria",
+    "name": "Wines from Algeria"
+  },
+  {
+    "key": "en:wines-from-argentina",
+    "name": "Wines from Argentina"
+  },
+  {
+    "key": "en:wines-from-armenia",
+    "name": "Wines from Armenia"
   },
   {
     "key": "en:wines-from-belgium",

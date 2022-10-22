@@ -1,230 +1,42 @@
 [
   {
-    "key": "en:banana-yogurts",
-    "name": "Banana yogurts"
-  },
-  {
-    "key": "en:blackberry-yogurts",
-    "name": "Blackberry yogurts"
-  },
-  {
-    "key": "en:caramel-yogurts",
-    "name": "Caramel yogurts"
+    "key": "en:blue-cheese-yogurt-dressings",
+    "name": "Blue cheese yogurt dressings"
   },
   {
     "key": "en:cherry-yogurts",
     "name": "Cherry yogurts"
   },
   {
-    "key": "en:chocolate-yogurts",
-    "name": "Chocolate yogurts"
+    "key": "en:coconutmilk-yogurts",
+    "name": "Coconutmilk yogurts"
   },
   {
-    "key": "en:coconut-yogurts",
-    "name": "Coconut yogurts"
+    "key": "en:cooked-egg-yolk",
+    "name": "Cooked egg yolk"
   },
   {
-    "key": "en:cow-milk-yogurt",
-    "name": "Cow milk yogurt"
+    "key": "en:cooked-young-cow-liver",
+    "name": "Cooked young cow liver"
   },
   {
-    "key": "en:figs-yogurts",
-    "name": "Figs yogurts"
+    "key": "en:cooked-young-goat",
+    "name": "Cooked young goat"
   },
   {
-    "key": "en:fine-fettle-yorkshire",
-    "name": "Fine Fettle Yorkshire"
+    "key": "en:egg-yolk",
+    "name": "Egg yolk"
   },
   {
-    "key": "en:fruit-stirred-yogurts",
-    "name": "Fruit stirred yogurts"
+    "key": "en:egg-yolk-powder",
+    "name": "Egg yolk powder"
   },
   {
-    "key": "en:goat-milk-yogurts",
-    "name": "Goat milk yogurts"
+    "key": "en:fat-free-fermented-milk-yogurt-with-fruits-and-sweetener",
+    "name": "Fat free fermented milk yogurt with fruits and sweetener"
   },
   {
-    "key": "en:honey-yogurts",
-    "name": "Honey yogurts"
-  },
-  {
-    "key": "en:kiwi-yogurts",
-    "name": "Kiwi yogurts"
-  },
-  {
-    "key": "en:mango-yogurts",
-    "name": "Mango yogurts"
-  },
-  {
-    "key": "en:mixed-yogurts",
-    "name": "Mixed yogurts"
-  },
-  {
-    "key": "en:peach-yogurts",
-    "name": "Peach yogurts"
-  },
-  {
-    "key": "en:pear-yogurts",
-    "name": "Pear yogurts"
-  },
-  {
-    "key": "en:pineapple-yogurts",
-    "name": "Pineapple yogurts"
-  },
-  {
-    "key": "en:plain-stirred-yogurts",
-    "name": "Plain stirred yogurts"
-  },
-  {
-    "key": "en:stirred-yogurts",
-    "name": "Stirred yogurts"
-  },
-  {
-    "key": "en:yogurts",
-    "name": "Yogures"
-  },
-  {
-    "key": "en:low-fat-yogurts",
-    "name": "Yogures bajos en grasa"
-  },
-  {
-    "key": "en:bifidus-yogurts",
-    "name": "Yogures bifidus"
-  },
-  {
-    "key": "en:apricot-yogurts",
-    "name": "Yogures de albaricoque"
-  },
-  {
-    "key": "en:blueberry-yogurts",
-    "name": "Yogures de arándanos"
-  },
-  {
-    "key": "en:chestnut-yogurts",
-    "name": "Yogures de castaña"
-  },
-  {
-    "key": "en:raspberry-yogurts",
-    "name": "Yogures de frambuesa"
-  },
-  {
-    "key": "en:strawberry-yogurts",
-    "name": "Yogures de fresa"
-  },
-  {
-    "key": "en:fruit-yogurts-with-fruit-chunks",
-    "name": "Yogures de fruta con trozos de fruta"
-  },
-  {
-    "key": "en:fruit-yogurts",
-    "name": "Yogures de frutas"
-  },
-  {
-    "key": "en:sheep-milk-yogurts",
-    "name": "Yogures de leche de oveja"
-  },
-  {
-    "key": "en:whole-milk-yogurts",
-    "name": "Yogures de leche entera"
-  },
-  {
-    "key": "en:lemon-yogurts",
-    "name": "Yogures de limón"
-  },
-  {
-    "key": "en:flavoured-yogurts",
-    "name": "Yogures de sabores"
-  },
-  {
-    "key": "en:soy-milk-yogurts",
-    "name": "Yogures de soja"
-  },
-  {
-    "key": "en:blueberry-soy-yogurts",
-    "name": "Yogures de soja con arándanos"
-  },
-  {
-    "key": "en:cherry-soy-yogurts",
-    "name": "Yogures de soja con cerezas"
-  },
-  {
-    "key": "en:strawberry-soy-yogurts",
-    "name": "Yogures de soja con fresa"
-  },
-  {
-    "key": "en:fruit-soy-yogurts",
-    "name": "Yogures de soja con frutas"
-  },
-  {
-    "key": "en:berries-soy-yogurts",
-    "name": "Yogures de soja con frutas del bosque"
-  },
-  {
-    "key": "en:tropical-fruits-soy-yogurts",
-    "name": "Yogures de soja con frutas tropicales"
-  },
-  {
-    "key": "en:mixed-fruit-soy-yogurts",
-    "name": "Yogures de soja con frutas variadas"
-  },
-  {
-    "key": "en:lemon-soy-yogurts",
-    "name": "Yogures de soja con limón"
-  },
-  {
-    "key": "en:peach-soy-yogurts",
-    "name": "Yogures de soja con melocotón"
-  },
-  {
-    "key": "en:banana-soy-yogurts",
-    "name": "Yogures de soja con plátano"
-  },
-  {
-    "key": "en:plain-soy-yogurts",
-    "name": "Yogures de soja naturales"
-  },
-  {
-    "key": "en:vanilla-yogurt",
-    "name": "Yogures de vainilla"
-  },
-  {
-    "key": "en:sweetened-yogurts",
-    "name": "Yogures endulzados"
-  },
-  {
-    "key": "en:greek-yogurts",
-    "name": "Yogures estilo griego"
-  },
-  {
-    "key": "en:frozen-yogurts",
-    "name": "Yogures helados"
-  },
-  {
-    "key": "en:plain-yogurts",
-    "name": "Yogures naturales"
-  },
-  {
-    "key": "en:drinkable-yogurts",
-    "name": "Yogures para beber"
-  },
-  {
-    "key": "en:lactose-free-yogurts",
-    "name": "Yogures sin lactosa"
-  },
-  {
-    "key": "en:non-dairy-yogurts",
-    "name": "Yogures vegetales"
-  },
-  {
-    "key": "en:yogurts-with-cereals",
-    "name": "Yogurts with cereals"
-  },
-  {
-    "key": "en:young-gouda",
-    "name": "Young gouda"
-  },
-  {
-    "key": "en:young-mimolettes",
-    "name": "Young mimolettes"
+    "key": "en:fat-free-fermented-milk-yogurt-with-fruits-and-sweetener-fortified-with-vitamin-d",
+    "name": "Fat free fermented milk yogurt with fruits and sweetener fortified with vitamin D"
   }
 ]
