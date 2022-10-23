@@ -26,7 +26,7 @@
     "saved_filters": "מסננים שמורים",
     "contribution_modal": {
       "title": "התרומות שלך מביאות לשינוי",
-      "information": "Hunger Games is an effort to leverage the results of our OCR. When you use Hunger Games by Open Food Facts, you improve our entire database which helps the community make better food choices. We gathers your annotations and use them to make Open Food Facts more accurate and effecient.",
+      "information": "משחקי הרעב הם מאמץ למנף את תוצאות הסריקה האופטית שלנו. שימוש במשחקי הרעב של Open Food Facts, תורמים בשיפור מסד הנתונים שלנו, מה שעוזר לקהילה לבחור טוב יותר באוכל. אנו אוספים את התיוגים שלך ומשתמשים בהם כדי להפוך את Open Food Facts למדויק ויעיל יותר.",
       "thank_you": "תודה לך על הסיוע בשיפור Open Food Facts כדי שיותר אנשים יוכלו להשתמש בשירות בקלות."
     },
     "statistics": {
@@ -204,9 +204,9 @@
     "welcome": {
       "page1": {
         "title": "ברוך בואך למשחקי הרעב",
-        "text1": "Hunger Games is a collection of mini-games that help contribute to Open Food Facts in many ways. You can play are really exciting games from anywhere. Here is a guided tour of the entire website which will get you started.",
+        "text1": "משחקי הרעב הם אוסף של משחקונים שעוזרים לתרום ל־Open Food Facts במגוון דרכים. ניתן לשחק במגוון משחקים מרתקים מכל מקום. להלן סיור מודרך באתר שיעזור לך להיכנס לעניינים.",
         "text2": "נא לוודא שנכנסת לחשבון שלך באתר של Open Food Facts כדי לקבל קרדיט על התרומות שלך. אם שגית, נא להשקיע מזמנך לגשת לאתר ולתקן את הטעות.",
-        "text3": "In case of any doubt about the games, click on the question mark icon at the top right of the page, and you can reach us on slack at the #hunger-games channel"
+        "text3": "במקרה של ספק כלשהו בנוגע למשחקים, אפשר ללחוץ על סמל סימן השאלה בפינה השמאלית העליונה של העמוד וניתן לפנות אלינו דרך Slack בערוץ ‎#hunger-games"
       },
       "page2": {
         "title": "משחק שאלות",
@@ -320,7 +320,7 @@
   },
   "nutriscore": {
     "image_alt": "תמונה חתוכה",
-    "label": "Annotate nutriscore logo detection by batch.",
+    "label": "תיוג מרוכז של הלוגו של Nutri-Score.",
     "description": "כדי לעשות זאת, יש לבחור את כל התמונות המציגות את הערך התזונתי הנכון/שגוי ({{label}}), וללחוץ על הכפתורים שלמטה כדי לומר אם בחרת קבוצה נכונה או שגויה.",
     "images_remaining": "נותרו {{remaining}} לתיוג",
     "image_sizes": "גדלי תמונות",
