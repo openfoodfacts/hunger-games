@@ -32,7 +32,7 @@ const pages = [
   { translationKey: "menu.manage" },
   { url: "insights", translationKey: "menu.insights", devModeOnly: true },
   { url: "nutriscore", translationKey: "menu.nutriscore", devModeOnly: true },
-  // { url: "settings", translationKey: "menu.settings" },
+  { url: "settings", translationKey: "menu.settings", devModeOnly: true },
 ];
 
 const ResponsiveAppBar = () => {
@@ -131,6 +131,15 @@ const ResponsiveAppBar = () => {
             >
               {t("menu.title")}
             </Typography>
+            <IconButton
+              color="inherit"
+              onClick={handleCloseNavMenu}
+              sx={{ my: 2 }}
+              component={Link}
+              to={`/settings`}
+            >
+              <SettingsIcon />
+            </IconButton>
             {isLoggedIn ? (
               <AccountCircleIcon color="success" />
             ) : (
