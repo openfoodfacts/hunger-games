@@ -22,6 +22,8 @@ import { Link } from "react-router-dom";
 
 import { useTranslation } from "react-i18next";
 import Welcome from "./welcome/Welcome";
+import { useMediaQuery } from "@mui/material";
+import { useTheme } from "@mui/material/styles";
 
 // Object wit no url are subheader in the menu
 const pages = [
@@ -32,7 +34,7 @@ const pages = [
   { translationKey: "menu.manage" },
   { url: "insights", translationKey: "menu.insights", devModeOnly: true },
   { url: "nutriscore", translationKey: "menu.nutriscore", devModeOnly: true },
-  { url: "settings", translationKey: "menu.settings", devModeOnly: true },
+  { url: "settings", translationKey: "menu.settings", mobileOnly: true },
 ];
 
 const ResponsiveAppBar = () => {
@@ -47,11 +49,20 @@ const ResponsiveAppBar = () => {
     setAnchorElNav(null);
   };
 
+  const theme = useTheme();
+  const isDesktop = useMediaQuery(theme.breakpoints.up("md"));
+
   const { isLoggedIn, userName, refresh } = React.useContext(LoginContext);
   const { devMode: isDevMode, visiblePages } = React.useContext(DevModeContext);
-  const displayedPages = pages.filter(
-    (page) => !page.devModeOnly || (isDevMode && visiblePages[page.url])
-  );
+  const displayedPages = pages.filter((page) => {
+    if (page.devModeOnly) {
+      return isDevMode && visiblePages[page.url];
+    }
+    if (page.mobileOnly) {
+      return !isDesktop;
+    }
+    return true;
+  });
 
   return (
     <AppBar position="static" color="secondary">
@@ -102,6 +113,7 @@ const ResponsiveAppBar = () => {
                     onClick={handleCloseNavMenu}
                     component={Link}
                     to={`/${page.url}`}
+                    data-welcome-tour={page.url}
                   >
                     <Typography textAlign="center">
                       {t(page.translationKey)}
@@ -113,6 +125,10 @@ const ResponsiveAppBar = () => {
                   </ListSubheader>
                 )
               )}
+              <Typography textAlign="center">
+                {t("Tour")}
+                <Welcome />
+              </Typography>
             </Menu>
             <Typography
               variant="h5"
@@ -131,15 +147,6 @@ const ResponsiveAppBar = () => {
             >
               {t("menu.title")}
             </Typography>
-            <IconButton
-              color="inherit"
-              onClick={handleCloseNavMenu}
-              sx={{ my: 2 }}
-              component={Link}
-              to={`/settings`}
-            >
-              <SettingsIcon />
-            </IconButton>
             {isLoggedIn ? (
               <AccountCircleIcon color="success" />
             ) : (
