@@ -5,49 +5,49 @@
       "cards": {
         "questions": {
           "title": "Запитання",
-          "description": "Tell us if the given image answers the questions"
+          "description": "Скажіть нам, чи відповідає подане зображення на запитання"
         },
         "logos": {
           "title": "Логотипи",
-          "description": "Find all the logos matching the given logo"
+          "description": "Знайдіть усі логотипи, які відповідають заданому логотипу"
         },
         "eco_score": {
           "title": "Показник впливу на довкілля",
-          "description": "Annotate the questions with the highest value"
+          "description": "Прокоментуйте питання з найвищим значенням"
         }
       }
     },
     "account_band": {
-      "title": "Want to make your contribution count? Create an account or sign in on Open Food Facts!",
+      "title": "Хочете, щоб ваш внесок був врахованим? Створіть обліковий запис або увійдіть на Open Food Facts!",
       "log_in": "Ім'я користувача",
       "sign_up": "Зареєструватися",
-      "contribution_details": "Learn why your contribution matters"
+      "contribution_details": "Дізнайтеся, чому ваш внесок важливий"
     },
-    "saved_filters": "Saved Filters",
+    "saved_filters": "Збережені фільтри",
     "contribution_modal": {
-      "title": "Your contribution matters",
-      "information": "Hunger Games is an effort to leverage the results of our OCR. When you use Hunger Games by Open Food Facts, you improve our entire database which helps the community make better food choices. We gathers your annotations and use them to make Open Food Facts more accurate and effecient.",
-      "thank_you": "Thank you for helping us improve Open Food Facts so that more people can use it easily."
+      "title": "Ваш внесок має значення",
+      "information": "Голодні ігри - це спроба використати результати нашого розпізнавання тексту. Коли ви використовуєте \"Голодні ігри\" від Open Food Facts, ви покращуєте всю нашу базу даних, яка допомагає суспільству робити кращий вибір продуктів харчування. Ми збираємо ваші анотації і використовуємо їх, щоб зробити Open Food Facts більш точними та ефективними.",
+      "thank_you": "Дякуємо, що допомагаєте нам покращувати Open Food Facts, щоб більше людей могли легко ним користуватися."
     },
     "statistics": {
-      "title": "{{userName}} statistics:",
+      "title": "{{userName}} статистика:",
       "editorCount": {
         "title": "Редактор",
-        "description": "Number of edition done"
+        "description": "Кількість здійснених видань"
       },
       "contributorCount": {
         "title": "Учасник",
-        "description": "Adding a new product"
+        "description": "Додавання нового продукту"
       },
       "photographerCount": {
-        "title": "Photographer",
-        "description": "Taking photos for a product"
+        "title": "Фотограф",
+        "description": "Фотографування для продукту"
       }
     }
   },
   "flagged_images": {
-    "title": "Images flagged by users",
-    "loading": "Loading"
+    "title": "Зображення, позначені користувачами",
+    "loading": "Завантаження"
   },
   "questions": {
     "category": "категорія",
@@ -55,11 +55,11 @@
     "label": "етикетка",
     "brand": "виробник",
     "brands": "Виробники",
-    "insightTypeLabel": "Only shows",
+    "insightTypeLabel": "Показувати лише",
     "ingredients": "Інгредієнти",
     "product_weight": "вага товару",
     "popularity_sort": "Сортувати за популярністю",
-    "see_examples": "See examples of this ",
+    "see_examples": "Перегляньте приклади цього ",
     "no": "Ні",
     "skip": "Пропустити",
     "yes": "Так",
@@ -71,7 +71,7 @@
     "display_images": "Відображення зображень",
     "annotations": "Коментарі",
     "last_annotations": "Останні анотації\n",
-    "remaining_annotations": "Remaining questions",
+    "remaining_annotations": "Запитання, що залишилися",
     "annotated_annotations": "Коментарі",
     "filters": {
       "short_label": {
@@ -88,7 +88,7 @@
         "brand": "Торгова марка продукту",
         "popularity": "Сортувати за популярністю",
         "edit": "",
-        "campaign": "Campaign"
+        "campaign": "Кампанія"
       },
       "placeholders": {
         "value": "Змінна (fanta, en:organic,...)",
@@ -101,18 +101,18 @@
         "apply": "Застосувати"
       }
     },
-    "other_questions": "Other questions",
-    "send": "Send",
-    "flag": "Something wrong? Report/flag the image!",
-    "unflag": "Unflag the image",
-    "reset_filters": "Reset filters",
+    "other_questions": "Інші питання",
+    "send": "Надіслати",
+    "flag": "Щось не так? Повідомте/позначте зображення!",
+    "unflag": "Зняти прапорець із зображення",
+    "reset_filters": "Скинути фільтри",
     "log_in": "Ім'я користувача",
     "sign_up": "Зареєструватися",
-    "login_title": "Make your annotation count",
-    "login_description": "Currently you are not logged in Open Food Facts. To get your answers directly applied to products, and associated to your account, consider logging in to your Open Food Facts account, or creating one"
+    "login_title": "Зробіть свою анотацію важливою",
+    "login_description": "Наразі ви не ввійшли в Open Food Facts. Щоб ваші відповіді були безпосередньо застосовані до продуктів і пов’язані з вашим обліковим записом, увійдіть у свій обліковий запис Open Food Facts або створіть його"
   },
   "menu": {
-    "title": "Hunger Games",
+    "title": "Голодні Ігри",
     "games": "Ігри",
     "questions": "Запитання",
     "logos": "Логотипи",
@@ -122,8 +122,8 @@
     "settings": "Налаштування",
     "eco-score": "Показник впливу на довкілля",
     "nutriscore": "Nutri-Score",
-    "logged_in_user": "logged as {{userName}}",
-    "log_in": "click to login"
+    "logged_in_user": "увійшли як {{userName}}",
+    "log_in": "натисніть, щоб увійти"
   },
   "insights": {
     "insights": "Статистика",
@@ -152,13 +152,13 @@
     "completed_at": "Завершено",
     "automatic": "Автоматичний",
     "human_required": "Human required",
-    "edit_product": "Open product edit",
-    "view_product": "Open product page"
+    "edit_product": "Відкрити редагування продукту",
+    "view_product": "Відкрити сторінку продукту"
   },
   "logos": {
     "annotation": "Анотації:",
     "annotations": "Анотації логотипу",
-    "task_description": "Select all logos that are exactly the same, and give them a name like \"en:EU Organic\" and a type like \"label\".",
+    "task_description": "Виберіть всі логотипи, які є абсолютно однаковими, і дайте їм назву, наприклад, \"en:EU Organic\", і тип, наприклад, \"label\".",
     "select_all": "Вибрати все",
     "unselect_all": "Очистити все",
     "distance": "Відстань:",
@@ -181,35 +181,35 @@
     "no_found": "Логотип не знайдено",
     "search": "Пошук",
     "number_of_results": "Кількість результатів",
-    "loading": "Loading...",
+    "loading": "Завантаження...",
     "refresh": "Оновлення",
-    "search_specific": "Search specific logo",
-    "load_more": "Load more",
+    "search_specific": "Пошук певного логотипа",
+    "load_more": "Завантажити більше",
     "no_results": "Логотип не знайдено",
     "result_count": "Shows {{showing}} on {{available}} available",
-    "flag": "Something wrong? Report/flag the image!",
-    "unflag": "Unflag the image",
-    "crop_image_title": "crop of the logo"
+    "flag": "Щось не так? Повідомте/позначте зображення!",
+    "unflag": "Зняти прапорець із зображення",
+    "crop_image_title": "кадрування логотипу"
   },
   "settings": {
     "settings": "Налаштування",
     "language": "Мови",
     "save": "Зберегти",
-    "reportIssue": "Found a bug?, please let us know",
-    "dev_mode_title": "To explore the database content, activate the dev mode",
-    "dev_mode_label": "Dev Mode",
-    "dev_page_toggle": "Show {{name}} page"
+    "reportIssue": "Знайшли помилку? Будь ласка, повідомте нас",
+    "dev_mode_title": "Для ознайомлення з вмістом бази даних активуйте режим розробника",
+    "dev_mode_label": "Режим розробника",
+    "dev_page_toggle": "Показати {{name}} сторінку"
   },
   "helper": {
     "welcome": {
       "page1": {
-        "title": "Welcome to Hunger Games",
-        "text1": "Hunger Games is a collection of mini-games that help contribute to Open Food Facts in many ways. You can play are really exciting games from anywhere. Here is a guided tour of the entire website which will get you started.",
-        "text2": "Make sure to login to the Open Food Facts website to get credit for your contributions. If you make a mistake, please take the time to correct it by heading to the website.",
-        "text3": "In case of any doubt about the games, click on the question mark icon at the top right of the page, and you can reach us on slack at the #hunger-games channel"
+        "title": "Ласкаво просимо до Голодних ігор",
+        "text1": "Голодні ігри - це колекція мініігор, які допомагають багатьма способами сприяти відкриттю фактів про їжу. Ви можете грати в ці дійсно захопливі ігри з будь-якого місця. Пропонуємо вашій увазі оглядовий тур по всьому сайту, який допоможе вам розпочати гру.",
+        "text2": "Переконайтеся, що ви увійшли на сайт Open Food Facts, щоб отримати зарахування ваших внесків. Якщо ви зробили помилку, будь ласка, знайдіть час, щоб виправити її, перейшовши на сайт.",
+        "text3": "У разі виникнення будь-яких сумнівів щодо ігор, натискайте на іконку зі знаком питання у верхньому правому куті сторінки, а також ви можете зв'язатися з нами у slack на каналі #hunger-games"
       },
       "page2": {
-        "title": "Questions Game",
+        "title": "Гра «Запитання»",
         "text1": "Does the food product belong to this brand?",
         "text2": "Answer simply with a <strong>yes/no</strong>! Don't know the answer? That's alright, just skip it.",
         "text3": "You can also use your keyboard keys o,n and k.",
@@ -275,7 +275,7 @@
       "3": "Вибір поживних речовин",
       "4": "Вибір значень"
     },
-    "loading": "Loading...",
+    "loading": "Завантаження...",
     "unknown_brand": "Brand Unknown",
     "value_missing": "You forgot to input value duuuuuuuuuuuuuuuuude",
     "next": "Наступний крок",
