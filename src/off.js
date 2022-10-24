@@ -121,6 +121,27 @@ const offService = {
           : ""
       }`;
   },
+
+  searchProducts({ page = 1, pageSize = 25, filters = [] }) {
+    const searchParams = {
+      page,
+      page_size: pageSize,
+      json: true,
+      action: "process",
+      fields: "code",
+    };
+    filters.forEach((filterItem, index) => {
+      // Expected objects
+      // const { tagtype, tag_contains, tag } = filterItem;
+
+      Object.keys(filterItem).forEach((key) => {
+        searchParams[`${key}_${index}`] = filterItem[key];
+      });
+    });
+
+    const urlParams = new URLSearchParams(searchParams);
+    return axios.get(`${OFF_SEARCH}?${urlParams.toString()}`);
+  },
 };
 
 export default offService;
