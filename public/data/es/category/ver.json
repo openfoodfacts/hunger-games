@@ -48,12 +48,16 @@
     "name": "Aceitunas verdes rellenas de limón"
   },
   {
-    "key": "en:green-olives-stuffed-of-pepper",
+    "key": "en:green-olives-stuffed-of-peppers",
     "name": "Aceitunas verdes rellenas de pimiento"
   },
   {
     "key": "en:green-chopped-olives",
     "name": "Aceitunas verdes troceadas"
+  },
+  {
+    "key": "en:aloe-vera-drinks",
+    "name": "Aloe Vera drinks"
   },
   {
     "key": "es:alubias-con-verduras",
@@ -66,6 +70,10 @@
   {
     "key": "en:vegetable-based-beverages",
     "name": "Bebidas a base de verduras y hortalizas"
+  },
+  {
+    "key": "en:breakfast-cereals-very-rich-in-fibre-fortified-with-vitamins-and-chemical-elements",
+    "name": "Breakfast cereals very rich in fibre fortified with vitamins and chemical elements"
   },
   {
     "key": "en:vegetable-broths",
@@ -96,8 +104,24 @@
     "name": "Cardamono verde"
   },
   {
+    "key": "en:chicken-and-vermicelli-soup",
+    "name": "Chicken and vermicelli soup"
+  },
+  {
     "key": "en:cream-of-vegetable-soups",
     "name": "Cremas de verduras y hortalizas"
+  },
+  {
+    "key": "en:dehydrated-chicken-and-vermicelli-soup",
+    "name": "Dehydrated chicken and vermicelli soup"
+  },
+  {
+    "key": "en:dehydrated-tomato-and-vermicelli-soup",
+    "name": "Dehydrated tomato and vermicelli soup"
+  },
+  {
+    "key": "en:dried-soy-vermicelli",
+    "name": "Dried soy vermicelli"
   },
   {
     "key": "en:green-asparagus",
@@ -144,7 +168,7 @@
     "name": "Guisantes verdes congelados"
   },
   {
-    "key": "en:fresh-green-beans",
+    "key": "en:green-beans",
     "name": "Judías verdes"
   },
   {
@@ -162,6 +186,10 @@
   {
     "key": "en:frozen-whole-green-beans",
     "name": "Judías verdes enteras congeladas"
+  },
+  {
+    "key": "en:fresh-green-beans",
+    "name": "Judías verdes frescas"
   },
   {
     "key": "en:fresh-flat-green-beans",
@@ -200,15 +228,23 @@
     "name": "Judías verdes troceadas congeladas"
   },
   {
+    "key": "en:vegetable-lasagne",
+    "name": "Lasaña de verduras"
+  },
+  {
     "key": "en:green-lentils",
     "name": "Lentejas verdes"
   },
   {
-    "key": "en:vegetable-jams",
-    "name": "Mermeladas y confituras de verduras y hortalizas"
+    "key": "en:vegetables-macedoines",
+    "name": "Macedonia de verduras"
   },
   {
-    "key": "en:frozen-vegetable-mixes",
+    "key": "en:mixed-vegetables",
+    "name": "Mezclas de verduras y hortalizas"
+  },
+  {
+    "key": "en:frozen-mixed-vegetables",
     "name": "Mezclas de verduras y hortalizas congeladas"
   },
   {
@@ -216,7 +252,7 @@
     "name": "Mezclas de verduras y hortalizas encurtidas"
   },
   {
-    "key": "en:fresh-vegetable-mixes",
+    "key": "en:fresh-mixed-vegetables",
     "name": "Mezclas de verduras y hortalizas frescas"
   },
   {
@@ -240,12 +276,28 @@
     "name": "Mezclas de verduras y hortalizas para sopa"
   },
   {
+    "key": "en:multi-coloured-vermicelli",
+    "name": "Multi-coloured vermicelli"
+  },
+  {
     "key": "en:common-nettle",
     "name": "Ortiga verde"
   },
   {
     "key": "es:parrilladas-de-verduras-congelada",
     "name": "Parrilladas de verduras congelada"
+  },
+  {
+    "key": "en:vegetable-pasta",
+    "name": "Pasta de verduras"
+  },
+  {
+    "key": "en:green-pestos",
+    "name": "Pestos verdes"
+  },
+  {
+    "key": "es:pimenton-de-la-vera",
+    "name": "Pimentón de la Vera"
   },
   {
     "key": "en:green-peppers",
@@ -276,7 +328,7 @@
     "name": "Pimienta verde seca en polvo"
   },
   {
-    "key": "en:green-bell-peppers",
+    "key": "en:green-sweet-peppers",
     "name": "Pimientos verdes"
   },
   {
@@ -284,8 +336,24 @@
     "name": "Pimientos verdes congelados"
   },
   {
-    "key": "en:fruit-preserves",
+    "key": "en:vegetable-pizza",
+    "name": "Pizzas de verduras"
+  },
+  {
+    "key": "en:fruit-and-vegetable-preserves",
     "name": "Preparaciones a base de frutas y verduras"
+  },
+  {
+    "key": "en:reheatable-chicken-and-vermicelli-soup",
+    "name": "Reheatable chicken and vermicelli soup"
+  },
+  {
+    "key": "en:reheatable-tomatoes-and-vermicelli-soup",
+    "name": "Reheatable tomatoes and vermicelli soup"
+  },
+  {
+    "key": "en:vegetable-risottos",
+    "name": "Risottos de verduras"
   },
   {
     "key": "en:vegetable-sauces",
@@ -316,6 +384,10 @@
     "name": "Sopas de verduras y hortalizas refrigeradas"
   },
   {
+    "key": "en:soy-vermicelli",
+    "name": "Soy vermicelli"
+  },
+  {
     "key": "en:frozen-vegetable-tempura",
     "name": "Tempuras de verduras congeladas"
   },
@@ -332,8 +404,16 @@
     "name": "Tés verdes japoneses"
   },
   {
+    "key": "en:tomato-and-vermicelli-soups",
+    "name": "Tomato and vermicelli soups"
+  },
+  {
     "key": "en:summer-truffles",
     "name": "Trufas de verano"
+  },
+  {
+    "key": "es:vera-de-estenas",
+    "name": "Vera de Estenas"
   },
   {
     "key": "en:vervains",
@@ -358,6 +438,14 @@
   {
     "key": "en:leaf-vegetables",
     "name": "Verduras de hoja"
+  },
+  {
+    "key": "en:vegetable-rods",
+    "name": "Verduras de tallo"
+  },
+  {
+    "key": "en:french-vegetables",
+    "name": "Verduras francesas"
   },
   {
     "key": "en:frozen-vegetables",
@@ -394,6 +482,14 @@
   {
     "key": "en:rice-vermicelli",
     "name": "Vermicelli de arroz"
+  },
+  {
+    "key": "en:vermouth",
+    "name": "Vermut"
+  },
+  {
+    "key": "en:fruit-and-vegetable-juices",
+    "name": "Zumos de fruta y verdura"
   },
   {
     "key": "en:vegetable-juices",

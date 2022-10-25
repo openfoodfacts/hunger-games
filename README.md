@@ -57,6 +57,12 @@ Use a [simple webpack config](https://github.com/facebook/create-react-app/issue
 
 Generate the JSON file `src/assets/countries.json` which contains all the countries available on OFF taxonomy. Data are obtained from static.openfoodfacts.org
 
+## Taxonomy auto-complete
+
+- `node update-taxonomy-suggestions.js`
+
+Fetch categories and labels taxonomy from OpenFoodFacts static files, and generate JSON files used by the `Autocomplete` fields.
+
 ## How you can help
 
 For developers, you can have a look at [good first issues](https://github.com/openfoodfacts/hunger-games/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc+label%3A%22good+first+issue%22) or ask on [slack](https://slack.openfoodfacts.org/) in hunger-games channel.

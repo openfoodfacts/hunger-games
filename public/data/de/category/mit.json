@@ -4,6 +4,10 @@
     "name": "Biere mit Kastanien"
   },
   {
+    "key": "en:biscuit-with-fruit-covering",
+    "name": "Biscuit mit Fruchtüberzug"
+  },
+  {
     "key": "en:camembert-with-calvados",
     "name": "Camembert mit Calvados"
   },
@@ -76,6 +80,10 @@
     "name": "Eistüten mit Vanilleeis"
   },
   {
+    "key": "en:energy-drink-with-sugar",
+    "name": "Energydrink mit Zucker"
+  },
+  {
     "key": "en:chocolate-covered-peanuts",
     "name": "Erdnüsse mit Schokoladenüberzug"
   },
@@ -86,6 +94,14 @@
   {
     "key": "en:fruit-yogurts-with-fruit-chunks",
     "name": "Fruchtjoghurt mit Fruchtstücken"
+  },
+  {
+    "key": "en:low-sugar-fruit-jam",
+    "name": "Fruchtmarmelade mit niedrigem Zuckergehalt"
+  },
+  {
+    "key": "en:cereals-with-fruits",
+    "name": "Frühstückscerealien mit Früchten"
   },
   {
     "key": "en:puffed-corn-cakes-with-black-chocolate",
@@ -106,6 +122,10 @@
   {
     "key": "en:puffed-rice-cakes-with-milk-chocolate",
     "name": "Gepuffte Reiswaffeln mit Milchschokolade"
+  },
+  {
+    "key": "en:meals-with-salmon",
+    "name": "Gerichte mit Lachs"
   },
   {
     "key": "en:beverages-with-orange",
@@ -132,6 +152,10 @@
     "name": "Halva mit Sonnenblumenkernen"
   },
   {
+    "key": "en:durum-wheat-pasta-with-egg",
+    "name": "Hartweizennudeln mit Ei"
+  },
+  {
     "key": "en:yogurts-with-cereals",
     "name": "Joghurt mit Müsli"
   },
@@ -156,6 +180,10 @@
     "name": "Kekse mit Bitterschokolade"
   },
   {
+    "key": "en:caramel-chocolate-cookie-bars",
+    "name": "Kekse mit Karamellschokolade"
+  },
+  {
     "key": "en:milk-chocolate-biscuits",
     "name": "Kekse mit Milchschokolade"
   },
@@ -166,6 +194,22 @@
   {
     "key": "en:chocolate-covered-cherries",
     "name": "Kirschen mit Schokoladenüberzug"
+  },
+  {
+    "key": "en:hazelnut-cream-stuffed-wafers",
+    "name": "Knusprige Waffeln mit Haselnusscremefüllung"
+  },
+  {
+    "key": "en:caramel-stuffed-wafers",
+    "name": "Knusprige Waffeln mit Karamellfüllung"
+  },
+  {
+    "key": "en:chocolate-stuffed-wafers",
+    "name": "Knusprige Waffeln mit Schokoladenfüllung"
+  },
+  {
+    "key": "en:vanilla-stuffed-wafers",
+    "name": "Knusprige Waffeln mit Vanillefüllung"
   },
   {
     "key": "en:chocolate-covered-coconut-balls",
@@ -204,6 +248,10 @@
     "name": "Mantecados und Polvorón mit pflanzlichem Fett"
   },
   {
+    "key": "en:shelled-chestnuts",
+    "name": "Maronen mit Schale"
+  },
+  {
     "key": "en:low-lactose-milk",
     "name": "Milch mit niedrigem Laktosegehalt"
   },
@@ -212,7 +260,7 @@
     "name": "Milchschokolade mit Fleur de Sel"
   },
   {
-    "key": "en:milk-chocolate-with-hazelnuts",
+    "key": "en:milk-chocolates-with-hazelnuts",
     "name": "Milchschokolade mit Haselnüssen"
   },
   {
@@ -220,7 +268,7 @@
     "name": "Milchschokolade mit Karamel"
   },
   {
-    "key": "en:milk-chocolate-with-almonds",
+    "key": "en:milk-chocolates-with-almonds",
     "name": "Milchschokolade mit Mandeln"
   },
   {
@@ -244,7 +292,11 @@
     "name": "Mit Schokolade gefüllte Croissants"
   },
   {
-    "key": "fr:goudas-mi-vieux",
+    "key": "en:chocolate-covered-nuts",
+    "name": "Mit Schokolade überzogene Nüsse"
+  },
+  {
+    "key": "en:matured-gouda",
     "name": "Mittelalter Gouda"
   },
   {
@@ -264,12 +316,32 @@
     "name": "Mittelrhein"
   },
   {
+    "key": "it:mitterberg-tra-cauria-e-tel",
+    "name": "Mitterberg zwischen Gfrill und Toll"
+  },
+  {
+    "key": "en:fruit-muffins",
+    "name": "Muffins mit Früchten"
+  },
+  {
     "key": "en:pasteurised-milk-munsters",
     "name": "Münsterkäse mit pasteurisierter Milch"
   },
   {
     "key": "en:munsters-with-raw-milk",
     "name": "Münsterkäse mit Rohmilch"
+  },
+  {
+    "key": "en:banana-cereal-bars",
+    "name": "Müsliriegel mit Bananenstückchen"
+  },
+  {
+    "key": "en:fruits-cereal-bars",
+    "name": "Müsliriegel mit Fruchtstückchen"
+  },
+  {
+    "key": "en:chocolate-cereal-bars",
+    "name": "Müsliriegel mit Schokolade"
   },
   {
     "key": "en:mueslis-with-fruits",
@@ -288,6 +360,10 @@
     "name": "Natürliches Mineralwasser mit wenig Kohlensäure versetzt"
   },
   {
+    "key": "en:ouzo-of-mitilene",
+    "name": "Ouzo of Mitilene"
+  },
+  {
     "key": "en:chocolate-covered-prune",
     "name": "Pflaumen mit Schokoladenüberzug"
   },
@@ -296,8 +372,24 @@
     "name": "Pizza mit Schinken und Käse"
   },
   {
+    "key": "en:products-with-reduced-salt",
+    "name": "Prudukte mit weniger Salz"
+  },
+  {
+    "key": "en:quiches-with-bacon",
+    "name": "Quiche mit Speck"
+  },
+  {
     "key": "en:sandwiches-filled-with-cold-cuts",
     "name": "Sandwiche belegt mit Aufschnitt"
+  },
+  {
+    "key": "en:vegetable-sandwiches",
+    "name": "Sandwiches mit rohem Gemüse"
+  },
+  {
+    "key": "en:ham-and-cheese-sandwiches",
+    "name": "Sandwiches mit Schinken und Käse"
   },
   {
     "key": "en:smetana-with-15-to-19-fat",
@@ -320,7 +412,7 @@
     "name": "Schokolade mit Mandelcremefüllung"
   },
   {
-    "key": "en:chocolates-stuffed-with-praline",
+    "key": "en:chocolate-filled-with-praline",
     "name": "Schokolade mit Praliné-Füllung"
   },
   {
@@ -344,12 +436,20 @@
     "name": "Schokoladen mit Süßungsmitteln"
   },
   {
-    "key": "en:black-chocolate-turron-with-almonds",
-    "name": "Schwarzer Schokoturrón mit Mandeln"
+    "key": "en:chocolate-nuts-cookie-bars",
+    "name": "Schokoladenkekse mit Nüssen"
   },
   {
-    "key": "en:black-chocolate-turron-with-puffed-rice",
-    "name": "Schwarzer Schokoturrón mit Puffreis"
+    "key": "en:caramel-chocolate-bars",
+    "name": "Schokoriegel mit Karamell"
+  },
+  {
+    "key": "en:chocolate-turron-with-almonds",
+    "name": "Schokoturrón mit Mandeln"
+  },
+  {
+    "key": "en:chocolate-turron-with-puffed-rice",
+    "name": "Schokoturrón mit Puffreis"
   },
   {
     "key": "en:lemon-flavored-black-teas",
@@ -376,15 +476,19 @@
     "name": "Taboulé mit Tomaten"
   },
   {
-    "key": "en:chocolate-stuffed-wafers",
-    "name": "Waffeln gefüllt mit Schokolade"
+    "key": "en:teas-with-bergamot",
+    "name": "Tees mit Bergamotte"
+  },
+  {
+    "key": "en:fruit-tarts",
+    "name": "Torten mit obst"
   },
   {
     "key": "en:almond-creme-filled-wafers",
     "name": "Waffeln mit Mandelcreme"
   },
   {
-    "key": "en:chocolate-coated-waffles",
+    "key": "en:thin-crunchy-wafer-biscuit-with-chocolate",
     "name": "Waffeln mit Schokoladenüberzug"
   },
   {
@@ -400,7 +504,11 @@
     "name": "Weichkäse mit Naturrinde"
   },
   {
-    "key": "fr:chocolats-blancs-a-la-noix-de-coco",
+    "key": "en:white-chocolates-with-hazelnuts",
+    "name": "Weiße Schokoladen mit Haselnüssen"
+  },
+  {
+    "key": "en:white-chocolate-with-coconut-pieces",
     "name": "Weiße Schokoladen mit Kokos"
   },
   {

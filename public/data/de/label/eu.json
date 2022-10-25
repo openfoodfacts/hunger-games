@@ -1,5 +1,9 @@
 [
   {
+    "key": "en:eu-ecolabel",
+    "name": "EU Ecolabel"
+  },
+  {
     "key": "en:eu-non-eu-agriculture",
     "name": "EU-/Nicht-EU-Landwirtschaft"
   },
@@ -32,6 +36,10 @@
     "name": "Europäische Vegetarier-Union Vegan"
   },
   {
+    "key": "en:european-vegetarian-union-vegetarian",
+    "name": "Europäische Vegetarier-Union Vegetarisch"
+  },
+  {
     "key": "en:european-beer-star",
     "name": "European Beer Star"
   },
@@ -44,8 +52,12 @@
     "name": "Halal Food Council of Europe"
   },
   {
-    "key": "en:made-in-the-eu",
+    "key": "bg:произведено-в-европейския-съюз",
     "name": "Hergestellt in der EU"
+  },
+  {
+    "key": "en:made-in-the-eu",
+    "name": "Made in the EU"
   },
   {
     "key": "en:non-eu-agriculture",

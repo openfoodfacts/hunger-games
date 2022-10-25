@@ -1,6 +1,6 @@
 [
   {
-    "key": "fr:brie-de-melun",
+    "key": "en:brie-de-melun",
     "name": "Brie de Melun"
   },
   {
@@ -16,12 +16,56 @@
     "name": "Confitures de melon"
   },
   {
+    "key": "en:goblet-of-peach-melba-ice-cream",
+    "name": "Coupe glacée parfum pêche Melba"
+  },
+  {
+    "key": "en:combined-oil-blended-vegetable-oils",
+    "name": "Huile combinée (mélange d'huiles)"
+  },
+  {
     "key": "en:watermelon-seed-oils",
     "name": "Huiles de melon d'eau"
   },
   {
-    "key": "fr:melange-d-epices-pour-guacamole",
+    "key": "en:50-63-blended-fat-with-vegetable-and-animal-origins",
+    "name": "Matière grasse mélangée végétale et laitière à 50-63% MG"
+  },
+  {
+    "key": "en:50-63-lightly-salted-blended-fat-with-vegetable-and-animal-origins",
+    "name": "Matière grasse mélangée végétale et laitière à 50-63% MG demi-sel"
+  },
+  {
+    "key": "en:30-40-blended-fat-with-vegetable-and-animal-origins",
+    "name": "Matière grasse mélangée végétale et laitière à tartiner à 30-40% MG"
+  },
+  {
+    "key": "en:30-40-lightly-salted-blended-fat-with-vegetable-and-animal-origins",
+    "name": "Matière grasse mélangée végétale et laitière à tartiner à 30-40% MG demi-sel"
+  },
+  {
+    "key": "en:mix-of-grains-and-dried-fruit",
+    "name": "Mélange apéritif de graines et fruits séchés"
+  },
+  {
+    "key": "en:mix-of-grains-and-raisins",
+    "name": "Mélange apéritif de graines et raisins secs"
+  },
+  {
+    "key": "en:mix-of-salted-grains-and-raisins",
+    "name": "Mélange apéritif de graines salées et raisins secs"
+  },
+  {
+    "key": "en:guacamole-spice-mix",
     "name": "Mélange d'épices pour guacamole"
+  },
+  {
+    "key": "en:mix-of-cereals-and-legumes",
+    "name": "Mélange de céréales et légumineuses"
+  },
+  {
+    "key": "fr:melange-sticks-et-bretzels",
+    "name": "Mélange Sticks et Bretzels"
   },
   {
     "key": "en:mixed-seaweeds",
@@ -68,7 +112,7 @@
     "name": "Mélanges de champignons surgelés"
   },
   {
-    "key": "en:mixed-cereal-flakes",
+    "key": "en:blend-of-rolled-cereal-flakes",
     "name": "Mélanges de flocons de céréales"
   },
   {
@@ -88,7 +132,11 @@
     "name": "Mélanges de fruits tropicaux surgelés"
   },
   {
-    "key": "en:fresh-vegetable-mixes",
+    "key": "en:mixed-vegetables",
+    "name": "Mélanges de légumes"
+  },
+  {
+    "key": "en:fresh-mixed-vegetables",
     "name": "Mélanges de légumes frais"
   },
   {
@@ -100,7 +148,7 @@
     "name": "Mélanges de légumes pour soupes"
   },
   {
-    "key": "en:frozen-vegetable-mixes",
+    "key": "en:frozen-mixed-vegetables",
     "name": "Mélanges de légumes surgelés"
   },
   {
@@ -128,6 +176,18 @@
     "name": "Mélisse officinale"
   },
   {
+    "key": "fr:melon-de-guadeloupe",
+    "name": "Melon de Guadeloupe"
+  },
+  {
+    "key": "fr:melon-du-haut-poitou",
+    "name": "Melon du Haut-Poitou"
+  },
+  {
+    "key": "fr:melon-du-quercy",
+    "name": "Melon du Quercy"
+  },
+  {
     "key": "en:muskmelons",
     "name": "Melons"
   },
@@ -148,8 +208,16 @@
     "name": "Melons Charentais"
   },
   {
+    "key": "fr:melons-deshydrates",
+    "name": "Melons déshydratés"
+  },
+  {
     "key": "en:melons",
     "name": "Melons et pastèques"
+  },
+  {
+    "key": "en:fresh-muskmelons",
+    "name": "Melons frais"
   },
   {
     "key": "en:galia-melons",
@@ -172,12 +240,56 @@
     "name": "Melons Tendral"
   },
   {
+    "key": "en:molokhia",
+    "name": "Meloukhia"
+  },
+  {
+    "key": "en:molokhia-powder",
+    "name": "Meloukhia en poudre"
+  },
+  {
+    "key": "en:melt-sandwich",
+    "name": "Melt sandwich"
+  },
+  {
+    "key": "en:melton-mowbray-pork-pie",
+    "name": "Melton Mowbray Pork Pie"
+  },
+  {
     "key": "en:melon-nectars",
     "name": "Nectars de melon"
   },
   {
     "key": "en:caramelized-mixed-nuts",
     "name": "Noix mélangées caramélisées"
+  },
+  {
+    "key": "en:peach-melba-with-vanilla-ice-cream-and-raspberry-sauce",
+    "name": "Pêche melba"
+  },
+  {
+    "key": "en:mixed-vegetable-pickles",
+    "name": "Pickles de légumes mélangés"
+  },
+  {
+    "key": "en:pulp-of-melonnette-jaspee-from-vendee",
+    "name": "Pulpe de courge melonnette"
+  },
+  {
+    "key": "en:cantaloupe-melon-pulp",
+    "name": "Pulpe de melon cantaloup"
+  },
+  {
+    "key": "en:honeydew-melon-pulp",
+    "name": "Pulpe de melon miel"
+  },
+  {
+    "key": "en:mashed-vegetables-mix",
+    "name": "Purée de légumes mélangés"
+  },
+  {
+    "key": "en:molokhia-sauce",
+    "name": "Sauce meloukhia"
   },
   {
     "key": "en:melon-sorbets",

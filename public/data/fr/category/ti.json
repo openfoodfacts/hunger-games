@@ -1,6 +1,10 @@
 [
   {
-    "key": "fr:crevettes-geantes-tigrees",
+    "key": "en:chicken-tikka",
+    "name": "Chicken Tikka"
+  },
+  {
+    "key": "en:giant-tiger-prawns",
     "name": "Crevettes géantes tigrées"
   },
   {
@@ -12,7 +16,7 @@
     "name": "Miels blancs du Tigrai"
   },
   {
-    "key": "fr:miels-de-tilleul",
+    "key": "en:linden-honeys",
     "name": "Miels de tilleul"
   },
   {
@@ -20,16 +24,32 @@
     "name": "Miels de tilleul d'Alsace"
   },
   {
+    "key": "en:chicken-tikka-masala",
+    "name": "Poulet tikka masala"
+  },
+  {
     "key": "en:tikka-masala-sauce",
     "name": "Sauces tikka masala"
   },
   {
-    "key": "fr:tielles-setoises",
+    "key": "en:squid-and-spicy-tomato-sauce-pie",
     "name": "Tielles Sétoises"
+  },
+  {
+    "key": "en:rhubarb-stalk",
+    "name": "Tiges de rhubarbe"
+  },
+  {
+    "key": "en:rhubarb-stalk-cooked-with-sugar",
+    "name": "Tiges de rhubarbe cuites sucrées"
   },
   {
     "key": "fr:tignard",
     "name": "Tignard"
+  },
+  {
+    "key": "en:tilapia",
+    "name": "Tilapia"
   },
   {
     "key": "en:limeflower-tea",
@@ -44,6 +64,14 @@
     "name": "Tilleul à petites feuilles"
   },
   {
+    "key": "en:tilsit",
+    "name": "Tilsit"
+  },
+  {
+    "key": "en:timoleague-brown-pudding",
+    "name": "Timoleague Brown Pudding"
+  },
+  {
     "key": "en:tintern",
     "name": "Tintern"
   },
@@ -52,15 +80,15 @@
     "name": "Tiramisu"
   },
   {
-    "key": "fr:tiramisu-au-cafe",
+    "key": "en:coffee-tiramisu",
     "name": "Tiramisu au café"
   },
   {
-    "key": "fr:tiramisu-au-chocolat",
+    "key": "en:chocolate-tiramisu",
     "name": "Tiramisu au chocolat"
   },
   {
-    "key": "fr:tiramisu-aux-fruits",
+    "key": "en:fruit-tiramisu",
     "name": "Tiramisu aux fruits"
   },
   {
@@ -70,5 +98,9 @@
   {
     "key": "en:herbal-tea-beverages",
     "name": "Tisanes infusées"
+  },
+  {
+    "key": "en:brewed-infusions-without-sugar",
+    "name": "Tisanes infusées non sucrées"
   }
 ]

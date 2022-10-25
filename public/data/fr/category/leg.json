@@ -1,5 +1,13 @@
 [
   {
+    "key": "en:canned-drained-apricots-in-light-syrup",
+    "name": "Abricots au sirop léger appertisés égouttés"
+  },
+  {
+    "key": "en:canned-apricots-in-light-syrup-not-drained",
+    "name": "Abricots au sirop léger appertisés non égouttés"
+  },
+  {
     "key": "en:acar",
     "name": "Achards de légumes"
   },
@@ -12,12 +20,32 @@
     "name": "Aliments et boissons à base de légumes"
   },
   {
+    "key": "en:canned-drained-pineapple-in-light-syrup",
+    "name": "Ananas au sirop léger appertisé égoutté"
+  },
+  {
+    "key": "en:canned-pineapple-in-light-syrup-not-drained",
+    "name": "Ananas au sirop léger appertisé non égoutté"
+  },
+  {
+    "key": "en:vegetable-fritters",
+    "name": "Beignets de légumes"
+  },
+  {
+    "key": "en:unsalted-light-butter-with-39-41-fat",
+    "name": "Beurre léger doux à 39-41% MG"
+  },
+  {
     "key": "en:legume-butters",
     "name": "Beurres de légumineuses"
   },
   {
     "key": "en:mildly-soured-butters",
     "name": "Beurres légèrement aigres"
+  },
+  {
+    "key": "en:dairy-cereal-based-beverage-with-vegetables-for-baby-s-dinner-from-4-6-months",
+    "name": "Boisson lactée pour dîner bébé dès 4/6 mois avec céréales et légumes"
   },
   {
     "key": "en:vegetable-based-beverages",
@@ -30,6 +58,22 @@
   {
     "key": "en:powdered-legume-milks",
     "name": "Boissons végétales de légumineuses en poudre"
+  },
+  {
+    "key": "en:dehydrated-vegetables-bouillon",
+    "name": "Bouillon de légumes déshydraté"
+  },
+  {
+    "key": "en:dehydrated-meat-and-vegetables-broth-stock",
+    "name": "Bouillon de viande et légumes type pot-au-feu déshydraté"
+  },
+  {
+    "key": "en:dehydrated-meat-and-vegetables-with-fat-broth-stock",
+    "name": "Bouillon de viande et légumes type pot-au-feu non dégraissé déshydraté"
+  },
+  {
+    "key": "en:dehydrated-broth-with-meat-and-vegetables",
+    "name": "Bouillon de viande et légumes type pot-au-feu prêt à consommer"
   },
   {
     "key": "en:vegetable-bouillon-cubes",
@@ -56,12 +100,52 @@
     "name": "Box de légumes"
   },
   {
+    "key": "en:filled-fritter-garnished-with-vegetables",
+    "name": "Brick aux légumes"
+  },
+  {
+    "key": "en:filled-fritter-garnished-with-shrimps-and-vegetables-and-poultry-and-meat",
+    "name": "Brick garni aux crevettes et légumes et volaille et viande et poisson"
+  },
+  {
+    "key": "en:frozen-diced-vegetables",
+    "name": "Brunoise de légumes surgelée"
+  },
+  {
     "key": "en:vegetables-cakes",
     "name": "Cake aux legumes"
   },
   {
-    "key": "en:vegetable-jams",
-    "name": "Confitures de légumes"
+    "key": "en:savoury-cake-with-vegetables",
+    "name": "Cake salé aux légumes"
+  },
+  {
+    "key": "en:vegetable-cakes",
+    "name": "Cakes aux légumes"
+  },
+  {
+    "key": "en:cannelloni-with-vegetables",
+    "name": "Cannelloni aux légumes"
+  },
+  {
+    "key": "en:cannelloni-with-cooked-vegetables",
+    "name": "Cannelloni aux légumes cuits"
+  },
+  {
+    "key": "en:cannelloni-with-cooked-vegetables-and-goat-cheese",
+    "name": "Cannelloni aux légumes cuits et au fromage de chèvre"
+  },
+  {
+    "key": "en:couscous-with-vegetables",
+    "name": "Couscous de légumes"
+  },
+  {
+    "key": "en:refrigerated-15-20-fat-light-thick-cream",
+    "name": "Crème de lait légère épaisse avec 15 à 20% de matières grasses rayon frais"
+  },
+  {
+    "key": "en:liquid-15-20-fat-light-cream-uht",
+    "name": "Crème de lait légère semi-épaisse avec 15 à 20% de matières grasses UHT"
   },
   {
     "key": "fr:cremes-legeres",
@@ -80,6 +164,10 @@
     "name": "Feuilletés aux légumes"
   },
   {
+    "key": "en:vegetable-flans",
+    "name": "Flans de légumes"
+  },
+  {
     "key": "en:legume-flakes",
     "name": "Flocons de légumineuses"
   },
@@ -88,8 +176,20 @@
     "name": "Galettes de céréales aux légumes"
   },
   {
-    "key": "en:vegetable-cakes",
+    "key": "en:vegetable-patties",
     "name": "Galettes de légumes"
+  },
+  {
+    "key": "en:breaded-vegetable-patties",
+    "name": "Galettes de légumes panées"
+  },
+  {
+    "key": "en:puffed-pulse-cakes",
+    "name": "Galettes de légumineuses soufflées"
+  },
+  {
+    "key": "en:fresh-vegetables-sprouts",
+    "name": "Germes de légumes frais"
   },
   {
     "key": "en:legume-seeds",
@@ -100,8 +200,16 @@
     "name": "Graines de légumineuses soufflées"
   },
   {
+    "key": "en:vegetables-au-gratin-in-bechamel-sauce",
+    "name": "Gratin de légumes à la béchamel"
+  },
+  {
     "key": "en:vegetable-gratins",
     "name": "Gratins de légumes"
+  },
+  {
+    "key": "en:vegetable-gyoza",
+    "name": "Gyoza aux légumes"
   },
   {
     "key": "es:alubias-con-verduras",
@@ -110,6 +218,14 @@
   {
     "key": "en:legume-oils",
     "name": "Huiles de légumineuses"
+  },
+  {
+    "key": "en:thinly-shredded-vegetables",
+    "name": "Julienne de légumes"
+  },
+  {
+    "key": "en:frozen-thinly-shredded-vegetables",
+    "name": "Julienne de légumes surgelée"
   },
   {
     "key": "en:fruit-and-vegetable-juices",
@@ -124,16 +240,40 @@
     "name": "Lasagnes aux légumes"
   },
   {
-    "key": "en:mixed-vegetable-pickles",
-    "name": "Légumes au vinaigre"
+    "key": "en:lasagna-with-cooked-vegetables",
+    "name": "Lasagnes aux légumes cuits"
+  },
+  {
+    "key": "en:lasagna-with-cooked-vegetables-and-goat-cheese",
+    "name": "Lasagnes aux légumes cuits et au fromage de chèvre"
   },
   {
     "key": "en:plant-based-mixed-pickles",
     "name": "Légumes au vinaigre"
   },
   {
+    "key": "en:austrian-vegetables",
+    "name": "Légumes autrichiens"
+  },
+  {
+    "key": "en:belgian-vegetables",
+    "name": "Légumes belges"
+  },
+  {
+    "key": "en:cooked-vegetables",
+    "name": "Légumes cuits"
+  },
+  {
+    "key": "en:cooked-mixed-vegetables-for-couscous",
+    "name": "Légumes cuits pour couscous"
+  },
+  {
     "key": "en:canned-vegetables",
     "name": "Légumes en conserve"
+  },
+  {
+    "key": "en:spanish-vegetables",
+    "name": "Légumes espagnols"
   },
   {
     "key": "en:vegetables-based-foods",
@@ -148,8 +288,24 @@
     "name": "Légumes frais"
   },
   {
+    "key": "en:french-vegetables",
+    "name": "Légumes français"
+  },
+  {
     "key": "en:freeze-dried-vegetables",
     "name": "Légumes lyophilisées"
+  },
+  {
+    "key": "en:dutch-vegetables",
+    "name": "Légumes néerlandais"
+  },
+  {
+    "key": "en:frozen-mixed-vegetables-for-couscous",
+    "name": "Légumes pour couscous surgelés"
+  },
+  {
+    "key": "en:frozen-mixed-vegetables-for-ratatouille",
+    "name": "Légumes pour ratatouille surgelés"
   },
   {
     "key": "en:prepared-vegetables",
@@ -164,12 +320,16 @@
     "name": "Légumes séchés moulus"
   },
   {
-    "key": "en:pulses",
-    "name": "Légumes secs"
+    "key": "en:cooked-pulses",
+    "name": "Légumes secs cuits"
   },
   {
     "key": "en:frozen-vegetables",
     "name": "Légumes surgelés"
+  },
+  {
+    "key": "en:frozen-mixed-vegetables-for-soups",
+    "name": "Légumes surgelés pour potage"
   },
   {
     "key": "en:vegetable-rods",
@@ -196,11 +356,31 @@
     "name": "Légumineuses frais"
   },
   {
+    "key": "en:pulses",
+    "name": "Légumineuses sèches"
+  },
+  {
     "key": "en:frozen-legumes",
     "name": "Légumineuses surgelées"
   },
   {
-    "key": "fr:macedoines-de-legumes-en-conserve",
+    "key": "en:canned-fruit-cocktail-in-light-syrup",
+    "name": "Macédoine de fruits au sirop léger appertisée"
+  },
+  {
+    "key": "en:canned-drained-fruit-cocktail-in-light-syrup",
+    "name": "Macédoine de fruits au sirop léger appertisée égouttée"
+  },
+  {
+    "key": "en:frozen-mixed-diced-vegetables",
+    "name": "Macédoine de légumes surgelée"
+  },
+  {
+    "key": "en:vegetables-macedoines",
+    "name": "Macédoines de légumes"
+  },
+  {
+    "key": "en:canned-diced-mixed-vegetables",
     "name": "Macédoines de légumes en conserve"
   },
   {
@@ -212,7 +392,43 @@
     "name": "Marmites de bouillon de légumes"
   },
   {
-    "key": "en:fresh-vegetable-mixes",
+    "key": "en:dairy-fat-20-fat-light-spreadable-unsalted",
+    "name": "Matière grasse laitière à 20% MG légère à tartiner doux"
+  },
+  {
+    "key": "en:dairy-fat-25-fat-light-spreadable-unsalted",
+    "name": "Matière grasse laitière à 25% MG légère à tartiner doux"
+  },
+  {
+    "key": "en:30-40-lightly-salted-vegetable-fat-with-plant-sterols-esters",
+    "name": "Matière grasse végétale demi-sel légère à 30-40% aux esters de stérol végétal"
+  },
+  {
+    "key": "en:30-40-fat-unsalted-vegetable-fat",
+    "name": "Matière grasse végétale légère à 30-40% doux"
+  },
+  {
+    "key": "en:30-40-fat-unsalted-vegetable-fat-with-plant-sterols-esters",
+    "name": "Matière grasse végétale légère à 30-40% doux aux esters de stérol végétal"
+  },
+  {
+    "key": "en:30-40-fat-lightly-salted-vegetable-fat",
+    "name": "Matière grasse végétale légère à 30-40% doux demi-sel"
+  },
+  {
+    "key": "en:30-40-fat-unsalted-vegetable-fat-high-in-omega-3",
+    "name": "Matière grasse végétale légère à 30-40% doux riche en oméga 3"
+  },
+  {
+    "key": "en:mix-of-cereals-and-legumes",
+    "name": "Mélange de céréales et légumineuses"
+  },
+  {
+    "key": "en:mixed-vegetables",
+    "name": "Mélanges de légumes"
+  },
+  {
+    "key": "en:fresh-mixed-vegetables",
     "name": "Mélanges de légumes frais"
   },
   {
@@ -224,7 +440,7 @@
     "name": "Mélanges de légumes pour soupes"
   },
   {
-    "key": "en:frozen-vegetable-mixes",
+    "key": "en:frozen-mixed-vegetables",
     "name": "Mélanges de légumes surgelés"
   },
   {
@@ -232,20 +448,156 @@
     "name": "Menus Légumes pour bébé"
   },
   {
+    "key": "en:stewed-lamb-garnished-with-potatoes-and-other-vegetables",
+    "name": "Navarin d'agneau aux légumes"
+  },
+  {
+    "key": "en:vegetable-nems",
+    "name": "Nems aux légumes"
+  },
+  {
+    "key": "en:omelette-with-vegetables",
+    "name": "Omelette aux légumes"
+  },
+  {
+    "key": "en:frozen-pre-fried-cooked-vegetable-rosti",
+    "name": "Palets de légumes préfrits cuits surgelés"
+  },
+  {
+    "key": "en:frozen-vegetable-rosti",
+    "name": "Palets de légumes préfrits surgelés"
+  },
+  {
     "key": "en:vegetable-pasta",
     "name": "Pâtes de légumes"
+  },
+  {
+    "key": "en:pasta-stuffed-with-vegetables",
+    "name": "Pates farcies aux légumes"
+  },
+  {
+    "key": "en:cooked-fresh-pasta-stuffed-with-vegetables",
+    "name": "Pâtes fraîches cuites farcies aux légumes"
+  },
+  {
+    "key": "en:cooked-fresh-pasta-stuffed-with-cheese-and-vegetables",
+    "name": "Pâtes fraîches cuits farcies au fromage et aux légumes"
+  },
+  {
+    "key": "en:fresh-pasta-stuffed-with-cheese-and-vegetables",
+    "name": "Pâtes fraîches farcies au fromage et aux légumes"
+  },
+  {
+    "key": "en:fresh-pasta-stuffed-with-vegetables",
+    "name": "Pâtes fraîches farcies aux légumes"
+  },
+  {
+    "key": "en:canned-drained-peach-in-light-syrup",
+    "name": "Pêches au sirop léger en conserve"
+  },
+  {
+    "key": "en:canned-peach-in-light-syrup",
+    "name": "Pêches au sirop léger en conserve non égouttées"
+  },
+  {
+    "key": "en:baby-food-jar-with-vegetables-and-starch-from-4-6-months",
+    "name": "Petit pots aux légumes avec féculents pour bébés dès 4/6 mois"
+  },
+  {
+    "key": "en:baby-food-jar-with-vegetables-from-4-6-months",
+    "name": "Petits pots aux légumes pour bébés dès 4-6 mois"
   },
   {
     "key": "en:vegetable-pickles",
     "name": "Pickles de légumes"
   },
   {
+    "key": "en:mixed-vegetable-pickles",
+    "name": "Pickles de légumes mélangés"
+  },
+  {
     "key": "en:legume-pickles",
     "name": "Pickles de légumineuses"
   },
   {
-    "key": "en:fresh-vegetables-sprouts",
-    "name": "Pousses de légumes frais"
+    "key": "en:vegetable-pizza",
+    "name": "Pizza aux légumes"
+  },
+  {
+    "key": "en:vegetable-dish-for-babies-from-12-months-with-starch-and-meat",
+    "name": "Plat aux légumes pour bébés dès 12 mois avec féculents et viande"
+  },
+  {
+    "key": "en:vegetable-dish-for-babies-from-18-months-with-starch-and-meat",
+    "name": "Plat aux légumes pour bébés dès 18 mois avec féculents et viande"
+  },
+  {
+    "key": "en:vegetable-dish-for-babies-from-6-months-with-starch-and-meat",
+    "name": "Plat aux légumes pour bébés dès 6 mois avec féculents et viande"
+  },
+  {
+    "key": "en:vegetable-dish-for-babies-from-8-months-with-starch-and-meat",
+    "name": "Plat aux légumes pour bébés dès 8 mois avec féculents et viande"
+  },
+  {
+    "key": "en:vegetable-dish-for-babies-from-12-months-with-starch-and-fish",
+    "name": "Plat avec légumes pour bébés dès 12 mois avec féculents et poisson"
+  },
+  {
+    "key": "en:vegetable-dish-for-babies-from-18-months-with-starch-and-fish",
+    "name": "Plat avec légumes pour bébés dès 18 mois avec féculents et poisson"
+  },
+  {
+    "key": "en:vegetable-dish-for-babies-from-6-months-with-starch-and-fish",
+    "name": "Plat avec légumes pour bébés dès 6 mois avec féculents et poisson"
+  },
+  {
+    "key": "en:vegetable-dish-for-babies-from-8-months-with-starch-and-fish",
+    "name": "Plat avec légumes pour bébés dès 8 mois avec féculents et poisson"
+  },
+  {
+    "key": "en:vegetable-dish-for-baby-with-milk-and-starch-from-12-months",
+    "name": "Plat de légumes et féculents avec lait pour bébé dès 12 mois"
+  },
+  {
+    "key": "en:vegetable-dish-for-baby-with-milk-and-starch-from-18-months",
+    "name": "Plat de légumes et féculents avec lait pour bébé dès 18 mois"
+  },
+  {
+    "key": "en:vegetable-dish-for-baby-with-milk-and-starch-from-6-months",
+    "name": "Plat de légumes et féculents avec lait pour bébé dès 6 mois"
+  },
+  {
+    "key": "en:vegetable-dish-for-baby-with-milk-and-starch-from-8-months",
+    "name": "Plat de légumes et féculents avec lait pour bébé dès 8 mois"
+  },
+  {
+    "key": "en:vegetable-dish-for-baby-from-6-months-with-starch",
+    "name": "Plat de légumes et féculents pour bébés dès 6 mois"
+  },
+  {
+    "key": "en:pan-fried-vegetables",
+    "name": "Poêlée de légumes"
+  },
+  {
+    "key": "en:frozen-pan-fried-asian-style-vegetables",
+    "name": "Poêlée de légumes assaisonnés à l'asiatiques"
+  },
+  {
+    "key": "en:frozen-pan-fried-vegetables-with-mushrooms-country-style",
+    "name": "Poêlée de légumes assaisonnés aux champignons surgelée"
+  },
+  {
+    "key": "en:frozen-pan-fried-mediterranean-style-grilled-vegetables",
+    "name": "Poêlée de légumes assaisonnés grillée méridionale surgelée"
+  },
+  {
+    "key": "en:frozen-pan-fried-vegetables-without-mushrooms",
+    "name": "Poêlée de légumes assaisonnés surgelée sans champignons"
+  },
+  {
+    "key": "en:pan-fried-meat-and-vegetable-mixes",
+    "name": "Poêlée de viande et de légumes"
   },
   {
     "key": "en:canned-legume-sprouts",
@@ -253,7 +605,15 @@
   },
   {
     "key": "en:fresh-legume-sprouts",
-    "name": "Pousses de légumineuses frais"
+    "name": "Pousses de légumineuses fraîches"
+  },
+  {
+    "key": "en:frozen-spring-vegetables",
+    "name": "Printanière de légumes surgelée"
+  },
+  {
+    "key": "en:mashed-vegetables-mix",
+    "name": "Purée de légumes mélangés"
   },
   {
     "key": "en:mashed-vegetables",
@@ -265,7 +625,11 @@
   },
   {
     "key": "en:ravioli-with-vegetables",
-    "name": "Ravioli aux légumes"
+    "name": "Raviolis aux légumes"
+  },
+  {
+    "key": "en:canned-vegetable-ravioli",
+    "name": "Raviolis aux légumes en conserve"
   },
   {
     "key": "en:vegetable-risottos",
@@ -276,8 +640,20 @@
     "name": "Riz aux légumes congelés"
   },
   {
+    "key": "en:white-rice-cooked-with-vegetables-and-meat",
+    "name": "Riz blanc cuit avec légumes et viande"
+  },
+  {
+    "key": "en:canned-prepared-mixed-tuna-and-vegetable-salad",
+    "name": "Salade de thon et légumes en conserve"
+  },
+  {
     "key": "en:vegetable-salads",
     "name": "Salades de légumes"
+  },
+  {
+    "key": "en:tuna-and-vegetable-salads",
+    "name": "Salades de thon et légumes"
   },
   {
     "key": "en:vegetable-samosas",
@@ -288,8 +664,52 @@
     "name": "Sauces aux légumes"
   },
   {
-    "key": "fr:sauces-tomates-aux-legumes",
-    "name": "Sauces tomates aux legumes"
+    "key": "en:tomato-sauces-with-vegetables",
+    "name": "Sauces tomate aux petits légumes"
+  },
+  {
+    "key": "en:light-syrup-for-canned-fruits",
+    "name": "Sirop léger pour fruits appertisés"
+  },
+  {
+    "key": "en:chicken-and-vegetables-soup",
+    "name": "Soupe à la volaille et aux légumes"
+  },
+  {
+    "key": "en:dehydrated-soup-with-chicken-and-vegetables",
+    "name": "Soupe à la volaille et aux légumes déshydratée"
+  },
+  {
+    "key": "en:dehydrated-cereals-and-vegetables-soup",
+    "name": "Soupe aux céréales et aux légumes déshydratée"
+  },
+  {
+    "key": "en:dehydrated-mixed-vegetables-soup",
+    "name": "Soupe aux légumes déshydratée"
+  },
+  {
+    "key": "en:reheatable-mixed-vegetables-soup",
+    "name": "Soupe aux légumes variés à réchauffer"
+  },
+  {
+    "key": "en:soup-for-baby-with-vegetables-and-cereals-and-milk",
+    "name": "Soupe pour bébé aux légumes aux céréales et au lait"
+  },
+  {
+    "key": "en:soup-for-baby-with-vegetables-and-potatoes",
+    "name": "Soupe pour bébé aux légumes et aux pommes de terre"
+  },
+  {
+    "key": "en:reheatable-vegetables-soups-with-cheese",
+    "name": "Soupes aux légumes avec fromage à réchauffer"
+  },
+  {
+    "key": "en:reheatable-green-vegetables-soups",
+    "name": "Soupes aux légumes verts"
+  },
+  {
+    "key": "en:dehydrated-green-vegetables-soups",
+    "name": "Soupes aux légumes verts déshydratée"
   },
   {
     "key": "en:vegetable-soups",
@@ -312,12 +732,24 @@
     "name": "Soupes de légumes surgelées"
   },
   {
+    "key": "en:spanish-legumes",
+    "name": "Spanish legumes"
+  },
+  {
+    "key": "en:liquid-light-cream-with-4-to-8-fat",
+    "name": "Spécialité à base de crème légère fluide à 8% de matières grasses"
+  },
+  {
     "key": "en:tabbouleh-with-fresh-vegetables",
     "name": "Taboulés aux légumes"
   },
   {
     "key": "en:vegetables-pies",
     "name": "Tartes aux légumes"
+  },
+  {
+    "key": "en:vegan-vegetable-spreads",
+    "name": "Tartinades véganes aux légumes"
   },
   {
     "key": "en:frozen-vegetable-tempura",
@@ -338,5 +770,9 @@
   {
     "key": "fr:veloutes-de-legumes-du-soleil",
     "name": "Veloutés de légumes du soleil"
+  },
+  {
+    "key": "fr:veloutes-de-legumes-verts",
+    "name": "Veloutés de légumes verts"
   }
 ]

@@ -16,6 +16,14 @@
     "name": "Nourri sans OGM"
   },
   {
+    "key": "en:fed-without-soy",
+    "name": "Nourri sans soja"
+  },
+  {
+    "key": "en:eggs-from-animals-fed-without-gmos",
+    "name": "Oeufs issus d'animaux nourris sans OGMs"
+  },
+  {
     "key": "en:porks-raised-without-antibiotics",
     "name": "Porcs élevés sans antibiotique"
   },
@@ -72,7 +80,7 @@
     "name": "Sans additifs"
   },
   {
-    "key": "en:no-artificial-additives",
+    "key": "bg:без-изкуствени-добавки",
     "name": "Sans additifs artificiels"
   },
   {
@@ -92,7 +100,7 @@
     "name": "Sans amidons modifiés"
   },
   {
-    "key": "en:without-antibiotics",
+    "key": "en:no-antibiotics",
     "name": "Sans antibiotique"
   },
   {
@@ -112,7 +120,7 @@
     "name": "Sans antibiotique ni hormone"
   },
   {
-    "key": "en:peanut-free",
+    "key": "en:no-peanuts",
     "name": "Sans arachide"
   },
   {
@@ -192,7 +200,7 @@
     "name": "Sans exhausteurs de goût artificiels"
   },
   {
-    "key": "en:without-gelatin",
+    "key": "en:no-gelatin",
     "name": "Sans gélatine"
   },
   {
@@ -204,7 +212,7 @@
     "name": "Sans glutamate ajouté"
   },
   {
-    "key": "en:gluten-free",
+    "key": "en:no-gluten",
     "name": "Sans gluten"
   },
   {
@@ -212,7 +220,7 @@
     "name": "Sans hormone"
   },
   {
-    "key": "en:palm-oil-free",
+    "key": "en:no-palm-oil",
     "name": "Sans huile de palme"
   },
   {
@@ -268,8 +276,16 @@
     "name": "Sans OGM"
   },
   {
+    "key": "en:pesticide-free",
+    "name": "Sans pesticides"
+  },
+  {
     "key": "de:ohne-polyphosphate",
     "name": "Sans polyphosphates"
+  },
+  {
+    "key": "en:without-pesticide-residues",
+    "name": "Sans résidus de pesticides"
   },
   {
     "key": "en:no-salt",

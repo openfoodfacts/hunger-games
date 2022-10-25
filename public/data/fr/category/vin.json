@@ -4,6 +4,10 @@
     "name": "Boissons à base de vin"
   },
   {
+    "key": "en:wine-based-alcoholic-beverages",
+    "name": "Boissons alcoolisées à base de vin"
+  },
+  {
     "key": "fr:bourgogne-clairet-coulanges-la-vineuse",
     "name": "Bourgogne Clairet Coulanges-la-Vineuse"
   },
@@ -28,7 +32,11 @@
     "name": "Chips au sel et vinaigre de malt"
   },
   {
-    "key": "fr:coq-au-vin",
+    "key": "en:wine-jams",
+    "name": "Confits de vin"
+  },
+  {
+    "key": "en:cockerel-in-red-wine-sauce",
     "name": "Coq au vin"
   },
   {
@@ -44,8 +52,16 @@
     "name": "Cornichons au vinaigre"
   },
   {
-    "key": "fr:cremes-au-vinaigre",
-    "name": "Crèmes au vinaigre"
+    "key": "en:glazes-with-vinegar",
+    "name": "Crèmes de vinaigre"
+  },
+  {
+    "key": "en:glazes-with-balsamic-vinegar",
+    "name": "Crèmes de vinaigre balsamique"
+  },
+  {
+    "key": "en:glazes-with-white-vinegar",
+    "name": "Crèmes de vinaigre blanc"
   },
   {
     "key": "en:dorset-blue-vinney",
@@ -65,7 +81,7 @@
   },
   {
     "key": "fr:eau-de-vie-de-vin-des-cotes-du-rhone",
-    "name": "Eau-de-vie de vin des Côtes-du-Rhone"
+    "name": "Eau-de-vie de vin des Côtes-du-Rhône"
   },
   {
     "key": "fr:eau-de-vie-de-vin-originaire-d-aquitaine",
@@ -104,8 +120,8 @@
     "name": "Fontaines à vin"
   },
   {
-    "key": "en:mixed-vegetable-pickles",
-    "name": "Légumes au vinaigre"
+    "key": "en:kir",
+    "name": "Kir au vin blanc"
   },
   {
     "key": "en:plant-based-mixed-pickles",
@@ -120,8 +136,12 @@
     "name": "Mâcon Vinzelles"
   },
   {
-    "key": "fr:moselle-luxembourgeoise-followed-by-the-name-of-the-vine-variety-followed-by-appellation-controlee",
-    "name": "Moselle Luxembourgeoise followed by the name of the vine variety followed by Appellation contrôlée"
+    "key": "en:ox-muzzle-in-salad-dressing-sauce",
+    "name": "Museau de boeuf en vinaigrette"
+  },
+  {
+    "key": "en:pork-snout-in-salad-dressing-sauce",
+    "name": "Museau de porc vinaigrette"
   },
   {
     "key": "en:pickled-onions",
@@ -156,11 +176,23 @@
     "name": "Roscos de vino"
   },
   {
-    "key": "fr:sauces-au-vin-blanc",
+    "key": "en:salad-dressing-with-reduced-fat-and-25-50-of-oil",
+    "name": "Sauce vinaigrette allégée en matière grasse avec 25 à 50% d'huile"
+  },
+  {
+    "key": "en:salad-dressing-with-50-75-of-oil",
+    "name": "Sauce vinaigrette avec 50 à 75% d'huile"
+  },
+  {
+    "key": "en:wine-sauces",
+    "name": "Sauces au vin"
+  },
+  {
+    "key": "en:white-wine-sauces",
     "name": "Sauces au vin blanc"
   },
   {
-    "key": "fr:sauces-au-vin-rouge",
+    "key": "en:red-wine-sauces",
     "name": "Sauces au vin rouge"
   },
   {
@@ -176,6 +208,18 @@
     "name": "Valençay (Vin)"
   },
   {
+    "key": "en:11-white-wine",
+    "name": "Vin blanc à 11°"
+  },
+  {
+    "key": "en:sparkling-white-wine",
+    "name": "Vin blanc mousseux"
+  },
+  {
+    "key": "en:11-dry-white-wine",
+    "name": "Vin blanc sec à 11°"
+  },
+  {
     "key": "en:federweisser",
     "name": "Vin bourru"
   },
@@ -189,7 +233,7 @@
   },
   {
     "key": "fr:vin-de-pays-des-jardins-de-wallonie",
-    "name": "Vin de pays des Jardins de Wallonie"
+    "name": "Vin de pays des jardins de Wallonie"
   },
   {
     "key": "fr:vin-de-savoie",
@@ -208,8 +252,28 @@
     "name": "Vin mousseux de qualité de Wallonie"
   },
   {
+    "key": "en:11-rose-wine",
+    "name": "Vin rosé 11°"
+  },
+  {
     "key": "fr:vin-rosette",
     "name": "Vin Rosette"
+  },
+  {
+    "key": "en:10-red-wine",
+    "name": "Vin rouge à 10°"
+  },
+  {
+    "key": "en:11-red-wine",
+    "name": "Vin rouge à 11°"
+  },
+  {
+    "key": "en:12-red-wine",
+    "name": "Vin rouge à 12°"
+  },
+  {
+    "key": "en:13-red-wine",
+    "name": "Vin rouge à 13°"
   },
   {
     "key": "en:organic-red-wines",
@@ -316,6 +380,10 @@
     "name": "Vinaigres de Xérès"
   },
   {
+    "key": "en:spanish-vinegars",
+    "name": "Vinaigres espagnols"
+  },
+  {
     "key": "en:black-vinegars",
     "name": "Vinaigres noirs"
   },
@@ -348,8 +416,20 @@
     "name": "Vins blancs"
   },
   {
+    "key": "en:white-sparkling-flavoured-wines",
+    "name": "Vins blancs mousseux aromatisés"
+  },
+  {
+    "key": "en:dry-white-wines",
+    "name": "Vins blancs secs"
+  },
+  {
     "key": "en:wines-from-california",
     "name": "Vins californiens"
+  },
+  {
+    "key": "en:wines-from-south-africa",
+    "name": "Vins d'Afrique du Sud"
   },
   {
     "key": "en:wines-from-australia",

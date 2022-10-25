@@ -8,6 +8,10 @@
     "name": "Geflügel"
   },
   {
+    "key": "en:poultry-rillettes",
+    "name": "Geflügelfleischaufstriche"
+  },
+  {
     "key": "en:poultry-meals",
     "name": "Geflügelgerichte"
   },
@@ -16,8 +20,28 @@
     "name": "Geflügelleberwürste"
   },
   {
+    "key": "en:poultry-nuggets",
+    "name": "Geflügelnuggets"
+  },
+  {
     "key": "fr:ravioli-a-la-volaille",
     "name": "Geflügelravioli"
+  },
+  {
+    "key": "en:poultry-sandwiches",
+    "name": "Geflügelsandwiches"
+  },
+  {
+    "key": "en:cooked-poultry-breast-slices",
+    "name": "Geflügelschinken"
+  },
+  {
+    "key": "en:poultry-terrines",
+    "name": "Geflügelterrinen"
+  },
+  {
+    "key": "en:poultry-sausages",
+    "name": "Geflügelwürste"
   },
   {
     "key": "en:ground-dried-mint",
@@ -30,6 +54,10 @@
   {
     "key": "en:freeze-dried-instant-coffees",
     "name": "Gefriergetrocknete Instant-Kaffees"
+  },
+  {
+    "key": "en:freeze-dried-foods",
+    "name": "Gefriergetrocknete Lebensmittel"
   },
   {
     "key": "en:lyophilized-chives",
@@ -88,12 +116,20 @@
     "name": "Gefrorene Beeren"
   },
   {
+    "key": "en:frozen-sliced-champignon-mushrooms",
+    "name": "Gefrorene Champignons in Scheiben"
+  },
+  {
     "key": "en:frozen-strawberries",
     "name": "Gefrorene Erdbeeren"
   },
   {
     "key": "en:frozen-ready-made-meals",
     "name": "Gefrorene Fertigmahlzeiten"
+  },
+  {
+    "key": "en:frozen-meat-preparations",
+    "name": "Gefrorene Fleischprodukte"
   },
   {
     "key": "en:frozen-fruits",
@@ -120,11 +156,7 @@
     "name": "Gefrorene gemischte Früchte"
   },
   {
-    "key": "en:frozen-plant-based-foods-mixes",
-    "name": "Gefrorene Gemüsemischungen"
-  },
-  {
-    "key": "en:frozen-vegetable-mixes",
+    "key": "en:frozen-mixed-vegetables",
     "name": "Gefrorene Gemüsemischungen"
   },
   {
@@ -137,7 +169,7 @@
   },
   {
     "key": "en:frozen-green-peas",
-    "name": "Gefrorene grüne Bohnen"
+    "name": "Gefrorene grüne Erbsen"
   },
   {
     "key": "en:frozen-raspberries",
@@ -148,8 +180,16 @@
     "name": "Gefrorene Hülsenfrüchte"
   },
   {
+    "key": "en:frozen-plant-based-foods-mixes",
+    "name": "Gefrorene Lebensmittelmischungen auf pflanzlicher Basis"
+  },
+  {
     "key": "en:frozen-corn-on-the-cob",
     "name": "Gefrorene Maise"
+  },
+  {
+    "key": "en:frozen-seafood",
+    "name": "Gefrorene Meeresfrüchte"
   },
   {
     "key": "en:frozen-mint",
@@ -160,16 +200,28 @@
     "name": "Gefrorene Pfeffergemische"
   },
   {
+    "key": "en:frozen-mushrooms",
+    "name": "Gefrorene Pilze"
+  },
+  {
     "key": "en:frozen-pizzas-and-pies",
-    "name": "Gefrorene Pizzas und Kuchen"
+    "name": "Gefrorene Pizzas und Quiches"
   },
   {
     "key": "en:frozen-fried-potatoes",
     "name": "Gefrorene Pommes"
   },
   {
+    "key": "en:frozen-ground-beef-preparations",
+    "name": "Gefrorene Rinderhackprodukte"
+  },
+  {
     "key": "en:frozen-red-cabbage",
     "name": "Gefrorene Rotkohle"
+  },
+  {
+    "key": "en:frozen-salads",
+    "name": "Gefrorene Salate"
   },
   {
     "key": "en:frozen-spinach-leaves",
@@ -216,8 +268,32 @@
     "name": "Gefrorenes Geflügel"
   },
   {
+    "key": "en:filled-cereals",
+    "name": "Gefüllte Cerealien"
+  },
+  {
+    "key": "en:filled-crepes",
+    "name": "Gefüllte Crêpes"
+  },
+  {
     "key": "en:filled-dark-chocolates",
     "name": "Gefüllte dunkle Schokolade"
+  },
+  {
+    "key": "en:green-stuffed-olives",
+    "name": "Gefüllte Grüne Oliven"
+  },
+  {
+    "key": "en:filled-biscuits",
+    "name": "Gefüllte Kekse"
+  },
+  {
+    "key": "en:stuffed-wafers",
+    "name": "Gefüllte Knusprige Waffeln"
+  },
+  {
+    "key": "en:filled-cakes",
+    "name": "Gefüllte Kuchen"
   },
   {
     "key": "en:filled-milk-chocolates",
@@ -236,12 +312,20 @@
     "name": "Gefüllte Schokolade"
   },
   {
-    "key": "en:stuffed-wafers",
+    "key": "en:stuffed-waffles",
     "name": "Gefüllte Waffeln"
   },
   {
-    "key": "en:stuffed-waffles",
-    "name": "Gefüllte Waffeln"
+    "key": "en:stuffed-vine-leaves",
+    "name": "Gefüllte Weinblätter"
+  },
+  {
+    "key": "en:stuffed-vegetables",
+    "name": "Gefülltes Gemüse"
+  },
+  {
+    "key": "en:cooked-poultries",
+    "name": "Gekochtes Geflügel"
   },
   {
     "key": "en:green-olives-stuffed-of-almond",
@@ -264,7 +348,7 @@
     "name": "Mit Schokolade gefüllte Croissants"
   },
   {
-    "key": "en:chocolate-stuffed-wafers",
-    "name": "Waffeln gefüllt mit Schokolade"
+    "key": "en:frozen-parsley",
+    "name": "Petersilie gefroren"
   }
 ]

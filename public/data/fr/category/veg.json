@@ -16,8 +16,16 @@
     "name": "Barre glacées végétales"
   },
   {
+    "key": "en:biscuit-with-vegetal-fat",
+    "name": "Biscuit sec avec matière grasse végétale"
+  },
+  {
     "key": "en:plant-based-beverages",
     "name": "Boissons à base de végétaux"
+  },
+  {
+    "key": "en:fruit-and-plant-milk-beverages",
+    "name": "Boissons aux fruits et au lait végetal"
   },
   {
     "key": "en:plant-milks",
@@ -176,10 +184,6 @@
     "name": "Boissons végétales de soja en poudre"
   },
   {
-    "key": "en:unsweetened-natural-soy-milks",
-    "name": "Boissons végétales de soja nature"
-  },
-  {
     "key": "en:tigernut-milks",
     "name": "Boissons végétales de souchet"
   },
@@ -196,8 +200,52 @@
     "name": "Boissons végétales en poudre"
   },
   {
+    "key": "en:vegetarian-balls",
+    "name": "Boulettes végétariennes"
+  },
+  {
+    "key": "en:vegetarian-skewers",
+    "name": "Brochettes végétariennes"
+  },
+  {
+    "key": "en:vegetarian-cannelloni",
+    "name": "Cannelloni végétariens"
+  },
+  {
+    "key": "en:plant-milk-chocolates",
+    "name": "Chocolats au lait végétal"
+  },
+  {
+    "key": "en:plant-based-ice-cream-cones",
+    "name": "Cônes glacés végétaux"
+  },
+  {
+    "key": "en:vegetarian-cordons-bleus",
+    "name": "Cordons bleus végétariens"
+  },
+  {
+    "key": "en:vegan-coffee-puddings",
+    "name": "Crèmes dessert café végétaliennes"
+  },
+  {
+    "key": "en:vegan-chocolate-puddings",
+    "name": "Crèmes dessert chocolat végétaliennes"
+  },
+  {
+    "key": "en:vegan-vanilla-puddings",
+    "name": "Crèmes dessert vanille végétaliennes"
+  },
+  {
+    "key": "en:vegan-creamy-puddings",
+    "name": "Crèmes dessert végétaliennes"
+  },
+  {
     "key": "en:plant-based-ice-creams",
     "name": "Crèmes glacées végétales"
+  },
+  {
+    "key": "en:plant-based-ice-cream-tubs",
+    "name": "Crèmes glacées végétales en pot"
   },
   {
     "key": "en:plant-based-creams",
@@ -240,7 +288,11 @@
     "name": "Desserts végétaliens"
   },
   {
-    "key": "fr:filets-d-anchois-marines-a-l-huile-vegetale",
+    "key": "en:non-dairy-yogurts",
+    "name": "Desserts végétaliens fermentés"
+  },
+  {
+    "key": "en:marinated-anchovy-fillets-with-vegetable-oil",
     "name": "Filets d'anchois marinés à l'huile végétale"
   },
   {
@@ -248,15 +300,35 @@
     "name": "Fritures végétales"
   },
   {
+    "key": "en:frozen-meat-and-vegetable-mixes",
+    "name": "Frozen meat and vegetable mixes"
+  },
+  {
     "key": "en:frozen-vegetables-for-paella",
     "name": "Frozen vegetables for paella"
+  },
+  {
+    "key": "en:vegan-patties",
+    "name": "Galettes véganes"
+  },
+  {
+    "key": "en:vegetarian-patties",
+    "name": "Galettes végétariennes"
   },
   {
     "key": "nl:plantbased-gelatin",
     "name": "Gélifiants végétaux"
   },
   {
-    "key": "en:veggie-burgers",
+    "key": "en:german-vegetables",
+    "name": "German vegetables"
+  },
+  {
+    "key": "en:veggie-grounds",
+    "name": "Hachés végétaux"
+  },
+  {
+    "key": "en:vegetarian-hamburgers",
     "name": "Hamburgers végétariens"
   },
   {
@@ -268,12 +340,120 @@
     "name": "Lasagnes végétariennes"
   },
   {
+    "key": "fr:liegeois-vegetaliens",
+    "name": "Liégeois végétaliens"
+  },
+  {
     "key": "en:mantecados-and-polvorones-with-vegetal-fat",
     "name": "Mantecados et polvorones avec de la graisse végétale"
   },
   {
+    "key": "en:margarines-with-plant-sterols-esters",
+    "name": "Margarine aux esters de stérol végétal"
+  },
+  {
+    "key": "en:50-63-blended-fat-with-vegetable-and-animal-origins",
+    "name": "Matière grasse mélangée végétale et laitière à 50-63% MG"
+  },
+  {
+    "key": "en:50-63-lightly-salted-blended-fat-with-vegetable-and-animal-origins",
+    "name": "Matière grasse mélangée végétale et laitière à 50-63% MG demi-sel"
+  },
+  {
+    "key": "en:30-40-blended-fat-with-vegetable-and-animal-origins",
+    "name": "Matière grasse mélangée végétale et laitière à tartiner à 30-40% MG"
+  },
+  {
+    "key": "en:30-40-lightly-salted-blended-fat-with-vegetable-and-animal-origins",
+    "name": "Matière grasse mélangée végétale et laitière à tartiner à 30-40% MG demi-sel"
+  },
+  {
+    "key": "en:70-unsalted-vegetable-fat",
+    "name": "Matière grasse végétale à 70% doux"
+  },
+  {
+    "key": "en:80-unsalted-vegetable-fat",
+    "name": "Matière grasse végétale à 80% doux"
+  },
+  {
+    "key": "en:50-63-unsalted-vegetable-fat-high-in-omega-3",
+    "name": "Matière grasse végétale allégée à 50-63% de matières grasses riche en oméga 3"
+  },
+  {
+    "key": "en:60-unsalted-vegetable-fat-with-sunflowerseed",
+    "name": "Matière grasse végétale allégée à 60% doux au tournesol"
+  },
+  {
+    "key": "en:50-63-fat-lightly-salted-vegetable-fat",
+    "name": "Matière grasse végétale demi-sel allégée à 50-63% MG"
+  },
+  {
+    "key": "en:30-40-lightly-salted-vegetable-fat-with-plant-sterols-esters",
+    "name": "Matière grasse végétale demi-sel légère à 30-40% aux esters de stérol végétal"
+  },
+  {
+    "key": "en:50-63-lightly-salted-vegetable-fat-high-in-omega-3",
+    "name": "Matière grasse végétale demi-sel riche en oméga 3 allégée à 50-63% MG"
+  },
+  {
+    "key": "en:light-unsalted-margarines",
+    "name": "Matière grasse végétale douce à teneur réduite en matière grasse"
+  },
+  {
+    "key": "en:50-63-unsalted-vegetable-fat",
+    "name": "Matière grasse végétale douce allégée à 50-63%"
+  },
+  {
+    "key": "en:50-63-unsalted-vegetable-fat-with-plant-sterols-esters",
+    "name": "Matière grasse végétale douce allégée à 50-63% aux esters de stérol végétal"
+  },
+  {
+    "key": "en:30-40-fat-unsalted-vegetable-fat",
+    "name": "Matière grasse végétale légère à 30-40% doux"
+  },
+  {
+    "key": "en:30-40-fat-unsalted-vegetable-fat-with-plant-sterols-esters",
+    "name": "Matière grasse végétale légère à 30-40% doux aux esters de stérol végétal"
+  },
+  {
+    "key": "en:30-40-fat-lightly-salted-vegetable-fat",
+    "name": "Matière grasse végétale légère à 30-40% doux demi-sel"
+  },
+  {
+    "key": "en:30-40-fat-unsalted-vegetable-fat-high-in-omega-3",
+    "name": "Matière grasse végétale légère à 30-40% doux riche en oméga 3"
+  },
+  {
+    "key": "en:80-salted-vegetable-fat",
+    "name": "Matière grasse végétale salée à 80%"
+  },
+  {
     "key": "en:vegetable-fats",
     "name": "Matières grasses végétales"
+  },
+  {
+    "key": "en:vegan-chocolate-mousses",
+    "name": "Mousses au chocolat végétaliennes"
+  },
+  {
+    "key": "en:vegan-nuggets",
+    "name": "Nuggets végans"
+  },
+  {
+    "key": "en:vegetarian-nuggets",
+    "name": "Nuggets végétariens"
+  },
+  {
+    "key": "en:baked-shortcrust-pastry-with-vegetable-oil",
+    "name": "Pâte brisée cuite à la matière grasse végétale"
+  },
+  {
+    "key": "en:puff-pastry-with-vegetable-fat",
+    "name": "Pâte feuilletée à la matière grasse végétale"
+  },
+  {
+    "key": "en:raw-puff-pastry",
+    "name": "Pâte feuilletée crue à la matière grasse végétale"
   },
   {
     "key": "en:plant-based-spreads",
@@ -304,35 +484,83 @@
     "name": "Plats préparés d'origine végétale"
   },
   {
+    "key": "en:non-dairy-fermented-foods",
+    "name": "Produits végétaux fermentés"
+  },
+  {
     "key": "en:textured-vegetable-protein",
     "name": "Protéine végétale texturée"
+  },
+  {
+    "key": "en:raw-vegetable-sandwiches",
+    "name": "Raw vegetable sandwiches"
+  },
+  {
+    "key": "en:reheatable-vegetable-soups",
+    "name": "Reheatable vegetable soups"
+  },
+  {
+    "key": "en:vegan-rice-puddings",
+    "name": "Riz au lait végétaliens"
   },
   {
     "key": "en:vegetarian-pasta-salads",
     "name": "Salades de pâtes végétariennes"
   },
   {
+    "key": "en:plant-based-ice-cream-sandwiches",
+    "name": "Sandwiches à la crème glacée végétale"
+  },
+  {
+    "key": "en:vegan-sauces",
+    "name": "Sauces véganes"
+  },
+  {
+    "key": "en:bearnaise-style-vegan-sauces",
+    "name": "Sauces véganes façon béarnaise"
+  },
+  {
+    "key": "en:tartare-style-vegan-sauces",
+    "name": "Sauces véganes façon tartare"
+  },
+  {
+    "key": "en:vegetarian-sauces",
+    "name": "Sauces végétariennes"
+  },
+  {
+    "key": "en:bolognese-style-vegetarian-sauces",
+    "name": "Sauces végétariennes façon bolognese"
+  },
+  {
+    "key": "en:carbonara-style-vegetarian-sauces",
+    "name": "Sauces végétariennes façon carbonara"
+  },
+  {
     "key": "en:vegetarian-sausages",
-    "name": "Saucisses végétales"
+    "name": "Saucisses végétariennes"
   },
   {
     "key": "en:vegetarian-frankfurt-sausages",
-    "name": "Saucisses végétales de Francfort"
+    "name": "Saucisses végétariennes de Francfort"
   },
   {
     "key": "en:vegetarian-vienna-sausages",
-    "name": "Saucisses végétales de Vienne"
+    "name": "Saucisses végétariennes de Vienne"
   },
   {
     "key": "en:vegetarian-hot-dog-sausages",
-    "name": "Saucisses végétales pour hot-dog"
+    "name": "Saucisses végétariennes pour hot-dog"
   },
   {
-    "key": "en:veggie-burger-patties",
-    "name": "Steaks végétaux"
+    "key": "en:vegetarian-spreads-with-meat-like-pieces",
+    "name": "Tartinades avec des morceaux végétariens"
   },
   {
-    "key": "en:non-dairy-yogurts",
-    "name": "Yaourts végétaux"
+    "key": "en:vegan-vegetable-spreads",
+    "name": "Tartinades véganes aux légumes"
+  },
+  {
+    "key": "en:vegetable-oil-sprays",
+    "name": "Vegetable oil sprays"
   }
 ]

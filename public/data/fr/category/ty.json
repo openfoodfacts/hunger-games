@@ -4,11 +4,27 @@
     "name": "Barre chocolatée biscuitée type KitKat"
   },
   {
-    "key": "fr:farines-de-ble-type-t110",
+    "key": "en:dehydrated-meat-and-vegetables-broth-stock",
+    "name": "Bouillon de viande et légumes type pot-au-feu déshydraté"
+  },
+  {
+    "key": "en:dehydrated-meat-and-vegetables-with-fat-broth-stock",
+    "name": "Bouillon de viande et légumes type pot-au-feu non dégraissé déshydraté"
+  },
+  {
+    "key": "en:dehydrated-broth-with-meat-and-vegetables",
+    "name": "Bouillon de viande et légumes type pot-au-feu prêt à consommer"
+  },
+  {
+    "key": "en:punch-cocktail-with-16-alcohol",
+    "name": "Cocktail type punch à 16% d'alcool"
+  },
+  {
+    "key": "en:wheat-flour-t110",
     "name": "Farines de blé type T110"
   },
   {
-    "key": "en:whole-wheat-flours",
+    "key": "en:wheat-flour-type-150",
     "name": "Farines de blé type T150"
   },
   {
@@ -16,11 +32,11 @@
     "name": "Farines de blé type T45"
   },
   {
-    "key": "en:white-wheat-flours",
+    "key": "en:wheat-flour-type-55-for-bread",
     "name": "Farines de blé type T55"
   },
   {
-    "key": "fr:farines-de-ble-type-t65",
+    "key": "en:wheat-flour-type-65",
     "name": "Farines de blé type T65"
   },
   {
@@ -40,6 +56,38 @@
     "name": "Farines type Gruau 55"
   },
   {
+    "key": "en:feta-type-cheese",
+    "name": "Feta-type cheese"
+  },
+  {
+    "key": "en:hard-cheese-emmental-type-cheese-reduced-fat",
+    "name": "Fromage de type emmental"
+  },
+  {
+    "key": "en:soft-ripened-round-cheese-with-bloomy-rind-around-11-fat-coulommiers-type-cheese-reduced-fat",
+    "name": "Fromage rond à pâte molle et croûte fleurie environ 11% MG type coulommiers allégé en matière grasse"
+  },
+  {
+    "key": "en:soft-ripened-round-cheese-with-bloomy-rind-around-5-fat-camembert-type-cheese-reduced-fat",
+    "name": "Fromage rond à pâte molle et croûte fleurie environ 5% MG type camembert allégé en matière grasse"
+  },
+  {
+    "key": "en:feta-type-cheese-from-cow-s-milk",
+    "name": "Fromage type feta au lait de vache"
+  },
+  {
+    "key": "en:feta-type-cheese-from-cow-s-milk-in-oil-and-spices",
+    "name": "Fromage type feta au lait de vache à l'huile et aux aromates"
+  },
+  {
+    "key": "en:firm-cheese-around-27-fat-maasdam-type-cheese",
+    "name": "Fromage type Maasdam 27% MG"
+  },
+  {
+    "key": "en:pizza-with-raclette-cheese-and-lardoons",
+    "name": "Pizza type raclette"
+  },
+  {
     "key": "en:desi-chickpeas",
     "name": "Pois chiches de type Desi"
   },
@@ -54,6 +102,10 @@
   {
     "key": "en:rye-flours-type-1370",
     "name": "Rye flours Type 1370"
+  },
+  {
+    "key": "en:salami-danish-style",
+    "name": "Salami type danois"
   },
   {
     "key": "en:fortified-wines-such-as-natural-sweet-wines",
