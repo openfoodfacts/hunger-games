@@ -1,19 +1,19 @@
 {
   "home": {
     "game_selector": {
-      "title": "What game would you like to play?",
+      "title": "Bạn muốn chơi trò chơi gì?",
       "cards": {
         "questions": {
           "title": "Câu hỏi",
-          "description": "Tell us if the given image answers the questions"
+          "description": "Hãy nói cho chúng biết nếu hình ảnh này trả lời cho các câu hỏi"
         },
         "logos": {
           "title": "Logos",
-          "description": "Find all the logos matching the given logo"
+          "description": "Tìm tất cả các logo phù hợp với logo đã cho"
         },
         "eco_score": {
           "title": "Điểm sinh thái",
-          "description": "Annotate the questions with the highest value"
+          "description": "Chú thích các câu hỏi có giá trị cao nhất"
         }
       }
     },
@@ -331,7 +331,7 @@
     "correct": "Correct ({{label}})"
   },
   "eco-score": {
-    "description": "Here is a summary of questions that could improve Eco-Score computation",
+    "description": "Đây là bản tóm tắt các câu hỏi có thể cải thiện phần tính toán Điểm sinh thái",
     "countryLabel": "Quốc gia"
   }
 }
