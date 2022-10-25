@@ -2,16 +2,21 @@ import * as React from "react";
 
 import LinearProgress from "@mui/material/LinearProgress";
 import Stack from "@mui/material/Stack";
+import Paper from "@mui/material/Paper";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import TextField from "@mui/material/TextField";
+import Dialog from "@mui/material/Dialog";
+import DialogContent from "@mui/material/DialogContent";
 
+import LogoForm from "../../components/LogoForm";
 import LogoGrid from "../../components/LogoGrid";
 import robotoff from "../../robotoff";
 import off from "../../off";
 import useUrlParams from "../../hooks/useUrlParams";
+import { DialogActions } from "@mui/material";
 
-const PAGE_SIZE = 5;
+const PRODUCT_PAGE_SIZE = 2;
 
 const AVAILABLE_TAG_TYPES = [
   "brands",
@@ -37,7 +42,7 @@ const fetchProducts = async ({ page, filter }) => {
       data: { count, products },
     } = await off.searchProducts({
       page,
-      pageSize: PAGE_SIZE,
+      pageSize: PRODUCT_PAGE_SIZE,
       filters: [filter],
     });
 
@@ -105,7 +110,7 @@ const useLogoFetching = (filter) => {
           setFetchedProducts((prev) => [...prev, ...codes]);
 
           setIsLoading(false);
-          setCanLoadMore(count > productPage * PAGE_SIZE);
+          setCanLoadMore(count > productPage * PRODUCT_PAGE_SIZE);
         }
       })
       .catch(() => {
@@ -158,6 +163,43 @@ const useLogoFetching = (filter) => {
   return [logos, loadMore, isLoading, canLoadMore, toggleSelection];
 };
 
+const AnnotateSelectedLogos = (props) => {
+  const { isOpen, logos, closeAnnotation, toggleLogoSelection } = props;
+
+  const sendAnnotation = async ({ type, value }) => {
+    try {
+      await robotoff.annotateLogos(
+        logos
+          .filter((logo) => logo.selected)
+          .map(({ id }) => ({
+            logo_id: id,
+            value,
+            type,
+          }))
+      );
+      logos
+        .filter((logo) => logo.selected)
+        .forEach(({ id }) => {
+          toggleLogoSelection(id);
+        });
+      closeAnnotation();
+    } catch {}
+  };
+  return (
+    <Dialog open={isOpen} onClose={closeAnnotation} maxWidth="xl">
+      <DialogContent>
+        <LogoForm value="" type="" request={sendAnnotation} />
+        <LogoGrid
+          logos={logos.filter((logo) => logo.selected)}
+          toggleLogoSelection={toggleLogoSelection}
+        />
+      </DialogContent>
+      <DialogActions>
+        <Button onClick={closeAnnotation}>Cancel</Button>
+      </DialogActions>
+    </Dialog>
+  );
+};
 export default function AnnotateLogosFromProducts() {
   const [filter, setFilter] = useUrlParams({
     tagtype: "labels",
@@ -173,63 +215,86 @@ export default function AnnotateLogosFromProducts() {
   const [logos, loadMore, isLoading, canLoadMore, toggleSelection] =
     useLogoFetching(filter);
 
+  const [isAnnotationOpen, setIsAnnotationOpen] = React.useState(false);
+  const openAnnotation = React.useCallback(() => {
+    setIsAnnotationOpen(true);
+  }, []);
+  const closeAnnotation = React.useCallback(() => {
+    setIsAnnotationOpen(false);
+  }, []);
+
   return (
     <div>
-      <Stack direction="row" spacing={1}>
-        <TextField
-          select
-          value={internalFilter.tagtype}
-          onChange={(event) =>
-            setInternalFilter((prev) => ({
-              ...prev,
-              tagtype: event.target.value,
-            }))
-          }
-          label="type"
-          sx={{ minWidth: 200 }}
-        >
-          {AVAILABLE_TAG_TYPES.map((type) => (
-            <MenuItem key={type} value={type}>
-              {type}
-            </MenuItem>
-          ))}
-        </TextField>
-        <TextField
-          value={internalFilter.tag}
-          onChange={(event) =>
-            setInternalFilter((prev) => ({
-              ...prev,
-              tag: event.target.value,
-            }))
-          }
-          label="tag"
-          sx={{ minWidth: 200 }}
-        />
-        <Button
-          onClick={() => {
-            setFilter(internalFilter);
-          }}
-        >
-          Search
-        </Button>
-      </Stack>
-
+      <Paper sx={{ padding: 2, position: "sticky", top: 0, zIndex: 1 }}>
+        <Stack direction="row" spacing={1}>
+          <TextField
+            select
+            value={internalFilter.tagtype}
+            onChange={(event) =>
+              setInternalFilter((prev) => ({
+                ...prev,
+                tagtype: event.target.value,
+              }))
+            }
+            label="type"
+            sx={{ minWidth: 200 }}
+          >
+            {AVAILABLE_TAG_TYPES.map((type) => (
+              <MenuItem key={type} value={type}>
+                {type}
+              </MenuItem>
+            ))}
+          </TextField>
+          <TextField
+            value={internalFilter.tag}
+            onChange={(event) =>
+              setInternalFilter((prev) => ({
+                ...prev,
+                tag: event.target.value,
+              }))
+            }
+            label="tag"
+            sx={{ minWidth: 200 }}
+          />
+          <Button
+            onClick={() => {
+              setFilter(internalFilter);
+            }}
+          >
+            Search
+          </Button>
+        </Stack>
+      </Paper>
       {
         <>
-          <LogoGrid
+          <LogoGrid logos={logos} toggleLogoSelection={toggleSelection} />
+          <Paper sx={{ py: 1, position: "sticky", bottom: 0 }}>
+            {isLoading && <LinearProgress sx={{ my: 2 }} />}
+            <Stack direction="row" spacing={2}>
+              <Button
+                fullWidth
+                variant="contained"
+                onClick={loadMore}
+                disabled={isLoading || !canLoadMore}
+              >
+                Load More
+              </Button>
+              <Button
+                fullWidth
+                variant="contained"
+                color="success"
+                onClick={openAnnotation}
+              >
+                Annotate
+              </Button>
+            </Stack>
+          </Paper>
+          <AnnotateSelectedLogos
+            isOpen={isAnnotationOpen}
             logos={logos}
+            closeAnnotation={closeAnnotation}
             toggleLogoSelection={toggleSelection}
-            // readOnly
           />
-          {isLoading && <LinearProgress sx={{ mt: 5 }} />}
-          <Button
-            sx={{ width: "100%", my: 5, py: 3 }}
-            variant="filled"
-            onClick={loadMore}
-            disabled={isLoading || !canLoadMore}
-          >
-            Load More
-          </Button>
         </>
       }
     </div>
