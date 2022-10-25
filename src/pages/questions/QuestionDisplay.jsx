@@ -126,7 +126,7 @@ const QuestionDisplay = ({
               insightId: question.insight_id,
             });
             break;
-          case 79: // O
+          case 79: // Y
             answerQuestion({
               value: CORRECT_INSIGHT,
               insightId: question.insight_id,
@@ -253,7 +253,7 @@ const QuestionDisplay = ({
           size="large"
           sx={{ display: "flex", flexDirection: "column", flexGrow: 1 }}
         >
-          {t("questions.yes")} (o)
+          {t("questions.yes")} (y)
         </Button>
       </Stack>
       <Button
