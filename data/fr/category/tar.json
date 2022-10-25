@@ -12,8 +12,56 @@
     "name": "Côtes du Tarn"
   },
   {
+    "key": "en:fruit-curds",
+    "name": "Crèmes de fruits à tartiner"
+  },
+  {
+    "key": "en:crepes-filled-with-chocolate-and-hazelnut-spread",
+    "name": "Crêpes fourrées à la pâte à tartiner chocolat et noisettes"
+  },
+  {
+    "key": "en:croutons-for-spreads",
+    "name": "Croûtons à tartiner"
+  },
+  {
+    "key": "en:uncured-soft-cheese-spreadable-with-around-20-fat",
+    "name": "Fromage à tartiner à environ 20% MG"
+  },
+  {
+    "key": "en:uncured-soft-cheese-spreadable-with-around-25-fat",
+    "name": "Fromage à tartiner à environ 25% MG"
+  },
+  {
+    "key": "en:spreadable-goat-cheese",
+    "name": "Fromage de chèvre à tartiner"
+  },
+  {
     "key": "en:cheese-spreads",
     "name": "Fromages à tartiner"
+  },
+  {
+    "key": "fr:haricot-tarbais",
+    "name": "Haricot tarbais"
+  },
+  {
+    "key": "en:olive-oils-from-terre-tarentine",
+    "name": "Huile d'olive de Terre Tarentine"
+  },
+  {
+    "key": "en:dairy-fat-20-fat-light-spreadable-unsalted",
+    "name": "Matière grasse laitière à 20% MG légère à tartiner doux"
+  },
+  {
+    "key": "en:dairy-fat-25-fat-light-spreadable-unsalted",
+    "name": "Matière grasse laitière à 25% MG légère à tartiner doux"
+  },
+  {
+    "key": "en:30-40-blended-fat-with-vegetable-and-animal-origins",
+    "name": "Matière grasse mélangée végétale et laitière à tartiner à 30-40% MG"
+  },
+  {
+    "key": "en:30-40-lightly-salted-blended-fat-with-vegetable-and-animal-origins",
+    "name": "Matière grasse mélangée végétale et laitière à tartiner à 30-40% MG demi-sel"
   },
   {
     "key": "en:spreadable-fats",
@@ -80,8 +128,20 @@
     "name": "Pizzas tartes salées et quiches"
   },
   {
-    "key": "en:dairy-spread",
-    "name": "Produit laitier à tartiner"
+    "key": "en:fish-spreads",
+    "name": "Préparations de poisson à tartiner"
+  },
+  {
+    "key": "en:chicken-spreads",
+    "name": "Préparations de poulet à tartiner"
+  },
+  {
+    "key": "en:tuna-spreads",
+    "name": "Préparations de thon à tartiner"
+  },
+  {
+    "key": "en:meat-spreads",
+    "name": "Préparations de viande à tartiner"
   },
   {
     "key": "en:spreads",
@@ -96,12 +156,24 @@
     "name": "Produits à tartiner sucrés"
   },
   {
-    "key": "en:puffed-buckwheat",
-    "name": "Sarrasin de Tartarie soufflé"
+    "key": "en:dairy-spread",
+    "name": "Produits laitiers à tartiner"
   },
   {
     "key": "en:tartare-sauces",
     "name": "Sauces tartare"
+  },
+  {
+    "key": "en:tartare-style-vegan-sauces",
+    "name": "Sauces véganes façon tartare"
+  },
+  {
+    "key": "en:cheese-spreads-substitutes",
+    "name": "Substituts de fromages à tartiner"
+  },
+  {
+    "key": "en:egg-spreads-substitutes",
+    "name": "Substituts de tartinades d'œufs"
   },
   {
     "key": "en:taramasalata",
@@ -120,12 +192,52 @@
     "name": "Taramas au saumon"
   },
   {
-    "key": "en:seaweed-spread",
-    "name": "Tartare d'algues"
+    "key": "en:seaweed-spreads",
+    "name": "Tartares d'algues"
+  },
+  {
+    "key": "en:beef-tartares",
+    "name": "Tartares de boeuf"
+  },
+  {
+    "key": "en:meat-tartares",
+    "name": "Tartares de viande"
+  },
+  {
+    "key": "en:onion-tart",
+    "name": "Tarte à l'oignon"
+  },
+  {
+    "key": "en:provencal-style-tart",
+    "name": "Tarte à la provençale"
   },
   {
     "key": "fr:tarte-au-vin",
     "name": "Tarte au vin"
+  },
+  {
+    "key": "en:red-berries-tart",
+    "name": "Tarte aux fruits rouges"
+  },
+  {
+    "key": "fr:tarte-aux-groseilles",
+    "name": "Tarte aux groseilles"
+  },
+  {
+    "key": "en:scallops-tart",
+    "name": "Tarte aux noix de Saint-Jacques"
+  },
+  {
+    "key": "en:pear-tart-with-almonds",
+    "name": "Tarte aux poires amandine"
+  },
+  {
+    "key": "en:goat-cheese-and-spinach-tart",
+    "name": "Tarte épinard chèvre"
+  },
+  {
+    "key": "en:biscuit-small-tart-with-chocolate-pre-packed",
+    "name": "Tartelette au chocolat"
   },
   {
     "key": "en:tartlets",
@@ -164,6 +276,10 @@
     "name": "Tartelettes au citron"
   },
   {
+    "key": "en:fruit-tartlets",
+    "name": "Tartelettes aux fruits"
+  },
+  {
     "key": "en:pies",
     "name": "Tartes"
   },
@@ -184,7 +300,7 @@
     "name": "Tartes à la noix de coco"
   },
   {
-    "key": "en:toamatoes-pies",
+    "key": "en:tomatoes-pies",
     "name": "Tartes à la tomate"
   },
   {
@@ -244,6 +360,14 @@
     "name": "Tartes aux framboises"
   },
   {
+    "key": "en:fruit-tarts",
+    "name": "Tartes aux fruits"
+  },
+  {
+    "key": "en:fruit-pies-with-confectioner-s-custard",
+    "name": "Tartes aux fruits et crème pâtissière"
+  },
+  {
     "key": "en:vegetables-pies",
     "name": "Tartes aux légumes"
   },
@@ -272,7 +396,7 @@
     "name": "Tartes aux pommes néerlandaises"
   },
   {
-    "key": "en:pies-from-normandy",
+    "key": "en:norman-style-pies",
     "name": "Tartes normandes"
   },
   {
@@ -280,15 +404,15 @@
     "name": "Tartes salées"
   },
   {
+    "key": "en:frozen-pies",
+    "name": "Tartes salées surgelées"
+  },
+  {
     "key": "en:sweet-pies",
     "name": "Tartes sucrées"
   },
   {
-    "key": "en:frozen-pies",
-    "name": "Tartes surgelées (salées)"
-  },
-  {
-    "key": "fr:tartes-tatin",
+    "key": "en:tatin-tart",
     "name": "Tartes Tatin"
   },
   {
@@ -304,7 +428,59 @@
     "name": "Tartiflettes en conserve"
   },
   {
-    "key": "en:crispbreads",
-    "name": "Tartines craquantes"
+    "key": "en:vegetarian-spreads-with-meat-like-pieces",
+    "name": "Tartinades avec des morceaux végétariens"
+  },
+  {
+    "key": "en:egg-spreads",
+    "name": "Tartinades d'œufs"
+  },
+  {
+    "key": "en:bean-spreads",
+    "name": "Tartinades de haricots"
+  },
+  {
+    "key": "en:lentil-spreads",
+    "name": "Tartinades de lentilles"
+  },
+  {
+    "key": "en:sweet-potato-spreads",
+    "name": "Tartinades de patates douces"
+  },
+  {
+    "key": "en:vegan-vegetable-spreads",
+    "name": "Tartinades véganes aux légumes"
+  },
+  {
+    "key": "en:extruded-crispbreads",
+    "name": "Tartines craquantes extrudées"
+  },
+  {
+    "key": "en:filled-extruded-crispbreads",
+    "name": "Tartines craquantes fourrées"
+  },
+  {
+    "key": "en:extruded-and-grilled-crispbread",
+    "name": "Tartines craquantes grillées"
+  },
+  {
+    "key": "en:extruded-and-grilled-biscuits-with-chocolate-filling",
+    "name": "Tartines craquantes grillées fourrées au chocolat"
+  },
+  {
+    "key": "en:extruded-and-grilled-biscuits-with-fruits-filling",
+    "name": "Tartines craquantes grillées fourrées aux fruits"
+  },
+  {
+    "key": "en:tartufo",
+    "name": "Tartufo"
+  },
+  {
+    "key": "en:taro-tubers",
+    "name": "Tubercules de taro"
+  },
+  {
+    "key": "en:cooked-taro-tubes",
+    "name": "Tubercules de taro cuits"
   }
 ]

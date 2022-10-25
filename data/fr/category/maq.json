@@ -1,6 +1,14 @@
 [
   {
-    "key": "en:mackerels-fillets",
+    "key": "en:gooseberries-jams",
+    "name": "Confitures de groseilles à maquereaux"
+  },
+  {
+    "key": "en:mackerel-fillets-with-tomato-sauce",
+    "name": "Filets de maquereau sauce tomate en conserve"
+  },
+  {
+    "key": "en:mackerel-fillets",
     "name": "Filets de maquereaux"
   },
   {
@@ -12,6 +20,14 @@
     "name": "Filets de maquereaux à l'huile"
   },
   {
+    "key": "en:mackerel-fillets-in-olive-oil",
+    "name": "Filets de maquereaux à l'huile d'olive"
+  },
+  {
+    "key": "en:mackerel-fillets-in-sunflower-oil",
+    "name": "Filets de maquereaux à l'huile de tournesol"
+  },
+  {
     "key": "en:mackerel-fillets-in-mustard-sauce",
     "name": "Filets de maquereaux à la moutarde"
   },
@@ -20,16 +36,48 @@
     "name": "Filets de maquereaux au vin blanc et aromates"
   },
   {
-    "key": "en:mackerels-fillets-with-olives-and-lemon",
+    "key": "en:mackerel-fillets-with-olives-and-lemon",
     "name": "Filets de maquereaux citron-olive"
   },
   {
-    "key": "en:plain-mackerels-fillets",
+    "key": "fr:filets-de-maquereaux-grilles",
+    "name": "Filets de maquereaux grillés"
+  },
+  {
+    "key": "en:plain-mackerel-fillets",
     "name": "Filets de maquereaux natures"
   },
   {
-    "key": "en:mackerels-fillets-with-tomato-and-basilisk",
+    "key": "en:mackerel-fillets-with-tomato-and-basil",
     "name": "Filets de maquereaux tomate-basilic"
+  },
+  {
+    "key": "en:gooseberries",
+    "name": "Groseilles à maquereaux"
+  },
+  {
+    "key": "fr:maquee-de-brabant",
+    "name": "Maquée de Brabant"
+  },
+  {
+    "key": "en:mackerel",
+    "name": "Maquereau"
+  },
+  {
+    "key": "en:atlantic-chub-mackerel",
+    "name": "Maquereau espagnol"
+  },
+  {
+    "key": "en:fried-mackerel",
+    "name": "Maquereau frit"
+  },
+  {
+    "key": "en:marinated-mackerel",
+    "name": "Maquereau mariné"
+  },
+  {
+    "key": "en:roasted-mackerel",
+    "name": "Maquereau rôti"
   },
   {
     "key": "en:mackerels",
@@ -44,7 +92,7 @@
     "name": "Maquereaux fumés"
   },
   {
-    "key": "fr:rillettes-de-maquereau",
+    "key": "en:mackerel-rillettes",
     "name": "Rillettes de maquereau"
   }
 ]

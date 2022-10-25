@@ -1,15 +1,27 @@
 [
   {
-    "key": "fr:asperges-des-sables-des-landes",
-    "name": "Asperges des sables des Landes"
+    "key": "fr:asperge-des-sables-des-landes",
+    "name": "Asperge des sables des Landes"
   },
   {
     "key": "en:beacon-fell-traditional-lancashire-cheese",
-    "name": "Beacon Fell Traditional Lancashire Cheese"
+    "name": "Beacon Fell traditional Lancashire cheese"
   },
   {
     "key": "fr:beaune-clos-saint-landry",
     "name": "Beaune Clos Saint-Landry"
+  },
+  {
+    "key": "fr:beaune-premier-cru-clos-saint-landry-blanc",
+    "name": "Beaune premier cru Clos Saint-Landry blanc"
+  },
+  {
+    "key": "fr:beaune-premier-cru-clos-saint-landry-rouge",
+    "name": "Beaune premier cru Clos Saint-Landry rouge"
+  },
+  {
+    "key": "fr:bisques-de-langoustines",
+    "name": "Bisques de Langoustines"
   },
   {
     "key": "fr:civet-de-langouste",
@@ -85,6 +97,14 @@
   },
   {
     "key": "en:spiny-lobsters",
+    "name": "Langouste"
+  },
+  {
+    "key": "en:boiled-spiny-lobster",
+    "name": "Langouste bouillie"
+  },
+  {
+    "key": "en:small-spiny-lobsters",
     "name": "Langoustes"
   },
   {
@@ -92,16 +112,28 @@
     "name": "Langoustines"
   },
   {
-    "key": "fr:langres",
+    "key": "en:breaded-scampi",
+    "name": "Langoustines panées"
+  },
+  {
+    "key": "en:langres",
     "name": "Langres"
   },
   {
-    "key": "en:beef-tongues-with-madeira-sauce",
-    "name": "Langue de bœuf sauce madère"
+    "key": "en:cooked-beef-tongue",
+    "name": "Langue de boeuf cuite"
   },
   {
     "key": "en:pork-tongue",
     "name": "Langue de porc"
+  },
+  {
+    "key": "en:calf-tongue",
+    "name": "Langue de veau"
+  },
+  {
+    "key": "en:cooked-calf-tongue",
+    "name": "Langue de veau cuite"
   },
   {
     "key": "fr:languedoc",
@@ -112,12 +144,20 @@
     "name": "Langues de bœuf"
   },
   {
+    "key": "en:beef-tongues-with-madeira-sauce",
+    "name": "Langues de bœuf sauce madère"
+  },
+  {
     "key": "en:tongue-of-beef-with-hot-sauce",
     "name": "Langues de bœuf sauce piquante"
   },
   {
     "key": "en:cat-tongue",
     "name": "Langues de chat"
+  },
+  {
+    "key": "fr:marc-du-languedoc",
+    "name": "Marc du Languedoc"
   },
   {
     "key": "en:ribwort-plantain",
@@ -128,16 +168,24 @@
     "name": "Poêlées à la landaise"
   },
   {
-    "key": "fr:rillettes-de-langoustine",
+    "key": "fr:queues-de-langoustes",
+    "name": "Queues de langoustes"
+  },
+  {
+    "key": "en:langoustine-rillettes",
     "name": "Rillettes de langoustine"
   },
   {
-    "key": "en:poultry-from-languedoc",
-    "name": "Volaille du Languedoc"
+    "key": "en:tongue-sausage-with-pistachios",
+    "name": "Saucisse de langue à la pistache"
   },
   {
     "key": "fr:volailles-des-landes",
     "name": "Volailles des Landes"
+  },
+  {
+    "key": "en:poultry-from-languedoc",
+    "name": "Volailles du Languedoc"
   },
   {
     "key": "fr:volailles-du-plateau-de-langres",

@@ -4,7 +4,11 @@
     "name": "Farines de haricots"
   },
   {
-    "key": "fr:filets-de-harengs",
+    "key": "en:smoked-atlantic-herring-fillet",
+    "name": "Filet de hareng fumé doux"
+  },
+  {
+    "key": "en:herring-fillets",
     "name": "Filets de harengs"
   },
   {
@@ -14,6 +18,34 @@
   {
     "key": "en:harbourne-blue",
     "name": "Harbourne Blue"
+  },
+  {
+    "key": "en:atlantic-herring",
+    "name": "Hareng"
+  },
+  {
+    "key": "en:fried-atlantic-herring",
+    "name": "Hareng frit"
+  },
+  {
+    "key": "en:smoked-atlantic-herring-in-oil",
+    "name": "Hareng fumé à l'huile"
+  },
+  {
+    "key": "en:plain-smoked-atlantic-herring",
+    "name": "Hareng fumé au naturel"
+  },
+  {
+    "key": "en:oily-atlantic-herring",
+    "name": "Hareng gras"
+  },
+  {
+    "key": "en:grilled-atlantic-herring",
+    "name": "Hareng grillé"
+  },
+  {
+    "key": "en:lean-atlantic-herring",
+    "name": "Hareng maigre"
   },
   {
     "key": "en:herring",
@@ -30,6 +62,14 @@
   {
     "key": "en:pickled-herring",
     "name": "Harengs marinés"
+  },
+  {
+    "key": "fr:haricot-de-castelnaudary",
+    "name": "Haricot de Castelnaudary"
+  },
+  {
+    "key": "fr:haricot-tarbais",
+    "name": "Haricot tarbais"
   },
   {
     "key": "en:common-beans",
@@ -52,7 +92,7 @@
     "name": "Haricots azukis"
   },
   {
-    "key": "fr:haricots-beurre-en-conserve",
+    "key": "en:canned-butter-beans",
     "name": "Haricots beurre en conserve"
   },
   {
@@ -60,12 +100,28 @@
     "name": "Haricots beurre surgelés"
   },
   {
+    "key": "en:frozen-raw-butter-beans",
+    "name": "Haricots beurre surgelés crus"
+  },
+  {
     "key": "en:white-beans",
     "name": "Haricots blancs"
   },
   {
+    "key": "en:canned-haricot-beans-with-tomato-sauce",
+    "name": "Haricots blancs à la sauce tomate en conserve"
+  },
+  {
+    "key": "en:cooked-haricot-beans",
+    "name": "Haricots blancs cuits"
+  },
+  {
     "key": "en:canned-white-common-beans",
     "name": "Haricots blancs en conserve"
+  },
+  {
+    "key": "en:dry-haricot-beans",
+    "name": "Haricots blancs secs"
   },
   {
     "key": "en:coco-white-beans",
@@ -92,24 +148,48 @@
     "name": "Haricots en conserve"
   },
   {
+    "key": "en:frozen-flageolet-beans",
+    "name": "Haricots flageolets surgelés"
+  },
+  {
     "key": "en:mat-beans",
     "name": "Haricots mat"
+  },
+  {
+    "key": "fr:haricots-mavromatika",
+    "name": "Haricots Mavromatika"
   },
   {
     "key": "en:mung-beans",
     "name": "Haricots mungo"
   },
   {
+    "key": "en:cooked-mung-beans",
+    "name": "Haricots mungo cuits"
+  },
+  {
+    "key": "en:dry-mung-beans",
+    "name": "Haricots mungo secs"
+  },
+  {
+    "key": "en:sprouted-mung-beans",
+    "name": "Haricots mungos germés"
+  },
+  {
     "key": "en:black-beans",
     "name": "Haricots noirs"
   },
   {
-    "key": "fr:haricots-noirs-en-conserve",
+    "key": "en:canned-black-beans",
     "name": "Haricots noirs en conserve"
   },
   {
     "key": "en:pinto-beans",
     "name": "Haricots pinto"
+  },
+  {
+    "key": "en:flat-beans",
+    "name": "Haricots plats"
   },
   {
     "key": "fr:haricots-prepares",
@@ -124,16 +204,20 @@
     "name": "Haricots riz"
   },
   {
-    "key": "en:red-kidney-beans",
-    "name": "Haricots rouges"
-  },
-  {
     "key": "en:red-beans",
     "name": "Haricots rouges"
   },
   {
-    "key": "en:canned-kidney-common-beans",
+    "key": "en:cooked-red-kidney-beans",
+    "name": "Haricots rouges cuits"
+  },
+  {
+    "key": "en:canned-red-kidney-beans",
     "name": "Haricots rouges en conserve"
+  },
+  {
+    "key": "en:dried-red-kidney-beans",
+    "name": "Haricots rouges secs"
   },
   {
     "key": "en:frozen-common-beans",
@@ -148,12 +232,20 @@
     "name": "Haricots urd"
   },
   {
-    "key": "en:fresh-green-beans",
+    "key": "en:green-beans",
     "name": "Haricots verts"
+  },
+  {
+    "key": "en:cooked-french-beans",
+    "name": "Haricots verts cuits"
   },
   {
     "key": "en:canned-green-beans",
     "name": "Haricots verts en conserve"
+  },
+  {
+    "key": "en:fresh-green-beans",
+    "name": "Haricots verts frais"
   },
   {
     "key": "en:canned-flat-green-beans",
@@ -172,6 +264,10 @@
     "name": "Haricots verts surgelés"
   },
   {
+    "key": "en:frozen-precooked-green-beans",
+    "name": "Haricots verts surgelés précuits"
+  },
+  {
     "key": "en:harissa-sauces",
     "name": "Harissas"
   },
@@ -180,8 +276,16 @@
     "name": "Harpagophyton"
   },
   {
+    "key": "en:herring-oils",
+    "name": "Huiles de hareng"
+  },
+  {
     "key": "fr:masa-harina",
     "name": "Masa Harina"
+  },
+  {
+    "key": "en:bean-dishes",
+    "name": "Plats à base de haricots"
   },
   {
     "key": "en:canned-mung-bean-sprouts",
@@ -192,7 +296,11 @@
     "name": "Pousses de haricot mungo frais"
   },
   {
-    "key": "fr:purees-de-haricots-verts",
+    "key": "en:french-bean-puree",
     "name": "Purées de haricots verts"
+  },
+  {
+    "key": "en:bean-spreads",
+    "name": "Tartinades de haricots"
   }
 ]

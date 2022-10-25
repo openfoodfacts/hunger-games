@@ -4,12 +4,12 @@
     "name": "Aceites de avellanas"
   },
   {
-    "key": "en:hazelnuts",
-    "name": "Avellanas"
+    "key": "es:avellana-de-reus",
+    "name": "Avellana de Reus"
   },
   {
-    "key": "en:raw-hazelnuts",
-    "name": "Avellanas crudas"
+    "key": "en:hazelnuts",
+    "name": "Avellanas"
   },
   {
     "key": "en:caramelized-hazelnuts",
@@ -20,15 +20,11 @@
     "name": "Avellanas sin cáscara"
   },
   {
-    "key": "en:shelled-raw-hazelnuts",
-    "name": "Avellanas sin cáscara crudas"
-  },
-  {
-    "key": "en:shelled-raw-hazelnuts-with-skin",
+    "key": "en:shelled-hazelnuts-with-skin",
     "name": "Avellanas sin cáscara crudas con piel"
   },
   {
-    "key": "en:blanched-shelled-raw-hazelnuts",
+    "key": "en:blanched-shelled-hazelnuts",
     "name": "Avellanas sin cáscara crudas sin piel"
   },
   {
@@ -44,10 +40,6 @@
     "name": "Avellanas tostadas sin piel"
   },
   {
-    "key": "en:avena",
-    "name": "Avena"
-  },
-  {
     "key": "en:puffed-oat",
     "name": "Avena inflada"
   },
@@ -60,15 +52,35 @@
     "name": "Aves"
   },
   {
+    "key": "en:cooked-poultries",
+    "name": "Aves cocidas"
+  },
+  {
     "key": "en:avocado-and-salmon-sushis",
     "name": "Avocado and salmon sushis"
+  },
+  {
+    "key": "en:avocado-pulp",
+    "name": "Avocado pulp"
+  },
+  {
+    "key": "en:cereal-bar-with-almonds-or-hazelnuts",
+    "name": "Barrita de cereales con almendras o avellanas"
+  },
+  {
+    "key": "en:cereal-bar-with-hazelnuts",
+    "name": "Barrita de cereales con avellanas"
   },
   {
     "key": "en:oat-milks",
     "name": "Bebidas de avena"
   },
   {
-    "key": "en:milk-chocolate-with-hazelnuts",
+    "key": "es:carne-de-avila",
+    "name": "Carne de Ávila"
+  },
+  {
+    "key": "en:milk-chocolates-with-hazelnuts",
     "name": "Chocolate con leche y avellanas"
   },
   {
@@ -84,7 +96,11 @@
     "name": "Comidas de aves"
   },
   {
-    "key": "en:oat-flakes",
+    "key": "en:chocolate-and-hazelnut-cookies",
+    "name": "Cookies con chocolate y avellanas"
+  },
+  {
+    "key": "en:rolled-oats",
     "name": "Copos de avena"
   },
   {
@@ -96,12 +112,20 @@
     "name": "Cremas de cacao y avellanas"
   },
   {
+    "key": "en:oatmeal-cookies",
+    "name": "Galletas de avena"
+  },
+  {
     "key": "en:oat-groats",
     "name": "Grañones de avena"
   },
   {
     "key": "en:oat-flours",
     "name": "Harinas de avena"
+  },
+  {
+    "key": "es:judias-de-el-barco-de-avila",
+    "name": "Judías de El Barco de Ávila"
   },
   {
     "key": "en:powdered-hazelnut-milks",

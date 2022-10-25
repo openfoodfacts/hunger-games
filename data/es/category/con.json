@@ -16,6 +16,10 @@
     "name": "Acelgas troceadas congeladas"
   },
   {
+    "key": "en:flavored-sparkling-waters",
+    "name": "Agua con gas aromatizada"
+  },
+  {
     "key": "en:frozen-avocados",
     "name": "Aguacates congelados"
   },
@@ -84,7 +88,7 @@
     "name": "Alubias congeladas"
   },
   {
-    "key": "en:canned-kidney-common-beans",
+    "key": "en:canned-red-kidney-beans",
     "name": "Alubias rojas cocidas en conserva"
   },
   {
@@ -112,12 +116,24 @@
     "name": "Atun en conserva"
   },
   {
-    "key": "en:shelled-raw-hazelnuts-with-skin",
+    "key": "en:shelled-hazelnuts-with-skin",
     "name": "Avellanas sin cáscara crudas con piel"
   },
   {
     "key": "en:roasted-hazelnuts-with-skin",
     "name": "Avellanas tostadas con piel"
+  },
+  {
+    "key": "en:cereal-bar-with-almonds-or-hazelnuts",
+    "name": "Barrita de cereales con almendras o avellanas"
+  },
+  {
+    "key": "en:cereal-bar-with-hazelnuts",
+    "name": "Barrita de cereales con avellanas"
+  },
+  {
+    "key": "en:chocolate-cereal-bars",
+    "name": "Barritas de cereales con chocolate"
   },
   {
     "key": "en:beverages-with-cranberry",
@@ -148,6 +164,10 @@
     "name": "Bebidas de soja con vainilla"
   },
   {
+    "key": "en:beers-with-low-alcohol-content",
+    "name": "Beers with low alcohol-content"
+  },
+  {
     "key": "en:frozen-aubergines",
     "name": "Berenjenas congeladas"
   },
@@ -168,8 +188,12 @@
     "name": "Boletos comestibles troceados congelados"
   },
   {
-    "key": "en:frozen-broccoli-florets",
-    "name": "Brócoli en floretes congelado"
+    "key": "en:frozen-broccolis",
+    "name": "Brócolis congelados"
+  },
+  {
+    "key": "en:butter-oil-or-concentrated-butter",
+    "name": "Butter oil or concentrated butter"
   },
   {
     "key": "en:frozen-zucchini",
@@ -186,6 +210,10 @@
   {
     "key": "en:frozen-pumpkins",
     "name": "Calabazas congeladas"
+  },
+  {
+    "key": "en:camembert-with-calvados",
+    "name": "Camembert con Calvados"
   },
   {
     "key": "en:dolce-gusto-compatible-coffee-capsules",
@@ -240,6 +268,14 @@
     "name": "Cebollino congelado"
   },
   {
+    "key": "en:cereals-with-fruits",
+    "name": "Cereales con frutas"
+  },
+  {
+    "key": "en:cereals-with-honey",
+    "name": "Cereales con miel"
+  },
+  {
     "key": "en:frozen-cereals",
     "name": "Cereales congelados"
   },
@@ -280,6 +316,10 @@
     "name": "Champiñones laminados en conserva"
   },
   {
+    "key": "en:cheesecakes-with-fruits",
+    "name": "Cheesecake con fruta"
+  },
+  {
     "key": "en:chili-con-carne",
     "name": "Chili con carne"
   },
@@ -288,8 +328,28 @@
     "name": "Chips de patatas fritas con sabores"
   },
   {
-    "key": "en:milk-chocolate-with-hazelnuts",
+    "key": "en:milk-chocolates-with-almonds",
+    "name": "Chocalte con leche almendrado"
+  },
+  {
+    "key": "en:milk-chocolates-with-hazelnuts",
     "name": "Chocolate con leche y avellanas"
+  },
+  {
+    "key": "en:chocolate-confectioneries-filled-with-praline",
+    "name": "Chocolate confectioneries filled with praline"
+  },
+  {
+    "key": "en:chocolate-confectioneries-filled-with-wafer",
+    "name": "Chocolate confectioneries filled with wafer"
+  },
+  {
+    "key": "en:chocolate-confectionery-with-dairy-filling",
+    "name": "Chocolate confectionery with dairy filling"
+  },
+  {
+    "key": "en:dark-chocolates-with-ginger",
+    "name": "Chocolate negro con jengibre"
   },
   {
     "key": "en:chocolate-mint-ice-cream-cones",
@@ -372,12 +432,16 @@
     "name": "Coles de Bruselas en conserva"
   },
   {
-    "key": "en:canned-cauliflower",
+    "key": "en:canned-cauliflowers",
     "name": "Coliflor en conserva"
   },
   {
     "key": "en:frozen-cauliflower-florets",
     "name": "Coliflores en floretes congeladas"
+  },
+  {
+    "key": "en:meals-with-cod",
+    "name": "Comidas con bacalao"
   },
   {
     "key": "en:meals-with-meat",
@@ -408,12 +472,28 @@
     "name": "Comidas preparadas en conserva"
   },
   {
-    "key": "en:condensed-milks",
-    "name": "Condensed milks"
+    "key": "es:conca-de-barbera",
+    "name": "Conca de Barberà"
+  },
+  {
+    "key": "en:concentrate-syrup-without-sugar-and-with-artificial-sweeteners",
+    "name": "Concentrate syrup without sugar and with artificial sweeteners"
+  },
+  {
+    "key": "en:conchiglie",
+    "name": "Conchiglie"
+  },
+  {
+    "key": "es:condado-de-huelva",
+    "name": "Condado de Huelva"
   },
   {
     "key": "en:condiments",
     "name": "Condimentos"
+  },
+  {
+    "key": "en:cone-wafer-for-ice-cream",
+    "name": "Cone wafer for ice cream"
   },
   {
     "key": "en:chocolate-rabbits",
@@ -424,8 +504,20 @@
     "name": "Confectioneries of Nord-Pas-de-Calais"
   },
   {
+    "key": "en:apricot-jams",
+    "name": "Confituras de albaricoque"
+  },
+  {
     "key": "en:frozen-foods",
     "name": "Congelados"
+  },
+  {
+    "key": "en:conger",
+    "name": "Conger"
+  },
+  {
+    "key": "en:connemara-hill-lamb",
+    "name": "Connemara Hill Lamb"
   },
   {
     "key": "en:ice-cream-cones",
@@ -448,8 +540,32 @@
     "name": "Conservas de pescado"
   },
   {
+    "key": "en:conwy-mussels",
+    "name": "Conwy Mussels"
+  },
+  {
+    "key": "en:chocolate-chip-cookies",
+    "name": "Cookies con chocolate"
+  },
+  {
+    "key": "en:cookies-with-milk-chocolate",
+    "name": "Cookies con chocolate con leche"
+  },
+  {
+    "key": "en:chocolate-and-hazelnut-cookies",
+    "name": "Cookies con chocolate y avellanas"
+  },
+  {
+    "key": "en:cereal-flakes-with-chocolate",
+    "name": "Copos de cereales con chocolate"
+  },
+  {
     "key": "en:frozen-artichoke-hearts",
     "name": "Corazones de alcachofas congelados"
+  },
+  {
+    "key": "en:dark-chocolate-filled-with-mint-confectionery",
+    "name": "Dark chocolate filled with mint confectionery"
   },
   {
     "key": "en:whole-dates",
@@ -458,6 +574,10 @@
   {
     "key": "en:dishes-that-may-contain-horse-meat",
     "name": "Dishes that may contain horse meat"
+  },
+  {
+    "key": "en:double-concentrate-tomato-paste",
+    "name": "Double concentrate tomato paste"
   },
   {
     "key": "en:duck-confit",
@@ -540,7 +660,15 @@
     "name": "Fresas congeladas"
   },
   {
-    "key": "en:candied-fruit",
+    "key": "en:fruit-confectioneries",
+    "name": "Fruit confectioneries"
+  },
+  {
+    "key": "en:fruit-pies-with-confectioner-s-custard",
+    "name": "Fruit pies with confectioner's custard"
+  },
+  {
+    "key": "en:candied-fruits",
     "name": "Frutas confitadas"
   },
   {
@@ -568,7 +696,7 @@
     "name": "Frutos de cáscara en conserva"
   },
   {
-    "key": "es:galletas-con-tableta-de-chocolate",
+    "key": "en:biscuit-with-a-chocolate-bar-covering",
     "name": "Galletas con tableta de chocolate"
   },
   {
@@ -728,6 +856,18 @@
     "name": "Lasaña congelada"
   },
   {
+    "key": "en:condensed-milks",
+    "name": "Leche condensada"
+  },
+  {
+    "key": "en:baby-follow-on-milk-from-2-years",
+    "name": "Leche de continuación para bebés a partir de 2 años"
+  },
+  {
+    "key": "en:baby-follow-on-milk-from-3-years",
+    "name": "Leche de continuación para bebés a partir de 3 años"
+  },
+  {
     "key": "en:frozen-legumes",
     "name": "Leguminosas congeladas"
   },
@@ -772,12 +912,28 @@
     "name": "Mantecados y polvorones con margarina"
   },
   {
+    "key": "en:salted-butters",
+    "name": "Mantequilla con sal"
+  },
+  {
     "key": "en:salted-margarines",
     "name": "Margarinas con sal"
   },
   {
+    "key": "en:marinated-anchovy-fillets-with-confit-lemon",
+    "name": "Marinated anchovy fillets with confit lemon"
+  },
+  {
+    "key": "en:frozen-seafood",
+    "name": "Marisco congelado"
+  },
+  {
     "key": "en:sunflower-oil-mayonnaises",
     "name": "Mayonesas con aceite de girasol"
+  },
+  {
+    "key": "en:mayonnaise-with-caramelized-onion",
+    "name": "Mayonesas con cebolla caramelizada"
   },
   {
     "key": "en:frozen-mint",
@@ -792,8 +948,8 @@
     "name": "Mermeladas y confituras artesanales"
   },
   {
-    "key": "en:apricot-jams",
-    "name": "Mermeladas y confituras de albaricoque"
+    "key": "en:sea-buckthorn-jams",
+    "name": "Mermeladas y confituras d'espino amarillo"
   },
   {
     "key": "en:bilberries-jams",
@@ -824,7 +980,7 @@
     "name": "Mermeladas y confituras de clementinas"
   },
   {
-    "key": "en:flower-jams",
+    "key": "en:flower-preserves",
     "name": "Mermeladas y confituras de flores"
   },
   {
@@ -834,10 +990,6 @@
   {
     "key": "en:strawberry-jams",
     "name": "Mermeladas y confituras de fresa"
-  },
-  {
-    "key": "en:fruit-jams",
-    "name": "Mermeladas y confituras de frutas"
   },
   {
     "key": "en:berry-jams",
@@ -888,6 +1040,10 @@
     "name": "Mermeladas y confituras de melón"
   },
   {
+    "key": "en:blackberry-jams",
+    "name": "Mermeladas y confituras de mora"
+  },
+  {
     "key": "en:orange-jams",
     "name": "Mermeladas y confituras de naranja"
   },
@@ -900,8 +1056,12 @@
     "name": "Mermeladas y confituras de peras"
   },
   {
-    "key": "en:rose-petal-jams",
+    "key": "en:rose-petal-preserves",
     "name": "Mermeladas y confituras de pétalos de rosas"
+  },
+  {
+    "key": "en:sweet-pepper-jams",
+    "name": "Mermeladas y confituras de pimiento"
   },
   {
     "key": "en:pineapple-jams",
@@ -916,16 +1076,12 @@
     "name": "Mermeladas y confituras de ruibarbo"
   },
   {
-    "key": "en:tomate-jams",
+    "key": "en:tomato-jams",
     "name": "Mermeladas y confituras de tomate"
   },
   {
     "key": "en:grape-jams",
     "name": "Mermeladas y confituras de uvas"
-  },
-  {
-    "key": "en:vegetable-jams",
-    "name": "Mermeladas y confituras de verduras y hortalizas"
   },
   {
     "key": "en:blackcurrant-jams",
@@ -936,7 +1092,7 @@
     "name": "Mermeladas y confituras dietéticas"
   },
   {
-    "key": "en:light-jams",
+    "key": "en:low-sugar-fruit-jam",
     "name": "Mermeladas y confituras ligeras"
   },
   {
@@ -976,12 +1132,16 @@
     "name": "Mezclas de vegetales congelados"
   },
   {
-    "key": "en:frozen-vegetable-mixes",
+    "key": "en:frozen-mixed-vegetables",
     "name": "Mezclas de verduras y hortalizas congeladas"
   },
   {
     "key": "es:mezclas-para-sofrito-congelada",
     "name": "Mezclas para sofrito congelada"
+  },
+  {
+    "key": "en:mini-ice-cream-cone",
+    "name": "Mini ice cream cone"
   },
   {
     "key": "en:frozen-blackberries",
@@ -1008,6 +1168,10 @@
     "name": "Mueslis con frutas"
   },
   {
+    "key": "en:multivitamin-mixed-fruits-juice-reconstituted-from-a-concentrate",
+    "name": "Multivitamin mixed fruits juice reconstituted from a concentrate"
+  },
+  {
     "key": "en:canned-red-pine-mushrooms",
     "name": "Níscalos en conserva"
   },
@@ -1016,8 +1180,16 @@
     "name": "Palmitos en conserva"
   },
   {
-    "key": "en:sliced-breads-with-cereals",
+    "key": "en:multigrain-sliced-breads",
     "name": "Panes de molde con cereales"
+  },
+  {
+    "key": "fr:panna-cotta-sur-lit-de-fruit-de-la-passion",
+    "name": "Pannacotta con maracuya"
+  },
+  {
+    "key": "en:frozen-fried-potatoes",
+    "name": "Papas fritas congeladas"
   },
   {
     "key": "es:parrilladas-de-verduras-congelada",
@@ -1036,12 +1208,20 @@
     "name": "Patatas en conserva"
   },
   {
+    "key": "en:frozen-fries",
+    "name": "Patatas fritas congeladas"
+  },
+  {
     "key": "en:frozen-baked-potatoes",
     "name": "Patatas panadera congeladas"
   },
   {
     "key": "en:frozen-parsley",
     "name": "Perejil congelado"
+  },
+  {
+    "key": "en:frozen-fishes",
+    "name": "Pescado congelado"
   },
   {
     "key": "en:frozen-yellow-peppers",
@@ -1060,7 +1240,7 @@
     "name": "Pimientos rojos congelados"
   },
   {
-    "key": "en:canned-red-peppers",
+    "key": "en:canned-sweet-red-peppers",
     "name": "Pimientos rojos en conserva"
   },
   {
@@ -1088,6 +1268,10 @@
     "name": "Pizza y tartas congeladas"
   },
   {
+    "key": "en:tuna-pizzas",
+    "name": "Pizzas con atún"
+  },
+  {
     "key": "en:frozen-pizzas",
     "name": "Pizzas congeladas"
   },
@@ -1096,7 +1280,7 @@
     "name": "Plantas aromáticas congeladas"
   },
   {
-    "key": "en:prepared-dishes-with-scallops",
+    "key": "en:dishes-with-scallops",
     "name": "Platos preparados con vieiras"
   },
   {
@@ -1116,12 +1300,16 @@
     "name": "Postres de arroz con cacao"
   },
   {
-    "key": "en:cocoa-soy-desserts",
+    "key": "en:chocolate-soy-desserts",
     "name": "Postres de soja con cacao"
   },
   {
     "key": "en:vanilla-soy-desserts",
     "name": "Postres de soja con vainilla"
+  },
+  {
+    "key": "en:dairy-chocolate-desserts",
+    "name": "Postres lácteos con chocolate"
   },
   {
     "key": "en:frozen-meat-preparations",
@@ -1136,8 +1324,20 @@
     "name": "Productos con sal reducida"
   },
   {
+    "key": "en:frozen-leeks",
+    "name": "Puerro congelado"
+  },
+  {
     "key": "en:canned-leeks",
     "name": "Puerros en conserva"
+  },
+  {
+    "key": "en:soft-cheeses-with-bloomy-rind",
+    "name": "Quesos blandos con corteza florecida"
+  },
+  {
+    "key": "en:cheeses-with-walnuts",
+    "name": "Quesos con nuez"
   },
   {
     "key": "en:frozen-chanterelle-mushrooms",
@@ -1146,6 +1346,10 @@
   {
     "key": "en:canned-chanterelles",
     "name": "Rebozuelos en conserva"
+  },
+  {
+    "key": "en:reheated-duck-confit-conserved-in-rendered-fat-without-skin",
+    "name": "Reheated duck confit conserved in rendered fat without skin"
   },
   {
     "key": "en:canned-beet",
@@ -1204,12 +1408,20 @@
     "name": "Sardinas en conserva"
   },
   {
-    "key": "en:unshelled-pumpkin-seeds",
-    "name": "Semillas de calabaza con cáscara"
+    "key": "en:sea-igneous-white-salt-for-human-consumption-with-added-iodine",
+    "name": "Sea igneous white salt for human consumption with added iodine"
   },
   {
-    "key": "en:raw-unshelled-pumpkin-seeds",
-    "name": "Semillas de calabaza con cáscara crudas"
+    "key": "en:sea-igneous-white-salt-for-human-consumption-with-added-iodine-and-fluoride",
+    "name": "Sea igneous white salt for human consumption with added iodine and fluoride"
+  },
+  {
+    "key": "en:sea-igneous-white-salt-for-human-consumption-without-enrichment",
+    "name": "Sea igneous white salt for human consumption without enrichment"
+  },
+  {
+    "key": "en:unshelled-pumpkin-seeds",
+    "name": "Semillas de calabaza con cáscara"
   },
   {
     "key": "en:roasted-unshelled-pumpkin-seeds",
@@ -1218,10 +1430,6 @@
   {
     "key": "en:unshelled-sunflower-seeds",
     "name": "Semillas de girasol con cáscara"
-  },
-  {
-    "key": "en:raw-unshelled-sunflower-seeds",
-    "name": "Semillas de girasol con cáscara crudas"
   },
   {
     "key": "en:roasted-unshelled-sunflower-seeds",
@@ -1280,6 +1488,14 @@
     "name": "Strawberry-Vanilla ice cream cones"
   },
   {
+    "key": "en:sugar-coated-chocolate-confectioneries",
+    "name": "Sugar coated chocolate confectioneries"
+  },
+  {
+    "key": "en:tabbouleh-with-olive-oil",
+    "name": "Tabulé con aceite de oliva"
+  },
+  {
     "key": "en:plant-based-ice-cream-tubs",
     "name": "Tarrinas y bloques de helado con leche vegetal"
   },
@@ -1332,12 +1548,12 @@
     "name": "Trufas en conserva"
   },
   {
-    "key": "en:black-chocolate-turron-with-almonds",
-    "name": "Turrones de chocolate negro con almendras"
+    "key": "en:chocolate-turron-with-almonds",
+    "name": "Turrones de chocolate con almendras"
   },
   {
-    "key": "en:black-chocolate-turron-with-puffed-rice",
-    "name": "Turrones de chocolate negro con arroz inflado"
+    "key": "en:chocolate-turron-with-puffed-rice",
+    "name": "Turrones de chocolate con arroz inflado"
   },
   {
     "key": "en:vanilla-ice-cream-cones",
@@ -1356,8 +1572,88 @@
     "name": "Verduras y hortalizas en conserva"
   },
   {
+    "key": "es:vinagre-del-condado-de-huelva",
+    "name": "Vinagre del Condado de Huelva"
+  },
+  {
+    "key": "en:whole-condensed-milk-with-sugar",
+    "name": "Whole condensed milk with sugar"
+  },
+  {
+    "key": "en:whole-condensed-milk-without-sugar",
+    "name": "Whole condensed milk without sugar"
+  },
+  {
+    "key": "en:apricot-yogurts",
+    "name": "Yogures con albaricoque"
+  },
+  {
+    "key": "en:blueberry-yogurts",
+    "name": "Yogures con arándanos"
+  },
+  {
+    "key": "en:yogurts-with-cereals",
+    "name": "Yogures con cereales"
+  },
+  {
+    "key": "en:plum-yogurts",
+    "name": "Yogures con ciruela"
+  },
+  {
+    "key": "en:prune-yogurts",
+    "name": "Yogures con ciruela pasa"
+  },
+  {
+    "key": "en:raspberry-yogurts",
+    "name": "Yogures con frambuesa"
+  },
+  {
+    "key": "en:strawberry-yogurts",
+    "name": "Yogures con fresa"
+  },
+  {
+    "key": "en:lemon-yogurts",
+    "name": "Yogures con limón"
+  },
+  {
+    "key": "en:mango-yogurts",
+    "name": "Yogures con mango"
+  },
+  {
+    "key": "en:apple-yogurts",
+    "name": "Yogures con manzana"
+  },
+  {
+    "key": "en:peach-yogurts",
+    "name": "Yogures con melocotón"
+  },
+  {
+    "key": "en:blackberry-yogurts",
+    "name": "Yogures con mora"
+  },
+  {
+    "key": "en:pear-yogurts",
+    "name": "Yogures con pera"
+  },
+  {
+    "key": "en:pineapple-yogurts",
+    "name": "Yogures con piña"
+  },
+  {
+    "key": "en:banana-yogurts",
+    "name": "Yogures con plátano"
+  },
+  {
+    "key": "en:chocolate-chunks-yogurts",
+    "name": "Yogures con trozos de chocolate"
+  },
+  {
     "key": "en:fruit-yogurts-with-fruit-chunks",
     "name": "Yogures de fruta con trozos de fruta"
+  },
+  {
+    "key": "en:apricot-soy-yogurts",
+    "name": "Yogures de soja con albaricoque"
   },
   {
     "key": "en:blueberry-soy-yogurts",
@@ -1366,6 +1662,10 @@
   {
     "key": "en:cherry-soy-yogurts",
     "name": "Yogures de soja con cerezas"
+  },
+  {
+    "key": "en:raspberry-soy-yogurts",
+    "name": "Yogures de soja con frambuesa"
   },
   {
     "key": "en:strawberry-soy-yogurts",
@@ -1398,6 +1698,10 @@
   {
     "key": "en:banana-soy-yogurts",
     "name": "Yogures de soja con plátano"
+  },
+  {
+    "key": "en:honey-yogurts",
+    "name": "Yougures con miel"
   },
   {
     "key": "en:frozen-baby-carrots",

@@ -28,8 +28,8 @@
     "name": "Asperges vertes en conserve"
   },
   {
-    "key": "en:frozen-whole-green-asparagus",
-    "name": "Asperges vertes entières congelées"
+    "key": "en:jam-doughnuts",
+    "name": "Beignets à la confiture"
   },
   {
     "key": "en:canned-beet",
@@ -40,6 +40,14 @@
     "name": "Bettes en conserve"
   },
   {
+    "key": "en:concentrate-syrup-without-sugar-and-with-artificial-sweeteners",
+    "name": "Boisson concentrée à diluer sans sucres ajoutés avec édulcorants"
+  },
+  {
+    "key": "en:dehydrated-broth-with-meat-and-vegetables",
+    "name": "Bouillon de viande et légumes type pot-au-feu prêt à consommer"
+  },
+  {
     "key": "en:canned-carrots",
     "name": "Carottes en conserve"
   },
@@ -48,8 +56,16 @@
     "name": "Cassoulets au confit de canard"
   },
   {
+    "key": "en:semi-preserved-caviar",
+    "name": "Caviar en semi-conserve"
+  },
+  {
     "key": "en:canned-celery",
     "name": "Céleri en conserve"
+  },
+  {
+    "key": "en:canned-celery-stalks",
+    "name": "Céleri-branche en conserve"
   },
   {
     "key": "en:canned-porcini-mushrooms",
@@ -84,6 +100,10 @@
     "name": "Champignons shiitake en conserve"
   },
   {
+    "key": "en:canned-chestnut",
+    "name": "Châtaigne en conserve"
+  },
+  {
     "key": "en:chili-con-carne",
     "name": "Chili con carne"
   },
@@ -96,12 +116,16 @@
     "name": "Choux en conserve"
   },
   {
-    "key": "en:canned-cauliflower",
+    "key": "en:canned-cauliflowers",
     "name": "Choux-fleurs en conserve"
   },
   {
-    "key": "fr:citron-confit",
+    "key": "en:candied-lemon",
     "name": "Citron confit"
+  },
+  {
+    "key": "en:canned-artichoke-hearts",
+    "name": "Coeurs d'artichaut en conserve"
   },
   {
     "key": "en:canned-hearts-of-palm",
@@ -112,8 +136,24 @@
     "name": "Concentrés de tomates"
   },
   {
+    "key": "en:conchiglie",
+    "name": "Conchiglie"
+  },
+  {
+    "key": "en:fresh-cucumbers",
+    "name": "Concombre frais"
+  },
+  {
     "key": "en:cucumbers",
     "name": "Concombres"
+  },
+  {
+    "key": "fr:concombres-a-la-creme",
+    "name": "Concombres à la crème"
+  },
+  {
+    "key": "fr:concombres-au-fromage-blanc",
+    "name": "Concombres au fromage blanc"
   },
   {
     "key": "en:condiments",
@@ -128,8 +168,8 @@
     "name": "Condrieu"
   },
   {
-    "key": "en:ice-cream-cones",
-    "name": "Cônes"
+    "key": "en:cone-wafer-for-ice-cream",
+    "name": "Cône pour glace"
   },
   {
     "key": "en:chocolate-pistachio-ice-cream-cones",
@@ -142,6 +182,14 @@
   {
     "key": "fr:cones-et-batonnets-surgeles",
     "name": "Cônes et batonnets surgelés"
+  },
+  {
+    "key": "en:ice-cream-cones",
+    "name": "Cônes glacés"
+  },
+  {
+    "key": "en:plant-based-ice-cream-cones",
+    "name": "Cônes glacés végétaux"
   },
   {
     "key": "en:chocolate-mint-ice-cream-cones",
@@ -164,6 +212,14 @@
     "name": "Confiseries"
   },
   {
+    "key": "en:sugar-coated-chocolate-confectioneries",
+    "name": "Confiseries au chocolat dragéifiées"
+  },
+  {
+    "key": "en:fruit-confectioneries",
+    "name": "Confiseries aux fruits"
+  },
+  {
     "key": "en:chocolate-candies",
     "name": "Confiseries chocolatées"
   },
@@ -184,12 +240,28 @@
     "name": "Confiseries du Nord-Pas-de-Calais"
   },
   {
+    "key": "en:reheated-duck-confit-conserved-in-rendered-fat-without-skin",
+    "name": "Confit de canard sans peau réchauffé"
+  },
+  {
+    "key": "en:preserved-pork-liver",
+    "name": "Confit de foie de porc"
+  },
+  {
+    "key": "en:preserved-poultry-liver",
+    "name": "Confit de foie de volaille"
+  },
+  {
     "key": "en:goose-confits",
     "name": "Confits d'oie"
   },
   {
     "key": "en:onion-chutneys",
     "name": "Confits d'oignons"
+  },
+  {
+    "key": "en:beer-jams",
+    "name": "Confits de bière"
   },
   {
     "key": "en:duck-confit",
@@ -200,20 +272,36 @@
     "name": "Confits de figues"
   },
   {
+    "key": "en:flower-preserves",
+    "name": "Confits de fleurs"
+  },
+  {
+    "key": "en:sweet-pepper-chutneys",
+    "name": "Confits de poivrons"
+  },
+  {
     "key": "en:apple-chutneys",
     "name": "Confits de pommme"
   },
   {
-    "key": "en:rose-petal-jams",
-    "name": "Confiture de roses"
+    "key": "en:rose-petal-preserves",
+    "name": "Confits de roses"
+  },
+  {
+    "key": "en:tomato-chutneys",
+    "name": "Confits de tomates"
+  },
+  {
+    "key": "en:wine-jams",
+    "name": "Confits de vin"
+  },
+  {
+    "key": "en:low-sugar-fruit-jam",
+    "name": "Confiture de fruits allégée en sucres"
   },
   {
     "key": "en:jams",
     "name": "Confitures"
-  },
-  {
-    "key": "en:light-jams",
-    "name": "Confitures allégées"
   },
   {
     "key": "en:artisan-jams",
@@ -232,11 +320,19 @@
     "name": "Confitures d'agrumes"
   },
   {
+    "key": "en:lingonberries-jams",
+    "name": "Confitures d'airelles rouges"
+  },
+  {
     "key": "en:pineapple-jams",
     "name": "Confitures d'ananas"
   },
   {
-    "key": "en:rosehip-jam",
+    "key": "en:sea-buckthorn-jams",
+    "name": "Confitures d'argousiers"
+  },
+  {
+    "key": "en:rosehip-jams",
     "name": "Confitures d'églantines"
   },
   {
@@ -276,16 +372,12 @@
     "name": "Confitures de clémentine"
   },
   {
-    "key": "fr:confitures-de-coings",
+    "key": "en:quince-jams",
     "name": "Confitures de coings"
   },
   {
     "key": "en:figs-jams",
     "name": "Confitures de figues"
-  },
-  {
-    "key": "en:flower-jams",
-    "name": "Confitures de fleurs"
   },
   {
     "key": "en:strawberry-jams",
@@ -294,10 +386,6 @@
   {
     "key": "en:raspberry-jams",
     "name": "Confitures de framboises"
-  },
-  {
-    "key": "en:fruit-jams",
-    "name": "Confitures de fruits"
   },
   {
     "key": "en:berry-jams",
@@ -312,6 +400,10 @@
     "name": "Confitures de fruits tropicaux"
   },
   {
+    "key": "en:ginger-preserves",
+    "name": "Confitures de gingembre"
+  },
+  {
     "key": "en:guava-jams",
     "name": "Confitures de goyaves"
   },
@@ -320,12 +412,16 @@
     "name": "Confitures de groseilles"
   },
   {
-    "key": "en:milk-jams",
-    "name": "Confitures de lait"
+    "key": "en:gooseberries-jams",
+    "name": "Confitures de groseilles à maquereaux"
   },
   {
-    "key": "en:vegetable-jams",
-    "name": "Confitures de légumes"
+    "key": "en:kiwi-jams",
+    "name": "Confitures de kiwi"
+  },
+  {
+    "key": "en:milk-jams",
+    "name": "Confitures de lait"
   },
   {
     "key": "en:lychee-jams",
@@ -360,12 +456,24 @@
     "name": "Confitures de papayes"
   },
   {
+    "key": "en:watermelon-jams",
+    "name": "Confitures de pastèque"
+  },
+  {
     "key": "en:peach-jams",
     "name": "Confitures de pêches"
   },
   {
+    "key": "en:cloudberries-jams",
+    "name": "Confitures de plaquebières"
+  },
+  {
     "key": "en:pear-jams",
     "name": "Confitures de poires"
+  },
+  {
+    "key": "en:sweet-pepper-jams",
+    "name": "Confitures de poivron"
   },
   {
     "key": "en:apple-jams",
@@ -392,7 +500,7 @@
     "name": "Confitures de rhubarbe"
   },
   {
-    "key": "en:tomate-jams",
+    "key": "en:tomato-jams",
     "name": "Confitures de tomates"
   },
   {
@@ -400,7 +508,7 @@
     "name": "Confitures diététiques"
   },
   {
-    "key": "en:fruit-preserves",
+    "key": "en:fruit-and-vegetable-preserves",
     "name": "Confitures et marmelades"
   },
   {
@@ -408,8 +516,40 @@
     "name": "Confitures multifruits"
   },
   {
+    "key": "en:conger",
+    "name": "Congre"
+  },
+  {
+    "key": "en:connemara-hill-lamb",
+    "name": "Connemara Hill Lamb"
+  },
+  {
+    "key": "fr:conserve",
+    "name": "Conserve"
+  },
+  {
     "key": "en:canned-foods",
     "name": "Conserves"
+  },
+  {
+    "key": "en:conwy-mussels",
+    "name": "Conwy Mussels"
+  },
+  {
+    "key": "en:christmas-brioche-with-candied-fruits",
+    "name": "Couronne de Noël aux fruits confits"
+  },
+  {
+    "key": "en:canned-vanilla-custard-dessert",
+    "name": "Crème dessert à la vanille en conserve"
+  },
+  {
+    "key": "en:canned-chocolate-custard-dessert",
+    "name": "Crème dessert au chocolat en conserve"
+  },
+  {
+    "key": "en:canned-custard-desserts",
+    "name": "Crèmes dessert en conserve"
   },
   {
     "key": "en:filled-crepes-with-jam",
@@ -424,7 +564,15 @@
     "name": "Cuisses de canard confites"
   },
   {
-    "key": "fr:endives-en-conserve",
+    "key": "en:double-concentrate-tomato-paste",
+    "name": "Double concentré de tomate"
+  },
+  {
+    "key": "en:canned-edamame",
+    "name": "Edamame en conserve"
+  },
+  {
+    "key": "en:canned-belgian-endives",
     "name": "Endives en conserve"
   },
   {
@@ -444,12 +592,24 @@
     "name": "Fèves en conserve"
   },
   {
-    "key": "fr:filets-d-anchois-marines-au-citron-confit",
+    "key": "en:semi-preserved-anchovy-fillets-in-oil",
+    "name": "Filets d'anchois à l'huile en semi-conserve"
+  },
+  {
+    "key": "en:marinated-anchovy-fillets-with-confit-lemon",
     "name": "Filets d'anchois marinés au citron confit"
+  },
+  {
+    "key": "en:mackerel-fillets-with-tomato-sauce",
+    "name": "Filets de maquereau sauce tomate en conserve"
   },
   {
     "key": "en:canned-flageolet-beans",
     "name": "Flageolets en conserve"
+  },
+  {
+    "key": "en:canned-artichoke-base",
+    "name": "Fonds d'artichaut en conserve"
   },
   {
     "key": "en:canned-cheeses",
@@ -460,7 +620,7 @@
     "name": "Fruits à coques en conserve"
   },
   {
-    "key": "en:candied-fruit",
+    "key": "en:candied-fruits",
     "name": "Fruits confits"
   },
   {
@@ -470,6 +630,22 @@
   {
     "key": "en:canned-fruits-in-juice",
     "name": "Fruits en conserve au jus"
+  },
+  {
+    "key": "en:canned-rice-puddings",
+    "name": "Gâteaux de riz en conserve"
+  },
+  {
+    "key": "en:canned-semolina-puddings",
+    "name": "Gâteaux de semoule en conserve"
+  },
+  {
+    "key": "en:gelling-agent-for-jam",
+    "name": "Gélifiant pour confitures"
+  },
+  {
+    "key": "en:preserved-duck-gizzards",
+    "name": "Gésiers de canard confits"
   },
   {
     "key": "en:crystallized-ginger",
@@ -484,8 +660,12 @@
     "name": "Harengs en conserve"
   },
   {
-    "key": "fr:haricots-beurre-en-conserve",
+    "key": "en:canned-butter-beans",
     "name": "Haricots beurre en conserve"
+  },
+  {
+    "key": "en:canned-haricot-beans-with-tomato-sauce",
+    "name": "Haricots blancs à la sauce tomate en conserve"
   },
   {
     "key": "en:canned-white-common-beans",
@@ -500,11 +680,11 @@
     "name": "Haricots en conserve"
   },
   {
-    "key": "fr:haricots-noirs-en-conserve",
+    "key": "en:canned-black-beans",
     "name": "Haricots noirs en conserve"
   },
   {
-    "key": "en:canned-kidney-common-beans",
+    "key": "en:canned-red-kidney-beans",
     "name": "Haricots rouges en conserve"
   },
   {
@@ -584,8 +764,12 @@
     "name": "Jus de tomates à base de concentré"
   },
   {
+    "key": "en:multivitamin-mixed-fruits-juice-reconstituted-from-a-concentrate",
+    "name": "Jus multifruit à base de concentré"
+  },
+  {
     "key": "en:concentrated-multifruit-juices",
-    "name": "Jus multifruits à base de jus concentré"
+    "name": "Jus multifruits à base de concentrés"
   },
   {
     "key": "en:canned-red-pine-mushrooms",
@@ -596,8 +780,20 @@
     "name": "Lactaires sanguins en conserve"
   },
   {
-    "key": "en:extended-shelf-life-milks",
-    "name": "Lait longue conservation"
+    "key": "en:ready-to-feed-baby-follow-on-milk",
+    "name": "Lait 2e âge prêt à consommer"
+  },
+  {
+    "key": "en:whole-condensed-milk-without-sugar",
+    "name": "Lait concentré entier non sucré"
+  },
+  {
+    "key": "en:whole-condensed-milk-with-sugar",
+    "name": "Lait concentré entier sucré"
+  },
+  {
+    "key": "en:ready-to-feed-baby-first-milk",
+    "name": "Laits 1er âge prêts à consommer"
   },
   {
     "key": "en:evaporated-milks",
@@ -620,6 +816,10 @@
     "name": "Laits entiers concentrés"
   },
   {
+    "key": "en:ready-to-feed-baby-milks",
+    "name": "Laits infantiles prêts à consommer"
+  },
+  {
     "key": "en:canned-vegetables",
     "name": "Légumes en conserve"
   },
@@ -628,11 +828,19 @@
     "name": "Légumineuses en conserve"
   },
   {
+    "key": "en:canned-seasoned-lentils",
+    "name": "Lentilles cuisinées en conserve"
+  },
+  {
     "key": "en:canned-lentils",
     "name": "Lentilles en conserve"
   },
   {
-    "key": "fr:macedoines-de-legumes-en-conserve",
+    "key": "en:macaron-filled-with-jam",
+    "name": "Macaron moelleux fourré à la confiture"
+  },
+  {
+    "key": "en:canned-diced-mixed-vegetables",
     "name": "Macédoines de légumes en conserve"
   },
   {
@@ -656,20 +864,32 @@
     "name": "Miels de conifères"
   },
   {
-    "key": "fr:montagny-premier-cru-la-condemine-du-veux-chateau",
-    "name": "Montagny premier cru La Condemine du veux Château"
+    "key": "en:mini-ice-cream-cone",
+    "name": "Mini cône glacé"
   },
   {
-    "key": "fr:moselle-luxembourgeoise-followed-by-the-name-of-the-vine-variety-followed-by-appellation-controlee",
-    "name": "Moselle Luxembourgeoise followed by the name of the vine variety followed by Appellation contrôlée"
+    "key": "fr:montagny-premier-cru-la-condemine-du-vieux-chateau",
+    "name": "Montagny premier cru La Condemine du vieux Château"
   },
   {
     "key": "en:canned-mussels",
     "name": "Moules en conserve"
   },
   {
+    "key": "en:canned-turnips",
+    "name": "Navets en conserve"
+  },
+  {
     "key": "en:cracked-marinated-green-olives",
     "name": "Olives vertes concassées marinées"
+  },
+  {
+    "key": "en:canned-drained-peach-in-light-syrup",
+    "name": "Pêches au sirop léger en conserve"
+  },
+  {
+    "key": "en:canned-peach-in-light-syrup",
+    "name": "Pêches au sirop léger en conserve non égouttées"
   },
   {
     "key": "en:canned-peas",
@@ -682,6 +902,10 @@
   {
     "key": "en:pickled-cucumbers",
     "name": "Pickles de concombres"
+  },
+  {
+    "key": "en:canned-pilchard-in-tomato-sauce",
+    "name": "Pilchard sauce tomate en conserve"
   },
   {
     "key": "en:culinary-plants",
@@ -736,16 +960,28 @@
     "name": "Poivrons rouges congelés"
   },
   {
-    "key": "en:canned-red-peppers",
+    "key": "en:canned-sweet-red-peppers",
     "name": "Poivrons rouges en conserve"
+  },
+  {
+    "key": "en:boiled-peeled-ware-potatoes",
+    "name": "Pommes de terre de conservation sans peau bouillies"
   },
   {
     "key": "en:canned-potatoes",
     "name": "Pommes de terre en conserve"
   },
   {
+    "key": "en:canned-pumpkin",
+    "name": "Potiron en conserve"
+  },
+  {
     "key": "en:canned-alfalfa-sprouts",
-    "name": "Pousses de alfalfa en conserve"
+    "name": "Pousses d'alfalfa en conserve"
+  },
+  {
+    "key": "en:canned-bamboo-shoots",
+    "name": "Pousses de bambou en conserve"
   },
   {
     "key": "en:canned-mung-bean-sprouts",
@@ -768,6 +1004,14 @@
     "name": "Ravioli en conserve"
   },
   {
+    "key": "en:canned-raviolis-filled-with-meat-in-tomato-sauce",
+    "name": "Raviolis à la viande en conserve"
+  },
+  {
+    "key": "en:canned-vegetable-ravioli",
+    "name": "Raviolis aux légumes en conserve"
+  },
+  {
     "key": "fr:rigotte-de-condrieu",
     "name": "Rigotte de Condrieu"
   },
@@ -784,6 +1028,18 @@
     "name": "Romanée-Conti grand cru"
   },
   {
+    "key": "en:canned-prepared-mixed-tuna-and-vegetable-salad",
+    "name": "Salade de thon et légumes en conserve"
+  },
+  {
+    "key": "en:prepared-and-canned-salad-with-meat",
+    "name": "Salades composées en conserve à la viande"
+  },
+  {
+    "key": "en:prepared-and-canned-salad-with-fish",
+    "name": "Salades composées en conserve au poisson"
+  },
+  {
     "key": "en:frozen-salads",
     "name": "Salades congelées"
   },
@@ -792,12 +1048,24 @@
     "name": "Salades de concombres"
   },
   {
+    "key": "fr:salades-de-thon-en-conserve",
+    "name": "Salades de thon en conserve"
+  },
+  {
+    "key": "en:canned-prepared-salads",
+    "name": "Salades préparées en conserve"
+  },
+  {
     "key": "en:canned-salsifis",
     "name": "Salsifis en conserve"
   },
   {
     "key": "en:canned-sardines",
     "name": "Sardines en conserve"
+  },
+  {
+    "key": "en:sauce-pepper-prepacked",
+    "name": "Sauce au poivre condimentaire froide"
   },
   {
     "key": "en:pickled-sausages",
@@ -850,5 +1118,9 @@
   {
     "key": "en:canned-paddy-straw-mushrooms",
     "name": "Volvaire volvacée en conserve"
+  },
+  {
+    "key": "en:candied-orange-zest",
+    "name": "Zeste d'orange confit"
   }
 ]

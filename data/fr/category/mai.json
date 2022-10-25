@@ -8,7 +8,11 @@
     "name": "Asperges pelées à la main"
   },
   {
-    "key": "fr:biscuits-aperitifs-souffles-a-base-de-mais",
+    "key": "en:puffed-salty-snacks-made-from-maize-with-peanuts",
+    "name": "Biscuit apéritif soufflé à base de maïs à la cacahuète"
+  },
+  {
+    "key": "en:puffed-salty-snacks-made-from-maize",
     "name": "Biscuits apéritifs soufflés à base de maïs"
   },
   {
@@ -18,6 +22,22 @@
   {
     "key": "en:maize-milks",
     "name": "Boissons au maïs"
+  },
+  {
+    "key": "en:breakfast-cereals-puffed-corn-with-honey-fortified-with-vitamins-and-chemical-elements",
+    "name": "Boules de maïs soufflées au miel enrichies en vitamines et minéraux"
+  },
+  {
+    "key": "en:breakfast-cereals-puffed-corn-with-honey-not-fortified-with-vitamins-and-chemical-elements",
+    "name": "Boules de maïs soufflées au miel non enrichies en vitamines et minéraux"
+  },
+  {
+    "key": "en:unfilled-breakfast-chocolate-cereals-fortified-with-vitamins-and-chemical-elements",
+    "name": "Céréales chocolatées pour petit déjeuner non fourrées mais enrichies en vitamines et minéraux"
+  },
+  {
+    "key": "en:lean-horse-mackerel",
+    "name": "Chinchard maigre"
   },
   {
     "key": "en:corn-chips",
@@ -32,12 +52,36 @@
     "name": "Eau-de-vie de poiré du Maine"
   },
   {
+    "key": "en:grilled-lean-beef-rib-steak",
+    "name": "Entrecôte de boeuf partie maigre grillée"
+  },
+  {
+    "key": "en:lean-lamb-shoulder",
+    "name": "Epaule d'agneau maigre"
+  },
+  {
+    "key": "en:roasted-lean-lamb-shoulders",
+    "name": "Epaules d'agneau maigres rôties"
+  },
+  {
+    "key": "en:cooked-sweet-corn-on-the-cob",
+    "name": "Epis de Maïs cuit"
+  },
+  {
     "key": "en:cornmeal",
     "name": "Farines de maïs"
   },
   {
     "key": "fr:farines-de-mais-bleue",
     "name": "Farines de maïs bleue"
+  },
+  {
+    "key": "en:pork-tenderloin",
+    "name": "Filet maigre de porc"
+  },
+  {
+    "key": "en:cooked-pork-tenderloin-roast",
+    "name": "Filet maigre de porc en rôti cuit"
   },
   {
     "key": "en:puffed-corn-cakes-with-milk-chocolate",
@@ -60,8 +104,32 @@
     "name": "Grains de maïs surgelés"
   },
   {
+    "key": "en:lean-atlantic-herring",
+    "name": "Hareng maigre"
+  },
+  {
     "key": "en:corn-oils",
     "name": "Huiles de maïs"
+  },
+  {
+    "key": "en:home-made-lemon-juice",
+    "name": "Jus de citron maison"
+  },
+  {
+    "key": "en:home-made-lime-juice",
+    "name": "Jus de citron vert maison"
+  },
+  {
+    "key": "en:home-made-grapefruit-juice",
+    "name": "Jus de pamplemousse maison"
+  },
+  {
+    "key": "en:plain-fermented-skimmed-milk-drink",
+    "name": "Lait fermenté à boire nature maigre"
+  },
+  {
+    "key": "fr:maine-anjou",
+    "name": "Maine-Anjou"
   },
   {
     "key": "en:corn",
@@ -76,6 +144,14 @@
     "name": "Maïs doux en conserve"
   },
   {
+    "key": "en:sweet-corn-on-the-cob",
+    "name": "Maïs doux en épis"
+  },
+  {
+    "key": "en:fresh-sweet-corn",
+    "name": "Maïs doux frais"
+  },
+  {
     "key": "en:canned-corn",
     "name": "Maïs en conserve"
   },
@@ -88,6 +164,14 @@
     "name": "Maïs en épis surgelé"
   },
   {
+    "key": "en:corn-grain",
+    "name": "Maïs en grain"
+  },
+  {
+    "key": "en:fresh-corn",
+    "name": "Maïs frais"
+  },
+  {
     "key": "en:frozen-corn",
     "name": "Maïs surgelé"
   },
@@ -96,12 +180,68 @@
     "name": "Muscadet-Sèvre et Maine"
   },
   {
+    "key": "en:home-made-bread-with-flour-for-home-made-bread-preparation",
+    "name": "Pain blanc maison avec farine pour machine à pain"
+  },
+  {
+    "key": "en:country-style-home-made-bread-with-flour-for-bread-making-machine",
+    "name": "Pain de campagne fait maison avec farine pour machine à pain"
+  },
+  {
+    "key": "en:home-made-toasted-breads",
+    "name": "Pain grillé fait-maison"
+  },
+  {
+    "key": "en:breads-with-corn",
+    "name": "Pains au maïs"
+  },
+  {
     "key": "en:corn-pasta",
     "name": "Pâtes de maïs"
   },
   {
+    "key": "en:plain-corn-flakes-fortified-with-vitamins-and-chemical-elements",
+    "name": "Pétales de maïs natures enrichis en vitamines et minéraux"
+  },
+  {
+    "key": "en:lean-fishes",
+    "name": "Poissons maigres"
+  },
+  {
+    "key": "fr:pommeau-du-maine",
+    "name": "Pommeau du Maine"
+  },
+  {
+    "key": "en:pork-80-20-trimming",
+    "name": "Porc maigre 80/20"
+  },
+  {
+    "key": "en:pork-90-10-trimming",
+    "name": "Porc maigre 90/10"
+  },
+  {
     "key": "en:lean-quark",
     "name": "Quark maigre"
+  },
+  {
+    "key": "en:prepared-potatoes-salad-home-made",
+    "name": "Salade de pommes de terre maison"
+  },
+  {
+    "key": "en:baguette-sandwiches-with-tuna-and-sweet-corn-and-vegetables",
+    "name": "Sandwich baguette thon-crudités maïs"
+  },
+  {
+    "key": "en:home-made-bechamel-sauce",
+    "name": "Sauce béchamel maison"
+  },
+  {
+    "key": "en:grilled-lamb-saddle",
+    "name": "Selle d'agneau partie maigre grillée"
+  },
+  {
+    "key": "en:roasted-lean-lamb-saddle",
+    "name": "Selle d'agneau partie maigre rôtie"
   },
   {
     "key": "en:corn-semolinas",
@@ -118,6 +258,14 @@
   {
     "key": "en:high-fructose-corn-syrups",
     "name": "Sirops de maïs à haute teneur en fructose"
+  },
+  {
+    "key": "en:maize-bran",
+    "name": "Son de maïs"
+  },
+  {
+    "key": "en:corn-flatbreads",
+    "name": "Tortillas de maïs"
   },
   {
     "key": "fr:volailles-du-maine",

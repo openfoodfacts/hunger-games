@@ -1,15 +1,63 @@
 [
   {
+    "key": "en:poultry-ham-in-cube",
+    "name": "Allumettes de jambon de volaille"
+  },
+  {
     "key": "fr:allumettes-de-volaille",
     "name": "Allumettes de volaille"
+  },
+  {
+    "key": "en:poultry-fritters",
+    "name": "Beignets de volaille"
+  },
+  {
+    "key": "en:cooked-poultry-breast-slices",
+    "name": "Blancs de volaille en tranches"
+  },
+  {
+    "key": "en:dehydrated-poultry-broth-stock",
+    "name": "Bouillon de volaille déshydraté"
+  },
+  {
+    "key": "en:rehydrated-broth-stock-with-poultry",
+    "name": "Bouillon de volaille déshydraté reconstitué"
   },
   {
     "key": "en:poultry-broth",
     "name": "Bouillons de volaille"
   },
   {
+    "key": "en:filled-fritter-garnished-with-poultry",
+    "name": "Brick à la volaille"
+  },
+  {
+    "key": "en:filled-fritter-garnished-with-shrimps-and-vegetables-and-poultry-and-meat",
+    "name": "Brick garni aux crevettes et légumes et volaille et viande et poisson"
+  },
+  {
     "key": "en:poultry-skewers",
     "name": "Brochettes de volailles"
+  },
+  {
+    "key": "en:preserved-poultry-liver",
+    "name": "Confit de foie de volaille"
+  },
+  {
+    "key": "fr:cordons-bleus-de-volaille",
+    "name": "Cordons bleus de volaille"
+  },
+  {
+    "key": "en:poultry-liver",
+    "name": "Foie de volaille"
+  },
+  {
+    "key": "en:dehydrated-poultry-stock",
+    "name": "Fond de volaille déshydraté"
+  },
+  {
+    "key": "en:poultry-minced-meat",
+    "name": "Haché de volaille"
   },
   {
     "key": "en:poultry-hams",
@@ -28,24 +76,48 @@
     "name": "Mousses de foies de volailles"
   },
   {
+    "key": "en:poultry-nuggets",
+    "name": "Nuggets de volaille"
+  },
+  {
+    "key": "en:poultry-liver-pates",
+    "name": "Pâtés de foie de volaille"
+  },
+  {
     "key": "en:poultry-meals",
     "name": "Plats à la volaille"
   },
   {
-    "key": "en:chicken-quenelles",
-    "name": "Quenelles de volaille"
+    "key": "en:poultry-quenelle",
+    "name": "Quenelle de volaille"
+  },
+  {
+    "key": "en:poultry-quenelle-in-sauce",
+    "name": "Quenelle de volaille en sauce"
   },
   {
     "key": "fr:ravioli-a-la-volaille",
     "name": "Ravioli à la volaille"
   },
   {
-    "key": "fr:rillettes-de-volaille",
+    "key": "en:poultry-rillettes",
     "name": "Rillettes de volaille"
+  },
+  {
+    "key": "en:cooked-curing-salted-roast-poultry",
+    "name": "Rôti de volaille en salaison cuit"
   },
   {
     "key": "fr:saint-aubin-premier-cru-en-vollon-a-l-est",
     "name": "Saint-Aubin premier cru En Vollon à l'Est"
+  },
+  {
+    "key": "fr:saint-aubin-premier-cru-en-vollon-a-l-est-blanc",
+    "name": "Saint-Aubin premier cru En Vollon à l'Est blanc"
+  },
+  {
+    "key": "fr:saint-aubin-premier-cru-en-vollon-a-l-est-rouge",
+    "name": "Saint-Aubin premier cru En Vollon à l'Est rouge"
   },
   {
     "key": "en:samoussas-with-poultry",
@@ -56,16 +128,48 @@
     "name": "Sandwichs à la volaille"
   },
   {
+    "key": "en:poultry-sausage-delicatessen-style",
+    "name": "Saucisse de volaille façon charcutière"
+  },
+  {
     "key": "en:poultry-sausages",
     "name": "Saucisses de volaille"
   },
   {
-    "key": "en:poultry-terrines",
-    "name": "Terrines de volailles"
+    "key": "en:chicken-and-vegetables-soup",
+    "name": "Soupe à la volaille et aux légumes"
   },
   {
-    "key": "fr:vol-au-vent",
-    "name": "Vol-au-vent"
+    "key": "en:dehydrated-soup-with-chicken-and-vegetables",
+    "name": "Soupe à la volaille et aux légumes déshydratée"
+  },
+  {
+    "key": "en:dehydrated-chicken-and-vermicelli-soup",
+    "name": "Soupe à la volaille et aux vermicelles déshydratée"
+  },
+  {
+    "key": "en:chicken-soups",
+    "name": "Soupes à la volaille"
+  },
+  {
+    "key": "en:chicken-and-vermicelli-soup",
+    "name": "Soupes à la volaille et aux vermicelles"
+  },
+  {
+    "key": "en:reheatable-chicken-and-vermicelli-soup",
+    "name": "Soupes à la volaille et aux vermicelles à réchauffer"
+  },
+  {
+    "key": "fr:terrines-au-foie-de-volaille",
+    "name": "Terrines au foie de volaille"
+  },
+  {
+    "key": "fr:terrines-de-foie-de-volaille",
+    "name": "Terrines de foie de volaille"
+  },
+  {
+    "key": "en:poultry-terrines",
+    "name": "Terrines de volailles"
   },
   {
     "key": "en:poultries-from-ancenis",
@@ -80,28 +184,8 @@
     "name": "Volaille de Gascogne"
   },
   {
-    "key": "fr:volaille-de-houdan",
-    "name": "Volaille de Houdan"
-  },
-  {
     "key": "en:poultries-from-janze",
     "name": "Volaille de Janzé"
-  },
-  {
-    "key": "fr:volaille-de-la-champagne",
-    "name": "Volaille de la Champagne"
-  },
-  {
-    "key": "fr:volaille-du-berry",
-    "name": "Volaille du Berry"
-  },
-  {
-    "key": "fr:volaille-du-gatinais",
-    "name": "Volaille du Gatinais"
-  },
-  {
-    "key": "en:poultry-from-languedoc",
-    "name": "Volaille du Languedoc"
   },
   {
     "key": "en:poultry-from-lauragais",
@@ -110,6 +194,10 @@
   {
     "key": "en:poultries",
     "name": "Volailles"
+  },
+  {
+    "key": "en:cooked-poultries",
+    "name": "Volailles cuites"
   },
   {
     "key": "fr:volailles-d-alsace",
@@ -136,12 +224,24 @@
     "name": "Volailles de Cholet"
   },
   {
+    "key": "fr:volailles-de-gascogne",
+    "name": "Volailles de Gascogne"
+  },
+  {
+    "key": "fr:volailles-de-houdan",
+    "name": "Volailles de Houdan"
+  },
+  {
     "key": "fr:volailles-de-l-ain",
     "name": "Volailles de l'Ain"
   },
   {
     "key": "fr:volailles-de-l-orleanais",
     "name": "Volailles de l'Orléanais"
+  },
+  {
+    "key": "fr:volailles-de-la-champagne",
+    "name": "Volailles de la Champagne"
   },
   {
     "key": "fr:volailles-de-la-drome",
@@ -172,6 +272,10 @@
     "name": "Volailles du Béarn"
   },
   {
+    "key": "fr:volailles-du-berry",
+    "name": "Volailles du Berry"
+  },
+  {
     "key": "fr:volailles-du-charolais",
     "name": "Volailles du Charolais"
   },
@@ -180,8 +284,16 @@
     "name": "Volailles du Forez"
   },
   {
+    "key": "fr:volailles-du-gatinais",
+    "name": "Volailles du Gatinais"
+  },
+  {
     "key": "fr:volailles-du-gers",
     "name": "Volailles du Gers"
+  },
+  {
+    "key": "en:poultry-from-languedoc",
+    "name": "Volailles du Languedoc"
   },
   {
     "key": "fr:volailles-du-maine",

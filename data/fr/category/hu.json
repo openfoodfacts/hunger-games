@@ -4,11 +4,23 @@
     "name": "Chips de pommes de terre à l'huile d'olive"
   },
   {
+    "key": "en:potato-crisps-in-coco-oil",
+    "name": "Chips de pommes de terre à l'huile de coco"
+  },
+  {
     "key": "en:potato-crisps-in-sunflower-oil",
     "name": "Chips de pommes de terre à l'huile de tournesol"
   },
   {
-    "key": "fr:filets-d-anchois-marines-a-l-huile-vegetale",
+    "key": "en:anchovy-fillets-in-oil",
+    "name": "Filets d'anchois à l'huile"
+  },
+  {
+    "key": "en:semi-preserved-anchovy-fillets-in-oil",
+    "name": "Filets d'anchois à l'huile en semi-conserve"
+  },
+  {
+    "key": "en:marinated-anchovy-fillets-with-vegetable-oil",
     "name": "Filets d'anchois marinés à l'huile végétale"
   },
   {
@@ -16,347 +28,15 @@
     "name": "Filets de maquereaux à l'huile"
   },
   {
-    "key": "fr:filets-de-sardines-a-l-huile-d-olive",
+    "key": "en:mackerel-fillets-in-olive-oil",
+    "name": "Filets de maquereaux à l'huile d'olive"
+  },
+  {
+    "key": "en:mackerel-fillets-in-sunflower-oil",
+    "name": "Filets de maquereaux à l'huile de tournesol"
+  },
+  {
+    "key": "en:sardine-fillets-in-olive-oil",
     "name": "Filets de sardines à l'huile d'olive"
-  },
-  {
-    "key": "en:olive-oil-from-aix-en-provence",
-    "name": "Huile d'olive d'Aix-en-Provence"
-  },
-  {
-    "key": "en:olive-oil-from-corsica",
-    "name": "Huile d'olive de Corse"
-  },
-  {
-    "key": "en:olive-oil-from-haute-provence",
-    "name": "Huile d'olive de Haute-Provence"
-  },
-  {
-    "key": "en:olive-oil-from-vallee-des-baux-de-provence",
-    "name": "Huile d'olive de la Vallée des Baux-de-Provence"
-  },
-  {
-    "key": "en:olive-oil-from-nice",
-    "name": "Huile d'olive de Nice"
-  },
-  {
-    "key": "en:olive-oil-from-nimes",
-    "name": "Huile d'olive de Nîmes"
-  },
-  {
-    "key": "en:olive-oil-from-nyons",
-    "name": "Huile d'olive de Nyons"
-  },
-  {
-    "key": "fr:huile-d-olive-de-provence",
-    "name": "Huile d'olive de Provence"
-  },
-  {
-    "key": "fr:huile-d-olive-riviera-ligure",
-    "name": "Huile d'olive Riviera Ligure"
-  },
-  {
-    "key": "en:vegetable-oils",
-    "name": "Huiles"
-  },
-  {
-    "key": "fr:huiles-aromatisees",
-    "name": "Huiles aromatisées"
-  },
-  {
-    "key": "en:almond-oils",
-    "name": "Huiles d'amande"
-  },
-  {
-    "key": "en:amaranth-oils",
-    "name": "Huiles d'amarante"
-  },
-  {
-    "key": "en:peanut-oils",
-    "name": "Huiles d'arachide"
-  },
-  {
-    "key": "en:argan-oils",
-    "name": "Huiles d'argan"
-  },
-  {
-    "key": "en:avocado-oils",
-    "name": "Huiles d'avocat"
-  },
-  {
-    "key": "en:olive-oils",
-    "name": "Huiles d'olive"
-  },
-  {
-    "key": "en:olive-oils-from-italy",
-    "name": "Huiles d'olive d'Italie"
-  },
-  {
-    "key": "en:olive-oils-from-france",
-    "name": "Huiles d'olive de France"
-  },
-  {
-    "key": "en:olive-oils-from-greece",
-    "name": "Huiles d'olive de Grèce"
-  },
-  {
-    "key": "en:refined-olive-oils",
-    "name": "Huiles d'olive raffinées"
-  },
-  {
-    "key": "en:virgin-olive-oils",
-    "name": "Huiles d'olive vierges"
-  },
-  {
-    "key": "en:extra-virgin-olive-oils",
-    "name": "Huiles d'olive vierges extra"
-  },
-  {
-    "key": "en:canola-oils",
-    "name": "Huiles de canola"
-  },
-  {
-    "key": "en:safflower-oils",
-    "name": "Huiles de carthame"
-  },
-  {
-    "key": "en:cereal-oils",
-    "name": "Huiles de céréales"
-  },
-  {
-    "key": "en:hemp-oils",
-    "name": "Huiles de chanvre"
-  },
-  {
-    "key": "en:coconut-oils",
-    "name": "Huiles de coco"
-  },
-  {
-    "key": "en:refined-coco-oils",
-    "name": "Huiles de coco raffinées"
-  },
-  {
-    "key": "en:rapeseed-oils",
-    "name": "Huiles de colza"
-  },
-  {
-    "key": "en:cottonseed-oils",
-    "name": "Huiles de coton"
-  },
-  {
-    "key": "en:codliver-fats",
-    "name": "Huiles de foie de cabillaud"
-  },
-  {
-    "key": "en:nut-oils",
-    "name": "Huiles de fruits à coques"
-  },
-  {
-    "key": "en:fruit-and-fruit-seed-oils",
-    "name": "Huiles de fruits et graines de fruits"
-  },
-  {
-    "key": "en:wheat-germ-oils",
-    "name": "Huiles de germe de blé"
-  },
-  {
-    "key": "en:borage-seed-oils",
-    "name": "Huiles de graines de bourrache"
-  },
-  {
-    "key": "en:olive-pomace-oils",
-    "name": "Huiles de grignons d'olive"
-  },
-  {
-    "key": "en:legume-oils",
-    "name": "Huiles de légumineuses"
-  },
-  {
-    "key": "en:linseed-oils",
-    "name": "Huiles de lin"
-  },
-  {
-    "key": "en:corn-oils",
-    "name": "Huiles de maïs"
-  },
-  {
-    "key": "en:watermelon-seed-oils",
-    "name": "Huiles de melon d'eau"
-  },
-  {
-    "key": "en:mustard-oils",
-    "name": "Huiles de moutarde"
-  },
-  {
-    "key": "en:hazelnut-oils",
-    "name": "Huiles de noisette"
-  },
-  {
-    "key": "en:walnut-oils",
-    "name": "Huiles de noix"
-  },
-  {
-    "key": "en:macadamia-oils",
-    "name": "Huiles de noix de macadamia"
-  },
-  {
-    "key": "en:pecan-oils",
-    "name": "Huiles de noix de pécan"
-  },
-  {
-    "key": "en:palm-oils",
-    "name": "Huiles de palme"
-  },
-  {
-    "key": "en:poppyseed-oils",
-    "name": "Huiles de pavot"
-  },
-  {
-    "key": "en:pumpkin-seed-oils",
-    "name": "Huiles de pépins de courge"
-  },
-  {
-    "key": "en:grape-seed-oils",
-    "name": "Huiles de pépins de raisins"
-  },
-  {
-    "key": "en:pine-nut-oils",
-    "name": "Huiles de pignons de pin"
-  },
-  {
-    "key": "en:pistachio-oils",
-    "name": "Huiles de pistache"
-  },
-  {
-    "key": "en:fish-oils",
-    "name": "Huiles de poissons"
-  },
-  {
-    "key": "en:rice-bran-oils",
-    "name": "Huiles de riz"
-  },
-  {
-    "key": "en:sesame-oils",
-    "name": "Huiles de sésame"
-  },
-  {
-    "key": "en:soybean-oils",
-    "name": "Huiles de soja"
-  },
-  {
-    "key": "en:tea-seed-oils",
-    "name": "Huiles de théier"
-  },
-  {
-    "key": "en:sunflower-oils",
-    "name": "Huiles de tournesol"
-  },
-  {
-    "key": "fr:huiles-pimentees",
-    "name": "Huiles pimentées"
-  },
-  {
-    "key": "en:virgin-coco-oils",
-    "name": "Huiles vierges de coco"
-  },
-  {
-    "key": "en:oysters",
-    "name": "Huîtres"
-  },
-  {
-    "key": "en:hungarian-palinka",
-    "name": "Hungarian Pálinka"
-  },
-  {
-    "key": "en:mantecados-y-polvorones-with-olive-oil",
-    "name": "Mantecados et polvorones á l'huile d'olive"
-  },
-  {
-    "key": "en:sunflower-oil-mayonnaises",
-    "name": "Mayonnaises à l'huile de tournesol"
-  },
-  {
-    "key": "en:mixed-vegetable-oils",
-    "name": "Mélanges d'huiles"
-  },
-  {
-    "key": "en:wet-pet-food",
-    "name": "Nourriture humide pour animaux"
-  },
-  {
-    "key": "en:oyster-mushrooms",
-    "name": "Pleurotes en huître"
-  },
-  {
-    "key": "en:chopped-oyster-mushrooms",
-    "name": "Pleurotes en huître émincés"
-  },
-  {
-    "key": "en:canned-oyster-mushrooms",
-    "name": "Pleurotes en huître en conserve"
-  },
-  {
-    "key": "en:whole-oyster-mushrooms",
-    "name": "Pleurotes en huître entiers"
-  },
-  {
-    "key": "en:dried-oyster-mushrooms",
-    "name": "Pleurotes en huître secs"
-  },
-  {
-    "key": "en:frozen-oyster-mushrooms",
-    "name": "Pleurotes en huître surgelé"
-  },
-  {
-    "key": "en:sardines-in-oil",
-    "name": "Sardines à l'huile"
-  },
-  {
-    "key": "en:sardines-in-olive-oil",
-    "name": "Sardines à l'huile d'olive"
-  },
-  {
-    "key": "en:sardines-in-sunflower-oil",
-    "name": "Sardines à l'huile de tournesol"
-  },
-  {
-    "key": "en:sardines-in-oil-and-lemon",
-    "name": "Sardines à l'huile et au citron"
-  },
-  {
-    "key": "fr:sardines-a-l-huile-et-au-piment",
-    "name": "Sardines à l'huile et au piment"
-  },
-  {
-    "key": "en:sardines-without-oil",
-    "name": "Sardines sans huile"
-  },
-  {
-    "key": "en:oyster-sauces",
-    "name": "Sauces à l'huitre"
-  },
-  {
-    "key": "en:tabbouleh-with-olive-oil",
-    "name": "Taboulés à l'huile d'olive"
-  },
-  {
-    "key": "en:tunas-in-oil",
-    "name": "Thons à l'huile"
-  },
-  {
-    "key": "en:tuna-in-olive-oil",
-    "name": "Thons à l'huile d'olive"
-  },
-  {
-    "key": "fr:thons-a-l-huile-de-tournesol",
-    "name": "Thons à l'huile de tournesol"
-  },
-  {
-    "key": "es:atun-claro-en-aceite-de-oliva",
-    "name": "Thons pales à l'huile d'olive"
-  },
-  {
-    "key": "en:dried-tomatoes-in-oil",
-    "name": "Tomates séchées à l'huile"
   }
 ]
