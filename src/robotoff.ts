@@ -96,20 +96,24 @@ const robotoff = {
     return axios.put(
       `${ROBOTOFF_API_URL}/images/logos/${logoId}`,
       removeEmptyKeys({
-        withCredentials: true,
         value,
         type,
-      })
+      }),
+      { withCredentials: true }
     );
   },
 
   searchLogos(barcode, value, type, count = 25) {
+    const formattedValue = ["label", "category"].includes(type)
+      ? { taxonomy_value: value }
+      : { value };
+
     return axios.get(`${ROBOTOFF_API_URL}/images/logos/search/`, {
       params: removeEmptyKeys({
         barcode,
-        value,
         type,
         count,
+        ...formattedValue,
       }),
     });
   },
@@ -131,9 +135,9 @@ const robotoff = {
     return axios.post(
       `${ROBOTOFF_API_URL}/images/logos/annotate`,
       removeEmptyKeys({
-        withCredentials: true,
         annotations,
-      })
+      }),
+      { withCredentials: true }
     );
   },
 
@@ -215,6 +219,7 @@ const robotoff = {
     country;
     campaign;
     page?: number;
+    count?: number;
   }) {
     let page = params.page ?? 1;
     page = page >= 1 ? page : 1;

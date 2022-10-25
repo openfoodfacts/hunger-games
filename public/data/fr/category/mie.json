@@ -4,20 +4,60 @@
     "name": "Bonbons au miel"
   },
   {
+    "key": "en:honey-cereal-balls",
+    "name": "Boules de céréales au miel"
+  },
+  {
+    "key": "en:breakfast-cereals-puffed-corn-with-honey-fortified-with-vitamins-and-chemical-elements",
+    "name": "Boules de maïs soufflées au miel enrichies en vitamines et minéraux"
+  },
+  {
+    "key": "en:breakfast-cereals-puffed-corn-with-honey-not-fortified-with-vitamins-and-chemical-elements",
+    "name": "Boules de maïs soufflées au miel non enrichies en vitamines et minéraux"
+  },
+  {
     "key": "en:cereals-with-honey",
     "name": "Céréales au miel"
+  },
+  {
+    "key": "en:diet-breakfast-cereals-with-honey-fortified-with-vitamins-and-chemical-elements",
+    "name": "Céréales pour petit déjeuner équilibre au miel enrichies en vitamines et minéraux"
   },
   {
     "key": "en:honey-stuffed-waffles",
     "name": "Gaufres fourrées au miel"
   },
   {
+    "key": "en:popped-wheat-grain-with-honey",
+    "name": "Grains de blé soufflés au miel"
+  },
+  {
+    "key": "en:popped-wheat-grain-with-honey-fortified-with-vitamins-and-chemical-elements",
+    "name": "Grains de blé soufflés au miel enrichis en vitamines et minéraux"
+  },
+  {
+    "key": "en:honeys-from-bulgaria",
+    "name": "Miel bulgare"
+  },
+  {
+    "key": "fr:miel-de-cevennes",
+    "name": "Miel de Cévennes"
+  },
+  {
     "key": "fr:miel-de-pitcairn",
     "name": "Miel de Pitcairn"
   },
   {
+    "key": "fr:miel-wallon",
+    "name": "Miel wallon"
+  },
+  {
     "key": "en:honeys",
     "name": "Miels"
+  },
+  {
+    "key": "en:honeys-from-belgium",
+    "name": "Miels belges"
   },
   {
     "key": "en:white-honeys-from-tigrai",
@@ -28,7 +68,7 @@
     "name": "Miels crémeux"
   },
   {
-    "key": "fr:miels-d-acacia",
+    "key": "en:acacia-honeys",
     "name": "Miels d'acacia"
   },
   {
@@ -44,11 +84,11 @@
     "name": "Miels d'acacia du Jura"
   },
   {
-    "key": "fr:miels-d-agrumes",
+    "key": "en:citrus-honeys",
     "name": "Miels d'agrumes"
   },
   {
-    "key": "fr:miels-d-alsace",
+    "key": "en:honeys-from-alsace",
     "name": "Miels d'Alsace"
   },
   {
@@ -56,19 +96,19 @@
     "name": "Miels d'Aquitaine"
   },
   {
-    "key": "es:mieles-de-eucaliptus",
+    "key": "en:eucalyptus-honeys",
     "name": "Miels d'eucalyptus"
   },
   {
-    "key": "es:mieles-de-azahar",
+    "key": "en:orange-blossom-honeys",
     "name": "Miels d'oranger"
   },
   {
-    "key": "fr:miels-d-ulmo",
+    "key": "en:ulmo-blossom-honeys",
     "name": "Miels d'ulmo"
   },
   {
-    "key": "fr:miels-de-bleuet",
+    "key": "en:cornflower-honeys",
     "name": "Miels de bleuet"
   },
   {
@@ -76,7 +116,7 @@
     "name": "Miels de Bourgogne"
   },
   {
-    "key": "es:mieles-de-brezo",
+    "key": "en:heather-honeys",
     "name": "Miels de bruyère"
   },
   {
@@ -86,6 +126,10 @@
   {
     "key": "fr:miels-de-bruyere-callune",
     "name": "Miels de bruyère callune"
+  },
+  {
+    "key": "en:cherry-blossom-honeys",
+    "name": "Miels de cerisier"
   },
   {
     "key": "en:chestnut-honey",
@@ -112,11 +156,15 @@
     "name": "Miels de conifères"
   },
   {
+    "key": "en:coriander-honeys",
+    "name": "Miels de coriandre"
+  },
+  {
     "key": "en:honey-of-corsica",
     "name": "Miels de Corse"
   },
   {
-    "key": "es:mieles-de-flores",
+    "key": "en:flower-honeys",
     "name": "Miels de fleurs"
   },
   {
@@ -124,7 +172,7 @@
     "name": "Miels de fleurs d'Alsace"
   },
   {
-    "key": "fr:miels-de-foret",
+    "key": "en:forest-honeys",
     "name": "Miels de forêt"
   },
   {
@@ -160,7 +208,7 @@
     "name": "Miels de jujubier du Yémen"
   },
   {
-    "key": "en:lavender-honey",
+    "key": "en:lavender-honeys",
     "name": "Miels de lavande"
   },
   {
@@ -168,12 +216,20 @@
     "name": "Miels de lavande de Méditerrannée"
   },
   {
-    "key": "en:lychee-honey",
+    "key": "en:lychee-honeys",
     "name": "Miels de litchi"
+  },
+  {
+    "key": "en:alfalfa-honeys",
+    "name": "Miels de luzerne"
   },
   {
     "key": "fr:miels-de-mandarinier",
     "name": "Miels de mandarinier"
+  },
+  {
+    "key": "en:manuka-honeys",
+    "name": "Miels de manuka"
   },
   {
     "key": "en:mediterannean-honeys",
@@ -196,7 +252,7 @@
     "name": "Miels de montagne"
   },
   {
-    "key": "fr:miels-de-pin",
+    "key": "en:pine-honeys",
     "name": "Miels de pin"
   },
   {
@@ -204,7 +260,7 @@
     "name": "Miels de pin de méditerrannée"
   },
   {
-    "key": "fr:miels-de-pissenlit",
+    "key": "en:dandelion-honeys",
     "name": "Miels de pissenlit"
   },
   {
@@ -220,15 +276,15 @@
     "name": "Miels de robinier"
   },
   {
-    "key": "es:mieles-de-romero",
+    "key": "en:rosemary-honeys",
     "name": "Miels de romarin"
   },
   {
-    "key": "fr:miels-de-ronce",
+    "key": "en:bramble-honeys",
     "name": "Miels de ronce"
   },
   {
-    "key": "fr:miels-de-sapin",
+    "key": "en:fir-honeys",
     "name": "Miels de sapin"
   },
   {
@@ -240,19 +296,23 @@
     "name": "Miels de sapin des Vosges"
   },
   {
-    "key": "fr:miels-de-sarrasin",
+    "key": "en:buckwheat-honeys",
     "name": "Miels de sarrasin"
+  },
+  {
+    "key": "en:savory-honeys",
+    "name": "Miels de sarriette"
   },
   {
     "key": "fr:miels-de-tamaris",
     "name": "Miels de Tamaris"
   },
   {
-    "key": "en:thyme-honey",
+    "key": "en:thyme-honeys",
     "name": "Miels de thym"
   },
   {
-    "key": "fr:miels-de-tilleul",
+    "key": "en:linden-honeys",
     "name": "Miels de tilleul"
   },
   {
@@ -264,7 +324,7 @@
     "name": "Miels de tournesol"
   },
   {
-    "key": "fr:miels-de-trefle",
+    "key": "en:clover-honeys",
     "name": "Miels de trèfle"
   },
   {
@@ -304,6 +364,10 @@
     "name": "Miels français"
   },
   {
+    "key": "en:italian-honeys",
+    "name": "Miels italiens"
+  },
+  {
     "key": "en:liquid-honeys",
     "name": "Miels liquides"
   },
@@ -312,31 +376,59 @@
     "name": "Miels roumains"
   },
   {
-    "key": "fr:miels-tropicaux",
-    "name": "Miels tropicaux"
+    "key": "en:flaked-crab",
+    "name": "Miettes de crabe"
+  },
+  {
+    "key": "en:grated-surimi",
+    "name": "Miettes de surimi"
   },
   {
     "key": "en:tuna-chunks",
     "name": "Miettes de thon"
   },
   {
+    "key": "en:tuna-flakes-in-oil",
+    "name": "Miettes de thon à l'huile"
+  },
+  {
+    "key": "en:tuna-flakes-in-tomato-sauce",
+    "name": "Miettes de thon à la tomate"
+  },
+  {
     "key": "en:honey-mustards",
     "name": "Moutardes au miel"
+  },
+  {
+    "key": "fr:nonnettes-au-miel",
+    "name": "Nonnettes au miel"
+  },
+  {
+    "key": "en:bran-sliced-breads",
+    "name": "Pain de mie au son"
+  },
+  {
+    "key": "fr:pains-d-epices-au-miel",
+    "name": "Pains d'épices au miel"
   },
   {
     "key": "en:sliced-breads",
     "name": "Pains de mie"
   },
   {
-    "key": "en:sliced-breads-with-cereals",
+    "key": "en:multigrain-sliced-breads",
     "name": "Pains de mie aux céréales"
   },
   {
-    "key": "en:wholemeal-english-bread",
+    "key": "en:brioche-sandwich-bread",
+    "name": "Pains de mie briochés"
+  },
+  {
+    "key": "en:wholemeal-sliced-breads",
     "name": "Pains de mie complet"
   },
   {
-    "key": "en:english-bread-without-crust",
+    "key": "en:sliced-breads-without-crust",
     "name": "Pains de mie sans croûte"
   },
   {
@@ -356,7 +448,27 @@
     "name": "Préparations à base de miel et propolis"
   },
   {
-    "key": "fr:sauces-au-miel",
+    "key": "en:honeydew-melon-pulp",
+    "name": "Pulpe de melon miel"
+  },
+  {
+    "key": "en:sandwich-made-with-loaf-bread-and-various-fillings",
+    "name": "Sandwich pain de mie avec garnitures diverses"
+  },
+  {
+    "key": "en:sandwich-made-with-wholemeal-loaf-bread-and-ham-and-vegetables-and-cheese",
+    "name": "Sandwich pain de mie complet jambon crudités fromage"
+  },
+  {
+    "key": "en:sandwich-made-with-wholemeal-loaf-bread-and-chicken-and-vegetables-and-mayonnaise",
+    "name": "Sandwichs pain de mie complet poulet crudités mayonnaise"
+  },
+  {
+    "key": "en:honey-dill-sauces",
+    "name": "Sauce à l'aneth au miel"
+  },
+  {
+    "key": "en:honey-sauces",
     "name": "Sauces au miel"
   },
   {

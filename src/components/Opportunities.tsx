@@ -7,20 +7,26 @@ import CardActionArea from "@mui/material/CardActionArea";
 import CardContent from "@mui/material/CardContent";
 import Box from "@mui/material/Box";
 import Skeleton from "@mui/material/Skeleton";
+import Button from "@mui/material/Button";
 
 import robotoff from "../robotoff";
+import off from "../off";
 import { getQuestionSearchParams } from "./QuestionFilter/useFilterSearch";
+import { getLang } from "../localeStorageManager";
+
+const pageSize = 25;
 
 const OpportunityCard = (props) => {
-  const { type, value, campaign, country, questionNumber } = props;
+  const { type, value, name, campaign, country, questionNumber } = props;
 
   const targetUrl = `/questions?${getQuestionSearchParams({
     valueTag: value,
     insightType: type,
     campaign,
-    country,
+    countryFilter: country,
     sortByPopularity: true,
   })}`;
+
   return (
     <Card
       sx={{
@@ -30,7 +36,7 @@ const OpportunityCard = (props) => {
     >
       <CardActionArea component={Link} to={targetUrl} sx={{ height: "100%" }}>
         <CardContent>
-          <Typography variant="h6">{value}</Typography>
+          <Typography variant="h6">{name}</Typography>
           <Typography sx={{ textAlign: "end", mt: 3, fontSize: "1.5rem" }}>
             {questionNumber.toLocaleString()}
           </Typography>
@@ -58,20 +64,49 @@ const CardSkeleton = () => (
   </Card>
 );
 
+const useTranslation = (toTranslate) => {
+  const [translation, setTranslation] = React.useState({});
+
+  React.useEffect(() => {
+    const remaining = toTranslate.filter((key) => !translation[key]);
+
+    if (remaining.length > 0) {
+      off
+        .getCategoriesTranslations({ categories: remaining })
+        .then(({ data }) => {
+          setTranslation((prev) => ({
+            ...prev,
+            ...data,
+          }));
+        })
+        .catch(() => {});
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [toTranslate]);
+
+  return translation;
+};
+
 const Opportunities = (props) => {
   const { type, campaign, country } = props;
   const [remainingQuestions, setRemainingQuestions] = React.useState([]);
   const [isLoading, setIsLoading] = React.useState(true);
+  const [page, setPage] = React.useState(1);
+
+  React.useEffect(() => {
+    setRemainingQuestions([]);
+  }, [type, campaign, country]);
 
   React.useEffect(() => {
     let isValid = true;
     setIsLoading(true);
 
     robotoff
-      .getUnansweredValues({ type, campaign, country, page: 1 })
+      .getUnansweredValues({ type, campaign, country, page, count: pageSize })
       .then(({ data }) => {
+        console.log(data);
         if (isValid) {
-          setRemainingQuestions(data.questions);
+          setRemainingQuestions((prev) => [...prev, ...data.questions]);
           setIsLoading(false);
         }
       })
@@ -82,8 +117,13 @@ const Opportunities = (props) => {
     return () => {
       isValid = false;
     };
-  }, [type, campaign, country]);
+  }, [type, campaign, country, page]);
 
+  const translation = useTranslation(
+    remainingQuestions.map(([value, questionNumber]) => value)
+  );
+
+  const lang = getLang();
   return (
     <Box sx={{ mt: 2, px: 2 }}>
       <Typography variant="h6" component="h3">
@@ -96,21 +136,36 @@ const Opportunities = (props) => {
           gridGap: "10px 50px",
         }}
       >
-        {isLoading &&
-          [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((id) => (
-            <CardSkeleton key={id} />
-          ))}
-        {!isLoading &&
-          remainingQuestions.map(([value, questionNumber]) => (
+        {remainingQuestions.map(([value, questionNumber]) => {
+          const name =
+            translation[value]?.name?.[lang] ??
+            translation[value]?.name?.en ??
+            value;
+          return (
             <OpportunityCard
               key={value}
               value={value}
+              name={name}
               type={type}
               campaign={campaign}
               country={country}
               questionNumber={questionNumber}
             />
-          ))}
+          );
+        })}
+        {isLoading &&
+          [
+            0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18,
+            19, 20, 21, 22, 23, 24,
+          ].map((id) => <CardSkeleton key={id} />)}
+        <Button
+          disabled={isLoading}
+          variant="contained"
+          fullWidth
+          onClick={() => setPage((p) => p + 1)}
+        >
+          Load more
+        </Button>
       </Box>
     </Box>
   );

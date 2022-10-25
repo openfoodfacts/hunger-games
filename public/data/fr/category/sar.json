@@ -4,6 +4,14 @@
     "name": "Boissons au sarrasin"
   },
   {
+    "key": "fr:boulettes-de-sardines-a-la-sauce-tomate",
+    "name": "Boulettes de sardines à la sauce tomate"
+  },
+  {
+    "key": "en:cornish-sardines",
+    "name": "Cornish Sardines"
+  },
+  {
     "key": "fr:corse-sartene",
     "name": "Corse Sartène"
   },
@@ -28,7 +36,7 @@
     "name": "Filets de sardines"
   },
   {
-    "key": "fr:filets-de-sardines-a-l-huile-d-olive",
+    "key": "en:sardine-fillets-in-olive-oil",
     "name": "Filets de sardines à l'huile d'olive"
   },
   {
@@ -36,7 +44,7 @@
     "name": "Flocons de sarrasin"
   },
   {
-    "key": "fr:galettes-de-sarrasin-souffle",
+    "key": "en:puffed-buckwheat-cakes",
     "name": "Galettes de sarrasin soufflé"
   },
   {
@@ -44,8 +52,20 @@
     "name": "Gruau de sarrasin"
   },
   {
-    "key": "fr:miels-de-sarrasin",
+    "key": "en:olive-oils-from-sardegna",
+    "name": "Huiles d'olive de Sardegna"
+  },
+  {
+    "key": "en:sardine-oils",
+    "name": "Huiles de sardine"
+  },
+  {
+    "key": "en:buckwheat-honeys",
     "name": "Miels de sarrasin"
+  },
+  {
+    "key": "en:savory-honeys",
+    "name": "Miels de sarriette"
   },
   {
     "key": "en:buckwheat-pasta",
@@ -56,16 +76,40 @@
     "name": "Poêlées à la sarladaise"
   },
   {
-    "key": "fr:rillettes-de-la-sarthe",
+    "key": "fr:poelees-surgelees-a-la-sarladaise",
+    "name": "Poêlées surgelées à la sarladaise"
+  },
+  {
+    "key": "fr:porc-de-la-sarthe",
+    "name": "Porc de la Sarthe"
+  },
+  {
+    "key": "en:sarthe-rillettes",
     "name": "Rillettes de la Sarthe"
   },
   {
-    "key": "fr:rillettes-de-sardine",
+    "key": "en:sardine-rillettes",
     "name": "Rillettes de sardine"
   },
   {
     "key": "fr:saint-sardos",
-    "name": "Saint Sardos"
+    "name": "Saint-Sardos"
+  },
+  {
+    "key": "fr:saint-sardos-rose",
+    "name": "Saint-Sardos rosé"
+  },
+  {
+    "key": "fr:saint-sardos-rouge",
+    "name": "Saint-Sardos rouge"
+  },
+  {
+    "key": "en:canned-european-pilchard-in-olive-oil",
+    "name": "Sardine à l'huile d'olive appertisée"
+  },
+  {
+    "key": "en:grilled-european-pilchard",
+    "name": "Sardine grillée"
   },
   {
     "key": "en:sardines",
@@ -92,7 +136,7 @@
     "name": "Sardines à l'huile et au citron"
   },
   {
-    "key": "fr:sardines-a-l-huile-et-au-piment",
+    "key": "en:sardines-in-oil-and-chili",
     "name": "Sardines à l'huile et au piment"
   },
   {
@@ -112,12 +156,16 @@
     "name": "Sardines sans huile"
   },
   {
+    "key": "en:sardo",
+    "name": "Sardo"
+  },
+  {
     "key": "en:buckwheat",
     "name": "Sarrasin"
   },
   {
     "key": "en:puffed-buckwheat",
-    "name": "Sarrasin de Tartarie soufflé"
+    "name": "Sarrasin soufflé"
   },
   {
     "key": "en:savory",
@@ -126,6 +174,10 @@
   {
     "key": "en:summer-savory",
     "name": "Sarriette des jardins"
+  },
+  {
+    "key": "en:dried-savory",
+    "name": "Sarriette séchée"
   },
   {
     "key": "en:winter-savory",

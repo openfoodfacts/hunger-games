@@ -53,6 +53,13 @@ const loadLogos = async (
     data: { results },
   } = await robotoff.getLogoAnnotations(targetLogoId, index, annotationCount);
 
+  if (targetLogoId && results[0].distance !== 0) {
+    // If requested logo is not yet indexed, it will not find himself has a nearest neighbor of distance 0
+    // In such a case we add it manually
+    // see: https://github.com/openfoodfacts/hunger-games/issues/287
+    results.unshift({ logo_id: Number.parseInt(targetLogoId), distance: 0 });
+  }
+
   const seenIds = {};
   alreadyLoadedData.forEach(({ id }) => {
     seenIds[id] = true;

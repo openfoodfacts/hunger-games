@@ -4,351 +4,39 @@
     "name": "Ananas au jus"
   },
   {
-    "key": "fr:bleu-du-haut-jura",
+    "key": "en:canned-drained-pineapple-in-pineapple-juice-and-syrup",
+    "name": "Ananas au sirop et jus d'ananas appertisé égoutté"
+  },
+  {
+    "key": "en:canned-pineapple-in-pineapple-juice-and-syrup-not-drained",
+    "name": "Ananas au sirop et jus d'ananas appertisé non égoutté"
+  },
+  {
+    "key": "en:jura-blue-cheese",
     "name": "Bleu du Haut-Jura"
   },
   {
-    "key": "en:pineapple-juice-and-soy-drinks",
-    "name": "Boissons à base de jus d'ananas et de soja"
+    "key": "en:carbonated-fruit-soft-drink-with-less-than-10-of-fruit-juice",
+    "name": "Boisson gazeuse aux fruits avec moins de 10% de jus"
   },
   {
-    "key": "en:orange-juice-and-soy-drinks",
-    "name": "Boissons à base de jus d'orange et de soja"
+    "key": "en:carbonated-fruit-soft-drink-with-less-than-10-of-fruit-juice-without-sugar-and-with-artificial-sweeteners",
+    "name": "Boisson gazeuse aux fruits avec moins de 10% de jus non sucrée avec édulcorants"
   },
   {
-    "key": "en:fruit-juice-and-soy-drinks",
-    "name": "Boissons à base de jus de fruits et de soja"
+    "key": "en:carbonated-fruit-soft-drink-with-less-than-10-of-fruit-juice-without-sugar-and-artificial-sweeteners",
+    "name": "Boisson gazeuse aux fruits avec moins de 10% de jus non sucrée sans édulcorant"
   },
   {
-    "key": "en:peach-juice-and-soy-drinks",
-    "name": "Boissons à base de jus de pêche et de soja"
+    "key": "en:carbonated-fruit-soft-drink-with-sugar-and-artificial-sweeteners-and-with-less-than-10-of-fruit-juice",
+    "name": "Boisson gazeuse aux fruits sucrée avec édulcorants et moins de 10% de jus"
   },
   {
-    "key": "en:apple-juice-and-soy-drinks",
-    "name": "Boissons à base de jus de pomme et de soja"
+    "key": "en:carbonated-fruit-soft-drink-with-sugar-and-less-than-10-of-fruit-juice",
+    "name": "Boisson gazeuse aux fruits sucrée avec moins de 10% de jus"
   },
   {
-    "key": "en:multifruit-juice-and-soy-drinks",
-    "name": "Boissons à base de jus multifruits et de soja"
-  },
-  {
-    "key": "en:fruit-and-milk-juices",
-    "name": "Boissons au lait et au jus de fruits"
-  },
-  {
-    "key": "fr:cotes-du-jura-mousseux",
-    "name": "Côtes du Jura mousseux"
-  },
-  {
-    "key": "fr:cremant-du-jura",
-    "name": "Crémant du Jura"
-  },
-  {
-    "key": "fr:eau-de-vie-de-jura",
-    "name": "Eau-de-vie de Jura"
-  },
-  {
-    "key": "en:canned-fruits-in-juice",
-    "name": "Fruits en conserve au jus"
-  },
-  {
-    "key": "fr:givry-premier-cru-clos-jus",
-    "name": "Givry premier cru Clos Jus"
-  },
-  {
-    "key": "fr:julienas",
-    "name": "Juliénas"
-  },
-  {
-    "key": "fr:jurancon-sec",
-    "name": "Jurançon sec"
-  },
-  {
-    "key": "en:apricot-juices",
-    "name": "Jus d'abricot"
-  },
-  {
-    "key": "en:concentrated-apricot-juices",
-    "name": "Jus d'abricot à base de concentré"
-  },
-  {
-    "key": "en:pineapple-juices",
-    "name": "Jus d'ananas"
-  },
-  {
-    "key": "en:concentrated-pineapple-juices",
-    "name": "Jus d'ananas à base de concentré"
-  },
-  {
-    "key": "en:refrigerated-squeezed-pineapple-juices",
-    "name": "Jus d'ananas frais"
-  },
-  {
-    "key": "en:squeezed-pineapple-juices",
-    "name": "Jus d'ananas pur jus"
-  },
-  {
-    "key": "en:orange-juices",
-    "name": "Jus d'orange"
-  },
-  {
-    "key": "en:concentrated-orange-juices",
-    "name": "Jus d'orange à base de concentré"
-  },
-  {
-    "key": "en:refrigerated-squeezed-orange-juices",
-    "name": "Jus d'orange frais"
-  },
-  {
-    "key": "en:squeezed-orange-juices",
-    "name": "Jus d'orange pur jus"
-  },
-  {
-    "key": "fr:jus-d-orange-sanguine",
-    "name": "Jus d'orange sanguine"
-  },
-  {
-    "key": "fr:jus-de-betterave",
-    "name": "Jus de betterave"
-  },
-  {
-    "key": "en:cranberry-juice",
-    "name": "Jus de canneberge"
-  },
-  {
-    "key": "en:carrot-juices",
-    "name": "Jus de carotte"
-  },
-  {
-    "key": "en:concentrated-carrot-juices",
-    "name": "Jus de carotte à base de concentré"
-  },
-  {
-    "key": "en:lemon-juice",
-    "name": "Jus de citron"
-  },
-  {
-    "key": "en:clementine-juices",
-    "name": "Jus de clémentine"
-  },
-  {
-    "key": "en:strawberry-juice",
-    "name": "Jus de fraise"
-  },
-  {
-    "key": "en:fruit-juices",
-    "name": "Jus de fruits"
-  },
-  {
-    "key": "en:concentrated-fruit-juices",
-    "name": "Jus de fruits à base de concentré"
-  },
-  {
-    "key": "en:fruit-and-vegetable-juices",
-    "name": "Jus de fruits et légumes"
-  },
-  {
-    "key": "en:refrigerated-squeezed-juices",
-    "name": "Jus de fruits frais"
-  },
-  {
-    "key": "en:squeezed-juices",
-    "name": "Jus de fruits pur jus"
-  },
-  {
-    "key": "en:pomegranate-juices",
-    "name": "Jus de grenade"
-  },
-  {
-    "key": "en:concentrated-pomegranate-juices",
-    "name": "Jus de grenade à base de concentré"
-  },
-  {
-    "key": "en:vegetable-juices",
-    "name": "Jus de légumes"
-  },
-  {
-    "key": "en:tangerine-juices",
-    "name": "Jus de mandarine"
-  },
-  {
-    "key": "en:concentrated-tangerine-juices",
-    "name": "Jus de mandarine à base de concentré"
-  },
-  {
-    "key": "en:squeezed-tangerine-juices",
-    "name": "Jus de mandarine pur jus"
-  },
-  {
-    "key": "en:refrigerated-squeezed-tangerine-juices",
-    "name": "Jus de mandarine pur jus frais"
-  },
-  {
-    "key": "en:mango-juices",
-    "name": "Jus de mangue"
-  },
-  {
-    "key": "en:concentrated-mango-juices",
-    "name": "Jus de mangue à base de concentré"
-  },
-  {
-    "key": "en:blueberry-juices",
-    "name": "Jus de myrtilles"
-  },
-  {
-    "key": "en:concentrated-blueberry-juices",
-    "name": "Jus de myrtilles à base de concentré"
-  },
-  {
-    "key": "en:squeezed-blueberry-juices",
-    "name": "Jus de myrtilles pur jus"
-  },
-  {
-    "key": "en:grapefruit-juices",
-    "name": "Jus de pamplemousse"
-  },
-  {
-    "key": "en:concentrated-grapefruit-juices",
-    "name": "Jus de pamplemousse à base de concentré"
-  },
-  {
-    "key": "en:fresh-grapefruit-juice",
-    "name": "Jus de pamplemousse frais"
-  },
-  {
-    "key": "en:squeezed-grapefruit-juices",
-    "name": "Jus de pamplemousse pur jus"
-  },
-  {
-    "key": "fr:jus-de-pamplemousse-rose",
-    "name": "Jus de pamplemousse rose"
-  },
-  {
-    "key": "en:peach-juices",
-    "name": "Jus de pêche"
-  },
-  {
-    "key": "en:concentrated-peach-juices",
-    "name": "Jus de pêche à base de concentré"
-  },
-  {
-    "key": "en:pear-juices",
-    "name": "Jus de poire"
-  },
-  {
-    "key": "en:concentrated-pear-juices",
-    "name": "Jus de poire à base de concentré"
-  },
-  {
-    "key": "en:apple-juices",
-    "name": "Jus de pomme"
-  },
-  {
-    "key": "en:concentrated-apple-juices",
-    "name": "Jus de pomme à base de concentré"
-  },
-  {
-    "key": "en:squeezed-apple-juices",
-    "name": "Jus de pommes pur jus"
-  },
-  {
-    "key": "en:plum-juices",
-    "name": "Jus de prune"
-  },
-  {
-    "key": "en:concentrated-plum-juices",
-    "name": "Jus de prune à base de concentré"
-  },
-  {
-    "key": "en:squeezed-plum-juices",
-    "name": "Jus de prune frais"
-  },
-  {
-    "key": "en:prune-juice",
-    "name": "Jus de pruneaux"
-  },
-  {
-    "key": "en:grape-juices",
-    "name": "Jus de raisin"
-  },
-  {
-    "key": "en:concentrated-grape-juices",
-    "name": "Jus de raisin à base de concentré"
-  },
-  {
-    "key": "en:squeezed-grape-juices",
-    "name": "Jus de raisin pur jus"
-  },
-  {
-    "key": "en:tomato-juices",
-    "name": "Jus de tomates"
-  },
-  {
-    "key": "en:concentrated-tomato-juices",
-    "name": "Jus de tomates à base de concentré"
-  },
-  {
-    "key": "en:juices-and-nectars",
-    "name": "Jus et nectars"
-  },
-  {
-    "key": "en:multifruit-juices",
-    "name": "Jus multifruits"
-  },
-  {
-    "key": "en:concentrated-multifruit-juices",
-    "name": "Jus multifruits à base de jus concentré"
-  },
-  {
-    "key": "en:refrigerated-squeezed-multifruit-juices",
-    "name": "Jus multifruits frais"
-  },
-  {
-    "key": "en:squeezed-multifruit-juices",
-    "name": "Jus multifruits pur jus"
-  },
-  {
-    "key": "fr:macvin-du-jura",
-    "name": "Macvin du Jura"
-  },
-  {
-    "key": "en:acacia-honeys-from-jura",
-    "name": "Miels d'acacia du Jura"
-  },
-  {
-    "key": "fr:miels-de-jujubier",
-    "name": "Miels de jujubier"
-  },
-  {
-    "key": "fr:miels-de-jujubier-du-yemen",
-    "name": "Miels de jujubier du Yémen"
-  },
-  {
-    "key": "en:honeys-from-jura",
-    "name": "Miels du Jura"
-  },
-  {
-    "key": "en:jew-s-ear-mushrooms",
-    "name": "Oreilles de Judas"
-  },
-  {
-    "key": "en:dried-jew-s-ear-mushrooms",
-    "name": "Oreilles de Judas secs"
-  },
-  {
-    "key": "en:refrigerated-squeezed-apple-juices",
-    "name": "Refrigerated squeezed apple juices"
-  },
-  {
-    "key": "fr:saint-julien",
-    "name": "Saint-Julien"
-  },
-  {
-    "key": "en:squeezed-pear-juices",
-    "name": "Squeezed pear juices"
-  },
-  {
-    "key": "en:squeezed-pomegranate-juices",
-    "name": "Squeezed pomegranate juices"
+    "key": "en:carbonated-soft-drink-without-fruit-juice-without-sugar-and-with-artificial-sweeteners",
+    "name": "Boisson gazeuse sans jus de fruit non sucrée avec édulcorants"
   }
 ]

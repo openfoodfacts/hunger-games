@@ -8,11 +8,11 @@
     "name": "Farines d'épeautre T110"
   },
   {
-    "key": "fr:farines-de-ble-khorasan-t110",
+    "key": "en:t110-khorasan-wheat-flours",
     "name": "Farines de blé khorasan T110"
   },
   {
-    "key": "fr:farines-de-ble-khorasan-t130",
+    "key": "en:t130-khorasan-wheat-flours",
     "name": "Farines de blé khorasan T130"
   },
   {
@@ -20,11 +20,11 @@
     "name": "Farines de blé khorasan T150"
   },
   {
-    "key": "fr:farines-de-ble-type-t110",
+    "key": "en:wheat-flour-t110",
     "name": "Farines de blé type T110"
   },
   {
-    "key": "en:whole-wheat-flours",
+    "key": "en:wheat-flour-type-150",
     "name": "Farines de blé type T150"
   },
   {
@@ -32,7 +32,7 @@
     "name": "Farines de châtaigne T110"
   },
   {
-    "key": "en:wheat-flour-t110",
+    "key": "fr:farines-de-froment-t110",
     "name": "Farines de froment T110"
   },
   {
@@ -62,5 +62,9 @@
   {
     "key": "en:rye-flours-type-1740",
     "name": "Farines de seigle T170"
+  },
+  {
+    "key": "en:wholemeal-bread-made-with-flour-type-150",
+    "name": "Pain complet à la farine T150"
   }
 ]

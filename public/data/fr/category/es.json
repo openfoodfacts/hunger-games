@@ -4,12 +4,16 @@
     "name": "Alfajores espagnols"
   },
   {
-    "key": "fr:carres-de-l-est",
+    "key": "en:carre-de-l-est",
     "name": "Carrés de l'Est"
   },
   {
     "key": "fr:caviar-d-esturgeon-blanc",
     "name": "Caviar d'esturgeon blanc"
+  },
+  {
+    "key": "en:spanish-cereals",
+    "name": "Céréales espagnoles"
   },
   {
     "key": "fr:eau-de-vie-de-vin-originaire-du-centre-est",
@@ -24,12 +28,28 @@
     "name": "Escacena chickpeas"
   },
   {
+    "key": "en:roasted-turkey-escalope",
+    "name": "Escalope de dinde rôtie"
+  },
+  {
+    "key": "en:sauteed-turkey-escalope-with-salt",
+    "name": "Escalope de dinde sautée"
+  },
+  {
+    "key": "en:cooked-pork-ham-escalope",
+    "name": "Escalope de jambon de porc cuite"
+  },
+  {
+    "key": "en:pork-ham-escalope",
+    "name": "Escalope de porc"
+  },
+  {
     "key": "en:turkey-cutlets",
     "name": "Escalopes de dinde"
   },
   {
-    "key": "fr:escalopes-de-porc",
-    "name": "Escalopes de porc"
+    "key": "fr:escalopes-de-dinde-a-la-milanaise",
+    "name": "Escalopes de dinde à la milanaise"
   },
   {
     "key": "en:chicken-cutlets",
@@ -40,8 +60,28 @@
     "name": "Escalopes de poulet panées"
   },
   {
+    "key": "en:veal-escalopes",
+    "name": "Escalopes de veau"
+  },
+  {
+    "key": "en:cooked-veal-escalopes",
+    "name": "Escalopes de veau cuites"
+  },
+  {
+    "key": "en:breaded-veal-escalopes",
+    "name": "Escalopes de veau panées"
+  },
+  {
+    "key": "en:snail-in-cooked-parsley-butter",
+    "name": "Escargot en sauce au beurre persillé cuit"
+  },
+  {
     "key": "en:snails",
     "name": "Escargots"
+  },
+  {
+    "key": "en:cooked-snails",
+    "name": "Escargots cuits"
   },
   {
     "key": "en:snails-from-burgundy",
@@ -56,8 +96,24 @@
     "name": "Escargots préparés"
   },
   {
+    "key": "en:frozen-snails",
+    "name": "Escargots surgelés"
+  },
+  {
+    "key": "fr:escaveche-de-chimay",
+    "name": "Escavèche de Chimay"
+  },
+  {
     "key": "en:winter-barley",
     "name": "Escourgeon"
+  },
+  {
+    "key": "en:swordfish",
+    "name": "Espadon"
+  },
+  {
+    "key": "en:roasted-swordfish",
+    "name": "Espadon rôti"
   },
   {
     "key": "en:smoked-swordfish",
@@ -66,6 +122,10 @@
   {
     "key": "fr:estaing",
     "name": "Estaing"
+  },
+  {
+    "key": "en:estonian-cheeses",
+    "name": "Estonian cheeses"
   },
   {
     "key": "en:tarragon",
@@ -80,6 +140,14 @@
     "name": "Estragon sec moulu"
   },
   {
+    "key": "en:sturgeon",
+    "name": "Esturgeon"
+  },
+  {
+    "key": "en:snails-in-puff-pastry",
+    "name": "Feuilleté aux escargots"
+  },
+  {
     "key": "en:mackerel-fillets-in-escabeche",
     "name": "Filets de maquereaux à l'escabeche"
   },
@@ -88,8 +156,16 @@
     "name": "Fromages espagnols"
   },
   {
+    "key": "en:spanish-fruits",
+    "name": "Fruits espagnols"
+  },
+  {
     "key": "fr:gevrey-chambertin-premier-cru-estournelles-st-jacques",
     "name": "Gevrey-Chambertin premier cru Estournelles St Jacques"
+  },
+  {
+    "key": "en:spanish-butters",
+    "name": "Graisses espagnoles"
   },
   {
     "key": "en:scarlet-runner-beans",
@@ -100,6 +176,58 @@
     "name": "Haricots d'Espagne en conserve"
   },
   {
+    "key": "en:olive-oils-from-estepa",
+    "name": "Huile d'olive de Estepa"
+  },
+  {
+    "key": "en:olive-oils-from-spain",
+    "name": "Huiles d'olive d'Espagne"
+  },
+  {
+    "key": "en:spanish-hams",
+    "name": "Jambons espagnols"
+  },
+  {
+    "key": "en:esl-milks",
+    "name": "Laits ESL"
+  },
+  {
+    "key": "en:spanish-milks",
+    "name": "Laits espagnols"
+  },
+  {
+    "key": "en:spanish-vegetables",
+    "name": "Légumes espagnols"
+  },
+  {
+    "key": "en:spanish-liqueur",
+    "name": "Liqueurs espagnoles"
+  },
+  {
+    "key": "en:atlantic-chub-mackerel",
+    "name": "Maquereau espagnol"
+  },
+  {
+    "key": "en:margarines-with-plant-sterols-esters",
+    "name": "Margarine aux esters de stérol végétal"
+  },
+  {
+    "key": "en:30-40-lightly-salted-vegetable-fat-with-plant-sterols-esters",
+    "name": "Matière grasse végétale demi-sel légère à 30-40% aux esters de stérol végétal"
+  },
+  {
+    "key": "en:50-63-unsalted-vegetable-fat-with-plant-sterols-esters",
+    "name": "Matière grasse végétale douce allégée à 50-63% aux esters de stérol végétal"
+  },
+  {
+    "key": "en:30-40-fat-unsalted-vegetable-fat-with-plant-sterols-esters",
+    "name": "Matière grasse végétale légère à 30-40% doux aux esters de stérol végétal"
+  },
+  {
+    "key": "en:mussels-with-escabeche",
+    "name": "Moules à l'escabèche"
+  },
+  {
     "key": "en:egg-free-spanish-omelettes",
     "name": "Omelettes espagnoles sans oeuf"
   },
@@ -108,7 +236,23 @@
     "name": "Piments d'Espelette"
   },
   {
-    "key": "fr:rillettes-d-esturgeon",
+    "key": "en:white-fish-with-tarragon-sauce",
+    "name": "Poisson blanc à l'estragon"
+  },
+  {
+    "key": "en:spanish-meat-products",
+    "name": "Produits carnés espagnols"
+  },
+  {
+    "key": "en:spanish-bakery-products",
+    "name": "Produits de boulangerie espagnols"
+  },
+  {
+    "key": "en:spanish-sea-products",
+    "name": "Produits de la mer espagnols"
+  },
+  {
+    "key": "en:sturgeon-rillettes",
     "name": "Rillettes d'esturgeon"
   },
   {
@@ -120,12 +264,36 @@
     "name": "Saint-Aubin premier cru En Vollon à l'Est"
   },
   {
+    "key": "fr:saint-aubin-premier-cru-en-vollon-a-l-est-blanc",
+    "name": "Saint-Aubin premier cru En Vollon à l'Est blanc"
+  },
+  {
+    "key": "fr:saint-aubin-premier-cru-en-vollon-a-l-est-rouge",
+    "name": "Saint-Aubin premier cru En Vollon à l'Est rouge"
+  },
+  {
     "key": "fr:saint-aubin-premier-cru-es-champs",
     "name": "Saint-Aubin premier cru Es Champs"
   },
   {
+    "key": "fr:saint-aubin-premier-cru-es-champs-blanc",
+    "name": "Saint-Aubin premier cru Es Champs blanc"
+  },
+  {
+    "key": "fr:saint-aubin-premier-cru-es-champs-rouge",
+    "name": "Saint-Aubin premier cru Es Champs rouge"
+  },
+  {
     "key": "fr:saint-aubin-premier-cru-le-bas-de-gamay-a-l-est",
     "name": "Saint-Aubin premier cru Le Bas de Gamay à l'Est"
+  },
+  {
+    "key": "fr:saint-aubin-premier-cru-le-bas-de-gamay-a-l-est-blanc",
+    "name": "Saint-Aubin premier cru Le Bas de Gamay à l'Est blanc"
+  },
+  {
+    "key": "fr:saint-aubin-premier-cru-le-bas-de-gamay-a-l-est-rouge",
+    "name": "Saint-Aubin premier cru Le Bas de Gamay à l'Est rouge"
   },
   {
     "key": "fr:saint-estephe",
@@ -134,6 +302,22 @@
   {
     "key": "en:sausages-from-spain",
     "name": "Saucisses espagnoles"
+  },
+  {
+    "key": "fr:soupe-de-poissons-au-piment-d-espelette",
+    "name": "Soupe de poissons au piment d'Espelette"
+  },
+  {
+    "key": "en:schnitzel-substitutes",
+    "name": "Susbtituts des escalopes panés"
+  },
+  {
+    "key": "en:tunas-in-escabeche-sauce",
+    "name": "Thons à l'escabèche"
+  },
+  {
+    "key": "en:spanish-vinegars",
+    "name": "Vinaigres espagnols"
   },
   {
     "key": "en:wines-from-spain",

@@ -111,16 +111,19 @@ const NutriscoreImage = ({ question, imageSize, zoomOnLogo }) => {
 export default function NutriscoreValidator() {
   const { t } = useTranslation();
 
-  const [selectedOption, setSelectedOption] = React.useState(OPTIONS[0]);
   const [controlledState, setControlledState] = useUrlParams({
     valueTag: "en:nutriscore-grade-a",
     imageSize: 200,
     zoomOnLogo: true,
   });
-
   const valueTag = controlledState.valueTag;
   const imageSize = Number.parseInt(controlledState.imageSize);
   const zoomOnLogo = JSON.parse(controlledState.zoomOnLogo);
+
+  const selectedOption = React.useMemo(
+    () => OPTIONS.find((option) => option.tag === valueTag) || OPTIONS[0],
+    [valueTag]
+  );
 
   const filterState = React.useMemo(
     () => ({
@@ -138,14 +141,13 @@ export default function NutriscoreValidator() {
 
   const updateSearchedGrad = (event) => {
     const newSelectedTag = event.target.value;
-    if (selectedOption.tag === newSelectedTag) {
+    if (valueTag === newSelectedTag) {
       return;
     }
     const newSelectedOption = OPTIONS.find(
       (option) => option.tag === newSelectedTag
     );
     setSelectedIds([]);
-    setSelectedOption(newSelectedOption);
     setControlledState((prevState) => ({
       ...prevState,
       valueTag: newSelectedOption.tag,
@@ -249,11 +251,7 @@ export default function NutriscoreValidator() {
         alignItems="center"
         sx={{ pt: 5, px: 5, pb: 0, textAlign: "center" }}
       >
-        <TextField
-          value={selectedOption.tag}
-          onChange={updateSearchedGrad}
-          select
-        >
+        <TextField value={valueTag} onChange={updateSearchedGrad} select>
           {OPTIONS.map(({ tag, label }) => (
             <MenuItem value={tag} key={tag}>
               {label}

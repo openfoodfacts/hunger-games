@@ -1,6 +1,30 @@
 [
   {
-    "key": "fr:biscottes-completes",
+    "key": "en:common-anchovy",
+    "name": "Anchois commun"
+  },
+  {
+    "key": "en:marinated-common-anchovy",
+    "name": "Anchois commun mariné"
+  },
+  {
+    "key": "en:european-bass",
+    "name": "Bar commun"
+  },
+  {
+    "key": "en:farmed-mediterranean-bass",
+    "name": "Bar commun d'élevage"
+  },
+  {
+    "key": "en:roasted-european-bass",
+    "name": "Bar commun rôti"
+  },
+  {
+    "key": "en:wild-mediterranean-bass",
+    "name": "Bar commun sauvage"
+  },
+  {
+    "key": "en:wholemeal-rusks",
     "name": "Biscottes complètes"
   },
   {
@@ -20,6 +44,10 @@
     "name": "Cafés en dosettes compatible Tassimo"
   },
   {
+    "key": "en:breakfast-cereals-puffed-cereals-wholemeal-fortified-with-vitamins-and-chemical-elements",
+    "name": "Céréales complètes soufflées enrichies en vitamines et minéraux"
+  },
+  {
     "key": "fr:chambolle-musigny-aux-combottes",
     "name": "Chambolle-Musigny Aux Combottes"
   },
@@ -36,12 +64,40 @@
     "name": "Chassagne-Montrachet premier cru Les Combards"
   },
   {
+    "key": "fr:chassagne-montrachet-premier-cru-les-combards-blanc",
+    "name": "Chassagne-Montrachet premier cru Les Combards blanc"
+  },
+  {
+    "key": "fr:chassagne-montrachet-premier-cru-les-combards-rouge",
+    "name": "Chassagne-Montrachet premier cru Les Combards rouge"
+  },
+  {
     "key": "fr:chassagne-montrachet-premier-cru-les-commes",
     "name": "Chassagne-Montrachet premier cru Les Commes"
   },
   {
+    "key": "fr:chassagne-montrachet-premier-cru-les-commes-blanc",
+    "name": "Chassagne-Montrachet premier cru Les Commes blanc"
+  },
+  {
+    "key": "fr:chassagne-montrachet-premier-cru-les-commes-rouge",
+    "name": "Chassagne-Montrachet premier cru Les Commes rouge"
+  },
+  {
+    "key": "en:comeragh-mountain-lamb",
+    "name": "Comeragh Mountain Lamb"
+  },
+  {
+    "key": "en:commandaria",
+    "name": "Commandaria"
+  },
+  {
     "key": "en:common-bilberries",
     "name": "Common bilberries"
+  },
+  {
+    "key": "fr:commune-de-champagne",
+    "name": "Commune de Champagne"
   },
   {
     "key": "en:dietary-supplements",
@@ -50,6 +106,14 @@
   {
     "key": "en:bodybuilding-supplements",
     "name": "Compléments pour le Bodybuilding"
+  },
+  {
+    "key": "en:fruits-compote-with-reduced-sugar",
+    "name": "Compote de fruits allégée en sucres"
+  },
+  {
+    "key": "en:refrigerated-fruits-compote-with-reduced-sugar",
+    "name": "Compote de fruits allégée en sucres rayon frais"
   },
   {
     "key": "fr:compotee-de-lievre",
@@ -68,7 +132,7 @@
     "name": "Compotes allégées"
   },
   {
-    "key": "fr:compotes-d-abricot",
+    "key": "en:apricot-compotes",
     "name": "Compotes d'abricot"
   },
   {
@@ -76,15 +140,19 @@
     "name": "Compotes de fraise"
   },
   {
+    "key": "fr:compotes-de-framboise",
+    "name": "Compotes de framboise"
+  },
+  {
     "key": "en:mango-compotes",
     "name": "Compotes de mangues"
   },
   {
-    "key": "fr:compotes-de-peche",
+    "key": "en:peach-compotes",
     "name": "Compotes de pêche"
   },
   {
-    "key": "fr:compotes-de-poire",
+    "key": "en:pear-compotes",
     "name": "Compotes de poire"
   },
   {
@@ -96,7 +164,7 @@
     "name": "Compotes de prunes"
   },
   {
-    "key": "fr:compotes-de-rhubarbe",
+    "key": "en:rhubarb-compotes",
     "name": "Compotes de rhubarbe"
   },
   {
@@ -108,7 +176,7 @@
     "name": "Compotes fraise myrtille"
   },
   {
-    "key": "fr:compotes-pommes-abricot",
+    "key": "en:apricot-apple-compotes",
     "name": "Compotes pommes abricot"
   },
   {
@@ -116,7 +184,7 @@
     "name": "Compotes pommes ananas"
   },
   {
-    "key": "fr:compotes-pommes-banane",
+    "key": "en:banana-apple-compotes",
     "name": "Compotes pommes banane"
   },
   {
@@ -204,7 +272,7 @@
     "name": "Compotes sans sucres"
   },
   {
-    "key": "fr:comte",
+    "key": "en:comte",
     "name": "Comté"
   },
   {
@@ -218,6 +286,10 @@
   {
     "key": "en:edible-tableware",
     "name": "Couverts comestibles"
+  },
+  {
+    "key": "en:crepe-filled-with-egg-ham-and-cheese",
+    "name": "Crêpe complète"
   },
   {
     "key": "fr:eau-de-vie-de-vin-originaire-de-franche-comte",
@@ -240,6 +312,22 @@
     "name": "Gevrey-Chambertin premier cru Combe au Moine"
   },
   {
+    "key": "en:combined-oil",
+    "name": "Huile combinée"
+  },
+  {
+    "key": "en:combined-oil-blended-vegetable-oils",
+    "name": "Huile combinée (mélange d'huiles)"
+  },
+  {
+    "key": "en:olive-oils-from-comunitat-valenciana",
+    "name": "Huile d'olive de Comunitat Valenciana"
+  },
+  {
+    "key": "en:baker-s-yeast-compressed",
+    "name": "Levure de boulanger compressée"
+  },
+  {
     "key": "fr:mercurey-premier-cru-les-combins",
     "name": "Mercurey premier cru Les Combins"
   },
@@ -252,19 +340,51 @@
     "name": "Montagny premier cru Les Combes"
   },
   {
+    "key": "en:common-mussels",
+    "name": "Moules communes"
+  },
+  {
+    "key": "en:whole-wheat-english-muffins",
+    "name": "Muffins anglais au blé complet"
+  },
+  {
+    "key": "en:new-season-comber-potatoes",
+    "name": "New Season Comber Potatoes"
+  },
+  {
     "key": "en:whole-wheat-noodles",
     "name": "Nouilles de blé complet"
+  },
+  {
+    "key": "en:garfish",
+    "name": "Orphie commune"
+  },
+  {
+    "key": "en:wholemeal-bread-made-with-flour-type-150",
+    "name": "Pain complet à la farine T150"
+  },
+  {
+    "key": "en:wholemeal-rolls-for-hamburger",
+    "name": "Pain complet pour hamburger"
+  },
+  {
+    "key": "en:wholemeal-rolls-for-hotdog",
+    "name": "Pain complet pour hot dog"
+  },
+  {
+    "key": "en:wheat-wholemeal-swedish-toast",
+    "name": "Pain grillé suédois au blé complet"
   },
   {
     "key": "fr:pains-azymes-a-la-farine-complete",
     "name": "Pains azymes à la farine complète"
   },
   {
-    "key": "en:brown-breads",
+    "key": "en:wholemeal-breads",
     "name": "Pains complets"
   },
   {
-    "key": "en:wholemeal-english-bread",
+    "key": "en:wholemeal-sliced-breads",
     "name": "Pains de mie complet"
   },
   {
@@ -274,6 +394,18 @@
   {
     "key": "en:whole-durum-wheat-pasta",
     "name": "Pâtes de blé dur complet"
+  },
+  {
+    "key": "es:pastas-de-trigo-duro-semi-integrales",
+    "name": "Pâtes de blé dur semi-complet"
+  },
+  {
+    "key": "en:dried-wholemeal-pasta",
+    "name": "Pâtes sèches au blé complet"
+  },
+  {
+    "key": "en:cooked-unsalted-wholemeal-dried-pasta",
+    "name": "Pâtes sèches au blé complet cuites non salées"
   },
   {
     "key": "fr:pernand-vergelesses-premier-cru-les-plantes-des-champs-et-combottes",
@@ -292,12 +424,24 @@
     "name": "Pommard Les Combes Dessus"
   },
   {
-    "key": "en:garden-chervil-products",
-    "name": "Produits de le cerfeuil commun"
+    "key": "fr:porc-de-franche-comte",
+    "name": "Porc de Franche-Comté"
   },
   {
     "key": "fr:puligny-montrachet-les-combettes",
     "name": "Puligny-Montrachet Les Combettes"
+  },
+  {
+    "key": "fr:puligny-montrachet-premier-cru-les-combettes-blanc",
+    "name": "Puligny-Montrachet premier cru Les Combettes blanc"
+  },
+  {
+    "key": "fr:puligny-montrachet-premier-cru-les-combettes-rouge",
+    "name": "Puligny-Montrachet premier cru Les Combettes rouge"
+  },
+  {
+    "key": "en:pure-apple-compotes",
+    "name": "Pure apple compotes"
   },
   {
     "key": "en:whole-almond-purees",
@@ -312,6 +456,14 @@
     "name": "Riz complet"
   },
   {
+    "key": "en:cooked-brown-rices",
+    "name": "Riz complet cuit"
+  },
+  {
+    "key": "en:unsalted-cooked-brown-rices",
+    "name": "Riz complet cuit non salé"
+  },
+  {
     "key": "fr:saint-aubin-premier-cru-les-combes",
     "name": "Saint-Aubin premier cru Les Combes"
   },
@@ -320,23 +472,59 @@
     "name": "Saint-Aubin premier cru Les Combes au Sud"
   },
   {
+    "key": "fr:saint-aubin-premier-cru-les-combes-au-sud-blanc",
+    "name": "Saint-Aubin premier cru Les Combes au Sud blanc"
+  },
+  {
+    "key": "fr:saint-aubin-premier-cru-les-combes-au-sud-rouge",
+    "name": "Saint-Aubin premier cru Les Combes au Sud rouge"
+  },
+  {
+    "key": "fr:saint-aubin-premier-cru-les-combes-blanc",
+    "name": "Saint-Aubin premier cru Les Combes blanc"
+  },
+  {
+    "key": "fr:saint-aubin-premier-cru-les-combes-rouge",
+    "name": "Saint-Aubin premier cru Les Combes rouge"
+  },
+  {
     "key": "en:prepared-salads",
     "name": "Salades composées"
+  },
+  {
+    "key": "en:prepared-and-canned-salad-with-meat",
+    "name": "Salades composées en conserve à la viande"
+  },
+  {
+    "key": "en:prepared-and-canned-salad-with-fish",
+    "name": "Salades composées en conserve au poisson"
+  },
+  {
+    "key": "en:sandwich-made-with-wholemeal-loaf-bread-and-ham-and-vegetables-and-cheese",
+    "name": "Sandwich pain de mie complet jambon crudités fromage"
   },
   {
     "key": "en:comte-cheese-sandwiches",
     "name": "Sandwichs au Comté"
   },
   {
+    "key": "en:sandwich-made-with-wholemeal-loaf-bread-and-chicken-and-vegetables-and-mayonnaise",
+    "name": "Sandwichs pain de mie complet poulet crudités mayonnaise"
+  },
+  {
     "key": "fr:santenay-premier-cru-la-comme",
     "name": "Santenay premier cru La Comme"
   },
   {
-    "key": "en:whole-wheat-spaghetti",
-    "name": "Spaghettis de blé complet"
+    "key": "fr:santenay-premier-cru-la-comme-blanc",
+    "name": "Santenay premier cru La Comme blanc"
   },
   {
-    "key": "fr:spaghettis-de-ble-dur-complet",
+    "key": "fr:santenay-premier-cru-la-comme-rouge",
+    "name": "Santenay premier cru La Comme rouge"
+  },
+  {
+    "key": "en:whole-durm-wheat-spaghetti",
     "name": "Spaghettis de blé dur complet"
   },
   {
