@@ -4,12 +4,24 @@
     "name": "Angled fish"
   },
   {
+    "key": "en:animal-welfare",
+    "name": "Animal welfare"
+  },
+  {
+    "key": "en:blue-angel",
+    "name": "Blue Angel"
+  },
+  {
     "key": "en:chickens-raised-without-antibiotics",
     "name": "Chickens raised without antibiotics"
   },
   {
     "key": "en:chickens-raised-without-antibiotics-since-birth",
     "name": "Chickens raised without antibiotics since birth"
+  },
+  {
+    "key": "en:eggs-from-animals-fed-without-gmos",
+    "name": "Eggs from animals fed without GMOs"
   },
   {
     "key": "en:es-ec0-017-an",
@@ -64,12 +76,16 @@
     "name": "Hens raised without antibiotics during the laying phase"
   },
   {
+    "key": "en:may-have-an-adverse-effect-on-activity-and-attention-in-children",
+    "name": "May have an adverse effect on activity and attention in children"
+  },
+  {
     "key": "en:mediterranean-international-wine-and-spirit-challenge",
     "name": "Mediterranean International Wine and Spirit Challenge"
   },
   {
-    "key": "en:fsc-c002324",
-    "name": "Multi Packaging Solutions Pharmaceutical and Healthcare Packaging Nottingham"
+    "key": "en:no-artificial-colours-and-preservatives",
+    "name": "No artificial colours and preservatives"
   },
   {
     "key": "en:not-recommended-for-children-under-3-years",
@@ -100,20 +116,32 @@
     "name": "RSPO Mass Balance or Book and Claim"
   },
   {
-    "key": "en:saveurs-de-l-annee-france",
-    "name": "Saveurs de l'Année (France)"
+    "key": "en:no-antibiotics",
+    "name": "Sin antibióticos"
   },
   {
-    "key": "en:without-antibiotics",
-    "name": "Sin antibióticos"
+    "key": "en:without-antibiotics-since-birth",
+    "name": "Sin antibióticos desde el nacimiento"
   },
   {
     "key": "en:no-added-sugar",
     "name": "Sin azúcares añadidos"
   },
   {
+    "key": "en:no-added-thickener",
+    "name": "Sin espesantes añadidos"
+  },
+  {
+    "key": "en:no-added-msg",
+    "name": "Sin GMS añadido"
+  },
+  {
     "key": "en:no-added-fat",
     "name": "Sin grasas añadidas"
+  },
+  {
+    "key": "en:without-addition-of-dairy-products",
+    "name": "Sin productos lácteos añadidos"
   },
   {
     "key": "en:no-added-salt",
@@ -138,9 +166,5 @@
   {
     "key": "en:without-antibiotics-or-hormones",
     "name": "Without antibiotics or hormones"
-  },
-  {
-    "key": "en:without-antibiotics-since-birth",
-    "name": "Without antibiotics since birth"
   }
 ]

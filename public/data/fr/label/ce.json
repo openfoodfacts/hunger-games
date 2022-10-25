@@ -1,6 +1,6 @@
 [
   {
-    "key": "en:utz-certified-cacao",
+    "key": "en:utz-certified-cocoa",
     "name": "Cacao certifié UTZ"
   },
   {
@@ -84,8 +84,16 @@
     "name": "Certifié par Qualisud"
   },
   {
+    "key": "en:utz-certified",
+    "name": "Certifié UTZ"
+  },
+  {
     "key": "en:napsi-certified",
     "name": "Certifiée NAPSI"
+  },
+  {
+    "key": "en:climate-neutral-certified",
+    "name": "Climate Neutral Certified"
   },
   {
     "key": "fr:concours-des-7-ceps",
@@ -96,8 +104,36 @@
     "name": "Déconseillé à certaines catégories de personnes"
   },
   {
+    "key": "en:certified-b-corporation",
+    "name": "Entreprise B certifiée"
+  },
+  {
+    "key": "en:nz-vegetarian-society-vegan-certification",
+    "name": "NZ Vegetarian Society Vegan Certification"
+  },
+  {
+    "key": "fr:produit-certifie",
+    "name": "Produit certifié"
+  },
+  {
+    "key": "en:qs-certification-mark",
+    "name": "QS certification mark"
+  },
+  {
+    "key": "en:certified-quality",
+    "name": "Qualité certifiée"
+  },
+  {
     "key": "en:the-central-islamic-committee-of-thailand",
     "name": "The Central Islamic Committee of Thailand"
+  },
+  {
+    "key": "en:true-source-certified",
+    "name": "True Source Certified"
+  },
+  {
+    "key": "en:tun-certified-organic",
+    "name": "Tún certified organic"
   },
   {
     "key": "en:ukrainian-state-certification-system-conformity-mark",
@@ -114,9 +150,5 @@
   {
     "key": "en:ukrainian-state-certification-system-conformity-mark-voluntary-certification",
     "name": "Ukrainian state certification system conformity mark (voluntary certification)"
-  },
-  {
-    "key": "en:utz-certified",
-    "name": "UTZ Certified"
   }
 ]

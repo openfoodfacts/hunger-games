@@ -8,7 +8,7 @@
     "name": "Bonbons acidulés gélifiés"
   },
   {
-    "key": "en:gelified-candies",
+    "key": "en:gummi-candies",
     "name": "Bonbons gélifiés"
   },
   {
@@ -20,6 +20,10 @@
     "name": "Crocodiles gélifiés"
   },
   {
+    "key": "en:jelly-desserts",
+    "name": "Desserts gélifiés"
+  },
+  {
     "key": "en:flans",
     "name": "Flans gélifiés"
   },
@@ -28,15 +32,31 @@
     "name": "Fraises gélifiées"
   },
   {
+    "key": "en:gummy-chips",
+    "name": "Frites gélifiées"
+  },
+  {
     "key": "en:gelatin",
     "name": "Gélatine"
+  },
+  {
+    "key": "en:madeira-wine-aspic",
+    "name": "Gelée au madère"
+  },
+  {
+    "key": "en:dehydrated-madeira-wine-aspic",
+    "name": "Gelée au madère déshydratée"
   },
   {
     "key": "en:royal-jelly",
     "name": "Gelée royale"
   },
   {
-    "key": "fr:gelees-de-cassis",
+    "key": "en:sea-buckthorn-jellies",
+    "name": "Gelées d'argousiers"
+  },
+  {
+    "key": "en:blackcurrants-jellies",
     "name": "Gelées de cassis"
   },
   {
@@ -72,12 +92,16 @@
     "name": "Gelées de mûres"
   },
   {
-    "key": "fr:gelees-de-pommes",
+    "key": "en:apples-jellies",
     "name": "Gelées de pommes"
   },
   {
     "key": "en:elderberry-jellies",
     "name": "Gelées de sureau noir"
+  },
+  {
+    "key": "en:gelling-agent-for-jam",
+    "name": "Gélifiant pour confitures"
   },
   {
     "key": "en:thickeners",
@@ -86,6 +110,22 @@
   {
     "key": "nl:plantbased-gelatin",
     "name": "Gélifiants végétaux"
+  },
+  {
+    "key": "en:flavoured-milk-jelly",
+    "name": "Lait gélifié aromatisé"
+  },
+  {
+    "key": "en:refrigerated-flavoured-milk-jelly-with-reduced-fat-and-sugar",
+    "name": "Lait gélifié aromatisé allégé en matière grasse et en sucre rayon frais"
+  },
+  {
+    "key": "en:refrigerated-flavoured-milk-jelly-covered-with-caramel",
+    "name": "Lait gélifié aromatisé nappé caramel rayon frais"
+  },
+  {
+    "key": "en:refrigerated-flavoured-milk-jelly",
+    "name": "Lait gélifié aromatisé rayon frais"
   },
   {
     "key": "en:acid-gummy-lassos",
@@ -102,6 +142,10 @@
   {
     "key": "en:honey-and-royal-jelly-mixtures",
     "name": "Préparations à base de miel et gelée royale"
+  },
+  {
+    "key": "en:mixes-for-jelly-desserts",
+    "name": "Préparations pour desserts gélifiés"
   },
   {
     "key": "fr:sucres-gelifiant",

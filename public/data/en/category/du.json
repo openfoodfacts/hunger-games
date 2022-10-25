@@ -8,12 +8,28 @@
     "name": "Cassoulets with duck confit"
   },
   {
+    "key": "en:chinese-dumplings",
+    "name": "Chinese dumplings"
+  },
+  {
+    "key": "en:cooked-ravioles-du-dauphine",
+    "name": "Cooked Ravioles du Dauphiné"
+  },
+  {
+    "key": "en:cooked-steamed-shrimp-dumplings",
+    "name": "Cooked steamed shrimp dumplings"
+  },
+  {
     "key": "en:dried-dulse-seaweeds",
     "name": "Dried dulse seaweeds"
   },
   {
     "key": "en:duck-breasts",
     "name": "Duck breasts"
+  },
+  {
+    "key": "en:duck-brests-cooked-in-pan",
+    "name": "Duck brests cooked in pan"
   },
   {
     "key": "en:duck-confit",
@@ -36,8 +52,36 @@
     "name": "Duck gizzards"
   },
   {
+    "key": "en:duck-leg-meat-with-skin",
+    "name": "Duck leg meat with skin"
+  },
+  {
     "key": "en:duck-legs",
     "name": "Duck legs"
+  },
+  {
+    "key": "en:duck-liver",
+    "name": "Duck liver"
+  },
+  {
+    "key": "en:duck-liver-foie-gras-with-30-pieces",
+    "name": "Duck liver foie gras with 30% pieces"
+  },
+  {
+    "key": "en:duck-liver-foie-gras-with-50-pieces",
+    "name": "Duck liver foie gras with 50% pieces"
+  },
+  {
+    "key": "en:duck-liver-foie-gras-without-pieces",
+    "name": "Duck liver foie gras without pieces"
+  },
+  {
+    "key": "en:duck-meat-and-skin",
+    "name": "Duck meat and skin"
+  },
+  {
+    "key": "fr:mousses-de-canard",
+    "name": "Duck mousse"
   },
   {
     "key": "en:duck-pates",
@@ -76,10 +120,6 @@
     "name": "Dunlop"
   },
   {
-    "key": "en:durum-wheat-farfalle-integral-or-semi-integral",
-    "name": "Durum wheat farfalle integral or semi-integral"
-  },
-  {
     "key": "en:durum-wheat-flours",
     "name": "Durum wheat flours"
   },
@@ -90,10 +130,6 @@
   {
     "key": "en:durum-wheat-letters",
     "name": "Durum wheat letters"
-  },
-  {
-    "key": "en:durum-wheat-letters-integral-or-semi-integral",
-    "name": "Durum wheat letters integral or semi-integral"
   },
   {
     "key": "en:durum-wheat-macaroni",
@@ -148,8 +184,32 @@
     "name": "Dutch apple pies"
   },
   {
+    "key": "en:dutch-bakery-products",
+    "name": "Dutch bakery products"
+  },
+  {
+    "key": "en:dutch-fruits",
+    "name": "Dutch fruits"
+  },
+  {
+    "key": "en:dutch-vegetables",
+    "name": "Dutch vegetables"
+  },
+  {
+    "key": "en:dutch-wines",
+    "name": "Dutch wines"
+  },
+  {
     "key": "en:foies-gras-from-ducks",
     "name": "Foies gras from ducks"
+  },
+  {
+    "key": "en:frozen-cooked-duchesse-potato",
+    "name": "Frozen cooked duchesse potato"
+  },
+  {
+    "key": "en:frozen-duchesse-potatoes",
+    "name": "Frozen duchesse potatoes"
   },
   {
     "key": "en:gnocchi-of-durum-wheat-semolina",
@@ -160,8 +220,64 @@
     "name": "Peking duck"
   },
   {
+    "key": "en:pre-cooked-durum-wheat-in-a-microwaveable-bag",
+    "name": "Pre-cooked durum wheat in a microwaveable bag"
+  },
+  {
+    "key": "en:pre-cooked-durum-wheat-whole-grain-to-pan-fry",
+    "name": "Pre-cooked durum wheat whole grain to pan-fry"
+  },
+  {
+    "key": "en:preserved-duck-gizzards",
+    "name": "Preserved duck gizzards"
+  },
+  {
+    "key": "en:ravioles-du-dauphine",
+    "name": "Ravioles du Dauphiné"
+  },
+  {
+    "key": "en:reheated-duck-confit-conserved-in-rendered-fat-without-skin",
+    "name": "Reheated duck confit conserved in rendered fat without skin"
+  },
+  {
+    "key": "en:roasted-duck-meat",
+    "name": "Roasted duck meat"
+  },
+  {
+    "key": "en:roasted-duck-with-meat-and-skin",
+    "name": "Roasted duck with meat and skin"
+  },
+  {
+    "key": "en:shepherd-s-pie-with-duck",
+    "name": "Shepherd's pie with duck"
+  },
+  {
+    "key": "en:shepherd-s-pie-with-duck-uncooked",
+    "name": "Shepherd's pie with duck uncooked"
+  },
+  {
+    "key": "en:smoked-duck-brests",
+    "name": "Smoked duck brests"
+  },
+  {
     "key": "en:spirals-of-durum-wheat",
     "name": "Spirals of durum wheat"
+  },
+  {
+    "key": "en:unsalted-pre-cooked-durum-wheat-with-whole-grain",
+    "name": "Unsalted pre-cooked durum wheat with whole grain"
+  },
+  {
+    "key": "en:whole-cooked-duck-liver-foie-gras",
+    "name": "Whole cooked duck liver foie gras"
+  },
+  {
+    "key": "en:whole-durm-wheat-spaghetti",
+    "name": "Whole durm wheat spaghetti"
+  },
+  {
+    "key": "en:whole-durum-wheat",
+    "name": "Whole durum wheat"
   },
   {
     "key": "en:whole-durum-wheat-pasta",
@@ -172,19 +288,27 @@
     "name": "Whole foies gras from ducks"
   },
   {
-    "key": "en:whole-or-semi-integral-durum-wheat-spaghetti",
-    "name": "Whole or semi-integral durum wheat spaghetti"
+    "key": "en:whole-or-semi-whole-durum-wheat-farfalle",
+    "name": "Whole or semi-whole durum wheat farfalle"
   },
   {
-    "key": "en:whole-or-semi-integral-durum-wheat-spaghetti-spirals",
-    "name": "Whole or semi-integral durum wheat spaghetti spirals"
+    "key": "en:whole-or-semi-whole-durum-wheat-letters",
+    "name": "Whole or semi-whole durum wheat letters"
   },
   {
-    "key": "en:whole-or-semi-integral-durum-wheat-spaghetti-stars",
-    "name": "Whole or semi-integral durum wheat spaghetti stars"
+    "key": "en:whole-or-semi-whole-durum-wheat-pasta",
+    "name": "Whole or semi-whole durum wheat pasta"
   },
   {
-    "key": "en:wrong-barcode-duplicates",
-    "name": "Wrong barcode duplicates"
+    "key": "en:whole-or-semi-whole-durum-wheat-spaghetti",
+    "name": "Whole or semi-whole durum wheat spaghetti"
+  },
+  {
+    "key": "en:whole-or-semi-whole-durum-wheat-spirals",
+    "name": "Whole or semi-whole durum wheat spirals"
+  },
+  {
+    "key": "en:whole-or-semi-whole-durum-wheat-stars",
+    "name": "Whole or semi-whole durum wheat stars"
   }
 ]

@@ -8,6 +8,10 @@
     "name": "Alkoholische Getränke"
   },
   {
+    "key": "en:beverages-with-cranberry",
+    "name": "Cranberry Getränke"
+  },
+  {
     "key": "en:fermented-drinks",
     "name": "Fermentierte Getränke"
   },
@@ -60,10 +64,6 @@
     "name": "Getreide und Kartoffeln"
   },
   {
-    "key": "fr:biscottes-aux-cereales",
-    "name": "Getreide Zwieback"
-  },
-  {
     "key": "en:flakes",
     "name": "Getreideflocken"
   },
@@ -96,8 +96,16 @@
     "name": "Getreidesirups"
   },
   {
+    "key": "en:cereal-starches",
+    "name": "Getreidestärke"
+  },
+  {
     "key": "en:dried-hams",
     "name": "Getrockene Schinken"
+  },
+  {
+    "key": "en:pulses",
+    "name": "Getrockenete Hülsenfrüchte"
   },
   {
     "key": "en:dried-pineapple",
@@ -124,6 +132,10 @@
     "name": "Getrocknete Fertiggerichte"
   },
   {
+    "key": "en:dried-mixed-fruits",
+    "name": "Getrocknete Früchtemischung"
+  },
+  {
     "key": "en:dehydrated-beverages",
     "name": "Getrocknete Getränke"
   },
@@ -132,12 +144,20 @@
     "name": "Getrocknete Gewürzflanzen"
   },
   {
+    "key": "en:dried-goji",
+    "name": "Getrocknete Goji-Beeren"
+  },
+  {
     "key": "en:dried-bilberries",
     "name": "Getrocknete Heidelbeeren"
   },
   {
     "key": "en:dried-coconut",
     "name": "Getrocknete Kokosnuss"
+  },
+  {
+    "key": "en:dried-bay-laurel",
+    "name": "Getrocknete Lorbeerblätter"
   },
   {
     "key": "en:dried-mangoes",
@@ -176,7 +196,15 @@
     "name": "Getrocknete Produkte zur Rehydrierung"
   },
   {
-    "key": "en:dry-pasta",
+    "key": "en:dried-shiitake-mushrooms",
+    "name": "Getrocknete Shiitake Pilze"
+  },
+  {
+    "key": "en:dried-porcini-mushrooms",
+    "name": "Getrocknete Steinpilze"
+  },
+  {
+    "key": "en:dry-pastas",
     "name": "Getrocknete Teigwaren"
   },
   {
@@ -184,12 +212,28 @@
     "name": "Getrocknete Tomaten"
   },
   {
+    "key": "en:dried-tomato-in-oil",
+    "name": "Getrocknete Tomaten in Öl"
+  },
+  {
+    "key": "en:ground-dried-aromatic-plants",
+    "name": "Getrocknete und gemahlene Kräuter"
+  },
+  {
     "key": "en:dried-vegetables",
     "name": "Getrocknetes Gemüse"
   },
   {
+    "key": "en:dried-seaweeds",
+    "name": "Getrocknetes Seegras"
+  },
+  {
     "key": "en:sweetened-beverages",
     "name": "Gezuckerte Getränke"
+  },
+  {
+    "key": "en:halloween-foods-and-drinks",
+    "name": "Halloweenspeisen und -getränke"
   },
   {
     "key": "en:hot-beverages",
@@ -198,6 +242,10 @@
   {
     "key": "en:instant-beverages",
     "name": "Heißgetränke zum Aufgließen"
+  },
+  {
+    "key": "en:chocolate-powders",
+    "name": "Kakaohaltige Getränkepulver"
   },
   {
     "key": "en:diet-beverages",

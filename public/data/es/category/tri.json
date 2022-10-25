@@ -20,7 +20,15 @@
     "name": "Bebidas de trigo sarraceno"
   },
   {
-    "key": "en:wheat-flakes",
+    "key": "en:beef-tripes",
+    "name": "Beef tripes"
+  },
+  {
+    "key": "en:caen-style-tripes",
+    "name": "Caen-style tripes"
+  },
+  {
+    "key": "en:rolled-wheat-flakes",
     "name": "Copos de trigo"
   },
   {
@@ -36,7 +44,7 @@
     "name": "Espaguetis de trigo duro"
   },
   {
-    "key": "en:whole-or-semi-integral-durum-wheat-spaghetti",
+    "key": "en:whole-or-semi-whole-durum-wheat-spaghetti",
     "name": "Espaguetis de trigo duro integrales o semi-integrales"
   },
   {
@@ -44,7 +52,7 @@
     "name": "Espirales de trigo duro"
   },
   {
-    "key": "en:whole-or-semi-integral-durum-wheat-spaghetti-spirals",
+    "key": "en:whole-or-semi-whole-durum-wheat-spirals",
     "name": "Espirales de trigo duro integrales o semi-integrales"
   },
   {
@@ -52,7 +60,7 @@
     "name": "Estrellas de trigo duro"
   },
   {
-    "key": "en:whole-or-semi-integral-durum-wheat-spaghetti-stars",
+    "key": "en:whole-or-semi-whole-durum-wheat-stars",
     "name": "Estrellas de trigo duro integrales o semi-integrales"
   },
   {
@@ -60,7 +68,7 @@
     "name": "Farfalle de trigo duro"
   },
   {
-    "key": "en:durum-wheat-farfalle-integral-or-semi-integral",
+    "key": "en:whole-or-semi-whole-durum-wheat-farfalle",
     "name": "Farfalle de trigo duro integrales o semi-integrales"
   },
   {
@@ -88,6 +96,10 @@
     "name": "Germen de trigo"
   },
   {
+    "key": "en:glyko-triantafyllo-agrou",
+    "name": "Glyko Triantafyllo Agrou"
+  },
+  {
     "key": "en:wheat-groats",
     "name": "Grañones de trigo"
   },
@@ -100,11 +112,15 @@
     "name": "Grañones de trigo sarraceno"
   },
   {
+    "key": "en:whole-wheat-flours",
+    "name": "Harina de trigo integral"
+  },
+  {
     "key": "en:wheat-flours",
     "name": "Harinas de trigo"
   },
   {
-    "key": "en:white-wheat-flours",
+    "key": "en:wheat-flour-type-55-for-bread",
     "name": "Harinas de trigo blancas"
   },
   {
@@ -156,7 +172,7 @@
     "name": "Harinas de trigo escaña cultivada semi-integrales"
   },
   {
-    "key": "en:whole-wheat-flours",
+    "key": "en:wheat-flour-type-150",
     "name": "Harinas de trigo integrales"
   },
   {
@@ -188,7 +204,7 @@
     "name": "Letras de trigo duro"
   },
   {
-    "key": "en:durum-wheat-letters-integral-or-semi-integral",
+    "key": "en:whole-or-semi-whole-durum-wheat-letters",
     "name": "Letras de trigo duro integrales o semi-integrales"
   },
   {
@@ -200,6 +216,10 @@
     "name": "Macarrones de trigo duro integrales o semi-integrales"
   },
   {
+    "key": "en:olive-oils-from-exeretiko-partheno-eleolado-trizinia",
+    "name": "Olive oils from Exeretiko partheno eleolado \"Trizinia\""
+  },
+  {
     "key": "es:otras-pastas-de-trigo-duro-integrales-integrales-o-semi-integrales",
     "name": "Otras pastas de trigo duro integrales integrales o semi-integrales"
   },
@@ -208,20 +228,32 @@
     "name": "Pan rallado de trigo"
   },
   {
+    "key": "en:wheat-breads",
+    "name": "Panes de trigo"
+  },
+  {
     "key": "en:durum-wheat-pasta",
     "name": "Pasta de trigo duro"
   },
   {
-    "key": "en:wheat-pasta",
-    "name": "Pastas de trigo"
+    "key": "en:khorasan-pasta",
+    "name": "Pastas de trigo de Jorasán"
   },
   {
     "key": "en:durum-wheat-pasta-with-egg",
     "name": "Pastas de trigo duro con huevo"
   },
   {
+    "key": "en:whole-durum-wheat-pasta",
+    "name": "Pastas de trigo duro integrales"
+  },
+  {
     "key": "es:pastas-de-trigo-duro-integrales-o-semi-integrales",
     "name": "Pastas de trigo duro integrales o semi-integrales"
+  },
+  {
+    "key": "es:pastas-de-trigo-duro-semi-integrales",
+    "name": "Pastas de trigo duro semi-integrales"
   },
   {
     "key": "en:buckwheat-pasta",
@@ -252,6 +284,22 @@
     "name": "Plumas de trigo duro integrales o semi-integrales"
   },
   {
+    "key": "en:pork-80-20-trimming",
+    "name": "Pork 80/20 trimming"
+  },
+  {
+    "key": "en:pork-90-10-trimming",
+    "name": "Pork 90/10 trimming"
+  },
+  {
+    "key": "en:prepackaged-caen-style-tripes",
+    "name": "Prepackaged Caen-style tripes"
+  },
+  {
+    "key": "en:provencal-type-tripes-with-tomatoes",
+    "name": "Provencal-type tripes with tomatoes"
+  },
+  {
     "key": "en:wheat-brans",
     "name": "Salvados de trigo"
   },
@@ -280,6 +328,10 @@
     "name": "Siropes de trigo"
   },
   {
+    "key": "en:soft-ripened-cheese-triple-cream-around-40-fat",
+    "name": "Soft-ripened cheese triple cream around 40% fat"
+  },
+  {
     "key": "en:specialty-made-with-tripe",
     "name": "Specialty made with tripe"
   },
@@ -302,6 +354,10 @@
   {
     "key": "en:puffed-khorasan-wheat-cakes",
     "name": "Tortitas de trigo de Jorasán"
+  },
+  {
+    "key": "en:trifles",
+    "name": "Trifles"
   },
   {
     "key": "en:puffed-khorasan-wheat",
@@ -350,6 +406,10 @@
   {
     "key": "en:triple-beer",
     "name": "Triple beer"
+  },
+  {
+    "key": "en:tripoux",
+    "name": "Tripoux"
   },
   {
     "key": "en:triticale",

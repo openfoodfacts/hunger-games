@@ -16,12 +16,16 @@
     "name": "Ohne Alkohol"
   },
   {
-    "key": "en:without-antibiotics",
+    "key": "en:no-antibiotics",
     "name": "Ohne Antibiotika"
   },
   {
     "key": "en:without-antibiotics-or-hormones",
     "name": "Ohne Antibiotika oder Hormone"
+  },
+  {
+    "key": "en:without-antibiotics-since-birth",
+    "name": "Ohne Antibiotika seit der Geburt"
   },
   {
     "key": "en:no-aspartame",
@@ -36,6 +40,10 @@
     "name": "Ohne Ei"
   },
   {
+    "key": "en:no-peanuts",
+    "name": "Ohne Erdnüsse"
+  },
+  {
     "key": "en:without-dyes-or-preservatives",
     "name": "Ohne Farb- oder Konservierungsstoffe"
   },
@@ -48,8 +56,16 @@
     "name": "Ohne Fett"
   },
   {
-    "key": "en:without-gelatin",
+    "key": "en:no-gelatin",
     "name": "Ohne Gelatin"
+  },
+  {
+    "key": "de:ohne-gentechnik",
+    "name": "Ohne Gentechnik"
+  },
+  {
+    "key": "de:ohne-gentechnik-hergestellt",
+    "name": "Ohne Gentechnik hergestellt"
   },
   {
     "key": "en:no-flavour-enhancer",
@@ -80,7 +96,7 @@
     "name": "Ohne künstliche Konservierungsstoffe"
   },
   {
-    "key": "en:no-artificial-additives",
+    "key": "bg:без-изкуствени-добавки",
     "name": "Ohne künstliche Zusätze"
   },
   {
@@ -100,7 +116,11 @@
     "name": "Ohne Nanopartikel"
   },
   {
-    "key": "en:palm-oil-free",
+    "key": "en:without-sodium-nitrite",
+    "name": "Ohne Natriumnitrit"
+  },
+  {
+    "key": "en:no-palm-oil",
     "name": "Ohne Palmöl"
   },
   {
@@ -120,6 +140,10 @@
     "name": "Ohne Salzzusatz"
   },
   {
+    "key": "en:without-sulfur",
+    "name": "Ohne Schwefel"
+  },
+  {
     "key": "en:without-sulfites",
     "name": "Ohne Sulfite"
   },
@@ -134,6 +158,10 @@
   {
     "key": "en:no-thickening-agent",
     "name": "Ohne Verdickungsmittel"
+  },
+  {
+    "key": "en:no-wheat",
+    "name": "Ohne Weizen"
   },
   {
     "key": "en:no-sugar",

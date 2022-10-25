@@ -1,7 +1,19 @@
 [
   {
+    "key": "en:fresh-immature-coconut-kernel",
+    "name": "Amande fraîche de noix de coco verte"
+  },
+  {
     "key": "en:elderberries",
     "name": "Baies de sureau noir"
+  },
+  {
+    "key": "en:cereal-bar-with-almonds-or-hazelnuts",
+    "name": "Barre céréalière aux amandes ou aux noisettes"
+  },
+  {
+    "key": "en:cereal-bar-with-hazelnuts",
+    "name": "Barre céréalière aux noisettes"
   },
   {
     "key": "fr:barres-chocolatees-a-la-noix-de-coco",
@@ -10,10 +22,6 @@
   {
     "key": "en:chocolate-nuts-cookie-bars",
     "name": "Barres chocolatées biscuitées aux noisettes"
-  },
-  {
-    "key": "fr:barres-de-cereales-aux-noisettes",
-    "name": "Barres de céréales aux noisettes"
   },
   {
     "key": "en:cashew-nut-bars",
@@ -34,6 +42,10 @@
   {
     "key": "en:dark-chocolate-biscuits",
     "name": "Biscuits au chocolat noir"
+  },
+  {
+    "key": "en:biscuits-with-nuts",
+    "name": "Biscuits fourrés aux noix"
   },
   {
     "key": "es:galletas-con-tableta-de-chocolate-negro",
@@ -64,6 +76,14 @@
     "name": "Boissons végétales de noix en poudre"
   },
   {
+    "key": "en:refrigerated-black-pudding",
+    "name": "Boudin noir rayon frais"
+  },
+  {
+    "key": "en:sauteed-black-pudding",
+    "name": "Boudin noir sauté"
+  },
+  {
     "key": "en:black-pudding",
     "name": "Boudins noirs"
   },
@@ -80,6 +100,14 @@
     "name": "Boules de noix de coco enrobées de chocolat"
   },
   {
+    "key": "en:breakfast-cereals-filled-with-chocolate-hazelnuts",
+    "name": "Céréales pour petit déjeuner fourrées au chocolat-noisettes"
+  },
+  {
+    "key": "en:breakfast-cereals-filled-with-chocolate-hazelnuts-fortified-with-vitamins-and-chemical-elements",
+    "name": "Céréales pour petit déjeuner fourrées au chocolat-noisettes enrichies en vitamines et minéraux"
+  },
+  {
     "key": "en:walnut-kernels",
     "name": "Cerneaux de noix"
   },
@@ -88,11 +116,43 @@
     "name": "Chambolle-Musigny Les Noirots"
   },
   {
+    "key": "fr:champagnes-blancs-de-noirs",
+    "name": "Champagnes blancs de noirs"
+  },
+  {
     "key": "en:dried-coconut-chips",
     "name": "Chips de noix de coco séchée"
   },
   {
-    "key": "en:milk-chocolate-with-hazelnuts",
+    "key": "fr:chocolat-blanc-en-tablette-aux-noisettes",
+    "name": "Chocolat blanc en tablette aux noisettes"
+  },
+  {
+    "key": "en:dark-chocolate-bar-with-less-than-70-cocoa",
+    "name": "Chocolat noir à moins de 70% de cacao en tablette"
+  },
+  {
+    "key": "en:dark-chocolate-bar-with-dried-fruits",
+    "name": "Chocolat noir en tablette aux fruits secs"
+  },
+  {
+    "key": "en:dark-chocolate-bar-with-more-than-70-cocoa",
+    "name": "Chocolat noir en tablette extra dégustation à 70% de cacao minimum"
+  },
+  {
+    "key": "en:dark-chocolate-bar-filled-with-praline",
+    "name": "Chocolat noir en tablette fourré au praliné"
+  },
+  {
+    "key": "en:dark-chocolate-bar-without-sugar-and-with-artificial-sweeteners",
+    "name": "Chocolat noir en tablette sans sucres ajoutés avec édulcorants"
+  },
+  {
+    "key": "en:dark-chocolate-bar-for-cooking-with-more-than-40-cocoa",
+    "name": "Chocolat noir pâtissier en tablette à 40% de cacao minimum"
+  },
+  {
+    "key": "en:milk-chocolates-with-hazelnuts",
     "name": "Chocolats au lait aux noisettes"
   },
   {
@@ -100,7 +160,7 @@
     "name": "Chocolats aux noisettes"
   },
   {
-    "key": "fr:chocolats-blancs-a-la-noix-de-coco",
+    "key": "en:white-chocolate-with-coconut-pieces",
     "name": "Chocolats blancs à la noix de coco"
   },
   {
@@ -120,8 +180,20 @@
     "name": "Chocolats noirs à la fleur de sel"
   },
   {
-    "key": "fr:chocolats-noirs-aromatises",
+    "key": "en:dark-chocolates-with-raspberries",
+    "name": "Chocolats noirs à la framboise"
+  },
+  {
+    "key": "en:dark-chocolates-with-pear",
+    "name": "Chocolats noirs à la poire"
+  },
+  {
+    "key": "en:flavoured-dark-chocolates",
     "name": "Chocolats noirs aromatisés"
+  },
+  {
+    "key": "en:dark-chocolates-with-coffee",
+    "name": "Chocolats noirs au café"
   },
   {
     "key": "en:dark-chocolate-with-caramel",
@@ -130,6 +202,10 @@
   {
     "key": "en:dark-chocolates-with-ginger",
     "name": "Chocolats noirs au gingembre"
+  },
+  {
+    "key": "fr:chocolats-noirs-au-piment",
+    "name": "Chocolats noirs au piment"
   },
   {
     "key": "en:dark-chocolates-with-almonds",
@@ -144,6 +220,10 @@
     "name": "Chocolats noirs aux fèves de cacao"
   },
   {
+    "key": "en:dark-chocolate-bar-with-fruits",
+    "name": "Chocolats noirs aux fruits"
+  },
+  {
     "key": "en:dark-chocolates-with-hazelnuts",
     "name": "Chocolats noirs aux noisettes"
   },
@@ -152,12 +232,28 @@
     "name": "Chocolats noirs aux pistaches"
   },
   {
+    "key": "en:dark-chocolates-with-praline",
+    "name": "Chocolats noirs aux pralines"
+  },
+  {
+    "key": "en:dark-chocolates-with-raisins",
+    "name": "Chocolats noirs aux raisins"
+  },
+  {
+    "key": "en:dark-chocolate-bar",
+    "name": "Chocolats noirs en tablette"
+  },
+  {
     "key": "en:extra-fine-dark-chocolates",
     "name": "Chocolats noirs extra fin"
   },
   {
     "key": "en:filled-dark-chocolates",
     "name": "Chocolats noirs fourrés"
+  },
+  {
+    "key": "en:dark-chocolate-filled-with-mint-confectionery",
+    "name": "Chocolats noirs fourrés à la menthe"
   },
   {
     "key": "en:salted-dark-chocolates",
@@ -172,12 +268,48 @@
     "name": "Cookies au chocolat et aux noisettes"
   },
   {
+    "key": "en:cooked-scallops-with-coral",
+    "name": "Coquille Saint-Jacques cuite avec noix et corail"
+  },
+  {
+    "key": "en:scallops-without-coral",
+    "name": "Coquilles Saint-Jacques avec noix"
+  },
+  {
+    "key": "en:scallops-with-coral",
+    "name": "Coquilles Saint-Jacques avec noix et corail"
+  },
+  {
     "key": "fr:cremes-dessert-chocolat-noir",
     "name": "Crèmes dessert chocolat noir"
   },
   {
+    "key": "fr:cremes-glacees-a-la-noix-de-pecan",
+    "name": "Crèmes glacées à la Noix de Pécan"
+  },
+  {
+    "key": "en:crepe-filled-with-scallops",
+    "name": "Crêpe aux noix de St Jacques"
+  },
+  {
+    "key": "en:crepes-filled-with-chocolate-and-hazelnut-spread",
+    "name": "Crêpes fourrées à la pâte à tartiner chocolat et noisettes"
+  },
+  {
+    "key": "fr:farine-de-ble-noir-de-bretagne",
+    "name": "Farine de blé noir de Bretagne"
+  },
+  {
     "key": "en:dried-coconut-flour",
-    "name": "Farine de noix de coco séchée"
+    "name": "Farines de noix de coco"
+  },
+  {
+    "key": "fr:filets-de-lieu-noir",
+    "name": "Filets de lieu noir"
+  },
+  {
+    "key": "fr:flammekueches-aux-noix-de-st-jacques",
+    "name": "Flammekueches aux Noix de St Jacques"
   },
   {
     "key": "en:elderberry-flowers",
@@ -196,8 +328,12 @@
     "name": "Fromages aux noix"
   },
   {
-    "key": "fr:galettes-de-ble-noir",
+    "key": "en:plain-buckwheat-crepes",
     "name": "Galettes de blé noir"
+  },
+  {
+    "key": "fr:galettes-de-ble-noir-champignons-lardons-emmental",
+    "name": "Galettes de blé noir champignons lardons emmental"
   },
   {
     "key": "en:puffed-corn-cakes-with-black-chocolate",
@@ -208,8 +344,20 @@
     "name": "Galettes de riz au chocolat noir"
   },
   {
+    "key": "en:hazelnut-cream-stuffed-wafers",
+    "name": "Gaufrettes fourrées chocolat noisettes"
+  },
+  {
     "key": "en:elderberry-jellies",
     "name": "Gelées de sureau noir"
+  },
+  {
+    "key": "en:beef-round",
+    "name": "Gîte à la noix de boeuf"
+  },
+  {
+    "key": "en:cooked-beef-round",
+    "name": "Gîte à la noix de boeuf cuit"
   },
   {
     "key": "en:coconut-ice-cream-tubs",
@@ -224,8 +372,16 @@
     "name": "Haricots noirs"
   },
   {
-    "key": "fr:haricots-noirs-en-conserve",
+    "key": "en:canned-black-beans",
     "name": "Haricots noirs en conserve"
+  },
+  {
+    "key": "it:olio-di-noce-di-cedro",
+    "name": "Huile de noix de cèdre"
+  },
+  {
+    "key": "fr:huile-de-noix-du-perigord",
+    "name": "Huile de noix du Périgord"
   },
   {
     "key": "en:hazelnut-oils",
@@ -244,7 +400,11 @@
     "name": "Huiles de noix de pécan"
   },
   {
-    "key": "fr:jambons-de-la-foret-noire",
+    "key": "fr:jambon-noir-de-bigorre",
+    "name": "Jambon noir de Bigorre"
+  },
+  {
+    "key": "de:schwarzwälder-schinken",
     "name": "Jambons de la Forêt Noire"
   },
   {
@@ -252,8 +412,40 @@
     "name": "Lentilles noires"
   },
   {
-    "key": "fr:mueslis-aux-noix",
-    "name": "Mueslis aux noix"
+    "key": "en:saithe",
+    "name": "Lieu noir"
+  },
+  {
+    "key": "en:saithe-cooked",
+    "name": "Lieu noir cuit"
+  },
+  {
+    "key": "en:frozen-saithe",
+    "name": "Lieu noir surgelé"
+  },
+  {
+    "key": "fr:macarons-a-la-noix-de-coco",
+    "name": "Macarons à la noix de coco"
+  },
+  {
+    "key": "fr:mousses-au-chocolat-noir",
+    "name": "Mousses au chocolat noir"
+  },
+  {
+    "key": "fr:moutardes-au-noix",
+    "name": "Moutardes au noix"
+  },
+  {
+    "key": "en:black-mulberries",
+    "name": "Mûres noires"
+  },
+  {
+    "key": "fr:noisette-de-cervione",
+    "name": "Noisette de Cervione"
+  },
+  {
+    "key": "en:hazelnut-grilled-salted",
+    "name": "Noisette grillée salée"
   },
   {
     "key": "en:hazelnuts",
@@ -264,28 +456,24 @@
     "name": "Noisettes caramélisées"
   },
   {
-    "key": "en:raw-hazelnuts",
-    "name": "Noisettes crues"
-  },
-  {
     "key": "en:shelled-hazelnuts",
     "name": "Noisettes décortiquées"
   },
   {
-    "key": "en:shelled-raw-hazelnuts",
-    "name": "Noisettes décortiquées crues"
+    "key": "en:blanched-shelled-hazelnuts",
+    "name": "Noisettes décortiquées émondées"
   },
   {
-    "key": "en:blanched-shelled-raw-hazelnuts",
-    "name": "Noisettes décortiquées crues émondées"
+    "key": "en:shelled-hazelnuts-with-skin",
+    "name": "Noisettes décortiquées non émondées"
   },
   {
-    "key": "en:shelled-raw-hazelnuts-with-skin",
-    "name": "Noisettes décortiquées crues non émondées"
-  },
-  {
-    "key": "fr:noisettes-en-poudre",
+    "key": "en:hazelnuts-powder",
     "name": "Noisettes en poudre"
+  },
+  {
+    "key": "en:chocolate-covered-hazelnuts",
+    "name": "Noisettes enrobées de chocolat"
   },
   {
     "key": "en:roasted-hazelnuts",
@@ -312,7 +500,11 @@
     "name": "Noix de Cajou grillées"
   },
   {
-    "key": "fr:noix-de-cajou-salees",
+    "key": "en:unsalted-cashews",
+    "name": "Noix de cajou non-salées"
+  },
+  {
+    "key": "en:salted-cashews",
     "name": "Noix de cajou salées"
   },
   {
@@ -320,12 +512,24 @@
     "name": "Noix de coco"
   },
   {
+    "key": "en:fresh-ripe-coconut-kernel",
+    "name": "Noix de coco mûre fraîche"
+  },
+  {
     "key": "en:grated-coconut",
     "name": "Noix de coco râpée"
   },
   {
+    "key": "en:dried-coconut-kernel",
+    "name": "Noix de coco sèche"
+  },
+  {
     "key": "en:dried-coconut",
     "name": "Noix de coco sèches"
+  },
+  {
+    "key": "fr:noix-de-grenoble",
+    "name": "Noix de Grenoble"
   },
   {
     "key": "en:macadamia-nuts",
@@ -334,6 +538,10 @@
   {
     "key": "en:shelled-macadamia-nuts",
     "name": "Noix de Macadamia décortiquées"
+  },
+  {
+    "key": "en:grilled-and-salted-macadamia-nut",
+    "name": "Noix de macadamia grillée et salée"
   },
   {
     "key": "en:nutmeg",
@@ -356,12 +564,24 @@
     "name": "Noix de pécan décortiquées"
   },
   {
+    "key": "en:salted-pecan-nut",
+    "name": "Noix de pécan salées"
+  },
+  {
     "key": "en:scallop",
     "name": "Noix de Saint-Jacques"
   },
   {
-    "key": "en:shelled-walnuts",
-    "name": "Noix décortiquées"
+    "key": "en:veal-tenderloins",
+    "name": "Noix de veau"
+  },
+  {
+    "key": "en:grilled-veal-tenderloin",
+    "name": "Noix de veau grillée"
+  },
+  {
+    "key": "en:roasted-veal-tenderloin",
+    "name": "Noix de veau rôtie"
   },
   {
     "key": "en:brazil-nuts",
@@ -372,24 +592,68 @@
     "name": "Noix du Brésil décortiquées"
   },
   {
+    "key": "fr:noix-du-perigord",
+    "name": "Noix du Périgord"
+  },
+  {
+    "key": "en:fresh-walnut",
+    "name": "Noix fraîche"
+  },
+  {
+    "key": "fr:noix-fraiches",
+    "name": "Noix fraîches"
+  },
+  {
+    "key": "en:french-nuts",
+    "name": "Noix françaises"
+  },
+  {
     "key": "en:caramelized-mixed-nuts",
     "name": "Noix mélangées caramélisées"
+  },
+  {
+    "key": "en:dried-husked-walnut",
+    "name": "Noix séchée pelée"
   },
   {
     "key": "en:black-nougat",
     "name": "Nougats noirs"
   },
   {
+    "key": "fr:oeufs-de-lompes-noirs",
+    "name": "Oeufs de lompes noirs"
+  },
+  {
     "key": "en:black-olives",
     "name": "Olives noires"
+  },
+  {
+    "key": "en:black-olives-in-oil",
+    "name": "Olives noires à l'huile"
+  },
+  {
+    "key": "fr:olives-noires-de-la-vallee-des-baux-de-provence",
+    "name": "Olives noires de la Vallée des Baux-de-Provence"
+  },
+  {
+    "key": "fr:olives-noires-de-nyons",
+    "name": "Olives noires de Nyons"
   },
   {
     "key": "en:black-pitted-olives",
     "name": "Olives noires dénoyautées"
   },
   {
+    "key": "en:black-olives-in-brine",
+    "name": "Olives noires en saumure"
+  },
+  {
     "key": "en:whole-black-olives",
     "name": "Olives noires entières"
+  },
+  {
+    "key": "en:breads-with-nuts",
+    "name": "Pains aux noix"
   },
   {
     "key": "en:hazelnut-spreads",
@@ -400,8 +664,16 @@
     "name": "Pâtes à tartiner aux noisettes et au cacao"
   },
   {
-    "key": "en:prepared-dishes-with-scallops",
-    "name": "Plats préparés aux noix de Saint-Jacques"
+    "key": "en:american-sea-scallop-without-coral",
+    "name": "Pecten d'Amérique avec noix cru"
+  },
+  {
+    "key": "en:peru-sea-scallop-without-coral",
+    "name": "Pétoncle avec noix crue"
+  },
+  {
+    "key": "en:dishes-with-scallops",
+    "name": "Plats aux noix de Saint-Jacques"
   },
   {
     "key": "en:black-peppercorns",
@@ -420,12 +692,20 @@
     "name": "Pommard Les Croix Noires"
   },
   {
+    "key": "fr:pomme-de-terre-de-noirmoutier",
+    "name": "Pomme de terre de Noirmoutier"
+  },
+  {
     "key": "fr:pommes-noisettes",
     "name": "Pommes noisettes"
   },
   {
-    "key": "fr:pommes-noisettes-surgelees",
+    "key": "en:frozen-pre-fried-mashed-potato-balls",
     "name": "Pommes noisettes surgelées"
+  },
+  {
+    "key": "fr:porc-noir-de-bigorre",
+    "name": "Porc noir de Bigorre"
   },
   {
     "key": "en:elderberry-products",
@@ -444,12 +724,24 @@
     "name": "Purées de noix de coco"
   },
   {
-    "key": "fr:radis-noirs",
+    "key": "en:black-radishes",
     "name": "Radis noirs"
+  },
+  {
+    "key": "en:fresh-black-radishes",
+    "name": "Radis noirs frais"
   },
   {
     "key": "en:black-grapes",
     "name": "Raisins noirs"
+  },
+  {
+    "key": "en:black-seedless-grapes",
+    "name": "Raisins noirs épépinés"
+  },
+  {
+    "key": "en:black-rices",
+    "name": "Riz noir"
   },
   {
     "key": "en:brown-jasmine-rices",
@@ -460,6 +752,18 @@
     "name": "Rochers à la noix de coco"
   },
   {
+    "key": "fr:rochers-au-chocolat-noir",
+    "name": "Rochers au chocolat noir"
+  },
+  {
+    "key": "en:shortbread-cookie-with-coconut",
+    "name": "Sablés à la noix de coco"
+  },
+  {
+    "key": "en:black-salsify",
+    "name": "Salsifis noirs"
+  },
+  {
     "key": "fr:saucissons-secs-au-noix",
     "name": "Saucissons secs au noix"
   },
@@ -468,12 +772,20 @@
     "name": "Saucissons secs aux noisettes"
   },
   {
-    "key": "fr:sorbets-a-la-noix-de-coco",
+    "key": "en:coconut-sorbets",
     "name": "Sorbets à la noix de coco"
   },
   {
-    "key": "fr:tapenades-noires",
+    "key": "en:processed-cheese-with-fresh-cream-cheese-and-walnuts",
+    "name": "Spécialité fromagère fondante au fromage blanc et aux noix"
+  },
+  {
+    "key": "en:black-tapenades",
     "name": "Tapenades noires"
+  },
+  {
+    "key": "en:scallops-tart",
+    "name": "Tarte aux noix de Saint-Jacques"
   },
   {
     "key": "en:coconut-pies",
@@ -486,6 +798,10 @@
   {
     "key": "en:pecan-pies",
     "name": "Tartes aux noix de pécan"
+  },
+  {
+    "key": "en:brewed-black-tea-without-sugar",
+    "name": "Thé noir infusé non sucré"
   },
   {
     "key": "en:black-teas",
@@ -512,18 +828,6 @@
     "name": "Touron à la noix de coco"
   },
   {
-    "key": "en:black-chocolate-turron-with-almonds",
-    "name": "Turrón au chocolat noir aux amandes"
-  },
-  {
-    "key": "en:black-chocolate-turron-with-puffed-rice",
-    "name": "Turrón au chocolat noir avec riz soufflé"
-  },
-  {
-    "key": "en:black-chocolate-turron-filled-with-fruit-praline",
-    "name": "Turrón au chocolat noir garni de praliné aux fruits"
-  },
-  {
     "key": "en:black-rice-vinegars",
     "name": "Vinaigres de riz noirs"
   },
@@ -536,7 +840,7 @@
     "name": "Yaourts à la noix de coco"
   },
   {
-    "key": "fr:yaourts-aux-noisettes",
+    "key": "en:hazelnut-yogurts",
     "name": "Yaourts aux noisettes"
   }
 ]

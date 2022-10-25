@@ -4,15 +4,19 @@
     "name": "Äpfel"
   },
   {
+    "key": "en:apples-jellies",
+    "name": "Apfel Gelees"
+  },
+  {
     "key": "en:apple-cereal-bars",
     "name": "Apfel Müsliriegel"
   },
   {
-    "key": "fr:compotes-pommes-abricot",
+    "key": "en:apricot-apple-compotes",
     "name": "Apfel-Aprikosen-Kompott"
   },
   {
-    "key": "fr:compotes-pommes-banane",
+    "key": "en:banana-apple-compotes",
     "name": "Apfel-Bananen-Kompott"
   },
   {
@@ -34,221 +38,5 @@
   {
     "key": "fr:eau-de-vie-de-cidre-de-normandie",
     "name": "Apfelbrand aus der Normandie"
-  },
-  {
-    "key": "fr:eau-de-vie-de-cidre-du-maine",
-    "name": "Apfelbrand aus Maine"
-  },
-  {
-    "key": "en:squeezed-apple-juices",
-    "name": "Apfeldirektsäfte"
-  },
-  {
-    "key": "en:apple-compotes",
-    "name": "Apfelkompott"
-  },
-  {
-    "key": "en:apple-pies",
-    "name": "Apfelkuchen"
-  },
-  {
-    "key": "en:apple-soft-drinks",
-    "name": "Apfellimonaden"
-  },
-  {
-    "key": "en:apple-jams",
-    "name": "Apfelmarmeladen"
-  },
-  {
-    "key": "en:applesauces",
-    "name": "Apfelmus"
-  },
-  {
-    "key": "en:apple-nectars",
-    "name": "Apfelnektare"
-  },
-  {
-    "key": "en:apple-pastes",
-    "name": "Apfelpaste"
-  },
-  {
-    "key": "en:apple-juices",
-    "name": "Apfelsaft"
-  },
-  {
-    "key": "en:concentrated-apple-juices",
-    "name": "Apfelsäfte aus Konzentrat"
-  },
-  {
-    "key": "en:apple-juice-and-soy-drinks",
-    "name": "Apfelsäfte und Sojagetränke"
-  },
-  {
-    "key": "en:apple-syrups",
-    "name": "Apfelsirups"
-  },
-  {
-    "key": "en:apple-sorbets",
-    "name": "Apfelsorbets"
-  },
-  {
-    "key": "en:apple-turnovers",
-    "name": "Apfeltaschen"
-  },
-  {
-    "key": "en:ciders",
-    "name": "Apfelweine"
-  },
-  {
-    "key": "en:appenzeller-cheese",
-    "name": "Appenzeller"
-  },
-  {
-    "key": "en:apple-chutneys",
-    "name": "Apple chutneys"
-  },
-  {
-    "key": "en:applewood-cheese",
-    "name": "Applewood Käse"
-  },
-  {
-    "key": "en:apricot-cereal-bars",
-    "name": "Apricot cereal bars"
-  },
-  {
-    "key": "en:apricot-coulis",
-    "name": "Apricot coulis"
-  },
-  {
-    "key": "en:apricot-marmalades",
-    "name": "Apricot Marmalades"
-  },
-  {
-    "key": "en:apricot-pies",
-    "name": "Apricot pies"
-  },
-  {
-    "key": "en:apricot-tartlets",
-    "name": "Apricot tartlets"
-  },
-  {
-    "key": "en:apricots",
-    "name": "Aprikosen"
-  },
-  {
-    "key": "en:apricots-in-syrup",
-    "name": "Aprikosen in Sirup"
-  },
-  {
-    "key": "en:apricot-yogurts",
-    "name": "Aprikosenjoghurt"
-  },
-  {
-    "key": "fr:compotes-d-abricot",
-    "name": "Aprikosenkompott"
-  },
-  {
-    "key": "en:apricot-nectars",
-    "name": "Aprikosennektare"
-  },
-  {
-    "key": "en:apricot-juices",
-    "name": "Aprikosensäfte"
-  },
-  {
-    "key": "en:concentrated-apricot-juices",
-    "name": "Aprikosensäfte aus Konzentrat"
-  },
-  {
-    "key": "en:apricot-jams",
-    "name": "Aprokosenmarmeladen"
-  },
-  {
-    "key": "en:pear-applesauces",
-    "name": "Birnen-Apfelmus"
-  },
-  {
-    "key": "en:black-pudding-with-appel",
-    "name": "Black pudding with appel"
-  },
-  {
-    "key": "en:canada-reinettes-apples",
-    "name": "Canada Reinettes apples"
-  },
-  {
-    "key": "en:dutch-apple-pies",
-    "name": "Dutch apple pies"
-  },
-  {
-    "key": "en:strawberry-applesauces",
-    "name": "Erdbeer-Apfelmus"
-  },
-  {
-    "key": "en:fuji-apples",
-    "name": "Fuji apples"
-  },
-  {
-    "key": "en:gala-apples",
-    "name": "Gala Äpfel"
-  },
-  {
-    "key": "en:refrigerated-squeezed-apple-juices",
-    "name": "Gekühlte Apfeldirektsäfte"
-  },
-  {
-    "key": "en:dried-apples",
-    "name": "Getrocknete Apfel"
-  },
-  {
-    "key": "en:dried-apricots",
-    "name": "Getrocknete Aprikosen"
-  },
-  {
-    "key": "en:golden-delicious-apples",
-    "name": "Golden Delicious Äpfel"
-  },
-  {
-    "key": "en:granny-smith-apples",
-    "name": "Granny Smith Äpfel"
-  },
-  {
-    "key": "en:raspberry-applesauces",
-    "name": "Himbeer-Apfelmus"
-  },
-  {
-    "key": "en:mango-applesauces",
-    "name": "Mango-Apfel-Soßen"
-  },
-  {
-    "key": "en:peach-applesauce",
-    "name": "Pfrisich-Apfel-Sauce"
-  },
-  {
-    "key": "en:red-delicious-apples",
-    "name": "Red Delicious apples"
-  },
-  {
-    "key": "en:rhubarb-applesauces",
-    "name": "Rhabarber-Apfelmus"
-  },
-  {
-    "key": "en:russet-apples",
-    "name": "Russet apples"
-  },
-  {
-    "key": "en:acidic-apples",
-    "name": "Saure Äpfel"
-  },
-  {
-    "key": "en:sparkling-ciders",
-    "name": "Sprudelnde Apfelweine"
-  },
-  {
-    "key": "en:sweet-apples",
-    "name": "Süße Äpfel"
-  },
-  {
-    "key": "en:sweet-ciders",
-    "name": "Süße Apfelweine"
   }
 ]

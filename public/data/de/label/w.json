@@ -128,8 +128,16 @@
     "name": "65% weniger Fet"
   },
   {
+    "key": "en:animal-welfare",
+    "name": "Animal welfare"
+  },
+  {
     "key": "de:berliner-wein-trophy",
     "name": "Berliner Wein Trophy"
+  },
+  {
+    "key": "en:choices",
+    "name": "Bewusst Wählen"
   },
   {
     "key": "en:catad-or-santiago-de-chile-wine-awards",
@@ -144,6 +152,10 @@
     "name": "Champion Winter Beer of Britain"
   },
   {
+    "key": "en:chicken-welfare",
+    "name": "Chicken welfare"
+  },
+  {
     "key": "en:chickens-raised-without-antibiotics-since-birth",
     "name": "Chickens raised without antibiotics since birth"
   },
@@ -152,12 +164,20 @@
     "name": "Decanter World Wine Awards"
   },
   {
+    "key": "en:eggs-from-animals-fed-without-gmos",
+    "name": "Eggs from animals fed without GMOs"
+  },
+  {
     "key": "en:enriched-wih-minerals",
     "name": "Enriched wih minerals"
   },
   {
     "key": "en:fed-without-gmos",
     "name": "Fed without GMOs"
+  },
+  {
+    "key": "en:fed-without-soy",
+    "name": "Fed without soy"
   },
   {
     "key": "en:hens-raised-without-antibiotics-during-the-laying-phase",
@@ -184,12 +204,20 @@
     "name": "Mit wenig oder keinem Salz"
   },
   {
+    "key": "en:national-standard-for-bulgarian-white-cheese-in-brine",
+    "name": "National standard for Bulgarian white cheese in brine"
+  },
+  {
     "key": "en:natural-product-without-vegetable-oils",
     "name": "Natural product without vegetable oils"
   },
   {
     "key": "en:do-not-freeze-again",
     "name": "Nicht wieder einfrieren"
+  },
+  {
+    "key": "en:no-wheat",
+    "name": "Ohne Weizen"
   },
   {
     "key": "en:porks-raised-without-antibiotics-after-first-age",
@@ -200,20 +228,12 @@
     "name": "Porks raised without antibiotics after weaning"
   },
   {
-    "key": "en:salted-with-dry-salt",
-    "name": "Salted with dry salt"
-  },
-  {
     "key": "en:san-francisco-chronicle-wine-competition",
     "name": "San Francisco Chronicle Wine Competition"
   },
   {
     "key": "en:san-francisco-international-wine-competition",
     "name": "San Francisco International Wine Competition"
-  },
-  {
-    "key": "en:smoked-with-beech-wood",
-    "name": "Smoked with beech wood"
   },
   {
     "key": "en:smoked-with-oak-wood",
@@ -234,6 +254,10 @@
   {
     "key": "en:thessaloniki-international-wine-competition",
     "name": "Thessaloniki International Wine Competition"
+  },
+  {
+    "key": "en:excessive-consumption-can-have-laxative-effects",
+    "name": "Übermäßiger Konsum kann abführend wirken"
   },
   {
     "key": "en:low-sugar",
@@ -260,20 +284,12 @@
     "name": "With Guérande salt"
   },
   {
-    "key": "en:with-natural-sulfites",
-    "name": "With natural sulfites"
-  },
-  {
     "key": "en:without-antibiotics-after-first-age",
     "name": "Without antibiotics after first age"
   },
   {
     "key": "en:without-antibiotics-after-weaning",
     "name": "Without antibiotics after weaning"
-  },
-  {
-    "key": "en:without-antibiotics-since-birth",
-    "name": "Without antibiotics since birth"
   },
   {
     "key": "en:without-azo-dyes",
@@ -288,12 +304,8 @@
     "name": "Without modified starches"
   },
   {
-    "key": "en:without-sodium-nitrite",
-    "name": "Without sodium nitrite"
-  },
-  {
-    "key": "en:without-sulfur",
-    "name": "Without sulfur"
+    "key": "en:without-pesticide-residues",
+    "name": "Without pesticide residues"
   },
   {
     "key": "en:world-beer-awards",
@@ -334,5 +346,41 @@
   {
     "key": "en:world-beer-awards-2017",
     "name": "World Beer Awards 2017"
+  },
+  {
+    "key": "en:world-beer-awards-2018",
+    "name": "World Beer Awards 2018"
+  },
+  {
+    "key": "en:world-beer-awards-2019",
+    "name": "World Beer Awards 2019"
+  },
+  {
+    "key": "en:ws-bio-119",
+    "name": "WS-BIO-119"
+  },
+  {
+    "key": "en:ws-bio-130",
+    "name": "WS-BIO-130"
+  },
+  {
+    "key": "en:ws-bio-140",
+    "name": "WS-BIO-140"
+  },
+  {
+    "key": "en:ws-bio-142",
+    "name": "WS-BIO-142"
+  },
+  {
+    "key": "en:ws-bio-151",
+    "name": "WS-BIO-151"
+  },
+  {
+    "key": "en:ws-bio-152",
+    "name": "WS-BIO-152"
+  },
+  {
+    "key": "en:ws-bio-154",
+    "name": "WS-BIO-154"
   }
 ]
