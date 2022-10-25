@@ -4,28 +4,32 @@
     "name": "Beurres de soja"
   },
   {
-    "key": "en:pineapple-juice-and-soy-drinks",
-    "name": "Boissons à base de jus d'ananas et de soja"
+    "key": "en:puffed-salty-snacks-made-from-potato-and-soy",
+    "name": "Biscuit apéritif soufflé à base de pomme de terre et de soja"
   },
   {
-    "key": "en:orange-juice-and-soy-drinks",
-    "name": "Boissons à base de jus d'orange et de soja"
+    "key": "en:plain-soy-drink-fortified-with-calcium",
+    "name": "Boisson au soja nature enrichie en calcium"
   },
   {
-    "key": "en:fruit-juice-and-soy-drinks",
-    "name": "Boissons à base de jus de fruits et de soja"
+    "key": "en:soy-drinks-flavoured-with-sugar",
+    "name": "Boissons au soja aromatisées sucrées"
   },
   {
-    "key": "en:peach-juice-and-soy-drinks",
-    "name": "Boissons à base de jus de pêche et de soja"
+    "key": "en:flavoured-soy-drinks-enriched-in-calcium-with-sugar",
+    "name": "Boissons au soja aromatisées sucrées enrichies en calcium"
   },
   {
-    "key": "en:apple-juice-and-soy-drinks",
-    "name": "Boissons à base de jus de pomme et de soja"
+    "key": "en:fruit-and-soy-beverages",
+    "name": "Boissons aux fruits et au soja"
   },
   {
-    "key": "en:multifruit-juice-and-soy-drinks",
-    "name": "Boissons à base de jus multifruits et de soja"
+    "key": "en:unsweetened-natural-soy-milks",
+    "name": "Boissons de soja nature non sucrées"
+  },
+  {
+    "key": "en:sweetened-natural-soy-milks",
+    "name": "Boissons de soja nature sucrées"
   },
   {
     "key": "en:soy-milks",
@@ -48,32 +52,56 @@
     "name": "Boissons végétales de soja en poudre"
   },
   {
-    "key": "en:unsweetened-natural-soy-milks",
-    "name": "Boissons végétales de soja nature"
+    "key": "en:balls-from-soy-and-or-wheat-proteins",
+    "name": "Boulettes à base de protéines de soja et ou blé"
   },
   {
     "key": "en:soy-based-creams-for-cooking",
     "name": "Crèmes végétales à base de soja pour cuisiner"
   },
   {
+    "key": "en:flavoured-soy-dessert",
+    "name": "Dessert au soja aromatisé"
+  },
+  {
+    "key": "en:soy-dessert-with-fruits",
+    "name": "Dessert au soja aux fruits"
+  },
+  {
     "key": "en:soy-desserts",
     "name": "Desserts au soja"
+  },
+  {
+    "key": "en:soy-milk-yogurts",
+    "name": "Desserts de jus de soja fermenté"
   },
   {
     "key": "en:vanilla-soy-desserts",
     "name": "Desserts de soja à la vanille"
   },
   {
-    "key": "en:cocoa-soy-desserts",
-    "name": "Desserts de soja au cacao"
+    "key": "en:caramel-soy-desserts",
+    "name": "Desserts de soja au caramel"
+  },
+  {
+    "key": "en:chocolate-soy-desserts",
+    "name": "Desserts de soja au chocolat"
   },
   {
     "key": "en:soybean-flours",
     "name": "Farines de soja"
   },
   {
+    "key": "en:soy-beans",
+    "name": "Fèves de soja"
+  },
+  {
     "key": "en:soy-flakes",
     "name": "Flocons de soja"
+  },
+  {
+    "key": "en:patties-from-soy-and-or-wheat-proteins",
+    "name": "Galettes à base de protéines de soja et ou blé"
   },
   {
     "key": "en:soy-steak",
@@ -81,11 +109,11 @@
   },
   {
     "key": "en:soybean-oils",
-    "name": "Huiles de soja"
+    "name": "Huile de soja"
   },
   {
-    "key": "en:sweetened-natural-soy-milks",
-    "name": "Laits de soja naturel avec du sucre"
+    "key": "en:soy-lecithin",
+    "name": "Lécithine de soja"
   },
   {
     "key": "en:soy-sauces",
@@ -100,16 +128,28 @@
     "name": "Sauces au soja sucrées"
   },
   {
-    "key": "en:soy",
-    "name": "Soja"
-  },
-  {
     "key": "en:puffed-soybeans",
     "name": "Soja soufflé"
   },
   {
-    "key": "en:soy-milk-yogurts",
-    "name": "Yaourts au soja"
+    "key": "en:meat-analogues-from-soy-or-wheat-proteins",
+    "name": "Substituts de viande à partir de protéines de soja ou blé"
+  },
+  {
+    "key": "en:soy-vermicelli",
+    "name": "Vermicelles de soja"
+  },
+  {
+    "key": "en:unsalted-cooked-soy-noodles",
+    "name": "Vermicelles de soja cuites non salées"
+  },
+  {
+    "key": "en:dried-soy-vermicelli",
+    "name": "Vermicelles de soja sèches"
+  },
+  {
+    "key": "en:apricot-soy-yogurts",
+    "name": "Yaourts de soja à l'abricot"
   },
   {
     "key": "en:banana-soy-yogurts",
@@ -118,6 +158,10 @@
   {
     "key": "en:strawberry-soy-yogurts",
     "name": "Yaourts de soja à la fraise"
+  },
+  {
+    "key": "en:raspberry-soy-yogurts",
+    "name": "Yaourts de soja à la framboise"
   },
   {
     "key": "en:blueberry-soy-yogurts",

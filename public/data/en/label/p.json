@@ -12,8 +12,16 @@
     "name": "Carbon compensated product"
   },
   {
+    "key": "fr:produit-certifie",
+    "name": "Certified product"
+  },
+  {
     "key": "en:contains-a-source-of-phenylalanine",
     "name": "Contains a source of phenylalanine"
+  },
+  {
+    "key": "en:contains-palm-oil",
+    "name": "Contains palm oil"
   },
   {
     "key": "en:cooperative-product",
@@ -24,19 +32,11 @@
     "name": "CRc Pareve"
   },
   {
-    "key": "en:free-range-pork",
-    "name": "Free range pork"
+    "key": "en:croatian-product",
+    "name": "Croatian product"
   },
   {
-    "key": "en:free-range-poultry",
-    "name": "Free range poultry"
-  },
-  {
-    "key": "en:french-pork",
-    "name": "French pork"
-  },
-  {
-    "key": "en:hens-raised-without-antibiotics-during-the-laying-phase",
-    "name": "Hens raised without antibiotics during the laying phase"
+    "key": "en:ethical-tea-partnership",
+    "name": "Ethical Tea Partnership"
   }
 ]

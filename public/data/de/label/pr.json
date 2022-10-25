@@ -4,8 +4,16 @@
     "name": "Authentic Trappist Product"
   },
   {
+    "key": "fr:produit-certifie",
+    "name": "Certified product"
+  },
+  {
     "key": "en:cooperative-product",
     "name": "Cooperative product"
+  },
+  {
+    "key": "en:croatian-product",
+    "name": "Croatian product"
   },
   {
     "key": "en:bronze-medal-of-the-german-agricultural-society",
@@ -104,6 +112,10 @@
     "name": "DLG Goldener Preis 2019"
   },
   {
+    "key": "en:2020-gold-medal-of-the-german-agricultural-society",
+    "name": "DLG Goldener Preis 2020"
+  },
+  {
     "key": "de:dlg-jährlich-prämiert",
     "name": "DLG Jährlich Prämiert"
   },
@@ -160,6 +172,10 @@
     "name": "Geschütztes spanisches Produkt"
   },
   {
+    "key": "de:haltungsform-4-premium",
+    "name": "Haltungsform 4 Premium"
+  },
+  {
     "key": "en:hungarian-domestic-product",
     "name": "Hungarian domestic product"
   },
@@ -168,24 +184,36 @@
     "name": "Hungarian Processed Product"
   },
   {
-    "key": "en:hungarian-product",
-    "name": "Hungarian product"
+    "key": "en:i-protect-the-bees",
+    "name": "I protect the bees"
   },
   {
     "key": "en:integrated-production",
     "name": "Integrated production"
   },
   {
-    "key": "en:carbon-compensated-product",
-    "name": "Kohlenstoffneutral hergestelltes Produkt"
+    "key": "en:luomu-controlled-organic-production",
+    "name": "Luomu - controlled organic production"
   },
   {
     "key": "en:natural-product-without-vegetable-oils",
     "name": "Natural product without vegetable oils"
   },
   {
+    "key": "en:no-artificial-colours-and-preservatives",
+    "name": "No artificial colours and preservatives"
+  },
+  {
     "key": "en:non-gmo-project",
     "name": "Non GMO project"
+  },
+  {
+    "key": "en:pasteurized-product",
+    "name": "Pasteurisiertes Produkt"
+  },
+  {
+    "key": "en:planet-proof",
+    "name": "Planet Proof"
   },
   {
     "key": "en:preservatives",
@@ -200,11 +228,15 @@
     "name": "Pro Planet"
   },
   {
-    "key": "en:products-for-professional-use",
-    "name": "Products for professional use"
+    "key": "en:produced-in-croatia",
+    "name": "Produced in Croatia"
   },
   {
-    "key": "en:produced-in-bretagne",
+    "key": "en:products-for-professional-use",
+    "name": "Produkte für den professionellen Einsatz"
+  },
+  {
+    "key": "en:produced-in-brittany",
     "name": "Produziert in der Bretagne"
   },
   {
@@ -212,7 +244,31 @@
     "name": "Proteinreich"
   },
   {
+    "key": "en:qs-certification-mark",
+    "name": "QS-Prüfzeichen"
+  },
+  {
     "key": "en:rspo-identity-preserved",
     "name": "RSPO Identity Preserved"
+  },
+  {
+    "key": "en:small-producers-symbol",
+    "name": "Small Producers' Symbol"
+  },
+  {
+    "key": "en:hungarian-product",
+    "name": "Ungarisches Produkt"
+  },
+  {
+    "key": "en:vege-project",
+    "name": "Vege Project"
+  },
+  {
+    "key": "en:vege-project-vegan",
+    "name": "Vege Project Vegan"
+  },
+  {
+    "key": "en:vege-project-vegetarian",
+    "name": "Vege Project Vegetarian"
   }
 ]

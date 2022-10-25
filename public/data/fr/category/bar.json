@@ -4,8 +4,40 @@
     "name": "Alsace Grand Cru Kirchberg de Barr"
   },
   {
+    "key": "en:atlantic-bass",
+    "name": "Bar"
+  },
+  {
+    "key": "en:european-bass",
+    "name": "Bar commun"
+  },
+  {
+    "key": "en:farmed-mediterranean-bass",
+    "name": "Bar commun d'élevage"
+  },
+  {
+    "key": "en:roasted-european-bass",
+    "name": "Bar commun rôti"
+  },
+  {
+    "key": "en:wild-mediterranean-bass",
+    "name": "Bar commun sauvage"
+  },
+  {
+    "key": "en:american-bass",
+    "name": "Bar rayé"
+  },
+  {
     "key": "en:cotton-candy",
     "name": "Barbes à papa"
+  },
+  {
+    "key": "en:rindless-pork-back-fat",
+    "name": "Bardière de porc découennée"
+  },
+  {
+    "key": "en:barese-bolognaise",
+    "name": "Barese bolognaise"
   },
   {
     "key": "fr:barquettes",
@@ -20,12 +52,64 @@
     "name": "Barquettes au chocolat"
   },
   {
-    "key": "fr:barquettes-aux-fruits",
+    "key": "en:sponge-cake-biscuits-wih-fruits-covering",
     "name": "Barquettes aux fruits"
+  },
+  {
+    "key": "en:coated-chocolate-bar-without-biscuit",
+    "name": "Barre au chocolat sans biscuit"
+  },
+  {
+    "key": "en:reduced-fat-biscuit-bar-filled-with-fruits",
+    "name": "Barre biscuitée fourrée aux fruits allégée en matière grasse"
+  },
+  {
+    "key": "en:cereal-bar-with-almonds",
+    "name": "Barre céréalière aux amandes"
+  },
+  {
+    "key": "en:cereal-bar-with-almonds-or-hazelnuts",
+    "name": "Barre céréalière aux amandes ou aux noisettes"
+  },
+  {
+    "key": "en:cereal-bar-with-hazelnuts",
+    "name": "Barre céréalière aux noisettes"
+  },
+  {
+    "key": "en:low-calorie-cereal-bar",
+    "name": "Barre céréalière diététique hypocalorique"
+  },
+  {
+    "key": "en:cereal-bar-with-fruits-fortified-with-vitamins-and-minerals",
+    "name": "Barre céréalière équilibre aux fruits enrichie en vitamines et minéraux"
   },
   {
     "key": "fr:barre-chocolatee-biscuitee-type-kitkat",
     "name": "Barre chocolatée biscuitée type KitKat"
+  },
+  {
+    "key": "en:cereal-bar-with-chocolate-fortified-with-vitamins-and-minerals",
+    "name": "Barre de céréales au chocolat renforcée en vitamines et minéraux"
+  },
+  {
+    "key": "en:milky-cereal-breakfast-bar-with-chocolate-fortified-with-vitamins-and-minerals",
+    "name": "Barre de céréales au lait et au chocolat"
+  },
+  {
+    "key": "en:milk-chocolate-bar-with-nougat",
+    "name": "Barre de chocolat au lait avec nougat"
+  },
+  {
+    "key": "en:chocolate-snack-bar-dairy-filling",
+    "name": "Barre de chocolat au lait frais"
+  },
+  {
+    "key": "en:chocolate-snack-bar-dairy-filling-with-sponge-cake",
+    "name": "Barre de chocolat au lait frais avec génoise"
+  },
+  {
+    "key": "en:chocolate-coated-ice-cream",
+    "name": "Barre glacée chocolatée"
   },
   {
     "key": "en:plant-based-ice-cream-bars",
@@ -40,7 +124,7 @@
     "name": "Barres aux fruits"
   },
   {
-    "key": "en:chocolate-bars",
+    "key": "en:bars-covered-with-chocolate",
     "name": "Barres chocolatées"
   },
   {
@@ -52,7 +136,7 @@
     "name": "Barres chocolatées au caramel"
   },
   {
-    "key": "fr:barres-chocolatees-au-lait",
+    "key": "en:chocolate-confectionery-with-dairy-filling",
     "name": "Barres chocolatées au lait"
   },
   {
@@ -104,8 +188,8 @@
     "name": "Barres de céréales au chocolat"
   },
   {
-    "key": "fr:barres-de-cereales-aux-amandes",
-    "name": "Barres de céréales aux amandes"
+    "key": "en:strawberry-cereal-bars",
+    "name": "Barres de céréales aux fraises"
   },
   {
     "key": "en:fruits-cereal-bars",
@@ -122,10 +206,6 @@
   {
     "key": "fr:barres-de-cereales-aux-fruits-et-fruits-a-coques",
     "name": "Barres de céréales aux fruits et fruits à coques"
-  },
-  {
-    "key": "fr:barres-de-cereales-aux-noisettes",
-    "name": "Barres de céréales aux noisettes"
   },
   {
     "key": "en:nut-bars",
@@ -172,8 +252,20 @@
     "name": "Coteaux des Baronnies"
   },
   {
+    "key": "en:prickly-pears",
+    "name": "Figues de Barbarie"
+  },
+  {
+    "key": "en:frozen-surmullet-with-skin",
+    "name": "Filet de Rouget-barbet surgelé avec peau"
+  },
+  {
     "key": "fr:givry-premier-cru-clos-de-la-barraude",
     "name": "Givry premier cru Clos de la Barraude"
+  },
+  {
+    "key": "en:olive-oils-from-terra-di-bari",
+    "name": "Huile d'olive Terra di Bari"
   },
   {
     "key": "fr:mercurey-premier-cru-clos-des-barraults",
@@ -188,19 +280,39 @@
     "name": "Rhums barbadiens"
   },
   {
-    "key": "fr:rillettes-de-bar-sauvage",
+    "key": "fr:ribs-de-boeuf-sauce-barbecue",
+    "name": "Ribs de bœuf sauce barbecue"
+  },
+  {
+    "key": "en:wild-bass-rillettes",
     "name": "Rillettes de bar sauvage"
+  },
+  {
+    "key": "en:surmullet",
+    "name": "Rouget-barbet de roche"
+  },
+  {
+    "key": "en:steamed-surmullet",
+    "name": "Rouget-barbet de roche vapeur"
+  },
+  {
+    "key": "en:frozen-surmullet-with-skin-from-thailand",
+    "name": "Rouget-barbet de Thaïlande"
+  },
+  {
+    "key": "en:frozen-surmullet-with-skin-from-senegal",
+    "name": "Rouget-barbet du Sénégal"
   },
   {
     "key": "en:barbecue-sauces",
     "name": "Sauces barbecue"
   },
   {
-    "key": "fr:volnay-premier-cru-clos-de-la-barre",
-    "name": "Volnay premier cru Clos de la Barre"
+    "key": "en:cotton-candy-sugars",
+    "name": "Sucres pour barbes à papa"
   },
   {
-    "key": "en:wrong-barcode-duplicates",
-    "name": "Wrong barcode duplicates"
+    "key": "fr:volnay-premier-cru-clos-de-la-barre",
+    "name": "Volnay premier cru Clos de la Barre"
   }
 ]

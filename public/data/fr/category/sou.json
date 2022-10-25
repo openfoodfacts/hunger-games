@@ -1,18 +1,38 @@
 [
   {
+    "key": "en:puffed-amaranth",
+    "name": "Amaranthe soufflée"
+  },
+  {
     "key": "en:puffed-oat",
     "name": "Avoine soufflé"
   },
   {
-    "key": "fr:biscuits-aperitifs-souffles",
+    "key": "en:bean-soups",
+    "name": "Bean soups"
+  },
+  {
+    "key": "fr:betteraves-sous-vide",
+    "name": "Betteraves sous vide"
+  },
+  {
+    "key": "en:puffed-salty-snacks-made-from-maize-with-peanuts",
+    "name": "Biscuit apéritif soufflé à base de maïs à la cacahuète"
+  },
+  {
+    "key": "en:puffed-salty-snacks-made-from-potato-and-soy",
+    "name": "Biscuit apéritif soufflé à base de pomme de terre et de soja"
+  },
+  {
+    "key": "en:puffed-salty-snacks",
     "name": "Biscuits apéritifs soufflés"
   },
   {
-    "key": "fr:biscuits-aperitifs-souffles-a-base-de-mais",
+    "key": "en:puffed-salty-snacks-made-from-maize",
     "name": "Biscuits apéritifs soufflés à base de maïs"
   },
   {
-    "key": "fr:biscuits-aperitifs-souffles-a-base-de-pomme-de-terre",
+    "key": "en:puffed-salty-snacks-made-from-potato",
     "name": "Biscuits apéritifs soufflés à base de pomme de terre"
   },
   {
@@ -40,20 +60,44 @@
     "name": "Blé soufflé"
   },
   {
+    "key": "en:bottled-water-flavoured-without-sugar-and-with-artificial-sweeteners",
+    "name": "Boisson à l'eau minérale ou de source aromatisée non sucrée avec édulcorants"
+  },
+  {
     "key": "en:tigernut-milks",
     "name": "Boissons végétales de souchet"
+  },
+  {
+    "key": "en:breakfast-cereals-puffed-corn-with-honey-fortified-with-vitamins-and-chemical-elements",
+    "name": "Boules de maïs soufflées au miel enrichies en vitamines et minéraux"
+  },
+  {
+    "key": "en:breakfast-cereals-puffed-corn-with-honey-not-fortified-with-vitamins-and-chemical-elements",
+    "name": "Boules de maïs soufflées au miel non enrichies en vitamines et minéraux"
+  },
+  {
+    "key": "en:breakfast-cereals-puffed-cereals-wholemeal-fortified-with-vitamins-and-chemical-elements",
+    "name": "Céréales complètes soufflées enrichies en vitamines et minéraux"
   },
   {
     "key": "en:puffed-cereals",
     "name": "Céréales soufflées"
   },
   {
-    "key": "fr:cremes-sous-pression",
+    "key": "en:squirty-creams",
     "name": "Crèmes sous pression"
+  },
+  {
+    "key": "en:whipped-cream-under-pressure-uht",
+    "name": "Crèmes sous pression UHT"
   },
   {
     "key": "en:spring-waters",
     "name": "Eaux de sources"
+  },
+  {
+    "key": "en:flavored-spring-waters",
+    "name": "Eaux de sources aromatisées"
   },
   {
     "key": "en:puffed-spelt",
@@ -84,6 +128,14 @@
     "name": "Galettes de céréales soufflées"
   },
   {
+    "key": "en:puffed-pulse-cakes",
+    "name": "Galettes de légumineuses soufflées"
+  },
+  {
+    "key": "en:puffed-lentil-cakes",
+    "name": "Galettes de lentilles soufflées"
+  },
+  {
     "key": "en:puffed-corn-cakes",
     "name": "Galettes de maïs soufflé"
   },
@@ -96,8 +148,16 @@
     "name": "Galettes de riz soufflé"
   },
   {
-    "key": "fr:galettes-de-sarrasin-souffle",
+    "key": "en:puffed-buckwheat-cakes",
     "name": "Galettes de sarrasin soufflé"
+  },
+  {
+    "key": "en:puffed-rye-cakes",
+    "name": "Galettes de seigle soufflé"
+  },
+  {
+    "key": "en:puffed-sorghum-cakes",
+    "name": "Galettes de sorgo soufflé"
   },
   {
     "key": "en:puffed-multigrain-cakes",
@@ -106,6 +166,34 @@
   {
     "key": "en:puffed-legumes",
     "name": "Graines de légumineuses soufflées"
+  },
+  {
+    "key": "en:puffed-wheat-grains",
+    "name": "Grains de blé soufflés"
+  },
+  {
+    "key": "en:popped-wheat-grain-with-caramel",
+    "name": "Grains de blé soufflés au caramel"
+  },
+  {
+    "key": "en:popped-wheat-grain-with-caramel-fortified-with-vitamins-and-chemical-elements",
+    "name": "Grains de blé soufflés au caramel enrichis en vitamines et minéraux"
+  },
+  {
+    "key": "en:popped-wheat-grain-with-honey",
+    "name": "Grains de blé soufflés au miel"
+  },
+  {
+    "key": "en:popped-wheat-grain-with-honey-fortified-with-vitamins-and-chemical-elements",
+    "name": "Grains de blé soufflés au miel enrichis en vitamines et minéraux"
+  },
+  {
+    "key": "en:chocolate-puffed-wheat-grains",
+    "name": "Grains de blé soufflés chocolatés"
+  },
+  {
+    "key": "en:chocolate-puffed-wheat-grains-fortified-with-vitamins-and-chemical-elements",
+    "name": "Grains de blé soufflés chocolatés enrichis en vitamines et minéraux"
   },
   {
     "key": "en:puffed-grains",
@@ -140,6 +228,10 @@
     "name": "Montagny premier cru Sous les Feilles"
   },
   {
+    "key": "en:breakfast-cereals-mix-of-puffed-cereals-fortified-with-vitamins-and-chemical-elements",
+    "name": "Multi-céréales soufflées enrichies en vitamines et minéraux"
+  },
+  {
     "key": "en:puffed-barley",
     "name": "Orge soufflé"
   },
@@ -148,8 +240,16 @@
     "name": "Pernand-Vergelesses premier cru Sous Frétille"
   },
   {
-    "key": "en:licensed-products",
-    "name": "Produits sous license"
+    "key": "fr:pernand-vergelesses-premier-cru-sous-fretille-blanc",
+    "name": "Pernand-Vergelesses premier cru Sous Frétille blanc"
+  },
+  {
+    "key": "en:vacuum-packed-steamed-potatoes",
+    "name": "Pommes de terre vapeur sous vide"
+  },
+  {
+    "key": "fr:puligny-montrachet-premier-cru-sous-le-puits-blanc",
+    "name": "Puligny-Montrachet premier cru Sous le Puits blanc"
   },
   {
     "key": "fr:puligny-montrachet-sous-le-puits",
@@ -160,16 +260,44 @@
     "name": "Quinoa soufflé"
   },
   {
+    "key": "en:reheatable-vegetable-soups",
+    "name": "Reheatable vegetable soups"
+  },
+  {
     "key": "en:puffed-rice",
     "name": "Riz soufflé"
+  },
+  {
+    "key": "en:chocolate-puffed-rice",
+    "name": "Riz soufflé chocolaté"
+  },
+  {
+    "key": "en:chocolate-puffed-rice-fortified-with-vitamins-and-chemical-elements",
+    "name": "Riz soufflé chocolaté enrichi en vitamines et minéraux"
+  },
+  {
+    "key": "en:chocolate-puffed-rice-not-fortified-with-vitamins-and-chemical-elements",
+    "name": "Riz soufflé chocolaté non enrichi en vitamines et minéraux"
+  },
+  {
+    "key": "en:puffed-rice-fortified-with-vitamins-and-chemical-elements",
+    "name": "Riz soufflé nature enrichi en vitamines et minéraux"
   },
   {
     "key": "fr:saint-aubin-premier-cru-sous-roche-dumay",
     "name": "Saint-Aubin premier cru Sous Roche Dumay"
   },
   {
+    "key": "fr:saint-aubin-premier-cru-sous-roche-dumay-blanc",
+    "name": "Saint-Aubin premier cru Sous Roche Dumay blanc"
+  },
+  {
+    "key": "fr:saint-aubin-premier-cru-sous-roche-dumay-rouge",
+    "name": "Saint-Aubin premier cru Sous Roche Dumay rouge"
+  },
+  {
     "key": "en:puffed-buckwheat",
-    "name": "Sarrasin de Tartarie soufflé"
+    "name": "Sarrasin soufflé"
   },
   {
     "key": "en:puffed-rye",
@@ -180,28 +308,244 @@
     "name": "Soja soufflé"
   },
   {
+    "key": "en:cheese-souffle",
+    "name": "Soufflé au fromage"
+  },
+  {
+    "key": "en:soumaintrain",
+    "name": "Soumaintrain"
+  },
+  {
+    "key": "en:soup-mixes",
+    "name": "Soup mixes"
+  },
+  {
+    "key": "en:heatable-onion-soup",
+    "name": "Soupe à l'oignon à réchauffer"
+  },
+  {
+    "key": "en:dehydrated-onion-soup",
+    "name": "Soupe à l'oignon déshydratée"
+  },
+  {
+    "key": "en:reheatable-tomato-soup",
+    "name": "Soupe à la tomate à réchauffer"
+  },
+  {
+    "key": "en:dehydrated-tomato-soup",
+    "name": "Soupe à la tomate déshydratée"
+  },
+  {
+    "key": "en:reheatable-tomatoes-and-vermicelli-soup",
+    "name": "Soupe à la tomate et aux vermicelles à réchauffer"
+  },
+  {
+    "key": "en:chicken-and-vegetables-soup",
+    "name": "Soupe à la volaille et aux légumes"
+  },
+  {
+    "key": "en:dehydrated-soup-with-chicken-and-vegetables",
+    "name": "Soupe à la volaille et aux légumes déshydratée"
+  },
+  {
+    "key": "en:dehydrated-chicken-and-vermicelli-soup",
+    "name": "Soupe à la volaille et aux vermicelles déshydratée"
+  },
+  {
+    "key": "en:dehydrated-and-reconstituted-watercress-soup",
+    "name": "Soupe au cresson déshydratée reconstituée"
+  },
+  {
+    "key": "en:reheatable-pistou-soup",
+    "name": "Soupe au pistou à réchauffer"
+  },
+  {
+    "key": "en:dehydrated-pistou-soup",
+    "name": "Soupe au pistou déshydratée"
+  },
+  {
+    "key": "en:dehydrated-cereals-and-vegetables-soup",
+    "name": "Soupe aux céréales et aux légumes déshydratée"
+  },
+  {
+    "key": "en:dehydrated-mixed-vegetables-soup",
+    "name": "Soupe aux légumes déshydratée"
+  },
+  {
+    "key": "en:reheatable-mixed-vegetables-soup",
+    "name": "Soupe aux légumes variés à réchauffer"
+  },
+  {
+    "key": "en:lentils-soup",
+    "name": "Soupe aux lentilles"
+  },
+  {
+    "key": "en:leek-and-potato-soup",
+    "name": "Soupe aux poireaux et aux pommes de terre"
+  },
+  {
+    "key": "en:dehydrated-leek-and-potato-soup",
+    "name": "Soupe aux poireaux et pommes de terre déshydratée"
+  },
+  {
+    "key": "en:split-peas-soup",
+    "name": "Soupe aux pois cassés"
+  },
+  {
+    "key": "en:chorba-frik-soup-with-meat-and-frik",
+    "name": "Soupe chorba frik à base de viande et de frik"
+  },
+  {
+    "key": "es:sopa-de-habas",
+    "name": "Soupe de fèves"
+  },
+  {
+    "key": "fr:soupe-de-poissons-au-piment-d-espelette",
+    "name": "Soupe de poissons au piment d'Espelette"
+  },
+  {
+    "key": "en:reconstituted-fish-soup",
+    "name": "Soupe de poissons reconstituée"
+  },
+  {
+    "key": "en:dehydrated-moroccan-soup",
+    "name": "Soupe marocaine déshydratée"
+  },
+  {
+    "key": "en:reheatable-minestrone-soup",
+    "name": "Soupe minestrone à réchauffer"
+  },
+  {
+    "key": "en:dehydrated-minestrone-soup",
+    "name": "Soupe minestrone déshydratée"
+  },
+  {
     "key": "en:miso-soup",
     "name": "Soupe miso"
+  },
+  {
+    "key": "en:soup-for-baby-with-vegetables-and-cereals-and-milk",
+    "name": "Soupe pour bébé aux légumes aux céréales et au lait"
+  },
+  {
+    "key": "en:soup-for-baby-with-vegetables-and-potatoes",
+    "name": "Soupe pour bébé aux légumes et aux pommes de terre"
   },
   {
     "key": "en:soups",
     "name": "Soupes"
   },
   {
+    "key": "en:onion-soups",
+    "name": "Soupes à l'oignon"
+  },
+  {
+    "key": "fr:soupes-a-l-ortie",
+    "name": "Soupes à l'ortie"
+  },
+  {
+    "key": "en:tomato-and-vermicelli-soups",
+    "name": "Soupes à la tomate et aux vermicelles"
+  },
+  {
+    "key": "en:dehydrated-tomato-and-vermicelli-soup",
+    "name": "Soupes à la tomate et aux vermicelles déshydratée"
+  },
+  {
+    "key": "en:chicken-soups",
+    "name": "Soupes à la volaille"
+  },
+  {
+    "key": "en:chicken-and-vermicelli-soup",
+    "name": "Soupes à la volaille et aux vermicelles"
+  },
+  {
+    "key": "en:reheatable-chicken-and-vermicelli-soup",
+    "name": "Soupes à la volaille et aux vermicelles à réchauffer"
+  },
+  {
+    "key": "en:reheatable-soups",
+    "name": "Soupes à réchauffer"
+  },
+  {
+    "key": "en:reheatable-watercress-soup",
+    "name": "Soupes au cresson à réchauffer"
+  },
+  {
+    "key": "en:dehydrated-watercress-soup",
+    "name": "Soupes au cresson déshydratée"
+  },
+  {
+    "key": "en:pistou-soup",
+    "name": "Soupes au pistou"
+  },
+  {
+    "key": "en:reheatable-pumpkin-soups",
+    "name": "Soupes au potiron à réchauffer"
+  },
+  {
+    "key": "en:dehydrated-pumpkin-soups",
+    "name": "Soupes au potiron déshydratée"
+  },
+  {
     "key": "en:asparagus-soups",
     "name": "Soupes aux asperges"
+  },
+  {
+    "key": "en:dehydrated-asparagus-soup",
+    "name": "Soupes aux asperges déshydratées"
+  },
+  {
+    "key": "en:mushroom-soups",
+    "name": "Soupes aux champignons"
+  },
+  {
+    "key": "en:dehydrated-mushroom-soup",
+    "name": "Soupes aux champignons déshydratée"
   },
   {
     "key": "en:zucchini-soups",
     "name": "Soupes aux courgettes"
   },
   {
+    "key": "en:reheatable-vegetables-soups-with-cheese",
+    "name": "Soupes aux légumes avec fromage à réchauffer"
+  },
+  {
+    "key": "en:reheatable-green-vegetables-soups",
+    "name": "Soupes aux légumes verts"
+  },
+  {
+    "key": "en:dehydrated-green-vegetables-soups",
+    "name": "Soupes aux légumes verts déshydratée"
+  },
+  {
     "key": "en:carrot-soups",
     "name": "Soupes de carottes"
   },
   {
+    "key": "en:dehydrated-carrot-soups",
+    "name": "Soupes de carottes déshydratées"
+  },
+  {
     "key": "en:watercress-soups",
     "name": "Soupes de cresson"
+  },
+  {
+    "key": "fr:soupes-de-crevettes",
+    "name": "Soupes de crevettes"
+  },
+  {
+    "key": "fr:soupes-de-crustaces",
+    "name": "Soupes de crustacés"
+  },
+  {
+    "key": "en:reconstituted-crustacean-soup",
+    "name": "Soupes de crustacés reconstituée"
+  },
+  {
+    "key": "fr:soupes-de-fruits-de-mer",
+    "name": "Soupes de fruits de mer"
   },
   {
     "key": "en:vegetable-soups",
@@ -228,8 +572,16 @@
     "name": "Soupes de lentilles"
   },
   {
+    "key": "en:mustard-soups",
+    "name": "Soupes de moutarde"
+  },
+  {
     "key": "en:instant-noodle-soups",
     "name": "Soupes de nouilles instantanées"
+  },
+  {
+    "key": "en:dehydrated-asian-style-soup-with-noodles",
+    "name": "Soupes de pâtes asiatique déshydratée"
   },
   {
     "key": "en:fish-soups",
@@ -256,6 +608,14 @@
     "name": "Soupes froides"
   },
   {
+    "key": "en:moroccan-soups",
+    "name": "Soupes marocaine"
+  },
+  {
+    "key": "en:minestrone-soups",
+    "name": "Soupes minestrone"
+  },
+  {
     "key": "en:refrigerated-soups",
     "name": "Soupes réfrigérées"
   },
@@ -264,12 +624,24 @@
     "name": "Soupes surgelées"
   },
   {
+    "key": "fr:souris-d-agneau",
+    "name": "Souris d'agneau"
+  },
+  {
     "key": "en:south-australian-wine",
     "name": "South Australian wine"
   },
   {
-    "key": "en:black-chocolate-turron-with-puffed-rice",
-    "name": "Turrón au chocolat noir avec riz soufflé"
+    "key": "en:sweet-and-sour-chicken",
+    "name": "Sweet and sour chicken"
+  },
+  {
+    "key": "en:albacore-steamed-under-pressure",
+    "name": "Thon germon cuit à la vapeur sous pression"
+  },
+  {
+    "key": "en:chocolate-turron-with-puffed-rice",
+    "name": "Turrón au chocolat avec riz soufflé"
   },
   {
     "key": "fr:volnay-premier-cru-carelle-sous-la-chapelle",

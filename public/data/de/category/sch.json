@@ -1,6 +1,10 @@
 [
   {
-    "key": "fr:chocolats-noirs-aromatises",
+    "key": "de:ammerländer-schinken",
+    "name": "Ammerländer Schinken"
+  },
+  {
+    "key": "en:flavoured-dark-chocolates",
     "name": "Aromatisierte dunkle Schokolade"
   },
   {
@@ -12,7 +16,7 @@
     "name": "Aromatisierte Schwarztees"
   },
   {
-    "key": "fr:chocolats-blancs-aromatises",
+    "key": "en:flavoured-white-chocolates",
     "name": "Aromatisierte weiße Schokolade"
   },
   {
@@ -34,6 +38,10 @@
   {
     "key": "en:filled-crepes-with-chocolate",
     "name": "Crêpes gefüllt mit Schokolade"
+  },
+  {
+    "key": "en:canned-snails",
+    "name": "Dosen-Schnecken"
   },
   {
     "key": "en:dark-chocolates-with-fleur-de-sel",
@@ -84,6 +92,10 @@
     "name": "Extrafeine dunkle Schokoladen"
   },
   {
+    "key": "en:french-hams",
+    "name": "Französischer Schinken"
+  },
+  {
     "key": "en:fresh-chives",
     "name": "Frischer Schnittlauch"
   },
@@ -98,6 +110,10 @@
   {
     "key": "en:lyophilized-chives",
     "name": "Gefriergetrockneter Schnittlauch"
+  },
+  {
+    "key": "en:frozen-sliced-champignon-mushrooms",
+    "name": "Gefrorene Champignons in Scheiben"
   },
   {
     "key": "en:frozen-chives",
@@ -132,6 +148,10 @@
     "name": "Getrockene Schinken"
   },
   {
+    "key": "en:cooked-chicken-breast-slices",
+    "name": "Hähnchen-brustfilet in Scheiben"
+  },
+  {
     "key": "en:cocoa-and-chocolate-powders",
     "name": "Kakao- und Schokoladenpulver"
   },
@@ -146,6 +166,10 @@
   {
     "key": "en:chocolate-covered-cherries",
     "name": "Kirschen mit Schokoladenüberzug"
+  },
+  {
+    "key": "en:chocolate-stuffed-wafers",
+    "name": "Knusprige Waffeln mit Schokoladenfüllung"
   },
   {
     "key": "en:chocolate-covered-coconut-balls",
@@ -176,12 +200,28 @@
     "name": "Maraschinokirschen in Schokolade"
   },
   {
+    "key": "en:shelled-chestnuts",
+    "name": "Maronen mit Schale"
+  },
+  {
     "key": "en:croissant-filled-with-chocolate",
     "name": "Mit Schokolade gefüllte Croissants"
   },
   {
+    "key": "en:chocolate-covered-nuts",
+    "name": "Mit Schokolade überzogene Nüsse"
+  },
+  {
+    "key": "en:chocolate-cereal-bars",
+    "name": "Müsliriegel mit Schokolade"
+  },
+  {
     "key": "en:mueslis-with-chocolate",
     "name": "Müslis mit Schokolade"
+  },
+  {
+    "key": "en:ground-black-peppers",
+    "name": "Pfeffer schwarz gemahlen"
   },
   {
     "key": "en:chocolate-covered-prune",
@@ -192,8 +232,16 @@
     "name": "Pizza mit Schinken und Käse"
   },
   {
+    "key": "en:ham-and-cheese-sandwiches",
+    "name": "Sandwiches mit Schinken und Käse"
+  },
+  {
     "key": "en:field-horsetail",
     "name": "Schachtelhalm"
+  },
+  {
+    "key": "de:schaf-heumilch",
+    "name": "Schaf-Heumilch"
   },
   {
     "key": "en:yarrow",
@@ -216,10 +264,6 @@
     "name": "Schalotten"
   },
   {
-    "key": "en:pimented-sauces",
-    "name": "Scharfe Sauce"
-  },
-  {
     "key": "en:hot-sauces",
     "name": "Scharfe Saucen"
   },
@@ -240,12 +284,24 @@
     "name": "Schinkenpizzas"
   },
   {
+    "key": "en:ham-sandwiches",
+    "name": "Schinkensandwich"
+  },
+  {
     "key": "en:whipped-creams",
     "name": "Schlagsahne"
   },
   {
     "key": "de:schleswig-holsteinischer",
     "name": "Schleswig-Holsteinischer"
+  },
+  {
+    "key": "de:schleswig-holsteinischer-landwein",
+    "name": "Schleswig-Holsteinischer Landwein"
+  },
+  {
+    "key": "en:lards",
+    "name": "Schmalz"
   },
   {
     "key": "en:smetana",
@@ -284,8 +340,20 @@
     "name": "Schnittlauch im Topf"
   },
   {
+    "key": "en:schnitzel-substitutes",
+    "name": "Schnitzel substitutes"
+  },
+  {
+    "key": "en:cocoa-and-hazelnuts-spreads",
+    "name": "Schoko- und Haselnussaufstriche"
+  },
+  {
     "key": "en:chocolate-cereals",
     "name": "Schokoflocken"
+  },
+  {
+    "key": "en:chocolate-coated-marshmallow-treats",
+    "name": "Schokokuss"
   },
   {
     "key": "en:chocolates-with-hazelnuts",
@@ -296,7 +364,7 @@
     "name": "Schokolade mit Mandelcremefüllung"
   },
   {
-    "key": "en:chocolates-stuffed-with-praline",
+    "key": "en:chocolate-filled-with-praline",
     "name": "Schokolade mit Praliné-Füllung"
   },
   {
@@ -328,7 +396,7 @@
     "name": "Schokoladen-Adventskalender"
   },
   {
-    "key": "en:chocolate-cookies",
+    "key": "en:chocolate-chip-cookies",
     "name": "Schokoladen-Cookies"
   },
   {
@@ -340,11 +408,15 @@
     "name": "Schokoladen-Dinosaurier"
   },
   {
+    "key": "en:chocolate-biscuity-bars",
+    "name": "Schokoladenbiscuits"
+  },
+  {
     "key": "en:chocolate-desserts",
     "name": "Schokoladendesserts"
   },
   {
-    "key": "en:easter-eggs",
+    "key": "en:chocolate-eggs",
     "name": "Schokoladeneier"
   },
   {
@@ -352,7 +424,7 @@
     "name": "Schokoladeneis am Stiel"
   },
   {
-    "key": "en:chocolate-scupltures",
+    "key": "en:chocolate-sculptures",
     "name": "Schokoladenfiguren"
   },
   {
@@ -364,12 +436,16 @@
     "name": "Schokoladenhasen"
   },
   {
-    "key": "en:chocolate-yogurts",
+    "key": "en:chocolate-chunks-yogurts",
     "name": "Schokoladenjoghurte"
   },
   {
     "key": "en:chocolate-biscuits",
     "name": "Schokoladenkekse"
+  },
+  {
+    "key": "en:chocolate-nuts-cookie-bars",
+    "name": "Schokoladenkekse mit Nüssen"
   },
   {
     "key": "en:chocolate-candies",
@@ -396,6 +472,14 @@
     "name": "Schokoladensojamilch"
   },
   {
+    "key": "en:chocolate-tartlets",
+    "name": "Schokoladentörtchen"
+  },
+  {
+    "key": "en:chocolate-pies",
+    "name": "Schokoladentorten"
+  },
+  {
     "key": "en:chocolate-santa-clauses",
     "name": "Schokoladenweihnachtsmänner"
   },
@@ -404,12 +488,32 @@
     "name": "Schokoladetrüffel"
   },
   {
-    "key": "en:chocolate-bars",
+    "key": "en:bars-covered-with-chocolate",
     "name": "Schokoriegel"
+  },
+  {
+    "key": "en:caramel-chocolate-bars",
+    "name": "Schokoriegel mit Karamell"
+  },
+  {
+    "key": "en:chocolate-turron",
+    "name": "Schokoturrón"
+  },
+  {
+    "key": "en:chocolate-turron-with-almonds",
+    "name": "Schokoturrón mit Mandeln"
+  },
+  {
+    "key": "en:chocolate-turron-with-puffed-rice",
+    "name": "Schokoturrón mit Puffreis"
   },
   {
     "key": "en:blended-scotch-whisky",
     "name": "Schottische Blended Whiskys"
+  },
+  {
+    "key": "en:scotch-eggs",
+    "name": "Schottische Eier"
   },
   {
     "key": "en:cheeses-from-scotland",
@@ -420,12 +524,36 @@
     "name": "Schottischer Whisky"
   },
   {
+    "key": "de:schwäbische-maultaschen",
+    "name": "Schwäbische Maultaschen"
+  },
+  {
+    "key": "de:schwäbische-spätzle",
+    "name": "Schwäbische Spätzle"
+  },
+  {
     "key": "de:schwäbischer",
     "name": "Schwäbischer"
   },
   {
+    "key": "de:schwäbischer-landwein",
+    "name": "Schwäbischer Landwein"
+  },
+  {
     "key": "en:black-beers",
     "name": "Schwarzbier"
+  },
+  {
+    "key": "en:black-beans",
+    "name": "Schwarze Bohnen"
+  },
+  {
+    "key": "en:black-pitted-olives",
+    "name": "Schwarze entsteinte Oliven"
+  },
+  {
+    "key": "en:blackcurrants-jellies",
+    "name": "Schwarze Johannisbeere Gelees"
   },
   {
     "key": "en:blackcurrant-syrups",
@@ -436,20 +564,12 @@
     "name": "Schwarze Oliven"
   },
   {
+    "key": "en:black-peppercorns",
+    "name": "Schwarze Pfefferkörner"
+  },
+  {
     "key": "en:black-peppers",
     "name": "Schwarzer Pfeffer"
-  },
-  {
-    "key": "en:black-chocolate-turron-filled-with-fruit-praline",
-    "name": "Schwarzer Schokoturrón"
-  },
-  {
-    "key": "en:black-chocolate-turron-with-almonds",
-    "name": "Schwarzer Schokoturrón mit Mandeln"
-  },
-  {
-    "key": "en:black-chocolate-turron-with-puffed-rice",
-    "name": "Schwarzer Schokoturrón mit Puffreis"
   },
   {
     "key": "en:black-teas",
@@ -464,6 +584,30 @@
     "name": "Schwarzwälder Kirschtorte"
   },
   {
+    "key": "de:schwarzwälder-kirschwasser",
+    "name": "Schwarzwälder Kirschwasser"
+  },
+  {
+    "key": "de:schwarzwälder-mirabellenwasser",
+    "name": "Schwarzwälder Mirabellenwasser"
+  },
+  {
+    "key": "de:schwarzwälder-schinken",
+    "name": "Schwarzwälder Schinken"
+  },
+  {
+    "key": "de:schwarzwälder-williamsbirne",
+    "name": "Schwarzwälder Williamsbirne"
+  },
+  {
+    "key": "de:schwarzwälder-zwetschgenwasser",
+    "name": "Schwarzwälder Zwetschgenwasser"
+  },
+  {
+    "key": "de:schwarzwaldforelle",
+    "name": "Schwarzwaldforelle"
+  },
+  {
     "key": "en:swedish-cheeses",
     "name": "Schwedischer Käse"
   },
@@ -472,12 +616,32 @@
     "name": "Schwein"
   },
   {
+    "key": "en:pork-belly",
+    "name": "Schweinebauch"
+  },
+  {
+    "key": "en:pork-rillettes",
+    "name": "Schweinefleisch Rillettes"
+  },
+  {
     "key": "en:pork-meals",
     "name": "Schweinefleischgerichte"
   },
   {
+    "key": "en:pig-head",
+    "name": "Schweinekopf"
+  },
+  {
     "key": "en:pork-liver-sausages",
     "name": "Schweineleberwürste"
+  },
+  {
+    "key": "en:pork-pates",
+    "name": "Schweinepasteten"
+  },
+  {
+    "key": "en:palmiers",
+    "name": "Schweinsohren"
   },
   {
     "key": "fr:emmentals-suisses",
@@ -492,6 +656,14 @@
     "name": "Schweizer Schokoladen"
   },
   {
+    "key": "en:chocolate-soy-desserts",
+    "name": "Soja Schokodessert"
+  },
+  {
+    "key": "de:südtiroler-schüttelbrot",
+    "name": "Südtiroler Schüttelbrot"
+  },
+  {
     "key": "en:frozen-chopped-carrots",
     "name": "Tiefkühl-Karotten in Scheiben"
   },
@@ -500,11 +672,15 @@
     "name": "Trocken gemahlener Schnittlauch"
   },
   {
-    "key": "en:chocolate-stuffed-wafers",
-    "name": "Waffeln gefüllt mit Schokolade"
+    "key": "en:cured-ham",
+    "name": "Unbehandelte Schinken"
   },
   {
-    "key": "en:chocolate-coated-waffles",
+    "key": "en:assorted-chocolates",
+    "name": "Verschiedene Schokoladen"
+  },
+  {
+    "key": "en:thin-crunchy-wafer-biscuit-with-chocolate",
     "name": "Waffeln mit Schokoladenüberzug"
   },
   {
@@ -512,7 +688,11 @@
     "name": "Weiße Schokoladen"
   },
   {
-    "key": "fr:chocolats-blancs-a-la-noix-de-coco",
+    "key": "en:white-chocolates-with-hazelnuts",
+    "name": "Weiße Schokoladen mit Haselnüssen"
+  },
+  {
+    "key": "en:white-chocolate-with-coconut-pieces",
     "name": "Weiße Schokoladen mit Kokos"
   },
   {

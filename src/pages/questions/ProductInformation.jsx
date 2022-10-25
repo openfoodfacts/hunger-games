@@ -35,6 +35,15 @@ import externalApi from "../../externalApi";
 import DebugQuestion from "./DebugQuestion";
 import robotoff from "../../robotoff";
 
+const ADDITIONAL_INFO_TRANSLATION = {
+  brands: "brands",
+  ingredientsText: "ingredients",
+  countriesTags: "countries",
+  categories: "categories",
+  labels_tags: "labels",
+  quantity: "quantity",
+};
+
 // src looks like: "https://static.openfoodfacts.org/images/products/004/900/053/2258/1.jpg"
 const getImageId = (src) => {
   const file = src.split("/").at(-1);
@@ -92,6 +101,38 @@ const useOtherQuestions = (code, insight_id) => {
   ];
 };
 
+const useFlagImage = (barcode) => {
+  const [flagged, setFlagged] = React.useState([]);
+
+  const flagImage = React.useCallback(
+    (src) => {
+      const imgid = getImageId(src);
+      externalApi.addImageFlag({ barcode, imgid, url: src });
+      setFlagged((prev) => [...prev, imgid]);
+    },
+    [barcode]
+  );
+
+  const deleteFlagImage = React.useCallback(
+    (src) => {
+      const imgid = getImageId(src);
+      externalApi.removeImageFlag({ barcode, imgid });
+
+      setFlagged((prev) =>
+        prev.filter((flaggedImageId) => flaggedImageId !== imgid)
+      );
+    },
+    [barcode]
+  );
+
+  // Reset flags
+  React.useEffect(() => {
+    setFlagged([]);
+  }, [barcode]);
+
+  return [flagged, flagImage, deleteFlagImage];
+};
+
 const ProductInformation = ({ question }) => {
   const { t } = useTranslation();
   const isDevMode = getIsDevMode();
@@ -101,25 +142,7 @@ const ProductInformation = ({ question }) => {
   const [devCustomization] = React.useState(
     () => getPageCustomization().questionPage
   );
-  const [flagged, setFlagged] = React.useState([]);
-
-  const flagImage = (src, barcode) => {
-    const imgid = getImageId(src);
-    externalApi.addImageFlag({ barcode, imgid, url: src });
-
-    const newFlagged = [...flagged];
-    newFlagged.push(imgid);
-    setFlagged(newFlagged);
-  };
-
-  const deleteFlagImage = (src, barcode) => {
-    const imgid = getImageId(src);
-    externalApi.removeImageFlag({ barcode, imgid });
-    const newFlagged = flagged.filter(
-      (flaggedImageId) => flaggedImageId !== imgid
-    );
-    setFlagged(newFlagged);
-  };
+  const [flagged, flagImage, deleteFlagImage] = useFlagImage(question?.barcode);
 
   // product data fetching
   React.useEffect(() => {
@@ -139,22 +162,21 @@ const ProductInformation = ({ question }) => {
       setProductData({
         code: question.barcode,
         productName: product?.product_name || "",
-        brands: product?.brands || "",
-        ingredientsText: product?.ingredients_text || "",
-        countriesTags: product?.countries_tags || [],
+        brands: product?.brands || "?",
+        ingredientsText: product?.ingredients_text || "?",
+        countriesTags: product?.countries_tags
+          ? `${product?.countries_tags.join(", ")}.`
+          : "?",
         images: product?.images || {},
-        categories: product?.categories || "",
+        categories: product?.categories || "?",
+        labels_tags: product?.labels_tags.join(", ") || "?",
+        quantity: product?.quantity || "?",
         isLoading: false,
       });
     });
     return () => {
       isStillValid = false;
     };
-  }, [question?.barcode]);
-
-  // Reset flags
-  React.useEffect(() => {
-    setFlagged([]);
   }, [question?.barcode]);
 
   const [
@@ -356,42 +378,14 @@ const ProductInformation = ({ question }) => {
             th: { verticalAlign: "top", pr: 0 },
           }}
         >
-          <TableRow>
-            <TableCell component="th" scope="row">
-              {t("questions.brands")}
-            </TableCell>
-            <TableCell>{productData?.brands}</TableCell>
-          </TableRow>
-
-          <TableRow>
-            <TableCell component="th" scope="row">
-              {t("questions.ingredients")}
-            </TableCell>
-            <TableCell>{productData?.ingredientsText}</TableCell>
-          </TableRow>
-
-          <TableRow>
-            <TableCell component="th" scope="row">
-              {t("questions.countries")}
-            </TableCell>
-            <TableCell>
-              {!productData?.countriesTags
-                ? null
-                : `${productData.countriesTags.join(", ")}.`}
-            </TableCell>
-          </TableRow>
-
-          <TableRow>
-            <TableCell component="th" scope="row">
-              {t("questions.categories")}
-            </TableCell>
-            <TableCell>
-              {!productData?.categories ||
-              typeof productData?.categories === "object"
-                ? null
-                : productData?.categories}
-            </TableCell>
-          </TableRow>
+          {Object.keys(ADDITIONAL_INFO_TRANSLATION).map((infoKey) => (
+            <TableRow key={infoKey}>
+              <TableCell component="th" scope="row">
+                {t(`questions.${ADDITIONAL_INFO_TRANSLATION[infoKey]}`)}
+              </TableCell>
+              <TableCell>{productData?.[infoKey]}</TableCell>
+            </TableRow>
+          ))}
         </TableBody>
       </Table>
       {isDevMode && devCustomization.showDebug && (

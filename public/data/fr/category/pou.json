@@ -4,6 +4,10 @@
     "name": "Aiguillettes de poulet"
   },
   {
+    "key": "en:roasted-chicken-wing-meat-and-skin",
+    "name": "Aile de poulet avec viande et peau rôtie"
+  },
+  {
     "key": "en:chicken-wings",
     "name": "Ailes de poulet"
   },
@@ -24,6 +28,22 @@
     "name": "Assiettes pour bébé"
   },
   {
+    "key": "en:breakfast-biscuit-with-cereals-fortified-with-vitamins-and-chemical-elements",
+    "name": "Biscuit aux céréales pour petit déjeuner enrichis en vitamines et minéraux"
+  },
+  {
+    "key": "en:breakfast-biscuit",
+    "name": "Biscuit sec pour petit déjeuner"
+  },
+  {
+    "key": "en:breakfast-biscuit-with-reduced-sugar",
+    "name": "Biscuit sec pour petit déjeuner allégé en sucres"
+  },
+  {
+    "key": "en:breakfast-biscuit-with-chocolate",
+    "name": "Biscuit sec pour petit déjeuner au chocolat"
+  },
+  {
     "key": "en:biscuits-for-babies",
     "name": "Biscuits pour bébé"
   },
@@ -32,8 +52,8 @@
     "name": "Biscuits pour chats"
   },
   {
-    "key": "en:chicken-ham",
-    "name": "Blancs de poulet"
+    "key": "en:egg-white-powder",
+    "name": "Blanc d'oeuf en poudre"
   },
   {
     "key": "fr:blancs-de-poulet-aux-herbes",
@@ -44,12 +64,56 @@
     "name": "Blancs de poulet doré au four"
   },
   {
+    "key": "en:cooked-chicken-breast-slices",
+    "name": "Blancs de poulet en tranches"
+  },
+  {
     "key": "en:smoked-chicken-breast",
     "name": "Blancs de poulet fumé"
   },
   {
+    "key": "en:reconstituted-chicken-breast-slices",
+    "name": "Blancs de poulet reconstitués"
+  },
+  {
     "key": "fr:blancs-de-poulet-roti-a-la-broche",
     "name": "Blancs de poulet rôti à la broche"
+  },
+  {
+    "key": "en:plant-based-beverage-for-baby",
+    "name": "Boisson à base de plantes pour bébé"
+  },
+  {
+    "key": "en:dietary-drink-for-sport",
+    "name": "Boisson diététique pour le sport"
+  },
+  {
+    "key": "en:dairy-cereal-based-beverage-with-vegetables-for-baby-s-dinner-from-4-6-months",
+    "name": "Boisson lactée pour dîner bébé dès 4/6 mois avec céréales et légumes"
+  },
+  {
+    "key": "en:dairy-cereal-based-beverage-with-fruits-for-baby-s-snack-from-4-6-months",
+    "name": "Boisson lactée pour goûter bébé dès 4/6 mois avec céréales et fruits"
+  },
+  {
+    "key": "en:dairy-cereal-based-beverage-for-baby-s-breakfast",
+    "name": "Boisson lactée pour petit-déjeuner bébé avec céréales"
+  },
+  {
+    "key": "en:dairy-cereal-based-beverage-for-baby-s-breakfast-from-12-months",
+    "name": "Boisson lactée pour petit-déjeuner bébé dès 12 mois avec céréales"
+  },
+  {
+    "key": "en:dairy-cereal-based-beverage-for-baby-s-breakfast-from-4-6-months",
+    "name": "Boisson lactée pour petit-déjeuner bébé dès 4/6 mois avec céréales"
+  },
+  {
+    "key": "en:dairy-cereal-based-beverage-for-baby-s-breakfast-from-8-9-months",
+    "name": "Boisson lactée pour petit-déjeuner bébé dès 8/9 mois avec céréales"
+  },
+  {
+    "key": "en:fruit-based-beverages-for-baby-from-4-6-months",
+    "name": "Boissons aux fruits pour bébé dès 4/6 mois"
   },
   {
     "key": "en:baby-drinks",
@@ -140,12 +204,20 @@
     "name": "Bouillons en poudre"
   },
   {
+    "key": "en:chicken-meat-balls",
+    "name": "Boulettes au poulet"
+  },
+  {
     "key": "en:chicken-skewers",
     "name": "Brochettes de poulet"
   },
   {
     "key": "en:yakitori-chicken-skewers",
     "name": "Brochettes de poulet Yakitori"
+  },
+  {
+    "key": "en:coated-peanuts",
+    "name": "Cacahuètes enrobées d'un biscuit pour apéritif"
   },
   {
     "key": "en:cocoa-powders",
@@ -156,24 +228,160 @@
     "name": "Cacaos et chocolats en poudre"
   },
   {
+    "key": "en:instant-powder-for-coffee-with-milk",
+    "name": "Café au lait en poudre soluble"
+  },
+  {
     "key": "en:decaffeinated-instant-coffees",
     "name": "Cafés en poudre décaféinés"
+  },
+  {
+    "key": "fr:calzones-au-poulet",
+    "name": "Calzones au poulet"
   },
   {
     "key": "en:cinnamon-powder",
     "name": "Cannelle en poudre"
   },
   {
+    "key": "en:instant-powder-for-cappuccino-with-chocolate",
+    "name": "Cappuccino au chocolat en poudre soluble"
+  },
+  {
     "key": "en:powdered-cappucino",
     "name": "Cappuccino en poudre"
+  },
+  {
+    "key": "en:cardamom-powder",
+    "name": "Cardamome en poudre"
+  },
+  {
+    "key": "en:diet-chocolate-breakfast-cereals",
+    "name": "Céréales au chocolat pour petit-déjeuner équilibré"
+  },
+  {
+    "key": "en:diet-chocolate-breakfast-cereals-fortified-with-vitamins-and-chemical-elements",
+    "name": "Céréales au chocolat pour petit-déjeuner équilibré enrichies en vitamines et minéraux"
+  },
+  {
+    "key": "en:unfortified-diet-chocolate-breakfast-cereals",
+    "name": "Céréales au chocolat pour petit-déjeuner équilibré non enrichies en vitamines et minéraux"
+  },
+  {
+    "key": "en:breakfast-chocolate-high-fiber-cereals-fortified-with-vitamins-and-chemical-elements",
+    "name": "Céréales au chocolat riches en fibres pour petit déjeuner enrichies en vitamines et minéraux"
+  },
+  {
+    "key": "en:unfilled-breakfast-chocolate-cereals-fortified-with-vitamins-and-chemical-elements",
+    "name": "Céréales chocolatées pour petit déjeuner non fourrées mais enrichies en vitamines et minéraux"
+  },
+  {
+    "key": "en:breakfast-chocolate-cereals-not-filled-and-not-fortified-with-vitamins-and-chemical-elements",
+    "name": "Céréales chocolatées pour petit-déjeuner non fourrées et non enrichies en vitamines et minéraux"
+  },
+  {
+    "key": "en:instant-cereal-powder-to-be-reconstituted-for-baby-from-4-6-months",
+    "name": "Céréales instantanées en poudre pour bébé dès 4/6 mois"
+  },
+  {
+    "key": "en:instant-cereal-powder-to-be-reconstituted-for-baby-from-6-months",
+    "name": "Céréales instantanées en poudre pour bébé dès 6 mois"
   },
   {
     "key": "en:cereals-for-babies",
     "name": "Céréales pour bébé"
   },
   {
+    "key": "en:breakfast-cereals-fortified-with-vitamins-and-chemical-elements",
+    "name": "Céréales pour petit déjeuner enrichies en vitamines et minéraux"
+  },
+  {
+    "key": "en:diet-breakfast-cereals",
+    "name": "Céréales pour petit déjeuner équilibre"
+  },
+  {
+    "key": "en:diet-breakfast-cereals-with-honey-fortified-with-vitamins-and-chemical-elements",
+    "name": "Céréales pour petit déjeuner équilibre au miel enrichies en vitamines et minéraux"
+  },
+  {
+    "key": "en:diet-breakfast-cereals-with-fruits",
+    "name": "Céréales pour petit déjeuner équilibre aux fruits"
+  },
+  {
+    "key": "en:diet-breakfast-cereals-with-fruits-fortified-with-vitamins-and-chemical-elements",
+    "name": "Céréales pour petit déjeuner équilibre aux fruits enrichies en vitamines et minéraux"
+  },
+  {
+    "key": "en:diet-breakfast-cereals-with-fruits-not-fortified",
+    "name": "Céréales pour petit déjeuner équilibre aux fruits non enrichies en vitamines et minéraux"
+  },
+  {
+    "key": "en:breakfast-cereals-diet-with-dried-fruits-fortified-with-vitamins-and-chemical-elements",
+    "name": "Céréales pour petit déjeuner équilibre aux fruits secs (à coque) enrichis en vitamines et minéraux"
+  },
+  {
+    "key": "en:diet-breakfast-cereals-fortified-with-vitamins-and-chemical-elements",
+    "name": "Céréales pour petit déjeuner équilibre enrichies en vitamines et minéraux"
+  },
+  {
+    "key": "en:diet-breakfast-cereals-plain-fortified-with-vitamins-and-chemical-elements",
+    "name": "Céréales pour petit déjeuner équilibre nature enrichies en vitamines et minéraux"
+  },
+  {
+    "key": "en:plain-diet-breakfast-cereals-not-fortified",
+    "name": "Céréales pour petit déjeuner équilibre nature non enrichies en vitamines et minéraux"
+  },
+  {
+    "key": "en:breakfast-cereals-filled-with-chocolate",
+    "name": "Céréales pour petit déjeuner fourrées au chocolat"
+  },
+  {
+    "key": "en:breakfast-cereals-filled-with-chocolate-fortified-with-vitamins-and-chemical-elements",
+    "name": "Céréales pour petit déjeuner fourrées au chocolat enrichies en vitamines et minéraux"
+  },
+  {
+    "key": "en:breakfast-cereals-filled-with-chocolate-hazelnuts",
+    "name": "Céréales pour petit déjeuner fourrées au chocolat-noisettes"
+  },
+  {
+    "key": "en:breakfast-cereals-filled-with-chocolate-hazelnuts-fortified-with-vitamins-and-chemical-elements",
+    "name": "Céréales pour petit déjeuner fourrées au chocolat-noisettes enrichies en vitamines et minéraux"
+  },
+  {
+    "key": "en:breakfast-cereals-filled-with-something-other-than-chocolate-fortified-with-vitamins-and-chemical-elements",
+    "name": "Céréales pour petit déjeuner fourrées fourrage autre que chocolat enrichies en vitamines et minéraux"
+  },
+  {
+    "key": "en:breakfast-cereals-not-fortified-with-vitamins-and-chemical-elements",
+    "name": "Céréales pour petit déjeuner non enrichies en vitamines et minéraux"
+  },
+  {
+    "key": "en:breakfast-cereals-rich-in-fibre",
+    "name": "Céréales pour petit déjeuner riches en fibres"
+  },
+  {
+    "key": "en:breakfast-cereals-rich-in-fibre-with-fruits-fortified-with-vitamins-and-chemical-elements",
+    "name": "Céréales pour petit déjeuner riches en fibres avec fruits enrichies en vitamines et minéraux"
+  },
+  {
+    "key": "en:breakfast-cereals-rich-in-fibre-fortified-with-vitamins-and-chemical-elements",
+    "name": "Céréales pour petit déjeuner riches en fibres enrichies en vitamines et minéraux"
+  },
+  {
+    "key": "en:breakfast-cereals-rich-in-fibre-without-fruits-fortified-with-vitamins-and-chemical-elements",
+    "name": "Céréales pour petit déjeuner riches en fibres sans fruits enrichies en vitamines et minéraux"
+  },
+  {
+    "key": "en:breakfast-cereals-very-rich-in-fibre-fortified-with-vitamins-and-chemical-elements",
+    "name": "Céréales pour petit déjeuner très riches en fibres enrichies en vitamines et minéraux"
+  },
+  {
     "key": "en:breakfast-cereals",
     "name": "Céréales pour petit-déjeuner"
+  },
+  {
+    "key": "en:instant-mix-of-chicory-and-coffee-powder",
+    "name": "Chicorée et café en poudre soluble"
   },
   {
     "key": "en:roasted-chicken-and-thyme-crisps",
@@ -184,8 +392,24 @@
     "name": "Chocolats en poudre"
   },
   {
+    "key": "en:chicken-chop-suey",
+    "name": "Chop suey de poulet"
+  },
+  {
+    "key": "en:lemon-base-for-beverage-without-sugar-to-be-diluted",
+    "name": "Citron à diluer pour boissons"
+  },
+  {
     "key": "en:ground-cloves",
     "name": "Clou de girofle en poudre"
+  },
+  {
+    "key": "en:chicken-heart",
+    "name": "Coeur de poulet"
+  },
+  {
+    "key": "en:cooked-chicken-heart",
+    "name": "Coeur de poulet cuit"
   },
   {
     "key": "fr:colorants-pour-oeufs",
@@ -200,8 +424,28 @@
     "name": "Compotes pour bébé"
   },
   {
+    "key": "en:cone-wafer-for-ice-cream",
+    "name": "Cône pour glace"
+  },
+  {
     "key": "fr:cordons-bleus-de-poulet",
     "name": "Cordons bleus de poulet"
+  },
+  {
+    "key": "en:ground-coriander-leaves",
+    "name": "Coriandre en poudre"
+  },
+  {
+    "key": "en:dehydrated-aromatic-stock-cube-for-fish",
+    "name": "Court-bouillon pour poissons déshydraté"
+  },
+  {
+    "key": "en:chicken-couscous",
+    "name": "Couscous au poulet"
+  },
+  {
+    "key": "en:dairy-dessert-for-baby-with-custard",
+    "name": "Crème dessert pour bébé"
   },
   {
     "key": "en:almond-based-creams-for-cooking",
@@ -244,6 +488,22 @@
     "name": "Croquettes pour chien"
   },
   {
+    "key": "en:boiled-chicken-leg-with-meat-and-skin",
+    "name": "Cuisse de poulet avec viande et peau bouillie"
+  },
+  {
+    "key": "en:boiled-chicken-leg-meat",
+    "name": "Cuisse de poulet bouillie"
+  },
+  {
+    "key": "en:roasted-chicken-leg-meat-and-skin",
+    "name": "Cuisse de poulet rôtie avec viande et peau"
+  },
+  {
+    "key": "en:roasted-chicken-leg-meat",
+    "name": "Cuisse de poulet rôtie sans peau"
+  },
+  {
     "key": "en:chicken-thighs",
     "name": "Cuisses de poulet"
   },
@@ -256,12 +516,44 @@
     "name": "Curcuma en poudre"
   },
   {
+    "key": "en:curry-powder",
+    "name": "Curry en poudre"
+  },
+  {
+    "key": "en:dairy-dessert-for-baby",
+    "name": "Dessert lacté pour bébé"
+  },
+  {
+    "key": "en:dairy-dessert-for-baby-with-semolina",
+    "name": "Dessert lacté pour bébé à la semoule"
+  },
+  {
+    "key": "en:dairy-dessert-for-baby-with-rice",
+    "name": "Dessert lacté pour bébé au riz"
+  },
+  {
+    "key": "en:plain-dairy-dessert-for-baby-with-fruits",
+    "name": "Dessert lacté pour bébé aux fruits"
+  },
+  {
+    "key": "en:plain-dairy-dessert-for-baby",
+    "name": "Dessert lacté pour bébé nature"
+  },
+  {
+    "key": "en:dairy-dessert-for-baby-with-sugar",
+    "name": "Dessert lacté pour bébé sucré"
+  },
+  {
     "key": "en:baby-fruit-desserts",
     "name": "Desserts au fruit pour bébé"
   },
   {
     "key": "en:baby-dairy-desserts",
     "name": "Desserts lactés pour bébé"
+  },
+  {
+    "key": "en:aspartame-in-powder",
+    "name": "Édulcorant à l'aspartame en poudre"
   },
   {
     "key": "en:chicken-cutlets",
@@ -272,16 +564,44 @@
     "name": "Escalopes de poulet panées"
   },
   {
+    "key": "en:cooked-chicken-breast-without-skin",
+    "name": "Filet de poulet sans peau cuit"
+  },
+  {
     "key": "en:chicken-breasts",
     "name": "Filets de poulet"
   },
   {
-    "key": "fr:fromages-pour-enfants",
+    "key": "fr:filets-de-poulet-rotis",
+    "name": "Filets de poulet rotis"
+  },
+  {
+    "key": "en:chicken-liver",
+    "name": "Foie de poulet"
+  },
+  {
+    "key": "en:cooked-chicken-liver",
+    "name": "Foie de poulet cuit"
+  },
+  {
+    "key": "en:frozen-french-fries-to-deep-fry",
+    "name": "Frites surgelées pour friteuse"
+  },
+  {
+    "key": "en:cheeses-for-kids",
     "name": "Fromages pour enfants"
+  },
+  {
+    "key": "en:chicken-patties",
+    "name": "Galettes au poulet"
   },
   {
     "key": "en:rice-paper",
     "name": "Galettes de riz pour rouleau de printemps"
+  },
+  {
+    "key": "en:gelling-agent-for-jam",
+    "name": "Gélifiant pour confitures"
   },
   {
     "key": "en:chicken-gizzards",
@@ -300,12 +620,60 @@
     "name": "Graines de fenugrec en poudre"
   },
   {
-    "key": "ru:кефир-для-детского-питания",
+    "key": "en:chicken-fat",
+    "name": "Graisse de poulet"
+  },
+  {
+    "key": "en:chicken-hamburgers",
+    "name": "Hamburgers au poulet"
+  },
+  {
+    "key": "en:frying-oil",
+    "name": "Huile pour friture"
+  },
+  {
+    "key": "en:egg-yolk-powder",
+    "name": "Jaune d'oeuf en poudre"
+  },
+  {
+    "key": "en:spinach-young-leaves",
+    "name": "Jeunes pousses d'épinards pour salades"
+  },
+  {
+    "key": "en:big-scale-sand-smelt-to-fry",
+    "name": "Joëls pour friture"
+  },
+  {
+    "key": "en:pineapple-juice-for-canned-pineapple",
+    "name": "Jus d'ananas pour ananas appertisé"
+  },
+  {
+    "key": "en:kefir-for-children",
     "name": "Kéfir pour bébés"
+  },
+  {
+    "key": "en:fajitas-kits",
+    "name": "Kit pour fajitas"
   },
   {
     "key": "en:whey-powder",
     "name": "Lactosérum en poudre"
+  },
+  {
+    "key": "en:first-age-baby-milk-powder",
+    "name": "Lait 1er âge en poudre soluble"
+  },
+  {
+    "key": "en:second-age-baby-milk-powder",
+    "name": "Lait 2ème âge en poudre soluble"
+  },
+  {
+    "key": "en:ready-to-feed-baby-growing-up-milk",
+    "name": "Lait de croissance pour enfants en bas âge"
+  },
+  {
+    "key": "en:eggnog-without-alcohol",
+    "name": "Lait de poule sans alcool"
   },
   {
     "key": "en:powdered-khorasan-wheat-milks",
@@ -314,6 +682,22 @@
   {
     "key": "en:milk-powders",
     "name": "Laits en poudre"
+  },
+  {
+    "key": "en:semi-skimmed-milk-powder",
+    "name": "Laits en poudre demi-écrémés"
+  },
+  {
+    "key": "en:skimmed-milk-powder",
+    "name": "Laits en poudre écrémés"
+  },
+  {
+    "key": "en:whole-milk-powder",
+    "name": "Laits entiers en poudre"
+  },
+  {
+    "key": "en:baby-milks-in-powder",
+    "name": "Laits infantiles en poudre"
   },
   {
     "key": "en:baby-milks",
@@ -328,6 +712,22 @@
     "name": "Lardons de poulet"
   },
   {
+    "key": "en:cooked-mixed-vegetables-for-couscous",
+    "name": "Légumes cuits pour couscous"
+  },
+  {
+    "key": "en:frozen-mixed-vegetables-for-couscous",
+    "name": "Légumes pour couscous surgelés"
+  },
+  {
+    "key": "en:frozen-mixed-vegetables-for-ratatouille",
+    "name": "Légumes pour ratatouille surgelés"
+  },
+  {
+    "key": "en:frozen-mixed-vegetables-for-soups",
+    "name": "Légumes surgelés pour potage"
+  },
+  {
     "key": "fr:macon-solutre-pouilly",
     "name": "Mâcon Solutré Pouilly"
   },
@@ -336,7 +736,11 @@
     "name": "Manchons de poulet"
   },
   {
-    "key": "fr:melange-d-epices-pour-guacamole",
+    "key": "en:solid-vegetable-fat-for-frying",
+    "name": "Matière grasse solide pour friture"
+  },
+  {
+    "key": "en:guacamole-spice-mix",
     "name": "Mélange d'épices pour guacamole"
   },
   {
@@ -346,6 +750,10 @@
   {
     "key": "es:mezclas-de-verduras-y-hortalizas-para-sopa",
     "name": "Mélanges de légumes pour soupes"
+  },
+  {
+    "key": "en:molokhia-powder",
+    "name": "Meloukhia en poudre"
   },
   {
     "key": "en:pennyroyal",
@@ -368,7 +776,7 @@
     "name": "Nems au poulet"
   },
   {
-    "key": "fr:noisettes-en-poudre",
+    "key": "en:hazelnuts-powder",
     "name": "Noisettes en poudre"
   },
   {
@@ -440,6 +848,18 @@
     "name": "Nuits-Saint-Georges premier cru Les Poulettes"
   },
   {
+    "key": "fr:nuits-saint-georges-premier-cru-les-poulettes-blanc",
+    "name": "Nuits-Saint-Georges premier cru Les Poulettes blanc"
+  },
+  {
+    "key": "fr:nuits-saint-georges-premier-cru-les-poulettes-rouge",
+    "name": "Nuits-Saint-Georges premier cru Les Poulettes rouge"
+  },
+  {
+    "key": "en:egg-powder",
+    "name": "Oeuf en poudre"
+  },
+  {
     "key": "en:chicken-eggs",
     "name": "Œufs de poules"
   },
@@ -460,6 +880,42 @@
     "name": "Oignon en poudre"
   },
   {
+    "key": "en:instant-mix-of-barley-and-coffee-powder",
+    "name": "Orge et café en poudre soluble"
+  },
+  {
+    "key": "en:home-made-bread-with-flour-for-home-made-bread-preparation",
+    "name": "Pain blanc maison avec farine pour machine à pain"
+  },
+  {
+    "key": "en:wholemeal-rolls-for-hamburger",
+    "name": "Pain complet pour hamburger"
+  },
+  {
+    "key": "en:wholemeal-rolls-for-hotdog",
+    "name": "Pain complet pour hot dog"
+  },
+  {
+    "key": "en:country-style-home-made-bread-with-flour-for-bread-making-machine",
+    "name": "Pain de campagne fait maison avec farine pour machine à pain"
+  },
+  {
+    "key": "en:powdered-panela",
+    "name": "Panela en poudre"
+  },
+  {
+    "key": "fr:panini-au-poulet",
+    "name": "Panini au poulet"
+  },
+  {
+    "key": "fr:parmentiers-de-poulet",
+    "name": "Parmentiers de poulet"
+  },
+  {
+    "key": "en:pastilla-filled-with-chicken-pie",
+    "name": "Pastilla au poulet"
+  },
+  {
     "key": "en:wet-cat-food",
     "name": "Pâtées pour chat"
   },
@@ -468,16 +924,100 @@
     "name": "Pâtées pour chien"
   },
   {
+    "key": "en:chicken-liver-pate",
+    "name": "Pâtés de foie de poulet"
+  },
+  {
     "key": "en:instant-pasta-with-chicken",
     "name": "Pâtes instantanées au poulet"
+  },
+  {
+    "key": "en:ice-cream-cup-for-children",
+    "name": "Petit pot de glace pour enfant"
+  },
+  {
+    "key": "en:baby-food-jar-with-vegetables-and-starch-from-4-6-months",
+    "name": "Petit pots aux légumes avec féculents pour bébés dès 4/6 mois"
+  },
+  {
+    "key": "en:baby-food-jar-with-banana",
+    "name": "Petits pots aux fruits avec bananes pour bébé"
+  },
+  {
+    "key": "en:baby-food-jar-without-banana",
+    "name": "Petits pots aux fruits sans banane pour bébé"
+  },
+  {
+    "key": "en:baby-food-jar-with-vegetables-from-4-6-months",
+    "name": "Petits pots aux légumes pour bébés dès 4-6 mois"
   },
   {
     "key": "fr:petits-pots-pour-bebe",
     "name": "Petits pots pour bébé"
   },
   {
+    "key": "fr:pilons-de-poulet-cuits-au-four",
+    "name": "Pilons de poulet cuits au four"
+  },
+  {
+    "key": "en:chicken-pizza",
+    "name": "Pizza au poulet"
+  },
+  {
     "key": "en:durum-wheat-plates-for-lasagna",
     "name": "Plaques de blé dur pour lasagne"
+  },
+  {
+    "key": "en:vegetable-dish-for-babies-from-12-months-with-starch-and-meat",
+    "name": "Plat aux légumes pour bébés dès 12 mois avec féculents et viande"
+  },
+  {
+    "key": "en:vegetable-dish-for-babies-from-18-months-with-starch-and-meat",
+    "name": "Plat aux légumes pour bébés dès 18 mois avec féculents et viande"
+  },
+  {
+    "key": "en:vegetable-dish-for-babies-from-6-months-with-starch-and-meat",
+    "name": "Plat aux légumes pour bébés dès 6 mois avec féculents et viande"
+  },
+  {
+    "key": "en:vegetable-dish-for-babies-from-8-months-with-starch-and-meat",
+    "name": "Plat aux légumes pour bébés dès 8 mois avec féculents et viande"
+  },
+  {
+    "key": "en:vegetable-dish-for-babies-from-12-months-with-starch-and-fish",
+    "name": "Plat avec légumes pour bébés dès 12 mois avec féculents et poisson"
+  },
+  {
+    "key": "en:vegetable-dish-for-babies-from-18-months-with-starch-and-fish",
+    "name": "Plat avec légumes pour bébés dès 18 mois avec féculents et poisson"
+  },
+  {
+    "key": "en:vegetable-dish-for-babies-from-6-months-with-starch-and-fish",
+    "name": "Plat avec légumes pour bébés dès 6 mois avec féculents et poisson"
+  },
+  {
+    "key": "en:vegetable-dish-for-babies-from-8-months-with-starch-and-fish",
+    "name": "Plat avec légumes pour bébés dès 8 mois avec féculents et poisson"
+  },
+  {
+    "key": "en:vegetable-dish-for-baby-with-milk-and-starch-from-12-months",
+    "name": "Plat de légumes et féculents avec lait pour bébé dès 12 mois"
+  },
+  {
+    "key": "en:vegetable-dish-for-baby-with-milk-and-starch-from-18-months",
+    "name": "Plat de légumes et féculents avec lait pour bébé dès 18 mois"
+  },
+  {
+    "key": "en:vegetable-dish-for-baby-with-milk-and-starch-from-6-months",
+    "name": "Plat de légumes et féculents avec lait pour bébé dès 6 mois"
+  },
+  {
+    "key": "en:vegetable-dish-for-baby-with-milk-and-starch-from-8-months",
+    "name": "Plat de légumes et féculents avec lait pour bébé dès 8 mois"
+  },
+  {
+    "key": "en:vegetable-dish-for-baby-from-6-months-with-starch",
+    "name": "Plat de légumes et féculents pour bébés dès 6 mois"
   },
   {
     "key": "en:meals-with-chicken",
@@ -492,6 +1032,14 @@
     "name": "Plats principaux pour bébé"
   },
   {
+    "key": "en:pre-fried-potatoes-pan-fried-with-chicken",
+    "name": "Poêlée de pommes de terre préfrites au poulet"
+  },
+  {
+    "key": "en:roasted-chicken-breast-with-meat-and-skin",
+    "name": "Poitrine de poulet rôtie avec viande et peau"
+  },
+  {
     "key": "fr:pommard-les-poutures",
     "name": "Pommard Les Poutures"
   },
@@ -500,8 +1048,32 @@
     "name": "Potages pour bébé"
   },
   {
+    "key": "en:cocoa-powder-for-baby-beverage",
+    "name": "Poudre cacaotée pour bébé"
+  },
+  {
+    "key": "en:cocoa-powder-for-beverages-with-sugar",
+    "name": "Poudre cacaotée pour boisson sucrée"
+  },
+  {
+    "key": "en:cocoa-powder-for-beverages-with-sugar-fortified-with-vitamins",
+    "name": "Poudre cacaotée pour boisson sucrée enrichie en vitamines"
+  },
+  {
+    "key": "en:cocoa-powder-for-beverages-with-sugar-fortified-with-vitamins-and-chemical-elements",
+    "name": "Poudre cacaotée sucrée pour boisson enrichie en vitamines et minéraux"
+  },
+  {
     "key": "en:dried-tomato-powder",
     "name": "Poudre de tomate séchée"
+  },
+  {
+    "key": "en:malted-cocoa",
+    "name": "Poudre maltée cacaotée"
+  },
+  {
+    "key": "fr:poudres-a-lever",
+    "name": "Poudres à lever"
   },
   {
     "key": "en:mushroom-powders",
@@ -524,8 +1096,52 @@
     "name": "Pouilly-Vinzelles"
   },
   {
+    "key": "fr:poularde-de-bresse",
+    "name": "Poularde de Bresse"
+  },
+  {
+    "key": "fr:poularde-du-perigord",
+    "name": "Poularde du Périgord"
+  },
+  {
+    "key": "fr:poulardes",
+    "name": "Poulardes"
+  },
+  {
     "key": "fr:poule-au-pot",
     "name": "Poule au pot"
+  },
+  {
+    "key": "en:chicken-with-curry-and-coconut-milk-sauce",
+    "name": "Poulet au curry et au lait de coco"
+  },
+  {
+    "key": "fr:poulet-de-bresse",
+    "name": "Poulet de Bresse"
+  },
+  {
+    "key": "fr:poulet-de-l-ardeche",
+    "name": "Poulet de l'Ardèche"
+  },
+  {
+    "key": "fr:poulet-des-cevennes",
+    "name": "Poulet des Cévennes"
+  },
+  {
+    "key": "fr:poulet-du-perigord",
+    "name": "Poulet du Périgord"
+  },
+  {
+    "key": "en:tandoori-chicken",
+    "name": "Poulet tandoori"
+  },
+  {
+    "key": "en:chicken-tikka-masala",
+    "name": "Poulet tikka masala"
+  },
+  {
+    "key": "fr:poulet-crudites",
+    "name": "Poulet-crudités"
   },
   {
     "key": "en:chickens",
@@ -536,7 +1152,7 @@
     "name": "Poulets au curry"
   },
   {
-    "key": "fr:poulets-basquaise",
+    "key": "en:chicken-basque-style",
     "name": "Poulets basquaise"
   },
   {
@@ -544,7 +1160,27 @@
     "name": "Poulets cuisinés"
   },
   {
-    "key": "fr:poulets-panes",
+    "key": "fr:poulets-du-gers",
+    "name": "Poulets du Gers"
+  },
+  {
+    "key": "en:whole-chickens",
+    "name": "Poulets entiers"
+  },
+  {
+    "key": "fr:poulets-fermiers",
+    "name": "Poulets fermiers"
+  },
+  {
+    "key": "fr:poulets-fermiers-entiers",
+    "name": "Poulets fermiers entiers"
+  },
+  {
+    "key": "fr:poulets-fermiers-jaunes",
+    "name": "Poulets fermiers jaunes"
+  },
+  {
+    "key": "en:breaded-chicken",
     "name": "Poulets panés"
   },
   {
@@ -552,28 +1188,44 @@
     "name": "Poulets rôtis"
   },
   {
-    "key": "fr:pouligny-saint-pierre",
+    "key": "en:pouligny-saint-pierre",
     "name": "Pouligny-Saint-Pierre"
+  },
+  {
+    "key": "en:common-octopus",
+    "name": "Poulpe"
+  },
+  {
+    "key": "en:cooked-common-octopus",
+    "name": "Poulpes cuits"
   },
   {
     "key": "en:sprouts",
     "name": "Pousses"
   },
   {
-    "key": "en:fresh-onion-sprouts",
-    "name": "Pousses d'oignons frais"
+    "key": "en:alfalfa-sprouts",
+    "name": "Pousses d'alfalfa"
   },
   {
     "key": "en:canned-alfalfa-sprouts",
-    "name": "Pousses de alfalfa en conserve"
-  },
-  {
-    "key": "en:fresh-alfalfa-sprouts",
-    "name": "Pousses de alfalfa frais"
+    "name": "Pousses d'alfalfa en conserve"
   },
   {
     "key": "en:bamboo-shoots",
     "name": "Pousses de bambou"
+  },
+  {
+    "key": "en:canned-drained-bamboo-shoots",
+    "name": "Pousses de bambou appertisées égouttées"
+  },
+  {
+    "key": "en:raw-bamboo-shoots",
+    "name": "Pousses de bambou crues"
+  },
+  {
+    "key": "en:canned-bamboo-shoots",
+    "name": "Pousses de bambou en conserve"
   },
   {
     "key": "en:canned-mung-bean-sprouts",
@@ -584,20 +1236,16 @@
     "name": "Pousses de haricot mungo frais"
   },
   {
-    "key": "en:fresh-vegetables-sprouts",
-    "name": "Pousses de légumes frais"
-  },
-  {
     "key": "en:canned-legume-sprouts",
     "name": "Pousses de légumineuses en conserve"
   },
   {
     "key": "en:fresh-legume-sprouts",
-    "name": "Pousses de légumineuses frais"
+    "name": "Pousses de légumineuses fraîches"
   },
   {
-    "key": "en:fresh-lentil-sprouts",
-    "name": "Pousses de lentilles frais"
+    "key": "en:fresh-alfalfa-sprouts",
+    "name": "Pousses de luzerne fraîches"
   },
   {
     "key": "en:canned-sprouts",
@@ -605,19 +1253,43 @@
   },
   {
     "key": "en:fresh-sprouts",
-    "name": "Pousses frais"
+    "name": "Pousses fraîches"
   },
   {
-    "key": "fr:preparations-pour-cremes-dessert",
+    "key": "en:dried-sprouts",
+    "name": "Pousses séchées"
+  },
+  {
+    "key": "en:base-formulation-for-chocolate-mousse",
+    "name": "Préparation pour mousse au chocolat"
+  },
+  {
+    "key": "en:pizza-pastry-base",
+    "name": "Préparation pour pâte à pizza"
+  },
+  {
+    "key": "en:chicken-preparations",
+    "name": "Préparations au poulet"
+  },
+  {
+    "key": "en:chicken-spreads",
+    "name": "Préparations de poulet à tartiner"
+  },
+  {
+    "key": "en:mixes-for-dessert-creams",
     "name": "Préparations pour crèmes dessert"
   },
   {
-    "key": "en:pancake-mixes",
+    "key": "de:pfannkuchenmischung",
     "name": "Préparations pour crêpes"
   },
   {
     "key": "en:dessert-mixes",
     "name": "Préparations pour desserts"
+  },
+  {
+    "key": "en:mixes-for-jelly-desserts",
+    "name": "Préparations pour desserts gélifiés"
   },
   {
     "key": "fr:preparations-pour-desserts-lactes",
@@ -640,7 +1312,11 @@
     "name": "Préparations pour gâteaux"
   },
   {
-    "key": "fr:preparations-pour-panna-cotta",
+    "key": "en:milk-shakes-preparations",
+    "name": "Préparations pour Milk-shakes"
+  },
+  {
+    "key": "en:mixes-for-panna-cotta",
     "name": "Préparations pour panna cotta"
   },
   {
@@ -648,12 +1324,12 @@
     "name": "Préparations pour thés glacés"
   },
   {
-    "key": "en:products-that-cannot-be-found-in-metropolitan-france",
-    "name": "Produits introuvables en Métropole (pour la France)"
-  },
-  {
     "key": "en:protein-powders",
     "name": "Protéines en poudre"
+  },
+  {
+    "key": "en:chicken-quenelles",
+    "name": "Quenelles de poulet"
   },
   {
     "key": "en:chicken-rillettes",
@@ -666,6 +1342,10 @@
   {
     "key": "en:chicken-risottos",
     "name": "Risottos au poulet"
+  },
+  {
+    "key": "en:white-rice-cooked-with-chicken",
+    "name": "Riz blanc cuit au poulet"
   },
   {
     "key": "en:rices-for-paella",
@@ -688,12 +1368,32 @@
     "name": "Saint-Pourçain"
   },
   {
+    "key": "en:pasta-salad-with-chicken",
+    "name": "Salades de pâtes au poulet"
+  },
+  {
     "key": "en:piemontese-salads-with-chicken",
     "name": "Salades piémontaises au poulet"
   },
   {
+    "key": "en:samoussas-with-chicken",
+    "name": "Samoussas au poulet"
+  },
+  {
+    "key": "en:baguette-sandwiches-with-and-chicken-and-vegetables-and-mayonnaise",
+    "name": "Sandwich baguette poulet crudités mayonnaise"
+  },
+  {
     "key": "en:chicken-sandwiches",
     "name": "Sandwichs au poulet"
+  },
+  {
+    "key": "en:sandwich-made-with-wholemeal-loaf-bread-and-chicken-and-vegetables-and-mayonnaise",
+    "name": "Sandwichs pain de mie complet poulet crudités mayonnaise"
+  },
+  {
+    "key": "en:topping-sauce-for-pizza",
+    "name": "Sauce pour pizza"
   },
   {
     "key": "fr:sauces-pour-nems",
@@ -717,7 +1417,7 @@
   },
   {
     "key": "en:vegetarian-hot-dog-sausages",
-    "name": "Saucisses végétales pour hot-dog"
+    "name": "Saucisses végétariennes pour hot-dog"
   },
   {
     "key": "en:durum-wheat-semolinas-for-couscous",
@@ -728,8 +1428,36 @@
     "name": "Semoules de maïs pour polenta"
   },
   {
-    "key": "fr:sucres-en-poudre",
+    "key": "en:light-syrup-for-canned-fruits",
+    "name": "Sirop léger pour fruits appertisés"
+  },
+  {
+    "key": "en:syrup-for-canned-fruits",
+    "name": "Sirop pour fruits appertisés"
+  },
+  {
+    "key": "en:soup-for-baby-with-vegetables-and-cereals-and-milk",
+    "name": "Soupe pour bébé aux légumes aux céréales et au lait"
+  },
+  {
+    "key": "en:soup-for-baby-with-vegetables-and-potatoes",
+    "name": "Soupe pour bébé aux légumes et aux pommes de terre"
+  },
+  {
+    "key": "en:low-calorie-meal-replacement-in-powder-reconstituted-with-skimmed-milk",
+    "name": "Substitut de repas hypocalorique en poudre reconstituée avec lait écrémé"
+  },
+  {
+    "key": "en:low-calorie-milkshake-meal-replacement-in-powder-reconstituted-with-skimmed-milk",
+    "name": "Substitut de repas hypocalorique milk-shake en poudre reconstitué avec lait écrémé"
+  },
+  {
+    "key": "en:caster-sugars",
     "name": "Sucres en poudre"
+  },
+  {
+    "key": "en:cotton-candy-sugars",
+    "name": "Sucres pour barbes à papa"
   },
   {
     "key": "en:chicken-tabbouleh",
@@ -744,7 +1472,31 @@
     "name": "Terrines de poulet"
   },
   {
+    "key": "fr:tortellini-au-poulet",
+    "name": "Tortellini au poulet"
+  },
+  {
+    "key": "en:chicken-and-mushroom-pies",
+    "name": "Tourtes au poulet et aux champignons"
+  },
+  {
     "key": "en:vanilla-powder",
     "name": "Vanille en poudre"
+  },
+  {
+    "key": "en:hen-meat",
+    "name": "Viande de poule"
+  },
+  {
+    "key": "en:hen-meat-and-skin",
+    "name": "Viande de poulet avec peau"
+  },
+  {
+    "key": "en:chicken-meat-without-skin",
+    "name": "Viande de poulet sans peau"
+  },
+  {
+    "key": "en:chicken-wraps",
+    "name": "Wraps au poulet"
   }
 ]

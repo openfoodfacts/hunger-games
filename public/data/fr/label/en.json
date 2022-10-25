@@ -12,6 +12,10 @@
     "name": "Allégé en sucre"
   },
   {
+    "key": "fr:bio-equitable-en-france",
+    "name": "Bio équitable en France"
+  },
+  {
     "key": "en:packaged-in-france",
     "name": "Conditionné en France"
   },
@@ -34,10 +38,6 @@
   {
     "key": "en:not-advised-for-children-and-pregnant-women",
     "name": "Déconseillé aux enfants et aux femmes enceintes"
-  },
-  {
-    "key": "fr:deconseille-aux-femmes-enceintes",
-    "name": "Déconseillé aux femmes enceintes"
   },
   {
     "key": "en:raised-in-scotland",
@@ -72,6 +72,10 @@
     "name": "Entrepreneurs + Engagés"
   },
   {
+    "key": "en:certified-b-corporation",
+    "name": "Entreprise B certifiée"
+  },
+  {
     "key": "fr:entreprise-du-patrimoine-vivant",
     "name": "Entreprise du Patrimoine Vivant"
   },
@@ -86,6 +90,10 @@
   {
     "key": "en:made-in-belgium",
     "name": "Fabriqué en Belgique"
+  },
+  {
+    "key": "en:made-in-bulgaria",
+    "name": "Fabriqué en Bulgarie"
   },
   {
     "key": "en:made-in-spain",
@@ -128,6 +136,14 @@
     "name": "Fermenté en fût de chêne"
   },
   {
+    "key": "fr:haute-valeur-environnementale",
+    "name": "Haute Valeur Environnementale"
+  },
+  {
+    "key": "fr:herta-s-engage",
+    "name": "Herta s'engage"
+  },
+  {
     "key": "fr:mis-en-bouteille-a-la-propriete",
     "name": "Mis en bouteille à la propriété"
   },
@@ -148,6 +164,10 @@
     "name": "Œufs de poules élevées en plein air"
   },
   {
+    "key": "en:may-have-an-adverse-effect-on-activity-and-attention-in-children",
+    "name": "Peut avoir des effets indésirables sur l'activité et l'attention chez les enfants"
+  },
+  {
     "key": "en:egg-laid-in-france",
     "name": "Pondu en France"
   },
@@ -164,7 +184,7 @@
     "name": "Produit en braille"
   },
   {
-    "key": "en:produced-in-bretagne",
+    "key": "en:produced-in-brittany",
     "name": "Produit en Bretagne"
   },
   {
@@ -182,10 +202,6 @@
   {
     "key": "en:high-in-calcium",
     "name": "Riche en calcium"
-  },
-  {
-    "key": "fr:riche-en-fibres",
-    "name": "Riche en fibres"
   },
   {
     "key": "en:high-fibres",

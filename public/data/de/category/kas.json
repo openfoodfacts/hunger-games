@@ -12,6 +12,18 @@
     "name": "Biere mit Kastanien"
   },
   {
+    "key": "en:danish-cheeses",
+    "name": "Dänischer Käse"
+  },
+  {
+    "key": "en:german-cheeses",
+    "name": "Deutscher Käse"
+  },
+  {
+    "key": "en:three-cheese-pizza",
+    "name": "Drei-Käse-Pizza"
+  },
+  {
     "key": "en:cheeses-from-england",
     "name": "Englischer Käse"
   },
@@ -22,6 +34,10 @@
   {
     "key": "en:french-cheeses",
     "name": "Französischer Käse"
+  },
+  {
+    "key": "en:five-cheese-pizza",
+    "name": "Fünf-Käse-Pizza"
   },
   {
     "key": "en:castrated-cat-food",
@@ -80,7 +96,7 @@
     "name": "Käse Doppelrahmstufe"
   },
   {
-    "key": "fr:fromages-pour-enfants",
+    "key": "en:cheeses-for-kids",
     "name": "Käse für Kinder"
   },
   {
@@ -100,7 +116,7 @@
     "name": "Käsekuchen mit roten Beeren"
   },
   {
-    "key": "fr:crepes-au-fromage",
+    "key": "en:crepe-filled-with-cheese",
     "name": "Käsepfannkuchen"
   },
   {
@@ -120,6 +136,10 @@
     "name": "Kastanien-Joghurt"
   },
   {
+    "key": "en:chestnut-honey",
+    "name": "Kastanienhonig"
+  },
+  {
     "key": "en:chestnut-milks",
     "name": "Kastanienmilch"
   },
@@ -132,8 +152,16 @@
     "name": "Litauischer Käse"
   },
   {
-    "key": "en:non-dairy-cheeses",
-    "name": "Michfreie Käse"
+    "key": "en:mexican-cheeses",
+    "name": "Mexikanischer Käse"
+  },
+  {
+    "key": "en:cheese-substitutes",
+    "name": "Milchfreie Käse"
+  },
+  {
+    "key": "de:nieheimer-käse",
+    "name": "Nieheimer Käse"
   },
   {
     "key": "en:cheeses-from-northern-ireland",
@@ -158,6 +186,10 @@
   {
     "key": "en:portuguese-cheeses",
     "name": "Portugisischer Käse"
+  },
+  {
+    "key": "en:ham-and-cheese-sandwiches",
+    "name": "Sandwiches mit Schinken und Käse"
   },
   {
     "key": "en:cheeses-from-scotland",

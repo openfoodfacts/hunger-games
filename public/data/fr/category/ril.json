@@ -16,19 +16,19 @@
     "name": "Rillettes d'alose"
   },
   {
-    "key": "fr:rillettes-d-anguille",
+    "key": "en:eel-rillettes",
     "name": "Rillettes d'anguille"
   },
   {
-    "key": "fr:rillettes-d-esturgeon",
+    "key": "en:sturgeon-rillettes",
     "name": "Rillettes d'esturgeon"
   },
   {
-    "key": "fr:rillettes-d-oie",
+    "key": "en:goose-rillettes",
     "name": "Rillettes d'oie"
   },
   {
-    "key": "fr:rillettes-de-bar-sauvage",
+    "key": "en:wild-bass-rillettes",
     "name": "Rillettes de bar sauvage"
   },
   {
@@ -48,15 +48,15 @@
     "name": "Rillettes de canard"
   },
   {
-    "key": "fr:rillettes-de-crabe",
+    "key": "en:crab-rillettes",
     "name": "Rillettes de crabe"
   },
   {
-    "key": "fr:rillettes-de-crevette",
+    "key": "en:shrimp-rillettes",
     "name": "Rillettes de crevette"
   },
   {
-    "key": "fr:rillettes-de-crustaces",
+    "key": "en:crustacean-rillettes",
     "name": "Rillettes de crustacés"
   },
   {
@@ -68,15 +68,15 @@
     "name": "Rillettes de gibiers de chasse"
   },
   {
-    "key": "fr:rillettes-de-homard",
+    "key": "en:lobster-rillettes",
     "name": "Rillettes de homard"
   },
   {
-    "key": "fr:rillettes-de-la-sarthe",
+    "key": "en:sarthe-rillettes",
     "name": "Rillettes de la Sarthe"
   },
   {
-    "key": "fr:rillettes-de-langoustine",
+    "key": "en:langoustine-rillettes",
     "name": "Rillettes de langoustine"
   },
   {
@@ -84,15 +84,15 @@
     "name": "Rillettes de lapin"
   },
   {
-    "key": "fr:rillettes-de-maquereau",
+    "key": "en:mackerel-rillettes",
     "name": "Rillettes de maquereau"
   },
   {
-    "key": "fr:rillettes-de-mouton",
+    "key": "en:mutton-rillettes",
     "name": "Rillettes de mouton"
   },
   {
-    "key": "fr:rillettes-de-mulet",
+    "key": "en:mullet-rillettes",
     "name": "Rillettes de mulet"
   },
   {
@@ -100,7 +100,7 @@
     "name": "Rillettes de poissons"
   },
   {
-    "key": "fr:rillettes-de-porc",
+    "key": "en:pork-rillettes",
     "name": "Rillettes de porc"
   },
   {
@@ -112,7 +112,7 @@
     "name": "Rillettes de poulet rôti"
   },
   {
-    "key": "fr:rillettes-de-requin",
+    "key": "en:shark-rillettes",
     "name": "Rillettes de requin"
   },
   {
@@ -120,11 +120,11 @@
     "name": "Rillettes de Saint-Jacques"
   },
   {
-    "key": "fr:rillettes-de-sanglier",
+    "key": "en:wild-boar-rillettes",
     "name": "Rillettes de sanglier"
   },
   {
-    "key": "fr:rillettes-de-sardine",
+    "key": "en:sardine-rillettes",
     "name": "Rillettes de sardine"
   },
   {
@@ -132,7 +132,7 @@
     "name": "Rillettes de saumon"
   },
   {
-    "key": "fr:rillettes-de-saumon-rose",
+    "key": "en:pink-salmon-rillettes",
     "name": "Rillettes de saumon rose"
   },
   {
@@ -144,11 +144,11 @@
     "name": "Rillettes de Tours"
   },
   {
-    "key": "fr:rillettes-de-truite",
+    "key": "en:trout-rillettes",
     "name": "Rillettes de truite"
   },
   {
-    "key": "fr:rillettes-de-truite-fumee",
+    "key": "en:smoked-trout-rillettes",
     "name": "Rillettes de truite fumée"
   },
   {
@@ -164,15 +164,23 @@
     "name": "Rillettes de viande rouge"
   },
   {
-    "key": "fr:rillettes-de-volaille",
+    "key": "en:poultry-rillettes",
     "name": "Rillettes de volaille"
   },
   {
-    "key": "fr:rillettes-du-mans",
+    "key": "en:rillettes-from-mans",
     "name": "Rillettes du Mans"
   },
   {
-    "key": "fr:rillettes-francaises",
+    "key": "en:french-rillettes",
     "name": "Rillettes françaises"
+  },
+  {
+    "key": "en:pure-goose-rillettes",
+    "name": "Rillettes pur oie"
+  },
+  {
+    "key": "en:rillettes-pure-pork",
+    "name": "Rillettes pur porc"
   }
 ]
