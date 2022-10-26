@@ -162,7 +162,11 @@ const ResponsiveAppBar = () => {
                   handleShowTour();
                 }}
               />
-              <MenuItem onClick={openTheWelcomeTour} color="inherit">
+              <MenuItem
+                component="button"
+                color="inherit"
+                onClick={openTheWelcomeTour}
+              >
                 <Typography textAlign="center">{t("menu.tour")}</Typography>
               </MenuItem>
             </Menu>
