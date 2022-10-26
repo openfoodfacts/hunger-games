@@ -67,6 +67,7 @@ const ResponsiveAppBar = () => {
   const openTheWelcomeTour = () => {
     setIsTourOpen(true);
     localSettings.update(localSettingsKeys.showTour, true);
+    handleCloseNavMenu();
   };
 
   React.useEffect(() => {
@@ -161,7 +162,7 @@ const ResponsiveAppBar = () => {
                   handleShowTour();
                 }}
               />
-              <MenuItem component="button" onClick={openTheWelcomeTour}>
+              <MenuItem onClick={openTheWelcomeTour} color="inherit">
                 <Typography textAlign="center">{t("menu.tour")}</Typography>
               </MenuItem>
             </Menu>
