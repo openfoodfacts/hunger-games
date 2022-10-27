@@ -9,6 +9,7 @@ export { default as Nutrition } from "./nutrition";
 export { default as LogoAnnotationPage } from "./logos/LogoAnnotation";
 export { default as LogoSearchPage } from "./logos/LogoSearch";
 export { default as LogoUpdatePage } from "./logos/LogoUpdate";
+export { default as ProductLogoAnnotationPage } from "./logos/ProductLogoAnnotations";
 
 // experimental
 export { default as NutriscoreValidator } from "./nutriscoreValidator";
