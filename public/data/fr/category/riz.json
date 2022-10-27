@@ -40,6 +40,10 @@
     "name": "Crèmes végétales à base de riz pour cuisiner"
   },
   {
+    "key": "en:dairy-dessert-for-baby-with-rice",
+    "name": "Dessert lacté pour bébé au riz"
+  },
+  {
     "key": "en:rice-desserts",
     "name": "Desserts de riz"
   },
@@ -84,8 +88,20 @@
     "name": "Galettes de riz soufflé"
   },
   {
+    "key": "en:rice-pudding-with-caramel-sauce",
+    "name": "Gâteau de riz au caramel"
+  },
+  {
+    "key": "en:refrigerated-rice-pudding-with-caramel-sauce",
+    "name": "Gâteau de riz au caramel rayon frais"
+  },
+  {
     "key": "fr:gateaux-de-riz",
     "name": "Gâteaux de riz"
+  },
+  {
+    "key": "en:canned-rice-puddings",
+    "name": "Gâteaux de riz en conserve"
   },
   {
     "key": "en:rice-beans",
@@ -106,6 +122,10 @@
   {
     "key": "en:rice-dishes",
     "name": "Plats à base de riz"
+  },
+  {
+    "key": "fr:poisson-en-sauce-et-riz",
+    "name": "Poisson en sauce et riz"
   },
   {
     "key": "en:rices",
@@ -132,12 +152,20 @@
     "name": "Riz au lait saveur vanille"
   },
   {
+    "key": "en:vegan-rice-puddings",
+    "name": "Riz au lait végétaliens"
+  },
+  {
     "key": "en:frozen-rice-with-vegetables",
     "name": "Riz aux légumes congelés"
   },
   {
     "key": "en:bahia-rices",
     "name": "Riz Bahía"
+  },
+  {
+    "key": "en:baldo-rices",
+    "name": "Riz baldo"
   },
   {
     "key": "en:balilla-x-sollana-rices",
@@ -160,6 +188,26 @@
     "name": "Riz blanc"
   },
   {
+    "key": "en:white-rice-cooked-with-chicken",
+    "name": "Riz blanc cuit au poulet"
+  },
+  {
+    "key": "en:white-rice-cooked-with-vegetables-and-meat",
+    "name": "Riz blanc cuit avec légumes et viande"
+  },
+  {
+    "key": "en:unsalted-cooked-rice",
+    "name": "Riz blanc cuit non salé"
+  },
+  {
+    "key": "en:parboiled-white-rices",
+    "name": "Riz blanc étuvé"
+  },
+  {
+    "key": "en:unsalted-cooked-parboiled-rice",
+    "name": "Riz blanc étuvé cuit non salé"
+  },
+  {
     "key": "en:bomba-rices",
     "name": "Riz Bomba"
   },
@@ -174,6 +222,14 @@
   {
     "key": "en:brown-rices",
     "name": "Riz complet"
+  },
+  {
+    "key": "en:cooked-brown-rices",
+    "name": "Riz complet cuit"
+  },
+  {
+    "key": "en:unsalted-cooked-brown-rices",
+    "name": "Riz complet cuit non salé"
   },
   {
     "key": "en:camargue-rices",
@@ -204,6 +260,14 @@
     "name": "Riz long grain"
   },
   {
+    "key": "en:black-rices",
+    "name": "Riz noir"
+  },
+  {
+    "key": "en:originario-rices",
+    "name": "Riz Originario"
+  },
+  {
     "key": "en:paddy-rices",
     "name": "Riz paddy"
   },
@@ -232,12 +296,40 @@
     "name": "Riz précuits natures"
   },
   {
-    "key": "fr:riz-prepares",
+    "key": "en:prepared-rices",
     "name": "Riz préparés"
+  },
+  {
+    "key": "en:ribe-rices",
+    "name": "Riz Ribe"
+  },
+  {
+    "key": "en:roma-rices",
+    "name": "Riz Roma"
+  },
+  {
+    "key": "en:red-rices",
+    "name": "Riz rouge"
+  },
+  {
+    "key": "en:unsalted-cooked-red-rice",
+    "name": "Riz rouge cuit non salé"
+  },
+  {
+    "key": "fr:riz-rouge-de-camargue",
+    "name": "Riz rouge de Camargue"
+  },
+  {
+    "key": "fr:riz-rouge-du-bhoutan",
+    "name": "Riz rouge du Bhoutan"
   },
   {
     "key": "en:wild-rice",
     "name": "Riz sauvage"
+  },
+  {
+    "key": "en:unsalted-cooked-wild-rice",
+    "name": "Riz sauvage cuit non salé"
   },
   {
     "key": "en:senia-rices",
@@ -246,6 +338,22 @@
   {
     "key": "en:puffed-rice",
     "name": "Riz soufflé"
+  },
+  {
+    "key": "en:chocolate-puffed-rice",
+    "name": "Riz soufflé chocolaté"
+  },
+  {
+    "key": "en:chocolate-puffed-rice-fortified-with-vitamins-and-chemical-elements",
+    "name": "Riz soufflé chocolaté enrichi en vitamines et minéraux"
+  },
+  {
+    "key": "en:chocolate-puffed-rice-not-fortified-with-vitamins-and-chemical-elements",
+    "name": "Riz soufflé chocolaté non enrichi en vitamines et minéraux"
+  },
+  {
+    "key": "en:puffed-rice-fortified-with-vitamins-and-chemical-elements",
+    "name": "Riz soufflé nature enrichi en vitamines et minéraux"
   },
   {
     "key": "en:surinam-rices",
@@ -276,6 +384,10 @@
     "name": "Salades de riz"
   },
   {
+    "key": "fr:saumon-a-l-oseille-et-riz",
+    "name": "Saumon à l'oseille et riz"
+  },
+  {
     "key": "en:rice-semolinas",
     "name": "Semoules de riz"
   },
@@ -296,12 +408,20 @@
     "name": "Tomates farcies et riz"
   },
   {
-    "key": "en:black-chocolate-turron-with-puffed-rice",
-    "name": "Turrón au chocolat noir avec riz soufflé"
+    "key": "en:chocolate-turron-with-puffed-rice",
+    "name": "Turrón au chocolat avec riz soufflé"
   },
   {
     "key": "en:rice-vermicelli",
     "name": "Vermicelle de riz"
+  },
+  {
+    "key": "en:cooked-unsalted-rice-noodles",
+    "name": "Vermicelles de riz cuits non salés"
+  },
+  {
+    "key": "en:dried-rice-noodles",
+    "name": "Vermicelles de riz secs"
   },
   {
     "key": "en:rice-vinegars",

@@ -32,8 +32,20 @@
     "name": "Auxey-Duresses Bas des Duresses"
   },
   {
-    "key": "fr:bas-armagnac",
+    "key": "en:bas-armagnac",
     "name": "Bas-Armagnac"
+  },
+  {
+    "key": "en:cream-sauce-for-pizza-base",
+    "name": "Base de pizza à la crème"
+  },
+  {
+    "key": "en:tomato-sauce-for-pizza-base",
+    "name": "Base de pizza tomatée"
+  },
+  {
+    "key": "en:basil-seeds-drinks",
+    "name": "Basil seeds drinks"
   },
   {
     "key": "en:basil",
@@ -48,6 +60,10 @@
     "name": "Basilic fraîche"
   },
   {
+    "key": "en:dried-basil",
+    "name": "Basilic séché"
+  },
+  {
     "key": "en:ground-dried-basil",
     "name": "Basilic séché moulu"
   },
@@ -60,36 +76,32 @@
     "name": "Beaune Le Bas des Teurons"
   },
   {
-    "key": "fr:biscuits-aperitifs-souffles-a-base-de-mais",
+    "key": "fr:beaune-premier-cru-le-bas-des-teurons-blanc",
+    "name": "Beaune premier cru Le Bas des Teurons blanc"
+  },
+  {
+    "key": "fr:beaune-premier-cru-le-bas-des-teurons-rouge",
+    "name": "Beaune premier cru Le Bas des Teurons rouge"
+  },
+  {
+    "key": "en:puffed-salty-snacks-made-from-maize-with-peanuts",
+    "name": "Biscuit apéritif soufflé à base de maïs à la cacahuète"
+  },
+  {
+    "key": "en:puffed-salty-snacks-made-from-potato-and-soy",
+    "name": "Biscuit apéritif soufflé à base de pomme de terre et de soja"
+  },
+  {
+    "key": "en:puffed-salty-snacks-made-from-maize",
     "name": "Biscuits apéritifs soufflés à base de maïs"
   },
   {
-    "key": "fr:biscuits-aperitifs-souffles-a-base-de-pomme-de-terre",
+    "key": "en:puffed-salty-snacks-made-from-potato",
     "name": "Biscuits apéritifs soufflés à base de pomme de terre"
   },
   {
-    "key": "en:pineapple-juice-and-soy-drinks",
-    "name": "Boissons à base de jus d'ananas et de soja"
-  },
-  {
-    "key": "en:orange-juice-and-soy-drinks",
-    "name": "Boissons à base de jus d'orange et de soja"
-  },
-  {
-    "key": "en:fruit-juice-and-soy-drinks",
-    "name": "Boissons à base de jus de fruits et de soja"
-  },
-  {
-    "key": "en:peach-juice-and-soy-drinks",
-    "name": "Boissons à base de jus de pêche et de soja"
-  },
-  {
-    "key": "en:apple-juice-and-soy-drinks",
-    "name": "Boissons à base de jus de pomme et de soja"
-  },
-  {
-    "key": "en:multifruit-juice-and-soy-drinks",
-    "name": "Boissons à base de jus multifruits et de soja"
+    "key": "en:plant-based-beverage-for-baby",
+    "name": "Boisson à base de plantes pour bébé"
   },
   {
     "key": "en:plant-based-beverages",
@@ -100,12 +112,32 @@
     "name": "Boissons à base de vin"
   },
   {
-    "key": "en:plant-based-ice-cream-cones",
-    "name": "Crème glacée à base de plante"
+    "key": "en:beer-based-alcoholic-beverages",
+    "name": "Boissons alcoolisées à base de bière"
   },
   {
-    "key": "en:plant-based-ice-cream-tubs",
-    "name": "Crème glacée à base de plante"
+    "key": "en:rum-based-alcoholic-beverages",
+    "name": "Boissons alcoolisées à base de Rhum"
+  },
+  {
+    "key": "en:wine-based-alcoholic-beverages",
+    "name": "Boissons alcoolisées à base de vin"
+  },
+  {
+    "key": "en:vodka-based-alcoholic-beverages",
+    "name": "Boissons alcoolisées à base de vodka"
+  },
+  {
+    "key": "en:balls-from-soy-and-or-wheat-proteins",
+    "name": "Boulettes à base de protéines de soja et ou blé"
+  },
+  {
+    "key": "en:rum-based-cocktail",
+    "name": "Cocktail à base de rhum"
+  },
+  {
+    "key": "en:whiskey-based-cocktail",
+    "name": "Cocktail à base de whisky"
   },
   {
     "key": "en:almond-based-creams-for-cooking",
@@ -136,7 +168,15 @@
     "name": "Crèmes végétales à base de soja pour cuisiner"
   },
   {
-    "key": "en:mackerels-fillets-with-tomato-and-basilisk",
+    "key": "en:dried-meat-based-pasta-sauces",
+    "name": "Dried meat-based pasta sauces"
+  },
+  {
+    "key": "en:stevia-sweetener",
+    "name": "Édulcorant à base d'extrait de stévia"
+  },
+  {
+    "key": "en:mackerel-fillets-with-tomato-and-basil",
     "name": "Filets de maquereaux tomate-basilic"
   },
   {
@@ -146,6 +186,22 @@
   {
     "key": "en:cheeses-of-the-netherlands",
     "name": "Fromages des Pays-Bas"
+  },
+  {
+    "key": "en:patties-from-soy-and-or-wheat-proteins",
+    "name": "Galettes à base de protéines de soja et ou blé"
+  },
+  {
+    "key": "en:basque-cake-with-custard",
+    "name": "Gâteau basque à la crème pâtissière"
+  },
+  {
+    "key": "en:basque-cake-with-cherries",
+    "name": "Gâteau basque aux cerises"
+  },
+  {
+    "key": "en:beef-based-burger-with-15-fat",
+    "name": "Haché à base de bœuf cru à 15% de matières grasses"
   },
   {
     "key": "en:concentrated-apricot-juices",
@@ -212,12 +268,24 @@
     "name": "Jus de tomates à base de concentré"
   },
   {
+    "key": "en:multivitamin-mixed-fruits-juice-reconstituted-from-a-concentrate",
+    "name": "Jus multifruit à base de concentré"
+  },
+  {
+    "key": "en:orange-based-mixed-fruits-multivitamin-juice",
+    "name": "Jus multifruit multivitaminé à base d'orange"
+  },
+  {
     "key": "en:concentrated-multifruit-juices",
-    "name": "Jus multifruits à base de jus concentré"
+    "name": "Jus multifruits à base de concentrés"
   },
   {
     "key": "fr:ladoix-premier-cru-basses-mourottes",
     "name": "Ladoix premier cru Basses Mourottes"
+  },
+  {
+    "key": "en:ready-to-feed-baby-growing-up-milk",
+    "name": "Lait de croissance pour enfants en bas âge"
   },
   {
     "key": "en:frozen-plant-based-foods-mixes",
@@ -248,12 +316,28 @@
     "name": "Pestos au basilic"
   },
   {
-    "key": "en:plant-based-ice-cream-sandwiches",
-    "name": "Plant-based ice cream sandwiches"
+    "key": "en:basque-style-piperade",
+    "name": "Piperade basquaise"
+  },
+  {
+    "key": "en:bulgur-dishes",
+    "name": "Plats à base de boulgour"
+  },
+  {
+    "key": "en:bean-dishes",
+    "name": "Plats à base de haricots"
+  },
+  {
+    "key": "en:lentil-dishes",
+    "name": "Plats à base de lentilles"
   },
   {
     "key": "en:pasta-dishes",
     "name": "Plats à base de pâtes"
+  },
+  {
+    "key": "en:potato-dishes",
+    "name": "Plats à base de pommes de terre"
   },
   {
     "key": "en:quinoa-dishes",
@@ -276,7 +360,7 @@
     "name": "Pommard Les Rugiens Bas"
   },
   {
-    "key": "fr:poulets-basquaise",
+    "key": "en:chicken-basque-style",
     "name": "Poulets basquaise"
   },
   {
@@ -296,8 +380,24 @@
     "name": "Préparations à base de miel et propolis"
   },
   {
+    "key": "en:potato-preparations",
+    "name": "Préparations à base de pommes de terre"
+  },
+  {
     "key": "en:seaweed-products",
     "name": "Produits à base d'algues"
+  },
+  {
+    "key": "en:potato-puree-made-from-flakes-reconstituted-with-whole-milk-with-added-fat",
+    "name": "Purée de pommes de terre à base de flocons reconstituée avec lait entier"
+  },
+  {
+    "key": "en:unsalted-potato-puree-made-from-flakes-reconstituted-with-semi-skimmed-milk-and-water",
+    "name": "Purée de pommes de terre non salée à base de flocons reconstituée avec lait demi-écrémé et eau"
+  },
+  {
+    "key": "en:refrigerated-plant-based-foods",
+    "name": "Refrigerated plant-based foods"
   },
   {
     "key": "en:basmati-rices",
@@ -320,6 +420,14 @@
     "name": "Saint-Aubin premier cru Le Bas de Gamay à l'Est"
   },
   {
+    "key": "fr:saint-aubin-premier-cru-le-bas-de-gamay-a-l-est-blanc",
+    "name": "Saint-Aubin premier cru Le Bas de Gamay à l'Est blanc"
+  },
+  {
+    "key": "fr:saint-aubin-premier-cru-le-bas-de-gamay-a-l-est-rouge",
+    "name": "Saint-Aubin premier cru Le Bas de Gamay à l'Est rouge"
+  },
+  {
     "key": "fr:sauces-a-base-d-extrait-de-levure",
     "name": "Sauces à base d'extrait de levure"
   },
@@ -328,16 +436,32 @@
     "name": "Sauces à base d'extrait de viande"
   },
   {
-    "key": "fr:sauces-basquaises",
+    "key": "en:basque-style-sauces",
     "name": "Sauces basquaises"
   },
   {
-    "key": "fr:sauces-tomates-au-basilic",
+    "key": "en:tomato-sauces-with-basil",
     "name": "Sauces tomates au basilic"
   },
   {
     "key": "fr:savigny-les-beaune-premier-cru-basses-vergelesses",
     "name": "Savigny-lès-Beaune premier cru Basses Vergelesses"
+  },
+  {
+    "key": "fr:savigny-les-beaune-premier-cru-basses-vergelesses-blanc",
+    "name": "Savigny-lès-Beaune premier cru Basses Vergelesses blanc"
+  },
+  {
+    "key": "fr:savigny-les-beaune-premier-cru-basses-vergelesses-rouge",
+    "name": "Savigny-lès-Beaune premier cru Basses Vergelesses rouge"
+  },
+  {
+    "key": "en:chorba-frik-soup-with-meat-and-frik",
+    "name": "Soupe chorba frik à base de viande et de frik"
+  },
+  {
+    "key": "en:liquid-light-cream-with-4-to-8-fat",
+    "name": "Spécialité à base de crème légère fluide à 8% de matières grasses"
   },
   {
     "key": "en:specialty-made-with-tripe",

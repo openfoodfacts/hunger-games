@@ -1,5 +1,25 @@
 [
   {
+    "key": "en:2-3-fat-petit-suisse",
+    "name": "2-3% fat Petit-Suisse"
+  },
+  {
+    "key": "en:2-3-fat-petit-suisse-fruits-flavoured-fortified-with-calcium-and-vitamin-d",
+    "name": "2-3% fat Petit-Suisse fruits flavoured fortified with calcium and vitamin D"
+  },
+  {
+    "key": "en:2-3-fat-petit-suisse-with-fruits",
+    "name": "2-3% fat Petit-Suisse with fruits"
+  },
+  {
+    "key": "en:2-3-fat-petit-suisse-with-fruits-fortified-with-calcium-and-vitamin-d",
+    "name": "2-3% fat Petit-Suisse with fruits fortified with calcium and vitamin D"
+  },
+  {
+    "key": "en:60-unsalted-vegetable-fat-with-sunflowerseed",
+    "name": "60% unsalted vegetable fat with sunflowerseed"
+  },
+  {
     "key": "en:artificial-sugar-substitutes",
     "name": "Artificial sugar substitutes"
   },
@@ -8,271 +28,15 @@
     "name": "Avocado and salmon sushis"
   },
   {
-    "key": "en:bodybuilding-supplements",
-    "name": "Bodybuilding supplements"
+    "key": "en:bacon-substitutes",
+    "name": "Bacon substitutes"
   },
   {
-    "key": "en:brown-sugars",
-    "name": "Brown sugars"
+    "key": "en:beet-sugars",
+    "name": "Beet sugars"
   },
   {
-    "key": "en:cane-sugar",
-    "name": "Cane sugar"
-  },
-  {
-    "key": "en:caviar-substitutes",
-    "name": "Caviar substitutes"
-  },
-  {
-    "key": "en:caviar-substitutes-from-algae",
-    "name": "Caviar substitutes from algae"
-  },
-  {
-    "key": "en:coconut-sugar",
-    "name": "Coconut sugar"
-  },
-  {
-    "key": "en:cucumber-sushis",
-    "name": "Cucumber sushis"
-  },
-  {
-    "key": "en:dietary-supplements",
-    "name": "Dietary supplements"
-  },
-  {
-    "key": "en:fortified-wines-such-as-natural-sweet-wines",
-    "name": "Fortified wines such as natural sweet wines"
-  },
-  {
-    "key": "en:granulated-sugars",
-    "name": "Granulated sugars"
-  },
-  {
-    "key": "en:inverted-sugar-syrups",
-    "name": "Inverted sugar syrups"
-  },
-  {
-    "key": "en:lump-sugar",
-    "name": "Lump sugar"
-  },
-  {
-    "key": "en:maple-sugars",
-    "name": "Maple sugars"
-  },
-  {
-    "key": "en:milk-substitute",
-    "name": "Milk substitute"
-  },
-  {
-    "key": "en:natural-sugar-substitutes",
-    "name": "Natural sugar substitutes"
-  },
-  {
-    "key": "en:nonrefined-sunflower-oils",
-    "name": "Nonrefined sunflower oils"
-  },
-  {
-    "key": "en:petits-suisses",
-    "name": "Petits suisses"
-  },
-  {
-    "key": "en:potato-crisps-in-sunflower-oil",
-    "name": "Potato crisps in sunflower oil"
-  },
-  {
-    "key": "en:powdered-sugars",
-    "name": "Powdered sugars"
-  },
-  {
-    "key": "en:raw-shelled-sunflower-seeds",
-    "name": "Raw shelled sunflower seeds"
-  },
-  {
-    "key": "en:raw-sunflower-seeds",
-    "name": "Raw sunflower seeds"
-  },
-  {
-    "key": "en:raw-unshelled-sunflower-seeds",
-    "name": "Raw unshelled sunflower seeds"
-  },
-  {
-    "key": "en:refined-deodorized-sunflower-oils",
-    "name": "Refined deodorized sunflower oils"
-  },
-  {
-    "key": "en:roasted-shelled-sunflower-seeds",
-    "name": "Roasted shelled sunflower seeds"
-  },
-  {
-    "key": "en:roasted-sunflower-seeds",
-    "name": "Roasted sunflower seeds"
-  },
-  {
-    "key": "en:roasted-unshelled-sunflower-seeds",
-    "name": "Roasted unshelled sunflower seeds"
-  },
-  {
-    "key": "en:salmon-sushis",
-    "name": "Salmon sushis"
-  },
-  {
-    "key": "en:sardines-in-sunflower-oil",
-    "name": "Sardines in sunflower oil"
-  },
-  {
-    "key": "en:shelled-sunflower-seeds",
-    "name": "Shelled sunflower seeds"
-  },
-  {
-    "key": "en:shrimp-sushis",
-    "name": "Shrimp sushis"
-  },
-  {
-    "key": "en:sucralose",
-    "name": "Sucralose"
-  },
-  {
-    "key": "en:suffolk-gold-cheese",
-    "name": "Suffolk Gold cheese"
-  },
-  {
-    "key": "en:sugar-coated-almonds",
-    "name": "Sugar coated almonds"
-  },
-  {
-    "key": "en:sugar-coated-pinenuts",
-    "name": "Sugar coated pinenuts"
-  },
-  {
-    "key": "en:sugar-pies",
-    "name": "Sugar pies"
-  },
-  {
-    "key": "en:sugar-substitutes",
-    "name": "Sugar substitutes"
-  },
-  {
-    "key": "en:sugar-free-chewing-gum",
-    "name": "Sugar-free chewing gum"
-  },
-  {
-    "key": "en:sugar-free-flavoured-syrups",
-    "name": "Sugar-free flavoured syrups"
-  },
-  {
-    "key": "en:sugarcane-vinegars",
-    "name": "Sugarcane vinegars"
-  },
-  {
-    "key": "en:sugared-crepes",
-    "name": "Sugared crêpes"
-  },
-  {
-    "key": "en:sugared-popcorn",
-    "name": "Sugared popcorn"
-  },
-  {
-    "key": "en:sugars",
-    "name": "Sugars"
-  },
-  {
-    "key": "en:sugary-cooking-helpers",
-    "name": "Sugary cooking helpers"
-  },
-  {
-    "key": "en:sultana-raisins",
-    "name": "Sultana raisins"
-  },
-  {
-    "key": "en:summer-savory",
-    "name": "Summer savory"
-  },
-  {
-    "key": "en:summer-truffles",
-    "name": "Summer truffles"
-  },
-  {
-    "key": "en:sunflower-halva",
-    "name": "Sunflower halva"
-  },
-  {
-    "key": "en:sunflower-honeys",
-    "name": "Sunflower honeys"
-  },
-  {
-    "key": "en:sunflower-oil-mayonnaises",
-    "name": "Sunflower oil mayonnaises"
-  },
-  {
-    "key": "en:sunflower-oils",
-    "name": "Sunflower oils"
-  },
-  {
-    "key": "en:sunflower-seed-butters",
-    "name": "Sunflower seed butters"
-  },
-  {
-    "key": "en:sunflower-seeds",
-    "name": "Sunflower seeds"
-  },
-  {
-    "key": "en:sunflower-seeds-and-their-products",
-    "name": "Sunflower seeds and their products"
-  },
-  {
-    "key": "en:surimi",
-    "name": "Surimi"
-  },
-  {
-    "key": "en:surimi-sandwiches",
-    "name": "Surimi sandwiches"
-  },
-  {
-    "key": "en:surinam-rices",
-    "name": "Surinam rices"
-  },
-  {
-    "key": "en:surprise-breads",
-    "name": "Surprise breads"
-  },
-  {
-    "key": "en:sushi-medley",
-    "name": "Sushi medley"
-  },
-  {
-    "key": "en:sushi-rice",
-    "name": "Sushi rice"
-  },
-  {
-    "key": "en:sushis",
-    "name": "Sushis"
-  },
-  {
-    "key": "en:sushis-and-makis",
-    "name": "Sushis and makis"
-  },
-  {
-    "key": "en:sushki",
-    "name": "Sushki"
-  },
-  {
-    "key": "en:sussex-slipcote",
-    "name": "Sussex Slipcote"
-  },
-  {
-    "key": "en:tuna-sushis",
-    "name": "Tuna sushis"
-  },
-  {
-    "key": "en:unshelled-sunflower-seeds",
-    "name": "Unshelled sunflower seeds"
-  },
-  {
-    "key": "en:vanilla-sugars",
-    "name": "Vanilla sugars"
-  },
-  {
-    "key": "en:vanillin-sugars",
-    "name": "Vanillin sugars"
+    "key": "en:bircher-style-sugar-free-muesli-flakes-with-fruits",
+    "name": "Bircher-style sugar free muesli flakes with fruits"
   }
 ]

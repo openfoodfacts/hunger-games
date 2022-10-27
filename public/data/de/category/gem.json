@@ -8,6 +8,14 @@
     "name": "Entwässerte Gemüsebrühe"
   },
   {
+    "key": "en:french-vegetables",
+    "name": "Französisches Gemüse"
+  },
+  {
+    "key": "en:fresh-mixed-vegetables",
+    "name": "Frische Gemüse Mischung"
+  },
+  {
     "key": "en:fresh-vegetables",
     "name": "Frisches Gemüse"
   },
@@ -24,20 +32,32 @@
     "name": "Gefrorene gemischte Früchte"
   },
   {
-    "key": "en:frozen-plant-based-foods-mixes",
+    "key": "en:frozen-mixed-vegetables",
     "name": "Gefrorene Gemüsemischungen"
   },
   {
-    "key": "en:frozen-vegetable-mixes",
-    "name": "Gefrorene Gemüsemischungen"
+    "key": "en:stuffed-vegetables",
+    "name": "Gefülltes Gemüse"
   },
   {
     "key": "en:almond-meal",
     "name": "Gemahlene Mandeln"
   },
   {
+    "key": "en:ground-peppers",
+    "name": "Gemahlene Paprikaschoten"
+  },
+  {
     "key": "en:ground-dried-stevia",
     "name": "Gemahlene Steviablätter"
+  },
+  {
+    "key": "en:ground-dried-vegetables",
+    "name": "Gemahlenes Trockengemüse"
+  },
+  {
+    "key": "en:mixed-berry-jams",
+    "name": "Gemischte Beerenmarmeladen"
   },
   {
     "key": "en:mixed-cereal-flakes",
@@ -60,6 +80,14 @@
     "name": "Gemüse basierte Lebensmittel und Getränke"
   },
   {
+    "key": "en:mixed-vegetables",
+    "name": "Gemüse Mischung"
+  },
+  {
+    "key": "en:vegetable-gratins",
+    "name": "Gemüseaufläufe"
+  },
+  {
     "key": "en:vegetables-based-foods",
     "name": "Gemüsebasierte Lebensmittel"
   },
@@ -68,7 +96,7 @@
     "name": "Gemüsebouillonpulver"
   },
   {
-    "key": "en:veggie-burger-patties",
+    "key": "en:vegetarian-patties",
     "name": "Gemüsebratling"
   },
   {
@@ -80,7 +108,7 @@
     "name": "Gemüsecremesuppen"
   },
   {
-    "key": "en:vegetable-cakes",
+    "key": "en:vegetable-patties",
     "name": "Gemüsefrikadellen"
   },
   {
@@ -88,24 +116,60 @@
     "name": "Gemüsegerichte für Babies"
   },
   {
+    "key": "en:veggie-grounds",
+    "name": "Gemüsehack"
+  },
+  {
     "key": "en:canned-vegetables",
     "name": "Gemüsekonserven"
+  },
+  {
+    "key": "en:vegetables-pies",
+    "name": "Gemüsekuchen"
+  },
+  {
+    "key": "en:vegetable-lasagne",
+    "name": "Gemüselasagne"
   },
   {
     "key": "en:ravioli-with-vegetables",
     "name": "Gemüseravioli"
   },
   {
+    "key": "en:vegetable-risottos",
+    "name": "Gemüserisotto"
+  },
+  {
     "key": "en:vegetable-juices",
     "name": "Gemüsesäfte"
+  },
+  {
+    "key": "en:vegetable-salads",
+    "name": "Gemüsesalat"
+  },
+  {
+    "key": "en:vegetable-sauces",
+    "name": "Gemüsesaucen"
   },
   {
     "key": "en:vegetable-soups",
     "name": "Gemüsesuppen"
   },
   {
+    "key": "en:canned-vegetable-soups",
+    "name": "Gemüsesuppenkonserven"
+  },
+  {
+    "key": "en:dehydrated-vegetable-soups",
+    "name": "Gemüsesuppenpulver"
+  },
+  {
     "key": "en:mashed-vegetables",
     "name": "Gestampfte Gemüse"
+  },
+  {
+    "key": "en:ground-dried-aromatic-plants",
+    "name": "Getrocknete und gemahlene Kräuter"
   },
   {
     "key": "en:dried-vegetables",
@@ -116,8 +180,16 @@
     "name": "Muskat gemahlen"
   },
   {
+    "key": "en:ground-black-peppers",
+    "name": "Pfeffer schwarz gemahlen"
+  },
+  {
     "key": "en:plant-based-pickles",
     "name": "Pflanzliches eingelegtes Gemüse"
+  },
+  {
+    "key": "en:vegetable-sandwiches",
+    "name": "Sandwiches mit rohem Gemüse"
   },
   {
     "key": "en:mixed-fruit-soy-yogurts",
@@ -132,7 +204,7 @@
     "name": "Tiefkühl-Gemüse"
   },
   {
-    "key": "en:ground-dried-coriander-leaves",
+    "key": "en:ground-coriander-leaves",
     "name": "Trocken gemahlene Korianderblätter"
   },
   {
@@ -150,5 +222,13 @@
   {
     "key": "en:prepared-vegetables",
     "name": "Vorbereitetes Gemüse"
+  },
+  {
+    "key": "en:ground-white-peppers",
+    "name": "Weißer Pfeffer gemahlen"
+  },
+  {
+    "key": "de:wiener-gemischter-satz",
+    "name": "Wiener Gemischter Satz"
   }
 ]

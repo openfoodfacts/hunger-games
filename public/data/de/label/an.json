@@ -4,12 +4,16 @@
     "name": "Angeln mit Fallen"
   },
   {
-    "key": "en:angled-fish",
-    "name": "Angled fish"
+    "key": "en:animal-welfare",
+    "name": "Animal welfare"
   },
   {
     "key": "en:chickens-raised-without-antibiotics-since-birth",
     "name": "Chickens raised without antibiotics since birth"
+  },
+  {
+    "key": "en:eggs-from-animals-fed-without-gmos",
+    "name": "Eggs from animals fed without GMOs"
   },
   {
     "key": "en:es-ec0-017-an",
@@ -60,10 +64,6 @@
     "name": "Falsche Angaben auf der Verpackung"
   },
   {
-    "key": "en:pgi",
-    "name": "Geschützte geografische Angabe"
-  },
-  {
     "key": "en:hens-raised-without-antibiotics",
     "name": "Hennenaufzucht ohne Antibiotika"
   },
@@ -74,6 +74,14 @@
   {
     "key": "en:chickens-raised-without-antibiotics",
     "name": "Hühneraufzucht ohne Antibiotika"
+  },
+  {
+    "key": "en:grown-in-france",
+    "name": "In Frankreich angebaut"
+  },
+  {
+    "key": "en:may-have-an-adverse-effect-on-activity-and-attention-in-children",
+    "name": "May have an adverse effect on activity and attention in children"
   },
   {
     "key": "en:mediterranean-international-wine-and-spirit-challenge",
@@ -88,12 +96,20 @@
     "name": "Mit Vitaminen angereichert"
   },
   {
-    "key": "en:without-antibiotics",
+    "key": "en:no-artificial-colours-and-preservatives",
+    "name": "No artificial colours and preservatives"
+  },
+  {
+    "key": "en:no-antibiotics",
     "name": "Ohne Antibiotika"
   },
   {
     "key": "en:without-antibiotics-or-hormones",
     "name": "Ohne Antibiotika oder Hormone"
+  },
+  {
+    "key": "en:without-antibiotics-since-birth",
+    "name": "Ohne Antibiotika seit der Geburt"
   },
   {
     "key": "en:porks-raised-without-antibiotics-after-first-age",
@@ -160,10 +176,6 @@
     "name": "RSPO Mass Balance or Book and Claim"
   },
   {
-    "key": "en:saveurs-de-l-annee-france",
-    "name": "Saveurs de l'Année (France)"
-  },
-  {
     "key": "en:porks-raised-without-antibiotics",
     "name": "Schweineaufzucht ohne Antibiotika"
   },
@@ -182,9 +194,5 @@
   {
     "key": "en:without-antibiotics-after-weaning",
     "name": "Without antibiotics after weaning"
-  },
-  {
-    "key": "en:without-antibiotics-since-birth",
-    "name": "Without antibiotics since birth"
   }
 ]

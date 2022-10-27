@@ -21,9 +21,18 @@ import logo from "../assets/logo.png";
 import { Link } from "react-router-dom";
 
 import { useTranslation } from "react-i18next";
-import Welcome from "./welcome/Welcome";
+import Welcome, { getSteps } from "./welcome/Welcome";
+import { useMediaQuery } from "@mui/material";
+import { useTheme } from "@mui/material/styles";
 
-// Object wit no url are subheader in the menu
+import {
+  localSettings,
+  localSettingsKeys,
+  getTour,
+} from "../localeStorageManager";
+import Tour from "reactour";
+
+// Object with no url are subheader in the menu
 const pages = [
   { translationKey: "menu.games" },
   { url: "questions", translationKey: "menu.questions" },
@@ -32,12 +41,15 @@ const pages = [
   { translationKey: "menu.manage" },
   { url: "insights", translationKey: "menu.insights", devModeOnly: true },
   { url: "nutriscore", translationKey: "menu.nutriscore", devModeOnly: true },
-  // { url: "settings", translationKey: "menu.settings" },
+  { url: "settings", translationKey: "menu.settings", mobileOnly: true },
 ];
 
 const ResponsiveAppBar = () => {
   const { t } = useTranslation();
   const [anchorElNav, setAnchorElNav] = React.useState(null);
+  const [isTourOpen, setIsTourOpen] = React.useState(false);
+  const theme = useTheme();
+  const isDesktop = useMediaQuery(theme.breakpoints.up("md"));
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -47,11 +59,38 @@ const ResponsiveAppBar = () => {
     setAnchorElNav(null);
   };
 
+  const handleShowTour = () => {
+    setIsTourOpen(false);
+    localSettings.update(localSettingsKeys.showTour, false);
+  };
+
+  const openTheWelcomeTour = () => {
+    setIsTourOpen(true);
+    localSettings.update(localSettingsKeys.showTour, true);
+    handleCloseNavMenu();
+  };
+
+  React.useEffect(() => {
+    if (getTour()) setIsTourOpen(true);
+    //console.log(isTourOpen);
+  }, [isTourOpen]);
+
+  const steps = React.useMemo(
+    () => getSteps({ t, withSelector: isDesktop }),
+    [t, isDesktop]
+  );
+
   const { isLoggedIn, userName, refresh } = React.useContext(LoginContext);
   const { devMode: isDevMode, visiblePages } = React.useContext(DevModeContext);
-  const displayedPages = pages.filter(
-    (page) => !page.devModeOnly || (isDevMode && visiblePages[page.url])
-  );
+  const displayedPages = pages.filter((page) => {
+    if (page.devModeOnly) {
+      return isDevMode && visiblePages[page.url];
+    }
+    if (page.mobileOnly) {
+      return !isDesktop;
+    }
+    return true;
+  });
 
   return (
     <AppBar position="static" color="secondary">
@@ -113,6 +152,23 @@ const ResponsiveAppBar = () => {
                   </ListSubheader>
                 )
               )}
+              <Tour
+                steps={steps}
+                startAt={0}
+                isOpen={isTourOpen}
+                showButtons={true}
+                accentColor={theme.palette.primary.main}
+                onRequestClose={() => {
+                  handleShowTour();
+                }}
+              />
+              <MenuItem
+                component="button"
+                color="inherit"
+                onClick={openTheWelcomeTour}
+              >
+                <Typography textAlign="center">{t("menu.tour")}</Typography>
+              </MenuItem>
             </Menu>
             <Typography
               variant="h5"

@@ -24,6 +24,10 @@
     "name": "Approuvé par les familles 2019"
   },
   {
+    "key": "fr:approuve-par-les-familles-2020",
+    "name": "Approuvé par les familles 2020"
+  },
+  {
     "key": "en:belgian-family-brewers",
     "name": "Belgian Family Brewers"
   },
@@ -40,7 +44,7 @@
     "name": "Fabriqué au Portugal"
   },
   {
-    "key": "en:made-in-the-eu",
+    "key": "bg:произведено-в-европейския-съюз",
     "name": "Fabriqué dans l'UE"
   },
   {
@@ -54,6 +58,10 @@
   {
     "key": "en:made-in-belgium",
     "name": "Fabriqué en Belgique"
+  },
+  {
+    "key": "en:made-in-bulgaria",
+    "name": "Fabriqué en Bulgarie"
   },
   {
     "key": "en:made-in-spain",
@@ -88,8 +96,16 @@
     "name": "Faible teneur en sodium"
   },
   {
+    "key": "en:fair-for-life",
+    "name": "Fair for Life"
+  },
+  {
     "key": "en:fairtrade-international",
     "name": "Fairtrade International"
+  },
+  {
+    "key": "en:fairtrade-usa",
+    "name": "Fairtrade USA"
   },
   {
     "key": "en:made-with-free-range-eggs",
@@ -102,5 +118,17 @@
   {
     "key": "fr:farine-de-sarrasin-francais",
     "name": "Farine de sarrasin français"
+  },
+  {
+    "key": "en:farm-verified-organic",
+    "name": "Farm Verified Organic"
+  },
+  {
+    "key": "en:high-level-of-fat-israel",
+    "name": "High level of fat - Israel"
+  },
+  {
+    "key": "en:naturland-fair",
+    "name": "Naturland Fair"
   }
 ]

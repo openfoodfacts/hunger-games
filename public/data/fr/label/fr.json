@@ -1,7 +1,19 @@
 [
   {
+    "key": "fr:agri-ethique-france",
+    "name": "Agri-Éthique France"
+  },
+  {
+    "key": "en:french-agriculture",
+    "name": "Agriculture France"
+  },
+  {
     "key": "fr:association-culturelle-musulmane-d-ile-de-france",
     "name": "Association Culturelle Musulmane d'Ile de France"
+  },
+  {
+    "key": "fr:bio-equitable-en-france",
+    "name": "Bio équitable en France"
   },
   {
     "key": "fr:ble-francais",
@@ -30,6 +42,10 @@
   {
     "key": "en:grown-in-france",
     "name": "Cultivé en France"
+  },
+  {
+    "key": "en:dzg-gluten-free",
+    "name": "DZG Gluten free"
   },
   {
     "key": "en:european-fruit-juice-control-system",
@@ -108,6 +124,10 @@
     "name": "Fruits et Légumes de France"
   },
   {
+    "key": "en:institut-fresenius",
+    "name": "Institut Fresenius"
+  },
+  {
     "key": "en:french-milk",
     "name": "Lait Français"
   },
@@ -124,7 +144,7 @@
     "name": "Maïs de France"
   },
   {
-    "key": "fr:max-havelaar-france",
+    "key": "en:max-havelaar-france",
     "name": "Max Havelaar France"
   },
   {
@@ -138,6 +158,10 @@
   {
     "key": "fr:origine-france",
     "name": "Origine France"
+  },
+  {
+    "key": "fr:peche-francaise",
+    "name": "Pêche française"
   },
   {
     "key": "en:apples-from-france",
@@ -180,10 +204,6 @@
     "name": "Société Française de Contrôle de Viande Halal"
   },
   {
-    "key": "fr:soja-de-france",
-    "name": "Soja de France"
-  },
-  {
     "key": "fr:soja-francais",
     "name": "Soja Français"
   },
@@ -208,7 +228,7 @@
     "name": "Union française pour la santé bucco-dentaire"
   },
   {
-    "key": "fr:viande-bovine-francaise",
+    "key": "en:french-beef",
     "name": "Viande Bovine Française"
   },
   {
@@ -244,7 +264,7 @@
     "name": "Viande Porcine Française"
   },
   {
-    "key": "fr:volaille-francaise",
+    "key": "en:french-poultry",
     "name": "Volaille Française"
   }
 ]

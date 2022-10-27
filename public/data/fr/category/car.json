@@ -16,12 +16,24 @@
     "name": "Barres chocolatées biscuitées au caramel"
   },
   {
+    "key": "en:beef-stew-with-carrots",
+    "name": "Boeuf aux carottes"
+  },
+  {
+    "key": "en:soft-caramel-candy",
+    "name": "Bonbon au caramel mou"
+  },
+  {
     "key": "en:caramelized-peanuts",
     "name": "Cacahuètes caramélisées"
   },
   {
     "key": "en:liquid-caramel",
     "name": "Caramel liquide"
+  },
+  {
+    "key": "en:caramel-puddings",
+    "name": "Caramel puddings"
   },
   {
     "key": "en:caramels",
@@ -32,12 +44,24 @@
     "name": "Caramels au beurre salé"
   },
   {
+    "key": "en:crevalle-jack",
+    "name": "Carangue"
+  },
+  {
+    "key": "fr:carbonade-flamande",
+    "name": "Carbonade flamande"
+  },
+  {
     "key": "en:cardamom",
     "name": "Cardamome"
   },
   {
     "key": "en:black-cardamom",
     "name": "Cardamome brune"
+  },
+  {
+    "key": "en:cardamom-powder",
+    "name": "Cardamome en poudre"
   },
   {
     "key": "en:green-cardamom",
@@ -52,12 +76,32 @@
     "name": "Cardes surgelés"
   },
   {
+    "key": "en:megrim",
+    "name": "Cardine franche"
+  },
+  {
     "key": "en:cardoons",
     "name": "Cardons"
   },
   {
+    "key": "en:cooked-cardoons",
+    "name": "Cardons cuits"
+  },
+  {
+    "key": "en:carmarthen-ham",
+    "name": "Carmarthen Ham"
+  },
+  {
     "key": "en:carrots",
     "name": "Carottes"
+  },
+  {
+    "key": "en:cooked-carrots",
+    "name": "Carottes cuites"
+  },
+  {
+    "key": "en:dehydrated-carrots",
+    "name": "Carottes déshydratées"
   },
   {
     "key": "en:canned-carrots",
@@ -68,20 +112,28 @@
     "name": "Carottes en rondelles surgelées"
   },
   {
+    "key": "en:fresh-carrots",
+    "name": "Carottes fraîches"
+  },
+  {
     "key": "en:grated-carrots",
     "name": "Carottes râpées"
   },
   {
-    "key": "en:seasoned-shredded-carrots",
+    "key": "en:seasoned-grated-carrots",
     "name": "Carottes râpées assaisonnées"
   },
   {
-    "key": "fr:carottes-rapees-non-assaisonnees",
+    "key": "en:unseasoned-grated-carrots",
     "name": "Carottes râpées non assaisonnées"
   },
   {
     "key": "en:frozen-carrots",
     "name": "Carottes surgelées"
+  },
+  {
+    "key": "en:frozen-cooked-carrots",
+    "name": "Carottes surgelées cuites"
   },
   {
     "key": "en:beef-carpaccio",
@@ -92,16 +144,60 @@
     "name": "Carpaccio de saumon"
   },
   {
+    "key": "en:carp",
+    "name": "Carpe"
+  },
+  {
+    "key": "en:farmed-carp",
+    "name": "Carpe d'élevage"
+  },
+  {
+    "key": "fr:carpe-rotie",
+    "name": "Carpe rôtie"
+  },
+  {
     "key": "en:carrageenans",
     "name": "Carraghénanes"
+  },
+  {
+    "key": "en:veal-loin",
+    "name": "Carré de veau"
+  },
+  {
+    "key": "en:sauteed-veal-loin",
+    "name": "Carré de veau sauté"
+  },
+  {
+    "key": "en:european-plaice",
+    "name": "Carrelet crue"
+  },
+  {
+    "key": "en:steamed-european-plaice",
+    "name": "Carrelet cuit à la vapeur"
+  },
+  {
+    "key": "en:breaded-fried-european-plaice",
+    "name": "Carrelet pané frit"
   },
   {
     "key": "fr:carres-d-aurillac",
     "name": "Carrés d'Aurillac"
   },
   {
-    "key": "fr:carres-de-l-est",
+    "key": "en:carre-de-l-est",
     "name": "Carrés de l'Est"
+  },
+  {
+    "key": "en:pork-racks",
+    "name": "Carrés de porc"
+  },
+  {
+    "key": "en:cooked-pork-racks",
+    "name": "Carrés de porc cuits"
+  },
+  {
+    "key": "en:carrot-cakes",
+    "name": "Carrot cakes"
   },
   {
     "key": "en:cereals-with-caramel",
@@ -114,6 +210,14 @@
   {
     "key": "fr:chassagne-montrachet-premier-cru-la-cardeuse",
     "name": "Chassagne-Montrachet premier cru La Cardeuse"
+  },
+  {
+    "key": "fr:chassagne-montrachet-premier-cru-la-cardeuse-blanc",
+    "name": "Chassagne-Montrachet premier cru La Cardeuse blanc"
+  },
+  {
+    "key": "fr:chassagne-montrachet-premier-cru-la-cardeuse-rouge",
+    "name": "Chassagne-Montrachet premier cru La Cardeuse rouge"
   },
   {
     "key": "en:caramel-cheesecakes",
@@ -148,8 +252,48 @@
     "name": "Compotes pommes caramel"
   },
   {
-    "key": "fr:cremes-dessert-caramel",
+    "key": "en:refrigerated-custard-cream-with-caramel-sauce",
+    "name": "Crème caramel rayon frais"
+  },
+  {
+    "key": "en:refrigerated-caramel-custard-dessert",
+    "name": "Crème dessert au caramel rayon frais"
+  },
+  {
+    "key": "en:custard-creams-with-caramel-sauce",
+    "name": "Crèmes caramel"
+  },
+  {
+    "key": "en:caramel-custard-dessert",
     "name": "Crèmes dessert caramel"
+  },
+  {
+    "key": "en:refrigerated-caramel-puddings",
+    "name": "Crèmes dessert caramel réfrigérées"
+  },
+  {
+    "key": "fr:dessert-glace-feuillete-vanille-caramel",
+    "name": "Dessert glacé feuilleté vanille caramel"
+  },
+  {
+    "key": "en:caramel-soy-desserts",
+    "name": "Desserts de soja au caramel"
+  },
+  {
+    "key": "en:rice-pudding-with-caramel-sauce",
+    "name": "Gâteau de riz au caramel"
+  },
+  {
+    "key": "en:refrigerated-rice-pudding-with-caramel-sauce",
+    "name": "Gâteau de riz au caramel rayon frais"
+  },
+  {
+    "key": "en:semolina-puddings-with-raisins-and-caramel-sauce",
+    "name": "Gâteaux de semoule aux raisins et au caramel"
+  },
+  {
+    "key": "en:refrigerated-semolina-puddings-with-raisins-and-caramel-sauce",
+    "name": "Gâteaux de semoule aux raisins et au caramel rayon frais"
   },
   {
     "key": "en:caramel-stuffed-wafers",
@@ -158,6 +302,22 @@
   {
     "key": "fr:glaces-au-caramel",
     "name": "Glaces au caramel"
+  },
+  {
+    "key": "en:caraway-seeds",
+    "name": "Graines de carvi"
+  },
+  {
+    "key": "en:popped-wheat-grain-with-caramel",
+    "name": "Grains de blé soufflés au caramel"
+  },
+  {
+    "key": "en:popped-wheat-grain-with-caramel-fortified-with-vitamins-and-chemical-elements",
+    "name": "Grains de blé soufflés au caramel enrichis en vitamines et minéraux"
+  },
+  {
+    "key": "en:olive-oils-from-cartoceto",
+    "name": "Huiles d'olive de Cartoceto"
   },
   {
     "key": "en:safflower-oils",
@@ -172,6 +332,22 @@
     "name": "Jus de carotte à base de concentré"
   },
   {
+    "key": "en:pure-carrot-juice",
+    "name": "Jus de carotte pur jus"
+  },
+  {
+    "key": "en:refrigerated-flavoured-milk-jelly-covered-with-caramel",
+    "name": "Lait gélifié aromatisé nappé caramel rayon frais"
+  },
+  {
+    "key": "fr:laits-empresures-au-caramel",
+    "name": "Laits emprésurés au caramel"
+  },
+  {
+    "key": "en:mayonnaise-with-caramelized-onion",
+    "name": "Mayonnaises à l'oignon caramélisé"
+  },
+  {
     "key": "en:caramelized-hazelnuts",
     "name": "Noisettes caramélisées"
   },
@@ -182,6 +358,22 @@
   {
     "key": "fr:nuits-saint-georges-premier-cru-chaines-carteaux",
     "name": "Nuits-Saint-Georges premier cru Chaines Carteaux"
+  },
+  {
+    "key": "fr:nuits-saint-georges-premier-cru-chaines-carteaux-blanc",
+    "name": "Nuits-Saint-Georges premier cru Chaines Carteaux blanc"
+  },
+  {
+    "key": "fr:nuits-saint-georges-premier-cru-chaines-carteaux-rouge",
+    "name": "Nuits-Saint-Georges premier cru Chaines Carteaux rouge"
+  },
+  {
+    "key": "en:pane-carasau",
+    "name": "Pane carasau"
+  },
+  {
+    "key": "en:carbonara-style-pasta",
+    "name": "Pâtes à la carbonara"
   },
   {
     "key": "en:caramel-spreads",
@@ -196,6 +388,14 @@
     "name": "Pernand-Vergelesses premier cru En Caradeux"
   },
   {
+    "key": "fr:pernand-vergelesses-premier-cru-en-caradeux-blanc",
+    "name": "Pernand-Vergelesses premier cru En Caradeux blanc"
+  },
+  {
+    "key": "fr:pernand-vergelesses-premier-cru-en-caradeux-rouge",
+    "name": "Pernand-Vergelesses premier cru En Caradeux rouge"
+  },
+  {
     "key": "fr:petit-carre-de-nice",
     "name": "Petit carré de Nice"
   },
@@ -208,12 +408,80 @@
     "name": "Petits pois et carottes surgelés"
   },
   {
+    "key": "en:frozen-cooked-garden-peas-and-carrots",
+    "name": "Petits pois et carottes surgelés cuits"
+  },
+  {
     "key": "en:pickled-carrots",
     "name": "Pickles de carottes"
   },
   {
+    "key": "en:popcorn-with-caramel",
+    "name": "Popcorn au caramel"
+  },
+  {
     "key": "en:caramel-pork",
     "name": "Porc au caramel"
+  },
+  {
+    "key": "en:german-meat-products",
+    "name": "Produits carnés allemands"
+  },
+  {
+    "key": "en:andorran-meat-products",
+    "name": "Produits carnés andorrins"
+  },
+  {
+    "key": "en:belgian-meat-products",
+    "name": "Produits carnés belges"
+  },
+  {
+    "key": "en:bulgarian-meat-products",
+    "name": "Produits carnés bulgares"
+  },
+  {
+    "key": "en:croatian-meat-products",
+    "name": "Produits carnés croates"
+  },
+  {
+    "key": "en:spanish-meat-products",
+    "name": "Produits carnés espagnols"
+  },
+  {
+    "key": "en:finnish-meat-products",
+    "name": "Produits carnés finnois"
+  },
+  {
+    "key": "en:french-meat-products",
+    "name": "Produits carnés français"
+  },
+  {
+    "key": "en:italian-meat-products",
+    "name": "Produits carnés italiens"
+  },
+  {
+    "key": "en:norwegian-meat-products",
+    "name": "Produits carnés norvégiens"
+  },
+  {
+    "key": "en:polish-meat-products",
+    "name": "Produits carnés polonais"
+  },
+  {
+    "key": "en:portuguese-meat-products",
+    "name": "Produits carnés portugais"
+  },
+  {
+    "key": "en:romanian-meat-products",
+    "name": "Produits carnés roumains"
+  },
+  {
+    "key": "en:slovenian-meat-products",
+    "name": "Produits carnés slovènes"
+  },
+  {
+    "key": "en:czech-meat-products",
+    "name": "Produits carnés tchèques"
   },
   {
     "key": "en:mashed-carrots",
@@ -224,12 +492,24 @@
     "name": "Riz Carnaroli"
   },
   {
-    "key": "fr:sauces-carbonara",
+    "key": "en:carbonara-sauces",
     "name": "Sauces carbonara"
+  },
+  {
+    "key": "en:carbonara-style-vegetarian-sauces",
+    "name": "Sauces végétariennes façon carbonara"
   },
   {
     "key": "en:carrot-soups",
     "name": "Soupes de carottes"
+  },
+  {
+    "key": "en:dehydrated-carrot-soups",
+    "name": "Soupes de carottes déshydratées"
+  },
+  {
+    "key": "en:spaghetti-with-carbonara",
+    "name": "Spaghetti à la carbonara"
   },
   {
     "key": "en:tagliatelle-with-carbonara",

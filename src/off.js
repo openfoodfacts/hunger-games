@@ -64,7 +64,7 @@ const offService = {
 
   getProduct(barcode) {
     return axios.get(
-      `${OFF_API_URL}/product/${barcode}.json?fields=product_name,brands,ingredients_text,countries_tags,images,categories`
+      `${OFF_API_URL}/product/${barcode}.json?fields=product_name,brands,ingredients_text,countries_tags,images,categories,labels_tags,quantity`
     );
   },
 

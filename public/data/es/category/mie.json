@@ -1,18 +1,54 @@
 [
   {
-    "key": "en:lavender-honey",
+    "key": "en:cereals-with-honey",
+    "name": "Cereales con miel"
+  },
+  {
+    "key": "es:miel-de-campoo-los-valles",
+    "name": "Miel de Campoo- los Valles"
+  },
+  {
+    "key": "es:miel-de-galicia",
+    "name": "Miel de Galicia"
+  },
+  {
+    "key": "es:miel-de-granada",
+    "name": "Miel de Granada"
+  },
+  {
+    "key": "es:miel-de-la-alcarria",
+    "name": "Miel de La Alcarria"
+  },
+  {
+    "key": "en:lavender-honeys",
     "name": "Miel de lavanda"
+  },
+  {
+    "key": "es:miel-de-liebana",
+    "name": "Miel de Liébana"
+  },
+  {
+    "key": "es:miel-de-tenerife",
+    "name": "Miel de Tenerife"
+  },
+  {
+    "key": "es:miel-villuercas-ibores",
+    "name": "Miel Villuercas-Ibores"
   },
   {
     "key": "en:honeys",
     "name": "Mieles"
   },
   {
-    "key": "es:mieles-de-azahar",
+    "key": "en:honeys-from-alsace",
+    "name": "Mieles de Alsacia"
+  },
+  {
+    "key": "en:orange-blossom-honeys",
     "name": "Mieles de azahar"
   },
   {
-    "key": "es:mieles-de-brezo",
+    "key": "en:heather-honeys",
     "name": "Mieles de brezo"
   },
   {
@@ -20,19 +56,23 @@
     "name": "Mieles de castaño"
   },
   {
-    "key": "es:mieles-de-eucaliptus",
+    "key": "en:eucalyptus-honeys",
     "name": "Mieles de eucaliptus"
   },
   {
-    "key": "es:mieles-de-flores",
+    "key": "en:flower-honeys",
     "name": "Mieles de flores"
   },
   {
-    "key": "es:mieles-de-romero",
+    "key": "en:manuka-honeys",
+    "name": "Mieles de manuka"
+  },
+  {
+    "key": "en:rosemary-honeys",
     "name": "Mieles de romero"
   },
   {
-    "key": "en:thyme-honey",
+    "key": "en:thyme-honeys",
     "name": "Mieles de tomillo"
   },
   {
@@ -42,5 +82,9 @@
   {
     "key": "en:honey-mustards",
     "name": "Mostazas con miel"
+  },
+  {
+    "key": "en:honey-yogurts",
+    "name": "Yougures con miel"
   }
 ]

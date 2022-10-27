@@ -4,6 +4,10 @@
     "name": "Alimentos y bebidas de origen vegetal"
   },
   {
+    "key": "en:diet-cola-soft-drink",
+    "name": "Bebida de cola light"
+  },
+  {
     "key": "en:dairy-drinks",
     "name": "Bebida lácteas"
   },
@@ -24,28 +28,8 @@
     "name": "Bebidas a base de vino"
   },
   {
-    "key": "en:fruit-juice-and-soy-drinks",
+    "key": "en:fruit-and-soy-beverages",
     "name": "Bebidas a base de zumo de frutas y soja"
-  },
-  {
-    "key": "en:apple-juice-and-soy-drinks",
-    "name": "Bebidas a base de zumo de manzana y soja"
-  },
-  {
-    "key": "en:peach-juice-and-soy-drinks",
-    "name": "Bebidas a base de zumo de melocotón y soja"
-  },
-  {
-    "key": "en:orange-juice-and-soy-drinks",
-    "name": "Bebidas a base de zumo de naranja y soja"
-  },
-  {
-    "key": "en:pineapple-juice-and-soy-drinks",
-    "name": "Bebidas a base de zumo de piña y soja"
-  },
-  {
-    "key": "en:multifruit-juice-and-soy-drinks",
-    "name": "Bebidas a base de zumo multifruta y soja"
   },
   {
     "key": "en:alcoholic-beverages",
@@ -96,6 +80,10 @@
     "name": "Bebidas de avena"
   },
   {
+    "key": "en:coffee-drinks",
+    "name": "Bebidas de café"
+  },
+  {
     "key": "en:hemp-milks",
     "name": "Bebidas de cáñamo"
   },
@@ -114,6 +102,10 @@
   {
     "key": "en:spelt-milks",
     "name": "Bebidas de espelta"
+  },
+  {
+    "key": "en:fruit-and-milk-beverages",
+    "name": "Bebidas de fruta y leche"
   },
   {
     "key": "en:fermented-milk-drinks",
@@ -164,6 +156,10 @@
     "name": "Bebidas de soja natural sin azúcar"
   },
   {
+    "key": "en:tea-based-beverages",
+    "name": "Bebidas de té"
+  },
+  {
     "key": "en:teff-milks",
     "name": "Bebidas de teff"
   },
@@ -180,7 +176,11 @@
     "name": "Bebidas de trigo sarraceno"
   },
   {
-    "key": "en:hard-liquors",
+    "key": "en:dehydrated-beverages",
+    "name": "Bebidas deshidratadas"
+  },
+  {
+    "key": "en:distilled-beverages",
     "name": "Bebidas destiladas"
   },
   {
@@ -198,6 +198,10 @@
   {
     "key": "en:instant-beverages",
     "name": "Bebidas instantáneas"
+  },
+  {
+    "key": "en:diet-beverages",
+    "name": "Bebidas light"
   },
   {
     "key": "en:non-alcoholic-beverages",
@@ -228,12 +232,24 @@
     "name": "Cereales para bebes"
   },
   {
+    "key": "en:vegetable-based-foods-and-beverages",
+    "name": "Comida y bebida vegetal"
+  },
+  {
     "key": "en:main-meals-for-babies",
     "name": "Comidas para bebés"
   },
   {
     "key": "en:biscuits-for-babies",
     "name": "Galletas para bebes"
+  },
+  {
+    "key": "en:baby-follow-on-milk-from-2-years",
+    "name": "Leche de continuación para bebés a partir de 2 años"
+  },
+  {
+    "key": "en:baby-follow-on-milk-from-3-years",
+    "name": "Leche de continuación para bebés a partir de 3 años"
   },
   {
     "key": "en:baby-milks",
