@@ -22,7 +22,7 @@ const styles = {
   transform: "translate(-50%, -50%)",
 };
 
-const getSteps = ({ t, withSelector }) => [
+export const getSteps = ({ t, withSelector }) => [
   {
     style: styles,
     content: () => (
@@ -294,6 +294,7 @@ const Welcome = () => {
   const isDesktop = useMediaQuery(theme.breakpoints.up("sm"));
 
   const [isTourOpen, setIsTourOpen] = React.useState(false);
+
   const handleShowTour = () => {
     setIsTourOpen(false);
     localSettings.update(localSettingsKeys.showTour, false);
