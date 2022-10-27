@@ -9,6 +9,7 @@ import TextField from "@mui/material/TextField";
 import Dialog from "@mui/material/Dialog";
 import DialogContent from "@mui/material/DialogContent";
 
+import LabelFilter from "../../components/QuestionFilter/LabelFilter";
 import LogoForm from "../../components/LogoForm";
 import LogoGrid from "../../components/LogoGrid";
 import robotoff from "../../robotoff";
@@ -36,6 +37,10 @@ const AVAILABLE_TAG_TYPES = [
   "states",
 ];
 
+const OFF_2_ROBOTOFF = {
+  categories: "category",
+  labels: "label",
+};
 const fetchProducts = async ({ page, filter }) => {
   try {
     const {
@@ -245,17 +250,35 @@ export default function AnnotateLogosFromProducts() {
               </MenuItem>
             ))}
           </TextField>
-          <TextField
-            value={internalFilter.tag}
-            onChange={(event) =>
-              setInternalFilter((prev) => ({
-                ...prev,
-                tag: event.target.value,
-              }))
-            }
-            label="tag"
-            sx={{ minWidth: 200 }}
-          />
+
+          {["categories", "labels"].includes(internalFilter.tagtype) ? (
+            <LabelFilter
+              showKey
+              value={internalFilter.tag}
+              onChange={(newValue) =>
+                setInternalFilter((prev) => ({
+                  ...prev,
+                  tag: newValue,
+                }))
+              }
+              label="tag"
+              sx={{ minWidth: 200 }}
+              insightType={OFF_2_ROBOTOFF[internalFilter.tagtype]}
+            />
+          ) : (
+            <TextField
+              value={internalFilter.tag}
+              onChange={(event) =>
+                setInternalFilter((prev) => ({
+                  ...prev,
+                  tag: event.target.value,
+                }))
+              }
+              label="tag"
+              sx={{ minWidth: 200 }}
+            />
+          )}
+
           <Button
             onClick={() => {
               setFilter(internalFilter);
