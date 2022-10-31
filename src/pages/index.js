@@ -10,6 +10,7 @@ export { default as LogoAnnotationPage } from "./logos/LogoAnnotation";
 export { default as LogoSearchPage } from "./logos/LogoSearch";
 export { default as LogoUpdatePage } from "./logos/LogoUpdate";
 export { default as ProductLogoAnnotationPage } from "./logos/ProductLogoAnnotations";
+export { default as LogoDeepSearch } from "./logos/LogoDeepSearch";
 
 // experimental
 export { default as NutriscoreValidator } from "./nutriscoreValidator";
