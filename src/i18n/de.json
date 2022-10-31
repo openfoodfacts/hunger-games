@@ -26,7 +26,7 @@
     "saved_filters": "Gespeicherte Filter",
     "contribution_modal": {
       "title": "Ihr Beitrag ist wichtig",
-      "information": "Hunger Games ist ein Versuch, die Ergebnisse unserer OCR zu nutzen. Wenn Sie Hunger Games von Open Food Facts nutzen, verbessern Sie unsere gesamte Datenbank, die der Gemeinschaft hilft, bessere Lebensmittelentscheidungen zu treffen. Wir sammeln Ihre Anmerkungen und verwenden sie, um Open Food Facts noch genauer und effizienter zu gestalten.",
+      "information": "„Hunger Games” ist ein Versuch, die Ergebnisse unserer OCR zu nutzen. Wenn Sie Hunger Games von Open Food Facts nutzen, verbessern Sie unsere gesamte Datenbank, die der Gemeinschaft hilft, eine bessere Lebensmittelauswahl zu treffen. Wir sammeln Ihre Anmerkungen und verwenden sie, um Open Food Facts noch genauer und effizienter zu machen.",
       "thank_you": "Vielen Dank, dass Sie uns helfen, Open Food Facts zu verbessern, damit mehr Menschen es einfach nutzen können."
     },
     "statistics": {
@@ -53,8 +53,10 @@
     "category": "Kategorie",
     "categories": "Kategorien",
     "label": "Etikett",
+    "labels": "Labels",
     "brand": "Marke",
     "brands": "Marken",
+    "quantity": "Mengenangabe",
     "insightTypeLabel": "Zeigt nur",
     "ingredients": "Zutaten",
     "product_weight": "Produktgewicht",
@@ -122,6 +124,7 @@
     "settings": "Einstellungen",
     "eco-score": "Eco-Score",
     "nutriscore": "Nutri-Score",
+    "tour": "Tour anzeigen",
     "logged_in_user": "Angemeldet als {{userName}}",
     "log_in": "Klicken, um sich anzumelden"
   },
@@ -196,9 +199,9 @@
     "language": "Sprachen",
     "save": "Speichern",
     "reportIssue": "Haben Sie einen Fehler gefunden?, lassen Sie es uns bitte wissen",
-    "dev_mode_title": "Um den Inhalt der Datenbank zu untersuchen, aktivieren Sie den Entwicklermodus",
+    "dev_mode_title": "Um weitere Optionen zu erhalten, aktivieren Sie den Entwicklungsmodus",
     "dev_mode_label": "Entwicklermodus",
-    "dev_page_toggle": "Show {{name}} page"
+    "dev_page_toggle": "Seite {{name}} anzeigen"
   },
   "helper": {
     "welcome": {
@@ -247,8 +250,8 @@
       },
       "page2": {
         "title": "Warnhinweis",
-        "text1": "Wenn der Ausschnitt mehrere Logos enthält, wählen Sie ihn nicht aus.",
-        "text2": "Wenn der Ausschnitt nur einen Teil eines Logos enthält, können Sie ihn auswählen"
+        "text1": "Wenn der Ausschnitt mehrere Logos enthält, wählen Sie es nicht aus.",
+        "text2": "Wenn der Ausschnitt nur einen Teil eines Logos enthält, können Sie es auswählen"
       },
       "page3": {
         "title": "Bestätigen",
@@ -320,8 +323,8 @@
   },
   "nutriscore": {
     "image_alt": "Zugeschnittenes Bild",
-    "label": "Kommentieren Sie die Nutriscore-Logoerkennung per Stapelverarbeitung.",
-    "description": "Wählen Sie dazu alle Bilder aus, die den richtigen/falschen Nutri-Score-Wert ({{label}}) zeigen, und klicken Sie auf die unteren Schaltflächen, um anzugeben, ob Sie eine Reihe richtiger oder falscher Bilder ausgewählt haben.",
+    "label": "Kommentieren Sie schubweise die Nutri-Score Logoerkennung.",
+    "description": "Wählen Sie dazu alle Bilder aus, die den zutreffenden/falschen Nutri-Score-Wert zeigen ({{label}}), und klicken Sie auf die unteren Schaltflächen, um anzugeben, ob Sie eine Serie von zutreffender oder falschen Bildern ausgewählt haben.",
     "images_remaining": "Noch {{remaining}} zu kommentieren",
     "image_sizes": "Bildergröße",
     "zoom_on_logo": "Logo vergrößern",

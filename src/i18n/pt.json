@@ -26,7 +26,7 @@
     "saved_filters": "Filtros salvos",
     "contribution_modal": {
       "title": "Sua contribuição é importante",
-      "information": "Jogos Vorazes é um esforço para alavancar os resultados do nosso OCR. Quando você usa Jogos Vorazes da Open Food Facts, você melhora todo o nosso banco de dados, o que ajuda a comunidade a fazer melhores escolhas alimentares. Reunimos suas anotações e as usamos para tornar o Open Food Facts mais preciso e eficiente.",
+      "information": "Jogos Vorazes é um esforço para alavancar os resultados do nosso OCR. Quando você usa Jogos Vorazes da Open Food Facts, você melhora todo o nosso banco de dados, o que ajuda a comunidade a fazer melhores escolhas alimentares. Reunimos as suas anotações e as usamos para tornar o Open Food Facts mais preciso e eficiente.",
       "thank_you": "Obrigado por nos ajudar a melhorar o Open Food Facts para que mais pessoas possam usá-lo facilmente."
     },
     "statistics": {
@@ -53,8 +53,10 @@
     "category": "categoria",
     "categories": "Categorias",
     "label": "etiqueta",
+    "labels": "Rótulos",
     "brand": "marca",
     "brands": "Marcas",
+    "quantity": "Quantidade",
     "insightTypeLabel": "Mostrar apenas",
     "ingredients": "Ingredientes",
     "product_weight": "peso do produto",
@@ -122,6 +124,7 @@
     "settings": "Definições",
     "eco-score": "Eco-score",
     "nutriscore": "Nutri-Score",
+    "tour": "Mostrar o Tour",
     "logged_in_user": "Conectado como {{userName}}",
     "log_in": "Clique para acessar"
   },
@@ -196,7 +199,7 @@
     "language": "Línguas",
     "save": "Guardar",
     "reportIssue": "Encontrou um bug? por favor nos avise",
-    "dev_mode_title": "Para explorar o conteúdo do banco de dados, ative o modo de desenvolvimento",
+    "dev_mode_title": "Para obter mais opções, ative o modo de desenvolvimento",
     "dev_mode_label": "Modo desenvolvedor",
     "dev_page_toggle": "Mostrar página de {{name}}"
   },
@@ -248,7 +251,7 @@
       "page2": {
         "title": "Aviso",
         "text1": "Se o recorte contiver vários logotipos, não o selecione.",
-        "text2": "Se o recorte contiver apenas uma parte parcial de um logotipo, você pode selecioná-lo"
+        "text2": "Se o recorte contiver apenas uma parte de um logotipo, você pode selecioná-lo"
       },
       "page3": {
         "title": "Validar",
@@ -320,8 +323,8 @@
   },
   "nutriscore": {
     "image_alt": "Imagem recortada",
-    "label": "Anote o logotipo nutriscore detectado por lote.",
-    "description": "Para isso, selecione todas as imagens mostrando o valor nutriscore correto/errado ({{label}}), e clique nos botões inferiores para dizer se você selecionou um conjunto correto ou errado.",
+    "label": "Anotar a detecção de logotipo Nutri-Score por lote.",
+    "description": "Para isso, selecione todas as imagens mostrando o valor correto/errado do Nutri-Score ({{label}}), e clique nos botões inferiores para dizer se você selecionou um conjunto correto ou errado.",
     "images_remaining": "Ainda faltam {{remaining}} para anotar",
     "image_sizes": "Tamanho das imagens",
     "zoom_on_logo": "Ampliar o logotipo",

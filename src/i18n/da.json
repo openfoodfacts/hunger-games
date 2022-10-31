@@ -26,7 +26,7 @@
     "saved_filters": "Gemte filtre",
     "contribution_modal": {
       "title": "Individuelle bidrag gør en forskel",
-      "information": "Hunger Games er et forsøg på at udnytte resultaterne af vores OCR. Når Hunger Games fra Open Food Facts benyttes, forbedres hele databasen, hvilket hjælper fællesskabet med at træffe bedre madvalg. Individuelle annoteringer indsamles mhp. at gøre Open Food Facts mere præcis og effektiv.",
+      "information": "Hunger Games er et forsøg på at drage bedst mulig fordel af OCR-resultaterne. Når Hunger Games fra Open Food Facts bruges, forbedres hele databasen, hvilket hjælper fællesskabet med at træffe bedre madvalg. Individuelle anmærkninger indsamles mhp. at gøre Open Food Facts mere præcis og effektiv.",
       "thank_you": "Tak, for hjælpen med at forbedre Open Food Facts, så flere nemt kan bruge den."
     },
     "statistics": {
@@ -53,8 +53,10 @@
     "category": "kategori",
     "categories": "Kategorier",
     "label": "etiket",
+    "labels": "Etiketter",
     "brand": "varemærke",
     "brands": "Mærker",
+    "quantity": "Kvantitet",
     "insightTypeLabel": "Viser kun",
     "ingredients": "Ingredienser",
     "product_weight": "produktvægt",
@@ -122,6 +124,7 @@
     "settings": "Indstillinger",
     "eco-score": "Øko-Score",
     "nutriscore": "Nutri-Score",
+    "tour": "Vis Rundvisning",
     "logged_in_user": "logget som {{userName}}",
     "log_in": "klik for at logge ind"
   },
@@ -196,7 +199,7 @@
     "language": "Sprog",
     "save": "Gem",
     "reportIssue": "Fundet en fejl? Fortæl os det venligst",
-    "dev_mode_title": "For at udforske databaseindholdet, så aktivér udviklertilstand",
+    "dev_mode_title": "Aktiver udviklertilstanden for flere valgmuligheder",
     "dev_mode_label": "Dev-tilstand",
     "dev_page_toggle": "Vis {{name}}side"
   },
@@ -247,8 +250,8 @@
       },
       "page2": {
         "title": "Advarsel",
-        "text1": "Indeholder beskæringen flere logoer, så vælg det ikke.",
-        "text2": "Indeholder beskæringen kun en del af et logo, kan det vælges"
+        "text1": "Indeholder en beskæring flere logoer, så vælg den ikke.",
+        "text2": "Indeholder en beskæring kun en del af et logo, kan den vælges"
       },
       "page3": {
         "title": "Bekræftelse",
@@ -320,11 +323,11 @@
   },
   "nutriscore": {
     "image_alt": "beskåret foto",
-    "label": "Anmærk Nutri-Score via masselogodetektering.",
+    "label": "Anmærk Nutri-Score logo via massedetektering.",
     "description": "For at gøre dette, så vælg alle fotos med korrekte/forkerte Nutri-Score værdier ({{label}}), og klik på knapperne nederst for at angive, om det valgte sæt er korrekt/forkert.",
     "images_remaining": "Stadig {{remaining}} at kommentere",
     "image_sizes": "Fotostørrelser",
-    "zoom_on_logo": "zoom på logo",
+    "zoom_on_logo": "Zoom på logo",
     "select_all": "Vælg alle",
     "deselect_all": "Fravælg alle",
     "incorrect": "Forkert",

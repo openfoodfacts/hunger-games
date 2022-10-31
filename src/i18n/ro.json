@@ -26,7 +26,7 @@
     "saved_filters": "Filtre salvate",
     "contribution_modal": {
       "title": "Contribuția ta contează",
-      "information": "Jocurile Foametei reprezintă un efort de a valorifica rezultatele OCR-ului nostru. Când utilizați Jocurile Foametei pe Open Food Facts, îmbunătățiți întreaga noastră bază de date care ajută comunitatea să facă alegeri alimentare mai bune. Colectăm adnotările tale și le folosim pentru a face Open Food Facts mai precis și mai efecient.",
+      "information": "Jocurile Foametei reprezintă un efort de a valorifica rezultatele OCR-ului nostru. Când utilizați Jocurile Foametei realizate de către Open Food Facts, îmbunătățiți întreaga noastră bază de date care ajută comunitatea să facă alegeri alimentare mai bune. Îți adunăm adnotările și le folosim pentru a face Open Food Facts mai precis și mai efectibil.",
       "thank_you": "Vă mulțumim că ne ajutați să îmbunătățim Open Food Facts, astfel încât mai mulți oameni să îl poată folosi cu ușurință."
     },
     "statistics": {
@@ -53,8 +53,10 @@
     "category": "categorie",
     "categories": "Categorii",
     "label": "eticheta",
+    "labels": "Etichete",
     "brand": "marca",
     "brands": "Mărci",
+    "quantity": "Cantitate",
     "insightTypeLabel": "Doar cele arătate",
     "ingredients": "Ingrediente",
     "product_weight": "greutatea produsului",
@@ -122,6 +124,7 @@
     "settings": "Configurări",
     "eco-score": "Eco-scor",
     "nutriscore": "Nutri-Scor",
+    "tour": "Arată tur",
     "logged_in_user": "conectat ca {{userName}}",
     "log_in": "faceți clic pentru a vă autentifica"
   },
@@ -196,7 +199,7 @@
     "language": "Limbi",
     "save": "Salvează",
     "reportIssue": "Ați găsit o eroare?, vă rugăm să ne anunțați",
-    "dev_mode_title": "Pentru a explora conținutul bazei de date, activați modul dezvoltator",
+    "dev_mode_title": "Pentru a obține mai multe opțiuni, activați modul dev",
     "dev_mode_label": "Mod dezvoltator",
     "dev_page_toggle": "Arată pagina {{name}}"
   },
@@ -320,11 +323,11 @@
   },
   "nutriscore": {
     "image_alt": "cropped image",
-    "label": "Annotate nutriscore logo detection by batch.",
-    "description": "To do so select all the images showing the correct/wrong nutriscore value ({{label}}), and click on the bottom buttons to say if you selected a set correct or wrong ones.",
+    "label": "Adnotează detectarea logo-ului Nutri-Score în funcție de lot.",
+    "description": "Pentru a face acest lucru, selectaţi toate imaginile care arată valoarea Nutri-Score corectă/greşită ({{label}}), şi faceţi clic pe butoanele de jos pentru a spune dacă aţi selectat un set corect sau greşit.",
     "images_remaining": "Still {{remaining}} to annotate",
     "image_sizes": "Image sizes",
-    "zoom_on_logo": "zoom on logo",
+    "zoom_on_logo": "Măriți sigla",
     "select_all": "Selectează tot",
     "deselect_all": "Deselectează-le pe toate",
     "incorrect": "Wrong",

@@ -18,19 +18,19 @@
       }
     },
     "account_band": {
-      "title": "Want to make your contribution count? Create an account or sign in on Open Food Facts!",
+      "title": "Bạn muốn làm cho đóng góp của bạn được tính? Tạo một tài khoản hoặc đăng nhập vào Open Food Facts!",
       "log_in": "Tên người dùng",
       "sign_up": "Đăng ký",
-      "contribution_details": "Learn why your contribution matters"
+      "contribution_details": "Tìm hiểu lý do tại sao đóng góp của bạn lại quan trọng"
     },
-    "saved_filters": "Saved Filters",
+    "saved_filters": "Các bộ lọc đã lưu",
     "contribution_modal": {
-      "title": "Your contribution matters",
-      "information": "Hunger Games is an effort to leverage the results of our OCR. When you use Hunger Games by Open Food Facts, you improve our entire database which helps the community make better food choices. We gathers your annotations and use them to make Open Food Facts more accurate and effecient.",
-      "thank_you": "Thank you for helping us improve Open Food Facts so that more people can use it easily."
+      "title": "Đóng góp của bạn rất quan trọng",
+      "information": "Hunger Games is an effort to leverage the results of our OCR. When you use Hunger Games by Open Food Facts, you improve our entire database which helps the community make better food choices. We gather your annotations and use them to make Open Food Facts more accurate and effecient.",
+      "thank_you": "Cảm ơn bạn đã giúp chúng tôi cải thiện Open Food Facts để nhiều người có thể sử dụng nó một cách dễ dàng."
     },
     "statistics": {
-      "title": "{{userName}} statistics:",
+      "title": "{{userName}} thống kê:",
       "editorCount": {
         "title": "Editor",
         "description": "Số lượng ấn bản đã hoàn thành"
@@ -46,15 +46,17 @@
     }
   },
   "flagged_images": {
-    "title": "Images flagged by users",
-    "loading": "Loading"
+    "title": "Hình ảnh do người dùng gắn cờ",
+    "loading": "Đang tải"
   },
   "questions": {
     "category": "danh mục",
     "categories": "Thể loại",
     "label": "nhãn hiệu",
+    "labels": "Nhãn",
     "brand": "nhãn hiệu",
     "brands": "Thương hiệu",
+    "quantity": "Số lượng",
     "insightTypeLabel": "Chỉ hiển thị",
     "ingredients": "Thành phần",
     "product_weight": "trọng lượng sản phẩm",
@@ -88,7 +90,7 @@
         "brand": "Thương hiệu sản xuất",
         "popularity": "Sắp xếp theo mức độ phổ biến",
         "edit": "",
-        "campaign": "Campaign"
+        "campaign": "Chiến dịch"
       },
       "placeholders": {
         "value": "Giá trị (fanta, en: organic,...)",
@@ -101,15 +103,15 @@
         "apply": "Áp dụng"
       }
     },
-    "other_questions": "Other questions",
-    "send": "Send",
-    "flag": "Something wrong? Report/flag the image!",
-    "unflag": "Unflag the image",
-    "reset_filters": "Reset filters",
+    "other_questions": "Các câu hỏi khác",
+    "send": "Gửi",
+    "flag": "Có gì đó không đúng? Báo cáo / gắn cờ hình ảnh!",
+    "unflag": "Bỏ gắn thẻ hình ảnh",
+    "reset_filters": "Đặt lại bộ lọc",
     "log_in": "Tên người dùng",
     "sign_up": "Đăng ký",
     "login_title": "Make your annotation count",
-    "login_description": "Currently you are not logged in Open Food Facts. To get your answers directly applied to products, and associated to your account, consider logging in to your Open Food Facts account, or creating one"
+    "login_description": "Hiện tại bạn chưa đăng nhập Open Food Facts. Để nhận được câu trả lời trực tiếp áp dụng cho các sản phẩm và được liên kết với tài khoản của bạn, hãy cân nhắc việc đăng nhập vào tài khoản Open Food Facts của bạn hoặc tạo một tài khoản mới"
   },
   "menu": {
     "title": "Hunger Games",
@@ -122,8 +124,9 @@
     "settings": "Cài đặt",
     "eco-score": "Điểm sinh thái",
     "nutriscore": "Điểm dinh dưỡng",
-    "logged_in_user": "logged as {{userName}}",
-    "log_in": "click to login"
+    "tour": "Show Tour",
+    "logged_in_user": "đăng nhập với {{userName}}",
+    "log_in": "nhấn để đăng nhập"
   },
   "insights": {
     "insights": "Thông tin chi tiết",
@@ -151,14 +154,14 @@
     "created_at": "Được tạo lúc",
     "completed_at": "Hoàn thành lúc",
     "automatic": "Tự động",
-    "human_required": "Human required",
-    "edit_product": "Open product edit",
-    "view_product": "Open product page"
+    "human_required": "Yêu cầu nhân tố",
+    "edit_product": "Mở chỉnh sửa sản phẩm",
+    "view_product": "Mở trang sản phẩm"
   },
   "logos": {
     "annotation": "Chú thích: ",
     "annotations": "Chú thích logo",
-    "task_description": "Select all logos that are exactly the same, and give them a name like \"en:EU Organic\" and a type like \"label\".",
+    "task_description": "Chọn tất cả logo giống hệt nhau, và đặt tên cho chúng như \"en:EU Organic\" và phân loại như \"nhãn\".",
     "select_all": "Chọn tất cả",
     "unselect_all": "Bỏ chọn tất cả",
     "distance": "Khoảng Cách:",
@@ -181,60 +184,60 @@
     "no_found": "Không tìm thấy logo",
     "search": "Tìm kiếm",
     "number_of_results": "Số lượng kết quả:",
-    "loading": "Loading...",
+    "loading": "Đang tải...",
     "refresh": "Làm mới",
-    "search_specific": "Search specific logo",
-    "load_more": "Load more",
+    "search_specific": "Tìm kiếm logo cụ thể",
+    "load_more": "Tải thêm",
     "no_results": "Không tìm thấy logo",
-    "result_count": "Shows {{showing}} on {{available}} available",
-    "flag": "Something wrong? Report/flag the image!",
-    "unflag": "Unflag the image",
-    "crop_image_title": "crop of the logo"
+    "result_count": "Hiển thị {{showing}} trên {{available}} có sẵn",
+    "flag": "Có gì đó không đúng? Báo cáo / gắn cờ hình ảnh!",
+    "unflag": "Bỏ gắn thẻ hình ảnh",
+    "crop_image_title": "cắt logo"
   },
   "settings": {
     "settings": "Cài đặt",
     "language": "Ngôn ngữ",
     "save": "Lưu",
     "reportIssue": "Có lỗi? Hãy báo cho chúng tôi",
-    "dev_mode_title": "To explore the database content, activate the dev mode",
-    "dev_mode_label": "Dev Mode",
-    "dev_page_toggle": "Show {{name}} page"
+    "dev_mode_title": "To get more options, activate the dev mode",
+    "dev_mode_label": "Chế độ nhà phát triển",
+    "dev_page_toggle": "Hiển thị trang {{name}}"
   },
   "helper": {
     "welcome": {
       "page1": {
-        "title": "Welcome to Hunger Games",
-        "text1": "Hunger Games is a collection of mini-games that help contribute to Open Food Facts in many ways. You can play are really exciting games from anywhere. Here is a guided tour of the entire website which will get you started.",
-        "text2": "Make sure to login to the Open Food Facts website to get credit for your contributions. If you make a mistake, please take the time to correct it by heading to the website.",
-        "text3": "In case of any doubt about the games, click on the question mark icon at the top right of the page, and you can reach us on slack at the #hunger-games channel"
+        "title": "Chào mừng đến với Hunger Games",
+        "text1": "Hunger Games là một bộ sưu tập các trò chơi nhỏ giúp đóng góp vào Open Food Facts theo nhiều cách. Bạn có thể chơi những trò chơi rất thú vị này từ bất cứ đâu. Đây là hướng dẫn tham quan toàn bộ trang web khi bạn bắt đầu.",
+        "text2": "Đảm bảo đăng nhập vào trang web Open Food Facts để nhận được phần thưởng cho những đóng góp của bạn. Nếu bạn mắc lỗi, vui lòng sửa lại bằng cách truy cập trang web.",
+        "text3": "Trong trường hợp có thắc mắc về trò chơi, hãy nhấn vào biểu tượng dấu hỏi trên cùng bên phải của trang và bạn có thể liên hệ với chúng tôi tại kênh #hunger-game"
       },
       "page2": {
-        "title": "Questions Game",
-        "text1": "Does the food product belong to this brand?",
-        "text2": "Answer simply with a <strong>yes/no</strong>! Don't know the answer? That's alright, just skip it.",
-        "text3": "You can also use your keyboard keys o,n and k.",
-        "text4": "You can <strong>filter</strong> the products based on country, brands, popularity and much more!",
-        "text5": "If you don't want to do this every single time, you can also <strong>save the filters</strong> by clicking on the star. Next time you come back, find the saved filters on the home page itself"
+        "title": "Trò chơi câu hỏi",
+        "text1": "Sản phẩm thực phẩm có thuộc nhãn hàng này không?",
+        "text2": "Trả lời đơn giản với <strong>có / không</strong>! Không biết câu trả lời? Không sao, bạn có thể bỏ qua.",
+        "text3": "Bạn cũng có thể sử dụng các phím o, n và k trên bàn phím.",
+        "text4": "Bạn có thể <strong>lọc</strong> các sản phẩm dựa trên quốc gia, thương hiệu, mức độ phổ biến và hơn thế nữa!",
+        "text5": "Nếu bạn không muốn làm điều này mỗi lần, bạn cũng có thể <strong>lưu các bộ lọc</strong> bằng cách nhấp vào dấu sao. Lần tới khi bạn quay lại, hãy tìm các bộ lọc đã lưu trên chính trang chủ"
       },
       "page3": {
-        "title": "Logos Game",
+        "title": "Trò chơi Logo",
         "text1": "Our another really loved game is the logos game where you have to <strong> select all the logos</strong> you feel are the same.",
-        "text2": "As shown in the example, once you select all the similar logos, just type their value and select where it is a brand, a label or something else. It's that simple!"
+        "text2": "Như đã được hiển thị trong ví dụ, khi bạn chọn tất cả các logo tương tự, chỉ cần nhập giá trị của chúng và chọn vị trí có thương hiệu, nhãn hiệu hoặc thứ gì đó khác. Rât đơn giản mà!"
       },
       "page4": {
-        "title": "Eco-Score Questions Game",
-        "text1": "Help us finish the remaining questions in the most high priority labels!",
-        "text2": "These cards are linked to labels used in the computation of the eco-score.",
-        "text3": "<strong>What is Eco-Score?</strong>",
-        "text4": "Eco-Score captures the total environmental footprint, making it easier for consumers to compare products and decide which is better for the environment."
+        "title": "Trò chơi trả lời câu hỏi về điểm sinh thái",
+        "text1": "Giúp chúng tôi hoàn thành các câu hỏi còn lại trong các nhãn có mức độ ưu tiên cao nhất!",
+        "text2": "Các thẻ này được liên kết với các nhãn được sử dụng để tính điểm sinh thái.",
+        "text3": "<strong>Điểm Sinh thái là gì?</strong>",
+        "text4": "Điểm Sinh thái ghi lại tổng dấu vết môi trường, giúp người tiêu dùng dễ dàng so sánh các sản phẩm và quyết định sản phẩm nào tốt hơn cho môi trường."
       },
       "page5": {
         "title": "Cài đặt",
-        "text1": "Set your preferred language, and report issues from our settings page.",
-        "text2": "If you're a developer, you can also explore our database content using our dev mode."
+        "text1": "Đặt ngôn ngữ ưa thích của bạn và báo cáo sự cố từ trang cài đặt của chúng tôi.",
+        "text2": "Nếu bạn là nhà phát triển, bạn cũng có thể khám phá nội dung cơ sở dữ liệu của chúng tôi bằng cách sử dụng chế độ nhà phát triển."
       },
       "page6": {
-        "title": "Tour",
+        "title": "Tham quan",
         "text1": "Got stuck somewhere? Want to take the tour again?",
         "text2": "Just click on the question mark and start the journey again!"
       }
@@ -247,8 +250,8 @@
       },
       "page2": {
         "title": "Cảnh báo",
-        "text1": "Nếu vùng cắt chứa nhiều logo, đừng chọn nó.",
-        "text2": "Nếu vùng cắt chỉ chứa một phần của logo, bạn có thể chọn nó"
+        "text1": "If the crop contains multiple logos, do not select it.",
+        "text2": "If the crop contains only a partial part of a logo, you can select it"
       },
       "page3": {
         "title": "Xác thực",
@@ -275,9 +278,9 @@
       "3": "Lựa chọn chất dinh dưỡng",
       "4": "Lựa chọn giá trị"
     },
-    "loading": "Loading...",
-    "unknown_brand": "Brand Unknown",
-    "value_missing": "You forgot to input value duuuuuuuuuuuuuuuuude",
+    "loading": "Đang tải...",
+    "unknown_brand": "Nhãn hiệu không xác định",
+    "value_missing": "Bạn quên nhập giá trị duuuuuuuuuuuuuuuuude",
     "next": "Bước tiếp theo",
     "prev": "Bước trước đó",
     "skip": "Bỏ qua sản phẩm này",
@@ -313,22 +316,22 @@
     }
   },
   "notfound": {
-    "image_alt": "404 not found",
+    "image_alt": "Không tìm thấy trang 404",
     "nopage": "Ối! Trang bạn đang tìm kiếm không thể tìm thấy.",
     "redirect1": "Muốn chơi một số trò chơi?",
     "redirect2": "Nhấn vào đây"
   },
   "nutriscore": {
-    "image_alt": "cropped image",
-    "label": "Annotate nutriscore logo detection by batch.",
-    "description": "To do so select all the images showing the correct/wrong nutriscore value ({{label}}), and click on the bottom buttons to say if you selected a set correct or wrong ones.",
+    "image_alt": "hình ảnh đã cắt",
+    "label": "Annotate Nutri-Score logo detection by batch.",
+    "description": "To do so, select all the images showing the correct/wrong Nutri-Score value ({{label}}), and click on the bottom buttons to say if you selected a set correct or wrong ones.",
     "images_remaining": "Still {{remaining}} to annotate",
-    "image_sizes": "Image sizes",
-    "zoom_on_logo": "zoom on logo",
+    "image_sizes": "Kích thước hình ảnh",
+    "zoom_on_logo": "Zoom on logo",
     "select_all": "Chọn tất cả",
     "deselect_all": "Bỏ chọn tất cả",
-    "incorrect": "Wrong",
-    "correct": "Correct ({{label}})"
+    "incorrect": "Sai",
+    "correct": "Đúng ({{label}})"
   },
   "eco-score": {
     "description": "Đây là bản tóm tắt các câu hỏi có thể cải thiện phần tính toán Điểm sinh thái",

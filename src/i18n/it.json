@@ -26,7 +26,7 @@
     "saved_filters": "Filtri salvati",
     "contribution_modal": {
       "title": "I tuoi contributi sono importanti",
-      "information": "Hunger Games è uno sforzo per sfruttare i risultati del nostro OCR. Quando usi Hunger Games di Open Food Facts, migliori il nostro intero database che aiuta la comunità a fare scelte alimentari migliori. Raccogliamo le tue annotazioni e le utilizziamo per rendere Open Food Facts più accurato ed efficiente.",
+      "information": "Hunger Games is an effort to leverage the results of our OCR. When you use Hunger Games by Open Food Facts, you improve our entire database which helps the community make better food choices. We gather your annotations and use them to make Open Food Facts more accurate and effecient.",
       "thank_you": "Grazie per aiutarci a migliorare Open Food Facts in modo che più persone possano usarlo facilmente."
     },
     "statistics": {
@@ -53,8 +53,10 @@
     "category": "categoria",
     "categories": "Categorie",
     "label": "etichetta",
+    "labels": "Etichette",
     "brand": "marca",
     "brands": "Marche",
+    "quantity": "Quantità",
     "insightTypeLabel": "Mostra solo",
     "ingredients": "Ingredienti",
     "product_weight": "peso del prodotto",
@@ -122,6 +124,7 @@
     "settings": "Impostazioni",
     "eco-score": "Eco-score",
     "nutriscore": "Nutri-Score",
+    "tour": "Show Tour",
     "logged_in_user": "Registrato come {{userName}}",
     "log_in": "Clicca qui per accedere"
   },
@@ -196,7 +199,7 @@
     "language": "Lingue",
     "save": "Salva",
     "reportIssue": "Trovato un difetto? Faccelo sapere",
-    "dev_mode_title": "Per esplorare il contenuto del database, attivare la modalità sviluppatore",
+    "dev_mode_title": "Per ottenere più opzioni, attivare la modalità sviluppatore",
     "dev_mode_label": "Modalità sviluppatore",
     "dev_page_toggle": "Mostra pagina {{name}}"
   },
@@ -320,8 +323,8 @@
   },
   "nutriscore": {
     "image_alt": "Immagine ritagliata",
-    "label": "Annota il rilevamento del logo nutriscore in blocchi.",
-    "description": "Per farlo, selezionare tutte le immagini che mostrano il valore corretto o sbagliato del nutriscore ({{label}}) e premete sui pulsanti in basso per sapere se si è selezionato un insieme d'immagini corrette o sbagliate.",
+    "label": "Annota il rilevamento del logo Nutriscore in blocchi.",
+    "description": "To do so, select all the images showing the correct/wrong Nutri-Score value ({{label}}), and click on the bottom buttons to say if you selected a set correct or wrong ones.",
     "images_remaining": "Ancora {{remaining}} da annotare",
     "image_sizes": "Dimensioni dell'immagine",
     "zoom_on_logo": "Ingrandisci sul logo",
