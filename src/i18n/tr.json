@@ -26,7 +26,7 @@
     "saved_filters": "Kaydedilen Filtreler",
     "contribution_modal": {
       "title": "Katkınız önemlidir",
-      "information": "Açlık Oyunları, OCR'mizin sonuçlarından yararlanma çabasıdır. Open Food Facts tarafından Açlık Oyunları'nı kullandığınızda, topluluğun daha iyi yemek seçimleri yapmasına yardımcı olan tüm veritabanımızı geliştirirsiniz. Ek açıklamalarınızı toplar ve bunları Open Food Facts'i daha doğru ve verimli hale getirmek için kullanırız.",
+      "information": "Açlık Oyunları, OCR'mizin sonuçlarından yararlanma çabasıdır. Open Food Facts ürünü Açlık Oyunları'nı kullandığınızda, topluluğun daha iyi yemek seçimleri yapmasına yardımcı olan tüm veritabanımızı geliştirirsiniz. Ek açıklamalarınızı topluyoruz ve bunları Open Food Facts'i daha doğru ve verimli hale getirmek için kullanıyoruz.",
       "thank_you": "Daha fazla insanın kolayca kullanabilmesi için Open Food Facts'i geliştirmemize yardımcı olduğunuz için teşekkür ederiz."
     },
     "statistics": {
@@ -53,8 +53,10 @@
     "category": "kategori",
     "categories": "Kategoriler",
     "label": "etiket",
+    "labels": "Etiketler",
     "brand": "marka",
     "brands": "Markalar",
+    "quantity": "Miktar",
     "insightTypeLabel": "Only shows",
     "ingredients": "İçindekiler",
     "product_weight": "ürün ağırlığı",
@@ -122,6 +124,7 @@
     "settings": "Ayarlar",
     "eco-score": "Eko-skor",
     "nutriscore": "Nutri-Score",
+    "tour": "Gösteri Turu",
     "logged_in_user": "{{userName}} olarak günlüğe kaydedildi",
     "log_in": "giriş yapmak için tıklayın"
   },
@@ -196,7 +199,7 @@
     "language": "Diller",
     "save": "Kaydet",
     "reportIssue": "Bir hata mı buldun?, lütfen bizi bilgilendirin",
-    "dev_mode_title": "Veritabanı içeriğini keşfetmek için geliştirme modunu etkinleştirin",
+    "dev_mode_title": "Daha fazla seçenek elde etmek için geliştirme modunu etkinleştirin",
     "dev_mode_label": "Geliştirici Modu",
     "dev_page_toggle": "{{name}} sayfayı göster"
   },
@@ -247,8 +250,8 @@
       },
       "page2": {
         "title": "Uyarı",
-        "text1": "Eğer ekin çoklu logo içeriyorsa seçmeyin.",
-        "text2": "Eğer ekin bir logonun sadece bir kısmını içeriyorsa onu seçebilirsiniz"
+        "text1": "Kırpma birden fazla logo içeriyorsa, onu seçmeyin.",
+        "text2": "Kırpma, bir logonun yalnızca bir kısmını içeriyorsa, onu seçebilirsiniz"
       },
       "page3": {
         "title": "Geçerlilik",
@@ -320,11 +323,11 @@
   },
   "nutriscore": {
     "image_alt": "kırpılmış görüntü",
-    "label": "Toplu olarak Nutriscore logosu algılamasına açıklama ekleyin.",
-    "description": "Bunu yapmak için doğru/yanlış nutriscore değerini ({{label}}) gösteren tüm resimleri seçin ve doğru veya yanlış olanları seçip seçmediğinizi belirtmek için alttaki düğmelere tıklayın.",
+    "label": "Nutri-Score logo algılamasına toplu açıklama ekleyin.",
+    "description": "Bunu yapmak için, doğru/yanlış Nutri-Score değerini ({{label}}) gösteren tüm resimleri seçin ve doğru veya yanlış olanları seçip seçmediğinizi belirtmek için alttaki düğmelere tıklayın.",
     "images_remaining": "Hala {{remaining}} açıklama eklenecek",
     "image_sizes": "Görüntü boyutları",
-    "zoom_on_logo": "logoyu yakınlaştır",
+    "zoom_on_logo": "Logoyu yakınlaştır",
     "select_all": "Tümünü seç",
     "deselect_all": "Tümünün seçimini kaldır",
     "incorrect": "Yanlış",

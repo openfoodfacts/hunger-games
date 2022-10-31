@@ -26,7 +26,7 @@
     "saved_filters": "Filtres enregistrés",
     "contribution_modal": {
       "title": "Votre contribution compte",
-      "information": "Hunger Games est un effort pour tirer parti des résultats de notre OCR. Lorsque vous utilisez Hunger Games par Open Food Facts, vous améliorez l'ensemble de la base de données, ce qui aide la communauté à faire de meilleurs choix alimentaires. Nous recueillons vos annotations et les utilisons pour rendre Open Food Facts plus précis et efficace.",
+      "information": "Hunger Games is an effort to leverage the results of our OCR. When you use Hunger Games by Open Food Facts, you improve our entire database which helps the community make better food choices. We gather your annotations and use them to make Open Food Facts more accurate and effecient.",
       "thank_you": "Merci de nous aider à améliorer Open Food Facts afin que davantage de personnes puissent l'utiliser facilement."
     },
     "statistics": {
@@ -53,8 +53,10 @@
     "category": "catégorie",
     "categories": "Catégories",
     "label": "label",
+    "labels": "Labels",
     "brand": "marque",
     "brands": "Marques",
+    "quantity": "Quantité",
     "insightTypeLabel": "Ne montre que",
     "ingredients": "Ingrédients",
     "product_weight": "poids du produit",
@@ -122,6 +124,7 @@
     "settings": "Paramètres",
     "eco-score": "Éco-Score",
     "nutriscore": "Nutri-Score",
+    "tour": "Show Tour",
     "logged_in_user": "connecté en tant que {{userName}}",
     "log_in": "Cliquez pour vous connecter"
   },
@@ -186,7 +189,7 @@
     "search_specific": "Rechercher un logo spécifique",
     "load_more": "Voir plus",
     "no_results": "Aucun logo trouvé",
-    "result_count": "Shows {{showing}} on {{available}} available",
+    "result_count": "Affiche {{showing}} sur {{available}} disponible",
     "flag": "Quelque chose ne va pas? Signalez l'image !",
     "unflag": "Démarquer l'image",
     "crop_image_title": "recadrage du logo"
@@ -196,7 +199,7 @@
     "language": "Langue",
     "save": "Enregistrer",
     "reportIssue": "Vous avez trouvé une erreur ? Merci de nous le faire savoir",
-    "dev_mode_title": "Pour explorer le contenu de la base de données, activez le mode dev",
+    "dev_mode_title": "To get more options, activate the dev mode",
     "dev_mode_label": "Mode développeur",
     "dev_page_toggle": "Afficher la page {{name}}"
   },
@@ -214,11 +217,11 @@
         "text2": "Répondez simplement par un <strong>oui/non</strong>! Vous ne connaissez pas la réponse ? Ce n'est pas grave, sautez la question.",
         "text3": "Vous pouvez également utiliser les touches o,n et k de votre clavier.",
         "text4": "Vous pouvez <strong>filtrer</strong> les produits en fonction du pays, des marques, de la popularité et bien plus encore !",
-        "text5": "If you don't want to do this every single time, you can also <strong>save the filters</strong> by clicking on the star. Next time you come back, find the saved filters on the home page itself"
+        "text5": "Si vous ne voulez pas le faire à chaque fois, vous pouvez également <strong>enregistrer les filtres</strong> en cliquant sur l'étoile. La prochaine fois que vous reviendrez, retrouvez les filtres enregistrés sur la page d'accueil elle-même"
       },
       "page3": {
         "title": "Jeu des Logos",
-        "text1": "Our another really loved game is the logos game where you have to <strong> select all the logos</strong> you feel are the same.",
+        "text1": "Notre autre jeu très apprécié est le jeu de logos où vous devez <strong> sélectionner tous les logos</strong> qui vous semblent identiques.",
         "text2": "Comme le montre l'exemple, une fois que vous avez sélectionné tous les logos similaires, saisissez simplement leur valeur et sélectionnez s'il s'agit d'une marque, d'un label ou autre chose. Ce n'est pas plus compliqué."
       },
       "page4": {
@@ -226,7 +229,7 @@
         "text1": "Aidez-nous à terminer les questions restantes dans les labels les plus prioritaires !",
         "text2": "Ces cartes sont liées à des labels utilisés dans le calcul de l'éco-score.",
         "text3": "<strong>Qu'est-ce que l'Eco-Score ?</strong>",
-        "text4": "Eco-Score captures the total environmental footprint, making it easier for consumers to compare products and decide which is better for the environment."
+        "text4": "Eco-Score capture l'empreinte environnementale totale, ce qui permet aux consommateurs de comparer plus facilement les produits et de décider lequel est le meilleur pour l'environnement."
       },
       "page5": {
         "title": "Paramètres",
@@ -247,8 +250,8 @@
       },
       "page2": {
         "title": "Avertissement",
-        "text1": "Si le recadrage contient plusieurs logos, ne le sélectionnez pas.",
-        "text2": "Si le recadrage ne contient qu'une partie partielle d'un logo, vous pouvez le sélectionner"
+        "text1": "If the crop contains multiple logos, do not select it.",
+        "text2": "If the crop contains only a partial part of a logo, you can select it"
       },
       "page3": {
         "title": "Valider",
@@ -277,7 +280,7 @@
     },
     "loading": "Chargement ...",
     "unknown_brand": "Marque inconnue",
-    "value_missing": "You forgot to input value duuuuuuuuuuuuuuuuude",
+    "value_missing": "Vous avez oublié de saisir la valeur ",
     "next": "Prochaine Étape",
     "prev": "Etapes précédent",
     "skip": "Ignorer ce produit",
@@ -320,11 +323,11 @@
   },
   "nutriscore": {
     "image_alt": "image recadrée",
-    "label": "Annotez la détection du logo Nutri-Score par lot.",
-    "description": "Pour ce faire, sélectionnez toutes les images montrant la valeur Nutri-Score correcte/incorrecte ({{label}}), et cliquez sur les boutons du bas pour dire si vous avez sélectionné un ensemble correct ou incorrect.",
+    "label": "Annotate Nutri-Score logo detection by batch.",
+    "description": "To do so, select all the images showing the correct/wrong Nutri-Score value ({{label}}), and click on the bottom buttons to say if you selected a set correct or wrong ones.",
     "images_remaining": "Encore {{remaining}} à annoter",
     "image_sizes": "Tailles des images",
-    "zoom_on_logo": "zoomer sur le logo",
+    "zoom_on_logo": "Zoom on logo",
     "select_all": "Tout sélectionner",
     "deselect_all": "Tout désélectionner",
     "incorrect": "Faux",

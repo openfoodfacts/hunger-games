@@ -26,7 +26,7 @@
     "saved_filters": "Збережені фільтри",
     "contribution_modal": {
       "title": "Ваш внесок має значення",
-      "information": "Голодні ігри - це спроба використати результати нашого розпізнавання тексту. Коли ви використовуєте \"Голодні ігри\" від Open Food Facts, ви покращуєте всю нашу базу даних, яка допомагає суспільству робити кращий вибір продуктів харчування. Ми збираємо ваші анотації і використовуємо їх, щоб зробити Open Food Facts більш точними та ефективними.",
+      "information": "Hunger Games is an effort to leverage the results of our OCR. When you use Hunger Games by Open Food Facts, you improve our entire database which helps the community make better food choices. We gather your annotations and use them to make Open Food Facts more accurate and effecient.",
       "thank_you": "Дякуємо, що допомагаєте нам покращувати Open Food Facts, щоб більше людей могли легко ним користуватися."
     },
     "statistics": {
@@ -53,8 +53,10 @@
     "category": "категорія",
     "categories": "Категорії",
     "label": "етикетка",
+    "labels": "Етикетки",
     "brand": "виробник",
     "brands": "Виробники",
+    "quantity": "Кількість",
     "insightTypeLabel": "Показувати лише",
     "ingredients": "Інгредієнти",
     "product_weight": "вага товару",
@@ -122,6 +124,7 @@
     "settings": "Налаштування",
     "eco-score": "Показник впливу на довкілля",
     "nutriscore": "Nutri-Score",
+    "tour": "Show Tour",
     "logged_in_user": "увійшли як {{userName}}",
     "log_in": "натисніть, щоб увійти"
   },
@@ -196,7 +199,7 @@
     "language": "Мови",
     "save": "Зберегти",
     "reportIssue": "Знайшли помилку? Будь ласка, повідомте нас",
-    "dev_mode_title": "Для ознайомлення з вмістом бази даних активуйте режим розробника",
+    "dev_mode_title": "To get more options, activate the dev mode",
     "dev_mode_label": "Режим розробника",
     "dev_page_toggle": "Показати {{name}} сторінку"
   },
@@ -247,8 +250,8 @@
       },
       "page2": {
         "title": "Увага",
-        "text1": "Якщо врожай містить декілька логотипів, не обирайте його.",
-        "text2": "Якщо врожай містить лише частину логотипу, ви можете обрати його"
+        "text1": "If the crop contains multiple logos, do not select it.",
+        "text2": "If the crop contains only a partial part of a logo, you can select it"
       },
       "page3": {
         "title": "Перевірити",
@@ -320,11 +323,11 @@
   },
   "nutriscore": {
     "image_alt": "cropped image",
-    "label": "Annotate nutriscore logo detection by batch.",
-    "description": "To do so select all the images showing the correct/wrong nutriscore value ({{label}}), and click on the bottom buttons to say if you selected a set correct or wrong ones.",
+    "label": "Annotate Nutri-Score logo detection by batch.",
+    "description": "To do so, select all the images showing the correct/wrong Nutri-Score value ({{label}}), and click on the bottom buttons to say if you selected a set correct or wrong ones.",
     "images_remaining": "Still {{remaining}} to annotate",
     "image_sizes": "Image sizes",
-    "zoom_on_logo": "zoom on logo",
+    "zoom_on_logo": "Zoom on logo",
     "select_all": "Вибрати все",
     "deselect_all": "Очистити все",
     "incorrect": "Wrong",

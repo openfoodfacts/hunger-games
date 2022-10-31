@@ -26,7 +26,7 @@
     "saved_filters": "Saved Filters",
     "contribution_modal": {
       "title": "Your contribution matters",
-      "information": "Hunger Games is an effort to leverage the results of our OCR. When you use Hunger Games by Open Food Facts, you improve our entire database which helps the community make better food choices. We gathers your annotations and use them to make Open Food Facts more accurate and effecient.",
+      "information": "Hunger Games is an effort to leverage the results of our OCR. When you use Hunger Games by Open Food Facts, you improve our entire database which helps the community make better food choices. We gather your annotations and use them to make Open Food Facts more accurate and effecient.",
       "thank_you": "Thank you for helping us improve Open Food Facts so that more people can use it easily."
     },
     "statistics": {
@@ -53,8 +53,10 @@
     "category": "kategorija",
     "categories": "Kategorijos",
     "label": "etiketė",
+    "labels": "Labels",
     "brand": "prekės ženklas",
     "brands": "Prekės ženklai",
+    "quantity": "Kiekis",
     "insightTypeLabel": "Rodyti tik",
     "ingredients": "Sudėtis",
     "product_weight": "produkto svoris",
@@ -122,6 +124,7 @@
     "settings": "Settings",
     "eco-score": "Ekologinis balas",
     "nutriscore": "Nutri-Score",
+    "tour": "Show Tour",
     "logged_in_user": "logged as {{userName}}",
     "log_in": "click to login"
   },
@@ -196,7 +199,7 @@
     "language": "Languages",
     "save": "Išsaugoti",
     "reportIssue": "Radote klaidą? Praneškite mums",
-    "dev_mode_title": "To explore the database content, activate the dev mode",
+    "dev_mode_title": "To get more options, activate the dev mode",
     "dev_mode_label": "Dev Mode",
     "dev_page_toggle": "Show {{name}} page"
   },
@@ -247,8 +250,8 @@
       },
       "page2": {
         "title": "Įspėjimas",
-        "text1": "Jei apkarpoje yra keli logotipai, jo nepasirinkite.",
-        "text2": "Jei apkarpoje yra tik dalis logotipo, galite ją pasirinkti"
+        "text1": "If the crop contains multiple logos, do not select it.",
+        "text2": "If the crop contains only a partial part of a logo, you can select it"
       },
       "page3": {
         "title": "Patvirtinti",
@@ -320,11 +323,11 @@
   },
   "nutriscore": {
     "image_alt": "cropped image",
-    "label": "Annotate nutriscore logo detection by batch.",
-    "description": "To do so select all the images showing the correct/wrong nutriscore value ({{label}}), and click on the bottom buttons to say if you selected a set correct or wrong ones.",
+    "label": "Annotate Nutri-Score logo detection by batch.",
+    "description": "To do so, select all the images showing the correct/wrong Nutri-Score value ({{label}}), and click on the bottom buttons to say if you selected a set correct or wrong ones.",
     "images_remaining": "Still {{remaining}} to annotate",
     "image_sizes": "Image sizes",
-    "zoom_on_logo": "zoom on logo",
+    "zoom_on_logo": "Zoom on logo",
     "select_all": "Pažymėti viską",
     "deselect_all": "Išžymėti viską",
     "incorrect": "Wrong",

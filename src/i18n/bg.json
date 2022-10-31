@@ -26,7 +26,7 @@
     "saved_filters": "Запазени филтри",
     "contribution_modal": {
       "title": "Твоят принос има значение",
-      "information": "Игрите на глада са опит да се използват резултатите от нашият OCR. Когато използвате Игрите на глада от Open Food Facts, подобрявате цялата ни база данни, което помага на общността да прави по-добър избор на храна. Ние събираме вашите пояснения и ги използваме, за да направим Open Food Facts по-точен и ефективен.",
+      "information": "Hunger Games is an effort to leverage the results of our OCR. When you use Hunger Games by Open Food Facts, you improve our entire database which helps the community make better food choices. We gather your annotations and use them to make Open Food Facts more accurate and effecient.",
       "thank_you": "Благодарим ти, че ни помагаш да подобрим Open Food Facts, така че повече хора да могат да го използват лесно."
     },
     "statistics": {
@@ -53,8 +53,10 @@
     "category": "категория",
     "categories": "Категории",
     "label": "етикет",
+    "labels": "Етикети",
     "brand": "марка",
     "brands": "Марки",
+    "quantity": "Количество",
     "insightTypeLabel": "Показва само",
     "ingredients": "Съставки",
     "product_weight": "тегло на продукта",
@@ -122,6 +124,7 @@
     "settings": "Настройки",
     "eco-score": "Eco-score",
     "nutriscore": "Nutri-Score",
+    "tour": "Show Tour",
     "logged_in_user": "влязъл като {{userName}}",
     "log_in": "щракни, за да влезеш"
   },
@@ -196,7 +199,7 @@
     "language": "Езици",
     "save": "Запис",
     "reportIssue": "Откри грешка? Моля, уведоми ни",
-    "dev_mode_title": "За да разгледате съдържанието на базата данни, активирайте режима за разработка",
+    "dev_mode_title": "To get more options, activate the dev mode",
     "dev_mode_label": "Режим на разработчик",
     "dev_page_toggle": "Покажи {{name}} страница"
   },
@@ -247,8 +250,8 @@
       },
       "page2": {
         "title": "Предупреждение",
-        "text1": "Ако изрязването съдържа няколко лога, не го избирай.",
-        "text2": "Ако изрязването съдържа само частична част от лого, можеш да го избереш"
+        "text1": "If the crop contains multiple logos, do not select it.",
+        "text2": "If the crop contains only a partial part of a logo, you can select it"
       },
       "page3": {
         "title": "Потвърди",
@@ -320,11 +323,11 @@
   },
   "nutriscore": {
     "image_alt": "cropped image",
-    "label": "Annotate nutriscore logo detection by batch.",
-    "description": "To do so select all the images showing the correct/wrong nutriscore value ({{label}}), and click on the bottom buttons to say if you selected a set correct or wrong ones.",
+    "label": "Annotate Nutri-Score logo detection by batch.",
+    "description": "To do so, select all the images showing the correct/wrong Nutri-Score value ({{label}}), and click on the bottom buttons to say if you selected a set correct or wrong ones.",
     "images_remaining": "Still {{remaining}} to annotate",
     "image_sizes": "Image sizes",
-    "zoom_on_logo": "zoom on logo",
+    "zoom_on_logo": "Zoom on logo",
     "select_all": "Избери всички",
     "deselect_all": "Размаркирай всичко",
     "incorrect": "Грешно",

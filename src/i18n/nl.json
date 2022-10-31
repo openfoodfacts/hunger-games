@@ -53,8 +53,10 @@
     "category": "categorie",
     "categories": "Categorieën",
     "label": "keurmerk",
+    "labels": "Keurmerken",
     "brand": "merk",
     "brands": "Merken",
+    "quantity": "Hoeveelheid",
     "insightTypeLabel": "Toont enkel",
     "ingredients": "Ingrediënten",
     "product_weight": "Gewicht van het product",
@@ -122,6 +124,7 @@
     "settings": "Instellingen",
     "eco-score": "Eco-Score",
     "nutriscore": "Nutri-Score",
+    "tour": "Toon rondleiding",
     "logged_in_user": "ingelogd als {{userName}}",
     "log_in": "klik om in te loggen"
   },
@@ -196,7 +199,7 @@
     "language": "Talen",
     "save": "Opslaan",
     "reportIssue": "Bug gevonden? Laat het ons weten",
-    "dev_mode_title": "Activeer de dev-modus om de database-inhoud te verkennen",
+    "dev_mode_title": "Activeer de dev-modus om meer opties te krijgen",
     "dev_mode_label": "Dev-modus",
     "dev_page_toggle": "Toon {{name}} pagina"
   },
@@ -248,7 +251,7 @@
       "page2": {
         "title": "Waarschuwing",
         "text1": "Als de uitsnede meerdere logo's bevat, selecteert u deze niet.",
-        "text2": "Als de bijsnijden slechts een deel van een logo bevat, kun je het selecteren"
+        "text2": "Als de uitsnede slechts een deel van een logo bevat, kunt u deze selecteren"
       },
       "page3": {
         "title": "Bevestigen",
@@ -320,11 +323,11 @@
   },
   "nutriscore": {
     "image_alt": "bijgesneden afbeelding",
-    "label": "Annoteer nutriscore-logodetectie per batch.",
-    "description": "Selecteer hiervoor alle afbeeldingen met de juiste/foute nutriscore-waarde ({{label}}), en klik op de onderste knoppen om aan te geven of u een juiste of verkeerde set hebt geselecteerd.",
+    "label": "Annoteer Nutri-Score-logodetectie per batch.",
+    "description": "Om dit te doen, selecteert u alle afbeeldingen met de juiste/foute Nutri-Score-waarde ({{label}}), en klikt u op de onderste knoppen om aan te geven of u een reeks juiste of verkeerde hebt geselecteerd.",
     "images_remaining": "Nog {{remaining}} over om te annoteren",
     "image_sizes": "Afbeeldingsgrootte",
-    "zoom_on_logo": "zoom op logo",
+    "zoom_on_logo": "Zoom op logo",
     "select_all": "Selecteer alles",
     "deselect_all": "Deselecteer alles",
     "incorrect": "Mis",

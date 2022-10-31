@@ -53,8 +53,10 @@
     "category": "kategorie",
     "categories": "Kategorie",
     "label": "štítek",
+    "labels": "Štítky",
     "brand": "značka",
     "brands": "Značky",
+    "quantity": "Množství",
     "insightTypeLabel": "Zobrazuje pouze",
     "ingredients": "Složení",
     "product_weight": "hmotnost výrobku",
@@ -93,7 +95,7 @@
       "placeholders": {
         "value": "Hodnota (fanta, cs:přírodní,...)",
         "brand": "auchan, danone, herta, ...",
-        "campaign": "Annotation campaigns"
+        "campaign": "Anotační kampaně"
       },
       "actions": {
         "edit": "Upravit filtry",
@@ -122,6 +124,7 @@
     "settings": "Nastavení",
     "eco-score": "Eco-score",
     "nutriscore": "Nutri-Score",
+    "tour": "Zobrazit prohlídku",
     "logged_in_user": "přihlášen jako {{userName}}",
     "log_in": "klikněte pro přihlášení"
   },
@@ -196,7 +199,7 @@
     "language": "Jazyky",
     "save": "Uložit",
     "reportIssue": "Našli jste chybu?, dejte nám prosím vědět",
-    "dev_mode_title": "Chcete-li prozkoumat obsah databáze, aktivujte vývojářský režim",
+    "dev_mode_title": "Chcete-li získat více možností, aktivujte režim pro vývojáře",
     "dev_mode_label": "Vývojářský režim",
     "dev_page_toggle": "Zobrazit stránku {{name}}"
   },
@@ -320,11 +323,11 @@
   },
   "nutriscore": {
     "image_alt": "oříznutý obrázek",
-    "label": "Označte detekci loga nutriscore podle šarže.",
-    "description": "Chcete-li tak učinit, vyberte všechny obrázky zobrazující správnou/nesprávnou hodnotu nutriscore ({{label}}) a kliknutím na spodní tlačítka sdělte, zda jste vybrali sadu správných nebo nesprávných.",
+    "label": "Označte detekci loga Nutri-Score podle šarže.",
+    "description": "Chcete-li tak učinit, vyberte všechny obrázky zobrazující správnou/nesprávnou hodnotu Nutri-Score ({{label}}) a kliknutím na spodní tlačítka sdělte, zda jste vybrali sadu správných nebo špatných.",
     "images_remaining": "Ještě {{remaining}} k anotaci",
     "image_sizes": "Velikosti obrázků",
-    "zoom_on_logo": "přiblížit logo",
+    "zoom_on_logo": "Přiblížit logo",
     "select_all": "Vybrat vše",
     "deselect_all": "Odznačit vše",
     "incorrect": "Špatně",

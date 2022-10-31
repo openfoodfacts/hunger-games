@@ -1,11 +1,11 @@
 {
   "home": {
     "game_selector": {
-      "title": "What game would you like to play?",
+      "title": "W jaką grę chciałbyś zagrać?",
       "cards": {
         "questions": {
           "title": "Pytania",
-          "description": "Tell us if the given image answers the questions"
+          "description": "Powiedz nam, czy dany obraz odpowiada na pytania"
         },
         "logos": {
           "title": "Logos",
@@ -13,24 +13,24 @@
         },
         "eco_score": {
           "title": "Eco-Score",
-          "description": "Annotate the questions with the highest value"
+          "description": "Oznacz pytania o najwyższej wartości"
         }
       }
     },
     "account_band": {
-      "title": "Want to make your contribution count? Create an account or sign in on Open Food Facts!",
+      "title": "Chcesz, aby Twój wkład się liczył? Załóż konto lub zaloguj się do Open Food Facts!",
       "log_in": "Nazwa użytkownika",
       "sign_up": "Zarejestruj się",
-      "contribution_details": "Learn why your contribution matters"
+      "contribution_details": "Dowiedz się, dlaczego Twój wkład ma znaczenie"
     },
-    "saved_filters": "Saved Filters",
+    "saved_filters": "Zapisane filtry",
     "contribution_modal": {
-      "title": "Your contribution matters",
-      "information": "Hunger Games is an effort to leverage the results of our OCR. When you use Hunger Games by Open Food Facts, you improve our entire database which helps the community make better food choices. We gathers your annotations and use them to make Open Food Facts more accurate and effecient.",
-      "thank_you": "Thank you for helping us improve Open Food Facts so that more people can use it easily."
+      "title": "Twój wkład ma znaczenie",
+      "information": "Hunger Games is an effort to leverage the results of our OCR. When you use Hunger Games by Open Food Facts, you improve our entire database which helps the community make better food choices. We gather your annotations and use them to make Open Food Facts more accurate and effecient.",
+      "thank_you": "Dziękujemy za pomoc w ulepszaniu Open Food Facts, aby więcej osób mogło z niego łatwo korzystać."
     },
     "statistics": {
-      "title": "{{userName}} statistics:",
+      "title": "Statystyki {{userName}}:",
       "editorCount": {
         "title": "Edytor",
         "description": "Liczba wykonanych edycji"
@@ -46,15 +46,17 @@
     }
   },
   "flagged_images": {
-    "title": "Images flagged by users",
-    "loading": "Loading"
+    "title": "Zdjęcia oznaczone przez użytkowników",
+    "loading": "Ładowanie"
   },
   "questions": {
     "category": "kategoria",
     "categories": "Kategorie",
     "label": "etykieta",
+    "labels": "Etykieta",
     "brand": "marka",
     "brands": "Marki",
+    "quantity": "Ilość",
     "insightTypeLabel": "Pokazuj wyłącznie",
     "ingredients": "Składniki",
     "product_weight": "waga produktu",
@@ -88,12 +90,12 @@
         "brand": "Marka Produktu",
         "popularity": "Sortuj według popularności",
         "edit": "",
-        "campaign": "Campaign"
+        "campaign": "Kampania"
       },
       "placeholders": {
         "value": "Wartość (fanta, organiczny...)",
         "brand": "Auchan, Danone, Herta, ...",
-        "campaign": "Annotation campaigns"
+        "campaign": "Kampanie adnotacyjne"
       },
       "actions": {
         "edit": "Edytuj Filtry",
@@ -101,18 +103,18 @@
         "apply": "Zastosuj"
       }
     },
-    "other_questions": "Other questions",
-    "send": "Send",
-    "flag": "Something wrong? Report/flag the image!",
-    "unflag": "Unflag the image",
-    "reset_filters": "Reset filters",
+    "other_questions": "Inne pytania",
+    "send": "Wyślij",
+    "flag": "Coś nie tak? Zgłoś lub oznacz obrazek!",
+    "unflag": "Odznacz obrazek",
+    "reset_filters": "Resetuj filtry",
     "log_in": "Nazwa użytkownika",
     "sign_up": "Zarejestruj się",
-    "login_title": "Make your annotation count",
-    "login_description": "Currently you are not logged in Open Food Facts. To get your answers directly applied to products, and associated to your account, consider logging in to your Open Food Facts account, or creating one"
+    "login_title": "Spraw, aby Twoja adnotacja się liczyła",
+    "login_description": "Obecnie nie jesteś zalogowany w Open Food Facts. Aby twoje odpowiedzi były bezpośrednio dodawane do produktów i powiązane z twoim kontem, rozważ zalogowanie lub zarejestrowanie się"
   },
   "menu": {
-    "title": "Hunger Games",
+    "title": "Igrzyska śmierci",
     "games": "Gry",
     "questions": "Pytania",
     "logos": "Logos",
@@ -122,8 +124,9 @@
     "settings": "Ustawienia",
     "eco-score": "Eco-Score",
     "nutriscore": "Nutri-Score",
-    "logged_in_user": "logged as {{userName}}",
-    "log_in": "click to login"
+    "tour": "Przegląd funkcji programu",
+    "logged_in_user": "zalogowano jako {{userName}}",
+    "log_in": "kliknij, aby się zalogować"
   },
   "insights": {
     "insights": "Spostrzeżenia",
@@ -152,8 +155,8 @@
     "completed_at": "Data wykonania",
     "automatic": "Automatyczne",
     "human_required": "Human required",
-    "edit_product": "Open product edit",
-    "view_product": "Open product page"
+    "edit_product": "Otwórz edycję produktu",
+    "view_product": "Otwórz stronę produktu"
   },
   "logos": {
     "annotation": "Dodatkowe informacje: ",
@@ -181,43 +184,43 @@
     "no_found": "Nie znaleziono logo",
     "search": "Wyszukiwanie",
     "number_of_results": "Liczba wyników:",
-    "loading": "Loading...",
+    "loading": "Ładowanie...",
     "refresh": "Odśwież",
-    "search_specific": "Search specific logo",
-    "load_more": "Load more",
+    "search_specific": "Szukaj konkretnego logo",
+    "load_more": "Załaduj więcej",
     "no_results": "Nie znaleziono logo",
     "result_count": "Shows {{showing}} on {{available}} available",
-    "flag": "Something wrong? Report/flag the image!",
-    "unflag": "Unflag the image",
-    "crop_image_title": "crop of the logo"
+    "flag": "Coś nie tak? Zgłoś lub oznacz obrazek!",
+    "unflag": "Odznacz obrazek",
+    "crop_image_title": "przycięcie logo"
   },
   "settings": {
     "settings": "Ustawienia",
     "language": "Języki",
     "save": "Zapisz",
     "reportIssue": "Znalazłeś błąd? Daj nam znać.",
-    "dev_mode_title": "To explore the database content, activate the dev mode",
-    "dev_mode_label": "Dev Mode",
-    "dev_page_toggle": "Show {{name}} page"
+    "dev_mode_title": "Aby uzyskać więcej opcji, włącz tryb deweloperski",
+    "dev_mode_label": "Tryb Deweloperski",
+    "dev_page_toggle": "Pokaż stronę {{name}}"
   },
   "helper": {
     "welcome": {
       "page1": {
-        "title": "Welcome to Hunger Games",
+        "title": "Witamy na Igrzyskach Śmierci",
         "text1": "Hunger Games is a collection of mini-games that help contribute to Open Food Facts in many ways. You can play are really exciting games from anywhere. Here is a guided tour of the entire website which will get you started.",
         "text2": "Make sure to login to the Open Food Facts website to get credit for your contributions. If you make a mistake, please take the time to correct it by heading to the website.",
         "text3": "In case of any doubt about the games, click on the question mark icon at the top right of the page, and you can reach us on slack at the #hunger-games channel"
       },
       "page2": {
-        "title": "Questions Game",
+        "title": "Gra pytań",
         "text1": "Does the food product belong to this brand?",
-        "text2": "Answer simply with a <strong>yes/no</strong>! Don't know the answer? That's alright, just skip it.",
-        "text3": "You can also use your keyboard keys o,n and k.",
-        "text4": "You can <strong>filter</strong> the products based on country, brands, popularity and much more!",
-        "text5": "If you don't want to do this every single time, you can also <strong>save the filters</strong> by clicking on the star. Next time you come back, find the saved filters on the home page itself"
+        "text2": "Odpowiadaj prosto, używając <strong>tak/nie</strong>! Nie znasz odpowiedzi? Nie szkodzi, po prostu pomiń.",
+        "text3": "Możesz również użyć klawiszy O, N i K.",
+        "text4": "Możesz <strong>filtrować</strong> produkty w oparciu o kraj, marki, popularność i wiele więcej!",
+        "text5": "Jeśli nie chcesz tego robić za każdym razem, możesz również <strong>zapisać filtry</strong> klikając gwiazdkę. Następnym razem, gdy wrócisz, znajdziesz zapisane filtry na stronie głównej"
       },
       "page3": {
-        "title": "Logos Game",
+        "title": "Gra z logami",
         "text1": "Our another really loved game is the logos game where you have to <strong> select all the logos</strong> you feel are the same.",
         "text2": "As shown in the example, once you select all the similar logos, just type their value and select where it is a brand, a label or something else. It's that simple!"
       },
@@ -247,8 +250,8 @@
       },
       "page2": {
         "title": "Ostrzeżenie",
-        "text1": "Jeśli kadr zawiera wiele log, nie wybieraj go.",
-        "text2": "Jeśli kadr zawiera tylko część logo, możesz je zaznaczyć"
+        "text1": "If the crop contains multiple logos, do not select it.",
+        "text2": "If the crop contains only a partial part of a logo, you can select it"
       },
       "page3": {
         "title": "Zweryfikuj",
@@ -275,7 +278,7 @@
       "3": "Wybór składników odżywczych",
       "4": "Wybór wartości"
     },
-    "loading": "Loading...",
+    "loading": "Ładowanie...",
     "unknown_brand": "Brand Unknown",
     "value_missing": "You forgot to input value duuuuuuuuuuuuuuuuude",
     "next": "Dalej",
@@ -320,11 +323,11 @@
   },
   "nutriscore": {
     "image_alt": "cropped image",
-    "label": "Annotate nutriscore logo detection by batch.",
-    "description": "To do so select all the images showing the correct/wrong nutriscore value ({{label}}), and click on the bottom buttons to say if you selected a set correct or wrong ones.",
+    "label": "Annotate Nutri-Score logo detection by batch.",
+    "description": "To do so, select all the images showing the correct/wrong Nutri-Score value ({{label}}), and click on the bottom buttons to say if you selected a set correct or wrong ones.",
     "images_remaining": "Still {{remaining}} to annotate",
     "image_sizes": "Image sizes",
-    "zoom_on_logo": "zoom on logo",
+    "zoom_on_logo": "Zoom on logo",
     "select_all": "Wybierz wszystkie",
     "deselect_all": "Odznacz wszystkie",
     "incorrect": "Wrong",
