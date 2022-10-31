@@ -241,7 +241,14 @@ export default function LogoSearch() {
 
       <Paper
         elevation={0}
-        sx={{ display: "flex", flexDirection: "row", gap: 1 }}
+        sx={{
+          display: "flex",
+          flexDirection: "row",
+          gap: 1,
+          position: "sticky",
+          bottom: 0,
+          py: 2,
+        }}
       >
         <Button
           disabled={page === 1}
