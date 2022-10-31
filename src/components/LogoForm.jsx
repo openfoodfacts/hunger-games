@@ -65,7 +65,9 @@ const LogoForm = (props) => {
   const isDifferent =
     innerType !== type ||
     (!TYPE_WITHOUT_VALUE.includes(innerType) &&
-      innerValue.toLowerCase() !== value.toLocaleLowerCase());
+      (innerValue !== null
+        ? innerValue.toLowerCase() !== value.toLowerCase()
+        : innerValue !== value));
 
   return (
     <Stack

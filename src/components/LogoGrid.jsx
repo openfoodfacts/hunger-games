@@ -24,7 +24,8 @@ const LogoCard = React.memo(
   ({
     selected,
     id,
-    toggleLogoSelection,
+    index,
+    selectionApiRef,
     annotation_value,
     image,
     annotation_type,
@@ -33,6 +34,14 @@ const LogoCard = React.memo(
   }) => {
     const { t } = useTranslation();
     const theme = useTheme();
+
+    const handleClick = (event) => {
+      if (event.shiftKey) {
+        selectionApiRef.current.rangeSelection?.(index, id, selected);
+      } else {
+        selectionApiRef.current.singleSelection?.(index, id, selected);
+      }
+    };
 
     return (
       <Card
@@ -66,7 +75,7 @@ const LogoCard = React.memo(
         <Divider />
         <CardActionArea
           disabled={readOnly || !!annotation_type}
-          onClick={() => toggleLogoSelection(id)}
+          onClick={handleClick}
           sx={{ flexGrow: 1 }}
         >
           <CardMedia
@@ -94,7 +103,7 @@ const LogoCard = React.memo(
             checked={selected}
             disabled={!!annotation_type}
             size="small"
-            onClick={() => toggleLogoSelection(id)}
+            onClick={handleClick}
             sx={{ position: "absolute", bottom: 0, right: 0 }}
           />
         )}
@@ -104,7 +113,56 @@ const LogoCard = React.memo(
 );
 
 const LogoGrid = (props) => {
-  const { logos, toggleLogoSelection, readOnly } = props;
+  const { logos, toggleLogoSelection, setLogoSelectionRange, readOnly, sx } =
+    props;
+
+  const [lastClicked, setLastClicked] = React.useState(null);
+  const selectionApiRef = React.useRef({});
+
+  const [logoIds, setLogoIds] = React.useState([]);
+
+  React.useEffect(() => {
+    if (
+      JSON.stringify(logoIds) !== JSON.stringify(logos.map((logo) => logo.id))
+    ) {
+      // Reset lastClick when logos ret reordered or modified
+      setLogoIds(logos.map((logo) => logo.id));
+      setLastClicked(null);
+    }
+  }, [logoIds, logos]);
+
+  React.useEffect(() => {
+    selectionApiRef.current = {
+      rangeSelection: (index, id, selected) => {
+        if (setLogoSelectionRange === undefined) {
+          toggleLogoSelection(id);
+          return;
+        }
+        if (lastClicked === null) {
+          toggleLogoSelection(id);
+          setLastClicked({ selected: !selected, index });
+        }
+
+        const newSelectionState =
+          selected === lastClicked.selected
+            ? !lastClicked.selected
+            : lastClicked.selected;
+        const minIndex = Math.min(index, lastClicked.index);
+        const maxIndex = Math.max(index, lastClicked.index);
+        setLogoSelectionRange(
+          logoIds.slice(minIndex, maxIndex + 1),
+          newSelectionState
+        );
+        setLastClicked({ selected: newSelectionState, index });
+      },
+      singleSelection: (index, id, selected) => {
+        toggleLogoSelection(id);
+        if (setLogoSelectionRange !== undefined) {
+          setLastClicked((prev) => ({ selected: !selected, index }));
+        }
+      },
+    };
+  }, [lastClicked, logoIds, setLogoSelectionRange, toggleLogoSelection]);
 
   return (
     <Box
@@ -114,19 +172,21 @@ const LogoGrid = (props) => {
         gridTemplateColumns: "repeat(auto-fill, minmax(200px, 1fr))",
         alignItems: "center",
         justifyContent: "center",
+        ...sx,
       }}
     >
-      {logos.map((logo) => (
+      {logos.map((logo, logoIndex) => (
         <LogoCard
           key={logo.id}
-          selected={logo.selected}
+          index={logoIndex}
+          selected={logo.selected || false}
           id={logo.id}
-          toggleLogoSelection={toggleLogoSelection}
           annotation_value={logo.annotation_value}
           image={logo.image.src}
           annotation_type={logo.annotation_type}
           distance={logo.distance}
           readOnly={readOnly}
+          selectionApiRef={selectionApiRef}
         />
       ))}
     </Box>

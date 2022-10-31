@@ -8,6 +8,7 @@ import {
   LogoAnnotationPage,
   LogoSearchPage,
   LogoUpdatePage,
+  LogoDeepSearch,
   ProductLogoAnnotationPage,
   SettingsPage,
   QuestionsPage,
@@ -122,6 +123,7 @@ export default function App() {
             path="/logos/product-search"
             element={<ProductLogoAnnotationPage />}
           />
+          <Route path="/logos/deep-search" element={<LogoDeepSearch />} />
 
           <Route path="/settings" element={<SettingsPage />} />
           <Route path="/questions" element={<QuestionsPage />} />
