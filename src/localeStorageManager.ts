@@ -16,6 +16,7 @@ const STORAGE_KEY = "hunger-game-settings";
 
 export const localSettingsKeys = {
   language: "lang",
+  colorMode: "colorMode",
   isDevMode: "devMode",
   visiblePages: "visiblePages",
   hideImages: "questions_hideImages",
@@ -101,6 +102,17 @@ export const getLang = () => {
     // @ts-ignore
     (navigator.language || navigator.userLanguage).split("-")[0]
   );
+};
+
+export const getColor = () => {
+  const settings = localSettings.fetch();
+
+  const browserSetting =
+    window.matchMedia &&
+    window.matchMedia("(prefers-color-scheme: dark)").matches
+      ? "dark"
+      : "light";
+  return settings[localSettingsKeys.colorMode] || browserSetting || "light";
 };
 
 const FAVORITE_STORAGE_KEY = "hunger-game-favorites";
