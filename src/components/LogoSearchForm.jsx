@@ -82,7 +82,7 @@ const LogoSearchForm = (props) => {
             </MenuItem>
           ))}
         </TextField>
-        {["label", "category"].includes(innerType) ? (
+        {["label", "category", "packaging"].includes(innerType) ? (
           <LabelFilter
             showKey
             fullWidth

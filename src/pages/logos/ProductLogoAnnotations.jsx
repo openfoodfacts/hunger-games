@@ -40,6 +40,7 @@ const AVAILABLE_TAG_TYPES = [
 const OFF_2_ROBOTOFF = {
   categories: "category",
   labels: "label",
+  packaging: "packaging",
 };
 const fetchProducts = async ({ page, filter }) => {
   try {
