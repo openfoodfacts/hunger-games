@@ -90,7 +90,7 @@ const LogoForm = (props) => {
         ))}
       </TextField>
 
-      {["label", "category"].includes(innerType) ? (
+      {["label", "category", "packaging"].includes(innerType) ? (
         <LabelFilter
           showKey
           value={innerValue}
