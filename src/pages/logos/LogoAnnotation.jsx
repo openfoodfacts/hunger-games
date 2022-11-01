@@ -6,6 +6,7 @@ import Button from "@mui/material/Button";
 import CircularProgress from "@mui/material/CircularProgress";
 import Typography from "@mui/material/Typography";
 import LoadingButton from "@mui/lab/LoadingButton";
+import { useTheme } from "@mui/material/styles";
 
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
@@ -111,6 +112,7 @@ const request = (selectedIds) => async (data) => {
 const DEFAULT_LOGO_STATE = { logos: [], isLoading: true, referenceLogo: {} };
 export default function LogoAnnotation() {
   const { t } = useTranslation();
+  const theme = useTheme();
 
   const [logoSearchParams] = useUrlParams(DEFAULT_LOGO_SEARCH_STATE);
 
@@ -260,6 +262,7 @@ export default function LogoAnnotation() {
   if (logoState.isLoading) {
     <p>{t("logos.loading")}</p>;
   }
+
   return (
     <Box sx={{ margin: "2% 10%" }}>
       <Typography
@@ -279,8 +282,7 @@ export default function LogoAnnotation() {
           top: 0,
           zIndex: 1,
           paddingY: 2,
-          background:
-            "linear-gradient(0deg, rgba(2,0,36,0) 0%, rgba(255,255,255,1) 25px, rgba(255,255,255,1) 100%)",
+          background: `linear-gradient(0deg, ${theme.palette.background.paper}00 0%, ${theme.palette.background.paper}FF 25px, ${theme.palette.background.paper}FF 100%)`,
           backdropFilter: "blur(5px)",
         }}
         elevation={0}

@@ -2,6 +2,7 @@ import * as React from "react";
 import { useTranslation } from "react-i18next";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
+import Link from "@mui/material/Link";
 
 export default function Insights() {
   const { t } = useTranslation();
@@ -20,16 +21,9 @@ export default function Insights() {
       <Typography variant="h4">{t("notfound.nopage")}</Typography>
       <Typography variant="body1" sx={{ mt: 2 }}>
         {t("notfound.redirect1")}{" "}
-        <Typography
-          component="a"
-          href="/questions"
-          sx={{
-            textDecoration: "none",
-            color: "#6559f6",
-          }}
-        >
+        <Link href="/questions" color="primary">
           {t("notfound.redirect2")}
-        </Typography>
+        </Link>
       </Typography>
     </Box>
   );

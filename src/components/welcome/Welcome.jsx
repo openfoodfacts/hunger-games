@@ -14,7 +14,7 @@ import {
   getTour,
 } from "../../localeStorageManager";
 
-const styles = {
+const modalStyles = {
   minWidth: "min(90%, 800px)",
   position: "absolute",
   left: "50%",
@@ -22,9 +22,12 @@ const styles = {
   transform: "translate(-50%, -50%)",
 };
 
-export const getSteps = ({ t, withSelector }) => [
+export const getSteps = ({ t, withSelector, theme }) => [
   {
-    style: styles,
+    style: {
+      ...modalStyles,
+      backgroundColor: theme?.palette?.background?.paper,
+    },
     content: () => (
       <Box>
         <Box sx={{ display: "flex" }}>
@@ -58,7 +61,10 @@ export const getSteps = ({ t, withSelector }) => [
     ),
   },
   {
-    style: styles,
+    style: {
+      ...modalStyles,
+      backgroundColor: theme?.palette?.background?.paper,
+    },
     selector: withSelector ? '[data-welcome-tour="questions"]' : undefined,
     content: () => (
       <Box>
@@ -123,7 +129,10 @@ export const getSteps = ({ t, withSelector }) => [
     ),
   },
   {
-    style: styles,
+    style: {
+      ...modalStyles,
+      backgroundColor: theme?.palette?.background?.paper,
+    },
     selector: withSelector ? '[data-welcome-tour="logos"]' : undefined,
     content: () => (
       <Box>
@@ -173,7 +182,10 @@ export const getSteps = ({ t, withSelector }) => [
     ),
   },
   {
-    style: styles,
+    style: {
+      ...modalStyles,
+      backgroundColor: theme?.palette?.background?.paper,
+    },
     selector: withSelector ? '[data-welcome-tour="eco-score"]' : undefined,
     content: () => (
       <Box>
@@ -229,6 +241,7 @@ export const getSteps = ({ t, withSelector }) => [
     ),
   },
   {
+    style: { backgroundColor: theme?.palette?.background?.paper },
     selector: withSelector ? '[data-welcome-tour="settings"]' : undefined,
     content: () => (
       <Box>
@@ -258,6 +271,7 @@ export const getSteps = ({ t, withSelector }) => [
     ),
   },
   {
+    style: { backgroundColor: theme?.palette?.background?.paper },
     selector: withSelector ? '[data-welcome-tour="tour"]' : undefined,
     content: () => (
       <Box>
@@ -305,8 +319,8 @@ const Welcome = () => {
   }, []);
 
   const steps = React.useMemo(
-    () => getSteps({ t, withSelector: isDesktop }),
-    [t, isDesktop]
+    () => getSteps({ t, withSelector: isDesktop, theme }),
+    [t, isDesktop, theme]
   );
   return (
     <>
