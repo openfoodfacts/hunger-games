@@ -26,7 +26,7 @@
     "saved_filters": "Filtri salvati",
     "contribution_modal": {
       "title": "I tuoi contributi sono importanti",
-      "information": "Hunger Games is an effort to leverage the results of our OCR. When you use Hunger Games by Open Food Facts, you improve our entire database which helps the community make better food choices. We gather your annotations and use them to make Open Food Facts more accurate and effecient.",
+      "information": "Hunger Games è uno sforzo per influenzare i risultati del nostro OCR. Quando utilizzi Hunger Games di Open Food Facts, migliori il nostro intero database, aiutando la community a compiere migliori scelte alimentari. Raccogliamo le tue annotazioni e le utilizziamo per rendere Open Food Facts più accurato ed efficiente.",
       "thank_you": "Grazie per aiutarci a migliorare Open Food Facts in modo che più persone possano usarlo facilmente."
     },
     "statistics": {
@@ -81,7 +81,7 @@
         "country": "paese",
         "brand": "marca",
         "popularity": "popolarità",
-        "campaign": "camp"
+        "campaign": "campagna"
       },
       "long_label": {
         "type": "Tipo di Domanda",
@@ -95,7 +95,7 @@
       "placeholders": {
         "value": "Valore (fanta, it:biologico,...)",
         "brand": "auchan, danone, herta, ...",
-        "campaign": "Annotation campaigns"
+        "campaign": "Campagne d'annotazione"
       },
       "actions": {
         "edit": "Modifica Filtri",
@@ -124,7 +124,7 @@
     "settings": "Impostazioni",
     "eco-score": "Eco-score",
     "nutriscore": "Nutri-Score",
-    "tour": "Show Tour",
+    "tour": "Mostra Tour",
     "logged_in_user": "Registrato come {{userName}}",
     "log_in": "Clicca qui per accedere"
   },
@@ -324,7 +324,7 @@
   "nutriscore": {
     "image_alt": "Immagine ritagliata",
     "label": "Annota il rilevamento del logo Nutriscore in blocchi.",
-    "description": "To do so, select all the images showing the correct/wrong Nutri-Score value ({{label}}), and click on the bottom buttons to say if you selected a set correct or wrong ones.",
+    "description": "Per farlo, seleziona tutte le immagini che mostrano il valore corretto/errato del Nutri-Score ({{label}}) e clicca sui pulsanti in basso per indicare se ne hai selezionato una serie corretta o errata.",
     "images_remaining": "Ancora {{remaining}} da annotare",
     "image_sizes": "Dimensioni dell'immagine",
     "zoom_on_logo": "Ingrandisci sul logo",

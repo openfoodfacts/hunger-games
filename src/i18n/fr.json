@@ -1,7 +1,7 @@
 {
   "home": {
     "game_selector": {
-      "title": "A quel jeu voulez-vous jouer ?",
+      "title": "À quel jeu voulez-vous jouer ?",
       "cards": {
         "questions": {
           "title": "Questions",
@@ -26,7 +26,7 @@
     "saved_filters": "Filtres enregistrés",
     "contribution_modal": {
       "title": "Votre contribution compte",
-      "information": "Hunger Games is an effort to leverage the results of our OCR. When you use Hunger Games by Open Food Facts, you improve our entire database which helps the community make better food choices. We gather your annotations and use them to make Open Food Facts more accurate and effecient.",
+      "information": "Hunger Games est une methode qui permet de tirer parti de nos résultats de ROC. Lorsque vous utilisez Hunger Games d'Open Food Facts, vous améliorez toute notre base de données, ce qui permets à la communauté de faire de meilleurs choix alimentaire. Nous collectons vos annotations et nous les utilisons afin de rendre Open Food Facts plus efficace et précis.",
       "thank_you": "Merci de nous aider à améliorer Open Food Facts afin que davantage de personnes puissent l'utiliser facilement."
     },
     "statistics": {
@@ -124,7 +124,7 @@
     "settings": "Paramètres",
     "eco-score": "Éco-Score",
     "nutriscore": "Nutri-Score",
-    "tour": "Show Tour",
+    "tour": "Faire une visite",
     "logged_in_user": "connecté en tant que {{userName}}",
     "log_in": "Cliquez pour vous connecter"
   },
@@ -199,7 +199,7 @@
     "language": "Langue",
     "save": "Enregistrer",
     "reportIssue": "Vous avez trouvé une erreur ? Merci de nous le faire savoir",
-    "dev_mode_title": "To get more options, activate the dev mode",
+    "dev_mode_title": "Pour obtenir plus d'options, activez le mode développeur",
     "dev_mode_label": "Mode développeur",
     "dev_page_toggle": "Afficher la page {{name}}"
   },
@@ -250,8 +250,8 @@
       },
       "page2": {
         "title": "Avertissement",
-        "text1": "If the crop contains multiple logos, do not select it.",
-        "text2": "If the crop contains only a partial part of a logo, you can select it"
+        "text1": "Si le recadrage contient plusieurs logos, veuillez ne pas le sélectionner.",
+        "text2": "Si le recadrage ne contient qu'une partie partielle du logo, vous pouvez le sélectionner"
       },
       "page3": {
         "title": "Valider",
@@ -323,11 +323,11 @@
   },
   "nutriscore": {
     "image_alt": "image recadrée",
-    "label": "Annotate Nutri-Score logo detection by batch.",
-    "description": "To do so, select all the images showing the correct/wrong Nutri-Score value ({{label}}), and click on the bottom buttons to say if you selected a set correct or wrong ones.",
+    "label": "Annotez la détection du logo Nutri-Score par lot.",
+    "description": "Pour faire cela, veuillez sélectionner toutes les images montrant la valeur Nutri-Score correct/incorrecte ({{label}}), et cliquez sur les boutons du bas afin d'indiquer si vous avez sélectionné un ensemble correct ou incorrect.",
     "images_remaining": "Encore {{remaining}} à annoter",
     "image_sizes": "Tailles des images",
-    "zoom_on_logo": "Zoom on logo",
+    "zoom_on_logo": "Zoomer sur le logo",
     "select_all": "Tout sélectionner",
     "deselect_all": "Tout désélectionner",
     "incorrect": "Faux",
