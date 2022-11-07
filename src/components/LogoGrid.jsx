@@ -50,9 +50,9 @@ const LogoCard = React.memo(
           margin: "20px auto 0 auto",
           boxSizing: "border-box",
           backgroundColor: selected
-            ? theme.palette.action.active
+            ? theme.palette.action.selected
             : annotation_type
-            ? theme.palette.action.disabled
+            ? theme.palette.action.disabledBackground
             : undefined,
           // border: selected ? `solid ${theme.palette.primary.main} ${theme.spacing(1)}` : undefined,
           position: "relative",
