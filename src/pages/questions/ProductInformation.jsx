@@ -159,17 +159,18 @@ const ProductInformation = ({ question }) => {
         return;
       }
       const product = result.data.product;
+      console.log(result.data.product);
       setProductData({
         code: question.barcode,
         productName: product?.product_name || "",
         brands: product?.brands || "?",
         ingredientsText: product?.ingredients_text || "?",
         countriesTags: product?.countries_tags
-          ? `${product?.countries_tags.join(", ")}.`
+          ? `${product?.countries_tags?.join?.(", ")}.`
           : "?",
         images: product?.images || {},
         categories: product?.categories || "?",
-        labels_tags: product?.labels_tags.join(", ") || "?",
+        labels_tags: product?.labels_tags?.join?.(", ") || "?",
         quantity: product?.quantity || "?",
         isLoading: false,
       });
