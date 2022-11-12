@@ -11,6 +11,8 @@ import LinkIcon from "@mui/icons-material/Link";
 import DeleteIcon from "@mui/icons-material/Delete";
 import DoneIcon from "@mui/icons-material/Done";
 import MuiLink from "@mui/material/Link";
+import { useTheme } from "@mui/material/styles";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 import { useTranslation } from "react-i18next";
 import {
@@ -23,6 +25,7 @@ import {
 import { reformatValueTag } from "../../utils";
 import robotoff from "../../robotoff";
 import { getQuestionSearchParams } from "../../components/QuestionFilter/useFilterSearch";
+import CroppedLogo from "../../components/CroppedLogo";
 
 // const getFullSizeImage = (src) => {
 //   if (!src) {
@@ -85,6 +88,9 @@ const QuestionDisplay = ({
   const valueTagExamplesURL = getValueTagExamplesURL(question);
   const [nbOfPotentialQuestion, setNbOfPotentialQuestions] =
     React.useState(null);
+
+  const theme = useTheme();
+  const isDesktop = useMediaQuery(theme.breakpoints.up("md"));
 
   React.useEffect(() => {
     if (
@@ -221,7 +227,11 @@ const QuestionDisplay = ({
         )}
       </Stack>
       <Divider />
-      <Box flexGrow={1} flexShrink={1} sx={{ height: 0, marginBottom: 1 }}>
+      <Box
+        flexGrow={1}
+        flexShrink={1}
+        sx={{ height: 0, marginBottom: 1, position: "relative" }}
+      >
         <img
           // TODO: use getFullSizeImage when the zoom is activated
           // src={getFullSizeImage(question.source_image_url)}
@@ -232,6 +242,18 @@ const QuestionDisplay = ({
           alt=""
           style={{ maxWidth: "100%", maxHeight: "100%" }}
         />
+        {isDesktop && (
+          <CroppedLogo
+            insightId={question.insight_id}
+            style={{
+              position: "absolute",
+              bottom: 0,
+              right: 0,
+              maxHeight: "75px",
+              maxWidth: "150px",
+            }}
+          />
+        )}
       </Box>
       <Stack direction="row" justifyContent="center" spacing={2} sx={{ mb: 1 }}>
         <Button
