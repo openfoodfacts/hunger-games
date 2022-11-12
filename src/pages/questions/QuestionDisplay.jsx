@@ -26,18 +26,19 @@ import { reformatValueTag } from "../../utils";
 import robotoff from "../../robotoff";
 import { getQuestionSearchParams } from "../../components/QuestionFilter/useFilterSearch";
 import CroppedLogo from "../../components/CroppedLogo";
+import ZoomableImage from "../../components/ZoomableImage";
 
-// const getFullSizeImage = (src) => {
-//   if (!src) {
-//     return "https://static.openfoodfacts.org/images/image-placeholder.png";
-//   }
-//   const needsFull = /\/[a-z_]+.[0-9]*.400.jpg$/gm.test(src);
+const getFullSizeImage = (src) => {
+  if (!src) {
+    return "https://static.openfoodfacts.org/images/image-placeholder.png";
+  }
+  const needsFull = /\/[a-z_]+.[0-9]*.400.jpg$/gm.test(src);
 
-//   if (needsFull) {
-//     return src.replace("400.jpg", "full.jpg");
-//   }
-//   return src.replace("400.jpg", "jpg");
-// };
+  if (needsFull) {
+    return src.replace("400.jpg", "full.jpg");
+  }
+  return src.replace("400.jpg", "jpg");
+};
 
 const getValueTagQuestionsURL = (filterState, question) => {
   if (
@@ -232,15 +233,19 @@ const QuestionDisplay = ({
         flexShrink={1}
         sx={{ height: 0, marginBottom: 1, position: "relative" }}
       >
-        <img
-          // TODO: use getFullSizeImage when the zoom is activated
-          // src={getFullSizeImage(question.source_image_url)}
+        <ZoomableImage
           src={
             question.source_image_url ||
             "https://static.openfoodfacts.org/images/image-placeholder.png"
           }
+          srcFull={getFullSizeImage(question.source_image_url)}
           alt=""
-          style={{ maxWidth: "100%", maxHeight: "100%" }}
+          style={{
+            maxWidth: "100%",
+            maxHeight: "100%",
+            margin: "auto",
+            display: "inline-block",
+          }}
         />
         {isDesktop && (
           <CroppedLogo

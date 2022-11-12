@@ -39,7 +39,12 @@ export default function Questions() {
   return (
     <Grid container spacing={2} p={2}>
       <Grid item xs={12} md={5}>
-        <Stack direction="column" sx={{ height: "calc(100vh - 76px)" }}>
+        <Stack
+          direction="column"
+          sx={{
+            height: { xs: "calc(100vh - 76px)", md: "calc(100vh - 110px)" },
+          }}
+        >
           <QuestionFilter
             filterState={filterState}
             setFilterState={setFilterState}

@@ -16,8 +16,6 @@ import TableCell from "@mui/material/TableCell";
 import TableRow from "@mui/material/TableRow";
 import OutlinedFlagIcon from "@mui/icons-material/OutlinedFlag";
 import FlagIcon from "@mui/icons-material/Flag";
-import Zoom from "react-medium-image-zoom";
-import "react-medium-image-zoom/dist/styles.css";
 import { useTranslation } from "react-i18next";
 import { NO_QUESTION_LEFT, SKIPPED_INSIGHT } from "../../const";
 import offService from "../../off";
@@ -33,6 +31,7 @@ import {
 import { CORRECT_INSIGHT, WRONG_INSIGHT } from "../../const";
 import externalApi from "../../externalApi";
 import DebugQuestion from "./DebugQuestion";
+import ZoomableImage from "../../components/ZoomableImage";
 import robotoff from "../../robotoff";
 
 const ADDITIONAL_INFO_TRANSLATION = {
@@ -341,14 +340,13 @@ const ProductInformation = ({ question }) => {
               key={src}
               style={{ display: "inline-flex", alignItems: "flex-start" }}
             >
-              <Zoom>
-                <img
-                  src={src}
-                  alt=""
-                  loading="lazy"
-                  style={{ maxWidth: 300, maxHeight: 300 }}
-                />
-              </Zoom>
+              <ZoomableImage
+                src={src}
+                imageProps={{
+                  loading: "lazy",
+                  style: { maxWidth: 300, maxHeight: 300 },
+                }}
+              />
               {flagged.includes(getImageId(src)) ? (
                 <Tooltip title={t("questions.unflag")}>
                   <IconButton
