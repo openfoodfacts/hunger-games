@@ -366,8 +366,8 @@ export const QuestionFilter = ({
           </Stack>
         </DialogActions>
       </Dialog>
-      {/* Form opening/validation/cancellation */}
 
+      {/* Edit filter on desktop only */}
       <Box sx={{ textAlign: "center", display: { xs: "none", md: "inherit" } }}>
         <Button
           variant="contained"
