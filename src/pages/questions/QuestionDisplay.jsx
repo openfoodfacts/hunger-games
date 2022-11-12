@@ -203,7 +203,7 @@ const QuestionDisplay = ({
             href={valueTagExamplesURL}
             target="_blank"
             rel="noreferrer"
-            sx={{ mb: 2 }}
+            sx={{ mb: 2, display: { xs: "none", md: "inherit" } }}
           >
             <div>{`${t("questions.see_examples")} ${
               question.insight_type

@@ -305,7 +305,7 @@ export const getSteps = ({ t, withSelector, theme }) => [
 const Welcome = () => {
   const { t } = useTranslation();
   const theme = useTheme();
-  const isDesktop = useMediaQuery(theme.breakpoints.up("sm"));
+  const isDesktop = useMediaQuery(theme.breakpoints.up("md"));
 
   const [isTourOpen, setIsTourOpen] = React.useState(false);
 
