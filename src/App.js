@@ -1,5 +1,6 @@
 import React from "react";
 import CssBaseline from "@mui/material/CssBaseline";
+import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { Routes, Route, useLocation } from "react-router-dom";
 import { useMatomo } from "@jonkoops/matomo-tracker-react";
 import axios from "axios";
@@ -8,6 +9,8 @@ import {
   LogoAnnotationPage,
   LogoSearchPage,
   LogoUpdatePage,
+  LogoDeepSearch,
+  ProductLogoAnnotationPage,
   SettingsPage,
   QuestionsPage,
   InsightsPage,
@@ -19,10 +22,17 @@ import {
 } from "./pages";
 import ResponsiveAppBar from "./components/ResponsiveAppBar";
 import DevModeContext from "./contexts/devMode";
-import { getIsDevMode, getVisiblePages } from "./localeStorageManager";
+import {
+  getColor,
+  getIsDevMode,
+  getVisiblePages,
+  localSettingsKeys,
+  localSettings,
+} from "./localeStorageManager";
 import LoginContext from "./contexts/login";
 import off from "./off";
 import { IS_DEVELOPMENT_MODE } from "./const";
+import ColorModeContext from "./contexts/colorMode";
 
 const ADMINS = [
   "alex-off",
@@ -99,35 +109,86 @@ export default function App() {
 
   const showFlaggedImage = ADMINS.includes(userState.userName);
 
+  const [mode, setMode] = React.useState(getColor);
+  const colorMode = React.useMemo(
+    () => ({
+      toggleColorMode: () => {
+        setMode((prevMode) => {
+          const newMode = prevMode === "light" ? "dark" : "light";
+          localSettings.update(localSettingsKeys.colorMode, newMode);
+          return newMode;
+        });
+      },
+    }),
+    []
+  );
+
+  const theme = createTheme({
+    palette: {
+      mode: mode,
+      success: {
+        main: "#8bc34a",
+        contrastText: "#ffffff",
+      },
+      error: {
+        main: "#ff5252",
+        contrastText: "#ffffff",
+      },
+      primary: {
+        main: "#ff8714",
+        contrastText: "#ffffff",
+      },
+      secondary: {
+        main: "#ffefb7",
+        contrastText: "rgba(0, 0, 0, 0.87)",
+      },
+    },
+    components: {
+      MuiLink: {
+        defaultProps: { color: "inherit" },
+      },
+    },
+  });
+
   return (
-    <LoginContext.Provider value={{ ...userState, refresh }}>
-      <DevModeContext.Provider
-        value={{
-          devMode,
-          setDevMode,
-          visiblePages,
-          setVisiblePages,
-        }}
-      >
-        <CssBaseline />
-        <ResponsiveAppBar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/eco-score" element={<EcoScorePage />} />
-          <Route path="/logos" element={<LogoAnnotationPage />} />
-          <Route path="/logos/search" element={<LogoSearchPage />} />
-          <Route path="/logos/:logoId" element={<LogoUpdatePage />} />
-          <Route path="/settings" element={<SettingsPage />} />
-          <Route path="/questions" element={<QuestionsPage />} />
-          <Route path="/insights" element={<InsightsPage />} />
-          <Route path="*" element={<NotFoundPage />} />
-          <Route path="/nutriscore" element={<NutriscoreValidator />} />
-          <Route path="/nutrition" element={<Nutrition />} />
-          {showFlaggedImage && (
-            <Route path="/flagged-images" element={<FlaggedImages />} />
-          )}
-        </Routes>
-      </DevModeContext.Provider>
-    </LoginContext.Provider>
+    <ColorModeContext.Provider value={colorMode}>
+      <ThemeProvider theme={theme}>
+        <LoginContext.Provider value={{ ...userState, refresh }}>
+          <DevModeContext.Provider
+            value={{
+              devMode,
+              setDevMode,
+              visiblePages,
+              setVisiblePages,
+            }}
+          >
+            <CssBaseline />
+            <ResponsiveAppBar />
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/eco-score" element={<EcoScorePage />} />
+              <Route path="/logos" element={<LogoAnnotationPage />} />
+              <Route path="/logos/search" element={<LogoSearchPage />} />
+              <Route path="/logos/:logoId" element={<LogoUpdatePage />} />
+              <Route
+                path="/logos/product-search"
+                element={<ProductLogoAnnotationPage />}
+              />
+              <Route path="/logos/deep-search" element={<LogoDeepSearch />} />
+
+              <Route path="/settings" element={<SettingsPage />} />
+              <Route path="/questions" element={<QuestionsPage />} />
+              <Route path="/insights" element={<InsightsPage />} />
+              <Route path="*" element={<NotFoundPage />} />
+              <Route path="/nutriscore" element={<NutriscoreValidator />} />
+              <Route path="/nutrition" element={<Nutrition />} />
+              {showFlaggedImage && (
+                <Route path="/flagged-images" element={<FlaggedImages />} />
+              )}
+            </Routes>
+          </DevModeContext.Provider>
+        </LoginContext.Provider>
+      </ThemeProvider>
+    </ColorModeContext.Provider>
   );
 }

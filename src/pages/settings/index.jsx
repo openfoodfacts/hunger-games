@@ -6,15 +6,23 @@ import Typography from "@mui/material/Typography";
 import Stack from "@mui/material/Stack";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import Switch from "@mui/material/Switch";
+import Button from "@mui/material/Button";
 import MuiLink from "@mui/material/Link";
+import Brightness4Icon from "@mui/icons-material/Brightness4";
+import Brightness7Icon from "@mui/icons-material/Brightness7";
+
+import { useTheme } from "@mui/material/styles";
 
 import { useTranslation } from "react-i18next";
 
 import DevModeContext from "../../contexts/devMode";
+import ColorModeContext from "../../contexts/colorMode";
 import { localSettings, localSettingsKeys } from "../../localeStorageManager";
 
 export default function Settings() {
   const { t, i18n } = useTranslation();
+  const theme = useTheme();
+  const colorMode = React.useContext(ColorModeContext);
 
   const [language, setLanguage] = React.useState(i18n.language);
 
@@ -81,6 +89,20 @@ export default function Settings() {
             labelPlacement="end"
           />
         ))}
+      {/* color mode */}
+      <Button
+        sx={{ ml: 1 }}
+        onClick={colorMode.toggleColorMode}
+        color="inherit"
+      >
+        {theme.palette.mode} mode
+        {theme.palette.mode === "dark" ? (
+          <Brightness7Icon sx={{ ml: 2 }} />
+        ) : (
+          <Brightness4Icon sx={{ ml: 2 }} />
+        )}
+      </Button>
+
       <div>
         <MuiLink
           href="https://github.com/openfoodfacts/hunger-games/issues"

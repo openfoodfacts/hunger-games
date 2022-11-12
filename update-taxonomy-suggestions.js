@@ -2,7 +2,11 @@ const fs = require("fs");
 const axios = require("axios");
 
 // Map locale folder name to the name used in the OFF api
-const taxonomyURLfileName = { category: "categories", label: "labels" };
+const taxonomyURLfileName = {
+  category: "categories",
+  packaging: "packagings",
+  label: "labels",
+};
 
 const LANG = ["fr", "en", "de", "es"];
 const LETTERS = [

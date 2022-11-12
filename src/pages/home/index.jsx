@@ -58,7 +58,7 @@ const Home = () => {
           <Box
             padding={{ xs: "20px", sm: "50px" }}
             sx={{
-              backgroundColor: theme.palette.secondary.main,
+              backgroundColor: theme.palette.action.selected,
             }}
           >
             <Stack
@@ -82,20 +82,14 @@ const Home = () => {
                   variant="contained"
                   href="https://world.openfoodfacts.org/cgi/login.pl"
                   sx={{
-                    backgroundColor: "white",
-                    color: "black",
                     margin: "0 20px",
                   }}
                 >
                   {t("home.account_band.log_in")}
                 </Button>
                 <Button
-                  variant="contained"
+                  variant="outlined"
                   href="https://world.openfoodfacts.org/cgi/user.pl"
-                  sx={{
-                    backgroundColor: "white",
-                    color: "black",
-                  }}
                 >
                   {t("home.account_band.sign_up")}
                 </Button>

@@ -90,12 +90,10 @@ const UpdateLogoForm = ({
         <img width="300px" src={cropURL} alt={t("logos.crop_image_title")} />
         <Stack direction="row">
           <Button
+            variant="contained"
             sx={{
-              maxWidth: 150,
+              width: 200,
               mr: 5,
-              background: "#3f50b5",
-              color: "white",
-              "&:hover": { color: "black" },
             }}
             onClick={() => {
               setIsImageOpen(true);
