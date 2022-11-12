@@ -283,6 +283,7 @@ export const QuestionFilter = ({
                 insightType={innerInsightType}
                 label={t("questions.filters.long_label.value")}
                 placeholder={t("questions.filters.placeholders.value")}
+                size="small"
               />
             ) : (
               <TextField
