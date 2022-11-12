@@ -176,27 +176,36 @@ const QuestionDisplay = ({
         }}
       >
         <Typography>{question?.question}</Typography>
-        {valueTagQuestionsURL ? (
-          <Badge
-            sx={{ marginY: 1 }}
-            badgeContent={nbOfPotentialQuestion}
-            color="primary"
-          >
-            <Button
-              sx={{ paddingX: 4 }}
-              component={Link}
-              to={valueTagQuestionsURL}
-              endIcon={<LinkIcon />}
-              variant="outlined"
+        <Box sx={{ display: "flex", alignItems: "center" }}>
+          {valueTagQuestionsURL ? (
+            <Badge
+              sx={{ marginY: 1 }}
+              badgeContent={nbOfPotentialQuestion}
+              color="primary"
             >
+              <Button
+                sx={{ paddingX: 4 }}
+                component={Link}
+                to={valueTagQuestionsURL}
+                endIcon={<LinkIcon />}
+                variant="outlined"
+              >
+                {question.value}
+              </Button>
+            </Badge>
+          ) : (
+            <Button sx={{ paddingX: 4, marginY: 1 }} variant="outlined">
               {question.value}
             </Button>
-          </Badge>
-        ) : (
-          <Button sx={{ paddingX: 4, marginY: 1 }} variant="outlined">
-            {question.value}
-          </Button>
-        )}
+          )}
+          {question.ref_image_url && (
+            <img
+              alt="logo example"
+              src={question.ref_image_url}
+              style={{ height: "36px", marginLeft: 8 }}
+            />
+          )}
+        </Box>
         {valueTagExamplesURL && (
           <MuiLink
             variant="body2"
