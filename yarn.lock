@@ -12946,11 +12946,6 @@ react-is@^18.0.0, react-is@^18.2.0:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-18.2.0.tgz#199431eeaaa2e09f86427efbb4f1473edb47609b"
   integrity sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==
 
-react-medium-image-zoom@^5.0.3:
-  version "5.0.3"
-  resolved "https://registry.yarnpkg.com/react-medium-image-zoom/-/react-medium-image-zoom-5.0.3.tgz#810f73444d4680df5108d41d5689b081b4d4e2ae"
-  integrity sha512-ARmYFwxeKsw31WRt9P64KvVX/458LgGsDXSdpZj0JuQEJlSz8qx0gqv7Ip753AkVpv1gwBbZgD8t7Wh/MtaFiQ==
-
 react-refresh@^0.11.0:
   version "0.11.0"
   resolved "https://registry.yarnpkg.com/react-refresh/-/react-refresh-0.11.0.tgz#77198b944733f0f1f1a90e791de4541f9f074046"
@@ -13080,6 +13075,11 @@ react-transition-group@^4.4.5:
     dom-helpers "^5.0.1"
     loose-envify "^1.4.0"
     prop-types "^15.6.2"
+
+react-zoom-pan-pinch@^2.1.3:
+  version "2.1.3"
+  resolved "https://registry.yarnpkg.com/react-zoom-pan-pinch/-/react-zoom-pan-pinch-2.1.3.tgz#3b84594200343136c0d4397c33fec38dc0ee06ad"
+  integrity sha512-a5AChOWhjo0RmxsNZXGQIlNh3e3nLU6m4V6M+6dlbPNk5d+MtMxgKWyA5zpR06Lp3OZkZVF9nR8JeWSvKwck9g==
 
 react@^18.2.0:
   version "18.2.0"
