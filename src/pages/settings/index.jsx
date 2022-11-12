@@ -79,14 +79,42 @@ export default function Settings() {
         />
       </div>
       {devMode &&
-        ["logos", "nutriscore", "insights"].map((pageUrl) => (
+        [
+          { pageUrl: "logos", pageName: "logos", isExperimental: false },
+          {
+            pageUrl: "logos/search",
+            pageName: "search logos",
+            isExperimental: false,
+          },
+          {
+            pageUrl: "logos/product-search",
+            pageName: "search product logos",
+            isExperimental: true,
+          },
+          {
+            pageUrl: "logos/deep-search",
+            pageName: "deep search logo",
+            isExperimental: true,
+          },
+          {
+            pageUrl: "nutriscore",
+            pageName: "nutriscore",
+            isExperimental: false,
+          },
+          { pageUrl: "insights", pageName: "insights", isExperimental: false },
+        ].map(({ pageUrl, pageName, isExperimental }) => (
           <FormControlLabel
             key={pageUrl}
             checked={visiblePages[pageUrl]}
             onChange={handleVisiblePagesChange(pageUrl)}
             control={<Switch />}
-            label={t("settings.dev_page_toggle", { name: pageUrl })}
+            label={`${t("settings.dev_page_toggle", { name: pageName })}${
+              isExperimental ? " (🚧 experimental)" : ""
+            }`}
             labelPlacement="end"
+            sx={{
+              marginInlineStart: `${2 * (pageUrl.split("/").length - 1)}px`,
+            }}
           />
         ))}
       {/* color mode */}
