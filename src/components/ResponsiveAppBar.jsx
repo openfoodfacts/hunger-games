@@ -12,8 +12,13 @@ import MenuItem from "@mui/material/MenuItem";
 import ListSubheader from "@mui/material/ListSubheader";
 import Tooltip from "@mui/material/Tooltip";
 import MuiLink from "@mui/material/Link";
+import Collapse from "@mui/material/Collapse";
+import List from "@mui/material/List";
+
 import SettingsIcon from "@mui/icons-material/Settings";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
+import ExpandLess from "@mui/icons-material/ExpandLess";
+import ExpandMore from "@mui/icons-material/ExpandMore";
 
 import DevModeContext from "../contexts/devMode";
 import LoginContext from "../contexts/login";
@@ -36,13 +41,80 @@ import Tour from "reactour";
 const pages = [
   { translationKey: "menu.games" },
   { url: "questions", translationKey: "menu.questions" },
-  { url: "logos", translationKey: "menu.logos", devModeOnly: true },
   { url: "eco-score", translationKey: "menu.eco-score" },
+  {
+    translationKey: "menu.logos",
+    children: [
+      {
+        url: "logos",
+        translationKey: "menu.logos-annotation",
+        devModeOnly: true,
+      },
+      {
+        url: "logos/search",
+        translationKey: "menu.logos-search",
+        devModeOnly: true,
+      },
+      {
+        url: "logos/product-search",
+        translationKey: "menu.logos-product-search",
+        devModeOnly: true,
+      },
+      {
+        url: "logos/deep-search",
+        translationKey: "menu.logos-deep-search",
+        devModeOnly: true,
+      },
+    ],
+  },
   { translationKey: "menu.manage" },
   { url: "insights", translationKey: "menu.insights", devModeOnly: true },
   { url: "nutriscore", translationKey: "menu.nutriscore", devModeOnly: true },
   { url: "settings", translationKey: "menu.settings", mobileOnly: true },
 ];
+
+const MultiPagesButton = ({
+  translationKey,
+  children,
+  isOpen,
+  toggleIsOpen,
+}) => {
+  const { t } = useTranslation();
+  const anchorEl = React.useRef(null);
+  return (
+    <>
+      <Button
+        ref={anchorEl}
+        color="inherit"
+        key={translationKey}
+        onClick={toggleIsOpen}
+        sx={{ my: 2, display: "block" }}
+      >
+        {t(translationKey)}
+      </Button>
+      <Menu
+        anchorEl={anchorEl.current}
+        open={isOpen}
+        onClose={toggleIsOpen}
+        sx={{ display: { xs: "none", md: "flex" } }}
+      >
+        {children.map((subPage) => (
+          <MenuItem
+            sx={{ pl: 4 }}
+            key={subPage.translationKey}
+            onClick={toggleIsOpen}
+            component={Link}
+            to={`/${subPage.url}`}
+          >
+            <Typography textAlign="center">
+              {t(subPage.translationKey)}
+            </Typography>
+          </MenuItem>
+        ))}
+      </Menu>
+    </>
+  );
+};
 
 const ResponsiveAppBar = () => {
   const { t } = useTranslation();
@@ -82,7 +154,9 @@ const ResponsiveAppBar = () => {
 
   const { isLoggedIn, userName, refresh } = React.useContext(LoginContext);
   const { devMode: isDevMode, visiblePages } = React.useContext(DevModeContext);
-  const displayedPages = pages.filter((page) => {
+  const [menuOpenState, setMenuOpenState] = React.useState({});
+
+  const isPageVisible = (page) => {
     if (page.devModeOnly) {
       return isDevMode && visiblePages[page.url];
     }
@@ -90,7 +164,21 @@ const ResponsiveAppBar = () => {
       return !isDesktop;
     }
     return true;
-  });
+  };
+
+  const displayedPages = pages
+    .map((page) => {
+      if (!page.children) {
+        return page;
+      }
+      return { ...page, children: page.children.filter(isPageVisible) };
+    })
+    .filter((page) => {
+      if (page.children !== undefined && page.children.length === 0) {
+        return false;
+      }
+      return isPageVisible(page);
+    });
 
   return (
     <AppBar position="static" color="secondary">
@@ -134,24 +222,76 @@ const ResponsiveAppBar = () => {
                 display: { xs: "block", md: "none" },
               }}
             >
-              {displayedPages.map((page) =>
-                page.url ? (
-                  <MenuItem
-                    key={page.translationKey}
-                    onClick={handleCloseNavMenu}
-                    component={Link}
-                    to={`/${page.url}`}
-                  >
-                    <Typography textAlign="center">
-                      {t(page.translationKey)}
-                    </Typography>
-                  </MenuItem>
-                ) : (
+              {displayedPages.map((page) => {
+                if (page.url) {
+                  return (
+                    <MenuItem
+                      key={page.translationKey}
+                      onClick={handleCloseNavMenu}
+                      component={Link}
+                      to={`/${page.url}`}
+                    >
+                      <Typography textAlign="center">
+                        {t(page.translationKey)}
+                      </Typography>
+                    </MenuItem>
+                  );
+                }
+                if (page.children) {
+                  return (
+                    <List
+                      component="div"
+                      disablePadding
+                      key={page.translationKey}
+                    >
+                      <MenuItem
+                        onClick={() =>
+                          setMenuOpenState((prev) => ({
+                            ...prev,
+                            [page.translationKey]: !prev[page.translationKey],
+                          }))
+                        }
+                      >
+                        <Typography textAlign="center">
+                          {t(page.translationKey)}
+                        </Typography>
+
+                        {menuOpenState[page.translationKey] ? (
+                          <ExpandLess />
+                        ) : (
+                          <ExpandMore />
+                        )}
+                      </MenuItem>
+                      <Collapse
+                        in={menuOpenState[page.translationKey]}
+                        timeout="auto"
+                        unmountOnExit
+                      >
+                        <List component="div" disablePadding>
+                          {page.children.map((subPage) => (
+                            <MenuItem
+                              sx={{ pl: 4 }}
+                              key={subPage.translationKey}
+                              onClick={handleCloseNavMenu}
+                              component={Link}
+                              to={`/${subPage.url}`}
+                            >
+                              <Typography textAlign="center">
+                                {t(subPage.translationKey)}
+                              </Typography>
+                            </MenuItem>
+                          ))}
+                        </List>
+                      </Collapse>
+                    </List>
+                  );
+                }
+                return (
                   <ListSubheader key={page.translationKey}>
                     {t(page.translationKey)}
                   </ListSubheader>
-                )
-              )}
+                );
+              })}
               <Tour
                 steps={steps}
                 startAt={0}
@@ -254,21 +394,40 @@ const ResponsiveAppBar = () => {
                 {t("menu.title")}
               </Typography>
 
-              {displayedPages.map((page) =>
-                page.url ? (
-                  <Button
-                    color="inherit"
-                    key={page.url}
-                    onClick={handleCloseNavMenu}
-                    sx={{ my: 2, display: "block" }}
-                    component={Link}
-                    to={`/${page.url}`}
-                    data-welcome-tour={page.url}
-                  >
-                    {t(page.translationKey)}
-                  </Button>
-                ) : null
-              )}
+              {displayedPages.map((page) => {
+                if (page.url) {
+                  return (
+                    <Button
+                      color="inherit"
+                      key={page.url}
+                      onClick={handleCloseNavMenu}
+                      sx={{ my: 2, display: "block" }}
+                      component={Link}
+                      to={`/${page.url}`}
+                      data-welcome-tour={page.url}
+                    >
+                      {t(page.translationKey)}
+                    </Button>
+                  );
+                }
+
+                if (page.children) {
+                  return (
+                    <MultiPagesButton
+                      {...page}
+                      isOpen={menuOpenState[page.translationKey]}
+                      toggleIsOpen={() =>
+                        setMenuOpenState((prev) => ({
+                          ...prev,
+                          [page.translationKey]: !prev[page.translationKey],
+                        }))
+                      }
+                    />
+                  );
+                }
+
+                return null;
+              })}
             </Box>
             <Box
               sx={{
