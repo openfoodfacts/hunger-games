@@ -83,6 +83,7 @@ const QuestionDisplay = ({
   answerQuestion,
   resetFilters,
   filterState,
+  productData,
 }) => {
   const { t } = useTranslation();
   const valueTagQuestionsURL = getValueTagQuestionsURL(filterState, question);
@@ -231,7 +232,11 @@ const QuestionDisplay = ({
       <Box
         flexGrow={1}
         flexShrink={1}
-        sx={{ height: 0, marginBottom: 1, position: "relative" }}
+        sx={{
+          height: `calc(100vh - ${isDesktop ? 461 : 445}px)`,
+          marginBottom: 1,
+          position: "relative",
+        }}
       >
         <ZoomableImage
           src={
@@ -241,13 +246,17 @@ const QuestionDisplay = ({
           srcFull={getFullSizeImage(question.source_image_url)}
           alt=""
           style={{
-            maxWidth: "100%",
-            maxHeight: "100%",
-            margin: "auto",
+            height: isDesktop ? "100%" : "calc(100% - 24px)",
             display: "inline-block",
           }}
+          imageProps={{
+            style: {
+              maxHeight: "100%",
+              maxWidth: "100%",
+            },
+          }}
         />
-        {isDesktop && (
+        {isDesktop ? (
           <CroppedLogo
             insightId={question.insight_id}
             style={{
@@ -258,6 +267,15 @@ const QuestionDisplay = ({
               maxWidth: "150px",
             }}
           />
+        ) : (
+          <Typography
+            sx={{
+              position: "absolute",
+              bottom: 0,
+            }}
+          >
+            {productData?.productName}
+          </Typography>
         )}
       </Box>
       <Stack direction="row" justifyContent="center" spacing={2} sx={{ mb: 1 }}>

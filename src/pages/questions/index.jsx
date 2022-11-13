@@ -8,8 +8,9 @@ import QuestionDisplay from "./QuestionDisplay";
 import ProductInformation from "./ProductInformation";
 import UserData from "./UserData";
 import { useQuestionBuffer } from "./useQuestionBuffer";
-import Divider from "@mui/material/Divider";
+import { useProductData } from "./utils";
 
+import Divider from "@mui/material/Divider";
 import Stack from "@mui/material/Stack";
 import Grid from "@mui/material/Grid";
 
@@ -25,6 +26,8 @@ export default function Questions() {
     preventAnnotation,
   } = useQuestionBuffer(filterState);
   const question = buffer[0] ?? null;
+
+  const productData = useProductData(question?.barcode);
 
   const resetFilters = React.useCallback(
     () =>
@@ -57,11 +60,12 @@ export default function Questions() {
             answerQuestion={answerQuestion}
             resetFilters={resetFilters}
             filterState={filterState}
+            productData={productData}
           />
         </Stack>
       </Grid>
       <Grid item xs={12} md={5}>
-        <ProductInformation question={question} />
+        <ProductInformation question={question} productData={productData} />
       </Grid>
       <Grid item xs={12} md={2}>
         <UserData
