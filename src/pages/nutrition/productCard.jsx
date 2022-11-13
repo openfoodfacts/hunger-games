@@ -1,9 +1,9 @@
 import * as React from "react";
 import { useTranslation } from "react-i18next";
-import Zoom from "react-medium-image-zoom";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
+import ZoomableImage from "../../components/ZoomableImage";
 import offService from "../../off";
 
 import { basicNutriments } from "./nutritionFields";
@@ -98,19 +98,18 @@ export default function ProductNutriments({ setNutriments, nutriments }) {
       {/*<Typography variant="p" component="p" sx={{alignSelf: 'center'}}>*/}
       {/*  PRODUCT DESCRIPTION IF NEEDED*/}
       {/*</Typography>*/}
-      <Zoom wrapStyle={{ height: "100%" }}>
-        <img
-          // TODO: use getFullSizeImage when the zoom is activated
-          // src={getFullSizeImage(question.source_image_url)}
-          src={pictureURL}
-          alt=""
-          style={{
-            maxWidth: "100%",
-            maxHeight: "100%",
-            border: "5px solid red",
-          }}
-        />
-      </Zoom>
+
+      <ZoomableImage
+        // TODO: use getFullSizeImage when the zoom is activated
+        // src={getFullSizeImage(question.source_image_url)}
+        src={pictureURL}
+        alt=""
+        style={{
+          maxWidth: "100%",
+          maxHeight: "100%",
+          border: "5px solid red",
+        }}
+      />
     </Box>
   );
 }

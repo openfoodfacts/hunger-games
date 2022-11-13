@@ -11,6 +11,8 @@ import LinkIcon from "@mui/icons-material/Link";
 import DeleteIcon from "@mui/icons-material/Delete";
 import DoneIcon from "@mui/icons-material/Done";
 import MuiLink from "@mui/material/Link";
+import { useTheme } from "@mui/material/styles";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 import { useTranslation } from "react-i18next";
 import {
@@ -23,18 +25,20 @@ import {
 import { reformatValueTag } from "../../utils";
 import robotoff from "../../robotoff";
 import { getQuestionSearchParams } from "../../components/QuestionFilter/useFilterSearch";
+import CroppedLogo from "../../components/CroppedLogo";
+import ZoomableImage from "../../components/ZoomableImage";
 
-// const getFullSizeImage = (src) => {
-//   if (!src) {
-//     return "https://static.openfoodfacts.org/images/image-placeholder.png";
-//   }
-//   const needsFull = /\/[a-z_]+.[0-9]*.400.jpg$/gm.test(src);
+const getFullSizeImage = (src) => {
+  if (!src) {
+    return "https://static.openfoodfacts.org/images/image-placeholder.png";
+  }
+  const needsFull = /\/[a-z_]+.[0-9]*.400.jpg$/gm.test(src);
 
-//   if (needsFull) {
-//     return src.replace("400.jpg", "full.jpg");
-//   }
-//   return src.replace("400.jpg", "jpg");
-// };
+  if (needsFull) {
+    return src.replace("400.jpg", "full.jpg");
+  }
+  return src.replace("400.jpg", "jpg");
+};
 
 const getValueTagQuestionsURL = (filterState, question) => {
   if (
@@ -79,12 +83,16 @@ const QuestionDisplay = ({
   answerQuestion,
   resetFilters,
   filterState,
+  productData,
 }) => {
   const { t } = useTranslation();
   const valueTagQuestionsURL = getValueTagQuestionsURL(filterState, question);
   const valueTagExamplesURL = getValueTagExamplesURL(question);
   const [nbOfPotentialQuestion, setNbOfPotentialQuestions] =
     React.useState(null);
+
+  const theme = useTheme();
+  const isDesktop = useMediaQuery(theme.breakpoints.up("md"));
 
   React.useEffect(() => {
     if (
@@ -176,34 +184,43 @@ const QuestionDisplay = ({
         }}
       >
         <Typography>{question?.question}</Typography>
-        {valueTagQuestionsURL ? (
-          <Badge
-            sx={{ marginY: 1 }}
-            badgeContent={nbOfPotentialQuestion}
-            color="primary"
-          >
-            <Button
-              sx={{ paddingX: 4 }}
-              component={Link}
-              to={valueTagQuestionsURL}
-              endIcon={<LinkIcon />}
-              variant="outlined"
+        <Box sx={{ display: "flex", alignItems: "center" }}>
+          {valueTagQuestionsURL ? (
+            <Badge
+              sx={{ marginY: 1 }}
+              badgeContent={nbOfPotentialQuestion}
+              color="primary"
             >
+              <Button
+                sx={{ paddingX: 4 }}
+                component={Link}
+                to={valueTagQuestionsURL}
+                endIcon={<LinkIcon />}
+                variant="outlined"
+              >
+                {question.value}
+              </Button>
+            </Badge>
+          ) : (
+            <Button sx={{ paddingX: 4, marginY: 1 }} variant="outlined">
               {question.value}
             </Button>
-          </Badge>
-        ) : (
-          <Button sx={{ paddingX: 4, marginY: 1 }} variant="outlined">
-            {question.value}
-          </Button>
-        )}
+          )}
+          {question.ref_image_url && (
+            <img
+              alt="logo example"
+              src={question.ref_image_url}
+              style={{ height: "36px", marginLeft: 8 }}
+            />
+          )}
+        </Box>
         {valueTagExamplesURL && (
           <MuiLink
             variant="body2"
             href={valueTagExamplesURL}
             target="_blank"
             rel="noreferrer"
-            sx={{ mb: 2 }}
+            sx={{ mb: 2, display: { xs: "none", md: "inherit" } }}
           >
             <div>{`${t("questions.see_examples")} ${
               question.insight_type
@@ -212,17 +229,54 @@ const QuestionDisplay = ({
         )}
       </Stack>
       <Divider />
-      <Box flexGrow={1} flexShrink={1} sx={{ height: 0, marginBottom: 1 }}>
-        <img
-          // TODO: use getFullSizeImage when the zoom is activated
-          // src={getFullSizeImage(question.source_image_url)}
+      <Box
+        flexGrow={1}
+        flexShrink={1}
+        sx={{
+          height: `calc(100vh - ${isDesktop ? 461 : 445}px)`,
+          marginBottom: 1,
+          position: "relative",
+        }}
+      >
+        <ZoomableImage
           src={
             question.source_image_url ||
             "https://static.openfoodfacts.org/images/image-placeholder.png"
           }
+          srcFull={getFullSizeImage(question.source_image_url)}
           alt=""
-          style={{ maxWidth: "100%", maxHeight: "100%" }}
+          style={{
+            height: isDesktop ? "100%" : "calc(100% - 24px)",
+            display: "inline-block",
+          }}
+          imageProps={{
+            style: {
+              maxHeight: "100%",
+              maxWidth: "100%",
+            },
+          }}
         />
+        {isDesktop ? (
+          <CroppedLogo
+            insightId={question.insight_id}
+            style={{
+              position: "absolute",
+              bottom: 0,
+              right: 0,
+              maxHeight: "75px",
+              maxWidth: "150px",
+            }}
+          />
+        ) : (
+          <Typography
+            sx={{
+              position: "absolute",
+              bottom: 0,
+            }}
+          >
+            {productData?.productName}
+          </Typography>
+        )}
       </Box>
       <Stack direction="row" justifyContent="center" spacing={2} sx={{ mb: 1 }}>
         <Button
