@@ -24,6 +24,7 @@ import {
 } from "../../const";
 import { reformatValueTag } from "../../utils";
 import robotoff from "../../robotoff";
+import { getShortcuts } from "../../l10n-shortcuts";
 import { getQuestionSearchParams } from "../../components/QuestionFilter/useFilterSearch";
 import CroppedLogo from "../../components/CroppedLogo";
 import ZoomableImage from "../../components/ZoomableImage";
@@ -91,6 +92,7 @@ const QuestionDisplay = ({
   const [nbOfPotentialQuestion, setNbOfPotentialQuestions] =
     React.useState(null);
 
+  const shortcuts = getShortcuts();
   const theme = useTheme();
   const isDesktop = useMediaQuery(theme.breakpoints.up("md"));
 
@@ -127,20 +129,20 @@ const QuestionDisplay = ({
     function handleShortCut(event) {
       const preventShortCut = event.target.tagName.toUpperCase() === "INPUT";
       if (question?.insight_id && !preventShortCut) {
-        switch (event.keyCode) {
-          case 75: // K
+        switch (event.key) {
+          case shortcuts.skip:
             answerQuestion({
               value: SKIPPED_INSIGHT,
               insightId: question.insight_id,
             });
             break;
-          case 79: // O
+          case shortcuts.yes:
             answerQuestion({
               value: CORRECT_INSIGHT,
               insightId: question.insight_id,
             });
             break;
-          case 78: // N
+          case shortcuts.no:
             answerQuestion({
               value: WRONG_INSIGHT,
               insightId: question.insight_id,
@@ -292,7 +294,7 @@ const QuestionDisplay = ({
           sx={{ display: "flex", flexDirection: "column", flexGrow: 1 }}
         >
           <DeleteIcon />
-          {t("questions.no")} (n)
+          {t("questions.no")} ({shortcuts.no})
         </Button>
         <Button
           onClick={() =>
@@ -307,7 +309,7 @@ const QuestionDisplay = ({
           size="large"
           sx={{ display: "flex", flexDirection: "column", flexGrow: 1 }}
         >
-          {t("questions.yes")} (o)
+          {t("questions.yes")} ({shortcuts.yes})
         </Button>
       </Stack>
       <Button
@@ -323,7 +325,7 @@ const QuestionDisplay = ({
         autoFocus
         sx={{ py: "1rem" }}
       >
-        {t("questions.skip")} (k)
+        {t("questions.skip")} ({shortcuts.skip})
       </Button>
     </Stack>
   );
