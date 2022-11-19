@@ -38,7 +38,7 @@ export default function Questions() {
       })),
     [setFilterState]
   );
-  console.log({ filterState });
+
   return (
     <Grid container spacing={2} p={2}>
       <Grid item xs={12} md={5}>
@@ -79,11 +79,7 @@ export default function Questions() {
         .slice(1, 5)
         .map((q) =>
           q.source_image_url ? (
-            <link
-              rel="prefetch"
-              key={q.source_image_url}
-              href={q.source_image_url}
-            />
+            <link rel="prefetch" key={q.insight_id} href={q.source_image_url} />
           ) : null
         )}
     </Grid>

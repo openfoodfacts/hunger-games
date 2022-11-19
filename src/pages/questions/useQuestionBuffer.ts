@@ -1,5 +1,5 @@
 import React from "react";
-import { NO_QUESTION_LEFT, SKIPPED_INSIGHT } from "../../const";
+import { NO_QUESTION_LEFT } from "../../const";
 import robotoff, { QuestionInterface } from "../../robotoff";
 
 const PAGE_SIZE = 10;
@@ -28,7 +28,6 @@ const initialState: ReducerStateInterface = {
   page: 1,
   questions: [],
   answers: [],
-  skippedIds: [],
   remainingQuestionNb: -1,
 };
 
@@ -43,7 +42,6 @@ export interface ReducerStateInterface {
   page: number;
   questions: Partial<QuestionInterface>[];
   answers: AnswerInterface[];
-  skippedIds: string[];
   remainingQuestionNb: number;
 }
 type Actions =
@@ -82,7 +80,6 @@ function reducer(state: ReducerStateInterface, action: Actions) {
         ...state,
         page: 1,
         questions: [],
-        skippedIds: [],
       };
 
     case "addToBuffer":
@@ -93,23 +90,13 @@ function reducer(state: ReducerStateInterface, action: Actions) {
       if (action.payload.isLastPage) {
         questionsToAdd.push({ insight_id: NO_QUESTION_LEFT });
       }
-      const newSkippedIds = state.skippedIds;
 
-      action.payload.removedInsightIds.forEach((id) => {
-        if (!newSkippedIds.includes(id)) {
-          // To consider insight skipped during a previous game
-          newSkippedIds.push(id);
-        }
-      });
-
-      const remainingQuestionNb =
-        action.payload.availableQuestionsNb - newSkippedIds.length;
+      const remainingQuestionNb = action.payload.availableQuestionsNb;
       return {
         ...state,
         page: questionsToAdd.length === 0 ? state.page + 1 : state.page,
         questions: [...state.questions, ...questionsToAdd],
         remainingQuestionNb,
-        skippedIds: [...newSkippedIds],
       };
 
     case "annotate":
@@ -138,11 +125,6 @@ function reducer(state: ReducerStateInterface, action: Actions) {
           },
         ],
         remainingQuestionNb: state.remainingQuestionNb - 1,
-        // skipped ids is used to correctly compute remainingQuestionNb after each data fetching
-        skippedIds: [
-          ...state.skippedIds,
-          ...(action.payload.value === -1 ? [action.payload.insightId] : []),
-        ],
       };
 
     case "sendAnswers":
@@ -151,10 +133,7 @@ function reducer(state: ReducerStateInterface, action: Actions) {
       const newAnswers = state.answers.map((answer) => {
         const { sendingTime, isPending, validationValue, insight_id } = answer;
         if (isPending && sendingTime <= minDate) {
-          if (
-            validationValue !== SKIPPED_INSIGHT &&
-            insight_id !== "NO_QUESTION_LEFT"
-          ) {
+          if (insight_id !== "NO_QUESTION_LEFT") {
             robotoff.annotate(insight_id!, validationValue);
           }
           return { ...answer, isPending: false };
@@ -183,9 +162,6 @@ function reducer(state: ReducerStateInterface, action: Actions) {
         remainingQuestionNb: state.remainingQuestionNb + 1,
         answers: state.answers.filter(
           (answer) => answer.insight_id !== action.payload.insightId
-        ),
-        skippedIds: state.skippedIds.filter(
-          (id) => id !== action.payload.insightId
         ),
       };
 
@@ -322,10 +298,7 @@ export const useQuestionBuffer = (
     const now = new Date().getTime();
 
     const timesToSending = bufferState.answers
-      .filter(
-        ({ isPending, validationValue }) =>
-          isPending && validationValue !== SKIPPED_INSIGHT
-      )
+      .filter(({ isPending }) => isPending)
       .map(({ sendingTime }) => sendingTime - now);
 
     if (timesToSending.length === 0) {
