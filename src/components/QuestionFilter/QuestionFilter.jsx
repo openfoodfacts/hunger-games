@@ -14,8 +14,10 @@ import FormControlLabel from "@mui/material/FormControlLabel";
 import Box from "@mui/material/Box";
 import Radio from "@mui/material/Radio";
 import Dialog from "@mui/material/Dialog";
-import IconButton from "@mui/material/IconButton";
+import { useTheme } from "@mui/material/styles";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
+import IconButton from "@mui/material/IconButton";
 import EditIcon from "@mui/icons-material/Edit";
 import StarIcon from "@mui/icons-material/Star";
 import StarBorderIcon from "@mui/icons-material/StarBorder";
@@ -26,6 +28,66 @@ import brands from "../../assets/brands.json";
 import { countryNames, insightTypesNames, campagnes } from "./const";
 import { DialogActions, DialogContent } from "@mui/material";
 
+const getChipsParams = (filterState, setFilterState, t) =>
+  [
+    {
+      key: "valueTag",
+      display: !!filterState?.valueTag,
+      label: `${t("questions.filters.short_label.value")}: ${
+        filterState?.valueTag
+      }`,
+      onDelete: () => {
+        setFilterState((state) => ({ ...state, valueTag: "" }));
+      },
+    },
+
+    {
+      key: "countryFilter",
+      display: !!filterState?.countryFilter,
+      label: `${t("questions.filters.short_label.country")}: ${
+        filterState?.countryFilter
+      }`,
+      onDelete: () => {
+        setFilterState((state) => ({ ...state, countryFilter: "" }));
+      },
+    },
+
+    {
+      key: "brandFilter",
+      display: !!filterState?.brandFilter,
+      label: `${t("questions.filters.short_label.brand")}: ${
+        filterState?.brandFilter
+      }`,
+      onDelete: () => {
+        setFilterState((state) => ({ ...state, brandFilter: "" }));
+      },
+    },
+    {
+      key: "sortByPopularity",
+      display: !!filterState?.sortByPopularity,
+      label: t("questions.filters.short_label.popularity"),
+      onDelete: () => {
+        setFilterState((state) => ({
+          ...state,
+          sortByPopularity: false,
+        }));
+      },
+    },
+    {
+      key: "campaign",
+      display: !!filterState?.campaign,
+      label: `${t("questions.filters.short_label.campaign")}: ${
+        filterState?.campaign
+      }`,
+      onDelete: () => {
+        setFilterState((state) => ({
+          ...state,
+          campaign: "",
+        }));
+      },
+    },
+  ].filter((item) => item.display);
+
 export const QuestionFilter = ({
   filterState,
   setFilterState,
@@ -33,6 +95,8 @@ export const QuestionFilter = ({
   toggleFavorite,
 }) => {
   const { t } = useTranslation();
+  const theme = useTheme();
+  const isDesktop = useMediaQuery(theme.breakpoints.up("md"));
 
   const [isOpen, setIsOpen] = React.useState(false);
 
@@ -66,14 +130,6 @@ export const QuestionFilter = ({
     setIsOpen(false);
   };
   const applyFilter = () => {
-    console.log({
-      insightType: innerInsightType,
-      valueTag: innerValueTag,
-      countryFilter: innerCountryFilter,
-      brandFilter: innerBrandFilter,
-      sortByPopularity: innerSortByPopularity,
-      campaign: innerCampaign,
-    });
     setFilterState({
       insightType: innerInsightType,
       valueTag: innerValueTag,
@@ -129,87 +185,62 @@ export const QuestionFilter = ({
     setFilterState((state) => ({ ...state, insightType: newValue }));
   };
 
+  const chipsParams = getChipsParams(filterState, setFilterState, t);
+
   return (
     <Box>
       {/* Chip indicating the current state of the filtering */}
-      <Stack direction="row" spacing={1}>
-        <Stack direction="row" flexWrap="wrap" spacing={1} alignItems="center">
-          <TextField
-            select
-            size="small"
-            value={filterState?.insightType}
-            onChange={handleInsightTypeChange}
-            label={t(`questions.insightTypeLabel`)}
-          >
-            {Object.keys(insightTypesNames).map((insightType) => (
-              <MenuItem key={insightType} value={insightType}>
-                {t(`questions.${insightType}`)}{" "}
-              </MenuItem>
-            ))}
-          </TextField>
-          {filterState?.valueTag && (
+      <Stack direction="row" spacing={1} alignItems="center">
+        <TextField
+          select
+          size="small"
+          sx={{
+            width: {
+              xs: "130px",
+              md: "auto",
+            },
+          }}
+          value={filterState?.insightType}
+          onChange={handleInsightTypeChange}
+          label={t(`questions.insightTypeLabel`)}
+        >
+          {Object.keys(insightTypesNames).map((insightType) => (
+            <MenuItem key={insightType} value={insightType}>
+              {t(`questions.${insightType}`)}{" "}
+            </MenuItem>
+          ))}
+        </TextField>
+
+        <Box sx={{ overflow: "hidden" }}>
+          {isDesktop ? (
+            chipsParams.map(({ key, display, label, onDelete }) => (
+              <Chip key={key} label={label} onDelete={onDelete} />
+            ))
+          ) : (
             <Chip
-              label={`${t("questions.filters.short_label.value")}: ${
-                filterState?.valueTag
-              }`}
-              onDelete={() => {
-                setFilterState((state) => ({ ...state, valueTag: "" }));
-              }}
+              label={t("questions.filters.active_filter_number", {
+                count: chipsParams.length,
+              })}
             />
           )}
-          {filterState?.countryFilter && (
-            <Chip
-              label={`${t("questions.filters.short_label.country")}: ${
-                filterState?.countryFilter
-              }`}
-              onDelete={() => {
-                setFilterState((state) => ({ ...state, countryFilter: "" }));
-              }}
-            />
-          )}
-          {filterState?.brandFilter && (
-            <Chip
-              label={`${t("questions.filters.short_label.brand")}: ${
-                filterState?.brandFilter
-              }`}
-              onDelete={() => {
-                setFilterState((state) => ({ ...state, brandFilter: "" }));
-              }}
-            />
-          )}
-          {filterState?.sortByPopularity && (
-            <Chip
-              label={`${t("questions.filters.short_label.popularity")}`}
-              onDelete={() => {
-                setFilterState((state) => ({
-                  ...state,
-                  sortByPopularity: false,
-                }));
-              }}
-            />
-          )}
-          {filterState?.campaign && (
-            <Chip
-              label={`${t("questions.filters.short_label.campaign")}: ${
-                filterState?.campaign
-              }`}
-              onDelete={() => {
-                setFilterState((state) => ({
-                  ...state,
-                  campaign: "",
-                }));
-              }}
-            />
-          )}
-          <IconButton
-            onClick={() => {
-              toggleFavorite();
-            }}
-            color="primary"
-          >
-            {isFavorite ? <StarIcon /> : <StarBorderIcon />}
-          </IconButton>
-        </Stack>
+        </Box>
+
+        <IconButton
+          onClick={() => {
+            toggleFavorite();
+          }}
+          color="primary"
+        >
+          {isFavorite ? <StarIcon /> : <StarBorderIcon />}
+        </IconButton>
+        <IconButton
+          onClick={() => setIsOpen(true)}
+          startIcon={<EditIcon />}
+          color="primary"
+          sx={{ display: { xs: "inherit", md: "none" } }}
+        >
+          <EditIcon />
+        </IconButton>
       </Stack>
 
       {/* The filter form itself */}
@@ -227,7 +258,7 @@ export const QuestionFilter = ({
                 {t("questions.filters.long_label.type")}
               </FormLabel>
               <RadioGroup
-                row
+                row={isDesktop}
                 aria-labelledby="insightType-radio-buttons"
                 name="insightTypes"
                 value={innerInsightType}
@@ -239,7 +270,7 @@ export const QuestionFilter = ({
                     value={insightType}
                     control={<Radio />}
                     label={t(`questions.${insightType}`)}
-                    labelPlacement="top"
+                    labelPlacement={isDesktop ? "top" : "end"}
                   />
                 ))}
               </RadioGroup>
@@ -252,6 +283,7 @@ export const QuestionFilter = ({
                 insightType={innerInsightType}
                 label={t("questions.filters.long_label.value")}
                 placeholder={t("questions.filters.placeholders.value")}
+                size="small"
               />
             ) : (
               <TextField
@@ -261,6 +293,7 @@ export const QuestionFilter = ({
                 }}
                 label={t("questions.filters.long_label.value")}
                 placeholder={t("questions.filters.placeholders.value")}
+                size="small"
               />
             )}
 
@@ -274,6 +307,7 @@ export const QuestionFilter = ({
                 <TextField
                   {...params}
                   label={t("questions.filters.long_label.country")}
+                  size="small"
                 />
               )}
             />
@@ -289,6 +323,7 @@ export const QuestionFilter = ({
                   {...params}
                   label={t("questions.filters.long_label.brand")}
                   placeholder={t("questions.filters.placeholders.brand")}
+                  size="small"
                 />
               )}
             />
@@ -301,6 +336,7 @@ export const QuestionFilter = ({
               }}
               label={t("questions.filters.long_label.campaign")}
               placeholder={t("questions.filters.placeholders.campaign")}
+              size="small"
             >
               {campagnes.map((val) => (
                 <MenuItem key={val} value={val}>
@@ -331,9 +367,9 @@ export const QuestionFilter = ({
           </Stack>
         </DialogActions>
       </Dialog>
-      {/* Form opening/validation/cancellation */}
 
-      <Box sx={{ textAlign: "center" }}>
+      {/* Edit filter on desktop only */}
+      <Box sx={{ textAlign: "center", display: { xs: "none", md: "inherit" } }}>
         <Button
           variant="contained"
           onClick={() => setIsOpen(true)}
