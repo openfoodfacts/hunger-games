@@ -17,7 +17,12 @@ import TableRow from "@mui/material/TableRow";
 import OutlinedFlagIcon from "@mui/icons-material/OutlinedFlag";
 import FlagIcon from "@mui/icons-material/Flag";
 import { useTranslation } from "react-i18next";
-import { NO_QUESTION_LEFT, SKIPPED_INSIGHT } from "../../const";
+import {
+  NO_QUESTION_LEFT,
+  SKIPPED_INSIGHT,
+  CORRECT_INSIGHT,
+  WRONG_INSIGHT,
+} from "../../const";
 import offService from "../../off";
 import IconButton from "@mui/material/IconButton";
 import Tooltip from "@mui/material/Tooltip";
@@ -28,7 +33,6 @@ import {
   getPageCustomization,
   getIsDevMode,
 } from "../../localeStorageManager";
-import { CORRECT_INSIGHT, WRONG_INSIGHT } from "../../const";
 import DebugQuestion from "./DebugQuestion";
 import ZoomableImage from "../../components/ZoomableImage";
 import robotoff from "../../robotoff";
@@ -163,7 +167,8 @@ const ProductInformation = (props) => {
                           pendingAnswers[otherQuestion?.insight_id];
                         if (
                           answer === CORRECT_INSIGHT ||
-                          answer === WRONG_INSIGHT
+                          answer === WRONG_INSIGHT ||
+                          answer === SKIPPED_INSIGHT
                         ) {
                           robotoff.annotate(otherQuestion?.insight_id, answer);
                           setOtherQuestionsState((prev) => ({

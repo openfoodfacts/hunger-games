@@ -156,7 +156,13 @@ const QuestionDisplay = ({
 
     window.addEventListener("keydown", handleShortCut);
     return () => window.removeEventListener("keydown", handleShortCut);
-  }, [question?.insight_id, answerQuestion]);
+  }, [
+    question?.insight_id,
+    answerQuestion,
+    shortcuts.skip,
+    shortcuts.yes,
+    shortcuts.no,
+  ]);
 
   if (question?.insight_id === NO_QUESTION_LEFT) {
     return (
