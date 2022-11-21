@@ -15,3 +15,5 @@ export { default as LogoDeepSearch } from "./logos/LogoDeepSearch";
 // experimental
 export { default as NutriscoreValidator } from "./nutriscoreValidator";
 export { default as FlaggedImages } from "./flaggedImages";
+
+export { default as PackagingPage } from "./packaging";

@@ -19,6 +19,7 @@ import {
   Home,
   Nutrition,
   FlaggedImages,
+  PackagingPage,
 } from "./pages";
 import ResponsiveAppBar from "./components/ResponsiveAppBar";
 import DevModeContext from "./contexts/devMode";
@@ -185,6 +186,8 @@ export default function App() {
               {showFlaggedImage && (
                 <Route path="/flagged-images" element={<FlaggedImages />} />
               )}
+
+              <Route path="/packaging" element={<PackagingPage />} />
             </Routes>
           </DevModeContext.Provider>
         </LoginContext.Provider>
