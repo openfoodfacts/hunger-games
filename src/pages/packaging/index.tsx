@@ -1,6 +1,8 @@
 import * as React from "react";
 import Autocomplete from "@mui/material/Autocomplete";
 import TextField from "@mui/material/TextField";
+import Paper from "@mui/material/Paper";
+import Button from "@mui/material/Button";
 
 import Table from "@mui/material/Table";
 import TableBody from "@mui/material/TableBody";
@@ -8,7 +10,6 @@ import TableCell from "@mui/material/TableCell";
 import TableContainer from "@mui/material/TableContainer";
 import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
-import Paper from "@mui/material/Paper";
 
 import { Option, useOptions } from "../../hooks/useOptions";
 import { getLang } from "../../localeStorageManager";
@@ -59,32 +60,40 @@ const Page = (props) => {
   const packagingShapes = useOptions("packaging_shapes", lang);
   const packagingRecycling = useOptions("packaging_recycling", lang);
 
-  const [rows, setRows] = React.useState([{}]);
+  const [rows, setRows] = React.useState([{ id: 1 }]);
   return (
-    <TableContainer component={Paper}>
-      <Table>
-        <TableHead>
-          <TableRow>
-            <TableCell>Nb per unit</TableCell>
+    <>
+      <TableContainer component={Paper}>
+        <Table>
+          <TableHead>
+            <TableRow>
+              <TableCell>Nb per unit</TableCell>
 
-            <TableCell>Shpae</TableCell>
+              <TableCell>Shape</TableCell>
 
-            <TableCell>Material</TableCell>
+              <TableCell>Material</TableCell>
 
-            <TableCell>Recycling</TableCell>
-          </TableRow>
-        </TableHead>
-        <TableBody>
-          {rows.map((row) => (
-            <Row
-              packagingMaterials={packagingMaterials}
-              packagingShapes={packagingShapes}
-              packagingRecycling={packagingRecycling}
-            />
-          ))}
-        </TableBody>
-      </Table>
-    </TableContainer>
+              <TableCell>Recycling</TableCell>
+            </TableRow>
+          </TableHead>
+          <TableBody>
+            {rows.map((row) => (
+              <Row
+                key={row.id}
+                packagingMaterials={packagingMaterials}
+                packagingShapes={packagingShapes}
+                packagingRecycling={packagingRecycling}
+              />
+            ))}
+          </TableBody>
+        </Table>
+      </TableContainer>
+      <Button
+        onClick={() => setRows((prev) => [...prev, { id: prev.length + 1 }])}
+      >
+        Add row
+      </Button>
+    </>
   );
 };
 
