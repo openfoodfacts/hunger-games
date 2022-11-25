@@ -1,5 +1,6 @@
 import React from "react";
 import { NO_QUESTION_LEFT } from "../../const";
+import { useMatomoTrackAnswerQuestion } from "../../hooks/matomoEvents";
 import robotoff, { QuestionInterface } from "../../robotoff";
 
 const PAGE_SIZE = 10;
@@ -195,16 +196,18 @@ export const useQuestionBuffer = (
     countryFilter,
     campaign,
   });
+  const trackAnswer = useMatomoTrackAnswerQuestion();
 
   const answerQuestion = React.useCallback(
     ({ value, insightId, pendingDelay = DEFAULT_ANSWER_DELAY }) => {
+      trackAnswer(value);
       seenInsight.current.push(insightId);
       dispatch({
         type: "annotate",
         payload: { insightId, value, pendingDelay },
       });
     },
-    []
+    [trackAnswer]
   );
 
   const preventAnnotation = React.useCallback((insightId) => {
