@@ -58,26 +58,46 @@ function getProductsToAnnotateUrl({
   }`;
 }
 
-export const useBuffer = (country?: string, creator?: string) => {
+export const useBuffer = (
+  country?: string,
+  creator?: string
+): [ProductDescription[], () => void] => {
   const [page, setPage] = React.useState(1);
-  const [data, setData] = React.useState<ProductDescription[]>([]);
+  const [data, setData] = React.useState<ProductDescription[]>(null);
 
+  const url = getProductsToAnnotateUrl({ page, country, creator });
+
+  const canReset = React.useRef(false);
   React.useEffect(() => {
-    setData([]);
-    setPage(1);
+    console.log("effect");
+    if (canReset.current) {
+      console.log("set []");
+      setData([]);
+      setPage(1);
+    }
   }, [country, creator]);
 
   React.useEffect(() => {
-    if (data.length > 0) {
-      return;
-    }
-    const url = getProductsToAnnotateUrl({ page, country, creator });
-
-    axios.get(url).then(({ data }) => {
-      setData(data.products);
+    if (data !== null && data.length === 0) {
       setPage((p) => p + 1);
-    });
+    }
   }, [data]);
 
-  return data;
+  React.useEffect(() => {
+    let isValid = true;
+    axios.get(url).then(({ data }) => {
+      if (isValid) {
+        setData(data.products);
+        canReset.current = true;
+      }
+    });
+    return () => {
+      isValid = false;
+    };
+  }, [url]);
+
+  const next = () =>
+    setData((prev) => (prev && prev.length > 0 ? prev.slice(1) : prev));
+
+  return [data, next];
 };
