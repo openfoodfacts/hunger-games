@@ -72,7 +72,12 @@ type Actions =
         insightId: string;
       };
     }
-  | { type: "sendAnswers" };
+  | {
+      type: "sendAnswers";
+      payload: {
+        trackAnswer: (value: number) => void;
+      };
+    };
 
 function reducer(state: ReducerStateInterface, action: Actions) {
   switch (action.type) {
@@ -135,6 +140,7 @@ function reducer(state: ReducerStateInterface, action: Actions) {
         const { sendingTime, isPending, validationValue, insight_id } = answer;
         if (isPending && sendingTime <= minDate) {
           if (insight_id !== "NO_QUESTION_LEFT") {
+            action.payload.trackAnswer(validationValue);
             robotoff.annotate(insight_id!, validationValue);
           }
           return { ...answer, isPending: false };
@@ -200,14 +206,13 @@ export const useQuestionBuffer = (
 
   const answerQuestion = React.useCallback(
     ({ value, insightId, pendingDelay = DEFAULT_ANSWER_DELAY }) => {
-      trackAnswer(value);
       seenInsight.current.push(insightId);
       dispatch({
         type: "annotate",
         payload: { insightId, value, pendingDelay },
       });
     },
-    [trackAnswer]
+    []
   );
 
   const preventAnnotation = React.useCallback((insightId) => {
@@ -311,10 +316,10 @@ export const useQuestionBuffer = (
     const nextSending = Math.max(0, Math.min(...timesToSending));
 
     const timer = setTimeout(() => {
-      dispatch({ type: "sendAnswers" });
+      dispatch({ type: "sendAnswers", payload: { trackAnswer } });
     }, nextSending);
     return () => clearTimeout(timer);
-  }, [bufferState.answers]);
+  }, [bufferState.answers, trackAnswer]);
 
   return {
     answerQuestion,
