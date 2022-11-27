@@ -17,6 +17,7 @@ import { Option, useOptions } from "../../hooks/useOptions";
 import { getLang } from "../../localeStorageManager";
 import ZoomableImage from "../../components/ZoomableImage";
 import { getImagesUrls } from "../questions/utils";
+import axios from "axios";
 
 type CustomProps = {
   options: Option[];
@@ -33,7 +34,6 @@ const CustomAutoComplet = (props: CustomProps) => {
       value={value}
       onChange={onChange}
       disablePortal
-      // sx={{ width: 300 }}
       renderInput={(params) => <TextField {...params} />}
       filterOptions={(options, { inputValue }) => {
         return options.filter((option) =>
@@ -171,7 +171,23 @@ const Row = (props) => {
     </TableRow>
   );
 };
-const Page = (props) => {
+
+const formatData = (innerRows) => {
+  const rep = {};
+
+  innerRows.forEach(({ material, number, recycling, shape }, index) => {
+    rep[`packaging_${index + 1}_number_of_units`] = number;
+    rep[`packaging_${index + 1}_shape`] = shape;
+    rep[`packaging_${index + 1}_material`] = material;
+    rep[`packaging_${index + 1}_recycling`] = recycling;
+  });
+
+  rep["packaging_max"] = innerRows.length;
+
+  return rep;
+};
+
+const Page = () => {
   const lang = getLang();
   const packagingMaterials = useOptions("packaging_materials", lang);
   const packagingShapes = useOptions("packaging_shapes", lang);
@@ -185,9 +201,12 @@ const Page = (props) => {
   const product = data?.[0] ?? null;
   React.useEffect(() => {
     if (product) {
-      setRows(
-        product.packagings.map((item, index) => ({ id: index, ...item }))
-      );
+      const newRows = product.packagings.map((item, index) => ({
+        id: index,
+        ...item,
+      }));
+      setRows(newRows);
+      setInnerRows(newRows);
     }
   }, [product]);
 
@@ -211,7 +230,14 @@ const Page = (props) => {
       <form
         onSubmit={(event) => {
           event.preventDefault();
-          console.log(`Should send: ${JSON.stringify(innerRows, null, 2)}`);
+          axios.post(
+            "https://world.openfoodfacts.dev/api/v3",
+            new URLSearchParams({
+              ...formatData(innerRows),
+              code: `${product.code}`,
+            }),
+            { withCredentials: true }
+          );
         }}
       >
         <Stack spacing={1} direction={{ xs: "column", md: "row" }}>
@@ -236,16 +262,16 @@ const Page = (props) => {
                     packagingMaterials={packagingMaterials}
                     packagingShapes={packagingShapes}
                     packagingRecycling={packagingRecycling}
-                    updateRow={(toUpsert) =>
-                      setInnerRows((prev) =>
-                        prev.map((r) => {
+                    updateRow={(toUpsert) => {
+                      setInnerRows((prev) => {
+                        return prev.map((r) => {
                           if (r.id !== row.id) {
                             return r;
                           }
                           return { ...r, ...toUpsert };
-                        })
-                      )
-                    }
+                        });
+                      });
+                    }}
                     {...row}
                   />
                 ))}
@@ -253,7 +279,7 @@ const Page = (props) => {
             </Table>
             <Button
               onClick={() =>
-                setRows((prev) => [
+                setInnerRows((prev) => [
                   ...prev,
                   {
                     id: prev.length + 1,
