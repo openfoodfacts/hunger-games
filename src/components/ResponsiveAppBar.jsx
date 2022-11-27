@@ -181,7 +181,7 @@ const ResponsiveAppBar = () => {
     });
 
   return (
-    <AppBar position="static" color="#f6f3f0">
+    <AppBar position="static" color="secondary">
       <Container maxWidth={null}>
         <Toolbar disableGutters>
           {/* Mobile content */}

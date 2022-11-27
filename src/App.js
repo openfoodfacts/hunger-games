@@ -139,7 +139,7 @@ export default function App() {
         contrastText: "#ffffff",
       },
       secondary: {
-        main: "#ffefb7",
+        main: "#f6f3f0",
         contrastText: "rgba(0, 0, 0, 0.87)",
       },
     },
