@@ -104,7 +104,6 @@ const Opportunities = (props) => {
     robotoff
       .getUnansweredValues({ type, campaign, country, page, count: pageSize })
       .then(({ data }) => {
-        console.log(data);
         if (isValid) {
           setRemainingQuestions((prev) => [...prev, ...data.questions]);
           setIsLoading(false);
