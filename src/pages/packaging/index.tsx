@@ -4,6 +4,8 @@ import TextField from "@mui/material/TextField";
 import Paper from "@mui/material/Paper";
 import Button from "@mui/material/Button";
 import Stack from "@mui/material/Stack";
+import Link from "@mui/material/Link";
+import Typography from "@mui/material/Typography";
 
 import Table from "@mui/material/Table";
 import TableBody from "@mui/material/TableBody";
@@ -12,12 +14,18 @@ import TableContainer from "@mui/material/TableContainer";
 import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 
+import EditIcon from "@mui/icons-material/Edit";
+import VisibilityIcon from "@mui/icons-material/Visibility";
+
+import axios from "axios";
+
 import { useBuffer } from "./useBuffer";
 import { Option, useOptions } from "../../hooks/useOptions";
 import { getLang } from "../../localeStorageManager";
 import ZoomableImage from "../../components/ZoomableImage";
 import { getImagesUrls } from "../questions/utils";
-import axios from "axios";
+import offService from "../../off";
+import { useTranslation } from "react-i18next";
 
 type CustomProps = {
   options: Option[];
@@ -52,7 +60,7 @@ const getOption = (options: Option[], key: string | null) => {
     return null;
   }
   const index = options.findIndex((option) => option.value === key);
-  console.log({ index });
+
   if (index >= 0) {
     return options[index];
   }
@@ -173,21 +181,38 @@ const Row = (props) => {
 };
 
 const formatData = (innerRows) => {
-  const rep = {};
+  const packagings = innerRows
+    .map(({ material, number, recycling, shape }, index) => {
+      const rep = {};
 
-  innerRows.forEach(({ material, number, recycling, shape }, index) => {
-    rep[`packaging_${index + 1}_number_of_units`] = number;
-    rep[`packaging_${index + 1}_shape`] = shape;
-    rep[`packaging_${index + 1}_material`] = material;
-    rep[`packaging_${index + 1}_recycling`] = recycling;
-  });
+      if (number && !isNaN(Number.parseInt(number))) {
+        rep["number_of_units"] = Number.parseInt(number);
+      }
+      if (shape) {
+        rep[`shape`] = { id: shape };
+      }
+      if (material) {
+        rep[`material`] = { id: material };
+      }
+      if (recycling) {
+        rep[`recycling`] = { id: recycling };
+      }
 
-  rep["packaging_max"] = innerRows.length;
+      if (Object.keys(rep).length > 0) {
+        return rep;
+      }
+      return null;
+    })
+    .filter((x) => x !== null);
 
-  return rep;
+  if (packagings.length === 0) {
+    return {};
+  }
+  return { product: { fields: "updated", packagings } };
 };
 
 const Page = () => {
+  const { t } = useTranslation();
   const lang = getLang();
   const packagingMaterials = useOptions("packaging_materials", lang);
   const packagingShapes = useOptions("packaging_shapes", lang);
@@ -230,12 +255,9 @@ const Page = () => {
       <form
         onSubmit={(event) => {
           event.preventDefault();
-          axios.post(
-            "https://world.openfoodfacts.dev/api/v3",
-            new URLSearchParams({
-              ...formatData(innerRows),
-              code: `${product.code}`,
-            }),
+          axios.patch(
+            `https://world.openfoodfacts.net/api/v3/product/${product.code}`,
+            formatData(innerRows),
             { withCredentials: true }
           );
         }}
@@ -278,7 +300,17 @@ const Page = () => {
               </TableBody>
             </Table>
             <Button
-              onClick={() =>
+              onClick={() => {
+                setRows((prev) => [
+                  ...prev,
+                  {
+                    id: prev.length + 1,
+                    material: null,
+                    number: null,
+                    recycling: null,
+                    shape: null,
+                  },
+                ]);
                 setInnerRows((prev) => [
                   ...prev,
                   {
@@ -288,8 +320,8 @@ const Page = () => {
                     recycling: null,
                     shape: null,
                   },
-                ])
-              }
+                ]);
+              }}
             >
               Add row
             </Button>
@@ -318,6 +350,31 @@ const Page = () => {
           </Button>
         </Stack>
       </form>
+      <Stack direction="row" spacing={2}>
+        <Typography>{product?.product_name}</Typography>
+        <Button
+          size="small"
+          component={Link}
+          target="_blank"
+          href={`${offService.getProductUrl(product.code)}#environment`}
+          variant="outlined"
+          startIcon={<VisibilityIcon />}
+          sx={{ minWidth: 150 }}
+        >
+          {t("questions.view")}
+        </Button>
+        <Button
+          size="small"
+          component={Link}
+          target="_blank"
+          href={offService.getProductEditUrl(product.code)}
+          variant="contained"
+          startIcon={<EditIcon />}
+          sx={{ ml: 2, minWidth: 150 }}
+        >
+          {t("questions.edit")}
+        </Button>
+      </Stack>
     </>
   );
 };

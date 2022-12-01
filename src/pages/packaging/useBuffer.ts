@@ -33,7 +33,7 @@ function getProductsToAnnotateUrl({
   code = "",
 }: Parameters) {
   if (code) {
-    return `https://world.openfoodfacts.org/api/v0/product/${code}.json?fields=code,lang,image_packaging_url,product_name,packagings,images,creator,countries`;
+    return `https://world.openfoodfacts.org/api/v3/product/${code}.json?fields=code,lang,image_packaging_url,product_name,packagings,images,creator,countries`;
   }
   let creatorTagNumber = 2;
   if (country) {
