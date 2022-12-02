@@ -279,13 +279,20 @@ const Page = () => {
       </Stack>
 
       <Box>
-        <Stack spacing={1} direction={{ xs: "column", md: "row" }}>
+        <Stack
+          spacing={1}
+          alignItems={{
+            xs: "flex-start",
+            md: "flex-end",
+          }}
+          direction={{ xs: "column", md: "row" }}
+        >
           <img src={product.image_packaging_url} alt="" />
           <TableContainer component={Paper}>
             <Table>
               <TableHead>
                 <TableRow>
-                  <TableCell>Nb per unit</TableCell>
+                  <TableCell sx={{ width: 100 }}>Nb per unit</TableCell>
 
                   <TableCell>Shape</TableCell>
 
