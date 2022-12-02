@@ -76,6 +76,9 @@
     "remaining_annotations": "Întrebări rămase",
     "annotated_annotations": "Adnotat",
     "filters": {
+      "active_filter_number": "+{{count}} filtre",
+      "active_filter_number_one": "+{{count}} filtru",
+      "active_filter_number_zero": "fără filtru",
       "short_label": {
         "value": "valoare",
         "country": "tara",
@@ -118,6 +121,10 @@
     "games": "Jocuri",
     "questions": "Întrebări",
     "logos": "Logo",
+    "logos-annotation": "Adnotare logo",
+    "logos-search": "Căutare Logo-uri",
+    "logos-product-search": "Adnotare pe produse",
+    "logos-deep-search": "Adnotare infinită",
     "manage": "Administrează",
     "insights": "Perspective",
     "nutritions": "Valori nutriționale",

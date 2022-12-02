@@ -76,6 +76,9 @@
     "remaining_annotations": "Оставащи въпроси",
     "annotated_annotations": "Пояснено",
     "filters": {
+      "active_filter_number": "+{{count}} филтъра",
+      "active_filter_number_one": "+{{count}} филтър",
+      "active_filter_number_zero": "без филтър",
       "short_label": {
         "value": "стойност",
         "country": "страна",
@@ -118,13 +121,17 @@
     "games": "Игри",
     "questions": "Въпроси",
     "logos": "Емблеми",
+    "logos-annotation": "Logos annotation",
+    "logos-search": "Търсене на лога",
+    "logos-product-search": "Annotation per products",
+    "logos-deep-search": "Infinit annotation",
     "manage": "Управление",
     "insights": "Задълбочен анализ",
     "nutritions": "Хранителни стойности",
     "settings": "Настройки",
     "eco-score": "Eco-score",
     "nutriscore": "Nutri-Score",
-    "tour": "Show Tour",
+    "tour": "Турне",
     "logged_in_user": "влязъл като {{userName}}",
     "log_in": "щракни, за да влезеш"
   },

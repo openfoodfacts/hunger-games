@@ -76,6 +76,9 @@
     "remaining_annotations": "Remaining questions",
     "annotated_annotations": "مشروح",
     "filters": {
+      "active_filter_number": "+{{count}} فلاتر",
+      "active_filter_number_one": "+{{count}} فلتر",
+      "active_filter_number_zero": "لا يوجد فلتر",
       "short_label": {
         "value": "قيمة",
         "country": "الدولة",
@@ -118,6 +121,10 @@
     "games": "نبتبنرترمر",
     "questions": "أسئلة",
     "logos": "Logos",
+    "logos-annotation": "شرح اللوغو",
+    "logos-search": "بحث اللوغو",
+    "logos-product-search": "الشرح لكل منتج",
+    "logos-deep-search": "شرح تفصيلي جدا",
     "manage": "يدير",
     "insights": "تاريخ انتهاء صلاحية",
     "nutritions": "حقائق غذائية",
