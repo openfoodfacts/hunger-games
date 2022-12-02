@@ -76,6 +76,9 @@
     "remaining_annotations": "Resterende vragen",
     "annotated_annotations": "Geannoteerd",
     "filters": {
+      "active_filter_number": "+{{count}} filters",
+      "active_filter_number_one": "+{{count}} filter",
+      "active_filter_number_zero": "geen filter",
       "short_label": {
         "value": "waarde",
         "country": "land",
@@ -118,6 +121,10 @@
     "games": "Spellen",
     "questions": "Vragen",
     "logos": "Logo's",
+    "logos-annotation": "Logo's annotatie",
+    "logos-search": "Logo's zoeken",
+    "logos-product-search": "Annotatie per product",
+    "logos-deep-search": "Oneindige annotatie",
     "manage": "Beheer",
     "insights": "Inzichten",
     "nutritions": "Voedingswaarden",

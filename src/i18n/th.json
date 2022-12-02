@@ -76,6 +76,9 @@
     "remaining_annotations": "Remaining questions",
     "annotated_annotations": "Annotated",
     "filters": {
+      "active_filter_number": "+{{count}} filters",
+      "active_filter_number_one": "+{{count}} filter",
+      "active_filter_number_zero": "no filter",
       "short_label": {
         "value": "value",
         "country": "ประเทศ",
@@ -118,6 +121,10 @@
     "games": "Games",
     "questions": "คำถาม",
     "logos": "Logos",
+    "logos-annotation": "Logos annotation",
+    "logos-search": "Logos search",
+    "logos-product-search": "Annotation per products",
+    "logos-deep-search": "Infinit annotation",
     "manage": "จัดการ",
     "insights": "ข้อมูลเชิงลึก",
     "nutritions": "ข้อมูลโภชนาการ",

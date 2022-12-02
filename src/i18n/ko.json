@@ -76,6 +76,9 @@
     "remaining_annotations": "남은 질문",
     "annotated_annotations": "주석 달기",
     "filters": {
+      "active_filter_number": "+{{count}} filters",
+      "active_filter_number_one": "+{{count}} filter",
+      "active_filter_number_zero": "no filter",
       "short_label": {
         "value": "값",
         "country": "국가",
@@ -118,6 +121,10 @@
     "games": "게임",
     "questions": "질문",
     "logos": "로고",
+    "logos-annotation": "Logos annotation",
+    "logos-search": "Logos search",
+    "logos-product-search": "Annotation per products",
+    "logos-deep-search": "Infinit annotation",
     "manage": "관리",
     "insights": "인사이트",
     "nutritions": "영양 성분 표시",
