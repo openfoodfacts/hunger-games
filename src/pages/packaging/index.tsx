@@ -2,6 +2,7 @@ import * as React from "react";
 import Autocomplete from "@mui/material/Autocomplete";
 import TextField from "@mui/material/TextField";
 import Paper from "@mui/material/Paper";
+import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Stack from "@mui/material/Stack";
 import Link from "@mui/material/Link";
@@ -252,16 +253,7 @@ const Page = () => {
         ))}
       </Stack>
 
-      <form
-        onSubmit={(event) => {
-          event.preventDefault();
-          axios.patch(
-            `https://world.openfoodfacts.org/api/v3/product/${product.code}`,
-            formatData(innerRows),
-            { withCredentials: true }
-          );
-        }}
-      >
+      <Box>
         <Stack spacing={1} direction={{ xs: "column", md: "row" }}>
           <img src={product.image_packaging_url} alt="" />
           <TableContainer component={Paper}>
@@ -341,15 +333,21 @@ const Page = () => {
           </Button>
           <Button
             sx={{ width: 150 }}
-            onClick={() => next()}
+            onClick={() => {
+              axios.patch(
+                `https://world.openfoodfacts.org/api/v3/product/${product.code}`,
+                formatData(innerRows),
+                { withCredentials: true }
+              );
+              next();
+            }}
             variant="contained"
-            type="submit"
             color="success"
           >
             Validate
           </Button>
         </Stack>
-      </form>
+      </Box>
       <Stack direction="row" spacing={2}>
         <Typography>{product?.product_name}</Typography>
         <Button
