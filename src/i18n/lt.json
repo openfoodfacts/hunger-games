@@ -76,6 +76,9 @@
     "remaining_annotations": "Likę klausimai",
     "annotated_annotations": "Anotuotas",
     "filters": {
+      "active_filter_number": "+{{count}} filtrai",
+      "active_filter_number_one": "+{{count}} filtras",
+      "active_filter_number_zero": "nėra filtro",
       "short_label": {
         "value": "vertė",
         "country": "šalis",
@@ -118,6 +121,10 @@
     "games": "Žaidimai",
     "questions": "Klausimai",
     "logos": "Logos",
+    "logos-annotation": "Logotipo anotacija",
+    "logos-search": "Logotipo paieška",
+    "logos-product-search": "Produktų anotacija",
+    "logos-deep-search": "Begalybės anotacija",
     "manage": "Tvarkyti",
     "insights": "Įžvalgos",
     "nutritions": "Nutrition facts",

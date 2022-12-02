@@ -76,6 +76,9 @@
     "remaining_annotations": "Verbleibende Fragen",
     "annotated_annotations": "Kommentiert",
     "filters": {
+      "active_filter_number": "mehr als {{count}} Filter",
+      "active_filter_number_one": "mehr als {{count}} Filter",
+      "active_filter_number_zero": "Kein Filter",
       "short_label": {
         "value": "Wert",
         "country": "Land",
@@ -118,6 +121,10 @@
     "games": "Spiele",
     "questions": "Fragen",
     "logos": "Logos",
+    "logos-annotation": "Anmerkungen zum Logo",
+    "logos-search": "Logos suchen",
+    "logos-product-search": "Anmerkung pro Produkt",
+    "logos-deep-search": "Infinit annotation",
     "manage": "Verwalten",
     "insights": "Erkenntnisse",
     "nutritions": "Nährwertangaben",

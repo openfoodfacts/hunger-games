@@ -26,7 +26,7 @@
     "saved_filters": "Các bộ lọc đã lưu",
     "contribution_modal": {
       "title": "Đóng góp của bạn rất quan trọng",
-      "information": "Hunger Games is an effort to leverage the results of our OCR. When you use Hunger Games by Open Food Facts, you improve our entire database which helps the community make better food choices. We gather your annotations and use them to make Open Food Facts more accurate and effecient.",
+      "information": "Hunger Games là một nỗ lực tận dụng kết quả OCR của chúng tôi. Khi bạn sử dụng Hunger Games của Open Food Facts, bạn sẽ cải thiện toàn bộ cơ sở dữ liệu của chúng tôi và giúp cho cộng đồng người dùng đưa ra lựa chọn thực phẩm tốt hơn. Chúng tôi thu thập các chú thích của bạn và sử dụng chúng để giúp cho Open Food Facts chính xác và hiệu quả hơn.",
       "thank_you": "Cảm ơn bạn đã giúp chúng tôi cải thiện Open Food Facts để nhiều người có thể sử dụng nó một cách dễ dàng."
     },
     "statistics": {
@@ -63,7 +63,7 @@
     "popularity_sort": "Sắp xếp theo mức độ phổ biến",
     "see_examples": "Xem các ví dụ về điều này ",
     "no": "Không",
-    "skip": "Skip",
+    "skip": "Bỏ qua",
     "yes": "Có",
     "no_questions_remaining": "Không còn câu hỏi nào",
     "countries": "Quốc gia",
@@ -71,11 +71,14 @@
     "edit": "Chỉnh sửa",
     "hide_images": "Ẩn hình ảnh (tải nhanh hơn)",
     "display_images": "Hiển thị hình ảnh",
-    "annotations": "Annotations",
+    "annotations": "Chú thích",
     "last_annotations": "Chú thích mới nhất",
     "remaining_annotations": "Câu hỏi đang có",
     "annotated_annotations": "Chú thích",
     "filters": {
+      "active_filter_number": "+{{count}} bộ lọc",
+      "active_filter_number_one": "+{{count}} bộ lọc",
+      "active_filter_number_zero": "không có bộ lọc",
       "short_label": {
         "value": "giá trị",
         "country": "nước",
@@ -95,7 +98,7 @@
       "placeholders": {
         "value": "Giá trị (fanta, en: organic,...)",
         "brand": "auchan, danone, herta, ...",
-        "campaign": "Annotation campaigns"
+        "campaign": "Chiến dịch chú thích"
       },
       "actions": {
         "edit": "Chỉnh sửa bộ lọc",
@@ -110,7 +113,7 @@
     "reset_filters": "Đặt lại bộ lọc",
     "log_in": "Tên người dùng",
     "sign_up": "Đăng ký",
-    "login_title": "Make your annotation count",
+    "login_title": "Khiến chú thích của bạn hữu ích",
     "login_description": "Hiện tại bạn chưa đăng nhập Open Food Facts. Để nhận được câu trả lời trực tiếp áp dụng cho các sản phẩm và được liên kết với tài khoản của bạn, hãy cân nhắc việc đăng nhập vào tài khoản Open Food Facts của bạn hoặc tạo một tài khoản mới"
   },
   "menu": {
@@ -118,13 +121,17 @@
     "games": "Trò chơi",
     "questions": "Câu hỏi",
     "logos": "Logos",
+    "logos-annotation": "Chú thích logo",
+    "logos-search": "Tìm kiếm logo",
+    "logos-product-search": "Chú thích cho mỗi sản phẩm",
+    "logos-deep-search": "Infinit annotation",
     "manage": "Quản lý",
     "insights": "Thông tin chi tiết",
     "nutritions": "Giá trị dinh dưỡng",
     "settings": "Cài đặt",
     "eco-score": "Điểm sinh thái",
     "nutriscore": "Điểm dinh dưỡng",
-    "tour": "Show Tour",
+    "tour": "Hiện hướng dẫn",
     "logged_in_user": "đăng nhập với {{userName}}",
     "log_in": "nhấn để đăng nhập"
   },
@@ -199,7 +206,7 @@
     "language": "Ngôn ngữ",
     "save": "Lưu",
     "reportIssue": "Có lỗi? Hãy báo cho chúng tôi",
-    "dev_mode_title": "To get more options, activate the dev mode",
+    "dev_mode_title": "Để có thêm tùy chọn, hãy kích hoạt chế độ nhà phát triển",
     "dev_mode_label": "Chế độ nhà phát triển",
     "dev_page_toggle": "Hiển thị trang {{name}}"
   },
@@ -221,7 +228,7 @@
       },
       "page3": {
         "title": "Trò chơi Logo",
-        "text1": "Our another really loved game is the logos game where you have to <strong> select all the logos</strong> you feel are the same.",
+        "text1": "Một trò chơi rất được yêu thích khác của chúng tôi là trò chơi biểu trưng trong đó bạn phải <strong> chọn tất cả các biểu trưng </strong> mà bạn cảm thấy giống nhau.",
         "text2": "Như đã được hiển thị trong ví dụ, khi bạn chọn tất cả các logo tương tự, chỉ cần nhập giá trị của chúng và chọn vị trí có thương hiệu, nhãn hiệu hoặc thứ gì đó khác. Rât đơn giản mà!"
       },
       "page4": {
@@ -238,8 +245,8 @@
       },
       "page6": {
         "title": "Tham quan",
-        "text1": "Got stuck somewhere? Want to take the tour again?",
-        "text2": "Just click on the question mark and start the journey again!"
+        "text1": "Bị mắc kẹt ở đâu đó? Bạn muốn xem hướng dẫn lại một lần nữa không?",
+        "text2": "Chỉ cần nhấp vào dấu hỏi và bắt đầu lại cuộc hành trình!"
       }
     },
     "logos": {
@@ -250,8 +257,8 @@
       },
       "page2": {
         "title": "Cảnh báo",
-        "text1": "If the crop contains multiple logos, do not select it.",
-        "text2": "If the crop contains only a partial part of a logo, you can select it"
+        "text1": "Nếu vùng cắt chứa nhiều logo, không chọn nó.",
+        "text2": "Nếu phần cắt chỉ chứa một phần của logo, bạn có thể chọn nó"
       },
       "page3": {
         "title": "Xác thực",
@@ -293,7 +300,7 @@
     "nutriments": {
       "nutriment_energy-kj": "Năng lượng (kJ)",
       "nutriment_energy-kcal": "Năng lượng (kCal)",
-      "nutriment_fat": "Fat",
+      "nutriment_fat": "Chất béo",
       "nutriment_saturated-fat": "Chất béo bão hòa",
       "nutriment_carbohydrates": "Cacbohydrat",
       "nutriment_sugars": "Đường",
@@ -323,11 +330,11 @@
   },
   "nutriscore": {
     "image_alt": "hình ảnh đã cắt",
-    "label": "Annotate Nutri-Score logo detection by batch.",
-    "description": "To do so, select all the images showing the correct/wrong Nutri-Score value ({{label}}), and click on the bottom buttons to say if you selected a set correct or wrong ones.",
-    "images_remaining": "Still {{remaining}} to annotate",
+    "label": "Chú thích phát hiện logo Nutri-Score theo loạt.",
+    "description": "Để làm như vậy, hãy chọn tất cả các hình ảnh hiển thị giá trị Điểm dinh dưỡng đúng/sai ({{label}}), và nhấp vào các nút dưới cùng để cho biết bạn đã chọn một bộ đúng hay sai.",
+    "images_remaining": "Vẫn {{remaining}} để chú thích",
     "image_sizes": "Kích thước hình ảnh",
-    "zoom_on_logo": "Zoom on logo",
+    "zoom_on_logo": "Phóng to logo",
     "select_all": "Chọn tất cả",
     "deselect_all": "Bỏ chọn tất cả",
     "incorrect": "Sai",

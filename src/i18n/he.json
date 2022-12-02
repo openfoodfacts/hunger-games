@@ -76,6 +76,9 @@
     "remaining_annotations": "שאלות שנותרו",
     "annotated_annotations": "נכתבו הערות",
     "filters": {
+      "active_filter_number": "+{{count}} מסננים",
+      "active_filter_number_one": "+ מסנן",
+      "active_filter_number_zero": "ללא סינון",
       "short_label": {
         "value": "ערך",
         "country": "מדינה",
@@ -118,6 +121,10 @@
     "games": "משחקים",
     "questions": "שאלות",
     "logos": "לוגואים",
+    "logos-annotation": "תיוג לוגואים",
+    "logos-search": "חיפוש לוגואים",
+    "logos-product-search": "תיוגים למוצר",
+    "logos-deep-search": "תיוג אינסופי",
     "manage": "ניהול",
     "insights": "תובנות",
     "nutritions": "מפרט תזונתי",

@@ -76,6 +76,9 @@
     "remaining_annotations": "Resterende spørgsmål",
     "annotated_annotations": "Anmærkede",
     "filters": {
+      "active_filter_number": "+{{count}} filtre",
+      "active_filter_number_one": "+{{count}} filter",
+      "active_filter_number_zero": "intet filter",
       "short_label": {
         "value": "værdi",
         "country": "land",
@@ -118,6 +121,10 @@
     "games": "Spil",
     "questions": "Spørgsmål",
     "logos": "Logoer",
+    "logos-annotation": "Logoanmærkninger",
+    "logos-search": "Logosøgning",
+    "logos-product-search": "Anmærkning pr. produkter",
+    "logos-deep-search": "Infinit annotation",
     "manage": "Håndtér",
     "insights": "Indblik",
     "nutritions": "Ernæringsfakta",

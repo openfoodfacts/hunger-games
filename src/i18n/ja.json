@@ -76,6 +76,9 @@
     "remaining_annotations": "残りの質問",
     "annotated_annotations": "注釈付き",
     "filters": {
+      "active_filter_number": "+{{count}} filters",
+      "active_filter_number_one": "+{{count}} filter",
+      "active_filter_number_zero": "no filter",
       "short_label": {
         "value": "値",
         "country": "国",
@@ -118,6 +121,10 @@
     "games": "ゲーム",
     "questions": "質問",
     "logos": "Logos",
+    "logos-annotation": "ロゴの注釈",
+    "logos-search": "ロゴを検索",
+    "logos-product-search": "製品ごとの注釈付け",
+    "logos-deep-search": "注釈を無限にする",
     "manage": "管理する",
     "insights": "情報",
     "nutritions": "栄養成分表",
