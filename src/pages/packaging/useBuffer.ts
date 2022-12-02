@@ -57,16 +57,14 @@ export const useBuffer = (
   country?: string,
   creator?: string
 ): [ProductDescription[], () => void] => {
-  const [page, setPage] = React.useState(1);
+  const [page, setPage] = React.useState(() => Math.ceil(Math.random() * 100));
   const [data, setData] = React.useState<ProductDescription[]>(null);
 
   const url = getProductsToAnnotateUrl({ page, country, creator });
 
   const canReset = React.useRef(false);
   React.useEffect(() => {
-    console.log("effect");
     if (canReset.current) {
-      console.log("set []");
       setData([]);
       setPage(1);
     }
