@@ -2,6 +2,7 @@ import * as React from "react";
 import Autocomplete from "@mui/material/Autocomplete";
 import TextField from "@mui/material/TextField";
 import Paper from "@mui/material/Paper";
+import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Stack from "@mui/material/Stack";
 import Link from "@mui/material/Link";
@@ -33,7 +34,28 @@ type CustomProps = {
   onChange: any;
 };
 
+/**
+ * Returns true if motif is included in one syn
+ * @param synonyms
+ * @param motif
+ */
+const firstSynonymMatching = (synonyms, motif) => {
+  const normalizedMotif = motif
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "");
+
+  return synonyms.find((synonym) => {
+    const normalizedSynonym = synonym
+      .toLowerCase()
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "");
+    return normalizedSynonym.includes(normalizedMotif);
+  });
+};
+
 const CustomAutoComplet = (props: CustomProps) => {
+  const [inputValue, setInputValue] = React.useState("");
   const { options, value, onChange } = props;
 
   return (
@@ -41,13 +63,17 @@ const CustomAutoComplet = (props: CustomProps) => {
       options={options}
       value={value}
       onChange={onChange}
+      onInputChange={(event, newInputValue) => setInputValue(newInputValue)}
       disablePortal
       renderInput={(params) => <TextField {...params} />}
-      filterOptions={(options, { inputValue }) => {
-        return options.filter((option) =>
-          option.synonyms.some((synonym) =>
-            synonym.toLowerCase().includes(inputValue.toLowerCase())
-          )
+      getOptionLabel={(option) =>
+        typeof option === "string"
+          ? option
+          : firstSynonymMatching(option?.synonyms, inputValue)
+      }
+      filterOptions={(options) => {
+        return options.filter(
+          (option) => firstSynonymMatching(option.synonyms, inputValue) != null
         );
       }}
       isOptionEqualToValue={(option, value) => option.value === value.value}
@@ -252,23 +278,21 @@ const Page = () => {
         ))}
       </Stack>
 
-      <form
-        onSubmit={(event) => {
-          event.preventDefault();
-          axios.patch(
-            `https://world.openfoodfacts.org/api/v3/product/${product.code}`,
-            formatData(innerRows),
-            { withCredentials: true }
-          );
-        }}
-      >
-        <Stack spacing={1} direction={{ xs: "column", md: "row" }}>
+      <Box>
+        <Stack
+          spacing={1}
+          alignItems={{
+            xs: "flex-start",
+            md: "flex-end",
+          }}
+          direction={{ xs: "column", md: "row" }}
+        >
           <img src={product.image_packaging_url} alt="" />
           <TableContainer component={Paper}>
             <Table>
               <TableHead>
                 <TableRow>
-                  <TableCell>Nb per unit</TableCell>
+                  <TableCell sx={{ width: 100 }}>Nb per unit</TableCell>
 
                   <TableCell>Shape</TableCell>
 
@@ -341,15 +365,21 @@ const Page = () => {
           </Button>
           <Button
             sx={{ width: 150 }}
-            onClick={() => next()}
+            onClick={() => {
+              axios.patch(
+                `https://world.openfoodfacts.org/api/v3/product/${product.code}`,
+                formatData(innerRows),
+                { withCredentials: true }
+              );
+              next();
+            }}
             variant="contained"
-            type="submit"
             color="success"
           >
             Validate
           </Button>
         </Stack>
-      </form>
+      </Box>
       <Stack direction="row" spacing={2}>
         <Typography>{product?.product_name}</Typography>
         <Button
