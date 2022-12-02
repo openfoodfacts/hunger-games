@@ -256,7 +256,7 @@ const Page = () => {
         onSubmit={(event) => {
           event.preventDefault();
           axios.patch(
-            `https://world.openfoodfacts.net/api/v3/product/${product.code}`,
+            `https://world.openfoodfacts.org/api/v3/product/${product.code}`,
             formatData(innerRows),
             { withCredentials: true }
           );
