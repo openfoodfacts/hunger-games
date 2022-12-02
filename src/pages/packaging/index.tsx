@@ -34,7 +34,28 @@ type CustomProps = {
   onChange: any;
 };
 
+/**
+ * Returns true if motif is included in one syn
+ * @param synonyms
+ * @param motif
+ */
+const firstSynonymMatching = (synonyms, motif) => {
+  const normalizedMotif = motif
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "");
+
+  return synonyms.find((synonym) => {
+    const normalizedSynonym = synonym
+      .toLowerCase()
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "");
+    return normalizedSynonym.includes(normalizedMotif);
+  });
+};
+
 const CustomAutoComplet = (props: CustomProps) => {
+  const [inputValue, setInputValue] = React.useState("");
   const { options, value, onChange } = props;
 
   return (
@@ -42,13 +63,17 @@ const CustomAutoComplet = (props: CustomProps) => {
       options={options}
       value={value}
       onChange={onChange}
+      onInputChange={(event, newInputValue) => setInputValue(newInputValue)}
       disablePortal
       renderInput={(params) => <TextField {...params} />}
-      filterOptions={(options, { inputValue }) => {
-        return options.filter((option) =>
-          option.synonyms.some((synonym) =>
-            synonym.toLowerCase().includes(inputValue.toLowerCase())
-          )
+      getOptionLabel={(option) =>
+        typeof option === "string"
+          ? option
+          : firstSynonymMatching(option?.synonyms, inputValue)
+      }
+      filterOptions={(options) => {
+        return options.filter(
+          (option) => firstSynonymMatching(option.synonyms, inputValue) != null
         );
       }}
       isOptionEqualToValue={(option, value) => option.value === value.value}
