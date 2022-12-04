@@ -76,6 +76,9 @@
     "remaining_annotations": "Remaining questions",
     "annotated_annotations": "Antecknad",
     "filters": {
+      "active_filter_number": "+{{count}} filters",
+      "active_filter_number_one": "+{{count}} filter",
+      "active_filter_number_zero": "no filter",
       "short_label": {
         "value": "värde",
         "country": "land",
@@ -118,6 +121,10 @@
     "games": "Spel",
     "questions": "Frågor",
     "logos": "Logotyper",
+    "logos-annotation": "Logos annotation",
+    "logos-search": "Logos search",
+    "logos-product-search": "Annotation per products",
+    "logos-deep-search": "Infinit annotation",
     "manage": "Hantera",
     "insights": "Insikter",
     "nutritions": "Näringsfakta",

@@ -9,7 +9,7 @@
         },
         "logos": {
           "title": "Logos",
-          "description": "Find all the logos matching the given logo"
+          "description": "Znajdź wszystkie inne logo pasujące do danego logo"
         },
         "eco_score": {
           "title": "Eco-Score",
@@ -76,6 +76,9 @@
     "remaining_annotations": "Pozostałe pytania",
     "annotated_annotations": "Z adnotacjami",
     "filters": {
+      "active_filter_number": "+{{count}} filters",
+      "active_filter_number_one": "+{{count}} filter",
+      "active_filter_number_zero": "bez filtra",
       "short_label": {
         "value": "wartość",
         "country": "kraj",
@@ -118,6 +121,10 @@
     "games": "Gry",
     "questions": "Pytania",
     "logos": "Logos",
+    "logos-annotation": "Adnotacje do logo",
+    "logos-search": "Wyszukiwanie logo",
+    "logos-product-search": "Annotation per products",
+    "logos-deep-search": "Infinit annotation",
     "manage": "Zarządzaj",
     "insights": "Spostrzeżenia",
     "nutritions": "Wartości odżywcze",
@@ -154,7 +161,7 @@
     "created_at": "Data utworzenia",
     "completed_at": "Data wykonania",
     "automatic": "Automatyczne",
-    "human_required": "Human required",
+    "human_required": "Wymagany człowiek",
     "edit_product": "Otwórz edycję produktu",
     "view_product": "Otwórz stronę produktu"
   },
@@ -237,7 +244,7 @@
         "text2": "If you're a developer, you can also explore our database content using our dev mode."
       },
       "page6": {
-        "title": "Tour",
+        "title": "Samouczek",
         "text1": "Got stuck somewhere? Want to take the tour again?",
         "text2": "Just click on the question mark and start the journey again!"
       }
@@ -279,8 +286,8 @@
       "4": "Wybór wartości"
     },
     "loading": "Ładowanie...",
-    "unknown_brand": "Brand Unknown",
-    "value_missing": "You forgot to input value duuuuuuuuuuuuuuuuude",
+    "unknown_brand": "Marka nieznana",
+    "value_missing": "Zapomniałeś wpisać tekstu goooooooościu",
     "next": "Dalej",
     "prev": "Wstecz",
     "skip": "Pomiń ten produkt",
@@ -316,21 +323,21 @@
     }
   },
   "notfound": {
-    "image_alt": "404 not found",
+    "image_alt": "404: Nie znaleziono",
     "nopage": "Ups! Nie można znaleźć strony, której szukasz.",
     "redirect1": "Chcesz zagrać w kilka gier?",
     "redirect2": "Kliknij tutaj"
   },
   "nutriscore": {
-    "image_alt": "cropped image",
+    "image_alt": "przycięty obraz",
     "label": "Annotate Nutri-Score logo detection by batch.",
     "description": "To do so, select all the images showing the correct/wrong Nutri-Score value ({{label}}), and click on the bottom buttons to say if you selected a set correct or wrong ones.",
     "images_remaining": "Still {{remaining}} to annotate",
-    "image_sizes": "Image sizes",
-    "zoom_on_logo": "Zoom on logo",
+    "image_sizes": "Rozmiar zdjęcia",
+    "zoom_on_logo": "Powiększ logo",
     "select_all": "Wybierz wszystkie",
     "deselect_all": "Odznacz wszystkie",
-    "incorrect": "Wrong",
+    "incorrect": "Błąd",
     "correct": "Correct ({{label}})"
   },
   "eco-score": {

@@ -76,12 +76,15 @@
     "remaining_annotations": "Zbývající otázky",
     "annotated_annotations": "Komentováno",
     "filters": {
+      "active_filter_number": "+{{count}} filtrů",
+      "active_filter_number_one": "+{{count}} filtr",
+      "active_filter_number_zero": "žádný filtr",
       "short_label": {
         "value": "hodnota",
         "country": "země",
         "brand": "značka",
         "popularity": "oblíbenost",
-        "campaign": "camp"
+        "campaign": "kampaň"
       },
       "long_label": {
         "type": "Typ otázky",
@@ -118,6 +121,10 @@
     "games": "Hry",
     "questions": "Otázky",
     "logos": "Loga",
+    "logos-annotation": "Anotace loga",
+    "logos-search": "Hledání log",
+    "logos-product-search": "Anotace k produktům",
+    "logos-deep-search": "Nekonečná anotace",
     "manage": "Spravovat",
     "insights": "Postřehy",
     "nutritions": "Nutriční hodnoty",

@@ -76,6 +76,9 @@
     "remaining_annotations": "Оставшиеся вопросы",
     "annotated_annotations": "Помеченный",
     "filters": {
+      "active_filter_number": "+{{count}} filters",
+      "active_filter_number_one": "+{{count}} filter",
+      "active_filter_number_zero": "no filter",
       "short_label": {
         "value": "значение",
         "country": "страна",
@@ -118,6 +121,10 @@
     "games": "Игры",
     "questions": "Вопросы",
     "logos": "Logos",
+    "logos-annotation": "Logos annotation",
+    "logos-search": "Logos search",
+    "logos-product-search": "Annotation per products",
+    "logos-deep-search": "Infinit annotation",
     "manage": "Управление",
     "insights": "Прогнозы",
     "nutritions": "Пищевая и энергетическая ценность",

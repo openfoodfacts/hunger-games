@@ -20,6 +20,7 @@ import {
   Nutrition,
   FlaggedImages,
   ShouldLoggedinPage,
+  PackagingPage,
 } from "./pages";
 import ResponsiveAppBar from "./components/ResponsiveAppBar";
 import DevModeContext from "./contexts/devMode";
@@ -242,6 +243,17 @@ export default function App() {
               {showFlaggedImage && (
                 <Route path="/flagged-images" element={<FlaggedImages />} />
               )}
+
+              <Route
+                path="/packaging"
+                element={
+                  userState.isLoggedIn ? (
+                    <PackagingPage />
+                  ) : (
+                    <ShouldLoggedinPage />
+                  )
+                }
+              />
             </Routes>
           </DevModeContext.Provider>
         </LoginContext.Provider>

@@ -76,6 +76,9 @@
     "remaining_annotations": "Kalan sorular",
     "annotated_annotations": "Açıklandı",
     "filters": {
+      "active_filter_number": "+{{count}} filtreler",
+      "active_filter_number_one": "+{{count}} filtre",
+      "active_filter_number_zero": "filtre yok",
       "short_label": {
         "value": "değer",
         "country": "ülke",
@@ -118,6 +121,10 @@
     "games": "Oyunlar",
     "questions": "Sorular",
     "logos": "Logolar",
+    "logos-annotation": "Logolar ek açıklaması",
+    "logos-search": "Logo arama",
+    "logos-product-search": "Ürün başına açıklama",
+    "logos-deep-search": "Sonsuz açıklama",
     "manage": "Yönet",
     "insights": "Yönelimler",
     "nutritions": "Beslenme gerçekleri",
