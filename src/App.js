@@ -19,6 +19,7 @@ import {
   Home,
   Nutrition,
   FlaggedImages,
+  ShouldLoggedinPage,
   PackagingPage,
 } from "./pages";
 import ResponsiveAppBar from "./components/ResponsiveAppBar";
@@ -168,26 +169,91 @@ export default function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/eco-score" element={<EcoScorePage />} />
-              <Route path="/logos" element={<LogoAnnotationPage />} />
-              <Route path="/logos/search" element={<LogoSearchPage />} />
-              <Route path="/logos/:logoId" element={<LogoUpdatePage />} />
+              <Route
+                path="/logos"
+                element={
+                  userState.isLoggedIn ? (
+                    <LogoAnnotationPage />
+                  ) : (
+                    <ShouldLoggedinPage />
+                  )
+                }
+              />
+              <Route
+                path="/logos/search"
+                element={
+                  userState.isLoggedIn ? (
+                    <LogoSearchPage />
+                  ) : (
+                    <ShouldLoggedinPage />
+                  )
+                }
+              />
+              <Route
+                path="/logos/:logoId"
+                element={
+                  userState.isLoggedIn ? (
+                    <LogoUpdatePage />
+                  ) : (
+                    <ShouldLoggedinPage />
+                  )
+                }
+              />
               <Route
                 path="/logos/product-search"
-                element={<ProductLogoAnnotationPage />}
+                element={
+                  userState.isLoggedIn ? (
+                    <ProductLogoAnnotationPage />
+                  ) : (
+                    <ShouldLoggedinPage />
+                  )
+                }
               />
-              <Route path="/logos/deep-search" element={<LogoDeepSearch />} />
+              <Route
+                path="/logos/deep-search"
+                element={
+                  userState.isLoggedIn ? (
+                    <LogoDeepSearch />
+                  ) : (
+                    <ShouldLoggedinPage />
+                  )
+                }
+              />
 
               <Route path="/settings" element={<SettingsPage />} />
               <Route path="/questions" element={<QuestionsPage />} />
               <Route path="/insights" element={<InsightsPage />} />
               <Route path="*" element={<NotFoundPage />} />
-              <Route path="/nutriscore" element={<NutriscoreValidator />} />
-              <Route path="/nutrition" element={<Nutrition />} />
+              <Route
+                path="/nutriscore"
+                element={
+                  userState.isLoggedIn ? (
+                    <NutriscoreValidator />
+                  ) : (
+                    <ShouldLoggedinPage />
+                  )
+                }
+              />
+              <Route
+                path="/nutrition"
+                element={
+                  userState.isLoggedIn ? <Nutrition /> : <ShouldLoggedinPage />
+                }
+              />
               {showFlaggedImage && (
                 <Route path="/flagged-images" element={<FlaggedImages />} />
               )}
 
-              <Route path="/packaging" element={<PackagingPage />} />
+              <Route
+                path="/packaging"
+                element={
+                  userState.isLoggedIn ? (
+                    <PackagingPage />
+                  ) : (
+                    <ShouldLoggedinPage />
+                  )
+                }
+              />
             </Routes>
           </DevModeContext.Provider>
         </LoginContext.Provider>
