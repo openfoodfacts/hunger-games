@@ -266,13 +266,13 @@ export default function LogoQuestionValidator({ options }) {
           })}
         </Typography>
         <Typography>
-          Ici vous annotes des produits. Mais vous pouvez aussi aider robotoff
+          Ici vous annotez des produits. Mais vous pouvez aussi aider Robotoff
           en annotant des logos détectés à cette adresse:{" "}
           <Link
             href={`https://hunger.openfoodfacts.org/logos/deep-search?type=label&value=${selectedOption.tag}`}
             target="_blank"
           >
-            recherce des logos {selectedOption.label}
+            recherche des logos {selectedOption.label}
           </Link>
           .
         </Typography>
