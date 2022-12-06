@@ -50,6 +50,7 @@ const fetchData = async (insightId) => {
 };
 
 const LogoQuesitonCard = (props) => {
+  const { t } = useTranslation();
   const { question, toggleSelection, checked, imageSize, zoomOnLogo } = props;
 
   const [croppedImageUrl, setCroppedImageUrl] = React.useState("");
@@ -92,10 +93,6 @@ const LogoQuesitonCard = (props) => {
     };
   }, [question.insight_id, question.source_image_url, zoomOnLogo]);
 
-  if (!question.insight_id || !croppedImageUrl) {
-    return null;
-  }
-
   return (
     <Card
       sx={{ width: imageSize, height: imageSize }}
@@ -110,7 +107,16 @@ const LogoQuesitonCard = (props) => {
         onClick={toggleSelection(question.insight_id)}
         tabIndex={-1}
       >
-        <NutriscoreImage croppedImageUrl={croppedImageUrl} />
+        {croppedImageUrl ? (
+          <img
+            src={croppedImageUrl}
+            alt={t("nutriscore.image_alt")}
+            loading="lazy"
+            style={{ objectFit: "contain", width: "100%", height: "100%" }}
+          />
+        ) : (
+          <Typography>NOT A LOGO</Typography>
+        )}
         <Checkbox
           sx={{ position: "absolute", bottom: 10, right: 10 }}
           checked={checked}
@@ -119,19 +125,6 @@ const LogoQuesitonCard = (props) => {
         />
       </CardActionArea>
     </Card>
-  );
-};
-
-const NutriscoreImage = ({ croppedImageUrl }) => {
-  const { t } = useTranslation();
-
-  return (
-    <img
-      src={croppedImageUrl}
-      alt={t("nutriscore.image_alt")}
-      loading="lazy"
-      style={{ objectFit: "contain", width: "100%", height: "100%" }}
-    />
   );
 };
 
