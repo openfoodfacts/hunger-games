@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 import Divider from "@mui/material/Divider";
 import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
+import Link from "@mui/material/Link";
 import Box from "@mui/material/Box";
 import MenuItem from "@mui/material/MenuItem";
 import TextField from "@mui/material/TextField";
@@ -21,17 +22,13 @@ import off from "../../off";
 import useUrlParams from "../../hooks/useUrlParams";
 
 const BUFFER_THRESHOLD = 10;
-const PAGE_SIZE = 50;
+const PAGE_SIZE = 200;
 
-const OPTIONS = [
-  { tag: "en:nutriscore-grade-a", label: "Nutriscore A" },
-  { tag: "en:nutriscore-grade-b", label: "Nutriscore B" },
-  { tag: "en:nutriscore-grade-c", label: "Nutriscore C" },
-  { tag: "en:nutriscore-grade-d", label: "Nutriscore D" },
-  { tag: "en:nutriscore-grade-e", label: "Nutriscore E" },
-  { tag: "fr:ab-agriculture-biologique", label: "AB (Agriculture Bio)" },
-  { tag: "en:eu-organic", label: "Bio Européen" },
-];
+const filterItem = (question) => {
+  // For later when we will be able to knwo if the question comes from a logo detection
+  console.log(question);
+  return true;
+};
 
 const fetchData = async (insightId) => {
   const response = await robotoff.insightDetail(insightId);
@@ -52,8 +49,9 @@ const fetchData = async (insightId) => {
   return response;
 };
 
-const NutriscoreImage = ({ question, imageSize, zoomOnLogo }) => {
-  const { t } = useTranslation();
+const LogoQuesitonCard = (props) => {
+  const { question, toggleSelection, checked, imageSize, zoomOnLogo } = props;
+
   const [croppedImageUrl, setCroppedImageUrl] = React.useState("");
 
   React.useEffect(() => {
@@ -99,6 +97,35 @@ const NutriscoreImage = ({ question, imageSize, zoomOnLogo }) => {
   }
 
   return (
+    <Card
+      sx={{ width: imageSize, height: imageSize }}
+      key={question.insight_id}
+    >
+      <CardActionArea
+        sx={{
+          width: imageSize,
+          height: imageSize,
+          position: "relative",
+        }}
+        onClick={toggleSelection(question.insight_id)}
+        tabIndex={-1}
+      >
+        <NutriscoreImage croppedImageUrl={croppedImageUrl} />
+        <Checkbox
+          sx={{ position: "absolute", bottom: 10, right: 10 }}
+          checked={checked}
+          readOnly
+          size="large"
+        />
+      </CardActionArea>
+    </Card>
+  );
+};
+
+const NutriscoreImage = ({ croppedImageUrl }) => {
+  const { t } = useTranslation();
+
+  return (
     <img
       src={croppedImageUrl}
       alt={t("nutriscore.image_alt")}
@@ -108,11 +135,11 @@ const NutriscoreImage = ({ question, imageSize, zoomOnLogo }) => {
   );
 };
 
-export default function NutriscoreValidator() {
+export default function LogoQuestionValidator({ options }) {
   const { t } = useTranslation();
 
   const [controlledState, setControlledState] = useUrlParams({
-    valueTag: "en:nutriscore-grade-a",
+    valueTag: options[0].tag,
     imageSize: 200,
     zoomOnLogo: true,
   });
@@ -121,8 +148,8 @@ export default function NutriscoreValidator() {
   const zoomOnLogo = JSON.parse(controlledState.zoomOnLogo);
 
   const selectedOption = React.useMemo(
-    () => OPTIONS.find((option) => option.tag === valueTag) || OPTIONS[0],
-    [valueTag]
+    () => options.find((option) => option.tag === valueTag) || options[0],
+    [valueTag, options]
   );
 
   const filterState = React.useMemo(
@@ -144,7 +171,7 @@ export default function NutriscoreValidator() {
     if (valueTag === newSelectedTag) {
       return;
     }
-    const newSelectedOption = OPTIONS.find(
+    const newSelectedOption = options.find(
       (option) => option.tag === newSelectedTag
     );
     setSelectedIds([]);
@@ -157,7 +184,8 @@ export default function NutriscoreValidator() {
   const { buffer, answerQuestion, remainingQuestionNb } = useQuestionBuffer(
     filterState,
     PAGE_SIZE,
-    BUFFER_THRESHOLD
+    BUFFER_THRESHOLD,
+    filterItem
   );
 
   const toggleSelection = (insight_id) => (event) => {
@@ -244,6 +272,17 @@ export default function NutriscoreValidator() {
             label: selectedOption.label,
           })}
         </Typography>
+        <Typography>
+          Ici vous annotes des produits. Mais vous pouvez aussi aider robotoff
+          en annotant des logos détectés à cette adresse:{" "}
+          <Link
+            href={`https://hunger.openfoodfacts.org/logos/deep-search?type=label&value=${selectedOption.tag}`}
+            target="_blank"
+          >
+            recherce des logos {selectedOption.label}
+          </Link>
+          .
+        </Typography>
       </Box>
       <Stack
         direction="row"
@@ -252,7 +291,7 @@ export default function NutriscoreValidator() {
         sx={{ pt: 5, px: 5, pb: 0, textAlign: "center" }}
       >
         <TextField value={valueTag} onChange={updateSearchedGrad} select>
-          {OPTIONS.map(({ tag, label }) => (
+          {options.map(({ tag, label }) => (
             <MenuItem value={tag} key={tag}>
               {label}
             </MenuItem>
@@ -261,6 +300,9 @@ export default function NutriscoreValidator() {
         <Typography sx={{ mx: 3 }}>
           {t("nutriscore.images_remaining", { remaining: remainingQuestionNb })}
         </Typography>
+        {selectedOption.logo && (
+          <img src={selectedOption.logo} alt="searched logo" />
+        )}
         <Box sx={{ mx: 2, width: 500, maxWidth: 500, textAlign: "left" }}>
           <Typography gutterBottom>{t("nutriscore.image_sizes")}</Typography>
           <Slider
@@ -321,32 +363,13 @@ export default function NutriscoreValidator() {
               question.insight_id && question.insight_id !== "NO_QUESTION_LEFT"
           )
           .map((question) => (
-            <Card
-              sx={{ width: imageSize, height: imageSize }}
-              key={question.insight_id}
-            >
-              <CardActionArea
-                sx={{
-                  width: imageSize,
-                  height: imageSize,
-                  position: "relative",
-                }}
-                onClick={toggleSelection(question.insight_id)}
-                tabIndex={-1}
-              >
-                <NutriscoreImage
-                  question={question}
-                  imageSize={imageSize}
-                  zoomOnLogo={zoomOnLogo}
-                />
-                <Checkbox
-                  sx={{ position: "absolute", bottom: 10, right: 10 }}
-                  checked={selectedIds.includes(question.insight_id)}
-                  readOnly
-                  size="large"
-                />
-              </CardActionArea>
-            </Card>
+            <LogoQuesitonCard
+              question={question}
+              toggleSelection={toggleSelection}
+              checked={selectedIds.includes(question.insight_id)}
+              imageSize={imageSize}
+              zoomOnLogo={zoomOnLogo}
+            />
           ))}
       </div>
 

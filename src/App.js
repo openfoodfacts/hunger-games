@@ -15,7 +15,8 @@ import {
   QuestionsPage,
   InsightsPage,
   NotFoundPage,
-  NutriscoreValidator,
+  NutriscorePageValidator,
+  INAOPageValidator,
   Home,
   Nutrition,
   FlaggedImages,
@@ -52,13 +53,29 @@ const ADMINS = [
 export default function App() {
   const [devMode, setDevMode] = React.useState(getIsDevMode);
   const [visiblePages, setVisiblePages] = React.useState(getVisiblePages);
-  const [userState, setUserState] = React.useState({
-    userName: "",
-    isLoggedIn: false,
+  const [userState, setUserState] = React.useState(() => {
+    if (IS_DEVELOPMENT_MODE) {
+      return {
+        userName: "",
+        isLoggedIn: true,
+      };
+    }
+    return {
+      userName: "",
+      isLoggedIn: false,
+    };
   });
   const lastSeenCookie = React.useRef(null);
 
   const refresh = React.useCallback(async () => {
+    if (IS_DEVELOPMENT_MODE) {
+      setUserState({
+        userName: "",
+        isLoggedIn: true,
+      });
+      return true;
+    }
+
     const sessionCookie = off.getCookie("session");
     if (sessionCookie === lastSeenCookie.current) {
       return userState.isLoggedIn;
@@ -228,12 +245,23 @@ export default function App() {
                 path="/nutriscore"
                 element={
                   userState.isLoggedIn ? (
-                    <NutriscoreValidator />
+                    <NutriscorePageValidator />
                   ) : (
                     <ShouldLoggedinPage />
                   )
                 }
               />
+              <Route
+                path="/inao"
+                element={
+                  userState.isLoggedIn ? (
+                    <INAOPageValidator />
+                  ) : (
+                    <ShouldLoggedinPage />
+                  )
+                }
+              />
+
               <Route
                 path="/nutrition"
                 element={
