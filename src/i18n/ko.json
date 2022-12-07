@@ -1,53 +1,53 @@
 {
   "home": {
     "game_selector": {
-      "title": "What game would you like to play?",
+      "title": "어떤 게임을 하시겠습니까?",
       "cards": {
         "questions": {
           "title": "질문",
-          "description": "Tell us if the given image answers the questions"
+          "description": "주어진 이미지가 질문에 답하는지 알려주십시오."
         },
         "logos": {
           "title": "로고",
-          "description": "Find all the logos matching the given logo"
+          "description": "주어진 로고와 일치하는 모든 로고 찾기"
         },
         "eco_score": {
           "title": "친환경 점수",
-          "description": "Annotate the questions with the highest value"
+          "description": "가장 높은 값으로 질문에 주석 달기"
         }
       }
     },
     "account_band": {
-      "title": "Want to make your contribution count? Create an account or sign in on Open Food Facts!",
+      "title": "귀하의 기여를 중요하게 생각하십니까? Open Food Facts에 계정을 만들거나 로그인하세요!",
       "log_in": "Username",
       "sign_up": "회원 가입",
-      "contribution_details": "Learn why your contribution matters"
+      "contribution_details": "기여가 중요한 이유 알아보기"
     },
-    "saved_filters": "Saved Filters",
+    "saved_filters": "저장된 필터",
     "contribution_modal": {
-      "title": "Your contribution matters",
-      "information": "Hunger Games is an effort to leverage the results of our OCR. When you use Hunger Games by Open Food Facts, you improve our entire database which helps the community make better food choices. We gather your annotations and use them to make Open Food Facts more accurate and effecient.",
-      "thank_you": "Thank you for helping us improve Open Food Facts so that more people can use it easily."
+      "title": "귀하의 기여가 중요합니다",
+      "information": "Hunger Games는 OCR 결과를 활용하기 위한 노력입니다. Open Food Facts의 Hunger Games를 사용하면 커뮤니티가 더 나은 음식을 선택하는 데 도움이 되는 전체 데이터베이스를 개선하게 됩니다. 귀하의 주석을 수집하고 이를 사용하여 Open Food Facts를 보다 정확하고 효율적으로 만듭니다.",
+      "thank_you": "Open Food Facts를 더 많은 사람들이 쉽게 사용할 수 있도록 개선하는 데 도움을 주셔서 감사합니다."
     },
     "statistics": {
-      "title": "{{userName}} statistics:",
+      "title": "{{userName}} 통계:",
       "editorCount": {
         "title": "편집자",
-        "description": "Number of edition done"
+        "description": "완료된 교육의 수"
       },
       "contributorCount": {
         "title": "기여자",
-        "description": "Adding a new product"
+        "description": "새 제품 추가"
       },
       "photographerCount": {
-        "title": "Photographer",
-        "description": "Taking photos for a product"
+        "title": "사진작가",
+        "description": "제품 사진 촬영"
       }
     }
   },
   "flagged_images": {
-    "title": "Images flagged by users",
-    "loading": "Loading"
+    "title": "사용자가 신고한 이미지",
+    "loading": "로딩중…"
   },
   "questions": {
     "category": "카테고리",
@@ -76,15 +76,15 @@
     "remaining_annotations": "남은 질문",
     "annotated_annotations": "주석 달기",
     "filters": {
-      "active_filter_number": "+{{count}} filters",
-      "active_filter_number_one": "+{{count}} filter",
-      "active_filter_number_zero": "no filter",
+      "active_filter_number": "+{{count}} 필터",
+      "active_filter_number_one": "+{{count}} 필터",
+      "active_filter_number_zero": "필터 없음",
       "short_label": {
         "value": "값",
         "country": "국가",
         "brand": "브랜드",
         "popularity": "인기도",
-        "campaign": "camp"
+        "campaign": "캠프"
       },
       "long_label": {
         "type": "질문 유형",
@@ -93,12 +93,12 @@
         "brand": "제품 제조사",
         "popularity": "인기순 정렬",
         "edit": "",
-        "campaign": "Campaign"
+        "campaign": "캠페인"
       },
       "placeholders": {
         "value": "가치 (환타, 영어:오가닉,...)",
         "brand": "auchan, danone, herta, ...",
-        "campaign": "Annotation campaigns"
+        "campaign": "주석 캠페인"
       },
       "actions": {
         "edit": "필터 수정",
@@ -106,34 +106,34 @@
         "apply": "적용"
       }
     },
-    "other_questions": "Other questions",
-    "send": "Send",
-    "flag": "Something wrong? Report/flag the image!",
-    "unflag": "Unflag the image",
-    "reset_filters": "Reset filters",
+    "other_questions": "다른 질문",
+    "send": "전송",
+    "flag": "뭔가 잘못되었나요? 이미지를 신고/신고하세요!",
+    "unflag": "이미지 플래그 해제",
+    "reset_filters": "필터 재설정",
     "log_in": "Username",
     "sign_up": "회원 가입",
-    "login_title": "Make your annotation count",
-    "login_description": "Currently you are not logged in Open Food Facts. To get your answers directly applied to products, and associated to your account, consider logging in to your Open Food Facts account, or creating one"
+    "login_title": "주석을 중요하게 만들기",
+    "login_description": "현재 Open Food Facts에 로그인하지 않았습니다. 귀하의 답변을 제품에 직접 적용하고 귀하의 계정에 연결하려면 Open Food Facts 계정에 로그인하거나 계정을 만드십시오."
   },
   "menu": {
-    "title": "Hunger Games",
+    "title": "헝거 게임",
     "games": "게임",
     "questions": "질문",
     "logos": "로고",
-    "logos-annotation": "Logos annotation",
-    "logos-search": "Logos search",
-    "logos-product-search": "Annotation per products",
-    "logos-deep-search": "Infinit annotation",
+    "logos-annotation": "로고 주석",
+    "logos-search": "로고 검색",
+    "logos-product-search": "제품별 주석",
+    "logos-deep-search": "무한 주석",
     "manage": "관리",
     "insights": "인사이트",
     "nutritions": "영양 성분 표시",
     "settings": "설정",
     "eco-score": "친환경 점수",
     "nutriscore": "Nutri-Score",
-    "tour": "Show Tour",
-    "logged_in_user": "logged as {{userName}}",
-    "log_in": "click to login"
+    "tour": "둘러보기 표시",
+    "logged_in_user": "{{userName}}으로 기록",
+    "log_in": "클릭하여 로그인하기"
   },
   "insights": {
     "insights": "인사이트",
@@ -161,14 +161,14 @@
     "created_at": "생성일",
     "completed_at": "완료일",
     "automatic": "자동",
-    "human_required": "Human required",
-    "edit_product": "Open product edit",
-    "view_product": "Open product page"
+    "human_required": "인간 필수",
+    "edit_product": "제품 편집 열기",
+    "view_product": "제품 페이지 열기"
   },
   "logos": {
     "annotation": "주석: ",
     "annotations": "로고 주석",
-    "task_description": "Select all logos that are exactly the same, and give them a name like \"en:EU Organic\" and a type like \"label\".",
+    "task_description": "정확히 동일한 모든 로고를 선택하고 \"en:EU Organic\"과 같은 이름과 라벨과 같은 유형을 지정합니다.",
     "select_all": "모두 선택",
     "unselect_all": "선택 해제",
     "distance": "거리:",
@@ -191,44 +191,44 @@
     "no_found": "로고를 찾을 수 없음",
     "search": "검색",
     "number_of_results": "결과 수:",
-    "loading": "Loading...",
+    "loading": "불러오는 중…",
     "refresh": "새로고침",
-    "search_specific": "Search specific logo",
-    "load_more": "Load more",
+    "search_specific": "특정 로고 검색",
+    "load_more": "더 불러오기",
     "no_results": "로고를 찾을 수 없음",
-    "result_count": "Shows {{showing}} on {{available}} available",
-    "flag": "Something wrong? Report/flag the image!",
-    "unflag": "Unflag the image",
-    "crop_image_title": "crop of the logo"
+    "result_count": "{{showing}} 대 {{available}} 사용 가능 표시",
+    "flag": "뭔가 잘못되었나요? 이미지를 신고/신고하세요!",
+    "unflag": "이미지 플래그 해제",
+    "crop_image_title": "로고 자르기"
   },
   "settings": {
     "settings": "설정",
     "language": "언어",
     "save": "저장",
     "reportIssue": "버그를 발견했나요? 저희에게 알려주세요",
-    "dev_mode_title": "To get more options, activate the dev mode",
-    "dev_mode_label": "Dev Mode",
-    "dev_page_toggle": "Show {{name}} page"
+    "dev_mode_title": "더 많은 옵션을 얻으려면 개발자 모드를 활성화하세요",
+    "dev_mode_label": "개발자 모드",
+    "dev_page_toggle": "{{name}} 페이지 보기"
   },
   "helper": {
     "welcome": {
       "page1": {
-        "title": "Welcome to Hunger Games",
-        "text1": "Hunger Games is a collection of mini-games that help contribute to Open Food Facts in many ways. You can play are really exciting games from anywhere. Here is a guided tour of the entire website which will get you started.",
-        "text2": "Make sure to login to the Open Food Facts website to get credit for your contributions. If you make a mistake, please take the time to correct it by heading to the website.",
-        "text3": "In case of any doubt about the games, click on the question mark icon at the top right of the page, and you can reach us on slack at the #hunger-games channel"
+        "title": "헝거 게임에 오신 것을 환영합니다",
+        "text1": "헝거 게임은 다양한 방식으로 Open Food Facts에 기여하는 데 도움이 되는 미니 게임 모음입니다. 어디에서나 정말 흥미진진한 게임을 플레이할 수 있습니다. 시작하게 될 전체 웹사이트의 가이드 투어입니다.",
+        "text2": "기여에 대한 크레딧을 받으려면 Open Food Facts 웹사이트에 로그인하십시오. 오류가 있는 경우 웹사이트로 이동하여 시간을 내어 수정하십시오.",
+        "text3": "게임에 대해 궁금한 점이 있으면 페이지 오른쪽 상단에 있는 물음표 아이콘을 클릭하세요. Slack의 #hunger-games 채널에서 저희에게 연락하실 수 있습니다."
       },
       "page2": {
-        "title": "Questions Game",
-        "text1": "Does the food product belong to this brand?",
-        "text2": "Answer simply with a <strong>yes/no</strong>! Don't know the answer? That's alright, just skip it.",
-        "text3": "You can also use your keyboard keys o,n and k.",
-        "text4": "You can <strong>filter</strong> the products based on country, brands, popularity and much more!",
-        "text5": "If you don't want to do this every single time, you can also <strong>save the filters</strong> by clicking on the star. Next time you come back, find the saved filters on the home page itself"
+        "title": "질문 게임",
+        "text1": "식품이 이 브랜드에 속합니까?",
+        "text2": "<strong>예/아니오</strong>로 간단하게 대답하세요! 답을 모르십니까? 괜찮습니다. 그냥 건너뛰세요.",
+        "text3": "키보드 키 o,n 및 k를 사용할 수도 있습니다.",
+        "text4": "국가, 브랜드, 인기도 등을 기준으로 제품을 <strong>필터링</strong> 할 수 있습니다!",
+        "text5": "이 작업을 매번 수행하고 싶지 않다면 별을 클릭하여 <strong>필터를 저장할 수도 있습니다</strong>. 다음에 다시 방문하면 홈페이지 자체에서 저장된 필터를 찾으십시오."
       },
       "page3": {
-        "title": "Logos Game",
-        "text1": "Our another really loved game is the logos game where you have to <strong> select all the logos</strong> you feel are the same.",
+        "title": "로고스 게임",
+        "text1": "우리의 또 다른 정말 사랑받는 게임은 당신과 동일하다고 생각하는 </strong> 모든 로고 선택하기 <strong> 게임입니다.",
         "text2": "As shown in the example, once you select all the similar logos, just type their value and select where it is a brand, a label or something else. It's that simple!"
       },
       "page4": {
@@ -285,7 +285,7 @@
       "3": "영양소 선택",
       "4": "가치 선택"
     },
-    "loading": "Loading...",
+    "loading": "불러오는 중…",
     "unknown_brand": "Brand Unknown",
     "value_missing": "You forgot to input value duuuuuuuuuuuuuuuuude",
     "next": "다음 단계",
