@@ -229,24 +229,24 @@
       "page3": {
         "title": "로고스 게임",
         "text1": "우리의 또 다른 정말 사랑받는 게임은 당신과 동일하다고 생각하는 </strong> 모든 로고 선택하기 <strong> 게임입니다.",
-        "text2": "As shown in the example, once you select all the similar logos, just type their value and select where it is a brand, a label or something else. It's that simple!"
+        "text2": "예에서 볼 수 있듯이 유사한 로고를 모두 선택한 후 해당 값을 입력하고 브랜드, 라벨 또는 기타 항목을 선택하기만 하면 됩니다. 간단합니다!"
       },
       "page4": {
-        "title": "Eco-Score Questions Game",
-        "text1": "Help us finish the remaining questions in the most high priority labels!",
-        "text2": "These cards are linked to labels used in the computation of the eco-score.",
-        "text3": "<strong>What is Eco-Score?</strong>",
-        "text4": "Eco-Score captures the total environmental footprint, making it easier for consumers to compare products and decide which is better for the environment."
+        "title": "에코 점수 질문 게임",
+        "text1": "가장 우선 순위가 높은 라벨의 나머지 질문을 완료할 수 있도록 도와주세요!",
+        "text2": "이 카드는 에코 점수 계산에 사용되는 라벨들과 연결되어 있습니다.",
+        "text3": "<strong>에코 점수란?</strong>",
+        "text4": "에코 점수는 총 환경 발자국을 포착하여 소비자가 제품을 비교하고 어느 것이 환경에 더 좋은지 쉽게 결정할 수 있도록 합니다."
       },
       "page5": {
         "title": "설정",
-        "text1": "Set your preferred language, and report issues from our settings page.",
-        "text2": "If you're a developer, you can also explore our database content using our dev mode."
+        "text1": "선호하는 언어를 설정하고 설정 페이지에서 문제를 보고하세요.",
+        "text2": "개발자인 경우 개발 모드를 사용하여 데이터베이스 콘텐츠를 탐색할 수도 있습니다."
       },
       "page6": {
-        "title": "Tour",
-        "text1": "Got stuck somewhere? Want to take the tour again?",
-        "text2": "Just click on the question mark and start the journey again!"
+        "title": "둘러보기",
+        "text1": "어디에 갇혀 있습니까? 둘러보기를 다시 원하십니까?",
+        "text2": "물음표를 클릭하고 여행을 다시 시작하세요!"
       }
     },
     "logos": {
@@ -257,8 +257,8 @@
       },
       "page2": {
         "title": "경고",
-        "text1": "If the crop contains multiple logos, do not select it.",
-        "text2": "If the crop contains only a partial part of a logo, you can select it"
+        "text1": "자르기에 여러 로고가 포함된 경우 선택하지 마십시오.",
+        "text2": "자르기에 로고의 일부만 포함되어 있는 경우 선택할 수 있습니다."
       },
       "page3": {
         "title": "검사",
@@ -286,8 +286,8 @@
       "4": "가치 선택"
     },
     "loading": "불러오는 중…",
-    "unknown_brand": "Brand Unknown",
-    "value_missing": "You forgot to input value duuuuuuuuuuuuuuuuude",
+    "unknown_brand": "브랜드 알 수 없음",
+    "value_missing": "Duuuuuuuuuuuuuuuuuude 값을 입력하는 것을 잊었습니다.",
     "next": "다음 단계",
     "prev": "이전 단계",
     "skip": "이 상품 건너뛰기",
@@ -323,25 +323,25 @@
     }
   },
   "notfound": {
-    "image_alt": "404 not found",
+    "image_alt": "404 찾을 수 없음",
     "nopage": "이런! 요청하신 페이지를 찾을 수 없습니다.",
     "redirect1": "게임을 하고 싶으신가요?",
     "redirect2": "여기를 클릭"
   },
   "nutriscore": {
-    "image_alt": "cropped image",
-    "label": "Annotate Nutri-Score logo detection by batch.",
-    "description": "To do so, select all the images showing the correct/wrong Nutri-Score value ({{label}}), and click on the bottom buttons to say if you selected a set correct or wrong ones.",
-    "images_remaining": "Still {{remaining}} to annotate",
-    "image_sizes": "Image sizes",
-    "zoom_on_logo": "Zoom on logo",
+    "image_alt": "자른 이미지",
+    "label": "배치별로 Nutri-Score 로고 감지에 주석을 답니다.",
+    "description": "그러려면 정확/잘못된 뉴트리-스코어 값({{label})을 보여주는 모든 이미지를 선택하고, 아래 버튼을 클릭하여 세트를 선택했는지, 잘못 선택했는지를 알려줍니다.",
+    "images_remaining": "여전히 주석을 달기 위해 {{remaining}}",
+    "image_sizes": "이미지 크기",
+    "zoom_on_logo": "로고 확대",
     "select_all": "모두 선택",
     "deselect_all": "선택 해제",
-    "incorrect": "Wrong",
-    "correct": "Correct ({{label}})"
+    "incorrect": "잘못된",
+    "correct": "정답 ({{label}})"
   },
   "eco-score": {
-    "description": "Here is a summary of questions that could improve Eco-Score computation",
+    "description": "다음은 에코 점수 계산을 개선할 수 있는 질문 요약입니다.",
     "countryLabel": "국가"
   }
 }

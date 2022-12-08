@@ -1,18 +1,18 @@
 {
   "home": {
     "game_selector": {
-      "title": "What game would you like to play?",
+      "title": "Mitä peliä haluaisit pelata?",
       "cards": {
         "questions": {
           "title": "Kysymykset",
-          "description": "Tell us if the given image answers the questions"
+          "description": "Kerro, vastaako annettu kuva kysymyksiin"
         },
         "logos": {
           "title": "Logos",
-          "description": "Find all the logos matching the given logo"
+          "description": "Etsi kaikki logot, jotka vastaavat annettua logoa"
         },
         "eco_score": {
-          "title": "Eco-score",
+          "title": "Ekopisteet",
           "description": "Annotate the questions with the highest value"
         }
       }
@@ -21,9 +21,9 @@
       "title": "Want to make your contribution count? Create an account or sign in on Open Food Facts!",
       "log_in": "Käyttäjätunnus",
       "sign_up": "Rekisteröidy",
-      "contribution_details": "Learn why your contribution matters"
+      "contribution_details": "Opi miksi panoksellasi on merkitystä"
     },
-    "saved_filters": "Saved Filters",
+    "saved_filters": "Tallennetut suodattimet",
     "contribution_modal": {
       "title": "Your contribution matters",
       "information": "Hunger Games is an effort to leverage the results of our OCR. When you use Hunger Games by Open Food Facts, you improve our entire database which helps the community make better food choices. We gather your annotations and use them to make Open Food Facts more accurate and effecient.",
@@ -37,17 +37,17 @@
       },
       "contributorCount": {
         "title": "Osallistuja",
-        "description": "Adding a new product"
+        "description": "Uuden tuotteen lisääminen"
       },
       "photographerCount": {
-        "title": "Photographer",
-        "description": "Taking photos for a product"
+        "title": "Valokuvaaja",
+        "description": "Kuvien ottaminen tuotteelle"
       }
     }
   },
   "flagged_images": {
-    "title": "Images flagged by users",
-    "loading": "Loading"
+    "title": "Käyttäjien ilmoittamat kuvat",
+    "loading": "Ladataan…"
   },
   "questions": {
     "category": "tuoteluokka",
@@ -57,11 +57,11 @@
     "brand": "tuotemerkki",
     "brands": "Tuotemerkit",
     "quantity": "Määrä",
-    "insightTypeLabel": "Only shows",
+    "insightTypeLabel": "Näytä vain",
     "ingredients": "Ainesosat",
     "product_weight": "tuotteen paino",
     "popularity_sort": "Lajittele suosion mukaan",
-    "see_examples": "See examples of this ",
+    "see_examples": "Katso esimerkkejä tästä ",
     "no": "Ei",
     "skip": "Ohita",
     "yes": "Kyllä",
@@ -73,12 +73,12 @@
     "display_images": "Näytä kuvat",
     "annotations": "Merkinnät",
     "last_annotations": "Viimeisimmät merkinnät",
-    "remaining_annotations": "Remaining questions",
+    "remaining_annotations": "Jäljellä olevat kysymykset",
     "annotated_annotations": "Merkitty",
     "filters": {
-      "active_filter_number": "+{{count}} filters",
+      "active_filter_number": "+{{count}} suodatinta",
       "active_filter_number_one": "+{{count}} filter",
-      "active_filter_number_zero": "no filter",
+      "active_filter_number_zero": "Ei suodattimia",
       "short_label": {
         "value": "arvo",
         "country": "maa",
@@ -87,13 +87,13 @@
         "campaign": "camp"
       },
       "long_label": {
-        "type": "Question Type",
-        "value": "Proposed Value",
+        "type": "Kysymystyyppi",
+        "value": "Ehdotettu arvo",
         "country": "Product Country",
-        "brand": "Product Brand",
+        "brand": "Tuotemerkki",
         "popularity": "Lajittele suosion mukaan",
         "edit": "",
-        "campaign": "Campaign"
+        "campaign": "Kampanja"
       },
       "placeholders": {
         "value": "Value (fanta, en:organic,...)",
@@ -101,16 +101,16 @@
         "campaign": "Annotation campaigns"
       },
       "actions": {
-        "edit": "Edit Filters",
+        "edit": "Muokkaa suodattimia",
         "cancel": "Peruuta",
         "apply": "Hyväksy"
       }
     },
     "other_questions": "Other questions",
-    "send": "Send",
-    "flag": "Something wrong? Report/flag the image!",
+    "send": "Lähetä",
+    "flag": "Onko jokin vialla? Ilmoita kuvasta!",
     "unflag": "Unflag the image",
-    "reset_filters": "Reset filters",
+    "reset_filters": "Tyhjennä suodattimet",
     "log_in": "Käyttäjätunnus",
     "sign_up": "Rekisteröidy",
     "login_title": "Make your annotation count",
@@ -129,11 +129,11 @@
     "insights": "Oivallukset",
     "nutritions": "Ravintosisältö",
     "settings": "Asetukset",
-    "eco-score": "Eco-score",
+    "eco-score": "Ekopisteet",
     "nutriscore": "Nutri-Score",
-    "tour": "Show Tour",
-    "logged_in_user": "logged as {{userName}}",
-    "log_in": "click to login"
+    "tour": "Näytä esittely",
+    "logged_in_user": "kirjautunut sisään {{userName}}",
+    "log_in": "Klikkaa tästä kirjautuaksesi"
   },
   "insights": {
     "insights": "Oivallukset",
@@ -161,7 +161,7 @@
     "created_at": "Luontiaika",
     "completed_at": "Valmistumisaika",
     "automatic": "Automaattinen",
-    "human_required": "Human required",
+    "human_required": "Ihmistä vaaditaan",
     "edit_product": "Open product edit",
     "view_product": "Open product page"
   },
@@ -197,7 +197,7 @@
     "load_more": "Load more",
     "no_results": "Logoa ei löytynyt",
     "result_count": "Shows {{showing}} on {{available}} available",
-    "flag": "Something wrong? Report/flag the image!",
+    "flag": "Onko jokin vialla? Ilmoita kuvasta!",
     "unflag": "Unflag the image",
     "crop_image_title": "crop of the logo"
   },
@@ -235,23 +235,23 @@
         "title": "Eco-Score Questions Game",
         "text1": "Help us finish the remaining questions in the most high priority labels!",
         "text2": "These cards are linked to labels used in the computation of the eco-score.",
-        "text3": "<strong>What is Eco-Score?</strong>",
-        "text4": "Eco-Score captures the total environmental footprint, making it easier for consumers to compare products and decide which is better for the environment."
+        "text3": "<strong>Mitä ekopisteet ovat?</strong>",
+        "text4": "Ekopisteet ottavat huomioon ympäristöjalanjäljen kokonaisuudessaan, jolloin kuluttajien on helpompi vertailla tuotteita ja päättää, mikä on ympäristön kannalta parempaa."
       },
       "page5": {
         "title": "Asetukset",
-        "text1": "Set your preferred language, and report issues from our settings page.",
-        "text2": "If you're a developer, you can also explore our database content using our dev mode."
+        "text1": "Määritä haluamasi kieli ja raportoi ongelmista asetussivullamme.",
+        "text2": "Jos olet kehittäjä, voit myös tutustua tietokantasisältöömme kehittäjätilassamme."
       },
       "page6": {
-        "title": "Tour",
-        "text1": "Got stuck somewhere? Want to take the tour again?",
-        "text2": "Just click on the question mark and start the journey again!"
+        "title": "Kierros",
+        "text1": "Oletko juuttunut johonkin? Haluatko ottaa kierroksen uudelleen?",
+        "text2": "Napsauta kysymysmerkkiä ja aloita matka uudelleen!"
       }
     },
     "logos": {
       "page1": {
-        "title": "Selection",
+        "title": "Valinta",
         "text1": "Select the crops of a same logo by clicking on them",
         "text2": "Selected logos go to the top of the page, you can unselect them by clicking again on them"
       },
@@ -265,10 +265,10 @@
         "text1": "Indicate the type of logo (label, brand, QRcode, ...)",
         "text2": "If it is a label or a brand logo, indicate which one it is",
         "text3": "Now you can submit your selection",
-        "text4": "Thank you :)"
+        "text4": "Kiitos!"
       }
     },
-    "previous": "Prev",
+    "previous": "Edell.",
     "next": "Seuraava",
     "close": "Sulje"
   },
@@ -280,32 +280,32 @@
       "selectValue": "Select the nutritional value of: "
     },
     "steps": {
-      "1": "Crop",
-      "2": "Special values",
-      "3": "Nutriments Selection",
-      "4": "Values Selection"
+      "1": "Rajaa",
+      "2": "Erikoisarvot",
+      "3": "Ravintoaineiden valinta",
+      "4": "Arvojen valinta"
     },
     "loading": "Loading...",
-    "unknown_brand": "Brand Unknown",
+    "unknown_brand": "Tuntematon tuotemerkki",
     "value_missing": "You forgot to input value duuuuuuuuuuuuuuuuude",
-    "next": "Next Step",
-    "prev": "Prev Step",
-    "skip": "Skip this product",
-    "validate": "Validate Table",
-    "unselect_picture": "No nutrition info",
+    "next": "Seuraava vaihe",
+    "prev": "Edellinen vaihe",
+    "skip": "Ohita tämä tuote",
+    "validate": "Vahvista taulukko",
+    "unselect_picture": "Ei ravitsemustietoja",
     "basis": "data for: ",
-    "servingSize": "serving size",
+    "servingSize": "Annoskoko",
     "value": "Arvo",
     "unit": "Yksikkö",
     "nutriments": {
       "nutriment_energy-kj": "Energia (kJ)",
-      "nutriment_energy-kcal": "Energy (kCal)",
+      "nutriment_energy-kcal": "Kalorit (kCal)",
       "nutriment_fat": "Rasva",
       "nutriment_saturated-fat": "Tyydyttynyt rasva",
       "nutriment_carbohydrates": "Hiilihydraatit",
       "nutriment_sugars": "Sokerit",
       "nutriment_proteins": "Proteiinit",
-      "nutriment_fiber": "Fibers",
+      "nutriment_fiber": "Kuitu",
       "nutriment_salt": "Suola",
       "nutriment_sodium": "Natrium"
     },
@@ -313,19 +313,19 @@
       "title": "Session History",
       "status": "status",
       "product name": "product name",
-      "view": "view page",
-      "edit": "edit page",
+      "view": "Näytä sivu",
+      "edit": "Muokkaa sivua",
       "SKIP": "ignored",
-      "VALIDATED": "edited",
-      "WRONG_IMAGE": "unselected picture",
-      "close": "close",
-      "open": "open history"
+      "VALIDATED": "muokattu",
+      "WRONG_IMAGE": "valitsematon kuva",
+      "close": "Sulje",
+      "open": "avaa historia"
     }
   },
   "notfound": {
-    "image_alt": "404 not found",
-    "nopage": "Whoops! The page you're looking for can't be found.",
-    "redirect1": "Want to play some games?",
+    "image_alt": "404. Kuvaa ei löydy.",
+    "nopage": "Hupsista! Etsimääsi sivua ei löytynyt.",
+    "redirect1": "Haluatko pelata joitain pelejä?",
     "redirect2": "Click here"
   },
   "nutriscore": {
