@@ -23,6 +23,7 @@ import hr from "./hr";
 import ko from "./ko";
 import et from "./et";
 import ja from "./ja";
+import fi from "./fi";
 
 const messages = {
   en: { translation: { ...en } },
@@ -50,5 +51,6 @@ const messages = {
   ko: { translation: { ...ko } },
   et: { translation: { ...et } },
   ja: { translation: { ...ja } },
+  fi: { translation: { ...fi } },
 };
 export default messages;
