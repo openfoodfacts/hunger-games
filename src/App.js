@@ -158,7 +158,7 @@ export default function App() {
         contrastText: "#ffffff",
       },
       secondary: {
-        main: "#ffefb7",
+        main: "#f2e9e4",
         contrastText: "rgba(0, 0, 0, 0.87)",
       },
     },
