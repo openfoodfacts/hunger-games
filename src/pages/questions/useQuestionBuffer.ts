@@ -185,6 +185,7 @@ export const useQuestionBuffer = (
     brandFilter,
     countryFilter,
     campaign,
+    predictor,
   },
   pageSize,
   bufferThreshold = BUFFER_THRESHOLD,
@@ -202,6 +203,7 @@ export const useQuestionBuffer = (
     brandFilter,
     countryFilter,
     campaign,
+    predictor,
   });
   const trackAnswer = useMatomoTrackAnswerQuestion();
 
@@ -227,7 +229,8 @@ export const useQuestionBuffer = (
       filteringRef.current.brandFilter !== brandFilter ||
       filteringRef.current.countryFilter !== countryFilter ||
       filteringRef.current.valueTag !== valueTag ||
-      filteringRef.current.campaign !== campaign
+      filteringRef.current.campaign !== campaign ||
+      filteringRef.current.predictor !== predictor
     ) {
       filteringRef.current = {
         sortByPopularity,
@@ -236,6 +239,7 @@ export const useQuestionBuffer = (
         brandFilter,
         countryFilter,
         campaign,
+        predictor,
       };
       dispatch({ type: "reset" });
     }
@@ -246,6 +250,7 @@ export const useQuestionBuffer = (
     brandFilter,
     countryFilter,
     campaign,
+    predictor,
   ]);
 
   const noMoreQuestionsToLoad =

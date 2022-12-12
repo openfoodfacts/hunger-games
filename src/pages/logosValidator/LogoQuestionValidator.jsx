@@ -152,6 +152,7 @@ export default function LogoQuestionValidator({ options }) {
       countryFilter: "",
       sortByPopularity: false,
       valueTag,
+      predictor: "universal-logo-detector",
     }),
     [valueTag]
   );

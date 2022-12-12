@@ -57,6 +57,7 @@ const robotoff = {
       countryFilter,
       sortByPopularity,
       campaign,
+      predictor,
     } = filterState;
 
     const searchParams = {
@@ -65,6 +66,7 @@ const robotoff = {
       brands: reformatValueTag(brandFilter),
       country: countryFilter !== "en:world" ? countryFilter : null,
       campaign,
+      predictor,
     };
 
     const lang = getLang();
