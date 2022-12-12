@@ -22,7 +22,7 @@ import off from "../../off";
 import useUrlParams from "../../hooks/useUrlParams";
 
 const BUFFER_THRESHOLD = 10;
-const PAGE_SIZE = 200;
+const PAGE_SIZE = 50;
 
 const filterItem = (question) => {
   // For later when we will be able to knwo if the question comes from a logo detection
