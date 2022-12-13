@@ -8,6 +8,7 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import IconButton from "@mui/material/IconButton";
 import Tooltip from "@mui/material/Tooltip";
+import Checkbox from "@mui/material/Checkbox";
 
 import { Link } from "react-router-dom";
 
@@ -15,10 +16,11 @@ import { useTranslation } from "react-i18next";
 import EditIcon from "@mui/icons-material/Edit";
 import LinkIcon from "@mui/icons-material/Link";
 import { useTheme } from "@mui/system";
-import { Checkbox } from "@mui/material";
+import LogoForm from "../components/LogoForm";
+import { IS_DEVELOPMENT_MODE } from "../const";
+import robotoff from "../robotoff";
 
 const externalLogoURL = (id) => `/logos?logo_id=${id}&count=50`;
-const editLogoURL = (id) => `/logos/${id}`;
 
 const LogoCard = React.memo(
   ({
@@ -31,9 +33,24 @@ const LogoCard = React.memo(
     annotation_type,
     distance,
     readOnly,
+    editOpen,
   }) => {
     const { t } = useTranslation();
     const theme = useTheme();
+    const [editing, setEditing] = React.useState(editOpen);
+
+    const updateLogo = React.useCallback(
+      async (data) => {
+        if (data == null) {
+          return;
+        }
+        const { type, value } = data;
+        if (!IS_DEVELOPMENT_MODE) {
+          await robotoff.updateLogo(id, value, type);
+        }
+      },
+      [id]
+    );
 
     const handleClick = (event) => {
       if (event.shiftKey) {
@@ -41,6 +58,10 @@ const LogoCard = React.memo(
       } else {
         selectionApiRef.current.singleSelection?.(index, id, selected);
       }
+    };
+
+    const toggleOpenEditor = () => {
+      setEditing((prev) => !prev);
     };
 
     return (
@@ -62,7 +83,7 @@ const LogoCard = React.memo(
           sx={{ display: "flex", justifyContent: "space-between", padding: 1 }}
         >
           <Tooltip title="Edit this logo">
-            <IconButton size="small" component={Link} to={editLogoURL(id)}>
+            <IconButton size="small" onClick={toggleOpenEditor}>
               <EditIcon fontSize="inherit" />
             </IconButton>
           </Tooltip>
@@ -92,12 +113,33 @@ const LogoCard = React.memo(
             `${t("logos.distance")} ${distance.toFixed(1)}`}
         </Typography>
         <br />
-        <Typography sx={{ padding: 1 }} variant="caption">
-          {(annotation_type || annotation_value) &&
-            `${t("logos.annotation")} ${annotation_value || ""} (${
-              annotation_type || ""
-            })`}
-        </Typography>
+
+        {editOpen || editing ? (
+          <LogoForm
+            value={annotation_value}
+            type={annotation_type}
+            updateMode
+            request={updateLogo}
+            sx={{
+              "&": {
+                flexDirection: "column",
+              },
+              "& .MuiTextField-root, & .MuiButtonBase-root, & .MuiAutocomplete-root":
+                {
+                  minWidth: 0,
+                  width: "100%",
+                  margin: 0,
+                },
+            }}
+          />
+        ) : (
+          <Typography sx={{ padding: 1 }} variant="caption">
+            {(annotation_type || annotation_value) &&
+              `${t("logos.annotation")} ${annotation_value || ""} (${
+                annotation_type || ""
+              })`}
+          </Typography>
+        )}
         {!readOnly && (
           <Checkbox
             checked={selected}
@@ -113,8 +155,14 @@ const LogoCard = React.memo(
 );
 
 const LogoGrid = (props) => {
-  const { logos, toggleLogoSelection, setLogoSelectionRange, readOnly, sx } =
-    props;
+  const {
+    logos,
+    toggleLogoSelection,
+    setLogoSelectionRange,
+    readOnly,
+    sx,
+    editOpen,
+  } = props;
 
   const [lastClicked, setLastClicked] = React.useState(null);
   const selectionApiRef = React.useRef({});
@@ -187,6 +235,7 @@ const LogoGrid = (props) => {
           distance={logo.distance}
           readOnly={readOnly}
           selectionApiRef={selectionApiRef}
+          editOpen={editOpen}
         />
       ))}
     </Box>
