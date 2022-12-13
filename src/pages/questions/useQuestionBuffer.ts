@@ -188,8 +188,7 @@ export const useQuestionBuffer = (
     predictor,
   },
   pageSize,
-  bufferThreshold = BUFFER_THRESHOLD,
-  filterItem = (q) => true
+  bufferThreshold = BUFFER_THRESHOLD
 ) => {
   const [bufferState, dispatch] = React.useReducer<
     React.Reducer<ReducerStateInterface, Actions>
@@ -270,11 +269,9 @@ export const useQuestionBuffer = (
         .then(({ isLastPage, questions, availableQuestionsNb }) => {
           if (filterIsStillValid) {
             console.log("filtering");
-            const filteredQuestions = questions
-              .filter(
-                (question) => !seenInsight.current.includes(question.insight_id)
-              )
-              .filter(filterItem);
+            const filteredQuestions = questions.filter(
+              (question) => !seenInsight.current.includes(question.insight_id)
+            );
 
             const removedInsightIds = questions
               .filter((question) =>
@@ -311,7 +308,6 @@ export const useQuestionBuffer = (
     bufferState.page,
     pageSize,
     bufferThreshold,
-    filterItem,
   ]);
 
   React.useEffect(() => {
