@@ -40,10 +40,7 @@ const getFormattedValues = ({ type, value }) => {
   return { type, value: formattedValue };
 };
 
-const LogoForm = (props) => {
-  const { value, type, updateMode, request, isLoading, ...other } = props;
-  const { t } = useTranslation();
-
+export const useLogoForm = (value, type, request) => {
   const [isSending, setIsSending] = React.useState(false);
   const [innerValue, setInnerValue] = React.useState(value);
   const [innerType, setInnerType] = React.useState(type);
@@ -69,6 +66,51 @@ const LogoForm = (props) => {
         ? innerValue.toLowerCase() !== value.toLowerCase()
         : innerValue !== value));
 
+  const isValid = isValidAnnotation({
+    type: innerType || "",
+    value: innerValue,
+  });
+
+  const hasAutoComplet = ["label", "category", "packaging"].includes(innerType);
+
+  const typeControl = {
+    value: innerType,
+    onChange: (event) => setInnerType(event.target.value),
+  };
+  console.log({ innerType });
+  const valueControl = {
+    insightType: hasAutoComplet ? innerType : undefined,
+    value: innerValue,
+    onChange: hasAutoComplet
+      ? (newValue) => setInnerValue(newValue)
+      : (event) => setInnerValue(event.target.value),
+  };
+
+  return {
+    isSending,
+    send,
+    isDifferent,
+    hasAutoComplet,
+    isValid,
+    typeControl,
+    valueControl,
+  };
+};
+
+const LogoForm = (props) => {
+  const { value, type, updateMode, request, isLoading, ...other } = props;
+  const { t } = useTranslation();
+
+  const {
+    isSending,
+    send,
+    isDifferent,
+    isValid,
+    hasAutoComplet,
+    typeControl,
+    valueControl,
+  } = useLogoForm(value, type, request);
+
   return (
     <Stack
       direction={{ xs: "column", md: "row" }}
@@ -76,8 +118,7 @@ const LogoForm = (props) => {
       {...other}
     >
       <TextField
-        value={innerType}
-        onChange={(event) => setInnerType(event.target.value)}
+        {...typeControl}
         select
         label={t("logos.type")}
         sx={{ minWidth: { xs: "80%", sm: 350 } }}
@@ -89,35 +130,26 @@ const LogoForm = (props) => {
           </MenuItem>
         ))}
       </TextField>
-
-      {["label", "category", "packaging"].includes(innerType) ? (
+      {hasAutoComplet ? (
         <LabelFilter
           showKey
-          value={innerValue}
-          onChange={setInnerValue}
-          insightType={innerType}
+          {...valueControl}
           label={t("logos.value")}
           size="small"
           sx={{ minWidth: { xs: "80%", sm: 350 } }}
         />
       ) : (
         <TextField
-          value={innerValue}
-          onChange={(event) => setInnerValue(event.target.value)}
+          {...valueControl}
           label={t("logos.value")}
           sx={{ minWidth: { xs: "80%", sm: 350 } }}
           size="small"
         />
       )}
-
       <LoadingButton
         onClick={send}
         loading={isSending}
-        disabled={
-          isLoading ||
-          !isValidAnnotation({ type: innerType, value: innerValue }) ||
-          (updateMode && !isDifferent)
-        }
+        disabled={isLoading || !isValid || (updateMode && !isDifferent)}
         variant="contained"
         color="primary"
       >

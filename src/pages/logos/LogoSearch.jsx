@@ -94,7 +94,12 @@ export default function LogoSearch() {
         <LinearProgress sx={{ mt: 5 }} />
       ) : (
         <>
-          <LogoGrid logos={result.logos} toggleLogoSelection={null} readOnly />
+          <LogoGrid
+            logos={result.logos}
+            toggleLogoSelection={null}
+            readOnly
+            editOpen
+          />
 
           <Typography
             variant="h6"

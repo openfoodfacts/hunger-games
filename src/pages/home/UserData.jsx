@@ -64,7 +64,7 @@ const CountCard = (props) => {
           {t(`home.statistics.${translationKey}.description`)}
         </Typography>
         <Typography variant="h3" color="text.primary" component="div">
-          {value.toLocaleString()}
+          {value?.toLocaleString()}
         </Typography>
       </CardContent>
     </Card>
