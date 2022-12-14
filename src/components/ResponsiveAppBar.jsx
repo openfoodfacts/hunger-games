@@ -144,7 +144,6 @@ const ResponsiveAppBar = () => {
 
   React.useEffect(() => {
     if (getTour()) setIsTourOpen(true);
-    //console.log(isTourOpen);
   }, [isTourOpen]);
 
   const steps = React.useMemo(
@@ -181,7 +180,13 @@ const ResponsiveAppBar = () => {
     });
 
   return (
-    <AppBar position="static" color="secondary">
+    <AppBar
+      position="static"
+      sx={(theme) => ({
+        backgroundColor: theme.palette.cafeCreme.main,
+        color: theme.palette.cafeCreme.contrastText,
+      })}
+    >
       <Container maxWidth={null}>
         <Toolbar disableGutters>
           {/* Mobile content */}
