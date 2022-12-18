@@ -194,7 +194,6 @@ export default function EcoScore() {
         label={t("eco-score.countryLabel")}
         value={selectedCountry}
         onChange={(event) => {
-          console.log(event.target.value);
           setSelectedCountry(event.target.value);
         }}
         sx={{ width: 200 }}
