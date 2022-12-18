@@ -77,7 +77,6 @@ export const useLogoForm = (value, type, request) => {
     value: innerType,
     onChange: (event) => setInnerType(event.target.value),
   };
-
   const valueControl = {
     insightType: hasAutoComplet ? innerType : undefined,
     value: innerValue,
