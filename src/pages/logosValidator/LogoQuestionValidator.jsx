@@ -24,12 +24,6 @@ import useUrlParams from "../../hooks/useUrlParams";
 const BUFFER_THRESHOLD = 10;
 const PAGE_SIZE = 50;
 
-const filterItem = (question) => {
-  // For later when we will be able to knwo if the question comes from a logo detection
-  console.log(question);
-  return true;
-};
-
 const fetchData = async (insightId) => {
   const response = await robotoff.insightDetail(insightId);
 
@@ -178,8 +172,7 @@ export default function LogoQuestionValidator({ options, predictor }) {
   const { buffer, answerQuestion, remainingQuestionNb } = useQuestionBuffer(
     filterState,
     PAGE_SIZE,
-    BUFFER_THRESHOLD,
-    filterItem
+    BUFFER_THRESHOLD
   );
 
   const toggleSelection = (insight_id) => (event) => {
