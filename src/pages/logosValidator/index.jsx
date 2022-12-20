@@ -46,7 +46,12 @@ const INAO_OTIONS = [
 ];
 
 export const NutriscorePageValidator = () => {
-  return <LogoQuestionValidator options={NUTRISCORE_OPTIONS} />;
+  return (
+    <LogoQuestionValidator
+      options={NUTRISCORE_OPTIONS}
+      predictor="nutriscore"
+    />
+  );
 };
 
 export const INAOPageValidator = () => {

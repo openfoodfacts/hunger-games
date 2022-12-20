@@ -122,7 +122,7 @@ const LogoQuesitonCard = (props) => {
   );
 };
 
-export default function LogoQuestionValidator({ options }) {
+export default function LogoQuestionValidator({ options, predictor }) {
   const { t } = useTranslation();
 
   const [controlledState, setControlledState] = useUrlParams({
@@ -146,9 +146,9 @@ export default function LogoQuestionValidator({ options }) {
       countryFilter: "",
       sortByPopularity: false,
       valueTag,
-      predictor: "universal-logo-detector",
+      predictor: predictor ?? "universal-logo-detector",
     }),
-    [valueTag]
+    [valueTag, predictor]
   );
 
   const [selectedIds, setSelectedIds] = React.useState([]);
