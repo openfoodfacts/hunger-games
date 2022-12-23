@@ -82,13 +82,7 @@ export default function LogoSearch() {
 
   return (
     <Box sx={{ padding: 2 }}>
-      <LogoSearchForm
-        value=""
-        type=""
-        barcode=""
-        count={25}
-        validate={validate}
-      />
+      <LogoSearchForm {...searchState} validate={validate} />
 
       {isLoading ? (
         <LinearProgress sx={{ mt: 5 }} />
