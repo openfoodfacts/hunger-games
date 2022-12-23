@@ -105,7 +105,7 @@ export default function Settings() {
         ].map(({ pageUrl, pageName, isExperimental }) => (
           <FormControlLabel
             key={pageUrl}
-            checked={visiblePages[pageUrl]}
+            checked={visiblePages[pageUrl] ?? false}
             onChange={handleVisiblePagesChange(pageUrl)}
             control={<Switch />}
             label={`${t("settings.dev_page_toggle", { name: pageName })}${
