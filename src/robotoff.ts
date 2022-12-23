@@ -123,8 +123,8 @@ const robotoff = {
   getLogoAnnotations(logoId, index, count = 25) {
     const url =
       logoId.length > 0
-        ? `${ROBOTOFF_API_URL}/ann/${logoId}`
-        : `${ROBOTOFF_API_URL}/ann`;
+        ? `${ROBOTOFF_API_URL}/ann/search/${logoId}`
+        : `${ROBOTOFF_API_URL}/ann/search`;
     return axios.get(url, {
       params: removeEmptyKeys({
         index,
