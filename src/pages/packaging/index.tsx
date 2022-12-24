@@ -27,6 +27,7 @@ import ZoomableImage from "../../components/ZoomableImage";
 import { getImagesUrls } from "../questions/utils";
 import offService from "../../off";
 import { useTranslation } from "react-i18next";
+import useUrlParams from "../../hooks/useUrlParams";
 
 type CustomProps = {
   options: Option[];
@@ -243,11 +244,16 @@ const Page = () => {
   const packagingMaterials = useOptions("packaging_materials", lang);
   const packagingShapes = useOptions("packaging_shapes", lang);
   const packagingRecycling = useOptions("packaging_recycling", lang);
+  const [searchState] = useUrlParams({
+    country: "en:france",
+    creator: undefined,
+    code: "",
+  });
 
   const [rows, setRows] = React.useState([]);
   const [innerRows, setInnerRows] = React.useState([]);
 
-  const [data, next] = useBuffer();
+  const [data, next] = useBuffer(searchState);
 
   const product = data?.[0] ?? null;
   React.useEffect(() => {
