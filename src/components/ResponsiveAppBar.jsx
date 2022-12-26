@@ -19,6 +19,7 @@ import SettingsIcon from "@mui/icons-material/Settings";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import ExpandLess from "@mui/icons-material/ExpandLess";
 import ExpandMore from "@mui/icons-material/ExpandMore";
+import QuestionMarkIcon from "@mui/icons-material/QuestionMark";
 
 import DevModeContext from "../contexts/devMode";
 import LoginContext from "../contexts/login";
@@ -26,16 +27,9 @@ import logo from "../assets/logo.png";
 import { Link } from "react-router-dom";
 
 import { useTranslation } from "react-i18next";
-import Welcome, { getSteps } from "./welcome/Welcome";
+import WelcomeTour from "./welcome/Welcome";
 import { useMediaQuery } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
-
-import {
-  localSettings,
-  localSettingsKeys,
-  getTour,
-} from "../localeStorageManager";
-import Tour from "reactour";
 
 // Object with no url are subheader in the menu
 const pages = [
@@ -131,27 +125,6 @@ const ResponsiveAppBar = () => {
     setAnchorElNav(null);
   };
 
-  const handleShowTour = () => {
-    setIsTourOpen(false);
-    localSettings.update(localSettingsKeys.showTour, false);
-  };
-
-  const openTheWelcomeTour = () => {
-    setIsTourOpen(true);
-    localSettings.update(localSettingsKeys.showTour, true);
-    handleCloseNavMenu();
-  };
-
-  React.useEffect(() => {
-    if (getTour()) setIsTourOpen(true);
-    //console.log(isTourOpen);
-  }, [isTourOpen]);
-
-  const steps = React.useMemo(
-    () => getSteps({ t, withSelector: isDesktop }),
-    [t, isDesktop]
-  );
-
   const { isLoggedIn, userName, refresh } = React.useContext(LoginContext);
   const { devMode: isDevMode, visiblePages } = React.useContext(DevModeContext);
   const [menuOpenState, setMenuOpenState] = React.useState({});
@@ -181,7 +154,13 @@ const ResponsiveAppBar = () => {
     });
 
   return (
-    <AppBar position="static" color="secondary">
+    <AppBar
+      position="static"
+      sx={(theme) => ({
+        backgroundColor: theme.palette.cafeCreme.main,
+        color: theme.palette.cafeCreme.contrastText,
+      })}
+    >
       <Container maxWidth={null}>
         <Toolbar disableGutters>
           {/* Mobile content */}
@@ -292,20 +271,13 @@ const ResponsiveAppBar = () => {
                   </ListSubheader>
                 );
               })}
-              <Tour
-                steps={steps}
-                startAt={0}
-                isOpen={isTourOpen}
-                showButtons={true}
-                accentColor={theme.palette.primary.main}
-                onRequestClose={() => {
-                  handleShowTour();
-                }}
-              />
               <MenuItem
                 component="button"
                 color="inherit"
-                onClick={openTheWelcomeTour}
+                onClick={() => {
+                  setIsTourOpen(true);
+                  handleCloseNavMenu();
+                }}
               >
                 <Typography textAlign="center">{t("menu.tour")}</Typography>
               </MenuItem>
@@ -449,7 +421,15 @@ const ResponsiveAppBar = () => {
               >
                 <SettingsIcon />
               </IconButton>
-              <Welcome />
+              <IconButton
+                color="inherit"
+                onClick={() => {
+                  setIsTourOpen(true);
+                }}
+                data-welcome-tour="tour"
+              >
+                <QuestionMarkIcon />
+              </IconButton>
               <Tooltip
                 title={
                   isLoggedIn
@@ -481,6 +461,7 @@ const ResponsiveAppBar = () => {
           </Box>
         </Toolbar>
       </Container>
+      <WelcomeTour isOpen={isTourOpen} setIsOpen={setIsTourOpen} />
     </AppBar>
   );
 };
