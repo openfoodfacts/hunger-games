@@ -57,11 +57,11 @@
     "brand": "marka",
     "brands": "Markalar",
     "quantity": "Miktar",
-    "insightTypeLabel": "Only shows",
+    "insightTypeLabel": "Sadece göster",
     "ingredients": "İçindekiler",
     "product_weight": "ürün ağırlığı",
     "popularity_sort": "Popülerliğe göre sırala",
-    "see_examples": "See examples of this ",
+    "see_examples": "Bunun örneklerine bakın ",
     "no": "Hayır",
     "skip": "Atla",
     "yes": "Evet",
@@ -71,7 +71,7 @@
     "edit": "Düzenle",
     "hide_images": "Resimleri gizle (daha hızlı yükleme)",
     "display_images": "Resimleri görüntüle",
-    "annotations": "3. Annotations",
+    "annotations": "3. Ek Açıklamalar",
     "last_annotations": "Son ek açıklamalar",
     "remaining_annotations": "Kalan sorular",
     "annotated_annotations": "Açıklandı",
@@ -96,7 +96,7 @@
         "campaign": "Kampanya"
       },
       "placeholders": {
-        "value": "Value (fanta, en:organic,...)",
+        "value": "Değer (fanta, en:organik,...)",
         "brand": "auchan, danone, herta, ...",
         "campaign": "Yorumlama kampanyaları"
       },
@@ -262,9 +262,9 @@
       },
       "page3": {
         "title": "Geçerlilik",
-        "text1": "Indicate the type of logo (label, brand, QRcode, ...)",
-        "text2": "If it is a label or a brand logo, indicate which one it is",
-        "text3": "Now you can submit your selection",
+        "text1": "Logo türünü belirtin (etiket, marka, QR kodu, ...)",
+        "text2": "Etiket veya marka logosu ise hangisi olduğunu belirtiniz",
+        "text3": "Şimdi seçiminizi gönderebilirsiniz",
         "text4": "Teşekkür ederiz :)"
       }
     },
@@ -274,10 +274,10 @@
   },
   "nutrition": {
     "instructions": {
-      "cropTheTable": "Crop the image to simplify your annotation",
-      "verifyNutrimentDetected": "Indicate if the nutriment detected is correct",
-      "selectMissingNutriments": "Add missing nutriments (you can click even if the word has no box)",
-      "selectValue": "Select the nutritional value of: "
+      "cropTheTable": "Ek açıklamanızı basitleştirmek için resmi kırpın",
+      "verifyNutrimentDetected": "Tespit edilen besinin doğru olup olmadığını belirtin",
+      "selectMissingNutriments": "Eksik besinleri ekleyin (kelimenin kutusu olmasa bile tıklayabilirsiniz)",
+      "selectValue": "Besin değerini seçin: "
     },
     "steps": {
       "1": "Kırp",
@@ -291,10 +291,10 @@
     "next": "Sıradaki adım",
     "prev": "Önceki adım",
     "skip": "Bu ürünü atla",
-    "validate": "Validate Table",
+    "validate": "Tabloyu Doğrula",
     "unselect_picture": "Besin değeri yok",
     "basis": "için veri: ",
-    "servingSize": "serving size",
+    "servingSize": "porsiyon ölçüsü",
     "value": "Değer",
     "unit": "Birim",
     "nutriments": {
