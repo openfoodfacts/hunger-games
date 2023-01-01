@@ -150,16 +150,7 @@ export const LOGOS = {
 "de:ohne-gentechnik": {
     tag: "de:ohne-gentechnik",
     label: "Ohne Gentechnik",
-    link: "",
-    message: "",
     logo: "https://static.openfoodfacts.org/images/lang/fr/labels/de:ohne-gentechnik.90x90.svg",
-  },
-"en:roundtable-on-sustainable-palm-oil": {
-    tag: "en:roundtable-on-sustainable-palm-oil",
-    label: "RSPO",
-    link: "",
-    message: "",
-    logo: "https://static.openfoodfacts.org/images/lang/en/labels/roundtable-on-sustainable-palm-oil.90x90.svg",
   },
 "en:made-in-france": {
     tag: "en:made-in-france",
@@ -404,16 +395,7 @@ export const LOGOS = {
 "fr:viande-de-veau-francais": {
     tag: "fr:viande-de-veau-francais",
     label: "Viande de veau français",
-    link: "",
-    message: "",
     logo: "https://static.openfoodfacts.org/images/lang/fr/labels/viande-de-veau-francais.90x90.svg",
-  },
-"fr:societe-francaise-de-controle-de-viande-halal": {
-    tag: "fr:societe-francaise-de-controle-de-viande-halal",
-    label: "Société Française de Contrôle de Viande Halal",
-    link: "",
-    message: "",
-    logo: "https://static.openfoodfacts.org/images/lang/fr/labels/societe-francaise-de-controle-de-viande-halal.90x90.svg",
   },
 "fr:farine-de-sarrasin-francais": {
     tag: "fr:farine-de-sarrasin-francais",
