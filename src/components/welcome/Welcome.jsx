@@ -1,10 +1,9 @@
 import * as React from "react";
 import { Trans, useTranslation } from "react-i18next";
-import IconButton from "@mui/material/IconButton";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
-import QuestionMarkIcon from "@mui/icons-material/QuestionMark";
 import { useTheme } from "@mui/material/styles";
+import useControlled from "@mui/utils/useControlled";
 import useMediaQuery from "@mui/material/useMediaQuery";
 
 import Tour from "reactour";
@@ -302,26 +301,38 @@ export const getSteps = ({ t, withSelector, theme }) => [
   },
 ];
 
-const Welcome = () => {
+const Welcome = (props) => {
+  const { isOpen, setIsOpen } = props;
+
   const { t } = useTranslation();
   const theme = useTheme();
   const isDesktop = useMediaQuery(theme.breakpoints.up("md"));
 
-  const [isTourOpen, setIsTourOpen] = React.useState(false);
+  const [isTourOpen, setIsTourOpen] = useControlled({
+    controlled: isOpen,
+    default: false,
+    name: "Welcome",
+    state: "isOpen",
+  });
 
-  const handleShowTour = () => {
+  const handleCloseTour = () => {
+    setIsOpen?.(false);
     setIsTourOpen(false);
     localSettings.update(localSettingsKeys.showTour, false);
   };
 
   React.useEffect(() => {
-    if (getTour()) setIsTourOpen(true);
-  }, []);
+    if (getTour()) {
+      setIsOpen?.(true);
+      setIsTourOpen(true);
+    }
+  });
 
   const steps = React.useMemo(
     () => getSteps({ t, withSelector: isDesktop, theme }),
     [t, isDesktop, theme]
   );
+
   return (
     <>
       <Tour
@@ -331,18 +342,9 @@ const Welcome = () => {
         showButtons={true}
         accentColor={theme.palette.primary.main}
         onRequestClose={() => {
-          handleShowTour();
+          handleCloseTour();
         }}
       />
-      <IconButton
-        color="inherit"
-        onClick={() => {
-          setIsTourOpen(true);
-        }}
-        data-welcome-tour="tour"
-      >
-        <QuestionMarkIcon />
-      </IconButton>
     </>
   );
 };
