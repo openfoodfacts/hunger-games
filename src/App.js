@@ -15,13 +15,13 @@ import {
   QuestionsPage,
   InsightsPage,
   NotFoundPage,
-  NutriscorePageValidator,
-  INAOPageValidator,
   Home,
   Nutrition,
   FlaggedImages,
   ShouldLoggedinPage,
   PackagingPage,
+  LogoQuestionValidator,
+  DashBoard,
 } from "./pages";
 import ResponsiveAppBar from "./components/ResponsiveAppBar";
 import DevModeContext from "./contexts/devMode";
@@ -36,6 +36,73 @@ import LoginContext from "./contexts/login";
 import off from "./off";
 import { IS_DEVELOPMENT_MODE } from "./const";
 import ColorModeContext from "./contexts/colorMode";
+
+// OFF colors
+const latte = "#F6F3F0";
+const cappucino = "#EDE0DB";
+const latteMacchiato = "#DCC9C0";
+const mocha = "#85746C";
+const chocolate = "#341100";
+const macchiato = "#A08D84";
+const cortado = "#52443D";
+const ristreto = "#201A17";
+
+// additional top bar color between latte and cappucino
+const cafecreme = "#f2e9e4";
+
+const white = "#ffffff";
+const black = "#000000";
+
+const getToken = (colorMode) => ({
+  palette: {
+    mode: colorMode,
+    success: {
+      main: "#8bc34a",
+      contrastText: white,
+    },
+    error: {
+      main: "#ff5252",
+      contrastText: white,
+    },
+    primary: {
+      ...(colorMode === "dark"
+        ? {
+            dark: mocha,
+            main: macchiato,
+            light: macchiato,
+          }
+        : {
+            dark: ristreto,
+            main: chocolate,
+            light: cortado,
+          }),
+      contrastText: white,
+    },
+    secondary: {
+      ...(colorMode === "dark"
+        ? {
+            dark: chocolate,
+            main: cortado,
+            light: mocha,
+          }
+        : {
+            light: latte,
+            main: cappucino,
+            dark: latteMacchiato,
+          }),
+      contrastText: black,
+    },
+    cafeCreme:
+      colorMode === "dark"
+        ? { main: ristreto, contrastText: white }
+        : { main: cafecreme, contrastText: black },
+  },
+  components: {
+    MuiLink: {
+      defaultProps: { color: "inherit" },
+    },
+  },
+});
 
 const ADMINS = [
   "alex-off",
@@ -142,32 +209,7 @@ export default function App() {
     []
   );
 
-  const theme = createTheme({
-    palette: {
-      mode: mode,
-      success: {
-        main: "#8bc34a",
-        contrastText: "#ffffff",
-      },
-      error: {
-        main: "#ff5252",
-        contrastText: "#ffffff",
-      },
-      primary: {
-        main: "#ff8714",
-        contrastText: "#ffffff",
-      },
-      secondary: {
-        main: "#f2e9e4",
-        contrastText: "rgba(0, 0, 0, 0.87)",
-      },
-    },
-    components: {
-      MuiLink: {
-        defaultProps: { color: "inherit" },
-      },
-    },
-  });
+  const theme = createTheme(getToken(mode));
 
   return (
     <ColorModeContext.Provider value={colorMode}>
@@ -241,26 +283,21 @@ export default function App() {
               <Route path="/questions" element={<QuestionsPage />} />
               <Route path="/insights" element={<InsightsPage />} />
               <Route path="*" element={<NotFoundPage />} />
+              <Route path="/logoQuestion/" elemnt={<DashBoard />} />
+              <Route path="/dashboard/" element={<DashBoard />} />
               <Route
-                path="/nutriscore"
+                path="/logoQuestion/:valueTag"
                 element={
                   userState.isLoggedIn ? (
-                    <NutriscorePageValidator />
+                    <LogoQuestionValidator />
                   ) : (
                     <ShouldLoggedinPage />
                   )
                 }
               />
-              <Route
-                path="/inao"
-                element={
-                  userState.isLoggedIn ? (
-                    <INAOPageValidator />
-                  ) : (
-                    <ShouldLoggedinPage />
-                  )
-                }
-              />
+              {/*  To delete in 2024 */}
+              <Route path="/nutriscore" element={<DashBoard />} />
+              <Route path="/inao" element={<DashBoard />} />
 
               <Route
                 path="/nutrition"
