@@ -164,9 +164,12 @@ export const LOGOS = {
 "en:made-in-france": {
     tag: "en:made-in-france",
     label: "Fabriqué en France",
-    link: "",
-    message: "",
     logo: "https://static.openfoodfacts.org/images/lang/en/labels/made-in-france.90x90.svg",
+  },
+  "en:produced-in-brittany": {
+    tag: "en:produced-in-brittany",
+    label: "Produit en Bretagne",
+    logo: "https://fr.openfoodfacts.org/images/lang/fr/labels/produit-en-bretagne.90x90.png",
   },
 "en:transformed-in-france": {
     tag: "en:transformed-in-france",
