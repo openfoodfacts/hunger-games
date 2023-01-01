@@ -882,24 +882,23 @@ export const LOGOS = {
     logo: "https://world-fr.openfoodfacts.org/images/lang/de/packaging/einwegpfand.70x90.svg",
   },
     // To-Do add Halal logos
-  },
   "en:halal-food-council-of-europe": {
-    tag: "en:halal-food-council-of-europe"
+    tag: "en:halal-food-council-of-europe",
     label: "Halal Food Council of Europe",
     logo: "https://world-fr.openfoodfacts.org/images/lang/en/labels/halal-food-council-of-europe.188x90.svg",
   },
   "fr:societe-francaise-de-controle-de-viande-halal": {
-    tag: "fr:societe-francaise-de-controle-de-viande-halal"
+    tag: "fr:societe-francaise-de-controle-de-viande-halal",
     label: "Société francaise-de-controle-de-viande-halal",
     logo: "https://world-fr.openfoodfacts.org/images/lang/en/labels/societe-francaise-de-controle-de-viande-halal.188x90.svg",
   },
   "fr:controle-de-la-mosquee-d-evry-courcouronnes": {
-    tag: "fr:controle-de-la-mosquee-d-evry-courcouronnes"
+    tag: "fr:controle-de-la-mosquee-d-evry-courcouronnes",
     label: "Contrôle-de-la-mosquee-d-evry-courcouronnes",
     logo: "https://world-fr.openfoodfacts.org/images/lang/en/labels/controle-de-la-mosquee-d-evry-courcouronnes.188x90.svg",
   },
   "fr:association-rituelle-de-la-grande-mosquee-de-lyon": {
-    tag: "fr:association-rituelle-de-la-grande-mosquee-de-lyon"
+    tag: "fr:association-rituelle-de-la-grande-mosquee-de-lyon",
     label: "association-rituelle-de-la-grande-mosquee-de-lyon",
     logo: "https://world-fr.openfoodfacts.org/images/lang/en/labels/association-rituelle-de-la-grande-mosquee-de-lyon.188x90.svg",
   },
