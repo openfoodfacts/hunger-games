@@ -206,9 +206,7 @@ export const LOGOS = {
 "fr:fruits-et-legumes-de-france": {
     tag: "fr:fruits-et-legumes-de-france",
     label: "Fruits et Légumes de France",
-    link: "",
-    message: "",
-    logo: "https://static.openfoodfacts.org/images/lang/fr/labels/fruits-et-legumes-de-france.90x90.svg",
+    logo: "https://static.openfoodfacts.org/images/lang/fr/labels/fruits-et-legumes-de-france.94x90.png",
   },
 "en:grown-in-france": {
     tag: "en:grown-in-france",
@@ -332,23 +330,17 @@ export const LOGOS = {
 "en:french-poultry": {
     tag: "en:french-poultry",
     label: "Volaille Française",
-    link: "",
-    message: "",
-    logo: "https://static.openfoodfacts.org/images/lang/en/labels/french-poultry.90x90.svg",
+    logo: "https://fr.openfoodfacts.org/images/lang/fr/labels/volaille-francaise.94x90.png",
   },
 "en:french-pork": {
     tag: "en:french-pork",
     label: "Viande Porcine Française",
-    link: "",
-    message: "",
-    logo: "https://static.openfoodfacts.org/images/lang/en/labels/french-pork.90x90.svg",
+    logo: "https://static.openfoodfacts.org/images/lang/fr/labels/viande-porcine-francaise.94x90.png",
   },
 "en:french-beef": {
     tag: "en:french-beef",
     label: "Viande Bovine Française",
-    link: "",
-    message: "",
-    logo: "https://static.openfoodfacts.org/images/lang/en/labels/french-beef.90x90.svg",
+    logo: "https://static.openfoodfacts.org/images/lang/fr/labels/viande-bovine-francaise.94x90.png",
   },
 "en:french-milk": {
     tag: "en:french-milk",
