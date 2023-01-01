@@ -146,7 +146,7 @@ export default function LogoQuestionValidator({ options, predictor }) {
       countryFilter: "",
       sortByPopularity: false,
       valueTag,
-      predictor: predictor ?? "universal-logo-detector",
+      predictor,
     }),
     [valueTag, predictor]
   );
