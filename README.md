@@ -70,7 +70,11 @@ Fetch categories and labels taxonomy from OpenFoodFacts static files, and genera
 
 
 ## How to define a dashboard
-- src/pages/logosValidator/dashboardDefinition.ts
+
+Go to `src/pages/logosValidator/dashboardDefinition.ts`. You have two objects to edit:
+- `LOGOS` which contains the logos available in dashboards. Add the logos you need by providing at least `tag`, `label`, and `logo` properties.
+- `DASHBOARD` which for a dashboard associates an array of logos.
+
 
 ## How you can help
 
