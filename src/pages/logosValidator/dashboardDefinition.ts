@@ -96,7 +96,7 @@ export const LOGOS = {
     link: "https://www.inao.gouv.fr/Les-signes-officiels-de-la-qualite-et-de-l-origine-SIQO/Label-Rouge",
     logo: "https://static.openfoodfacts.org/images/lang/fr/labels/label-rouge.90x90.svg",
   },
-  // Various origins
+  // Various origins.
   "en:fsc-mix": {
     tag: "en:fsc-mix",
     label: "FSC Mix",
