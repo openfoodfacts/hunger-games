@@ -97,8 +97,8 @@ export default function Settings() {
             isExperimental: true,
           },
           {
-            pageUrl: "nutriscore",
-            pageName: "nutriscore",
+            pageUrl: "dashboard",
+            pageName: "dashboard",
             isExperimental: false,
           },
           { pageUrl: "insights", pageName: "insights", isExperimental: false },

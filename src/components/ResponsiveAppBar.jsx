@@ -69,7 +69,8 @@ const pages = [
   },
   { translationKey: "menu.manage" },
   { url: "insights", translationKey: "menu.insights", devModeOnly: true },
-  { url: "nutriscore", translationKey: "menu.nutriscore", devModeOnly: true },
+  { url: "dashboard", translationKey: "menu.dashboard", devModeOnly: true },
+  // { url: "nutriscore", translationKey: "menu.nutriscore", devModeOnly: true },
   { url: "settings", translationKey: "menu.settings", mobileOnly: true },
 ];
 
