@@ -68,6 +68,10 @@ Generate the JSON file `src/assets/countries.json` which contains all the countr
 
 Fetch categories and labels taxonomy from OpenFoodFacts static files, and generate JSON files used by the `Autocomplete` fields.
 
+
+## How to define a dashboard
+- src/pages/logosValidator/dashboardDefinition.ts
+
 ## How you can help
 
 For developers, you can have a look at [good first issues](https://github.com/openfoodfacts/hunger-games/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc+label%3A%22good+first+issue%22) or ask on [slack](https://slack.openfoodfacts.org/) in hunger-games channel.
