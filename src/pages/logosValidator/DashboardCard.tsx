@@ -88,8 +88,7 @@ const DashboardCard = (props: LogoDefinition) => {
               {label}
             </Typography>
             <Typography variant="body2" color="text.secondary">
-              {message}
-              {link && <Link href={link}>More info</Link>}
+              {message} {link && <Link href={link}>More info</Link>}
             </Typography>
           </CardContent>
           <CardActions>
