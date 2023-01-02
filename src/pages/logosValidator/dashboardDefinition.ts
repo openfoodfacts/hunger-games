@@ -678,21 +678,6 @@ export const LOGOS = {
     label: "Einwegpfand",
     logo: "https://world-fr.openfoodfacts.org/images/lang/de/packaging/einwegpfand.70x90.svg",
   },
-  "en:fsc": {
-    tag: "en:fsc",
-    label: "FSC",
-    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/fsc.70x90.svg",
-  },
-  "en:fsc-mix": {
-    tag: "en:fsc-mix",
-    label: "FSC-Mix",
-    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/fsc.70x90.svg",
-  },
-  "en:pefc": {
-    tag: "en:pefc",
-    label: "PEFC",
-    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/pefc.70x90.svg",
-  },
   // To-Do add Halal logos
   "en:halal-food-council-of-europe": {
     tag: "en:halal-food-council-of-europe",
