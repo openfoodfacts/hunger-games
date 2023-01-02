@@ -236,12 +236,12 @@ export const LOGOS = {
   "en:apples-from-france": {
     tag: "en:apples-from-france",
     label: "Pommes de France",
-    logo: "https://static.openfoodfacts.org/images/lang/fr/labels/pommes-de-france.90x90.svg",
+    logo: "https://static.openfoodfacts.org/images/lang/fr/labels/pommes-de-france.90x90.png",
   },
   "en:egg-laid-in-france": {
     tag: "en:egg-laid-in-france",
     label: "Pondu en France",
-    logo: "https://static.openfoodfacts.org/images/lang/fr/labels/oeufs-de-france.90x90.svg",
+    logo: "https://static.openfoodfacts.org/images/lang/fr/labels/oeufs-de-france.96x90.png",
   },
   "fr:fruits-de-france": {
     tag: "fr:fruits-de-france",
@@ -251,7 +251,7 @@ export const LOGOS = {
   "fr:tomates-de-france": {
     tag: "fr:tomates-de-france",
     label: "Tomates de France",
-    logo: "https://static.openfoodfacts.org/images/lang/fr/labels/tomates-de-france.90x90.svg",
+    logo: "https://static.openfoodfacts.org/images/lang/fr/labels/tomates-de-france.90x90.png",
   },
   "en:qualite-france-french-quality": {
     tag: "en:qualite-france-french-quality",
@@ -301,17 +301,17 @@ export const LOGOS = {
   "fr:Ble-français": {
     tag: "fr:Ble-français",
     label: "Blé français",
-    logo: "https://static.openfoodfacts.org/images/lang/fr/labels/Ble-français.90x90.svg",
+    logo: "https://static.openfoodfacts.org/images/lang/fr/labels/ble-francais.90x90.svg",
   },
   "fr:Soja-Français": {
     tag: "fr:Soja-Français",
     label: "Soja Français",
-    logo: "https://static.openfoodfacts.org/images/lang/fr/labels/Soja-Français.90x90.svg",
+    logo: "https://static.openfoodfacts.org/images/lang/fr/labels/soja-francais.90x90.svg",
   },
   "fr:Soja-Français-sans-OGM": {
     tag: "fr:Soja-Français-sans-OGM",
     label: "Soja Français sans OGM",
-    logo: "https://static.openfoodfacts.org/images/lang/fr/labels/Soja-Français-sans-OGM.90x90.svg",
+    logo: "https://static.openfoodfacts.org/images/lang/fr/labels/soja-francais-sans-OGM.90x90.svg",
   },
   "fr:poulet-francais": {
     tag: "fr:poulet-francais",
@@ -321,37 +321,37 @@ export const LOGOS = {
   "fr:lapin-francais": {
     tag: "fr:lapin-francais",
     label: "Lapin Français",
-    logo: "https://static.openfoodfacts.org/images/lang/fr/labels/lapin-francais.90x90.svg",
+    logo: "https://static.openfoodfacts.org/images/lang/fr/labels/lapin-de-france.90x90.png",
   },
   "fr:french-duck": {
     tag: "fr:french-duck",
     label: "Canard Français",
-    logo: "https://static.openfoodfacts.org/images/lang/fr/labels/french-duck.90x90.svg",
+    logo: "https://static.openfoodfacts.org/images/lang/fr/labels/french-duck.90x90.png",
   },
   "fr:viande-de-veau-francais": {
     tag: "fr:viande-de-veau-francais",
     label: "Viande de veau français",
-    logo: "https://static.openfoodfacts.org/images/lang/fr/labels/viande-de-veau-francais.90x90.svg",
+    logo: "https://static.openfoodfacts.org/images/lang/fr/labels/viande-de-veau-francais.90x90.png",
   },
   "fr:farine-de-sarrasin-francais": {
     tag: "fr:farine-de-sarrasin-francais",
     label: "Farine de sarrasin français",
-    logo: "https://static.openfoodfacts.org/images/lang/fr/labels/farine-de-sarrasin-francais.90x90.svg",
+    logo: "https://static.openfoodfacts.org/images/lang/fr/labels/farine-de-sarrasin-francais.90x90.png",
   },
   "fr:peche-francaise": {
     tag: "fr:peche-francaise",
     label: "Pêche française",
-    logo: "https://static.openfoodfacts.org/images/lang/fr/labels/peche-francaise.90x90.svg",
+    logo: "https://static.openfoodfacts.org/images/lang/fr/labels/peche-francaise.90x90.png",
   },
   "fr:viande-ovine-francaise": {
     tag: "fr:viande-ovine-francaise",
     label: "Viande Ovine Française",
-    logo: "https://static.openfoodfacts.org/images/lang/fr/labels/viande-ovine-francaise.90x90.svg",
+    logo: "https://static.openfoodfacts.org/images/lang/fr/labels/viande-ovine-francaise.90x90.png",
   },
   "fr:viande-d-agneau-francais": {
     tag: "fr:viande-d-agneau-francais",
     label: "Viande d'agneau français",
-    logo: "https://static.openfoodfacts.org/images/lang/fr/labels/viande-d-agneau-francais.90x90.svg",
+    logo: "https://static.openfoodfacts.org/images/lang/fr/labels/viande-d-agneau-francais.90x90.png",
   },
 
   // Eco-score
@@ -702,17 +702,17 @@ export const LOGOS = {
   "fr:societe-francaise-de-controle-de-viande-halal": {
     tag: "fr:societe-francaise-de-controle-de-viande-halal",
     label: "Société française de contrôle de viande halal",
-    logo: "https://world-fr.openfoodfacts.org/images/lang/fr/labels/societe-francaise-de-controle-de-viande-halal.90x90.svg",
+    logo: "https://world-fr.openfoodfacts.org/images/lang/fr/labels/societe-francaise-de-controle-de-viande-halal.90x90.png",
   },
   "fr:controle-de-la-mosquee-d-evry-courcouronnes": {
     tag: "fr:controle-de-la-mosquee-d-evry-courcouronnes",
     label: "Contrôle de la mosquée d'Evry-Courcouronnes",
-    logo: "https://world-fr.openfoodfacts.org/images/lang/fr/labels/controle-de-la-mosquee-d-evry-courcouronnes.90x90.svg",
+    logo: "https://world-fr.openfoodfacts.org/images/lang/fr/labels/controle-de-la-mosquee-d-evry-courcouronnes.90x90.png",
   },
   "fr:association-rituelle-de-la-grande-mosquee-de-lyon": {
     tag: "fr:association-rituelle-de-la-grande-mosquee-de-lyon",
     label: "Association rituelle de la grande mosquée de Lyon",
-    logo: "https://world-fr.openfoodfacts.org/images/lang/fr/labels/association-rituelle-de-la-grande-mosquee-de-lyon.88x90.svg",
+    logo: "https://world-fr.openfoodfacts.org/images/lang/fr/labels/association-rituelle-de-la-grande-mosquee-de-lyon.88x90.png",
   },
   // To-Do add Other scores logos
 };
