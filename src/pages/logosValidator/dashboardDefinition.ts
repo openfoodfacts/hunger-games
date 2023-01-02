@@ -191,7 +191,7 @@ export const LOGOS = {
   "en:french-eggs": {
     tag: "en:french-eggs",
     label: "Oeufs de France",
-    logo: "https://static.openfoodfacts.org/images/lang/en/labels/french-eggs.90x90.svg",
+    logo: "https://static.openfoodfacts.org/images/lang/fr/labels/oeufs-de-france.96x90.png",
   },
   "en:potatoes-from-france": {
     tag: "en:potatoes-from-france",
