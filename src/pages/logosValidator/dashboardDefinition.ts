@@ -105,7 +105,7 @@ export const LOGOS = {
   "en:fsc": {
     tag: "en:fsc",
     label: "FSC",
-    logo: "https://static.openfoodfacts.org/images/lang/en/labels/fsc.73x90.png",
+    logo: "https://static.openfoodfacts.org/images/lang/en/packaging/fsc.90x90.svg",
   },
   "en:pefc": {
     tag: "en:pefc",
@@ -687,17 +687,17 @@ export const LOGOS = {
   "fr:societe-francaise-de-controle-de-viande-halal": {
     tag: "fr:societe-francaise-de-controle-de-viande-halal",
     label: "Société française de contrôle de viande halal",
-    logo: "https://world-fr.openfoodfacts.org/images/lang/en/labels/societe-francaise-de-controle-de-viande-halal.188x90.svg",
+    logo: "https://world-fr.openfoodfacts.org/images/lang/fr/labels/societe-francaise-de-controle-de-viande-halal.90x90.svg",
   },
   "fr:controle-de-la-mosquee-d-evry-courcouronnes": {
     tag: "fr:controle-de-la-mosquee-d-evry-courcouronnes",
     label: "Contrôle de la mosquée d'Evry-Courcouronnes",
-    logo: "https://world-fr.openfoodfacts.org/images/lang/en/labels/controle-de-la-mosquee-d-evry-courcouronnes.188x90.svg",
+    logo: "https://world-fr.openfoodfacts.org/images/lang/fr/labels/controle-de-la-mosquee-d-evry-courcouronnes.90x90.svg",
   },
   "fr:association-rituelle-de-la-grande-mosquee-de-lyon": {
     tag: "fr:association-rituelle-de-la-grande-mosquee-de-lyon",
     label: "Association rituelle de la grande mosquée de Lyon",
-    logo: "https://world-fr.openfoodfacts.org/images/lang/en/labels/association-rituelle-de-la-grande-mosquee-de-lyon.188x90.svg",
+    logo: "https://world-fr.openfoodfacts.org/images/lang/fr/labels/association-rituelle-de-la-grande-mosquee-de-lyon.88x90.svg",
   },
   // To-Do add Other scores logos
 };
