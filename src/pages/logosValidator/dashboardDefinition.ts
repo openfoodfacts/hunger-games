@@ -136,7 +136,7 @@ export const LOGOS = {
   "de:ohne-gentechnik": {
     tag: "de:ohne-gentechnik",
     label: "Ohne Gentechnik",
-    logo: "https://static.openfoodfacts.org/images/lang/fr/labels/de:ohne-gentechnik.90x90.svg",
+    logo: "https://static.openfoodfacts.org/images/lang/de/labels/ohne-gentechnik.90x90.svg",
   },
   "en:made-in-france": {
     tag: "en:made-in-france",
