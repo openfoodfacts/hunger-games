@@ -130,7 +130,7 @@
     "nutritions": "Nutrition facts",
     "settings": "Settings",
     "eco-score": "Eco-ацэнка",
-    "nutriscore": "Nutri-Score",
+    "dashboard": "Logos dashboard",
     "tour": "Show Tour",
     "logged_in_user": "увайшоў(ла) як {{userName}}",
     "log_in": "націсніце, каб увайсці"
@@ -299,13 +299,13 @@
     "unit": "Unit",
     "nutriments": {
       "nutriment_energy-kj": "Energy (kJ)",
-      "nutriment_energy-kcal": "Energy (kCal)",
+      "nutriment_energy-kcal": "Энергія (кКал)",
       "nutriment_fat": "Fat",
       "nutriment_saturated-fat": "Saturated fat",
       "nutriment_carbohydrates": "Carbohydrate",
       "nutriment_sugars": "Sugars",
       "nutriment_proteins": "Proteins",
-      "nutriment_fiber": "Fibers",
+      "nutriment_fiber": "Валокны",
       "nutriment_salt": "Salt",
       "nutriment_sodium": "Sodium"
     },
@@ -324,12 +324,12 @@
   },
   "notfound": {
     "image_alt": "404: не знойдзена",
-    "nopage": "Whoops! The page you're looking for can't be found.",
-    "redirect1": "Want to play some games?",
-    "redirect2": "Click here"
+    "nopage": "Вой! Старонка, якую вы шукаеце, не знойдзена.",
+    "redirect1": "Хочаце згуляць?",
+    "redirect2": "Націсніце тут"
   },
   "nutriscore": {
-    "image_alt": "cropped image",
+    "image_alt": "абрэзаная выява",
     "label": "Annotate Nutri-Score logo detection by batch.",
     "description": "To do so, select all the images showing the correct/wrong Nutri-Score value ({{label}}), and click on the bottom buttons to say if you selected a set correct or wrong ones.",
     "images_remaining": "Still {{remaining}} to annotate",
