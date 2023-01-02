@@ -110,6 +110,7 @@ export const LOGOS = {
   "en:pefc": {
     tag: "en:pefc",
     label: "PEFC",
+// logo does not exist
     logo: "https://static.openfoodfacts.org/images/lang/en/labels/pefc.90x90.svg",
   },
   "en:green-dot": {
@@ -120,12 +121,14 @@ export const LOGOS = {
   "fr:triman": {
     tag: "fr:triman",
     label: "Triman (means it's actually recyclable)",
+// logo does not exist yet
     logo: "https://static.openfoodfacts.org/images/lang/fr/labels/triman.90x90.svg",
   },
 
   "en:dolphin-safe": {
     tag: "en:dolphin-safe",
     label: "Dolphin Safe",
+// logo does not exist yet
     logo: "https://static.openfoodfacts.org/images/lang/en/labels/dolphin-safe.90x90.svg",
   },
   "en:canada-organic": {
@@ -141,6 +144,7 @@ export const LOGOS = {
   "en:made-in-france": {
     tag: "en:made-in-france",
     label: "Fabriqué en France",
+// logo does not exist yet
     logo: "https://static.openfoodfacts.org/images/lang/en/labels/made-in-france.90x90.svg",
   },
   "en:produced-in-brittany": {
@@ -151,26 +155,31 @@ export const LOGOS = {
   "en:transformed-in-france": {
     tag: "en:transformed-in-france",
     label: "Transformé en France",
+    // logo does not exist yet
     logo: "https://static.openfoodfacts.org/images/lang/en/labels/transformed-in-france.90x90.svg",
   },
   "fr:origine-france": {
     tag: "fr:origine-france",
     label: "Origine France",
+    // logo does not exist yet
     logo: "https://static.openfoodfacts.org/images/lang/fr/labels/origine-france.90x90.svg",
   },
   "en:packaged-in-france": {
     tag: "en:packaged-in-france",
     label: "Conditionné en France",
+    // logo does not exist yet
     logo: "https://static.openfoodfacts.org/images/lang/en/labels/packaged-in-france.90x90.svg",
   },
   "en:french-agriculture": {
     tag: "en:french-agriculture",
     label: "Agriculture France",
+    // logo does not exist yet
     logo: "https://static.openfoodfacts.org/images/lang/en/labels/french-agriculture.90x90.svg",
   },
   "en:cooked-in-france": {
     tag: "en:cooked-in-france",
     label: "Cuisiné en France",
+    // logo does not exist yet
     logo: "https://static.openfoodfacts.org/images/lang/en/labels/cooked-in-france.90x90.svg",
   },
   "fr:fruits-et-legumes-de-france": {
@@ -201,7 +210,8 @@ export const LOGOS = {
   "en:max-havelaar-france": {
     tag: "en:max-havelaar-france",
     label: "Max Havelaar France",
-    logo: "https://static.openfoodfacts.org/images/lang/en/labels/max-havelaar-france.90x90.svg",
+// does not exist
+    logo: "https://static.openfoodfacts.org/images/lang/fr/labels/max-havelaar-france.90x90.svg",
   },
   "fr:sud-de-france": {
     tag: "fr:sud-de-france",
@@ -226,12 +236,12 @@ export const LOGOS = {
   "en:apples-from-france": {
     tag: "en:apples-from-france",
     label: "Pommes de France",
-    logo: "https://static.openfoodfacts.org/images/lang/en/labels/apples-from-france.90x90.svg",
+    logo: "https://static.openfoodfacts.org/images/lang/fr/labels/pommes-de-france.90x90.svg",
   },
   "en:egg-laid-in-france": {
     tag: "en:egg-laid-in-france",
     label: "Pondu en France",
-    logo: "https://static.openfoodfacts.org/images/lang/en/labels/egg-laid-in-france.90x90.svg",
+    logo: "https://static.openfoodfacts.org/images/lang/fr/labels/oeufs-de-france.90x90.svg",
   },
   "fr:fruits-de-france": {
     tag: "fr:fruits-de-france",
@@ -286,7 +296,7 @@ export const LOGOS = {
   "fr:Farine-de-ble-français": {
     tag: "fr:Farine-de-ble-français",
     label: "Farine de blé français",
-    logo: "https://static.openfoodfacts.org/images/lang/fr/labels/Farine-de-ble-français.90x90.svg",
+    logo: "https://static.openfoodfacts.org/images/lang/fr/labels/farine-de-ble-français.90x90.svg",
   },
   "fr:Ble-français": {
     tag: "fr:Ble-français",
@@ -400,203 +410,203 @@ export const LOGOS = {
   "1-pet": {
     tag: "1-pet",
     label: "1-PET",
-    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/01-PET.73x90.svg",
+    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/01-pet.73x90.svg",
   },
   "1-PETE": {
     tag: "1-PETE",
     label: "1-PETE",
-    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/1-PETE.73x90.svg",
+    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/1-pet.73x90.svg",
   },
   "2-PEHD": {
     tag: "2-PEHD",
     label: "2-PEHD",
-    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/02-PE-HD.73x90.svg",
+    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/02-pe-hd.73x90.svg",
   },
   "2-HDPE": {
     tag: "2-HDPE",
     label: "2-HDPE",
-    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/02-PE-HD.73x90.svg",
+    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/02-pe-hd.73x90.svg",
   },
   "3-PVC": {
     tag: "3-PVC",
     label: "3-PVC",
-    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/03-PVC.73x90.svg",
+    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/03-pvc.73x90.svg",
   },
   "4-PELD": {
     tag: "4-PELD",
     label: "4-PELD",
     // does not exist
-    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/04-PELD.73x90.svg",
+    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/04-ldpe.73x90.svg",
   },
   "4-LDPE": {
     tag: "4-LDPE",
     label: "4-LDPE",
-    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/4-LDPE.73x90.svg",
+    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/4-ldpe.73x90.svg",
   },
   "5-PP": {
     tag: "5-PP",
     label: "5-PP",
-    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/05-PP.73x90.svg",
+    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/05-pp.73x90.svg",
   },
   "06-PS": {
     tag: "06-PS",
     label: "06-PS",
-    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/06-PS.73x90.svg",
+    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/06-ps.73x90.svg",
   },
   "7-O": {
     tag: "7-O",
     label: "7-O",
-    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/07-O.73x90.svg",
+    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/07-o.73x90.svg",
   },
   "8-Lead": {
     tag: "8-Lead",
     label: "8-Lead",
-    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/8-Lead.73x90.svg",
+    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/8-lead.73x90.svg",
   },
   "9-Alkaline": {
     tag: "9-Alkaline",
     label: "9-Alkaline",
-    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/9-Alkaline.73x90.svg",
+    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/9-alkaline.73x90.svg",
   },
   "10-NiCD": {
     tag: "10-NiCD",
     label: "10-NiCD",
-    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/10-NiCD.73x90.svg",
+    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/10-nicd.73x90.svg",
   },
   "11-NiMH": {
     tag: "11-NiMH",
     label: "11-NiMH",
-    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/11-NiMH.73x90.svg",
+    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/11-nimh.73x90.svg",
   },
   "12-Li": {
     tag: "12-Li",
     label: "12-Li",
-    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/12-Li.73x90.svg",
+    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/12-li.73x90.svg",
   },
   "13-SO(Z)": {
     tag: "13-SO(Z)",
     label: "13-SO(Z)",
-    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/13-SO(Z).73x90.svg",
+    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/13-soz.73x90.svg",
   },
   "14-CZ": {
     tag: "14-CZ",
     label: "14-CZ",
-    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/14-CZ.73x90.svg",
+    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/14-cz.73x90.svg",
   },
   "20-PAP": {
     tag: "20-PAP",
     label: "20-PAP",
-    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/20-PAP.73x90.svg",
+    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/20-pap.73x90.svg",
   },
   "21-PAP": {
     tag: "21-PAP",
     label: "21-PAP",
-    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/21-PAP.73x90.svg",
+    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/21-pap.73x90.svg",
   },
   "22-PAP": {
     tag: "22-PAP",
     label: "22-PAP",
-    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/22-PAP.73x90.svg",
+    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/22-pap.73x90.svg",
   },
   "40-FE": {
     tag: "40-FE",
     label: "40-FE",
-    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/40-FE.73x90.svg",
+    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/40-fr.73x90.svg",
   },
   "41-ALU": {
     tag: "41-ALU",
     label: "41-ALU",
-    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/41-ALU.73x90.svg",
+    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/41-alu.73x90.svg",
   },
   "50-FOR": {
     tag: "50-FOR",
     label: "50-FOR",
-    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/50-FOR.73x90.svg",
+    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/50-for.73x90.svg",
   },
   "51-FOR": {
     tag: "51-FOR",
     label: "51-FOR",
-    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/51-FOR.73x90.svg",
+    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/51-for.73x90.svg",
   },
   "60-COT": {
     tag: "60-COT",
     label: "60-COT",
-    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/60-COT.73x90.svg",
+    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/60-cot.73x90.svg",
   },
   "61-TEX": {
     tag: "61-TEX",
     label: "61-TEX",
-    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/61-TEX.73x90.svg",
+    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/61-tex.73x90.svg",
   },
   "62-TEX": {
     tag: "62-TEX",
     label: "62-TEX",
-    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/62-TEX.73x90.svg",
+    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/62-tex.73x90.svg",
   },
   "69-TEX": {
     tag: "69-TEX",
     label: "69-TEX",
-    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/69-TEX.73x90.svg",
+    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/69-tex.73x90.svg",
   },
   "70-GL": {
     tag: "70-GL",
     label: "70-GL",
-    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/70-GL.73x90.svg",
+    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/70-gl.73x90.svg",
   },
   "71-GL": {
     tag: "71-GL",
     label: "71-GL",
-    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/71-GL.73x90.svg",
+    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/71-gl.73x90.svg",
   },
   "72-GL": {
     tag: "72-GL",
     label: "72-GL",
-    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/72-GL.73x90.svg",
+    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/72-gl.73x90.svg",
   },
   "73-GL": {
     tag: "73-GL",
     label: "73-GL",
-    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/73-GL.73x90.svg",
+    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/73-gl.73x90.svg",
   },
   "74-GL": {
     tag: "74-GL",
     label: "74-GL",
-    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/74-GL.73x90.svg",
+    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/74-gl.73x90.svg",
   },
   "75-GL": {
     tag: "75-GL",
     label: "75-GL",
-    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/75-GL.73x90.svg",
+    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/75-gl.73x90.svg",
   },
   "76-GL": {
     tag: "76-GL",
     label: "76-GL",
-    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/76-GL.73x90.svg",
+    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/76-gl.73x90.svg",
   },
   "77-GL": {
     tag: "77-GL",
     label: "77-GL",
-    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/77-GL.73x90.svg",
+    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/77-gl.73x90.svg",
   },
   "78-GL": {
     tag: "78-GL",
     label: "78-GL",
-    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/78-GL.73x90.svg",
+    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/78-gl.73x90.svg",
   },
   "79-GL": {
     tag: "79-GL",
     label: "79-GL",
-    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/79-GL.73x90.svg",
+    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/79-gl.73x90.svg",
   },
   "80-Paper": {
     tag: "80-Paper",
     label: "80-Paper",
-    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/80-Paper.73x90.svg",
+    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/80-paper73x90.svg",
   },
   "81-PapPet": {
     tag: "81-PapPet",
     label: "81-PapPet",
-    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/81-PapPet.73x90.svg",
+    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/81-pappet.73x90.svg",
   },
   "82": {
     tag: "82",
@@ -616,7 +626,7 @@ export const LOGOS = {
   "84-PapAl": {
     tag: "84-PapAl",
     label: "84-PapAl",
-    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/84-PapAl.73x90.svg",
+    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/84-papal.73x90.svg",
   },
   "85": {
     tag: "85",
@@ -626,7 +636,7 @@ export const LOGOS = {
   "87-CSL": {
     tag: "87-CSL",
     label: "87-CSL",
-    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/87-CSL.73x90.svg",
+    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/87-csl.73x90.svg",
   },
   "90": {
     tag: "90",
