@@ -115,7 +115,7 @@ export const LOGOS = {
   "en:green-dot": {
     tag: "en:green-dot",
     label: "Green Dot (means the manufacturer paid a contribution to CITEO)",
-    logo: "https://static.openfoodfacts.org/images/lang/en/labels/green-dot.90x90.svg",
+    logo: "https://static.openfoodfacts.org/images/lang/en/packaging/green-dot.90x90.svg",
   },
   "fr:triman": {
     tag: "fr:triman",
