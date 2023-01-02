@@ -196,7 +196,7 @@ export const LOGOS = {
   "en:potatoes-from-france": {
     tag: "en:potatoes-from-france",
     label: "Pommes de terre de France",
-    logo: "https://static.openfoodfacts.org/images/lang/en/labels/potatoes-from-france.90x90.svg",
+    logo: "https://static.openfoodfacts.org/images/lang/fr/labels/pommes-de-terre-de-france.94x90.png",
   },
   "en:max-havelaar-france": {
     tag: "en:max-havelaar-france",
