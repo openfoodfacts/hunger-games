@@ -105,7 +105,7 @@ export const LOGOS = {
   "en:fsc": {
     tag: "en:fsc",
     label: "FSC",
-    logo: "https://static.openfoodfacts.org/images/lang/en/labels/fsc.90x90.svg",
+    logo: "https://static.openfoodfacts.org/images/lang/en/labels/fsc.73x90.png",
   },
   "en:pefc": {
     tag: "en:pefc",
