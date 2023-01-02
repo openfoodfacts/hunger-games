@@ -868,5 +868,5 @@ export const DASHBOARD: DashBoardTheme[] = [
       "en:produced-in-brittany",
     ],
   },
-  // TODO: vegetarian vegetalian category
+  // TODO: vegetarian vegetalian categories
 ];
