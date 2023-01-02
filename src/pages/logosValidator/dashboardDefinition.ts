@@ -400,7 +400,7 @@ export const LOGOS = {
   "1-pet": {
     tag: "1-pet",
     label: "1-PET",
-    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/1-PET.73x90.svg",
+    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/01-PET.73x90.svg",
   },
   "1-PETE": {
     tag: "1-PETE",
@@ -410,22 +410,23 @@ export const LOGOS = {
   "2-PEHD": {
     tag: "2-PEHD",
     label: "2-PEHD",
-    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/2-PEHD.73x90.svg",
+    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/02-PE-HD.73x90.svg",
   },
   "2-HDPE": {
     tag: "2-HDPE",
     label: "2-HDPE",
-    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/2-HDPE.73x90.svg",
+    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/02-PE-HD.73x90.svg",
   },
   "3-PVC": {
     tag: "3-PVC",
     label: "3-PVC",
-    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/3-PVC.73x90.svg",
+    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/03-PVC.73x90.svg",
   },
   "4-PELD": {
     tag: "4-PELD",
     label: "4-PELD",
-    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/4-PELD.73x90.svg",
+    // does not exist
+    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/04-PELD.73x90.svg",
   },
   "4-LDPE": {
     tag: "4-LDPE",
@@ -435,7 +436,7 @@ export const LOGOS = {
   "5-PP": {
     tag: "5-PP",
     label: "5-PP",
-    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/5-PP.73x90.svg",
+    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/05-PP.73x90.svg",
   },
   "06-PS": {
     tag: "06-PS",
@@ -445,7 +446,7 @@ export const LOGOS = {
   "7-O": {
     tag: "7-O",
     label: "7-O",
-    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/7-O.73x90.svg",
+    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/07-O.73x90.svg",
   },
   "8-Lead": {
     tag: "8-Lead",
@@ -610,7 +611,7 @@ export const LOGOS = {
   "84-C/PAP": {
     tag: "84-C/PAP",
     label: "84-C/PAP",
-    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/84-C/PAP.73x90.svg",
+    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/84-c-pap.73x90.svg",
   },
   "84-PapAl": {
     tag: "84-PapAl",
@@ -675,17 +676,17 @@ export const LOGOS = {
   },
   "fr:societe-francaise-de-controle-de-viande-halal": {
     tag: "fr:societe-francaise-de-controle-de-viande-halal",
-    label: "Société francaise-de-controle-de-viande-halal",
+    label: "Société française de contrôle de viande halal",
     logo: "https://world-fr.openfoodfacts.org/images/lang/en/labels/societe-francaise-de-controle-de-viande-halal.188x90.svg",
   },
   "fr:controle-de-la-mosquee-d-evry-courcouronnes": {
     tag: "fr:controle-de-la-mosquee-d-evry-courcouronnes",
-    label: "Contrôle-de-la-mosquee-d-evry-courcouronnes",
+    label: "Contrôle de la mosquée d'Evry-Courcouronnes",
     logo: "https://world-fr.openfoodfacts.org/images/lang/en/labels/controle-de-la-mosquee-d-evry-courcouronnes.188x90.svg",
   },
   "fr:association-rituelle-de-la-grande-mosquee-de-lyon": {
     tag: "fr:association-rituelle-de-la-grande-mosquee-de-lyon",
-    label: "association-rituelle-de-la-grande-mosquee-de-lyon",
+    label: "Association rituelle de la grande mosquée de Lyon",
     logo: "https://world-fr.openfoodfacts.org/images/lang/en/labels/association-rituelle-de-la-grande-mosquee-de-lyon.188x90.svg",
   },
   // To-Do add Other scores logos
