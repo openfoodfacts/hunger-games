@@ -561,8 +561,8 @@ export const LOGOS = {
     logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/77-gl.90x90.svg",
   },
   "78-GL": {
-    tag: "78-GL",
-    label: "en:78-GL",
+    tag: "en:78-GL",
+    label: "78-GL",
     logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/78-gl.90x90.svg",
   },
   "en:79-GL": {
@@ -806,9 +806,9 @@ export const DASHBOARD: DashBoardTheme[] = [
       "en:82",
       "en:83",
       "en:84-C/PAP",
-      "en:84-papal",
+      "en:84-PapAl",
       "en:85",
-      "en:87-csl",
+      "en:87-CSL",
       "en:90",
       "en:91",
       "en:92",
@@ -817,7 +817,7 @@ export const DASHBOARD: DashBoardTheme[] = [
       "en:97",
       "en:98",
       "en:fsc",
-      "en:fsc-mix"
+      "en:fsc-mix",
       "en:pefc",
       "fr:triman",
       "en:green-dot",
