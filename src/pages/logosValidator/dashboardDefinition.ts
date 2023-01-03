@@ -560,7 +560,7 @@ export const LOGOS = {
     label: "77-GL",
     logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/77-gl.90x90.svg",
   },
-  "78-GL": {
+  "en:78-GL": {
     tag: "en:78-GL",
     label: "78-GL",
     logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/78-gl.90x90.svg",
