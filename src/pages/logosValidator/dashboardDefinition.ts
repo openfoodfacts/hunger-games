@@ -97,34 +97,6 @@ export const LOGOS = {
     logo: "https://static.openfoodfacts.org/images/lang/fr/labels/label-rouge.90x90.svg",
   },
   // Various origins.
-  "en:fsc-mix": {
-    tag: "en:fsc-mix",
-    label: "FSC Mix",
-    logo: "https://static.openfoodfacts.org/images/lang/en/labels/fsc-mix.90x90.svg",
-  },
-  "en:fsc": {
-    tag: "en:fsc",
-    label: "FSC",
-    logo: "https://static.openfoodfacts.org/images/lang/en/packaging/fsc.90x90.svg",
-  },
-  "en:pefc": {
-    tag: "en:pefc",
-    label: "PEFC",
-// logo does not exist
-    logo: "https://static.openfoodfacts.org/images/lang/en/labels/pefc.90x90.svg",
-  },
-  "en:green-dot": {
-    tag: "en:green-dot",
-    label: "Green Dot (means the manufacturer paid a contribution to CITEO)",
-    logo: "https://static.openfoodfacts.org/images/lang/en/packaging/green-dot.90x90.svg",
-  },
-  "fr:triman": {
-    tag: "fr:triman",
-    label: "Triman (means it's actually recyclable)",
-// logo does not exist yet
-    logo: "https://static.openfoodfacts.org/images/lang/fr/labels/triman.90x90.svg",
-  },
-
   "en:dolphin-safe": {
     tag: "en:dolphin-safe",
     label: "Dolphin Safe",
@@ -678,6 +650,34 @@ export const LOGOS = {
     label: "Einwegpfand",
     logo: "https://world-fr.openfoodfacts.org/images/lang/de/packaging/einwegpfand.70x90.svg",
   },
+  "en:fsc": {
+    tag: "en:fsc",
+    label: "FSC",
+    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/fsc.70x90.svg",
+  },
+  "en:fsc-mix": {
+    tag: "en:fsc-mix",
+    label: "FSC-Mix",
+    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/fsc.70x90.svg",
+  },
+  "en:pefc": {
+    tag: "en:pefc",
+    label: "PEFC",
+// logo does not exist yet
+    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/pefc.70x90.svg",
+  },
+  "en:green-dot": {
+    tag: "en:green-dot",
+    label: "Green Dot (means the manufacturer paid a contribution to CITEO)",
+    logo: "https://static.openfoodfacts.org/images/lang/en/packaging/green-dot.90x90.svg",
+  },
+  "fr:triman": {
+    tag: "fr:triman",
+    label: "Triman (means it's actually recyclable)",
+// logo does not exist yet
+    logo: "https://static.openfoodfacts.org/images/lang/fr/labels/triman.90x90.svg",
+  },
+  
   // To-Do add Halal logos
   "en:halal-food-council-of-europe": {
     tag: "en:halal-food-council-of-europe",
@@ -818,6 +818,12 @@ export const DASHBOARD: DashBoardTheme[] = [
       "96",
       "97",
       "98",
+      "fsc",
+      "fsc-mix"
+      "pefc",
+      "triman",
+      "green-dot",
+      
     ],
   },
   {
@@ -831,6 +837,16 @@ export const DASHBOARD: DashBoardTheme[] = [
     ],
   },
   // To-Do add Kosher dashboard
+  //  {
+  //    tag: "kosher",
+  //    title: "Kosher",
+  //    logos: [
+  //      "en:cor-kosher",
+   //     "en:kosher-check",
+  //      "en:tablet-k-kosher",
+   //     "en:mk-kosher",
+   //   ],
+   // },
   // To-Do add Origins dashboard
   {
     tag: "origin-france",
