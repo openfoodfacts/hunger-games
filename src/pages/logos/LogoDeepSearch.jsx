@@ -44,6 +44,7 @@ export default function LogoSearch() {
 
   const [annotatedLogos, setAnnotatedLogos] = React.useState([]);
   const [logosToAnnotate, setLogosToAnnotate] = React.useState([]);
+  const [selectAll, setSelectAll] = React.useState(false);
   // TODO: allows to fetch more when reaching data limit
   const [searchCount] = React.useState(DEFAULT_COUNT);
   const [searchState, setSearchState] = useUrlParams({ type: "", value: "" });
@@ -87,6 +88,18 @@ export default function LogoSearch() {
       isValid = false;
     };
   }, [searchState, searchCount]);
+
+  React.useEffect(() => {
+    if (selectAll) {
+      setLogosToAnnotate((prev) =>
+        prev.map((logo) => ({ ...logo, selected: true }))
+      );
+    } else {
+      setLogosToAnnotate((prev) =>
+        prev.map((logo) => ({ ...logo, selected: false }))
+      );
+    }
+  }, [selectAll]);
 
   const nextLogoToFetchId = annotatedLogos.find((logo) => !logo.fetched)?.id;
 
@@ -229,9 +242,21 @@ export default function LogoSearch() {
 
       <Divider sx={{ my: 3 }} />
 
-      <Typography variant="h5" sx={{ mt: 5, mb: 1 }}>
-        Remaining to annotate
-      </Typography>
+      <Box sx={{ display: "flex", flexDirection: "row", gap: 1 }}>
+        <Typography variant="h5" sx={{ mt: 5, mb: 1 }}>
+          Remaining to annotate
+        </Typography>
+        <Button
+          onClick={() => {
+            setSelectAll((prev) => !prev);
+          }}
+          variant="contained"
+          sx={{ ml: "auto", maxHeight: 40, mt: "40px", mb: "8px" }} // to align with "Remaining to annotate"
+        >
+          {selectAll ? "Unselect all" : "Select all"}
+        </Button>
+      </Box>
+
       <LogoGrid
         logos={logosToAnnotate.slice((page - 1) * pageSize, page * pageSize)}
         toggleLogoSelection={toggleSelection}
