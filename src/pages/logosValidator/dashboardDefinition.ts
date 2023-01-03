@@ -821,7 +821,7 @@ export const DASHBOARD: DashBoardTheme[] = [
       "fsc",
       "fsc-mix"
       "pefc",
-      "triman",
+      "fr:triman",
       "green-dot",
       
     ],
