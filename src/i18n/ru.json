@@ -1,15 +1,15 @@
 {
   "home": {
     "game_selector": {
-      "title": "В какую игру вы хотели бы сыграть?",
+      "title": "What game would you like to play?",
       "cards": {
         "questions": {
           "title": "Вопросы",
-          "description": "Это изображение отвечает на вопросы?"
+          "description": "Tell us if the given image answers the questions"
         },
         "logos": {
           "title": "Logos",
-          "description": "Найдите все логотипы, соответствующие данному логотипу"
+          "description": "Find all the logos matching the given logo"
         },
         "eco_score": {
           "title": "Эко-оценка",
@@ -18,36 +18,36 @@
       }
     },
     "account_band": {
-      "title": "Хотите, чтобы ваш вклад был засчитан? Создайте учетную запись или войдите в Open Food Facts!",
+      "title": "Want to make your contribution count? Create an account or sign in on Open Food Facts!",
       "log_in": "Имя пользователя",
       "sign_up": "Регистрация",
-      "contribution_details": "Узнайте, почему ваш вклад имеет важное значение"
+      "contribution_details": "Learn why your contribution matters"
     },
-    "saved_filters": "Сохраненные фильтры",
+    "saved_filters": "Saved Filters",
     "contribution_modal": {
-      "title": "Ваш вклад имеет значение",
+      "title": "Your contribution matters",
       "information": "Hunger Games is an effort to leverage the results of our OCR. When you use Hunger Games by Open Food Facts, you improve our entire database which helps the community make better food choices. We gather your annotations and use them to make Open Food Facts more accurate and effecient.",
-      "thank_you": "Спасибо, что помогаете нам улучшать Open Food Facts, чтобы больше людей могли легко его использовать."
+      "thank_you": "Thank you for helping us improve Open Food Facts so that more people can use it easily."
     },
     "statistics": {
-      "title": "Статистика {{userName}}:",
+      "title": "{{userName}} statistics:",
       "editorCount": {
         "title": "Редактор",
         "description": "Number of edition done"
       },
       "contributorCount": {
         "title": "Участник",
-        "description": "Добавление нового продукта"
+        "description": "Adding a new product"
       },
       "photographerCount": {
-        "title": "Фотограф",
+        "title": "Photographer",
         "description": "Taking photos for a product"
       }
     }
   },
   "flagged_images": {
-    "title": "Изображения, отмеченные пользователями",
-    "loading": "Загрузка"
+    "title": "Images flagged by users",
+    "loading": "Loading"
   },
   "questions": {
     "category": "категория",
@@ -76,7 +76,7 @@
     "remaining_annotations": "Оставшиеся вопросы",
     "annotated_annotations": "Помеченный",
     "filters": {
-      "active_filter_number": "+{{count}} фильтра",
+      "active_filter_number": "+{{count}} filters",
       "active_filter_number_one": "+{{count}} filter",
       "active_filter_number_zero": "no filter",
       "short_label": {

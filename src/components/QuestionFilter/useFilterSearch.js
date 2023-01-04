@@ -53,16 +53,17 @@ export function useFilterSearch() {
       } else {
         newExposedParameters = modifier;
       }
-
+      console.log({ newExposedParameters });
       const isDifferent = Object.keys(DEFAULT_FILTER_STATE).some(
         (key) => newExposedParameters[key] !== exposedParameters[key]
       );
-
+      console.log({ isDifferent });
       if (!isDifferent) {
         return;
       }
 
       setIsFavorite(localFavorites.isSaved(newExposedParameters));
+      console.log(convertParamsToUrl(newExposedParameters));
       setUrlSearchParams(convertParamsToUrl(newExposedParameters));
     },
     [exposedParameters, setUrlSearchParams]

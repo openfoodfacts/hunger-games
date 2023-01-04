@@ -6,7 +6,7 @@ const ShouldLoggedinPage = () => (
     <Typography variant="h5" component="h1" sx={{ mb: 2 }}>
       Restricted page
     </Typography>
-    <Typography>Advanced games are restricted to connected users</Typography>
+    <Typography>Advenced game are restricted to connected user</Typography>
   </Box>
 );
 export default ShouldLoggedinPage;

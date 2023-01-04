@@ -1,7 +1,7 @@
 {
   "home": {
     "game_selector": {
-      "title": "У якую гульню вы хацелі б згуляць?",
+      "title": "What game would you like to play?",
       "cards": {
         "questions": {
           "title": "Пытаньні",
@@ -9,45 +9,45 @@
         },
         "logos": {
           "title": "Logos",
-          "description": "Знайдзіце ўсе лагатыпы, якія адпавядаюць дадзенаму лагатыпу"
+          "description": "Find all the logos matching the given logo"
         },
         "eco_score": {
-          "title": "Eco-ацэнка",
+          "title": "Eco-score",
           "description": "Annotate the questions with the highest value"
         }
       }
     },
     "account_band": {
-      "title": "Хочаце, каб ваш унёсак быў залічаны? Стварыце ўліковы запіс або ўвайдзіце ў Open Food Facts!",
+      "title": "Want to make your contribution count? Create an account or sign in on Open Food Facts!",
       "log_in": "Login",
       "sign_up": "Sign up",
-      "contribution_details": "Даведайцеся, чаму ваш унёсак важны"
+      "contribution_details": "Learn why your contribution matters"
     },
-    "saved_filters": "Захаваныя фільтры",
+    "saved_filters": "Saved Filters",
     "contribution_modal": {
-      "title": "Ваш унёсак мае значэнне",
+      "title": "Your contribution matters",
       "information": "Hunger Games is an effort to leverage the results of our OCR. When you use Hunger Games by Open Food Facts, you improve our entire database which helps the community make better food choices. We gather your annotations and use them to make Open Food Facts more accurate and effecient.",
-      "thank_you": "Дзякуючы вашай дапамозе ў паляпшэнні Open Food Facts, яшчэ больш людзей могуць ім лёгка карыстацца."
+      "thank_you": "Thank you for helping us improve Open Food Facts so that more people can use it easily."
     },
     "statistics": {
-      "title": "Статыстыка {{userName}}:",
+      "title": "{{userName}} statistics:",
       "editorCount": {
         "title": "Editor",
         "description": "Number of edition done"
       },
       "contributorCount": {
         "title": "Contributor",
-        "description": "Даданне новага прадукту"
+        "description": "Adding a new product"
       },
       "photographerCount": {
-        "title": "Фатограф",
-        "description": "Фатаграфаванне прадукту"
+        "title": "Photographer",
+        "description": "Taking photos for a product"
       }
     }
   },
   "flagged_images": {
-    "title": "Выявы, пазначаныя карыстальнікамі",
-    "loading": "Загрузка"
+    "title": "Images flagged by users",
+    "loading": "Loading"
   },
   "questions": {
     "category": "category",
@@ -57,11 +57,11 @@
     "brand": "brand",
     "brands": "Brands",
     "quantity": "Quantity",
-    "insightTypeLabel": "Паказваць толькі",
+    "insightTypeLabel": "Only shows",
     "ingredients": "Ingredients",
     "product_weight": "вага прадукту",
     "popularity_sort": "Сартаваць паводле папулярнасьці",
-    "see_examples": "Паглядзіце прыклады для ",
+    "see_examples": "See examples of this ",
     "no": "No",
     "skip": "Skip",
     "yes": "Yes",
@@ -72,13 +72,13 @@
     "hide_images": "Схаваць выявы (хутчэйшая загрузка)",
     "display_images": "Паказваць выявы",
     "annotations": "Annotations",
-    "last_annotations": "Апошнія анатацыі",
+    "last_annotations": "Last annotations",
     "remaining_annotations": "Remaining questions",
-    "annotated_annotations": "З анатацыямі",
+    "annotated_annotations": "Annotated",
     "filters": {
       "active_filter_number": "+{{count}} filters",
-      "active_filter_number_one": "+{{count}} фільтр",
-      "active_filter_number_zero": "без фільтра",
+      "active_filter_number_one": "+{{count}} filter",
+      "active_filter_number_zero": "no filter",
       "short_label": {
         "value": "value",
         "country": "краіна",
@@ -87,13 +87,13 @@
         "campaign": "camp"
       },
       "long_label": {
-        "type": "Тып пытання",
-        "value": "Прапанаванае значэнне",
-        "country": "Краіна паходжання прадукту",
-        "brand": "Гандлёвая марка прадукту",
+        "type": "Question Type",
+        "value": "Proposed Value",
+        "country": "Product Country",
+        "brand": "Product Brand",
         "popularity": "Сартаваць паводле папулярнасьці",
         "edit": "",
-        "campaign": "Кампанія"
+        "campaign": "Campaign"
       },
       "placeholders": {
         "value": "Value (fanta, en:organic,...)",
@@ -101,50 +101,50 @@
         "campaign": "Annotation campaigns"
       },
       "actions": {
-        "edit": "Змяніць фільтры",
+        "edit": "Edit Filters",
         "cancel": "Cancel",
-        "apply": "Ужыць"
+        "apply": "Apply"
       }
     },
-    "other_questions": "Іншыя пытанні",
+    "other_questions": "Other questions",
     "send": "Send",
-    "flag": "Штосьці не так? Паведамце/пазначце выяву!",
-    "unflag": "Зняць пазнаку з выявы",
-    "reset_filters": "Скінуць фільтры",
+    "flag": "Something wrong? Report/flag the image!",
+    "unflag": "Unflag the image",
+    "reset_filters": "Reset filters",
     "log_in": "Login",
     "sign_up": "Sign up",
-    "login_title": "Зрабіце сваю анатацыю ўлічанай",
-    "login_description": "Вы не ўвайшлі ў Open Food Facts. Каб вашы адказы былі прыменены непасрэдна да прадуктаў і звязаны з вашым уліковым запісам, увайдзіце ў свой уліковы запіс Open Food Facts або стварыце яго"
+    "login_title": "Make your annotation count",
+    "login_description": "Currently you are not logged in Open Food Facts. To get your answers directly applied to products, and associated to your account, consider logging in to your Open Food Facts account, or creating one"
   },
   "menu": {
     "title": "Hunger Games",
     "games": "Гульні",
     "questions": "Пытаньні",
     "logos": "Logos",
-    "logos-annotation": "Анатацыі да лагатыпаў",
-    "logos-search": "Пошук лагатыпаў",
-    "logos-product-search": "Анатацыі да прадуктаў",
+    "logos-annotation": "Logos annotation",
+    "logos-search": "Logos search",
+    "logos-product-search": "Annotation per products",
     "logos-deep-search": "Infinit annotation",
     "manage": "Кіраваньне",
     "insights": "Insights",
     "nutritions": "Nutrition facts",
     "settings": "Settings",
-    "eco-score": "Eco-ацэнка",
+    "eco-score": "Eco-score",
     "nutriscore": "Nutri-Score",
     "tour": "Show Tour",
-    "logged_in_user": "увайшоў(ла) як {{userName}}",
-    "log_in": "націсніце, каб увайсці"
+    "logged_in_user": "logged as {{userName}}",
+    "log_in": "click to login"
   },
   "insights": {
     "insights": "Insights",
     "barcode": "Штрых-код",
     "barcode_placeholder": "штрых-код",
-    "value_tag": "Тэг значэння",
-    "value_placeholder": "напр.: en:mueslis, bjorg,...",
+    "value_tag": "Цэтлік значэньня",
+    "value_placeholder": "ex: en:mueslis, bjorg,...",
     "type": "Type",
-    "annotated": "З анатацыямі",
+    "annotated": "Annotated",
     "annotation": "Анатацыя",
-    "not_annotated": "Без анатацыі",
+    "not_annotated": "Not annotated",
     "all": "Усе",
     "label": "Этыкетка",
     "product_weight": "Вага прадукту",
@@ -162,13 +162,13 @@
     "completed_at": "Завершана ў",
     "automatic": "Аўтаматычна",
     "human_required": "Human required",
-    "edit_product": "Адкрыць рэдагаванне прадукту",
-    "view_product": "Адкрыць старонку прадукту"
+    "edit_product": "Open product edit",
+    "view_product": "Open product page"
   },
   "logos": {
     "annotation": "Анатацыя: ",
-    "annotations": "Анатацыі да лагатыпу",
-    "task_description": "Выберыце ўсе аднолькавыя лагатыпы і дайце ім назву, напрыклад \"en:EU Organic\", і тып, напрыклад, \"этыкетка\".",
+    "annotations": "Анатацыі лягатыпу",
+    "task_description": "Select all logos that are exactly the same, and give them a name like \"en:EU Organic\" and a type like \"label\".",
     "select_all": "Выбраць усё",
     "unselect_all": "Ачысьціць усё",
     "distance": "Адлегласьць:",
@@ -191,107 +191,107 @@
     "no_found": "Лягатып ня знойдзены",
     "search": "Пошук",
     "number_of_results": "Колькасьць вынікаў:",
-    "loading": "Загрузка...",
+    "loading": "Loading...",
     "refresh": "Refresh",
-    "search_specific": "Пошук канкрэтнага лагатыпа",
-    "load_more": "Загрузіць больш",
+    "search_specific": "Search specific logo",
+    "load_more": "Load more",
     "no_results": "Лягатып ня знойдзены",
-    "result_count": "Паказана {{showing}} з {{available}}",
-    "flag": "Штосьці не так? Паведамце/пазначце выяву!",
-    "unflag": "Зняць пазнаку з выявы",
+    "result_count": "Shows {{showing}} on {{available}} available",
+    "flag": "Something wrong? Report/flag the image!",
+    "unflag": "Unflag the image",
     "crop_image_title": "crop of the logo"
   },
   "settings": {
     "settings": "Settings",
     "language": "Languages",
     "save": "Save",
-    "reportIssue": "Знайшлі памылку? Калі ласка, паведаміце нам",
-    "dev_mode_title": "Каб атрымаць больш магчымасцей, актывуйце рэжым распрацоўшчыка",
-    "dev_mode_label": "Рэжым распрацоўшчыка",
-    "dev_page_toggle": "Паказаць старонку {{name}}"
+    "reportIssue": "Found a bug?, please let us know",
+    "dev_mode_title": "To get more options, activate the dev mode",
+    "dev_mode_label": "Dev Mode",
+    "dev_page_toggle": "Show {{name}} page"
   },
   "helper": {
     "welcome": {
       "page1": {
-        "title": "Запрашаем у Галодныя гульні",
-        "text1": "Галодныя гульні — гэта калекцыя міні-гульняў, якія шмат у чым дапамагаюць зрабіць унёсак у Open Food Facts. Вы можаце гуляць у сапраўды захапляльныя гульні з любога месца. Прапануем экскурсію па ўсім вэб-сайце, якая дапаможа вам пачаць працу.",
+        "title": "Welcome to Hunger Games",
+        "text1": "Hunger Games is a collection of mini-games that help contribute to Open Food Facts in many ways. You can play are really exciting games from anywhere. Here is a guided tour of the entire website which will get you started.",
         "text2": "Make sure to login to the Open Food Facts website to get credit for your contributions. If you make a mistake, please take the time to correct it by heading to the website.",
-        "text3": "У выпадку любых сумневаў наконт гульняў, націсніце на значок пытальніка ў правым верхнім куце старонкі, і вы зможаце звязацца з намі праз slack на канале #hunger-games"
+        "text3": "In case of any doubt about the games, click on the question mark icon at the top right of the page, and you can reach us on slack at the #hunger-games channel"
       },
       "page2": {
-        "title": "Гульня «Пытанні»",
-        "text1": "Харчовы прадукт належыць гэтаму брэнду?",
-        "text2": "Адкажыце проста <strong>так/не</strong>! Не ведаеце адказу? Гэта нармальна, проста прапусціце гэта.",
-        "text3": "Таксама можна выкарыстоўваць клавішы клавіятуры O, N і K.",
-        "text4": "Вы можаце <strong>фільтраваць</strong> прадукты па краіне, брэндах, папулярнасці і многаму іншаму!",
-        "text5": "Калі вы не хочаце рабіць гэта кожны раз, можна <strong>захаваць фільтры</strong>, націснуўшы на зорачку. У наступны раз, калі вы вернецеся, то знойдзеце захаваныя фільтры на галоўнай старонцы"
+        "title": "Questions Game",
+        "text1": "Does the food product belong to this brand?",
+        "text2": "Answer simply with a <strong>yes/no</strong>! Don't know the answer? That's alright, just skip it.",
+        "text3": "You can also use your keyboard keys o,n and k.",
+        "text4": "You can <strong>filter</strong> the products based on country, brands, popularity and much more!",
+        "text5": "If you don't want to do this every single time, you can also <strong>save the filters</strong> by clicking on the star. Next time you come back, find the saved filters on the home page itself"
       },
       "page3": {
-        "title": "Гульня «Лагатыпы»",
-        "text1": "Наша яшчэ адна любімая гульня — гэта гульня «Лагатыпы», у якой вам трэба <strong> выбраць усе лагатыпы</strong>, якія вам падаюцца аднолькавымі.",
-        "text2": "Як паказана ў прыкладзе, калі вы вылучыце ўсе падобныя лагатыпы, проста ўвядзіце іх значэнне і выберыце, што ёсць брэндам, што — этыкеткай або нечым яшчэ. Гэта так проста!"
+        "title": "Logos Game",
+        "text1": "Our another really loved game is the logos game where you have to <strong> select all the logos</strong> you feel are the same.",
+        "text2": "As shown in the example, once you select all the similar logos, just type their value and select where it is a brand, a label or something else. It's that simple!"
       },
       "page4": {
-        "title": "Гульня «Пытанні па Eco-ацэнцы»",
+        "title": "Eco-Score Questions Game",
         "text1": "Help us finish the remaining questions in the most high priority labels!",
-        "text2": "Гэтыя карткі звязаны з этыкеткамі, якія выкарыстоўваюцца пры разліку Eco-ацэнкі.",
-        "text3": "<strong>Што такое Eco-ацэнка?</strong>",
-        "text4": "Eco-ацэнка ахоплівае агульны ўплыў на навакольнае асяроддзе, што палягчае спажыўцам параўноўваць прадукты і вырашаць, якія з іх менш шкодныя для навакольнага асяроддзя."
+        "text2": "These cards are linked to labels used in the computation of the eco-score.",
+        "text3": "<strong>What is Eco-Score?</strong>",
+        "text4": "Eco-Score captures the total environmental footprint, making it easier for consumers to compare products and decide which is better for the environment."
       },
       "page5": {
         "title": "Settings",
-        "text1": "Задайце пераважную мову і паведамляйце аб праблемах на нашай старонцы налад.",
-        "text2": "Калі вы распрацоўшчык, то можаце таксама даследаваць змесціва нашай базы даных у рэжыме распрацоўшчыка."
+        "text1": "Set your preferred language, and report issues from our settings page.",
+        "text2": "If you're a developer, you can also explore our database content using our dev mode."
       },
       "page6": {
         "title": "Tour",
         "text1": "Got stuck somewhere? Want to take the tour again?",
-        "text2": "Проста націсніце на пытальнік і пачніце падарожжа зноў!"
+        "text2": "Just click on the question mark and start the journey again!"
       }
     },
     "logos": {
       "page1": {
-        "title": "Выбіранне",
-        "text1": "Выберыце кадры аднаго лагатыпа, націскаючы на іх",
-        "text2": "Выбраныя лагатыпы пераходзяць у верхнюю частку старонкі. Вы можаце адмяніць выбар, націснуўшы на іх яшчэ раз"
+        "title": "Selection",
+        "text1": "Select the crops of a same logo by clicking on them",
+        "text2": "Selected logos go to the top of the page, you can unselect them by clicking again on them"
       },
       "page2": {
         "title": "Warning",
-        "text1": "Калі кадр змяшчае некалькі лагатыпаў, не выбірайце іх.",
-        "text2": "Калі кадр змяшчае толькі частку лагатыпа, вы можаце выбраць яго"
+        "text1": "If the crop contains multiple logos, do not select it.",
+        "text2": "If the crop contains only a partial part of a logo, you can select it"
       },
       "page3": {
-        "title": "Праверыць",
-        "text1": "Укажыце тып лагатыпа (этыкетка, брэнд, QR-код, ...)",
-        "text2": "Калі гэта лагатып этыкеткі або брэнда, укажыце, якога іменна",
-        "text3": "Цяпер вы можаце пацвердзіць свой выбар",
-        "text4": "Дзякуй:)"
+        "title": "Validate",
+        "text1": "Indicate the type of logo (label, brand, QRcode, ...)",
+        "text2": "If it is a label or a brand logo, indicate which one it is",
+        "text3": "Now you can submit your selection",
+        "text4": "Thank you :)"
       }
     },
-    "previous": "Папярэдні",
+    "previous": "Prev",
     "next": "Next",
     "close": "Close"
   },
   "nutrition": {
     "instructions": {
-      "cropTheTable": "Абрэжце выяву, каб спрасціць сваю анатацыю",
-      "verifyNutrimentDetected": "Вызначце, ці правільна ўказаны пажыўныя рэчывы",
+      "cropTheTable": "Crop the image to simplify your annotation",
+      "verifyNutrimentDetected": "Indicate if the nutriment detected is correct",
       "selectMissingNutriments": "Add missing nutriments (you can click even if the word has no box)",
       "selectValue": "Select the nutritional value of: "
     },
     "steps": {
       "1": "Crop",
       "2": "Special values",
-      "3": "Выбар пажыўных рэчываў",
+      "3": "Nutriments Selection",
       "4": "Values Selection"
     },
-    "loading": "Загрузка...",
-    "unknown_brand": "Брэнд невядомы",
+    "loading": "Loading...",
+    "unknown_brand": "Brand Unknown",
     "value_missing": "You forgot to input value duuuuuuuuuuuuuuuuude",
-    "next": "Наступны крок",
-    "prev": "Папярэдні крок",
-    "skip": "Прапусціць гэты прадукт",
-    "validate": "Праверыць табліцу",
+    "next": "Next Step",
+    "prev": "Prev Step",
+    "skip": "Skip this product",
+    "validate": "Validate Table",
     "unselect_picture": "No nutrition info",
     "basis": "data for: ",
     "servingSize": "serving size",
@@ -318,12 +318,12 @@
       "SKIP": "ignored",
       "VALIDATED": "edited",
       "WRONG_IMAGE": "unselected picture",
-      "close": "закрыць",
-      "open": "адкрыць гісторыю"
+      "close": "close",
+      "open": "open history"
     }
   },
   "notfound": {
-    "image_alt": "404: не знойдзена",
+    "image_alt": "404 not found",
     "nopage": "Whoops! The page you're looking for can't be found.",
     "redirect1": "Want to play some games?",
     "redirect2": "Click here"

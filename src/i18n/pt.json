@@ -57,7 +57,7 @@
     "brand": "marca",
     "brands": "Marcas",
     "quantity": "Quantidade",
-    "insightTypeLabel": "Apenas exibe",
+    "insightTypeLabel": "Mostrar apenas",
     "ingredients": "Ingredientes",
     "product_weight": "peso do produto",
     "popularity_sort": "Ordenar por popularidade",
@@ -76,9 +76,9 @@
     "remaining_annotations": "Perguntas restantes",
     "annotated_annotations": "Anotado",
     "filters": {
-      "active_filter_number": "+{{count}} filtros",
-      "active_filter_number_one": "+{{count}} filtro",
-      "active_filter_number_zero": "sem filtro",
+      "active_filter_number": "+{{count}} filters",
+      "active_filter_number_one": "+{{count}} filter",
+      "active_filter_number_zero": "no filter",
       "short_label": {
         "value": "valor",
         "country": "país",
@@ -103,7 +103,7 @@
       "actions": {
         "edit": "Editar Filtros",
         "cancel": "Cancelar",
-        "apply": "Aplicar"
+        "apply": "Candidatar"
       }
     },
     "other_questions": "Outras perguntas",
@@ -121,10 +121,10 @@
     "games": "Jogos",
     "questions": "Perguntas",
     "logos": "Logótipos",
-    "logos-annotation": "Anotação de logotipos",
-    "logos-search": "Pesquisa de logotipos",
-    "logos-product-search": "Anotação por produtos",
-    "logos-deep-search": "Anotação infinita",
+    "logos-annotation": "Logos annotation",
+    "logos-search": "Logos search",
+    "logos-product-search": "Annotation per products",
+    "logos-deep-search": "Infinit annotation",
     "manage": "Gerencie",
     "insights": "Percepções",
     "nutritions": "Informação nutricional",

@@ -97,15 +97,15 @@ export default function Settings() {
             isExperimental: true,
           },
           {
-            pageUrl: "dashboard",
-            pageName: "dashboard",
+            pageUrl: "nutriscore",
+            pageName: "nutriscore",
             isExperimental: false,
           },
           { pageUrl: "insights", pageName: "insights", isExperimental: false },
         ].map(({ pageUrl, pageName, isExperimental }) => (
           <FormControlLabel
             key={pageUrl}
-            checked={visiblePages[pageUrl] ?? false}
+            checked={visiblePages[pageUrl]}
             onChange={handleVisiblePagesChange(pageUrl)}
             control={<Switch />}
             label={`${t("settings.dev_page_toggle", { name: pageName })}${

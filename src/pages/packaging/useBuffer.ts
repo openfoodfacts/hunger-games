@@ -53,16 +53,14 @@ function getProductsToAnnotateUrl({
   }`;
 }
 
-export const useBuffer = ({
-  country,
-  creator,
-  code,
-}: Omit<Parameters, "page">): [ProductDescription[], () => void] => {
+export const useBuffer = (
+  country?: string,
+  creator?: string
+): [ProductDescription[], () => void] => {
   const [page, setPage] = React.useState(() => Math.ceil(Math.random() * 100));
   const [data, setData] = React.useState<ProductDescription[]>(null);
-  const [maxPage, setMaxPage] = React.useState<number>(100);
 
-  const url = getProductsToAnnotateUrl({ page, country, creator, code });
+  const url = getProductsToAnnotateUrl({ page, country, creator });
 
   const canReset = React.useRef(false);
   React.useEffect(() => {
@@ -74,16 +72,15 @@ export const useBuffer = ({
 
   React.useEffect(() => {
     if (data !== null && data.length === 0) {
-      setPage((p) => Math.min(maxPage, p + 1));
+      setPage((p) => p + 1);
     }
-  }, [data, maxPage]);
+  }, [data]);
 
   React.useEffect(() => {
     let isValid = true;
     axios.get(url).then(({ data }) => {
       if (isValid) {
         setData(data.products);
-        setMaxPage(Math.floor(data.count / data.page_size) + 1);
         canReset.current = true;
       }
     });
