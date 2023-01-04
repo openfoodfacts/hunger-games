@@ -6,8 +6,6 @@ import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
 import Link from "@mui/material/Link";
 import Box from "@mui/material/Box";
-import MenuItem from "@mui/material/MenuItem";
-import TextField from "@mui/material/TextField";
 import Card from "@mui/material/Card";
 import CardActionArea from "@mui/material/CardActionArea";
 import Checkbox from "@mui/material/Checkbox";
@@ -16,19 +14,17 @@ import Slider from "@mui/material/Slider";
 import Typography from "@mui/material/Typography";
 import FormControlLabel from "@mui/material/FormControlLabel";
 
+import { useParams } from "react-router-dom";
+
 import { useQuestionBuffer } from "../questions/useQuestionBuffer";
 import robotoff from "../../robotoff";
 import off from "../../off";
 import useUrlParams from "../../hooks/useUrlParams";
 
+import { LOGOS } from "./dashboardDefinition";
+
 const BUFFER_THRESHOLD = 10;
 const PAGE_SIZE = 50;
-
-const filterItem = (question) => {
-  // For later when we will be able to knwo if the question comes from a logo detection
-  console.log(question);
-  return true;
-};
 
 const fetchData = async (insightId) => {
   const response = await robotoff.insightDetail(insightId);
@@ -128,22 +124,18 @@ const LogoQuesitonCard = (props) => {
   );
 };
 
-export default function LogoQuestionValidator({ options }) {
+export default function LogoQuestionValidator({ predictor }) {
   const { t } = useTranslation();
 
   const [controlledState, setControlledState] = useUrlParams({
-    valueTag: options[0].tag,
     imageSize: 200,
     zoomOnLogo: true,
   });
-  const valueTag = controlledState.valueTag;
+  const { valueTag } = useParams();
   const imageSize = Number.parseInt(controlledState.imageSize);
   const zoomOnLogo = JSON.parse(controlledState.zoomOnLogo);
 
-  const selectedOption = React.useMemo(
-    () => options.find((option) => option.tag === valueTag) || options[0],
-    [valueTag, options]
-  );
+  const selectedOption = React.useMemo(() => LOGOS[valueTag] ?? {}, [valueTag]);
 
   const filterState = React.useMemo(
     () => ({
@@ -152,34 +144,18 @@ export default function LogoQuestionValidator({ options }) {
       countryFilter: "",
       sortByPopularity: false,
       valueTag,
-      predictor: "universal-logo-detector",
+      predictor: selectedOption?.predictor ?? "universal-logo-detector",
     }),
-    [valueTag]
+    [valueTag, selectedOption]
   );
 
   const [selectedIds, setSelectedIds] = React.useState([]);
   const [lastClickedId, setLastClickedId] = React.useState(null);
 
-  const updateSearchedGrad = (event) => {
-    const newSelectedTag = event.target.value;
-    if (valueTag === newSelectedTag) {
-      return;
-    }
-    const newSelectedOption = options.find(
-      (option) => option.tag === newSelectedTag
-    );
-    setSelectedIds([]);
-    setControlledState((prevState) => ({
-      ...prevState,
-      valueTag: newSelectedOption.tag,
-    }));
-  };
-
   const { buffer, answerQuestion, remainingQuestionNb } = useQuestionBuffer(
     filterState,
     PAGE_SIZE,
-    BUFFER_THRESHOLD,
-    filterItem
+    BUFFER_THRESHOLD
   );
 
   const toggleSelection = (insight_id) => (event) => {
@@ -284,18 +260,15 @@ export default function LogoQuestionValidator({ options }) {
         alignItems="center"
         sx={{ pt: 5, px: 5, pb: 0, textAlign: "center" }}
       >
-        <TextField value={valueTag} onChange={updateSearchedGrad} select>
-          {options.map(({ tag, label }) => (
-            <MenuItem value={tag} key={tag}>
-              {label}
-            </MenuItem>
-          ))}
-        </TextField>
         <Typography sx={{ mx: 3 }}>
           {t("nutriscore.images_remaining", { remaining: remainingQuestionNb })}
         </Typography>
         {selectedOption.logo && (
-          <img src={selectedOption.logo} alt="searched logo" />
+          <img
+            src={selectedOption.logo}
+            alt="searched logo"
+            style={{ maxHeight: 75 }}
+          />
         )}
         <Box sx={{ mx: 2, width: 500, maxWidth: 500, textAlign: "left" }}>
           <Typography gutterBottom>{t("nutriscore.image_sizes")}</Typography>

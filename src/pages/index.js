@@ -13,7 +13,8 @@ export { default as ProductLogoAnnotationPage } from "./logos/ProductLogoAnnotat
 export { default as LogoDeepSearch } from "./logos/LogoDeepSearch";
 
 // experimental
-export { NutriscorePageValidator, INAOPageValidator } from "./logosValidator";
+export { default as LogoQuestionValidator } from "./logosValidator/LogoQuestionValidator";
+export { default as DashBoard } from "./logosValidator/DashBoard";
 export { default as FlaggedImages } from "./flaggedImages";
 
 export { default as ShouldLoggedinPage } from "./shouldLoggedinPage";

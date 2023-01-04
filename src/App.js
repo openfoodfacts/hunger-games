@@ -15,13 +15,13 @@ import {
   QuestionsPage,
   InsightsPage,
   NotFoundPage,
-  NutriscorePageValidator,
-  INAOPageValidator,
   Home,
   Nutrition,
   FlaggedImages,
   ShouldLoggedinPage,
   PackagingPage,
+  LogoQuestionValidator,
+  DashBoard,
 } from "./pages";
 import ResponsiveAppBar from "./components/ResponsiveAppBar";
 import DevModeContext from "./contexts/devMode";
@@ -283,26 +283,21 @@ export default function App() {
               <Route path="/questions" element={<QuestionsPage />} />
               <Route path="/insights" element={<InsightsPage />} />
               <Route path="*" element={<NotFoundPage />} />
+              <Route path="/logoQuestion/" elemnt={<DashBoard />} />
+              <Route path="/dashboard/" element={<DashBoard />} />
               <Route
-                path="/nutriscore"
+                path="/logoQuestion/:valueTag"
                 element={
                   userState.isLoggedIn ? (
-                    <NutriscorePageValidator />
+                    <LogoQuestionValidator />
                   ) : (
                     <ShouldLoggedinPage />
                   )
                 }
               />
-              <Route
-                path="/inao"
-                element={
-                  userState.isLoggedIn ? (
-                    <INAOPageValidator />
-                  ) : (
-                    <ShouldLoggedinPage />
-                  )
-                }
-              />
+              {/*  To delete in 2024 */}
+              <Route path="/nutriscore" element={<DashBoard />} />
+              <Route path="/inao" element={<DashBoard />} />
 
               <Route
                 path="/nutrition"
