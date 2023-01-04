@@ -8,6 +8,8 @@ logo game:
   - src/pages/logos/**/*,
   - src/components/LogoForm.jsx,
   - src/pages/logos/LogoAnnotation.jsx
+  - src/pages/logos/LogoDeepSearch.jsx
+  
 insights:
   - src/pages/insights/**/*
 

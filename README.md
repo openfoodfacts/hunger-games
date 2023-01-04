@@ -36,7 +36,8 @@ The main goal is: Every Open Food Facts user can annotate products in a few minu
 - [Node](https://nodejs.org)
 
 ## Setup:
-
+- Install Node: https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
+- Install yarn `npm install --global yarn`
 - Install libraries `yarn install`
 - run the project locally `yarn start` (available on http://localhost:3000)
 
@@ -67,6 +68,14 @@ Generate the JSON file `src/assets/countries.json` which contains all the countr
 - `node update-taxonomy-suggestions.js`
 
 Fetch categories and labels taxonomy from OpenFoodFacts static files, and generate JSON files used by the `Autocomplete` fields.
+
+
+## How to define a dashboard
+
+Go to `src/pages/logosValidator/dashboardDefinition.ts`. You have two objects to edit:
+- `LOGOS` which contains the logos available in dashboards. Add the logos you need by providing at least `tag`, `label`, and `logo` properties.
+- `DASHBOARD` which for a dashboard associates an array of logos.
+
 
 ## How you can help
 
