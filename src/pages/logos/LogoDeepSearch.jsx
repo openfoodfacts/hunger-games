@@ -44,7 +44,6 @@ export default function LogoSearch() {
 
   const [annotatedLogos, setAnnotatedLogos] = React.useState([]);
   const [logosToAnnotate, setLogosToAnnotate] = React.useState([]);
-  const [selectedAll, setSelectedAll] = React.useState(false);
   // TODO: allows to fetch more when reaching data limit
   const [searchCount] = React.useState(DEFAULT_COUNT);
   const [searchState, setSearchState] = useUrlParams({ type: "", value: "" });
@@ -88,40 +87,6 @@ export default function LogoSearch() {
       isValid = false;
     };
   }, [searchState, searchCount]);
-
-  React.useEffect(() => {
-    if (selectedAll) {
-      setLogosToAnnotate((prev) =>
-        // set current page to selected, keep old
-        prev.map((logo, index) => ({
-          ...logo,
-          selected:
-            index < page * pageSize && index >= (page - 1) * pageSize
-              ? true
-              : logo.selected,
-        }))
-      );
-    } else {
-      setLogosToAnnotate((prev) =>
-        // set current page to unselected, keep old
-        prev.map((logo, index) => ({
-          ...logo,
-          selected:
-            index < page * pageSize && index >= (page - 1) * pageSize
-              ? false
-              : logo.selected,
-        }))
-      );
-    }
-  }, [selectedAll]);
-
-  React.useEffect(() => {
-    // if all elements on current page are selected -> selected all = true
-    const allSelected = logosToAnnotate
-      .slice((page - 1) * pageSize, page * pageSize)
-      .every((logo) => logo.selected);
-    setSelectedAll(allSelected);
-  }, [page]);
 
   const nextLogoToFetchId = annotatedLogos.find((logo) => !logo.fetched)?.id;
 
@@ -238,6 +203,27 @@ export default function LogoSearch() {
     setLogosToAnnotate((prev) => prev.filter((logo) => !logo.selected));
   };
 
+  const selectAllOnPage = () => {
+    setLogosToAnnotate((prev) =>
+      prev.map((logo, index) => ({
+        ...logo,
+        selected:
+          index < page * pageSize && index >= (page - 1) * pageSize
+            ? true
+            : logo.selected,
+      }))
+    );
+  };
+
+  const deselectAll = () => {
+    setLogosToAnnotate((prev) =>
+      prev.map((logo) => ({
+        ...logo,
+        selected: false,
+      }))
+    );
+  };
+
   return (
     <Box sx={{ padding: 2 }}>
       <Typography variant="h4" sx={{ mb: 2 }}>
@@ -269,13 +255,18 @@ export default function LogoSearch() {
           Remaining to annotate
         </Typography>
         <Button
-          onClick={() => {
-            setSelectedAll((prev) => !prev);
-          }}
+          onClick={selectAllOnPage}
           variant="contained"
           sx={{ ml: "auto", maxHeight: 40, mt: "40px", mb: "8px" }} // to align with "Remaining to annotate"
         >
-          {selectedAll ? "Unselect all" : "Select all"}
+          Select All
+        </Button>
+        <Button
+          onClick={deselectAll}
+          variant="contained"
+          sx={{ maxHeight: 40, mt: "40px", mb: "8px" }}
+        >
+          Deselect All
         </Button>
       </Box>
 
