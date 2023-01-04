@@ -44,7 +44,7 @@ export default function LogoSearch() {
 
   const [annotatedLogos, setAnnotatedLogos] = React.useState([]);
   const [logosToAnnotate, setLogosToAnnotate] = React.useState([]);
-  const [selectAll, setSelectAll] = React.useState(false);
+  const [selectedAll, setSelectedAll] = React.useState(false);
   // TODO: allows to fetch more when reaching data limit
   const [searchCount] = React.useState(DEFAULT_COUNT);
   const [searchState, setSearchState] = useUrlParams({ type: "", value: "" });
@@ -90,16 +90,38 @@ export default function LogoSearch() {
   }, [searchState, searchCount]);
 
   React.useEffect(() => {
-    if (selectAll) {
+    if (selectedAll) {
       setLogosToAnnotate((prev) =>
-        prev.map((logo) => ({ ...logo, selected: true }))
+        // set current page to selected, keep old
+        prev.map((logo, index) => ({
+          ...logo,
+          selected:
+            index < page * pageSize && index >= (page - 1) * pageSize
+              ? true
+              : logo.selected,
+        }))
       );
     } else {
       setLogosToAnnotate((prev) =>
-        prev.map((logo) => ({ ...logo, selected: false }))
+        // set current page to unselected, keep old
+        prev.map((logo, index) => ({
+          ...logo,
+          selected:
+            index < page * pageSize && index >= (page - 1) * pageSize
+              ? false
+              : logo.selected,
+        }))
       );
     }
-  }, [selectAll]);
+  }, [selectedAll]);
+
+  React.useEffect(() => {
+    // if all elements on current page are selected -> selected all = true
+    const allSelected = logosToAnnotate
+      .slice((page - 1) * pageSize, page * pageSize)
+      .every((logo) => logo.selected);
+    setSelectedAll(allSelected);
+  }, [page]);
 
   const nextLogoToFetchId = annotatedLogos.find((logo) => !logo.fetched)?.id;
 
@@ -248,12 +270,12 @@ export default function LogoSearch() {
         </Typography>
         <Button
           onClick={() => {
-            setSelectAll((prev) => !prev);
+            setSelectedAll((prev) => !prev);
           }}
           variant="contained"
           sx={{ ml: "auto", maxHeight: 40, mt: "40px", mb: "8px" }} // to align with "Remaining to annotate"
         >
-          {selectAll ? "Unselect all" : "Select all"}
+          {selectedAll ? "Unselect all" : "Select all"}
         </Button>
       </Box>
 
