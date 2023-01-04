@@ -36,7 +36,8 @@ The main goal is: Every Open Food Facts user can annotate products in a few minu
 - [Node](https://nodejs.org)
 
 ## Setup:
-
+- Install Node: https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
+- Install yarn `npm install --global yarn`
 - Install libraries `yarn install`
 - run the project locally `yarn start` (available on http://localhost:3000)
 
