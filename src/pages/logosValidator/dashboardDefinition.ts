@@ -407,13 +407,12 @@ export const LOGOS = {
   "en:4-PELD": {
     tag: "en:4-PELD",
     label: "4-PELD",
-    // does not exist
     logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/04-ldpe.90x90.svg",
   },
   "en:4-LDPE": {
     tag: "en:4-LDPE",
     label: "4-LDPE",
-    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/4-ldpe.73x90.svg",
+    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/04-ldpe.90x90.svg",
   },
   "en:5-PP": {
     tag: "en:5-PP",
@@ -433,12 +432,12 @@ export const LOGOS = {
   "en:8-Lead": {
     tag: "en:8-Lead",
     label: "8-Lead",
-    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/8-lead.90x90.svg",
+    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/08-lead.90x90.svg",
   },
   "en:9-Alkaline": {
     tag: "en:9-Alkaline",
     label: "9-Alkaline",
-    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/9-alkaline.90x90.svg",
+    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/09-alkaline.90x90.svg",
   },
   "en:10-NiCD": {
     tag: "en:10-NiCD",
@@ -653,18 +652,18 @@ export const LOGOS = {
   "en:fsc": {
     tag: "en:fsc",
     label: "FSC",
-    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/fsc.70x90.svg",
+    logo: "https://world-fr.openfoodfacts.org/images/lang/en/labels/fsc.73x90.svg",
   },
   "en:fsc-mix": {
     tag: "en:fsc-mix",
     label: "FSC-Mix",
-    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/fsc.70x90.svg",
+    logo: "https://world-fr.openfoodfacts.org/images/lang/en/labels/fsc.73x90.svg",
   },
   "en:pefc": {
     tag: "en:pefc",
     label: "PEFC",
     // logo does not exist yet
-    logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/pefc.70x90.svg",
+    logo: "https://world-fr.openfoodfacts.org/images/lang/en/labels/pefc.90x90.svg",
   },
   "en:green-dot": {
     tag: "en:green-dot",
