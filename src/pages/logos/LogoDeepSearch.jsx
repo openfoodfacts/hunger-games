@@ -103,14 +103,7 @@ export default function LogoSearch() {
       );
     } else {
       setLogosToAnnotate((prev) =>
-        // set current page to unselected, keep old
-        prev.map((logo, index) => ({
-          ...logo,
-          selected:
-            index < page * pageSize && index >= (page - 1) * pageSize
-              ? false
-              : logo.selected,
-        }))
+        prev.map((logo) => ({ ...logo, selected: false }))
       );
     }
   }, [selectedAll]);
