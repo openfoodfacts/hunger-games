@@ -100,7 +100,7 @@ export const LOGOS = {
   "en:dolphin-safe": {
     tag: "en:dolphin-safe",
     label: "Dolphin Safe",
-// logo does not exist yet
+    // logo does not exist yet
     logo: "https://static.openfoodfacts.org/images/lang/en/labels/dolphin-safe.90x90.svg",
   },
   "en:canada-organic": {
@@ -116,7 +116,7 @@ export const LOGOS = {
   "en:made-in-france": {
     tag: "en:made-in-france",
     label: "Fabriqué en France",
-// logo does not exist yet
+    // logo does not exist yet
     logo: "https://static.openfoodfacts.org/images/lang/en/labels/made-in-france.90x90.svg",
   },
   "en:produced-in-brittany": {
@@ -182,7 +182,7 @@ export const LOGOS = {
   "en:max-havelaar-france": {
     tag: "en:max-havelaar-france",
     label: "Max Havelaar France",
-// does not exist
+    // does not exist
     logo: "https://static.openfoodfacts.org/images/lang/fr/labels/max-havelaar-france.90x90.svg",
   },
   "fr:sud-de-france": {
@@ -838,11 +838,11 @@ export const DASHBOARD: DashBoardTheme[] = [
   //    title: "Kosher",
   //    logos: [
   //      "en:cor-kosher",
-   //     "en:kosher-check",
+  //     "en:kosher-check",
   //      "en:tablet-k-kosher",
-   //     "en:mk-kosher",
-   //   ],
-   // },
+  //     "en:mk-kosher",
+  //   ],
+  // },
   // To-Do add Origins dashboard
   {
     tag: "origin-france",
