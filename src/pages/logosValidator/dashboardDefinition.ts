@@ -20,6 +20,9 @@ export type LogoDefinition = {
    * A URL of the definition of the logo
    */
   link?: string;
+  /**
+   * The insight type associated to the annotation
+   */
   type: InsightType;
   /**
    * To specify if the game needs to be restricted to a specific robotoff predictor
@@ -28,11 +31,7 @@ export type LogoDefinition = {
   predictor?: string;
 };
 
-interface Logos {
-  [key: string]: LogoDefinition;
-}
-
-export const LOGOS: Logos = {
+const UNTYPED_LOGOS = {
   // Nutriscore
   "en:nutriscore-grade-a": {
     tag: "en:nutriscore-grade-a",
@@ -729,6 +728,10 @@ export const LOGOS: Logos = {
   },
   // To-Do add Other scores logos
 };
+
+type LogoType = { [key in keyof typeof UNTYPED_LOGOS]: LogoDefinition };
+
+export const LOGOS = UNTYPED_LOGOS as LogoType
 
 type DashBoardTheme = {
   /**
