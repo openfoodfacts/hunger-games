@@ -1,3 +1,4 @@
+type InsightType = 'label' | 'product_weight' | 'category' | 'expiration_date' | 'packager_code' | 'brand' | 'packaging' | 'qr_code'
 export type LogoDefinition = {
   /**
    * The OpenFoodFacts tag used or interactions with robotoff and off
@@ -19,6 +20,7 @@ export type LogoDefinition = {
    * A URL of the definition of the logo
    */
   link?: string;
+  type:InsightType;
   /**
    * To specify if the game needs to be restricted to a specific robotoff predictor
    * @default "universal-logo-detector"

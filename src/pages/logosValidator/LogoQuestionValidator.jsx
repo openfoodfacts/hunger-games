@@ -139,7 +139,7 @@ export default function LogoQuestionValidator({ predictor }) {
 
   const filterState = React.useMemo(
     () => ({
-      insightType: "label",
+      insightType: selectedOption.type,
       brandFilter: "",
       countryFilter: "",
       sortByPopularity: false,
