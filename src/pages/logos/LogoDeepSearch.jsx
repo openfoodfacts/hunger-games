@@ -203,6 +203,27 @@ export default function LogoSearch() {
     setLogosToAnnotate((prev) => prev.filter((logo) => !logo.selected));
   };
 
+  const selectAllOnPage = () => {
+    setLogosToAnnotate((prev) =>
+      prev.map((logo, index) => ({
+        ...logo,
+        selected:
+          index < page * pageSize && index >= (page - 1) * pageSize
+            ? true
+            : logo.selected,
+      }))
+    );
+  };
+
+  const deselectAll = () => {
+    setLogosToAnnotate((prev) =>
+      prev.map((logo) => ({
+        ...logo,
+        selected: false,
+      }))
+    );
+  };
+
   return (
     <Box sx={{ padding: 2 }}>
       <Typography variant="h4" sx={{ mb: 2 }}>
@@ -229,9 +250,26 @@ export default function LogoSearch() {
 
       <Divider sx={{ my: 3 }} />
 
-      <Typography variant="h5" sx={{ mt: 5, mb: 1 }}>
-        Remaining to annotate
-      </Typography>
+      <Box sx={{ display: "flex", flexDirection: "row", gap: 1 }}>
+        <Typography variant="h5" sx={{ mt: 5, mb: 1 }}>
+          Remaining to annotate
+        </Typography>
+        <Button
+          onClick={selectAllOnPage}
+          variant="contained"
+          sx={{ ml: "auto", maxHeight: 40, mt: "40px", mb: "8px" }} // to align with "Remaining to annotate"
+        >
+          Select All
+        </Button>
+        <Button
+          onClick={deselectAll}
+          variant="contained"
+          sx={{ maxHeight: 40, mt: "40px", mb: "8px" }}
+        >
+          Deselect All
+        </Button>
+      </Box>
+
       <LogoGrid
         logos={logosToAnnotate.slice((page - 1) * pageSize, page * pageSize)}
         toggleLogoSelection={toggleSelection}
