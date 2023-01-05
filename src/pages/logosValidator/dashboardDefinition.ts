@@ -27,7 +27,12 @@ export type LogoDefinition = {
    */
   predictor?: string;
 };
-export const LOGOS = {
+
+interface Logos {
+  [key: string]: LogoDefinition;
+}
+
+export const LOGOS: Logos = {
   // Nutriscore
   "en:nutriscore-grade-a": {
     tag: "en:nutriscore-grade-a",
