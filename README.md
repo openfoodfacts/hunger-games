@@ -36,6 +36,7 @@ The main goal is: Every Open Food Facts user can annotate products in a few minu
 - [Node](https://nodejs.org)
 
 ## Setup:
+
 - Install Node: https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
 - Install yarn `npm install --global yarn`
 - Install libraries `yarn install`
@@ -69,13 +70,12 @@ Generate the JSON file `src/assets/countries.json` which contains all the countr
 
 Fetch categories and labels taxonomy from OpenFoodFacts static files, and generate JSON files used by the `Autocomplete` fields.
 
-
 ## How to define a dashboard
 
 Go to `src/pages/logosValidator/dashboardDefinition.ts`. You have two objects to edit:
+
 - `LOGOS` which contains the logos available in dashboards. Add the logos you need by providing at least `tag`, `label`, and `logo` properties.
 - `DASHBOARD` which for a dashboard associates an array of logos.
-
 
 ## How you can help
 
@@ -84,11 +84,12 @@ For developers, you can have a look at [good first issues](https://github.com/op
 You can also help by improving [translation in your language](https://translate.openfoodfacts.org/translate/openfoodfacts/1942/en-fr?filter=basic&value=0), Or the [wiki page](https://wiki.openfoodfacts.org/Hunger_Games) of the project
 
 ## Weekly meetings (joint with the ML/Robotoff meeting)
+
 - We e-meet Mondays at 17:00 Paris Time (16:00 London Time, 21:30 IST, 08:00 AM PT)
 - ![Google Meet](https://img.shields.io/badge/Google%20Meet-00897B?logo=google-meet&logoColor=white) Video call link: https://meet.google.com/qvv-grzm-gzb
 - Join by phone: https://tel.meet/qvv-grzm-gzb?pin=9965177492770
 - Add the Event to your Calendar by [adding the Open Food Facts community calendar to your calendar](https://wiki.openfoodfacts.org/Events)
-- [Weekly Agenda](https://drive.google.com/open?id=1RUfmWHjtFVaBcvQ17YfXu6FW6oRFWg-2lncljG0giKI): please add the Agenda items as early as you can. Make sure to check the Agenda items in advance of the meeting, so that we have the most informed discussions possible. 
+- [Weekly Agenda](https://drive.google.com/open?id=1RUfmWHjtFVaBcvQ17YfXu6FW6oRFWg-2lncljG0giKI): please add the Agenda items as early as you can. Make sure to check the Agenda items in advance of the meeting, so that we have the most informed discussions possible.
 - The meeting will handle Agenda items first, and if time permits, collaborative bug triage.
 - We strive to timebox the core of the meeting (decision making) to 30 minutes, with an optional free discussion/live debugging afterwards.
 - We take comprehensive notes in the Weekly Agenda of agenda item discussions and of decisions taken.
