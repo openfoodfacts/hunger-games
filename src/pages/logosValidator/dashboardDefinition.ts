@@ -899,19 +899,19 @@ const UNTYPED_LOGOS = {
     logo: "https://world.openfoodfacts.org/images/lang/en/labels/keyhole.90x90.png",
     type: "label",
   },
-  "en:health-star-rating-0-5.90x90.png": {
+  "en:health-star-rating-0-5": {
     tag: "en:health-star-rating-0-5",
     label: "health star rating 0 5",
     logo: "https://world.openfoodfacts.org/images/lang/en/labels/health-star-rating-0-5.90x90.png",
     type: "label",
   },
-  "en:health-star-rating-1-5.90x90.png": {
+  "en:health-star-rating-1-5": {
     tag: "en:health-star-rating-1-5",
     label: "health star rating 1 5",
     logo: "https://world.openfoodfacts.org/images/lang/en/labels/health-star-rating-1-5.90x90.png",
     type: "label",
   },
-  "en:health-star-rating-1.90x90.png": {
+  "en:health-star-rating-1": {
     tag: "en:health-star-rating-1",
     label: "health star rating 1",
     logo: "https://world.openfoodfacts.org/images/lang/en/labels/health-star-rating-1.90x90.png",
@@ -1428,13 +1428,24 @@ type DashBoardTheme = {
 export const DASHBOARD: DashBoardTheme[] = [
   {
     tag: "nutriscore",
-    title: "NutriScore",
+    title: "Nutrition Scores",
     logos: [
       "en:nutriscore-grade-a",
       "en:nutriscore-grade-b",
       "en:nutriscore-grade-c",
       "en:nutriscore-grade-d",
       "en:nutriscore-grade-e",
+      "en:keyhole",
+      "en:health-star-rating-0-5",
+      "en:health-star-rating-1",
+      "en:health-star-rating-1-5",
+      "en:health-star-rating-2",
+      "en:health-star-rating-2-5",
+      "en:health-star-rating-3",
+      "en:health-star-rating-3-5",
+      "en:health-star-rating-4",
+      "en:health-star-rating-4-5",
+      "en:health-star-rating-5",
     ],
   },
   {
@@ -1610,7 +1621,6 @@ export const DASHBOARD: DashBoardTheme[] = [
     ],
   },
   // TODO: vegetarian vegetalian categories
-  // Kosher dashboard
   {
     tag: "vegan-and-vegetarian",
     title: "Vegan and Vegetarian",
@@ -1632,6 +1642,51 @@ export const DASHBOARD: DashBoardTheme[] = [
       "en:icea-bio-vegan",
       "en:icea-bio-vegetariano",
       "en:icea-vegan",
+    ],
+  },
+  // TODO: Organic
+  {
+    tag: "organic",
+    title: "Organic",
+    logos: [
+      "en:soil-association-organic",
+      "en:austria-bio-garantie.90x90.png",
+      "en:bio-austria.67x90.svg",
+      "en:bio-suisse.111x90.png",
+      "en:bio-suisse.111x90.svg",
+      "en:biologique-canada-organic.90x90.png",
+      "en:ccof-certified-organic.90x90.png",
+      "en:biokreis.92x90.png",
+      "en:naturland-fair",
+      "en:bioland.90x90.svg",
+      "en:biogarantie.90x90.svg",
+      "en:biogarantie-bel.90x90.svg",
+      "en:biogarantie.90x90.png",
+      "en:naturland",
+    ],
+  },
+  // TODO: Beers and Wines
+  {
+    tag: "beers-and-wines",
+    title: "Beers and Wines",
+    logos: [
+      "en:world-beer-cup.51x90.png",
+      "en:belgian-hops.90x90.png",
+      "en:belgian-family-brewers.90x90.svg",
+      "en:certified-belgian-abbey-beer.66x90.png",
+    ],
+  },
+  // Climate claims
+  {
+    tag: "climate-claims",
+    title: "Climate Claims",
+    logos: [
+      "en:carbon-trust-carbon-neutral.53x90.png",
+      "en:carbon-trust-co2-measured.53x90.png",
+      "en:carbon-trust-lower-carbon.51x90.png",
+      "en:carbon-trust-reducing-co2.52x90.png",
+      "en:carbon-trust.62x90.png",
+      "en:climate-neutral-ceritfied.194x90.png",
     ],
   },
 ];
