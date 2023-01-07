@@ -873,19 +873,19 @@ const UNTYPED_LOGOS = {
     logo: "https://world-fr.openfoodfacts.org/images/lang/fr/labels/association-rituelle-de-la-grande-mosquee-de-lyon.88x90.png",
     type: "label",
   },
-  "en:halal-food-certification-of-india.90x90.png": {
+  "en:halal-food-certification-of-india": {
     tag: "en:halal-food-certification-of-india",
     label: "halal food certification of india",
     logo: "https://world.openfoodfacts.org/images/lang/en/labels/halal-food-certification-of-india.90x90.png",
     type: "label",
   },
-  "en:halal-monitoring-commitee.90x90.png": {
+  "en:halal-monitoring-commitee": {
     tag: "en:halal-monitoring-commitee",
     label: "halal monitoring commitee",
     logo: "https://world.openfoodfacts.org/images/lang/en/labels/halal-monitoring-commitee.90x90.png",
     type: "label",
   },
-  "en:halal.90x90.svg": {
+  "en:halal": {
     tag: "en:halal",
     label: "halal",
     logo: "https://world.openfoodfacts.org/images/lang/en/labels/halal.90x90.svg",
@@ -1233,32 +1233,32 @@ const UNTYPED_LOGOS = {
     type: "label",
   },
   // Beers and Wines
-  "en:world-beer-cup.51x90.png": {
+  "en:world-beer-cup": {
     tag: "en:world-beer-cup",
     label: "world-beer-cup",
     logo: "https://world.openfoodfacts.org/images/lang/en/labels/world-beer-cup.51x90.png",
     type: "label",
   },
-  "en:belgian-hops.90x90.png": {
+  "en:belgian-hops": {
     tag: "en:belgian-hops",
     label: "belgian hops",
     logo: "https://world.openfoodfacts.org/images/lang/en/labels/belgian-hops.90x90.png",
     type: "label",
   },
-  "en:belgian-family-brewers.90x90.svg": {
+  "en:belgian-family-brewers": {
     tag: "en:belgian-family-brewers",
     label: "belgian family brewers",
     logo: "https://world.openfoodfacts.org/images/lang/en/labels/belgian-family-brewers.90x90.svg",
     type: "label",
   },
-  "en:certified-belgian-abbey-beer.66x90.png": {
+  "en:certified-belgian-abbey-beer": {
     tag: "en:certified-belgian-abbey-beer",
     label: "certified belgian abbey beer",
     logo: "https://world.openfoodfacts.org/images/lang/en/labels/certified-belgian-abbey-beer.66x90.png",
     type: "label",
   },
   // CGA
-  "en:concours-general-agricole.90x90.svg": {
+  "en:concours-general-agricole": {
     tag: "en:concours-general-agricole",
     label: "concours general agricole",
     logo: "https://world.openfoodfacts.org/images/lang/en/labels/concours-general-agricole.90x90.svg",
@@ -1552,6 +1552,9 @@ export const DASHBOARD: DashBoardTheme[] = [
       "fr:societe-francaise-de-controle-de-viande-halal",
       "fr:controle-de-la-mosquee-d-evry-courcouronnes",
       "fr:association-rituelle-de-la-grande-mosquee-de-lyon",
+      "en:halal-food-certification-of-india",
+      "en:halal-monitoring-commitee",
+      "en:halal",
     ],
   },
   // Kosher dashboard
@@ -1670,10 +1673,10 @@ export const DASHBOARD: DashBoardTheme[] = [
     tag: "beers-and-wines",
     title: "Beers and Wines",
     logos: [
-      "en:world-beer-cup.51x90.png",
-      "en:belgian-hops.90x90.png",
-      "en:belgian-family-brewers.90x90.svg",
-      "en:certified-belgian-abbey-beer.66x90.png",
+      "en:world-beer-cup",
+      "en:belgian-hops",
+      "en:belgian-family-brewers",
+      "en:certified-belgian-abbey-beer",
     ],
   },
   // Climate claims
@@ -1687,6 +1690,30 @@ export const DASHBOARD: DashBoardTheme[] = [
       "en:carbon-trust-reducing-co2.52x90.png",
       "en:carbon-trust.62x90.png",
       "en:climate-neutral-ceritfied.194x90.png",
+    ],
+  },
+  // Animal Welfare
+  {
+    tag: "animal-welfare",
+    title: "Animal Welfare",
+    logos: [
+      "en:haltungsform-1.79x90.png",
+      "en:haltungsform-2.79x90.png",
+      "en:haltungsform-3.79x90.png",
+      "en:haltungsform-4.79x90.png",
+      "en:für-mehr-tierschutz-1-star.206x90.png",
+      "en:für-mehr-tierschutz-2-stars.206x90.png",
+    ],
+  },
+  // Food Awards
+  {
+    tag: "food-awards",
+    title: "Food Awards",
+    logos: [
+      "en:concours-general-agricole",
+      "en:medaille-d-argent-du-concours-general-agricole",
+      "en:medaille-d-or-du-concours-general-agricole",
+      "en:medaille-de-bronze-du-concours-general-agricole",
     ],
   },
 ];
