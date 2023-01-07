@@ -424,7 +424,12 @@ const UNTYPED_LOGOS = {
     logo: "https://world.openfoodfacts.org/images/lang/en/labels/terrasuisse.87x90.svg",
     type: "label",
   },
-
+  "en:british-lion-quality.97x90.png": {
+    tag: "en:british-lion-quality",
+    label: "british lion quality",
+    logo: "https://world.openfoodfacts.org/images/lang/en/labels/british-lion-quality.97x90.png",
+    type: "label",
+  },
   // Eco-score
   // To-Do add the origin france logos
   "en:organic": {
@@ -1132,7 +1137,7 @@ const UNTYPED_LOGOS = {
   "en:vegan-australia": {
     tag: "en:vegan-australia",
     label: "vegan australia",
-    logo: "https://world.openfoodfacts.org/images/lang/en/labels/ vegan-australia.90x90.png",
+    logo: "https://world.openfoodfacts.org/images/lang/en/labels/vegan-australia.90x90.png",
     type: "label",
   },
   "en:qualità-vegetariana-vegan": {
@@ -1141,25 +1146,25 @@ const UNTYPED_LOGOS = {
     logo: "https://world.openfoodfacts.org/images/lang/en/labels/qualità-vegetariana-vegan.137x90.png",
     type: "label",
   },
-  "en:european-vegetarian-union-vegan.90x90.svg": {
+  "en:european-vegetarian-union-vegan": {
     tag: "en:european-vegetarian-union-vegan",
     label: "european vegetarian union vegan",
     logo: "https://world.openfoodfacts.org/images/lang/en/labels/european-vegetarian-union-vegan.90x90.svg",
     type: "label",
   },
-  "en:european-vegetarian-union-vegetarian.90x90.svg": {
+  "en:european-vegetarian-union-vegetarian": {
     tag: "en:european-vegetarian-union-vegetarian",
     label: "european vegetarian union vegetarian",
     logo: "https://world.openfoodfacts.org/images/lang/en/labels/european-vegetarian-union-vegetarian.90x90.svg",
     type: "label",
   },
-  "en:european-vegetarian-union.90x90.svg": {
+  "en:european-vegetarian-union": {
     tag: "en:european-vegetarian-union",
     label: "european vegetarian union",
     logo: "https://world.openfoodfacts.org/images/lang/en/labels/european-vegetarian-union.90x90.svg",
     type: "label",
   },
-  "en:eve-vegan.271x90.png": {
+  "en:eve-vegan": {
     tag: "en:eve-vegan",
     label: "eve vegan",
     logo: "https://world.openfoodfacts.org/images/lang/en/labels/eve-vegan.271x90.png",
@@ -1538,17 +1543,24 @@ export const DASHBOARD: DashBoardTheme[] = [
       "fr:association-rituelle-de-la-grande-mosquee-de-lyon",
     ],
   },
-  // To-Do add Kosher dashboard
-  //  {
-  //    tag: "kosher",
-  //    title: "Kosher",
-  //    logos: [
-  //      "en:cor-kosher",
-  //     "en:kosher-check",
-  //      "en:tablet-k-kosher",
-  //     "en:mk-kosher",
-  //   ],
-  // },
+  // Kosher dashboard
+  {
+    tag: "kosher",
+    title: "Kosher",
+    logos: [
+      //   "en:cor-kosher",
+      // "en:kosher-check",
+      //   "en:tablet-k-kosher",
+      // "en:mk-kosher",
+      "en:klbd-kosher",
+      "en:kosher-baint",
+      "en:kof-k",
+      "en:hechsher-safed-rabbinate",
+      "en:organized-kashrut-kosher",
+      "en:orthodox-union-kosher-90x90",
+      "en:star-k",
+    ],
+  },
   // To-Do add Origins dashboard
   {
     tag: "origin-france",
@@ -1598,4 +1610,28 @@ export const DASHBOARD: DashBoardTheme[] = [
     ],
   },
   // TODO: vegetarian vegetalian categories
+  // Kosher dashboard
+  {
+    tag: "vegan-and-vegetarian",
+    title: "Vegan and Vegetarian",
+    logos: [
+      "en:vege-project-vegetarian",
+      "en:vegetarian-society-approved-vegan",
+      "en:vegetarian-society-approved",
+      "en:vege-project-vegan",
+      "en:vegan-cert",
+      "en:veganok",
+      "en:vegan-action",
+      "en:vegan-australia",
+      "en:qualità-vegetariana-vegan",
+      "en:european-vegetarian-union-vegan",
+      "en:european-vegetarian-union-vegetarian",
+      "en:european-vegetarian-union",
+      "en:eve-vegan",
+      "en:the-vegan-society",
+      "en:icea-bio-vegan",
+      "en:icea-bio-vegetariano",
+      "en:icea-vegan",
+    ],
+  },
 ];
