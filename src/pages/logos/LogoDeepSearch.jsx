@@ -30,7 +30,8 @@ const request = async ({ barcode, value, type, count }) => {
     barcode,
     value,
     type,
-    Number.parseInt(count)
+    Number.parseInt(count),
+    true
   );
 
   return {

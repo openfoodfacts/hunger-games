@@ -105,7 +105,7 @@ const robotoff = {
     );
   },
 
-  searchLogos(barcode, value, type, count = 25) {
+  searchLogos(barcode, value, type, count = 25, random = false) {
     const formattedValue = ["label", "category"].includes(type)
       ? { taxonomy_value: value }
       : { value };
@@ -115,6 +115,7 @@ const robotoff = {
         barcode,
         type,
         count,
+        random,
         ...formattedValue,
       }),
     });
