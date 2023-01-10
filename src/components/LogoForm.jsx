@@ -10,7 +10,7 @@ import { useTranslation } from "react-i18next";
 
 import LabelFilter from "../components/QuestionFilter/LabelFilter";
 
-const TYPE_WITHOUT_VALUE = ["packager_code", "qr_code"];
+const TYPE_WITHOUT_VALUE = ["packager_code", "qr_code", "no_logo"];
 
 const logoTypeOptions = [
   { value: "", labelKey: "logos.type" },
@@ -22,6 +22,7 @@ const logoTypeOptions = [
   { value: "category", labelKey: "logos.category" },
   { value: "nutrition_label", labelKey: "logos.nutrition_label" },
   { value: "store", labelKey: "logos.store" },
+  { value: "no_logo", labelKey: "logos.no_logo" },
 ];
 
 const isValidAnnotation = ({ type, value }) => {
