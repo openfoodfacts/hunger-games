@@ -181,6 +181,25 @@ export default function LogoAnnotation() {
     [logoSearchParams.logo_id]
   );
 
+  const setRangeSelection = React.useCallback((ids, newSelectedState) => {
+    const shouldBeSet = {};
+    ids.forEach((id) => (shouldBeSet[id] = true));
+
+    setLogoState((state) => {
+      return {
+        ...state,
+        logos: state.logos.map((logo) =>
+          shouldBeSet[logo.id]
+            ? {
+                ...logo,
+                selected: newSelectedState,
+              }
+            : logo
+        ),
+      };
+    });
+  }, []);
+
   const selectAll = () => {
     setLogoState((prevState) => ({
       ...prevState,
@@ -312,6 +331,7 @@ export default function LogoAnnotation() {
       <LogoGrid
         logos={logoState.logos}
         toggleLogoSelection={toggleSelection}
+        setLogoSelectionRange={setRangeSelection}
         sx={{ justifyContent: "center" }}
       />
       <Box sx={{ my: 5, textAlign: "center" }}>
