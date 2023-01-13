@@ -6,16 +6,13 @@ import Paper from "@mui/material/Paper";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import TextField from "@mui/material/TextField";
-import Dialog from "@mui/material/Dialog";
-import DialogContent from "@mui/material/DialogContent";
 
 import LabelFilter from "../../components/QuestionFilter/LabelFilter";
-import LogoForm from "../../components/LogoForm";
 import LogoGrid from "../../components/LogoGrid";
+import AnnotateLogoModal from "../../components/AnnotateLogoModal";
 import robotoff from "../../robotoff";
 import off from "../../off";
 import useUrlParams from "../../hooks/useUrlParams";
-import { DialogActions } from "@mui/material";
 
 const PRODUCT_PAGE_SIZE = 2;
 
@@ -166,46 +163,32 @@ const useLogoFetching = (filter) => {
     });
   }, []);
 
-  return [logos, loadMore, isLoading, canLoadMore, toggleSelection];
+  const inernalAnnotation = React.useCallback((ids, anotation) => {
+    setLogos((prevLogos) =>
+      prevLogos.map((logo) => {
+        if (!ids.includes(logo.id)) {
+          return logo;
+        }
+        return {
+          ...logo,
+          selected: false,
+          annotation_type: anotation.type,
+          annotation_value: anotation.value,
+        };
+      })
+    );
+  }, []);
+
+  return [
+    logos,
+    loadMore,
+    isLoading,
+    canLoadMore,
+    toggleSelection,
+    inernalAnnotation,
+  ];
 };
 
-const AnnotateSelectedLogos = (props) => {
-  const { isOpen, logos, closeAnnotation, toggleLogoSelection } = props;
-
-  const sendAnnotation = async ({ type, value }) => {
-    try {
-      await robotoff.annotateLogos(
-        logos
-          .filter((logo) => logo.selected)
-          .map(({ id }) => ({
-            logo_id: id,
-            value,
-            type,
-          }))
-      );
-      logos
-        .filter((logo) => logo.selected)
-        .forEach(({ id }) => {
-          toggleLogoSelection(id);
-        });
-      closeAnnotation();
-    } catch {}
-  };
-  return (
-    <Dialog open={isOpen} onClose={closeAnnotation} maxWidth="xl">
-      <DialogContent>
-        <LogoForm value="" type="" request={sendAnnotation} />
-        <LogoGrid
-          logos={logos.filter((logo) => logo.selected)}
-          toggleLogoSelection={toggleLogoSelection}
-        />
-      </DialogContent>
-      <DialogActions>
-        <Button onClick={closeAnnotation}>Cancel</Button>
-      </DialogActions>
-    </Dialog>
-  );
-};
 export default function AnnotateLogosFromProducts() {
   const [filter, setFilter] = useUrlParams({
     tagtype: "labels",
@@ -218,8 +201,14 @@ export default function AnnotateLogosFromProducts() {
     setInternalFilter(filter);
   }, [filter]);
 
-  const [logos, loadMore, isLoading, canLoadMore, toggleSelection] =
-    useLogoFetching(filter);
+  const [
+    logos,
+    loadMore,
+    isLoading,
+    canLoadMore,
+    toggleSelection,
+    inernalAnnotation,
+  ] = useLogoFetching(filter);
 
   const [isAnnotationOpen, setIsAnnotationOpen] = React.useState(false);
   const openAnnotation = React.useCallback(() => {
@@ -313,11 +302,17 @@ export default function AnnotateLogosFromProducts() {
               </Button>
             </Stack>
           </Paper>
-          <AnnotateSelectedLogos
+          <AnnotateLogoModal
             isOpen={isAnnotationOpen}
             logos={logos}
             closeAnnotation={closeAnnotation}
             toggleLogoSelection={toggleSelection}
+            afterAnnotation={(annotatedLogos, annotation) => {
+              inernalAnnotation(
+                annotatedLogos.map((l) => l.id),
+                annotation
+              );
+            }}
           />
         </>
       }

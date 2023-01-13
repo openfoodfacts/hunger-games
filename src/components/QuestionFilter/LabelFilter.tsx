@@ -89,6 +89,12 @@ const LabelFilter = (props) => {
       onInputChange={(e, newInputValue, reason) => {
         setInputValue(newInputValue);
       }}
+      onBlur={() => {
+        if (innerValue !== inputValue) {
+          setInnerValue(inputValue);
+          onChange(inputValue);
+        }
+      }}
       inputValue={inputValue}
       value={innerValue}
       options={options}
