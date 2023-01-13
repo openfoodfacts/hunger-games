@@ -90,7 +90,12 @@ const LabelFilter = (props) => {
         setInputValue(newInputValue);
       }}
       onBlur={() => {
-        if (innerValue !== inputValue) {
+        const isSelectedValue =
+          typeof inputValue === "string"
+            ? innerValue !== inputValue
+            : innerValue.cleanName === cleanName(inputValue);
+
+        if (!isSelectedValue) {
           setInnerValue(inputValue);
           onChange(inputValue);
         }
