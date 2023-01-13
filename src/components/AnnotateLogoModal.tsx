@@ -1,11 +1,12 @@
-import Button from "@mui/material/Button";
 import Dialog from "@mui/material/Dialog";
 import DialogContent from "@mui/material/DialogContent";
+import DialogActions from "@mui/material/DialogActions";
+import Divider from "@mui/material/Divider";
+import Typography from "@mui/material/Typography";
 
 import LogoForm from "./LogoForm";
 import LogoGrid from "./LogoGrid";
 import robotoff from "../robotoff";
-import { DialogActions } from "@mui/material";
 import { IS_DEVELOPMENT_MODE } from "../const";
 
 const AnnotateLogoModal = (props) => {
@@ -47,14 +48,21 @@ const AnnotateLogoModal = (props) => {
   return (
     <Dialog open={isOpen} onClose={closeAnnotation} maxWidth="xl">
       <DialogContent>
-        <LogoForm value={value} type={type} request={sendAnnotation} />
+        <Typography variant="h5">Selected logos</Typography>
         <LogoGrid
           logos={logos.filter((logo) => logo.selected)}
           toggleLogoSelection={toggleLogoSelection}
+          sx={{ padding: 0 }}
         />
       </DialogContent>
+      <Divider />
       <DialogActions>
-        <Button onClick={closeAnnotation}>Cancel</Button>
+        <LogoForm
+          value={value}
+          type={type}
+          request={sendAnnotation}
+          sx={{ padding: [2, 4] }}
+        />
       </DialogActions>
     </Dialog>
   );
