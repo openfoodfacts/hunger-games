@@ -194,8 +194,13 @@ export default function LogoSearch() {
   }, []);
 
   const afterAnnotation = (annotatedLogos) => {
-    setAnnotatedLogos((prev) => [...annotatedLogos, ...prev]);
-    setLogosToAnnotate((prev) => prev.filter((logo) => !logo.selected));
+    const annotatedIds = {};
+    annotatedLogos.forEach(({ id }) => (annotatedIds[id] = true));
+    setAnnotatedLogos((prev) => [...prev, ...annotatedLogos]);
+    setLogosToAnnotate((prev) => {
+      console.log(prev);
+      return prev.filter((logo) => !annotatedIds[logo.id]);
+    });
   };
 
   const selectAllOnPage = () => {
