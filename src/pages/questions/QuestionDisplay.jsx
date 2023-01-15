@@ -46,15 +46,15 @@ const getValueTagQuestionsURL = (filterState, question) => {
     question !== null &&
     question &&
     question?.insight_id !== NO_QUESTION_LEFT &&
-    question.value_tag
+    question?.value_tag
   ) {
     const urlParams = new URLSearchParams();
     urlParams.append("type", question.insight_type);
-    urlParams.append("value_tag", reformatValueTag(question.value_tag));
+    urlParams.append("value_tag", reformatValueTag(question?.value_tag));
     return `/questions?${getQuestionSearchParams({
       ...filterState,
       insightType: question.insight_type,
-      valueTag: question.value_tag,
+      valueTag: question?.value_tag,
     })}`;
   }
   return null;
@@ -64,11 +64,11 @@ const getValueTagExamplesURL = (question) => {
   if (
     question !== null &&
     question?.insight_id !== NO_QUESTION_LEFT &&
-    question.value_tag &&
+    question?.value_tag &&
     question.insight_type
   ) {
     return `${OFF_URL}/${question.insight_type}/${reformatValueTag(
-      question.value_tag
+      question?.value_tag
     )}`;
   }
   return "";
@@ -133,19 +133,19 @@ const QuestionDisplay = ({
           case shortcuts.skip:
             answerQuestion({
               value: SKIPPED_INSIGHT,
-              insightId: question.insight_id,
+              insight_id: question.insight_id,
             });
             break;
           case shortcuts.yes:
             answerQuestion({
               value: CORRECT_INSIGHT,
-              insightId: question.insight_id,
+              insight_id: question.insight_id,
             });
             break;
           case shortcuts.no:
             answerQuestion({
               value: WRONG_INSIGHT,
-              insightId: question.insight_id,
+              insight_id: question.insight_id,
             });
             break;
           default:

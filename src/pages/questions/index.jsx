@@ -14,31 +14,52 @@ import Divider from "@mui/material/Divider";
 import Stack from "@mui/material/Stack";
 import Grid from "@mui/material/Grid";
 
-export default function Questions() {
-  const [filterState, setFilterState, isFavorite, toggleFavorite] =
-    useFilterSearch();
+import store, { fetchQuestions, answerQuestion } from "./store";
+import { Provider, useDispatch, useSelector } from "react-redux";
 
-  const {
-    buffer,
-    answerQuestion,
-    remainingQuestionNb,
-    answers,
-    preventAnnotation,
-  } = useQuestionBuffer(filterState);
-  const question = buffer[0] ?? null;
+function QuestionsConsumer() {
+  // const [filterState, setFilterState, isFavorite, toggleFavorite] =
+  //   useFilterSearch();
+
+  // const {
+  //   buffer,
+  //   answerQuestion,
+  //   remainingQuestionNb,
+  //   answers,
+  //   preventAnnotation,
+  // } = useQuestionBuffer(filterState);
+  // const question = buffer[0] ?? null;
+
+  // const resetFilters = React.useCallback(
+  //   () =>
+  //     setFilterState((prevState) => ({
+  //       ...DEFAULT_FILTER_STATE,
+  //       insightType: prevState.insightType,
+  //       sortByPopularity: prevState.sortByPopularity,
+  //     })),
+  //   [setFilterState]
+  // );
+  const dispatch = useDispatch();
+
+  const state = useSelector((state) => state.questions);
+
+  const remainingQuestionNb = state.remainingQuestions.length;
+
+  React.useEffect(() => {
+    if (remainingQuestionNb < 5) {
+      dispatch(fetchQuestions());
+    }
+  }, [dispatch, remainingQuestionNb]);
+
+  const answer = React.useCallback(
+    ({ value, insight_id }) => {
+      dispatch(answerQuestion({ insight_id, value }));
+    },
+    [dispatch]
+  );
+  const question = state.questions[state.remainingQuestions[0]] ?? null;
 
   const productData = useProductData(question?.barcode);
-
-  const resetFilters = React.useCallback(
-    () =>
-      setFilterState((prevState) => ({
-        ...DEFAULT_FILTER_STATE,
-        insightType: prevState.insightType,
-        sortByPopularity: prevState.sortByPopularity,
-      })),
-    [setFilterState]
-  );
-
   return (
     <Grid container spacing={2} p={2}>
       <Grid item xs={12} md={5}>
@@ -49,17 +70,17 @@ export default function Questions() {
           }}
         >
           <QuestionFilter
-            filterState={filterState}
-            setFilterState={setFilterState}
-            isFavorite={isFavorite}
-            toggleFavorite={toggleFavorite}
+            filterState={state.filterState}
+            setFilterState={(x) => x}
+            isFavorite={false}
+            toggleFavorite={() => null}
           />
           <Divider sx={{ margin: "1rem" }} />
           <QuestionDisplay
             question={question}
-            answerQuestion={answerQuestion}
-            resetFilters={resetFilters}
-            filterState={filterState}
+            answerQuestion={answer}
+            resetFilters={() => null}
+            filterState={state.filterState}
             productData={productData}
           />
         </Stack>
@@ -70,18 +91,28 @@ export default function Questions() {
       <Grid item xs={12} md={2}>
         <UserData
           remainingQuestionNb={remainingQuestionNb}
-          answers={answers}
-          preventAnnotation={preventAnnotation}
+          answers={state.answeredQuestions.map(
+            (question) => state.questions[question.insight_id]
+          )}
+          preventAnnotation={() => null}
         />
       </Grid>
       {/* pre-fetch images of the next question */}
-      {buffer
-        .slice(1, 5)
-        .map((q) =>
-          q.source_image_url ? (
-            <link rel="prefetch" key={q.insight_id} href={q.source_image_url} />
-          ) : null
-        )}
+      {state.remainingQuestions.slice(1, 5).map((insight_id) => {
+        const q = state.questions[insight_id] ?? null;
+        return q?.source_image_url ? (
+          <link rel="prefetch" key={q.insight_id} href={q.source_image_url} />
+        ) : null;
+      })}
     </Grid>
+    // <pre>{JSON.stringify(state, null, 2)}</pre>
+  );
+}
+
+export default function Questions() {
+  return (
+    <Provider store={store}>
+      <QuestionsConsumer />
+    </Provider>
   );
 }
