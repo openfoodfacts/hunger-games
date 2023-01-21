@@ -10,17 +10,12 @@ import { useTheme } from "@mui/material/styles";
 
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
-
 import robotoff from "../../robotoff";
 import off from "../../off";
-import { IS_DEVELOPMENT_MODE } from "../../const";
 import LogoGrid from "../../components/LogoGrid";
-import LogoForm from "../../components/LogoForm";
 import BackToTop from "../../components/BackToTop";
 import useUrlParams from "../../hooks/useUrlParams";
-
-//  Only for testing purpose
-import { sleep } from "../../utils";
+import AnnotateLogoModal from "../../components/AnnotateLogoModal";
 
 export const getQuestionSearchParams = (logoSearchState) => {
   const urlParams = new URLSearchParams(window.location.search);
@@ -82,26 +77,6 @@ const loadLogos = async (
   });
 
   return logoData;
-};
-
-const request = (selectedIds) => async (data) => {
-  if (data == null) {
-    return;
-  }
-  const { type, value } = data;
-
-  const annotations = selectedIds.map((id) => ({
-    logo_id: id,
-    value,
-    type,
-  }));
-
-  if (IS_DEVELOPMENT_MODE) {
-    console.log(annotations);
-    await sleep(3000);
-  } else {
-    await robotoff.annotateLogos(annotations);
-  }
 };
 
 const DEFAULT_LOGO_STATE = { logos: [], isLoading: true, referenceLogo: {} };
@@ -206,6 +181,25 @@ export default function LogoAnnotation() {
     [logoSearchParams.logo_id]
   );
 
+  const setRangeSelection = React.useCallback((ids, newSelectedState) => {
+    const shouldBeSet = {};
+    ids.forEach((id) => (shouldBeSet[id] = true));
+
+    setLogoState((state) => {
+      return {
+        ...state,
+        logos: state.logos.map((logo) =>
+          shouldBeSet[logo.id]
+            ? {
+                ...logo,
+                selected: newSelectedState,
+              }
+            : logo
+        ),
+      };
+    });
+  }, []);
+
   const selectAll = () => {
     setLogoState((prevState) => ({
       ...prevState,
@@ -250,6 +244,14 @@ export default function LogoAnnotation() {
     setIsRefreshing(false);
   };
 
+  const [isAnnotationOpen, setIsAnnotationOpen] = React.useState(false);
+  const openAnnotation = React.useCallback(() => {
+    setIsAnnotationOpen(true);
+  }, []);
+  const closeAnnotation = React.useCallback(() => {
+    setIsAnnotationOpen(false);
+  }, []);
+
   const selectedIds = logoState.logos
     .filter((logo) => logo.selected)
     .map((logo) => logo.id);
@@ -282,23 +284,6 @@ export default function LogoAnnotation() {
         }}
         elevation={0}
       >
-        <LogoForm
-          value={logoState.referenceLogo.annotation_value ?? ""}
-          type={logoState.referenceLogo.annotation_type ?? ""}
-          request={async (formData) => {
-            await request(selectedIds)(formData);
-            setLogoState((prevState) => ({
-              ...prevState,
-              logos: prevState.logos.map((logo) => {
-                return {
-                  ...logo,
-                  selected: logoSearchParams.logo_id === logo.id.toString(),
-                };
-              }),
-            }));
-          }}
-          isLoading={logoState.isLoading}
-        />
         {/* Selection buttons */}
         <Stack direction="row" spacing={1} sx={{ my: 1 }}>
           <Button variant="outlined" size="small" onClick={selectAll}>
@@ -342,16 +327,11 @@ export default function LogoAnnotation() {
           <CircularProgress />
         </Box>
       )}
-      {/* Selected logos */}
-      <LogoGrid
-        logos={logoState.logos.filter((logo) => logo.selected)}
-        toggleLogoSelection={toggleSelection}
-      />
-
       {/* Logos to select */}
       <LogoGrid
         logos={logoState.logos}
         toggleLogoSelection={toggleSelection}
+        setLogoSelectionRange={setRangeSelection}
         sx={{ justifyContent: "center" }}
       />
       <Box sx={{ my: 5, textAlign: "center" }}>
@@ -366,6 +346,44 @@ export default function LogoAnnotation() {
           {t("logos.load_more")}
         </Button>
       </Box>
+
+      <Box sx={{ my: 5, textAlign: "center", position: "sticky", bottom: 0 }}>
+        <Button
+          fullWidth
+          onClick={openAnnotation}
+          color="success"
+          variant="contained"
+        >
+          Annotate
+        </Button>
+      </Box>
+
+      <AnnotateLogoModal
+        value={logoState.referenceLogo.annotation_value ?? ""}
+        type={logoState.referenceLogo.annotation_type ?? ""}
+        isOpen={isAnnotationOpen}
+        logos={logoState.logos}
+        closeAnnotation={closeAnnotation}
+        toggleLogoSelection={toggleSelection}
+        afterAnnotation={(selectedLogos, annotation) => {
+          const logoIds = selectedLogos.map((l) => l.id);
+
+          setLogoState((prevState) => ({
+            ...prevState,
+            logos: prevState.logos.map((logo) => {
+              if (!logoIds.includes(logo.id)) {
+                return logo;
+              }
+              return {
+                ...logo,
+                selected: false,
+                annotation_type: annotation.type,
+                annotation_value: annotation.value,
+              };
+            }),
+          }));
+        }}
+      />
       <BackToTop />
     </Box>
   );

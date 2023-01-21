@@ -130,7 +130,7 @@
     "nutritions": "Valori nutriționale",
     "settings": "Configurări",
     "eco-score": "Eco-scor",
-    "nutriscore": "Nutri-Scor",
+    "dashboard": "Tabloul de bord cu sigle",
     "tour": "Arată tur",
     "logged_in_user": "conectat ca {{userName}}",
     "log_in": "faceți clic pentru a vă autentifica"
@@ -182,6 +182,7 @@
     "qr_code": "cod QR",
     "category": "Categorie",
     "nutrition_label": "Valori nutriționale",
+    "no_logo": "Fără logo",
     "store": "Magazine",
     "detail": "Detaliu logo",
     "id": "ID logo:",
@@ -234,19 +235,19 @@
       "page4": {
         "title": "Joc Întrebări Eco-Scor",
         "text1": "Ajutați-ne să terminăm întrebările rămase în etichetele cu cea mai mare prioritate!",
-        "text2": "These cards are linked to labels used in the computation of the eco-score.",
-        "text3": "<strong>What is Eco-Score?</strong>",
-        "text4": "Eco-Score captures the total environmental footprint, making it easier for consumers to compare products and decide which is better for the environment."
+        "text2": "Aceste carduri sunt legate de etichetele utilizate la calcularea punctajului ecologic.",
+        "text3": "<strong>Ce este Eco-Score?</strong>",
+        "text4": "EcoScorul surprinde totalitatea amprentei de mediu, facilitând compararea produselor şi luarea deciziilor care sunt mai bune pentru mediu."
       },
       "page5": {
         "title": "Configurări",
-        "text1": "Set your preferred language, and report issues from our settings page.",
-        "text2": "If you're a developer, you can also explore our database content using our dev mode."
+        "text1": "Setați limba preferată și raportați problemele din pagina noastră de setări.",
+        "text2": "Dacă sunteți dezvoltator, puteți explora și conținutul bazei de date folosind modul nostru de dezvoltare."
       },
       "page6": {
-        "title": "Tour",
-        "text1": "Got stuck somewhere? Want to take the tour again?",
-        "text2": "Just click on the question mark and start the journey again!"
+        "title": "Tur",
+        "text1": "Te-ai blocat undeva? Vrei să faci turul din nou?",
+        "text2": "Doar faceți clic pe semnul întrebării și începeți din nou călătoria!"
       }
     },
     "logos": {
@@ -286,8 +287,8 @@
       "4": "Selectarea valorilor"
     },
     "loading": "Se încarcă...",
-    "unknown_brand": "Brand Unknown",
-    "value_missing": "You forgot to input value duuuuuuuuuuuuuuuuude",
+    "unknown_brand": "Marcă necunoscută",
+    "value_missing": "Ați uitat să introduceți valoarea duuuuuuuuuuuuuuuuude",
     "next": "Pasul următor",
     "prev": "Pas anterior",
     "skip": "Sari peste acest produs",
@@ -323,22 +324,22 @@
     }
   },
   "notfound": {
-    "image_alt": "404 not found",
+    "image_alt": "404 Nu a fost gasit",
     "nopage": "Ups! Pagina pe care o cauți nu poate fi găsită.",
     "redirect1": "Vrei să joci câteva jocuri?",
     "redirect2": "Click aici"
   },
   "nutriscore": {
-    "image_alt": "cropped image",
+    "image_alt": "decupare imagine",
     "label": "Adnotează detectarea logo-ului Nutri-Score în funcție de lot.",
     "description": "Pentru a face acest lucru, selectaţi toate imaginile care arată valoarea Nutri-Score corectă/greşită ({{label}}), şi faceţi clic pe butoanele de jos pentru a spune dacă aţi selectat un set corect sau greşit.",
-    "images_remaining": "Still {{remaining}} to annotate",
-    "image_sizes": "Image sizes",
+    "images_remaining": "Încă {{remaining}} pentru adnotare",
+    "image_sizes": "Dimensiunile imaginii",
     "zoom_on_logo": "Măriți sigla",
     "select_all": "Selectează tot",
     "deselect_all": "Deselectează-le pe toate",
-    "incorrect": "Wrong",
-    "correct": "Correct ({{label}})"
+    "incorrect": "Greșit",
+    "correct": "Corect ({{label}})"
   },
   "eco-score": {
     "description": "Iată un rezumat al întrebărilor care ar putea îmbunătăți calculul Eco-Score",

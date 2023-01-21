@@ -14,14 +14,16 @@ import { getQuestionSearchParams } from "../../components/QuestionFilter";
 import { LogoDefinition } from "./dashboardDefinition";
 
 const DashboardCard = (props: LogoDefinition) => {
-  const { tag, label, logo, message, link } = props;
+  const { tag, label, logo, message, link, type } = props;
 
   const questionsUrl = `/questions?${getQuestionSearchParams({
-    insightType: "label",
+    // insightType: "label",
+    insightType: type,
     valueTag: tag,
   })}`;
   const logoQuestionsUrl = `/logoQuestion/${tag}`;
-  const logoAnnotationUrl = `/logos/deep-search?type=label&value=${tag}`;
+  // const logoAnnotationUrl = `/logos/deep-search?type=label&value=${tag}`;
+  const logoAnnotationUrl = `/logos/deep-search?type=${type}&value=${tag}`;
 
   const [questionNumber, setQuestionNumber] = React.useState<"?" | number>("?");
 

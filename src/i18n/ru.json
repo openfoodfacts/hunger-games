@@ -78,7 +78,7 @@
     "filters": {
       "active_filter_number": "+{{count}} фильтра",
       "active_filter_number_one": "+{{count}} filter",
-      "active_filter_number_zero": "no filter",
+      "active_filter_number_zero": "без фильтра",
       "short_label": {
         "value": "значение",
         "country": "страна",
@@ -89,11 +89,11 @@
       "long_label": {
         "type": "Тип вопроса",
         "value": "Предлагаемое значение",
-        "country": "Страна продукта",
+        "country": "Страна производства",
         "brand": "Марка продукта",
         "popularity": "Сортировка по популярности",
         "edit": "",
-        "campaign": "Campaign"
+        "campaign": "Кампания"
       },
       "placeholders": {
         "value": "Ценность(фанта, ru: органический)",
@@ -107,17 +107,17 @@
       }
     },
     "other_questions": "Other questions",
-    "send": "Send",
-    "flag": "Something wrong? Report/flag the image!",
+    "send": "Отправить",
+    "flag": "Что-то не так? Пожалуйтесь/пометьте изображение!",
     "unflag": "Unflag the image",
-    "reset_filters": "Reset filters",
+    "reset_filters": "Сбросить фильтры",
     "log_in": "Имя пользователя",
     "sign_up": "Регистрация",
     "login_title": "Make your annotation count",
-    "login_description": "Currently you are not logged in Open Food Facts. To get your answers directly applied to products, and associated to your account, consider logging in to your Open Food Facts account, or creating one"
+    "login_description": "В данный момент вы не вошли в Open Food Facts. Чтобы получать ответы, напрямую связанные с продуктами и вашим аккаунтом, войдите в ваш аккаунт Open Food Facts, или создайте его"
   },
   "menu": {
-    "title": "Hunger Games",
+    "title": "Голодные Игры",
     "games": "Игры",
     "questions": "Вопросы",
     "logos": "Logos",
@@ -130,10 +130,10 @@
     "nutritions": "Пищевая и энергетическая ценность",
     "settings": "Настройки",
     "eco-score": "Эко-оценка",
-    "nutriscore": "Nutri-Score",
+    "dashboard": "Панель логотипов",
     "tour": "Show Tour",
     "logged_in_user": "logged as {{userName}}",
-    "log_in": "click to login"
+    "log_in": "нажмите для входа"
   },
   "insights": {
     "insights": "Прогнозы",
@@ -182,6 +182,7 @@
     "qr_code": "QR-код",
     "category": "Категория",
     "nutrition_label": "Этикетка пищевой ценности",
+    "no_logo": "Not a logo",
     "store": "Магазин",
     "detail": "Детали логотипа",
     "id": "ID логотипа:",
@@ -191,13 +192,13 @@
     "no_found": "Логотип не найден",
     "search": "Поиск",
     "number_of_results": "Количество результатов:",
-    "loading": "Loading...",
+    "loading": "Загрузка...",
     "refresh": "Обновить",
     "search_specific": "Search specific logo",
     "load_more": "Load more",
     "no_results": "Логотип не найден",
     "result_count": "Shows {{showing}} on {{available}} available",
-    "flag": "Something wrong? Report/flag the image!",
+    "flag": "Что-то не так? Пожалуйтесь/пометьте изображение!",
     "unflag": "Unflag the image",
     "crop_image_title": "crop of the logo"
   },
@@ -207,7 +208,7 @@
     "save": "Сохранить",
     "reportIssue": "Нашли ошибку? Пожалуйста, сообщите нам",
     "dev_mode_title": "To get more options, activate the dev mode",
-    "dev_mode_label": "Dev Mode",
+    "dev_mode_label": "Режим Разработчика",
     "dev_page_toggle": "Show {{name}} page"
   },
   "helper": {
@@ -215,7 +216,7 @@
       "page1": {
         "title": "Welcome to Hunger Games",
         "text1": "Hunger Games is a collection of mini-games that help contribute to Open Food Facts in many ways. You can play are really exciting games from anywhere. Here is a guided tour of the entire website which will get you started.",
-        "text2": "Make sure to login to the Open Food Facts website to get credit for your contributions. If you make a mistake, please take the time to correct it by heading to the website.",
+        "text2": "Убедитесь в том, что вы вошли в аккаунт на вебсайте Open Food Facts, чтобы получить признание за свой вклад. Если вы допустили ошибку, выделите время на её исправление, перейдя на веб-сайт.",
         "text3": "In case of any doubt about the games, click on the question mark icon at the top right of the page, and you can reach us on slack at the #hunger-games channel"
       },
       "page2": {
@@ -285,7 +286,7 @@
       "3": "Выбор питательных веществ",
       "4": "Выбор значений"
     },
-    "loading": "Loading...",
+    "loading": "Загрузка...",
     "unknown_brand": "Brand Unknown",
     "value_missing": "You forgot to input value duuuuuuuuuuuuuuuuude",
     "next": "Следующий Шаг",
@@ -323,13 +324,13 @@
     }
   },
   "notfound": {
-    "image_alt": "404 not found",
+    "image_alt": "404: Не найдено",
     "nopage": "Извините, страница, которую вы искали, не найдена.",
     "redirect1": "Хотите поиграть в игры?",
     "redirect2": "Нажмите здесь"
   },
   "nutriscore": {
-    "image_alt": "cropped image",
+    "image_alt": "обрезанное изображение",
     "label": "Annotate Nutri-Score logo detection by batch.",
     "description": "To do so, select all the images showing the correct/wrong Nutri-Score value ({{label}}), and click on the bottom buttons to say if you selected a set correct or wrong ones.",
     "images_remaining": "Still {{remaining}} to annotate",

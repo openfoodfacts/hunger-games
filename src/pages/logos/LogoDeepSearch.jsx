@@ -11,6 +11,7 @@ import LogoForm from "../../components/LogoForm";
 import robotoff from "../../robotoff";
 import off from "../../off";
 import useUrlParams from "../../hooks/useUrlParams";
+import AnnotateLogoModal from "../../components/AnnotateLogoModal";
 
 const DEFAULT_COUNT = 25;
 
@@ -30,7 +31,8 @@ const request = async ({ barcode, value, type, count }) => {
     barcode,
     value,
     type,
-    Number.parseInt(count)
+    Number.parseInt(count),
+    true
   );
 
   return {
@@ -191,16 +193,43 @@ export default function LogoSearch() {
     });
   }, []);
 
-  const sendAnnotation = () => {
-    const newLogos = logosToAnnotate.filter((logo) => logo.selected);
-    robotoff.annotateLogos(
-      newLogos.map(({ id }) => ({
-        logo_id: id,
-        ...searchState,
+  const afterAnnotation = (annotatedLogos) => {
+    const annotatedIds = {};
+    annotatedLogos.forEach(({ id }) => (annotatedIds[id] = true));
+    setAnnotatedLogos((prev) => [...prev, ...annotatedLogos]);
+    setLogosToAnnotate((prev) => {
+      console.log(prev);
+      return prev.filter((logo) => !annotatedIds[logo.id]);
+    });
+  };
+
+  const selectAllOnPage = () => {
+    setLogosToAnnotate((prev) =>
+      prev.map((logo, index) => ({
+        ...logo,
+        selected:
+          index < page * pageSize && index >= (page - 1) * pageSize
+            ? true
+            : logo.selected,
       }))
     );
-    setAnnotatedLogos((prev) => [...newLogos, ...prev]);
-    setLogosToAnnotate((prev) => prev.filter((logo) => !logo.selected));
+  };
+
+  const [isAnnotationOpen, setIsAnnotationOpen] = React.useState(false);
+  const openAnnotation = React.useCallback(() => {
+    setIsAnnotationOpen(true);
+  }, []);
+  const closeAnnotation = React.useCallback(() => {
+    setIsAnnotationOpen(false);
+  }, []);
+
+  const deselectAll = () => {
+    setLogosToAnnotate((prev) =>
+      prev.map((logo) => ({
+        ...logo,
+        selected: false,
+      }))
+    );
   };
 
   return (
@@ -229,9 +258,26 @@ export default function LogoSearch() {
 
       <Divider sx={{ my: 3 }} />
 
-      <Typography variant="h5" sx={{ mt: 5, mb: 1 }}>
-        Remaining to annotate
-      </Typography>
+      <Box sx={{ display: "flex", flexDirection: "row", gap: 1 }}>
+        <Typography variant="h5" sx={{ mt: 5, mb: 1 }}>
+          Remaining to annotate
+        </Typography>
+        <Button
+          onClick={selectAllOnPage}
+          variant="contained"
+          sx={{ ml: "auto", maxHeight: 40, mt: "40px", mb: "8px" }} // to align with "Remaining to annotate"
+        >
+          Select All
+        </Button>
+        <Button
+          onClick={deselectAll}
+          variant="contained"
+          sx={{ maxHeight: 40, mt: "40px", mb: "8px" }}
+        >
+          Deselect All
+        </Button>
+      </Box>
+
       <LogoGrid
         logos={logosToAnnotate.slice((page - 1) * pageSize, page * pageSize)}
         toggleLogoSelection={toggleSelection}
@@ -260,7 +306,7 @@ export default function LogoSearch() {
         </Button>
         <Button
           fullWidth
-          onClick={sendAnnotation}
+          onClick={openAnnotation}
           color="success"
           variant="contained"
         >
@@ -275,6 +321,15 @@ export default function LogoSearch() {
           next
         </Button>
       </Paper>
+
+      <AnnotateLogoModal
+        isOpen={isAnnotationOpen}
+        logos={logosToAnnotate}
+        closeAnnotation={closeAnnotation}
+        toggleLogoSelection={toggleSelection}
+        afterAnnotation={afterAnnotation}
+        {...searchState}
+      />
     </Box>
   );
 }

@@ -50,11 +50,11 @@
     "loading": "Загрузка"
   },
   "questions": {
-    "category": "category",
+    "category": "катэгорыя",
     "categories": "Катэгорыі",
     "label": "label",
     "labels": "Labels",
-    "brand": "brand",
+    "brand": "брэнд",
     "brands": "Brands",
     "quantity": "Quantity",
     "insightTypeLabel": "Паказваць толькі",
@@ -82,7 +82,7 @@
       "short_label": {
         "value": "value",
         "country": "краіна",
-        "brand": "brand",
+        "brand": "брэнд",
         "popularity": "popularity",
         "campaign": "camp"
       },
@@ -96,7 +96,7 @@
         "campaign": "Кампанія"
       },
       "placeholders": {
-        "value": "Value (fanta, en:organic,...)",
+        "value": "Значэнне (fanta, en:organic,...)",
         "brand": "auchan, danone, herta, ...",
         "campaign": "Annotation campaigns"
       },
@@ -130,7 +130,7 @@
     "nutritions": "Nutrition facts",
     "settings": "Settings",
     "eco-score": "Eco-ацэнка",
-    "nutriscore": "Nutri-Score",
+    "dashboard": "Logos dashboard",
     "tour": "Show Tour",
     "logged_in_user": "увайшоў(ла) як {{userName}}",
     "log_in": "націсніце, каб увайсці"
@@ -182,6 +182,7 @@
     "qr_code": "QR-код",
     "category": "Category",
     "nutrition_label": "Этыкетка пажыўнасьці",
+    "no_logo": "Not a logo",
     "store": "Крама",
     "detail": "Падрабязнасьці лягатыпу",
     "id": "Ідэнтыфікатар лягатыпу:",
@@ -192,7 +193,7 @@
     "search": "Пошук",
     "number_of_results": "Колькасьць вынікаў:",
     "loading": "Загрузка...",
-    "refresh": "Refresh",
+    "refresh": "Абнавіць",
     "search_specific": "Пошук канкрэтнага лагатыпа",
     "load_more": "Загрузіць больш",
     "no_results": "Лягатып ня знойдзены",
@@ -299,13 +300,13 @@
     "unit": "Unit",
     "nutriments": {
       "nutriment_energy-kj": "Energy (kJ)",
-      "nutriment_energy-kcal": "Energy (kCal)",
+      "nutriment_energy-kcal": "Энергія (кКал)",
       "nutriment_fat": "Fat",
       "nutriment_saturated-fat": "Saturated fat",
       "nutriment_carbohydrates": "Carbohydrate",
       "nutriment_sugars": "Sugars",
       "nutriment_proteins": "Proteins",
-      "nutriment_fiber": "Fibers",
+      "nutriment_fiber": "Валокны",
       "nutriment_salt": "Salt",
       "nutriment_sodium": "Sodium"
     },
@@ -324,12 +325,12 @@
   },
   "notfound": {
     "image_alt": "404: не знойдзена",
-    "nopage": "Whoops! The page you're looking for can't be found.",
-    "redirect1": "Want to play some games?",
-    "redirect2": "Click here"
+    "nopage": "Вой! Старонка, якую вы шукаеце, не знойдзена.",
+    "redirect1": "Хочаце згуляць?",
+    "redirect2": "Націсніце тут"
   },
   "nutriscore": {
-    "image_alt": "cropped image",
+    "image_alt": "абрэзаная выява",
     "label": "Annotate Nutri-Score logo detection by batch.",
     "description": "To do so, select all the images showing the correct/wrong Nutri-Score value ({{label}}), and click on the bottom buttons to say if you selected a set correct or wrong ones.",
     "images_remaining": "Still {{remaining}} to annotate",
