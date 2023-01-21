@@ -842,6 +842,12 @@ const UNTYPED_LOGOS = {
     logo: "https://static.openfoodfacts.org/images/lang/en/labels/triman.90x90.svg",
     type: "label",
   },
+  "fr:bouteille": {
+    tag: "fr:bouteille",
+    label: "Packaging shape",
+    logo: "https://static.openfoodfacts.org/images/icons/packaging-shapes/citeo/light-mode/bouteille-1.svg",
+    type: "packaging",
+  },
   // To-Do add Halal logos
   "en:halal-food-council-of-europe": {
     tag: "en:halal-food-council-of-europe",
@@ -1485,7 +1491,15 @@ export const DASHBOARD: DashBoardTheme[] = [
       "fr:label-rouge",
     ],
   },
-  // To-Do add Scores dashboard
+  // Packaging shapes
+  {
+    tag: "packaging-shapes",
+    title: "Packaging Shapes",
+    logos: [
+      "fr:bouteille",
+    ],
+  },
+  // Packaging
   {
     tag: "packaging",
     title: "Packaging",
