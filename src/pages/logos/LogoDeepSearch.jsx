@@ -11,6 +11,7 @@ import LogoForm from "../../components/LogoForm";
 import robotoff from "../../robotoff";
 import off from "../../off";
 import useUrlParams from "../../hooks/useUrlParams";
+import AnnotateLogoModal from "../../components/AnnotateLogoModal";
 
 const DEFAULT_COUNT = 25;
 
@@ -30,7 +31,8 @@ const request = async ({ barcode, value, type, count }) => {
     barcode,
     value,
     type,
-    Number.parseInt(count)
+    Number.parseInt(count),
+    true
   );
 
   return {
@@ -191,16 +193,14 @@ export default function LogoSearch() {
     });
   }, []);
 
-  const sendAnnotation = () => {
-    const newLogos = logosToAnnotate.filter((logo) => logo.selected);
-    robotoff.annotateLogos(
-      newLogos.map(({ id }) => ({
-        logo_id: id,
-        ...searchState,
-      }))
-    );
-    setAnnotatedLogos((prev) => [...newLogos, ...prev]);
-    setLogosToAnnotate((prev) => prev.filter((logo) => !logo.selected));
+  const afterAnnotation = (annotatedLogos) => {
+    const annotatedIds = {};
+    annotatedLogos.forEach(({ id }) => (annotatedIds[id] = true));
+    setAnnotatedLogos((prev) => [...prev, ...annotatedLogos]);
+    setLogosToAnnotate((prev) => {
+      console.log(prev);
+      return prev.filter((logo) => !annotatedIds[logo.id]);
+    });
   };
 
   const selectAllOnPage = () => {
@@ -214,6 +214,14 @@ export default function LogoSearch() {
       }))
     );
   };
+
+  const [isAnnotationOpen, setIsAnnotationOpen] = React.useState(false);
+  const openAnnotation = React.useCallback(() => {
+    setIsAnnotationOpen(true);
+  }, []);
+  const closeAnnotation = React.useCallback(() => {
+    setIsAnnotationOpen(false);
+  }, []);
 
   const deselectAll = () => {
     setLogosToAnnotate((prev) =>
@@ -298,7 +306,7 @@ export default function LogoSearch() {
         </Button>
         <Button
           fullWidth
-          onClick={sendAnnotation}
+          onClick={openAnnotation}
           color="success"
           variant="contained"
         >
@@ -313,6 +321,15 @@ export default function LogoSearch() {
           next
         </Button>
       </Paper>
+
+      <AnnotateLogoModal
+        isOpen={isAnnotationOpen}
+        logos={logosToAnnotate}
+        closeAnnotation={closeAnnotation}
+        toggleLogoSelection={toggleSelection}
+        afterAnnotation={afterAnnotation}
+        {...searchState}
+      />
     </Box>
   );
 }

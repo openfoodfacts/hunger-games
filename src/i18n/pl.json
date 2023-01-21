@@ -26,7 +26,7 @@
     "saved_filters": "Zapisane filtry",
     "contribution_modal": {
       "title": "Twój wkład ma znaczenie",
-      "information": "Hunger Games is an effort to leverage the results of our OCR. When you use Hunger Games by Open Food Facts, you improve our entire database which helps the community make better food choices. We gather your annotations and use them to make Open Food Facts more accurate and effecient.",
+      "information": "Głodne Gry to próba wykorzystania wyników naszego OCR. Kiedy korzystasz z Głodnych Gier w Open Food Facts, ulepszasz całą naszą bazę danych, która pomaga społeczności w dokonywaniu lepszych wyborów żywieniowych. Zbieramy Twoje adnotacje i wykorzystujemy je, aby Open Food Facts były dokładniejsze i skuteczniejsze.",
       "thank_you": "Dziękujemy za pomoc w ulepszaniu Open Food Facts, aby więcej osób mogło z niego łatwo korzystać."
     },
     "statistics": {
@@ -76,15 +76,15 @@
     "remaining_annotations": "Pozostałe pytania",
     "annotated_annotations": "Z adnotacjami",
     "filters": {
-      "active_filter_number": "+{{count}} filters",
-      "active_filter_number_one": "+{{count}} filter",
+      "active_filter_number": "+{{count}} filtrów",
+      "active_filter_number_one": "+{{count}} filtr",
       "active_filter_number_zero": "bez filtra",
       "short_label": {
         "value": "wartość",
         "country": "kraj",
         "brand": "marka",
         "popularity": "popularność",
-        "campaign": "camp"
+        "campaign": "kampania"
       },
       "long_label": {
         "type": "Rodzaj Pytania",
@@ -123,14 +123,14 @@
     "logos": "Logos",
     "logos-annotation": "Adnotacje do logo",
     "logos-search": "Wyszukiwanie logo",
-    "logos-product-search": "Annotation per products",
-    "logos-deep-search": "Infinit annotation",
+    "logos-product-search": "Wyszukiwanie produktów",
+    "logos-deep-search": "Szczegółowe wyszukiwanie",
     "manage": "Zarządzaj",
     "insights": "Spostrzeżenia",
     "nutritions": "Wartości odżywcze",
     "settings": "Ustawienia",
     "eco-score": "Eco-Score",
-    "dashboard": "Logos dashboard",
+    "dashboard": "Pulpit logowania",
     "tour": "Przegląd funkcji programu",
     "logged_in_user": "zalogowano jako {{userName}}",
     "log_in": "kliknij, aby się zalogować"
@@ -168,7 +168,7 @@
   "logos": {
     "annotation": "Dodatkowe informacje: ",
     "annotations": "Adnotacje do logo",
-    "task_description": "Select all logos that are exactly the same, and give them a name like \"en:EU Organic\" and a type like \"label\".",
+    "task_description": "Wybierz wszystkie symbole, które są dokładnie takie same, i nadaj im nazwę, taką jak „en: EU Organiczny” i typ, taki jak „etykieta”.",
     "select_all": "Wybierz wszystkie",
     "unselect_all": "Odznacz wszystkie",
     "distance": "Odległość:",
@@ -182,6 +182,7 @@
     "qr_code": "Kod QR",
     "category": "Kategoria",
     "nutrition_label": "Etykieta żywieniowa",
+    "no_logo": "Not a logo",
     "store": "Sklep",
     "detail": "Szczegóły logo",
     "id": "ID Logo:",
@@ -196,7 +197,7 @@
     "search_specific": "Szukaj konkretnego logo",
     "load_more": "Załaduj więcej",
     "no_results": "Nie znaleziono logo",
-    "result_count": "Shows {{showing}} on {{available}} available",
+    "result_count": "Pokazuje {{showing}} na {{available}} dostępne",
     "flag": "Coś nie tak? Zgłoś lub oznacz obrazek!",
     "unflag": "Odznacz obrazek",
     "crop_image_title": "przycięcie logo"
@@ -214,13 +215,13 @@
     "welcome": {
       "page1": {
         "title": "Witamy na Igrzyskach Śmierci",
-        "text1": "Hunger Games is a collection of mini-games that help contribute to Open Food Facts in many ways. You can play are really exciting games from anywhere. Here is a guided tour of the entire website which will get you started.",
-        "text2": "Make sure to login to the Open Food Facts website to get credit for your contributions. If you make a mistake, please take the time to correct it by heading to the website.",
-        "text3": "In case of any doubt about the games, click on the question mark icon at the top right of the page, and you can reach us on slack at the #hunger-games channel"
+        "text1": "Gry Głodowe to zbiór mini gier, które na wiele sposobów przyczyniają się do powstania Open Food Facts. Możesz grać w naprawdę ekscytujące gry z dowolnego miejsca. Oto przewodnik po całej witrynie, który pomoże Ci zacząć.",
+        "text2": "Pamiętaj, aby zalogować się na stronie Open Food Facts, aby otrzymać kredyt za swój wkład. Jeśli popełnisz błąd, poświęć trochę czasu, aby go poprawić, przechodząc na stronę internetową.",
+        "text3": "W razie jakichkolwiek wątpliwości co do gier, kliknij ikonę znaku zapytania w prawym górnym rogu strony, a skontaktujesz się z nami na Slacku na kanale #hunger-games"
       },
       "page2": {
         "title": "Gra pytań",
-        "text1": "Does the food product belong to this brand?",
+        "text1": "Czy produkt żywnościowy należy do tej marki?",
         "text2": "Odpowiadaj prosto, używając <strong>tak/nie</strong>! Nie znasz odpowiedzi? Nie szkodzi, po prostu pomiń.",
         "text3": "Możesz również użyć klawiszy O, N i K.",
         "text4": "Możesz <strong>filtrować</strong> produkty w oparciu o kraj, marki, popularność i wiele więcej!",
@@ -228,25 +229,25 @@
       },
       "page3": {
         "title": "Gra z logami",
-        "text1": "Our another really loved game is the logos game where you have to <strong> select all the logos</strong> you feel are the same.",
-        "text2": "As shown in the example, once you select all the similar logos, just type their value and select where it is a brand, a label or something else. It's that simple!"
+        "text1": "Naszą kolejną bardzo lubianą grą jest gra w nazwy, w której musisz <strong>wybrać wszystkie nazwy</strong>, które uważasz za takie same.",
+        "text2": "Jak pokazano w przykładzie, po wybraniu wszystkich podobnych nazw po prostu wpisz ich wartość i wybierz, gdzie jest to marka, etykieta lub coś innego. To takie proste!"
       },
       "page4": {
-        "title": "Eco-Score Questions Game",
-        "text1": "Help us finish the remaining questions in the most high priority labels!",
-        "text2": "These cards are linked to labels used in the computation of the eco-score.",
-        "text3": "<strong>What is Eco-Score?</strong>",
-        "text4": "Eco-Score captures the total environmental footprint, making it easier for consumers to compare products and decide which is better for the environment."
+        "title": "Gra Pytania o Eco-Score",
+        "text1": "Pomóż nam dokończyć pozostałe pytania w etykietach o najwyższym priorytecie!",
+        "text2": "Karty te są połączone z etykietami używanymi do obliczania ekologicznego wyniku.",
+        "text3": "<strong>Co to jest Eco-Score?</strong>",
+        "text4": "Eco-Score uwzględnia całkowity ślad ekologiczny, ułatwiając konsumentom porównywanie produktów i podejmowanie decyzji, które są lepsze dla środowiska."
       },
       "page5": {
         "title": "Ustawienia",
-        "text1": "Set your preferred language, and report issues from our settings page.",
-        "text2": "If you're a developer, you can also explore our database content using our dev mode."
+        "text1": "Ustaw preferowany język i zgłoś problemy na naszej stronie z ustawieniami.",
+        "text2": "Jeśli jesteś programistą, możesz także przeglądać zawartość naszej bazy danych, korzystając z naszego trybu deweloperskiego."
       },
       "page6": {
         "title": "Samouczek",
-        "text1": "Got stuck somewhere? Want to take the tour again?",
-        "text2": "Just click on the question mark and start the journey again!"
+        "text1": "Utknąłeś gdzieś? Chcesz ponownie wybrać się na wycieczkę?",
+        "text2": "Po prostu kliknij znak zapytania i rozpocznij podróż od nowa!"
       }
     },
     "logos": {
@@ -257,8 +258,8 @@
       },
       "page2": {
         "title": "Ostrzeżenie",
-        "text1": "If the crop contains multiple logos, do not select it.",
-        "text2": "If the crop contains only a partial part of a logo, you can select it"
+        "text1": "Jeśli kadr zawiera wiele nazw, nie wybieraj go.",
+        "text2": "Jeśli kadr zawiera tylko część logo, możesz je zaznaczyć"
       },
       "page3": {
         "title": "Zweryfikuj",
@@ -330,18 +331,18 @@
   },
   "nutriscore": {
     "image_alt": "przycięty obraz",
-    "label": "Annotate Nutri-Score logo detection by batch.",
-    "description": "To do so, select all the images showing the correct/wrong Nutri-Score value ({{label}}), and click on the bottom buttons to say if you selected a set correct or wrong ones.",
-    "images_remaining": "Still {{remaining}} to annotate",
+    "label": "Adnotacje wykrywania nazw Nutri-Score według pliku.",
+    "description": "Aby to zrobić, wybierz wszystkie obrazy przedstawiające poprawną/niewłaściwą wartość Nutri-Score ({{label}}) i kliknij dolne przyciski, aby wskazać, czy wybrałeś ustawienie poprawne lub błędne.",
+    "images_remaining": "Wciąż {{remaining}} do adnotacji",
     "image_sizes": "Rozmiar zdjęcia",
     "zoom_on_logo": "Powiększ logo",
     "select_all": "Wybierz wszystkie",
     "deselect_all": "Odznacz wszystkie",
     "incorrect": "Błąd",
-    "correct": "Correct ({{label}})"
+    "correct": "Poprawnie ({{label}})"
   },
   "eco-score": {
-    "description": "Here is a summary of questions that could improve Eco-Score computation",
+    "description": "Oto podsumowanie pytań, które mogą poprawić obliczenie Eco-Score",
     "countryLabel": "Kraj"
   }
 }

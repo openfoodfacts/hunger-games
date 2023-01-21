@@ -10,7 +10,7 @@ type InsightType =
 
 export type LogoDefinition = {
   /**
-   * The OpenFoodFacts tag used or interactions with robotoff and off
+   * The OpenFoodFacts tag used or interactions with robotoff and Open Food Facts (product opener)
    */
   tag: string;
   /**
@@ -494,61 +494,61 @@ const UNTYPED_LOGOS = {
   },
   // To-Do add Packaging logos
   "en:1-pet": {
-    tag: "en:1-pet",
+    tag: "01-pet",
     label: "1-PET",
     logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/01-pet.73x90.svg",
     type: "packaging",
   },
   "en:1-PETE": {
-    tag: "en:1-PETE",
+    tag: "01-PETE",
     label: "1-PETE",
     logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/01-pete.90x90.svg",
     type: "packaging",
   },
   "en:2-PEHD": {
-    tag: "en:2-PEHD",
+    tag: "02-PEHD",
     label: "2-PEHD",
     logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/02-pe-hd.73x90.svg",
     type: "packaging",
   },
   "en:2-HDPE": {
-    tag: "en:2-HDPE",
+    tag: "02-HDPE",
     label: "2-HDPE",
     logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/02-pe-hd.73x90.svg",
     type: "packaging",
   },
   "en:3-PVC": {
-    tag: "en:3-PVC",
+    tag: "03-PVC",
     label: "3-PVC",
     logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/03-pvc.73x90.svg",
     type: "packaging",
   },
   "en:4-PELD": {
-    tag: "en:4-PELD",
+    tag: "04-PELD",
     label: "4-PELD",
     logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/04-ldpe.90x90.svg",
     type: "packaging",
   },
   "en:4-LDPE": {
-    tag: "en:4-LDPE",
+    tag: "04-LDPE",
     label: "4-LDPE",
     logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/04-ldpe.90x90.svg",
     type: "packaging",
   },
   "en:5-PP": {
-    tag: "en:5-PP",
+    tag: "05-PP",
     label: "5-PP",
     logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/05-pp.73x90.svg",
     type: "packaging",
   },
   "en:06-PS": {
-    tag: "en:06-PS",
+    tag: "06-PS",
     label: "06-PS",
     logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/06-ps.73x90.svg",
     type: "packaging",
   },
   "en:7-O": {
-    tag: "en:7-O",
+    tag: "7-O",
     label: "7-O",
     logo: "https://world-fr.openfoodfacts.org/images/lang/en/packaging/07-o.73x90.svg",
     type: "packaging",
