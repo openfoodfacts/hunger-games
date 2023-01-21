@@ -141,6 +141,12 @@ const UNTYPED_LOGOS = {
     logo: "https://static.openfoodfacts.org/images/lang/en/labels/usda-organic.90x90.svg",
     type: "label",
   },
+  "en:non-gmo-project": {
+    tag: "en:non-gmo-project",
+    label: "non-gmo-project",
+    logo: "https://world.openfoodfacts.org/images/lang/en/labels/non-gmo-project.124x90.svg",
+    type: "label",
+  },
   "de:ohne-gentechnik": {
     tag: "de:ohne-gentechnik",
     label: "Ohne Gentechnik",
@@ -2370,6 +2376,42 @@ const UNTYPED_LOGOS = {
     logo: "https://robotoff.openfoodfacts.org/api/v1/images/crop?image_url=https://static.openfoodfacts.org/images/products/001/111/002/5388/1.jpg&y_min=0.131732494&x_min=0.293668717&y_max=0.279532224&x_max=0.629243255",
     type: "brand",
   },
+  "es:sin-tacc": {
+    tag: "es:Sin-TACC",
+    label: "Sin TACC",
+    logo: "https://world.openfoodfacts.org/images/lang/es/labels/sin-tacc.86x90.png",
+    type: "label",
+  },
+  "es:sin-gluten": {
+    tag: "es:sin-gluten",
+    label: "Sin Gluten",
+    logo: "https://world.openfoodfacts.org/images/lang/es/labels/sin-gluten.86x90.png",
+    type: "label",
+  },
+  "en:crossed-grain-symbol": {
+    tag: "en:crossed-grain-symbol",
+    label: "Crossed Grain Symbol",
+    logo: "",
+    type: "label",
+  },
+  "en:dzg-gluten-free": {
+    tag: "en:dzg-gluten-free",
+    label: "DZG Gluten free",
+    logo: "",
+    type: "label",
+  },
+  "en:face": {
+    tag: "en:face",
+    label: "FACE",
+    logo: "",
+    type: "label",
+  },
+  "fr:afdiag": {
+    tag: "fr:afdiag",
+    label: "Afdiag",
+    logo: "",
+    type: "label",
+  },
 };
 
 type LogoType = { [key in keyof typeof UNTYPED_LOGOS]: LogoDefinition };
@@ -2808,6 +2850,7 @@ export const DASHBOARD: DashBoardTheme[] = [
       "en:real-california-milk",
       "en:real-california-cheese",
       "en:usda-organic",
+      "en:non-gmo-project",
     ],
   },
   // Beers and Wines
@@ -2852,6 +2895,19 @@ export const DASHBOARD: DashBoardTheme[] = [
     tag: "brands",
     title: "Brands",
     logos: ["Kroger"],
+  },
+  // No gluten
+  {
+    tag: "no-gluten",
+    title: "No Gluten",
+    logos: [
+      "es:sin-tacc",
+      "es:sin-gluten",
+      "en:crossed-grain-symbol",
+      "en:dzg-gluten-free",
+      "en:face",
+      "fr:afdiag",
+    ],
   },
   // Food Awards
   {
