@@ -1404,6 +1404,12 @@ const UNTYPED_LOGOS = {
     logo: "https://static.openfoodfacts.org/images/lang/en/labels/real-california-milk.90x90.png",
     type: "label",
   },
+  Kroger: {
+    tag: "Kroger",
+    label: "Kroger",
+    logo: "https://robotoff.openfoodfacts.org/api/v1/images/crop?image_url=https://static.openfoodfacts.org/images/products/001/111/002/5388/1.jpg&y_min=0.131732494&x_min=0.293668717&y_max=0.279532224&x_max=0.629243255",
+    type: "brand",
+  },
 };
 
 type LogoType = { [key in keyof typeof UNTYPED_LOGOS]: LogoDefinition };
@@ -1713,6 +1719,12 @@ export const DASHBOARD: DashBoardTheme[] = [
       "en:für-mehr-tierschutz-1-star.206x90.png",
       "en:für-mehr-tierschutz-2-stars.206x90.png",
     ],
+  },
+  // Brands
+  {
+    tag: "brands",
+    title: "Brands",
+    logos: ["Kroger"],
   },
   // Food Awards
   {
