@@ -1880,8 +1880,13 @@ const UNTYPED_LOGOS = {
     logo: "https://robotoff.openfoodfacts.org/api/v1/images/crop?image_url=https://static.openfoodfacts.org/images/products/22168504/1.jpg&y_min=0.5805541276931763&x_min=0.6500228643417358&y_max=0.6525026559829712&x_max=0.7805396318435669",
     type: "packaging",
   },
-      
-  
+  "en:tetrapak": {
+    tag: "en:tetra-pak",
+    label: "Tetrapak",
+    logo: "https://robotoff.openfoodfacts.org/api/v1/images/crop?image_url=https://static.openfoodfacts.org/images/products/885/333/300/0023/3.jpg&y_min=0.035823896527290344&x_min=0.3759825527667999&y_max=0.09795723855495453&x_max=0.5828134417533875",
+    type: "packaging",
+  },
+
   // To-Do add Halal logos
   "en:halal-food-council-of-europe": {
     tag: "en:halal-food-council-of-europe",
@@ -2082,8 +2087,8 @@ const UNTYPED_LOGOS = {
 
   // Kosher
   "en:klbd-kosher": {
-    tag: "en:klbd-kosher",
-    label: "klbd kosher",
+    tag: "en:kashrut-division-of-the-london-beth-din",
+    label: "Kashrut division of the London Beth Din",
     logo: "https://static.openfoodfacts.org/images/lang/en/labels/klbd-kosher.90x90.png",
     type: "label",
   },
@@ -2112,14 +2117,14 @@ const UNTYPED_LOGOS = {
     type: "label",
   },
   "en:orthodox-union-kosher-90x90": {
-    tag: "en:orthodox-union-kosher-90x90",
-    label: "orthodox union kosher 90x90",
+    tag: "en:orthodox-union-kosher",
+    label: "orthodox union kosher",
     logo: "https://static.openfoodfacts.org/images/lang/en/labels/orthodox-union-kosher-90x90.svg",
     type: "label",
   },
   "en:star-k": {
-    tag: "en:star-k",
-    label: "star k",
+    tag: "en:star-k-kosher",
+    label: "Star K Kosher",
     logo: "https://static.openfoodfacts.org/images/lang/en/labels/star-k.90x90.jpg",
     type: "label",
   },
@@ -2726,7 +2731,14 @@ export const DASHBOARD: DashBoardTheme[] = [
       "fr:tonneau-tonnelet-plastique",
       "fr:tube-1",
       "fr:tube-2",
-      "fr:bac-de-tri", 
+    ],
+  },
+  // Packaging
+  {
+    tag: "packaging",
+    title: "Packaging",
+    logos: [
+      "fr:bac-de-tri",
       "fr:tri-verre",
       "es:ecoponto-amarelo",
       "es:ecoponto-azul",
@@ -2736,14 +2748,19 @@ export const DASHBOARD: DashBoardTheme[] = [
       "en:resy",
       "fr:compostable",
       "de:einwegpfand",
-      "de:gelbe-tonne",  
-      
+      "de:gelbe-tonne",
+      "en:fsc",
+      "en:fsc-mix",
+      "en:pefc",
+      "fr:triman",
+      "en:green-dot",
+      "en:tetrapak",
     ],
   },
   // Packaging
   {
-    tag: "packaging",
-    title: "Packaging",
+    tag: "packaging-materials",
+    title: "Packaging materials",
     logos: [
       "en:1-pet",
       "en:1-PETE",
@@ -2798,11 +2815,6 @@ export const DASHBOARD: DashBoardTheme[] = [
       "en:96",
       "en:97",
       "en:98",
-      "en:fsc",
-      "en:fsc-mix",
-      "en:pefc",
-      "fr:triman",
-      "en:green-dot",
     ],
   },
   // Halal dashboard
