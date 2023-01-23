@@ -1808,6 +1808,74 @@ const UNTYPED_LOGOS = {
     logo: "https://static.openfoodfacts.org/images/icons/packaging-shapes/citeo/light-mode/tube-2.svg",
     type: "packaging",
   },
+  "fr:bac-de-tri": {
+    tag: "fr:bac-de-tri",
+    label: "Bac de tri",
+    logo: "https://robotoff.openfoodfacts.org/api/v1/images/crop?image_url=https://static.openfoodfacts.org/images/products/123/456/789/0123/229.jpg&y_min=0.379913628&x_min=0.803501546&y_max=0.585622132&x_max=0.88113445",
+    type: "packaging",
+  },
+  "fr:tri-verre": {
+    tag: "fr:tri-verre",
+    label: "Tri verre",
+    logo: "",
+    type: "packaging",
+  },
+  "es:ecoponto-amarelo": {
+    tag: "es:ecoponto-amarelo",
+    label: "Ecoponto amarelo",
+    logo: "https://static.openfoodfacts.org/images/lang/pt/labels/ecoponto-amarelo.90x90.svg",
+    type: "packaging",
+  },
+  "es:ecoponto-azul": {
+    tag: "es:ecoponto-azul",
+    label: "Ecoponto azul",
+    logo: "https://static.openfoodfacts.org/images/lang/pt/labels/ecoponto-azul.90x90.svg",
+    type: "packaging",
+  },
+  "es:ecoponto-verde": {
+    tag: "es:ecoponto-verde",
+    label: "Ecoponto verde",
+    logo: "https://static.openfoodfacts.org/images/lang/pt/labels/ecoponto-verde.90x90.svg",
+    type: "packaging",
+  },
+  "de:ok-compost": {
+    tag: "de:ok-compost",
+    label: "OK Compost",
+    logo: "",
+    type: "packaging",
+  },
+  "fr:acier recyclable": {
+    tag: "fr:acier recyclable",
+    label: "Acier recyclable",
+    logo: "",
+    type: "packaging",
+  },
+  "en:resy": {
+    tag: "en:resy",
+    label: "RESY",
+    logo: "",
+    type: "packaging",
+  },
+  "fr:compostable": {
+    tag: "fr:compostable",
+    label: "Compostable",
+    logo: "",
+    type: "packaging",
+  },
+  "de:einwegpfand": {
+    tag: "de:einwegpfand",
+    label: "Einwegpfand",
+    logo: "",
+    type: "packaging",
+  },
+  "de:gelbe-tonne": {
+    tag: "de:gelbe-tonne",
+    label: "Gelbe tonne",
+    logo: "https://robotoff.openfoodfacts.org/api/v1/images/crop?image_url=https://static.openfoodfacts.org/images/products/22168504/1.jpg&y_min=0.5805541276931763&x_min=0.6500228643417358&y_max=0.6525026559829712&x_max=0.7805396318435669",
+    type: "packaging",
+  },
+      
+  
   // To-Do add Halal logos
   "en:halal-food-council-of-europe": {
     tag: "en:halal-food-council-of-europe",
@@ -2652,15 +2720,21 @@ export const DASHBOARD: DashBoardTheme[] = [
       "fr:tonneau-tonnelet-plastique",
       "fr:tube-1",
       "fr:tube-2",
-      "fr:bac-de-tri", //https://robotoff.openfoodfacts.org/api/v1/images/crop?image_url=https://static.openfoodfacts.org/images/products/123/456/789/0123/229.jpg&y_min=0.379913628&x_min=0.803501546&y_max=0.585622132&x_max=0.88113445
+      "fr:bac-de-tri", // https://robotoff.openfoodfacts.org/api/v1/images/crop?image_url=https://static.openfoodfacts.org/images/products/123/456/789/0123/229.jpg&y_min=0.379913628&x_min=0.803501546&y_max=0.585622132&x_max=0.88113445
       "fr:tri-verre",
       "es:ecoponto-amarelo",
+      https://github.com/openfoodfacts/openfoodfacts-server/blob/main/html/images/lang/pt/labels/ecoponto-amarelo.90x90.svg
       "es:ecoponto-azul",
+      images/lang/pt/labels/ecoponto-azul.90x90.svg
       "es:ecoponto-verde",
+        html/images/lang/pt/labels/ecoponto-verde.90x90.svg
       "de:ok-compost",
       "fr:acier recyclable",
       "en:resy",
-      "fr:compostable"
+      "fr:compostable",
+      "de:einwegpfand",
+      "de:gelbe-tonne",
+      https://robotoff.openfoodfacts.org/api/v1/images/crop?image_url=https://static.openfoodfacts.org/images/products/22168504/1.jpg&y_min=0.5805541276931763&x_min=0.6500228643417358&y_max=0.6525026559829712&x_max=0.7805396318435669
       
       
     ],
