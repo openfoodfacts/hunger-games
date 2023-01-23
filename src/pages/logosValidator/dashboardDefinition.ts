@@ -283,7 +283,13 @@ const UNTYPED_LOGOS = {
   "fr:tomates-de-france": {
     tag: "fr:tomates-de-france",
     label: "Tomates de France",
-    logo: "https://static.openfoodfacts.org/images/lang/fr/labels/tomates-de-france.90x90.png",
+    logo: "https://robotoff.openfoodfacts.org/api/v1/images/crop?image_url=https://static.openfoodfacts.org/images/products/123/456/789/0123/231.jpg&y_min=0.795876384&x_min=0.405778974&y_max=0.96002537&x_max=0.60099107",
+    type: "label",
+  },
+  "fr:viande-de-chevreau-francaise": {
+    tag: "fr:viande-de-chevreau-francaise",
+    label: "Viande de chevreau Française",
+    logo: "https://robotoff.openfoodfacts.org/api/v1/images/crop?image_url=https://static.openfoodfacts.org/images/products/123/456/789/0123/231.jpg&y_min=0.59915632&x_min=0.711949348&y_max=0.782316089&x_max=0.876655281",
     type: "label",
   },
   "en:qualite-france-french-quality": {
@@ -326,6 +332,12 @@ const UNTYPED_LOGOS = {
     tag: "en:french-beef",
     label: "Viande Bovine Française",
     logo: "https://static.openfoodfacts.org/images/lang/fr/labels/viande-bovine-francaise.94x90.png",
+    type: "label",
+  },
+  "en:french-horse": {
+    tag: "en:french-horse",
+    label: "Viande Chevaline Française",
+    logo: "https://robotoff.openfoodfacts.org/api/v1/images/crop?image_url=https://static.openfoodfacts.org/images/products/123/456/789/0123/231.jpg&y_min=0.414283365&x_min=0.409166843&y_max=0.574087143&x_max=0.568828583",
     type: "label",
   },
   "en:french-milk": {
@@ -403,7 +415,7 @@ const UNTYPED_LOGOS = {
   "fr:viande-d-agneau-francais": {
     tag: "fr:viande-d-agneau-francais",
     label: "Viande d'agneau français",
-    logo: "https://static.openfoodfacts.org/images/lang/fr/labels/viande-d-agneau-francais.90x90.png",
+    logo: "https://robotoff.openfoodfacts.org/api/v1/images/crop?image_url=https://static.openfoodfacts.org/images/products/123/456/789/0123/231.jpg&y_min=0.60532558&x_min=0.307998389&y_max=0.77711761&x_max=0.475660861",
     type: "label",
   },
   "en:suisse-garantie": {
@@ -1817,7 +1829,7 @@ const UNTYPED_LOGOS = {
   "fr:tri-verre": {
     tag: "fr:tri-verre",
     label: "Tri verre",
-    logo: "",
+    logo: "https://robotoff.openfoodfacts.org/api/v1/images/crop?image_url=https://static.openfoodfacts.org/images/products/123/456/789/0123/227.jpg&y_min=0.516038656&x_min=0.736438572&y_max=0.940771222&x_max=0.916798651",
     type: "packaging",
   },
   "es:ecoponto-amarelo": {
@@ -1841,7 +1853,7 @@ const UNTYPED_LOGOS = {
   "de:ok-compost": {
     tag: "de:ok-compost",
     label: "OK Compost",
-    logo: "",
+    logo: "https://robotoff.openfoodfacts.org/api/v1/images/crop?image_url=https://static.openfoodfacts.org/images/products/123/456/789/0123/224.jpg&y_min=0.293691158&x_min=0.0740530789&y_max=0.999693215&x_max=0.539421797",
     type: "packaging",
   },
   "fr:acier recyclable": {
@@ -1853,18 +1865,12 @@ const UNTYPED_LOGOS = {
   "en:resy": {
     tag: "en:resy",
     label: "RESY",
-    logo: "",
+    logo: "https://robotoff.openfoodfacts.org/api/v1/images/crop?image_url=https://static.openfoodfacts.org/images/products/123/456/789/0123/222.jpg&y_min=0.589905739&x_min=0.41249004&y_max=0.832627356&x_max=0.593729615",
     type: "packaging",
   },
   "fr:compostable": {
     tag: "fr:compostable",
     label: "Compostable",
-    logo: "",
-    type: "packaging",
-  },
-  "de:einwegpfand": {
-    tag: "de:einwegpfand",
-    label: "Einwegpfand",
     logo: "",
     type: "packaging",
   },
@@ -2720,22 +2726,17 @@ export const DASHBOARD: DashBoardTheme[] = [
       "fr:tonneau-tonnelet-plastique",
       "fr:tube-1",
       "fr:tube-2",
-      "fr:bac-de-tri", // https://robotoff.openfoodfacts.org/api/v1/images/crop?image_url=https://static.openfoodfacts.org/images/products/123/456/789/0123/229.jpg&y_min=0.379913628&x_min=0.803501546&y_max=0.585622132&x_max=0.88113445
+      "fr:bac-de-tri", 
       "fr:tri-verre",
       "es:ecoponto-amarelo",
-      https://github.com/openfoodfacts/openfoodfacts-server/blob/main/html/images/lang/pt/labels/ecoponto-amarelo.90x90.svg
       "es:ecoponto-azul",
-      images/lang/pt/labels/ecoponto-azul.90x90.svg
       "es:ecoponto-verde",
-        html/images/lang/pt/labels/ecoponto-verde.90x90.svg
       "de:ok-compost",
       "fr:acier recyclable",
       "en:resy",
       "fr:compostable",
       "de:einwegpfand",
-      "de:gelbe-tonne",
-      https://robotoff.openfoodfacts.org/api/v1/images/crop?image_url=https://static.openfoodfacts.org/images/products/22168504/1.jpg&y_min=0.5805541276931763&x_min=0.6500228643417358&y_max=0.6525026559829712&x_max=0.7805396318435669
-      
+      "de:gelbe-tonne",  
       
     ],
   },
@@ -2804,6 +2805,7 @@ export const DASHBOARD: DashBoardTheme[] = [
       "en:green-dot",
     ],
   },
+  // Halal dashboard
   {
     tag: "halal",
     title: "Halal",
@@ -2835,7 +2837,7 @@ export const DASHBOARD: DashBoardTheme[] = [
       "en:star-k",
     ],
   },
-  // To-Do add Origins dashboard
+  // Origins dashboard
   {
     tag: "origin-france",
     title: "Origine France",
@@ -2881,9 +2883,11 @@ export const DASHBOARD: DashBoardTheme[] = [
       "fr:viande-ovine-francaise",
       "fr:viande-d-agneau-francais",
       "en:produced-in-brittany",
+      "fr:viande-de-chevreau-francaise",
+      "en:french-horse",
     ],
   },
-  // TODO: vegetarian vegetalian categories
+  // vegetarian vegetalian categories
   {
     tag: "vegan-and-vegetarian",
     title: "Vegan and Vegetarian",
@@ -2907,7 +2911,7 @@ export const DASHBOARD: DashBoardTheme[] = [
       "en:icea-vegan",
     ],
   },
-  // TODO: Organic
+  // Organic
   {
     tag: "organic",
     title: "Organic",
