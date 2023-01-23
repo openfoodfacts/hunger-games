@@ -265,7 +265,7 @@ const UNTYPED_LOGOS = {
   "en:apples-from-france": {
     tag: "en:apples-from-france",
     label: "Pommes de France",
-    logo: "https://static.openfoodfacts.org/images/lang/fr/labels/pommes-de-france.90x90.png",
+    logo: "https://robotoff.openfoodfacts.org/api/v1/images/crop?image_url=https://static.openfoodfacts.org/images/products/322/247/763/8723/1.jpg&y_min=0.227033615&x_min=0.490962595&y_max=0.360809565&x_max=0.709696412",
     type: "label",
   },
   "en:egg-laid-in-france": {
@@ -283,7 +283,13 @@ const UNTYPED_LOGOS = {
   "fr:tomates-de-france": {
     tag: "fr:tomates-de-france",
     label: "Tomates de France",
-    logo: "https://static.openfoodfacts.org/images/lang/fr/labels/tomates-de-france.90x90.png",
+    logo: "https://robotoff.openfoodfacts.org/api/v1/images/crop?image_url=https://static.openfoodfacts.org/images/products/123/456/789/0123/231.jpg&y_min=0.795876384&x_min=0.405778974&y_max=0.96002537&x_max=0.60099107",
+    type: "label",
+  },
+  "fr:viande-de-chevreau-francaise": {
+    tag: "fr:viande-de-chevreau-francaise",
+    label: "Viande de chevreau Française",
+    logo: "https://robotoff.openfoodfacts.org/api/v1/images/crop?image_url=https://static.openfoodfacts.org/images/products/123/456/789/0123/231.jpg&y_min=0.59915632&x_min=0.711949348&y_max=0.782316089&x_max=0.876655281",
     type: "label",
   },
   "en:qualite-france-french-quality": {
@@ -326,6 +332,12 @@ const UNTYPED_LOGOS = {
     tag: "en:french-beef",
     label: "Viande Bovine Française",
     logo: "https://static.openfoodfacts.org/images/lang/fr/labels/viande-bovine-francaise.94x90.png",
+    type: "label",
+  },
+  "en:french-horse": {
+    tag: "en:french-horse",
+    label: "Viande Chevaline Française",
+    logo: "https://robotoff.openfoodfacts.org/api/v1/images/crop?image_url=https://static.openfoodfacts.org/images/products/123/456/789/0123/231.jpg&y_min=0.414283365&x_min=0.409166843&y_max=0.574087143&x_max=0.568828583",
     type: "label",
   },
   "en:french-milk": {
@@ -397,13 +409,13 @@ const UNTYPED_LOGOS = {
   "fr:viande-ovine-francaise": {
     tag: "fr:viande-ovine-francaise",
     label: "Viande Ovine Française",
-    logo: "https://static.openfoodfacts.org/images/lang/fr/labels/viande-ovine-francaise.90x90.png",
+    logo: "https://robotoff.openfoodfacts.org/api/v1/images/crop?image_url=https://static.openfoodfacts.org/images/products/281/926/503/6734/1.jpg&y_min=0.2966618239879608&x_min=0.7084556818008423&y_max=0.43763044476509094&x_max=0.9427083730697632",
     type: "label",
   },
   "fr:viande-d-agneau-francais": {
     tag: "fr:viande-d-agneau-francais",
     label: "Viande d'agneau français",
-    logo: "https://static.openfoodfacts.org/images/lang/fr/labels/viande-d-agneau-francais.90x90.png",
+    logo: "https://robotoff.openfoodfacts.org/api/v1/images/crop?image_url=https://static.openfoodfacts.org/images/products/123/456/789/0123/231.jpg&y_min=0.60532558&x_min=0.307998389&y_max=0.77711761&x_max=0.475660861",
     type: "label",
   },
   "en:suisse-garantie": {
@@ -850,31 +862,31 @@ const UNTYPED_LOGOS = {
   },
   "fr:bouteille": {
     tag: "fr:bouteille",
-    label: "Packaging shape",
+    label: "Bottle",
     logo: "https://static.openfoodfacts.org/images/icons/packaging-shapes/citeo/light-mode/bouteille-1.svg",
     type: "packaging",
   },
   "fr:aerosol-2": {
-    tag: "fr:aerosol-2",
-    label: "aerosol-2",
+    tag: "fr:aerosol",
+    label: "Aerosol (2)",
     logo: "https://static.openfoodfacts.org/images/icons/packaging-shapes/citeo/light-mode/aerosol-2.svg",
     type: "packaging",
   },
   "fr:aerosol": {
     tag: "fr:aerosol",
-    label: "aerosol",
+    label: "Aerosol",
     logo: "https://static.openfoodfacts.org/images/icons/packaging-shapes/citeo/light-mode/aerosol.svg",
     type: "packaging",
   },
   "fr:ailettes": {
     tag: "fr:ailettes",
-    label: "ailettes",
+    label: "Ailettes",
     logo: "https://static.openfoodfacts.org/images/icons/packaging-shapes/citeo/light-mode/ailettes.svg",
     type: "packaging",
   },
   "fr:ampoule": {
     tag: "fr:ampoule",
-    label: "ampoule",
+    label: "Ampoule",
     logo: "https://static.openfoodfacts.org/images/icons/packaging-shapes/citeo/light-mode/ampoule.svg",
     type: "packaging",
   },
@@ -922,13 +934,13 @@ const UNTYPED_LOGOS = {
   },
   "fr:bandelette-autres": {
     tag: "fr:bandelette-autres",
-    label: "bandelette-autres",
+    label: "Bandelette autres",
     logo: "https://static.openfoodfacts.org/images/icons/packaging-shapes/citeo/light-mode/bandelette-autres.svg",
     type: "packaging",
   },
   "fr:bandelette-metal": {
     tag: "fr:bandelette-metal",
-    label: "bandelette-metal",
+    label: "Bandelette en métal",
     logo: "https://static.openfoodfacts.org/images/icons/packaging-shapes/citeo/light-mode/bandelette-metal.svg",
     type: "packaging",
   },
@@ -940,7 +952,7 @@ const UNTYPED_LOGOS = {
   },
   "fr:bandelette-plastique": {
     tag: "fr:bandelette-plastique",
-    label: "bandelette-plastique",
+    label: "Bandelette plastique",
     logo: "https://static.openfoodfacts.org/images/icons/packaging-shapes/citeo/light-mode/bandelette-plastique.svg",
     type: "packaging",
   },
@@ -1011,20 +1023,20 @@ const UNTYPED_LOGOS = {
     type: "packaging",
   },
   "fr:bobine-rouleau-1": {
-    tag: "fr:bobine-rouleau-1",
-    label: "bobine-rouleau-1",
+    tag: "fr:rouleau",
+    label: "rouleau 1",
     logo: "https://static.openfoodfacts.org/images/icons/packaging-shapes/citeo/light-mode/bobine-rouleau-1.svg",
     type: "packaging",
   },
   "fr:bobine-rouleau-2": {
-    tag: "fr:bobine-rouleau-2",
-    label: "bobine-rouleau-2",
+    tag: "fr:rouleau",
+    label: "rouleau 2",
     logo: "https://static.openfoodfacts.org/images/icons/packaging-shapes/citeo/light-mode/bobine-rouleau-2.svg",
     type: "packaging",
   },
   "fr:bocal-verre": {
-    tag: "fr:bocal-verre",
-    label: "bocal-verre",
+    tag: "fr:bocal-en-verre",
+    label: "Bocal en verre",
     logo: "https://static.openfoodfacts.org/images/icons/packaging-shapes/citeo/light-mode/bocal-verre.svg",
     type: "packaging",
   },
@@ -1131,8 +1143,8 @@ const UNTYPED_LOGOS = {
     type: "packaging",
   },
   "fr:bouteille-1": {
-    tag: "fr:bouteille-1",
-    label: "bouteille-1",
+    tag: "fr:bouteille en verre",
+    label: "bouteille en verre",
     logo: "https://static.openfoodfacts.org/images/icons/packaging-shapes/citeo/light-mode/bouteille-1.svg",
     type: "packaging",
   },
@@ -1143,14 +1155,14 @@ const UNTYPED_LOGOS = {
     type: "packaging",
   },
   "fr:bouteille-3": {
-    tag: "fr:bouteille-3",
-    label: "bouteille-3",
+    tag: "fr:bouteille-en-plastique",
+    label: "Bouteille en plastique",
     logo: "https://static.openfoodfacts.org/images/icons/packaging-shapes/citeo/light-mode/bouteille-3.svg",
     type: "packaging",
   },
   "fr:bouteille-4": {
-    tag: "fr:bouteille-4",
-    label: "bouteille-4",
+    tag: "fr:flasque",
+    label: "Flasque",
     logo: "https://static.openfoodfacts.org/images/icons/packaging-shapes/citeo/light-mode/bouteille-4.svg",
     type: "packaging",
   },
@@ -1263,14 +1275,14 @@ const UNTYPED_LOGOS = {
     type: "packaging",
   },
   "fr:capsule-autre": {
-    tag: "fr:capsule-autre",
-    label: "capsule-autre",
+    tag: "fr:capsule-en-plastique",
+    label: "capsule en plastique",
     logo: "https://static.openfoodfacts.org/images/icons/packaging-shapes/citeo/light-mode/capsule-autre.svg",
     type: "packaging",
   },
   "fr:capsule-metal": {
-    tag: "fr:capsule-metal",
-    label: "capsule-metal",
+    tag: "fr:capsule-en-métal",
+    label: "capsule en métal",
     logo: "https://static.openfoodfacts.org/images/icons/packaging-shapes/citeo/light-mode/capsule-metal.svg",
     type: "packaging",
   },
@@ -1323,8 +1335,8 @@ const UNTYPED_LOGOS = {
     type: "packaging",
   },
   "fr:collier-plastique": {
-    tag: "fr:collier-plastique",
-    label: "collier-plastique",
+    tag: "fr:collier-en-plastique",
+    label: "collier en plastique",
     logo: "https://static.openfoodfacts.org/images/icons/packaging-shapes/citeo/light-mode/collier-plastique.svg",
     type: "packaging",
   },
@@ -1576,19 +1588,19 @@ const UNTYPED_LOGOS = {
   },
   "fr:moule-carton": {
     tag: "fr:moule-carton",
-    label: "moule-carton",
+    label: "moule en carton",
     logo: "https://static.openfoodfacts.org/images/icons/packaging-shapes/citeo/light-mode/moule-carton.svg",
     type: "packaging",
   },
   "fr:moule-metal": {
-    tag: "fr:moule-metal",
-    label: "moule-metal",
+    tag: "fr:moule-en-metal",
+    label: "moule en metal",
     logo: "https://static.openfoodfacts.org/images/icons/packaging-shapes/citeo/light-mode/moule-metal.svg",
     type: "packaging",
   },
   "fr:muselet-et-plaque": {
     tag: "fr:muselet-et-plaque",
-    label: "muselet-et-plaque",
+    label: "Muselet et plaque",
     logo: "https://static.openfoodfacts.org/images/icons/packaging-shapes/citeo/light-mode/muselet-et-plaque.svg",
     type: "packaging",
   },
@@ -1808,6 +1820,68 @@ const UNTYPED_LOGOS = {
     logo: "https://static.openfoodfacts.org/images/icons/packaging-shapes/citeo/light-mode/tube-2.svg",
     type: "packaging",
   },
+  "fr:bac-de-tri": {
+    tag: "fr:bac-de-tri",
+    label: "Bac de tri",
+    logo: "https://robotoff.openfoodfacts.org/api/v1/images/crop?image_url=https://static.openfoodfacts.org/images/products/123/456/789/0123/229.jpg&y_min=0.379913628&x_min=0.803501546&y_max=0.585622132&x_max=0.88113445",
+    type: "packaging",
+  },
+  "fr:tri-verre": {
+    tag: "fr:tri-verre",
+    label: "Tri verre",
+    logo: "https://robotoff.openfoodfacts.org/api/v1/images/crop?image_url=https://static.openfoodfacts.org/images/products/123/456/789/0123/227.jpg&y_min=0.516038656&x_min=0.736438572&y_max=0.940771222&x_max=0.916798651",
+    type: "packaging",
+  },
+  "es:ecoponto-amarelo": {
+    tag: "es:ecoponto-amarelo",
+    label: "Ecoponto amarelo",
+    logo: "https://static.openfoodfacts.org/images/lang/pt/labels/ecoponto-amarelo.90x90.svg",
+    type: "packaging",
+  },
+  "es:ecoponto-azul": {
+    tag: "es:ecoponto-azul",
+    label: "Ecoponto azul",
+    logo: "https://static.openfoodfacts.org/images/lang/pt/labels/ecoponto-azul.90x90.svg",
+    type: "packaging",
+  },
+  "es:ecoponto-verde": {
+    tag: "es:ecoponto-verde",
+    label: "Ecoponto verde",
+    logo: "https://static.openfoodfacts.org/images/lang/pt/labels/ecoponto-verde.90x90.svg",
+    type: "packaging",
+  },
+  "de:ok-compost": {
+    tag: "de:ok-compost",
+    label: "OK Compost",
+    logo: "https://robotoff.openfoodfacts.org/api/v1/images/crop?image_url=https://static.openfoodfacts.org/images/products/123/456/789/0123/224.jpg&y_min=0.293691158&x_min=0.0740530789&y_max=0.999693215&x_max=0.539421797",
+    type: "packaging",
+  },
+  "fr:acier recyclable": {
+    tag: "fr:acier recyclable",
+    label: "Acier recyclable",
+    logo: "",
+    type: "packaging",
+  },
+  "en:resy": {
+    tag: "en:resy",
+    label: "RESY",
+    logo: "https://robotoff.openfoodfacts.org/api/v1/images/crop?image_url=https://static.openfoodfacts.org/images/products/123/456/789/0123/222.jpg&y_min=0.589905739&x_min=0.41249004&y_max=0.832627356&x_max=0.593729615",
+    type: "packaging",
+  },
+  "fr:compostable": {
+    tag: "fr:compostable",
+    label: "Compostable",
+    logo: "",
+    type: "packaging",
+  },
+  "de:gelbe-tonne": {
+    tag: "de:gelbe-tonne",
+    label: "Gelbe tonne",
+    logo: "https://robotoff.openfoodfacts.org/api/v1/images/crop?image_url=https://static.openfoodfacts.org/images/products/22168504/1.jpg&y_min=0.5805541276931763&x_min=0.6500228643417358&y_max=0.6525026559829712&x_max=0.7805396318435669",
+    type: "packaging",
+  },
+      
+  
   // To-Do add Halal logos
   "en:halal-food-council-of-europe": {
     tag: "en:halal-food-council-of-europe",
@@ -1855,43 +1929,43 @@ const UNTYPED_LOGOS = {
   // To-Do add Other scores logos
   "en:keyhole": {
     tag: "en:keyhole",
-    label: "keyhole",
+    label: "Keyhole",
     logo: "https://static.openfoodfacts.org/images/lang/en/labels/keyhole.90x90.png",
     type: "label",
   },
   "en:health-star-rating-0-5": {
     tag: "en:health-star-rating-0-5",
-    label: "health star rating 0 5",
+    label: "Health Star Rating 0.5",
     logo: "https://static.openfoodfacts.org/images/lang/en/labels/health-star-rating-0-5.90x90.png",
     type: "label",
   },
   "en:health-star-rating-1-5": {
     tag: "en:health-star-rating-1-5",
-    label: "health star rating 1 5",
+    label: "Health Star Rating 1.5",
     logo: "https://static.openfoodfacts.org/images/lang/en/labels/health-star-rating-1-5.90x90.png",
     type: "label",
   },
   "en:health-star-rating-1": {
     tag: "en:health-star-rating-1",
-    label: "health star rating 1",
+    label: "Health Star Rating 1",
     logo: "https://static.openfoodfacts.org/images/lang/en/labels/health-star-rating-1.90x90.png",
     type: "label",
   },
   "en:health-star-rating-5": {
     tag: "en:health-star-rating-5",
-    label: "health star rating 5",
+    label: "Health Star Rating 5",
     logo: "https://static.openfoodfacts.org/images/lang/en/labels/health-star-rating-5.90x90.png",
     type: "label",
   },
   "en:health-star-rating-4": {
     tag: "en:health-star-rating-4",
-    label: "health star rating 4",
+    label: "Health Star Rating 4",
     logo: "https://static.openfoodfacts.org/images/lang/en/labels/health-star-rating-4.90x90.png",
     type: "label",
   },
   "en:health-star-rating-2-5": {
     tag: "en:health-star-rating-2-5",
-    label: "health star rating 2 5",
+    label: "Health Star Rating 2.5",
     logo: "https://static.openfoodfacts.org/images/lang/en/labels/health-star-rating-2-5.90x90.png",
     type: "label",
   },
@@ -1903,19 +1977,19 @@ const UNTYPED_LOGOS = {
   },
   "en:health-star-rating-3-5": {
     tag: "en:health-star-rating-3-5",
-    label: "health star rating 3 5",
+    label: "Health Star Rating 3.5",
     logo: "https://static.openfoodfacts.org/images/lang/en/labels/health-star-rating-3-5.90x90.png",
     type: "label",
   },
   "en:health-star-rating-3": {
     tag: "en:health-star-rating-3",
-    label: "health star rating 3",
+    label: "Health Star Rating 3",
     logo: "https://static.openfoodfacts.org/images/lang/en/labels/health-star-rating-3.90x90.png",
     type: "label",
   },
   "en:health-star-rating-4-5": {
     tag: "en:health-star-rating-4-5",
-    label: "health star rating 4 5",
+    label: "Health Star Rating 4.5",
     logo: "https://static.openfoodfacts.org/images/lang/en/labels/health-star-rating-4-5.90x90.png",
     type: "label",
   },
@@ -2652,6 +2726,18 @@ export const DASHBOARD: DashBoardTheme[] = [
       "fr:tonneau-tonnelet-plastique",
       "fr:tube-1",
       "fr:tube-2",
+      "fr:bac-de-tri", 
+      "fr:tri-verre",
+      "es:ecoponto-amarelo",
+      "es:ecoponto-azul",
+      "es:ecoponto-verde",
+      "de:ok-compost",
+      "fr:acier recyclable",
+      "en:resy",
+      "fr:compostable",
+      "de:einwegpfand",
+      "de:gelbe-tonne",  
+      
     ],
   },
   // Packaging
@@ -2719,6 +2805,7 @@ export const DASHBOARD: DashBoardTheme[] = [
       "en:green-dot",
     ],
   },
+  // Halal dashboard
   {
     tag: "halal",
     title: "Halal",
@@ -2750,7 +2837,7 @@ export const DASHBOARD: DashBoardTheme[] = [
       "en:star-k",
     ],
   },
-  // To-Do add Origins dashboard
+  // Origins dashboard
   {
     tag: "origin-france",
     title: "Origine France",
@@ -2796,9 +2883,11 @@ export const DASHBOARD: DashBoardTheme[] = [
       "fr:viande-ovine-francaise",
       "fr:viande-d-agneau-francais",
       "en:produced-in-brittany",
+      "fr:viande-de-chevreau-francaise",
+      "en:french-horse",
     ],
   },
-  // TODO: vegetarian vegetalian categories
+  // vegetarian vegetalian categories
   {
     tag: "vegan-and-vegetarian",
     title: "Vegan and Vegetarian",
@@ -2822,7 +2911,7 @@ export const DASHBOARD: DashBoardTheme[] = [
       "en:icea-vegan",
     ],
   },
-  // TODO: Organic
+  // Organic
   {
     tag: "organic",
     title: "Organic",
