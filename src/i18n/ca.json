@@ -1,29 +1,29 @@
 {
   "home": {
     "game_selector": {
-      "title": "What game would you like to play?",
+      "title": "Quin joc vols per jugar?\n",
       "cards": {
         "questions": {
           "title": "Preguntes",
-          "description": "Tell us if the given image answers the questions"
+          "description": "Digues tu quina imatge escollir segons les preguntes"
         },
         "logos": {
           "title": "Logos",
-          "description": "Find all the logos matching the given logo"
+          "description": "Cerqueu totes les imatges que vingin bé segons el logo que donen."
         },
         "eco_score": {
           "title": "Eco-puntuació",
-          "description": "Annotate the questions with the highest value"
+          "description": "anoteu les questions amb el valors mes alts"
         }
       }
     },
     "account_band": {
-      "title": "Want to make your contribution count? Create an account or sign in on Open Food Facts!",
+      "title": "Quan vas fer el teu compte de contribució? creeu un compte o inicieu sessió dintre d'open food facs!",
       "log_in": "Nom d'usuari",
       "sign_up": "Uniu-vos",
-      "contribution_details": "Learn why your contribution matters"
+      "contribution_details": "Que sápigas el perquè la vostra contibució es important"
     },
-    "saved_filters": "Saved Filters",
+    "saved_filters": "acordar els filtres",
     "contribution_modal": {
       "title": "Your contribution matters",
       "information": "Hunger Games is an effort to leverage the results of our OCR. When you use Hunger Games by Open Food Facts, you improve our entire database which helps the community make better food choices. We gather your annotations and use them to make Open Food Facts more accurate and effecient.",
@@ -33,21 +33,21 @@
       "title": "{{userName}} statistics:",
       "editorCount": {
         "title": "Editor",
-        "description": "Number of edition done"
+        "description": "número d'edició donat"
       },
       "contributorCount": {
         "title": "Voluntari/a",
         "description": "Adding a new product"
       },
       "photographerCount": {
-        "title": "Photographer",
+        "title": "Fotògraf",
         "description": "Taking photos for a product"
       }
     }
   },
   "flagged_images": {
     "title": "Images flagged by users",
-    "loading": "Loading"
+    "loading": "llegint "
   },
   "questions": {
     "category": "categoria",
@@ -57,48 +57,48 @@
     "brand": "marca",
     "brands": "Marques",
     "quantity": "Quantitat",
-    "insightTypeLabel": "Mostra només",
+    "insightTypeLabel": "només nombrar",
     "ingredients": "Ingredients",
-    "product_weight": "pes del producte",
-    "popularity_sort": "Ordena per popularitat",
+    "product_weight": "mesura del producte",
+    "popularity_sort": "Ordenat per popularitat",
     "see_examples": "See examples of this ",
     "no": "No",
     "skip": "Omet",
     "yes": "Si",
-    "no_questions_remaining": "No queden preguntes",
-    "countries": "Països",
-    "view": "Vista",
+    "no_questions_remaining": "No hi ha mes preguntes",
+    "countries": "Paisos",
+    "view": "mira",
     "edit": "Edita",
-    "hide_images": "Amaga les imatges (es carrega més ràpid)",
-    "display_images": "Mostra imatges",
+    "hide_images": "treu les imatges (carrega més ràpid)",
+    "display_images": "enxega les imatges ",
     "annotations": "Annotations",
-    "last_annotations": "Darreres anotacions",
+    "last_annotations": "ultimes  anotacions",
     "remaining_annotations": "Remaining questions",
-    "annotated_annotations": "Anotat",
+    "annotated_annotations": "apuntat",
     "filters": {
       "active_filter_number": "+{{count}} filters",
       "active_filter_number_one": "+{{count}} filter",
-      "active_filter_number_zero": "no filter",
+      "active_filter_number_zero": "no hi han filtres",
       "short_label": {
         "value": "valor",
         "country": "país",
         "brand": "marca",
         "popularity": "popularity",
-        "campaign": "camp"
+        "campaign": "anar a la montanya"
       },
       "long_label": {
-        "type": "Tipus de pregunta",
-        "value": "Proposta de valor",
-        "country": "País de producció",
-        "brand": "Marca del producte",
-        "popularity": "Ordena per popularitat",
+        "type": "Tipus de cuestió",
+        "value": "Proposat  per evaluar",
+        "country": "produit a aquest pais ",
+        "brand": "producte de marca",
+        "popularity": "Ordenat per popularitat",
         "edit": "",
-        "campaign": "Campaign"
+        "campaign": "la canpanya"
       },
       "placeholders": {
         "value": "Valor (fanta, en: orgànic,...)",
         "brand": "auchan, danone, herta, ...",
-        "campaign": "Annotation campaigns"
+        "campaign": "anotacions de campanya\n"
       },
       "actions": {
         "edit": "Edita els filtres",
@@ -106,11 +106,11 @@
         "apply": "Aplicar"
       }
     },
-    "other_questions": "Other questions",
-    "send": "Send",
-    "flag": "Something wrong? Report/flag the image!",
-    "unflag": "Unflag the image",
-    "reset_filters": "Reset filters",
+    "other_questions": "altres cuestions",
+    "send": "enviar",
+    "flag": "Qualsevol problema?  digues quin",
+    "unflag": "aparteu la imatge",
+    "reset_filters": "tornar als filtres",
     "log_in": "Nom d'usuari",
     "sign_up": "Uniu-vos",
     "login_title": "Make your annotation count",
@@ -131,9 +131,9 @@
     "settings": "Preferències",
     "eco-score": "Eco-puntuació",
     "dashboard": "Logos dashboard",
-    "tour": "Show Tour",
+    "tour": "donar una volta ",
     "logged_in_user": "logged as {{userName}}",
-    "log_in": "click to login"
+    "log_in": "fes click al logo"
   },
   "insights": {
     "insights": "Més detalls",
@@ -142,7 +142,7 @@
     "value_tag": "Etiqueta",
     "value_placeholder": "ex: en: mueslis, bjorg,...",
     "type": "Type",
-    "annotated": "Anotat",
+    "annotated": "apuntat",
     "annotation": "Notes",
     "not_annotated": "Cap anotació",
     "all": "Tots",
@@ -161,8 +161,8 @@
     "created_at": "Creat a",
     "completed_at": "Completat a",
     "automatic": "Automàtic",
-    "human_required": "Human required",
-    "edit_product": "Open product edit",
+    "human_required": "fa falta un humá\nes necessita un humá ",
+    "edit_product": "Oberta l'edició del producte",
     "view_product": "Open product page"
   },
   "logos": {
@@ -182,7 +182,7 @@
     "qr_code": "Codi QR",
     "category": "Categoria",
     "nutrition_label": "Etiqueta nutricional",
-    "no_logo": "Not a logo",
+    "no_logo": "no si es logotip",
     "store": "Botiga",
     "detail": "Detall del logotip",
     "id": "Identificador del logotip:",
@@ -195,11 +195,11 @@
     "loading": "Loading...",
     "refresh": "Refresh",
     "search_specific": "Search specific logo",
-    "load_more": "Load more",
+    "load_more": "Carrega mes ",
     "no_results": "No s'ha trobat cap logotip",
-    "result_count": "Shows {{showing}} on {{available}} available",
-    "flag": "Something wrong? Report/flag the image!",
-    "unflag": "Unflag the image",
+    "result_count": "mirar dentro de lo posible (esp)\nmirar dintre del posible o viable",
+    "flag": "Qualsevol problema?  digues quin",
+    "unflag": "aparteu la imatge",
     "crop_image_title": "crop of the logo"
   },
   "settings": {
@@ -338,11 +338,11 @@
     "zoom_on_logo": "Zoom on logo",
     "select_all": "Selecciona-ho tot",
     "deselect_all": "Desmarca-ho tot",
-    "incorrect": "Wrong",
+    "incorrect": "equivocat",
     "correct": "Correct ({{label}})"
   },
   "eco-score": {
-    "description": "Here is a summary of questions that could improve Eco-Score computation",
+    "description": "Aqui hi ha un questionari que pot millora la puntuació de l'Eco-Score",
     "countryLabel": "Country"
   }
 }
