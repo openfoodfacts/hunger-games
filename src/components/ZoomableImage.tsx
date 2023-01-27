@@ -3,6 +3,8 @@ import Dialog from "@mui/material/Dialog";
 import DialogActions from "@mui/material/DialogActions";
 import DialogContent from "@mui/material/DialogContent";
 import Button from "@mui/material/Button";
+import Box from "@mui/material/Box";
+import Divider from "@mui/material/Divider";
 import IconButton from "@mui/material/IconButton";
 import CloseIcon from "@mui/icons-material/Close";
 import { alpha } from "@mui/material/styles";
@@ -59,11 +61,23 @@ const ZoomableImage = (props) => {
         maxWidth="xl"
         fullScreen={fullScreen}
       >
-        <CloseIcon
-          sx={{ ml: "20px", marginTop: "10px" }}
-          onClick={() => setIsOpen(false)}
-        />
-        <DialogContent sx={{ paddingTop: "0" }}>
+        <Box
+          sx={{
+            p: 1,
+            display: "flex",
+            flexDirection: "row-reverse",
+          }}
+        >
+          <IconButton onClick={() => setIsOpen(false)}>
+            <CloseIcon />
+          </IconButton>
+        </Box>
+        <Divider />
+        <DialogContent
+          sx={{
+            p: { xs: 1, md: 2 },
+          }}
+        >
           <TransformWrapper limitToBounds={false} ref={apiRef}>
             <TransformComponent>
               <img
@@ -71,7 +85,7 @@ const ZoomableImage = (props) => {
                 alt=""
                 style={{
                   maxHeight: "calc(100vh - 160px )",
-                  maxWidth: "1400px",
+                  maxWidth: "min(100%, 1400px)",
                   transform: `rotate(${rotation * 90}deg)`,
                   transformOrigin: "center",
                 }}
