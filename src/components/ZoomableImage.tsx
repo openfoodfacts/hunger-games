@@ -4,12 +4,15 @@ import DialogActions from "@mui/material/DialogActions";
 import DialogContent from "@mui/material/DialogContent";
 import Button from "@mui/material/Button";
 import IconButton from "@mui/material/IconButton";
+import CloseIcon from "@mui/icons-material/Close";
 import { alpha } from "@mui/material/styles";
 import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
 
 import RotateLeftIcon from "@mui/icons-material/RotateLeft";
 import RotateRightIcon from "@mui/icons-material/RotateRight";
 import OpenInFullIcon from "@mui/icons-material/OpenInFull";
+import useMediaQuery from "@mui/material/useMediaQuery";
+import { useTheme } from "@mui/material/styles";
 
 const ZoomableImage = (props) => {
   const { src, srcFull, zoomIn, imageProps, ...other } = props;
@@ -17,6 +20,9 @@ const ZoomableImage = (props) => {
   const apiRef = React.useRef(null);
   const [rotation, setRotation] = React.useState(0);
   const [isOpen, setIsOpen] = React.useState(false);
+
+  const theme = useTheme();
+  const fullScreen = useMediaQuery(theme.breakpoints.down("md"));
 
   return (
     <>
@@ -51,8 +57,13 @@ const ZoomableImage = (props) => {
           setIsOpen(false);
         }}
         maxWidth="xl"
+        fullScreen={fullScreen}
       >
-        <DialogContent>
+        <CloseIcon
+          sx={{ ml: "20px", marginTop: "10px" }}
+          onClick={() => setIsOpen(false)}
+        />
+        <DialogContent sx={{ paddingTop: "0" }}>
           <TransformWrapper limitToBounds={false} ref={apiRef}>
             <TransformComponent>
               <img
