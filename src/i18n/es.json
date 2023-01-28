@@ -78,7 +78,7 @@
     "filters": {
       "active_filter_number": "+{{count}} filters",
       "active_filter_number_one": "+{{count}} filter",
-      "active_filter_number_zero": "no filter",
+      "active_filter_number_zero": "Sin filtro",
       "short_label": {
         "value": "valor",
         "country": "país",
@@ -121,9 +121,9 @@
     "games": "Juegos",
     "questions": "Preguntas",
     "logos": "Logotipo",
-    "logos-annotation": "Logos annotation",
-    "logos-search": "Logos search",
-    "logos-product-search": "Annotation per products",
+    "logos-annotation": "Anotaciones de logotipo",
+    "logos-search": "Búsqueda de logotipo",
+    "logos-product-search": "Anotación por productos",
     "logos-deep-search": "Infinit annotation",
     "manage": "Administrar",
     "insights": "Percepciones",
@@ -225,7 +225,7 @@
         "text2": "¡Responda simplemente con un <strong>sí/no</strong>! ¿No sabes la respuesta? Eso está bien, solo sáltatelo.",
         "text3": "También puede utilizar las teclas del teclado o,n y k.",
         "text4": "¡Puede <strong>filtrar</strong> los productos según el país, las marcas, la popularidad y mucho más!",
-        "text5": "If you don't want to do this every single time, you can also <strong>save the filters</strong> by clicking on the star. Next time you come back, find the saved filters on the home page itself"
+        "text5": "Si no desea hacer esto cada vez, puede <strong>guardar los filtros</strong> cliqueando en la estrella. La próxima vez que regrese, encontrará los filtros guardados en la página de inicio"
       },
       "page3": {
         "title": "Juego de logotipos",
