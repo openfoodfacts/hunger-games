@@ -28,6 +28,7 @@ import { getShortcuts } from "../../l10n-shortcuts";
 import { getQuestionSearchParams } from "../../components/QuestionFilter/useFilterSearch";
 import CroppedLogo from "../../components/CroppedLogo";
 import ZoomableImage from "../../components/ZoomableImage";
+import { CircularProgress } from "@mui/material";
 
 const getFullSizeImage = (src) => {
   if (!src) {
@@ -175,7 +176,15 @@ const QuestionDisplay = ({
     );
   }
   if (question === null) {
-    return <p>loading</p>;
+    return (
+      <Box sx={{ width: "100vw", textAlign: "center", py: 10, m: 0 }}>
+        <Typography variant="subtitle1">
+          {t("questions.please_wait_while_we_fetch_the_question")}
+        </Typography>
+        <br />
+        <CircularProgress />
+      </Box>
+    );
   }
   return (
     <Stack
