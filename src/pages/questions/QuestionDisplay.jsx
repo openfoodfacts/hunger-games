@@ -177,7 +177,7 @@ const QuestionDisplay = ({
   }
   if (question === null) {
     return (
-      <Box sx={{ width: "100vw", textAlign: "center", py: 10, m: 0 }}>
+      <Box sx={{ width: "100%", textAlign: "center", py: 10, m: 0 }}>
         <Typography variant="subtitle1">
           {t("questions.please_wait_while_we_fetch_the_question")}
         </Typography>
