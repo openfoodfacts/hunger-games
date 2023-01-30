@@ -10,6 +10,7 @@ import Typography from "@mui/material/Typography";
 import LinkIcon from "@mui/icons-material/Link";
 import DeleteIcon from "@mui/icons-material/Delete";
 import DoneIcon from "@mui/icons-material/Done";
+import CircularProgress from "@mui/material/CircularProgress";
 import MuiLink from "@mui/material/Link";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
@@ -28,7 +29,6 @@ import { getShortcuts } from "../../l10n-shortcuts";
 import { getQuestionSearchParams } from "../../components/QuestionFilter/useFilterSearch";
 import CroppedLogo from "../../components/CroppedLogo";
 import ZoomableImage from "../../components/ZoomableImage";
-import { CircularProgress } from "@mui/material";
 
 const getFullSizeImage = (src) => {
   if (!src) {
