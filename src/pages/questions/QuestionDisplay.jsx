@@ -10,6 +10,7 @@ import Typography from "@mui/material/Typography";
 import LinkIcon from "@mui/icons-material/Link";
 import DeleteIcon from "@mui/icons-material/Delete";
 import DoneIcon from "@mui/icons-material/Done";
+import CircularProgress from "@mui/material/CircularProgress";
 import MuiLink from "@mui/material/Link";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
@@ -175,7 +176,15 @@ const QuestionDisplay = ({
     );
   }
   if (question === null) {
-    return <p>loading</p>;
+    return (
+      <Box sx={{ width: "100%", textAlign: "center", py: 10, m: 0 }}>
+        <Typography variant="subtitle1">
+          {t("questions.please_wait_while_we_fetch_the_question")}
+        </Typography>
+        <br />
+        <CircularProgress />
+      </Box>
+    );
   }
   return (
     <Stack
