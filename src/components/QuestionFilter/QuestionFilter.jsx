@@ -16,6 +16,7 @@ import Radio from "@mui/material/Radio";
 import Dialog from "@mui/material/Dialog";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
+import { DialogActions, DialogContent } from "@mui/material";
 
 import IconButton from "@mui/material/IconButton";
 import EditIcon from "@mui/icons-material/Edit";
@@ -26,12 +27,7 @@ import { useTranslation } from "react-i18next";
 import LabelFilter from "./LabelFilter";
 import brands from "../../assets/brands.json";
 import { countryNames, insightTypesNames, campagnes } from "./const";
-import { DialogActions, DialogContent } from "@mui/material";
-
-const capitaliseCountryName = (country) => {
-  country = country.slice(3);
-  return country.charAt(0).toUpperCase() + country.slice(1);
-};
+import { capitaliseName } from "../../utils";
 
 const getChipsParams = (filterState, setFilterState, t) =>
   [
@@ -49,9 +45,9 @@ const getChipsParams = (filterState, setFilterState, t) =>
     {
       key: "countryFilter",
       display: !!filterState?.countryFilter,
-      label: `${t(
-        "questions.filters.short_label.country"
-      )}: ${capitaliseCountryName(filterState?.countryFilter)}`,
+      label: `${t("questions.filters.short_label.country")}: ${capitaliseName(
+        filterState?.countryFilter
+      )}`,
       onDelete: () => {
         setFilterState((state) => ({ ...state, countryFilter: "" }));
       },
@@ -307,7 +303,7 @@ export const QuestionFilter = ({
               value={innerCountryFilter}
               onChange={(event, newValue) => setInnerCountryFilter(newValue)}
               options={countryNames}
-              getOptionLabel={(countryTag) => capitaliseCountryName(countryTag)}
+              getOptionLabel={(countryTag) => capitaliseName(countryTag)}
               renderInput={(params) => (
                 <TextField
                   {...params}
