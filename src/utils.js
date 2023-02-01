@@ -43,7 +43,8 @@ export function sleep(ms) {
 }
 
 //to provide capitalised country name; en:france => France
-export const capitaliseName = (country) => {
-  let name = country.slice(3);
+export const capitaliseName = (string) => {
+  if (!Boolean(string)) return;
+  let name = string.slice(3);
   return name.charAt(0).toUpperCase() + name.slice(1);
 };
