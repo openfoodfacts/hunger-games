@@ -28,6 +28,11 @@ import brands from "../../assets/brands.json";
 import { countryNames, insightTypesNames, campagnes } from "./const";
 import { DialogActions, DialogContent } from "@mui/material";
 
+const capitaliseCountryName = (country) => {
+  country = country.slice(3);
+  return country.charAt(0).toUpperCase() + country.slice(1);
+};
+
 const getChipsParams = (filterState, setFilterState, t) =>
   [
     {
@@ -44,9 +49,9 @@ const getChipsParams = (filterState, setFilterState, t) =>
     {
       key: "countryFilter",
       display: !!filterState?.countryFilter,
-      label: `${t("questions.filters.short_label.country")}: ${
-        filterState?.countryFilter
-      }`,
+      label: `${t(
+        "questions.filters.short_label.country"
+      )}: ${capitaliseCountryName(filterState?.countryFilter)}`,
       onDelete: () => {
         setFilterState((state) => ({ ...state, countryFilter: "" }));
       },
@@ -302,7 +307,7 @@ export const QuestionFilter = ({
               value={innerCountryFilter}
               onChange={(event, newValue) => setInnerCountryFilter(newValue)}
               options={countryNames}
-              getOptionLabel={(countryTag) => countryTag.slice(3)}
+              getOptionLabel={(countryTag) => capitaliseCountryName(countryTag)}
               renderInput={(params) => (
                 <TextField
                   {...params}
