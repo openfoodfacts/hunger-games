@@ -5,7 +5,7 @@
       "cards": {
         "questions": {
           "title": "Preguntas",
-          "description": "Díganos si la imagen dada responde a las preguntas"
+          "description": "Dinos si la imagen dada responde a las preguntas"
         },
         "logos": {
           "title": "Logotipo",
@@ -13,7 +13,7 @@
         },
         "eco_score": {
           "title": "Eco-Score",
-          "description": "Anote las preguntas con el valor más alto"
+          "description": "Anota las preguntas con el valor más alto"
         }
       }
     },
@@ -26,7 +26,7 @@
     "saved_filters": "Filtros Guardados",
     "contribution_modal": {
       "title": "Tu aporte importa",
-      "information": "Hunger Games es un esfuerzo por aprovechar los resultados de nuestro OCR. Cuando usted utiliza los Juegos Hunger de Open Food Facts, usted mejora toda nuestra base de datos que ayuda a la comunidad a tomar mejores opciones de comida. Reunimos sus anotaciones y las usamos para hacer que Open Food Facts sea más exacto y eficaz.",
+      "information": "Hunger Games es un esfuerzo por aprovechar los resultados de nuestro OCR. Cuando utilizas los Hunger Games de Open Food Facts mejoras toda nuestra base de datos, la cual ayuda a la comunidad a tomar mejores opciones de comida. Reunimos tus anotaciones y las usamos para hacer que Open Food Facts sea más exacto y eficaz.",
       "thank_you": "Gracias por ayudarnos a mejorar Open Food Facts para que más personas puedan usarlo fácilmente."
     },
     "statistics": {
@@ -76,8 +76,8 @@
     "remaining_annotations": "Preguntas restantes",
     "annotated_annotations": "Anotado",
     "filters": {
-      "active_filter_number": "+{{count}} filters",
-      "active_filter_number_one": "+{{count}} filter",
+      "active_filter_number": "+{{count}} filtros",
+      "active_filter_number_one": "+{{count}} filtro",
       "active_filter_number_zero": "Sin filtro",
       "short_label": {
         "value": "valor",
@@ -114,7 +114,8 @@
     "log_in": "Usuario",
     "sign_up": "Registrarse",
     "login_title": "Haz que tu anotación cuente",
-    "login_description": "Actualmente no ha iniciado sesión en Open Food Facts. Para que sus respuestas se apliquen directamente a los productos y se asocien a su cuenta, considere iniciar sesión en su cuenta Open Food Facts o crear una"
+    "login_description": "Actualmente no ha iniciado sesión en Open Food Facts. Para que sus respuestas se apliquen directamente a los productos y se asocien a su cuenta, considere iniciar sesión en su cuenta Open Food Facts o crear una",
+    "please_wait_while_we_fetch_the_question": "¡Espere mientras buscamos la pregunta!"
   },
   "menu": {
     "title": "Juegos del Hambre",
@@ -124,7 +125,7 @@
     "logos-annotation": "Anotaciones de logotipo",
     "logos-search": "Búsqueda de logotipo",
     "logos-product-search": "Anotación por productos",
-    "logos-deep-search": "Infinit annotation",
+    "logos-deep-search": "Anotación infinita",
     "manage": "Administrar",
     "insights": "Percepciones",
     "nutritions": "Información nutricional",
