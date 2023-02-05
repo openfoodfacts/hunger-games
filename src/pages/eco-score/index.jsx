@@ -11,6 +11,7 @@ import SmallQuestionCard from "../../components/SmallQuestionCard";
 import Opportunities from "../../components/Opportunities";
 import { DEFAULT_FILTER_STATE } from "../../components/QuestionFilter/const";
 import { useTranslation } from "react-i18next";
+import { capitaliseName } from "../../utils";
 
 const ecoScoreCards = [
   {
@@ -200,7 +201,7 @@ export default function EcoScore() {
       >
         {countryNames.map((country) => (
           <MenuItem value={country} key={country}>
-            {country}
+            {capitaliseName(country)}
           </MenuItem>
         ))}
       </TextField>

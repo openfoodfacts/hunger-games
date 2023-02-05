@@ -41,3 +41,12 @@ export const removeEmptyKeys = (obj) => {
 export function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
+
+//to provide capitalised country name; en:france => France
+export const capitaliseName = (string) => {
+  if (!string) {
+    return string;
+  }
+  let name = string.slice(3);
+  return name.charAt(0).toUpperCase() + name.slice(1);
+};
