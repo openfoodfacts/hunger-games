@@ -18,6 +18,8 @@ import { useTranslation } from "react-i18next";
 import DevModeContext from "../../contexts/devMode";
 import ColorModeContext from "../../contexts/colorMode";
 import { localSettings, localSettingsKeys } from "../../localeStorageManager";
+import FooterWithLinks from "./FooterWithLinks";
+import { Divider } from "@mui/material";
 
 export default function Settings() {
   const { t, i18n } = useTranslation();
@@ -139,6 +141,8 @@ export default function Settings() {
           {t("settings.reportIssue")}
         </MuiLink>
       </div>
+      <Divider sx={{ width: "100%" }} light />
+      <FooterWithLinks />
     </Stack>
   );
 }
