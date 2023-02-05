@@ -1,15 +1,15 @@
 {
   "home": {
     "game_selector": {
-      "title": "What game would you like to play?",
+      "title": "Kokį žaidimą norėtumėte žaisti?",
       "cards": {
         "questions": {
           "title": "Klausimai",
-          "description": "Tell us if the given image answers the questions"
+          "description": "Pasakykite mums, ar pateiktas vaizdas atsako į klausimus"
         },
         "logos": {
           "title": "Logos",
-          "description": "Find all the logos matching the given logo"
+          "description": "Raskite visus logotipus, atitinkančius pateiktą logotipą"
         },
         "eco_score": {
           "title": "Ekologinis balas",
@@ -23,14 +23,14 @@
       "sign_up": "Registruotis",
       "contribution_details": "Learn why your contribution matters"
     },
-    "saved_filters": "Saved Filters",
+    "saved_filters": "Įrašyti filtrai",
     "contribution_modal": {
       "title": "Your contribution matters",
       "information": "Hunger Games is an effort to leverage the results of our OCR. When you use Hunger Games by Open Food Facts, you improve our entire database which helps the community make better food choices. We gather your annotations and use them to make Open Food Facts more accurate and effecient.",
       "thank_you": "Thank you for helping us improve Open Food Facts so that more people can use it easily."
     },
     "statistics": {
-      "title": "{{userName}} statistics:",
+      "title": "{{userName}} statistika:",
       "editorCount": {
         "title": "Editor",
         "description": "Redagavimų skaičius"
@@ -114,7 +114,8 @@
     "log_in": "Login",
     "sign_up": "Registruotis",
     "login_title": "Make your annotation count",
-    "login_description": "Currently you are not logged in Open Food Facts. To get your answers directly applied to products, and associated to your account, consider logging in to your Open Food Facts account, or creating one"
+    "login_description": "Currently you are not logged in Open Food Facts. To get your answers directly applied to products, and associated to your account, consider logging in to your Open Food Facts account, or creating one",
+    "please_wait_while_we_fetch_the_question": "Palaukite, kol gausime klausimą!"
   },
   "menu": {
     "title": "Hunger Games",
