@@ -203,7 +203,12 @@ export default function LogoAnnotation() {
   const selectAll = () => {
     setLogoState((prevState) => ({
       ...prevState,
-      logos: prevState.logos.map((logo) => ({ ...logo, selected: true })),
+      logos: prevState.logos.map((logo, index) => {
+        if (logo.annotation_value === null) {
+          logo.selected = true;
+        }
+        return logo;
+      }),
     }));
   };
 

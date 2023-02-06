@@ -43,6 +43,7 @@ import {
   useOtherQuestions,
   useFlagImage,
 } from "./utils";
+import { capitaliseName } from "../../utils";
 
 const ProductInformation = (props) => {
   const { question, productData } = props;
@@ -70,6 +71,19 @@ const ProductInformation = (props) => {
   if (!question || question.insight_id === NO_QUESTION_LEFT) {
     return null;
   }
+
+  const splitCountries = (string) => {
+    if (!Boolean(string)) return;
+    let countries = string.split(", ");
+    let allCountries = "";
+    for (let i = 0; i < countries.length; i++) {
+      allCountries += capitaliseName(countries[i]);
+      if (i !== countries.length - 1) {
+        allCountries += ", ";
+      }
+    }
+    return allCountries;
+  };
 
   return (
     <Box>
@@ -259,7 +273,11 @@ const ProductInformation = (props) => {
               <TableCell component="th" scope="row">
                 {t(`questions.${ADDITIONAL_INFO_TRANSLATION[infoKey]}`)}
               </TableCell>
-              <TableCell>{productData?.[infoKey]}</TableCell>
+              {infoKey !== "countriesTags" ? (
+                <TableCell>{productData?.[infoKey]}</TableCell>
+              ) : (
+                <TableCell>{splitCountries(productData?.[infoKey])}</TableCell>
+              )}
             </TableRow>
           ))}
         </TableBody>
