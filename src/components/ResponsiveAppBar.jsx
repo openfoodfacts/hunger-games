@@ -204,7 +204,7 @@ const ResponsiveAppBar = () => {
                 if (page.url) {
                   return (
                     <MenuItem
-                    key={`Mobile-${page.translationKey}`}
+                      key={`Mobile-${page.translationKey}`}
                       onClick={handleCloseNavMenu}
                       component={Link}
                       to={`/${page.url}`}
@@ -226,7 +226,8 @@ const ResponsiveAppBar = () => {
                         onClick={() =>
                           setMenuOpenState((prev) => ({
                             ...prev,
-                            [page.translationKey]: !prev[page.translationKey],
+                            [`Mobile-${page.translationKey}`]:
+                              !prev[`Mobile-${page.translationKey}`],
                           }))
                         }
                       >
@@ -234,14 +235,14 @@ const ResponsiveAppBar = () => {
                           {t(page.translationKey)}
                         </Typography>
 
-                        {menuOpenState[page.translationKey] ? (
+                        {menuOpenState[`Mobile-${page.translationKey}`] ? (
                           <ExpandLess />
                         ) : (
                           <ExpandMore />
                         )}
                       </MenuItem>
                       <Collapse
-                        in={menuOpenState[page.translationKey]}
+                        in={menuOpenState[`Mobile-${page.translationKey}`]}
                         timeout="auto"
                         unmountOnExit
                       >
@@ -265,7 +266,7 @@ const ResponsiveAppBar = () => {
                   );
                 }
                 return (
-                  <ListSubheader key={page.translationKey}>
+                  <ListSubheader key={`Mobile-${page.translationKey}`}>
                     {t(page.translationKey)}
                   </ListSubheader>
                 );
@@ -386,11 +387,12 @@ const ResponsiveAppBar = () => {
                   return (
                     <MultiPagesButton
                       {...page}
-                      isOpen={menuOpenState[page.translationKey]}
+                      isOpen={menuOpenState[`Desktop-${page.translationKey}`]}
                       toggleIsOpen={() =>
                         setMenuOpenState((prev) => ({
                           ...prev,
-                          [page.translationKey]: !prev[page.translationKey],
+                          [`Desktop-${page.translationKey}`]:
+                            !prev[`Desktop-${page.translationKey}`],
                         }))
                       }
                     />
