@@ -47,7 +47,6 @@ const pages = [
       {
         url: "logos/search",
         translationKey: "menu.logos-search",
-        devModeOnly: true,
       },
       {
         url: "logos/product-search",
@@ -57,7 +56,6 @@ const pages = [
       {
         url: "logos/deep-search",
         translationKey: "menu.logos-deep-search",
-        devModeOnly: true,
       },
     ],
   },
@@ -206,7 +204,7 @@ const ResponsiveAppBar = () => {
                 if (page.url) {
                   return (
                     <MenuItem
-                      key={`Mobile-${page.translationKey}`}
+                      key={page.translationKey}
                       onClick={handleCloseNavMenu}
                       component={Link}
                       to={`/${page.url}`}
@@ -228,8 +226,7 @@ const ResponsiveAppBar = () => {
                         onClick={() =>
                           setMenuOpenState((prev) => ({
                             ...prev,
-                            [`Mobile-${page.translationKey}`]:
-                              !prev[`Mobile-${page.translationKey}`],
+                            [page.translationKey]: !prev[page.translationKey],
                           }))
                         }
                       >
@@ -237,14 +234,14 @@ const ResponsiveAppBar = () => {
                           {t(page.translationKey)}
                         </Typography>
 
-                        {menuOpenState[`Mobile-${page.translationKey}`] ? (
+                        {menuOpenState[page.translationKey] ? (
                           <ExpandLess />
                         ) : (
                           <ExpandMore />
                         )}
                       </MenuItem>
                       <Collapse
-                        in={menuOpenState[`Mobile-${page.translationKey}`]}
+                        in={menuOpenState[page.translationKey]}
                         timeout="auto"
                         unmountOnExit
                       >
@@ -268,7 +265,7 @@ const ResponsiveAppBar = () => {
                   );
                 }
                 return (
-                  <ListSubheader key={`Mobile-${page.translationKey}`}>
+                  <ListSubheader key={page.translationKey}>
                     {t(page.translationKey)}
                   </ListSubheader>
                 );
@@ -389,12 +386,11 @@ const ResponsiveAppBar = () => {
                   return (
                     <MultiPagesButton
                       {...page}
-                      isOpen={menuOpenState[`Desktop-${page.translationKey}`]}
+                      isOpen={menuOpenState[page.translationKey]}
                       toggleIsOpen={() =>
                         setMenuOpenState((prev) => ({
                           ...prev,
-                          [`Desktop-${page.translationKey}`]:
-                            !prev[`Desktop-${page.translationKey}`],
+                          [page.translationKey]: !prev[page.translationKey],
                         }))
                       }
                     />
