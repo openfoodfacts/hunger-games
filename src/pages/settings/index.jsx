@@ -52,97 +52,103 @@ export default function Settings() {
   };
 
   return (
-    <Stack sx={{ my: 5, mx: 2, alignItems: "flex-start" }} spacing={4}>
-      <Typography variant="h4" component="h2" sx={{ mb: 5 }}>
-        {t("settings.settings")}
-      </Typography>
-      <TextField
-        select
-        sx={{ minWidth: 150 }}
-        label={t("settings.language")}
-        value={language}
-        onChange={handleLangChange}
-      >
-        {Object.keys(messages).map((lang) => (
-          <MenuItem key={lang} value={lang}>
-            {lang.toUpperCase()}
-          </MenuItem>
-        ))}
-      </TextField>
-
-      <div>
-        <p>{t("settings.dev_mode_title")}</p>
-        <FormControlLabel
-          checked={devMode}
-          onChange={handleDevModeChange}
-          control={<Switch />}
-          label={t("settings.dev_mode_label")}
-          labelPlacement="end"
-        />
-      </div>
-      {devMode &&
-        [
-          { pageUrl: "logos", pageName: "logos", isExperimental: false },
-          {
-            pageUrl: "logos/search",
-            pageName: "search logos",
-            isExperimental: false,
-          },
-          {
-            pageUrl: "logos/product-search",
-            pageName: "search product logos",
-            isExperimental: true,
-          },
-          {
-            pageUrl: "logos/deep-search",
-            pageName: "deep search logo",
-            isExperimental: true,
-          },
-          {
-            pageUrl: "dashboard",
-            pageName: "dashboard",
-            isExperimental: false,
-          },
-          { pageUrl: "insights", pageName: "insights", isExperimental: false },
-        ].map(({ pageUrl, pageName, isExperimental }) => (
-          <FormControlLabel
-            key={pageUrl}
-            checked={visiblePages[pageUrl] ?? false}
-            onChange={handleVisiblePagesChange(pageUrl)}
-            control={<Switch />}
-            label={`${t("settings.dev_page_toggle", { name: pageName })}${
-              isExperimental ? " (🚧 experimental)" : ""
-            }`}
-            labelPlacement="end"
-            sx={{
-              marginInlineStart: `${2 * (pageUrl.split("/").length - 1)}px`,
-            }}
-          />
-        ))}
-      {/* color mode */}
-      <Button
-        sx={{ ml: 1 }}
-        onClick={colorMode.toggleColorMode}
-        color="inherit"
-      >
-        {theme.palette.mode} mode
-        {theme.palette.mode === "dark" ? (
-          <Brightness7Icon sx={{ ml: 2 }} />
-        ) : (
-          <Brightness4Icon sx={{ ml: 2 }} />
-        )}
-      </Button>
-
-      <div>
-        <MuiLink
-          href="https://github.com/openfoodfacts/hunger-games/issues"
-          target="_blank"
+    <>
+      <Stack sx={{ my: 5, mx: 2, alignItems: "flex-start" }} spacing={4}>
+        <Typography variant="h4" component="h2" sx={{ mb: 5 }}>
+          {t("settings.settings")}
+        </Typography>
+        <TextField
+          select
+          sx={{ minWidth: 150 }}
+          label={t("settings.language")}
+          value={language}
+          onChange={handleLangChange}
         >
-          {t("settings.reportIssue")}
-        </MuiLink>
-      </div>
+          {Object.keys(messages).map((lang) => (
+            <MenuItem key={lang} value={lang}>
+              {lang.toUpperCase()}
+            </MenuItem>
+          ))}
+        </TextField>
+
+        <div>
+          <p>{t("settings.dev_mode_title")}</p>
+          <FormControlLabel
+            checked={devMode}
+            onChange={handleDevModeChange}
+            control={<Switch />}
+            label={t("settings.dev_mode_label")}
+            labelPlacement="end"
+          />
+        </div>
+        {devMode &&
+          [
+            { pageUrl: "logos", pageName: "logos", isExperimental: false },
+            {
+              pageUrl: "logos/search",
+              pageName: "search logos",
+              isExperimental: false,
+            },
+            {
+              pageUrl: "logos/product-search",
+              pageName: "search product logos",
+              isExperimental: true,
+            },
+            {
+              pageUrl: "logos/deep-search",
+              pageName: "deep search logo",
+              isExperimental: true,
+            },
+            {
+              pageUrl: "dashboard",
+              pageName: "dashboard",
+              isExperimental: false,
+            },
+            {
+              pageUrl: "insights",
+              pageName: "insights",
+              isExperimental: false,
+            },
+          ].map(({ pageUrl, pageName, isExperimental }) => (
+            <FormControlLabel
+              key={pageUrl}
+              checked={visiblePages[pageUrl] ?? false}
+              onChange={handleVisiblePagesChange(pageUrl)}
+              control={<Switch />}
+              label={`${t("settings.dev_page_toggle", { name: pageName })}${
+                isExperimental ? " (🚧 experimental)" : ""
+              }`}
+              labelPlacement="end"
+              sx={{
+                marginInlineStart: `${2 * (pageUrl.split("/").length - 1)}px`,
+              }}
+            />
+          ))}
+        {/* color mode */}
+        <Button
+          sx={{ ml: 1 }}
+          onClick={colorMode.toggleColorMode}
+          color="inherit"
+        >
+          {theme.palette.mode} mode
+          {theme.palette.mode === "dark" ? (
+            <Brightness7Icon sx={{ ml: 2 }} />
+          ) : (
+            <Brightness4Icon sx={{ ml: 2 }} />
+          )}
+        </Button>
+
+        <div>
+          <MuiLink
+            href="https://github.com/openfoodfacts/hunger-games/issues"
+            target="_blank"
+          >
+            {t("settings.reportIssue")}
+          </MuiLink>
+        </div>
+      </Stack>
       <Divider sx={{ width: "100%" }} light />
       <FooterWithLinks />
-    </Stack>
+    </>
   );
 }

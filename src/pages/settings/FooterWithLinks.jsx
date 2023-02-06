@@ -5,6 +5,9 @@ import WindowIcon from "@mui/icons-material/Window";
 import AndroidIcon from "@mui/icons-material/Android";
 import FooterButtons from "./FooterButtons";
 import Donate from "./Donate";
+import JoinTheCommunity from "./JoinTheCommunity";
+import DiscoverTheProject from "./DiscoverTheProject";
+import OpenFoodFacts from "./OpenFoodFacts";
 
 const footerLinks = [
   {
@@ -33,25 +36,14 @@ const footerLinks = [
   },
 ];
 
-const socialMedia = [
-  {
-    platform: "Twitter",
-    link: "https://twitter.com/openfoodfacts",
-  },
-  {
-    platform: "Instagram",
-    link: "https://www.instagram.com/open.food.facts/",
-  },
-  {
-    platform: "facebook",
-    link: "https://www.facebook.com/OpenFoodFacts",
-  },
-];
-
 const FooterWithLinks = () => {
   return (
     <>
+      <br />
+      {/* Donate to open food facts */}
       <Donate />
+      <br />
+      {/*App download links for different platforms*/}
       <Box
         sx={{
           width: "100%",
@@ -73,6 +65,21 @@ const FooterWithLinks = () => {
           );
         })}
       </Box>
+      <br />
+      <br />
+      <Box
+        sx={{
+          mx: 2,
+          display: "flex",
+          flexDirection: { xs: "column", sm: "row" },
+          gap: { xs: "10px", sm: "" },
+        }}
+      >
+        <JoinTheCommunity />
+        <DiscoverTheProject />
+      </Box>
+      <br />
+      <OpenFoodFacts />
     </>
   );
 };

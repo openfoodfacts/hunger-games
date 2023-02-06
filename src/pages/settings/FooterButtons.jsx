@@ -8,7 +8,13 @@ const FooterButtons = (props) => {
       href={url}
       target="_blank"
       variant="contained"
-      sx={{ width: "200px", pr: "1", pl: "0", backgroundColor: "#a08d84" }}
+      sx={{
+        width: "200px",
+        pr: "1",
+        pl: "0",
+        backgroundColor: "#a08d84",
+        "&:hover": { backgroundColor: "#887369" },
+      }}
     >
       <IconButton>{icon}</IconButton>
       <Stack>
