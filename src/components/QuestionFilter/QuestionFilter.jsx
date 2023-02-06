@@ -16,7 +16,6 @@ import Radio from "@mui/material/Radio";
 import Dialog from "@mui/material/Dialog";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
-import { DialogActions, DialogContent } from "@mui/material";
 
 import IconButton from "@mui/material/IconButton";
 import EditIcon from "@mui/icons-material/Edit";
@@ -27,7 +26,7 @@ import { useTranslation } from "react-i18next";
 import LabelFilter from "./LabelFilter";
 import brands from "../../assets/brands.json";
 import { countryNames, insightTypesNames, campagnes } from "./const";
-import { capitaliseName } from "../../utils";
+import { DialogActions, DialogContent } from "@mui/material";
 
 const getChipsParams = (filterState, setFilterState, t) =>
   [
@@ -45,9 +44,9 @@ const getChipsParams = (filterState, setFilterState, t) =>
     {
       key: "countryFilter",
       display: !!filterState?.countryFilter,
-      label: `${t("questions.filters.short_label.country")}: ${capitaliseName(
+      label: `${t("questions.filters.short_label.country")}: ${
         filterState?.countryFilter
-      )}`,
+      }`,
       onDelete: () => {
         setFilterState((state) => ({ ...state, countryFilter: "" }));
       },
@@ -61,6 +60,16 @@ const getChipsParams = (filterState, setFilterState, t) =>
       }`,
       onDelete: () => {
         setFilterState((state) => ({ ...state, brandFilter: "" }));
+      },
+    },
+    {
+      key: "packagingFilter",
+      display: !!filterState?.packagingFilter,
+      label: `${t("questions.filters.short_label.packaging")}: ${
+        filterState?.packagingFilter
+      }`,
+      onDelete: () => {
+        setFilterState((state) => ({ ...state, packagingFilter: "" }));
       },
     },
     {
@@ -114,6 +123,9 @@ export const QuestionFilter = ({
   const [innerBrandFilter, setInnerBrandFilter] = React.useState(
     filterState?.brandFilter
   );
+  const [innerPackagingFilter, setInnerPackagingFilter] = React.useState(
+    filterState?.packagingFilter
+  );
   const [innerSortByPopularity, setInnerSortByPopularity] = React.useState(
     filterState?.sortByPopularity
   );
@@ -126,6 +138,7 @@ export const QuestionFilter = ({
     setInnerValueTag(filterState?.valueTag);
     setInnerCountryFilter(filterState?.countryFilter);
     setInnerBrandFilter(filterState?.brandFilter);
+    setInnerPackagingFilter(filterState?.packagingFilter);
     setInnerSortByPopularity(filterState?.sortByPopularity);
     setInnerCampaign(filterState?.campaign);
     setIsOpen(false);
@@ -136,6 +149,7 @@ export const QuestionFilter = ({
       valueTag: innerValueTag,
       countryFilter: innerCountryFilter,
       brandFilter: innerBrandFilter,
+      packagingFilter:innerPackagingFilter,
       sortByPopularity: innerSortByPopularity,
       campaign: innerCampaign,
     });
@@ -163,6 +177,11 @@ export const QuestionFilter = ({
       prevInnerBrandFilter !== filterState?.brandFilter
         ? filterState?.brandFilter
         : prevInnerBrandFilter
+    );
+    setInnerPackagingFilter((prevInnerPackagingFilter) =>
+    prevInnerPackagingFilter !== filterState?.packagingFilter
+        ? filterState?.packagingFilter
+        : prevInnerPackagingFilter
     );
     setInnerSortByPopularity((prevInnerSortByPopularity) =>
       prevInnerSortByPopularity !== filterState?.sortByPopularity
@@ -303,7 +322,7 @@ export const QuestionFilter = ({
               value={innerCountryFilter}
               onChange={(event, newValue) => setInnerCountryFilter(newValue)}
               options={countryNames}
-              getOptionLabel={(countryTag) => capitaliseName(countryTag)}
+              getOptionLabel={(countryTag) => countryTag.slice(3)}
               renderInput={(params) => (
                 <TextField
                   {...params}

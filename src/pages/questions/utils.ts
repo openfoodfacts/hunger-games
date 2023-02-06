@@ -6,6 +6,7 @@ import robotoff from "../../robotoff";
 
 export const ADDITIONAL_INFO_TRANSLATION = {
   brands: "brands",
+  packaging: "packaging",
   ingredientsText: "ingredients",
   countriesTags: "countries",
   categories: "categories",
@@ -127,6 +128,7 @@ export const useProductData = (barcode) => {
           code: barcode,
           productName: product?.product_name || "",
           brands: product?.brands || "?",
+          packaging: product?.packaging || "?",
           ingredientsText: product?.ingredients_text || "?",
           countriesTags: product?.countries_tags
             ? `${product?.countries_tags?.join?.(", ")}.`

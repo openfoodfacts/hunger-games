@@ -2,6 +2,7 @@ export const DEFAULT_FILTER_STATE = {
   insightType: "brand",
   brandFilter: "",
   countryFilter: "",
+  packagingFilter: "",
   sortByPopularity: true,
   valueTag: "",
   campaign: "",
@@ -32,11 +33,13 @@ export const insightTypesNames = {
   category: "category",
   brand: "brand",
   product_weight: "product_weight",
+  packaging:"packaging"
 };
 
 export const key2urlParam = {
   valueTag: "value_tag",
   brandFilter: "brand",
+  packagingFilter:"packaging",
   countryFilter: "country",
   insightType: "type",
   sortByPopularity: "sorted",

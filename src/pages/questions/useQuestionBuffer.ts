@@ -183,6 +183,7 @@ export const useQuestionBuffer = (
     insightType,
     valueTag,
     brandFilter,
+    packagingFilter,
     countryFilter,
     campaign,
     predictor,
@@ -201,6 +202,7 @@ export const useQuestionBuffer = (
     valueTag,
     brandFilter,
     countryFilter,
+    packagingFilter,
     campaign,
     predictor,
   });
@@ -226,6 +228,7 @@ export const useQuestionBuffer = (
       filteringRef.current.sortByPopularity !== sortByPopularity ||
       filteringRef.current.insightType !== insightType ||
       filteringRef.current.brandFilter !== brandFilter ||
+      filteringRef.current.packagingFilter !== packagingFilter ||
       filteringRef.current.countryFilter !== countryFilter ||
       filteringRef.current.valueTag !== valueTag ||
       filteringRef.current.campaign !== campaign ||
@@ -237,6 +240,7 @@ export const useQuestionBuffer = (
         valueTag,
         brandFilter,
         countryFilter,
+        packagingFilter,
         campaign,
         predictor,
       };
@@ -247,6 +251,7 @@ export const useQuestionBuffer = (
     insightType,
     valueTag,
     brandFilter,
+    packagingFilter,
     countryFilter,
     campaign,
     predictor,

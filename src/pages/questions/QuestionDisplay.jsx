@@ -10,7 +10,7 @@ import Typography from "@mui/material/Typography";
 import LinkIcon from "@mui/icons-material/Link";
 import DeleteIcon from "@mui/icons-material/Delete";
 import DoneIcon from "@mui/icons-material/Done";
-import CircularProgress from "@mui/material/CircularProgress";
+import QuestionMarkIcon from '@mui/icons-material/QuestionMark';
 import MuiLink from "@mui/material/Link";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
@@ -176,15 +176,7 @@ const QuestionDisplay = ({
     );
   }
   if (question === null) {
-    return (
-      <Box sx={{ width: "100%", textAlign: "center", py: 10, m: 0 }}>
-        <Typography variant="subtitle1">
-          {t("questions.please_wait_while_we_fetch_the_question")}
-        </Typography>
-        <br />
-        <CircularProgress />
-      </Box>
-    );
+    return <p>loading</p>;
   }
   return (
     <Stack
@@ -295,7 +287,14 @@ const QuestionDisplay = ({
           </Typography>
         )}
       </Box>
-      <Stack direction="row" justifyContent="center" spacing={2} sx={{ mb: 1 }}>
+      <Stack 
+        // direction="row" 
+        justifyContent="center" 
+        direction={{ xs: 'column', sm: 'row' }}
+        spacing={{ xs: 2, sm: 4, md: 8 }}
+        // spacing={2} 
+        sx={{ mb: 1 }}
+      >
         <Button
           onClick={() =>
             answerQuestion({
@@ -305,12 +304,46 @@ const QuestionDisplay = ({
           }
           color="error"
           variant="contained"
-          size="large"
-          sx={{ display: "flex", flexDirection: "column", flexGrow: 1 }}
+          size="medium"
+          sx={{ py: "1rem" }}
+          style={{
+        
+        maxWidth: '300px',
+        // margin: 'auto',
+        marginLeft: '5%',
+
+        
+    }}
+          // sx={{ display: "flex", flexDirection: "column", flexGrow: 1 }}
         >
           <DeleteIcon />
           {t("questions.no")} ({shortcuts.no})
         </Button>
+         <Button
+        onClick={() =>
+          answerQuestion({
+            value: SKIPPED_INSIGHT,
+            insightId: question?.insight_id,
+          })
+        }
+        color="primary"
+        variant="contained"
+        size="medium"
+        autoFocus
+        sx={{ py: "1rem" }}
+        style={{
+        
+        maxWidth: '300px',
+        // margin: 'auto',
+        marginLeft: '5%',
+        backgroundColor: "#2196f3",
+        
+    }}
+      >
+              <QuestionMarkIcon />
+
+        {t("questions.skip")} ({shortcuts.skip})
+      </Button>
         <Button
           onClick={() =>
             answerQuestion({
@@ -321,27 +354,22 @@ const QuestionDisplay = ({
           startIcon={<DoneIcon />}
           color="success"
           variant="contained"
-          size="large"
-          sx={{ display: "flex", flexDirection: "column", flexGrow: 1 }}
+          size="medium"
+          // sx={{ display: "flex", flexDirection: "column", flexGrow: 1 }}
+          sx={{ py: "1rem" }}
+          style={{
+        
+        maxWidth: '300px',
+        // margin: 'auto',
+        marginLeft: '5%'
+        
+    }}
+
         >
           {t("questions.yes")} ({shortcuts.yes})
         </Button>
       </Stack>
-      <Button
-        onClick={() =>
-          answerQuestion({
-            value: SKIPPED_INSIGHT,
-            insightId: question?.insight_id,
-          })
-        }
-        color="secondary"
-        variant="contained"
-        size="medium"
-        autoFocus
-        sx={{ py: "1rem" }}
-      >
-        {t("questions.skip")} ({shortcuts.skip})
-      </Button>
+     
     </Stack>
   );
 };

@@ -15,9 +15,28 @@ const cleanName = (name) =>
     .toLowerCase()
     .replace(/[^0-9a-z]/gi, " ");
 
-const useOptionFetching = (insightType, inputValue, lang) => {
+const LabelFilter = (props) => {
+  const { showKey, onChange, value, insightType, fullWidth, ...other } = props;
   const [options, setOptions] = React.useState([]);
+  const [innerValue, setInnerValue] = React.useState(null);
+  const [inputValue, setInputValue] = React.useState("");
   const fetchedKeysRef = React.useRef({});
+
+  const lang = getLang();
+
+  React.useEffect(() => {
+    setInnerValue((prev) => {
+      if (prev === value || prev?.key === value) {
+        return prev;
+      }
+      const solution = options.find((option) => option.key === value);
+
+      if (solution) {
+        return solution;
+      }
+      return value;
+    });
+  }, [value, options]);
 
   React.useEffect(() => {
     setOptions([]);
@@ -25,11 +44,7 @@ const useOptionFetching = (insightType, inputValue, lang) => {
   }, [insightType]);
 
   React.useEffect(() => {
-    let keyToFetch = inputValue.toLowerCase();
-    if (/^[a-z][a-z]:/.test(keyToFetch)) {
-      keyToFetch = keyToFetch.slice(3);
-    }
-    keyToFetch = keyToFetch.replace(/[^0-9a-z]/gi, "-");
+    const keyToFetch = inputValue.toLowerCase().replace(/[^0-9a-z]/gi, "-");
 
     [
       keyToFetch.slice(0, 1),
@@ -63,33 +78,6 @@ const useOptionFetching = (insightType, inputValue, lang) => {
     });
   }, [inputValue, insightType, lang]);
 
-  return options;
-};
-
-const LabelFilter = (props) => {
-  const { showKey, onChange, value, insightType, fullWidth, ...other } = props;
-
-  const [innerValue, setInnerValue] = React.useState(null);
-  const [inputValue, setInputValue] = React.useState("");
-
-  const lang = getLang();
-
-  const options = useOptionFetching(insightType, inputValue, lang);
-
-  React.useEffect(() => {
-    setInnerValue((prev) => {
-      if (typeof prev === "object" && prev?.key === value) {
-        return prev;
-      }
-      const solution = options.find((option) => option.key === value);
-
-      if (solution) {
-        return solution;
-      }
-      return value;
-    });
-  }, [value, options]);
-
   return (
     <Autocomplete
       fullWidth={fullWidth}
@@ -101,16 +89,6 @@ const LabelFilter = (props) => {
       onInputChange={(e, newInputValue, reason) => {
         setInputValue(newInputValue);
       }}
-      onBlur={() => {
-        const isSelectedValue =
-          typeof innerValue === "string"
-            ? innerValue === inputValue
-            : innerValue.name === inputValue;
-        if (!isSelectedValue) {
-          setInnerValue(inputValue);
-          onChange(inputValue);
-        }
-      }}
       inputValue={inputValue}
       value={innerValue}
       options={options}
@@ -119,9 +97,7 @@ const LabelFilter = (props) => {
         <TextField
           {...params}
           {...other}
-          helperText={
-            showKey && (innerValue?.key || `⚠️ unknown: "${innerValue}"`)
-          }
+          helperText={showKey && innerValue?.key}
         />
       )}
       filterOptions={(options, state) => {
