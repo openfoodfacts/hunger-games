@@ -204,7 +204,7 @@ const ResponsiveAppBar = () => {
                 if (page.url) {
                   return (
                     <MenuItem
-                      key={page.translationKey}
+                    key={`Mobile-${page.translationKey}`}
                       onClick={handleCloseNavMenu}
                       component={Link}
                       to={`/${page.url}`}
