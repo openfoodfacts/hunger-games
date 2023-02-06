@@ -13115,10 +13115,10 @@ react@^18.2.0:
   dependencies:
     loose-envify "^1.1.0"
 
-reactour@^1.18.7:
-  version "1.18.7"
-  resolved "https://registry.yarnpkg.com/reactour/-/reactour-1.18.7.tgz#86a61869890bc3444c2bf412d30833eb85352525"
-  integrity sha512-kkXy4h5+fieNPzrPYdWiLj6afl+xH2NQw4En9XJD9EwCIGsRmfcppyJ1xwqJDC6JRhPttf+5wUIsUoLSOlk/Ag==
+reactour@^1.19.0:
+  version "1.19.0"
+  resolved "https://registry.yarnpkg.com/reactour/-/reactour-1.19.0.tgz#b8f98dbb00f2b366a658b6533683c25660732050"
+  integrity sha512-KHWX46yRXgQX1iD+cS/qI33VYH5jFgZeRxXIk4yJyIAGsTrDTwPeFFa6m7Pv+WX/CoEfggGfdSi2LPAkkuOkOg==
   dependencies:
     "@rooks/use-mutation-observer" "4.11.2"
     classnames "2.3.1"
