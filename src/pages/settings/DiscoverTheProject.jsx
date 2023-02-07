@@ -1,46 +1,48 @@
 import { Button, Chip, Divider, Typography } from "@mui/material";
 import { Box } from "@mui/system";
+import { useTranslation } from "react-i18next";
 
 const discover = [
   {
-    text: "Who we are",
+    text: "settings.Who_we_are",
     url: "https://world.openfoodfacts.org/who-we-are",
   },
   {
-    text: "Vision, Mission, Values and Programs",
+    text: "settings.Vision_Mission_Values_and_Programs",
     url: "https://world.openfoodfacts.org/open-food-facts-vision-mission-values-and-programs",
   },
   {
-    text: "FAQs",
+    text: "settings.FAQS",
     url: "https://world.openfoodfacts.org/faq",
   },
   {
-    text: "Open Food Facts blog",
+    text: "settings.open_Food_Facts_blog",
     url: "https://blog.openfoodfacts.org/en/",
   },
   {
-    text: "Press",
+    text: "settings.Press",
     url: "https://world.openfoodfacts.org/press",
   },
   {
-    text: "Open Food Facts wiki (en)",
+    text: "settings.Open_Food_Facts_wiki",
     url: "https://wiki.openfoodfacts.org/",
   },
   {
-    text: "Translators",
+    text: "settings.Translators",
     url: "https://world.openfoodfacts.org/cgi/top_translators.pl",
   },
   {
-    text: "Partners",
+    text: "settings.Partners",
     url: "https://world.openfoodfacts.org/partners",
   },
   {
-    text: "Open Beauty Facts-Cosmétiques",
+    text: "settings.Open_Beauty_Facts",
     url: "https://world-fr.openbeautyfacts.org/",
   },
 ];
 
 const DiscoverTheProject = () => {
+  const { t } = useTranslation();
   return (
     <Box sx={{ width: { xs: "100%", sm: "50%" } }}>
       <Divider light>
@@ -66,7 +68,7 @@ const DiscoverTheProject = () => {
               href={content.url}
               target="_blank"
             >
-              <Typography noWrap>{content.text}</Typography>
+              <Typography noWrap>{t(content.text)}</Typography>
             </Button>
           );
         })}

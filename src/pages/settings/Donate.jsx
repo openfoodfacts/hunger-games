@@ -1,8 +1,10 @@
 import { Button, Typography } from "@mui/material";
 import VolunteerActivismIcon from "@mui/icons-material/VolunteerActivism";
 import { Box } from "@mui/system";
+import { useTranslation } from "react-i18next";
 
 const Donate = () => {
+  const { t } = useTranslation();
   return (
     <Box
       sx={{
@@ -36,17 +38,14 @@ const Donate = () => {
           variant="outlined"
           startIcon={<VolunteerActivismIcon />}
         >
-          Donate
+          {t("settings.donate")}
         </Button>
       </div>
       <Typography textAlign={{ xs: "center", md: "left" }}>
-        Open Food Facts is a collaborative project built by tens of thousands of
-        volunteers and managed by a non-profit organization with 8 employees. We
-        need your donations to fund the Open Food Facts 2023 budget and to
-        continue to develop the project.
+        {t("settings.text1")}
         <br />
         <br />
-        <Typography variant="h6">Thank you ❤️</Typography>
+        <Typography variant="h6">{t("settings.thank_you")} ❤️</Typography>
       </Typography>
     </Box>
   );

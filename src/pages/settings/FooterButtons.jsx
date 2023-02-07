@@ -9,7 +9,7 @@ const FooterButtons = (props) => {
       target="_blank"
       variant="contained"
       sx={{
-        width: "200px",
+        width: "220px",
         pr: "1",
         pl: "0",
         backgroundColor: "#a08d84",

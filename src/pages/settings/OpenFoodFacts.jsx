@@ -1,8 +1,9 @@
-import { Box, IconButton, Typography } from "@mui/material";
+import { Box, Button, IconButton, Typography } from "@mui/material";
 import EmailIcon from "@mui/icons-material/Email";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import FacebookIcon from "@mui/icons-material/Facebook";
+import { useTranslation } from "react-i18next";
 
 const socialMedia = [
   {
@@ -24,6 +25,7 @@ const socialMedia = [
 ];
 
 const OpenFoodFacts = () => {
+  const { t } = useTranslation();
   return (
     <Box
       sx={(theme) => ({
@@ -35,7 +37,7 @@ const OpenFoodFacts = () => {
         pb: "20px",
       })}
     >
-      <Box
+      <Button
         sx={{ cursor: "pointer" }}
         href="https://world.openfoodfacts.org/"
         target="_blank"
@@ -46,10 +48,9 @@ const OpenFoodFacts = () => {
           src="/logo192.png"
           alt="openFoodFacts"
         />
-      </Box>
+      </Button>
       <Typography textAlign={"center"} variant="caption">
-        A collaborative, free and open database of food products from around the
-        world.
+        {t("settings.text2")}
       </Typography>
       <Box>
         {socialMedia.map((media) => {
