@@ -51,7 +51,6 @@ const pages = [
       {
         url: "logos/product-search",
         translationKey: "menu.logos-product-search",
-        devModeOnly: true,
       },
       {
         url: "logos/deep-search",

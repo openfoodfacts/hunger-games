@@ -15,7 +15,6 @@ import { useTheme } from "@mui/material/styles";
 
 import { useTranslation } from "react-i18next";
 
-import DevModeContext from "../../contexts/devMode";
 import ColorModeContext from "../../contexts/colorMode";
 import { localSettings, localSettingsKeys } from "../../localeStorageManager";
 
@@ -25,23 +24,6 @@ export default function Settings() {
   const colorMode = React.useContext(ColorModeContext);
 
   const [language, setLanguage] = React.useState(i18n.language);
-
-  const { devMode, setDevMode, visiblePages, setVisiblePages } =
-    React.useContext(DevModeContext);
-
-  const handleDevModeChange = (event) => {
-    localSettings.update(localSettingsKeys.isDevMode, event.target.checked);
-    setDevMode(event.target.checked);
-  };
-
-  const handleVisiblePagesChange = (pageUrl) => (event) => {
-    const newVisiblePages = {
-      ...visiblePages,
-      [pageUrl]: event.target.checked,
-    };
-    localSettings.update(localSettingsKeys.visiblePages, newVisiblePages);
-    setVisiblePages(newVisiblePages);
-  };
 
   const handleLangChange = (e) => {
     localSettings.update(localSettingsKeys.language, e.target.value);
@@ -71,53 +53,11 @@ export default function Settings() {
       <div>
         <p>{t("settings.dev_mode_title")}</p>
         <FormControlLabel
-          checked={devMode}
-          onChange={handleDevModeChange}
           control={<Switch />}
           label={t("settings.dev_mode_label")}
           labelPlacement="end"
         />
       </div>
-      {devMode &&
-        [
-          { pageUrl: "logos", pageName: "logos", isExperimental: false },
-          {
-            pageUrl: "logos/search",
-            pageName: "search logos",
-            isExperimental: false,
-          },
-          {
-            pageUrl: "logos/product-search",
-            pageName: "search product logos",
-            isExperimental: true,
-          },
-          {
-            pageUrl: "logos/deep-search",
-            pageName: "deep search logo",
-            isExperimental: true,
-          },
-          {
-            pageUrl: "dashboard",
-            pageName: "dashboard",
-            isExperimental: false,
-          },
-          { pageUrl: "insights", pageName: "insights", isExperimental: false },
-        ].map(({ pageUrl, pageName, isExperimental }) => (
-          <FormControlLabel
-            key={pageUrl}
-            checked={visiblePages[pageUrl] ?? false}
-            onChange={handleVisiblePagesChange(pageUrl)}
-            control={<Switch />}
-            label={`${t("settings.dev_page_toggle", { name: pageName })}${
-              isExperimental ? " (🚧 experimental)" : ""
-            }`}
-            labelPlacement="end"
-            sx={{
-              marginInlineStart: `${2 * (pageUrl.split("/").length - 1)}px`,
-            }}
-          />
-        ))}
-      {/* color mode */}
       <Button
         sx={{ ml: 1 }}
         onClick={colorMode.toggleColorMode}
