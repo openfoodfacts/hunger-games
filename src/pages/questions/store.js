@@ -47,7 +47,25 @@ export const questionBuffer = createSlice({
       predictor: "universal-logo-detector",
     },
   },
-  reducers: {},
+  reducers: {
+    updateFilter: {
+      reducer: (state, action) => {
+        if (
+          Object.keys(action.filterState).every(
+            (key) => state.filterState[key] === action.filterState[key]
+          )
+        ) {
+          // Early return if new state is similar to the current one
+          return;
+        }
+        // Update filter and reset fetched data
+        state.filterState = { ...state.filterState, ...action.filterState };
+        state.page = 1;
+        state.remainingQuestions = [];
+        state.fetchCompletted = false;
+      },
+    },
+  },
   extraReducers: (builder) => {
     builder
       .addCase(fetchQuestions.fulfilled, (state, { payload }) => {
