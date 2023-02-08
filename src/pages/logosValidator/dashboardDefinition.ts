@@ -312,8 +312,8 @@ const UNTYPED_LOGOS = {
   },
   "en:french-meat": {
     tag: "en:french-meat",
-    label: "Viande Française",
-    logo: "https://static.openfoodfacts.org/images/lang/en/labels/french-meat.90x90.svg",
+    label: "Viande de France",
+    logo: "https://robotoff.openfoodfacts.org/api/v1/images/crop?image_url=https://static.openfoodfacts.org/images/products/405/648/951/4367/1.jpg&y_min=0.559839547&x_min=0&y_max=0.683030486&x_max=0.101186767",
     type: "label",
   },
   "en:french-poultry": {
@@ -379,19 +379,19 @@ const UNTYPED_LOGOS = {
   "fr:lapin-francais": {
     tag: "fr:lapin-francais",
     label: "Lapin Français",
-    logo: "https://static.openfoodfacts.org/images/lang/fr/labels/lapin-de-france.90x90.png",
+    logo: "https://robotoff.openfoodfacts.org/api/v1/images/crop?image_url=https://static.openfoodfacts.org/images/products/327/782/007/7636/3.jpg&y_min=0.32363161444664&x_min=0.16655027866363525&y_max=0.42151492834091187&x_max=0.3072948455810547",
     type: "label",
   },
   "fr:french-duck": {
-    tag: "fr:french-duck",
+    tag: "en:french-duck",
     label: "Canard Français",
-    logo: "https://static.openfoodfacts.org/images/lang/fr/labels/french-duck.90x90.png",
+    logo: "https://robotoff.openfoodfacts.org/api/v1/images/crop?image_url=https://static.openfoodfacts.org/images/products/223/912/602/4012/1.jpg&y_min=0.39972132444381714&x_min=0.5457490086555481&y_max=0.6620794534683228&x_max=0.7547634243965149",
     type: "label",
   },
   "fr:viande-de-veau-francais": {
     tag: "fr:viande-de-veau-francais",
     label: "Viande de veau français",
-    logo: "https://static.openfoodfacts.org/images/lang/fr/labels/viande-de-veau-francais.90x90.png",
+    logo: "https://robotoff.openfoodfacts.org/api/v1/images/crop?image_url=https://static.openfoodfacts.org/images/products/240/904/207/3603/1.jpg&y_min=0.46728312969207764&x_min=0.2397184520959854&y_max=0.61774080991745&x_max=0.3789959251880646",
     type: "label",
   },
   "fr:farine-de-sarrasin-francais": {
@@ -832,13 +832,13 @@ const UNTYPED_LOGOS = {
   "en:fsc": {
     tag: "en:fsc",
     label: "FSC",
-    logo: "https://static.openfoodfacts.org/images/lang/en/labels/fsc.73x90.svg",
+    logo: "https://static.openfoodfacts.org/images/lang/en/labels/fsc.90x90.svg",
     type: "label",
   },
   "en:fsc-mix": {
     tag: "en:fsc-mix",
     label: "FSC-Mix",
-    logo: "https://static.openfoodfacts.org/images/lang/en/labels/fsc.73x90.svg",
+    logo: "https://robotoff.openfoodfacts.org/api/v1/images/crop?image_url=https://static.openfoodfacts.org/images/products/871/046/631/5021/4.jpg&y_min=0.550661862&x_min=0.588510275&y_max=0.899833739&x_max=0.899809897",
     type: "label",
   },
   "en:pefc": {
@@ -1859,7 +1859,7 @@ const UNTYPED_LOGOS = {
   "fr:acier recyclable": {
     tag: "fr:acier recyclable",
     label: "Acier recyclable",
-    logo: "",
+    logo: "https://robotoff.openfoodfacts.org/api/v1/images/crop?image_url=https://static.openfoodfacts.org/images/products/306/143/500/2653/2.jpg&y_min=0.742139757&x_min=0.318044096&y_max=0.799719751&x_max=0.565202",
     type: "packaging",
   },
   "en:resy": {
@@ -1891,7 +1891,7 @@ const UNTYPED_LOGOS = {
   "en:halal-food-council-of-europe": {
     tag: "en:halal-food-council-of-europe",
     label: "Halal Food Council of Europe",
-    logo: "https://static.openfoodfacts.org/images/lang/en/labels/halal-food-council-of-europe.188x90.svg",
+    logo: "https://robotoff.openfoodfacts.org/api/v1/images/crop?image_url=https://static.openfoodfacts.org/images/products/541/143/184/5798/2.jpg&y_min=0.730799258&x_min=0.420355827&y_max=0.883162439&x_max=0.582387924",
     type: "label",
   },
   "fr:societe-francaise-de-controle-de-viande-halal": {
@@ -2470,25 +2470,25 @@ const UNTYPED_LOGOS = {
   "en:crossed-grain-symbol": {
     tag: "en:crossed-grain-symbol",
     label: "Crossed Grain Symbol",
-    logo: "",
+    logo: "https://robotoff.openfoodfacts.org/api/v1/images/crop?image_url=https://static.openfoodfacts.org/images/products/800/869/800/2599/23.jpg&y_min=0.414355636&x_min=0.669714153&y_max=0.510751486&x_max=0.715596497",
     type: "label",
   },
   "en:dzg-gluten-free": {
     tag: "en:dzg-gluten-free",
     label: "DZG Gluten free",
-    logo: "",
+    logo: "https://robotoff.openfoodfacts.org/api/v1/images/crop?image_url=https://static.openfoodfacts.org/images/products/19542591/1.jpg&y_min=0.52075839&x_min=0.704420388&y_max=0.644922256&x_max=0.838680744",
     type: "label",
   },
   "en:face": {
     tag: "en:face",
     label: "FACE",
-    logo: "",
+    logo: "https://robotoff.openfoodfacts.org/api/v1/images/crop?image_url=https://static.openfoodfacts.org/images/products/800/869/801/4035/3.jpg&y_min=0.6758226156234741&x_min=0.061119068413972855&y_max=0.7821765542030334&x_max=0.19836480915546417",
     type: "label",
   },
   "fr:afdiag": {
     tag: "fr:afdiag",
     label: "Afdiag",
-    logo: "",
+    logo: "https://robotoff.openfoodfacts.org/api/v1/images/crop?image_url=https://static.openfoodfacts.org/images/products/350/757/010/0132/1.jpg&y_min=0.635474681854248&x_min=0.3560321033000946&y_max=0.7346380352973938&x_max=0.4571381211280823",
     type: "label",
   },
 };
