@@ -26,7 +26,7 @@
     "saved_filters": "Збережені фільтри",
     "contribution_modal": {
       "title": "Ваш внесок має значення",
-      "information": "Hunger Games is an effort to leverage the results of our OCR. When you use Hunger Games by Open Food Facts, you improve our entire database which helps the community make better food choices. We gather your annotations and use them to make Open Food Facts more accurate and effecient.",
+      "information": "Голодні ігри - це спроба використати результати нашого розпізнавання тексту. Коли ви використовуєте \"Голодні ігри\", ви покращуєте всю нашу базу даних, яка допомагає спільноті робити кращий вибір продуктів харчування. Ми збираємо ваші анотації і використовуємо їх, щоб зробити додаток більш точними та ефективними.",
       "thank_you": "Дякуємо, що допомагаєте нам покращувати Open Food Facts, щоб більше людей могли легко ним користуватися."
     },
     "statistics": {
@@ -76,15 +76,15 @@
     "remaining_annotations": "Запитання, що залишилися",
     "annotated_annotations": "Коментарі",
     "filters": {
-      "active_filter_number": "+{{count}} filters",
-      "active_filter_number_one": "+{{count}} filter",
-      "active_filter_number_zero": "no filter",
+      "active_filter_number": "+{{count}} фільтрів",
+      "active_filter_number_one": "+{{count}} фільтр",
+      "active_filter_number_zero": "без фільтрів",
       "short_label": {
         "value": "вартість",
         "country": "країна",
         "brand": "виробник",
         "popularity": "поширеність",
-        "campaign": "camp"
+        "campaign": "табір"
       },
       "long_label": {
         "type": "Тип запитання",
@@ -98,7 +98,7 @@
       "placeholders": {
         "value": "Змінна (fanta, en:organic,...)",
         "brand": "Ашан, Данон, Герта, тощо",
-        "campaign": "Annotation campaigns"
+        "campaign": "Анотаційні кампанії"
       },
       "actions": {
         "edit": "Редагувати фільтри",
@@ -114,24 +114,25 @@
     "log_in": "Ім'я користувача",
     "sign_up": "Зареєструватися",
     "login_title": "Зробіть свою анотацію важливою",
-    "login_description": "Наразі ви не ввійшли в Open Food Facts. Щоб ваші відповіді були безпосередньо застосовані до продуктів і пов’язані з вашим обліковим записом, увійдіть у свій обліковий запис Open Food Facts або створіть його"
+    "login_description": "Наразі ви не ввійшли в Open Food Facts. Щоб ваші відповіді були безпосередньо застосовані до продуктів і пов’язані з вашим обліковим записом, увійдіть у свій обліковий запис Open Food Facts або створіть його",
+    "please_wait_while_we_fetch_the_question": "Please wait while we fetch the question!"
   },
   "menu": {
     "title": "Голодні Ігри",
     "games": "Ігри",
     "questions": "Запитання",
     "logos": "Логотипи",
-    "logos-annotation": "Logos annotation",
-    "logos-search": "Logos search",
-    "logos-product-search": "Annotation per products",
-    "logos-deep-search": "Infinit annotation",
+    "logos-annotation": "Анотація до логотипів",
+    "logos-search": "Пошук логотипів",
+    "logos-product-search": "Анотація до кожного продукту",
+    "logos-deep-search": "Інфінітна анотація",
     "manage": "Керування",
     "insights": "Статистика",
     "nutritions": "Харчова цінність",
     "settings": "Налаштування",
     "eco-score": "Показник впливу на довкілля",
-    "dashboard": "Logos dashboard",
-    "tour": "Show Tour",
+    "dashboard": "Приладова панель з логотипами",
+    "tour": "Показати Тур",
     "logged_in_user": "увійшли як {{userName}}",
     "log_in": "натисніть, щоб увійти"
   },
@@ -161,7 +162,7 @@
     "created_at": "Створено",
     "completed_at": "Завершено",
     "automatic": "Автоматичний",
-    "human_required": "Human required",
+    "human_required": "Потрібна людина",
     "edit_product": "Відкрити редагування продукту",
     "view_product": "Відкрити сторінку продукту"
   },
@@ -170,7 +171,7 @@
     "annotations": "Анотації логотипу",
     "task_description": "Виберіть всі логотипи, які є абсолютно однаковими, і дайте їм назву, наприклад, \"en:EU Organic\", і тип, наприклад, \"label\".",
     "select_all": "Вибрати все",
-    "unselect_all": "Очистити все",
+    "unselect_all": "Прибрати всі",
     "distance": "Відстань:",
     "value": "Цінність",
     "submit": "Підтвердити",
@@ -182,10 +183,10 @@
     "qr_code": "QR-код",
     "category": "Категорія",
     "nutrition_label": "Етикетка продукту",
-    "no_logo": "Not a logo",
-    "store": "Магазин",
+    "no_logo": "Не логотип",
+    "store": "Крама",
     "detail": "Деталі логотипу",
-    "id": "Ідентифікатор логотипу:",
+    "id": "Id логотипу:",
     "barcode": "Щтрих-код",
     "full_image": "Все зображення",
     "update": "Редагувати",
@@ -207,7 +208,7 @@
     "language": "Мови",
     "save": "Зберегти",
     "reportIssue": "Знайшли помилку? Будь ласка, повідомте нас",
-    "dev_mode_title": "To get more options, activate the dev mode",
+    "dev_mode_title": "Щоб отримати більше можливостей, активуйте режим розробника",
     "dev_mode_label": "Режим розробника",
     "dev_page_toggle": "Показати {{name}} сторінку"
   },
@@ -221,33 +222,33 @@
       },
       "page2": {
         "title": "Гра «Запитання»",
-        "text1": "Does the food product belong to this brand?",
-        "text2": "Answer simply with a <strong>yes/no</strong>! Don't know the answer? That's alright, just skip it.",
-        "text3": "You can also use your keyboard keys o,n and k.",
-        "text4": "You can <strong>filter</strong> the products based on country, brands, popularity and much more!",
-        "text5": "If you don't want to do this every single time, you can also <strong>save the filters</strong> by clicking on the star. Next time you come back, find the saved filters on the home page itself"
+        "text1": "Ці товари належать до цього бренду?",
+        "text2": "Просто оберіть <strong>так/ні</strong>! Не знаєте, що відповісти? Все ок, можете пропустити.",
+        "text3": "Ви також можете використовувати клавіші o, n та k.",
+        "text4": "Ви можете <strong>сортувати</strong> товари за країною, брендом, популярністю тощо!",
+        "text5": "Якщо не хочете налаштовувати це кожного разу, <strong>збережіть налаштування</strong> натиснувши зірочку. Наступного разу просто оберіть \"збережені фільтри\" на домашній сторінці"
       },
       "page3": {
-        "title": "Logos Game",
-        "text1": "Our another really loved game is the logos game where you have to <strong> select all the logos</strong> you feel are the same.",
-        "text2": "As shown in the example, once you select all the similar logos, just type their value and select where it is a brand, a label or something else. It's that simple!"
+        "title": "Гра в логотипи",
+        "text1": "Одна з улюблених наших ігор - гра в логотипи, де Ви маєте <strong>виділити всі схожі логотипи</strong>.",
+        "text2": "Як і показано в прикладах, обравши потрібні лого, просто визначте їх цінність та оберіть бренд, лейбл абощо. Це просто!"
       },
       "page4": {
-        "title": "Eco-Score Questions Game",
-        "text1": "Help us finish the remaining questions in the most high priority labels!",
+        "title": "Гра з питаннями по Eco-Score",
+        "text1": "Допоможи нам з лишившимися питаннями з найвищою приоритетністю!",
         "text2": "These cards are linked to labels used in the computation of the eco-score.",
-        "text3": "<strong>What is Eco-Score?</strong>",
+        "text3": "<strong>Що ж таке Eco-Score?</strong>",
         "text4": "Eco-Score captures the total environmental footprint, making it easier for consumers to compare products and decide which is better for the environment."
       },
       "page5": {
         "title": "Налаштування",
-        "text1": "Set your preferred language, and report issues from our settings page.",
-        "text2": "If you're a developer, you can also explore our database content using our dev mode."
+        "text1": "Оберіть пріоритету мову та повідомте про можливі помилки на нашій сторінці з налаштуваннями.",
+        "text2": "Якщо ви є розробником, то можете ще й отримати доступ до нашої бази даних в режимі розробника."
       },
       "page6": {
-        "title": "Tour",
-        "text1": "Got stuck somewhere? Want to take the tour again?",
-        "text2": "Just click on the question mark and start the journey again!"
+        "title": "Подорож",
+        "text1": "Застрягли? Хочете перепройти тур?",
+        "text2": "Натисніть на знак питання, і ваша подорож почнеться!"
       }
     },
     "logos": {
@@ -258,8 +259,8 @@
       },
       "page2": {
         "title": "Увага",
-        "text1": "If the crop contains multiple logos, do not select it.",
-        "text2": "If the crop contains only a partial part of a logo, you can select it"
+        "text1": "Якщо в кадрі міститься кілька логотипів, не вибирайте його.",
+        "text2": "Якщо обрізка містить лише частину логотипу, ви можете виділити її"
       },
       "page3": {
         "title": "Перевірити",
@@ -287,8 +288,8 @@
       "4": "Вибір значень"
     },
     "loading": "Завантаження...",
-    "unknown_brand": "Brand Unknown",
-    "value_missing": "You forgot to input value duuuuuuuuuuuuuuuuude",
+    "unknown_brand": "Невідома марка",
+    "value_missing": "Шаноооовний, Ви забули зазначити цінність",
     "next": "Наступний крок",
     "prev": "Попередній крок",
     "skip": "Пропустіть цей продукт",
@@ -324,25 +325,25 @@
     }
   },
   "notfound": {
-    "image_alt": "404 not found",
-    "nopage": "Whoops! The page you're looking for can't be found.",
-    "redirect1": "Want to play some games?",
-    "redirect2": "Click here"
+    "image_alt": "помилка 404",
+    "nopage": "Упс! Сторінка не знайдена.",
+    "redirect1": "Не хочеш пограти?",
+    "redirect2": "Тисни сюди"
   },
   "nutriscore": {
-    "image_alt": "cropped image",
+    "image_alt": "обрізане зображення",
     "label": "Annotate Nutri-Score logo detection by batch.",
     "description": "To do so, select all the images showing the correct/wrong Nutri-Score value ({{label}}), and click on the bottom buttons to say if you selected a set correct or wrong ones.",
     "images_remaining": "Still {{remaining}} to annotate",
-    "image_sizes": "Image sizes",
-    "zoom_on_logo": "Zoom on logo",
+    "image_sizes": "Розмір зображення",
+    "zoom_on_logo": "Приблизити лого",
     "select_all": "Вибрати все",
-    "deselect_all": "Очистити все",
-    "incorrect": "Wrong",
-    "correct": "Correct ({{label}})"
+    "deselect_all": "Прибрати всі",
+    "incorrect": "Невірно",
+    "correct": "Правильно ({{label}})"
   },
   "eco-score": {
-    "description": "Here is a summary of questions that could improve Eco-Score computation",
+    "description": "Нижче наведено перелік запитань, які могли б покращити обчислення",
     "countryLabel": "Країна"
   }
 }

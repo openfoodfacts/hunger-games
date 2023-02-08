@@ -114,7 +114,8 @@
     "log_in": "Nome utente",
     "sign_up": "Registrati",
     "login_title": "Fai contare la tua annotazione",
-    "login_description": "Attualmente non sei connesso a Open Food Facts. Per favore accedi al tuo account Open Food Facts o creane uno per salvare le tue risposte sui prodotti e associarle al tuo account"
+    "login_description": "Attualmente non sei connesso a Open Food Facts. Per favore accedi al tuo account Open Food Facts o creane uno per salvare le tue risposte sui prodotti e associarle al tuo account",
+    "please_wait_while_we_fetch_the_question": "Sei pregato di attendere mentre recuperiamo la domanda!"
   },
   "menu": {
     "title": "Hunger Games",
@@ -130,7 +131,7 @@
     "nutritions": "Valori nutrizionali",
     "settings": "Impostazioni",
     "eco-score": "Eco-score",
-    "dashboard": "Logos dashboard",
+    "dashboard": "Pannello di controllo dei loghi",
     "tour": "Mostra Tour",
     "logged_in_user": "Registrato come {{userName}}",
     "log_in": "Clicca qui per accedere"
@@ -182,7 +183,7 @@
     "qr_code": "Codice QR",
     "category": "Categoria",
     "nutrition_label": "Etichetta nutrizionale",
-    "no_logo": "Not a logo",
+    "no_logo": "Non è un logo",
     "store": "Negozio",
     "detail": "Dettaglio logo",
     "id": "ID logo:",

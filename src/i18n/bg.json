@@ -26,22 +26,22 @@
     "saved_filters": "Запазени филтри",
     "contribution_modal": {
       "title": "Твоят принос има значение",
-      "information": "Hunger Games is an effort to leverage the results of our OCR. When you use Hunger Games by Open Food Facts, you improve our entire database which helps the community make better food choices. We gather your annotations and use them to make Open Food Facts more accurate and effecient.",
+      "information": "Игрите на глада са опит да се използват резултатите от нашият OCR. Когато използвате Игрите на глада от Open Food Facts, подобрявате цялата ни база данни, което помага на общността да прави по-добър избор на храна. Ние събираме вашите пояснения и ги използваме, за да направим Open Food Facts по-точни и ефективни.",
       "thank_you": "Благодарим ти, че ни помагаш да подобрим Open Food Facts, така че повече хора да могат да го използват лесно."
     },
     "statistics": {
       "title": "{{userName}} статистики:",
       "editorCount": {
         "title": "Редактор",
-        "description": "Number of edition done"
+        "description": "Брой извършени редакции"
       },
       "contributorCount": {
         "title": "Сътрудник",
-        "description": "Adding a new product"
+        "description": "Добавяне на нов продукт"
       },
       "photographerCount": {
         "title": "Фотограф",
-        "description": "Taking photos for a product"
+        "description": "Правене на снимки на продукт"
       }
     }
   },
@@ -114,23 +114,24 @@
     "log_in": "Потребителско име",
     "sign_up": "Регистрирай се",
     "login_title": "Направи коментарът си полезен",
-    "login_description": "В момента не сте влезли в Open Food Facts. За да получите вашите отговори директно приложени към продукти и свързани с вашия акаунт, помислете дали да влезете във вашия акаунт Open Food Facts или да създадете такъв"
+    "login_description": "В момента не сте влезли в Open Food Facts. За да получите вашите отговори директно приложени към продукти и свързани с вашия акаунт, помислете дали да влезете във вашия акаунт Open Food Facts или да създадете такъв",
+    "please_wait_while_we_fetch_the_question": "Please wait while we fetch the question!"
   },
   "menu": {
     "title": "Игри на глада",
     "games": "Игри",
     "questions": "Въпроси",
     "logos": "Емблеми",
-    "logos-annotation": "Logos annotation",
+    "logos-annotation": "Пояснение към емблеми",
     "logos-search": "Търсене на лога",
-    "logos-product-search": "Annotation per products",
-    "logos-deep-search": "Infinit annotation",
+    "logos-product-search": "Пояснения за продукти",
+    "logos-deep-search": "Безкрайно пояснение",
     "manage": "Управление",
     "insights": "Задълбочен анализ",
     "nutritions": "Хранителни стойности",
     "settings": "Настройки",
     "eco-score": "Eco-score",
-    "dashboard": "Logos dashboard",
+    "dashboard": "Табло с емблеми",
     "tour": "Турне",
     "logged_in_user": "влязъл като {{userName}}",
     "log_in": "щракни, за да влезеш"
@@ -182,7 +183,7 @@
     "qr_code": "QR код",
     "category": "Категория",
     "nutrition_label": "Етикет за хранителна стойност",
-    "no_logo": "Not a logo",
+    "no_logo": "Не е емблема",
     "store": "Магазин",
     "detail": "Детайл за логото",
     "id": "ID на лого:",
@@ -207,7 +208,7 @@
     "language": "Езици",
     "save": "Запис",
     "reportIssue": "Откри грешка? Моля, уведоми ни",
-    "dev_mode_title": "To get more options, activate the dev mode",
+    "dev_mode_title": "За да получите повече опции, активирайте режима за разработка",
     "dev_mode_label": "Режим на разработчик",
     "dev_page_toggle": "Покажи {{name}} страница"
   },
@@ -258,8 +259,8 @@
       },
       "page2": {
         "title": "Предупреждение",
-        "text1": "If the crop contains multiple logos, do not select it.",
-        "text2": "If the crop contains only a partial part of a logo, you can select it"
+        "text1": "Ако изрязването съдържа няколко емблеми, не го избирайте.",
+        "text2": "Ако изрязването съдържа само част от емблемата, можете да го изберете"
       },
       "page3": {
         "title": "Потвърди",
@@ -331,15 +332,15 @@
   },
   "nutriscore": {
     "image_alt": "cropped image",
-    "label": "Annotate Nutri-Score logo detection by batch.",
-    "description": "To do so, select all the images showing the correct/wrong Nutri-Score value ({{label}}), and click on the bottom buttons to say if you selected a set correct or wrong ones.",
-    "images_remaining": "Still {{remaining}} to annotate",
-    "image_sizes": "Image sizes",
-    "zoom_on_logo": "Zoom on logo",
+    "label": "Пояснете откриването на логото на Nutri-Score по групи.",
+    "description": "За да направите това, изберете всички изображения, показващи правилната/грешна стойност на Nutri-Score ({{label}}), и щракнете върху долните бутони, за да кажете дали сте избрали набор правилни или грешни.",
+    "images_remaining": "Все още {{remaining}} за поясняване",
+    "image_sizes": "Размери на изображението",
+    "zoom_on_logo": "Увеличете емблемата",
     "select_all": "Избери всички",
     "deselect_all": "Размаркирай всичко",
     "incorrect": "Грешно",
-    "correct": "Correct ({{label}})"
+    "correct": "Правилно ({{label}})"
   },
   "eco-score": {
     "description": "Ето обобщение на въпросите, които биха могли да подобрят изчисляването на Eco-Score",

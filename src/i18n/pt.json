@@ -114,7 +114,8 @@
     "log_in": "Nome de Utilizador",
     "sign_up": "Inscrever",
     "login_title": "Faça o seu comentário contar",
-    "login_description": "Você não está logado no Open Food Facts. Para obter suas respostas aplicadas diretamente aos produtos e associadas à sua conta, conecte-se ao Open Food Facts ou crie uma conta"
+    "login_description": "Você não está logado no Open Food Facts. Para obter suas respostas aplicadas diretamente aos produtos e associadas à sua conta, conecte-se ao Open Food Facts ou crie uma conta",
+    "please_wait_while_we_fetch_the_question": "Por favor aguarde enquanto buscamos a pergunta!"
   },
   "menu": {
     "title": "Jogos Vorazes",
@@ -130,7 +131,7 @@
     "nutritions": "Informação nutricional",
     "settings": "Definições",
     "eco-score": "Eco-score",
-    "dashboard": "Logos dashboard",
+    "dashboard": "Painel de Logos",
     "tour": "Mostrar o Tour",
     "logged_in_user": "Conectado como {{userName}}",
     "log_in": "Clique para acessar"
@@ -182,7 +183,7 @@
     "qr_code": "Código QR",
     "category": "Categoria",
     "nutrition_label": "Tabela de nutrição",
-    "no_logo": "Not a logo",
+    "no_logo": "Não é um logotipo",
     "store": "Loja",
     "detail": "Detalhe do logotipo",
     "id": "ID do logotipo:",
