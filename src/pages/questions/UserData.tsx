@@ -55,7 +55,7 @@ const UserData = ({
     Math.max(0, displayedAnswers.length - NB_DISPLAYED_QUESTIONS),
     displayedAnswers.length
   );
-
+  console.log(displayedAnswers);
   return (
     <Box>
       <Stack spacing={1}>

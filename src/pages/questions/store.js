@@ -2,6 +2,7 @@ import {
   createSlice,
   createAsyncThunk,
   configureStore,
+  createSelector,
 } from "@reduxjs/toolkit";
 
 import robotoff from "../../robotoff";
@@ -48,22 +49,21 @@ export const questionBuffer = createSlice({
     },
   },
   reducers: {
-    updateFilter: {
-      reducer: (state, action) => {
-        if (
-          Object.keys(action.filterState).every(
-            (key) => state.filterState[key] === action.filterState[key]
-          )
-        ) {
-          // Early return if new state is similar to the current one
-          return;
-        }
-        // Update filter and reset fetched data
-        state.filterState = { ...state.filterState, ...action.filterState };
-        state.page = 1;
-        state.remainingQuestions = [];
-        state.fetchCompletted = false;
-      },
+    updateFilter: (state, action) => {
+      console.log({ state, action });
+      if (
+        Object.keys(action.payload).every(
+          (key) => state.filterState[key] === action.payload[key]
+        )
+      ) {
+        // Early return if new state is similar to the current one
+        return;
+      }
+      // Update filter and reset fetched data
+      state.filterState = { ...state.filterState, ...action.payload };
+      state.page = 1;
+      state.remainingQuestions = [];
+      state.fetchCompletted = false;
     },
   },
   extraReducers: (builder) => {
@@ -92,13 +92,13 @@ export const questionBuffer = createSlice({
             ...state.remainingQuestions,
             ...questionsToAdd.map((question) => question.insight_id),
           ],
-          questions: { ...state.seenInsightIds, ...newQuestionsObject },
+          questions: { ...state.questions, ...newQuestionsObject },
           fetchCompletted: count < state.page * PAGE_SIZE,
         };
       })
       .addCase(answerQuestion.pending, (state, action) => {
         const { insight_id, value } = action.meta.arg;
-
+        console.log({ insight_id });
         return {
           ...state,
           remainingQuestions: state.remainingQuestions.filter(
@@ -144,8 +144,47 @@ export const questionBuffer = createSlice({
   },
 });
 
+export const { updateFilter } = questionBuffer.actions;
 export default configureStore({
   reducer: {
     questions: questionBuffer.reducer,
   },
 });
+
+const getSubState = (state) => state.questions;
+
+export const nbOfQuestionsInBufferSelector = createSelector(
+  getSubState,
+  (bufferState) => bufferState.remainingQuestions.length
+);
+
+export const currentQuestionSelector = createSelector(
+  getSubState,
+  (bufferState) =>
+    bufferState.questions[bufferState.remainingQuestions[0]] ?? null
+);
+
+export const filterStateSelector = createSelector(
+  getSubState,
+  (bufferState) => bufferState.filterState
+);
+
+export const answeredQuestionsSelector = createSelector(
+  getSubState,
+  (bufferState) =>
+    bufferState.answeredQuestions.map(
+      (question) => bufferState.questions[question.insight_id]
+    )
+);
+
+export const nextImagesSelector = createSelector(getSubState, (bufferState) =>
+  bufferState.remainingQuestions
+    .slice(1, 5)
+    .map((insight_id) => bufferState.questions[insight_id]?.source_image_url)
+    .filter((image_url) => !!image_url)
+);
+
+export const isLoadingSelector = createSelector(
+  getSubState,
+  (bufferState) => !bufferState.fetchCompletted
+);

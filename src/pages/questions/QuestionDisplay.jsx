@@ -16,6 +16,7 @@ import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 
 import { useTranslation } from "react-i18next";
+import { useDispatch, useSelector } from "react-redux";
 import {
   NO_QUESTION_LEFT,
   OFF_URL,
@@ -23,6 +24,13 @@ import {
   WRONG_INSIGHT,
   SKIPPED_INSIGHT,
 } from "../../const";
+import { DEFAULT_FILTER_STATE } from "../../components/QuestionFilter/const";
+import {
+  filterStateSelector,
+  isLoadingSelector,
+  updateFilter,
+  answerQuestion as answerQuestionAction,
+} from "./store";
 import { reformatValueTag } from "../../utils";
 import robotoff from "../../robotoff";
 import { getShortcuts } from "../../l10n-shortcuts";
@@ -80,14 +88,22 @@ const getNbOfQuestionForValue = async (filterState) => {
   return dataFetched.count;
 };
 
-const QuestionDisplay = ({
-  question,
-  answerQuestion,
-  resetFilters,
-  filterState,
-  productData,
-}) => {
+const QuestionDisplay = ({ question, productData }) => {
   const { t } = useTranslation();
+
+  const filterState = useSelector(filterStateSelector);
+  const isLoading = useSelector(isLoadingSelector);
+  const dispatch = useDispatch();
+
+  const resetFilters = () => dispatch(updateFilter(DEFAULT_FILTER_STATE));
+  const answerQuestion = React.useCallback(
+    ({ insight_id, value }) => {
+      console.log({ insight_id, value });
+      dispatch(answerQuestionAction({ insight_id, value }));
+    },
+    [dispatch]
+  );
+
   const valueTagQuestionsURL = getValueTagQuestionsURL(filterState, question);
   const valueTagExamplesURL = getValueTagExamplesURL(question);
   const [nbOfPotentialQuestion, setNbOfPotentialQuestions] =
@@ -165,7 +181,18 @@ const QuestionDisplay = ({
     shortcuts.no,
   ]);
 
-  if (question?.insight_id === NO_QUESTION_LEFT) {
+  if (question === null) {
+    if (isLoading) {
+      return (
+        <Box sx={{ width: "100%", textAlign: "center", py: 10, m: 0 }}>
+          <Typography variant="subtitle1">
+            {t("questions.please_wait_while_we_fetch_the_question")}
+          </Typography>
+          <br />
+          <CircularProgress />
+        </Box>
+      );
+    }
     return (
       <Stack direction="row" alignItems="center" spacing={1}>
         <p>{t("questions.no_questions_remaining")}</p>
@@ -175,17 +202,7 @@ const QuestionDisplay = ({
       </Stack>
     );
   }
-  if (question === null) {
-    return (
-      <Box sx={{ width: "100%", textAlign: "center", py: 10, m: 0 }}>
-        <Typography variant="subtitle1">
-          {t("questions.please_wait_while_we_fetch_the_question")}
-        </Typography>
-        <br />
-        <CircularProgress />
-      </Box>
-    );
-  }
+
   return (
     <Stack
       sx={{
@@ -275,7 +292,7 @@ const QuestionDisplay = ({
         />
         {isDesktop ? (
           <CroppedLogo
-            insightId={question.insight_id}
+            insight_id={question.insight_id}
             style={{
               position: "absolute",
               bottom: 0,
@@ -300,7 +317,7 @@ const QuestionDisplay = ({
           onClick={() =>
             answerQuestion({
               value: WRONG_INSIGHT,
-              insightId: question?.insight_id,
+              insight_id: question?.insight_id,
             })
           }
           color="error"
@@ -315,7 +332,7 @@ const QuestionDisplay = ({
           onClick={() =>
             answerQuestion({
               value: CORRECT_INSIGHT,
-              insightId: question?.insight_id,
+              insight_id: question?.insight_id,
             })
           }
           startIcon={<DoneIcon />}
@@ -331,7 +348,7 @@ const QuestionDisplay = ({
         onClick={() =>
           answerQuestion({
             value: SKIPPED_INSIGHT,
-            insightId: question?.insight_id,
+            insight_id: question?.insight_id,
           })
         }
         color="secondary"
@@ -340,7 +357,7 @@ const QuestionDisplay = ({
         autoFocus
         sx={{ py: "1rem" }}
       >
-        {t("questions.skip")} ({shortcuts.skip})
+        {t("questions.skip")} ({shortcuts.skip}){question?.insight_id}
       </Button>
     </Stack>
   );

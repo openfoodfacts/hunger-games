@@ -1,49 +1,29 @@
 import * as React from "react";
 
 import QuestionFilter from "../../components/QuestionFilter";
-import { useFilterSearch } from "../../components/QuestionFilter/useFilterSearch";
-import { DEFAULT_FILTER_STATE } from "../../components/QuestionFilter/const";
 
 import QuestionDisplay from "./QuestionDisplay";
 import ProductInformation from "./ProductInformation";
 import UserData from "./UserData";
-import { useQuestionBuffer } from "./useQuestionBuffer";
 import { useProductData } from "./utils";
 
 import Divider from "@mui/material/Divider";
 import Stack from "@mui/material/Stack";
 import Grid from "@mui/material/Grid";
 
-import store, { fetchQuestions, answerQuestion } from "./store";
+import store, {
+  fetchQuestions,
+  nbOfQuestionsInBufferSelector,
+  currentQuestionSelector,
+  nextImagesSelector,
+} from "./store";
 import { Provider, useDispatch, useSelector } from "react-redux";
 
 function QuestionsConsumer() {
-  // const [filterState, setFilterState, isFavorite, toggleFavorite] =
-  //   useFilterSearch();
-
-  // const {
-  //   buffer,
-  //   answerQuestion,
-  //   remainingQuestionNb,
-  //   answers,
-  //   preventAnnotation,
-  // } = useQuestionBuffer(filterState);
-  // const question = buffer[0] ?? null;
-
-  // const resetFilters = React.useCallback(
-  //   () =>
-  //     setFilterState((prevState) => ({
-  //       ...DEFAULT_FILTER_STATE,
-  //       insightType: prevState.insightType,
-  //       sortByPopularity: prevState.sortByPopularity,
-  //     })),
-  //   [setFilterState]
-  // );
   const dispatch = useDispatch();
 
-  const state = useSelector((state) => state.questions);
-
-  const remainingQuestionNb = state.remainingQuestions.length;
+  const remainingQuestionNb = useSelector(nbOfQuestionsInBufferSelector);
+  const nextImages = useSelector(nextImagesSelector);
 
   React.useEffect(() => {
     if (remainingQuestionNb < 5) {
@@ -51,13 +31,7 @@ function QuestionsConsumer() {
     }
   }, [dispatch, remainingQuestionNb]);
 
-  const answer = React.useCallback(
-    ({ value, insight_id }) => {
-      dispatch(answerQuestion({ insight_id, value }));
-    },
-    [dispatch]
-  );
-  const question = state.questions[state.remainingQuestions[0]] ?? null;
+  const question = useSelector(currentQuestionSelector);
 
   const productData = useProductData(question?.barcode);
   return (
@@ -69,20 +43,9 @@ function QuestionsConsumer() {
             height: { xs: "calc(100vh - 76px)", md: "calc(100vh - 110px)" },
           }}
         >
-          <QuestionFilter
-            filterState={state.filterState}
-            setFilterState={(x) => x}
-            isFavorite={false}
-            toggleFavorite={() => null}
-          />
+          <QuestionFilter />
           <Divider sx={{ margin: "1rem" }} />
-          <QuestionDisplay
-            question={question}
-            answerQuestion={answer}
-            resetFilters={() => null}
-            filterState={state.filterState}
-            productData={productData}
-          />
+          <QuestionDisplay question={question} productData={productData} />
         </Stack>
       </Grid>
       <Grid item xs={12} md={5}>
@@ -91,19 +54,14 @@ function QuestionsConsumer() {
       <Grid item xs={12} md={2}>
         <UserData
           remainingQuestionNb={remainingQuestionNb}
-          answers={state.answeredQuestions.map(
-            (question) => state.questions[question.insight_id]
-          )}
           preventAnnotation={() => null}
         />
       </Grid>
+
       {/* pre-fetch images of the next question */}
-      {state.remainingQuestions.slice(1, 5).map((insight_id) => {
-        const q = state.questions[insight_id] ?? null;
-        return q?.source_image_url ? (
-          <link rel="prefetch" key={q.insight_id} href={q.source_image_url} />
-        ) : null;
-      })}
+      {nextImages.map((source_image_url) => (
+        <link rel="prefetch" key={source_image_url} href={source_image_url} />
+      ))}
     </Grid>
     // <pre>{JSON.stringify(state, null, 2)}</pre>
   );
