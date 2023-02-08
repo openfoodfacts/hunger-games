@@ -301,7 +301,7 @@ const UNTYPED_LOGOS = {
   "fr:mais-de-france": {
     tag: "fr:mais-de-france",
     label: "Maïs de France",
-    logo: "https://static.openfoodfacts.org/images/lang/fr/labels/mais-de-france.90x90.svg",
+    logo: "https://robotoff.openfoodfacts.org/api/v1/images/crop?image_url=https://static.openfoodfacts.org/images/products/325/622/573/6850/1.jpg&y_min=0.21780075132846832&x_min=0.5356833338737488&y_max=0.2886617183685303&x_max=0.6800328493118286",
     type: "label",
   },
   "en:honey-from-france": {
@@ -349,7 +349,7 @@ const UNTYPED_LOGOS = {
   "fr:Farine-de-ble-français": {
     tag: "fr:Farine-de-ble-français",
     label: "Farine de blé français",
-    logo: "https://static.openfoodfacts.org/images/lang/fr/labels/farine-de-ble-français.90x90.svg",
+    logo: "https://robotoff.openfoodfacts.org/api/v1/images/crop?image_url=https://static.openfoodfacts.org/images/products/325/622/841/1044/1.jpg&y_min=0.725368917&x_min=0.220370978&y_max=0.922216594&x_max=0.43314597",
     type: "label",
   },
   "fr:Ble-français": {
@@ -361,7 +361,7 @@ const UNTYPED_LOGOS = {
   "fr:Soja-Français": {
     tag: "fr:Soja-Français",
     label: "Soja Français",
-    logo: "https://static.openfoodfacts.org/images/lang/fr/labels/soja-francais.90x90.svg",
+    logo: "https://robotoff.openfoodfacts.org/api/v1/images/crop?image_url=https://static.openfoodfacts.org/images/products/325/622/012/6496/18.jpg&y_min=0.8094708919525146&x_min=0.2660655677318573&y_max=0.9401631951332092&x_max=0.626034677028656",
     type: "label",
   },
   "fr:Soja-Français-sans-OGM": {
