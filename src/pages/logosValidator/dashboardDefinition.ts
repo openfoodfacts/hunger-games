@@ -169,15 +169,14 @@ const UNTYPED_LOGOS = {
   "en:transformed-in-france": {
     tag: "en:transformed-in-france",
     label: "Transformé en France",
-    // logo does not exist yet
-    logo: "https://static.openfoodfacts.org/images/lang/en/labels/transformed-in-france.90x90.svg",
+    logo: "https://robotoff.openfoodfacts.org/api/v1/images/crop?image_url=https://static.openfoodfacts.org/images/products/325/622/475/9478/4.jpg&y_min=0.6333395838737488&x_min=0.3985965847969055&y_max=0.7116669416427612&x_max=0.5625113844871521",
     type: "label",
   },
-  "fr:origine-france": {
-    tag: "fr:origine-france",
+  "fr:origine-france-garantie": {
+    tag: "fr:origine-france-garantie",
     label: "Origine France",
     // logo does not exist yet
-    logo: "https://static.openfoodfacts.org/images/lang/fr/labels/origine-france.90x90.svg",
+    logo: "https://robotoff.openfoodfacts.org/api/v1/images/crop?image_url=https://static.openfoodfacts.org/images/products/308/021/605/4308/12.jpg&y_min=0.0578626692&x_min=0.693173945&y_max=0.196409732&x_max=0.854817808",
     type: "label",
   },
   "en:packaged-in-france": {
@@ -198,7 +197,7 @@ const UNTYPED_LOGOS = {
     tag: "en:cooked-in-france",
     label: "Cuisiné en France",
     // logo does not exist yet
-    logo: "https://static.openfoodfacts.org/images/lang/en/labels/cooked-in-france.90x90.svg",
+    logo: "https://robotoff.openfoodfacts.org/api/v1/images/crop?image_url=https://static.openfoodfacts.org/images/products/316/635/296/7211/29.jpg&y_min=0.6737648844718933&x_min=0.06034093350172043&y_max=0.77675861120224&x_max=0.205984964966774",
     type: "label",
   },
   "fr:fruits-et-legumes-de-france": {
@@ -277,7 +276,7 @@ const UNTYPED_LOGOS = {
   "fr:fruits-de-france": {
     tag: "fr:fruits-de-france",
     label: "Fruits de France",
-    logo: "https://static.openfoodfacts.org/images/lang/fr/labels/fruits-de-france.90x90.svg",
+    logo: "https://robotoff.openfoodfacts.org/api/v1/images/crop?image_url=https://static.openfoodfacts.org/images/products/325/622/708/7677/1.jpg&y_min=0.357577771&x_min=0.24484764&y_max=0.471173048&x_max=0.456298739",
     type: "label",
   },
   "fr:tomates-de-france": {
@@ -307,7 +306,7 @@ const UNTYPED_LOGOS = {
   "en:honey-from-france": {
     tag: "en:honey-from-france",
     label: "Miel de France",
-    logo: "https://static.openfoodfacts.org/images/lang/en/labels/honey-from-france.90x90.svg",
+    logo: "https://robotoff.openfoodfacts.org/api/v1/images/crop?image_url=https://static.openfoodfacts.org/images/products/325/622/638/4302/4.jpg&y_min=0.7050929665565491&x_min=0.36524292826652527&y_max=0.7811771631240845&x_max=0.5406951904296875",
     type: "label",
   },
   "en:french-meat": {
@@ -343,7 +342,7 @@ const UNTYPED_LOGOS = {
   "en:french-milk": {
     tag: "en:french-milk",
     label: "Lait Français",
-    logo: "https://static.openfoodfacts.org/images/lang/en/labels/french-milk.90x90.svg",
+    logo: "https://robotoff.openfoodfacts.org/api/v1/images/crop?image_url=https://static.openfoodfacts.org/images/products/325/622/508/3633/12.jpg&y_min=0.527650595&x_min=0.685470164&y_max=0.578336298&x_max=0.753708184",
     type: "label",
   },
   "fr:Farine-de-ble-français": {
@@ -403,7 +402,7 @@ const UNTYPED_LOGOS = {
   "fr:peche-francaise": {
     tag: "fr:peche-francaise",
     label: "Pêche française",
-    logo: "https://static.openfoodfacts.org/images/lang/fr/labels/peche-francaise.90x90.png",
+    logo: "https://robotoff.openfoodfacts.org/api/v1/images/crop?image_url=https://static.openfoodfacts.org/images/products/325/456/244/8047/1.jpg&y_min=0.1131674125790596&x_min=0.3395049571990967&y_max=0.22004051506519318&x_max=0.5166245102882385",
     type: "label",
   },
   "fr:viande-ovine-francaise": {
@@ -2400,7 +2399,31 @@ const UNTYPED_LOGOS = {
     logo: "https://static.openfoodfacts.org/images/lang/en/labels/naturland.78x90.svg",
     type: "label",
   },
-  // CO2
+  "en:utz-certified": {
+    tag: "en:utz-certified",
+    label: "UTZ Certified",
+    logo: "https://world.openfoodfacts.org/images/lang/en/labels/utz-certified.90x90.svg",
+    type: "label",
+  },
+  "en:utz-certified-tea": {
+    tag: "en:utz-certified-tea",
+    label: "UTZ Certified Tea",
+    logo: "",
+    type: "label",
+  },
+  "en:utz-certified-cocoa": {
+    tag: "en:utz-certified-cocoa",
+    label: "UTZ Certified Cocoa",
+    logo: "https://robotoff.openfoodfacts.org/api/v1/images/crop?image_url=https://static.openfoodfacts.org/images/products/405/648/930/0786/4.jpg&y_min=0.815474033&x_min=0.15114665&y_max=0.905039787&x_max=0.31996",
+    type: "label",
+  },
+  "en:utz-certified-coffee": {
+    tag: "en:utz-certified-coffee",
+    label: "UTZ Certified Coffee",
+    logo: "https://robotoff.openfoodfacts.org/api/v1/images/crop?image_url=https://static.openfoodfacts.org/images/products/405/648/930/0786/4.jpg&y_min=0.815474033&x_min=0.15114665&y_max=0.905039787&x_max=0.31996",
+    type: "label",
+  },
+    // CO2
   "en:carbon-trust-carbon-neutral.53x90.png": {
     tag: "en:carbon-trust-carbon-neutral",
     label: "carbon trust carbon neutral",
@@ -2552,6 +2575,9 @@ export const DASHBOARD: DashBoardTheme[] = [
       "en:max-havelaar",
       "en:sustainable-seafood-msc",
       "en:responsible-aquaculture-asc",
+      "en:utz-certified",
+      "en:utz-certified-coffee",
+      "en:utz-certified-cocoa",
     ],
   },
   {
@@ -2856,7 +2882,7 @@ export const DASHBOARD: DashBoardTheme[] = [
     logos: [
       "en:made-in-france",
       "en:transformed-in-france",
-      "fr:origine-france",
+      "fr:origine-france-garantie",
       "en:packaged-in-france",
       "en:french-agriculture",
       "en:cooked-in-france",
