@@ -190,11 +190,17 @@ const useLogoFetching = (filter) => {
 };
 
 export default function AnnotateLogosFromProducts() {
-  const [filter, setFilter] = useUrlParams({
-    tagtype: "labels",
-    tag_contains: "contains",
-    tag: "en:eg-oko-verordnung",
-  });
+  const [filter, setFilter] = useUrlParams(
+    {
+      tagtype: "labels",
+      tag_contains: "contains",
+      tag: "en:eg-oko-verordnung",
+    },
+    {
+      tag: ["valueTag", "value_tag", "value"],
+      tagType: "type",
+    }
+  );
 
   const [internalFilter, setInternalFilter] = React.useState(() => filter);
   React.useEffect(() => {
