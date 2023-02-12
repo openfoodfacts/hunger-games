@@ -16,11 +16,11 @@ export const fetchQuestions = createAsyncThunk(
   async (_, thunkApi) => {
     const state = thunkApi.getState();
     const { data } = await robotoff.questions(
-      state.questions.filterState,
+      state.questionBuffer.filterState,
       PAGE_SIZE,
-      state.questions.page
+      state.questionBuffer.page
     );
-    return data;
+    return { page: state.questionBuffer.page, pages_size: PAGE_SIZE, ...data };
   }
 );
 
@@ -39,6 +39,7 @@ export const questionBuffer = createSlice({
     remainingQuestions: [],
     answeredQuestions: [],
     fetchCompletted: false,
+    numberOfQuestionsAvailable: 0,
     filterState: {
       insightType: "brand",
       brandFilter: "",
@@ -50,7 +51,6 @@ export const questionBuffer = createSlice({
   },
   reducers: {
     updateFilter: (state, action) => {
-      console.log({ state, action });
       if (
         Object.keys(action.payload).every(
           (key) => state.filterState[key] === action.payload[key]
@@ -69,7 +69,7 @@ export const questionBuffer = createSlice({
   extraReducers: (builder) => {
     builder
       .addCase(fetchQuestions.fulfilled, (state, { payload }) => {
-        const { questions, count } = payload;
+        const { questions, count, page, pages_size } = payload;
 
         const newQuestions = questions.filter(
           (question) => state.questions[question.insight_id] === undefined
@@ -84,6 +84,13 @@ export const questionBuffer = createSlice({
           newQuestionsObject[q.insight_id] = q;
         });
 
+        const questionsFromNextPage = Math.max(0, count - page * pages_size); // The number of questions starting from page+1
+
+        const numberOfQuestionsAvailable =
+          questionsFromNextPage + //Questions from unseen pages
+          state.remainingQuestions.length + //Questions from previouse pages
+          questionsToAdd.length; // QUestions added with this fetch
+
         const newPage = newQuestions.length === 0 ? state.page + 1 : state.page;
         return {
           ...state,
@@ -94,17 +101,19 @@ export const questionBuffer = createSlice({
           ],
           questions: { ...state.questions, ...newQuestionsObject },
           fetchCompletted: count < state.page * PAGE_SIZE,
+          numberOfQuestionsAvailable,
         };
       })
       .addCase(answerQuestion.pending, (state, action) => {
         const { insight_id, value } = action.meta.arg;
-        console.log({ insight_id });
+
         return {
           ...state,
           remainingQuestions: state.remainingQuestions.filter(
             (question_id) => question_id !== insight_id
           ),
           answeredQuestions: [...state.answeredQuestions, insight_id],
+          numberOfQuestionsAvailable: state.numberOfQuestionsAvailable - 1,
           questions: {
             ...state.questions,
             [insight_id]: {
@@ -147,11 +156,11 @@ export const questionBuffer = createSlice({
 export const { updateFilter } = questionBuffer.actions;
 export default configureStore({
   reducer: {
-    questions: questionBuffer.reducer,
+    questionBuffer: questionBuffer.reducer,
   },
 });
 
-const getSubState = (state) => state.questions;
+const getSubState = (state) => state.questionBuffer;
 
 export const nbOfQuestionsInBufferSelector = createSelector(
   getSubState,
@@ -173,7 +182,7 @@ export const answeredQuestionsSelector = createSelector(
   getSubState,
   (bufferState) =>
     bufferState.answeredQuestions.map(
-      (question) => bufferState.questions[question.insight_id]
+      (insight_id) => bufferState.questions[insight_id]
     )
 );
 
@@ -187,4 +196,9 @@ export const nextImagesSelector = createSelector(getSubState, (bufferState) =>
 export const isLoadingSelector = createSelector(
   getSubState,
   (bufferState) => !bufferState.fetchCompletted
+);
+
+export const numberOfQuestionsAvailableSelector = createSelector(
+  getSubState,
+  (bufferState) => bufferState.numberOfQuestionsAvailable
 );
