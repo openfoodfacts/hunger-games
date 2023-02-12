@@ -10,29 +10,13 @@ import TextField from "@mui/material/TextField";
 import LabelFilter from "../../components/QuestionFilter/LabelFilter";
 import LogoGrid from "../../components/LogoGrid";
 import AnnotateLogoModal from "../../components/AnnotateLogoModal";
+import { logoTypeOptions } from "../../components/LogoSearchForm";
 import robotoff from "../../robotoff";
 import off from "../../off";
 import useUrlParams from "../../hooks/useUrlParams";
+import { useTranslation } from "react-i18next";
 
 const PRODUCT_PAGE_SIZE = 2;
-
-const AVAILABLE_TAG_TYPES = [
-  "brands",
-  "categories",
-  "packaging",
-  "labels",
-  "origins",
-  "manufacturing_places",
-  "emb_codes",
-  "purchase_places",
-  "stores",
-  "countries",
-  "additives",
-  "allergens",
-  "traces",
-  "nutrition_grades",
-  "states",
-];
 
 const OFF_2_ROBOTOFF = {
   categories: "category",
@@ -190,6 +174,7 @@ const useLogoFetching = (filter) => {
 };
 
 export default function AnnotateLogosFromProducts() {
+  const { t } = useTranslation();
   const [filter, setFilter] = useUrlParams({
     tagtype: "labels",
     tag_contains: "contains",
@@ -234,9 +219,9 @@ export default function AnnotateLogosFromProducts() {
             label="type"
             sx={{ minWidth: 200 }}
           >
-            {AVAILABLE_TAG_TYPES.map((type) => (
-              <MenuItem key={type} value={type}>
-                {type}
+            {logoTypeOptions.map(({ value: typeValue, labelKey }) => (
+              <MenuItem key={typeValue} value={typeValue}>
+                {t(labelKey)}
               </MenuItem>
             ))}
           </TextField>

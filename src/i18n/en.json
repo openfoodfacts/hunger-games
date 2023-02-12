@@ -201,7 +201,13 @@
     "result_count": "Shows {{showing}} on {{available}} available",
     "flag": "Something wrong? Report/flag the image!",
     "unflag": "Unflag the image",
-    "crop_image_title": "crop of the logo"
+    "crop_image_title": "crop of the logo",
+    "loading_messages": {
+      "pending_reference_logos": "We are loading some logos example to initialised the serach",
+      "failed_reference_logos": "We did not find any logo with this annotation. Try to use the following game to annotate some of them.",
+      "pending_neighbors": "We are searching similare logos",
+      "failed_neighbors": "We failed to find similar logos. Retray in few minutes, or send a message on the #robotoff slack channel."
+    }
   },
   "settings": {
     "settings": "Settings",
