@@ -18,7 +18,7 @@ import { useTranslation } from "react-i18next";
 import DevModeContext from "../../contexts/devMode";
 import ColorModeContext from "../../contexts/colorMode";
 import { localSettings, localSettingsKeys } from "../../localeStorageManager";
-import FooterWithLinks from "./FooterWithLinks";
+import FooterWithLinks from "../../components/Footer";
 import { Divider } from "@mui/material";
 
 export default function Settings() {
