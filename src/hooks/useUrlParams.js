@@ -70,6 +70,13 @@ export const convertObjectParamsToUrlParams = (
   return urlParams.toString();
 };
 
+/**
+ * Hook that works as useState to keep in sync with URL query params
+ * @param {object} defaultParams The object to get from the URL
+ * @param {object} synonyms The synonmys under the form { valueKeyA: ['synonymA1', 'synsonymA2'], valueKeyB: 'synsonlymB1' }.
+ * If the urls containg a paramter named `synonymA1` it will be used to override valueKeyA value.
+ * @returns [state, setState]
+ */
 const useUrlParams = (defaultParams, synonyms) => {
   const [parameters, setParameters] = React.useState(() =>
     getDefaultizedUrlParams(defaultParams)
