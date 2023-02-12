@@ -16,7 +16,7 @@ const Donate = () => {
         },
         gap: "20px",
         justifyContent: "space-around",
-        pl: { md: "25px", xs: "", sm: "" },
+        px: { md: "25px", xs: "15px", sm: "15px" },
       }}
     >
       <div
