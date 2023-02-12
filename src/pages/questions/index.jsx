@@ -34,6 +34,7 @@ function QuestionsConsumer() {
   const question = useSelector(currentQuestionSelector);
 
   const productData = useProductData(question?.barcode);
+
   return (
     <Grid container spacing={2} p={2}>
       <Grid item xs={12} md={5}>
@@ -52,10 +53,7 @@ function QuestionsConsumer() {
         <ProductInformation question={question} productData={productData} />
       </Grid>
       <Grid item xs={12} md={2}>
-        <UserData
-          remainingQuestionNb={remainingQuestionNb}
-          preventAnnotation={() => null}
-        />
+        <UserData />
       </Grid>
 
       {/* pre-fetch images of the next question */}
@@ -63,7 +61,6 @@ function QuestionsConsumer() {
         <link rel="prefetch" key={source_image_url} href={source_image_url} />
       ))}
     </Grid>
-    // <pre>{JSON.stringify(state, null, 2)}</pre>
   );
 }
 

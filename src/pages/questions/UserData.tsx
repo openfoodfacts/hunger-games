@@ -17,24 +17,23 @@ import IconButton from "@mui/material/IconButton";
 import CancelScheduleSendIcon from "@mui/icons-material/CancelScheduleSend";
 
 import { useTranslation } from "react-i18next";
+import { useSelector } from "react-redux";
+
 import { CORRECT_INSIGHT, WRONG_INSIGHT } from "../../const";
 import offService from "../../off";
 import LoginContext from "../../contexts/login";
-import { AnswerInterface } from "./useQuestionBuffer";
-
-interface UserDataProps {
-  remainingQuestionNb: number;
-  answers: AnswerInterface[];
-  preventAnnotation: (insight_id: string) => void;
-}
+import {
+  answeredQuestionsSelector,
+  numberOfQuestionsAvailableSelector,
+} from "./store";
 
 const NB_DISPLAYED_QUESTIONS = 30;
-const UserData = ({
-  remainingQuestionNb = 0,
-  answers = [],
-  preventAnnotation,
-}: UserDataProps) => {
+const UserData = () => {
   const { t } = useTranslation();
+  const numberOfQuestionsAvailable = useSelector(
+    numberOfQuestionsAvailableSelector
+  );
+  const answered = useSelector(answeredQuestionsSelector);
 
   const [loginAlreadyProposed, setLoginAlreadyProposed] = React.useState(false);
   const [loginModalOpen, setLoginModalOpen] = React.useState(false);
@@ -42,12 +41,12 @@ const UserData = ({
   const { isLoggedIn } = React.useContext(LoginContext);
 
   React.useEffect(() => {
-    if (answers.length > 3 && !isLoggedIn && !loginAlreadyProposed) {
+    if (answered.length > 3 && !isLoggedIn && !loginAlreadyProposed) {
       setLoginModalOpen(true);
     }
-  }, [answers.length, isLoggedIn, loginAlreadyProposed]);
+  }, [answered.length, isLoggedIn, loginAlreadyProposed]);
 
-  let displayedAnswers = answers.filter(
+  let displayedAnswers = answered.filter(
     (question) => question.validationValue !== -1
   );
 
@@ -55,12 +54,12 @@ const UserData = ({
     Math.max(0, displayedAnswers.length - NB_DISPLAYED_QUESTIONS),
     displayedAnswers.length
   );
-  console.log(displayedAnswers);
+
   return (
     <Box>
       <Stack spacing={1}>
         <Typography sx={{ my: 2 }}>
-          {t("questions.remaining_annotations")}: {remainingQuestionNb}
+          {t("questions.remaining_annotations")}: {numberOfQuestionsAvailable}
         </Typography>
         {displayedAnswers.map(
           ({
@@ -76,7 +75,8 @@ const UserData = ({
                 <IconButton
                   size="small"
                   sx={{ mr: 1 }}
-                  onClick={() => preventAnnotation(insight_id)}
+                  // Prevent sending logos could be reintroduce if done sever side
+                  // onClick={() => preventAnnotation(insight_id)}
                 >
                   <CancelScheduleSendIcon fontSize="inherit" />
                 </IconButton>

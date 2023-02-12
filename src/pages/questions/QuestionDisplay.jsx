@@ -17,13 +17,7 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 
 import { useTranslation } from "react-i18next";
 import { useDispatch, useSelector } from "react-redux";
-import {
-  NO_QUESTION_LEFT,
-  OFF_URL,
-  CORRECT_INSIGHT,
-  WRONG_INSIGHT,
-  SKIPPED_INSIGHT,
-} from "../../const";
+import { CORRECT_INSIGHT, WRONG_INSIGHT, SKIPPED_INSIGHT } from "../../const";
 import { DEFAULT_FILTER_STATE } from "../../components/QuestionFilter/const";
 import {
   filterStateSelector,
@@ -31,87 +25,20 @@ import {
   updateFilter,
   answerQuestion as answerQuestionAction,
 } from "./store";
-import { reformatValueTag } from "../../utils";
-import robotoff from "../../robotoff";
+import {
+  getFullSizeImage,
+  getValueTagExamplesURL,
+  getValueTagQuestionsURL,
+  getNbOfQuestionForValue,
+} from "./utils";
+
 import { getShortcuts } from "../../l10n-shortcuts";
-import { getQuestionSearchParams } from "../../components/QuestionFilter/useFilterSearch";
 import CroppedLogo from "../../components/CroppedLogo";
 import ZoomableImage from "../../components/ZoomableImage";
 
-const getFullSizeImage = (src) => {
-  if (!src) {
-    return "https://static.openfoodfacts.org/images/image-placeholder.png";
-  }
-  const needsFull = /\/[a-z_]+.[0-9]*.400.jpg$/gm.test(src);
-
-  if (needsFull) {
-    return src.replace("400.jpg", "full.jpg");
-  }
-  return src.replace("400.jpg", "jpg");
-};
-
-const getValueTagQuestionsURL = (filterState, question) => {
-  if (
-    question !== null &&
-    question &&
-    question?.insight_id !== NO_QUESTION_LEFT &&
-    question?.value_tag
-  ) {
-    const urlParams = new URLSearchParams();
-    urlParams.append("type", question.insight_type);
-    urlParams.append("value_tag", reformatValueTag(question?.value_tag));
-    return `/questions?${getQuestionSearchParams({
-      ...filterState,
-      insightType: question.insight_type,
-      valueTag: question?.value_tag,
-    })}`;
-  }
-  return null;
-};
-
-const getValueTagExamplesURL = (question) => {
-  if (
-    question !== null &&
-    question?.insight_id !== NO_QUESTION_LEFT &&
-    question?.value_tag &&
-    question.insight_type
-  ) {
-    return `${OFF_URL}/${question.insight_type}/${reformatValueTag(
-      question?.value_tag
-    )}`;
-  }
-  return "";
-};
-
-const getNbOfQuestionForValue = async (filterState) => {
-  const { data: dataFetched } = await robotoff.questions(filterState, 1);
-  return dataFetched.count;
-};
-
-const QuestionDisplay = ({ question, productData }) => {
-  const { t } = useTranslation();
-
-  const filterState = useSelector(filterStateSelector);
-  const isLoading = useSelector(isLoadingSelector);
-  const dispatch = useDispatch();
-
-  const resetFilters = () => dispatch(updateFilter(DEFAULT_FILTER_STATE));
-  const answerQuestion = React.useCallback(
-    ({ insight_id, value }) => {
-      console.log({ insight_id, value });
-      dispatch(answerQuestionAction({ insight_id, value }));
-    },
-    [dispatch]
-  );
-
-  const valueTagQuestionsURL = getValueTagQuestionsURL(filterState, question);
-  const valueTagExamplesURL = getValueTagExamplesURL(question);
+const usePotentialQuestionNumber = (filterState, question) => {
   const [nbOfPotentialQuestion, setNbOfPotentialQuestions] =
     React.useState(null);
-
-  const shortcuts = getShortcuts();
-  const theme = useTheme();
-  const isDesktop = useMediaQuery(theme.breakpoints.up("md"));
 
   React.useEffect(() => {
     if (
@@ -141,6 +68,12 @@ const QuestionDisplay = ({ question, productData }) => {
       validRequest = false;
     };
   }, [filterState, question?.insight_type, question?.value_tag]);
+
+  return nbOfPotentialQuestion;
+};
+
+const useKeyboardShortcuts = (question, answerQuestion) => {
+  const shortcuts = getShortcuts();
 
   React.useEffect(() => {
     function handleShortCut(event) {
@@ -180,6 +113,34 @@ const QuestionDisplay = ({ question, productData }) => {
     shortcuts.yes,
     shortcuts.no,
   ]);
+
+  return shortcuts;
+};
+const QuestionDisplay = ({ question, productData }) => {
+  const { t } = useTranslation();
+
+  const filterState = useSelector(filterStateSelector);
+  const isLoading = useSelector(isLoadingSelector);
+  const dispatch = useDispatch();
+
+  const resetFilters = () => dispatch(updateFilter(DEFAULT_FILTER_STATE));
+  const answerQuestion = React.useCallback(
+    ({ insight_id, value }) =>
+      dispatch(answerQuestionAction({ insight_id, value })),
+    [dispatch]
+  );
+
+  const valueTagQuestionsURL = getValueTagQuestionsURL(filterState, question);
+  const valueTagExamplesURL = getValueTagExamplesURL(question);
+
+  const theme = useTheme();
+  const isDesktop = useMediaQuery(theme.breakpoints.up("md"));
+
+  const nbOfPotentialQuestion = usePotentialQuestionNumber(
+    filterState,
+    question
+  );
+  const shortcuts = useKeyboardShortcuts(question, answerQuestion);
 
   if (question === null) {
     if (isLoading) {
@@ -357,7 +318,7 @@ const QuestionDisplay = ({ question, productData }) => {
         autoFocus
         sx={{ py: "1rem" }}
       >
-        {t("questions.skip")} ({shortcuts.skip}){question?.insight_id}
+        {t("questions.skip")} ({shortcuts.skip})
       </Button>
     </Stack>
   );

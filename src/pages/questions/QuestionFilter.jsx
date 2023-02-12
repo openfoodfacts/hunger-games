@@ -152,6 +152,7 @@ export const QuestionFilter = () => {
     setInnerCampaign(filterState?.campaign);
     setIsOpen(false);
   };
+
   const applyFilter = () => {
     updateSearchParams({
       insightType: innerInsightType,

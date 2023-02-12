@@ -49,7 +49,7 @@ const robotoff = {
       });
   },
 
-  questions(filterState, count = 10, page) {
+  questions(filterState, count = 10, page = 1) {
     const {
       insightType,
       brandFilter,
