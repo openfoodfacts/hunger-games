@@ -15,16 +15,21 @@ import Typography from "@mui/material/Typography";
 import FormControlLabel from "@mui/material/FormControlLabel";
 
 import { useParams } from "react-router-dom";
+import { Provider, useDispatch, useSelector } from "react-redux";
 
-import { useQuestionBuffer } from "../questions/useQuestionBuffer";
+import store, {
+  fetchQuestions,
+  nbOfQuestionsInBufferSelector,
+  questionsToAnswerSelector,
+  numberOfQuestionsAvailableSelector,
+  answerQuestion as answerQuestionAction,
+} from "../questions/store";
 import robotoff from "../../robotoff";
 import off from "../../off";
 import useUrlParams from "../../hooks/useUrlParams";
 
 import { LOGOS } from "./dashboardDefinition";
-
-const BUFFER_THRESHOLD = 10;
-const PAGE_SIZE = 50;
+import { updateFilter } from "../questions/store";
 
 const fetchData = async (insightId) => {
   const response = await robotoff.insightDetail(insightId);
@@ -124,8 +129,9 @@ const LogoQuesitonCard = (props) => {
   );
 };
 
-export default function LogoQuestionValidator({ predictor }) {
+function LogoQuestionValidator() {
   const { t } = useTranslation();
+  const dispatch = useDispatch();
 
   const [controlledState, setControlledState] = useUrlParams({
     imageSize: 200,
@@ -137,26 +143,39 @@ export default function LogoQuestionValidator({ predictor }) {
 
   const selectedOption = React.useMemo(() => LOGOS[valueTag] ?? {}, [valueTag]);
 
-  const filterState = React.useMemo(
-    () => ({
-      insightType: selectedOption.type,
-      brandFilter: "",
-      countryFilter: "",
-      sortByPopularity: false,
-      valueTag,
-      predictor: selectedOption?.predictor ?? "universal-logo-detector",
-    }),
-    [valueTag, selectedOption]
-  );
+  React.useLayoutEffect(() => {
+    dispatch(
+      updateFilter({
+        insightType: selectedOption.type,
+        sortByPopularity: false,
+        valueTag,
+        predictor:
+          selectedOption?.predictor === undefined
+            ? "universal-logo-detector"
+            : selectedOption?.predictor,
+      })
+    );
+  }, [dispatch, valueTag, selectedOption]);
 
   const [selectedIds, setSelectedIds] = React.useState([]);
   const [lastClickedId, setLastClickedId] = React.useState(null);
 
-  const { buffer, answerQuestion, remainingQuestionNb } = useQuestionBuffer(
-    filterState,
-    PAGE_SIZE,
-    BUFFER_THRESHOLD
+  const buffer = useSelector(questionsToAnswerSelector);
+  const numberOfQuestionsAvailable = useSelector(
+    numberOfQuestionsAvailableSelector
   );
+  const answerQuestion = React.useCallback(
+    ({ insight_id, value }) =>
+      dispatch(answerQuestionAction({ insight_id, value })),
+    [dispatch]
+  );
+
+  const remainingQuestionNb = useSelector(nbOfQuestionsInBufferSelector);
+  React.useEffect(() => {
+    if (remainingQuestionNb < 5) {
+      dispatch(fetchQuestions());
+    }
+  }, [dispatch, remainingQuestionNb]);
 
   const toggleSelection = (insight_id) => (event) => {
     if (event.shiftKey) {
@@ -261,7 +280,9 @@ export default function LogoQuestionValidator({ predictor }) {
         sx={{ pt: 5, px: 5, pb: 0, textAlign: "center" }}
       >
         <Typography sx={{ mx: 3 }}>
-          {t("nutriscore.images_remaining", { remaining: remainingQuestionNb })}
+          {t("nutriscore.images_remaining", {
+            remaining: numberOfQuestionsAvailable,
+          })}
         </Typography>
         {selectedOption.logo && (
           <img
@@ -392,5 +413,13 @@ export default function LogoQuestionValidator({ predictor }) {
         </Stack>
       </Paper>
     </Box>
+  );
+}
+
+export default function WrappedLogoQuestionValidator() {
+  return (
+    <Provider store={store}>
+      <LogoQuestionValidator />
+    </Provider>
   );
 }

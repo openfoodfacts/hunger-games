@@ -173,6 +173,14 @@ export const currentQuestionSelector = createSelector(
     bufferState.questions[bufferState.remainingQuestions[0]] ?? null
 );
 
+export const questionsToAnswerSelector = createSelector(
+  getSubState,
+  (bufferState) =>
+    bufferState.remainingQuestions.map(
+      (insight_id) => bufferState.questions[insight_id]
+    )
+);
+
 export const filterStateSelector = createSelector(
   getSubState,
   (bufferState) => bufferState.filterState
