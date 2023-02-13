@@ -42,12 +42,15 @@ export default function LogoSearch() {
   const { t } = useTranslation();
 
   const [isLoading, setIsLoading] = React.useState(true);
-  const [searchState, setSearchState] = useUrlParams({
-    type: "",
-    value: "",
-    barcode: "",
-    count: 25,
-  });
+  const [searchState, setSearchState] = useUrlParams(
+    {
+      type: "",
+      value: "",
+      barcode: "",
+      count: 25,
+    },
+    { value: ["value_tag", "valueTag"] }
+  );
 
   const [result, setResult] = React.useState({ logos: [], count: undefined });
 
