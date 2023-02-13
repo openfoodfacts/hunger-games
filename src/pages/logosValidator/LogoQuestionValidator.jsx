@@ -124,13 +124,39 @@ const LogoQuesitonCard = (props) => {
   );
 };
 
+const NoMoreLogos = ({ insightType, valueTag }) => {
+  const { t } = useTranslation();
+
+  return (
+    <Box sx={{ width: "100%", textAlign: "center", py: 5, m: 0 }}>
+      <Typography variant="subtitle1">
+        {t("logos.no_more_questions")}
+      </Typography>
+      <Button
+        color="secondary"
+        size="small"
+        component={Link}
+        variant="contained"
+        href={`/logos/deep-search?type=${insightType}&value=${valueTag}`}
+        target="_blank"
+        sx={{ ml: 2, minWidth: 150 }}
+      >
+        Search
+      </Button>
+    </Box>
+  );
+};
+
 export default function LogoQuestionValidator({ predictor }) {
   const { t } = useTranslation();
 
-  const [controlledState, setControlledState] = useUrlParams({
-    imageSize: 200,
-    zoomOnLogo: true,
-  });
+  const [controlledState, setControlledState] = useUrlParams(
+    {
+      imageSize: 200,
+      zoomOnLogo: true,
+    },
+    {}
+  );
   const { valueTag } = useParams();
   const imageSize = Number.parseInt(controlledState.imageSize);
   const zoomOnLogo = JSON.parse(controlledState.zoomOnLogo);
@@ -339,6 +365,8 @@ export default function LogoQuestionValidator({ predictor }) {
             />
           ))}
       </div>
+
+      {remainingQuestionNb === 0 && <NoMoreLogos {...filterState} />}
 
       <Paper
         sx={{

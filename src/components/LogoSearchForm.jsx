@@ -11,7 +11,7 @@ import LabelFilter from "../components/QuestionFilter/LabelFilter";
 
 const TYPE_WITHOUT_VALUE = ["packager_code", "qr_code", "no_logo"];
 
-const logoTypeOptions = [
+export const logoTypeOptions = [
   { value: "", labelKey: "logos.type" },
   { value: "label", labelKey: "logos.label" },
   { value: "brand", labelKey: "logos.brand" },
@@ -69,6 +69,7 @@ const LogoSearchForm = (props) => {
   return (
     <Stack direction="column" spacing={{ xs: 1, sm: 2, md: 4 }} {...other}>
       <Stack direction={{ xs: "column", sm: "row" }} spacing={1} wrap="wrap">
+        <p>{innerType}</p>
         <TextField
           fullWidth
           value={innerType}
@@ -77,8 +78,8 @@ const LogoSearchForm = (props) => {
           label={t("logos.type")}
           size="small"
         >
-          {logoTypeOptions.map(({ value, labelKey }) => (
-            <MenuItem key={labelKey} value={value}>
+          {logoTypeOptions.map(({ value: typeValue, labelKey }) => (
+            <MenuItem key={labelKey} value={typeValue}>
               {t(labelKey)}
             </MenuItem>
           ))}

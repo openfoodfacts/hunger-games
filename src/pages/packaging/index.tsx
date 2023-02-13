@@ -62,10 +62,12 @@ const CustomAutoComplet = (props: CustomProps) => {
   return (
     <Autocomplete
       options={options}
+      // @ts-ignore
       value={value}
       onChange={onChange}
       onInputChange={(event, newInputValue) => setInputValue(newInputValue)}
       disablePortal
+      // @ts-ignore
       renderInput={(params) => <TextField {...params} />}
       getOptionLabel={(option) =>
         typeof option === "string"
@@ -244,11 +246,14 @@ const Page = () => {
   const packagingMaterials = useOptions("packaging_materials", lang);
   const packagingShapes = useOptions("packaging_shapes", lang);
   const packagingRecycling = useOptions("packaging_recycling", lang);
-  const [searchState] = useUrlParams({
-    country: "en:france",
-    creator: undefined,
-    code: "",
-  });
+  const [searchState] = useUrlParams(
+    {
+      country: "en:france",
+      creator: undefined,
+      code: "",
+    },
+    {}
+  );
 
   const [rows, setRows] = React.useState([]);
   const [innerRows, setInnerRows] = React.useState([]);

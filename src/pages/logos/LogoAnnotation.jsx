@@ -84,7 +84,7 @@ export default function LogoAnnotation() {
   const { t } = useTranslation();
   const theme = useTheme();
 
-  const [logoSearchParams] = useUrlParams(DEFAULT_LOGO_SEARCH_STATE);
+  const [logoSearchParams] = useUrlParams(DEFAULT_LOGO_SEARCH_STATE, {});
 
   const [logoState, setLogoState] = React.useState(DEFAULT_LOGO_STATE);
 
