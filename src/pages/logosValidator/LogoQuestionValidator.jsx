@@ -150,10 +150,13 @@ const NoMoreLogos = ({ insightType, valueTag }) => {
 export default function LogoQuestionValidator({ predictor }) {
   const { t } = useTranslation();
 
-  const [controlledState, setControlledState] = useUrlParams({
-    imageSize: 200,
-    zoomOnLogo: true,
-  });
+  const [controlledState, setControlledState] = useUrlParams(
+    {
+      imageSize: 200,
+      zoomOnLogo: true,
+    },
+    {}
+  );
   const { valueTag } = useParams();
   const imageSize = Number.parseInt(controlledState.imageSize);
   const zoomOnLogo = JSON.parse(controlledState.zoomOnLogo);

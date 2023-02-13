@@ -246,11 +246,14 @@ const Page = () => {
   const packagingMaterials = useOptions("packaging_materials", lang);
   const packagingShapes = useOptions("packaging_shapes", lang);
   const packagingRecycling = useOptions("packaging_recycling", lang);
-  const [searchState] = useUrlParams({
-    country: "en:france",
-    creator: undefined,
-    code: "",
-  });
+  const [searchState] = useUrlParams(
+    {
+      country: "en:france",
+      creator: undefined,
+      code: "",
+    },
+    {}
+  );
 
   const [rows, setRows] = React.useState([]);
   const [innerRows, setInnerRows] = React.useState([]);

@@ -88,7 +88,12 @@ export default function LogoSearch() {
   const [logosToAnnotate, setLogosToAnnotate] = React.useState([]);
   // TODO: allows to fetch more when reaching data limit
   const [searchCount] = React.useState(DEFAULT_COUNT);
-  const [searchState, setSearchState] = useUrlParams({ type: "", value: "" });
+  const [searchState, setSearchState] = useUrlParams(
+    { type: "", value: "" },
+    {
+      value: ["valueTag", "value_tag"],
+    }
+  );
   const pageSize = 50;
   const [page, setPage] = React.useState(1);
   const [isLoadingAnnotatedLogos, setIsLoadingAnnotatedLogos] =

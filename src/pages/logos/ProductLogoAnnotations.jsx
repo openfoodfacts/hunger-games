@@ -7,6 +7,8 @@ import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import TextField from "@mui/material/TextField";
 
+import { useTranslation } from "react-i18next";
+
 import LabelFilter from "../../components/QuestionFilter/LabelFilter";
 import LogoGrid from "../../components/LogoGrid";
 import AnnotateLogoModal from "../../components/AnnotateLogoModal";
@@ -14,7 +16,6 @@ import { logoTypeOptions } from "../../components/LogoSearchForm";
 import robotoff from "../../robotoff";
 import off from "../../off";
 import useUrlParams from "../../hooks/useUrlParams";
-import { useTranslation } from "react-i18next";
 
 const PRODUCT_PAGE_SIZE = 2;
 
@@ -175,11 +176,17 @@ const useLogoFetching = (filter) => {
 
 export default function AnnotateLogosFromProducts() {
   const { t } = useTranslation();
-  const [filter, setFilter] = useUrlParams({
-    tagtype: "labels",
-    tag_contains: "contains",
-    tag: "en:eg-oko-verordnung",
-  });
+  const [filter, setFilter] = useUrlParams(
+    {
+      tagtype: "labels",
+      tag_contains: "contains",
+      tag: "en:eg-oko-verordnung",
+    },
+    {
+      tag: ["valueTag", "value_tag", "value"],
+      tagType: "type",
+    }
+  );
 
   const [internalFilter, setInternalFilter] = React.useState(() => filter);
   React.useEffect(() => {
