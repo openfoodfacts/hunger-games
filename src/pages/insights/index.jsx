@@ -12,12 +12,17 @@ import useUrlParams from "../../hooks/useUrlParams";
 export default function Insights() {
   const { t } = useTranslation();
 
-  const [filterState, setFilterState] = useUrlParams({
-    barcode: "",
-    valueTag: "",
-    insightType: "",
-    annotationStatus: "",
-  });
+  const [filterState, setFilterState] = useUrlParams(
+    {
+      barcode: "",
+      valueTag: "",
+      insightType: "",
+      annotationStatus: "",
+    },
+    {
+      valueTag: ["value", "value_tag"],
+    }
+  );
 
   return (
     <Stack spacing={2} sx={{ padding: 2 }}>
