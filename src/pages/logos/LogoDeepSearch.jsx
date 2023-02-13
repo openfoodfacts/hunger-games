@@ -82,8 +82,6 @@ const FailedReferecnceLogos = ({ type, value }) => {
 };
 
 export default function LogoSearch() {
-  // const [isLoading, setIsLoading] = React.useState(true);
-
   const [annotatedLogos, setAnnotatedLogos] = React.useState([]);
   const [logosToAnnotate, setLogosToAnnotate] = React.useState([]);
   // TODO: allows to fetch more when reaching data limit
@@ -133,11 +131,17 @@ export default function LogoSearch() {
     };
 
     setIsLoadingAnnotatedLogos(true);
-    fetchMoreAnnotatedLogos().then(() => {
-      if (isValid) {
-        setIsLoadingAnnotatedLogos(false);
-      }
-    });
+    fetchMoreAnnotatedLogos()
+      .then(() => {
+        if (isValid) {
+          setIsLoadingAnnotatedLogos(false);
+        }
+      })
+      .catch(() => {
+        if (isValid) {
+          setIsLoadingAnnotatedLogos(false);
+        }
+      });
 
     return () => {
       isValid = false;
@@ -208,11 +212,17 @@ export default function LogoSearch() {
     };
 
     setIsLoadingToAnnotateLogos(true);
-    fetchLogosToAnnotate().then(() => {
-      if (isValid) {
-        setIsLoadingToAnnotateLogos(false);
-      }
-    });
+    fetchLogosToAnnotate()
+      .then(() => {
+        if (isValid) {
+          setIsLoadingToAnnotateLogos(false);
+        }
+      })
+      .catch(() => {
+        if (isValid) {
+          setIsLoadingToAnnotateLogos(false);
+        }
+      });
 
     return () => {
       isValid = false;
