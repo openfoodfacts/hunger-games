@@ -5,6 +5,9 @@ import Divider from "@mui/material/Divider";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import Paper from "@mui/material/Paper";
+import Link from "@mui/material/Link";
+import CircularProgress from "@mui/material/CircularProgress";
+import LinearProgress from "@mui/material/LinearProgress";
 
 import LogoGrid from "../../components/LogoGrid";
 import LogoForm from "../../components/LogoForm";
@@ -12,6 +15,7 @@ import robotoff from "../../robotoff";
 import off from "../../off";
 import useUrlParams from "../../hooks/useUrlParams";
 import AnnotateLogoModal from "../../components/AnnotateLogoModal";
+import { useTranslation } from "react-i18next";
 
 const DEFAULT_COUNT = 25;
 
@@ -41,6 +45,42 @@ const request = async ({ barcode, value, type, count }) => {
   };
 };
 
+const LoadingReferenceLogos = () => {
+  const { t } = useTranslation();
+  return (
+    <Box sx={{ width: "100%", textAlign: "center", py: 5, m: 0 }}>
+      <Typography variant="subtitle1">
+        {t("logos.loading_messages.pending_reference_logos")}
+      </Typography>
+      <br />
+      <CircularProgress />
+    </Box>
+  );
+};
+
+const FailedReferecnceLogos = ({ type, value }) => {
+  const { t } = useTranslation();
+
+  return (
+    <Box sx={{ width: "100%", textAlign: "center", py: 5, m: 0 }}>
+      <Typography variant="subtitle1">
+        {t("logos.loading_messages.failed_reference_logos")}
+      </Typography>
+      <Button
+        color="secondary"
+        size="small"
+        component={Link}
+        variant="contained"
+        href={`/logos/product-search?tag=${value}&tagtype=${type}`}
+        target="_blank"
+        sx={{ ml: 2, minWidth: 150 }}
+      >
+        Search
+      </Button>
+    </Box>
+  );
+};
+
 export default function LogoSearch() {
   // const [isLoading, setIsLoading] = React.useState(true);
 
@@ -56,6 +96,10 @@ export default function LogoSearch() {
   );
   const pageSize = 50;
   const [page, setPage] = React.useState(1);
+  const [isLoadingAnnotatedLogos, setIsLoadingAnnotatedLogos] =
+    React.useState(true);
+  const [isLoadingToAnnotateLogos, setIsLoadingToAnnotateLogos] =
+    React.useState(false);
 
   const setNewSearchState = ({ type, value }) => {
     setSearchState(DEFAULT_COUNT);
@@ -88,7 +132,12 @@ export default function LogoSearch() {
       } catch (error) {}
     };
 
-    fetchMoreAnnotatedLogos();
+    setIsLoadingAnnotatedLogos(true);
+    fetchMoreAnnotatedLogos().then(() => {
+      if (isValid) {
+        setIsLoadingAnnotatedLogos(false);
+      }
+    });
 
     return () => {
       isValid = false;
@@ -158,7 +207,12 @@ export default function LogoSearch() {
       });
     };
 
-    fetchLogosToAnnotate();
+    setIsLoadingToAnnotateLogos(true);
+    fetchLogosToAnnotate().then(() => {
+      if (isValid) {
+        setIsLoadingToAnnotateLogos(false);
+      }
+    });
 
     return () => {
       isValid = false;
@@ -202,10 +256,7 @@ export default function LogoSearch() {
     const annotatedIds = {};
     annotatedLogos.forEach(({ id }) => (annotatedIds[id] = true));
     setAnnotatedLogos((prev) => [...prev, ...annotatedLogos]);
-    setLogosToAnnotate((prev) => {
-      console.log(prev);
-      return prev.filter((logo) => !annotatedIds[logo.id]);
-    });
+    setLogosToAnnotate((prev) => prev.filter((logo) => !annotatedIds[logo.id]));
   };
 
   const selectAllOnPage = () => {
@@ -254,12 +305,19 @@ export default function LogoSearch() {
       <Typography variant="h5" sx={{ mt: 5, mb: 1 }}>
         Reference logos (logo already annotated with this value)
       </Typography>
-      <LogoGrid
-        logos={annotatedLogos.slice(0, 5)}
-        toggleLogoSelection={null}
-        readOnly
-        sx={{ pt: 0 }}
-      />
+
+      {isLoadingAnnotatedLogos ? (
+        <LoadingReferenceLogos />
+      ) : annotatedLogos == null || annotatedLogos.length === 0 ? (
+        <FailedReferecnceLogos {...searchState} />
+      ) : (
+        <LogoGrid
+          logos={annotatedLogos.slice(0, 5)}
+          toggleLogoSelection={null}
+          readOnly
+          sx={{ pt: 0 }}
+        />
+      )}
 
       <Divider sx={{ my: 3 }} />
 
@@ -283,6 +341,7 @@ export default function LogoSearch() {
         </Button>
       </Box>
 
+      {isLoadingToAnnotateLogos && <LinearProgress />}
       <LogoGrid
         logos={logosToAnnotate.slice((page - 1) * pageSize, page * pageSize)}
         toggleLogoSelection={toggleSelection}
