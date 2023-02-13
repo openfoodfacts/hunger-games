@@ -34,7 +34,8 @@ export function useFilterSearch() {
   // This hook do the translation
 
   const [urlSearchParams, setUrlSearchParams] = useUrlParams(
-    DEFAULT_FILTER_URL_PARAMS
+    DEFAULT_FILTER_URL_PARAMS,
+    { valueTag: ["value_tag", "value"] }
   );
   const exposedParameters = React.useMemo(
     () => convertUrlToParams(urlSearchParams),
