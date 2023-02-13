@@ -27,7 +27,6 @@ export default function Settings() {
   const colorMode = React.useContext(ColorModeContext);
 
   const [language, setLanguage] = React.useState(i18n.language);
-
   const { devMode, setDevMode, visiblePages, setVisiblePages } =
     React.useContext(DevModeContext);
 
@@ -84,21 +83,6 @@ export default function Settings() {
         {devMode &&
           [
             { pageUrl: "logos", pageName: "logos", isExperimental: false },
-            {
-              pageUrl: "logos/search",
-              pageName: "search logos",
-              isExperimental: false,
-            },
-            {
-              pageUrl: "logos/product-search",
-              pageName: "search product logos",
-              isExperimental: true,
-            },
-            {
-              pageUrl: "logos/deep-search",
-              pageName: "deep search logo",
-              isExperimental: true,
-            },
             {
               pageUrl: "dashboard",
               pageName: "dashboard",
