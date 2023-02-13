@@ -253,7 +253,7 @@ const QuestionDisplay = ({ question, productData }) => {
         />
         {isDesktop ? (
           <CroppedLogo
-            insight_id={question.insight_id}
+            insightId={question.insight_id}
             style={{
               position: "absolute",
               bottom: 0,

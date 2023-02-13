@@ -19,6 +19,7 @@ import { Provider, useDispatch, useSelector } from "react-redux";
 
 import store, {
   fetchQuestions,
+  updateFilter,
   nbOfQuestionsInBufferSelector,
   questionsToAnswerSelector,
   numberOfQuestionsAvailableSelector,
@@ -29,7 +30,6 @@ import off from "../../off";
 import useUrlParams from "../../hooks/useUrlParams";
 
 import { LOGOS } from "./dashboardDefinition";
-import { updateFilter } from "../questions/store";
 
 const fetchData = async (insightId) => {
   const response = await robotoff.insightDetail(insightId);
