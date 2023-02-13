@@ -8,6 +8,7 @@ import FormControlLabel from "@mui/material/FormControlLabel";
 import Switch from "@mui/material/Switch";
 import Button from "@mui/material/Button";
 import MuiLink from "@mui/material/Link";
+import Divider from "@mui/material/Divider";
 import Brightness4Icon from "@mui/icons-material/Brightness4";
 import Brightness7Icon from "@mui/icons-material/Brightness7";
 
@@ -19,7 +20,6 @@ import DevModeContext from "../../contexts/devMode";
 import ColorModeContext from "../../contexts/colorMode";
 import { localSettings, localSettingsKeys } from "../../localeStorageManager";
 import FooterWithLinks from "../../components/Footer";
-import { Divider } from "@mui/material";
 
 export default function Settings() {
   const { t, i18n } = useTranslation();

@@ -1,4 +1,4 @@
-import { Box } from "@mui/system";
+import Box from "@mui/material/Box";
 import Donate from "./Donate";
 import JoinTheCommunity from "./JoinTheCommunity";
 import DiscoverTheProject from "./DiscoverTheProject";
@@ -7,15 +7,20 @@ import DownloadOpenFoodFacts from "./DownloadOpenFoodFacts";
 
 const FooterWithLinks = () => {
   return (
-    <>
-      <br />
+    <Box
+      sx={{
+        "& .OFF-donate,& .OFF-download": {
+          py: 2,
+        },
+        "& .OFF-discover-group": {
+          py: 4,
+        },
+      }}
+    >
       {/* Donate to open food facts */}
       <Donate />
-      <br />
       {/*App download links for different platforms*/}
       <DownloadOpenFoodFacts />
-      <br />
-      <br />
       <Box
         sx={{
           mx: 2,
@@ -23,16 +28,16 @@ const FooterWithLinks = () => {
           flexDirection: { xs: "column", sm: "row" },
           gap: { xs: "10px", sm: "" },
         }}
+        className="OFF-discover-group"
       >
         {/* Different community platform links */}
         <JoinTheCommunity />
         {/* Links for project details */}
         <DiscoverTheProject />
       </Box>
-      <br />
       {/* Footer with OFF logo and social links */}
       <OpenFoodFacts />
-    </>
+    </Box>
   );
 };
 

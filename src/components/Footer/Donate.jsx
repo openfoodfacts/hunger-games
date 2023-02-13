@@ -7,6 +7,7 @@ const Donate = () => {
   const { t } = useTranslation();
   return (
     <Box
+      className="OFF-donate"
       sx={{
         display: "flex",
         flexDirection: {

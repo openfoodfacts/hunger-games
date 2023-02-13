@@ -34,7 +34,7 @@ const JoinTheCommunity = () => {
   };
 
   return (
-    <div style={{ flexGrow: "1" }}>
+    <div style={{ flexGrow: "1" }} className="OFF-join">
       <Divider light>
         <Chip label={t("settings.join_community")} />
       </Divider>

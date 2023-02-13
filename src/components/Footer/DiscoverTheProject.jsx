@@ -44,7 +44,7 @@ const discover = [
 const DiscoverTheProject = () => {
   const { t } = useTranslation();
   return (
-    <Box sx={{ width: { xs: "100%", sm: "50%" } }}>
+    <Box sx={{ width: { xs: "100%", sm: "50%" } }} className="OFF-discover">
       <Divider light>
         <Chip label="Discover the project" />
       </Divider>

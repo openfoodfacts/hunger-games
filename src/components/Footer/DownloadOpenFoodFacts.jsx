@@ -43,6 +43,7 @@ const DownloadOpenFoodFacts = () => {
         alignItems: "center",
         justifyContent: "center",
       }}
+      className="OFF-download"
     >
       {footerLinks.map((link) => {
         return (

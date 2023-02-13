@@ -36,6 +36,7 @@ const OpenFoodFacts = () => {
         alignItems: "center",
         pb: "20px",
       })}
+      className="OFF-social-media"
     >
       <Button
         sx={{ cursor: "pointer" }}
