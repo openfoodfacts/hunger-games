@@ -8,21 +8,36 @@ export const setUrlParams = (parameters, defaultParameters) => {
   window.history.pushState(null, "", newRelativePathQuery);
 };
 
-export const getDefaultizedUrlParams = (defaultParameters) => {
+export const getDefaultizedUrlParams = (defaultParameters, synonyms = {}) => {
   const parameters = { ...defaultParameters };
   const urlParams = new URLSearchParams(window.location.search);
   Object.keys(defaultParameters).forEach((key) => {
     const value = urlParams.get(key);
-    if (
-      value !== null &&
-      JSON.stringify(defaultParameters[key]) !== urlParams.get(key)
-    ) {
+    if (value !== null && JSON.stringify(defaultParameters[key]) !== value) {
       if (value === "true" || value === "false") {
         parameters[key] = JSON.parse(value);
       } else {
         parameters[key] = value;
       }
     }
+  });
+
+  Object.entries(synonyms).forEach(([valueKey, synonymKeys]) => {
+    const toTest =
+      typeof synonymKeys === "string" ? [synonymKeys] : synonymKeys;
+    toTest.forEach((synonymKey) => {
+      const value = urlParams.get(synonymKey);
+      if (
+        value !== null &&
+        JSON.stringify(defaultParameters[valueKey]) !== value
+      ) {
+        if (value === "true" || value === "false") {
+          parameters[valueKey] = JSON.parse(value);
+        } else {
+          parameters[valueKey] = value;
+        }
+      }
+    });
   });
 
   return parameters;
@@ -55,7 +70,14 @@ export const convertObjectParamsToUrlParams = (
   return urlParams.toString();
 };
 
-const useUrlParams = (defaultParams) => {
+/**
+ * Hook that works as useState to keep in sync with URL query params
+ * @param {object} defaultParams The object to get from the URL
+ * @param {object} synonyms The synonmys under the form { valueKeyA: ['synonymA1', 'synsonymA2'], valueKeyB: 'synsonlymB1' }.
+ * If the urls containg a paramter named `synonymA1` it will be used to override valueKeyA value.
+ * @returns [state, setState]
+ */
+const useUrlParams = (defaultParams, synonyms) => {
   const [parameters, setParameters] = React.useState(() =>
     getDefaultizedUrlParams(defaultParams)
   );
@@ -63,13 +85,14 @@ const useUrlParams = (defaultParams) => {
 
   React.useEffect(() => {
     setParameters((prevParams) => {
-      const newParams = getDefaultizedUrlParams(defaultParams);
+      const newParams = getDefaultizedUrlParams(defaultParams, synonyms);
+
       const shouldUpdate = Object.keys(defaultParams).some(
         (key) => newParams[key] !== prevParams[key]
       );
       return shouldUpdate ? newParams : prevParams;
     });
-  }, [search, defaultParams]);
+  }, [search, defaultParams, synonyms]);
 
   const updateParameters = React.useCallback(
     (modifier) => {
