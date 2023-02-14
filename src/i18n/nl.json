@@ -201,7 +201,12 @@
     "result_count": "Toont {{showing}} op {{available}} beschikbaar",
     "flag": "Iets mis? Meld/markeer de afbeelding!",
     "unflag": "Onmarkeer de afbeelding",
-    "crop_image_title": "bijsnijden van het logo"
+    "crop_image_title": "bijsnijden van het logo",
+    "no_more_questions": "Geen vragen meer over dit logo. Je kunt proberen meer logo's te vinden met het volgende spel.",
+    "loading_messages": {
+      "pending_reference_logos": "We laden een voorbeeld van een logo",
+      "failed_reference_logos": "We hebben geen logo gevonden met deze annotatie. Probeer het volgende spel te gebruiken om er een paar te annoteren."
+    }
   },
   "settings": {
     "settings": "Instellingen",
@@ -210,7 +215,30 @@
     "reportIssue": "Bug gevonden? Laat het ons weten",
     "dev_mode_title": "Activeer de dev-modus om meer opties te krijgen",
     "dev_mode_label": "Dev-modus",
-    "dev_page_toggle": "Toon {{name}} pagina"
+    "dev_page_toggle": "Toon {{name}} pagina",
+    "join_community": "Word lid van de community",
+    "text1": "Open Food Facts is a collaborative project built by tens of thousands of volunteers and managed by a non-profit organization with 8 employees. We need your donations to fund the Open Food Facts 2023 budget and to continue to develop the project.",
+    "thank_you": "Thank you",
+    "donate": "Doneer",
+    "join_the_community": {
+      "discover_our": "Discover our ",
+      "code_of_conduct": "Code of conduct ",
+      "join_us_on": "Join us on ",
+      "forum": "Forum",
+      "subscribe_to_our": "Subscribe to our ",
+      "newsletter": "newsletter"
+    },
+    "discover_the_project": "Ontdek het project",
+    "Who_we_are": "Wie we zijn",
+    "Vision_Mission_Values_and_Programs": "Visie, missie, waarden en programma's",
+    "FAQS": "FAQS",
+    "open_Food_Facts_blog": "Open Food Facts blog",
+    "Press": "Pers",
+    "Open_Food_Facts_wiki": "Open Food Facts wiki (en)",
+    "Translators": "Vertalers",
+    "Partners": "Partners",
+    "Open_Beauty_Facts": "Open Beauty Facts - Cosmétiques",
+    "text2": "Een gezamenlijke, vrije en open database van voedingsmiddelen uit de hele wereld."
   },
   "helper": {
     "welcome": {
