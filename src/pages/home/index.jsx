@@ -1,15 +1,22 @@
 import * as React from "react";
+
 import { useTranslation } from "react-i18next";
+import { useTheme } from "@mui/material/styles";
+
 import Box from "@mui/material/Box";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
-import { Button, Divider, Modal } from "@mui/material";
+import Button from "@mui/material/Button";
+import Divider from "@mui/material/Divider";
+import Modal from "@mui/material/Modal";
+
 import QuestionCard from "../../components/QuestionCard";
-import { localFavorites } from "../../localeStorageManager";
-import LoginContext from "../../contexts/login";
+import FooterWithLinks from "../../components/Footer";
 import HomeCards from "./homeCards";
 import UserData from "./UserData";
-import { useTheme } from "@mui/material/styles";
+
+import { localFavorites } from "../../localeStorageManager";
+import LoginContext from "../../contexts/login";
 
 const Home = () => {
   const theme = useTheme();
@@ -152,6 +159,9 @@ const Home = () => {
           </Modal>
         </React.Fragment>
       )}
+
+      <Divider sx={{ width: "100%" }} light />
+      <FooterWithLinks />
     </>
   );
 };

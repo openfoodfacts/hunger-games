@@ -47,17 +47,14 @@ const pages = [
       {
         url: "logos/search",
         translationKey: "menu.logos-search",
-        devModeOnly: true,
       },
       {
         url: "logos/product-search",
         translationKey: "menu.logos-product-search",
-        devModeOnly: true,
       },
       {
         url: "logos/deep-search",
         translationKey: "menu.logos-deep-search",
-        devModeOnly: true,
       },
     ],
   },
