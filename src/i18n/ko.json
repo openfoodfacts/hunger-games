@@ -201,7 +201,12 @@
     "result_count": "{{showing}} 대 {{available}} 사용 가능 표시",
     "flag": "뭔가 잘못되었나요? 이미지를 신고/신고하세요!",
     "unflag": "이미지 플래그 해제",
-    "crop_image_title": "로고 자르기"
+    "crop_image_title": "로고 자르기",
+    "no_more_questions": "No more quesitons about this logo. You can try to find more logo with the following game.",
+    "loading_messages": {
+      "pending_reference_logos": "We are loading some logos example to initialised the serach",
+      "failed_reference_logos": "We did not find any logo with this annotation. Try to use the following game to annotate some of them."
+    }
   },
   "settings": {
     "settings": "설정",
@@ -210,7 +215,30 @@
     "reportIssue": "버그를 발견했나요? 저희에게 알려주세요",
     "dev_mode_title": "더 많은 옵션을 얻으려면 개발자 모드를 활성화하세요",
     "dev_mode_label": "개발자 모드",
-    "dev_page_toggle": "{{name}} 페이지 보기"
+    "dev_page_toggle": "{{name}} 페이지 보기",
+    "join_community": "커뮤니티에 참여",
+    "text1": "Open Food Facts is a collaborative project built by tens of thousands of volunteers and managed by a non-profit organization with 8 employees. We need your donations to fund the Open Food Facts 2023 budget and to continue to develop the project.",
+    "thank_you": "Thank you",
+    "donate": "기부",
+    "join_the_community": {
+      "discover_our": "Discover our ",
+      "code_of_conduct": "Code of conduct ",
+      "join_us_on": "Join us on ",
+      "forum": "Forum",
+      "subscribe_to_our": "Subscribe to our ",
+      "newsletter": "newsletter"
+    },
+    "discover_the_project": "프로젝트보세요",
+    "Who_we_are": "누가 우리가",
+    "Vision_Mission_Values_and_Programs": "비전, 사명, 가치 및 프로그램",
+    "FAQS": "FAQS",
+    "open_Food_Facts_blog": "Open Food Facts blog",
+    "Press": "프레스",
+    "Open_Food_Facts_wiki": "Open Food Facts wiki (en)",
+    "Translators": "번역에 도움을 주신 분들",
+    "Partners": "파트너",
+    "Open_Beauty_Facts": "Open Beauty Facts - Cosmétiques",
+    "text2": "세계 각국에서 식품의 협업 무료 오픈 데이터베이스."
   },
   "helper": {
     "welcome": {
