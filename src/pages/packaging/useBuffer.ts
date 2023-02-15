@@ -73,7 +73,7 @@ export const useBuffer = ({
   }, [country, creator]);
 
   React.useEffect(() => {
-    if (data !== null && data.length === 0) {
+    if (data != null && data.length === 0) {
       setPage((p) => Math.min(maxPage, p + 1));
     }
   }, [data, maxPage]);
@@ -82,7 +82,7 @@ export const useBuffer = ({
     let isValid = true;
     axios.get(url).then(({ data }) => {
       if (isValid) {
-        setData(data.products);
+        setData(data.products ?? [data.product]);
         setMaxPage(Math.floor(data.count / data.page_size) + 1);
         canReset.current = true;
       }
@@ -94,6 +94,6 @@ export const useBuffer = ({
 
   const next = () =>
     setData((prev) => (prev && prev.length > 0 ? prev.slice(1) : prev));
-
+  console.log(data);
   return [data, next];
 };
