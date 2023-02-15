@@ -201,7 +201,12 @@
     "result_count": "Mevcut {{showing}} üzerinde {{available}} gösteriliyor",
     "flag": "Ters giden birşey mi var? Resmi rapor edin/işaretleyin!",
     "unflag": "Resmin işaretini kaldır",
-    "crop_image_title": "logoyu kırp"
+    "crop_image_title": "logoyu kırp",
+    "no_more_questions": "Bu logo hakkında daha fazla soru yok. Aşağıdaki oyun ile daha fazla logo bulmaya çalışabilirsiniz.",
+    "loading_messages": {
+      "pending_reference_logos": "Aramayı başlatmak için bazı logo örnekleri yüklüyoruz",
+      "failed_reference_logos": "Bu açıklamaya sahip herhangi bir logo bulamadık. Bazılarına açıklama eklemek için aşağıdaki oyunu kullanmayı deneyin."
+    }
   },
   "settings": {
     "settings": "Ayarlar",
@@ -210,7 +215,30 @@
     "reportIssue": "Bir hata mı buldun?, lütfen bizi bilgilendirin",
     "dev_mode_title": "Daha fazla seçenek elde etmek için geliştirme modunu etkinleştirin",
     "dev_mode_label": "Geliştirici Modu",
-    "dev_page_toggle": "{{name}} sayfayı göster"
+    "dev_page_toggle": "{{name}} sayfayı göster",
+    "join_community": "Topluluğa katılın",
+    "text1": "Open Food Facts is a collaborative project built by tens of thousands of volunteers and managed by a non-profit organization with 8 employees. We need your donations to fund the Open Food Facts 2023 budget and to continue to develop the project.",
+    "thank_you": "Thank you",
+    "donate": "Bağış Yapın",
+    "join_the_community": {
+      "discover_our": "Discover our ",
+      "code_of_conduct": "Code of conduct ",
+      "join_us_on": "Join us on ",
+      "forum": "Forum",
+      "subscribe_to_our": "Subscribe to our ",
+      "newsletter": "newsletter"
+    },
+    "discover_the_project": "Projeyi keşfedin",
+    "Who_we_are": "Biz kimiz",
+    "Vision_Mission_Values_and_Programs": "Vizyon, Misyon, Değerler ve Programlar",
+    "FAQS": "FAQS",
+    "open_Food_Facts_blog": "Open Food Facts blog",
+    "Press": "Basın",
+    "Open_Food_Facts_wiki": "Open Food Facts wiki (en)",
+    "Translators": "Çevirmenler",
+    "Partners": "Partnerler",
+    "Open_Beauty_Facts": "Open Beauty Facts - Cosmétiques",
+    "text2": "Dünyanın dört bir yanından katılımcı, özgür ve açık gıda ürünleri veritabanı."
   },
   "helper": {
     "welcome": {

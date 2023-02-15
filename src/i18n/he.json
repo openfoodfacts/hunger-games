@@ -201,7 +201,12 @@
     "result_count": "מוצגים {{showing}} מתוך {{available}} הזמינים",
     "flag": "משהו לא תקין? אפשר לדווח/לסמן את התמונה!",
     "unflag": "ביטול סימון התמונה",
-    "crop_image_title": "חיתוך של הלוגו"
+    "crop_image_title": "חיתוך של הלוגו",
+    "no_more_questions": "אין עוד שאלות על הלוגו הזה. אפשר לנסות למצוא לוגואים נוספים עם המשחק הבא.",
+    "loading_messages": {
+      "pending_reference_logos": "אנו טוענים כמה דוגמאות לוגואים כדי להתחיל את החיפוש",
+      "failed_reference_logos": "לא הצלחנו למצוא לוגו עם הסבר כזה. כדאי לנסות להשתמש במשחק הבא כדי להוסיף הסבר לכמה מהם."
+    }
   },
   "settings": {
     "settings": "הגדרות",
@@ -210,7 +215,30 @@
     "reportIssue": "מצאת תקלה? נא ליידע אותנו",
     "dev_mode_title": "כדי לקבל אפשרויות נוספות, יש להפעיל את מצב הפיתוח",
     "dev_mode_label": "מצב פיתוח",
-    "dev_page_toggle": "הצגת העמוד {{name}}"
+    "dev_page_toggle": "הצגת העמוד {{name}}",
+    "join_community": "הצטרפות לקהילה",
+    "text1": "Open Food Facts is a collaborative project built by tens of thousands of volunteers and managed by a non-profit organization with 8 employees. We need your donations to fund the Open Food Facts 2023 budget and to continue to develop the project.",
+    "thank_you": "Thank you",
+    "donate": "תרומה",
+    "join_the_community": {
+      "discover_our": "Discover our ",
+      "code_of_conduct": "Code of conduct ",
+      "join_us_on": "Join us on ",
+      "forum": "Forum",
+      "subscribe_to_our": "Subscribe to our ",
+      "newsletter": "newsletter"
+    },
+    "discover_the_project": "לגלות עוד על המיזם",
+    "Who_we_are": "מי אנחנו",
+    "Vision_Mission_Values_and_Programs": "חזון, שליחות, ערכים ותכניות",
+    "FAQS": "FAQS",
+    "open_Food_Facts_blog": "Open Food Facts blog",
+    "Press": "מידע לעתונאים",
+    "Open_Food_Facts_wiki": "Open Food Facts wiki (en)",
+    "Translators": "מתרגמים",
+    "Partners": "שותפים",
+    "Open_Beauty_Facts": "Open Beauty Facts - Cosmétiques",
+    "text2": "מסד נתונים חופשי, פתוח ושיתופי של מוצרי מזון מכל רחבי העולם."
   },
   "helper": {
     "welcome": {

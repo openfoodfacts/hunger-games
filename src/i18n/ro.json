@@ -201,7 +201,12 @@
     "result_count": "Afișează {{showing}} la {{available}} disponibil",
     "flag": "Ceva greșit? Raportează/marchează imaginea!",
     "unflag": "Anulați semnalizarea imaginii",
-    "crop_image_title": "decuparea siglei"
+    "crop_image_title": "decuparea siglei",
+    "no_more_questions": "No more quesitons about this logo. You can try to find more logo with the following game.",
+    "loading_messages": {
+      "pending_reference_logos": "We are loading some logos example to initialised the serach",
+      "failed_reference_logos": "We did not find any logo with this annotation. Try to use the following game to annotate some of them."
+    }
   },
   "settings": {
     "settings": "Configurări",
@@ -210,7 +215,30 @@
     "reportIssue": "Ați găsit o eroare?, vă rugăm să ne anunțați",
     "dev_mode_title": "Pentru a obține mai multe opțiuni, activați modul dev",
     "dev_mode_label": "Mod dezvoltator",
-    "dev_page_toggle": "Arată pagina {{name}}"
+    "dev_page_toggle": "Arată pagina {{name}}",
+    "join_community": "Alăturați-vă comunității",
+    "text1": "Open Food Facts is a collaborative project built by tens of thousands of volunteers and managed by a non-profit organization with 8 employees. We need your donations to fund the Open Food Facts 2023 budget and to continue to develop the project.",
+    "thank_you": "Thank you",
+    "donate": "Donează",
+    "join_the_community": {
+      "discover_our": "Discover our ",
+      "code_of_conduct": "Code of conduct ",
+      "join_us_on": "Join us on ",
+      "forum": "Forum",
+      "subscribe_to_our": "Subscribe to our ",
+      "newsletter": "newsletter"
+    },
+    "discover_the_project": "Descoperiți proiectul",
+    "Who_we_are": "Cine suntem noi",
+    "Vision_Mission_Values_and_Programs": "Viziune, Misiune, Valori și Programe",
+    "FAQS": "FAQS",
+    "open_Food_Facts_blog": "Open Food Facts blog",
+    "Press": "Presa",
+    "Open_Food_Facts_wiki": "Open Food Facts wiki (en)",
+    "Translators": "Traducători",
+    "Partners": "Parteneri",
+    "Open_Beauty_Facts": "Open Beauty Facts - Cosmétiques",
+    "text2": "O bază de date colaborativă, liberă și deschisă a produselor alimentare din întreaga lume."
   },
   "helper": {
     "welcome": {

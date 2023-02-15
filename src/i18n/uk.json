@@ -201,7 +201,12 @@
     "result_count": "Shows {{showing}} on {{available}} available",
     "flag": "Щось не так? Повідомте/позначте зображення!",
     "unflag": "Зняти прапорець із зображення",
-    "crop_image_title": "кадрування логотипу"
+    "crop_image_title": "кадрування логотипу",
+    "no_more_questions": "No more quesitons about this logo. You can try to find more logo with the following game.",
+    "loading_messages": {
+      "pending_reference_logos": "We are loading some logos example to initialised the serach",
+      "failed_reference_logos": "We did not find any logo with this annotation. Try to use the following game to annotate some of them."
+    }
   },
   "settings": {
     "settings": "Налаштування",
@@ -210,7 +215,30 @@
     "reportIssue": "Знайшли помилку? Будь ласка, повідомте нас",
     "dev_mode_title": "Щоб отримати більше можливостей, активуйте режим розробника",
     "dev_mode_label": "Режим розробника",
-    "dev_page_toggle": "Показати {{name}} сторінку"
+    "dev_page_toggle": "Показати {{name}} сторінку",
+    "join_community": "Приєднатися до спільноти",
+    "text1": "Open Food Facts is a collaborative project built by tens of thousands of volunteers and managed by a non-profit organization with 8 employees. We need your donations to fund the Open Food Facts 2023 budget and to continue to develop the project.",
+    "thank_you": "Thank you",
+    "donate": "Підтримати проект",
+    "join_the_community": {
+      "discover_our": "Discover our ",
+      "code_of_conduct": "Code of conduct ",
+      "join_us_on": "Join us on ",
+      "forum": "Forum",
+      "subscribe_to_our": "Subscribe to our ",
+      "newsletter": "newsletter"
+    },
+    "discover_the_project": "Відкрийте для себе проєкт",
+    "Who_we_are": "Ким ми є",
+    "Vision_Mission_Values_and_Programs": "Бачення, Місія, Цінності та Програми",
+    "FAQS": "FAQS",
+    "open_Food_Facts_blog": "Open Food Facts blog",
+    "Press": "Натисніть",
+    "Open_Food_Facts_wiki": "Open Food Facts wiki (en)",
+    "Translators": "Перекладачі",
+    "Partners": "Партнери",
+    "Open_Beauty_Facts": "Open Beauty Facts - Cosmétiques",
+    "text2": "База даних продуктів харчування є спільною, безкоштовною та доступною по всьому світу."
   },
   "helper": {
     "welcome": {

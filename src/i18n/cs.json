@@ -201,7 +201,12 @@
     "result_count": "Zobrazuje {{showing}} z {{available}} k dispozici",
     "flag": "Něco špatně? Nahlašte/označte obrázek!",
     "unflag": "Zrušte označení obrázku",
-    "crop_image_title": "oříznutí loga"
+    "crop_image_title": "oříznutí loga",
+    "no_more_questions": "Žádné další dotazy k tomuto logu. Další logo můžete zkusit najít v následující hře.",
+    "loading_messages": {
+      "pending_reference_logos": "Načítáme příklad nějakých logotypů pro inicializaci vyhledávání",
+      "failed_reference_logos": "Nenašli jsme žádné logo s touto anotací. Zkuste použít následující hru pro anotaci některých z nich."
+    }
   },
   "settings": {
     "settings": "Nastavení",
@@ -210,7 +215,30 @@
     "reportIssue": "Našli jste chybu?, dejte nám prosím vědět",
     "dev_mode_title": "Chcete-li získat více možností, aktivujte režim pro vývojáře",
     "dev_mode_label": "Vývojářský režim",
-    "dev_page_toggle": "Zobrazit stránku {{name}}"
+    "dev_page_toggle": "Zobrazit stránku {{name}}",
+    "join_community": "Připojte se ke komunitě",
+    "text1": "Open Food Facts is a collaborative project built by tens of thousands of volunteers and managed by a non-profit organization with 8 employees. We need your donations to fund the Open Food Facts 2023 budget and to continue to develop the project.",
+    "thank_you": "Thank you",
+    "donate": "Podpořit",
+    "join_the_community": {
+      "discover_our": "Discover our ",
+      "code_of_conduct": "Code of conduct ",
+      "join_us_on": "Join us on ",
+      "forum": "Forum",
+      "subscribe_to_our": "Subscribe to our ",
+      "newsletter": "newsletter"
+    },
+    "discover_the_project": "Zjistěte více o projektu",
+    "Who_we_are": "Kdo jsme",
+    "Vision_Mission_Values_and_Programs": "Vize, mise, hodnoty a programy",
+    "FAQS": "FAQS",
+    "open_Food_Facts_blog": "Open Food Facts blog",
+    "Press": "Média",
+    "Open_Food_Facts_wiki": "Open Food Facts wiki (en)",
+    "Translators": "Překladatelé",
+    "Partners": "Partneři",
+    "Open_Beauty_Facts": "Open Beauty Facts - Cosmétiques",
+    "text2": "Společná, bezplatná a otevřená databáze potravinářských produktů z celého světa."
   },
   "helper": {
     "welcome": {

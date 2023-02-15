@@ -201,7 +201,12 @@
     "result_count": "Affiche {{showing}} sur {{available}} disponible",
     "flag": "Quelque chose ne va pas? Signalez l'image !",
     "unflag": "Démarquer l'image",
-    "crop_image_title": "recadrage du logo"
+    "crop_image_title": "recadrage du logo",
+    "no_more_questions": "No more quesitons about this logo. You can try to find more logo with the following game.",
+    "loading_messages": {
+      "pending_reference_logos": "We are loading some logos example to initialised the serach",
+      "failed_reference_logos": "We did not find any logo with this annotation. Try to use the following game to annotate some of them."
+    }
   },
   "settings": {
     "settings": "Paramètres",
@@ -210,7 +215,30 @@
     "reportIssue": "Vous avez trouvé une erreur ? Merci de nous le faire savoir",
     "dev_mode_title": "Pour obtenir plus d'options, activez le mode développeur",
     "dev_mode_label": "Mode développeur",
-    "dev_page_toggle": "Afficher la page {{name}}"
+    "dev_page_toggle": "Afficher la page {{name}}",
+    "join_community": "Rejoignez la communauté",
+    "text1": "Open Food Facts is a collaborative project built by tens of thousands of volunteers and managed by a non-profit organization with 8 employees. We need your donations to fund the Open Food Facts 2023 budget and to continue to develop the project.",
+    "thank_you": "Thank you",
+    "donate": "Faire un don",
+    "join_the_community": {
+      "discover_our": "Discover our ",
+      "code_of_conduct": "Code of conduct ",
+      "join_us_on": "Join us on ",
+      "forum": "Forum",
+      "subscribe_to_our": "Subscribe to our ",
+      "newsletter": "newsletter"
+    },
+    "discover_the_project": "Découvrez le projet",
+    "Who_we_are": "Qui sommes-nous ?",
+    "Vision_Mission_Values_and_Programs": "Vision, mission, valeurs et programmes",
+    "FAQS": "FAQS",
+    "open_Food_Facts_blog": "Open Food Facts blog",
+    "Press": "Presse",
+    "Open_Food_Facts_wiki": "Open Food Facts wiki (en)",
+    "Translators": "Traducteurs",
+    "Partners": "Partenaires",
+    "Open_Beauty_Facts": "Open Beauty Facts - Cosmétiques",
+    "text2": "Une base de données collaborative, libre et ouverte des produits alimentaires du monde entier."
   },
   "helper": {
     "welcome": {

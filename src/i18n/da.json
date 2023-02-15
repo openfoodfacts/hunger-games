@@ -201,7 +201,12 @@
     "result_count": "Shows {{showing}} on {{available}} available",
     "flag": "Noget galt? Anmeld/markér fotoet!",
     "unflag": "Afmarkér fotoet",
-    "crop_image_title": "crop of the logo"
+    "crop_image_title": "crop of the logo",
+    "no_more_questions": "Ikke flere spørgsmål om dette logo. Prøv evt. at finde flere logoer med flg. spil.",
+    "loading_messages": {
+      "pending_reference_logos": "Flere logoeksempler indlæses for at initialisere søgningen",
+      "failed_reference_logos": "Intet logo med denne anmærkning fundet. Prøv at bruge flg. spil til at kommentere nogle af dem."
+    }
   },
   "settings": {
     "settings": "Indstillinger",
@@ -210,7 +215,30 @@
     "reportIssue": "Fundet en fejl? Fortæl os det venligst",
     "dev_mode_title": "Aktiver udviklertilstanden for flere valgmuligheder",
     "dev_mode_label": "Dev-tilstand",
-    "dev_page_toggle": "Vis {{name}}side"
+    "dev_page_toggle": "Vis {{name}}side",
+    "join_community": "Deltag i fællesskabet",
+    "text1": "Open Food Facts is a collaborative project built by tens of thousands of volunteers and managed by a non-profit organization with 8 employees. We need your donations to fund the Open Food Facts 2023 budget and to continue to develop the project.",
+    "thank_you": "Thank you",
+    "donate": "Donér",
+    "join_the_community": {
+      "discover_our": "Discover our ",
+      "code_of_conduct": "Code of conduct ",
+      "join_us_on": "Join us on ",
+      "forum": "Forum",
+      "subscribe_to_our": "Subscribe to our ",
+      "newsletter": "newsletter"
+    },
+    "discover_the_project": "Gå på opdagelse i projektet",
+    "Who_we_are": "Hvem vi er",
+    "Vision_Mission_Values_and_Programs": "Vision, Mission, Værdier og Programmer",
+    "FAQS": "FAQS",
+    "open_Food_Facts_blog": "Open Food Facts blog",
+    "Press": "Presse",
+    "Open_Food_Facts_wiki": "Open Food Facts wiki (en)",
+    "Translators": "Oversættere",
+    "Partners": "Partnere",
+    "Open_Beauty_Facts": "Open Beauty Facts - Cosmétiques",
+    "text2": "En fællesskabsdrevet, gratis og åben database med fødevareprodukter for hele verden."
   },
   "helper": {
     "welcome": {
