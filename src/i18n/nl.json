@@ -26,14 +26,14 @@
     "saved_filters": "Opgeslagen filters",
     "contribution_modal": {
       "title": "Jouw bijdrage doet ertoe",
-      "information": "Hunger Games is een poging om de resultaten van onze OCR te benutten. Wanneer u Hunger Games van Open Food Facts gebruikt, verbetert u onze hele database, waardoor de gemeenschap betere voedselkeuzes kan maken. We verzamelen uw annotaties en gebruiken ze om Open Food Facts nauwkeuriger en efficiënter te maken.",
+      "information": "Hunger Games is an effort to leverage the results of our OCR and artificial intelligence. When you use Hunger Games by Open Food Facts, you improve our entire database which helps the community make better food choices. We gather your annotations and use them to make Open Food Facts more accurate and effecient.",
       "thank_you": "Bedankt dat je ons helpt Open Food Facts te verbeteren, zodat meer mensen het gemakkelijk kunnen gebruiken."
     },
     "statistics": {
       "title": "{{userName}} statistieken:",
       "editorCount": {
         "title": "Bewerkers",
-        "description": "Aantal uitgevoerde edities"
+        "description": "Aantal bewerkingen gedaan"
       },
       "contributorCount": {
         "title": "Bijdrager",
@@ -114,7 +114,7 @@
     "log_in": "Log in",
     "sign_up": "Aanmelden",
     "login_title": "Laat uw annotatie tellen",
-    "login_description": "Momenteel bent u niet ingelogd in Open Food Facts. Als u uw antwoorden direct op producten wilt toepassen en aan uw account wilt koppelen, kunt u overwegen om in te loggen op uw Open Food Facts-account of om er een te maken",
+    "login_description": "You are not currently logged into Open Food Facts. To get your answers directly applied to products, and associated to your account, consider logging in to your Open Food Facts account, or creating one",
     "please_wait_while_we_fetch_the_question": "Een ogenblik geduld, we halen de vraag op!"
   },
   "menu": {
@@ -133,8 +133,8 @@
     "eco-score": "Eco-Score",
     "dashboard": "Logo's-dashboard",
     "tour": "Toon rondleiding",
-    "logged_in_user": "ingelogd als {{userName}}",
-    "log_in": "klik om in te loggen"
+    "logged_in_user": "Ingelogd als {{userName}}",
+    "log_in": "Klik om in te loggen"
   },
   "insights": {
     "insights": "Inzichten",
@@ -193,7 +193,7 @@
     "no_found": "Geen logo gevonden",
     "search": "Zoeken",
     "number_of_results": "Aantal resultaten:",
-    "loading": "Bezig met laden...",
+    "loading": "Bezig met laden…",
     "refresh": "Herladen",
     "search_specific": "Zoek specifiek logo",
     "load_more": "Meer laden",
@@ -212,32 +212,32 @@
     "settings": "Instellingen",
     "language": "Talen",
     "save": "Opslaan",
-    "reportIssue": "Bug gevonden? Laat het ons weten",
+    "reportIssue": "Een bug gevonden? Laat het ons weten.",
     "dev_mode_title": "Activeer de dev-modus om meer opties te krijgen",
     "dev_mode_label": "Dev-modus",
     "dev_page_toggle": "Toon {{name}} pagina",
     "join_community": "Word lid van de community",
-    "text1": "Open Food Facts is a collaborative project built by tens of thousands of volunteers and managed by a non-profit organization with 8 employees. We need your donations to fund the Open Food Facts 2023 budget and to continue to develop the project.",
-    "thank_you": "Thank you",
+    "text1": "Open Food Facts is een samenwerkingsproject gebouwd door tienduizenden vrijwilligers en beheerd door een non-profitorganisatie met 8 medewerkers. Je donaties zijn nodig om de Open Food Facts 2023 begroting te financieren en om door te gaan met de ontwikkeling van het project.",
+    "thank_you": "Bedankt",
     "donate": "Doneer",
     "join_the_community": {
-      "discover_our": "Discover our ",
-      "code_of_conduct": "Code of conduct ",
-      "join_us_on": "Join us on ",
+      "discover_our": "Ontdek onze ",
+      "code_of_conduct": "Gedragscode ",
+      "join_us_on": "Volg ons op ",
       "forum": "Forum",
-      "subscribe_to_our": "Subscribe to our ",
-      "newsletter": "newsletter"
+      "subscribe_to_our": "Abonneer op onze ",
+      "newsletter": "nieuwsbrief"
     },
     "discover_the_project": "Ontdek het project",
     "Who_we_are": "Wie we zijn",
     "Vision_Mission_Values_and_Programs": "Visie, missie, waarden en programma's",
-    "FAQS": "FAQS",
+    "FAQS": "Veelgestelde vragen (FAQ)",
     "open_Food_Facts_blog": "Open Food Facts blog",
     "Press": "Pers",
     "Open_Food_Facts_wiki": "Open Food Facts wiki (en)",
     "Translators": "Vertalers",
     "Partners": "Partners",
-    "Open_Beauty_Facts": "Open Beauty Facts - Cosmétiques",
+    "Open_Beauty_Facts": "Open Beauty Facts - Cosmetica",
     "text2": "Een gezamenlijke, vrije en open database van voedingsmiddelen uit de hele wereld."
   },
   "helper": {
@@ -252,13 +252,13 @@
         "title": "Vragen Spel",
         "text1": "Is het voedingsproduct van dit merk?",
         "text2": "Antwoord gewoon met een <strong>ja/nee</strong>! Weet u het antwoord niet? Dat is prima, sla het gewoon over.",
-        "text3": "Je kunt ook je toetsenbord toetsen o,n en k gebruiken.",
+        "text3": "You can also use your keyboard shortcuts: y,n and k.",
         "text4": "U kunt <strong>producten <strong> filteren</strong> op basis van land, merken, populariteit en nog veel meer!",
         "text5": "Als u dit niet elke keer wilt doen, kunt u ook de filters <strong>opslaan</strong> door op de ster te klikken. De volgende keer dat u terugkomt, vindt u de opgeslagen filters op de startpagina zelf"
       },
       "page3": {
         "title": "Logo's spel",
-        "text1": "Onze andere echt geliefde game is het logo-spel waarbij je <strong> alle logo's</strong> moet selecteren waarvan je denkt dat ze hetzelfde zijn.",
+        "text1": "Another popular game is the logos game where you have to <strong>select all the logos</strong> you feel are the same.",
         "text2": "Zoals in het voorbeeld wordt getoond, typt u, zodra u alle vergelijkbare logo's hebt geselecteerd, hun waarde en selecteert u of het een merk, een label of iets anders is. Het is zo simpel!"
       },
       "page4": {
@@ -288,7 +288,7 @@
       "page2": {
         "title": "Waarschuwing",
         "text1": "Als de uitsnede meerdere logo's bevat, selecteert u deze niet.",
-        "text2": "Als de uitsnede slechts een deel van een logo bevat, kunt u deze selecteren"
+        "text2": "Als de uitsnede slechts een deel van een logo bevat, kunt u deze selecteren."
       },
       "page3": {
         "title": "Bevestigen",
@@ -317,7 +317,7 @@
     },
     "loading": "Bezig met laden...",
     "unknown_brand": "Merk onbekend",
-    "value_missing": "U bent vergeten de waarde in te voeren",
+    "value_missing": "U bent vergeten een waarde in te voeren.",
     "next": "Volgende stap",
     "prev": "Vorige stap",
     "skip": "Dit product overslaan",

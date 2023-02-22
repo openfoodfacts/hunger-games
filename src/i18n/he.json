@@ -26,7 +26,7 @@
     "saved_filters": "מסננים שמורים",
     "contribution_modal": {
       "title": "התרומות שלך מביאות לשינוי",
-      "information": "משחקי הרעב הם מאמץ למנף את תוצאות הסריקה האופטית שלנו. שימוש במשחקי הרעב של Open Food Facts, תורמים בשיפור מסד הנתונים שלנו, מה שעוזר לקהילה לבחור טוב יותר באוכל. אנו אוספים את התיוגים שלך ומשתמשים בהם כדי להפוך את Open Food Facts למדויק ויעיל יותר.",
+      "information": "משחקי הרעב הם מאמץ למנף את תוצאות הסריקה האופטית והבינה המלאכותית שלנו. שימוש במשחקי הרעב של Open Food Facts, תורמים בשיפור מסד הנתונים שלנו, מה שעוזר לקהילה לבחור טוב יותר באוכל. אנו אוספים את התיוגים שלך ומשתמשים בהם כדי להפוך את Open Food Facts למדויק ויעיל יותר.",
       "thank_you": "תודה לך על הסיוע בשיפור Open Food Facts כדי שיותר אנשים יוכלו להשתמש בשירות בקלות."
     },
     "statistics": {
@@ -205,39 +205,39 @@
     "no_more_questions": "אין עוד שאלות על הלוגו הזה. אפשר לנסות למצוא לוגואים נוספים עם המשחק הבא.",
     "loading_messages": {
       "pending_reference_logos": "אנו טוענים כמה דוגמאות לוגואים כדי להתחיל את החיפוש",
-      "failed_reference_logos": "לא הצלחנו למצוא לוגו עם הסבר כזה. כדאי לנסות להשתמש במשחק הבא כדי להוסיף הסבר לכמה מהם."
+      "failed_reference_logos": "לא הצלחנו למצוא לוגואים עם הסבר כזה. כדאי לנסות להשתמש במשחק הבא כדי להוסיף הסבר לכמה מהם."
     }
   },
   "settings": {
     "settings": "הגדרות",
     "language": "שפות",
     "save": "שמירה",
-    "reportIssue": "מצאת תקלה? נא ליידע אותנו",
+    "reportIssue": "מצאת תקלה? נא ליידע אותנו.",
     "dev_mode_title": "כדי לקבל אפשרויות נוספות, יש להפעיל את מצב הפיתוח",
     "dev_mode_label": "מצב פיתוח",
     "dev_page_toggle": "הצגת העמוד {{name}}",
     "join_community": "הצטרפות לקהילה",
-    "text1": "Open Food Facts is a collaborative project built by tens of thousands of volunteers and managed by a non-profit organization with 8 employees. We need your donations to fund the Open Food Facts 2023 budget and to continue to develop the project.",
-    "thank_you": "Thank you",
+    "text1": "Open Food Facts הוא מיזם שיתופי שנבנה על ידי עשרות אלפי מתנדבים ומנוהל על ידי ארגון ללא מטרות רווח שמונה 8 עובדים. אנו זקוקים לתרומה שלך כדי לממן את התקציב לשנת 2023 ולהמשיך לפתח את המיזם.",
+    "thank_you": "תודה רבה",
     "donate": "תרומה",
     "join_the_community": {
-      "discover_our": "Discover our ",
-      "code_of_conduct": "Code of conduct ",
-      "join_us_on": "Join us on ",
-      "forum": "Forum",
-      "subscribe_to_our": "Subscribe to our ",
-      "newsletter": "newsletter"
+      "discover_our": "עיון ",
+      "code_of_conduct": "בקוד ההתנהגות שלנו ",
+      "join_us_on": "מזמינים אותך להצטרף אלינו ",
+      "forum": "בפורום",
+      "subscribe_to_our": "הרשמה למינוי ",
+      "newsletter": "בקבוצת הדיוור שלנו"
     },
     "discover_the_project": "לגלות עוד על המיזם",
     "Who_we_are": "מי אנחנו",
     "Vision_Mission_Values_and_Programs": "חזון, שליחות, ערכים ותכניות",
-    "FAQS": "FAQS",
-    "open_Food_Facts_blog": "Open Food Facts blog",
+    "FAQS": "שו״תים",
+    "open_Food_Facts_blog": "הבלוג של Open Food Facts",
     "Press": "מידע לעתונאים",
-    "Open_Food_Facts_wiki": "Open Food Facts wiki (en)",
+    "Open_Food_Facts_wiki": "הוויקי של Open Food Facts (אנגלית)",
     "Translators": "מתרגמים",
     "Partners": "שותפים",
-    "Open_Beauty_Facts": "Open Beauty Facts - Cosmétiques",
+    "Open_Beauty_Facts": "Open Beauty Facts - טיפוח",
     "text2": "מסד נתונים חופשי, פתוח ושיתופי של מוצרי מזון מכל רחבי העולם."
   },
   "helper": {
@@ -252,13 +252,13 @@
         "title": "משחק שאלות",
         "text1": "האם מוצר המזון שייך למותג הזה?",
         "text2": "יש לענות בפשטות עם <strong>כן/לא</strong>! אין לך תשובה? זה בסדר, אפשר פשוט לדלג על זה.",
-        "text3": "אפשר גם להשתמש במקשי המקלדת o,‏ n ו־k.",
+        "text3": "אפשר גם להשתמש במקשי המקלדת y,‏ n ו־k.",
         "text4": "אפשר <strong>לסנן</strong> את המוצרים לפי מדינה, מותגים, פופולריות ועוד!",
         "text5": "כדי להימנע מחזרה על הפעולה הזאת כל פעם מחדש, אפשר <strong>לשמור את המסננים</strong> בלחיצה על הכוכב. עם שובך, ניתן למצוא את המסננים השמורים בעמוד הבית עצמו"
       },
       "page3": {
         "title": "משחק לוגואים",
-        "text1": "עוד משחק מעולה הוא משחק הלוגואים שבו צריך <strong> לבחור את כל הלוגואים</strong> שלדעתך הם זהים.",
+        "text1": "עוד משחק נפוץ הוא משחק הלוגואים שבו צריך <strong>לבחור את כל הלוגואים</strong> שלדעתך הם זהים.",
         "text2": "כפי שמופיע בתמונה, לאחר שבחרת את כל הלוגואים הדומים, עליך פשוט להקליד את הערך שלהם ולבחור האם זה מותג, תוויות או משהו אחר. זה עד כדי כך פשוט!"
       },
       "page4": {
@@ -288,7 +288,7 @@
       "page2": {
         "title": "אזהרה",
         "text1": "אם החיתוך מכיל מספר לוגואים אין לבחור אותו.",
-        "text2": "אם החיתוך מכיל רק חלק מהלוגו, ניתן לבחור בו"
+        "text2": "אם החיתוך מכיל רק חלק מהלוגו, ניתן לבחור בו."
       },
       "page3": {
         "title": "אימות",
@@ -317,7 +317,7 @@
     },
     "loading": "בטעינה…",
     "unknown_brand": "מותג לא ידוע",
-    "value_missing": "שכחת למלא ערך אחיייייייייייייייייי",
+    "value_missing": "שכחת למלא ערך.",
     "next": "השלב הבא",
     "prev": "השלב הקודם",
     "skip": "דילוג על מוצר זה",

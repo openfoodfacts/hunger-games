@@ -26,14 +26,14 @@
     "saved_filters": "Các bộ lọc đã lưu",
     "contribution_modal": {
       "title": "Đóng góp của bạn rất quan trọng",
-      "information": "Hunger Games là một nỗ lực tận dụng kết quả OCR của chúng tôi. Khi bạn sử dụng Hunger Games của Open Food Facts, bạn sẽ cải thiện toàn bộ cơ sở dữ liệu của chúng tôi và giúp cho cộng đồng người dùng đưa ra lựa chọn thực phẩm tốt hơn. Chúng tôi thu thập các chú thích của bạn và sử dụng chúng để giúp cho Open Food Facts chính xác và hiệu quả hơn.",
+      "information": "Hunger Games is an effort to leverage the results of our OCR and artificial intelligence. When you use Hunger Games by Open Food Facts, you improve our entire database which helps the community make better food choices. We gather your annotations and use them to make Open Food Facts more accurate and effecient.",
       "thank_you": "Cảm ơn bạn đã giúp chúng tôi cải thiện Open Food Facts để nhiều người có thể sử dụng nó một cách dễ dàng."
     },
     "statistics": {
       "title": "{{userName}} thống kê:",
       "editorCount": {
         "title": "Editor",
-        "description": "Số lượng ấn bản đã hoàn thành"
+        "description": "Number of editions done"
       },
       "contributorCount": {
         "title": "Người đóng góp",
@@ -114,7 +114,7 @@
     "log_in": "Tên người dùng",
     "sign_up": "Đăng ký",
     "login_title": "Khiến chú thích của bạn hữu ích",
-    "login_description": "Hiện tại bạn chưa đăng nhập Open Food Facts. Để nhận được câu trả lời trực tiếp áp dụng cho các sản phẩm và được liên kết với tài khoản của bạn, hãy cân nhắc việc đăng nhập vào tài khoản Open Food Facts của bạn hoặc tạo một tài khoản mới",
+    "login_description": "You are not currently logged into Open Food Facts. To get your answers directly applied to products, and associated to your account, consider logging in to your Open Food Facts account, or creating one",
     "please_wait_while_we_fetch_the_question": "Please wait while we fetch the question!"
   },
   "menu": {
@@ -125,16 +125,16 @@
     "logos-annotation": "Chú thích logo",
     "logos-search": "Tìm kiếm logo",
     "logos-product-search": "Chú thích cho mỗi sản phẩm",
-    "logos-deep-search": "Infinit annotation",
+    "logos-deep-search": "Infinite annotation",
     "manage": "Quản lý",
     "insights": "Thông tin chi tiết",
     "nutritions": "Giá trị dinh dưỡng",
     "settings": "Cài đặt",
     "eco-score": "Điểm sinh thái",
     "dashboard": "Logos dashboard",
-    "tour": "Hiện hướng dẫn",
-    "logged_in_user": "đăng nhập với {{userName}}",
-    "log_in": "nhấn để đăng nhập"
+    "tour": "Show tour",
+    "logged_in_user": "Logged as {{userName}}",
+    "log_in": "Click to login"
   },
   "insights": {
     "insights": "Thông tin chi tiết",
@@ -193,7 +193,7 @@
     "no_found": "Không tìm thấy logo",
     "search": "Tìm kiếm",
     "number_of_results": "Số lượng kết quả:",
-    "loading": "Đang tải...",
+    "loading": "Loading...",
     "refresh": "Làm mới",
     "search_specific": "Tìm kiếm logo cụ thể",
     "load_more": "Tải thêm",
@@ -202,17 +202,17 @@
     "flag": "Có gì đó không đúng? Báo cáo / gắn cờ hình ảnh!",
     "unflag": "Bỏ gắn thẻ hình ảnh",
     "crop_image_title": "cắt logo",
-    "no_more_questions": "No more quesitons about this logo. You can try to find more logo with the following game.",
+    "no_more_questions": "No more questions about this logo. You can try to find more logos with the following game.",
     "loading_messages": {
-      "pending_reference_logos": "We are loading some logos example to initialised the serach",
-      "failed_reference_logos": "We did not find any logo with this annotation. Try to use the following game to annotate some of them."
+      "pending_reference_logos": "We are loading some logos examples to initialise the serach",
+      "failed_reference_logos": "We did not find any logos with this annotation. Try to use the following game to annotate some of them."
     }
   },
   "settings": {
     "settings": "Cài đặt",
     "language": "Ngôn ngữ",
     "save": "Lưu",
-    "reportIssue": "Có lỗi? Hãy báo cho chúng tôi",
+    "reportIssue": "Found a bug? Please let us know.",
     "dev_mode_title": "Để có thêm tùy chọn, hãy kích hoạt chế độ nhà phát triển",
     "dev_mode_label": "Chế độ nhà phát triển",
     "dev_page_toggle": "Hiển thị trang {{name}}",
@@ -237,7 +237,7 @@
     "Open_Food_Facts_wiki": "Open Food Facts wiki (en)",
     "Translators": "Người dịch",
     "Partners": "Các đối tác",
-    "Open_Beauty_Facts": "Open Beauty Facts - Cosmétiques",
+    "Open_Beauty_Facts": "Open Beauty Facts - Mỹ phẩm",
     "text2": "Một cơ sở dữ liệu hợp tác, tự do và cởi mở của các sản phẩm thực phẩm từ khắp nơi trên thế giới."
   },
   "helper": {
@@ -251,20 +251,20 @@
       "page2": {
         "title": "Trò chơi câu hỏi",
         "text1": "Sản phẩm thực phẩm có thuộc nhãn hàng này không?",
-        "text2": "Trả lời đơn giản với <strong>có / không</strong>! Không biết câu trả lời? Không sao, bạn có thể bỏ qua.",
-        "text3": "Bạn cũng có thể sử dụng các phím o, n và k trên bàn phím.",
+        "text2": "Simply answer with a <strong>Yes/No</strong>! Don't know the answer? That's alright, just skip it.",
+        "text3": "You can also use your keyboard shortcuts: y,n and k.",
         "text4": "Bạn có thể <strong>lọc</strong> các sản phẩm dựa trên quốc gia, thương hiệu, mức độ phổ biến và hơn thế nữa!",
         "text5": "Nếu bạn không muốn làm điều này mỗi lần, bạn cũng có thể <strong>lưu các bộ lọc</strong> bằng cách nhấp vào dấu sao. Lần tới khi bạn quay lại, hãy tìm các bộ lọc đã lưu trên chính trang chủ"
       },
       "page3": {
         "title": "Trò chơi Logo",
-        "text1": "Một trò chơi rất được yêu thích khác của chúng tôi là trò chơi biểu trưng trong đó bạn phải <strong> chọn tất cả các biểu trưng </strong> mà bạn cảm thấy giống nhau.",
+        "text1": "Another popular game is the logos game where you have to <strong>select all the logos</strong> you feel are the same.",
         "text2": "Như đã được hiển thị trong ví dụ, khi bạn chọn tất cả các logo tương tự, chỉ cần nhập giá trị của chúng và chọn vị trí có thương hiệu, nhãn hiệu hoặc thứ gì đó khác. Rât đơn giản mà!"
       },
       "page4": {
         "title": "Trò chơi trả lời câu hỏi về điểm sinh thái",
         "text1": "Giúp chúng tôi hoàn thành các câu hỏi còn lại trong các nhãn có mức độ ưu tiên cao nhất!",
-        "text2": "Các thẻ này được liên kết với các nhãn được sử dụng để tính điểm sinh thái.",
+        "text2": "These cards are linked to labels used in the computation of the Eco-Score.",
         "text3": "<strong>Điểm Sinh thái là gì?</strong>",
         "text4": "Điểm Sinh thái ghi lại tổng dấu vết môi trường, giúp người tiêu dùng dễ dàng so sánh các sản phẩm và quyết định sản phẩm nào tốt hơn cho môi trường."
       },
@@ -288,7 +288,7 @@
       "page2": {
         "title": "Cảnh báo",
         "text1": "Nếu vùng cắt chứa nhiều logo, không chọn nó.",
-        "text2": "Nếu phần cắt chỉ chứa một phần của logo, bạn có thể chọn nó"
+        "text2": "If the crop contains only a partial part of a logo, you can select it."
       },
       "page3": {
         "title": "Xác thực",
@@ -317,9 +317,9 @@
     },
     "loading": "Đang tải...",
     "unknown_brand": "Nhãn hiệu không xác định",
-    "value_missing": "Bạn quên nhập giá trị duuuuuuuuuuuuuuuuude",
-    "next": "Bước tiếp theo",
-    "prev": "Bước trước đó",
+    "value_missing": "You forgot to input a value.",
+    "next": "Next step",
+    "prev": "Prev step",
     "skip": "Bỏ qua sản phẩm này",
     "validate": "Xác thực bảng",
     "unselect_picture": "Không có thông tin dinh dưỡng",
