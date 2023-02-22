@@ -26,14 +26,14 @@
     "saved_filters": "Filtros salvos",
     "contribution_modal": {
       "title": "Sua contribuição é importante",
-      "information": "Jogos Vorazes é um esforço para alavancar os resultados do nosso OCR. Quando você usa Jogos Vorazes da Open Food Facts, você melhora todo o nosso banco de dados, o que ajuda a comunidade a fazer melhores escolhas alimentares. Reunimos as suas anotações e as usamos para tornar o Open Food Facts mais preciso e eficiente.",
+      "information": "Hunger Games is an effort to leverage the results of our OCR and artificial intelligence. When you use Hunger Games by Open Food Facts, you improve our entire database which helps the community make better food choices. We gather your annotations and use them to make Open Food Facts more accurate and effecient.",
       "thank_you": "Obrigado por nos ajudar a melhorar o Open Food Facts para que mais pessoas possam usá-lo facilmente."
     },
     "statistics": {
       "title": "{{userName}} estatísticas:",
       "editorCount": {
         "title": "Editor",
-        "description": "Número de edições feitas"
+        "description": "Number of editions done"
       },
       "contributorCount": {
         "title": "Colaborador",
@@ -114,7 +114,7 @@
     "log_in": "Nome de Utilizador",
     "sign_up": "Inscrever",
     "login_title": "Faça o seu comentário contar",
-    "login_description": "Você não está logado no Open Food Facts. Para obter suas respostas aplicadas diretamente aos produtos e associadas à sua conta, conecte-se ao Open Food Facts ou crie uma conta",
+    "login_description": "You are not currently logged into Open Food Facts. To get your answers directly applied to products, and associated to your account, consider logging in to your Open Food Facts account, or creating one",
     "please_wait_while_we_fetch_the_question": "Por favor aguarde enquanto buscamos a pergunta!"
   },
   "menu": {
@@ -125,16 +125,16 @@
     "logos-annotation": "Anotação de logotipos",
     "logos-search": "Pesquisa de logotipos",
     "logos-product-search": "Anotação por produtos",
-    "logos-deep-search": "Anotação infinita",
+    "logos-deep-search": "Infinite annotation",
     "manage": "Gerencie",
     "insights": "Percepções",
     "nutritions": "Informação nutricional",
     "settings": "Definições",
     "eco-score": "Eco-score",
     "dashboard": "Painel de Logos",
-    "tour": "Mostrar o Tour",
-    "logged_in_user": "Conectado como {{userName}}",
-    "log_in": "Clique para acessar"
+    "tour": "Show tour",
+    "logged_in_user": "Logged as {{userName}}",
+    "log_in": "Click to login"
   },
   "insights": {
     "insights": "Percepções",
@@ -193,7 +193,7 @@
     "no_found": "Nenhuma logo encontrada",
     "search": "Procurar",
     "number_of_results": "Número de resultados:",
-    "loading": "Carregando...",
+    "loading": "Carregando…",
     "refresh": "Atualizar",
     "search_specific": "Pesquisar logotipo específico",
     "load_more": "Carregar mais",
@@ -202,17 +202,17 @@
     "flag": "Algo errado? Relatar/marcar a imagem!",
     "unflag": "Desmarcar a imagem",
     "crop_image_title": "Cortar o logotipo",
-    "no_more_questions": "No more quesitons about this logo. You can try to find more logo with the following game.",
+    "no_more_questions": "No more questions about this logo. You can try to find more logos with the following game.",
     "loading_messages": {
-      "pending_reference_logos": "We are loading some logos example to initialised the serach",
-      "failed_reference_logos": "We did not find any logo with this annotation. Try to use the following game to annotate some of them."
+      "pending_reference_logos": "We are loading some logos examples to initialise the serach",
+      "failed_reference_logos": "We did not find any logos with this annotation. Try to use the following game to annotate some of them."
     }
   },
   "settings": {
     "settings": "Definições",
     "language": "Línguas",
     "save": "Guardar",
-    "reportIssue": "Encontrou um bug? por favor nos avise",
+    "reportIssue": "Found a bug? Please let us know.",
     "dev_mode_title": "Para obter mais opções, ative o modo de desenvolvimento",
     "dev_mode_label": "Modo desenvolvedor",
     "dev_page_toggle": "Mostrar página de {{name}}",
@@ -237,7 +237,7 @@
     "Open_Food_Facts_wiki": "Open Food Facts wiki (en)",
     "Translators": "Tradutores",
     "Partners": "Parceiros",
-    "Open_Beauty_Facts": "Open Beauty Facts - Cosmétiques",
+    "Open_Beauty_Facts": "Open Beauty Facts - Cosméticos",
     "text2": "Uma base de dados colaborativa, livre e aberta sobre produtos alimentares de todo o mundo."
   },
   "helper": {
@@ -251,20 +251,20 @@
       "page2": {
         "title": "Jogo de perguntas",
         "text1": "O produto alimentar pertence a esta marca?",
-        "text2": "Responda simplesmente com <strong>sim/não</strong>! Não sabe a resposta? Está bem, é só pulá-la.",
-        "text3": "Você também pode usar as teclas o, n e k do teclado.",
+        "text2": "Simply answer with a <strong>Yes/No</strong>! Don't know the answer? That's alright, just skip it.",
+        "text3": "You can also use your keyboard shortcuts: y,n and k.",
         "text4": "Você pode <strong>filtrar</strong> os produtos por país, marcas, popularidade e muito mais!",
         "text5": "Se você não quiser fazer isso todas as vezes, você também pode <strong>salvar os filtros</strong> clicando na estrela. Na próxima vez que você voltar, encontre os filtros salvos na própria página inicial"
       },
       "page3": {
         "title": "Jogo de logotipos",
-        "text1": "Nosso outro jogo muito amado é o jogo de logotipos, em que você deve <strong>selecionar todos os logotipos</strong> que acreditar serem os mesmos.",
+        "text1": "Another popular game is the logos game where you have to <strong>select all the logos</strong> you feel are the same.",
         "text2": "Como no exemplo, quando você selecionar todos os logotipos similares, é só digitar seu valor e selecionar se é marca, rótulo ou outra coisa. Simples assim!"
       },
       "page4": {
         "title": "Jogo de perguntas Eco-Score",
         "text1": "Ajude-nos a terminar as questões faltantes nos rótulos de maior prioridade!",
-        "text2": "Esses cartões estão vinculados aos rótulos usados no cálculo do eco-score.",
+        "text2": "These cards are linked to labels used in the computation of the Eco-Score.",
         "text3": "<strong>O que é Eco-Score?</strong>",
         "text4": "O Eco-Score capta o tamanho total da pegada ambiental, tornando mais fácil para os consumidores comparar produtos e decidir qual deles é melhor para o meio ambiente."
       },
@@ -288,7 +288,7 @@
       "page2": {
         "title": "Aviso",
         "text1": "Se o recorte contiver vários logotipos, não o selecione.",
-        "text2": "Se o recorte contiver apenas uma parte de um logotipo, você pode selecioná-lo"
+        "text2": "If the crop contains only a partial part of a logo, you can select it."
       },
       "page3": {
         "title": "Validar",
@@ -317,9 +317,9 @@
     },
     "loading": "Carregando...",
     "unknown_brand": "Marca desconhecida",
-    "value_missing": "Você esqueceu de inserir o valor, amigo",
-    "next": "Próximo Passo",
-    "prev": "Passo Anterior",
+    "value_missing": "You forgot to input a value.",
+    "next": "Next step",
+    "prev": "Prev step",
     "skip": "Pular este produto",
     "validate": "Validar Tabela",
     "unselect_picture": "Sem informações nutricionais",

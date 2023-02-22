@@ -26,14 +26,14 @@
     "saved_filters": "Запазени филтри",
     "contribution_modal": {
       "title": "Твоят принос има значение",
-      "information": "Игрите на глада са опит да се използват резултатите от нашият OCR. Когато използвате Игрите на глада от Open Food Facts, подобрявате цялата ни база данни, което помага на общността да прави по-добър избор на храна. Ние събираме вашите пояснения и ги използваме, за да направим Open Food Facts по-точни и ефективни.",
+      "information": "Hunger Games is an effort to leverage the results of our OCR and artificial intelligence. When you use Hunger Games by Open Food Facts, you improve our entire database which helps the community make better food choices. We gather your annotations and use them to make Open Food Facts more accurate and effecient.",
       "thank_you": "Благодарим ти, че ни помагаш да подобрим Open Food Facts, така че повече хора да могат да го използват лесно."
     },
     "statistics": {
       "title": "{{userName}} статистики:",
       "editorCount": {
         "title": "Редактор",
-        "description": "Брой извършени редакции"
+        "description": "Number of editions done"
       },
       "contributorCount": {
         "title": "Сътрудник",
@@ -114,7 +114,7 @@
     "log_in": "Потребителско име",
     "sign_up": "Регистрирай се",
     "login_title": "Направи коментарът си полезен",
-    "login_description": "В момента не сте влезли в Open Food Facts. За да получите вашите отговори директно приложени към продукти и свързани с вашия акаунт, помислете дали да влезете във вашия акаунт Open Food Facts или да създадете такъв",
+    "login_description": "You are not currently logged into Open Food Facts. To get your answers directly applied to products, and associated to your account, consider logging in to your Open Food Facts account, or creating one",
     "please_wait_while_we_fetch_the_question": "Please wait while we fetch the question!"
   },
   "menu": {
@@ -125,16 +125,16 @@
     "logos-annotation": "Пояснение към емблеми",
     "logos-search": "Търсене на лога",
     "logos-product-search": "Пояснения за продукти",
-    "logos-deep-search": "Безкрайно пояснение",
+    "logos-deep-search": "Infinite annotation",
     "manage": "Управление",
     "insights": "Задълбочен анализ",
     "nutritions": "Хранителни стойности",
     "settings": "Настройки",
     "eco-score": "Eco-score",
     "dashboard": "Табло с емблеми",
-    "tour": "Турне",
-    "logged_in_user": "влязъл като {{userName}}",
-    "log_in": "щракни, за да влезеш"
+    "tour": "Show tour",
+    "logged_in_user": "Влязъл като {{userName}}",
+    "log_in": "Щракни, за да влезеш"
   },
   "insights": {
     "insights": "Задълбочен анализ",
@@ -193,7 +193,7 @@
     "no_found": "Няма намерено лого",
     "search": "Търсене",
     "number_of_results": "Брой резултати:",
-    "loading": "Зареждане...",
+    "loading": "Зареждане…",
     "refresh": "Опресни",
     "search_specific": "Търси определена емблема",
     "load_more": "Зареди още",
@@ -202,23 +202,23 @@
     "flag": "Нещо грешно? Докладвай/маркирай снимката!",
     "unflag": "Размаркирай снимката",
     "crop_image_title": "изрязване на емблемата",
-    "no_more_questions": "No more quesitons about this logo. You can try to find more logo with the following game.",
+    "no_more_questions": "No more questions about this logo. You can try to find more logos with the following game.",
     "loading_messages": {
-      "pending_reference_logos": "We are loading some logos example to initialised the serach",
-      "failed_reference_logos": "We did not find any logo with this annotation. Try to use the following game to annotate some of them."
+      "pending_reference_logos": "We are loading some logos examples to initialise the serach",
+      "failed_reference_logos": "We did not find any logos with this annotation. Try to use the following game to annotate some of them."
     }
   },
   "settings": {
     "settings": "Настройки",
     "language": "Езици",
     "save": "Запис",
-    "reportIssue": "Откри грешка? Моля, уведоми ни",
+    "reportIssue": "Откри грешка? Моля, уведоми ни.",
     "dev_mode_title": "За да получите повече опции, активирайте режима за разработка",
     "dev_mode_label": "Режим на разработчик",
     "dev_page_toggle": "Покажи {{name}} страница",
     "join_community": "Присъедини се към общността",
     "text1": "Open Food Facts is a collaborative project built by tens of thousands of volunteers and managed by a non-profit organization with 8 employees. We need your donations to fund the Open Food Facts 2023 budget and to continue to develop the project.",
-    "thank_you": "Thank you",
+    "thank_you": "Благодаря",
     "donate": "Дари",
     "join_the_community": {
       "discover_our": "Discover our ",
@@ -237,7 +237,7 @@
     "Open_Food_Facts_wiki": "Open Food Facts wiki (en)",
     "Translators": "Преводачи",
     "Partners": "Партньори",
-    "Open_Beauty_Facts": "Open Beauty Facts - Cosmétiques",
+    "Open_Beauty_Facts": "Open Beauty Facts - Козметика",
     "text2": "Съвместна, безплатна и отворена база данни за съставки и информация за хранителни продукти от света."
   },
   "helper": {
@@ -251,20 +251,20 @@
       "page2": {
         "title": "Игра с въпроси",
         "text1": "Хранителният продукт принадлежи ли към тази марка?",
-        "text2": "Отговорете просто с <strong>да/не</strong>! Не знаете отговора? Всичко е наред, просто го пропуснете.",
-        "text3": "Можете също да използвате клавишите на клавиатурата o,n и k.",
+        "text2": "Simply answer with a <strong>Yes/No</strong>! Don't know the answer? That's alright, just skip it.",
+        "text3": "You can also use your keyboard shortcuts: y,n and k.",
         "text4": "Можете да <strong>филтрирате</strong> продуктите въз основа на държава, марки, популярност и много повече!",
         "text5": "Ако не искате да правите това всеки път, можете също да <strong>запазите филтрите</strong> като щракнете върху звездата. Следващият път, когато се върнете, намерете запазените филтри на самата начална страница"
       },
       "page3": {
         "title": "Игра с емблеми",
-        "text1": "Нашата друга много обичана игра е играта с емблеми, където трябва да <strong> изберете всички емблеми</strong>, които смятате, че са еднакви.",
+        "text1": "Another popular game is the logos game where you have to <strong>select all the logos</strong> you feel are the same.",
         "text2": "Както е показано в примера, след като изберете всички подобни емблеми, просто въведете тяхната стойност и изберете къде е марка, етикет или нещо друго. Толкова е просто!"
       },
       "page4": {
         "title": "Игра с въпроси за Eco-Score",
         "text1": "Помогнете ни да завършим оставащите въпроси в етикетите с най-висок приоритет!",
-        "text2": "Тези карти са свързани с етикети, използвани при изчисляването на екологичния резултат.",
+        "text2": "These cards are linked to labels used in the computation of the Eco-Score.",
         "text3": "<strong>Какво е Eco-Score?</strong>",
         "text4": "Eco-Score улавя общия отпечатък върху околната среда, което улеснява потребителите да сравняват продуктите и да решават кой е по-добър за околната среда."
       },
@@ -288,7 +288,7 @@
       "page2": {
         "title": "Предупреждение",
         "text1": "Ако изрязването съдържа няколко емблеми, не го избирайте.",
-        "text2": "Ако изрязването съдържа само част от емблемата, можете да го изберете"
+        "text2": "If the crop contains only a partial part of a logo, you can select it."
       },
       "page3": {
         "title": "Потвърди",
@@ -317,7 +317,7 @@
     },
     "loading": "Зареждане...",
     "unknown_brand": "Марка Неизвестна",
-    "value_missing": "Забравихте да въведете стойност приииииииииииятел",
+    "value_missing": "Забрави да въведеш стойност.",
     "next": "Следваща стъпка",
     "prev": "Предишна стъпка",
     "skip": "Пропусни този продукт",

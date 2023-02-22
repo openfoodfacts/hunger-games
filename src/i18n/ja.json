@@ -26,14 +26,14 @@
     "saved_filters": "フィルターを保存",
     "contribution_modal": {
       "title": "あなたの貢献は重要です",
-      "information": "Hunger Games は、OCR の結果を活用する取り組みです。 Open Food Facts の Hunger Games を使用すると、データベース全体が改善され、コミュニティがより良い食品を選択できるようになります。私たちはあなたの注釈を収集し、Open Food Facts をより正確かつ効率的にするために使用します。",
+      "information": "Hunger Games is an effort to leverage the results of our OCR and artificial intelligence. When you use Hunger Games by Open Food Facts, you improve our entire database which helps the community make better food choices. We gather your annotations and use them to make Open Food Facts more accurate and effecient.",
       "thank_you": "Open Food Facts をより多くの人が簡単に利用できるように改善するためにご協力いただきありがとうございます。"
     },
     "statistics": {
       "title": "{{userName}} 統計:",
       "editorCount": {
         "title": "編集者",
-        "description": "行われた編集の数"
+        "description": "Number of editions done"
       },
       "contributorCount": {
         "title": "貢献者",
@@ -114,7 +114,7 @@
     "log_in": "ユーザー名",
     "sign_up": "サインアップ",
     "login_title": "注釈をカウントする",
-    "login_description": "現在、Open Food Facts にログインしていません。回答を製品に直接適用し、アカウントに関連付けるには、Open Food Facts アカウントにログインするか、アカウントを作成することを検討してください。",
+    "login_description": "You are not currently logged into Open Food Facts. To get your answers directly applied to products, and associated to your account, consider logging in to your Open Food Facts account, or creating one",
     "please_wait_while_we_fetch_the_question": "質問を取得するまでお待ちください。"
   },
   "menu": {
@@ -125,16 +125,16 @@
     "logos-annotation": "ロゴの注釈",
     "logos-search": "ロゴを検索",
     "logos-product-search": "製品ごとの注釈付け",
-    "logos-deep-search": "注釈を無限にする",
+    "logos-deep-search": "Infinite annotation",
     "manage": "管理する",
     "insights": "情報",
     "nutritions": "栄養成分表",
     "settings": "設定",
     "eco-score": "エコスコア",
     "dashboard": "ロゴダッシュボード",
-    "tour": "ツアーを表示",
-    "logged_in_user": "{{userName}} としてログインしました",
-    "log_in": "クリックしてログイン"
+    "tour": "Show tour",
+    "logged_in_user": "Logged as {{userName}}",
+    "log_in": "Click to login"
   },
   "insights": {
     "insights": "情報",
@@ -193,7 +193,7 @@
     "no_found": "ロゴが見つかりません",
     "search": "検索",
     "number_of_results": "結果の数: ",
-    "loading": "読み込み中…",
+    "loading": "読み込んでいます…",
     "refresh": "リフレッシュ",
     "search_specific": "特定のロゴを検索",
     "load_more": "もっと読み込む",
@@ -202,17 +202,17 @@
     "flag": "何か問題でも？画像を報告/フラグ付けしてください！",
     "unflag": "画像のフラグを外す",
     "crop_image_title": "ロゴのトリミング",
-    "no_more_questions": "このロゴに関する質問はもうありません。次のゲームでさらに多くのロゴを見つけることができます。",
+    "no_more_questions": "No more questions about this logo. You can try to find more logos with the following game.",
     "loading_messages": {
-      "pending_reference_logos": "検索を初期化するためにいくつかのロゴの例を読み込んでいます",
-      "failed_reference_logos": "この注釈が付いたロゴは見つかりませんでした。次のゲームを使用して、それらのいくつかに注釈を付けてみてください。"
+      "pending_reference_logos": "We are loading some logos examples to initialise the serach",
+      "failed_reference_logos": "We did not find any logos with this annotation. Try to use the following game to annotate some of them."
     }
   },
   "settings": {
     "settings": "設定",
     "language": "言語",
     "save": "保存",
-    "reportIssue": "バグを見つけましたか？お知らせください",
+    "reportIssue": "Found a bug? Please let us know.",
     "dev_mode_title": "より多くのオプションを取得するには、開発モードを有効にしてください",
     "dev_mode_label": "開発モード",
     "dev_page_toggle": "{{name}} ページを表示",
@@ -237,7 +237,7 @@
     "Open_Food_Facts_wiki": "Open Food Facts wiki (en)",
     "Translators": "翻訳者",
     "Partners": "パートナー",
-    "Open_Beauty_Facts": "Open Beauty Facts - Cosmétiques",
+    "Open_Beauty_Facts": "Open Beauty Facts - 化粧品",
     "text2": "世界中から食品の、共同のフリーでオープンなデータベース。"
   },
   "helper": {
@@ -251,20 +251,20 @@
       "page2": {
         "title": "質問ゲーム",
         "text1": "食品はこのブランドのものですか？",
-        "text2": "<strong>はい/いいえ</strong>で簡単に答えてください。答えがわからない？大丈夫です、スキップしてください。",
-        "text3": "キーボードのキー o、n、k を使用することもできます。",
+        "text2": "Simply answer with a <strong>Yes/No</strong>! Don't know the answer? That's alright, just skip it.",
+        "text3": "You can also use your keyboard shortcuts: y,n and k.",
         "text4": "国、ブランド、人気度などに基づいて製品を <strong>フィルター</strong> できます。",
         "text5": "毎回これを行いたくない場合は、</strong> をクリックしてフィルターを保存することもでき <strong>。次回戻ってきたときは、ホームページ自体で保存済みのフィルターを見つけてください"
       },
       "page3": {
         "title": "ロゴスゲーム",
-        "text1": "私たちのもう</strong> つの本当に愛されているゲームは、同じと思われるすべてのロゴを選択する必要が <strong> ロゴ ゲームです。",
+        "text1": "Another popular game is the logos game where you have to <strong>select all the logos</strong> you feel are the same.",
         "text2": "例に示すように、類似したロゴをすべて選択したら、それらの値を入力して、ブランド、ラベル、またはその他のものを選択します。それはとても簡単です！"
       },
       "page4": {
         "title": "エコスコア質問ゲーム",
         "text1": "最も優先度の高いラベルの残りの質問を完了するのを手伝ってください!",
-        "text2": "これらのカードは、エコスコアの計算に使用されるラベルにリンクされています。",
+        "text2": "These cards are linked to labels used in the computation of the Eco-Score.",
         "text3": "<strong>エコスコアとは？</strong>",
         "text4": "Eco-Score は、環境フットプリントの合計を把握し、消費者が製品を比較して、どちらが環境に適しているかを判断しやすくします。"
       },
@@ -288,7 +288,7 @@
       "page2": {
         "title": "警告",
         "text1": "切り抜きに複数のロゴが含まれている場合は、選択しないでください。",
-        "text2": "切り抜きにロゴの一部だけが含まれている場合は、選択できます"
+        "text2": "If the crop contains only a partial part of a logo, you can select it."
       },
       "page3": {
         "title": "検証",
@@ -317,9 +317,9 @@
     },
     "loading": "読み込み中…",
     "unknown_brand": "ブランド不明",
-    "value_missing": "値を入力するのを忘れました duuuuuuuuuuuuuuuuuude",
-    "next": "次のステップ",
-    "prev": "前のステップ",
+    "value_missing": "You forgot to input a value.",
+    "next": "Next step",
+    "prev": "Prev step",
     "skip": "この製品をスキップする",
     "validate": "表を検証する",
     "unselect_picture": "栄養情報なし",

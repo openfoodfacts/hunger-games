@@ -26,7 +26,7 @@
     "saved_filters": "Gespeicherte Filter",
     "contribution_modal": {
       "title": "Ihr Beitrag ist wichtig",
-      "information": "„Hunger Games” ist ein Versuch, die Ergebnisse unserer OCR zu nutzen. Wenn Sie Hunger Games von Open Food Facts nutzen, verbessern Sie unsere gesamte Datenbank, die der Gemeinschaft hilft, eine bessere Lebensmittelauswahl zu treffen. Wir sammeln Ihre Anmerkungen und verwenden sie, um Open Food Facts noch genauer und effizienter zu machen.",
+      "information": "Hunger Games ist ein Versuch, die Ergebnisse unserer OCR und künstlichen Intelligenz zu nutzen. Wenn Sie die Hunger Games von Open Food Facts nutzen, verbessern Sie unsere gesamte Datenbank, die der Gemeinschaft hilft, bessere Lebensmittelentscheidungen zu treffen. Wir nehmen Ihre Anmerkungen auf und nutzen sie, um Open Food Facts noch genauer und effizienter zu machen.",
       "thank_you": "Vielen Dank, dass Sie uns helfen, Open Food Facts zu verbessern, damit mehr Menschen es einfach nutzen können."
     },
     "statistics": {
@@ -114,7 +114,7 @@
     "log_in": "Benutzername",
     "sign_up": "Registrieren",
     "login_title": "Bringen Sie Ihre Anmerkungen zum Tragen",
-    "login_description": "Sie sind derzeit nicht bei Open Food Facts angemeldet. Um Ihre Antworten direkt auf Produkte anzuwenden und mit Ihrem Konto zu verknüpfen, sollten Sie sich bei Ihrem Open Food Facts-Konto anmelden oder eines erstellen",
+    "login_description": "Sie sind derzeit nicht bei Open Food Facts angemeldet. Um Ihre Antworten direkt auf Produkte anzuwenden und Ihrem Konto zuzuordnen, melden Sie sich bitte bei Ihrem Open Food Facts-Konto an oder erstellen Sie eines.",
     "please_wait_while_we_fetch_the_question": "Bitte warten Sie, während Ihre Frage abgerufen wird!"
   },
   "menu": {
@@ -125,7 +125,7 @@
     "logos-annotation": "Anmerkungen zum Logo",
     "logos-search": "Logos suchen",
     "logos-product-search": "Anmerkung pro Produkt",
-    "logos-deep-search": "Infinit Anmerkung",
+    "logos-deep-search": "Unendliche Anmerkung",
     "manage": "Verwalten",
     "insights": "Erkenntnisse",
     "nutritions": "Nährwertangaben",
@@ -134,7 +134,7 @@
     "dashboard": "Logo-Übersicht",
     "tour": "Tour anzeigen",
     "logged_in_user": "Angemeldet als {{userName}}",
-    "log_in": "Klicken, um sich anzumelden"
+    "log_in": "Anklicken zum Anmelden"
   },
   "insights": {
     "insights": "Erkenntnisse",
@@ -202,42 +202,42 @@
     "flag": "Stimmt etwas nicht? Melden/Kennzeichnen Sie das Bild!",
     "unflag": "Kennzeichnung des Bildes aufheben",
     "crop_image_title": "Ausschnitt des Logos",
-    "no_more_questions": "Keine weiteren Fragen zu diesem Logo. Sie können versuchen, weitere Logos mit dem folgenden Spiel zu finden.",
+    "no_more_questions": "Keine Fragen mehr zu diesem Logo. Sie können versuchen, weitere Logos mit dem folgenden Spiel zu finden.",
     "loading_messages": {
-      "pending_reference_logos": "Wir laden einige Beispiel-Logos, um die Suche zu beginnen",
-      "failed_reference_logos": "Wir haben kein Logo mit diesem Vermerk gefunden. Versuchen Sie, mit dem folgenden Spiel einige von ihnen zu kommentieren."
+      "pending_reference_logos": "Wir laden einige Beispiele für Logos, um die Suche zu starten",
+      "failed_reference_logos": "Wir haben keine Logos mit diesem Vermerk gefunden. Versuchen Sie, mit dem folgenden Spiel einige von ihnen zu beschriften."
     }
   },
   "settings": {
     "settings": "Einstellungen",
     "language": "Sprachen",
     "save": "Speichern",
-    "reportIssue": "Haben Sie einen Fehler gefunden?, lassen Sie es uns bitte wissen",
+    "reportIssue": "Haben Sie einen Fehler gefunden? Bitte lassen Sie es uns wissen.",
     "dev_mode_title": "Um weitere Optionen zu erhalten, aktivieren Sie den Entwicklungsmodus",
     "dev_mode_label": "Entwicklermodus",
     "dev_page_toggle": "Seite {{name}} anzeigen",
     "join_community": "Treten Sie der Gemeinschaft bei",
-    "text1": "Open Food Facts is a collaborative project built by tens of thousands of volunteers and managed by a non-profit organization with 8 employees. We need your donations to fund the Open Food Facts 2023 budget and to continue to develop the project.",
-    "thank_you": "Thank you",
+    "text1": "Open Food Facts ist ein gemeinschaftliches Projekt, das von Zehntausenden von Freiwilligen aufgebaut und von einer gemeinnützigen Organisation mit 8 Mitarbeitern verwaltet wird. Wir brauchen Ihre Spenden, um das Budget für Open Food Facts 2023 zu finanzieren und das Projekt weiter zu entwickeln.",
+    "thank_you": "Vielen Dank",
     "donate": "Spenden",
     "join_the_community": {
-      "discover_our": "Discover our ",
-      "code_of_conduct": "Code of conduct ",
-      "join_us_on": "Join us on ",
+      "discover_our": "Entdecken Sie unser ",
+      "code_of_conduct": "Verhaltenskodex ",
+      "join_us_on": "Folgen Sie uns auf ",
       "forum": "Forum",
-      "subscribe_to_our": "Subscribe to our ",
-      "newsletter": "newsletter"
+      "subscribe_to_our": "Abonnieren Sie unser ",
+      "newsletter": "Newsletter"
     },
     "discover_the_project": "Entdecken Sie das Projekt",
     "Who_we_are": "Wer wir sind",
     "Vision_Mission_Values_and_Programs": "Vision, Mission, Werte und Programme",
-    "FAQS": "FAQS",
-    "open_Food_Facts_blog": "Open Food Facts blog",
+    "FAQS": "Häufig gestellte Fragen",
+    "open_Food_Facts_blog": "Open Food Facts - Blog",
     "Press": "Presse",
-    "Open_Food_Facts_wiki": "Open Food Facts wiki (en)",
+    "Open_Food_Facts_wiki": "Open Food Facts - Wiki (en)",
     "Translators": "Übersetzer",
     "Partners": "Partner",
-    "Open_Beauty_Facts": "Open Beauty Facts - Cosmétiques",
+    "Open_Beauty_Facts": "Open Beauty Facts - Kosmetik",
     "text2": "Eine gemeinsame, freie und offene Datenbank von Lebensmittelprodukten aus der ganzen Welt."
   },
   "helper": {
@@ -252,19 +252,19 @@
         "title": "Fragenspiel",
         "text1": "Gehört das Lebensmittelprodukt zu dieser Marke?",
         "text2": "Antworten Sie einfach mit einem <strong>Ja/Nein</strong>! Sie kennen die Antwort nicht? Das ist in Ordnung, überspringen Sie es einfach.",
-        "text3": "Sie können auch die Tasten o, n und k auf Ihrer Tastatur verwenden.",
+        "text3": "Sie können auch Tastaturkürzel verwenden: y, n und k.",
         "text4": "Sie können die Produkte nach Land, Marke, Beliebtheit und vielem mehr <strong>filtern</strong>!",
         "text5": "Wenn Sie dies nicht jedes Mal tun möchten, können Sie die Filter auch <strong>speichern</strong>, indem Sie auf den Stern klicken. Wenn Sie das nächste Mal zurückkommen, finden Sie die gespeicherten Filter direkt auf der Startseite"
       },
       "page3": {
         "title": "Logo-Spiel",
-        "text1": "Ein weiteres sehr beliebtes Spiel ist das Logospiel, bei dem man <strong>alle Logos auswählen muss</strong>, die man für gleich hält.",
+        "text1": "Ein weiteres beliebtes Spiel ist das Logospiel, bei dem Sie <strong>alle Logos auswählen</strong> müssen, die Sie für identisch halten.",
         "text2": "Wenn Sie, wie im Beispiel gezeigt, alle ähnlichen Logos ausgewählt haben, geben Sie einfach deren Wert ein und wählen aus, ob es sich um eine Marke, ein Etikett oder etwas anderes handelt. So einfach ist das!"
       },
       "page4": {
         "title": "Eco-Score-Fragenspiel",
         "text1": "Helfen Sie uns, die verbleibenden Fragen in den Etiketten mit der höchsten Priorität abzuschließen!",
-        "text2": "Diese Karten sind mit den Etiketten verknüpft, die bei der Berechnung des Eco-Scores verwendet werden.",
+        "text2": "Diese Karten sind mit Etiketten verknüpft, die bei der Berechnung des Eco-Score verwendet werden.",
         "text3": "<strong>Was ist der Eco-Score?</strong>",
         "text4": "Eco-Score erfasst den gesamten ökologischen Fußabdruck und macht es den Verbrauchern leichter, Produkte zu vergleichen und zu entscheiden, welches Produkt besser für die Umwelt ist."
       },
@@ -288,7 +288,7 @@
       "page2": {
         "title": "Warnhinweis",
         "text1": "Wenn der Ausschnitt mehrere Logos enthält, wählen Sie es nicht aus.",
-        "text2": "Wenn der Ausschnitt nur einen Teil eines Logos enthält, können Sie es auswählen"
+        "text2": "Wenn der Ausschnitt nur einen Teil eines Logos enthält, können Sie es auswählen."
       },
       "page3": {
         "title": "Bestätigen",
@@ -317,9 +317,9 @@
     },
     "loading": "Wird geladen …",
     "unknown_brand": "Unbekannte Marke",
-    "value_missing": "Sie haben vergessen, einen Wert einzugeben",
-    "next": "Nächster Schritt",
-    "prev": "Vorheriger Schritt",
+    "value_missing": "Sie haben vergessen, einen Wert einzugeben.",
+    "next": "Weiter",
+    "prev": "Zurück",
     "skip": "Dieses Produkt überspringen",
     "validate": "Tabelle überprüfen",
     "unselect_picture": "Keine Nährwertangaben",
