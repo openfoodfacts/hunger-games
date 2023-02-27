@@ -5,6 +5,7 @@ import {
   createSelector,
 } from "@reduxjs/toolkit";
 
+import { IS_DEVELOPMENT_MODE } from "../../const";
 import robotoff from "../../robotoff";
 
 import { sleep } from "../../utils";
@@ -27,7 +28,10 @@ export const fetchQuestions = createAsyncThunk(
 export const answerQuestion = createAsyncThunk(
   "answerQuestion",
   async ({ insight_id, value }) => {
-    return await sleep(500); //robotoff.annotate(insight_id, value);
+    if (IS_DEVELOPMENT_MODE) {
+      return await sleep(500);
+    }
+    return await robotoff.annotate(insight_id, value);
   }
 );
 
