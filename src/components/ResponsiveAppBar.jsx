@@ -386,7 +386,8 @@ const ResponsiveAppBar = () => {
                   return (
                     <MultiPagesButton
                       {...page}
-                      isOpen={menuOpenState[`Desktop-${page.translationKey}`]}
+                      key={page.translationKey}
+                      isOpen={!!menuOpenState[`Desktop-${page.translationKey}`]}
                       toggleIsOpen={() =>
                         setMenuOpenState((prev) => ({
                           ...prev,

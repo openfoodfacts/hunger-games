@@ -22,12 +22,20 @@ import IconButton from "@mui/material/IconButton";
 import EditIcon from "@mui/icons-material/Edit";
 import StarIcon from "@mui/icons-material/Star";
 import StarBorderIcon from "@mui/icons-material/StarBorder";
+
+import { useDispatch, useSelector } from "react-redux";
 import { useTranslation } from "react-i18next";
 
-import LabelFilter from "./LabelFilter";
+import { useFilterSearch } from "../../components/QuestionFilter/useFilterSearch";
+import LabelFilter from "../../components/QuestionFilter/LabelFilter";
 import brands from "../../assets/brands.json";
-import { countryNames, insightTypesNames, campagnes } from "./const";
+import {
+  countryNames,
+  insightTypesNames,
+  campagnes,
+} from "../../components/QuestionFilter/const";
 import { capitaliseName } from "../../utils";
+import { filterStateSelector, updateFilter } from "./store";
 
 const getChipsParams = (filterState, setFilterState, t) =>
   [
@@ -38,7 +46,7 @@ const getChipsParams = (filterState, setFilterState, t) =>
         filterState?.valueTag
       }`,
       onDelete: () => {
-        setFilterState((state) => ({ ...state, valueTag: "" }));
+        setFilterState({ valueTag: "" });
       },
     },
 
@@ -49,7 +57,7 @@ const getChipsParams = (filterState, setFilterState, t) =>
         filterState?.countryFilter
       )}`,
       onDelete: () => {
-        setFilterState((state) => ({ ...state, countryFilter: "" }));
+        setFilterState({ countryFilter: "" });
       },
     },
 
@@ -60,7 +68,7 @@ const getChipsParams = (filterState, setFilterState, t) =>
         filterState?.brandFilter
       }`,
       onDelete: () => {
-        setFilterState((state) => ({ ...state, brandFilter: "" }));
+        setFilterState({ brandFilter: "" });
       },
     },
     {
@@ -68,10 +76,9 @@ const getChipsParams = (filterState, setFilterState, t) =>
       display: !!filterState?.sortByPopularity,
       label: t("questions.filters.short_label.popularity"),
       onDelete: () => {
-        setFilterState((state) => ({
-          ...state,
+        setFilterState({
           sortByPopularity: false,
-        }));
+        });
       },
     },
     {
@@ -89,18 +96,33 @@ const getChipsParams = (filterState, setFilterState, t) =>
     },
   ].filter((item) => item.display);
 
-export const QuestionFilter = ({
-  filterState,
-  setFilterState,
-  isFavorite,
-  toggleFavorite,
-}) => {
+export const QuestionFilter = () => {
   const { t } = useTranslation();
   const theme = useTheme();
   const isDesktop = useMediaQuery(theme.breakpoints.up("md"));
 
   const [isOpen, setIsOpen] = React.useState(false);
 
+  const dispatch = useDispatch();
+  const filterState = useSelector(filterStateSelector);
+
+  const [exposedParameters, setSearchParams, isFavorite, toggleFavorite] =
+    useFilterSearch();
+
+  if (
+    Object.keys(exposedParameters).some(
+      (key) =>
+        filterState[key] !== undefined &&
+        exposedParameters[key] !== filterState[key]
+    )
+  ) {
+    dispatch(updateFilter(exposedParameters));
+  }
+
+  const updateSearchParams = (newParams) => {
+    setSearchParams(newParams);
+    dispatch(updateFilter(newParams));
+  };
   // internal values
   const [innerInsightType, setInnerInsightType] = React.useState(
     filterState?.insightType
@@ -130,8 +152,9 @@ export const QuestionFilter = ({
     setInnerCampaign(filterState?.campaign);
     setIsOpen(false);
   };
+
   const applyFilter = () => {
-    setFilterState({
+    updateSearchParams({
       insightType: innerInsightType,
       valueTag: innerValueTag,
       countryFilter: innerCountryFilter,
@@ -139,6 +162,7 @@ export const QuestionFilter = ({
       sortByPopularity: innerSortByPopularity,
       campaign: innerCampaign,
     });
+
     setIsOpen(false);
   };
 
@@ -181,12 +205,17 @@ export const QuestionFilter = ({
     setInnerInsightType(newValue);
     // setFilterState((state) => ({ ...state, insightType: newValue }));
   };
+
   const handleInsightTypeChange = (event) => {
     const newValue = event.target.value;
-    setFilterState((state) => ({ ...state, insightType: newValue }));
+    updateSearchParams({ insightType: newValue });
   };
 
-  const chipsParams = getChipsParams(filterState, setFilterState, t);
+  const chipsParams = getChipsParams(
+    filterState,
+    (newFilterState) => updateSearchParams(newFilterState),
+    t
+  );
 
   return (
     <Box>

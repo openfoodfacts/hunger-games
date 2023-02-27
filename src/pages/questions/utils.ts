@@ -1,8 +1,11 @@
 import * as React from "react";
 
+import { NO_QUESTION_LEFT, OFF_URL } from "../../const";
+import { reformatValueTag } from "../../utils";
 import externalApi from "../../externalApi";
 import offService from "../../off";
 import robotoff from "../../robotoff";
+import { getQuestionSearchParams } from "../../components/QuestionFilter/useFilterSearch";
 
 export const ADDITIONAL_INFO_TRANSLATION = {
   brands: "brands",
@@ -145,4 +148,54 @@ export const useProductData = (barcode) => {
   }, [barcode]);
 
   return productData;
+};
+
+export const getFullSizeImage = (src) => {
+  if (!src) {
+    return "https://static.openfoodfacts.org/images/image-placeholder.png";
+  }
+  const needsFull = /\/[a-z_]+.[0-9]*.400.jpg$/gm.test(src);
+
+  if (needsFull) {
+    return src.replace("400.jpg", "full.jpg");
+  }
+  return src.replace("400.jpg", "jpg");
+};
+
+export const getValueTagQuestionsURL = (filterState, question) => {
+  if (
+    question !== null &&
+    question &&
+    question?.insight_id !== NO_QUESTION_LEFT &&
+    question?.value_tag
+  ) {
+    const urlParams = new URLSearchParams();
+    urlParams.append("type", question.insight_type);
+    urlParams.append("value_tag", reformatValueTag(question?.value_tag));
+    return `/questions?${getQuestionSearchParams({
+      ...filterState,
+      insightType: question.insight_type,
+      valueTag: question?.value_tag,
+    })}`;
+  }
+  return null;
+};
+
+export const getValueTagExamplesURL = (question) => {
+  if (
+    question !== null &&
+    question?.insight_id !== NO_QUESTION_LEFT &&
+    question?.value_tag &&
+    question.insight_type
+  ) {
+    return `${OFF_URL}/${question.insight_type}/${reformatValueTag(
+      question?.value_tag
+    )}`;
+  }
+  return "";
+};
+
+export const getNbOfQuestionForValue = async (filterState) => {
+  const { data: dataFetched } = await robotoff.questions(filterState, 1);
+  return dataFetched.count;
 };
