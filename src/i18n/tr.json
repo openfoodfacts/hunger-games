@@ -26,7 +26,7 @@
     "saved_filters": "Kaydedilen Filtreler",
     "contribution_modal": {
       "title": "Katkınız önemlidir",
-      "information": "Açlık Oyunları, OCR'mizin sonuçlarından yararlanma çabasıdır. Open Food Facts ürünü Açlık Oyunları'nı kullandığınızda, topluluğun daha iyi yemek seçimleri yapmasına yardımcı olan tüm veritabanımızı geliştirirsiniz. Ek açıklamalarınızı topluyoruz ve bunları Open Food Facts'i daha doğru ve verimli hale getirmek için kullanıyoruz.",
+      "information": "Açlık Oyunları, OCR ve yapay zekamızın sonuçlarından yararlanma çabasıdır. Open Food Facts'e göre Açlık Oyunları'nı kullandığınızda, topluluğun daha iyi yemek seçimleri yapmasına yardımcı olan veritabanımızın tamamını geliştirirsiniz. Ek açıklamalarınızı topluyoruz ve Open Food Facts'i daha doğru ve verimli hale getirmek için kullanıyoruz.",
       "thank_you": "Daha fazla insanın kolayca kullanabilmesi için Open Food Facts'i geliştirmemize yardımcı olduğunuz için teşekkür ederiz."
     },
     "statistics": {
@@ -114,7 +114,7 @@
     "log_in": "Kullanıcı adı",
     "sign_up": "Kaydol",
     "login_title": "Ek açıklama sayınızı yapın",
-    "login_description": "Şu anda Open Food Facts'e giriş yapmadınız. Yanıtlarınızın doğrudan ürünlere uygulanmasını ve hesabınızla ilişkilendirilmesini sağlamak için Open Food Facts hesabınıza giriş yapmayı veya bir hesap oluşturmayı düşünün",
+    "login_description": "Şu anda Open Food Facts'e giriş yapmadınız. Yanıtlarınızın doğrudan ürünlere uygulanmasını ve hesabınızla ilişkilendirilmesini sağlamak için Open Food Facts hesabınıza giriş yapmayı veya bir tane oluşturmayı düşünün",
     "please_wait_while_we_fetch_the_question": "Biz soruyu getirirken lütfen bekleyin!"
   },
   "menu": {
@@ -134,7 +134,7 @@
     "dashboard": "Logo panosu",
     "tour": "Gösteri Turu",
     "logged_in_user": "{{userName}} olarak günlüğe kaydedildi",
-    "log_in": "giriş yapmak için tıklayın"
+    "log_in": "Giriş yapmak için tıklayın"
   },
   "insights": {
     "insights": "Yönelimler",
@@ -193,7 +193,7 @@
     "no_found": "Logo bulunamadı",
     "search": "Ara",
     "number_of_results": "Sonuç sayısı:",
-    "loading": "Yükleniyor...",
+    "loading": "Yükleniyor…",
     "refresh": "Yenile",
     "search_specific": "Belirli bir logoyu ara",
     "load_more": "Daha fazla yükle",
@@ -202,9 +202,9 @@
     "flag": "Ters giden birşey mi var? Resmi rapor edin/işaretleyin!",
     "unflag": "Resmin işaretini kaldır",
     "crop_image_title": "logoyu kırp",
-    "no_more_questions": "Bu logo hakkında daha fazla soru yok. Aşağıdaki oyun ile daha fazla logo bulmaya çalışabilirsiniz.",
+    "no_more_questions": "Bu logo hakkında başka soru yok. Aşağıdaki oyun ile daha fazla logo bulmayı deneyebilirsiniz.",
     "loading_messages": {
-      "pending_reference_logos": "Aramayı başlatmak için bazı logo örnekleri yüklüyoruz",
+      "pending_reference_logos": "Serach'ı başlatmak için bazı logo örnekleri yüklüyoruz",
       "failed_reference_logos": "Bu açıklamaya sahip herhangi bir logo bulamadık. Bazılarına açıklama eklemek için aşağıdaki oyunu kullanmayı deneyin."
     }
   },
@@ -212,32 +212,32 @@
     "settings": "Ayarlar",
     "language": "Diller",
     "save": "Kaydet",
-    "reportIssue": "Bir hata mı buldun?, lütfen bizi bilgilendirin",
+    "reportIssue": "Bir hata mı buldunuz? Lütfen bize bildirin.",
     "dev_mode_title": "Daha fazla seçenek elde etmek için geliştirme modunu etkinleştirin",
     "dev_mode_label": "Geliştirici Modu",
     "dev_page_toggle": "{{name}} sayfayı göster",
     "join_community": "Topluluğa katılın",
-    "text1": "Open Food Facts is a collaborative project built by tens of thousands of volunteers and managed by a non-profit organization with 8 employees. We need your donations to fund the Open Food Facts 2023 budget and to continue to develop the project.",
-    "thank_you": "Thank you",
+    "text1": "Open Food Facts, on binlerce gönüllü tarafından oluşturulan ve 8 çalışanı olan kar amacı gütmeyen bir kuruluş tarafından yönetilen ortak bir projedir. Open Food Facts 2023 bütçesini finanse etmek ve projeyi geliştirmeye devam etmek için bağışlarınıza ihtiyacımız var.",
+    "thank_you": "Teşekkürler",
     "donate": "Bağış Yapın",
     "join_the_community": {
-      "discover_our": "Discover our ",
-      "code_of_conduct": "Code of conduct ",
-      "join_us_on": "Join us on ",
+      "discover_our": "Keşfedin ",
+      "code_of_conduct": "Davranış kuralları ",
+      "join_us_on": "Bize katılın ",
       "forum": "Forum",
       "subscribe_to_our": "Subscribe to our ",
-      "newsletter": "newsletter"
+      "newsletter": "haber bülteni"
     },
     "discover_the_project": "Projeyi keşfedin",
     "Who_we_are": "Biz kimiz",
     "Vision_Mission_Values_and_Programs": "Vizyon, Misyon, Değerler ve Programlar",
-    "FAQS": "FAQS",
+    "FAQS": "SSS",
     "open_Food_Facts_blog": "Open Food Facts blog",
     "Press": "Basın",
     "Open_Food_Facts_wiki": "Open Food Facts wiki (en)",
     "Translators": "Çevirmenler",
     "Partners": "Partnerler",
-    "Open_Beauty_Facts": "Open Beauty Facts - Cosmétiques",
+    "Open_Beauty_Facts": "Open Beauty Facts - Kozmetik ürünleri",
     "text2": "Dünyanın dört bir yanından katılımcı, özgür ve açık gıda ürünleri veritabanı."
   },
   "helper": {
@@ -251,20 +251,20 @@
       "page2": {
         "title": "Sorular Oyunu",
         "text1": "Gıda ürünü bu markaya mı ait?",
-        "text2": "Sadece <strong>evet/hayır</strong>ile yanıtlayın! Cevabı bilmiyor musun? Sorun değil, sadece atlayın.",
-        "text3": "Ayrıca o,n ve k klavye tuşlarınızı da kullanabilirsiniz.",
+        "text2": "<strong>Evet/Hayır</strong> ile yanıtlamanız yeterlidir! Cevabı bilmiyorsanız atlayın.",
+        "text3": "Klavye kısayollarınızı da kullanabilirsiniz: y,n ve k.",
         "text4": "Ürünleri ülke, marka, popülerlik ve çok daha fazlasına göre <strong>filtreleyebilirsiniz</strong>!",
         "text5": "Bunu her seferinde yapmak istemiyorsanız, yıldızı tıklayarak <strong>filtreleri kaydedebilirsiniz</strong>. Bir dahaki sefere geri döndüğünüzde, kayıtlı filtreleri ana sayfanın kendisinde bulun"
       },
       "page3": {
         "title": "Logolar Oyunu",
-        "text1": "Gerçekten sevdiğimiz bir başka oyun da, aynı olduğunu düşündüğünüz <strong> tüm logoları seçmeniz</strong> gereken logolar oyunudur.",
+        "text1": "Diğer bir popüler oyun da, aynı olduğunu düşündüğünüz <strong>tüm logoları seçmeniz</strong> gereken logo oyunudur.",
         "text2": "Örnekte gösterildiği gibi, tüm benzer logoları seçtikten sonra, değerlerini yazın ve nerede bir marka, bir etiket veya başka bir şey olduğunu seçin. Bu kadar basit!"
       },
       "page4": {
         "title": "Eko-Skor Soruları Oyunu",
         "text1": "En yüksek öncelikli etiketlerde kalan soruları bitirmemize yardım edin!",
-        "text2": "Bu kartlar eko-skorun hesaplanmasında kullanılan etiketlerle bağlantılıdır.",
+        "text2": "Bu kartlar, Eco-Score'un hesaplanmasında kullanılan etiketlerle bağlantılıdır.",
         "text3": "<strong>Eko-Skor nedir?</strong>",
         "text4": "Eco-Score, toplam çevresel ayak izini yakalayarak tüketicilerin ürünleri karşılaştırmasını ve hangisinin çevre için daha iyi olduğuna karar vermesini kolaylaştırır."
       },
@@ -288,7 +288,7 @@
       "page2": {
         "title": "Uyarı",
         "text1": "Kırpma birden fazla logo içeriyorsa, onu seçmeyin.",
-        "text2": "Kırpma, bir logonun yalnızca bir kısmını içeriyorsa, onu seçebilirsiniz"
+        "text2": "Kırpma, logonun yalnızca bir kısmını içeriyorsa, onu seçebilirsiniz."
       },
       "page3": {
         "title": "Geçerlilik",
@@ -317,8 +317,8 @@
     },
     "loading": "Yükleniyor...",
     "unknown_brand": "Marka Bilinmiyor",
-    "value_missing": "Değer girmeyi unuttun duuuuuuuuuuuuuuuuuude",
-    "next": "Sıradaki adım",
+    "value_missing": "Bir değer girmeyi unuttunuz.",
+    "next": "Sonraki adım",
     "prev": "Önceki adım",
     "skip": "Bu ürünü atla",
     "validate": "Tabloyu Doğrula",

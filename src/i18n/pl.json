@@ -26,14 +26,14 @@
     "saved_filters": "Zapisane filtry",
     "contribution_modal": {
       "title": "Twój wkład ma znaczenie",
-      "information": "Głodne Gry to próba wykorzystania wyników naszego OCR. Kiedy korzystasz z Głodnych Gier w Open Food Facts, ulepszasz całą naszą bazę danych, która pomaga społeczności w dokonywaniu lepszych wyborów żywieniowych. Zbieramy Twoje adnotacje i wykorzystujemy je, aby Open Food Facts były dokładniejsze i skuteczniejsze.",
+      "information": "Hunger Games is an effort to leverage the results of our OCR and artificial intelligence. When you use Hunger Games by Open Food Facts, you improve our entire database which helps the community make better food choices. We gather your annotations and use them to make Open Food Facts more accurate and effecient.",
       "thank_you": "Dziękujemy za pomoc w ulepszaniu Open Food Facts, aby więcej osób mogło z niego łatwo korzystać."
     },
     "statistics": {
       "title": "Statystyki {{userName}}:",
       "editorCount": {
         "title": "Edytor",
-        "description": "Liczba wykonanych edycji"
+        "description": "Number of editions done"
       },
       "contributorCount": {
         "title": "Współtwórca",
@@ -114,7 +114,7 @@
     "log_in": "Nazwa użytkownika",
     "sign_up": "Zarejestruj się",
     "login_title": "Spraw, aby Twoja adnotacja się liczyła",
-    "login_description": "Obecnie nie jesteś zalogowany w Open Food Facts. Aby twoje odpowiedzi były bezpośrednio dodawane do produktów i powiązane z twoim kontem, rozważ zalogowanie lub zarejestrowanie się",
+    "login_description": "You are not currently logged into Open Food Facts. To get your answers directly applied to products, and associated to your account, consider logging in to your Open Food Facts account, or creating one",
     "please_wait_while_we_fetch_the_question": "Please wait while we fetch the question!"
   },
   "menu": {
@@ -125,16 +125,16 @@
     "logos-annotation": "Adnotacje do logo",
     "logos-search": "Wyszukiwanie logo",
     "logos-product-search": "Wyszukiwanie produktów",
-    "logos-deep-search": "Szczegółowe wyszukiwanie",
+    "logos-deep-search": "Infinite annotation",
     "manage": "Zarządzaj",
     "insights": "Spostrzeżenia",
     "nutritions": "Wartości odżywcze",
     "settings": "Ustawienia",
     "eco-score": "Eco-Score",
     "dashboard": "Pulpit logowania",
-    "tour": "Przegląd funkcji programu",
-    "logged_in_user": "zalogowano jako {{userName}}",
-    "log_in": "kliknij, aby się zalogować"
+    "tour": "Show tour",
+    "logged_in_user": "Logged as {{userName}}",
+    "log_in": "Click to login"
   },
   "insights": {
     "insights": "Spostrzeżenia",
@@ -193,7 +193,7 @@
     "no_found": "Nie znaleziono logo",
     "search": "Wyszukiwanie",
     "number_of_results": "Liczba wyników:",
-    "loading": "Ładowanie...",
+    "loading": "Ładowanie…",
     "refresh": "Odśwież",
     "search_specific": "Szukaj konkretnego logo",
     "load_more": "Załaduj więcej",
@@ -202,17 +202,17 @@
     "flag": "Coś nie tak? Zgłoś lub oznacz obrazek!",
     "unflag": "Odznacz obrazek",
     "crop_image_title": "przycięcie logo",
-    "no_more_questions": "No more quesitons about this logo. You can try to find more logo with the following game.",
+    "no_more_questions": "No more questions about this logo. You can try to find more logos with the following game.",
     "loading_messages": {
-      "pending_reference_logos": "We are loading some logos example to initialised the serach",
-      "failed_reference_logos": "We did not find any logo with this annotation. Try to use the following game to annotate some of them."
+      "pending_reference_logos": "We are loading some logos examples to initialise the serach",
+      "failed_reference_logos": "We did not find any logos with this annotation. Try to use the following game to annotate some of them."
     }
   },
   "settings": {
     "settings": "Ustawienia",
     "language": "Języki",
     "save": "Zapisz",
-    "reportIssue": "Znalazłeś błąd? Daj nam znać.",
+    "reportIssue": "Found a bug? Please let us know.",
     "dev_mode_title": "Aby uzyskać więcej opcji, włącz tryb deweloperski",
     "dev_mode_label": "Tryb Deweloperski",
     "dev_page_toggle": "Pokaż stronę {{name}}",
@@ -237,7 +237,7 @@
     "Open_Food_Facts_wiki": "Open Food Facts wiki (en)",
     "Translators": "Tłumacze",
     "Partners": "Partnerzy",
-    "Open_Beauty_Facts": "Open Beauty Facts - Cosmétiques",
+    "Open_Beauty_Facts": "Open Beauty Facts - Kosmetyki",
     "text2": "Wspólna, wolna i otwarta baza produktów spożywczych z całego świata."
   },
   "helper": {
@@ -251,20 +251,20 @@
       "page2": {
         "title": "Gra pytań",
         "text1": "Czy produkt żywnościowy należy do tej marki?",
-        "text2": "Odpowiadaj prosto, używając <strong>tak/nie</strong>! Nie znasz odpowiedzi? Nie szkodzi, po prostu pomiń.",
-        "text3": "Możesz również użyć klawiszy O, N i K.",
+        "text2": "Simply answer with a <strong>Yes/No</strong>! Don't know the answer? That's alright, just skip it.",
+        "text3": "You can also use your keyboard shortcuts: y,n and k.",
         "text4": "Możesz <strong>filtrować</strong> produkty w oparciu o kraj, marki, popularność i wiele więcej!",
         "text5": "Jeśli nie chcesz tego robić za każdym razem, możesz również <strong>zapisać filtry</strong> klikając gwiazdkę. Następnym razem, gdy wrócisz, znajdziesz zapisane filtry na stronie głównej"
       },
       "page3": {
         "title": "Gra z logami",
-        "text1": "Naszą kolejną bardzo lubianą grą jest gra w nazwy, w której musisz <strong>wybrać wszystkie nazwy</strong>, które uważasz za takie same.",
+        "text1": "Another popular game is the logos game where you have to <strong>select all the logos</strong> you feel are the same.",
         "text2": "Jak pokazano w przykładzie, po wybraniu wszystkich podobnych nazw po prostu wpisz ich wartość i wybierz, gdzie jest to marka, etykieta lub coś innego. To takie proste!"
       },
       "page4": {
         "title": "Gra Pytania o Eco-Score",
         "text1": "Pomóż nam dokończyć pozostałe pytania w etykietach o najwyższym priorytecie!",
-        "text2": "Karty te są połączone z etykietami używanymi do obliczania ekologicznego wyniku.",
+        "text2": "These cards are linked to labels used in the computation of the Eco-Score.",
         "text3": "<strong>Co to jest Eco-Score?</strong>",
         "text4": "Eco-Score uwzględnia całkowity ślad ekologiczny, ułatwiając konsumentom porównywanie produktów i podejmowanie decyzji, które są lepsze dla środowiska."
       },
@@ -288,7 +288,7 @@
       "page2": {
         "title": "Ostrzeżenie",
         "text1": "Jeśli kadr zawiera wiele nazw, nie wybieraj go.",
-        "text2": "Jeśli kadr zawiera tylko część logo, możesz je zaznaczyć"
+        "text2": "If the crop contains only a partial part of a logo, you can select it."
       },
       "page3": {
         "title": "Zweryfikuj",
@@ -317,9 +317,9 @@
     },
     "loading": "Ładowanie...",
     "unknown_brand": "Marka nieznana",
-    "value_missing": "Zapomniałeś wpisać tekstu goooooooościu",
-    "next": "Dalej",
-    "prev": "Wstecz",
+    "value_missing": "You forgot to input a value.",
+    "next": "Next step",
+    "prev": "Prev step",
     "skip": "Pomiń ten produkt",
     "validate": "Zatwierdź tabelę",
     "unselect_picture": "Brak informacji żywieniowych",

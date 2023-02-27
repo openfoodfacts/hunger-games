@@ -26,14 +26,14 @@
     "saved_filters": "Збережені фільтри",
     "contribution_modal": {
       "title": "Ваш внесок має значення",
-      "information": "Голодні ігри - це спроба використати результати нашого розпізнавання тексту. Коли ви використовуєте \"Голодні ігри\", ви покращуєте всю нашу базу даних, яка допомагає спільноті робити кращий вибір продуктів харчування. Ми збираємо ваші анотації і використовуємо їх, щоб зробити додаток більш точними та ефективними.",
+      "information": "Hunger Games is an effort to leverage the results of our OCR and artificial intelligence. When you use Hunger Games by Open Food Facts, you improve our entire database which helps the community make better food choices. We gather your annotations and use them to make Open Food Facts more accurate and effecient.",
       "thank_you": "Дякуємо, що допомагаєте нам покращувати Open Food Facts, щоб більше людей могли легко ним користуватися."
     },
     "statistics": {
       "title": "{{userName}} статистика:",
       "editorCount": {
         "title": "Редактор",
-        "description": "Кількість здійснених видань"
+        "description": "Number of editions done"
       },
       "contributorCount": {
         "title": "Учасник",
@@ -114,7 +114,7 @@
     "log_in": "Ім'я користувача",
     "sign_up": "Зареєструватися",
     "login_title": "Зробіть свою анотацію важливою",
-    "login_description": "Наразі ви не ввійшли в Open Food Facts. Щоб ваші відповіді були безпосередньо застосовані до продуктів і пов’язані з вашим обліковим записом, увійдіть у свій обліковий запис Open Food Facts або створіть його",
+    "login_description": "You are not currently logged into Open Food Facts. To get your answers directly applied to products, and associated to your account, consider logging in to your Open Food Facts account, or creating one",
     "please_wait_while_we_fetch_the_question": "Please wait while we fetch the question!"
   },
   "menu": {
@@ -125,16 +125,16 @@
     "logos-annotation": "Анотація до логотипів",
     "logos-search": "Пошук логотипів",
     "logos-product-search": "Анотація до кожного продукту",
-    "logos-deep-search": "Інфінітна анотація",
+    "logos-deep-search": "Infinite annotation",
     "manage": "Керування",
     "insights": "Статистика",
     "nutritions": "Харчова цінність",
     "settings": "Налаштування",
     "eco-score": "Показник впливу на довкілля",
     "dashboard": "Приладова панель з логотипами",
-    "tour": "Показати Тур",
-    "logged_in_user": "увійшли як {{userName}}",
-    "log_in": "натисніть, щоб увійти"
+    "tour": "Show tour",
+    "logged_in_user": "Logged as {{userName}}",
+    "log_in": "Click to login"
   },
   "insights": {
     "insights": "Статистика",
@@ -193,7 +193,7 @@
     "no_found": "Логотип не знайдено",
     "search": "Пошук",
     "number_of_results": "Кількість результатів",
-    "loading": "Завантаження...",
+    "loading": "Завантаження…",
     "refresh": "Оновлення",
     "search_specific": "Пошук певного логотипа",
     "load_more": "Завантажити більше",
@@ -202,17 +202,17 @@
     "flag": "Щось не так? Повідомте/позначте зображення!",
     "unflag": "Зняти прапорець із зображення",
     "crop_image_title": "кадрування логотипу",
-    "no_more_questions": "No more quesitons about this logo. You can try to find more logo with the following game.",
+    "no_more_questions": "No more questions about this logo. You can try to find more logos with the following game.",
     "loading_messages": {
-      "pending_reference_logos": "We are loading some logos example to initialised the serach",
-      "failed_reference_logos": "We did not find any logo with this annotation. Try to use the following game to annotate some of them."
+      "pending_reference_logos": "We are loading some logos examples to initialise the serach",
+      "failed_reference_logos": "We did not find any logos with this annotation. Try to use the following game to annotate some of them."
     }
   },
   "settings": {
     "settings": "Налаштування",
     "language": "Мови",
     "save": "Зберегти",
-    "reportIssue": "Знайшли помилку? Будь ласка, повідомте нас",
+    "reportIssue": "Found a bug? Please let us know.",
     "dev_mode_title": "Щоб отримати більше можливостей, активуйте режим розробника",
     "dev_mode_label": "Режим розробника",
     "dev_page_toggle": "Показати {{name}} сторінку",
@@ -237,7 +237,7 @@
     "Open_Food_Facts_wiki": "Open Food Facts wiki (en)",
     "Translators": "Перекладачі",
     "Partners": "Партнери",
-    "Open_Beauty_Facts": "Open Beauty Facts - Cosmétiques",
+    "Open_Beauty_Facts": "Відкрити факти про красу-косметика",
     "text2": "База даних продуктів харчування є спільною, безкоштовною та доступною по всьому світу."
   },
   "helper": {
@@ -251,20 +251,20 @@
       "page2": {
         "title": "Гра «Запитання»",
         "text1": "Ці товари належать до цього бренду?",
-        "text2": "Просто оберіть <strong>так/ні</strong>! Не знаєте, що відповісти? Все ок, можете пропустити.",
-        "text3": "Ви також можете використовувати клавіші o, n та k.",
+        "text2": "Simply answer with a <strong>Yes/No</strong>! Don't know the answer? That's alright, just skip it.",
+        "text3": "You can also use your keyboard shortcuts: y,n and k.",
         "text4": "Ви можете <strong>сортувати</strong> товари за країною, брендом, популярністю тощо!",
         "text5": "Якщо не хочете налаштовувати це кожного разу, <strong>збережіть налаштування</strong> натиснувши зірочку. Наступного разу просто оберіть \"збережені фільтри\" на домашній сторінці"
       },
       "page3": {
         "title": "Гра в логотипи",
-        "text1": "Одна з улюблених наших ігор - гра в логотипи, де Ви маєте <strong>виділити всі схожі логотипи</strong>.",
+        "text1": "Another popular game is the logos game where you have to <strong>select all the logos</strong> you feel are the same.",
         "text2": "Як і показано в прикладах, обравши потрібні лого, просто визначте їх цінність та оберіть бренд, лейбл абощо. Це просто!"
       },
       "page4": {
         "title": "Гра з питаннями по Eco-Score",
         "text1": "Допоможи нам з лишившимися питаннями з найвищою приоритетністю!",
-        "text2": "These cards are linked to labels used in the computation of the eco-score.",
+        "text2": "These cards are linked to labels used in the computation of the Eco-Score.",
         "text3": "<strong>Що ж таке Eco-Score?</strong>",
         "text4": "Eco-Score captures the total environmental footprint, making it easier for consumers to compare products and decide which is better for the environment."
       },
@@ -288,7 +288,7 @@
       "page2": {
         "title": "Увага",
         "text1": "Якщо в кадрі міститься кілька логотипів, не вибирайте його.",
-        "text2": "Якщо обрізка містить лише частину логотипу, ви можете виділити її"
+        "text2": "If the crop contains only a partial part of a logo, you can select it."
       },
       "page3": {
         "title": "Перевірити",
@@ -317,9 +317,9 @@
     },
     "loading": "Завантаження...",
     "unknown_brand": "Невідома марка",
-    "value_missing": "Шаноооовний, Ви забули зазначити цінність",
-    "next": "Наступний крок",
-    "prev": "Попередній крок",
+    "value_missing": "You forgot to input a value.",
+    "next": "Next step",
+    "prev": "Prev step",
     "skip": "Пропустіть цей продукт",
     "validate": "Перевірте таблицю",
     "unselect_picture": "Інформація про харчування відсутня",

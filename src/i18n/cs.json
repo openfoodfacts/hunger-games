@@ -26,14 +26,14 @@
     "saved_filters": "Uložené filtry",
     "contribution_modal": {
       "title": "Na vašem příspěvku záleží",
-      "information": "Hunger Games je snaha využít výsledky našeho OCR. Když používáte Hunger Games od Open Food Facts, vylepšujete celou naši databázi, což pomáhá komunitě lépe vybírat jídlo. Shromažďujeme vaše anotace a používáme je k tomu, aby byly Open Food Facts přesnější a efektivnější.",
+      "information": "Hunger Games je snaha využít výsledky našeho OCR a umělé inteligence. Když používáte Hunger Games od Open Food Facts, vylepšujete celou naši databázi, což pomáhá komunitě lépe vybírat jídlo. Shromažďujeme vaše anotace a používáme je k tomu, aby byly Open Food Facts přesnější a efektivnější.",
       "thank_you": "Děkujeme, že nám pomáháte zlepšovat Open Food Facts, aby je mohlo snadno používat více lidí."
     },
     "statistics": {
       "title": "{{userName}} statistiky:",
       "editorCount": {
         "title": "Editor",
-        "description": "Počet dokončených vydání"
+        "description": "Počet provedených úprav"
       },
       "contributorCount": {
         "title": "Přispěvatel",
@@ -114,7 +114,7 @@
     "log_in": "Uživatelské jméno",
     "sign_up": "Registrovat",
     "login_title": "Dejte si na anotaci záležet",
-    "login_description": "Momentálně nejste přihlášeni Open Food Facts. Chcete-li, aby byly vaše odpovědi přímo aplikovány na produkty a přidruženy k vašemu účtu, zvažte přihlášení ke svému účtu Open Food Facts nebo vytvoření účtu",
+    "login_description": "Momentálně nejste přihlášeni do Open Food Facts. Chcete-li, aby byly vaše odpovědi přímo aplikovány na produkty a přidruženy k vašemu účtu, zvažte přihlášení ke svému účtu Open Food Facts nebo vytvoření účtu",
     "please_wait_while_we_fetch_the_question": "Počkejte prosím, než načteme otázku!"
   },
   "menu": {
@@ -133,8 +133,8 @@
     "eco-score": "Eco-score",
     "dashboard": "Panel logotypů",
     "tour": "Zobrazit prohlídku",
-    "logged_in_user": "přihlášen jako {{userName}}",
-    "log_in": "klikněte pro přihlášení"
+    "logged_in_user": "Přihlášen jako {{userName}}",
+    "log_in": "Kliknutím se přihlašte"
   },
   "insights": {
     "insights": "Postřehy",
@@ -193,7 +193,7 @@
     "no_found": "Nebylo nalezeno žádné logo",
     "search": "Vyhledat",
     "number_of_results": "Počet výsledků:",
-    "loading": "Načítání...",
+    "loading": "Načítá se…",
     "refresh": "Obnovit",
     "search_specific": "Vyhledejte konkrétní logo",
     "load_more": "Načíst další",
@@ -202,42 +202,42 @@
     "flag": "Něco špatně? Nahlašte/označte obrázek!",
     "unflag": "Zrušte označení obrázku",
     "crop_image_title": "oříznutí loga",
-    "no_more_questions": "Žádné další dotazy k tomuto logu. Další logo můžete zkusit najít v následující hře.",
+    "no_more_questions": "Žádné další dotazy k tomuto logu. Další loga můžete zkusit najít v následující hře.",
     "loading_messages": {
-      "pending_reference_logos": "Načítáme příklad nějakých logotypů pro inicializaci vyhledávání",
-      "failed_reference_logos": "Nenašli jsme žádné logo s touto anotací. Zkuste použít následující hru pro anotaci některých z nich."
+      "pending_reference_logos": "Načítáme několik příkladů log pro inicializaci vyhledávání",
+      "failed_reference_logos": "Nenašli jsme žádná loga s touto anotací. Zkuste použít následující hru k anotaci některých z nich."
     }
   },
   "settings": {
     "settings": "Nastavení",
     "language": "Jazyky",
     "save": "Uložit",
-    "reportIssue": "Našli jste chybu?, dejte nám prosím vědět",
+    "reportIssue": "Našli jste chybu? Prosím, dejte nám vědět.",
     "dev_mode_title": "Chcete-li získat více možností, aktivujte režim pro vývojáře",
     "dev_mode_label": "Vývojářský režim",
     "dev_page_toggle": "Zobrazit stránku {{name}}",
     "join_community": "Připojte se ke komunitě",
-    "text1": "Open Food Facts is a collaborative project built by tens of thousands of volunteers and managed by a non-profit organization with 8 employees. We need your donations to fund the Open Food Facts 2023 budget and to continue to develop the project.",
-    "thank_you": "Thank you",
+    "text1": "Open Food Facts je společný projekt vytvořený desítkami tisíc dobrovolníků a spravovaný neziskovou organizací s 8 zaměstnanci. Potřebujeme Vaše dary na financování rozpočtu Open Food Facts 2023 a na další rozvoj projektu.",
+    "thank_you": "Děkujeme",
     "donate": "Podpořit",
     "join_the_community": {
-      "discover_our": "Discover our ",
-      "code_of_conduct": "Code of conduct ",
-      "join_us_on": "Join us on ",
-      "forum": "Forum",
-      "subscribe_to_our": "Subscribe to our ",
-      "newsletter": "newsletter"
+      "discover_our": "Objevte náš ",
+      "code_of_conduct": "Kodex chování ",
+      "join_us_on": "Připojte se k nám ",
+      "forum": "Fórum",
+      "subscribe_to_our": "Přihlásit se k odběru ",
+      "newsletter": "zpravodaje"
     },
     "discover_the_project": "Zjistěte více o projektu",
     "Who_we_are": "Kdo jsme",
     "Vision_Mission_Values_and_Programs": "Vize, mise, hodnoty a programy",
-    "FAQS": "FAQS",
+    "FAQS": "Časté dotazy",
     "open_Food_Facts_blog": "Open Food Facts blog",
     "Press": "Média",
     "Open_Food_Facts_wiki": "Open Food Facts wiki (en)",
     "Translators": "Překladatelé",
     "Partners": "Partneři",
-    "Open_Beauty_Facts": "Open Beauty Facts - Cosmétiques",
+    "Open_Beauty_Facts": "Open Beauty Facts - Kosmetika",
     "text2": "Společná, bezplatná a otevřená databáze potravinářských produktů z celého světa."
   },
   "helper": {
@@ -251,20 +251,20 @@
       "page2": {
         "title": "Hra Otázky",
         "text1": "Patří potravinářský výrobek této značce?",
-        "text2": "Odpovězte jednoduše <strong>ano/ne</strong>! Neznáte odpověď? To je v pořádku, jen to přeskočte.",
-        "text3": "Můžete také použít klávesy o, n a k.",
+        "text2": "Jednoduše odpovězte <strong>Ano/Ne</strong>! Neznáte odpověď? To je v pořádku, jen to přeskočte.",
+        "text3": "Můžete také použít klávesové zkratky: y,n a k.",
         "text4": "Můžete <strong>filtrovat</strong> produkty podle země, značek, popularity a mnohem více!",
         "text5": "Pokud to nechcete dělat pokaždé, můžete také <strong>uložit filtry</strong> kliknutím na hvězdičku. Až se příště vrátíte, najděte uložené filtry na samotné domovské stránce"
       },
       "page3": {
         "title": "Hra s logy",
-        "text1": "Naše další opravdu oblíbená hra je loga, kde musíte <strong> vybrat všechna loga</strong>, která máte pocit, že jsou stejná.",
+        "text1": "Další oblíbenou hrou jsou loga, kde musíte <strong>vybrat všechna loga</strong> , která jsou stejná.",
         "text2": "Jak je znázorněno v příkladu, jakmile vyberete všechna podobná loga, stačí zadat jejich hodnotu a vybrat, kde se jedná o značku, štítek nebo něco jiného. Je to tak jednoduché!"
       },
       "page4": {
         "title": "Hra s otázkami o ekologickém skóre Eco-Score",
         "text1": "Pomozte nám dokončit zbývající otázky ve štítcích s nejvyšší prioritou!",
-        "text2": "Tyto karty jsou spojeny se štítky používanými při výpočtu ekologického skóre.",
+        "text2": "Tyto karty jsou spojeny s štítky používanými při výpočtu Eco-Score.",
         "text3": "<strong>Co je to Eco-Score?</strong>",
         "text4": "Eco-Score zachycuje celkovou ekologickou stopu, což spotřebitelům usnadňuje porovnávat produkty a rozhodovat se, co je pro životní prostředí lepší."
       },
@@ -288,7 +288,7 @@
       "page2": {
         "title": "Varování",
         "text1": "Pokud oříznutí obsahuje více log, nevybírejte je.",
-        "text2": "Pokud oříznutí obsahuje pouze část loga, můžete jej vybrat"
+        "text2": "Pokud oříznutí obsahuje pouze část loga, můžete jej vybrat."
       },
       "page3": {
         "title": "Ověřit",
@@ -317,7 +317,7 @@
     },
     "loading": "Načítání...",
     "unknown_brand": "Značka neznámá",
-    "value_missing": "Zapomněl jsi zadat hodnotu duuuuuuuuuuuuuuuuuuuuuuuuude",
+    "value_missing": "Zapomněli jste zadat hodnotu.",
     "next": "Další krok",
     "prev": "Předchozí krok",
     "skip": "Přeskočit tento produkt",

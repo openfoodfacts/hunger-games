@@ -26,14 +26,14 @@
     "saved_filters": "저장된 필터",
     "contribution_modal": {
       "title": "귀하의 기여가 중요합니다",
-      "information": "Hunger Games는 OCR 결과를 활용하기 위한 노력입니다. Open Food Facts의 Hunger Games를 사용하면 커뮤니티가 더 나은 음식을 선택하는 데 도움이 되는 전체 데이터베이스를 개선하게 됩니다. 귀하의 주석을 수집하고 이를 사용하여 Open Food Facts를 보다 정확하고 효율적으로 만듭니다.",
+      "information": "Hunger Games is an effort to leverage the results of our OCR and artificial intelligence. When you use Hunger Games by Open Food Facts, you improve our entire database which helps the community make better food choices. We gather your annotations and use them to make Open Food Facts more accurate and effecient.",
       "thank_you": "Open Food Facts를 더 많은 사람들이 쉽게 사용할 수 있도록 개선하는 데 도움을 주셔서 감사합니다."
     },
     "statistics": {
       "title": "{{userName}} 통계:",
       "editorCount": {
         "title": "편집자",
-        "description": "완료된 교육의 수"
+        "description": "Number of editions done"
       },
       "contributorCount": {
         "title": "기여자",
@@ -114,7 +114,7 @@
     "log_in": "Username",
     "sign_up": "회원 가입",
     "login_title": "주석을 중요하게 만들기",
-    "login_description": "현재 Open Food Facts에 로그인하지 않았습니다. 귀하의 답변을 제품에 직접 적용하고 귀하의 계정에 연결하려면 Open Food Facts 계정에 로그인하거나 계정을 만드십시오.",
+    "login_description": "You are not currently logged into Open Food Facts. To get your answers directly applied to products, and associated to your account, consider logging in to your Open Food Facts account, or creating one",
     "please_wait_while_we_fetch_the_question": "Please wait while we fetch the question!"
   },
   "menu": {
@@ -125,16 +125,16 @@
     "logos-annotation": "로고 주석",
     "logos-search": "로고 검색",
     "logos-product-search": "제품별 주석",
-    "logos-deep-search": "무한 주석",
+    "logos-deep-search": "Infinite annotation",
     "manage": "관리",
     "insights": "인사이트",
     "nutritions": "영양 성분 표시",
     "settings": "설정",
     "eco-score": "친환경 점수",
     "dashboard": "Logos dashboard",
-    "tour": "둘러보기 표시",
-    "logged_in_user": "{{userName}}으로 기록",
-    "log_in": "클릭하여 로그인하기"
+    "tour": "Show tour",
+    "logged_in_user": "Logged as {{userName}}",
+    "log_in": "Click to login"
   },
   "insights": {
     "insights": "인사이트",
@@ -193,7 +193,7 @@
     "no_found": "로고를 찾을 수 없음",
     "search": "검색",
     "number_of_results": "결과 수:",
-    "loading": "불러오는 중…",
+    "loading": "로딩중…",
     "refresh": "새로고침",
     "search_specific": "특정 로고 검색",
     "load_more": "더 불러오기",
@@ -202,17 +202,17 @@
     "flag": "뭔가 잘못되었나요? 이미지를 신고/신고하세요!",
     "unflag": "이미지 플래그 해제",
     "crop_image_title": "로고 자르기",
-    "no_more_questions": "No more quesitons about this logo. You can try to find more logo with the following game.",
+    "no_more_questions": "No more questions about this logo. You can try to find more logos with the following game.",
     "loading_messages": {
-      "pending_reference_logos": "We are loading some logos example to initialised the serach",
-      "failed_reference_logos": "We did not find any logo with this annotation. Try to use the following game to annotate some of them."
+      "pending_reference_logos": "We are loading some logos examples to initialise the serach",
+      "failed_reference_logos": "We did not find any logos with this annotation. Try to use the following game to annotate some of them."
     }
   },
   "settings": {
     "settings": "설정",
     "language": "언어",
     "save": "저장",
-    "reportIssue": "버그를 발견했나요? 저희에게 알려주세요",
+    "reportIssue": "Found a bug? Please let us know.",
     "dev_mode_title": "더 많은 옵션을 얻으려면 개발자 모드를 활성화하세요",
     "dev_mode_label": "개발자 모드",
     "dev_page_toggle": "{{name}} 페이지 보기",
@@ -237,7 +237,7 @@
     "Open_Food_Facts_wiki": "Open Food Facts wiki (en)",
     "Translators": "번역에 도움을 주신 분들",
     "Partners": "파트너",
-    "Open_Beauty_Facts": "Open Beauty Facts - Cosmétiques",
+    "Open_Beauty_Facts": "Open Beauty Facts - 화장품",
     "text2": "세계 각국에서 식품의 협업 무료 오픈 데이터베이스."
   },
   "helper": {
@@ -251,20 +251,20 @@
       "page2": {
         "title": "질문 게임",
         "text1": "식품이 이 브랜드에 속합니까?",
-        "text2": "<strong>예/아니오</strong>로 간단하게 대답하세요! 답을 모르십니까? 괜찮습니다. 그냥 건너뛰세요.",
-        "text3": "키보드 키 o,n 및 k를 사용할 수도 있습니다.",
+        "text2": "Simply answer with a <strong>Yes/No</strong>! Don't know the answer? That's alright, just skip it.",
+        "text3": "You can also use your keyboard shortcuts: y,n and k.",
         "text4": "국가, 브랜드, 인기도 등을 기준으로 제품을 <strong>필터링</strong> 할 수 있습니다!",
         "text5": "이 작업을 매번 수행하고 싶지 않다면 별을 클릭하여 <strong>필터를 저장할 수도 있습니다</strong>. 다음에 다시 방문하면 홈페이지 자체에서 저장된 필터를 찾으십시오."
       },
       "page3": {
         "title": "로고스 게임",
-        "text1": "우리의 또 다른 정말 사랑받는 게임은 당신과 동일하다고 생각하는 </strong> 모든 로고 선택하기 <strong> 게임입니다.",
+        "text1": "Another popular game is the logos game where you have to <strong>select all the logos</strong> you feel are the same.",
         "text2": "예에서 볼 수 있듯이 유사한 로고를 모두 선택한 후 해당 값을 입력하고 브랜드, 라벨 또는 기타 항목을 선택하기만 하면 됩니다. 간단합니다!"
       },
       "page4": {
         "title": "에코 점수 질문 게임",
         "text1": "가장 우선 순위가 높은 라벨의 나머지 질문을 완료할 수 있도록 도와주세요!",
-        "text2": "이 카드는 에코 점수 계산에 사용되는 라벨들과 연결되어 있습니다.",
+        "text2": "These cards are linked to labels used in the computation of the Eco-Score.",
         "text3": "<strong>에코 점수란?</strong>",
         "text4": "에코 점수는 총 환경 발자국을 포착하여 소비자가 제품을 비교하고 어느 것이 환경에 더 좋은지 쉽게 결정할 수 있도록 합니다."
       },
@@ -288,7 +288,7 @@
       "page2": {
         "title": "경고",
         "text1": "자르기에 여러 로고가 포함된 경우 선택하지 마십시오.",
-        "text2": "자르기에 로고의 일부만 포함되어 있는 경우 선택할 수 있습니다."
+        "text2": "If the crop contains only a partial part of a logo, you can select it."
       },
       "page3": {
         "title": "검사",
@@ -317,9 +317,9 @@
     },
     "loading": "불러오는 중…",
     "unknown_brand": "브랜드 알 수 없음",
-    "value_missing": "Duuuuuuuuuuuuuuuuuude 값을 입력하는 것을 잊었습니다.",
-    "next": "다음 단계",
-    "prev": "이전 단계",
+    "value_missing": "You forgot to input a value.",
+    "next": "Next step",
+    "prev": "Prev step",
     "skip": "이 상품 건너뛰기",
     "validate": "표 \b검사",
     "unselect_picture": "영양 정보 없음",

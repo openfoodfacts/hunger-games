@@ -26,7 +26,7 @@
     "saved_filters": "Gemte filtre",
     "contribution_modal": {
       "title": "Individuelle bidrag gør en forskel",
-      "information": "Hunger Games er et forsøg på at drage bedst mulig fordel af OCR-resultaterne. Når Hunger Games fra Open Food Facts bruges, forbedres hele databasen, hvilket hjælper fællesskabet med at træffe bedre madvalg. Individuelle anmærkninger indsamles mhp. at gøre Open Food Facts mere præcis og effektiv.",
+      "information": "Hunger Games er et forsøg på at drage bedst mulig fordel af resultaterne fra OCR og kunstig intelligens. Når Hunger Games fra Open Food Facts bruges, forbedres hele databasen, hvilket hjælper fællesskabet med at træffe bedre madvalg. Individuelle anmærkninger indsamles mhp. at gøre Open Food Facts mere præcis og effektiv.",
       "thank_you": "Tak, for hjælpen med at forbedre Open Food Facts, så flere nemt kan bruge den."
     },
     "statistics": {
@@ -114,7 +114,7 @@
     "log_in": "Brugernavn",
     "sign_up": "Tilmeld dig",
     "login_title": "Få din anmærkning til at tælle",
-    "login_description": "Der er pt. ikke logget på Open Food Facts. For at få svar direkte anvendt på produkter samt knyttet til en konto, kan man overveje at logge ind på sin Open Food Facts-konto (eller oprette én)",
+    "login_description": "Der er pt. ikke logget ind på Open Food Facts. For at få svar anvendt direkte på produkter samt knyttet til en konto, kan man overveje at logge ind på sin Open Food Facts-konto (eller oprette én)",
     "please_wait_while_we_fetch_the_question": "Vent venligst, mens spørgsmålet hentes!"
   },
   "menu": {
@@ -125,16 +125,16 @@
     "logos-annotation": "Logoanmærkninger",
     "logos-search": "Logosøgning",
     "logos-product-search": "Anmærkning pr. produkter",
-    "logos-deep-search": "Infinit annotation",
+    "logos-deep-search": "Uendelig annotering",
     "manage": "Håndtér",
     "insights": "Indblik",
     "nutritions": "Ernæringsfakta",
     "settings": "Indstillinger",
     "eco-score": "Øko-Score",
     "dashboard": "Logokontrolpanel",
-    "tour": "Vis Rundvisning",
-    "logged_in_user": "logget som {{userName}}",
-    "log_in": "klik for at logge ind"
+    "tour": "Rundvisning",
+    "logged_in_user": "Logget ind som {{userName}}",
+    "log_in": "Klik for at logge ind"
   },
   "insights": {
     "insights": "Indblik",
@@ -193,7 +193,7 @@
     "no_found": "Intet logo fundet",
     "search": "Søg",
     "number_of_results": "Antal resultater:",
-    "loading": "Indlæser...",
+    "loading": "Indlæser…",
     "refresh": "Opfrisk",
     "search_specific": "Søg efter bestemt logo",
     "load_more": "Indlæs mere",
@@ -212,7 +212,7 @@
     "settings": "Indstillinger",
     "language": "Sprog",
     "save": "Gem",
-    "reportIssue": "Fundet en fejl? Fortæl os det venligst",
+    "reportIssue": "Fundet en fejl? Fortæl os det venligst.",
     "dev_mode_title": "Aktiver udviklertilstanden for flere valgmuligheder",
     "dev_mode_label": "Dev-tilstand",
     "dev_page_toggle": "Vis {{name}}side",
@@ -237,7 +237,7 @@
     "Open_Food_Facts_wiki": "Open Food Facts wiki (en)",
     "Translators": "Oversættere",
     "Partners": "Partnere",
-    "Open_Beauty_Facts": "Open Beauty Facts - Cosmétiques",
+    "Open_Beauty_Facts": "Open Beauty Facts - Kosmetik",
     "text2": "En fællesskabsdrevet, gratis og åben database med fødevareprodukter for hele verden."
   },
   "helper": {
@@ -251,14 +251,14 @@
       "page2": {
         "title": "Spørgsmålsspil",
         "text1": "Tilhører fødevareproduktet dette mærke?",
-        "text2": "Besvares med <strong>ja/nej</strong>! Kendes svaret ikke? Det er OK, bare overspring det.",
-        "text3": "Tastaturtasterne o, n og k kan også bruges.",
+        "text2": "Besvares blot med <strong>Ja/Nej</strong>! Kendes svaret ikke? Det er OK, bare overspring det.",
+        "text3": "Tastaturgenvejene y, n og k kan også bruges.",
         "text4": "Produkterne kan <strong>filtreres</strong> baseret på land, mærker, popularitet mv.!",
         "text5": "Vil man ikke at gøre dette hver eneste gang, kan man også <strong>gemme filtrene</strong> ved at klikke på stjernen. Næste gang man vender tilbage, findes de gemte filtre på selve hjemmesiden"
       },
       "page3": {
         "title": "Logospil",
-        "text1": "Et andet virkelig elsket spil er logospillet, hvor man skal <strong> vælge alle de logoer</strong>, man mener er ens.",
+        "text1": "Et andet populært spil er logospillet, hvor man skal <strong> vælge alle de logoer</strong>, man mener er ens.",
         "text2": "Som vist i eksemplet, når alle lignende logoer er valgt, så skriv blot deres værdi og vælg, hvilke er mærker, etiketter eller andet. Så enkelt er det!"
       },
       "page4": {
@@ -288,7 +288,7 @@
       "page2": {
         "title": "Advarsel",
         "text1": "Indeholder en beskæring flere logoer, så vælg den ikke.",
-        "text2": "Indeholder en beskæring kun en del af et logo, kan den vælges"
+        "text2": "Indeholder en beskæring kun en del af et logo, kan det vælges."
       },
       "page3": {
         "title": "Bekræftelse",
@@ -317,7 +317,7 @@
     },
     "loading": "Indlæser...",
     "unknown_brand": "Mærke ukendt",
-    "value_missing": "Hov, der blev ikke angivet nogen værdi",
+    "value_missing": "Værdi er obligatorisk.",
     "next": "Næste trin",
     "prev": "Foreg. trin",
     "skip": "Overspring dette produkt",

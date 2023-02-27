@@ -26,14 +26,14 @@
     "saved_filters": "Filtros Guardados",
     "contribution_modal": {
       "title": "Tu aporte importa",
-      "information": "Hunger Games es un esfuerzo por aprovechar los resultados de nuestro OCR. Cuando utilizas los Hunger Games de Open Food Facts mejoras toda nuestra base de datos, la cual ayuda a la comunidad a tomar mejores opciones de comida. Reunimos tus anotaciones y las usamos para hacer que Open Food Facts sea más exacto y eficaz.",
+      "information": "Hunger Games es un esfuerzo por aprovechar los resultados de nuestro OCR e inteligencia artificial. Cuando utilizas Los juegos del hambre de Open Food Facts, mejoras toda nuestra base de datos, lo que ayuda a la comunidad a elegir mejor los alimentos. Recopilamos tus anotaciones y las usamos para hacer que Open Food Facts sea más preciso y eficiente.",
       "thank_you": "Gracias por ayudarnos a mejorar Open Food Facts para que más personas puedan usarlo fácilmente."
     },
     "statistics": {
       "title": "{{userName}} estadísticas:",
       "editorCount": {
         "title": "Editor",
-        "description": "Número de edición realizada"
+        "description": "Número de ediciones realizadas"
       },
       "contributorCount": {
         "title": "Colaborador",
@@ -114,7 +114,7 @@
     "log_in": "Usuario",
     "sign_up": "Registrarse",
     "login_title": "Haz que tu anotación cuente",
-    "login_description": "Actualmente no ha iniciado sesión en Open Food Facts. Para que sus respuestas se apliquen directamente a los productos y se asocien a su cuenta, considere iniciar sesión en su cuenta Open Food Facts o crear una",
+    "login_description": "Actualmente no has iniciado sesión en Open Food Facts. Para obtener tus respuestas directamente aplicadas a los productos, y asociadas a tu cuenta, considera iniciar sesión en tu cuenta de Open Food Facts o simplemente crear una",
     "please_wait_while_we_fetch_the_question": "¡Espere mientras buscamos la pregunta!"
   },
   "menu": {
@@ -132,9 +132,9 @@
     "settings": "Configuración",
     "eco-score": "Eco-Score",
     "dashboard": "Panel de Logos",
-    "tour": "Mostrar Recorrido",
-    "logged_in_user": "registrado como {{userName}}",
-    "log_in": "haga clic para iniciar sesión"
+    "tour": "Mostrar recorrido",
+    "logged_in_user": "Sesión iniciada como {{userName}}",
+    "log_in": "Clic para iniciar sesión"
   },
   "insights": {
     "insights": "Percepciones",
@@ -193,7 +193,7 @@
     "no_found": "Ningún logo encontrado",
     "search": "Buscar",
     "number_of_results": "Número de resultados:",
-    "loading": "Cargando...",
+    "loading": "Cargando…",
     "refresh": "Actualizar",
     "search_specific": "Buscar logotipo específico",
     "load_more": "Carga más",
@@ -202,42 +202,42 @@
     "flag": "¿Algo mal? ¡Reporta o marca la imagen!",
     "unflag": "Desmarcar la imagen",
     "crop_image_title": "recorte del logo",
-    "no_more_questions": "No more quesitons about this logo. You can try to find more logo with the following game.",
+    "no_more_questions": "No hay más preguntas sobre este logo. Puedes intentar encontrar más logos con el siguiente juego.",
     "loading_messages": {
-      "pending_reference_logos": "We are loading some logos example to initialised the serach",
-      "failed_reference_logos": "We did not find any logo with this annotation. Try to use the following game to annotate some of them."
+      "pending_reference_logos": "Estamos cargando algunos ejemplos de logos para inicializar la búsqueda",
+      "failed_reference_logos": "No hemos encontrado ningún logotipo con esta anotación. Intenta usar el siguiente juego para anotar algunos de ellos."
     }
   },
   "settings": {
     "settings": "Configuración",
     "language": "Idiomas",
     "save": "Guardar",
-    "reportIssue": "¿Encontró un error?, por favor háganoslo saber",
+    "reportIssue": "¿Has encontrado un error? Por favor, compártelo.",
     "dev_mode_title": "Para obtener más opciones, active el modo dev",
     "dev_mode_label": "Modo de desarrollador",
     "dev_page_toggle": "Mostrar {{name}} página",
     "join_community": "Únete a la comunidad",
-    "text1": "Open Food Facts is a collaborative project built by tens of thousands of volunteers and managed by a non-profit organization with 8 employees. We need your donations to fund the Open Food Facts 2023 budget and to continue to develop the project.",
-    "thank_you": "Thank you",
+    "text1": "Open Food Facts es un proyecto colaborativo construido por decenas de miles de voluntarios y administrado por una organización sin fines de lucro con 8 empleados. Necesitamos tus donaciones para financiar el presupuesto de Open Food Facts 2023 y para continuar desarrollando el proyecto.",
+    "thank_you": "Gracias",
     "donate": "Donar",
     "join_the_community": {
-      "discover_our": "Discover our ",
-      "code_of_conduct": "Code of conduct ",
-      "join_us_on": "Join us on ",
-      "forum": "Forum",
-      "subscribe_to_our": "Subscribe to our ",
-      "newsletter": "newsletter"
+      "discover_our": "Descubre nuestro ",
+      "code_of_conduct": "Código de conducta ",
+      "join_us_on": "Únete a nosotros ",
+      "forum": "Foro",
+      "subscribe_to_our": "Suscríbete a nuestro ",
+      "newsletter": "boletín"
     },
     "discover_the_project": "Descubre el proyecto",
     "Who_we_are": "Quiénes somos",
     "Vision_Mission_Values_and_Programs": "Visión, misión, valores y programas",
-    "FAQS": "FAQS",
-    "open_Food_Facts_blog": "Open Food Facts blog",
+    "FAQS": "Preguntas frecuentes",
+    "open_Food_Facts_blog": "Blog de Open Food Facts",
     "Press": "Prensa",
-    "Open_Food_Facts_wiki": "Open Food Facts wiki (en)",
+    "Open_Food_Facts_wiki": "Wiki de Open Food Facts (en)",
     "Translators": "Traductores",
     "Partners": "Asociados",
-    "Open_Beauty_Facts": "Open Beauty Facts - Cosmétiques",
+    "Open_Beauty_Facts": "Open Beauty Facts - Cosméticos",
     "text2": "Una base de datos colaborativa, libre y abierta de productos alimenticios de todo el mundo."
   },
   "helper": {
@@ -251,20 +251,20 @@
       "page2": {
         "title": "Juego de preguntas",
         "text1": "¿El producto alimenticio pertenece a esta marca?",
-        "text2": "¡Responda simplemente con un <strong>sí/no</strong>! ¿No sabes la respuesta? Eso está bien, solo sáltatelo.",
-        "text3": "También puede utilizar las teclas del teclado o,n y k.",
+        "text2": "¡Simplemente responda con un <strong>Sí/No</strong>! ¿No sabes la respuesta? Eso está bien, solo sáltatelo.",
+        "text3": "También puedes utilizar los atajos de teclado: y,n y k.",
         "text4": "¡Puede <strong>filtrar</strong> los productos según el país, las marcas, la popularidad y mucho más!",
         "text5": "Si no desea hacer esto cada vez, puede <strong>guardar los filtros</strong> cliqueando en la estrella. La próxima vez que regrese, encontrará los filtros guardados en la página de inicio"
       },
       "page3": {
         "title": "Juego de logotipos",
-        "text1": "Nuestro otro juego muy querido es el juego de logotipos en el que tienes que <strong> seleccionar todos los logotipos</strong> que creas que son iguales.",
+        "text1": "Otro juego popular es el juego de logos en el que tienes que <strong>seleccionar todos los logos</strong> que creas que son iguales.",
         "text2": "Como se muestra en el ejemplo, una vez que seleccione todos los logotipos similares, simplemente escriba su valor y seleccione si es una marca, una etiqueta u otra cosa. ¡Es así de simple!"
       },
       "page4": {
         "title": "Juego de preguntas de puntuación ecológica",
         "text1": "¡Ayúdenos a terminar las preguntas restantes en las etiquetas de mayor prioridad!",
-        "text2": "Estas tarjetas están vinculadas a las etiquetas utilizadas en el cálculo de la puntuación ecológica.",
+        "text2": "Estas tarjetas están vinculadas a las etiquetas utilizadas en el cálculo del Eco-Score.",
         "text3": "<strong>¿Qué es el Eco-Score?</strong>",
         "text4": "El Eco-Score captura la huella medioambiental total, facilitando a los consumidores comparar productos y decidir qué es mejor para el medio ambiente."
       },
@@ -288,7 +288,7 @@
       "page2": {
         "title": "Atención",
         "text1": "Si el recorte contiene varios logotipos, no lo seleccione.",
-        "text2": "Si el recorte contiene solo una parte parcial de un logotipo, puede seleccionarlo"
+        "text2": "Si el recorte contiene sólo una parte parcial de un logotipo, puedes seleccionarlo."
       },
       "page3": {
         "title": "Validar",
@@ -317,7 +317,7 @@
     },
     "loading": "Cargando...",
     "unknown_brand": "Marca desconocida",
-    "value_missing": "Olvidaste ingresar el valor duuuuuuuuuuuuuuuuuude",
+    "value_missing": "Has olvidado ingresar un valor.",
     "next": "Siguiente paso",
     "prev": "Paso anterior",
     "skip": "Omitir este producto",

@@ -26,14 +26,14 @@
     "saved_filters": "Saved Filters",
     "contribution_modal": {
       "title": "Your contribution matters",
-      "information": "Hunger Games is an effort to leverage the results of our OCR. When you use Hunger Games by Open Food Facts, you improve our entire database which helps the community make better food choices. We gather your annotations and use them to make Open Food Facts more accurate and effecient.",
+      "information": "Hunger Games gure OCR eta adimen artifizialaren emaitzak aprobetxatzeko ahalegina da. Open Food Facts-en Hunger Games erabiltzen duzunean, gure datu-base osoa hobetzen duzu eta horrek komunitateari janariaren aukeraketa hobetzen laguntzen dio. Zure oharrak biltzen ditugu eta Open Food Facts zehatzagoa eta eraginkorragoa izan dadin erabiltzen ditugu.",
       "thank_you": "Thank you for helping us improve Open Food Facts so that more people can use it easily."
     },
     "statistics": {
       "title": "{{userName}} statistics:",
       "editorCount": {
         "title": "Editor",
-        "description": "Number of edition done"
+        "description": "Egindako edizio kopurua"
       },
       "contributorCount": {
         "title": "Ekarlea",
@@ -114,7 +114,7 @@
     "log_in": "Erabiltzaile-izena",
     "sign_up": "Eman izena",
     "login_title": "Make your annotation count",
-    "login_description": "Currently you are not logged in Open Food Facts. To get your answers directly applied to products, and associated to your account, consider logging in to your Open Food Facts account, or creating one",
+    "login_description": "Une honetan Open Food Facts-en saioa hasi gabe duzu. Emaitzak zuzenean produktuetan agertzeko eta zure kontuarekin erlazionatzeko, Open Food Facts-en saioa hasi edo kontu bat sortu",
     "please_wait_while_we_fetch_the_question": "Mesedez, itxaron galdera jasotzen dugun bitartean!"
   },
   "menu": {
@@ -125,16 +125,16 @@
     "logos-annotation": "Logos annotation",
     "logos-search": "Logos search",
     "logos-product-search": "Annotation per products",
-    "logos-deep-search": "Infinit annotation",
+    "logos-deep-search": "Ohar mugagabea",
     "manage": "Manage",
     "insights": "Insights",
     "nutritions": "Nutrition facts",
     "settings": "Ezarpenak",
     "eco-score": "Eco-score",
     "dashboard": "Logos dashboard",
-    "tour": "Show Tour",
-    "logged_in_user": "logged as {{userName}}",
-    "log_in": "click to login"
+    "tour": "Ikustaldia",
+    "logged_in_user": "{{userName}} gisa erregistratua",
+    "log_in": "Sakatu saioa hasteko"
   },
   "insights": {
     "insights": "Insights",
@@ -193,7 +193,7 @@
     "no_found": "No logo found",
     "search": "Bilatu",
     "number_of_results": "Number of results:",
-    "loading": "Loading...",
+    "loading": "Kargatzen…",
     "refresh": "Freskatu",
     "search_specific": "Search specific logo",
     "load_more": "Load more",
@@ -202,42 +202,42 @@
     "flag": "Something wrong? Report/flag the image!",
     "unflag": "Unflag the image",
     "crop_image_title": "crop of the logo",
-    "no_more_questions": "Galdera gehiagorik ez logotipo honen inguruan. Logotipo gehiago bilatzen saiatu zaitezke hurrengo jokoarekin.",
+    "no_more_questions": "Ez dago galdera gehiago logotipo honi buruz. Logotipo gehiago aurkitzen saiatu zaitezke hurrengo jokoarekin.",
     "loading_messages": {
-      "pending_reference_logos": "Adibide gisa, logotipo batzuk kargatzen gabiltza bilaketarekin hasteko",
-      "failed_reference_logos": "Oharpen hau duen logotiporik ez dugu aurkitu. Hurrengo jokoarekin saia zaitezke horietako batzuk aurkitzeko."
+      "pending_reference_logos": "Logotipoen adibide batzuk kargatzen ari gara bilaketa hasieratzeko",
+      "failed_reference_logos": "Ez dugu aurkitu idatzitakoarekin bat egiten duen logorik. Ideiak lortu itzazu hurrengo jokoa erabiltzen."
     }
   },
   "settings": {
     "settings": "Ezarpenak",
     "language": "Hizkuntzak",
     "save": "Gorde",
-    "reportIssue": "Found a bug?, please let us know",
+    "reportIssue": "Akatsen bat aurkitu duzu? Mesedez, jakinarazi iezaguzu.",
     "dev_mode_title": "To get more options, activate the dev mode",
     "dev_mode_label": "Dev Mode",
     "dev_page_toggle": "Show {{name}} page",
     "join_community": "Batu komunitatera",
-    "text1": "Open Food Facts is a collaborative project built by tens of thousands of volunteers and managed by a non-profit organization with 8 employees. We need your donations to fund the Open Food Facts 2023 budget and to continue to develop the project.",
-    "thank_you": "Thank you",
+    "text1": "Open Food Facts milaka bolondres eta irabazi asmorik gabeko 8 lankideko erakunde batek eginiko proiektu kolaboratiboa da. Zure doaintzak behar ditugu Open Food Facts 2023ko aurrekontuarentzako dirua bildu ahal izateko, eta horrela, proiektua garatzen jarraitzeko.",
+    "thank_you": "Eskerrik asko",
     "donate": "Dohaintza",
     "join_the_community": {
-      "discover_our": "Discover our ",
-      "code_of_conduct": "Code of conduct ",
-      "join_us_on": "Join us on ",
-      "forum": "Forum",
-      "subscribe_to_our": "Subscribe to our ",
-      "newsletter": "newsletter"
+      "discover_our": "Ezagutu gure ",
+      "code_of_conduct": "Jokabide-kodea ",
+      "join_us_on": "Gurera bildu zaitez ",
+      "forum": "Foroa",
+      "subscribe_to_our": "Harpidetu gure ",
+      "newsletter": "buletina"
     },
     "discover_the_project": "Discover the project",
     "Who_we_are": "Nortzuk gara",
     "Vision_Mission_Values_and_Programs": "Vision, Mission, Values and Programs",
-    "FAQS": "FAQS",
-    "open_Food_Facts_blog": "Open Food Facts blog",
+    "FAQS": "Maiz egindako galderak",
+    "open_Food_Facts_blog": "Open Food Facts bloga",
     "Press": "Prentsa",
-    "Open_Food_Facts_wiki": "Open Food Facts wiki (en)",
+    "Open_Food_Facts_wiki": "Open Food Facts wikia (en)",
     "Translators": "Translators",
     "Partners": "Partners",
-    "Open_Beauty_Facts": "Open Beauty Facts - Cosmétiques",
+    "Open_Beauty_Facts": "Open Beauty Facts - Cosmetics",
     "text2": "Mundu osoko elikagaiei buruzko datu-base kolaboratzailea, libre eta irekia."
   },
   "helper": {
@@ -251,20 +251,20 @@
       "page2": {
         "title": "Questions Game",
         "text1": "Does the food product belong to this brand?",
-        "text2": "Answer simply with a <strong>yes/no</strong>! Don't know the answer? That's alright, just skip it.",
-        "text3": "O, N eta K teklatuko teklak ere erabil ditzakezu.",
+        "text2": "Erantzun ezazu <strong>Bai/Ez</strong>batekin! Ez baduzu erantzuna ezagutzen lasai, urrengora joan.",
+        "text3": "Teklatuko lasterbideak ere erabil ditzakezu: y,n eta k.",
         "text4": "Produktuak <strong>iragazi</strong> ditzakezu, markaren, arrakastaren eta askoz gehiagoren arabera!",
         "text5": "Ez baduzu aldi bakoitzean egin nahi, <strong>iragazkiak gorde ditzakezu</strong> izarraren gainean klik eginez. Itzuliko zaren hurrengoan, gordetako iragazkiak hasierako orrian bertan aurkituko dituzu"
       },
       "page3": {
         "title": "Logos Game",
-        "text1": "Our another really loved game is the logos game where you have to <strong> select all the logos</strong> you feel are the same.",
+        "text1": "Another popular game is the logos game where you have to <strong>select all the logos</strong> you feel are the same.",
         "text2": "As shown in the example, once you select all the similar logos, just type their value and select where it is a brand, a label or something else. It's that simple!"
       },
       "page4": {
         "title": "Eco-Score Questions Game",
         "text1": "Help us finish the remaining questions in the most high priority labels!",
-        "text2": "These cards are linked to labels used in the computation of the eco-score.",
+        "text2": "These cards are linked to labels used in the computation of the Eco-Score.",
         "text3": "<strong>What is Eco-Score?</strong>",
         "text4": "Eco-Score captures the total environmental footprint, making it easier for consumers to compare products and decide which is better for the environment."
       },
@@ -288,7 +288,7 @@
       "page2": {
         "title": "Abisua",
         "text1": "If the crop contains multiple logos, do not select it.",
-        "text2": "If the crop contains only a partial part of a logo, you can select it"
+        "text2": "If the crop contains only a partial part of a logo, you can select it."
       },
       "page3": {
         "title": "Validate",
@@ -317,7 +317,7 @@
     },
     "loading": "Loading...",
     "unknown_brand": "Marka ezezaguna",
-    "value_missing": "You forgot to input value duuuuuuuuuuuuuuuuude",
+    "value_missing": "You forgot to input a value.",
     "next": "Hurrengo urratsa",
     "prev": "Aurreko urratsa",
     "skip": "Skip this product",
