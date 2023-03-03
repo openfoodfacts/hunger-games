@@ -111,9 +111,7 @@ export const QuestionFilter = () => {
 
   if (
     Object.keys(exposedParameters).some(
-      (key) =>
-        filterState[key] !== undefined &&
-        exposedParameters[key] !== filterState[key]
+      (key) => exposedParameters[key] !== filterState[key]
     )
   ) {
     dispatch(updateFilter(exposedParameters));

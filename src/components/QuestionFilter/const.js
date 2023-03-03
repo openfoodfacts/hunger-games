@@ -32,6 +32,7 @@ export const insightTypesNames = {
   category: "category",
   brand: "brand",
   product_weight: "product_weight",
+  packaging: "packaging",
 };
 
 export const key2urlParam = {
