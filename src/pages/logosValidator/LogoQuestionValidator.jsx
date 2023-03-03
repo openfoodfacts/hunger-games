@@ -380,6 +380,7 @@ function LogoQuestionValidator() {
           )
           .map((question) => (
             <LogoQuesitonCard
+              key={question.insight_id}
               question={question}
               toggleSelection={toggleSelection}
               checked={selectedIds.includes(question.insight_id)}
@@ -410,7 +411,6 @@ function LogoQuestionValidator() {
                 answerQuestion({
                   value: 0,
                   insight_id,
-                  pendingDelay: 100,
                 })
               );
               setSelectedIds([]);
@@ -429,7 +429,6 @@ function LogoQuestionValidator() {
                 answerQuestion({
                   value: 1,
                   insight_id,
-                  pendingDelay: 100,
                 })
               );
               setSelectedIds([]);
