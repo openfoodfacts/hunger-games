@@ -409,7 +409,7 @@ function LogoQuestionValidator() {
               selectedIds.forEach((insight_id) =>
                 answerQuestion({
                   value: 0,
-                  insightId: insight_id,
+                  insight_id,
                   pendingDelay: 100,
                 })
               );
@@ -428,7 +428,7 @@ function LogoQuestionValidator() {
               selectedIds.forEach((insight_id) =>
                 answerQuestion({
                   value: 1,
-                  insightId: insight_id,
+                  insight_id,
                   pendingDelay: 100,
                 })
               );
