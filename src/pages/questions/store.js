@@ -50,7 +50,7 @@ export const questionBuffer = createSlice({
       countryFilter: "",
       sortByPopularity: false,
       valueTag: "",
-      predictor: "universal-logo-detector",
+      predictor: "",
     },
   },
   reducers: {
