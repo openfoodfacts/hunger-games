@@ -8,7 +8,7 @@ const taxonomyURLfileName = {
   label: "labels",
 };
 
-const LANG = ["fr", "en", "de", "es"];
+const LANG = ["en", "de", "es", "fr", "hr", "sv"];
 const LETTERS = [
   "a",
   "b",

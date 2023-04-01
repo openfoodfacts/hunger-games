@@ -11,7 +11,10 @@ export const campagnes = ["agribalyse-category"];
 
 export const countryNames = [
   "",
+  "en:australia",
   "en:belgium",
+  "en:canada",
+  "en:croatia",
   "en:denmark",
   "en:france",
   "en:germany",
@@ -21,10 +24,8 @@ export const countryNames = [
   "en:spain",
   "en:sweden",
   "en:switzerland",
-  "en:united-states",
-  "en:canada",
-  "en:australia",
   "en:united-kingdom",
+  "en:united-states",
 ];
 
 export const insightTypesNames = {

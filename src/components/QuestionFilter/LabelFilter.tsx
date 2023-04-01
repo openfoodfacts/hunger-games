@@ -6,7 +6,7 @@ import axios from "axios";
 import { URL_ORIGINE } from "../../const";
 
 // Otherwise fallback on english
-const AVAILABLE_OPTIONS = ["fr", "de", "es"];
+const AVAILABLE_OPTIONS = ["de", "es", "fr", "hr", "sv"];
 
 const cleanName = (name) =>
   name
