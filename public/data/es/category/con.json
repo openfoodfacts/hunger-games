@@ -172,6 +172,14 @@
     "name": "Berenjenas congeladas"
   },
   {
+    "key": "en:biscuit-cookie-vitamins-and-chemical-elements-content-guaranteed",
+    "name": "Biscuit (cookie) vitamins and chemical elements content guaranteed"
+  },
+  {
+    "key": "en:biscuit-cookie-vitamins-content-guaranteed",
+    "name": "Biscuit (cookie) vitamins content guaranteed"
+  },
+  {
     "key": "en:frozen-porcini-mushrooms",
     "name": "Boletos comestibles congelados"
   },
@@ -210,10 +218,6 @@
   {
     "key": "en:frozen-pumpkins",
     "name": "Calabazas congeladas"
-  },
-  {
-    "key": "en:camembert-with-calvados",
-    "name": "Camembert con Calvados"
   },
   {
     "key": "en:dolce-gusto-compatible-coffee-capsules",
@@ -504,6 +508,10 @@
     "name": "Confectioneries of Nord-Pas-de-Calais"
   },
   {
+    "key": "en:conference-pears",
+    "name": "Conference pears"
+  },
+  {
     "key": "en:apricot-jams",
     "name": "Confituras de albaricoque"
   },
@@ -772,12 +780,12 @@
     "name": "Guisantes y zanahorias en conserva"
   },
   {
-    "key": "en:canned-broad-beans",
-    "name": "Habas en conserva"
+    "key": "en:frozen-broad-beans",
+    "name": "Habas congeladas"
   },
   {
-    "key": "en:frozen-fresh-broad-beans",
-    "name": "Habas frescas congeladas"
+    "key": "en:canned-broad-beans",
+    "name": "Habas en conserva"
   },
   {
     "key": "en:plant-based-ice-creams",
@@ -878,6 +886,10 @@
   {
     "key": "en:canned-lentils",
     "name": "Lentejas cocidas en conserva"
+  },
+  {
+    "key": "en:lime-juices-from-concentrate",
+    "name": "Lime juices from concentrate"
   },
   {
     "key": "en:frozen-red-cabbage",
@@ -1170,6 +1182,14 @@
   {
     "key": "en:multivitamin-mixed-fruits-juice-reconstituted-from-a-concentrate",
     "name": "Multivitamin mixed fruits juice reconstituted from a concentrate"
+  },
+  {
+    "key": "es:natillas-con-galleta",
+    "name": "Natillas con galleta"
+  },
+  {
+    "key": "en:custard-puddings-with-caramel-sauce",
+    "name": "Natillas de huevo con caramelo"
   },
   {
     "key": "en:canned-red-pine-mushrooms",
@@ -1536,6 +1556,10 @@
     "name": "Tortitas de arroz con chocolate negro"
   },
   {
+    "key": "en:puffed-rice-cakes-with-yogurt",
+    "name": "Tortitas de arroz con yogur"
+  },
+  {
     "key": "en:puffed-corn-cakes-with-milk-chocolate",
     "name": "Tortitas de maíz con chocolate con leche"
   },
@@ -1720,51 +1744,47 @@
     "name": "Zanahorias troceadas congeladas"
   },
   {
-    "key": "en:concentrated-apricot-juices",
+    "key": "en:apricot-juices-from-concentrate",
     "name": "Zumos de albaricoque procedente de concentrado"
   },
   {
-    "key": "en:concentrated-blueberry-juices",
+    "key": "en:blueberry-juices-from-concentrate",
     "name": "Zumos de arándanos procedente de concentrado"
   },
   {
-    "key": "en:concentrated-plum-juices",
+    "key": "en:plum-juices-from-concentrate",
     "name": "Zumos de ciruela procedente de concentrado"
   },
   {
-    "key": "en:concentrated-pomegranate-juices",
+    "key": "en:pomegranate-juices-from-concentrate",
     "name": "Zumos de granada procedente de concentrado"
   },
   {
-    "key": "en:concentrated-tangerine-juices",
+    "key": "en:tangerine-juices-from-concentrate",
     "name": "Zumos de mandarina procedente de concentrado"
   },
   {
-    "key": "en:concentrated-mango-juices",
-    "name": "Zumos de mango procedente de concentrado"
-  },
-  {
-    "key": "en:concentrated-apple-juices",
+    "key": "en:apple-juices-from-concentrate",
     "name": "Zumos de manzana procedentes de concentrado"
   },
   {
-    "key": "en:concentrated-peach-juices",
+    "key": "en:peach-juices-from-concentrate",
     "name": "Zumos de melocotón procedente de concentrado"
   },
   {
-    "key": "en:concentrated-orange-juices",
+    "key": "en:orange-juices-from-concentrate",
     "name": "Zumos de naranja procedente de concentrado"
   },
   {
-    "key": "en:concentrated-pear-juices",
+    "key": "en:pear-juices-from-concentrate",
     "name": "Zumos de pera procedente de concentrado"
   },
   {
-    "key": "en:concentrated-pineapple-juices",
+    "key": "en:pineapple-from-concentrate",
     "name": "Zumos de piña procedente de concentrado"
   },
   {
-    "key": "en:concentrated-grapefruit-juices",
+    "key": "en:grapefruit-juices-from-concentrate",
     "name": "Zumos de pomelo procedente de concentrado"
   },
   {
@@ -1772,7 +1792,7 @@
     "name": "Zumos de tomate procedente de concentrado"
   },
   {
-    "key": "en:concentrated-grape-juices",
+    "key": "en:grape-juices-from-concentrate",
     "name": "Zumos de uva procedente de concentrado"
   },
   {
@@ -1780,11 +1800,11 @@
     "name": "Zumos de zanahoria procedente de concentrado"
   },
   {
-    "key": "en:concentrated-multifruit-juices",
+    "key": "en:multifruit-juices-from-concentrate",
     "name": "Zumos multifruta procedente de concentrado"
   },
   {
-    "key": "en:concentrated-fruit-juices",
+    "key": "en:fruit-juices-from-concentrate",
     "name": "Zumos procedentes de concentrado"
   }
 ]

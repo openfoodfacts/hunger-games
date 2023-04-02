@@ -36,10 +36,6 @@
     "name": "Fresh mandarin oranges"
   },
   {
-    "key": "en:fresh-mango-juice",
-    "name": "Fresh mango juice"
-  },
-  {
     "key": "en:fresh-mangoes",
     "name": "Fresh mangoes"
   },
@@ -376,16 +372,8 @@
     "name": "Zumos de mandarina exprimidos refrigerados"
   },
   {
-    "key": "en:concentrated-tangerine-juices",
+    "key": "en:tangerine-juices-from-concentrate",
     "name": "Zumos de mandarina procedente de concentrado"
-  },
-  {
-    "key": "en:mango-juices",
-    "name": "Zumos de mango"
-  },
-  {
-    "key": "en:concentrated-mango-juices",
-    "name": "Zumos de mango procedente de concentrado"
   },
   {
     "key": "en:apple-juices",
@@ -396,11 +384,11 @@
     "name": "Zumos de manzana exprimidos no refrigerados"
   },
   {
-    "key": "en:refrigerated-squeezed-apple-juices",
-    "name": "Zumos de manzana exprimidos refrigerados"
+    "key": "en:apple-juices-from-concentrate",
+    "name": "Zumos de manzana procedentes de concentrado"
   },
   {
-    "key": "en:concentrated-apple-juices",
-    "name": "Zumos de manzana procedentes de concentrado"
+    "key": "en:refrigerated-apple-juices",
+    "name": "Zumos de manzana refrigerados"
   }
 ]

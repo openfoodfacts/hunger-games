@@ -96,16 +96,24 @@
     "name": "Brioche from bakery"
   },
   {
-    "key": "en:camemberts-from-microfiltered-milk",
-    "name": "Camemberts from microfiltered milk"
+    "key": "en:camemberts-from-microfiltered-cow-milk",
+    "name": "Camemberts from microfiltered cow milk"
   },
   {
-    "key": "en:camemberts-from-raw-milk",
-    "name": "Camemberts from raw milk"
+    "key": "en:camemberts-from-pasteurized-buffalo-milk",
+    "name": "Camemberts from pasteurized buffalo milk"
   },
   {
-    "key": "en:camemberts-from-thermized-milk",
-    "name": "Camemberts from thermized milk"
+    "key": "en:camemberts-from-raw-buffalo-milk",
+    "name": "Camemberts from raw buffalo milk"
+  },
+  {
+    "key": "en:camemberts-from-raw-cow-milk",
+    "name": "Camemberts from raw cow milk"
+  },
+  {
+    "key": "en:camemberts-from-thermized-cow-milk",
+    "name": "Camemberts from thermized cow milk"
   },
   {
     "key": "en:cheese-fondue-from-savoy",
@@ -128,6 +136,10 @@
     "name": "Cheese from goat's milk from pasteurised milk"
   },
   {
+    "key": "en:cheese-from-goat-s-milk-from-raw-milk",
+    "name": "Cheese from goat's milk from raw milk"
+  },
+  {
     "key": "en:cheeseburgers-from-fast-food-restaurants",
     "name": "Cheeseburgers from fast food restaurants"
   },
@@ -146,6 +158,10 @@
   {
     "key": "en:cheeses-from-wales",
     "name": "Cheeses from Wales"
+  },
+  {
+    "key": "en:chevrot-cheese-from-goat-s-milk",
+    "name": "Chevrot cheese from goat's milk"
   },
   {
     "key": "en:chitterling-sausage-from-guemene",
@@ -294,10 +310,6 @@
   {
     "key": "en:frozen-artichoke-bottom",
     "name": "Frozen artichoke bottom"
-  },
-  {
-    "key": "en:frozen-boiled-peeled-broad-beans",
-    "name": "Frozen boiled peeled broad beans"
   },
   {
     "key": "en:frozen-breaded-hake-fillet",
@@ -492,10 +504,6 @@
     "name": "Frozen peas and carrots"
   },
   {
-    "key": "en:frozen-peeled-broad-beans",
-    "name": "Frozen peeled broad beans"
-  },
-  {
     "key": "en:frozen-potato-rostis",
     "name": "Frozen potato rostis"
   },
@@ -628,10 +636,6 @@
     "name": "Frozen vegetable rosti"
   },
   {
-    "key": "en:frozen-water-boiled-broad-beans",
-    "name": "Frozen water boiled broad beans"
-  },
-  {
     "key": "en:fruit-based-beverages-for-baby-from-4-6-months",
     "name": "Fruit-based beverages for baby from 4/6 months"
   },
@@ -700,6 +704,10 @@
     "name": "Light cheese buche from goat's milk"
   },
   {
+    "key": "en:lime-juices-from-concentrate",
+    "name": "Lime juices from concentrate"
+  },
+  {
     "key": "en:liver-sausages-from-ariege",
     "name": "Liver sausages from Ariége"
   },
@@ -742,6 +750,10 @@
   {
     "key": "en:nougats-from-tours",
     "name": "Nougats from Tours"
+  },
+  {
+    "key": "en:nuggets-from-soy-and-wheat-proteins",
+    "name": "Nuggets from soy and wheat proteins"
   },
   {
     "key": "en:olive-oil-from-nimes",
@@ -1346,6 +1358,10 @@
   {
     "key": "en:vegetable-dish-for-baby-with-milk-and-starch-from-8-months",
     "name": "Vegetable dish for baby with milk and starch from 8 months"
+  },
+  {
+    "key": "en:vegetarian-sausages-from-tofu",
+    "name": "Vegetarian sausages from tofu"
   },
   {
     "key": "en:whisky-from-lorraine",

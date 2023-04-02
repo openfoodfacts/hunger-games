@@ -36,6 +36,10 @@
     "name": "Boisson à l'eau minérale ou de source aromatisée non sucrée avec édulcorants"
   },
   {
+    "key": "en:coconut-based-drink-plain-prepacked",
+    "name": "Boisson à la noix de coco nature préemballée"
+  },
+  {
     "key": "en:plain-soy-drink-fortified-with-calcium",
     "name": "Boisson au soja nature enrichie en calcium"
   },
@@ -54,6 +58,10 @@
   {
     "key": "en:still-soft-drink-with-tea-extract-with-sugar-and-artificial-sweetener-s",
     "name": "Boisson au thé aromatisée sucrée avec édulcorants"
+  },
+  {
+    "key": "en:instant-cocoa-or-chocolate-beverage-with-sugar-fortified-with-vitamins-and-chemical-elements-ready-to-drink-reconstituted-with-standard-semi-skimm",
+    "name": "Boisson cacaotée ou au chocolat instantanée sucrée enrichie en vitamines prête à boire (reconstituée avec du lait demi-écrémé standard)"
   },
   {
     "key": "en:concentrate-syrup-without-sugar-and-with-artificial-sweeteners",
@@ -136,10 +144,6 @@
     "name": "Boisson lactée pour petit-déjeuner bébé dès 8/9 mois avec céréales"
   },
   {
-    "key": "en:dairy-drinks-with-sugar-and-fruits",
-    "name": "Boisson lactée sucrée au lait fermenté et aux fruits"
-  },
-  {
     "key": "en:still-fruit-soft-drink-with-less-than-10-of-fruit-juice-without-sugar-and-with-artificial-sweeteners",
     "name": "Boisson plate aux fruits non sucrée avec édulcorants et moins de 10% de jus"
   },
@@ -210,6 +214,10 @@
   {
     "key": "en:fruit-and-milk-beverages",
     "name": "Boissons au fruit et au lait"
+  },
+  {
+    "key": "en:fermented-plant-milk-drinks",
+    "name": "Boissons au lait végétal fermentées"
   },
   {
     "key": "en:maize-milks",
@@ -348,12 +356,24 @@
     "name": "Boissons lactées fermentées"
   },
   {
-    "key": "en:plain-dairy-drinks-with-sugar",
-    "name": "Boissons lactées nature sucrées au lait fermenté"
+    "key": "en:milk-drinks-fermented-with-bifidus",
+    "name": "Boissons lactées fermentées au Bifidus"
   },
   {
-    "key": "en:plain-dairy-drinks-with-sugar-and-l-casei",
-    "name": "Boissons lactées nature sucrées au lait fermenté et L Casei"
+    "key": "en:milk-drinks-fermented-with-l-casei",
+    "name": "Boissons lactées fermentées au L casei"
+  },
+  {
+    "key": "en:fermented-milk-drinks-with-fruits",
+    "name": "Boissons lactées fermentées aux fruits"
+  },
+  {
+    "key": "en:fermented-milk-drinks-with-sugar",
+    "name": "Boissons lactées fermentées sucrées nature"
+  },
+  {
+    "key": "en:sweetened-fermented-milk-drinks-with-l-casei",
+    "name": "Boissons lactées fermentés au L casei nature sucrées"
   },
   {
     "key": "en:diet-beverages",
@@ -428,8 +448,24 @@
     "name": "Boissons végétales d'amarante en poudre"
   },
   {
+    "key": "en:vanilla-oat-milks",
+    "name": "Boissons végétales d'avoine à la vanille"
+  },
+  {
+    "key": "en:cocoa-oat-milks",
+    "name": "Boissons végétales d'avoine au cacao"
+  },
+  {
     "key": "en:powdered-oat-milks",
     "name": "Boissons végétales d'avoine en poudre"
+  },
+  {
+    "key": "en:unsweetened-natural-oat-milks",
+    "name": "Boissons végétales d'avoine nature non sucrées"
+  },
+  {
+    "key": "en:sweetened-natural-oat-milks",
+    "name": "Boissons végétales d'avoine nature sucrées"
   },
   {
     "key": "en:spelt-milks",

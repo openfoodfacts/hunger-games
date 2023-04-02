@@ -200,10 +200,6 @@
     "name": "Citrus fruit teas"
   },
   {
-    "key": "en:concentrated-fruit-juices",
-    "name": "Concentrated fruit juices"
-  },
-  {
     "key": "en:croatian-fruit-spirit",
     "name": "Croatian fruit spirit"
   },
@@ -222,18 +218,6 @@
   {
     "key": "en:dairy-cereal-based-beverage-with-fruits-for-baby-s-snack-from-4-6-months",
     "name": "Dairy cereal-based beverage with fruits for baby's snack from 4/6 months"
-  },
-  {
-    "key": "en:dairy-drinks-with-sugar-and-fruits",
-    "name": "Dairy drinks with sugar and fruits"
-  },
-  {
-    "key": "en:dairy-specialty-fruit-flavoured-with-sugar-no-0-fat",
-    "name": "Dairy specialty fruit flavoured with sugar no 0% fat"
-  },
-  {
-    "key": "en:dairy-specialty-with-fruits-and-sugar-no-0-fat",
-    "name": "Dairy specialty with fruits and sugar no 0% fat"
   },
   {
     "key": "en:dark-chocolate-bar-with-dried-fruits",
@@ -286,6 +270,10 @@
   {
     "key": "en:fermented-dairy-desserts-with-fruits",
     "name": "Fermented dairy desserts with fruits"
+  },
+  {
+    "key": "en:fermented-milk-drinks-with-fruits",
+    "name": "Fermented milk drinks with fruits"
   },
   {
     "key": "en:fermented-milk-yogurt-fortified-with-vitamin-d-with-fruits-and-sugar",
@@ -420,8 +408,16 @@
     "name": "Fruit jellies"
   },
   {
+    "key": "en:fruit-juice-mixed-apple-base-standard",
+    "name": "Fruit juice mixed - apple base standard"
+  },
+  {
     "key": "en:fruit-juices",
     "name": "Fruit juices"
+  },
+  {
+    "key": "en:fruit-juices-from-concentrate",
+    "name": "Fruit juices from concentrate"
   },
   {
     "key": "en:fruit-kefir-yogurts",
@@ -644,6 +640,10 @@
     "name": "Mixed fruits pure multivitamin juice"
   },
   {
+    "key": "en:mixed-red-fruits-juice-pure-juice",
+    "name": "Mixed red fruits juice pure juice"
+  },
+  {
     "key": "en:mueslis-with-fruits",
     "name": "Mueslis with fruits"
   },
@@ -790,10 +790,6 @@
   {
     "key": "en:still-fruit-soft-drinks",
     "name": "Still fruit soft drinks"
-  },
-  {
-    "key": "en:stuffed-fruits-wafers",
-    "name": "Stuffed fruits wafers"
   },
   {
     "key": "en:swedish-toast-with-fruits",

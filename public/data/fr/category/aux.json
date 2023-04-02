@@ -280,10 +280,6 @@
     "name": "Boisson gazeuse aux fruits sucrée avec moins de 10% de jus"
   },
   {
-    "key": "en:dairy-drinks-with-sugar-and-fruits",
-    "name": "Boisson lactée sucrée au lait fermenté et aux fruits"
-  },
-  {
     "key": "en:still-fruit-soft-drink-with-less-than-10-of-fruit-juice-without-sugar-and-with-artificial-sweeteners",
     "name": "Boisson plate aux fruits non sucrée avec édulcorants et moins de 10% de jus"
   },
@@ -320,6 +316,10 @@
     "name": "Boissons infantile lactée aux céréales"
   },
   {
+    "key": "en:fermented-milk-drinks-with-fruits",
+    "name": "Boissons lactées fermentées aux fruits"
+  },
+  {
     "key": "en:still-fruit-soft-drinks",
     "name": "Boissons plates aux fruits"
   },
@@ -346,6 +346,10 @@
   {
     "key": "en:vol-au-vent-with-fish-and-seafood",
     "name": "Bouchées à la reine au poisson et aux fruits de mer"
+  },
+  {
+    "key": "en:soy-based-sliced",
+    "name": "Bouchées ou émincé au soja et blé (ne convient pas aux véganes ou végétaliens) préemballé"
   },
   {
     "key": "fr:boudins-aux-oignons",
@@ -620,6 +624,22 @@
     "name": "Couronne de Noël aux fruits confits"
   },
   {
+    "key": "en:custard-puddings",
+    "name": "Crèmes aux œufs"
+  },
+  {
+    "key": "en:custard-puddings-with-caramel-sauce",
+    "name": "Crèmes caramel aux œufs"
+  },
+  {
+    "key": "en:chocolate-custard-puddings",
+    "name": "Crèmes chocolat aux œufs"
+  },
+  {
+    "key": "en:vanilla-custard-puddings",
+    "name": "Crèmes vanille aux œufs"
+  },
+  {
     "key": "en:crepe-filled-with-scallops",
     "name": "Crêpe aux noix de St Jacques"
   },
@@ -662,6 +682,10 @@
   {
     "key": "en:plain-dairy-dessert-for-baby-with-fruits",
     "name": "Dessert lacté pour bébé aux fruits"
+  },
+  {
+    "key": "en:chia-puddings",
+    "name": "Desserts aux graines de chia"
   },
   {
     "key": "fr:desserts-lactes-aux-oeufs",
@@ -768,7 +792,7 @@
     "name": "Galettes aux champignons"
   },
   {
-    "key": "fr:galettes-de-cereales-aux-legumes",
+    "key": "en:cereals-and-vegetables-patties",
     "name": "Galettes de céréales aux légumes"
   },
   {
@@ -1008,7 +1032,7 @@
     "name": "Muffins aux myrtilles"
   },
   {
-    "key": "fr:muffins-aux-pepites-de-chocolat",
+    "key": "en:chocolate-chip-muffins",
     "name": "Muffins aux pépites de chocolat"
   },
   {
@@ -1034,6 +1058,10 @@
   {
     "key": "en:sauteed-noodles-with-shrimps",
     "name": "Nouilles sautées aux crevettes"
+  },
+  {
+    "key": "en:soybean-and-wheat-based-nuggets-vegan",
+    "name": "Nuggets soja et blé (convient aux véganes ou végétaliens) préemballé"
   },
   {
     "key": "fr:nuits-saint-georges-aux-vignerondes-premier-cru-aux-vignerondes",
@@ -1738,10 +1766,6 @@
   {
     "key": "en:processed-cheese-with-fresh-cream-cheese-and-walnuts",
     "name": "Spécialité fromagère fondante au fromage blanc et aux noix"
-  },
-  {
-    "key": "en:dairy-specialty-with-fruits-and-sugar-no-0-fat",
-    "name": "Spécialité laitière aux fruits sucrée non allégée en matières grasses"
   },
   {
     "key": "fr:specialites-laitieres-aux-fruits",

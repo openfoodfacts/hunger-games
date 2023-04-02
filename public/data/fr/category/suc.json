@@ -44,6 +44,10 @@
     "name": "Boisson au thé aromatisée sucrée avec édulcorants"
   },
   {
+    "key": "en:instant-cocoa-or-chocolate-beverage-with-sugar-fortified-with-vitamins-and-chemical-elements-ready-to-drink-reconstituted-with-standard-semi-skimm",
+    "name": "Boisson cacaotée ou au chocolat instantanée sucrée enrichie en vitamines prête à boire (reconstituée avec du lait demi-écrémé standard)"
+  },
+  {
     "key": "en:concentrate-syrup-without-sugar-and-with-artificial-sweeteners",
     "name": "Boisson concentrée à diluer sans sucres ajoutés avec édulcorants"
   },
@@ -86,10 +90,6 @@
   {
     "key": "en:partially-skimmed-chocolate-flavoured-milk-with-sugar-fortified-with-vitamins-and-chemicals-elements",
     "name": "Boisson lactée aromatisée au chocolat sucrée au lait partiellement écrémé enrichie en vitamines et minéraux"
-  },
-  {
-    "key": "en:dairy-drinks-with-sugar-and-fruits",
-    "name": "Boisson lactée sucrée au lait fermenté et aux fruits"
   },
   {
     "key": "en:still-fruit-soft-drink-with-less-than-10-of-fruit-juice-without-sugar-and-with-artificial-sweeteners",
@@ -140,12 +140,12 @@
     "name": "Boissons lactées aromatisées sucrées au lait fermenté"
   },
   {
-    "key": "en:plain-dairy-drinks-with-sugar",
-    "name": "Boissons lactées nature sucrées au lait fermenté"
+    "key": "en:fermented-milk-drinks-with-sugar",
+    "name": "Boissons lactées fermentées sucrées nature"
   },
   {
-    "key": "en:plain-dairy-drinks-with-sugar-and-l-casei",
-    "name": "Boissons lactées nature sucrées au lait fermenté et L Casei"
+    "key": "en:sweetened-fermented-milk-drinks-with-l-casei",
+    "name": "Boissons lactées fermentés au L casei nature sucrées"
   },
   {
     "key": "en:still-fruit-soft-drink-with-reduced-sugar-and-with-10-50-of-fruit-juice",
@@ -166,6 +166,14 @@
   {
     "key": "en:unsweetened-beverages",
     "name": "Boissons sans sucre ajouté"
+  },
+  {
+    "key": "en:unsweetened-natural-oat-milks",
+    "name": "Boissons végétales d'avoine nature non sucrées"
+  },
+  {
+    "key": "en:sweetened-natural-oat-milks",
+    "name": "Boissons végétales d'avoine nature sucrées"
   },
   {
     "key": "en:instant-coffee-with-milk-without-sugar",
@@ -430,14 +438,6 @@
   {
     "key": "en:sweet-snacks",
     "name": "Snacks sucrés"
-  },
-  {
-    "key": "en:dairy-specialty-fruit-flavoured-with-sugar-no-0-fat",
-    "name": "Spécialité laitière aromatisée sucrée non allégée en matières grasses"
-  },
-  {
-    "key": "en:dairy-specialty-with-fruits-and-sugar-no-0-fat",
-    "name": "Spécialité laitière aux fruits sucrée non allégée en matières grasses"
   },
   {
     "key": "fr:specialites-laitieres-nature-non-sucrees",

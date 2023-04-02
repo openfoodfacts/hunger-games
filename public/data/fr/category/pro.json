@@ -120,6 +120,10 @@
     "name": "Les Baux de Provence"
   },
   {
+    "key": "en:lithuanian-meat-products",
+    "name": "Lithuanian meat products"
+  },
+  {
     "key": "fr:marc-de-provence",
     "name": "Marc de Provence"
   },
@@ -130,6 +134,10 @@
   {
     "key": "en:provencale-mustards",
     "name": "Moutardes provençales"
+  },
+  {
+    "key": "en:nuggets-from-soy-and-wheat-proteins",
+    "name": "Nuggets à base de protéines de soja et blé"
   },
   {
     "key": "fr:nuits-saint-georges-premier-cru-les-proces",
@@ -170,10 +178,6 @@
   {
     "key": "en:seaweed-products",
     "name": "Produits à base d'algues"
-  },
-  {
-    "key": "en:meat-based-products",
-    "name": "Produits à la viande"
   },
   {
     "key": "en:spreads",
@@ -488,6 +492,14 @@
     "name": "Prosecco"
   },
   {
+    "key": "en:textured-pea-protein",
+    "name": "Protéine de pois texturée"
+  },
+  {
+    "key": "en:textured-soy-protein",
+    "name": "Protéine de soja texturée"
+  },
+  {
     "key": "en:textured-vegetable-protein",
     "name": "Protéine végétale texturée"
   },
@@ -508,7 +520,7 @@
     "name": "Specific products"
   },
   {
-    "key": "en:dairies-substitutes",
+    "key": "en:dairy-substitutes",
     "name": "Substituts de produits laitiers"
   },
   {
@@ -538,5 +550,9 @@
   {
     "key": "en:provencal-style-tomatoes",
     "name": "Tomates à la provençale"
+  },
+  {
+    "key": "en:turkey-and-its-products",
+    "name": "Turkey and its products"
   }
 ]

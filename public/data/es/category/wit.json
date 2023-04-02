@@ -604,6 +604,14 @@
     "name": "Chewing gum with sugar"
   },
   {
+    "key": "en:chicken-breast-without-skin-raw",
+    "name": "Chicken breast without skin raw"
+  },
+  {
+    "key": "en:chicken-eviscerated-without-offal-raw",
+    "name": "Chicken eviscerated without offal raw"
+  },
+  {
     "key": "en:chicken-meat-without-skin",
     "name": "Chicken meat without skin"
   },
@@ -956,10 +964,6 @@
     "name": "Cured smoked ham with reduced fat"
   },
   {
-    "key": "en:custard-creams-with-caramel-sauce",
-    "name": "Custard creams with caramel sauce"
-  },
-  {
     "key": "en:dairy-cereal-based-beverage-with-fruits-for-baby-s-snack-from-4-6-months",
     "name": "Dairy cereal-based beverage with fruits for baby's snack from 4/6 months"
   },
@@ -982,18 +986,6 @@
   {
     "key": "en:dairy-dessert-for-baby-with-sugar",
     "name": "Dairy dessert for baby with sugar"
-  },
-  {
-    "key": "en:dairy-drinks-with-sugar-and-fruits",
-    "name": "Dairy drinks with sugar and fruits"
-  },
-  {
-    "key": "en:dairy-specialty-fruit-flavoured-with-sugar-no-0-fat",
-    "name": "Dairy specialty fruit flavoured with sugar no 0% fat"
-  },
-  {
-    "key": "en:dairy-specialty-with-fruits-and-sugar-no-0-fat",
-    "name": "Dairy specialty with fruits and sugar no 0% fat"
   },
   {
     "key": "en:dark-chocolate-bar-filled-with-praline",
@@ -1202,6 +1194,14 @@
   {
     "key": "en:fermented-dairy-desserts-with-fruits",
     "name": "Fermented dairy desserts with fruits"
+  },
+  {
+    "key": "en:fermented-milk-drinks-with-fruits",
+    "name": "Fermented milk drinks with fruits"
+  },
+  {
+    "key": "en:fermented-milk-drinks-with-sugar",
+    "name": "Fermented milk drinks with sugar"
   },
   {
     "key": "en:fermented-milk-flavoured-yogurt-with-sugar-and-cream",
@@ -1448,6 +1448,10 @@
     "name": "Instant chicory with water"
   },
   {
+    "key": "en:instant-cocoa-or-chocolate-beverage-with-sugar-fortified-with-vitamins-and-chemical-elements-ready-to-drink-reconstituted-with-standard-semi-skimm",
+    "name": "Instant cocoa or chocolate beverage with sugar fortified with vitamins and chemical elements ready-to-drink (reconstituted with standard semi-skimm"
+  },
+  {
     "key": "en:instant-coffee-with-milk-without-sugar",
     "name": "Instant coffee with milk without sugar"
   },
@@ -1676,6 +1680,14 @@
     "name": "Milk chocolates with sweeteners"
   },
   {
+    "key": "en:milk-drinks-fermented-with-bifidus",
+    "name": "Milk drinks fermented with Bifidus"
+  },
+  {
+    "key": "en:milk-drinks-fermented-with-l-casei",
+    "name": "Milk drinks fermented with L casei"
+  },
+  {
     "key": "en:milky-cereal-breakfast-bar-with-chocolate-fortified-with-vitamins-and-minerals",
     "name": "Milky cereal breakfast bar with chocolate fortified with vitamins and minerals"
   },
@@ -1900,14 +1912,6 @@
     "name": "Plain dairy dessert for baby with fruits"
   },
   {
-    "key": "en:plain-dairy-drinks-with-sugar",
-    "name": "Plain dairy drinks with sugar"
-  },
-  {
-    "key": "en:plain-dairy-drinks-with-sugar-and-l-casei",
-    "name": "Plain dairy drinks with sugar and L Casei"
-  },
-  {
     "key": "en:plain-fermented-milk-yogurt-with-cream",
     "name": "Plain fermented milk yogurt with cream"
   },
@@ -1918,6 +1922,10 @@
   {
     "key": "en:plain-yogurt-with-sugar",
     "name": "Plain yogurt with sugar"
+  },
+  {
+    "key": "en:plant-based-sausage-with-wheat-or-seitan",
+    "name": "Plant-based sausage with wheat or seitan"
   },
   {
     "key": "en:popcorn-with-caramel",
@@ -1954,6 +1962,10 @@
   {
     "key": "en:pork-sausage-stew-with-cabbage-carrots-and-potatoes",
     "name": "Pork sausage stew with cabbage carrots and potatoes"
+  },
+  {
+    "key": "en:pork-shoulder-lower-half-without-rind-fat-and-bone-raw",
+    "name": "Pork shoulder lower half without rind fat and bone raw"
   },
   {
     "key": "en:pork-shoulder-upper-half-without-rind-fat-and-bone",
@@ -2116,12 +2128,12 @@
     "name": "Reduced fat biscuit bar filled with fruits"
   },
   {
-    "key": "en:refrigerated-custard-cream-with-caramel-sauce",
-    "name": "Refrigerated custard cream with caramel sauce"
-  },
-  {
     "key": "en:refrigerated-custard-dessert-with-reduced-fat",
     "name": "Refrigerated custard dessert with reduced fat"
+  },
+  {
+    "key": "en:refrigerated-custard-puddings-with-caramel-sauce",
+    "name": "Refrigerated custard puddings with caramel sauce"
   },
   {
     "key": "en:refrigerated-flan-with-eggs",
@@ -2678,6 +2690,10 @@
   {
     "key": "en:sweet-potato-puree-cooked-with-cream",
     "name": "Sweet potato puree cooked with cream"
+  },
+  {
+    "key": "en:sweetened-fermented-milk-drinks-with-l-casei",
+    "name": "Sweetened fermented milk drinks with L casei"
   },
   {
     "key": "en:syrup-with-sugar-to-be-diluted",
