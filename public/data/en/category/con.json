@@ -1,7 +1,27 @@
 [
   {
+    "key": "en:apple-juices-from-concentrate",
+    "name": "Apple juices from concentrate"
+  },
+  {
+    "key": "en:apricot-juices-from-concentrate",
+    "name": "Apricot juices from concentrate"
+  },
+  {
     "key": "en:beers-with-low-alcohol-content",
     "name": "Beers with low alcohol-content"
+  },
+  {
+    "key": "en:biscuit-cookie-vitamins-and-chemical-elements-content-guaranteed",
+    "name": "Biscuit (cookie) vitamins and chemical elements content guaranteed"
+  },
+  {
+    "key": "en:biscuit-cookie-vitamins-content-guaranteed",
+    "name": "Biscuit (cookie) vitamins content guaranteed"
+  },
+  {
+    "key": "en:blueberry-juices-from-concentrate",
+    "name": "Blueberry juices from concentrate"
   },
   {
     "key": "en:butter-oil-or-concentrated-butter",
@@ -48,68 +68,8 @@
     "name": "Concentrate syrup without sugar and with artificial sweeteners"
   },
   {
-    "key": "en:concentrated-apple-juices",
-    "name": "Concentrated apple juices"
-  },
-  {
-    "key": "en:concentrated-apricot-juices",
-    "name": "Concentrated apricot juices"
-  },
-  {
-    "key": "en:concentrated-blueberry-juices",
-    "name": "Concentrated blueberry juices"
-  },
-  {
     "key": "en:concentrated-carrot-juices",
     "name": "Concentrated carrot juices"
-  },
-  {
-    "key": "en:concentrated-fruit-juices",
-    "name": "Concentrated fruit juices"
-  },
-  {
-    "key": "en:concentrated-grape-juices",
-    "name": "Concentrated grape juices"
-  },
-  {
-    "key": "en:concentrated-grapefruit-juices",
-    "name": "Concentrated grapefruit juices"
-  },
-  {
-    "key": "en:concentrated-mango-juices",
-    "name": "Concentrated mango juices"
-  },
-  {
-    "key": "en:concentrated-multifruit-juices",
-    "name": "Concentrated multifruit juices"
-  },
-  {
-    "key": "en:concentrated-orange-juices",
-    "name": "Concentrated orange juices"
-  },
-  {
-    "key": "en:concentrated-peach-juices",
-    "name": "Concentrated peach juices"
-  },
-  {
-    "key": "en:concentrated-pear-juices",
-    "name": "Concentrated pear juices"
-  },
-  {
-    "key": "en:concentrated-pineapple-juices",
-    "name": "Concentrated pineapple juices"
-  },
-  {
-    "key": "en:concentrated-plum-juices",
-    "name": "Concentrated plum juices"
-  },
-  {
-    "key": "en:concentrated-pomegranate-juices",
-    "name": "Concentrated pomegranate juices"
-  },
-  {
-    "key": "en:concentrated-tangerine-juices",
-    "name": "Concentrated tangerine juices"
   },
   {
     "key": "en:concentrated-tomato-juices",
@@ -138,6 +98,10 @@
   {
     "key": "en:confectioneries-of-nord-pas-de-calais",
     "name": "Confectioneries of Nord-Pas-de-Calais"
+  },
+  {
+    "key": "en:conference-pears",
+    "name": "Conference pears"
   },
   {
     "key": "en:conger",
@@ -176,12 +140,24 @@
     "name": "Fruit confectioneries"
   },
   {
+    "key": "en:fruit-juices-from-concentrate",
+    "name": "Fruit juices from concentrate"
+  },
+  {
     "key": "en:fruit-pies-with-confectioner-s-custard",
     "name": "Fruit pies with confectioner's custard"
   },
   {
     "key": "en:goose-confits",
     "name": "Goose confits"
+  },
+  {
+    "key": "en:grape-juices-from-concentrate",
+    "name": "Grape juices from concentrate"
+  },
+  {
+    "key": "en:grapefruit-juices-from-concentrate",
+    "name": "Grapefruit juices from concentrate"
   },
   {
     "key": "en:honey-from-coniferous-trees",
@@ -192,12 +168,20 @@
     "name": "Ice cream cones"
   },
   {
+    "key": "en:lime-juices-from-concentrate",
+    "name": "Lime juices from concentrate"
+  },
+  {
     "key": "en:marinated-anchovy-fillets-with-confit-lemon",
     "name": "Marinated anchovy fillets with confit lemon"
   },
   {
     "key": "en:mini-ice-cream-cone",
     "name": "Mini ice cream cone"
+  },
+  {
+    "key": "en:multifruit-juices-from-concentrate",
+    "name": "Multifruit juices from concentrate"
   },
   {
     "key": "en:multivitamin-mixed-fruits-juice-reconstituted-from-a-concentrate",
@@ -208,8 +192,32 @@
     "name": "Nut confectioneries"
   },
   {
+    "key": "en:orange-juices-from-concentrate",
+    "name": "Orange juices from concentrate"
+  },
+  {
+    "key": "en:peach-juices-from-concentrate",
+    "name": "Peach juices from concentrate"
+  },
+  {
+    "key": "en:pear-juices-from-concentrate",
+    "name": "Pear juices from concentrate"
+  },
+  {
+    "key": "en:pineapple-from-concentrate",
+    "name": "Pineapple from concentrate"
+  },
+  {
     "key": "en:plant-based-ice-cream-cones",
     "name": "Plant-based ice cream cones"
+  },
+  {
+    "key": "en:plum-juices-from-concentrate",
+    "name": "Plum juices from concentrate"
+  },
+  {
+    "key": "en:pomegranate-juices-from-concentrate",
+    "name": "Pomegranate juices from concentrate"
   },
   {
     "key": "en:reheated-duck-confit-conserved-in-rendered-fat-without-skin",
@@ -234,6 +242,10 @@
   {
     "key": "en:sugar-coated-chocolate-confectioneries",
     "name": "Sugar coated chocolate confectioneries"
+  },
+  {
+    "key": "en:tangerine-juices-from-concentrate",
+    "name": "Tangerine juices from concentrate"
   },
   {
     "key": "en:vanilla-ice-cream-cones",

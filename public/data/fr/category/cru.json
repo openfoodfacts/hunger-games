@@ -708,8 +708,12 @@
     "name": "Betterave rouge crue"
   },
   {
-    "key": "en:camemberts-from-raw-milk",
-    "name": "Camemberts au lait cru"
+    "key": "en:camemberts-from-raw-buffalo-milk",
+    "name": "Camemberts au lait cru de bufflonne"
+  },
+  {
+    "key": "en:camemberts-from-raw-cow-milk",
+    "name": "Camemberts au lait cru de vache"
   },
   {
     "key": "en:european-plaice",
@@ -1548,12 +1552,24 @@
     "name": "Flétan de l'Atlantique cru"
   },
   {
+    "key": "en:strawberry-in-season-raw",
+    "name": "Fraise de saison crue"
+  },
+  {
+    "key": "en:strawberry-off-season-raw",
+    "name": "Fraise hors saison crue"
+  },
+  {
     "key": "en:cheese-from-goat-s-milk-fresh-from-raw-milk",
     "name": "Fromage de chèvre frais au lait cru"
   },
   {
     "key": "en:cheese-from-goat-s-milk-fresh",
     "name": "Fromage de chèvre frais au lait pasteurisé ou cru"
+  },
+  {
+    "key": "en:cheese-from-goat-s-milk-from-raw-milk",
+    "name": "Fromage de chèvre lactique affiné au lait cru (type Crottin de Chavignol Picodon Rocamadour Sainte-Maure de Touraine)"
   },
   {
     "key": "en:unpasteurised-cheeses",
@@ -1954,6 +1970,10 @@
   {
     "key": "en:beef-based-burger-with-15-fat",
     "name": "Haché à base de bœuf cru à 15% de matières grasses"
+  },
+  {
+    "key": "en:lima-bean-raw",
+    "name": "Haricot de Lima cru"
   },
   {
     "key": "en:frozen-raw-butter-beans",
@@ -3460,8 +3480,52 @@
     "name": "Pommard premier cru"
   },
   {
+    "key": "en:pork-shoulder-lower-half-without-rind-fat-and-bone-raw",
+    "name": "Porc hachage sans jarret sans bateau découenné dégraisssé désossé cru"
+  },
+  {
     "key": "fr:porto-crusted",
     "name": "Porto Crusted"
+  },
+  {
+    "key": "en:chicken-stewing-leg-raw",
+    "name": "Poule cuisse crue"
+  },
+  {
+    "key": "en:chicken-white-race-meat-and-skin-raw",
+    "name": "Poulet (var. blanc) viande et peau cru"
+  },
+  {
+    "key": "en:chicken-wing-meat-and-skin-raw",
+    "name": "Poulet aile viande et peau cru"
+  },
+  {
+    "key": "en:chicken-leg-meat-raw",
+    "name": "Poulet cuisse viande cru"
+  },
+  {
+    "key": "en:chicken-leg-meat-and-skin-raw",
+    "name": "Poulet cuisse viande et peau cru"
+  },
+  {
+    "key": "en:chicken-eviscerated-without-offal-raw",
+    "name": "Poulet éviscéré sans abats cru"
+  },
+  {
+    "key": "en:chicken-free-range-meat-and-skin-raw",
+    "name": "Poulet fermier viande et peau cru"
+  },
+  {
+    "key": "en:chicken-breast-without-skin-raw",
+    "name": "Poulet filet sans peau cru"
+  },
+  {
+    "key": "en:chicken-high-leg-meat-raw",
+    "name": "Poulet haut de cuisse viande cru"
+  },
+  {
+    "key": "en:chicken-breast-meat-and-skin-raw",
+    "name": "Poulet poitrine viande et peau cru"
   },
   {
     "key": "fr:poulet-crudites",
@@ -3606,6 +3670,10 @@
   {
     "key": "fr:puligny-montrachet-premier-cru-sous-le-puits-blanc",
     "name": "Puligny-Montrachet premier cru Sous le Puits blanc"
+  },
+  {
+    "key": "en:quinoa-fr-raw",
+    "name": "Quinoa FR cru"
   },
   {
     "key": "en:crustacean-rillettes",
@@ -4772,8 +4840,20 @@
     "name": "Soupes de crustacés reconstituée"
   },
   {
+    "key": "en:skipjack-tuna-raw",
+    "name": "Thon listao ou Bonite à ventre rayé cru"
+  },
+  {
     "key": "fr:thon-crudites",
     "name": "Thon-crudités"
+  },
+  {
+    "key": "en:tomato-in-season-raw",
+    "name": "Tomate de saison crue"
+  },
+  {
+    "key": "en:tomato-off-season-raw",
+    "name": "Tomate hors saison crue"
   },
   {
     "key": "fr:tortellini-au-jambon-cru",

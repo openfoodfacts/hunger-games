@@ -108,7 +108,7 @@
     "name": "Crémant du Jura"
   },
   {
-    "key": "en:refrigerated-custard-cream-with-caramel-sauce",
+    "key": "en:refrigerated-custard-puddings-with-caramel-sauce",
     "name": "Crème caramel rayon frais"
   },
   {
@@ -132,7 +132,7 @@
     "name": "Crème de marrons vanillée"
   },
   {
-    "key": "en:canned-vanilla-custard-dessert",
+    "key": "en:canned-vanilla-puddings",
     "name": "Crème dessert à la vanille en conserve"
   },
   {
@@ -140,15 +140,7 @@
     "name": "Crème dessert allégée en matières grasses rayon frais"
   },
   {
-    "key": "en:refrigerated-coffee-puddings",
-    "name": "Crème dessert au café rayon frais"
-  },
-  {
-    "key": "en:refrigerated-caramel-custard-dessert",
-    "name": "Crème dessert au caramel rayon frais"
-  },
-  {
-    "key": "en:canned-chocolate-custard-dessert",
+    "key": "en:canned-chocolate-creamy-puddings",
     "name": "Crème dessert au chocolat en conserve"
   },
   {
@@ -188,6 +180,10 @@
     "name": "Crèmes anglaises"
   },
   {
+    "key": "en:custard-puddings",
+    "name": "Crèmes aux œufs"
+  },
+  {
     "key": "fr:cremes-brulees",
     "name": "Crèmes brûlées"
   },
@@ -200,8 +196,8 @@
     "name": "Crèmes brûlées réfrigérées"
   },
   {
-    "key": "en:custard-creams-with-caramel-sauce",
-    "name": "Crèmes caramel"
+    "key": "en:custard-puddings-with-caramel-sauce",
+    "name": "Crèmes caramel aux œufs"
   },
   {
     "key": "en:crema-catalana",
@@ -210,6 +206,10 @@
   {
     "key": "fr:cremes-chantilly",
     "name": "Crèmes Chantilly"
+  },
+  {
+    "key": "en:chocolate-custard-puddings",
+    "name": "Crèmes chocolat aux œufs"
   },
   {
     "key": "en:artichoke-spreads",
@@ -252,39 +252,39 @@
     "name": "Crèmes de vinaigre blanc"
   },
   {
-    "key": "en:dessert-creams",
+    "key": "en:creamy-puddings",
     "name": "Crèmes dessert"
   },
   {
-    "key": "en:coffee-custard-dessert",
+    "key": "en:coffee-creamy-puddings",
     "name": "Crèmes dessert café"
+  },
+  {
+    "key": "en:refrigerated-coffee-puddings",
+    "name": "Crèmes dessert café réfrigérées"
   },
   {
     "key": "en:vegan-coffee-puddings",
     "name": "Crèmes dessert café végétaliennes"
   },
   {
-    "key": "en:caramel-custard-dessert",
+    "key": "en:caramel-creamy-puddings",
     "name": "Crèmes dessert caramel"
   },
   {
-    "key": "en:refrigerated-caramel-puddings",
+    "key": "en:refrigerated-caramel-creamy-puddings",
     "name": "Crèmes dessert caramel réfrigérées"
   },
   {
-    "key": "en:refrigerated-chocolate-custard-dessert",
+    "key": "en:chocolate-creamy-puddings",
     "name": "Crèmes dessert chocolat"
-  },
-  {
-    "key": "en:canned-chocolate-puddings",
-    "name": "Crèmes dessert chocolat appertisées"
   },
   {
     "key": "fr:cremes-dessert-chocolat-noir",
     "name": "Crèmes dessert chocolat noir"
   },
   {
-    "key": "en:refrigerated-chocolate-puddings",
+    "key": "en:refrigerated-chocolate-creamy-puddings",
     "name": "Crèmes dessert chocolat réfrigérées"
   },
   {
@@ -292,31 +292,23 @@
     "name": "Crèmes dessert chocolat végétaliennes"
   },
   {
-    "key": "en:double-flavour-custard-dessert",
+    "key": "en:double-flavour-creamy-puddings",
     "name": "Crèmes dessert double saveur"
   },
   {
-    "key": "en:canned-custard-desserts",
+    "key": "en:canned-creamy-puddings",
     "name": "Crèmes dessert en conserve"
   },
   {
-    "key": "en:pistachio-custard-dessert",
-    "name": "Crèmes dessert pistache"
-  },
-  {
-    "key": "en:refrigerated-dessert-creams",
+    "key": "en:refrigerated-creamy-puddings",
     "name": "Crèmes dessert rayon frais"
   },
   {
-    "key": "fr:cremes-dessert-vanille",
+    "key": "en:vanilla-creamy-puddings",
     "name": "Crèmes dessert vanille"
   },
   {
-    "key": "en:canned-vanilla-puddings",
-    "name": "Crèmes dessert vanille appertisées"
-  },
-  {
-    "key": "en:refrigerated-vanilla-puddings",
+    "key": "en:refrigerated-vanilla-creamy-puddings",
     "name": "Crèmes dessert vanille réfrigérées"
   },
   {
@@ -394,6 +386,10 @@
   {
     "key": "en:uht-creams",
     "name": "Crèmes UHT"
+  },
+  {
+    "key": "en:vanilla-custard-puddings",
+    "name": "Crèmes vanille aux œufs"
   },
   {
     "key": "en:plant-based-creams",
@@ -560,7 +556,7 @@
     "name": "Cresson frais"
   },
   {
-    "key": "en:prawns",
+    "key": "en:shrimps",
     "name": "Crevettes"
   },
   {
@@ -602,10 +598,6 @@
   {
     "key": "en:frozen-shrimps",
     "name": "Crevettes surgelées"
-  },
-  {
-    "key": "en:shrimps",
-    "name": "Crevettes tous"
   },
   {
     "key": "en:croissant-filled-with-cream",

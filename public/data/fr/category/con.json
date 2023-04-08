@@ -44,6 +44,10 @@
     "name": "Boisson concentrée à diluer sans sucres ajoutés avec édulcorants"
   },
   {
+    "key": "en:soy-based-sliced",
+    "name": "Bouchées ou émincé au soja et blé (ne convient pas aux véganes ou végétaliens) préemballé"
+  },
+  {
     "key": "en:dehydrated-broth-with-meat-and-vegetables",
     "name": "Bouillon de viande et légumes type pot-au-feu prêt à consommer"
   },
@@ -206,6 +210,10 @@
   {
     "key": "en:strawberry-vanilla-ice-cream-cones",
     "name": "Cônes vanille fraise"
+  },
+  {
+    "key": "en:conference-pears",
+    "name": "Conference pears"
   },
   {
     "key": "en:confectioneries",
@@ -448,6 +456,10 @@
     "name": "Confitures de mûres"
   },
   {
+    "key": "en:myrtles-jams",
+    "name": "Confitures de myrtes"
+  },
+  {
     "key": "en:bilberries-jams",
     "name": "Confitures de myrtilles"
   },
@@ -540,15 +552,15 @@
     "name": "Couronne de Noël aux fruits confits"
   },
   {
-    "key": "en:canned-vanilla-custard-dessert",
+    "key": "en:canned-vanilla-puddings",
     "name": "Crème dessert à la vanille en conserve"
   },
   {
-    "key": "en:canned-chocolate-custard-dessert",
+    "key": "en:canned-chocolate-creamy-puddings",
     "name": "Crème dessert au chocolat en conserve"
   },
   {
-    "key": "en:canned-custard-desserts",
+    "key": "en:canned-creamy-puddings",
     "name": "Crèmes dessert en conserve"
   },
   {
@@ -700,15 +712,15 @@
     "name": "Hygrophorus latitabundus en conserve"
   },
   {
-    "key": "en:concentrated-apricot-juices",
+    "key": "en:apricot-juices-from-concentrate",
     "name": "Jus d'abricot à base de concentré"
   },
   {
-    "key": "en:concentrated-pineapple-juices",
+    "key": "en:pineapple-from-concentrate",
     "name": "Jus d'ananas à base de concentré"
   },
   {
-    "key": "en:concentrated-orange-juices",
+    "key": "en:orange-juices-from-concentrate",
     "name": "Jus d'orange à base de concentré"
   },
   {
@@ -716,47 +728,47 @@
     "name": "Jus de carotte à base de concentré"
   },
   {
-    "key": "en:concentrated-fruit-juices",
+    "key": "en:lime-juices-from-concentrate",
+    "name": "Jus de citron vert à partir d'un concentré"
+  },
+  {
+    "key": "en:fruit-juices-from-concentrate",
     "name": "Jus de fruits à base de concentré"
   },
   {
-    "key": "en:concentrated-pomegranate-juices",
+    "key": "en:pomegranate-juices-from-concentrate",
     "name": "Jus de grenade à base de concentré"
   },
   {
-    "key": "en:concentrated-tangerine-juices",
+    "key": "en:tangerine-juices-from-concentrate",
     "name": "Jus de mandarine à base de concentré"
   },
   {
-    "key": "en:concentrated-mango-juices",
-    "name": "Jus de mangue à base de concentré"
-  },
-  {
-    "key": "en:concentrated-blueberry-juices",
+    "key": "en:blueberry-juices-from-concentrate",
     "name": "Jus de myrtilles à base de concentré"
   },
   {
-    "key": "en:concentrated-grapefruit-juices",
+    "key": "en:grapefruit-juices-from-concentrate",
     "name": "Jus de pamplemousse à base de concentré"
   },
   {
-    "key": "en:concentrated-peach-juices",
+    "key": "en:peach-juices-from-concentrate",
     "name": "Jus de pêche à base de concentré"
   },
   {
-    "key": "en:concentrated-pear-juices",
+    "key": "en:pear-juices-from-concentrate",
     "name": "Jus de poire à base de concentré"
   },
   {
-    "key": "en:concentrated-apple-juices",
+    "key": "en:apple-juices-from-concentrate",
     "name": "Jus de pomme à base de concentré"
   },
   {
-    "key": "en:concentrated-plum-juices",
+    "key": "en:plum-juices-from-concentrate",
     "name": "Jus de prune à base de concentré"
   },
   {
-    "key": "en:concentrated-grape-juices",
+    "key": "en:grape-juices-from-concentrate",
     "name": "Jus de raisin à base de concentré"
   },
   {
@@ -768,7 +780,7 @@
     "name": "Jus multifruit à base de concentré"
   },
   {
-    "key": "en:concentrated-multifruit-juices",
+    "key": "en:multifruit-juices-from-concentrate",
     "name": "Jus multifruits à base de concentrés"
   },
   {
@@ -878,6 +890,10 @@
   {
     "key": "en:canned-turnips",
     "name": "Navets en conserve"
+  },
+  {
+    "key": "en:soybean-and-wheat-based-nuggets-vegan",
+    "name": "Nuggets soja et blé (convient aux véganes ou végétaliens) préemballé"
   },
   {
     "key": "en:cracked-marinated-green-olives",

@@ -48,11 +48,15 @@
     "name": "Certifié écosocial par IBD"
   },
   {
+    "key": "en:certified-by-agrocert",
+    "name": "Certifié par Agrocert"
+  },
+  {
     "key": "en:certified-by-avicert",
     "name": "Certifié par Avicert"
   },
   {
-    "key": "fr:certifie-par-bureau-veritas",
+    "key": "en:certified-by-veritas",
     "name": "Certifié par bureau Veritas"
   },
   {
@@ -86,6 +90,14 @@
   {
     "key": "en:utz-certified",
     "name": "Certifié UTZ"
+  },
+  {
+    "key": "en:certified-gluten-free",
+    "name": "Certified gluten-free"
+  },
+  {
+    "key": "en:certified-ivegan",
+    "name": "Certified iVegan"
   },
   {
     "key": "en:napsi-certified",
@@ -150,5 +162,13 @@
   {
     "key": "en:ukrainian-state-certification-system-conformity-mark-voluntary-certification",
     "name": "Ukrainian state certification system conformity mark (voluntary certification)"
+  },
+  {
+    "key": "en:utz-certified-tea",
+    "name": "UTZ Certified Tea"
+  },
+  {
+    "key": "en:vegecert-certified-vegan",
+    "name": "VegeCert - Certified Vegan"
   }
 ]

@@ -1,5 +1,9 @@
 [
   {
+    "key": "en:artisanal-production",
+    "name": "Artisanal production"
+  },
+  {
     "key": "en:authentic-trappist-product",
     "name": "Authentic Trappist Product"
   },
@@ -12,12 +16,20 @@
     "name": "Certified product"
   },
   {
+    "key": "en:cold-pressed",
+    "name": "Cold pressed"
+  },
+  {
     "key": "en:cooperative-product",
     "name": "Cooperative product"
   },
   {
     "key": "en:croatian-product",
     "name": "Croatian product"
+  },
+  {
+    "key": "en:farm-production",
+    "name": "Farm production"
   },
   {
     "key": "en:high-proteins",
@@ -34,10 +46,6 @@
   {
     "key": "en:hungarian-product",
     "name": "Hungarian product"
-  },
-  {
-    "key": "en:i-protect-the-bees",
-    "name": "I protect the bees"
   },
   {
     "key": "en:integrated-production",
@@ -64,6 +72,10 @@
     "name": "No artificial preservatives"
   },
   {
+    "key": "en:no-dyes-or-preservatives",
+    "name": "No dyes or preservatives"
+  },
+  {
     "key": "en:no-preservatives",
     "name": "No preservatives"
   },
@@ -78,10 +90,6 @@
   {
     "key": "en:not-advised-for-pregnant-women",
     "name": "Not advised for pregnant women"
-  },
-  {
-    "key": "en:pasteurized-product",
-    "name": "Pasteurized product"
   },
   {
     "key": "en:planet-proof",
@@ -101,7 +109,11 @@
   },
   {
     "key": "en:produced-in-croatia",
-    "name": "Produced in Croatia"
+    "name": "Produced in croatia"
+  },
+  {
+    "key": "en:producer-labels",
+    "name": "Producer labels"
   },
   {
     "key": "en:products-for-professional-use",
@@ -138,9 +150,5 @@
   {
     "key": "en:without-addition-of-dairy-products",
     "name": "Without addition of dairy products"
-  },
-  {
-    "key": "en:without-dyes-or-preservatives",
-    "name": "Without dyes or preservatives"
   }
 ]
