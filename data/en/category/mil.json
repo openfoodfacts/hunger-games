@@ -80,16 +80,28 @@
     "name": "Buckwheat milks"
   },
   {
-    "key": "en:camemberts-from-microfiltered-milk",
-    "name": "Camemberts from microfiltered milk"
+    "key": "en:camemberts-from-microfiltered-cow-milk",
+    "name": "Camemberts from microfiltered cow milk"
   },
   {
-    "key": "en:camemberts-from-raw-milk",
-    "name": "Camemberts from raw milk"
+    "key": "en:camemberts-from-pasteurized-buffalo-milk",
+    "name": "Camemberts from pasteurized buffalo milk"
   },
   {
-    "key": "en:camemberts-from-thermized-milk",
-    "name": "Camemberts from thermized milk"
+    "key": "en:camemberts-from-pasteurized-cow-milk",
+    "name": "Camemberts from pasteurized cow milk"
+  },
+  {
+    "key": "en:camemberts-from-raw-buffalo-milk",
+    "name": "Camemberts from raw buffalo milk"
+  },
+  {
+    "key": "en:camemberts-from-raw-cow-milk",
+    "name": "Camemberts from raw cow milk"
+  },
+  {
+    "key": "en:camemberts-from-thermized-cow-milk",
+    "name": "Camemberts from thermized cow milk"
   },
   {
     "key": "en:canary-grass-milks",
@@ -120,8 +132,16 @@
     "name": "Cheese from goat's milk from pasteurised milk"
   },
   {
+    "key": "en:cheese-from-goat-s-milk-from-raw-milk",
+    "name": "Cheese from goat's milk from raw milk"
+  },
+  {
     "key": "en:chestnut-milks",
     "name": "Chestnut milks"
+  },
+  {
+    "key": "en:chevrot-cheese-from-goat-s-milk",
+    "name": "Chevrot cheese from goat's milk"
   },
   {
     "key": "en:chicken-with-curry-and-coconut-milk-sauce",
@@ -142,6 +162,10 @@
   {
     "key": "en:chocolates-with-extra-fine-milk",
     "name": "Chocolates with extra fine milk"
+  },
+  {
+    "key": "en:cocoa-oat-milks",
+    "name": "Cocoa oat milks"
   },
   {
     "key": "en:cocoa-rice-milks",
@@ -236,6 +260,14 @@
     "name": "Fermented milk drinks"
   },
   {
+    "key": "en:fermented-milk-drinks-with-fruits",
+    "name": "Fermented milk drinks with fruits"
+  },
+  {
+    "key": "en:fermented-milk-drinks-with-sugar",
+    "name": "Fermented milk drinks with sugar"
+  },
+  {
     "key": "en:fermented-milk-flavoured-yogurt-with-sugar-and-cream",
     "name": "Fermented milk flavoured yogurt with sugar and cream"
   },
@@ -254,6 +286,10 @@
   {
     "key": "en:fermented-milk-yogurt-with-fruits-and-sugar-and-cream",
     "name": "Fermented milk yogurt with fruits and sugar and cream"
+  },
+  {
+    "key": "en:fermented-plant-milk-drinks",
+    "name": "Fermented plant-milk drinks"
   },
   {
     "key": "en:feta-type-cheese-from-cow-s-milk",
@@ -282,10 +318,6 @@
   {
     "key": "en:flavoured-milks",
     "name": "Flavoured milks"
-  },
-  {
-    "key": "en:flavoured-renneted-milks",
-    "name": "Flavoured renneted milks"
   },
   {
     "key": "en:fourme-d-ambert-cheese-from-cow-s-milk",
@@ -490,6 +522,14 @@
   {
     "key": "en:milk-chocolates-with-sweeteners",
     "name": "Milk chocolates with sweeteners"
+  },
+  {
+    "key": "en:milk-drinks-fermented-with-bifidus",
+    "name": "Milk drinks fermented with Bifidus"
+  },
+  {
+    "key": "en:milk-drinks-fermented-with-l-casei",
+    "name": "Milk drinks fermented with L casei"
   },
   {
     "key": "en:milk-jams",
@@ -808,10 +848,6 @@
     "name": "Refrigerated milk-based chocolate mousses"
   },
   {
-    "key": "en:renneted-milks",
-    "name": "Renneted milks"
-  },
-  {
     "key": "en:rice-milk-chocolates",
     "name": "Rice milk chocolates"
   },
@@ -936,8 +972,16 @@
     "name": "Sugar free ready-to-drink instant chicory with artificial sweeteners reconstituted with standard semi-skimmed milk"
   },
   {
+    "key": "en:sweetened-fermented-milk-drinks-with-l-casei",
+    "name": "Sweetened fermented milk drinks with L casei"
+  },
+  {
     "key": "en:sweetened-natural-almond-milks",
     "name": "Sweetened natural almond milks"
+  },
+  {
+    "key": "en:sweetened-natural-oat-milks",
+    "name": "Sweetened natural oat milks"
   },
   {
     "key": "en:sweetened-natural-soy-milks",
@@ -984,6 +1028,10 @@
     "name": "Unsweetened natural almond milks"
   },
   {
+    "key": "en:unsweetened-natural-oat-milks",
+    "name": "Unsweetened natural oat milks"
+  },
+  {
     "key": "en:unsweetened-natural-soy-milks",
     "name": "Unsweetened natural soy milks"
   },
@@ -994,6 +1042,10 @@
   {
     "key": "en:vanilla-milks",
     "name": "Vanilla milks"
+  },
+  {
+    "key": "en:vanilla-oat-milks",
+    "name": "Vanilla oat milks"
   },
   {
     "key": "en:vanilla-rice-milks",

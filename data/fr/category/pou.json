@@ -508,7 +508,7 @@
     "name": "Cuisses de poulet"
   },
   {
-    "key": "en:ground-cumin-seeds",
+    "key": "en:ground-cumin-seedskumin",
     "name": "Cumin en poudre"
   },
   {
@@ -642,10 +642,6 @@
   {
     "key": "en:big-scale-sand-smelt-to-fry",
     "name": "Joëls pour friture"
-  },
-  {
-    "key": "en:pineapple-juice-for-canned-pineapple",
-    "name": "Jus d'ananas pour ananas appertisé"
   },
   {
     "key": "en:kefir-for-children",
@@ -1112,8 +1108,28 @@
     "name": "Poule au pot"
   },
   {
+    "key": "en:chicken-stewing-leg-raw",
+    "name": "Poule cuisse crue"
+  },
+  {
+    "key": "en:chicken-white-race-meat-and-skin-raw",
+    "name": "Poulet (var. blanc) viande et peau cru"
+  },
+  {
+    "key": "en:chicken-wing-meat-and-skin-raw",
+    "name": "Poulet aile viande et peau cru"
+  },
+  {
     "key": "en:chicken-with-curry-and-coconut-milk-sauce",
     "name": "Poulet au curry et au lait de coco"
+  },
+  {
+    "key": "en:chicken-leg-meat-raw",
+    "name": "Poulet cuisse viande cru"
+  },
+  {
+    "key": "en:chicken-leg-meat-and-skin-raw",
+    "name": "Poulet cuisse viande et peau cru"
   },
   {
     "key": "fr:poulet-de-bresse",
@@ -1132,12 +1148,40 @@
     "name": "Poulet du Périgord"
   },
   {
+    "key": "en:chicken-and-its-products",
+    "name": "Poulet et dérivés"
+  },
+  {
+    "key": "en:chicken-eviscerated-without-offal-raw",
+    "name": "Poulet éviscéré sans abats cru"
+  },
+  {
+    "key": "en:chicken-free-range-meat-and-skin-raw",
+    "name": "Poulet fermier viande et peau cru"
+  },
+  {
+    "key": "en:chicken-breast-without-skin-raw",
+    "name": "Poulet filet sans peau cru"
+  },
+  {
+    "key": "en:chicken-high-leg-meat-raw",
+    "name": "Poulet haut de cuisse viande cru"
+  },
+  {
+    "key": "en:chicken-breast-meat-and-skin-raw",
+    "name": "Poulet poitrine viande et peau cru"
+  },
+  {
     "key": "en:tandoori-chicken",
     "name": "Poulet tandoori"
   },
   {
     "key": "en:chicken-tikka-masala",
     "name": "Poulet tikka masala"
+  },
+  {
+    "key": "en:chicken-meat-and-skin-roasted-baked",
+    "name": "Poulet viande et peau rôti/cuit au four"
   },
   {
     "key": "fr:poulet-crudites",

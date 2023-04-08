@@ -44,6 +44,10 @@
     "name": "Certified Belgian Abbey Beer"
   },
   {
+    "key": "en:certified-by-agrocert",
+    "name": "Certified by Agrocert"
+  },
+  {
     "key": "en:certified-by-avicert",
     "name": "Certified by Avicert"
   },
@@ -70,6 +74,18 @@
   {
     "key": "en:certified-by-qualisud",
     "name": "Certified by Qualisud"
+  },
+  {
+    "key": "en:certified-by-veritas",
+    "name": "Certified by Veritas"
+  },
+  {
+    "key": "en:certified-gluten-free",
+    "name": "Certified gluten-free"
+  },
+  {
+    "key": "en:certified-ivegan",
+    "name": "Certified iVegan"
   },
   {
     "key": "fr:produit-certifie",
@@ -134,5 +150,13 @@
   {
     "key": "en:utz-certified-cocoa",
     "name": "UTZ Certified Cocoa"
+  },
+  {
+    "key": "en:utz-certified-tea",
+    "name": "UTZ Certified Tea"
+  },
+  {
+    "key": "en:vegecert-certified-vegan",
+    "name": "VegeCert - Certified Vegan"
   }
 ]

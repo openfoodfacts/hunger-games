@@ -1,11 +1,19 @@
 [
   {
+    "key": "en:artisanal-production",
+    "name": "Artisanal production"
+  },
+  {
     "key": "en:authentic-trappist-product",
     "name": "Authentic Trappist Product"
   },
   {
     "key": "fr:produit-certifie",
     "name": "Certified product"
+  },
+  {
+    "key": "en:cold-pressed",
+    "name": "Cold pressed"
   },
   {
     "key": "en:cooperative-product",
@@ -64,6 +72,22 @@
     "name": "DLG Bronzener Preis 2019"
   },
   {
+    "key": "en:2020-bronze-medal-of-the-german-agricultural-society",
+    "name": "DLG Bronzener Preis 2020"
+  },
+  {
+    "key": "en:2021-bronze-medal-of-the-german-agricultural-society",
+    "name": "DLG Bronzener Preis 2021"
+  },
+  {
+    "key": "en:2022-bronze-medal-of-the-german-agricultural-society",
+    "name": "DLG Bronzener Preis 2022"
+  },
+  {
+    "key": "en:2023-bronze-medal-of-the-german-agricultural-society",
+    "name": "DLG Bronzener Preis 2023"
+  },
+  {
     "key": "en:gold-medal-of-the-german-agricultural-society",
     "name": "DLG Goldener Preis"
   },
@@ -114,6 +138,18 @@
   {
     "key": "en:2020-gold-medal-of-the-german-agricultural-society",
     "name": "DLG Goldener Preis 2020"
+  },
+  {
+    "key": "en:2021-gold-medal-of-the-german-agricultural-society",
+    "name": "DLG Goldener Preis 2021"
+  },
+  {
+    "key": "en:2022-gold-medal-of-the-german-agricultural-society",
+    "name": "DLG Goldener Preis 2022"
+  },
+  {
+    "key": "en:2023-gold-medal-of-the-german-agricultural-society",
+    "name": "DLG Goldener Preis 2023"
   },
   {
     "key": "de:dlg-jährlich-prämiert",
@@ -168,6 +204,26 @@
     "name": "DLG Silberner Preis 2019"
   },
   {
+    "key": "en:2020-silver-medal-of-the-german-agricultural-society",
+    "name": "DLG Silberner Preis 2020"
+  },
+  {
+    "key": "en:2021-silver-medal-of-the-german-agricultural-society",
+    "name": "DLG Silberner Preis 2021"
+  },
+  {
+    "key": "en:2022-silver-medal-of-the-german-agricultural-society",
+    "name": "DLG Silberner Preis 2022"
+  },
+  {
+    "key": "en:2023-silver-medal-of-the-german-agricultural-society",
+    "name": "DLG Silberner Preis 2023"
+  },
+  {
+    "key": "en:farm-production",
+    "name": "Farm production"
+  },
+  {
     "key": "en:spanish-protected-product",
     "name": "Geschütztes spanisches Produkt"
   },
@@ -182,10 +238,6 @@
   {
     "key": "en:hungarian-processed-product",
     "name": "Hungarian Processed Product"
-  },
-  {
-    "key": "en:i-protect-the-bees",
-    "name": "I protect the bees"
   },
   {
     "key": "en:integrated-production",
@@ -208,7 +260,7 @@
     "name": "Non GMO project"
   },
   {
-    "key": "en:pasteurized-product",
+    "key": "en:pasteurized",
     "name": "Pasteurisiertes Produkt"
   },
   {
@@ -229,7 +281,11 @@
   },
   {
     "key": "en:produced-in-croatia",
-    "name": "Produced in Croatia"
+    "name": "Produced in croatia"
+  },
+  {
+    "key": "en:producer-labels",
+    "name": "Producer labels"
   },
   {
     "key": "en:products-for-professional-use",

@@ -96,11 +96,7 @@
     "name": "Givry premier cru Clos Jus rouge"
   },
   {
-    "key": "en:apricot-juices",
-    "name": "Jus d'abricot"
-  },
-  {
-    "key": "en:concentrated-apricot-juices",
+    "key": "en:apricot-juices-from-concentrate",
     "name": "Jus d'abricot à base de concentré"
   },
   {
@@ -108,16 +104,12 @@
     "name": "Jus d'ananas"
   },
   {
-    "key": "en:concentrated-pineapple-juices",
+    "key": "en:pineapple-from-concentrate",
     "name": "Jus d'ananas à base de concentré"
   },
   {
     "key": "en:refrigerated-squeezed-pineapple-juices",
     "name": "Jus d'ananas frais"
-  },
-  {
-    "key": "en:pineapple-juice-for-canned-pineapple",
-    "name": "Jus d'ananas pour ananas appertisé"
   },
   {
     "key": "en:squeezed-pineapple-juices",
@@ -128,12 +120,16 @@
     "name": "Jus d'orange"
   },
   {
-    "key": "en:concentrated-orange-juices",
+    "key": "en:orange-juices-from-concentrate",
     "name": "Jus d'orange à base de concentré"
   },
   {
     "key": "en:refrigerated-squeezed-orange-juices",
     "name": "Jus d'orange frais"
+  },
+  {
+    "key": "en:orange-juice-home-made",
+    "name": "Jus d'orange maison"
   },
   {
     "key": "en:squeezed-orange-juices",
@@ -180,12 +176,12 @@
     "name": "Jus de citron pur jus"
   },
   {
-    "key": "en:lime-juice",
+    "key": "en:lime-juices",
     "name": "Jus de citron vert"
   },
   {
-    "key": "en:home-made-lime-juice",
-    "name": "Jus de citron vert maison"
+    "key": "en:lime-juices-from-concentrate",
+    "name": "Jus de citron vert à partir d'un concentré"
   },
   {
     "key": "en:squeezed-lime-juices",
@@ -212,7 +208,7 @@
     "name": "Jus de fruits"
   },
   {
-    "key": "en:concentrated-fruit-juices",
+    "key": "en:fruit-juices-from-concentrate",
     "name": "Jus de fruits à base de concentré"
   },
   {
@@ -228,11 +224,15 @@
     "name": "Jus de fruits pur jus"
   },
   {
+    "key": "en:mixed-red-fruits-juice-pure-juice",
+    "name": "Jus de fruits rouges"
+  },
+  {
     "key": "en:pomegranate-juices",
     "name": "Jus de grenade"
   },
   {
-    "key": "en:concentrated-pomegranate-juices",
+    "key": "en:pomegranate-juices-from-concentrate",
     "name": "Jus de grenade à base de concentré"
   },
   {
@@ -252,7 +252,7 @@
     "name": "Jus de mandarine"
   },
   {
-    "key": "en:concentrated-tangerine-juices",
+    "key": "en:tangerine-juices-from-concentrate",
     "name": "Jus de mandarine à base de concentré"
   },
   {
@@ -264,23 +264,11 @@
     "name": "Jus de mandarine pur jus frais"
   },
   {
-    "key": "en:mango-juices",
-    "name": "Jus de mangue"
-  },
-  {
-    "key": "en:concentrated-mango-juices",
-    "name": "Jus de mangue à base de concentré"
-  },
-  {
-    "key": "en:fresh-mango-juice",
-    "name": "Jus de mangue frais"
-  },
-  {
     "key": "en:blueberry-juices",
     "name": "Jus de myrtilles"
   },
   {
-    "key": "en:concentrated-blueberry-juices",
+    "key": "en:blueberry-juices-from-concentrate",
     "name": "Jus de myrtilles à base de concentré"
   },
   {
@@ -292,7 +280,7 @@
     "name": "Jus de pamplemousse"
   },
   {
-    "key": "en:concentrated-grapefruit-juices",
+    "key": "en:grapefruit-juices-from-concentrate",
     "name": "Jus de pamplemousse à base de concentré"
   },
   {
@@ -316,7 +304,7 @@
     "name": "Jus de pêche"
   },
   {
-    "key": "en:concentrated-peach-juices",
+    "key": "en:peach-juices-from-concentrate",
     "name": "Jus de pêche à base de concentré"
   },
   {
@@ -324,7 +312,7 @@
     "name": "Jus de poire"
   },
   {
-    "key": "en:concentrated-pear-juices",
+    "key": "en:pear-juices-from-concentrate",
     "name": "Jus de poire à base de concentré"
   },
   {
@@ -336,7 +324,7 @@
     "name": "Jus de pomme"
   },
   {
-    "key": "en:concentrated-apple-juices",
+    "key": "en:apple-juices-from-concentrate",
     "name": "Jus de pomme à base de concentré"
   },
   {
@@ -348,11 +336,7 @@
     "name": "Jus de pommes pur jus"
   },
   {
-    "key": "en:plum-juices",
-    "name": "Jus de prune"
-  },
-  {
-    "key": "en:concentrated-plum-juices",
+    "key": "en:plum-juices-from-concentrate",
     "name": "Jus de prune à base de concentré"
   },
   {
@@ -360,7 +344,7 @@
     "name": "Jus de prune frais"
   },
   {
-    "key": "en:prune-juice",
+    "key": "en:prune-juices",
     "name": "Jus de pruneaux"
   },
   {
@@ -368,7 +352,7 @@
     "name": "Jus de raisin"
   },
   {
-    "key": "en:concentrated-grape-juices",
+    "key": "en:grape-juices-from-concentrate",
     "name": "Jus de raisin à base de concentré"
   },
   {
@@ -400,6 +384,10 @@
     "name": "Jus et nectars"
   },
   {
+    "key": "en:fruit-juice-mixed-apple-base-standard",
+    "name": "Jus multifruit - base pomme standard"
+  },
+  {
     "key": "en:multivitamin-mixed-fruits-juice-reconstituted-from-a-concentrate",
     "name": "Jus multifruit à base de concentré"
   },
@@ -416,7 +404,7 @@
     "name": "Jus multifruits"
   },
   {
-    "key": "en:concentrated-multifruit-juices",
+    "key": "en:multifruit-juices-from-concentrate",
     "name": "Jus multifruits à base de concentrés"
   },
   {

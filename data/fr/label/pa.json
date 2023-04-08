@@ -44,11 +44,15 @@
     "name": "Certifié écosocial par IBD"
   },
   {
+    "key": "en:certified-by-agrocert",
+    "name": "Certifié par Agrocert"
+  },
+  {
     "key": "en:certified-by-avicert",
     "name": "Certifié par Avicert"
   },
   {
-    "key": "fr:certifie-par-bureau-veritas",
+    "key": "en:certified-by-veritas",
     "name": "Certifié par bureau Veritas"
   },
   {
@@ -96,6 +100,10 @@
     "name": "Ethical Tea Partnership"
   },
   {
+    "key": "en:flash-pasteurized",
+    "name": "Flash pasteurisé"
+  },
+  {
     "key": "en:sustainable-palm-oil",
     "name": "Huile de palme durable"
   },
@@ -104,12 +112,20 @@
     "name": "Kascher pareve"
   },
   {
+    "key": "fr:lait-de-paturage",
+    "name": "Lait de paturage"
+  },
+  {
     "key": "en:do-not-freeze",
     "name": "Ne pas congeler"
   },
   {
     "key": "en:do-not-freeze-again",
     "name": "Ne pas recongeler"
+  },
+  {
+    "key": "en:unpasteurized",
+    "name": "Non pasteurisé"
   },
   {
     "key": "en:pa-bio-110",
@@ -156,6 +172,10 @@
     "name": "PA-BIO-178"
   },
   {
+    "key": "en:pasteurized",
+    "name": "Pasteurisé"
+  },
+  {
     "key": "en:pdo-pasas-de-malaga",
     "name": "PDO Pasas de Málaga"
   },
@@ -186,10 +206,6 @@
   {
     "key": "fr:porc-eleve-sur-paille-ou-en-plein-air",
     "name": "Porc élevé sur paille ou en plein air"
-  },
-  {
-    "key": "en:pasteurized-product",
-    "name": "Produit pasteurisé"
   },
   {
     "key": "en:no-palm-oil",

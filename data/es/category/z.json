@@ -108,11 +108,7 @@
     "name": "Zumo de limón"
   },
   {
-    "key": "en:apricot-juices",
-    "name": "Zumos de albaricoque"
-  },
-  {
-    "key": "en:concentrated-apricot-juices",
+    "key": "en:apricot-juices-from-concentrate",
     "name": "Zumos de albaricoque procedente de concentrado"
   },
   {
@@ -124,11 +120,11 @@
     "name": "Zumos de arándanos exprimidos"
   },
   {
-    "key": "en:concentrated-blueberry-juices",
+    "key": "en:blueberry-juices-from-concentrate",
     "name": "Zumos de arándanos procedente de concentrado"
   },
   {
-    "key": "en:plum-juices",
+    "key": "en:prune-juices",
     "name": "Zumos de ciruela"
   },
   {
@@ -136,7 +132,7 @@
     "name": "Zumos de ciruela exprimidos no refrigerados"
   },
   {
-    "key": "en:concentrated-plum-juices",
+    "key": "en:plum-juices-from-concentrate",
     "name": "Zumos de ciruela procedente de concentrado"
   },
   {
@@ -160,7 +156,7 @@
     "name": "Zumos de granada exprimidos no refrigerados"
   },
   {
-    "key": "en:concentrated-pomegranate-juices",
+    "key": "en:pomegranate-juices-from-concentrate",
     "name": "Zumos de granada procedente de concentrado"
   },
   {
@@ -176,16 +172,8 @@
     "name": "Zumos de mandarina exprimidos refrigerados"
   },
   {
-    "key": "en:concentrated-tangerine-juices",
+    "key": "en:tangerine-juices-from-concentrate",
     "name": "Zumos de mandarina procedente de concentrado"
-  },
-  {
-    "key": "en:mango-juices",
-    "name": "Zumos de mango"
-  },
-  {
-    "key": "en:concentrated-mango-juices",
-    "name": "Zumos de mango procedente de concentrado"
   },
   {
     "key": "en:apple-juices",
@@ -196,19 +184,19 @@
     "name": "Zumos de manzana exprimidos no refrigerados"
   },
   {
-    "key": "en:refrigerated-squeezed-apple-juices",
-    "name": "Zumos de manzana exprimidos refrigerados"
+    "key": "en:apple-juices-from-concentrate",
+    "name": "Zumos de manzana procedentes de concentrado"
   },
   {
-    "key": "en:concentrated-apple-juices",
-    "name": "Zumos de manzana procedentes de concentrado"
+    "key": "en:refrigerated-apple-juices",
+    "name": "Zumos de manzana refrigerados"
   },
   {
     "key": "en:peach-juices",
     "name": "Zumos de melocotón"
   },
   {
-    "key": "en:concentrated-peach-juices",
+    "key": "en:peach-juices-from-concentrate",
     "name": "Zumos de melocotón procedente de concentrado"
   },
   {
@@ -224,7 +212,7 @@
     "name": "Zumos de naranja exprimidos refrigerados"
   },
   {
-    "key": "en:concentrated-orange-juices",
+    "key": "en:orange-juices-from-concentrate",
     "name": "Zumos de naranja procedente de concentrado"
   },
   {
@@ -236,7 +224,7 @@
     "name": "Zumos de pera exprimidos no refrigerados"
   },
   {
-    "key": "en:concentrated-pear-juices",
+    "key": "en:pear-juices-from-concentrate",
     "name": "Zumos de pera procedente de concentrado"
   },
   {
@@ -252,7 +240,7 @@
     "name": "Zumos de piña exprimidos refrigerados"
   },
   {
-    "key": "en:concentrated-pineapple-juices",
+    "key": "en:pineapple-from-concentrate",
     "name": "Zumos de piña procedente de concentrado"
   },
   {
@@ -268,7 +256,7 @@
     "name": "Zumos de pomelo exprimidos no refrigerados"
   },
   {
-    "key": "en:concentrated-grapefruit-juices",
+    "key": "en:grapefruit-juices-from-concentrate",
     "name": "Zumos de pomelo procedente de concentrado"
   },
   {
@@ -288,7 +276,7 @@
     "name": "Zumos de uva exprimidos no refrigerados"
   },
   {
-    "key": "en:concentrated-grape-juices",
+    "key": "en:grape-juices-from-concentrate",
     "name": "Zumos de uva procedente de concentrado"
   },
   {
@@ -324,11 +312,11 @@
     "name": "Zumos multifruta exprimidos refrigerados"
   },
   {
-    "key": "en:concentrated-multifruit-juices",
+    "key": "en:multifruit-juices-from-concentrate",
     "name": "Zumos multifruta procedente de concentrado"
   },
   {
-    "key": "en:concentrated-fruit-juices",
+    "key": "en:fruit-juices-from-concentrate",
     "name": "Zumos procedentes de concentrado"
   },
   {

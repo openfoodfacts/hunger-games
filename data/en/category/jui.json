@@ -4,8 +4,12 @@
     "name": "Apple juices"
   },
   {
-    "key": "en:apricot-juices",
-    "name": "Apricot juices"
+    "key": "en:apple-juices-from-concentrate",
+    "name": "Apple juices from concentrate"
+  },
+  {
+    "key": "en:apricot-juices-from-concentrate",
+    "name": "Apricot juices from concentrate"
   },
   {
     "key": "en:beetroot-juices",
@@ -18,6 +22,10 @@
   {
     "key": "en:blueberry-juices",
     "name": "Blueberry juices"
+  },
+  {
+    "key": "en:blueberry-juices-from-concentrate",
+    "name": "Blueberry juices from concentrate"
   },
   {
     "key": "en:canned-drained-pineapple-in-pineapple-juice-and-syrup",
@@ -84,68 +92,8 @@
     "name": "Clementine juices"
   },
   {
-    "key": "en:concentrated-apple-juices",
-    "name": "Concentrated apple juices"
-  },
-  {
-    "key": "en:concentrated-apricot-juices",
-    "name": "Concentrated apricot juices"
-  },
-  {
-    "key": "en:concentrated-blueberry-juices",
-    "name": "Concentrated blueberry juices"
-  },
-  {
     "key": "en:concentrated-carrot-juices",
     "name": "Concentrated carrot juices"
-  },
-  {
-    "key": "en:concentrated-fruit-juices",
-    "name": "Concentrated fruit juices"
-  },
-  {
-    "key": "en:concentrated-grape-juices",
-    "name": "Concentrated grape juices"
-  },
-  {
-    "key": "en:concentrated-grapefruit-juices",
-    "name": "Concentrated grapefruit juices"
-  },
-  {
-    "key": "en:concentrated-mango-juices",
-    "name": "Concentrated mango juices"
-  },
-  {
-    "key": "en:concentrated-multifruit-juices",
-    "name": "Concentrated multifruit juices"
-  },
-  {
-    "key": "en:concentrated-orange-juices",
-    "name": "Concentrated orange juices"
-  },
-  {
-    "key": "en:concentrated-peach-juices",
-    "name": "Concentrated peach juices"
-  },
-  {
-    "key": "en:concentrated-pear-juices",
-    "name": "Concentrated pear juices"
-  },
-  {
-    "key": "en:concentrated-pineapple-juices",
-    "name": "Concentrated pineapple juices"
-  },
-  {
-    "key": "en:concentrated-plum-juices",
-    "name": "Concentrated plum juices"
-  },
-  {
-    "key": "en:concentrated-pomegranate-juices",
-    "name": "Concentrated pomegranate juices"
-  },
-  {
-    "key": "en:concentrated-tangerine-juices",
-    "name": "Concentrated tangerine juices"
   },
   {
     "key": "en:concentrated-tomato-juices",
@@ -156,12 +104,16 @@
     "name": "Cranberry juice"
   },
   {
-    "key": "en:fresh-grapefruit-juice",
-    "name": "Fresh grapefruit juice"
+    "key": "en:enriched-apple-juices",
+    "name": "Enriched apple juices"
   },
   {
-    "key": "en:fresh-mango-juice",
-    "name": "Fresh mango juice"
+    "key": "en:flavoured-apple-juices",
+    "name": "Flavoured apple juices"
+  },
+  {
+    "key": "en:fresh-grapefruit-juice",
+    "name": "Fresh grapefruit juice"
   },
   {
     "key": "en:fresh-passion-fruit-juices",
@@ -176,16 +128,32 @@
     "name": "Fruit and vegetable juices"
   },
   {
+    "key": "en:fruit-juice-mixed-apple-base-standard",
+    "name": "Fruit juice mixed - apple base standard"
+  },
+  {
     "key": "en:fruit-juices",
     "name": "Fruit juices"
+  },
+  {
+    "key": "en:fruit-juices-from-concentrate",
+    "name": "Fruit juices from concentrate"
   },
   {
     "key": "en:grape-juices",
     "name": "Grape juices"
   },
   {
+    "key": "en:grape-juices-from-concentrate",
+    "name": "Grape juices from concentrate"
+  },
+  {
     "key": "en:grapefruit-juices",
     "name": "Grapefruit juices"
+  },
+  {
+    "key": "en:grapefruit-juices-from-concentrate",
+    "name": "Grapefruit juices from concentrate"
   },
   {
     "key": "en:home-made-grapefruit-juice",
@@ -196,10 +164,6 @@
     "name": "Home-made lemon juice"
   },
   {
-    "key": "en:home-made-lime-juice",
-    "name": "Home-made lime juice"
-  },
-  {
     "key": "en:juices-and-nectars",
     "name": "Juices and nectars"
   },
@@ -208,20 +172,28 @@
     "name": "Lemon juice"
   },
   {
-    "key": "en:lime-juice",
-    "name": "Lime juice"
+    "key": "en:lime-juices",
+    "name": "Lime juices"
   },
   {
-    "key": "en:mango-juices",
-    "name": "Mango juices"
+    "key": "en:lime-juices-from-concentrate",
+    "name": "Lime juices from concentrate"
   },
   {
     "key": "en:mixed-fruits-pure-multivitamin-juice",
     "name": "Mixed fruits pure multivitamin juice"
   },
   {
+    "key": "en:mixed-red-fruits-juice-pure-juice",
+    "name": "Mixed red fruits juice pure juice"
+  },
+  {
     "key": "en:multifruit-juices",
     "name": "Multifruit juices"
+  },
+  {
+    "key": "en:multifruit-juices-from-concentrate",
+    "name": "Multifruit juices from concentrate"
   },
   {
     "key": "en:multivitamin-mixed-fruits-juice-reconstituted-from-a-concentrate",
@@ -232,24 +204,36 @@
     "name": "Orange based mixed fruits multivitamin juice"
   },
   {
+    "key": "en:orange-juice-home-made",
+    "name": "Orange juice home-made"
+  },
+  {
     "key": "en:orange-juices",
     "name": "Orange juices"
+  },
+  {
+    "key": "en:orange-juices-from-concentrate",
+    "name": "Orange juices from concentrate"
   },
   {
     "key": "en:peach-juices",
     "name": "Peach juices"
   },
   {
+    "key": "en:peach-juices-from-concentrate",
+    "name": "Peach juices from concentrate"
+  },
+  {
     "key": "en:pear-juices",
     "name": "Pear juices"
   },
   {
-    "key": "en:pineapple-in-juice",
-    "name": "Pineapple in juice"
+    "key": "en:pear-juices-from-concentrate",
+    "name": "Pear juices from concentrate"
   },
   {
-    "key": "en:pineapple-juice-for-canned-pineapple",
-    "name": "Pineapple juice for canned pineapple"
+    "key": "en:pineapple-in-juice",
+    "name": "Pineapple in juice"
   },
   {
     "key": "en:pineapple-juices",
@@ -260,16 +244,20 @@
     "name": "Pink grapefruit juices"
   },
   {
-    "key": "en:plum-juices",
-    "name": "Plum juices"
+    "key": "en:plum-juices-from-concentrate",
+    "name": "Plum juices from concentrate"
   },
   {
     "key": "en:pomegranate-juices",
     "name": "Pomegranate juices"
   },
   {
-    "key": "en:prune-juice",
-    "name": "Prune juice"
+    "key": "en:pomegranate-juices-from-concentrate",
+    "name": "Pomegranate juices from concentrate"
+  },
+  {
+    "key": "en:prune-juices",
+    "name": "Prune juices"
   },
   {
     "key": "en:pure-carrot-juice",
@@ -288,8 +276,12 @@
     "name": "Pure tomato juices"
   },
   {
-    "key": "en:refrigerated-squeezed-apple-juices",
-    "name": "Refrigerated squeezed apple juices"
+    "key": "en:red-grape-juices",
+    "name": "Red grape juices"
+  },
+  {
+    "key": "en:refrigerated-apple-juices",
+    "name": "Refrigerated apple juices"
   },
   {
     "key": "en:refrigerated-squeezed-juices",
@@ -400,11 +392,19 @@
     "name": "Tangerine juices"
   },
   {
+    "key": "en:tangerine-juices-from-concentrate",
+    "name": "Tangerine juices from concentrate"
+  },
+  {
     "key": "en:tomato-juices",
     "name": "Tomato juices"
   },
   {
     "key": "en:vegetable-juices",
     "name": "Vegetable juices"
+  },
+  {
+    "key": "en:white-grape-juices",
+    "name": "White grape juices"
   }
 ]

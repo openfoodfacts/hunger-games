@@ -32,6 +32,10 @@
     "name": "No artificial flavourings or sweeteners"
   },
   {
+    "key": "en:no-emulsifiers",
+    "name": "No emulsifiers"
+  },
+  {
     "key": "en:no-nuts",
     "name": "No nuts"
   },
@@ -48,12 +52,20 @@
     "name": "Non durci"
   },
   {
+    "key": "en:filtered",
+    "name": "Non filtrée"
+  },
+  {
     "key": "en:non-gmo-project",
     "name": "Non GMO project"
   },
   {
     "key": "en:non-fair-trade",
     "name": "Non issu du commerce équitable"
+  },
+  {
+    "key": "en:unpasteurized",
+    "name": "Non pasteurisé"
   },
   {
     "key": "en:not-advised-for-pregnant-women",
@@ -70,6 +82,10 @@
   {
     "key": "en:non-vegan",
     "name": "Non-végétalien"
+  },
+  {
+    "key": "en:not-suited-for-children-under-1-years",
+    "name": "Not suited for children under 1 years"
   },
   {
     "key": "fr:nou-la-fe",

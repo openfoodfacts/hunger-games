@@ -28,6 +28,10 @@
     "name": "Baguette sandwiches with camembert cheese"
   },
   {
+    "key": "en:buffalo-camemberts",
+    "name": "Buffalo camemberts"
+  },
+  {
     "key": "en:shrimps",
     "name": "Camarones"
   },
@@ -40,11 +44,7 @@
     "name": "Camelina oils"
   },
   {
-    "key": "en:camembert-with-calvados",
-    "name": "Camembert con Calvados"
-  },
-  {
-    "key": "en:pasteurized-camembert",
+    "key": "en:camemberts-from-pasteurized-cow-milk",
     "name": "Camembert pasteurizado"
   },
   {
@@ -56,16 +56,24 @@
     "name": "Camemberts de Normandie"
   },
   {
-    "key": "en:camemberts-from-microfiltered-milk",
-    "name": "Camemberts from microfiltered milk"
+    "key": "en:camemberts-from-microfiltered-cow-milk",
+    "name": "Camemberts from microfiltered cow milk"
   },
   {
-    "key": "en:camemberts-from-raw-milk",
-    "name": "Camemberts from raw milk"
+    "key": "en:camemberts-from-pasteurized-buffalo-milk",
+    "name": "Camemberts from pasteurized buffalo milk"
   },
   {
-    "key": "en:camemberts-from-thermized-milk",
-    "name": "Camemberts from thermized milk"
+    "key": "en:camemberts-from-raw-buffalo-milk",
+    "name": "Camemberts from raw buffalo milk"
+  },
+  {
+    "key": "en:camemberts-from-raw-cow-milk",
+    "name": "Camemberts from raw cow milk"
+  },
+  {
+    "key": "en:camemberts-from-thermized-cow-milk",
+    "name": "Camemberts from thermized cow milk"
   },
   {
     "key": "es:campo-de-borja",
@@ -78,6 +86,10 @@
   {
     "key": "es:campo-de-la-guardia",
     "name": "Campo de La Guardia"
+  },
+  {
+    "key": "en:cow-camemberts",
+    "name": "Cow camemberts"
   },
   {
     "key": "en:free-range-chicken-eggs",

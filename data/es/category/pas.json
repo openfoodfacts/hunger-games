@@ -20,8 +20,12 @@
     "name": "Bolognese-style pasta"
   },
   {
-    "key": "en:pasteurized-camembert",
+    "key": "en:camemberts-from-pasteurized-cow-milk",
     "name": "Camembert pasteurizado"
+  },
+  {
+    "key": "en:camemberts-from-pasteurized-buffalo-milk",
+    "name": "Camemberts from pasteurized buffalo milk"
   },
   {
     "key": "en:carbonara-style-pasta",
@@ -322,10 +326,6 @@
   {
     "key": "en:durum-wheat-pasta",
     "name": "Pasta de trigo duro"
-  },
-  {
-    "key": "en:vegetable-pasta",
-    "name": "Pasta de verduras"
   },
   {
     "key": "en:fresh-pasta",
@@ -650,6 +650,10 @@
   {
     "key": "en:soft-ripened-washed-rind-cheese-from-pasteurised-milk",
     "name": "Soft-ripened washed-rind cheese from pasteurised milk"
+  },
+  {
+    "key": "en:split-pea-pasta",
+    "name": "Split pea pasta"
   },
   {
     "key": "en:rum-and-raisins-ice-cream-tubs",

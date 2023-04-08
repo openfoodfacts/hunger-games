@@ -136,10 +136,6 @@
     "name": "Boisson lactée pour goûter bébé dès 4/6 mois avec céréales et fruits"
   },
   {
-    "key": "en:dairy-drinks-with-sugar-and-fruits",
-    "name": "Boisson lactée sucrée au lait fermenté et aux fruits"
-  },
-  {
     "key": "en:still-fruit-soft-drink-with-less-than-10-of-fruit-juice-without-sugar-and-with-artificial-sweeteners",
     "name": "Boisson plate aux fruits non sucrée avec édulcorants et moins de 10% de jus"
   },
@@ -186,6 +182,10 @@
   {
     "key": "en:carbonated-soft-drinks-without-fruit-juice-with-sugar",
     "name": "Boissons gazeuses sucrées sans jus de fruit"
+  },
+  {
+    "key": "en:fermented-milk-drinks-with-fruits",
+    "name": "Boissons lactées fermentées aux fruits"
   },
   {
     "key": "en:still-fruit-soft-drinks",
@@ -676,7 +676,7 @@
     "name": "Jus de fruits"
   },
   {
-    "key": "en:concentrated-fruit-juices",
+    "key": "en:fruit-juices-from-concentrate",
     "name": "Jus de fruits à base de concentré"
   },
   {
@@ -690,6 +690,10 @@
   {
     "key": "en:squeezed-juices",
     "name": "Jus de fruits pur jus"
+  },
+  {
+    "key": "en:mixed-red-fruits-juice-pure-juice",
+    "name": "Jus de fruits rouges"
   },
   {
     "key": "en:fruit-liegeois",
@@ -952,16 +956,8 @@
     "name": "Soupes de fruits de mer"
   },
   {
-    "key": "en:dairy-specialty-with-fruits-and-sugar-no-0-fat",
-    "name": "Spécialité laitière aux fruits sucrée non allégée en matières grasses"
-  },
-  {
     "key": "fr:specialites-laitieres-aux-fruits",
     "name": "Spécialités laitières aux fruits"
-  },
-  {
-    "key": "en:stuffed-fruits-wafers",
-    "name": "Stuffed fruits wafers"
   },
   {
     "key": "en:red-berries-tart",

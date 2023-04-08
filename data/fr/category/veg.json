@@ -24,6 +24,10 @@
     "name": "Boissons à base de végétaux"
   },
   {
+    "key": "en:fermented-plant-milk-drinks",
+    "name": "Boissons au lait végétal fermentées"
+  },
+  {
     "key": "en:fruit-and-plant-milk-beverages",
     "name": "Boissons aux fruits et au lait végetal"
   },
@@ -44,8 +48,24 @@
     "name": "Boissons végétales d'amarante en poudre"
   },
   {
+    "key": "en:vanilla-oat-milks",
+    "name": "Boissons végétales d'avoine à la vanille"
+  },
+  {
+    "key": "en:cocoa-oat-milks",
+    "name": "Boissons végétales d'avoine au cacao"
+  },
+  {
     "key": "en:powdered-oat-milks",
     "name": "Boissons végétales d'avoine en poudre"
+  },
+  {
+    "key": "en:unsweetened-natural-oat-milks",
+    "name": "Boissons végétales d'avoine nature non sucrées"
+  },
+  {
+    "key": "en:sweetened-natural-oat-milks",
+    "name": "Boissons végétales d'avoine nature sucrées"
   },
   {
     "key": "en:spelt-milks",
@@ -200,6 +220,10 @@
     "name": "Boissons végétales en poudre"
   },
   {
+    "key": "en:soy-based-sliced",
+    "name": "Bouchées ou émincé au soja et blé (ne convient pas aux véganes ou végétaliens) préemballé"
+  },
+  {
     "key": "en:vegetarian-balls",
     "name": "Boulettes végétariennes"
   },
@@ -324,7 +348,11 @@
     "name": "German vegetables"
   },
   {
-    "key": "en:veggie-grounds",
+    "key": "en:soy-based-minced-prepacked",
+    "name": "Haché végétal à base de soja préemballé"
+  },
+  {
+    "key": "en:vegetarian-grounds",
     "name": "Hachés végétaux"
   },
   {
@@ -436,6 +464,10 @@
     "name": "Mousses au chocolat végétaliennes"
   },
   {
+    "key": "en:soybean-and-wheat-based-nuggets-vegan",
+    "name": "Nuggets soja et blé (convient aux véganes ou végétaliens) préemballé"
+  },
+  {
     "key": "en:vegan-nuggets",
     "name": "Nuggets végans"
   },
@@ -536,12 +568,20 @@
     "name": "Sauces végétariennes façon carbonara"
   },
   {
+    "key": "en:plant-based-sausage-with-wheat-or-seitan",
+    "name": "Saucisse végétale au blé ou seitan préemballé"
+  },
+  {
     "key": "en:vegetarian-sausages",
     "name": "Saucisses végétariennes"
   },
   {
     "key": "en:vegetarian-frankfurt-sausages",
     "name": "Saucisses végétariennes de Francfort"
+  },
+  {
+    "key": "en:vegetarian-sausages-from-tofu",
+    "name": "Saucisses végétariennes de tofu"
   },
   {
     "key": "en:vegetarian-vienna-sausages",
@@ -552,6 +592,10 @@
     "name": "Saucisses végétariennes pour hot-dog"
   },
   {
+    "key": "en:vegan-semolina-puddings",
+    "name": "Semoules au lait végétaliennes"
+  },
+  {
     "key": "en:vegetarian-spreads-with-meat-like-pieces",
     "name": "Tartinades avec des morceaux végétariens"
   },
@@ -560,7 +604,19 @@
     "name": "Tartinades véganes aux légumes"
   },
   {
+    "key": "en:vegan-hot-dog-saucages",
+    "name": "Vegan hot dog saucages"
+  },
+  {
+    "key": "en:vegan-saucages",
+    "name": "Vegan saucages"
+  },
+  {
     "key": "en:vegetable-oil-sprays",
     "name": "Vegetable oil sprays"
+  },
+  {
+    "key": "en:vegetarian-wraps",
+    "name": "Wraps végétariens"
   }
 ]

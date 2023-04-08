@@ -80,8 +80,16 @@
     "name": "Cuisse de poulet rôtie avec viande et peau"
   },
   {
+    "key": "en:breaded-meat-cutlets",
+    "name": "Escalopes de viande panées"
+  },
+  {
     "key": "en:meat-in-puff-pastry",
     "name": "Feuilleté à la viande"
+  },
+  {
+    "key": "en:meat-patties",
+    "name": "Galettes à la viande"
   },
   {
     "key": "en:olive-oils-from-viannos-irakliou-kritis",
@@ -164,6 +172,38 @@
     "name": "Poitrine de poulet rôtie avec viande et peau"
   },
   {
+    "key": "en:chicken-white-race-meat-and-skin-raw",
+    "name": "Poulet (var. blanc) viande et peau cru"
+  },
+  {
+    "key": "en:chicken-wing-meat-and-skin-raw",
+    "name": "Poulet aile viande et peau cru"
+  },
+  {
+    "key": "en:chicken-leg-meat-raw",
+    "name": "Poulet cuisse viande cru"
+  },
+  {
+    "key": "en:chicken-leg-meat-and-skin-raw",
+    "name": "Poulet cuisse viande et peau cru"
+  },
+  {
+    "key": "en:chicken-free-range-meat-and-skin-raw",
+    "name": "Poulet fermier viande et peau cru"
+  },
+  {
+    "key": "en:chicken-high-leg-meat-raw",
+    "name": "Poulet haut de cuisse viande cru"
+  },
+  {
+    "key": "en:chicken-breast-meat-and-skin-raw",
+    "name": "Poulet poitrine viande et peau cru"
+  },
+  {
+    "key": "en:chicken-meat-and-skin-roasted-baked",
+    "name": "Poulet viande et peau rôti/cuit au four"
+  },
+  {
     "key": "en:meat-preparations",
     "name": "Préparations de viande"
   },
@@ -210,10 +250,6 @@
   {
     "key": "en:frozen-meat-preparations",
     "name": "Préparations de viande surgelées"
-  },
-  {
-    "key": "en:meat-based-products",
-    "name": "Produits à la viande"
   },
   {
     "key": "en:meat-ravioli",
@@ -276,7 +312,7 @@
     "name": "Soupe chorba frik à base de viande et de frik"
   },
   {
-    "key": "en:meat-patties",
+    "key": "en:steaks",
     "name": "Steaks de viande"
   },
   {
@@ -322,6 +358,10 @@
   {
     "key": "en:cooked-beef-meat",
     "name": "Viande de boeuf cuite"
+  },
+  {
+    "key": "en:beef-and-its-products",
+    "name": "Viande de bœuf et dérivés"
   },
   {
     "key": "en:beef-jerkies",
@@ -508,6 +548,10 @@
     "name": "Viandes et abats frais belges"
   },
   {
+    "key": "en:meats-and-their-products",
+    "name": "Viandes et dérivés"
+  },
+  {
     "key": "en:fresh-meats",
     "name": "Viandes fraîches"
   },
@@ -518,6 +562,18 @@
   {
     "key": "en:rabbit-fresh-meat",
     "name": "Viandes fraîches de lapin"
+  },
+  {
+    "key": "en:ground-meats",
+    "name": "Viandes hachées"
+  },
+  {
+    "key": "en:ground-beef-meats",
+    "name": "Viandes hachées pur bœuf"
+  },
+  {
+    "key": "en:refrigerated-ground-beef-meats",
+    "name": "Viandes hachées pur bœuf refrigérées"
   },
   {
     "key": "en:dried-meats",

@@ -52,6 +52,10 @@
     "name": "Biscuits tablette de chocolat au lait"
   },
   {
+    "key": "en:instant-cocoa-or-chocolate-beverage-with-sugar-fortified-with-vitamins-and-chemical-elements-ready-to-drink-reconstituted-with-standard-semi-skimm",
+    "name": "Boisson cacaotée ou au chocolat instantanée sucrée enrichie en vitamines prête à boire (reconstituée avec du lait demi-écrémé standard)"
+  },
+  {
     "key": "en:partially-skimmed-strawberry-flavoured-milk-with-sugar-fortified-with-vitamins-d",
     "name": "Boisson lactée aromatisée à la fraise sucrée au lait partiellement écrémé enrichie à la vitamine D"
   },
@@ -60,12 +64,12 @@
     "name": "Boisson lactée aromatisée au chocolat sucrée au lait partiellement écrémé enrichie en vitamines et minéraux"
   },
   {
-    "key": "en:dairy-drinks-with-sugar-and-fruits",
-    "name": "Boisson lactée sucrée au lait fermenté et aux fruits"
-  },
-  {
     "key": "en:fruit-and-milk-beverages",
     "name": "Boissons au fruit et au lait"
+  },
+  {
+    "key": "en:fermented-plant-milk-drinks",
+    "name": "Boissons au lait végétal fermentées"
   },
   {
     "key": "en:fruit-and-plant-milk-beverages",
@@ -74,14 +78,6 @@
   {
     "key": "en:flavoured-dairy-drinks-with-sugar",
     "name": "Boissons lactées aromatisées sucrées au lait fermenté"
-  },
-  {
-    "key": "en:plain-dairy-drinks-with-sugar",
-    "name": "Boissons lactées nature sucrées au lait fermenté"
-  },
-  {
-    "key": "en:plain-dairy-drinks-with-sugar-and-l-casei",
-    "name": "Boissons lactées nature sucrées au lait fermenté et L Casei"
   },
   {
     "key": "en:milk-chocolate-candies",
@@ -104,16 +100,36 @@
     "name": "Café au lait sucré"
   },
   {
-    "key": "en:camemberts-from-raw-milk",
-    "name": "Camemberts au lait cru"
+    "key": "en:camemberts-from-raw-buffalo-milk",
+    "name": "Camemberts au lait cru de bufflonne"
   },
   {
-    "key": "en:camemberts-from-microfiltered-milk",
-    "name": "Camemberts au lait microfiltré"
+    "key": "en:camemberts-from-raw-cow-milk",
+    "name": "Camemberts au lait cru de vache"
   },
   {
-    "key": "en:camemberts-from-thermized-milk",
-    "name": "Camemberts au lait thermisé"
+    "key": "en:buffalo-camemberts",
+    "name": "Camemberts au lait de bufflonne"
+  },
+  {
+    "key": "en:cow-camemberts",
+    "name": "Camemberts au lait de vache"
+  },
+  {
+    "key": "en:camemberts-from-microfiltered-cow-milk",
+    "name": "Camemberts au lait microfiltré de vache"
+  },
+  {
+    "key": "en:camemberts-from-pasteurized-buffalo-milk",
+    "name": "Camemberts au lait pasteurisé de bufflonne"
+  },
+  {
+    "key": "en:camemberts-from-pasteurized-cow-milk",
+    "name": "Camemberts au lait pasteurisé de vache"
+  },
+  {
+    "key": "en:camemberts-from-thermized-cow-milk",
+    "name": "Camemberts au lait thermisé de vache"
   },
   {
     "key": "en:mix-of-chicory-and-coffee-instant-without-sugar-ready-to-drink-reconstituted-with-standard-semi-skimmed-milk",
@@ -238,6 +254,10 @@
   {
     "key": "en:cheese-from-goat-s-milk-fresh",
     "name": "Fromage de chèvre frais au lait pasteurisé ou cru"
+  },
+  {
+    "key": "en:cheese-from-goat-s-milk-from-raw-milk",
+    "name": "Fromage de chèvre lactique affiné au lait cru (type Crottin de Chavignol Picodon Rocamadour Sainte-Maure de Touraine)"
   },
   {
     "key": "en:cheese-from-goat-s-milk-from-pasteurised-milk",
@@ -540,24 +560,28 @@
     "name": "Laits écrémés UHT"
   },
   {
-    "key": "en:renneted-milks",
+    "key": "en:junkets",
     "name": "Laits emprésurés"
   },
   {
-    "key": "fr:laits-empresures-a-la-vanille",
-    "name": "Laits emprésurés à la vanille"
-  },
-  {
-    "key": "en:flavoured-renneted-milks",
+    "key": "en:flavoured-junkets",
     "name": "Laits emprésurés aromatisés"
   },
   {
-    "key": "fr:laits-empresures-au-caramel",
+    "key": "en:caramel-junkets",
     "name": "Laits emprésurés au caramel"
   },
   {
-    "key": "fr:laits-empresures-au-chocolat",
+    "key": "en:chocolate-junkets",
     "name": "Laits emprésurés au chocolat"
+  },
+  {
+    "key": "en:plain-junkets",
+    "name": "Laits emprésurés nature"
+  },
+  {
+    "key": "en:vanilla-junkets",
+    "name": "Laits emprésurés vanille"
   },
   {
     "key": "en:milk-powders",
@@ -820,24 +844,24 @@
     "name": "Semoule au lait rayon frais"
   },
   {
-    "key": "en:semolina-desserts",
+    "key": "en:semolina-puddings",
     "name": "Semoules au lait"
+  },
+  {
+    "key": "en:vegan-semolina-puddings",
+    "name": "Semoules au lait végétaliennes"
   },
   {
     "key": "en:soup-for-baby-with-vegetables-and-cereals-and-milk",
     "name": "Soupe pour bébé aux légumes aux céréales et au lait"
   },
   {
-    "key": "en:dairy-specialty-fruit-flavoured-with-sugar-no-0-fat",
-    "name": "Spécialité laitière aromatisée sucrée non allégée en matières grasses"
-  },
-  {
-    "key": "en:dairy-specialty-with-fruits-and-sugar-no-0-fat",
-    "name": "Spécialité laitière aux fruits sucrée non allégée en matières grasses"
-  },
-  {
     "key": "fr:specialites-laitieres",
     "name": "Spécialités laitières"
+  },
+  {
+    "key": "fr:specialites-laitieres-aromatisees",
+    "name": "Spécialités laitières aromatisées"
   },
   {
     "key": "fr:specialites-laitieres-aux-fruits",
@@ -860,7 +884,7 @@
     "name": "Substitut de repas hypocalorique milk-shake en poudre reconstitué avec lait écrémé"
   },
   {
-    "key": "en:dairies-substitutes",
+    "key": "en:dairy-substitutes",
     "name": "Substituts de produits laitiers"
   },
   {

@@ -28,6 +28,10 @@
     "name": "Batidos protéicos"
   },
   {
+    "key": "en:beef-and-its-products",
+    "name": "Beef and its products"
+  },
+  {
     "key": "en:belgian-bakery-products",
     "name": "Belgian bakery products"
   },
@@ -58,6 +62,10 @@
   {
     "key": "en:bulgarian-meat-products",
     "name": "Bulgarian meat products"
+  },
+  {
+    "key": "en:chicken-and-its-products",
+    "name": "Chicken and its products"
   },
   {
     "key": "en:chinese-sea-products",
@@ -96,6 +104,10 @@
     "name": "Czech sea products"
   },
   {
+    "key": "en:dried-deffated-black-soldier-fly-protein",
+    "name": "Dried deffated black soldier fly protein"
+  },
+  {
     "key": "en:dried-provence-herbs",
     "name": "Dried Provence herbs"
   },
@@ -114,6 +126,10 @@
   {
     "key": "en:finnish-sea-products",
     "name": "Finnish sea products"
+  },
+  {
+    "key": "en:fishes-and-their-products",
+    "name": "Fishes and their products"
   },
   {
     "key": "en:french-meat-products",
@@ -172,6 +188,10 @@
     "name": "Italian sea products"
   },
   {
+    "key": "en:lithuanian-meat-products",
+    "name": "Lithuanian meat products"
+  },
+  {
     "key": "en:meat-analogues-from-pea-proteins",
     "name": "Meat analogues from pea proteins"
   },
@@ -190,6 +210,10 @@
   {
     "key": "en:norwegian-sea-products",
     "name": "Norwegian sea products"
+  },
+  {
+    "key": "en:nuggets-from-soy-and-wheat-proteins",
+    "name": "Nuggets from soy and wheat proteins"
   },
   {
     "key": "en:olive-oils-from-aix-en-provence",
@@ -222,6 +246,10 @@
   {
     "key": "en:protein-powders",
     "name": "Polvos de proteína"
+  },
+  {
+    "key": "en:pork-and-its-products",
+    "name": "Pork and its products"
   },
   {
     "key": "en:portuguese-bakery-products",
@@ -260,7 +288,7 @@
     "name": "Productos a base de algas"
   },
   {
-    "key": "en:meat-based-products",
+    "key": "en:meats-and-their-products",
     "name": "Productos a base de carne"
   },
   {
@@ -392,6 +420,10 @@
     "name": "Protein Energy Bars"
   },
   {
+    "key": "en:textured-soy-protein",
+    "name": "Proteína de soja texturizada"
+  },
+  {
     "key": "en:provencal-style-tart",
     "name": "Provencal-style tart"
   },
@@ -448,8 +480,20 @@
     "name": "Sushi with seafood products"
   },
   {
+    "key": "en:textured-pea-protein",
+    "name": "Textured pea protein"
+  },
+  {
+    "key": "en:textured-vegetable-protein",
+    "name": "Textured vegetable protein"
+  },
+  {
     "key": "en:tomatoes-and-their-products",
     "name": "Tomates y sus productos"
+  },
+  {
+    "key": "en:turkey-and-its-products",
+    "name": "Turkey and its products"
   },
   {
     "key": "en:vegetables-based-foods",
@@ -464,51 +508,47 @@
     "name": "Yoghurts high in protein on a fruit layer"
   },
   {
-    "key": "en:concentrated-apricot-juices",
+    "key": "en:apricot-juices-from-concentrate",
     "name": "Zumos de albaricoque procedente de concentrado"
   },
   {
-    "key": "en:concentrated-blueberry-juices",
+    "key": "en:blueberry-juices-from-concentrate",
     "name": "Zumos de arándanos procedente de concentrado"
   },
   {
-    "key": "en:concentrated-plum-juices",
+    "key": "en:plum-juices-from-concentrate",
     "name": "Zumos de ciruela procedente de concentrado"
   },
   {
-    "key": "en:concentrated-pomegranate-juices",
+    "key": "en:pomegranate-juices-from-concentrate",
     "name": "Zumos de granada procedente de concentrado"
   },
   {
-    "key": "en:concentrated-tangerine-juices",
+    "key": "en:tangerine-juices-from-concentrate",
     "name": "Zumos de mandarina procedente de concentrado"
   },
   {
-    "key": "en:concentrated-mango-juices",
-    "name": "Zumos de mango procedente de concentrado"
-  },
-  {
-    "key": "en:concentrated-apple-juices",
+    "key": "en:apple-juices-from-concentrate",
     "name": "Zumos de manzana procedentes de concentrado"
   },
   {
-    "key": "en:concentrated-peach-juices",
+    "key": "en:peach-juices-from-concentrate",
     "name": "Zumos de melocotón procedente de concentrado"
   },
   {
-    "key": "en:concentrated-orange-juices",
+    "key": "en:orange-juices-from-concentrate",
     "name": "Zumos de naranja procedente de concentrado"
   },
   {
-    "key": "en:concentrated-pear-juices",
+    "key": "en:pear-juices-from-concentrate",
     "name": "Zumos de pera procedente de concentrado"
   },
   {
-    "key": "en:concentrated-pineapple-juices",
+    "key": "en:pineapple-from-concentrate",
     "name": "Zumos de piña procedente de concentrado"
   },
   {
-    "key": "en:concentrated-grapefruit-juices",
+    "key": "en:grapefruit-juices-from-concentrate",
     "name": "Zumos de pomelo procedente de concentrado"
   },
   {
@@ -516,7 +556,7 @@
     "name": "Zumos de tomate procedente de concentrado"
   },
   {
-    "key": "en:concentrated-grape-juices",
+    "key": "en:grape-juices-from-concentrate",
     "name": "Zumos de uva procedente de concentrado"
   },
   {
@@ -524,11 +564,11 @@
     "name": "Zumos de zanahoria procedente de concentrado"
   },
   {
-    "key": "en:concentrated-multifruit-juices",
+    "key": "en:multifruit-juices-from-concentrate",
     "name": "Zumos multifruta procedente de concentrado"
   },
   {
-    "key": "en:concentrated-fruit-juices",
+    "key": "en:fruit-juices-from-concentrate",
     "name": "Zumos procedentes de concentrado"
   }
 ]

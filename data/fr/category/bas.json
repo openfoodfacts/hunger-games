@@ -204,15 +204,19 @@
     "name": "Haché à base de bœuf cru à 15% de matières grasses"
   },
   {
-    "key": "en:concentrated-apricot-juices",
+    "key": "en:soy-based-minced-prepacked",
+    "name": "Haché végétal à base de soja préemballé"
+  },
+  {
+    "key": "en:apricot-juices-from-concentrate",
     "name": "Jus d'abricot à base de concentré"
   },
   {
-    "key": "en:concentrated-pineapple-juices",
+    "key": "en:pineapple-from-concentrate",
     "name": "Jus d'ananas à base de concentré"
   },
   {
-    "key": "en:concentrated-orange-juices",
+    "key": "en:orange-juices-from-concentrate",
     "name": "Jus d'orange à base de concentré"
   },
   {
@@ -220,52 +224,52 @@
     "name": "Jus de carotte à base de concentré"
   },
   {
-    "key": "en:concentrated-fruit-juices",
+    "key": "en:fruit-juices-from-concentrate",
     "name": "Jus de fruits à base de concentré"
   },
   {
-    "key": "en:concentrated-pomegranate-juices",
+    "key": "en:pomegranate-juices-from-concentrate",
     "name": "Jus de grenade à base de concentré"
   },
   {
-    "key": "en:concentrated-tangerine-juices",
+    "key": "en:tangerine-juices-from-concentrate",
     "name": "Jus de mandarine à base de concentré"
   },
   {
-    "key": "en:concentrated-mango-juices",
-    "name": "Jus de mangue à base de concentré"
-  },
-  {
-    "key": "en:concentrated-blueberry-juices",
+    "key": "en:blueberry-juices-from-concentrate",
     "name": "Jus de myrtilles à base de concentré"
   },
   {
-    "key": "en:concentrated-grapefruit-juices",
+    "key": "en:grapefruit-juices-from-concentrate",
     "name": "Jus de pamplemousse à base de concentré"
   },
   {
-    "key": "en:concentrated-peach-juices",
+    "key": "en:peach-juices-from-concentrate",
     "name": "Jus de pêche à base de concentré"
   },
   {
-    "key": "en:concentrated-pear-juices",
+    "key": "en:pear-juices-from-concentrate",
     "name": "Jus de poire à base de concentré"
   },
   {
-    "key": "en:concentrated-apple-juices",
+    "key": "en:apple-juices-from-concentrate",
     "name": "Jus de pomme à base de concentré"
   },
   {
-    "key": "en:concentrated-plum-juices",
+    "key": "en:plum-juices-from-concentrate",
     "name": "Jus de prune à base de concentré"
   },
   {
-    "key": "en:concentrated-grape-juices",
+    "key": "en:grape-juices-from-concentrate",
     "name": "Jus de raisin à base de concentré"
   },
   {
     "key": "en:concentrated-tomato-juices",
     "name": "Jus de tomates à base de concentré"
+  },
+  {
+    "key": "en:fruit-juice-mixed-apple-base-standard",
+    "name": "Jus multifruit - base pomme standard"
   },
   {
     "key": "en:multivitamin-mixed-fruits-juice-reconstituted-from-a-concentrate",
@@ -276,7 +280,7 @@
     "name": "Jus multifruit multivitaminé à base d'orange"
   },
   {
-    "key": "en:concentrated-multifruit-juices",
+    "key": "en:multifruit-juices-from-concentrate",
     "name": "Jus multifruits à base de concentrés"
   },
   {
@@ -294,6 +298,10 @@
   {
     "key": "fr:montagny-premier-cru-les-bassets",
     "name": "Montagny premier cru Les Bassets"
+  },
+  {
+    "key": "en:nuggets-from-soy-and-wheat-proteins",
+    "name": "Nuggets à base de protéines de soja et blé"
   },
   {
     "key": "en:bread-white-from-wheat-flour-of-the-highest-grade-gost-26987-86",
