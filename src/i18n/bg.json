@@ -33,7 +33,7 @@
       "title": "{{userName}} статистики:",
       "editorCount": {
         "title": "Редактор",
-        "description": "Number of editions done"
+        "description": "Брой извършени редакции"
       },
       "contributorCount": {
         "title": "Сътрудник",
@@ -56,6 +56,7 @@
     "labels": "Етикети",
     "brand": "марка",
     "brands": "Марки",
+    "packaging": "опаковка",
     "quantity": "Количество",
     "insightTypeLabel": "Показва само",
     "ingredients": "Съставки",
@@ -221,18 +222,18 @@
     "thank_you": "Благодаря",
     "donate": "Дари",
     "join_the_community": {
-      "discover_our": "Discover our ",
-      "code_of_conduct": "Code of conduct ",
+      "discover_our": "Открий нашите ",
+      "code_of_conduct": "Кодекс на поведение ",
       "join_us_on": "Join us on ",
-      "forum": "Forum",
-      "subscribe_to_our": "Subscribe to our ",
-      "newsletter": "newsletter"
+      "forum": "Форум",
+      "subscribe_to_our": "Абонирай се за нашия ",
+      "newsletter": "бюлетин"
     },
     "discover_the_project": "Открий проекта",
     "Who_we_are": "За нас",
     "Vision_Mission_Values_and_Programs": "Визия, мисия, ценности и програми",
-    "FAQS": "FAQS",
-    "open_Food_Facts_blog": "Open Food Facts blog",
+    "FAQS": "ЧЗВ",
+    "open_Food_Facts_blog": "Open Food Facts блог",
     "Press": "Преса",
     "Open_Food_Facts_wiki": "Open Food Facts wiki (en)",
     "Translators": "Преводачи",
@@ -251,8 +252,8 @@
       "page2": {
         "title": "Игра с въпроси",
         "text1": "Хранителният продукт принадлежи ли към тази марка?",
-        "text2": "Simply answer with a <strong>Yes/No</strong>! Don't know the answer? That's alright, just skip it.",
-        "text3": "You can also use your keyboard shortcuts: y,n and k.",
+        "text2": "Отговори просто с <strong>Да/Не</strong>! Не знаеш отговора? Всичко е наред, просто го пропусни.",
+        "text3": "Можеш също да използваш клавишните комбинации: y,n и k.",
         "text4": "Можете да <strong>филтрирате</strong> продуктите въз основа на държава, марки, популярност и много повече!",
         "text5": "Ако не искате да правите това всеки път, можете също да <strong>запазите филтрите</strong> като щракнете върху звездата. Следващият път, когато се върнете, намерете запазените филтри на самата начална страница"
       },

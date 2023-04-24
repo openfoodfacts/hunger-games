@@ -5,49 +5,49 @@
       "cards": {
         "questions": {
           "title": "質問",
-          "description": "与えられた画像が質問に答えるかどうか教えてください"
+          "description": "与えられた画像が質問に対する答えになっているかどうか教えてください"
         },
         "logos": {
           "title": "Logos",
-          "description": "与えられたロゴに一致するすべてのロゴを検索"
+          "description": "与えられたロゴに一致するすべてのロゴを見つけてください"
         },
         "eco_score": {
-          "title": "エコスコア",
-          "description": "質問に最高値で注釈を付けます"
+          "title": "Eco-score",
+          "description": "最も価値のある質問に注釈をつけてください"
         }
       }
     },
     "account_band": {
-      "title": "あなたの貢献を価値あるものにしたいですか？アカウントを作成するか、Open Food Facts にサインインしてください!",
+      "title": "あなたの貢献を価値あるものにしたいですか？Open Food Factsのアカウントを作成するか、サインインしてください！",
       "log_in": "ユーザー名",
       "sign_up": "サインアップ",
       "contribution_details": "あなたの貢献が重要な理由を学ぶ"
     },
-    "saved_filters": "フィルターを保存",
+    "saved_filters": "保存したフィルタ",
     "contribution_modal": {
       "title": "あなたの貢献は重要です",
-      "information": "Hunger Games is an effort to leverage the results of our OCR and artificial intelligence. When you use Hunger Games by Open Food Facts, you improve our entire database which helps the community make better food choices. We gather your annotations and use them to make Open Food Facts more accurate and effecient.",
-      "thank_you": "Open Food Facts をより多くの人が簡単に利用できるように改善するためにご協力いただきありがとうございます。"
+      "information": "ハンガーゲームはOCRとAIの処理結果を活用するための取り組みです。Open Food Factsのハンガーゲームを使うことで、データベース全体を改善し、コミュニティがより良い食品の選択をすることができるようになります。私たちはあなたの注釈を収集し、Open Food Factsをより正確で、効率的にするために使用します。",
+      "thank_you": "Open Food Factsを改善し、より多くの人が簡単に利用できるようにするためにご協力いただきありがとうございます。"
     },
     "statistics": {
       "title": "{{userName}} 統計:",
       "editorCount": {
         "title": "編集者",
-        "description": "Number of editions done"
+        "description": "行った編集の数"
       },
       "contributorCount": {
         "title": "貢献者",
-        "description": "新しい製品を追加"
+        "description": "新しい製品の追加"
       },
       "photographerCount": {
-        "title": "フォトグラファ",
-        "description": "商品の写真撮影"
+        "title": "撮影者",
+        "description": "製品の画像を撮影"
       }
     }
   },
   "flagged_images": {
     "title": "ユーザーによってフラグが付けられた画像",
-    "loading": "読み込んでいます…"
+    "loading": "読み込み中"
   },
   "questions": {
     "category": "カテゴリー",
@@ -56,16 +56,17 @@
     "labels": "ラベル",
     "brand": "ブランド",
     "brands": "ブランド",
+    "packaging": "包装",
     "quantity": "数量",
-    "insightTypeLabel": "Only shows",
+    "insightTypeLabel": "表示対象",
     "ingredients": "原材料",
     "product_weight": "製品の重量",
     "popularity_sort": "人気順",
-    "see_examples": "このサンプルを見る ",
+    "see_examples": "例を見る： ",
     "no": "いいえ",
     "skip": "Skip",
     "yes": "はい",
-    "no_questions_remaining": "質問はありません",
+    "no_questions_remaining": "これ以上質問はありません",
     "countries": "国",
     "view": "表示",
     "edit": "編集",
@@ -76,15 +77,15 @@
     "remaining_annotations": "残りの質問",
     "annotated_annotations": "注釈付き",
     "filters": {
-      "active_filter_number": "+{{count}} filters",
-      "active_filter_number_one": "+{{count}} filter",
-      "active_filter_number_zero": "no filter",
+      "active_filter_number": "+{{count}} 個のフィルタ",
+      "active_filter_number_one": "+{{count}} 個のフィルタ",
+      "active_filter_number_zero": "フィルタなし",
       "short_label": {
         "value": "値",
         "country": "国",
         "brand": "ブランド",
         "popularity": "人気",
-        "campaign": "駐屯"
+        "campaign": "運動"
       },
       "long_label": {
         "type": "質問タイプ",
@@ -97,25 +98,25 @@
       },
       "placeholders": {
         "value": "値(ファンタ, ja: オーガニック,…)",
-        "brand": "auchan, danone, herta, ...",
-        "campaign": "アノテーション キャンペーン"
+        "brand": "auchan、danone、herta、...",
+        "campaign": "アノテーションキャンペーン"
       },
       "actions": {
-        "edit": "フィルターを編集",
+        "edit": "フィルタを編集",
         "cancel": "取消",
         "apply": "適用"
       }
     },
     "other_questions": "その他の質問",
     "send": "送信",
-    "flag": "何か問題でも？画像を報告/フラグ付けしてください！",
+    "flag": "問題がありましたか？画像を報告/フラグ付けしてください！",
     "unflag": "画像のフラグを外す",
-    "reset_filters": "フィルターをリセット",
+    "reset_filters": "フィルタをリセット",
     "log_in": "ユーザー名",
     "sign_up": "サインアップ",
-    "login_title": "注釈をカウントする",
-    "login_description": "You are not currently logged into Open Food Facts. To get your answers directly applied to products, and associated to your account, consider logging in to your Open Food Facts account, or creating one",
-    "please_wait_while_we_fetch_the_question": "質問を取得するまでお待ちください。"
+    "login_title": "あなたの注釈を価値のあるものにする",
+    "login_description": "現在、Open Food Factsにログインしていません。回答が直接製品に適用され、アカウントに紐づくようにするには、Open Food Factsのアカウントにログインするか、アカウントを作成することを検討してください。",
+    "please_wait_while_we_fetch_the_question": "質問を取得していますのでお待ちください！"
   },
   "menu": {
     "title": "ハンガーゲーム",
@@ -125,32 +126,32 @@
     "logos-annotation": "ロゴの注釈",
     "logos-search": "ロゴを検索",
     "logos-product-search": "製品ごとの注釈付け",
-    "logos-deep-search": "Infinite annotation",
-    "manage": "管理する",
+    "logos-deep-search": "無限注釈付け",
+    "manage": "管理",
     "insights": "情報",
     "nutritions": "栄養成分表",
     "settings": "設定",
-    "eco-score": "エコスコア",
+    "eco-score": "Eco-score",
     "dashboard": "ロゴダッシュボード",
-    "tour": "Show tour",
-    "logged_in_user": "Logged as {{userName}}",
-    "log_in": "Click to login"
+    "tour": "ツアーを表示",
+    "logged_in_user": "{{userName}} としてログイン済み",
+    "log_in": "クリックしてログイン"
   },
   "insights": {
     "insights": "情報",
     "barcode": "バーコード",
     "barcode_placeholder": "バーコード",
-    "value_tag": "タグ名",
-    "value_placeholder": "例: ja: ミューズリー, ビオルグ,…",
-    "type": "Type",
+    "value_tag": "タグ値",
+    "value_placeholder": "例：ja:ミューズリー、 ビオルグ、…",
+    "type": "種別",
     "annotated": "注釈付き",
-    "annotation": "注記",
+    "annotation": "注釈",
     "not_annotated": "注釈なし",
     "all": "全て",
     "label": "ラベル",
     "product_weight": "製品の重量",
     "category": "カテゴリー",
-    "expiration_date": "有効期限",
+    "expiration_date": "賞味期限",
     "packager_code": "パッケージコード",
     "skipped": "スキップ (-1)",
     "rejected": "拒否 (0)",
@@ -159,23 +160,23 @@
     "count": "カウント",
     "id": "ID",
     "value": "値：",
-    "created_at": "作成日",
-    "completed_at": "終了日",
+    "created_at": "作成日時",
+    "completed_at": "完了日時",
     "automatic": "自動",
     "human_required": "人間が必要",
-    "edit_product": "商品編集を開く",
-    "view_product": "商品編集を開く"
+    "edit_product": "製品編集を開く",
+    "view_product": "製品ページを開く"
   },
   "logos": {
     "annotation": "注釈: ",
     "annotations": "ロゴの注釈",
-    "task_description": "まったく同じロゴをすべて選択し、「en:EU Organic」などの名前と「label」などのタイプを付けます。",
+    "task_description": "すべての完全に同一なロゴを選択したうえで、「en:EU Organic」のような名前を付け、「ラベル」のような種類を選択してください。",
     "select_all": "すべて選択",
     "unselect_all": "すべての選択を解除",
     "distance": "距離：",
     "value": "値：",
-    "submit": "投稿",
-    "type": "Type",
+    "submit": "送信",
+    "type": "種別",
     "label": "ラベル",
     "brand": "ブランド（会社名）",
     "packager_code": "パッケージコード",
@@ -183,56 +184,56 @@
     "qr_code": "QRコード",
     "category": "カテゴリー",
     "nutrition_label": "栄養成分表",
-    "no_logo": "ロゴではありません.",
+    "no_logo": "ロゴではありません",
     "store": "店舗",
     "detail": "ロゴの詳細",
-    "id": "ロゴ ID:",
-    "barcode": "バーコード:",
+    "id": "ロゴID：",
+    "barcode": "バーコード :",
     "full_image": "元画像",
     "update": "更新",
     "no_found": "ロゴが見つかりません",
     "search": "検索",
-    "number_of_results": "結果の数: ",
+    "number_of_results": "結果の数：",
     "loading": "読み込んでいます…",
-    "refresh": "リフレッシュ",
+    "refresh": "再読み込み",
     "search_specific": "特定のロゴを検索",
     "load_more": "もっと読み込む",
     "no_results": "ロゴが見つかりません",
-    "result_count": "{{showing}} で {{available}} を表示",
-    "flag": "何か問題でも？画像を報告/フラグ付けしてください！",
+    "result_count": "利用可能な {{available}} 件中 {{showing}} 件を表示",
+    "flag": "問題がありましたか？画像を報告/フラグ付けしてください！",
     "unflag": "画像のフラグを外す",
     "crop_image_title": "ロゴのトリミング",
-    "no_more_questions": "No more questions about this logo. You can try to find more logos with the following game.",
+    "no_more_questions": "このロゴに関する質問はこれ以上ありません。次のゲームでさらに多くのロゴを見つけましょう。",
     "loading_messages": {
-      "pending_reference_logos": "We are loading some logos examples to initialise the serach",
-      "failed_reference_logos": "We did not find any logos with this annotation. Try to use the following game to annotate some of them."
+      "pending_reference_logos": "検索を初期化するためにロゴの例をいくつか読み込んでいます",
+      "failed_reference_logos": "この注釈が付いたロゴは見つかりませんでした。次のゲームでこれらの一部に注釈をつけてみましょう。"
     }
   },
   "settings": {
     "settings": "設定",
     "language": "言語",
     "save": "保存",
-    "reportIssue": "Found a bug? Please let us know.",
-    "dev_mode_title": "より多くのオプションを取得するには、開発モードを有効にしてください",
-    "dev_mode_label": "開発モード",
+    "reportIssue": "バグを見つけましたか？お知らせください。",
+    "dev_mode_title": "より多くのオプションを表示するには、開発者モードを有効にしてください",
+    "dev_mode_label": "開発者モード",
     "dev_page_toggle": "{{name}} ページを表示",
     "join_community": "コミュニティに参加",
-    "text1": "Open Food Facts is a collaborative project built by tens of thousands of volunteers and managed by a non-profit organization with 8 employees. We need your donations to fund the Open Food Facts 2023 budget and to continue to develop the project.",
-    "thank_you": "Thank you",
+    "text1": "Open Food Factsは何万人ものボランティアによって作り上げられ、8人の社員を擁する非営利団体によって管理される協同プロジェクトです。Open Food Facts 2023の資金を供給し、このプロジェクトの開発を継続するには、皆さまからの寄付が必要です。",
+    "thank_you": "ありがとうございます",
     "donate": "寄付",
     "join_the_community": {
-      "discover_our": "Discover our ",
-      "code_of_conduct": "Code of conduct ",
-      "join_us_on": "Join us on ",
-      "forum": "Forum",
-      "subscribe_to_our": "Subscribe to our ",
-      "newsletter": "newsletter"
+      "discover_our": "ご確認ください： ",
+      "code_of_conduct": "行動規範 ",
+      "join_us_on": "ご参加ください： ",
+      "forum": "フォーラム",
+      "subscribe_to_our": "購読してください： ",
+      "newsletter": "ニュースレター"
     },
     "discover_the_project": "プロジェクトを見つける",
     "Who_we_are": "私たちについて",
-    "Vision_Mission_Values_and_Programs": "Vision, Mission, Values and Programs",
-    "FAQS": "FAQS",
-    "open_Food_Facts_blog": "Open Food Facts blog",
+    "Vision_Mission_Values_and_Programs": "ビジョン、ミッション、バリュー、プログラム",
+    "FAQS": "よくある質問",
+    "open_Food_Facts_blog": "Open Food Factsブログ",
     "Press": "プレス",
     "Open_Food_Facts_wiki": "Open Food Facts wiki (en)",
     "Translators": "翻訳者",
@@ -244,39 +245,39 @@
     "welcome": {
       "page1": {
         "title": "ハンガーゲームへようこそ",
-        "text1": "Hunger Games は、さまざまな方法で Open Food Facts に貢献するのに役立つミニゲームのコレクションです。どこからでもプレイできる、本当にエキサイティングなゲームです。これは、ウェブサイト全体のガイド付きツアーです。",
-        "text2": "これらはあなたができるエキサイティングなことの一部です。あなたの貢献のクレジットを取得するには、OpenFoodFactsのWebサイトに接続していることを確認してください。間違えた場合は、ウェブサイトにアクセスして修正してください。",
-        "text3": "ゲームについて疑問がある場合は、ページの右上にヘルパーがあります。Slackの＃hunger-gamesチャンネルで私たちに連絡できます。"
+        "text1": "ハンガーゲームは、様々な方法でOpen Food Factsに貢献できるミニゲームのコレクションです。どこでもプレイできる、本当に楽しいゲームを遊べます。これはウェブサイト全体のガイド付きツアーです。",
+        "text2": "あなたの貢献に対する信用を得るために、Open Food Factsのウェブサイトにログインしてください。もし間違えてしまった場合、ウェブサイトにアクセスして修正するようにしてください。",
+        "text3": "ゲームについて疑問がある場合、ページの右上のクエスチョンマークをクリックしてください。また、Slackの #hunger-games チャンネルで私たちに連絡することもできます。"
       },
       "page2": {
         "title": "質問ゲーム",
-        "text1": "食品はこのブランドのものですか？",
-        "text2": "Simply answer with a <strong>Yes/No</strong>! Don't know the answer? That's alright, just skip it.",
-        "text3": "You can also use your keyboard shortcuts: y,n and k.",
-        "text4": "国、ブランド、人気度などに基づいて製品を <strong>フィルター</strong> できます。",
-        "text5": "毎回これを行いたくない場合は、</strong> をクリックしてフィルターを保存することもでき <strong>。次回戻ってきたときは、ホームページ自体で保存済みのフィルターを見つけてください"
+        "text1": "この食品はこのブランドのものですか？",
+        "text2": "<strong>はい/いいえ</strong>で回答するだけです！答えが分かりませんか？大丈夫、スキップしてください。",
+        "text3": "これらのショートカットキーを使用することもできます：y、n、k。",
+        "text4": "国、ブランド、人気度などに基づいて製品を <strong>フィルタ</strong> できます！",
+        "text5": "毎回この操作をしたくない場合、星をクリックして<strong>フィルタを保存</strong>できます。次回戻ってきたときには、ホームページに保存したフィルタが表示されます。"
       },
       "page3": {
-        "title": "ロゴスゲーム",
-        "text1": "Another popular game is the logos game where you have to <strong>select all the logos</strong> you feel are the same.",
-        "text2": "例に示すように、類似したロゴをすべて選択したら、それらの値を入力して、ブランド、ラベル、またはその他のものを選択します。それはとても簡単です！"
+        "title": "ロゴゲーム",
+        "text1": "もう一つの人気のゲームは、同じだと思う<strong>すべてのロゴを選択</strong>するロゴゲームです。",
+        "text2": "例に示すように、類似したロゴをすべて選択したら、それらの値を入力して、それがブランドなのか、ラベルなのか、またはその他のものなのかを選択してください。簡単でしょう！"
       },
       "page4": {
-        "title": "エコスコア質問ゲーム",
-        "text1": "最も優先度の高いラベルの残りの質問を完了するのを手伝ってください!",
-        "text2": "These cards are linked to labels used in the computation of the Eco-Score.",
-        "text3": "<strong>エコスコアとは？</strong>",
-        "text4": "Eco-Score は、環境フットプリントの合計を把握し、消費者が製品を比較して、どちらが環境に適しているかを判断しやすくします。"
+        "title": "Eco-Score質問ゲーム",
+        "text1": "最も優先度の高いラベルに関する、残っている質問を完成させるのを手伝ってください！",
+        "text2": "これらのカードはEco-Scoreの計算に使用されるラベルに紐づいています。",
+        "text3": "<strong>Eco-Scoreとは？</strong>",
+        "text4": "Eco-Scoreは環境フットプリントの合計を把握し、消費者が製品を比較してどちらが環境に良いかを判断しやすくするものです。"
       },
       "page5": {
         "title": "設定",
         "text1": "お好みの言語を設定し、設定ページから問題を報告してください。",
-        "text2": "開発者の方は、開発モードを使用してデータベース コンテンツを探索することもできます。"
+        "text2": "あなたが開発者であれば、開発者モードを使ってデータベースの内容を探索することもできます。"
       },
       "page6": {
         "title": "ツアー",
-        "text1": "どこかで立ち往生しましたか？もう一度ツアーに参加しますか？",
-        "text2": "クエスチョン マークをクリックするだけで、旅を再開できます。"
+        "text1": "どこかで行き詰りましたか？もう一度ツアーに参加したいですか？",
+        "text2": "クエスチョンマークをクリックするだけで、旅を再開できます！"
       }
     },
     "logos": {
@@ -288,7 +289,7 @@
       "page2": {
         "title": "警告",
         "text1": "切り抜きに複数のロゴが含まれている場合は、選択しないでください。",
-        "text2": "If the crop contains only a partial part of a logo, you can select it."
+        "text2": "切り抜きにロゴの一部しか含まれていない場合でも、選択してください。"
       },
       "page3": {
         "title": "検証",
@@ -317,9 +318,9 @@
     },
     "loading": "読み込み中…",
     "unknown_brand": "ブランド不明",
-    "value_missing": "You forgot to input a value.",
-    "next": "Next step",
-    "prev": "Prev step",
+    "value_missing": "値の入力を忘れています。",
+    "next": "次のステップ",
+    "prev": "前のステップ",
     "skip": "この製品をスキップする",
     "validate": "表を検証する",
     "unselect_picture": "栄養情報なし",
@@ -354,24 +355,24 @@
   },
   "notfound": {
     "image_alt": "404 Not Found",
-    "nopage": "あなたが探しているページは見つかりませんでした。",
+    "nopage": "おっと！お探しのページが見つかりませんでした。",
     "redirect1": "ゲームをプレイしたいですか？",
     "redirect2": "ここをクリックして下さい"
   },
   "nutriscore": {
-    "image_alt": "トリミングされた画像",
-    "label": "バッチごとにニュートリスコアのロゴ検出に注釈を付けます。",
-    "description": "これを行うには、正しい/間違った Nutri-Score 値 ({{label}}) を示すすべての画像を選択し、下のボタンをクリックして、選択したセットが正しいか間違っているかを示します。",
-    "images_remaining": "注釈を付けるにはまだ {{remaining}} です",
-    "image_sizes": "イメージのサイズ",
-    "zoom_on_logo": "読み込み時にズーム",
+    "image_alt": "切り抜かれた画像",
+    "label": "一括でNutri-Scoreロゴの検出結果に注釈を付けます。",
+    "description": "そのためには、正しい/間違ったNutri-Scoreの値（{{label}}）の画像をすべて選択し、下のボタンをクリックして選択したものが正しいのか、間違っているのかを指定します。",
+    "images_remaining": "{{remaining}} の注釈が残っています。",
+    "image_sizes": "画像サイズ",
+    "zoom_on_logo": "ロゴにズーム",
     "select_all": "すべて選択",
     "deselect_all": "すべての選択を解除",
-    "incorrect": "間違いです",
+    "incorrect": "間違い",
     "correct": "正しい ({{label}})"
   },
   "eco-score": {
-    "description": "ここでは、エコスコアの計算を改善する可能性のある質問の概要を示します",
+    "description": "こちらがEco-Scoreの計算を向上させられる可能性のある質問の概要です。",
     "countryLabel": "国"
   }
 }

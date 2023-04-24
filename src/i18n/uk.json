@@ -26,7 +26,7 @@
     "saved_filters": "Збережені фільтри",
     "contribution_modal": {
       "title": "Ваш внесок має значення",
-      "information": "Hunger Games is an effort to leverage the results of our OCR and artificial intelligence. When you use Hunger Games by Open Food Facts, you improve our entire database which helps the community make better food choices. We gather your annotations and use them to make Open Food Facts more accurate and effecient.",
+      "information": "Голодні ігри - це спроба використати результати нашого розпізнавання тексту та штучного інтелекту. Коли ви використовуєте \"Голодні ігри\" від Open Food Facts, ви покращуєте всю нашу базу даних, яка допомагає спільноті робити кращий вибір продуктів харчування. Ми збираємо ваші анотації і використовуємо їх, щоб зробити Open Food Facts більш точними та ефективними.",
       "thank_you": "Дякуємо, що допомагаєте нам покращувати Open Food Facts, щоб більше людей могли легко ним користуватися."
     },
     "statistics": {
@@ -56,6 +56,7 @@
     "labels": "Етикетки",
     "brand": "виробник",
     "brands": "Виробники",
+    "packaging": "упакування",
     "quantity": "Кількість",
     "insightTypeLabel": "Показувати лише",
     "ingredients": "Інгредієнти",
@@ -114,7 +115,7 @@
     "log_in": "Ім'я користувача",
     "sign_up": "Зареєструватися",
     "login_title": "Зробіть свою анотацію важливою",
-    "login_description": "You are not currently logged into Open Food Facts. To get your answers directly applied to products, and associated to your account, consider logging in to your Open Food Facts account, or creating one",
+    "login_description": "Зараз ви не ввійшли в Open Food Facts. Щоб ваші відповіді були безпосередньо застосовані до продуктів і пов’язані з вашим обліковим записом, увійдіть у свій обліковий запис Open Food Facts або створіть його",
     "please_wait_while_we_fetch_the_question": "Please wait while we fetch the question!"
   },
   "menu": {
@@ -133,8 +134,8 @@
     "eco-score": "Показник впливу на довкілля",
     "dashboard": "Приладова панель з логотипами",
     "tour": "Show tour",
-    "logged_in_user": "Logged as {{userName}}",
-    "log_in": "Click to login"
+    "logged_in_user": "Ви увійшли як {{userName}}",
+    "log_in": "Натисніть, щоб увійти"
   },
   "insights": {
     "insights": "Статистика",
@@ -198,41 +199,41 @@
     "search_specific": "Пошук певного логотипа",
     "load_more": "Завантажити більше",
     "no_results": "Логотип не знайдено",
-    "result_count": "Shows {{showing}} on {{available}} available",
+    "result_count": "Показує {{showing}} за {{available}} наявністю",
     "flag": "Щось не так? Повідомте/позначте зображення!",
     "unflag": "Зняти прапорець із зображення",
     "crop_image_title": "кадрування логотипу",
-    "no_more_questions": "No more questions about this logo. You can try to find more logos with the following game.",
+    "no_more_questions": "Більше жодних питань щодо цього логотипу. Ви можете спробувати знайти більше логотипів за допомогою наступної гри.",
     "loading_messages": {
-      "pending_reference_logos": "We are loading some logos examples to initialise the serach",
-      "failed_reference_logos": "We did not find any logos with this annotation. Try to use the following game to annotate some of them."
+      "pending_reference_logos": "Завантаження прикладів логотипів для ініціалізації пошуку",
+      "failed_reference_logos": "Ми не знайшли жодного логотипу з такою приміткою. Спробуйте скористатися наступною грою, щоб примітити деякі з них."
     }
   },
   "settings": {
     "settings": "Налаштування",
     "language": "Мови",
     "save": "Зберегти",
-    "reportIssue": "Found a bug? Please let us know.",
+    "reportIssue": "Знайшли помилку? Будь ласка, дайте нам знати.",
     "dev_mode_title": "Щоб отримати більше можливостей, активуйте режим розробника",
     "dev_mode_label": "Режим розробника",
     "dev_page_toggle": "Показати {{name}} сторінку",
     "join_community": "Приєднатися до спільноти",
-    "text1": "Open Food Facts is a collaborative project built by tens of thousands of volunteers and managed by a non-profit organization with 8 employees. We need your donations to fund the Open Food Facts 2023 budget and to continue to develop the project.",
-    "thank_you": "Thank you",
+    "text1": "Open Food Facts – це спільний проєкт, створений десятками тисяч добровольців і керований некомерційною організацією з 8 співробітниками. Нам потрібні ваші пожертви для фінансування бюджету Open Food Facts 2023 і для продовження розвитку проєкту.",
+    "thank_you": "Дякуємо",
     "donate": "Підтримати проект",
     "join_the_community": {
-      "discover_our": "Discover our ",
-      "code_of_conduct": "Code of conduct ",
-      "join_us_on": "Join us on ",
-      "forum": "Forum",
-      "subscribe_to_our": "Subscribe to our ",
-      "newsletter": "newsletter"
+      "discover_our": "Відкрийте для себе наш ",
+      "code_of_conduct": "Норми поведінки ",
+      "join_us_on": "Приєднуйтесь до нас на ",
+      "forum": "Форум",
+      "subscribe_to_our": "Підпишіться на наш ",
+      "newsletter": "розсилка новин"
     },
     "discover_the_project": "Відкрийте для себе проєкт",
     "Who_we_are": "Ким ми є",
     "Vision_Mission_Values_and_Programs": "Бачення, Місія, Цінності та Програми",
-    "FAQS": "FAQS",
-    "open_Food_Facts_blog": "Open Food Facts blog",
+    "FAQS": "FAQ",
+    "open_Food_Facts_blog": "Блог Open Facts Food",
     "Press": "Натисніть",
     "Open_Food_Facts_wiki": "Open Food Facts wiki (en)",
     "Translators": "Перекладачі",
@@ -251,14 +252,14 @@
       "page2": {
         "title": "Гра «Запитання»",
         "text1": "Ці товари належать до цього бренду?",
-        "text2": "Simply answer with a <strong>Yes/No</strong>! Don't know the answer? That's alright, just skip it.",
-        "text3": "You can also use your keyboard shortcuts: y,n and k.",
+        "text2": "Просто дайте відповідь <strong>Так/Ні</strong>! Не знаєте відповіді? Це нормально, просто пропустіть це.",
+        "text3": "Ви також можете використовувати свої комбінації клавіш: ctr + y, n і k.",
         "text4": "Ви можете <strong>сортувати</strong> товари за країною, брендом, популярністю тощо!",
         "text5": "Якщо не хочете налаштовувати це кожного разу, <strong>збережіть налаштування</strong> натиснувши зірочку. Наступного разу просто оберіть \"збережені фільтри\" на домашній сторінці"
       },
       "page3": {
         "title": "Гра в логотипи",
-        "text1": "Another popular game is the logos game where you have to <strong>select all the logos</strong> you feel are the same.",
+        "text1": "Ще одна популярна гра - гра в логотипи, де вам потрібно <strong>вибрати всі логотипи</strong>, які, на вашу думку, однакові.",
         "text2": "Як і показано в прикладах, обравши потрібні лого, просто визначте їх цінність та оберіть бренд, лейбл абощо. Це просто!"
       },
       "page4": {
@@ -318,8 +319,8 @@
     "loading": "Завантаження...",
     "unknown_brand": "Невідома марка",
     "value_missing": "You forgot to input a value.",
-    "next": "Next step",
-    "prev": "Prev step",
+    "next": "Наступний крок",
+    "prev": "Попередній крок",
     "skip": "Пропустіть цей продукт",
     "validate": "Перевірте таблицю",
     "unselect_picture": "Інформація про харчування відсутня",
