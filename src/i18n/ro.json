@@ -26,14 +26,14 @@
     "saved_filters": "Filtre salvate",
     "contribution_modal": {
       "title": "Contribuția ta contează",
-      "information": "Hunger Games is an effort to leverage the results of our OCR and artificial intelligence. When you use Hunger Games by Open Food Facts, you improve our entire database which helps the community make better food choices. We gather your annotations and use them to make Open Food Facts more accurate and effecient.",
+      "information": "Jocurile Foamei este un efort de a valorifica rezultatele OCR și ale inteligenței noastre artificiale. Când utilizați Jocurile Foamei de la Open Food Facts, îmbunătățiți întreaga noastră bază de date, ceea ce ajută comunitatea să facă alegeri alimentare mai bune. Colectăm adnotările dvs. și le folosim pentru a face Open Food Facts mai exacte și mai eficiente.",
       "thank_you": "Vă mulțumim că ne ajutați să îmbunătățim Open Food Facts, astfel încât mai mulți oameni să îl poată folosi cu ușurință."
     },
     "statistics": {
       "title": "{{userName}} statistici:",
       "editorCount": {
         "title": "Editor",
-        "description": "Number of editions done"
+        "description": "Număr de ediții finalizate"
       },
       "contributorCount": {
         "title": "Colaborator",
@@ -56,6 +56,7 @@
     "labels": "Etichete",
     "brand": "marca",
     "brands": "Mărci",
+    "packaging": "ambalaj",
     "quantity": "Cantitate",
     "insightTypeLabel": "Doar cele arătate",
     "ingredients": "Ingrediente",
@@ -114,7 +115,7 @@
     "log_in": "Nume de utilizator",
     "sign_up": "Înregistrare",
     "login_title": "Faceți ca adnotarea dvs. să conteze",
-    "login_description": "You are not currently logged into Open Food Facts. To get your answers directly applied to products, and associated to your account, consider logging in to your Open Food Facts account, or creating one",
+    "login_description": "În prezent, nu sunteți conectat la Open Food Facts. Pentru a obține răspunsurile dvs. aplicate direct produselor și asociate contului dvs., vă recomandăm să vă conectați la contul dvs. Open Food Facts sau să creați unul",
     "please_wait_while_we_fetch_the_question": "Vă rugăm să așteptați până când preluăm întrebarea!"
   },
   "menu": {
@@ -125,16 +126,16 @@
     "logos-annotation": "Adnotare logo",
     "logos-search": "Căutare Logo-uri",
     "logos-product-search": "Adnotare pe produse",
-    "logos-deep-search": "Infinite annotation",
+    "logos-deep-search": "Adnotare infinită",
     "manage": "Administrează",
     "insights": "Perspective",
     "nutritions": "Valori nutriționale",
     "settings": "Configurări",
     "eco-score": "Eco-scor",
     "dashboard": "Tabloul de bord cu sigle",
-    "tour": "Show tour",
-    "logged_in_user": "Logged as {{userName}}",
-    "log_in": "Click to login"
+    "tour": "Arată tur",
+    "logged_in_user": "Înregistrat ca {{userName}}",
+    "log_in": "Faceți clic pentru a vă autentifica"
   },
   "insights": {
     "insights": "Perspective",
@@ -202,37 +203,37 @@
     "flag": "Ceva greșit? Raportează/marchează imaginea!",
     "unflag": "Anulați semnalizarea imaginii",
     "crop_image_title": "decuparea siglei",
-    "no_more_questions": "No more questions about this logo. You can try to find more logos with the following game.",
+    "no_more_questions": "Nu mai sunt întrebări despre acest logo. Puteți încerca să găsiți mai multe logo-uri în următorul joc.",
     "loading_messages": {
-      "pending_reference_logos": "We are loading some logos examples to initialise the serach",
-      "failed_reference_logos": "We did not find any logos with this annotation. Try to use the following game to annotate some of them."
+      "pending_reference_logos": "Încărcăm câteva exemple de logo-uri pentru a inițializa serach-ul",
+      "failed_reference_logos": "Nu am găsit niciun logo cu această adnotare. Încercați să utilizați următorul joc pentru a adnota unele dintre ele."
     }
   },
   "settings": {
     "settings": "Configurări",
     "language": "Limbi",
     "save": "Salvează",
-    "reportIssue": "Found a bug? Please let us know.",
+    "reportIssue": "Ați găsit o eroare? Vă rugăm să ne anunțați.",
     "dev_mode_title": "Pentru a obține mai multe opțiuni, activați modul dev",
     "dev_mode_label": "Mod dezvoltator",
     "dev_page_toggle": "Arată pagina {{name}}",
     "join_community": "Alăturați-vă comunității",
-    "text1": "Open Food Facts is a collaborative project built by tens of thousands of volunteers and managed by a non-profit organization with 8 employees. We need your donations to fund the Open Food Facts 2023 budget and to continue to develop the project.",
-    "thank_you": "Thank you",
+    "text1": "Open Food Facts este un proiect de colaborare construit de zeci de mii de voluntari și gestionat de o organizație non-profit cu 8 angajați. Avem nevoie de donațiile dumneavoastră pentru a finanța bugetul Open Food Facts 2023 și pentru a continua dezvoltarea proiectului.",
+    "thank_you": "Vă mulţumim",
     "donate": "Donează",
     "join_the_community": {
-      "discover_our": "Discover our ",
-      "code_of_conduct": "Code of conduct ",
-      "join_us_on": "Join us on ",
+      "discover_our": "Descoperă-ne ",
+      "code_of_conduct": "Codul de conduită ",
+      "join_us_on": "Alătură-te nouă pe ",
       "forum": "Forum",
-      "subscribe_to_our": "Subscribe to our ",
-      "newsletter": "newsletter"
+      "subscribe_to_our": "Abonează-te la ",
+      "newsletter": "buletin informativ"
     },
     "discover_the_project": "Descoperiți proiectul",
     "Who_we_are": "Cine suntem noi",
     "Vision_Mission_Values_and_Programs": "Viziune, Misiune, Valori și Programe",
-    "FAQS": "FAQS",
-    "open_Food_Facts_blog": "Open Food Facts blog",
+    "FAQS": "Întrebări frecvente",
+    "open_Food_Facts_blog": "Deschideți blogul Food Facts",
     "Press": "Presa",
     "Open_Food_Facts_wiki": "Open Food Facts wiki (en)",
     "Translators": "Traducători",
@@ -251,20 +252,20 @@
       "page2": {
         "title": "Joc Întrebări",
         "text1": "Produsul alimentar aparține acestei mărci?",
-        "text2": "Simply answer with a <strong>Yes/No</strong>! Don't know the answer? That's alright, just skip it.",
-        "text3": "You can also use your keyboard shortcuts: y,n and k.",
+        "text2": "Pur și simplu răspunde cu un <strong>Da/Nu</strong>! Nu stii raspunsul? E în regulă, sari peste el.",
+        "text3": "De asemenea, puteți utiliza comenzile rapide de la tastatură: y,n și k.",
         "text4": "Puteți <strong>filtra</strong> produsele în funcție de țară, mărci, popularitate și multe altele!",
         "text5": "Dacă nu doriți să faceți acest lucru de fiecare dată, puteți, de asemenea, să <strong>salvați filtrele</strong> făcând clic pe stea. Data viitoare când reveniți, găsiți filtrele salvate chiar pe pagina de pornire"
       },
       "page3": {
         "title": "Joc Logos",
-        "text1": "Another popular game is the logos game where you have to <strong>select all the logos</strong> you feel are the same.",
+        "text1": "Un alt joc popular este jocul de logouri în care trebuie să <strong>selectați toate siglele</strong> care le simțiți la fel.",
         "text2": "După cum se arată în exemplu, odată ce ați selectat toate logo-urile similare, introduceți valoarea acestora și selectați unde este o marcă, o etichetă sau altceva. Este atat de simplu!"
       },
       "page4": {
         "title": "Joc Întrebări Eco-Scor",
         "text1": "Ajutați-ne să terminăm întrebările rămase în etichetele cu cea mai mare prioritate!",
-        "text2": "These cards are linked to labels used in the computation of the Eco-Score.",
+        "text2": "Aceste carduri sunt legate de etichetele utilizate în calculul Eco-Score.",
         "text3": "<strong>Ce este Eco-Score?</strong>",
         "text4": "EcoScorul surprinde totalitatea amprentei de mediu, facilitând compararea produselor şi luarea deciziilor care sunt mai bune pentru mediu."
       },
@@ -288,7 +289,7 @@
       "page2": {
         "title": "Atenţie",
         "text1": "Dacă decuparea conține mai multe sigle, nu o selectați.",
-        "text2": "If the crop contains only a partial part of a logo, you can select it."
+        "text2": "Dacă decuparea conține doar o parte parțială a unui logo, îl puteți selecta."
       },
       "page3": {
         "title": "Validați",
@@ -317,9 +318,9 @@
     },
     "loading": "Se încarcă...",
     "unknown_brand": "Marcă necunoscută",
-    "value_missing": "You forgot to input a value.",
-    "next": "Next step",
-    "prev": "Prev step",
+    "value_missing": "Ați uitat să introduceți o valoare.",
+    "next": "Următorul pas",
+    "prev": "Pasul anterior",
     "skip": "Sari peste acest produs",
     "validate": "Validați tabelul",
     "unselect_picture": "Fără informații nutriționale",

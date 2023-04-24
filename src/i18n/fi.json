@@ -13,7 +13,7 @@
         },
         "eco_score": {
           "title": "Ekopisteet",
-          "description": "Annotate the questions with the highest value"
+          "description": "Valitse korkea-arvoisimmat kysymykset"
         }
       }
     },
@@ -26,14 +26,14 @@
     "saved_filters": "Tallennetut suodattimet",
     "contribution_modal": {
       "title": "Tukesi vaikuttaa",
-      "information": "Hunger Games is an effort to leverage the results of our OCR and artificial intelligence. When you use Hunger Games by Open Food Facts, you improve our entire database which helps the community make better food choices. We gather your annotations and use them to make Open Food Facts more accurate and effecient.",
-      "thank_you": "Thank you for helping us improve Open Food Facts so that more people can use it easily."
+      "information": "Nälkäpelit pyrkivät parantamaan tekoälyä ja OCR:ää. Käyttäessäsi sitä parannat tietokantaamme, jolloin sovellus osaa tehdä parempia ruokasuosituksia. Panoksesi auttaa tekemään Open Food Factsista tarkemman ja tehokkaamman.",
+      "thank_you": "Kiitos Open Food Factsille antamastasi panoksesta."
     },
     "statistics": {
       "title": "{{userName}} tilastot:",
       "editorCount": {
         "title": "Toimittaja",
-        "description": "Number of editions done"
+        "description": "Muokkausten määrä"
       },
       "contributorCount": {
         "title": "Osallistuja",
@@ -56,6 +56,7 @@
     "labels": "Merkit",
     "brand": "tuotemerkki",
     "brands": "Tuotemerkit",
+    "packaging": "pakkaukset",
     "quantity": "Määrä",
     "insightTypeLabel": "Näytä vain",
     "ingredients": "Ainesosat",
@@ -77,7 +78,7 @@
     "annotated_annotations": "Merkitty",
     "filters": {
       "active_filter_number": "+{{count}} suodatinta",
-      "active_filter_number_one": "+{{count}} filter",
+      "active_filter_number_one": "+{{count}} suodatin",
       "active_filter_number_zero": "Ei suodattimia",
       "short_label": {
         "value": "arvo",
@@ -89,14 +90,14 @@
       "long_label": {
         "type": "Kysymystyyppi",
         "value": "Ehdotettu arvo",
-        "country": "Product Country",
+        "country": "Valmistusmaa",
         "brand": "Tuotemerkki",
         "popularity": "Lajittele suosion mukaan",
         "edit": "",
         "campaign": "Kampanja"
       },
       "placeholders": {
-        "value": "Value (fanta, en:organic,...)",
+        "value": "Arvo (fanta, en:organic,...)",
         "brand": "auchan, danone, herta, ...",
         "campaign": "Annotation campaigns"
       },
@@ -106,15 +107,15 @@
         "apply": "Hyväksy"
       }
     },
-    "other_questions": "Other questions",
+    "other_questions": "Muut kysymykset",
     "send": "Lähetä",
     "flag": "Onko jokin vialla? Ilmoita kuvasta!",
-    "unflag": "Unflag the image",
+    "unflag": "Poista kuvan valinta",
     "reset_filters": "Tyhjennä suodattimet",
     "log_in": "Käyttäjätunnus",
     "sign_up": "Rekisteröidy",
     "login_title": "Make your annotation count",
-    "login_description": "You are not currently logged into Open Food Facts. To get your answers directly applied to products, and associated to your account, consider logging in to your Open Food Facts account, or creating one",
+    "login_description": "Kirjaudu tai rekisteröidy, jos haluat, että vastauksesi liitetää tiliisi.",
     "please_wait_while_we_fetch_the_question": "Please wait while we fetch the question!"
   },
   "menu": {
@@ -133,8 +134,8 @@
     "eco-score": "Ekopisteet",
     "dashboard": "Logos dashboard",
     "tour": "Show tour",
-    "logged_in_user": "Logged as {{userName}}",
-    "log_in": "Click to login"
+    "logged_in_user": "Kirjautuneena käyttäjällä {{userName}}",
+    "log_in": "Paina kirjautuaksesi"
   },
   "insights": {
     "insights": "Oivallukset",
@@ -163,8 +164,8 @@
     "completed_at": "Valmistumisaika",
     "automatic": "Automaattinen",
     "human_required": "Ihmistä vaaditaan",
-    "edit_product": "Open product edit",
-    "view_product": "Open product page"
+    "edit_product": "Avaa tuotteen muokkaus",
+    "view_product": "Avaa tuotesivu"
   },
   "logos": {
     "annotation": "Merkintä: ",
@@ -183,7 +184,7 @@
     "qr_code": "QR-koodi",
     "category": "Tuoteluokka",
     "nutrition_label": "Ravintomerkki",
-    "no_logo": "Not a logo",
+    "no_logo": "Ei ole logo",
     "store": "Myymälä",
     "detail": "Logon yksityiskohdat",
     "id": "Logon tunniste:",
@@ -195,14 +196,14 @@
     "number_of_results": "Tulosten lukumäärä:",
     "loading": "Ladataan…",
     "refresh": "Päivitä",
-    "search_specific": "Search specific logo",
-    "load_more": "Load more",
+    "search_specific": "Hae tiettyä logoa",
+    "load_more": "Lataa enemmän",
     "no_results": "Logoa ei löytynyt",
-    "result_count": "Shows {{showing}} on {{available}} available",
+    "result_count": "Näytetään {{showing}}/{{available}}",
     "flag": "Onko jokin vialla? Ilmoita kuvasta!",
-    "unflag": "Unflag the image",
+    "unflag": "Poista kuvan valinta",
     "crop_image_title": "crop of the logo",
-    "no_more_questions": "No more questions about this logo. You can try to find more logos with the following game.",
+    "no_more_questions": "Ei muita kysymyksiä logosta. Voit yrittää etsiä lisää logoja pelillä.",
     "loading_messages": {
       "pending_reference_logos": "We are loading some logos examples to initialise the serach",
       "failed_reference_logos": "We did not find any logos with this annotation. Try to use the following game to annotate some of them."
@@ -212,29 +213,29 @@
     "settings": "Asetukset",
     "language": "Kielet",
     "save": "Tallenna",
-    "reportIssue": "Found a bug? Please let us know.",
+    "reportIssue": "Mikäli löysit virheen, kerro siitä meille.",
     "dev_mode_title": "To get more options, activate the dev mode",
-    "dev_mode_label": "Dev Mode",
-    "dev_page_toggle": "Show {{name}} page",
+    "dev_mode_label": "Kehittäjätila",
+    "dev_page_toggle": "Näytä sivu {{name}}",
     "join_community": "Liity yhteisöön",
-    "text1": "Open Food Facts is a collaborative project built by tens of thousands of volunteers and managed by a non-profit organization with 8 employees. We need your donations to fund the Open Food Facts 2023 budget and to continue to develop the project.",
-    "thank_you": "Thank you",
+    "text1": "Open Food Facts on yhteisöprojekti, jossa on mukana kymmeniä tuhansia vapaaehtoisia, ja jota hallitsee yleishyödyllinen kahdeksan työntekijän järjestö. Tarvitsemme lahjoituksia rahoittaaksemme Open Food Factsin vuodelle 2023 ja kehittääksemme projektia.",
+    "thank_you": "Kiitos",
     "donate": "Lahjoita",
     "join_the_community": {
       "discover_our": "Discover our ",
       "code_of_conduct": "Code of conduct ",
       "join_us_on": "Join us on ",
-      "forum": "Forum",
-      "subscribe_to_our": "Subscribe to our ",
-      "newsletter": "newsletter"
+      "forum": "Foorumi",
+      "subscribe_to_our": "Tilaa meidän ",
+      "newsletter": "uutiskirje"
     },
     "discover_the_project": "Tutustu hankkeeseen",
     "Who_we_are": "Keitä olemme",
     "Vision_Mission_Values_and_Programs": "Visio, missio, arvot ja ohjelmat",
-    "FAQS": "FAQS",
-    "open_Food_Facts_blog": "Open Food Facts blog",
+    "FAQS": "Usein kysytyt kysymykset",
+    "open_Food_Facts_blog": "Open Food Factsin blogi",
     "Press": "Lehdistö",
-    "Open_Food_Facts_wiki": "Open Food Facts wiki (en)",
+    "Open_Food_Facts_wiki": "Open Food Facts -wiki (en)",
     "Translators": "Kääntäjät",
     "Partners": "Kumppanit",
     "Open_Beauty_Facts": "Open Beauty Facts - Kosmetiikka",
@@ -243,28 +244,28 @@
   "helper": {
     "welcome": {
       "page1": {
-        "title": "Welcome to Hunger Games",
-        "text1": "Hunger Games is a collection of mini-games that help contribute to Open Food Facts in many ways. You can play are really exciting games from anywhere. Here is a guided tour of the entire website which will get you started.",
-        "text2": "Make sure to login to the Open Food Facts website to get credit for your contributions. If you make a mistake, please take the time to correct it by heading to the website.",
-        "text3": "In case of any doubt about the games, click on the question mark icon at the top right of the page, and you can reach us on slack at the #hunger-games channel"
+        "title": "Tervetuloa Nälkäpeliin",
+        "text1": "Nälkäpeli on kasa minipelejä, joilla voit auttaa sovellustamme monin tavoin. Voit pelata jännittäviä pelejä missä tahansa. Tässä opastettu kierros nettisivusta, jolla pääset alkuun.",
+        "text2": "Kirjaudu Open Food Factsin sivuille saadaksesi palkkioita osallistumisestasi. Jos teet virheen, korjaa se sivuillamme.",
+        "text3": "Jos et ymmärrä, paina kysymysmerkkiä sivun oikeassa ylänurkassa tai ota yhteyttä #hunger-games -kanavalla"
       },
       "page2": {
-        "title": "Questions Game",
-        "text1": "Does the food product belong to this brand?",
-        "text2": "Simply answer with a <strong>Yes/No</strong>! Don't know the answer? That's alright, just skip it.",
-        "text3": "You can also use your keyboard shortcuts: y,n and k.",
-        "text4": "You can <strong>filter</strong> the products based on country, brands, popularity and much more!",
-        "text5": "If you don't want to do this every single time, you can also <strong>save the filters</strong> by clicking on the star. Next time you come back, find the saved filters on the home page itself"
+        "title": "Kysymyspeli",
+        "text1": "Kuuluuko ruokatuote tähän brändiin?",
+        "text2": "Vastaa <strong>kyllä tai ei</strong>! Jos et tiedä vastausta, ohita.",
+        "text3": "Voit myös käyttää näppäimiä y, n ja k.",
+        "text4": "Voit <strong>suodattaa</strong> tuotteet esimerkiksi maan, tuotemerkin ja suosion perustella.",
+        "text5": "Jos et halua tehdä tätä joka kerta, voit <strong>tallentaa suodattimet</strong> painamalla tähteä. Seuraavan kerran suodattimet löytyvät etusivulta"
       },
       "page3": {
-        "title": "Logos Game",
-        "text1": "Another popular game is the logos game where you have to <strong>select all the logos</strong> you feel are the same.",
-        "text2": "As shown in the example, once you select all the similar logos, just type their value and select where it is a brand, a label or something else. It's that simple!"
+        "title": "Logopeli",
+        "text1": "Toinen suosittu peli on logopeli, jossa <strong>valitset logot</strong>, jotka ovat mielestäsi samoja.",
+        "text2": "Mallin mukaisesti valitassesi samat logot, syötä näiden arvot ja valitse, mikä on tuotemerkki, etiketti, jne. Hyvin yksinkertaista."
       },
       "page4": {
-        "title": "Eco-Score Questions Game",
-        "text1": "Help us finish the remaining questions in the most high priority labels!",
-        "text2": "These cards are linked to labels used in the computation of the Eco-Score.",
+        "title": "Ympäristöystävällisyyspisteiden kysymyspeli",
+        "text1": "Auta viimeistelemään jäljellä olevat kysymykset tärkeimmillä merkinnöillä!",
+        "text2": "Kortit liittyvät ympäristöystävällisyyspisteiden laskennassa käytettyihin etiketteihin.",
         "text3": "<strong>Mitä ekopisteet ovat?</strong>",
         "text4": "Ekopisteet ottavat huomioon ympäristöjalanjäljen kokonaisuudessaan, jolloin kuluttajien on helpompi vertailla tuotteita ja päättää, mikä on ympäristön kannalta parempaa."
       },
@@ -282,16 +283,16 @@
     "logos": {
       "page1": {
         "title": "Valinta",
-        "text1": "Select the crops of a same logo by clicking on them",
-        "text2": "Selected logos go to the top of the page, you can unselect them by clicking again on them"
+        "text1": "Valitse samat logot painamalla",
+        "text2": "Valitut logot menevät sivun yläosaan, voit poistaa valinnan painamalla uudelleen"
       },
       "page2": {
         "title": "Varoitus",
-        "text1": "If the crop contains multiple logos, do not select it.",
-        "text2": "If the crop contains only a partial part of a logo, you can select it."
+        "text1": "Jos kuvassa monta logoa, älä valitse.",
+        "text2": "Jos kuvassa osa logosta, voit valita sen."
       },
       "page3": {
-        "title": "Validate",
+        "title": "Vahvista",
         "text1": "Indicate the type of logo (label, brand, QRcode, ...)",
         "text2": "If it is a label or a brand logo, indicate which one it is",
         "text3": "Now you can submit your selection",
