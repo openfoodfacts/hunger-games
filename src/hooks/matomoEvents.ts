@@ -10,7 +10,12 @@ const mapValueToAction = {
 export const useMatomoTrackAnswerQuestion = () => {
   const { trackEvent } = useMatomo();
 
-  return (answer: -1 | 0 | 1) => {
-    trackEvent({ category: "question-page", action: mapValueToAction[answer] });
+  return {
+    answerQuestions: (answer: -1 | 0 | 1) => {
+      trackEvent({
+        category: "question-page",
+        action: mapValueToAction[answer],
+      });
+    },
   };
 };
