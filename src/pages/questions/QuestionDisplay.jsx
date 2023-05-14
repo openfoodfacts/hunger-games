@@ -25,6 +25,7 @@ import {
   updateFilter,
   answerQuestion as answerQuestionAction,
 } from "./store";
+import { useMatomoTrackAnswerQuestion } from "../../hooks/matomoEvents";
 import {
   getFullSizeImage,
   getValueTagExamplesURL,
@@ -119,15 +120,20 @@ const useKeyboardShortcuts = (question, answerQuestion) => {
 const QuestionDisplay = ({ question, productData }) => {
   const { t } = useTranslation();
 
+  const { answerQuestions: matomoTrackAnswerQuestions } =
+    useMatomoTrackAnswerQuestion();
+
   const filterState = useSelector(filterStateSelector);
   const isLoading = useSelector(isLoadingSelector);
   const dispatch = useDispatch();
 
   const resetFilters = () => dispatch(updateFilter(DEFAULT_FILTER_STATE));
   const answerQuestion = React.useCallback(
-    ({ insight_id, value }) =>
-      dispatch(answerQuestionAction({ insight_id, value })),
-    [dispatch]
+    ({ insight_id, value }) => {
+      dispatch(answerQuestionAction({ insight_id, value }));
+      matomoTrackAnswerQuestions(value);
+    },
+    [dispatch, matomoTrackAnswerQuestions]
   );
 
   const valueTagQuestionsURL = getValueTagQuestionsURL(filterState, question);

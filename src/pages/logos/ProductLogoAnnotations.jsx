@@ -295,6 +295,7 @@ export default function AnnotateLogosFromProducts() {
             </Stack>
           </Paper>
           <AnnotateLogoModal
+            game="logoProductAnnotation"
             isOpen={isAnnotationOpen}
             logos={logos}
             closeAnnotation={closeAnnotation}
