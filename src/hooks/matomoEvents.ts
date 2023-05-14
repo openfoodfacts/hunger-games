@@ -17,5 +17,13 @@ export const useMatomoTrackAnswerQuestion = () => {
         action: mapValueToAction[answer],
       });
     },
+    annotateLogo: ({ game, type, value, number }) => {
+      trackEvent({
+        category: "logo",
+        action: "annotation",
+        name: `${game} - ${type} - ${value}`,
+        value: number,
+      });
+    },
   };
 };

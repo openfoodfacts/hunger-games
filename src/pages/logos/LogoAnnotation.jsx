@@ -364,6 +364,7 @@ export default function LogoAnnotation() {
       </Box>
 
       <AnnotateLogoModal
+        game="logoAnnotation"
         value={logoState.referenceLogo.annotation_value ?? ""}
         type={logoState.referenceLogo.annotation_type ?? ""}
         isOpen={isAnnotationOpen}

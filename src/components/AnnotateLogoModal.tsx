@@ -8,6 +8,7 @@ import LogoForm from "./LogoForm";
 import LogoGrid from "./LogoGrid";
 import robotoff from "../robotoff";
 import { IS_DEVELOPMENT_MODE } from "../const";
+import { useMatomoTrackAnswerQuestion } from "../hooks/matomoEvents";
 
 const AnnotateLogoModal = (props) => {
   const {
@@ -18,7 +19,11 @@ const AnnotateLogoModal = (props) => {
     afterAnnotation,
     value = "",
     type = "",
+    game = "unknown",
   } = props;
+
+  const { annotateLogo: matomoTrackLogoAnnotation } =
+    useMatomoTrackAnswerQuestion();
 
   const sendAnnotation = async ({ type, value }) => {
     try {
@@ -32,6 +37,12 @@ const AnnotateLogoModal = (props) => {
               type,
             }))
         );
+        matomoTrackLogoAnnotation({
+          game,
+          type,
+          value,
+          number: logos.filter((logo) => logo.selected).length,
+        });
       }
       logos
         .filter((logo) => logo.selected)

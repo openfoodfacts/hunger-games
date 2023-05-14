@@ -397,6 +397,7 @@ export default function LogoSearch() {
       </Paper>
 
       <AnnotateLogoModal
+        game="logoDeepSearch"
         isOpen={isAnnotationOpen}
         logos={logosToAnnotate}
         closeAnnotation={closeAnnotation}
