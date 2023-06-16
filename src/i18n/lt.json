@@ -18,22 +18,22 @@
       }
     },
     "account_band": {
-      "title": "Want to make your contribution count? Create an account or sign in on Open Food Facts!",
+      "title": "Norite, kad jūsų indėlis būtų užskaitytas? Susikurkite paskyrą arba prisijunkite prie „Open Food Facts“!",
       "log_in": "Login",
       "sign_up": "Registruotis",
-      "contribution_details": "Learn why your contribution matters"
+      "contribution_details": "Sužinokite, kodėl jūsų indėlis yra svarbus"
     },
     "saved_filters": "Įrašyti filtrai",
     "contribution_modal": {
-      "title": "Your contribution matters",
-      "information": "Hunger Games is an effort to leverage the results of our OCR and artificial intelligence. When you use Hunger Games by Open Food Facts, you improve our entire database which helps the community make better food choices. We gather your annotations and use them to make Open Food Facts more accurate and effecient.",
-      "thank_you": "Thank you for helping us improve Open Food Facts so that more people can use it easily."
+      "title": "Jūsų indėlis yra svarbus",
+      "information": "„Hunger Games“ – tai pastangos panaudoti mūsų OCR ir dirbtinio intelekto rezultatus. Naudodami „Hunger Games“ pagal „Open Food Facts“, tobulinate visą mūsų duomenų bazę, kuri padeda bendruomenei geriau pasirinkti maistą. Renkame jūsų anotacijas ir naudojame juos, kad „Open Food Facts“ būtų tikslesnis ir veiksmingesnis.",
+      "thank_you": "Dėkojame, kad padedate mums tobulinti Open Food Facts, kad daugiau žmonių galėtų ja lengvai naudotis."
     },
     "statistics": {
       "title": "{{userName}} statistika:",
       "editorCount": {
         "title": "Editor",
-        "description": "Number of editions done"
+        "description": "Atliktų redagavimų skaičius"
       },
       "contributorCount": {
         "title": "Pagalbininkas",
@@ -47,7 +47,7 @@
   },
   "flagged_images": {
     "title": "Images flagged by users",
-    "loading": "Loading"
+    "loading": "Įkeliama"
   },
   "questions": {
     "category": "kategorija",
@@ -99,7 +99,7 @@
       "placeholders": {
         "value": "Vertė",
         "brand": "auchan, danone, herta, ...",
-        "campaign": "Annotation campaigns"
+        "campaign": "Anotacijų kampanijos"
       },
       "actions": {
         "edit": "Redaguoti filtrus",
@@ -107,15 +107,15 @@
         "apply": "Taikyti"
       }
     },
-    "other_questions": "Other questions",
+    "other_questions": "Kiti klausimai",
     "send": "Send",
-    "flag": "Something wrong? Report/flag the image!",
-    "unflag": "Unflag the image",
+    "flag": "Kažkas negerai? Pranešti/pažymėti vaizdą!",
+    "unflag": "Atžymėti vaizdą",
     "reset_filters": "Reset filters",
     "log_in": "Login",
     "sign_up": "Registruotis",
     "login_title": "Make your annotation count",
-    "login_description": "You are not currently logged into Open Food Facts. To get your answers directly applied to products, and associated to your account, consider logging in to your Open Food Facts account, or creating one",
+    "login_description": "Šiuo metu nesate prisijungę prie „Open Food Facts“. Jei norite, kad atsakymai būtų tiesiogiai taikomi produktams ir susieti su paskyra, apsvarstykite galimybę prisijungti prie „Open Food Facts“ paskyros arba sukurti ją",
     "please_wait_while_we_fetch_the_question": "Palaukite, kol gausime klausimą!"
   },
   "menu": {
@@ -134,7 +134,7 @@
     "eco-score": "Ekologinis balas",
     "dashboard": "Logotipų įrankų skydelis",
     "tour": "Show tour",
-    "logged_in_user": "Logged as {{userName}}",
+    "logged_in_user": "Prisijungęs kaip {{userName}}",
     "log_in": "Click to login"
   },
   "insights": {
@@ -197,11 +197,11 @@
     "loading": "Įkeliama…",
     "refresh": "Atnaujinti",
     "search_specific": "Search specific logo",
-    "load_more": "Load more",
+    "load_more": "Įkelti daugiau",
     "no_results": "Logotipas nerastas",
     "result_count": "Shows {{showing}} on {{available}} available",
-    "flag": "Something wrong? Report/flag the image!",
-    "unflag": "Unflag the image",
+    "flag": "Kažkas negerai? Pranešti/pažymėti vaizdą!",
+    "unflag": "Atžymėti vaizdą",
     "crop_image_title": "crop of the logo",
     "no_more_questions": "No more questions about this logo. You can try to find more logos with the following game.",
     "loading_messages": {
@@ -215,25 +215,25 @@
     "save": "Išsaugoti",
     "reportIssue": "Found a bug? Please let us know.",
     "dev_mode_title": "To get more options, activate the dev mode",
-    "dev_mode_label": "Dev Mode",
+    "dev_mode_label": "Kūrėjo režimas",
     "dev_page_toggle": "Show {{name}} page",
     "join_community": "Prisijunkite prie bendruomenės",
     "text1": "Open Food Facts is a collaborative project built by tens of thousands of volunteers and managed by a non-profit organization with 8 employees. We need your donations to fund the Open Food Facts 2023 budget and to continue to develop the project.",
-    "thank_you": "Thank you",
+    "thank_you": "Ačiū",
     "donate": "Paaukokite",
     "join_the_community": {
-      "discover_our": "Discover our ",
+      "discover_our": "Atraskite mūsų ",
       "code_of_conduct": "Code of conduct ",
       "join_us_on": "Join us on ",
-      "forum": "Forum",
-      "subscribe_to_our": "Subscribe to our ",
-      "newsletter": "newsletter"
+      "forum": "Forumas",
+      "subscribe_to_our": "Prenumeruokite mūsų ",
+      "newsletter": "naujienlaiškį"
     },
     "discover_the_project": "Apie projektą",
     "Who_we_are": "Kas mes esame",
     "Vision_Mission_Values_and_Programs": "Vizija, misija, vertybės ir programos",
-    "FAQS": "FAQS",
-    "open_Food_Facts_blog": "Open Food Facts blog",
+    "FAQS": "DUK",
+    "open_Food_Facts_blog": "Open Food Facts tinklaraštis",
     "Press": "Spauda",
     "Open_Food_Facts_wiki": "Open Food Facts wiki (en)",
     "Translators": "Vertėjai",
@@ -354,7 +354,7 @@
     }
   },
   "notfound": {
-    "image_alt": "404 not found",
+    "image_alt": "404 Nerasta",
     "nopage": "Atleiskite, puslapis, kurio ieškote, nerastas.",
     "redirect1": "Norite pažaisti keletą žaidimų?",
     "redirect2": "Spauskite čia"
@@ -372,7 +372,7 @@
     "correct": "Correct ({{label}})"
   },
   "eco-score": {
-    "description": "Here is a summary of questions that could improve Eco-Score computation",
+    "description": "Čia pateikiama klausimų, kurie galėtų pagerinti Eco-Score skaičiavimą, suvestinė",
     "countryLabel": "Country"
   }
 }

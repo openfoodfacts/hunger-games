@@ -1,7 +1,7 @@
 {
   "home": {
     "game_selector": {
-      "title": "どのゲームをプレイしたいですか？",
+      "title": "どのゲームをしたいですか？",
       "cards": {
         "questions": {
           "title": "質問",
@@ -21,7 +21,7 @@
       "title": "あなたの貢献を価値あるものにしたいですか？Open Food Factsのアカウントを作成するか、サインインしてください！",
       "log_in": "ユーザー名",
       "sign_up": "サインアップ",
-      "contribution_details": "あなたの貢献が重要な理由を学ぶ"
+      "contribution_details": "あなたの貢献がなぜ重要かについて学ぶ"
     },
     "saved_filters": "保存したフィルタ",
     "contribution_modal": {
@@ -172,7 +172,7 @@
     "annotations": "ロゴの注釈",
     "task_description": "すべての完全に同一なロゴを選択したうえで、「en:EU Organic」のような名前を付け、「ラベル」のような種類を選択してください。",
     "select_all": "すべて選択",
-    "unselect_all": "すべての選択を解除",
+    "unselect_all": "全てを選択解除",
     "distance": "距離：",
     "value": "値：",
     "submit": "送信",
@@ -367,7 +367,7 @@
     "image_sizes": "画像サイズ",
     "zoom_on_logo": "ロゴにズーム",
     "select_all": "すべて選択",
-    "deselect_all": "すべての選択を解除",
+    "deselect_all": "全てを選択解除",
     "incorrect": "間違い",
     "correct": "正しい ({{label}})"
   },

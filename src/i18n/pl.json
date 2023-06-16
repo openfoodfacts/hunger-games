@@ -26,14 +26,14 @@
     "saved_filters": "Zapisane filtry",
     "contribution_modal": {
       "title": "Twój wkład ma znaczenie",
-      "information": "Hunger Games is an effort to leverage the results of our OCR and artificial intelligence. When you use Hunger Games by Open Food Facts, you improve our entire database which helps the community make better food choices. We gather your annotations and use them to make Open Food Facts more accurate and effecient.",
+      "information": "Hunger Games to inicjatywa mająca na celu wykorzystanie wyników naszego OCR i sztucznej inteligencji. Korzystając z Hunger Games przez Open Food Facts, poprawiasz naszą całą bazę danych, co pomaga społeczności dokonywać lepszych wyborów żywieniowych. Gromadzimy Twoje adnotacje i wykorzystujemy je do uczynienia Open Food Facts bardziej dokładnym i wydajnym.",
       "thank_you": "Dziękujemy za pomoc w ulepszaniu Open Food Facts, aby więcej osób mogło z niego łatwo korzystać."
     },
     "statistics": {
       "title": "Statystyki {{userName}}:",
       "editorCount": {
         "title": "Edytor",
-        "description": "Number of editions done"
+        "description": "Liczba wykonanych edycji"
       },
       "contributorCount": {
         "title": "Współtwórca",
@@ -115,8 +115,8 @@
     "log_in": "Nazwa użytkownika",
     "sign_up": "Zarejestruj się",
     "login_title": "Spraw, aby Twoja adnotacja się liczyła",
-    "login_description": "You are not currently logged into Open Food Facts. To get your answers directly applied to products, and associated to your account, consider logging in to your Open Food Facts account, or creating one",
-    "please_wait_while_we_fetch_the_question": "Please wait while we fetch the question!"
+    "login_description": "Obecnie nie jesteś zalogowany do Open Food Facts. Aby Twoje odpowiedzi były bezpośrednio stosowane do produktów i powiązane z Twoim kontem, rozważ zalogowanie się do swojego konta Open Food Facts lub jego utworzenie",
+    "please_wait_while_we_fetch_the_question": "Proszę czekać, podczas gdy pobieramy pytanie!"
   },
   "menu": {
     "title": "Igrzyska śmierci",
@@ -126,14 +126,14 @@
     "logos-annotation": "Adnotacje do logo",
     "logos-search": "Wyszukiwanie logo",
     "logos-product-search": "Wyszukiwanie produktów",
-    "logos-deep-search": "Infinite annotation",
+    "logos-deep-search": "Nieskończona adnotacja",
     "manage": "Zarządzaj",
     "insights": "Spostrzeżenia",
     "nutritions": "Wartości odżywcze",
     "settings": "Ustawienia",
     "eco-score": "Eco-Score",
     "dashboard": "Pulpit logowania",
-    "tour": "Show tour",
+    "tour": "Pokaż przewodnik",
     "logged_in_user": "Zalogowano jako {{userName}}",
     "log_in": "Kliknij, aby zalogować"
   },
@@ -184,7 +184,7 @@
     "qr_code": "Kod QR",
     "category": "Kategoria",
     "nutrition_label": "Etykieta żywieniowa",
-    "no_logo": "Not a logo",
+    "no_logo": "Nie jest to logo",
     "store": "Sklep",
     "detail": "Szczegóły logo",
     "id": "ID Logo:",

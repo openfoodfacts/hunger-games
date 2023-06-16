@@ -26,14 +26,14 @@
     "saved_filters": "Filtri salvati",
     "contribution_modal": {
       "title": "I tuoi contributi sono importanti",
-      "information": "Hunger Games is an effort to leverage the results of our OCR and artificial intelligence. When you use Hunger Games by Open Food Facts, you improve our entire database which helps the community make better food choices. We gather your annotations and use them to make Open Food Facts more accurate and effecient.",
+      "information": "Hunger Games è uno sforzo per sfruttare i risultati del nostro OCR e dell'intelligenza artificiale. Quando usi Hunger Games di Open Food Facts, migliori il nostro intero database che aiuta la comunità a fare scelte alimentari migliori. Raccogliamo le tue annotazioni e le usiamo per rendere Open Food Facts più accurato ed efficiente.",
       "thank_you": "Grazie per aiutarci a migliorare Open Food Facts in modo che più persone possano usarlo facilmente."
     },
     "statistics": {
-      "title": "Statistiche {{userName}}:",
+      "title": "Statistiche di {{userName}}:",
       "editorCount": {
         "title": "Editore",
-        "description": "Number of editions done"
+        "description": "Numero di modifiche effettuate"
       },
       "contributorCount": {
         "title": "Contributore",
@@ -47,7 +47,7 @@
   },
   "flagged_images": {
     "title": "Immagini segnalate dagli utenti",
-    "loading": "Scaricamento"
+    "loading": "Caricamento"
   },
   "questions": {
     "category": "categoria",
@@ -73,7 +73,7 @@
     "hide_images": "Nascondi immagini (caricamento più veloce)",
     "display_images": "Mostra immagini",
     "annotations": "Annotazioni",
-    "last_annotations": "Ultime annotazioni",
+    "last_annotations": "Annotazioni recenti",
     "remaining_annotations": "Domande rimanenti",
     "annotated_annotations": "Annotato",
     "filters": {
@@ -88,10 +88,10 @@
         "campaign": "campagna"
       },
       "long_label": {
-        "type": "Tipo di Domanda",
-        "value": "Valore Proposto",
+        "type": "Tipo di domanda",
+        "value": "Valore proposto",
         "country": "Paese del Prodotto",
-        "brand": "Marchio del Prodotto",
+        "brand": "Marca del prodotto",
         "popularity": "Ordina per popolarità",
         "edit": "",
         "campaign": "Campagna"
@@ -115,7 +115,7 @@
     "log_in": "Nome utente",
     "sign_up": "Registrati",
     "login_title": "Fai contare la tua annotazione",
-    "login_description": "You are not currently logged into Open Food Facts. To get your answers directly applied to products, and associated to your account, consider logging in to your Open Food Facts account, or creating one",
+    "login_description": "Al momento non sei connesso a Open Food Facts. Per far si che le tue risposte siano direttamente applicate ai prodotti e associate al tuo account, accedi al tuo account Open Food Facts o creane uno",
     "please_wait_while_we_fetch_the_question": "Sei pregato di attendere mentre recuperiamo la domanda!"
   },
   "menu": {
@@ -203,17 +203,17 @@
     "flag": "Qualcosa è sbagliato? Segnala l'immagine!",
     "unflag": "Deseleziona l'immagine",
     "crop_image_title": "ritaglio del logo",
-    "no_more_questions": "No more questions about this logo. You can try to find more logos with the following game.",
+    "no_more_questions": "Nessun altra domanda su questo logo. Puoi provare a trovare altri loghi con il seguente gioco.",
     "loading_messages": {
-      "pending_reference_logos": "We are loading some logos examples to initialise the serach",
-      "failed_reference_logos": "We did not find any logos with this annotation. Try to use the following game to annotate some of them."
+      "pending_reference_logos": "Stiamo caricando degli esempi di logo per inizializzare la ricerca",
+      "failed_reference_logos": "Non abbiamo trovato alcun logo con questaa nota. Prova a utilizzare il seguente gioco per annotarne qualcuno."
     }
   },
   "settings": {
     "settings": "Impostazioni",
     "language": "Lingue",
     "save": "Salva",
-    "reportIssue": "Found a bug? Please let us know.",
+    "reportIssue": "Hai trovato un bug? Faccelo sapere!",
     "dev_mode_title": "Per ottenere più opzioni, attivare la modalità sviluppatore",
     "dev_mode_label": "Modalità sviluppatore",
     "dev_page_toggle": "Mostra pagina {{name}}",
@@ -252,20 +252,20 @@
       "page2": {
         "title": "Gioco delle domande",
         "text1": "Il prodotto appartiene a questo marchio?",
-        "text2": "Simply answer with a <strong>Yes/No</strong>! Don't know the answer? That's alright, just skip it.",
-        "text3": "You can also use your keyboard shortcuts: y,n and k.",
+        "text2": "Rispondi semplicemente con un <strong>Sì/No</strong>! Non conosci la risposta? Va bene, basta saltarla.",
+        "text3": "Puoi anche utilizzare le scorciatoie della tua tastiera: y, n e k.",
         "text4": "Puoi <strong>filtrare</strong> i prodotti in base ai paesi, alle marche, alla popolarità e a molto altro!",
         "text5": "Se non vuoi farlo ogni volta, puoi anche <strong>salvare i filtri</strong> premendo sulla stellina. La prossima volta che torni, troverai i filtri salvati nella pagina iniziale"
       },
       "page3": {
         "title": "Gioco dei loghi",
-        "text1": "Another popular game is the logos game where you have to <strong>select all the logos</strong> you feel are the same.",
+        "text1": "Un altro gioco popolare è il gioco dei loghi, in cui devi <strong>selezionare tutti i loghi</strong> per cui provi le stesse cose.",
         "text2": "Come mostrato nell'esempio, una volta selezionati tutti i loghi simili, basta digitarne il valore e selezionare dove si tratta di un marchio, di un'etichetta o di qualcos'altro. È così semplice!"
       },
       "page4": {
         "title": "Gioco di domande su ecoscore",
         "text1": "Aiutaci a finire le restanti domande delle etichette con la priorità più alta!",
-        "text2": "These cards are linked to labels used in the computation of the Eco-Score.",
+        "text2": "Queste schede sono collegate alle etichette utilizzate nel calcolo dell'Eco-Score.",
         "text3": "<strong>Che cos'è l'ecoscore?</strong>",
         "text4": "Eco-Score calcola l'impronta ambientale totale, rendendo più facile per i consumatori confrontare i prodotti e decidere quale è meglio per l'ambiente."
       },
@@ -289,7 +289,7 @@
       "page2": {
         "title": "Attenzione",
         "text1": "Se il ritaglio contiene più loghi, non selezionarlo.",
-        "text2": "If the crop contains only a partial part of a logo, you can select it."
+        "text2": "Se il ritglio contiene solo una parte parziale di un logo, puoi selezionarlo."
       },
       "page3": {
         "title": "Convalida",

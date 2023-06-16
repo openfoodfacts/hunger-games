@@ -33,7 +33,7 @@
       "title": "{{userName}} статистика:",
       "editorCount": {
         "title": "Редактор",
-        "description": "Number of editions done"
+        "description": "Кількість пройдених тренінгів"
       },
       "contributorCount": {
         "title": "Учасник",
@@ -116,7 +116,7 @@
     "sign_up": "Зареєструватися",
     "login_title": "Зробіть свою анотацію важливою",
     "login_description": "Зараз ви не ввійшли в Open Food Facts. Щоб ваші відповіді були безпосередньо застосовані до продуктів і пов’язані з вашим обліковим записом, увійдіть у свій обліковий запис Open Food Facts або створіть його",
-    "please_wait_while_we_fetch_the_question": "Please wait while we fetch the question!"
+    "please_wait_while_we_fetch_the_question": "Будь ласка, зачекайте, поки ми отримаємо запитання!"
   },
   "menu": {
     "title": "Голодні Ігри",
@@ -126,14 +126,14 @@
     "logos-annotation": "Анотація до логотипів",
     "logos-search": "Пошук логотипів",
     "logos-product-search": "Анотація до кожного продукту",
-    "logos-deep-search": "Infinite annotation",
+    "logos-deep-search": "Нескінченна анотація",
     "manage": "Керування",
     "insights": "Статистика",
     "nutritions": "Харчова цінність",
     "settings": "Налаштування",
     "eco-score": "Показник впливу на довкілля",
     "dashboard": "Приладова панель з логотипами",
-    "tour": "Show tour",
+    "tour": "Показати тур",
     "logged_in_user": "Ви увійшли як {{userName}}",
     "log_in": "Натисніть, щоб увійти"
   },
@@ -265,9 +265,9 @@
       "page4": {
         "title": "Гра з питаннями по Eco-Score",
         "text1": "Допоможи нам з лишившимися питаннями з найвищою приоритетністю!",
-        "text2": "These cards are linked to labels used in the computation of the Eco-Score.",
+        "text2": "Ці карти пов'язані з етикетками, які використовуються при обчисленні Eco-Score.",
         "text3": "<strong>Що ж таке Eco-Score?</strong>",
-        "text4": "Eco-Score captures the total environmental footprint, making it easier for consumers to compare products and decide which is better for the environment."
+        "text4": "Eco-Score фіксує загальний вплив на навколишнє середовище, що полегшує споживачам порівняння продуктів і прийняття рішення про те, що краще для навколишнього середовища."
       },
       "page5": {
         "title": "Налаштування",
@@ -289,7 +289,7 @@
       "page2": {
         "title": "Увага",
         "text1": "Якщо в кадрі міститься кілька логотипів, не вибирайте його.",
-        "text2": "If the crop contains only a partial part of a logo, you can select it."
+        "text2": "Якщо кадрування містить лише часткову частину логотипу, ви можете вибрати його."
       },
       "page3": {
         "title": "Перевірити",
@@ -318,7 +318,7 @@
     },
     "loading": "Завантаження...",
     "unknown_brand": "Невідома марка",
-    "value_missing": "You forgot to input a value.",
+    "value_missing": "Ви забули ввести значення.",
     "next": "Наступний крок",
     "prev": "Попередній крок",
     "skip": "Пропустіть цей продукт",
@@ -361,8 +361,8 @@
   },
   "nutriscore": {
     "image_alt": "обрізане зображення",
-    "label": "Annotate Nutri-Score logo detection by batch.",
-    "description": "To do so, select all the images showing the correct/wrong Nutri-Score value ({{label}}), and click on the bottom buttons to say if you selected a set correct or wrong ones.",
+    "label": "Коментувати логотип Nutri-Score за партією.",
+    "description": "Для цього виберіть усі зображення, які показують правильне/неправильне значення Nutri-Score ({{label}}), і натисніть нижні кнопки, щоб повідомити про правильний або неправильний вибір.",
     "images_remaining": "Still {{remaining}} to annotate",
     "image_sizes": "Розмір зображення",
     "zoom_on_logo": "Приблизити лого",
