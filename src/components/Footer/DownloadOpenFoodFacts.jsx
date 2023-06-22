@@ -22,7 +22,7 @@ const footerLinks = [
     title: "Microsoft",
     subTitle: "Get it from",
     icon: <WindowIcon fontSize="large" />,
-    url: "https://www.microsoft.com/en-us/p/openfoodfacts/9nblggh0dkqr?activetab=pivot:overviewtab",
+    url: "https://apps.microsoft.com/store/detail/open-food-facts-scan-to-get-nutriscore-ecoscore-and-more/XP8LT18SRPKLRG",
   },
   {
     title: "Android APK",
