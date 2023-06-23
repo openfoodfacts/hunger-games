@@ -2423,7 +2423,7 @@ const UNTYPED_LOGOS = {
     logo: "https://robotoff.openfoodfacts.org/api/v1/images/crop?image_url=https://static.openfoodfacts.org/images/products/405/648/930/0786/4.jpg&y_min=0.815474033&x_min=0.15114665&y_max=0.905039787&x_max=0.31996",
     type: "label",
   },
-    // CO2
+  // CO2
   "en:carbon-trust-carbon-neutral.53x90.png": {
     tag: "en:carbon-trust-carbon-neutral",
     label: "carbon trust carbon neutral",
