@@ -4,9 +4,11 @@ on:
     branches: [crowdin-trigger]
   schedule:
     - cron: "0 10 * * *"
+  workflow_dispatch:
+
 jobs:
   sync:
-    name: Sync
+    name: Sync translations
     runs-on: ubuntu-latest
 
     steps:

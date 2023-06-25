@@ -47,7 +47,7 @@
   },
   "flagged_images": {
     "title": "Käyttäjien ilmoittamat kuvat",
-    "loading": "Ladataan…"
+    "loading": "Ladataan"
   },
   "questions": {
     "category": "tuoteluokka",
@@ -79,7 +79,7 @@
     "filters": {
       "active_filter_number": "+{{count}} suodatinta",
       "active_filter_number_one": "+{{count}} suodatin",
-      "active_filter_number_zero": "Ei suodattimia",
+      "active_filter_number_zero": "ei suodattimia",
       "short_label": {
         "value": "arvo",
         "country": "maa",
@@ -114,26 +114,26 @@
     "reset_filters": "Tyhjennä suodattimet",
     "log_in": "Käyttäjätunnus",
     "sign_up": "Rekisteröidy",
-    "login_title": "Make your annotation count",
-    "login_description": "Kirjaudu tai rekisteröidy, jos haluat, että vastauksesi liitetää tiliisi.",
-    "please_wait_while_we_fetch_the_question": "Please wait while we fetch the question!"
+    "login_title": "Tee annotoinnistasi merkityksellistä",
+    "login_description": "Et ole tällä hetkellä kirjautunut Open Food Factsiin. Jos haluat, että vastauksesi käytetään suoraan tuotteisiin ja liitetään tiliisi, harkitse kirjautumista Open Food Facts -tilillesi tai sellaisen luomista",
+    "please_wait_while_we_fetch_the_question": "Odota, kun kysymystä noudetaan!"
   },
   "menu": {
     "title": "Hunger Games",
     "games": "Pelit",
     "questions": "Kysymykset",
     "logos": "Logos",
-    "logos-annotation": "Logos annotation",
-    "logos-search": "Logos search",
-    "logos-product-search": "Annotation per products",
-    "logos-deep-search": "Infinite annotation",
+    "logos-annotation": "Logoannotointi",
+    "logos-search": "Logohaku",
+    "logos-product-search": "Annotointi tuotekohtaisesti",
+    "logos-deep-search": "Loputon annotointi",
     "manage": "Hallitse",
     "insights": "Oivallukset",
     "nutritions": "Ravintosisältö",
     "settings": "Asetukset",
     "eco-score": "Ekopisteet",
-    "dashboard": "Logos dashboard",
-    "tour": "Show tour",
+    "dashboard": "Logokojelauta",
+    "tour": "Näytä esittely",
     "logged_in_user": "Kirjautuneena käyttäjällä {{userName}}",
     "log_in": "Paina kirjautuaksesi"
   },
@@ -170,7 +170,7 @@
   "logos": {
     "annotation": "Merkintä: ",
     "annotations": "Logomerkinnät",
-    "task_description": "Select all logos that are exactly the same, and give them a name like \"en:EU Organic\" and a type like \"label\".",
+    "task_description": "Valitse kaikki täsmälleen samat logot, ja anna niille nimi, kuten \"fi:EU Luomu\" ja tyyppi, kuten \"merkki\".",
     "select_all": "Valitse kaikki",
     "unselect_all": "Tyhjennä valinta",
     "distance": "Etäisyys:",
@@ -202,11 +202,11 @@
     "result_count": "Näytetään {{showing}}/{{available}}",
     "flag": "Onko jokin vialla? Ilmoita kuvasta!",
     "unflag": "Poista kuvan valinta",
-    "crop_image_title": "crop of the logo",
+    "crop_image_title": "logon rajaus",
     "no_more_questions": "Ei muita kysymyksiä logosta. Voit yrittää etsiä lisää logoja pelillä.",
     "loading_messages": {
-      "pending_reference_logos": "We are loading some logos examples to initialise the serach",
-      "failed_reference_logos": "We did not find any logos with this annotation. Try to use the following game to annotate some of them."
+      "pending_reference_logos": "Ladataan joitakin logoesimerkkejä haun alustamiseksi",
+      "failed_reference_logos": "Emme löytäneet logoja tällä annotaatiolla. Yritä käyttää seuraavaa peliä annotoimaan joitakin niistä."
     }
   },
   "settings": {
@@ -214,7 +214,7 @@
     "language": "Kielet",
     "save": "Tallenna",
     "reportIssue": "Mikäli löysit virheen, kerro siitä meille.",
-    "dev_mode_title": "To get more options, activate the dev mode",
+    "dev_mode_title": "Saat lisää vaihtoehtoja aktivoimalla kehitystilan",
     "dev_mode_label": "Kehittäjätila",
     "dev_page_toggle": "Näytä sivu {{name}}",
     "join_community": "Liity yhteisöön",
@@ -222,9 +222,9 @@
     "thank_you": "Kiitos",
     "donate": "Lahjoita",
     "join_the_community": {
-      "discover_our": "Discover our ",
-      "code_of_conduct": "Code of conduct ",
-      "join_us_on": "Join us on ",
+      "discover_our": "Löydä meidän ",
+      "code_of_conduct": "Eettinen ohjeistus",
+      "join_us_on": "Liity joukkoomme: ",
       "forum": "Foorumi",
       "subscribe_to_our": "Tilaa meidän ",
       "newsletter": "uutiskirje"
@@ -254,13 +254,13 @@
         "text1": "Kuuluuko ruokatuote tähän brändiin?",
         "text2": "Vastaa <strong>kyllä tai ei</strong>! Jos et tiedä vastausta, ohita.",
         "text3": "Voit myös käyttää näppäimiä y, n ja k.",
-        "text4": "Voit <strong>suodattaa</strong> tuotteet esimerkiksi maan, tuotemerkin ja suosion perustella.",
+        "text4": "Voit <strong>suodattaa</strong> tuotteita maan, tuotemerkkien, suosion ja monen muun perusteella!",
         "text5": "Jos et halua tehdä tätä joka kerta, voit <strong>tallentaa suodattimet</strong> painamalla tähteä. Seuraavan kerran suodattimet löytyvät etusivulta"
       },
       "page3": {
         "title": "Logopeli",
         "text1": "Toinen suosittu peli on logopeli, jossa <strong>valitset logot</strong>, jotka ovat mielestäsi samoja.",
-        "text2": "Mallin mukaisesti valitassesi samat logot, syötä näiden arvot ja valitse, mikä on tuotemerkki, etiketti, jne. Hyvin yksinkertaista."
+        "text2": "Kuten esimerkistä näkyy, kun olet valinnut kaikki samankaltaiset logot, kirjoita vain niiden arvo, ja valitse onko se tuotemerkki, merkki tai jokin muu. Se on niin yksinkertaista!"
       },
       "page4": {
         "title": "Ympäristöystävällisyyspisteiden kysymyspeli",
@@ -293,9 +293,9 @@
       },
       "page3": {
         "title": "Vahvista",
-        "text1": "Indicate the type of logo (label, brand, QRcode, ...)",
-        "text2": "If it is a label or a brand logo, indicate which one it is",
-        "text3": "Now you can submit your selection",
+        "text1": "Ilmoita logon tyyppi (merkki, tuotemerkki, QR-koodi, ...)",
+        "text2": "Jos kyseessä on merkki tai tuotemerkki, ilmoita kumpi se on",
+        "text3": "Voit nyt lähettää valintasi",
         "text4": "Kiitos!"
       }
     },
@@ -305,10 +305,10 @@
   },
   "nutrition": {
     "instructions": {
-      "cropTheTable": "Crop the image to simplify your annotation",
-      "verifyNutrimentDetected": "Indicate if the nutriment detected is correct",
-      "selectMissingNutriments": "Add missing nutriments (you can click even if the word has no box)",
-      "selectValue": "Select the nutritional value of: "
+      "cropTheTable": "Rajaa kuvaa yksinkertaistaaksesi annotaatiota",
+      "verifyNutrimentDetected": "Ilmoita, onko havaittu ravintoaine oikea",
+      "selectMissingNutriments": "Lisää puuttuvat ravintoaineet (voit klikata, vaikka sanalla ei olisi ruutua)",
+      "selectValue": "Valitse ravintoarvo: "
     },
     "steps": {
       "1": "Rajaa",
@@ -316,16 +316,16 @@
       "3": "Ravintoaineiden valinta",
       "4": "Arvojen valinta"
     },
-    "loading": "Loading...",
+    "loading": "Ladataan...",
     "unknown_brand": "Tuntematon tuotemerkki",
-    "value_missing": "You forgot to input a value.",
-    "next": "Next step",
-    "prev": "Prev step",
+    "value_missing": "Unohdit syöttää arvon.",
+    "next": "Seuraava vaihe",
+    "prev": "Edellinen vaihe",
     "skip": "Ohita tämä tuote",
     "validate": "Vahvista taulukko",
     "unselect_picture": "Ei ravitsemustietoja",
-    "basis": "data for: ",
-    "servingSize": "Annoskoko",
+    "basis": "tiedot kohteelle: ",
+    "servingSize": "annoskoko",
     "value": "Arvo",
     "unit": "Yksikkö",
     "nutriments": {
@@ -341,15 +341,15 @@
       "nutriment_sodium": "Natrium"
     },
     "history": {
-      "title": "Session History",
-      "status": "status",
-      "product name": "product name",
-      "view": "Näytä sivu",
-      "edit": "Muokkaa sivua",
-      "SKIP": "ignored",
+      "title": "Istuntohistoria",
+      "status": "tila",
+      "product name": "tuotenimi",
+      "view": "näytä sivu",
+      "edit": "muokkaa sivua",
+      "SKIP": "ohitetut",
       "VALIDATED": "muokattu",
       "WRONG_IMAGE": "valitsematon kuva",
-      "close": "Sulje",
+      "close": "sulje",
       "open": "avaa historia"
     }
   },
@@ -357,22 +357,22 @@
     "image_alt": "404. Kuvaa ei löydy.",
     "nopage": "Hupsista! Etsimääsi sivua ei löytynyt.",
     "redirect1": "Haluatko pelata joitain pelejä?",
-    "redirect2": "Click here"
+    "redirect2": "Paina tästä"
   },
   "nutriscore": {
-    "image_alt": "cropped image",
-    "label": "Annotate Nutri-Score logo detection by batch.",
-    "description": "To do so, select all the images showing the correct/wrong Nutri-Score value ({{label}}), and click on the bottom buttons to say if you selected a set correct or wrong ones.",
-    "images_remaining": "Still {{remaining}} to annotate",
-    "image_sizes": "Image sizes",
-    "zoom_on_logo": "Zoom on logo",
+    "image_alt": "rajattu kuva",
+    "label": "Annotoi Nutri-Score-logon havaitseminen eräkohtaisesti.",
+    "description": "Voit tehdä tämän valitsemalla kaikki oikean/väärän Nutri-Score-arvon ({{label}}) kuvat, ja napsauttamalla alhaalla olevia painikkeita ilmoittaaksesi, valitsitko sarjan oikeita vai vääriä.",
+    "images_remaining": "Vielä {{remaining}} annotoitavaa",
+    "image_sizes": "Kuvakoot",
+    "zoom_on_logo": "Lähennä logoon",
     "select_all": "Valitse kaikki",
     "deselect_all": "Tyhjennä valinta",
-    "incorrect": "Wrong",
-    "correct": "Correct ({{label}})"
+    "incorrect": "Väärin",
+    "correct": "Oikein ({{label}})"
   },
   "eco-score": {
-    "description": "Here is a summary of questions that could improve Eco-Score computation",
+    "description": "Tässä on yhteenveto kysymyksistä, jotka voivat parantaa Eco-Score-laskentaa",
     "countryLabel": "Country"
   }
 }
