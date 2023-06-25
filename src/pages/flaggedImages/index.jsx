@@ -46,7 +46,11 @@ export default function FlaggedImages() {
                 </a>
               </td>
               <td>
-                <img src={getImageUrl(code, imgid)} height={200} alt="" />
+                <img
+                  src={getImageUrl(code, imgid).replace(".jpg", ".400.jpg")}
+                  height={200}
+                  alt=""
+                />
               </td>
               <td>
                 <IconButton
