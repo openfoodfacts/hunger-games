@@ -16,6 +16,7 @@ import store, {
   nbOfQuestionsInBufferSelector,
   currentQuestionSelector,
   nextImagesSelector,
+  nextPageSelector,
 } from "./store";
 import { Provider, useDispatch, useSelector } from "react-redux";
 
@@ -23,13 +24,14 @@ function QuestionsConsumer() {
   const dispatch = useDispatch();
 
   const remainingQuestionNb = useSelector(nbOfQuestionsInBufferSelector);
+  const nextPage = useSelector(nextPageSelector);
   const nextImages = useSelector(nextImagesSelector);
 
   React.useEffect(() => {
     if (remainingQuestionNb < 5) {
       dispatch(fetchQuestions());
     }
-  }, [dispatch, remainingQuestionNb]);
+  }, [dispatch, remainingQuestionNb, nextPage]);
 
   const question = useSelector(currentQuestionSelector);
 
