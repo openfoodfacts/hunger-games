@@ -95,7 +95,11 @@ export const questionBuffer = createSlice({
           state.remainingQuestions.length + //Questions from previouse pages
           questionsToAdd.length; // QUestions added with this fetch
 
-        const newPage = newQuestions.length === 0 ? state.page + 1 : state.page;
+        const newPage =
+          questionsFromNextPage > 0 && questionsToAdd.length === 0
+            ? state.page + 1
+            : state.page;
+
         return {
           ...state,
           page: newPage,
@@ -167,6 +171,11 @@ export default configureStore({
 const getSubState = (state) => state.questionBuffer;
 
 export const nbOfQuestionsInBufferSelector = createSelector(
+  getSubState,
+  (bufferState) => bufferState.remainingQuestions.length
+);
+
+export const nextPageSelector = createSelector(
   getSubState,
   (bufferState) => bufferState.remainingQuestions.length
 );
