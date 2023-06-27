@@ -1,4 +1,5 @@
 import * as React from "react";
+import { useEffect, useRef } from "react";
 
 import Stack from "@mui/material/Stack";
 import TextField from "@mui/material/TextField";
@@ -46,11 +47,22 @@ const LogoSearchForm = (props) => {
     ...other
   } = props;
   const { t } = useTranslation();
+  const inputRef = useRef(null);
 
   const [innerValue, setInnerValue] = React.useState(value);
   const [innerType, setInnerType] = React.useState(type);
   const [innerCount, setInnerCount] = React.useState(count);
   const [innerBarcode, setInnerBarcode] = React.useState(barcode);
+
+  const renderLabelFilter = ["label", "category", "packaging"].includes(
+    innerType
+  );
+
+  useEffect(() => {
+    if (inputRef.current) {
+      inputRef.current.focus();
+    }
+  }, [innerValue]);
 
   React.useLayoutEffect(() => {
     setInnerValue(value);
@@ -84,7 +96,7 @@ const LogoSearchForm = (props) => {
             </MenuItem>
           ))}
         </TextField>
-        {["label", "category", "packaging"].includes(innerType) ? (
+        {renderLabelFilter && innerValue !== "" && innerValue !== null ? (
           <LabelFilter
             showKey
             fullWidth
@@ -93,6 +105,7 @@ const LogoSearchForm = (props) => {
             insightType={innerType}
             label={t("logos.value")}
             size="small"
+            inputRef={inputRef}
           />
         ) : (
           <TextField
