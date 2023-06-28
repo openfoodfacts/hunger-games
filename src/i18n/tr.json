@@ -26,7 +26,7 @@
     "saved_filters": "Kaydedilen Filtreler",
     "contribution_modal": {
       "title": "Katkınız önemlidir",
-      "information": "Açlık Oyunları, OCR ve yapay zekamızın sonuçlarından yararlanma çabasıdır. Open Food Facts'e göre Açlık Oyunları'nı kullandığınızda, topluluğun daha iyi yemek seçimleri yapmasına yardımcı olan veritabanımızın tamamını geliştirirsiniz. Ek açıklamalarınızı topluyoruz ve Open Food Facts'i daha doğru ve verimli hale getirmek için kullanıyoruz.",
+      "information": "Hunger Games is an effort to leverage the results of our OCR and artificial intelligence. When you use Hunger Games by Open Food Facts, you improve our entire database which helps the community make better food choices. We gather your annotations and use them to make Open Food Facts more accurate and efficient.",
       "thank_you": "Daha fazla insanın kolayca kullanabilmesi için Open Food Facts'i geliştirmemize yardımcı olduğunuz için teşekkür ederiz."
     },
     "statistics": {
@@ -97,8 +97,8 @@
         "campaign": "Kampanya"
       },
       "placeholders": {
-        "value": "Değer (fanta, en:organik,...)",
-        "brand": "auchan, danone, herta, ...",
+        "value": "Value (Fanta, en:organic,...)",
+        "brand": "Auchan, Danone, Herta, ...",
         "campaign": "Yorumlama kampanyaları"
       },
       "actions": {
@@ -205,7 +205,7 @@
     "crop_image_title": "logoyu kırp",
     "no_more_questions": "Bu logo hakkında başka soru yok. Aşağıdaki oyun ile daha fazla logo bulmayı deneyebilirsiniz.",
     "loading_messages": {
-      "pending_reference_logos": "Serach'ı başlatmak için bazı logo örnekleri yüklüyoruz",
+      "pending_reference_logos": "Aramayı başlatmak için bazı logo örnekleri yüklüyoruz",
       "failed_reference_logos": "Bu açıklamaya sahip herhangi bir logo bulamadık. Bazılarına açıklama eklemek için aşağıdaki oyunu kullanmayı deneyin."
     }
   },
@@ -218,7 +218,7 @@
     "dev_mode_label": "Geliştirici Modu",
     "dev_page_toggle": "{{name}} sayfayı göster",
     "join_community": "Topluluğa katılın",
-    "text1": "Open Food Facts, on binlerce gönüllü tarafından oluşturulan ve 8 çalışanı olan kar amacı gütmeyen bir kuruluş tarafından yönetilen ortak bir projedir. Open Food Facts 2023 bütçesini finanse etmek ve projeyi geliştirmeye devam etmek için bağışlarınıza ihtiyacımız var.",
+    "text1": "Open Food Facts is a collaborative project built by tens of thousands of volunteers and managed by a non-profit organization with 8 employees. We need your donations to fund the Open Food Facts 2024 budget and to continue to develop the project.",
     "thank_you": "Teşekkürler",
     "donate": "Bağış Yapın",
     "join_the_community": {

@@ -26,7 +26,7 @@
     "saved_filters": "Filtros salvos",
     "contribution_modal": {
       "title": "Sua contribuição é importante",
-      "information": "Jogos Vorazes é uma iniciativa para melhorar os resultados da nossa ROC e inteligência artificial. Ao usar o Jogos Vorazes no Open Food Facts você nos ajuda a melhorar todo o nosso banco de dados, o que contribui para que a comunidade possa fazer melhores escolhas alimentares. Nós reunimos suas anotações e as utilizamos para tornar o Open Food Facts mais preciso e eficaz.",
+      "information": "Hunger Games is an effort to leverage the results of our OCR and artificial intelligence. When you use Hunger Games by Open Food Facts, you improve our entire database which helps the community make better food choices. We gather your annotations and use them to make Open Food Facts more accurate and efficient.",
       "thank_you": "Obrigado por nos ajudar a melhorar o Open Food Facts para que mais pessoas possam usá-lo facilmente."
     },
     "statistics": {
@@ -97,8 +97,8 @@
         "campaign": "Campanha"
       },
       "placeholders": {
-        "value": "Valor (fanta, en: orgânico, ...)",
-        "brand": "auchan, danone, herta, ...",
+        "value": "Value (Fanta, en:organic,...)",
+        "brand": "Auchan, Danone, Herta, ...",
         "campaign": "Campanha de anotações"
       },
       "actions": {
@@ -205,7 +205,7 @@
     "crop_image_title": "Cortar o logotipo",
     "no_more_questions": "Não há mais perguntas sobre este logotipo. Você pode tentar encontrar mais logotipos com o jogo seguinte.",
     "loading_messages": {
-      "pending_reference_logos": "Estamos carregando alguns exemplos de logotipos para inicializar a busca",
+      "pending_reference_logos": "Estamos baixando alguns exemplos de logotipos para inicializar a pesquisa",
       "failed_reference_logos": "Não encontramos logotipos com esta anotação. Tente usar o jogo a seguir para anotar alguns deles."
     }
   },
@@ -218,7 +218,7 @@
     "dev_mode_label": "Modo desenvolvedor",
     "dev_page_toggle": "Mostrar página de {{name}}",
     "join_community": "Junte-se à comunidade",
-    "text1": "Open Food Facts é um projeto colaborativo construído por dezenas de milhares de voluntários e gerenciado por uma organização sem fins lucrativos com 8 funcionários. Precisamos das suas doações para financiar o orçamento do Open Food Facts 2023 e continuar a desenvolver o projeto.",
+    "text1": "Open Food Facts is a collaborative project built by tens of thousands of volunteers and managed by a non-profit organization with 8 employees. We need your donations to fund the Open Food Facts 2024 budget and to continue to develop the project.",
     "thank_you": "Obrigado",
     "donate": "Doar",
     "join_the_community": {

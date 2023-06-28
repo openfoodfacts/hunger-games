@@ -26,7 +26,7 @@
     "saved_filters": "Saved Filters",
     "contribution_modal": {
       "title": "Your contribution matters",
-      "information": "Hunger Games gure OCR eta adimen artifizialaren emaitzak aprobetxatzeko ahalegina da. Open Food Facts-en Hunger Games erabiltzen duzunean, gure datu-base osoa hobetzen duzu eta horrek komunitateari janariaren aukeraketa hobetzen laguntzen dio. Zure oharrak biltzen ditugu eta Open Food Facts zehatzagoa eta eraginkorragoa izan dadin erabiltzen ditugu.",
+      "information": "Hunger Games is an effort to leverage the results of our OCR and artificial intelligence. When you use Hunger Games by Open Food Facts, you improve our entire database which helps the community make better food choices. We gather your annotations and use them to make Open Food Facts more accurate and efficient.",
       "thank_you": "Thank you for helping us improve Open Food Facts so that more people can use it easily."
     },
     "statistics": {
@@ -97,8 +97,8 @@
         "campaign": "Campaign"
       },
       "placeholders": {
-        "value": "Value (fanta, en:organic,...)",
-        "brand": "auchan, danone, herta, ...",
+        "value": "Value (Fanta, en:organic,...)",
+        "brand": "Auchan, Danone, Herta, ...",
         "campaign": "Annotation campaigns"
       },
       "actions": {
@@ -205,7 +205,7 @@
     "crop_image_title": "crop of the logo",
     "no_more_questions": "Ez dago galdera gehiago logotipo honi buruz. Logotipo gehiago aurkitzen saiatu zaitezke hurrengo jokoarekin.",
     "loading_messages": {
-      "pending_reference_logos": "Logotipoen adibide batzuk kargatzen ari gara bilaketa hasieratzeko",
+      "pending_reference_logos": "Logotipoen adibide batzuk kargatzen ari gara bilaketa has dadin",
       "failed_reference_logos": "Ez dugu aurkitu idatzitakoarekin bat egiten duen logorik. Ideiak lortu itzazu hurrengo jokoa erabiltzen."
     }
   },
@@ -218,7 +218,7 @@
     "dev_mode_label": "Dev Mode",
     "dev_page_toggle": "Show {{name}} page",
     "join_community": "Batu komunitatera",
-    "text1": "Open Food Facts milaka bolondres eta irabazi asmorik gabeko 8 lankideko erakunde batek eginiko proiektu kolaboratiboa da. Zure doaintzak behar ditugu Open Food Facts 2023ko aurrekontuarentzako dirua bildu ahal izateko, eta horrela, proiektua garatzen jarraitzeko.",
+    "text1": "Open Food Facts is a collaborative project built by tens of thousands of volunteers and managed by a non-profit organization with 8 employees. We need your donations to fund the Open Food Facts 2024 budget and to continue to develop the project.",
     "thank_you": "Eskerrik asko",
     "donate": "Dohaintza",
     "join_the_community": {
