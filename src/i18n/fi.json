@@ -26,7 +26,7 @@
     "saved_filters": "Tallennetut suodattimet",
     "contribution_modal": {
       "title": "Tukesi vaikuttaa",
-      "information": "Nälkäpelit pyrkivät parantamaan tekoälyä ja OCR:ää. Käyttäessäsi sitä parannat tietokantaamme, jolloin sovellus osaa tehdä parempia ruokasuosituksia. Panoksesi auttaa tekemään Open Food Factsista tarkemman ja tehokkaamman.",
+      "information": "Hunger Games is an effort to leverage the results of our OCR and artificial intelligence. When you use Hunger Games by Open Food Facts, you improve our entire database which helps the community make better food choices. We gather your annotations and use them to make Open Food Facts more accurate and efficient.",
       "thank_you": "Kiitos Open Food Factsille antamastasi panoksesta."
     },
     "statistics": {
@@ -97,8 +97,8 @@
         "campaign": "Kampanja"
       },
       "placeholders": {
-        "value": "Arvo (fanta, en:organic,...)",
-        "brand": "auchan, danone, herta, ...",
+        "value": "Value (Fanta, en:organic,...)",
+        "brand": "Auchan, Danone, Herta, ...",
         "campaign": "Merkintäkampanjat"
       },
       "actions": {
@@ -218,7 +218,7 @@
     "dev_mode_label": "Kehittäjätila",
     "dev_page_toggle": "Näytä sivu {{name}}",
     "join_community": "Liity yhteisöön",
-    "text1": "Open Food Facts on yhteisöprojekti, jossa on mukana kymmeniä tuhansia vapaaehtoisia, ja jota hallitsee yleishyödyllinen kahdeksan työntekijän järjestö. Tarvitsemme lahjoituksia rahoittaaksemme Open Food Factsin vuodelle 2023 ja kehittääksemme projektia.",
+    "text1": "Open Food Facts is a collaborative project built by tens of thousands of volunteers and managed by a non-profit organization with 8 employees. We need your donations to fund the Open Food Facts 2024 budget and to continue to develop the project.",
     "thank_you": "Kiitos",
     "donate": "Lahjoita",
     "join_the_community": {
@@ -373,6 +373,6 @@
   },
   "eco-score": {
     "description": "Tässä on yhteenveto kysymyksistä, jotka voivat parantaa Eco-Score-laskentaa",
-    "countryLabel": "Country"
+    "countryLabel": "Maa"
   }
 }
