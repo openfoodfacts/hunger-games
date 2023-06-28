@@ -26,7 +26,7 @@
     "saved_filters": "Gespeicherte Filter",
     "contribution_modal": {
       "title": "Ihr Beitrag ist wichtig",
-      "information": "Hunger Games ist ein Versuch, die Ergebnisse unserer OCR und künstlichen Intelligenz zu nutzen. Wenn Sie die Hunger Games von Open Food Facts nutzen, verbessern Sie unsere gesamte Datenbank, die der Gemeinschaft hilft, bessere Lebensmittelentscheidungen zu treffen. Wir nehmen Ihre Anmerkungen auf und nutzen sie, um Open Food Facts noch genauer und effizienter zu machen.",
+      "information": "Hunger Games is an effort to leverage the results of our OCR and artificial intelligence. When you use Hunger Games by Open Food Facts, you improve our entire database which helps the community make better food choices. We gather your annotations and use them to make Open Food Facts more accurate and efficient.",
       "thank_you": "Vielen Dank, dass Sie uns helfen, Open Food Facts zu verbessern, damit mehr Menschen es einfach nutzen können."
     },
     "statistics": {
@@ -97,8 +97,8 @@
         "campaign": "Kampagne"
       },
       "placeholders": {
-        "value": "Wert (fanta, de:bio,...)",
-        "brand": "Aldi, Landliebe, Rügenwalder Mühle...",
+        "value": "Value (Fanta, en:organic,...)",
+        "brand": "Auchan, Danone, Herta, ...",
         "campaign": "Kampagnen kommentieren"
       },
       "actions": {
@@ -205,7 +205,7 @@
     "crop_image_title": "Ausschnitt des Logos",
     "no_more_questions": "Keine Fragen mehr zu diesem Logo. Sie können versuchen, weitere Logos mit dem folgenden Spiel zu finden.",
     "loading_messages": {
-      "pending_reference_logos": "Wir laden einige Beispiele für Logos, um die Suche zu starten",
+      "pending_reference_logos": "Es werden einige Beispiele für Logos geladen, um die Suche zu starten",
       "failed_reference_logos": "Wir haben keine Logos mit diesem Vermerk gefunden. Versuchen Sie, mit dem folgenden Spiel einige von ihnen zu beschriften."
     }
   },
@@ -218,7 +218,7 @@
     "dev_mode_label": "Entwicklermodus",
     "dev_page_toggle": "Seite {{name}} anzeigen",
     "join_community": "Treten Sie der Gemeinschaft bei",
-    "text1": "Open Food Facts ist ein gemeinschaftliches Projekt, das von Zehntausenden von Freiwilligen aufgebaut und von einer gemeinnützigen Organisation mit 8 Mitarbeitern verwaltet wird. Wir brauchen Ihre Spenden, um das Budget für Open Food Facts 2023 zu finanzieren und das Projekt weiter zu entwickeln.",
+    "text1": "Open Food Facts is a collaborative project built by tens of thousands of volunteers and managed by a non-profit organization with 8 employees. We need your donations to fund the Open Food Facts 2024 budget and to continue to develop the project.",
     "thank_you": "Vielen Dank",
     "donate": "Spenden",
     "join_the_community": {

@@ -26,7 +26,7 @@
     "saved_filters": "Zapisane filtry",
     "contribution_modal": {
       "title": "Twój wkład ma znaczenie",
-      "information": "Hunger Games to inicjatywa mająca na celu wykorzystanie wyników naszego OCR i sztucznej inteligencji. Korzystając z Hunger Games przez Open Food Facts, poprawiasz naszą całą bazę danych, co pomaga społeczności dokonywać lepszych wyborów żywieniowych. Gromadzimy Twoje adnotacje i wykorzystujemy je do uczynienia Open Food Facts bardziej dokładnym i wydajnym.",
+      "information": "Hunger Games is an effort to leverage the results of our OCR and artificial intelligence. When you use Hunger Games by Open Food Facts, you improve our entire database which helps the community make better food choices. We gather your annotations and use them to make Open Food Facts more accurate and efficient.",
       "thank_you": "Dziękujemy za pomoc w ulepszaniu Open Food Facts, aby więcej osób mogło z niego łatwo korzystać."
     },
     "statistics": {
@@ -97,7 +97,7 @@
         "campaign": "Kampania"
       },
       "placeholders": {
-        "value": "Wartość (fanta, organiczny...)",
+        "value": "Value (Fanta, en:organic,...)",
         "brand": "Auchan, Danone, Herta, ...",
         "campaign": "Kampanie adnotacyjne"
       },
@@ -203,10 +203,10 @@
     "flag": "Coś nie tak? Zgłoś lub oznacz obrazek!",
     "unflag": "Odznacz obrazek",
     "crop_image_title": "przycięcie logo",
-    "no_more_questions": "No more questions about this logo. You can try to find more logos with the following game.",
+    "no_more_questions": "Nie ma więcej pytań dotyczących tego logo. Możesz znaleźć więcej logo w następnej grze.",
     "loading_messages": {
-      "pending_reference_logos": "We are loading some logos examples to initialise the serach",
-      "failed_reference_logos": "We did not find any logos with this annotation. Try to use the following game to annotate some of them."
+      "pending_reference_logos": "Ładujemy kilka przykładów logo, aby zainicjować wyszukiwanie",
+      "failed_reference_logos": "Nie znaleźliśmy żadnych logo z tą adnotacją. Spróbuj użyć poniższej gry, aby opisać niektóre z nich."
     }
   },
   "settings": {
@@ -218,7 +218,7 @@
     "dev_mode_label": "Tryb Deweloperski",
     "dev_page_toggle": "Pokaż stronę {{name}}",
     "join_community": "Dołącz do społeczności",
-    "text1": "Open Food Facts is a collaborative project built by tens of thousands of volunteers and managed by a non-profit organization with 8 employees. We need your donations to fund the Open Food Facts 2023 budget and to continue to develop the project.",
+    "text1": "Open Food Facts is a collaborative project built by tens of thousands of volunteers and managed by a non-profit organization with 8 employees. We need your donations to fund the Open Food Facts 2024 budget and to continue to develop the project.",
     "thank_you": "Dziękujemy",
     "donate": "Podaruj",
     "join_the_community": {
@@ -226,14 +226,14 @@
       "code_of_conduct": "Regulamin ",
       "join_us_on": "Dołącz do nas na ",
       "forum": "Forum",
-      "subscribe_to_our": "Subscribe to our ",
-      "newsletter": "newsletter"
+      "subscribe_to_our": "Zapisz się do naszego ",
+      "newsletter": "newslettera"
     },
     "discover_the_project": "Odkryj projekt",
     "Who_we_are": "Kim jesteśmy",
     "Vision_Mission_Values_and_Programs": "Wizja, Misja, Wartości i Programy",
     "FAQS": "Najczęściej zadawane pytania (FAQ)",
-    "open_Food_Facts_blog": "Open Food Facts blog",
+    "open_Food_Facts_blog": "Blog Open Food Facts",
     "Press": "Prasa",
     "Open_Food_Facts_wiki": "Open Food Facts wiki (en)",
     "Translators": "Tłumacze",
@@ -252,20 +252,20 @@
       "page2": {
         "title": "Gra pytań",
         "text1": "Czy produkt żywnościowy należy do tej marki?",
-        "text2": "Simply answer with a <strong>Yes/No</strong>! Don't know the answer? That's alright, just skip it.",
-        "text3": "You can also use your keyboard shortcuts: y,n and k.",
+        "text2": "Wystarczy odpowiedzieć <strong>Tak/Nie</strong>! Nie znasz odpowiedzi? Nic nie szkodzi, po prostu ją pomiń.",
+        "text3": "Możesz także użyć skrótów klawiaturowych: y, n i k.",
         "text4": "Możesz <strong>filtrować</strong> produkty w oparciu o kraj, marki, popularność i wiele więcej!",
         "text5": "Jeśli nie chcesz tego robić za każdym razem, możesz również <strong>zapisać filtry</strong> klikając gwiazdkę. Następnym razem, gdy wrócisz, znajdziesz zapisane filtry na stronie głównej"
       },
       "page3": {
         "title": "Gra z logami",
-        "text1": "Another popular game is the logos game where you have to <strong>select all the logos</strong> you feel are the same.",
+        "text1": "Inną popularną grą jest gra w logo, w której musisz <strong>wybrać wszystkie logo</strong>, które uważasz za takie same.",
         "text2": "Jak pokazano w przykładzie, po wybraniu wszystkich podobnych nazw po prostu wpisz ich wartość i wybierz, gdzie jest to marka, etykieta lub coś innego. To takie proste!"
       },
       "page4": {
         "title": "Gra Pytania o Eco-Score",
         "text1": "Pomóż nam dokończyć pozostałe pytania w etykietach o najwyższym priorytecie!",
-        "text2": "These cards are linked to labels used in the computation of the Eco-Score.",
+        "text2": "Karty te są powiązane z etykietami używanymi do obliczania wyniku Eco-Score.",
         "text3": "<strong>Co to jest Eco-Score?</strong>",
         "text4": "Eco-Score uwzględnia całkowity ślad ekologiczny, ułatwiając konsumentom porównywanie produktów i podejmowanie decyzji, które są lepsze dla środowiska."
       },
@@ -289,7 +289,7 @@
       "page2": {
         "title": "Ostrzeżenie",
         "text1": "Jeśli kadr zawiera wiele nazw, nie wybieraj go.",
-        "text2": "If the crop contains only a partial part of a logo, you can select it."
+        "text2": "Jeśli kadr zawiera tylko część logo, można je zaznaczyć."
       },
       "page3": {
         "title": "Zweryfikuj",

@@ -26,7 +26,7 @@
     "saved_filters": "Các bộ lọc đã lưu",
     "contribution_modal": {
       "title": "Đóng góp của bạn rất quan trọng",
-      "information": "Hunger Games là một nỗ lực tận dụng kết quả của OCR và trí tuệ nhân tạo. Khi bạn sử dụng Hunger Games của Open Food Facts, bạn có thể cải thiện toàn bộ cơ sở dữ liệu của chúng tôi, giúp cộng đồng đưa ra lựa chọn thực phẩm tốt hơn. Chúng tôi thu thập các chú thích của bạn và sử dụng chúng để làm cho Open Food Facts chính xác và hiệu quả hơn.",
+      "information": "Hunger Games is an effort to leverage the results of our OCR and artificial intelligence. When you use Hunger Games by Open Food Facts, you improve our entire database which helps the community make better food choices. We gather your annotations and use them to make Open Food Facts more accurate and efficient.",
       "thank_you": "Cảm ơn bạn đã giúp chúng tôi cải thiện Open Food Facts để nhiều người có thể sử dụng nó một cách dễ dàng."
     },
     "statistics": {
@@ -97,8 +97,8 @@
         "campaign": "Chiến dịch"
       },
       "placeholders": {
-        "value": "Giá trị (fanta, en: organic,...)",
-        "brand": "auchan, danone, herta, ...",
+        "value": "Value (Fanta, en:organic,...)",
+        "brand": "Auchan, Danone, Herta, ...",
         "campaign": "Chiến dịch chú thích"
       },
       "actions": {
@@ -205,7 +205,7 @@
     "crop_image_title": "cắt logo",
     "no_more_questions": "Không còn câu hỏi nào về logo này nữa. Bạn có thể thử tìm thêm logo với trò chơi sau.",
     "loading_messages": {
-      "pending_reference_logos": "Chúng tôi đang tải một số ví dụ về logo để khởi tạo tìm kiếm",
+      "pending_reference_logos": "We are loading some logos examples to initialise the search",
       "failed_reference_logos": "Chúng tôi không tìm thấy bất kỳ logo nào có chú thích này. Hãy thử sử dụng trò chơi sau đây để chú thích một vài trong số chúng."
     }
   },
@@ -218,7 +218,7 @@
     "dev_mode_label": "Chế độ nhà phát triển",
     "dev_page_toggle": "Hiển thị trang {{name}}",
     "join_community": "Tham gia cộng đồng",
-    "text1": "Open Food Facts là một dự án hợp tác được xây dựng bởi hàng chục nghìn tình nguyện viên và được quản lý bởi một tổ chức phi lợi nhuận với 8 nhân viên. Chúng tôi cần sự đóng góp của bạn để tài trợ cho ngân sách Open Food Facts 2023 và để tiếp tục phát triển dự án.",
+    "text1": "Open Food Facts is a collaborative project built by tens of thousands of volunteers and managed by a non-profit organization with 8 employees. We need your donations to fund the Open Food Facts 2024 budget and to continue to develop the project.",
     "thank_you": "Cảm ơn bạn",
     "donate": "Ủng hộ",
     "join_the_community": {

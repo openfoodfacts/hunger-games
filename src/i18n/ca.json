@@ -26,7 +26,7 @@
     "saved_filters": "acordar els filtres",
     "contribution_modal": {
       "title": "Your contribution matters",
-      "information": "Hunger Games is an effort to leverage the results of our OCR and artificial intelligence. When you use Hunger Games by Open Food Facts, you improve our entire database which helps the community make better food choices. We gather your annotations and use them to make Open Food Facts more accurate and effecient.",
+      "information": "Hunger Games is an effort to leverage the results of our OCR and artificial intelligence. When you use Hunger Games by Open Food Facts, you improve our entire database which helps the community make better food choices. We gather your annotations and use them to make Open Food Facts more accurate and efficient.",
       "thank_you": "Thank you for helping us improve Open Food Facts so that more people can use it easily."
     },
     "statistics": {
@@ -84,7 +84,7 @@
         "value": "valor",
         "country": "país",
         "brand": "marca",
-        "popularity": "popularity",
+        "popularity": "popularitat",
         "campaign": "anar a la montanya"
       },
       "long_label": {
@@ -97,8 +97,8 @@
         "campaign": "la canpanya"
       },
       "placeholders": {
-        "value": "Valor (fanta, en: orgànic,...)",
-        "brand": "auchan, danone, herta, ...",
+        "value": "Value (Fanta, en:organic,...)",
+        "brand": "Auchan, Danone, Herta, ...",
         "campaign": "anotacions de campanya\n"
       },
       "actions": {
@@ -143,7 +143,7 @@
     "barcode_placeholder": "codi de barres",
     "value_tag": "Etiqueta",
     "value_placeholder": "ex: en: mueslis, bjorg,...",
-    "type": "Type",
+    "type": "Tipus",
     "annotated": "apuntat",
     "annotation": "Notes",
     "not_annotated": "Cap anotació",
@@ -176,7 +176,7 @@
     "distance": "Distància:",
     "value": "Value",
     "submit": "Envia",
-    "type": "Type",
+    "type": "Tipus",
     "label": "Etiqueta",
     "brand": "Marca",
     "packager_code": "Codi empaquetador",
@@ -195,7 +195,7 @@
     "search": "Cerca",
     "number_of_results": "Nombre de resultats:",
     "loading": "S'està carregant…",
-    "refresh": "Refresh",
+    "refresh": "Refresca",
     "search_specific": "Search specific logo",
     "load_more": "Carrega mes ",
     "no_results": "No s'ha trobat cap logotip",
@@ -205,7 +205,7 @@
     "crop_image_title": "crop of the logo",
     "no_more_questions": "No more questions about this logo. You can try to find more logos with the following game.",
     "loading_messages": {
-      "pending_reference_logos": "We are loading some logos examples to initialise the serach",
+      "pending_reference_logos": "We are loading some logos examples to initialise the search",
       "failed_reference_logos": "We did not find any logos with this annotation. Try to use the following game to annotate some of them."
     }
   },
@@ -218,7 +218,7 @@
     "dev_mode_label": "Dev Mode",
     "dev_page_toggle": "Show {{name}} page",
     "join_community": "Uneix-te a la comunitat",
-    "text1": "Open Food Facts is a collaborative project built by tens of thousands of volunteers and managed by a non-profit organization with 8 employees. We need your donations to fund the Open Food Facts 2023 budget and to continue to develop the project.",
+    "text1": "Open Food Facts is a collaborative project built by tens of thousands of volunteers and managed by a non-profit organization with 8 employees. We need your donations to fund the Open Food Facts 2024 budget and to continue to develop the project.",
     "thank_you": "Thank you",
     "donate": "Feu un donatiu",
     "join_the_community": {
