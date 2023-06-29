@@ -86,7 +86,7 @@ const LogoSearchForm = (props) => {
         </TextField>
         {["label", "category", "packaging"].includes(innerType) ? (
           <LabelFilter
-            showKey={false}
+            showKey
             fullWidth
             value={innerValue}
             onChange={setInnerValue}
