@@ -120,7 +120,11 @@ const LabelFilter = (props) => {
           {...params}
           {...other}
           helperText={
-            showKey && (innerValue?.key || `⚠️ unknown: "${innerValue}"`)
+            showKey &&
+            (innerValue?.key ||
+              (innerValue !== "" &&
+                innerValue !== null &&
+                `⚠️ unknown: "${innerValue}"`))
           }
         />
       )}
