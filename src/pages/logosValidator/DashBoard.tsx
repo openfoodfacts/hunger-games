@@ -75,34 +75,36 @@ export default function VerticalTabs() {
   };
 
   return (
-    <Box
-      sx={{
-        flexGrow: 1,
-        bgcolor: "background.paper",
-        display: "flex",
-        flexDirection: isDesktop ? "row" : "column",
-        height: isDesktop ? "calc( 100vh - 100px)" : undefined,
-        width: isDesktop ? undefined : "100vw",
-      }}
-    >
-      <Tabs
-        orientation={isDesktop ? "vertical" : "horizontal"}
-        variant="scrollable"
-        value={value}
-        onChange={handleChange}
-        aria-label="Logo categories"
+    <React.Suspense>
+      <Box
         sx={{
-          ...(isDesktop ? { borderRight: 1 } : { borderBottom: 1 }),
-          borderColor: "divider",
+          flexGrow: 1,
+          bgcolor: "background.paper",
+          display: "flex",
+          flexDirection: isDesktop ? "row" : "column",
+          height: isDesktop ? "calc( 100vh - 100px)" : undefined,
+          width: isDesktop ? undefined : "100vw",
         }}
       >
+        <Tabs
+          orientation={isDesktop ? "vertical" : "horizontal"}
+          variant="scrollable"
+          value={value}
+          onChange={handleChange}
+          aria-label="Logo categories"
+          sx={{
+            ...(isDesktop ? { borderRight: 1 } : { borderBottom: 1 }),
+            borderColor: "divider",
+          }}
+        >
+          {DASHBOARD.map(({ tag, title }, index) => (
+            <Tab label={title} key={index} {...a11yProps(index)} />
+          ))}
+        </Tabs>
         {DASHBOARD.map(({ tag, title }, index) => (
-          <Tab label={title} key={index} {...a11yProps(index)} />
+          <TabPanel value={value} key={index} index={index} />
         ))}
-      </Tabs>
-      {DASHBOARD.map(({ tag, title }, index) => (
-        <TabPanel value={value} key={index} index={index} />
-      ))}
-    </Box>
+      </Box>
+    </React.Suspense>
   );
 }

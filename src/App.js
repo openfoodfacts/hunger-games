@@ -4,7 +4,21 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { Routes, Route, useLocation } from "react-router-dom";
 import { useMatomo } from "@jonkoops/matomo-tracker-react";
 import axios from "axios";
+
+import ResponsiveAppBar from "./components/ResponsiveAppBar";
+import DevModeContext from "./contexts/devMode";
 import {
+  getColor,
+  getIsDevMode,
+  getVisiblePages,
+  localSettingsKeys,
+  localSettings,
+} from "./localeStorageManager";
+import LoginContext from "./contexts/login";
+import off from "./off";
+import { IS_DEVELOPMENT_MODE } from "./const";
+import ColorModeContext from "./contexts/colorMode";
+const {
   EcoScorePage,
   LogoAnnotationPage,
   LogoSearchPage,
@@ -22,20 +36,7 @@ import {
   PackagingPage,
   LogoQuestionValidator,
   DashBoard,
-} from "./pages";
-import ResponsiveAppBar from "./components/ResponsiveAppBar";
-import DevModeContext from "./contexts/devMode";
-import {
-  getColor,
-  getIsDevMode,
-  getVisiblePages,
-  localSettingsKeys,
-  localSettings,
-} from "./localeStorageManager";
-import LoginContext from "./contexts/login";
-import off from "./off";
-import { IS_DEVELOPMENT_MODE } from "./const";
-import ColorModeContext from "./contexts/colorMode";
+} = React.lazy(() => import("./pages"));
 
 // OFF colors
 const latte = "#F6F3F0";
