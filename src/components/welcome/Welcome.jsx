@@ -5,6 +5,7 @@ import Typography from "@mui/material/Typography";
 import { useTheme } from "@mui/material/styles";
 import useControlled from "@mui/utils/useControlled";
 import useMediaQuery from "@mui/material/useMediaQuery";
+import logo from "../../assets/logo.png";
 
 import Tour from "reactour";
 import {
@@ -37,7 +38,7 @@ export const getSteps = ({ t, withSelector, theme }) => [
               height: "auto",
               flex: "20%",
             }}
-            src={require("../../assets/logo.png")}
+            src={logo}
           />
           <Typography
             variant="h6"
