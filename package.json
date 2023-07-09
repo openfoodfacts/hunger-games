@@ -42,7 +42,7 @@
     "prettier": "prettier --write .",
     "start": "react-scripts start",
     "countries": "node update-countries.js",
-    "build": "npm run build:react && npm run build:bundle",
+    "build": "yarn run build:react && yarn run build:bundle",
     "build:react": "react-scripts build",
     "build:bundle": "webpack --config webpack.config.js",
     "test": "react-scripts test",
@@ -67,5 +67,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "packageManager": "yarn@3.6.1"
 }
