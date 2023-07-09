@@ -8,7 +8,7 @@ import { URL_ORIGINE } from "../../const";
 // Otherwise fallback on english
 const AVAILABLE_OPTIONS = ["de", "es", "fr", "hr", "nl", "sv"];
 
-const cleanName = (name) =>
+const cleanName = (name: string) =>
   name
     .normalize("NFD")
     .replace(/[\u0300-\u036f]/g, "")

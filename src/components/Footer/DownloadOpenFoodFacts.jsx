@@ -48,6 +48,7 @@ const DownloadOpenFoodFacts = () => {
       {footerLinks.map((link) => {
         return (
           <FooterButtons
+            key={link.title}
             title={link.title}
             subTitle={link.subTitle}
             icon={link.icon}
