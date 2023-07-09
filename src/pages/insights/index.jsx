@@ -1,4 +1,4 @@
-import { Divider, Stack } from "@mui/material";
+import { CircularProgress, Divider, Stack } from "@mui/material";
 import * as React from "react";
 
 import Typography from "@mui/material/Typography";
@@ -25,19 +25,21 @@ export default function Insights() {
   );
 
   return (
-    <Stack spacing={2} sx={{ padding: 2 }}>
-      <Typography>{t("insights.insights")}</Typography>
-      <FilterInsights
-        filterState={filterState}
-        setFilterState={setFilterState}
-      />
-      <Divider />
-      <div style={{ height: "250px" }}>
-        <InsightGrid
+    <React.Suspense fallback={<CircularProgress />}>
+      <Stack spacing={2} sx={{ padding: 2 }}>
+        <Typography>{t("insights.insights")}</Typography>
+        <FilterInsights
           filterState={filterState}
           setFilterState={setFilterState}
         />
-      </div>
-    </Stack>
+        <Divider />
+        <div style={{ height: "250px" }}>
+          <InsightGrid
+            filterState={filterState}
+            setFilterState={setFilterState}
+          />
+        </div>
+      </Stack>
+    </React.Suspense>
   );
 }

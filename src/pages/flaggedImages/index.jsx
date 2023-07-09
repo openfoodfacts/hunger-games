@@ -30,54 +30,58 @@ export default function FlaggedImages() {
     return <p>{t(`flagged_images.loading`)}</p>;
   }
   return (
-    <Box>
-      <Box sx={{ padding: 2 }}>
-        <Typography>{t("flagged_images.title")}</Typography>
-        <table>
-          {data.map(({ code, imgid }) => (
-            <tr key={`${code}-${imgid}`}>
-              <td>
-                <a
-                  target="_blank"
-                  href={off.getProductEditUrl(code)}
-                  rel="noreferrer"
-                >
-                  {code}
-                </a>
-              </td>
-              <td>
-                <img
-                  src={getImageUrl(code, imgid).replace(".jpg", ".400.jpg")}
-                  height={200}
-                  alt=""
-                />
-              </td>
-              <td>
-                <IconButton
-                  onClick={() => {
-                    axios.delete(
-                      `https://amathjourney.com/api/off-annotation/flag-image/${code}`,
-                      {
-                        mode: "no-cors",
-                        data: {
-                          imgid,
-                        },
-                      }
-                    );
-                    setData((prev) =>
-                      prev.filter(
-                        (line) => line.code !== code || line.imgid !== imgid
-                      )
-                    );
-                  }}
-                >
-                  <DeleteOutlineIcon sx={{ cursor: "pointer", color: "red" }} />
-                </IconButton>
-              </td>
-            </tr>
-          ))}
-        </table>
+    <React.Suspense>
+      <Box>
+        <Box sx={{ padding: 2 }}>
+          <Typography>{t("flagged_images.title")}</Typography>
+          <table>
+            {data.map(({ code, imgid }) => (
+              <tr key={`${code}-${imgid}`}>
+                <td>
+                  <a
+                    target="_blank"
+                    href={off.getProductEditUrl(code)}
+                    rel="noreferrer"
+                  >
+                    {code}
+                  </a>
+                </td>
+                <td>
+                  <img
+                    src={getImageUrl(code, imgid).replace(".jpg", ".400.jpg")}
+                    height={200}
+                    alt=""
+                  />
+                </td>
+                <td>
+                  <IconButton
+                    onClick={() => {
+                      axios.delete(
+                        `https://amathjourney.com/api/off-annotation/flag-image/${code}`,
+                        {
+                          mode: "no-cors",
+                          data: {
+                            imgid,
+                          },
+                        }
+                      );
+                      setData((prev) =>
+                        prev.filter(
+                          (line) => line.code !== code || line.imgid !== imgid
+                        )
+                      );
+                    }}
+                  >
+                    <DeleteOutlineIcon
+                      sx={{ cursor: "pointer", color: "red" }}
+                    />
+                  </IconButton>
+                </td>
+              </tr>
+            ))}
+          </table>
+        </Box>
       </Box>
-    </Box>
+    </React.Suspense>
   );
 }

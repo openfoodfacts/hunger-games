@@ -29,30 +29,32 @@ export default function Nutrition() {
   }
 
   return (
-    <Box
-      flexDirection={{ xs: "column", md: "row" }}
-      gap={2}
-      sx={{
-        display: "flex",
-        width: 1,
-        height: 1,
-        alignItems: { xs: "center", md: "flex-start" },
-        justifyContent: "center",
-        padding: 4,
-        border: "5px solid green",
-        minHeight: "89.4vh",
-      }}
-    >
-      <ProductNutriments
-        setNutriments={setNutriments}
-        nutriments={nutriments}
-      />
-      <NutritionTable
-        nutriments={nutriments.filter((nutr) => nutr.display)}
-        setNutriments={setNutriments}
-        onchangeHandler={onchangeHandler}
-        deleteItem={deleteItem}
-      />
-    </Box>
+    <React.Suspense>
+      <Box
+        flexDirection={{ xs: "column", md: "row" }}
+        gap={2}
+        sx={{
+          display: "flex",
+          width: 1,
+          height: 1,
+          alignItems: { xs: "center", md: "flex-start" },
+          justifyContent: "center",
+          padding: 4,
+          border: "5px solid green",
+          minHeight: "89.4vh",
+        }}
+      >
+        <ProductNutriments
+          setNutriments={setNutriments}
+          nutriments={nutriments}
+        />
+        <NutritionTable
+          nutriments={nutriments.filter((nutr) => nutr.display)}
+          setNutriments={setNutriments}
+          onchangeHandler={onchangeHandler}
+          deleteItem={deleteItem}
+        />
+      </Box>
+    </React.Suspense>
   );
 }

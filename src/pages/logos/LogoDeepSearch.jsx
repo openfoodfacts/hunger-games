@@ -299,112 +299,115 @@ export default function LogoSearch() {
   };
 
   return (
-    <Box sx={{ padding: 2 }}>
-      <Typography variant="h4" sx={{ mb: 2 }}>
-        Logo search
-      </Typography>
-      <Typography variant="body1">
-        Select a logo you want to look for, and let's go to catch them all. For
-        every logo you annotate, we will fetch it's neighbors such that you
-        might never stop to annotate. (Press Shift to select range of logos)
-      </Typography>
-      <Divider sx={{ my: 3 }} />
-      <LogoForm {...searchState} request={setNewSearchState} />
-      {/* {isLoading && <LinearProgress sx={{ mt: 5 }} />} */}
+    <React.Suspense fallback={<CircularProgress />}>
+      <Box sx={{ padding: 2 }}>
+        <Typography variant="h4" sx={{ mb: 2 }}>
+          Logo search
+        </Typography>
+        <Typography variant="body1">
+          Select a logo you want to look for, and let's go to catch them all.
+          For every logo you annotate, we will fetch it's neighbors such that
+          you might never stop to annotate. (Press Shift to select range of
+          logos)
+        </Typography>
+        <Divider sx={{ my: 3 }} />
+        <LogoForm {...searchState} request={setNewSearchState} />
+        {/* {isLoading && <LinearProgress sx={{ mt: 5 }} />} */}
 
-      <Typography variant="h5" sx={{ mt: 5, mb: 1 }}>
-        Reference logos (logo already annotated with this value)
-      </Typography>
+        <Typography variant="h5" sx={{ mt: 5, mb: 1 }}>
+          Reference logos (logo already annotated with this value)
+        </Typography>
 
-      {isLoadingAnnotatedLogos ? (
-        <LoadingReferenceLogos />
-      ) : annotatedLogos == null || annotatedLogos.length === 0 ? (
-        <FailedReferecnceLogos {...searchState} />
-      ) : (
+        {isLoadingAnnotatedLogos ? (
+          <LoadingReferenceLogos />
+        ) : annotatedLogos == null || annotatedLogos.length === 0 ? (
+          <FailedReferecnceLogos {...searchState} />
+        ) : (
+          <LogoGrid
+            logos={annotatedLogos.slice(0, 5)}
+            toggleLogoSelection={null}
+            readOnly
+            sx={{ pt: 0 }}
+          />
+        )}
+
+        <Divider sx={{ my: 3 }} />
+
+        <Box sx={{ display: "flex", flexDirection: "row", gap: 1 }}>
+          <Typography variant="h5" sx={{ mt: 5, mb: 1 }}>
+            Remaining to annotate
+          </Typography>
+          <Button
+            onClick={selectAllOnPage}
+            variant="contained"
+            sx={{ ml: "auto", maxHeight: 40, mt: "40px", mb: "8px" }} // to align with "Remaining to annotate"
+          >
+            Select All
+          </Button>
+          <Button
+            onClick={deselectAll}
+            variant="contained"
+            sx={{ maxHeight: 40, mt: "40px", mb: "8px" }}
+          >
+            Deselect All
+          </Button>
+        </Box>
+
+        {isLoadingToAnnotateLogos && <LinearProgress />}
         <LogoGrid
-          logos={annotatedLogos.slice(0, 5)}
-          toggleLogoSelection={null}
-          readOnly
+          logos={logosToAnnotate.slice((page - 1) * pageSize, page * pageSize)}
+          toggleLogoSelection={toggleSelection}
+          setLogoSelectionRange={setRangeSelection}
           sx={{ pt: 0 }}
         />
-      )}
 
-      <Divider sx={{ my: 3 }} />
+        <Paper
+          elevation={0}
+          sx={{
+            display: "flex",
+            flexDirection: "row",
+            gap: 1,
+            position: "sticky",
+            bottom: 0,
+            py: 2,
+          }}
+        >
+          <Button
+            disabled={page === 1}
+            onClick={() => setPage((p) => Math.max(1, p - 1))}
+            variant="contained"
+            sx={{ width: 200 }}
+          >
+            prev
+          </Button>
+          <Button
+            fullWidth
+            onClick={openAnnotation}
+            color="success"
+            variant="contained"
+          >
+            Annotate
+          </Button>
+          <Button
+            variant="contained"
+            sx={{ width: 200 }}
+            onClick={() => setPage((p) => p + 1)}
+            disabled={page * pageSize > logosToAnnotate.length}
+          >
+            next
+          </Button>
+        </Paper>
 
-      <Box sx={{ display: "flex", flexDirection: "row", gap: 1 }}>
-        <Typography variant="h5" sx={{ mt: 5, mb: 1 }}>
-          Remaining to annotate
-        </Typography>
-        <Button
-          onClick={selectAllOnPage}
-          variant="contained"
-          sx={{ ml: "auto", maxHeight: 40, mt: "40px", mb: "8px" }} // to align with "Remaining to annotate"
-        >
-          Select All
-        </Button>
-        <Button
-          onClick={deselectAll}
-          variant="contained"
-          sx={{ maxHeight: 40, mt: "40px", mb: "8px" }}
-        >
-          Deselect All
-        </Button>
+        <AnnotateLogoModal
+          game="logoDeepSearch"
+          isOpen={isAnnotationOpen}
+          logos={logosToAnnotate}
+          closeAnnotation={closeAnnotation}
+          toggleLogoSelection={toggleSelection}
+          afterAnnotation={afterAnnotation}
+          {...searchState}
+        />
       </Box>
-
-      {isLoadingToAnnotateLogos && <LinearProgress />}
-      <LogoGrid
-        logos={logosToAnnotate.slice((page - 1) * pageSize, page * pageSize)}
-        toggleLogoSelection={toggleSelection}
-        setLogoSelectionRange={setRangeSelection}
-        sx={{ pt: 0 }}
-      />
-
-      <Paper
-        elevation={0}
-        sx={{
-          display: "flex",
-          flexDirection: "row",
-          gap: 1,
-          position: "sticky",
-          bottom: 0,
-          py: 2,
-        }}
-      >
-        <Button
-          disabled={page === 1}
-          onClick={() => setPage((p) => Math.max(1, p - 1))}
-          variant="contained"
-          sx={{ width: 200 }}
-        >
-          prev
-        </Button>
-        <Button
-          fullWidth
-          onClick={openAnnotation}
-          color="success"
-          variant="contained"
-        >
-          Annotate
-        </Button>
-        <Button
-          variant="contained"
-          sx={{ width: 200 }}
-          onClick={() => setPage((p) => p + 1)}
-          disabled={page * pageSize > logosToAnnotate.length}
-        >
-          next
-        </Button>
-      </Paper>
-
-      <AnnotateLogoModal
-        game="logoDeepSearch"
-        isOpen={isAnnotationOpen}
-        logos={logosToAnnotate}
-        closeAnnotation={closeAnnotation}
-        toggleLogoSelection={toggleSelection}
-        afterAnnotation={afterAnnotation}
-        {...searchState}
-      />
-    </Box>
+    </React.Suspense>
   );
 }

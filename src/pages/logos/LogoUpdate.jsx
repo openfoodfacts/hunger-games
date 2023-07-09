@@ -24,6 +24,7 @@ import { useTranslation } from "react-i18next";
 
 //  Only for testing purpose
 import { sleep } from "../../utils";
+import { CircularProgress } from "@mui/material";
 
 const getImageURL = (logo) => offService.getImageUrl(logo.image.source_image);
 
@@ -201,5 +202,9 @@ export default function LogoUpdate() {
     };
   }, [logoId]);
 
-  return <UpdateLogoForm {...fetchedData} logoId={logoId} />;
+  return (
+    <React.Suspense fallback={<CircularProgress />}>
+      <UpdateLogoForm {...fetchedData} logoId={logoId} />
+    </React.Suspense>
+  );
 }
