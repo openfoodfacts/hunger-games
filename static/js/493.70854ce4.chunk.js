@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkhunger_game=self.webpackChunkhunger_game||[]).push([[493],{3493:function(e,n,s){s.r(n);var r=s(9867),c=s(8547),t=s(7298),a=s(2834);n.default=function(){return(0,a.jsx)(r.Suspense,{children:(0,a.jsxs)(t.Z,{sx:{p:2},children:[(0,a.jsx)(c.Z,{variant:"h5",component:"h1",sx:{mb:2},children:"Restricted page"}),(0,a.jsx)(c.Z,{children:"Advanced games are restricted to connected users"})]})})}}}]);
+//# sourceMappingURL=493.70854ce4.chunk.js.map
