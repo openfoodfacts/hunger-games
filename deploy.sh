@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd build;
+cd dist;
 cp index.html 404.html;
 cp index.html insights.html;
 cp index.html questions.html;
