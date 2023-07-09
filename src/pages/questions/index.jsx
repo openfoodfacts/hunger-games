@@ -19,6 +19,7 @@ import store, {
   nextPageSelector,
 } from "./store";
 import { Provider, useDispatch, useSelector } from "react-redux";
+import { CircularProgress } from "@mui/material";
 
 function QuestionsConsumer() {
   const dispatch = useDispatch();
@@ -68,8 +69,10 @@ function QuestionsConsumer() {
 
 export default function Questions() {
   return (
-    <Provider store={store}>
-      <QuestionsConsumer />
-    </Provider>
+    <React.Suspense fallback={<CircularProgress />}>
+      <Provider store={store}>
+        <QuestionsConsumer />
+      </Provider>
+    </React.Suspense>
   );
 }

@@ -16,6 +16,7 @@ import { logoTypeOptions } from "../../components/LogoSearchForm";
 import robotoff from "../../robotoff";
 import off from "../../off";
 import useUrlParams from "../../hooks/useUrlParams";
+import { CircularProgress } from "@mui/material";
 
 const PRODUCT_PAGE_SIZE = 2;
 
@@ -211,7 +212,7 @@ export default function AnnotateLogosFromProducts() {
   }, []);
 
   return (
-    <div>
+    <React.Suspense fallback={<CircularProgress />}>
       <Paper sx={{ padding: 2, position: "sticky", top: 0, zIndex: 1 }}>
         <Stack direction="row" spacing={1}>
           <TextField
@@ -309,6 +310,6 @@ export default function AnnotateLogosFromProducts() {
           />
         </>
       }
-    </div>
+    </React.Suspense>
   );
 }

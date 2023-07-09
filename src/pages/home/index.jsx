@@ -17,6 +17,7 @@ import UserData from "./UserData";
 
 import { localFavorites } from "../../localeStorageManager";
 import LoginContext from "../../contexts/login";
+import { CircularProgress } from "@mui/material";
 
 const Home = () => {
   const theme = useTheme();
@@ -32,7 +33,7 @@ const Home = () => {
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
   return (
-    <>
+    <React.Suspense fallback={<CircularProgress />}>
       <Box sx={{ p: 2, alignItems: "center" }}>
         <Typography
           variant="h5"
@@ -162,7 +163,7 @@ const Home = () => {
 
       <Divider sx={{ width: "100%" }} light />
       <FooterWithLinks />
-    </>
+    </React.Suspense>
   );
 };
 

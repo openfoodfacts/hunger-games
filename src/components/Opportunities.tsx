@@ -8,6 +8,7 @@ import CardContent from "@mui/material/CardContent";
 import Box from "@mui/material/Box";
 import Skeleton from "@mui/material/Skeleton";
 import Button from "@mui/material/Button";
+import { CircularProgress } from "@mui/material";
 
 import robotoff from "../robotoff";
 import off from "../off";
@@ -28,40 +29,44 @@ const OpportunityCard = (props) => {
   })}`;
 
   return (
-    <Card
-      sx={{
-        minWidth: 250,
-      }}
-      variant="outlined"
-    >
-      <CardActionArea component={Link} to={targetUrl} sx={{ height: "100%" }}>
-        <CardContent>
-          <Typography variant="h6">{name}</Typography>
-          <Typography sx={{ textAlign: "end", mt: 3, fontSize: "1.5rem" }}>
-            {questionNumber.toLocaleString()}
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-    </Card>
+    <React.Suspense fallback={<CircularProgress />}>
+      <Card
+        sx={{
+          minWidth: 250,
+        }}
+        variant="outlined"
+      >
+        <CardActionArea component={Link} to={targetUrl} sx={{ height: "100%" }}>
+          <CardContent>
+            <Typography variant="h6">{name}</Typography>
+            <Typography sx={{ textAlign: "end", mt: 3, fontSize: "1.5rem" }}>
+              {questionNumber.toLocaleString()}
+            </Typography>
+          </CardContent>
+        </CardActionArea>
+      </Card>
+    </React.Suspense>
   );
 };
 
 const CardSkeleton = () => (
-  <Card
-    sx={{
-      minWidth: 250,
-    }}
-  >
-    <CardContent>
-      <Skeleton variant="rectangular" width={200} height={40} />
-      <Skeleton
-        variant="rectangular"
-        width={100}
-        height={50}
-        sx={{ mt: 3, ml: "auto", fontSize: "1.5rem" }}
-      />
-    </CardContent>
-  </Card>
+  <React.Suspense fallback={<CircularProgress />}>
+    <Card
+      sx={{
+        minWidth: 250,
+      }}
+    >
+      <CardContent>
+        <Skeleton variant="rectangular" width={200} height={40} />
+        <Skeleton
+          variant="rectangular"
+          width={100}
+          height={50}
+          sx={{ mt: 3, ml: "auto", fontSize: "1.5rem" }}
+        />
+      </CardContent>
+    </Card>
+  </React.Suspense>
 );
 
 const useTranslation = (toTranslate) => {
@@ -105,7 +110,7 @@ const Opportunities = (props) => {
       .getUnansweredValues({ type, campaign, country, page, count: pageSize })
       .then(({ data }) => {
         if (isValid) {
-          setRemainingQuestions((prev) => [...prev, ...data.questions]);
+          setRemainingQuestions((prev) => [...prev, ...data?.questions]);
           setIsLoading(false);
         }
       })
@@ -124,49 +129,51 @@ const Opportunities = (props) => {
 
   const lang = getLang();
   return (
-    <Box sx={{ mt: 2, px: 2 }}>
-      <Typography variant="h6" component="h3">
-        {type}
-      </Typography>
-      <Box
-        sx={{
-          display: "grid",
-          gridTemplateColumns: "repeat(auto-fill, minmax(200px, 1fr))",
-          gridGap: "10px 50px",
-        }}
-      >
-        {remainingQuestions.map(([value, questionNumber]) => {
-          const name =
-            translation[value]?.name?.[lang] ??
-            translation[value]?.name?.en ??
-            value;
-          return (
-            <OpportunityCard
-              key={value}
-              value={value}
-              name={name}
-              type={type}
-              campaign={campaign}
-              country={country}
-              questionNumber={questionNumber}
-            />
-          );
-        })}
-        {isLoading &&
-          [
-            0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18,
-            19, 20, 21, 22, 23, 24,
-          ].map((id) => <CardSkeleton key={id} />)}
-        <Button
-          disabled={isLoading}
-          variant="contained"
-          fullWidth
-          onClick={() => setPage((p) => p + 1)}
+    <React.Suspense fallback={<CircularProgress />}>
+      <Box sx={{ mt: 2, px: 2 }}>
+        <Typography variant="h6" component="h3">
+          {type}
+        </Typography>
+        <Box
+          sx={{
+            display: "grid",
+            gridTemplateColumns: "repeat(auto-fill, minmax(200px, 1fr))",
+            gridGap: "10px 50px",
+          }}
         >
-          Load more
-        </Button>
+          {remainingQuestions.map(([value, questionNumber]) => {
+            const name =
+              translation[value]?.name?.[lang] ??
+              translation[value]?.name?.en ??
+              value;
+            return (
+              <OpportunityCard
+                key={value}
+                value={value}
+                name={name}
+                type={type}
+                campaign={campaign}
+                country={country}
+                questionNumber={questionNumber}
+              />
+            );
+          })}
+          {isLoading &&
+            [
+              0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18,
+              19, 20, 21, 22, 23, 24,
+            ].map((id) => <CardSkeleton key={id} />)}
+          <Button
+            disabled={isLoading}
+            variant="contained"
+            fullWidth
+            onClick={() => setPage((p) => p + 1)}
+          >
+            Load more
+          </Button>
+        </Box>
       </Box>
-    </Box>
+    </React.Suspense>
   );
 };
 

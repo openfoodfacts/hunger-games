@@ -20,6 +20,7 @@ import DevModeContext from "../../contexts/devMode";
 import ColorModeContext from "../../contexts/colorMode";
 import { localSettings, localSettingsKeys } from "../../localeStorageManager";
 import FooterWithLinks from "../../components/Footer";
+import { CircularProgress } from "@mui/material";
 
 export default function Settings() {
   const { t, i18n } = useTranslation();
@@ -51,7 +52,7 @@ export default function Settings() {
   };
 
   return (
-    <>
+    <React.Suspense fallback={<CircularProgress />}>
       <Stack sx={{ my: 5, mx: 2, alignItems: "flex-start" }} spacing={4}>
         <Typography variant="h4" component="h2" sx={{ mb: 5 }}>
           {t("settings.settings")}
@@ -133,6 +134,6 @@ export default function Settings() {
       </Stack>
       <Divider sx={{ width: "100%" }} light />
       <FooterWithLinks />
-    </>
+    </React.Suspense>
   );
 }
