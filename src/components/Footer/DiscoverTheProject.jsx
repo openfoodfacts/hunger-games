@@ -60,6 +60,7 @@ const DiscoverTheProject = () => {
         {discover.map((content) => {
           return (
             <Button
+              key={content.text}
               sx={{
                 backgroundColor: "#a08d84",
                 "&:hover": { backgroundColor: "#887369" },
