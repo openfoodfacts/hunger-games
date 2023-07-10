@@ -18,7 +18,7 @@ import LoginContext from "./contexts/login";
 import off from "./off";
 import { IS_DEVELOPMENT_MODE } from "./const";
 import ColorModeContext from "./contexts/colorMode";
-import { CircularProgress } from "@mui/material";
+import { Stack, CircularProgress } from "@mui/material";
 
 const EcoScorePage = React.lazy(() => import("./pages/eco-score"));
 const LogoAnnotationPage = React.lazy(() =>
@@ -221,7 +221,17 @@ export default function App() {
   const theme = createTheme(getToken(mode));
 
   return (
-    <React.Suspense fallback={<CircularProgress />}>
+    <React.Suspense
+      fallback={
+        <Stack
+          alignItems="center"
+          justifyContent="center"
+          style={{ height: "100vh" }}
+        >
+          <CircularProgress />
+        </Stack>
+      }
+    >
       <ColorModeContext.Provider value={colorMode}>
         <ThemeProvider theme={theme}>
           <LoginContext.Provider value={{ ...userState, refresh }}>
