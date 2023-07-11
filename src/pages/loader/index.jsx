@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Stack, CircularProgress, CssBaseline } from "@mui/material";
 
-const Loader = () => {
+export default function Loader() {
   return (
     <React.Fragment>
       <CssBaseline />
@@ -14,6 +14,4 @@ const Loader = () => {
       </Stack>
     </React.Fragment>
   );
-};
-
-export default Loader;
+}

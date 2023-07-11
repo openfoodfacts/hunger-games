@@ -19,6 +19,8 @@ import off from "./off";
 import { IS_DEVELOPMENT_MODE } from "./const";
 import ColorModeContext from "./contexts/colorMode";
 
+import Loader from "./pages/loader";
+
 const EcoScorePage = React.lazy(() => import("./pages/eco-score"));
 const LogoAnnotationPage = React.lazy(() =>
   import("./pages/logos/LogoAnnotation")
@@ -44,7 +46,6 @@ const LogoQuestionValidator = React.lazy(() =>
   import("./pages/logosValidator/LogoQuestionValidator")
 );
 const DashBoard = React.lazy(() => import("./pages/logosValidator/DashBoard"));
-const Loader = React.lazy(() => import("./pages/loader"));
 
 // OFF colors
 const latte = "#F6F3F0";
