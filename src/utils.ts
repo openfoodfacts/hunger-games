@@ -18,7 +18,7 @@ const reformatTagMapping = {
   ü: "u",
 };
 
-export const reformatValueTag = (value) => {
+export const reformatValueTag = (value: string) => {
   if (!value) {
     return value;
   }
@@ -30,7 +30,7 @@ export const reformatValueTag = (value) => {
   return output;
 };
 
-export const removeEmptyKeys = (obj) => {
+export const removeEmptyKeys = (obj: object) => {
   Object.keys(obj).forEach(
     (key) => (obj[key] == null || obj[key] === "") && delete obj[key]
   );
@@ -38,12 +38,12 @@ export const removeEmptyKeys = (obj) => {
 };
 
 //  Only for testing purpose
-export function sleep(ms) {
+export function sleep(ms: number) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
 //to provide capitalised country name; en:france => France
-export const capitaliseName = (string) => {
+export const capitaliseName = (string: string | undefined) => {
   if (!string) {
     return string;
   }
