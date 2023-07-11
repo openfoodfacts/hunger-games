@@ -18,7 +18,6 @@ import LoginContext from "./contexts/login";
 import off from "./off";
 import { IS_DEVELOPMENT_MODE } from "./const";
 import ColorModeContext from "./contexts/colorMode";
-import { CircularProgress } from "@mui/material";
 
 const EcoScorePage = React.lazy(() => import("./pages/eco-score"));
 const LogoAnnotationPage = React.lazy(() =>
@@ -45,6 +44,7 @@ const LogoQuestionValidator = React.lazy(() =>
   import("./pages/logosValidator/LogoQuestionValidator")
 );
 const DashBoard = React.lazy(() => import("./pages/logosValidator/DashBoard"));
+const Loader = React.lazy(() => import("./pages/loader"));
 
 // OFF colors
 const latte = "#F6F3F0";
@@ -221,7 +221,7 @@ export default function App() {
   const theme = createTheme(getToken(mode));
 
   return (
-    <React.Suspense fallback={<CircularProgress />}>
+    <React.Suspense fallback={<Loader />}>
       <ColorModeContext.Provider value={colorMode}>
         <ThemeProvider theme={theme}>
           <LoginContext.Provider value={{ ...userState, refresh }}>

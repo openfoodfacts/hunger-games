@@ -8,6 +8,7 @@ import MenuItem from "@mui/material/MenuItem";
 import TextField from "@mui/material/TextField";
 
 import { useTranslation } from "react-i18next";
+import Loader from "../loader";
 
 import LabelFilter from "../../components/QuestionFilter/LabelFilter";
 import LogoGrid from "../../components/LogoGrid";
@@ -16,7 +17,6 @@ import { logoTypeOptions } from "../../components/LogoSearchForm";
 import robotoff from "../../robotoff";
 import off from "../../off";
 import useUrlParams from "../../hooks/useUrlParams";
-import { CircularProgress } from "@mui/material";
 
 const PRODUCT_PAGE_SIZE = 2;
 
@@ -212,7 +212,7 @@ export default function AnnotateLogosFromProducts() {
   }, []);
 
   return (
-    <React.Suspense fallback={<CircularProgress />}>
+    <React.Suspense fallback={<Loader />}>
       <Paper sx={{ padding: 2, position: "sticky", top: 0, zIndex: 1 }}>
         <Stack direction="row" spacing={1}>
           <TextField

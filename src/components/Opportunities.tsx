@@ -8,7 +8,8 @@ import CardContent from "@mui/material/CardContent";
 import Box from "@mui/material/Box";
 import Skeleton from "@mui/material/Skeleton";
 import Button from "@mui/material/Button";
-import { CircularProgress } from "@mui/material";
+
+import Loader from "../pages/loader";
 
 import robotoff from "../robotoff";
 import off from "../off";
@@ -29,7 +30,7 @@ const OpportunityCard = (props) => {
   })}`;
 
   return (
-    <React.Suspense fallback={<CircularProgress />}>
+    <React.Suspense fallback={<Loader />}>
       <Card
         sx={{
           minWidth: 250,
@@ -50,7 +51,7 @@ const OpportunityCard = (props) => {
 };
 
 const CardSkeleton = () => (
-  <React.Suspense fallback={<CircularProgress />}>
+  <React.Suspense fallback={<Loader />}>
     <Card
       sx={{
         minWidth: 250,
@@ -129,7 +130,7 @@ const Opportunities = (props) => {
 
   const lang = getLang();
   return (
-    <React.Suspense fallback={<CircularProgress />}>
+    <React.Suspense fallback={<Loader />}>
       <Box sx={{ mt: 2, px: 2 }}>
         <Typography variant="h6" component="h3">
           {type}

@@ -31,7 +31,7 @@ import off from "../../off";
 import useUrlParams from "../../hooks/useUrlParams";
 
 import { LOGOS } from "./dashboardDefinition";
-import { CircularProgress } from "@mui/material";
+import Loader from "../loader";
 
 const fetchData = async (insightId) => {
   const response = await robotoff.insightDetail(insightId);
@@ -448,7 +448,7 @@ function LogoQuestionValidator() {
 
 export default function WrappedLogoQuestionValidator() {
   return (
-    <React.Suspense fallback={<CircularProgress />}>
+    <React.Suspense fallback={<Loader />}>
       <Provider store={store}>
         <LogoQuestionValidator />
       </Provider>

@@ -12,7 +12,7 @@ import Opportunities from "../../components/Opportunities";
 import { DEFAULT_FILTER_STATE } from "../../components/QuestionFilter/const";
 import { useTranslation } from "react-i18next";
 import { capitaliseName } from "../../utils";
-import { CircularProgress } from "@mui/material";
+import Loader from "../loader";
 
 const ecoScoreCards = [
   {
@@ -169,7 +169,7 @@ export default function EcoScore() {
   const [selectedCountry, setSelectedCountry] = React.useState(countryNames[0]);
 
   return (
-    <React.Suspense fallback={<CircularProgress />}>
+    <React.Suspense fallback={<Loader />}>
       <Stack
         spacing={2}
         sx={{

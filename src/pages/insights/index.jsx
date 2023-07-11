@@ -1,4 +1,4 @@
-import { CircularProgress, Divider, Stack } from "@mui/material";
+import { Divider, Stack } from "@mui/material";
 import * as React from "react";
 
 import Typography from "@mui/material/Typography";
@@ -6,6 +6,8 @@ import Typography from "@mui/material/Typography";
 import FilterInsights from "./FilterInsights";
 import InsightGrid from "./InsightsGrid";
 import { useTranslation } from "react-i18next";
+
+import Loader from "../loader";
 
 import useUrlParams from "../../hooks/useUrlParams";
 
@@ -25,7 +27,7 @@ export default function Insights() {
   );
 
   return (
-    <React.Suspense fallback={<CircularProgress />}>
+    <React.Suspense fallback={<Loader />}>
       <Stack spacing={2} sx={{ padding: 2 }}>
         <Typography>{t("insights.insights")}</Typography>
         <FilterInsights
