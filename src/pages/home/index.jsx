@@ -17,7 +17,7 @@ import UserData from "./UserData";
 
 import { localFavorites } from "../../localeStorageManager";
 import LoginContext from "../../contexts/login";
-import { CircularProgress } from "@mui/material";
+import Loader from "../loader";
 
 const Home = () => {
   const theme = useTheme();
@@ -33,7 +33,7 @@ const Home = () => {
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
   return (
-    <React.Suspense fallback={<CircularProgress />}>
+    <React.Suspense fallback={<Loader />}>
       <Box sx={{ p: 2, alignItems: "center" }}>
         <Typography
           variant="h5"

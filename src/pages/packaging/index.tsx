@@ -27,7 +27,7 @@ import { getImagesUrls } from "../questions/utils";
 import offService from "../../off";
 import { useTranslation } from "react-i18next";
 import useUrlParams from "../../hooks/useUrlParams";
-import { CircularProgress } from "@mui/material";
+import Loader from "../loader";
 
 const formatData = (innerRows) => {
   const packagings = innerRows
@@ -96,7 +96,7 @@ const Page = () => {
     return <p>Loading...</p>;
   }
   return (
-    <React.Suspense fallback={<CircularProgress />}>
+    <React.Suspense fallback={<Loader />}>
       <Stack direction="row" spacing={1} sx={{ overflow: "auto" }}>
         {getImagesUrls(product.images, product.code).map((src) => (
           <ZoomableImage

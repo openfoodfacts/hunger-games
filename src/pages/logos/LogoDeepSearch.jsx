@@ -6,7 +6,6 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import Paper from "@mui/material/Paper";
 import Link from "@mui/material/Link";
-import CircularProgress from "@mui/material/CircularProgress";
 import LinearProgress from "@mui/material/LinearProgress";
 
 import LogoGrid from "../../components/LogoGrid";
@@ -16,6 +15,8 @@ import off from "../../off";
 import useUrlParams from "../../hooks/useUrlParams";
 import AnnotateLogoModal from "../../components/AnnotateLogoModal";
 import { useTranslation } from "react-i18next";
+
+import Loader from "../loader";
 
 const DEFAULT_COUNT = 25;
 
@@ -53,7 +54,7 @@ const LoadingReferenceLogos = () => {
         {t("logos.loading_messages.pending_reference_logos")}
       </Typography>
       <br />
-      <CircularProgress />
+      <Loader />
     </Box>
   );
 };
@@ -299,7 +300,7 @@ export default function LogoSearch() {
   };
 
   return (
-    <React.Suspense fallback={<CircularProgress />}>
+    <React.Suspense fallback={<Loader />}>
       <Box sx={{ padding: 2 }}>
         <Typography variant="h4" sx={{ mb: 2 }}>
           Logo search
