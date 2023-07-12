@@ -24,5 +24,14 @@ yarn-error.log*
 
 .idea
 
+# yarn without pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
 # vite build
 dist/
