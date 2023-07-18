@@ -2043,7 +2043,7 @@ __metadata:
     react-i18next: ^12.3.1
     react-redux: ^8.0.5
     react-router-dom: ^6.4.1
-    react-zoom-pan-pinch: ^2.5.0
+    react-zoom-pan-pinch: ^3.1.0
     reactour: ^1.19.0
     redux: ^4.2.0
     styled-components: ^5.3.6
@@ -2967,13 +2967,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-zoom-pan-pinch@npm:^2.5.0":
-  version: 2.6.1
-  resolution: "react-zoom-pan-pinch@npm:2.6.1"
+"react-zoom-pan-pinch@npm:^3.1.0":
+  version: 3.1.0
+  resolution: "react-zoom-pan-pinch@npm:3.1.0"
   peerDependencies:
     react: "*"
     react-dom: "*"
-  checksum: aad883309f8e7300ab22a91a1c9ef660dd213e8efb50bd081ec1a28f89ace247c7374ffb96f617e030698bee185a860491af7722b5b35abbc38423794e6ea8d8
+  checksum: 3289cd01edd207697c97303c217e91fe137e3469c39ff54ab51cb17ff8bf8a045b95fb2cc4692b826da2ae69b045589e093e9e561225b696bbc18da95e852242
   languageName: node
   linkType: hard
 
