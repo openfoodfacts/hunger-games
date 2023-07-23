@@ -207,7 +207,8 @@ export default function LogoAnnotation() {
       ...prevState,
       logos: prevState.logos.map((logo, index) => {
         if (logo.annotation_value === null) {
-          logo.selected = true;
+          logo.selected =
+            logo.annotation_type === null && logo.annotation_value === null;
         }
         return logo;
       }),
