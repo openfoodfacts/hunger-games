@@ -6,7 +6,7 @@ import LogoForm from "../../components/LogoForm";
 import robotoff from "../../robotoff";
 import offService from "../../off";
 import externalApi from "../../externalApi";
-import { IS_DEVELOPMENT_MODE } from "../../const.js";
+import { IS_DEVELOPMENT_MODE } from "../../const";
 
 import Tooltip from "@mui/material/Tooltip";
 import IconButton from "@mui/material/IconButton";
