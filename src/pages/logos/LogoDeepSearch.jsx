@@ -253,7 +253,9 @@ export default function LogoSearch() {
       ids.forEach((id) => (shouldBeSet[id] = true));
 
       return logos.map((logo) =>
-        shouldBeSet[logo.id]
+        shouldBeSet[logo.id] &&
+        logo.annotation_type === null &&
+        logo.annotation_value === null
           ? {
               ...logo,
               selected: newSelectedState,
