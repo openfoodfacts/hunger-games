@@ -56,7 +56,7 @@ const OpenFoodFacts = () => {
       <Box>
         {socialMedia.map((media) => {
           return (
-            <IconButton href={media.link} target="_blank">
+            <IconButton key={media.link} href={media.link} target="_blank">
               {media.icon}
             </IconButton>
           );

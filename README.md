@@ -37,10 +37,10 @@ The main goal is: Every Open Food Facts user can annotate products in a few minu
 
 ## Setup:
 
-- Install Node: https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
-- Install yarn `npm install --global yarn`
-- Install libraries `yarn install`
-- run the project locally `yarn start` (available on http://localhost:3000)
+- [Install Node](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
+- [Install yarn](https://classic.yarnpkg.com/lang/en/docs/install/)
+- Install libraries: `yarn install`
+- run the project locally `yarn dev`
 
 ## Libraries:
 
@@ -54,17 +54,24 @@ Open Food Facts APIs and [Robotoff](https://github.com/openfoodfacts/robotoff)
 
 ## Build
 
-- `yarn build`
+
+```
+yarn build
+```
 
 ## Countries list
 
-- `yarn countries`
+```
+yarn countries
+```
 
 Generate the JSON file `src/assets/countries.json` which contains all the countries available on OFF taxonomy. Data are obtained from static.openfoodfacts.org
 
 ## Taxonomy auto-complete
 
-- `node update-taxonomy-suggestions.js`
+```
+node update-taxonomy-suggestions.js
+```
 
 Fetch categories and labels taxonomy from OpenFoodFacts static files, and generate JSON files used by the `Autocomplete` fields.
 

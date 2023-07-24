@@ -12,6 +12,7 @@ import Opportunities from "../../components/Opportunities";
 import { DEFAULT_FILTER_STATE } from "../../components/QuestionFilter/const";
 import { useTranslation } from "react-i18next";
 import { capitaliseName } from "../../utils";
+import Loader from "../loader";
 
 const ecoScoreCards = [
   {
@@ -168,49 +169,51 @@ export default function EcoScore() {
   const [selectedCountry, setSelectedCountry] = React.useState(countryNames[0]);
 
   return (
-    <Stack
-      spacing={2}
-      sx={{
-        padding: 5,
-      }}
-    >
-      <Typography>{t("eco-score.description")}</Typography>
-      <Box
+    <React.Suspense fallback={<Loader />}>
+      <Stack
+        spacing={2}
         sx={{
-          display: "grid",
-          gridTemplateColumns: "repeat(auto-fill, minmax(200px, 1fr))",
-          gridGap: "10px 50px",
+          padding: 5,
         }}
       >
-        {ecoScoreCards.map((props) => (
-          <Box key={props.title}>
-            <SmallQuestionCard {...props} />
-          </Box>
-        ))}
-      </Box>
+        <Typography>{t("eco-score.description")}</Typography>
+        <Box
+          sx={{
+            display: "grid",
+            gridTemplateColumns: "repeat(auto-fill, minmax(200px, 1fr))",
+            gridGap: "10px 50px",
+          }}
+        >
+          {ecoScoreCards.map((props) => (
+            <Box key={props.title}>
+              <SmallQuestionCard {...props} />
+            </Box>
+          ))}
+        </Box>
 
-      <Divider />
-      <TextField
-        select
-        label={t("eco-score.countryLabel")}
-        value={selectedCountry}
-        onChange={(event) => {
-          setSelectedCountry(event.target.value);
-        }}
-        sx={{ width: 200 }}
-      >
-        {countryNames.map((country) => (
-          <MenuItem value={country} key={country}>
-            {capitaliseName(country)}
-          </MenuItem>
-        ))}
-      </TextField>
+        <Divider />
+        <TextField
+          select
+          label={t("eco-score.countryLabel")}
+          value={selectedCountry}
+          onChange={(event) => {
+            setSelectedCountry(event.target.value);
+          }}
+          sx={{ width: 200 }}
+        >
+          {countryNames.map((country) => (
+            <MenuItem value={country} key={country}>
+              {capitaliseName(country)}
+            </MenuItem>
+          ))}
+        </TextField>
 
-      <Opportunities
-        type="category"
-        country={selectedCountry}
-        campaign="agribalyse-category"
-      />
-    </Stack>
+        <Opportunities
+          type="category"
+          country={selectedCountry}
+          campaign="agribalyse-category"
+        />
+      </Stack>
+    </React.Suspense>
   );
 }

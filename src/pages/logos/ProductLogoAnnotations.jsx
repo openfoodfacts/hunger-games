@@ -8,6 +8,7 @@ import MenuItem from "@mui/material/MenuItem";
 import TextField from "@mui/material/TextField";
 
 import { useTranslation } from "react-i18next";
+import Loader from "../loader";
 
 import LabelFilter from "../../components/QuestionFilter/LabelFilter";
 import LogoGrid from "../../components/LogoGrid";
@@ -211,7 +212,7 @@ export default function AnnotateLogosFromProducts() {
   }, []);
 
   return (
-    <div>
+    <React.Suspense fallback={<Loader />}>
       <Paper sx={{ padding: 2, position: "sticky", top: 0, zIndex: 1 }}>
         <Stack direction="row" spacing={1}>
           <TextField
@@ -309,6 +310,6 @@ export default function AnnotateLogosFromProducts() {
           />
         </>
       }
-    </div>
+    </React.Suspense>
   );
 }

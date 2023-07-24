@@ -46,7 +46,7 @@ const Donate = () => {
         {t("settings.text1")}
         <br />
         <br />
-        <Typography variant="h6">{t("settings.thank_you")} ❤️</Typography>
+        {t("settings.thank_you")} ❤️
       </Typography>
     </Box>
   );

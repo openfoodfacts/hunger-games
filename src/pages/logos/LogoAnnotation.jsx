@@ -189,7 +189,9 @@ export default function LogoAnnotation() {
       return {
         ...state,
         logos: state.logos.map((logo) =>
-          shouldBeSet[logo.id]
+          shouldBeSet[logo.id] &&
+          logo.annotation_type === null &&
+          logo.annotation_value === null
             ? {
                 ...logo,
                 selected: newSelectedState,
@@ -205,7 +207,8 @@ export default function LogoAnnotation() {
       ...prevState,
       logos: prevState.logos.map((logo, index) => {
         if (logo.annotation_value === null) {
-          logo.selected = true;
+          logo.selected =
+            logo.annotation_type === null && logo.annotation_value === null;
         }
         return logo;
       }),
@@ -266,131 +269,133 @@ export default function LogoAnnotation() {
   }
 
   return (
-    <Box sx={{ margin: "2% 10%" }}>
-      <Typography
-        typography="h2"
-        sx={{
-          fontSize: "1.5rem",
-          fontWeight: 600,
-          marginBottom: 2,
-        }}
-      >
-        {t("logos.annotations")}
-      </Typography>
-      <Typography>{t("logos.task_description")}</Typography>
-      <Box
-        sx={{
-          position: "sticky",
-          top: 0,
-          zIndex: 1,
-          paddingY: 2,
-          background: `linear-gradient(0deg, ${theme.palette.background.paper}00 0%, ${theme.palette.background.paper}FF 25px, ${theme.palette.background.paper}FF 100%)`,
-          backdropFilter: "blur(5px)",
-        }}
-        elevation={0}
-      >
-        {/* Selection buttons */}
-        <Stack direction="row" spacing={1} sx={{ my: 1 }}>
-          <Button variant="outlined" size="small" onClick={selectAll}>
-            {t("logos.select_all")}
-          </Button>
-          <Button
-            variant="outlined"
-            size="small"
-            disabled={
-              selectedIds.length === 0 ||
-              (selectedIds.length === 1 &&
-                selectedIds[0].toString() === logoSearchParams.logo_id)
-            }
-            onClick={unselectAll}
-          >
-            {t("logos.unselect_all")}
-          </Button>
-          <LoadingButton
-            variant="outlined"
-            size="small"
-            onClick={refreshData}
-            loading={isRefreshing}
-          >
-            {t("logos.refresh")}
-          </LoadingButton>
-          <div style={{ flexGrow: 1 }} />
-          <Button
-            size="small"
-            variant="contained"
-            color="secondary"
-            component={Link}
-            to="/logos/search/"
-          >
-            {t("logos.search_specific")}
-          </Button>
-        </Stack>
-      </Box>
-
-      {logoState.isLoading && (
-        <Box sx={{ width: "100%", textAlign: "center", py: 10 }}>
-          <CircularProgress />
-        </Box>
-      )}
-      {/* Logos to select */}
-      <LogoGrid
-        logos={logoState.logos}
-        toggleLogoSelection={toggleSelection}
-        setLogoSelectionRange={setRangeSelection}
-        sx={{ justifyContent: "center" }}
-      />
-      <Box sx={{ my: 5, textAlign: "center" }}>
-        <Button
-          fullWidth
-          variant="contained"
-          disabled={logoState.isLoading || additionalLogos + 50 > 500}
-          onClick={() => {
-            addMoreLogos(50);
+    <React.Suspense fallback={<CircularProgress />}>
+      <Box sx={{ margin: "2% 10%" }}>
+        <Typography
+          typography="h2"
+          sx={{
+            fontSize: "1.5rem",
+            fontWeight: 600,
+            marginBottom: 2,
           }}
         >
-          {t("logos.load_more")}
-        </Button>
-      </Box>
-
-      <Box sx={{ my: 5, textAlign: "center", position: "sticky", bottom: 0 }}>
-        <Button
-          fullWidth
-          onClick={openAnnotation}
-          color="success"
-          variant="contained"
+          {t("logos.annotations")}
+        </Typography>
+        <Typography>{t("logos.task_description")}</Typography>
+        <Box
+          sx={{
+            position: "sticky",
+            top: 0,
+            zIndex: 1,
+            paddingY: 2,
+            background: `linear-gradient(0deg, ${theme.palette.background.paper}00 0%, ${theme.palette.background.paper}FF 25px, ${theme.palette.background.paper}FF 100%)`,
+            backdropFilter: "blur(5px)",
+          }}
+          elevation={0}
         >
-          Annotate
-        </Button>
-      </Box>
-
-      <AnnotateLogoModal
-        game="logoAnnotation"
-        value={logoState.referenceLogo.annotation_value ?? ""}
-        type={logoState.referenceLogo.annotation_type ?? ""}
-        isOpen={isAnnotationOpen}
-        logos={logoState.logos}
-        closeAnnotation={closeAnnotation}
-        toggleLogoSelection={toggleSelection}
-        afterAnnotation={(selectedLogos, annotation) => {
-          const logoIds = selectedLogos.map((l) => l.id);
-
-          setLogoState((prevState) => ({
-            ...prevState,
-            logos: prevState.logos.map((logo) => {
-              if (!logoIds.includes(logo.id)) {
-                return logo;
+          {/* Selection buttons */}
+          <Stack direction="row" spacing={1} sx={{ my: 1 }}>
+            <Button variant="outlined" size="small" onClick={selectAll}>
+              {t("logos.select_all")}
+            </Button>
+            <Button
+              variant="outlined"
+              size="small"
+              disabled={
+                selectedIds.length === 0 ||
+                (selectedIds.length === 1 &&
+                  selectedIds[0].toString() === logoSearchParams.logo_id)
               }
-              return {
-                ...logo,
-                selected: false,
-                annotation_type: annotation.type,
-                annotation_value: annotation.value,
-              };
-            }),
-          }));
-        }}
-      />
-      <BackToTop />
-    </Box>
+              onClick={unselectAll}
+            >
+              {t("logos.unselect_all")}
+            </Button>
+            <LoadingButton
+              variant="outlined"
+              size="small"
+              onClick={refreshData}
+              loading={isRefreshing}
+            >
+              {t("logos.refresh")}
+            </LoadingButton>
+            <div style={{ flexGrow: 1 }} />
+            <Button
+              size="small"
+              variant="contained"
+              color="secondary"
+              component={Link}
+              to="/logos/search/"
+            >
+              {t("logos.search_specific")}
+            </Button>
+          </Stack>
+        </Box>
+
+        {logoState.isLoading && (
+          <Box sx={{ width: "100%", textAlign: "center", py: 10 }}>
+            <CircularProgress />
+          </Box>
+        )}
+        {/* Logos to select */}
+        <LogoGrid
+          logos={logoState.logos}
+          toggleLogoSelection={toggleSelection}
+          setLogoSelectionRange={setRangeSelection}
+          sx={{ justifyContent: "center" }}
+        />
+        <Box sx={{ my: 5, textAlign: "center" }}>
+          <Button
+            fullWidth
+            variant="contained"
+            disabled={logoState.isLoading || additionalLogos + 50 > 500}
+            onClick={() => {
+              addMoreLogos(50);
+            }}
+          >
+            {t("logos.load_more")}
+          </Button>
+        </Box>
+
+        <Box sx={{ my: 5, textAlign: "center", position: "sticky", bottom: 0 }}>
+          <Button
+            fullWidth
+            onClick={openAnnotation}
+            color="success"
+            variant="contained"
+          >
+            Annotate
+          </Button>
+        </Box>
+
+        <AnnotateLogoModal
+          game="logoAnnotation"
+          value={logoState.referenceLogo.annotation_value ?? ""}
+          type={logoState.referenceLogo.annotation_type ?? ""}
+          isOpen={isAnnotationOpen}
+          logos={logoState.logos}
+          closeAnnotation={closeAnnotation}
+          toggleLogoSelection={toggleSelection}
+          afterAnnotation={(selectedLogos, annotation) => {
+            const logoIds = selectedLogos.map((l) => l.id);
+
+            setLogoState((prevState) => ({
+              ...prevState,
+              logos: prevState.logos.map((logo) => {
+                if (!logoIds.includes(logo.id)) {
+                  return logo;
+                }
+                return {
+                  ...logo,
+                  selected: false,
+                  annotation_type: annotation.type,
+                  annotation_value: annotation.value,
+                };
+              }),
+            }));
+          }}
+        />
+        <BackToTop />
+      </Box>
+    </React.Suspense>
   );
 }

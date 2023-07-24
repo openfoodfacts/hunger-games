@@ -24,6 +24,7 @@ import { useTranslation } from "react-i18next";
 
 //  Only for testing purpose
 import { sleep } from "../../utils";
+import Loader from "../loader";
 
 const getImageURL = (logo) => offService.getImageUrl(logo.image.source_image);
 
@@ -201,5 +202,9 @@ export default function LogoUpdate() {
     };
   }, [logoId]);
 
-  return <UpdateLogoForm {...fetchedData} logoId={logoId} />;
+  return (
+    <React.Suspense fallback={<Loader />}>
+      <UpdateLogoForm {...fetchedData} logoId={logoId} />
+    </React.Suspense>
+  );
 }

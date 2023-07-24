@@ -10,10 +10,11 @@ import Typography from "@mui/material/Typography";
 import LinkIcon from "@mui/icons-material/Link";
 import DeleteIcon from "@mui/icons-material/Delete";
 import DoneIcon from "@mui/icons-material/Done";
-import CircularProgress from "@mui/material/CircularProgress";
 import MuiLink from "@mui/material/Link";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
+
+import Loader from "../loader";
 
 import { useTranslation } from "react-i18next";
 import { useDispatch, useSelector } from "react-redux";
@@ -156,7 +157,7 @@ const QuestionDisplay = ({ question, productData }) => {
             {t("questions.please_wait_while_we_fetch_the_question")}
           </Typography>
           <br />
-          <CircularProgress />
+          <Loader />
         </Box>
       );
     }

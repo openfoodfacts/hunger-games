@@ -31,6 +31,7 @@ import off from "../../off";
 import useUrlParams from "../../hooks/useUrlParams";
 
 import { LOGOS } from "./dashboardDefinition";
+import Loader from "../loader";
 
 const fetchData = async (insightId) => {
   const response = await robotoff.insightDetail(insightId);
@@ -447,8 +448,10 @@ function LogoQuestionValidator() {
 
 export default function WrappedLogoQuestionValidator() {
   return (
-    <Provider store={store}>
-      <LogoQuestionValidator />
-    </Provider>
+    <React.Suspense fallback={<Loader />}>
+      <Provider store={store}>
+        <LogoQuestionValidator />
+      </Provider>
+    </React.Suspense>
   );
 }

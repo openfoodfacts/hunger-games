@@ -12,6 +12,8 @@ import Divider from "@mui/material/Divider";
 import Brightness4Icon from "@mui/icons-material/Brightness4";
 import Brightness7Icon from "@mui/icons-material/Brightness7";
 
+import Loader from "../loader";
+
 import { useTheme } from "@mui/material/styles";
 
 import { useTranslation } from "react-i18next";
@@ -51,7 +53,7 @@ export default function Settings() {
   };
 
   return (
-    <>
+    <React.Suspense fallback={<Loader />}>
       <Stack sx={{ my: 5, mx: 2, alignItems: "flex-start" }} spacing={4}>
         <Typography variant="h4" component="h2" sx={{ mb: 5 }}>
           {t("settings.settings")}
@@ -133,6 +135,6 @@ export default function Settings() {
       </Stack>
       <Divider sx={{ width: "100%" }} light />
       <FooterWithLinks />
-    </>
+    </React.Suspense>
   );
 }

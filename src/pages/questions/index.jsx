@@ -19,6 +19,7 @@ import store, {
   nextPageSelector,
 } from "./store";
 import { Provider, useDispatch, useSelector } from "react-redux";
+import Loader from "../loader";
 
 function QuestionsConsumer() {
   const dispatch = useDispatch();
@@ -68,8 +69,10 @@ function QuestionsConsumer() {
 
 export default function Questions() {
   return (
-    <Provider store={store}>
-      <QuestionsConsumer />
-    </Provider>
+    <React.Suspense fallback={<Loader />}>
+      <Provider store={store}>
+        <QuestionsConsumer />
+      </Provider>
+    </React.Suspense>
   );
 }
