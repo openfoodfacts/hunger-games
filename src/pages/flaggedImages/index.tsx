@@ -10,16 +10,28 @@ import DeleteOutlineIcon from "@mui/icons-material/DeleteOutline";
 import off from "../../off";
 import { OFF_IMAGE_URL } from "../../const";
 
-const getImageUrl = (code, imgid) =>
+type FlaggedImage = {
+  code: string;
+  imgid: number;
+  url: string;
+};
+
+type ApiRequest = {
+  result: FlaggedImage[];
+};
+
+const flagImageUrl = "https://amathjourney.com/api/off-annotation/flag-image/";
+
+const getImageUrl = (code: string, imgid: number) =>
   `${OFF_IMAGE_URL}/${off.getFormatedBarcode(code)}/${imgid}.jpg`;
 
 export default function FlaggedImages() {
   const { t } = useTranslation();
-  const [data, setData] = React.useState(null);
+  const [data, setData] = React.useState<FlaggedImage[] | null>(null);
 
   React.useEffect(() => {
     axios
-      .get("https://amathjourney.com/api/off-annotation/flag-image/")
+      .get<ApiRequest>(flagImageUrl)
       .then(({ data: { result } }) => setData(result))
       .catch(() => {
         setData([]);
@@ -56,15 +68,12 @@ export default function FlaggedImages() {
                 <td>
                   <IconButton
                     onClick={() => {
-                      axios.delete(
-                        `https://amathjourney.com/api/off-annotation/flag-image/${code}`,
-                        {
-                          mode: "no-cors",
-                          data: {
-                            imgid,
-                          },
-                        }
-                      );
+                      axios.delete(flagImageUrl + code, {
+                        mode: "no-cors",
+                        data: {
+                          imgid,
+                        },
+                      });
                       setData((prev) =>
                         prev.filter(
                           (line) => line.code !== code || line.imgid !== imgid
