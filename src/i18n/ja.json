@@ -26,7 +26,7 @@
     "saved_filters": "保存したフィルタ",
     "contribution_modal": {
       "title": "あなたの貢献は重要です",
-      "information": "Hunger Games is an effort to leverage the results of our OCR and artificial intelligence. When you use Hunger Games by Open Food Facts, you improve our entire database which helps the community make better food choices. We gather your annotations and use them to make Open Food Facts more accurate and efficient.",
+      "information": "Hunger Games は、OCR の結果を活用する取り組みです。 Open Food Facts の Hunger Games を使用すると、データベース全体が改善され、コミュニティがより良い食品を選択できるようになります。私たちはあなたの注釈を収集し、Open Food Facts をより正確かつ効率的にするために使用します。",
       "thank_you": "Open Food Factsを改善し、より多くの人が簡単に利用できるようにするためにご協力いただきありがとうございます。"
     },
     "statistics": {
@@ -97,8 +97,8 @@
         "campaign": "キャンペーン"
       },
       "placeholders": {
-        "value": "Value (Fanta, en:organic,...)",
-        "brand": "Auchan, Danone, Herta, ...",
+        "value": "キーワード(ファンタ, ja: オーガニック,…)",
+        "brand": "オーシャン、ダノン、ヘルタ、...",
         "campaign": "アノテーションキャンペーン"
       },
       "actions": {
@@ -218,7 +218,7 @@
     "dev_mode_label": "開発者モード",
     "dev_page_toggle": "{{name}} ページを表示",
     "join_community": "コミュニティに参加",
-    "text1": "Open Food Facts is a collaborative project built by tens of thousands of volunteers and managed by a non-profit organization with 8 employees. We need your donations to fund the Open Food Facts 2024 budget and to continue to develop the project.",
+    "text1": "Open Food Facts は、数万人のボランティアによって構築された共同プロジェクトであり、従業員 8 名の非営利団体によって管理されています。 Open Food Facts 2024 予算に資金を提供し、プロジェクトを継続的に発展させるために、皆様のご寄付が必要です。",
     "thank_you": "ありがとうございます",
     "donate": "寄付",
     "join_the_community": {
