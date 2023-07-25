@@ -2,8 +2,6 @@ name: Crowdin
 on:
   push:
     branches: [crowdin-trigger]
-  schedule:
-    - cron: "0 10 * * *"
   workflow_dispatch:
 
 jobs:
