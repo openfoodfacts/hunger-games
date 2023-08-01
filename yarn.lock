@@ -251,7 +251,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:^7.0.0, @babel/runtime@npm:^7.12.1, @babel/runtime@npm:^7.12.13, @babel/runtime@npm:^7.12.5, @babel/runtime@npm:^7.18.3, @babel/runtime@npm:^7.18.9, @babel/runtime@npm:^7.20.6, @babel/runtime@npm:^7.21.0, @babel/runtime@npm:^7.22.5, @babel/runtime@npm:^7.5.5, @babel/runtime@npm:^7.8.7, @babel/runtime@npm:^7.9.2":
+"@babel/runtime@npm:^7.0.0, @babel/runtime@npm:^7.12.1, @babel/runtime@npm:^7.12.13, @babel/runtime@npm:^7.12.5, @babel/runtime@npm:^7.18.3, @babel/runtime@npm:^7.18.9, @babel/runtime@npm:^7.20.6, @babel/runtime@npm:^7.21.0, @babel/runtime@npm:^7.22.5, @babel/runtime@npm:^7.22.6, @babel/runtime@npm:^7.5.5, @babel/runtime@npm:^7.8.7, @babel/runtime@npm:^7.9.2":
   version: 7.22.6
   resolution: "@babel/runtime@npm:7.22.6"
   dependencies:
@@ -725,11 +725,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mui/icons-material@npm:^5.11.0":
-  version: 5.13.7
-  resolution: "@mui/icons-material@npm:5.13.7"
+"@mui/icons-material@npm:^5.14.1":
+  version: 5.14.1
+  resolution: "@mui/icons-material@npm:5.14.1"
   dependencies:
-    "@babel/runtime": ^7.22.5
+    "@babel/runtime": ^7.22.6
   peerDependencies:
     "@mui/material": ^5.0.0
     "@types/react": ^17.0.0 || ^18.0.0
@@ -737,7 +737,7 @@ __metadata:
   peerDependenciesMeta:
     "@types/react":
       optional: true
-  checksum: f2bff37c5bf9038073b733c9fd1f5c595c7e8094e2616622babb9133dde7d671b0c068faf6db10cfb45e6105ab0d2d3f348b947441419454516afba5a513d652
+  checksum: d1713a1234dcbdbb3eea77beb43bb6d7a2c8b244991d66711e2e22963959de76cd184ebf0cf1a89417a14fb6cf18940316d87b27442f2b319a7d15c45f6066d8
   languageName: node
   linkType: hard
 
@@ -2031,7 +2031,7 @@ __metadata:
     "@emotion/react": ^11.10.4
     "@emotion/styled": ^11.10.4
     "@jonkoops/matomo-tracker-react": ^0.7.0
-    "@mui/icons-material": ^5.11.0
+    "@mui/icons-material": ^5.14.1
     "@mui/lab": ^5.0.0-alpha.118
     "@mui/material": ^5.11.7
     "@mui/x-data-grid": ^5.17.22
