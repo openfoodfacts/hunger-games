@@ -19,14 +19,14 @@
     },
     "account_band": {
       "title": "Vous voulez que votre contribution compte ? Créez un compte ou connectez-vous sur Open Food Facts !",
-      "log_in": "Nom d'utilisateur",
+      "log_in": "Connexion",
       "sign_up": "S'inscrire",
       "contribution_details": "Découvrez pourquoi votre contribution est importante"
     },
     "saved_filters": "Filtres enregistrés",
     "contribution_modal": {
       "title": "Votre contribution compte",
-      "information": "Hunger Games is an effort to leverage the results of our OCR and artificial intelligence. When you use Hunger Games by Open Food Facts, you improve our entire database which helps the community make better food choices. We gather your annotations and use them to make Open Food Facts more accurate and efficient.",
+      "information": "Le jeu Hunger Games est un effort visant à tirer parti des résultats de notre OCR et de notre intelligence artificielle. Lorsque vous utilisez Hunger Games par Open Food Facts, vous améliorez toute notre base de données ce qui aide la communauté à faire de meilleurs choix alimentaires. Nous recueillons vos annotations et les utilisons pour rendre Open Food Facts plus précis et plus efficace.",
       "thank_you": "Merci de nous aider à améliorer Open Food Facts afin que davantage de personnes puissent l'utiliser facilement."
     },
     "statistics": {
@@ -97,8 +97,8 @@
         "campaign": "Campagne"
       },
       "placeholders": {
-        "value": "Value (Fanta, en:organic,...)",
-        "brand": "Auchan, Danone, Herta, ...",
+        "value": "Valeur (Fanta, en:organic,...)",
+        "brand": "Auchan, Danone, Herta...",
         "campaign": "Campagnes d'annotations"
       },
       "actions": {
@@ -112,7 +112,7 @@
     "flag": "Quelque chose ne va pas? Signalez l'image !",
     "unflag": "Démarquer l'image",
     "reset_filters": "Réinitialiser les filtres",
-    "log_in": "Nom d'utilisateur",
+    "log_in": "Connexion",
     "sign_up": "S'inscrire",
     "login_title": "Faire compter votre annotation",
     "login_description": "Vous n'êtes actuellement pas connecté à Open Food Facts. Pour que vos réponses soient directement appliquées aux produits, et associées à votre compte, envisagez de vous connecter à votre compte Open Food Facts, ou d'en créer un",
@@ -205,7 +205,7 @@
     "crop_image_title": "recadrage du logo",
     "no_more_questions": "Aucune autre question sur ce logo. Vous pouvez essayer de trouver plus de logos avec le jeu suivant.",
     "loading_messages": {
-      "pending_reference_logos": "We are loading some logos examples to initialise the search",
+      "pending_reference_logos": "Nous chargeons quelques exemples de logos pour initialiser la recherche",
       "failed_reference_logos": "Nous n'avons trouvé aucun logo avec cette annotation. Essayez d'utiliser le jeu suivant pour annoter certains d'entre eux."
     }
   },
@@ -218,7 +218,7 @@
     "dev_mode_label": "Mode développeur",
     "dev_page_toggle": "Afficher la page {{name}}",
     "join_community": "Rejoignez la communauté",
-    "text1": "Open Food Facts is a collaborative project built by tens of thousands of volunteers and managed by a non-profit organization with 8 employees. We need your donations to fund the Open Food Facts 2024 budget and to continue to develop the project.",
+    "text1": "Open Food Facts est un projet collaboratif construit par des dizaines de milliers de bénévoles et géré par une organisation à but non lucratif de 8 employés. Nous avons besoin de vos dons pour financer le budget Open Food Facts 2024 et continuer à développer le projet.",
     "thank_you": "Merci",
     "donate": "Faire un don",
     "join_the_community": {
@@ -252,7 +252,7 @@
       "page2": {
         "title": "Jeu des questions",
         "text1": "Le produit appartient-il à cette marque ?",
-        "text2": "Répondez simplement avec un <strong>Oui/Non</strong> ! Vous ne connaissez pas la réponse ? Pas de soucis, il suffit de passer.",
+        "text2": "Répondez simplement par <strong>Oui/Non</strong> ! Vous ne connaissez pas la réponse ? Pas de soucis, il suffit de passer.",
         "text3": "Vous pouvez également utiliser les raccourcis clavier : y, n et k.",
         "text4": "Vous pouvez <strong>filtrer</strong> les produits en fonction du pays, des marques, de la popularité et bien plus encore !",
         "text5": "Si vous ne voulez pas le faire à chaque fois, vous pouvez également <strong>enregistrer les filtres</strong> en cliquant sur l'étoile. La prochaine fois que vous reviendrez, retrouvez les filtres enregistrés sur la page d'accueil elle-même"
