@@ -8,12 +8,12 @@
           "description": "Это изображение отвечает на вопросы?"
         },
         "logos": {
-          "title": "Logos",
+          "title": "Логотипы",
           "description": "Найдите все логотипы, соответствующие данному логотипу"
         },
         "eco_score": {
           "title": "Эко-оценка",
-          "description": "Annotate the questions with the highest value"
+          "description": "Аннотируйте вопросы с наивысшим значением"
         }
       }
     },
@@ -26,14 +26,14 @@
     "saved_filters": "Сохраненные фильтры",
     "contribution_modal": {
       "title": "Ваш вклад имеет значение",
-      "information": "Hunger Games is an effort to leverage the results of our OCR and artificial intelligence. When you use Hunger Games by Open Food Facts, you improve our entire database which helps the community make better food choices. We gather your annotations and use them to make Open Food Facts more accurate and efficient.",
+      "information": "«Голодные игры» — это попытка использовать результаты OCR и искусственного интеллекта. Когда вы используете «Голодные игры» от Open Food Facts, вы улучшаете всю нашу базу данных, что помогает сообществу делать лучший выбор продуктов питания. Мы собираем ваши аннотации и используем их, чтобы сделать Open Food Facts более точным и эффективным.",
       "thank_you": "Спасибо, что помогаете нам улучшать Open Food Facts, чтобы больше людей могли легко его использовать."
     },
     "statistics": {
       "title": "Статистика {{userName}}:",
       "editorCount": {
         "title": "Редактор",
-        "description": "Number of editions done"
+        "description": "Количество правок"
       },
       "contributorCount": {
         "title": "Участник",
@@ -41,7 +41,7 @@
       },
       "photographerCount": {
         "title": "Фотограф",
-        "description": "Taking photos for a product"
+        "description": "Делаем фото продукта"
       }
     }
   },
@@ -78,7 +78,7 @@
     "annotated_annotations": "Помеченный",
     "filters": {
       "active_filter_number": "+{{count}} фильтра",
-      "active_filter_number_one": "+{{count}} filter",
+      "active_filter_number_one": "+{{count}} фильтр",
       "active_filter_number_zero": "без фильтра",
       "short_label": {
         "value": "значение",
@@ -99,7 +99,7 @@
       "placeholders": {
         "value": "Value (Fanta, en:organic,...)",
         "brand": "Auchan, Danone, Herta, ...",
-        "campaign": "Annotation campaigns"
+        "campaign": "Аннотационные кампании"
       },
       "actions": {
         "edit": "Редактировать фильтры",
@@ -107,10 +107,10 @@
         "apply": "Применить"
       }
     },
-    "other_questions": "Other questions",
+    "other_questions": "Другие вопросы",
     "send": "Отправить",
     "flag": "Что-то не так? Пожалуйтесь/пометьте изображение!",
-    "unflag": "Unflag the image",
+    "unflag": "Снять отметку с изображения",
     "reset_filters": "Сбросить фильтры",
     "log_in": "Имя пользователя",
     "sign_up": "Регистрация",
@@ -122,20 +122,20 @@
     "title": "Голодные Игры",
     "games": "Игры",
     "questions": "Вопросы",
-    "logos": "Logos",
-    "logos-annotation": "Logos annotation",
-    "logos-search": "Logos search",
-    "logos-product-search": "Annotation per products",
-    "logos-deep-search": "Infinite annotation",
+    "logos": "Логотипы",
+    "logos-annotation": "Аннотация логотипов",
+    "logos-search": "Поиск логотипов",
+    "logos-product-search": "Аннотация по товарам",
+    "logos-deep-search": "Бесконечная аннотация",
     "manage": "Управление",
     "insights": "Прогнозы",
     "nutritions": "Пищевая и энергетическая ценность",
     "settings": "Настройки",
     "eco-score": "Эко-оценка",
     "dashboard": "Панель логотипов",
-    "tour": "Show tour",
-    "logged_in_user": "Logged as {{userName}}",
-    "log_in": "Click to login"
+    "tour": "Показать обучающий тур",
+    "logged_in_user": "Вы вошли как {{userName}}",
+    "log_in": "Нажмите, чтобы войти"
   },
   "insights": {
     "insights": "Прогнозы",
@@ -163,9 +163,9 @@
     "created_at": "Дата создания",
     "completed_at": "Дата завершения",
     "automatic": "Автоматический",
-    "human_required": "Human required",
-    "edit_product": "Open product edit",
-    "view_product": "Open product page"
+    "human_required": "Требуется человек",
+    "edit_product": "Открыть редактирование продукта",
+    "view_product": "Открыть страницу продукта"
   },
   "logos": {
     "annotation": "Заметка: ",
@@ -184,7 +184,7 @@
     "qr_code": "QR-код",
     "category": "Категория",
     "nutrition_label": "Этикетка пищевой ценности",
-    "no_logo": "Not a logo",
+    "no_logo": "Не логотип",
     "store": "Магазин",
     "detail": "Детали логотипа",
     "id": "ID логотипа:",
@@ -196,14 +196,14 @@
     "number_of_results": "Количество результатов:",
     "loading": "Загрузка…",
     "refresh": "Обновить",
-    "search_specific": "Search specific logo",
-    "load_more": "Load more",
+    "search_specific": "Поиск конкретного логотипа",
+    "load_more": "Загрузить ещё",
     "no_results": "Логотип не найден",
     "result_count": "Shows {{showing}} on {{available}} available",
     "flag": "Что-то не так? Пожалуйтесь/пометьте изображение!",
-    "unflag": "Unflag the image",
-    "crop_image_title": "crop of the logo",
-    "no_more_questions": "No more questions about this logo. You can try to find more logos with the following game.",
+    "unflag": "Снять отметку с изображения",
+    "crop_image_title": "обрезать логотип",
+    "no_more_questions": "Больше нет вопросов об этом логотипе. Вы можете попробовать найти больше логотипов в следующей игре.",
     "loading_messages": {
       "pending_reference_logos": "We are loading some logos examples to initialise the search",
       "failed_reference_logos": "We did not find any logos with this annotation. Try to use the following game to annotate some of them."
@@ -213,29 +213,29 @@
     "settings": "Настройки",
     "language": "Языки",
     "save": "Сохранить",
-    "reportIssue": "Found a bug? Please let us know.",
-    "dev_mode_title": "To get more options, activate the dev mode",
+    "reportIssue": "Нашли ошибку? Пожалуйста, дайте нам знать.",
+    "dev_mode_title": "Чтобы получить больше настроек, активируйте режим разработчика",
     "dev_mode_label": "Режим Разработчика",
     "dev_page_toggle": "Show {{name}} page",
     "join_community": "Присоединяйтесь к сообществу",
     "text1": "Open Food Facts is a collaborative project built by tens of thousands of volunteers and managed by a non-profit organization with 8 employees. We need your donations to fund the Open Food Facts 2024 budget and to continue to develop the project.",
-    "thank_you": "Thank you",
+    "thank_you": "Спасибо",
     "donate": "Поддержать",
     "join_the_community": {
       "discover_our": "Discover our ",
-      "code_of_conduct": "Code of conduct ",
-      "join_us_on": "Join us on ",
-      "forum": "Forum",
-      "subscribe_to_our": "Subscribe to our ",
-      "newsletter": "newsletter"
+      "code_of_conduct": "Правила поведения ",
+      "join_us_on": "Присоединяйтесь к нашему ",
+      "forum": "Форум",
+      "subscribe_to_our": "Подпишитесь на наш ",
+      "newsletter": "новостная рассылка"
     },
     "discover_the_project": "Откройте для себя проект",
     "Who_we_are": "Кто мы",
     "Vision_Mission_Values_and_Programs": "Видение, Миссия, Ценности и Программы",
-    "FAQS": "FAQS",
-    "open_Food_Facts_blog": "Open Food Facts blog",
+    "FAQS": "Часто задаваемые вопросы",
+    "open_Food_Facts_blog": "блог Open Food Facts",
     "Press": "Пресса",
-    "Open_Food_Facts_wiki": "Open Food Facts wiki (en)",
+    "Open_Food_Facts_wiki": "Open Food Facts wiki (ru)",
     "Translators": "Переводчики",
     "Partners": "Партнёры",
     "Open_Beauty_Facts": "Косметика",
@@ -244,39 +244,39 @@
   "helper": {
     "welcome": {
       "page1": {
-        "title": "Welcome to Hunger Games",
+        "title": "Добро пожаловать на Голодные игры",
         "text1": "Hunger Games is a collection of mini-games that help contribute to Open Food Facts in many ways. You can play are really exciting games from anywhere. Here is a guided tour of the entire website which will get you started.",
         "text2": "Убедитесь в том, что вы вошли в аккаунт на вебсайте Open Food Facts, чтобы получить признание за свой вклад. Если вы допустили ошибку, выделите время на её исправление, перейдя на веб-сайт.",
         "text3": "In case of any doubt about the games, click on the question mark icon at the top right of the page, and you can reach us on slack at the #hunger-games channel"
       },
       "page2": {
-        "title": "Questions Game",
-        "text1": "Does the food product belong to this brand?",
-        "text2": "Simply answer with a <strong>Yes/No</strong>! Don't know the answer? That's alright, just skip it.",
-        "text3": "You can also use your keyboard shortcuts: y,n and k.",
-        "text4": "You can <strong>filter</strong> the products based on country, brands, popularity and much more!",
-        "text5": "If you don't want to do this every single time, you can also <strong>save the filters</strong> by clicking on the star. Next time you come back, find the saved filters on the home page itself"
+        "title": "Игра вопросов",
+        "text1": "Этот продукт принадлежит этому бренду?",
+        "text2": "Просто ответьте <strong>Да/Нет</strong>! Не знаете ответ на вопрос? Ничего страшного, просто пропустите его.",
+        "text3": "Вы также можете использовать кнопки на клавиатуре: y,n и k.",
+        "text4": "Вы можете отфильтровать <strong>товары по стране, бренду,</strong> и многому другому!",
+        "text5": "Если вы не хотите делать это каждый раз, вы также можете <strong>сохранить фильтры</strong>, нажав на звездочку. В следующий раз, когда вернетесь, вы найдёте сохраненные фильтры на домашней странице"
       },
       "page3": {
-        "title": "Logos Game",
-        "text1": "Another popular game is the logos game where you have to <strong>select all the logos</strong> you feel are the same.",
-        "text2": "As shown in the example, once you select all the similar logos, just type their value and select where it is a brand, a label or something else. It's that simple!"
+        "title": "Игра логотипов",
+        "text1": "Другая популярная игра — это игра с логотипами, где вам нужно <strong>выбрать все логотипы</strong>, которые вы считаете одинаковыми.",
+        "text2": "Как показано в примере, после того как вы выберете всех похожие логотипы, просто введите их значение и укажите, бренд ли это, этикетка или что-нибудь еще. Это настолько просто!"
       },
       "page4": {
-        "title": "Eco-Score Questions Game",
+        "title": "Игра \"Вопросы Eco-Score\"",
         "text1": "Help us finish the remaining questions in the most high priority labels!",
         "text2": "These cards are linked to labels used in the computation of the Eco-Score.",
-        "text3": "<strong>What is Eco-Score?</strong>",
+        "text3": "<strong>Что такое Eco-Score?</strong>",
         "text4": "Eco-Score captures the total environmental footprint, making it easier for consumers to compare products and decide which is better for the environment."
       },
       "page5": {
         "title": "Настройки",
-        "text1": "Set your preferred language, and report issues from our settings page.",
-        "text2": "If you're a developer, you can also explore our database content using our dev mode."
+        "text1": "Задайте предпочитаемый язык и сообщите об ошибках на странице настроек.",
+        "text2": "Если вы разработчик, вы также можете изучить содержимое нашей базы данных в режиме разработчика."
       },
       "page6": {
-        "title": "Tour",
-        "text1": "Got stuck somewhere? Want to take the tour again?",
+        "title": "Обзор",
+        "text1": "Вы где-то застряли? Хотите пройти тур снова?",
         "text2": "Just click on the question mark and start the journey again!"
       }
     },
@@ -318,9 +318,9 @@
     },
     "loading": "Загрузка...",
     "unknown_brand": "Неизвестная марка",
-    "value_missing": "You forgot to input a value.",
-    "next": "Next step",
-    "prev": "Prev step",
+    "value_missing": "Вы забыли ввести значение.",
+    "next": "Следующий шаг",
+    "prev": "Предыдущий шаг",
     "skip": "Пропустить этот продукт",
     "validate": "Проверить таблицу",
     "unselect_picture": "Нет информации о пищевой ценности",
@@ -363,16 +363,16 @@
     "image_alt": "обрезанное изображение",
     "label": "Annotate Nutri-Score logo detection by batch.",
     "description": "To do so, select all the images showing the correct/wrong Nutri-Score value ({{label}}), and click on the bottom buttons to say if you selected a set correct or wrong ones.",
-    "images_remaining": "Still {{remaining}} to annotate",
-    "image_sizes": "Image sizes",
-    "zoom_on_logo": "Zoom on logo",
+    "images_remaining": "Все еще {{remaining}} для аннотации",
+    "image_sizes": "Размеры изображений",
+    "zoom_on_logo": "Увеличить логотип",
     "select_all": "Выбрать все",
     "deselect_all": "Снять выделение",
-    "incorrect": "Wrong",
-    "correct": "Correct ({{label}})"
+    "incorrect": "Неверно",
+    "correct": "Правильно ({{label}})"
   },
   "eco-score": {
-    "description": "Here is a summary of questions that could improve Eco-Score computation",
+    "description": "Вот сводка вопросов которые могут улучшить вычисления Eco-Score",
     "countryLabel": "Страна"
   }
 }
