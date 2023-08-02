@@ -1,29 +1,29 @@
 {
   "home": {
     "game_selector": {
-      "title": "What game would you like to play?",
+      "title": "أي لُعْبَة تفضل أن تلعبها؟",
       "cards": {
         "questions": {
           "title": "أسئلة",
-          "description": "Tell us if the given image answers the questions"
+          "description": "أخبرنا إذا الصورة المعطاة تجيب عن الأسئلة"
         },
         "logos": {
-          "title": "Logos",
-          "description": "Find all the logos matching the given logo"
+          "title": "شعارات",
+          "description": "أوجد جميع الشعارات التي تطابق الشعار المعطى"
         },
         "eco_score": {
           "title": "العلامة البيئية Eco-score",
-          "description": "Annotate the questions with the highest value"
+          "description": "علق على الأسئلة بجودة أعلى"
         }
       }
     },
     "account_band": {
-      "title": "Want to make your contribution count? Create an account or sign in on Open Food Facts!",
+      "title": "هل تريد أن تجعل مشاركتك مقدرة؟ أنشئ حساب أو سجل في Open Food Facts!",
       "log_in": "اسم المستخدم",
       "sign_up": "تسجيل الدخول",
-      "contribution_details": "Learn why your contribution matters"
+      "contribution_details": "تعرف لماذا مشاركتك مهمة؟"
     },
-    "saved_filters": "Saved Filters",
+    "saved_filters": "فرز محفوظ",
     "contribution_modal": {
       "title": "Your contribution matters",
       "information": "Hunger Games is an effort to leverage the results of our OCR and artificial intelligence. When you use Hunger Games by Open Food Facts, you improve our entire database which helps the community make better food choices. We gather your annotations and use them to make Open Food Facts more accurate and efficient.",
@@ -122,7 +122,7 @@
     "title": "Hunger Games",
     "games": "نبتبنرترمر",
     "questions": "أسئلة",
-    "logos": "Logos",
+    "logos": "شعارات",
     "logos-annotation": "شرح اللوغو",
     "logos-search": "بحث اللوغو",
     "logos-product-search": "الشرح لكل منتج",
