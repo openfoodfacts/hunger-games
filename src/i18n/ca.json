@@ -1,36 +1,36 @@
 {
   "home": {
     "game_selector": {
-      "title": "Quin joc vols per jugar?\n",
+      "title": "a quin joc vols jugar?\n",
       "cards": {
         "questions": {
           "title": "Preguntes",
-          "description": "Digues tu quina imatge escollir segons les preguntes"
+          "description": "Digues-nos si la imatge donada respon les preguntes"
         },
         "logos": {
           "title": "Logos",
-          "description": "Cerqueu totes les imatges que vingin bé segons el logo que donen."
+          "description": "Trobeu totes les imatges que encaixin amb el logo donat"
         },
         "eco_score": {
-          "title": "Eco-puntuació",
-          "description": "anoteu les questions amb el valors mes alts"
+          "title": "Eco-Score",
+          "description": "Anoteu les preguntes amb els valors més alts"
         }
       }
     },
     "account_band": {
-      "title": "Quan vas fer el teu compte de contribució? creeu un compte o inicieu sessió dintre d'open food facs!",
+      "title": "Vols que la teva contribució pagui la pena? Crea un compte o inicia la sessió a Open Food Facts!",
       "log_in": "Nom d'usuari",
       "sign_up": "Uniu-vos",
-      "contribution_details": "Que sápigas el perquè la vostra contibució es important"
+      "contribution_details": "Aprèn perquè la teva contribució importa"
     },
-    "saved_filters": "acordar els filtres",
+    "saved_filters": "Filtres desats",
     "contribution_modal": {
-      "title": "Your contribution matters",
-      "information": "Hunger Games is an effort to leverage the results of our OCR and artificial intelligence. When you use Hunger Games by Open Food Facts, you improve our entire database which helps the community make better food choices. We gather your annotations and use them to make Open Food Facts more accurate and efficient.",
-      "thank_you": "Thank you for helping us improve Open Food Facts so that more people can use it easily."
+      "title": "La teva contribució és important",
+      "information": "Els jocs de la fam són un intent d'aprofitar els resultats del nostre OCR i intel·ligència artificial. Quan feu servir els Jocs de la fam d'Open Food Facts, milloreu tota la nostra base de dades, que alhora ajuda a la comunitat a prendre millors decisions alimentàries. Recollim les vostres anotacions i les utilitzem per fer que Open Food Facts sigui més precís i eficient.",
+      "thank_you": "Gràcies per ajudar-nos a millorar Open Food Facts perquè més persones puguin utilitzar-lo fàcilment."
     },
     "statistics": {
-      "title": "{{userName}} statistics:",
+      "title": "Estadístiques de {{userName}}:",
       "editorCount": {
         "title": "Editor",
         "description": "Nombre d'edicions fetes"
@@ -41,13 +41,13 @@
       },
       "photographerCount": {
         "title": "Fotògraf",
-        "description": "Taking photos for a product"
+        "description": "Fer fotos per a un producte"
       }
     }
   },
   "flagged_images": {
-    "title": "Images flagged by users",
-    "loading": "llegint "
+    "title": "Imatges marcades pels usuaris",
+    "loading": "Carregant"
   },
   "questions": {
     "category": "categoria",
@@ -58,48 +58,48 @@
     "brands": "Marques",
     "packaging": "envasament",
     "quantity": "Quantitat",
-    "insightTypeLabel": "només nombrar",
+    "insightTypeLabel": "Només mostra",
     "ingredients": "Ingredients",
-    "product_weight": "mesura del producte",
-    "popularity_sort": "Ordenat per popularitat",
-    "see_examples": "See examples of this ",
+    "product_weight": "pes del producte",
+    "popularity_sort": "Ordena per popularitat",
+    "see_examples": "Vegeu exemples d'això ",
     "no": "No",
     "skip": "Omet",
     "yes": "Si",
     "no_questions_remaining": "No hi ha mes preguntes",
-    "countries": "Paisos",
-    "view": "mira",
+    "countries": "Països",
+    "view": "Vista",
     "edit": "Edita",
-    "hide_images": "treu les imatges (carrega més ràpid)",
-    "display_images": "enxega les imatges ",
-    "annotations": "Annotations",
-    "last_annotations": "ultimes  anotacions",
-    "remaining_annotations": "Remaining questions",
-    "annotated_annotations": "apuntat",
+    "hide_images": "Amaga les imatges (es carrega més ràpid)",
+    "display_images": "Mostra imatges",
+    "annotations": "Anotacions",
+    "last_annotations": "Darreres anotacions",
+    "remaining_annotations": "Preguntes restants",
+    "annotated_annotations": "Anotat",
     "filters": {
-      "active_filter_number": "+{{count}} filters",
-      "active_filter_number_one": "+{{count}} filter",
-      "active_filter_number_zero": "no hi han filtres",
+      "active_filter_number": "+{{count}} filtres",
+      "active_filter_number_one": "+{{count}} filtre",
+      "active_filter_number_zero": "sense filtres",
       "short_label": {
         "value": "valor",
         "country": "país",
         "brand": "marca",
         "popularity": "popularitat",
-        "campaign": "anar a la montanya"
+        "campaign": "camp"
       },
       "long_label": {
-        "type": "Tipus de cuestió",
-        "value": "Proposat  per evaluar",
-        "country": "produit a aquest pais ",
-        "brand": "producte de marca",
-        "popularity": "Ordenat per popularitat",
+        "type": "Tipus de pregunta",
+        "value": "Valor proposat",
+        "country": "País de producció",
+        "brand": "Marca del producte",
+        "popularity": "Ordena per popularitat",
         "edit": "",
-        "campaign": "la canpanya"
+        "campaign": "Campanya"
       },
       "placeholders": {
-        "value": "Value (Fanta, en:organic,...)",
-        "brand": "Auchan, Danone, Herta, ...",
-        "campaign": "anotacions de campanya\n"
+        "value": "Valor (Fanta, en:organic,...)",
+        "brand": "Auchan, Danone, Herta,...",
+        "campaign": "Campanya d'anotacions"
       },
       "actions": {
         "edit": "Edita els filtres",
@@ -107,35 +107,35 @@
         "apply": "Aplicar"
       }
     },
-    "other_questions": "altres cuestions",
-    "send": "enviar",
+    "other_questions": "Altres preguntes",
+    "send": "Envia",
     "flag": "Qualsevol problema?  digues quin",
-    "unflag": "aparteu la imatge",
-    "reset_filters": "tornar als filtres",
+    "unflag": "Desmarqueu la imatge",
+    "reset_filters": "Restableix filtres",
     "log_in": "Nom d'usuari",
     "sign_up": "Uniu-vos",
-    "login_title": "Make your annotation count",
-    "login_description": "You are not currently logged into Open Food Facts. To get your answers directly applied to products, and associated to your account, consider logging in to your Open Food Facts account, or creating one",
-    "please_wait_while_we_fetch_the_question": "Please wait while we fetch the question!"
+    "login_title": "Feu que la teva anotació valgui",
+    "login_description": "Actualment no heu iniciat sessió a Open Food Facts. Per aconseguir que les vostres respostes s'apliquin directament als productes i s'associïn al vostre compte, considereu iniciar sessió al vostre compte d'Open Food Facts o crear-ne un",
+    "please_wait_while_we_fetch_the_question": "Si us plau, espereu mentre obtenim la pregunta!"
   },
   "menu": {
-    "title": "Hunger Games",
+    "title": "Jocs de la fam",
     "games": "Jocs",
     "questions": "Preguntes",
     "logos": "Logos",
-    "logos-annotation": "Logos annotation",
-    "logos-search": "Logos search",
-    "logos-product-search": "Annotation per products",
-    "logos-deep-search": "Infinite annotation",
+    "logos-annotation": "Anotació de logotips",
+    "logos-search": "Cerca de logotips",
+    "logos-product-search": "Anotació per productes",
+    "logos-deep-search": "Anotació infinita",
     "manage": "Gestiona",
     "insights": "Més detalls",
     "nutritions": "Informació nutricional",
     "settings": "Preferències",
-    "eco-score": "Eco-puntuació",
-    "dashboard": "Logos dashboard",
-    "tour": "Show tour",
-    "logged_in_user": "Logged as {{userName}}",
-    "log_in": "Click to login"
+    "eco-score": "Eco-Score",
+    "dashboard": "Tauler de control de logotips",
+    "tour": "Mostra tour",
+    "logged_in_user": "Registrat com a {{userName}}",
+    "log_in": "Feu clic per iniciar sessió"
   },
   "insights": {
     "insights": "Més detalls",
@@ -144,8 +144,8 @@
     "value_tag": "Etiqueta",
     "value_placeholder": "ex: en: mueslis, bjorg,...",
     "type": "Tipus",
-    "annotated": "apuntat",
-    "annotation": "Notes",
+    "annotated": "Anotat",
+    "annotation": "Anotacions",
     "not_annotated": "Cap anotació",
     "all": "Tots",
     "label": "Etiqueta",
@@ -153,28 +153,28 @@
     "category": "Categoria",
     "expiration_date": "Data de caducitat",
     "packager_code": "Codi empaquetador",
-    "skipped": "Botat (-1)",
+    "skipped": "Omès (-1)",
     "rejected": "Rebutjat (0)",
     "accepted": "Acceptat (1)",
     "search": "Cerca",
     "count": "Recompte",
     "id": "Id",
-    "value": "Value",
+    "value": "Valor",
     "created_at": "Creat a",
     "completed_at": "Completat a",
     "automatic": "Automàtic",
     "human_required": "fa falta un humá\nes necessita un humá ",
     "edit_product": "Oberta l'edició del producte",
-    "view_product": "Open product page"
+    "view_product": "Obre la pàgina del producte"
   },
   "logos": {
     "annotation": "Anotació: ",
     "annotations": "Indicacions de logo",
-    "task_description": "Select all logos that are exactly the same, and give them a name like \"en:EU Organic\" and a type like \"label\".",
+    "task_description": "Seleccioneu tots els logotips que siguin exactament iguals i doneu-los un nom com \"en:EU Orgànic\" i un tipus com \"etiqueta\".",
     "select_all": "Selecciona-ho tot",
     "unselect_all": "Desmarca-ho tot",
     "distance": "Distància:",
-    "value": "Value",
+    "value": "Valor",
     "submit": "Envia",
     "type": "Tipus",
     "label": "Etiqueta",
@@ -196,46 +196,46 @@
     "number_of_results": "Nombre de resultats:",
     "loading": "S'està carregant…",
     "refresh": "Refresca",
-    "search_specific": "Search specific logo",
+    "search_specific": "Cerca un logotip específic",
     "load_more": "Carrega mes ",
     "no_results": "No s'ha trobat cap logotip",
     "result_count": "mirar dentro de lo posible (esp)\nmirar dintre del posible o viable",
     "flag": "Qualsevol problema?  digues quin",
-    "unflag": "aparteu la imatge",
-    "crop_image_title": "crop of the logo",
-    "no_more_questions": "No more questions about this logo. You can try to find more logos with the following game.",
+    "unflag": "Desmarqueu la imatge",
+    "crop_image_title": "retall del logotip",
+    "no_more_questions": "No hi ha més preguntes sobre aquest logotip. Podeu provar de trobar més logotips amb el següent joc.",
     "loading_messages": {
-      "pending_reference_logos": "We are loading some logos examples to initialise the search",
-      "failed_reference_logos": "We did not find any logos with this annotation. Try to use the following game to annotate some of them."
+      "pending_reference_logos": "Estem carregant alguns exemples de logotips per inicialitzar la cerca",
+      "failed_reference_logos": "No hem trobat cap logotip amb aquesta anotació. Intenta fer servir el joc següent per anotar-ne alguns."
     }
   },
   "settings": {
     "settings": "Preferències",
     "language": "Llengües",
     "save": "Desa",
-    "reportIssue": "Found a bug? Please let us know.",
-    "dev_mode_title": "To get more options, activate the dev mode",
-    "dev_mode_label": "Dev Mode",
-    "dev_page_toggle": "Show {{name}} page",
+    "reportIssue": "Heu trobat un error? Si us plau, fes-nos-ho saber.",
+    "dev_mode_title": "Per obtenir més opcions, activeu el mode de desenvolupament",
+    "dev_mode_label": "Mode Desenvolupador",
+    "dev_page_toggle": "Mostra la pàgina {{name}}",
     "join_community": "Uneix-te a la comunitat",
-    "text1": "Open Food Facts is a collaborative project built by tens of thousands of volunteers and managed by a non-profit organization with 8 employees. We need your donations to fund the Open Food Facts 2024 budget and to continue to develop the project.",
-    "thank_you": "Thank you",
+    "text1": "Open Food Facts és un projecte col·laboratiu creat per desenes de milers de voluntaris i gestionat per una organització sense ànim de lucre amb 8 empleats. Necessitem les vostres donacions per finançar el pressupost Open Food Facts 2024 i per continuar desenvolupant el projecte.",
+    "thank_you": "Gràcies",
     "donate": "Feu un donatiu",
     "join_the_community": {
-      "discover_our": "Discover our ",
-      "code_of_conduct": "Code of conduct ",
-      "join_us_on": "Join us on ",
-      "forum": "Forum",
-      "subscribe_to_our": "Subscribe to our ",
-      "newsletter": "newsletter"
+      "discover_our": "Descobreix el nostre ",
+      "code_of_conduct": "Codi de conducta ",
+      "join_us_on": "Uneix-te'ns ",
+      "forum": "Fòrum",
+      "subscribe_to_our": "Subscriu-te al nostre ",
+      "newsletter": "butlletí"
     },
     "discover_the_project": "Descobreix el projecte",
     "Who_we_are": "Qui som",
-    "Vision_Mission_Values_and_Programs": "Vision, Mission, Values and Programs",
-    "FAQS": "FAQS",
-    "open_Food_Facts_blog": "Open Food Facts blog",
+    "Vision_Mission_Values_and_Programs": "Visió, missió, valors i programes",
+    "FAQS": "PMF",
+    "open_Food_Facts_blog": "Blog d'Open Food Facts",
     "Press": "Premsa",
-    "Open_Food_Facts_wiki": "Open Food Facts wiki (en)",
+    "Open_Food_Facts_wiki": "Viquipèdia d'Open Food Facts (anglès)",
     "Translators": "Traducció",
     "Partners": "Socis",
     "Open_Beauty_Facts": "Open Beauty Facts- Cosmètics",
@@ -244,40 +244,40 @@
   "helper": {
     "welcome": {
       "page1": {
-        "title": "Welcome to Hunger Games",
-        "text1": "Hunger Games is a collection of mini-games that help contribute to Open Food Facts in many ways. You can play are really exciting games from anywhere. Here is a guided tour of the entire website which will get you started.",
-        "text2": "Make sure to login to the Open Food Facts website to get credit for your contributions. If you make a mistake, please take the time to correct it by heading to the website.",
-        "text3": "In case of any doubt about the games, click on the question mark icon at the top right of the page, and you can reach us on slack at the #hunger-games channel"
+        "title": "Us donem la benvinguda als Jocs de la fam",
+        "text1": "«Els jocs de la fam» és una col·lecció de minijocs que ajuda a contribuir a Open Food Facts de moltes maneres diferents. Podeu jugar a jocs molt emocionants des de qualsevol lloc. Aquí teniu una visita guiada de tota la pàgina web que us ajudarà a començar.",
+        "text2": "Assegureu-vos d'iniciar sessió al lloc web d'Open Food Facts per obtenir crèdit per les vostres contribucions. Si cometeu un error, preneu-vos el temps per corregir-lo dirigint-vos al lloc web.",
+        "text3": "Si teniu qualsevol dubte sobre els jocs, premeu la icona de l'interrogant a dalt a l'esquerra i podeu comunicar-vos amb nosaltres al canal de #hunger-games a Slack"
       },
       "page2": {
-        "title": "Questions Game",
-        "text1": "Does the food product belong to this brand?",
-        "text2": "Simply answer with a <strong>Yes/No</strong>! Don't know the answer? That's alright, just skip it.",
-        "text3": "You can also use your keyboard shortcuts: y,n and k.",
-        "text4": "You can <strong>filter</strong> the products based on country, brands, popularity and much more!",
-        "text5": "If you don't want to do this every single time, you can also <strong>save the filters</strong> by clicking on the star. Next time you come back, find the saved filters on the home page itself"
+        "title": "Joc de preguntes",
+        "text1": "El producte alimentari pertany a aquesta marca?",
+        "text2": "Simplement respon amb un <strong>Sí/No</strong>! No saps la resposta? Està bé, només omet-ho.",
+        "text3": "També podeu utilitzar les teves dreceres de teclat: y,n i k.",
+        "text4": "Podeu <strong>filtrar</strong> els productes segons el país, les marques, la popularitat i molt més!",
+        "text5": "Si no voleu fer-ho cada cop, també podeu <strong>desar els filtres</strong> fent clic a l'estrella. La pròxima vegada que torneu, cerqueu els filtres desats a la mateixa pàgina d'inici"
       },
       "page3": {
-        "title": "Logos Game",
-        "text1": "Another popular game is the logos game where you have to <strong>select all the logos</strong> you feel are the same.",
-        "text2": "As shown in the example, once you select all the similar logos, just type their value and select where it is a brand, a label or something else. It's that simple!"
+        "title": "Joc de Logotips",
+        "text1": "Un altre joc popular és el joc de logotips on has de <strong>seleccionar tots els logotips</strong> que creus que són iguals.",
+        "text2": "Com es mostra a l'exemple, un cop seleccionats tots els logotips similars, només cal que escriviu el seu valor i seleccioneu si és una marca, una etiqueta o una altra cosa. Així de senzill!"
       },
       "page4": {
-        "title": "Eco-Score Questions Game",
-        "text1": "Help us finish the remaining questions in the most high priority labels!",
-        "text2": "These cards are linked to labels used in the computation of the Eco-Score.",
-        "text3": "<strong>What is Eco-Score?</strong>",
-        "text4": "Eco-Score captures the total environmental footprint, making it easier for consumers to compare products and decide which is better for the environment."
+        "title": "Joc de preguntes sobre l'Eco-Score",
+        "text1": "Ajuda'ns a completar les preguntes restants a les etiquetes de màxima prioritat!",
+        "text2": "Aquestes targetes estan vinculades a les etiquetes utilitzades en el càlcul de l'Eco-Score.",
+        "text3": "<strong>Què és Eco-Score?</strong>",
+        "text4": "L'Eco-Score captura la petjada ambiental total, facilitant als consumidors comparar productes i decidir quin és millor per al medi ambient."
       },
       "page5": {
         "title": "Preferències",
-        "text1": "Set your preferred language, and report issues from our settings page.",
-        "text2": "If you're a developer, you can also explore our database content using our dev mode."
+        "text1": "Estableix el teu idioma preferit i informa de problemes des de la nostra pàgina de configuració.",
+        "text2": "Si sou desenvolupadors, també podeu explorar el contingut de la nostra base de dades mitjançant el nostre mode de desenvolupament."
       },
       "page6": {
         "title": "Tour",
-        "text1": "Got stuck somewhere? Want to take the tour again?",
-        "text2": "Just click on the question mark and start the journey again!"
+        "text1": "T'has quedat encallat en algun lloc? Vols tornar a fer el tour?",
+        "text2": "Només cal que feu clic al signe d'interrogació i torneu a començar el viatge!"
       }
     },
     "logos": {
@@ -288,8 +288,8 @@
       },
       "page2": {
         "title": "Avís",
-        "text1": "If the crop contains multiple logos, do not select it.",
-        "text2": "If the crop contains only a partial part of a logo, you can select it."
+        "text1": "Si el retall conté diversos logotips, no el seleccioneu.",
+        "text2": "Si el retall només conté una part parcial d'un logotip, podeu seleccionar-lo."
       },
       "page3": {
         "title": "Validar",
@@ -316,17 +316,17 @@
       "3": "Selecció de nutrients",
       "4": "Selecció de valors"
     },
-    "loading": "Loading...",
-    "unknown_brand": "Brand Unknown",
-    "value_missing": "You forgot to input a value.",
-    "next": "Next step",
-    "prev": "Prev step",
-    "skip": "Botau el producte",
+    "loading": "Carregant...",
+    "unknown_brand": "Marca desconeguda",
+    "value_missing": "T'has oblidat d'introduir un valor.",
+    "next": "Següent pas",
+    "prev": "Pas anterior",
+    "skip": "Ometeu el producte",
     "validate": "Valida la graella",
     "unselect_picture": "Sense dades nutricionals",
     "basis": "dades per a: ",
     "servingSize": "ració",
-    "value": "Value",
+    "value": "Valor",
     "unit": "Unitat",
     "nutriments": {
       "nutriment_energy-kj": "Energia (kJ)",
@@ -341,7 +341,7 @@
       "nutriment_sodium": "Sodi"
     },
     "history": {
-      "title": "Historial de sessions",
+      "title": "Historial de la sessió",
       "status": "estat",
       "product name": "nom del producte",
       "view": "visualitza la pàgina",
@@ -354,25 +354,25 @@
     }
   },
   "notfound": {
-    "image_alt": "404 not found",
+    "image_alt": "404 no s'ha trobat",
     "nopage": "No hem pogut trobar la pàgina que cerqueu.",
     "redirect1": "Vols jugar a alguns jocs?",
-    "redirect2": "Clicau aquí"
+    "redirect2": "Feu clic aquí"
   },
   "nutriscore": {
-    "image_alt": "cropped image",
-    "label": "Annotate Nutri-Score logo detection by batch.",
-    "description": "To do so, select all the images showing the correct/wrong Nutri-Score value ({{label}}), and click on the bottom buttons to say if you selected a set correct or wrong ones.",
-    "images_remaining": "Still {{remaining}} to annotate",
-    "image_sizes": "Image sizes",
-    "zoom_on_logo": "Zoom on logo",
+    "image_alt": "imatge retallada",
+    "label": "Anoteu la detecció del logotip de Nutri-Score per lot.",
+    "description": "Per fer-ho, seleccioneu totes les imatges que mostrin el valor Nutri-Score correcte/incorrecte ({{label}}) i feu clic als botons inferiors per dir si heu seleccionat un conjunt correcte o incorrecte.",
+    "images_remaining": "Encara falten {{remaining}} per anotar",
+    "image_sizes": "Mida de les imatges",
+    "zoom_on_logo": "Amplia el logotip",
     "select_all": "Selecciona-ho tot",
     "deselect_all": "Desmarca-ho tot",
     "incorrect": "equivocat",
-    "correct": "Correct ({{label}})"
+    "correct": "({{label}}) Correcte"
   },
   "eco-score": {
-    "description": "Aqui hi ha un questionari que pot millora la puntuació de l'Eco-Score",
-    "countryLabel": "Country"
+    "description": "Aquí hi ha un qüestionari que pot millora la puntuació de l'Eco-Cura",
+    "countryLabel": "País"
   }
 }
