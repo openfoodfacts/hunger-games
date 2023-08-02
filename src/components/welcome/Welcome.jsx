@@ -334,7 +334,7 @@ const Welcome = (props) => {
 
   const steps = React.useMemo(
     () => getSteps({ t, withSelector: isDesktop, theme }),
-    [t, isDesktop, theme],
+    [t, isDesktop, theme]
   );
 
   console.log({ steps });
