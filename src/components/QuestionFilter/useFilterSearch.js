@@ -35,7 +35,9 @@ export function useFilterSearch() {
 
   const [urlSearchParams, setUrlSearchParams] = useUrlParams(
     DEFAULT_FILTER_URL_PARAMS,
-    { valueTag: ["value_tag", "value"] }
+    {
+      valueTag: ["value_tag", "value"],
+    }
   );
   const exposedParameters = React.useMemo(
     () => convertUrlToParams(urlSearchParams),

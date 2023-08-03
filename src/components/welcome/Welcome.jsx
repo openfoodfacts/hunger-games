@@ -6,6 +6,9 @@ import { useTheme } from "@mui/material/styles";
 import useControlled from "@mui/utils/useControlled";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import logo from "../../assets/logo.png";
+import logosGame from "../../assets/logosGame.png";
+import questionsGame from "../../assets/questionsGame.png";
+import ecoScoreGame from "../../assets/ecoScoreGame.png";
 
 import Tour from "reactour";
 import {
@@ -76,7 +79,7 @@ export const getSteps = ({ t, withSelector, theme }) => [
               height: "auto",
               flex: "20%",
             }}
-            src={require("../../assets/logo.png")}
+            src={logo}
           />
           <Typography
             variant="h6"
@@ -122,7 +125,7 @@ export const getSteps = ({ t, withSelector, theme }) => [
               height: "auto",
               justifyContent: "center",
             }}
-            src={require("../../assets/questionsGame.png")}
+            src={questionsGame}
           />
         </Box>
       </Box>
@@ -144,7 +147,7 @@ export const getSteps = ({ t, withSelector, theme }) => [
               height: "auto",
               flex: "20%",
             }}
-            src={require("../../assets/logo.png")}
+            src={logo}
           />
           <Typography
             variant="h6"
@@ -175,7 +178,7 @@ export const getSteps = ({ t, withSelector, theme }) => [
               height: "auto",
               justifyContent: "center",
             }}
-            src={require("../../assets/logosGame.png")}
+            src={logosGame}
           />
         </Box>
       </Box>
@@ -197,7 +200,7 @@ export const getSteps = ({ t, withSelector, theme }) => [
               height: "auto",
               flex: "20%",
             }}
-            src={require("../../assets/logo.png")}
+            src={logo}
           />
           <Typography
             variant="h6"
@@ -234,7 +237,7 @@ export const getSteps = ({ t, withSelector, theme }) => [
               height: "auto",
               justifyContent: "center",
             }}
-            src={require("../../assets/ecoScoreGame.png")}
+            src={ecoScoreGame}
           />
         </Box>
       </Box>
@@ -253,7 +256,7 @@ export const getSteps = ({ t, withSelector, theme }) => [
               height: "auto",
               flex: "20%",
             }}
-            src={require("../../assets/logo.png")}
+            src={logo}
           />
           <Typography variant="h6" component="h2" sx={{ marginTop: "8px" }}>
             {t("helper.welcome.page5.title")}
@@ -283,7 +286,7 @@ export const getSteps = ({ t, withSelector, theme }) => [
               height: "auto",
               flex: "20%",
             }}
-            src={require("../../assets/logo.png")}
+            src={logo}
           />
           <Typography variant="h6" component="h2" sx={{ marginTop: "8px" }}>
             {t("helper.welcome.page6.title")}
@@ -333,6 +336,8 @@ const Welcome = (props) => {
     () => getSteps({ t, withSelector: isDesktop, theme }),
     [t, isDesktop, theme]
   );
+
+  console.log({ steps });
 
   return (
     <>

@@ -6,7 +6,7 @@ export default function Loader() {
     <React.Fragment>
       <CssBaseline />
       <Stack
-        sx={{ bgcolor: "#121212", height: "100vh" }}
+        sx={(theme) => ({ bgcolor: theme.palette.paper, height: "100vh" })}
         justifyContent="center"
         alignItems="center"
       >
