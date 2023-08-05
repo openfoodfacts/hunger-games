@@ -373,7 +373,7 @@ export const QuestionFilter = () => {
             </TextField>
 
             <FormControlLabel
-              value={innerSortByPopularity}
+              checked={innerSortByPopularity}
               onChange={(event) =>
                 setInnerSortByPopularity(event.target.checked)
               }

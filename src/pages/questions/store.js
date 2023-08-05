@@ -6,6 +6,7 @@ import {
 } from "@reduxjs/toolkit";
 
 import { IS_DEVELOPMENT_MODE } from "../../const";
+import { DEFAULT_FILTER_STATE } from "../../components/QuestionFilter/const";
 import robotoff from "../../robotoff";
 
 import { sleep } from "../../utils";
@@ -44,14 +45,7 @@ export const questionBuffer = createSlice({
     answeredQuestions: [],
     fetchCompletted: false,
     numberOfQuestionsAvailable: 0,
-    filterState: {
-      insightType: "brand",
-      brandFilter: "",
-      countryFilter: "",
-      sortByPopularity: false,
-      valueTag: "",
-      predictor: "",
-    },
+    filterState: DEFAULT_FILTER_STATE,
   },
   reducers: {
     updateFilter: (state, action) => {
@@ -177,7 +171,7 @@ export const nbOfQuestionsInBufferSelector = createSelector(
 
 export const nextPageSelector = createSelector(
   getSubState,
-  (bufferState) => bufferState.remainingQuestions.length
+  (bufferState) => bufferState.page
 );
 
 export const currentQuestionSelector = createSelector(
