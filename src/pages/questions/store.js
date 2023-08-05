@@ -16,6 +16,7 @@ export const fetchQuestions = createAsyncThunk(
   "fetchQuestions",
   async (_, thunkApi) => {
     const state = thunkApi.getState();
+    console.log({ state });
     const { data } = await robotoff.questions(
       state.questionBuffer.filterState,
       PAGE_SIZE,
@@ -177,7 +178,7 @@ export const nbOfQuestionsInBufferSelector = createSelector(
 
 export const nextPageSelector = createSelector(
   getSubState,
-  (bufferState) => bufferState.remainingQuestions.length
+  (bufferState) => bufferState.page
 );
 
 export const currentQuestionSelector = createSelector(
