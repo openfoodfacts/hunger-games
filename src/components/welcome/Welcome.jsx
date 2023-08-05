@@ -337,8 +337,6 @@ const Welcome = (props) => {
     [t, isDesktop, theme]
   );
 
-  console.log({ steps });
-
   return (
     <>
       <Tour

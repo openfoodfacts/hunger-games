@@ -94,6 +94,5 @@ export const useBuffer = ({
 
   const next = () =>
     setData((prev) => (prev && prev.length > 0 ? prev.slice(1) : prev));
-  console.log(data);
   return [data, next];
 };
