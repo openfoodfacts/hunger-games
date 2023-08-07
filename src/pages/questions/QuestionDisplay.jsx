@@ -35,6 +35,7 @@ import {
 } from "./utils";
 
 import { getShortcuts } from "../../l10n-shortcuts";
+import { useFilterSearch } from "../../components/QuestionFilter/useFilterSearch";
 import CroppedLogo from "../../components/CroppedLogo";
 import ZoomableImage from "../../components/ZoomableImage";
 
@@ -123,12 +124,21 @@ const QuestionDisplay = ({ question, productData }) => {
 
   const { answerQuestions: matomoTrackAnswerQuestions } =
     useMatomoTrackAnswerQuestion();
-
   const filterState = useSelector(filterStateSelector);
   const isLoading = useSelector(isLoadingSelector);
   const dispatch = useDispatch();
 
-  const resetFilters = () => dispatch(updateFilter(DEFAULT_FILTER_STATE));
+  const [_, setSearchParams] = useFilterSearch();
+
+  const updateSearchParams = (newParams) => {
+    setSearchParams(newParams);
+    dispatch(updateFilter(newParams));
+  };
+
+  const resetFilters = () => {
+    updateSearchParams(DEFAULT_FILTER_STATE);
+  };
+
   const answerQuestion = React.useCallback(
     ({ insight_id, value }) => {
       dispatch(answerQuestionAction({ insight_id, value }));
