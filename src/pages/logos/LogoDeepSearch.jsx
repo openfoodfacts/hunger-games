@@ -284,6 +284,10 @@ export default function LogoSearch() {
     );
   };
 
+  const removeSelectedLogos = () => {
+    setLogosToAnnotate((prev) => prev.filter((logo, index) => !logo.selected));
+  };
+
   const [isAnnotationOpen, setIsAnnotationOpen] = React.useState(false);
   const openAnnotation = React.useCallback(() => {
     setIsAnnotationOpen(true);
@@ -382,6 +386,14 @@ export default function LogoSearch() {
             sx={{ width: 200 }}
           >
             prev
+          </Button>
+          <Button
+            fullWidth
+            onClick={removeSelectedLogos}
+            color="error"
+            variant="contained"
+          >
+            Remove
           </Button>
           <Button
             fullWidth
