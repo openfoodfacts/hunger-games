@@ -18,36 +18,36 @@
       }
     },
     "account_band": {
-      "title": "Want to make your contribution count? Create an account or sign in on Open Food Facts!",
-      "log_in": "Username",
+      "title": "Vil du at bidraget ditt skal telle? Opprett en konto eller logg inn på Open Food Facts!",
+      "log_in": "Logg inn",
       "sign_up": "Registrer deg",
-      "contribution_details": "Learn why your contribution matters"
+      "contribution_details": "Lær hvorfor dine bidrag er viktige"
     },
-    "saved_filters": "Saved Filters",
+    "saved_filters": "Lagrede filtre",
     "contribution_modal": {
-      "title": "Your contribution matters",
+      "title": "Ditt bidrag betyr noe",
       "information": "Hunger Games is an effort to leverage the results of our OCR and artificial intelligence. When you use Hunger Games by Open Food Facts, you improve our entire database which helps the community make better food choices. We gather your annotations and use them to make Open Food Facts more accurate and efficient.",
-      "thank_you": "Thank you for helping us improve Open Food Facts so that more people can use it easily."
+      "thank_you": "Takk for at du hjelper oss med å forbedre Open Food Facts slik at flere kan bruke tjenesten."
     },
     "statistics": {
-      "title": "{{userName}} statistics:",
+      "title": "{{userName}} statistikk:",
       "editorCount": {
         "title": "Redaktør",
         "description": "Number of editions done"
       },
       "contributorCount": {
         "title": "Bidrager",
-        "description": "Adding a new product"
+        "description": "Legger til et nytt produkt"
       },
       "photographerCount": {
-        "title": "Photographer",
-        "description": "Taking photos for a product"
+        "title": "Fotograf",
+        "description": "Ta bilder for et produkt"
       }
     }
   },
   "flagged_images": {
-    "title": "Images flagged by users",
-    "loading": "Loading"
+    "title": "Bilder flagget av brukere",
+    "loading": "Laster"
   },
   "questions": {
     "category": "kategori",
@@ -58,47 +58,47 @@
     "brands": "Merker",
     "packaging": "emballasje",
     "quantity": "Mengde",
-    "insightTypeLabel": "Only shows",
+    "insightTypeLabel": "Viser kun",
     "ingredients": "Ingredienser",
-    "product_weight": "product weight",
-    "popularity_sort": "Sort by popularity",
-    "see_examples": "See examples of this ",
+    "product_weight": "produktets vekt",
+    "popularity_sort": "Sorter etter popularitet",
+    "see_examples": "Se eksempler på dette ",
     "no": "Nei",
     "skip": "Hopp over",
     "yes": "Ja",
-    "no_questions_remaining": "No questions remaining",
+    "no_questions_remaining": "Ingen spørsmål gjenstår",
     "countries": "Land",
     "view": "Vis",
     "edit": "Rediger ",
-    "hide_images": "Hide images (faster loading)",
-    "display_images": "Display images",
-    "annotations": "Annotations",
-    "last_annotations": "Last annotations",
-    "remaining_annotations": "Remaining questions",
-    "annotated_annotations": "Annotated",
+    "hide_images": "Skjul bilder (raskere lasting av innhold)",
+    "display_images": "Vis bilder",
+    "annotations": "Merknader",
+    "last_annotations": "Siste merknader",
+    "remaining_annotations": "Gjenstående spørsmål",
+    "annotated_annotations": "Markert",
     "filters": {
-      "active_filter_number": "+{{count}} filters",
+      "active_filter_number": "+{{count}} filtre",
       "active_filter_number_one": "+{{count}} filter",
-      "active_filter_number_zero": "no filter",
+      "active_filter_number_zero": "ingen filter",
       "short_label": {
         "value": "verdi",
         "country": "land",
         "brand": "kjede",
         "popularity": "popularitet",
-        "campaign": "camp"
+        "campaign": "kamp"
       },
       "long_label": {
-        "type": "Question Type",
-        "value": "Proposed Value",
-        "country": "Product Country",
-        "brand": "Product Brand",
-        "popularity": "Sort by popularity",
+        "type": "Type spørsmål",
+        "value": "Foreslått verdi",
+        "country": "Landet produktet kommer fra",
+        "brand": "Produsent/merke",
+        "popularity": "Sorter etter popularitet",
         "edit": "",
-        "campaign": "Campaign"
+        "campaign": "Kampanje"
       },
       "placeholders": {
-        "value": "Value (Fanta, en:organic,...)",
-        "brand": "Auchan, Danone, Herta, ...",
+        "value": "Verdi (Fanta, en:organic,...)",
+        "brand": "Tine, Gilde, Coca-Cola, ...",
         "campaign": "Annotation campaigns"
       },
       "actions": {
@@ -107,16 +107,16 @@
         "apply": "Bruk"
       }
     },
-    "other_questions": "Other questions",
+    "other_questions": "Andre spørsmål",
     "send": "Send",
-    "flag": "Something wrong? Report/flag the image!",
-    "unflag": "Unflag the image",
-    "reset_filters": "Reset filters",
-    "log_in": "Username",
+    "flag": "Noe galt? Rapporter/flagg bildet!",
+    "unflag": "Fjern flagget for bildet",
+    "reset_filters": "Tilbakestill filtre",
+    "log_in": "Logg inn",
     "sign_up": "Registrer deg",
     "login_title": "Make your annotation count",
-    "login_description": "You are not currently logged into Open Food Facts. To get your answers directly applied to products, and associated to your account, consider logging in to your Open Food Facts account, or creating one",
-    "please_wait_while_we_fetch_the_question": "Please wait while we fetch the question!"
+    "login_description": "Du er for øyeblikket ikke logget på Open Food Facts. For å få svarene dine brukt direkte på produkter og tilknyttet kontoen din, bør du logge på Open Food Facts-kontoen din, eller opprette en om du ikke har",
+    "please_wait_while_we_fetch_the_question": "Vennligst vent mens vi henter spørsmålet!"
   },
   "menu": {
     "title": "Hunger Games",
@@ -144,7 +144,7 @@
     "value_tag": "Value tag",
     "value_placeholder": "ex: en:mueslis, bjorg,...",
     "type": "Type",
-    "annotated": "Annotated",
+    "annotated": "Markert",
     "annotation": "Merknad",
     "not_annotated": "Not annotated",
     "all": "Alle",
@@ -200,8 +200,8 @@
     "load_more": "Load more",
     "no_results": "No logo found",
     "result_count": "Shows {{showing}} on {{available}} available",
-    "flag": "Something wrong? Report/flag the image!",
-    "unflag": "Unflag the image",
+    "flag": "Noe galt? Rapporter/flagg bildet!",
+    "unflag": "Fjern flagget for bildet",
     "crop_image_title": "crop of the logo",
     "no_more_questions": "No more questions about this logo. You can try to find more logos with the following game.",
     "loading_messages": {
@@ -214,28 +214,28 @@
     "language": "Språk",
     "save": "Lagre",
     "reportIssue": "Found a bug? Please let us know.",
-    "dev_mode_title": "To get more options, activate the dev mode",
-    "dev_mode_label": "Dev Mode",
-    "dev_page_toggle": "Show {{name}} page",
+    "dev_mode_title": "For å få flere alternativer, aktiver utviklermodusen",
+    "dev_mode_label": "Utviklermodus",
+    "dev_page_toggle": "Vis {{name}} side",
     "join_community": "Bli med i fellesskapet",
-    "text1": "Open Food Facts is a collaborative project built by tens of thousands of volunteers and managed by a non-profit organization with 8 employees. We need your donations to fund the Open Food Facts 2024 budget and to continue to develop the project.",
-    "thank_you": "Thank you",
+    "text1": "Open Food Facts er et samarbeidsprosjekt bygget av titusenvis av frivillige og ledet av en non-profit organisasjon med 8 ansatte. Vi trenger dine donasjoner for å kunne finansiere Open Food Facts 2024-budsjettet og fortsette å utvikle prosjektet.",
+    "thank_you": "Tusen takk",
     "donate": "Doner",
     "join_the_community": {
-      "discover_our": "Discover our ",
-      "code_of_conduct": "Code of conduct ",
-      "join_us_on": "Join us on ",
+      "discover_our": "Oppdag vår ",
+      "code_of_conduct": "Retningslinjer ",
+      "join_us_on": "Følg oss på ",
       "forum": "Forum",
-      "subscribe_to_our": "Subscribe to our ",
-      "newsletter": "newsletter"
+      "subscribe_to_our": "Abonner på vår ",
+      "newsletter": "nyhetsbrev"
     },
     "discover_the_project": "Utforsk prosjektet",
     "Who_we_are": "Om oss",
-    "Vision_Mission_Values_and_Programs": "Vision, Mission, Values and Programs",
-    "FAQS": "FAQS",
-    "open_Food_Facts_blog": "Open Food Facts blog",
+    "Vision_Mission_Values_and_Programs": "Visjon, oppgave, verdier og programmer",
+    "FAQS": "Ofte stilte spørsmål",
+    "open_Food_Facts_blog": "Open Food Facts sin blogg",
     "Press": "Presse",
-    "Open_Food_Facts_wiki": "Open Food Facts wiki (en)",
+    "Open_Food_Facts_wiki": "Open Food Facts wiki (no)",
     "Translators": "Oversettere",
     "Partners": "Partnere",
     "Open_Beauty_Facts": "Open Beauty Facts - Kosmetikk",
@@ -244,8 +244,8 @@
   "helper": {
     "welcome": {
       "page1": {
-        "title": "Welcome to Hunger Games",
-        "text1": "Hunger Games is a collection of mini-games that help contribute to Open Food Facts in many ways. You can play are really exciting games from anywhere. Here is a guided tour of the entire website which will get you started.",
+        "title": "Velkommen til Hunger Games",
+        "text1": "Hunger Games er en samling minispill som bidrar til Open Food Facts på flere måter. Du kan spille et interessant spill fra hvor som helst. Her er en guidet omvisning på nettsiden som vil hjelpe deg å komme i gang.",
         "text2": "Make sure to login to the Open Food Facts website to get credit for your contributions. If you make a mistake, please take the time to correct it by heading to the website.",
         "text3": "In case of any doubt about the games, click on the question mark icon at the top right of the page, and you can reach us on slack at the #hunger-games channel"
       },
