@@ -19,8 +19,8 @@
     },
     "account_band": {
       "title": "Want to make your contribution count? Create an account or sign in on Open Food Facts!",
-      "log_in": "Login",
-      "sign_up": "Sign up",
+      "log_in": "Korisničko ime",
+      "sign_up": "Registruj se",
       "contribution_details": "Learn why your contribution matters"
     },
     "saved_filters": "Saved Filters",
@@ -32,11 +32,11 @@
     "statistics": {
       "title": "{{userName}} statistics:",
       "editorCount": {
-        "title": "Editor",
+        "title": "Urednik",
         "description": "Number of editions done"
       },
       "contributorCount": {
-        "title": "Contributor",
+        "title": "Saradnik",
         "description": "Adding a new product"
       },
       "photographerCount": {
@@ -50,26 +50,26 @@
     "loading": "Loading"
   },
   "questions": {
-    "category": "категорија",
+    "category": "kategorija",
     "categories": "Категорије",
-    "label": "label",
+    "label": "oznaka",
     "labels": "Labels",
-    "brand": "бренд",
+    "brand": "brend",
     "brands": "Брендови",
-    "packaging": "packaging",
-    "quantity": "Quantity",
+    "packaging": "ambalaža",
+    "quantity": "Količina",
     "insightTypeLabel": "Only shows",
-    "ingredients": "Ingredients",
+    "ingredients": "Sastojci",
     "product_weight": "product weight",
     "popularity_sort": "Sort by popularity",
     "see_examples": "See examples of this ",
-    "no": "No",
+    "no": "Ne",
     "skip": "Skip",
-    "yes": "Yes",
+    "yes": "Da",
     "no_questions_remaining": "No questions remaining",
     "countries": "Countries",
     "view": "View",
-    "edit": "Edit",
+    "edit": "Izmeni",
     "hide_images": "Hide images (faster loading)",
     "display_images": "Display images",
     "annotations": "Annotations",
@@ -82,8 +82,8 @@
       "active_filter_number_zero": "no filter",
       "short_label": {
         "value": "value",
-        "country": "држава",
-        "brand": "бренд",
+        "country": "država",
+        "brand": "brend",
         "popularity": "popularity",
         "campaign": "camp"
       },
@@ -104,7 +104,7 @@
       "actions": {
         "edit": "Edit Filters",
         "cancel": "Cancel",
-        "apply": "Apply"
+        "apply": "Primeni"
       }
     },
     "other_questions": "Other questions",
@@ -112,8 +112,8 @@
     "flag": "Something wrong? Report/flag the image!",
     "unflag": "Unflag the image",
     "reset_filters": "Reset filters",
-    "log_in": "Login",
-    "sign_up": "Sign up",
+    "log_in": "Korisničko ime",
+    "sign_up": "Registruj se",
     "login_title": "Make your annotation count",
     "login_description": "You are not currently logged into Open Food Facts. To get your answers directly applied to products, and associated to your account, consider logging in to your Open Food Facts account, or creating one",
     "please_wait_while_we_fetch_the_question": "Please wait while we fetch the question!"
@@ -129,8 +129,8 @@
     "logos-deep-search": "Infinite annotation",
     "manage": "Manage",
     "insights": "Insights",
-    "nutritions": "Nutrition facts",
-    "settings": "Settings",
+    "nutritions": "Hranljiva vrednost",
+    "settings": "Podešavanja",
     "eco-score": "Eco-score",
     "dashboard": "Logos dashboard",
     "tour": "Show tour",
@@ -139,7 +139,7 @@
   },
   "insights": {
     "insights": "Insights",
-    "barcode": "Barcode",
+    "barcode": "Barkod",
     "barcode_placeholder": "barcode",
     "value_tag": "Value tag",
     "value_placeholder": "ex: en:mueslis, bjorg,...",
@@ -148,15 +148,15 @@
     "annotation": "Annotation",
     "not_annotated": "Not annotated",
     "all": "All",
-    "label": "Label",
+    "label": "Oznaka",
     "product_weight": "Product weight",
-    "category": "Category",
+    "category": "Kategorija",
     "expiration_date": "Expiration date",
     "packager_code": "Packager code",
     "skipped": "Skipped (-1)",
     "rejected": "Rejected (0)",
     "accepted": "Accepted (1)",
-    "search": "Search",
+    "search": "Pretraživanje",
     "count": "Count",
     "id": "Id",
     "value": "Value",
@@ -177,24 +177,24 @@
     "value": "Value",
     "submit": "Submit",
     "type": "Type",
-    "label": "Label",
-    "brand": "Brand",
+    "label": "Oznaka",
+    "brand": "Brend",
     "packager_code": "Packager code",
-    "packaging": "Packaging",
+    "packaging": "Ambalaža",
     "qr_code": "QR code",
-    "category": "Category",
+    "category": "Kategorija",
     "nutrition_label": "Nutrition label",
     "no_logo": "Not a logo",
-    "store": "Store",
+    "store": "Prodavnica",
     "detail": "Logo detail",
     "id": "Logo ID:",
     "barcode": "Barcode:",
     "full_image": "Full image",
     "update": "Update",
     "no_found": "No logo found",
-    "search": "Search",
+    "search": "Pretraživanje",
     "number_of_results": "Number of results:",
-    "loading": "Loading…",
+    "loading": "Učitavam",
     "refresh": "Refresh",
     "search_specific": "Search specific logo",
     "load_more": "Load more",
@@ -210,17 +210,17 @@
     }
   },
   "settings": {
-    "settings": "Settings",
+    "settings": "Podešavanja",
     "language": "Languages",
-    "save": "Save",
+    "save": "Sačuvaj",
     "reportIssue": "Found a bug? Please let us know.",
     "dev_mode_title": "To get more options, activate the dev mode",
     "dev_mode_label": "Dev Mode",
     "dev_page_toggle": "Show {{name}} page",
-    "join_community": "Приступите заједници",
+    "join_community": "Pridružite se zajednici",
     "text1": "Open Food Facts is a collaborative project built by tens of thousands of volunteers and managed by a non-profit organization with 8 employees. We need your donations to fund the Open Food Facts 2024 budget and to continue to develop the project.",
     "thank_you": "Thank you",
-    "donate": "Donate",
+    "donate": "Doniraj",
     "join_the_community": {
       "discover_our": "Discover our ",
       "code_of_conduct": "Code of conduct ",
@@ -229,12 +229,12 @@
       "subscribe_to_our": "Subscribe to our ",
       "newsletter": "newsletter"
     },
-    "discover_the_project": "Discover the project",
-    "Who_we_are": "Who we are",
+    "discover_the_project": "Više o projektu",
+    "Who_we_are": "Ko smo",
     "Vision_Mission_Values_and_Programs": "Vision, Mission, Values and Programs",
     "FAQS": "FAQS",
     "open_Food_Facts_blog": "Open Food Facts blog",
-    "Press": "Press",
+    "Press": "Mediji",
     "Open_Food_Facts_wiki": "Open Food Facts wiki (en)",
     "Translators": "Translators",
     "Partners": "Partners",
@@ -270,7 +270,7 @@
         "text4": "Eco-Score captures the total environmental footprint, making it easier for consumers to compare products and decide which is better for the environment."
       },
       "page5": {
-        "title": "Settings",
+        "title": "Podešavanja",
         "text1": "Set your preferred language, and report issues from our settings page.",
         "text2": "If you're a developer, you can also explore our database content using our dev mode."
       },
@@ -287,7 +287,7 @@
         "text2": "Selected logos go to the top of the page, you can unselect them by clicking again on them"
       },
       "page2": {
-        "title": "Warning",
+        "title": "Upozorenje",
         "text1": "If the crop contains multiple logos, do not select it.",
         "text2": "If the crop contains only a partial part of a logo, you can select it."
       },
@@ -300,8 +300,8 @@
       }
     },
     "previous": "Prev",
-    "next": "Next",
-    "close": "Затвори"
+    "next": "Sledeće",
+    "close": "Zatvori"
   },
   "nutrition": {
     "instructions": {
@@ -329,16 +329,16 @@
     "value": "Value",
     "unit": "Unit",
     "nutriments": {
-      "nutriment_energy-kj": "Energy (kJ)",
+      "nutriment_energy-kj": "Energetska vrednost (kJ)",
       "nutriment_energy-kcal": "Energy (kCal)",
-      "nutriment_fat": "Fat",
-      "nutriment_saturated-fat": "Saturated fat",
-      "nutriment_carbohydrates": "Carbohydrates",
-      "nutriment_sugars": "Sugars",
-      "nutriment_proteins": "Proteins",
+      "nutriment_fat": "Masti",
+      "nutriment_saturated-fat": "Zasićene masne kiseline",
+      "nutriment_carbohydrates": "Ugljeni hidrati",
+      "nutriment_sugars": "Šećer",
+      "nutriment_proteins": "Proteini",
       "nutriment_fiber": "Fibers",
-      "nutriment_salt": "Salt",
-      "nutriment_sodium": "Sodium"
+      "nutriment_salt": "So",
+      "nutriment_sodium": "Natrijum"
     },
     "history": {
       "title": "Session History",
