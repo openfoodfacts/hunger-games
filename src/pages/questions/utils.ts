@@ -1,11 +1,11 @@
 import * as React from "react";
 
+import { getQuestionSearchParams } from "../../components/QuestionFilter/useFilterSearch";
 import { NO_QUESTION_LEFT, OFF_URL } from "../../const";
-import { reformatValueTag } from "../../utils";
 import externalApi from "../../externalApi";
 import offService from "../../off";
 import robotoff from "../../robotoff";
-import { getQuestionSearchParams } from "../../components/QuestionFilter/useFilterSearch";
+import { reformatValueTag } from "../../utils";
 
 export const ADDITIONAL_INFO_TRANSLATION = {
   brands: "brands",
@@ -31,7 +31,7 @@ export const getImagesUrls = (images, barcode) => {
   const rootImageUrl = offService.getImageUrl(formattedCode);
   return Object.keys(images)
     .filter((key) => !isNaN(Number.parseInt(key)))
-    .map((key) => `${rootImageUrl}/${key}.jpg`);
+    .map((key) => `${rootImageUrl}/${key}.400.jpg`);
 };
 
 // Other questions fetching
