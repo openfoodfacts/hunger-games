@@ -46,8 +46,8 @@
     }
   },
   "flagged_images": {
-    "title": "Images flagged by users",
-    "loading": "Loading"
+    "title": "由用戶標記的圖片",
+    "loading": "載入中"
   },
   "questions": {
     "category": "類別",
@@ -58,13 +58,13 @@
     "brands": "品牌",
     "packaging": "包裝",
     "quantity": "數量",
-    "insightTypeLabel": "Only shows",
+    "insightTypeLabel": "僅顯示",
     "ingredients": "成分",
     "product_weight": "產品重量",
     "popularity_sort": "依熱門程度排序",
-    "see_examples": "See examples of this ",
+    "see_examples": "查看此 的例子",
     "no": "否",
-    "skip": "Skip",
+    "skip": "略過",
     "yes": "是",
     "no_questions_remaining": "沒有待處理的問題",
     "countries": "國家地區",
@@ -74,18 +74,18 @@
     "display_images": "顯示圖片",
     "annotations": "3. Annotations",
     "last_annotations": "上一次注解",
-    "remaining_annotations": "Remaining questions",
+    "remaining_annotations": "剩餘問題",
     "annotated_annotations": "已注解",
     "filters": {
-      "active_filter_number": "+{{count}} filters",
-      "active_filter_number_one": "+{{count}} filter",
-      "active_filter_number_zero": "no filter",
+      "active_filter_number": "+{{count}} 篩選器",
+      "active_filter_number_one": "+{{count}} 篩選器",
+      "active_filter_number_zero": "沒有篩選器",
       "short_label": {
         "value": "值",
         "country": "國家",
         "brand": "品牌",
         "popularity": "人氣",
-        "campaign": "camp"
+        "campaign": "展銷"
       },
       "long_label": {
         "type": "問題類型",
@@ -94,7 +94,7 @@
         "brand": "產品品牌",
         "popularity": "依熱門程度排序",
         "edit": "",
-        "campaign": "Campaign"
+        "campaign": "展銷活動"
       },
       "placeholders": {
         "value": "Value (Fanta, en:organic,...)",
