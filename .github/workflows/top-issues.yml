@@ -20,6 +20,7 @@ jobs:
           dashboard: true
           dashboard_show_total_reactions: true
           top_issues: true
+          dashboard_title: 👍 Top Issues Dashboard
           top_bugs: true
           top_features: true
           top_pull_requests: true
