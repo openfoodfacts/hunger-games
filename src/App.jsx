@@ -46,6 +46,7 @@ const LogoQuestionValidator = React.lazy(() =>
   import("./pages/logosValidator/LogoQuestionValidator")
 );
 const DashBoard = React.lazy(() => import("./pages/logosValidator/DashBoard"));
+const GalaBoard = React.lazy(() => import("./pages/GalaPage"));
 
 // OFF colors
 const latte = "#F6F3F0";
@@ -334,6 +335,7 @@ export default function App() {
                     )
                   }
                 />
+                <Route path="/gala" element={<GalaBoard />} />
               </Routes>
             </DevModeContext.Provider>
           </LoginContext.Provider>
