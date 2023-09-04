@@ -2616,7 +2616,7 @@ export const DASHBOARD: DashBoardTheme[] = [
   // Packaging shapes
   {
     tag: "packaging-shapes",
-    title: "Packaging Shapes",
+    title: "🥫 Packaging Shapes",
     logos: [
       "fr:bouteille",
       "fr:aerosol-2",
@@ -2783,7 +2783,7 @@ export const DASHBOARD: DashBoardTheme[] = [
   // Packaging
   {
     tag: "packaging",
-    title: "Packaging",
+    title: "♻️ Packaging",
     logos: [
       "fr:bac-de-tri",
       "fr:tri-verre",
@@ -2807,7 +2807,7 @@ export const DASHBOARD: DashBoardTheme[] = [
   // Packaging
   {
     tag: "packaging-materials",
-    title: "Packaging materials",
+    title: "♳ Packaging materials",
     logos: [
       "en:1-pet",
       "en:1-PETE",
@@ -2958,7 +2958,7 @@ export const DASHBOARD: DashBoardTheme[] = [
   // vegetarian vegetalian categories
   {
     tag: "vegan-and-vegetarian",
-    title: "Vegan and Vegetarian",
+    title: "🌱 Vegan and Vegetarian",
     logos: [
       "en:vege-project-vegetarian",
       "en:vegetarian-society-approved-vegan",
@@ -2997,6 +2997,23 @@ export const DASHBOARD: DashBoardTheme[] = [
       "en:biogarantie-bel.90x90.svg",
       "en:biogarantie.90x90.png",
       "en:naturland",
+    ],
+  },
+  // Australia
+  {
+    tag: "australia",
+    title: "🇦🇺 Australia",
+    logos: [
+      "en:health-star-rating-0-5",
+      "en:health-star-rating-1",
+      "en:health-star-rating-1-5",
+      "en:health-star-rating-2",
+      "en:health-star-rating-2-5",
+      "en:health-star-rating-3",
+      "en:health-star-rating-3-5",
+      "en:health-star-rating-4",
+      "en:health-star-rating-4-5",
+      "en:health-star-rating-5",
     ],
   },
   // United States
@@ -3038,7 +3055,7 @@ export const DASHBOARD: DashBoardTheme[] = [
   // Switzerland
   {
     tag: "switzerland",
-    title: "Switzerland",
+    title: "🇨🇭 Switzerland",
     logos: [
       "en:suisse-garantie",
       "en:terrasuisse",
@@ -3047,7 +3064,7 @@ export const DASHBOARD: DashBoardTheme[] = [
   // Beers and Wines
   {
     tag: "beers-and-wines",
-    title: "Beers and Wines",
+    title: "🍺 Beers and Wines",
     logos: [
       "en:world-beer-cup",
       "en:belgian-hops",
