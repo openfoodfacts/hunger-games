@@ -41,7 +41,7 @@ export type LogoDefinition = {
 };
 
 const UNTYPED_LOGOS = {
-  // Nutriscore
+  // Nutri-Score
   "en:nutriscore-grade-a": {
     tag: "en:nutriscore-grade-a",
     label: "Nutriscore A",
@@ -122,6 +122,13 @@ const UNTYPED_LOGOS = {
     type: "label",
   },
   // Various origins.
+  "en:qs-certification-mark": {
+    tag: "en:qs-certification-mark",
+    label: "QS Certification Mark",
+    // logo does not exist yet
+    logo: "https://world.openfoodfacts.org/images/lang/en/labels/qs-certification-mark.79x90.png",
+    type: "label",
+  }, 
   "en:dolphin-safe": {
     tag: "en:dolphin-safe",
     label: "Dolphin Safe",
@@ -153,6 +160,7 @@ const UNTYPED_LOGOS = {
     logo: "https://static.openfoodfacts.org/images/lang/de/labels/ohne-gentechnik.90x90.svg",
     type: "label",
   },
+  // France
   "en:made-in-france": {
     tag: "en:made-in-france",
     label: "Fabriqué en France",
@@ -246,7 +254,7 @@ const UNTYPED_LOGOS = {
   "fr:legumes-de-france": {
     tag: "fr:legumes-de-france",
     label: "Légumes de France",
-    logo: "https://static.openfoodfacts.org/images/lang/fr/labels/legumes-de-france.90x90.svg",
+    logo: "https://robotoff.openfoodfacts.org/api/v1/images/crop?image_url=https://images.openfoodfacts.org/images/products/325/622/009/4726/5.jpg&y_min=0.6817449927330017&x_min=0.25617462396621704&y_max=0.7520487904548645&x_max=0.4584151804447174",
     type: "label",
   },
   "en:harvested-in-france": {
@@ -258,7 +266,7 @@ const UNTYPED_LOGOS = {
   "fr:agri-ethique-france": {
     tag: "fr:agri-ethique-france",
     label: "Agri-Éthique France",
-    logo: "https://static.openfoodfacts.org/images/lang/fr/labels/agri-ethique-france.90x90.svg",
+    logo: "https://robotoff.openfoodfacts.org/api/v1/images/crop?image_url=https://images.openfoodfacts.org/images/products/833/057/656/3435/1.jpg&y_min=0.6357665061950684&x_min=0.3311133086681366&y_max=0.7579669952392578&x_max=0.5272933840751648",
     type: "label",
   },
   "en:apples-from-france": {
@@ -417,25 +425,13 @@ const UNTYPED_LOGOS = {
     logo: "https://robotoff.openfoodfacts.org/api/v1/images/crop?image_url=https://static.openfoodfacts.org/images/products/123/456/789/0123/231.jpg&y_min=0.60532558&x_min=0.307998389&y_max=0.77711761&x_max=0.475660861",
     type: "label",
   },
-  "en:suisse-garantie": {
-    tag: "en:suisse-garantie",
-    label: "suisse garantie",
-    logo: "https://static.openfoodfacts.org/images/lang/en/labels/suisse-garantie.62x90.png",
-    type: "label",
-  },
-  "en:terrasuisse": {
-    tag: "en:terrasuisse",
-    label: "terrasuisse",
-    logo: "https://static.openfoodfacts.org/images/lang/en/labels/terrasuisse.87x90.svg",
-    type: "label",
-  },
   "en:british-lion-quality": {
     tag: "en:british-lion-quality",
     label: "british lion quality",
     logo: "https://static.openfoodfacts.org/images/lang/en/labels/british-lion-quality.97x90.png",
     type: "label",
   },
-  // Eco-score
+  // Eco-Score
   // To-Do add the origin france logos
   "en:organic": {
     tag: "en:organic",
@@ -504,6 +500,7 @@ const UNTYPED_LOGOS = {
     logo: "https://static.openfoodfacts.org/images/lang/en/packaging/01-pet.73x90.svg",
     type: "packaging",
   },
+  // Packaging - Materials
   "en:1-pet": {
     tag: "01-pet",
     label: "1-PET",
@@ -843,7 +840,7 @@ const UNTYPED_LOGOS = {
   "en:pefc": {
     tag: "en:pefc",
     label: "PEFC",
-    // logo does not exist yet
+    // FIXME: logo does not exist yet on openfoodfacts-server
     logo: "https://static.openfoodfacts.org/images/lang/en/labels/pefc.90x90.svg",
     type: "label",
   },
@@ -859,6 +856,7 @@ const UNTYPED_LOGOS = {
     logo: "https://static.openfoodfacts.org/images/lang/en/labels/triman.90x90.svg",
     type: "label",
   },
+  // Recycling - Shapes
   "fr:bouteille": {
     tag: "fr:bouteille",
     label: "Bottle",
@@ -1819,6 +1817,7 @@ const UNTYPED_LOGOS = {
     logo: "https://static.openfoodfacts.org/images/icons/packaging-shapes/citeo/light-mode/tube-2.svg",
     type: "packaging",
   },
+  // Recycling - Bins
   "fr:bac-de-tri": {
     tag: "fr:bac-de-tri",
     label: "Bac de tri",
@@ -1831,6 +1830,7 @@ const UNTYPED_LOGOS = {
     logo: "https://robotoff.openfoodfacts.org/api/v1/images/crop?image_url=https://static.openfoodfacts.org/images/products/123/456/789/0123/227.jpg&y_min=0.516038656&x_min=0.736438572&y_max=0.940771222&x_max=0.916798651",
     type: "packaging",
   },
+  // Recycling labels
   "es:ecoponto-amarelo": {
     tag: "es:ecoponto-amarelo",
     label: "Ecoponto amarelo",
@@ -1886,7 +1886,7 @@ const UNTYPED_LOGOS = {
     type: "packaging",
   },
 
-  // To-Do add Halal logos
+  // Halal
   "en:halal-food-council-of-europe": {
     tag: "en:halal-food-council-of-europe",
     label: "Halal Food Council of Europe",
@@ -1937,6 +1937,7 @@ const UNTYPED_LOGOS = {
     logo: "https://static.openfoodfacts.org/images/lang/en/labels/keyhole.90x90.png",
     type: "label",
   },
+  // Australia
   "en:health-star-rating-0-5": {
     tag: "en:health-star-rating-0-5",
     label: "Health Star Rating 0.5",
@@ -2083,7 +2084,19 @@ const UNTYPED_LOGOS = {
     logo: "https://static.openfoodfacts.org/images/lang/en/labels/2020-silver-medal-of-the-german-agricultural-society.90x90.png",
     type: "label",
   },
-
+  // Switzerland
+  "en:suisse-garantie": {
+    tag: "en:suisse-garantie",
+    label: "suisse garantie",
+    logo: "https://static.openfoodfacts.org/images/lang/en/labels/suisse-garantie.62x90.png",
+    type: "label",
+  },
+  "en:terrasuisse": {
+    tag: "en:terrasuisse",
+    label: "terrasuisse",
+    logo: "https://static.openfoodfacts.org/images/lang/en/labels/terrasuisse.87x90.svg",
+    type: "label",
+  },
   // Kosher
   "en:klbd-kosher": {
     tag: "en:kashrut-division-of-the-london-beth-din",
@@ -2301,7 +2314,7 @@ const UNTYPED_LOGOS = {
     logo: "https://static.openfoodfacts.org/images/lang/en/labels/not-advised-for-pregnant-women.90x90.svg",
     type: "label",
   },
-  // CGA
+  // France - CGA
   "en:concours-general-agricole": {
     tag: "en:concours-general-agricole",
     label: "concours general agricole",
@@ -2478,12 +2491,14 @@ const UNTYPED_LOGOS = {
     logo: "https://static.openfoodfacts.org/images/lang/en/labels/real-california-milk.90x90.png",
     type: "label",
   },
+  // Brands
   Kroger: {
     tag: "Kroger",
     label: "Kroger",
     logo: "https://robotoff.openfoodfacts.org/api/v1/images/crop?image_url=https://static.openfoodfacts.org/images/products/001/111/002/5388/1.jpg&y_min=0.131732494&x_min=0.293668717&y_max=0.279532224&x_max=0.629243255",
     type: "brand",
   },
+  // Gluten
   "es:sin-tacc": {
     tag: "es:Sin-TACC",
     label: "Sin TACC",
@@ -2884,7 +2899,7 @@ export const DASHBOARD: DashBoardTheme[] = [
   // Origins dashboard
   {
     tag: "origin-france",
-    title: "Origine France",
+    title: "🇫🇷 France",
     logos: [
       "en:made-in-france",
       "en:transformed-in-france",
@@ -2929,9 +2944,15 @@ export const DASHBOARD: DashBoardTheme[] = [
       "en:produced-in-brittany",
       "fr:viande-de-chevreau-francaise",
       "en:french-horse",
-      "en:suisse-garantie",
-      "en:terrasuisse",
-      "en:british-lion-quality",
+      "en:saveurs-en-or",
+    ],
+  },
+  // United Kingdom
+  {
+    tag: "united-kingdom",
+    title: "🇬🇧 United Kingdom",
+    logos: [
+        "en:british-lion-quality",
     ],
   },
   // vegetarian vegetalian categories
@@ -2981,12 +3002,46 @@ export const DASHBOARD: DashBoardTheme[] = [
   // United States
   {
     tag: "united-states",
-    title: "United States",
+    title: "🇺🇸 United States",
     logos: [
       "en:real-california-milk",
       "en:real-california-cheese",
       "en:usda-organic",
       "en:non-gmo-project",
+    ],
+  },
+  // Germany
+  {
+    tag: "germany",
+    title: "🇩🇪 Germany",
+    logos: [
+      "en:gold-medal-of-the-german-agricultural-society",
+      "en:silver-medal-of-the-german-agricultural-society",
+      "en:bronze-medal-of-the-german-agricultural-society",
+      "en:qs-certification-mark", // https://world.openfoodfacts.org/images/lang/en/labels/qs-certification-mark.79x90.png
+      "en:2009-silver-medal-of-the-german-agricultural-society.90x90.png",
+      "en:2010-gold-medal-of-the-german-agricultural-society.90x90.png",
+      "en:2010-silver-medal-of-the-german-agricultural-society.90x90.png",
+      "en:2015-gold-medal-of-the-german-agricultural-society.90x90.png",
+      "en:2016-bronze-medal-of-the-german-agricultural-society.90x90.png",
+      "en:2017-bronze-medal-of-the-german-agricultural-society.90x90.png",
+      "en:2017-gold-medal-of-the-german-agricultural-society.90x90.png",
+      "en:2017-silver-medal-of-the-german-agricultural-society.90x90.png",
+      "en:2018-bronze-medal-of-the-german-agricultural-society.90x90.png",
+      "en:2018-gold-medal-of-the-german-agricultural-society.90x90.png",
+      "en:2018-silver-medal-of-the-german-agricultural-society.90x90.png",
+      "en:2019-gold-medal-of-the-german-agricultural-society.90x90.png",
+      "en:2019-silver-medal-of-the-german-agricultural-society.90x90.png",
+      "en:2020-silver-medal-of-the-german-agricultural-society.90x90.png",
+    ],
+  },
+  // Switzerland
+  {
+    tag: "switzerland",
+    title: "Switzerland",
+    logos: [
+      "en:suisse-garantie",
+      "en:terrasuisse",
     ],
   },
   // Beers and Wines
