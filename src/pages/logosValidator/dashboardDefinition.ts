@@ -2084,6 +2084,13 @@ const UNTYPED_LOGOS = {
     logo: "https://static.openfoodfacts.org/images/lang/en/labels/2020-silver-medal-of-the-german-agricultural-society.90x90.png",
     type: "label",
   },
+  // India
+  "en:green-dot-india": {
+    tag: "en:green-dot-india",
+    label: "Green Dot India",
+    logo: "https://static.openfoodfacts.org/images/lang/en/labels/green-dot-india.90x90.svg",
+    type: "label",
+  },
   // Switzerland
   "en:suisse-garantie": {
     tag: "en:suisse-garantie",
