@@ -2295,6 +2295,12 @@ const UNTYPED_LOGOS = {
     logo: "https://static.openfoodfacts.org/images/lang/en/labels/certified-belgian-abbey-beer.66x90.png",
     type: "label",
   },
+  "en:not-advised-for-pregnant-women": {
+    tag: "en:not-advised-for-pregnant-women",
+    label: "not advised for pregnant women",
+    logo: "https://static.openfoodfacts.org/images/lang/en/labels/not-advised-for-pregnant-women.90x90.svg",
+    type: "label",
+  },
   // CGA
   "en:concours-general-agricole": {
     tag: "en:concours-general-agricole",
@@ -2992,6 +2998,7 @@ export const DASHBOARD: DashBoardTheme[] = [
       "en:belgian-hops",
       "en:belgian-family-brewers",
       "en:certified-belgian-abbey-beer",
+      "en:not-advised-for-pregnant-women",
     ],
   },
   // Climate claims
