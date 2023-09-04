@@ -46,8 +46,8 @@
     }
   },
   "flagged_images": {
-    "title": "Images flagged by users",
-    "loading": "Loading"
+    "title": "الصور التي تم الإبلاغ عنها من قبل المستخدمين",
+    "loading": "تحميل"
   },
   "questions": {
     "category": "atassnifate",
@@ -58,13 +58,13 @@
     "brands": "العلامات التجارية",
     "packaging": "ata3bia",
     "quantity": "كمية",
-    "insightTypeLabel": "Only shows",
+    "insightTypeLabel": "يظهر فقط",
     "ingredients": "المكونات",
     "product_weight": "وزن المنتج",
     "popularity_sort": "التصنيف عبر الشعبية",
-    "see_examples": "See examples of this ",
+    "see_examples": "انظر أمثلة على ذلك ",
     "no": "لا",
-    "skip": "Skip",
+    "skip": "تخطي",
     "yes": "نعم",
     "no_questions_remaining": "لم يعد هناك أسئلة",
     "countries": "بلدان",
@@ -72,9 +72,9 @@
     "edit": "تحرير",
     "hide_images": "إخفاء الصور (تحميل أسرع)",
     "display_images": "عرض الصور",
-    "annotations": "Annotations",
+    "annotations": "الشروح",
     "last_annotations": "الشروح الأخيرة",
-    "remaining_annotations": "Remaining questions",
+    "remaining_annotations": "الأسئلة المتبقية",
     "annotated_annotations": "مشروح",
     "filters": {
       "active_filter_number": "+{{count}} فلاتر",
