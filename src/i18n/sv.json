@@ -1,15 +1,15 @@
 {
   "home": {
     "game_selector": {
-      "title": "What game would you like to play?",
+      "title": "Vilket spel skulle du vilja spela?",
       "cards": {
         "questions": {
           "title": "Frågor",
-          "description": "Tell us if the given image answers the questions"
+          "description": "Berätta för oss om den givna bilden svarar på frågorna"
         },
         "logos": {
           "title": "Logotyper",
-          "description": "Find all the logos matching the given logo"
+          "description": "Hitta alla logotyper som matchar den givna logotypen"
         },
         "eco_score": {
           "title": "Eco-Score",
@@ -184,7 +184,7 @@
     "qr_code": "QR-kod",
     "category": "Kategori",
     "nutrition_label": "Näringstabell",
-    "no_logo": "Not a logo",
+    "no_logo": "Inte en logotyp",
     "store": "Butik",
     "detail": "Logotyp-detalj",
     "id": "Logo ID:",
@@ -196,7 +196,7 @@
     "number_of_results": "Antal resultat:",
     "loading": "Laddar…",
     "refresh": "Uppdatera",
-    "search_specific": "Search specific logo",
+    "search_specific": "Sök efter specifik logotyp",
     "load_more": "Load more",
     "no_results": "Ingen logotyp hittades",
     "result_count": "Shows {{showing}} on {{available}} available",
