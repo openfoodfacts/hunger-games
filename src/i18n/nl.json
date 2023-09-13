@@ -19,8 +19,8 @@
     },
     "account_band": {
       "title": "Wil je je bijdrage tellen? Maak een account aan of log in op Open Food Facts!",
-      "log_in": "Log in",
-      "sign_up": "Aanmelden",
+      "log_in": "Inloggen",
+      "sign_up": "Inschrijven",
       "contribution_details": "Ontdek waarom uw bijdrage ertoe doet"
     },
     "saved_filters": "Opgeslagen filters",
@@ -32,7 +32,7 @@
     "statistics": {
       "title": "{{userName}} statistieken:",
       "editorCount": {
-        "title": "Bewerkers",
+        "title": "Editor",
         "description": "Aantal bewerkingen gedaan"
       },
       "contributorCount": {
@@ -60,18 +60,18 @@
     "quantity": "Hoeveelheid",
     "insightTypeLabel": "Toont enkel",
     "ingredients": "Ingrediënten",
-    "product_weight": "Gewicht van het product",
+    "product_weight": "productgewicht",
     "popularity_sort": "Sorteren op populariteit",
     "see_examples": "Zie voorbeelden hiervan ",
     "no": "Nee",
     "skip": "Overslaan",
     "yes": "Ja",
-    "no_questions_remaining": "Geen verdere vragen",
+    "no_questions_remaining": "Geen vragen meer",
     "countries": "Landen",
     "view": "Bekijk",
     "edit": "Bewerken",
     "hide_images": "Afbeeldingen verbergen (sneller laden)",
-    "display_images": "Afbeelding weergeven",
+    "display_images": "Afbeeldingen weergeven",
     "annotations": "Aantekeningen",
     "last_annotations": "Laatste aantekeningen",
     "remaining_annotations": "Resterende vragen",
@@ -91,7 +91,7 @@
         "type": "Vraagtype",
         "value": "Voorgestelde waarde",
         "country": "Productieland",
-        "brand": "Producent/merk",
+        "brand": "Productmerk",
         "popularity": "Sorteren op populariteit",
         "edit": "",
         "campaign": "Campagne"
@@ -107,13 +107,13 @@
         "apply": "Toepassen"
       }
     },
-    "other_questions": "Overige vragen",
+    "other_questions": "Andere vragen",
     "send": "Verzenden",
     "flag": "Iets mis? Meld/markeer de afbeelding!",
     "unflag": "Onmarkeer de afbeelding",
     "reset_filters": "Filters resetten",
-    "log_in": "Log in",
-    "sign_up": "Aanmelden",
+    "log_in": "Inloggen",
+    "sign_up": "Inschrijven",
     "login_title": "Laat uw annotatie tellen",
     "login_description": "Je bent momenteel niet ingelogd bij Open Food Facts. Om je antwoorden rechtstreeks toe te passen op producten en om ze aan jouw account te kunnen koppelen, moet je inloggen op je Open Food Facts account of er één aanmaken",
     "please_wait_while_we_fetch_the_question": "Een ogenblik geduld, we halen de vraag op!"
@@ -142,17 +142,17 @@
     "barcode": "Streepjescode",
     "barcode_placeholder": "streepjescode",
     "value_tag": "Waarde tag",
-    "value_placeholder": "vb: en:mueslis, bjorg,...",
+    "value_placeholder": "bijv: en: mueslis, bjorg, ...",
     "type": "Type",
     "annotated": "Geannoteerd",
     "annotation": "Aantekening",
     "not_annotated": "Niet geannoteerd",
-    "all": "Alle",
+    "all": "Alles",
     "label": "Keurmerk",
     "product_weight": "Productgewicht",
     "category": "Categorie",
     "expiration_date": "Vervaldatum",
-    "packager_code": "Verpakkerscode",
+    "packager_code": "Verpakkingscode",
     "skipped": "Overgeslagen (-1)",
     "rejected": "Afgewezen (0)",
     "accepted": "Geaccepteerd (1)",
@@ -175,27 +175,27 @@
     "unselect_all": "Deselecteer alles",
     "distance": "Afstand:",
     "value": "Waarde",
-    "submit": "Bevestigen",
+    "submit": "Verzenden",
     "type": "Type",
     "label": "Keurmerk",
     "brand": "Merk",
-    "packager_code": "Verpakkerscode",
+    "packager_code": "Verpakkingscode",
     "packaging": "Verpakking",
     "qr_code": "QR-code",
     "category": "Categorie",
-    "nutrition_label": "Voedingswaarde label",
+    "nutrition_label": "Voedingswaarden-etiket",
     "no_logo": "Geen logo",
     "store": "Winkel",
     "detail": "Logo detail",
     "id": "Logo ID:",
     "barcode": "Streepjescode:",
     "full_image": "Volledige afbeelding",
-    "update": "Bijgewerkt",
+    "update": "Update",
     "no_found": "Geen logo gevonden",
     "search": "Zoeken",
     "number_of_results": "Aantal resultaten:",
     "loading": "Bezig met laden…",
-    "refresh": "Herladen",
+    "refresh": "Vernieuw",
     "search_specific": "Zoek specifiek logo",
     "load_more": "Meer laden",
     "no_results": "Geen logo gevonden",
@@ -205,7 +205,7 @@
     "crop_image_title": "bijsnijden van het logo",
     "no_more_questions": "Geen vragen meer over dit logo. Je kunt proberen meer logo's te vinden met het volgende spel.",
     "loading_messages": {
-      "pending_reference_logos": "We laden enkele voorbeelden van logo's om de zoekopdracht te starten",
+      "pending_reference_logos": "We laden een voorbeeld van een logo om de zoekfunctie te initialiseren",
       "failed_reference_logos": "We hebben geen logo gevonden met deze annotatie. Probeer het volgende spel te gebruiken om er een paar te annoteren."
     }
   },
@@ -215,7 +215,7 @@
     "save": "Opslaan",
     "reportIssue": "Een bug gevonden? Laat het ons weten.",
     "dev_mode_title": "Activeer de dev-modus om meer opties te krijgen",
-    "dev_mode_label": "Dev-modus",
+    "dev_mode_label": "Dev-Modus",
     "dev_page_toggle": "Toon {{name}} pagina",
     "join_community": "Word lid van de community",
     "text1": "Open Food Facts is een samenwerkingsproject dat is opgezet door tienduizenden vrijwilligers en wordt beheerd door een non-profitorganisatie met 8 medewerkers. We hebben uw donaties nodig om het budget van Open Food Facts voor 2024 te financieren en om het project verder te ontwikkelen.",
@@ -230,9 +230,9 @@
       "newsletter": "nieuwsbrief"
     },
     "discover_the_project": "Ontdek het project",
-    "Who_we_are": "Wie we zijn",
+    "Who_we_are": "Over ons",
     "Vision_Mission_Values_and_Programs": "Visie, missie, waarden en programma's",
-    "FAQS": "Veelgestelde vragen (FAQ)",
+    "FAQS": "FAQ",
     "open_Food_Facts_blog": "Open Food Facts blog",
     "Press": "Pers",
     "Open_Food_Facts_wiki": "Open Food Facts wiki (en)",
@@ -246,14 +246,14 @@
       "page1": {
         "title": "Welkom bij Hunger Games",
         "text1": "Hunger Games is een verzameling minigames die op vele manieren bijdragen aan Open Food Facts. Je kunt overal echt spannende spellen spelen. Hier is een rondleiding door de hele website waarmee u aan de slag kunt.",
-        "text2": "Zorg ervoor dat u inlogt op de Open Food Facts-website om krediet te krijgen voor uw bijdragen. Als je een fout maakt, neem dan de tijd om deze te corrigeren door naar de website te gaan.",
+        "text2": "Zorg ervoor dat u inlogt op de Open Food Facts-website om krediet te krijgen voor uw bijdragen. Als u een fout maakt, neem dan de tijd om deze te corrigeren door naar de website te gaan.",
         "text3": "In het geval van twijfel over de spellen, klik op het vraagteken icoon rechtsboven op de pagina en je kunt ons bereiken op slack op het #hunger-games kanaal"
       },
       "page2": {
         "title": "Vragen Spel",
         "text1": "Is het voedingsproduct van dit merk?",
-        "text2": "Antwoord gewoon met een <strong>ja/nee</strong>! Weet u het antwoord niet? Dat is prima, sla het gewoon over.",
-        "text3": "Je kunt ook je toetsenbord toetsen o,n en k gebruiken.",
+        "text2": "Antwoord eenvoudig met <strong>ja/nee</strong>! Weet je het antwoord niet? Dat is goed, sla het gewoon over.",
+        "text3": "U kunt ook uw sneltoetsen gebruiken: y,n en k.",
         "text4": "U kunt <strong>producten <strong> filteren</strong> op basis van land, merken, populariteit en nog veel meer!",
         "text5": "Als u dit niet elke keer wilt doen, kunt u ook de filters <strong>opslaan</strong> door op de ster te klikken. De volgende keer dat u terugkomt, vindt u de opgeslagen filters op de startpagina zelf"
       },
@@ -283,7 +283,7 @@
     "logos": {
       "page1": {
         "title": "Selectie",
-        "text1": "Selecteer de lijnen rondom het logo door erop te klikken",
+        "text1": "Selecteer de lijnen van hetzelfde logo door erop te klikken",
         "text2": "Geselecteerde logo's gaan naar de bovenkant van de pagina, u kunt ze deselecteren door er opnieuw op te klikken"
       },
       "page2": {
@@ -295,7 +295,7 @@
         "title": "Bevestigen",
         "text1": "Geef het type logo aan (label, merk, QR-code, ...)",
         "text2": "Als het een label of een merklogo is, geef dan aan welke het is",
-        "text3": "Je kunt nu je selectie indienen",
+        "text3": "Nu kunt u uw selectie indienen",
         "text4": "Bedankt :)"
       }
     },
@@ -305,9 +305,9 @@
   },
   "nutrition": {
     "instructions": {
-      "cropTheTable": "Werk de afbeelding bij om je aantekening te vereenvoudigen",
+      "cropTheTable": "Werk de afbeelding bij om uw aantekening te vereenvoudigen",
       "verifyNutrimentDetected": "Geef aan of de gedetecteerde voeding correct is",
-      "selectMissingNutriments": "Voeg ontbrekende voedingsstoffen toe (je kunt hierop klikken zelfs als het woord geen vakje heeft)",
+      "selectMissingNutriments": "Voeg ontbrekende voedingsstoffen toe (u kunt klikken, zelfs als het woord geen vakje heeft)",
       "selectValue": "Selecteer de voedingswaarde van: "
     },
     "steps": {
@@ -316,7 +316,7 @@
       "3": "Selectie van voedingsstoffen",
       "4": "Waarden Selectie"
     },
-    "loading": "Bezig met laden...",
+    "loading": "Aan het laden...",
     "unknown_brand": "Merk onbekend",
     "value_missing": "U bent vergeten een waarde in te voeren.",
     "next": "Volgende stap",
@@ -325,7 +325,7 @@
     "validate": "Tabel goedkeuren",
     "unselect_picture": "Geen voedingsinformatie",
     "basis": "gegevens voor: ",
-    "servingSize": "grootte van een portie",
+    "servingSize": "portiegrootte",
     "value": "Waarde",
     "unit": "Eenheid",
     "nutriments": {
@@ -363,13 +363,13 @@
     "image_alt": "bijgesneden afbeelding",
     "label": "Annoteer Nutri-Score-logodetectie per batch.",
     "description": "Om dit te doen, selecteert u alle afbeeldingen met de juiste/foute Nutri-Score-waarde ({{label}}), en klikt u op de onderste knoppen om aan te geven of u een reeks juiste of verkeerde hebt geselecteerd.",
-    "images_remaining": "Nog {{remaining}} over om te annoteren",
+    "images_remaining": "Nog {{remaining}} om te annoteren",
     "image_sizes": "Afbeeldingsgrootte",
     "zoom_on_logo": "Zoom op logo",
     "select_all": "Selecteer alles",
     "deselect_all": "Deselecteer alles",
-    "incorrect": "Mis",
-    "correct": "Correct ({{label}})"
+    "incorrect": "Niet waar",
+    "correct": "Juist ({{label}})"
   },
   "eco-score": {
     "description": "Hier is een samenvatting van vragen die de berekening van de Eco-score kunnen verbeteren",
