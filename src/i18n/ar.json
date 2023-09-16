@@ -30,7 +30,7 @@
       "thank_you": "نشكرك على مساعدتنا في تحسين Open Food Facts حتى يتمكن عدد أكبر من الأشخاص من استخدامها بسهولة"
     },
     "statistics": {
-      "title": "{{userName}} statistics:",
+      "title": "{{userName}} إحصائيات:",
       "editorCount": {
         "title": "المحرر",
         "description": "عدد الطبعات المنجزة"
@@ -94,11 +94,11 @@
         "brand": "العلامة التجارية للمنتج",
         "popularity": "التصنيف عبر الشعبية",
         "edit": "",
-        "campaign": "Campaign"
+        "campaign": "حملة"
       },
       "placeholders": {
-        "value": "Value (Fanta, en:organic,...)",
-        "brand": "Auchan, Danone, Herta, ...",
+        "value": "القيمة (فانتا، إن:عضوية،...)",
+        "brand": "أوشان، دانون، هيرتا، ...",
         "campaign": "Annotation campaigns"
       },
       "actions": {
