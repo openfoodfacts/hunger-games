@@ -85,7 +85,7 @@
         "country": "страна",
         "brand": "марка",
         "popularity": "популярность",
-        "campaign": "camp"
+        "campaign": "лагерь"
       },
       "long_label": {
         "type": "Тип вопроса",
@@ -97,7 +97,7 @@
         "campaign": "Кампания"
       },
       "placeholders": {
-        "value": "Value (Fanta, en:organic,...)",
+        "value": "Ценность(фанта, en:organic)",
         "brand": "Auchan, Danone, Herta, ...",
         "campaign": "Аннотационные кампании"
       },
@@ -115,7 +115,7 @@
     "log_in": "Имя пользователя",
     "sign_up": "Регистрация",
     "login_title": "Make your annotation count",
-    "login_description": "You are not currently logged into Open Food Facts. To get your answers directly applied to products, and associated to your account, consider logging in to your Open Food Facts account, or creating one",
+    "login_description": "Вы не вошли в Open Food Facts. Чтобы получать ответы, напрямую связанные с продуктами и вашим аккаунтом, войдите в ваш аккаунт Open Food Facts, или создайте его",
     "please_wait_while_we_fetch_the_question": "Please wait while we fetch the question!"
   },
   "menu": {
@@ -218,11 +218,11 @@
     "dev_mode_label": "Режим Разработчика",
     "dev_page_toggle": "Show {{name}} page",
     "join_community": "Присоединяйтесь к сообществу",
-    "text1": "Open Food Facts is a collaborative project built by tens of thousands of volunteers and managed by a non-profit organization with 8 employees. We need your donations to fund the Open Food Facts 2024 budget and to continue to develop the project.",
+    "text1": "Open Food Facts - это совместный проект, построенный десятками тысяч добровольцев и управляемый некоммерческой организацией с 8 сотрудниками. Нам нужны ваши пожертвования, чтобы финансировать бюджет Open Food Facts 2024 и продолжить разработку проекта.",
     "thank_you": "Спасибо",
     "donate": "Поддержать",
     "join_the_community": {
-      "discover_our": "Discover our ",
+      "discover_our": "Откройте для себя наши ",
       "code_of_conduct": "Правила поведения ",
       "join_us_on": "Присоединяйтесь к нашему ",
       "forum": "Форум",
@@ -245,7 +245,7 @@
     "welcome": {
       "page1": {
         "title": "Добро пожаловать на Голодные игры",
-        "text1": "Hunger Games is a collection of mini-games that help contribute to Open Food Facts in many ways. You can play are really exciting games from anywhere. Here is a guided tour of the entire website which will get you started.",
+        "text1": "Hunger Games - это коллекция мини-игр, которые помогают в Open Food Facts многими способами. Вы можете играть в действительно захватывающие игры из любого места. Вот экскурсия по всему веб-сайту, который вы начнете.",
         "text2": "Убедитесь в том, что вы вошли в аккаунт на вебсайте Open Food Facts, чтобы получить признание за свой вклад. Если вы допустили ошибку, выделите время на её исправление, перейдя на веб-сайт.",
         "text3": "In case of any doubt about the games, click on the question mark icon at the top right of the page, and you can reach us on slack at the #hunger-games channel"
       },
@@ -277,7 +277,7 @@
       "page6": {
         "title": "Обзор",
         "text1": "Вы где-то застряли? Хотите пройти тур снова?",
-        "text2": "Just click on the question mark and start the journey again!"
+        "text2": "Просто нажмите на знак вопроса и начните путешествие снова!"
       }
     },
     "logos": {

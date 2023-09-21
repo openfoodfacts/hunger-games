@@ -19,14 +19,14 @@
     },
     "account_band": {
       "title": "Katkılarınızı saymak ister misiniz? Bir hesap oluşturun veya Open Food Facts'te oturum açın!",
-      "log_in": "Kullanıcı adı",
+      "log_in": "Oturumu Başlat",
       "sign_up": "Kaydol",
       "contribution_details": "Katkınızın neden önemli olduğunu öğrenin"
     },
     "saved_filters": "Kaydedilen Filtreler",
     "contribution_modal": {
       "title": "Katkınız önemlidir",
-      "information": "Hunger Games is an effort to leverage the results of our OCR and artificial intelligence. When you use Hunger Games by Open Food Facts, you improve our entire database which helps the community make better food choices. We gather your annotations and use them to make Open Food Facts more accurate and efficient.",
+      "information": "Açlık Oyunları, OCR (OKT - Optik Karakter Tanıma) ve yapay zekamızın sonuçlarından yararlanma çabasıdır. Open Food Facts yapımı Açlık Oyunları'nı kullandığınızda, topluluğun daha iyi yemek seçimleri yapmasına yardımcı olan veritabanımızın tamamını geliştirirsiniz. Ek açıklamalarınızı topluyoruz ve Open Food Facts'i daha doğru ve verimli hale getirmek için kullanıyoruz.",
       "thank_you": "Daha fazla insanın kolayca kullanabilmesi için Open Food Facts'i geliştirmemize yardımcı olduğunuz için teşekkür ederiz."
     },
     "statistics": {
@@ -112,7 +112,7 @@
     "flag": "Ters giden birşey mi var? Resmi rapor edin/işaretleyin!",
     "unflag": "Resmin işaretini kaldır",
     "reset_filters": "Filtreleri sıfırla",
-    "log_in": "Kullanıcı adı",
+    "log_in": "Oturumu Başlat",
     "sign_up": "Kaydol",
     "login_title": "Ek açıklama sayınızı yapın",
     "login_description": "Şu anda Open Food Facts'e giriş yapmadınız. Yanıtlarınızın doğrudan ürünlere uygulanmasını ve hesabınızla ilişkilendirilmesini sağlamak için Open Food Facts hesabınıza giriş yapmayı veya bir tane oluşturmayı düşünün",
@@ -218,7 +218,7 @@
     "dev_mode_label": "Geliştirici Modu",
     "dev_page_toggle": "{{name}} sayfayı göster",
     "join_community": "Topluluğa katılın",
-    "text1": "Open Food Facts is a collaborative project built by tens of thousands of volunteers and managed by a non-profit organization with 8 employees. We need your donations to fund the Open Food Facts 2024 budget and to continue to develop the project.",
+    "text1": "Open Food Facts, on binlerce gönüllü tarafından oluşturulan ve 8 çalışanı olan kar amacı gütmeyen bir kuruluş tarafından yönetilen ortak bir projedir. Open Food Facts 2024 bütçesini finanse etmek ve projeyi geliştirmeye devam etmek için bağışlarınıza ihtiyacımız var.",
     "thank_you": "Teşekkürler",
     "donate": "Bağış Yapın",
     "join_the_community": {
@@ -226,16 +226,16 @@
       "code_of_conduct": "Davranış kuralları ",
       "join_us_on": "Bize katılın ",
       "forum": "Forum",
-      "subscribe_to_our": "Subscribe to our ",
+      "subscribe_to_our": " 'mıza abone olun",
       "newsletter": "haber bülteni"
     },
     "discover_the_project": "Projeyi keşfedin",
     "Who_we_are": "Biz kimiz",
     "Vision_Mission_Values_and_Programs": "Vizyon, Misyon, Değerler ve Programlar",
     "FAQS": "SSS",
-    "open_Food_Facts_blog": "Open Food Facts blog",
+    "open_Food_Facts_blog": "Open Food Facts blogu",
     "Press": "Basın",
-    "Open_Food_Facts_wiki": "Open Food Facts wiki (en)",
+    "Open_Food_Facts_wiki": "Open Food Facts vikipedia (ing)",
     "Translators": "Çevirmenler",
     "Partners": "Partnerler",
     "Open_Beauty_Facts": "Open Beauty Facts - Kozmetik ürünleri",

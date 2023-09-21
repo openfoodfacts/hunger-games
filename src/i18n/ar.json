@@ -25,29 +25,29 @@
     },
     "saved_filters": "فرز محفوظ",
     "contribution_modal": {
-      "title": "Your contribution matters",
-      "information": "Hunger Games is an effort to leverage the results of our OCR and artificial intelligence. When you use Hunger Games by Open Food Facts, you improve our entire database which helps the community make better food choices. We gather your annotations and use them to make Open Food Facts more accurate and efficient.",
-      "thank_you": "Thank you for helping us improve Open Food Facts so that more people can use it easily."
+      "title": "مساهمتك مهمة",
+      "information": "ألعاب الجوع هي محاولة للاستفادة من نتائج التعرف الضوئي على الحروف والذكاء الاصطناعي.  عند استخدام Hunger Games بواسطة Open Food Facts، فإنك تقوم بتحسين قاعدة البيانات بأكملها مما يساعد المجتمع على اتخاذ خيارات غذائية أفضل.  نحن نجمع تعليقاتك التوضيحية ونستخدمها لجعل Open Food Facts أكثر دقة وكفاءة",
+      "thank_you": "نشكرك على مساعدتنا في تحسين Open Food Facts حتى يتمكن عدد أكبر من الأشخاص من استخدامها بسهولة"
     },
     "statistics": {
-      "title": "{{userName}} statistics:",
+      "title": "{{userName}} إحصائيات:",
       "editorCount": {
         "title": "المحرر",
-        "description": "Number of editions done"
+        "description": "عدد الطبعات المنجزة"
       },
       "contributorCount": {
-        "title": "Contributor",
+        "title": "مساهم",
         "description": "إضافة منتج جديد"
       },
       "photographerCount": {
-        "title": "Photographer",
-        "description": "Taking photos for a product"
+        "title": "مصور فوتوغرافي",
+        "description": "التقاط الصور للمنتج"
       }
     }
   },
   "flagged_images": {
-    "title": "Images flagged by users",
-    "loading": "Loading"
+    "title": "الصور التي تم الإبلاغ عنها من قبل المستخدمين",
+    "loading": "تحميل"
   },
   "questions": {
     "category": "atassnifate",
@@ -58,13 +58,13 @@
     "brands": "العلامات التجارية",
     "packaging": "ata3bia",
     "quantity": "كمية",
-    "insightTypeLabel": "Only shows",
+    "insightTypeLabel": "يظهر فقط",
     "ingredients": "المكونات",
     "product_weight": "وزن المنتج",
     "popularity_sort": "التصنيف عبر الشعبية",
-    "see_examples": "See examples of this ",
+    "see_examples": "انظر أمثلة على ذلك ",
     "no": "لا",
-    "skip": "Skip",
+    "skip": "تخطي",
     "yes": "نعم",
     "no_questions_remaining": "لم يعد هناك أسئلة",
     "countries": "بلدان",
@@ -72,9 +72,9 @@
     "edit": "تحرير",
     "hide_images": "إخفاء الصور (تحميل أسرع)",
     "display_images": "عرض الصور",
-    "annotations": "Annotations",
+    "annotations": "الشروح",
     "last_annotations": "الشروح الأخيرة",
-    "remaining_annotations": "Remaining questions",
+    "remaining_annotations": "الأسئلة المتبقية",
     "annotated_annotations": "مشروح",
     "filters": {
       "active_filter_number": "+{{count}} فلاتر",
@@ -94,11 +94,11 @@
         "brand": "العلامة التجارية للمنتج",
         "popularity": "التصنيف عبر الشعبية",
         "edit": "",
-        "campaign": "Campaign"
+        "campaign": "حملة"
       },
       "placeholders": {
-        "value": "Value (Fanta, en:organic,...)",
-        "brand": "Auchan, Danone, Herta, ...",
+        "value": "القيمة (فانتا، إن:عضوية،...)",
+        "brand": "أوشان، دانون، هيرتا، ...",
         "campaign": "Annotation campaigns"
       },
       "actions": {

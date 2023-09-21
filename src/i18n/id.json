@@ -8,46 +8,46 @@
           "description": "Beritahu kami jika gambar yang diberikan menjawab pertanyaan"
         },
         "logos": {
-          "title": "Logos",
+          "title": "Logo",
           "description": "Temukan semua dan samakan dengan logo yang telah diberikan"
         },
         "eco_score": {
           "title": "Eco-score",
-          "description": "Annotate the questions with the highest value"
+          "description": "Beri keterangan pada pertanyaan dengan nilai tertinggi"
         }
       }
     },
     "account_band": {
-      "title": "Want to make your contribution count? Create an account or sign in on Open Food Facts!",
+      "title": "Ingin membuat kontribusi Anda berarti? Buat akun atau masuk ke Open Food Facts!",
       "log_in": "Masuk",
       "sign_up": "Daftar",
-      "contribution_details": "Learn why your contribution matters"
+      "contribution_details": "Pelajari mengapa kontribusi Anda penting"
     },
-    "saved_filters": "Saved Filters",
+    "saved_filters": "Filter yang disimpan",
     "contribution_modal": {
-      "title": "Your contribution matters",
+      "title": "Kontribusi Anda sangat berarti",
       "information": "Hunger Games merupakan upaya pemanfaatan hasil OCR dan kecerdasan buatan kami. Saat menggunakan Hunger Games dari Open Food Facts, Anda meningkatkan seluruh basis data kami dan membantu komunitas membuat pilihan makanan yang lebih baik. Kami mengumpulkan anotasi Anda dan menggunakannya agar Open Food Facts lebih akurat dan efisien.",
-      "thank_you": "Thank you for helping us improve Open Food Facts so that more people can use it easily."
+      "thank_you": "Terima kasih telah membantu kami meningkatkan Open Food Facts sehingga lebih banyak orang dapat menggunakannya dengan mudah."
     },
     "statistics": {
-      "title": "{{userName}} statistics:",
+      "title": "Statistik {{userName}}:",
       "editorCount": {
         "title": "Editor",
-        "description": "Number of editions done"
+        "description": "Jumlah edisi yang dilakukan"
       },
       "contributorCount": {
         "title": "Kontributor",
-        "description": "Adding a new product"
+        "description": "Menambahkan produk baru"
       },
       "photographerCount": {
-        "title": "Photographer",
-        "description": "Taking photos for a product"
+        "title": "Fotografer",
+        "description": "Mengambil foto untuk produk"
       }
     }
   },
   "flagged_images": {
-    "title": "Images flagged by users",
-    "loading": "Loading"
+    "title": "Gambar yang ditandai oleh pengguna",
+    "loading": "Memuat"
   },
   "questions": {
     "category": "kategori",
@@ -58,11 +58,11 @@
     "brands": "Merek - merek",
     "packaging": "kemasan",
     "quantity": "Kuantitas",
-    "insightTypeLabel": "Only shows",
+    "insightTypeLabel": "Hanya menampilkan",
     "ingredients": "bahan",
     "product_weight": "berat produk",
     "popularity_sort": "Urutkan berdasarkan popularitas",
-    "see_examples": "See examples of this ",
+    "see_examples": "Lihat contoh-contohnya ",
     "no": "Tidak",
     "skip": "Lewati",
     "yes": "Ya",
@@ -74,18 +74,18 @@
     "display_images": "Tampilkan gambar",
     "annotations": "Anotasi",
     "last_annotations": "Anotasi - anotasi terakhir",
-    "remaining_annotations": "Remaining questions",
+    "remaining_annotations": "Pertanyaan yang tersisa",
     "annotated_annotations": "Teranotasi",
     "filters": {
-      "active_filter_number": "+{{count}} filters",
+      "active_filter_number": "+{{count}} filter",
       "active_filter_number_one": "+{{count}} filter",
-      "active_filter_number_zero": "no filter",
+      "active_filter_number_zero": "tanpa filter",
       "short_label": {
         "value": "nilai",
         "country": "negara",
         "brand": "merek",
         "popularity": "popularitas",
-        "campaign": "camp"
+        "campaign": "kemping"
       },
       "long_label": {
         "type": "Tipe Pertanyaan",
@@ -94,12 +94,12 @@
         "brand": "Merek Produk",
         "popularity": "Urutkan berdasarkan popularitas",
         "edit": "",
-        "campaign": "Campaign"
+        "campaign": "Kampanye"
       },
       "placeholders": {
         "value": "Nilai (Fanta, en:organik,...)",
         "brand": "Auchan, Danone, Herta, ...",
-        "campaign": "Annotation campaigns"
+        "campaign": "Kampanye anotasi"
       },
       "actions": {
         "edit": "Ubah Penyaringan",
@@ -107,35 +107,35 @@
         "apply": "Terapkan"
       }
     },
-    "other_questions": "Other questions",
-    "send": "Send",
-    "flag": "Something wrong? Report/flag the image!",
-    "unflag": "Unflag the image",
-    "reset_filters": "Reset filters",
+    "other_questions": "Pertanyaan lainnya",
+    "send": "Kirim",
+    "flag": "Ada yang salah? Laporkan/tandai gambar tersebut!",
+    "unflag": "Hapus tanda pada gambar",
+    "reset_filters": "Setel ulang filter",
     "log_in": "Masuk",
     "sign_up": "Daftar",
-    "login_title": "Make your annotation count",
-    "login_description": "You are not currently logged into Open Food Facts. To get your answers directly applied to products, and associated to your account, consider logging in to your Open Food Facts account, or creating one",
-    "please_wait_while_we_fetch_the_question": "Please wait while we fetch the question!"
+    "login_title": "Jadikan anotasi Anda berarti",
+    "login_description": "Saat ini Anda belum masuk ke Open Food Facts. Untuk mendapatkan jawaban Anda yang langsung diterapkan pada produk, dan dikaitkan dengan akun Anda, pertimbangkan untuk masuk ke akun Open Food Facts Anda, atau buatlah akun baru",
+    "please_wait_while_we_fetch_the_question": "Mohon tunggu sementara kami mengambil pertanyaannya!"
   },
   "menu": {
     "title": "Hunger Games",
     "games": "Permainan",
     "questions": "Pertanyaan",
-    "logos": "Logos",
-    "logos-annotation": "Logos annotation",
-    "logos-search": "Logos search",
-    "logos-product-search": "Annotation per products",
-    "logos-deep-search": "Infinite annotation",
+    "logos": "Logo",
+    "logos-annotation": "Anotasi logo",
+    "logos-search": "Pencarian logo",
+    "logos-product-search": "Anotasi per produk",
+    "logos-deep-search": "Anotasi tanpa batas",
     "manage": "Kelola",
     "insights": "Wawasan",
     "nutritions": "Informasi nilai gizi",
     "settings": "Pengaturan",
     "eco-score": "Eco-score",
-    "dashboard": "Logos dashboard",
-    "tour": "Show tour",
-    "logged_in_user": "Logged as {{userName}}",
-    "log_in": "Click to login"
+    "dashboard": "Dasbor logo",
+    "tour": "Perlihatkan Tur",
+    "logged_in_user": "Masuk sebagai {{userName}}",
+    "log_in": "Klik untuk login"
   },
   "insights": {
     "insights": "Wawasan",
@@ -163,14 +163,14 @@
     "created_at": "Di buat pada",
     "completed_at": "Diselesaikan pada",
     "automatic": "Otomatis",
-    "human_required": "Human required",
-    "edit_product": "Open product edit",
-    "view_product": "Open product page"
+    "human_required": "Manusia dibutuhkan",
+    "edit_product": "Buka suntingan produk",
+    "view_product": "Buka halaman produk"
   },
   "logos": {
     "annotation": "Anotasi: ",
     "annotations": "Anotasi - anotasi logo",
-    "task_description": "Select all logos that are exactly the same, and give them a name like \"en:EU Organic\" and a type like \"label\".",
+    "task_description": "Pilih semua logo yang sama persis, dan beri nama seperti \"en:EU Organic\" dan jenis seperti \"label\".",
     "select_all": "Pilih semua",
     "unselect_all": "Batalkan semua pilihan",
     "distance": "Jarak:",
@@ -184,7 +184,7 @@
     "qr_code": "Kode QR",
     "category": "Kategori",
     "nutrition_label": "Label nutrisi",
-    "no_logo": "Not a logo",
+    "no_logo": "Bukan logo",
     "store": "Toko",
     "detail": "Rincian logo",
     "id": "ID Logo:",
@@ -196,46 +196,46 @@
     "number_of_results": "Jumlah hasil:",
     "loading": "Memuat…",
     "refresh": "Muat ulang",
-    "search_specific": "Search specific logo",
-    "load_more": "Load more",
+    "search_specific": "Cari logo tertentu",
+    "load_more": "Muat lebih banyak",
     "no_results": "Logo tidak ditemukan",
-    "result_count": "Shows {{showing}} on {{available}} available",
-    "flag": "Something wrong? Report/flag the image!",
-    "unflag": "Unflag the image",
-    "crop_image_title": "crop of the logo",
-    "no_more_questions": "No more questions about this logo. You can try to find more logos with the following game.",
+    "result_count": "Menampilkan {{showing}} pada {{available}} tersedia",
+    "flag": "Ada yang salah? Laporkan/tandai gambar tersebut!",
+    "unflag": "Hapus tanda pada gambar",
+    "crop_image_title": "memotong logo",
+    "no_more_questions": "Tidak ada lagi pertanyaan tentang logo ini. Anda dapat mencoba menemukan lebih banyak logo dengan permainan berikut.",
     "loading_messages": {
-      "pending_reference_logos": "We are loading some logos examples to initialise the search",
-      "failed_reference_logos": "We did not find any logos with this annotation. Try to use the following game to annotate some of them."
+      "pending_reference_logos": "Kami memuat beberapa contoh logo untuk menginisialisasi pencarian",
+      "failed_reference_logos": "Kami tidak menemukan logo apa pun dengan anotasi ini. Coba gunakan permainan berikut ini untuk membuat anotasi beberapa di antaranya."
     }
   },
   "settings": {
     "settings": "Pengaturan",
     "language": "Bahasa",
     "save": "menyimpan ",
-    "reportIssue": "Found a bug? Please let us know.",
-    "dev_mode_title": "To get more options, activate the dev mode",
-    "dev_mode_label": "Dev Mode",
-    "dev_page_toggle": "Show {{name}} page",
+    "reportIssue": "Menemukan bug? Beri tahu kami.",
+    "dev_mode_title": "Untuk mendapatkan lebih banyak opsi, aktifkan mode dev",
+    "dev_mode_label": "Mode Dev",
+    "dev_page_toggle": "Tampilkan halaman {{name}}",
     "join_community": "Bergabunglah dengan komunitas",
     "text1": "Open Food Facts merupakan proyek kolaborasi yang dibangun oleh puluhan ribu sukarelawan dan dikelola oleh organisasi nirlaba dengan 8 karyawan. Kami membutuhkan donasi Anda untuk membiayai anggaran Open Food Facts 2024 dan untuk terus mengembangkan proyek.",
-    "thank_you": "Thank you",
+    "thank_you": "Terima kasih",
     "donate": "Berdonasi",
     "join_the_community": {
-      "discover_our": "Discover our ",
-      "code_of_conduct": "Code of conduct ",
-      "join_us_on": "Join us on ",
+      "discover_our": "Temukan ",
+      "code_of_conduct": "Kode etik ",
+      "join_us_on": "Bergabung dengan kami di ",
       "forum": "Forum",
-      "subscribe_to_our": "Subscribe to our ",
-      "newsletter": "newsletter"
+      "subscribe_to_our": "Berlanganan ",
+      "newsletter": "buletin"
     },
     "discover_the_project": "Temukan proyeknya",
     "Who_we_are": "Siapa kami",
     "Vision_Mission_Values_and_Programs": "Visi, Misi, Nilai dan Program",
-    "FAQS": "FAQS",
-    "open_Food_Facts_blog": "Open Food Facts blog",
+    "FAQS": "Pertanyaan Umum",
+    "open_Food_Facts_blog": "Blog Open Food Facts",
     "Press": "Pers",
-    "Open_Food_Facts_wiki": "Open Food Facts wiki (en)",
+    "Open_Food_Facts_wiki": "Wiki Open Food Facts (Inggris)",
     "Translators": "Para penerjemah",
     "Partners": "Para mitra",
     "Open_Beauty_Facts": "Open Beauty Facts - Kosmetik",
@@ -244,40 +244,40 @@
   "helper": {
     "welcome": {
       "page1": {
-        "title": "Welcome to Hunger Games",
-        "text1": "Hunger Games is a collection of mini-games that help contribute to Open Food Facts in many ways. You can play are really exciting games from anywhere. Here is a guided tour of the entire website which will get you started.",
-        "text2": "Make sure to login to the Open Food Facts website to get credit for your contributions. If you make a mistake, please take the time to correct it by heading to the website.",
-        "text3": "In case of any doubt about the games, click on the question mark icon at the top right of the page, and you can reach us on slack at the #hunger-games channel"
+        "title": "Selamat datang di Hunger Games",
+        "text1": "Hunger Games adalah kumpulan mini-game yang membantu berkontribusi pada Open Food Facts dengan berbagai cara. Anda dapat memainkan permainan yang sangat menarik dari mana saja. Berikut ini adalah tur berpemandu ke seluruh situs web yang akan membantu Anda memulai.",
+        "text2": "Pastikan untuk masuk ke situs web Open Food Facts untuk mendapatkan kredit atas kontribusi Anda. Jika Anda melakukan kesalahan, mohon luangkan waktu untuk memperbaikinya dengan membuka situs web tersebut.",
+        "text3": "Jika ada keraguan tentang permainan, klik ikon tanda tanya di kanan atas halaman, dan Anda dapat menghubungi kami di saluran #hunger-games"
       },
       "page2": {
-        "title": "Questions Game",
-        "text1": "Does the food product belong to this brand?",
-        "text2": "Simply answer with a <strong>Yes/No</strong>! Don't know the answer? That's alright, just skip it.",
-        "text3": "You can also use your keyboard shortcuts: y,n and k.",
-        "text4": "You can <strong>filter</strong> the products based on country, brands, popularity and much more!",
-        "text5": "If you don't want to do this every single time, you can also <strong>save the filters</strong> by clicking on the star. Next time you come back, find the saved filters on the home page itself"
+        "title": "Pertanyaan Permainan",
+        "text1": "Apakah produk makanan tersebut termasuk dalam merek ini?",
+        "text2": "Cukup jawab dengan <strong>Ya/Tidak</strong>! Tidak tahu jawabannya? Tidak apa-apa, lewati saja.",
+        "text3": "Anda juga dapat menggunakan pintasan keyboard Anda: y, n, dan k.",
+        "text4": "Anda dapat <strong>menyaring</strong> produk berdasarkan negara, merek, popularitas, dan masih banyak lagi!",
+        "text5": "Jika Anda tidak ingin melakukan hal ini setiap saat, Anda juga dapat <strong>menyimpan filter</strong> dengan mengeklik bintang. Saat Anda kembali lagi, Anda dapat menemukan filter yang tersimpan di halaman beranda"
       },
       "page3": {
-        "title": "Logos Game",
-        "text1": "Another popular game is the logos game where you have to <strong>select all the logos</strong> you feel are the same.",
-        "text2": "As shown in the example, once you select all the similar logos, just type their value and select where it is a brand, a label or something else. It's that simple!"
+        "title": "Permainan Logo",
+        "text1": "Permainan populer lainnya adalah permainan logo di mana Anda harus <strong>memilih semua logo</strong> yang menurut Anda sama.",
+        "text2": "Seperti yang ditunjukkan pada contoh, setelah Anda memilih semua logo yang mirip, ketik saja nilainya dan pilih apakah logo tersebut merupakan merek, label, atau yang lainnya. Sesederhana itu!"
       },
       "page4": {
-        "title": "Eco-Score Questions Game",
-        "text1": "Help us finish the remaining questions in the most high priority labels!",
-        "text2": "These cards are linked to labels used in the computation of the Eco-Score.",
-        "text3": "<strong>What is Eco-Score?</strong>",
-        "text4": "Eco-Score captures the total environmental footprint, making it easier for consumers to compare products and decide which is better for the environment."
+        "title": "Permainan Pertanyaan Eco-Score",
+        "text1": "Bantu kami menyelesaikan pertanyaan yang tersisa di label prioritas paling tinggi!",
+        "text2": "Kartu-kartu ini terhubung dengan label yang digunakan dalam penghitungan Eco-Score.",
+        "text3": "<strong>Apa itu Eco-Score?</strong>",
+        "text4": "Eco-Score menangkap total jejak lingkungan, sehingga memudahkan konsumen untuk membandingkan produk dan memutuskan produk mana yang lebih baik untuk lingkungan."
       },
       "page5": {
         "title": "Pengaturan",
-        "text1": "Set your preferred language, and report issues from our settings page.",
-        "text2": "If you're a developer, you can also explore our database content using our dev mode."
+        "text1": "Tetapkan bahasa pilihan Anda, dan laporkan masalah dari halaman pengaturan kami.",
+        "text2": "Jika Anda seorang pengembang, Anda juga dapat menjelajahi konten basis data kami menggunakan mode dev."
       },
       "page6": {
-        "title": "Tour",
-        "text1": "Got stuck somewhere? Want to take the tour again?",
-        "text2": "Just click on the question mark and start the journey again!"
+        "title": "Tur",
+        "text1": "Terjebak di suatu tempat? Ingin mengikuti tur lagi?",
+        "text2": "Cukup klik pada tanda tanya dan mulai perjalanan lagi!"
       }
     },
     "logos": {
@@ -288,8 +288,8 @@
       },
       "page2": {
         "title": "Peringatan",
-        "text1": "If the crop contains multiple logos, do not select it.",
-        "text2": "If the crop contains only a partial part of a logo, you can select it."
+        "text1": "Jika krop berisi beberapa logo, jangan pilih logo tersebut.",
+        "text2": "Jika gambar terpotongnya memiliki hanya sebagian dari logo, Anda boleh memilihnya."
       },
       "page3": {
         "title": "Validasikan",
@@ -316,11 +316,11 @@
       "3": "Pilihan nutrisi",
       "4": "Pilihan Nilai"
     },
-    "loading": "Loading...",
-    "unknown_brand": "Brand Unknown",
-    "value_missing": "You forgot to input a value.",
-    "next": "Next step",
-    "prev": "Prev step",
+    "loading": "Memuat...",
+    "unknown_brand": "Merek Tidak Dikenal",
+    "value_missing": "Anda lupa memasukkan nilai.",
+    "next": "Langkah selanjutnya",
+    "prev": "Langkah sebelumnya",
     "skip": "Lewati produk ini",
     "validate": "Validasikan Tabel",
     "unselect_picture": "Tidak ada informasi gizi",
@@ -354,25 +354,25 @@
     }
   },
   "notfound": {
-    "image_alt": "404 not found",
-    "nopage": "Whoops! The page you're looking for can't be found.",
-    "redirect1": "Want to play some games?",
+    "image_alt": "404 tidak ditemukan",
+    "nopage": "Ups! Halaman yang Anda cari tidak dapat ditemukan.",
+    "redirect1": "Ingin memainkan beberapa permainan?",
     "redirect2": "Klik di sini"
   },
   "nutriscore": {
-    "image_alt": "cropped image",
-    "label": "Annotate Nutri-Score logo detection by batch.",
-    "description": "To do so, select all the images showing the correct/wrong Nutri-Score value ({{label}}), and click on the bottom buttons to say if you selected a set correct or wrong ones.",
-    "images_remaining": "Still {{remaining}} to annotate",
-    "image_sizes": "Image sizes",
-    "zoom_on_logo": "Zoom on logo",
+    "image_alt": "gambar yang dipotong",
+    "label": "Membuat anotasi deteksi logo Nutri-Score berdasarkan batch.",
+    "description": "Untuk melakukannya, pilih semua gambar yang menunjukkan nilai Nutri-Score yang benar/salah ({{label}}), dan klik tombol di bagian bawah untuk mengetahui apakah Anda memilih nilai yang benar atau salah.",
+    "images_remaining": "Masih tersisa {{remaining}} untuk diberi keterangan",
+    "image_sizes": "Ukuran gambar",
+    "zoom_on_logo": "Perbesar logo",
     "select_all": "Pilih semua",
     "deselect_all": "Batalkan semua pilihan",
-    "incorrect": "Wrong",
-    "correct": "Correct ({{label}})"
+    "incorrect": "Salah",
+    "correct": "Benar ({{label}})"
   },
   "eco-score": {
-    "description": "Here is a summary of questions that could improve Eco-Score computation",
+    "description": "Berikut ini adalah ringkasan pertanyaan yang dapat meningkatkan penghitungan Eco-Score",
     "countryLabel": "Negara"
   }
 }

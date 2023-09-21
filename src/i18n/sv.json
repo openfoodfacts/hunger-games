@@ -1,15 +1,15 @@
 {
   "home": {
     "game_selector": {
-      "title": "What game would you like to play?",
+      "title": "Vilket spel skulle du vilja spela?",
       "cards": {
         "questions": {
           "title": "Frågor",
-          "description": "Tell us if the given image answers the questions"
+          "description": "Berätta för oss om den givna bilden svarar på frågorna"
         },
         "logos": {
           "title": "Logotyper",
-          "description": "Find all the logos matching the given logo"
+          "description": "Hitta alla logotyper som matchar den givna logotypen"
         },
         "eco_score": {
           "title": "Eco-Score",
@@ -23,7 +23,7 @@
       "sign_up": "Registrera dig",
       "contribution_details": "Learn why your contribution matters"
     },
-    "saved_filters": "Saved Filters",
+    "saved_filters": "Sparade filter",
     "contribution_modal": {
       "title": "Your contribution matters",
       "information": "Hunger Games is an effort to leverage the results of our OCR and artificial intelligence. When you use Hunger Games by Open Food Facts, you improve our entire database which helps the community make better food choices. We gather your annotations and use them to make Open Food Facts more accurate and efficient.",
@@ -165,7 +165,7 @@
     "automatic": "Automatisk",
     "human_required": "Human required",
     "edit_product": "Open product edit",
-    "view_product": "Open product page"
+    "view_product": "Öppna produktsida"
   },
   "logos": {
     "annotation": "Anteckning: ",
@@ -184,7 +184,7 @@
     "qr_code": "QR-kod",
     "category": "Kategori",
     "nutrition_label": "Näringstabell",
-    "no_logo": "Not a logo",
+    "no_logo": "Inte en logotyp",
     "store": "Butik",
     "detail": "Logotyp-detalj",
     "id": "Logo ID:",
@@ -196,7 +196,7 @@
     "number_of_results": "Antal resultat:",
     "loading": "Laddar…",
     "refresh": "Uppdatera",
-    "search_specific": "Search specific logo",
+    "search_specific": "Sök efter specifik logotyp",
     "load_more": "Load more",
     "no_results": "Ingen logotyp hittades",
     "result_count": "Shows {{showing}} on {{available}} available",
@@ -266,7 +266,7 @@
         "title": "Eco-Score Questions Game",
         "text1": "Help us finish the remaining questions in the most high priority labels!",
         "text2": "These cards are linked to labels used in the computation of the Eco-Score.",
-        "text3": "<strong>What is Eco-Score?</strong>",
+        "text3": "<strong>Vad är Eco-Score?</strong>",
         "text4": "Eco-Score captures the total environmental footprint, making it easier for consumers to compare products and decide which is better for the environment."
       },
       "page5": {
@@ -333,7 +333,7 @@
       "nutriment_energy-kcal": "Energi (kcal)",
       "nutriment_fat": "Fett",
       "nutriment_saturated-fat": "Mättat fett",
-      "nutriment_carbohydrates": "Kolhydrat",
+      "nutriment_carbohydrates": "Kolhydrater",
       "nutriment_sugars": "Socker",
       "nutriment_proteins": "Proteiner",
       "nutriment_fiber": "Fibrer",
