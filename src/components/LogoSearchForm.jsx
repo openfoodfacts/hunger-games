@@ -69,7 +69,6 @@ const LogoSearchForm = (props) => {
   return (
     <Stack direction="column" spacing={{ xs: 1, sm: 2, md: 4 }} {...other}>
       <Stack direction={{ xs: "column", sm: "row" }} spacing={1} wrap="wrap">
-        <p>{innerType}</p>
         <TextField
           fullWidth
           value={innerType}
