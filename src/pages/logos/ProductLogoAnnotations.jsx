@@ -95,7 +95,7 @@ const useLogoFetching = (filter) => {
   React.useEffect(() => {
     const filterStateIsIncomplet = !filter.tagtype || !filter.tag;
     if (filterStateIsIncomplet) {
-      // Avoid fetching data is no valiue to filter
+      // Avoid fetching data if no value to filter
       return () => {};
     }
 

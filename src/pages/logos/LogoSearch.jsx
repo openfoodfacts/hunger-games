@@ -68,7 +68,7 @@ export default function LogoSearch() {
 
   React.useEffect(() => {
     if (!filterStateHasValue) {
-      // Avoid fetching data is no valiue to filter
+      // Avoid fetching data if no value to filter
       return () => {};
     }
     let isValidRequest = true;
