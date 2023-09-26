@@ -46,7 +46,7 @@
     }
   },
   "flagged_images": {
-    "title": "Images flagged by users",
+    "title": "Naudotojų pažymėti vaizdai",
     "loading": "Įkeliama"
   },
   "questions": {
@@ -98,7 +98,7 @@
       },
       "placeholders": {
         "value": "Value (Fanta, en:organic,...)",
-        "brand": "Auchan, Danone, Herta, ...",
+        "brand": "Javinė, Rokiškio, Biovela, ...",
         "campaign": "Anotacijų kampanijos"
       },
       "actions": {
@@ -111,7 +111,7 @@
     "send": "Siųsti",
     "flag": "Kažkas negerai? Pranešti/pažymėti vaizdą!",
     "unflag": "Atžymėti vaizdą",
-    "reset_filters": "Reset filters",
+    "reset_filters": "Išvalyti filtrus",
     "log_in": "Prisijungti",
     "sign_up": "Registruotis",
     "login_title": "Make your annotation count",
@@ -129,7 +129,7 @@
     "logos-deep-search": "Infinite annotation",
     "manage": "Tvarkyti",
     "insights": "Įžvalgos",
-    "nutritions": "Nutrition facts",
+    "nutritions": "Maistingumas",
     "settings": "Nustatymai",
     "eco-score": "Ekologinis balas",
     "dashboard": "Logotipų įrankų skydelis",
@@ -211,7 +211,7 @@
   },
   "settings": {
     "settings": "Nustatymai",
-    "language": "Languages",
+    "language": "Kalbos",
     "save": "Išsaugoti",
     "reportIssue": "Radai klaidą? Prašau pranešti mums.",
     "dev_mode_title": "To get more options, activate the dev mode",
@@ -266,7 +266,7 @@
         "title": "Eco-Score klausimų žaidimas",
         "text1": "Help us finish the remaining questions in the most high priority labels!",
         "text2": "These cards are linked to labels used in the computation of the Eco-Score.",
-        "text3": "<strong>What is Eco-Score?</strong>",
+        "text3": "<strong>Kas yra Eco-Score?</strong>",
         "text4": "Eco-Score captures the total environmental footprint, making it easier for consumers to compare products and decide which is better for the environment."
       },
       "page5": {
@@ -316,8 +316,8 @@
       "3": "Maistinių medžiagų pasirinkimas",
       "4": "Vertybių pasirinkimas"
     },
-    "loading": "Loading...",
-    "unknown_brand": "Brand Unknown",
+    "loading": "Įkeliama...",
+    "unknown_brand": "Prekinis ženklas nežinomas",
     "value_missing": "You forgot to input a value.",
     "next": "Kitas žingsnis",
     "prev": "Ankstesnis žingsnis",
