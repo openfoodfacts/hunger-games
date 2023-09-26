@@ -72,7 +72,7 @@
     "edit": "Redaguoti",
     "hide_images": "Paslėpti nuotraukas (greitesnis užkrovimas)",
     "display_images": "Rodyti nuotraukas",
-    "annotations": "Annotations",
+    "annotations": "Anotacijos",
     "last_annotations": "Paskutinės anotacijos",
     "remaining_annotations": "Likę klausimai",
     "annotated_annotations": "Anotuotas",
@@ -130,7 +130,7 @@
     "manage": "Tvarkyti",
     "insights": "Įžvalgos",
     "nutritions": "Nutrition facts",
-    "settings": "Settings",
+    "settings": "Nustatymai",
     "eco-score": "Ekologinis balas",
     "dashboard": "Logotipų įrankų skydelis",
     "tour": "Show tour",
@@ -150,7 +150,7 @@
     "all": "Visi",
     "label": "Etiketė",
     "product_weight": "Produkto svoris",
-    "category": "Category",
+    "category": "Kategorija",
     "expiration_date": "Galiojimo laikas",
     "packager_code": "Pakuotės kodas",
     "skipped": "Praleista (-1)",
@@ -163,7 +163,7 @@
     "created_at": "Sukurta",
     "completed_at": "Baigta",
     "automatic": "Automatinis",
-    "human_required": "Human required",
+    "human_required": "Reikalingas žmogus",
     "edit_product": "Open product edit",
     "view_product": "Open product page"
   },
@@ -182,9 +182,9 @@
     "packager_code": "Pakuotės kodas",
     "packaging": "Pakuotė",
     "qr_code": "QR kodas",
-    "category": "Category",
+    "category": "Kategorija",
     "nutrition_label": "Mitybos etiketė",
-    "no_logo": "Not a logo",
+    "no_logo": "Ne logotipas",
     "store": "Parduotuvė",
     "detail": "Logotipo detalė",
     "id": "Logotipo ID:",
@@ -210,13 +210,13 @@
     }
   },
   "settings": {
-    "settings": "Settings",
+    "settings": "Nustatymai",
     "language": "Languages",
     "save": "Išsaugoti",
-    "reportIssue": "Found a bug? Please let us know.",
+    "reportIssue": "Radai klaidą? Prašau pranešti mums.",
     "dev_mode_title": "To get more options, activate the dev mode",
     "dev_mode_label": "Kūrėjo režimas",
-    "dev_page_toggle": "Show {{name}} page",
+    "dev_page_toggle": "Rodyti {{name}} puslapį",
     "join_community": "Prisijunkite prie bendruomenės",
     "text1": "Open Food Facts is a collaborative project built by tens of thousands of volunteers and managed by a non-profit organization with 8 employees. We need your donations to fund the Open Food Facts 2024 budget and to continue to develop the project.",
     "thank_you": "Ačiū",
@@ -250,27 +250,27 @@
         "text3": "In case of any doubt about the games, click on the question mark icon at the top right of the page, and you can reach us on slack at the #hunger-games channel"
       },
       "page2": {
-        "title": "Questions Game",
-        "text1": "Does the food product belong to this brand?",
-        "text2": "Simply answer with a <strong>Yes/No</strong>! Don't know the answer? That's alright, just skip it.",
+        "title": "Klausimų žaidimas",
+        "text1": "Ar šis maisto produktas priklauso šiam prekės ženklui?",
+        "text2": "Tiesiog atsakykite <strong>Taip/Ne</strong>! Nežinai atsakymo? Viskas gerai, tiesiog praleisk.",
         "text3": "You can also use your keyboard shortcuts: y,n and k.",
         "text4": "You can <strong>filter</strong> the products based on country, brands, popularity and much more!",
         "text5": "If you don't want to do this every single time, you can also <strong>save the filters</strong> by clicking on the star. Next time you come back, find the saved filters on the home page itself"
       },
       "page3": {
-        "title": "Logos Game",
+        "title": "Logotipų žaidimas",
         "text1": "Another popular game is the logos game where you have to <strong>select all the logos</strong> you feel are the same.",
         "text2": "As shown in the example, once you select all the similar logos, just type their value and select where it is a brand, a label or something else. It's that simple!"
       },
       "page4": {
-        "title": "Eco-Score Questions Game",
+        "title": "Eco-Score klausimų žaidimas",
         "text1": "Help us finish the remaining questions in the most high priority labels!",
         "text2": "These cards are linked to labels used in the computation of the Eco-Score.",
         "text3": "<strong>What is Eco-Score?</strong>",
         "text4": "Eco-Score captures the total environmental footprint, making it easier for consumers to compare products and decide which is better for the environment."
       },
       "page5": {
-        "title": "Settings",
+        "title": "Nustatymai",
         "text1": "Set your preferred language, and report issues from our settings page.",
         "text2": "If you're a developer, you can also explore our database content using our dev mode."
       },
@@ -319,8 +319,8 @@
     "loading": "Loading...",
     "unknown_brand": "Brand Unknown",
     "value_missing": "You forgot to input a value.",
-    "next": "Next step",
-    "prev": "Prev step",
+    "next": "Kitas žingsnis",
+    "prev": "Ankstesnis žingsnis",
     "skip": "Praleisti šį produktą",
     "validate": "Patvirtinkite lentelę",
     "unselect_picture": "Nėra informacijos apie maistingumą",
@@ -329,16 +329,16 @@
     "value": "Vertė",
     "unit": "Vienetas",
     "nutriments": {
-      "nutriment_energy-kj": "Energy (kJ)",
+      "nutriment_energy-kj": "Energija (kJ)",
       "nutriment_energy-kcal": "Energija (kCal)",
       "nutriment_fat": "Riebalai",
-      "nutriment_saturated-fat": "Saturated fat",
+      "nutriment_saturated-fat": "Sotieji riebalai",
       "nutriment_carbohydrates": "Carbohydrate",
       "nutriment_sugars": "Cukrus",
       "nutriment_proteins": "Baltymai",
       "nutriment_fiber": "Ląsteliena",
-      "nutriment_salt": "Salt",
-      "nutriment_sodium": "Sodium"
+      "nutriment_salt": "Druska",
+      "nutriment_sodium": "Natris"
     },
     "history": {
       "title": "Sesijos istorija",
@@ -363,16 +363,16 @@
     "image_alt": "cropped image",
     "label": "Annotate Nutri-Score logo detection by batch.",
     "description": "To do so, select all the images showing the correct/wrong Nutri-Score value ({{label}}), and click on the bottom buttons to say if you selected a set correct or wrong ones.",
-    "images_remaining": "Still {{remaining}} to annotate",
-    "image_sizes": "Image sizes",
-    "zoom_on_logo": "Zoom on logo",
+    "images_remaining": "Dar {{remaining}} anotuoti",
+    "image_sizes": "Vaizdo dydžiai",
+    "zoom_on_logo": "Padidinti logotipą",
     "select_all": "Pažymėti viską",
     "deselect_all": "Išžymėti viską",
-    "incorrect": "Wrong",
-    "correct": "Correct ({{label}})"
+    "incorrect": "Neteisingai",
+    "correct": "Teisingai ({{label}})"
   },
   "eco-score": {
     "description": "Čia pateikiama klausimų, kurie galėtų pagerinti Eco-Score skaičiavimą, suvestinė",
-    "countryLabel": "Country"
+    "countryLabel": "Šalis"
   }
 }
