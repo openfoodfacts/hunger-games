@@ -26,13 +26,13 @@
     "saved_filters": "Įrašyti filtrai",
     "contribution_modal": {
       "title": "Jūsų indėlis yra svarbus",
-      "information": "Hunger Games is an effort to leverage the results of our OCR and artificial intelligence. When you use Hunger Games by Open Food Facts, you improve our entire database which helps the community make better food choices. We gather your annotations and use them to make Open Food Facts more accurate and efficient.",
+      "information": "„Hunger Games“ – tai pastangos panaudoti mūsų OCR ir dirbtinio intelekto rezultatus. Naudodami „Hunger Games“ pagal „Open Food Facts“, tobulinate visą mūsų duomenų bazę, kuri padeda bendruomenei geriau pasirinkti maistą. Renkame jūsų anotacijas ir naudojame juos, kad „Open Food Facts“ būtų tikslesnis ir veiksmingesnis.",
       "thank_you": "Dėkojame, kad padedate mums tobulinti Open Food Facts, kad daugiau žmonių galėtų ja lengvai naudotis."
     },
     "statistics": {
       "title": "{{userName}} statistika:",
       "editorCount": {
-        "title": "Editor",
+        "title": "Radaguotojas",
         "description": "Atliktų redagavimų skaičius"
       },
       "contributorCount": {
@@ -85,7 +85,7 @@
         "country": "šalis",
         "brand": "prekės ženklas",
         "popularity": "populiarumas",
-        "campaign": "camp"
+        "campaign": "kamp."
       },
       "long_label": {
         "type": "Klausimo tipas",
@@ -97,7 +97,7 @@
         "campaign": "Kampanija"
       },
       "placeholders": {
-        "value": "Value (Fanta, en:organic,...)",
+        "value": "Vertė (Fanta, en:organic,...)",
         "brand": "Javinė, Rokiškio, Biovela, ...",
         "campaign": "Anotacijų kampanijos"
       },
@@ -114,7 +114,7 @@
     "reset_filters": "Išvalyti filtrus",
     "log_in": "Prisijungti",
     "sign_up": "Registruotis",
-    "login_title": "Make your annotation count",
+    "login_title": "Padarykite savo anotaciją svarbią",
     "login_description": "Šiuo metu nesate prisijungę prie „Open Food Facts“. Jei norite, kad atsakymai būtų tiesiogiai taikomi produktams ir susieti su paskyra, apsvarstykite galimybę prisijungti prie „Open Food Facts“ paskyros arba sukurti ją",
     "please_wait_while_we_fetch_the_question": "Palaukite, kol gausime klausimą!"
   },
@@ -126,16 +126,16 @@
     "logos-annotation": "Logotipo anotacija",
     "logos-search": "Logotipo paieška",
     "logos-product-search": "Produktų anotacija",
-    "logos-deep-search": "Infinite annotation",
+    "logos-deep-search": "Begalinė anotacija",
     "manage": "Tvarkyti",
     "insights": "Įžvalgos",
     "nutritions": "Maistingumas",
     "settings": "Nustatymai",
     "eco-score": "Ekologinis balas",
     "dashboard": "Logotipų įrankų skydelis",
-    "tour": "Show tour",
+    "tour": "Rodyti gidą",
     "logged_in_user": "Prisijungęs kaip {{userName}}",
-    "log_in": "Click to login"
+    "log_in": "Spustelėkite norėdami prisijungti"
   },
   "insights": {
     "insights": "Įžvalgos",
@@ -164,13 +164,13 @@
     "completed_at": "Baigta",
     "automatic": "Automatinis",
     "human_required": "Reikalingas žmogus",
-    "edit_product": "Open product edit",
-    "view_product": "Open product page"
+    "edit_product": "Atidaryti produkto redagavimą",
+    "view_product": "Atidaryti produkto puslapį"
   },
   "logos": {
     "annotation": "Anotacija: ",
     "annotations": "Logotipo anotacijos",
-    "task_description": "Select all logos that are exactly the same, and give them a name like \"en:EU Organic\" and a type like \"label\".",
+    "task_description": "Pasirinkite visus logotipus, kurie yra visiškai vienodi, ir suteikite jiems pavadinimą, pvz., „en:EU Organic“ ir tipą, pvz., „etiketė“.",
     "select_all": "Pažymėti viską",
     "unselect_all": "Išžymėti viską",
     "distance": "Atstumas:",
@@ -196,17 +196,17 @@
     "number_of_results": "Rezultatų skaičius:",
     "loading": "Įkeliama…",
     "refresh": "Atnaujinti",
-    "search_specific": "Search specific logo",
+    "search_specific": "Ieškoti konkretaus logotipo",
     "load_more": "Įkelti daugiau",
     "no_results": "Logotipas nerastas",
-    "result_count": "Shows {{showing}} on {{available}} available",
+    "result_count": "Rodo {{showing}} iš {{available}} galimų",
     "flag": "Kažkas negerai? Pranešti/pažymėti vaizdą!",
     "unflag": "Atžymėti vaizdą",
-    "crop_image_title": "crop of the logo",
-    "no_more_questions": "No more questions about this logo. You can try to find more logos with the following game.",
+    "crop_image_title": "iškirptas logotipas",
+    "no_more_questions": "Daugiau klausimų apie šį logotipą nėra. Galite pabandyti rasti daugiau logotipų naudodami šį žaidimą.",
     "loading_messages": {
       "pending_reference_logos": "Įkeliame kelis logotipų pavyzdžius, kad inicijuotume paiešką",
-      "failed_reference_logos": "We did not find any logos with this annotation. Try to use the following game to annotate some of them."
+      "failed_reference_logos": "Neradome jokių logotipų su šia anotacija. Pabandykite naudoti šį žaidimą, kad anotuotumėte kai kuriuos iš jų."
     }
   },
   "settings": {
@@ -214,17 +214,17 @@
     "language": "Kalbos",
     "save": "Išsaugoti",
     "reportIssue": "Radai klaidą? Prašau pranešti mums.",
-    "dev_mode_title": "To get more options, activate the dev mode",
+    "dev_mode_title": "Norėdami turėti daugiau pasirinkimų, aktyvuokite kūrėjo režimą",
     "dev_mode_label": "Kūrėjo režimas",
     "dev_page_toggle": "Rodyti {{name}} puslapį",
     "join_community": "Prisijunkite prie bendruomenės",
-    "text1": "Open Food Facts is a collaborative project built by tens of thousands of volunteers and managed by a non-profit organization with 8 employees. We need your donations to fund the Open Food Facts 2024 budget and to continue to develop the project.",
+    "text1": "„Open Food Facts“ yra bendradarbiavimo projektas, kurį sukūrė dešimtys tūkstančių savanorių ir kurį valdo ne pelno siekianti organizacija, kurioje dirba 8 darbuotojai. Mums reikia jūsų aukų, kad galėtume finansuoti „Open Food Facts 2024“ biudžetą ir toliau plėtoti projektą.",
     "thank_you": "Ačiū",
     "donate": "Paaukokite",
     "join_the_community": {
       "discover_our": "Atraskite mūsų ",
-      "code_of_conduct": "Code of conduct ",
-      "join_us_on": "Join us on ",
+      "code_of_conduct": "Elgesio kodeksas ",
+      "join_us_on": "Prisijunk prie mūsų ",
       "forum": "Forumas",
       "subscribe_to_our": "Prenumeruokite mūsų ",
       "newsletter": "naujienlaiškį"
@@ -244,40 +244,40 @@
   "helper": {
     "welcome": {
       "page1": {
-        "title": "Welcome to Hunger Games",
-        "text1": "Hunger Games is a collection of mini-games that help contribute to Open Food Facts in many ways. You can play are really exciting games from anywhere. Here is a guided tour of the entire website which will get you started.",
-        "text2": "Make sure to login to the Open Food Facts website to get credit for your contributions. If you make a mistake, please take the time to correct it by heading to the website.",
-        "text3": "In case of any doubt about the games, click on the question mark icon at the top right of the page, and you can reach us on slack at the #hunger-games channel"
+        "title": "Sveiki atvykę į „Hunger Games“",
+        "text1": "„Hunger Games“ – tai mini žaidimų rinkinys, padedantis įvairiais būdais prisidėti prie „Open Food Facts“. Galite žaisti smagius žaidimus iš bet kur. Čia yra visos svetainės gidas, kuris padės jums pradėti.",
+        "text2": "Būtinai prisijunkite prie „Open Food Facts“ svetainės, kad gautumėte priskyrimą už savo indėlį. Jei padarėte klaidą, skirkite laiko jai ištaisyti apsilankę svetainėje.",
+        "text3": "Jei kyla abejonių dėl žaidimų, spustelėkite klaustuko piktogramą puslapio viršuje, dešinėje, ir su mumis susisiekite „Slack“ #hunger-games kanale"
       },
       "page2": {
         "title": "Klausimų žaidimas",
         "text1": "Ar šis maisto produktas priklauso šiam prekės ženklui?",
         "text2": "Tiesiog atsakykite <strong>Taip/Ne</strong>! Nežinai atsakymo? Viskas gerai, tiesiog praleisk.",
-        "text3": "You can also use your keyboard shortcuts: y,n and k.",
-        "text4": "You can <strong>filter</strong> the products based on country, brands, popularity and much more!",
-        "text5": "If you don't want to do this every single time, you can also <strong>save the filters</strong> by clicking on the star. Next time you come back, find the saved filters on the home page itself"
+        "text3": "Taip pat galite naudoti sparčiuosius klavišus: y, n ir k.",
+        "text4": "Galite <strong>filtruoti</strong> produktus pagal šalį, prekės ženklus, populiarumą ir dar daugiau!",
+        "text5": "Jei nenorite to daryti kiekvieną kartą, taip pat galite <strong>išsaugoti filtrus</strong> spustelėdami žvaigždutę. Kai kitą kartą grįšite, rasite išsaugotus filtrus pačiame pagrindiniame puslapyje"
       },
       "page3": {
         "title": "Logotipų žaidimas",
-        "text1": "Another popular game is the logos game where you have to <strong>select all the logos</strong> you feel are the same.",
-        "text2": "As shown in the example, once you select all the similar logos, just type their value and select where it is a brand, a label or something else. It's that simple!"
+        "text1": "Kitas populiarus žaidimas yra logotipų žaidimas, kuriame turite <strong>pasirinkti visus logotipus</strong> kurie, jūsų manymu, yra vienodi.",
+        "text2": "Kaip parodyta pavyzdyje, kai pasirenkate visus panašius logotipus, tiesiog įveskite jų vertę ir pasirinkite, kur tai yra prekės ženklas, etiketė ar kažkas kita. Tai taip paprasta!"
       },
       "page4": {
         "title": "Eco-Score klausimų žaidimas",
-        "text1": "Help us finish the remaining questions in the most high priority labels!",
-        "text2": "These cards are linked to labels used in the computation of the Eco-Score.",
+        "text1": "Padėkite mums užbaigti likusius klausimus didžiausio prioriteto etiketėse!",
+        "text2": "Šios kortelės yra susietos su etiketėmis, naudojamomis apskaičiuojant „Eco-Score“.",
         "text3": "<strong>Kas yra Eco-Score?</strong>",
-        "text4": "Eco-Score captures the total environmental footprint, making it easier for consumers to compare products and decide which is better for the environment."
+        "text4": "„Eco-Score“ fiksuoja bendrą ekologinį pėdsaką, todėl vartotojams lengviau palyginti produktus ir nuspręsti, kurie produktai yra geresni aplinkai."
       },
       "page5": {
         "title": "Nustatymai",
-        "text1": "Set your preferred language, and report issues from our settings page.",
-        "text2": "If you're a developer, you can also explore our database content using our dev mode."
+        "text1": "Nusistatyk pageidaujamą kalbą ir pranešk apie problemas mūsų nustatymų puslapyje.",
+        "text2": "Jei esate kūrėjas, taip pat galite tyrinėti mūsų duomenų bazės turinį naudodami kūrėjo režimą."
       },
       "page6": {
-        "title": "Tour",
-        "text1": "Got stuck somewhere? Want to take the tour again?",
-        "text2": "Just click on the question mark and start the journey again!"
+        "title": "Gidas",
+        "text1": "Užstrigai? Nori dar kartą peržvelgti gidą?",
+        "text2": "Tiesiog spustelėkite klaustuką ir pradėkite kelionę iš naujo!"
       }
     },
     "logos": {
@@ -288,8 +288,8 @@
       },
       "page2": {
         "title": "Įspėjimas",
-        "text1": "If the crop contains multiple logos, do not select it.",
-        "text2": "If the crop contains only a partial part of a logo, you can select it."
+        "text1": "Jei apkarpymas turi kelis logotipus, jo nepasirinkite.",
+        "text2": "Jei apkarpymas turi tik dalį logotipo, galite jį pasirinkti."
       },
       "page3": {
         "title": "Patvirtinti",
@@ -318,7 +318,7 @@
     },
     "loading": "Įkeliama...",
     "unknown_brand": "Prekinis ženklas nežinomas",
-    "value_missing": "You forgot to input a value.",
+    "value_missing": "Pamiršai įvesti vertę.",
     "next": "Kitas žingsnis",
     "prev": "Ankstesnis žingsnis",
     "skip": "Praleisti šį produktą",
@@ -360,9 +360,9 @@
     "redirect2": "Spauskite čia"
   },
   "nutriscore": {
-    "image_alt": "cropped image",
-    "label": "Annotate Nutri-Score logo detection by batch.",
-    "description": "To do so, select all the images showing the correct/wrong Nutri-Score value ({{label}}), and click on the bottom buttons to say if you selected a set correct or wrong ones.",
+    "image_alt": "apkarpytas vaizdas",
+    "label": "Anotuokite „Nutri-Score“ logotipo aptikimą pagal partiją.",
+    "description": "Norėdami tai padaryti, pasirinkite visus vaizdus, kuriuose rodoma teisinga / neteisinga „Nutri-Score“ reikšmė ({{label}}), ir spustelėkite apatinius mygtukus, kad nurodytumėte, ar rinkinį pasirinkote teisingą, ar neteisingą.",
     "images_remaining": "Dar {{remaining}} anotuoti",
     "image_sizes": "Vaizdo dydžiai",
     "zoom_on_logo": "Padidinti logotipą",
