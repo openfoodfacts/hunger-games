@@ -85,7 +85,7 @@
         "country": "الدولة",
         "brand": "3alama-tijariya",
         "popularity": "شعبية",
-        "campaign": "camp"
+        "campaign": "مخيم"
       },
       "long_label": {
         "type": "نوع السؤال",
@@ -99,7 +99,7 @@
       "placeholders": {
         "value": "القيمة (فانتا، إن:عضوية،...)",
         "brand": "أوشان، دانون، هيرتا، ...",
-        "campaign": "Annotation campaigns"
+        "campaign": "حملات التعليقات التوضيحية"
       },
       "actions": {
         "edit": "تعديل الفلاتر",
@@ -107,11 +107,11 @@
         "apply": "طبق"
       }
     },
-    "other_questions": "Other questions",
-    "send": "Send",
-    "flag": "Something wrong? Report/flag the image!",
-    "unflag": "Unflag the image",
-    "reset_filters": "Reset filters",
+    "other_questions": "أسئلة أخرى",
+    "send": "إرسال",
+    "flag": "هل هناك خطب ما ؟ التبليغ/ابلغ عن الصورة!",
+    "unflag": "قم بإلغاء التبليغ عن الصورة",
+    "reset_filters": "إعادة تعيين الفلاتر",
     "log_in": "اسم المستخدم",
     "sign_up": "تسجيل الدخول",
     "login_title": "Make your annotation count",
@@ -200,8 +200,8 @@
     "load_more": "Load more",
     "no_results": "لا يوجد شعار",
     "result_count": "Shows {{showing}} on {{available}} available",
-    "flag": "Something wrong? Report/flag the image!",
-    "unflag": "Unflag the image",
+    "flag": "هل هناك خطب ما ؟ التبليغ/ابلغ عن الصورة!",
+    "unflag": "قم بإلغاء التبليغ عن الصورة",
     "crop_image_title": "crop of the logo",
     "no_more_questions": "No more questions about this logo. You can try to find more logos with the following game.",
     "loading_messages": {
