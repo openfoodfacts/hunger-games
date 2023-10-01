@@ -1009,10 +1009,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^20.4.4":
-  version: 20.4.4
-  resolution: "@types/node@npm:20.4.4"
-  checksum: 43f3c4a8acc38ae753e15a0e79bae0447d255b3742fa87f8e065d7b9d20ecb0e03d6c5b46c00d5d26f4552160381a00255f49205595a8ee48c2423e00263c930
+"@types/node@npm:^20.8.0":
+  version: 20.8.0
+  resolution: "@types/node@npm:20.8.0"
+  checksum: ebad6342d54238a24bf980d7750117a5d67749c9b72cbb7a974a1e932c39034aa3a810d669e007e8a5071782a253aa069a187b614407a382403c9826e837c849
   languageName: node
   linkType: hard
 
@@ -2038,7 +2038,7 @@ __metadata:
     "@mui/material": ^5.11.7
     "@mui/x-data-grid": ^5.17.22
     "@reduxjs/toolkit": ^1.9.1
-    "@types/node": ^20.4.4
+    "@types/node": ^20.8.0
     "@types/react": ^18.0.27
     "@types/react-dom": ^18.0.6
     "@vitejs/plugin-react": ^4.0.4
