@@ -41,7 +41,7 @@ const request = async ({ barcode, value, type, count }) => {
 export default function LogoSearch() {
   const { t } = useTranslation();
 
-  const [isLoading, setIsLoading] = React.useState(true);
+  const [isLoading, setIsLoading] = React.useState(false);
   const [searchState, setSearchState] = useUrlParams(
     {
       type: "",
@@ -61,7 +61,16 @@ export default function LogoSearch() {
     [setSearchState]
   );
 
+  const filterStateHasValue =
+    (searchState.type &&
+      (TYPE_WITHOUT_VALUE.includes(searchState.type) || searchState.value)) ||
+    searchState.barcode;
+
   React.useEffect(() => {
+    if (!filterStateHasValue) {
+      // Avoid fetching data if no value to filter
+      return () => {};
+    }
     let isValidRequest = true;
     setIsLoading(true);
     setResult({ logos: [], count: undefined });
