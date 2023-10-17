@@ -122,13 +122,19 @@ const offService = {
       }`;
   },
 
-  searchProducts({ page = 1, pageSize = 25, filters = [] }) {
+  searchProducts({
+    page = 1,
+    pageSize = 25,
+    filters = [],
+    countryCode = "world",
+    fields = "code",
+  }) {
     const searchParams = {
       page,
       page_size: pageSize,
       json: true,
       action: "process",
-      fields: "code",
+      fields,
     };
     filters.forEach((filterItem, index) => {
       // Expected objects
@@ -140,7 +146,9 @@ const offService = {
     });
 
     const urlParams = new URLSearchParams(searchParams);
-    return axios.get(`${OFF_SEARCH}?${urlParams.toString()}`);
+    return axios.get(
+      `${OFF_SEARCH.replace("world", countryCode)}?${urlParams.toString()}`
+    );
   },
 };
 

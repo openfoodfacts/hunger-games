@@ -2051,6 +2051,7 @@ __metadata:
     react: ^18.2.0
     react-dom: ^18.2.0
     react-i18next: ^12.3.1
+    react-image-crop: ^10.1.8
     react-redux: ^8.0.5
     react-router-dom: ^6.4.1
     react-zoom-pan-pinch: ^2.5.0
@@ -2882,6 +2883,15 @@ __metadata:
     react-native:
       optional: true
   checksum: fe3f360e5184bc63861734e94bf625a09b9ec0d28fab41779a68758af258fd1737dde25ff7a88ddb66c1571a3e3de5b3403825a91b4949bf9832a00615acb87a
+  languageName: node
+  linkType: hard
+
+"react-image-crop@npm:^10.1.8":
+  version: 10.1.8
+  resolution: "react-image-crop@npm:10.1.8"
+  peerDependencies:
+    react: ">=16.13.1"
+  checksum: c53c412f6cfdd1d80c0691a42c6c353afb4dd2dca3209e8c3ec64a9d01d1dc6a6940221be9a0adaee5f0c66276094aa6f3d4a24dcabeab2ca3ca78fc62531e24
   languageName: node
   linkType: hard
 
