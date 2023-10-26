@@ -2,12 +2,10 @@ import * as React from "react";
 import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
-import ReactCrop from "react-image-crop";
 import Loader from "../loader";
 import off from "../../off";
 import { useTranslation } from "react-i18next";
 import useData from "./useData";
-import "react-image-crop/dist/ReactCrop.css";
 
 function ProductInterface(props) {
   const {
@@ -39,17 +37,11 @@ function ProductInterface(props) {
                     height: Number.parseInt(y2) - Number.parseInt(y1),
                   };
             return (
-              <Stack
-                direction="column"
-                key={index}
-                // sx={{ maxHeight: 500, maxWidth: 500 }}
-              >
+              <Stack direction="column" key={index}>
                 <Typography>{countryCode}</Typography>
-                <div>
-                  <ReactCrop crop={{ unit: "px", ...crop }}>
-                    <img src={url} />
-                  </ReactCrop>
-                </div>
+
+                <img src={url} />
+
                 <p>{JSON.stringify(crop)}</p>
               </Stack>
             );

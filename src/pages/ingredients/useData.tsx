@@ -42,7 +42,7 @@ const formatData = (product) => {
       return {
         imgId: imageData.imgid,
         countryCode,
-        url: getImageUrl(baseImageUrl, imageData.imgid, "full"),
+        url: getImageUrl(baseImageUrl, imageData.imgid, "400"),
         x: Number.parseFloat(x),
         y: Number.parseFloat(y),
         w: Number.parseFloat(imageData.sizes.full.w),
@@ -100,7 +100,6 @@ export default function useData() {
               return isNew;
             })
             .map(formatData);
-          console.log(rep);
           setData((prev) => [...prev, ...rep]);
           setIsLoading(false);
         }
