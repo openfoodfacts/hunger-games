@@ -1,32 +1,32 @@
 {
   "home": {
     "game_selector": {
-      "title": "What game would you like to play?",
+      "title": "Akú hru by ste si chceli zahrať?",
       "cards": {
         "questions": {
-          "title": "Questions",
+          "title": "Otázky",
           "description": "Tell us if the given image answers the questions"
         },
         "logos": {
-          "title": "Logos",
-          "description": "Find all the logos matching the given logo"
+          "title": "Logá",
+          "description": "Nájdite všetky logá zodpovedajúce danému logu"
         },
         "eco_score": {
-          "title": "Eco-score",
-          "description": "Annotate the questions with the highest value"
+          "title": "Eko-skóre",
+          "description": "Označte otázky s najvyššou hodnotou"
         }
       }
     },
     "account_band": {
       "title": "Want to make your contribution count? Create an account or sign in on Open Food Facts!",
-      "log_in": "Login",
+      "log_in": "Prihlásenie",
       "sign_up": "Zaregistrovať sa",
-      "contribution_details": "Learn why your contribution matters"
+      "contribution_details": "Zistite, prečo je váš príspevok dôležitý"
     },
-    "saved_filters": "Saved Filters",
+    "saved_filters": "Uložené filtre",
     "contribution_modal": {
-      "title": "Your contribution matters",
-      "information": "Hunger Games is an effort to leverage the results of our OCR and artificial intelligence. When you use Hunger Games by Open Food Facts, you improve our entire database which helps the community make better food choices. We gather your annotations and use them to make Open Food Facts more accurate and efficient.",
+      "title": "Váš príspevok je dôležitý",
+      "information": "Hunger Games je snaha využiť výsledky nášho OCR a umelej inteligencie. Keď používate Hunger Games od Open Food Facts, zlepšujete celú našu databázu, čo pomáha komunite lepšie si vyberať jedlo. Zhromažďujeme vaše anotácie a používame ich na to, aby boli Open Food Facts presnejšie a efektívnejšie.",
       "thank_you": "Thank you for helping us improve Open Food Facts so that more people can use it easily."
     },
     "statistics": {
@@ -112,7 +112,7 @@
     "flag": "Something wrong? Report/flag the image!",
     "unflag": "Unflag the image",
     "reset_filters": "Reset filters",
-    "log_in": "Login",
+    "log_in": "Prihlásenie",
     "sign_up": "Zaregistrovať sa",
     "login_title": "Make your annotation count",
     "login_description": "You are not currently logged into Open Food Facts. To get your answers directly applied to products, and associated to your account, consider logging in to your Open Food Facts account, or creating one",
@@ -121,8 +121,8 @@
   "menu": {
     "title": "Hunger Games",
     "games": "Games",
-    "questions": "Questions",
-    "logos": "Logos",
+    "questions": "Otázky",
+    "logos": "Logá",
     "logos-annotation": "Logos annotation",
     "logos-search": "Logos search",
     "logos-product-search": "Annotation per products",
@@ -131,7 +131,7 @@
     "insights": "Insights",
     "nutritions": "Nutrition facts",
     "settings": "Nastavenia",
-    "eco-score": "Eco-score",
+    "eco-score": "Eko-skóre",
     "dashboard": "Logos dashboard",
     "tour": "Show tour",
     "logged_in_user": "Logged as {{userName}}",
