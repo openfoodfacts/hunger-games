@@ -6,12 +6,15 @@ import Loader from "../loader";
 import off from "../../off";
 import { useTranslation } from "react-i18next";
 import useData from "./useData";
+import useRobotoffPrediction from "./useRobotoffPrediction";
 
 function ProductInterface(props) {
   const {
     product: { selectedImages, product_name, code },
     next,
   } = props;
+
+  const [predictions, getPreidiction] = useRobotoffPrediction(); // This could be simplified if each image had it's own component (and so its own state)
 
   return (
     <div>
@@ -21,28 +24,47 @@ function ProductInterface(props) {
       </Typography>
       <Stack direction="row">
         {selectedImages.map(
-          ({ countryCode, url, x, y, w, h, x1, x2, y1, y2 }, index) => {
-            const crop =
-              x1 === undefined
-                ? {
-                    x,
-                    y,
-                    width: w,
-                    height: h,
-                  }
-                : {
-                    x: Number.parseInt(x1),
-                    y: Number.parseInt(y1),
-                    width: Number.parseInt(x2) - Number.parseInt(x1),
-                    height: Number.parseInt(y2) - Number.parseInt(y1),
-                  };
+          ({ countryCode, imageUrl, fetchDataUrl }, index) => {
             return (
               <Stack direction="column" key={index}>
                 <Typography>{countryCode}</Typography>
 
-                <img src={url} />
+                <img src={imageUrl} />
 
-                <p>{JSON.stringify(crop)}</p>
+                {predictions[fetchDataUrl]?.loading && <p>loading ...</p>}
+                {predictions[fetchDataUrl]?.loading === false &&
+                  predictions[fetchDataUrl]?.data === null && (
+                    <p>An error occured X{"("}</p>
+                  )}
+                {predictions[fetchDataUrl]?.loading === false &&
+                  predictions[fetchDataUrl]?.data !== null &&
+                  Object.keys(predictions[fetchDataUrl]?.data).length === 0 && (
+                    <p>No ingredients found</p>
+                  )}
+                {predictions[fetchDataUrl]?.loading === false &&
+                  predictions[fetchDataUrl]?.data !== null &&
+                  Object.keys(predictions[fetchDataUrl]?.data).length > 0 && (
+                    <React.Fragment>
+                      {Object.entries(predictions[fetchDataUrl]?.data).map(
+                        ([lang, text], index) => (
+                          <div
+                            key={index}
+                            style={{ margin: 4, border: "solid black 1px" }}
+                          >
+                            <p>{lang}</p>
+                            <p>{text}</p>
+                          </div>
+                        )
+                      )}
+                    </React.Fragment>
+                  )}
+                <button
+                  onClick={() => {
+                    getPreidiction(fetchDataUrl);
+                  }}
+                >
+                  fetch
+                </button>
               </Stack>
             );
           }
@@ -77,7 +99,7 @@ export default function IngredientsPage() {
         <ProductInterface product={data[0]} next={removeHead} />
       )}
 
-      <pre>{JSON.stringify(data, null, 2)}</pre>
+      {/* <pre>{JSON.stringify(data, null, 2)}</pre> */}
     </React.Suspense>
   );
 }

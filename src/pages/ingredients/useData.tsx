@@ -18,6 +18,10 @@ const getImageUrl = (base, id, resolution: "100" | "400" | "full") => {
   return `${base}${id}${resolution === "full" ? "" : `.${resolution}`}.jpg`;
 };
 
+const getIngredientExtractionUrl = (base, id) => {
+  return `https://robotoff.openfoodfacts.org/api/v1/predict/ingredient_list?ocr_url=${base}${id}.json`;
+};
+
 const formatData = (product) => {
   const {
     code,
@@ -39,10 +43,12 @@ const formatData = (product) => {
       const countryCode = key.startsWith("ingredients_")
         ? key.slice("ingredients_".length)
         : "";
+
       return {
         imgId: imageData.imgid,
         countryCode,
-        url: getImageUrl(baseImageUrl, imageData.imgid, "400"),
+        imageUrl: getImageUrl(baseImageUrl, imageData.imgid, "400"),
+        fetchDataUrl: getIngredientExtractionUrl(baseImageUrl, imageData.imgid),
         x: Number.parseFloat(x),
         y: Number.parseFloat(y),
         w: Number.parseFloat(imageData.sizes.full.w),
