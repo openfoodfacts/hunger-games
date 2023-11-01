@@ -8,8 +8,8 @@
           "description": "Tell us if the given image answers the questions"
         },
         "logos": {
-          "title": "Logos",
-          "description": "Find all the logos matching the given logo"
+          "title": "Mga logo",
+          "description": "Hanapin ang lahat ng logo na tumutugma sa ibinigay na logo"
         },
         "eco_score": {
           "title": "Eco-score",
@@ -25,29 +25,29 @@
     },
     "saved_filters": "Saved Filters",
     "contribution_modal": {
-      "title": "Your contribution matters",
+      "title": "Mahalaga ang iyong kontribusyon",
       "information": "Hunger Games is an effort to leverage the results of our OCR and artificial intelligence. When you use Hunger Games by Open Food Facts, you improve our entire database which helps the community make better food choices. We gather your annotations and use them to make Open Food Facts more accurate and efficient.",
       "thank_you": "Thank you for helping us improve Open Food Facts so that more people can use it easily."
     },
     "statistics": {
-      "title": "{{userName}} statistics:",
+      "title": "Estadistika ng {{userName}}:",
       "editorCount": {
         "title": "Editor",
         "description": "Number of editions done"
       },
       "contributorCount": {
         "title": "Taga-ambag",
-        "description": "Adding a new product"
+        "description": "Pagdaragdag ng bagong produkto"
       },
       "photographerCount": {
-        "title": "Photographer",
+        "title": "Naglalawaran",
         "description": "Taking photos for a product"
       }
     }
   },
   "flagged_images": {
     "title": "Images flagged by users",
-    "loading": "Loading"
+    "loading": "Naglo-load"
   },
   "questions": {
     "category": "kategorya",
@@ -60,17 +60,17 @@
     "quantity": "Dami",
     "insightTypeLabel": "Only shows",
     "ingredients": "Mga sangkap",
-    "product_weight": "product weight",
+    "product_weight": "timbang ng produkto",
     "popularity_sort": "Sort by popularity",
-    "see_examples": "See examples of this ",
+    "see_examples": "Tingnan ang mga halimbawa ng ",
     "no": "Hindi",
-    "skip": "Skip",
+    "skip": "Laktawan",
     "yes": "Oo",
-    "no_questions_remaining": "No questions remaining",
-    "countries": "Countries",
-    "view": "View",
+    "no_questions_remaining": "Walang natitirang mga katanungan",
+    "countries": "Mga bansa",
+    "view": "Tingnan",
     "edit": "Pamatnugutan",
-    "hide_images": "Hide images (faster loading)",
+    "hide_images": "Itago ang mga larawan (mas mabilis na pag-load)",
     "display_images": "Display images",
     "annotations": "Annotations",
     "last_annotations": "Last annotations",
@@ -103,12 +103,12 @@
       },
       "actions": {
         "edit": "Edit Filters",
-        "cancel": "Cancel",
-        "apply": "Apply"
+        "cancel": "Kanselahin",
+        "apply": "I-aplay"
       }
     },
-    "other_questions": "Other questions",
-    "send": "Send",
+    "other_questions": "Iba pang tanong",
+    "send": "Ipadala",
     "flag": "Something wrong? Report/flag the image!",
     "unflag": "Unflag the image",
     "reset_filters": "Reset filters",
@@ -116,15 +116,15 @@
     "sign_up": "Mag Sign-up",
     "login_title": "Make your annotation count",
     "login_description": "You are not currently logged into Open Food Facts. To get your answers directly applied to products, and associated to your account, consider logging in to your Open Food Facts account, or creating one",
-    "please_wait_while_we_fetch_the_question": "Please wait while we fetch the question!"
+    "please_wait_while_we_fetch_the_question": "Maghintay po habang kinukuha namin ang tanong!"
   },
   "menu": {
     "title": "Hunger Games",
     "games": "Games",
     "questions": "Questions",
-    "logos": "Logos",
-    "logos-annotation": "Logos annotation",
-    "logos-search": "Logos search",
+    "logos": "Mga logo",
+    "logos-annotation": "Anotasyon ng mga logo",
+    "logos-search": "Paghahanap ng mga logo",
     "logos-product-search": "Annotation per products",
     "logos-deep-search": "Infinite annotation",
     "manage": "Manage",
