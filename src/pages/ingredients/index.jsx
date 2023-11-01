@@ -6,15 +6,13 @@ import Loader from "../loader";
 import off from "../../off";
 import { useTranslation } from "react-i18next";
 import useData from "./useData";
-import useRobotoffPrediction from "./useRobotoffPrediction";
+import ImageAnnotation from "./ImageAnnotation";
 
 function ProductInterface(props) {
   const {
     product: { selectedImages, product_name, code },
     next,
   } = props;
-
-  const [predictions, getPreidiction] = useRobotoffPrediction(); // This could be simplified if each image had it's own component (and so its own state)
 
   return (
     <div>
@@ -26,45 +24,11 @@ function ProductInterface(props) {
         {selectedImages.map(
           ({ countryCode, imageUrl, fetchDataUrl }, index) => {
             return (
-              <Stack direction="column" key={index}>
+              <Stack direction="column" key={`${code}-${index}`}>
                 <Typography>{countryCode}</Typography>
 
                 <img src={imageUrl} />
-
-                {predictions[fetchDataUrl]?.loading && <p>loading ...</p>}
-                {predictions[fetchDataUrl]?.loading === false &&
-                  predictions[fetchDataUrl]?.data === null && (
-                    <p>An error occured X{"("}</p>
-                  )}
-                {predictions[fetchDataUrl]?.loading === false &&
-                  predictions[fetchDataUrl]?.data !== null &&
-                  Object.keys(predictions[fetchDataUrl]?.data).length === 0 && (
-                    <p>No ingredients found</p>
-                  )}
-                {predictions[fetchDataUrl]?.loading === false &&
-                  predictions[fetchDataUrl]?.data !== null &&
-                  Object.keys(predictions[fetchDataUrl]?.data).length > 0 && (
-                    <React.Fragment>
-                      {Object.entries(predictions[fetchDataUrl]?.data).map(
-                        ([lang, text], index) => (
-                          <div
-                            key={index}
-                            style={{ margin: 4, border: "solid black 1px" }}
-                          >
-                            <p>{lang}</p>
-                            <p>{text}</p>
-                          </div>
-                        )
-                      )}
-                    </React.Fragment>
-                  )}
-                <button
-                  onClick={() => {
-                    getPreidiction(fetchDataUrl);
-                  }}
-                >
-                  fetch
-                </button>
+                <ImageAnnotation fetchDataUrl={fetchDataUrl} />
               </Stack>
             );
           }

@@ -75,7 +75,9 @@ const formatData = (product) => {
 export default function useData() {
   const [data, setData] = React.useState([]);
   const [isLoading, setIsLoading] = React.useState(true);
-  const [page, setPage] = React.useState(0);
+  const [page, setPage] = React.useState(() => {
+    return new Date().getMilliseconds() % 50;
+  });
   const seenCodes = React.useRef([]);
 
   React.useEffect(() => {

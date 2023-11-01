@@ -23,22 +23,19 @@ function isError(
   return (rep as GetIngredientsError).error !== undefined;
 }
 
-export default function useRobotoffPrediction() {
-  const [data, setData] = React.useState<{
-    [key: string]: {
-      loading: boolean;
-      data: null | { [lang: string]: string };
-    };
-  }>({});
+export type DataType = { [lang: string]: string };
 
-  async function getData(fetchUrl: string) {
-    setData((prev) => ({
-      ...prev,
-      [fetchUrl]: {
-        loading: true,
-        data: null,
-      },
-    }));
+export default function useRobotoffPrediction(
+  fetchUrl: string
+): [null | DataType, () => void, boolean, null | string] {
+  const [isLoading, setIsLoading] = React.useState(false);
+  const [error, setError] = React.useState(null);
+  const [data, setData] = React.useState<null | { [lang: string]: string }>(
+    null
+  );
+
+  const getData = React.useCallback(() => {
+    setIsLoading(true);
 
     axios
       .get<
@@ -46,13 +43,9 @@ export default function useRobotoffPrediction() {
       >(fetchUrl)
       .then((result) => {
         if (isError(result.data)) {
-          setData((prev) => ({
-            ...prev,
-            [fetchUrl]: {
-              loading: false,
-              data: null,
-            },
-          }));
+          setIsLoading(false);
+          setError(result.data.error);
+          setData(null);
           return;
         }
 
@@ -60,14 +53,11 @@ export default function useRobotoffPrediction() {
         result.data.entities.map((entity) => {
           rep[entity.lang.lang] = entity.text;
         });
-        setData((prev) => ({
-          ...prev,
-          [fetchUrl]: {
-            loading: false,
-            data: rep,
-          },
-        }));
+        setIsLoading(false);
+        setError(null);
+        setData(rep);
       });
-  }
-  return [data, getData];
+  }, [fetchUrl]);
+
+  return [data, getData, isLoading, error];
 }
