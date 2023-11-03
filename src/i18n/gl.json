@@ -224,36 +224,36 @@
     "join_the_community": {
       "discover_our": "Descubre o noso ",
       "code_of_conduct": "Código de conduta ",
-      "join_us_on": "Join us on ",
-      "forum": "Forum",
-      "subscribe_to_our": "Subscribe to our ",
-      "newsletter": "newsletter"
+      "join_us_on": "Síguenos en ",
+      "forum": "Foro",
+      "subscribe_to_our": "Subscríbete ao noso ",
+      "newsletter": "boletín"
     },
-    "discover_the_project": "Discover the project",
-    "Who_we_are": "Who we are",
-    "Vision_Mission_Values_and_Programs": "Vision, Mission, Values and Programs",
-    "FAQS": "FAQS",
-    "open_Food_Facts_blog": "Open Food Facts blog",
+    "discover_the_project": "Descubre o proxecto",
+    "Who_we_are": "Quen somos",
+    "Vision_Mission_Values_and_Programs": "Visión, Misión, Valores e Programas",
+    "FAQS": "Preguntas frecuentes",
+    "open_Food_Facts_blog": "Blog Open Food Facts",
     "Press": "Prensa",
     "Open_Food_Facts_wiki": "Open Food Facts wiki (en)",
-    "Translators": "Translators",
-    "Partners": "Partners",
-    "Open_Beauty_Facts": "Open Beauty Facts - Cosmetics",
+    "Translators": "Tradutores",
+    "Partners": "Socios",
+    "Open_Beauty_Facts": "Open Beauty Facts - Cosméticos",
     "text2": "Unha base de datos de colaboración, libre e aberto de produtos alimenticios de todo o mundo."
   },
   "helper": {
     "welcome": {
       "page1": {
-        "title": "Welcome to Hunger Games",
-        "text1": "Hunger Games is a collection of mini-games that help contribute to Open Food Facts in many ways. You can play are really exciting games from anywhere. Here is a guided tour of the entire website which will get you started.",
-        "text2": "Make sure to login to the Open Food Facts website to get credit for your contributions. If you make a mistake, please take the time to correct it by heading to the website.",
-        "text3": "In case of any doubt about the games, click on the question mark icon at the top right of the page, and you can reach us on slack at the #hunger-games channel"
+        "title": "Benvido aos Hunger Games",
+        "text1": "Hunger Games é unha colección de minixogos que axudan a contribuír a Open Food Facts de moitas maneiras. Podes xogar a xogos realmente emocionantes desde calquera lugar. Aquí tes unha visita guiada por todo o sitio web que che axudará comezar.",
+        "text2": "Asegúrate de iniciar sesión no sitio web de Open Food Facts para obter crédito polas túas contribucións. Se cometes un erro, toma o tempo para correxilo dirixíndote ao sitio web.",
+        "text3": "Se tes algunha dúbida sobre os xogos, fai clic na icona do signo de interrogación na parte superior dereita da páxina e poderás poñerte en contacto connosco por Slack na canle #hunger-games"
       },
       "page2": {
-        "title": "Questions Game",
-        "text1": "Does the food product belong to this brand?",
-        "text2": "Simply answer with a <strong>Yes/No</strong>! Don't know the answer? That's alright, just skip it.",
-        "text3": "You can also use your keyboard shortcuts: y,n and k.",
+        "title": "Xogo de preguntas",
+        "text1": "Pertence o produto alimentario a esta marca?",
+        "text2": "Simplemente responde cun <strong>Si/Non</strong>! Non sabes a resposta? Está ben, só omítea.",
+        "text3": "Tamén podes usar os teus atallos de teclado: y, n e k.",
         "text4": "You can <strong>filter</strong> the products based on country, brands, popularity and much more!",
         "text5": "If you don't want to do this every single time, you can also <strong>save the filters</strong> by clicking on the star. Next time you come back, find the saved filters on the home page itself"
       },
@@ -342,37 +342,37 @@
     },
     "history": {
       "title": "Session History",
-      "status": "status",
-      "product name": "product name",
-      "view": "view page",
-      "edit": "edit page",
-      "SKIP": "ignored",
-      "VALIDATED": "edited",
-      "WRONG_IMAGE": "unselected picture",
-      "close": "close",
-      "open": "open history"
+      "status": "estado",
+      "product name": "nome do produto",
+      "view": "ver páxina",
+      "edit": "editar páxina",
+      "SKIP": "ignorado",
+      "VALIDATED": "editado",
+      "WRONG_IMAGE": "imaxe non seleccionada",
+      "close": "pechar",
+      "open": "abrir historia"
     }
   },
   "notfound": {
-    "image_alt": "404 not found",
-    "nopage": "Whoops! The page you're looking for can't be found.",
-    "redirect1": "Want to play some games?",
-    "redirect2": "Click here"
+    "image_alt": "404 non atopado",
+    "nopage": "Vaia! Non se pode atopar a páxina que buscas.",
+    "redirect1": "Queres xogar a algúns xogos?",
+    "redirect2": "Preme aquí"
   },
   "nutriscore": {
-    "image_alt": "cropped image",
-    "label": "Annotate Nutri-Score logo detection by batch.",
-    "description": "To do so, select all the images showing the correct/wrong Nutri-Score value ({{label}}), and click on the bottom buttons to say if you selected a set correct or wrong ones.",
-    "images_remaining": "Still {{remaining}} to annotate",
-    "image_sizes": "Image sizes",
-    "zoom_on_logo": "Zoom on logo",
+    "image_alt": "imaxe recortada",
+    "label": "Marca a detección do logotipo de Nutri-Score por lote.",
+    "description": "Para iso, seleccione todas as imaxes que amosen o valor Nutri-Score correcto/incorrecto ({{label}}) e prema nos botóns inferiores para dicir se seleccionou un conxunto correcto ou incorrecto.",
+    "images_remaining": "Quedan {{remaining}} por marcar",
+    "image_sizes": "Tamaños da imaxe",
+    "zoom_on_logo": "Zoom no logotipo",
     "select_all": "Select all",
     "deselect_all": "Unselect all",
-    "incorrect": "Wrong",
-    "correct": "Correct ({{label}})"
+    "incorrect": "Incorrecto",
+    "correct": "Correcto ({{label}})"
   },
   "eco-score": {
-    "description": "Here is a summary of questions that could improve Eco-Score computation",
-    "countryLabel": "Country"
+    "description": "Aquí tes un resumo de preguntas que poderían mellorar o cálculo da puntuación ecolóxica",
+    "countryLabel": "País"
   }
 }
