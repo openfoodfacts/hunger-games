@@ -1,53 +1,53 @@
 {
   "home": {
     "game_selector": {
-      "title": "What game would you like to play?",
+      "title": "A que te apetece xogar?",
       "cards": {
         "questions": {
-          "title": "Questions",
-          "description": "Tell us if the given image answers the questions"
+          "title": "Preguntas",
+          "description": "Dinos se a imaxe dada responde ás preguntas"
         },
         "logos": {
           "title": "Logos",
-          "description": "Find all the logos matching the given logo"
+          "description": "Busca todo-los logotipos que coincidan co logo indicado"
         },
         "eco_score": {
           "title": "Eco-score",
-          "description": "Annotate the questions with the highest value"
+          "description": "Anota as preguntas de maior valor"
         }
       }
     },
     "account_band": {
-      "title": "Want to make your contribution count? Create an account or sign in on Open Food Facts!",
-      "log_in": "Login",
+      "title": "Queres que a túa contribución conte? Crea unha conta ou inicia sesión en Open Food Facts!",
+      "log_in": "Acceder",
       "sign_up": "Rexistrarse",
-      "contribution_details": "Learn why your contribution matters"
+      "contribution_details": "Aprende por que é importante a túa contribución"
     },
-    "saved_filters": "Saved Filters",
+    "saved_filters": "Filtros gardados",
     "contribution_modal": {
-      "title": "Your contribution matters",
-      "information": "Hunger Games is an effort to leverage the results of our OCR and artificial intelligence. When you use Hunger Games by Open Food Facts, you improve our entire database which helps the community make better food choices. We gather your annotations and use them to make Open Food Facts more accurate and efficient.",
-      "thank_you": "Thank you for helping us improve Open Food Facts so that more people can use it easily."
+      "title": "A túa contribución é importante",
+      "information": "Hunger Games é un esforzo para aproveitar os resultados do noso OCR e da intelixencia artificial. Cando utilizas Hunger Games de Open Food Facts, melloras toda a nosa base de datos que axuda á comunidade a escoller mellores alimentos. Recopilamos as túas anotacións e usámolas para facer que Open Food Facts sexa máis preciso e eficiente.",
+      "thank_you": "Grazas por axudarnos a mellorar Open Food Facts para que máis xente poida usalo facilmente."
     },
     "statistics": {
-      "title": "{{userName}} statistics:",
+      "title": "Estatísticas de {{userName}}:",
       "editorCount": {
         "title": "Editor",
-        "description": "Number of editions done"
+        "description": "Número de edicións realizadas"
       },
       "contributorCount": {
         "title": "Contribuínte",
-        "description": "Adding a new product"
+        "description": "Engadindo un novo produto"
       },
       "photographerCount": {
-        "title": "Photographer",
-        "description": "Taking photos for a product"
+        "title": "Fotógrafo",
+        "description": "Facendo fotos para un produto"
       }
     }
   },
   "flagged_images": {
-    "title": "Images flagged by users",
-    "loading": "Loading"
+    "title": "Imaxes marcadas polos usuarios",
+    "loading": "Cargando"
   },
   "questions": {
     "category": "categoría",
@@ -58,48 +58,48 @@
     "brands": "Marcas",
     "packaging": "empaquetado",
     "quantity": "Cantidade",
-    "insightTypeLabel": "Only shows",
+    "insightTypeLabel": "Mostrar só",
     "ingredients": "Ingredientes",
-    "product_weight": "product weight",
-    "popularity_sort": "Sort by popularity",
-    "see_examples": "See examples of this ",
+    "product_weight": "peso do produto",
+    "popularity_sort": "Ordenar por popularidade",
+    "see_examples": "Vexa exemplos desta ",
     "no": "Non",
-    "skip": "Skip",
+    "skip": "Saltar",
     "yes": "Si",
-    "no_questions_remaining": "No questions remaining",
-    "countries": "Countries",
-    "view": "View",
+    "no_questions_remaining": "Non quedan preguntas",
+    "countries": "Países",
+    "view": "Ver",
     "edit": "Editar",
-    "hide_images": "Hide images (faster loading)",
-    "display_images": "Display images",
-    "annotations": "Annotations",
-    "last_annotations": "Last annotations",
-    "remaining_annotations": "Remaining questions",
-    "annotated_annotations": "Annotated",
+    "hide_images": "Ocultar imaxes (carga máis rápida)",
+    "display_images": "Mostrar imaxes",
+    "annotations": "Anotacións",
+    "last_annotations": "Últimas anotacións",
+    "remaining_annotations": "Preguntas restantes",
+    "annotated_annotations": "Anotado",
     "filters": {
-      "active_filter_number": "+{{count}} filters",
-      "active_filter_number_one": "+{{count}} filter",
-      "active_filter_number_zero": "no filter",
+      "active_filter_number": "+{{count}} filtros",
+      "active_filter_number_one": "+{{count}} filtro",
+      "active_filter_number_zero": "sen filtro",
       "short_label": {
-        "value": "value",
+        "value": "valor",
         "country": "país",
         "brand": "marca",
-        "popularity": "popularity",
-        "campaign": "camp"
+        "popularity": "popularidade",
+        "campaign": "campaña"
       },
       "long_label": {
-        "type": "Question Type",
-        "value": "Proposed Value",
-        "country": "Product Country",
-        "brand": "Product Brand",
-        "popularity": "Sort by popularity",
+        "type": "Tipo de pregunta",
+        "value": "Valor proposto",
+        "country": "País do produto",
+        "brand": "Marca do produto",
+        "popularity": "Ordenar por popularidade",
         "edit": "",
-        "campaign": "Campaign"
+        "campaign": "Campaña"
       },
       "placeholders": {
-        "value": "Value (Fanta, en:organic,...)",
-        "brand": "Auchan, Danone, Herta, ...",
-        "campaign": "Annotation campaigns"
+        "value": "Valor (Fanta, en:organic,...)",
+        "brand": "Auchan, Danone, Herta,...",
+        "campaign": "Campañas de anotación"
       },
       "actions": {
         "edit": "Edit Filters",
@@ -112,7 +112,7 @@
     "flag": "Something wrong? Report/flag the image!",
     "unflag": "Unflag the image",
     "reset_filters": "Reset filters",
-    "log_in": "Login",
+    "log_in": "Acceder",
     "sign_up": "Rexistrarse",
     "login_title": "Make your annotation count",
     "login_description": "You are not currently logged into Open Food Facts. To get your answers directly applied to products, and associated to your account, consider logging in to your Open Food Facts account, or creating one",
@@ -121,7 +121,7 @@
   "menu": {
     "title": "Hunger Games",
     "games": "Games",
-    "questions": "Questions",
+    "questions": "Preguntas",
     "logos": "Logos",
     "logos-annotation": "Logos annotation",
     "logos-search": "Logos search",
@@ -144,7 +144,7 @@
     "value_tag": "Value tag",
     "value_placeholder": "ex: en:mueslis, bjorg,...",
     "type": "Type",
-    "annotated": "Annotated",
+    "annotated": "Anotado",
     "annotation": "Annotation",
     "not_annotated": "Not annotated",
     "all": "All",
@@ -173,57 +173,57 @@
     "task_description": "Select all logos that are exactly the same, and give them a name like \"en:EU Organic\" and a type like \"label\".",
     "select_all": "Select all",
     "unselect_all": "Unselect all",
-    "distance": "Distance:",
+    "distance": "Distancia:",
     "value": "Value",
-    "submit": "Submit",
+    "submit": "Enviar",
     "type": "Type",
     "label": "Etiqueta",
     "brand": "Marca",
     "packager_code": "Packager code",
     "packaging": "Empaquetado",
-    "qr_code": "QR code",
+    "qr_code": "Código QR",
     "category": "Categoría",
-    "nutrition_label": "Nutrition label",
-    "no_logo": "Not a logo",
+    "nutrition_label": "Etiqueta nutricional",
+    "no_logo": "Non é un logotipo",
     "store": "Tenda",
-    "detail": "Logo detail",
-    "id": "Logo ID:",
-    "barcode": "Barcode:",
-    "full_image": "Full image",
-    "update": "Update",
-    "no_found": "No logo found",
+    "detail": "Detalle do logotipo",
+    "id": "ID do logotipo:",
+    "barcode": "Código de barras:",
+    "full_image": "Imaxe completa",
+    "update": "Actualizar",
+    "no_found": "Non se atopou ningún logotipo",
     "search": "Buscar",
-    "number_of_results": "Number of results:",
+    "number_of_results": "Número de resultados:",
     "loading": "Cargando…",
-    "refresh": "Refresh",
-    "search_specific": "Search specific logo",
-    "load_more": "Load more",
-    "no_results": "No logo found",
-    "result_count": "Shows {{showing}} on {{available}} available",
+    "refresh": "Actualizar",
+    "search_specific": "Buscar logo específico",
+    "load_more": "Cargar máis",
+    "no_results": "Non se atopou ningún logotipo",
+    "result_count": "Mostrando {{showing}} de {{available}} dispoñibles",
     "flag": "Something wrong? Report/flag the image!",
     "unflag": "Unflag the image",
-    "crop_image_title": "crop of the logo",
-    "no_more_questions": "No more questions about this logo. You can try to find more logos with the following game.",
+    "crop_image_title": "recorte do logotipo",
+    "no_more_questions": "Non hai máis preguntas sobre este logotipo. Podes tentar buscar máis logotipos co seguinte xogo.",
     "loading_messages": {
-      "pending_reference_logos": "We are loading some logos examples to initialise the search",
-      "failed_reference_logos": "We did not find any logos with this annotation. Try to use the following game to annotate some of them."
+      "pending_reference_logos": "Estamos cargando algúns exemplos de logotipos para iniciar a busca",
+      "failed_reference_logos": "Non atopamos ningún logotipo con esta anotación. Tenta utilizar o seguinte xogo para anotar algúns deles."
     }
   },
   "settings": {
     "settings": "Axustes",
-    "language": "Languages",
+    "language": "Linguas",
     "save": "Gardar",
-    "reportIssue": "Found a bug? Please let us know.",
-    "dev_mode_title": "To get more options, activate the dev mode",
-    "dev_mode_label": "Dev Mode",
-    "dev_page_toggle": "Show {{name}} page",
+    "reportIssue": "Atopache un erro? Infórmanos.",
+    "dev_mode_title": "Para obter máis opcións, activa o modo de desenvolvemento",
+    "dev_mode_label": "Modo de desenvolvemento",
+    "dev_page_toggle": "Mostrar páxina {{name}}",
     "join_community": "Únase á comunidade",
-    "text1": "Open Food Facts is a collaborative project built by tens of thousands of volunteers and managed by a non-profit organization with 8 employees. We need your donations to fund the Open Food Facts 2024 budget and to continue to develop the project.",
-    "thank_you": "Thank you",
+    "text1": "Open Food Facts é un proxecto colaborativo construído por decenas de miles de voluntarios e xestionado por unha organización sen ánimo de lucro con 8 empregados. Necesitamos as túas doazóns para financiar o orzamento de Open Food Facts 2024 e para seguir desenvolvendo o proxecto.",
+    "thank_you": "Grazas",
     "donate": "Doar",
     "join_the_community": {
-      "discover_our": "Discover our ",
-      "code_of_conduct": "Code of conduct ",
+      "discover_our": "Descubre o noso ",
+      "code_of_conduct": "Código de conduta ",
       "join_us_on": "Join us on ",
       "forum": "Forum",
       "subscribe_to_our": "Subscribe to our ",
