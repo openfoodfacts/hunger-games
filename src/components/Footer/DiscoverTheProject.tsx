@@ -41,7 +41,7 @@ const discover = [
   },
 ];
 
-const DiscoverTheProject = () => {
+export default function DiscoverTheProject() {
   const { t } = useTranslation();
   return (
     <Box sx={{ width: { xs: "100%", sm: "50%" } }} className="OFF-discover">
@@ -76,6 +76,4 @@ const DiscoverTheProject = () => {
       </Box>
     </Box>
   );
-};
-
-export default DiscoverTheProject;
+}
