@@ -1,31 +1,31 @@
 {
   "home": {
     "game_selector": {
-      "title": "What game would you like to play?",
+      "title": "Ere wo ni o fẹ lati ṣe?",
       "cards": {
         "questions": {
-          "title": "Questions",
-          "description": "Tell us if the given image answers the questions"
+          "title": "Awọn ibeere",
+          "description": "Sọ fun wa ti aworan ti a fun ba dahun awọn ibeere naa"
         },
         "logos": {
           "title": "Logos",
-          "description": "Find all the logos matching the given logo"
+          "description": "Wa gbogbo awọn aami ti o baamu aami ti a fun"
         },
         "eco_score": {
-          "title": "Eco-score",
-          "description": "Annotate the questions with the highest value"
+          "title": "Eco-Dimegilio",
+          "description": "Ṣe alaye awọn ibeere pẹlu iye ti o ga julọ"
         }
       }
     },
     "account_band": {
-      "title": "Want to make your contribution count? Create an account or sign in on Open Food Facts!",
-      "log_in": "Login",
-      "sign_up": "Sign up",
-      "contribution_details": "Learn why your contribution matters"
+      "title": "Ṣe o fẹ lati jẹ ki idasi rẹ ka? Ṣẹda akọọlẹ kan tabi wọle si Awọn Otitọ Ounjẹ Ṣii!",
+      "log_in": "Username",
+      "sign_up": "Forukọsilẹ",
+      "contribution_details": "Kọ idi ti ilowosi rẹ ṣe pataki"
     },
-    "saved_filters": "Saved Filters",
+    "saved_filters": "Awọn Ajọ ti a fipamọ",
     "contribution_modal": {
-      "title": "Your contribution matters",
+      "title": "Ilowosi rẹ ṣe pataki",
       "information": "Hunger Games is an effort to leverage the results of our OCR and artificial intelligence. When you use Hunger Games by Open Food Facts, you improve our entire database which helps the community make better food choices. We gather your annotations and use them to make Open Food Facts more accurate and efficient.",
       "thank_you": "Thank you for helping us improve Open Food Facts so that more people can use it easily."
     },
@@ -112,8 +112,8 @@
     "flag": "Something wrong? Report/flag the image!",
     "unflag": "Unflag the image",
     "reset_filters": "Reset filters",
-    "log_in": "Login",
-    "sign_up": "Sign up",
+    "log_in": "Username",
+    "sign_up": "Forukọsilẹ",
     "login_title": "Make your annotation count",
     "login_description": "You are not currently logged into Open Food Facts. To get your answers directly applied to products, and associated to your account, consider logging in to your Open Food Facts account, or creating one",
     "please_wait_while_we_fetch_the_question": "Please wait while we fetch the question!"
@@ -121,7 +121,7 @@
   "menu": {
     "title": "Hunger Games",
     "games": "Games",
-    "questions": "Questions",
+    "questions": "Awọn ibeere",
     "logos": "Logos",
     "logos-annotation": "Logos annotation",
     "logos-search": "Logos search",
@@ -131,7 +131,7 @@
     "insights": "Insights",
     "nutritions": "Nutrition facts",
     "settings": "Ètò",
-    "eco-score": "Eco-score",
+    "eco-score": "Eco-Dimegilio",
     "dashboard": "Logos dashboard",
     "tour": "Show tour",
     "logged_in_user": "Logged as {{userName}}",

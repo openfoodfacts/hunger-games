@@ -8,7 +8,7 @@
           "description": "Digues-nos si la imatge donada respon les preguntes"
         },
         "logos": {
-          "title": "Logos",
+          "title": "Logotips",
           "description": "Trobeu totes les imatges que encaixin amb el logo donat"
         },
         "eco_score": {
@@ -109,7 +109,7 @@
     },
     "other_questions": "Altres preguntes",
     "send": "Envia",
-    "flag": "Qualsevol problema?  digues quin",
+    "flag": "Hi ha cap problema? Denuncia/marca la imatge!",
     "unflag": "Desmarqueu la imatge",
     "reset_filters": "Restableix filtres",
     "log_in": "Nom d'usuari",
@@ -122,7 +122,7 @@
     "title": "Jocs de la fam",
     "games": "Jocs",
     "questions": "Preguntes",
-    "logos": "Logos",
+    "logos": "Logotips",
     "logos-annotation": "Anotació de logotips",
     "logos-search": "Cerca de logotips",
     "logos-product-search": "Anotació per productes",
@@ -163,8 +163,8 @@
     "created_at": "Creat a",
     "completed_at": "Completat a",
     "automatic": "Automàtic",
-    "human_required": "fa falta un humá\nes necessita un humá ",
-    "edit_product": "Oberta l'edició del producte",
+    "human_required": "Fa falta un humà",
+    "edit_product": "Obra l'edició del producte",
     "view_product": "Obre la pàgina del producte"
   },
   "logos": {
@@ -184,7 +184,7 @@
     "qr_code": "Codi QR",
     "category": "Categoria",
     "nutrition_label": "Etiqueta nutricional",
-    "no_logo": "no si es logotip",
+    "no_logo": "No és un logotip",
     "store": "Botiga",
     "detail": "Detall del logotip",
     "id": "Identificador del logotip:",
@@ -199,8 +199,8 @@
     "search_specific": "Cerca un logotip específic",
     "load_more": "Carrega mes ",
     "no_results": "No s'ha trobat cap logotip",
-    "result_count": "mirar dentro de lo posible (esp)\nmirar dintre del posible o viable",
-    "flag": "Qualsevol problema?  digues quin",
+    "result_count": "Mostra {{showing}} en {{available}} disponibles",
+    "flag": "Hi ha cap problema? Denuncia/marca la imatge!",
     "unflag": "Desmarqueu la imatge",
     "crop_image_title": "retall del logotip",
     "no_more_questions": "No hi ha més preguntes sobre aquest logotip. Podeu provar de trobar més logotips amb el següent joc.",

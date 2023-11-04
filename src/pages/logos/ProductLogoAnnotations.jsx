@@ -25,6 +25,12 @@ const OFF_2_ROBOTOFF = {
   labels: "label",
   packaging: "packaging",
 };
+const ROBOTOFF_2_OFF = {
+  category: "categories",
+  label: "labels",
+  packaging: "packaging",
+};
+
 const fetchProducts = async ({ page, filter }) => {
   try {
     const {
@@ -87,6 +93,12 @@ const useLogoFetching = (filter) => {
   }, [filter]);
 
   React.useEffect(() => {
+    const filterStateIsIncomplet = !filter.tagtype || !filter.tag;
+    if (filterStateIsIncomplet) {
+      // Avoid fetching data if no value to filter
+      return () => {};
+    }
+
     let isValid = true;
     setIsLoading(true);
     setCanLoadMore(false);
@@ -181,7 +193,7 @@ export default function AnnotateLogosFromProducts() {
     {
       tagtype: "labels",
       tag_contains: "contains",
-      tag: "en:eg-oko-verordnung",
+      tag: "",
     },
     {
       tag: ["valueTag", "value_tag", "value"],
@@ -228,7 +240,10 @@ export default function AnnotateLogosFromProducts() {
             sx={{ minWidth: 200 }}
           >
             {logoTypeOptions.map(({ value: typeValue, labelKey }) => (
-              <MenuItem key={typeValue} value={typeValue}>
+              <MenuItem
+                key={typeValue}
+                value={ROBOTOFF_2_OFF[typeValue] ?? typeValue}
+              >
                 {t(labelKey)}
               </MenuItem>
             ))}

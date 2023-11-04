@@ -26,7 +26,7 @@ const logoTypeOptions = [
 ];
 
 const isValidAnnotation = ({ type, value }) => {
-  if (type.length === 0) return false;
+  if (type?.length === 0) return false;
   if (!value && !TYPE_WITHOUT_VALUE.includes(type)) return false;
   return true;
 };
@@ -34,7 +34,7 @@ const isValidAnnotation = ({ type, value }) => {
 const getFormattedValues = ({ type, value }) => {
   if (!isValidAnnotation({ type, value })) return null;
 
-  let formattedValue = value.toLowerCase().trim();
+  let formattedValue = value?.toLowerCase().trim();
   if (TYPE_WITHOUT_VALUE.includes(type)) {
     formattedValue = "";
   }
@@ -64,7 +64,7 @@ export const useLogoForm = (value, type, request) => {
     innerType !== type ||
     (!TYPE_WITHOUT_VALUE.includes(innerType) &&
       (innerValue !== null
-        ? innerValue.toLowerCase() !== value.toLowerCase()
+        ? innerValue.toLowerCase() !== value?.toLowerCase()
         : innerValue !== value));
 
   const isValid = isValidAnnotation({
