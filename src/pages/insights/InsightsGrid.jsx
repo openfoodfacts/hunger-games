@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import { DataGrid, GridToolbar, GridActionsCellItem } from "@mui/x-data-grid";
+import { DataGrid, GridActionsCellItem } from "@mui/x-data-grid";
 
 import EditIcon from "@mui/icons-material/Edit";
 import VisibilityIcon from "@mui/icons-material/Visibility";
@@ -276,18 +276,10 @@ const InsightGrid = ({ filterState = {}, setFilterState }) => {
       columns={columns}
       rows={rows}
       disableColumnFilter
-      disableCol
-      componentsProps={{
-        toolbar: {
-          printOptions: { disableToolbarButton: true },
-          csvOptions: { disableToolbarButton: true },
-        },
-      }}
-      components={{ Toolbar: GridToolbar }}
       isLoading={isLoading}
       page={pageState.page - 1}
       pageSize={PAGE_SIZE}
-      rowsPerPageOptions={[PAGE_SIZE]}
+      pageSizeOptions={[PAGE_SIZE]}
       onPageChange={(page) =>
         setPageState((prev) => ({ ...prev, page: page + 1 }))
       }
