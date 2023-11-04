@@ -1,15 +1,15 @@
 {
   "home": {
     "game_selector": {
-      "title": "What game would you like to play?",
+      "title": "Qaysi oʻyinni oʻynashni istaysiz?",
       "cards": {
         "questions": {
-          "title": "Questions",
-          "description": "Tell us if the given image answers the questions"
+          "title": "Savollar",
+          "description": "Agar ushbu rasm savollarga javob bera olsa, bizga maʼlum qiling"
         },
         "logos": {
-          "title": "Logos",
-          "description": "Find all the logos matching the given logo"
+          "title": "Logotiplar",
+          "description": "Berilgan logotipga mos keluvchi barcha logotiplarni toping"
         },
         "eco_score": {
           "title": "Eco-score",
@@ -121,8 +121,8 @@
   "menu": {
     "title": "Hunger Games",
     "games": "Games",
-    "questions": "Questions",
-    "logos": "Logos",
+    "questions": "Savollar",
+    "logos": "Logotiplar",
     "logos-annotation": "Logos annotation",
     "logos-search": "Logos search",
     "logos-product-search": "Annotation per products",
