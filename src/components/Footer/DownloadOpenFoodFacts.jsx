@@ -32,7 +32,7 @@ const footerLinks = [
   },
 ];
 
-const DownloadOpenFoodFacts = () => {
+export default function DownloadOpenFoodFacts() {
   return (
     <Box
       sx={{
@@ -58,6 +58,4 @@ const DownloadOpenFoodFacts = () => {
       })}
     </Box>
   );
-};
-
-export default DownloadOpenFoodFacts;
+}
