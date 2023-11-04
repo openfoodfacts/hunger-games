@@ -72,7 +72,7 @@ const formatData = (product) => {
   };
 };
 
-export default function useData() {
+export default function useData(): [any[], () => void, boolean] {
   const [data, setData] = React.useState([]);
   const [isLoading, setIsLoading] = React.useState(true);
   const [page, setPage] = React.useState(() => {

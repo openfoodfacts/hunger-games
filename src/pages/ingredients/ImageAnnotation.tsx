@@ -63,6 +63,7 @@ function Annotation({ data, isLoading, error }: AnnotationProps) {
                   [lang]: data[lang],
                 }));
               }}
+              disabled={editedState[lang] === data[lang]}
               variant="contained"
               fullWidth
             >
@@ -93,7 +94,7 @@ export default function ImageAnnotation({
   const [data, getData, isLoading, error] = useRobotoffPrediction(fetchDataUrl);
 
   return (
-    <Box sx={{ px: 1 }}>
+    <Box sx={{ px: 1, width: "50%" }}>
       <Annotation data={data} isLoading={isLoading} error={error} />
       <Button
         fullWidth
