@@ -5,7 +5,7 @@ import DiscoverTheProject from "./DiscoverTheProject";
 import OpenFoodFacts from "./OpenFoodFacts";
 import DownloadOpenFoodFacts from "./DownloadOpenFoodFacts";
 
-const FooterWithLinks = () => {
+export default function FooterWithLinks() {
   return (
     <Box
       sx={{
@@ -39,6 +39,4 @@ const FooterWithLinks = () => {
       <OpenFoodFacts />
     </Box>
   );
-};
-
-export default FooterWithLinks;
+}

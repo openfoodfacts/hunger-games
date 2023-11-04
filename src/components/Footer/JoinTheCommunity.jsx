@@ -27,11 +27,16 @@ const content = [
   },
 ];
 
-const JoinTheCommunity = () => {
+function CustomStepIcon() {
+  return (
+    <div>
+      <CheckCircleIcon sx={{ color: "#a08d84" }} />
+    </div>
+  );
+}
+
+export default function JoinTheCommunity() {
   const { t } = useTranslation();
-  const CustomStepIcon = (props) => {
-    return <div>{<CheckCircleIcon sx={{ color: "#a08d84" }} />}</div>;
-  };
 
   return (
     <div style={{ flexGrow: "1" }} className="OFF-join">
@@ -50,11 +55,10 @@ const JoinTheCommunity = () => {
             <Step active key={index}>
               <StepLabel StepIconComponent={CustomStepIcon}>
                 {t(step.tag) + " "}
-                {
-                  <Link href={step.url} underline="always">
-                    {t(step.urlText)}
-                  </Link>
-                }
+
+                <Link href={step.url} underline="always">
+                  {t(step.urlText)}
+                </Link>
               </StepLabel>
             </Step>
           ))}
@@ -62,6 +66,4 @@ const JoinTheCommunity = () => {
       </Box>
     </div>
   );
-};
-
-export default JoinTheCommunity;
+}
