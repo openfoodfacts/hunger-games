@@ -86,11 +86,6 @@ export default function Settings() {
           [
             { pageUrl: "logos", pageName: "logos", isExperimental: false },
             {
-              pageUrl: "dashboard",
-              pageName: "dashboard",
-              isExperimental: false,
-            },
-            {
               pageUrl: "insights",
               pageName: "insights",
               isExperimental: false,
