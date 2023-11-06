@@ -41,7 +41,7 @@ const robotoff = {
     return axios
       .get<GetQuestionsResponse>(`${ROBOTOFF_API_URL}/questions/${code}`)
       .then((result) => {
-        let questions = result.data.questions;
+        const questions = result.data.questions;
         result.data.questions = questions.filter(
           (question) => question.source_image_url
         );
@@ -186,17 +186,18 @@ const robotoff = {
   },
 
   getNutritionValueFromImage(language, imageOcrUrl, images) {
-    var ocrUrlSubString = imageOcrUrl.split("/");
+    const ocrUrlSubString = imageOcrUrl.split("/");
 
     // setting a default value, assuming length of ocrUrlSubString is 7,
     // and product code is 8 characters long
-    var productCodeForOcrUrl = ocrUrlSubString[5];
+    let productCodeForOcrUrl = ocrUrlSubString[5];
 
-    let nutritionKeyWithLangSuffix = `nutrition_${language}`;
+    const nutritionKeyWithLangSuffix = `nutrition_${language}`;
 
-    for (var key in images) {
+    let imgid = "";
+    for (const key in images) {
       if (nutritionKeyWithLangSuffix === key) {
-        var imgid = images[nutritionKeyWithLangSuffix].imgid;
+        imgid = images[nutritionKeyWithLangSuffix].imgid;
       }
     }
 

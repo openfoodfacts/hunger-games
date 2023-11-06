@@ -128,6 +128,7 @@ export default function LogoSearch() {
               .map(transformLogo),
           ];
         });
+        // eslint-disable-next-line no-empty
       } catch (error) {}
     };
 
@@ -285,7 +286,7 @@ export default function LogoSearch() {
   };
 
   const removeSelectedLogos = () => {
-    setLogosToAnnotate((prev) => prev.filter((logo, index) => !logo.selected));
+    setLogosToAnnotate((prev) => prev.filter((logo) => !logo.selected));
   };
 
   const [isAnnotationOpen, setIsAnnotationOpen] = React.useState(false);
@@ -319,7 +320,6 @@ export default function LogoSearch() {
         </Typography>
         <Divider sx={{ my: 3 }} />
         <LogoForm {...searchState} request={setNewSearchState} />
-        {/* {isLoading && <LinearProgress sx={{ mt: 5 }} />} */}
 
         <Typography variant="h5" sx={{ mt: 5, mb: 1 }}>
           Reference logos (logo already annotated with this value)

@@ -128,7 +128,7 @@ const QuestionDisplay = ({ question, productData }) => {
   const isLoading = useSelector(isLoadingSelector);
   const dispatch = useDispatch();
 
-  const [_, setSearchParams] = useFilterSearch();
+  const [, setSearchParams] = useFilterSearch();
 
   const updateSearchParams = (newParams) => {
     setSearchParams(newParams);

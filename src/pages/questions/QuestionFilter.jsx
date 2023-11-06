@@ -253,7 +253,7 @@ export const QuestionFilter = () => {
 
         <Box sx={{ overflow: "hidden" }}>
           {isDesktop ? (
-            chipsParams.map(({ key, display, label, onDelete }) => (
+            chipsParams.map(({ key, label, onDelete }) => (
               <Chip key={key} label={label} onDelete={onDelete} />
             ))
           ) : (

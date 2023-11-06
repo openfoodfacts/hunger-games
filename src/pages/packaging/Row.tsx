@@ -39,12 +39,10 @@ const CustomAutoComplet = (props: CustomProps) => {
   return (
     <Autocomplete
       options={options}
-      // @ts-ignore
       value={value}
       onChange={onChange}
       onInputChange={(event, newInputValue) => setInputValue(newInputValue)}
       disablePortal
-      // @ts-ignore
       renderInput={(params) => <TextField {...params} />}
       getOptionLabel={(option) =>
         typeof option === "string"

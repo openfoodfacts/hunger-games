@@ -205,7 +205,7 @@ export default function LogoAnnotation() {
   const selectAll = () => {
     setLogoState((prevState) => ({
       ...prevState,
-      logos: prevState.logos.map((logo, index) => {
+      logos: prevState.logos.map((logo) => {
         if (logo.annotation_value === null) {
           logo.selected =
             logo.annotation_type === null && logo.annotation_value === null;

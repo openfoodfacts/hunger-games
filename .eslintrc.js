@@ -1,6 +1,7 @@
 module.exports = {
   env: {
     browser: true,
+    node: true,
     es2021: true,
   },
   extends: [
@@ -27,5 +28,6 @@ module.exports = {
   plugins: ["@typescript-eslint", "react"],
   rules: {
     "react/prop-types": 0,
+    "@typescript-eslint/no-explicit-any": 0,
   },
 };

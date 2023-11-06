@@ -14,3 +14,6 @@ export const NO_QUESTION_LEFT = "NO_QUESTION_LEFT";
 export const CORRECT_INSIGHT = 1;
 export const WRONG_INSIGHT = 0;
 export const SKIPPED_INSIGHT = -1;
+
+// insight types that do not have an associated value
+export const TYPE_WITHOUT_VALUE = ["packager_code", "qr_code", "no_logo"];

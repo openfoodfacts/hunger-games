@@ -8,8 +8,7 @@ import Button from "@mui/material/Button";
 import { useTranslation } from "react-i18next";
 
 import LabelFilter from "../components/QuestionFilter/LabelFilter";
-
-const TYPE_WITHOUT_VALUE = ["packager_code", "qr_code", "no_logo"];
+import { TYPE_WITHOUT_VALUE } from "../const";
 
 export const logoTypeOptions = [
   { value: "", labelKey: "logos.type" },
@@ -35,16 +34,7 @@ const getFormattedValues = ({ type, value, count, barcode }) => {
 };
 
 const LogoSearchForm = (props) => {
-  const {
-    value,
-    barcode,
-    type,
-    count,
-    updateMode,
-    validate,
-    isLoading,
-    ...other
-  } = props;
+  const { value, barcode, type, count, validate, ...other } = props;
   const { t } = useTranslation();
 
   const [innerValue, setInnerValue] = React.useState(value);
