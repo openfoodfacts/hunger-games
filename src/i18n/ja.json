@@ -207,6 +207,14 @@
     "loading_messages": {
       "pending_reference_logos": "検索を初期化するためにロゴの例をいくつか読み込んでいます",
       "failed_reference_logos": "この注釈が付いたロゴは見つかりませんでした。次のゲームでこれらの一部に注釈をつけてみましょう。"
+    },
+    "deep_search": {
+      "title": "Logo search",
+      "description": "Select a logo you want to look for, and let's go to catch them all. For every logo you annotate, we will fetch it's neighbors such that you might never stop to annotate. (Press Shift to select range of logos)",
+      "ref_logos": "Reference logos (logo already annotated with this value)",
+      "remaining": "Remaining to annotate",
+      "select_all": "Select All",
+      "unselect_all": "Deselect All"
     }
   },
   "settings": {
