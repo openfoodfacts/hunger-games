@@ -171,7 +171,7 @@ export default function App() {
       .get("https://world.openfoodfacts.org/cgi/auth.pl", {
         withCredentials: true,
       })
-      .then((rep) => {
+      .then(() => {
         const cookieUserName = off.getUsername();
         setUserState({
           userName: cookieUserName,
@@ -180,7 +180,7 @@ export default function App() {
         lastSeenCookie.current = sessionCookie;
         return true;
       })
-      .catch((err) => {
+      .catch(() => {
         setUserState({
           userName: "",
           isLoggedIn: false,
@@ -294,11 +294,11 @@ export default function App() {
                 <Route
                   path="/ingredients"
                   element={
-                    userState.isLoggedIn ? (
-                      <IngredientPage />
-                    ) : (
-                      <ShouldLoggedinPage />
-                    )
+                    // userState.isLoggedIn ? (
+                    <IngredientPage />
+                    // ) : (
+                    //   <ShouldLoggedinPage />
+                    // )
                   }
                 />
 
