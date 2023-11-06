@@ -209,12 +209,12 @@
       "failed_reference_logos": "この注釈が付いたロゴは見つかりませんでした。次のゲームでこれらの一部に注釈をつけてみましょう。"
     },
     "deep_search": {
-      "title": "Logo search",
-      "description": "Select a logo you want to look for, and let's go to catch them all. For every logo you annotate, we will fetch it's neighbors such that you might never stop to annotate. (Press Shift to select range of logos)",
-      "ref_logos": "Reference logos (logo already annotated with this value)",
-      "remaining": "Remaining to annotate",
-      "select_all": "Select All",
-      "unselect_all": "Deselect All"
+      "title": "ロゴ検索",
+      "description": "あなたが探したいロゴを選択し、それらをすべてキャッチしましょう。 注釈を付けたすべてのロゴについて、注釈を停止しないように隣人を取得します（ロゴの範囲を選択するにはShiftキーを押してください）",
+      "ref_logos": "参照ロゴ (すでにこの値に注釈が付けられているロゴ)",
+      "remaining": "注釈を残しています",
+      "select_all": "すべて選択",
+      "unselect_all": "すべての選択を解除"
     }
   },
   "settings": {
