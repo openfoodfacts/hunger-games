@@ -31,7 +31,7 @@ import Loader from "../loader";
 
 const formatData = (innerRows) => {
   const packagings = innerRows
-    .map(({ material, number, recycling, shape }, index) => {
+    .map(({ material, number, recycling, shape }) => {
       const rep = {};
 
       if (number && !isNaN(Number.parseInt(number))) {
@@ -100,6 +100,7 @@ const Page = () => {
       <Stack direction="row" spacing={1} sx={{ overflow: "auto" }}>
         {getImagesUrls(product.images, product.code).map((src) => (
           <ZoomableImage
+            key={src}
             src={src}
             imageProps={{
               loading: "lazy",

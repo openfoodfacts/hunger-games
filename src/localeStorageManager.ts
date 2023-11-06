@@ -32,7 +32,9 @@ export const localSettings = {
 
     try {
       storedValue = JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}");
-    } catch (e) {}
+    } catch (e) {
+      /* empty */
+    }
 
     return typeof storedValue === "object" ? storedValue : {};
   },
@@ -99,7 +101,7 @@ export const getLang = () => {
   return (
     urlLanguage ||
     settings[localSettingsKeys.language] ||
-    // @ts-ignore
+    // @ts-expect-error Property 'userLanguage' does not exist on type 'Navigator'.
     (navigator.language || navigator.userLanguage).split("-")[0]
   );
 };

@@ -47,6 +47,6 @@ export const capitaliseName = (string: string | undefined) => {
   if (!string) {
     return string;
   }
-  let name = string.slice(3);
+  const name = string.slice(3);
   return name.charAt(0).toUpperCase() + name.slice(1);
 };

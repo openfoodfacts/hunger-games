@@ -128,7 +128,7 @@ const UNTYPED_LOGOS = {
     // logo does not exist yet
     logo: "https://world.openfoodfacts.org/images/lang/en/labels/qs-certification-mark.79x90.png",
     type: "label",
-  }, 
+  },
   "en:dolphin-safe": {
     tag: "en:dolphin-safe",
     label: "Dolphin Safe",
@@ -2958,9 +2958,7 @@ export const DASHBOARD: DashBoardTheme[] = [
   {
     tag: "united-kingdom",
     title: "🇬🇧 United Kingdom",
-    logos: [
-        "en:british-lion-quality",
-    ],
+    logos: ["en:british-lion-quality"],
   },
   // vegetarian vegetalian categories
   {
@@ -3063,10 +3061,7 @@ export const DASHBOARD: DashBoardTheme[] = [
   {
     tag: "switzerland",
     title: "🇨🇭 Switzerland",
-    logos: [
-      "en:suisse-garantie",
-      "en:terrasuisse",
-    ],
+    logos: ["en:suisse-garantie", "en:terrasuisse"],
   },
   // Beers and Wines
   {

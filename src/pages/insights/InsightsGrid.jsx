@@ -23,7 +23,7 @@ const RenderLink = (props) => {
   const { value, ...other } = props;
   return (
     <Link component="button" {...other}>
-      {props.value}
+      {value}
     </Link>
   );
 };
@@ -128,28 +128,32 @@ const InsightGrid = ({ filterState = {}, setFilterState }) => {
       {
         field: "actions",
         type: "actions",
-        getActions: (params) => [
-          <GridActionsCellItem
-            component="a"
-            href={getProductEditUrl(params.row.barcode)}
-            label={t("insights.edit_product")}
-            icon={
-              <Tooltip title={t("insights.edit_product")}>
-                <EditIcon />
-              </Tooltip>
-            }
-          />,
-          <GridActionsCellItem
-            component="a"
-            href={getProductUrl(params.row.barcode)}
-            label={t("insights.view_product")}
-            icon={
-              <Tooltip title={t("insights.view_product")}>
-                <VisibilityIcon />
-              </Tooltip>
-            }
-          />,
-        ],
+        getActions: (params) => (
+          <React.Fragment>
+            <GridActionsCellItem
+              component="a"
+              href={getProductEditUrl(params.row.barcode)}
+              label={t("insights.edit_product")}
+              icon={
+                <Tooltip title={t("insights.edit_product")}>
+                  <EditIcon />
+                </Tooltip>
+              }
+            />
+            ,
+            <GridActionsCellItem
+              component="a"
+              href={getProductUrl(params.row.barcode)}
+              label={t("insights.view_product")}
+              icon={
+                <Tooltip title={t("insights.view_product")}>
+                  <VisibilityIcon />
+                </Tooltip>
+              }
+            />
+            ,
+          </React.Fragment>
+        ),
       },
       {
         field: "type",

@@ -9,8 +9,7 @@ import LoadingButton from "@mui/lab/LoadingButton";
 import { useTranslation } from "react-i18next";
 
 import LabelFilter from "../components/QuestionFilter/LabelFilter";
-
-const TYPE_WITHOUT_VALUE = ["packager_code", "qr_code", "no_logo"];
+import { TYPE_WITHOUT_VALUE } from "../const";
 
 const logoTypeOptions = [
   { value: "", labelKey: "logos.type" },
