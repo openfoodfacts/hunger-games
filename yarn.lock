@@ -2295,7 +2295,7 @@ __metadata:
     react-redux: ^8.1.3
     react-router-dom: ^6.18.0
     react-zoom-pan-pinch: ^2.5.0
-    reactour: ^1.19.0
+    reactour: ^1.19.2
     redux: ^4.2.0
     styled-components: ^5.3.6
     typescript: ^5.2.2
@@ -3237,9 +3237,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"reactour@npm:^1.19.0":
-  version: 1.19.0
-  resolution: "reactour@npm:1.19.0"
+"reactour@npm:^1.19.2":
+  version: 1.19.2
+  resolution: "reactour@npm:1.19.2"
   dependencies:
     "@rooks/use-mutation-observer": 4.11.2
     classnames: 2.3.1
@@ -3255,7 +3255,7 @@ __metadata:
     react-dom: ^16.3.0 || ^17.0.0-0 || ^18.0.0-0
     react-is: ^16.8 || ^17.0.0-0 || ^18.0.0-0
     styled-components: ^4.0.0 || ^5.0.0
-  checksum: bd4e56d57b0c1c83241b70859c824aa1e34d0011063d3aa552552bcae9f9627dd0c4a9122e3d7f2c1ee7066eb2a308317d28aae207b7d4f5192b1e260970d5b5
+  checksum: 16b48bbb293f58cbb42c8e8f712a21375cfeaaff7dc4517203e6d5871b5b1ecdd213a192b0e89793b748981404343cbe77cda79839d251211547256cb7538b97
   languageName: node
   linkType: hard
 
