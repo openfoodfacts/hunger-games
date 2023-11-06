@@ -75,7 +75,7 @@
     "annotations": "Annotations",
     "last_annotations": "Last annotations",
     "remaining_annotations": "Remaining questions",
-    "annotated_annotations": "Annotated",
+    "annotated_annotations": "زيت جوز الهندزيت جوز الهند",
     "filters": {
       "active_filter_number": "+{{count}} filters",
       "active_filter_number_one": "+{{count}} filter",
@@ -144,7 +144,7 @@
     "value_tag": "Value tag",
     "value_placeholder": "ex: en:mueslis, bjorg,...",
     "type": "Type",
-    "annotated": "Annotated",
+    "annotated": "زيت جوز الهندزيت جوز الهند",
     "annotation": "Annotation",
     "not_annotated": "Not annotated",
     "all": "All",
@@ -207,6 +207,14 @@
     "loading_messages": {
       "pending_reference_logos": "We are loading some logos examples to initialise the search",
       "failed_reference_logos": "We did not find any logos with this annotation. Try to use the following game to annotate some of them."
+    },
+    "deep_search": {
+      "title": "Logo search",
+      "description": "Select a logo you want to look for, and let's go to catch them all. For every logo you annotate, we will fetch it's neighbors such that you might never stop to annotate. (Press Shift to select range of logos)",
+      "ref_logos": "Reference logos (logo already annotated with this value)",
+      "remaining": "Remaining to annotate",
+      "select_all": "Select All",
+      "unselect_all": "Deselect All"
     }
   },
   "settings": {
