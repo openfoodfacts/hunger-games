@@ -11,7 +11,7 @@ import LogoSearchForm from "../../components/LogoSearchForm";
 import robotoff from "../../robotoff";
 import off from "../../off";
 import useUrlParams from "../../hooks/useUrlParams";
-import { TYPE_WITHOUT_VALUE } from "../const";
+import { TYPE_WITHOUT_VALUE } from "../../const";
 
 const transformLogo = (logo) => {
   const src =
