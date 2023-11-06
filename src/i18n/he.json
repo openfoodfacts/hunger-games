@@ -209,12 +209,12 @@
       "failed_reference_logos": "לא הצלחנו למצוא לוגואים עם הסבר כזה. כדאי לנסות להשתמש במשחק הבא כדי להוסיף הסבר לכמה מהם."
     },
     "deep_search": {
-      "title": "Logo search",
-      "description": "Select a logo you want to look for, and let's go to catch them all. For every logo you annotate, we will fetch it's neighbors such that you might never stop to annotate. (Press Shift to select range of logos)",
-      "ref_logos": "Reference logos (logo already annotated with this value)",
-      "remaining": "Remaining to annotate",
-      "select_all": "Select All",
-      "unselect_all": "Deselect All"
+      "title": "חיפוש לוגואים",
+      "description": "נא לבחור לוגו לחיפוש כדי שנוכל לצאת לתפוס את כולם. על כל לוגו שיתויג נמשוך את השכנים שלו כדי לא לאפשר לך להפסיק אף פעם. (לחיצה על Shift מאפשרת בחירת טווח של לוגואים)",
+      "ref_logos": "לוגואים לסימוכין (לוגו שכבר תויג עם הערך הזה)",
+      "remaining": "נותרו לתיוג",
+      "select_all": "בחירה בהכול",
+      "unselect_all": "ביטול בחירה"
     }
   },
   "settings": {
