@@ -47,6 +47,7 @@ const LogoQuestionValidator = React.lazy(() =>
 );
 const DashBoard = React.lazy(() => import("./pages/logosValidator/DashBoard"));
 const GalaBoard = React.lazy(() => import("./pages/GalaPage"));
+const Brandinator = React.lazy(() => import("./pages/Brandinator"));
 
 // OFF colors
 const latte = "#F6F3F0";
@@ -170,7 +171,7 @@ export default function App() {
       .get("https://world.openfoodfacts.org/cgi/auth.pl", {
         withCredentials: true,
       })
-      .then((rep) => {
+      .then(() => {
         const cookieUserName = off.getUsername();
         setUserState({
           userName: cookieUserName,
@@ -179,7 +180,7 @@ export default function App() {
         lastSeenCookie.current = sessionCookie;
         return true;
       })
-      .catch((err) => {
+      .catch(() => {
         setUserState({
           userName: "",
           isLoggedIn: false,
@@ -291,6 +292,7 @@ export default function App() {
                   }
                 />
 
+                <Route path="/brandinator" element={<Brandinator />} />
                 <Route path="/settings" element={<SettingsPage />} />
                 <Route path="/questions" element={<QuestionsPage />} />
                 <Route path="/insights" element={<InsightsPage />} />
