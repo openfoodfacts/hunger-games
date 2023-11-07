@@ -312,7 +312,17 @@ export default function App() {
                 {/*  To delete in 2024 */}
                 <Route path="/nutriscore" element={<DashBoard />} />
                 <Route path="/inao" element={<DashBoard />} />
-
+                <Route path="/united-states" element={<DashBoard />} />
+                <Route path="/united-kingdom" element={<DashBoard />} />
+                <Route path="/australia" element={<DashBoard />} />
+                <Route path="/france" element={<DashBoard />} />
+                <Route path="/germany" element={<DashBoard />} />
+                <Route path="/organic" element={<DashBoard />} />
+                <Route path="/beers and wines" element={<DashBoard />} />
+                <Route path="/animal welfare" element={<DashBoard />} />
+                <Route path="/brands" element={<DashBoard />} />
+                <Route path="/no gluten" element={<DashBoard />} />
+                
                 <Route
                   path="/nutrition"
                   element={
