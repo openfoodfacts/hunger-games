@@ -209,12 +209,12 @@
       "failed_reference_logos": "Non abbiamo trovato alcun logo con questaa nota. Prova a utilizzare il seguente gioco per annotarne qualcuno."
     },
     "deep_search": {
-      "title": "Logo search",
-      "description": "Select a logo you want to look for, and let's go to catch them all. For every logo you annotate, we will fetch it's neighbors such that you might never stop to annotate. (Press Shift to select range of logos)",
-      "ref_logos": "Reference logos (logo already annotated with this value)",
-      "remaining": "Remaining to annotate",
-      "select_all": "Select All",
-      "unselect_all": "Deselect All"
+      "title": "Ricerca logo",
+      "description": "Seleziona un logo che desideri cercare e andiamo a catturarli tutti. Per ogni logo che annoti, recupereremo i suoi vicini in modo tale che potresti non smettere mai di annotare. (Premi Maiusc per selezionare la gamma di loghi)",
+      "ref_logos": "Loghi di riferimento (logo già annotato con questo valore)",
+      "remaining": "Rimanente da annotare",
+      "select_all": "Seleziona Tutto",
+      "unselect_all": "Deseleziona Tutto"
     }
   },
   "settings": {
