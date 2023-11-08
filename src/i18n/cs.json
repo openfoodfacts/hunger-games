@@ -209,12 +209,12 @@
       "failed_reference_logos": "Nenašli jsme žádná loga s touto anotací. Zkuste použít následující hru k anotaci některých z nich."
     },
     "deep_search": {
-      "title": "Logo search",
-      "description": "Select a logo you want to look for, and let's go to catch them all. For every logo you annotate, we will fetch it's neighbors such that you might never stop to annotate. (Press Shift to select range of logos)",
-      "ref_logos": "Reference logos (logo already annotated with this value)",
-      "remaining": "Remaining to annotate",
-      "select_all": "Select All",
-      "unselect_all": "Deselect All"
+      "title": "Hledání loga",
+      "description": "Vyberte logo, které chcete hledat, a pojďme je všechny zachytit. Pro každé logo, které anotujete, načteme jeho sousedy, takže možná nikdy nepřestanete anotovat. (Stisknutím shiftu vyberte rozsah log)",
+      "ref_logos": "Referenční loga (logo již anotováno touto hodnotou)",
+      "remaining": "Zbývá anotovat",
+      "select_all": "Vybrat vše",
+      "unselect_all": "Zrušit výběr všeho"
     }
   },
   "settings": {
