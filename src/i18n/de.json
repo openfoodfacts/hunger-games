@@ -207,6 +207,14 @@
     "loading_messages": {
       "pending_reference_logos": "Es werden einige Beispiele für Logos geladen, um die Suche zu starten",
       "failed_reference_logos": "Wir haben keine Logos mit diesem Vermerk gefunden. Versuchen Sie, mit dem folgenden Spiel einige von ihnen zu beschriften."
+    },
+    "deep_search": {
+      "title": "Logos suchen",
+      "description": "Wählen Sie ein Logo aus, nach dem Sie suchen möchten, und los geht's, um sie alle zu erfassen. Für jedes Logo, das Sie mit Anmerkungen versehen, werden wir seine Nachbarn abrufen, so dass Sie vielleicht nie aufhören, Anmerkungen zu machen. (Drücken Sie die Umschalttaste, um einen Bereich von Logos auszuwählen)",
+      "ref_logos": "Referenzlogos (Logo bereits mit diesem Wert vermerkt)",
+      "remaining": "Verbleibend zu kommentieren",
+      "select_all": "Alle auswählen",
+      "unselect_all": "Alles abwählen"
     }
   },
   "settings": {

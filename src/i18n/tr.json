@@ -207,6 +207,14 @@
     "loading_messages": {
       "pending_reference_logos": "Aramayı başlatmak için bazı logo örnekleri yüklüyoruz",
       "failed_reference_logos": "Bu açıklamaya sahip herhangi bir logo bulamadık. Bazılarına açıklama eklemek için aşağıdaki oyunu kullanmayı deneyin."
+    },
+    "deep_search": {
+      "title": "Logo arama",
+      "description": "Select a logo you want to look for, and let's go to catch them all. For every logo you annotate, we will fetch it's neighbors such that you might never stop to annotate. (Press Shift to select range of logos)",
+      "ref_logos": "Referans logoları (logo zaten bu değerle açıklanmıştır)",
+      "remaining": "Açıklama eklemek kaldı",
+      "select_all": "Tümünü Seç",
+      "unselect_all": "Tüm seçimleri kaldır"
     }
   },
   "settings": {

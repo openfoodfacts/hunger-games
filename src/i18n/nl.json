@@ -207,6 +207,14 @@
     "loading_messages": {
       "pending_reference_logos": "We laden enkele voorbeelden van logo's om de zoekopdracht te starten",
       "failed_reference_logos": "We hebben geen logo gevonden met deze annotatie. Probeer het volgende spel te gebruiken om er een paar te annoteren."
+    },
+    "deep_search": {
+      "title": "Logo zoeken",
+      "description": "Select a logo you want to look for, and let's go to catch them all. For every logo you annotate, we will fetch it's neighbors such that you might never stop to annotate. (Press Shift to select range of logos)",
+      "ref_logos": "Referentielogo's (logo al geannoteerd met deze waarde)",
+      "remaining": "Nog te annoteren",
+      "select_all": "Alles selecteren",
+      "unselect_all": "Alles deselecteren"
     }
   },
   "settings": {

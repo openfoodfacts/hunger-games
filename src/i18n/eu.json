@@ -207,6 +207,14 @@
     "loading_messages": {
       "pending_reference_logos": "Logotipoen adibide batzuk kargatzen ari gara bilaketa has dadin",
       "failed_reference_logos": "Ez dugu aurkitu idatzitakoarekin bat egiten duen logorik. Ideiak lortu itzazu hurrengo jokoa erabiltzen."
+    },
+    "deep_search": {
+      "title": "Logotipoaren bilaketa",
+      "description": "Hautatu bilatu nahi duzun logotipoa, eta bildu itzazu guztiak. Jasotzen dituzun logotipo bakoitzarekin, bere auzokideak lortuko ditugu, oharrak hartzeari inoiz utz ez diezaiozun. (Sakatu Shift logotipoen barrutia hautatzeko)",
+      "ref_logos": "Erreferentziako logotipoak (balio honekin jada jasotako logotipoak)",
+      "remaining": "Jasotzeko geratzen direnak",
+      "select_all": "Hautatu denak",
+      "unselect_all": "Desautatu denak"
     }
   },
   "settings": {

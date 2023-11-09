@@ -207,6 +207,14 @@
     "loading_messages": {
       "pending_reference_logos": "Načítáme několik příkladů log pro inicializaci vyhledávání",
       "failed_reference_logos": "Nenašli jsme žádná loga s touto anotací. Zkuste použít následující hru k anotaci některých z nich."
+    },
+    "deep_search": {
+      "title": "Hledání loga",
+      "description": "Vyberte logo, které chcete hledat, a pojďme je všechny zachytit. Pro každé logo, které anotujete, načteme jeho sousedy, takže možná nikdy nepřestanete anotovat. (Stisknutím shiftu vyberte rozsah log)",
+      "ref_logos": "Referenční loga (logo již anotováno touto hodnotou)",
+      "remaining": "Zbývá anotovat",
+      "select_all": "Vybrat vše",
+      "unselect_all": "Zrušit výběr všeho"
     }
   },
   "settings": {
