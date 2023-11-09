@@ -49,7 +49,7 @@ function ProductInterface(props) {
                   return (
                     <Tab
                       key={`${code}-${countryCode}`}
-                      label={`country ${countryCode}`}
+                      label={countryCode ? `country ${countryCode}` : "default"}
                       value={countryCode}
                     />
                   );
@@ -68,7 +68,11 @@ function ProductInterface(props) {
                         maxHeight: "60vh",
                       }}
                     />
-                    <ImageAnnotation fetchDataUrl={fetchDataUrl} />
+                    <p>{typeof code}</p>
+                    <ImageAnnotation
+                      fetchDataUrl={fetchDataUrl}
+                      code={code as string}
+                    />
                   </Stack>
                 </TabPanel>
               );
