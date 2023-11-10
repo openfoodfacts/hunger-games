@@ -68,7 +68,6 @@ function ProductInterface(props) {
                         maxHeight: "60vh",
                       }}
                     />
-                    <p>{typeof code}</p>
                     <ImageAnnotation
                       fetchDataUrl={fetchDataUrl}
                       code={code as string}

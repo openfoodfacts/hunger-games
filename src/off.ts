@@ -116,13 +116,13 @@ const offService = {
             }`;
     },
 
-    searchProducts({ page = 1, pageSize = 25, filters = [] }) {
+    searchProducts({ page = 1, pageSize = 25, filters = [], fields='code', countryCode = 'world' }) {
         const searchParams = {
             page: page.toString(),
             page_size: pageSize.toString(),
             json: 'true',
             action: "process",
-            fields: "code",
+            fields,
         };
         filters.forEach((filterItem, index) => {
             // Expected objects
@@ -134,7 +134,7 @@ const offService = {
         });
 
         const urlParams = new URLSearchParams(searchParams);
-        return axios.get(`${OFF_SEARCH}?${urlParams.toString()}`);
+        return axios.get(`${OFF_SEARCH.replace('worlds.', `${countryCode || 'world'}.`)}?${urlParams.toString()}`);
     },
 
     setIngedrient({ code, lang, text }) {
