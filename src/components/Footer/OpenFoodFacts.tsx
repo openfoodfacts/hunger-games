@@ -24,7 +24,7 @@ const socialMedia = [
   },
 ];
 
-const OpenFoodFacts = () => {
+export default function OpenFoodFacts() {
   const { t } = useTranslation();
   return (
     <Box
@@ -64,6 +64,4 @@ const OpenFoodFacts = () => {
       </Box>
     </Box>
   );
-};
-
-export default OpenFoodFacts;
+}

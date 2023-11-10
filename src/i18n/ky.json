@@ -207,6 +207,14 @@
     "loading_messages": {
       "pending_reference_logos": "We are loading some logos examples to initialise the search",
       "failed_reference_logos": "We did not find any logos with this annotation. Try to use the following game to annotate some of them."
+    },
+    "deep_search": {
+      "title": "Logo search",
+      "description": "Select a logo you want to look for, and let's go to catch them all. For every logo you annotate, we will fetch it's neighbors such that you might never stop to annotate. (Press Shift to select range of logos)",
+      "ref_logos": "Reference logos (logo already annotated with this value)",
+      "remaining": "Remaining to annotate",
+      "select_all": "Select All",
+      "unselect_all": "Deselect All"
     }
   },
   "settings": {

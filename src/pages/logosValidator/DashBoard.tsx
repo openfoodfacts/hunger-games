@@ -16,7 +16,7 @@ interface TabPanelProps {
 }
 
 function TabPanel(props: TabPanelProps) {
-  const { children, value, index, ...other } = props;
+  const { value, index, ...other } = props;
 
   // Keep logos mounted to avoid loading again the number of remaining questions
   const [hasBeenVisible, setHasBeenVisible] = React.useState(value === index);

@@ -102,7 +102,7 @@ export const questionBuffer = createSlice({
             ...questionsToAdd.map((question) => question.insight_id),
           ],
           questions: { ...state.questions, ...newQuestionsObject },
-          fetchCompletted: count < state.page * PAGE_SIZE,
+          fetchCompletted: true,
           numberOfQuestionsAvailable,
         };
       })

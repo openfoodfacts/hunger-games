@@ -73,7 +73,7 @@ const ProductInformation = (props) => {
   }
 
   const splitCountries = (string) => {
-    if (!Boolean(string)) return;
+    if (!string) return;
     let countries = string.split(", ");
     let allCountries = "";
     for (let i = 0; i < countries.length; i++) {

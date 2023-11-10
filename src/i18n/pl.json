@@ -207,6 +207,14 @@
     "loading_messages": {
       "pending_reference_logos": "Ładujemy kilka przykładów logo, aby zainicjować wyszukiwanie",
       "failed_reference_logos": "Nie znaleźliśmy żadnych logo z tą adnotacją. Spróbuj użyć poniższej gry, aby opisać niektóre z nich."
+    },
+    "deep_search": {
+      "title": "Wyszukiwanie logo",
+      "description": "Wybierz logo, którego szukasz i \"złap je wszystkie\". Każde oznaczone logo pobierze kolejne, dzięki czemu zawsze będziesz miał coś do oznaczenia. (Naciśnij Shift, aby wybrać zakres logotypów)",
+      "ref_logos": "Logo referencyjne (logo jest już opatrzone tą wartością)",
+      "remaining": "Pozostałe do oznaczenia",
+      "select_all": "Zaznacz wszystko",
+      "unselect_all": "Odznacz wszystko"
     }
   },
   "settings": {

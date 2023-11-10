@@ -29,13 +29,16 @@ import { useTranslation } from "react-i18next";
 import { useFilterSearch } from "../../components/QuestionFilter/useFilterSearch";
 import LabelFilter from "../../components/QuestionFilter/LabelFilter";
 import brands from "../../assets/brands.json";
+import countries from "../../assets/countries.json";
 import {
-  countryNames,
   insightTypesNames,
   campagnes,
 } from "../../components/QuestionFilter/const";
 import { capitaliseName } from "../../utils";
 import { filterStateSelector, updateFilter } from "./store";
+
+const getCountryObject = (countryId) =>
+  countries.find((country) => country.id === countryId) ?? null;
 
 const getChipsParams = (filterState, setFilterState, t) =>
   [
@@ -128,8 +131,10 @@ export const QuestionFilter = () => {
   const [innerValueTag, setInnerValueTag] = React.useState(
     filterState?.valueTag
   );
-  const [innerCountryFilter, setInnerCountryFilter] = React.useState(
+  const [innerCountryFilter, setInnerCountryFilter] = React.useState(() =>
     filterState?.countryFilter
+      ? getCountryObject(filterState?.countryFilter)
+      : null
   );
   const [innerBrandFilter, setInnerBrandFilter] = React.useState(
     filterState?.brandFilter
@@ -144,7 +149,11 @@ export const QuestionFilter = () => {
   const resetFilter = () => {
     setInnerInsightType(filterState?.insightType);
     setInnerValueTag(filterState?.valueTag);
-    setInnerCountryFilter(filterState?.countryFilter);
+    setInnerCountryFilter(
+      filterState?.countryFilter
+        ? getCountryObject(filterState?.countryFilter)
+        : null
+    );
     setInnerBrandFilter(filterState?.brandFilter);
     setInnerSortByPopularity(filterState?.sortByPopularity);
     setInnerCampaign(filterState?.campaign);
@@ -155,7 +164,7 @@ export const QuestionFilter = () => {
     updateSearchParams({
       insightType: innerInsightType,
       valueTag: innerValueTag,
-      countryFilter: innerCountryFilter,
+      countryFilter: innerCountryFilter.id,
       brandFilter: innerBrandFilter,
       sortByPopularity: innerSortByPopularity,
       campaign: innerCampaign,
@@ -176,11 +185,14 @@ export const QuestionFilter = () => {
         ? filterState?.valueTag
         : prevInnerValueTag
     );
-    setInnerCountryFilter((prevInnerCountryFilter) =>
-      prevInnerCountryFilter !== filterState?.countryFilter
-        ? filterState?.countryFilter
-        : prevInnerCountryFilter
-    );
+    setInnerCountryFilter((prevInnerCountryFilter) => {
+      if (filterState?.countryFilter === "") {
+        return null;
+      }
+      return prevInnerCountryFilter?.id !== filterState?.countryFilter
+        ? getCountryObject(filterState?.countryFilter)
+        : prevInnerCountryFilter;
+    });
     setInnerBrandFilter((prevInnerBrandFilter) =>
       prevInnerBrandFilter !== filterState?.brandFilter
         ? filterState?.brandFilter
@@ -241,7 +253,7 @@ export const QuestionFilter = () => {
 
         <Box sx={{ overflow: "hidden" }}>
           {isDesktop ? (
-            chipsParams.map(({ key, display, label, onDelete }) => (
+            chipsParams.map(({ key, label, onDelete }) => (
               <Chip key={key} label={label} onDelete={onDelete} />
             ))
           ) : (
@@ -323,13 +335,12 @@ export const QuestionFilter = () => {
                 size="small"
               />
             )}
-
             <Autocomplete
-              id="free-solo-demo"
               value={innerCountryFilter}
               onChange={(event, newValue) => setInnerCountryFilter(newValue)}
-              options={countryNames}
-              getOptionLabel={(countryTag) => capitaliseName(countryTag)}
+              options={countries}
+              getOptionLabel={(country) => country.label}
+              isOptionEqualToValue={(country, value) => country.id === value.id}
               renderInput={(params) => (
                 <TextField
                   {...params}
@@ -340,7 +351,6 @@ export const QuestionFilter = () => {
             />
 
             <Autocomplete
-              id="free-solo-demo"
               freeSolo
               value={innerBrandFilter}
               onChange={(event, newValue) => setInnerBrandFilter(newValue)}

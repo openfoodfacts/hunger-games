@@ -87,7 +87,6 @@ const useTranslation = (toTranslate) => {
         })
         .catch(() => {});
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [toTranslate]);
 
   return translation;
@@ -111,7 +110,10 @@ const Opportunities = (props) => {
       .getUnansweredValues({ type, campaign, country, page, count: pageSize })
       .then(({ data }) => {
         if (isValid) {
-          setRemainingQuestions((prev) => [...prev, ...data?.questions]);
+          setRemainingQuestions((prev) => [
+            ...prev,
+            ...(data?.questions ?? []),
+          ]);
           setIsLoading(false);
         }
       })
@@ -125,7 +127,7 @@ const Opportunities = (props) => {
   }, [type, campaign, country, page]);
 
   const translation = useTranslation(
-    remainingQuestions.map(([value, questionNumber]) => value)
+    remainingQuestions.map(([value]) => value)
   );
 
   const lang = getLang();

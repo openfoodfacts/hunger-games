@@ -50,7 +50,7 @@
     "loading": "載入中"
   },
   "questions": {
-    "category": "類別",
+    "category": "分類",
     "categories": "類別",
     "label": "標籤",
     "labels": "標籤",
@@ -180,7 +180,7 @@
     "label": "標籤",
     "brand": "品牌",
     "packager_code": "包裝商代碼",
-    "packaging": "包裝套件",
+    "packaging": "包装",
     "qr_code": "QR 代碼",
     "category": "分類",
     "nutrition_label": "營養標示貼標",
@@ -207,6 +207,14 @@
     "loading_messages": {
       "pending_reference_logos": "We are loading some logos examples to initialise the search",
       "failed_reference_logos": "We did not find any logos with this annotation. Try to use the following game to annotate some of them."
+    },
+    "deep_search": {
+      "title": "Logo search",
+      "description": "Select a logo you want to look for, and let's go to catch them all. For every logo you annotate, we will fetch it's neighbors such that you might never stop to annotate. (Press Shift to select range of logos)",
+      "ref_logos": "Reference logos (logo already annotated with this value)",
+      "remaining": "Remaining to annotate",
+      "select_all": "Select All",
+      "unselect_all": "Deselect All"
     }
   },
   "settings": {
@@ -229,12 +237,12 @@
       "subscribe_to_our": "Subscribe to our ",
       "newsletter": "newsletter"
     },
-    "discover_the_project": "探索專案",
+    "discover_the_project": "探索項目",
     "Who_we_are": "我們是誰",
     "Vision_Mission_Values_and_Programs": "Vision, Mission, Values and Programs",
     "FAQS": "FAQS",
     "open_Food_Facts_blog": "Open Food Facts blog",
-    "Press": "投稿",
+    "Press": "傳媒",
     "Open_Food_Facts_wiki": "Open Food Facts wiki (en)",
     "Translators": "翻譯員",
     "Partners": "合作伙伴",
@@ -329,7 +337,7 @@
     "value": "值",
     "unit": "單位",
     "nutriments": {
-      "nutriment_energy-kj": "Energy (kJ)",
+      "nutriment_energy-kj": "能量（kJ）",
       "nutriment_energy-kcal": "Energy (kCal)",
       "nutriment_fat": "脂肪",
       "nutriment_saturated-fat": "飽和脂肪",

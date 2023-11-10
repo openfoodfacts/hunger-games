@@ -1,3 +1,4 @@
+import * as React from "react";
 import Dialog from "@mui/material/Dialog";
 import DialogContent from "@mui/material/DialogContent";
 import DialogActions from "@mui/material/DialogActions";
@@ -54,6 +55,7 @@ const AnnotateLogoModal = (props) => {
         logos.filter((logo) => logo.selected),
         { value, type }
       );
+      // eslint-disable-next-line no-empty
     } catch {}
   };
   return (

@@ -48,6 +48,7 @@ const LogoQuestionValidator = React.lazy(() =>
 const DashBoard = React.lazy(() => import("./pages/logosValidator/DashBoard"));
 const GalaBoard = React.lazy(() => import("./pages/GalaPage"));
 const IngredientPage = React.lazy(() => import("./pages/ingredients"));
+const Brandinator = React.lazy(() => import("./pages/Brandinator"));
 
 // OFF colors
 const latte = "#F6F3F0";
@@ -302,6 +303,7 @@ export default function App() {
                   }
                 />
 
+                <Route path="/brandinator" element={<Brandinator />} />
                 <Route path="/settings" element={<SettingsPage />} />
                 <Route path="/questions" element={<QuestionsPage />} />
                 <Route path="/insights" element={<InsightsPage />} />

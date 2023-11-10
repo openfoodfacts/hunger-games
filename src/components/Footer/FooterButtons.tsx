@@ -1,8 +1,19 @@
 import { Button, IconButton, Typography } from "@mui/material";
 import { Stack } from "@mui/system";
 
-const FooterButtons = (props) => {
-  const { title, subTitle, icon, url } = props;
+type FooterButtonsProps = {
+  title: string;
+  subTitle: string;
+  icon: React.ReactNode;
+  url: string;
+};
+
+export default function FooterButtons({
+  title,
+  subTitle,
+  icon,
+  url,
+}: FooterButtonsProps) {
   return (
     <Button
       href={url}
@@ -27,6 +38,4 @@ const FooterButtons = (props) => {
       </Stack>
     </Button>
   );
-};
-
-export default FooterButtons;
+}

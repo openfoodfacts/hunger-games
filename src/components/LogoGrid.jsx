@@ -22,6 +22,7 @@ import robotoff from "../robotoff";
 
 const externalLogoURL = (id) => `/logos?logo_id=${id}&count=50`;
 
+// eslint-disable-next-line react/display-name
 const LogoCard = React.memo(
   ({
     selected,
@@ -206,7 +207,7 @@ const LogoGrid = (props) => {
       singleSelection: (index, id, selected) => {
         toggleLogoSelection(id);
         if (setLogoSelectionRange !== undefined) {
-          setLastClicked((prev) => ({ selected: !selected, index }));
+          setLastClicked({ selected: !selected, index });
         }
       },
     };

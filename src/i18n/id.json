@@ -139,7 +139,7 @@
   },
   "insights": {
     "insights": "Wawasan",
-    "barcode": "kode batang",
+    "barcode": "Kode batang",
     "barcode_placeholder": "kode batangan",
     "value_tag": "Label nilai",
     "value_placeholder": "cth: en:mueslis, bjorg,...",
@@ -207,6 +207,14 @@
     "loading_messages": {
       "pending_reference_logos": "Kami memuat beberapa contoh logo untuk menginisialisasi pencarian",
       "failed_reference_logos": "Kami tidak menemukan logo apa pun dengan anotasi ini. Coba gunakan permainan berikut ini untuk membuat anotasi beberapa di antaranya."
+    },
+    "deep_search": {
+      "title": "Logo search",
+      "description": "Select a logo you want to look for, and let's go to catch them all. For every logo you annotate, we will fetch it's neighbors such that you might never stop to annotate. (Press Shift to select range of logos)",
+      "ref_logos": "Reference logos (logo already annotated with this value)",
+      "remaining": "Remaining to annotate",
+      "select_all": "Select All",
+      "unselect_all": "Deselect All"
     }
   },
   "settings": {

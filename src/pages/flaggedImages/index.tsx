@@ -69,7 +69,6 @@ export default function FlaggedImages() {
                   <IconButton
                     onClick={() => {
                       axios.delete(flagImageUrl + code, {
-                        mode: "no-cors",
                         data: {
                           imgid,
                         },

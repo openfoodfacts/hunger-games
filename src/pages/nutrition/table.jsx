@@ -13,8 +13,8 @@ import TableRowComp from "./tableRow";
 
 export default function NutritionTable({
   nutriments,
-  setNutriments,
-  additionalNutriments,
+  // setNutriments,
+  // additionalNutriments,
   deleteItem,
   onchangeHandler,
 }) {

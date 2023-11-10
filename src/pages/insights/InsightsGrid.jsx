@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import { DataGrid, GridToolbar, GridActionsCellItem } from "@mui/x-data-grid";
+import { DataGrid, GridActionsCellItem } from "@mui/x-data-grid";
 
 import EditIcon from "@mui/icons-material/Edit";
 import VisibilityIcon from "@mui/icons-material/Visibility";
@@ -23,7 +23,7 @@ const RenderLink = (props) => {
   const { value, ...other } = props;
   return (
     <Link component="button" {...other}>
-      {props.value}
+      {value}
     </Link>
   );
 };
@@ -128,28 +128,32 @@ const InsightGrid = ({ filterState = {}, setFilterState }) => {
       {
         field: "actions",
         type: "actions",
-        getActions: (params) => [
-          <GridActionsCellItem
-            component="a"
-            href={getProductEditUrl(params.row.barcode)}
-            label={t("insights.edit_product")}
-            icon={
-              <Tooltip title={t("insights.edit_product")}>
-                <EditIcon />
-              </Tooltip>
-            }
-          />,
-          <GridActionsCellItem
-            component="a"
-            href={getProductUrl(params.row.barcode)}
-            label={t("insights.view_product")}
-            icon={
-              <Tooltip title={t("insights.view_product")}>
-                <VisibilityIcon />
-              </Tooltip>
-            }
-          />,
-        ],
+        getActions: (params) => (
+          <React.Fragment>
+            <GridActionsCellItem
+              component="a"
+              href={getProductEditUrl(params.row.barcode)}
+              label={t("insights.edit_product")}
+              icon={
+                <Tooltip title={t("insights.edit_product")}>
+                  <EditIcon />
+                </Tooltip>
+              }
+            />
+            ,
+            <GridActionsCellItem
+              component="a"
+              href={getProductUrl(params.row.barcode)}
+              label={t("insights.view_product")}
+              icon={
+                <Tooltip title={t("insights.view_product")}>
+                  <VisibilityIcon />
+                </Tooltip>
+              }
+            />
+            ,
+          </React.Fragment>
+        ),
       },
       {
         field: "type",
@@ -276,18 +280,10 @@ const InsightGrid = ({ filterState = {}, setFilterState }) => {
       columns={columns}
       rows={rows}
       disableColumnFilter
-      disableCol
-      componentsProps={{
-        toolbar: {
-          printOptions: { disableToolbarButton: true },
-          csvOptions: { disableToolbarButton: true },
-        },
-      }}
-      components={{ Toolbar: GridToolbar }}
       isLoading={isLoading}
       page={pageState.page - 1}
       pageSize={PAGE_SIZE}
-      rowsPerPageOptions={[PAGE_SIZE]}
+      pageSizeOptions={[PAGE_SIZE]}
       onPageChange={(page) =>
         setPageState((prev) => ({ ...prev, page: page + 1 }))
       }

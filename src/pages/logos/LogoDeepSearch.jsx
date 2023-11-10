@@ -83,6 +83,8 @@ const FailedReferecnceLogos = ({ type, value }) => {
 };
 
 export default function LogoSearch() {
+  const { t } = useTranslation();
+
   const [annotatedLogos, setAnnotatedLogos] = React.useState([]);
   const [logosToAnnotate, setLogosToAnnotate] = React.useState([]);
   // TODO: allows to fetch more when reaching data limit
@@ -128,6 +130,7 @@ export default function LogoSearch() {
               .map(transformLogo),
           ];
         });
+        // eslint-disable-next-line no-empty
       } catch (error) {}
     };
 
@@ -285,7 +288,7 @@ export default function LogoSearch() {
   };
 
   const removeSelectedLogos = () => {
-    setLogosToAnnotate((prev) => prev.filter((logo, index) => !logo.selected));
+    setLogosToAnnotate((prev) => prev.filter((logo) => !logo.selected));
   };
 
   const [isAnnotationOpen, setIsAnnotationOpen] = React.useState(false);
@@ -309,20 +312,16 @@ export default function LogoSearch() {
     <React.Suspense fallback={<Loader />}>
       <Box sx={{ padding: 2 }}>
         <Typography variant="h4" sx={{ mb: 2 }}>
-          Logo search
+          {t("logos.deep_search.title")}
         </Typography>
         <Typography variant="body1">
-          Select a logo you want to look for, and let's go to catch them all.
-          For every logo you annotate, we will fetch it's neighbors such that
-          you might never stop to annotate. (Press Shift to select range of
-          logos)
+          {t("logos.deep_search.description")}
         </Typography>
         <Divider sx={{ my: 3 }} />
         <LogoForm {...searchState} request={setNewSearchState} />
-        {/* {isLoading && <LinearProgress sx={{ mt: 5 }} />} */}
 
         <Typography variant="h5" sx={{ mt: 5, mb: 1 }}>
-          Reference logos (logo already annotated with this value)
+          {t("logos.deep_search.ref_logos")}
         </Typography>
 
         {isLoadingAnnotatedLogos ? (
@@ -342,21 +341,21 @@ export default function LogoSearch() {
 
         <Box sx={{ display: "flex", flexDirection: "row", gap: 1 }}>
           <Typography variant="h5" sx={{ mt: 5, mb: 1 }}>
-            Remaining to annotate
+            {t("logos.deep_search.remaining")}
           </Typography>
           <Button
             onClick={selectAllOnPage}
             variant="contained"
             sx={{ ml: "auto", maxHeight: 40, mt: "40px", mb: "8px" }} // to align with "Remaining to annotate"
           >
-            Select All
+            {t("logos.deep_search.select_all")}
           </Button>
           <Button
             onClick={deselectAll}
             variant="contained"
             sx={{ maxHeight: 40, mt: "40px", mb: "8px" }}
           >
-            Deselect All
+            {t("logos.deep_search.unselect_all")}
           </Button>
         </Box>
 
