@@ -76,7 +76,9 @@ export default function useData(): [any[], () => void, boolean] {
   const [data, setData] = React.useState([]);
   const [isLoading, setIsLoading] = React.useState(true);
   const [page, setPage] = React.useState(() => {
-    return new Date().getMilliseconds() % 50;
+    return 0;
+    // Seems that API fails for large page number
+    //return new Date().getMilliseconds() % 50;
   });
   const seenCodes = React.useRef([]);
 
