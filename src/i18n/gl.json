@@ -209,12 +209,12 @@
       "failed_reference_logos": "Non atopamos ningún logotipo con esta anotación. Tenta utilizar o seguinte xogo para anotar algúns deles."
     },
     "deep_search": {
-      "title": "Logo search",
-      "description": "Select a logo you want to look for, and let's go to catch them all. For every logo you annotate, we will fetch it's neighbors such that you might never stop to annotate. (Press Shift to select range of logos)",
-      "ref_logos": "Reference logos (logo already annotated with this value)",
-      "remaining": "Remaining to annotate",
-      "select_all": "Select All",
-      "unselect_all": "Deselect All"
+      "title": "Busca de logotipos",
+      "description": "Selecciona un logotipo que queiras buscar e imos facernos con todos. Por cada logotipo que anotes, buscaremos os seus veciños para que nunca deixes de anotar. (Preme Maiúsculas para seleccionar o rango de logotipos)",
+      "ref_logos": "Referencia de logotipo (logotipo xa anotado con este valor)",
+      "remaining": "Queda por anotar",
+      "select_all": "Seleccionar todo",
+      "unselect_all": "Desmarcar todo"
     }
   },
   "settings": {
@@ -262,77 +262,77 @@
         "text1": "Pertence o produto alimentario a esta marca?",
         "text2": "Simplemente responde cun <strong>Si/Non</strong>! Non sabes a resposta? Está ben, só omítea.",
         "text3": "Tamén podes usar os teus atallos de teclado: y, n e k.",
-        "text4": "You can <strong>filter</strong> the products based on country, brands, popularity and much more!",
-        "text5": "If you don't want to do this every single time, you can also <strong>save the filters</strong> by clicking on the star. Next time you come back, find the saved filters on the home page itself"
+        "text4": "Podes <strong>filtrar</strong> os produtos en función do país, marcas, popularidade e moito máis!",
+        "text5": "Se non queres facelo cada vez, tamén podes <strong>gardar os filtros</strong> facendo clic na estrela. A próxima vez que volvas, busca os filtros gardados na propia páxina de inicio"
       },
       "page3": {
-        "title": "Logos Game",
-        "text1": "Another popular game is the logos game where you have to <strong>select all the logos</strong> you feel are the same.",
-        "text2": "As shown in the example, once you select all the similar logos, just type their value and select where it is a brand, a label or something else. It's that simple!"
+        "title": "Xogo de Logos",
+        "text1": "Outro xogo popular é o xogo de logotipos onde tes que <strong>seleccionar todos os logotipos</strong> que creas que son iguais.",
+        "text2": "Como se mostra no exemplo, unha vez que selecciones todos os logotipos similares, só tes que escribir o seu valor e seleccionar onde é unha marca, unha etiqueta ou outra cousa. Así de sinxelo!"
       },
       "page4": {
-        "title": "Eco-Score Questions Game",
-        "text1": "Help us finish the remaining questions in the most high priority labels!",
-        "text2": "These cards are linked to labels used in the computation of the Eco-Score.",
-        "text3": "<strong>What is Eco-Score?</strong>",
-        "text4": "Eco-Score captures the total environmental footprint, making it easier for consumers to compare products and decide which is better for the environment."
+        "title": "Xogo de preguntas de puntuación ecolóxica",
+        "text1": "Axúdanos a rematar as preguntas restantes nas etiquetas de maior prioridade!",
+        "text2": "Estas tarxetas están ligadas a etiquetas utilizadas no cálculo do Eco-Score.",
+        "text3": "<strong>Que é o Eco-Score?</strong>",
+        "text4": "Eco-Score recolle a pegada ambiental total, facilitando aos consumidores comparar produtos e decidir cal é mellor para o medio ambiente."
       },
       "page5": {
         "title": "Axustes",
-        "text1": "Set your preferred language, and report issues from our settings page.",
-        "text2": "If you're a developer, you can also explore our database content using our dev mode."
+        "text1": "Establece o teu idioma preferido e informa de problemas desde a nosa páxina de configuración.",
+        "text2": "Se es un programador, tamén podes explorar o contido da nosa base de datos usando o noso modo de desenvolvemento."
       },
       "page6": {
-        "title": "Tour",
-        "text1": "Got stuck somewhere? Want to take the tour again?",
-        "text2": "Just click on the question mark and start the journey again!"
+        "title": "Percorrido",
+        "text1": "Quedaches atascado nalgún lugar? Queres facer o percorrido de novo?",
+        "text2": "Só tes que facer clic no signo de interrogación e comezar a viaxe de novo!"
       }
     },
     "logos": {
       "page1": {
-        "title": "Selection",
-        "text1": "Select the crops of a same logo by clicking on them",
-        "text2": "Selected logos go to the top of the page, you can unselect them by clicking again on them"
+        "title": "Selección",
+        "text1": "Seleccione os recortes dun mesmo logotipo facendo clic neles",
+        "text2": "Os logotipos seleccionados van á parte superior da páxina, podes anular a selección premendo de novo neles"
       },
       "page2": {
         "title": "Aviso",
-        "text1": "If the crop contains multiple logos, do not select it.",
-        "text2": "If the crop contains only a partial part of a logo, you can select it."
+        "text1": "Se o recorte contén varios logotipos, non o seleccione.",
+        "text2": "Se o recorte contén só unha parte parcial dun logotipo, podes seleccionalo."
       },
       "page3": {
-        "title": "Validate",
-        "text1": "Indicate the type of logo (label, brand, QRcode, ...)",
-        "text2": "If it is a label or a brand logo, indicate which one it is",
-        "text3": "Now you can submit your selection",
-        "text4": "Thank you :)"
+        "title": "Validar",
+        "text1": "Indique o tipo de logotipo (etiqueta, marca, QRcode,...)",
+        "text2": "Se é unha etiqueta ou un logotipo de marca, indica cal é",
+        "text3": "Agora podes enviar a túa selección",
+        "text4": "Grazas :)"
       }
     },
-    "previous": "Prev",
-    "next": "Next",
+    "previous": "Anterior",
+    "next": "Seguinte",
     "close": "Pechar"
   },
   "nutrition": {
     "instructions": {
-      "cropTheTable": "Crop the image to simplify your annotation",
-      "verifyNutrimentDetected": "Indicate if the nutriment detected is correct",
-      "selectMissingNutriments": "Add missing nutriments (you can click even if the word has no box)",
-      "selectValue": "Select the nutritional value of: "
+      "cropTheTable": "Recorta a imaxe para simplificar a túa anotación",
+      "verifyNutrimentDetected": "Indica se o nutriente detectado é correcto",
+      "selectMissingNutriments": "Engade os nutrimentos que faltan (podes facer clic aínda que a palabra non teña caixa)",
+      "selectValue": "Seleccione o valor nutricional de: "
     },
     "steps": {
-      "1": "Crop",
-      "2": "Special values",
-      "3": "Nutriments Selection",
-      "4": "Values Selection"
+      "1": "Recortar",
+      "2": "Valores especiais",
+      "3": "Selección de nutrientes",
+      "4": "Selección de valores"
     },
-    "loading": "Loading...",
-    "unknown_brand": "Brand Unknown",
-    "value_missing": "You forgot to input a value.",
-    "next": "Next step",
-    "prev": "Prev step",
-    "skip": "Skip this product",
-    "validate": "Validate Table",
-    "unselect_picture": "No nutrition info",
-    "basis": "data for: ",
+    "loading": "Cargando...",
+    "unknown_brand": "Marca descoñecida",
+    "value_missing": "Esqueciches introducir un valor.",
+    "next": "Seguinte paso",
+    "prev": "Paso anterior",
+    "skip": "Omita este produto",
+    "validate": "Validar a táboa",
+    "unselect_picture": "Sen información nutricional",
+    "basis": "datos para: ",
     "servingSize": "serving size",
     "value": "Valor",
     "unit": "Unit",
