@@ -183,7 +183,7 @@
     "packaging": "Envase",
     "qr_code": "Código QR",
     "category": "Categoría",
-    "nutrition_label": "Tabla Nutricional",
+    "nutrition_label": "Etiqueta nutricional",
     "no_logo": "No es un logotipo",
     "store": "Tienda",
     "detail": "Detalle del logotipo",
@@ -199,13 +199,13 @@
     "search_specific": "Buscar logotipo específico",
     "load_more": "Carga más",
     "no_results": "Logotipo no encontrado",
-    "result_count": "Muestra {{showing}} en {{available}} disponible",
+    "result_count": "Muestra {{showing}} de {{available}} disponibles",
     "flag": "¿Algo va mal? ¡Informa o marca la imagen!",
     "unflag": "Desmarcar la imagen",
-    "crop_image_title": "recorte del logo",
-    "no_more_questions": "No hay más preguntas sobre este logo. Puedes intentar encontrar más logos con el siguiente juego.",
+    "crop_image_title": "recorte del logotipo",
+    "no_more_questions": "No hay más preguntas sobre este logotipo. Puedes intentar encontrar más logotipos en el siguiente juego.",
     "loading_messages": {
-      "pending_reference_logos": "Estamos cargando algunos ejemplos de logos para inicializar la búsqueda",
+      "pending_reference_logos": "Estamos cargando algunos ejemplos de logotipos para inicializar la búsqueda",
       "failed_reference_logos": "No hemos encontrado ningún logotipo con esta anotación. Intenta usar el siguiente juego para anotar algunos de ellos."
     },
     "deep_search": {
