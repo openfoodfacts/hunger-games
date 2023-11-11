@@ -26,7 +26,7 @@
     "saved_filters": "Filtros guardados",
     "contribution_modal": {
       "title": "Tu contribución importa",
-      "information": "Hunger Games es un intento de aprovechar los resultados de nuestro ROC (Reconocimiento Óptico de Caracteres) y la inteligencia artificial. Cuando usas Hunger Games de Open Food Facts, estás contribuyendo a mejorar nuestra base de datos completa, lo cual ayuda a que la comunidad tome mejores decisiones al elegir su comida. Recopilamos tus anotaciones y las utilizamos para hacer que Open Food Facts sea más preciso y eficiente.",
+      "information": "Los Juegos del Hambre es un esfuerzo de aprovechar los resultados de nuestro OCR (Reconocimiento óptico de caracteres) y la inteligencia artificial. Cuando usas Los Juegos del Hambre de Open Food Facts, estás contribuyendo a mejorar toda nuestra base de datos, lo cual ayuda a que la comunidad tome mejores decisiones a la hora de elegir lo que come. Recopilamos tus anotaciones y las utilizamos para hacer que Open Food Facts sea más exacto y eficaz.",
       "thank_you": "Gracias por ayudarnos a mejorar Open Food Facts para que más personas puedan usarlo con facilidad."
     },
     "statistics": {
@@ -56,22 +56,22 @@
     "labels": "Etiquetas",
     "brand": "marca",
     "brands": "Marcas",
-    "packaging": "envases",
+    "packaging": "envase",
     "quantity": "Cantidad",
     "insightTypeLabel": "Solo mostrar",
     "ingredients": "Ingredientes",
     "product_weight": "peso del producto",
     "popularity_sort": "Ordenar por popularidad",
-    "see_examples": "Ver ejemplos de esto ",
+    "see_examples": "Ve ejemplos de esta",
     "no": "No",
-    "skip": "Omitir",
+    "skip": "Saltar",
     "yes": "Sí",
     "no_questions_remaining": "No quedan preguntas",
     "countries": "Países",
     "view": "Ver",
     "edit": "Editar",
     "hide_images": "Ocultar imágenes (carga más rápida)",
-    "display_images": "Mostrar imagen",
+    "display_images": "Mostrar imágenes",
     "annotations": "Anotaciones",
     "last_annotations": "Últimas anotaciones",
     "remaining_annotations": "Preguntas restantes",
@@ -79,7 +79,7 @@
     "filters": {
       "active_filter_number": "+{{count}} filtros",
       "active_filter_number_one": "+{{count}} filtro",
-      "active_filter_number_zero": "Sin filtro",
+      "active_filter_number_zero": "sin filtros",
       "short_label": {
         "value": "valor",
         "country": "país",
@@ -97,8 +97,8 @@
         "campaign": "Campaña"
       },
       "placeholders": {
-        "value": "Valor (Fanta, es: orgánico,...)",
-        "brand": "Auchan, Danone, Herta,...",
+        "value": "Valor (Fanta, es:orgánico,...)",
+        "brand": "Hacendado, Danone, Campofrío,...",
         "campaign": "Campañas de anotación"
       },
       "actions": {
@@ -115,7 +115,7 @@
     "log_in": "Inicio de sesión",
     "sign_up": "Registrarse",
     "login_title": "Haz que tu anotación cuente",
-    "login_description": "Actualmente no has iniciado sesión en Open Food Facts. Para obtener tus respuestas directamente aplicadas a los productos, y asociadas a tu cuenta, considera iniciar sesión en tu cuenta de Open Food Facts o simplemente crear una",
+    "login_description": "No has iniciado sesión en Open Food Facts. Para que tus respuestas se apliquen directamente a los productos, y queden asociadas a tu cuenta, iniciar sesión en Open Food Facts, o crea una cuenta",
     "please_wait_while_we_fetch_the_question": "¡Espera mientras buscamos la pregunta!"
   },
   "menu": {
@@ -133,7 +133,7 @@
     "settings": "Configuración",
     "eco-score": "Eco-Score",
     "dashboard": "Panel de logotipos",
-    "tour": "Mostrar recorrido",
+    "tour": "Mostrar tutorial",
     "logged_in_user": "Sesión iniciada como {{userName}}",
     "log_in": "Clic para iniciar sesión"
   },
@@ -141,8 +141,8 @@
     "insights": "Percepciones",
     "barcode": "Código de barras",
     "barcode_placeholder": "código de barras",
-    "value_tag": "Etiqueta valor",
-    "value_placeholder": "ej: en:mueslis, bjorg,...",
+    "value_tag": "Valor de etiqueta",
+    "value_placeholder": "ej: es:muesli, ecocesta,...",
     "type": "Tipo",
     "annotated": "Anotado",
     "annotation": "Notas",
@@ -261,9 +261,9 @@
         "title": "Juego de preguntas",
         "text1": "¿El producto alimenticio pertenece a esta marca?",
         "text2": "¡Simplemente responde con un <strong>sí</strong> o un <strong>no</strong>! ¿No sabes la respuesta? No te preocupes, puedes pasar a la siguiente.",
-        "text3": "También puedes utilizar los atajos de teclado: y,n y k.",
+        "text3": "También puedes utilizar los atajos de teclado: «y»,«n» y «k».",
         "text4": "¡Puedes <strong>filtrar</strong> los productos según el país, la marca, su popularidad y mucho más!",
-        "text5": "Si no desea hacer esto cada vez, puede <strong>guardar los filtros</strong> cliqueando en la estrella. La próxima vez que regrese, encontrará los filtros guardados en la página de inicio"
+        "text5": "Si no deseas hacer volver a hacer esto, puedes <strong>guardar los filtros</strong> haciendo clic en la estrella. La próxima vez que regreses, encontrarás los filtros guardados en la página de inicio"
       },
       "page3": {
         "title": "Juego de los logotipos",
@@ -283,7 +283,7 @@
         "text2": "Si eres desarrollador, también puedes explorar el contenido de nuestra base de datos utilizando nuestro modo de desarrollador."
       },
       "page6": {
-        "title": "Visita guiada",
+        "title": "Tutorial",
         "text1": "¿Te has atascado en alguna parte? ¿Quieres volver a hacer el tour?",
         "text2": "¡Haz clic en la interrogación y comienza el viaje de nuevo!"
       }
@@ -295,14 +295,14 @@
         "text2": "Los logotipos seleccionados van a la parte superior de la página, puedes deshacer la selección haciendo clic de nuevo sobre ellos"
       },
       "page2": {
-        "title": "Atención",
+        "title": "Aviso",
         "text1": "Si el recorte contiene varios logotipos, no lo selecciones.",
         "text2": "Si el recorte contiene sólo una parte parcial de un logotipo, puedes seleccionarlo."
       },
       "page3": {
         "title": "Validar",
-        "text1": "Indicar el tipo de logotipo (etiqueta, marca, código QR, ...)",
-        "text2": "Si es una etiqueta o un logo de marca, indica cuál es",
+        "text1": "Indica el tipo de logotipo (etiqueta, marca, código QR, ...)",
+        "text2": "Si es una etiqueta o un logotipo de marca, indica cuál es",
         "text3": "Ahora puedes enviar tu selección",
         "text4": "Gracias :)"
       }
@@ -315,7 +315,7 @@
     "instructions": {
       "cropTheTable": "Recorta la imagen para simplificar tu anotación",
       "verifyNutrimentDetected": "Indica si el nutriente detectado es correcto",
-      "selectMissingNutriments": "Añadir los nutrientes faltantes (puedes hacer clic incluso si la palabra no tiene ningún recuadro)",
+      "selectMissingNutriments": "Añade los nutrientes que faltan (puedes hacer clic incluso si la palabra no tiene ningún recuadro)",
       "selectValue": "Selecciona el valor nutricional de: "
     },
     "steps": {
