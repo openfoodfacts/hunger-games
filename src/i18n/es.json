@@ -1,15 +1,15 @@
 {
   "home": {
     "game_selector": {
-      "title": "¿Qué juego gustarías jugar?",
+      "title": "¿A qué juego te gustaría jugar?",
       "cards": {
         "questions": {
           "title": "Preguntas",
-          "description": "Díganos si la imagen dada contesta las preguntas"
+          "description": "Dinos si la imagen dada responde a las preguntas"
         },
         "logos": {
           "title": "Logotipo",
-          "description": "Encuentra todos los logos que coincidan con el logotipo dado"
+          "description": "Encuentra todos los logotipos que coincidan con el logotipo indicado"
         },
         "eco_score": {
           "title": "Eco-Score",
@@ -18,19 +18,19 @@
       }
     },
     "account_band": {
-      "title": "¿Quieres que tu contribución cuente? ¡Cree una cuenta o inicie sesión en Open Food Facts!",
+      "title": "¿Quieres que tu contribución cuente? ¡Crea una cuenta o inicia sesión en Open Food Facts!",
       "log_in": "Usuario",
       "sign_up": "Registrarse",
-      "contribution_details": "Descubra por qué su contribución es importante"
+      "contribution_details": "Descubre por qué tu contribución es importante"
     },
-    "saved_filters": "Filtros Guardados",
+    "saved_filters": "Filtros guardados",
     "contribution_modal": {
-      "title": "Tu aporte importa",
+      "title": "Tu contribución importa",
       "information": "Hunger Games es un intento de aprovechar los resultados de nuestro ROC (Reconocimiento Óptico de Caracteres) y la inteligencia artificial. Cuando usas Hunger Games de Open Food Facts, estás contribuyendo a mejorar nuestra base de datos completa, lo cual ayuda a que la comunidad tome mejores decisiones al elegir su comida. Recopilamos tus anotaciones y las utilizamos para hacer que Open Food Facts sea más preciso y eficiente.",
-      "thank_you": "Gracias por ayudarnos a mejorar Open Food Facts para que más personas puedan usarlo fácilmente."
+      "thank_you": "Gracias por ayudarnos a mejorar Open Food Facts para que más personas puedan usarlo con facilidad."
     },
     "statistics": {
-      "title": "{{userName}} estadísticas:",
+      "title": "Estadísticas de {{userName}}:",
       "editorCount": {
         "title": "Editor",
         "description": "Número de ediciones realizadas"
@@ -41,12 +41,12 @@
       },
       "photographerCount": {
         "title": "Fotógrafo",
-        "description": "Tomar fotos de un producto"
+        "description": "Hacer fotos de un producto"
       }
     }
   },
   "flagged_images": {
-    "title": "Imágenes marcadas por los usuarios",
+    "title": "Imágenes señaladas por los usuarios",
     "loading": "Cargando"
   },
   "questions": {
@@ -73,7 +73,7 @@
     "hide_images": "Ocultar imágenes (carga más rápida)",
     "display_images": "Mostrar imagen",
     "annotations": "Anotaciones",
-    "last_annotations": "Últimas notas",
+    "last_annotations": "Últimas anotaciones",
     "remaining_annotations": "Preguntas restantes",
     "annotated_annotations": "Anotado",
     "filters": {
@@ -85,7 +85,7 @@
         "country": "país",
         "brand": "marca",
         "popularity": "popularidad",
-        "campaign": "campamento"
+        "campaign": "camp."
       },
       "long_label": {
         "type": "Tipo de pregunta",
@@ -99,7 +99,7 @@
       "placeholders": {
         "value": "Valor (Fanta, es: orgánico,...)",
         "brand": "Auchan, Danone, Herta,...",
-        "campaign": "Campañas de notificación"
+        "campaign": "Campañas de anotación"
       },
       "actions": {
         "edit": "Editar filtros",
@@ -109,14 +109,14 @@
     },
     "other_questions": "Otras preguntas",
     "send": "Enviar",
-    "flag": "¿Algo mal? ¡Reporta o marca la imagen!",
+    "flag": "¿Algo va mal? ¡Informa o marca la imagen!",
     "unflag": "Desmarcar la imagen",
     "reset_filters": "Restablecer filtros",
     "log_in": "Usuario",
     "sign_up": "Registrarse",
     "login_title": "Haz que tu anotación cuente",
     "login_description": "Actualmente no has iniciado sesión en Open Food Facts. Para obtener tus respuestas directamente aplicadas a los productos, y asociadas a tu cuenta, considera iniciar sesión en tu cuenta de Open Food Facts o simplemente crear una",
-    "please_wait_while_we_fetch_the_question": "¡Espere mientras buscamos la pregunta!"
+    "please_wait_while_we_fetch_the_question": "¡Espera mientras buscamos la pregunta!"
   },
   "menu": {
     "title": "Juegos del Hambre",
@@ -132,7 +132,7 @@
     "nutritions": "Información nutricional",
     "settings": "Configuración",
     "eco-score": "Eco-Score",
-    "dashboard": "Panel de Logos",
+    "dashboard": "Panel de logotipos",
     "tour": "Mostrar recorrido",
     "logged_in_user": "Sesión iniciada como {{userName}}",
     "log_in": "Clic para iniciar sesión"
@@ -146,7 +146,7 @@
     "type": "Tipo",
     "annotated": "Anotado",
     "annotation": "Notas",
-    "not_annotated": "No anotado",
+    "not_annotated": "Sin anotar",
     "all": "Todo",
     "label": "Etiqueta",
     "product_weight": "Peso del producto",
@@ -170,7 +170,7 @@
   "logos": {
     "annotation": "Anotación: ",
     "annotations": "Anotaciones de logotipo",
-    "task_description": "Seleccione todos los logotipos que sean exactamente iguales y asígneles un nombre como \"en:EU Organic\" y un tipo como \"label\".",
+    "task_description": "Seleccione todos los logotipos que sean exactamente iguales y asígneles un nombre como «es:EU Organic» y un tipo como «etiqueta».",
     "select_all": "Seleccionar todo",
     "unselect_all": "Deseleccionar todo",
     "distance": "Distancia:",
@@ -191,16 +191,16 @@
     "barcode": "Código de barras:",
     "full_image": "Imagen completa",
     "update": "Actualizar",
-    "no_found": "Ningún logo encontrado",
+    "no_found": "Logotipo no encontrado",
     "search": "Buscar",
     "number_of_results": "Número de resultados:",
     "loading": "Cargando…",
     "refresh": "Actualizar",
     "search_specific": "Buscar logotipo específico",
     "load_more": "Carga más",
-    "no_results": "Ningún logo encontrado",
+    "no_results": "Logotipo no encontrado",
     "result_count": "Muestra {{showing}} en {{available}} disponible",
-    "flag": "¿Algo mal? ¡Reporta o marca la imagen!",
+    "flag": "¿Algo va mal? ¡Informa o marca la imagen!",
     "unflag": "Desmarcar la imagen",
     "crop_image_title": "recorte del logo",
     "no_more_questions": "No hay más preguntas sobre este logo. Puedes intentar encontrar más logos con el siguiente juego.",
@@ -209,12 +209,12 @@
       "failed_reference_logos": "No hemos encontrado ningún logotipo con esta anotación. Intenta usar el siguiente juego para anotar algunos de ellos."
     },
     "deep_search": {
-      "title": "Logo search",
-      "description": "Select a logo you want to look for, and let's go to catch them all. For every logo you annotate, we will fetch it's neighbors such that you might never stop to annotate. (Press Shift to select range of logos)",
-      "ref_logos": "Reference logos (logo already annotated with this value)",
-      "remaining": "Remaining to annotate",
-      "select_all": "Select All",
-      "unselect_all": "Deselect All"
+      "title": "Búsqueda de logotipo",
+      "description": "Selecciona un logotipo que quieras buscar, y hagámonos con todos. Por cada logo que anotes, buscaremos a sus vecinos para que no pares de anotar. (Presiona Shift para seleccionar el rango de logotipos)",
+      "ref_logos": "Logotipos de referencia (logotipo ya anotado con este valor)",
+      "remaining": "Falta por anotar",
+      "select_all": "Seleccionar todo",
+      "unselect_all": "Deseleccionar todo"
     }
   },
   "settings": {
