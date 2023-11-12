@@ -19,7 +19,7 @@
     },
     "account_band": {
       "title": "Want to make your contribution count? Create an account or sign in on Open Food Facts!",
-      "log_in": "Korisničko ime",
+      "log_in": "Login",
       "sign_up": "Sign up",
       "contribution_details": "Learn why your contribution matters"
     },
@@ -57,19 +57,19 @@
     "brand": "бренд",
     "brands": "Брендови",
     "packaging": "packaging",
-    "quantity": "Količina",
+    "quantity": "Quantity",
     "insightTypeLabel": "Only shows",
-    "ingredients": "Sastojci",
+    "ingredients": "Ingredients",
     "product_weight": "product weight",
     "popularity_sort": "Sort by popularity",
     "see_examples": "See examples of this ",
-    "no": "Ne",
+    "no": "No",
     "skip": "Skip",
-    "yes": "Da",
+    "yes": "Yes",
     "no_questions_remaining": "No questions remaining",
     "countries": "Countries",
     "view": "View",
-    "edit": "Izmeni",
+    "edit": "Edit",
     "hide_images": "Hide images (faster loading)",
     "display_images": "Display images",
     "annotations": "Annotations",
@@ -112,7 +112,7 @@
     "flag": "Something wrong? Report/flag the image!",
     "unflag": "Unflag the image",
     "reset_filters": "Reset filters",
-    "log_in": "Korisničko ime",
+    "log_in": "Login",
     "sign_up": "Sign up",
     "login_title": "Make your annotation count",
     "login_description": "You are not currently logged into Open Food Facts. To get your answers directly applied to products, and associated to your account, consider logging in to your Open Food Facts account, or creating one",
@@ -129,8 +129,8 @@
     "logos-deep-search": "Infinite annotation",
     "manage": "Manage",
     "insights": "Insights",
-    "nutritions": "Hranljiva vrednost",
-    "settings": "Podešavanja",
+    "nutritions": "Nutrition facts",
+    "settings": "Settings",
     "eco-score": "Eco-score",
     "dashboard": "Logos dashboard",
     "tour": "Show tour",
@@ -139,7 +139,7 @@
   },
   "insights": {
     "insights": "Insights",
-    "barcode": "Barkod",
+    "barcode": "Barcode",
     "barcode_placeholder": "barcode",
     "value_tag": "Value tag",
     "value_placeholder": "ex: en:mueslis, bjorg,...",
@@ -148,15 +148,15 @@
     "annotation": "Annotation",
     "not_annotated": "Not annotated",
     "all": "All",
-    "label": "Oznaka",
+    "label": "Label",
     "product_weight": "Product weight",
-    "category": "Kategorija",
+    "category": "Category",
     "expiration_date": "Expiration date",
     "packager_code": "Packager code",
     "skipped": "Skipped (-1)",
     "rejected": "Rejected (0)",
     "accepted": "Accepted (1)",
-    "search": "Pretraživanje",
+    "search": "Search",
     "count": "Count",
     "id": "Id",
     "value": "Value",
@@ -177,22 +177,22 @@
     "value": "Value",
     "submit": "Submit",
     "type": "Type",
-    "label": "Oznaka",
-    "brand": "Brend",
+    "label": "Label",
+    "brand": "Brand",
     "packager_code": "Packager code",
-    "packaging": "Ambalaža",
+    "packaging": "Packaging",
     "qr_code": "QR code",
-    "category": "Kategorija",
+    "category": "Category",
     "nutrition_label": "Nutrition label",
     "no_logo": "Not a logo",
-    "store": "Prodavnica",
+    "store": "Store",
     "detail": "Logo detail",
     "id": "Logo ID:",
     "barcode": "Barcode:",
     "full_image": "Full image",
     "update": "Update",
     "no_found": "No logo found",
-    "search": "Pretraživanje",
+    "search": "Search",
     "number_of_results": "Number of results:",
     "loading": "Loading…",
     "refresh": "Refresh",
@@ -218,9 +218,9 @@
     }
   },
   "settings": {
-    "settings": "Podešavanja",
+    "settings": "Settings",
     "language": "Languages",
-    "save": "Sačuvaj",
+    "save": "Save",
     "reportIssue": "Found a bug? Please let us know.",
     "dev_mode_title": "To get more options, activate the dev mode",
     "dev_mode_label": "Dev Mode",
@@ -278,7 +278,7 @@
         "text4": "Eco-Score captures the total environmental footprint, making it easier for consumers to compare products and decide which is better for the environment."
       },
       "page5": {
-        "title": "Podešavanja",
+        "title": "Settings",
         "text1": "Set your preferred language, and report issues from our settings page.",
         "text2": "If you're a developer, you can also explore our database content using our dev mode."
       },
@@ -309,7 +309,7 @@
     },
     "previous": "Prev",
     "next": "Next",
-    "close": "Zatvori"
+    "close": "Затвори"
   },
   "nutrition": {
     "instructions": {
@@ -337,16 +337,16 @@
     "value": "Value",
     "unit": "Unit",
     "nutriments": {
-      "nutriment_energy-kj": "Energetska vrednost (kJ)",
+      "nutriment_energy-kj": "Energy (kJ)",
       "nutriment_energy-kcal": "Energy (kCal)",
       "nutriment_fat": "Fat",
-      "nutriment_saturated-fat": "Zasićene masne kiseline",
-      "nutriment_carbohydrates": "Ugljeni hidrati",
+      "nutriment_saturated-fat": "Saturated fat",
+      "nutriment_carbohydrates": "Carbohydrates",
       "nutriment_sugars": "Sugars",
       "nutriment_proteins": "Proteins",
       "nutriment_fiber": "Fibers",
-      "nutriment_salt": "So",
-      "nutriment_sodium": "Natrijum"
+      "nutriment_salt": "Salt",
+      "nutriment_sodium": "Sodium"
     },
     "history": {
       "title": "Session History",
@@ -382,5 +382,8 @@
   "eco-score": {
     "description": "Here is a summary of questions that could improve Eco-Score computation",
     "countryLabel": "Country"
+  },
+  "ingredients": {
+    "description": "TODO: define the game"
   }
 }
