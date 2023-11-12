@@ -47,6 +47,7 @@ const LogoQuestionValidator = React.lazy(() =>
 );
 const DashBoard = React.lazy(() => import("./pages/logosValidator/DashBoard"));
 const GalaBoard = React.lazy(() => import("./pages/GalaPage"));
+const IngredientPage = React.lazy(() => import("./pages/ingredients"));
 const Brandinator = React.lazy(() => import("./pages/Brandinator"));
 
 // OFF colors
@@ -289,6 +290,16 @@ export default function App() {
                     ) : (
                       <ShouldLoggedinPage />
                     )
+                  }
+                />
+                <Route
+                  path="/ingredients"
+                  element={
+                    // userState.isLoggedIn ? (
+                    <IngredientPage />
+                    // ) : (
+                    //   <ShouldLoggedinPage />
+                    // )
                   }
                 />
 
