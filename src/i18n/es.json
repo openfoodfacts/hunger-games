@@ -18,14 +18,14 @@
       }
     },
     "account_band": {
-      "title": "¿Quieres que tu contribución cuente? ¡Crea una cuenta o inicia sesión en Open Food Facts!",
-      "log_in": "Inicio de sesión",
+      "title": "¿Quieres que tu colaboración cuente? ¡Crea una cuenta o inicia sesión en Open Food Facts!",
+      "log_in": "Iniciar sesión",
       "sign_up": "Registrarse",
-      "contribution_details": "Descubre por qué tu contribución es importante"
+      "contribution_details": "Descubre por qué tu colaboración es importante"
     },
     "saved_filters": "Filtros guardados",
     "contribution_modal": {
-      "title": "Tu contribución importa",
+      "title": "Tu colaboración es importante",
       "information": "Los Juegos del Hambre es un esfuerzo de aprovechar los resultados de nuestro OCR (Reconocimiento óptico de caracteres) y la inteligencia artificial. Cuando usas Los Juegos del Hambre de Open Food Facts, estás contribuyendo a mejorar toda nuestra base de datos, lo cual ayuda a que la comunidad tome mejores decisiones a la hora de elegir lo que come. Recopilamos tus anotaciones y las utilizamos para hacer que Open Food Facts sea más exacto y eficaz.",
       "thank_you": "Gracias por ayudarnos a mejorar Open Food Facts para que más personas puedan usarlo con facilidad."
     },
@@ -97,8 +97,8 @@
         "campaign": "Campaña"
       },
       "placeholders": {
-        "value": "Valor (Fanta, es:orgánico,...)",
-        "brand": "Hacendado, Danone, Campofrío,...",
+        "value": "Valor (Fanta, es:orgánico...)",
+        "brand": "Hacendado, Danone, Campofrío...",
         "campaign": "Campañas de anotación"
       },
       "actions": {
@@ -112,7 +112,7 @@
     "flag": "¿Algo va mal? ¡Informa o marca la imagen!",
     "unflag": "Desmarcar la imagen",
     "reset_filters": "Restablecer filtros",
-    "log_in": "Inicio de sesión",
+    "log_in": "Iniciar sesión",
     "sign_up": "Registrarse",
     "login_title": "Haz que tu anotación cuente",
     "login_description": "No has iniciado sesión en Open Food Facts. Para que tus respuestas se apliquen directamente a los productos, y queden asociadas a tu cuenta, iniciar sesión en Open Food Facts, o crea una cuenta",
@@ -142,7 +142,7 @@
     "barcode": "Código de barras",
     "barcode_placeholder": "código de barras",
     "value_tag": "Valor de etiqueta",
-    "value_placeholder": "ej: es:muesli, ecocesta,...",
+    "value_placeholder": "ej.: es:muesli, ecocesta...",
     "type": "Tipo",
     "annotated": "Anotado",
     "annotation": "Notas",
@@ -151,17 +151,17 @@
     "label": "Etiqueta",
     "product_weight": "Peso del producto",
     "category": "Categoría",
-    "expiration_date": "Fecha de vencimiento",
+    "expiration_date": "Fecha de caducidad",
     "packager_code": "Código de envasador",
     "skipped": "Omitido (-1)",
     "rejected": "Rechazado (0)",
     "accepted": "Aceptado (1)",
     "search": "Buscar",
-    "count": "Cantidad",
+    "count": "Contador",
     "id": "Id",
     "value": "Valor",
     "created_at": "Creado en",
-    "completed_at": "Completado en",
+    "completed_at": "Completado el",
     "automatic": "Automático",
     "human_required": "Humano requerido",
     "edit_product": "Abrir edición de producto",
@@ -170,7 +170,7 @@
   "logos": {
     "annotation": "Anotación: ",
     "annotations": "Anotaciones de logotipo",
-    "task_description": "Seleccione todos los logotipos que sean exactamente iguales y asígneles un nombre como «es:EU Organic» y un tipo como «etiqueta».",
+    "task_description": "Selecciona todos los logotipos que sean exactamente iguales y asígnales un nombre como «es:EU Organic» y un tipo como «etiqueta».",
     "select_all": "Seleccionar todo",
     "unselect_all": "Deseleccionar todo",
     "distance": "Distancia:",
@@ -226,7 +226,7 @@
     "dev_mode_label": "Modo de desarrollador",
     "dev_page_toggle": "Mostrar página {{name}}",
     "join_community": "Únete a la comunidad",
-    "text1": "Open Food Facts es un proyecto colaborativo construido por decenas de miles de voluntarios y administrado por una organización sin fines de lucro con ocho empleados. Precisamos de tu donación para financiar el presupuesto 2024 de Open Food Facts y continuar con el desarrollo del proyecto.",
+    "text1": "Open Food Facts es un proyecto colaborativo construido por decenas de miles de personas voluntarias y administrado por una organización sin ánimo de lucro que cuenta con equipo de ocho personas. Necesitamos tu donación para financiar el presupuesto para 2024 de Open Food Facts y continuar con el desarrollo del proyecto.",
     "thank_you": "Gracias",
     "donate": "Donar",
     "join_the_community": {
@@ -243,7 +243,7 @@
     "FAQS": "Preguntas frecuentes",
     "open_Food_Facts_blog": "Blog de Open Food Facts",
     "Press": "Prensa",
-    "Open_Food_Facts_wiki": "Wiki de Open Food Facts (es)",
+    "Open_Food_Facts_wiki": "Open Food Facts Wiki (es)",
     "Translators": "Traductores",
     "Partners": "Asociados",
     "Open_Beauty_Facts": "Open Beauty Facts - Cosméticos",
@@ -254,14 +254,14 @@
       "page1": {
         "title": "Te damos la bienvenida a Los Juegos del Hambre",
         "text1": "Los Juegos del Hambre es una colección de minijuegos que contribuyen a Open Food Facts de muchas maneras. Puedes jugar a estos emocionantes juegos desde cualquier lugar. Aquí tienes una visita guiada por por todo el sitio web que te ayudará a empezar.",
-        "text2": "Asegúrate de iniciar sesión en el sitio web de Open Food Facts para obtener crédito por tus contribuciones. Si cometes un error, tómate el tiempo que necesites para corregirlo accediendo al sitio web.",
-        "text3": "Si tienes dudas sobre los juegos, haz clic en el icono de la interrogación, en la parte superior derecha de la página, y podrás comunicarte con nosotros a través del canal de Slack #hunger-games"
+        "text2": "Asegúrate de iniciar sesión en el sitio web de Open Food Facts para obtener un reconocimiento por tu colaboración. Si cometes un error, tómate el tiempo que necesites para corregirlo accediendo al sitio web.",
+        "text3": "Si tienes dudas sobre los juegos, haz clic en el icono de la interrogación, en la parte superior derecha de la página, y podrás comunicarte con nosotros a través del canal de Slack #hunger-games."
       },
       "page2": {
         "title": "Juego de preguntas",
         "text1": "¿El producto alimenticio pertenece a esta marca?",
         "text2": "¡Simplemente responde con un <strong>sí</strong> o un <strong>no</strong>! ¿No sabes la respuesta? No te preocupes, puedes pasar a la siguiente.",
-        "text3": "También puedes utilizar los atajos de teclado: «y»,«n» y «k».",
+        "text3": "También puedes utilizar los atajos de teclado «y»,«n» y «k».",
         "text4": "¡Puedes <strong>filtrar</strong> los productos según el país, la marca, su popularidad y mucho más!",
         "text5": "Si no deseas hacer volver a hacer esto, puedes <strong>guardar los filtros</strong> haciendo clic en la estrella. La próxima vez que regreses, encontrarás los filtros guardados en la página de inicio"
       },
@@ -349,7 +349,7 @@
       "nutriment_sodium": "Sodio"
     },
     "history": {
-      "title": "Historial de la sesión",
+      "title": "Historial de sesiones",
       "status": "estado",
       "product name": "nombre del producto",
       "view": "ver página",
