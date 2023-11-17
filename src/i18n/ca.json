@@ -209,12 +209,12 @@
       "failed_reference_logos": "No hem trobat cap logotip amb aquesta anotació. Intenta fer servir el joc següent per anotar-ne alguns."
     },
     "deep_search": {
-      "title": "Logo search",
-      "description": "Select a logo you want to look for, and let's go to catch them all. For every logo you annotate, we will fetch it's neighbors such that you might never stop to annotate. (Press Shift to select range of logos)",
-      "ref_logos": "Reference logos (logo already annotated with this value)",
-      "remaining": "Remaining to annotate",
-      "select_all": "Select All",
-      "unselect_all": "Deselect All"
+      "title": "Cerca de logotips",
+      "description": "Selecciona un logotip que vulguis buscar, i comença a atrapar-los tots. Per a cada logotip que anotis, buscarem els seus veïns de manera que mai deixaràs d'anotar. (Premeu Majúscules per a seleccionar l'interval dels logotips)",
+      "ref_logos": "Logotips de referència (logotip ja anotat amb aquest valor)",
+      "remaining": "Pendent d'anotar",
+      "select_all": "Seleccionar Tot",
+      "unselect_all": "Deseleccionar Tot"
     }
   },
   "settings": {
