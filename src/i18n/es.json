@@ -115,7 +115,7 @@
     "log_in": "Iniciar sesión",
     "sign_up": "Registrarse",
     "login_title": "Haz que tu anotación cuente",
-    "login_description": "No has iniciado sesión en Open Food Facts. Para que tus respuestas se apliquen directamente a los productos, y queden asociadas a tu cuenta, iniciar sesión en Open Food Facts, o crea una cuenta",
+    "login_description": "No has iniciado sesión en Open Food Facts. Para que tus respuestas se apliquen directamente a los productos y queden asociadas a tu cuenta, tienes que iniciar sesión en Open Food Facts o crea una cuenta.",
     "please_wait_while_we_fetch_the_question": "¡Espera mientras buscamos la pregunta!"
   },
   "menu": {
@@ -142,10 +142,10 @@
     "barcode": "Código de barras",
     "barcode_placeholder": "código de barras",
     "value_tag": "Valor de etiqueta",
-    "value_placeholder": "ej.: es:muesli, ecocesta...",
+    "value_placeholder": "ej.: es:muesli, ecocesta…",
     "type": "Tipo",
     "annotated": "Anotado",
-    "annotation": "Notas",
+    "annotation": "Anotación",
     "not_annotated": "Sin anotar",
     "all": "Todo",
     "label": "Etiqueta",
@@ -160,7 +160,7 @@
     "count": "Contador",
     "id": "Id",
     "value": "Valor",
-    "created_at": "Creado en",
+    "created_at": "Creada el",
     "completed_at": "Completado el",
     "automatic": "Automático",
     "human_required": "Humano requerido",
@@ -169,7 +169,7 @@
   },
   "logos": {
     "annotation": "Anotación: ",
-    "annotations": "Anotaciones de logotipo",
+    "annotations": "Anotación de logotipos",
     "task_description": "Selecciona todos los logotipos que sean exactamente iguales y asígnales un nombre como «es:EU Organic» y un tipo como «etiqueta».",
     "select_all": "Seleccionar todo",
     "unselect_all": "Deseleccionar todo",
@@ -263,7 +263,7 @@
         "text2": "¡Simplemente responde con un <strong>sí</strong> o un <strong>no</strong>! ¿No sabes la respuesta? No te preocupes, puedes pasar a la siguiente.",
         "text3": "También puedes utilizar los atajos de teclado «y»,«n» y «k».",
         "text4": "¡Puedes <strong>filtrar</strong> los productos según el país, la marca, su popularidad y mucho más!",
-        "text5": "Si no deseas hacer volver a hacer esto, puedes <strong>guardar los filtros</strong> haciendo clic en la estrella. La próxima vez que regreses, encontrarás los filtros guardados en la página de inicio"
+        "text5": "Si no deseas hacer volver a hacer esto, puedes <strong>guardar los filtros</strong> haciendo clic en la estrella. La próxima vez que regreses, encontrarás los filtros guardados en la página de inicio."
       },
       "page3": {
         "title": "Juego de los logotipos",
@@ -371,8 +371,8 @@
     "image_alt": "imagen recortada",
     "label": "Anota la detección del logotipo de Nutri-Score por lote.",
     "description": "Para hacerlo, selecciona todas las imágenes que muestren el valor Nutri-Score correcto/incorrecto ({{label}}), y haz clic en los botones inferiores para decir si has seleccionado un conjunto correcto o incorrecto.",
-    "images_remaining": "Quedan {{remaining}} por anotar",
-    "image_sizes": "Tamaños de imagen",
+    "images_remaining": "Aún hay {{remaining}} por anotar",
+    "image_sizes": "Tamaño de la imagen",
     "zoom_on_logo": "Ampliar el logotipo",
     "select_all": "Seleccionar todo",
     "deselect_all": "Deseleccionar todo",
@@ -380,7 +380,7 @@
     "correct": "Correcto ({{label}})"
   },
   "eco-score": {
-    "description": "Aquí hay un resumen de preguntas que podrían mejorar el cálculo del Eco-Score",
+    "description": "Aquí tienes un resumen de las preguntas que podrían mejorar el cálculo del Eco-Score.",
     "countryLabel": "País"
   },
   "ingredients": {
