@@ -8,8 +8,8 @@
           "description": "Dinos si la imagen dada responde a las preguntas"
         },
         "logos": {
-          "title": "Logotipo",
-          "description": "Encuentra todos los logotipos que coincidan con el logotipo indicado"
+          "title": "Logotipos",
+          "description": "Encuentra todos los logos que coincidan con el logotipo que se muestra"
         },
         "eco_score": {
           "title": "Eco-Score",
@@ -32,16 +32,16 @@
     "statistics": {
       "title": "Estadísticas de {{userName}}:",
       "editorCount": {
-        "title": "Editor",
+        "title": "Editor/a",
         "description": "Número de ediciones realizadas"
       },
       "contributorCount": {
-        "title": "Colaborador",
-        "description": "Añadir un nuevo producto"
+        "title": "Colaborador/a",
+        "description": "Productos nuevos añadidos"
       },
       "photographerCount": {
-        "title": "Fotógrafo",
-        "description": "Hacer fotos de un producto"
+        "title": "Fotógrafo/a",
+        "description": "Fotos realizadas a productos"
       }
     }
   },
@@ -58,13 +58,13 @@
     "brands": "Marcas",
     "packaging": "envase",
     "quantity": "Cantidad",
-    "insightTypeLabel": "Solo mostrar",
+    "insightTypeLabel": "Mostrar",
     "ingredients": "Ingredientes",
     "product_weight": "peso del producto",
     "popularity_sort": "Ordenar por popularidad",
     "see_examples": "Ve ejemplos de esta",
     "no": "No",
-    "skip": "Saltar",
+    "skip": "Omitir",
     "yes": "Sí",
     "no_questions_remaining": "No quedan preguntas",
     "countries": "Países",
@@ -97,8 +97,8 @@
         "campaign": "Campaña"
       },
       "placeholders": {
-        "value": "Valor (Fanta, es:orgánico...)",
-        "brand": "Hacendado, Danone, Campofrío...",
+        "value": "Valor (Fanta, es:orgánico…)",
+        "brand": "Hacendado, Danone, Campofrío…",
         "campaign": "Campañas de anotación"
       },
       "actions": {
@@ -122,7 +122,7 @@
     "title": "Juegos del Hambre",
     "games": "Juegos",
     "questions": "Preguntas",
-    "logos": "Logotipo",
+    "logos": "Logotipos",
     "logos-annotation": "Anotaciones de logotipo",
     "logos-search": "Búsqueda de logotipo",
     "logos-product-search": "Anotación por productos",
