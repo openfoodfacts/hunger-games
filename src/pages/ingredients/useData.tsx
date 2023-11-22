@@ -95,7 +95,6 @@ export default function useData(): [any[], () => void, boolean] {
           page,
           pageSize: 25,
           filters: imagesToRead,
-          countryCode: "ch",
           fields:
             "code,lang,image_ingredients_url,product_name,ingredient,images",
         });
