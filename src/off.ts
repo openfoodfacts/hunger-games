@@ -4,6 +4,7 @@ import {
     OFF_API_URL_V2,
     OFF_IMAGE_URL,
     OFF_SEARCH,
+    OFF_URL,
 } from "./const";
 import axios from "axios";
 import combineURLs from "axios/lib/helpers/combineURLs";
@@ -116,7 +117,7 @@ const offService = {
             }`;
     },
 
-    searchProducts({ page = 1, pageSize = 25, filters = [], fields='code', countryCode = 'world' }) {
+    searchProducts({ page = 1, pageSize = 25, filters = [], fields = 'code', countryCode = 'world' }) {
         const searchParams = {
             page: page.toString(),
             page_size: pageSize.toString(),
@@ -133,8 +134,9 @@ const offService = {
             });
         });
 
+        console.log({ countryCode })
         const urlParams = new URLSearchParams(searchParams);
-        return axios.get(`${OFF_SEARCH.replace('worlds.', `${countryCode || 'world'}.`)}?${urlParams.toString()}`);
+        return axios.get(`${OFF_SEARCH.replace('world.', `${countryCode}.`)}?${urlParams.toString()}`);
     },
 
     setIngedrient({ code, lang, text }) {
@@ -146,7 +148,7 @@ const offService = {
         }
 
         const urlParams = new URLSearchParams({ code, [`ingredients_text${lang ? `_${lang}` : ''}`]: text });
-        axios.post(`https://world.openfoodfacts.net/cgi/product_jqm2.pl?${urlParams.toString()}`)
+        axios.post(`${OFF_URL}/cgi/product_jqm2.pl?${urlParams.toString()}`)
     }
 };
 
