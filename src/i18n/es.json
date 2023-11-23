@@ -5,7 +5,7 @@
       "cards": {
         "questions": {
           "title": "Preguntas",
-          "description": "Dinos si la imagen dada responde a las preguntas"
+          "description": "Dinos si la imagen que se muestra responde a las preguntas"
         },
         "logos": {
           "title": "Logotipos",
@@ -18,15 +18,15 @@
       }
     },
     "account_band": {
-      "title": "¿Quieres que tu colaboración cuente? ¡Crea una cuenta o inicia sesión en Open Food Facts!",
+      "title": "¿Quieres que tu contribución cuente? ¡Crea una cuenta o inicia sesión en Open Food Facts!",
       "log_in": "Iniciar sesión",
       "sign_up": "Registrarse",
       "contribution_details": "Descubre por qué tu colaboración es importante"
     },
     "saved_filters": "Filtros guardados",
     "contribution_modal": {
-      "title": "Tu colaboración es importante",
-      "information": "Los Juegos del Hambre es un esfuerzo de aprovechar los resultados de nuestro OCR (Reconocimiento óptico de caracteres) y la inteligencia artificial. Cuando usas Los Juegos del Hambre de Open Food Facts, estás contribuyendo a mejorar toda nuestra base de datos, lo cual ayuda a que la comunidad tome mejores decisiones a la hora de elegir lo que come. Recopilamos tus anotaciones y las utilizamos para hacer que Open Food Facts sea más exacto y eficaz.",
+      "title": "Tu contribución es importante",
+      "information": "Los Juegos del Hambre es un esfuerzo de aprovechar los resultados de nuestro OCR (reconocimiento óptico de caracteres) y la inteligencia artificial. Cuando usas Los Juegos del Hambre de Open Food Facts, estás mejorando toda nuestra base de datos, lo cual ayuda a que la sociedad tome mejores decisiones a la hora de elegir lo que come. Recopilamos tus anotaciones y las utilizamos para que Open Food Facts sea más exacto y eficaz.",
       "thank_you": "Gracias por ayudarnos a mejorar Open Food Facts para que más personas puedan usarlo con facilidad."
     },
     "statistics": {
@@ -46,7 +46,7 @@
     }
   },
   "flagged_images": {
-    "title": "Imágenes señaladas por los usuarios",
+    "title": "Imágenes marcadas por los usuarios",
     "loading": "Cargando"
   },
   "questions": {
@@ -115,7 +115,7 @@
     "log_in": "Iniciar sesión",
     "sign_up": "Registrarse",
     "login_title": "Haz que tu anotación cuente",
-    "login_description": "No has iniciado sesión en Open Food Facts. Para que tus respuestas se apliquen directamente a los productos y queden asociadas a tu cuenta, tienes que iniciar sesión en Open Food Facts o crea una cuenta.",
+    "login_description": "No has iniciado sesión en Open Food Facts. Para que tus respuestas se apliquen directamente a los productos y se asocien a tu cuenta, inicia sesión en Open Food Facts o crea una cuenta.",
     "please_wait_while_we_fetch_the_question": "¡Espera mientras buscamos la pregunta!"
   },
   "menu": {
@@ -123,8 +123,8 @@
     "games": "Juegos",
     "questions": "Preguntas",
     "logos": "Logotipos",
-    "logos-annotation": "Anotaciones de logotipo",
-    "logos-search": "Búsqueda de logotipo",
+    "logos-annotation": "Anotación de logotipos",
+    "logos-search": "Búsqueda de logotipos",
     "logos-product-search": "Anotación por productos",
     "logos-deep-search": "Anotación infinita",
     "manage": "Administrar",
@@ -135,7 +135,7 @@
     "dashboard": "Panel de logotipos",
     "tour": "Mostrar tutorial",
     "logged_in_user": "Sesión iniciada como {{userName}}",
-    "log_in": "Clic para iniciar sesión"
+    "log_in": "Haz clic para iniciar sesión"
   },
   "insights": {
     "insights": "Percepciones",
@@ -153,23 +153,23 @@
     "category": "Categoría",
     "expiration_date": "Fecha de caducidad",
     "packager_code": "Código de envasador",
-    "skipped": "Omitido (-1)",
-    "rejected": "Rechazado (0)",
-    "accepted": "Aceptado (1)",
+    "skipped": "Omitidas (-1)",
+    "rejected": "Rechazadas (0)",
+    "accepted": "Aceptadas (1)",
     "search": "Buscar",
     "count": "Contador",
     "id": "Id",
     "value": "Valor",
-    "created_at": "Creada el",
+    "created_at": "Creado el",
     "completed_at": "Completado el",
     "automatic": "Automático",
     "human_required": "Humano requerido",
-    "edit_product": "Abrir edición de producto",
-    "view_product": "Abrir página de producto"
+    "edit_product": "Abrir edición del producto",
+    "view_product": "Abrir página del producto"
   },
   "logos": {
     "annotation": "Anotación: ",
-    "annotations": "Anotación de logotipos",
+    "annotations": "Anotaciones del logotipos",
     "task_description": "Selecciona todos los logotipos que sean exactamente iguales y asígnales un nombre como «es:EU Organic» y un tipo como «etiqueta».",
     "select_all": "Seleccionar todo",
     "unselect_all": "Deseleccionar todo",
@@ -203,16 +203,16 @@
     "flag": "¿Algo va mal? ¡Informa o marca la imagen!",
     "unflag": "Desmarcar la imagen",
     "crop_image_title": "recorte del logotipo",
-    "no_more_questions": "No hay más preguntas sobre este logotipo. Puedes intentar encontrar más logotipos en el siguiente juego.",
+    "no_more_questions": "No hay más preguntas sobre este logotipo. Puedes intentar encontrar otros logotipos en el siguiente juego.",
     "loading_messages": {
       "pending_reference_logos": "Estamos cargando algunos ejemplos de logotipos para inicializar la búsqueda",
       "failed_reference_logos": "No hemos encontrado ningún logotipo con esta anotación. Intenta usar el siguiente juego para anotar algunos de ellos."
     },
     "deep_search": {
       "title": "Búsqueda de logotipo",
-      "description": "Selecciona un logotipo que quieras buscar, y hagámonos con todos. Por cada logo que anotes, buscaremos a sus vecinos para que no pares de anotar. (Presiona Shift para seleccionar el rango de logotipos)",
+      "description": "Selecciona un logotipo que quieras buscar, y ¡hagámonos con todos! Por cada logo que anotes, buscaremos a sus vecinos para que no pares de anotar. (Presiona «Shift» para seleccionar el rango de logotipos)",
       "ref_logos": "Logotipos de referencia (logotipo ya anotado con este valor)",
-      "remaining": "Falta por anotar",
+      "remaining": "Queda por anotar",
       "select_all": "Seleccionar todo",
       "unselect_all": "Deseleccionar todo"
     }
@@ -222,11 +222,11 @@
     "language": "Idiomas",
     "save": "Guardar",
     "reportIssue": "¿Has encontrado un error? Por favor, compártelo.",
-    "dev_mode_title": "Para conseguir más opciones, activa el modo de desarrollador",
-    "dev_mode_label": "Modo de desarrollador",
+    "dev_mode_title": "Para ver más opciones, activa el modo de desarrollo",
+    "dev_mode_label": "Modo de desarrollo",
     "dev_page_toggle": "Mostrar página {{name}}",
     "join_community": "Únete a la comunidad",
-    "text1": "Open Food Facts es un proyecto colaborativo construido por decenas de miles de personas voluntarias y administrado por una organización sin ánimo de lucro que cuenta con equipo de ocho personas. Necesitamos tu donación para financiar el presupuesto para 2024 de Open Food Facts y continuar con el desarrollo del proyecto.",
+    "text1": "Open Food Facts es un proyecto colaborativo construido por decenas de miles de personas voluntarias y administrado por una organización sin ánimo de lucro que cuenta con equipo de ocho personas. Necesitamos tu donación para financiar el presupuesto de 2024 de Open Food Facts y continuar con el desarrollo del proyecto.",
     "thank_you": "Gracias",
     "donate": "Donar",
     "join_the_community": {
@@ -253,46 +253,46 @@
     "welcome": {
       "page1": {
         "title": "Te damos la bienvenida a Los Juegos del Hambre",
-        "text1": "Los Juegos del Hambre es una colección de minijuegos que contribuyen a Open Food Facts de muchas maneras. Puedes jugar a estos emocionantes juegos desde cualquier lugar. Aquí tienes una visita guiada por por todo el sitio web que te ayudará a empezar.",
-        "text2": "Asegúrate de iniciar sesión en el sitio web de Open Food Facts para obtener un reconocimiento por tu colaboración. Si cometes un error, tómate el tiempo que necesites para corregirlo accediendo al sitio web.",
+        "text1": "Los Juegos del Hambre es una colección de minijuegos que contribuyen a Open Food Facts de muchas maneras. Puedes jugar a estos emocionantes juegos desde cualquier lugar. Aquí tienes una visita guiada por todo el sitio web que te ayudará a empezar.",
+        "text2": "Asegúrate de iniciar sesión en el sitio web de Open Food Facts para obtener reconocimiento por tu contribución. Si cometes un error, tómate el tiempo que necesites para corregirlo accediendo al sitio web.",
         "text3": "Si tienes dudas sobre los juegos, haz clic en el icono de la interrogación, en la parte superior derecha de la página, y podrás comunicarte con nosotros a través del canal de Slack #hunger-games."
       },
       "page2": {
         "title": "Juego de preguntas",
-        "text1": "¿El producto alimenticio pertenece a esta marca?",
+        "text1": "¿Este alimento pertenece a esta marca?",
         "text2": "¡Simplemente responde con un <strong>sí</strong> o un <strong>no</strong>! ¿No sabes la respuesta? No te preocupes, puedes pasar a la siguiente.",
         "text3": "También puedes utilizar los atajos de teclado «y»,«n» y «k».",
         "text4": "¡Puedes <strong>filtrar</strong> los productos según el país, la marca, su popularidad y mucho más!",
-        "text5": "Si no deseas hacer volver a hacer esto, puedes <strong>guardar los filtros</strong> haciendo clic en la estrella. La próxima vez que regreses, encontrarás los filtros guardados en la página de inicio."
+        "text5": "Si no deseas hacer volver a hacer esto, puedes <strong>guardar los filtros</strong> haciendo clic en la estrella. La próxima vez que entres, encontrarás los filtros guardados en la página de inicio."
       },
       "page3": {
         "title": "Juego de los logotipos",
-        "text1": "Otro juego popular es el juego de los logotipos en el que tienes que <strong>seleccionar todos los logotipos</strong> que creas que son iguales.",
-        "text2": "Tal y como se muestra en el ejemplo, una vez que hayas seleccionado todos los logotipos que sean parecidos, solo tienes que escribir su valor y seleccionar si pertenece a una marca, una etiqueta u otra cosa. ¡Así de sencillo!"
+        "text1": "Otro juego popular es el juego de los logotipos en el que tendrás que <strong>seleccionar todos los logotipos</strong> que te parezcan iguales.",
+        "text2": "Tal y como se muestra en el ejemplo, una vez que hayas seleccionado todos los logotipos parecidos, escribe su valor y selecciona si pertenecen a una marca, una etiqueta o a otro tipo. ¡Así de sencillo!"
       },
       "page4": {
         "title": "Juego de preguntas Eco-Score",
         "text1": "¡Ayúdanos a terminar las preguntas restantes en las etiquetas de mayor prioridad!",
         "text2": "Estas tarjetas están vinculadas a las etiquetas utilizadas en el cálculo del Eco-Score.",
         "text3": "<strong>¿Qué es el Eco-Score?</strong>",
-        "text4": "El Eco-Score captura la huella ambiental total, facilitando a los consumidores comparar productos y decidir cuál es mejor para el medioambiente."
+        "text4": "El Eco-Score captura la huella ambiental total facilitando a las personas comparar productos y decidir cuál es mejor para el medioambiente."
       },
       "page5": {
         "title": "Configuración",
         "text1": "Establece tu idioma preferido y notifica los problemas desde nuestra página de configuración.",
-        "text2": "Si eres desarrollador, también puedes explorar el contenido de nuestra base de datos utilizando nuestro modo de desarrollador."
+        "text2": "Si te dedicas al desarrollo, también puedes explorar el contenido de nuestra base de datos utilizando nuestro modo de desarrollo."
       },
       "page6": {
         "title": "Tutorial",
-        "text1": "¿Te has atascado en alguna parte? ¿Quieres volver a hacer el tour?",
+        "text1": "¿Te has atascado en alguna parte? ¿Quieres volver a hacer el tutorial?",
         "text2": "¡Haz clic en la interrogación y comienza el viaje de nuevo!"
       }
     },
     "logos": {
       "page1": {
         "title": "Selección",
-        "text1": "Selecciona los recortes de un mismo logotipo haciendo clic sobre ellos",
-        "text2": "Los logotipos seleccionados van a la parte superior de la página, puedes deshacer la selección haciendo clic de nuevo sobre ellos"
+        "text1": "Selecciona los recortes de un mismo logotipo haciendo clic sobre ellos.",
+        "text2": "Los logotipos seleccionados van a la parte superior de la página, puedes deshacer la selección haciendo clic de nuevo sobre ellos."
       },
       "page2": {
         "title": "Aviso",
@@ -340,7 +340,7 @@
       "nutriment_energy-kj": "Energía (kj)",
       "nutriment_energy-kcal": "Energía (kcal)",
       "nutriment_fat": "Grasas",
-      "nutriment_saturated-fat": "Grasa saturada",
+      "nutriment_saturated-fat": "Grasas saturadas",
       "nutriment_carbohydrates": "Carbohidratos",
       "nutriment_sugars": "Azúcares",
       "nutriment_proteins": "Proteínas",
@@ -363,7 +363,7 @@
   },
   "notfound": {
     "image_alt": "404 no encontrado",
-    "nopage": "¡Vaya! La página que buscas no se puede encontrar.",
+    "nopage": "¡Vaya! La página que buscas no se ha podido encontrar.",
     "redirect1": "¿Quieres jugar a algún juego?",
     "redirect2": "Clic aquí"
   },
@@ -384,6 +384,6 @@
     "countryLabel": "País"
   },
   "ingredients": {
-    "description": "PARA HACER: configurar el juego"
+    "description": "POR HACER: definir el juego"
   }
 }
