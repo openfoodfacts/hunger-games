@@ -211,10 +211,10 @@
     "deep_search": {
       "title": "Recherche de Logo",
       "description": "Sélectionnez un logo que vous voulez rechercher et attrapons-les tous. Pour chaque logo que vous annotez, nous récupérerons ses voisins de telle sorte que vous ne cesserez jamais d'annoter. (Appuyez sur Maj pour sélectionner la plage de logos)",
-      "ref_logos": "Reference logos (logo already annotated with this value)",
-      "remaining": "Remaining to annotate",
-      "select_all": "Select All",
-      "unselect_all": "Deselect All"
+      "ref_logos": "Logos de référence (logo déjà annoté avec cette valeur)",
+      "remaining": "Reste à annoter",
+      "select_all": "Sélectionner tout",
+      "unselect_all": "Désélectionner tout"
     }
   },
   "settings": {
@@ -384,6 +384,6 @@
     "countryLabel": "Pays"
   },
   "ingredients": {
-    "description": "TODO: define the game"
+    "description": "TODO : définir le jeu"
   }
 }
