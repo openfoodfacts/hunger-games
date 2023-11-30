@@ -13,41 +13,41 @@
         },
         "eco_score": {
           "title": "Eco-Score",
-          "description": "Annotate the questions with the highest value"
+          "description": "Anteckna frågorna med högst värde"
         }
       }
     },
     "account_band": {
-      "title": "Want to make your contribution count? Create an account or sign in on Open Food Facts!",
+      "title": "Vill du bidra? Skapa ett konto eller logga in på Open Food Facts!",
       "log_in": "Användarnamn",
       "sign_up": "Registrera dig",
-      "contribution_details": "Learn why your contribution matters"
+      "contribution_details": "Ta reda på varför ditt bidrag är viktigt"
     },
     "saved_filters": "Sparade filter",
     "contribution_modal": {
-      "title": "Your contribution matters",
-      "information": "Hunger Games is an effort to leverage the results of our OCR and artificial intelligence. When you use Hunger Games by Open Food Facts, you improve our entire database which helps the community make better food choices. We gather your annotations and use them to make Open Food Facts more accurate and efficient.",
-      "thank_you": "Thank you for helping us improve Open Food Facts so that more people can use it easily."
+      "title": "Ditt bidrag är viktigt",
+      "information": "Hunger Games är ett försök att utnyttja resultaten av vår OCR och artificiell intelligens. När du använder Hunger Games av Open Food Facts förbättrar du hela vår databas vilket hjälper samhället att göra bättre matval. Vi samlar dina kommentarer och använder dem för att göra Open Food Facts mer exakta och effektiva.",
+      "thank_you": "Tack för att du hjälper oss att förbättra Open Food Facts så att fler kan använda det enkelt."
     },
     "statistics": {
-      "title": "{{userName}} statistics:",
+      "title": "{{userName}} statistik:",
       "editorCount": {
         "title": "Redaktör",
-        "description": "Number of editions done"
+        "description": "Antal ändringar gjorda"
       },
       "contributorCount": {
         "title": "Medverkande",
-        "description": "Adding a new product"
+        "description": "Lägga till en ny produkt"
       },
       "photographerCount": {
-        "title": "Photographer",
-        "description": "Taking photos for a product"
+        "title": "Fotograf",
+        "description": "Ta foton för en produkt"
       }
     }
   },
   "flagged_images": {
-    "title": "Images flagged by users",
-    "loading": "Loading"
+    "title": "Bilder flaggade av användare",
+    "loading": "Läser in"
   },
   "questions": {
     "category": "kategori",
@@ -58,11 +58,11 @@
     "brands": "Varumärken",
     "packaging": "förpackning",
     "quantity": "Kvantitet",
-    "insightTypeLabel": "Only shows",
+    "insightTypeLabel": "Visar endast",
     "ingredients": "Ingredienser",
     "product_weight": "produktens vikt",
     "popularity_sort": "Sortera efter popularitet",
-    "see_examples": "See examples of this ",
+    "see_examples": "Se exempel på detta ",
     "no": "Nej",
     "skip": "Hoppa over",
     "yes": "Ja",
@@ -72,13 +72,13 @@
     "edit": "Redigera",
     "hide_images": "Dölj bilder (snabbare laddning)",
     "display_images": "Visa bilder",
-    "annotations": "Annotations",
+    "annotations": "Anteckningar",
     "last_annotations": "Senaste anteckningar",
-    "remaining_annotations": "Remaining questions",
+    "remaining_annotations": "Återstående frågor",
     "annotated_annotations": "Antecknad",
     "filters": {
-      "active_filter_number": "+{{count}} filters",
-      "active_filter_number_one": "+{{count}} filter",
+      "active_filter_number": "+{{count}} aktiva filter",
+      "active_filter_number_one": "+{{count}} aktiva filter",
       "active_filter_number_zero": "no filter",
       "short_label": {
         "value": "värde",
