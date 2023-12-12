@@ -5,15 +5,15 @@
       "cards": {
         "questions": {
           "title": "Spørsmål",
-          "description": "Tell us if the given image answers the questions"
+          "description": "Fortell oss om bildet svarer på spørsmålene"
         },
         "logos": {
           "title": "Logoer",
-          "description": "Find all the logos matching the given logo"
+          "description": "Finn alle logoene som samsvarer med den angitte logoen"
         },
         "eco_score": {
           "title": "Eco-score",
-          "description": "Annotate the questions with the highest value"
+          "description": "Merk spørsmålene med høyest verdi"
         }
       }
     },
@@ -125,8 +125,8 @@
     "logos": "Logoer",
     "logos-annotation": "Logos annotation",
     "logos-search": "Logos search",
-    "logos-product-search": "Annotation per products",
-    "logos-deep-search": "Infinite annotation",
+    "logos-product-search": "Merknad per produkter",
+    "logos-deep-search": "Uendelig merknad",
     "manage": "Administrer",
     "insights": "Innsikter",
     "nutritions": "Ernæringsinnhold",
@@ -135,7 +135,7 @@
     "dashboard": "Logos dashboard",
     "tour": "Show tour",
     "logged_in_user": "Logged as {{userName}}",
-    "log_in": "Click to login"
+    "log_in": "Klikk for å logge inn"
   },
   "insights": {
     "insights": "Innsikter",
@@ -146,31 +146,31 @@
     "type": "Type",
     "annotated": "Markert",
     "annotation": "Merknad",
-    "not_annotated": "Not annotated",
+    "not_annotated": "Ikke annotert",
     "all": "Alle",
     "label": "Etikett",
-    "product_weight": "Product weight",
+    "product_weight": "Produktets vekt",
     "category": "Kategori",
     "expiration_date": "Utløpsdato",
     "packager_code": "Pakkekode",
-    "skipped": "Skipped (-1)",
-    "rejected": "Rejected (0)",
-    "accepted": "Accepted (1)",
+    "skipped": "Hoppet over (-1)",
+    "rejected": "Avvist (0)",
+    "accepted": "Godtatt (1)",
     "search": "Søk",
     "count": "Antall",
     "id": "Id",
     "value": "Verdi",
-    "created_at": "Created at",
-    "completed_at": "Completed at",
+    "created_at": "Opprettet den",
+    "completed_at": "Fullført den",
     "automatic": "Automatisk",
-    "human_required": "Human required",
-    "edit_product": "Open product edit",
-    "view_product": "Open product page"
+    "human_required": "Person nødvendig",
+    "edit_product": "Åpne produktredigering",
+    "view_product": "Åpne produktside"
   },
   "logos": {
-    "annotation": "Annotation: ",
-    "annotations": "Logo annotations",
-    "task_description": "Select all logos that are exactly the same, and give them a name like \"en:EU Organic\" and a type like \"label\".",
+    "annotation": "Annotering: ",
+    "annotations": "Logomerknader",
+    "task_description": "Velg alle logoene som er nøyaktig like, og gi dem et navn som \"en:EU Organic\" og en type som \"label\".",
     "select_all": "Velg alt",
     "unselect_all": "Unselect all",
     "distance": "Avstand:",
@@ -196,14 +196,14 @@
     "number_of_results": "Number of results:",
     "loading": "Laster…",
     "refresh": "Oppdater",
-    "search_specific": "Search specific logo",
+    "search_specific": "Søk etter spesifikk logo",
     "load_more": "Last inn flere",
     "no_results": "Ingen logo funnet",
-    "result_count": "Shows {{showing}} on {{available}} available",
+    "result_count": "Viser {{showing}} på {{available}} tilgjengelig",
     "flag": "Noe galt? Rapporter/flagg bildet!",
     "unflag": "Fjern flagget for bildet",
-    "crop_image_title": "crop of the logo",
-    "no_more_questions": "No more questions about this logo. You can try to find more logos with the following game.",
+    "crop_image_title": "beskjæring av logoen",
+    "no_more_questions": "Ingen flere spørsmål om denne logoen. Du kan prøve å finne flere logoer med det følgende spillet.",
     "loading_messages": {
       "pending_reference_logos": "We are loading some logos examples to initialise the search",
       "failed_reference_logos": "We did not find any logos with this annotation. Try to use the following game to annotate some of them."
@@ -213,8 +213,8 @@
       "description": "Select a logo you want to look for, and let's go to catch them all. For every logo you annotate, we will fetch it's neighbors such that you might never stop to annotate. (Press Shift to select range of logos)",
       "ref_logos": "Reference logos (logo already annotated with this value)",
       "remaining": "Remaining to annotate",
-      "select_all": "Select All",
-      "unselect_all": "Deselect All"
+      "select_all": "Velg alle",
+      "unselect_all": "Opphev merking"
     }
   },
   "settings": {
@@ -304,7 +304,7 @@
         "text1": "Indicate the type of logo (label, brand, QRcode, ...)",
         "text2": "If it is a label or a brand logo, indicate which one it is",
         "text3": "Now you can submit your selection",
-        "text4": "Thank you :)"
+        "text4": "Tusen takk :)"
       }
     },
     "previous": "Prev",
@@ -319,50 +319,50 @@
       "selectValue": "Select the nutritional value of: "
     },
     "steps": {
-      "1": "Crop",
+      "1": "Beskjær",
       "2": "Special values",
       "3": "Nutriments Selection",
       "4": "Values Selection"
     },
-    "loading": "Loading...",
-    "unknown_brand": "Brand Unknown",
-    "value_missing": "You forgot to input a value.",
-    "next": "Next step",
-    "prev": "Prev step",
-    "skip": "Skip this product",
+    "loading": "Laster...",
+    "unknown_brand": "Merke ukjent",
+    "value_missing": "Du glemte å legge inn en verdi.",
+    "next": "Neste steg",
+    "prev": "Forrige steg",
+    "skip": "Hopp over dette produktet",
     "validate": "Validate Table",
-    "unselect_picture": "No nutrition info",
+    "unselect_picture": "Ingen ernæringsinformasjon",
     "basis": "data for: ",
-    "servingSize": "serving size",
+    "servingSize": "porsjonsstørrelse",
     "value": "Verdi",
     "unit": "Enhet",
     "nutriments": {
       "nutriment_energy-kj": "Energi (kJ)",
-      "nutriment_energy-kcal": "Energy (kCal)",
+      "nutriment_energy-kcal": "Energi (kCal)",
       "nutriment_fat": "Fett",
       "nutriment_saturated-fat": "Mettet fett",
       "nutriment_carbohydrates": "Karbohydrater",
       "nutriment_sugars": "Sukker",
       "nutriment_proteins": "Protein",
-      "nutriment_fiber": "Fibers",
+      "nutriment_fiber": "Fibre",
       "nutriment_salt": "Salt",
       "nutriment_sodium": "Natrium"
     },
     "history": {
       "title": "Session History",
       "status": "status",
-      "product name": "product name",
-      "view": "view page",
-      "edit": "edit page",
-      "SKIP": "ignored",
-      "VALIDATED": "edited",
+      "product name": "produktnavn",
+      "view": "se side",
+      "edit": "rediger side",
+      "SKIP": "ignorert",
+      "VALIDATED": "redigert",
       "WRONG_IMAGE": "unselected picture",
-      "close": "close",
-      "open": "open history"
+      "close": "lukk",
+      "open": "åpne historikk"
     }
   },
   "notfound": {
-    "image_alt": "404 not found",
+    "image_alt": "404 ikke funnet",
     "nopage": "Whoops! The page you're looking for can't be found.",
     "redirect1": "Want to play some games?",
     "redirect2": "Click here"
