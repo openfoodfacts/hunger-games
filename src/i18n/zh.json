@@ -210,7 +210,7 @@
     },
     "deep_search": {
       "title": "查找徽标",
-      "description": "Select a logo you want to look for, and let's go to catch them all. For every logo you annotate, we will fetch it's neighbors such that you might never stop to annotate. (Press Shift to select range of logos)",
+      "description": "选择一个你想要找的图标，然后将它们全部捕获。对于你注释的每个图标，我们会获取他相邻的图标这样你就不用停下注释了。（按shift键来选中一系列图标）",
       "ref_logos": "Reference logos (logo already annotated with this value)",
       "remaining": "Remaining to annotate",
       "select_all": "全选",
