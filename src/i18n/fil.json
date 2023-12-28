@@ -1,11 +1,11 @@
 {
   "home": {
     "game_selector": {
-      "title": "What game would you like to play?",
+      "title": "Anong laro na gusto mo na malaro?",
       "cards": {
         "questions": {
-          "title": "Questions",
-          "description": "Tell us if the given image answers the questions"
+          "title": "Mga tanong",
+          "description": "Sabihin sa kami kung ang imahe ay na sumagot ang mga tanong"
         },
         "logos": {
           "title": "Mga logo",
@@ -121,7 +121,7 @@
   "menu": {
     "title": "Hunger Games",
     "games": "Games",
-    "questions": "Questions",
+    "questions": "Mga tanong",
     "logos": "Mga logo",
     "logos-annotation": "Anotasyon ng mga logo",
     "logos-search": "Paghahanap ng mga logo",
@@ -382,5 +382,8 @@
   "eco-score": {
     "description": "Here is a summary of questions that could improve Eco-Score computation",
     "countryLabel": "Country"
+  },
+  "ingredients": {
+    "description": "TODO: define the game"
   }
 }

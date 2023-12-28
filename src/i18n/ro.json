@@ -209,12 +209,12 @@
       "failed_reference_logos": "Nu am găsit niciun logo cu această adnotare. Încercați să utilizați următorul joc pentru a adnota unele dintre ele."
     },
     "deep_search": {
-      "title": "Logo search",
-      "description": "Select a logo you want to look for, and let's go to catch them all. For every logo you annotate, we will fetch it's neighbors such that you might never stop to annotate. (Press Shift to select range of logos)",
-      "ref_logos": "Reference logos (logo already annotated with this value)",
-      "remaining": "Remaining to annotate",
-      "select_all": "Select All",
-      "unselect_all": "Deselect All"
+      "title": "Căutare logo",
+      "description": "Selectează un logo pe care vrei să-l cauți și hai să îl prindem pe toate. Pentru fiecare logo pe care îl adnotați, îi vom prelua pe vecini astfel încât s-ar putea să nu se oprească niciodată să adnoteze. (Press Shift pentru a selecta raza de sigle)",
+      "ref_logos": "Sigle de referință (logo deja adnotat cu această valoare)",
+      "remaining": "Rămâne de adnotat",
+      "select_all": "Selectați-le pe toate",
+      "unselect_all": "Deselectați toate"
     }
   },
   "settings": {
@@ -382,5 +382,8 @@
   "eco-score": {
     "description": "Iată un rezumat al întrebărilor care ar putea îmbunătăți calculul Eco-Score",
     "countryLabel": "Țară"
+  },
+  "ingredients": {
+    "description": "TODO: definiți jocul"
   }
 }

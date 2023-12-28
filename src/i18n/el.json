@@ -1,7 +1,7 @@
 {
   "home": {
     "game_selector": {
-      "title": "What game would you like to play?",
+      "title": "Ποιο παιχνίδι θα θέλατε να παίξετε;",
       "cards": {
         "questions": {
           "title": "Ερωτήσεις",
@@ -382,5 +382,8 @@
   "eco-score": {
     "description": "Here is a summary of questions that could improve Eco-Score computation",
     "countryLabel": "Country"
+  },
+  "ingredients": {
+    "description": "TODO: define the game"
   }
 }

@@ -209,12 +209,12 @@
       "failed_reference_logos": "Nous n'avons trouvé aucun logo avec cette annotation. Essayez d'utiliser le jeu suivant pour annoter certains d'entre eux."
     },
     "deep_search": {
-      "title": "Logo search",
-      "description": "Select a logo you want to look for, and let's go to catch them all. For every logo you annotate, we will fetch it's neighbors such that you might never stop to annotate. (Press Shift to select range of logos)",
-      "ref_logos": "Reference logos (logo already annotated with this value)",
-      "remaining": "Remaining to annotate",
-      "select_all": "Select All",
-      "unselect_all": "Deselect All"
+      "title": "Recherche de Logo",
+      "description": "Sélectionnez un logo que vous voulez rechercher et attrapons-les tous. Pour chaque logo que vous annotez, nous récupérerons ses voisins de telle sorte que vous ne cesserez jamais d'annoter. (Appuyez sur Maj pour sélectionner la plage de logos)",
+      "ref_logos": "Logos de référence (logo déjà annoté avec cette valeur)",
+      "remaining": "Reste à annoter",
+      "select_all": "Sélectionner tout",
+      "unselect_all": "Désélectionner tout"
     }
   },
   "settings": {
@@ -247,7 +247,7 @@
     "Translators": "Traducteurs",
     "Partners": "Partenaires",
     "Open_Beauty_Facts": "Open Beauty Facts - Cosmétiques",
-    "text2": "A collaborative, free and open database of food products from around the world."
+    "text2": "Une base de données collaborative, libre et ouverte des produits alimentaires du monde entier."
   },
   "helper": {
     "welcome": {
@@ -382,5 +382,8 @@
   "eco-score": {
     "description": "Voici un résumé des questions qui pourraient améliorer le calcul de l'Eco-Score",
     "countryLabel": "Pays"
+  },
+  "ingredients": {
+    "description": "TODO : définir le jeu"
   }
 }

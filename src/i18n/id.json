@@ -209,12 +209,12 @@
       "failed_reference_logos": "Kami tidak menemukan logo apa pun dengan anotasi ini. Coba gunakan permainan berikut ini untuk membuat anotasi beberapa di antaranya."
     },
     "deep_search": {
-      "title": "Logo search",
-      "description": "Select a logo you want to look for, and let's go to catch them all. For every logo you annotate, we will fetch it's neighbors such that you might never stop to annotate. (Press Shift to select range of logos)",
-      "ref_logos": "Reference logos (logo already annotated with this value)",
-      "remaining": "Remaining to annotate",
-      "select_all": "Select All",
-      "unselect_all": "Deselect All"
+      "title": "Pencarian logo",
+      "description": "Pilih logo yang ingin Anda cari, dan mari kita tangkap semuanya. Untuk setiap logo yang Anda beri anotasi, kami akan mengambil logo tetangganya sehingga Anda tidak akan pernah berhenti membuat anotasi. (Tekan Shift untuk memilih kisaran logo)",
+      "ref_logos": "Logo referensi (logo yang sudah diberi keterangan dengan nilai ini)",
+      "remaining": "Sisa untuk dibuat anotasi",
+      "select_all": "Pilih semua",
+      "unselect_all": "Batalkan semua pilihan"
     }
   },
   "settings": {
@@ -382,5 +382,8 @@
   "eco-score": {
     "description": "Berikut ini adalah ringkasan pertanyaan yang dapat meningkatkan penghitungan Eco-Score",
     "countryLabel": "Negara"
+  },
+  "ingredients": {
+    "description": "TODO: tentukan permainannya"
   }
 }

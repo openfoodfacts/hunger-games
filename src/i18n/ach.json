@@ -75,7 +75,7 @@
     "annotations": "Annotations",
     "last_annotations": "Last annotations",
     "remaining_annotations": "Remaining questions",
-    "annotated_annotations": "زيت جوز الهندزيت جوز الهند",
+    "annotated_annotations": "Annotated",
     "filters": {
       "active_filter_number": "+{{count}} filters",
       "active_filter_number_one": "+{{count}} filter",
@@ -144,7 +144,7 @@
     "value_tag": "Value tag",
     "value_placeholder": "ex: en:mueslis, bjorg,...",
     "type": "Type",
-    "annotated": "زيت جوز الهندزيت جوز الهند",
+    "annotated": "Annotated",
     "annotation": "Annotation",
     "not_annotated": "Not annotated",
     "all": "All",
@@ -382,5 +382,8 @@
   "eco-score": {
     "description": "Here is a summary of questions that could improve Eco-Score computation",
     "countryLabel": "Country"
+  },
+  "ingredients": {
+    "description": "TODO: define the game"
   }
 }

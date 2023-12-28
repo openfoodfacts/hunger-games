@@ -180,7 +180,7 @@
     "label": "al3alama",
     "brand": "العلامة التجارية",
     "packager_code": "رمز المعبئ",
-    "packaging": "التعبئة والتغليف",
+    "packaging": "Packaging",
     "qr_code": "رمز الإستجابة السريع",
     "category": "فئة",
     "nutrition_label": "طابع المكونات الغذائية",
@@ -382,5 +382,8 @@
   "eco-score": {
     "description": "Here is a summary of questions that could improve Eco-Score computation",
     "countryLabel": "Country"
+  },
+  "ingredients": {
+    "description": "TODO: define the game"
   }
 }

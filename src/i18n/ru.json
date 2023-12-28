@@ -205,8 +205,8 @@
     "crop_image_title": "обрезать логотип",
     "no_more_questions": "Больше нет вопросов об этом логотипе. Вы можете попробовать найти больше логотипов в следующей игре.",
     "loading_messages": {
-      "pending_reference_logos": "We are loading some logos examples to initialise the search",
-      "failed_reference_logos": "We did not find any logos with this annotation. Try to use the following game to annotate some of them."
+      "pending_reference_logos": "Мы загружаем примеры лого, чтобы запустить поиск",
+      "failed_reference_logos": "Мы не нашли лого с этой аннотацией. Попробуйте использовать следующую игру, чтобы прокомментировать некоторые из них."
     },
     "deep_search": {
       "title": "Logo search",
@@ -272,10 +272,10 @@
       },
       "page4": {
         "title": "Игра \"Вопросы Eco-Score\"",
-        "text1": "Help us finish the remaining questions in the most high priority labels!",
-        "text2": "These cards are linked to labels used in the computation of the Eco-Score.",
+        "text1": "Помогите нам ответить на оставшиеся вопросы в этикетках с самым высоким приоритетом!",
+        "text2": "Эти карточки связаны с этикетками, используемыми в вычислении Eco-Score.",
         "text3": "<strong>Что такое Eco-Score?</strong>",
-        "text4": "Eco-Score captures the total environmental footprint, making it easier for consumers to compare products and decide which is better for the environment."
+        "text4": "Eco-Score отражает общий экологический след, облегчая покупателям сравнение продуктов и выбор лучшего для окружающей среды."
       },
       "page5": {
         "title": "Настройки",
@@ -382,5 +382,8 @@
   "eco-score": {
     "description": "Вот сводка вопросов которые могут улучшить вычисления Eco-Score",
     "countryLabel": "Страна"
+  },
+  "ingredients": {
+    "description": "TODO: define the game"
   }
 }

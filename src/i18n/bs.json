@@ -1,162 +1,162 @@
 {
   "home": {
     "game_selector": {
-      "title": "What game would you like to play?",
+      "title": "Koju igru biste voljeli igrati?",
       "cards": {
         "questions": {
-          "title": "Questions",
-          "description": "Tell us if the given image answers the questions"
+          "title": "Pitanja",
+          "description": "Recite nam da li data slika odgovara na pitanja"
         },
         "logos": {
-          "title": "Logos",
-          "description": "Find all the logos matching the given logo"
+          "title": "Logotipovi",
+          "description": "Pronađite sve logotipe koji odgovaraju datom logotipu"
         },
         "eco_score": {
-          "title": "Eco-score",
-          "description": "Annotate the questions with the highest value"
+          "title": "Eko-rezultat",
+          "description": "Obilježite pitanja s najvećom vrijednošću"
         }
       }
     },
     "account_band": {
-      "title": "Want to make your contribution count? Create an account or sign in on Open Food Facts!",
-      "log_in": "Login",
-      "sign_up": "Sign up",
-      "contribution_details": "Learn why your contribution matters"
+      "title": "Želite da se vaš doprinos računa? Napravite nalog ili se prijavite na Open Food Facts!",
+      "log_in": "Prijava",
+      "sign_up": "Registriraj se",
+      "contribution_details": "Saznajte zašto je vaš doprinos bitan"
     },
-    "saved_filters": "Saved Filters",
+    "saved_filters": "Sačuvani filteri",
     "contribution_modal": {
-      "title": "Your contribution matters",
-      "information": "Hunger Games is an effort to leverage the results of our OCR and artificial intelligence. When you use Hunger Games by Open Food Facts, you improve our entire database which helps the community make better food choices. We gather your annotations and use them to make Open Food Facts more accurate and efficient.",
-      "thank_you": "Thank you for helping us improve Open Food Facts so that more people can use it easily."
+      "title": "Vaš doprinos je važan",
+      "information": "Igre gladi su pokušaj da se iskoriste rezultati našeg OCR-a i umjetne inteligencije. Kada koristite Hunger Games by Open Food Facts, poboljšavate cijelu našu bazu podataka koja pomaže zajednici da napravi bolji izbor hrane. Prikupljamo vaše napomene i koristimo ih kako bismo Open Food Facts učinili preciznijim i efikasnijim.",
+      "thank_you": "Hvala vam što nam pomažete da poboljšamo Open Food Facts kako bi ih više ljudi moglo lako koristiti."
     },
     "statistics": {
-      "title": "{{userName}} statistics:",
+      "title": "{{userName}} statistika:",
       "editorCount": {
-        "title": "Editor",
-        "description": "Number of editions done"
+        "title": "Uređivač",
+        "description": "Broj urađenih izdanja"
       },
       "contributorCount": {
-        "title": "Contributor",
-        "description": "Adding a new product"
+        "title": "Saradnik",
+        "description": "Dodavanje novog proizvoda"
       },
       "photographerCount": {
-        "title": "Photographer",
-        "description": "Taking photos for a product"
+        "title": "Fotograf",
+        "description": "Snimanje fotografija za proizvod"
       }
     }
   },
   "flagged_images": {
-    "title": "Images flagged by users",
-    "loading": "Loading"
+    "title": "Slike koje su označili korisnici",
+    "loading": "Učitavanje"
   },
   "questions": {
-    "category": "category",
-    "categories": "Categories",
-    "label": "label",
-    "labels": "Labels",
-    "brand": "brand",
-    "brands": "Brands",
-    "packaging": "packaging",
-    "quantity": "Quantity",
-    "insightTypeLabel": "Only shows",
-    "ingredients": "Ingredients",
-    "product_weight": "product weight",
-    "popularity_sort": "Sort by popularity",
-    "see_examples": "See examples of this ",
+    "category": "kategorija",
+    "categories": "Kategorije",
+    "label": "oznaka",
+    "labels": "Oznake",
+    "brand": "brend",
+    "brands": "Brendovi",
+    "packaging": "ambalaža",
+    "quantity": "Količina",
+    "insightTypeLabel": "Samo emisije",
+    "ingredients": "Sastojci",
+    "product_weight": "težina proizvoda",
+    "popularity_sort": "Poredaj po popularnosti",
+    "see_examples": "Pogledajte primjere ovoga ",
     "no": "Ne",
-    "skip": "Skip",
+    "skip": "Preskočite",
     "yes": "Da",
-    "no_questions_remaining": "No questions remaining",
-    "countries": "Countries",
-    "view": "View",
-    "edit": "Edit",
-    "hide_images": "Hide images (faster loading)",
-    "display_images": "Display images",
-    "annotations": "Annotations",
-    "last_annotations": "Last annotations",
-    "remaining_annotations": "Remaining questions",
-    "annotated_annotations": "Annotated",
+    "no_questions_remaining": "Nema preostalih pitanja",
+    "countries": "Zemlje",
+    "view": "Prikaz",
+    "edit": "Uredi",
+    "hide_images": "Sakrij slike (brže učitavanje)",
+    "display_images": "Prikaži slike",
+    "annotations": "Bilješke",
+    "last_annotations": "Posljednje napomene",
+    "remaining_annotations": "Preostala pitanja",
+    "annotated_annotations": "Zabilježeno",
     "filters": {
-      "active_filter_number": "+{{count}} filters",
+      "active_filter_number": "+{{count}} filteri",
       "active_filter_number_one": "+{{count}} filter",
-      "active_filter_number_zero": "no filter",
+      "active_filter_number_zero": "bez filtera",
       "short_label": {
-        "value": "value",
-        "country": "country",
-        "brand": "brand",
-        "popularity": "popularity",
-        "campaign": "camp"
+        "value": "vrijednost",
+        "country": "zemlja",
+        "brand": "brend",
+        "popularity": "popularnost",
+        "campaign": "kamp"
       },
       "long_label": {
-        "type": "Question Type",
-        "value": "Proposed Value",
-        "country": "Product Country",
-        "brand": "Product Brand",
-        "popularity": "Sort by popularity",
+        "type": "Vrsta pitanja",
+        "value": "Predložena vrijednost",
+        "country": "Zemlja proizvoda",
+        "brand": "Marka proizvoda",
+        "popularity": "Poredaj po popularnosti",
         "edit": "",
-        "campaign": "Campaign"
+        "campaign": "Kampanja"
       },
       "placeholders": {
-        "value": "Value (Fanta, en:organic,...)",
-        "brand": "Auchan, Danone, Herta, ...",
-        "campaign": "Annotation campaigns"
+        "value": "Vrijednost (Fanta, en:organsko,...)",
+        "brand": "Auchan, Danone, Herta,...",
+        "campaign": "Kampanje za komentare"
       },
       "actions": {
-        "edit": "Edit Filters",
-        "cancel": "Cancel",
+        "edit": "Uredi filtere",
+        "cancel": "Otkaži",
         "apply": "Primijenite"
       }
     },
-    "other_questions": "Other questions",
-    "send": "Send",
-    "flag": "Something wrong? Report/flag the image!",
-    "unflag": "Unflag the image",
-    "reset_filters": "Reset filters",
-    "log_in": "Login",
-    "sign_up": "Sign up",
-    "login_title": "Make your annotation count",
-    "login_description": "You are not currently logged into Open Food Facts. To get your answers directly applied to products, and associated to your account, consider logging in to your Open Food Facts account, or creating one",
-    "please_wait_while_we_fetch_the_question": "Please wait while we fetch the question!"
+    "other_questions": "Ostala pitanja",
+    "send": "Pošalji",
+    "flag": "Nešto nije u redu? Prijavi/označi sliku!",
+    "unflag": "Uklonite zastavicu sa slike",
+    "reset_filters": "Resetujte filtere",
+    "log_in": "Prijava",
+    "sign_up": "Registriraj se",
+    "login_title": "Neka se vaša bilješka računa",
+    "login_description": "Trenutno niste prijavljeni na Open Food Facts. Da biste svoje odgovore primijenili direktno na proizvode i povezali s vašim računom, razmislite o tome da se prijavite na svoj Open Food Facts račun ili da ga kreirate",
+    "please_wait_while_we_fetch_the_question": "Molimo pričekajte dok ne preuzmemo pitanje!"
   },
   "menu": {
-    "title": "Hunger Games",
-    "games": "Games",
-    "questions": "Questions",
-    "logos": "Logos",
-    "logos-annotation": "Logos annotation",
-    "logos-search": "Logos search",
-    "logos-product-search": "Annotation per products",
-    "logos-deep-search": "Infinite annotation",
-    "manage": "Manage",
-    "insights": "Insights",
-    "nutritions": "Nutrition facts",
-    "settings": "Settings",
-    "eco-score": "Eco-score",
-    "dashboard": "Logos dashboard",
-    "tour": "Show tour",
-    "logged_in_user": "Logged as {{userName}}",
-    "log_in": "Click to login"
+    "title": "Igre gladi",
+    "games": "Igre",
+    "questions": "Pitanja",
+    "logos": "Logotipovi",
+    "logos-annotation": "Logo napomena",
+    "logos-search": "Pretraga logotipa",
+    "logos-product-search": "Napomena po proizvodima",
+    "logos-deep-search": "Beskonačna napomena",
+    "manage": "Upravljajte",
+    "insights": "Uvidi",
+    "nutritions": "Nutritivne činjenice",
+    "settings": "Postavke",
+    "eco-score": "Eko-rezultat",
+    "dashboard": "Logotipska instrument tabla",
+    "tour": "Upoznaj me",
+    "logged_in_user": "Prijavljen kao {{userName}}",
+    "log_in": "Kliknite za prijavu"
   },
   "insights": {
-    "insights": "Insights",
-    "barcode": "Barcode",
-    "barcode_placeholder": "barcode",
-    "value_tag": "Value tag",
+    "insights": "Uvidi",
+    "barcode": "Barkod",
+    "barcode_placeholder": "barkod",
+    "value_tag": "Oznaka vrijednosti",
     "value_placeholder": "ex: en:mueslis, bjorg,...",
-    "type": "Type",
-    "annotated": "Annotated",
-    "annotation": "Annotation",
-    "not_annotated": "Not annotated",
-    "all": "All",
-    "label": "Label",
-    "product_weight": "Product weight",
-    "category": "Category",
-    "expiration_date": "Expiration date",
-    "packager_code": "Packager code",
-    "skipped": "Skipped (-1)",
-    "rejected": "Rejected (0)",
-    "accepted": "Accepted (1)",
-    "search": "Search",
+    "type": "Tip",
+    "annotated": "Zabilježeno",
+    "annotation": "Anotacija",
+    "not_annotated": "Nije označeno",
+    "all": "Sve",
+    "label": "Oznaka",
+    "product_weight": "Težina proizvoda",
+    "category": "Kategorija",
+    "expiration_date": "Rok upotrebe",
+    "packager_code": "Šifra pakera",
+    "skipped": "Preskočeno (-1)",
+    "rejected": "Odbijeno (0)",
+    "accepted": "Prihvaćen (1)",
+    "search": "Pretraži",
     "count": "Count",
     "id": "Id",
     "value": "Value",
@@ -176,13 +176,13 @@
     "distance": "Distance:",
     "value": "Value",
     "submit": "Submit",
-    "type": "Type",
-    "label": "Label",
-    "brand": "Brand",
-    "packager_code": "Packager code",
-    "packaging": "Packaging",
+    "type": "Tip",
+    "label": "Oznaka",
+    "brand": "Brend",
+    "packager_code": "Šifra pakera",
+    "packaging": "Ambalaža",
     "qr_code": "QR code",
-    "category": "Category",
+    "category": "Kategorija",
     "nutrition_label": "Nutrition label",
     "no_logo": "Not a logo",
     "store": "Store",
@@ -192,7 +192,7 @@
     "full_image": "Full image",
     "update": "Update",
     "no_found": "No logo found",
-    "search": "Search",
+    "search": "Pretraži",
     "number_of_results": "Number of results:",
     "loading": "Loading…",
     "refresh": "Refresh",
@@ -200,8 +200,8 @@
     "load_more": "Load more",
     "no_results": "No logo found",
     "result_count": "Shows {{showing}} on {{available}} available",
-    "flag": "Something wrong? Report/flag the image!",
-    "unflag": "Unflag the image",
+    "flag": "Nešto nije u redu? Prijavi/označi sliku!",
+    "unflag": "Uklonite zastavicu sa slike",
     "crop_image_title": "crop of the logo",
     "no_more_questions": "No more questions about this logo. You can try to find more logos with the following game.",
     "loading_messages": {
@@ -218,7 +218,7 @@
     }
   },
   "settings": {
-    "settings": "Settings",
+    "settings": "Postavke",
     "language": "Languages",
     "save": "Save",
     "reportIssue": "Found a bug? Please let us know.",
@@ -227,41 +227,41 @@
     "dev_page_toggle": "Show {{name}} page",
     "join_community": "Join the community",
     "text1": "Open Food Facts is a collaborative project built by tens of thousands of volunteers and managed by a non-profit organization with 8 employees. We need your donations to fund the Open Food Facts 2024 budget and to continue to develop the project.",
-    "thank_you": "Thank you",
-    "donate": "Donate",
+    "thank_you": "Hvala vam",
+    "donate": "Donirajte",
     "join_the_community": {
-      "discover_our": "Discover our ",
-      "code_of_conduct": "Code of conduct ",
-      "join_us_on": "Join us on ",
+      "discover_our": "Otkrijte naše ",
+      "code_of_conduct": "Kodeks ponašanja ",
+      "join_us_on": "Pridružite nam se ",
       "forum": "Forum",
-      "subscribe_to_our": "Subscribe to our ",
-      "newsletter": "newsletter"
+      "subscribe_to_our": "Pretplatite se na naše ",
+      "newsletter": "pretplata na e-poštu"
     },
-    "discover_the_project": "Discover the project",
-    "Who_we_are": "Who we are",
-    "Vision_Mission_Values_and_Programs": "Vision, Mission, Values and Programs",
-    "FAQS": "FAQS",
+    "discover_the_project": "Otkrijte projekat",
+    "Who_we_are": "Ko smo mi",
+    "Vision_Mission_Values_and_Programs": "Vizija, misija, vrijednosti i programi",
+    "FAQS": "Često postavljana pitanja",
     "open_Food_Facts_blog": "Open Food Facts blog",
-    "Press": "Press",
+    "Press": "Pritisnite",
     "Open_Food_Facts_wiki": "Open Food Facts wiki (en)",
-    "Translators": "Translators",
-    "Partners": "Partners",
-    "Open_Beauty_Facts": "Open Beauty Facts - Cosmetics",
-    "text2": "A collaborative, free and open database of food products from around the world."
+    "Translators": "Prevodioci",
+    "Partners": "Partneri",
+    "Open_Beauty_Facts": "Open Beauty Facts - Kozmetika",
+    "text2": "Kolaborativna, besplatna i otvorena baza podataka prehrambenih proizvoda iz cijelog svijeta."
   },
   "helper": {
     "welcome": {
       "page1": {
-        "title": "Welcome to Hunger Games",
-        "text1": "Hunger Games is a collection of mini-games that help contribute to Open Food Facts in many ways. You can play are really exciting games from anywhere. Here is a guided tour of the entire website which will get you started.",
-        "text2": "Make sure to login to the Open Food Facts website to get credit for your contributions. If you make a mistake, please take the time to correct it by heading to the website.",
-        "text3": "In case of any doubt about the games, click on the question mark icon at the top right of the page, and you can reach us on slack at the #hunger-games channel"
+        "title": "Dobrodošli u Igre gladi",
+        "text1": "Igre gladi su kolekcija mini-igara koje na mnogo načina doprinose Otvorenim činjenicama o hrani. Možete igrati zaista uzbudljive igre s bilo kojeg mjesta. Evo obilaska cijele web stranice s vodičem koji će vam pomoći da počnete.",
+        "text2": "Obavezno se prijavite na web stranicu Open Food Facts kako biste dobili zasluge za svoje doprinose. Ako napravite grešku, odvojite vrijeme da je ispravite tako što ćete otići na web stranicu.",
+        "text3": "U slučaju bilo kakve sumnje u vezi igara, kliknite na ikonu upitnika u gornjem desnom kutu stranice i možete nas kontaktirati na slack na kanalu #hunger-games"
       },
       "page2": {
-        "title": "Questions Game",
-        "text1": "Does the food product belong to this brand?",
-        "text2": "Simply answer with a <strong>Yes/No</strong>! Don't know the answer? That's alright, just skip it.",
-        "text3": "You can also use your keyboard shortcuts: y,n and k.",
+        "title": "Igra pitanja",
+        "text1": "Da li prehrambeni proizvod pripada ovoj marki?",
+        "text2": "Jednostavno odgovorite sa <strong>Da/Ne</strong>! Ne znate odgovor? U redu je, samo preskočite.",
+        "text3": "Možete koristiti i prečice na tastaturi: y,n i k.",
         "text4": "You can <strong>filter</strong> the products based on country, brands, popularity and much more!",
         "text5": "If you don't want to do this every single time, you can also <strong>save the filters</strong> by clicking on the star. Next time you come back, find the saved filters on the home page itself"
       },
@@ -278,7 +278,7 @@
         "text4": "Eco-Score captures the total environmental footprint, making it easier for consumers to compare products and decide which is better for the environment."
       },
       "page5": {
-        "title": "Settings",
+        "title": "Postavke",
         "text1": "Set your preferred language, and report issues from our settings page.",
         "text2": "If you're a developer, you can also explore our database content using our dev mode."
       },
@@ -382,5 +382,8 @@
   "eco-score": {
     "description": "Here is a summary of questions that could improve Eco-Score computation",
     "countryLabel": "Country"
+  },
+  "ingredients": {
+    "description": "TODO: define the game"
   }
 }
