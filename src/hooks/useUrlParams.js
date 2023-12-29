@@ -45,7 +45,7 @@ export const getDefaultizedUrlParams = (defaultParameters, synonyms = {}) => {
 
 export const convertObjectParamsToUrlParams = (
   parameters,
-  defaultParameters
+  defaultParameters,
 ) => {
   const urlParams = new URLSearchParams(window.location.search);
 
@@ -79,7 +79,7 @@ export const convertObjectParamsToUrlParams = (
  */
 const useUrlParams = (defaultParams, synonyms) => {
   const [parameters, setParameters] = React.useState(() =>
-    getDefaultizedUrlParams(defaultParams)
+    getDefaultizedUrlParams(defaultParams),
   );
   const { search } = useLocation();
 
@@ -88,7 +88,7 @@ const useUrlParams = (defaultParams, synonyms) => {
       const newParams = getDefaultizedUrlParams(defaultParams, synonyms);
 
       const shouldUpdate = Object.keys(defaultParams).some(
-        (key) => newParams[key] !== prevParams[key]
+        (key) => newParams[key] !== prevParams[key],
       );
       return shouldUpdate ? newParams : prevParams;
     });
@@ -105,7 +105,7 @@ const useUrlParams = (defaultParams, synonyms) => {
       setParameters(newParams);
       setUrlParams(newParams, defaultParams);
     },
-    [parameters, defaultParams]
+    [parameters, defaultParams],
   );
   return [parameters, updateParameters];
 };

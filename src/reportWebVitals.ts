@@ -1,5 +1,5 @@
 const reportWebVitals = async (
-  onPerfEntry: undefined | ((value: any) => void) = undefined
+  onPerfEntry: undefined | ((value: any) => void) = undefined,
 ) => {
   if (onPerfEntry && onPerfEntry instanceof Function) {
     const { onCLS, onFID, onFCP, onLCP, onTTFB } = await import("web-vitals");

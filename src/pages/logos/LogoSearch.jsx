@@ -18,7 +18,7 @@ const transformLogo = (logo) => {
     logo.image.url ||
     robotoff.getCroppedImageUrl(
       off.getImageUrl(logo.image.source_image),
-      logo.bounding_box
+      logo.bounding_box,
     );
 
   return { ...logo, image: { ...logo.image, src } };
@@ -30,7 +30,7 @@ const request = async ({ barcode, value, type, count }) => {
     value,
     type,
     Number.parseInt(count),
-    true
+    true,
   );
 
   return {
@@ -50,7 +50,7 @@ export default function LogoSearch() {
       barcode: "",
       count: 25,
     },
-    { value: ["value_tag", "valueTag"] }
+    { value: ["value_tag", "valueTag"] },
   );
 
   const [result, setResult] = React.useState({ logos: [], count: undefined });
@@ -59,7 +59,7 @@ export default function LogoSearch() {
     (params) => {
       setSearchState(params);
     },
-    [setSearchState]
+    [setSearchState],
   );
 
   const filterStateHasValue =

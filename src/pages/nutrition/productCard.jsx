@@ -42,7 +42,7 @@ export default function ProductNutriments({ setNutriments, nutriments }) {
       setPage((prevPage) => ++prevPage);
     }
     const resArr = nutriments.filter(
-      (nutr) => nutr.display && nutr.value !== null && nutr.value >= 0
+      (nutr) => nutr.display && nutr.value !== null && nutr.value >= 0,
     );
     const message = resArr.length ? resArr : t("nutrition.value_missing");
     console.log(message);

@@ -62,7 +62,7 @@ const isMatching = (prefix) => (name) =>
 
 Object.keys(taxonomyURLfileName).forEach(async (taxonomyType) => {
   const { data } = await axios.get(
-    `https://static.openfoodfacts.org/data/taxonomies/${taxonomyURLfileName[taxonomyType]}.full.json`
+    `https://static.openfoodfacts.org/data/taxonomies/${taxonomyURLfileName[taxonomyType]}.full.json`,
   );
 
   LANG.forEach((lang) => {
@@ -85,7 +85,7 @@ Object.keys(taxonomyURLfileName).forEach(async (taxonomyType) => {
     LETTERS.forEach((l1) => {
       const prefix = `${l1}`;
       const solutions1 = exportedData.filter(({ name }) =>
-        isMatching(prefix)(name)
+        isMatching(prefix)(name),
       );
       if (solutions1.length === 0) {
         return;
@@ -99,7 +99,7 @@ Object.keys(taxonomyURLfileName).forEach(async (taxonomyType) => {
       LETTERS.forEach((l2) => {
         const prefix = `${l1}${l2}`;
         const solutions2 = solutions1.filter(({ name }) =>
-          isMatching(prefix)(name)
+          isMatching(prefix)(name),
         );
         if (solutions2.length === 0) {
           return;
@@ -113,7 +113,7 @@ Object.keys(taxonomyURLfileName).forEach(async (taxonomyType) => {
         LETTERS.forEach((l3) => {
           const prefix = `${l1}${l2}${l3}`;
           const solutions3 = solutions2.filter(({ name }) =>
-            isMatching(prefix)(name)
+            isMatching(prefix)(name),
           );
           if (solutions3.length === 0) {
             return;

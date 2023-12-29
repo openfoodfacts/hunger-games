@@ -15,7 +15,7 @@ export const useOptions = (fileName: Files, lang: string) => {
   React.useEffect(() => {
     axios
       .get(
-        `https://static.openfoodfacts.org/data/taxonomies/${fileName}.full.json`
+        `https://static.openfoodfacts.org/data/taxonomies/${fileName}.full.json`,
       )
       .then(({ data }) => {
         const newOptions: Option[] = Object.keys(data)

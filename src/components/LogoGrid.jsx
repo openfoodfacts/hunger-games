@@ -50,7 +50,7 @@ const LogoCard = React.memo(
           await robotoff.updateLogo(id, value, type);
         }
       },
-      [id]
+      [id],
     );
 
     const handleClick = (event) => {
@@ -152,7 +152,7 @@ const LogoCard = React.memo(
         )}
       </Card>
     );
-  }
+  },
 );
 
 const LogoGrid = (props) => {
@@ -200,7 +200,7 @@ const LogoGrid = (props) => {
         const maxIndex = Math.max(index, lastClicked.index);
         setLogoSelectionRange(
           logoIds.slice(minIndex, maxIndex + 1),
-          newSelectionState
+          newSelectionState,
         );
         setLastClicked({ selected: newSelectionState, index });
       },

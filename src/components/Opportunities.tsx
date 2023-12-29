@@ -127,7 +127,7 @@ const Opportunities = (props) => {
   }, [type, campaign, country, page]);
 
   const translation = useTranslation(
-    remainingQuestions.map(([value]) => value)
+    remainingQuestions.map(([value]) => value),
   );
 
   const lang = getLang();

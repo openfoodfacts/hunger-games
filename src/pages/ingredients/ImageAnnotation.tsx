@@ -118,7 +118,7 @@ function Annotation({ code, data, isLoading, error }: AnnotationProps) {
               </Button>
             </Stack>
           </Stack>
-        )
+        ),
       )}
       {showOCR && (
         <p>
@@ -130,7 +130,7 @@ function Annotation({ code, data, isLoading, error }: AnnotationProps) {
               </b>
             ) : (
               text
-            )
+            ),
           )}
         </p>
       )}

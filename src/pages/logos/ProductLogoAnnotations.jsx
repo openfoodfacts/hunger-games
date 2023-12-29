@@ -58,7 +58,7 @@ const transformLogo = (logo) => {
     logo.image.url ||
     robotoff.getCroppedImageUrl(
       off.getImageUrl(logo.image.source_image),
-      logo.bounding_box
+      logo.bounding_box,
     );
 
   return { ...logo, selected: false, image: { ...logo.image, src } };
@@ -69,7 +69,7 @@ const requestProductLogos = async (barcode) => {
     barcode,
     undefined,
     undefined,
-    30
+    30,
   );
 
   return data.logos.map(transformLogo);
@@ -173,7 +173,7 @@ const useLogoFetching = (filter) => {
           annotation_type: anotation.type,
           annotation_value: anotation.value,
         };
-      })
+      }),
     );
   }, []);
 
@@ -198,7 +198,7 @@ export default function AnnotateLogosFromProducts() {
     {
       tag: ["valueTag", "value_tag", "value"],
       tagType: "type",
-    }
+    },
   );
 
   const [internalFilter, setInternalFilter] = React.useState(() => filter);
@@ -319,7 +319,7 @@ export default function AnnotateLogosFromProducts() {
             afterAnnotation={(annotatedLogos, annotation) => {
               inernalAnnotation(
                 annotatedLogos.map((l) => l.id),
-                annotation
+                annotation,
               );
             }}
           />

@@ -119,7 +119,7 @@ const LogoSearchForm = (props) => {
               value: innerValue || "",
               barcode: innerBarcode || "",
               count: innerCount,
-            })
+            }),
           )
         }
         variant="contained"

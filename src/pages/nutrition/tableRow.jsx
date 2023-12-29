@@ -37,7 +37,7 @@ export default function TableRowComp({
           select
           onChange={onchangeHandler(
             nutriment.off_nutriment_id,
-            "quantification"
+            "quantification",
           )}
           value={nutriment.quantification}
           sx={{ minWidth: 80 }}

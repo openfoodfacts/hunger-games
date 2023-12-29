@@ -22,17 +22,17 @@ const robotoff = {
       console.log(
         `Annotated, ${ROBOTOFF_API_URL}/insights/annotate`,
         new URLSearchParams(
-          `insight_id=${insightId}&annotation=${annotation}&update=1`
+          `insight_id=${insightId}&annotation=${annotation}&update=1`,
         ),
-        { withCredentials: true }
+        { withCredentials: true },
       );
     } else {
       return axios.post(
         `${ROBOTOFF_API_URL}/insights/annotate`,
         new URLSearchParams(
-          `insight_id=${insightId}&annotation=${annotation}&update=1`
+          `insight_id=${insightId}&annotation=${annotation}&update=1`,
         ),
-        { withCredentials: true }
+        { withCredentials: true },
       );
     }
   },
@@ -43,7 +43,7 @@ const robotoff = {
       .then((result) => {
         const questions = result.data.questions;
         result.data.questions = questions.filter(
-          (question) => question.source_image_url
+          (question) => question.source_image_url,
         );
         return result;
       });
@@ -82,7 +82,7 @@ const robotoff = {
           count,
           page,
         }),
-      }
+      },
     );
   },
 
@@ -101,7 +101,7 @@ const robotoff = {
         value,
         type,
       }),
-      { withCredentials: true }
+      { withCredentials: true },
     );
   },
 
@@ -140,7 +140,7 @@ const robotoff = {
       removeEmptyKeys({
         annotations,
       }),
-      { withCredentials: true }
+      { withCredentials: true },
     );
   },
 
@@ -150,7 +150,7 @@ const robotoff = {
     valueTag = "",
     annotation = "",
     page = 1,
-    count = 25
+    count = 25,
   ) {
     let annotated;
     if (annotation.length && annotation === "not_annotated") {
@@ -181,7 +181,7 @@ const robotoff = {
 
   getLogosImages(logoIds) {
     return axios.get(
-      `${ROBOTOFF_API_URL}/images/logos?logo_ids=${logoIds.join(",")}`
+      `${ROBOTOFF_API_URL}/images/logos?logo_ids=${logoIds.join(",")}`,
     );
   },
 
@@ -214,7 +214,7 @@ const robotoff = {
     }
 
     return axios.get(
-      `${ROBOTOFF_API_URL}/predict/nutrient?ocr_url=https://images.openfoodfacts.org/images/products/${productCodeForOcrUrl}/${imgid}.json`
+      `${ROBOTOFF_API_URL}/predict/nutrient?ocr_url=https://images.openfoodfacts.org/images/products/${productCodeForOcrUrl}/${imgid}.json`,
     );
   },
 
@@ -235,7 +235,7 @@ const robotoff = {
       })
         .filter((key) => params[key] !== undefined)
         .map((key) => `${key}=${params[key]}`)
-        .join("&")}`
+        .join("&")}`,
     );
   },
 };

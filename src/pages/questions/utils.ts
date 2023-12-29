@@ -82,7 +82,7 @@ export const useFlagImage = (barcode) => {
       externalApi.addImageFlag({ barcode, imgid, url: src });
       setFlagged((prev) => [...prev, imgid]);
     },
-    [barcode]
+    [barcode],
   );
 
   const deleteFlagImage = React.useCallback(
@@ -91,10 +91,10 @@ export const useFlagImage = (barcode) => {
       externalApi.removeImageFlag({ barcode, imgid });
 
       setFlagged((prev) =>
-        prev.filter((flaggedImageId) => flaggedImageId !== imgid)
+        prev.filter((flaggedImageId) => flaggedImageId !== imgid),
       );
     },
-    [barcode]
+    [barcode],
   );
 
   // Reset flags
@@ -189,7 +189,7 @@ export const getValueTagExamplesURL = (question) => {
     question.insight_type
   ) {
     return `${OFF_URL}/${question.insight_type}/${reformatValueTag(
-      question?.value_tag
+      question?.value_tag,
     )}`;
   }
   return "";

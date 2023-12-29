@@ -37,16 +37,16 @@ const FilterForm = ({ filterState = {}, setFilterState }) => {
   const { t } = useTranslation();
 
   const [innerBarcode, setInnerBarcode] = useControled(
-    filterState.barcode ?? ""
+    filterState.barcode ?? "",
   );
   const [innerValueTag, setInnerValueTag] = useControled(
-    filterState.valueTag ?? ""
+    filterState.valueTag ?? "",
   );
   const [innerInsightType, setInnerInsightType] = useControled(
-    filterState.insightType ?? ""
+    filterState.insightType ?? "",
   );
   const [innerAnnotationStatus, setInnerAnnotationStatus] = useControled(
-    filterState.annotationStatus ?? ""
+    filterState.annotationStatus ?? "",
   );
 
   const validateFilter = React.useCallback(() => {

@@ -77,15 +77,15 @@ const LogoQuesitonCard = (props) => {
         setCroppedImageUrl(
           robotoff.getCroppedImageUrl(
             off.getImageUrl(data?.source_image),
-            data.data.bounding_box
-          )
+            data.data.bounding_box,
+          ),
         );
       } else if (bounding_box && data?.source_image) {
         setCroppedImageUrl(
           robotoff.getCroppedImageUrl(
             off.getImageUrl(data?.source_image),
-            bounding_box
-          )
+            bounding_box,
+          ),
         );
       }
     };
@@ -163,7 +163,7 @@ function LogoQuestionValidator() {
       imageSize: 200,
       zoomOnLogo: true,
     },
-    {}
+    {},
   );
   const { valueTag } = useParams();
   const imageSize = Number.parseInt(controlledState.imageSize);
@@ -181,7 +181,7 @@ function LogoQuestionValidator() {
           selectedOption?.predictor === undefined
             ? "universal-logo-detector"
             : selectedOption?.predictor,
-      })
+      }),
     );
   }, [dispatch, valueTag, selectedOption]);
 
@@ -190,13 +190,13 @@ function LogoQuestionValidator() {
 
   const buffer = useSelector(questionsToAnswerSelector);
   const numberOfQuestionsAvailable = useSelector(
-    numberOfQuestionsAvailableSelector
+    numberOfQuestionsAvailableSelector,
   );
   const filterState = useSelector(filterStateSelector);
   const answerQuestion = React.useCallback(
     ({ insight_id, value }) =>
       dispatch(answerQuestionAction({ insight_id, value })),
-    [dispatch]
+    [dispatch],
   );
 
   const remainingQuestionNb = useSelector(nbOfQuestionsInBufferSelector);
@@ -235,7 +235,7 @@ function LogoQuestionValidator() {
       setSelectedIds((prev) =>
         prev.includes(insight_id)
           ? prev.filter((id) => id !== insight_id)
-          : [...prev, insight_id]
+          : [...prev, insight_id],
       );
     }
     setLastClickedId(insight_id);
@@ -246,7 +246,7 @@ function LogoQuestionValidator() {
       return;
     }
     const lastClickedIndexInBuffer = buffer.findIndex(
-      (question) => question.insight_id === lastClickedId
+      (question) => question.insight_id === lastClickedId,
     );
     if (lastClickedIndexInBuffer === -1) {
       return;
@@ -377,7 +377,7 @@ function LogoQuestionValidator() {
         {buffer
           .filter(
             (question) =>
-              question.insight_id && question.insight_id !== "NO_QUESTION_LEFT"
+              question.insight_id && question.insight_id !== "NO_QUESTION_LEFT",
           )
           .map((question) => (
             <LogoQuesitonCard
@@ -412,7 +412,7 @@ function LogoQuestionValidator() {
                 answerQuestion({
                   value: 0,
                   insight_id,
-                })
+                }),
               );
               setSelectedIds([]);
             }}
@@ -430,7 +430,7 @@ function LogoQuestionValidator() {
                 answerQuestion({
                   value: 1,
                   insight_id,
-                })
+                }),
               );
               setSelectedIds([]);
             }}

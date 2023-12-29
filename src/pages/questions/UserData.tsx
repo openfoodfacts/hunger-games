@@ -31,7 +31,7 @@ const NB_DISPLAYED_QUESTIONS = 30;
 const UserData = () => {
   const { t } = useTranslation();
   const numberOfQuestionsAvailable = useSelector(
-    numberOfQuestionsAvailableSelector
+    numberOfQuestionsAvailableSelector,
   );
   const answered = useSelector(answeredQuestionsSelector);
 
@@ -47,12 +47,12 @@ const UserData = () => {
   }, [answered.length, isLoggedIn, loginAlreadyProposed]);
 
   let displayedAnswers = answered.filter(
-    (question) => question.validationValue !== -1
+    (question) => question.validationValue !== -1,
   );
 
   displayedAnswers = displayedAnswers.slice(
     Math.max(0, displayedAnswers.length - NB_DISPLAYED_QUESTIONS),
-    displayedAnswers.length
+    displayedAnswers.length,
   );
 
   return (
@@ -91,7 +91,7 @@ const UserData = () => {
                 <CheckCircleOutlineIcon color="success" sx={{ ml: 2 }} />
               )}
             </Stack>
-          )
+          ),
         )}
       </Stack>
       <Dialog

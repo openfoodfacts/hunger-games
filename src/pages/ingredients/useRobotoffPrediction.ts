@@ -18,7 +18,7 @@ type GetIngredientsResponse = {
 type GetIngredientsError = { error: string; description: string };
 
 function isError(
-  rep: GetIngredientsResponse | GetIngredientsError
+  rep: GetIngredientsResponse | GetIngredientsError,
 ): rep is GetIngredientsError {
   return (rep as GetIngredientsError).error !== undefined;
 }
@@ -31,7 +31,7 @@ export type DataType = {
 };
 
 export default function useRobotoffPrediction(
-  fetchUrl: string
+  fetchUrl: string,
 ): [null | DataType, () => void, boolean, null | string] {
   const [isLoading, setIsLoading] = React.useState(false);
   const [error, setError] = React.useState(null);

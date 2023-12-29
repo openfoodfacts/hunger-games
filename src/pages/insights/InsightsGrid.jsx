@@ -238,7 +238,7 @@ const InsightGrid = ({ filterState = {}, setFilterState }) => {
         filterState.valueTag,
         filterState.annotationStatus,
         pageState.page,
-        PAGE_SIZE
+        PAGE_SIZE,
       )
       .then((result) => {
         if (isValid) {
@@ -246,13 +246,13 @@ const InsightGrid = ({ filterState = {}, setFilterState }) => {
           setPageState((prevState) =>
             newRowCount !== prevState.rowCount
               ? { ...prevState, rowCount: newRowCount }
-              : prevState
+              : prevState,
           );
           setRows(
             result.data.insights.map((row) => ({
               ...row,
               value_tag: row.value_tag ?? row.value,
-            }))
+            })),
           );
           setIsLoading(false);
         }

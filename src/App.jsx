@@ -23,13 +23,13 @@ import Loader from "./pages/loader";
 
 const EcoScorePage = React.lazy(() => import("./pages/eco-score"));
 const LogoAnnotationPage = React.lazy(() =>
-  import("./pages/logos/LogoAnnotation")
+  import("./pages/logos/LogoAnnotation"),
 );
 const LogoSearchPage = React.lazy(() => import("./pages/logos/LogoSearch"));
 const LogoUpdatePage = React.lazy(() => import("./pages/logos/LogoUpdate"));
 const LogoDeepSearch = React.lazy(() => import("./pages/logos/LogoDeepSearch"));
 const ProductLogoAnnotationPage = React.lazy(() =>
-  import("./pages/logos/ProductLogoAnnotations")
+  import("./pages/logos/ProductLogoAnnotations"),
 );
 const SettingsPage = React.lazy(() => import("./pages/settings"));
 const QuestionsPage = React.lazy(() => import("./pages/questions"));
@@ -39,11 +39,11 @@ const Home = React.lazy(() => import("./pages/home"));
 const Nutrition = React.lazy(() => import("./pages/nutrition"));
 const FlaggedImages = React.lazy(() => import("./pages/flaggedImages"));
 const ShouldLoggedinPage = React.lazy(() =>
-  import("./pages/shouldLoggedinPage")
+  import("./pages/shouldLoggedinPage"),
 );
 const PackagingPage = React.lazy(() => import("./pages/packaging"));
 const LogoQuestionValidator = React.lazy(() =>
-  import("./pages/logosValidator/LogoQuestionValidator")
+  import("./pages/logosValidator/LogoQuestionValidator"),
 );
 const DashBoard = React.lazy(() => import("./pages/logosValidator/DashBoard"));
 const GalaBoard = React.lazy(() => import("./pages/GalaPage"));
@@ -219,7 +219,7 @@ export default function App() {
         });
       },
     }),
-    []
+    [],
   );
 
   const theme = createTheme(getToken(mode));

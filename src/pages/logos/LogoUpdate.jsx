@@ -59,7 +59,7 @@ const UpdateLogoForm = ({
         await robotoff.updateLogo(logoId, value, type);
       }
     },
-    []
+    [],
   );
 
   return (

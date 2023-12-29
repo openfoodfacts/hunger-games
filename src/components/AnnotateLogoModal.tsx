@@ -36,7 +36,7 @@ const AnnotateLogoModal = (props) => {
               logo_id: id,
               value,
               type,
-            }))
+            })),
         );
         matomoTrackLogoAnnotation({
           game,
@@ -53,7 +53,7 @@ const AnnotateLogoModal = (props) => {
       closeAnnotation();
       afterAnnotation?.(
         logos.filter((logo) => logo.selected),
-        { value, type }
+        { value, type },
       );
       // eslint-disable-next-line no-empty
     } catch {}
