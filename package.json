@@ -27,9 +27,9 @@
     "web-vitals": "^3.0.4"
   },
   "devDependencies": {
-    "@types/node": "^20.8.10",
-    "@types/react": "^18.2.34",
-    "@types/react-dom": "^18.2.14",
+    "@types/node": "^20.10.5",
+    "@types/react": "^18.2.46",
+    "@types/react-dom": "^18.2.18",
     "@typescript-eslint/eslint-plugin": "latest",
     "@typescript-eslint/parser": "latest",
     "@vitejs/plugin-react": "^4.1.1",
@@ -38,7 +38,7 @@
     "eslint-plugin-react": "^7.33.2",
     "husky": "^8.0.2",
     "prettier": "^3.0.0",
-    "typescript": "^5.2.2",
+    "typescript": "^5.3.3",
     "vite": "^4.5.0"
   },
   "scripts": {
