@@ -21,9 +21,9 @@ axios("https://static.openfoodfacts.org/data/taxonomies/countries.json")
                 ? undefined
                 : value.country_code_2.en,
           }))
-          .sort((a, b) => a.label.localeCompare(b.label))
+          .sort((a, b) => a.label.localeCompare(b.label)),
       ),
-      () => console.log("Countries updated")
+      () => console.log("Countries updated"),
     );
   })
   .catch(console.error);

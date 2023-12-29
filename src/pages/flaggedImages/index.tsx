@@ -75,8 +75,8 @@ export default function FlaggedImages() {
                       });
                       setData((prev) =>
                         prev.filter(
-                          (line) => line.code !== code || line.imgid !== imgid
-                        )
+                          (line) => line.code !== code || line.imgid !== imgid,
+                        ),
                       );
                     }}
                   >

@@ -37,15 +37,15 @@ export function useFilterSearch() {
     DEFAULT_FILTER_URL_PARAMS,
     {
       valueTag: ["value_tag", "value"],
-    }
+    },
   );
   const exposedParameters = React.useMemo(
     () => convertUrlToParams(urlSearchParams),
-    [urlSearchParams]
+    [urlSearchParams],
   );
 
   const [isFavorite, setIsFavorite] = React.useState(
-    localFavorites.isSaved(exposedParameters)
+    localFavorites.isSaved(exposedParameters),
   );
 
   const setSearchParams = React.useCallback(
@@ -58,7 +58,7 @@ export function useFilterSearch() {
       }
 
       const isDifferent = Object.keys(DEFAULT_FILTER_STATE).some(
-        (key) => newExposedParameters[key] !== exposedParameters[key]
+        (key) => newExposedParameters[key] !== exposedParameters[key],
       );
 
       if (!isDifferent) {
@@ -68,7 +68,7 @@ export function useFilterSearch() {
       setIsFavorite(localFavorites.isSaved(newExposedParameters));
       setUrlSearchParams(convertParamsToUrl(newExposedParameters));
     },
-    [exposedParameters, setUrlSearchParams]
+    [exposedParameters, setUrlSearchParams],
   );
 
   const toggleFavorite = React.useCallback(
@@ -83,7 +83,7 @@ export function useFilterSearch() {
 
       setIsFavorite(!isSaved);
     },
-    [exposedParameters]
+    [exposedParameters],
   );
 
   return [exposedParameters, setSearchParams, isFavorite, toggleFavorite];

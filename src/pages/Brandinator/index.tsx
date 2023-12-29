@@ -19,7 +19,7 @@ export default function BrandinatorPage() {
 
   const handleFilterChage = (
     event: Event,
-    newValue: number | [number, number]
+    newValue: number | [number, number],
   ) => {
     if (!Array.isArray(newValue)) {
       return;
@@ -58,7 +58,7 @@ export default function BrandinatorPage() {
         {sortedData
           .filter(
             ({ value }) =>
-              value >= getValue(filter[0]) && value <= getValue(filter[1])
+              value >= getValue(filter[0]) && value <= getValue(filter[1]),
           )
           .map(({ label, value }) => (
             <li key={label}>

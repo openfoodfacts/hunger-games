@@ -308,7 +308,7 @@ const ResponsiveAppBar = () => {
                     window
                       .open(
                         "https://world.openfoodfacts.org/cgi/login.pl",
-                        "_blank"
+                        "_blank",
                       )
                       .focus();
                   }
@@ -448,7 +448,7 @@ const ResponsiveAppBar = () => {
                         window
                           .open(
                             "https://world.openfoodfacts.org/cgi/login.pl",
-                            "_blank"
+                            "_blank",
                           )
                           .focus();
                       }

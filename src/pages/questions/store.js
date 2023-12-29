@@ -20,10 +20,10 @@ export const fetchQuestions = createAsyncThunk(
     const { data } = await robotoff.questions(
       state.questionBuffer.filterState,
       PAGE_SIZE,
-      state.questionBuffer.page
+      state.questionBuffer.page,
     );
     return { page: state.questionBuffer.page, pages_size: PAGE_SIZE, ...data };
-  }
+  },
 );
 
 export const answerQuestion = createAsyncThunk(
@@ -33,7 +33,7 @@ export const answerQuestion = createAsyncThunk(
       return await sleep(500);
     }
     return await robotoff.annotate(insight_id, value);
-  }
+  },
 );
 
 export const questionBuffer = createSlice({
@@ -51,7 +51,7 @@ export const questionBuffer = createSlice({
     updateFilter: (state, action) => {
       if (
         Object.keys(action.payload).every(
-          (key) => state.filterState[key] === action.payload[key]
+          (key) => state.filterState[key] === action.payload[key],
         )
       ) {
         // Early return if new state is similar to the current one
@@ -70,11 +70,11 @@ export const questionBuffer = createSlice({
         const { questions, count, page, pages_size } = payload;
 
         const newQuestions = questions.filter(
-          (question) => state.questions[question.insight_id] === undefined
+          (question) => state.questions[question.insight_id] === undefined,
         );
 
         const questionsToAdd = newQuestions.filter(
-          (question) => question.source_image_url
+          (question) => question.source_image_url,
         );
 
         const newQuestionsObject = {};
@@ -112,7 +112,7 @@ export const questionBuffer = createSlice({
         return {
           ...state,
           remainingQuestions: state.remainingQuestions.filter(
-            (question_id) => question_id !== insight_id
+            (question_id) => question_id !== insight_id,
           ),
           answeredQuestions: [...state.answeredQuestions, insight_id],
           numberOfQuestionsAvailable: state.numberOfQuestionsAvailable - 1,
@@ -166,54 +166,54 @@ const getSubState = (state) => state.questionBuffer;
 
 export const nbOfQuestionsInBufferSelector = createSelector(
   getSubState,
-  (bufferState) => bufferState.remainingQuestions.length
+  (bufferState) => bufferState.remainingQuestions.length,
 );
 
 export const nextPageSelector = createSelector(
   getSubState,
-  (bufferState) => bufferState.page
+  (bufferState) => bufferState.page,
 );
 
 export const currentQuestionSelector = createSelector(
   getSubState,
   (bufferState) =>
-    bufferState.questions[bufferState.remainingQuestions[0]] ?? null
+    bufferState.questions[bufferState.remainingQuestions[0]] ?? null,
 );
 
 export const questionsToAnswerSelector = createSelector(
   getSubState,
   (bufferState) =>
     bufferState.remainingQuestions.map(
-      (insight_id) => bufferState.questions[insight_id]
-    )
+      (insight_id) => bufferState.questions[insight_id],
+    ),
 );
 
 export const filterStateSelector = createSelector(
   getSubState,
-  (bufferState) => bufferState.filterState
+  (bufferState) => bufferState.filterState,
 );
 
 export const answeredQuestionsSelector = createSelector(
   getSubState,
   (bufferState) =>
     bufferState.answeredQuestions.map(
-      (insight_id) => bufferState.questions[insight_id]
-    )
+      (insight_id) => bufferState.questions[insight_id],
+    ),
 );
 
 export const nextImagesSelector = createSelector(getSubState, (bufferState) =>
   bufferState.remainingQuestions
     .slice(1, 5)
     .map((insight_id) => bufferState.questions[insight_id]?.source_image_url)
-    .filter((image_url) => !!image_url)
+    .filter((image_url) => !!image_url),
 );
 
 export const isLoadingSelector = createSelector(
   getSubState,
-  (bufferState) => !bufferState.fetchCompletted
+  (bufferState) => !bufferState.fetchCompletted,
 );
 
 export const numberOfQuestionsAvailableSelector = createSelector(
   getSubState,
-  (bufferState) => bufferState.numberOfQuestionsAvailable
+  (bufferState) => bufferState.numberOfQuestionsAvailable,
 );

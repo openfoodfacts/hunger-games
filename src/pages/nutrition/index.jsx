@@ -15,16 +15,16 @@ export default function Nutrition() {
           return nutriment_id === nutriment.off_nutriment_id
             ? { ...nutriment, [propertyKey]: event.target.value }
             : nutriment;
-        })
+        }),
       );
     },
-    []
+    [],
   );
   function deleteItem(nutr) {
     setNutriments((prev) =>
       prev.map((nutriment) =>
-        nutriment === nutr ? { ...nutriment, display: false } : nutriment
-      )
+        nutriment === nutr ? { ...nutriment, display: false } : nutriment,
+      ),
     );
   }
 

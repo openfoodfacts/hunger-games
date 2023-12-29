@@ -57,7 +57,7 @@ const getChipsParams = (filterState, setFilterState, t) =>
       key: "countryFilter",
       display: !!filterState?.countryFilter,
       label: `${t("questions.filters.short_label.country")}: ${capitaliseName(
-        filterState?.countryFilter
+        filterState?.countryFilter,
       )}`,
       onDelete: () => {
         setFilterState({ countryFilter: "" });
@@ -114,7 +114,7 @@ export const QuestionFilter = () => {
 
   if (
     Object.keys(exposedParameters).some(
-      (key) => exposedParameters[key] !== filterState[key]
+      (key) => exposedParameters[key] !== filterState[key],
     )
   ) {
     dispatch(updateFilter(exposedParameters));
@@ -126,24 +126,24 @@ export const QuestionFilter = () => {
   };
   // internal values
   const [innerInsightType, setInnerInsightType] = React.useState(
-    filterState?.insightType
+    filterState?.insightType,
   );
   const [innerValueTag, setInnerValueTag] = React.useState(
-    filterState?.valueTag
+    filterState?.valueTag,
   );
   const [innerCountryFilter, setInnerCountryFilter] = React.useState(() =>
     filterState?.countryFilter
       ? getCountryObject(filterState?.countryFilter)
-      : null
+      : null,
   );
   const [innerBrandFilter, setInnerBrandFilter] = React.useState(
-    filterState?.brandFilter
+    filterState?.brandFilter,
   );
   const [innerSortByPopularity, setInnerSortByPopularity] = React.useState(
-    filterState?.sortByPopularity
+    filterState?.sortByPopularity,
   );
   const [innerCampaign, setInnerCampaign] = React.useState(
-    filterState?.campaign
+    filterState?.campaign,
   );
 
   const resetFilter = () => {
@@ -152,7 +152,7 @@ export const QuestionFilter = () => {
     setInnerCountryFilter(
       filterState?.countryFilter
         ? getCountryObject(filterState?.countryFilter)
-        : null
+        : null,
     );
     setInnerBrandFilter(filterState?.brandFilter);
     setInnerSortByPopularity(filterState?.sortByPopularity);
@@ -178,12 +178,12 @@ export const QuestionFilter = () => {
     setInnerInsightType((prevInsightType) =>
       prevInsightType !== filterState.insightType
         ? filterState.insightType
-        : prevInsightType
+        : prevInsightType,
     );
     setInnerValueTag((prevInnerValueTag) =>
       prevInnerValueTag !== filterState?.valueTag
         ? filterState?.valueTag
-        : prevInnerValueTag
+        : prevInnerValueTag,
     );
     setInnerCountryFilter((prevInnerCountryFilter) => {
       if (filterState?.countryFilter === "") {
@@ -196,17 +196,17 @@ export const QuestionFilter = () => {
     setInnerBrandFilter((prevInnerBrandFilter) =>
       prevInnerBrandFilter !== filterState?.brandFilter
         ? filterState?.brandFilter
-        : prevInnerBrandFilter
+        : prevInnerBrandFilter,
     );
     setInnerSortByPopularity((prevInnerSortByPopularity) =>
       prevInnerSortByPopularity !== filterState?.sortByPopularity
         ? filterState?.sortByPopularity
-        : prevInnerSortByPopularity
+        : prevInnerSortByPopularity,
     );
     setInnerCampaign((prevInnerInnerCampaign) =>
       prevInnerInnerCampaign !== filterState?.campaign
         ? filterState?.campaign
-        : prevInnerInnerCampaign
+        : prevInnerInnerCampaign,
     );
   }, [filterState]);
 
@@ -224,7 +224,7 @@ export const QuestionFilter = () => {
   const chipsParams = getChipsParams(
     filterState,
     (newFilterState) => updateSearchParams(newFilterState),
-    t
+    t,
   );
 
   return (

@@ -144,7 +144,7 @@ const QuestionDisplay = ({ question, productData }) => {
       dispatch(answerQuestionAction({ insight_id, value }));
       matomoTrackAnswerQuestions(value);
     },
-    [dispatch, matomoTrackAnswerQuestions]
+    [dispatch, matomoTrackAnswerQuestions],
   );
 
   const valueTagQuestionsURL = getValueTagQuestionsURL(filterState, question);
@@ -155,7 +155,7 @@ const QuestionDisplay = ({ question, productData }) => {
 
   const nbOfPotentialQuestion = usePotentialQuestionNumber(
     filterState,
-    question
+    question,
   );
   const shortcuts = useKeyboardShortcuts(question, answerQuestion);
 

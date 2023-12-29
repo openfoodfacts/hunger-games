@@ -17,7 +17,7 @@ const fetchUserData = async (userName) => {
     .catch(() => undefined);
   const contributorPromise = axios
     .get(
-      `https://world.openfoodfacts.org/contributor/${userName}.json?fields=count`
+      `https://world.openfoodfacts.org/contributor/${userName}.json?fields=count`,
     )
     .then(({ data }) => {
       return data?.count;
@@ -25,7 +25,7 @@ const fetchUserData = async (userName) => {
     .catch(() => undefined);
   const photographerPromise = axios
     .get(
-      `https://world.openfoodfacts.org/photographer/${userName}.json?fields=count`
+      `https://world.openfoodfacts.org/photographer/${userName}.json?fields=count`,
     )
     .then(({ data }) => {
       return data?.count;

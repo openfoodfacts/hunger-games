@@ -4,35 +4,33 @@ import WindowIcon from "@mui/icons-material/Window";
 import AndroidIcon from "@mui/icons-material/Android";
 import FooterButtons from "./FooterButtons";
 import { Box } from "@mui/material";
+import { useTranslation } from "react-i18next";
 
 const footerLinks = [
   {
-    title: "App Store",
-    subTitle: "Download on the",
+    titleKey: "appStore",
     icon: <AppleIcon fontSize="large" />,
     url: "https://apps.apple.com/app/open-food-facts/id588797948",
   },
   {
-    title: "Play Store",
-    subTitle: "Get it on",
+    titleKey: "playStore",
     icon: <GoogleIcon fontSize="large" />,
     url: "https://play.google.com/store/apps/details?id=org.openfoodfacts.scanner&hl=en",
   },
   {
-    title: "Microsoft",
-    subTitle: "Get it from",
+    titleKey: "microsoft",
     icon: <WindowIcon fontSize="large" />,
     url: "https://apps.microsoft.com/store/detail/open-food-facts-scan-to-get-nutriscore-ecoscore-and-more/XP8LT18SRPKLRG",
   },
   {
-    title: "Android APK",
-    subTitle: "Download",
+    titleKey: "androidAPK",
     icon: <AndroidIcon fontSize="large" />,
     url: "https://github.com/openfoodfacts/smooth-app/releases/tag/v4.4.0",
   },
 ];
 
 export default function DownloadOpenFoodFacts() {
+  const { t } = useTranslation();
   return (
     <Box
       sx={{
@@ -49,8 +47,8 @@ export default function DownloadOpenFoodFacts() {
         return (
           <FooterButtons
             key={link.title}
-            title={link.title}
-            subTitle={link.subTitle}
+            title={t(`footer.${link.titleKey}.title`)}
+            subTitle={t(`footer.${link.titleKey}.subtitle`)}
             icon={link.icon}
             url={link.url}
           />

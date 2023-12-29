@@ -72,7 +72,7 @@ const Page = () => {
       creator: undefined,
       code: "",
     },
-    {}
+    {},
   );
 
   const [rows, setRows] = React.useState([]);
@@ -201,7 +201,7 @@ const Page = () => {
               axios.patch(
                 `https://world.openfoodfacts.org/api/v3/product/${product.code}`,
                 formatData(innerRows),
-                { withCredentials: true }
+                { withCredentials: true },
               );
               next();
             }}

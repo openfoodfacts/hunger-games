@@ -23,7 +23,7 @@ export default function Insights() {
     },
     {
       valueTag: ["value", "value_tag"],
-    }
+    },
   );
 
   return (

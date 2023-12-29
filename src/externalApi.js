@@ -21,7 +21,7 @@ export const removeImageFlag = ({ barcode, imgid }) => {
         data: {
           imgid,
         },
-      }
+      },
     )
     .catch(() => {
       console.log("Something went wrong. Image could not be flagged");

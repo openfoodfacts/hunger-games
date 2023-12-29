@@ -36,7 +36,7 @@ const DashboardCard = (props: LogoDefinition) => {
           valueTag: tag,
         },
         1,
-        1
+        1,
       )
       .then(({ data }) => {
         if (isValid) {

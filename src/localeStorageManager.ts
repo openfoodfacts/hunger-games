@@ -9,7 +9,7 @@ const ADDED_PARAMS = {
 const areSameFilterState = (filterState, memFilterState) =>
   isEqual(
     { ...ADDED_PARAMS, ...memFilterState },
-    { ...ADDED_PARAMS, ...filterState }
+    { ...ADDED_PARAMS, ...filterState },
   );
 
 const STORAGE_KEY = "hunger-game-settings";
@@ -137,7 +137,7 @@ export const localFavorites = {
 
     const questionIndex = this.mem.questions.findIndex(
       ({ filterState: memFilterState }) =>
-        areSameFilterState(memFilterState, filterState)
+        areSameFilterState(memFilterState, filterState),
     );
 
     if (questionIndex < 0) {
@@ -175,7 +175,7 @@ export const localFavorites = {
     }
     this.mem.questions = this.mem.questions.filter(
       ({ filterState: memFilterState }) =>
-        !areSameFilterState(memFilterState, filterState)
+        !areSameFilterState(memFilterState, filterState),
     );
     this.save(this.mem);
   },
@@ -190,7 +190,7 @@ export const localFavorites = {
 
     return (
       this.mem.questions.filter(({ filterState: memFilterState }) =>
-        areSameFilterState(memFilterState, filterState)
+        areSameFilterState(memFilterState, filterState),
       ).length > 0
     );
   },

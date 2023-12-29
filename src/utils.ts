@@ -32,7 +32,7 @@ export const reformatValueTag = (value: string) => {
 
 export const removeEmptyKeys = (obj: object) => {
   Object.keys(obj).forEach(
-    (key) => (obj[key] == null || obj[key] === "") && delete obj[key]
+    (key) => (obj[key] == null || obj[key] === "") && delete obj[key],
   );
   return obj;
 };

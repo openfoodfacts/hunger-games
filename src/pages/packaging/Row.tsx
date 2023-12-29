@@ -51,7 +51,7 @@ const CustomAutoComplet = (props: CustomProps) => {
       }
       filterOptions={(options) => {
         return options.filter(
-          (option) => firstSynonymMatching(option.synonyms, inputValue) != null
+          (option) => firstSynonymMatching(option.synonyms, inputValue) != null,
         );
       }}
       isOptionEqualToValue={(option, value) => option.value === value.value}
@@ -84,7 +84,7 @@ const Row = (props) => {
   } = props;
 
   const [innerMaterial, setInnerMaterial] = React.useState(() =>
-    getOption(packagingMaterials, material)
+    getOption(packagingMaterials, material),
   );
   React.useEffect(() => {
     setInnerMaterial(getOption(packagingMaterials, material));
@@ -96,14 +96,14 @@ const Row = (props) => {
   }, [number]);
 
   const [innerRecycling, setInnerRecycling] = React.useState(() =>
-    getOption(packagingRecycling, recycling)
+    getOption(packagingRecycling, recycling),
   );
   React.useEffect(() => {
     setInnerRecycling(getOption(packagingRecycling, recycling));
   }, [packagingRecycling, recycling]);
 
   const [innerShape, setInnerShape] = React.useState(() =>
-    getOption(packagingShapes, shape)
+    getOption(packagingShapes, shape),
   );
   React.useEffect(() => {
     setInnerShape(getOption(packagingShapes, shape));

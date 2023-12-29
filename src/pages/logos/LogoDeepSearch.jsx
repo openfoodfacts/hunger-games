@@ -25,7 +25,7 @@ const transformLogo = (logo) => {
     logo.image.url ||
     robotoff.getCroppedImageUrl(
       off.getImageUrl(logo.image.source_image),
-      logo.bounding_box
+      logo.bounding_box,
     );
 
   return { ...logo, image: { ...logo.image, src } };
@@ -37,7 +37,7 @@ const request = async ({ barcode, value, type, count }) => {
     value,
     type,
     Number.parseInt(count),
-    true
+    true,
   );
 
   return {
@@ -93,7 +93,7 @@ export default function LogoSearch() {
     { type: "", value: "" },
     {
       value: ["valueTag", "value_tag"],
-    }
+    },
   );
   const pageSize = 50;
   const [page, setPage] = React.useState(1);
@@ -170,7 +170,7 @@ export default function LogoSearch() {
       } = await robotoff.getLogoAnnotations(
         JSON.stringify(nextLogoToFetchId),
         "",
-        50
+        50,
       );
       if (!isValid) {
         return;
@@ -192,7 +192,7 @@ export default function LogoSearch() {
           ({ annotation_type, annotation_value, annotation_value_tag }) =>
             annotation_type == null &&
             annotation_value == null &&
-            annotation_value_tag == null
+            annotation_value_tag == null,
         )
         .map(transformLogo)
         .map((logo) => ({ ...logo, distance: logoId2Distance[logo.id] }));
@@ -208,8 +208,8 @@ export default function LogoSearch() {
 
         setAnnotatedLogos((prev) =>
           prev.map((logo) =>
-            logo.id === nextLogoToFetchId ? { ...logo, fetched: true } : logo
-          )
+            logo.id === nextLogoToFetchId ? { ...logo, fetched: true } : logo,
+          ),
         );
         return [...alreadyVisible, ...hidden];
       });
@@ -263,7 +263,7 @@ export default function LogoSearch() {
               ...logo,
               selected: newSelectedState,
             }
-          : logo
+          : logo,
       );
     });
   }, []);
@@ -283,7 +283,7 @@ export default function LogoSearch() {
           index < page * pageSize && index >= (page - 1) * pageSize
             ? true
             : logo.selected,
-      }))
+      })),
     );
   };
 
@@ -304,7 +304,7 @@ export default function LogoSearch() {
       prev.map((logo) => ({
         ...logo,
         selected: false,
-      }))
+      })),
     );
   };
 

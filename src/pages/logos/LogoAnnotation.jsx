@@ -43,7 +43,7 @@ const loadLogos = async (
   targetLogoId,
   index,
   annotationCount = 50,
-  alreadyLoadedData = []
+  alreadyLoadedData = [],
 ) => {
   const {
     data: { results, query_logo_id },
@@ -66,7 +66,7 @@ const loadLogos = async (
     const image = annotation.image;
     const src = robotoff.getCroppedImageUrl(
       off.getImageUrl(image.source_image),
-      annotation.bounding_box
+      annotation.bounding_box,
     );
 
     return {
@@ -102,7 +102,7 @@ export default function LogoAnnotation() {
       logoSearchParams.logo_id,
       logoSearchParams.index,
       logoSearchParams.count + newAdditional,
-      logoState.logos
+      logoState.logos,
     )
       .then((logoData) => {
         setLogoState((prev) => ({
@@ -126,7 +126,7 @@ export default function LogoAnnotation() {
     loadLogos(
       logoSearchParams.logo_id,
       logoSearchParams.index,
-      logoSearchParams.count
+      logoSearchParams.count,
     )
       .then((logoData) => {
         if (!isValid) return;
@@ -138,7 +138,7 @@ export default function LogoAnnotation() {
           })),
           referenceLogo:
             logoData.find(
-              (logo) => logo.id.toString() === logoSearchParams.logo_id
+              (logo) => logo.id.toString() === logoSearchParams.logo_id,
             ) || {},
         });
       })
@@ -178,7 +178,7 @@ export default function LogoAnnotation() {
         };
       });
     },
-    [logoSearchParams.logo_id]
+    [logoSearchParams.logo_id],
   );
 
   const setRangeSelection = React.useCallback((ids, newSelectedState) => {
@@ -196,7 +196,7 @@ export default function LogoAnnotation() {
                 ...logo,
                 selected: newSelectedState,
               }
-            : logo
+            : logo,
         ),
       };
     });
@@ -232,7 +232,7 @@ export default function LogoAnnotation() {
       const logoData = await loadLogos(
         logoSearchParams.logo_id,
         logoSearchParams.index,
-        logoSearchParams.count
+        logoSearchParams.count,
       );
       setLogoState({
         isLoading: false,
@@ -242,7 +242,7 @@ export default function LogoAnnotation() {
         })),
         referenceLogo:
           logoData.find(
-            (logo) => logo.id.toString() === logoSearchParams.logo_id
+            (logo) => logo.id.toString() === logoSearchParams.logo_id,
           ) || {},
       });
     } catch {

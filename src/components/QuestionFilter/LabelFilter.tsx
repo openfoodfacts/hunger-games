@@ -42,7 +42,7 @@ const useOptionFetching = (insightType, inputValue, lang) => {
           .get(
             `${URL_ORIGINE}/data/${
               AVAILABLE_OPTIONS.includes(lang) ? lang : "en"
-            }/${insightType}/${key}.json`
+            }/${insightType}/${key}.json`,
           )
           .then(({ data }) => {
             setOptions((prevOptions) => {
@@ -129,8 +129,8 @@ const LabelFilter = (props) => {
         />
       )}
       filterOptions={(options, state) => {
-        return options.filter((option) =>
-          option?.cleanName.includes(cleanName(state.inputValue))
+        return options.filter(
+          (option) => option?.cleanName.includes(cleanName(state.inputValue)),
         );
       }}
     />

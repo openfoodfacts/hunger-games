@@ -133,7 +133,7 @@ const DebugQuestion = (props) => {
                       </TableCell>
                       <TableCell>
                         {new Date(
-                          debugResponse?.data?.timestamp
+                          debugResponse?.data?.timestamp,
                         ).toLocaleString()}
                       </TableCell>
                     </TableRow>

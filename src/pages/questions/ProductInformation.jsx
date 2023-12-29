@@ -52,7 +52,7 @@ const ProductInformation = (props) => {
 
   const [hideImages, setHideImages] = React.useState(getHideImages);
   const [devCustomization] = React.useState(
-    () => getPageCustomization().questionPage
+    () => getPageCustomization().questionPage,
   );
   const [flagged, flagImage, deleteFlagImage] = useFlagImage(question?.barcode);
 
@@ -188,7 +188,8 @@ const ProductInformation = (props) => {
                           setOtherQuestionsState((prev) => ({
                             ...prev,
                             questions: prev.questions.filter(
-                              (q) => q?.insight_id !== otherQuestion?.insight_id
+                              (q) =>
+                                q?.insight_id !== otherQuestion?.insight_id,
                             ),
                           }));
                         }
@@ -200,7 +201,7 @@ const ProductInformation = (props) => {
                       color="secondary"
                       disabled={
                         ![CORRECT_INSIGHT, WRONG_INSIGHT].includes(
-                          pendingAnswers[otherQuestion?.insight_id]
+                          pendingAnswers[otherQuestion?.insight_id],
                         )
                       }
                       variant="contained"
