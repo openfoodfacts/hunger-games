@@ -385,5 +385,23 @@
   },
   "ingredients": {
     "description": "TODO: tentukan permainannya"
+  },
+  "footer": {
+    "appStore": {
+      "title": "App Store",
+      "subtitle": "Download on the"
+    },
+    "playStore": {
+      "title": "Play Store",
+      "subtitle": "Get it on"
+    },
+    "microsoft": {
+      "title": "Microsoft",
+      "subtitle": "Get it from"
+    },
+    "androidAPK": {
+      "title": "APK Android",
+      "subtitle": "Unduh"
+    }
   }
 }
