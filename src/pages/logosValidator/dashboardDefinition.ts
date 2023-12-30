@@ -126,7 +126,7 @@ const UNTYPED_LOGOS = {
     tag: "en:qs-certification-mark",
     label: "QS Certification Mark",
     // logo does not exist yet
-    logo: "https://world.openfoodfacts.org/images/lang/en/labels/qs-certification-mark.79x90.png",
+    logo: "https://static.openfoodfacts.org/images/lang/en/labels/qs-certification-mark.79x90.png",
     type: "label",
   },
   "en:dolphin-safe": {
@@ -151,7 +151,7 @@ const UNTYPED_LOGOS = {
   "en:non-gmo-project": {
     tag: "en:non-gmo-project",
     label: "non-gmo-project",
-    logo: "https://world.openfoodfacts.org/images/lang/en/labels/non-gmo-project.124x90.svg",
+    logo: "https://static.openfoodfacts.org/images/lang/en/labels/non-gmo-project.124x90.svg",
     type: "label",
   },
   "de:ohne-gentechnik": {
@@ -2428,7 +2428,7 @@ const UNTYPED_LOGOS = {
   "en:utz-certified": {
     tag: "en:utz-certified",
     label: "UTZ Certified",
-    logo: "https://world.openfoodfacts.org/images/lang/en/labels/utz-certified.90x90.svg",
+    logo: "https://static.openfoodfacts.org/images/lang/en/labels/utz-certified.90x90.svg",
     type: "label",
   },
   "en:utz-certified-tea": {
@@ -2509,13 +2509,13 @@ const UNTYPED_LOGOS = {
   "es:sin-tacc": {
     tag: "es:Sin-TACC",
     label: "Sin TACC",
-    logo: "https://world.openfoodfacts.org/images/lang/es/labels/sin-tacc.86x90.png",
+    logo: "https://static.openfoodfacts.org/images/lang/es/labels/sin-tacc.86x90.png",
     type: "label",
   },
   "es:sin-gluten": {
     tag: "es:sin-gluten",
     label: "Sin Gluten",
-    logo: "https://world.openfoodfacts.org/images/lang/es/labels/sin-gluten.86x90.png",
+    logo: "https://static.openfoodfacts.org/images/lang/es/labels/sin-gluten.86x90.png",
     type: "label",
   },
   "en:crossed-grain-symbol": {
@@ -3040,7 +3040,7 @@ export const DASHBOARD: DashBoardTheme[] = [
       "en:gold-medal-of-the-german-agricultural-society",
       "en:silver-medal-of-the-german-agricultural-society",
       "en:bronze-medal-of-the-german-agricultural-society",
-      "en:qs-certification-mark", // https://world.openfoodfacts.org/images/lang/en/labels/qs-certification-mark.79x90.png
+      "en:qs-certification-mark", // https://static.openfoodfacts.org/images/lang/en/labels/qs-certification-mark.79x90.png
       "en:2009-silver-medal-of-the-german-agricultural-society.90x90.png",
       "en:2010-gold-medal-of-the-german-agricultural-society.90x90.png",
       "en:2010-silver-medal-of-the-german-agricultural-society.90x90.png",
