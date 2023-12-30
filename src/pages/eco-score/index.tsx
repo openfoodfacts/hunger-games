@@ -23,7 +23,7 @@ const ecoScoreCards = [
     },
     title: "en:organic",
     imageSrc:
-      "https://world-fr.openfoodfacts.org/images/lang/fr/labels/bio.96x90.png",
+      "https://static.openfoodfacts.org/images/lang/fr/labels/bio.96x90.png",
   },
   {
     filterState: {
@@ -33,7 +33,7 @@ const ecoScoreCards = [
     },
     title: "en:eu-organic",
     imageSrc:
-      "https://world.openfoodfacts.org/images/lang/en/labels/eu-organic.135x90.svg",
+      "https://static.openfoodfacts.org/images/lang/en/labels/eu-organic.135x90.svg",
   },
   {
     filterState: {
@@ -43,7 +43,7 @@ const ecoScoreCards = [
     },
     title: "fr:ab-agriculture-biologique",
     imageSrc:
-      "https://world.openfoodfacts.org/images/lang/en/labels/ab-agriculture-biologique.74x90.svg",
+      "https://static.openfoodfacts.org/images/lang/fr/labels/ab-agriculture-biologique.74x90.svg",
   },
   {
     filterState: {
@@ -53,7 +53,7 @@ const ecoScoreCards = [
     },
     title: "en:eg-oko-verordnung",
     imageSrc:
-      "https://world-fr.openfoodfacts.org/images/lang/en/labels/eg-oko-verordnung.110x90.svg",
+      "https://static.openfoodfacts.org/images/lang/de/labels/eg-oko-verordnung.110x90.svg",
   },
   {
     filterState: {
@@ -63,7 +63,7 @@ const ecoScoreCards = [
     },
     title: "fr:haute-valeur-environnementale",
     imageSrc:
-      "https://world-fr.openfoodfacts.org/images/lang/fr/labels/haute-valeur-environnementale.90x90.svg",
+      "https://static.openfoodfacts.org/images/lang/fr/labels/haute-valeur-environnementale.90x90.svg",
   },
   {
     filterState: {
@@ -73,7 +73,7 @@ const ecoScoreCards = [
     },
     title: "fr:label-rouge",
     imageSrc:
-      "https://world-fr.openfoodfacts.org/images/lang/fr/labels/label-rouge.90x90.svg",
+      "https://static.openfoodfacts.org/images/lang/fr/labels/label-rouge.90x90.svg",
   },
   {
     filterState: {
@@ -83,7 +83,7 @@ const ecoScoreCards = [
     },
     title: "fr:bleu-blanc-coeur",
     imageSrc:
-      "https://world-fr.openfoodfacts.org/images/lang/fr/labels/bleu-blanc-coeur.98x90.svg",
+      "https://static.openfoodfacts.org/images/lang/fr/labels/bleu-blanc-coeur.98x90.svg",
   },
   {
     filterState: {
@@ -93,7 +93,7 @@ const ecoScoreCards = [
     },
     title: "en:roundtable-on-sustainable-palm-oil",
     imageSrc:
-      "https://world-fr.openfoodfacts.org/images/lang/en/labels/roundtable-on-sustainable-palm-oil.90x90.svg",
+      "https://static.openfoodfacts.org/images/lang/en/labels/roundtable-on-sustainable-palm-oil.90x90.svg",
   },
   {
     filterState: {
@@ -103,7 +103,7 @@ const ecoScoreCards = [
     },
     title: "en:rainforest-alliance",
     imageSrc:
-      "https://world-fr.openfoodfacts.org/images/lang/en/labels/rainforest-alliance.90x90.svg",
+      "https://static.openfoodfacts.org/images/lang/en/labels/rainforest-alliance.90x90.svg",
   },
   {
     filterState: {
@@ -113,7 +113,7 @@ const ecoScoreCards = [
     },
     title: "en:fairtrade-international",
     imageSrc:
-      "https://world-fr.openfoodfacts.org/images/lang/en/labels/fairtrade-international.77x90.svg",
+      "https://static.openfoodfacts.org/images/lang/en/labels/fairtrade-international.77x90.svg",
   },
   {
     filterState: {
@@ -123,7 +123,7 @@ const ecoScoreCards = [
     },
     title: "en:Max-Havelaar",
     imageSrc:
-      "https://world-fr.openfoodfacts.org/images/lang/en/labels/max-havelaar.64x90.svg",
+      "https://static.openfoodfacts.org/images/lang/en/labels/max-havelaar.64x90.svg",
   },
   {
     filterState: {
@@ -133,7 +133,7 @@ const ecoScoreCards = [
     },
     title: "en:sustainable-seafood-msc",
     imageSrc:
-      "https://world-fr.openfoodfacts.org/images/lang/en/labels/sustainable-seafood-msc.126x90.svg",
+      "https://static.openfoodfacts.org/images/lang/en/labels/sustainable-seafood-msc.126x90.svg",
   },
   {
     filterState: {
@@ -143,7 +143,7 @@ const ecoScoreCards = [
     },
     title: "en:responsible-aquaculture-asc",
     imageSrc:
-      "https://world-fr.openfoodfacts.org/images/lang/en/labels/responsible-aquaculture-asc.188x90.svg",
+      "https://static.openfoodfacts.org/images/lang/en/labels/responsible-aquaculture-asc.188x90.svg",
   },
 ];
 
