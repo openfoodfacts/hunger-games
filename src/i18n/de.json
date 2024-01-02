@@ -385,5 +385,23 @@
   },
   "ingredients": {
     "description": "TODO: das Spiel definieren"
+  },
+  "footer": {
+    "appStore": {
+      "title": "App Store",
+      "subtitle": "Herunterladen aus dem"
+    },
+    "playStore": {
+      "title": "Play Store",
+      "subtitle": "Hole sie dir über"
+    },
+    "microsoft": {
+      "title": "Microsoft",
+      "subtitle": "Abrufen von"
+    },
+    "androidAPK": {
+      "title": "Android APK",
+      "subtitle": "Herunterladen"
+    }
   }
 }

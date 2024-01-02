@@ -18,14 +18,14 @@
       }
     },
     "account_band": {
-      "title": "Quer que a sua contribuição conte? Crie uma conta ou entre no Aberto Ford Factos!",
+      "title": "Quer que a sua contribuição conte? Crie uma conta ou entre no Open Food Facts!",
       "log_in": "Iniciar sessão",
       "sign_up": "Criar conta",
       "contribution_details": "Saiba porque a sua contribuição é importante"
     },
-    "saved_filters": "Filtros Salvos",
+    "saved_filters": "Filtros guardados",
     "contribution_modal": {
-      "title": "Sua contribuição é importante",
+      "title": "A sua contribuição é importante",
       "information": "O Hunger Games é um esforço para aproveitar os resultados do nosso OCR e da nossa inteligência artificial. Quando utilizas o Hunger Games da Open Food Facts, melhoras toda a nossa base de dados, o que ajuda a comunidade a fazer melhores escolhas alimentares. Recolhemos as tuas anotações e utilizamo-las para tornar a Open Food Facts mais precisa e eficiente.",
       "thank_you": "Obrigado por nos ajudar a melhorar o Open Food Facts para que mais pessoas possam usá-lo facilmente."
     },
@@ -64,7 +64,7 @@
     "popularity_sort": "Ordenar por popularidade",
     "see_examples": "Ver exemplos disto/desta ",
     "no": "Não",
-    "skip": "Pular",
+    "skip": "Ignorar",
     "yes": "Sim",
     "no_questions_remaining": "Não restam perguntas",
     "countries": "Países",
@@ -85,7 +85,7 @@
         "country": "país",
         "brand": "marca",
         "popularity": "popularidade",
-        "campaign": "camp"
+        "campaign": "campanha"
       },
       "long_label": {
         "type": "Tipo de pergunta",
@@ -98,7 +98,7 @@
       },
       "placeholders": {
         "value": "Valor (Fanta, pt:orgânico,...)",
-        "brand": "Auchan, Danone, Herta, ...",
+        "brand": "Auchan, Danone, Herta...",
         "campaign": "Campanhas de anotação"
       },
       "actions": {
@@ -115,7 +115,7 @@
     "log_in": "Iniciar sessão",
     "sign_up": "Criar conta",
     "login_title": "Faça o seu comentário contar",
-    "login_description": "Atualmente não iniciou sessão no Aberto Ford Factos. Para obter as suas respostas aplicadas diretamente aos produtos e associadas à sua conta, considere autenticar-se com a sua conta no Aberto Ford Factos ou criar uma",
+    "login_description": "Atualmente, não tem sessão iniciada na Open Food Facts. Para obter as suas respostas diretamente aplicadas aos produtos e associadas à sua conta, considere iniciar sessão na sua conta Open Food Facts ou crie uma",
     "please_wait_while_we_fetch_the_question": "Por favor aguarde enquanto processamos a pergunta!"
   },
   "menu": {
@@ -134,7 +134,7 @@
     "eco-score": "Eco-Score",
     "dashboard": "Painel de logotipos",
     "tour": "Mostrar demonstração",
-    "logged_in_user": "autenticado como {{userName}}",
+    "logged_in_user": "Autenticado como {{userName}}",
     "log_in": "Clique para se autenticar"
   },
   "insights": {
@@ -158,7 +158,7 @@
     "accepted": "Aceite (1)",
     "search": "Procurar",
     "count": "Contagem",
-    "id": "Greix",
+    "id": "ID",
     "value": "Valor",
     "created_at": "Criado em",
     "completed_at": "Concluído em",
@@ -186,42 +186,42 @@
     "nutrition_label": "Tabela nutricional",
     "no_logo": "Não é um logotipo",
     "store": "Loja",
-    "detail": "Detalhe do logotipo",
-    "id": "ID do logotipo:",
+    "detail": "Detalhe do logótipo",
+    "id": "ID do logótipo:",
     "barcode": "Código de barras:",
     "full_image": "Imagem inteira",
     "update": "Atualizar",
-    "no_found": "Nenhum logotipo encontrado",
+    "no_found": "Nenhum logótipo encontrado",
     "search": "Procurar",
     "number_of_results": "Número de resultados:",
     "loading": "A carregar…",
     "refresh": "Atualizar",
     "search_specific": "Pesquisar logotipo específico",
     "load_more": "Carregar mais",
-    "no_results": "Nenhum logotipo encontrado",
+    "no_results": "Nenhum logótipo encontrado",
     "result_count": "Mostra {{showing}} em {{available}} disponíveis",
     "flag": "Algo errado? Denuncie/sinalize a imagem!",
     "unflag": "Desmarcar a imagem",
     "crop_image_title": "recorte do logotipo",
-    "no_more_questions": "Não há mais perguntas sobre este logotipo. Você pode tentar encontrar mais logotipos com o seguinte jogo.",
+    "no_more_questions": "Não há mais perguntas sobre este logótipo. Pode tentar encontrar mais logótipos no seguinte jogo.",
     "loading_messages": {
-      "pending_reference_logos": "Estamos a carregar alguns modelos de logotipos para iniciar a pesquisa",
-      "failed_reference_logos": "Não encontramos logotipos com essa anotação. Tente usar o seguinte jogo para anotar alguns deles."
+      "pending_reference_logos": "Estamos a carregar alguns modelos de logótipos para iniciar a pesquisa",
+      "failed_reference_logos": "Não encontramos logótipos com essa anotação. Tente usar o seguinte jogo para anotar alguns deles."
     },
     "deep_search": {
-      "title": "Logo search",
-      "description": "Select a logo you want to look for, and let's go to catch them all. For every logo you annotate, we will fetch it's neighbors such that you might never stop to annotate. (Press Shift to select range of logos)",
-      "ref_logos": "Reference logos (logo already annotated with this value)",
-      "remaining": "Remaining to annotate",
-      "select_all": "Select All",
-      "unselect_all": "Deselect All"
+      "title": "Pesquisa de logotipo",
+      "description": "Selecione um logotipo que pretenda procurar e vamos lá apanhá-los a todos. Por cada logotipo que anotar, iremos buscar os seus vizinhos, para que nunca pare de anotar. (Prima Shift para selecionar um conjunto de logotipos)",
+      "ref_logos": "Logotipos de referência (logotipo já anotado com este valor)",
+      "remaining": "Restantes para anotar",
+      "select_all": "Selecionar todos",
+      "unselect_all": "Desselecionar todos"
     }
   },
   "settings": {
     "settings": "Configurações",
     "language": "Idiomas",
     "save": "Guardar",
-    "reportIssue": "Encontrou um erro? Por favor, nos avise.",
+    "reportIssue": "Encontrou um erro? Por favor avise-nos.",
     "dev_mode_title": "Para obter mais opções, ative o modo de desenvolvimento",
     "dev_mode_label": "Modo programador",
     "dev_page_toggle": "Mostrar página de {{name}}",
@@ -230,18 +230,18 @@
     "thank_you": "Obrigado",
     "donate": "Doar",
     "join_the_community": {
-      "discover_our": "Descubra mais sobre nós ",
+      "discover_our": "Descubra o nosso ",
       "code_of_conduct": "Código de Conduta ",
-      "join_us_on": "Junte-se a nós ",
+      "join_us_on": "Junte-se ao nosso ",
       "forum": "Fórum",
-      "subscribe_to_our": "Subscreva a newsletter ",
-      "newsletter": "notícias"
+      "subscribe_to_our": "Subscreva o nosso ",
+      "newsletter": "boletim informativo"
     },
     "discover_the_project": "Descubra o projeto",
     "Who_we_are": "Quem somos",
     "Vision_Mission_Values_and_Programs": "Visão, missão, valores e programas",
     "FAQS": "Perguntas frequentes",
-    "open_Food_Facts_blog": "Open Food Facts blog",
+    "open_Food_Facts_blog": "Blogue Open Food Facts",
     "Press": "Imprensa",
     "Open_Food_Facts_wiki": "Wiki Open Food Facts (en)",
     "Translators": "Tradutores",
@@ -260,14 +260,14 @@
       "page2": {
         "title": "Jogo de perguntas",
         "text1": "O produto alimentar pertence a esta marca?",
-        "text2": "Responda simplesmente com <strong>sim/não</strong>! Não sabe a resposta? Tudo bem, apenas ignore-a.",
-        "text3": "Também pode usar as teclas Y, N e K do teclado.",
+        "text2": "Responda simplesmente com <strong>sim / não</strong>! Não sabe a resposta? Tudo bem, apenas ignore-a.",
+        "text3": "Também pode usar as teclas Y, N e K do teclado (sim, não e ignorar, respetivamente).",
         "text4": "Pode <strong>filtrar</strong> os produtos com base no país, marcas, popularidade e muito mais!",
         "text5": "Se não quiser fazer isso todas as vezes, também pode <strong>guardar os filtros</strong> clicando na estrela. Na próxima vez que regressar, encontrará os filtros guardados na própria página inicial"
       },
       "page3": {
         "title": "Jogo de logos",
-        "text1": "O nosso outro jogo é o jogo de logotipos, no qual deve <strong> selecionar todos os logotipos</strong> que acha que são iguais.",
+        "text1": "O nosso outro jogo é o jogo de logótipos, no qual deve <strong>selecionar todos os logótipos</strong> que acha que são iguais.",
         "text2": "Conforme mostrado no exemplo, depois de selecionar todos os logotipos semelhantes, basta digitar o valor e selecionar onde é uma marca, um rótulo ou outra coisa. É simples!"
       },
       "page4": {
@@ -326,7 +326,7 @@
     },
     "loading": "A carregar...",
     "unknown_brand": "Marca desconhecida",
-    "value_missing": "Você esqueceu de inserir um valor.",
+    "value_missing": "Esqueceu-se de inserir um valor.",
     "next": "Próximo passo",
     "prev": "Passo anterior",
     "skip": "Ignorar este produto",
@@ -339,7 +339,7 @@
     "nutriments": {
       "nutriment_energy-kj": "Energia (kJ)",
       "nutriment_energy-kcal": "Energia (kCal)",
-      "nutriment_fat": "Gorduras",
+      "nutriment_fat": "Lípidos",
       "nutriment_saturated-fat": "Lípidos saturados",
       "nutriment_carbohydrates": "Hidratos de carbono",
       "nutriment_sugars": "Açúcares",
@@ -384,6 +384,24 @@
     "countryLabel": "País"
   },
   "ingredients": {
-    "description": "TODO: define the game"
+    "description": "FAZER: defina o jogo"
+  },
+  "footer": {
+    "appStore": {
+      "title": "Loja de aplicações",
+      "subtitle": "Descarregar em"
+    },
+    "playStore": {
+      "title": "Play Store",
+      "subtitle": "Obtenha em"
+    },
+    "microsoft": {
+      "title": "Microsoft",
+      "subtitle": "Obtenha em"
+    },
+    "androidAPK": {
+      "title": "APK Android",
+      "subtitle": "Descarregar"
+    }
   }
 }

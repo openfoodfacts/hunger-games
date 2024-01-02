@@ -8,7 +8,7 @@
           "description": "与えられた画像が質問に対する答えになっているかどうか教えてください"
         },
         "logos": {
-          "title": "Logos",
+          "title": "ロゴ",
           "description": "与えられたロゴに一致するすべてのロゴを見つけてください"
         },
         "eco_score": {
@@ -64,7 +64,7 @@
     "popularity_sort": "人気順",
     "see_examples": "例を見る： ",
     "no": "いいえ",
-    "skip": "Skip",
+    "skip": "スキップ",
     "yes": "はい",
     "no_questions_remaining": "これ以上質問はありません",
     "countries": "国",
@@ -72,7 +72,7 @@
     "edit": "編集",
     "hide_images": "画像を非表示（読み込み速度優先）",
     "display_images": "画像を表示",
-    "annotations": "Annotations",
+    "annotations": "注釈",
     "last_annotations": "最後の注釈",
     "remaining_annotations": "残りの質問",
     "annotated_annotations": "注釈付き",
@@ -122,7 +122,7 @@
     "title": "ハンガーゲーム",
     "games": "ゲーム",
     "questions": "質問",
-    "logos": "Logos",
+    "logos": "ロゴ",
     "logos-annotation": "ロゴの注釈",
     "logos-search": "ロゴを検索",
     "logos-product-search": "製品ごとの注釈付け",
@@ -385,5 +385,23 @@
   },
   "ingredients": {
     "description": "TODO: ゲームを定義する"
+  },
+  "footer": {
+    "appStore": {
+      "title": "アプリストア",
+      "subtitle": "ダウンロード"
+    },
+    "playStore": {
+      "title": "Playストア",
+      "subtitle": "始める"
+    },
+    "microsoft": {
+      "title": "Microsoft",
+      "subtitle": "からゲット！"
+    },
+    "androidAPK": {
+      "title": "Android APK",
+      "subtitle": "ダウンロード"
+    }
   }
 }

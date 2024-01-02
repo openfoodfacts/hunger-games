@@ -385,5 +385,23 @@
   },
   "ingredients": {
     "description": "TODO: definovat hru"
+  },
+  "footer": {
+    "appStore": {
+      "title": "App Store",
+      "subtitle": "Stáhnout v"
+    },
+    "playStore": {
+      "title": "Obchodu Play",
+      "subtitle": "Získat v"
+    },
+    "microsoft": {
+      "title": "Microsoftu",
+      "subtitle": "Získat od"
+    },
+    "androidAPK": {
+      "title": "Android APK",
+      "subtitle": "Ke stažení"
+    }
   }
 }

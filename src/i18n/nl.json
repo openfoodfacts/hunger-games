@@ -385,5 +385,23 @@
   },
   "ingredients": {
     "description": "TODO: define the game"
+  },
+  "footer": {
+    "appStore": {
+      "title": "App Store",
+      "subtitle": "Download in de"
+    },
+    "playStore": {
+      "title": "Play Store",
+      "subtitle": "Verkrijg het in"
+    },
+    "microsoft": {
+      "title": "Microsoft",
+      "subtitle": "Download het van"
+    },
+    "androidAPK": {
+      "title": "Android APK",
+      "subtitle": "Downloaden"
+    }
   }
 }

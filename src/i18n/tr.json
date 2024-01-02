@@ -385,5 +385,23 @@
   },
   "ingredients": {
     "description": "YAPILACAKLAR: oyunu tanımla"
+  },
+  "footer": {
+    "appStore": {
+      "title": "App Store",
+      "subtitle": "Şuradan indirin"
+    },
+    "playStore": {
+      "title": "Play Store",
+      "subtitle": "Buradan alın"
+    },
+    "microsoft": {
+      "title": "Microsoft",
+      "subtitle": "Şuradan alın"
+    },
+    "androidAPK": {
+      "title": "Android APK",
+      "subtitle": "İndir"
+    }
   }
 }

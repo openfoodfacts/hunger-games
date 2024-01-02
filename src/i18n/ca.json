@@ -385,5 +385,23 @@
   },
   "ingredients": {
     "description": "A FER: definir el joc"
+  },
+  "footer": {
+    "appStore": {
+      "title": "App Store",
+      "subtitle": "Download on the"
+    },
+    "playStore": {
+      "title": "Play Store",
+      "subtitle": "Get it on"
+    },
+    "microsoft": {
+      "title": "Microsoft",
+      "subtitle": "Get it from"
+    },
+    "androidAPK": {
+      "title": "APK d'Android",
+      "subtitle": "Descarrega"
+    }
   }
 }

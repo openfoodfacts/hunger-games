@@ -1,389 +1,407 @@
 {
   "home": {
     "game_selector": {
-      "title": "您想要玩什么游戏？",
+      "title": "你想要玩什麼遊戲？",
       "cards": {
         "questions": {
-          "title": "问题",
-          "description": "告诉我们给出的图像是否回答了问题"
+          "title": "常見問答",
+          "description": "請讓我們知道這圖片是否回答了那些問題。"
         },
         "logos": {
-          "title": "图标",
-          "description": "找到所有与给定徽标相同的徽标"
+          "title": "標誌",
+          "description": "請找出與指定表章匹配的所有表章"
         },
         "eco_score": {
-          "title": "Eco-score",
-          "description": "标注价值最高的问题"
+          "title": "環保評分",
+          "description": "註釋最具價值的問題"
         }
       }
     },
     "account_band": {
-      "title": "想让你的贡献有价值吗？在食品产品数据库上创建或登陆一个账户！",
-      "log_in": "用户名",
-      "sign_up": "登录",
-      "contribution_details": "了解为什么您的贡献很重要"
+      "title": "想要讓您的貢獻有所價值嗎？在Open Food Facts上創建帳戶或登入吧！",
+      "log_in": "用戶名",
+      "sign_up": "註冊",
+      "contribution_details": "了解為何您的貢獻很重要"
     },
-    "saved_filters": "已保存的筛选器",
+    "saved_filters": "已儲存的篩選器",
     "contribution_modal": {
-      "title": "你的贡献很重要",
-      "information": "Hunger Games是一种提升我们开发的OCR和人工智能结果准确性的工具。当你在Open Food Facts使用Hunger Games时，你会丰富我们的数据库，帮助所有用户更好地做出食物选择。我们会收集您的标注以提升Open Food Facts的准确性和效率。",
-      "thank_you": "感谢您帮助我们改进 Open Food Facts，以便更多人可以轻松使用它。"
+      "title": "您的貢獻很重要",
+      "information": "「飢餓遊戲」是我們運用OCR（光學字符識別）和人工智能的一項成果。當您使用Open Food Facts的「飢餓遊戲」時，您可以幫助我們改善整個資料庫，從而替社區做出更好的飲食選擇。我們將會收集您的註解，並將使用它們，以使Open Food Facts變得更加準確和高效。",
+      "thank_you": "感謝您協助我們改進Open Food Facts，讓更多人能夠更輕鬆地使用它。"
     },
     "statistics": {
-      "title": "{{userName}} 统计：",
+      "title": "{{userName}} 的統計資料：",
       "editorCount": {
-        "title": "编辑",
-        "description": "完成的编辑数"
+        "title": "編輯",
+        "description": "已完成版本數"
       },
       "contributorCount": {
-        "title": "贡献者",
-        "description": "添加新产品"
+        "title": "貢獻者",
+        "description": "新增新商品"
       },
       "photographerCount": {
-        "title": "摄影师",
-        "description": "为产品拍照"
+        "title": "攝影師",
+        "description": "為產品拍攝照片"
       }
     }
   },
   "flagged_images": {
-    "title": "用户标记的图像",
-    "loading": "加载中"
+    "title": "由用戶標記的圖片",
+    "loading": "載入中"
   },
   "questions": {
-    "category": "分类",
-    "categories": "分类",
-    "label": "标签",
-    "labels": "标签",
+    "category": "分類",
+    "categories": "類別",
+    "label": "標籤",
+    "labels": "標籤",
     "brand": "品牌",
     "brands": "品牌",
-    "packaging": "包装",
-    "quantity": "数量",
-    "insightTypeLabel": "仅显示",
+    "packaging": "包裝",
+    "quantity": "數量",
+    "insightTypeLabel": "僅顯示",
     "ingredients": "成分",
-    "product_weight": "产品重量",
-    "popularity_sort": "按受欢迎程度排序",
-    "see_examples": "查看示例",
-    "no": "不",
-    "skip": "跳过",
-    "yes": "是的",
-    "no_questions_remaining": "没有其他问题了",
-    "countries": "国家",
-    "view": "查看",
-    "edit": "编辑",
-    "hide_images": "隐藏图像 (加速加载中)",
-    "display_images": "显示图像",
+    "product_weight": "產品重量",
+    "popularity_sort": "依熱門程度排序",
+    "see_examples": "查看此 的例子",
+    "no": "否",
+    "skip": "略過",
+    "yes": "是",
+    "no_questions_remaining": "沒有待處理的問題",
+    "countries": "國家地區",
+    "view": "檢視",
+    "edit": "編輯",
+    "hide_images": "隱藏圖片（載入較快）",
+    "display_images": "顯示圖片",
     "annotations": "3. Annotations",
-    "last_annotations": "最后的注解",
-    "remaining_annotations": "遗留问题",
-    "annotated_annotations": "被注解的",
+    "last_annotations": "上一次注解",
+    "remaining_annotations": "剩餘問題",
+    "annotated_annotations": "已注解",
     "filters": {
-      "active_filter_number": "+{{count}} 个过滤器",
-      "active_filter_number_one": "+{{count}} 过滤器",
-      "active_filter_number_zero": "无过滤器",
+      "active_filter_number": "+{{count}} 篩選器",
+      "active_filter_number_one": "+{{count}} 篩選器",
+      "active_filter_number_zero": "沒有篩選器",
       "short_label": {
         "value": "值",
-        "country": "国家",
+        "country": "國家",
         "brand": "品牌",
-        "popularity": "受欢迎程度",
-        "campaign": "活动"
+        "popularity": "人氣",
+        "campaign": "展銷"
       },
       "long_label": {
-        "type": "问题类型",
-        "value": "建议值",
-        "country": "生产国",
-        "brand": "品牌",
-        "popularity": "按受欢迎程度排序",
+        "type": "問題類型",
+        "value": "建議值",
+        "country": "產地",
+        "brand": "產品品牌",
+        "popularity": "依熱門程度排序",
         "edit": "",
-        "campaign": "活动"
+        "campaign": "展銷活動"
       },
       "placeholders": {
-        "value": "价值(芬达，有机的…)",
-        "brand": "欧尚、达能、赫塔，...",
-        "campaign": "标注活动"
+        "value": "Value (Fanta, en:organic,...)",
+        "brand": "Auchan, Danone, Herta, ...",
+        "campaign": "Annotation campaigns"
       },
       "actions": {
-        "edit": "编辑筛选器",
+        "edit": "編輯篩選器",
         "cancel": "取消",
-        "apply": "应用"
+        "apply": "套用"
       }
     },
-    "other_questions": "其他问题",
-    "send": "发送",
-    "flag": "有什么问题？报告或标记图像！",
-    "unflag": "取消图像标记",
-    "reset_filters": "重置过滤器",
-    "log_in": "用户名",
-    "sign_up": "登录",
-    "login_title": "让你的注释有价值",
-    "login_description": "目前您没有登录 Open Food Facts。要将您的回答直接应用于产品并关联到您的帐户，请登录您的 Open Food Facts 帐户，或创建一个新账户",
-    "please_wait_while_we_fetch_the_question": "我们正在处理问题中，请稍等！"
+    "other_questions": "Other questions",
+    "send": "Send",
+    "flag": "Something wrong? Report/flag the image!",
+    "unflag": "Unflag the image",
+    "reset_filters": "Reset filters",
+    "log_in": "用戶名",
+    "sign_up": "註冊",
+    "login_title": "Make your annotation count",
+    "login_description": "You are not currently logged into Open Food Facts. To get your answers directly applied to products, and associated to your account, consider logging in to your Open Food Facts account, or creating one",
+    "please_wait_while_we_fetch_the_question": "Please wait while we fetch the question!"
   },
   "menu": {
-    "title": "饥饿游戏",
-    "games": "游戏",
-    "questions": "问题",
-    "logos": "图标",
-    "logos-annotation": "徽标（Logo）注释",
-    "logos-search": "查找徽标",
-    "logos-product-search": "每个产品的注释",
-    "logos-deep-search": "无限注解",
+    "title": "飢餓遊戲",
+    "games": "遊戲",
+    "questions": "常見問答",
+    "logos": "標誌",
+    "logos-annotation": "Logos annotation",
+    "logos-search": "Logos search",
+    "logos-product-search": "Annotation per products",
+    "logos-deep-search": "Infinite annotation",
     "manage": "管理",
-    "insights": "智能搜索",
-    "nutritions": "营养成分",
-    "settings": "设置",
-    "eco-score": "Eco-score",
-    "dashboard": "标志选项列表",
-    "tour": "导览演示",
-    "logged_in_user": "以 {{用户名}} 身份登录",
-    "log_in": "点击登录"
+    "insights": "深層研析",
+    "nutritions": "營養成分",
+    "settings": "設定",
+    "eco-score": "環保評分",
+    "dashboard": "Logos dashboard",
+    "tour": "Show tour",
+    "logged_in_user": "Logged as {{userName}}",
+    "log_in": "Click to login"
   },
   "insights": {
-    "insights": "智能搜索",
-    "barcode": "条形码",
-    "barcode_placeholder": "条形码",
-    "value_tag": "值标签",
-    "value_placeholder": "例如：英语：碧然格燕麦片",
-    "type": "类型",
-    "annotated": "被注解的",
-    "annotation": "未标注的",
-    "not_annotated": "未标注的",
+    "insights": "深層研析",
+    "barcode": "條碼",
+    "barcode_placeholder": "條碼",
+    "value_tag": "值標籤",
+    "value_placeholder": "例如： en:mueslis, bjorg,...",
+    "type": "類型",
+    "annotated": "已注解",
+    "annotation": "注解",
+    "not_annotated": "未注解",
     "all": "全部",
-    "label": "标签",
-    "product_weight": "产品重量",
-    "category": "分类",
-    "expiration_date": "有效期",
-    "packager_code": "分装商代码",
-    "skipped": "跳过的 (-1)",
-    "rejected": "被拒绝的 (0)",
-    "accepted": "已接受的(1)",
-    "search": "搜索",
-    "count": "总计",
-    "id": "编号",
-    "value": "价值",
-    "created_at": "创建于",
-    "completed_at": "完成于",
-    "automatic": "自动的",
-    "human_required": "人类需求",
-    "edit_product": "打开产品编辑",
-    "view_product": "打开产品页面"
+    "label": "標籤",
+    "product_weight": "產品重量",
+    "category": "分類",
+    "expiration_date": "過期日",
+    "packager_code": "包裝商代碼",
+    "skipped": "跳過 (-1)",
+    "rejected": "退回 (0)",
+    "accepted": "接受 (1)",
+    "search": "搜尋",
+    "count": "次數",
+    "id": "識別碼",
+    "value": "值",
+    "created_at": "創建於",
+    "completed_at": "完成於",
+    "automatic": "自動",
+    "human_required": "Human required",
+    "edit_product": "Open product edit",
+    "view_product": "Open product page"
   },
   "logos": {
-    "annotation": "标注: ",
-    "annotations": "徽标标注",
-    "task_description": "选择所有完全相同的标志，并给他们一个名称，比如\"欧盟有机\"，并给出一个类型，比如\"标签\"",
-    "select_all": "全选",
-    "unselect_all": "取消全选",
-    "distance": "距离:",
-    "value": "价值",
-    "submit": "提交",
-    "type": "类型",
-    "label": "标签",
+    "annotation": "注解： ",
+    "annotations": "標誌注解",
+    "task_description": "Select all logos that are exactly the same, and give them a name like \"en:EU Organic\" and a type like \"label\".",
+    "select_all": "選取全部",
+    "unselect_all": "取消選取全部",
+    "distance": "距離：",
+    "value": "值",
+    "submit": "送出",
+    "type": "類型",
+    "label": "標籤",
     "brand": "品牌",
-    "packager_code": "分装商代码",
+    "packager_code": "包裝商代碼",
     "packaging": "包装",
-    "qr_code": "二维码",
-    "category": "分类",
-    "nutrition_label": "营养成分表",
-    "no_logo": "不是标志",
+    "qr_code": "QR 代碼",
+    "category": "分類",
+    "nutrition_label": "營養標示貼標",
+    "no_logo": "Not a logo",
     "store": "商店",
-    "detail": "徽标详情",
-    "id": "徽标ID",
-    "barcode": "条形码:",
-    "full_image": "完整图像",
+    "detail": "標誌詳細說明",
+    "id": "標誌 ID：",
+    "barcode": "條碼：",
+    "full_image": "完整圖片",
     "update": "更新",
-    "no_found": "未找到徽标",
-    "search": "搜索",
-    "number_of_results": "结果数量：",
-    "loading": "正在加载…",
-    "refresh": "刷新",
-    "search_specific": "搜索指定标志",
-    "load_more": "显示更多",
-    "no_results": "未找到徽标",
-    "result_count": "在 {{available}} 可用时显示 {{showing}}",
-    "flag": "有什么问题？报告或标记图像！",
-    "unflag": "取消图像标记",
-    "crop_image_title": "标志裁剪",
-    "no_more_questions": "关于这个标志，暂时没有更多问题。你可以通过以下游戏尝试找到更多标志。",
+    "no_found": "未發現標誌",
+    "search": "搜尋",
+    "number_of_results": "結果總數：",
+    "loading": "載入中…",
+    "refresh": "重新整理",
+    "search_specific": "Search specific logo",
+    "load_more": "載入更多",
+    "no_results": "未發現標誌",
+    "result_count": "Shows {{showing}} on {{available}} available",
+    "flag": "Something wrong? Report/flag the image!",
+    "unflag": "Unflag the image",
+    "crop_image_title": "crop of the logo",
+    "no_more_questions": "No more questions about this logo. You can try to find more logos with the following game.",
     "loading_messages": {
-      "pending_reference_logos": "正在加载一些样例来进行初始化搜索",
-      "failed_reference_logos": "我们没有找到任何带有此注释的徽标。请进行下面的游戏来进行注释"
+      "pending_reference_logos": "We are loading some logos examples to initialise the search",
+      "failed_reference_logos": "We did not find any logos with this annotation. Try to use the following game to annotate some of them."
     },
     "deep_search": {
-      "title": "查找徽标",
-      "description": "选择一个你想要找的图标，然后将它们全部捕获。对于你注释的每个图标，我们会获取他相邻的图标这样你就不用停下注释了。（按shift键来选中一系列图标）",
+      "title": "Logo search",
+      "description": "Select a logo you want to look for, and let's go to catch them all. For every logo you annotate, we will fetch it's neighbors such that you might never stop to annotate. (Press Shift to select range of logos)",
       "ref_logos": "Reference logos (logo already annotated with this value)",
       "remaining": "Remaining to annotate",
-      "select_all": "全选",
-      "unselect_all": "取消全选"
+      "select_all": "Select All",
+      "unselect_all": "Deselect All"
     }
   },
   "settings": {
-    "settings": "设置",
-    "language": "语言",
-    "save": "保存",
-    "reportIssue": "发现错误？请告诉我们",
-    "dev_mode_title": "要获得更多选项，请激活开发模式",
-    "dev_mode_label": "开发模式",
-    "dev_page_toggle": "显示 {{name}} 页",
-    "join_community": "加入社区",
-    "text1": "Open Food Facts 是一个由数万名志愿者建立的协作项目，由一家拥有 8 名员工的非营利组织管理。我们需要您的捐款来资助 Open Food Facts 2024 预算并继续开发该项目。",
-    "thank_you": "谢谢",
-    "donate": "捐助",
+    "settings": "設定",
+    "language": "語言",
+    "save": "儲存",
+    "reportIssue": "Found a bug? Please let us know.",
+    "dev_mode_title": "To get more options, activate the dev mode",
+    "dev_mode_label": "Dev Mode",
+    "dev_page_toggle": "Show {{name}} page",
+    "join_community": "加入社群",
+    "text1": "Open Food Facts is a collaborative project built by tens of thousands of volunteers and managed by a non-profit organization with 8 employees. We need your donations to fund the Open Food Facts 2024 budget and to continue to develop the project.",
+    "thank_you": "Thank you",
+    "donate": "贊助/捐款",
     "join_the_community": {
-      "discover_our": "探索我们的 ",
-      "code_of_conduct": "行为准则 ",
-      "join_us_on": "加入我们 ",
-      "forum": "论坛",
-      "subscribe_to_our": "订阅我们的 ",
-      "newsletter": "推送消息"
+      "discover_our": "Discover our ",
+      "code_of_conduct": "Code of conduct ",
+      "join_us_on": "Join us on ",
+      "forum": "Forum",
+      "subscribe_to_our": "Subscribe to our ",
+      "newsletter": "newsletter"
     },
-    "discover_the_project": "了解产品",
-    "Who_we_are": "我们是谁",
-    "Vision_Mission_Values_and_Programs": "希望、任务、价值和项目",
-    "FAQS": "常见问题",
-    "open_Food_Facts_blog": "Open Food Facts博客",
-    "Press": "按键",
-    "Open_Food_Facts_wiki": "Open Food Facts维基百科(英文)",
-    "Translators": "翻译人员",
+    "discover_the_project": "探索項目",
+    "Who_we_are": "我們是誰",
+    "Vision_Mission_Values_and_Programs": "Vision, Mission, Values and Programs",
+    "FAQS": "FAQS",
+    "open_Food_Facts_blog": "Open Food Facts blog",
+    "Press": "傳媒",
+    "Open_Food_Facts_wiki": "Open Food Facts wiki (en)",
+    "Translators": "翻譯員",
     "Partners": "合作伙伴",
-    "Open_Beauty_Facts": "Open Beauty Facts - 化妆品",
-    "text2": "是一个有世界各地参与的食品合作项目，是自由和开放的食品数据库"
+    "Open_Beauty_Facts": "Open Beauty Facts - 化妝品",
+    "text2": "來自全世界共同協作、自由且開放的食品資料庫。"
   },
   "helper": {
     "welcome": {
       "page1": {
-        "title": "欢迎来到饥饿游戏",
-        "text1": "Hunger Games 是一系列迷你游戏，可通过多种方式为 Open Food Facts 做出贡献。您可以在任何地方游玩令人兴奋的游戏。这是整个网站的导览，可帮助您入门。",
-        "text2": "这些操作简单有趣，动动手指就能完成。别忘了登录 Open Food Facts 网站领取您的贡献荣誉。如果出现操作失误，请登录网站改正相关信息。",
-        "text3": "如果对游戏有任何疑问，请单击页面右上角的问号图标，您也可以通过slack 上的#hunger-games 频道与我们联系"
+        "title": "歡迎來到《飢餓遊戲》",
+        "text1": "「飢餓遊戲」是一系列以多種方式幫助貢獻Open Food Facts的小遊戲。您可以隨時隨地遊抏這些刺激的遊戲。以下的網站導覽將引導您入門整個網站。",
+        "text2": "Make sure to login to the Open Food Facts website to get credit for your contributions. If you make a mistake, please take the time to correct it by heading to the website.",
+        "text3": "如果對遊戲有任何疑問，請點擊頁面右上角的問號圖標，您可以通過 Slack 上的 #hunger-games 頻道聯繫我們。"
       },
       "page2": {
-        "title": "问答游戏",
-        "text1": "这款食品属于这个品牌吗？",
-        "text2": "只需回答 <strong>是/否</strong>即可！不知道答案？没关系，跳过就行。",
-        "text3": "你也可以使用键盘快捷键：y，n和k。",
-        "text4": "您可以根据国家、品牌、受欢迎程度等信息 <strong>过滤</strong> 产品！",
-        "text5": "如果您不想每次都这样做，您也可以通过单击星号来 <strong>保存过滤器</strong> 。下次您回来时，可在主页上找到已保存的过滤器"
+        "title": "Questions Game",
+        "text1": "Does the food product belong to this brand?",
+        "text2": "Simply answer with a <strong>Yes/No</strong>! Don't know the answer? That's alright, just skip it.",
+        "text3": "You can also use your keyboard shortcuts: y,n and k.",
+        "text4": "You can <strong>filter</strong> the products based on country, brands, popularity and much more!",
+        "text5": "If you don't want to do this every single time, you can also <strong>save the filters</strong> by clicking on the star. Next time you come back, find the saved filters on the home page itself"
       },
       "page3": {
-        "title": "标志游戏",
-        "text1": "另一种受欢迎的游戏是标志游戏。你要在其中找到<strong>所有</strong>你认为一致的标志。",
-        "text2": "如示例所示，一旦您选择了所有相似的图标，只需输入它们的数目并在品牌，标签等中对它们进行选择。就是这么简单！"
+        "title": "Logos Game",
+        "text1": "Another popular game is the logos game where you have to <strong>select all the logos</strong> you feel are the same.",
+        "text2": "As shown in the example, once you select all the similar logos, just type their value and select where it is a brand, a label or something else. It's that simple!"
       },
       "page4": {
-        "title": "Eco-Score 问题游戏",
-        "text1": "帮助我们完成剩下的优先等级最高的问题！",
-        "text2": "这些卡片与 Eco-Score 计算中使用的标签相关联。",
-        "text3": "<strong>什么是生态得分？</strong>",
-        "text4": "生态得分记录了总体环境足迹，使消费者更容易比较产品并决定哪种产品对环境更有利。"
+        "title": "Eco-Score Questions Game",
+        "text1": "Help us finish the remaining questions in the most high priority labels!",
+        "text2": "These cards are linked to labels used in the computation of the Eco-Score.",
+        "text3": "<strong>What is Eco-Score?</strong>",
+        "text4": "Eco-Score captures the total environmental footprint, making it easier for consumers to compare products and decide which is better for the environment."
       },
       "page5": {
-        "title": "设置",
-        "text1": "选择您的首选语言，并从我们的设置页面报告问题。",
-        "text2": "如果您是开发人员，您还可以使用我们的开发模式浏览我们的数据库内容。"
+        "title": "設定",
+        "text1": "Set your preferred language, and report issues from our settings page.",
+        "text2": "If you're a developer, you can also explore our database content using our dev mode."
       },
       "page6": {
-        "title": "游览",
-        "text1": "有什么地方卡住了吗？想要再次观看导览？",
-        "text2": "只需点击问号即可重新开始旅程！"
+        "title": "Tour",
+        "text1": "Got stuck somewhere? Want to take the tour again?",
+        "text2": "Just click on the question mark and start the journey again!"
       }
     },
     "logos": {
       "page1": {
-        "title": "选择",
-        "text1": "点击具有相同徽标的裁剪图",
-        "text2": "选定的徽标会转到页面顶部，您可以再次点击以取消选中"
+        "title": "選項",
+        "text1": "Select the crops of a same logo by clicking on them",
+        "text2": "Selected logos go to the top of the page, you can unselect them by clicking again on them"
       },
       "page2": {
         "title": "警告",
-        "text1": "如果裁剪图包含多个徽标，请不要选中此图。",
-        "text2": "如果裁剪图仅包含部分徽标，则可以选中"
+        "text1": "If the crop contains multiple logos, do not select it.",
+        "text2": "If the crop contains only a partial part of a logo, you can select it."
       },
       "page3": {
-        "title": "验证",
-        "text1": "指明徽标的类型 (标签、品牌、二维码...)",
-        "text2": "如果是标签或品牌徽标，请指明是哪一个",
-        "text3": "现在可以提交您的选择",
-        "text4": "谢谢 :)"
+        "title": "驗證",
+        "text1": "Indicate the type of logo (label, brand, QRcode, ...)",
+        "text2": "If it is a label or a brand logo, indicate which one it is",
+        "text3": "Now you can submit your selection",
+        "text4": "謝謝您！:D"
       }
     },
-    "previous": "上一页",
-    "next": "下一个",
-    "close": "关闭"
+    "previous": "上一步",
+    "next": "下一個",
+    "close": "關閉"
   },
   "nutrition": {
     "instructions": {
-      "cropTheTable": "裁剪图像以简化标注",
-      "verifyNutrimentDetected": "指明检测的营养成分是否正确",
-      "selectMissingNutriments": "添加缺失的营养成分 (即使单词没有方框也可以点击)",
-      "selectValue": "选择其营养价值： "
+      "cropTheTable": "Crop the image to simplify your annotation",
+      "verifyNutrimentDetected": "Indicate if the nutriment detected is correct",
+      "selectMissingNutriments": "Add missing nutriments (you can click even if the word has no box)",
+      "selectValue": "選取欲查看營養值的成分："
     },
     "steps": {
-      "1": "裁剪图",
+      "1": "裁切",
       "2": "特殊值",
-      "3": "营养成分选择",
-      "4": "值选择"
+      "3": "Nutriments Selection",
+      "4": "Values Selection"
     },
-    "loading": "加载中...",
-    "unknown_brand": "未知品牌",
-    "value_missing": "您忘了输入数值",
-    "next": "下一步",
-    "prev": "上一步",
-    "skip": "跳过此产品",
-    "validate": "验证表",
-    "unselect_picture": "无营养成分信息",
-    "basis": "数据用于： ",
-    "servingSize": "份量",
-    "value": "价值",
-    "unit": "单位",
+    "loading": "載入中...",
+    "unknown_brand": "Brand Unknown",
+    "value_missing": "You forgot to input a value.",
+    "next": "Next step",
+    "prev": "Prev step",
+    "skip": "Skip this product",
+    "validate": "Validate Table",
+    "unselect_picture": "No nutrition info",
+    "basis": "data for: ",
+    "servingSize": "serving size",
+    "value": "值",
+    "unit": "單位",
     "nutriments": {
-      "nutriment_energy-kj": "卡路里 (kJ)",
-      "nutriment_energy-kcal": "卡路里 (kcal)",
+      "nutriment_energy-kj": "能量（kJ）",
+      "nutriment_energy-kcal": "Energy (kCal)",
       "nutriment_fat": "脂肪",
-      "nutriment_saturated-fat": "饱和脂肪",
+      "nutriment_saturated-fat": "飽和脂肪",
       "nutriment_carbohydrates": "碳水化合物",
       "nutriment_sugars": "糖",
-      "nutriment_proteins": "蛋白质",
-      "nutriment_fiber": "膳食纤维",
-      "nutriment_salt": "盐",
-      "nutriment_sodium": "钠"
+      "nutriment_proteins": "蛋白質",
+      "nutriment_fiber": "Fibers",
+      "nutriment_salt": "鹽",
+      "nutriment_sodium": "鈉"
     },
     "history": {
-      "title": "会话历史",
-      "status": "状态",
-      "product name": "产品名称",
-      "view": "查看页面",
-      "edit": "编辑页面",
+      "title": "Session History",
+      "status": "狀態",
+      "product name": "product name",
+      "view": "view page",
+      "edit": "edit page",
       "SKIP": "已忽略",
-      "VALIDATED": "已编辑",
-      "WRONG_IMAGE": "未选中的图片",
-      "close": "关闭",
-      "open": "打开历史记录"
+      "VALIDATED": "edited",
+      "WRONG_IMAGE": "unselected picture",
+      "close": "關閉",
+      "open": "open history"
     }
   },
   "notfound": {
-    "image_alt": "无法打开此网页",
-    "nopage": "噢！找不到您正在打开的页面",
-    "redirect1": "想玩些小游戏吗？",
-    "redirect2": "点击此处"
+    "image_alt": "404 not found",
+    "nopage": "Whoops! The page you're looking for can't be found.",
+    "redirect1": "Want to play some games?",
+    "redirect2": "Click here"
   },
   "nutriscore": {
-    "image_alt": "裁剪图像",
-    "label": "按批次注释 Nutri-Score logo检测。",
-    "description": "为此，请选择显示正确/错误 Nutri-Score 值 ({{label}}) 的所有图像，然后单击底部按钮来说明您是否选择了一组正确或错误的图像。",
-    "images_remaining": "{{remaining}} 仍待注释",
-    "image_sizes": "图像大小",
-    "zoom_on_logo": "放大标志",
-    "select_all": "全选",
-    "deselect_all": "取消全选",
-    "incorrect": "错误",
-    "correct": "正确 ({{label}})"
+    "image_alt": "cropped image",
+    "label": "Annotate Nutri-Score logo detection by batch.",
+    "description": "To do so, select all the images showing the correct/wrong Nutri-Score value ({{label}}), and click on the bottom buttons to say if you selected a set correct or wrong ones.",
+    "images_remaining": "Still {{remaining}} to annotate",
+    "image_sizes": "Image sizes",
+    "zoom_on_logo": "Zoom on logo",
+    "select_all": "選取全部",
+    "deselect_all": "取消選取全部",
+    "incorrect": "Wrong",
+    "correct": "Correct ({{label}})"
   },
   "eco-score": {
-    "description": "以下是可以改进Eco-Score计算的问题总结",
-    "countryLabel": "国家/地区"
+    "description": "Here is a summary of questions that could improve Eco-Score computation",
+    "countryLabel": "地區"
   },
   "ingredients": {
-    "description": "待办：定义游戏"
+    "description": "TODO: define the game"
+  },
+  "footer": {
+    "appStore": {
+      "title": "App Store",
+      "subtitle": "Download on the"
+    },
+    "playStore": {
+      "title": "Play Store",
+      "subtitle": "Get it on"
+    },
+    "microsoft": {
+      "title": "Microsoft",
+      "subtitle": "Get it from"
+    },
+    "androidAPK": {
+      "title": "Android APK",
+      "subtitle": "下載"
+    }
   }
 }

@@ -385,5 +385,23 @@
   },
   "ingredients": {
     "description": "POR HACER: definir el juego"
+  },
+  "footer": {
+    "appStore": {
+      "title": "App Store",
+      "subtitle": "Descárgala en la"
+    },
+    "playStore": {
+      "title": "Play Store",
+      "subtitle": "Consíguela en la"
+    },
+    "microsoft": {
+      "title": "Microsoft",
+      "subtitle": "Obtenla en"
+    },
+    "androidAPK": {
+      "title": "Android APK",
+      "subtitle": "Descargar"
+    }
   }
 }

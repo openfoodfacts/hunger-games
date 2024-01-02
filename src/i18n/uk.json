@@ -385,5 +385,23 @@
   },
   "ingredients": {
     "description": "TODO: визначити гру"
+  },
+  "footer": {
+    "appStore": {
+      "title": "App Store",
+      "subtitle": "Завантажуйте з"
+    },
+    "playStore": {
+      "title": "Play Store",
+      "subtitle": "Отримай це"
+    },
+    "microsoft": {
+      "title": "Microsoft",
+      "subtitle": "Взяти з"
+    },
+    "androidAPK": {
+      "title": "АРК для Android",
+      "subtitle": "Завантажувати"
+    }
   }
 }

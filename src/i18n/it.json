@@ -385,5 +385,23 @@
   },
   "ingredients": {
     "description": "TODO: definire il gioco"
+  },
+  "footer": {
+    "appStore": {
+      "title": "App Store",
+      "subtitle": "Scaricala su"
+    },
+    "playStore": {
+      "title": "Play Store",
+      "subtitle": "Scaricala su"
+    },
+    "microsoft": {
+      "title": "Microsoft",
+      "subtitle": "Scaricala su"
+    },
+    "androidAPK": {
+      "title": "APK Android",
+      "subtitle": "Scarica"
+    }
   }
 }

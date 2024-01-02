@@ -385,5 +385,23 @@
   },
   "ingredients": {
     "description": "TODO: define the game"
+  },
+  "footer": {
+    "appStore": {
+      "title": "App Store",
+      "subtitle": "Download on the"
+    },
+    "playStore": {
+      "title": "Play Store",
+      "subtitle": "Get it on"
+    },
+    "microsoft": {
+      "title": "Microsoft",
+      "subtitle": "Get it from"
+    },
+    "androidAPK": {
+      "title": "Android APK",
+      "subtitle": "Muat turun"
+    }
   }
 }
