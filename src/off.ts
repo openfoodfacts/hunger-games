@@ -6,8 +6,14 @@ import {
   OFF_SEARCH,
   OFF_URL,
 } from "./const";
+import OFF from "openfoodfacts-nodejs";
+
 import axios from "axios";
 import combineURLs from "axios/lib/helpers/combineURLs";
+
+const offClient = new OFF();
+
+offClient.getProduct("5000112546415").then(console.log);
 
 const BARCODE_REGEX = /(...)(...)(...)(.*)$/;
 
