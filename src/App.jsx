@@ -318,10 +318,10 @@ export default function App() {
                 <Route path="/france" element={<DashBoard />} />
                 <Route path="/germany" element={<DashBoard />} />
                 <Route path="/organic" element={<DashBoard />} />
-                <Route path="/beers and wines" element={<DashBoard />} />
-                <Route path="/animal welfare" element={<DashBoard />} />
+                <Route path="/beers-and-wines" element={<DashBoard />} />
+                <Route path="/animal-welfare" element={<DashBoard />} />
                 <Route path="/brands" element={<DashBoard />} />
-                <Route path="/no gluten" element={<DashBoard />} />
+                <Route path="/no-gluten" element={<DashBoard />} />
                 
                 <Route
                   path="/nutrition"
