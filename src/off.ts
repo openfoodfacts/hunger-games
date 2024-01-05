@@ -84,7 +84,7 @@ const offService = {
   },
   // TODO: Create a UI button allowing to jump to the Crop page by barcode from the question game
   getLogoCropsByBarcodeUrl(barcode) {
-  return `https://hunger.openfoodfacts.org/logos/search?barcode==${barcode}`;
+  return `https://hunger.openfoodfacts.org/logos/search?barcode=${barcode}`;
   },
   
   getImageUrl(imagePath) {
