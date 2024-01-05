@@ -298,7 +298,6 @@ export default function App() {
                 <Route path="/insights" element={<InsightsPage />} />
                 <Route path="*" element={<NotFoundPage />} />
                 <Route path="/logoQuestion/" elemnt={<DashBoard />} />
-                <Route path="/dashboard/" element={<DashBoard />} />
                 <Route
                   path="/logoQuestion/:valueTag"
                   element={
@@ -309,20 +308,17 @@ export default function App() {
                     )
                   }
                 />
-                {/*  To delete in 2024 */}
+
+                <Route path="/dashboard/" element={<DashBoard />} />
+                <Route path="/dashboard/:dasboardId" element={<DashBoard />} />
+                {/**
+                 * To delete in 2025 because nutriscore and inao are now availabel as
+                 * - dasboard/nutriscore
+                 * - dasboard/inao
+                 */}
                 <Route path="/nutriscore" element={<DashBoard />} />
                 <Route path="/inao" element={<DashBoard />} />
-                <Route path="/united-states" element={<DashBoard />} />
-                <Route path="/united-kingdom" element={<DashBoard />} />
-                <Route path="/australia" element={<DashBoard />} />
-                <Route path="/france" element={<DashBoard />} />
-                <Route path="/germany" element={<DashBoard />} />
-                <Route path="/organic" element={<DashBoard />} />
-                <Route path="/beers-and-wines" element={<DashBoard />} />
-                <Route path="/animal-welfare" element={<DashBoard />} />
-                <Route path="/brands" element={<DashBoard />} />
-                <Route path="/no-gluten" element={<DashBoard />} />
-                
+
                 <Route
                   path="/nutrition"
                   element={

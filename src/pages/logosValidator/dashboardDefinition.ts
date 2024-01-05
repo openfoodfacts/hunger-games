@@ -2542,6 +2542,32 @@ const UNTYPED_LOGOS = {
     logo: "https://robotoff.openfoodfacts.org/api/v1/images/crop?image_url=https://static.openfoodfacts.org/images/products/350/757/010/0132/1.jpg&y_min=0.635474681854248&x_min=0.3560321033000946&y_max=0.7346380352973938&x_max=0.4571381211280823",
     type: "label",
   },
+  "en:saveurs-en-or": {
+    tag: "en:saveurs-en-or",
+    label: "en:saveurs-en-or",
+    logo: "",
+
+    type: "label",
+  },
+  "en:gold-medal-of-the-german-agricultural-society": {
+    tag: "en:gold-medal-of-the-german-agricultural-society",
+    label: "en:gold-medal-of-the-german-agricultural-society",
+    logo: "https://static.openfoodfacts.org/images/lang/en/labels/2010-gold-medal-of-the-german-agricultural-society.90x90.png",
+    type: "label",
+  },
+  "en:silver-medal-of-the-german-agricultural-society": {
+    tag: "en:silver-medal-of-the-german-agricultural-society",
+    label: "en:silver-medal-of-the-german-agricultural-society",
+    logo: "https://static.openfoodfacts.org/images/lang/en/labels/2009-silver-medal-of-the-german-agricultural-society.90x90.png",
+    type: "label",
+  },
+  "en:bronze-medal-of-the-german-agricultural-society": {
+    tag: "en:bronze-medal-of-the-german-agricultural-society",
+    label: "en:bronze-medal-of-the-german-agricultural-society",
+    logo: "https://static.openfoodfacts.org/images/lang/en/labels/2016-bronze-medal-of-the-german-agricultural-society.90x90.png",
+
+    type: "label",
+  },
 };
 
 type LogoType = { [key in keyof typeof UNTYPED_LOGOS]: LogoDefinition };

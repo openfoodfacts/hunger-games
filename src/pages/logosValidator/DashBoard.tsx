@@ -8,6 +8,7 @@ import { useTheme } from "@mui/material/styles";
 
 import { LOGOS, DASHBOARD } from "./dashboardDefinition";
 import DashboardCard from "./DashboardCard";
+import { Link, useParams } from "react-router-dom";
 
 interface TabPanelProps {
   children?: React.ReactNode;
@@ -65,10 +66,14 @@ function a11yProps(index: number) {
 }
 
 export default function VerticalTabs() {
+  const { dasboardId } = useParams();
+
   const theme = useTheme();
   const isDesktop = useMediaQuery(theme.breakpoints.up("md"));
 
-  const [value, setValue] = React.useState(0);
+  const [value, setValue] = React.useState(
+    DASHBOARD.findIndex(({ tag }) => tag === dasboardId) || 0
+  );
 
   const handleChange = (event: React.SyntheticEvent, newValue: number) => {
     setValue(newValue);
@@ -98,7 +103,13 @@ export default function VerticalTabs() {
           }}
         >
           {DASHBOARD.map(({ tag, title }, index) => (
-            <Tab label={title} key={index} {...a11yProps(index)} />
+            <Tab
+              label={title}
+              key={index}
+              {...a11yProps(index)}
+              component={Link}
+              to={`/dashboard/${tag}`}
+            />
           ))}
         </Tabs>
         {DASHBOARD.map(({ tag, title }, index) => (
