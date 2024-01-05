@@ -15,7 +15,7 @@
     "axios": "^0.27.2",
     "i18next": "^23.6.0",
     "lodash.isequal": "^4.5.0",
-    "openfoodfacts-nodejs": "^0.1.0",
+    "openfoodfacts-nodejs": "https://github.com/openfoodfacts/openfoodfacts-nodejs.git#develop",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-i18next": "^12.3.1",
