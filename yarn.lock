@@ -1614,13 +1614,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"axios@npm:^0.27.2":
-  version: 0.27.2
-  resolution: "axios@npm:0.27.2"
+"axios@npm:^1.6.4":
+  version: 1.6.4
+  resolution: "axios@npm:1.6.4"
   dependencies:
-    follow-redirects: ^1.14.9
+    follow-redirects: ^1.15.4
     form-data: ^4.0.0
-  checksum: 38cb7540465fe8c4102850c4368053c21683af85c5fdf0ea619f9628abbcb59415d1e22ebc8a6390d2bbc9b58a9806c874f139767389c862ec9b772235f06854
+    proxy-from-env: ^1.1.0
+  checksum: 48d8af8488ac7402fae312437c0189b3b609a472fca2f7fc796129c804d98520589b6317096eba8509711d49f855a3f620b6a24ff23acd73ac26433d0383b8f9
   languageName: node
   linkType: hard
 
@@ -2628,13 +2629,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"follow-redirects@npm:^1.14.9":
-  version: 1.15.3
-  resolution: "follow-redirects@npm:1.15.3"
+"follow-redirects@npm:^1.15.4":
+  version: 1.15.4
+  resolution: "follow-redirects@npm:1.15.4"
   peerDependenciesMeta:
     debug:
       optional: true
-  checksum: 584da22ec5420c837bd096559ebfb8fe69d82512d5585004e36a3b4a6ef6d5905780e0c74508c7b72f907d1fa2b7bd339e613859e9c304d0dc96af2027fd0231
+  checksum: e178d1deff8b23d5d24ec3f7a94cde6e47d74d0dc649c35fc9857041267c12ec5d44650a0c5597ef83056ada9ea6ca0c30e7c4f97dbf07d035086be9e6a5b7b6
   languageName: node
   linkType: hard
 
@@ -2705,7 +2706,7 @@ __metadata:
 
 "fsevents@patch:fsevents@~2.3.2#~builtin<compat/fsevents>":
   version: 2.3.3
-  resolution: "fsevents@patch:fsevents@npm%3A2.3.3#~builtin<compat/fsevents>::version=2.3.3&hash=df0bf1"
+  resolution: "fsevents@patch:fsevents@npm%3A2.3.3#~builtin<compat/fsevents>::version=2.3.3&hash=18f3a7"
   dependencies:
     node-gyp: latest
   conditions: os=darwin
@@ -3022,7 +3023,7 @@ __metadata:
     "@typescript-eslint/eslint-plugin": latest
     "@typescript-eslint/parser": latest
     "@vitejs/plugin-react": ^4.1.1
-    axios: ^0.27.2
+    axios: ^1.6.4
     eslint: ^8.53.0
     eslint-plugin-prettier: ^5.0.1
     eslint-plugin-react: ^7.33.2
@@ -4258,6 +4259,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"proxy-from-env@npm:^1.1.0":
+  version: 1.1.0
+  resolution: "proxy-from-env@npm:1.1.0"
+  checksum: ed7fcc2ba0a33404958e34d95d18638249a68c430e30fcb6c478497d72739ba64ce9810a24f53a7d921d0c065e5b78e3822759800698167256b04659366ca4d4
+  languageName: node
+  linkType: hard
+
 "punycode@npm:^2.1.0":
   version: 2.3.1
   resolution: "punycode@npm:2.3.1"
@@ -4554,7 +4562,7 @@ __metadata:
 
 "resolve@patch:resolve@^1.19.0#~builtin<compat/resolve>":
   version: 1.22.8
-  resolution: "resolve@patch:resolve@npm%3A1.22.8#~builtin<compat/resolve>::version=1.22.8&hash=c3c19d"
+  resolution: "resolve@patch:resolve@npm%3A1.22.8#~builtin<compat/resolve>::version=1.22.8&hash=07638b"
   dependencies:
     is-core-module: ^2.13.0
     path-parse: ^1.0.7
@@ -4567,7 +4575,7 @@ __metadata:
 
 "resolve@patch:resolve@^2.0.0-next.4#~builtin<compat/resolve>":
   version: 2.0.0-next.5
-  resolution: "resolve@patch:resolve@npm%3A2.0.0-next.5#~builtin<compat/resolve>::version=2.0.0-next.5&hash=c3c19d"
+  resolution: "resolve@patch:resolve@npm%3A2.0.0-next.5#~builtin<compat/resolve>::version=2.0.0-next.5&hash=07638b"
   dependencies:
     is-core-module: ^2.13.0
     path-parse: ^1.0.7
@@ -5147,7 +5155,7 @@ __metadata:
 
 "typescript@patch:typescript@^5.2.2#~builtin<compat/typescript>":
   version: 5.2.2
-  resolution: "typescript@patch:typescript@npm%3A5.2.2#~builtin<compat/typescript>::version=5.2.2&hash=14eedb"
+  resolution: "typescript@patch:typescript@npm%3A5.2.2#~builtin<compat/typescript>::version=5.2.2&hash=701156"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
