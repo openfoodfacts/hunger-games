@@ -156,7 +156,7 @@ const InsightGrid = ({ filterState = {}, setFilterState }) => {
                   <VisibilityIcon />
                 </Tooltip>
               }
-            />
+            />,
                         <GridActionsCellItem
               component="a"
               href={getLogoCropsByBarcodeUrl(params.row.barcode)}
