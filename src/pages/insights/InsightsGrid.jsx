@@ -34,6 +34,12 @@ const getProductUrl = (code) => {
   }
   return offService.getProductUrl(code);
 };
+const getLogoCropsByBarcodeUrl = (code) => {
+  if (!code) {
+    return "";
+  }
+  return offService.getLogoCropsByBarcodeUrl(code);
+};
 const getProductEditUrl = (code) => {
   if (!code) {
     return "";
@@ -151,6 +157,17 @@ const InsightGrid = ({ filterState = {}, setFilterState }) => {
                 </Tooltip>
               }
             />
+                        <GridActionsCellItem
+              component="a"
+              href={getLogoCropsByBarcodeUrl(params.row.barcode)}
+              label={t("insights.view_product")}
+              icon={
+                <Tooltip title={t("insights.view_product")}>
+                  <VisibilityIcon />
+                </Tooltip>
+              }
+            />
+            
             ,
           </React.Fragment>
         ),
