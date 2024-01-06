@@ -309,7 +309,6 @@ export default function App() {
                 <Route path="/insights" element={<InsightsPage />} />
                 <Route path="*" element={<NotFoundPage />} />
                 <Route path="/logoQuestion/" elemnt={<DashBoard />} />
-                <Route path="/dashboard/" element={<DashBoard />} />
                 <Route
                   path="/logoQuestion/:valueTag"
                   element={
@@ -320,7 +319,14 @@ export default function App() {
                     )
                   }
                 />
-                {/*  To delete in 2024 */}
+
+                <Route path="/dashboard/" element={<DashBoard />} />
+                <Route path="/dashboard/:dasboardId" element={<DashBoard />} />
+                {/**
+                 * To delete in 2025 because nutriscore and inao are now availabel as
+                 * - dasboard/nutriscore
+                 * - dasboard/inao
+                 */}
                 <Route path="/nutriscore" element={<DashBoard />} />
                 <Route path="/inao" element={<DashBoard />} />
 
