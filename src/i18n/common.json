@@ -102,7 +102,7 @@
         "campaign": "Annotation campaigns"
       },
       "actions": {
-        "edit": "Edit Filters",
+        "edit": "Edit filters",
         "cancel": "Cancel",
         "apply": "Apply"
       }
@@ -165,7 +165,8 @@
     "automatic": "Automatic",
     "human_required": "Human required",
     "edit_product": "Open product edit",
-    "view_product": "Open product page"
+    "view_product": "Open product page",
+    "view_crops_for_this_product": "Annotate product logos"
   },
   "logos": {
     "annotation": "Annotation: ",
