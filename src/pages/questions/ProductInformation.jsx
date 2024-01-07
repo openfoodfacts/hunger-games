@@ -120,7 +120,7 @@ const ProductInformation = (props) => {
         startIcon={<EditIcon />}
         sx={{ ml: 2, minWidth: 150 }}
       >
-        {t("questions.edit")}
+        {t("insights.view_crops_for_this_product")}
       </Button>
       {
         /* Other questions */
