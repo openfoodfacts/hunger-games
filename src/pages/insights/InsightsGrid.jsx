@@ -160,9 +160,9 @@ const InsightGrid = ({ filterState = {}, setFilterState }) => {
                         <GridActionsCellItem
               component="a"
               href={getLogoCropsByBarcodeUrl(params.row.barcode)}
-              label={t("insights.view_product")}
+              label={t("insights.view_crops_for_this_product")}
               icon={
-                <Tooltip title={t("insights.view_product")}>
+                <Tooltip title={t("insights.view_crops_for_this_product")}>
                   <VisibilityIcon />
                 </Tooltip>
               }
