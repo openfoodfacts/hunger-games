@@ -166,7 +166,7 @@
     "human_required": "Потрібна людина",
     "edit_product": "Відкрити редагування продукту",
     "view_product": "Відкрити сторінку продукту",
-    "view_crops_for_this_product": "Annotate product logos"
+    "view_crops_for_this_product": "Примітки до логотипів продуктів"
   },
   "logos": {
     "annotation": "Анотації:",
@@ -254,7 +254,7 @@
     "welcome": {
       "page1": {
         "title": "Ласкаво просимо до Голодних ігор",
-        "text1": "Hunger Games is a collection of mini-games that help contribute to Open Food Facts in many ways. You can play our really exciting games from anywhere. Here is a guided tour of the entire website which will get you started.",
+        "text1": "Голодні ігри - це колекція мініігор, які допомагають багатьма способами сприяти відкриттю фактів про їжу. Ви можете грати в ці дійсно захопливі ігри з будь-якого місця. Пропонуємо вашій увазі оглядовий тур по всьому сайту, який допоможе вам розпочати гру.",
         "text2": "Переконайтеся, що ви увійшли на сайт Open Food Facts, щоб отримати зарахування ваших внесків. Якщо ви зробили помилку, будь ласка, знайдіть час, щоб виправити її, перейшовши на сайт.",
         "text3": "У разі виникнення будь-яких сумнівів щодо ігор, натискайте на іконку зі знаком питання у верхньому правому куті сторінки, а також ви можете зв'язатися з нами у slack на каналі #hunger-games"
       },
@@ -343,9 +343,9 @@
       "nutriment_fat": "Жири",
       "nutriment_saturated-fat": "Насичені жири",
       "nutriment_carbohydrates": "Вуглеводи",
-      "nutriment_sugars": "Sugar",
-      "nutriment_proteins": "Protein content",
-      "nutriment_fiber": "Fibres",
+      "nutriment_sugars": "Цукор",
+      "nutriment_proteins": "Вміст білка",
+      "nutriment_fiber": "Волокна",
       "nutriment_salt": "Сіль",
       "nutriment_sodium": "Натрій"
     },
@@ -385,7 +385,7 @@
     "countryLabel": "Країна"
   },
   "ingredients": {
-    "description": "This game allows you to validate the pre-selection of images of ingredients lists in various languages for a product, and validate the extracted ingredients."
+    "description": "Ця гра дозволяє перевіряти попередньо вибрані зображення інгредієнтів на різних мовах для товару та підтверджувати видобуті інгредієнти."
   },
   "footer": {
     "appStore": {
