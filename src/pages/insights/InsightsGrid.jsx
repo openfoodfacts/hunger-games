@@ -156,8 +156,9 @@ const InsightGrid = ({ filterState = {}, setFilterState }) => {
                   <VisibilityIcon />
                 </Tooltip>
               }
-            />,
-                        <GridActionsCellItem
+            />
+            ,
+            <GridActionsCellItem
               component="a"
               href={getLogoCropsByBarcodeUrl(params.row.barcode)}
               label={t("insights.view_crops_for_this_product")}
@@ -167,7 +168,6 @@ const InsightGrid = ({ filterState = {}, setFilterState }) => {
                 </Tooltip>
               }
             />
-            
             ,
           </React.Fragment>
         ),

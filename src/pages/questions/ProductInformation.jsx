@@ -111,7 +111,7 @@ const ProductInformation = (props) => {
       >
         {t("questions.edit")}
       </Button>
-            <Button
+      <Button
         size="small"
         component={Link}
         target="_blank"

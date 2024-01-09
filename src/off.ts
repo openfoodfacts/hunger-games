@@ -83,9 +83,9 @@ const offService = {
     }.openfoodfacts.org/cgi/product.pl?type=edit&code=${barcode}`;
   },
   getLogoCropsByBarcodeUrl(barcode) {
-  return `https://hunger.openfoodfacts.org/logos/search?barcode=${barcode}`;
+    return `https://hunger.openfoodfacts.org/logos/search?barcode=${barcode}`;
   },
-  
+
   getImageUrl(imagePath) {
     return combineURLs(OFF_IMAGE_URL, imagePath);
   },
