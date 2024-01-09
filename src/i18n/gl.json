@@ -165,7 +165,8 @@
     "automatic": "Automático",
     "human_required": "Requírese humano",
     "edit_product": "Abrir a edición do produto",
-    "view_product": "Abre a páxina do produto"
+    "view_product": "Abre a páxina do produto",
+    "view_crops_for_this_product": "Annotate product logos"
   },
   "logos": {
     "annotation": "Anotación: ",
@@ -253,7 +254,7 @@
     "welcome": {
       "page1": {
         "title": "Benvido aos Hunger Games",
-        "text1": "Hunger Games é unha colección de minixogos que axudan a contribuír a Open Food Facts de moitas maneiras. Podes xogar a xogos realmente emocionantes desde calquera lugar. Aquí tes unha visita guiada por todo o sitio web que che axudará comezar.",
+        "text1": "Hunger Games is a collection of mini-games that help contribute to Open Food Facts in many ways. You can play our really exciting games from anywhere. Here is a guided tour of the entire website which will get you started.",
         "text2": "Asegúrate de iniciar sesión no sitio web de Open Food Facts para obter crédito polas túas contribucións. Se cometes un erro, toma o tempo para correxilo dirixíndote ao sitio web.",
         "text3": "Se tes algunha dúbida sobre os xogos, fai clic na icona do signo de interrogación na parte superior dereita da páxina e poderás poñerte en contacto connosco por Slack na canle #hunger-games"
       },
@@ -342,9 +343,9 @@
       "nutriment_fat": "Graxas",
       "nutriment_saturated-fat": "Saturated fat",
       "nutriment_carbohydrates": "Carbohidratos",
-      "nutriment_sugars": "Azucres",
-      "nutriment_proteins": "Proteínas",
-      "nutriment_fiber": "Fibers",
+      "nutriment_sugars": "Sugar",
+      "nutriment_proteins": "Protein content",
+      "nutriment_fiber": "Fibres",
       "nutriment_salt": "Sal",
       "nutriment_sodium": "Sodio"
     },
@@ -384,7 +385,7 @@
     "countryLabel": "País"
   },
   "ingredients": {
-    "description": "TODO: define the game"
+    "description": "This game allows you to validate the pre-selection of images of ingredients lists in various languages for a product, and validate the extracted ingredients."
   },
   "footer": {
     "appStore": {
