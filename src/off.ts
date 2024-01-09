@@ -82,6 +82,9 @@ const offService = {
       lang === "en" ? "" : "-" + lang
     }.openfoodfacts.org/cgi/product.pl?type=edit&code=${barcode}`;
   },
+  getLogoCropsByBarcodeUrl(barcode) {
+    return `https://hunger.openfoodfacts.org/logos/search?barcode=${barcode}`;
+  },
 
   getImageUrl(imagePath) {
     return combineURLs(OFF_IMAGE_URL, imagePath);
@@ -155,7 +158,7 @@ const offService = {
       )}?${urlParams.toString()}`,
     );
   },
-
+  // TODO: fix method name
   setIngedrient({ code, lang, text }) {
     if (!code) {
       console.error("setIngedrient: Missing code");
