@@ -165,7 +165,8 @@
     "automatic": "Automatico",
     "human_required": "Richiesto intervento umano",
     "edit_product": "Modifica il prodotto",
-    "view_product": "Apri la pagina del prodotto"
+    "view_product": "Apri la pagina del prodotto",
+    "view_crops_for_this_product": "Annotate product logos"
   },
   "logos": {
     "annotation": "Annotazione: ",
@@ -253,7 +254,7 @@
     "welcome": {
       "page1": {
         "title": "Benvenuto su Hunger Games",
-        "text1": "Hunger Games è una raccolta di minigiochi che aiutano a contribuire a Open Food Facts in molti modi. Puoi giocare a giochi davvero divertenti in qualsiasi luogo. Ecco una tour guidato dell'intero sito per iniziare.",
+        "text1": "Hunger Games is a collection of mini-games that help contribute to Open Food Facts in many ways. You can play our really exciting games from anywhere. Here is a guided tour of the entire website which will get you started.",
         "text2": "Assicuratevi di connettervi al sito di Open Food Facts per ottenere il riconoscimento dei vostri contributi. Se commettete un errore, prendetevi il tempo di correggerlo collegandovi al sito web.",
         "text3": "In caso di dubbi sui giochi, cliccate sul punto interrogativo in alto a destra della pagina e contattateci su slack al canale #hunger-games"
       },
@@ -342,9 +343,9 @@
       "nutriment_fat": "Grassi",
       "nutriment_saturated-fat": "Grassi saturi",
       "nutriment_carbohydrates": "Carboidrati",
-      "nutriment_sugars": "Zuccheri",
-      "nutriment_proteins": "Proteine",
-      "nutriment_fiber": "Fibre",
+      "nutriment_sugars": "Sugar",
+      "nutriment_proteins": "Protein content",
+      "nutriment_fiber": "Fibres",
       "nutriment_salt": "Sale",
       "nutriment_sodium": "Sodio"
     },
@@ -384,7 +385,7 @@
     "countryLabel": "Paese"
   },
   "ingredients": {
-    "description": "TODO: definire il gioco"
+    "description": "This game allows you to validate the pre-selection of images of ingredients lists in various languages for a product, and validate the extracted ingredients."
   },
   "footer": {
     "appStore": {
