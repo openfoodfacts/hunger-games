@@ -165,7 +165,8 @@
     "automatic": "Automático",
     "human_required": "Humano requerido",
     "edit_product": "Abrir edición del producto",
-    "view_product": "Abrir página del producto"
+    "view_product": "Abrir página del producto",
+    "view_crops_for_this_product": "Annotate product logos"
   },
   "logos": {
     "annotation": "Anotación: ",
@@ -253,7 +254,7 @@
     "welcome": {
       "page1": {
         "title": "Te damos la bienvenida a Los Juegos del Hambre",
-        "text1": "Los Juegos del Hambre es una colección de minijuegos que contribuyen a Open Food Facts de muchas maneras. Puedes jugar a estos emocionantes juegos desde cualquier lugar. Aquí tienes una visita guiada por todo el sitio web que te ayudará a empezar.",
+        "text1": "Hunger Games is a collection of mini-games that help contribute to Open Food Facts in many ways. You can play our really exciting games from anywhere. Here is a guided tour of the entire website which will get you started.",
         "text2": "Asegúrate de iniciar sesión en el sitio web de Open Food Facts para obtener reconocimiento por tu contribución. Si cometes un error, tómate el tiempo que necesites para corregirlo accediendo al sitio web.",
         "text3": "Si tienes dudas sobre los juegos, haz clic en el icono de la interrogación, en la parte superior derecha de la página, y podrás comunicarte con nosotros a través del canal de Slack #hunger-games."
       },
@@ -342,9 +343,9 @@
       "nutriment_fat": "Grasas",
       "nutriment_saturated-fat": "Grasas saturadas",
       "nutriment_carbohydrates": "Carbohidratos",
-      "nutriment_sugars": "Azúcares",
-      "nutriment_proteins": "Proteínas",
-      "nutriment_fiber": "Fibras",
+      "nutriment_sugars": "Sugar",
+      "nutriment_proteins": "Protein content",
+      "nutriment_fiber": "Fibres",
       "nutriment_salt": "Sal",
       "nutriment_sodium": "Sodio"
     },
@@ -384,7 +385,7 @@
     "countryLabel": "País"
   },
   "ingredients": {
-    "description": "POR HACER: definir el juego"
+    "description": "This game allows you to validate the pre-selection of images of ingredients lists in various languages for a product, and validate the extracted ingredients."
   },
   "footer": {
     "appStore": {
