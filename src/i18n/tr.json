@@ -165,7 +165,8 @@
     "automatic": "Otomatik",
     "human_required": "İnsan gerekli",
     "edit_product": "Ürün düzenlemeyi aç",
-    "view_product": "Ürün sayfasını aç"
+    "view_product": "Ürün sayfasını aç",
+    "view_crops_for_this_product": "Annotate product logos"
   },
   "logos": {
     "annotation": "Açıklama: ",
@@ -253,7 +254,7 @@
     "welcome": {
       "page1": {
         "title": "Açlık Oyunları'na hoş geldiniz",
-        "text1": "Açlık Oyunları, Open Food Facts'e birçok yönden katkıda bulunmaya yardımcı olan bir mini oyunlar koleksiyonudur. Gerçekten heyecan verici oyunları her yerden oynayabilirsiniz. İşte başlamanıza yardımcı olacak tüm web sitesinin rehberli bir turu.",
+        "text1": "Hunger Games is a collection of mini-games that help contribute to Open Food Facts in many ways. You can play our really exciting games from anywhere. Here is a guided tour of the entire website which will get you started.",
         "text2": "Katkılarınız için kredi almak için Open Food Facts web sitesine giriş yaptığınızdan emin olun. Bir hata yaparsanız, lütfen web sitesine giderek düzeltmek için zaman ayırın.",
         "text3": "Oyunlarla ilgili herhangi bir şüpheniz olması durumunda sayfanın sağ üst köşesindeki soru işareti ikonuna tıklayarak bize #açlık-oyunları kanalından slack'ten ulaşabilirsiniz"
       },
@@ -342,9 +343,9 @@
       "nutriment_fat": "Yağ",
       "nutriment_saturated-fat": "Doymuş yağ",
       "nutriment_carbohydrates": "Karbonhidrat",
-      "nutriment_sugars": "Şeker",
-      "nutriment_proteins": "Proteinler",
-      "nutriment_fiber": "Fiberler",
+      "nutriment_sugars": "Sugar",
+      "nutriment_proteins": "Protein content",
+      "nutriment_fiber": "Fibres",
       "nutriment_salt": "Tuz",
       "nutriment_sodium": "Sodyum"
     },
@@ -384,7 +385,7 @@
     "countryLabel": "Ülke"
   },
   "ingredients": {
-    "description": "YAPILACAKLAR: oyunu tanımla"
+    "description": "This game allows you to validate the pre-selection of images of ingredients lists in various languages for a product, and validate the extracted ingredients."
   },
   "footer": {
     "appStore": {
