@@ -111,6 +111,17 @@ const ProductInformation = (props) => {
       >
         {t("questions.edit")}
       </Button>
+      <Button
+        size="small"
+        component={Link}
+        target="_blank"
+        href={offService.getLogoCropsByBarcodeUrl(question.barcode)}
+        variant="contained"
+        startIcon={<EditIcon />}
+        sx={{ ml: 2, minWidth: 150 }}
+      >
+        {t("insights.view_crops_for_this_product")}
+      </Button>
       {
         /* Other questions */
 
