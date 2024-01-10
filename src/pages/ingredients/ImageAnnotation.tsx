@@ -107,6 +107,16 @@ function Annotation({ code, data, isLoading, error }: AnnotationProps) {
                 Revert
               </Button>
               <Button
+                onClick={() =>
+                  off.getIngedrientParsing({
+                    lang,
+                    text: editedState[lang].text,
+                  })
+                }
+              >
+                get parsing
+              </Button>
+              <Button
                 onClick={() => {
                   off.setIngedrient({ code, lang, text });
                 }}
