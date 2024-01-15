@@ -1,5 +1,12 @@
 import * as React from "react";
+import Accordion from "@mui/material/Accordion";
+import AccordionSummary from "@mui/material/AccordionSummary";
+import AccordionDetails from "@mui/material/AccordionDetails";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
+import off from "../../off";
+
+// https://world-fr.openfoodfacts.org/produit/4056489216155/creme-dessert-saveur-vanille-lidl-envia
 const correctTxt =
   "lait écrémé (Origine: Allemagne), protéines de lait crème (lait (Origine: Allemagne)), amidon modifié de tapioca, épaississants: carraghénanes, carboxyméthyl-cellulose sodique 7% extrait de carthame, arôme naturel de vanille, arôme naturel, édulcorants: acésulfame-K, sucralose, lactase.";
 const correctData = [
@@ -233,110 +240,206 @@ const badData = [
   },
 ];
 
-function ColorText({ text }: { text: string }) {
-  return text.split(",").map((txt, i) => (
-    <React.Fragment key={i}>
-      <span style={{ color: i % 2 === 0 ? "blue" : "red" }}>{txt}</span>
-      {i === text.split(",").length - 1 ? "" : ","}
-    </React.Fragment>
-  ));
+type BooleanEstimation = "no" | "yes" | "maybe";
+type ParsedIngredientsType = {
+  ciqual_proxy_food_code?: string;
+  id: string;
+  ingredients?: ParsedIngredientsType[];
+  origins?: string;
+  percent_estimate: number;
+  percent_max: number;
+  percent_min: number;
+  text: string;
+  vegan: BooleanEstimation;
+  vegetarian: BooleanEstimation;
+};
+
+function getColor(ingredient: ParsedIngredientsType) {
+  if (ingredient.ciqual_proxy_food_code !== undefined) return "green";
+  if (ingredient.vegetarian !== undefined) return "lightgreen";
+  if (ingredient.ingredients !== undefined) return "blue";
+  return "orange";
+}
+function ColorText({
+  text,
+  ingredients,
+}: {
+  text: string;
+  ingredients?: ParsedIngredientsType[];
+}) {
+  return text.split(",").map((txt, i) => {
+    if (ingredients === undefined) {
+      // Without parsing, we just split with comas
+      return (
+        <React.Fragment key={i}>
+          <span style={{ color: i % 2 === 0 ? "blue" : "red" }}>{txt}</span>
+          {i === text.split(",").length - 1 ? "" : ","}
+        </React.Fragment>
+      );
+    }
+
+    // With ingredients, we can try something more complex
+    const ingredient = ingredients[i];
+    const startIndex = txt.indexOf(ingredient.text);
+    const endIndex = startIndex + ingredient.text.length;
+
+    const prefix = txt.slice(0, startIndex);
+    const ingredientName = txt.slice(startIndex, endIndex);
+    const sufix = txt.slice(endIndex);
+
+    return (
+      <React.Fragment key={i}>
+        <span>{prefix}</span>
+        <span style={{ color: getColor(ingredient) }}>{ingredientName}</span>
+        {ingredient.ingredients ? (
+          <ColorText text={sufix} ingredients={ingredient.ingredients} />
+        ) : (
+          <span>{sufix}</span>
+        )}
+        {i === text.split(",").length - 1 ? "" : ","}
+      </React.Fragment>
+    );
+  });
 }
 export default function ExperimentTextField() {
   const [text, setText] = React.useState(correctTxt);
+  const [isLoading, setLoading] = React.useState(false);
+  const [parsings, setParsing] = React.useState({});
+  // const [parsings, setParsing] = React.useState({ [correctTxt]: correctData });
   return (
-    <div
-      id="demoSource-:rd:"
-      className="css-8u7p7s"
-      style={{
-        position: "relative",
-        textAlign: "left",
-        boxSizing: "border-box",
-        padding: "0px",
-        overflow: "hidden",
-        fontSize: "0.8125rem",
-        lineHeight: 1.5,
-        letterSpacing: 0,
-        fontFamily: 'Menlo,Consolas,"Droid Sans Mono",monospace',
-        fontWeight: 400,
-        fontSmooth: "subpixel-antialiased",
-        float: "left",
-        minWidth: "100%",
-      }}
-    >
-      <pre
-        aria-hidden="true"
+    <div>
+      <ol>
+        <li style={{ color: "orange" }}>No additional data</li>
+        <li style={{ color: "green" }}>With vegeterian info</li>
+        <li style={{ color: "lightgreen" }}>With CIQUAL code</li>
+        <li style={{ color: "blue" }}>With sub ingredients</li>
+      </ol>
+      <div
+        id="demoSource-:rd:"
+        className="css-8u7p7s"
         style={{
-          margin: "0px",
-          border: "0px",
-          background: "none",
-          boxSizing: "inherit",
-          display: "inherit",
-          fontFamily: "inherit",
-          fontSize: "inherit",
-          fontStyle: "inherit",
-          fontVariantLigatures: "inherit",
-          fontWeight: "inherit",
-          letterSpacing: "inherit",
-          lineHeight: "inherit",
-          tabSize: "inherit",
-          textIndent: "inherit",
-          textRendering: "inherit",
-          textTransform: "inherit",
-          wordBreak: "keep-all",
-          overflowWrap: "break-word",
           position: "relative",
-          pointerEvents: "none",
-          padding: "16px",
-          whiteSpace: "pre-wrap",
-        }}
-      >
-        <code>
-          <ColorText text={text} />
-        </code>
-      </pre>
-      <textarea
-        className="npm__react-simple-code-editor__textarea"
-        autoCapitalize="off"
-        autoComplete="off"
-        autoCorrect="off"
-        spellCheck="false"
-        data-gramm="false"
-        tabIndex={-1}
-        onChange={(event) => setText(event.target.value)}
-        style={{
-          margin: "0px",
-          border: "0px",
-          background: "none",
-          boxSizing: "inherit",
-          display: "inherit",
-          fontFamily: "inherit",
-          fontSize: "inherit",
-          fontStyle: "inherit",
-          fontVariantLigatures: "inherit",
-          fontWeight: "inherit",
-          letterSpacing: "inherit",
-          lineHeight: "inherit",
-          tabSize: "inherit",
-          textIndent: "inherit",
-          textRendering: "inherit",
-          textTransform: "inherit",
-          whiteSpace: "pre-wrap",
-          wordBreak: "keep-all",
-          overflowWrap: "break-word",
-          position: "absolute",
-          top: "0px",
-          left: "0px",
-          height: "100%",
-          width: "100%",
-          resize: "none",
-          // color: "inherit",
+          textAlign: "left",
+          boxSizing: "border-box",
+          padding: "0px",
           overflow: "hidden",
-          padding: "16px",
-          WebkitTextFillColor: "transparent",
+          fontSize: "0.8125rem",
+          lineHeight: 1.5,
+          letterSpacing: 0,
+          fontFamily: 'Menlo,Consolas,"Droid Sans Mono",monospace',
+          fontWeight: 400,
+          fontSmooth: "subpixel-antialiased",
+          float: "left",
+          minWidth: "100%",
         }}
       >
-        {text}
-      </textarea>
+        <pre
+          aria-hidden="true"
+          style={{
+            margin: "0px",
+            border: "0px",
+            background: "none",
+            boxSizing: "inherit",
+            display: "inherit",
+            fontFamily: "inherit",
+            fontSize: "inherit",
+            fontStyle: "inherit",
+            fontVariantLigatures: "inherit",
+            fontWeight: "inherit",
+            letterSpacing: "inherit",
+            lineHeight: "inherit",
+            tabSize: "inherit",
+            textIndent: "inherit",
+            textRendering: "inherit",
+            textTransform: "inherit",
+            wordBreak: "keep-all",
+            overflowWrap: "break-word",
+            position: "relative",
+            pointerEvents: "none",
+            padding: "16px",
+            whiteSpace: "pre-wrap",
+          }}
+        >
+          <code>
+            <ColorText text={text} ingredients={parsings[text]} />
+          </code>
+        </pre>
+        <textarea
+          className="npm__react-simple-code-editor__textarea"
+          autoCapitalize="off"
+          autoComplete="off"
+          autoCorrect="off"
+          spellCheck="false"
+          data-gramm="false"
+          tabIndex={-1}
+          onChange={(event) => setText(event.target.value)}
+          style={{
+            margin: "0px",
+            border: "0px",
+            background: "none",
+            boxSizing: "inherit",
+            display: "inherit",
+            fontFamily: "inherit",
+            fontSize: "inherit",
+            fontStyle: "inherit",
+            fontVariantLigatures: "inherit",
+            fontWeight: "inherit",
+            letterSpacing: "inherit",
+            lineHeight: "inherit",
+            tabSize: "inherit",
+            textIndent: "inherit",
+            textRendering: "inherit",
+            textTransform: "inherit",
+            whiteSpace: "pre-wrap",
+            wordBreak: "keep-all",
+            overflowWrap: "break-word",
+            position: "absolute",
+            top: "0px",
+            left: "0px",
+            height: "100%",
+            width: "100%",
+            resize: "none",
+            // color: "inherit",
+            overflow: "hidden",
+            padding: "16px",
+            WebkitTextFillColor: "transparent",
+          }}
+          value={text}
+        ></textarea>
+      </div>
+      <button
+        onClick={async () => {
+          setLoading(true);
+          const parsing = await off.getIngedrientParsing({
+            text: text,
+            lang: "fr",
+          });
+          const ingredients = parsing.data?.product?.ingredients;
+          setParsing((prev) => ({ ...prev, [text]: ingredients }));
+          setLoading(false);
+        }}
+      >
+        parse
+      </button>
+      {isLoading && "loading"}
+      <div>
+        {parsings[text]?.map((ingredient) => (
+          <Accordion key={ingredient.id}>
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls={ingredient.id}
+              id={`header-${ingredient.id}`}
+            >
+              <span style={{ color: getColor(ingredient) }}>
+                {ingredient.text}
+              </span>
+            </AccordionSummary>
+            <AccordionDetails>
+              <pre>{JSON.stringify(ingredient, null, 2)}</pre>
+            </AccordionDetails>
+          </Accordion>
+        ))}
+      </div>
     </div>
   );
 }
