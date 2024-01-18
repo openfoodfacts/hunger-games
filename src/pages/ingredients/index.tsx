@@ -14,7 +14,6 @@ import off from "../../off";
 import { useTranslation } from "react-i18next";
 import useData from "./useData";
 import ImageAnnotation from "./ImageAnnotation";
-import ExperimentTextField from "./ExperiementIngeredientDisplay";
 
 function ProductInterface(props) {
   const {
@@ -90,7 +89,7 @@ function ProductInterface(props) {
 export default function IngredientsPage() {
   const { t } = useTranslation();
 
-  // const [data, removeHead, isLoading] = useData();
+  const [data, removeHead, isLoading] = useData();
 
   return (
     <React.Suspense fallback={<Loader />}>
@@ -102,14 +101,14 @@ export default function IngredientsPage() {
       >
         <Typography>{t("ingredients.description")}</Typography>
       </Stack>
-      <ExperimentTextField />
-      {/* {isLoading ? (
+      {/* <IngeredientDisplay /> */}
+      {isLoading ? (
         "loading..."
       ) : data && data.length === 0 ? (
         "No data"
       ) : (
         <ProductInterface product={data[0]} next={removeHead} />
-      )} */}
+      )}
 
       {/* <pre>{JSON.stringify(data, null, 2)}</pre> */}
     </React.Suspense>

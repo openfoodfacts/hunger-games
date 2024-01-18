@@ -214,7 +214,7 @@ const robotoff = {
     }
 
     return axios.get(
-      `${ROBOTOFF_API_URL}/predict/nutrient?ocr_url=https://images.openfoodfacts.org/images/products/${productCodeForOcrUrl}/${imgid}.json`,
+      `${ROBOTOFF_API_URL}/predict/nutrient?ocr_url=https://static.openfoodfacts.org/images/products/${productCodeForOcrUrl}/${imgid}.json`,
     );
   },
 
