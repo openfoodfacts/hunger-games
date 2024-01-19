@@ -1,31 +1,31 @@
 {
   "home": {
     "game_selector": {
-      "title": "What game would you like to play?",
+      "title": "Та ямар тоглоом тоглохыг хүсч байна вэ?",
       "cards": {
         "questions": {
-          "title": "Questions",
-          "description": "Tell us if the given image answers the questions"
+          "title": "Асуултууд",
+          "description": "Өгөгдсөн зураг таны асуултуудад хариулж байгаа эсэхийг хэлээрэй"
         },
         "logos": {
-          "title": "Logos",
-          "description": "Find all the logos matching the given logo"
+          "title": "Логонууд",
+          "description": "Өгөгдсөн логотой таарж байгаа бүх логог олоорой"
         },
         "eco_score": {
-          "title": "Eco-score",
-          "description": "Annotate the questions with the highest value"
+          "title": "Эко-Оноо",
+          "description": "Хамгийн өндөр оноотой асуултуудыг тэмдэглээрэй"
         }
       }
     },
     "account_band": {
-      "title": "Want to make your contribution count? Create an account or sign in on Open Food Facts!",
-      "log_in": "Login",
-      "sign_up": "Sign up",
-      "contribution_details": "Learn why your contribution matters"
+      "title": "Та оруулсан хувь нэмрээ тооцуулмаар байна уу? Тэгвэл та Нээлттэй Хоолны Фактууд дээр бүртгэл үүсгэх, аль хэдийн бүртгэлтэй бол нэвтрээрэй!",
+      "log_in": "Нэвтрэх",
+      "sign_up": "Бүртгүүлэх",
+      "contribution_details": "Таны оруулж буй хувь нэмэр яаж хэрэг болж байгааг мэдээрэй"
     },
-    "saved_filters": "Saved Filters",
+    "saved_filters": "Хадгалсан шүүлтүүрүүд",
     "contribution_modal": {
-      "title": "Your contribution matters",
+      "title": "Таны оруулсан хувь нэмэр хэрэг болж байгаа",
       "information": "Hunger Games is an effort to leverage the results of our OCR and artificial intelligence. When you use Hunger Games by Open Food Facts, you improve our entire database which helps the community make better food choices. We gather your annotations and use them to make Open Food Facts more accurate and efficient.",
       "thank_you": "Thank you for helping us improve Open Food Facts so that more people can use it easily."
     },
@@ -112,8 +112,8 @@
     "flag": "Something wrong? Report/flag the image!",
     "unflag": "Unflag the image",
     "reset_filters": "Reset filters",
-    "log_in": "Login",
-    "sign_up": "Sign up",
+    "log_in": "Нэвтрэх",
+    "sign_up": "Бүртгүүлэх",
     "login_title": "Make your annotation count",
     "login_description": "You are not currently logged into Open Food Facts. To get your answers directly applied to products, and associated to your account, consider logging in to your Open Food Facts account, or creating one",
     "please_wait_while_we_fetch_the_question": "Please wait while we fetch the question!"
@@ -121,8 +121,8 @@
   "menu": {
     "title": "Hunger Games",
     "games": "Games",
-    "questions": "Questions",
-    "logos": "Logos",
+    "questions": "Асуултууд",
+    "logos": "Логонууд",
     "logos-annotation": "Logos annotation",
     "logos-search": "Logos search",
     "logos-product-search": "Annotation per products",
@@ -131,7 +131,7 @@
     "insights": "Insights",
     "nutritions": "Nutrition facts",
     "settings": "Settings",
-    "eco-score": "Eco-score",
+    "eco-score": "Эко-Оноо",
     "dashboard": "Logos dashboard",
     "tour": "Show tour",
     "logged_in_user": "Logged as {{userName}}",
