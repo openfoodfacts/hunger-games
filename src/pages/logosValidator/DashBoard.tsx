@@ -72,7 +72,7 @@ export default function VerticalTabs() {
   const isDesktop = useMediaQuery(theme.breakpoints.up("md"));
 
   const [value, setValue] = React.useState(
-    DASHBOARD.findIndex(({ tag }) => tag === dasboardId) || 0
+    DASHBOARD.findIndex(({ tag }) => tag === dasboardId) || 0,
   );
 
   const handleChange = (event: React.SyntheticEvent, newValue: number) => {

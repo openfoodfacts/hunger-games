@@ -101,7 +101,7 @@ export default function IngredientsPage() {
       >
         <Typography>{t("ingredients.description")}</Typography>
       </Stack>
-
+      {/* <IngeredientDisplay /> */}
       {isLoading ? (
         "loading..."
       ) : data && data.length === 0 ? (

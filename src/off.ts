@@ -130,8 +130,8 @@ const offService = {
     page = 1,
     pageSize = 25,
     filters = [],
-    fields = "code",
     countryCode = "world",
+    fields = "code",
   }) {
     const searchParams = {
       page: page.toString(),
@@ -149,17 +149,15 @@ const offService = {
       });
     });
 
-    console.log({ countryCode });
     const urlParams = new URLSearchParams(searchParams);
     return axios.get(
-      `${OFF_SEARCH.replace(
-        "world.",
-        `${countryCode}.`,
-      )}?${urlParams.toString()}`,
+      `${OFF_SEARCH.replace("world", countryCode)}?${urlParams.toString()}`,
     );
   },
+
   // TODO: fix method name
-  setIngedrient({ code, lang, text }) {
+  setIngedrient(editionParams: { code: string; text: string; lang?: string }) {
+    const { code, lang, text } = editionParams;
     if (!code) {
       console.error("setIngedrient: Missing code");
     }
@@ -173,6 +171,31 @@ const offService = {
     });
     axios.post(`${OFF_URL}/cgi/product_jqm2.pl?${urlParams.toString()}`);
   },
+
+  async getIngedrientParsing(editionParams: { text: string; lang: string }) {
+    const { lang, text } = editionParams;
+
+    return await axios.patch(
+      "https://world.openfoodfacts.org/api/v3/product/test",
+      {
+        fields: "ingredients",
+        lc: lang,
+        tags_lc: lang,
+        product: {
+          lang,
+          [`ingredients_text_${lang}`]: text,
+        },
+      },
+    );
+  },
 };
 
 export default offService;
+
+// Fetching products to annotate:
+
+// https://world.openfoodfacts.org/cgi/search.pl?page=0&page_size=25&json=true&action=process&fields=code,lang,image_ingredients_url,product_name,ingredient,images&tagtype_0=states&tag_contains_0=contains&tag_0=en%3Aingredients-to-be-completed&tagtype_1=states&tag_contains_1=contains&tag_1=en%3Aingredients-photo-selected
+
+// Getting prediction:
+// https://robotoff.openfoodfacts.org/api/v1/predict/ingredient_list?ocr_url=https://images.openfoodfacts.org/images/products/505/382/713/9229/41.json
+// https://images.openfoodfacts.org/images/products/505/382/713/9229/41.json

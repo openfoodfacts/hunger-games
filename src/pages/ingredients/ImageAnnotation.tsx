@@ -1,8 +1,8 @@
 import * as React from "react";
 import Button from "@mui/material/Button";
+import Box from "@mui/material/Box";
 import useRobotoffPrediction, { DataType } from "./useRobotoffPrediction";
-import { Box, Stack, TextField } from "@mui/material";
-import off from "../../off";
+import { IngredientAnotation } from "./IngeredientDisplay";
 
 type ImageAnnotationProps = {
   fetchDataUrl: string;
@@ -68,70 +68,32 @@ function Annotation({ code, data, isLoading, error }: AnnotationProps) {
   return (
     <React.Fragment>
       {Object.entries(editedState).map(
-        ([lang, { start, end, score, text }], index) => (
-          <Stack direction="column" key={index}>
-            <Stack direction="row">
-              <TextField
-                multiline
-                fullWidth
-                label={`${lang} (${(score * 100).toFixed(1)}%)`}
-                minRows={3}
-                onChange={(event) => {
-                  setEditedState((prev) => ({
-                    ...prev,
-                    [lang]: {
-                      ...prev[lang],
-                      text: event.target.value,
-                    },
-                  }));
-                }}
-                value={text}
-                sx={{ mt: 2 }}
-              />
-            </Stack>
-            <Stack direction="row">
-              <Button
-                onClick={() => {
-                  setEditedState((prev) => ({
-                    ...prev,
-                    [lang]: {
-                      ...prev[lang],
-                      text: data.detections[lang].text,
-                    },
-                  }));
-                }}
-                disabled={editedState[lang].text === data.detections[lang].text}
-                variant="contained"
-                fullWidth
-              >
-                Revert
-              </Button>
-              <Button
-                onClick={() => {
-                  off.setIngedrient({ code, lang, text });
-                }}
-                variant="contained"
-                color="success"
-                fullWidth
-              >
-                Send
-              </Button>
-            </Stack>
-          </Stack>
+        ([lang, { start, end, score, text }]) => (
+          <IngredientAnotation
+            key={`${start}-${end}`}
+            lang={lang}
+            score={score}
+            code={code}
+            setEditedState={setEditedState}
+            text={text}
+            detectedText={data.detections[lang].text}
+          />
         ),
       )}
       {showOCR && (
         <p>
-          {splitText(data).map(({ isIngredient, text }) =>
-            isIngredient ? (
-              <b>
-                <br />
-                {text}
-              </b>
-            ) : (
-              text
-            ),
-          )}
+          {splitText(data).map(({ isIngredient, text }, i) => (
+            <React.Fragment key={`${text}-${i}`}>
+              {isIngredient ? (
+                <b>
+                  <br />
+                  {text}
+                </b>
+              ) : (
+                text
+              )}
+            </React.Fragment>
+          ))}
         </p>
       )}
 

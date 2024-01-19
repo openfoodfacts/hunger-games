@@ -38,6 +38,7 @@ const formatData = (product) => {
     .filter((key) => key.startsWith("ingredients"))
     .map((key) => {
       const imageData = images[key];
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
       const [_, x, y] = images[key].geometry.split("-");
 
       const countryCode = key.startsWith("ingredients_")
@@ -48,7 +49,10 @@ const formatData = (product) => {
         imgId: imageData.imgid,
         countryCode,
         imageUrl: getImageUrl(baseImageUrl, imageData.imgid, "400"),
-        fetchDataUrl: getIngredientExtractionUrl(baseImageUrl, imageData.imgid),
+        fetchDataUrl: getIngredientExtractionUrl(
+          baseImageUrl.replace("images.", "static."),
+          imageData.imgid,
+        ),
         x: Number.parseFloat(x),
         y: Number.parseFloat(y),
         w: Number.parseFloat(imageData.sizes.full.w),
@@ -90,7 +94,7 @@ export default function useData(): [any[], () => void, boolean] {
 
       try {
         const {
-          data: { count, products },
+          data: { products },
         } = await off.searchProducts({
           page,
           pageSize: 25,
