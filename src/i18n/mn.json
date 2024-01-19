@@ -27,74 +27,74 @@
     "contribution_modal": {
       "title": "Таны оруулсан хувь нэмэр хэрэг болж байгаа",
       "information": "Hunger Games is an effort to leverage the results of our OCR and artificial intelligence. When you use Hunger Games by Open Food Facts, you improve our entire database which helps the community make better food choices. We gather your annotations and use them to make Open Food Facts more accurate and efficient.",
-      "thank_you": "Thank you for helping us improve Open Food Facts so that more people can use it easily."
+      "thank_you": "Нээлттэй Хоолны Фактуудыг бусдад илүү амраар ашиглахад тусалж байгаа таньд баярлалаа."
     },
     "statistics": {
-      "title": "{{userName}} statistics:",
+      "title": "{{userName}} статистикууд:",
       "editorCount": {
         "title": "Editor",
-        "description": "Number of editions done"
+        "description": "Хийсэн засваруудын тоо"
       },
       "contributorCount": {
-        "title": "Contributor",
-        "description": "Adding a new product"
+        "title": "Хувь нэмэр оруулагч",
+        "description": "Шинэ бүтээгдэхүүн нэмэх"
       },
       "photographerCount": {
-        "title": "Photographer",
-        "description": "Taking photos for a product"
+        "title": "Гэрэл зурагчин",
+        "description": "Бүтээгдэхүүнд зориулж зураг дарах"
       }
     }
   },
   "flagged_images": {
     "title": "Images flagged by users",
-    "loading": "Loading"
+    "loading": "Уншиж байна"
   },
   "questions": {
-    "category": "category",
-    "categories": "Categories",
-    "label": "label",
+    "category": "ангилал",
+    "categories": "Ангилалууд",
+    "label": "тэмдэг",
     "labels": "Labels",
-    "brand": "brand",
-    "brands": "Brands",
-    "packaging": "packaging",
-    "quantity": "Quantity",
-    "insightTypeLabel": "Only shows",
-    "ingredients": "Ingredients",
-    "product_weight": "product weight",
-    "popularity_sort": "Sort by popularity",
-    "see_examples": "See examples of this ",
-    "no": "No",
-    "skip": "Skip",
-    "yes": "Yes",
-    "no_questions_remaining": "No questions remaining",
-    "countries": "Countries",
-    "view": "View",
-    "edit": "Edit",
-    "hide_images": "Hide images (faster loading)",
-    "display_images": "Display images",
-    "annotations": "Annotations",
-    "last_annotations": "Last annotations",
-    "remaining_annotations": "Remaining questions",
-    "annotated_annotations": "Annotated",
+    "brand": "брэнд",
+    "brands": "Брэндүүд",
+    "packaging": "савлагаа",
+    "quantity": "Тоо ширхэг",
+    "insightTypeLabel": "Юуг харуулж байна вэ",
+    "ingredients": "Орц найрлагууд",
+    "product_weight": "бүтээгдэхүүний жин",
+    "popularity_sort": "Хандалтын тоогоор ангилах",
+    "see_examples": "Үүний жишээг харах ",
+    "no": "Үгүй",
+    "skip": "Алгасах",
+    "yes": "Тийм",
+    "no_questions_remaining": "Асуултууд дууслаа",
+    "countries": "Улс орнууд",
+    "view": "Харах",
+    "edit": "Засвар хийх",
+    "hide_images": "Зургуудыг нуух (илүү хурдан уншина)",
+    "display_images": "Зургуудыг харуулах",
+    "annotations": "Тэмдэглэгээнүүд",
+    "last_annotations": "Сүүлийн тэмдэглэгээнүүд",
+    "remaining_annotations": "Үлдсэн асуултууд",
+    "annotated_annotations": "Тэмдэглэсэн",
     "filters": {
-      "active_filter_number": "+{{count}} filters",
-      "active_filter_number_one": "+{{count}} filter",
-      "active_filter_number_zero": "no filter",
+      "active_filter_number": "+{{count}} шүүлтүүрүүд",
+      "active_filter_number_one": "+{{count}} шүүлтүүр",
+      "active_filter_number_zero": "шүүлтүүр байхгүй байна",
       "short_label": {
         "value": "value",
-        "country": "country",
-        "brand": "brand",
-        "popularity": "popularity",
+        "country": "улс",
+        "brand": "брэнд",
+        "popularity": "хандалт",
         "campaign": "camp"
       },
       "long_label": {
-        "type": "Question Type",
-        "value": "Proposed Value",
-        "country": "Product Country",
-        "brand": "Product Brand",
-        "popularity": "Sort by popularity",
+        "type": "Асуултын төрөл",
+        "value": "Санал болгож буй үнэ цэнэ",
+        "country": "Бүтээгдэхүүний үйлдвэрлэсэн улс",
+        "brand": "Бүтээгдэхүүний брэнд",
+        "popularity": "Хандалтын тоогоор ангилах",
         "edit": "",
-        "campaign": "Campaign"
+        "campaign": "Кампанит ажил"
       },
       "placeholders": {
         "value": "Value (Fanta, en:organic,...)",
@@ -103,7 +103,7 @@
       },
       "actions": {
         "edit": "Edit Filters",
-        "cancel": "Cancel",
+        "cancel": "Цуцлах",
         "apply": "Apply"
       }
     },
@@ -111,7 +111,7 @@
     "send": "Send",
     "flag": "Something wrong? Report/flag the image!",
     "unflag": "Unflag the image",
-    "reset_filters": "Reset filters",
+    "reset_filters": "Шүүлтүүрсээ дахин эхлүүлэх",
     "log_in": "Нэвтрэх",
     "sign_up": "Бүртгүүлэх",
     "login_title": "Make your annotation count",
@@ -143,26 +143,26 @@
     "barcode_placeholder": "barcode",
     "value_tag": "Value tag",
     "value_placeholder": "ex: en:mueslis, bjorg,...",
-    "type": "Type",
-    "annotated": "Annotated",
+    "type": "Төрөл",
+    "annotated": "Тэмдэглэсэн",
     "annotation": "Annotation",
     "not_annotated": "Not annotated",
-    "all": "All",
-    "label": "Label",
+    "all": "Бүгд",
+    "label": "Тэмдэг",
     "product_weight": "Product weight",
-    "category": "Category",
+    "category": "Ангилал",
     "expiration_date": "Expiration date",
     "packager_code": "Packager code",
-    "skipped": "Skipped (-1)",
-    "rejected": "Rejected (0)",
-    "accepted": "Accepted (1)",
-    "search": "Search",
-    "count": "Count",
+    "skipped": "Алгасагдсан (-1)",
+    "rejected": "Татгалзагдсан (0)",
+    "accepted": "Зөвшөөрөгдсөн (1)",
+    "search": "Хайх",
+    "count": "Тоолох",
     "id": "Id",
     "value": "Value",
     "created_at": "Created at",
     "completed_at": "Completed at",
-    "automatic": "Automatic",
+    "automatic": "Автомат",
     "human_required": "Human required",
     "edit_product": "Open product edit",
     "view_product": "Open product page",
@@ -177,13 +177,13 @@
     "distance": "Distance:",
     "value": "Value",
     "submit": "Submit",
-    "type": "Type",
-    "label": "Label",
+    "type": "Төрөл",
+    "label": "Тэмдэг",
     "brand": "Brand",
     "packager_code": "Packager code",
     "packaging": "Packaging",
-    "qr_code": "QR code",
-    "category": "Category",
+    "qr_code": "QR код",
+    "category": "Ангилал",
     "nutrition_label": "Nutrition label",
     "no_logo": "Not a logo",
     "store": "Store",
@@ -193,7 +193,7 @@
     "full_image": "Full image",
     "update": "Update",
     "no_found": "No logo found",
-    "search": "Search",
+    "search": "Хайх",
     "number_of_results": "Number of results:",
     "loading": "Loading…",
     "refresh": "Refresh",
@@ -221,15 +221,15 @@
   "settings": {
     "settings": "Settings",
     "language": "Languages",
-    "save": "Save",
-    "reportIssue": "Found a bug? Please let us know.",
+    "save": "Хадгалах",
+    "reportIssue": "Алдаа олсон уу? Бидэнд мэдэгдээрэй.",
     "dev_mode_title": "To get more options, activate the dev mode",
     "dev_mode_label": "Dev Mode",
     "dev_page_toggle": "Show {{name}} page",
     "join_community": "Join the community",
     "text1": "Open Food Facts is a collaborative project built by tens of thousands of volunteers and managed by a non-profit organization with 8 employees. We need your donations to fund the Open Food Facts 2024 budget and to continue to develop the project.",
     "thank_you": "Thank you",
-    "donate": "Donate",
+    "donate": "Хандивлах",
     "join_the_community": {
       "discover_our": "Discover our ",
       "code_of_conduct": "Code of conduct ",
@@ -296,77 +296,77 @@
         "text2": "Selected logos go to the top of the page, you can unselect them by clicking again on them"
       },
       "page2": {
-        "title": "Warning",
+        "title": "Анхааруулга",
         "text1": "If the crop contains multiple logos, do not select it.",
         "text2": "If the crop contains only a partial part of a logo, you can select it."
       },
       "page3": {
-        "title": "Validate",
+        "title": "Баталгаажуулах",
         "text1": "Indicate the type of logo (label, brand, QRcode, ...)",
         "text2": "If it is a label or a brand logo, indicate which one it is",
-        "text3": "Now you can submit your selection",
-        "text4": "Thank you :)"
+        "text3": "Та одоо сонголтоо илгээж болохоор боллоо",
+        "text4": "Баярлалаа :)"
       }
     },
-    "previous": "Prev",
-    "next": "Next",
-    "close": "Close"
+    "previous": "Өмнөх",
+    "next": "Дараагийнх",
+    "close": "Хаах"
   },
   "nutrition": {
     "instructions": {
-      "cropTheTable": "Crop the image to simplify your annotation",
+      "cropTheTable": "Тэмдэглэлээ хялбарчлахын тулд зургийг тайрах",
       "verifyNutrimentDetected": "Indicate if the nutriment detected is correct",
       "selectMissingNutriments": "Add missing nutriments (you can click even if the word has no box)",
       "selectValue": "Select the nutritional value of: "
     },
     "steps": {
-      "1": "Crop",
+      "1": "Тайрах",
       "2": "Special values",
       "3": "Nutriments Selection",
       "4": "Values Selection"
     },
-    "loading": "Loading...",
-    "unknown_brand": "Brand Unknown",
-    "value_missing": "You forgot to input a value.",
-    "next": "Next step",
-    "prev": "Prev step",
-    "skip": "Skip this product",
-    "validate": "Validate Table",
+    "loading": "Уншиж байна...",
+    "unknown_brand": "Мэдэгдэхгүй брэнд",
+    "value_missing": "Та утга оруулахаа мартсан байна.",
+    "next": "Дараагийн алхам",
+    "prev": "Өмнөх алхам",
+    "skip": "Энэ бүтээгдэхүүнийг алгасах",
+    "validate": "Хүснэгтийг баталгаажуулах",
     "unselect_picture": "No nutrition info",
     "basis": "data for: ",
     "servingSize": "serving size",
     "value": "Value",
-    "unit": "Unit",
+    "unit": "Нэгж",
     "nutriments": {
-      "nutriment_energy-kj": "Energy (kJ)",
-      "nutriment_energy-kcal": "Energy (kCal)",
-      "nutriment_fat": "Fat",
-      "nutriment_saturated-fat": "Saturated fat",
-      "nutriment_carbohydrates": "Carbohydrates",
-      "nutriment_sugars": "Sugar",
-      "nutriment_proteins": "Protein content",
+      "nutriment_energy-kj": "Энерги (кЖ)",
+      "nutriment_energy-kcal": "Энерги (кКал)",
+      "nutriment_fat": "Өөх тос",
+      "nutriment_saturated-fat": "Ханасан өөх тос",
+      "nutriment_carbohydrates": "Нүүрс ус",
+      "nutriment_sugars": "Сахар",
+      "nutriment_proteins": "Уургийн агууламж",
       "nutriment_fiber": "Fibres",
-      "nutriment_salt": "Salt",
-      "nutriment_sodium": "Sodium"
+      "nutriment_salt": "Давс",
+      "nutriment_sodium": "Натри"
     },
     "history": {
       "title": "Session History",
-      "status": "status",
-      "product name": "product name",
+      "status": "статус",
+      "product name": "бүтээгдэхүүний нэр",
       "view": "view page",
       "edit": "edit page",
       "SKIP": "ignored",
       "VALIDATED": "edited",
-      "WRONG_IMAGE": "unselected picture",
-      "close": "close",
-      "open": "open history"
+      "WRONG_IMAGE": "сонгогдоогүй зураг",
+      "close": "хаах",
+      "open": "хандалтын түүхийг нээх"
     }
   },
   "notfound": {
-    "image_alt": "404 not found",
-    "nopage": "Whoops! The page you're looking for can't be found.",
-    "redirect1": "Want to play some games?",
-    "redirect2": "Click here"
+    "image_alt": "404 олдсонгүй",
+    "nopage": "Таны хайж буй хуудас олдсонгүй.",
+    "redirect1": "Тоглоом тогломоор байна уу?",
+    "redirect2": "Энд дарна уу"
   },
   "nutriscore": {
     "image_alt": "cropped image",
@@ -390,7 +390,7 @@
   "footer": {
     "appStore": {
       "title": "App Store",
-      "subtitle": "Download on the"
+      "subtitle": "дээр татаж авах"
     },
     "playStore": {
       "title": "Play Store",
@@ -398,7 +398,7 @@
     },
     "microsoft": {
       "title": "Microsoft",
-      "subtitle": "Get it from"
+      "subtitle": "-аас аваарай"
     },
     "androidAPK": {
       "title": "Android APK",
