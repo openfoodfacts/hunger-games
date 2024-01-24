@@ -8,7 +8,7 @@
           "description": "Kerro, vastaako annettu kuva kysymyksiin"
         },
         "logos": {
-          "title": "Logos",
+          "title": "Logot",
           "description": "Etsi kaikki logot, jotka vastaavat annettua logoa"
         },
         "eco_score": {
@@ -122,7 +122,7 @@
     "title": "Hunger Games",
     "games": "Pelit",
     "questions": "Kysymykset",
-    "logos": "Logos",
+    "logos": "Logot",
     "logos-annotation": "Logoannotointi",
     "logos-search": "Logohaku",
     "logos-product-search": "Annotointi tuotekohtaisesti",
@@ -166,7 +166,7 @@
     "human_required": "Ihmistä vaaditaan",
     "edit_product": "Avaa tuotteen muokkaus",
     "view_product": "Avaa tuotesivu",
-    "view_crops_for_this_product": "Annotate product logos"
+    "view_crops_for_this_product": "Merkitse tuotelogot"
   },
   "logos": {
     "annotation": "Merkintä: ",
@@ -210,12 +210,12 @@
       "failed_reference_logos": "Emme löytäneet logoja tällä annotaatiolla. Yritä käyttää seuraavaa peliä annotoimaan joitakin niistä."
     },
     "deep_search": {
-      "title": "Logo search",
-      "description": "Select a logo you want to look for, and let's go to catch them all. For every logo you annotate, we will fetch it's neighbors such that you might never stop to annotate. (Press Shift to select range of logos)",
-      "ref_logos": "Reference logos (logo already annotated with this value)",
-      "remaining": "Remaining to annotate",
-      "select_all": "Select All",
-      "unselect_all": "Deselect All"
+      "title": "Logojen etsintä",
+      "description": "Valitse logo, jota haluat etsiä, ja napataan ne kaikki. Haemme jokaisen merkitsemäsi logon naapurit, jotta et ehkä koskaan lopeta merkitsemistä. (Valitse logovalikoima painamalla Shift-näppäintä)",
+      "ref_logos": "Viitelogot (logoon on jo merkitty tämä arvo)",
+      "remaining": "Jäljellä merkattavia",
+      "select_all": "Valitse kaikki",
+      "unselect_all": "Poista kaikki valinnat"
     }
   },
   "settings": {
@@ -254,7 +254,7 @@
     "welcome": {
       "page1": {
         "title": "Tervetuloa Nälkäpeliin",
-        "text1": "Hunger Games is a collection of mini-games that help contribute to Open Food Facts in many ways. You can play our really exciting games from anywhere. Here is a guided tour of the entire website which will get you started.",
+        "text1": "Hunger Games on kokoelma minipelejä, jotka auttavat monin tavoin edistämään Open Food Factsia. Voit pelata todella jännittäviä pelejämme mistä vain. Tässä on opastettu kierros koko verkkosivustostamme, jonka avulla pääset alkuun.",
         "text2": "Kirjaudu Open Food Factsin sivuille saadaksesi palkkioita osallistumisestasi. Jos teet virheen, korjaa se sivuillamme.",
         "text3": "Jos et ymmärrä, paina kysymysmerkkiä sivun oikeassa ylänurkassa tai ota yhteyttä #hunger-games -kanavalla"
       },
@@ -343,9 +343,9 @@
       "nutriment_fat": "Rasva",
       "nutriment_saturated-fat": "Tyydyttynyt rasva",
       "nutriment_carbohydrates": "Hiilihydraatit",
-      "nutriment_sugars": "Sugar",
-      "nutriment_proteins": "Protein content",
-      "nutriment_fiber": "Fibres",
+      "nutriment_sugars": "Sokeria",
+      "nutriment_proteins": "Proteiinia",
+      "nutriment_fiber": "Ravintokuitua",
       "nutriment_salt": "Suola",
       "nutriment_sodium": "Natrium"
     },
@@ -385,20 +385,20 @@
     "countryLabel": "Maa"
   },
   "ingredients": {
-    "description": "This game allows you to validate the pre-selection of images of ingredients lists in various languages for a product, and validate the extracted ingredients."
+    "description": "Tämän pelin avulla voit vahvistaa tuotteen ainesosaluetteloiden kuvien esivalinnan eri kielillä ja validoida otetut ainesosat."
   },
   "footer": {
     "appStore": {
-      "title": "App Store",
-      "subtitle": "Download on the"
+      "title": "Sovelluskauppa",
+      "subtitle": "Lataa"
     },
     "playStore": {
       "title": "Play Store",
-      "subtitle": "Get it on"
+      "subtitle": "Hanki"
     },
     "microsoft": {
       "title": "Microsoft",
-      "subtitle": "Get it from"
+      "subtitle": "Hanki"
     },
     "androidAPK": {
       "title": "Android APK",
