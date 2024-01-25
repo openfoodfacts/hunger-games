@@ -165,7 +165,8 @@
     "automatic": "Automat",
     "human_required": "Necesar uman",
     "edit_product": "Deschideți editarea produsului",
-    "view_product": "Deschideți pagina produsului"
+    "view_product": "Deschideți pagina produsului",
+    "view_crops_for_this_product": "Annotate product logos"
   },
   "logos": {
     "annotation": "Adnotare: ",
@@ -253,7 +254,7 @@
     "welcome": {
       "page1": {
         "title": "Bun venit la Jocurile Foamei",
-        "text1": "Jocurile Foamei este o colecție de mini-jocuri care contribuie la Open Food Facts în multe feluri. Puteți juca jocuri cu adevărat interesante de oriunde. Iată un tur ghidat al întregului site, care vă va ajuta să începeți.",
+        "text1": "Hunger Games is a collection of mini-games that help contribute to Open Food Facts in many ways. You can play our really exciting games from anywhere. Here is a guided tour of the entire website which will get you started.",
         "text2": "Asigurați-vă că vă conectați la site-ul Open Food Facts pentru a obține credit pentru contribuțiile dvs. Dacă faceți o greșeală, vă rugăm să faceți timp pentru a o corecta, accesând site-ul web.",
         "text3": "În caz de îndoială cu privire la jocuri, faceți clic pe pictograma semn de întrebare din dreapta sus a paginii și ne puteți contacta pe canalul #hunger-games."
       },
@@ -342,9 +343,9 @@
       "nutriment_fat": "Grăsimi",
       "nutriment_saturated-fat": "Acizi grași saturați",
       "nutriment_carbohydrates": "Glucide",
-      "nutriment_sugars": "Zaharuri",
-      "nutriment_proteins": "Proteine",
-      "nutriment_fiber": "Fibre",
+      "nutriment_sugars": "Sugar",
+      "nutriment_proteins": "Protein content",
+      "nutriment_fiber": "Fibres",
       "nutriment_salt": "Sare",
       "nutriment_sodium": "Sodiu"
     },
@@ -384,7 +385,7 @@
     "countryLabel": "Țară"
   },
   "ingredients": {
-    "description": "TODO: definiți jocul"
+    "description": "This game allows you to validate the pre-selection of images of ingredients lists in various languages for a product, and validate the extracted ingredients."
   },
   "footer": {
     "appStore": {

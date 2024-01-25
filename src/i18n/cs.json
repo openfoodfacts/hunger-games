@@ -165,7 +165,8 @@
     "automatic": "Automaticky",
     "human_required": "Vyžaduje člověka",
     "edit_product": "Otevřít úpravu produktu",
-    "view_product": "Otevřete stránku produktu"
+    "view_product": "Otevřete stránku produktu",
+    "view_crops_for_this_product": "Přidejte poznámky k logům produktů"
   },
   "logos": {
     "annotation": "Poznámky: ",
@@ -342,9 +343,9 @@
       "nutriment_fat": "Tuky",
       "nutriment_saturated-fat": "Nasycené tuky",
       "nutriment_carbohydrates": "Sacharidy",
-      "nutriment_sugars": "Cukry",
-      "nutriment_proteins": "Bílkoviny",
-      "nutriment_fiber": "Vláknina",
+      "nutriment_sugars": "Cukr",
+      "nutriment_proteins": "Obsah bílkovin",
+      "nutriment_fiber": "Vlákniny",
       "nutriment_salt": "Sůl",
       "nutriment_sodium": "Sodík"
     },
@@ -384,7 +385,7 @@
     "countryLabel": "Země"
   },
   "ingredients": {
-    "description": "TODO: definovat hru"
+    "description": "Tato hra vám umožňuje ověřit předvýběr obrázků seznamů přísad v různých jazycích pro produkt a ověřit extrahované přísady."
   },
   "footer": {
     "appStore": {

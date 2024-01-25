@@ -165,7 +165,8 @@
     "automatic": "Otomatik",
     "human_required": "İnsan gerekli",
     "edit_product": "Ürün düzenlemeyi aç",
-    "view_product": "Ürün sayfasını aç"
+    "view_product": "Ürün sayfasını aç",
+    "view_crops_for_this_product": "Ürün logolarına açıklama ekleyin"
   },
   "logos": {
     "annotation": "Açıklama: ",
@@ -253,7 +254,7 @@
     "welcome": {
       "page1": {
         "title": "Açlık Oyunları'na hoş geldiniz",
-        "text1": "Açlık Oyunları, Open Food Facts'e birçok yönden katkıda bulunmaya yardımcı olan bir mini oyunlar koleksiyonudur. Gerçekten heyecan verici oyunları her yerden oynayabilirsiniz. İşte başlamanıza yardımcı olacak tüm web sitesinin rehberli bir turu.",
+        "text1": "Açlık Oyunları, Open Food Facts'e birçok yönden katkıda bulunmaya yardımcı olan bir mini oyun koleksiyonudur. Gerçekten heyecan verici oyunlarımızı her yerden oynayabilirsiniz. İşte başlamanıza yardımcı olacak tüm web sitesini kapsayan rehberli bir tur.",
         "text2": "Katkılarınız için kredi almak için Open Food Facts web sitesine giriş yaptığınızdan emin olun. Bir hata yaparsanız, lütfen web sitesine giderek düzeltmek için zaman ayırın.",
         "text3": "Oyunlarla ilgili herhangi bir şüpheniz olması durumunda sayfanın sağ üst köşesindeki soru işareti ikonuna tıklayarak bize #açlık-oyunları kanalından slack'ten ulaşabilirsiniz"
       },
@@ -343,8 +344,8 @@
       "nutriment_saturated-fat": "Doymuş yağ",
       "nutriment_carbohydrates": "Karbonhidrat",
       "nutriment_sugars": "Şeker",
-      "nutriment_proteins": "Proteinler",
-      "nutriment_fiber": "Fiberler",
+      "nutriment_proteins": "Protein içerikli",
+      "nutriment_fiber": "Lifler",
       "nutriment_salt": "Tuz",
       "nutriment_sodium": "Sodyum"
     },
@@ -384,7 +385,7 @@
     "countryLabel": "Ülke"
   },
   "ingredients": {
-    "description": "YAPILACAKLAR: oyunu tanımla"
+    "description": "Bu oyun, bir ürün için çeşitli dillerdeki içerik listesi görsellerinin ön seçimini doğrulamanıza ve çıkarılan içerikleri doğrulamanıza olanak tanır."
   },
   "footer": {
     "appStore": {

@@ -165,7 +165,8 @@
     "automatic": "Automatic",
     "human_required": "Human required",
     "edit_product": "Open product edit",
-    "view_product": "Open product page"
+    "view_product": "Open product page",
+    "view_crops_for_this_product": "Annotate product logos"
   },
   "logos": {
     "annotation": "Annotation: ",
@@ -253,7 +254,7 @@
     "welcome": {
       "page1": {
         "title": "Welcome to Hunger Games",
-        "text1": "Hunger Games is a collection of mini-games that help contribute to Open Food Facts in many ways. You can play are really exciting games from anywhere. Here is a guided tour of the entire website which will get you started.",
+        "text1": "Hunger Games is a collection of mini-games that help contribute to Open Food Facts in many ways. You can play our really exciting games from anywhere. Here is a guided tour of the entire website which will get you started.",
         "text2": "Make sure to login to the Open Food Facts website to get credit for your contributions. If you make a mistake, please take the time to correct it by heading to the website.",
         "text3": "In case of any doubt about the games, click on the question mark icon at the top right of the page, and you can reach us on slack at the #hunger-games channel"
       },
@@ -342,9 +343,9 @@
       "nutriment_fat": "Rûn",
       "nutriment_saturated-fat": "Saturated fat",
       "nutriment_carbohydrates": "Karbohîratê",
-      "nutriment_sugars": "Şekirê",
-      "nutriment_proteins": "Proteîna",
-      "nutriment_fiber": "Fibers",
+      "nutriment_sugars": "Sugar",
+      "nutriment_proteins": "Protein content",
+      "nutriment_fiber": "Fibres",
       "nutriment_salt": "Xwê",
       "nutriment_sodium": "Sodyum"
     },
@@ -384,7 +385,7 @@
     "countryLabel": "Country"
   },
   "ingredients": {
-    "description": "TODO: define the game"
+    "description": "This game allows you to validate the pre-selection of images of ingredients lists in various languages for a product, and validate the extracted ingredients."
   },
   "footer": {
     "appStore": {

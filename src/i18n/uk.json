@@ -165,7 +165,8 @@
     "automatic": "Автоматичний",
     "human_required": "Потрібна людина",
     "edit_product": "Відкрити редагування продукту",
-    "view_product": "Відкрити сторінку продукту"
+    "view_product": "Відкрити сторінку продукту",
+    "view_crops_for_this_product": "Примітки до логотипів продуктів"
   },
   "logos": {
     "annotation": "Анотації:",
@@ -343,7 +344,7 @@
       "nutriment_saturated-fat": "Насичені жири",
       "nutriment_carbohydrates": "Вуглеводи",
       "nutriment_sugars": "Цукор",
-      "nutriment_proteins": "Білки",
+      "nutriment_proteins": "Вміст білка",
       "nutriment_fiber": "Волокна",
       "nutriment_salt": "Сіль",
       "nutriment_sodium": "Натрій"
@@ -384,7 +385,7 @@
     "countryLabel": "Країна"
   },
   "ingredients": {
-    "description": "TODO: визначити гру"
+    "description": "Ця гра дозволяє перевіряти попередньо вибрані зображення інгредієнтів на різних мовах для товару та підтверджувати видобуті інгредієнти."
   },
   "footer": {
     "appStore": {

@@ -165,7 +165,8 @@
     "automatic": "Автоматично",
     "human_required": "Изисква се човек",
     "edit_product": "Отвори редакцията на продукта",
-    "view_product": "Отворете страницата на продукта"
+    "view_product": "Отворете страницата на продукта",
+    "view_crops_for_this_product": "Annotate product logos"
   },
   "logos": {
     "annotation": "Бележка: ",
@@ -253,7 +254,7 @@
     "welcome": {
       "page1": {
         "title": "Добре дошли в Игрите на глада",
-        "text1": "Игрите на Глада е колекция от мини-игри, които допринасят за Open Food Facts по много начини. Можете да играете наистина вълнуващи игри отвсякъде. Ето обиколка с екскурзовод на целия уебсайт, която ще ви помогне да започнете.",
+        "text1": "Hunger Games is a collection of mini-games that help contribute to Open Food Facts in many ways. You can play our really exciting games from anywhere. Here is a guided tour of the entire website which will get you started.",
         "text2": "Не забравяйте да влезете в уебсайта Open Food Facts, за да получите кредит за вашите приноси. Ако направите грешка, моля, отделете време да я поправите, като отидете на уебсайта.",
         "text3": "В случай на съмнение относно игрите, щракнете върху иконата с въпросителен знак в горния десен ъгъл на страницата и можете да се свържете с нас на slack в канала #hunger-games"
       },
@@ -342,9 +343,9 @@
       "nutriment_fat": "Мазнини",
       "nutriment_saturated-fat": "Наситени мазнини",
       "nutriment_carbohydrates": "Въглехидрати",
-      "nutriment_sugars": "Захари",
-      "nutriment_proteins": "Белтъци",
-      "nutriment_fiber": "Влакна",
+      "nutriment_sugars": "Sugar",
+      "nutriment_proteins": "Protein content",
+      "nutriment_fiber": "Fibres",
       "nutriment_salt": "Сол",
       "nutriment_sodium": "Натрий"
     },
@@ -384,7 +385,7 @@
     "countryLabel": "Страна"
   },
   "ingredients": {
-    "description": "TODO: define the game"
+    "description": "This game allows you to validate the pre-selection of images of ingredients lists in various languages for a product, and validate the extracted ingredients."
   },
   "footer": {
     "appStore": {

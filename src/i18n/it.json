@@ -165,7 +165,8 @@
     "automatic": "Automatico",
     "human_required": "Richiesto intervento umano",
     "edit_product": "Modifica il prodotto",
-    "view_product": "Apri la pagina del prodotto"
+    "view_product": "Apri la pagina del prodotto",
+    "view_crops_for_this_product": "Annota i loghi dei prodotti"
   },
   "logos": {
     "annotation": "Annotazione: ",
@@ -384,7 +385,7 @@
     "countryLabel": "Paese"
   },
   "ingredients": {
-    "description": "TODO: definire il gioco"
+    "description": "Questo gioco consente di convalidare la preselezione di immagini di elenchi di ingredienti in varie lingue per un prodotto, e convalidare gli ingredienti estratti."
   },
   "footer": {
     "appStore": {

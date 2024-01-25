@@ -165,7 +165,8 @@
     "automatic": "Automatisch",
     "human_required": "Mensch benötigt",
     "edit_product": "Produktbearbeitung öffnen",
-    "view_product": "Produktseite öffnen"
+    "view_product": "Produktseite öffnen",
+    "view_crops_for_this_product": "Produktlogos mit Anmerkungen versehen"
   },
   "logos": {
     "annotation": "Anmerkung: ",
@@ -253,7 +254,7 @@
     "welcome": {
       "page1": {
         "title": "Willkommen zu Hunger Games",
-        "text1": "Hunger Games ist eine Sammlung von Minispielen, die in vielerlei Hinsicht zu Open Food Facts beitragen. Sie können diese wirklich spannenden Spiele von überall aus spielen. Hier finden Sie eine Führung durch die gesamte Website, die Ihnen den Einstieg erleichtern wird.",
+        "text1": "„Hunger Games” ist eine Sammlung von Minispielen, die in vielerlei Hinsicht zu Open Food Facts beitragen. Sie können unsere wirklich spannenden Spiele von überall aus spielen. Hier finden Sie eine Führung durch die gesamte Website, die Ihnen den Einstieg erleichtern wird.",
         "text2": "Stellen Sie sicher, dass Sie sich auf der Open Food Facts-Website anmelden, um für Ihre Beiträge gewertet zu werden. Wenn Ihnen ein Fehler unterläuft, nehmen Sie sich bitte die Zeit, ihn zu korrigieren, indem Sie die Website besuchen.",
         "text3": "Sollten Sie Fragen zu den Spielen haben, klicken Sie auf das Fragezeichen-Symbol oben rechts auf der Seite, und Sie können uns auf Slack im Kanal #hunger-games erreichen"
       },
@@ -343,7 +344,7 @@
       "nutriment_saturated-fat": "Gesättigte Fettsäuren",
       "nutriment_carbohydrates": "Kohlenhydrate",
       "nutriment_sugars": "Zucker",
-      "nutriment_proteins": "Eiweiß",
+      "nutriment_proteins": "Proteingehalt",
       "nutriment_fiber": "Ballaststoffe",
       "nutriment_salt": "Salz",
       "nutriment_sodium": "Natrium"
@@ -384,7 +385,7 @@
     "countryLabel": "Land"
   },
   "ingredients": {
-    "description": "TODO: das Spiel definieren"
+    "description": "Mit diesem Spiel können Sie die Vorauswahl der Bilder von Zutatenlisten in verschiedenen Sprachen für ein Produkt überprüfen und die ausgelesenen Zutaten bewerten."
   },
   "footer": {
     "appStore": {

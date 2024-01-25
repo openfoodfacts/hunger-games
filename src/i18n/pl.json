@@ -19,7 +19,7 @@
     },
     "account_band": {
       "title": "Chcesz, aby Twój wkład się liczył? Załóż konto lub zaloguj się do Open Food Facts!",
-      "log_in": "Nazwa użytkownika",
+      "log_in": "Logowanie",
       "sign_up": "Zarejestruj się",
       "contribution_details": "Dowiedz się, dlaczego Twój wkład ma znaczenie"
     },
@@ -112,7 +112,7 @@
     "flag": "Coś nie tak? Zgłoś lub oznacz obrazek!",
     "unflag": "Odznacz obrazek",
     "reset_filters": "Resetuj filtry",
-    "log_in": "Nazwa użytkownika",
+    "log_in": "Logowanie",
     "sign_up": "Zarejestruj się",
     "login_title": "Spraw, aby Twoja adnotacja się liczyła",
     "login_description": "Obecnie nie jesteś zalogowany do Open Food Facts. Aby Twoje odpowiedzi były bezpośrednio stosowane do produktów i powiązane z Twoim kontem, rozważ zalogowanie się do swojego konta Open Food Facts lub jego utworzenie",
@@ -165,7 +165,8 @@
     "automatic": "Automatyczne",
     "human_required": "Wymagany człowiek",
     "edit_product": "Otwórz edycję produktu",
-    "view_product": "Otwórz stronę produktu"
+    "view_product": "Otwórz stronę produktu",
+    "view_crops_for_this_product": "Annotate product logos"
   },
   "logos": {
     "annotation": "Dodatkowe informacje: ",
@@ -253,7 +254,7 @@
     "welcome": {
       "page1": {
         "title": "Witamy na Igrzyskach Śmierci",
-        "text1": "Gry Głodowe to zbiór mini gier, które na wiele sposobów przyczyniają się do powstania Open Food Facts. Możesz grać w naprawdę ekscytujące gry z dowolnego miejsca. Oto przewodnik po całej witrynie, który pomoże Ci zacząć.",
+        "text1": "Hunger Games is a collection of mini-games that help contribute to Open Food Facts in many ways. You can play our really exciting games from anywhere. Here is a guided tour of the entire website which will get you started.",
         "text2": "Pamiętaj, aby zalogować się na stronie Open Food Facts, aby otrzymać kredyt za swój wkład. Jeśli popełnisz błąd, poświęć trochę czasu, aby go poprawić, przechodząc na stronę internetową.",
         "text3": "W razie jakichkolwiek wątpliwości co do gier, kliknij ikonę znaku zapytania w prawym górnym rogu strony, a skontaktujesz się z nami na Slacku na kanale #hunger-games"
       },
@@ -308,7 +309,7 @@
       }
     },
     "previous": "Poprz.",
-    "next": "Następny",
+    "next": "Następne",
     "close": "Zamknij"
   },
   "nutrition": {
@@ -342,9 +343,9 @@
       "nutriment_fat": "Tłuszcz",
       "nutriment_saturated-fat": "Tłuszcz nasycony",
       "nutriment_carbohydrates": "Węglowodany",
-      "nutriment_sugars": "Cukry",
-      "nutriment_proteins": "Proteiny",
-      "nutriment_fiber": "Błonnik",
+      "nutriment_sugars": "Sugar",
+      "nutriment_proteins": "Protein content",
+      "nutriment_fiber": "Fibres",
       "nutriment_salt": "Sól",
       "nutriment_sodium": "Sód"
     },
@@ -384,7 +385,7 @@
     "countryLabel": "Kraj"
   },
   "ingredients": {
-    "description": "TODO: zdefiniuj grę"
+    "description": "This game allows you to validate the pre-selection of images of ingredients lists in various languages for a product, and validate the extracted ingredients."
   },
   "footer": {
     "appStore": {

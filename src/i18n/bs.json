@@ -165,7 +165,8 @@
     "automatic": "Automatic",
     "human_required": "Human required",
     "edit_product": "Open product edit",
-    "view_product": "Open product page"
+    "view_product": "Open product page",
+    "view_crops_for_this_product": "Annotate product logos"
   },
   "logos": {
     "annotation": "Annotation: ",
@@ -253,7 +254,7 @@
     "welcome": {
       "page1": {
         "title": "Dobrodošli u Igre gladi",
-        "text1": "Igre gladi su kolekcija mini-igara koje na mnogo načina doprinose Otvorenim činjenicama o hrani. Možete igrati zaista uzbudljive igre s bilo kojeg mjesta. Evo obilaska cijele web stranice s vodičem koji će vam pomoći da počnete.",
+        "text1": "Hunger Games is a collection of mini-games that help contribute to Open Food Facts in many ways. You can play our really exciting games from anywhere. Here is a guided tour of the entire website which will get you started.",
         "text2": "Obavezno se prijavite na web stranicu Open Food Facts kako biste dobili zasluge za svoje doprinose. Ako napravite grešku, odvojite vrijeme da je ispravite tako što ćete otići na web stranicu.",
         "text3": "U slučaju bilo kakve sumnje u vezi igara, kliknite na ikonu upitnika u gornjem desnom kutu stranice i možete nas kontaktirati na slack na kanalu #hunger-games"
       },
@@ -342,9 +343,9 @@
       "nutriment_fat": "Fat",
       "nutriment_saturated-fat": "Saturated fat",
       "nutriment_carbohydrates": "Carbohydrates",
-      "nutriment_sugars": "Sugars",
-      "nutriment_proteins": "Proteins",
-      "nutriment_fiber": "Fibers",
+      "nutriment_sugars": "Sugar",
+      "nutriment_proteins": "Protein content",
+      "nutriment_fiber": "Fibres",
       "nutriment_salt": "Salt",
       "nutriment_sodium": "Sodium"
     },
@@ -384,7 +385,7 @@
     "countryLabel": "Country"
   },
   "ingredients": {
-    "description": "TODO: define the game"
+    "description": "This game allows you to validate the pre-selection of images of ingredients lists in various languages for a product, and validate the extracted ingredients."
   },
   "footer": {
     "appStore": {

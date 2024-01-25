@@ -165,7 +165,8 @@
     "automatic": "Automatinis",
     "human_required": "Reikalingas žmogus",
     "edit_product": "Atidaryti produkto redagavimą",
-    "view_product": "Atidaryti produkto puslapį"
+    "view_product": "Atidaryti produkto puslapį",
+    "view_crops_for_this_product": "Annotate product logos"
   },
   "logos": {
     "annotation": "Anotacija: ",
@@ -253,7 +254,7 @@
     "welcome": {
       "page1": {
         "title": "Sveiki atvykę į „Hunger Games“",
-        "text1": "„Hunger Games“ – tai mini žaidimų rinkinys, padedantis įvairiais būdais prisidėti prie „Open Food Facts“. Galite žaisti smagius žaidimus iš bet kur. Čia yra visos svetainės gidas, kuris padės jums pradėti.",
+        "text1": "Hunger Games is a collection of mini-games that help contribute to Open Food Facts in many ways. You can play our really exciting games from anywhere. Here is a guided tour of the entire website which will get you started.",
         "text2": "Būtinai prisijunkite prie „Open Food Facts“ svetainės, kad gautumėte priskyrimą už savo indėlį. Jei padarėte klaidą, skirkite laiko jai ištaisyti apsilankę svetainėje.",
         "text3": "Jei kyla abejonių dėl žaidimų, spustelėkite klaustuko piktogramą puslapio viršuje, dešinėje, ir su mumis susisiekite „Slack“ #hunger-games kanale"
       },
@@ -342,9 +343,9 @@
       "nutriment_fat": "Riebalai",
       "nutriment_saturated-fat": "Sotieji riebalai",
       "nutriment_carbohydrates": "Carbohydrate",
-      "nutriment_sugars": "Cukrus",
-      "nutriment_proteins": "Baltymai",
-      "nutriment_fiber": "Ląsteliena",
+      "nutriment_sugars": "Sugar",
+      "nutriment_proteins": "Protein content",
+      "nutriment_fiber": "Fibres",
       "nutriment_salt": "Druska",
       "nutriment_sodium": "Natris"
     },
@@ -384,7 +385,7 @@
     "countryLabel": "Šalis"
   },
   "ingredients": {
-    "description": "TODO: define the game"
+    "description": "This game allows you to validate the pre-selection of images of ingredients lists in various languages for a product, and validate the extracted ingredients."
   },
   "footer": {
     "appStore": {

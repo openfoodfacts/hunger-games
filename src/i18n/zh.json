@@ -165,7 +165,8 @@
     "automatic": "自動",
     "human_required": "Human required",
     "edit_product": "Open product edit",
-    "view_product": "Open product page"
+    "view_product": "Open product page",
+    "view_crops_for_this_product": "Annotate product logos"
   },
   "logos": {
     "annotation": "注解： ",
@@ -253,7 +254,7 @@
     "welcome": {
       "page1": {
         "title": "歡迎來到《飢餓遊戲》",
-        "text1": "「飢餓遊戲」是一系列以多種方式幫助貢獻Open Food Facts的小遊戲。您可以隨時隨地遊抏這些刺激的遊戲。以下的網站導覽將引導您入門整個網站。",
+        "text1": "Hunger Games is a collection of mini-games that help contribute to Open Food Facts in many ways. You can play our really exciting games from anywhere. Here is a guided tour of the entire website which will get you started.",
         "text2": "Make sure to login to the Open Food Facts website to get credit for your contributions. If you make a mistake, please take the time to correct it by heading to the website.",
         "text3": "如果對遊戲有任何疑問，請點擊頁面右上角的問號圖標，您可以通過 Slack 上的 #hunger-games 頻道聯繫我們。"
       },
@@ -342,9 +343,9 @@
       "nutriment_fat": "脂肪",
       "nutriment_saturated-fat": "飽和脂肪",
       "nutriment_carbohydrates": "碳水化合物",
-      "nutriment_sugars": "糖",
-      "nutriment_proteins": "蛋白質",
-      "nutriment_fiber": "Fibers",
+      "nutriment_sugars": "Sugar",
+      "nutriment_proteins": "Protein content",
+      "nutriment_fiber": "Fibres",
       "nutriment_salt": "鹽",
       "nutriment_sodium": "鈉"
     },
@@ -384,7 +385,7 @@
     "countryLabel": "地區"
   },
   "ingredients": {
-    "description": "TODO: define the game"
+    "description": "This game allows you to validate the pre-selection of images of ingredients lists in various languages for a product, and validate the extracted ingredients."
   },
   "footer": {
     "appStore": {

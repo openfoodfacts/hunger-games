@@ -165,7 +165,8 @@
     "automatic": "Tự động",
     "human_required": "Yêu cầu nhân tố",
     "edit_product": "Mở chỉnh sửa sản phẩm",
-    "view_product": "Mở trang sản phẩm"
+    "view_product": "Mở trang sản phẩm",
+    "view_crops_for_this_product": "Annotate product logos"
   },
   "logos": {
     "annotation": "Chú thích: ",
@@ -253,7 +254,7 @@
     "welcome": {
       "page1": {
         "title": "Chào mừng đến với Hunger Games",
-        "text1": "Hunger Games là một bộ sưu tập các trò chơi nhỏ giúp đóng góp vào Open Food Facts theo nhiều cách. Bạn có thể chơi những trò chơi rất thú vị này từ bất cứ đâu. Đây là hướng dẫn tham quan toàn bộ trang web khi bạn bắt đầu.",
+        "text1": "Hunger Games is a collection of mini-games that help contribute to Open Food Facts in many ways. You can play our really exciting games from anywhere. Here is a guided tour of the entire website which will get you started.",
         "text2": "Đảm bảo đăng nhập vào trang web Open Food Facts để nhận được phần thưởng cho những đóng góp của bạn. Nếu bạn mắc lỗi, vui lòng sửa lại bằng cách truy cập trang web.",
         "text3": "Trong trường hợp có thắc mắc về trò chơi, hãy nhấn vào biểu tượng dấu hỏi trên cùng bên phải của trang và bạn có thể liên hệ với chúng tôi tại kênh #hunger-game"
       },
@@ -342,9 +343,9 @@
       "nutriment_fat": "Chất béo",
       "nutriment_saturated-fat": "Chất béo bão hòa",
       "nutriment_carbohydrates": "Cacbohydrat",
-      "nutriment_sugars": "Đường",
-      "nutriment_proteins": "Chất đạm",
-      "nutriment_fiber": "Chất xơ",
+      "nutriment_sugars": "Sugar",
+      "nutriment_proteins": "Protein content",
+      "nutriment_fiber": "Fibres",
       "nutriment_salt": "Muối",
       "nutriment_sodium": "Natri"
     },
@@ -384,7 +385,7 @@
     "countryLabel": "Quốc gia"
   },
   "ingredients": {
-    "description": "TODO: define the game"
+    "description": "This game allows you to validate the pre-selection of images of ingredients lists in various languages for a product, and validate the extracted ingredients."
   },
   "footer": {
     "appStore": {

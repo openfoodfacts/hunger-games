@@ -165,7 +165,8 @@
     "automatic": "자동",
     "human_required": "인간 필수",
     "edit_product": "제품 편집 열기",
-    "view_product": "제품 페이지 열기"
+    "view_product": "제품 페이지 열기",
+    "view_crops_for_this_product": "Annotate product logos"
   },
   "logos": {
     "annotation": "주석: ",
@@ -253,7 +254,7 @@
     "welcome": {
       "page1": {
         "title": "헝거 게임에 오신 것을 환영합니다",
-        "text1": "헝거 게임은 다양한 방식으로 Open Food Facts에 기여하는 데 도움이 되는 미니 게임 모음입니다. 어디에서나 정말 흥미진진한 게임을 플레이할 수 있습니다. 시작하게 될 전체 웹사이트의 가이드 투어입니다.",
+        "text1": "Hunger Games is a collection of mini-games that help contribute to Open Food Facts in many ways. You can play our really exciting games from anywhere. Here is a guided tour of the entire website which will get you started.",
         "text2": "기여에 대한 크레딧을 받으려면 Open Food Facts 웹사이트에 로그인하십시오. 오류가 있는 경우 웹사이트로 이동하여 시간을 내어 수정하십시오.",
         "text3": "게임에 대해 궁금한 점이 있으면 페이지 오른쪽 상단에 있는 물음표 아이콘을 클릭하세요. Slack의 #hunger-games 채널에서 저희에게 연락하실 수 있습니다."
       },
@@ -342,9 +343,9 @@
       "nutriment_fat": "지방",
       "nutriment_saturated-fat": "포화 지방",
       "nutriment_carbohydrates": "탄수화물",
-      "nutriment_sugars": "당류",
-      "nutriment_proteins": "단백질",
-      "nutriment_fiber": "섬유",
+      "nutriment_sugars": "Sugar",
+      "nutriment_proteins": "Protein content",
+      "nutriment_fiber": "Fibres",
       "nutriment_salt": "소금",
       "nutriment_sodium": "나트륨"
     },
@@ -384,7 +385,7 @@
     "countryLabel": "국가"
   },
   "ingredients": {
-    "description": "TODO: define the game"
+    "description": "This game allows you to validate the pre-selection of images of ingredients lists in various languages for a product, and validate the extracted ingredients."
   },
   "footer": {
     "appStore": {
