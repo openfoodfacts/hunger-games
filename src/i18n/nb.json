@@ -259,17 +259,17 @@
         "text3": "In case of any doubt about the games, click on the question mark icon at the top right of the page, and you can reach us on slack at the #hunger-games channel"
       },
       "page2": {
-        "title": "Questions Game",
-        "text1": "Does the food product belong to this brand?",
-        "text2": "Simply answer with a <strong>Yes/No</strong>! Don't know the answer? That's alright, just skip it.",
-        "text3": "You can also use your keyboard shortcuts: y,n and k.",
-        "text4": "You can <strong>filter</strong> the products based on country, brands, popularity and much more!",
-        "text5": "If you don't want to do this every single time, you can also <strong>save the filters</strong> by clicking on the star. Next time you come back, find the saved filters on the home page itself"
+        "title": "Spørsmålsspill",
+        "text1": "Tilhører matproduktet dette merket?",
+        "text2": "Bare svar med et <strong>ja/nei</strong>! Vet du ikke svaret? Det går fint, bare hopp over det.",
+        "text3": "Du kan også bruke hurtigtastene dine: y, n og k.",
+        "text4": "Du kan <strong>filtrere</strong> produktene basert på land, merker, populæritet og mye mer!",
+        "text5": "Hvis du ikke vil gjøre dette hver eneste gang, kan du også <strong>lagre filtrene</strong> ved å klikke på stjerna. Neste gang du kommer tilbake, finner du de lagrede filtrene på selve hjemmesiden"
       },
       "page3": {
-        "title": "Logos Game",
-        "text1": "Another popular game is the logos game where you have to <strong>select all the logos</strong> you feel are the same.",
-        "text2": "As shown in the example, once you select all the similar logos, just type their value and select where it is a brand, a label or something else. It's that simple!"
+        "title": "Logospill",
+        "text1": "Et annet populært spill er logospillet hvor du må <strong>velge alle logoene</strong> som du føler er de samme.",
+        "text2": "Som vist i eksempelet, når du har valgt alle de lignende logoene, skriver du bare inn verdien deres og velger hvor det er et merke, en etikett eller noe annet. Det er så enkelt!"
       },
       "page4": {
         "title": "Eco-Score Questions Game",
@@ -291,7 +291,7 @@
     },
     "logos": {
       "page1": {
-        "title": "Selection",
+        "title": "Utvalg",
         "text1": "Select the crops of a same logo by clicking on them",
         "text2": "Selected logos go to the top of the page, you can unselect them by clicking again on them"
       },
@@ -301,7 +301,7 @@
         "text2": "If the crop contains only a partial part of a logo, you can select it."
       },
       "page3": {
-        "title": "Validate",
+        "title": "Godkjenn",
         "text1": "Indicate the type of logo (label, brand, QRcode, ...)",
         "text2": "If it is a label or a brand logo, indicate which one it is",
         "text3": "Now you can submit your selection",
@@ -321,9 +321,9 @@
     },
     "steps": {
       "1": "Beskjær",
-      "2": "Special values",
-      "3": "Nutriments Selection",
-      "4": "Values Selection"
+      "2": "Spesielle verdier",
+      "3": "Valg av næringsstoffer",
+      "4": "Valg av verdier"
     },
     "loading": "Laster...",
     "unknown_brand": "Merke ukjent",
@@ -331,7 +331,7 @@
     "next": "Neste steg",
     "prev": "Forrige steg",
     "skip": "Hopp over dette produktet",
-    "validate": "Validate Table",
+    "validate": "Godkjenningstabell",
     "unselect_picture": "Ingen ernæringsinformasjon",
     "basis": "data for: ",
     "servingSize": "porsjonsstørrelse",
@@ -343,42 +343,42 @@
       "nutriment_fat": "Fett",
       "nutriment_saturated-fat": "Mettet fett",
       "nutriment_carbohydrates": "Karbohydrater",
-      "nutriment_sugars": "Sugar",
-      "nutriment_proteins": "Protein content",
-      "nutriment_fiber": "Fibres",
+      "nutriment_sugars": "Sukker",
+      "nutriment_proteins": "Proteininnhold",
+      "nutriment_fiber": "Fibre",
       "nutriment_salt": "Salt",
       "nutriment_sodium": "Natrium"
     },
     "history": {
-      "title": "Session History",
+      "title": "Sesjonshistorikk",
       "status": "status",
       "product name": "produktnavn",
       "view": "se side",
       "edit": "rediger side",
       "SKIP": "ignorert",
       "VALIDATED": "redigert",
-      "WRONG_IMAGE": "unselected picture",
+      "WRONG_IMAGE": "avmerket bilde",
       "close": "lukk",
       "open": "åpne historikk"
     }
   },
   "notfound": {
     "image_alt": "404 ikke funnet",
-    "nopage": "Whoops! The page you're looking for can't be found.",
-    "redirect1": "Want to play some games?",
-    "redirect2": "Click here"
+    "nopage": "Oops! Siden du leter etter kan ikke bli funnet.",
+    "redirect1": "Vil du spille noen spill?",
+    "redirect2": "Klikk her"
   },
   "nutriscore": {
-    "image_alt": "cropped image",
+    "image_alt": "beskjært bilde",
     "label": "Annotate Nutri-Score logo detection by batch.",
     "description": "To do so, select all the images showing the correct/wrong Nutri-Score value ({{label}}), and click on the bottom buttons to say if you selected a set correct or wrong ones.",
     "images_remaining": "Still {{remaining}} to annotate",
-    "image_sizes": "Image sizes",
-    "zoom_on_logo": "Zoom on logo",
+    "image_sizes": "Bildestørrelser",
+    "zoom_on_logo": "Zoom på logo",
     "select_all": "Velg alt",
     "deselect_all": "Opphev merking for alle",
-    "incorrect": "Wrong",
-    "correct": "Correct ({{label}})"
+    "incorrect": "Feil",
+    "correct": "Riktig ({{label}})"
   },
   "eco-score": {
     "description": "Here is a summary of questions that could improve Eco-Score computation",
@@ -390,15 +390,15 @@
   "footer": {
     "appStore": {
       "title": "App Store",
-      "subtitle": "Download on the"
+      "subtitle": "Last ned på"
     },
     "playStore": {
       "title": "Play Store",
-      "subtitle": "Get it on"
+      "subtitle": "Få den på"
     },
     "microsoft": {
       "title": "Microsoft",
-      "subtitle": "Get it from"
+      "subtitle": "Få den fra"
     },
     "androidAPK": {
       "title": "Android-APK",
