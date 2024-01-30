@@ -155,7 +155,6 @@ const offService = {
     );
   },
 
-  // TODO: fix method name
   setIngedrient(editionParams: { code: string; text: string; lang?: string }) {
     const { code, lang, text } = editionParams;
     if (!code) {
@@ -169,7 +168,9 @@ const offService = {
       code,
       [`ingredients_text${lang ? `_${lang}` : ""}`]: text,
     });
-    axios.post(`${OFF_URL}/cgi/product_jqm2.pl?${urlParams.toString()}`);
+    axios.post(`${OFF_URL}/cgi/product_jqm2.pl?${urlParams.toString()}`, {
+      withCredentials: true,
+    });
   },
 
   async getIngedrientParsing(editionParams: { text: string; lang: string }) {
