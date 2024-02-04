@@ -5,15 +5,15 @@
       "cards": {
         "questions": {
           "title": "Kérdések",
-          "description": "Tell us if the given image answers the questions"
+          "description": "Mondd el nekünk, hogy a megadott kép választ ad-e a kérdésekre"
         },
         "logos": {
-          "title": "Logos",
+          "title": "Logók",
           "description": "Keresse meg az összes logót, amely megfelel az adott logónak"
         },
         "eco_score": {
           "title": "Eco-Score",
-          "description": "Annotate the questions with the highest value"
+          "description": "Jelöld meg a kérdéseket a legnagyobb értékkel"
         }
       }
     },
@@ -122,7 +122,7 @@
     "title": "Hunger Games",
     "games": "Játékok",
     "questions": "Kérdések",
-    "logos": "Logos",
+    "logos": "Logók",
     "logos-annotation": "Logos annotation",
     "logos-search": "Logos search",
     "logos-product-search": "Annotation per products",
