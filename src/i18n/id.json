@@ -166,7 +166,7 @@
     "human_required": "Manusia dibutuhkan",
     "edit_product": "Buka suntingan produk",
     "view_product": "Buka halaman produk",
-    "view_crops_for_this_product": "Annotate product logos"
+    "view_crops_for_this_product": "Beri anotasi pada logo produk"
   },
   "logos": {
     "annotation": "Anotasi: ",
@@ -254,7 +254,7 @@
     "welcome": {
       "page1": {
         "title": "Selamat datang di Hunger Games",
-        "text1": "Hunger Games is a collection of mini-games that help contribute to Open Food Facts in many ways. You can play our really exciting games from anywhere. Here is a guided tour of the entire website which will get you started.",
+        "text1": "Hunger Games adalah kumpulan mini-game yang membantu berkontribusi pada Open Food Facts dengan berbagai cara. Anda dapat memainkan game-game kami yang sangat menarik dari mana saja. Berikut ini adalah panduan tur ke seluruh situs web yang akan membantu Anda memulai.",
         "text2": "Pastikan untuk masuk ke situs web Open Food Facts untuk mendapatkan kredit atas kontribusi Anda. Jika Anda melakukan kesalahan, mohon luangkan waktu untuk memperbaikinya dengan membuka situs web tersebut.",
         "text3": "Jika ada keraguan tentang permainan, klik ikon tanda tanya di kanan atas halaman, dan Anda dapat menghubungi kami di saluran #hunger-games"
       },
@@ -343,9 +343,9 @@
       "nutriment_fat": "Lemak",
       "nutriment_saturated-fat": "Lemak jenuh",
       "nutriment_carbohydrates": "Karbohidrat",
-      "nutriment_sugars": "Sugar",
-      "nutriment_proteins": "Protein content",
-      "nutriment_fiber": "Fibres",
+      "nutriment_sugars": "Gula",
+      "nutriment_proteins": "Kandungan protein",
+      "nutriment_fiber": "Serat",
       "nutriment_salt": "Garam",
       "nutriment_sodium": "Natrium"
     },
@@ -385,20 +385,20 @@
     "countryLabel": "Negara"
   },
   "ingredients": {
-    "description": "This game allows you to validate the pre-selection of images of ingredients lists in various languages for a product, and validate the extracted ingredients."
+    "description": "Permainan ini memungkinkan Anda untuk memvalidasi pra-pemilihan gambar daftar bahan dalam berbagai bahasa untuk suatu produk, dan memvalidasi bahan yang diekstrak."
   },
   "footer": {
     "appStore": {
       "title": "App Store",
-      "subtitle": "Download on the"
+      "subtitle": "Unduh di"
     },
     "playStore": {
       "title": "Play Store",
-      "subtitle": "Get it on"
+      "subtitle": "Dapatkan di"
     },
     "microsoft": {
       "title": "Microsoft",
-      "subtitle": "Get it from"
+      "subtitle": "Dapatkan dari"
     },
     "androidAPK": {
       "title": "APK Android",

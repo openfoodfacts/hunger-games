@@ -33,21 +33,21 @@
       "title": "{{userName}} statistics:",
       "editorCount": {
         "title": "Editor",
-        "description": "Number of editions done"
+        "description": "किये गये संस्करणों की संख्या"
       },
       "contributorCount": {
         "title": "सहयोगी",
-        "description": "Adding a new product"
+        "description": "एक नया उत्पाद जोड़ना"
       },
       "photographerCount": {
-        "title": "Photographer",
-        "description": "Taking photos for a product"
+        "title": "फ़ोटोग्राफ़र",
+        "description": "किसी उत्पाद के लिए फ़ोटो लेना"
       }
     }
   },
   "flagged_images": {
-    "title": "Images flagged by users",
-    "loading": "Loading"
+    "title": "उपयोगकर्ताओं द्वारा चिह्नित छवियाँ",
+    "loading": "लोड हो रहा है"
   },
   "questions": {
     "category": "वर्ग",
@@ -58,75 +58,75 @@
     "brands": "ब्रांड",
     "packaging": "पैकेजिंग",
     "quantity": "मात्रा",
-    "insightTypeLabel": "Only shows",
+    "insightTypeLabel": "केवल दिखाता है",
     "ingredients": "सामग्री",
     "product_weight": "product weight",
-    "popularity_sort": "Sort by popularity",
-    "see_examples": "See examples of this ",
+    "popularity_sort": "लोकप्रियता के आधार पर क्रमबद्ध करें",
+    "see_examples": "इसके उदाहरण देखें ",
     "no": "नहीं",
-    "skip": "Skip",
+    "skip": "स्किप करें",
     "yes": "हाँ",
-    "no_questions_remaining": "No questions remaining",
-    "countries": "Countries",
-    "view": "View",
+    "no_questions_remaining": "कोई प्रश्न शेष नहीं",
+    "countries": "देशों",
+    "view": "देखें",
     "edit": "संपादित करें",
-    "hide_images": "Hide images (faster loading)",
-    "display_images": "Display images",
-    "annotations": "Annotations",
-    "last_annotations": "Last annotations",
-    "remaining_annotations": "Remaining questions",
+    "hide_images": "छवियाँ छिपाएँ (तेजी से लोड हो रहा है)",
+    "display_images": "छवियाँ प्रदर्शित करें",
+    "annotations": "एनोटेशन",
+    "last_annotations": "अंतिम टिप्पणियाँ",
+    "remaining_annotations": "शेष प्रश्न",
     "annotated_annotations": "Annotated",
     "filters": {
-      "active_filter_number": "+{{count}} filters",
-      "active_filter_number_one": "+{{count}} filter",
-      "active_filter_number_zero": "no filter",
+      "active_filter_number": "+{{count}} फिल्टर",
+      "active_filter_number_one": "+{{count}} फिल्टर",
+      "active_filter_number_zero": "कोई फिल्टर नहीं",
       "short_label": {
-        "value": "value",
+        "value": "मूल्य",
         "country": "देश",
         "brand": "ब्रांड",
-        "popularity": "popularity",
-        "campaign": "camp"
+        "popularity": "लोकप्रियता",
+        "campaign": "शिविर"
       },
       "long_label": {
-        "type": "Question Type",
-        "value": "Proposed Value",
-        "country": "Product Country",
-        "brand": "Product Brand",
-        "popularity": "Sort by popularity",
+        "type": "प्रश्न प्रकार",
+        "value": "प्रस्तावित मूल्य",
+        "country": "उत्पाद देश",
+        "brand": "उत्पाद का ब्रांड",
+        "popularity": "लोकप्रियता के आधार पर क्रमबद्ध करें",
         "edit": "",
-        "campaign": "Campaign"
+        "campaign": "अभियान"
       },
       "placeholders": {
-        "value": "Value (Fanta, en:organic,...)",
-        "brand": "Auchan, Danone, Herta, ...",
-        "campaign": "Annotation campaigns"
+        "value": "मूल्य (फैंटा, एन:ऑर्गेनिक,...)",
+        "brand": "औचन, डैनोन, हर्टा, ...",
+        "campaign": "टिप्पणि अभियान"
       },
       "actions": {
-        "edit": "Edit Filters",
-        "cancel": "Cancel",
-        "apply": "Apply"
+        "edit": "फ़िल्टर संपादित करें",
+        "cancel": "रद्द करें",
+        "apply": "लागू करें"
       }
     },
-    "other_questions": "Other questions",
-    "send": "Send",
-    "flag": "Something wrong? Report/flag the image!",
-    "unflag": "Unflag the image",
-    "reset_filters": "Reset filters",
+    "other_questions": "अन्य सवाल",
+    "send": "भेजें",
+    "flag": "कुछ गड़बड़ है क्या? छवि की रिपोर्ट करें/ध्वजांकित करें!",
+    "unflag": "छवि को अनफ़्लैग करें",
+    "reset_filters": "फ़िल्टर रीसेट करें",
     "log_in": "उपयोगकर्ता नाम",
     "sign_up": "साइन अप करें",
-    "login_title": "Make your annotation count",
-    "login_description": "You are not currently logged into Open Food Facts. To get your answers directly applied to products, and associated to your account, consider logging in to your Open Food Facts account, or creating one",
-    "please_wait_while_we_fetch_the_question": "Please wait while we fetch the question!"
+    "login_title": "अपने टिप्पणि को गिनें",
+    "login_description": "आप वर्तमान में ओपन फ़ूड फैक्ट्स में लॉग इन नहीं हैं। अपने उत्तरों को सीधे उत्पादों पर लागू करने और अपने खाते से संबद्ध करने के लिए, अपने ओपन फ़ूड फैक्ट्स खाते में लॉग इन करने या एक खाता बनाने पर विचार करें",
+    "please_wait_while_we_fetch_the_question": "कृपया तब तक प्रतीक्षा करें जब तक हम प्रश्न प्राप्त न कर लें!"
   },
   "menu": {
     "title": "Hunger Games",
-    "games": "Games",
+    "games": "खेल",
     "questions": "Questions",
     "logos": "Logos",
-    "logos-annotation": "Logos annotation",
-    "logos-search": "Logos search",
-    "logos-product-search": "Annotation per products",
-    "logos-deep-search": "Infinite annotation",
+    "logos-annotation": "लोगो टिप्पणि",
+    "logos-search": "लोगो खोजें",
+    "logos-product-search": "प्रति उत्पाद एनोटेशन",
+    "logos-deep-search": "अनंत व्याख्या",
     "manage": "Manage",
     "insights": "Insights",
     "nutritions": "पोषण तथ्य",
@@ -198,15 +198,15 @@
     "loading": "लोड किया जा रहा है…",
     "refresh": "Refresh",
     "search_specific": "Search specific logo",
-    "load_more": "Load more",
+    "load_more": "अधिक लोड करें",
     "no_results": "No logo found",
     "result_count": "Shows {{showing}} on {{available}} available",
-    "flag": "Something wrong? Report/flag the image!",
-    "unflag": "Unflag the image",
+    "flag": "कुछ गड़बड़ है क्या? छवि की रिपोर्ट करें/ध्वजांकित करें!",
+    "unflag": "छवि को अनफ़्लैग करें",
     "crop_image_title": "crop of the logo",
-    "no_more_questions": "No more questions about this logo. You can try to find more logos with the following game.",
+    "no_more_questions": "इस लोगो के बारे में कोई और प्रश्न नहीं. आप निम्नलिखित गेम के साथ अधिक लोगो ढूंढने का प्रयास कर सकते हैं।",
     "loading_messages": {
-      "pending_reference_logos": "We are loading some logos examples to initialise the search",
+      "pending_reference_logos": "हम खोज आरंभ करने के लिए कुछ लोगो उदाहरण लोड कर रहे हैं",
       "failed_reference_logos": "We did not find any logos with this annotation. Try to use the following game to annotate some of them."
     },
     "deep_search": {
