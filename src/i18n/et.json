@@ -30,9 +30,9 @@
       "thank_you": "Thank you for helping us improve Open Food Facts so that more people can use it easily."
     },
     "statistics": {
-      "title": "{{userName}} statistics:",
+      "title": "{{userName}} statistika:",
       "editorCount": {
-        "title": "Editor",
+        "title": "Redaktor",
         "description": "Number of editions done"
       },
       "contributorCount": {
@@ -47,7 +47,7 @@
   },
   "flagged_images": {
     "title": "Images flagged by users",
-    "loading": "Loading"
+    "loading": "Laadimine"
   },
   "questions": {
     "category": "kategooria",
@@ -94,7 +94,7 @@
         "brand": "Toote kaubamärk",
         "popularity": "Sordi populaarsuse alusel",
         "edit": "",
-        "campaign": "Campaign"
+        "campaign": "Kampaania"
       },
       "placeholders": {
         "value": "Value (Fanta, en:organic,...)",
@@ -103,12 +103,12 @@
       },
       "actions": {
         "edit": "Edit Filters",
-        "cancel": "Cancel",
+        "cancel": "Tühista",
         "apply": "Rakenda"
       }
     },
     "other_questions": "Other questions",
-    "send": "Send",
+    "send": "Saada",
     "flag": "Something wrong? Report/flag the image!",
     "unflag": "Unflag the image",
     "reset_filters": "Reset filters",
@@ -119,15 +119,15 @@
     "please_wait_while_we_fetch_the_question": "Please wait while we fetch the question!"
   },
   "menu": {
-    "title": "Hunger Games",
-    "games": "Games",
+    "title": "Näljamängud",
+    "games": "Mängud",
     "questions": "Küsimused",
     "logos": "Logos",
     "logos-annotation": "Logos annotation",
     "logos-search": "Logos search",
     "logos-product-search": "Annotation per products",
     "logos-deep-search": "Infinite annotation",
-    "manage": "Manage",
+    "manage": "Halda",
     "insights": "Insights",
     "nutritions": "Nutrition facts",
     "settings": "Seaded",
@@ -162,7 +162,7 @@
     "value": "Value",
     "created_at": "Created at",
     "completed_at": "Completed at",
-    "automatic": "Automatic",
+    "automatic": "Automaatne",
     "human_required": "Human required",
     "edit_product": "Open product edit",
     "view_product": "Open product page",
@@ -179,7 +179,7 @@
     "submit": "Salvesta",
     "type": "Type",
     "label": "Silt",
-    "brand": "Brand",
+    "brand": "Kaubamärk",
     "packager_code": "Pakendaja kood",
     "packaging": "Packaging",
     "qr_code": "QR kood",
@@ -214,7 +214,7 @@
       "description": "Select a logo you want to look for, and let's go to catch them all. For every logo you annotate, we will fetch it's neighbors such that you might never stop to annotate. (Press Shift to select range of logos)",
       "ref_logos": "Reference logos (logo already annotated with this value)",
       "remaining": "Remaining to annotate",
-      "select_all": "Select All",
+      "select_all": "Vali kõik",
       "unselect_all": "Deselect All"
     }
   },
@@ -340,13 +340,13 @@
     "nutriments": {
       "nutriment_energy-kj": "Energy (kJ)",
       "nutriment_energy-kcal": "Energy (kCal)",
-      "nutriment_fat": "Fat",
-      "nutriment_saturated-fat": "Küllastunud rasva",
-      "nutriment_carbohydrates": "Carbohydrates",
+      "nutriment_fat": "Rasvad",
+      "nutriment_saturated-fat": "Küllastunud rasvhapped",
+      "nutriment_carbohydrates": "Süsivesikud",
       "nutriment_sugars": "Sugar",
       "nutriment_proteins": "Protein content",
       "nutriment_fiber": "Fibres",
-      "nutriment_salt": "Soola",
+      "nutriment_salt": "Sool",
       "nutriment_sodium": "Sodium"
     },
     "history": {
