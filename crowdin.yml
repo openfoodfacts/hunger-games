@@ -5,3 +5,19 @@ pull_request_title: "feat: New translations for Hunger Games"
 files:
   - source: /src/i18n/common.json
     translation: /src/i18n/%two_letters_code%.json
+    languages_mapping:
+      two_letters_code:
+        pt-BR: pt_BR
+        pt-PT: pt
+        zh-CN: zh
+        zh-HK: zh_HK
+        en-GB: en_GB
+        en-AU: en_AU
+        en-US: en_US
+        nl-BE: nl_BE
+        nl: nl
+        zh-TW: zh_TW
+        sr-CS: sr_CS
+        sr: sr_RS
+        ku : kmr_TR
+        kmr: kmr
