@@ -1,0 +1,408 @@
+{
+  "home": {
+    "game_selector": {
+      "title": "你想要玩什麼遊戲？",
+      "cards": {
+        "questions": {
+          "title": "常見問答",
+          "description": "請讓我們知道這圖片是否回答了那些問題。"
+        },
+        "logos": {
+          "title": "標誌",
+          "description": "請找出與指定表章匹配的所有表章"
+        },
+        "eco_score": {
+          "title": "環保評分",
+          "description": "註釋最具價值的問題"
+        }
+      }
+    },
+    "account_band": {
+      "title": "想要讓您的貢獻有所價值嗎？在Open Food Facts上創建帳戶或登入吧！",
+      "log_in": "用戶名",
+      "sign_up": "註冊",
+      "contribution_details": "了解為何您的貢獻很重要"
+    },
+    "saved_filters": "已儲存的篩選器",
+    "contribution_modal": {
+      "title": "您的貢獻很重要",
+      "information": "「飢餓遊戲」是我們運用OCR（光學字符識別）和人工智能的一項成果。當您使用Open Food Facts的「飢餓遊戲」時，您可以幫助我們改善整個資料庫，從而替社區做出更好的飲食選擇。我們將會收集您的註解，並將使用它們，以使Open Food Facts變得更加準確和高效。",
+      "thank_you": "感謝您協助我們改進Open Food Facts，讓更多人能夠更輕鬆地使用它。"
+    },
+    "statistics": {
+      "title": "{{userName}} 的統計資料：",
+      "editorCount": {
+        "title": "編輯",
+        "description": "已完成版本數"
+      },
+      "contributorCount": {
+        "title": "貢獻者",
+        "description": "新增新商品"
+      },
+      "photographerCount": {
+        "title": "攝影師",
+        "description": "為產品拍攝照片"
+      }
+    }
+  },
+  "flagged_images": {
+    "title": "由用戶標記的圖片",
+    "loading": "載入中"
+  },
+  "questions": {
+    "category": "類別",
+    "categories": "類別",
+    "label": "標籤",
+    "labels": "標籤",
+    "brand": "品牌",
+    "brands": "品牌",
+    "packaging": "包裝",
+    "quantity": "數量",
+    "insightTypeLabel": "僅顯示",
+    "ingredients": "成分",
+    "product_weight": "產品重量",
+    "popularity_sort": "依熱門程度排序",
+    "see_examples": "查看此 的例子",
+    "no": "否",
+    "skip": "略過",
+    "yes": "是",
+    "no_questions_remaining": "沒有待處理的問題",
+    "countries": "國家地區",
+    "view": "檢視",
+    "edit": "編輯",
+    "hide_images": "隱藏圖片（載入較快）",
+    "display_images": "顯示圖片",
+    "annotations": "3. Annotations",
+    "last_annotations": "上一次注解",
+    "remaining_annotations": "剩餘問題",
+    "annotated_annotations": "已注解",
+    "filters": {
+      "active_filter_number": "+{{count}} 篩選器",
+      "active_filter_number_one": "+{{count}} 篩選器",
+      "active_filter_number_zero": "沒有篩選器",
+      "short_label": {
+        "value": "值",
+        "country": "國家",
+        "brand": "品牌",
+        "popularity": "人氣",
+        "campaign": "展銷"
+      },
+      "long_label": {
+        "type": "問題類型",
+        "value": "建議值",
+        "country": "產地",
+        "brand": "產品品牌",
+        "popularity": "依熱門程度排序",
+        "edit": "",
+        "campaign": "展銷活動"
+      },
+      "placeholders": {
+        "value": "Value (Fanta, en:organic,...)",
+        "brand": "Auchan, Danone, Herta, ...",
+        "campaign": "Annotation campaigns"
+      },
+      "actions": {
+        "edit": "編輯篩選器",
+        "cancel": "取消",
+        "apply": "套用"
+      }
+    },
+    "other_questions": "其他問題",
+    "send": "Send",
+    "flag": "Something wrong? Report/flag the image!",
+    "unflag": "Unflag the image",
+    "reset_filters": "Reset filters",
+    "log_in": "用戶名",
+    "sign_up": "註冊",
+    "login_title": "Make your annotation count",
+    "login_description": "You are not currently logged into Open Food Facts. To get your answers directly applied to products, and associated to your account, consider logging in to your Open Food Facts account, or creating one",
+    "please_wait_while_we_fetch_the_question": "Please wait while we fetch the question!"
+  },
+  "menu": {
+    "title": "飢餓遊戲",
+    "games": "遊戲",
+    "questions": "常見問答",
+    "logos": "標誌",
+    "logos-annotation": "Logos annotation",
+    "logos-search": "Logos search",
+    "logos-product-search": "Annotation per products",
+    "logos-deep-search": "Infinite annotation",
+    "manage": "管理",
+    "insights": "深層研析",
+    "nutritions": "營養成分",
+    "settings": "設定",
+    "eco-score": "環保評分",
+    "dashboard": "Logos dashboard",
+    "tour": "Show tour",
+    "logged_in_user": "Logged as {{userName}}",
+    "log_in": "Click to login"
+  },
+  "insights": {
+    "insights": "深層研析",
+    "barcode": "條碼",
+    "barcode_placeholder": "條碼",
+    "value_tag": "值標籤",
+    "value_placeholder": "例如： en:mueslis, bjorg,...",
+    "type": "類型",
+    "annotated": "已注解",
+    "annotation": "注解",
+    "not_annotated": "未注解",
+    "all": "全部",
+    "label": "標籤",
+    "product_weight": "產品重量",
+    "category": "分類",
+    "expiration_date": "過期日",
+    "packager_code": "包裝商代碼",
+    "skipped": "跳過 (-1)",
+    "rejected": "退回 (0)",
+    "accepted": "接受 (1)",
+    "search": "搜尋",
+    "count": "次數",
+    "id": "識別碼",
+    "value": "值",
+    "created_at": "創建於",
+    "completed_at": "完成於",
+    "automatic": "自動",
+    "human_required": "Human required",
+    "edit_product": "Open product edit",
+    "view_product": "Open product page",
+    "view_crops_for_this_product": "Annotate product logos"
+  },
+  "logos": {
+    "annotation": "注解： ",
+    "annotations": "標誌注解",
+    "task_description": "Select all logos that are exactly the same, and give them a name like \"en:EU Organic\" and a type like \"label\".",
+    "select_all": "選取全部",
+    "unselect_all": "取消選取全部",
+    "distance": "距離：",
+    "value": "值",
+    "submit": "送出",
+    "type": "類型",
+    "label": "標籤",
+    "brand": "品牌",
+    "packager_code": "包裝商代碼",
+    "packaging": "包裝套件",
+    "qr_code": "QR 代碼",
+    "category": "分類",
+    "nutrition_label": "營養標示貼標",
+    "no_logo": "Not a logo",
+    "store": "商店",
+    "detail": "標誌詳細說明",
+    "id": "標誌 ID：",
+    "barcode": "條碼：",
+    "full_image": "完整圖片",
+    "update": "更新",
+    "no_found": "未發現標誌",
+    "search": "搜尋",
+    "number_of_results": "結果總數：",
+    "loading": "載入中…",
+    "refresh": "重新整理",
+    "search_specific": "Search specific logo",
+    "load_more": "載入更多",
+    "no_results": "未發現標誌",
+    "result_count": "Shows {{showing}} on {{available}} available",
+    "flag": "Something wrong? Report/flag the image!",
+    "unflag": "Unflag the image",
+    "crop_image_title": "crop of the logo",
+    "no_more_questions": "No more questions about this logo. You can try to find more logos with the following game.",
+    "loading_messages": {
+      "pending_reference_logos": "We are loading some logos examples to initialise the search",
+      "failed_reference_logos": "We did not find any logos with this annotation. Try to use the following game to annotate some of them."
+    },
+    "deep_search": {
+      "title": "Logo search",
+      "description": "Select a logo you want to look for, and let's go to catch them all. For every logo you annotate, we will fetch it's neighbors such that you might never stop to annotate. (Press Shift to select range of logos)",
+      "ref_logos": "Reference logos (logo already annotated with this value)",
+      "remaining": "Remaining to annotate",
+      "select_all": "Select All",
+      "unselect_all": "Deselect All"
+    }
+  },
+  "settings": {
+    "settings": "設定",
+    "language": "語言",
+    "save": "儲存",
+    "reportIssue": "Found a bug? Please let us know.",
+    "dev_mode_title": "To get more options, activate the dev mode",
+    "dev_mode_label": "Dev Mode",
+    "dev_page_toggle": "Show {{name}} page",
+    "join_community": "加入社群",
+    "text1": "Open Food Facts is a collaborative project built by tens of thousands of volunteers and managed by a non-profit organization with 8 employees. We need your donations to fund the Open Food Facts 2024 budget and to continue to develop the project.",
+    "thank_you": "Thank you",
+    "donate": "贊助/捐款",
+    "join_the_community": {
+      "discover_our": "Discover our ",
+      "code_of_conduct": "Code of conduct ",
+      "join_us_on": "Join us on ",
+      "forum": "Forum",
+      "subscribe_to_our": "訂閱我們的 ",
+      "newsletter": "電子報"
+    },
+    "discover_the_project": "探索專案",
+    "Who_we_are": "我們是誰",
+    "Vision_Mission_Values_and_Programs": "願景、使命、價值和計劃",
+    "FAQS": "FAQS",
+    "open_Food_Facts_blog": "Open Food Facts blog",
+    "Press": "投稿",
+    "Open_Food_Facts_wiki": "Open Food Facts wiki (en)",
+    "Translators": "翻譯員",
+    "Partners": "合作伙伴",
+    "Open_Beauty_Facts": "Open Beauty Facts - 化妝品",
+    "text2": "來自全世界共同協作、自由且開放的食品資料庫。"
+  },
+  "helper": {
+    "welcome": {
+      "page1": {
+        "title": "歡迎來到《飢餓遊戲》",
+        "text1": "Hunger Games is a collection of mini-games that help contribute to Open Food Facts in many ways. You can play our really exciting games from anywhere. Here is a guided tour of the entire website which will get you started.",
+        "text2": "Make sure to login to the Open Food Facts website to get credit for your contributions. If you make a mistake, please take the time to correct it by heading to the website.",
+        "text3": "如果對遊戲有任何疑問，請點擊頁面右上角的問號圖標，您可以通過 Slack 上的 #hunger-games 頻道聯繫我們。"
+      },
+      "page2": {
+        "title": "Questions Game",
+        "text1": "Does the food product belong to this brand?",
+        "text2": "Simply answer with a <strong>Yes/No</strong>! Don't know the answer? That's alright, just skip it.",
+        "text3": "You can also use your keyboard shortcuts: y,n and k.",
+        "text4": "You can <strong>filter</strong> the products based on country, brands, popularity and much more!",
+        "text5": "If you don't want to do this every single time, you can also <strong>save the filters</strong> by clicking on the star. Next time you come back, find the saved filters on the home page itself"
+      },
+      "page3": {
+        "title": "Logos Game",
+        "text1": "Another popular game is the logos game where you have to <strong>select all the logos</strong> you feel are the same.",
+        "text2": "As shown in the example, once you select all the similar logos, just type their value and select where it is a brand, a label or something else. It's that simple!"
+      },
+      "page4": {
+        "title": "Eco-Score Questions Game",
+        "text1": "Help us finish the remaining questions in the most high priority labels!",
+        "text2": "These cards are linked to labels used in the computation of the Eco-Score.",
+        "text3": "<strong>What is Eco-Score?</strong>",
+        "text4": "Eco-Score captures the total environmental footprint, making it easier for consumers to compare products and decide which is better for the environment."
+      },
+      "page5": {
+        "title": "設定",
+        "text1": "Set your preferred language, and report issues from our settings page.",
+        "text2": "If you're a developer, you can also explore our database content using our dev mode."
+      },
+      "page6": {
+        "title": "Tour",
+        "text1": "Got stuck somewhere? Want to take the tour again?",
+        "text2": "Just click on the question mark and start the journey again!"
+      }
+    },
+    "logos": {
+      "page1": {
+        "title": "選項",
+        "text1": "Select the crops of a same logo by clicking on them",
+        "text2": "Selected logos go to the top of the page, you can unselect them by clicking again on them"
+      },
+      "page2": {
+        "title": "警告",
+        "text1": "If the crop contains multiple logos, do not select it.",
+        "text2": "If the crop contains only a partial part of a logo, you can select it."
+      },
+      "page3": {
+        "title": "驗證",
+        "text1": "Indicate the type of logo (label, brand, QRcode, ...)",
+        "text2": "If it is a label or a brand logo, indicate which one it is",
+        "text3": "Now you can submit your selection",
+        "text4": "謝謝您！:D"
+      }
+    },
+    "previous": "上一步",
+    "next": "下一個",
+    "close": "關閉"
+  },
+  "nutrition": {
+    "instructions": {
+      "cropTheTable": "Crop the image to simplify your annotation",
+      "verifyNutrimentDetected": "Indicate if the nutriment detected is correct",
+      "selectMissingNutriments": "Add missing nutriments (you can click even if the word has no box)",
+      "selectValue": "選取欲查看營養值的成分："
+    },
+    "steps": {
+      "1": "裁切",
+      "2": "特殊值",
+      "3": "Nutriments Selection",
+      "4": "Values Selection"
+    },
+    "loading": "載入中...",
+    "unknown_brand": "Brand Unknown",
+    "value_missing": "You forgot to input a value.",
+    "next": "Next step",
+    "prev": "Prev step",
+    "skip": "Skip this product",
+    "validate": "Validate Table",
+    "unselect_picture": "No nutrition info",
+    "basis": "data for: ",
+    "servingSize": "serving size",
+    "value": "值",
+    "unit": "單位",
+    "nutriments": {
+      "nutriment_energy-kj": "Energy (kJ)",
+      "nutriment_energy-kcal": "Energy (kCal)",
+      "nutriment_fat": "脂肪",
+      "nutriment_saturated-fat": "飽和脂肪",
+      "nutriment_carbohydrates": "碳水化合物",
+      "nutriment_sugars": "Sugar",
+      "nutriment_proteins": "Protein content",
+      "nutriment_fiber": "Fibres",
+      "nutriment_salt": "鹽",
+      "nutriment_sodium": "鈉"
+    },
+    "history": {
+      "title": "Session History",
+      "status": "狀態",
+      "product name": "product name",
+      "view": "view page",
+      "edit": "edit page",
+      "SKIP": "已忽略",
+      "VALIDATED": "edited",
+      "WRONG_IMAGE": "unselected picture",
+      "close": "關閉",
+      "open": "open history"
+    }
+  },
+  "notfound": {
+    "image_alt": "404 not found",
+    "nopage": "Whoops! The page you're looking for can't be found.",
+    "redirect1": "Want to play some games?",
+    "redirect2": "Click here"
+  },
+  "nutriscore": {
+    "image_alt": "cropped image",
+    "label": "Annotate Nutri-Score logo detection by batch.",
+    "description": "To do so, select all the images showing the correct/wrong Nutri-Score value ({{label}}), and click on the bottom buttons to say if you selected a set correct or wrong ones.",
+    "images_remaining": "Still {{remaining}} to annotate",
+    "image_sizes": "Image sizes",
+    "zoom_on_logo": "Zoom on logo",
+    "select_all": "選取全部",
+    "deselect_all": "取消選取全部",
+    "incorrect": "Wrong",
+    "correct": "Correct ({{label}})"
+  },
+  "eco-score": {
+    "description": "Here is a summary of questions that could improve Eco-Score computation",
+    "countryLabel": "地區"
+  },
+  "ingredients": {
+    "description": "This game allows you to validate the pre-selection of images of ingredients lists in various languages for a product, and validate the extracted ingredients."
+  },
+  "footer": {
+    "appStore": {
+      "title": "App Store",
+      "subtitle": "Download on the"
+    },
+    "playStore": {
+      "title": "Play Store",
+      "subtitle": "Get it on"
+    },
+    "microsoft": {
+      "title": "Microsoft",
+      "subtitle": "Get it from"
+    },
+    "androidAPK": {
+      "title": "Android APK",
+      "subtitle": "下載"
+    }
+  }
+}
