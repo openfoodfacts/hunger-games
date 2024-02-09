@@ -138,7 +138,7 @@ const offService = {
       page_size: pageSize.toString(),
       json: "true",
       action: "process",
-      fields,
+      ...(fields === "all" ? {} : { fields }),
     };
     filters.forEach((filterItem, index) => {
       // Expected objects
@@ -168,9 +168,7 @@ const offService = {
       code,
       [`ingredients_text${lang ? `_${lang}` : ""}`]: text,
     });
-    axios.post(`${OFF_URL}/cgi/product_jqm2.pl?${urlParams.toString()}`, {
-      withCredentials: true,
-    });
+    return `${OFF_URL}/cgi/product_jqm2.pl?${urlParams.toString()}`;
   },
 
   async getIngedrientParsing(editionParams: { text: string; lang: string }) {

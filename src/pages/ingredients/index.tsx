@@ -16,11 +16,9 @@ import useData from "./useData";
 import ImageAnnotation from "./ImageAnnotation";
 
 function ProductInterface(props) {
-  const {
-    product: { selectedImages, product_name, code },
-    next,
-  } = props;
+  const { product, next } = props;
 
+  const { selectedImages, product_name, code } = product;
   const [imageTab, setImageTab] = React.useState(selectedImages[0].countryCode);
 
   React.useEffect(() => {
@@ -71,6 +69,8 @@ function ProductInterface(props) {
                     <ImageAnnotation
                       fetchDataUrl={fetchDataUrl}
                       code={code as string}
+                      imageLang={countryCode}
+                      offText={product[`ingredients_text_${countryCode}`] ?? ""}
                     />
                   </Stack>
                 </TabPanel>
