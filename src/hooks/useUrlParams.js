@@ -50,7 +50,10 @@ export const convertObjectParamsToUrlParams = (
   const urlParams = new URLSearchParams(window.location.search);
 
   Object.keys(parameters).forEach((key) => {
-    if (JSON.stringify(parameters[key]) !== urlParams.get(key)) {
+    if (
+      JSON.stringify(parameters[key]) !== urlParams.get(key) &&
+      parameters[key] !== ""
+    ) {
       urlParams.set(key, parameters[key]);
     }
   });
