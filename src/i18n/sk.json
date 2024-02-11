@@ -77,7 +77,7 @@
     "remaining_annotations": "Zostávajúce otázky",
     "annotated_annotations": "Komentovať",
     "filters": {
-      "active_filter_number": "+{{count}} filters",
+      "active_filter_number": "+{{count}} filtrov",
       "active_filter_number_one": "+{{count}} filter",
       "active_filter_number_zero": "bez filtra",
       "short_label": {
@@ -120,178 +120,178 @@
   },
   "menu": {
     "title": "Hunger Games",
-    "games": "Games",
+    "games": "Hry",
     "questions": "Otázky",
     "logos": "Logá",
     "logos-annotation": "Logos annotation",
-    "logos-search": "Logos search",
+    "logos-search": "Vyhľadávanie log",
     "logos-product-search": "Annotation per products",
     "logos-deep-search": "Infinite annotation",
-    "manage": "Manage",
-    "insights": "Insights",
-    "nutritions": "Nutrition facts",
+    "manage": "Spravovať",
+    "insights": "Insight",
+    "nutritions": "Nutričné hodnoty",
     "settings": "Nastavenia",
     "eco-score": "Eko-skóre",
     "dashboard": "Logos dashboard",
-    "tour": "Show tour",
-    "logged_in_user": "Logged as {{userName}}",
-    "log_in": "Click to login"
+    "tour": "Zobraziť prehliadku",
+    "logged_in_user": "Prihlásený ako {{userName}}",
+    "log_in": "Kliknutím sa prihláste"
   },
   "insights": {
-    "insights": "Insights",
+    "insights": "Insight",
     "barcode": "Čiarový kód",
-    "barcode_placeholder": "barcode",
-    "value_tag": "Value tag",
+    "barcode_placeholder": "čiarový kód",
+    "value_tag": "Značka",
     "value_placeholder": "ex: en:mueslis, bjorg,...",
-    "type": "Type",
+    "type": "Druhy",
     "annotated": "Komentovať",
-    "annotation": "Annotation",
-    "not_annotated": "Not annotated",
-    "all": "All",
+    "annotation": "Poznámky",
+    "not_annotated": "Bez poznámok ",
+    "all": "Všetky",
     "label": "Štítok",
-    "product_weight": "Product weight",
+    "product_weight": "Hmotnosť výrobku",
     "category": "Kategória",
-    "expiration_date": "Expiration date",
+    "expiration_date": "Dátum spotreby",
     "packager_code": "Packager code",
-    "skipped": "Skipped (-1)",
-    "rejected": "Rejected (0)",
-    "accepted": "Accepted (1)",
+    "skipped": "Preskočené (-1)",
+    "rejected": "Odmietnuté (0)",
+    "accepted": "Prijaté (1)",
     "search": "Vyhľadať",
-    "count": "Count",
+    "count": "Počet",
     "id": "Id",
-    "value": "Value",
-    "created_at": "Created at",
-    "completed_at": "Completed at",
-    "automatic": "Automatic",
+    "value": "Hodnota",
+    "created_at": "Vytvorené:",
+    "completed_at": "Dokončené",
+    "automatic": "Automatický",
     "human_required": "Human required",
-    "edit_product": "Open product edit",
-    "view_product": "Open product page",
+    "edit_product": "Otvoriť úpravu produktu",
+    "view_product": "Otvorte stránku produktu",
     "view_crops_for_this_product": "Annotate product logos"
   },
   "logos": {
     "annotation": "Annotation: ",
     "annotations": "Logo annotations",
-    "task_description": "Select all logos that are exactly the same, and give them a name like \"en:EU Organic\" and a type like \"label\".",
-    "select_all": "Select all",
-    "unselect_all": "Unselect all",
-    "distance": "Distance:",
-    "value": "Value",
-    "submit": "Submit",
-    "type": "Type",
+    "task_description": "Vyberte všetky logá, ktoré sú úplne rovnaké, a pomenujte ich ako „en:EU Organic“ a typ ako „štítok“.",
+    "select_all": "Označiť všetko",
+    "unselect_all": "Odznačiť všetko",
+    "distance": "Vzdialenosť",
+    "value": "Hodnota",
+    "submit": "Potvrdiť",
+    "type": "Druhy",
     "label": "Štítok",
     "brand": "Značka",
     "packager_code": "Packager code",
     "packaging": "Balenie",
-    "qr_code": "QR code",
+    "qr_code": "QR kód",
     "category": "Kategória",
     "nutrition_label": "Nutrition label",
     "no_logo": "Not a logo",
     "store": "Predajňa",
-    "detail": "Logo detail",
-    "id": "Logo ID:",
-    "barcode": "Barcode:",
-    "full_image": "Full image",
-    "update": "Update",
-    "no_found": "No logo found",
+    "detail": "Detail loga",
+    "id": "ID loga:",
+    "barcode": "Čiarový kód :",
+    "full_image": "Celý obrázok",
+    "update": "Aktualizovať",
+    "no_found": "Nebolo nájdené žiadne logo",
     "search": "Vyhľadať",
-    "number_of_results": "Number of results:",
+    "number_of_results": "Počet výsledkov:",
     "loading": "Načítavam…",
     "refresh": "Obnoviť",
-    "search_specific": "Search specific logo",
-    "load_more": "Load more",
-    "no_results": "No logo found",
+    "search_specific": "Vyhľadajte konkrétne logo",
+    "load_more": "Načítať ďalšie",
+    "no_results": "Nebolo nájdené žiadne logo",
     "result_count": "Shows {{showing}} on {{available}} available",
     "flag": "Niečo je zle? Nahlásiť/označiť obrázok!",
     "unflag": "Zrušiť označenie obrázka",
-    "crop_image_title": "crop of the logo",
-    "no_more_questions": "No more questions about this logo. You can try to find more logos with the following game.",
+    "crop_image_title": "výrez loga",
+    "no_more_questions": "Žiadne ďalšie otázky týkajúce sa tohto loga. Môžete sa pokúsiť nájsť ďalšie logá pomocou nasledujúcej hry.",
     "loading_messages": {
-      "pending_reference_logos": "We are loading some logos examples to initialise the search",
+      "pending_reference_logos": "Načítavame niekoľko príkladov log na inicializáciu vyhľadávania",
       "failed_reference_logos": "We did not find any logos with this annotation. Try to use the following game to annotate some of them."
     },
     "deep_search": {
-      "title": "Logo search",
+      "title": "Vyhľadávanie loga",
       "description": "Select a logo you want to look for, and let's go to catch them all. For every logo you annotate, we will fetch it's neighbors such that you might never stop to annotate. (Press Shift to select range of logos)",
-      "ref_logos": "Reference logos (logo already annotated with this value)",
+      "ref_logos": "Referenčné logá (logo už označené touto hodnotou)",
       "remaining": "Remaining to annotate",
-      "select_all": "Select All",
-      "unselect_all": "Deselect All"
+      "select_all": "Vybrať všetko",
+      "unselect_all": "Odznačiť všetko"
     }
   },
   "settings": {
     "settings": "Nastavenia",
-    "language": "Languages",
+    "language": "Jazyk",
     "save": "Uložiť",
-    "reportIssue": "Found a bug? Please let us know.",
-    "dev_mode_title": "To get more options, activate the dev mode",
-    "dev_mode_label": "Dev Mode",
-    "dev_page_toggle": "Show {{name}} page",
-    "join_community": "Join the community",
-    "text1": "Open Food Facts is a collaborative project built by tens of thousands of volunteers and managed by a non-profit organization with 8 employees. We need your donations to fund the Open Food Facts 2024 budget and to continue to develop the project.",
-    "thank_you": "Thank you",
+    "reportIssue": "Našli ste chybu? Prosím dajte nám vedieť.",
+    "dev_mode_title": "Ak chcete získať viac možností, aktivujte režim vývojára",
+    "dev_mode_label": "Vývojársky režim",
+    "dev_page_toggle": "Zobraziť {{name}} stránku",
+    "join_community": "Pripojiť sa ku komunite",
+    "text1": "Open Food Facts je spoločný projekt vybudovaný desiatkami tisíc dobrovoľníkov a riadený neziskovou organizáciou s 8 zamestnancami. Potrebujeme vaše dary na financovanie rozpočtu Open Food Facts 2024 a na pokračovanie v rozvoji projektu.",
+    "thank_you": "Ďakujeme",
     "donate": "Darovať",
     "join_the_community": {
-      "discover_our": "Discover our ",
-      "code_of_conduct": "Code of conduct ",
-      "join_us_on": "Join us on ",
-      "forum": "Forum",
-      "subscribe_to_our": "Subscribe to our ",
+      "discover_our": "Objavte naše ",
+      "code_of_conduct": "Zásady správania sa",
+      "join_us_on": "Pridajte sa k nám ",
+      "forum": "Fórum",
+      "subscribe_to_our": "Prihláste sa na odber nášho ",
       "newsletter": "newsletter"
     },
-    "discover_the_project": "Discover the project",
-    "Who_we_are": "Who we are",
-    "Vision_Mission_Values_and_Programs": "Vision, Mission, Values and Programs",
-    "FAQS": "FAQS",
+    "discover_the_project": "Objavte projekt",
+    "Who_we_are": "Kto sme",
+    "Vision_Mission_Values_and_Programs": "Vízia, poslanie, hodnoty a programy",
+    "FAQS": "FAQ",
     "open_Food_Facts_blog": "Open Food Facts blog",
     "Press": "Press",
     "Open_Food_Facts_wiki": "Open Food Facts wiki (en)",
-    "Translators": "Translators",
-    "Partners": "Partners",
-    "Open_Beauty_Facts": "Open Beauty Facts - Cosmetics",
-    "text2": "A collaborative, free and open database of food products from around the world."
+    "Translators": "Prekladatelia",
+    "Partners": "Partneri",
+    "Open_Beauty_Facts": "Open Beauty Facts – Kozmetika",
+    "text2": "Spoločná, bezplatná a otvorená databáza potravinárskych výrobkov z celého sveta."
   },
   "helper": {
     "welcome": {
       "page1": {
-        "title": "Welcome to Hunger Games",
-        "text1": "Hunger Games is a collection of mini-games that help contribute to Open Food Facts in many ways. You can play our really exciting games from anywhere. Here is a guided tour of the entire website which will get you started.",
-        "text2": "Make sure to login to the Open Food Facts website to get credit for your contributions. If you make a mistake, please take the time to correct it by heading to the website.",
-        "text3": "In case of any doubt about the games, click on the question mark icon at the top right of the page, and you can reach us on slack at the #hunger-games channel"
+        "title": "Vitajte v Hunger Games",
+        "text1": "Hunger Games je zbierka minihier, ktoré prispievajú k Open Food Facts mnohými spôsobmi. Naše skutočne vzrušujúce hry môžete hrať odkiaľkoľvek. Tu je sprievodca celým webom, ktorý vám pomôže začať.",
+        "text2": "Nezabudnite sa prihlásiť na webovú stránku Open Food Facts, aby ste získali kredit za svoje príspevky. Ak urobíte chybu, nájdite si čas na jej opravu a prejdite na webovú stránku.",
+        "text3": "V prípade akýchkoľvek pochybností o hrách kliknite na ikonu otáznika v pravej hornej časti stránky a môžete nás kontaktovať na slacku na kanáli #hunger-games"
       },
       "page2": {
-        "title": "Questions Game",
-        "text1": "Does the food product belong to this brand?",
-        "text2": "Simply answer with a <strong>Yes/No</strong>! Don't know the answer? That's alright, just skip it.",
-        "text3": "You can also use your keyboard shortcuts: y,n and k.",
-        "text4": "You can <strong>filter</strong> the products based on country, brands, popularity and much more!",
-        "text5": "If you don't want to do this every single time, you can also <strong>save the filters</strong> by clicking on the star. Next time you come back, find the saved filters on the home page itself"
+        "title": "Hra s otázkami",
+        "text1": "Patrí potravina pod túto značku?",
+        "text2": "Jednoducho odpovedzte <strong>Áno/Nie</strong>! Nevieš odpoveď na otázku? Nevadí, tak ju preskoč.",
+        "text3": "Môžete tiež použiť klávesové skratky: y, n a k.",
+        "text4": "Môžete <strong>filtrovať</strong> produkty podľa krajiny, značiek, popularity a oveľa viac!",
+        "text5": "Ak to nechcete robiť zakaždým, môžete tiež <strong>uložiť filtre</strong> kliknutím na hviezdičku. Keď sa nabudúce vrátite, nájdite uložené filtre na domovskej stránke"
       },
       "page3": {
-        "title": "Logos Game",
-        "text1": "Another popular game is the logos game where you have to <strong>select all the logos</strong> you feel are the same.",
-        "text2": "As shown in the example, once you select all the similar logos, just type their value and select where it is a brand, a label or something else. It's that simple!"
+        "title": "Hra s logami",
+        "text1": "Ďalšou populárnou hrou je hra s logami, kde musíte <strong>vybrať všetky logá</strong> , o ktorých máte pocit, že sú rovnaké.",
+        "text2": "Ako je znázornené v príklade, akonáhle vyberiete všetky podobné logá, stačí zadať ich hodnotu a vybrať, kde ide o značku, štítok alebo niečo iné. Je to také jednoduché!"
       },
       "page4": {
-        "title": "Eco-Score Questions Game",
-        "text1": "Help us finish the remaining questions in the most high priority labels!",
-        "text2": "These cards are linked to labels used in the computation of the Eco-Score.",
-        "text3": "<strong>What is Eco-Score?</strong>",
-        "text4": "Eco-Score captures the total environmental footprint, making it easier for consumers to compare products and decide which is better for the environment."
+        "title": "Hra s otázkami o ekologickom skóre",
+        "text1": "Pomôžte nám dokončiť zostávajúce otázky v štítkoch s najvyššou prioritou!",
+        "text2": "Tieto karty sú spojené so štítkami používanými pri výpočte ekologického skóre.",
+        "text3": "<strong>Čo je to ekologické skóre?</strong>",
+        "text4": "Eco-Score zachytáva celkovú environmentálnu stopu, vďaka čomu môžu spotrebitelia ľahšie porovnávať produkty a rozhodovať sa, čo je pre životné prostredie lepšie."
       },
       "page5": {
         "title": "Nastavenia",
-        "text1": "Set your preferred language, and report issues from our settings page.",
-        "text2": "If you're a developer, you can also explore our database content using our dev mode."
+        "text1": "Nastavte si preferovaný jazyk a nahláste problémy na našej stránke nastavení.",
+        "text2": "Ak ste vývojár, môžete tiež preskúmať obsah našej databázy pomocou nášho režimu pre vývojárov."
       },
       "page6": {
-        "title": "Tour",
-        "text1": "Got stuck somewhere? Want to take the tour again?",
+        "title": "Prehliadka",
+        "text1": "Zasekli ste sa? Chcete absolvovať prehliadku znova?",
         "text2": "Just click on the question mark and start the journey again!"
       }
     },
     "logos": {
       "page1": {
-        "title": "Selection",
+        "title": "Výber",
         "text1": "Select the crops of a same logo by clicking on them",
         "text2": "Selected logos go to the top of the page, you can unselect them by clicking again on them"
       },
@@ -301,11 +301,11 @@
         "text2": "If the crop contains only a partial part of a logo, you can select it."
       },
       "page3": {
-        "title": "Validate",
-        "text1": "Indicate the type of logo (label, brand, QRcode, ...)",
-        "text2": "If it is a label or a brand logo, indicate which one it is",
-        "text3": "Now you can submit your selection",
-        "text4": "Thank you :)"
+        "title": "Potvrdiť",
+        "text1": "Uveďte typ loga (štítok, značka, QRcode, ...)",
+        "text2": "Ak ide o štítok alebo logo značky, uveďte, ktoré to je",
+        "text3": "Teraz môžete odoslať svoj výber",
+        "text4": "Ďakujem :)"
       }
     },
     "previous": "Prev",
@@ -335,7 +335,7 @@
     "unselect_picture": "No nutrition info",
     "basis": "data for: ",
     "servingSize": "serving size",
-    "value": "Value",
+    "value": "Hodnota",
     "unit": "Unit",
     "nutriments": {
       "nutriment_energy-kj": "Energy (kJ)",
@@ -352,53 +352,53 @@
     "history": {
       "title": "Session History",
       "status": "status",
-      "product name": "product name",
-      "view": "view page",
-      "edit": "edit page",
-      "SKIP": "ignored",
-      "VALIDATED": "edited",
-      "WRONG_IMAGE": "unselected picture",
-      "close": "close",
-      "open": "open history"
+      "product name": "Názov produktu",
+      "view": "Zobraziť stránku",
+      "edit": "Upraviť stránku",
+      "SKIP": "Ignorované",
+      "VALIDATED": "upravené",
+      "WRONG_IMAGE": "nevybraný obrázok",
+      "close": "zatvoriť",
+      "open": "otvoriť históriu"
     }
   },
   "notfound": {
-    "image_alt": "404 not found",
-    "nopage": "Whoops! The page you're looking for can't be found.",
-    "redirect1": "Want to play some games?",
-    "redirect2": "Click here"
+    "image_alt": "404 nenájdené",
+    "nopage": "Stránku, ktorú hľadáte, nie je možné nájsť",
+    "redirect1": "Chcete si zahrať nejaké hry?",
+    "redirect2": "Kliknite sem"
   },
   "nutriscore": {
-    "image_alt": "cropped image",
-    "label": "Annotate Nutri-Score logo detection by batch.",
-    "description": "To do so, select all the images showing the correct/wrong Nutri-Score value ({{label}}), and click on the bottom buttons to say if you selected a set correct or wrong ones.",
+    "image_alt": "orezaný obrázok",
+    "label": "Označte detekciu loga Nutri-Score podľa šarže.",
+    "description": "Ak to chcete urobiť, vyberte všetky obrázky zobrazujúce správnu/nesprávnu hodnotu Nutri-Score ({{label}}) a kliknutím na spodné tlačidlá povedzte, či ste vybrali sadu správnych alebo nesprávnych.",
     "images_remaining": "Still {{remaining}} to annotate",
-    "image_sizes": "Image sizes",
-    "zoom_on_logo": "Zoom on logo",
-    "select_all": "Select all",
-    "deselect_all": "Unselect all",
-    "incorrect": "Wrong",
-    "correct": "Correct ({{label}})"
+    "image_sizes": "Veľkosť obrázka",
+    "zoom_on_logo": "Priblížiť logo",
+    "select_all": "Označiť všetko",
+    "deselect_all": "Odznačiť všetko",
+    "incorrect": "Nesprávne",
+    "correct": "Správne ({{label}})"
   },
   "eco-score": {
-    "description": "Here is a summary of questions that could improve Eco-Score computation",
-    "countryLabel": "Country"
+    "description": "Tu je súhrn otázok, ktoré by mohli zlepšiť výpočet ekologického skóre",
+    "countryLabel": "Krajina"
   },
   "ingredients": {
-    "description": "This game allows you to validate the pre-selection of images of ingredients lists in various languages for a product, and validate the extracted ingredients."
+    "description": "Táto hra vám umožňuje overiť predbežný výber obrázkov zoznamov prísad v rôznych jazykoch pre produkt a overiť extrahované prísady."
   },
   "footer": {
     "appStore": {
       "title": "App Store",
-      "subtitle": "Download on the"
+      "subtitle": "Stiahnite si na"
     },
     "playStore": {
-      "title": "Play Store",
-      "subtitle": "Get it on"
+      "title": "Obchod Play",
+      "subtitle": "Pustite sa do toho"
     },
     "microsoft": {
       "title": "Microsoft",
-      "subtitle": "Get it from"
+      "subtitle": "Získajte to od"
     },
     "androidAPK": {
       "title": "Android APK",
