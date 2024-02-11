@@ -27,44 +27,44 @@
     "contribution_modal": {
       "title": "Váš príspevok je dôležitý",
       "information": "Hunger Games je snaha využiť výsledky nášho OCR a umelej inteligencie. Keď používate Hunger Games od Open Food Facts, zlepšujete celú našu databázu, čo pomáha komunite lepšie si vyberať jedlo. Zhromažďujeme vaše anotácie a používame ich na to, aby boli Open Food Facts presnejšie a efektívnejšie.",
-      "thank_you": "Thank you for helping us improve Open Food Facts so that more people can use it easily."
+      "thank_you": "Ďakujeme, že nám pomáhate zlepšovať Open Food Facts, aby ich mohlo jednoducho používať viac ľudí."
     },
     "statistics": {
       "title": "{{userName}} statistics:",
       "editorCount": {
         "title": "Editor",
-        "description": "Number of editions done"
+        "description": "Počet vykonaných úprav"
       },
       "contributorCount": {
         "title": "Prispievateľ",
-        "description": "Adding a new product"
+        "description": "Pridať nový produkt"
       },
       "photographerCount": {
-        "title": "Photographer",
-        "description": "Taking photos for a product"
+        "title": "Fotograf",
+        "description": "Fotografovanie produktu"
       }
     }
   },
   "flagged_images": {
-    "title": "Images flagged by users",
-    "loading": "Loading"
+    "title": "Obrázky nahlásené používateľmi",
+    "loading": "Načítava sa"
   },
   "questions": {
-    "category": "category",
+    "category": "Kategória",
     "categories": "Kategórie",
-    "label": "label",
+    "label": "Štítok",
     "labels": "Štítky",
-    "brand": "brand",
+    "brand": "značka",
     "brands": "Značky",
-    "packaging": "packaging",
+    "packaging": "balenie",
     "quantity": "Množstvo",
-    "insightTypeLabel": "Only shows",
+    "insightTypeLabel": "Zobraziť iba",
     "ingredients": "Ingrediencie",
     "product_weight": "hmotnosť výrobku",
     "popularity_sort": "Triediť podľa obľúbenosti",
-    "see_examples": "See examples of this ",
+    "see_examples": "Pozrite si príklady tohto ",
     "no": "Nie",
-    "skip": "Skip",
+    "skip": "Preskočiť",
     "yes": "Áno",
     "no_questions_remaining": "Žiadne zostávajúce otázky",
     "countries": "Krajiny",
@@ -72,51 +72,51 @@
     "edit": "Upraviť",
     "hide_images": "Skryť obrázky (rýchlejšie načítanie)",
     "display_images": "Zobrazovať obrázky",
-    "annotations": "Annotations",
+    "annotations": "Poznámky",
     "last_annotations": "Posledné anotácie",
-    "remaining_annotations": "Remaining questions",
-    "annotated_annotations": "Annotated",
+    "remaining_annotations": "Zostávajúce otázky",
+    "annotated_annotations": "Komentovať",
     "filters": {
       "active_filter_number": "+{{count}} filters",
       "active_filter_number_one": "+{{count}} filter",
-      "active_filter_number_zero": "no filter",
+      "active_filter_number_zero": "bez filtra",
       "short_label": {
-        "value": "value",
-        "country": "country",
-        "brand": "brand",
-        "popularity": "popularity",
-        "campaign": "camp"
+        "value": "hodnota",
+        "country": "krajina",
+        "brand": "značka",
+        "popularity": "obľúbenosť",
+        "campaign": "tábor"
       },
       "long_label": {
-        "type": "Question Type",
-        "value": "Proposed Value",
-        "country": "Product Country",
-        "brand": "Product Brand",
+        "type": "Typ otázky",
+        "value": "Navrhovaná hodnota",
+        "country": "Krajina produktu",
+        "brand": "Výrobca/značka",
         "popularity": "Triediť podľa obľúbenosti",
         "edit": "",
-        "campaign": "Campaign"
+        "campaign": "Kampane"
       },
       "placeholders": {
-        "value": "Value (Fanta, en:organic,...)",
-        "brand": "Auchan, Danone, Herta, ...",
-        "campaign": "Annotation campaigns"
+        "value": "Hodnota (Fanta, en:organic,...)",
+        "brand": "Auchan, Danone, Herta,...",
+        "campaign": "Anotačné kampane"
       },
       "actions": {
-        "edit": "Edit Filters",
+        "edit": "Upraviť filtre",
         "cancel": "Zrušiť",
         "apply": "Potvrdiť"
       }
     },
-    "other_questions": "Other questions",
-    "send": "Send",
-    "flag": "Something wrong? Report/flag the image!",
-    "unflag": "Unflag the image",
-    "reset_filters": "Reset filters",
+    "other_questions": "Ďalšie otázky",
+    "send": "Odoslať",
+    "flag": "Niečo je zle? Nahlásiť/označiť obrázok!",
+    "unflag": "Zrušiť označenie obrázka",
+    "reset_filters": "Zrušiť filtre",
     "log_in": "Prihlásenie",
     "sign_up": "Zaregistrovať sa",
     "login_title": "Make your annotation count",
-    "login_description": "You are not currently logged into Open Food Facts. To get your answers directly applied to products, and associated to your account, consider logging in to your Open Food Facts account, or creating one",
-    "please_wait_while_we_fetch_the_question": "Please wait while we fetch the question!"
+    "login_description": "Momentálne nie ste prihlásený do Open Food Facts. Ak chcete, aby boli vaše odpovede priamo aplikované na produkty a priradené k vášmu účtu, zvážte prihlásenie do svojho účtu Open Food Facts alebo vytvorenie účtu",
+    "please_wait_while_we_fetch_the_question": "Počkajte, kým načítame otázku!"
   },
   "menu": {
     "title": "Hunger Games",
@@ -144,7 +144,7 @@
     "value_tag": "Value tag",
     "value_placeholder": "ex: en:mueslis, bjorg,...",
     "type": "Type",
-    "annotated": "Annotated",
+    "annotated": "Komentovať",
     "annotation": "Annotation",
     "not_annotated": "Not annotated",
     "all": "All",
@@ -201,8 +201,8 @@
     "load_more": "Load more",
     "no_results": "No logo found",
     "result_count": "Shows {{showing}} on {{available}} available",
-    "flag": "Something wrong? Report/flag the image!",
-    "unflag": "Unflag the image",
+    "flag": "Niečo je zle? Nahlásiť/označiť obrázok!",
+    "unflag": "Zrušiť označenie obrázka",
     "crop_image_title": "crop of the logo",
     "no_more_questions": "No more questions about this logo. You can try to find more logos with the following game.",
     "loading_messages": {
