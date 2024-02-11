@@ -49,14 +49,26 @@ function ColorText({
   );
 
   let lastIndex = 0;
+
   return [
     ...flattendIngredients.map((ingredient, i) => {
-      const startIndex = text.indexOf(ingredient.text, lastIndex);
+      // Don't ask me why OFF use this specific character
+      const ingredientText = ingredient.text.replace("‚", ",");
+
+      console.log(ingredientText);
+      console.log(text.slice(lastIndex));
+      const startIndex = text.indexOf(ingredientText, lastIndex);
+      if (startIndex < 0) {
+        return null;
+      }
       const endIndex = startIndex + ingredient.text.length;
 
+      console.log(text.slice(lastIndex, endIndex));
+      console.log("");
       const prefix = text.slice(lastIndex, startIndex);
       const ingredientName = text.slice(startIndex, endIndex);
       lastIndex = endIndex;
+
       return (
         <React.Fragment key={i}>
           <span>{prefix}</span>
@@ -233,10 +245,11 @@ export function IngredientAnotation(props) {
           get parsing
         </LoadingButton>
         <Button
-          onClick={() => {
-            off.setIngedrient({ code, lang, text });
-          }}
+          component="a"
+          target="_blank"
+          href={text && off.setIngedrient({ code, lang, text })}
           variant="contained"
+          disabled={!text}
           color="success"
           fullWidth
         >

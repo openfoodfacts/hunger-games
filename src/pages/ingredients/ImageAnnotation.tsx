@@ -7,6 +7,8 @@ import { IngredientAnotation } from "./IngeredientDisplay";
 type ImageAnnotationProps = {
   fetchDataUrl: string;
   code: string;
+  imageLang: string;
+  offText: string;
 };
 
 type AnnotationProps = {
@@ -14,6 +16,8 @@ type AnnotationProps = {
   data: null | DataType;
   error: null | string;
   isLoading: boolean;
+  imageLang: string;
+  offText: string;
 };
 
 const splitText = (d: DataType) => {
@@ -37,49 +41,55 @@ const splitText = (d: DataType) => {
   }
   return rep;
 };
-function Annotation({ code, data, isLoading, error }: AnnotationProps) {
+function Annotation({
+  code,
+  data,
+  error,
+  imageLang,
+  offText,
+}: AnnotationProps) {
   const [showOCR, setShowOCR] = React.useState(false);
   const [editedState, setEditedState] = React.useState<
     null | DataType["detections"]
   >(null);
+  const [offEditedState, setOffEditedState] = React.useState<
+    DataType["detections"]
+  >({ [imageLang]: { text: offText, start: 0, end: 0, score: 0 } });
 
   React.useEffect(() => {
     setEditedState(data && data.detections);
   }, [data]);
 
-  if (editedState === null) {
-    return null;
-  }
-  if (isLoading) {
-    return <p>loading ...</p>;
-  }
-  if (error !== null) {
-    return (
-      <>
-        <p>An error occured X{"("}</p>
-        <p>{error}</p>
-      </>
-    );
-  }
-  if (Object.keys(editedState).length === 0) {
-    return <p>No ingredients found</p>;
-  }
+  const noIngredientFound =
+    editedState !== null && Object.keys(editedState).length === 0;
 
   return (
     <React.Fragment>
-      {Object.entries(editedState).map(
-        ([lang, { start, end, score, text }]) => (
-          <IngredientAnotation
-            key={`${start}-${end}`}
-            lang={lang}
-            score={score}
-            code={code}
-            setEditedState={setEditedState}
-            text={text}
-            detectedText={data.detections[lang].text}
-          />
-        ),
-      )}
+      <IngredientAnotation
+        lang={imageLang}
+        score={'user'}
+        code={code}
+        setEditedState={setOffEditedState}
+        text={offEditedState[imageLang].text}
+        detectedText={offText}
+      />
+      {error !== null && <p>An arror occured</p>}
+      {noIngredientFound && <p>No ingredients found</p>}
+      {editedState === null
+        ? null
+        : Object.entries(editedState).map(
+            ([lang, { start, end, score, text }]) => (
+              <IngredientAnotation
+                key={`${start}-${end}`}
+                lang={lang}
+                score={score}
+                code={code}
+                setEditedState={setEditedState}
+                text={text}
+                detectedText={data.detections[lang].text}
+              />
+            ),
+          )}
       {showOCR && (
         <p>
           {splitText(data).map(({ isIngredient, text }, i) => (
@@ -113,12 +123,21 @@ function Annotation({ code, data, isLoading, error }: AnnotationProps) {
 export default function ImageAnnotation({
   fetchDataUrl,
   code,
+  imageLang,
+  offText,
 }: ImageAnnotationProps) {
   const [data, getData, isLoading, error] = useRobotoffPrediction(fetchDataUrl);
 
   return (
     <Box sx={{ px: 1, width: "50%" }}>
-      <Annotation data={data} isLoading={isLoading} error={error} code={code} />
+      <Annotation
+        data={data}
+        isLoading={isLoading}
+        error={error}
+        code={code}
+        imageLang={imageLang}
+        offText={offText}
+      />
       <Button
         fullWidth
         disabled={isLoading || error !== null || data !== null}

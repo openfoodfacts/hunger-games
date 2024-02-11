@@ -30,6 +30,7 @@ const formatData = (product) => {
     product_name,
     ingredient,
     images,
+    ...other
   } = product;
 
   const baseImageUrl = image_ingredients_url.replace(/ingredients.*/, "");
@@ -64,7 +65,12 @@ const formatData = (product) => {
         geometry: images[key].geometry,
       };
     });
-
+  const ingredientTexts = {};
+  Object.entries(other).forEach(([key, value]) => {
+    if (key.startsWith("ingredient")) {
+      ingredientTexts[key] = value;
+    }
+  });
   return {
     code,
     lang,
@@ -72,6 +78,7 @@ const formatData = (product) => {
     image_ingredients_url,
     product_name,
     ingredient,
+    ...ingredientTexts,
     // images,
   };
 };
@@ -99,8 +106,7 @@ export default function useData(): [any[], () => void, boolean] {
           page,
           pageSize: 25,
           filters: imagesToRead,
-          fields:
-            "code,lang,image_ingredients_url,product_name,ingredient,images",
+          fields: "all",
         });
         if (isValid) {
           const rep = products
