@@ -26,7 +26,7 @@ import StarBorderIcon from "@mui/icons-material/StarBorder";
 import { useDispatch, useSelector } from "react-redux";
 import { useTranslation } from "react-i18next";
 
-import { useFilterSearch } from "../../components/QuestionFilter/useFilterSearch";
+import { useFavorite } from "../../components/QuestionFilter/useFavorite";
 import LabelFilter from "../../components/QuestionFilter/LabelFilter";
 import brands from "../../assets/brands.json";
 import countries from "../../assets/countries.json";
@@ -36,20 +36,21 @@ import {
 } from "../../components/QuestionFilter/const";
 import { capitaliseName } from "../../utils";
 import { filterStateSelector, updateFilter } from "./store";
+import { useSearchParams } from "react-router-dom";
 
-const getCountryObject = (countryId) =>
-  countries.find((country) => country.id === countryId) ?? null;
-
-const getChipsParams = (filterState, setFilterState, t) =>
+const getChipsParams = (filterState, setSearchParams, t) =>
   [
     {
       key: "valueTag",
       display: !!filterState?.valueTag,
-      label: `${t("questions.filters.short_label.value")}: ${
-        filterState?.valueTag
-      }`,
+      label: `${t(
+        "questions.filters.short_label.value",
+      )}: ${filterState?.valueTag}`,
       onDelete: () => {
-        setFilterState({ valueTag: "" });
+        setSearchParams((prev) => {
+          prev.delete("value_tag");
+          return prev;
+        });
       },
     },
 
@@ -60,18 +61,24 @@ const getChipsParams = (filterState, setFilterState, t) =>
         filterState?.countryFilter,
       )}`,
       onDelete: () => {
-        setFilterState({ countryFilter: "" });
+        setSearchParams((prev) => {
+          prev.delete("country");
+          return prev;
+        });
       },
     },
 
     {
       key: "brandFilter",
       display: !!filterState?.brandFilter,
-      label: `${t("questions.filters.short_label.brand")}: ${
-        filterState?.brandFilter
-      }`,
+      label: `${t(
+        "questions.filters.short_label.brand",
+      )}: ${filterState?.brandFilter}`,
       onDelete: () => {
-        setFilterState({ brandFilter: "" });
+        setSearchParams((prev) => {
+          prev.delete("brand");
+          return prev;
+        });
       },
     },
     {
@@ -79,22 +86,23 @@ const getChipsParams = (filterState, setFilterState, t) =>
       display: !!filterState?.sortByPopularity,
       label: t("questions.filters.short_label.popularity"),
       onDelete: () => {
-        setFilterState({
-          sortByPopularity: false,
+        setSearchParams((prev) => {
+          prev.set("sorted", "false");
+          return prev;
         });
       },
     },
     {
       key: "campaign",
       display: !!filterState?.campaign,
-      label: `${t("questions.filters.short_label.campaign")}: ${
-        filterState?.campaign
-      }`,
+      label: `${t(
+        "questions.filters.short_label.campaign",
+      )}: ${filterState?.campaign}`,
       onDelete: () => {
-        setFilterState((state) => ({
-          ...state,
-          campaign: "",
-        }));
+        setSearchParams((prev) => {
+          prev.delete("campaign");
+          return prev;
+        });
       },
     },
   ].filter((item) => item.display);
@@ -102,6 +110,7 @@ const getChipsParams = (filterState, setFilterState, t) =>
 export const QuestionFilter = () => {
   const { t } = useTranslation();
   const theme = useTheme();
+  const [searchParams, setSearchParams] = useSearchParams();
   const isDesktop = useMediaQuery(theme.breakpoints.up("md"));
 
   const [isOpen, setIsOpen] = React.useState(false);
@@ -109,123 +118,75 @@ export const QuestionFilter = () => {
   const dispatch = useDispatch();
   const filterState = useSelector(filterStateSelector);
 
-  const [exposedParameters, setSearchParams, isFavorite, toggleFavorite] =
-    useFilterSearch();
-
-  if (
-    Object.keys(exposedParameters).some(
-      (key) => exposedParameters[key] !== filterState[key],
-    )
-  ) {
-    dispatch(updateFilter(exposedParameters));
-  }
-
-  const updateSearchParams = (newParams) => {
-    setSearchParams(newParams);
+  const updateFilterState = (newParams) => {
     dispatch(updateFilter(newParams));
   };
-  // internal values
-  const [innerInsightType, setInnerInsightType] = React.useState(
-    filterState?.insightType,
-  );
-  const [innerValueTag, setInnerValueTag] = React.useState(
-    filterState?.valueTag,
-  );
-  const [innerCountryFilter, setInnerCountryFilter] = React.useState(() =>
-    filterState?.countryFilter
-      ? getCountryObject(filterState?.countryFilter)
-      : null,
-  );
-  const [innerBrandFilter, setInnerBrandFilter] = React.useState(
-    filterState?.brandFilter,
-  );
-  const [innerSortByPopularity, setInnerSortByPopularity] = React.useState(
-    filterState?.sortByPopularity,
-  );
-  const [innerCampaign, setInnerCampaign] = React.useState(
-    filterState?.campaign,
+
+  const [isFavorite, toggleFavorite] = useFavorite(filterState);
+
+  const innerInsightType = searchParams.get("type") ?? "";
+  const innerValueTag = searchParams.get("value_tag") ?? "";
+  const innerCountryFilter = searchParams.get("country") ?? "";
+
+  const innerCountryObject = React.useMemo(
+    () =>
+      countries.find((country) => country.id === innerCountryFilter) ?? null,
+    [innerCountryFilter],
   );
 
+  const innerBrandFilter = searchParams.get("brand") ?? "";
+  const innerSortByPopularity = searchParams.get("sorted") ?? "true";
+  const innerCampaign = searchParams.get("campaign") ?? "";
+
+  React.useEffect(() => {
+    if (!isOpen) {
+      updateFilterState({
+        insightType: innerInsightType,
+        valueTag: innerValueTag,
+        countryFilter: innerCountryFilter,
+        brandFilter: innerBrandFilter,
+        sortByPopularity: innerSortByPopularity !== "false",
+        campaign: innerCampaign,
+      });
+    }
+  }, [
+    isOpen,
+    searchParams,
+    innerInsightType,
+    innerValueTag,
+    innerCountryFilter,
+    innerBrandFilter,
+    innerSortByPopularity,
+    innerCampaign,
+  ]);
+
   const resetFilter = () => {
-    setInnerInsightType(filterState?.insightType);
-    setInnerValueTag(filterState?.valueTag);
-    setInnerCountryFilter(
-      filterState?.countryFilter
-        ? getCountryObject(filterState?.countryFilter)
-        : null,
-    );
-    setInnerBrandFilter(filterState?.brandFilter);
-    setInnerSortByPopularity(filterState?.sortByPopularity);
-    setInnerCampaign(filterState?.campaign);
+    setSearchParams((prev) => {
+      prev.set("type", filterState?.insightType);
+      prev.set("value_tag", filterState?.valueTag);
+      prev.set("country", filterState?.countryFilter ?? "");
+      prev.set("brand", filterState?.brandFilter);
+      prev.set("sorted", Boolean(filterState?.sortByPopularity).toString());
+      prev.set("campaign", filterState?.campaign);
+      return prev;
+    });
     setIsOpen(false);
   };
 
   const applyFilter = () => {
-    updateSearchParams({
+    updateFilterState({
       insightType: innerInsightType,
       valueTag: innerValueTag,
-      countryFilter: innerCountryFilter.id,
+      countryFilter: innerCountryFilter,
       brandFilter: innerBrandFilter,
-      sortByPopularity: innerSortByPopularity,
+      sortByPopularity: innerSortByPopularity !== "false",
       campaign: innerCampaign,
     });
 
     setIsOpen(false);
   };
 
-  React.useEffect(() => {
-    // Update internal filter state if `filterState` get updated
-    setInnerInsightType((prevInsightType) =>
-      prevInsightType !== filterState.insightType
-        ? filterState.insightType
-        : prevInsightType,
-    );
-    setInnerValueTag((prevInnerValueTag) =>
-      prevInnerValueTag !== filterState?.valueTag
-        ? filterState?.valueTag
-        : prevInnerValueTag,
-    );
-    setInnerCountryFilter((prevInnerCountryFilter) => {
-      if (filterState?.countryFilter === "") {
-        return null;
-      }
-      return prevInnerCountryFilter?.id !== filterState?.countryFilter
-        ? getCountryObject(filterState?.countryFilter)
-        : prevInnerCountryFilter;
-    });
-    setInnerBrandFilter((prevInnerBrandFilter) =>
-      prevInnerBrandFilter !== filterState?.brandFilter
-        ? filterState?.brandFilter
-        : prevInnerBrandFilter,
-    );
-    setInnerSortByPopularity((prevInnerSortByPopularity) =>
-      prevInnerSortByPopularity !== filterState?.sortByPopularity
-        ? filterState?.sortByPopularity
-        : prevInnerSortByPopularity,
-    );
-    setInnerCampaign((prevInnerInnerCampaign) =>
-      prevInnerInnerCampaign !== filterState?.campaign
-        ? filterState?.campaign
-        : prevInnerInnerCampaign,
-    );
-  }, [filterState]);
-
-  const handleInnerInsightTypeChange = (event) => {
-    const newValue = event.target.value;
-    setInnerInsightType(newValue);
-    // setFilterState((state) => ({ ...state, insightType: newValue }));
-  };
-
-  const handleInsightTypeChange = (event) => {
-    const newValue = event.target.value;
-    updateSearchParams({ insightType: newValue });
-  };
-
-  const chipsParams = getChipsParams(
-    filterState,
-    (newFilterState) => updateSearchParams(newFilterState),
-    t,
-  );
+  const chipsParams = getChipsParams(filterState, setSearchParams, t);
 
   return (
     <Box>
@@ -241,7 +202,12 @@ export const QuestionFilter = () => {
             },
           }}
           value={filterState?.insightType}
-          onChange={handleInsightTypeChange}
+          onChange={(event) =>
+            setSearchParams((prev) => {
+              prev.set("type", event.target.value);
+              return prev;
+            })
+          }
           label={t(`questions.insightTypeLabel`)}
         >
           {Object.keys(insightTypesNames).map((insightType) => (
@@ -301,14 +267,20 @@ export const QuestionFilter = () => {
                 aria-labelledby="insightType-radio-buttons"
                 name="insightTypes"
                 value={innerInsightType}
-                onChange={handleInnerInsightTypeChange}
+                onChange={(event) =>
+                  setSearchParams((prev) => {
+                    prev.set("type", event.target.value);
+                    prev.set("value_tag", "");
+                    return prev;
+                  })
+                }
               >
-                {Object.keys(insightTypesNames).map((insightType) => (
+                {Object.keys(insightTypesNames).map((insightTypeValue) => (
                   <FormControlLabel
-                    key={insightType}
-                    value={insightType}
+                    key={insightTypeValue}
+                    value={insightTypeValue}
                     control={<Radio />}
-                    label={t(`questions.${insightType}`)}
+                    label={t(`questions.${insightTypeValue}`)}
                     labelPlacement={isDesktop ? "top" : "end"}
                   />
                 ))}
@@ -318,7 +290,17 @@ export const QuestionFilter = () => {
             {["category", "label"].includes(innerInsightType) ? (
               <LabelFilter
                 value={innerValueTag}
-                onChange={setInnerValueTag}
+                valueTag
+                onChange={(newVal) =>
+                  setSearchParams((prev) => {
+                    if (!newVal) {
+                      prev.delete("value_tag");
+                    } else {
+                      prev.set("value_tag", newVal || "");
+                    }
+                    return prev;
+                  })
+                }
                 insightType={innerInsightType}
                 label={t("questions.filters.long_label.value")}
                 placeholder={t("questions.filters.placeholders.value")}
@@ -328,7 +310,10 @@ export const QuestionFilter = () => {
               <TextField
                 value={innerValueTag}
                 onChange={(event) => {
-                  setInnerValueTag(event.target.value);
+                  setSearchParams((prev) => {
+                    prev.set("value_tag", event.target.value);
+                    return prev;
+                  });
                 }}
                 label={t("questions.filters.long_label.value")}
                 placeholder={t("questions.filters.placeholders.value")}
@@ -336,8 +321,13 @@ export const QuestionFilter = () => {
               />
             )}
             <Autocomplete
-              value={innerCountryFilter}
-              onChange={(event, newValue) => setInnerCountryFilter(newValue)}
+              value={innerCountryObject}
+              onChange={(event, newValue) =>
+                setSearchParams((prev) => {
+                  prev.set("country", newValue.id);
+                  return prev;
+                })
+              }
               options={countries}
               getOptionLabel={(country) => country.label}
               isOptionEqualToValue={(country, value) => country.id === value.id}
@@ -353,7 +343,12 @@ export const QuestionFilter = () => {
             <Autocomplete
               freeSolo
               value={innerBrandFilter}
-              onChange={(event, newValue) => setInnerBrandFilter(newValue)}
+              onChange={(event, newValue) =>
+                setSearchParams((prev) => {
+                  prev.set("brand", newValue);
+                  return prev;
+                })
+              }
               options={brands}
               renderInput={(params) => (
                 <TextField
@@ -369,7 +364,10 @@ export const QuestionFilter = () => {
               select
               value={innerCampaign}
               onChange={(event) => {
-                setInnerCampaign(event.target.value);
+                setSearchParams((prev) => {
+                  prev.set("campaign", event.target.value);
+                  return prev;
+                });
               }}
               label={t("questions.filters.long_label.campaign")}
               placeholder={t("questions.filters.placeholders.campaign")}
@@ -383,9 +381,12 @@ export const QuestionFilter = () => {
             </TextField>
 
             <FormControlLabel
-              checked={innerSortByPopularity}
-              onChange={(event) =>
-                setInnerSortByPopularity(event.target.checked)
+              checked={innerSortByPopularity !== "false"}
+              onChange={(event: React.ChangeEvent<HTMLInputElement>) =>
+                setSearchParams((prev) => {
+                  prev.set("sorted", event.target.checked.toString());
+                  return prev;
+                })
               }
               control={<Checkbox />}
               label={t("questions.filters.long_label.popularity")}
