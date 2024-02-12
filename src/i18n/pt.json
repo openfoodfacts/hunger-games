@@ -285,15 +285,15 @@
       },
       "page6": {
         "title": "Visita",
-        "text1": "Ficou travado em algum lugar? Quer ver a demonstração novamente?",
-        "text2": "Basta clicar no ponto de interrogação e começar a jornada novamente!"
+        "text1": "Ficou preso em algum lugar? Quer fazer o passeio novamente?",
+        "text2": "Basta clicar no ponto de interrogação e recomeçar a viagem!"
       }
     },
     "logos": {
       "page1": {
         "title": "Seleção",
-        "text1": "Selecione os recortes de um mesmo logotipo clicando neles",
-        "text2": "Logotipos selecionados vão ao topo da página, você pode desfazer a seleção clicando neles novamente"
+        "text1": "Selecione os recortes de um logótipo similar clicando sobre eles",
+        "text2": "Os logótipos selecionados vão para o topo da página, pode desmarcá-los clicando novamente neles"
       },
       "page2": {
         "title": "Aviso",
@@ -302,9 +302,9 @@
       },
       "page3": {
         "title": "Validar",
-        "text1": "Indicar o tipo de logotipo (rótulo, marca, código QR, ...)",
-        "text2": "Se for um logotipo de um rótulo ou de uma marca, indique qual é",
-        "text3": "Agora você pode enviar sua seleção",
+        "text1": "Indique o tipo de logótipo (certificação, marca, código QR...)",
+        "text2": "Se for uma certificação ou logótipo de marca, indique qual deles é",
+        "text3": "Agora pode enviar a sua seleção",
         "text4": "Obrigado :)"
       }
     },
@@ -314,25 +314,25 @@
   },
   "nutrition": {
     "instructions": {
-      "cropTheTable": "Recorte a imagem para simplificar sua anotação",
-      "verifyNutrimentDetected": "Indique se o nutrimento detectado está correto",
-      "selectMissingNutriments": "Adicionar nutrientes faltantes (você pode clicar mesmo se a palavra não tiver caixa de seleção)",
+      "cropTheTable": "Recorte a imagem para simplificar a sua anotação",
+      "verifyNutrimentDetected": "Indique se o nutriente detetado está correto",
+      "selectMissingNutriments": "Adicione os nutrientes que faltam (pode clicar mesmo que a palavra não tenha caixa)",
       "selectValue": "Selecione o valor nutricional de: "
     },
     "steps": {
       "1": "Recortar",
       "2": "Valores especiais",
-      "3": "Seleção de Nutrientes",
-      "4": "Seleção de Valores"
+      "3": "Seleção de nutrientes",
+      "4": "Seleção de valores"
     },
-    "loading": "Carregando...",
+    "loading": "A carregar...",
     "unknown_brand": "Marca desconhecida",
-    "value_missing": "Você se esqueceu de inserir um valor.",
+    "value_missing": "Esqueceu-se de inserir um valor.",
     "next": "Próximo passo",
-    "prev": "Passo Anterior",
-    "skip": "Pular este produto",
-    "validate": "Validar Tabela",
-    "unselect_picture": "Sem informações nutricionais",
+    "prev": "Passo anterior",
+    "skip": "Ignorar este produto",
+    "validate": "Validar tabela",
+    "unselect_picture": "Sem informação nutricional",
     "basis": "dados para: ",
     "servingSize": "tamanho da porção",
     "value": "Valor",
@@ -340,20 +340,20 @@
     "nutriments": {
       "nutriment_energy-kj": "Energia (kJ)",
       "nutriment_energy-kcal": "Energia (kCal)",
-      "nutriment_fat": "Gordura",
+      "nutriment_fat": "Lípidos",
       "nutriment_saturated-fat": "Lípidos saturados",
       "nutriment_carbohydrates": "Hidratos de carbono",
       "nutriment_sugars": "Açúcar",
-      "nutriment_proteins": "Teor de proteína",
+      "nutriment_proteins": "Teor de proteínas",
       "nutriment_fiber": "Fibras",
       "nutriment_salt": "Sal",
       "nutriment_sodium": "Sódio (Na+)"
     },
     "history": {
-      "title": "Histórico da Sessão",
+      "title": "Histórico da sessão",
       "status": "estado",
       "product name": "nome do produto",
-      "view": "visualizar página",
+      "view": "ver página",
       "edit": "editar página",
       "SKIP": "ignorado",
       "VALIDATED": "editado",
@@ -364,41 +364,41 @@
   },
   "notfound": {
     "image_alt": "404 não encontrado",
-    "nopage": "Opa! A página que você está procurando não foi encontrada.",
+    "nopage": "Ops! A página que está à procura não foi encontrada.",
     "redirect1": "Quer jogar alguns jogos?",
     "redirect2": "Clique aqui"
   },
   "nutriscore": {
-    "image_alt": "Imagem recortada",
-    "label": "Anotar a detecção de logotipo Nutri-Score por lote.",
-    "description": "Para isso, selecione todas as imagens mostrando o valor correto/errado do Nutri-Score ({{label}}), e clique nos botões inferiores para dizer se você selecionou um conjunto correto ou errado.",
-    "images_remaining": "Ainda faltam {{remaining}} para anotar",
-    "image_sizes": "Tamanho das imagens",
-    "zoom_on_logo": "Ampliar o logotipo",
+    "image_alt": "imagem recortada",
+    "label": "Anote a deteção do logótipo Nutri-Score por lote.",
+    "description": "Para fazer isso, selecione todas as imagens que mostram o valor Nutri-Score correto/errado ({{label}}) e clique nos botões de baixo para dizer se selecionou um conjunto correto ou incorreto.",
+    "images_remaining": "Restam {{remaining}} para anotar",
+    "image_sizes": "Tamanhos de imagem",
+    "zoom_on_logo": "Ampliar logótipo",
     "select_all": "Selecionar tudo",
     "deselect_all": "Desmarcar tudo",
     "incorrect": "Errado",
     "correct": "Correto ({{label}})"
   },
   "eco-score": {
-    "description": "Aqui está um resumo das perguntas que podem melhorar o cálculo do Eco-Score",
+    "description": "Aqui está um resumo das questões que poderiam melhorar o cálculo do Eco-Score",
     "countryLabel": "País"
   },
   "ingredients": {
-    "description": "Este jogo permite que você valide a pré-seleção de imagens de ingredientes em vários idiomas para um produto, e valide os ingredientes extraídos."
+    "description": "Este jogo permite-lhe validar a pré-seleção de imagens de listas de ingredientes em vários idiomas para um produto e validar os ingredientes extraídos."
   },
   "footer": {
     "appStore": {
       "title": "Loja de aplicações",
-      "subtitle": "Faça o download na"
+      "subtitle": "Descarregar em"
     },
     "playStore": {
       "title": "Play Store",
-      "subtitle": "Obtenha na"
+      "subtitle": "Obtenha em"
     },
     "microsoft": {
       "title": "Microsoft",
-      "subtitle": "Obtenha na"
+      "subtitle": "Obtenha em"
     },
     "androidAPK": {
       "title": "APK Android",
