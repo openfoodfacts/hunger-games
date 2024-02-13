@@ -3,7 +3,10 @@ import * as React from "react";
 import Button from "@mui/material/Button";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
+import Tooltip from "@mui/material/Tooltip";
 import LoadingButton from "@mui/lab/LoadingButton";
+
+import { useTranslation } from "react-i18next";
 
 import off from "../../off";
 
@@ -27,6 +30,14 @@ function getColor(ingredient: ParsedIngredientsType) {
   if (ingredient.ingredients !== undefined) return "blue";
   return "orange";
 }
+
+function getTitle(ingredient: ParsedIngredientsType) {
+  if (ingredient.ciqual_proxy_food_code !== undefined)
+    return "This ingredient has CIQUAL id";
+  if (ingredient.vegetarian !== undefined) return "recognised as a vegetarian";
+  if (ingredient.ingredients !== undefined) return "contains sub ingredients";
+  return `unknown ingredient: ${ingredient.text}"`;
+}
 function ColorText({
   text,
   ingredients,
@@ -38,7 +49,7 @@ function ColorText({
     // Without parsing, we just split with coma
     return text.split(",").map((txt, i) => (
       <React.Fragment key={i}>
-        <span style={{ color: i % 2 === 0 ? "blue" : "red" }}>{txt}</span>
+        <span style={{ color: i % 2 === 0 ? "gray" : "black" }}>{txt}</span>
         {i === text.split(",").length - 1 ? "" : ","}
       </React.Fragment>
     ));
@@ -63,8 +74,6 @@ function ColorText({
       }
       const endIndex = startIndex + ingredient.text.length;
 
-      console.log(text.slice(lastIndex, endIndex));
-      console.log("");
       const prefix = text.slice(lastIndex, startIndex);
       const ingredientName = text.slice(startIndex, endIndex);
       lastIndex = endIndex;
@@ -72,7 +81,12 @@ function ColorText({
       return (
         <React.Fragment key={i}>
           <span>{prefix}</span>
-          <span style={{ color: getColor(ingredient) }}>{ingredientName}</span>
+
+          <Tooltip title={getTitle(ingredient)} enterDelay={500}>
+            <span style={{ color: getColor(ingredient) }}>
+              {ingredientName}
+            </span>
+          </Tooltip>
         </React.Fragment>
       );
     }),
@@ -100,8 +114,7 @@ export function useIngredientParsing() {
 
 export function IngeredientDisplay(props) {
   const { text, onChange, parsings } = props;
-  console.log({ text });
-  console.log({ parsings });
+
   return (
     <div
       id="demoSource-:rd:"
@@ -120,6 +133,8 @@ export function IngeredientDisplay(props) {
         fontSmooth: "subpixel-antialiased",
         float: "left",
         minWidth: "100%",
+        minHeight: "3rem",
+        border: "solid black 1px",
       }}
     >
       <pre
@@ -144,7 +159,7 @@ export function IngeredientDisplay(props) {
           wordBreak: "keep-all",
           overflowWrap: "break-word",
           position: "relative",
-          pointerEvents: "none",
+          // pointerEvents: "none",
           padding: "16px",
           whiteSpace: "pre-wrap",
         }}
@@ -193,18 +208,29 @@ export function IngeredientDisplay(props) {
           WebkitTextFillColor: "transparent",
         }}
         value={text}
-      ></textarea>
+      />
     </div>
   );
 }
 
 export function IngredientAnotation(props) {
+  const { t } = useTranslation();
   const { lang, score, code, setEditedState, text, detectedText } = props;
   const { isLoading, fetchIngredients, parsings } = useIngredientParsing();
 
   return (
-    <Stack direction="column">
-      <Typography>{`${lang} (${(score * 100).toFixed(1)}%)`}</Typography>
+    <Stack direction="column" sx={{ mt: 2 }}>
+      <Typography>
+        {lang}
+        {score === null ? (
+          <span> ({t("ingredients.current_text")})</span>
+        ) : (
+          <span>
+            {" "}
+            ({t("ingredients.confidence_score")}: {(score * 100).toFixed(1)}%)
+          </span>
+        )}
+      </Typography>
       <Stack direction="row">
         <IngeredientDisplay
           parsings={parsings}
@@ -235,14 +261,14 @@ export function IngredientAnotation(props) {
           variant="contained"
           fullWidth
         >
-          Revert
+          {t("ingredients.revert")}
         </Button>
         <LoadingButton
           onClick={() => fetchIngredients(text, lang)}
           fullWidth
           loading={isLoading}
         >
-          get parsing
+          {t("ingredients.parsing")}
         </LoadingButton>
         <Button
           component="a"
@@ -253,7 +279,7 @@ export function IngredientAnotation(props) {
           color="success"
           fullWidth
         >
-          Send
+          {t("ingredients.send")}
         </Button>
       </Stack>
     </Stack>

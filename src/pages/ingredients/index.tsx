@@ -17,6 +17,7 @@ import ImageAnnotation from "./ImageAnnotation";
 
 function ProductInterface(props) {
   const { product, next } = props;
+  const { t } = useTranslation();
 
   const { selectedImages, product_name, code } = product;
   const [imageTab, setImageTab] = React.useState(selectedImages[0].countryCode);
@@ -80,7 +81,7 @@ function ProductInterface(props) {
         )}
       </Stack>
       <Button onClick={next} fullWidth variant="outlined">
-        Skip this product
+        {t("ingredients.skip")}
       </Button>
     </div>
   );
