@@ -30,7 +30,7 @@
       "thank_you": "Ďakujeme, že nám pomáhate zlepšovať Open Food Facts, aby ich mohlo jednoducho používať viac ľudí."
     },
     "statistics": {
-      "title": "{{userName}} statistics:",
+      "title": "{{userName}} štatistiky:",
       "editorCount": {
         "title": "Editor",
         "description": "Počet vykonaných úprav"
@@ -75,17 +75,17 @@
     "annotations": "Poznámky",
     "last_annotations": "Posledné anotácie",
     "remaining_annotations": "Zostávajúce otázky",
-    "annotated_annotations": "Komentovať",
+    "annotated_annotations": "Komentované",
     "filters": {
       "active_filter_number": "+{{count}} filtrov",
       "active_filter_number_one": "+{{count}} filter",
-      "active_filter_number_zero": "bez filtra",
+      "active_filter_number_zero": "žiadny filter",
       "short_label": {
         "value": "hodnota",
         "country": "krajina",
         "brand": "značka",
         "popularity": "obľúbenosť",
-        "campaign": "tábor"
+        "campaign": "kampaň"
       },
       "long_label": {
         "type": "Typ otázky",
@@ -94,7 +94,7 @@
         "brand": "Výrobca/značka",
         "popularity": "Triediť podľa obľúbenosti",
         "edit": "",
-        "campaign": "Kampane"
+        "campaign": "Kampaň"
       },
       "placeholders": {
         "value": "Hodnota (Fanta, en:organic,...)",
@@ -114,7 +114,7 @@
     "reset_filters": "Zrušiť filtre",
     "log_in": "Prihlásenie",
     "sign_up": "Zaregistrovať sa",
-    "login_title": "Make your annotation count",
+    "login_title": "Dajte si na anotácii záležať",
     "login_description": "Momentálne nie ste prihlásený do Open Food Facts. Ak chcete, aby boli vaše odpovede priamo aplikované na produkty a priradené k vášmu účtu, zvážte prihlásenie do svojho účtu Open Food Facts alebo vytvorenie účtu",
     "please_wait_while_we_fetch_the_question": "Počkajte, kým načítame otázku!"
   },
@@ -123,16 +123,16 @@
     "games": "Hry",
     "questions": "Otázky",
     "logos": "Logá",
-    "logos-annotation": "Logos annotation",
+    "logos-annotation": "Anotácia loga",
     "logos-search": "Vyhľadávanie log",
-    "logos-product-search": "Annotation per products",
-    "logos-deep-search": "Infinite annotation",
+    "logos-product-search": "Anotácia k produktom",
+    "logos-deep-search": "Nekonečná anotácia",
     "manage": "Spravovať",
     "insights": "Insight",
     "nutritions": "Nutričné hodnoty",
     "settings": "Nastavenia",
     "eco-score": "Eko-skóre",
-    "dashboard": "Logos dashboard",
+    "dashboard": "Panel loga",
     "tour": "Zobraziť prehliadku",
     "logged_in_user": "Prihlásený ako {{userName}}",
     "log_in": "Kliknutím sa prihláste"
@@ -144,7 +144,7 @@
     "value_tag": "Značka",
     "value_placeholder": "ex: en:mueslis, bjorg,...",
     "type": "Druhy",
-    "annotated": "Komentovať",
+    "annotated": "Komentované",
     "annotation": "Poznámky",
     "not_annotated": "Bez poznámok ",
     "all": "Všetky",
@@ -152,7 +152,7 @@
     "product_weight": "Hmotnosť výrobku",
     "category": "Kategória",
     "expiration_date": "Dátum spotreby",
-    "packager_code": "Packager code",
+    "packager_code": "Kód baliarne",
     "skipped": "Preskočené (-1)",
     "rejected": "Odmietnuté (0)",
     "accepted": "Prijaté (1)",
@@ -163,14 +163,14 @@
     "created_at": "Vytvorené:",
     "completed_at": "Dokončené",
     "automatic": "Automatický",
-    "human_required": "Human required",
+    "human_required": "Vyžaduje človeka",
     "edit_product": "Otvoriť úpravu produktu",
     "view_product": "Otvorte stránku produktu",
-    "view_crops_for_this_product": "Annotate product logos"
+    "view_crops_for_this_product": "Pridávajte poznámky k logám produktov"
   },
   "logos": {
-    "annotation": "Annotation: ",
-    "annotations": "Logo annotations",
+    "annotation": "Poznámky: ",
+    "annotations": "Anotácie loga",
     "task_description": "Vyberte všetky logá, ktoré sú úplne rovnaké, a pomenujte ich ako „en:EU Organic“ a typ ako „štítok“.",
     "select_all": "Označiť všetko",
     "unselect_all": "Odznačiť všetko",
@@ -180,12 +180,12 @@
     "type": "Druhy",
     "label": "Štítok",
     "brand": "Značka",
-    "packager_code": "Packager code",
+    "packager_code": "Kód baliarne",
     "packaging": "Balenie",
     "qr_code": "QR kód",
     "category": "Kategória",
-    "nutrition_label": "Nutrition label",
-    "no_logo": "Not a logo",
+    "nutrition_label": "Výživový štítok",
+    "no_logo": "Nieje logo",
     "store": "Predajňa",
     "detail": "Detail loga",
     "id": "ID loga:",
@@ -200,20 +200,20 @@
     "search_specific": "Vyhľadajte konkrétne logo",
     "load_more": "Načítať ďalšie",
     "no_results": "Nebolo nájdené žiadne logo",
-    "result_count": "Shows {{showing}} on {{available}} available",
+    "result_count": "Zobrazuje {{showing}} z {{available}} k dispozícii",
     "flag": "Niečo je zle? Nahlásiť/označiť obrázok!",
     "unflag": "Zrušiť označenie obrázka",
     "crop_image_title": "výrez loga",
     "no_more_questions": "Žiadne ďalšie otázky týkajúce sa tohto loga. Môžete sa pokúsiť nájsť ďalšie logá pomocou nasledujúcej hry.",
     "loading_messages": {
       "pending_reference_logos": "Načítavame niekoľko príkladov log na inicializáciu vyhľadávania",
-      "failed_reference_logos": "We did not find any logos with this annotation. Try to use the following game to annotate some of them."
+      "failed_reference_logos": "Nenašli sme žiadne logá s touto anotáciou. Skúste použiť nasledujúcu hru na anotáciu niektorých z nich."
     },
     "deep_search": {
       "title": "Vyhľadávanie loga",
-      "description": "Select a logo you want to look for, and let's go to catch them all. For every logo you annotate, we will fetch it's neighbors such that you might never stop to annotate. (Press Shift to select range of logos)",
+      "description": "Vyberte logo, ktoré chcete hľadať, a poďme ich všetky chytiť. Ku každému logu, ktoré anotujete, získame jeho susedov, takže možno nikdy neprestanete anotovať. (Stlačením Shift vyberte rozsah log)",
       "ref_logos": "Referenčné logá (logo už označené touto hodnotou)",
-      "remaining": "Remaining to annotate",
+      "remaining": "Zostáva anotovať",
       "select_all": "Vybrať všetko",
       "unselect_all": "Odznačiť všetko"
     }
@@ -243,7 +243,7 @@
     "Vision_Mission_Values_and_Programs": "Vízia, poslanie, hodnoty a programy",
     "FAQS": "FAQ",
     "open_Food_Facts_blog": "Open Food Facts blog",
-    "Press": "Press",
+    "Press": "Média",
     "Open_Food_Facts_wiki": "Open Food Facts wiki (en)",
     "Translators": "Prekladatelia",
     "Partners": "Partneri",
@@ -286,19 +286,19 @@
       "page6": {
         "title": "Prehliadka",
         "text1": "Zasekli ste sa? Chcete absolvovať prehliadku znova?",
-        "text2": "Just click on the question mark and start the journey again!"
+        "text2": "Stačí kliknúť na otáznik a začať znova!"
       }
     },
     "logos": {
       "page1": {
         "title": "Výber",
-        "text1": "Select the crops of a same logo by clicking on them",
-        "text2": "Selected logos go to the top of the page, you can unselect them by clicking again on them"
+        "text1": "Vyberte orezanie rovnakého loga kliknutím na neho",
+        "text2": "Vybrané logá idú do hornej časti stránky, ich výber môžete zrušiť opätovným kliknutím na ne"
       },
       "page2": {
         "title": "Upozornenie",
-        "text1": "If the crop contains multiple logos, do not select it.",
-        "text2": "If the crop contains only a partial part of a logo, you can select it."
+        "text1": "Ak orezanie obsahuje viacero log, nevyberajte ho.",
+        "text2": "Ked orezanie obsahuje iba část loga, môžete ho vybrat."
       },
       "page3": {
         "title": "Potvrdiť",
@@ -308,49 +308,49 @@
         "text4": "Ďakujem :)"
       }
     },
-    "previous": "Prev",
-    "next": "Next",
+    "previous": "Predchádzajúce",
+    "next": "Ďalšie",
     "close": "Zatvoriť"
   },
   "nutrition": {
     "instructions": {
-      "cropTheTable": "Crop the image to simplify your annotation",
-      "verifyNutrimentDetected": "Indicate if the nutriment detected is correct",
-      "selectMissingNutriments": "Add missing nutriments (you can click even if the word has no box)",
-      "selectValue": "Select the nutritional value of: "
+      "cropTheTable": "Ak chcete anotáciu zjednodušiť, orežte obrázok",
+      "verifyNutrimentDetected": "Uveďte, či je zistená výživa správna",
+      "selectMissingNutriments": "Pridajte chýbajúce živiny (môžete kliknúť, aj keď slovo nemá žiadne políčko)",
+      "selectValue": "Vyberte si nutričnú hodnotu: "
     },
     "steps": {
-      "1": "Crop",
-      "2": "Special values",
-      "3": "Nutriments Selection",
-      "4": "Values Selection"
+      "1": "Orezať",
+      "2": "Špeciálne hodnoty",
+      "3": "Výber živín",
+      "4": "Výber hodnôt"
     },
-    "loading": "Loading...",
-    "unknown_brand": "Brand Unknown",
-    "value_missing": "You forgot to input a value.",
-    "next": "Next step",
-    "prev": "Prev step",
-    "skip": "Skip this product",
-    "validate": "Validate Table",
-    "unselect_picture": "No nutrition info",
-    "basis": "data for: ",
-    "servingSize": "serving size",
+    "loading": "Načítava sa...",
+    "unknown_brand": "Neznáma značka",
+    "value_missing": "Zabudli ste vložiť hodnotu.",
+    "next": "Ďalší krok",
+    "prev": "Predchádzajúci krok",
+    "skip": "Preskočiť tento produkt",
+    "validate": "Overiť tabuľku",
+    "unselect_picture": "Žiadne informácie o výžive",
+    "basis": "údaje pre: ",
+    "servingSize": "veľkosť porcie",
     "value": "Hodnota",
-    "unit": "Unit",
+    "unit": "Jednotka",
     "nutriments": {
-      "nutriment_energy-kj": "Energy (kJ)",
-      "nutriment_energy-kcal": "Energy (kCal)",
+      "nutriment_energy-kj": "Energia (kJ)",
+      "nutriment_energy-kcal": "Energia (kCal)",
       "nutriment_fat": "Tuk",
       "nutriment_saturated-fat": "Nasýtený tuk",
       "nutriment_carbohydrates": "Sacharidy",
-      "nutriment_sugars": "Sugar",
-      "nutriment_proteins": "Protein content",
-      "nutriment_fiber": "Fibres",
+      "nutriment_sugars": "Cukor",
+      "nutriment_proteins": "Obsah bielkovín",
+      "nutriment_fiber": "Vláknina",
       "nutriment_salt": "Soľ",
       "nutriment_sodium": "Sodík"
     },
     "history": {
-      "title": "Session History",
+      "title": "História relácie",
       "status": "status",
       "product name": "Názov produktu",
       "view": "Zobraziť stránku",
