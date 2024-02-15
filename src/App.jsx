@@ -49,6 +49,7 @@ const DashBoard = React.lazy(() => import("./pages/logosValidator/DashBoard"));
 const GalaBoard = React.lazy(() => import("./pages/GalaPage"));
 const IngredientPage = React.lazy(() => import("./pages/ingredients"));
 const Brandinator = React.lazy(() => import("./pages/Brandinator"));
+const BugPage = React.lazy(() => import("./pages/bug"));
 
 // OFF colors
 const latte = "#F6F3F0";
@@ -355,6 +356,7 @@ export default function App() {
                   }
                 />
                 <Route path="/gala" element={<GalaBoard />} />
+                <Route path="/bugs" element={<BugPage />} />
               </Routes>
             </DevModeContext.Provider>
           </LoginContext.Provider>
