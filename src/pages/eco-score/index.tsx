@@ -11,7 +11,7 @@ import SmallQuestionCard from "../../components/SmallQuestionCard";
 import Opportunities from "../../components/Opportunities";
 import { DEFAULT_FILTER_STATE } from "../../components/QuestionFilter/const";
 import { useTranslation } from "react-i18next";
-import { capitaliseName } from "../../utils";
+import { getCountryName } from "../../utils";
 import Loader from "../loader";
 
 const ecoScoreCards = [
@@ -161,12 +161,14 @@ export const countryNames = [
   "en:united-states",
   "en:canada",
   "en:australia",
-  "en:united-kingdom",
-];
+  "en:uk",
+].map((id) => ({ id, label: getCountryName(id) }));
 
 export default function EcoScore() {
   const { t } = useTranslation();
-  const [selectedCountry, setSelectedCountry] = React.useState(countryNames[0]);
+  const [selectedCountry, setSelectedCountry] = React.useState(
+    countryNames[0].id
+  );
 
   return (
     <React.Suspense fallback={<Loader />}>
@@ -202,8 +204,8 @@ export default function EcoScore() {
           sx={{ width: 200 }}
         >
           {countryNames.map((country) => (
-            <MenuItem value={country} key={country}>
-              {capitaliseName(country)}
+            <MenuItem value={country.id} key={country.id}>
+              {country.label}
             </MenuItem>
           ))}
         </TextField>

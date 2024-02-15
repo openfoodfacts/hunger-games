@@ -1,3 +1,5 @@
+import counties from "./assets/countries.json";
+
 const reformatTagMapping = {
   " ": "-",
   "'": "-",
@@ -49,4 +51,15 @@ export const capitaliseName = (string: string | undefined) => {
   }
   const name = string.slice(3);
   return name.charAt(0).toUpperCase() + name.slice(1);
+};
+
+export const getCountryName = (countryId?: string) => {
+  if (!countryId) {
+    return "";
+  }
+  const country = counties.find((item) => item.id === countryId);
+  if (!country) {
+    return "";
+  }
+  return country.label;
 };
