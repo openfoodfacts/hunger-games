@@ -13,6 +13,7 @@ import { DEFAULT_FILTER_STATE } from "../../components/QuestionFilter/const";
 import { useTranslation } from "react-i18next";
 import { capitaliseName } from "../../utils";
 import Loader from "../loader";
+import { useSearchParams } from "react-router-dom";
 
 const ecoScoreCards = [
   {
@@ -166,7 +167,12 @@ export const countryNames = [
 
 export default function EcoScore() {
   const { t } = useTranslation();
-  const [selectedCountry, setSelectedCountry] = React.useState(countryNames[0]);
+  const [searchParams, setSearchParams]= useSearchParams();
+  const [selectedCountry, setSelectedCountry] = React.useState(searchParams.get('cc') || countryNames[0]);
+
+  React.useEffect(()=>{
+    setSearchParams({'cc':selectedCountry})
+  }, [selectedCountry])
 
   return (
     <React.Suspense fallback={<Loader />}>
