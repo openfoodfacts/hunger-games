@@ -26,7 +26,7 @@
     "saved_filters": "Запазени филтри",
     "contribution_modal": {
       "title": "Твоят принос има значение",
-      "information": "Hunger Games is an effort to leverage the results of our OCR and artificial intelligence. When you use Hunger Games by Open Food Facts, you improve our entire database which helps the community make better food choices. We gather your annotations and use them to make Open Food Facts more accurate and efficient.",
+      "information": "Игрите на глада са опит да се използват резултатите от нашето OCR и изкуствен интелект. Когато използвате Игрите на глада от Open Food Facts, подобрявате цялата ни база данни, което помага на общността да прави по-добър избор на храна. Ние събираме вашите пояснения и ги използваме, за да направим Open Food Facts по-точни и ефективни.",
       "thank_you": "Благодарим ти, че ни помагаш да подобрим Open Food Facts, така че повече хора да могат да го използват лесно."
     },
     "statistics": {
@@ -115,8 +115,8 @@
     "log_in": "Потребителско име",
     "sign_up": "Регистрирай се",
     "login_title": "Направи коментарът си полезен",
-    "login_description": "You are not currently logged into Open Food Facts. To get your answers directly applied to products, and associated to your account, consider logging in to your Open Food Facts account, or creating one",
-    "please_wait_while_we_fetch_the_question": "Please wait while we fetch the question!"
+    "login_description": "В момента не сте влезли в Open Food Facts. За да получите вашите отговори директно приложени към продукти и свързани с вашия акаунт, помислете дали да влезете във вашия акаунт Open Food Facts или да създадете такъв",
+    "please_wait_while_we_fetch_the_question": "Моля, изчакайте, докато извлечем въпроса!"
   },
   "menu": {
     "title": "Игри на глада",
@@ -126,14 +126,14 @@
     "logos-annotation": "Пояснение към емблеми",
     "logos-search": "Търсене на лога",
     "logos-product-search": "Пояснения за продукти",
-    "logos-deep-search": "Infinite annotation",
+    "logos-deep-search": "Безкрайно пояснение",
     "manage": "Управление",
     "insights": "Задълбочен анализ",
     "nutritions": "Хранителни стойности",
     "settings": "Настройки",
     "eco-score": "Eco-score",
     "dashboard": "Табло с емблеми",
-    "tour": "Show tour",
+    "tour": "Турне",
     "logged_in_user": "Влязъл като {{userName}}",
     "log_in": "Щракни, за да влезеш"
   },
@@ -166,7 +166,7 @@
     "human_required": "Изисква се човек",
     "edit_product": "Отвори редакцията на продукта",
     "view_product": "Отворете страницата на продукта",
-    "view_crops_for_this_product": "Annotate product logos"
+    "view_crops_for_this_product": "Добавяне на пояснения към продуктовите емблеми"
   },
   "logos": {
     "annotation": "Бележка: ",
@@ -204,7 +204,7 @@
     "flag": "Нещо грешно? Докладвай/маркирай снимката!",
     "unflag": "Размаркирай снимката",
     "crop_image_title": "изрязване на емблемата",
-    "no_more_questions": "No more questions about this logo. You can try to find more logos with the following game.",
+    "no_more_questions": "Няма повече въпроси за тази емблема. Можете да опитате да намерите повече емблеми със следната игра.",
     "loading_messages": {
       "pending_reference_logos": "We are loading some logos examples to initialise the search",
       "failed_reference_logos": "We did not find any logos with this annotation. Try to use the following game to annotate some of them."
