@@ -385,7 +385,14 @@
     "countryLabel": "Krajina"
   },
   "ingredients": {
-    "description": "Táto hra vám umožňuje overiť predbežný výber obrázkov zoznamov prísad v rôznych jazykoch pre produkt a overiť extrahované prísady."
+    "description": "Táto hra vám umožňuje overiť predbežný výber obrázkov zoznamov prísad v rôznych jazykoch pre produkt a overiť extrahované prísady.",
+    "current_text": "text from off",
+    "confidence_score": "language confidence",
+    "revert": "Revert",
+    "parsing": "Get server understanding",
+    "send": "Validate & send",
+    "skip": "Preskočiť tento produkt",
+    "getRobotoffPrediciton": "Get predictions from Robotoff"
   },
   "footer": {
     "appStore": {
