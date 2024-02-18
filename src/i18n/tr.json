@@ -385,7 +385,14 @@
     "countryLabel": "Ülke"
   },
   "ingredients": {
-    "description": "Bu oyun, bir ürün için çeşitli dillerdeki içerik listesi görsellerinin ön seçimini doğrulamanıza ve çıkarılan içerikleri doğrulamanıza olanak tanır."
+    "description": "Bu oyun, bir ürün için çeşitli dillerdeki içerik listesi görsellerinin ön seçimini doğrulamanıza ve çıkarılan içerikleri doğrulamanıza olanak tanır.",
+    "current_text": "text from off",
+    "confidence_score": "language confidence",
+    "revert": "Revert",
+    "parsing": "Get server understanding",
+    "send": "Validate & send",
+    "skip": "Bu ürünü atla",
+    "getRobotoffPrediciton": "Get predictions from Robotoff"
   },
   "footer": {
     "appStore": {
