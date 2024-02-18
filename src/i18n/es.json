@@ -385,7 +385,14 @@
     "countryLabel": "País"
   },
   "ingredients": {
-    "description": "Este juego te permite validar la preselección de imágenes de los ingredientes en varios idiomas para un producto, y validar los ingredientes extraídos."
+    "description": "Este juego te permite validar la preselección de imágenes de los ingredientes en varios idiomas para un producto, y validar los ingredientes extraídos.",
+    "current_text": "text from off",
+    "confidence_score": "language confidence",
+    "revert": "Revert",
+    "parsing": "Get server understanding",
+    "send": "Validate & send",
+    "skip": "Omitir este producto",
+    "getRobotoffPrediciton": "Get predictions from Robotoff"
   },
   "footer": {
     "appStore": {
