@@ -385,7 +385,14 @@
     "countryLabel": "מדינה"
   },
   "ingredients": {
-    "description": "המשחק הזה מאפשר לך לאמת אוסף של תמונות שנבחר מראש של רשימות רכיבים במגוון שפות למוצר ולאמת את הרכיבים שחולצו."
+    "description": "המשחק הזה מאפשר לך לאמת אוסף של תמונות שנבחר מראש של רשימות רכיבים במגוון שפות למוצר ולאמת את הרכיבים שחולצו.",
+    "current_text": "text from off",
+    "confidence_score": "language confidence",
+    "revert": "Revert",
+    "parsing": "Get server understanding",
+    "send": "Validate & send",
+    "skip": "דילוג על מוצר זה",
+    "getRobotoffPrediciton": "Get predictions from Robotoff"
   },
   "footer": {
     "appStore": {
