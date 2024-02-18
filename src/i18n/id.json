@@ -385,7 +385,14 @@
     "countryLabel": "Negara"
   },
   "ingredients": {
-    "description": "Permainan ini memungkinkan Anda untuk memvalidasi pra-pemilihan gambar daftar bahan dalam berbagai bahasa untuk suatu produk, dan memvalidasi bahan yang diekstrak."
+    "description": "Permainan ini memungkinkan Anda untuk memvalidasi pra-pemilihan gambar daftar bahan dalam berbagai bahasa untuk suatu produk, dan memvalidasi bahan yang diekstrak.",
+    "current_text": "text from off",
+    "confidence_score": "language confidence",
+    "revert": "Revert",
+    "parsing": "Get server understanding",
+    "send": "Validate & send",
+    "skip": "Lewati produk ini",
+    "getRobotoffPrediciton": "Get predictions from Robotoff"
   },
   "footer": {
     "appStore": {
