@@ -3,6 +3,7 @@ import Button from "@mui/material/Button";
 import Box from "@mui/material/Box";
 import useRobotoffPrediction, { DataType } from "./useRobotoffPrediction";
 import { IngredientAnotation } from "./IngeredientDisplay";
+import { useTranslation } from "react-i18next";
 
 type ImageAnnotationProps = {
   fetchDataUrl: string;
@@ -67,7 +68,7 @@ function Annotation({
     <React.Fragment>
       <IngredientAnotation
         lang={imageLang}
-        score={'user'}
+        score={null}
         code={code}
         setEditedState={setOffEditedState}
         text={offEditedState[imageLang].text}
@@ -127,6 +128,7 @@ export default function ImageAnnotation({
   offText,
 }: ImageAnnotationProps) {
   const [data, getData, isLoading, error] = useRobotoffPrediction(fetchDataUrl);
+  const { t } = useTranslation();
 
   return (
     <Box sx={{ px: 1, width: "50%" }}>
@@ -144,7 +146,7 @@ export default function ImageAnnotation({
         onClick={getData}
         variant="outlined"
       >
-        Get prediction
+        {t("ingredients.getRobotoffPrediciton")}
       </Button>
     </Box>
   );
