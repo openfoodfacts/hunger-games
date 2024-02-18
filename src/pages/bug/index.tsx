@@ -91,6 +91,17 @@ export default function BugPage() {
       >
         Test v3 without credential
       </button>
+      <button
+        onClick={() => {
+          axios
+            .patch("https://world.openfoodfacts.org/api/v3/product/123456789", {
+              ingredients_text_fr: text,
+            })
+            .then(({ data }) => setResponse(data));
+        }}
+      >
+        Test v3 without credential patch
+      </button>
       <p>response</p>
       <pre>{JSON.stringify(response)}</pre>
     </div>
