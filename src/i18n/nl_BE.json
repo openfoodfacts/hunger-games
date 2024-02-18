@@ -385,7 +385,14 @@
     "countryLabel": "Land"
   },
   "ingredients": {
-    "description": "Met dit spel kun je de voorselectie van afbeeldingen van ingrediëntenlijsten in verschillende talen voor een product valideren en de geëxtraheerde ingrediënten valideren."
+    "description": "Met dit spel kun je de voorselectie van afbeeldingen van ingrediëntenlijsten in verschillende talen voor een product valideren en de geëxtraheerde ingrediënten valideren.",
+    "current_text": "text from off",
+    "confidence_score": "language confidence",
+    "revert": "Revert",
+    "parsing": "Get server understanding",
+    "send": "Validate & send",
+    "skip": "Dit product overslaan",
+    "getRobotoffPrediciton": "Get predictions from Robotoff"
   },
   "footer": {
     "appStore": {
