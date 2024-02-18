@@ -385,7 +385,14 @@
     "countryLabel": "Maa"
   },
   "ingredients": {
-    "description": "Tämän pelin avulla voit vahvistaa tuotteen ainesosaluetteloiden kuvien esivalinnan eri kielillä ja validoida otetut ainesosat."
+    "description": "Tämän pelin avulla voit vahvistaa tuotteen ainesosaluetteloiden kuvien esivalinnan eri kielillä ja validoida otetut ainesosat.",
+    "current_text": "text from off",
+    "confidence_score": "language confidence",
+    "revert": "Revert",
+    "parsing": "Get server understanding",
+    "send": "Validate & send",
+    "skip": "Ohita tämä tuote",
+    "getRobotoffPrediciton": "Get predictions from Robotoff"
   },
   "footer": {
     "appStore": {
