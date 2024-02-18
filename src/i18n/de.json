@@ -385,7 +385,14 @@
     "countryLabel": "Land"
   },
   "ingredients": {
-    "description": "Mit diesem Spiel können Sie die Vorauswahl der Bilder von Zutatenlisten in verschiedenen Sprachen für ein Produkt überprüfen und die ausgelesenen Zutaten bewerten."
+    "description": "Mit diesem Spiel können Sie die Vorauswahl der Bilder von Zutatenlisten in verschiedenen Sprachen für ein Produkt überprüfen und die ausgelesenen Zutaten bewerten.",
+    "current_text": "text from off",
+    "confidence_score": "language confidence",
+    "revert": "Revert",
+    "parsing": "Get server understanding",
+    "send": "Validate & send",
+    "skip": "Dieses Produkt überspringen",
+    "getRobotoffPrediciton": "Get predictions from Robotoff"
   },
   "footer": {
     "appStore": {
