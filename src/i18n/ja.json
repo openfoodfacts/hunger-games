@@ -385,7 +385,14 @@
     "countryLabel": "国"
   },
   "ingredients": {
-    "description": "このゲームでは、製品のさまざまな言語で原材料リストの画像の事前選択を検証し、抽出された原材料を検証することができます。"
+    "description": "このゲームでは、製品のさまざまな言語で原材料リストの画像の事前選択を検証し、抽出された原材料を検証することができます。",
+    "current_text": "text from off",
+    "confidence_score": "language confidence",
+    "revert": "Revert",
+    "parsing": "Get server understanding",
+    "send": "Validate & send",
+    "skip": "この製品をスキップする",
+    "getRobotoffPrediciton": "Get predictions from Robotoff"
   },
   "footer": {
     "appStore": {
