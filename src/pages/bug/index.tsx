@@ -2,6 +2,7 @@ import * as React from "react";
 import axios from "axios";
 import off from "../../off";
 import { Button, TextField } from "@mui/material";
+import { OFF_URL } from "../../const";
 
 export default function BugPage() {
   const [text, setText] = React.useState("test ingredient values");
@@ -26,11 +27,11 @@ export default function BugPage() {
         onClick={() => {
           axios
             .post(
-              off.setIngedrient({
+              `${OFF_URL}/cgi/product_jqm2.pl`,
+              {
                 code: "123456789",
-                text,
-                lang: "fr",
-              }),
+                ingredients_text_fr: text,
+              },
               { withCredentials: true },
             )
             .then(({ data }) => setResponse(data));

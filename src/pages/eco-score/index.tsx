@@ -167,12 +167,14 @@ export const countryNames = [
 
 export default function EcoScore() {
   const { t } = useTranslation();
-  const [searchParams, setSearchParams]= useSearchParams();
-  const [selectedCountry, setSelectedCountry] = React.useState(searchParams.get('cc') || countryNames[0]);
+  const [searchParams, setSearchParams] = useSearchParams();
+  const [selectedCountry, setSelectedCountry] = React.useState(
+    searchParams.get("cc") || countryNames[0],
+  );
 
-  React.useEffect(()=>{
-    setSearchParams({'cc':selectedCountry})
-  }, [selectedCountry])
+  React.useEffect(() => {
+    setSearchParams({ cc: selectedCountry });
+  }, [selectedCountry]);
 
   return (
     <React.Suspense fallback={<Loader />}>
