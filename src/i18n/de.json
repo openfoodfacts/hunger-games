@@ -387,10 +387,10 @@
   "ingredients": {
     "description": "Mit diesem Spiel können Sie die Vorauswahl der Bilder von Zutatenlisten in verschiedenen Sprachen für ein Produkt überprüfen und die ausgelesenen Zutaten bewerten.",
     "current_text": "text from off",
-    "confidence_score": "language confidence",
-    "revert": "Revert",
+    "confidence_score": "Sprachsicherheit",
+    "revert": "Widerrufen",
     "parsing": "Get server understanding",
-    "send": "Validate & send",
+    "send": "Validieren und senden",
     "skip": "Dieses Produkt überspringen",
     "getRobotoffPrediciton": "Get predictions from Robotoff"
   },
