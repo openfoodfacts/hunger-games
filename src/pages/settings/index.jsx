@@ -22,15 +22,18 @@ import DevModeContext from "../../contexts/devMode";
 import ColorModeContext from "../../contexts/colorMode";
 import { localSettings, localSettingsKeys } from "../../localeStorageManager";
 import FooterWithLinks from "../../components/Footer";
+import countryNames  from "../../assets/countries.json";
+import { capitaliseName } from "../../utils";
 
 export default function Settings() {
   const { t, i18n } = useTranslation();
   const theme = useTheme();
   const colorMode = React.useContext(ColorModeContext);
-
+  const localData= localSettings.fetch();
   const [language, setLanguage] = React.useState(i18n.language);
   const { devMode, setDevMode, visiblePages, setVisiblePages } =
     React.useContext(DevModeContext);
+  const [selectedCountry, setSelectedCountry]= React.useState(localData['country'])
 
   const handleDevModeChange = (event) => {
     localSettings.update(localSettingsKeys.isDevMode, event.target.checked);
@@ -52,6 +55,11 @@ export default function Settings() {
     setLanguage(e.target.value);
   };
 
+  const handleCountryChange= (e)=>{
+    setSelectedCountry(e.target.value);
+    localSettings.update(localSettingsKeys.country, e.target.value)
+  }
+
   return (
     <React.Suspense fallback={<Loader />}>
       <Stack sx={{ my: 5, mx: 2, alignItems: "flex-start" }} spacing={4}>
@@ -68,6 +76,19 @@ export default function Settings() {
           {Object.keys(messages).map((lang) => (
             <MenuItem key={lang} value={lang}>
               {lang.toUpperCase()}
+            </MenuItem>
+          ))}
+        </TextField>
+        <TextField
+          select
+          label={t("eco-score.countryLabel")}
+          value={selectedCountry}
+          onChange={handleCountryChange}
+          sx={{ width: 200 }}
+        >
+          {countryNames.map((country) => (
+            <MenuItem value={country.id} key={country.id}>
+              {capitaliseName(country.id)}
             </MenuItem>
           ))}
         </TextField>

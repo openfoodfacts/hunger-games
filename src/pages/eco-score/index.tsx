@@ -14,6 +14,8 @@ import { useTranslation } from "react-i18next";
 import { capitaliseName } from "../../utils";
 import Loader from "../loader";
 import { useSearchParams } from "react-router-dom";
+import { localSettings } from "../../localeStorageManager";
+import countryNames from "../../assets/countries.json";
 
 const ecoScoreCards = [
   {
@@ -148,33 +150,19 @@ const ecoScoreCards = [
   },
 ];
 
-export const countryNames = [
-  "en:belgium",
-  "en:denmark",
-  "en:france",
-  "en:germany",
-  "en:italy",
-  "en:netherlands",
-  "en:portugal",
-  "en:spain",
-  "en:sweden",
-  "en:switzerland",
-  "en:united-states",
-  "en:canada",
-  "en:australia",
-  "en:united-kingdom",
-];
+
 
 export default function EcoScore() {
   const { t } = useTranslation();
+  const localData= localSettings.fetch();
   const [searchParams, setSearchParams] = useSearchParams();
   const [selectedCountry, setSelectedCountry] = React.useState(
-    searchParams.get("cc") || countryNames[0],
+    searchParams.get("cc") || localData['country'] || countryNames[0],
   );
 
   React.useEffect(() => {
     setSearchParams({ cc: selectedCountry });
-  }, [selectedCountry]);
+  }, [selectedCountry, searchParams]);
 
   return (
     <React.Suspense fallback={<Loader />}>
@@ -210,8 +198,8 @@ export default function EcoScore() {
           sx={{ width: 200 }}
         >
           {countryNames.map((country) => (
-            <MenuItem value={country} key={country}>
-              {capitaliseName(country)}
+            <MenuItem value={country.id} key={country.id}>
+              {capitaliseName(country.id)}
             </MenuItem>
           ))}
         </TextField>
