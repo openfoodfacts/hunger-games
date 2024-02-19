@@ -11,7 +11,6 @@ import SmallQuestionCard from "../../components/SmallQuestionCard";
 import Opportunities from "../../components/Opportunities";
 import { DEFAULT_FILTER_STATE } from "../../components/QuestionFilter/const";
 import { useTranslation } from "react-i18next";
-import { capitaliseName } from "../../utils";
 import Loader from "../loader";
 import { useSearchParams } from "react-router-dom";
 import { localSettings } from "../../localeStorageManager";
