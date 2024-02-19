@@ -157,7 +157,7 @@ export default function EcoScore() {
   const localData= localSettings.fetch();
   const [searchParams, setSearchParams] = useSearchParams();
   const [selectedCountry, setSelectedCountry] = React.useState(
-    searchParams.get("cc") || localData['country'] || countryNames[0],
+    searchParams.get("cc") || localData['country'] || countryNames[81].id,
   );
 
   React.useEffect(() => {
