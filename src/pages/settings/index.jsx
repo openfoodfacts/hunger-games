@@ -23,7 +23,6 @@ import ColorModeContext from "../../contexts/colorMode";
 import { localSettings, localSettingsKeys } from "../../localeStorageManager";
 import FooterWithLinks from "../../components/Footer";
 import countryNames  from "../../assets/countries.json";
-import { capitaliseName } from "../../utils";
 
 export default function Settings() {
   const { t, i18n } = useTranslation();
