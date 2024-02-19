@@ -29,11 +29,10 @@ export default function Settings() {
   const { t, i18n } = useTranslation();
   const theme = useTheme();
   const colorMode = React.useContext(ColorModeContext);
-  const localData= localSettings.fetch();
   const [language, setLanguage] = React.useState(i18n.language);
   const { devMode, setDevMode, visiblePages, setVisiblePages } =
     React.useContext(DevModeContext);
-  const [selectedCountry, setSelectedCountry]= React.useState(localData['country'])
+  const [selectedCountry, setSelectedCountry]= React.useState(() => localSettings.fetch()['country'])
 
   const handleDevModeChange = (event) => {
     localSettings.update(localSettingsKeys.isDevMode, event.target.checked);
