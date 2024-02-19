@@ -87,7 +87,7 @@ export default function Settings() {
         >
           {countryNames.map((country) => (
             <MenuItem value={country.id} key={country.id}>
-              {capitaliseName(country.id)}
+              {country.label}
             </MenuItem>
           ))}
         </TextField>
