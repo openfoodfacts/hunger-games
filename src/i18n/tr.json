@@ -386,13 +386,13 @@
   },
   "ingredients": {
     "description": "Bu oyun, bir ürün için çeşitli dillerdeki içerik listesi görsellerinin ön seçimini doğrulamanıza ve çıkarılan içerikleri doğrulamanıza olanak tanır.",
-    "current_text": "text from off",
-    "confidence_score": "language confidence",
-    "revert": "Revert",
-    "parsing": "Get server understanding",
-    "send": "Validate & send",
+    "current_text": "kapalı metin",
+    "confidence_score": "dil güveni",
+    "revert": "Geri al",
+    "parsing": "Sunucu anlayışını edinin",
+    "send": "Doğrula ve gönder",
     "skip": "Bu ürünü atla",
-    "getRobotoffPrediciton": "Get predictions from Robotoff"
+    "getRobotoffPrediciton": "Robotoff'tan tahminler alın"
   },
   "footer": {
     "appStore": {
