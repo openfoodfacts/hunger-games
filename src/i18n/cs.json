@@ -387,12 +387,12 @@
   "ingredients": {
     "description": "Tato hra vám umožňuje ověřit předvýběr obrázků seznamů přísad v různých jazycích pro produkt a ověřit extrahované přísady.",
     "current_text": "text from off",
-    "confidence_score": "language confidence",
-    "revert": "Revert",
-    "parsing": "Get server understanding",
-    "send": "Validate & send",
+    "confidence_score": "jazyková shoda",
+    "revert": "Vrátit",
+    "parsing": "Získat porozumění serveru",
+    "send": "Ověřit a odeslat",
     "skip": "Přeskočit tento produkt",
-    "getRobotoffPrediciton": "Get predictions from Robotoff"
+    "getRobotoffPrediciton": "Získat předpovědi od Robotoffu"
   },
   "footer": {
     "appStore": {
