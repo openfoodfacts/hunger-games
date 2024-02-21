@@ -271,9 +271,7 @@ export function IngredientAnotation(props) {
           {t("ingredients.parsing")}
         </LoadingButton>
         <Button
-          component="a"
-          target="_blank"
-          href={text && off.setIngedrient({ code, lang, text })}
+          onClick={() => off.setIngedrient({ code, lang, text })}
           variant="contained"
           disabled={!text}
           color="success"

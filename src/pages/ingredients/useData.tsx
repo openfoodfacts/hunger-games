@@ -46,14 +46,17 @@ const formatData = (product) => {
         ? key.slice("ingredients_".length)
         : "";
 
+      const { uploaded_t, uploader } = images[imageData.imgid];
       return {
         imgId: imageData.imgid,
         countryCode,
-        imageUrl: getImageUrl(baseImageUrl, imageData.imgid, "400"),
+        imageUrl: getImageUrl(baseImageUrl, imageData.imgid, "full"),
         fetchDataUrl: getIngredientExtractionUrl(
           baseImageUrl.replace("images.", "static."),
           imageData.imgid,
         ),
+        uploaded_t,
+        uploader,
         x: Number.parseFloat(x),
         y: Number.parseFloat(y),
         w: Number.parseFloat(imageData.sizes.full.w),
@@ -107,6 +110,7 @@ export default function useData(): [any[], () => void, boolean] {
           pageSize: 25,
           filters: imagesToRead,
           fields: "all",
+          countryCode: "ch",
         });
         if (isValid) {
           const rep = products

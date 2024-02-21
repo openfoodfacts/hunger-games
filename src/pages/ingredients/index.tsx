@@ -8,6 +8,9 @@ import Tab from "@mui/material/Tab";
 import TabContext from "@mui/lab/TabContext";
 import TabList from "@mui/lab/TabList";
 import TabPanel from "@mui/lab/TabPanel";
+import Link from "@mui/material/Link";
+
+import { MapInteractionCSS } from "react-map-interaction";
 
 import Loader from "../loader";
 import off from "../../off";
@@ -55,28 +58,67 @@ function ProductInterface(props) {
                 })}
               </TabList>
             </Box>
-            {selectedImages.map(({ countryCode, imageUrl, fetchDataUrl }) => {
-              return (
-                <TabPanel value={countryCode} key={`${code}-${countryCode}`}>
-                  <Stack direction="row">
-                    <img
-                      src={imageUrl}
-                      style={{
-                        width: "50%",
-                        objectFit: "contain",
-                        maxHeight: "60vh",
-                      }}
-                    />
-                    <ImageAnnotation
-                      fetchDataUrl={fetchDataUrl}
-                      code={code as string}
-                      imageLang={countryCode}
-                      offText={product[`ingredients_text_${countryCode}`] ?? ""}
-                    />
-                  </Stack>
-                </TabPanel>
-              );
-            })}
+            {selectedImages.map(
+              ({
+                countryCode,
+                imageUrl,
+                fetchDataUrl,
+                uploaded_t,
+                uploader,
+              }) => {
+                return (
+                  <TabPanel value={countryCode} key={`${code}-${countryCode}`}>
+                    <Stack direction="row">
+                      <Box sx={{ width: "50%", height: "60vh" }}>
+                        <MapInteractionCSS
+                          showControls
+                          minScale={0.5}
+                          translationBounds={{
+                            xMax: 100,
+                            yMax: 100,
+                          }}
+                        >
+                          <img
+                            src={imageUrl}
+                            style={{
+                              width: "50%",
+                              objectFit: "contain",
+                            }}
+                          />
+                        </MapInteractionCSS>
+
+                        <Typography sx={{ textAlign: "center" }}>
+                          <Link
+                            href={`https://world.openfoodfacts.org/contributor/${uploader}`}
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            {uploader}
+                          </Link>{" "}
+                          {uploaded_t &&
+                            new Date(uploaded_t * 1000).toLocaleDateString(
+                              undefined,
+                              {
+                                year: "numeric",
+                                month: "short",
+                                day: "numeric",
+                              },
+                            )}
+                        </Typography>
+                      </Box>
+                      <ImageAnnotation
+                        fetchDataUrl={fetchDataUrl}
+                        code={code as string}
+                        imageLang={countryCode}
+                        offText={
+                          product[`ingredients_text_${countryCode}`] ?? ""
+                        }
+                      />
+                    </Stack>
+                  </TabPanel>
+                );
+              },
+            )}
           </TabContext>
         )}
       </Stack>

@@ -4,7 +4,6 @@ import {
   OFF_API_URL_V2,
   OFF_IMAGE_URL,
   OFF_SEARCH,
-  OFF_URL,
 } from "./const";
 import axios from "axios";
 import combineURLs from "axios/lib/helpers/combineURLs";
@@ -164,11 +163,12 @@ const offService = {
       console.error("setIngedrient: Missing text");
     }
 
-    const urlParams = new URLSearchParams({
-      code,
-      [`ingredients_text${lang ? `_${lang}` : ""}`]: text,
-    });
-    return `${OFF_URL}/cgi/product_jqm2.pl?${urlParams.toString()}`;
+    return axios.patch(
+      `https://world.openfoodfacts.org/api/v3/product/${code}`,
+      {
+        product: { [`ingredients_text${lang ? `_${lang}` : ""}`]: text },
+      },
+    );
   },
 
   async getIngedrientParsing(editionParams: { text: string; lang: string }) {
@@ -190,11 +190,3 @@ const offService = {
 };
 
 export default offService;
-
-// Fetching products to annotate:
-
-// https://world.openfoodfacts.org/cgi/search.pl?page=0&page_size=25&json=true&action=process&fields=code,lang,image_ingredients_url,product_name,ingredient,images&tagtype_0=states&tag_contains_0=contains&tag_0=en%3Aingredients-to-be-completed&tagtype_1=states&tag_contains_1=contains&tag_1=en%3Aingredients-photo-selected
-
-// Getting prediction:
-// https://robotoff.openfoodfacts.org/api/v1/predict/ingredient_list?ocr_url=https://images.openfoodfacts.org/images/products/505/382/713/9229/41.json
-// https://images.openfoodfacts.org/images/products/505/382/713/9229/41.json
