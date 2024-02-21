@@ -22,7 +22,7 @@ import DevModeContext from "../../contexts/devMode";
 import ColorModeContext from "../../contexts/colorMode";
 import { localSettings, localSettingsKeys } from "../../localeStorageManager";
 import FooterWithLinks from "../../components/Footer";
-import countryNames  from "../../assets/countries.json";
+import countryNames from "../../assets/countries.json";
 
 export default function Settings() {
   const { t, i18n } = useTranslation();
@@ -31,7 +31,9 @@ export default function Settings() {
   const [language, setLanguage] = React.useState(i18n.language);
   const { devMode, setDevMode, visiblePages, setVisiblePages } =
     React.useContext(DevModeContext);
-  const [selectedCountry, setSelectedCountry]= React.useState(() => localSettings.fetch()['country'])
+  const [selectedCountry, setSelectedCountry] = React.useState(
+    () => localSettings.fetch()["country"],
+  );
 
   const handleDevModeChange = (event) => {
     localSettings.update(localSettingsKeys.isDevMode, event.target.checked);
@@ -53,10 +55,10 @@ export default function Settings() {
     setLanguage(e.target.value);
   };
 
-  const handleCountryChange= (e)=>{
+  const handleCountryChange = (e) => {
     setSelectedCountry(e.target.value);
-    localSettings.update(localSettingsKeys.country, e.target.value)
-  }
+    localSettings.update(localSettingsKeys.country, e.target.value);
+  };
 
   return (
     <React.Suspense fallback={<Loader />}>
