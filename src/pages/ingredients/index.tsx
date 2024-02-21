@@ -9,6 +9,8 @@ import TabContext from "@mui/lab/TabContext";
 import TabList from "@mui/lab/TabList";
 import TabPanel from "@mui/lab/TabPanel";
 import Link from "@mui/material/Link";
+import TextField from "@mui/material/TextField";
+import MenuItem from "@mui/material/MenuItem";
 
 import { MapInteractionCSS } from "react-map-interaction";
 
@@ -17,6 +19,9 @@ import off from "../../off";
 import { useTranslation } from "react-i18next";
 import useData from "./useData";
 import ImageAnnotation from "./ImageAnnotation";
+import { useSearchParams } from "react-router-dom";
+import { localSettings } from "../../localeStorageManager";
+import countryNames from "../../assets/countries.json";
 
 function ProductInterface(props) {
   const { product, next } = props;
@@ -34,8 +39,8 @@ function ProductInterface(props) {
   };
 
   return (
-    <div>
-      <Typography>
+    <div style={{ padding: "0 5px" }}>
+      <Typography variant="h6">
         {product_name || "No product name"} (
         <a href={off.getProductUrl(code)}>{code}</a>)
       </Typography>
@@ -45,13 +50,15 @@ function ProductInterface(props) {
             <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
               <TabList
                 onChange={handleChange}
-                aria-label="country code of the selected image"
+                aria-label="language code of the selected image"
               >
                 {selectedImages.map(({ countryCode }) => {
                   return (
                     <Tab
                       key={`${code}-${countryCode}`}
-                      label={countryCode ? `country ${countryCode}` : "default"}
+                      label={
+                        countryCode ? `Lang ${countryCode}` : "default lang"
+                      }
                       value={countryCode}
                     />
                   );
@@ -132,17 +139,53 @@ function ProductInterface(props) {
 export default function IngredientsPage() {
   const { t } = useTranslation();
 
-  const [data, removeHead, isLoading] = useData();
+  const localData = localSettings.fetch();
+  const [searchParams, setSearchParams] = useSearchParams();
+  const [selectedCountry, setSelectedCountry] = React.useState(
+    searchParams.get("cc") || localData["country"] || "en:france",
+  );
+
+  React.useEffect(() => {
+    setSearchParams({ cc: selectedCountry });
+  }, [selectedCountry, searchParams]);
+
+  const selectedCountryCode = React.useMemo(() => {
+    const country = countryNames.find(({ id }) => id === selectedCountry);
+    if (!country) {
+      return undefined;
+    }
+    return country.countryCode;
+  }, [selectedCountry]);
+
+  const [data, removeHead, isLoading] = useData(selectedCountryCode);
 
   return (
     <React.Suspense fallback={<Loader />}>
       <Stack
-        spacing={2}
+        spacing={1}
         sx={{
-          padding: 5,
+          px: 5,
+          pt: 4,
+          pb: 2,
         }}
       >
         <Typography>{t("ingredients.description")}</Typography>
+        <TextField
+          select
+          size="small"
+          label={t("eco-score.countryLabel")}
+          value={selectedCountry}
+          onChange={(event) => {
+            setSelectedCountry(event.target.value);
+          }}
+          sx={{ width: 200 }}
+        >
+          {countryNames.map((country) => (
+            <MenuItem value={country.id} key={country.id}>
+              {country.label}
+            </MenuItem>
+          ))}
+        </TextField>
       </Stack>
       {/* <IngeredientDisplay /> */}
       {isLoading ? (

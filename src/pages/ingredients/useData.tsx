@@ -86,8 +86,9 @@ const formatData = (product) => {
   };
 };
 
-export default function useData(): [any[], () => void, boolean] {
+export default function useData(countryCode): [any[], () => void, boolean] {
   const [data, setData] = React.useState([]);
+  const prevCountry = React.useRef(countryCode);
   const [isLoading, setIsLoading] = React.useState(true);
   const [page, setPage] = React.useState(() => {
     return 0;
@@ -110,7 +111,7 @@ export default function useData(): [any[], () => void, boolean] {
           pageSize: 25,
           filters: imagesToRead,
           fields: "all",
-          countryCode: "ch",
+          countryCode: countryCode || "world",
         });
         if (isValid) {
           const rep = products
@@ -123,7 +124,12 @@ export default function useData(): [any[], () => void, boolean] {
               return isNew;
             })
             .map(formatData);
-          setData((prev) => [...prev, ...rep]);
+          if (prevCountry.current !== countryCode) {
+            setData(rep);
+            prevCountry.current = countryCode;
+          } else {
+            setData((prev) => [...prev, ...rep]);
+          }
           setIsLoading(false);
         }
       } catch (error) {
@@ -135,7 +141,7 @@ export default function useData(): [any[], () => void, boolean] {
     return () => {
       isValid = false;
     };
-  }, [page]);
+  }, [page, countryCode]);
 
   const removeHead = React.useCallback(() => {
     setData((prev) => [...prev.slice(1)]);

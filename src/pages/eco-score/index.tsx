@@ -149,14 +149,12 @@ const ecoScoreCards = [
   },
 ];
 
-
-
 export default function EcoScore() {
   const { t } = useTranslation();
-  const localData= localSettings.fetch();
+  const localData = localSettings.fetch();
   const [searchParams, setSearchParams] = useSearchParams();
   const [selectedCountry, setSelectedCountry] = React.useState(
-    searchParams.get("cc") || localData['country'] || "en:france",
+    searchParams.get("cc") || localData["country"] || "en:france",
   );
 
   React.useEffect(() => {
