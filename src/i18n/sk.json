@@ -351,7 +351,7 @@
     },
     "history": {
       "title": "História relácie",
-      "status": "status",
+      "status": "stav",
       "product name": "Názov produktu",
       "view": "Zobraziť stránku",
       "edit": "Upraviť stránku",
@@ -372,7 +372,7 @@
     "image_alt": "orezaný obrázok",
     "label": "Označte detekciu loga Nutri-Score podľa šarže.",
     "description": "Ak to chcete urobiť, vyberte všetky obrázky zobrazujúce správnu/nesprávnu hodnotu Nutri-Score ({{label}}) a kliknutím na spodné tlačidlá povedzte, či ste vybrali sadu správnych alebo nesprávnych.",
-    "images_remaining": "Still {{remaining}} to annotate",
+    "images_remaining": "Ešte {{remaining}} na anotáciu",
     "image_sizes": "Veľkosť obrázka",
     "zoom_on_logo": "Priblížiť logo",
     "select_all": "Označiť všetko",
@@ -386,13 +386,13 @@
   },
   "ingredients": {
     "description": "Táto hra vám umožňuje overiť predbežný výber obrázkov zoznamov prísad v rôznych jazykoch pre produkt a overiť extrahované prísady.",
-    "current_text": "text from off",
-    "confidence_score": "language confidence",
-    "revert": "Revert",
-    "parsing": "Get server understanding",
-    "send": "Validate & send",
+    "current_text": "text vypnutý",
+    "confidence_score": "jazyková zhoda",
+    "revert": "Vrátiť",
+    "parsing": "Získajte pochopenie servera",
+    "send": "Overiť a odoslať",
     "skip": "Preskočiť tento produkt",
-    "getRobotoffPrediciton": "Get predictions from Robotoff"
+    "getRobotoffPrediciton": "Získajte predpovede od Robotoff"
   },
   "footer": {
     "appStore": {
