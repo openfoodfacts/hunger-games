@@ -386,13 +386,13 @@
   },
   "ingredients": {
     "description": "Este jogo permite-lhe validar a pré-seleção de imagens de listas de ingredientes em vários idiomas para um produto e validar os ingredientes extraídos.",
-    "current_text": "text from off",
-    "confidence_score": "language confidence",
-    "revert": "Revert",
-    "parsing": "Get server understanding",
-    "send": "Validate & send",
+    "current_text": "ingredientes",
+    "confidence_score": "Confiança no idioma",
+    "revert": "Desfazer",
+    "parsing": "Obter compreensão do servidor",
+    "send": "Validar e enviar",
     "skip": "Ignorar este produto",
-    "getRobotoffPrediciton": "Get predictions from Robotoff"
+    "getRobotoffPrediciton": "Obtenha previsões de Robotoff"
   },
   "footer": {
     "appStore": {
