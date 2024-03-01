@@ -256,12 +256,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:^7.0.0, @babel/runtime@npm:^7.12.1, @babel/runtime@npm:^7.12.13, @babel/runtime@npm:^7.12.5, @babel/runtime@npm:^7.18.3, @babel/runtime@npm:^7.20.6, @babel/runtime@npm:^7.23.2, @babel/runtime@npm:^7.5.5, @babel/runtime@npm:^7.8.7, @babel/runtime@npm:^7.9.2":
+"@babel/runtime@npm:^7.0.0, @babel/runtime@npm:^7.12.1, @babel/runtime@npm:^7.12.13, @babel/runtime@npm:^7.12.5, @babel/runtime@npm:^7.18.3, @babel/runtime@npm:^7.23.2, @babel/runtime@npm:^7.5.5, @babel/runtime@npm:^7.8.7, @babel/runtime@npm:^7.9.2":
   version: 7.23.2
   resolution: "@babel/runtime@npm:7.23.2"
   dependencies:
     regenerator-runtime: ^0.14.0
   checksum: 6c4df4839ec75ca10175f636d6362f91df8a3137f86b38f6cd3a4c90668a0fe8e9281d320958f4fbd43b394988958585a17c3aab2a4ea6bf7316b22916a371fb
+  languageName: node
+  linkType: hard
+
+"@babel/runtime@npm:^7.23.9":
+  version: 7.24.0
+  resolution: "@babel/runtime@npm:7.24.0"
+  dependencies:
+    regenerator-runtime: ^0.14.0
+  checksum: 7a6a5d40fbdd68491ec183ba2e631c07415119960083b4fd76564cce3751e9acd2f12ab89575e38496fa389fa06d458732776e69ee1858e366cc3fbdb049f847
   languageName: node
   linkType: hard
 
@@ -3027,12 +3036,12 @@ __metadata:
     eslint-plugin-prettier: ^5.0.1
     eslint-plugin-react: ^7.33.2
     husky: ^8.0.2
-    i18next: ^23.6.0
+    i18next: ^23.10.0
     lodash.isequal: ^4.5.0
     prettier: ^3.0.0
     react: ^18.2.0
     react-dom: ^18.2.0
-    react-i18next: ^12.3.1
+    react-i18next: ^14.0.5
     react-map-interaction: ^2.1.0
     react-redux: ^8.1.3
     react-router-dom: ^6.18.0
@@ -3055,12 +3064,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"i18next@npm:^23.6.0":
-  version: 23.7.1
-  resolution: "i18next@npm:23.7.1"
+"i18next@npm:^23.10.0":
+  version: 23.10.0
+  resolution: "i18next@npm:23.10.0"
   dependencies:
     "@babel/runtime": ^7.23.2
-  checksum: f3527fcaf03134479d2ad061d497e83a5242399f382abfe320a3ec96eca8dc31b85be465adec2395099e80f25616aa389dd370522636cb9f65779ce460491284
+  checksum: 7b476071787c2b909517c86828b17ca7a7ae98c848a052a1c55f9cff114c2307975dcf8dcc30e43ca64389fb24cd2b76382d002d5c3ed0a9a900563813f61863
   languageName: node
   linkType: hard
 
@@ -4312,21 +4321,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-i18next@npm:^12.3.1":
-  version: 12.3.1
-  resolution: "react-i18next@npm:12.3.1"
+"react-i18next@npm:^14.0.5":
+  version: 14.0.5
+  resolution: "react-i18next@npm:14.0.5"
   dependencies:
-    "@babel/runtime": ^7.20.6
+    "@babel/runtime": ^7.23.9
     html-parse-stringify: ^3.0.1
   peerDependencies:
-    i18next: ">= 19.0.0"
+    i18next: ">= 23.2.3"
     react: ">= 16.8.0"
   peerDependenciesMeta:
     react-dom:
       optional: true
     react-native:
       optional: true
-  checksum: fe3f360e5184bc63861734e94bf625a09b9ec0d28fab41779a68758af258fd1737dde25ff7a88ddb66c1571a3e3de5b3403825a91b4949bf9832a00615acb87a
+  checksum: 54fe5ffd887d633852ea7e82e98b6ef057facf45dec512469dd0e43ae64d9450d2bafe7c85c87fd650cf6dad1bf81727a89fba23af0508b7a806153d459fc5cc
   languageName: node
   linkType: hard
 
