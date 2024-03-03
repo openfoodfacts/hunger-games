@@ -166,7 +166,7 @@
     "human_required": "Wymagany człowiek",
     "edit_product": "Otwórz edycję produktu",
     "view_product": "Otwórz stronę produktu",
-    "view_crops_for_this_product": "Annotate product logos"
+    "view_crops_for_this_product": "Adnotuj loga produktów"
   },
   "logos": {
     "annotation": "Dodatkowe informacje: ",
@@ -343,9 +343,9 @@
       "nutriment_fat": "Tłuszcz",
       "nutriment_saturated-fat": "Tłuszcz nasycony",
       "nutriment_carbohydrates": "Węglowodany",
-      "nutriment_sugars": "Sugar",
-      "nutriment_proteins": "Protein content",
-      "nutriment_fiber": "Fibres",
+      "nutriment_sugars": "Cukry",
+      "nutriment_proteins": "Zawartość białka",
+      "nutriment_fiber": "Włókna",
       "nutriment_salt": "Sól",
       "nutriment_sodium": "Sód"
     },
@@ -387,12 +387,12 @@
   "ingredients": {
     "description": "This game allows you to validate the pre-selection of images of ingredients lists in various languages for a product, and validate the extracted ingredients.",
     "current_text": "text from off",
-    "confidence_score": "language confidence",
-    "revert": "Revert",
+    "confidence_score": "pewność językowa",
+    "revert": "Przywróć",
     "parsing": "Get server understanding",
-    "send": "Validate & send",
+    "send": "Zatwierdź i wyślij",
     "skip": "Pomiń ten produkt",
-    "getRobotoffPrediciton": "Get predictions from Robotoff"
+    "getRobotoffPrediciton": "Otrzymuj prognozy od Robotoff"
   },
   "footer": {
     "appStore": {
@@ -401,11 +401,11 @@
     },
     "playStore": {
       "title": "Sklep Play",
-      "subtitle": "Get it on"
+      "subtitle": "Dostępne na"
     },
     "microsoft": {
       "title": "Microsoft",
-      "subtitle": "Get it from"
+      "subtitle": "Dostępne na"
     },
     "androidAPK": {
       "title": "Android APK",
