@@ -386,13 +386,13 @@
   },
   "ingredients": {
     "description": "Tämän pelin avulla voit vahvistaa tuotteen ainesosaluetteloiden kuvien esivalinnan eri kielillä ja validoida otetut ainesosat.",
-    "current_text": "text from off",
-    "confidence_score": "language confidence",
-    "revert": "Revert",
-    "parsing": "Get server understanding",
-    "send": "Validate & send",
+    "current_text": "teksti pois päältä",
+    "confidence_score": "kielen luotettavuus",
+    "revert": "Palauta",
+    "parsing": "Hanki palvelimen ymmärrystä",
+    "send": "Vahvista ja lähetä",
     "skip": "Ohita tämä tuote",
-    "getRobotoffPrediciton": "Get predictions from Robotoff"
+    "getRobotoffPrediciton": "Hanki ennusteita Robotoffilta"
   },
   "footer": {
     "appStore": {
