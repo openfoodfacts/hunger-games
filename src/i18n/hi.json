@@ -1,38 +1,38 @@
 {
   "home": {
     "game_selector": {
-      "title": "What game would you like to play?",
+      "title": "आप कौन सा खेल खेलना चाहेंगे?",
       "cards": {
         "questions": {
-          "title": "Questions",
-          "description": "Tell us if the given image answers the questions"
+          "title": "सवाल",
+          "description": "यदि दी गई छवि प्रश्नों का उत्तर देती है तो हमें बताएं"
         },
         "logos": {
-          "title": "Logos",
-          "description": "Find all the logos matching the given logo"
+          "title": "लोगो",
+          "description": "दिए गए लोगो से मेल खाने वाले सभी लोगो ढूंढें"
         },
         "eco_score": {
-          "title": "Eco-score",
-          "description": "Annotate the questions with the highest value"
+          "title": "इको-स्कोर",
+          "description": "उच्चतम मूल्य वाले प्रश्नों की टिप्पणी करें"
         }
       }
     },
     "account_band": {
-      "title": "Want to make your contribution count? Create an account or sign in on Open Food Facts!",
+      "title": "क्या आप अपना योगदान गिनवाना चाहते हैं? ओपन फूड फैक्ट्स पर एक खाता बनाएं या साइन इन करें!",
       "log_in": "उपयोगकर्ता नाम",
       "sign_up": "साइन अप करें",
-      "contribution_details": "Learn why your contribution matters"
+      "contribution_details": "जानें कि आपका योगदान क्यों मायने रखता है"
     },
-    "saved_filters": "Saved Filters",
+    "saved_filters": "सहेजें गए फिल्टर",
     "contribution_modal": {
-      "title": "Your contribution matters",
-      "information": "Hunger Games is an effort to leverage the results of our OCR and artificial intelligence. When you use Hunger Games by Open Food Facts, you improve our entire database which helps the community make better food choices. We gather your annotations and use them to make Open Food Facts more accurate and efficient.",
-      "thank_you": "Thank you for helping us improve Open Food Facts so that more people can use it easily."
+      "title": "आपका योगदान मायने रखता है",
+      "information": "हंगर गेम्स हमारे ओसीआर और कृत्रिम बुद्धिमत्ता के परिणामों का लाभ उठाने का एक प्रयास है। जब आप ओपन फूड फैक्ट्स द्वारा हंगर गेम्स का उपयोग करते हैं, तो आप हमारे संपूर्ण डेटाबेस में सुधार करते हैं जो समुदाय को बेहतर भोजन विकल्प चुनने में मदद करता है। हम आपके एनोटेशन एकत्र करते हैं और ओपन फूड फैक्ट्स को अधिक सटीक और कुशल बनाने के लिए उनका उपयोग करते हैं।",
+      "thank_you": "ओपन फूड फैक्ट्स को बेहतर बनाने में हमारी मदद करने के लिए धन्यवाद ताकि अधिक लोग इसका आसानी से उपयोग कर सकें।"
     },
     "statistics": {
-      "title": "{{userName}} statistics:",
+      "title": "{{userName}} आँकड़े:",
       "editorCount": {
-        "title": "Editor",
+        "title": "संपादक",
         "description": "किये गये संस्करणों की संख्या"
       },
       "contributorCount": {
@@ -75,7 +75,7 @@
     "annotations": "एनोटेशन",
     "last_annotations": "अंतिम टिप्पणियाँ",
     "remaining_annotations": "शेष प्रश्न",
-    "annotated_annotations": "Annotated",
+    "annotated_annotations": "टिप्पणी",
     "filters": {
       "active_filter_number": "+{{count}} फिल्टर",
       "active_filter_number_one": "+{{count}} फिल्टर",
@@ -121,66 +121,66 @@
   "menu": {
     "title": "Hunger Games",
     "games": "खेल",
-    "questions": "Questions",
-    "logos": "Logos",
+    "questions": "सवाल",
+    "logos": "लोगो",
     "logos-annotation": "लोगो टिप्पणि",
     "logos-search": "लोगो खोजें",
     "logos-product-search": "प्रति उत्पाद एनोटेशन",
     "logos-deep-search": "अनंत व्याख्या",
-    "manage": "Manage",
-    "insights": "Insights",
+    "manage": "मैनेज करें",
+    "insights": "विवरण",
     "nutritions": "पोषण तथ्य",
     "settings": "सेटिंग्स",
-    "eco-score": "Eco-score",
-    "dashboard": "Logos dashboard",
-    "tour": "Show tour",
-    "logged_in_user": "Logged as {{userName}}",
-    "log_in": "Click to login"
+    "eco-score": "इको-स्कोर",
+    "dashboard": "लोगो डैशबोर्ड",
+    "tour": "दौरा दिखाओ",
+    "logged_in_user": "{{userName}} के रूप में लॉग इन किया गया",
+    "log_in": "लॉग इन करने के लिए क्लिक करें"
   },
   "insights": {
-    "insights": "Insights",
+    "insights": "विवरण",
     "barcode": "बारकोड",
-    "barcode_placeholder": "barcode",
-    "value_tag": "Value tag",
+    "barcode_placeholder": "बारकोड",
+    "value_tag": "मूल्य टैग",
     "value_placeholder": "ex: en:mueslis, bjorg,...",
-    "type": "Type",
-    "annotated": "Annotated",
-    "annotation": "Annotation",
-    "not_annotated": "Not annotated",
-    "all": "All",
+    "type": "प्रकार",
+    "annotated": "टिप्पणी",
+    "annotation": "टिप्पणी",
+    "not_annotated": "एनोटेट नहीं किया गया",
+    "all": "सभी",
     "label": "लेबल",
-    "product_weight": "Product weight",
+    "product_weight": "उत्पाद - भार",
     "category": "श्रेणी",
-    "expiration_date": "Expiration date",
-    "packager_code": "Packager code",
-    "skipped": "Skipped (-1)",
-    "rejected": "Rejected (0)",
-    "accepted": "Accepted (1)",
+    "expiration_date": "समाप्ति तिथि",
+    "packager_code": "पैकेजर कोड",
+    "skipped": "छोड़ा गया (-1)",
+    "rejected": "अस्वीकृत (0)",
+    "accepted": "स्वीकृत (1)",
     "search": "ढूंढें",
-    "count": "Count",
-    "id": "Id",
-    "value": "Value",
-    "created_at": "Created at",
-    "completed_at": "Completed at",
-    "automatic": "Automatic",
-    "human_required": "Human required",
-    "edit_product": "Open product edit",
-    "view_product": "Open product page",
-    "view_crops_for_this_product": "Annotate product logos"
+    "count": "गिनती",
+    "id": "आईडी",
+    "value": "मूल्य",
+    "created_at": "बनाया गया",
+    "completed_at": "पर पूरा हुआ",
+    "automatic": "स्वचालित",
+    "human_required": "मानव की आवश्यकता है",
+    "edit_product": "उत्पाद संपादन खोलें",
+    "view_product": "उत्पाद पृष्ठ खोलें",
+    "view_crops_for_this_product": "उत्पाद लोगो को एनोटेट करें"
   },
   "logos": {
-    "annotation": "Annotation: ",
-    "annotations": "Logo annotations",
-    "task_description": "Select all logos that are exactly the same, and give them a name like \"en:EU Organic\" and a type like \"label\".",
-    "select_all": "Select all",
+    "annotation": "टिप्पणी: ",
+    "annotations": "लोगो टिप्पणि",
+    "task_description": "उन सभी लोगो का चयन करें जो बिल्कुल समान हैं, और उन्हें \"en:EU ऑर्गेनिक\" जैसा नाम और \"लेबल\" जैसा एक प्रकार दें।",
+    "select_all": "सभी चुनें",
     "unselect_all": "Unselect all",
     "distance": "Distance:",
-    "value": "Value",
+    "value": "मूल्य",
     "submit": "Submit",
-    "type": "Type",
+    "type": "प्रकार",
     "label": "लेबल",
     "brand": "ब्रांड",
-    "packager_code": "Packager code",
+    "packager_code": "पैकेजर कोड",
     "packaging": "पैकेजिंग",
     "qr_code": "QR code",
     "category": "श्रेणी",
@@ -335,7 +335,7 @@
     "unselect_picture": "No nutrition info",
     "basis": "data for: ",
     "servingSize": "serving size",
-    "value": "Value",
+    "value": "मूल्य",
     "unit": "Unit",
     "nutriments": {
       "nutriment_energy-kj": "ऊर्जा (kJ)",
@@ -375,7 +375,7 @@
     "images_remaining": "Still {{remaining}} to annotate",
     "image_sizes": "Image sizes",
     "zoom_on_logo": "Zoom on logo",
-    "select_all": "Select all",
+    "select_all": "सभी चुनें",
     "deselect_all": "Unselect all",
     "incorrect": "Wrong",
     "correct": "Correct ({{label}})"
