@@ -267,6 +267,8 @@ export function IngredientAnotation(props) {
           onClick={() => fetchIngredients(text, lang)}
           fullWidth
           loading={isLoading}
+          disabled={!text}
+          variant="outlined"
         >
           {t("ingredients.parsing")}
         </LoadingButton>

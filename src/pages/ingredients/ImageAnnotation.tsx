@@ -92,7 +92,7 @@ function Annotation({
             ),
           )}
       {showOCR && (
-        <p>
+        <p style={{ marginTop: 5 * 4 }}>
           {splitText(data).map(({ isIngredient, text }, i) => (
             <React.Fragment key={`${text}-${i}`}>
               {isIngredient ? (
@@ -108,15 +108,16 @@ function Annotation({
         </p>
       )}
 
-      <Button
-        sx={{ my: 5 }}
-        variant="outlined"
-        onClick={() => {
-          setShowOCR((p) => !p);
-        }}
-      >
-        {showOCR ? "Hidde OCR" : "Show OCR"}
-      </Button>
+      {data && (
+        <Button
+          variant="outlined"
+          onClick={() => {
+            setShowOCR((p) => !p);
+          }}
+        >
+          {showOCR ? "Hidde OCR" : "Show OCR"}
+        </Button>
+      )}
     </React.Fragment>
   );
 }
@@ -142,6 +143,7 @@ export default function ImageAnnotation({
       />
       <Button
         fullWidth
+        sx={{ mt: 5 }}
         disabled={isLoading || error !== null || data !== null}
         onClick={getData}
         variant="outlined"
