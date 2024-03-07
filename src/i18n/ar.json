@@ -166,7 +166,7 @@
     "human_required": "إنسان مطلوب",
     "edit_product": "فتح تحرير المنتج",
     "view_product": "فتح صفحة المنتج",
-    "view_crops_for_this_product": "Annotate product logos"
+    "view_crops_for_this_product": "علق على شعارات المنتج"
   },
   "logos": {
     "annotation": "الشرح: ",
@@ -181,7 +181,7 @@
     "label": "al3alama",
     "brand": "العلامة التجارية",
     "packager_code": "رمز المعبئ",
-    "packaging": "Packaging",
+    "packaging": "التغليف",
     "qr_code": "رمز الإستجابة السريع",
     "category": "فئة",
     "nutrition_label": "طابع المكونات الغذائية",
@@ -254,7 +254,7 @@
     "welcome": {
       "page1": {
         "title": "مرحبا بكم في Hunger Games",
-        "text1": "Hunger Games is a collection of mini-games that help contribute to Open Food Facts in many ways. You can play our really exciting games from anywhere. Here is a guided tour of the entire website which will get you started.",
+        "text1": "Hunger Games عبارة عن مجموعة من الألعاب المصغرة التي تساعد في المساهمة في Open Food Facts بعدة طرق. يمكنك لعب ألعابنا المثيرة حقًا من أي مكان. هنا جولة إرشادية للموقع بأكمله والتي ستساعدك على البدء.",
         "text2": "تأكد من تسجيل الدخول إلى موقع Open Food Facts للحصول على رصيد مقابل مساهماتك. إذا قمت بخطأ ما، يرجى أخذ الوقت الكافي لتصحيحه عن طريق التوجه إلى الموقع.",
         "text3": "في حالة وجود أي شك حول الألعاب، اضغط على أيقونة علامة الاستفهام في أعلى يمين الصفحة، ويمكنك التواصل معنا على قناة #hunger-games"
       },
@@ -263,13 +263,13 @@
         "text1": "هل ينتمي المنتج الغذائي إلى هذه العلامة التجارية؟",
         "text2": "أجب ببساطة بـ <strong>نعم/لا</strong>! لا تعرف الجواب؟ هذا ما يرام، فقط تخطي ذلك.",
         "text3": "يمكنك أيضًا استخدام اختصارات لوحة المفاتيح: y وn وk.",
-        "text4": "You can <strong>filter</strong> the products based on country, brands, popularity and much more!",
-        "text5": "If you don't want to do this every single time, you can also <strong>save the filters</strong> by clicking on the star. Next time you come back, find the saved filters on the home page itself"
+        "text4": "تستطيع <strong>تصفية</strong> المنتجات بناءً على الدولة والعلامات التجارية والشعبية وغير ذلك بكثير!",
+        "text5": "إذا كنت لا تريد القيام بذلك في كل مرة، يمكنك أيضًا <strong>حفظ التصفيات</strong> من خلال النقر على النجمة. في المرة القادمة التي تعود فيها، ابحث عن التصفيات المحفوظة على الصفحة الرئيسية نفسها"
       },
       "page3": {
-        "title": "Logos Game",
-        "text1": "Another popular game is the logos game where you have to <strong>select all the logos</strong> you feel are the same.",
-        "text2": "As shown in the example, once you select all the similar logos, just type their value and select where it is a brand, a label or something else. It's that simple!"
+        "title": "لعبة الشعارات",
+        "text1": "لعبة أخرى شائعة هي لعبة الشعارات حيث يتعين عليك <strong>تحديد جميع الشعارات</strong> التي تشعر أنها متماثلة.",
+        "text2": "كما هو موضح في المثال، بمجرد تحديد جميع الشعارات المشابهة، ما عليك سوى كتابة قيمتها وتحديد مكان العلامة التجارية أو الملصق أو أي شيء آخر. بكل بساطة!"
       },
       "page4": {
         "title": "Eco-Score Questions Game",
