@@ -27,7 +27,7 @@ function ProductInterface(props) {
   const { product, next } = props;
   const { t } = useTranslation();
 
-  const { selectedImages, product_name, code } = product;
+  const { selectedImages, product_name, code, scans_n } = product;
   const [imageTab, setImageTab] = React.useState(selectedImages[0].countryCode);
 
   React.useEffect(() => {
@@ -41,8 +41,9 @@ function ProductInterface(props) {
   return (
     <div style={{ padding: "0 5px" }}>
       <Typography variant="h6">
-        {product_name || "No product name"} (
-        <a href={off.getProductUrl(code)}>{code}</a>)
+        {product_name || "No product name"} (scan: {scans_n})
+        <br />
+        <a href={off.getProductUrl(code)}>{code}</a>
       </Typography>
       <Stack direction="column">
         {selectedImages?.length > 0 && (
