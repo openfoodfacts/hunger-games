@@ -5,6 +5,7 @@ import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 import Tooltip from "@mui/material/Tooltip";
 import LoadingButton from "@mui/lab/LoadingButton";
+import { useTheme } from "@mui/material";
 
 import { useTranslation } from "react-i18next";
 
@@ -45,11 +46,21 @@ function ColorText({
   text: string;
   ingredients?: ParsedIngredientsType[];
 }) {
+  const theme = useTheme();
+  const isDark = theme.palette.mode === "dark";
+
+  const lightColors = ["gray", "black"];
+  const darkColors = ["lightgray", "white"];
+
   if (ingredients === undefined) {
     // Without parsing, we just split with coma
     return text.split(",").map((txt, i) => (
       <React.Fragment key={i}>
-        <span style={{ color: i % 2 === 0 ? "gray" : "black" }}>{txt}</span>
+        <span
+          style={{ color: isDark ? darkColors[i % 2] : lightColors[i % 2] }}
+        >
+          {txt}
+        </span>
         {i === text.split(",").length - 1 ? "" : ","}
       </React.Fragment>
     ));
@@ -66,8 +77,6 @@ function ColorText({
       // Don't ask me why OFF use this specific character
       const ingredientText = ingredient.text.replace("‚", ",");
 
-      console.log(ingredientText);
-      console.log(text.slice(lastIndex));
       const startIndex = text.indexOf(ingredientText, lastIndex);
       if (startIndex < 0) {
         return null;
@@ -115,6 +124,9 @@ export function useIngredientParsing() {
 export function IngeredientDisplay(props) {
   const { text, onChange, parsings } = props;
 
+  const theme = useTheme();
+  const isDark = theme.palette.mode === "dark";
+
   return (
     <div
       id="demoSource-:rd:"
@@ -134,7 +146,7 @@ export function IngeredientDisplay(props) {
         float: "left",
         minWidth: "100%",
         minHeight: "3rem",
-        border: "solid black 1px",
+        border: `solid ${isDark ? "white" : "black"} 1px`,
       }}
     >
       <pre
@@ -205,6 +217,7 @@ export function IngeredientDisplay(props) {
           resize: "none",
           overflow: "hidden",
           padding: "16px",
+          color: isDark ? "white" : "black",
           WebkitTextFillColor: "transparent",
         }}
         value={text}
