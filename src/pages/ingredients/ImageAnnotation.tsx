@@ -115,7 +115,7 @@ function Annotation({
             setShowOCR((p) => !p);
           }}
         >
-          {showOCR ? "Hidde OCR" : "Show OCR"}
+          {showOCR ? "Hide OCR" : "Show OCR"}
         </Button>
       )}
     </React.Fragment>
