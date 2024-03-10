@@ -30,6 +30,7 @@ const formatData = (product) => {
     product_name,
     ingredient,
     images,
+    scans_n,
     ...other
   } = product;
 
@@ -81,6 +82,7 @@ const formatData = (product) => {
     image_ingredients_url,
     product_name,
     ingredient,
+    scans_n,
     ...ingredientTexts,
     // images,
   };
@@ -124,6 +126,7 @@ export default function useData(countryCode): [any[], () => void, boolean] {
               return isNew;
             })
             .map(formatData);
+
           if (prevCountry.current !== countryCode) {
             setData(rep);
             prevCountry.current = countryCode;
