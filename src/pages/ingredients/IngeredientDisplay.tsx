@@ -75,9 +75,9 @@ function ColorText({
   return [
     ...flattendIngredients.map((ingredient, i) => {
       // Don't ask me why OFF use this specific character
-      const ingredientText = ingredient.text.replace("‚", ",");
+      const ingredientText = ingredient.text.replace("‚", ",").toLowerCase();
 
-      const startIndex = text.indexOf(ingredientText, lastIndex);
+      const startIndex = text.toLowerCase().indexOf(ingredientText, lastIndex);
       if (startIndex < 0) {
         return null;
       }
