@@ -385,20 +385,27 @@
     "countryLabel": "מדינה"
   },
   "ingredients": {
-    "description": "המשחק הזה מאפשר לך לאמת אוסף של תמונות שנבחר מראש של רשימות רכיבים במגוון שפות למוצר ולאמת את הרכיבים שחולצו."
+    "description": "המשחק הזה מאפשר לך לאמת אוסף של תמונות שנבחר מראש של רשימות רכיבים במגוון שפות למוצר ולאמת את הרכיבים שחולצו.",
+    "current_text": "טקסט מ־off",
+    "confidence_score": "ביטחון בשפה",
+    "revert": "החזרה",
+    "parsing": "קבל הבנה מהשרת",
+    "send": "אימות ושליחה",
+    "skip": "דילוג על מוצר זה",
+    "getRobotoffPrediciton": "קבלת תחזיות מ־Robotoff"
   },
   "footer": {
     "appStore": {
       "title": "App Store",
-      "subtitle": "Download on the"
+      "subtitle": "להורדה דרך"
     },
     "playStore": {
       "title": "Play Store",
-      "subtitle": "Get it on"
+      "subtitle": "אפשר לקבל דרך"
     },
     "microsoft": {
-      "title": "Microsoft",
-      "subtitle": "Get it from"
+      "title": "מיקרוסופט",
+      "subtitle": "אפשר לקבל דרך"
     },
     "androidAPK": {
       "title": "APK ל־Android",

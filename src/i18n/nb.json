@@ -385,7 +385,14 @@
     "countryLabel": "Land"
   },
   "ingredients": {
-    "description": "Dette spillet lar deg validere forhåndsutvalget for bilder av ingredienslister på ulike språk for et produkt, og godkjenne ingrediensene som ble henta ut."
+    "description": "Dette spillet lar deg validere forhåndsutvalget for bilder av ingredienslister på ulike språk for et produkt, og godkjenne ingrediensene som ble henta ut.",
+    "current_text": "text from off",
+    "confidence_score": "language confidence",
+    "revert": "Revert",
+    "parsing": "Get server understanding",
+    "send": "Bekreft og send",
+    "skip": "Hopp over dette produktet",
+    "getRobotoffPrediciton": "Get predictions from Robotoff"
   },
   "footer": {
     "appStore": {
