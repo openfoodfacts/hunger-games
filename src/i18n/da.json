@@ -166,7 +166,7 @@
     "human_required": "Person nødvendig",
     "edit_product": "Åbn produktredigering",
     "view_product": "Åbn produktside",
-    "view_crops_for_this_product": "Annotate product logos"
+    "view_crops_for_this_product": "Annotér produktlogoer"
   },
   "logos": {
     "annotation": "Anmærkning: ",
@@ -200,22 +200,22 @@
     "search_specific": "Søg efter bestemt logo",
     "load_more": "Indlæs mere",
     "no_results": "Intet logo fundet",
-    "result_count": "Shows {{showing}} on {{available}} available",
+    "result_count": "Viser {{showing}} på {{available}} tilgængelig",
     "flag": "Noget galt? Anmeld/markér fotoet!",
     "unflag": "Afmarkér fotoet",
-    "crop_image_title": "crop of the logo",
+    "crop_image_title": "beskæring af logoet",
     "no_more_questions": "Ikke flere spørgsmål om dette logo. Prøv evt. at finde flere logoer med flg. spil.",
     "loading_messages": {
       "pending_reference_logos": "Flere logoeksempler indlæses for at initialisere søgningen",
       "failed_reference_logos": "Intet logo med denne anmærkning fundet. Prøv at bruge flg. spil til at kommentere nogle af dem."
     },
     "deep_search": {
-      "title": "Logo search",
-      "description": "Select a logo you want to look for, and let's go to catch them all. For every logo you annotate, we will fetch it's neighbors such that you might never stop to annotate. (Press Shift to select range of logos)",
-      "ref_logos": "Reference logos (logo already annotated with this value)",
-      "remaining": "Remaining to annotate",
-      "select_all": "Select All",
-      "unselect_all": "Deselect All"
+      "title": "Logosøgning",
+      "description": "Vælg et logo, du leder efter, og kom i gang med at fange dem alle. For hvert logo, du annoterer, henter vi dets naboer, så du aldrig stopper med at annotere. (Tryk på Shift for at vælge en række logoer)",
+      "ref_logos": "Referencelogoer (logoer, der allerede er annoteret med denne værdi)",
+      "remaining": "Tilbage at annotere",
+      "select_all": "Vælg Alle",
+      "unselect_all": "Fravælg Alle"
     }
   },
   "settings": {
@@ -228,21 +228,21 @@
     "dev_page_toggle": "Vis {{name}}side",
     "join_community": "Deltag i fællesskabet",
     "text1": "Open Food Facts er et samarbejdsprojekt bygget af titusindvis af frivillige og styret af en non-profit organisation med 8 ansatte. Vi har brug for dine donationer til at finansiere Open Food Facts 2024-budgettet og fortsat kunne udvikle projektet.",
-    "thank_you": "Thank you",
+    "thank_you": "Tak",
     "donate": "Donér",
     "join_the_community": {
-      "discover_our": "Discover our ",
-      "code_of_conduct": "Code of conduct ",
-      "join_us_on": "Join us on ",
+      "discover_our": "Oplev vores ",
+      "code_of_conduct": "Adfærdskodeks ",
+      "join_us_on": "Vær med på ",
       "forum": "Forum",
-      "subscribe_to_our": "Subscribe to our ",
-      "newsletter": "newsletter"
+      "subscribe_to_our": "Abonnér til vores ",
+      "newsletter": "nyhedsbrev"
     },
     "discover_the_project": "Gå på opdagelse i projektet",
     "Who_we_are": "Hvem vi er",
     "Vision_Mission_Values_and_Programs": "Vision, Mission, Værdier og Programmer",
     "FAQS": "FAQS",
-    "open_Food_Facts_blog": "Open Food Facts blog",
+    "open_Food_Facts_blog": "Åbn Food Facts-blog",
     "Press": "Presse",
     "Open_Food_Facts_wiki": "Open Food Facts wiki (en)",
     "Translators": "Oversættere",
@@ -343,9 +343,9 @@
       "nutriment_fat": "Fedt",
       "nutriment_saturated-fat": "Mættet fedt",
       "nutriment_carbohydrates": "Kulhydrat",
-      "nutriment_sugars": "Sugar",
-      "nutriment_proteins": "Protein content",
-      "nutriment_fiber": "Fibres",
+      "nutriment_sugars": "Sukker",
+      "nutriment_proteins": "Proteinindhold",
+      "nutriment_fiber": "Fibre",
       "nutriment_salt": "Salt",
       "nutriment_sodium": "Natrium"
     },
@@ -385,7 +385,7 @@
     "countryLabel": "Land"
   },
   "ingredients": {
-    "description": "This game allows you to validate the pre-selection of images of ingredients lists in various languages for a product, and validate the extracted ingredients.",
+    "description": "Dette spil lader dig validere forvalget af billeder af ingredienslister på forskellige sprog for et produkt og validere de udtrukne ingredienser.",
     "current_text": "text from off",
     "confidence_score": "language confidence",
     "revert": "Revert",
