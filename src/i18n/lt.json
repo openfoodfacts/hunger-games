@@ -385,7 +385,14 @@
     "countryLabel": "Šalis"
   },
   "ingredients": {
-    "description": "Šis žaidimas leidžia patvirtinti išankstinį ingredientų sąrašų vaizdų pasirinkimą įvairiomis gaminio kalbomis ir patvirtinti išgautas sudedamąsias dalis."
+    "description": "Šis žaidimas leidžia patvirtinti išankstinį ingredientų sąrašų vaizdų pasirinkimą įvairiomis gaminio kalbomis ir patvirtinti išgautas sudedamąsias dalis.",
+    "current_text": "text from off",
+    "confidence_score": "language confidence",
+    "revert": "Revert",
+    "parsing": "Get server understanding",
+    "send": "Validate & send",
+    "skip": "Praleisti šį produktą",
+    "getRobotoffPrediciton": "Get predictions from Robotoff"
   },
   "footer": {
     "appStore": {

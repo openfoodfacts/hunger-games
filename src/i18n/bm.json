@@ -1,60 +1,60 @@
 {
   "home": {
     "game_selector": {
-      "title": "What game would you like to play?",
+      "title": "I b’a fɛ ka tolon jumɛn kɛ?",
       "cards": {
         "questions": {
-          "title": "Questions",
-          "description": "Tell us if the given image answers the questions"
+          "title": "Ɲininkaliw",
+          "description": "A fɔ an ye ni ja dilen bɛ ɲininkaliw jaabi"
         },
         "logos": {
-          "title": "Logos",
-          "description": "Find all the logos matching the given logo"
+          "title": "Logow",
+          "description": "Logow bɛɛ ɲini minnu bɛ bɛn logo dilen ma"
         },
         "eco_score": {
-          "title": "Eco-score",
-          "description": "Annotate the questions with the highest value"
+          "title": "Eco-scori",
+          "description": "Ɲininkali minnu nafa ka bon kosɛbɛ, olu ɲɛfɔ"
         }
       }
     },
     "account_band": {
-      "title": "Want to make your contribution count? Create an account or sign in on Open Food Facts!",
-      "log_in": "Login",
-      "sign_up": "Sign up",
-      "contribution_details": "Learn why your contribution matters"
+      "title": "I b’a fɛ k’a to i ka bolomafara ka jate wa? Aw ye jatebɔsɛbɛn dɔ da walima ka don Open Food Facts kɔnɔ!",
+      "log_in": "Don a kɔnɔ",
+      "sign_up": "I tɔgɔ sɛbɛn",
+      "contribution_details": "A dɔn mun na i ka bolomafara nafa ka bon"
     },
-    "saved_filters": "Saved Filters",
+    "saved_filters": "Filɛtri minnu maralen don",
     "contribution_modal": {
-      "title": "Your contribution matters",
+      "title": "Aw ka bolomafara nafa ka bon",
       "information": "Hunger Games is an effort to leverage the results of our OCR and artificial intelligence. When you use Hunger Games by Open Food Facts, you improve our entire database which helps the community make better food choices. We gather your annotations and use them to make Open Food Facts more accurate and efficient.",
-      "thank_you": "Thank you for helping us improve Open Food Facts so that more people can use it easily."
+      "thank_you": "Aw ni ce aw ka dɛmɛ na ka dumuni dafalenw ɲɛ ka taa a fɛ walasa mɔgɔ caman ka se ka baara kɛ n’u ye nɔgɔya la."
     },
     "statistics": {
-      "title": "{{userName}} statistics:",
+      "title": "{{userName}} jatebɔw:",
       "editorCount": {
-        "title": "Editor",
-        "description": "Number of editions done"
+        "title": "Labɛnbaga",
+        "description": "Bɔko minnu kɛra, olu hakɛ"
       },
       "contributorCount": {
-        "title": "Contributor",
-        "description": "Adding a new product"
+        "title": "Dɛmɛbaga",
+        "description": "Fɛn kura dɔ farali a kan"
       },
       "photographerCount": {
-        "title": "Photographer",
-        "description": "Taking photos for a product"
+        "title": "Fotow tabaga",
+        "description": "Fotow ta ka ɲɛsin fɛn dɔ ma"
       }
     }
   },
   "flagged_images": {
-    "title": "Images flagged by users",
-    "loading": "Loading"
+    "title": "Ja minnu bɛ darapo la baarakɛlaw fɛ",
+    "loading": "Bɛ kɛ"
   },
   "questions": {
-    "category": "category",
-    "categories": "Categories",
-    "label": "label",
+    "category": "suguya",
+    "categories": "Suguyaw",
+    "label": "tàamasiyɛn",
     "labels": "Labels",
-    "brand": "brand",
+    "brand": "mariki",
     "brands": "Brands",
     "packaging": "packaging",
     "quantity": "Quantity",
@@ -83,7 +83,7 @@
       "short_label": {
         "value": "value",
         "country": "country",
-        "brand": "brand",
+        "brand": "mariki",
         "popularity": "popularity",
         "campaign": "camp"
       },
@@ -112,8 +112,8 @@
     "flag": "Something wrong? Report/flag the image!",
     "unflag": "Unflag the image",
     "reset_filters": "Reset filters",
-    "log_in": "Login",
-    "sign_up": "Sign up",
+    "log_in": "Don a kɔnɔ",
+    "sign_up": "I tɔgɔ sɛbɛn",
     "login_title": "Make your annotation count",
     "login_description": "You are not currently logged into Open Food Facts. To get your answers directly applied to products, and associated to your account, consider logging in to your Open Food Facts account, or creating one",
     "please_wait_while_we_fetch_the_question": "Please wait while we fetch the question!"
@@ -121,24 +121,24 @@
   "menu": {
     "title": "Hunger Games",
     "games": "Games",
-    "questions": "Questions",
-    "logos": "Logos",
-    "logos-annotation": "Logos annotation",
-    "logos-search": "Logos search",
+    "questions": "Ɲininkaliw",
+    "logos": "Logow",
+    "logos-annotation": "Logow sɛbɛnni",
+    "logos-search": "Logow ɲinini",
     "logos-product-search": "Annotation per products",
-    "logos-deep-search": "Infinite annotation",
-    "manage": "Manage",
-    "insights": "Insights",
-    "nutritions": "Nutrition facts",
-    "settings": "Settings",
-    "eco-score": "Eco-score",
-    "dashboard": "Logos dashboard",
+    "logos-deep-search": "Annotation dan tɛ min na",
+    "manage": "Mara",
+    "insights": "Hakilinaw",
+    "nutritions": "Balocogo ɲuman tiɲɛkow",
+    "settings": "Labɛnw",
+    "eco-score": "Eco-scori",
+    "dashboard": "Logow ka dakun",
     "tour": "Show tour",
     "logged_in_user": "Logged as {{userName}}",
     "log_in": "Click to login"
   },
   "insights": {
-    "insights": "Insights",
+    "insights": "Hakilinaw",
     "barcode": "Barcode",
     "barcode_placeholder": "barcode",
     "value_tag": "Value tag",
@@ -179,7 +179,7 @@
     "submit": "Submit",
     "type": "Type",
     "label": "Label",
-    "brand": "Brand",
+    "brand": "Mariki",
     "packager_code": "Packager code",
     "packaging": "Packaging",
     "qr_code": "QR code",
@@ -219,7 +219,7 @@
     }
   },
   "settings": {
-    "settings": "Settings",
+    "settings": "Labɛnw",
     "language": "Languages",
     "save": "Save",
     "reportIssue": "Found a bug? Please let us know.",
@@ -279,7 +279,7 @@
         "text4": "Eco-Score captures the total environmental footprint, making it easier for consumers to compare products and decide which is better for the environment."
       },
       "page5": {
-        "title": "Settings",
+        "title": "Labɛnw",
         "text1": "Set your preferred language, and report issues from our settings page.",
         "text2": "If you're a developer, you can also explore our database content using our dev mode."
       },
@@ -385,7 +385,14 @@
     "countryLabel": "Country"
   },
   "ingredients": {
-    "description": "This game allows you to validate the pre-selection of images of ingredients lists in various languages for a product, and validate the extracted ingredients."
+    "description": "This game allows you to validate the pre-selection of images of ingredients lists in various languages for a product, and validate the extracted ingredients.",
+    "current_text": "text from off",
+    "confidence_score": "language confidence",
+    "revert": "Revert",
+    "parsing": "Get server understanding",
+    "send": "Validate & send",
+    "skip": "Skip this product",
+    "getRobotoffPrediciton": "Get predictions from Robotoff"
   },
   "footer": {
     "appStore": {

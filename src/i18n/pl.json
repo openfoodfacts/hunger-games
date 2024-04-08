@@ -166,7 +166,7 @@
     "human_required": "Wymagany człowiek",
     "edit_product": "Otwórz edycję produktu",
     "view_product": "Otwórz stronę produktu",
-    "view_crops_for_this_product": "Annotate product logos"
+    "view_crops_for_this_product": "Adnotuj loga produktów"
   },
   "logos": {
     "annotation": "Dodatkowe informacje: ",
@@ -181,7 +181,7 @@
     "label": "Etykieta",
     "brand": "Marka",
     "packager_code": "Kod opakowania",
-    "packaging": "Opakowania",
+    "packaging": "Opakowanie",
     "qr_code": "Kod QR",
     "category": "Kategoria",
     "nutrition_label": "Etykieta żywieniowa",
@@ -343,9 +343,9 @@
       "nutriment_fat": "Tłuszcz",
       "nutriment_saturated-fat": "Tłuszcz nasycony",
       "nutriment_carbohydrates": "Węglowodany",
-      "nutriment_sugars": "Sugar",
-      "nutriment_proteins": "Protein content",
-      "nutriment_fiber": "Fibres",
+      "nutriment_sugars": "Cukry",
+      "nutriment_proteins": "Zawartość białka",
+      "nutriment_fiber": "Włókna",
       "nutriment_salt": "Sól",
       "nutriment_sodium": "Sód"
     },
@@ -385,20 +385,27 @@
     "countryLabel": "Kraj"
   },
   "ingredients": {
-    "description": "This game allows you to validate the pre-selection of images of ingredients lists in various languages for a product, and validate the extracted ingredients."
+    "description": "This game allows you to validate the pre-selection of images of ingredients lists in various languages for a product, and validate the extracted ingredients.",
+    "current_text": "text from off",
+    "confidence_score": "pewność językowa",
+    "revert": "Przywróć",
+    "parsing": "Get server understanding",
+    "send": "Zatwierdź i wyślij",
+    "skip": "Pomiń ten produkt",
+    "getRobotoffPrediciton": "Otrzymuj prognozy od Robotoff"
   },
   "footer": {
     "appStore": {
       "title": "App Store",
-      "subtitle": "Download on the"
+      "subtitle": "Pobierz w"
     },
     "playStore": {
-      "title": "Play Store",
-      "subtitle": "Get it on"
+      "title": "Sklep Play",
+      "subtitle": "Dostępne na"
     },
     "microsoft": {
       "title": "Microsoft",
-      "subtitle": "Get it from"
+      "subtitle": "Dostępne na"
     },
     "androidAPK": {
       "title": "Android APK",

@@ -385,7 +385,14 @@
     "countryLabel": "Paese"
   },
   "ingredients": {
-    "description": "Questo gioco consente di convalidare la preselezione di immagini di elenchi di ingredienti in varie lingue per un prodotto, e convalidare gli ingredienti estratti."
+    "description": "Questo gioco consente di convalidare la preselezione di immagini di elenchi di ingredienti in varie lingue per un prodotto, e convalidare gli ingredienti estratti.",
+    "current_text": "text from off",
+    "confidence_score": "fiducia linguistica",
+    "revert": "Ripristina",
+    "parsing": "Ottieni la comprensione del server",
+    "send": "Convalida e invia",
+    "skip": "Salta questo prodotto",
+    "getRobotoffPrediciton": "Ottieni previsioni da Robotoff"
   },
   "footer": {
     "appStore": {
