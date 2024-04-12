@@ -22,6 +22,7 @@ import ImageAnnotation from "./ImageAnnotation";
 import { useSearchParams } from "react-router-dom";
 import { localSettings } from "../../localeStorageManager";
 import countryNames from "../../assets/countries.json";
+import { getCountryId } from "../../utils/getCountryId";
 
 function ProductInterface(props) {
   const { product, next } = props;
@@ -143,7 +144,7 @@ export default function IngredientsPage() {
   const localData = localSettings.fetch();
   const [searchParams, setSearchParams] = useSearchParams();
   const [selectedCountry, setSelectedCountry] = React.useState(
-    searchParams.get("cc") || localData["country"] || "en:france",
+    getCountryId(searchParams.get("cc")) || localData["country"] || "en:france",
   );
 
   React.useEffect(() => {
