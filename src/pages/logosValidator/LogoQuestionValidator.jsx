@@ -294,7 +294,7 @@ function LogoQuestionValidator() {
           Ici vous annotez des produits. Mais vous pouvez aussi aider Robotoff
           en annotant des logos détectés à cette adresse:{" "}
           <Link
-            href={`https://hunger.openfoodfacts.org/logos/deep-search?type=label&value=${selectedOption.tag}`}
+            href={`https://static.${OFF_DOMAIN}/logos/deep-search?type=label&value=${selectedOption.tag}`}
             target="_blank"
           >
             recherche des logos {selectedOption.label}

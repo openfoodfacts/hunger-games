@@ -152,7 +152,7 @@ export const useProductData = (barcode) => {
 
 export const getFullSizeImage = (src) => {
   if (!src) {
-    return "https://static.openfoodfacts.org/images/image-placeholder.png";
+    return `https://static.${OFF_DOMAIN}/images/image-placeholder.png`;
   }
   const needsFull = /\/[a-z_]+.[0-9]*.400.jpg$/gm.test(src);
 

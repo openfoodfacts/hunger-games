@@ -19,7 +19,7 @@ import CancelScheduleSendIcon from "@mui/icons-material/CancelScheduleSend";
 import { useTranslation } from "react-i18next";
 import { useSelector } from "react-redux";
 
-import { CORRECT_INSIGHT, WRONG_INSIGHT } from "../../const";
+import { CORRECT_INSIGHT, WRONG_INSIGHT, OFF_URL } from "../../const";
 import offService from "../../off";
 import LoginContext from "../../contexts/login";
 import {
@@ -110,7 +110,7 @@ const UserData = () => {
         <DialogActions>
           <Button
             variant="contained"
-            href="https://world.openfoodfacts.org/cgi/login.pl"
+            href={`${OFF_URL}/cgi/login.pl`}
             component={Link}
             target="_blank"
           >
@@ -118,7 +118,7 @@ const UserData = () => {
           </Button>
           <Button
             variant="contained"
-            href="https://world.openfoodfacts.org/cgi/user.pl"
+            href={`${OFF_URL}/cgi/user.pl`}
             component={Link}
             target="_blank"
           >

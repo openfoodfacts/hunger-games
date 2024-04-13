@@ -1,5 +1,6 @@
 import * as React from "react";
 import off from "../../off";
+import { ROBOTOFF_API_URL } from "../../const";
 
 const imagesToRead = [
   {
@@ -19,7 +20,7 @@ const getImageUrl = (base, id, resolution: "100" | "400" | "full") => {
 };
 
 const getIngredientExtractionUrl = (base, id) => {
-  return `https://robotoff.openfoodfacts.org/api/v1/predict/ingredient_list?ocr_url=${base}${id}.json`;
+  return `${ROBOTOFF_API_URL}/predict/ingredient_list?ocr_url=${base}${id}.json`;
 };
 
 const formatData = (product) => {

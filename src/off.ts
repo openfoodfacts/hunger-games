@@ -1,7 +1,9 @@
 import { getLang } from "./localeStorageManager";
 import {
+  OFF_DOMAIN,
   OFF_API_URL,
   OFF_API_URL_V2,
+  OFF_API_URL_V3,
   OFF_IMAGE_URL,
   OFF_SEARCH,
 } from "./const";
@@ -72,17 +74,17 @@ const offService = {
     const lang = getLang();
     return `https://world${
       lang === "en" ? "" : "-" + lang
-    }.openfoodfacts.org/product/${barcode}`;
+    }.${OFF_DOMAIN}/product/${barcode}`;
   },
 
   getProductEditUrl(barcode) {
     const lang = getLang();
     return `https://world${
       lang === "en" ? "" : "-" + lang
-    }.openfoodfacts.org/cgi/product.pl?type=edit&code=${barcode}`;
+    }.${OFF_DOMAIN}/cgi/product.pl?type=edit&code=${barcode}`;
   },
   getLogoCropsByBarcodeUrl(barcode) {
-    return `https://hunger.openfoodfacts.org/logos/search?barcode=${barcode}`;
+    return `https://hunger.${OFF_DOMAIN}/logos/search?barcode=${barcode}`;
   },
 
   getImageUrl(imagePath) {
@@ -95,7 +97,7 @@ const offService = {
 
   getNutritionToFillUrl({ page, country, creator, category, code = false }) {
     if (code) {
-      return `https://world.openfoodfacts.org/api/v0/product/${code}.json?fields=code,states,lang,image_nutrition_url,product_name,nutriments,images,creator,countries`;
+      return `${OFF_API_URL}product/${code}.json?fields=code,states,lang,image_nutrition_url,product_name,nutriments,images,creator,countries`;
     }
     let creatorTagNumber = 2;
     let categoryTagNumber = 2;
@@ -163,29 +165,23 @@ const offService = {
       console.error("setIngedrient: Missing text");
     }
 
-    return axios.patch(
-      `https://world.openfoodfacts.org/api/v3/product/${code}`,
-      {
-        product: { [`ingredients_text${lang ? `_${lang}` : ""}`]: text },
-      },
-    );
+    return axios.patch(`${OFF_API_URL_V3}product/${code}`, {
+      product: { [`ingredients_text${lang ? `_${lang}` : ""}`]: text },
+    });
   },
 
   async getIngedrientParsing(editionParams: { text: string; lang: string }) {
     const { lang, text } = editionParams;
 
-    return await axios.patch(
-      "https://world.openfoodfacts.org/api/v3/product/test",
-      {
-        fields: "ingredients",
-        lc: lang,
-        tags_lc: lang,
-        product: {
-          lang,
-          [`ingredients_text_${lang}`]: text,
-        },
+    return await axios.patch(`${OFF_API_URL_V3}product/test`, {
+      fields: "ingredients",
+      lc: lang,
+      tags_lc: lang,
+      product: {
+        lang,
+        [`ingredients_text_${lang}`]: text,
       },
-    );
+    });
   },
 };
 

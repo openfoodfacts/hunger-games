@@ -253,7 +253,7 @@ const QuestionDisplay = ({ question, productData }) => {
         <ZoomableImage
           src={
             question.source_image_url ||
-            "https://static.openfoodfacts.org/images/image-placeholder.png"
+            `https://static.${OFF_DOMAIN}/images/image-placeholder.png`
           }
           srcFull={getFullSizeImage(question.source_image_url)}
           alt=""

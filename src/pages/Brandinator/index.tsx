@@ -7,6 +7,7 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 
 import data from "./data";
+import { URL_ORIGINE } from "../../const";
 
 //  Unused becaus it's using log scale
 // const MIN_VAL = 18;
@@ -63,7 +64,7 @@ export default function BrandinatorPage() {
           .map(({ label, value }) => (
             <li key={label}>
               <a
-                href={`https://hunger.openfoodfacts.org/logos/deep-search?type=brand&value=${label}`}
+                href={`${URL_ORIGINE}/logos/deep-search?type=brand&value=${label}`}
               >
                 {label} ({value} products)
               </a>

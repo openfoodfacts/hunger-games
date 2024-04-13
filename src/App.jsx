@@ -170,7 +170,7 @@ export default function App() {
       return false;
     }
     const isLoggedIn = await axios
-      .get("https://world.openfoodfacts.org/cgi/auth.pl", {
+      .get(`${OFF_URL}/cgi/auth.pl`, {
         withCredentials: true,
       })
       .then(() => {

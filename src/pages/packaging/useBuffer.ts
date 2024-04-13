@@ -1,6 +1,6 @@
 import axios from "axios";
 import * as React from "react";
-import { OFF_SEARCH } from "../../const";
+import { OFF_SEARCH, OFF_API_URL_V3 } from "../../const";
 
 type Parameters = {
   page: number;
@@ -33,7 +33,7 @@ function getProductsToAnnotateUrl({
   code = "",
 }: Parameters) {
   if (code) {
-    return `https://fr.openfoodfacts.org/api/v3/product/${code}.json?fields=code,lang,image_packaging_url,product_name,packagings,images,creator,countries`;
+    return `${OFF_API_URL_V3}/product/${code}.json?fields=code,lang,image_packaging_url,product_name,packagings,images,creator,countries`;
   }
   let creatorTagNumber = 2;
   if (country) {

@@ -1,5 +1,5 @@
 import axios from "axios";
-import { ROBOTOFF_API_URL, IS_DEVELOPMENT_MODE } from "./const";
+import { ROBOTOFF_API_URL, IS_DEVELOPMENT_MODE, OFF_IMAGE_URL } from "./const";
 import { getLang } from "./localeStorageManager";
 import { reformatValueTag, removeEmptyKeys } from "./utils";
 
@@ -214,7 +214,9 @@ const robotoff = {
     }
 
     return axios.get(
-      `${ROBOTOFF_API_URL}/predict/nutrient?ocr_url=https://static.openfoodfacts.org/images/products/${productCodeForOcrUrl}/${imgid}.json`,
+      `${ROBOTOFF_API_URL}/predict/nutrient?ocr_url=${encodeURIComponent(
+        OFF_IMAGE_URL,
+      )}/${productCodeForOcrUrl}/${imgid}.json`,
     );
   },
 
