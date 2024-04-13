@@ -206,16 +206,16 @@
     "crop_image_title": "изрязване на емблемата",
     "no_more_questions": "Няма повече въпроси за тази емблема. Можете да опитате да намерите повече емблеми със следната игра.",
     "loading_messages": {
-      "pending_reference_logos": "We are loading some logos examples to initialise the search",
+      "pending_reference_logos": "Зареждаме някои примерни логота, за да осъществим търсенето",
       "failed_reference_logos": "We did not find any logos with this annotation. Try to use the following game to annotate some of them."
     },
     "deep_search": {
-      "title": "Logo search",
+      "title": "Търсене на логота",
       "description": "Select a logo you want to look for, and let's go to catch them all. For every logo you annotate, we will fetch it's neighbors such that you might never stop to annotate. (Press Shift to select range of logos)",
-      "ref_logos": "Reference logos (logo already annotated with this value)",
-      "remaining": "Remaining to annotate",
-      "select_all": "Select All",
-      "unselect_all": "Deselect All"
+      "ref_logos": "Лога за справка (логото вече е анотирано с тази стойност)",
+      "remaining": "Останали за поясняване",
+      "select_all": "Избери всички",
+      "unselect_all": "Откажи всички"
     }
   },
   "settings": {
@@ -227,13 +227,13 @@
     "dev_mode_label": "Режим на разработчик",
     "dev_page_toggle": "Покажи {{name}} страница",
     "join_community": "Присъедини се към общността",
-    "text1": "Open Food Facts is a collaborative project built by tens of thousands of volunteers and managed by a non-profit organization with 8 employees. We need your donations to fund the Open Food Facts 2024 budget and to continue to develop the project.",
+    "text1": "Open Food Facts е съвместен проект, изграден от десетки хиляди доброволци и управляван от организация с нестопанска цел с 8 служители. Необходими са ни вашите дарения, за да финансираме бюджета на Open Food Facts за 2024 година и да продължим да развиваме проекта.",
     "thank_you": "Благодаря",
     "donate": "Дари",
     "join_the_community": {
       "discover_our": "Открий нашите ",
       "code_of_conduct": "Кодекс на поведение ",
-      "join_us_on": "Join us on ",
+      "join_us_on": "Присъединете се към нас ",
       "forum": "Форум",
       "subscribe_to_our": "Абонирай се за нашия ",
       "newsletter": "бюлетин"
@@ -254,7 +254,7 @@
     "welcome": {
       "page1": {
         "title": "Добре дошли в Игрите на глада",
-        "text1": "Hunger Games is a collection of mini-games that help contribute to Open Food Facts in many ways. You can play our really exciting games from anywhere. Here is a guided tour of the entire website which will get you started.",
+        "text1": "Игрите на Глада е колекция от мини-игри, които допринасят за Open Food Facts по много начини. Можете да играете вълнуващи игри отвсякъде. Ето обиколка с екскурзовод на целия уебсайт, която ще ви помогне да започнете.",
         "text2": "Не забравяйте да влезете в уебсайта Open Food Facts, за да получите кредит за вашите приноси. Ако направите грешка, моля, отделете време да я поправите, като отидете на уебсайта.",
         "text3": "В случай на съмнение относно игрите, щракнете върху иконата с въпросителен знак в горния десен ъгъл на страницата и можете да се свържете с нас на slack в канала #hunger-games"
       },
