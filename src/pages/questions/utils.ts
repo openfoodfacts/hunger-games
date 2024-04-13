@@ -1,7 +1,7 @@
 import * as React from "react";
 
 import { getQuestionSearchParams } from "../../components/QuestionFilter/useFilterSearch";
-import { NO_QUESTION_LEFT, OFF_URL } from "../../const";
+import { NO_QUESTION_LEFT, OFF_DOMAIN, OFF_URL } from "../../const";
 import externalApi from "../../externalApi";
 import offService from "../../off";
 import robotoff from "../../robotoff";

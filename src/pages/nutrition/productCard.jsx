@@ -5,6 +5,7 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import ZoomableImage from "../../components/ZoomableImage";
 import offService from "../../off";
+import { OFF_URL } from "../../const";
 
 import { basicNutriments } from "./nutritionFields";
 
