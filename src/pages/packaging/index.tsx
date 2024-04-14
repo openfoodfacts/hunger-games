@@ -200,7 +200,7 @@ const Page = () => {
             sx={{ width: 150 }}
             onClick={() => {
               axios.patch(
-                `${OFF_API_URL_V3}product/${product.code}`,
+                `${OFF_API_URL_V3}/product/${product.code}`,
                 formatData(innerRows),
                 { withCredentials: true },
               );

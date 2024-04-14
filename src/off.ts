@@ -98,7 +98,7 @@ const offService = {
 
   getNutritionToFillUrl({ page, country, creator, category, code = false }) {
     if (code) {
-      return `${OFF_API_URL}product/${code}.json?fields=code,states,lang,image_nutrition_url,product_name,nutriments,images,creator,countries`;
+      return `${OFF_API_URL}/product/${code}.json?fields=code,states,lang,image_nutrition_url,product_name,nutriments,images,creator,countries`;
     }
     let creatorTagNumber = 2;
     let categoryTagNumber = 2;
