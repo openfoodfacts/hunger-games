@@ -214,9 +214,7 @@ const robotoff = {
     }
 
     return axios.get(
-      `${ROBOTOFF_API_URL}/predict/nutrient?ocr_url=${encodeURIComponent(
-        OFF_IMAGE_URL,
-      )}/${productCodeForOcrUrl}/${imgid}.json`,
+      `${ROBOTOFF_API_URL}/predict/nutrient?ocr_url=${OFF_IMAGE_URL}}/${productCodeForOcrUrl}/${imgid}.json`,
     );
   },
 
