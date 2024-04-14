@@ -49,7 +49,7 @@ export default function BugPage() {
         onClick={() => {
           axios
             .post(
-              `${OFF_API_URL_V3}product/123456789`,
+              `${OFF_API_URL_V3}/product/123456789`,
               {
                 ingredients_text_fr: text,
               },

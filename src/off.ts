@@ -84,7 +84,7 @@ const offService = {
     }.${OFF_DOMAIN}/cgi/product.pl?type=edit&code=${barcode}`;
   },
   getLogoCropsByBarcodeUrl(barcode) {
-    return `https://hunger.${OFF_DOMAIN}/logos/search?barcode=${barcode}`;
+    return `${URL_ORIGINE}/logos/search?barcode=${barcode}`;
   },
 
   getImageUrl(imagePath) {
@@ -165,7 +165,7 @@ const offService = {
       console.error("setIngedrient: Missing text");
     }
 
-    return axios.patch(`${OFF_API_URL_V3}product/${code}`, {
+    return axios.patch(`${OFF_API_URL_V3}/product/${code}`, {
       product: { [`ingredients_text${lang ? `_${lang}` : ""}`]: text },
     });
   },
@@ -173,7 +173,7 @@ const offService = {
   async getIngedrientParsing(editionParams: { text: string; lang: string }) {
     const { lang, text } = editionParams;
 
-    return await axios.patch(`${OFF_API_URL_V3}product/test`, {
+    return await axios.patch(`${OFF_API_URL_V3}/product/test`, {
       fields: "ingredients",
       lc: lang,
       tags_lc: lang,
