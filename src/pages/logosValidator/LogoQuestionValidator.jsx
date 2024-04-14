@@ -29,6 +29,7 @@ import store, {
 import robotoff from "../../robotoff";
 import off from "../../off";
 import useUrlParams from "../../hooks/useUrlParams";
+import { URL_ORIGINE } from "../../const";
 
 import { LOGOS } from "./dashboardDefinition";
 import Loader from "../loader";
@@ -294,7 +295,7 @@ function LogoQuestionValidator() {
           Ici vous annotez des produits. Mais vous pouvez aussi aider Robotoff
           en annotant des logos détectés à cette adresse:{" "}
           <Link
-            href={`https://static.${OFF_DOMAIN}/logos/deep-search?type=label&value=${selectedOption.tag}`}
+            href={`${URL_ORIGINE}/logos/deep-search?type=label&value=${selectedOption.tag}`}
             target="_blank"
           >
             recherche des logos {selectedOption.label}
