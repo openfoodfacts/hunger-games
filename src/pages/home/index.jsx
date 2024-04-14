@@ -10,6 +10,7 @@ import Button from "@mui/material/Button";
 import Divider from "@mui/material/Divider";
 import Modal from "@mui/material/Modal";
 
+import { OFF_URL } from "../../const";
 import QuestionCard from "../../components/QuestionCard";
 import FooterWithLinks from "../../components/Footer";
 import HomeCards from "./homeCards";
@@ -88,17 +89,14 @@ const Home = () => {
               <Stack direction="row">
                 <Button
                   variant="contained"
-                  href="https://world.openfoodfacts.org/cgi/login.pl"
+                  href={`${OFF_URL}/cgi/login.pl`}
                   sx={{
                     margin: "0 20px",
                   }}
                 >
                   {t("home.account_band.log_in")}
                 </Button>
-                <Button
-                  variant="outlined"
-                  href="https://world.openfoodfacts.org/cgi/user.pl"
-                >
+                <Button variant="outlined" href={`${OFF_URL}/cgi/user.pl`}>
                   {t("home.account_band.sign_up")}
                 </Button>
               </Stack>

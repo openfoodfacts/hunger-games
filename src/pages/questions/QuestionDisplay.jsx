@@ -18,7 +18,12 @@ import Loader from "../loader";
 
 import { useTranslation } from "react-i18next";
 import { useDispatch, useSelector } from "react-redux";
-import { CORRECT_INSIGHT, WRONG_INSIGHT, SKIPPED_INSIGHT } from "../../const";
+import {
+  CORRECT_INSIGHT,
+  WRONG_INSIGHT,
+  SKIPPED_INSIGHT,
+  OFF_DOMAIN,
+} from "../../const";
 import { DEFAULT_FILTER_STATE } from "../../components/QuestionFilter/const";
 import {
   filterStateSelector,
@@ -253,7 +258,7 @@ const QuestionDisplay = ({ question, productData }) => {
         <ZoomableImage
           src={
             question.source_image_url ||
-            "https://static.openfoodfacts.org/images/image-placeholder.png"
+            `https://static.${OFF_DOMAIN}/images/image-placeholder.png`
           }
           srcFull={getFullSizeImage(question.source_image_url)}
           alt=""

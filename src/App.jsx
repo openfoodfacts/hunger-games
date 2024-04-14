@@ -16,7 +16,7 @@ import {
 } from "./localeStorageManager";
 import LoginContext from "./contexts/login";
 import off from "./off";
-import { IS_DEVELOPMENT_MODE } from "./const";
+import { IS_DEVELOPMENT_MODE, OFF_URL } from "./const";
 import ColorModeContext from "./contexts/colorMode";
 
 import Loader from "./pages/loader";
@@ -170,7 +170,7 @@ export default function App() {
       return false;
     }
     const isLoggedIn = await axios
-      .get("https://world.openfoodfacts.org/cgi/auth.pl", {
+      .get(`${OFF_URL}/cgi/auth.pl`, {
         withCredentials: true,
       })
       .then(() => {

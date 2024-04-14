@@ -25,6 +25,7 @@ import { getLang } from "../../localeStorageManager";
 import ZoomableImage from "../../components/ZoomableImage";
 import { getImagesUrls } from "../questions/utils";
 import offService from "../../off";
+import { OFF_API_URL_V3 } from "../../const";
 import { useTranslation } from "react-i18next";
 import useUrlParams from "../../hooks/useUrlParams";
 import Loader from "../loader";
@@ -199,7 +200,7 @@ const Page = () => {
             sx={{ width: 150 }}
             onClick={() => {
               axios.patch(
-                `https://world.openfoodfacts.org/api/v3/product/${product.code}`,
+                `${OFF_API_URL_V3}/product/${product.code}`,
                 formatData(innerRows),
                 { withCredentials: true },
               );

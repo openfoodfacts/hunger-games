@@ -1,5 +1,6 @@
 import * as React from "react";
 import axios from "axios";
+import { OFF_DOMAIN } from "../const";
 
 export type Option = {
   value: string;
@@ -14,9 +15,7 @@ export const useOptions = (fileName: Files, lang: string) => {
 
   React.useEffect(() => {
     axios
-      .get(
-        `https://static.openfoodfacts.org/data/taxonomies/${fileName}.full.json`,
-      )
+      .get(`https://static.${OFF_DOMAIN}/data/taxonomies/${fileName}.full.json`)
       .then(({ data }) => {
         const newOptions: Option[] = Object.keys(data)
           .map((key) => {

@@ -8,25 +8,23 @@ import Typography from "@mui/material/Typography";
 import Stack from "@mui/material/Stack";
 import { useTranslation } from "react-i18next";
 
+import { OFF_URL } from "../../const";
+
 const fetchUserData = async (userName) => {
   const editorPromise = axios
-    .get(`https://world.openfoodfacts.org/editor/${userName}.json?fields=count`)
+    .get(`${OFF_URL}/editor/${userName}.json?fields=count`)
     .then(({ data }) => {
       return data?.count;
     })
     .catch(() => undefined);
   const contributorPromise = axios
-    .get(
-      `https://world.openfoodfacts.org/contributor/${userName}.json?fields=count`,
-    )
+    .get(`${OFF_URL}/contributor/${userName}.json?fields=count`)
     .then(({ data }) => {
       return data?.count;
     })
     .catch(() => undefined);
   const photographerPromise = axios
-    .get(
-      `https://world.openfoodfacts.org/photographer/${userName}.json?fields=count`,
-    )
+    .get(`${OFF_URL}/photographer/${userName}.json?fields=count`)
     .then(({ data }) => {
       return data?.count;
     })

@@ -30,6 +30,7 @@ import { useTranslation } from "react-i18next";
 import WelcomeTour from "./welcome/Welcome";
 import { useMediaQuery } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
+import { OFF_URL } from "../const";
 
 // Object with no url are subheader in the menu
 const pages = [
@@ -305,12 +306,7 @@ const ResponsiveAppBar = () => {
                 onClick={async () => {
                   const isLoggedIn = await refresh();
                   if (!isLoggedIn) {
-                    window
-                      .open(
-                        "https://world.openfoodfacts.org/cgi/login.pl",
-                        "_blank",
-                      )
-                      .focus();
+                    window.open(`${OFF_URL}/cgi/login.pl`, "_blank").focus();
                   }
                 }}
               >
@@ -338,7 +334,7 @@ const ResponsiveAppBar = () => {
             >
               <MuiLink
                 sx={{ mr: 1, display: "flex", alignSelf: "center" }}
-                href="https://world.openfoodfacts.org/"
+                href={OFF_URL}
                 target="_blank"
               >
                 <img
@@ -446,10 +442,7 @@ const ResponsiveAppBar = () => {
                       const isLoggedIn = await refresh();
                       if (!isLoggedIn) {
                         window
-                          .open(
-                            "https://world.openfoodfacts.org/cgi/login.pl",
-                            "_blank",
-                          )
+                          .open(`${OFF_URL}/cgi/login.pl`, "_blank")
                           .focus();
                       }
                     }}

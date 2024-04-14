@@ -98,7 +98,7 @@ function ProductInterface(props) {
 
                         <Typography sx={{ textAlign: "center" }}>
                           <Link
-                            href={`https://world.openfoodfacts.org/contributor/${uploader}`}
+                            href={`${OFF_URL}/contributor/${uploader}`}
                             target="_blank"
                             rel="noreferrer"
                           >

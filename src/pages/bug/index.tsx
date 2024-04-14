@@ -2,7 +2,7 @@ import * as React from "react";
 import axios from "axios";
 import off from "../../off";
 import { TextField } from "@mui/material";
-import { OFF_URL } from "../../const";
+import { OFF_URL, OFF_API_URL_V3 } from "../../const";
 
 export default function BugPage() {
   const [text, setText] = React.useState("test ingredient values");
@@ -49,7 +49,7 @@ export default function BugPage() {
         onClick={() => {
           axios
             .post(
-              "https://world.openfoodfacts.org/api/v3/product/123456789",
+              `${OFF_API_URL_V3}/product/123456789`,
               {
                 ingredients_text_fr: text,
               },
@@ -83,7 +83,7 @@ export default function BugPage() {
       <button
         onClick={() => {
           axios
-            .post("https://world.openfoodfacts.org/api/v3/product/123456789", {
+            .post(`${OFF_API_URL_V3}product/123456789`, {
               ingredients_text_fr: text,
             })
             .then(({ data }) => setResponse(data));
@@ -94,7 +94,7 @@ export default function BugPage() {
       <button
         onClick={() => {
           axios
-            .patch("https://world.openfoodfacts.org/api/v3/product/123456789", {
+            .patch(`${OFF_API_URL_V3}product/123456789`, {
               ingredients_text_fr: text,
             })
             .then(({ data }) => setResponse(data));
