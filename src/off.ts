@@ -6,6 +6,7 @@ import {
   OFF_API_URL_V3,
   OFF_IMAGE_URL,
   OFF_SEARCH,
+  URL_ORIGINE,
 } from "./const";
 import axios from "axios";
 import combineURLs from "axios/lib/helpers/combineURLs";
