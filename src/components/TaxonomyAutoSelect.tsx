@@ -19,7 +19,7 @@ type TaxonomyAutoSelectProps = Omit<TextFieldProps, "value" | "onChange"> & {
 };
 
 const isOptionEqualToValue = (option: string | TaxonomyItem, value: string) =>
-  (typeof option === "string" ? option : option.id) === value;
+  (typeof option === "string" ? option : option.text) === value;
 
 export default function TaxonomyAutoSelect(props: TaxonomyAutoSelectProps) {
   const { taxonomy, value, onChange, showKey, fullWidth, ...other } = props;
@@ -91,14 +91,14 @@ export default function TaxonomyAutoSelect(props: TaxonomyAutoSelectProps) {
       includeInputInList
       filterSelectedOptions
       value={
-        selectedValue && selectedValue.id === value ? selectedValue : value
+        selectedValue && selectedValue.text === value ? selectedValue : value
       }
       isOptionEqualToValue={isOptionEqualToValue}
       // noOptionsText="No locations"
       onChange={(event: any, newValue: TaxonomyItem | null | string) => {
         console.log({ newValue });
         if (typeof newValue === "object") {
-          onChange(newValue.id);
+          onChange(newValue.text);
           setSelectedValue(newValue);
           return;
         }
@@ -135,8 +135,8 @@ export default function TaxonomyAutoSelect(props: TaxonomyAutoSelectProps) {
           }}
           helperText={
             showKey && value
-              ? selectedValue && selectedValue.id === value
-                ? selectedValue.id
+              ? selectedValue && selectedValue.text === value
+                ? ""
                 : `⚠️ unknown: "${value}"`
               : ""
           }
