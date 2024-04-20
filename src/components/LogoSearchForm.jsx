@@ -9,6 +9,7 @@ import { useTranslation } from "react-i18next";
 
 import LabelFilter from "../components/QuestionFilter/LabelFilter";
 import { TYPE_WITHOUT_VALUE } from "../const";
+import TaxonomyAutoSelect from "./TaxonomyAutoSelect";
 
 export const logoTypeOptions = [
   { value: "", labelKey: "logos.type" },
@@ -83,6 +84,16 @@ const LogoSearchForm = (props) => {
             label={t("logos.value")}
             size="small"
           />
+        ) : innerType === "brand" ? (
+          <TaxonomyAutoSelect
+            taxonomy="brand"
+            value={innerValue}
+            onChange={setInnerValue}
+            showKey
+            fullWidth
+            size="small"
+            label={t("logos.value")}
+          />
         ) : (
           <TextField
             fullWidth
@@ -93,7 +104,6 @@ const LogoSearchForm = (props) => {
           />
         )}
       </Stack>
-
       <Stack direction={{ xs: "column", sm: "row" }} spacing={1}>
         <TextField
           fullWidth
