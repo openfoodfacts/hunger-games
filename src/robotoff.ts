@@ -106,7 +106,7 @@ const robotoff = {
   },
 
   searchLogos(barcode, value, type, count = 25, random = false) {
-    const formattedValue = value.test(/^[a-z][a-z]:/)
+    const formattedValue = /^[a-z][a-z]:/.test(value)
       ? { taxonomy_value: value }
       : { value };
 
