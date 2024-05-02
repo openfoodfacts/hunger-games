@@ -4,11 +4,11 @@
       "title": "What game would you like to play?",
       "cards": {
         "questions": {
-          "title": "Questions",
+          "title": "Demandoj",
           "description": "Tell us if the given image answers the questions"
         },
         "logos": {
-          "title": "Logos",
+          "title": "Markemblemoj",
           "description": "Find all the logos matching the given logo"
         },
         "eco_score": {
@@ -25,12 +25,12 @@
     },
     "saved_filters": "Saved Filters",
     "contribution_modal": {
-      "title": "Your contribution matters",
+      "title": "Via depago gravas",
       "information": "Hunger Games is an effort to leverage the results of our OCR and artificial intelligence. When you use Hunger Games by Open Food Facts, you improve our entire database which helps the community make better food choices. We gather your annotations and use them to make Open Food Facts more accurate and efficient.",
       "thank_you": "Thank you for helping us improve Open Food Facts so that more people can use it easily."
     },
     "statistics": {
-      "title": "{{userName}} statistics:",
+      "title": "Statistikoj de {{userName}}:",
       "editorCount": {
         "title": "Redaktanto",
         "description": "Number of editions done"
@@ -40,14 +40,14 @@
         "description": "Adding a new product"
       },
       "photographerCount": {
-        "title": "Photographer",
+        "title": "Fotografisto",
         "description": "Taking photos for a product"
       }
     }
   },
   "flagged_images": {
     "title": "Images flagged by users",
-    "loading": "Loading"
+    "loading": "Ŝarĝante"
   },
   "questions": {
     "category": "kategorio",
@@ -58,13 +58,13 @@
     "brands": "Varomarkoj",
     "packaging": "pakaĵoj",
     "quantity": "Kvanto",
-    "insightTypeLabel": "Only shows",
+    "insightTypeLabel": "Prezenti nur",
     "ingredients": "Ingrediencoj",
     "product_weight": "product weight",
     "popularity_sort": "Sort by popularity",
     "see_examples": "See examples of this ",
     "no": "Ne",
-    "skip": "Skip",
+    "skip": "Preterpasi",
     "yes": "Jes",
     "no_questions_remaining": "No questions remaining",
     "countries": "Countries",
@@ -94,7 +94,7 @@
         "brand": "Product Brand",
         "popularity": "Sort by popularity",
         "edit": "",
-        "campaign": "Campaign"
+        "campaign": "Kampanjo"
       },
       "placeholders": {
         "value": "Value (Fanta, en:organic,...)",
@@ -102,16 +102,16 @@
         "campaign": "Annotation campaigns"
       },
       "actions": {
-        "edit": "Edit Filters",
-        "cancel": "Cancel",
-        "apply": "Apply"
+        "edit": "Redakti Filtrojn",
+        "cancel": "Nuligi",
+        "apply": "Almeti"
       }
     },
-    "other_questions": "Other questions",
-    "send": "Send",
+    "other_questions": "Aliaj demandoj",
+    "send": "Sendi",
     "flag": "Something wrong? Report/flag the image!",
     "unflag": "Unflag the image",
-    "reset_filters": "Reset filters",
+    "reset_filters": "Rekomencigi filtrojn",
     "log_in": "Login",
     "sign_up": "Krei konton",
     "login_title": "Make your annotation count",
@@ -121,8 +121,8 @@
   "menu": {
     "title": "Hunger Games",
     "games": "Games",
-    "questions": "Questions",
-    "logos": "Logos",
+    "questions": "Demandoj",
+    "logos": "Markemblemoj",
     "logos-annotation": "Logos annotation",
     "logos-search": "Logos search",
     "logos-product-search": "Annotation per products",
