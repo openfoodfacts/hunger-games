@@ -8,7 +8,7 @@
           "description": "Hãy nói cho chúng biết nếu hình ảnh này trả lời cho các câu hỏi"
         },
         "logos": {
-          "title": "Logos",
+          "title": "Biểu tượng",
           "description": "Tìm tất cả các logo phù hợp với logo đã cho"
         },
         "eco_score": {
@@ -26,7 +26,7 @@
     "saved_filters": "Các bộ lọc đã lưu",
     "contribution_modal": {
       "title": "Đóng góp của bạn rất quan trọng",
-      "information": "Hunger Games is an effort to leverage the results of our OCR and artificial intelligence. When you use Hunger Games by Open Food Facts, you improve our entire database which helps the community make better food choices. We gather your annotations and use them to make Open Food Facts more accurate and efficient.",
+      "information": "Hunger Games là một nỗ lực để tận dụng kết quả của bộ công cụ OCR và trí tuệ nhân tạo của chúng tôi. Khi bạn sử dụng Hunger Games của Open Food Facts, bạn sẽ cải thiện toàn bộ cơ sở dữ liệu của chúng tôi và giúp cộng đồng lựa chọn thực phẩm tốt hơn. Chúng tôi thu thập các chú thích của bạn và sử dụng chúng để giúp Open Food Facts chính xác và hiệu quả hơn.",
       "thank_you": "Cảm ơn bạn đã giúp chúng tôi cải thiện Open Food Facts để nhiều người có thể sử dụng nó một cách dễ dàng."
     },
     "statistics": {
@@ -122,7 +122,7 @@
     "title": "Hunger Games",
     "games": "Trò chơi",
     "questions": "Câu hỏi",
-    "logos": "Logos",
+    "logos": "Biểu tượng",
     "logos-annotation": "Chú thích logo",
     "logos-search": "Tìm kiếm logo",
     "logos-product-search": "Chú thích cho mỗi sản phẩm",
@@ -214,8 +214,8 @@
       "description": "Select a logo you want to look for, and let's go to catch them all. For every logo you annotate, we will fetch it's neighbors such that you might never stop to annotate. (Press Shift to select range of logos)",
       "ref_logos": "Reference logos (logo already annotated with this value)",
       "remaining": "Remaining to annotate",
-      "select_all": "Select All",
-      "unselect_all": "Deselect All"
+      "select_all": "Chọn tất cả",
+      "unselect_all": "Bỏ chọn Tất cả"
     }
   },
   "settings": {
