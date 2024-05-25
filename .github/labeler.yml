@@ -9,7 +9,7 @@ Questions game:
 
 Logo game:
 - changed-files:
-  - any-glob-to-any-file: 'src/pages/logos/**/*,
+  - any-glob-to-any-file: 'src/pages/logos/**/*'
   - any-glob-to-any-file: 'src/components/LogoForm.jsx'
   - any-glob-to-any-file: 'src/pages/logos/LogoAnnotation.jsx'
   - any-glob-to-any-file: 'src/pages/logos/LogoDeepSearch.jsx'
