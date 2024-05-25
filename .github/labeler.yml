@@ -1,24 +1,32 @@
-github_actions:
-  - .github/**/*
+# Add labels to any any pull request with changes to the specified paths
+Github Actions:
+- changed-files:
+  - any-glob-to-any-file: '.github/**/*'
 
-questions game:
-  - src/pages/questions/**/*
+Questions game:
+- changed-files:
+  - any-glob-to-any-file: 'src/pages/questions/**/*'
 
-logo game:
-  - src/pages/logos/**/*,
-  - src/components/LogoForm.jsx,
-  - src/pages/logos/LogoAnnotation.jsx
-  - src/pages/logos/LogoDeepSearch.jsx
+🖼️ Logo game:
+- changed-files:
+  - any-glob-to-any-file: 'src/pages/logos/**/*'
+  - any-glob-to-any-file: 'src/components/LogoForm.jsx'
+  - any-glob-to-any-file: 'src/pages/logos/LogoAnnotation.jsx'
+  - any-glob-to-any-file: 'src/pages/logos/LogoDeepSearch.jsx'
 
-insights:
-  - src/pages/insights/**/*
+Insights:
+- changed-files:
+  - any-glob-to-any-file: 'src/pages/insights/**/*'
 
-eco-score game:
-  - src/pages/eco-score/**/*
+🌱 Eco-Score game:
+- changed-files:
+  - any-glob-to-any-file: 'src/pages/eco-score/**/*'
 
 i18n:
-  - src/i18n/**/*
+- changed-files:
+  - any-glob-to-any-file: 'src/i18n/**/*'
 
 Nutrition game:
-  - src/pages/nutrition/**/*
-  - src/pages/nutrition/index.jsx
+- changed-files:
+  - any-glob-to-any-file: 'src/pages/nutrition/**/*'
+  - any-glob-to-any-file: 'src/pages/nutrition/index.jsx'
