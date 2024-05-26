@@ -1,137 +1,137 @@
 {
   "home": {
     "game_selector": {
-      "title": "What game would you like to play?",
+      "title": "Hansı oyunu oynamaq istərdiniz?",
       "cards": {
         "questions": {
-          "title": "Questions",
-          "description": "Tell us if the given image answers the questions"
+          "title": "Suallar",
+          "description": "Verilən şəklin suallara cavab verib-vermədiyini bizə bildirin"
         },
         "logos": {
-          "title": "Logos",
-          "description": "Find all the logos matching the given logo"
+          "title": "Loqolar",
+          "description": "Verilmiş loqoya uyğun gələn bütün loqoları tapın"
         },
         "eco_score": {
-          "title": "Eco-score",
+          "title": "Eko-balı",
           "description": "Annotate the questions with the highest value"
         }
       }
     },
     "account_band": {
       "title": "Want to make your contribution count? Create an account or sign in on Open Food Facts!",
-      "log_in": "Login",
+      "log_in": "Daxil ol",
       "sign_up": "Qeydiyyatdan keç",
-      "contribution_details": "Learn why your contribution matters"
+      "contribution_details": "Töhfənizin niyə vacib olduğunu öyrənin"
     },
-    "saved_filters": "Saved Filters",
+    "saved_filters": "Yadda saxlanılmış süzgəclər",
     "contribution_modal": {
-      "title": "Your contribution matters",
-      "information": "Hunger Games is an effort to leverage the results of our OCR and artificial intelligence. When you use Hunger Games by Open Food Facts, you improve our entire database which helps the community make better food choices. We gather your annotations and use them to make Open Food Facts more accurate and efficient.",
+      "title": "Sizin töhfəniz vacibdir",
+      "information": "\"Hunger Games\" bizim OCR və süni intellektin nəticələrindən istifadə etmək cəhdidir. Open Food Facts ilə \"Hunger Games\" istifadə etdiyiniz zaman icmaya daha yaxşı yemək seçimi etməyə kömək edən bütün məlumat bazamızı təkmilləşdirirsiniz. Annotasiyalarınızı toplayırıq və Open Food Facts daha dəqiq və səmərəli etmək üçün onlardan istifadə edirik.",
       "thank_you": "Thank you for helping us improve Open Food Facts so that more people can use it easily."
     },
     "statistics": {
-      "title": "{{userName}} statistics:",
+      "title": "{{userName}} statistika:",
       "editorCount": {
-        "title": "Editor",
-        "description": "Number of editions done"
+        "title": "Redaktor",
+        "description": "Edilən nəşrlərin sayı"
       },
       "contributorCount": {
-        "title": "Contributor",
-        "description": "Adding a new product"
+        "title": "Töhfə verən",
+        "description": "Yeni məhsulun əlavə edilməsi"
       },
       "photographerCount": {
-        "title": "Photographer",
-        "description": "Taking photos for a product"
+        "title": "Fotoqraf",
+        "description": "Məhsul üçün foto çəkmək"
       }
     }
   },
   "flagged_images": {
-    "title": "Images flagged by users",
-    "loading": "Loading"
+    "title": "İstifadəçilər tərəfindən işarələnmiş şəkillər",
+    "loading": "Yüklənir"
   },
   "questions": {
-    "category": "category",
-    "categories": "Categories",
+    "category": "kateqoriya",
+    "categories": "Kateqoriyalar",
     "label": "label",
     "labels": "Labels",
     "brand": "brend",
-    "brands": "Brands",
+    "brands": "Brendlər",
     "packaging": "packaging",
-    "quantity": "Quantity",
-    "insightTypeLabel": "Only shows",
+    "quantity": "Miqdar",
+    "insightTypeLabel": "Yalnız göstərir",
     "ingredients": "Tərkibi",
-    "product_weight": "product weight",
-    "popularity_sort": "Sort by popularity",
+    "product_weight": "məhsulun çəkisi",
+    "popularity_sort": "Populyarlığa görə sırala",
     "see_examples": "See examples of this ",
     "no": "Xeyr",
-    "skip": "Skip",
+    "skip": "Ötür",
     "yes": "Bəli",
-    "no_questions_remaining": "No questions remaining",
-    "countries": "Countries",
-    "view": "View",
-    "edit": "Edit",
-    "hide_images": "Hide images (faster loading)",
-    "display_images": "Display images",
-    "annotations": "Annotations",
-    "last_annotations": "Last annotations",
-    "remaining_annotations": "Remaining questions",
-    "annotated_annotations": "Annotated",
+    "no_questions_remaining": "Heç bir sual qalmayıb",
+    "countries": "Ölkələr",
+    "view": "Bax",
+    "edit": "Düzəliş etmək",
+    "hide_images": "Şəkilləri gizlət (daha sürətli yükləmə)",
+    "display_images": "Şəkilləri göstərin",
+    "annotations": "Annotasiyalar",
+    "last_annotations": "Son annotasiyalar",
+    "remaining_annotations": "Qalan suallar",
+    "annotated_annotations": "Annotasiya edilmiş",
     "filters": {
-      "active_filter_number": "+{{count}} filters",
-      "active_filter_number_one": "+{{count}} filter",
-      "active_filter_number_zero": "no filter",
+      "active_filter_number": "+{{count}} filtrləri",
+      "active_filter_number_one": "+{{count}} filtr",
+      "active_filter_number_zero": "filtr yoxdur",
       "short_label": {
-        "value": "value",
+        "value": "dəyər",
         "country": "ölkə",
         "brand": "brend",
-        "popularity": "popularity",
+        "popularity": "populyarlıq",
         "campaign": "camp"
       },
       "long_label": {
-        "type": "Question Type",
-        "value": "Proposed Value",
-        "country": "Product Country",
-        "brand": "Product Brand",
-        "popularity": "Sort by popularity",
+        "type": "Sualın növü",
+        "value": "Təklif olunan dəyər",
+        "country": "Məhsulun Ölkəsi",
+        "brand": "Məhsulun Markası",
+        "popularity": "Populyarlığa görə sırala",
         "edit": "",
-        "campaign": "Campaign"
+        "campaign": "Kampaniya"
       },
       "placeholders": {
-        "value": "Value (Fanta, en:organic,...)",
+        "value": "Dəyər (Fanta, en:organic,...)",
         "brand": "Auchan, Danone, Herta, ...",
-        "campaign": "Annotation campaigns"
+        "campaign": "Annotasiya kampaniyaları"
       },
       "actions": {
-        "edit": "Edit Filters",
-        "cancel": "Cancel",
+        "edit": "Filterləri dəyiş",
+        "cancel": "İmtina",
         "apply": "Tətbiq et"
       }
     },
-    "other_questions": "Other questions",
-    "send": "Send",
-    "flag": "Something wrong? Report/flag the image!",
+    "other_questions": "Digər suallar",
+    "send": "Göndər",
+    "flag": "Səhv bir şey var? Şəkli bildirin!",
     "unflag": "Unflag the image",
-    "reset_filters": "Reset filters",
-    "log_in": "Login",
+    "reset_filters": "Filtrləri sıfırlayın",
+    "log_in": "Daxil ol",
     "sign_up": "Qeydiyyatdan keç",
     "login_title": "Make your annotation count",
-    "login_description": "You are not currently logged into Open Food Facts. To get your answers directly applied to products, and associated to your account, consider logging in to your Open Food Facts account, or creating one",
-    "please_wait_while_we_fetch_the_question": "Please wait while we fetch the question!"
+    "login_description": "Siz hazırda Open Food Facts-a daxil deyilsiniz. Cavablarınızı birbaşa məhsullara tətbiq etmək və hesabınızla əlaqələndirmək üçün Open Food Facts hesabınıza daxil olun və ya hesab yaradın",
+    "please_wait_while_we_fetch_the_question": "Sualı əldə edənə qədər gözləyin!"
   },
   "menu": {
     "title": "Hunger Games",
-    "games": "Games",
-    "questions": "Questions",
-    "logos": "Logos",
-    "logos-annotation": "Logos annotation",
-    "logos-search": "Logos search",
+    "games": "Oyunlar",
+    "questions": "Suallar",
+    "logos": "Loqolar",
+    "logos-annotation": "Loqoların annotasiyası",
+    "logos-search": "Loqoların axtarışı",
     "logos-product-search": "Annotation per products",
-    "logos-deep-search": "Infinite annotation",
+    "logos-deep-search": "Sonsuz annotasiya",
     "manage": "Manage",
     "insights": "Insights",
     "nutritions": "Nutrition facts",
     "settings": "Tənzimləmələr",
-    "eco-score": "Eco-score",
+    "eco-score": "Eko-balı",
     "dashboard": "Logos dashboard",
     "tour": "Show tour",
     "logged_in_user": "Logged as {{userName}}",
@@ -144,7 +144,7 @@
     "value_tag": "Value tag",
     "value_placeholder": "ex: en:mueslis, bjorg,...",
     "type": "Type",
-    "annotated": "Annotated",
+    "annotated": "Annotasiya edilmiş",
     "annotation": "Annotation",
     "not_annotated": "Not annotated",
     "all": "All",
@@ -185,34 +185,34 @@
     "qr_code": "QR code",
     "category": "Category",
     "nutrition_label": "Nutrition label",
-    "no_logo": "Not a logo",
+    "no_logo": "Loqo deyil",
     "store": "Mağaza",
     "detail": "Logo detail",
-    "id": "Logo ID:",
-    "barcode": "Barcode:",
-    "full_image": "Full image",
-    "update": "Update",
-    "no_found": "No logo found",
+    "id": "Loqo ID:",
+    "barcode": "Barkod:",
+    "full_image": "Tam şəkil",
+    "update": "Yenilə",
+    "no_found": "Loqo tapılmadı",
     "search": "Axtar",
-    "number_of_results": "Number of results:",
+    "number_of_results": "Nəticələrin sayı:",
     "loading": "Yüklənir…",
-    "refresh": "Refresh",
-    "search_specific": "Search specific logo",
-    "load_more": "Load more",
-    "no_results": "No logo found",
-    "result_count": "Shows {{showing}} on {{available}} available",
-    "flag": "Something wrong? Report/flag the image!",
+    "refresh": "Yenilə",
+    "search_specific": "Xüsusi loqo axtarın",
+    "load_more": "Daha çox yüklə",
+    "no_results": "Loqo tapılmadı",
+    "result_count": "{{available}} -də {{showing}} göstərir",
+    "flag": "Səhv bir şey var? Şəkli bildirin!",
     "unflag": "Unflag the image",
-    "crop_image_title": "crop of the logo",
-    "no_more_questions": "No more questions about this logo. You can try to find more logos with the following game.",
+    "crop_image_title": "loqonun kəsimi",
+    "no_more_questions": "Bu loqo haqqında daha sual yoxdur. Aşağıdakı oyunla daha çox loqo tapmağa cəhd edə bilərsiniz.",
     "loading_messages": {
-      "pending_reference_logos": "We are loading some logos examples to initialise the search",
-      "failed_reference_logos": "We did not find any logos with this annotation. Try to use the following game to annotate some of them."
+      "pending_reference_logos": "Axtarışı başlatmaq üçün bəzi loqo nümunələri yükləyirik",
+      "failed_reference_logos": "Bu annotasiya ilə heç bir loqo tapmadıq. Onlardan bəzilərini şərh etmək üçün aşağıdakı oyundan istifadə etməyə çalışın."
     },
     "deep_search": {
-      "title": "Logo search",
-      "description": "Select a logo you want to look for, and let's go to catch them all. For every logo you annotate, we will fetch it's neighbors such that you might never stop to annotate. (Press Shift to select range of logos)",
-      "ref_logos": "Reference logos (logo already annotated with this value)",
+      "title": "Loqo axtarışı",
+      "description": "Axtarmaq istədiyiniz loqo seçin və onların hamısını tutmağa gedək. Şərh yazdığınız hər bir loqo üçün onun qonşularını gətirəcəyik ki, heç vaxt annotasiya etməkdən əl çəkməyəsiniz. (Loqo diapazonunu seçmək üçün Shift düyməsini basın)",
+      "ref_logos": "İstinad loqoları (bu dəyərlə artıq qeyd edilmiş loqo)",
       "remaining": "Remaining to annotate",
       "select_all": "Select All",
       "unselect_all": "Deselect All"
