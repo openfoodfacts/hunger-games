@@ -2256,6 +2256,7 @@ const UNTYPED_LOGOS = {
     type: "label",
   },
   // Animal Welfare
+  // TODO: en:RSCPA Assured
   "en:haltungsform-1.79x90.png": {
     tag: "en:haltungsform-1",
     label: "haltungsform 1",
