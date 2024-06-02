@@ -2924,7 +2924,7 @@ __metadata:
     react-router-dom: ^6.18.0
     react-zoom-pan-pinch: ^2.5.0
     reactour: ^1.19.0
-    redux: ^4.2.0
+    redux: ^5.0.1
     styled-components: ^5.3.6
     typescript: ^5.2.2
     vite: ^4.5.0
@@ -4256,12 +4256,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"redux@npm:^4.2.0, redux@npm:^4.2.1":
+"redux@npm:^4.2.1":
   version: 4.2.1
   resolution: "redux@npm:4.2.1"
   dependencies:
     "@babel/runtime": ^7.9.2
   checksum: f63b9060c3a1d930ae775252bb6e579b42415aee7a23c4114e21a0b4ba7ec12f0ec76936c00f546893f06e139819f0e2855e0d55ebfce34ca9c026241a6950dd
+  languageName: node
+  linkType: hard
+
+"redux@npm:^5.0.1":
+  version: 5.0.1
+  resolution: "redux@npm:5.0.1"
+  checksum: e74affa9009dd5d994878b9a1ce30d6569d986117175056edb003de2651c05b10fe7819d6fa94aea1a94de9a82f252f986547f007a2fbeb35c317a2e5f5ecf2c
   languageName: node
   linkType: hard
 
