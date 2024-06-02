@@ -10,22 +10,17 @@ const footerLinks = [
   {
     titleKey: "appStore",
     icon: <AppleIcon fontSize="large" />,
-    url: "https://apps.apple.com/app/open-food-facts/id588797948",
+    url: "https://apps.apple.com/app/open-food-facts/id588797948?utm_source=off&utm_campaign=hunger_games_footer_en",
   },
   {
     titleKey: "playStore",
     icon: <GoogleIcon fontSize="large" />,
-    url: "https://play.google.com/store/apps/details?id=org.openfoodfacts.scanner&hl=en",
-  },
-  {
-    titleKey: "microsoft",
-    icon: <WindowIcon fontSize="large" />,
-    url: "https://apps.microsoft.com/store/detail/open-food-facts-scan-to-get-nutriscore-ecoscore-and-more/XP8LT18SRPKLRG",
+    url: "https://play.google.com/store/apps/details?id=org.openfoodfacts.scanner&hl=en&utm_source=off&utm_campaign=hunger_games_footer_en",
   },
   {
     titleKey: "androidAPK",
     icon: <AndroidIcon fontSize="large" />,
-    url: "https://github.com/openfoodfacts/smooth-app/releases/tag/v4.4.0",
+    url: "https://github.com/openfoodfacts/smooth-app/releases",
   },
 ];
 
