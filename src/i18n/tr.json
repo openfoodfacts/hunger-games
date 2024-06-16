@@ -5,7 +5,7 @@
       "cards": {
         "questions": {
           "title": "Sorular",
-          "description": "Verilen görüntünün soruları yanıtlayıp yanıtlamadığını bize bildirin"
+          "description": "Verilen görüntünün soruların cevabını içerip içermediğini bize bildirin"
         },
         "logos": {
           "title": "Logolar",
@@ -13,7 +13,7 @@
         },
         "eco_score": {
           "title": "Eko-skor",
-          "description": "En yüksek değere sahip sorulara açıklama ekleyin"
+          "description": "En yüksek değerli sorulara açıklama ekleyin"
         }
       }
     },
