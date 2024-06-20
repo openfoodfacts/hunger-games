@@ -171,7 +171,7 @@
   "logos": {
     "annotation": "Заметка: ",
     "annotations": "Аннотация логотипа",
-    "task_description": "Select all logos that are exactly the same, and give them a name like \"en:EU Organic\" and a type like \"label\".",
+    "task_description": "Выберите все логотипы, которые точно такие же, и дайте им название, например, \"en:EU Organic\" и тип, например, \"этикетка\".",
     "select_all": "Выбрать все",
     "unselect_all": "Снять выделение",
     "distance": "Расстояние:",
@@ -211,7 +211,7 @@
     },
     "deep_search": {
       "title": "Поиск логотипа",
-      "description": "Select a logo you want to look for, and let's go to catch them all. For every logo you annotate, we will fetch it's neighbors such that you might never stop to annotate. (Press Shift to select range of logos)",
+      "description": "Выберите логотип, который вы хотите найти, и поехали их всех ловить. Для каждого логотипа, который вы аннотируете, мы найдем его соседей, так что вы можете никогда не остановиться аннотировать. (Нажмите Shift, чтобы выбрать диапазон логотипов)",
       "ref_logos": "Reference logos (logo already annotated with this value)",
       "remaining": "Осталось прокомментировать",
       "select_all": "Выбрать все",
@@ -344,7 +344,7 @@
       "nutriment_saturated-fat": "Насыщенные жиры",
       "nutriment_carbohydrates": "Углеводы",
       "nutriment_sugars": "Сахар",
-      "nutriment_proteins": "Protein content",
+      "nutriment_proteins": "Содержание белка",
       "nutriment_fiber": "Волокна",
       "nutriment_salt": "Соль",
       "nutriment_sodium": "Натрий"
@@ -385,26 +385,26 @@
     "countryLabel": "Страна"
   },
   "ingredients": {
-    "description": "This game allows you to validate the pre-selection of images of ingredients lists in various languages for a product, and validate the extracted ingredients.",
+    "description": "Эта игра позволяет вам проверить предварительный выбор изображений списков ингредиентов на различных языках для продукта и подтвердить извлеченные ингредиенты.",
     "current_text": "text from off",
     "confidence_score": "language confidence",
-    "revert": "Revert",
+    "revert": "Отмена",
     "parsing": "Get server understanding",
-    "send": "Validate & send",
+    "send": "Проверить и отправить",
     "skip": "Пропустить этот продукт",
     "getRobotoffPrediciton": "Get predictions from Robotoff"
   },
   "footer": {
     "appStore": {
       "title": "App Store",
-      "subtitle": "Download on the"
+      "subtitle": "Установить на"
     },
     "playStore": {
-      "title": "Play Store",
-      "subtitle": "Get it on"
+      "title": "Play Маркет",
+      "subtitle": "Получите это"
     },
     "microsoft": {
-      "title": "Microsoft",
+      "title": "Майкрософт",
       "subtitle": "Получите это от"
     },
     "androidAPK": {
