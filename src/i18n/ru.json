@@ -114,7 +114,7 @@
     "reset_filters": "Сбросить фильтры",
     "log_in": "Имя пользователя",
     "sign_up": "Регистрация",
-    "login_title": "Make your annotation count",
+    "login_title": "Сделайте так, чтобы ваша аннотация имела значение",
     "login_description": "Вы не вошли в Open Food Facts. Чтобы получать ответы, напрямую связанные с продуктами и вашим аккаунтом, войдите в ваш аккаунт Open Food Facts, или создайте его",
     "please_wait_while_we_fetch_the_question": "Пожалуйста, подождите, пока мы ответим на ваш вопрос!"
   },
@@ -166,7 +166,7 @@
     "human_required": "Требуется человек",
     "edit_product": "Открыть редактирование продукта",
     "view_product": "Открыть страницу продукта",
-    "view_crops_for_this_product": "Annotate product logos"
+    "view_crops_for_this_product": "Аннотировать логотипы товаров"
   },
   "logos": {
     "annotation": "Заметка: ",
@@ -200,7 +200,7 @@
     "search_specific": "Поиск конкретного логотипа",
     "load_more": "Загрузить ещё",
     "no_results": "Логотип не найден",
-    "result_count": "Shows {{showing}} on {{available}} available",
+    "result_count": "Показывает {{showing}} из {{available}} доступных",
     "flag": "Что-то не так? Пожалуйтесь/пометьте изображение!",
     "unflag": "Снять отметку с изображения",
     "crop_image_title": "обрезать логотип",
@@ -212,7 +212,7 @@
     "deep_search": {
       "title": "Поиск логотипа",
       "description": "Выберите логотип, который вы хотите найти, и поехали их всех ловить. Для каждого логотипа, который вы аннотируете, мы найдем его соседей, так что вы можете никогда не остановиться аннотировать. (Нажмите Shift, чтобы выбрать диапазон логотипов)",
-      "ref_logos": "Reference logos (logo already annotated with this value)",
+      "ref_logos": "Ссылочные логотипы (логотип уже аннотирован этим значением)",
       "remaining": "Осталось прокомментировать",
       "select_all": "Выбрать все",
       "unselect_all": "Отменить выбор"
@@ -225,7 +225,7 @@
     "reportIssue": "Нашли ошибку? Пожалуйста, дайте нам знать.",
     "dev_mode_title": "Чтобы получить больше настроек, активируйте режим разработчика",
     "dev_mode_label": "Режим Разработчика",
-    "dev_page_toggle": "Show {{name}} page",
+    "dev_page_toggle": "Показать страницу {{name}}",
     "join_community": "Присоединяйтесь к сообществу",
     "text1": "Open Food Facts - это совместный проект, построенный десятками тысяч добровольцев и управляемый некоммерческой организацией с 8 сотрудниками. Нам нужны ваши пожертвования, чтобы финансировать бюджет Open Food Facts 2024 и продолжить разработку проекта.",
     "thank_you": "Спасибо",
@@ -254,9 +254,9 @@
     "welcome": {
       "page1": {
         "title": "Добро пожаловать на Голодные игры",
-        "text1": "Hunger Games is a collection of mini-games that help contribute to Open Food Facts in many ways. You can play our really exciting games from anywhere. Here is a guided tour of the entire website which will get you started.",
+        "text1": "Hunger Games - это коллекция мини-игр, которые помогают в Open Food Facts многими способами. Вы можете играть в наши действительно захватывающие игры из любого места. Вот экскурсия по всему веб-сайту, с которой вы начнете.",
         "text2": "Убедитесь в том, что вы вошли в аккаунт на вебсайте Open Food Facts, чтобы получить признание за свой вклад. Если вы допустили ошибку, выделите время на её исправление, перейдя на веб-сайт.",
-        "text3": "In case of any doubt about the games, click on the question mark icon at the top right of the page, and you can reach us on slack at the #hunger-games channel"
+        "text3": "Если у Вас есть сомнения по поводу этой игры, у Вас есть помощник в правом верхнем углу страницы. Также, Вы можете связаться с нами в Slack через канал #hunger-games"
       },
       "page2": {
         "title": "Игра вопросов",
@@ -370,8 +370,8 @@
   },
   "nutriscore": {
     "image_alt": "обрезанное изображение",
-    "label": "Annotate Nutri-Score logo detection by batch.",
-    "description": "To do so, select all the images showing the correct/wrong Nutri-Score value ({{label}}), and click on the bottom buttons to say if you selected a set correct or wrong ones.",
+    "label": "Аннотируйте обнаружение логотипа Nutri-Score пакетным способом.",
+    "description": "Чтобы сделать это, выберите все изображения, показывающие правильное/неправильное значение Nutri-Score ({{label}}), и нажмите на кнопки внизу, чтобы указать, выбрали ли вы правильные или неправильные.",
     "images_remaining": "Все еще {{remaining}} для аннотации",
     "image_sizes": "Размеры изображений",
     "zoom_on_logo": "Увеличить логотип",
@@ -387,12 +387,12 @@
   "ingredients": {
     "description": "Эта игра позволяет вам проверить предварительный выбор изображений списков ингредиентов на различных языках для продукта и подтвердить извлеченные ингредиенты.",
     "current_text": "text from off",
-    "confidence_score": "language confidence",
+    "confidence_score": "языковая уверенность",
     "revert": "Отмена",
-    "parsing": "Get server understanding",
+    "parsing": "Получить понимание сервера",
     "send": "Проверить и отправить",
     "skip": "Пропустить этот продукт",
-    "getRobotoffPrediciton": "Get predictions from Robotoff"
+    "getRobotoffPrediciton": "Получить прогнозы от Robotoff"
   },
   "footer": {
     "appStore": {
