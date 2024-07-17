@@ -36,6 +36,10 @@ updates:
         patterns:
           - "@vitejs/plugin-react"
           - "vite"
+      eslint:
+        patterns:
+          - "@typescript-eslint/*"
+          - "eslint"
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
