@@ -1,32 +1,32 @@
 # Add labels to any any pull request with changes to the specified paths
 Github Actions:
-- changed-files:
-  - any-glob-to-any-file: '.github/**/*'
+  - changed-files:
+      - any-glob-to-any-file: ".github/**/*"
 
 Questions game:
-- changed-files:
-  - any-glob-to-any-file: 'src/pages/questions/**/*'
+  - changed-files:
+      - any-glob-to-any-file: "src/pages/questions/**/*"
 
 🖼️ Logo game:
-- changed-files:
-  - any-glob-to-any-file: 'src/pages/logos/**/*'
-  - any-glob-to-any-file: 'src/components/LogoForm.jsx'
-  - any-glob-to-any-file: 'src/pages/logos/LogoAnnotation.jsx'
-  - any-glob-to-any-file: 'src/pages/logos/LogoDeepSearch.jsx'
+  - changed-files:
+      - any-glob-to-any-file: "src/pages/logos/**/*"
+      - any-glob-to-any-file: "src/components/LogoForm.jsx"
+      - any-glob-to-any-file: "src/pages/logos/LogoAnnotation.jsx"
+      - any-glob-to-any-file: "src/pages/logos/LogoDeepSearch.jsx"
 
 Insights:
-- changed-files:
-  - any-glob-to-any-file: 'src/pages/insights/**/*'
+  - changed-files:
+      - any-glob-to-any-file: "src/pages/insights/**/*"
 
 🌱 Eco-Score game:
-- changed-files:
-  - any-glob-to-any-file: 'src/pages/eco-score/**/*'
+  - changed-files:
+      - any-glob-to-any-file: "src/pages/eco-score/**/*"
 
 i18n:
-- changed-files:
-  - any-glob-to-any-file: 'src/i18n/**/*'
+  - changed-files:
+      - any-glob-to-any-file: "src/i18n/**/*"
 
 Nutrition game:
-- changed-files:
-  - any-glob-to-any-file: 'src/pages/nutrition/**/*'
-  - any-glob-to-any-file: 'src/pages/nutrition/index.jsx'
+  - changed-files:
+      - any-glob-to-any-file: "src/pages/nutrition/**/*"
+      - any-glob-to-any-file: "src/pages/nutrition/index.jsx"
