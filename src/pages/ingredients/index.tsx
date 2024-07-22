@@ -23,6 +23,7 @@ import { useSearchParams } from "react-router-dom";
 import { localSettings } from "../../localeStorageManager";
 import countryNames from "../../assets/countries.json";
 import { getCountryId } from "../../utils/getCountryId";
+import { OFF_URL } from "../../const";
 
 function ProductInterface(props) {
   const { product, next } = props;

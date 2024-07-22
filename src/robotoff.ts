@@ -1,6 +1,7 @@
 import axios from "axios";
 import { ROBOTOFF_API_URL, IS_DEVELOPMENT_MODE, OFF_IMAGE_URL } from "./const";
 import { getLang } from "./localeStorageManager";
+import COUNTRIES from "./assets/countries.json";
 import { reformatValueTag, removeEmptyKeys } from "./utils";
 
 export interface QuestionInterface {
@@ -15,6 +16,17 @@ export interface QuestionInterface {
 }
 
 type GetQuestionsResponse = { count: number; questions: QuestionInterface[] };
+
+function countryId2countryCode(id: string | null) {
+  if (id === null) {
+    return null;
+  }
+  const code = COUNTRIES.find((c) => c.id === id)?.countryCode;
+  if (code) {
+    return code.toLowerCase();
+  }
+  return code;
+}
 
 const robotoff = {
   annotate(insightId: string, annotation) {
@@ -64,26 +76,24 @@ const robotoff = {
       insight_types: insightType,
       value_tag: valueTag,
       brands: reformatValueTag(brandFilter),
-      country: countryFilter !== "en:world" ? countryFilter : null,
+      countries: countryId2countryCode(
+        countryFilter !== "en:world" ? countryFilter : null,
+      ),
       campaign,
       predictor,
+      order_by: sortByPopularity ? "popularity" : "random",
     };
 
     const lang = getLang();
 
-    return axios.get<GetQuestionsResponse>(
-      `${ROBOTOFF_API_URL}/questions/${
-        sortByPopularity ? "popular" : "random"
-      }`,
-      {
-        params: removeEmptyKeys({
-          ...searchParams,
-          lang,
-          count,
-          page,
-        }),
-      },
-    );
+    return axios.get<GetQuestionsResponse>(`${ROBOTOFF_API_URL}/questions/`, {
+      params: removeEmptyKeys({
+        ...searchParams,
+        lang,
+        count,
+        page,
+      }),
+    });
   },
 
   insightDetail(insight_id) {
@@ -231,6 +241,7 @@ const robotoff = {
     return axios.get(
       `${ROBOTOFF_API_URL}/questions/unanswered/?${Object.keys({
         ...params,
+        countries: countryId2countryCode(params.country),
         page,
       })
         .filter((key) => params[key] !== undefined)
