@@ -21,7 +21,11 @@ function countryId2countryCode(id: string | null) {
   if (id === null) {
     return null;
   }
-  return COUNTRIES.find((c) => c.id === id)?.countryCode;
+  const code = COUNTRIES.find((c) => c.id === id)?.countryCode;
+  if (code) {
+    return code.toLowerCase();
+  }
+  return code;
 }
 
 const robotoff = {
