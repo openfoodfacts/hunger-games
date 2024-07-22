@@ -67,23 +67,19 @@ const robotoff = {
       country: countryFilter !== "en:world" ? countryFilter : null,
       campaign,
       predictor,
+      order_by: sortByPopularity ? "popularity" : "random",
     };
 
     const lang = getLang();
 
-    return axios.get<GetQuestionsResponse>(
-      `${ROBOTOFF_API_URL}/questions/${
-        sortByPopularity ? "popular" : "random"
-      }`,
-      {
-        params: removeEmptyKeys({
-          ...searchParams,
-          lang,
-          count,
-          page,
-        }),
-      },
-    );
+    return axios.get<GetQuestionsResponse>(`${ROBOTOFF_API_URL}/questions/`, {
+      params: removeEmptyKeys({
+        ...searchParams,
+        lang,
+        count,
+        page,
+      }),
+    });
   },
 
   insightDetail(insight_id) {
