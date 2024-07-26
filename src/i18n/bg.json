@@ -298,7 +298,7 @@
       "page2": {
         "title": "Предупреждение",
         "text1": "Ако изрязването съдържа няколко емблеми, не го избирайте.",
-        "text2": "If the crop contains only a partial part of a logo, you can select it."
+        "text2": "Можете да изберета изрязаната част, ако тя съдържа само част от лого."
       },
       "page3": {
         "title": "Потвърди",
@@ -385,7 +385,7 @@
     "countryLabel": "Страна"
   },
   "ingredients": {
-    "description": "This game allows you to validate the pre-selection of images of ingredients lists in various languages for a product, and validate the extracted ingredients.",
+    "description": "Тази игра позволява да валидирате избраните изображения от списъци от съставки за избран продукт на разлини езици, и да потвърдите избраните съставки.",
     "current_text": "text from off",
     "confidence_score": "language confidence",
     "revert": "Revert",
