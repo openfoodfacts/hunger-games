@@ -40,7 +40,7 @@
         "description": "Adding a new product"
       },
       "photographerCount": {
-        "title": "Photographer",
+        "title": "ช่างถ่ายภาพ",
         "description": "Taking photos for a product"
       }
     }
@@ -85,7 +85,7 @@
         "country": "ประเทศ",
         "brand": "ยี่ห้อสินค้า",
         "popularity": "popularity",
-        "campaign": "camp"
+        "campaign": "แคมป์"
       },
       "long_label": {
         "type": "Question Type",
@@ -108,7 +108,7 @@
       }
     },
     "other_questions": "Other questions",
-    "send": "Send",
+    "send": "ส่ง",
     "flag": "Something wrong? Report/flag the image!",
     "unflag": "Unflag the image",
     "reset_filters": "Reset filters",
@@ -120,11 +120,11 @@
   },
   "menu": {
     "title": "Hunger Games",
-    "games": "Games",
+    "games": "เกม",
     "questions": "คำถาม",
     "logos": "Logos",
     "logos-annotation": "Logos annotation",
-    "logos-search": "Logos search",
+    "logos-search": "ค้นหาโลโก้",
     "logos-product-search": "Annotation per products",
     "logos-deep-search": "Infinite annotation",
     "manage": "จัดการ",
@@ -133,9 +133,9 @@
     "settings": "ตั้งค่า",
     "eco-score": "Eco-score",
     "dashboard": "Logos dashboard",
-    "tour": "Show tour",
+    "tour": "แสดงทัวร์",
     "logged_in_user": "Logged as {{userName}}",
-    "log_in": "Click to login"
+    "log_in": "คลิกเพื่อเข้าสู่ระบบ"
   },
   "insights": {
     "insights": "ข้อมูลเชิงลึก",
@@ -143,11 +143,11 @@
     "barcode_placeholder": "บาร์โค้ด",
     "value_tag": "Value tag",
     "value_placeholder": "ex: en:mueslis, bjorg,...",
-    "type": "Type",
+    "type": "ประเภท",
     "annotated": "Annotated",
     "annotation": "Annotation",
     "not_annotated": "Not annotated",
-    "all": "All",
+    "all": "ทั้งหมด",
     "label": "Label",
     "product_weight": "Product weight",
     "category": "หมวดหมู่:",
@@ -177,7 +177,7 @@
     "distance": "Distance:",
     "value": "Value",
     "submit": "Submit",
-    "type": "Type",
+    "type": "ประเภท",
     "label": "Label",
     "brand": "ยี่ห้อ",
     "packager_code": "รหัสแพ็คเกจ",
@@ -214,7 +214,7 @@
       "description": "Select a logo you want to look for, and let's go to catch them all. For every logo you annotate, we will fetch it's neighbors such that you might never stop to annotate. (Press Shift to select range of logos)",
       "ref_logos": "Reference logos (logo already annotated with this value)",
       "remaining": "Remaining to annotate",
-      "select_all": "Select All",
+      "select_all": "เลือกทั้งหมด",
       "unselect_all": "Deselect All"
     }
   },
@@ -334,18 +334,18 @@
     "validate": "Validate Table",
     "unselect_picture": "No nutrition info",
     "basis": "data for: ",
-    "servingSize": "serving size",
+    "servingSize": "หน่วยบริโภค",
     "value": "Value",
     "unit": "Unit",
     "nutriments": {
-      "nutriment_energy-kj": "แคลอรี (kJ)",
-      "nutriment_energy-kcal": "Energy (kCal)",
-      "nutriment_fat": "Fat",
+      "nutriment_energy-kj": "พลังงาน (กิโลจูล)",
+      "nutriment_energy-kcal": "พลังงาน (กิโลแคลอรี)",
+      "nutriment_fat": "ไขมัน",
       "nutriment_saturated-fat": "ไขมันอิ่มตัว",
       "nutriment_carbohydrates": "คาร์โบไฮเดรต",
-      "nutriment_sugars": "Sugar",
-      "nutriment_proteins": "Protein content",
-      "nutriment_fiber": "Fibres",
+      "nutriment_sugars": "น้ำตาล",
+      "nutriment_proteins": "ปริมาณโปรตีน",
+      "nutriment_fiber": "ใยอาหาร",
       "nutriment_salt": "เกลือ",
       "nutriment_sodium": "โซเดียม"
     },
