@@ -98,7 +98,7 @@ const LabelFilter = (props) => {
         setInnerValue(newValue);
         onChange(newValue?.key ?? newValue);
       }}
-      onInputChange={(e, newInputValue, reason) => {
+      onInputChange={(e, newInputValue) => {
         setInputValue(newInputValue);
       }}
       onBlur={() => {

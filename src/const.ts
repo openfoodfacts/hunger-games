@@ -11,7 +11,7 @@ export const OFF_SEARCH_A_LISIOUS =
 export const IS_DEVELOPMENT_MODE = process.env.NODE_ENV === "development";
 export const URL_ORIGINE = IS_DEVELOPMENT_MODE
   ? "http://localhost:5173"
-  : "https://hunger.openfoodfacts.org/";
+  : "https://hunger.openfoodfacts.org";
 export const NO_QUESTION_LEFT = "NO_QUESTION_LEFT";
 
 export const CORRECT_INSIGHT = 1;

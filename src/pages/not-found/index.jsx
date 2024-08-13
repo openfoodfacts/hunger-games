@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Link from "@mui/material/Link";
+import logo from "../../assets/404.png";
 
 export default function Insights() {
   const { t } = useTranslation();
@@ -17,7 +18,7 @@ export default function Insights() {
             height: "auto",
           }}
           alt={t("notfound.image_alt")}
-          src={require("../../assets/404.png")}
+          src={logo}
         />
         <Typography variant="h4">{t("notfound.nopage")}</Typography>
         <Typography variant="body1" sx={{ mt: 2 }}>
