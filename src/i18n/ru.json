@@ -297,8 +297,8 @@
       },
       "page2": {
         "title": "Nazwa zwyczajowa",
-        "text1": "If the crop contains multiple logos, do not select it.",
-        "text2": "If the crop contains only a partial part of a logo, you can select it."
+        "text1": "Если на фото заметны несколько логотипов, не выбирайте его.",
+        "text2": "Если на фото видна только часть логотипа, Вы можете его выбрать."
       },
       "page3": {
         "title": "Подтвердить",
@@ -386,7 +386,7 @@
   },
   "ingredients": {
     "description": "Эта игра позволяет вам проверить предварительный выбор изображений списков ингредиентов на различных языках для продукта и подтвердить извлеченные ингредиенты.",
-    "current_text": "text from off",
+    "current_text": "текст из Open Food Facts",
     "confidence_score": "языковая уверенность",
     "revert": "Отмена",
     "parsing": "Получить понимание сервера",
