@@ -1,7 +1,7 @@
 {
   "home": {
     "game_selector": {
-      "title": "Hvilket spil ønskes spillet?",
+      "title": "Hvilket spil vil du gerne spille?",
       "cards": {
         "questions": {
           "title": "Spørgsmål",
@@ -254,7 +254,7 @@
     "welcome": {
       "page1": {
         "title": "Velkommen til Hunger Games",
-        "text1": "Hunger Games is a collection of mini-games that help contribute to Open Food Facts in many ways. You can play our really exciting games from anywhere. Here is a guided tour of the entire website which will get you started.",
+        "text1": "Hunger Games er en samling minispil, som hver især bidrager til Open Food Facts på mange måder. Du kan spille vores spændende spil, uanset hvor du er. Her er en guidet rundtur på hele webstedet for at komme i gang.",
         "text2": "Sørg for at være logget ind på Open Food Facts-webstedet for at blive krediteret for bidrag. Får man lavet en fejl, så tag venligst tiden til korrigere den via webstedet.",
         "text3": "Ved tvivl omkring spillene, så klik på spørgsmålstegnet øverst til højre på siden, og man kan nå os via slack på kanalen #hunger-games"
       },
@@ -390,7 +390,7 @@
     "confidence_score": "language confidence",
     "revert": "Revert",
     "parsing": "Get server understanding",
-    "send": "Validate & send",
+    "send": "Bekræft og send",
     "skip": "Overspring dette produkt",
     "getRobotoffPrediciton": "Get predictions from Robotoff"
   },
