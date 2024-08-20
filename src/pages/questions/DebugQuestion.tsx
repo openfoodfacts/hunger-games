@@ -20,38 +20,49 @@ import TableCell from "@mui/material/TableCell";
 const fetchData = async (insightId) => {
   const response = await robotoff.insightDetail(insightId);
 
-  if (
-    response?.data?.source_image &&
-    response?.data?.data?.logo_id &&
-    !response?.data?.data?.bounding_box
-  ) {
-    const logoData = await robotoff.getLogosImages([
-      response?.data?.data?.logo_id,
-    ]);
-    const bounding_box = logoData?.data?.logos?.[0]?.bounding_box;
-
-    return { ...response, bounding_box };
-  }
-
-  return response;
-};
-
-const getCroppedLogoUrl = (debugResponse) => {
-  const debugData = debugResponse?.data;
-  const bounding_box =
-    debugData?.data?.bounding_box || debugResponse?.bounding_box;
-
-  if (!debugData?.source_image || !bounding_box) {
+  if (!response) {
     return null;
   }
 
-  const sourceImage = off.getImageUrl(debugData?.source_image);
+  let bounding_box = response.data?.bounding_box;
+  const source_image = response.data?.source_image;
+  const logo_id = response.data?.data?.logo_id;
+
+  if (source_image && logo_id && !bounding_box) {
+    const logoData = await robotoff.getLogosImages([logo_id]);
+    bounding_box = logoData?.data?.logos?.[0]?.bounding_box;
+  }
+
+  return { source_image, bounding_box, data: response.data };
+};
+
+const getCroppedLogoUrl = (
+  debugResponse: null | {
+    source_image?: string;
+    bounding_box?: number[];
+  },
+) => {
+  if (!debugResponse) {
+    return null;
+  }
+  const { bounding_box, source_image } = debugResponse;
+
+  if (!source_image || !bounding_box) {
+    return null;
+  }
+
+  const sourceImage = off.getImageUrl(source_image);
   return robotoff.getCroppedImageUrl(sourceImage, bounding_box);
 };
+
 const DebugQuestion = (props) => {
   const { insightId } = props;
   const [isLoading, setIsLoading] = React.useState(true);
-  const [debugResponse, setDebugResponse] = React.useState<any>({});
+  const [debugResponse, setDebugResponse] = React.useState<null | {
+    source_image?: string;
+    bounding_box?: number[];
+    data?: any;
+  }>({});
   const [openDetails, setOpenDetails] = React.useState<any>({
     resume: false,
     json_details: false,

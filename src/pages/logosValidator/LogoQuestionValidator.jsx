@@ -37,20 +37,20 @@ import Loader from "../loader";
 const fetchData = async (insightId) => {
   const response = await robotoff.insightDetail(insightId);
 
-  if (
-    response?.data?.source_image &&
-    response?.data?.data?.logo_id &&
-    !response?.data?.data?.bounding_box
-  ) {
-    const logoData = await robotoff.getLogosImages([
-      response?.data?.data?.logo_id,
-    ]);
-    const bounding_box = logoData?.data?.logos?.[0]?.bounding_box;
-
-    return { ...response, bounding_box };
+  if (!response) {
+    return response;
   }
 
-  return response;
+  let bounding_box = response.data?.bounding_box;
+  const source_image = response.data?.source_image;
+  const logo_id = response.data?.data?.logo_id;
+
+  if (source_image && logo_id && !bounding_box) {
+    const logoData = await robotoff.getLogosImages([logo_id]);
+    bounding_box = logoData?.data?.logos?.[0]?.bounding_box;
+  }
+
+  return { source_image, bounding_box };
 };
 
 const LogoQuesitonCard = (props) => {
@@ -68,23 +68,18 @@ const LogoQuesitonCard = (props) => {
     let isValidQuery = true;
 
     const getImageUrl = async () => {
-      const { data, bounding_box } = await fetchData(question.insight_id);
+      const { source_image, bounding_box } = await fetchData(
+        question.insight_id,
+      );
 
       if (!isValidQuery) {
         return;
       }
 
-      if (data?.data?.bounding_box && data?.source_image) {
+      if (bounding_box && source_image) {
         setCroppedImageUrl(
           robotoff.getCroppedImageUrl(
-            off.getImageUrl(data?.source_image),
-            data.data.bounding_box,
-          ),
-        );
-      } else if (bounding_box && data?.source_image) {
-        setCroppedImageUrl(
-          robotoff.getCroppedImageUrl(
-            off.getImageUrl(data?.source_image),
+            off.getImageUrl(source_image),
             bounding_box,
           ),
         );
