@@ -1,8 +1,8 @@
-name: Add bugs to the new Hunger Games GitHub Project
+name: Add bugs to the relevant GitHub Projects
 
 on:
   issues:
-    types: [opened, transferred]
+    types: [opened, transferred, labeled]
 
 jobs:
   add-to-project:
@@ -14,3 +14,14 @@ jobs:
           project-url: https://github.com/orgs/openfoodfacts/projects/40
           github-token: ${{ secrets.ADD_TO_PROJECT_PAT || github.token }}
           label-operator: AND
+
+  add-to-design-project:
+    name: 🎨 Add issue to the openfoodfacts-design project
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/add-to-project@main
+        with:
+          project-url: https://github.com/orgs/openfoodfacts/projects/11
+          github-token: ${{ secrets.ADD_TO_PROJECT_PAT }}
+          labeled: mockups available, needs mockup
+          label-operator: OR
