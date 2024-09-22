@@ -53,7 +53,7 @@
     "category": "kategori",
     "categories": "Kategori",
     "label": "labèl",
-    "labels": "Labels",
+    "labels": "Etikèt",
     "brand": "mak",
     "brands": "Mak",
     "packaging": "anbalaj",
@@ -134,7 +134,7 @@
     "eco-score": "Eco-score",
     "dashboard": "Logos dashboard",
     "tour": "Show tour",
-    "logged_in_user": "Logged as {{userName}}",
+    "logged_in_user": "Konekte kòm {{userName}}",
     "log_in": "Klike pou w konekte"
   },
   "insights": {
@@ -148,7 +148,7 @@
     "annotation": "Annotation",
     "not_annotated": "Not annotated",
     "all": "Tout",
-    "label": "Label",
+    "label": "Etikèt",
     "product_weight": "Pwa pwodwi",
     "category": "Kategori",
     "expiration_date": "Dat ekspirasyon",
@@ -178,7 +178,7 @@
     "value": "Valè",
     "submit": "Soumèt",
     "type": "Type",
-    "label": "Label",
+    "label": "Etikèt",
     "brand": "Mak",
     "packager_code": "Packager code",
     "packaging": "Packaging",
@@ -229,16 +229,16 @@
     "join_community": "Antre nan kominote a",
     "text1": "Open Food Facts is a collaborative project built by tens of thousands of volunteers and managed by a non-profit organization with 8 employees. We need your donations to fund the Open Food Facts 2024 budget and to continue to develop the project.",
     "thank_you": "Mèsi",
-    "donate": "Donate",
+    "donate": "Fè yon don",
     "join_the_community": {
       "discover_our": "Discover our ",
       "code_of_conduct": "Code of conduct ",
-      "join_us_on": "Join us on ",
+      "join_us_on": "Rejwenn nou sou ",
       "forum": "Fowòm",
-      "subscribe_to_our": "Subscribe to our ",
-      "newsletter": "newsletter"
+      "subscribe_to_our": "Abòne ak ",
+      "newsletter": "bilten nouvèl"
     },
-    "discover_the_project": "Discover the project",
+    "discover_the_project": "Dekouvri pwojè a",
     "Who_we_are": "Kiyès nou ye",
     "Vision_Mission_Values_and_Programs": "Vision, Mission, Values and Programs",
     "FAQS": "FAQS",
@@ -246,14 +246,14 @@
     "Press": "Press",
     "Open_Food_Facts_wiki": "Open Food Facts wiki (en)",
     "Translators": "Tradiktè",
-    "Partners": "Partners",
-    "Open_Beauty_Facts": "Open Beauty Facts - Cosmetics",
+    "Partners": "Patenè",
+    "Open_Beauty_Facts": "Open Beauty Facts - Kosmetik",
     "text2": "A collaborative, free and open database of food products from around the world."
   },
   "helper": {
     "welcome": {
       "page1": {
-        "title": "Welcome to Hunger Games",
+        "title": "Byenveni nan Hunger Games",
         "text1": "Hunger Games is a collection of mini-games that help contribute to Open Food Facts in many ways. You can play our really exciting games from anywhere. Here is a guided tour of the entire website which will get you started.",
         "text2": "Make sure to login to the Open Food Facts website to get credit for your contributions. If you make a mistake, please take the time to correct it by heading to the website.",
         "text3": "In case of any doubt about the games, click on the question mark icon at the top right of the page, and you can reach us on slack at the #hunger-games channel"
@@ -397,15 +397,15 @@
   "footer": {
     "appStore": {
       "title": "App Store",
-      "subtitle": "Download on the"
+      "subtitle": "Telechaje sou"
     },
     "playStore": {
       "title": "Play Store",
-      "subtitle": "Get it on"
+      "subtitle": "Jwenn li sou"
     },
     "microsoft": {
       "title": "Microsoft",
-      "subtitle": "Get it from"
+      "subtitle": "Jwenn li nan"
     },
     "androidAPK": {
       "title": "Android APK",
