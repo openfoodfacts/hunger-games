@@ -18,14 +18,14 @@
       }
     },
     "account_band": {
-      "title": "Want to make your contribution count? Create an account or sign in on Open Food Facts!",
+      "title": "Ou vle fè kontribisyon ou konte? Kreye yon kont oswa konekte sou Open Food Facts!",
       "log_in": "Konekte",
       "sign_up": "Enskri",
-      "contribution_details": "Learn why your contribution matters"
+      "contribution_details": "Aprann poukisa kontribisyon ou enpòtan"
     },
     "saved_filters": "Saved Filters",
     "contribution_modal": {
-      "title": "Your contribution matters",
+      "title": "Kontribisyon ou enpòtan",
       "information": "Hunger Games is an effort to leverage the results of our OCR and artificial intelligence. When you use Hunger Games by Open Food Facts, you improve our entire database which helps the community make better food choices. We gather your annotations and use them to make Open Food Facts more accurate and efficient.",
       "thank_you": "Mèsi paske w ede nou amelyore Open Food Facts pou plis moun ka sèvi ak li fasil."
     },
@@ -40,7 +40,7 @@
         "description": "Ajoute yon nouvo pwodwi"
       },
       "photographerCount": {
-        "title": "Photographer",
+        "title": "Fotograf",
         "description": "Pran foto yon pwodwi"
       }
     }
@@ -135,14 +135,14 @@
     "dashboard": "Logos dashboard",
     "tour": "Show tour",
     "logged_in_user": "Logged as {{userName}}",
-    "log_in": "Click to login"
+    "log_in": "Klike pou w konekte"
   },
   "insights": {
     "insights": "Insights",
     "barcode": "Kòd ba",
     "barcode_placeholder": "kòd ba",
     "value_tag": "Value tag",
-    "value_placeholder": "ex: en:mueslis, bjorg,...",
+    "value_placeholder": "egz: en:mueslis, bjorg,...",
     "type": "Type",
     "annotated": "Annotated",
     "annotation": "Annotation",
@@ -153,7 +153,7 @@
     "category": "Kategori",
     "expiration_date": "Dat ekspirasyon",
     "packager_code": "Packager code",
-    "skipped": "Skipped (-1)",
+    "skipped": "Sote (-1)",
     "rejected": "Refize (0)",
     "accepted": "Aksepte (1)",
     "search": "Rechèch",
