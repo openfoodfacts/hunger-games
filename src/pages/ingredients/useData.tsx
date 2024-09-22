@@ -27,7 +27,6 @@ const formatData = (product) => {
   const {
     code,
     lang,
-    image_ingredients_url,
     product_name,
     ingredient,
     images,
@@ -35,7 +34,7 @@ const formatData = (product) => {
     ...other
   } = product;
 
-  const baseImageUrl = image_ingredients_url.replace(/ingredients.*/, "");
+  const baseImageUrl = `https://images.openfoodfacts.org/images/products/${off.getFormatedBarcode(code)}/`
 
   const selectedImages = Object.keys(images)
     .filter((key) => key.startsWith("ingredients"))
@@ -80,7 +79,6 @@ const formatData = (product) => {
     code,
     lang,
     selectedImages,
-    image_ingredients_url,
     product_name,
     ingredient,
     scans_n,
@@ -89,10 +87,11 @@ const formatData = (product) => {
   };
 };
 
-export default function useData(countryCode): [any[], () => void, boolean] {
+export default function useData(countryCode): [any[], () => void, boolean, boolean] {
   const [data, setData] = React.useState([]);
   const prevCountry = React.useRef(countryCode);
   const [isLoading, setIsLoading] = React.useState(true);
+  const [hasError, setHasError] = React.useState(false);
   const [page, setPage] = React.useState(() => {
     return 0;
     // Seems that API fails for large page number
@@ -137,6 +136,7 @@ export default function useData(countryCode): [any[], () => void, boolean] {
           setIsLoading(false);
         }
       } catch (error) {
+        setHasError(true)
         console.log(error);
       }
     };
@@ -154,9 +154,9 @@ export default function useData(countryCode): [any[], () => void, boolean] {
   React.useEffect(() => {
     // This is dummy but will be ok for a PoC
     if (data.length < 5 && !isLoading) {
-      setPage((p) => p + 1);
+      // setPage((p) => p + 1);
     }
   }, [data, isLoading]);
 
-  return [data, removeHead, isLoading];
+  return [data, removeHead, isLoading, hasError];
 }
