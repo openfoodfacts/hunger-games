@@ -5,14 +5,14 @@
       "cards": {
         "questions": {
           "title": "Spørsmål",
-          "description": "Tell us if the given image answers the questions"
+          "description": "Fortell oss om bildet svarer på spørsmålene"
         },
         "logos": {
-          "title": "Logos",
-          "description": "Find all the logos matching the given logo"
+          "title": "Logoer",
+          "description": "Finn alle logoene som samsvarer med den gitte logoen"
         },
         "eco_score": {
-          "title": "Eco-score",
+          "title": "Øko-poeng",
           "description": "Annotate the questions with the highest value"
         }
       }
@@ -21,11 +21,11 @@
       "title": "Want to make your contribution count? Create an account or sign in on Open Food Facts!",
       "log_in": "Username",
       "sign_up": "Registrér deg",
-      "contribution_details": "Learn why your contribution matters"
+      "contribution_details": "Finn ut hvorfor ditt bidrag er viktig"
     },
-    "saved_filters": "Saved Filters",
+    "saved_filters": "Lagrede filtre",
     "contribution_modal": {
-      "title": "Your contribution matters",
+      "title": "Dine bidrag betyr noe",
       "information": "Hunger Games is an effort to leverage the results of our OCR and artificial intelligence. When you use Hunger Games by Open Food Facts, you improve our entire database which helps the community make better food choices. We gather your annotations and use them to make Open Food Facts more accurate and efficient.",
       "thank_you": "Thank you for helping us improve Open Food Facts so that more people can use it easily."
     },
@@ -122,7 +122,7 @@
     "title": "Hunger Games",
     "games": "Games",
     "questions": "Spørsmål",
-    "logos": "Logos",
+    "logos": "Logoer",
     "logos-annotation": "Logos annotation",
     "logos-search": "Logos search",
     "logos-product-search": "Annotation per products",
@@ -131,7 +131,7 @@
     "insights": "Insights",
     "nutritions": "Næringsfakta",
     "settings": "Innstillinger",
-    "eco-score": "Eco-score",
+    "eco-score": "Øko-poeng",
     "dashboard": "Logos dashboard",
     "tour": "Show tour",
     "logged_in_user": "Logged as {{userName}}",

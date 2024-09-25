@@ -1,15 +1,15 @@
 {
   "home": {
     "game_selector": {
-      "title": "What game would you like to play?",
+      "title": "Ki jwèt ou ta renmen jwe?",
       "cards": {
         "questions": {
-          "title": "Questions",
-          "description": "Tell us if the given image answers the questions"
+          "title": "Kesyon",
+          "description": "Di nou si imaj yo bay la reponn kesyon yo"
         },
         "logos": {
-          "title": "Logos",
-          "description": "Find all the logos matching the given logo"
+          "title": "Logo",
+          "description": "Jwenn logo ki sanble ak logo yo bay la"
         },
         "eco_score": {
           "title": "Eco-score",
@@ -18,81 +18,81 @@
       }
     },
     "account_band": {
-      "title": "Want to make your contribution count? Create an account or sign in on Open Food Facts!",
-      "log_in": "Login",
-      "sign_up": "Sign up",
-      "contribution_details": "Learn why your contribution matters"
+      "title": "Ou vle fè kontribisyon ou konte? Kreye yon kont oswa konekte sou Open Food Facts!",
+      "log_in": "Konekte",
+      "sign_up": "Enskri",
+      "contribution_details": "Aprann poukisa kontribisyon ou enpòtan"
     },
     "saved_filters": "Saved Filters",
     "contribution_modal": {
-      "title": "Your contribution matters",
+      "title": "Kontribisyon ou enpòtan",
       "information": "Hunger Games is an effort to leverage the results of our OCR and artificial intelligence. When you use Hunger Games by Open Food Facts, you improve our entire database which helps the community make better food choices. We gather your annotations and use them to make Open Food Facts more accurate and efficient.",
-      "thank_you": "Thank you for helping us improve Open Food Facts so that more people can use it easily."
+      "thank_you": "Mèsi paske w ede nou amelyore Open Food Facts pou plis moun ka sèvi ak li fasil."
     },
     "statistics": {
-      "title": "{{userName}} statistics:",
+      "title": "{{userName}} estatistik:",
       "editorCount": {
         "title": "Editor",
         "description": "Number of editions done"
       },
       "contributorCount": {
-        "title": "Contributor",
-        "description": "Adding a new product"
+        "title": "Kontribitè",
+        "description": "Ajoute yon nouvo pwodwi"
       },
       "photographerCount": {
-        "title": "Photographer",
-        "description": "Taking photos for a product"
+        "title": "Fotograf",
+        "description": "Pran foto yon pwodwi"
       }
     }
   },
   "flagged_images": {
     "title": "Images flagged by users",
-    "loading": "Loading"
+    "loading": "Chaje"
   },
   "questions": {
-    "category": "category",
-    "categories": "Categories",
-    "label": "label",
-    "labels": "Labels",
-    "brand": "brand",
-    "brands": "Brands",
-    "packaging": "packaging",
-    "quantity": "Quantity",
-    "insightTypeLabel": "Only shows",
-    "ingredients": "Ingredients",
-    "product_weight": "product weight",
-    "popularity_sort": "Sort by popularity",
-    "see_examples": "See examples of this ",
-    "no": "No",
-    "skip": "Skip",
-    "yes": "Yes",
-    "no_questions_remaining": "No questions remaining",
-    "countries": "Countries",
+    "category": "kategori",
+    "categories": "Kategori",
+    "label": "labèl",
+    "labels": "Etikèt",
+    "brand": "mak",
+    "brands": "Mak",
+    "packaging": "anbalaj",
+    "quantity": "Kantite",
+    "insightTypeLabel": "Montre sèlman",
+    "ingredients": "Engredyan",
+    "product_weight": "pwa pwodwi",
+    "popularity_sort": "Triye pa popilarite",
+    "see_examples": "Gade egzanp sa a ",
+    "no": "Non",
+    "skip": "Pase",
+    "yes": "Wi",
+    "no_questions_remaining": "Pa gen kesyon ki rete",
+    "countries": "Peyi",
     "view": "View",
-    "edit": "Edit",
-    "hide_images": "Hide images (faster loading)",
-    "display_images": "Display images",
+    "edit": "Modifye",
+    "hide_images": "Kache imaj yo (chaje pi vit)",
+    "display_images": "Montre imaj yo",
     "annotations": "Annotations",
     "last_annotations": "Last annotations",
     "remaining_annotations": "Remaining questions",
     "annotated_annotations": "Annotated",
     "filters": {
-      "active_filter_number": "+{{count}} filters",
-      "active_filter_number_one": "+{{count}} filter",
-      "active_filter_number_zero": "no filter",
+      "active_filter_number": "+{{count}} filtè",
+      "active_filter_number_one": "+{{count}} filtè",
+      "active_filter_number_zero": "san filtè",
       "short_label": {
-        "value": "value",
-        "country": "country",
-        "brand": "brand",
-        "popularity": "popularity",
+        "value": "valè",
+        "country": "peyi",
+        "brand": "mak",
+        "popularity": "popilarite",
         "campaign": "camp"
       },
       "long_label": {
-        "type": "Question Type",
+        "type": "Kalite Kesyon",
         "value": "Proposed Value",
         "country": "Product Country",
-        "brand": "Product Brand",
-        "popularity": "Sort by popularity",
+        "brand": "Mak pwodwi",
+        "popularity": "Triye pa popilarite",
         "edit": "",
         "campaign": "Campaign"
       },
@@ -103,26 +103,26 @@
       },
       "actions": {
         "edit": "Edit Filters",
-        "cancel": "Cancel",
-        "apply": "Apply"
+        "cancel": "Anile",
+        "apply": "Aplike"
       }
     },
-    "other_questions": "Other questions",
+    "other_questions": "Lòt kesyon",
     "send": "Send",
     "flag": "Something wrong? Report/flag the image!",
     "unflag": "Unflag the image",
     "reset_filters": "Reset filters",
-    "log_in": "Login",
-    "sign_up": "Sign up",
+    "log_in": "Konekte",
+    "sign_up": "Enskri",
     "login_title": "Make your annotation count",
     "login_description": "You are not currently logged into Open Food Facts. To get your answers directly applied to products, and associated to your account, consider logging in to your Open Food Facts account, or creating one",
-    "please_wait_while_we_fetch_the_question": "Please wait while we fetch the question!"
+    "please_wait_while_we_fetch_the_question": "Tanpri tann pandan n'ap chache kesyon an!"
   },
   "menu": {
     "title": "Hunger Games",
-    "games": "Games",
-    "questions": "Questions",
-    "logos": "Logos",
+    "games": "Jwèt",
+    "questions": "Kesyon",
+    "logos": "Logo",
     "logos-annotation": "Logos annotation",
     "logos-search": "Logos search",
     "logos-product-search": "Annotation per products",
@@ -134,35 +134,35 @@
     "eco-score": "Eco-score",
     "dashboard": "Logos dashboard",
     "tour": "Show tour",
-    "logged_in_user": "Logged as {{userName}}",
-    "log_in": "Click to login"
+    "logged_in_user": "Konekte kòm {{userName}}",
+    "log_in": "Klike pou w konekte"
   },
   "insights": {
     "insights": "Insights",
-    "barcode": "Barcode",
-    "barcode_placeholder": "barcode",
+    "barcode": "Kòd ba",
+    "barcode_placeholder": "kòd ba",
     "value_tag": "Value tag",
-    "value_placeholder": "ex: en:mueslis, bjorg,...",
+    "value_placeholder": "egz: en:mueslis, bjorg,...",
     "type": "Type",
     "annotated": "Annotated",
     "annotation": "Annotation",
     "not_annotated": "Not annotated",
-    "all": "All",
-    "label": "Label",
-    "product_weight": "Product weight",
-    "category": "Category",
-    "expiration_date": "Expiration date",
+    "all": "Tout",
+    "label": "Etikèt",
+    "product_weight": "Pwa pwodwi",
+    "category": "Kategori",
+    "expiration_date": "Dat ekspirasyon",
     "packager_code": "Packager code",
-    "skipped": "Skipped (-1)",
-    "rejected": "Rejected (0)",
-    "accepted": "Accepted (1)",
-    "search": "Search",
+    "skipped": "Sote (-1)",
+    "rejected": "Refize (0)",
+    "accepted": "Aksepte (1)",
+    "search": "Rechèch",
     "count": "Count",
     "id": "Id",
-    "value": "Value",
+    "value": "Valè",
     "created_at": "Created at",
     "completed_at": "Completed at",
-    "automatic": "Automatic",
+    "automatic": "Otomatik",
     "human_required": "Human required",
     "edit_product": "Open product edit",
     "view_product": "Open product page",
@@ -172,34 +172,34 @@
     "annotation": "Annotation: ",
     "annotations": "Logo annotations",
     "task_description": "Select all logos that are exactly the same, and give them a name like \"en:EU Organic\" and a type like \"label\".",
-    "select_all": "Select all",
-    "unselect_all": "Unselect all",
-    "distance": "Distance:",
-    "value": "Value",
-    "submit": "Submit",
+    "select_all": "Chwazi tout",
+    "unselect_all": "Deseleksyone tout",
+    "distance": "Distans:",
+    "value": "Valè",
+    "submit": "Soumèt",
     "type": "Type",
-    "label": "Label",
-    "brand": "Brand",
+    "label": "Etikèt",
+    "brand": "Mak",
     "packager_code": "Packager code",
     "packaging": "Packaging",
-    "qr_code": "QR code",
-    "category": "Category",
-    "nutrition_label": "Nutrition label",
-    "no_logo": "Not a logo",
+    "qr_code": "QR kòd",
+    "category": "Kategori",
+    "nutrition_label": "Etikèt nitrisyon",
+    "no_logo": "Pa yon logo",
     "store": "Store",
-    "detail": "Logo detail",
+    "detail": "Detay logo a",
     "id": "Logo ID:",
-    "barcode": "Barcode:",
-    "full_image": "Full image",
-    "update": "Update",
-    "no_found": "No logo found",
-    "search": "Search",
-    "number_of_results": "Number of results:",
-    "loading": "Loading…",
-    "refresh": "Refresh",
+    "barcode": "Kòd ba:",
+    "full_image": "Imaj konplè",
+    "update": "Mizajou",
+    "no_found": "Pa gen logo jwenn",
+    "search": "Rechèch",
+    "number_of_results": "Kantite rezilta:",
+    "loading": "Chaje…",
+    "refresh": "Rafrechi",
     "search_specific": "Search specific logo",
-    "load_more": "Load more",
-    "no_results": "No logo found",
+    "load_more": "Chaje plis",
+    "no_results": "Pa gen logo jwenn",
     "result_count": "Shows {{showing}} on {{available}} available",
     "flag": "Something wrong? Report/flag the image!",
     "unflag": "Unflag the image",
@@ -214,46 +214,46 @@
       "description": "Select a logo you want to look for, and let's go to catch them all. For every logo you annotate, we will fetch it's neighbors such that you might never stop to annotate. (Press Shift to select range of logos)",
       "ref_logos": "Reference logos (logo already annotated with this value)",
       "remaining": "Remaining to annotate",
-      "select_all": "Select All",
-      "unselect_all": "Deselect All"
+      "select_all": "Chwazi tout",
+      "unselect_all": "Deseleksyone tout"
     }
   },
   "settings": {
     "settings": "Settings",
-    "language": "Languages",
-    "save": "Save",
-    "reportIssue": "Found a bug? Please let us know.",
-    "dev_mode_title": "To get more options, activate the dev mode",
-    "dev_mode_label": "Dev Mode",
-    "dev_page_toggle": "Show {{name}} page",
-    "join_community": "Join the community",
+    "language": "Lang",
+    "save": "Anrejistre",
+    "reportIssue": "Ou jwenn yon bug? Tanpri fè nou konnen.",
+    "dev_mode_title": "Pou ou gen plis opsyon, aktive mòd dev la",
+    "dev_mode_label": "Dev Mòd",
+    "dev_page_toggle": "Montre {{name}} paj",
+    "join_community": "Antre nan kominote a",
     "text1": "Open Food Facts is a collaborative project built by tens of thousands of volunteers and managed by a non-profit organization with 8 employees. We need your donations to fund the Open Food Facts 2024 budget and to continue to develop the project.",
-    "thank_you": "Thank you",
-    "donate": "Donate",
+    "thank_you": "Mèsi",
+    "donate": "Fè yon don",
     "join_the_community": {
       "discover_our": "Discover our ",
       "code_of_conduct": "Code of conduct ",
-      "join_us_on": "Join us on ",
-      "forum": "Forum",
-      "subscribe_to_our": "Subscribe to our ",
-      "newsletter": "newsletter"
+      "join_us_on": "Rejwenn nou sou ",
+      "forum": "Fowòm",
+      "subscribe_to_our": "Abòne ak ",
+      "newsletter": "bilten nouvèl"
     },
-    "discover_the_project": "Discover the project",
-    "Who_we_are": "Who we are",
+    "discover_the_project": "Dekouvri pwojè a",
+    "Who_we_are": "Kiyès nou ye",
     "Vision_Mission_Values_and_Programs": "Vision, Mission, Values and Programs",
     "FAQS": "FAQS",
     "open_Food_Facts_blog": "Open Food Facts blog",
     "Press": "Press",
     "Open_Food_Facts_wiki": "Open Food Facts wiki (en)",
-    "Translators": "Translators",
-    "Partners": "Partners",
-    "Open_Beauty_Facts": "Open Beauty Facts - Cosmetics",
+    "Translators": "Tradiktè",
+    "Partners": "Patenè",
+    "Open_Beauty_Facts": "Open Beauty Facts - Kosmetik",
     "text2": "A collaborative, free and open database of food products from around the world."
   },
   "helper": {
     "welcome": {
       "page1": {
-        "title": "Welcome to Hunger Games",
+        "title": "Byenveni nan Hunger Games",
         "text1": "Hunger Games is a collection of mini-games that help contribute to Open Food Facts in many ways. You can play our really exciting games from anywhere. Here is a guided tour of the entire website which will get you started.",
         "text2": "Make sure to login to the Open Food Facts website to get credit for your contributions. If you make a mistake, please take the time to correct it by heading to the website.",
         "text3": "In case of any doubt about the games, click on the question mark icon at the top right of the page, and you can reach us on slack at the #hunger-games channel"
@@ -296,7 +296,7 @@
         "text2": "Selected logos go to the top of the page, you can unselect them by clicking again on them"
       },
       "page2": {
-        "title": "Warning",
+        "title": "Avètisman",
         "text1": "If the crop contains multiple logos, do not select it.",
         "text2": "If the crop contains only a partial part of a logo, you can select it."
       },
@@ -305,12 +305,12 @@
         "text1": "Indicate the type of logo (label, brand, QRcode, ...)",
         "text2": "If it is a label or a brand logo, indicate which one it is",
         "text3": "Now you can submit your selection",
-        "text4": "Thank you :)"
+        "text4": "Mèsi :)"
       }
     },
-    "previous": "Prev",
-    "next": "Next",
-    "close": "Close"
+    "previous": "Avan",
+    "next": "Swivan",
+    "close": "Fèmen"
   },
   "nutrition": {
     "instructions": {
@@ -321,44 +321,44 @@
     },
     "steps": {
       "1": "Crop",
-      "2": "Special values",
+      "2": "Valè espesyal",
       "3": "Nutriments Selection",
       "4": "Values Selection"
     },
-    "loading": "Loading...",
-    "unknown_brand": "Brand Unknown",
-    "value_missing": "You forgot to input a value.",
-    "next": "Next step",
-    "prev": "Prev step",
-    "skip": "Skip this product",
+    "loading": "Chaje...",
+    "unknown_brand": "Mak Enkoni",
+    "value_missing": "Ou bliye antre yon valè.",
+    "next": "Pwochen etap",
+    "prev": "Etap avan",
+    "skip": "Sote pwodwi sa a",
     "validate": "Validate Table",
-    "unselect_picture": "No nutrition info",
-    "basis": "data for: ",
+    "unselect_picture": "Pa gen enfòmasyon sou nitrisyon",
+    "basis": "done pou: ",
     "servingSize": "serving size",
-    "value": "Value",
+    "value": "Valè",
     "unit": "Unit",
     "nutriments": {
-      "nutriment_energy-kj": "Energy (kJ)",
-      "nutriment_energy-kcal": "Energy (kCal)",
-      "nutriment_fat": "Fat",
+      "nutriment_energy-kj": "Enèji (kJ)",
+      "nutriment_energy-kcal": "Enèji (kCal)",
+      "nutriment_fat": "Grès",
       "nutriment_saturated-fat": "Saturated fat",
       "nutriment_carbohydrates": "Carbohydrates",
-      "nutriment_sugars": "Sugar",
+      "nutriment_sugars": "Sik",
       "nutriment_proteins": "Protein content",
       "nutriment_fiber": "Fibres",
-      "nutriment_salt": "Salt",
-      "nutriment_sodium": "Sodium"
+      "nutriment_salt": "Sèl",
+      "nutriment_sodium": "Sodyòm"
     },
     "history": {
       "title": "Session History",
-      "status": "status",
-      "product name": "product name",
+      "status": "estati",
+      "product name": "non pwodwi",
       "view": "view page",
       "edit": "edit page",
       "SKIP": "ignored",
       "VALIDATED": "edited",
       "WRONG_IMAGE": "unselected picture",
-      "close": "close",
+      "close": "fèmen",
       "open": "open history"
     }
   },
@@ -366,7 +366,7 @@
     "image_alt": "404 not found",
     "nopage": "Whoops! The page you're looking for can't be found.",
     "redirect1": "Want to play some games?",
-    "redirect2": "Click here"
+    "redirect2": "Klike la"
   },
   "nutriscore": {
     "image_alt": "cropped image",
@@ -375,14 +375,14 @@
     "images_remaining": "Still {{remaining}} to annotate",
     "image_sizes": "Image sizes",
     "zoom_on_logo": "Zoom on logo",
-    "select_all": "Select all",
-    "deselect_all": "Unselect all",
+    "select_all": "Chwazi tout",
+    "deselect_all": "Deseleksyone tout",
     "incorrect": "Wrong",
-    "correct": "Correct ({{label}})"
+    "correct": "Kòrèk ({{label}})"
   },
   "eco-score": {
     "description": "Here is a summary of questions that could improve Eco-Score computation",
-    "countryLabel": "Country"
+    "countryLabel": "Peyi"
   },
   "ingredients": {
     "description": "This game allows you to validate the pre-selection of images of ingredients lists in various languages for a product, and validate the extracted ingredients.",
@@ -391,21 +391,21 @@
     "revert": "Revert",
     "parsing": "Get server understanding",
     "send": "Validate & send",
-    "skip": "Skip this product",
+    "skip": "Sote pwodwi sa a",
     "getRobotoffPrediciton": "Get predictions from Robotoff"
   },
   "footer": {
     "appStore": {
       "title": "App Store",
-      "subtitle": "Download on the"
+      "subtitle": "Telechaje sou"
     },
     "playStore": {
       "title": "Play Store",
-      "subtitle": "Get it on"
+      "subtitle": "Jwenn li sou"
     },
     "microsoft": {
       "title": "Microsoft",
-      "subtitle": "Get it from"
+      "subtitle": "Jwenn li nan"
     },
     "androidAPK": {
       "title": "Android APK",

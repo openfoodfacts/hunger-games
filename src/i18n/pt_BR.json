@@ -5,10 +5,10 @@
       "cards": {
         "questions": {
           "title": "Perguntas",
-          "description": "Indique se a imagem fornecida responde às perguntas"
+          "description": "Diga-nos se a imagem fornecida responde às perguntas"
         },
         "logos": {
-          "title": "Logótipos",
+          "title": "Logotipos",
           "description": "Encontre todos os logotipos que correspondem ao fornecido"
         },
         "eco_score": {
@@ -122,7 +122,7 @@
     "title": "Jogos Vorazes",
     "games": "Jogos",
     "questions": "Perguntas",
-    "logos": "Logótipos",
+    "logos": "Logotipos",
     "logos-annotation": "Anotação de logotipos",
     "logos-search": "Pesquisa de logotipos",
     "logos-product-search": "Anotação por produtos",
@@ -369,9 +369,9 @@
     "redirect2": "Clique aqui"
   },
   "nutriscore": {
-    "image_alt": "Imagem recortada",
+    "image_alt": "imagem recortada",
     "label": "Anotar a detecção de logotipo Nutri-Score por lote.",
-    "description": "Para isso, selecione todas as imagens mostrando o valor correto/errado do Nutri-Score ({{label}}), e clique nos botões inferiores para dizer se você selecionou um conjunto correto ou errado.",
+    "description": "Para isso, selecione todas as imagens mostrando o valor correto/errado dos Pontos-Nutri ({{label}}), e clique nos botões inferiores para dizer se você selecionou um conjunto correto ou errado.",
     "images_remaining": "Ainda faltam {{remaining}} para anotar",
     "image_sizes": "Tamanho das imagens",
     "zoom_on_logo": "Ampliar o logotipo",

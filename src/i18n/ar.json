@@ -273,20 +273,20 @@
       },
       "page4": {
         "title": "لُعْبَة أسئلة Eco-Score",
-        "text1": "Help us finish the remaining questions in the most high priority labels!",
-        "text2": "These cards are linked to labels used in the computation of the Eco-Score.",
-        "text3": "<strong>What is Eco-Score?</strong>",
-        "text4": "Eco-Score captures the total environmental footprint, making it easier for consumers to compare products and decide which is better for the environment."
+        "text1": "ساعدونا في إنهاء الأسئلة المتبقية في التصنيفات ذات الأولوية القصوى!",
+        "text2": "ترتبط هذه البطاقات بالتسميات المستخدمة في حساب النتيجة البيئية.",
+        "text3": "<strong>ما هي النتيجة البيئية؟</strong>",
+        "text4": "تقوم النتيجة البيئية بتسجيل البصمة البيئية الإجمالية، مما يجعل من السهل على المستهلكين مقارنة المنتجات وتحديد أيها أفضل للبيئة."
       },
       "page5": {
         "title": "الإعدادات",
-        "text1": "Set your preferred language, and report issues from our settings page.",
-        "text2": "If you're a developer, you can also explore our database content using our dev mode."
+        "text1": "عيِّن لغتك المفضلة، وأبلغ عن المشكلات من صفحة الإعدادات.",
+        "text2": "إذا كنت مطوِّرًا، يمكنك أيضًا استكشاف محتوى قاعدة البيانات الخاصة بنا باستخدام وضع المطوِّر الخاص بنا."
       },
       "page6": {
-        "title": "Tour",
-        "text1": "Got stuck somewhere? Want to take the tour again?",
-        "text2": "Just click on the question mark and start the journey again!"
+        "title": "جولة",
+        "text1": "عالق في مكان ما؟ تريد أن تأخذ الجولة مرة أخرى؟",
+        "text2": "!"
       }
     },
     "logos": {
@@ -297,8 +297,8 @@
       },
       "page2": {
         "title": "تحذير",
-        "text1": "If the crop contains multiple logos, do not select it.",
-        "text2": "If the crop contains only a partial part of a logo, you can select it."
+        "text1": "إذا كانت الصورة تحتوي على شعارات متعددة، فلا تختارها.",
+        "text2": "إذا كانت الصورة تحتوي فقط على جزء من الشعار، يمكنك اختيارها."
       },
       "page3": {
         "title": "التحقق",
@@ -327,7 +327,7 @@
     },
     "loading": "تحميل...",
     "unknown_brand": "العلامة التجارية غير معروفة",
-    "value_missing": "You forgot to input a value.",
+    "value_missing": "نسيت إدخال قيمة.",
     "next": "الخطوة التالية",
     "prev": "لم",
     "skip": "تخطي هذا المنتج",
@@ -345,7 +345,7 @@
       "nutriment_carbohydrates": "كربوهيدرات",
       "nutriment_sugars": "السكر",
       "nutriment_proteins": "محتوى البروتين",
-      "nutriment_fiber": "Fibres",
+      "nutriment_fiber": "ألياف",
       "nutriment_salt": "ملح",
       "nutriment_sodium": "صوديوم"
     },
@@ -363,49 +363,49 @@
     }
   },
   "notfound": {
-    "image_alt": "404 not found",
-    "nopage": "Whoops! The page you're looking for can't be found.",
-    "redirect1": "Want to play some games?",
-    "redirect2": "Click here"
+    "image_alt": "404 غير موجود",
+    "nopage": "عذرًا! الصفحة التي تبحث عنها غير موجودة.",
+    "redirect1": "هل تود أن تلعب بعض الألعاب؟",
+    "redirect2": "اضغط هنا"
   },
   "nutriscore": {
-    "image_alt": "cropped image",
-    "label": "Annotate Nutri-Score logo detection by batch.",
-    "description": "To do so, select all the images showing the correct/wrong Nutri-Score value ({{label}}), and click on the bottom buttons to say if you selected a set correct or wrong ones.",
-    "images_remaining": "Still {{remaining}} to annotate",
-    "image_sizes": "Image sizes",
-    "zoom_on_logo": "Zoom on logo",
+    "image_alt": "صورة مقصوصة",
+    "label": "تحديد شعار درجة الجودة الغذائية وتوصيفه دفعة واحدة.",
+    "description": "للقيام بذلك، اختر جميع الصور التي تعرض قيمة درجة الجودة الغذائية الصحيحة/الخاطئة ({{label}})، ثم انقر على الأزرار في الأسفل لتحديد ما إذا كنت قد اخترت مجموعة صحيحة أو خاطئة.",
+    "images_remaining": "لا يزال {{remaining}} للتوصيف",
+    "image_sizes": "أحجام الصور",
+    "zoom_on_logo": "تكبير الشعار",
     "select_all": "اختيار الكل",
     "deselect_all": "إلغاء تحديد الكل",
-    "incorrect": "Wrong",
-    "correct": "Correct ({{label}})"
+    "incorrect": "خاطئ",
+    "correct": "صحيح ({{label}})"
   },
   "eco-score": {
-    "description": "Here is a summary of questions that could improve Eco-Score computation",
-    "countryLabel": "Country"
+    "description": "إليك ملخص للأسئلة التي قد تحسن حساب درجة البيئة",
+    "countryLabel": "البلد"
   },
   "ingredients": {
-    "description": "This game allows you to validate the pre-selection of images of ingredients lists in various languages for a product, and validate the extracted ingredients.",
-    "current_text": "text from off",
-    "confidence_score": "language confidence",
-    "revert": "Revert",
-    "parsing": "Get server understanding",
-    "send": "Validate & send",
+    "description": "تتيح لك هذه اللعبة التحقق من صحة اختيار الصور لقوائم المكونات بلغات مختلفة لمنتج معين، والتأكد من صحة المكونات المستخرجة.",
+    "current_text": "نص من خارج",
+    "confidence_score": "ثقة اللغة",
+    "revert": "رجوع",
+    "parsing": "احصل على فهم الخادم",
+    "send": "تحقق وأرسل",
     "skip": "تخطي هذا المنتج",
-    "getRobotoffPrediciton": "Get predictions from Robotoff"
+    "getRobotoffPrediciton": "احصل على التوقعات من Robotoff"
   },
   "footer": {
     "appStore": {
-      "title": "App Store",
-      "subtitle": "Download on the"
+      "title": "متجر أبل",
+      "subtitle": "تنزيل على"
     },
     "playStore": {
-      "title": "Play Store",
-      "subtitle": "Get it on"
+      "title": "متجر غوغل بلاي",
+      "subtitle": "احصل عليه على"
     },
     "microsoft": {
-      "title": "Microsoft",
-      "subtitle": "Get it from"
+      "title": "متجر Microsoft",
+      "subtitle": "احصل عليه على"
     },
     "androidAPK": {
       "title": "Android APK",
