@@ -1,24 +1,24 @@
 {
   "home": {
     "game_selector": {
-      "title": "What game would you like to play?",
+      "title": "Inona no lalao tianao hatao?",
       "cards": {
         "questions": {
-          "title": "Questions",
-          "description": "Tell us if the given image answers the questions"
+          "title": "Fanontaniana",
+          "description": "Lazao anay raha mamaly ny fanontaniana ny sary nomena"
         },
         "logos": {
-          "title": "Logos",
-          "description": "Find all the logos matching the given logo"
+          "title": "Famantarana",
+          "description": "Tadiavo ny famantarana rehetra mifanaraka amin'ny famantarana nomena"
         },
         "eco_score": {
           "title": "Eco-score",
-          "description": "Annotate the questions with the highest value"
+          "description": "Ataovy an-tsoratra ireo fanontaniana manana sanda ambony indrindra"
         }
       }
     },
     "account_band": {
-      "title": "Want to make your contribution count? Create an account or sign in on Open Food Facts!",
+      "title": "Te-hahita ny anjara birikinao ve ianao? Mamorona kaonty na midira ao amin'ny Open Food Facts!",
       "log_in": "Login",
       "sign_up": "Sign up",
       "contribution_details": "Learn why your contribution matters"
@@ -121,8 +121,8 @@
   "menu": {
     "title": "Hunger Games",
     "games": "Games",
-    "questions": "Questions",
-    "logos": "Logos",
+    "questions": "Fanontaniana",
+    "logos": "Famantarana",
     "logos-annotation": "Logos annotation",
     "logos-search": "Logos search",
     "logos-product-search": "Annotation per products",
