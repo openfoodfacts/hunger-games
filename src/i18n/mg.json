@@ -190,14 +190,14 @@
     "detail": "Logo detail",
     "id": "Logo ID:",
     "barcode": "Barcode:",
-    "full_image": "Full image",
+    "full_image": "Sary feno",
     "update": "Update",
     "no_found": "No logo found",
     "search": "Karoka",
-    "number_of_results": "Number of results:",
+    "number_of_results": "Isan'ny valiny:",
     "loading": "Loading…",
-    "refresh": "Refresh",
-    "search_specific": "Search specific logo",
+    "refresh": "Havaozina",
+    "search_specific": "Mitadiava famantarana manokana",
     "load_more": "Load more",
     "no_results": "No logo found",
     "result_count": "Shows {{showing}} on {{available}} available",
@@ -206,12 +206,12 @@
     "crop_image_title": "crop of the logo",
     "no_more_questions": "No more questions about this logo. You can try to find more logos with the following game.",
     "loading_messages": {
-      "pending_reference_logos": "We are loading some logos examples to initialise the search",
-      "failed_reference_logos": "We did not find any logos with this annotation. Try to use the following game to annotate some of them."
+      "pending_reference_logos": "Mametraka ohatra momba ny famantarana izahay mba hanombohana ny fikarohana",
+      "failed_reference_logos": "Tsy nahita famantarana misy an'io fanamarihana io izahay. Andramo ny mampiasa ity lalao manaraka ity mba hanamarihana ny sasany amin'izy ireo."
     },
     "deep_search": {
-      "title": "Logo search",
-      "description": "Select a logo you want to look for, and let's go to catch them all. For every logo you annotate, we will fetch it's neighbors such that you might never stop to annotate. (Press Shift to select range of logos)",
+      "title": "Fikarohana famantarana",
+      "description": "Mifidiana famantarana tianao hotadiavina, ary andao haka azy rehetra. Ho an'ny famantarana rehetra apetrakao dia halainay ny mifanakaiky aminy mba tsy hijanonanao manoratra. (Tsindrio ny Shift hisafidianana karazana famantarana)",
       "ref_logos": "Reference logos (logo already annotated with this value)",
       "remaining": "Remaining to annotate",
       "select_all": "Fidio daholo",
@@ -285,23 +285,23 @@
       },
       "page6": {
         "title": "Tour",
-        "text1": "Got stuck somewhere? Want to take the tour again?",
-        "text2": "Just click on the question mark and start the journey again!"
+        "text1": "Nihitsoka tany ho any? Te hanao fitetezam-paritra indray?",
+        "text2": "Kitio fotsiny ny marika fanontaniana ary atombohy indray ny dia!"
       }
     },
     "logos": {
       "page1": {
         "title": "Selection",
-        "text1": "Select the crops of a same logo by clicking on them",
+        "text1": "Safidio ny vokatra amin'ny famantarana iray ihany amin'ny fipihana azy ireo",
         "text2": "Selected logos go to the top of the page, you can unselect them by clicking again on them"
       },
       "page2": {
-        "title": "Warning",
-        "text1": "If the crop contains multiple logos, do not select it.",
-        "text2": "If the crop contains only a partial part of a logo, you can select it."
+        "title": "Fampitandremana",
+        "text1": "Raha misy famantarana maromaro ny vokatra dia aza misafidy izany.",
+        "text2": "Raha ampahany amin'ny famantarana ihany no hita amin'ny vokatra dia azonao atao ny misafidy izany."
       },
       "page3": {
-        "title": "Validate",
+        "title": "Hanamafy",
         "text1": "Indicate the type of logo (label, brand, QRcode, ...)",
         "text2": "If it is a label or a brand logo, indicate which one it is",
         "text3": "Now you can submit your selection",
