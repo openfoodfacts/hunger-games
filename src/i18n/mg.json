@@ -304,33 +304,33 @@
         "title": "Hanamafy",
         "text1": "Indicate the type of logo (label, brand, QRcode, ...)",
         "text2": "If it is a label or a brand logo, indicate which one it is",
-        "text3": "Now you can submit your selection",
-        "text4": "Thank you :)"
+        "text3": "Afaka manolotra ny safidinao ianao izao",
+        "text4": "Misaotra anao :)"
       }
     },
     "previous": "Prev",
-    "next": "Next",
-    "close": "Close"
+    "next": "Manaraka",
+    "close": "Akaiky"
   },
   "nutrition": {
     "instructions": {
-      "cropTheTable": "Crop the image to simplify your annotation",
-      "verifyNutrimentDetected": "Indicate if the nutriment detected is correct",
-      "selectMissingNutriments": "Add missing nutriments (you can click even if the word has no box)",
-      "selectValue": "Select the nutritional value of: "
+      "cropTheTable": "Tapaho ny sary mba hanamorana ny fanamarihanao",
+      "verifyNutrimentDetected": "Asehoy raha marina ny singa hita",
+      "selectMissingNutriments": "Ampio ny singa tsy ampy (azonao atao ny manindry na dia tsy misy boaty aza ny teny)",
+      "selectValue": "Safidio ny lanjan'ny sakafo: "
     },
     "steps": {
-      "1": "Crop",
+      "1": "Vokatra",
       "2": "Special values",
-      "3": "Nutriments Selection",
+      "3": "Fantina singa",
       "4": "Values Selection"
     },
     "loading": "Loading...",
-    "unknown_brand": "Brand Unknown",
-    "value_missing": "You forgot to input a value.",
-    "next": "Next step",
-    "prev": "Prev step",
-    "skip": "Skip this product",
+    "unknown_brand": "Marika tsy fantatra",
+    "value_missing": "Adino ny nampiditra sanda iray.",
+    "next": "Dingana manaraka",
+    "prev": "Dingana teo aloha",
+    "skip": "Alefaso ity vokatra ity",
     "validate": "Validate Table",
     "unselect_picture": "No nutrition info",
     "basis": "data ho an'ny: ",
@@ -338,8 +338,8 @@
     "value": "Sandany",
     "unit": "Unit",
     "nutriments": {
-      "nutriment_energy-kj": "Energy (kJ)",
-      "nutriment_energy-kcal": "Energy (kCal)",
+      "nutriment_energy-kj": "Hery (kJ)",
+      "nutriment_energy-kcal": "Hery (kJ)",
       "nutriment_fat": "Matavy",
       "nutriment_saturated-fat": "Saturated fat",
       "nutriment_carbohydrates": "Carbohydrates",
@@ -391,7 +391,7 @@
     "revert": "Hiverina",
     "parsing": "Get server understanding",
     "send": "Manamarina & mandefa",
-    "skip": "Skip this product",
+    "skip": "Alefaso ity vokatra ity",
     "getRobotoffPrediciton": "Mahazoa faminaniana avy amin'ny Robotoff"
   },
   "footer": {
