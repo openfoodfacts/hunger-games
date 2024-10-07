@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/openfoodfacts/hunger-games/compare/v1.0.0...v1.0.1) (2024-10-07)
+
+
+### Bug Fixes
+
+* use images.openfoodfacts.org to serve images ([#1054](https://github.com/openfoodfacts/hunger-games/issues/1054)) ([440754f](https://github.com/openfoodfacts/hunger-games/commit/440754fb87cf6bab37ac7263a032f8815471edc9))
+
 ## 1.0.0 (2024-09-26)
 
 
@@ -192,5 +199,3 @@
 * Updating  logo annotation ([#211](https://github.com/openfoodfacts/hunger-games/issues/211)) ([c624084](https://github.com/openfoodfacts/hunger-games/commit/c62408491560af8705028b681d196f0c204ba52d))
 * use predictor nutriscore for corresponding game ([#407](https://github.com/openfoodfacts/hunger-games/issues/407)) ([450f5fd](https://github.com/openfoodfacts/hunger-games/commit/450f5fd7d3ec5bfea4dd6569c76545a81adc1065))
 * wording fixes ([#544](https://github.com/openfoodfacts/hunger-games/issues/544)) ([e6c6040](https://github.com/openfoodfacts/hunger-games/commit/e6c6040ba681a37f955cf0a7046bf73d8655feea))
-
-
