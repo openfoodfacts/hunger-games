@@ -52,7 +52,7 @@
   "questions": {
     "category": "kategori",
     "categories": "Kategori",
-    "label": "labèl",
+    "label": "etikèt",
     "labels": "Etikèt",
     "brand": "mak",
     "brands": "Mak",
@@ -90,14 +90,14 @@
       "long_label": {
         "type": "Kalite Kesyon",
         "value": "Proposed Value",
-        "country": "Product Country",
+        "country": "Peyi pwodwi",
         "brand": "Mak pwodwi",
         "popularity": "Triye pa popilarite",
         "edit": "",
-        "campaign": "Campaign"
+        "campaign": "Kanpay"
       },
       "placeholders": {
-        "value": "Value (Fanta, en:organic,...)",
+        "value": "Valè (Fanta, en:organic,...)",
         "brand": "Auchan, Danone, Herta, ...",
         "campaign": "Annotation campaigns"
       },
@@ -160,12 +160,12 @@
     "count": "Count",
     "id": "Id",
     "value": "Valè",
-    "created_at": "Created at",
-    "completed_at": "Completed at",
+    "created_at": "Dat li kreye",
+    "completed_at": "Dat li konplete",
     "automatic": "Otomatik",
-    "human_required": "Human required",
+    "human_required": "Moun mande",
     "edit_product": "Open product edit",
-    "view_product": "Open product page",
+    "view_product": "Paj open product",
     "view_crops_for_this_product": "Annotate product logos"
   },
   "logos": {
@@ -200,7 +200,7 @@
     "search_specific": "Chèche yon logo spesifik",
     "load_more": "Chaje plis",
     "no_results": "Pa gen logo jwenn",
-    "result_count": "Shows {{showing}} on {{available}} available",
+    "result_count": "Montre {{showing}} sou {{available}} ki disponib",
     "flag": "Something wrong? Report/flag the image!",
     "unflag": "Unflag the image",
     "crop_image_title": "crop of the logo",
@@ -240,10 +240,10 @@
     },
     "discover_the_project": "Dekouvri pwojè a",
     "Who_we_are": "Kiyès nou ye",
-    "Vision_Mission_Values_and_Programs": "Vision, Mission, Values and Programs",
+    "Vision_Mission_Values_and_Programs": "Vizyon, Misyon, Valè ak Pwogram",
     "FAQS": "FAQS",
-    "open_Food_Facts_blog": "Open Food Facts blog",
-    "Press": "Press",
+    "open_Food_Facts_blog": "Blog Open Food Facts",
+    "Press": "Laprès",
     "Open_Food_Facts_wiki": "Open Food Facts wiki (en)",
     "Translators": "Tradiktè",
     "Partners": "Patenè",
@@ -254,7 +254,7 @@
     "welcome": {
       "page1": {
         "title": "Byenveni nan Hunger Games",
-        "text1": "Hunger Games is a collection of mini-games that help contribute to Open Food Facts in many ways. You can play our really exciting games from anywhere. Here is a guided tour of the entire website which will get you started.",
+        "text1": "Hunger Games se yon koleksyon mini-jwèt ki ede kontribye nan Open Food Facts nan plizyè fason. Ou ka jwe jwèt reyèlman enteresan nou yo soti nan nenpòt kote. Isit la se yon vizit gide nan sit entènèt la ki pral fèw kòmanse.",
         "text2": "Make sure to login to the Open Food Facts website to get credit for your contributions. If you make a mistake, please take the time to correct it by heading to the website.",
         "text3": "In case of any doubt about the games, click on the question mark icon at the top right of the page, and you can reach us on slack at the #hunger-games channel"
       },
@@ -336,7 +336,7 @@
     "basis": "done pou: ",
     "servingSize": "serving size",
     "value": "Valè",
-    "unit": "Unit",
+    "unit": "Inite",
     "nutriments": {
       "nutriment_energy-kj": "Enèji (kJ)",
       "nutriment_energy-kcal": "Enèji (kCal)",
@@ -344,8 +344,8 @@
       "nutriment_saturated-fat": "Saturated fat",
       "nutriment_carbohydrates": "Carbohydrates",
       "nutriment_sugars": "Sik",
-      "nutriment_proteins": "Protein content",
-      "nutriment_fiber": "Fibres",
+      "nutriment_proteins": "Ki gen pwoteyin",
+      "nutriment_fiber": "Fib",
       "nutriment_salt": "Sèl",
       "nutriment_sodium": "Sodyòm"
     },
@@ -354,9 +354,9 @@
       "status": "estati",
       "product name": "non pwodwi",
       "view": "view page",
-      "edit": "edit page",
-      "SKIP": "ignored",
-      "VALIDATED": "edited",
+      "edit": "modifye paj la",
+      "SKIP": "inyore",
+      "VALIDATED": "ki modifye",
       "WRONG_IMAGE": "unselected picture",
       "close": "fèmen",
       "open": "open history"
@@ -372,12 +372,12 @@
     "image_alt": "cropped image",
     "label": "Annotate Nutri-Score logo detection by batch.",
     "description": "To do so, select all the images showing the correct/wrong Nutri-Score value ({{label}}), and click on the bottom buttons to say if you selected a set correct or wrong ones.",
-    "images_remaining": "Still {{remaining}} to annotate",
-    "image_sizes": "Image sizes",
-    "zoom_on_logo": "Zoom on logo",
+    "images_remaining": "Toujou {{remaining}} pou annote",
+    "image_sizes": "Gwosè imaj",
+    "zoom_on_logo": "Agrandi logo a",
     "select_all": "Chwazi tout",
     "deselect_all": "Deseleksyone tout",
-    "incorrect": "Wrong",
+    "incorrect": "Pa bon",
     "correct": "Kòrèk ({{label}})"
   },
   "eco-score": {
@@ -388,7 +388,7 @@
     "description": "This game allows you to validate the pre-selection of images of ingredients lists in various languages for a product, and validate the extracted ingredients.",
     "current_text": "text from off",
     "confidence_score": "language confidence",
-    "revert": "Revert",
+    "revert": "Retounen",
     "parsing": "Get server understanding",
     "send": "Validate & send",
     "skip": "Sote pwodwi sa a",
