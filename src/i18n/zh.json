@@ -5,20 +5,20 @@
       "cards": {
         "questions": {
           "title": "常見問答",
-          "description": "請讓我們知道這圖片是否回答了那些問題。"
+          "description": "告诉我们给出的图像是否回答了问题"
         },
         "logos": {
           "title": "標誌",
-          "description": "請找出與指定表章匹配的所有表章"
+          "description": "找到所有与给定徽标相同的徽标"
         },
         "eco_score": {
-          "title": "環保評分",
-          "description": "註釋最具價值的問題"
+          "title": "Eco-score",
+          "description": "标注价值最高的问题"
         }
       }
     },
     "account_band": {
-      "title": "想要讓您的貢獻有所價值嗎？在Open Food Facts上創建帳戶或登入吧！",
+      "title": "想让你的贡献有价值吗？在食品产品数据库上创建或登陆一个账户！",
       "log_in": "用戶名",
       "sign_up": "註冊",
       "contribution_details": "了解為何您的貢獻很重要"
@@ -131,7 +131,7 @@
     "insights": "深層研析",
     "nutritions": "營養成分",
     "settings": "設定",
-    "eco-score": "環保評分",
+    "eco-score": "Eco-score",
     "dashboard": "标志选项列表",
     "tour": "导览演示",
     "logged_in_user": "以 {{用户名}} 身份登录",
