@@ -268,7 +268,7 @@ const ProductInformation = (props) => {
         >
           {Object.keys(ADDITIONAL_INFO_TRANSLATION).map((infoKey) => {
             console.log(ADDITIONAL_INFO_TRANSLATION[infoKey]);
-            const { i18nKey, translatedKey } =
+            const { i18nKey, translatedKey, getLink } =
               ADDITIONAL_INFO_TRANSLATION[infoKey];
 
             const value =
@@ -282,7 +282,22 @@ const ProductInformation = (props) => {
                   {t(`questions.${i18nKey}`)}
                 </TableCell>
                 {Array.isArray(value) ? (
-                  <TableCell>{value.join(", ")}</TableCell>
+                  <TableCell>
+                    {getLink
+                      ? value.map((name, index) => (
+                          <React.Fragment key={name}>
+                            <a
+                              href={getLink(name)}
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              {name}
+                            </a>
+                            {index < value.length - 1 ? ", " : ""}
+                          </React.Fragment>
+                        ))
+                      : value.join(", ")}
+                  </TableCell>
                 ) : (
                   <TableCell>{value}</TableCell>
                 )}

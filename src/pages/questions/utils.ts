@@ -15,8 +15,22 @@ export const ADDITIONAL_INFO_TRANSLATION = {
     i18nKey: "countries",
     translatedKey: "translatedCountriesTags",
   },
-  categories: { i18nKey: "categories", translatedKey: "translatedCategories" },
-  labels_tags: { i18nKey: "labels", translatedKey: "translatedLabels_tags" },
+  categories: {
+    i18nKey: "categories",
+    translatedKey: "translatedCategories",
+    getLink: (name: string) =>
+      `https://world.openfoodfacts.org/category/${name
+        .toLowerCase()
+        .replaceAll(" ", "-")}`,
+  },
+  labels_tags: {
+    i18nKey: "labels",
+    translatedKey: "translatedLabels_tags",
+    getLink: (name: string) =>
+      `https://world.openfoodfacts.org/label/${name
+        .toLowerCase()
+        .replaceAll(" ", "-")}}`,
+  },
   quantity: { i18nKey: "quantity" },
 };
 
