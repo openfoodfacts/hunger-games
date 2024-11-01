@@ -6,14 +6,32 @@ import externalApi from "../../externalApi";
 import offService from "../../off";
 import robotoff from "../../robotoff";
 import { reformatValueTag } from "../../utils";
+import { getLang } from "../../localeStorageManager";
 
 export const ADDITIONAL_INFO_TRANSLATION = {
-  brands: "brands",
-  ingredientsText: "ingredients",
-  countriesTags: "countries",
-  categories: "categories",
-  labels_tags: "labels",
-  quantity: "quantity",
+  brands: { i18nKey: "brands" },
+  ingredientsText: { i18nKey: "ingredients" },
+  countriesTags: {
+    i18nKey: "countries",
+    translatedKey: "translatedCountriesTags",
+  },
+  categories: {
+    i18nKey: "categories",
+    translatedKey: "translatedCategories",
+    getLink: (name: string) =>
+      `https://world.openfoodfacts.org/category/${name
+        .toLowerCase()
+        .replaceAll(" ", "-")}`,
+  },
+  labels_tags: {
+    i18nKey: "labels",
+    translatedKey: "translatedLabels_tags",
+    getLink: (name: string) =>
+      `https://world.openfoodfacts.org/label/${name
+        .toLowerCase()
+        .replaceAll(" ", "-")}}`,
+  },
+  quantity: { i18nKey: "quantity" },
 };
 
 // src looks like: "https://static.openfoodfacts.org/images/products/004/900/053/2258/1.jpg"
@@ -106,7 +124,21 @@ export const useFlagImage = (barcode) => {
 };
 
 export const useProductData = (barcode) => {
-  const [productData, setProductData] = React.useState({});
+  const [productData, setProductData] = React.useState<{
+    code?: number;
+    isLoading?: boolean;
+    productName?: string;
+    brands?: string;
+    ingredientsText?: string;
+    countriesTags?: string[];
+    translatedCountriesTags?: string[];
+    images?: Record<string, any>;
+    categories?: string[];
+    translatedCategories?: string[];
+    labels_tags?: string[];
+    translatedLabels_tags?: string[];
+    quantity?: string;
+  }>({});
 
   // product data fetching
   React.useEffect(() => {
@@ -125,20 +157,31 @@ export const useProductData = (barcode) => {
         if (!isValid) {
           return;
         }
+
+        const lang = getLang();
         const product = result.data.product;
+
+        if (!product) {
+          setProductData({
+            code: barcode,
+            isLoading: false,
+          });
+          return;
+        }
         setProductData({
           code: barcode,
-          productName: product?.product_name || "",
-          brands: product?.brands || "?",
-          ingredientsText: product?.ingredients_text || "?",
-          countriesTags: product?.countries_tags
-            ? `${product?.countries_tags?.join?.(", ")}.`
-            : "?",
-          images: product?.images || {},
-          categories: product?.categories || "?",
-          labels_tags: product?.labels_tags?.join?.(", ") || "?",
-          quantity: product?.quantity || "?",
           isLoading: false,
+          productName: product.product_name,
+          brands: product.brands,
+          ingredientsText: product.ingredients_text,
+          countriesTags: product.countries_tags,
+          translatedCountriesTags: product[`countries_tags_${lang}`],
+          images: product.images,
+          categories: product.categories,
+          translatedCategories: product[`categories_tags_${lang}`],
+          labels_tags: product.labels_tags,
+          translatedLabels_tags: product[`labels_tags_${lang}`],
+          quantity: product.quantity,
         });
       })
       .catch(() => {});
