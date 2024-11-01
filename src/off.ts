@@ -66,8 +66,23 @@ const offService = {
   },
 
   getProduct(barcode) {
+    const lang = getLang();
+
     return axios.get(
-      `${OFF_API_URL}/product/${barcode}.json?fields=product_name,brands,ingredients_text,countries_tags,images,categories,labels_tags,quantity`,
+      `${OFF_API_URL}/product/${barcode}.json?fields=${[
+        "product_name",
+        "brands",
+        "ingredients_text",
+        "countries_tags",
+        "countries_tags" + `_${lang}`,
+        "images",
+        "categories",
+        "categories_tags",
+        "categories_tags" + `_${lang}`,
+        "labels_tags",
+        "labels_tags" + `_${lang}`,
+        "quantity",
+      ].join(",")}`,
     );
   },
 
