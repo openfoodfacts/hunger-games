@@ -5,11 +5,11 @@
       "cards": {
         "questions": {
           "title": "Domande",
-          "description": "Dicci se l'immagine data risponde alle domande"
+          "description": "Dicci se l'immagine fornita risponde alle domande"
         },
         "logos": {
           "title": "Loghi",
-          "description": "Trova tutti i loghi corrispondenti al logo dato"
+          "description": "Trova tutti i loghi corrispondenti al logo specificato"
         },
         "eco_score": {
           "title": "Eco-score",
@@ -19,15 +19,15 @@
     },
     "account_band": {
       "title": "Vuoi far contare il tuo contributo? Crea un account o accedi a Open Food Facts!",
-      "log_in": "Nome utente",
+      "log_in": "Accedi",
       "sign_up": "Registrati",
       "contribution_details": "Scopri perché il tuo contributo è importante"
     },
     "saved_filters": "Filtri salvati",
     "contribution_modal": {
-      "title": "I tuoi contributi sono importanti",
-      "information": "Hunger Games è uno sforzo per sfruttare i risultati del nostro OCR e della nostra intelligenza artificiale. Quando utilizzi Hunger Games di Open Food Facts, migliori il nostro intero database, contribuendo a una migliore presa decisionale sugli alimenti, da parte della community. Raccogliamo le tue annotazioni e le utilizziamo per rendere Open Food Facts più accurato ed efficiente.",
-      "thank_you": "Grazie per aiutarci a migliorare Open Food Facts in modo che più persone possano usarlo facilmente."
+      "title": "Il tuo contributo è importante",
+      "information": "Hunger Games è un tentativo di sfruttare i risultati del nostro OCR e dell'intelligenza artificiale. Quando utilizzi Hunger Games di Open Food Facts, migliori il nostro intero database, il che aiuta la comunità a fare scelte alimentari migliori. Raccogliamo le tue annotazioni e le utilizziamo per rendere Open Food Facts più accurato ed efficiente.",
+      "thank_you": "Grazie per averci aiutato a migliorare Open Food Facts in modo che più persone possano usarlo facilmente."
     },
     "statistics": {
       "title": "Statistiche di {{userName}}:",
@@ -112,7 +112,7 @@
     "flag": "Qualcosa è sbagliato? Segnala l'immagine!",
     "unflag": "Deseleziona l'immagine",
     "reset_filters": "Cancella filtri",
-    "log_in": "Nome utente",
+    "log_in": "Accedi",
     "sign_up": "Registrati",
     "login_title": "Fai contare la tua annotazione",
     "login_description": "Al momento non sei connesso a Open Food Facts. Per far si che le tue risposte siano direttamente applicate ai prodotti e associate al tuo account, accedi al tuo account Open Food Facts o creane uno",
@@ -181,7 +181,7 @@
     "label": "Etichetta",
     "brand": "Marche",
     "packager_code": "Codice Packager",
-    "packaging": "Confezionamento",
+    "packaging": "Imballaggio",
     "qr_code": "Codice QR",
     "category": "Categoria",
     "nutrition_label": "Etichetta nutrizionale",
