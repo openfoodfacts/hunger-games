@@ -166,7 +166,7 @@
     "human_required": "Necesar uman",
     "edit_product": "Deschideți editarea produsului",
     "view_product": "Deschideți pagina produsului",
-    "view_crops_for_this_product": "Annotate product logos"
+    "view_crops_for_this_product": "Adnotează logo-urile produselor"
   },
   "logos": {
     "annotation": "Adnotare: ",
@@ -254,7 +254,7 @@
     "welcome": {
       "page1": {
         "title": "Bun venit la Jocurile Foamei",
-        "text1": "Hunger Games is a collection of mini-games that help contribute to Open Food Facts in many ways. You can play our really exciting games from anywhere. Here is a guided tour of the entire website which will get you started.",
+        "text1": "Jocurile Foamei este o colecție de mini-jocuri care contribuie la Open Food Facts în multe feluri. Puteți juca jocuri cu adevărat interesante de oriunde. Iată un tur ghidat al întregului site, care vă va ajuta să începeți.",
         "text2": "Asigurați-vă că vă conectați la site-ul Open Food Facts pentru a obține credit pentru contribuțiile dvs. Dacă faceți o greșeală, vă rugăm să faceți timp pentru a o corecta, accesând site-ul web.",
         "text3": "În caz de îndoială cu privire la jocuri, faceți clic pe pictograma semn de întrebare din dreapta sus a paginii și ne puteți contacta pe canalul #hunger-games."
       },
@@ -343,9 +343,9 @@
       "nutriment_fat": "Grăsimi",
       "nutriment_saturated-fat": "Acizi grași saturați",
       "nutriment_carbohydrates": "Glucide",
-      "nutriment_sugars": "Sugar",
-      "nutriment_proteins": "Protein content",
-      "nutriment_fiber": "Fibres",
+      "nutriment_sugars": "Zahăr",
+      "nutriment_proteins": "Conținut de proteine",
+      "nutriment_fiber": "Fibre",
       "nutriment_salt": "Sare",
       "nutriment_sodium": "Sodiu"
     },
@@ -385,27 +385,27 @@
     "countryLabel": "Țară"
   },
   "ingredients": {
-    "description": "This game allows you to validate the pre-selection of images of ingredients lists in various languages for a product, and validate the extracted ingredients.",
-    "current_text": "text from off",
-    "confidence_score": "language confidence",
-    "revert": "Revert",
+    "description": "Acest joc vă permite să validați preselecția imaginilor listelor de ingrediente în diferite limbi pentru un produs și să validați ingredientele extrase.",
+    "current_text": "text dezactivat",
+    "confidence_score": "încredere în limbaj",
+    "revert": "Revenire",
     "parsing": "Get server understanding",
-    "send": "Validate & send",
+    "send": "Validați și trimiteți",
     "skip": "Sari peste acest produs",
-    "getRobotoffPrediciton": "Get predictions from Robotoff"
+    "getRobotoffPrediciton": "Obțineți predicții de la Robotoff"
   },
   "footer": {
     "appStore": {
-      "title": "App Store",
-      "subtitle": "Download on the"
+      "title": "Magazin de aplicații",
+      "subtitle": "Descarcă din"
     },
     "playStore": {
       "title": "Play Store",
-      "subtitle": "Get it on"
+      "subtitle": "Obține-o din"
     },
     "microsoft": {
       "title": "Microsoft",
-      "subtitle": "Get it from"
+      "subtitle": "Obține-o din"
     },
     "androidAPK": {
       "title": "Android APK",
