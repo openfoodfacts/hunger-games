@@ -97,7 +97,7 @@
         "campaign": "展銷活動"
       },
       "placeholders": {
-        "value": "Value (Fanta, en:organic,...)",
+        "value": "值（芬達，英文：有機的，…）",
         "brand": "歐尚（Auchan）、達能（Danone）和爾塔（Herta）…",
         "campaign": "標注活動"
       },
@@ -232,7 +232,7 @@
     "donate": "贊助/捐款",
     "join_the_community": {
       "discover_our": "發現我們 ",
-      "code_of_conduct": "Code of conduct ",
+      "code_of_conduct": "行為條款和規則： ",
       "join_us_on": "加入我們 ",
       "forum": "論壇",
       "subscribe_to_our": "訂閱我們的 ",
@@ -267,44 +267,44 @@
         "text5": "如果你不想每次都進行這樣的操作，你也可以通過點擊星星圖標來<strong>保存篩選條件</strong>。下次你再返回時，就能在主頁上找到已保存的篩選條件了。"
       },
       "page3": {
-        "title": "Logos Game",
-        "text1": "Another popular game is the logos game where you have to <strong>select all the logos</strong> you feel are the same.",
-        "text2": "As shown in the example, once you select all the similar logos, just type their value and select where it is a brand, a label or something else. It's that simple!"
+        "title": "標識遊戲",
+        "text1": "另一個流行的遊戲是標識遊戲，在遊戲中，你必須<strong>選出所有你認為相同的標識</strong>。",
+        "text2": "正如示例中所示，一旦您選好了所有相似的標識，只需輸入它們的值，並選擇它是一個品牌、一個標籤還是其他類別。就是這麼簡單！"
       },
       "page4": {
-        "title": "Eco-Score Questions Game",
-        "text1": "Help us finish the remaining questions in the most high priority labels!",
-        "text2": "These cards are linked to labels used in the computation of the Eco-Score.",
-        "text3": "<strong>What is Eco-Score?</strong>",
-        "text4": "Eco-Score captures the total environmental footprint, making it easier for consumers to compare products and decide which is better for the environment."
+        "title": "生態評分問答遊戲",
+        "text1": "請幫助我們完成標注為最高優先級的標籤里剩餘的問題！",
+        "text2": "這些卡片與生態評分計算中所使用的標籤相關聯。",
+        "text3": "<strong>什么是生态评分（Eco - Score）？</strong>",
+        "text4": "生態評分涵蓋了產品的總體環境影響足跡，使消費者能夠更容易地對產品進行比較，並確定哪一種產品對環境更為友好。"
       },
       "page5": {
         "title": "設定",
-        "text1": "Set your preferred language, and report issues from our settings page.",
-        "text2": "If you're a developer, you can also explore our database content using our dev mode."
+        "text1": "設置您偏好的語言，並從我們的設置頁面報告相關問題。",
+        "text2": "如果您是一名開發者，您還可以使用我們的開發者模式來探索我們的資料庫內容。"
       },
       "page6": {
-        "title": "Tour",
-        "text1": "Got stuck somewhere? Want to take the tour again?",
-        "text2": "Just click on the question mark and start the journey again!"
+        "title": "導覽",
+        "text1": "在某個地方遇到困難了嗎？想要再次瀏覽導覽內容嗎？",
+        "text2": "只需點擊問號標識，就可以重新進行導覽啦！"
       }
     },
     "logos": {
       "page1": {
         "title": "選項",
-        "text1": "Select the crops of a same logo by clicking on them",
-        "text2": "Selected logos go to the top of the page, you can unselect them by clicking again on them"
+        "text1": "通過點擊它們來選出帶有相同標識的農作物。",
+        "text2": "被選中的標識會移至頁面頂部，您可以通過再次點擊它們來取消選中。"
       },
       "page2": {
         "title": "警告",
-        "text1": "If the crop contains multiple logos, do not select it.",
-        "text2": "If the crop contains only a partial part of a logo, you can select it."
+        "text1": "如果農作物帶有多個標識，請勿選擇它。",
+        "text2": "如果農作物上只包含一個標識的部分內容，您可以選擇它。"
       },
       "page3": {
         "title": "驗證",
-        "text1": "Indicate the type of logo (label, brand, QRcode, ...)",
-        "text2": "If it is a label or a brand logo, indicate which one it is",
-        "text3": "Now you can submit your selection",
+        "text1": "標明標識的類型（標籤、品牌、二維碼等等）。",
+        "text2": "如果它是一個標籤或者品牌標識，請標明它具體是哪一種。",
+        "text3": "現在您可以提交您的選擇",
         "text4": "謝謝您！:D"
       }
     },
