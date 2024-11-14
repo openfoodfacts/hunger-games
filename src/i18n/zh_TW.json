@@ -134,7 +134,7 @@
     "eco-score": "環保評分",
     "dashboard": "標誌儀表板",
     "tour": "展示導覽",
-    "logged_in_user": "登入為 {{用戶名稱}}",
+    "logged_in_user": "登入為 {{userName}}“用戶名稱”",
     "log_in": "點擊登录"
   },
   "insights": {
@@ -200,7 +200,7 @@
     "search_specific": "搜尋特定標識",
     "load_more": "載入更多",
     "no_results": "未發現標誌",
-    "result_count": "Shows {{showing}} on {{available}} available",
+    "result_count": "在 {{available}} 上顯示 {{showing}} 可用",
     "flag": "有什麼問題嗎？報告 / 標記該圖片！",
     "unflag": "取消對該圖片的標記",
     "crop_image_title": "標識的裁剪部分",
@@ -228,21 +228,21 @@
     "dev_page_toggle": "顯示 {{name}} 頁",
     "join_community": "加入社群",
     "text1": "Open Food Facts 是一個由數萬名志願者共同參與建設的合作項目，僅由一個有8名員工的非營利組織負責管理。我們需要您的捐贈來資助Open Food Facts 2024年的預算，以便繼續推進該項目的開發。",
-    "thank_you": "Thank you",
+    "thank_you": "謝謝",
     "donate": "贊助/捐款",
     "join_the_community": {
-      "discover_our": "Discover our ",
+      "discover_our": "發現我們 ",
       "code_of_conduct": "Code of conduct ",
-      "join_us_on": "Join us on ",
-      "forum": "Forum",
+      "join_us_on": "加入我們 ",
+      "forum": "論壇",
       "subscribe_to_our": "訂閱我們的 ",
       "newsletter": "電子報"
     },
     "discover_the_project": "探索專案",
     "Who_we_are": "我們是誰",
     "Vision_Mission_Values_and_Programs": "願景、使命、價值和計劃",
-    "FAQS": "FAQS",
-    "open_Food_Facts_blog": "Open Food Facts blog",
+    "FAQS": "常見問題",
+    "open_Food_Facts_blog": "打開食品事實博客",
     "Press": "投稿",
     "Open_Food_Facts_wiki": "Open Food Facts wiki (en)",
     "Translators": "翻譯員",
@@ -254,17 +254,17 @@
     "welcome": {
       "page1": {
         "title": "歡迎來到《飢餓遊戲》",
-        "text1": "Hunger Games is a collection of mini-games that help contribute to Open Food Facts in many ways. You can play our really exciting games from anywhere. Here is a guided tour of the entire website which will get you started.",
-        "text2": "Make sure to login to the Open Food Facts website to get credit for your contributions. If you make a mistake, please take the time to correct it by heading to the website.",
+        "text1": "“飢餓遊戲”是一系列小遊戲的集合，這些小遊戲能在很多方面為 Open Food Facts 項目做出貢獻。您可以在随时随地玩我們那些超級刺激的遊戲。以下網站的導覽介紹能幫你順利上手開始體驗。",
+        "text2": "請務必登入 Open Food Facts 網站，以便獲得您的貢獻的積分。如果您出現了錯誤，請花時間登陆網站進行更正。",
         "text3": "如果對遊戲有任何疑問，請點擊頁面右上角的問號圖標，您可以通過 Slack 上的 #hunger-games 頻道聯繫我們。"
       },
       "page2": {
-        "title": "Questions Game",
-        "text1": "Does the food product belong to this brand?",
-        "text2": "Simply answer with a <strong>Yes/No</strong>! Don't know the answer? That's alright, just skip it.",
-        "text3": "You can also use your keyboard shortcuts: y,n and k.",
-        "text4": "You can <strong>filter</strong> the products based on country, brands, popularity and much more!",
-        "text5": "If you don't want to do this every single time, you can also <strong>save the filters</strong> by clicking on the star. Next time you come back, find the saved filters on the home page itself"
+        "title": "問題類型",
+        "text1": "這款食品是否屬於這個品牌？",
+        "text2": "只需用<strong>是/否</strong>回答！不知道答案？沒關係，直接跳過即可。",
+        "text3": "您也可以使用鍵盤快速鍵：y、n 和 k，",
+        "text4": "你可以基於國家、品牌、受歡迎程度等等來<strong>篩選</strong>產品！",
+        "text5": "如果你不想每次都進行這樣的操作，你也可以通過點擊星星圖標來<strong>保存篩選條件</strong>。下次你再返回時，就能在主頁上找到已保存的篩選條件了。"
       },
       "page3": {
         "title": "Logos Game",
