@@ -18,36 +18,36 @@
       }
     },
     "account_band": {
-      "title": "Want to make your contribution count? Create an account or sign in on Open Food Facts!",
+      "title": "Szeretné, hogy a hozzájárulása számítson? Hozzon létre fiókot, vagy jelentkezzen be az Open Food Factsba!",
       "log_in": "Felhasználói név",
       "sign_up": "Regisztráció",
-      "contribution_details": "Learn why your contribution matters"
+      "contribution_details": "Tudja meg, miért számít hozzájárulása"
     },
-    "saved_filters": "Saved Filters",
+    "saved_filters": "Elmentett szűrők",
     "contribution_modal": {
-      "title": "Your contribution matters",
-      "information": "Hunger Games is an effort to leverage the results of our OCR and artificial intelligence. When you use Hunger Games by Open Food Facts, you improve our entire database which helps the community make better food choices. We gather your annotations and use them to make Open Food Facts more accurate and efficient.",
-      "thank_you": "Thank you for helping us improve Open Food Facts so that more people can use it easily."
+      "title": "Számít az ön hozzájárulása",
+      "information": "A Hunger Games célja, hogy kihasználja a karakterfelismerés és a mesterséges intelligencia képességeit. A Hunger Games by Open Food Facts használatával javítja a teljes adatbázisunkat, amely segít a közösségnek jobb élelmiszereket választani. Összegyűjtjük a megjegyzéseit, és felhasználjuk őket az Open Food Facts pontosabbá és hatékonyabbá tételéhez.",
+      "thank_you": "Köszönjük, hogy segít nekünk az Open Food Facts fejlesztésében, hogy minél többen tudják könnyedén használni."
     },
     "statistics": {
-      "title": "{{userName}} statistics:",
+      "title": "{{userName}} statisztikája:",
       "editorCount": {
         "title": "Szerkesztő",
         "description": "Number of editions done"
       },
       "contributorCount": {
         "title": "Hozzájáruló",
-        "description": "Adding a new product"
+        "description": "Új termék hozzáadása"
       },
       "photographerCount": {
-        "title": "Photographer",
+        "title": "Fotós",
         "description": "Taking photos for a product"
       }
     }
   },
   "flagged_images": {
-    "title": "Images flagged by users",
-    "loading": "Loading"
+    "title": "Felhasználók által megjelölt képek",
+    "loading": "Betöltés"
   },
   "questions": {
     "category": "kategória",
@@ -58,13 +58,13 @@
     "brands": "Márkanevek",
     "packaging": "csomagolás",
     "quantity": "Mennyiség",
-    "insightTypeLabel": "Only shows",
+    "insightTypeLabel": "Csak ezek",
     "ingredients": "Összetevők",
     "product_weight": "termék súlya",
     "popularity_sort": "Rendezés népszerűség szerint",
     "see_examples": "Lásd erre a példákat ",
     "no": "Nem",
-    "skip": "Skip",
+    "skip": "Kihagyás",
     "yes": "Igen",
     "no_questions_remaining": "Nincs több kérdés",
     "countries": "Országok",
