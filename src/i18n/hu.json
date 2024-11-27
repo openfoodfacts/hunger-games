@@ -1,11 +1,11 @@
 {
   "home": {
     "game_selector": {
-      "title": "Milyen játékot szeretnél játszani?",
+      "title": "Milyen játékot szeretne játszani?",
       "cards": {
         "questions": {
           "title": "Kérdések",
-          "description": "Mondd el nekünk, hogy a megadott kép választ ad-e a kérdésekre"
+          "description": "Mondja meg, hogy az adott kép választ ad-e a kérdésre"
         },
         "logos": {
           "title": "Logók",
@@ -132,10 +132,10 @@
     "nutritions": "Tápértékadatok",
     "settings": "Beállítások",
     "eco-score": "Eco-Score",
-    "dashboard": "Logos dashboard",
+    "dashboard": "Logók irányítópultja",
     "tour": "Show tour",
-    "logged_in_user": "Logged as {{userName}}",
-    "log_in": "Click to login"
+    "logged_in_user": "Bejelentkezve {{userName}} néven",
+    "log_in": "Kattintson a bejelentkezéshez"
   },
   "insights": {
     "insights": "Betekintés",
@@ -163,7 +163,7 @@
     "created_at": "Létrehozva",
     "completed_at": "Elkészült",
     "automatic": "Automatikus",
-    "human_required": "Human required",
+    "human_required": "Ember szükséges",
     "edit_product": "Open product edit",
     "view_product": "Open product page",
     "view_crops_for_this_product": "Annotate product logos"
@@ -171,7 +171,7 @@
   "logos": {
     "annotation": "Annotáció: ",
     "annotations": "Logó annotációk",
-    "task_description": "Select all logos that are exactly the same, and give them a name like \"en:EU Organic\" and a type like \"label\".",
+    "task_description": "Válassza ki az összes pontosan egyforma logót, és adjon nekik egy nevet, például \"en:EU Organic\" és típust, mint például \"label\".",
     "select_all": "Mindet kiválaszt",
     "unselect_all": "Kijelölés megszüntetése",
     "distance": "Távolság:",
@@ -185,7 +185,7 @@
     "qr_code": "QR-kód",
     "category": "Kategória",
     "nutrition_label": "Tápérték címke",
-    "no_logo": "Not a logo",
+    "no_logo": "Nem logó",
     "store": "Bolt",
     "detail": "Logó részlete",
     "id": "Logó ID:",
@@ -196,9 +196,9 @@
     "search": "Keresés",
     "number_of_results": "Találatok száma:",
     "loading": "Betöltés…",
-    "refresh": "Refresh",
-    "search_specific": "Search specific logo",
-    "load_more": "Load more",
+    "refresh": "Frissítés",
+    "search_specific": "Adott logó keresése",
+    "load_more": "Továbbiak betöltése",
     "no_results": "Nem található logó",
     "result_count": "Shows {{showing}} on {{available}} available",
     "flag": "Something wrong? Report/flag the image!",
