@@ -13,13 +13,13 @@
         },
         "eco_score": {
           "title": "Eco-Score",
-          "description": "Jelöld meg a kérdéseket a legnagyobb értékkel"
+          "description": "Jelölje meg a legmagasabb értékű kérdéseket"
         }
       }
     },
     "account_band": {
-      "title": "Szeretné, hogy a hozzájárulása számítson? Hozzon létre fiókot, vagy jelentkezzen be az Open Food Factsba!",
-      "log_in": "Felhasználói név",
+      "title": "Szeretné, hogy a hozzájárulása számítson? Hozzon létre fiókot, vagy jelentkezzen be az Open Food Factsbe!",
+      "log_in": "Bejelentkezés",
       "sign_up": "Regisztráció",
       "contribution_details": "Tudja meg, miért számít hozzájárulása"
     },
@@ -33,7 +33,7 @@
       "title": "{{userName}} statisztikája:",
       "editorCount": {
         "title": "Szerkesztő",
-        "description": "Number of editions done"
+        "description": "Elvégzett szerkesztések száma"
       },
       "contributorCount": {
         "title": "Hozzájáruló",
@@ -41,7 +41,7 @@
       },
       "photographerCount": {
         "title": "Fotós",
-        "description": "Taking photos for a product"
+        "description": "Fényképek készítése termékekről"
       }
     }
   },
@@ -62,7 +62,7 @@
     "ingredients": "Összetevők",
     "product_weight": "termék súlya",
     "popularity_sort": "Rendezés népszerűség szerint",
-    "see_examples": "Lásd erre a példákat ",
+    "see_examples": "További példák erre ",
     "no": "Nem",
     "skip": "Kihagyás",
     "yes": "Igen",
@@ -72,20 +72,20 @@
     "edit": "Szerkesztés",
     "hide_images": "Képek elrejtése (gyorsabb betöltés)",
     "display_images": "Képek megjelenítése",
-    "annotations": "Annotations",
+    "annotations": "Annotációk",
     "last_annotations": "Legutóbbi megjegyzések",
-    "remaining_annotations": "Remaining questions",
+    "remaining_annotations": "Hátralévő kérdések",
     "annotated_annotations": "Annotált",
     "filters": {
-      "active_filter_number": "+{{count}} filters",
-      "active_filter_number_one": "+{{count}} filter",
-      "active_filter_number_zero": "no filter",
+      "active_filter_number": "+{{count}} szűrő",
+      "active_filter_number_one": "+{{count}} szűrő",
+      "active_filter_number_zero": "nincs szűrés",
       "short_label": {
         "value": "érték",
         "country": "ország",
         "brand": "márkanév",
         "popularity": "népszerűség",
-        "campaign": "camp"
+        "campaign": "kampány"
       },
       "long_label": {
         "type": "Kérdés típusa",
@@ -94,12 +94,12 @@
         "brand": "Termék márkája",
         "popularity": "Rendezés népszerűség szerint",
         "edit": "",
-        "campaign": "Campaign"
+        "campaign": "Kampány"
       },
       "placeholders": {
-        "value": "Value (Fanta, en:organic,...)",
-        "brand": "Auchan, Danone, Herta, ...",
-        "campaign": "Annotation campaigns"
+        "value": "Érték (Fanta, en:organic, …)",
+        "brand": "Auchan, Danone, Herta, …",
+        "campaign": "Annotációs kampányok"
       },
       "actions": {
         "edit": "Szűrők módosítása",
@@ -107,16 +107,16 @@
         "apply": "Alkalmaz"
       }
     },
-    "other_questions": "Other questions",
-    "send": "Send",
-    "flag": "Something wrong? Report/flag the image!",
-    "unflag": "Unflag the image",
-    "reset_filters": "Reset filters",
-    "log_in": "Felhasználói név",
+    "other_questions": "Egyéb kérdések",
+    "send": "Küldés",
+    "flag": "Valami gond van? Jelentse vagy jelölje meg a képet!",
+    "unflag": "Kép megjelölésének eltávolítása",
+    "reset_filters": "Szűrők visszaállítása",
+    "log_in": "Bejelentkezés",
     "sign_up": "Regisztráció",
-    "login_title": "Make your annotation count",
-    "login_description": "You are not currently logged into Open Food Facts. To get your answers directly applied to products, and associated to your account, consider logging in to your Open Food Facts account, or creating one",
-    "please_wait_while_we_fetch_the_question": "Please wait while we fetch the question!"
+    "login_title": "Számítson az annotációja",
+    "login_description": "Jelenleg nincs bejelentkezve az Open Food Factsba. Ha a válaszokat közvetlenül a termékekre szeretné alkalmazni, és a fiókjához társítani szeretné, fontolja meg a bejelentkezést Open Food Facts fiókjába, vagy hozzon létre egyet",
+    "please_wait_while_we_fetch_the_question": "Várjon, amíg lekérjük a kérdést!"
   },
   "menu": {
     "title": "Hunger Games",
@@ -126,7 +126,7 @@
     "logos-annotation": "Logos annotation",
     "logos-search": "Logos search",
     "logos-product-search": "Annotation per products",
-    "logos-deep-search": "Infinite annotation",
+    "logos-deep-search": "Végtelen annotáció",
     "manage": "Kezelés",
     "insights": "Betekintés",
     "nutritions": "Tápértékadatok",
@@ -149,10 +149,10 @@
     "not_annotated": "Nincs annotálva",
     "all": "Összes",
     "label": "Címke",
-    "product_weight": "Termék súly",
+    "product_weight": "Termék súlya",
     "category": "Kategória",
     "expiration_date": "Lejárati dátum",
-    "packager_code": "Üzemkód",
+    "packager_code": "Gyártói üzemkód",
     "skipped": "Kihagyva (-1)",
     "rejected": "Elutasítva (0)",
     "accepted": "Elfogadva (1)",
@@ -166,13 +166,13 @@
     "human_required": "Ember szükséges",
     "edit_product": "Open product edit",
     "view_product": "Open product page",
-    "view_crops_for_this_product": "Annotate product logos"
+    "view_crops_for_this_product": "Terméklogók annotálása"
   },
   "logos": {
     "annotation": "Annotáció: ",
     "annotations": "Logó annotációk",
     "task_description": "Válassza ki az összes pontosan egyforma logót, és adjon nekik egy nevet, például \"en:EU Organic\" és típust, mint például \"label\".",
-    "select_all": "Mindet kiválaszt",
+    "select_all": "Összes kijelölése",
     "unselect_all": "Kijelölés megszüntetése",
     "distance": "Távolság:",
     "value": "Érték",
@@ -180,7 +180,7 @@
     "type": "Típus",
     "label": "Címke",
     "brand": "Márkanév",
-    "packager_code": "Üzemkód",
+    "packager_code": "Gyártói üzemkód",
     "packaging": "Csomagolás",
     "qr_code": "QR-kód",
     "category": "Kategória",
@@ -200,60 +200,60 @@
     "search_specific": "Adott logó keresése",
     "load_more": "Továbbiak betöltése",
     "no_results": "Nem található logó",
-    "result_count": "Shows {{showing}} on {{available}} available",
-    "flag": "Something wrong? Report/flag the image!",
-    "unflag": "Unflag the image",
+    "result_count": "{{showing}} megjeleníthető a(z) {{available}} elérhetőből",
+    "flag": "Valami gond van? Jelentse vagy jelölje meg a képet!",
+    "unflag": "Kép megjelölésének eltávolítása",
     "crop_image_title": "crop of the logo",
-    "no_more_questions": "No more questions about this logo. You can try to find more logos with the following game.",
+    "no_more_questions": "Nincs több kérdés ezzel a logóval kapcsolatban. Megpróbálhat további logókat találni a következő játékkal.",
     "loading_messages": {
-      "pending_reference_logos": "We are loading some logos examples to initialise the search",
-      "failed_reference_logos": "We did not find any logos with this annotation. Try to use the following game to annotate some of them."
+      "pending_reference_logos": "Néhány logó példát töltünk be a keresés inicializálásához",
+      "failed_reference_logos": "Nem találtunk ilyen annotációjú logókat. Próbáljon meg a következő játékban néhányat annotálni."
     },
     "deep_search": {
-      "title": "Logo search",
-      "description": "Select a logo you want to look for, and let's go to catch them all. For every logo you annotate, we will fetch it's neighbors such that you might never stop to annotate. (Press Shift to select range of logos)",
-      "ref_logos": "Reference logos (logo already annotated with this value)",
-      "remaining": "Remaining to annotate",
-      "select_all": "Select All",
-      "unselect_all": "Deselect All"
+      "title": "Logó keresés",
+      "description": "Válassza ki a keresett logót, és próbálja elkapja az összeset. Minden logóhoz, amelyet annotációt készít, lekérjük a szomszédokat, így előfordulhat, hogy soha nem áll meg az annotálással. (Nyomja meg a Shift billentyűt a logók kiválasztásához)",
+      "ref_logos": "Referencialogók (ezzel az értékkel már annotált logó)",
+      "remaining": "Hátralévő annotálandók",
+      "select_all": "Összes kijelölése",
+      "unselect_all": "Kijelölés megszüntetése"
     }
   },
   "settings": {
     "settings": "Beállítások",
     "language": "Nyelvek",
     "save": "Mentés",
-    "reportIssue": "Found a bug? Please let us know.",
-    "dev_mode_title": "To get more options, activate the dev mode",
-    "dev_mode_label": "Dev Mode",
-    "dev_page_toggle": "Show {{name}} page",
+    "reportIssue": "Hibát talált? Jelezze nekünk.",
+    "dev_mode_title": "További lehetőségek eléréséhez aktiválja a fejlesztői módot",
+    "dev_mode_label": "Fejlesztői mód",
+    "dev_page_toggle": "{{name}} oldal megjelenítése",
     "join_community": "Csatlakozzon a közösséghez",
     "text1": "Open Food Facts is a collaborative project built by tens of thousands of volunteers and managed by a non-profit organization with 8 employees. We need your donations to fund the Open Food Facts 2024 budget and to continue to develop the project.",
-    "thank_you": "Thank you",
+    "thank_you": "Köszönjük!",
     "donate": "Adományozás",
     "join_the_community": {
-      "discover_our": "Discover our ",
-      "code_of_conduct": "Code of conduct ",
-      "join_us_on": "Join us on ",
-      "forum": "Forum",
-      "subscribe_to_our": "Subscribe to our ",
-      "newsletter": "newsletter"
+      "discover_our": "Tekintse meg a ",
+      "code_of_conduct": "magatartási kódexünket ",
+      "join_us_on": "Csatlakozzon hozzánk a ",
+      "forum": "fórumon",
+      "subscribe_to_our": "Iratkozzon fel a ",
+      "newsletter": "hírlevelünkre"
     },
     "discover_the_project": "Fedezze fel a projektet",
     "Who_we_are": "Kik vagyunk",
     "Vision_Mission_Values_and_Programs": "Jövőkép, küldetés, értékek és programok",
-    "FAQS": "FAQS",
+    "FAQS": "GYIK",
     "open_Food_Facts_blog": "Open Food Facts blog",
     "Press": "Sajtó",
     "Open_Food_Facts_wiki": "Open Food Facts wiki (en)",
     "Translators": "Fordítók",
     "Partners": "Partnerek",
-    "Open_Beauty_Facts": "Open Beauty Facts - Kozmetikumok",
-    "text2": "Együttműködésen alapuló, élelmiszerek ingyenes és nyílt adatbázisa a világ minden tájáról."
+    "Open_Beauty_Facts": "Open Beauty Facts – Kozmetikumok",
+    "text2": "Együttműködésen alapuló, ingyenes és nyílt élelmiszeradatbázis a világ minden tájáról."
   },
   "helper": {
     "welcome": {
       "page1": {
-        "title": "Welcome to Hunger Games",
+        "title": "Üdvözli a Hunger Games",
         "text1": "Hunger Games is a collection of mini-games that help contribute to Open Food Facts in many ways. You can play our really exciting games from anywhere. Here is a guided tour of the entire website which will get you started.",
         "text2": "Make sure to login to the Open Food Facts website to get credit for your contributions. If you make a mistake, please take the time to correct it by heading to the website.",
         "text3": "In case of any doubt about the games, click on the question mark icon at the top right of the page, and you can reach us on slack at the #hunger-games channel"
@@ -375,7 +375,7 @@
     "images_remaining": "Still {{remaining}} to annotate",
     "image_sizes": "Image sizes",
     "zoom_on_logo": "Zoom on logo",
-    "select_all": "Mindet kiválaszt",
+    "select_all": "Összes kijelölése",
     "deselect_all": "Kijelölés megszüntetése",
     "incorrect": "Wrong",
     "correct": "Correct ({{label}})"
