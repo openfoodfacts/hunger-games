@@ -123,9 +123,9 @@
     "games": "Játékok",
     "questions": "Kérdések",
     "logos": "Logók",
-    "logos-annotation": "Logos annotation",
-    "logos-search": "Logos search",
-    "logos-product-search": "Annotation per products",
+    "logos-annotation": "Logók annotálása",
+    "logos-search": "Logókeresés",
+    "logos-product-search": "Annotálás termékenként",
     "logos-deep-search": "Végtelen annotáció",
     "manage": "Kezelés",
     "insights": "Betekintés",
@@ -133,7 +133,7 @@
     "settings": "Beállítások",
     "eco-score": "Eco-Score",
     "dashboard": "Logók irányítópultja",
-    "tour": "Show tour",
+    "tour": "Bemutató túra",
     "logged_in_user": "Bejelentkezve {{userName}} néven",
     "log_in": "Kattintson a bejelentkezéshez"
   },
@@ -164,8 +164,8 @@
     "completed_at": "Elkészült",
     "automatic": "Automatikus",
     "human_required": "Ember szükséges",
-    "edit_product": "Open product edit",
-    "view_product": "Open product page",
+    "edit_product": "Termék megnyitása szerkesztésre",
+    "view_product": "Termékoldal megnyitása",
     "view_crops_for_this_product": "Terméklogók annotálása"
   },
   "logos": {
@@ -203,7 +203,7 @@
     "result_count": "{{showing}} megjeleníthető a(z) {{available}} elérhetőből",
     "flag": "Valami gond van? Jelentse vagy jelölje meg a képet!",
     "unflag": "Kép megjelölésének eltávolítása",
-    "crop_image_title": "crop of the logo",
+    "crop_image_title": "logó kivágata",
     "no_more_questions": "Nincs több kérdés ezzel a logóval kapcsolatban. Megpróbálhat további logókat találni a következő játékkal.",
     "loading_messages": {
       "pending_reference_logos": "Néhány logó példát töltünk be a keresés inicializálásához",
@@ -254,7 +254,7 @@
     "welcome": {
       "page1": {
         "title": "Üdvözli a Hunger Games",
-        "text1": "A Hunger Games olyan minijátékok gyűjteménye, amelyek többféleképpen is hozzájárulnak az Open Food Factshez. Igazán izgalmas játékainkat bárhonnan játszhatja. Alább a teljes weboldalt bemutató idegenvezetést láthat, amely segít a kezdésben.",
+        "text1": "A Hunger Games olyan minijátékok gyűjteménye, amelyek többféleképpen is hozzájárulnak az Open Food Factshez. Igazán izgalmas játékainkat bárhonnan játszhatja. Alább a teljes weboldalt bemutató túrát láthat, amely segít a kezdésben.",
         "text2": "Győződjön meg róla, hogy be van jelentkezve az Open Food Facts weboldalra, hogy önhöz tudjuk kapcsolni a hozzájárulásait. Ha hibát követ el, kérjük, szánjon időt arra, hogy kijavítsa azt a weboldalon.",
         "text3": "Ha bármilyen kétség merülne fel a játékokkal kapcsolatban, kattintson a kérdőjel ikonra az oldal jobb felső sarkában, vagy elérhet minket a Slacken a #hunger-games csatornán"
       },
@@ -280,13 +280,13 @@
       },
       "page5": {
         "title": "Beállítások",
-        "text1": "Set your preferred language, and report issues from our settings page.",
-        "text2": "If you're a developer, you can also explore our database content using our dev mode."
+        "text1": "Állítsa be a kívánt nyelvet, és jelentse a problémákat a beállítások oldalon.",
+        "text2": "Ha Ön fejlesztő, fejlesztői módunk segítségével is felfedezheti adatbázisunk tartalmát."
       },
       "page6": {
-        "title": "Tour",
-        "text1": "Got stuck somewhere? Want to take the tour again?",
-        "text2": "Just click on the question mark and start the journey again!"
+        "title": "Túra",
+        "text1": "Elakad valahol? Szeretné újra megtekinteni a túrát?",
+        "text2": "Csak kattintson a kérdőjelre, és kezdje újra az utazást!"
       }
     },
     "logos": {
@@ -385,7 +385,7 @@
     "countryLabel": "Ország"
   },
   "ingredients": {
-    "description": "This game allows you to validate the pre-selection of images of ingredients lists in various languages for a product, and validate the extracted ingredients.",
+    "description": "Ez a játék lehetővé teszi, hogy érvényesítse egy termék különböző nyelvű összetevőlista képeinek előzetes kiválasztását, és érvényesítse a kinyert összetevőket.",
     "current_text": "text from off",
     "confidence_score": "language confidence",
     "revert": "Revert",
