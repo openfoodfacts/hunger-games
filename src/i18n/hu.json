@@ -227,7 +227,7 @@
     "dev_mode_label": "Fejlesztői mód",
     "dev_page_toggle": "{{name}} oldal megjelenítése",
     "join_community": "Csatlakozzon a közösséghez",
-    "text1": "Open Food Facts is a collaborative project built by tens of thousands of volunteers and managed by a non-profit organization with 8 employees. We need your donations to fund the Open Food Facts 2024 budget and to continue to develop the project.",
+    "text1": "Az Open Food Facts egy több tízezer önkéntes által létrehozott közös projekt, amelyet egy 8 alkalmazottat foglalkoztató nonprofit szervezet irányít. Adományokra van szükségünk az Open Food Facts 2024-es költségvetésének finanszírozásához és a projekt további fejlesztéséhez.",
     "thank_you": "Köszönjük!",
     "donate": "Adományozás",
     "join_the_community": {
@@ -254,29 +254,29 @@
     "welcome": {
       "page1": {
         "title": "Üdvözli a Hunger Games",
-        "text1": "Hunger Games is a collection of mini-games that help contribute to Open Food Facts in many ways. You can play our really exciting games from anywhere. Here is a guided tour of the entire website which will get you started.",
-        "text2": "Make sure to login to the Open Food Facts website to get credit for your contributions. If you make a mistake, please take the time to correct it by heading to the website.",
-        "text3": "In case of any doubt about the games, click on the question mark icon at the top right of the page, and you can reach us on slack at the #hunger-games channel"
+        "text1": "A Hunger Games olyan minijátékok gyűjteménye, amelyek többféleképpen is hozzájárulnak az Open Food Factshez. Igazán izgalmas játékainkat bárhonnan játszhatja. Alább a teljes weboldalt bemutató idegenvezetést láthat, amely segít a kezdésben.",
+        "text2": "Győződjön meg róla, hogy be van jelentkezve az Open Food Facts weboldalra, hogy önhöz tudjuk kapcsolni a hozzájárulásait. Ha hibát követ el, kérjük, szánjon időt arra, hogy kijavítsa azt a weboldalon.",
+        "text3": "Ha bármilyen kétség merülne fel a játékokkal kapcsolatban, kattintson a kérdőjel ikonra az oldal jobb felső sarkában, vagy elérhet minket a Slacken a #hunger-games csatornán"
       },
       "page2": {
-        "title": "Questions Game",
-        "text1": "Does the food product belong to this brand?",
-        "text2": "Simply answer with a <strong>Yes/No</strong>! Don't know the answer? That's alright, just skip it.",
-        "text3": "You can also use your keyboard shortcuts: y,n and k.",
-        "text4": "You can <strong>filter</strong> the products based on country, brands, popularity and much more!",
-        "text5": "If you don't want to do this every single time, you can also <strong>save the filters</strong> by clicking on the star. Next time you come back, find the saved filters on the home page itself"
+        "title": "Kérdezős játék",
+        "text1": "Az élelmiszertermék ehhez a márkához tartozik?",
+        "text2": "Egyszerűen válaszoljon <strong>Igennel/Nemmel</strong>! Nem tudja a választ? Semmi baj, csak hagyja ki.",
+        "text3": "Használhatja a billentyűzet gyorsbillentyűit is: y, n és k.",
+        "text4": "A termékeket ország, márka, népszerűség és még sok más alapján is <strong>szűrheti</strong>!",
+        "text5": "Ha nem szeretné ezt minden egyes alkalommal megtenni, a csillagra kattintva <strong>elmentheti a szűrőket</strong>. Amikor legközelebb visszatér, a mentett szűrőket a kezdőlapon találja meg"
       },
       "page3": {
-        "title": "Logos Game",
-        "text1": "Another popular game is the logos game where you have to <strong>select all the logos</strong> you feel are the same.",
-        "text2": "As shown in the example, once you select all the similar logos, just type their value and select where it is a brand, a label or something else. It's that simple!"
+        "title": "Logós játék",
+        "text1": "Egy másik népszerű játék a logós játék, ahol <strong>ki kell választania az összes olyan logót</strong>, amelyet egyformának gondol.",
+        "text2": "Amint a példában látható, miután kiválasztotta az összes hasonló logót, csak írja be az értéküket, és válassza ki, hogy az egy márka, címke vagy valami más. Ilyen egyszerű!"
       },
       "page4": {
-        "title": "Eco-Score Questions Game",
-        "text1": "Help us finish the remaining questions in the most high priority labels!",
-        "text2": "These cards are linked to labels used in the computation of the Eco-Score.",
-        "text3": "<strong>What is Eco-Score?</strong>",
-        "text4": "Eco-Score captures the total environmental footprint, making it easier for consumers to compare products and decide which is better for the environment."
+        "title": "Eco-Score kérdések játéka",
+        "text1": "Segítsen befejezni a legmagasabb prioritású címkék hátralévő kérdéseit!",
+        "text2": "Ezek a kártyák az Eco-Score kiszámításához használt címkékhez kapcsolódnak.",
+        "text3": "<strong>Mi az Eco-Score?</strong>",
+        "text4": "Az Eco-Score a teljes környezeti lábnyomot mutatja, így a fogyasztók könnyebben összehasonlíthatják a termékeket, és eldönthetik, melyik a jobb a környezetre gyakorolt hatás szempontjából."
       },
       "page5": {
         "title": "Beállítások",
@@ -297,8 +297,8 @@
       },
       "page2": {
         "title": "Figyelmeztetés",
-        "text1": "If the crop contains multiple logos, do not select it.",
-        "text2": "If the crop contains only a partial part of a logo, you can select it."
+        "text1": "Ha a kivágat több logót tartalmaz, ne jelölje ki.",
+        "text2": "Ha a kivágat a logónak csak egy részét tartalmazza, kijelölheti."
       },
       "page3": {
         "title": "Érvényesítés",
@@ -310,12 +310,12 @@
     },
     "previous": "Előző",
     "next": "Következő",
-    "close": "Bezár"
+    "close": "Bezárás"
   },
   "nutrition": {
     "instructions": {
-      "cropTheTable": "Vágja körül a képet a kommentár egyszerűsítéséhez",
-      "verifyNutrimentDetected": "Jelezze, hogy az észlelt tápanyag helyes-e",
+      "cropTheTable": "Vágja körül a képet az annotálás egyszerűsítéséhez",
+      "verifyNutrimentDetected": "Jelezze, hogy az felismert tápanyag helyes-e",
       "selectMissingNutriments": "Adja hozzá a hiányzó tápanyagokat (akkor is kattinthat, ha a szónak nincs doboza)",
       "selectValue": "Válassza ki a tápértékét: "
     },
@@ -325,14 +325,14 @@
       "3": "Tápanyagok kiválasztása",
       "4": "Értékek kiválasztása"
     },
-    "loading": "Loading...",
-    "unknown_brand": "Brand Unknown",
-    "value_missing": "You forgot to input a value.",
-    "next": "Next step",
-    "prev": "Prev step",
+    "loading": "Betöltés…",
+    "unknown_brand": "Ismeretlen márka",
+    "value_missing": "Elfelejtett beírni egy értéket.",
+    "next": "Következő lépés",
+    "prev": "Előző lépés",
     "skip": "Hagyja ki ezt a terméket",
     "validate": "Táblázat érvényesítése",
-    "unselect_picture": "Nincs táplálkozási információ",
+    "unselect_picture": "Nincs tápérték információ",
     "basis": "adatok ehhez: ",
     "servingSize": "adag",
     "value": "Érték",
@@ -341,47 +341,47 @@
       "nutriment_energy-kj": "Energia (kJ)",
       "nutriment_energy-kcal": "Energia (kcal)",
       "nutriment_fat": "Zsír",
-      "nutriment_saturated-fat": "Telített zsír",
+      "nutriment_saturated-fat": "Telített zsírsavak",
       "nutriment_carbohydrates": "Szénhidrát",
-      "nutriment_sugars": "Sugar",
-      "nutriment_proteins": "Protein content",
-      "nutriment_fiber": "Fibres",
+      "nutriment_sugars": "Cukor",
+      "nutriment_proteins": "Fehérje tartalom",
+      "nutriment_fiber": "Rost",
       "nutriment_salt": "Só",
       "nutriment_sodium": "Nátrium"
     },
     "history": {
-      "title": "Munkamenet előzmények",
+      "title": "Munkamenet előzményei",
       "status": "állapot",
       "product name": "termék neve",
       "view": "oldal megtekintése",
       "edit": "oldal szerkesztése",
       "SKIP": "figyelmen kívül hagyva",
       "VALIDATED": "szerkesztve",
-      "WRONG_IMAGE": "nem kiválasztott kép",
-      "close": "bezár",
+      "WRONG_IMAGE": "képkijelölés megszüntetése",
+      "close": "bezárás",
       "open": "előzmények megnyitása"
     }
   },
   "notfound": {
-    "image_alt": "404 not found",
-    "nopage": "Whoops! The page you're looking for can't be found.",
-    "redirect1": "Want to play some games?",
-    "redirect2": "Click here"
+    "image_alt": "404 nem található",
+    "nopage": "Hoppá! A keresett oldal nem található.",
+    "redirect1": "Szeretne játszani pár játékot?",
+    "redirect2": "Kattintson ide"
   },
   "nutriscore": {
-    "image_alt": "cropped image",
-    "label": "Annotate Nutri-Score logo detection by batch.",
-    "description": "To do so, select all the images showing the correct/wrong Nutri-Score value ({{label}}), and click on the bottom buttons to say if you selected a set correct or wrong ones.",
-    "images_remaining": "Still {{remaining}} to annotate",
-    "image_sizes": "Image sizes",
-    "zoom_on_logo": "Zoom on logo",
+    "image_alt": "körülvágott kép",
+    "label": "Annotálja kötegelten a felismert Nutri-Score logókat.",
+    "description": "Ehhez válassza ki az összes képet, amely a helyes/hibás Nutri-Score értéket mutatja ({{label}}), majd kattintson az alsó gombokra annak megfelelően, hogy a helyesen vagy a hibásan detektált képeket választotta ki.",
+    "images_remaining": "Még maradt {{remaining}} annotálandó",
+    "image_sizes": "Képméret",
+    "zoom_on_logo": "Nagyítás a logóra",
     "select_all": "Összes kijelölése",
     "deselect_all": "Kijelölés megszüntetése",
-    "incorrect": "Wrong",
-    "correct": "Correct ({{label}})"
+    "incorrect": "Hibás",
+    "correct": "Helyes ({{label}})"
   },
   "eco-score": {
-    "description": "Here is a summary of questions that could improve Eco-Score computation",
+    "description": "Alább látható egy összefoglaló azokról a kérdésekről, amelyek javíthatják az Eco-Score számítást",
     "countryLabel": "Ország"
   },
   "ingredients": {
@@ -390,22 +390,22 @@
     "confidence_score": "language confidence",
     "revert": "Revert",
     "parsing": "Get server understanding",
-    "send": "Validate & send",
+    "send": "Érvényesítés és elküldés",
     "skip": "Hagyja ki ezt a terméket",
     "getRobotoffPrediciton": "Get predictions from Robotoff"
   },
   "footer": {
     "appStore": {
       "title": "App Store",
-      "subtitle": "Download on the"
+      "subtitle": "Töltse le"
     },
     "playStore": {
       "title": "Play Store",
-      "subtitle": "Get it on"
+      "subtitle": "Szerezze be"
     },
     "microsoft": {
       "title": "Microsoft",
-      "subtitle": "Get it from"
+      "subtitle": "Szerezze be"
     },
     "androidAPK": {
       "title": "Android APK",
