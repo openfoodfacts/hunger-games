@@ -51,6 +51,8 @@ const IngredientPage = React.lazy(() => import("./pages/ingredients"));
 const Brandinator = React.lazy(() => import("./pages/Brandinator"));
 const BugPage = React.lazy(() => import("./pages/bug"));
 
+const TaxonomyWalk = React.lazy(() => import("./pages/taxonomyWalk"));
+
 // OFF colors
 const latte = "#F6F3F0";
 const cappucino = "#EDE0DB";
@@ -357,6 +359,7 @@ export default function App() {
                 />
                 <Route path="/gala" element={<GalaBoard />} />
                 <Route path="/bugs" element={<BugPage />} />
+                <Route path="/taxo-walk" element={<TaxonomyWalk />} />
               </Routes>
             </DevModeContext.Provider>
           </LoginContext.Provider>
