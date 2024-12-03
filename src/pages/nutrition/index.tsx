@@ -277,7 +277,3 @@ export default function Nutrition() {
     </React.Suspense>
   );
 }
-
-// nutrient: {
-// }
-// nutrition_data_per = "100g" | "serving";
