@@ -9,9 +9,11 @@ import {
 import { Box, Button } from "@mui/material";
 import Stack from "@mui/material/Stack";
 import {
+  deleteRobotoff,
   isValidUnit,
   NUTRIMENTS,
   postRobotoff,
+  skipRobotoff,
   structurePredictions,
 } from "./utils";
 import { NutrimentPrediction } from "./insight.types";
@@ -54,212 +56,224 @@ export default function Nutrition() {
                   key={insight.source_image}
                   src={`${OFF_IMAGE_URL}${insight.source_image}`}
                   alt=""
-                  style={{ width: "100%", maxHeight: "90vh" }}
+                  style={{
+                    width: "100%",
+                    maxHeight: "200vh",
+                  }}
                 />
               </TransformComponent>
             </TransformWrapper>
           </Box>
           <Stack direction="column" sx={{ width: "50%", pt: 3 }}>
-            <table>
-              <thead>
-                <tr>
-                  <td>Nutri</td>
-                  <td>100g</td>
-                  <td>
-                    serving{" "}
-                    <input
-                      value={insight.data.nutrients?.serving_size?.value ?? ""}
-                    />
-                  </td>
-                </tr>
-              </thead>
-              <tbody>
+            <Stack direction="row">
+              <Stack direction="column">
+                <div>Nutri</div>
                 {nutrimentsDetected.map((nutrimentId) => {
                   return (
-                    <tr key={nutrimentId}>
-                      <td>{NUTRIMENTS[nutrimentId] ?? nutrimentId}</td>
-                      <td>
-                        <input
-                          style={{ marginRight: 4 }}
-                          value={values[`${nutrimentId}_100g`]?.value ?? ""}
-                          onChange={(event) =>
-                            setValues((p) => ({
-                              ...p,
-                              [`${nutrimentId}_100g`]: {
-                                ...p[`${nutrimentId}_100g`],
-                                value: event.target.value,
-                              },
-                            }))
-                          }
-                        />
-
-                        {isValidUnit(values[`${nutrimentId}_100g`]?.unit) ? (
-                          <select
-                            style={{ width: 55 }}
-                            value={values[`${nutrimentId}_100g`]?.unit}
-                            onChange={(event) => {
-                              setValues((p) => ({
-                                ...p,
-                                [`${nutrimentId}_100g`]: {
-                                  ...p[`${nutrimentId}_100g`],
-                                  unit: event.target.value,
-                                },
-                              }));
-                            }}
-                          >
-                            {UNITS.map((unit) => (
-                              <option key={unit} value={unit}>
-                                {unit}
-                              </option>
-                            ))}
-                          </select>
-                        ) : (
-                          <span style={{ display: "inline-block", width: 55 }}>
-                            {values[`${nutrimentId}_100g`]?.unit}
-                          </span>
-                        )}
-                        <button
-                          onClick={() => {
-                            setValues((p) => ({
-                              ...p,
-                              [`${nutrimentId}_100g`]: {
-                                ...p[`${nutrimentId}_100g`],
-                                unit: null,
-                                value: null,
-                              },
-                            }));
-                          }}
-                        >
-                          X
-                        </button>
-                      </td>
-                      <td>
-                        <input
-                          style={{ marginRight: 4 }}
-                          value={values[`${nutrimentId}_serving`]?.value ?? ""}
-                          onChange={(event) =>
-                            setValues((p) => ({
-                              ...p,
-                              [`${nutrimentId}_serving`]: {
-                                ...p[`${nutrimentId}_serving`],
-                                value: event.target.value,
-                              },
-                            }))
-                          }
-                        />
-
-                        {isValidUnit(values[`${nutrimentId}_serving`]?.unit) ? (
-                          <select
-                            style={{ width: 55 }}
-                            value={values[`${nutrimentId}_serving`]?.unit}
-                            onChange={(event) => {
-                              setValues((p) => ({
-                                ...p,
-                                [`${nutrimentId}_serving`]: {
-                                  ...p[`${nutrimentId}_serving`],
-                                  unit: event.target.value,
-                                },
-                              }));
-                            }}
-                          >
-                            {UNITS.map((unit) => (
-                              <option key={unit} value={unit}>
-                                {unit}
-                              </option>
-                            ))}
-                          </select>
-                        ) : (
-                          <span style={{ display: "inline-block", width: 55 }}>
-                            {values[`${nutrimentId}_serving`]?.unit}
-                          </span>
-                        )}
-
-                        <button
-                          onClick={() => {
-                            setValues((p) => ({
-                              ...p,
-                              [`${nutrimentId}_serving`]: {
-                                ...p[`${nutrimentId}_serving`],
-                                unit: null,
-                                value: null,
-                              },
-                            }));
-                          }}
-                        >
-                          X
-                        </button>
-                      </td>
-                    </tr>
+                    <div key={nutrimentId}>
+                      {NUTRIMENTS[nutrimentId] ?? nutrimentId}
+                    </div>
                   );
                 })}
-              </tbody>
-              <tfoot>
-                <tr>
-                  <td />
-                  <td>
-                    <Button
-                      variant="contained"
-                      color="success"
-                      sx={{ ml: 2 }}
-                      onClick={() => {
-                        postRobotoff({
-                          insightId: insight.id,
-                          data: values,
-                          type: "100g",
-                        });
-                        nextItem();
-                        apiRef.current.resetTransform();
-                      }}
-                    >
-                      Valider
-                    </Button>
-                  </td>
-                  <td>
-                    <Button
-                      variant="contained"
-                      color="success"
-                      sx={{ ml: 2 }}
-                      onClick={() => {
-                        postRobotoff({
-                          insightId: insight.id,
-                          data: values,
-                          type: "serving",
-                        });
-                        nextItem();
-                        apiRef.current.resetTransform();
-                      }}
-                    >
-                      Valider
-                    </Button>
-                  </td>
-                </tr>
-              </tfoot>
-            </table>
-            {/* {showRaw && (
-              <pre style={{ maxHeight: 450, overflow: "auto" }}>
-                {JSON.stringify(insight, null, 2)}
-              </pre>
-            )}
-            <button onClick={() => setShowRaw((p) => !p)}>
-              {showRaw ? "hide raw data" : "show raw data"}
-            </button> */}
-            <Button
-              variant="outlined"
-              sx={{ mt: 5, mx: "auto", width: 300 }}
-              onClick={() => {
-                nextItem();
-                apiRef.current.resetTransform();
-              }}
-            >
-              Skip
-            </Button>
+              </Stack>
+              <Stack direction="column" sx={{ mr: 4, ml: 2 }}>
+                <div>100g</div>
+                {nutrimentsDetected.map((nutrimentId) => {
+                  const key = `${nutrimentId}_100g`;
+                  const item = values[key];
+
+                  return (
+                    <div key={nutrimentId}>
+                      <input
+                        style={{ marginRight: 4 }}
+                        value={item?.value ?? ""}
+                        onChange={(event) =>
+                          setValues((p) => ({
+                            ...p,
+                            [key]: {
+                              ...p[key],
+                              value: event.target.value,
+                            },
+                          }))
+                        }
+                      />
+
+                      {isValidUnit(item?.unit) ? (
+                        <select
+                          style={{ width: 55 }}
+                          value={item?.unit}
+                          onChange={(event) => {
+                            setValues((p) => ({
+                              ...p,
+                              [key]: {
+                                ...p[key],
+                                unit: event.target.value,
+                              },
+                            }));
+                          }}
+                        >
+                          {UNITS.map((unit) => (
+                            <option key={unit} value={unit}>
+                              {unit}
+                            </option>
+                          ))}
+                        </select>
+                      ) : (
+                        <span style={{ display: "inline-block", width: 55 }}>
+                          {item?.unit}
+                        </span>
+                      )}
+                      <button
+                        onClick={() => {
+                          setValues((p) => ({
+                            ...p,
+                            [key]: {
+                              ...p[key],
+                              unit: null,
+                              value: null,
+                            },
+                          }));
+                        }}
+                      >
+                        X
+                      </button>
+                    </div>
+                  );
+                })}
+                <Button
+                  variant="contained"
+                  color="success"
+                  sx={{ ml: 1, mt: 2 }}
+                  onClick={() => {
+                    postRobotoff({
+                      insightId: insight.id,
+                      data: values,
+                      type: "100g",
+                    });
+                    nextItem();
+                    apiRef.current.resetTransform();
+                  }}
+                >
+                  Valider (100g)
+                </Button>
+              </Stack>
+              <Stack direction="column">
+                <div>
+                  serving{" "}
+                  <input
+                    value={insight.data.nutrients?.serving_size?.value ?? ""}
+                  />
+                </div>
+                {nutrimentsDetected.map((nutrimentId) => {
+                  const key = `${nutrimentId}_serving`;
+                  const item = values[key];
+
+                  return (
+                    <div key={nutrimentId}>
+                      <input
+                        style={{ marginRight: 4 }}
+                        value={item?.value ?? ""}
+                        onChange={(event) =>
+                          setValues((p) => ({
+                            ...p,
+                            [key]: {
+                              ...p[key],
+                              value: event.target.value,
+                            },
+                          }))
+                        }
+                      />
+
+                      {isValidUnit(item?.unit) ? (
+                        <select
+                          style={{ width: 55 }}
+                          value={item?.unit}
+                          onChange={(event) => {
+                            setValues((p) => ({
+                              ...p,
+                              [key]: {
+                                ...p[key],
+                                unit: event.target.value,
+                              },
+                            }));
+                          }}
+                        >
+                          {UNITS.map((unit) => (
+                            <option key={unit} value={unit}>
+                              {unit}
+                            </option>
+                          ))}
+                        </select>
+                      ) : (
+                        <span style={{ display: "inline-block", width: 55 }}>
+                          {item?.unit}
+                        </span>
+                      )}
+                      <button
+                        onClick={() => {
+                          setValues((p) => ({
+                            ...p,
+                            [key]: {
+                              ...p[key],
+                              unit: null,
+                              value: null,
+                            },
+                          }));
+                        }}
+                      >
+                        X
+                      </button>
+                    </div>
+                  );
+                })}
+                <Button
+                  variant="contained"
+                  color="success"
+                  sx={{ ml: 1, mt: 2 }}
+                  onClick={() => {
+                    postRobotoff({
+                      insightId: insight.id,
+                      data: values,
+                      type: "serving",
+                    });
+                    nextItem();
+                    apiRef.current.resetTransform();
+                  }}
+                >
+                  Valider (serving)
+                </Button>
+              </Stack>
+            </Stack>
+
+            <Stack direction="row" justifyContent="center" sx={{ mt: 5 }}>
+              <Button
+                variant="contained"
+                color="secondary"
+                fullWidth
+                onClick={() => {
+                  skipRobotoff({ insightId: insight.id });
+                  nextItem();
+                  apiRef.current.resetTransform();
+                }}
+              >
+                Skip
+              </Button>
+              <Button
+                variant="contained"
+                color="error"
+                fullWidth
+                onClick={() => {
+                  deleteRobotoff({ insightId: insight.id });
+                  nextItem();
+                  apiRef.current.resetTransform();
+                }}
+              >
+                Invalid Image
+              </Button>
+            </Stack>
           </Stack>
         </Stack>
       </ErrorBoundary>
     </React.Suspense>
   );
 }
-
-// nutrient: {
-// }
-// nutrition_data_per = "100g" | "serving";
