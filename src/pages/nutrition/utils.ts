@@ -18,7 +18,7 @@ export const NUTRIMENTS = {
 };
 
 export function isValidUnit(unit: string | null) {
-  return unit === null || UNITS.includes(unit);
+  return unit == null || UNITS.includes(unit);
 }
 
 export function structurePredictions(
@@ -63,7 +63,34 @@ export function postRobotoff(config: PostRobotoffParams) {
     `${ROBOTOFF_API_URL}/insights/annotate`,
     {
       insight_id: insightId,
+      annotation: 2,
       data: { nutrient: filteredValues },
+    },
+    { withCredentials: true },
+  );
+}
+
+export function skipRobotoff(config: Pick<PostRobotoffParams, "insightId">) {
+  const { insightId } = config;
+
+  axios.post(
+    `${ROBOTOFF_API_URL}/insights/annotate`,
+    {
+      insight_id: insightId,
+      annotation: -1,
+    },
+    { withCredentials: true },
+  );
+}
+
+export function deleteRobotoff(config: Pick<PostRobotoffParams, "insightId">) {
+  const { insightId } = config;
+
+  axios.post(
+    `${ROBOTOFF_API_URL}/insights/annotate`,
+    {
+      insight_id: insightId,
+      annotation: 0,
     },
     { withCredentials: true },
   );
