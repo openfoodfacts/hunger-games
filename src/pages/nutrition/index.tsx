@@ -19,9 +19,11 @@ import {
 import { NutrimentPrediction } from "./insight.types";
 import { ErrorBoundary } from "../taxonomyWalk/Error";
 import { UNITS } from "./config";
+import LinksToProduct from "./LinksToProduct";
 
 export default function Nutrition() {
-  const { isLoading, insight, nextItem } = useRobotoffPredicitions();
+  const { isLoading, insight, nextItem, count } = useRobotoffPredicitions();
+
   // const [showRaw, setShowRaw] = React.useState(false);
   const [values, setValues] = React.useState<
     Record<string, Pick<NutrimentPrediction, "value" | "unit">>
@@ -64,7 +66,12 @@ export default function Nutrition() {
               </TransformComponent>
             </TransformWrapper>
           </Box>
-          <Stack direction="column" sx={{ width: "50%", pt: 3 }}>
+          <Stack direction="column" sx={{ width: "50%", p: 2 }}>
+            <LinksToProduct
+              barcode={insight.barcode}
+              count={count}
+              sx={{ mb: 2 }}
+            />
             <Stack direction="row">
               <Stack direction="column">
                 <div>Nutri</div>
