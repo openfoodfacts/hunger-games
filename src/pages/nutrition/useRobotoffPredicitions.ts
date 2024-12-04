@@ -1,11 +1,15 @@
 import * as React from "react";
 import robotoff from "../../robotoff";
 import { InsightType } from "./insight.types";
+import axios from "axios";
 
 export function useRobotoffPredicitions() {
   const [isLoading, setIsLoading] = React.useState(false);
   const [count, setCount] = React.useState(0);
   const [insights, setInsights] = React.useState<InsightType[]>([]);
+  const [offData, setOffData] = React.useState<{
+    [barecode: string]: "loading" | object;
+  }>({});
   const [insightIndex, setInsightIndex] = React.useState(0);
 
   React.useEffect(() => {
@@ -33,6 +37,23 @@ export function useRobotoffPredicitions() {
     };
   }, [insightIndex, insights]);
 
+  React.useEffect(() => {
+    const barecodeToImport = insights
+      .slice(insightIndex, insightIndex + 5)
+      .filter((insight) => offData[insight.barcode] === undefined)
+      .map((insight) => insight.barcode);
+
+    barecodeToImport.forEach((code) => {
+      setOffData((prev) => ({ ...prev, [code]: "loading" }));
+      axios
+        .get(
+          `https://world.openfoodfacts.org/api/v2/product/${code}.json?fields=serving_size,nutriments`,
+        )
+        .then(({ data: { product } }) => {
+          setOffData((prev) => ({ ...prev, [code]: product }));
+        });
+    });
+  }, [insightIndex, insights]);
 
   const nextItem = React.useCallback(() => {
     setInsightIndex((p) => p + 1);
@@ -41,10 +62,14 @@ export function useRobotoffPredicitions() {
 
   const insight = insights[insightIndex];
 
+  console.log(offData);
+  const product = insight && offData[insight.barcode];
+
   return {
     isLoading,
     insight,
     nextItem,
     count,
+    product,
   };
 }
