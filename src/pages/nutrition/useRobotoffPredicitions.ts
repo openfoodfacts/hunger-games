@@ -16,7 +16,7 @@ export function useRobotoffPredicitions() {
     setIsLoading(true);
 
     robotoff
-      .getInsights("", "nutrient_extraction", "", "", 1)
+      .getInsights("", "nutrient_extraction", "", "not_annotated", 1)
       .then(({ data }) => {
         if (!valid) {
           return;
@@ -32,7 +32,6 @@ export function useRobotoffPredicitions() {
       valid = false;
     };
   }, [insightIndex, insights]);
-
 
   const nextItem = React.useCallback(() => {
     setInsightIndex((p) => p + 1);
