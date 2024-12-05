@@ -23,7 +23,9 @@ export function useRobotoffPredicitions() {
         }
 
         setCount(data.count);
-        setInsights((prev) => [...prev, ...data.insights]);
+        setInsights((prev) =>
+          data.insights.length === 0 ? prev : [...prev, ...data.insights],
+        );
         // setPage((p) => p + 1);
         setIsLoading(false);
       });
