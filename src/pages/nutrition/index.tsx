@@ -36,7 +36,29 @@ export default function Nutrition() {
       return;
     }
 
-    setValues(() => insight.data.nutrients);
+    setValues(() => ({
+      ...insight.data.nutrients,
+      "energy-kcal_100g": {
+        value: null,
+        ...insight.data.nutrients["energy-kcal_100g"],
+        unit: "kcal",
+      },
+      "energy-kcal_serving": {
+        value: null,
+        ...insight.data.nutrients["energy-kcal_100g"],
+        unit: "kcal",
+      },
+      "energy-kj_100g": {
+        value: null,
+        ...insight.data.nutrients["energy-kj_100g"],
+        unit: "kj",
+      },
+      "energy-kj_serving": {
+        value: null,
+        ...insight.data.nutrients["energy-kj_100g"],
+        unit: "kj",
+      },
+    }));
   }, [insight]);
 
   if (isLoading) {
