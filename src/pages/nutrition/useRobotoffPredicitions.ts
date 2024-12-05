@@ -16,7 +16,15 @@ export function useRobotoffPredicitions() {
     setIsLoading(true);
 
     robotoff
-      .getInsights("", "nutrient_extraction", "", "not_annotated", 1)
+      .getInsights(
+        "",
+        "nutrient_extraction",
+        "",
+        "not_annotated",
+        1,
+        25,
+        "missing-nutrition",
+      )
       .then(({ data }) => {
         if (!valid) {
           return;
@@ -26,7 +34,7 @@ export function useRobotoffPredicitions() {
         setInsights((prev) =>
           data.insights.length === 0 ? prev : [...prev, ...data.insights],
         );
-        // setPage((p) => p + 1);
+
         setIsLoading(false);
       });
 
