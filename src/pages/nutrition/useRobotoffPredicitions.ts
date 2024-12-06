@@ -3,14 +3,20 @@ import robotoff from "../../robotoff";
 import { InsightType } from "./insight.types";
 import axios from "axios";
 
-export function useRobotoffPredicitions() {
+export function useRobotoffPredicitions(partiallyFilled: boolean) {
   const [isLoading, setIsLoading] = React.useState(false);
   const [count, setCount] = React.useState(0);
   const [insights, setInsights] = React.useState<InsightType[]>([]);
   const [offData, setOffData] = React.useState<{
-    [barecode: string]: "loading" | object;
+    [barecode: string]:
+      | "loading"
+      | { images: Record<string, any>; serving_size?: any; nutriments?: any };
   }>({});
   const [insightIndex, setInsightIndex] = React.useState(0);
+
+  const campaign = partiallyFilled
+    ? "incomplete-nutrition"
+    : "missing-nutrition";
 
   React.useEffect(() => {
     if (isLoading || insightIndex < insights.length - 1) {
@@ -27,13 +33,14 @@ export function useRobotoffPredicitions() {
         "not_annotated",
         1,
         25,
-        "missing-nutrition",
+        campaign,
       )
       .then(({ data }) => {
         if (!valid) {
           return;
         }
 
+        console.log({ campaign });
         setCount(data.count);
         setInsights((prev) =>
           data.insights.length === 0 ? prev : [...prev, ...data.insights],
@@ -46,6 +53,35 @@ export function useRobotoffPredicitions() {
       valid = false;
     };
   }, [insightIndex, insights]);
+
+  React.useEffect(() => {
+    let valid = true;
+    setIsLoading(true);
+
+    robotoff
+      .getInsights(
+        "",
+        "nutrient_extraction",
+        "",
+        "not_annotated",
+        1,
+        25,
+        campaign,
+      )
+      .then(({ data }) => {
+        if (!valid) {
+          return;
+        }
+
+        setCount(data.count);
+        setInsights(data.insights);
+        setIsLoading(false);
+      });
+
+    return () => {
+      valid = false;
+    };
+  }, [campaign]);
 
   React.useEffect(() => {
     const barecodeToImport = insights
@@ -73,13 +109,14 @@ export function useRobotoffPredicitions() {
   const insight = insights[insightIndex];
 
   console.log(offData);
-  const product = insight && offData[insight.barcode];
+
+  const product = insight !== undefined ? offData[insight.barcode] : undefined;
 
   return {
     isLoading,
     insight,
     nextItem,
     count,
-    product,
+    product: product === "loading" ? undefined : product,
   };
 }

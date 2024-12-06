@@ -93,3 +93,10 @@ export function deleteRobotoff(config: Pick<PostRobotoffParams, "insightId">) {
     { withCredentials: true },
   );
 }
+
+/**
+ * Extract xxx from the pattern 'yyy/yyyy/yyy/xxx.jpg' or 'yyy/yyyy/yyy/xxx.jpg'
+ */
+export function getImageId(source: string) {
+  return source.split("/")[source.split("/").length - 1].split(".")[0];
+}
