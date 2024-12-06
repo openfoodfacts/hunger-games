@@ -161,6 +161,7 @@ const robotoff = {
     annotation = "",
     page = 1,
     count = 25,
+    campaigns = "",
   ) {
     let annotated;
     if (annotation.length && annotation === "not_annotated") {
@@ -176,6 +177,7 @@ const robotoff = {
         page,
         annotated,
         count,
+        campaigns,
       }),
     });
   },

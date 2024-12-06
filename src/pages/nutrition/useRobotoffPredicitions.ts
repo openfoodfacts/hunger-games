@@ -20,15 +20,25 @@ export function useRobotoffPredicitions() {
     setIsLoading(true);
 
     robotoff
-      .getInsights("", "nutrient_extraction", "", "", 1)
+      .getInsights(
+        "",
+        "nutrient_extraction",
+        "",
+        "not_annotated",
+        1,
+        25,
+        "missing-nutrition",
+      )
       .then(({ data }) => {
         if (!valid) {
           return;
         }
 
         setCount(data.count);
-        setInsights((prev) => [...prev, ...data.insights]);
-        // setPage((p) => p + 1);
+        setInsights((prev) =>
+          data.insights.length === 0 ? prev : [...prev, ...data.insights],
+        );
+
         setIsLoading(false);
       });
 
@@ -47,7 +57,7 @@ export function useRobotoffPredicitions() {
       setOffData((prev) => ({ ...prev, [code]: "loading" }));
       axios
         .get(
-          `https://world.openfoodfacts.org/api/v2/product/${code}.json?fields=serving_size,nutriments`,
+          `https://world.openfoodfacts.org/api/v2/product/${code}.json?fields=serving_size,nutriments,images`,
         )
         .then(({ data: { product } }) => {
           setOffData((prev) => ({ ...prev, [code]: product }));
