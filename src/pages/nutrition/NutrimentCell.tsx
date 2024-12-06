@@ -8,11 +8,24 @@ interface NutrimentCellProps {
   tabIndex: number;
   value?: string;
   unit?: string;
+  productValue?: number;
+  productUnit?: string;
+  displayOFFValue: boolean;
   setValues: (object) => void;
 }
 
 export const NutrimentCell = (props: NutrimentCellProps) => {
-  const { nutrimentId, nutrimentKey, tabIndex, value, unit, setValues } = props;
+  const {
+    nutrimentId,
+    nutrimentKey,
+    tabIndex,
+    value,
+    unit,
+    setValues,
+    productValue,
+    productUnit,
+    displayOFFValue,
+  } = props;
 
   return (
     <td
@@ -34,20 +47,29 @@ export const NutrimentCell = (props: NutrimentCellProps) => {
         element.classList.remove("focused");
       }}
     >
-      <input
-        style={{ marginRight: 4, maxWidth: 100 }}
-        value={value ?? ""}
-        tabIndex={tabIndex}
-        onChange={(event) =>
-          setValues((p) => ({
-            ...p,
-            [nutrimentKey]: {
-              ...p[nutrimentKey],
-              value: event.target.value,
-            },
-          }))
-        }
-      />
+      <div style={{ display: "inline-table" }}>
+        <input
+          style={{ marginRight: 4, maxWidth: 80 }}
+          value={value ?? ""}
+          tabIndex={tabIndex}
+          onChange={(event) =>
+            setValues((p) => ({
+              ...p,
+              [nutrimentKey]: {
+                ...p[nutrimentKey],
+                value: event.target.value,
+              },
+            }))
+          }
+        />
+        <br />
+        {displayOFFValue && (
+          <legend style={{ fontSize: 13, textAlign: "end" }}>
+            {productValue}
+            {productUnit}
+          </legend>
+        )}
+      </div>
 
       {isValidUnit(unit) ? (
         <select

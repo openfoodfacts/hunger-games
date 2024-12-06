@@ -6,10 +6,11 @@ import {
   TransformComponent,
   TransformWrapper,
 } from "react-zoom-pan-pinch";
-import { Box, Button } from "@mui/material";
+import { Box, Button, Checkbox, FormControlLabel } from "@mui/material";
 import Stack from "@mui/material/Stack";
 import {
   deleteRobotoff,
+  getImageId,
   NUTRIMENTS,
   postRobotoff,
   skipRobotoff,
@@ -21,7 +22,13 @@ import LinksToProduct from "./LinksToProduct";
 import { NutrimentCell } from "./NutrimentCell";
 
 export default function Nutrition() {
-  const { isLoading, insight, nextItem, count } = useRobotoffPredicitions();
+  const [partiallyFilled, setPartiallyFilled] = React.useState(false);
+  const [displayOFFValue, setDisplayOFFValue] = React.useState(false);
+  const handlePartiallyFilled = (_, checked) => setPartiallyFilled(checked);
+  const handleDisplayOFFValue = (_, checked) => setDisplayOFFValue(checked);
+
+  const { isLoading, insight, nextItem, count, product } =
+    useRobotoffPredicitions(partiallyFilled);
 
   const [values, setValues] = React.useState<
     Record<string, Pick<NutrimentPrediction, "value" | "unit">>
@@ -67,11 +74,29 @@ export default function Nutrition() {
   }
 
   const nutrimentsDetected = structurePredictions(values);
+
+  const imageId = getImageId(insight.source_image);
+
+  const imageTimestamp = product?.images?.[imageId]?.uploaded_t;
+
   return (
     <React.Suspense>
       <ErrorBoundary>
         <Stack direction="row">
           <Box sx={{ width: "50%" }}>
+            <p>
+              Photo upload:{" "}
+              {imageTimestamp
+                ? new Date(imageTimestamp * 1000).toLocaleDateString(
+                    undefined,
+                    {
+                      day: "2-digit",
+                      month: "long",
+                      year: "numeric",
+                    },
+                  )
+                : "..."}
+            </p>
             <TransformWrapper limitToBounds={false} ref={apiRef}>
               <TransformComponent>
                 <img
@@ -87,6 +112,27 @@ export default function Nutrition() {
             </TransformWrapper>
           </Box>
           <Stack direction="column" sx={{ width: "50%", p: 2 }}>
+            <Box>
+              <FormControlLabel
+                control={
+                  <Checkbox
+                    checked={partiallyFilled}
+                    onChange={handlePartiallyFilled}
+                  />
+                }
+                label="Tableau partielement rempli"
+              />
+              <FormControlLabel
+                disabled={!partiallyFilled}
+                control={
+                  <Checkbox
+                    checked={partiallyFilled ? displayOFFValue : false}
+                    onChange={handleDisplayOFFValue}
+                  />
+                }
+                label="afficher le valeurs OFF"
+              />
+            </Box>
             <LinksToProduct
               barcode={insight.barcode}
               count={count}
@@ -96,115 +142,141 @@ export default function Nutrition() {
             <Box
               sx={(theme) => ({
                 width: "fit-content",
+                "& tr": { verticalAlign: "top" },
                 "& .focused": {
                   backgroundColor: theme.palette.divider,
+                  fontWeight: "bold",
                 },
               })}
             >
               <table>
-                <tr>
-                  <td>Nutriments</td>
-                  <td>100g</td>
-                  <td>
-                    serving{" "}
-                    <input
-                      tabIndex={2}
-                      style={{ maxWidth: 100 }}
-                      value={values.serving_size?.value ?? ""}
-                      onChange={(event) =>
-                        setValues((p) => ({
-                          ...p,
-                          serving_size: {
-                            ...p.serving_size,
-                            value: event.target.value,
-                          },
-                        }))
-                      }
-                    />
-                  </td>
-                </tr>
-                {nutrimentsDetected.map((nutrimentId) => {
-                  const key100g = `${nutrimentId}_100g`;
-                  const { value: value100g, unit: unit100g } =
-                    values[key100g] ?? {};
+                <thead>
+                  <tr>
+                    <td>Nutriments</td>
+                    <td>100g</td>
+                    <td>
+                      serving{" "}
+                      <div style={{ display: "inline-table" }}>
+                        <input
+                          tabIndex={2}
+                          value={values?.serving_size?.value ?? ""}
+                          onChange={(event) =>
+                            setValues((p) => ({
+                              ...p,
+                              serving_size: {
+                                ...p.serving_size,
+                                value: event.target.value,
+                              },
+                            }))
+                          }
+                          style={{ width: 100 }}
+                        />
+                        <br />
+                        {displayOFFValue && (
+                          <legend style={{ fontSize: 13, textAlign: "end" }}>
+                            {product?.serving_size}
+                          </legend>
+                        )}
+                      </div>
+                    </td>
+                  </tr>
+                </thead>
+                <tbody>
+                  {nutrimentsDetected.map((nutrimentId) => {
+                    const key100g = `${nutrimentId}_100g`;
+                    const { value: value100g, unit: unit100g } =
+                      values[key100g] ?? {};
 
-                  const keyServing = `${nutrimentId}_serving`;
-                  const { value: valueServing, unit: unitServing } =
-                    values[keyServing] ?? {};
+                    const keyServing = `${nutrimentId}_serving`;
+                    const { value: valueServing, unit: unitServing } =
+                      values[keyServing] ?? {};
 
-                  return (
-                    <tr
-                      key={nutrimentId}
-                      // Attributes used to highlight when focusing
-                      data-label-id={nutrimentId}
-                    >
-                      <td style={{ paddingLeft: 10, paddingRight: 4 }}>
-                        {NUTRIMENTS[nutrimentId] ?? nutrimentId}
-                      </td>
-                      <NutrimentCell
+                    const product100g = product?.nutriments?.[key100g];
+                    const productServing = product?.nutriments?.[keyServing];
+                    const productUnit =
+                      product?.nutriments?.[`${nutrimentId}_unit`];
+
+                    return (
+                      <tr
+                        key={nutrimentId}
+                        // Attributes used to highlight when focusing
+                        data-label-id={nutrimentId}
+                      >
+                        <td style={{ paddingLeft: 10, paddingRight: 4 }}>
+                          {NUTRIMENTS[nutrimentId] ?? nutrimentId}
+                        </td>
+                        <NutrimentCell
+                          tabIndex={1}
+                          nutrimentId={nutrimentId}
+                          nutrimentKey={key100g}
+                          value={value100g}
+                          unit={unit100g}
+                          setValues={setValues}
+                          productValue={product100g}
+                          productUnit={productUnit}
+                          displayOFFValue={displayOFFValue}
+                        />
+                        <NutrimentCell
+                          tabIndex={2}
+                          nutrimentId={nutrimentId}
+                          nutrimentKey={keyServing}
+                          value={valueServing}
+                          unit={unitServing}
+                          setValues={setValues}
+                          productValue={productServing}
+                          productUnit={productUnit}
+                          displayOFFValue={displayOFFValue}
+                        />
+                      </tr>
+                    );
+                  })}
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <td></td>
+                    <td>
+                      <Button
                         tabIndex={1}
-                        nutrimentId={nutrimentId}
-                        nutrimentKey={key100g}
-                        value={value100g}
-                        unit={unit100g}
-                        setValues={setValues}
-                      />
-                      <NutrimentCell
+                        variant="contained"
+                        color="success"
+                        sx={{
+                          ml: 1,
+                          mt: 2,
+                        }}
+                        onClick={() => {
+                          postRobotoff({
+                            insightId: insight.id,
+                            data: values,
+                            type: "100g",
+                          });
+                          nextItem();
+                          apiRef.current.resetTransform();
+                        }}
+                      >
+                        Valider (100g)
+                      </Button>
+                    </td>
+                    <td>
+                      <Button
                         tabIndex={2}
-                        nutrimentId={nutrimentId}
-                        nutrimentKey={keyServing}
-                        value={valueServing}
-                        unit={unitServing}
-                        setValues={setValues}
-                      />
-                    </tr>
-                  );
-                })}
-
-                <tr>
-                  <td></td>
-                  <td>
-                    <Button
-                      tabIndex={1}
-                      variant="contained"
-                      color="success"
-                      sx={{
-                        ml: 1,
-                        mt: 2,
-                      }}
-                      onClick={() => {
-                        postRobotoff({
-                          insightId: insight.id,
-                          data: values,
-                          type: "100g",
-                        });
-                        nextItem();
-                        apiRef.current.resetTransform();
-                      }}
-                    >
-                      Valider (100g)
-                    </Button>
-                  </td>
-                  <td>
-                    <Button
-                      tabIndex={2}
-                      variant="contained"
-                      color="success"
-                      sx={{ ml: 1, mt: 2 }}
-                      onClick={() => {
-                        postRobotoff({
-                          insightId: insight.id,
-                          data: values,
-                          type: "serving",
-                        });
-                        nextItem();
-                        apiRef.current.resetTransform();
-                      }}
-                    >
-                      Valider (serving)
-                    </Button>
-                  </td>
-                </tr>
+                        variant="contained"
+                        color="success"
+                        sx={{ ml: 1, mt: 2 }}
+                        onClick={() => {
+                          postRobotoff({
+                            insightId: insight.id,
+                            data: values,
+                            type: "serving",
+                          });
+                          nextItem();
+                          apiRef.current.resetTransform();
+                        }}
+                      >
+                        Valider (serving)
+                      </Button>
+                    </td>
+                  </tr>
+                </tfoot>
               </table>
             </Box>
 
