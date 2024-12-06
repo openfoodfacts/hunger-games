@@ -50,7 +50,7 @@ export default function Nutrition() {
       },
       "energy-kcal_serving": {
         value: null,
-        ...insight.data.nutrients["energy-kcal_100g"],
+        ...insight.data.nutrients["energy-kcal_serving"],
         unit: "kcal",
       },
       "energy-kj_100g": {
@@ -60,7 +60,7 @@ export default function Nutrition() {
       },
       "energy-kj_serving": {
         value: null,
-        ...insight.data.nutrients["energy-kj_100g"],
+        ...insight.data.nutrients["energy-kj_serving"],
         unit: "kj",
       },
     }));
@@ -159,9 +159,7 @@ export default function Nutrition() {
                       <div style={{ display: "inline-table" }}>
                         <input
                           tabIndex={2}
-                          value={
-                            insight.data.nutrients?.serving_size?.value ?? ""
-                          }
+                          value={values?.serving_size?.value ?? ""}
                           onChange={(event) =>
                             setValues((p) => ({
                               ...p,

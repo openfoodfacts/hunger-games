@@ -40,7 +40,6 @@ export function useRobotoffPredicitions(partiallyFilled: boolean) {
           return;
         }
 
-        console.log({ campaign });
         setCount(data.count);
         setInsights((prev) =>
           data.insights.length === 0 ? prev : [...prev, ...data.insights],
@@ -107,8 +106,6 @@ export function useRobotoffPredicitions(partiallyFilled: boolean) {
   }, []);
 
   const insight = insights[insightIndex];
-
-  console.log(offData);
 
   const product = insight !== undefined ? offData[insight.barcode] : undefined;
 
