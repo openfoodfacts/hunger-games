@@ -20,6 +20,8 @@ import { useTranslation } from "react-i18next";
 
 import DevModeContext from "../../contexts/devMode";
 import ColorModeContext from "../../contexts/colorMode";
+import { useCountry } from "../../contexts/CountryProvider";
+
 import { localSettings, localSettingsKeys } from "../../localeStorageManager";
 import FooterWithLinks from "../../components/Footer";
 import countryNames from "../../assets/countries.json";
@@ -31,9 +33,8 @@ export default function Settings() {
   const [language, setLanguage] = React.useState(i18n.language);
   const { devMode, setDevMode, visiblePages, setVisiblePages } =
     React.useContext(DevModeContext);
-  const [selectedCountry, setSelectedCountry] = React.useState(
-    () => localSettings.fetch()["country"],
-  );
+
+  const [country, setCountry] = useCountry();
 
   const handleDevModeChange = (event) => {
     localSettings.update(localSettingsKeys.isDevMode, event.target.checked);
@@ -56,8 +57,7 @@ export default function Settings() {
   };
 
   const handleCountryChange = (e) => {
-    setSelectedCountry(e.target.value);
-    localSettings.update(localSettingsKeys.country, e.target.value);
+    setCountry(e.target.value, "global");
   };
 
   return (
@@ -79,15 +79,16 @@ export default function Settings() {
             </MenuItem>
           ))}
         </TextField>
+
         <TextField
           select
           label={t("eco-score.countryLabel")}
-          value={selectedCountry}
+          value={country}
           onChange={handleCountryChange}
           sx={{ width: 200 }}
         >
           {countryNames.map((country) => (
-            <MenuItem value={country.id} key={country.id}>
+            <MenuItem value={country.countryCode} key={country.countryCode}>
               {country.label}
             </MenuItem>
           ))}

@@ -1,16 +1,10 @@
 import * as React from "react";
-import { useRobotoffPredicitions } from "./useRobotoffPredicitions";
-import { OFF_IMAGE_URL } from "../../const";
-import {
-  ReactZoomPanPinchRef,
-  TransformComponent,
-  TransformWrapper,
-} from "react-zoom-pan-pinch";
+import { useRobotoffPredictions } from "./useRobotoffPredictions";
+import { ReactZoomPanPinchRef } from "react-zoom-pan-pinch";
 import { Box, Button, Checkbox, FormControlLabel } from "@mui/material";
 import Stack from "@mui/material/Stack";
 import {
   deleteRobotoff,
-  getImageId,
   NUTRIMENTS,
   postRobotoff,
   skipRobotoff,
@@ -20,6 +14,7 @@ import { NutrimentPrediction } from "./insight.types";
 import { ErrorBoundary } from "../taxonomyWalk/Error";
 import LinksToProduct from "./LinksToProduct";
 import { NutrimentCell } from "./NutrimentCell";
+import PictureSection from "./PictureSection";
 
 export default function Nutrition() {
   const [partiallyFilled, setPartiallyFilled] = React.useState(false);
@@ -27,8 +22,9 @@ export default function Nutrition() {
   const handlePartiallyFilled = (_, checked) => setPartiallyFilled(checked);
   const handleDisplayOFFValue = (_, checked) => setDisplayOFFValue(checked);
 
+  console.log({ partiallyFilled });
   const { isLoading, insight, nextItem, count, product } =
-    useRobotoffPredicitions(partiallyFilled);
+    useRobotoffPredictions(partiallyFilled);
 
   const [values, setValues] = React.useState<
     Record<string, Pick<NutrimentPrediction, "value" | "unit">>
@@ -66,50 +62,19 @@ export default function Nutrition() {
     }));
   }, [insight]);
 
-  if (isLoading) {
-    return <p>Loading ....</p>;
-  }
-  if (!insight) {
-    return <p>No predicition found</p>;
-  }
-
   const nutrimentsDetected = structurePredictions(values);
-
-  const imageId = getImageId(insight.source_image);
-
-  const imageTimestamp = product?.images?.[imageId]?.uploaded_t;
 
   return (
     <React.Suspense>
       <ErrorBoundary>
         <Stack direction="row">
           <Box sx={{ width: "50%" }}>
-            <p>
-              Photo upload:{" "}
-              {imageTimestamp
-                ? new Date(imageTimestamp * 1000).toLocaleDateString(
-                    undefined,
-                    {
-                      day: "2-digit",
-                      month: "long",
-                      year: "numeric",
-                    },
-                  )
-                : "..."}
-            </p>
-            <TransformWrapper limitToBounds={false} ref={apiRef}>
-              <TransformComponent>
-                <img
-                  key={insight.source_image}
-                  src={`${OFF_IMAGE_URL}${insight.source_image}`}
-                  alt=""
-                  style={{
-                    width: "100%",
-                    maxHeight: "200vh",
-                  }}
-                />
-              </TransformComponent>
-            </TransformWrapper>
+            <PictureSection
+              isLoading={isLoading}
+              insight={insight}
+              product={product}
+              apiRef={apiRef}
+            />
           </Box>
           <Stack direction="column" sx={{ width: "50%", p: 2 }}>
             <Box>
@@ -134,7 +99,7 @@ export default function Nutrition() {
               />
             </Box>
             <LinksToProduct
-              barcode={insight.barcode}
+              barcode={insight?.barcode}
               count={count}
               sx={{ mb: 2 }}
             />

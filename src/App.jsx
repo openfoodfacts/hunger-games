@@ -20,6 +20,7 @@ import { IS_DEVELOPMENT_MODE, OFF_URL } from "./const";
 import ColorModeContext from "./contexts/colorMode";
 
 import Loader from "./pages/loader";
+import { CountryProvider } from "./contexts/CountryProvider/CountryProvider";
 
 const EcoScorePage = React.lazy(() => import("./pages/eco-score"));
 const LogoAnnotationPage = React.lazy(() =>
@@ -229,142 +230,147 @@ export default function App() {
 
   return (
     <React.Suspense fallback={<Loader />}>
-      <ColorModeContext.Provider value={colorMode}>
-        <ThemeProvider theme={theme}>
-          <LoginContext.Provider value={{ ...userState, refresh }}>
-            <DevModeContext.Provider
-              value={{
-                devMode,
-                setDevMode,
-                visiblePages,
-                setVisiblePages,
-              }}
-            >
-              <CssBaseline />
-              <ResponsiveAppBar />
-              <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/eco-score" element={<EcoScorePage />} />
-                <Route
-                  path="/logos"
-                  element={
-                    userState.isLoggedIn ? (
-                      <LogoAnnotationPage />
-                    ) : (
-                      <ShouldLoggedinPage />
-                    )
-                  }
-                />
-                <Route
-                  path="/logos/search"
-                  element={
-                    userState.isLoggedIn ? (
-                      <LogoSearchPage />
-                    ) : (
-                      <ShouldLoggedinPage />
-                    )
-                  }
-                />
-                <Route
-                  path="/logos/:logoId"
-                  element={
-                    userState.isLoggedIn ? (
-                      <LogoUpdatePage />
-                    ) : (
-                      <ShouldLoggedinPage />
-                    )
-                  }
-                />
-                <Route
-                  path="/logos/product-search"
-                  element={
-                    userState.isLoggedIn ? (
-                      <ProductLogoAnnotationPage />
-                    ) : (
-                      <ShouldLoggedinPage />
-                    )
-                  }
-                />
-                <Route
-                  path="/logos/deep-search"
-                  element={
-                    userState.isLoggedIn ? (
-                      <LogoDeepSearch />
-                    ) : (
-                      <ShouldLoggedinPage />
-                    )
-                  }
-                />
-                <Route
-                  path="/ingredients"
-                  element={
-                    // userState.isLoggedIn ? (
-                    <IngredientPage />
-                    // ) : (
-                    //   <ShouldLoggedinPage />
-                    // )
-                  }
-                />
+      <CountryProvider>
+        <ColorModeContext.Provider value={colorMode}>
+          <ThemeProvider theme={theme}>
+            <LoginContext.Provider value={{ ...userState, refresh }}>
+              <DevModeContext.Provider
+                value={{
+                  devMode,
+                  setDevMode,
+                  visiblePages,
+                  setVisiblePages,
+                }}
+              >
+                <CssBaseline />
+                <ResponsiveAppBar />
+                <Routes>
+                  <Route path="/" element={<Home />} />
+                  <Route path="/eco-score" element={<EcoScorePage />} />
+                  <Route
+                    path="/logos"
+                    element={
+                      userState.isLoggedIn ? (
+                        <LogoAnnotationPage />
+                      ) : (
+                        <ShouldLoggedinPage />
+                      )
+                    }
+                  />
+                  <Route
+                    path="/logos/search"
+                    element={
+                      userState.isLoggedIn ? (
+                        <LogoSearchPage />
+                      ) : (
+                        <ShouldLoggedinPage />
+                      )
+                    }
+                  />
+                  <Route
+                    path="/logos/:logoId"
+                    element={
+                      userState.isLoggedIn ? (
+                        <LogoUpdatePage />
+                      ) : (
+                        <ShouldLoggedinPage />
+                      )
+                    }
+                  />
+                  <Route
+                    path="/logos/product-search"
+                    element={
+                      userState.isLoggedIn ? (
+                        <ProductLogoAnnotationPage />
+                      ) : (
+                        <ShouldLoggedinPage />
+                      )
+                    }
+                  />
+                  <Route
+                    path="/logos/deep-search"
+                    element={
+                      userState.isLoggedIn ? (
+                        <LogoDeepSearch />
+                      ) : (
+                        <ShouldLoggedinPage />
+                      )
+                    }
+                  />
+                  <Route
+                    path="/ingredients"
+                    element={
+                      // userState.isLoggedIn ? (
+                      <IngredientPage />
+                      // ) : (
+                      //   <ShouldLoggedinPage />
+                      // )
+                    }
+                  />
 
-                <Route path="/brandinator" element={<Brandinator />} />
-                <Route path="/settings" element={<SettingsPage />} />
-                <Route path="/questions" element={<QuestionsPage />} />
-                <Route path="/insights" element={<InsightsPage />} />
-                <Route path="*" element={<NotFoundPage />} />
-                <Route path="/logoQuestion/" elemnt={<DashBoard />} />
-                <Route
-                  path="/logoQuestion/:valueTag"
-                  element={
-                    userState.isLoggedIn ? (
-                      <LogoQuestionValidator />
-                    ) : (
-                      <ShouldLoggedinPage />
-                    )
-                  }
-                />
+                  <Route path="/brandinator" element={<Brandinator />} />
+                  <Route path="/settings" element={<SettingsPage />} />
+                  <Route path="/questions" element={<QuestionsPage />} />
+                  <Route path="/insights" element={<InsightsPage />} />
+                  <Route path="*" element={<NotFoundPage />} />
+                  <Route path="/logoQuestion/" elemnt={<DashBoard />} />
+                  <Route
+                    path="/logoQuestion/:valueTag"
+                    element={
+                      userState.isLoggedIn ? (
+                        <LogoQuestionValidator />
+                      ) : (
+                        <ShouldLoggedinPage />
+                      )
+                    }
+                  />
 
-                <Route path="/dashboard/" element={<DashBoard />} />
-                <Route path="/dashboard/:dasboardId" element={<DashBoard />} />
-                {/**
-                 * To delete in 2025 because nutriscore and inao are now availabel as
-                 * - dasboard/nutriscore
-                 * - dasboard/inao
-                 */}
-                <Route path="/nutriscore" element={<DashBoard />} />
-                <Route path="/inao" element={<DashBoard />} />
+                  <Route path="/dashboard/" element={<DashBoard />} />
+                  <Route
+                    path="/dashboard/:dasboardId"
+                    element={<DashBoard />}
+                  />
+                  {/**
+                   * To delete in 2025 because nutriscore and inao are now availabel as
+                   * - dasboard/nutriscore
+                   * - dasboard/inao
+                   */}
+                  <Route path="/nutriscore" element={<DashBoard />} />
+                  <Route path="/inao" element={<DashBoard />} />
 
-                <Route
-                  path="/nutrition"
-                  element={
-                    userState.isLoggedIn ? (
-                      <Nutrition />
-                    ) : (
-                      <ShouldLoggedinPage />
-                    )
-                  }
-                />
-                {showFlaggedImage && (
-                  <Route path="/flagged-images" element={<FlaggedImages />} />
-                )}
+                  <Route
+                    path="/nutrition"
+                    element={
+                      userState.isLoggedIn ? (
+                        <Nutrition />
+                      ) : (
+                        <ShouldLoggedinPage />
+                      )
+                    }
+                  />
+                  {showFlaggedImage && (
+                    <Route path="/flagged-images" element={<FlaggedImages />} />
+                  )}
 
-                <Route
-                  path="/packaging"
-                  element={
-                    userState.isLoggedIn ? (
-                      <PackagingPage />
-                    ) : (
-                      <ShouldLoggedinPage />
-                    )
-                  }
-                />
-                <Route path="/gala" element={<GalaBoard />} />
-                <Route path="/bugs" element={<BugPage />} />
-                <Route path="/taxo-walk" element={<TaxonomyWalk />} />
-              </Routes>
-            </DevModeContext.Provider>
-          </LoginContext.Provider>
-        </ThemeProvider>
-      </ColorModeContext.Provider>
+                  <Route
+                    path="/packaging"
+                    element={
+                      userState.isLoggedIn ? (
+                        <PackagingPage />
+                      ) : (
+                        <ShouldLoggedinPage />
+                      )
+                    }
+                  />
+                  <Route path="/gala" element={<GalaBoard />} />
+                  <Route path="/bugs" element={<BugPage />} />
+                  <Route path="/taxo-walk" element={<TaxonomyWalk />} />
+                </Routes>
+              </DevModeContext.Provider>
+            </LoginContext.Provider>
+          </ThemeProvider>
+        </ColorModeContext.Provider>
+      </CountryProvider>
     </React.Suspense>
   );
 }

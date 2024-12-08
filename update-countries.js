@@ -19,8 +19,9 @@ axios("https://static.openfoodfacts.org/data/taxonomies/countries.json")
             countryCode:
               value.country_code_2 === undefined
                 ? undefined
-                : value.country_code_2.en,
+                : value.country_code_2.en.toLowerCase(),
           }))
+          .filter((country) => country.countryCode !== undefined)
           .sort((a, b) => a.label.localeCompare(b.label)),
       ),
       () => console.log("Countries updated"),

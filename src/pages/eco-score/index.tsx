@@ -12,11 +12,9 @@ import Opportunities from "../../components/Opportunities";
 import { DEFAULT_FILTER_STATE } from "../../components/QuestionFilter/const";
 import { useTranslation } from "react-i18next";
 import Loader from "../loader";
-import { useSearchParams } from "react-router-dom";
-import { localSettings } from "../../localeStorageManager";
 import countryNames from "../../assets/countries.json";
-import { getCountryId } from "../../utils/getCountryId";
 import { OFF_DOMAIN } from "../../const";
+import { useCountry } from "../../contexts/CountryProvider";
 
 const ecoScoreCards = [
   {
@@ -140,15 +138,7 @@ const ecoScoreCards = [
 
 export default function EcoScore() {
   const { t } = useTranslation();
-  const localData = localSettings.fetch();
-  const [searchParams, setSearchParams] = useSearchParams();
-  const [selectedCountry, setSelectedCountry] = React.useState(
-    getCountryId(searchParams.get("cc")) || localData["country"] || "en:france",
-  );
-
-  React.useEffect(() => {
-    setSearchParams({ cc: selectedCountry });
-  }, [selectedCountry, searchParams]);
+  const [country, setCountry] = useCountry();
 
   return (
     <React.Suspense fallback={<Loader />}>
@@ -177,14 +167,14 @@ export default function EcoScore() {
         <TextField
           select
           label={t("eco-score.countryLabel")}
-          value={selectedCountry}
+          value={country}
           onChange={(event) => {
-            setSelectedCountry(event.target.value);
+            setCountry(event.target.value, "page");
           }}
           sx={{ width: 200 }}
         >
           {countryNames.map((country) => (
-            <MenuItem value={country.id} key={country.id}>
+            <MenuItem value={country.countryCode} key={country.countryCode}>
               {country.label}
             </MenuItem>
           ))}
@@ -192,7 +182,7 @@ export default function EcoScore() {
 
         <Opportunities
           type="category"
-          country={selectedCountry}
+          countryCode={country}
           campaign="agribalyse-category"
         />
       </Stack>

@@ -16,7 +16,6 @@ const STORAGE_KEY = "hunger-game-settings";
 
 export const localSettingsKeys = {
   language: "lang",
-  country: "country",
   colorMode: "colorMode",
   isDevMode: "devMode",
   visiblePages: "visiblePages",
