@@ -99,7 +99,7 @@ export default function Nutrition() {
               />
             </Box>
             <LinksToProduct
-              barcode={insight.barcode}
+              barcode={insight?.barcode}
               count={count}
               sx={{ mb: 2 }}
             />
