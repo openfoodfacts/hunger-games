@@ -8,6 +8,7 @@ import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
+import Select from "@mui/material/Select";
 import MenuItem from "@mui/material/MenuItem";
 import ListSubheader from "@mui/material/ListSubheader";
 import Tooltip from "@mui/material/Tooltip";
@@ -31,6 +32,8 @@ import WelcomeTour from "./welcome/Welcome";
 import { useMediaQuery } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import { OFF_URL } from "../const";
+import { useCountry } from "../contexts/CountryProvider";
+import countryNames from "../assets/countries.json";
 
 // Object with no url are subheader in the menu
 const pages = [
@@ -113,6 +116,7 @@ const ResponsiveAppBar = () => {
   const { t } = useTranslation();
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [isTourOpen, setIsTourOpen] = React.useState(false);
+  const [country, setCountry] = useCountry();
   const theme = useTheme();
   const isDesktop = useMediaQuery(theme.breakpoints.up("md"));
 
@@ -402,12 +406,29 @@ const ResponsiveAppBar = () => {
               sx={{
                 display: "flex",
                 flexDirection: "row",
-                alignItems: "baseline",
+                alignItems: "center",
                 "&>*": {
                   mr: 1.5,
                 },
               }}
             >
+              <Select
+                value={country}
+                onChange={(event) => setCountry(event.target.value, "global")}
+                variant="outlined"
+                sx={{ fieldset: { border: "none" } }}
+              >
+                {countryNames
+                  .filter((country) => country.countryCode)
+                  .map((country) => (
+                    <MenuItem
+                      value={country.countryCode}
+                      key={country.countryCode}
+                    >
+                      {country.label} ({country.countryCode})
+                    </MenuItem>
+                  ))}
+              </Select>
               <IconButton
                 color="inherit"
                 onClick={handleCloseNavMenu}
