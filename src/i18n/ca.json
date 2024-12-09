@@ -254,7 +254,7 @@
     "welcome": {
       "page1": {
         "title": "Us donem la benvinguda als Jocs de la fam",
-        "text1": "Hunger Games is a collection of mini-games that help contribute to Open Food Facts in many ways. You can play our really exciting games from anywhere. Here is a guided tour of the entire website which will get you started.",
+        "text1": "Hunger Games és una col·lecció de minijocs que ajuden a contribuir a Open Food Facts de moltes maneres. Pots jugar als nostres jocs realment emocionants des de qualsevol lloc. Aquí teniu una visita guiada per tot el lloc web que us ajudarà a començar.",
         "text2": "Assegureu-vos d'iniciar sessió al lloc web d'Open Food Facts per obtenir crèdit per les vostres contribucions. Si cometeu un error, preneu-vos el temps per corregir-lo dirigint-vos al lloc web.",
         "text3": "Si teniu qualsevol dubte sobre els jocs, premeu la icona de l'interrogant a dalt a l'esquerra i podeu comunicar-vos amb nosaltres al canal de #hunger-games a Slack"
       },
@@ -385,19 +385,19 @@
     "countryLabel": "País"
   },
   "ingredients": {
-    "description": "This game allows you to validate the pre-selection of images of ingredients lists in various languages for a product, and validate the extracted ingredients.",
-    "current_text": "text from off",
-    "confidence_score": "language confidence",
-    "revert": "Revert",
-    "parsing": "Get server understanding",
-    "send": "Validate & send",
+    "description": "Aquest joc permet validar la preselecció d'imatges de llistes d'ingredients en diversos idiomes per a un producte, i validar els ingredients extrets.",
+    "current_text": "text des de off",
+    "confidence_score": "confiança lingüística",
+    "revert": "Reverteix",
+    "parsing": "Obté la comprensió del servidor",
+    "send": "Valida i envia",
     "skip": "Ometeu el producte",
-    "getRobotoffPrediciton": "Get predictions from Robotoff"
+    "getRobotoffPrediciton": "Obté prediccions de Robotoff"
   },
   "footer": {
     "appStore": {
       "title": "App Store",
-      "subtitle": "Download on the"
+      "subtitle": "Descarrega al"
     },
     "playStore": {
       "title": "Play Store",
