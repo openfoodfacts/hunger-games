@@ -162,6 +162,7 @@ const robotoff = {
     page = 1,
     count = 25,
     campaigns = "",
+    country = "",
   ) {
     let annotated;
     if (annotation.length && annotation === "not_annotated") {
@@ -178,6 +179,7 @@ const robotoff = {
         annotated,
         count,
         campaigns,
+        countries: country,
       }),
     });
   },
@@ -199,22 +201,22 @@ const robotoff = {
 
   getUnansweredValues(params: {
     type: "label" | "brand" | "category";
-    country;
+    countryCode;
     campaign;
     page?: number;
     count?: number;
   }) {
-    let page = params.page ?? 1;
-    page = page >= 1 ? page : 1;
+    const { page = 1, countryCode, ...other } = params;
 
     return axios.get(
-      `${ROBOTOFF_API_URL}/questions/unanswered/?${Object.keys({
-        ...params,
-        countries: countryId2countryCode(params.country),
-        page,
-      })
-        .filter((key) => params[key] !== undefined)
-        .map((key) => `${key}=${params[key]}`)
+      `${ROBOTOFF_API_URL}/questions/unanswered/?${Object.entries(
+        removeEmptyKeys({
+          ...other,
+          countries: countryCode,
+          page: page >= 1 ? page : 1,
+        }),
+      )
+        .map(([key, value]) => `${key}=${value}`)
         .join("&")}`,
     );
   },

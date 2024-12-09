@@ -24,6 +24,7 @@ export default function LinkToProduct(
         variant="outlined"
         startIcon={<VisibilityIcon />}
         sx={{ minWidth: 150 }}
+        disabled={!barcode}
       >
         {t("questions.view")}
       </Button>
@@ -35,6 +36,7 @@ export default function LinkToProduct(
         variant="contained"
         startIcon={<EditIcon />}
         sx={{ ml: 2, minWidth: 150 }}
+        disabled={!barcode}
       >
         {t("questions.edit")}
       </Button>
