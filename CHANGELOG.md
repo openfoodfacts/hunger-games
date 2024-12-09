@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/openfoodfacts/hunger-games/compare/v1.0.0...v1.0.1) (2024-12-09)
+
+
+### Bug Fixes
+
+* use images.openfoodfacts.org to serve images ([#1054](https://github.com/openfoodfacts/hunger-games/issues/1054)) ([440754f](https://github.com/openfoodfacts/hunger-games/commit/440754fb87cf6bab37ac7263a032f8815471edc9))
+
 ## 1.0.0 (2024-09-26)
 
 ### Features
