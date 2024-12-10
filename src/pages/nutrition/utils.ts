@@ -15,6 +15,7 @@ export const NUTRIMENTS = {
   fiber: "fiber",
   proteins: "proteins",
   salt: "salt",
+  sodium: "sodium",
 };
 
 export function isValidUnit(unit: string | null) {
