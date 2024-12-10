@@ -15,6 +15,7 @@ import { ErrorBoundary } from "../taxonomyWalk/Error";
 import LinksToProduct from "./LinksToProduct";
 import { NutrimentCell } from "./NutrimentCell";
 import PictureSection from "./PictureSection";
+import { NUTRIMENTS_ORDER } from "./config";
 
 export default function Nutrition() {
   const [partiallyFilled, setPartiallyFilled] = React.useState(false);
@@ -22,7 +23,8 @@ export default function Nutrition() {
   const handlePartiallyFilled = (_, checked) => setPartiallyFilled(checked);
   const handleDisplayOFFValue = (_, checked) => setDisplayOFFValue(checked);
 
-  console.log({ partiallyFilled });
+  const [additionalIds, setAdditionalIds] = React.useState([]);
+
   const { isLoading, insight, nextItem, count, product } =
     useRobotoffPredictions(partiallyFilled);
 
@@ -32,6 +34,7 @@ export default function Nutrition() {
   const apiRef = React.useRef<ReactZoomPanPinchRef>();
 
   React.useEffect(() => {
+    setAdditionalIds([]);
     if (!insight || typeof insight === "string") {
       setValues({});
       return;
@@ -62,8 +65,15 @@ export default function Nutrition() {
     }));
   }, [insight]);
 
-  const nutrimentsDetected = structurePredictions(values);
+  const nutrimentsDetected = React.useMemo(
+    () => structurePredictions(values, product, additionalIds),
+    [values, product, additionalIds],
+  );
 
+  const notUsedNutriments = React.useMemo(
+    () => NUTRIMENTS_ORDER.filter((id) => !nutrimentsDetected.includes(id)),
+    [nutrimentsDetected],
+  );
   return (
     <React.Suspense>
       <ErrorBoundary>
@@ -195,6 +205,29 @@ export default function Nutrition() {
                       </tr>
                     );
                   })}
+                  <tr>
+                    <td style={{ paddingLeft: 10, paddingRight: 4 }}>
+                      <select
+                        style={{ width: 155 }}
+                        value=""
+                        tabIndex={2}
+                        onChange={(event) => {
+                          setAdditionalIds((p) => [...p, event.target.value]);
+                        }}
+                      >
+                        <option disabled selected value="">
+                          -- add nutriment --
+                        </option>
+                        {notUsedNutriments.map((nutriId) => (
+                          <option key={nutriId} value={nutriId}>
+                            {nutriId}
+                          </option>
+                        ))}
+                      </select>
+                    </td>
+                    <td />
+                    <td />
+                  </tr>
                 </tbody>
                 <tfoot>
                   <tr>
