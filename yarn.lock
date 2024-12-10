@@ -2735,12 +2735,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"focus-lock@npm:^0.9.1":
-  version: 0.9.2
-  resolution: "focus-lock@npm:0.9.2"
+"focus-lock@npm:^1.3.5":
+  version: 1.3.5
+  resolution: "focus-lock@npm:1.3.5"
   dependencies:
     tslib: ^2.0.3
-  checksum: 7bb35e62c6308b3dd2f4559c9ffb126e2ef89db7b27602fa286c6f7e085f396bc9b34fb8ff0f1c2b409f479331e6a5344f6268f60ea71c300ca7dfd9c8827178
+  checksum: 09fb0e4402694aabafa8f7d49a656f683bbf39c94efc0c0240934d880792ef86d8c11bb7d77ef6f5d68ccfdfb7f191ecc2b38a259182a6791bcf96860a408d1c
   languageName: node
   linkType: hard
 
@@ -3197,7 +3197,7 @@ __metadata:
     react-redux: ^8.1.3
     react-router-dom: ^6.18.0
     react-zoom-pan-pinch: ^2.5.0
-    reactour: ^1.19.0
+    reactour: ^1.19.4
     redux: ^4.2.0
     styled-components: ^5.3.6
     typescript: ^5.2.2
@@ -3779,13 +3779,6 @@ __metadata:
   version: 4.6.2
   resolution: "lodash.merge@npm:4.6.2"
   checksum: ad580b4bdbb7ca1f7abf7e1bce63a9a0b98e370cf40194b03380a46b4ed799c9573029599caebc1b14e3f24b111aef72b96674a56cfa105e0f5ac70546cdc005
-  languageName: node
-  linkType: hard
-
-"lodash.pick@npm:4.4.0":
-  version: 4.4.0
-  resolution: "lodash.pick@npm:4.4.0"
-  checksum: 2c36cab7da6b999a20bd3373b40e31a3ef81fa264f34a6979c852c5bc8ac039379686b27380f0cb8e3781610844fafec6949c6fbbebc059c98f8fa8570e3675f
   languageName: node
   linkType: hard
 
@@ -4397,7 +4390,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-clientside-effect@npm:^1.2.5":
+"react-clientside-effect@npm:^1.2.6":
   version: 1.2.6
   resolution: "react-clientside-effect@npm:1.2.6"
   dependencies:
@@ -4420,19 +4413,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-focus-lock@npm:2.5.2":
-  version: 2.5.2
-  resolution: "react-focus-lock@npm:2.5.2"
+"react-focus-lock@npm:^2.12.1":
+  version: 2.12.1
+  resolution: "react-focus-lock@npm:2.12.1"
   dependencies:
     "@babel/runtime": ^7.0.0
-    focus-lock: ^0.9.1
+    focus-lock: ^1.3.5
     prop-types: ^15.6.2
-    react-clientside-effect: ^1.2.5
-    use-callback-ref: ^1.2.5
-    use-sidecar: ^1.0.5
+    react-clientside-effect: ^1.2.6
+    use-callback-ref: ^1.3.2
+    use-sidecar: ^1.1.2
   peerDependencies:
-    react: ^16.8.0 || ^17.0.0
-  checksum: 520b12a4496be21b3228bbf938657f6c33f868e486a0cd355d8bec918129d2c1bf7aabecb20aecdb446a1fbdb61b16f680b5d15b998f544f1b5c0dc5c8914c40
+    "@types/react": ^16.8.0 || ^17.0.0 || ^18.0.0
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0
+  peerDependenciesMeta:
+    "@types/react":
+      optional: true
+  checksum: f95c575a904a4ccf0c856c0fdbb8614dd99edd6bd124932a25c62285c6e5374586d762f5ba9ac3b1a1b865e93e6c32ca7dee273a0b336ad112becf91150391c6
   languageName: node
   linkType: hard
 
@@ -4575,17 +4572,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"reactour@npm:^1.19.0":
-  version: 1.19.2
-  resolution: "reactour@npm:1.19.2"
+"reactour@npm:^1.19.4":
+  version: 1.19.4
+  resolution: "reactour@npm:1.19.4"
   dependencies:
     "@rooks/use-mutation-observer": 4.11.2
     classnames: 2.3.1
     focus-outline-manager: ^1.0.2
     lodash.debounce: 4.0.8
-    lodash.pick: 4.4.0
     prop-types: 15.7.2
-    react-focus-lock: 2.5.2
+    react-focus-lock: ^2.12.1
     scroll-smooth: 1.1.1
     scrollparent: 2.0.1
   peerDependencies:
@@ -4593,7 +4589,7 @@ __metadata:
     react-dom: ^16.3.0 || ^17.0.0-0 || ^18.0.0-0
     react-is: ^16.8 || ^17.0.0-0 || ^18.0.0-0
     styled-components: ^4.0.0 || ^5.0.0
-  checksum: 16b48bbb293f58cbb42c8e8f712a21375cfeaaff7dc4517203e6d5871b5b1ecdd213a192b0e89793b748981404343cbe77cda79839d251211547256cb7538b97
+  checksum: 7ff8d57b950e797157a7d087ca35b3cdce47f0b0db83fb9c45d5d1f772f009b0e77225c6bfa1b74eef2485fd9a55d2f66ef69a36711e09dc69db86e0a84e0d83
   languageName: node
   linkType: hard
 
@@ -5496,9 +5492,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"use-callback-ref@npm:^1.2.5":
-  version: 1.3.0
-  resolution: "use-callback-ref@npm:1.3.0"
+"use-callback-ref@npm:^1.3.2":
+  version: 1.3.2
+  resolution: "use-callback-ref@npm:1.3.2"
   dependencies:
     tslib: ^2.0.0
   peerDependencies:
@@ -5507,11 +5503,11 @@ __metadata:
   peerDependenciesMeta:
     "@types/react":
       optional: true
-  checksum: 7913df383a5a6fcb399212eedefaac2e0c6f843555202d4e3010bac3848afe38ecaa3d0d6500ad1d936fbeffd637e6c517e68edb024af5e6beca7f27f3ce7b21
+  checksum: df690f2032d56aabcea0400313a04621429f45bceb4d65d38829b3680cae3856470ce72958cb7224b332189d8faef54662a283c0867dd7c769f9a5beff61787d
   languageName: node
   linkType: hard
 
-"use-sidecar@npm:^1.0.5":
+"use-sidecar@npm:^1.1.2":
   version: 1.1.2
   resolution: "use-sidecar@npm:1.1.2"
   dependencies:
