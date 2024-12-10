@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.1.0](https://github.com/openfoodfacts/hunger-games/compare/v1.0.0...v1.1.0) (2024-12-10)
+
+
+### Features
+
+* Allow to add nutriments ([#1094](https://github.com/openfoodfacts/hunger-games/issues/1094)) ([84c0bba](https://github.com/openfoodfacts/hunger-games/commit/84c0bba259a17f4eddc0f5698c32fdf81e40e5c7))
+
+
+### Bug Fixes
+
+* use images.openfoodfacts.org to serve images ([#1054](https://github.com/openfoodfacts/hunger-games/issues/1054)) ([440754f](https://github.com/openfoodfacts/hunger-games/commit/440754fb87cf6bab37ac7263a032f8815471edc9))
+
 ## 1.0.0 (2024-09-26)
 
 ### Features
