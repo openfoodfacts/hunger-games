@@ -1,5 +1,5 @@
 import axios from "axios";
-import { UNITS } from "./config";
+import { OFF_NUTRIMENTS_TO_IGNORE, UNITS } from "./config";
 import { NutrimentPrediction } from "./insight.types";
 import { ROBOTOFF_API_URL } from "../../const";
 
@@ -15,6 +15,7 @@ export const NUTRIMENTS = {
   fiber: "fiber",
   proteins: "proteins",
   salt: "salt",
+  sodium: "sodium",
 };
 
 export function isValidUnit(unit: string | null) {
@@ -23,21 +24,34 @@ export function isValidUnit(unit: string | null) {
 
 export function structurePredictions(
   predictions: Record<string, Pick<NutrimentPrediction, "value" | "unit">>,
+  productValue?: { nutriments?: Record<string, string | number> },
+  additionalIds?: string[],
 ) {
   const nurimentsIds = Object.keys(NUTRIMENTS);
 
   Object.keys(predictions).forEach((key) => {
-    if (key === "serving_size") {
-      return;
-    }
     const id = key.split("_")[0]; // split 'energy-kj_100g' to only get 'energy-kj'
 
+    if (OFF_NUTRIMENTS_TO_IGNORE.includes(id)) {
+      return;
+    }
     if (!nurimentsIds.includes(id)) {
       nurimentsIds.push(id);
     }
   });
 
-  return nurimentsIds;
+  Object.keys(productValue?.nutriments ?? {}).forEach((key) => {
+    const id = key.split("_")[0]; // split 'energy-kj_100g' to only get 'energy-kj'
+
+    if (OFF_NUTRIMENTS_TO_IGNORE.includes(id)) {
+      return;
+    }
+    if (!nurimentsIds.includes(id)) {
+      nurimentsIds.push(id);
+    }
+  });
+
+  return [...nurimentsIds, ...additionalIds];
 }
 
 interface PostRobotoffParams {

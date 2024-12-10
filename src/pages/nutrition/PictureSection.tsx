@@ -1,4 +1,7 @@
 import * as React from "react";
+import IconButton from "@mui/material/IconButton";
+import RotateRightIcon from "@mui/icons-material/RotateRight";
+import RotateLeftIcon from "@mui/icons-material/RotateLeft";
 import { InsightType } from "./insight.types";
 import { ProductType } from "./useRobotoffPredictions";
 import { getImageId } from "./utils";
@@ -19,6 +22,11 @@ interface PictureSectionProps {
 export default function PictureSection(props: PictureSectionProps) {
   const { isLoading, insight, product, apiRef } = props;
 
+  const [rotationIndex, setRotationIndex] = React.useState(0);
+
+  React.useEffect(() => {
+    setRotationIndex(0);
+  }, [insight]);
   if (isLoading) {
     return <p>Loading ....</p>;
   }
@@ -42,6 +50,12 @@ export default function PictureSection(props: PictureSectionProps) {
             })
           : "..."}
       </p>
+      <IconButton onClick={() => setRotationIndex((p) => p - 1)}>
+        <RotateLeftIcon />
+      </IconButton>
+      <IconButton onClick={() => setRotationIndex((p) => p + 1)}>
+        <RotateRightIcon />
+      </IconButton>
       <TransformWrapper limitToBounds={false} ref={apiRef}>
         <TransformComponent>
           <img
@@ -51,6 +65,7 @@ export default function PictureSection(props: PictureSectionProps) {
             style={{
               width: "100%",
               maxHeight: "200vh",
+              rotate: `${90 * rotationIndex}deg`,
             }}
           />
         </TransformComponent>
