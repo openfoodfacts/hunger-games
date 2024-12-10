@@ -198,7 +198,7 @@ export const QuestionFilter = () => {
           sx={{
             width: {
               xs: "130px",
-              md: "auto",
+              md: 150,
             },
           }}
           value={filterState?.insightType}
