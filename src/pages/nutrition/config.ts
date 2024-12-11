@@ -1,14 +1,6 @@
 export const UNITS = ["", "g", "mg", "µg"];
 
-export const OFF_NUTRIMENTS_TO_IGNORE = [
-  "serving",
-  "energy", // Already available with energy kj and kcal.
-  "fruits-vegetables-legumes-estimate-from-ingredients",
-  "fruits-vegetables-nuts-estimate-from-ingredients",
-  "nova-group",
-  "nutrition-score-fr",
-];
-export const NUTRIMENTS_ORDER = [
+export const KNOWN_NUTRIMENTS = [
   // Energy
   "energy-kj",
   "energy-kcal",
@@ -104,10 +96,10 @@ export const NUTRIMENTS_ORDER = [
   "pantothenic-acid",
   "silica",
   "bicarbonate",
-  "Sulphate",
-  "Nitrate",
-  "Hydrogencarbonate",
-  "Nitrite",
+  "sulphate",
+  "nitrate",
+  "nydrogencarbonate",
+  "nitrite",
   "potassium",
   "chloride",
   "calcium",

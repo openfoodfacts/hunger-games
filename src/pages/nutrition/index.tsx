@@ -15,7 +15,7 @@ import { ErrorBoundary } from "../taxonomyWalk/Error";
 import LinksToProduct from "./LinksToProduct";
 import { NutrimentCell } from "./NutrimentCell";
 import PictureSection from "./PictureSection";
-import { NUTRIMENTS_ORDER } from "./config";
+import { KNOWN_NUTRIMENTS } from "./config";
 
 export default function Nutrition() {
   const [partiallyFilled, setPartiallyFilled] = React.useState(false);
@@ -65,14 +65,14 @@ export default function Nutrition() {
     }));
   }, [insight]);
 
-  const nutrimentsDetected = React.useMemo(
+  const nutrimentsDisplayed = React.useMemo(
     () => structurePredictions(values, product, additionalIds),
     [values, product, additionalIds],
   );
 
   const notUsedNutriments = React.useMemo(
-    () => NUTRIMENTS_ORDER.filter((id) => !nutrimentsDetected.includes(id)),
-    [nutrimentsDetected],
+    () => KNOWN_NUTRIMENTS.filter((id) => !nutrimentsDisplayed.includes(id)),
+    [nutrimentsDisplayed],
   );
   return (
     <React.Suspense>
@@ -157,7 +157,7 @@ export default function Nutrition() {
                   </tr>
                 </thead>
                 <tbody>
-                  {nutrimentsDetected.map((nutrimentId) => {
+                  {nutrimentsDisplayed.map((nutrimentId) => {
                     const key100g = `${nutrimentId}_100g`;
                     const { value: value100g, unit: unit100g } =
                       values[key100g] ?? {};
