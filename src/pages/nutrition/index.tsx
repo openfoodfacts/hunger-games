@@ -16,6 +16,7 @@ import LinksToProduct from "./LinksToProduct";
 import { NutrimentCell } from "./NutrimentCell";
 import PictureSection from "./PictureSection";
 import { KNOWN_NUTRIMENTS } from "./config";
+import Instructions from "./Instructions";
 
 export default function Nutrition() {
   const [partiallyFilled, setPartiallyFilled] = React.useState(false);
@@ -77,6 +78,7 @@ export default function Nutrition() {
   return (
     <React.Suspense>
       <ErrorBoundary>
+        <Instructions />
         <Stack direction="row">
           <Box sx={{ width: "50%" }}>
             <PictureSection

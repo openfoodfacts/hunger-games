@@ -14,6 +14,35 @@ interface NutrimentCellProps {
   setValues: (object) => void;
 }
 
+/**
+ * Returns the string value of the input without any space.
+ */
+function clean(input: undefined | string | null | number): string {
+  if (input == undefined) {
+    return "";
+  }
+  return `${input}`.replaceAll(" ", "");
+}
+function getLegendColor(product, prediction, nutrimentId) {
+  const cleanProduct = clean(product);
+  const cleanPrediction = clean(prediction);
+
+  console.log({ nutrimentId, cleanProduct, cleanPrediction });
+
+  if (cleanProduct === cleanPrediction) {
+    return "green";
+  }
+
+  if (cleanProduct === "" || cleanPrediction === "") {
+    return "orange";
+  }
+
+  if (cleanProduct !== cleanPrediction) {
+    return "red";
+  }
+  return undefined;
+}
+
 export const NutrimentCell = (props: NutrimentCellProps) => {
   const {
     nutrimentId,
@@ -64,17 +93,33 @@ export const NutrimentCell = (props: NutrimentCellProps) => {
         />
         <br />
         {displayOFFValue && (
-          <legend style={{ fontSize: 13, textAlign: "end" }}>
-            {productValue}
-            {productUnit}
+          <legend
+            style={{
+              fontSize: 13,
+              textAlign: "end",
+            }}
+          >
+            <span
+              style={{
+                color: getLegendColor(productValue, value, nutrimentId),
+              }}
+            >
+              {productValue}
+            </span>
+            <span
+              style={{
+                color: getLegendColor(productUnit, unit, nutrimentId),
+              }}
+            >
+              {productUnit}
+            </span>
           </legend>
         )}
       </div>
-
       {isValidUnit(unit) ? (
         <select
           style={{ width: 55 }}
-          value={unit}
+          value={unit || ""}
           tabIndex={tabIndex}
           onChange={(event) => {
             setValues((p) => ({
