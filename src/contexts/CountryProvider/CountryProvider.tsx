@@ -7,7 +7,7 @@ import countries from "../../assets/countries.json";
 const ValidCountryCodes = new Set(countries.map((c) => c.countryCode));
 
 export function CountryProvider({ children }) {
-  const [country, setCountry] = useLocalStorageState("country", "world");
+  const [country, setCountry] = useLocalStorageState("country", "");
   const [searchParams, setSearchParams] = useSearchParams();
 
   const searchParamsCountry = searchParams.get("country")?.toLowerCase();
