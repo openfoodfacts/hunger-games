@@ -74,7 +74,7 @@ export const NutrimentCell = (props: NutrimentCellProps) => {
       {isValidUnit(unit) ? (
         <select
           style={{ width: 55 }}
-          value={unit}
+          value={unit || ""}
           tabIndex={tabIndex}
           onChange={(event) => {
             setValues((p) => ({

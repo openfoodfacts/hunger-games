@@ -413,21 +413,22 @@ const ResponsiveAppBar = () => {
               }}
             >
               <Select
-                value={country}
-                onChange={(event) => setCountry(event.target.value, "global")}
+                value={country || "world"}
+                onChange={(event) =>
+                  setCountry(
+                    event.target.value === "world" ? "" : event.target.value,
+                    "global",
+                  )
+                }
                 variant="outlined"
                 sx={{ fieldset: { border: "none" } }}
               >
-                {countryNames
-                  .filter((country) => country.countryCode)
-                  .map((country) => (
-                    <MenuItem
-                      value={country.countryCode}
-                      key={country.countryCode}
-                    >
-                      {country.label} ({country.countryCode})
-                    </MenuItem>
-                  ))}
+                {countryNames.map(({ label, countryCode }) => (
+                  <MenuItem value={countryCode || "world"} key={countryCode}>
+                    {label}
+                    {countryCode && ` (${countryCode})`}
+                  </MenuItem>
+                ))}
               </Select>
               <IconButton
                 color="inherit"
