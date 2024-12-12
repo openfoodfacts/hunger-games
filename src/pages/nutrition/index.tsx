@@ -21,7 +21,10 @@ import Instructions from "./Instructions";
 export default function Nutrition() {
   const [partiallyFilled, setPartiallyFilled] = React.useState(false);
   const [displayOFFValue, setDisplayOFFValue] = React.useState(false);
-  const handlePartiallyFilled = (_, checked) => setPartiallyFilled(checked);
+  const handlePartiallyFilled = (_, checked) => {
+    setPartiallyFilled(checked);
+    setDisplayOFFValue(checked);
+  };
   const handleDisplayOFFValue = (_, checked) => setDisplayOFFValue(checked);
 
   const [additionalIds, setAdditionalIds] = React.useState([]);
@@ -217,7 +220,7 @@ export default function Nutrition() {
                           setAdditionalIds((p) => [...p, event.target.value]);
                         }}
                       >
-                        <option disabled selected value="">
+                        <option disabled value="">
                           -- add nutriment --
                         </option>
                         {notUsedNutriments.map((nutriId) => (
