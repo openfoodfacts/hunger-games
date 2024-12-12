@@ -38,6 +38,10 @@ export default function PictureSection(props: PictureSectionProps) {
 
   const imageTimestamp = product?.images?.[imageId]?.uploaded_t;
 
+  const selectedImagesIds = Object.keys(product?.images ?? {})
+    .filter((imageKey) => imageKey.startsWith("nutrition"))
+    .map((imageKey) => product?.images[imageKey].imgid);
+
   return (
     <React.Fragment>
       <p>
@@ -49,6 +53,11 @@ export default function PictureSection(props: PictureSectionProps) {
               year: "numeric",
             })
           : "..."}
+      </p>
+      <p>
+        {selectedImagesIds.includes(imageId)
+          ? `Selected as nutriment image ✅`
+          : `Not selected as nutriment ❌`}
       </p>
       <IconButton onClick={() => setRotationIndex((p) => p - 1)}>
         <RotateLeftIcon />
@@ -64,7 +73,7 @@ export default function PictureSection(props: PictureSectionProps) {
             alt=""
             style={{
               width: "100%",
-              maxHeight: "200vh",
+              maxHeight: "70vh",
               rotate: `${90 * rotationIndex}deg`,
             }}
           />
