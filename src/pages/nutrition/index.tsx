@@ -20,7 +20,10 @@ import { NUTRIMENTS_ORDER } from "./config";
 export default function Nutrition() {
   const [partiallyFilled, setPartiallyFilled] = React.useState(false);
   const [displayOFFValue, setDisplayOFFValue] = React.useState(false);
-  const handlePartiallyFilled = (_, checked) => setPartiallyFilled(checked);
+  const handlePartiallyFilled = (_, checked) => {
+    setPartiallyFilled(checked);
+    setDisplayOFFValue(checked);
+  };
   const handleDisplayOFFValue = (_, checked) => setDisplayOFFValue(checked);
 
   const [additionalIds, setAdditionalIds] = React.useState([]);
