@@ -1,5 +1,5 @@
 import axios from "axios";
-import { OFF_NUTRIMENTS_TO_IGNORE, UNITS } from "./config";
+import { KNOWN_NUTRIMENTS, UNITS } from "./config";
 import { NutrimentPrediction } from "./insight.types";
 import { ROBOTOFF_API_URL } from "../../const";
 
@@ -32,7 +32,7 @@ export function structurePredictions(
   Object.keys(predictions).forEach((key) => {
     const id = key.split("_")[0]; // split 'energy-kj_100g' to only get 'energy-kj'
 
-    if (OFF_NUTRIMENTS_TO_IGNORE.includes(id)) {
+    if (!KNOWN_NUTRIMENTS.includes(id)) {
       return;
     }
     if (!nurimentsIds.includes(id)) {
@@ -43,7 +43,7 @@ export function structurePredictions(
   Object.keys(productValue?.nutriments ?? {}).forEach((key) => {
     const id = key.split("_")[0]; // split 'energy-kj_100g' to only get 'energy-kj'
 
-    if (OFF_NUTRIMENTS_TO_IGNORE.includes(id)) {
+    if (!KNOWN_NUTRIMENTS.includes(id)) {
       return;
     }
     if (!nurimentsIds.includes(id)) {
