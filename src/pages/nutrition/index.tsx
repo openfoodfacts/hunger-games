@@ -215,7 +215,7 @@ export default function Nutrition() {
                           setAdditionalIds((p) => [...p, event.target.value]);
                         }}
                       >
-                        <option disabled selected value="">
+                        <option disabled value="">
                           -- add nutriment --
                         </option>
                         {notUsedNutriments.map((nutriId) => (
