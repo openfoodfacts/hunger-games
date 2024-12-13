@@ -27,8 +27,6 @@ export default function Nutrition() {
   };
   const handleDisplayOFFValue = (_, checked) => setDisplayOFFValue(checked);
 
-  const [additionalIds, setAdditionalIds] = React.useState([]);
-
   const { isLoading, insight, nextItem, count, product } =
     useRobotoffPredictions(partiallyFilled);
 
@@ -38,7 +36,6 @@ export default function Nutrition() {
   const apiRef = React.useRef<ReactZoomPanPinchRef>();
 
   React.useEffect(() => {
-    setAdditionalIds([]);
     if (!insight || typeof insight === "string") {
       setValues({});
       return;
@@ -70,8 +67,8 @@ export default function Nutrition() {
   }, [insight]);
 
   const nutrimentsDisplayed = React.useMemo(
-    () => structurePredictions(values, product, additionalIds),
-    [values, product, additionalIds],
+    () => structurePredictions(values, product),
+    [values, product],
   );
 
   const notUsedNutriments = React.useMemo(
@@ -217,7 +214,17 @@ export default function Nutrition() {
                         value=""
                         tabIndex={2}
                         onChange={(event) => {
-                          setAdditionalIds((p) => [...p, event.target.value]);
+                          setValues((prev) => ({
+                            ...prev,
+                            [`${event.target.value}_100g`]: {
+                              value: "",
+                              unit: "g",
+                            },
+                            [`${event.target.value}_serving`]: {
+                              value: "",
+                              unit: "g",
+                            },
+                          }));
                         }}
                       >
                         <option disabled value="">
