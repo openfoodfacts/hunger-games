@@ -25,7 +25,6 @@ export function isValidUnit(unit: string | null) {
 export function structurePredictions(
   predictions: Record<string, Pick<NutrimentPrediction, "value" | "unit">>,
   productValue?: { nutriments?: Record<string, string | number> },
-  additionalIds?: string[],
 ) {
   const nurimentsIds = Object.keys(NUTRIMENTS);
 
@@ -51,7 +50,7 @@ export function structurePredictions(
     }
   });
 
-  return [...nurimentsIds, ...additionalIds];
+  return nurimentsIds;
 }
 
 interface PostRobotoffParams {
