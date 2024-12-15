@@ -349,16 +349,7 @@ export default function App() {
                       )
                     }
                   />
-                  <Route
-                    path="/spell-check"
-                    element={
-                      userState.isLoggedIn ? (
-                        <SpellCheck />
-                      ) : (
-                        <ShouldLoggedinPage />
-                      )
-                    }
-                  />
+                  <Route path="/spell-check" element={<SpellCheck />} />
 
                   {showFlaggedImage && (
                     <Route path="/flagged-images" element={<FlaggedImages />} />
