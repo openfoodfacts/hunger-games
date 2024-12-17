@@ -48,6 +48,7 @@
     "preview": "vite preview",
     "prettier": "prettier --write .",
     "countries": "node update-countries.js",
+    "nutriments": "node update-nutriments.js",
     "test": "react-scripts test",
     "deploy": "bash deploy.sh",
     "prepare": "husky install"

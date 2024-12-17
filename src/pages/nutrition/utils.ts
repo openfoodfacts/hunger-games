@@ -1,22 +1,10 @@
 import axios from "axios";
-import { KNOWN_NUTRIMENTS, UNITS } from "./config";
+import NUTRIMENTS from "../../assets/nutriments.json";
+import { UNITS } from "./config";
 import { NutrimentPrediction } from "./insight.types";
 import { ROBOTOFF_API_URL } from "../../const";
 
 export const NUTRI_TYPE = ["_100g", "_serving"];
-
-export const NUTRIMENTS = {
-  "energy-kj": "energy (kj)",
-  "energy-kcal": "energy (kcal)",
-  fat: "fat",
-  "saturated-fat": "saturated fat",
-  carbohydrates: "carbohydrates",
-  sugars: "sugars",
-  fiber: "fiber",
-  proteins: "proteins",
-  salt: "salt",
-  sodium: "sodium",
-};
 
 export function isValidUnit(unit: string | null) {
   return unit == null || UNITS.includes(unit);
@@ -26,31 +14,18 @@ export function structurePredictions(
   predictions: Record<string, Pick<NutrimentPrediction, "value" | "unit">>,
   productValue?: { nutriments?: Record<string, string | number> },
 ) {
-  const nurimentsIds = Object.keys(NUTRIMENTS);
+  return NUTRIMENTS.filter((item) => {
+    const key100g = `${item.id}_100g`;
+    const keyServing = `${item.id}_serving`;
 
-  Object.keys(predictions).forEach((key) => {
-    const id = key.split("_")[0]; // split 'energy-kj_100g' to only get 'energy-kj'
-
-    if (!KNOWN_NUTRIMENTS.includes(id)) {
-      return;
-    }
-    if (!nurimentsIds.includes(id)) {
-      nurimentsIds.push(id);
-    }
+    return (
+      item.display ||
+      predictions?.[key100g] !== undefined ||
+      predictions?.[keyServing] !== undefined ||
+      productValue?.nutriments?.[key100g] !== undefined ||
+      productValue?.nutriments?.[keyServing] !== undefined
+    );
   });
-
-  Object.keys(productValue?.nutriments ?? {}).forEach((key) => {
-    const id = key.split("_")[0]; // split 'energy-kj_100g' to only get 'energy-kj'
-
-    if (!KNOWN_NUTRIMENTS.includes(id)) {
-      return;
-    }
-    if (!nurimentsIds.includes(id)) {
-      nurimentsIds.push(id);
-    }
-  });
-
-  return nurimentsIds;
 }
 
 interface PostRobotoffParams {

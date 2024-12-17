@@ -23,11 +23,9 @@ function clean(input: undefined | string | null | number): string {
   }
   return `${input}`.replaceAll(" ", "");
 }
-function getLegendColor(product, prediction, nutrimentId) {
+function getLegendColor(product, prediction) {
   const cleanProduct = clean(product);
   const cleanPrediction = clean(prediction);
-
-  console.log({ nutrimentId, cleanProduct, cleanPrediction });
 
   if (cleanProduct === cleanPrediction) {
     return "green";
@@ -101,14 +99,14 @@ export const NutrimentCell = (props: NutrimentCellProps) => {
           >
             <span
               style={{
-                color: getLegendColor(productValue, value, nutrimentId),
+                color: getLegendColor(productValue, value),
               }}
             >
               {productValue}
             </span>
             <span
               style={{
-                color: getLegendColor(productUnit, unit, nutrimentId),
+                color: getLegendColor(productUnit, unit),
               }}
             >
               {productUnit}

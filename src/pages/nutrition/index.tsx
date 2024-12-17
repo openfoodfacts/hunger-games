@@ -1,11 +1,11 @@
 import * as React from "react";
 import { useRobotoffPredictions } from "./useRobotoffPredictions";
+import NUTRIMENTS from "../../assets/nutriments.json";
 import { ReactZoomPanPinchRef } from "react-zoom-pan-pinch";
 import { Box, Button, Checkbox, FormControlLabel } from "@mui/material";
 import Stack from "@mui/material/Stack";
 import {
   deleteRobotoff,
-  NUTRIMENTS,
   postRobotoff,
   skipRobotoff,
   structurePredictions,
@@ -15,7 +15,6 @@ import { ErrorBoundary } from "../taxonomyWalk/Error";
 import LinksToProduct from "./LinksToProduct";
 import { NutrimentCell } from "./NutrimentCell";
 import PictureSection from "./PictureSection";
-import { KNOWN_NUTRIMENTS } from "./config";
 import Instructions from "./Instructions";
 
 export default function Nutrition() {
@@ -41,29 +40,14 @@ export default function Nutrition() {
       return;
     }
 
-    setValues(() => ({
-      ...insight.data.nutrients,
-      "energy-kcal_100g": {
-        value: null,
-        ...insight.data.nutrients["energy-kcal_100g"],
-        unit: "kcal",
-      },
-      "energy-kcal_serving": {
-        value: null,
-        ...insight.data.nutrients["energy-kcal_serving"],
-        unit: "kcal",
-      },
-      "energy-kj_100g": {
-        value: null,
-        ...insight.data.nutrients["energy-kj_100g"],
-        unit: "kj",
-      },
-      "energy-kj_serving": {
-        value: null,
-        ...insight.data.nutrients["energy-kj_serving"],
-        unit: "kj",
-      },
-    }));
+    const defaultizedInsightValues = Object.fromEntries(
+      Object.entries(insight.data.nutrients).map(([id, values]) => {
+        const defaultUnit = NUTRIMENTS.find((item) => item.id === id)?.unit;
+        return [id, { unit: defaultUnit, ...values }];
+      }),
+    );
+
+    setValues(defaultizedInsightValues);
   }, [insight]);
 
   const nutrimentsDisplayed = React.useMemo(
@@ -71,10 +55,12 @@ export default function Nutrition() {
     [values, product],
   );
 
-  const notUsedNutriments = React.useMemo(
-    () => KNOWN_NUTRIMENTS.filter((id) => !nutrimentsDisplayed.includes(id)),
-    [nutrimentsDisplayed],
-  );
+  const notUsedNutriments = React.useMemo(() => {
+    const displayedIds = new Set(nutrimentsDisplayed.map(({ id }) => id));
+
+    return NUTRIMENTS.filter((item) => !displayedIds.has(item.id));
+  }, [nutrimentsDisplayed]);
+
   return (
     <React.Suspense>
       <ErrorBoundary>
@@ -159,54 +145,60 @@ export default function Nutrition() {
                   </tr>
                 </thead>
                 <tbody>
-                  {nutrimentsDisplayed.map((nutrimentId) => {
-                    const key100g = `${nutrimentId}_100g`;
-                    const { value: value100g, unit: unit100g } =
-                      values[key100g] ?? {};
+                  {nutrimentsDisplayed.map(
+                    ({ id: nutrimentId, name: nutrimentName, depth }) => {
+                      const key100g = `${nutrimentId}_100g`;
+                      const { value: value100g, unit: unit100g } =
+                        values[key100g] ?? {};
 
-                    const keyServing = `${nutrimentId}_serving`;
-                    const { value: valueServing, unit: unitServing } =
-                      values[keyServing] ?? {};
+                      const keyServing = `${nutrimentId}_serving`;
+                      const { value: valueServing, unit: unitServing } =
+                        values[keyServing] ?? {};
 
-                    const product100g = product?.nutriments?.[key100g];
-                    const productServing = product?.nutriments?.[keyServing];
-                    const productUnit =
-                      product?.nutriments?.[`${nutrimentId}_unit`];
+                      const product100g = product?.nutriments?.[key100g];
+                      const productServing = product?.nutriments?.[keyServing];
+                      const productUnit =
+                        product?.nutriments?.[`${nutrimentId}_unit`];
 
-                    return (
-                      <tr
-                        key={nutrimentId}
-                        // Attributes used to highlight when focusing
-                        data-label-id={nutrimentId}
-                      >
-                        <td style={{ paddingLeft: 10, paddingRight: 4 }}>
-                          {NUTRIMENTS[nutrimentId] ?? nutrimentId}
-                        </td>
-                        <NutrimentCell
-                          tabIndex={1}
-                          nutrimentId={nutrimentId}
-                          nutrimentKey={key100g}
-                          value={value100g}
-                          unit={unit100g}
-                          setValues={setValues}
-                          productValue={product100g}
-                          productUnit={productUnit}
-                          displayOFFValue={displayOFFValue}
-                        />
-                        <NutrimentCell
-                          tabIndex={2}
-                          nutrimentId={nutrimentId}
-                          nutrimentKey={keyServing}
-                          value={valueServing}
-                          unit={unitServing}
-                          setValues={setValues}
-                          productValue={productServing}
-                          productUnit={productUnit}
-                          displayOFFValue={displayOFFValue}
-                        />
-                      </tr>
-                    );
-                  })}
+                      return (
+                        <tr
+                          key={nutrimentId}
+                          data-label-id={nutrimentId} // Attributes used to highlight when focusing
+                        >
+                          <td
+                            style={{
+                              paddingLeft: 10 + depth ? depth * 10 : 0,
+                              paddingRight: 4,
+                            }}
+                          >
+                            {nutrimentName}
+                          </td>
+                          <NutrimentCell
+                            tabIndex={1}
+                            nutrimentId={nutrimentId}
+                            nutrimentKey={key100g}
+                            value={value100g}
+                            unit={unit100g}
+                            setValues={setValues}
+                            productValue={product100g}
+                            productUnit={productUnit}
+                            displayOFFValue={displayOFFValue}
+                          />
+                          <NutrimentCell
+                            tabIndex={2}
+                            nutrimentId={nutrimentId}
+                            nutrimentKey={keyServing}
+                            value={valueServing}
+                            unit={unitServing}
+                            setValues={setValues}
+                            productValue={productServing}
+                            productUnit={productUnit}
+                            displayOFFValue={displayOFFValue}
+                          />
+                        </tr>
+                      );
+                    },
+                  )}
                   <tr>
                     <td style={{ paddingLeft: 10, paddingRight: 4 }}>
                       <select
@@ -214,25 +206,30 @@ export default function Nutrition() {
                         value=""
                         tabIndex={2}
                         onChange={(event) => {
-                          setValues((prev) => ({
-                            ...prev,
-                            [`${event.target.value}_100g`]: {
-                              value: "",
-                              unit: "g",
-                            },
-                            [`${event.target.value}_serving`]: {
-                              value: "",
-                              unit: "g",
-                            },
-                          }));
+                          setValues((prev) => {
+                            const defaultUnit = NUTRIMENTS.find(
+                              (item) => item.id === event.target.value,
+                            ).unit;
+                            return {
+                              ...prev,
+                              [`${event.target.value}_100g`]: {
+                                value: "",
+                                unit: defaultUnit,
+                              },
+                              [`${event.target.value}_serving`]: {
+                                value: "",
+                                unit: defaultUnit,
+                              },
+                            };
+                          });
                         }}
                       >
                         <option disabled value="">
                           -- add nutriment --
                         </option>
-                        {notUsedNutriments.map((nutriId) => (
-                          <option key={nutriId} value={nutriId}>
-                            {nutriId}
+                        {notUsedNutriments.map(({ id, name }) => (
+                          <option key={id} value={id}>
+                            {name}
                           </option>
                         ))}
                       </select>
