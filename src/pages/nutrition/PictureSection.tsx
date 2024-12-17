@@ -27,6 +27,7 @@ export default function PictureSection(props: PictureSectionProps) {
   React.useEffect(() => {
     setRotationIndex(0);
   }, [insight]);
+
   if (isLoading) {
     return <p>Loading ....</p>;
   }
@@ -67,16 +68,23 @@ export default function PictureSection(props: PictureSectionProps) {
       </IconButton>
       <TransformWrapper limitToBounds={false} ref={apiRef}>
         <TransformComponent>
-          <img
-            key={insight.source_image}
-            src={`${OFF_IMAGE_URL}${insight.source_image}`}
-            alt=""
+          <div
             style={{
-              width: "100%",
-              maxHeight: "70vh",
-              rotate: `${90 * rotationIndex}deg`,
+              width: "50vw",
+              height: "70vh",
             }}
-          />
+          >
+            <img
+              key={insight.source_image}
+              src={`${OFF_IMAGE_URL}${insight.source_image}`}
+              alt=""
+              style={{
+                maxWidth: "100%",
+                maxHeight: "70vh",
+                rotate: `${90 * rotationIndex}deg`,
+              }}
+            />
+          </div>
         </TransformComponent>
       </TransformWrapper>
     </React.Fragment>

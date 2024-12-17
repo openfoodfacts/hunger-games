@@ -34,5 +34,26 @@ axios("https://static.openfoodfacts.org/data/taxonomies/countries.json")
       ),
       () => console.log("Countries updated"),
     );
+    fs.writeFile(
+      "./src/assets/languages.json",
+      JSON.stringify(
+        [
+          ...new Set(
+            Object.values(data)
+              .map((value) => {
+                const languageCode =
+                  value.language_codes === undefined
+                    ? "en"
+                    : value.language_codes.en === undefined
+                    ? undefined
+                    : value.language_codes.en.split(",")[0];
+                return languageCode;
+              })
+              .filter(Boolean),
+          ),
+        ].sort(),
+      ),
+      () => console.log("Countries updated"),
+    );
   })
   .catch(console.error);

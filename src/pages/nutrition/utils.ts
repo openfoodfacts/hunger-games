@@ -1,4 +1,5 @@
 import axios from "axios";
+import countries from "../../assets/countries.json";
 import NUTRIMENTS from "../../assets/nutriments.json";
 import { UNITS } from "./config";
 import { NutrimentPrediction } from "./insight.types";
@@ -87,4 +88,11 @@ export function deleteRobotoff(config: Pick<PostRobotoffParams, "insightId">) {
  */
 export function getImageId(source: string) {
   return source.split("/")[source.split("/").length - 1].split(".")[0];
+}
+
+export function getCountryLanguageCode(countryCode: string) {
+  return (
+    countries.find((item) => item.countryCode === countryCode)?.languageCode ??
+    "en"
+  );
 }

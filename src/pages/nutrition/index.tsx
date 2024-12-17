@@ -2,10 +2,17 @@ import * as React from "react";
 import { useRobotoffPredictions } from "./useRobotoffPredictions";
 import NUTRIMENTS from "../../assets/nutriments.json";
 import { ReactZoomPanPinchRef } from "react-zoom-pan-pinch";
-import { Box, Button, Checkbox, FormControlLabel } from "@mui/material";
+import {
+  Box,
+  Button,
+  Checkbox,
+  FormControlLabel,
+  Typography,
+} from "@mui/material";
 import Stack from "@mui/material/Stack";
 import {
   deleteRobotoff,
+  getCountryLanguageCode,
   postRobotoff,
   skipRobotoff,
   structurePredictions,
@@ -16,6 +23,8 @@ import LinksToProduct from "./LinksToProduct";
 import { NutrimentCell } from "./NutrimentCell";
 import PictureSection from "./PictureSection";
 import Instructions from "./Instructions";
+import useNutrimentTranslations from "./useNutrimentTranslations";
+import { useCountry } from "../../contexts/CountryProvider";
 
 export default function Nutrition() {
   const [partiallyFilled, setPartiallyFilled] = React.useState(false);
@@ -25,6 +34,10 @@ export default function Nutrition() {
     setDisplayOFFValue(checked);
   };
   const handleDisplayOFFValue = (_, checked) => setDisplayOFFValue(checked);
+  const [country] = useCountry();
+
+  const languageCode = getCountryLanguageCode(country);
+  const nutrientsTranslations = useNutrimentTranslations(languageCode);
 
   const { isLoading, insight, nextItem, count, product } =
     useRobotoffPredictions(partiallyFilled);
@@ -83,7 +96,7 @@ export default function Nutrition() {
                     onChange={handlePartiallyFilled}
                   />
                 }
-                label="Tableau partielement rempli"
+                label="Tableau partiellement rempli"
               />
               <FormControlLabel
                 disabled={!partiallyFilled}
@@ -146,7 +159,7 @@ export default function Nutrition() {
                 </thead>
                 <tbody>
                   {nutrimentsDisplayed.map(
-                    ({ id: nutrimentId, name: nutrimentName, depth }) => {
+                    ({ id: nutrimentId, name: nutrimentName_en, depth }) => {
                       const key100g = `${nutrimentId}_100g`;
                       const { value: value100g, unit: unit100g } =
                         values[key100g] ?? {};
@@ -160,6 +173,8 @@ export default function Nutrition() {
                       const productUnit =
                         product?.nutriments?.[`${nutrimentId}_unit`];
 
+                      const nutrimentName_native =
+                        nutrientsTranslations[languageCode]?.[nutrimentId];
                       return (
                         <tr
                           key={nutrimentId}
@@ -171,7 +186,23 @@ export default function Nutrition() {
                               paddingRight: 4,
                             }}
                           >
-                            {nutrimentName}
+                            {nutrimentName_native === undefined ? (
+                              nutrimentName_en
+                            ) : (
+                              <div>
+                                {nutrimentName_native}
+                                <Typography
+                                  component="legend"
+                                  fontSize="small"
+                                  sx={{ pl: 1 }}
+                                  color={(theme) =>
+                                    theme.palette.text.secondary
+                                  }
+                                >
+                                  {nutrimentName_en}
+                                </Typography>
+                              </div>
+                            )}
                           </td>
                           <NutrimentCell
                             tabIndex={1}
