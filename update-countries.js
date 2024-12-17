@@ -17,11 +17,11 @@ axios("https://static.openfoodfacts.org/data/taxonomies/countries.json")
             }
 
             const languageCode =
-              value.languages === undefined
+              value.language_codes === undefined
                 ? "en"
-                : value.languages.en === undefined
+                : value.language_codes.en === undefined
                 ? undefined
-                : value.languages.en.split(",")[0];
+                : value.language_codes.en.split(",")[0];
             return {
               id: key,
               label: value.name.en,
