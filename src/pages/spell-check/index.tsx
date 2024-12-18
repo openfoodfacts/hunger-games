@@ -5,9 +5,7 @@ import { Box, Button, Paper, Popper, Typography } from "@mui/material";
 import Stack from "@mui/material/Stack";
 import { ErrorBoundary } from "../taxonomyWalk/Error";
 import { getDiff } from "./getDiff";
-import { OFF_IMAGE_URL } from "../../const";
-import { TransformComponent, TransformWrapper } from "react-zoom-pan-pinch";
-import off from "../../off";
+import ShowImage from "./ShowImage";
 
 export default function Nutrition() {
   const anchorEl = React.useRef(null);
@@ -64,25 +62,7 @@ export default function Nutrition() {
       <ErrorBoundary>
         <Box sx={{ display: "flex" }}>
           <Box sx={{ width: "50%" }}>
-            <TransformWrapper
-              limitToBounds={false}
-              // ref={apiRef}
-            >
-              <TransformComponent>
-                <img
-                  key={insight.source_image}
-                  src={`${OFF_IMAGE_URL}/${off.getFormatedBarcode(
-                    insight.barcode,
-                  )}/${product?.images?.ingredients_fr?.imgid}.jpg`}
-                  alt=""
-                  style={{
-                    width: "100%",
-                    maxHeight: "70vh",
-                    // rotate: `${90 * rotationIndex}deg`,
-                  }}
-                />
-              </TransformComponent>
-            </TransformWrapper>
+            <ShowImage barcode={insight.barcode} images={product?.images} />
           </Box>
           <Box sx={{ width: "50%", p: 2 }}>
             <Typography>
