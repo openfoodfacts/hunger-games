@@ -25,8 +25,10 @@ import PictureSection from "./PictureSection";
 import Instructions from "./Instructions";
 import useNutrimentTranslations from "./useNutrimentTranslations";
 import { useCountry } from "../../contexts/CountryProvider";
+import { useTranslation } from "react-i18next";
 
 export default function Nutrition() {
+  const { t } = useTranslation();
   const [partiallyFilled, setPartiallyFilled] = React.useState(false);
   const [displayOFFValue, setDisplayOFFValue] = React.useState(false);
   const handlePartiallyFilled = (_, checked) => {
@@ -96,7 +98,7 @@ export default function Nutrition() {
                     onChange={handlePartiallyFilled}
                   />
                 }
-                label="Tableau partiellement rempli"
+                label={t("nutrition.table_partialy_filled")}
               />
               <FormControlLabel
                 disabled={!partiallyFilled}
@@ -106,7 +108,7 @@ export default function Nutrition() {
                     onChange={handleDisplayOFFValue}
                   />
                 }
-                label="afficher le valeurs OFF"
+                label={t("nutrition.display_off_values")}
               />
             </Box>
             <LinksToProduct
@@ -128,10 +130,10 @@ export default function Nutrition() {
               <table>
                 <thead>
                   <tr>
-                    <td>Nutriments</td>
+                    <td>{t("nutrition.nutrients")}</td>
                     <td>100g</td>
                     <td>
-                      serving{" "}
+                      {`${t("nutrition.serving_size")} `}
                       <div style={{ display: "inline-table" }}>
                         <input
                           tabIndex={2}
@@ -256,7 +258,7 @@ export default function Nutrition() {
                         }}
                       >
                         <option disabled value="">
-                          -- add nutriment --
+                          {t("nutrition.add_nutrient")}
                         </option>
                         {notUsedNutriments.map(({ id, name }) => (
                           <option key={id} value={id}>
@@ -291,7 +293,7 @@ export default function Nutrition() {
                           apiRef.current.resetTransform();
                         }}
                       >
-                        Valider (100g)
+                        {t("nutrition.validate_100g")}
                       </Button>
                     </td>
                     <td>
@@ -310,7 +312,7 @@ export default function Nutrition() {
                           apiRef.current.resetTransform();
                         }}
                       >
-                        Valider (serving)
+                        {t("nutrition.validate_serving")}
                       </Button>
                     </td>
                   </tr>
@@ -329,7 +331,7 @@ export default function Nutrition() {
                   apiRef.current.resetTransform();
                 }}
               >
-                Skip
+                {t("nutrition.skip")}
               </Button>
               <Button
                 tabIndex={3}
@@ -342,7 +344,7 @@ export default function Nutrition() {
                   apiRef.current.resetTransform();
                 }}
               >
-                Invalid Image
+                {t("nutrition.invalid_image")}
               </Button>
             </Stack>
           </Stack>

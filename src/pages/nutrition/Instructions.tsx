@@ -7,8 +7,10 @@ import DialogContent from "@mui/material/DialogContent";
 import DialogContentText from "@mui/material/DialogContentText";
 import DialogTitle from "@mui/material/DialogTitle";
 import Typography from "@mui/material/Typography";
+import { Trans, useTranslation } from "react-i18next";
 
 export default function Instructions() {
+  const { t } = useTranslation();
   const [open, setOpen] = React.useState(false);
 
   const handleClickOpen = () => {
@@ -27,7 +29,7 @@ export default function Instructions() {
         onClick={handleClickOpen}
         sx={{ margin: 2 }}
       >
-        Instructions
+        {t("nutrition.instructions.open_button")}
       </Button>
       <Dialog
         open={open}
@@ -36,61 +38,55 @@ export default function Instructions() {
         aria-describedby="alert-dialog-description"
       >
         <DialogTitle id="alert-dialog-title">
-          Comment utiliser cette interface
+          {t("nutrition.instructions.title")}
         </DialogTitle>
         <DialogContent sx={{ "& p": { marginBottom: 2 } }}>
           <DialogContentText component="div" id="alert-dialog-description">
             <Typography>
-              Avec les checkbox du haut, vous pouvez choisir entre traiter des
-              tableux de produit sans tableau nutritionel. Ou traiter des
-              produits pour lequels robotoof à trouver des nutriments en plus.
+              {t(
+                "nutrition.instructions.chose_between_empty_and_partially_filled",
+              )}
             </Typography>
             <Typography>
-              La date de la photo est affichée au dessus de la photo.
+              {t("nutrition.instructions.picture_date_is_display")}
             </Typography>
             <Typography>
-              Les nutriments déjà associé au produit sont affiché en petit sous
-              les inputs.
+              {t("nutrition.instructions.nutriments_from_off_are_displayed")}
               <ol>
                 <li>
-                  En <span style={{ color: "green" }}>vert</span> pour ceux qui
-                  matchent avec la valeur du champ
+                  <Trans i18nKey="nutrition.instructions.green_for_same">
+                    With <span style={{ color: "green" }}>green</span> for those
+                    matching with the input value.
+                  </Trans>
                 </li>
                 <li>
-                  En <span style={{ color: "orange" }}>orange</span> si le champ
-                  est vide
+                  <Trans i18nKey="nutrition.instructions.orange_for_empty">
+                    With <span style={{ color: "orange" }}>orange</span> for
+                    those with empty input value.
+                  </Trans>
                 </li>
                 <li>
-                  En <span style={{ color: "red" }}>rouge</span> si le champ est
-                  différent de la valeur connue.
+                  <Trans i18nKey="nutrition.instructions.red_for_different">
+                    With <span style={{ color: "red" }}>red</span> for those
+                    with different input value.
+                  </Trans>
                 </li>
               </ol>
-              La valeur "-" indique une valeur abscente du tableau nutritionel.
-              Particulierement utile pour les fibres qui sont souvent abscente.
+              {t("nutrition.instructions.indicate_not_provided_value")}
             </Typography>
             <Typography>
-              Quand une colone a été vérifiée (celle pour 100g ou celle par
-              portion) il ne vous reste plus qu'à la valider pour passer à la
-              suite. Innutil de remplir les deux colones. Une seul des deux peut
-              être enregistrée par OFF.
+              {t("nutrition.instructions.validate_one_column")}
             </Typography>
 
             <ul>
-              <li>
-                Le bouton "skip" passe à la suite. quelqu'un d'autre s'en
-                chargera.
-              </li>
-              <li>
-                Le bouton "invalid image" indique que la photo ne correspond pas
-                à un tableau nutritionel, et supprime la question pour tout le
-                monde.
-              </li>
+              <li>{t("nutrition.instructions.skip_button")}</li>
+              <li>{t("nutrition.instructions.invalid_image_button")}</li>
             </ul>
           </DialogContentText>
         </DialogContent>
         <DialogActions>
           <Button onClick={handleClose} autoFocus>
-            Fermer
+            {t("nutrition.instructions.close")}
           </Button>
         </DialogActions>
       </Dialog>
