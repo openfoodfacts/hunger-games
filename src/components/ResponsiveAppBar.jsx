@@ -65,6 +65,7 @@ const pages = [
   {
     url: "nutrition",
     translationKey: "menu.nutritions",
+    desktopOnly: true,
   },
   { translationKey: "menu.manage" },
   { url: "insights", translationKey: "menu.insights", devModeOnly: true },
@@ -141,6 +142,9 @@ const ResponsiveAppBar = () => {
     }
     if (page.mobileOnly) {
       return !isDesktop;
+    }
+    if (page.desktopOnly) {
+      return isDesktop;
     }
     return true;
   };
