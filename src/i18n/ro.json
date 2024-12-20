@@ -70,6 +70,7 @@
     "countries": "Țări",
     "view": "Vizualizare",
     "edit": "Modificare",
+    "remaining": "Remaining: {{count}}",
     "hide_images": "Ascunde imagini (încărcare mai rapidă)",
     "display_images": "Afișează imagini",
     "annotations": "Adnotări",
@@ -129,7 +130,7 @@
     "logos-deep-search": "Adnotare infinită",
     "manage": "Administrează",
     "insights": "Perspective",
-    "nutritions": "Valori nutriționale",
+    "nutritions": "Informații nutriționale",
     "settings": "Configurări",
     "eco-score": "Eco-scor",
     "dashboard": "Tabloul de bord cu sigle",
@@ -247,7 +248,7 @@
     "Open_Food_Facts_wiki": "Open Food Facts wiki (en)",
     "Translators": "Traducători",
     "Partners": "Parteneri",
-    "Open_Beauty_Facts": "Open Beauty Facts - Cosmetice",
+    "Open_Beauty_Facts": "Open Beauty Facts - cosmetics",
     "text2": "O bază de date colaborativă, liberă și deschisă a produselor alimentare din întreaga lume."
   },
   "helper": {
@@ -313,53 +314,34 @@
     "close": "Închidere"
   },
   "nutrition": {
+    "table_partialy_filled": "Table with already some data",
+    "display_off_values": "Display values from OpenFoodFacts",
+    "nutrients": "Nutrients",
+    "serving_size": "Cantitatea unei porții",
+    "add_nutrient": "-- add nutrient --",
+    "validate_100g": "Validate (100g)",
+    "validate_serving": "Validate (serving)",
+    "skip": "Omitere",
+    "invalid_image": "Invalid image",
+    "pictures": {
+      "picture_date": "Photo uploaded",
+      "selected_as_nutrients": "Selected as nutriment image ✅",
+      "not_selected_as_nutrients": "Not selected as nutriment ❌"
+    },
     "instructions": {
-      "cropTheTable": "Decupați imaginea pentru a simplifica adnotarea",
-      "verifyNutrimentDetected": "Indicați dacă nutrientul detectat este corect",
-      "selectMissingNutriments": "Adăugați nutrienții lipsă (puteți da click chiar dacă cuvântul nu are casetă)",
-      "selectValue": "Selectați valoarea nutritivă a: "
-    },
-    "steps": {
-      "1": "Decupaţi",
-      "2": "Valori speciale",
-      "3": "Selecția nutrienților",
-      "4": "Selectarea valorilor"
-    },
-    "loading": "Se încarcă...",
-    "unknown_brand": "Marcă necunoscută",
-    "value_missing": "Ați uitat să introduceți o valoare.",
-    "next": "Următorul pas",
-    "prev": "Pasul anterior",
-    "skip": "Sari peste acest produs",
-    "validate": "Validați tabelul",
-    "unselect_picture": "Fără informații nutriționale",
-    "basis": "date pentru: ",
-    "servingSize": "mărimea porției",
-    "value": "Valoare",
-    "unit": "Unitate",
-    "nutriments": {
-      "nutriment_energy-kj": "Valoare energetică (kJ)",
-      "nutriment_energy-kcal": "Energie (kCal)",
-      "nutriment_fat": "Grăsimi",
-      "nutriment_saturated-fat": "Acizi grași saturați",
-      "nutriment_carbohydrates": "Glucide",
-      "nutriment_sugars": "Zahăr",
-      "nutriment_proteins": "Conținut de proteine",
-      "nutriment_fiber": "Fibre",
-      "nutriment_salt": "Sare",
-      "nutriment_sodium": "Sodiu"
-    },
-    "history": {
-      "title": "Istoricul Sesiunii",
-      "status": "Stare",
-      "product name": "Numele produsului",
-      "view": "Vezi pagină",
-      "edit": "Editați pagina",
-      "SKIP": "Ignoră",
-      "VALIDATED": "editat",
-      "WRONG_IMAGE": "imagine neselectată",
-      "close": "Închideți",
-      "open": "deschide istoric"
+      "open_button": "Open instructions",
+      "title": "How to use the interface",
+      "chose_between_empty_and_partially_filled": "You can chose between products for which OpenFoodFacts (OFF) has no data about the nutrients. Or product with partially filled nutrient table.",
+      "picture_date_is_display": "The date of the picture is displayed on top of it. Allowing you to check if it's a recent one.",
+      "nutriments_from_off_are_displayed": "You can display data that are already present in the OFF database. They will appear under the inputs:",
+      "green_for_same": "With <1>green</1> for those matching with the input value.",
+      "orange_for_empty": "With <1>orange</1> for those with empty input value.",
+      "red_for_different": "With <1>red</1> for those with different input value.",
+      "indicate_not_provided_value": "Empty inputs are ignored. If fibers are not present in the table, you can put \"-\" to specify the value is not available.",
+      "validate_one_column": "Once you've verified one column, you can validate. It's useless to fill both columns. The data base only save one of them. The second one is computed by using proportionality.",
+      "skip_button": "If you don't know how to deal with an image, or you just don't want to do it, press \"skip\". Other user will be able to handle it.",
+      "invalid_image_button": "If the pictures is not a nutritional table, press \"Invalid image\" to remove it from the list of the images to verify",
+      "close": "Închidere"
     }
   },
   "notfound": {
