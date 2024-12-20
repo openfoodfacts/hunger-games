@@ -70,6 +70,7 @@
     "countries": "Länder",
     "view": "Visa",
     "edit": "Redigera",
+    "remaining": "Remaining: {{count}}",
     "hide_images": "Dölj bilder (snabbare laddning)",
     "display_images": "Visa bilder",
     "annotations": "Anteckningar",
@@ -129,7 +130,7 @@
     "logos-deep-search": "Oändlig notering",
     "manage": "Hantera",
     "insights": "Insikter",
-    "nutritions": "Näringsfakta",
+    "nutritions": "Näring",
     "settings": "Inställningar",
     "eco-score": "Eco-Score",
     "dashboard": "Logotyppanel",
@@ -247,7 +248,7 @@
     "Open_Food_Facts_wiki": "Open Food Facts wiki (en)",
     "Translators": "Översättare",
     "Partners": "Partner",
-    "Open_Beauty_Facts": "Open Beauty Facts - Kosmetika",
+    "Open_Beauty_Facts": "Open Beauty Facts - cosmetics",
     "text2": "En kollaborativ, fri och öppen databas över livsmedelsprodukter från hela världen."
   },
   "helper": {
@@ -313,53 +314,34 @@
     "close": "Stäng"
   },
   "nutrition": {
+    "table_partialy_filled": "Table with already some data",
+    "display_off_values": "Display values from OpenFoodFacts",
+    "nutrients": "Nutrients",
+    "serving_size": "Portionsstorlek",
+    "add_nutrient": "-- add nutrient --",
+    "validate_100g": "Validate (100g)",
+    "validate_serving": "Validate (serving)",
+    "skip": "Hoppa over",
+    "invalid_image": "Invalid image",
+    "pictures": {
+      "picture_date": "Photo uploaded",
+      "selected_as_nutrients": "Selected as nutriment image ✅",
+      "not_selected_as_nutrients": "Not selected as nutriment ❌"
+    },
     "instructions": {
-      "cropTheTable": "Beskär bilden för att förenkla din anteckning",
-      "verifyNutrimentDetected": "Ange om det upptäckta näringsämnet är korrekt",
-      "selectMissingNutriments": "Lägg till saknade näringsämnen (du kan klicka även om ordet inte har någon ruta)",
-      "selectValue": "Välj näringsvärde för: "
-    },
-    "steps": {
-      "1": "Beskär",
-      "2": "Särskilda värden",
-      "3": "Val av näringsämnen",
-      "4": "Valda värden"
-    },
-    "loading": "Laddar...",
-    "unknown_brand": "Varumärke okänt",
-    "value_missing": "Du glömde ange ett värde.",
-    "next": "Nästa steg",
-    "prev": "Föregående steg",
-    "skip": "Hoppa över denna produkt",
-    "validate": "Validera tabell",
-    "unselect_picture": "Ingen näringsinformation",
-    "basis": "data för: ",
-    "servingSize": "portion storlek",
-    "value": "Värde",
-    "unit": "Enhet",
-    "nutriments": {
-      "nutriment_energy-kj": "Energi (kJ)",
-      "nutriment_energy-kcal": "Energi (kcal)",
-      "nutriment_fat": "Fett",
-      "nutriment_saturated-fat": "Mättat fett",
-      "nutriment_carbohydrates": "Kolhydrater",
-      "nutriment_sugars": "Socker",
-      "nutriment_proteins": "Proteininnehåll",
-      "nutriment_fiber": "Fibrer",
-      "nutriment_salt": "Salt",
-      "nutriment_sodium": "Natrium"
-    },
-    "history": {
-      "title": "Sessionshistorik",
-      "status": "status",
-      "product name": "produktnamn",
-      "view": "visa sida",
-      "edit": "redigera sida",
-      "SKIP": "ignorerad",
-      "VALIDATED": "redigerad",
-      "WRONG_IMAGE": "avmarkerad bild",
-      "close": "stäng",
-      "open": "öppna historik"
+      "open_button": "Open instructions",
+      "title": "How to use the interface",
+      "chose_between_empty_and_partially_filled": "You can chose between products for which OpenFoodFacts (OFF) has no data about the nutrients. Or product with partially filled nutrient table.",
+      "picture_date_is_display": "The date of the picture is displayed on top of it. Allowing you to check if it's a recent one.",
+      "nutriments_from_off_are_displayed": "You can display data that are already present in the OFF database. They will appear under the inputs:",
+      "green_for_same": "With <1>green</1> for those matching with the input value.",
+      "orange_for_empty": "With <1>orange</1> for those with empty input value.",
+      "red_for_different": "With <1>red</1> for those with different input value.",
+      "indicate_not_provided_value": "Empty inputs are ignored. If fibers are not present in the table, you can put \"-\" to specify the value is not available.",
+      "validate_one_column": "Once you've verified one column, you can validate. It's useless to fill both columns. The data base only save one of them. The second one is computed by using proportionality.",
+      "skip_button": "If you don't know how to deal with an image, or you just don't want to do it, press \"skip\". Other user will be able to handle it.",
+      "invalid_image_button": "If the pictures is not a nutritional table, press \"Invalid image\" to remove it from the list of the images to verify",
+      "close": "Stäng"
     }
   },
   "notfound": {
