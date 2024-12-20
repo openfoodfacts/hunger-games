@@ -105,6 +105,10 @@ export function useIngredientParsing() {
   const [parsings, setParsing] = React.useState({});
 
   async function fetchIngredients(text: string, lang: string) {
+    if (parsings[text] !== undefined) {
+      return;
+    }
+
     setLoading(true);
     const parsing = await off.getIngedrientParsing({
       text,
