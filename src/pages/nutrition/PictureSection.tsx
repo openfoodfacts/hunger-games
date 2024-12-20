@@ -11,6 +11,7 @@ import {
   TransformWrapper,
 } from "react-zoom-pan-pinch";
 import { OFF_IMAGE_URL } from "../../const";
+import { useTranslation } from "react-i18next";
 
 interface PictureSectionProps {
   isLoading?: boolean;
@@ -20,6 +21,7 @@ interface PictureSectionProps {
 }
 
 export default function PictureSection(props: PictureSectionProps) {
+  const { t } = useTranslation();
   const { isLoading, insight, product, apiRef } = props;
 
   const [rotationIndex, setRotationIndex] = React.useState(0);
@@ -46,7 +48,7 @@ export default function PictureSection(props: PictureSectionProps) {
   return (
     <React.Fragment>
       <p>
-        Photo upload:{" "}
+        {`${t("nutrition.pictures.picture_date")}: `}
         {imageTimestamp
           ? new Date(imageTimestamp * 1000).toLocaleDateString(undefined, {
               day: "2-digit",
@@ -57,8 +59,8 @@ export default function PictureSection(props: PictureSectionProps) {
       </p>
       <p>
         {selectedImagesIds.includes(imageId)
-          ? `Selected as nutriment image ✅`
-          : `Not selected as nutriment ❌`}
+          ? t("nutrition.pictures.selected_as_nutrients")
+          : t("nutrition.pictures.not_selected_as_nutrients")}
       </p>
       <IconButton onClick={() => setRotationIndex((p) => p - 1)}>
         <RotateLeftIcon />

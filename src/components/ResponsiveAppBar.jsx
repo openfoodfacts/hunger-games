@@ -62,10 +62,14 @@ const pages = [
       },
     ],
   },
+  {
+    url: "nutrition",
+    translationKey: "menu.nutritions",
+    desktopOnly: true,
+  },
   { translationKey: "menu.manage" },
   { url: "insights", translationKey: "menu.insights", devModeOnly: true },
   { url: "dashboard", translationKey: "menu.dashboard" },
-  // { url: "nutriscore", translationKey: "menu.nutriscore", devModeOnly: true },
   { url: "settings", translationKey: "menu.settings", mobileOnly: true },
 ];
 
@@ -138,6 +142,9 @@ const ResponsiveAppBar = () => {
     }
     if (page.mobileOnly) {
       return !isDesktop;
+    }
+    if (page.desktopOnly) {
+      return isDesktop;
     }
     return true;
   };

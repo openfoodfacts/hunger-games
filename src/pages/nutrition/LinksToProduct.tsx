@@ -40,7 +40,11 @@ export default function LinkToProduct(
       >
         {t("questions.edit")}
       </Button>
-      <Typography sx={{ ml: "auto" }}>Restant: {count}</Typography>
+      <Typography sx={{ ml: "auto" }}>
+        {t("questions.remaining", {
+          count,
+        })}
+      </Typography>
     </Stack>
   );
 }
