@@ -1,17 +1,26 @@
 const COST_REMOVE = 2;
 const COST_DIFF = 1;
 
-type SuggestionType = {
+export interface SuggestionType {
   from: number;
   to: number;
   current: string;
   proposed: string;
-};
-type UpdateType =
+  proposedStart: number;
+  proposedEnd: number;
+}
+
+export type UpdateType =
   | { type: "REMOVED_1"; index1: number }
   | { type: "REMOVED_2"; index2: number }
   | { type: "MODIFY"; index1: number; index2: number };
 
+/**
+ *
+ * @param text1 The original text
+ * @param text2 The corrected text
+ * @returns an array of character modification, and a list of suggestion the group those diffs per words.
+ */
 export function getDiff(
   text1: string,
   text2: string,
@@ -19,6 +28,7 @@ export function getDiff(
   const words1 = text1.split("");
   const words2 = text2.split("");
 
+  // Comput the cost for each substring alignment.
   const computedCost = {};
 
   computedCost["-1_-1"] = 0;
@@ -45,6 +55,7 @@ export function getDiff(
   let i = words1.length - 1;
   let j = words2.length - 1;
 
+  // Back path used to deduce modification from the cost matrix.
   const updates = [];
   while (i >= 0 && j >= 0) {
     const word1 = words1[i];
@@ -83,7 +94,8 @@ export function getDiff(
 
   updates.reverse();
 
-  // Deduce updates to show
+  // Deduce suggestions to display.
+  // A suggestion start at a space character common to the two strings, and end  at the next common space.
   let i1 = 0;
   let i2 = 0;
 
@@ -95,7 +107,7 @@ export function getDiff(
   let updateFound = false;
   let nextUpdateIndex = 0;
 
-  const suggestions = [];
+  const suggestions: SuggestionType[] = [];
   while (i1 < text1.length && i2 < text2.length) {
     const currentUpdate = updates[nextUpdateIndex];
 
@@ -127,6 +139,8 @@ export function getDiff(
             to: i1,
             current: text1.slice(lastCommonSpace.i1 + 1, i1),
             proposed: text2.slice(lastCommonSpace.i2 + 1, i2),
+            proposedStart: lastCommonSpace.i2 + 1,
+            proposedEnd: i2,
           });
           updateFound = false;
         }
