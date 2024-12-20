@@ -70,6 +70,7 @@
     "countries": "Landen",
     "view": "Bekijk",
     "edit": "Bewerken",
+    "remaining": "Remaining: {{count}}",
     "hide_images": "Afbeeldingen verbergen (sneller laden)",
     "display_images": "Afbeelding weergeven",
     "annotations": "Aantekeningen",
@@ -129,7 +130,7 @@
     "logos-deep-search": "Oneindige annotatie",
     "manage": "Beheer",
     "insights": "Inzichten",
-    "nutritions": "Voedingswaarden",
+    "nutritions": "Voedingswaarde",
     "settings": "Instellingen",
     "eco-score": "Eco-Score",
     "dashboard": "Logo's-dashboard",
@@ -247,7 +248,7 @@
     "Open_Food_Facts_wiki": "Open Food Facts wiki (en)",
     "Translators": "Vertalers",
     "Partners": "Partners",
-    "Open_Beauty_Facts": "Open Beauty Facts - Cosmetica",
+    "Open_Beauty_Facts": "Open Beauty Facts - cosmetics",
     "text2": "Een gezamenlijke, vrije en open database van voedingsmiddelen uit de hele wereld."
   },
   "helper": {
@@ -313,53 +314,34 @@
     "close": "Sluit"
   },
   "nutrition": {
+    "table_partialy_filled": "Table with already some data",
+    "display_off_values": "Display values from OpenFoodFacts",
+    "nutrients": "Nutrients",
+    "serving_size": "Grootte van een portie",
+    "add_nutrient": "-- add nutrient --",
+    "validate_100g": "Validate (100g)",
+    "validate_serving": "Validate (serving)",
+    "skip": "Overslaan",
+    "invalid_image": "Invalid image",
+    "pictures": {
+      "picture_date": "Photo uploaded",
+      "selected_as_nutrients": "Selected as nutriment image ✅",
+      "not_selected_as_nutrients": "Not selected as nutriment ❌"
+    },
     "instructions": {
-      "cropTheTable": "Werk de afbeelding bij om je aantekening te vereenvoudigen",
-      "verifyNutrimentDetected": "Geef aan of de gedetecteerde voeding correct is",
-      "selectMissingNutriments": "Voeg ontbrekende voedingsstoffen toe (je kunt hierop klikken zelfs als het woord geen vakje heeft)",
-      "selectValue": "Selecteer de voedingswaarde van: "
-    },
-    "steps": {
-      "1": "Bijsnijden",
-      "2": "Speciale waarden",
-      "3": "Selectie van voedingsstoffen",
-      "4": "Waarden Selectie"
-    },
-    "loading": "Bezig met laden...",
-    "unknown_brand": "Merk onbekend",
-    "value_missing": "U bent vergeten een waarde in te voeren.",
-    "next": "Volgende stap",
-    "prev": "Vorige stap",
-    "skip": "Dit product overslaan",
-    "validate": "Tabel goedkeuren",
-    "unselect_picture": "Geen voedingsinformatie",
-    "basis": "gegevens voor: ",
-    "servingSize": "grootte van een portie",
-    "value": "Waarde",
-    "unit": "Eenheid",
-    "nutriments": {
-      "nutriment_energy-kj": "Energie (kJ)",
-      "nutriment_energy-kcal": "Energie (kcal)",
-      "nutriment_fat": "Vet",
-      "nutriment_saturated-fat": "Verzadigd vet",
-      "nutriment_carbohydrates": "Koolhydraten",
-      "nutriment_sugars": "Suiker",
-      "nutriment_proteins": "Eiwitgehalte",
-      "nutriment_fiber": "Vezels",
-      "nutriment_salt": "Zout",
-      "nutriment_sodium": "Natrium"
-    },
-    "history": {
-      "title": "Sessiegeschiedenis",
-      "status": "status",
-      "product name": "productnaam",
-      "view": "pagina bekijken",
-      "edit": "pagina bewerken",
-      "SKIP": "genegeerd",
-      "VALIDATED": "bewerkt",
-      "WRONG_IMAGE": "ongeselecteerde afbeelding",
-      "close": "sluiten",
-      "open": "geschiedenis openen"
+      "open_button": "Open instructions",
+      "title": "How to use the interface",
+      "chose_between_empty_and_partially_filled": "You can chose between products for which OpenFoodFacts (OFF) has no data about the nutrients. Or product with partially filled nutrient table.",
+      "picture_date_is_display": "The date of the picture is displayed on top of it. Allowing you to check if it's a recent one.",
+      "nutriments_from_off_are_displayed": "You can display data that are already present in the OFF database. They will appear under the inputs:",
+      "green_for_same": "With <1>green</1> for those matching with the input value.",
+      "orange_for_empty": "With <1>orange</1> for those with empty input value.",
+      "red_for_different": "With <1>red</1> for those with different input value.",
+      "indicate_not_provided_value": "Empty inputs are ignored. If fibers are not present in the table, you can put \"-\" to specify the value is not available.",
+      "validate_one_column": "Once you've verified one column, you can validate. It's useless to fill both columns. The data base only save one of them. The second one is computed by using proportionality.",
+      "skip_button": "If you don't know how to deal with an image, or you just don't want to do it, press \"skip\". Other user will be able to handle it.",
+      "invalid_image_button": "If the pictures is not a nutritional table, press \"Invalid image\" to remove it from the list of the images to verify",
+      "close": "Sluit"
     }
   },
   "notfound": {
