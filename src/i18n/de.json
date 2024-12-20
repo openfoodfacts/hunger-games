@@ -70,7 +70,7 @@
     "countries": "Länder",
     "view": "Anzeigen",
     "edit": "Bearbeiten",
-    "remaining": "Remaining: {{count}}",
+    "remaining": "Verbleibend: {{count}}",
     "hide_images": "Abbildungen ausblenden (für schnelleres Laden)",
     "display_images": "Abbildungen anzeigen",
     "annotations": "Anmerkungen",
@@ -248,7 +248,7 @@
     "Open_Food_Facts_wiki": "Open Food Facts - Wiki (en)",
     "Translators": "Übersetzer",
     "Partners": "Partner",
-    "Open_Beauty_Facts": "Open Beauty Facts - cosmetics",
+    "Open_Beauty_Facts": "Open Beauty Facts - Kosmetika",
     "text2": "Eine gemeinsame, freie und offene Datenbank von Lebensmittelprodukten aus der ganzen Welt."
   },
   "helper": {
@@ -314,23 +314,23 @@
     "close": "Schließen"
   },
   "nutrition": {
-    "table_partialy_filled": "Table with already some data",
-    "display_off_values": "Display values from OpenFoodFacts",
-    "nutrients": "Nutrients",
+    "table_partialy_filled": "Tabelle mit bereits vorhandenen Daten",
+    "display_off_values": "Werte aus OpenFoodFacts anzeigen",
+    "nutrients": "Nährstoffe",
     "serving_size": "Portionsgröße",
-    "add_nutrient": "-- add nutrient --",
-    "validate_100g": "Validate (100g)",
-    "validate_serving": "Validate (serving)",
+    "add_nutrient": "-- Nährstoff hinzufügen --",
+    "validate_100g": "Bestätigen (100g)",
+    "validate_serving": "Bestätigen (Portion)",
     "skip": "Überspringen",
-    "invalid_image": "Invalid image",
+    "invalid_image": "Bild ungültig",
     "pictures": {
-      "picture_date": "Photo uploaded",
-      "selected_as_nutrients": "Selected as nutriment image ✅",
-      "not_selected_as_nutrients": "Not selected as nutriment ❌"
+      "picture_date": "Foto hochgeladen",
+      "selected_as_nutrients": "Als Nährwertbild ausgewählt ✅",
+      "not_selected_as_nutrients": "Nicht als Nährwert ausgewählt ❌"
     },
     "instructions": {
-      "open_button": "Open instructions",
-      "title": "How to use the interface",
+      "open_button": "Anleitung öffnen",
+      "title": "So verwenden Sie die Schnittstelle",
       "chose_between_empty_and_partially_filled": "You can chose between products for which OpenFoodFacts (OFF) has no data about the nutrients. Or product with partially filled nutrient table.",
       "picture_date_is_display": "The date of the picture is displayed on top of it. Allowing you to check if it's a recent one.",
       "nutriments_from_off_are_displayed": "You can display data that are already present in the OFF database. They will appear under the inputs:",
