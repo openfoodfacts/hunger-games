@@ -8,6 +8,7 @@ import {
   Checkbox,
   FormControlLabel,
   Typography,
+  Alert,
 } from "@mui/material";
 import Stack from "@mui/material/Stack";
 import {
@@ -26,6 +27,7 @@ import Instructions from "./Instructions";
 import useNutrimentTranslations from "./useNutrimentTranslations";
 import { useCountry } from "../../contexts/CountryProvider";
 import { useTranslation } from "react-i18next";
+import { doesNotRemoveData } from "./preventDataLost";
 
 export default function Nutrition() {
   const { t } = useTranslation();
@@ -75,6 +77,32 @@ export default function Nutrition() {
 
     return NUTRIMENTS.filter((item) => !displayedIds.has(item.id));
   }, [nutrimentsDisplayed]);
+
+  const allOFF100gHaveValues = React.useMemo(() => {
+    // Every nutriment that has a value in the OFF DB should have a value in database should have a value in the form.
+    // We ask users to set "-" if the nutrient is not provided on the packaging.
+    return nutrimentsDisplayed.every(({ id: nutrimentId }) =>
+      doesNotRemoveData({
+        nutrimentId,
+        values,
+        nutriments: product?.nutriments,
+        category: "100g",
+      }),
+    );
+  }, [nutrimentsDisplayed, values, product]);
+
+  const allOFFServingHaveValues = React.useMemo(() => {
+    // Every nutriment that has a value in the OFF DB should have a value in database should have a value in the form.
+    // We ask users to set "-" if the nutrient is not provided on the packaging.
+    return nutrimentsDisplayed.every(({ id: nutrimentId }) =>
+      doesNotRemoveData({
+        nutrimentId,
+        values,
+        nutriments: product?.nutriments,
+        category: "serving",
+      }),
+    );
+  }, [nutrimentsDisplayed, values, product]);
 
   return (
     <React.Suspense>
@@ -279,10 +307,8 @@ export default function Nutrition() {
                         tabIndex={1}
                         variant="contained"
                         color="success"
-                        sx={{
-                          ml: 1,
-                          mt: 2,
-                        }}
+                        sx={{ ml: 1, mt: 2 }}
+                        disabled={!allOFF100gHaveValues}
                         onClick={() => {
                           postRobotoff({
                             insightId: insight.id,
@@ -302,6 +328,7 @@ export default function Nutrition() {
                         variant="contained"
                         color="success"
                         sx={{ ml: 1, mt: 2 }}
+                        disabled={!allOFFServingHaveValues}
                         onClick={() => {
                           postRobotoff({
                             insightId: insight.id,
@@ -318,6 +345,9 @@ export default function Nutrition() {
                   </tr>
                 </tfoot>
               </table>
+              {(!allOFF100gHaveValues || !allOFFServingHaveValues) && (
+                <Alert severity="info">{t("nutrition.missingValues")}</Alert>
+              )}
             </Box>
 
             <Stack direction="row" justifyContent="center" sx={{ mt: 5 }}>
