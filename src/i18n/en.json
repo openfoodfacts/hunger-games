@@ -323,6 +323,7 @@
     "validate_serving": "Validate (serving)",
     "skip": "Skip",
     "invalid_image": "Invalid image",
+    "missingValues": "It seems that some inputs are empty for nutriments OFF already knows. Either fill those inputs with appropriate value, or put a \"-\" to indicate that the value is not available.",
     "pictures": {
       "picture_date": "Photo uploaded",
       "selected_as_nutrients": "Selected as nutriment image ✅",      
