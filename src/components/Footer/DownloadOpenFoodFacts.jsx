@@ -46,7 +46,7 @@ export default function DownloadOpenFoodFacts() {
       {footerLinks.map((link) => {
         return (
           <FooterButtons
-            key={link.title}
+            key={link.url}
             title={t(`footer.${link.titleKey}.title`)}
             subTitle={t(`footer.${link.titleKey}.subtitle`)}
             icon={link.icon}

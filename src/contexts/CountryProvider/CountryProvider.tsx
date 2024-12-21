@@ -19,10 +19,11 @@ export function CountryProvider({ children }) {
       }
       setSearchParams((prev) => {
         prev.set("country", newCountry);
+
         return prev;
       });
     },
-    [],
+    [setSearchParams],
   );
 
   const value = React.useMemo(() => {
