@@ -70,7 +70,7 @@
     "countries": "Země",
     "view": "Zobrazit",
     "edit": "Upravit",
-    "remaining": "Remaining: {{count}}",
+    "remaining": "Zbývá: {{count}}",
     "hide_images": "Skrýt obrázky (rychlejší načítání)",
     "display_images": "Zobrazovat obrázky",
     "annotations": "Anotace",
@@ -248,7 +248,7 @@
     "Open_Food_Facts_wiki": "Open Food Facts wiki (en)",
     "Translators": "Překladatelé",
     "Partners": "Partneři",
-    "Open_Beauty_Facts": "Open Beauty Facts - cosmetics",
+    "Open_Beauty_Facts": "Open Beauty Facts - kosmetika",
     "text2": "Společná, bezplatná a otevřená databáze potravinářských produktů z celého světa."
   },
   "helper": {
@@ -314,23 +314,23 @@
     "close": "Zavřít"
   },
   "nutrition": {
-    "table_partialy_filled": "Table with already some data",
-    "display_off_values": "Display values from OpenFoodFacts",
-    "nutrients": "Nutrients",
+    "table_partialy_filled": "Tabulka s již nějakými údaji",
+    "display_off_values": "Zobrazit hodnoty z OpenFoodFacts",
+    "nutrients": "Živiny",
     "serving_size": "Velikost porce",
-    "add_nutrient": "-- add nutrient --",
-    "validate_100g": "Validate (100g)",
-    "validate_serving": "Validate (serving)",
+    "add_nutrient": "-- přidat živiny --",
+    "validate_100g": "Ověřit (100 g)",
+    "validate_serving": "Ověřit (porce)",
     "skip": "Přeskočit",
-    "invalid_image": "Invalid image",
+    "invalid_image": "Neplatný obrázek",
     "pictures": {
-      "picture_date": "Photo uploaded",
-      "selected_as_nutrients": "Selected as nutriment image ✅",
+      "picture_date": "Fotka byla nahrána",
+      "selected_as_nutrients": "Vybráno jako nutriční obrázek ✅",
       "not_selected_as_nutrients": "Not selected as nutriment ❌"
     },
     "instructions": {
-      "open_button": "Open instructions",
-      "title": "How to use the interface",
+      "open_button": "Otevřít pokyny",
+      "title": "Jak používat rozhraní",
       "chose_between_empty_and_partially_filled": "You can chose between products for which OpenFoodFacts (OFF) has no data about the nutrients. Or product with partially filled nutrient table.",
       "picture_date_is_display": "The date of the picture is displayed on top of it. Allowing you to check if it's a recent one.",
       "nutriments_from_off_are_displayed": "You can display data that are already present in the OFF database. They will appear under the inputs:",
