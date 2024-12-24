@@ -70,7 +70,7 @@
     "countries": "Страны",
     "view": "Вид",
     "edit": "Редактировать",
-    "remaining": "Remaining: {{count}}",
+    "remaining": "Осталось: {{count}}",
     "hide_images": "Скрыть изображения (более быстрая загрузка)",
     "display_images": "Показывать изображения",
     "annotations": "Заметки",
@@ -248,7 +248,7 @@
     "Open_Food_Facts_wiki": "Open Food Facts wiki (ru)",
     "Translators": "Переводчики",
     "Partners": "Партнёры",
-    "Open_Beauty_Facts": "Open Beauty Facts - cosmetics",
+    "Open_Beauty_Facts": "Open Beauty Facts - косметика",
     "text2": "Совместная, бесплатная и открытая база данных продуктов питания со всего мира."
   },
   "helper": {
@@ -315,18 +315,18 @@
   },
   "nutrition": {
     "table_partialy_filled": "Таблица с некоторыми данными",
-    "display_off_values": "Display values from OpenFoodFacts",
-    "nutrients": "Nutrients",
+    "display_off_values": "Показывать значения из OpenFoodFacts",
+    "nutrients": "Питательные вещества",
     "serving_size": "Размер порции",
     "add_nutrient": "-- добавить питательное вещество --",
-    "validate_100g": "Validate (100g)",
-    "validate_serving": "Validate (serving)",
+    "validate_100g": "Проверить (100г)",
+    "validate_serving": "Проверить (обслуживание)",
     "skip": "Пропустить",
-    "invalid_image": "Invalid image",
+    "invalid_image": "Недопустимый формат изображения",
     "pictures": {
       "picture_date": "Фото загружено",
-      "selected_as_nutrients": "Selected as nutriment image ✅",
-      "not_selected_as_nutrients": "Not selected as nutriment ❌"
+      "selected_as_nutrients": "Выбрано как изображение питательного вещества✅",
+      "not_selected_as_nutrients": "Не выбрано в качестве питательного вещества ❌"
     },
     "instructions": {
       "open_button": "Открыть инструкцию",
@@ -335,7 +335,7 @@
       "picture_date_is_display": "Дата изображения отображается сверху. Вы можете проверить, когда оно было выложено.",
       "nutriments_from_off_are_displayed": "Вы можете отобразить данные, которые уже представлены в базе данных OFF. Они появятся под следующими входными данными:",
       "green_for_same": "<1>Зеленые</1>для тех, которые соответствуют входному значению.",
-      "orange_for_empty": "<1>Оранжевые</1>для тех, кто имеет пустое поле ввода.",
+      "orange_for_empty": "<1>Оранжевые</1>для тех, которые имеют пустое поле ввода.",
       "red_for_different": "<1>Красные</1>для тех, которые имеют другое входное значение.",
       "indicate_not_provided_value": "Пустые входные данные игнорируются. Если в таблице волокна не представлены, вы можете поместить \"-\", чтобы указать что значение недоступно.",
       "validate_one_column": "Как только вы подтвердите один столбик, вы можете выполнить проверку. Бесполезно заполнять два столбика. База данных сохраняет только одну из них. Второй вычисляется с использованием пропорциональности.",
@@ -368,7 +368,7 @@
   },
   "ingredients": {
     "description": "Эта игра позволяет вам проверить предварительный выбор изображений списков ингредиентов на различных языках для продукта и подтвердить извлеченные ингредиенты.",
-    "current_text": "текст из Open Food Facts",
+    "current_text": "text from off",
     "confidence_score": "языковая уверенность",
     "revert": "Отмена",
     "parsing": "Получить понимание сервера",
