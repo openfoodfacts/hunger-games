@@ -6,7 +6,6 @@
     "unit": "kcal",
     "display": true
   },
-  { "id": "energy", "name": "Energy", "unit": "kj" },
   {
     "id": "energy-from-fat",
     "name": "Energy from fat",
@@ -189,39 +188,12 @@
   { "id": "taurine", "name": "Taurine", "unit": "g" },
   { "id": "ph", "name": "PH", "unit": "" },
   {
-    "id": "fruits-vegetables-nuts",
-    "name": "Fruits‚ vegetables‚ nuts and rapeseed‚ walnut and olive oils",
-    "unit": "%"
-  },
-  {
-    "id": "fruits-vegetables-nuts-dried",
-    "name": "Fruits‚ vegetables and nuts - dried",
-    "unit": "%"
-  },
-  {
-    "id": "fruits-vegetables-nuts-estimate",
-    "name": "Fruits‚ vegetables‚ nuts and rapeseed‚ walnut and olive oils (manual estimate from ingredients list)",
-    "unit": "%"
-  },
-  {
     "id": "collagen-meat-protein-ratio",
     "name": "Collagen/Meat protein ratio (maximum)",
     "unit": "%"
   },
   { "id": "cocoa", "name": "Cocoa (minimum)", "unit": "%" },
   { "id": "chlorophyl", "name": "Chlorophyl", "unit": "g" },
-  { "id": "carbon-footprint", "name": "Carbon footprint", "unit": "g" },
-  {
-    "id": "carbon-footprint-from-meat-or-fish",
-    "name": "Carbon footprint from meat or fish",
-    "unit": "g"
-  },
-  {
-    "id": "nutrition-score-fr",
-    "name": "Nutrition score - France",
-    "unit": ""
-  },
-  { "id": "nutrition-score-uk", "name": "Nutrition score - UK", "unit": "" },
   { "id": "glycemic-index", "name": "Glycemic Index", "unit": "" },
   { "id": "water-hardness", "name": "Water hardness", "unit": "mmol/l" },
   { "id": "choline", "name": "Choline", "unit": "g" },
