@@ -326,14 +326,14 @@
     "pictures": {
       "picture_date": "Fotka byla nahrána",
       "selected_as_nutrients": "Vybráno jako nutriční obrázek ✅",
-      "not_selected_as_nutrients": "Not selected as nutriment ❌"
+      "not_selected_as_nutrients": "Není vybráno jako živina ❌"
     },
     "instructions": {
       "open_button": "Otevřít pokyny",
       "title": "Jak používat rozhraní",
-      "chose_between_empty_and_partially_filled": "You can chose between products for which OpenFoodFacts (OFF) has no data about the nutrients. Or product with partially filled nutrient table.",
+      "chose_between_empty_and_partially_filled": "Můžete si vybrat mezi produkty, pro které OpenFoodFacts (OFF) nemá žádné údaje o živinách. Nebo produkt s částečně vyplněnou tabulkou živin.",
       "picture_date_is_display": "The date of the picture is displayed on top of it. Allowing you to check if it's a recent one.",
-      "nutriments_from_off_are_displayed": "You can display data that are already present in the OFF database. They will appear under the inputs:",
+      "nutriments_from_off_are_displayed": "Můžete zobrazit data, která jsou již přítomna v databázi OFF. Objeví se pod vstupy:",
       "green_for_same": "With <1>green</1> for those matching with the input value.",
       "orange_for_empty": "With <1>orange</1> for those with empty input value.",
       "red_for_different": "With <1>red</1> for those with different input value.",
