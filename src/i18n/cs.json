@@ -334,12 +334,12 @@
       "chose_between_empty_and_partially_filled": "Můžete si vybrat mezi produkty, pro které OpenFoodFacts (OFF) nemá žádné údaje o živinách. Nebo produkt s částečně vyplněnou tabulkou živin.",
       "picture_date_is_display": "The date of the picture is displayed on top of it. Allowing you to check if it's a recent one.",
       "nutriments_from_off_are_displayed": "Můžete zobrazit data, která jsou již přítomna v databázi OFF. Objeví se pod vstupy:",
-      "green_for_same": "With <1>green</1> for those matching with the input value.",
-      "orange_for_empty": "With <1>orange</1> for those with empty input value.",
+      "green_for_same": "Se zeleným <1></1> pro ty, které odpovídají vstupní hodnotě.",
+      "orange_for_empty": "S <1>oranžovou</1> pro ty s prázdnou vstupní hodnotou.",
       "red_for_different": "With <1>red</1> for those with different input value.",
       "indicate_not_provided_value": "Empty inputs are ignored. If fibers are not present in the table, you can put \"-\" to specify the value is not available.",
       "validate_one_column": "Once you've verified one column, you can validate. It's useless to fill both columns. The data base only save one of them. The second one is computed by using proportionality.",
-      "skip_button": "If you don't know how to deal with an image, or you just don't want to do it, press \"skip\". Other user will be able to handle it.",
+      "skip_button": "Pokud si s obrázkem nevíte rady, nebo se vám to prostě nechce, stiskněte „přeskočit“. Ostatní uživatelé to zvládnou.",
       "invalid_image_button": "If the pictures is not a nutritional table, press \"Invalid image\" to remove it from the list of the images to verify",
       "close": "Zavřít"
     }
