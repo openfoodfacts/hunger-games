@@ -336,11 +336,11 @@
       "nutriments_from_off_are_displayed": "You can display data that are already present in the OFF database. They will appear under the inputs:",
       "green_for_same": "With <1>green</1> for those matching with the input value.",
       "orange_for_empty": "With <1>orange</1> for those with empty input value.",
-      "red_for_different": "With <1>red</1> for those with different input value.",
-      "indicate_not_provided_value": "Empty inputs are ignored. If fibers are not present in the table, you can put \"-\" to specify the value is not available.",
+      "red_for_different": "Com <1>red</1> para aqueles com um valor de entrada diferente.",
+      "indicate_not_provided_value": "Entradas vazias são ignoradas. Se fibras não estão presentes na tabela, você pode colocar \"-\" para especificar o valor não está disponível.",
       "validate_one_column": "Once you've verified one column, you can validate. It's useless to fill both columns. The data base only save one of them. The second one is computed by using proportionality.",
       "skip_button": "If you don't know how to deal with an image, or you just don't want to do it, press \"skip\". Other user will be able to handle it.",
-      "invalid_image_button": "If the pictures is not a nutritional table, press \"Invalid image\" to remove it from the list of the images to verify",
+      "invalid_image_button": "Se a foto não for uma tabela nutricional, pressione ''imagem inválida'' para removê-la da lista de imagens para verificar.",
       "close": "Fechar"
     }
   },
