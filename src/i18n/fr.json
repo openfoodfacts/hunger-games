@@ -70,7 +70,7 @@
     "countries": "Pays",
     "view": "Voir",
     "edit": "Modifier",
-    "remaining": "Remaining: {{count}}",
+    "remaining": "Restant : {{count}}",
     "hide_images": "Masquer les images (chargement plus rapide)",
     "display_images": "Afficher les images",
     "annotations": "Annotations",
@@ -248,7 +248,7 @@
     "Open_Food_Facts_wiki": "Wiki Open Food Facts (fr)",
     "Translators": "Traducteurs",
     "Partners": "Partenaires",
-    "Open_Beauty_Facts": "Open Beauty Facts - cosmetics",
+    "Open_Beauty_Facts": "Open Beauty Facts - cosmétiques",
     "text2": "Une base de données collaborative, libre et ouverte des produits alimentaires du monde entier."
   },
   "helper": {
@@ -314,13 +314,13 @@
     "close": "Fermer"
   },
   "nutrition": {
-    "table_partialy_filled": "Table with already some data",
-    "display_off_values": "Display values from OpenFoodFacts",
+    "table_partialy_filled": "Tableau prérempli",
+    "display_off_values": "Afficher les valeurs renseignées dans OpenFoodFacts",
     "nutrients": "Nutriments",
     "serving_size": "Taille d'une portion",
     "add_nutrient": "-- ajouter un nutriment --",
-    "validate_100g": "Validate (100g)",
-    "validate_serving": "Validate (serving)",
+    "validate_100g": "Valider (100g)",
+    "validate_serving": "Valider (portion)",
     "skip": "Ignorer",
     "invalid_image": "Image invalide",
     "pictures": {
@@ -333,7 +333,7 @@
       "title": "Comment utiliser l'interface",
       "chose_between_empty_and_partially_filled": "Vous pouvez choisir entre des produits pour lesquels OpenFoodFacts (OFF) n'a pas de données sur les nutriments. Ou des produits avec un tableau nutritionnel partiellement rempli.",
       "picture_date_is_display": "La date de la photo est affichée au-dessus de celle-ci. Cela vous permet de vérifier si elle est récente.",
-      "nutriments_from_off_are_displayed": "You can display data that are already present in the OFF database. They will appear under the inputs:",
+      "nutriments_from_off_are_displayed": "Vous pouvez afficher les données déjà présentes dans la base de données OpenFoodFacts. Elles apparaîtront sous les champs de saisie :",
       "green_for_same": "Avec <1>vert</1> pour ceux correspondant à la valeur d'entrée.",
       "orange_for_empty": "Avec <1>orange</1> pour ceux dont la valeur d'entrée est vide.",
       "red_for_different": "Avec <1>rouge</1> pour ceux qui ont une valeur d'entrée différente.",
