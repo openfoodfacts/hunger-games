@@ -34,7 +34,7 @@ function clean(input: undefined | string | null | number): string {
   if (input == undefined) {
     return "";
   }
-  return `${input}`.replaceAll(" ", "");
+  return `${input}`.replaceAll(" ", "").toLowerCase();
 }
 
 function getLegendColor(productValue, value, productUnit, unit) {
@@ -58,18 +58,15 @@ function getLegendColor(productValue, value, productUnit, unit) {
 
   const ratioProduct = getRatio(cleanProductUnit);
   const ratioInput = getRatio(cleanUnit);
-  if (ratioProduct ===
-    ratioInput) {
-    return "red";
+  const numberProduct = Number.parseFloat(cleanProductValue.match(/(\.|,|\d)+/)[0])
+  const numberInput = Number.parseFloat(cleanValue.match(/(\.|,|\d)+/)[0])
+
+
+  if (ratioProduct * numberProduct === ratioInput * numberInput) {
+    return 'green'
   }
-  else {
-    const numberProduct = Number.parseFloat(cleanProductValue.match(/(\.|,|\d)+/)[0])
-    const numberInput = Number.parseFloat(cleanValue.match(/(\.|,|\d)+/)[0])
-    if (ratioProduct * numberProduct === ratioInput * numberInput) {
-      return 'green'
-    }
-    return 'red'
-  }
+  return 'red'
+
   // Should never reach that part.
   return undefined;
 }
@@ -142,7 +139,7 @@ export const NutrimentCell = (props: NutrimentCellProps) => {
           </legend>
         )}
       </div>
-      {isValidUnit(unit, nutrimentId) ? (
+      {forcedUnit === undefined && isValidUnit(unit, nutrimentId) ? (
         <select
           style={{ width: 55 }}
           value={unit || ""}

@@ -6,9 +6,12 @@ interface Nutri {
   name?: string;
   nutrients?: Nutri[];
 }
-function parseNutrients(data: Nutri[]): Record<string, string> {
+function parseNutrients(data: undefined | Nutri[]): Record<string, string> {
   const rep = {};
 
+  if (data === undefined) {
+    return {}
+  }
   data.forEach((item) => {
     const { id, name, nutrients } = item;
 
@@ -44,7 +47,6 @@ export default function useNutrimentTranslations(lc: string) {
     axios
       .get(`https://world.openfoodfacts.org/cgi/nutrients.pl?lc=${language}`)
       .then(({ data }) => {
-        console.log(data);
         setTranslations((p) => ({
           ...p,
           [language]: parseNutrients(data.nutrients),
