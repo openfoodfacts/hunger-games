@@ -7,7 +7,16 @@ import { ROBOTOFF_API_URL } from "../../const";
 
 export const NUTRI_TYPE = ["_100g", "_serving"];
 
-export function isValidUnit(unit: string | null) {
+export const FORCED_UNITS = {
+  "energy-kj": "kj",
+  "energy-kcal": "kcal",
+  "energy-from-fat": "kj",
+}
+
+export function isValidUnit(unit: string | null, nutrimentId: string) {
+  if (FORCED_UNITS[nutrimentId] !== undefined) {
+    return unit === FORCED_UNITS[nutrimentId]
+  }
   return unit == null || UNITS.includes(unit);
 }
 
@@ -41,9 +50,11 @@ export function postRobotoff(config: PostRobotoffParams) {
 
   Object.keys(data).forEach((key) => {
     if (key.includes(type) && data[key].value) {
+      const nutriId = type.replace(`_${type}`, '');// remove the _100g _serving suffix
+      const forcedUnit = FORCED_UNITS[nutriId]
       filteredValues[key] = {
         value: data[key].value,
-        unit: data[key].unit,
+        unit: forcedUnit ?? data[key].unit,
       };
     }
   });

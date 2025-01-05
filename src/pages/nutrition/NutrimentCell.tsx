@@ -1,6 +1,6 @@
 import * as React from "react";
 import { UNITS } from "./config";
-import { isValidUnit } from "./utils";
+import { FORCED_UNITS, isValidUnit } from "./utils";
 
 interface NutrimentCellProps {
   nutrimentId: string;
@@ -54,6 +54,7 @@ export const NutrimentCell = (props: NutrimentCellProps) => {
     displayOFFValue,
   } = props;
 
+  const forcedUnit = FORCED_UNITS[nutrimentId]
   return (
     <td
       data-label-id={nutrimentId}
@@ -114,7 +115,7 @@ export const NutrimentCell = (props: NutrimentCellProps) => {
           </legend>
         )}
       </div>
-      {isValidUnit(unit) ? (
+      {isValidUnit(unit, nutrimentId) ? (
         <select
           style={{ width: 55 }}
           value={unit || ""}
@@ -136,7 +137,7 @@ export const NutrimentCell = (props: NutrimentCellProps) => {
           ))}
         </select>
       ) : (
-        <span style={{ display: "inline-block", width: 55 }}>{unit}</span>
+        <span style={{ display: "inline-block", width: 55 }}>{forcedUnit ?? unit}</span>
       )}
       <button
         tabIndex={-1}
