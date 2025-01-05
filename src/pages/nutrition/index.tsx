@@ -26,11 +26,13 @@ import Instructions from "./Instructions";
 import useNutrimentTranslations from "./useNutrimentTranslations";
 import { useCountry } from "../../contexts/CountryProvider";
 import { useTranslation } from "react-i18next";
+import { useSearchParamsState } from "../../hooks/useSearchParamsState";
 
 export default function Nutrition() {
   const { t } = useTranslation();
-  const [partiallyFilled, setPartiallyFilled] = React.useState(false);
-  const [displayOFFValue, setDisplayOFFValue] = React.useState(false);
+  const [partiallyFilled, setPartiallyFilled] = useSearchParamsState('partiallyFilled', false, Boolean);
+  const [displayOFFValue, setDisplayOFFValue] = useSearchParamsState('displayValue', false, Boolean);
+
   const handlePartiallyFilled = (_, checked) => {
     setPartiallyFilled(checked);
     setDisplayOFFValue(checked);
