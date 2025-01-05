@@ -14,6 +14,19 @@ interface NutrimentCellProps {
   setValues: (object) => void;
 }
 
+function getRatio(unit: 'g' | 'mg' | 'µg' | string) {
+  switch (unit) {
+    case 'g':
+      return 1;
+    case 'mg':
+      return 0.001;
+    case 'µg':
+      return 0.000001;
+    default:
+      return 1
+  }
+}
+
 /**
  * Returns the string value of the input without any space.
  */
@@ -23,21 +36,41 @@ function clean(input: undefined | string | null | number): string {
   }
   return `${input}`.replaceAll(" ", "");
 }
-function getLegendColor(product, prediction) {
-  const cleanProduct = clean(product);
-  const cleanPrediction = clean(prediction);
 
-  if (cleanProduct === cleanPrediction) {
+function getLegendColor(productValue, value, productUnit, unit) {
+  const cleanProductValue = clean(productValue);
+  const cleanProductUnit = clean(productUnit);
+  const cleanValue = clean(value);
+  const cleanUnit = clean(unit);
+
+  if (cleanProductValue ===
+    cleanValue &&
+    cleanProductUnit ===
+    cleanUnit) {
     return "green";
   }
 
-  if (cleanProduct === "" || cleanPrediction === "") {
+  if (cleanProductValue === "" || cleanProductUnit === "" ||
+    cleanValue === "" ||
+    cleanUnit === "") {
     return "orange";
   }
 
-  if (cleanProduct !== cleanPrediction) {
+  const ratioProduct = getRatio(cleanProductUnit);
+  const ratioInput = getRatio(cleanUnit);
+  if (ratioProduct ===
+    ratioInput) {
     return "red";
   }
+  else {
+    const numberProduct = Number.parseFloat(cleanProductValue.match(/(\.|,|\d)+/)[0])
+    const numberInput = Number.parseFloat(cleanValue.match(/(\.|,|\d)+/)[0])
+    if (ratioProduct * numberProduct === ratioInput * numberInput) {
+      return 'green'
+    }
+    return 'red'
+  }
+  // Should never reach that part.
   return undefined;
 }
 
@@ -100,16 +133,10 @@ export const NutrimentCell = (props: NutrimentCellProps) => {
           >
             <span
               style={{
-                color: getLegendColor(productValue, value),
+                color: getLegendColor(productValue, value, productUnit, unit),
               }}
             >
               {productValue}
-            </span>
-            <span
-              style={{
-                color: getLegendColor(productUnit, unit),
-              }}
-            >
               {productUnit}
             </span>
           </legend>
