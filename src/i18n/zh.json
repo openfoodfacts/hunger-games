@@ -20,12 +20,12 @@
     "account_band": {
       "title": "想让你的贡献有价值吗？在食品产品数据库上创建或登陆一个账户！",
       "log_in": "用戶名",
-      "sign_up": "註冊",
+      "sign_up": "注册",
       "contribution_details": "了解為何您的貢獻很重要"
     },
-    "saved_filters": "已儲存的篩選器",
+    "saved_filters": "已保存的筛选器",
     "contribution_modal": {
-      "title": "您的貢獻很重要",
+      "title": "你的贡献很重要",
       "information": "「飢餓遊戲」是我們運用OCR（光學字符識別）和人工智能的一項成果。當您使用Open Food Facts的「飢餓遊戲」時，您可以幫助我們改善整個資料庫，從而替社區做出更好的飲食選擇。我們將會收集您的註解，並將使用它們，以使Open Food Facts變得更加準確和高效。",
       "thank_you": "感謝您協助我們改進Open Food Facts，讓更多人能夠更輕鬆地使用它。"
     },
@@ -36,7 +36,7 @@
         "description": "已完成版本數"
       },
       "contributorCount": {
-        "title": "貢獻者",
+        "title": "贡献者",
         "description": "新增新商品"
       },
       "photographerCount": {
@@ -52,7 +52,7 @@
   "questions": {
     "category": "分類",
     "categories": "類別",
-    "label": "標籤",
+    "label": "标签",
     "labels": "标签",
     "brand": "品牌",
     "brands": "品牌",
@@ -91,7 +91,7 @@
       "long_label": {
         "type": "問題類型",
         "value": "建議值",
-        "country": "產地",
+        "country": "产地",
         "brand": "產品品牌",
         "popularity": "依熱門程度排序",
         "edit": "",
@@ -114,7 +114,7 @@
     "unflag": "取消图像标记",
     "reset_filters": "重置过滤器",
     "log_in": "用戶名",
-    "sign_up": "註冊",
+    "sign_up": "注册",
     "login_title": "让你的注释有价值",
     "login_description": "目前您没有登录 Open Food Facts。要将您的回答直接应用于产品并关联到您的帐户，请登录您的 Open Food Facts 帐户，或创建一个新账户",
     "please_wait_while_we_fetch_the_question": "我们正在处理问题中，请稍等！"
@@ -316,15 +316,15 @@
   "nutrition": {
     "table_partialy_filled": "Table with already some data",
     "display_off_values": "Display values from OpenFoodFacts",
-    "nutrients": "Nutrients",
+    "nutrients": "营养成分",
     "serving_size": "份量",
     "add_nutrient": "-- add nutrient --",
     "validate_100g": "Validate (100g)",
     "validate_serving": "Validate (serving)",
     "skip": "略過",
-    "invalid_image": "Invalid image",
+    "invalid_image": "无效的图片",
     "pictures": {
-      "picture_date": "Photo uploaded",
+      "picture_date": "图片已上传",
       "selected_as_nutrients": "Selected as nutriment image ✅",
       "not_selected_as_nutrients": "Not selected as nutriment ❌"
     },
@@ -370,7 +370,7 @@
     "description": "This game allows you to validate the pre-selection of images of ingredients lists in various languages for a product, and validate the extracted ingredients.",
     "current_text": "text from off",
     "confidence_score": "language confidence",
-    "revert": "Revert",
+    "revert": "复原",
     "parsing": "Get server understanding",
     "send": "Validate & send",
     "skip": "跳过此产品",
