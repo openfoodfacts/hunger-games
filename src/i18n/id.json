@@ -70,7 +70,7 @@
     "countries": "Negara - negara",
     "view": "Lihat",
     "edit": "Sunting",
-    "remaining": "Remaining: {{count}}",
+    "remaining": "Tersisa: {{count}}",
     "hide_images": "Sembunyikan gambar (memuat lebih cepat)",
     "display_images": "Tampilkan gambar",
     "annotations": "Anotasi",
@@ -248,7 +248,7 @@
     "Open_Food_Facts_wiki": "Wiki Open Food Facts (Inggris)",
     "Translators": "Para penerjemah",
     "Partners": "Para mitra",
-    "Open_Beauty_Facts": "Open Beauty Facts - cosmetics",
+    "Open_Beauty_Facts": "Open Beauty Facts - kosmetik",
     "text2": "Sebuah basis data kolaboratif, bebas, dan terbuka mengenai produk makanan dari seluruh dunia."
   },
   "helper": {
@@ -314,19 +314,19 @@
     "close": "Tutup"
   },
   "nutrition": {
-    "table_partialy_filled": "Table with already some data",
-    "display_off_values": "Display values from OpenFoodFacts",
-    "nutrients": "Nutrients",
+    "table_partialy_filled": "Tabel dengan beberapa data",
+    "display_off_values": "Menampilkan nilai dari OpenFoodFacts",
+    "nutrients": "Nutrisi",
     "serving_size": "Takaran saji",
-    "add_nutrient": "-- add nutrient --",
-    "validate_100g": "Validate (100g)",
-    "validate_serving": "Validate (serving)",
+    "add_nutrient": "-- tambah nutrisi --",
+    "validate_100g": "Validasi (100g)",
+    "validate_serving": "Validasi (penyajian)",
     "skip": "Lewati",
-    "invalid_image": "Invalid image",
+    "invalid_image": "Gambar tidak valid",
     "pictures": {
-      "picture_date": "Photo uploaded",
-      "selected_as_nutrients": "Selected as nutriment image ✅",
-      "not_selected_as_nutrients": "Not selected as nutriment ❌"
+      "picture_date": "Foto terunggah",
+      "selected_as_nutrients": "Dipilih sebagai gambar nutrisi ✅",
+      "not_selected_as_nutrients": "Tidak dipilih sebagai nutrisi ❌"
     },
     "instructions": {
       "open_button": "Open instructions",
