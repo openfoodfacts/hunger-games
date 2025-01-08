@@ -1,5 +1,21 @@
 # Changelog
 
+## [1.1.0](https://github.com/openfoodfacts/hunger-games/compare/v1.0.0...v1.1.0) (2025-01-08)
+
+
+### Features
+
+* Allow to add nutriments ([#1094](https://github.com/openfoodfacts/hunger-games/issues/1094)) ([84c0bba](https://github.com/openfoodfacts/hunger-games/commit/84c0bba259a17f4eddc0f5698c32fdf81e40e5c7))
+
+
+### Bug Fixes
+
+* Avoid duplicated nutriments ([#1104](https://github.com/openfoodfacts/hunger-games/issues/1104)) ([c510487](https://github.com/openfoodfacts/hunger-games/commit/c510487274eba0bea2bb4faca3d3ad176b2adc74))
+* Clean nutriments generation ([#1112](https://github.com/openfoodfacts/hunger-games/issues/1112)) ([9fa6f01](https://github.com/openfoodfacts/hunger-games/commit/9fa6f013211f4d8fc70b77c9426d5f1962be957c))
+* make world an empty country code ([#1100](https://github.com/openfoodfacts/hunger-games/issues/1100)) ([dc9c601](https://github.com/openfoodfacts/hunger-games/commit/dc9c601f0ca20e86a94ec2c1864516e97fe68485))
+* Prevent global country update to go back to home page ([#1113](https://github.com/openfoodfacts/hunger-games/issues/1113)) ([db3b743](https://github.com/openfoodfacts/hunger-games/commit/db3b743d71f6364dbfb094b66f57af9a66bd0f74))
+* use images.openfoodfacts.org to serve images ([#1054](https://github.com/openfoodfacts/hunger-games/issues/1054)) ([440754f](https://github.com/openfoodfacts/hunger-games/commit/440754fb87cf6bab37ac7263a032f8815471edc9))
+
 ## 1.0.0 (2024-09-26)
 
 ### Features
