@@ -66,9 +66,6 @@ function getLegendColor(productValue, value, productUnit, unit) {
     return 'green'
   }
   return 'red'
-
-  // Should never reach that part.
-  return undefined;
 }
 
 export const NutrimentCell = (props: NutrimentCellProps) => {
