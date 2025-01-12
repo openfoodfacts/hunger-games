@@ -70,7 +70,7 @@
     "countries": "Land",
     "view": "Vis",
     "edit": "Rediger ",
-    "remaining": "Remaining: {{count}}",
+    "remaining": "Gjenværende: {{count}}",
     "hide_images": "Skjul bilder (raskere lasting av innhold)",
     "display_images": "Vis bilder",
     "annotations": "Merknader",
@@ -248,7 +248,7 @@
     "Open_Food_Facts_wiki": "Open Food Facts wiki (no)",
     "Translators": "Oversettere",
     "Partners": "Partnere",
-    "Open_Beauty_Facts": "Open Beauty Facts - cosmetics",
+    "Open_Beauty_Facts": "Open Beauty Facts - kosmetikk",
     "text2": "En felles, gratis og åpen database med matvarer fra hele verden."
   },
   "helper": {
@@ -314,24 +314,24 @@
     "close": "Lukk"
   },
   "nutrition": {
-    "table_partialy_filled": "Table with already some data",
-    "display_off_values": "Display values from OpenFoodFacts",
-    "nutrients": "Nutrients",
+    "table_partialy_filled": "Tabell er delvis fylt ut",
+    "display_off_values": "Vis verdier fra OpenFoodFacts",
+    "nutrients": "Næringsstoffer",
     "serving_size": "Porsjonstørrelse",
-    "add_nutrient": "-- add nutrient --",
+    "add_nutrient": "-- Legg til næringsstoff --",
     "validate_100g": "Validate (100g)",
     "validate_serving": "Validate (serving)",
     "skip": "Hopp over",
-    "invalid_image": "Invalid image",
+    "invalid_image": "Ugyldig bilde",
     "pictures": {
-      "picture_date": "Photo uploaded",
-      "selected_as_nutrients": "Selected as nutriment image ✅",
-      "not_selected_as_nutrients": "Not selected as nutriment ❌"
+      "picture_date": "Bilde lastet opp",
+      "selected_as_nutrients": "Valgt som næringsbilde ✅",
+      "not_selected_as_nutrients": "Ikke valgt som næringstoff ❌"
     },
     "instructions": {
-      "open_button": "Open instructions",
-      "title": "How to use the interface",
-      "chose_between_empty_and_partially_filled": "You can chose between products for which OpenFoodFacts (OFF) has no data about the nutrients. Or product with partially filled nutrient table.",
+      "open_button": "Åpne instruksjoner",
+      "title": "Hvordan bruke grensesnittet",
+      "chose_between_empty_and_partially_filled": "Du kan velge mellom produkter hvor OpenFoodFacts (OFF) ikke har data om næringsstoffene. Eller produkter med delvis fylt ut næringsstofftabell.",
       "picture_date_is_display": "The date of the picture is displayed on top of it. Allowing you to check if it's a recent one.",
       "nutriments_from_off_are_displayed": "You can display data that are already present in the OFF database. They will appear under the inputs:",
       "green_for_same": "With <1>green</1> for those matching with the input value.",
