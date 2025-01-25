@@ -56,7 +56,7 @@
     "labels": "Štítky",
     "brand": "značka",
     "brands": "Značky",
-    "packaging": "balení",
+    "packaging": "obal",
     "quantity": "Množství",
     "insightTypeLabel": "Zobrazuje pouze",
     "ingredients": "Složení",
@@ -337,10 +337,10 @@
       "green_for_same": "Se zeleným <1></1> pro ty, které odpovídají vstupní hodnotě.",
       "orange_for_empty": "S <1>oranžovou</1> pro ty s prázdnou vstupní hodnotou.",
       "red_for_different": "S <1>červenou</1> pro ty s jinou vstupní hodnotou.",
-      "indicate_not_provided_value": "Empty inputs are ignored. If fibers are not present in the table, you can put \"-\" to specify the value is not available.",
-      "validate_one_column": "Once you've verified one column, you can validate. It's useless to fill both columns. The data base only save one of them. The second one is computed by using proportionality.",
+      "indicate_not_provided_value": "Prázdné vstupy jsou ignorovány. Pokud nejsou vlákna v tabulce přítomna, můžete zadat \"-\" a určit tak, že hodnota není k dispozici.",
+      "validate_one_column": "Jakmile ověříte jeden sloupec, můžete provést ověření. Je zbytečné vyplňovat oba sloupce. Databáze ukládá pouze jeden z nich. Druhý je vypočítán pomocí proporcionality.",
       "skip_button": "Pokud si s obrázkem nevíte rady, nebo se vám to prostě nechce, stiskněte „přeskočit“. Ostatní uživatelé to zvládnou.",
-      "invalid_image_button": "If the pictures is not a nutritional table, press \"Invalid image\" to remove it from the list of the images to verify",
+      "invalid_image_button": "Pokud obrázky nejsou nutriční tabulkou, stiskněte \"Neplatný obrázek\" pro odstranění ze seznamu obrázků pro ověření",
       "close": "Zavřít"
     }
   },
