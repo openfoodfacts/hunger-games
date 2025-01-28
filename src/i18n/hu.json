@@ -70,8 +70,8 @@
     "countries": "Országok",
     "view": "Megtekintés",
     "edit": "Szerkesztés",
-    "remaining": "Remaining: {{count}}",
-    "remaining_other": "Remaining: >100",
+    "remaining": "Maradt: {{count}}",
+    "remaining_other": "Maradt: > 100",
     "hide_images": "Képek elrejtése (gyorsabb betöltés)",
     "display_images": "Képek megjelenítése",
     "annotations": "Annotációk",
@@ -249,7 +249,7 @@
     "Open_Food_Facts_wiki": "Open Food Facts wiki (en)",
     "Translators": "Fordítók",
     "Partners": "Partnerek",
-    "Open_Beauty_Facts": "Open Beauty Facts - cosmetics",
+    "Open_Beauty_Facts": "Open Beauty Facts – kozmetikumok",
     "text2": "Együttműködésen alapuló, ingyenes és nyílt élelmiszeradatbázis a világ minden tájáról."
   },
   "helper": {
@@ -315,23 +315,23 @@
     "close": "Bezárás"
   },
   "nutrition": {
-    "table_partialy_filled": "Table with already some data",
+    "table_partialy_filled": "Már néhány adatot tartalmazó táblázat",
     "display_off_values": "Display values from OpenFoodFacts",
-    "nutrients": "Nutrients",
+    "nutrients": "Tápanyag",
     "serving_size": "Adag",
-    "add_nutrient": "-- add nutrient --",
+    "add_nutrient": "– tápanyag hozzáadása –",
     "validate_100g": "Validate (100g)",
     "validate_serving": "Validate (serving)",
     "skip": "Kihagyás",
-    "invalid_image": "Invalid image",
+    "invalid_image": "Érvénytelen kép",
     "pictures": {
-      "picture_date": "Photo uploaded",
-      "selected_as_nutrients": "Selected as nutriment image ✅",
-      "not_selected_as_nutrients": "Not selected as nutriment ❌"
+      "picture_date": "Fénykép feltöltve",
+      "selected_as_nutrients": "Kiválasztva tápanyagfotóként ✅",
+      "not_selected_as_nutrients": "Nincs kiválasztva tápanyagfotóként ❌"
     },
     "instructions": {
-      "open_button": "Open instructions",
-      "title": "How to use the interface",
+      "open_button": "Utasítások megnyitása",
+      "title": "Hogyan kell használni a felületet",
       "chose_between_empty_and_partially_filled": "You can chose between products for which OpenFoodFacts (OFF) has no data about the nutrients. Or product with partially filled nutrient table.",
       "picture_date_is_display": "The date of the picture is displayed on top of it. Allowing you to check if it's a recent one.",
       "nutriments_from_off_are_displayed": "You can display data that are already present in the OFF database. They will appear under the inputs:",
@@ -369,7 +369,7 @@
   },
   "ingredients": {
     "description": "Ez a játék lehetővé teszi, hogy érvényesítse egy termék különböző nyelvű összetevőlista képeinek előzetes kiválasztását, és érvényesítse a kinyert összetevőket.",
-    "current_text": "text from off",
+    "current_text": "szöveg az off-ból",
     "confidence_score": "language confidence",
     "revert": "Revert",
     "parsing": "Get server understanding",
