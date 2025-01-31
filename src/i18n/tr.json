@@ -71,7 +71,7 @@
     "view": "Görüntüle",
     "edit": "Düzenle",
     "remaining": "Kalan: {{count}}",
-    "remaining_other": "Remaining: >100",
+    "remaining_other": "Kalan: >100",
     "hide_images": "Resimleri gizle (daha hızlı yükleme)",
     "display_images": "Resimleri görüntüle",
     "annotations": "3. Ek Açıklamalar",
@@ -249,7 +249,7 @@
     "Open_Food_Facts_wiki": "Open Food Facts vikipedia (ing)",
     "Translators": "Çevirmenler",
     "Partners": "Partnerler",
-    "Open_Beauty_Facts": "Open Beauty Facts - cosmetics",
+    "Open_Beauty_Facts": "Açık Güzellik Gerçekleri - kozmetikler",
     "text2": "Dünyanın dört bir yanından katılımcı, özgür ve açık gıda ürünleri veritabanı."
   },
   "helper": {
@@ -315,23 +315,23 @@
     "close": "Kapat"
   },
   "nutrition": {
-    "table_partialy_filled": "Table with already some data",
-    "display_off_values": "Display values from OpenFoodFacts",
-    "nutrients": "Nutrients",
+    "table_partialy_filled": "Zaten bazı veriler içeren tablo",
+    "display_off_values": "OpenFoodFacts'ten değerleri görüntüle",
+    "nutrients": "Besin Maddeleri",
     "serving_size": "Porsiyon ölçüsü",
-    "add_nutrient": "-- add nutrient --",
-    "validate_100g": "Validate (100g)",
-    "validate_serving": "Validate (serving)",
+    "add_nutrient": "-- besin maddesi ekle --",
+    "validate_100g": "Doğrula (100g)",
+    "validate_serving": "Doğrulama (hizmet)",
     "skip": "Atla",
     "invalid_image": "Geçersiz resim",
     "pictures": {
-      "picture_date": "Photo uploaded",
-      "selected_as_nutrients": "Selected as nutriment image ✅",
-      "not_selected_as_nutrients": "Not selected as nutriment ❌"
+      "picture_date": "Fotoğraf yüklendi",
+      "selected_as_nutrients": "Besin görseli olarak seçildi ✅",
+      "not_selected_as_nutrients": "Besin olarak seçilmedi ❌"
     },
     "instructions": {
       "open_button": "Tarifleri aç",
-      "title": "How to use the interface",
+      "title": "Arayüz nasıl kullanılır",
       "chose_between_empty_and_partially_filled": "You can chose between products for which OpenFoodFacts (OFF) has no data about the nutrients. Or product with partially filled nutrient table.",
       "picture_date_is_display": "Fotoğrafların çekilme tarihleri üzerinde yazar, bu şekilde yeni olup olmadığını kontrol edebilirsiniz.",
       "nutriments_from_off_are_displayed": "You can display data that are already present in the OFF database. They will appear under the inputs:",
