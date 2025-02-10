@@ -1,14 +1,14 @@
 {
   "home": {
     "game_selector": {
-      "title": "What game would you like to play?",
+      "title": "তুমি কোন খেলা খেলতে চাও?",
       "cards": {
         "questions": {
-          "title": "Questions",
-          "description": "Tell us if the given image answers the questions"
+          "title": "প্রশ্নসমূহ",
+          "description": "প্রদত্ত ছবিটি প্রশ্নের উত্তর দেয় কিনা তা আমাদের জানাও"
         },
         "logos": {
-          "title": "Logos",
+          "title": "লোগো",
           "description": "Find all the logos matching the given logo"
         },
         "eco_score": {
@@ -123,8 +123,8 @@
   "menu": {
     "title": "Hunger Games",
     "games": "Games",
-    "questions": "Questions",
-    "logos": "Logos",
+    "questions": "প্রশ্নসমূহ",
+    "logos": "লোগো",
     "logos-annotation": "Logos annotation",
     "logos-search": "Logos search",
     "logos-product-search": "Annotation per products",
