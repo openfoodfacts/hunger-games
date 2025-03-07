@@ -70,6 +70,8 @@
     "countries": "Kraje",
     "view": "Zobacz",
     "edit": "Edytuj",
+    "remaining": "Pozostało: {{count}}",
+    "remaining_other": "Pozostało: >100",
     "hide_images": "Ukryj obrazy (szybsze ładowanie)",
     "display_images": "Wyświetlaj obrazki",
     "annotations": "Dodatkowe informacje",
@@ -129,7 +131,7 @@
     "logos-deep-search": "Nieskończona adnotacja",
     "manage": "Zarządzaj",
     "insights": "Spostrzeżenia",
-    "nutritions": "Wartości odżywcze",
+    "nutritions": "Odżywianie",
     "settings": "Ustawienia",
     "eco-score": "Eco-Score",
     "dashboard": "Pulpit logowania",
@@ -247,14 +249,14 @@
     "Open_Food_Facts_wiki": "Open Food Facts wiki (en)",
     "Translators": "Tłumacze",
     "Partners": "Partnerzy",
-    "Open_Beauty_Facts": "Open Beauty Facts - Kosmetyki",
+    "Open_Beauty_Facts": "Open Beauty Facts - kosmetyki",
     "text2": "Wspólna, wolna i otwarta baza produktów spożywczych z całego świata."
   },
   "helper": {
     "welcome": {
       "page1": {
         "title": "Witamy na Igrzyskach Śmierci",
-        "text1": "Hunger Games is a collection of mini-games that help contribute to Open Food Facts in many ways. You can play our really exciting games from anywhere. Here is a guided tour of the entire website which will get you started.",
+        "text1": "Hunger Games to zbiór mini-gier, które pomagają wspierać Open Food Facts na różne sposoby. Możesz grać w nasze naprawdę ekscytujące gry gdziekolwiek. Oto przewodnik po całej stronie, który pomoże ci zacząć.",
         "text2": "Pamiętaj, aby zalogować się na stronie Open Food Facts, aby otrzymać kredyt za swój wkład. Jeśli popełnisz błąd, poświęć trochę czasu, aby go poprawić, przechodząc na stronę internetową.",
         "text3": "W razie jakichkolwiek wątpliwości co do gier, kliknij ikonę znaku zapytania w prawym górnym rogu strony, a skontaktujesz się z nami na Slacku na kanale #hunger-games"
       },
@@ -313,53 +315,34 @@
     "close": "Zamknij"
   },
   "nutrition": {
+    "table_partialy_filled": "Tabela zawierająca już pewne dane",
+    "display_off_values": "Wyświetl wartości z OpenFoodFacts",
+    "nutrients": "Składniki odżywcze",
+    "serving_size": "Wielkość porcji",
+    "add_nutrient": "-- dodaj składnik odżywczy --",
+    "validate_100g": "Zatwierdź (100g)",
+    "validate_serving": "Zatwierdź (porcja)",
+    "skip": "Pomiń",
+    "invalid_image": "Nieprawidłowy obraz",
+    "pictures": {
+      "picture_date": "Zdjęcie przesłane",
+      "selected_as_nutrients": "Wybrano jako zdjęcie składnika odżywczego ✅",
+      "not_selected_as_nutrients": "Nie wybrano jako składnik odżywczy ❌"
+    },
     "instructions": {
-      "cropTheTable": "Przytnij obraz, aby uprościć adnotację",
-      "verifyNutrimentDetected": "Zaznacz, czy wykryty składnik odżywczy jest prawidłowy",
-      "selectMissingNutriments": "Dodaj brakujące składniki odżywcze (możesz kliknąć również jeśli słowo nie ma ramki)",
-      "selectValue": "Wybierz wartość odżywczą: "
-    },
-    "steps": {
-      "1": "Przytnij",
-      "2": "Wartości specjalne",
-      "3": "Wybór składników odżywczych",
-      "4": "Wybór wartości"
-    },
-    "loading": "Ładowanie...",
-    "unknown_brand": "Marka nieznana",
-    "value_missing": "Zapomniałeś wprowadzić wartość.",
-    "next": "Następny krok",
-    "prev": "Poprzedni krok",
-    "skip": "Pomiń ten produkt",
-    "validate": "Zatwierdź tabelę",
-    "unselect_picture": "Brak informacji żywieniowych",
-    "basis": "dane dla: ",
-    "servingSize": "wielkość porcji",
-    "value": "Wartość",
-    "unit": "Jednostka",
-    "nutriments": {
-      "nutriment_energy-kj": "Energia (kJ)",
-      "nutriment_energy-kcal": "Energia (kcal)",
-      "nutriment_fat": "Tłuszcz",
-      "nutriment_saturated-fat": "Tłuszcz nasycony",
-      "nutriment_carbohydrates": "Węglowodany",
-      "nutriment_sugars": "Cukry",
-      "nutriment_proteins": "Zawartość białka",
-      "nutriment_fiber": "Włókna",
-      "nutriment_salt": "Sól",
-      "nutriment_sodium": "Sód"
-    },
-    "history": {
-      "title": "Historia sesji",
-      "status": "status",
-      "product name": "nazwa produktu",
-      "view": "zobacz stronę",
-      "edit": "edytuj stronę",
-      "SKIP": "zignorowane",
-      "VALIDATED": "edytowane",
-      "WRONG_IMAGE": "niezaznaczone zdjęcie",
-      "close": "zamknij",
-      "open": "otwórz historię"
+      "open_button": "Otwórz instrukcje",
+      "title": "Jak korzystać z interfejsu",
+      "chose_between_empty_and_partially_filled": "Możesz wybierać między produktami, dla których OpenFoodFacts (OFF) nie ma danych o składnikach odżywczych. Lub produktami z częściowo wypełnioną tabelą składników odżywczych.",
+      "picture_date_is_display": "Data zdjęcia jest nad nim wyświetlana. Pozwala to sprawdzić, czy to zdjęcie jest nowe.",
+      "nutriments_from_off_are_displayed": "You can display data that are already present in the OFF database. They will appear under the inputs:",
+      "green_for_same": "With <1>green</1> for those matching with the input value.",
+      "orange_for_empty": "With <1>orange</1> for those with empty input value.",
+      "red_for_different": "With <1>red</1> for those with different input value.",
+      "indicate_not_provided_value": "Empty inputs are ignored. If fibers are not present in the table, you can put \"-\" to specify the value is not available.",
+      "validate_one_column": "Once you've verified one column, you can validate. It's useless to fill both columns. The data base only save one of them. The second one is computed by using proportionality.",
+      "skip_button": "If you don't know how to deal with an image, or you just don't want to do it, press \"skip\". Other user will be able to handle it.",
+      "invalid_image_button": "If the pictures is not a nutritional table, press \"Invalid image\" to remove it from the list of the images to verify",
+      "close": "Zamknij"
     }
   },
   "notfound": {

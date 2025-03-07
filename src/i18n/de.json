@@ -70,6 +70,8 @@
     "countries": "Länder",
     "view": "Anzeigen",
     "edit": "Bearbeiten",
+    "remaining": "Verbleibend: {{count}}",
+    "remaining_other": "Verbleibend: >100",
     "hide_images": "Abbildungen ausblenden (für schnelleres Laden)",
     "display_images": "Abbildungen anzeigen",
     "annotations": "Anmerkungen",
@@ -247,7 +249,7 @@
     "Open_Food_Facts_wiki": "Open Food Facts - Wiki (en)",
     "Translators": "Übersetzer",
     "Partners": "Partner",
-    "Open_Beauty_Facts": "Open Beauty Facts - Kosmetik",
+    "Open_Beauty_Facts": "Open Beauty Facts - Kosmetika",
     "text2": "Eine gemeinsame, freie und offene Datenbank von Lebensmittelprodukten aus der ganzen Welt."
   },
   "helper": {
@@ -313,53 +315,34 @@
     "close": "Schließen"
   },
   "nutrition": {
+    "table_partialy_filled": "Tabelle mit bereits vorhandenen Daten",
+    "display_off_values": "Werte aus OpenFoodFacts anzeigen",
+    "nutrients": "Nährstoffe",
+    "serving_size": "Portionsgröße",
+    "add_nutrient": "-- Nährstoff hinzufügen --",
+    "validate_100g": "Bestätigen (100g)",
+    "validate_serving": "Bestätigen (Portion)",
+    "skip": "Überspringen",
+    "invalid_image": "Bild ungültig",
+    "pictures": {
+      "picture_date": "Foto hochgeladen",
+      "selected_as_nutrients": "Als Nährwertbild ausgewählt ✅",
+      "not_selected_as_nutrients": "Nicht als Nährwert ausgewählt ❌"
+    },
     "instructions": {
-      "cropTheTable": "Beschneiden Sie das Foto, um Ihre Anmerkungen zu vereinfachen.",
-      "verifyNutrimentDetected": "Geben Sie an, ob der ermittelte Nährwert korrekt ist",
-      "selectMissingNutriments": "Fügen Sie fehlende Nährstoffe hinzu (Sie können klicken, auch wenn das Wort kein Feld hat)",
-      "selectValue": "Nährwert auswählen von: "
-    },
-    "steps": {
-      "1": "Zuschneiden",
-      "2": "Sonderwerte",
-      "3": "Nährstoffauswahl",
-      "4": "Werteauswahl"
-    },
-    "loading": "Wird geladen …",
-    "unknown_brand": "Unbekannte Marke",
-    "value_missing": "Sie haben vergessen, einen Wert einzugeben.",
-    "next": "Weiter",
-    "prev": "Zurück",
-    "skip": "Dieses Produkt überspringen",
-    "validate": "Tabelle überprüfen",
-    "unselect_picture": "Keine Nährwertangaben",
-    "basis": "Daten zu:",
-    "servingSize": "Portionsgröße",
-    "value": "Wert",
-    "unit": "Einheit",
-    "nutriments": {
-      "nutriment_energy-kj": "Energie (kJ)",
-      "nutriment_energy-kcal": "Energie (kcal)",
-      "nutriment_fat": "Fett",
-      "nutriment_saturated-fat": "Gesättigte Fettsäuren",
-      "nutriment_carbohydrates": "Kohlenhydrate",
-      "nutriment_sugars": "Zucker",
-      "nutriment_proteins": "Proteingehalt",
-      "nutriment_fiber": "Ballaststoffe",
-      "nutriment_salt": "Salz",
-      "nutriment_sodium": "Natrium"
-    },
-    "history": {
-      "title": "Sitzungsverlauf",
-      "status": "Status",
-      "product name": "Produktname",
-      "view": "Seite anzeigen",
-      "edit": "Seite bearbeiten",
-      "SKIP": "Übersprungen",
-      "VALIDATED": "Bearbeitet",
-      "WRONG_IMAGE": "Nicht ausgewähltes Foto",
-      "close": "Schließen",
-      "open": "Verlauf öffnen"
+      "open_button": "Anleitung öffnen",
+      "title": "So verwenden Sie die Schnittstelle",
+      "chose_between_empty_and_partially_filled": "Sie können zwischen Produkten wählen, für die OpenFoodFacts (OFF) keine Daten über die Nährstoffe hat. Oder Produkte mit teilweise gefüllter Nährstofftabelle.",
+      "picture_date_is_display": "Das Datum des Fotos wird oben auf dem Bild angezeigt. So können Sie überprüfen, ob es sich um ein aktuelles Foto handelt.",
+      "nutriments_from_off_are_displayed": "Sie können Daten anzeigen, die bereits in der OFF-Datenbank vorhanden sind. Sie werden unter den Eingängen angezeigt:",
+      "green_for_same": "Mit <1>Grün</1> für diejenigen, die mit dem Eingabewert übereinstimmen.",
+      "orange_for_empty": "Mit <1>Orange</1> für diejenigen mit leerem Eingabewert.",
+      "red_for_different": "Mit <1>Rot</1> für diejenigen mit unterschiedlichem Eingabewert.",
+      "indicate_not_provided_value": "Leere Eingaben werden ignoriert. Wenn keine Ballaststoffe in der Tabelle vorhanden sind, können Sie „-“ eingeben, um anzugeben, dass der Wert nicht verfügbar ist.",
+      "validate_one_column": "Sobald Sie eine Spalte überprüft haben, können Sie sie bestätigen. Es ist unnötig, beide Spalten auszufüllen. Die Datenbank speichert nur eine von ihnen. Die zweite wird mit Hilfe der Proportionalität errechnet.",
+      "skip_button": "Wenn Sie nicht wissen, wie Sie mit einem Bild umgehen sollen, oder wenn Sie es einfach nicht tun wollen, drücken Sie „Überspringen“. Andere Benutzer können das dann vervollständigen.",
+      "invalid_image_button": "Wenn es sich bei dem Bild nicht um eine Nährwerttabelle handelt, drücken Sie auf „Ungültiges Bild“, um es aus der Liste der zu überprüfenden Bilder zu entfernen",
+      "close": "Schließen"
     }
   },
   "notfound": {
