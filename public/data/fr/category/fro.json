@@ -12,16 +12,16 @@
     "name": "Beers from Bremen"
   },
   {
-    "key": "en:beers-from-dortmund",
-    "name": "Beers from Dortmund"
-  },
-  {
-    "key": "fr:biscottes-de-froment",
+    "key": "en:common-wheat-rusks",
     "name": "Biscottes de froment"
   },
   {
     "key": "en:salty-snacks-crackers-garnished-with-cheese",
     "name": "Biscuits apéritifs fourrés au fromage"
+  },
+  {
+    "key": "en:cheese-puff-pastries",
+    "name": "Biscuits Feuilletés auf fromage"
   },
   {
     "key": "fr:box-de-radiatori-au-fromage",
@@ -192,8 +192,16 @@
     "name": "Fromage blanc nature à 0% de matières grasses"
   },
   {
+    "key": "en:plain-fresh-cream-cheese-around-1-fat",
+    "name": "Fromage blanc nature à 1% de matières grasses environ"
+  },
+  {
     "key": "en:plain-fresh-cream-cheese-around-3-fat",
     "name": "Fromage blanc nature à 3% de matières grasses environ"
+  },
+  {
+    "key": "en:plain-fresh-cream-cheese-reduced-fat",
+    "name": "Fromage blanc nature allégé en matières grasses"
   },
   {
     "key": "en:plain-creamy-fresh-cream-cheese-around-8-fat",
@@ -212,7 +220,7 @@
     "name": "Fromage de Beersel"
   },
   {
-    "key": "en:semi-hard-cheeses",
+    "key": "en:semi-hard-cheeses-from-ewe-s-milk",
     "name": "Fromage de brebis à pâte pressée"
   },
   {
@@ -246,10 +254,6 @@
   {
     "key": "en:cheese-from-goat-s-milk-fresh",
     "name": "Fromage de chèvre frais au lait pasteurisé ou cru"
-  },
-  {
-    "key": "en:sainte-maure-goat-cheeses",
-    "name": "Fromage de chèvre lactique affiné (type bûchette crottin Sainte-Maure)"
   },
   {
     "key": "en:cheese-from-goat-s-milk-from-raw-milk",
@@ -348,6 +352,10 @@
     "name": "Fromages"
   },
   {
+    "key": "en:soft-cheeses-with-a-red-rind",
+    "name": "Fromages à croûte rouge"
+  },
+  {
     "key": "en:grilling-cheeses",
     "name": "Fromages à griller"
   },
@@ -366,6 +374,10 @@
   {
     "key": "en:fresh-cheeses",
     "name": "Fromages à pâte fraîche"
+  },
+  {
+    "key": "en:soft-cheeses",
+    "name": "Fromages à pâte molle"
   },
   {
     "key": "en:soft-cheeses-with-bloomy-rind",
@@ -388,7 +400,7 @@
     "name": "Fromages à pâte persillée français"
   },
   {
-    "key": "en:cooked-pressed-cheeses",
+    "key": "en:hard-cheeses",
     "name": "Fromages à pâte pressée cuite"
   },
   {
@@ -452,6 +464,10 @@
     "name": "Fromages blancs"
   },
   {
+    "key": "en:fromages-blancs-petit-suisses-and-skyr",
+    "name": "Fromages blancs - petit suisses et skyr"
+  },
+  {
     "key": "fr:fromages-blancs-aromatises",
     "name": "Fromages blancs aromatisés"
   },
@@ -480,6 +496,10 @@
     "name": "Fromages charolais"
   },
   {
+    "key": "en:cypriot-cheeses",
+    "name": "Fromages chypriotes"
+  },
+  {
     "key": "en:abbaye-cheeses",
     "name": "Fromages d'abbaye"
   },
@@ -498,6 +518,10 @@
   {
     "key": "en:sheep-s-milk-cheeses",
     "name": "Fromages de brebis"
+  },
+  {
+    "key": "en:bulgarian-cheeses",
+    "name": "Fromages de Bulgarie"
   },
   {
     "key": "en:goat-cheeses",
@@ -584,6 +608,10 @@
     "name": "Fromages industriels"
   },
   {
+    "key": "en:irish-cheeses",
+    "name": "Fromages irlandais"
+  },
+  {
     "key": "en:italian-cheeses",
     "name": "Fromages italiens"
   },
@@ -594,6 +622,10 @@
   {
     "key": "en:mexican-cheeses",
     "name": "Fromages mexicains"
+  },
+  {
+    "key": "en:cheeses-from-norway",
+    "name": "Fromages norvégiennes"
   },
   {
     "key": "en:panela-cheeses",
@@ -644,6 +676,10 @@
     "name": "Fromages suédois"
   },
   {
+    "key": "en:frozen-cheeses",
+    "name": "Fromages surgelés"
+  },
+  {
     "key": "fr:fronsac",
     "name": "Fronsac"
   },
@@ -652,8 +688,16 @@
     "name": "Fronton"
   },
   {
+    "key": "en:frozen-baking-mixes",
+    "name": "Frozen baking mixes"
+  },
+  {
     "key": "en:frozen-broad-green-beans",
     "name": "Frozen broad green beans"
+  },
+  {
+    "key": "en:frozen-cereals-and-their-products",
+    "name": "Frozen cereals and their products"
   },
   {
     "key": "en:frozen-chard-leaves",
@@ -680,12 +724,52 @@
     "name": "Frozen chopped green beans"
   },
   {
-    "key": "fr:frozen-ground-beef-meats",
-    "name": "Frozen ground beef meats"
+    "key": "en:frozen-creams",
+    "name": "Frozen creams"
+  },
+  {
+    "key": "en:frozen-dessert-sauces",
+    "name": "Frozen dessert sauces"
+  },
+  {
+    "key": "en:frozen-dough-based-meals-to-prepare",
+    "name": "Frozen dough based meals (to prepare)"
+  },
+  {
+    "key": "en:frozen-grain-based-meal-kits",
+    "name": "Frozen grain based meal kits"
+  },
+  {
+    "key": "en:frozen-grain-based-meals",
+    "name": "Frozen grain based meals"
+  },
+  {
+    "key": "en:frozen-herbs-and-spices",
+    "name": "Frozen Herbs and Spices"
+  },
+  {
+    "key": "en:frozen-mangos",
+    "name": "Frozen mangos"
   },
   {
     "key": "en:frozen-meat-and-vegetable-mixes",
     "name": "Frozen meat and vegetable mixes"
+  },
+  {
+    "key": "en:frozen-prepared-shellfish",
+    "name": "Frozen prepared shellfish"
+  },
+  {
+    "key": "en:frozen-sauces",
+    "name": "Frozen sauces"
+  },
+  {
+    "key": "en:frozen-sweet-pies",
+    "name": "Frozen sweet pies"
+  },
+  {
+    "key": "en:frozen-vegetable-juices",
+    "name": "Frozen vegetable juices"
   },
   {
     "key": "en:frozen-vegetables-for-paella",
@@ -712,6 +796,10 @@
     "name": "Gâteau au fromage blanc"
   },
   {
+    "key": "en:hazelnuts-from-reus",
+    "name": "Hazelnuts from Reus"
+  },
+  {
     "key": "en:herbal-vodka-from-the-north-podlasie-lowland-aromatised-with-an-extract-of-bison-grass",
     "name": "Herbal vodka from the North Podlasie Lowland aromatised with an extract of bison grass"
   },
@@ -724,8 +812,16 @@
     "name": "Lasagnes aux légumes cuits et au fromage de chèvre"
   },
   {
+    "key": "en:mozzarellas-from-gioia-del-colle",
+    "name": "Mozzarellas from Gioia del Colle"
+  },
+  {
     "key": "fr:muscat-de-frontignan",
     "name": "Muscat de Frontignan"
+  },
+  {
+    "key": "en:non-frozen-dough-based-meals-to-prepare",
+    "name": "Non-frozen dough based meals (to prepare)"
   },
   {
     "key": "en:olive-oils-from-hungary",
@@ -772,6 +868,14 @@
     "name": "Pâtes instantanées au fromage"
   },
   {
+    "key": "en:pistachios-from-bronte",
+    "name": "Pistachios from Bronte"
+  },
+  {
+    "key": "en:pistachios-from-raffadali",
+    "name": "Pistachios from Raffadali"
+  },
+  {
     "key": "en:cheese-and-onion-pizza-with-lardoons",
     "name": "Pizza aux lardons oignons et fromage"
   },
@@ -804,8 +908,28 @@
     "name": "Pizzas aux trois fromages"
   },
   {
+    "key": "en:potatoes-from-alto-viterbese",
+    "name": "Potatoes from Alto Viterbese"
+  },
+  {
+    "key": "en:potatoes-from-fucino",
+    "name": "Potatoes from Fucino"
+  },
+  {
+    "key": "en:potatoes-from-sila",
+    "name": "Potatoes from Sila"
+  },
+  {
+    "key": "en:prepared-frozen-fruits",
+    "name": "Prepared frozen fruits"
+  },
+  {
     "key": "en:cheese-ravioli",
     "name": "Ravioli au fromage"
+  },
+  {
+    "key": "en:cheese-ravioli-in-tomato-sauce",
+    "name": "Ravioli au fromage à la sauce tomate"
   },
   {
     "key": "fr:raviolis-frais-au-fromage",
@@ -816,8 +940,8 @@
     "name": "Risotto aux fromages"
   },
   {
-    "key": "en:sainte-maure-de-touraine-goat-cheese",
-    "name": "Sainte-Maure de Touraine (fromage de chèvre)"
+    "key": "en:runner-beans-from-styria",
+    "name": "Runner beans from Styria"
   },
   {
     "key": "en:cheese-samosas",
@@ -924,6 +1048,10 @@
     "name": "Tartes au fromage"
   },
   {
+    "key": "en:vegetarian-vegetable-and-cheese-spreads",
+    "name": "Tartinades végétariennes aux légumes et fromage"
+  },
+  {
     "key": "fr:tortellini-au-fromage",
     "name": "Tortellini au fromage"
   },
@@ -932,28 +1060,16 @@
     "name": "Tortellini aux quatre fromages"
   },
   {
-    "key": "en:wines-from-albania",
-    "name": "Wines from Albania"
+    "key": "en:unprepared-frozen-fruits",
+    "name": "Unprepared frozen fruits"
   },
   {
-    "key": "en:wines-from-algeria",
-    "name": "Wines from Algeria"
+    "key": "en:vegetable-based-frozen-ready-made-meals",
+    "name": "Vegetable based frozen ready-made meals"
   },
   {
-    "key": "en:wines-from-argentina",
-    "name": "Wines from Argentina"
-  },
-  {
-    "key": "en:wines-from-armenia",
-    "name": "Wines from Armenia"
-  },
-  {
-    "key": "en:wines-from-belgium",
-    "name": "Wines from Belgium"
-  },
-  {
-    "key": "en:wines-from-bulgaria",
-    "name": "Wines from Bulgaria"
+    "key": "en:vegetables-from-italy",
+    "name": "Vegetables from Italy"
   },
   {
     "key": "en:wines-from-canada",

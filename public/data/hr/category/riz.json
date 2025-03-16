@@ -1,6 +1,438 @@
 [
   {
+    "key": "en:arborio-rices",
+    "name": "Arborio riža"
+  },
+  {
+    "key": "en:aromatic-rices",
+    "name": "Aromatične riže"
+  },
+  {
+    "key": "en:bahia-rices",
+    "name": "Bahía riže"
+  },
+  {
+    "key": "en:baldo-rices",
+    "name": "Baldo riža"
+  },
+  {
+    "key": "en:basmati-rices",
+    "name": "Basmati riže"
+  },
+  {
+    "key": "en:white-jasmine-rices",
+    "name": "Bijela riža jasmina"
+  },
+  {
+    "key": "en:white-rice-cooked-with-chicken",
+    "name": "Bijela riža kuhana s piletinom"
+  },
+  {
+    "key": "en:white-rice-cooked-with-vegetables-and-meat",
+    "name": "Bijela riža kuhana s povrćem i mesom"
+  },
+  {
+    "key": "en:white-basmati-rices",
+    "name": "Bijele basmati riže"
+  },
+  {
+    "key": "en:white-rices",
+    "name": "Bijele riže"
+  },
+  {
+    "key": "en:white-rice-vinegars",
+    "name": "Bijeli rižin ocat"
+  },
+  {
+    "key": "en:bomba-rices",
+    "name": "Bomba riža"
+  },
+  {
+    "key": "en:camargue-rices",
+    "name": "Camargue riža"
+  },
+  {
+    "key": "en:carnaroli-rices",
+    "name": "Carnaroli riža"
+  },
+  {
+    "key": "en:rice-milk-chocolates",
+    "name": "Čokolade od rižinog mlijeka"
+  },
+  {
+    "key": "en:chocolate-puffed-rice",
+    "name": "Čokoladna lisnata riža"
+  },
+  {
+    "key": "en:chocolate-puffed-rice-not-fortified-with-vitamins-and-chemical-elements",
+    "name": "Čokoladna lisnata riža koja nije obogaćena vitaminima i kemijskim elementima"
+  },
+  {
+    "key": "en:chocolate-puffed-rice-fortified-with-vitamins-and-chemical-elements",
+    "name": "Čokoladna lisnata riža obogaćena vitaminima i kemijskim elementima"
+  },
+  {
+    "key": "en:chocolate-turron-with-puffed-rice",
+    "name": "Čokoladni turrón s lisnatom rižom"
+  },
+  {
+    "key": "en:black-rices",
+    "name": "Crna riža"
+  },
+  {
+    "key": "en:black-rice-vinegars",
+    "name": "Crni rižin ocat"
+  },
+  {
+    "key": "en:red-rices",
+    "name": "Crvene riže"
+  },
+  {
+    "key": "en:red-rice-vinegars",
+    "name": "Crveni rižin ocat"
+  },
+  {
+    "key": "en:cocoa-rice-desserts",
+    "name": "Deserti od kakao riže"
+  },
+  {
+    "key": "en:rice-desserts",
+    "name": "Deserti od riže"
+  },
+  {
+    "key": "en:wild-rice",
+    "name": "Divlja riža"
+  },
+  {
+    "key": "en:puffed-rice",
+    "name": "Ekspandirana riža"
+  },
+  {
+    "key": "en:indica-rices",
+    "name": "Indica riže"
+  },
+  {
+    "key": "en:japanese-rice-vinegars",
+    "name": "Japanski rižin ocat"
+  },
+  {
+    "key": "en:japonica-rices",
+    "name": "Japonica riža"
+  },
+  {
+    "key": "en:jasmine-rice",
+    "name": "Jasmin riža"
+  },
+  {
+    "key": "en:rice-dishes",
+    "name": "Jela od riže"
+  },
+  {
+    "key": "en:puffed-rice-cakes-with-black-chocolate",
+    "name": "Kolačići od lisnate riže s crnom čokoladom"
+  },
+  {
+    "key": "en:puffed-rice-cakes-with-yogurt",
+    "name": "Kolačići od lisnate riže s jogurtom"
+  },
+  {
+    "key": "en:koshihikari-rices",
+    "name": "Koshihikari riža"
+  },
+  {
+    "key": "en:rice-based-creams-for-cooking",
+    "name": "Kreme na bazi riže za kuhanje"
+  },
+  {
+    "key": "en:puffed-rice-cakes-with-white-chocolate",
+    "name": "Lisnate riže s bijelom čokoladom"
+  },
+  {
+    "key": "en:puffed-rice-cakes-with-milk-chocolate",
+    "name": "Lisnate riže s mliječnom čokoladom"
+  },
+  {
+    "key": "en:puffed-wholegrain-rice-cakes",
+    "name": "Lisnati kolačići od cjelovite riže"
+  },
+  {
+    "key": "en:puffed-rice-cakes",
+    "name": "Lisnati kolačići od riže"
+  },
+  {
+    "key": "en:puffed-rice-fortified-with-vitamins-and-chemical-elements",
+    "name": "Lisnatu rižu obogaćenu vitaminima i kemijskim elementima"
+  },
+  {
+    "key": "en:glutinous-rices",
+    "name": "Ljepljiva riža"
+  },
+  {
+    "key": "en:mixed-rices",
+    "name": "Miješane riže"
+  },
+  {
+    "key": "en:paddy-rices",
+    "name": "Neoljuštene riže"
+  },
+  {
+    "key": "en:unsalted-cooked-wild-rice",
+    "name": "Neslana kuhana divlja riža"
+  },
+  {
+    "key": "en:unsalted-cooked-rice",
+    "name": "Neslana kuhana riža"
+  },
+  {
+    "key": "en:plain-rice-based-drinks",
+    "name": "Obična pića na bazi riže"
+  },
+  {
+    "key": "en:originario-rices",
+    "name": "Originario riža"
+  },
+  {
+    "key": "en:wild-rice-flakes",
+    "name": "Pahuljice divlje riže"
+  },
+  {
+    "key": "en:rice-based-drinks",
+    "name": "Pića na bazi riže"
+  },
+  {
+    "key": "en:cocoa-rice-based-drinks",
+    "name": "Pića na bazi riže i kakaa"
+  },
+  {
+    "key": "en:vanilla-rice-based-drinks",
+    "name": "Pića na bazi riže vanilije"
+  },
+  {
+    "key": "en:chicken-risottos",
+    "name": "Pileći rižoti"
+  },
+  {
+    "key": "en:semi-milled-jasmine-rices",
+    "name": "Polumljevene riže jasmina"
+  },
+  {
+    "key": "en:precooked-rices",
+    "name": "Prethodno kuhane riže"
+  },
+  {
+    "key": "en:prepared-rices",
+    "name": "Pripremljene riže"
+  },
+  {
+    "key": "en:parboiled-white-rices",
+    "name": "Prokuhana bijela riža"
+  },
+  {
+    "key": "en:parboiled-rices",
+    "name": "Prokuhane riže"
+  },
+  {
+    "key": "en:fried-rice",
+    "name": "Pržena riža"
+  },
+  {
+    "key": "en:rice-puddings",
+    "name": "Puding od riže"
+  },
+  {
+    "key": "en:vanilla-flavored-rice-pudding",
+    "name": "Puding od riže s okusom vanilije"
+  },
+  {
+    "key": "en:ribe-rices",
+    "name": "Ribana riža"
+  },
+  {
+    "key": "en:rice-in-pots",
+    "name": "Riža u loncima"
+  },
+  {
     "key": "en:rices",
-    "name": "Riža"
+    "name": "Riže"
+  },
+  {
+    "key": "en:balilla-x-sollana-rices",
+    "name": "Riže balilla x sollana"
+  },
+  {
+    "key": "en:long-grain-rices",
+    "name": "Riže dugog zrna"
+  },
+  {
+    "key": "en:short-grain-rices",
+    "name": "Riže kratkog zrna"
+  },
+  {
+    "key": "en:medium-grain-rices",
+    "name": "Riže srednjeg zrna"
+  },
+  {
+    "key": "en:rices-for-paella",
+    "name": "Riže za paellu"
+  },
+  {
+    "key": "en:rices-for-risotto",
+    "name": "Riže za rižoto"
+  },
+  {
+    "key": "en:rice-beans",
+    "name": "Rižin grah"
+  },
+  {
+    "key": "en:rice-semolinas",
+    "name": "Rižin griz"
+  },
+  {
+    "key": "en:rice-vinegars",
+    "name": "Rižin ocat"
+  },
+  {
+    "key": "en:rice-paper",
+    "name": "Rižin papir"
+  },
+  {
+    "key": "en:rice-starch",
+    "name": "Rižin škrob"
+  },
+  {
+    "key": "en:rice-vermicelli",
+    "name": "Rižin vermicelli"
+  },
+  {
+    "key": "en:rice-wine-vinegars",
+    "name": "Rižin vinski ocat"
+  },
+  {
+    "key": "en:rice-chocolates",
+    "name": "Rižine čokolade"
+  },
+  {
+    "key": "en:rice-brans",
+    "name": "Rižine mekinje"
+  },
+  {
+    "key": "en:rice-flakes",
+    "name": "Rižine pahuljice"
+  },
+  {
+    "key": "en:rice-syrups",
+    "name": "Rižini sirupi"
+  },
+  {
+    "key": "en:rice-flours",
+    "name": "Rižino brašno"
+  },
+  {
+    "key": "en:powdered-rice-milks",
+    "name": "Rižino mlijeko u prahu"
+  },
+  {
+    "key": "en:rice-stuffed-tomatoes",
+    "name": "Rižom punjene rajčice"
+  },
+  {
+    "key": "en:turmeric-rhizomes",
+    "name": "Rizomi kurkume"
+  },
+  {
+    "key": "en:risottos",
+    "name": "Rižota"
+  },
+  {
+    "key": "en:vegetable-risottos",
+    "name": "Rižota od povrća"
+  },
+  {
+    "key": "en:mushroom-risottos",
+    "name": "Rižoto od gljiva"
+  },
+  {
+    "key": "en:shrimp-risottos",
+    "name": "Rižoto od kozica"
+  },
+  {
+    "key": "en:salmon-risottos",
+    "name": "Rižoto od lososa"
+  },
+  {
+    "key": "en:risotto-with-cheese",
+    "name": "Rižoto sa sirom"
+  },
+  {
+    "key": "en:roma-rices",
+    "name": "Romske riže"
+  },
+  {
+    "key": "en:rice-salads",
+    "name": "Salate od riže"
+  },
+  {
+    "key": "en:senia-rices",
+    "name": "Sénia riže"
+  },
+  {
+    "key": "en:brown-jasmine-rices",
+    "name": "Smeđa riža od jasmina"
+  },
+  {
+    "key": "en:brown-basmati-rices",
+    "name": "Smeđe basmati riže"
+  },
+  {
+    "key": "en:brown-rices",
+    "name": "Smeđe riže"
+  },
+  {
+    "key": "en:frozen-pre-cooked-rice",
+    "name": "Smrznuta prethodno kuhana riža"
+  },
+  {
+    "key": "en:frozen-rice-with-vegetables",
+    "name": "Smrznuta riža s povrćem"
+  },
+  {
+    "key": "en:surinam-rices",
+    "name": "Surinamske riže"
+  },
+  {
+    "key": "en:dried-rice-noodles",
+    "name": "Sušeni rižini rezanci"
+  },
+  {
+    "key": "en:sushi-rice",
+    "name": "Sushi riža"
+  },
+  {
+    "key": "en:fresh-ginger-rhizomes",
+    "name": "Svježeg rizoma đumbira"
+  },
+  {
+    "key": "en:tahibonet-rices",
+    "name": "Tahibonet riže"
+  },
+  {
+    "key": "en:veal-risottos",
+    "name": "Teleći rižoti"
+  },
+  {
+    "key": "en:rice-pasta",
+    "name": "Tjestenina od riže"
+  },
+  {
+    "key": "en:rice-bran-oils",
+    "name": "Ulja rižinih mekinja"
+  },
+  {
+    "key": "en:vegan-rice-puddings",
+    "name": "Veganski puding od riže"
+  },
+  {
+    "key": "en:vialone-nano-rices",
+    "name": "Vialone nano riža"
   }
 ]

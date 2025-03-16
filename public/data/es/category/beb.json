@@ -8,6 +8,18 @@
     "name": "Bebida de cola light"
   },
   {
+    "key": "en:carbonated-fruit-soft-drink",
+    "name": "Bebida gaseosa de frutas"
+  },
+  {
+    "key": "en:still-soft-drinks",
+    "name": "Bebida gaseosa sin gas"
+  },
+  {
+    "key": "en:still-soft-drink-with-tea-extract",
+    "name": "Bebida gaseosa sin gas con extracto de té"
+  },
+  {
     "key": "en:dairy-drinks",
     "name": "Bebida lácteas"
   },
@@ -18,6 +30,10 @@
   {
     "key": "en:fruit-based-beverages",
     "name": "Bebidas a base de frutas"
+  },
+  {
+    "key": "en:beverages-from-desugared-fruit-juices",
+    "name": "Bebidas a base de jugos de frutas sin azúcar"
   },
   {
     "key": "en:vegetable-based-beverages",
@@ -36,12 +52,44 @@
     "name": "Bebidas alcohólicas"
   },
   {
+    "key": "en:beer-based-alcoholic-beverages",
+    "name": "Bebidas alcohólicas a base de cerveza"
+  },
+  {
+    "key": "en:rum-based-alcoholic-beverages",
+    "name": "Bebidas alcohólicas a base de ron"
+  },
+  {
+    "key": "en:wine-based-alcoholic-beverages",
+    "name": "Bebidas alcohólicas a base de vino"
+  },
+  {
+    "key": "en:vodka-based-alcoholic-beverages",
+    "name": "Bebidas alcohólicas a base de vodka"
+  },
+  {
+    "key": "en:artisanal-spirits",
+    "name": "Bebidas alcohólicas artesanas"
+  },
+  {
+    "key": "en:premixed-alcoholic-beverages",
+    "name": "Bebidas alcohólicas premezcladas"
+  },
+  {
     "key": "en:sweetened-beverages",
     "name": "Bebidas azucaradas"
   },
   {
     "key": "en:carbonated-drinks",
     "name": "Bebidas carbonatadas"
+  },
+  {
+    "key": "en:carbonated-soft-drinks-without-fruit-juice-with-sugar",
+    "name": "Bebidas carbonatadas azucaradas sin jugo de frutas"
+  },
+  {
+    "key": "en:carbonated-soft-drinks-without-fruit-juice",
+    "name": "Bebidas carbonatadas sin jugo de frutas"
   },
   {
     "key": "en:beverages-with-cranberry",
@@ -52,31 +100,39 @@
     "name": "Bebidas con naranja"
   },
   {
-    "key": "en:canary-grass-milks",
+    "key": "en:flavoured-drinks",
+    "name": "Bebidas con sabor"
+  },
+  {
+    "key": "en:aloe-vera-drinks",
+    "name": "Bebidas de aloe vera"
+  },
+  {
+    "key": "en:canary-grass-based-drinks",
     "name": "Bebidas de alpiste"
   },
   {
-    "key": "en:amaranth-milks",
+    "key": "en:amaranth-based-drinks",
     "name": "Bebidas de amaranto"
   },
   {
-    "key": "en:rice-milks",
+    "key": "en:rice-based-drinks",
     "name": "Bebidas de arroz"
   },
   {
-    "key": "en:cocoa-rice-milks",
+    "key": "en:cocoa-rice-based-drinks",
     "name": "Bebidas de arroz con cacao"
   },
   {
-    "key": "en:vanilla-rice-milks",
+    "key": "en:vanilla-rice-based-drinks",
     "name": "Bebidas de arroz con vainilla"
   },
   {
-    "key": "en:natural-rice-milks",
+    "key": "en:plain-rice-based-drinks",
     "name": "Bebidas de arroz naturales"
   },
   {
-    "key": "en:oat-milks",
+    "key": "en:oat-based-drinks",
     "name": "Bebidas de avena"
   },
   {
@@ -84,23 +140,27 @@
     "name": "Bebidas de café"
   },
   {
-    "key": "en:hemp-milks",
+    "key": "en:hemp-based-drinks",
     "name": "Bebidas de cáñamo"
   },
   {
-    "key": "en:barley-milks",
+    "key": "en:barley-based-drinks",
     "name": "Bebidas de cebada"
   },
   {
-    "key": "en:cereal-milks",
+    "key": "en:cereal-based-drinks",
     "name": "Bebidas de cereales"
+  },
+  {
+    "key": "en:coconut-based-drinks",
+    "name": "Bebidas de coco"
   },
   {
     "key": "en:colas",
     "name": "Bebidas de cola"
   },
   {
-    "key": "en:spelt-milks",
+    "key": "en:spelt-based-drinks",
     "name": "Bebidas de espelta"
   },
   {
@@ -112,11 +172,11 @@
     "name": "Bebidas de leche fermentada"
   },
   {
-    "key": "en:maize-milks",
+    "key": "en:maize-based-drinks",
     "name": "Bebidas de maíz"
   },
   {
-    "key": "en:millet-milks",
+    "key": "en:millet-based-drinks",
     "name": "Bebidas de mijo"
   },
   {
@@ -124,35 +184,39 @@
     "name": "Bebidas de origen vegetal"
   },
   {
-    "key": "en:quinoa-milks",
+    "key": "en:quinoa-based-drinks",
     "name": "Bebidas de quinoa"
   },
   {
-    "key": "en:sesame-milks",
+    "key": "en:basil-seeds-drinks",
+    "name": "Bebidas de semillas de albahaca"
+  },
+  {
+    "key": "en:sesame-based-drinks",
     "name": "Bebidas de sésamo"
   },
   {
-    "key": "en:soy-milks",
+    "key": "en:soy-based-drinks",
     "name": "Bebidas de soja"
   },
   {
-    "key": "en:chocolate-soy-milks",
+    "key": "en:chocolate-soy-based-drinks",
     "name": "Bebidas de soja con cacao"
   },
   {
-    "key": "en:coffee-soy-milks",
+    "key": "en:coffee-soy-based-drinks",
     "name": "Bebidas de soja con café"
   },
   {
-    "key": "en:vanilla-soy-milks",
+    "key": "en:vanilla-soy-based-drinks",
     "name": "Bebidas de soja con vainilla"
   },
   {
-    "key": "en:sweetened-natural-soy-milks",
+    "key": "en:sweetened-plain-soy-based-drinks",
     "name": "Bebidas de soja natural endulzadas"
   },
   {
-    "key": "en:unsweetened-natural-soy-milks",
+    "key": "en:unsweetened-plain-soy-based-drinks",
     "name": "Bebidas de soja natural sin azúcar"
   },
   {
@@ -160,20 +224,24 @@
     "name": "Bebidas de té"
   },
   {
-    "key": "en:teff-milks",
+    "key": "en:teff-based-drinks",
     "name": "Bebidas de teff"
   },
   {
-    "key": "en:wheat-milks",
+    "key": "en:wheat-based-drinks",
     "name": "Bebidas de trigo"
   },
   {
-    "key": "en:khorasan-wheat-milks",
+    "key": "en:khorasan-wheat-based-drinks",
     "name": "Bebidas de trigo de Jorasán"
   },
   {
-    "key": "en:buckwheat-milks",
+    "key": "en:buckwheat-based-drinks",
     "name": "Bebidas de trigo sarraceno"
+  },
+  {
+    "key": "en:dietary-drink-for-sport",
+    "name": "Bebidas deportivas"
   },
   {
     "key": "en:dehydrated-beverages",
@@ -190,6 +258,18 @@
   {
     "key": "en:energy-drinks",
     "name": "Bebidas energéticas"
+  },
+  {
+    "key": "de:deutsche-spirituosen",
+    "name": "Bebidas espirituosas alemanas"
+  },
+  {
+    "key": "en:croatian-spirit-drinks",
+    "name": "Bebidas espirituosas croatas"
+  },
+  {
+    "key": "en:portuguese-spirit-drinks",
+    "name": "Bebidas espirituosas portuguesas"
   },
   {
     "key": "en:fermented-drinks",
@@ -220,12 +300,20 @@
     "name": "Bebidas para tomar calientes"
   },
   {
-    "key": "en:plant-milks",
+    "key": "en:plant-based-milk-alternatives",
     "name": "Bebidas vegetales"
   },
   {
     "key": "en:halloween-foods-and-drinks",
     "name": "Bebidas y alimentos de Halloween"
+  },
+  {
+    "key": "en:beverages-and-beverages-preparations",
+    "name": "Bebidas y preparaciones de bebidas"
+  },
+  {
+    "key": "en:instant-cereal-powder-to-be-reconstituted-for-baby-from-6-months",
+    "name": "Cereal en polvo instantáneo para bebés a partir de 6 meses"
   },
   {
     "key": "en:cereals-for-babies",
@@ -238,6 +326,10 @@
   {
     "key": "en:main-meals-for-babies",
     "name": "Comidas para bebés"
+  },
+  {
+    "key": "en:compotes-to-drink",
+    "name": "Compotas para beber"
   },
   {
     "key": "en:biscuits-for-babies",
@@ -256,19 +348,79 @@
     "name": "Leche para bebe"
   },
   {
+    "key": "en:milks-for-premature-babies",
+    "name": "Leches para bebés prematuros"
+  },
+  {
+    "key": "en:non-alcoholic-instant-beverages-variety-packs",
+    "name": "Packs variados de bebidas instantáneas sin alcohol"
+  },
+  {
+    "key": "en:baby-infant-foods-beverages-variety-packs",
+    "name": "Paquetes variados de alimentos para niños/bebés"
+  },
+  {
+    "key": "en:beverage-variety-packs",
+    "name": "Paquetes variados de bebidas"
+  },
+  {
+    "key": "en:alcoholic-beverages-variety-packs",
+    "name": "Paquetes variados de bebidas alcohólicas"
+  },
+  {
+    "key": "en:non-alcoholic-beverages-variety-packs",
+    "name": "Paquetes variados de bebidas sin alcohol"
+  },
+  {
+    "key": "en:vegetable-dish-for-babies-from-12-months-with-starch-and-fish",
+    "name": "Plato de verduras para bebés a partir de los 12 meses con almidón y pescado"
+  },
+  {
+    "key": "en:vegetable-dish-for-babies-from-6-months-with-starch-and-fish",
+    "name": "Plato de verduras para bebés a partir de los 6 meses con almidón y pescado"
+  },
+  {
+    "key": "en:vegetable-dish-for-babies-from-8-months-with-starch-and-fish",
+    "name": "Plato de verduras para bebés a partir de los 8 meses con almidón y pescado"
+  },
+  {
     "key": "en:baby-fruit-desserts",
     "name": "Postres de frutas para bebe"
   },
   {
-    "key": "en:baby-dairy-desserts",
+    "key": "en:dairy-dessert-for-baby",
     "name": "Postres lácteos para bebe"
+  },
+  {
+    "key": "fr:petits-pots-pour-bebe",
+    "name": "Potitos para bebés"
+  },
+  {
+    "key": "en:beverage-preparations",
+    "name": "Preparaciones de bebidas"
+  },
+  {
+    "key": "en:shandy",
+    "name": "Refajo:(bebida)"
   },
   {
     "key": "en:snacks-and-desserts-for-babies",
     "name": "Snacks y postres para bebes"
   },
   {
-    "key": "en:drinkable-yogurts",
+    "key": "en:soup-for-baby-with-vegetables-and-cereals-and-milk",
+    "name": "Sopa para bebé con verduras"
+  },
+  {
+    "key": "en:soup-for-baby-with-vegetables-and-potatoes",
+    "name": "Sopa para bebé con verduras y papas"
+  },
+  {
+    "key": "en:soups-for-babies",
+    "name": "Sopas para bebés"
+  },
+  {
+    "key": "en:yogurt-drinks",
     "name": "Yogures para beber"
   }
 ]

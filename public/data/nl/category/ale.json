@@ -1,7 +1,39 @@
 [
   {
-    "key": "en:india-pale-ale-ipa",
+    "key": "en:ales",
+    "name": "Ales"
+  },
+  {
+    "key": "en:american-style-blonde-ales",
+    "name": "American-style blonde ales"
+  },
+  {
+    "key": "en:american-style-pale-ale-apa",
+    "name": "American-style Pale Ale (APA)"
+  },
+  {
+    "key": "en:belgian-style-blonde-ales",
+    "name": "Belgian-style blonde ales"
+  },
+  {
+    "key": "en:brown-ales",
+    "name": "Brown ales"
+  },
+  {
+    "key": "en:dark-ales",
+    "name": "Dark ales"
+  },
+  {
+    "key": "en:french-style-pale-ale",
+    "name": "French-style pale ale"
+  },
+  {
+    "key": "ca:cervesa-ipa",
     "name": "India Pale Ale (IPA)"
+  },
+  {
+    "key": "en:irish-red-ales",
+    "name": "Irish red ales"
   },
   {
     "key": "en:kentish-ale",
@@ -18,5 +50,17 @@
   {
     "key": "en:olive-oils-from-norte-alentejano",
     "name": "Olijfoliën uit Norte Alentejano"
+  },
+  {
+    "key": "en:pale-ales",
+    "name": "Pale ales"
+  },
+  {
+    "key": "en:red-ales",
+    "name": "Red Ales"
+  },
+  {
+    "key": "en:saison-ales",
+    "name": "Saison ales"
   }
 ]

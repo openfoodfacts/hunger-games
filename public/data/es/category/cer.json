@@ -20,11 +20,11 @@
     "name": "Banana cereal bars"
   },
   {
-    "key": "en:cereal-bar-with-almonds-or-hazelnuts",
-    "name": "Barrita de cereales con almendras o avellanas"
+    "key": "en:cereal-bars-with-almonds",
+    "name": "Barrita de cereales con almendras"
   },
   {
-    "key": "en:cereal-bar-with-hazelnuts",
+    "key": "en:cereal-bars-with-hazelnuts",
     "name": "Barrita de cereales con avellanas"
   },
   {
@@ -36,7 +36,15 @@
     "name": "Barritas de cereales con chocolate"
   },
   {
-    "key": "en:cereal-milks",
+    "key": "en:fruits-cereal-bars",
+    "name": "Barritas de cereales y fruta"
+  },
+  {
+    "key": "en:beer-based-alcoholic-beverages",
+    "name": "Bebidas alcohólicas a base de cerveza"
+  },
+  {
+    "key": "en:cereal-based-drinks",
     "name": "Bebidas de cereales"
   },
   {
@@ -140,8 +148,8 @@
     "name": "Carne de cerdo"
   },
   {
-    "key": "en:cereal-bar-with-almonds",
-    "name": "Cereal bar with almonds"
+    "key": "en:pork-and-its-products",
+    "name": "Carne de cerdo y sus productos"
   },
   {
     "key": "en:cereal-bar-with-chocolate-fortified-with-vitamins-and-minerals",
@@ -152,8 +160,8 @@
     "name": "Cereal bar with fruits fortified with vitamins and minerals"
   },
   {
-    "key": "en:cereal-chocolates",
-    "name": "Cereal chocolates"
+    "key": "en:cereal-bars-with-nuts",
+    "name": "Cereal bars with nuts"
   },
   {
     "key": "en:cereal-clusters-with-chocolate",
@@ -168,6 +176,10 @@
     "name": "Cereal clusters with nuts"
   },
   {
+    "key": "en:instant-cereal-powder-to-be-reconstituted-for-baby-from-6-months",
+    "name": "Cereal en polvo instantáneo para bebés a partir de 6 meses"
+  },
+  {
     "key": "en:cereal-flakes-with-fruits",
     "name": "Cereal flakes with fruits"
   },
@@ -178,6 +190,10 @@
   {
     "key": "en:cereal-pastas",
     "name": "Cereal pastas"
+  },
+  {
+    "key": "en:cereals-with-caramel",
+    "name": "Cereales con caramelo"
   },
   {
     "key": "en:cereals-with-fruits",
@@ -232,10 +248,6 @@
     "name": "Cereals and vegetables patties"
   },
   {
-    "key": "en:cereals-with-caramel",
-    "name": "Cereals with caramel"
-  },
-  {
     "key": "en:cereals-with-nuts",
     "name": "Cereals with nuts"
   },
@@ -276,7 +288,15 @@
     "name": "Cerveza blanca"
   },
   {
-    "key": "en:lagers",
+    "key": "en:industrial-beer",
+    "name": "Cerveza industrial"
+  },
+  {
+    "key": "ca:cervesa-ipa",
+    "name": "Cerveza IPA"
+  },
+  {
+    "key": "en:blonde-ales",
     "name": "Cerveza rubia"
   },
   {
@@ -288,16 +308,52 @@
     "name": "Cervezas aromatizadas"
   },
   {
+    "key": "en:craft-beers",
+    "name": "Cervezas artesanales"
+  },
+  {
     "key": "en:belgian-beers",
     "name": "Cervezas belgas"
+  },
+  {
+    "key": "en:pale-lagers",
+    "name": "Cervezas claras"
+  },
+  {
+    "key": "en:beers-with-chestnut",
+    "name": "Cervezas con castañas"
   },
   {
     "key": "en:beers-from-germany",
     "name": "Cervezas de alemania"
   },
   {
-    "key": "en:cherry-beers",
+    "key": "en:cherry-kriek-beers",
     "name": "Cervezas de cereza"
+  },
+  {
+    "key": "en:christmas-beers",
+    "name": "Cervezas de Navidad"
+  },
+  {
+    "key": "en:oktoberfest-beers",
+    "name": "Cervezas de Oktoberfest"
+  },
+  {
+    "key": "en:beers-with-pear",
+    "name": "Cervezas de pera"
+  },
+  {
+    "key": "en:scottish-beers",
+    "name": "Cervezas escocesas"
+  },
+  {
+    "key": "en:special-beers",
+    "name": "Cervezas especiales"
+  },
+  {
+    "key": "en:finnish-beers",
+    "name": "Cervezas finlandesas"
   },
   {
     "key": "en:french-beers",
@@ -306,6 +362,18 @@
   {
     "key": "en:strong-beers",
     "name": "Cervezas fuertes"
+  },
+  {
+    "key": "en:dutch-beers",
+    "name": "Cervezas holandesas"
+  },
+  {
+    "key": "en:latvian-beers",
+    "name": "Cervezas letonas"
+  },
+  {
+    "key": "en:lithuanian-beers",
+    "name": "Cervezas lituanas"
   },
   {
     "key": "en:black-beers",
@@ -320,8 +388,32 @@
     "name": "Cervezas sin alcohol"
   },
   {
+    "key": "en:unfiltered-beers",
+    "name": "Cervezas sin filtrar"
+  },
+  {
+    "key": "en:beers-without-gluten",
+    "name": "Cervezas sin gluten"
+  },
+  {
+    "key": "en:unpasteurized-beers",
+    "name": "Cervezas sin pasteurizar"
+  },
+  {
+    "key": "en:swedish-beers",
+    "name": "Cervezas suecas"
+  },
+  {
     "key": "en:chocolate-cereal-balls",
     "name": "Chocolate cereal balls"
+  },
+  {
+    "key": "en:chocolate-covered-bars-with-milk-and-cereals",
+    "name": "Chocolate covered bars with milk and cereals"
+  },
+  {
+    "key": "en:cereal-chocolates",
+    "name": "Chocolates de cereales"
   },
   {
     "key": "en:pork-meals",
@@ -334,6 +426,10 @@
   {
     "key": "en:cereal-flakes-with-chocolate",
     "name": "Copos de cereales con chocolate"
+  },
+  {
+    "key": "en:fried-pork-rind",
+    "name": "Cortezas de cerdo"
   },
   {
     "key": "en:pork-ribs",
@@ -424,8 +520,8 @@
     "name": "Fermented milk yogurt with cereals"
   },
   {
-    "key": "en:fruits-cereal-bars",
-    "name": "Fruits cereal bars"
+    "key": "en:frozen-cereals-and-their-products",
+    "name": "Frozen cereals and their products"
   },
   {
     "key": "en:cereal-germs",
@@ -436,6 +532,10 @@
     "name": "Harinas de cereales"
   },
   {
+    "key": "en:hazelnuts-from-cervione",
+    "name": "Hazelnuts from Cervione"
+  },
+  {
     "key": "en:honey-cereal-balls",
     "name": "Honey cereal balls"
   },
@@ -444,8 +544,8 @@
     "name": "Instant cereal powder to be reconstituted for baby from 4/6 months"
   },
   {
-    "key": "en:instant-cereal-powder-to-be-reconstituted-for-baby-from-6-months",
-    "name": "Instant cereal powder to be reconstituted for baby from 6 months"
+    "key": "en:cherry-syrups",
+    "name": "Jarabes de cereza"
   },
   {
     "key": "es:leche-certificada-de-granja",
@@ -456,12 +556,20 @@
     "name": "Leches de cereales en polvo"
   },
   {
+    "key": "en:pork-loin",
+    "name": "Lomo de cerdo"
+  },
+  {
     "key": "es:los-cerrillos",
     "name": "Los Cerrillos"
   },
   {
     "key": "en:low-calorie-cereal-bar",
     "name": "Low calorie cereal bar"
+  },
+  {
+    "key": "en:canned-cooked-lean-pork",
+    "name": "Magro de cerdo cocido en conserva"
   },
   {
     "key": "en:cereal-butters",
@@ -484,10 +592,6 @@
     "name": "Mezclas de copos de cereales"
   },
   {
-    "key": "en:milky-cereal-breakfast-bar-with-chocolate-fortified-with-vitamins-and-minerals",
-    "name": "Milky cereal breakfast bar with chocolate fortified with vitamins and minerals"
-  },
-  {
     "key": "en:milky-cereal-based-beverages",
     "name": "Milky cereal-based beverages"
   },
@@ -500,12 +604,20 @@
     "name": "Nems De Cerdo"
   },
   {
-    "key": "en:nuts-cereal-bars",
-    "name": "Nuts cereal bars"
+    "key": "en:packaged-cereals",
+    "name": "Packaged cereals"
   },
   {
     "key": "en:multigrain-sliced-breads",
     "name": "Panes de molde con cereales"
+  },
+  {
+    "key": "en:cereal-variety-packs",
+    "name": "Paquetes variados de cereales - productos en grano y legumbres"
+  },
+  {
+    "key": "en:pasta-with-pork",
+    "name": "Pasta con cerdo"
   },
   {
     "key": "en:pork-pates",
@@ -518,6 +630,10 @@
   {
     "key": "en:plain-diet-breakfast-cereals-not-fortified",
     "name": "Plain diet breakfast cereals not fortified"
+  },
+  {
+    "key": "en:processed-cereals",
+    "name": "Processed cereals"
   },
   {
     "key": "en:puffed-cereal-milk-chocolates",
@@ -538,10 +654,6 @@
   {
     "key": "en:cereal-syrups",
     "name": "Siropes de cereales"
-  },
-  {
-    "key": "en:soup-for-baby-with-vegetables-and-cereals-and-milk",
-    "name": "Soup for baby with vegetables and cereals and milk"
   },
   {
     "key": "en:spanish-cereals",

@@ -16,6 +16,14 @@
     "name": "Bron van Vitamine B12"
   },
   {
+    "key": "en:vitamin-b2-source",
+    "name": "Bron van Vitamine B2"
+  },
+  {
+    "key": "en:vitamin-b3-source",
+    "name": "Bron van Vitamine B3"
+  },
+  {
     "key": "en:vitamin-b6-source",
     "name": "Bron van Vitamine B6"
   },
@@ -44,6 +52,10 @@
     "name": "Duurzame visserij"
   },
   {
+    "key": "en:naturally-rich-in-vitamin-e",
+    "name": "Naturally rich in vitamin E"
+  },
+  {
     "key": "en:pdo-vinagre-de-jerez",
     "name": "PDO Vinagre de Jerez"
   },
@@ -54,6 +66,14 @@
   {
     "key": "en:rich-in-vitamin-b",
     "name": "Rich in vitamin B"
+  },
+  {
+    "key": "en:rich-in-vitamin-b2",
+    "name": "Rich in vitamin B2"
+  },
+  {
+    "key": "en:rich-in-vitamin-b3",
+    "name": "Rich in vitamin B3"
   },
   {
     "key": "en:rich-in-vitamin-b6",
@@ -84,7 +104,7 @@
     "name": "Rijk aan vitamine E"
   },
   {
-    "key": "en:enriched-wih-vitamins",
+    "key": "en:enriched-with-vitamins",
     "name": "Verrijkt met vitaminen"
   },
   {
@@ -98,5 +118,9 @@
   {
     "key": "en:vino-de-pago",
     "name": "Vino de Pago"
+  },
+  {
+    "key": "en:fishing-method",
+    "name": "Vismethode"
   }
 ]

@@ -24,6 +24,10 @@
     "name": "Barbecue sauces"
   },
   {
+    "key": "en:barbunya",
+    "name": "Barbunya"
+  },
+  {
     "key": "en:barese-bolognaise",
     "name": "Barese bolognaise"
   },
@@ -48,28 +52,52 @@
     "name": "Barley malt syrup"
   },
   {
-    "key": "en:barley-milks",
-    "name": "Barley milks"
+    "key": "en:barley-pasta",
+    "name": "Barley pasta"
   },
   {
-    "key": "en:barley-pasta",
-    "name": "Barley Pasta"
+    "key": "en:barley-based-drinks",
+    "name": "Barley-based drinks"
   },
   {
     "key": "en:barn-chicken-eggs",
     "name": "Barn chicken eggs"
   },
   {
+    "key": "en:barnyard-millet",
+    "name": "Barnyard millet"
+  },
+  {
     "key": "en:bars",
     "name": "Bars"
   },
   {
-    "key": "en:bars-covered-with-chocolate",
-    "name": "Bars covered with chocolate"
-  },
-  {
     "key": "en:biscuit-with-a-chocolate-bar-covering",
     "name": "Biscuit with a chocolate bar covering"
+  },
+  {
+    "key": "en:biscuit-with-a-dark-chocolate-bar-covering",
+    "name": "Biscuit with a dark chocolate bar covering"
+  },
+  {
+    "key": "en:biscuit-with-a-filled-chocolate-bar-covering",
+    "name": "Biscuit with a filled chocolate bar covering"
+  },
+  {
+    "key": "en:biscuit-with-a-milk-chocolate-bar-covering",
+    "name": "Biscuit with a milk chocolate bar covering"
+  },
+  {
+    "key": "en:biscuit-with-a-white-chocolate-bar-covering",
+    "name": "Biscuit with a white chocolate bar covering"
+  },
+  {
+    "key": "en:candy-chocolate-bars",
+    "name": "Candy chocolate bars"
+  },
+  {
+    "key": "en:canned-barbunya",
+    "name": "Canned Barbunya"
   },
   {
     "key": "en:caramel-chocolate-bars",
@@ -84,14 +112,6 @@
     "name": "Cashew nut bars"
   },
   {
-    "key": "en:cereal-bar-with-almonds",
-    "name": "Cereal bar with almonds"
-  },
-  {
-    "key": "en:cereal-bar-with-almonds-or-hazelnuts",
-    "name": "Cereal bar with almonds or hazelnuts"
-  },
-  {
     "key": "en:cereal-bar-with-chocolate-fortified-with-vitamins-and-minerals",
     "name": "Cereal bar with chocolate fortified with vitamins and minerals"
   },
@@ -100,12 +120,20 @@
     "name": "Cereal bar with fruits fortified with vitamins and minerals"
   },
   {
-    "key": "en:cereal-bar-with-hazelnuts",
-    "name": "Cereal bar with hazelnuts"
-  },
-  {
     "key": "en:cereal-bars",
     "name": "Cereal bars"
+  },
+  {
+    "key": "en:cereal-bars-with-almonds",
+    "name": "Cereal bars with almonds"
+  },
+  {
+    "key": "en:cereal-bars-with-hazelnuts",
+    "name": "Cereal bars with hazelnuts"
+  },
+  {
+    "key": "en:cereal-bars-with-nuts",
+    "name": "Cereal bars with nuts"
   },
   {
     "key": "en:chocolate-bar-with-dried-fruits",
@@ -120,8 +148,8 @@
     "name": "Chocolate cereal bars"
   },
   {
-    "key": "en:chocolate-ice-cream-bars",
-    "name": "Chocolate ice cream bars"
+    "key": "en:chocolate-covered-bars-with-milk-and-cereals",
+    "name": "Chocolate covered bars with milk and cereals"
   },
   {
     "key": "en:chocolate-nuts-cookie-bars",
@@ -176,12 +204,36 @@
     "name": "Energy bars"
   },
   {
+    "key": "en:frozen-bars",
+    "name": "Frozen bars"
+  },
+  {
     "key": "en:fruits-cereal-bars",
     "name": "Fruits cereal bars"
   },
   {
+    "key": "en:ice-cream-bar-variety-packs",
+    "name": "Ice cream bar variety packs"
+  },
+  {
     "key": "en:ice-cream-bars",
     "name": "Ice cream bars"
+  },
+  {
+    "key": "en:ice-cream-bars-coated-with-chocolate",
+    "name": "Ice cream bars coated with chocolate"
+  },
+  {
+    "key": "en:ice-cream-bars-coated-with-fat-reduced-cocoa",
+    "name": "Ice cream bars coated with fat-reduced cocoa"
+  },
+  {
+    "key": "en:ice-cream-bars-coated-with-fruit-sorbet",
+    "name": "Ice cream bars coated with fruit sorbet"
+  },
+  {
+    "key": "en:ice-cream-candy-chocolate-bars",
+    "name": "Ice cream candy chocolate bars"
   },
   {
     "key": "en:instant-mix-of-barley-and-coffee-powder",
@@ -204,16 +256,8 @@
     "name": "Milk chocolate bar without sugar with sweeteners"
   },
   {
-    "key": "en:milky-cereal-breakfast-bar-with-chocolate-fortified-with-vitamins-and-minerals",
-    "name": "Milky cereal breakfast bar with chocolate fortified with vitamins and minerals"
-  },
-  {
     "key": "en:nut-bars",
     "name": "Nut bars"
-  },
-  {
-    "key": "en:nuts-cereal-bars",
-    "name": "Nuts cereal bars"
   },
   {
     "key": "en:olive-oils-from-terra-di-bari",
@@ -260,8 +304,24 @@
     "name": "Unsalted boiled pearled barley"
   },
   {
-    "key": "en:vanilla-ice-cream-bars",
-    "name": "Vanilla ice cream bars"
+    "key": "en:vanilla-ice-cream-bars-coated-with-dark-chocolate",
+    "name": "Vanilla ice cream bars coated with dark chocolate"
+  },
+  {
+    "key": "en:vanilla-ice-cream-bars-coated-with-milk-chocolate",
+    "name": "Vanilla ice cream bars coated with milk chocolate"
+  },
+  {
+    "key": "en:vanilla-ice-cream-bars-coated-with-milk-chocolate-and-almonds",
+    "name": "Vanilla ice cream bars coated with milk chocolate and almonds"
+  },
+  {
+    "key": "en:vanilla-ice-cream-bars-coated-with-white-chocolate",
+    "name": "Vanilla ice cream bars coated with white chocolate"
+  },
+  {
+    "key": "en:vanilla-ice-cream-bars-coated-with-white-chocolate-and-almonds",
+    "name": "Vanilla ice cream bars coated with white chocolate and almonds"
   },
   {
     "key": "fr:chocolat-blanc-en-tablette-aux-amandes",
@@ -276,7 +336,7 @@
     "name": "White chocolate bar with nuts"
   },
   {
-    "key": "fr:chocolat-blanc-en-tablette-aux-praline",
+    "key": "en:white-chocolate-bar-with-praline",
     "name": "White chocolate bar with praline"
   },
   {

@@ -1,13 +1,5 @@
 [
   {
-    "key": "en:beers-without-gluten",
-    "name": "Beers without gluten"
-  },
-  {
-    "key": "en:cooked-globe-artichoke",
-    "name": "Cooked globe artichoke"
-  },
-  {
     "key": "en:cooked-unsalted-gluten-free-dry-pasta",
     "name": "Cooked unsalted gluten-free dry pasta"
   },
@@ -44,6 +36,10 @@
     "name": "Glucose"
   },
   {
+    "key": "en:glutamate",
+    "name": "Glutamate"
+  },
+  {
     "key": "en:glutamine",
     "name": "Glutamine"
   },
@@ -52,24 +48,12 @@
     "name": "Gluten-free dry pasta"
   },
   {
-    "key": "en:gluten-free-penne",
-    "name": "Gluten-free penne"
-  },
-  {
-    "key": "en:gluten-free-penne-rigate",
-    "name": "Gluten-free penne rigate"
-  },
-  {
-    "key": "en:gluten-free-spaghetti",
-    "name": "Gluten-free Spaghetti"
-  },
-  {
-    "key": "en:gluten-free-tagliatelles",
-    "name": "Gluten-free tagliatelles"
-  },
-  {
     "key": "en:gluten-flours",
     "name": "Glutenmelen"
+  },
+  {
+    "key": "en:beers-without-gluten",
+    "name": "Glutenvrije bieren"
   },
   {
     "key": "en:gluten-free-breads",
@@ -88,12 +72,32 @@
     "name": "Glutenvrije koekjes"
   },
   {
+    "key": "fr:coquillettes-sans-gluten",
+    "name": "Glutenvrije macaroni"
+  },
+  {
     "key": "en:gluten-free-pasta",
     "name": "Glutenvrije pastas"
   },
   {
+    "key": "en:gluten-free-penne",
+    "name": "Glutenvrije penne"
+  },
+  {
+    "key": "en:gluten-free-penne-rigate",
+    "name": "Glutenvrije penne rigate"
+  },
+  {
     "key": "en:products-without-gluten",
     "name": "Glutenvrije producten"
+  },
+  {
+    "key": "en:gluten-free-spaghetti",
+    "name": "Glutenvrije spaghetti"
+  },
+  {
+    "key": "en:gluten-free-tagliatelles",
+    "name": "Glutenvrije tagliatelle"
   },
   {
     "key": "en:glyko-triantafyllo-agrou",

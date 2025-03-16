@@ -60,6 +60,10 @@
     "name": "Chicken eviscerated without offal raw"
   },
   {
+    "key": "en:chicken-offals",
+    "name": "Chicken offals"
+  },
+  {
     "key": "en:confectioneries-of-nord-pas-de-calais",
     "name": "Confectioneries of Nord-Pas-de-Calais"
   },
@@ -84,6 +88,14 @@
     "name": "Emmentals of Savoy"
   },
   {
+    "key": "en:frozen-offals-soup",
+    "name": "Frozen offals Soup"
+  },
+  {
+    "key": "en:frozen-veal-offals",
+    "name": "Frozen veal offals"
+  },
+  {
     "key": "en:gnocchi-of-durum-wheat-semolina",
     "name": "Gnocchi of durum wheat semolina"
   },
@@ -104,8 +116,8 @@
     "name": "Goblet of peach Melba ice cream"
   },
   {
-    "key": "en:greek-style-yogurt-on-a-bed-of-fruits",
-    "name": "Greek-style yogurt on a bed of fruits"
+    "key": "en:greek-style-yogurts-on-a-bed-of-fruits",
+    "name": "Greek-style yogurts on a bed of fruits"
   },
   {
     "key": "en:hams-of-san-daniele",
@@ -172,12 +184,20 @@
     "name": "Mix of grains and raisins"
   },
   {
+    "key": "en:mix-of-olive-oil-and-seeds-oil",
+    "name": "Mix of olive oil and seeds oil"
+  },
+  {
     "key": "en:mix-of-salted-grains-and-raisins",
     "name": "Mix of salted grains and raisins"
   },
   {
     "key": "en:offals",
     "name": "Offals"
+  },
+  {
+    "key": "en:offals-soup",
+    "name": "Offals Soup"
   },
   {
     "key": "en:ouzo-of-kalamata",
@@ -292,14 +312,6 @@
     "name": "Salad dressing with reduced fat and 25-50% of oil"
   },
   {
-    "key": "en:shandy-with-less-than-1-of-alcohol",
-    "name": "Shandy with less than 1° of alcohol"
-  },
-  {
-    "key": "en:soups-of-lentils",
-    "name": "Soups of lentils"
-  },
-  {
     "key": "en:still-fruit-soft-drink-with-less-than-10-of-fruit-juice-without-sugar-and-with-artificial-sweeteners",
     "name": "Still fruit soft drink with less than 10% of fruit juice without sugar and with artificial sweeteners"
   },
@@ -338,5 +350,9 @@
   {
     "key": "en:vale-of-evesham-asparagus",
     "name": "Vale of Evesham Asparagus"
+  },
+  {
+    "key": "en:veal-offals",
+    "name": "Veal offals"
   }
 ]

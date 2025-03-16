@@ -40,12 +40,20 @@
     "name": "Chianti"
   },
   {
+    "key": "en:chicken-hotpot",
+    "name": "Chicken hotpot"
+  },
+  {
+    "key": "en:chicken-kievs-substitutes",
+    "name": "Chicken kievs substitutes"
+  },
+  {
     "key": "en:chicken-salads",
     "name": "Chicken salads"
   },
   {
-    "key": "en:chicken-tikka",
-    "name": "Chicken Tikka"
+    "key": "en:chicken-seasoning",
+    "name": "Chicken seasoning"
   },
   {
     "key": "en:instant-mix-of-chicory-and-coffee-powder",
@@ -60,8 +68,16 @@
     "name": "Chicorée frisée"
   },
   {
+    "key": "en:instant-chicory-with-water",
+    "name": "Chicorée instantanée avec de l'eau"
+  },
+  {
     "key": "en:sugar-free-ready-to-drink-instant-chicory-with-artificial-sweeteners-reconstituted-with-standard-semi-skimmed-milk",
     "name": "Chicorée instantanée non sucrée prête à boire reconstituée avec du lait demi-écrémé standard"
+  },
+  {
+    "key": "en:liquid-chicory",
+    "name": "Chicorée liquide"
   },
   {
     "key": "en:red-endives",
@@ -114,6 +130,10 @@
   {
     "key": "fr:chinon",
     "name": "Chinon"
+  },
+  {
+    "key": "en:chinotto",
+    "name": "Chinotto"
   },
   {
     "key": "en:chipolatas",
@@ -188,15 +208,27 @@
     "name": "Chips cocktail de crevettes"
   },
   {
+    "key": "en:banana-crisps",
+    "name": "Chips de banane"
+  },
+  {
+    "key": "en:lentil-crisps",
+    "name": "Chips de lentilles"
+  },
+  {
     "key": "en:corn-chips",
     "name": "Chips de maïs"
+  },
+  {
+    "key": "en:flavoured-corn-crisps",
+    "name": "Chips de maïs aromatisées"
   },
   {
     "key": "en:cassava-crisps",
     "name": "Chips de manioc"
   },
   {
-    "key": "fr:chips-de-manioc-a-la-crevette",
+    "key": "en:prawn-crackers",
     "name": "Chips de manioc à la crevette"
   },
   {
@@ -288,20 +320,16 @@
     "name": "Chiroubles"
   },
   {
-    "key": "en:chinese-cabbage",
-    "name": "Chou chinois"
-  },
-  {
     "key": "en:cooked-chinese-cabbage",
     "name": "Chou chinois cuit"
   },
   {
-    "key": "en:coronation-chicken",
-    "name": "Coronation chicken"
+    "key": "en:chinese-cabbage",
+    "name": "Choux chinois"
   },
   {
-    "key": "en:dry-dog-food",
-    "name": "Croquettes pour chien"
+    "key": "en:coronation-chicken",
+    "name": "Coronation chicken"
   },
   {
     "key": "en:chia-puddings",
@@ -320,8 +348,8 @@
     "name": "Farines de pois chiche"
   },
   {
-    "key": "en:fried-chicken-wraps",
-    "name": "Fried chicken wraps"
+    "key": "en:fish-and-chips",
+    "name": "Fish and Chips"
   },
   {
     "key": "en:fuentesauco-chickpeas",
@@ -330,10 +358,6 @@
   {
     "key": "en:olive-oils-from-chianti-classico",
     "name": "Huiles d'olive de Chianti Classico"
-  },
-  {
-    "key": "en:instant-chicory-with-water",
-    "name": "Instant chicory with water"
   },
   {
     "key": "en:jerk-chicken-wraps",
@@ -364,16 +388,16 @@
     "name": "Nouilles chinoises aux oeufs"
   },
   {
-    "key": "en:dog-food",
-    "name": "Nourriture pour chiens"
-  },
-  {
-    "key": "en:wet-dog-food",
-    "name": "Pâtées pour chien"
-  },
-  {
     "key": "en:chickpea-pasta",
     "name": "Pâtes de pois chiche"
+  },
+  {
+    "key": "en:fresh-chickpea-pasta",
+    "name": "Pâtes de pois chiche fraîches"
+  },
+  {
+    "key": "en:dry-chickpea-pasta",
+    "name": "Pâtes de pois chiche sèches"
   },
   {
     "key": "en:pedrosillano-chickpeas",
@@ -404,7 +428,7 @@
     "name": "Pois chiches en conserve"
   },
   {
-    "key": "en:chocolate-covered-chickpeas",
+    "key": "en:chocolate-coated-chickpeas",
     "name": "Pois chiches enrobés de chocolat"
   },
   {

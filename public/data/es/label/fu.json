@@ -20,11 +20,15 @@
     "name": "Fuente de fósforo"
   },
   {
-    "key": "en:source-of-iron",
+    "key": "en:iron-source",
     "name": "Fuente de hierro"
   },
   {
-    "key": "en:high-proteins",
+    "key": "en:magnesium-source",
+    "name": "Fuente de magnesio"
+  },
+  {
+    "key": "en:source-of-proteins",
     "name": "Fuente de proteínas"
   },
   {
@@ -42,6 +46,14 @@
   {
     "key": "en:vitamin-b12-source",
     "name": "Fuente de vitamina B12"
+  },
+  {
+    "key": "en:vitamin-b2-source",
+    "name": "Fuente de vitamina B2"
+  },
+  {
+    "key": "en:vitamin-b3-source",
+    "name": "Fuente de vitamina B3"
   },
   {
     "key": "en:vitamin-b6-source",
@@ -66,5 +78,9 @@
   {
     "key": "en:pgi-garbanzo-de-fuentesauco",
     "name": "IGP Garbanzo de Fuentesaúco"
+  },
+  {
+    "key": "en:isomaltulose-is-a-source-of-glucose-and-fructose",
+    "name": "La isomaltulosa es una fuente de glucosa y fructosa"
   }
 ]

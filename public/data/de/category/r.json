@@ -1,23 +1,27 @@
 [
   {
     "key": "en:10-red-wine",
-    "name": "10% red wine"
-  },
-  {
-    "key": "en:11-red-wine",
-    "name": "11% red wine"
+    "name": "10% Rotwein"
   },
   {
     "key": "en:11-rose-wine",
     "name": "11% rosé wine"
   },
   {
+    "key": "en:11-red-wine",
+    "name": "11% Rotwein"
+  },
+  {
     "key": "en:12-red-wine",
-    "name": "12% red wine"
+    "name": "12% Rotwein"
   },
   {
     "key": "en:13-red-wine",
-    "name": "13% red wine"
+    "name": "13% Rotwein"
+  },
+  {
+    "key": "en:almonds-roasted-and-unsalted",
+    "name": "Almonds(roasted and unsalted)"
   },
   {
     "key": "fr:alsace-grand-cru-rosacker",
@@ -34,9 +38,5 @@
   {
     "key": "en:anti-reflux-milk",
     "name": "Anti-reflux milk"
-  },
-  {
-    "key": "en:arborio-rices",
-    "name": "Arborio Reis"
   }
 ]

@@ -1,14 +1,34 @@
 [
   {
+    "key": "en:10-red-wine",
+    "name": "10% Rotwein"
+  },
+  {
+    "key": "en:11-red-wine",
+    "name": "11% Rotwein"
+  },
+  {
+    "key": "en:12-red-wine",
+    "name": "12% Rotwein"
+  },
+  {
+    "key": "en:13-red-wine",
+    "name": "13% Rotwein"
+  },
+  {
+    "key": "en:organic-red-wines",
+    "name": "Bio-Rotweine"
+  },
+  {
     "key": "en:red-delicious-apples",
     "name": "Delikate rote Äpfel"
   },
   {
-    "key": "en:pickled-beets",
+    "key": "en:beetroot-pickled",
     "name": "Eingelegte rote Bete"
   },
   {
-    "key": "fr:glaces-aux-fruits-rouges",
+    "key": "en:berries-ice-cream-tubs",
     "name": "Eiskrem mit roten Früchten"
   },
   {
@@ -32,7 +52,7 @@
     "name": "Marmeladen aus roten Früchten"
   },
   {
-    "key": "en:red-beers",
+    "key": "en:red-ales",
     "name": "Rotbier"
   },
   {
@@ -40,7 +60,7 @@
     "name": "Rotbusch"
   },
   {
-    "key": "en:beet",
+    "key": "en:beetroot",
     "name": "Rote Bete"
   },
   {
@@ -88,11 +108,19 @@
     "name": "Rote Portweine"
   },
   {
+    "key": "en:red-rice-vinegars",
+    "name": "Rote Reisessige"
+  },
+  {
     "key": "en:black-grapes",
     "name": "Rote Weintrauben"
   },
   {
-    "key": "en:canned-beet",
+    "key": "en:red-onions",
+    "name": "Rote Zwiebeln"
+  },
+  {
+    "key": "en:canned-beetroot",
     "name": "Rote-Bete-Konserven"
   },
   {
@@ -116,6 +144,14 @@
     "name": "Rotweinessige"
   },
   {
+    "key": "en:red-grape-juices",
+    "name": "Rotweinsäfte"
+  },
+  {
+    "key": "en:red-wine-sauces",
+    "name": "Rotweinsaucen"
+  },
+  {
     "key": "de:thüringer-rotwurst",
     "name": "Thüringer Rotwurst"
   },
@@ -124,7 +160,7 @@
     "name": "Uhlen Roth Lay"
   },
   {
-    "key": "en:uncooked-beetroots",
+    "key": "en:raw-beetroot",
     "name": "Ungekochte rote Beete"
   }
 ]

@@ -12,7 +12,7 @@
     "name": "Beignets de volaille"
   },
   {
-    "key": "en:cooked-poultry-breast-slices",
+    "key": "en:poultry-hams",
     "name": "Blancs de volaille en tranches"
   },
   {
@@ -44,7 +44,7 @@
     "name": "Confit de foie de volaille"
   },
   {
-    "key": "fr:cordons-bleus-de-volaille",
+    "key": "en:poultry-cordons-bleus",
     "name": "Cordons bleus de volaille"
   },
   {
@@ -56,12 +56,8 @@
     "name": "Fond de volaille déshydraté"
   },
   {
-    "key": "en:poultry-minced-meat",
+    "key": "en:poultry-minced-preparations",
     "name": "Haché de volaille"
-  },
-  {
-    "key": "en:poultry-hams",
-    "name": "Jambons de volaille"
   },
   {
     "key": "en:poultry-lardons",
@@ -78,6 +74,10 @@
   {
     "key": "en:poultry-nuggets",
     "name": "Nuggets de volaille"
+  },
+  {
+    "key": "en:cooked-poultry-nuggets",
+    "name": "Nuggets de volaille cuits"
   },
   {
     "key": "en:poultry-liver-pates",
@@ -314,6 +314,10 @@
   {
     "key": "fr:volailles-du-velay",
     "name": "Volailles du Velay"
+  },
+  {
+    "key": "en:canned-poultries",
+    "name": "Volailles en conserve"
   },
   {
     "key": "en:frozen-poultry",

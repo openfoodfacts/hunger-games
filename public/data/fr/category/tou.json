@@ -12,6 +12,10 @@
     "name": "Beaune premier cru Les Toussaints rouge"
   },
   {
+    "key": "en:dry-butter",
+    "name": "Beurre de tourage"
+  },
+  {
     "key": "fr:bourgogne-passe-tout-grains",
     "name": "Bourgogne passe-tout-grains"
   },
@@ -80,6 +84,10 @@
     "name": "Lapin à la tournaisienne"
   },
   {
+    "key": "en:sunflower-lecithin",
+    "name": "Lécithine de tournesol"
+  },
+  {
     "key": "en:60-unsalted-vegetable-fat-with-sunflowerseed",
     "name": "Matière grasse végétale allégée à 60% doux au tournesol"
   },
@@ -126,10 +134,6 @@
   {
     "key": "en:sainte-maure-de-touraine",
     "name": "Sainte-Maure de Touraine"
-  },
-  {
-    "key": "en:sainte-maure-de-touraine-goat-cheese",
-    "name": "Sainte-Maure de Touraine (fromage de chèvre)"
   },
   {
     "key": "en:sardines-in-sunflower-oil",
@@ -188,7 +192,7 @@
     "name": "Tourons aux amandes"
   },
   {
-    "key": "en:peanuts-turron",
+    "key": "en:peanut-turron",
     "name": "Tourons aux cacahuètes"
   },
   {
@@ -212,12 +216,16 @@
     "name": "Tourte au porc et riesling"
   },
   {
-    "key": "en:two-crust-pies",
+    "key": "en:double-crust-pies",
     "name": "Tourtes"
   },
   {
     "key": "en:meat-pies",
     "name": "Tourtes à la viande"
+  },
+  {
+    "key": "en:beef-pies",
+    "name": "Tourtes au bœuf"
   },
   {
     "key": "en:chicken-and-mushroom-pies",
@@ -226,5 +234,9 @@
   {
     "key": "en:mushroom-pies",
     "name": "Tourtes aux champignons"
+  },
+  {
+    "key": "en:vegetarian-double-crust-pies",
+    "name": "Tourtes végétariennes"
   }
 ]

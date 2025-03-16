@@ -1,11 +1,11 @@
 [
   {
-    "key": "en:artisanal-ciders",
-    "name": "Ambachtelijke ciders"
+    "key": "en:non-alcoholic-ciders",
+    "name": "Alcoholvrije cider"
   },
   {
-    "key": "en:frozen-citrus",
-    "name": "Bevroren citrusfruit"
+    "key": "en:artisanal-ciders",
+    "name": "Ambachtelijke ciders"
   },
   {
     "key": "fr:eau-de-vie-de-cidre-de-bretagne",
@@ -34,6 +34,14 @@
   {
     "key": "en:cigarettes",
     "name": "Cigarettes"
+  },
+  {
+    "key": "en:citra-ipa",
+    "name": "Citra IPA"
+  },
+  {
+    "key": "en:citric-acid",
+    "name": "Citric acid"
   },
   {
     "key": "en:lemon-flavored-iced-teas",
@@ -72,16 +80,16 @@
     "name": "Citroenjams"
   },
   {
-    "key": "en:lemon-marmelades",
-    "name": "Citroenmarmelades"
-  },
-  {
     "key": "en:lemon-balm",
     "name": "Citroenmelisse"
   },
   {
     "key": "en:green-olives-stuffed-of-lemon",
     "name": "Citroenolijven"
+  },
+  {
+    "key": "en:lemon-juice-concentrates",
+    "name": "Citroensapconcentraten"
   },
   {
     "key": "en:lemon-juice",
@@ -116,6 +124,10 @@
     "name": "Citroenyoghurt"
   },
   {
+    "key": "en:frozen-citrus",
+    "name": "Citrusfruit (diepvries)"
+  },
+  {
     "key": "en:citrus-jams",
     "name": "Citrusmarmelades"
   },
@@ -144,6 +156,18 @@
     "name": "French cider eau-de-vies"
   },
   {
+    "key": "en:citrus-flavoured-oils",
+    "name": "Gearomatiseerde oliën met citrus"
+  },
+  {
+    "key": "en:citrus-flavoured-olive-oils",
+    "name": "Gearomatiseerde olijfolies met citrus"
+  },
+  {
+    "key": "en:candied-lemon",
+    "name": "Gekonfijte citroen"
+  },
+  {
     "key": "en:ground-dried-lemon-verbena",
     "name": "Gemalen citroenverbena"
   },
@@ -158,6 +182,10 @@
   {
     "key": "en:herefordshire-cider",
     "name": "Herefordshire cider"
+  },
+  {
+    "key": "en:home-made-lemon-juice",
+    "name": "Huisgemaakte citroensap"
   },
   {
     "key": "en:light-lemon-soft-drinks",
@@ -202,6 +230,10 @@
   {
     "key": "en:traditional-ciders",
     "name": "Traditionele ciders"
+  },
+  {
+    "key": "en:verna-lemons",
+    "name": "Verna citroenen"
   },
   {
     "key": "en:fresh-lemons",

@@ -44,8 +44,16 @@
     "name": "Almond peeled unpeeled or blanched"
   },
   {
+    "key": "en:almonds-roasted-and-unsalted",
+    "name": "Almonds(roasted and unsalted)"
+  },
+  {
     "key": "en:beers-from-united-kingdom",
     "name": "Beers from United Kingdom"
+  },
+  {
+    "key": "en:brazil-nuts-unsalted",
+    "name": "Brazil nuts(unsalted)"
   },
   {
     "key": "en:cheeses-from-the-united-kingdom",
@@ -104,6 +112,10 @@
     "name": "Fresh cooked unsalted egg pasta"
   },
   {
+    "key": "en:fried-unsalted-rice-noodles",
+    "name": "Fried unsalted rice noodles"
+  },
+  {
     "key": "en:honeys-from-the-united-kingdom",
     "name": "Honeys from the United Kingdom"
   },
@@ -114,6 +126,14 @@
   {
     "key": "en:light-unsalted-margarines",
     "name": "Light unsalted margarines"
+  },
+  {
+    "key": "en:prepared-unshelled-nuts-or-seeds",
+    "name": "Prepared unshelled nuts or seeds"
+  },
+  {
+    "key": "en:pumpkin-seeds-non-roasted-shelled-unsalted",
+    "name": "Pumpkin seeds(non-roasted/shelled/unsalted)"
   },
   {
     "key": "en:quinoa-fr-boiled-cooked-in-water-unsalted",
@@ -132,12 +152,16 @@
     "name": "Saint-Nectaire cheese from milk collected in an unique farm"
   },
   {
-    "key": "en:shepherd-s-pie-with-duck-uncooked",
-    "name": "Shepherd's pie with duck uncooked"
+    "key": "en:salami-ungherese",
+    "name": "Salami ungherese"
   },
   {
-    "key": "en:uncooked-beetroots",
-    "name": "Uncooked beetroots"
+    "key": "en:shelf-stable-unprepared-fishes",
+    "name": "Shelf-stable unprepared fishes"
+  },
+  {
+    "key": "en:shepherd-s-pie-with-duck-uncooked",
+    "name": "Shepherd's pie with duck uncooked"
   },
   {
     "key": "en:uncooked-pressed-cheeses",
@@ -160,6 +184,10 @@
     "name": "Unfilled breakfast chocolate cereals fortified with vitamins and chemical elements"
   },
   {
+    "key": "en:unfiltered-beers",
+    "name": "Unfiltered beers"
+  },
+  {
     "key": "en:unfortified-diet-chocolate-breakfast-cereals",
     "name": "Unfortified diet chocolate breakfast cereals"
   },
@@ -176,12 +204,32 @@
     "name": "Unpasteurised cheeses"
   },
   {
+    "key": "en:unpasteurized-beers",
+    "name": "Unpasteurized beers"
+  },
+  {
+    "key": "en:unprepared-alternate-meats",
+    "name": "Unprepared alternate meats"
+  },
+  {
+    "key": "en:unprepared-frozen-fruits",
+    "name": "Unprepared frozen fruits"
+  },
+  {
     "key": "en:unrefined-rock-salt",
     "name": "Unrefined rock salt"
   },
   {
     "key": "en:unrefined-salts",
     "name": "Unrefined salts"
+  },
+  {
+    "key": "en:unroasted-almonds",
+    "name": "Unroasted almonds"
+  },
+  {
+    "key": "en:unsalted-almonds",
+    "name": "Unsalted almonds"
   },
   {
     "key": "en:unsalted-boiled-pearled-barley",
@@ -224,10 +272,6 @@
     "name": "Unsalted cooked rice"
   },
   {
-    "key": "en:unsalted-cooked-soy-noodles",
-    "name": "Unsalted cooked soy noodles"
-  },
-  {
     "key": "en:unsalted-cooked-wheat-bulgur",
     "name": "Unsalted cooked wheat bulgur"
   },
@@ -240,12 +284,24 @@
     "name": "Unsalted French bread"
   },
   {
+    "key": "en:unsalted-hazelnuts",
+    "name": "Unsalted hazelnuts"
+  },
+  {
     "key": "en:unsalted-light-butter-with-39-41-fat",
     "name": "Unsalted light butter with 39-41% fat"
   },
   {
     "key": "en:unsalted-margarines",
     "name": "Unsalted margarines"
+  },
+  {
+    "key": "en:unsalted-nuts",
+    "name": "Unsalted nuts"
+  },
+  {
+    "key": "en:unsalted-pistachios",
+    "name": "Unsalted pistachios"
   },
   {
     "key": "en:unsalted-polenta",
@@ -264,16 +320,32 @@
     "name": "Unsalted pre-cooked durum wheat with whole grain"
   },
   {
-    "key": "en:unsalted-rusk",
-    "name": "Unsalted rusk"
-  },
-  {
     "key": "en:unseasoned-grated-carrots",
     "name": "Unseasoned grated carrots"
   },
   {
+    "key": "en:unshelled-almonds",
+    "name": "Unshelled almonds"
+  },
+  {
+    "key": "en:unshelled-brazil-nuts",
+    "name": "Unshelled Brazil nuts"
+  },
+  {
+    "key": "en:unshelled-hazelnuts",
+    "name": "Unshelled hazelnuts"
+  },
+  {
+    "key": "en:unshelled-nuts",
+    "name": "Unshelled nuts"
+  },
+  {
     "key": "en:unshelled-peanuts",
     "name": "Unshelled peanuts"
+  },
+  {
+    "key": "en:unshelled-pistachios",
+    "name": "Unshelled pistachios"
   },
   {
     "key": "en:unshelled-pumpkin-seeds",
@@ -304,16 +376,16 @@
     "name": "Unsweetened flavored waters"
   },
   {
-    "key": "en:unsweetened-natural-almond-milks",
-    "name": "Unsweetened natural almond milks"
+    "key": "en:unsweetened-plain-almond-based-drinks",
+    "name": "Unsweetened plain almond-based drinks"
   },
   {
-    "key": "en:unsweetened-natural-oat-milks",
-    "name": "Unsweetened natural oat milks"
+    "key": "en:unsweetened-plain-oat-based-drinks",
+    "name": "Unsweetened plain oat-based drinks"
   },
   {
-    "key": "en:unsweetened-natural-soy-milks",
-    "name": "Unsweetened natural soy milks"
+    "key": "en:unsweetened-plain-soy-based-drinks",
+    "name": "Unsweetened plain soy-based drinks"
   },
   {
     "key": "en:unwaxed-lemons",

@@ -4,6 +4,10 @@
     "name": "Agneau de lait des Pyrénées"
   },
   {
+    "key": "en:wild-garlic",
+    "name": "Ail des ours"
+  },
+  {
     "key": "fr:aloxe-corton-clos-des-marechaudes",
     "name": "Aloxe-Corton Clos des Maréchaudes"
   },
@@ -16,12 +20,20 @@
     "name": "Aloxe-Corton premier cru Clos des Maréchaudes rouge"
   },
   {
-    "key": "fr:asperge-des-sables-des-landes",
+    "key": "en:asparagus-from-sable-des-landes",
     "name": "Asperge des sables des Landes"
   },
   {
     "key": "fr:auxey-duresses-bas-des-duresses",
     "name": "Auxey-Duresses Bas des Duresses"
+  },
+  {
+    "key": "en:bananas-from-the-canary-islands",
+    "name": "Bananes des Îles Canaries"
+  },
+  {
+    "key": "en:fresh-bananas-from-the-canary-islands",
+    "name": "Bananes fraîches des Canaries"
   },
   {
     "key": "fr:beaune-clos-des-avaux",
@@ -96,6 +108,10 @@
     "name": "Boisson lactée pour petit-déjeuner bébé dès 8/9 mois avec céréales"
   },
   {
+    "key": "en:beverages-from-desugared-fruit-juices",
+    "name": "Boissons à base de jus de fruits désucrés"
+  },
+  {
     "key": "en:fruit-based-beverages-for-baby-from-4-6-months",
     "name": "Boissons aux fruits pour bébé dès 4/6 mois"
   },
@@ -136,7 +152,11 @@
     "name": "Bouillons déshydratés"
   },
   {
-    "key": "fr:cafe-des-philippines",
+    "key": "en:brut-des-flandres",
+    "name": "Brut des Flandres"
+  },
+  {
+    "key": "en:philippine-coffee",
     "name": "Café des Philippines"
   },
   {
@@ -170,6 +190,14 @@
   {
     "key": "fr:chassagne-montrachet-premier-cru-blanchot-dessus",
     "name": "Chassagne-Montrachet premier cru Blanchot Dessus"
+  },
+  {
+    "key": "fr:chassagne-montrachet-premier-cru-blanchot-dessus-blanc",
+    "name": "Chassagne-Montrachet premier cru Blanchot dessus blanc"
+  },
+  {
+    "key": "fr:chassagne-montrachet-premier-cru-blanchot-dessus-rouge",
+    "name": "Chassagne-Montrachet premier cru Blanchot dessus rouge"
   },
   {
     "key": "fr:clos-des-lambrays",
@@ -348,10 +376,6 @@
     "name": "Dessert glacé feuilleté vanille fruits rouges"
   },
   {
-    "key": "en:dairy-dessert-for-baby",
-    "name": "Dessert lacté pour bébé"
-  },
-  {
     "key": "en:dairy-dessert-for-baby-with-semolina",
     "name": "Dessert lacté pour bébé à la semoule"
   },
@@ -468,15 +492,55 @@
     "name": "Desserts lactés fermentés"
   },
   {
+    "key": "en:flavoured-fermented-dairy-desserts",
+    "name": "Desserts lactés fermentés aromatisés"
+  },
+  {
+    "key": "en:flavoured-fermented-dairy-desserts-with-sugar-and-cream",
+    "name": "Desserts lactés fermentés aromatisés sucrés à la crème"
+  },
+  {
     "key": "en:fermented-dairy-desserts-with-fruits",
     "name": "Desserts lactés fermentés aux fruits"
+  },
+  {
+    "key": "en:fat-free-fermented-dairy-desserts-with-fruits-and-sweeteners-fortified-with-vitamin-d",
+    "name": "Desserts lactés fermentés aux fruits édulcorés sans matière grasse enrichis en vitamine D"
+  },
+  {
+    "key": "en:fermented-dairy-desserts-with-fruits-enriched-with-vitamin-d",
+    "name": "Desserts lactés fermentés aux fruits enrichis en vitamine D"
+  },
+  {
+    "key": "en:fermented-dairy-desserts-with-fruits-sugar-and-cream",
+    "name": "Desserts lactés fermentés aux fruits sucrés à la crème"
+  },
+  {
+    "key": "en:fermented-dairy-desserts-with-fruits-and-sweeteners",
+    "name": "Desserts lactés fermentés édulcorés aux fruits"
+  },
+  {
+    "key": "en:fat-free-fermented-dairy-desserts-with-fruits-and-sweeteners",
+    "name": "Desserts lactés fermentés édulcorés aux fruits sans matière grasse"
+  },
+  {
+    "key": "en:fat-free-fermented-dairy-desserts-with-sweeteners",
+    "name": "Desserts lactés fermentés édulcorés sans matière grasse"
   },
   {
     "key": "en:plain-fermented-dairy-desserts",
     "name": "Desserts lactés fermentés nature"
   },
   {
-    "key": "en:baby-dairy-desserts",
+    "key": "en:plain-fermented-dairy-desserts-with-cream",
+    "name": "Desserts lactés fermentés nature à la crème"
+  },
+  {
+    "key": "en:fat-free-plain-fermented-dairy-desserts",
+    "name": "Desserts lactés fermentés nature sans matière grasse"
+  },
+  {
+    "key": "en:dairy-dessert-for-baby",
     "name": "Desserts lactés pour bébé"
   },
   {
@@ -504,6 +568,10 @@
     "name": "Eau-de-vie des Charentes"
   },
   {
+    "key": "en:entremets-mousses-and-creamy-puddings",
+    "name": "Entremets - mousses et crème desserts"
+  },
+  {
     "key": "en:dehydrated-poultry-stock",
     "name": "Fond de volaille déshydraté"
   },
@@ -520,12 +588,24 @@
     "name": "Fromages des Pays-Bas"
   },
   {
+    "key": "en:frozen-dessert-sauces",
+    "name": "Frozen dessert sauces"
+  },
+  {
+    "key": "en:dehydrated-fish-broths",
+    "name": "Fumet de poisson déshydraté"
+  },
+  {
     "key": "en:twelfth-night-cake-with-almond-paste",
     "name": "Galette des rois feuilletée fourrée à la frangipane"
   },
   {
     "key": "en:king-cakes",
     "name": "Galettes des rois"
+  },
+  {
+    "key": "es:roscon",
+    "name": "Gâteaux des rois"
   },
   {
     "key": "en:dehydrated-madeira-wine-aspic",
@@ -820,6 +900,10 @@
     "name": "Pois chiches de type Desi"
   },
   {
+    "key": "en:marrowfat-peas",
+    "name": "Pois des champs"
+  },
+  {
     "key": "en:dried-green-peppercorns",
     "name": "Poivre vert déshydraté en grains"
   },
@@ -874,6 +958,14 @@
   {
     "key": "en:dried-products",
     "name": "Produits déshydratés"
+  },
+  {
+    "key": "en:refrigerated-dessert-sauces",
+    "name": "Refrigerated dessert sauces"
+  },
+  {
+    "key": "en:refrigerated-desserts",
+    "name": "Refrigerated desserts"
   },
   {
     "key": "fr:rhum-des-antilles-francaises",
@@ -940,6 +1032,10 @@
     "name": "Sels des mines de sel"
   },
   {
+    "key": "en:shelf-stable-desserts",
+    "name": "Shelf stable desserts"
+  },
+  {
     "key": "en:dehydrated-onion-soup",
     "name": "Soupe à l'oignon déshydratée"
   },
@@ -996,7 +1092,7 @@
     "name": "Soupes au potiron déshydratée"
   },
   {
-    "key": "en:dehydrated-asparagus-soup",
+    "key": "en:dehydrated-asparagus-soups",
     "name": "Soupes aux asperges déshydratées"
   },
   {

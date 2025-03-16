@@ -24,6 +24,10 @@
     "name": "Bar commun sauvage"
   },
   {
+    "key": "en:frozen-european-bass",
+    "name": "Bar commun surgelé"
+  },
+  {
     "key": "en:wholemeal-rusks",
     "name": "Biscottes complètes"
   },
@@ -84,12 +88,20 @@
     "name": "Chassagne-Montrachet premier cru Les Commes rouge"
   },
   {
+    "key": "en:combination-meals",
+    "name": "Combination Meals"
+  },
+  {
     "key": "en:comeragh-mountain-lamb",
     "name": "Comeragh Mountain Lamb"
   },
   {
     "key": "en:commandaria",
     "name": "Commandaria"
+  },
+  {
+    "key": "en:common-beans",
+    "name": "Common beans"
   },
   {
     "key": "en:common-bilberries",
@@ -134,6 +146,10 @@
   {
     "key": "en:apricot-compotes",
     "name": "Compotes d'abricot"
+  },
+  {
+    "key": "en:quince-compotes",
+    "name": "Compotes de coings"
   },
   {
     "key": "en:strawberry-compotes",
@@ -284,6 +300,14 @@
     "name": "Comtés Rhodaniens"
   },
   {
+    "key": "fr:coquillettes-completes",
+    "name": "Coquillettes complètes"
+  },
+  {
+    "key": "fr:coquillettes-semi-completes",
+    "name": "Coquillettes semi-complètes"
+  },
+  {
     "key": "en:edible-tableware",
     "name": "Couverts comestibles"
   },
@@ -310,14 +334,6 @@
   {
     "key": "fr:gevrey-chambertin-premier-cru-combe-au-moine",
     "name": "Gevrey-Chambertin premier cru Combe au Moine"
-  },
-  {
-    "key": "en:combined-oil",
-    "name": "Huile combinée"
-  },
-  {
-    "key": "en:combined-oil-blended-vegetable-oils",
-    "name": "Huile combinée (mélange d'huiles)"
   },
   {
     "key": "en:olive-oils-from-comunitat-valenciana",
@@ -348,8 +364,8 @@
     "name": "Muffins anglais au blé complet"
   },
   {
-    "key": "en:new-season-comber-potatoes",
-    "name": "New Season Comber Potatoes"
+    "key": "en:not-ready-to-eat-combination-meals",
+    "name": "Not ready to eat combination meals"
   },
   {
     "key": "en:whole-wheat-noodles",
@@ -384,6 +400,14 @@
     "name": "Pains complets"
   },
   {
+    "key": "en:crispbreads-wholemeal",
+    "name": "Pains croustillants complets"
+  },
+  {
+    "key": "en:crispbreads-non-wholemeal",
+    "name": "Pains croustillants non-complets"
+  },
+  {
     "key": "en:wholemeal-sliced-breads",
     "name": "Pains de mie complet"
   },
@@ -414,6 +438,10 @@
   {
     "key": "en:dandelion",
     "name": "Pissenlit commun"
+  },
+  {
+    "key": "en:comice-pears",
+    "name": "Poires comice"
   },
   {
     "key": "fr:pommard-clos-de-la-commaraine",
@@ -452,6 +480,18 @@
     "name": "Purées de sésame demi-complet"
   },
   {
+    "key": "en:ready-to-eat-combination-meals",
+    "name": "Ready to eat combination meals"
+  },
+  {
+    "key": "en:brown-basmati-rices",
+    "name": "Riz Basmati complet"
+  },
+  {
+    "key": "en:semi-milled-basmati-rices",
+    "name": "Riz Basmati semi-complet"
+  },
+  {
     "key": "en:brown-rices",
     "name": "Riz complet"
   },
@@ -462,6 +502,26 @@
   {
     "key": "en:unsalted-cooked-brown-rices",
     "name": "Riz complet cuit non salé"
+  },
+  {
+    "key": "en:brown-camargue-rices",
+    "name": "Riz de Camargue complet"
+  },
+  {
+    "key": "en:semi-milled-camargue-rices",
+    "name": "Riz de Camargue semi-complet"
+  },
+  {
+    "key": "en:semi-milled-rices",
+    "name": "Riz semi-complet"
+  },
+  {
+    "key": "en:brown-jasmine-rices",
+    "name": "Riz thaï complet"
+  },
+  {
+    "key": "en:semi-milled-jasmine-rices",
+    "name": "Riz thaï semi-complet"
   },
   {
     "key": "fr:saint-aubin-premier-cru-les-combes",
@@ -524,11 +584,27 @@
     "name": "Santenay premier cru La Comme rouge"
   },
   {
+    "key": "fr:semi-complet",
+    "name": "Semi-complet"
+  },
+  {
     "key": "en:whole-durm-wheat-spaghetti",
     "name": "Spaghettis de blé dur complet"
   },
   {
+    "key": "en:whole-durum-wheat-spirals",
+    "name": "Spirales de blé dur complet"
+  },
+  {
+    "key": "en:semi-whole-durum-wheat-spirals",
+    "name": "Spirales de blé dur semi-complet"
+  },
+  {
     "key": "fr:sucres-complets",
     "name": "Sucres complets"
+  },
+  {
+    "key": "en:vitamin-mineral-combinations",
+    "name": "Vitamin mineral combinations"
   }
 ]

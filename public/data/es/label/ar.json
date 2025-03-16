@@ -1,5 +1,9 @@
 [
   {
+    "key": "en:100-arabica",
+    "name": "100% arabica"
+  },
+  {
     "key": "en:alimentos-artesanos-de-navarra",
     "name": "Alimentos Artesanos de Navarra"
   },
@@ -88,14 +92,6 @@
     "name": "IGP Lenteja de La Armuña"
   },
   {
-    "key": "en:no-artificial-additives",
-    "name": "No artificial additives"
-  },
-  {
-    "key": "en:no-artificial-colours-and-preservatives",
-    "name": "No artificial colours and preservatives"
-  },
-  {
     "key": "en:no-artificial-flavourings-or-sweeteners",
     "name": "No artificial flavourings or sweeteners"
   },
@@ -104,7 +100,7 @@
     "name": "Orgánico Argentina"
   },
   {
-    "key": "bg:без-изкуствени-добавки",
+    "key": "en:no-artificial-additives",
     "name": "Sin aditivos artificiales"
   },
   {
@@ -116,12 +112,20 @@
     "name": "Sin aromas artificiales"
   },
   {
+    "key": "fr:sans-aromes-ni-colorants-artificiels",
+    "name": "Sin aromas ni colorantes artificiales"
+  },
+  {
     "key": "en:no-artificial-colors",
     "name": "Sin colorantes artificiales"
   },
   {
     "key": "en:no-artificial-colours-or-flavours",
     "name": "Sin colorantes o saborizantes artificiales"
+  },
+  {
+    "key": "en:no-artificial-colours-and-preservatives",
+    "name": "Sin colorantes y conservantes artificiales"
   },
   {
     "key": "en:no-artificial-preservatives",

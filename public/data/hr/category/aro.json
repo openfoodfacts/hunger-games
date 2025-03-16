@@ -1,19 +1,103 @@
 [
   {
-    "key": "en:aromatic-herbs",
-    "name": "Aromatic herbs"
+    "key": "en:aromatic-plants",
+    "name": "Aromatične biljke"
   },
   {
-    "key": "en:aromatic-plants",
-    "name": "Aromatic plants"
+    "key": "en:potted-aromatic-plants",
+    "name": "Aromatične biljke u posudama"
   },
   {
     "key": "en:aromatic-rices",
-    "name": "Aromatic rices"
+    "name": "Aromatične riže"
+  },
+  {
+    "key": "en:flavoured-olive-oils",
+    "name": "Aromatizirana maslinova ulja"
+  },
+  {
+    "key": "en:flavoured-milks",
+    "name": "Aromatizirana mlijeka"
+  },
+  {
+    "key": "en:flavoured-drinks",
+    "name": "Aromatizirana pića"
+  },
+  {
+    "key": "en:flavored-beers",
+    "name": "Aromatizirana piva"
+  },
+  {
+    "key": "en:flavoured-oils",
+    "name": "Aromatizirana ulja"
+  },
+  {
+    "key": "en:flavoured-wines",
+    "name": "Aromatizirana vina"
+  },
+  {
+    "key": "en:flavoured-white-chocolates",
+    "name": "Aromatizirane bijele čokolade"
+  },
+  {
+    "key": "en:flavored-sparkling-waters",
+    "name": "Aromatizirane gazirane vode"
+  },
+  {
+    "key": "en:flavored-and-colored-dry-pastas",
+    "name": "Aromatizirane i obojene suhe tjestenine"
   },
   {
     "key": "en:aromatised-instant-coffees",
-    "name": "Aromatised instant coffees"
+    "name": "Aromatizirane instant kave"
+  },
+  {
+    "key": "en:flavoured-milk-chocolates",
+    "name": "Aromatizirane mliječne čokolade"
+  },
+  {
+    "key": "en:flavored-waters",
+    "name": "Aromatizirane vode"
+  },
+  {
+    "key": "en:flavoured-bifidus-yogurts",
+    "name": "Aromatizirani bifidus jogurti"
+  },
+  {
+    "key": "en:flavored-teas",
+    "name": "Aromatizirani čajevi"
+  },
+  {
+    "key": "en:flavoured-potato-crisps",
+    "name": "Aromatizirani čips od krumpira"
+  },
+  {
+    "key": "en:flavored-black-teas",
+    "name": "Aromatizirani crni čajevi"
+  },
+  {
+    "key": "en:flavoured-fermented-dairy-desserts-with-sugar-and-cream",
+    "name": "Aromatizirani fermentirani mliječni deserti sa šećerom i vrhnjem"
+  },
+  {
+    "key": "en:flavoured-yogurts",
+    "name": "Aromatizirani jogurti"
+  },
+  {
+    "key": "en:flavoured-syrups",
+    "name": "Aromatizirani sirupi"
+  },
+  {
+    "key": "en:sugar-free-flavoured-syrups",
+    "name": "Aromatizirani sirupi bez šećera"
+  },
+  {
+    "key": "en:flavoured-apple-juices",
+    "name": "Aromatizirani sokovi od jabuke"
+  },
+  {
+    "key": "en:flavors",
+    "name": "Arome"
   },
   {
     "key": "en:bresse-blue-cheese-from-cow-s-milk-reduced-fat-around-15-fat",
@@ -24,10 +108,6 @@
     "name": "Dehydrated aromatic stock cube for fish"
   },
   {
-    "key": "en:dried-aromatic-plants",
-    "name": "Dried aromatic plants"
-  },
-  {
     "key": "en:firm-cheese-around-27-fat-maasdam-type-cheese",
     "name": "Firm cheese around 27% fat Maasdam-type cheese"
   },
@@ -36,32 +116,28 @@
     "name": "Flavoured uncured soft cheese spreadable with around 30-40% fat"
   },
   {
-    "key": "en:fresh-aromatic-plants",
-    "name": "Fresh aromatic plants"
-  },
-  {
-    "key": "en:frozen-aromatic-plants",
-    "name": "Frozen aromatic plants"
-  },
-  {
-    "key": "en:ground-dried-aromatic-plants",
-    "name": "Ground dried aromatic plants"
-  },
-  {
     "key": "en:herbal-vodka-from-the-north-podlasie-lowland-aromatised-with-an-extract-of-bison-grass",
     "name": "Herbal vodka from the North Podlasie Lowland aromatised with an extract of bison grass"
   },
   {
     "key": "en:lyophilized-aromatic-plants",
-    "name": "Lyophilized aromatic plants"
+    "name": "Liofilizirane aromatične biljke"
   },
   {
-    "key": "en:mixtures-of-aromatic-plants",
-    "name": "Mixtures of aromatic plants"
+    "key": "en:ground-dried-aromatic-plants",
+    "name": "Mljevene osušene aromatične biljke"
+  },
+  {
+    "key": "en:dried-aromatic-plants",
+    "name": "Osušene aromatične biljke"
   },
   {
     "key": "en:plain-creamy-fresh-cream-cheese-around-8-fat",
     "name": "Plain creamy fresh cream cheese around 8% fat"
+  },
+  {
+    "key": "en:plain-fresh-cream-cheese-around-1-fat",
+    "name": "Plain fresh cream cheese around 1% fat"
   },
   {
     "key": "en:plain-fresh-cream-cheese-around-3-fat",
@@ -74,10 +150,6 @@
   {
     "key": "en:plain-petit-suisse-around-9-fat",
     "name": "Plain Petit-Suisse around 9% fat"
-  },
-  {
-    "key": "en:potted-aromatic-plants",
-    "name": "Potted aromatic plants"
   },
   {
     "key": "en:processed-cheese-around-20-fat-in-cubes",
@@ -94,6 +166,10 @@
   {
     "key": "en:ray-cooked-in-an-aromatic-stock",
     "name": "Ray cooked in an aromatic stock"
+  },
+  {
+    "key": "en:frozen-aromatic-plants",
+    "name": "Smrznuto aromatično bilje"
   },
   {
     "key": "en:soft-ripened-cheese-double-cream-around-30-fat",
@@ -116,11 +192,23 @@
     "name": "Soft-ripened washed-rind cheese reduced fat around 13% fat"
   },
   {
+    "key": "en:fresh-aromatic-plants",
+    "name": "Svježe aromatične biljke"
+  },
+  {
     "key": "en:uncured-soft-cheese-spreadable-with-around-20-fat",
     "name": "Uncured soft cheese spreadable with around 20% fat"
   },
   {
     "key": "en:uncured-soft-cheese-spreadable-with-around-25-fat",
     "name": "Uncured soft cheese spreadable with around 25% fat"
+  },
+  {
+    "key": "en:spiced-flavoured-olive-oils",
+    "name": "Začinjena aromatizirana maslinova ulja"
+  },
+  {
+    "key": "en:spiced-flavoured-oils",
+    "name": "Začinjena aromatizirana ulja"
   }
 ]

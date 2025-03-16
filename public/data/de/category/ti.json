@@ -1,13 +1,5 @@
 [
   {
-    "key": "en:chicken-tikka",
-    "name": "Chicken Tikka"
-  },
-  {
-    "key": "en:chicken-tikka-masala",
-    "name": "Chicken tikka masala"
-  },
-  {
     "key": "en:chocolate-tiramisu",
     "name": "Chocolate tiramisu"
   },
@@ -24,12 +16,16 @@
     "name": "Giant tiger prawns"
   },
   {
-    "key": "de:holsteiner-tilsiter",
-    "name": "Holsteiner Tilsiter"
+    "key": "en:chicken-tikka",
+    "name": "Hähnchen Tikka"
   },
   {
-    "key": "en:miscellaneous-pet-food",
-    "name": "Sonstiges Tierfutter"
+    "key": "en:chicken-tikka-masala",
+    "name": "Hähnchen Tikka Masala"
+  },
+  {
+    "key": "de:holsteiner-tilsiter",
+    "name": "Holsteiner Tilsiter"
   },
   {
     "key": "en:frozen-chopped-onions",
@@ -38,6 +34,14 @@
   {
     "key": "en:frozen-chopped-garlic",
     "name": "Tiefgefrorener gehackter Knoblauch"
+  },
+  {
+    "key": "en:frozen-cooked-crab",
+    "name": "Tiefgekochter Krebs"
+  },
+  {
+    "key": "en:frozen-apple-pies",
+    "name": "Tiefgekühlte Apfelkuchen"
   },
   {
     "key": "en:frozen-chopped-artichokes",
@@ -156,6 +160,10 @@
     "name": "Tiefkühl-Spargel"
   },
   {
+    "key": "en:frozen-breads",
+    "name": "Tiefkühlbrote"
+  },
+  {
     "key": "en:frozen-fishes",
     "name": "Tiefkühlfisch"
   },
@@ -180,6 +188,10 @@
     "name": "Tiefkühlravioli"
   },
   {
+    "key": "en:frozen-sandwiches",
+    "name": "Tiefkühlsandwiches"
+  },
+  {
     "key": "en:frozen-steaks",
     "name": "Tiefkühlsteaks"
   },
@@ -188,16 +200,16 @@
     "name": "Tiefkühlsuppen"
   },
   {
-    "key": "en:pet-food",
-    "name": "Tierfutter"
-  },
-  {
     "key": "en:animal-fats",
     "name": "Tierische Fette"
   },
   {
+    "key": "en:tiger-nuts",
+    "name": "Tiger nuts"
+  },
+  {
     "key": "en:tikka-masala-sauce",
-    "name": "Tikka masala sauce"
+    "name": "Tikka Masala Saucen"
   },
   {
     "key": "en:tilapia",
@@ -214,6 +226,10 @@
   {
     "key": "en:calamari",
     "name": "Tintenfisch"
+  },
+  {
+    "key": "en:cuttlefish",
+    "name": "Tintenfische"
   },
   {
     "key": "en:tintern",

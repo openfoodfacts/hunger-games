@@ -4,8 +4,8 @@
     "name": "Aide culinaire sucrée"
   },
   {
-    "key": "en:sugar-coated-almonds",
-    "name": "Amandes enrobées de sucre"
+    "key": "en:sweet-spread-variety-packs",
+    "name": "Assortiments de pâtes à tartiner sucrées"
   },
   {
     "key": "en:sweet-fritters",
@@ -18,6 +18,14 @@
   {
     "key": "en:breakfast-biscuit-with-reduced-sugar",
     "name": "Biscuit sec pour petit déjeuner allégé en sucres"
+  },
+  {
+    "key": "en:biscuits-and-crackers",
+    "name": "Biscuits sucrés & biscuits apéritifs"
+  },
+  {
+    "key": "en:sweetened-puffed-wheat",
+    "name": "Blé soufflé sucré"
   },
   {
     "key": "en:bottled-water-flavoured-without-sugar-or-artificial-sweeteners",
@@ -112,11 +120,11 @@
     "name": "Boissons avec sucre ajouté"
   },
   {
-    "key": "en:unsweetened-natural-soy-milks",
+    "key": "en:unsweetened-plain-soy-based-drinks",
     "name": "Boissons de soja nature non sucrées"
   },
   {
-    "key": "en:sweetened-natural-soy-milks",
+    "key": "en:sweetened-plain-soy-based-drinks",
     "name": "Boissons de soja nature sucrées"
   },
   {
@@ -134,10 +142,6 @@
   {
     "key": "en:carbonated-soft-drinks-without-fruit-juice-with-sugar",
     "name": "Boissons gazeuses sucrées sans jus de fruit"
-  },
-  {
-    "key": "en:flavoured-dairy-drinks-with-sugar",
-    "name": "Boissons lactées aromatisées sucrées au lait fermenté"
   },
   {
     "key": "en:fermented-milk-drinks-with-sugar",
@@ -168,12 +172,16 @@
     "name": "Boissons sans sucre ajouté"
   },
   {
-    "key": "en:unsweetened-natural-oat-milks",
+    "key": "en:unsweetened-plain-oat-based-drinks",
     "name": "Boissons végétales d'avoine nature non sucrées"
   },
   {
-    "key": "en:sweetened-natural-oat-milks",
+    "key": "en:sweetened-plain-oat-based-drinks",
     "name": "Boissons végétales d'avoine nature sucrées"
+  },
+  {
+    "key": "en:sugarfree-candies",
+    "name": "Bonbons sans sucre"
   },
   {
     "key": "en:instant-coffee-with-milk-without-sugar",
@@ -192,7 +200,7 @@
     "name": "Café crème instantané non sucré"
   },
   {
-    "key": "en:white-coffee-without-sugar",
+    "key": "en:latte",
     "name": "Café crème non sucré"
   },
   {
@@ -214,6 +222,14 @@
   {
     "key": "en:coffee-without-sugar",
     "name": "Café non sucré"
+  },
+  {
+    "key": "en:sugarcanes",
+    "name": "Cannes à sucre"
+  },
+  {
+    "key": "en:sugarcanes-in-syrup",
+    "name": "Cannes à sucre au sirop"
   },
   {
     "key": "en:instant-cappuccino-without-sugar",
@@ -308,6 +324,14 @@
     "name": "Dessert lacté pour bébé sucré"
   },
   {
+    "key": "en:flavoured-fermented-dairy-desserts-with-sugar-and-cream",
+    "name": "Desserts lactés fermentés aromatisés sucrés à la crème"
+  },
+  {
+    "key": "en:fermented-dairy-desserts-with-fruits-sugar-and-cream",
+    "name": "Desserts lactés fermentés aux fruits sucrés à la crème"
+  },
+  {
     "key": "en:plain-doughnuts",
     "name": "Donuts nature saupoudrés de sucre"
   },
@@ -322,6 +346,10 @@
   {
     "key": "fr:flammekueches-sucrees",
     "name": "Flammekueches sucrées"
+  },
+  {
+    "key": "en:pre-cooked-oat-flakes-with-sugar",
+    "name": "Flocons d'avoine précuits sucrés"
   },
   {
     "key": "en:frozen-fruits-with-added-sugar",
@@ -344,19 +372,19 @@
     "name": "Lait gélifié aromatisé allégé en matière grasse et en sucre rayon frais"
   },
   {
-    "key": "fr:laits-concentres-non-sucres",
+    "key": "en:evaporated-milks-without-sugar",
     "name": "Laits concentrés non sucrés"
   },
   {
-    "key": "fr:laits-concentres-sucres",
+    "key": "en:evaporated-milks-with-sugar",
     "name": "Laits concentrés sucrés"
   },
   {
-    "key": "en:unsweetened-natural-almond-milks",
+    "key": "en:unsweetened-plain-almond-based-drinks",
     "name": "Laits d'amande natures non sucrés"
   },
   {
-    "key": "en:sweetened-natural-almond-milks",
+    "key": "en:sweetened-plain-almond-based-drinks",
     "name": "Laits d'amande natures sucrés"
   },
   {
@@ -388,7 +416,7 @@
     "name": "Pâtes à sucre"
   },
   {
-    "key": "en:sugar-coated-pinenuts",
+    "key": "en:caramelized-pine-nuts",
     "name": "Pignons de pin enrobés de sucre"
   },
   {
@@ -424,6 +452,10 @@
     "name": "Rhum de sucrerie de la Baie du Galion"
   },
   {
+    "key": "en:sweetened-puffed-rice",
+    "name": "Riz soufflé sucré"
+  },
+  {
     "key": "fr:sauces-au-soja-sucrees",
     "name": "Sauces au soja sucrées"
   },
@@ -448,6 +480,14 @@
     "name": "Spécialités laitières nature sucrées"
   },
   {
+    "key": "en:compound-dairy-creams",
+    "name": "Succédanés de la crème"
+  },
+  {
+    "key": "en:compound-chocolates",
+    "name": "Succédanés du chocolat"
+  },
+  {
     "key": "en:sugar-substitutes",
     "name": "Succédanés du sucre"
   },
@@ -464,7 +504,7 @@
     "name": "Sucre allégé à l'aspartame"
   },
   {
-    "key": "km:ស្ករត្នោតកំពង់ស្ពឺ",
+    "key": "hr:kampong-speu-palmin-šećer",
     "name": "Sucre de Palme de Kampong Speu"
   },
   {
@@ -476,8 +516,12 @@
     "name": "Sucres"
   },
   {
-    "key": "en:granulated-sugars",
+    "key": "en:white-sugars",
     "name": "Sucres blancs"
+  },
+  {
+    "key": "en:blond-sugars",
+    "name": "Sucres blonds"
   },
   {
     "key": "en:rock-candies",
@@ -488,6 +532,10 @@
     "name": "Sucres complets"
   },
   {
+    "key": "en:granulated-sugars",
+    "name": "Sucres cristal"
+  },
+  {
     "key": "en:maple-sugars",
     "name": "Sucres d'érable"
   },
@@ -496,12 +544,20 @@
     "name": "Sucres d'orge"
   },
   {
+    "key": "en:beet-sugars",
+    "name": "Sucres de betterave"
+  },
+  {
     "key": "en:cane-sugar",
     "name": "Sucres de canne"
   },
   {
     "key": "en:coconut-sugar",
     "name": "Sucres de coco"
+  },
+  {
+    "key": "en:palm-sugars",
+    "name": "Sucres de palme"
   },
   {
     "key": "en:lump-sugar",
@@ -576,10 +632,6 @@
     "name": "Thé vert infusé non sucré"
   },
   {
-    "key": "en:rhubarb-stalk-cooked-with-sugar",
-    "name": "Tiges de rhubarbe cuites sucrées"
-  },
-  {
     "key": "en:brewed-infusions-without-sugar",
     "name": "Tisanes infusées non sucrées"
   },
@@ -612,19 +664,15 @@
     "name": "Yaourt nature sucré"
   },
   {
-    "key": "en:fermented-milk-flavoured-yogurt-with-sugar-and-cream",
-    "name": "Yaourt sucré aromatisé au lait fermenté et à la crème"
+    "key": "en:flavoured-drinkable-yogurts-with-sugar",
+    "name": "Yaourts à boire aromatisés sucrés"
   },
   {
-    "key": "en:fermented-milk-yogurt-fortified-with-vitamin-d-with-fruits-and-sugar",
-    "name": "Yaourt sucré au lait fermenté aux fruits enrichi en vitamine D"
+    "key": "en:yogurt-drinks-with-sugar",
+    "name": "Yaourts à boire avec sucre"
   },
   {
-    "key": "en:fermented-milk-yogurt-with-fruits-and-sugar-and-cream",
-    "name": "Yaourt sucré au lait fermenté aux fruits et à la crème"
-  },
-  {
-    "key": "fr:yaourts-a-boire-sans-sucres",
+    "key": "en:yogurt-drinks-without-sugar",
     "name": "Yaourts à boire sans sucres"
   },
   {
@@ -644,7 +692,7 @@
     "name": "Yaourts sucrés"
   },
   {
-    "key": "en:yogurts-with-fruits-and-sugar",
-    "name": "Yaourts sucrés aux fruits"
+    "key": "fr:yaourts-sucres-au-sucre-de-canne",
+    "name": "Yaourts sucrés au sucre de canne"
   }
 ]

@@ -12,7 +12,7 @@
     "name": "Bean soups"
   },
   {
-    "key": "fr:betteraves-sous-vide",
+    "key": "en:vacuum-packed-beetroot",
     "name": "Betteraves sous vide"
   },
   {
@@ -24,8 +24,8 @@
     "name": "Biscuit apéritif soufflé à base de pomme de terre et de soja"
   },
   {
-    "key": "en:puffed-salty-snacks",
-    "name": "Biscuits apéritifs soufflés"
+    "key": "en:puffed-salty-snacks-potato-soy-based",
+    "name": "Biscuits apéritifs soufflés (à base de pomme de terre/soja)"
   },
   {
     "key": "en:puffed-salty-snacks-made-from-maize",
@@ -60,11 +60,31 @@
     "name": "Blé soufflé"
   },
   {
+    "key": "en:puffed-wheat-with-caramel",
+    "name": "Blé soufflé au caramel"
+  },
+  {
+    "key": "en:puffed-wheat-with-honey",
+    "name": "Blé soufflé au miel"
+  },
+  {
+    "key": "en:chocolate-puffed-wheat",
+    "name": "Blé soufflé chocolaté"
+  },
+  {
+    "key": "en:plain-puffed-wheat",
+    "name": "Blé soufflé nature"
+  },
+  {
+    "key": "en:sweetened-puffed-wheat",
+    "name": "Blé soufflé sucré"
+  },
+  {
     "key": "en:bottled-water-flavoured-without-sugar-and-with-artificial-sweeteners",
     "name": "Boisson à l'eau minérale ou de source aromatisée non sucrée avec édulcorants"
   },
   {
-    "key": "en:tigernut-milks",
+    "key": "en:tigernut-based-drinks",
     "name": "Boissons végétales de souchet"
   },
   {
@@ -74,6 +94,10 @@
   {
     "key": "en:breakfast-cereals-puffed-corn-with-honey-not-fortified-with-vitamins-and-chemical-elements",
     "name": "Boules de maïs soufflées au miel non enrichies en vitamines et minéraux"
+  },
+  {
+    "key": "en:catharina-sour-beers",
+    "name": "Catharina Sour beers"
   },
   {
     "key": "en:breakfast-cereals-puffed-cereals-wholemeal-fortified-with-vitamins-and-chemical-elements",
@@ -102,6 +126,18 @@
   {
     "key": "en:puffed-spelt",
     "name": "Épeautre soufflé"
+  },
+  {
+    "key": "en:honey-puffed-spelt",
+    "name": "Épeautre soufflé au miel"
+  },
+  {
+    "key": "en:chocolate-puffed-spelt",
+    "name": "Épeautre soufflé chocolaté"
+  },
+  {
+    "key": "en:plain-puffed-spelt",
+    "name": "Épeautre soufflé nature"
   },
   {
     "key": "fr:farines-de-souchet",
@@ -172,28 +208,12 @@
     "name": "Graines de légumineuses soufflées"
   },
   {
-    "key": "en:puffed-wheat-grains",
-    "name": "Grains de blé soufflés"
-  },
-  {
-    "key": "en:popped-wheat-grain-with-caramel",
-    "name": "Grains de blé soufflés au caramel"
-  },
-  {
     "key": "en:popped-wheat-grain-with-caramel-fortified-with-vitamins-and-chemical-elements",
     "name": "Grains de blé soufflés au caramel enrichis en vitamines et minéraux"
   },
   {
-    "key": "en:popped-wheat-grain-with-honey",
-    "name": "Grains de blé soufflés au miel"
-  },
-  {
     "key": "en:popped-wheat-grain-with-honey-fortified-with-vitamins-and-chemical-elements",
     "name": "Grains de blé soufflés au miel enrichis en vitamines et minéraux"
-  },
-  {
-    "key": "en:chocolate-puffed-wheat-grains",
-    "name": "Grains de blé soufflés chocolatés"
   },
   {
     "key": "en:chocolate-puffed-wheat-grains-fortified-with-vitamins-and-chemical-elements",
@@ -252,6 +272,10 @@
     "name": "Pommes de terre vapeur sous vide"
   },
   {
+    "key": "en:licensed-products",
+    "name": "Produits sous license"
+  },
+  {
     "key": "fr:puligny-montrachet-premier-cru-sous-le-puits-blanc",
     "name": "Puligny-Montrachet premier cru Sous le Puits blanc"
   },
@@ -284,8 +308,16 @@
     "name": "Riz soufflé chocolaté non enrichi en vitamines et minéraux"
   },
   {
+    "key": "en:plain-puffed-rice",
+    "name": "Riz soufflé nature"
+  },
+  {
     "key": "en:puffed-rice-fortified-with-vitamins-and-chemical-elements",
     "name": "Riz soufflé nature enrichi en vitamines et minéraux"
+  },
+  {
+    "key": "en:sweetened-puffed-rice",
+    "name": "Riz soufflé sucré"
   },
   {
     "key": "fr:saint-aubin-premier-cru-sous-roche-dumay",
@@ -308,8 +340,16 @@
     "name": "Seigle soufflé"
   },
   {
+    "key": "en:shelf-stable-soup-additions",
+    "name": "Shelf-stable soup additions"
+  },
+  {
     "key": "en:puffed-soybeans",
     "name": "Soja soufflé"
+  },
+  {
+    "key": "en:tiger-nuts",
+    "name": "Souchet"
   },
   {
     "key": "en:cheese-souffle",
@@ -368,6 +408,10 @@
     "name": "Soupe au pistou déshydratée"
   },
   {
+    "key": "en:asparagus-soups-reheatable",
+    "name": "Soupe aux asperges à réchauffer"
+  },
+  {
     "key": "en:dehydrated-cereals-and-vegetables-soup",
     "name": "Soupe aux céréales et aux légumes déshydratée"
   },
@@ -378,10 +422,6 @@
   {
     "key": "en:reheatable-mixed-vegetables-soup",
     "name": "Soupe aux légumes variés à réchauffer"
-  },
-  {
-    "key": "en:lentils-soup",
-    "name": "Soupe aux lentilles"
   },
   {
     "key": "en:leek-and-potato-soup",
@@ -398,6 +438,14 @@
   {
     "key": "en:chorba-frik-soup-with-meat-and-frik",
     "name": "Soupe chorba frik à base de viande et de frik"
+  },
+  {
+    "key": "en:offals-soup",
+    "name": "Soupe d'abats"
+  },
+  {
+    "key": "en:frozen-offals-soup",
+    "name": "Soupe d'abats surgelés"
   },
   {
     "key": "es:sopa-de-habas",
@@ -434,6 +482,10 @@
   {
     "key": "en:soup-for-baby-with-vegetables-and-potatoes",
     "name": "Soupe pour bébé aux légumes et aux pommes de terre"
+  },
+  {
+    "key": "en:ramen-soup",
+    "name": "Soupe Ramen"
   },
   {
     "key": "en:soups",
@@ -496,7 +548,7 @@
     "name": "Soupes aux asperges"
   },
   {
-    "key": "en:dehydrated-asparagus-soup",
+    "key": "en:dehydrated-asparagus-soups",
     "name": "Soupes aux asperges déshydratées"
   },
   {
@@ -530,10 +582,6 @@
   {
     "key": "en:dehydrated-carrot-soups",
     "name": "Soupes de carottes déshydratées"
-  },
-  {
-    "key": "en:watercress-soups",
-    "name": "Soupes de cresson"
   },
   {
     "key": "fr:soupes-de-crevettes",
@@ -572,7 +620,7 @@
     "name": "Soupes de légumes surgelées"
   },
   {
-    "key": "en:soups-of-lentils",
+    "key": "en:lentil-soups",
     "name": "Soupes de lentilles"
   },
   {
@@ -628,6 +676,18 @@
     "name": "Soupes surgelées"
   },
   {
+    "key": "en:soups-prepared-shelf-stable",
+    "name": "Soups (prepared) (Shelf Stable)"
+  },
+  {
+    "key": "en:sour-beers",
+    "name": "Sour beers"
+  },
+  {
+    "key": "en:sour-ipa",
+    "name": "Sour IPA"
+  },
+  {
     "key": "fr:souris-d-agneau",
     "name": "Souris d'agneau"
   },
@@ -636,8 +696,16 @@
     "name": "South Australian wine"
   },
   {
+    "key": "en:pressurized-whipped-cream-substitutes",
+    "name": "Substituts de crème fouettée sous pression"
+  },
+  {
     "key": "en:sweet-and-sour-chicken",
     "name": "Sweet and sour chicken"
+  },
+  {
+    "key": "en:sweet-potato-soups",
+    "name": "Sweet potato soups"
   },
   {
     "key": "en:albacore-steamed-under-pressure",
@@ -650,5 +718,9 @@
   {
     "key": "fr:volnay-premier-cru-carelle-sous-la-chapelle",
     "name": "Volnay premier cru Carelle sous la Chapelle"
+  },
+  {
+    "key": "en:watercress-soups",
+    "name": "Watercress soups"
   }
 ]

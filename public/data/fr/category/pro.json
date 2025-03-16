@@ -8,6 +8,14 @@
     "name": "Andouillettes provençales"
   },
   {
+    "key": "en:bakery-product-variety-packs",
+    "name": "Assortiments de pains et produits de boulangerie"
+  },
+  {
+    "key": "en:dairy-variety-packs",
+    "name": "Assortiments de produits laitiers"
+  },
+  {
     "key": "en:beware-multiple-products",
     "name": "Attention produits multiples"
   },
@@ -60,6 +68,10 @@
     "name": "Cypriot meat products"
   },
   {
+    "key": "en:dairy-by-products",
+    "name": "Dairy by-products"
+  },
+  {
     "key": "fr:eau-de-vie-de-vin-originaire-de-provence",
     "name": "Eau-de-vie de vin originaire de Provence"
   },
@@ -74,6 +86,10 @@
   {
     "key": "en:finnish-bakery-products",
     "name": "Finnish bakery products"
+  },
+  {
+    "key": "en:frozen-cereals-and-their-products",
+    "name": "Frozen cereals and their products"
   },
   {
     "key": "en:fruits-based-foods",
@@ -128,6 +144,10 @@
     "name": "Marc de Provence"
   },
   {
+    "key": "en:incorrect-product-type",
+    "name": "Mauvais product type"
+  },
+  {
     "key": "fr:miels-de-provence",
     "name": "Miels de Provence"
   },
@@ -172,12 +192,20 @@
     "name": "Préparations à base de miel et propolis"
   },
   {
+    "key": "en:processed-cereals",
+    "name": "Processed cereals"
+  },
+  {
     "key": "en:products-for-specific-diets",
     "name": "Products for specific diets"
   },
   {
     "key": "en:seaweed-products",
     "name": "Produits à base d'algues"
+  },
+  {
+    "key": "en:dough-based-meals-variety-packs",
+    "name": "Produits à base de pâte"
   },
   {
     "key": "en:spreads",
@@ -288,7 +316,7 @@
     "name": "Produits de boulangerie hongrois"
   },
   {
-    "key": "en:dutch-bakery-products",
+    "key": "en:bakery-products-from-the-netherlands",
     "name": "Produits de boulangerie néerlandais"
   },
   {
@@ -408,11 +436,15 @@
     "name": "Produits fermentés"
   },
   {
+    "key": "en:products-that-cannot-be-found-in-metropolitan-france",
+    "name": "Produits introuvables en Métropole (pour la France)"
+  },
+  {
     "key": "en:dairies",
     "name": "Produits laitiers"
   },
   {
-    "key": "en:dairy-spread",
+    "key": "en:dairy-spreads",
     "name": "Produits laitiers à tartiner"
   },
   {
@@ -424,12 +456,24 @@
     "name": "Produits lyophilisés à reconstituer"
   },
   {
+    "key": "en:unpasteurised-products",
+    "name": "Produits non pasteurisés"
+  },
+  {
     "key": "en:breaded-products",
     "name": "Produits panés"
   },
   {
+    "key": "en:pasteurised-products",
+    "name": "Produits pasteurisés"
+  },
+  {
     "key": "en:products-without-gluten",
     "name": "Produits sans gluten"
+  },
+  {
+    "key": "en:licensed-products",
+    "name": "Produits sous license"
   },
   {
     "key": "en:thermogenics",
@@ -438,6 +482,10 @@
   {
     "key": "en:tripe-dishes",
     "name": "Produits tripiers"
+  },
+  {
+    "key": "en:vegan-products",
+    "name": "Produits veganes"
   },
   {
     "key": "en:non-dairy-fermented-foods",
@@ -512,6 +560,10 @@
     "name": "Provolone"
   },
   {
+    "key": "en:smoked-provolone",
+    "name": "Provolone fumé"
+  },
+  {
     "key": "en:provencale-sauces",
     "name": "Sauces provençales"
   },
@@ -550,9 +602,5 @@
   {
     "key": "en:provencal-style-tomatoes",
     "name": "Tomates à la provençale"
-  },
-  {
-    "key": "en:turkey-and-its-products",
-    "name": "Turkey and its products"
   }
 ]

@@ -1,142 +1,318 @@
 [
   {
-    "key": "en:alcohol-vinegars",
-    "name": "Alcohol vinegars"
+    "key": "en:10-red-wine",
+    "name": "10% crnog vina"
   },
   {
-    "key": "en:balsamic-vinegars",
-    "name": "Balsamic vinegars"
+    "key": "en:11-red-wine",
+    "name": "11% crnog vina"
   },
   {
-    "key": "en:balsamic-vinegars-of-modena",
-    "name": "Balsamic vinegars of Modena"
+    "key": "en:12-red-wine",
+    "name": "12% crnog vina"
   },
   {
-    "key": "en:black-rice-vinegars",
-    "name": "Black rice vinegars"
+    "key": "en:13-red-wine",
+    "name": "13% crnog vina"
   },
   {
-    "key": "en:black-vinegars",
-    "name": "Black vinegars"
+    "key": "en:wine-based-alcoholic-beverages",
+    "name": "Alkoholna pića na bazi vina"
   },
   {
-    "key": "en:cider-vinegars",
-    "name": "Cider vinegars"
+    "key": "en:flavoured-wines",
+    "name": "Aromatizirana vina"
+  },
+  {
+    "key": "en:beer-vinegars",
+    "name": "Beer vinegars"
+  },
+  {
+    "key": "en:non-alcoholic-wines",
+    "name": "Bezalkoholna vina"
+  },
+  {
+    "key": "en:white-wines",
+    "name": "Bijela vina"
+  },
+  {
+    "key": "en:white-wine-vinegars",
+    "name": "Bijeli vinski ocat"
+  },
+  {
+    "key": "en:burgundy-wines",
+    "name": "Bordo vina"
+  },
+  {
+    "key": "en:champaign-vinegars",
+    "name": "Champaign vinegars"
+  },
+  {
+    "key": "en:coconut-vinegars",
+    "name": "Coconut vinegars"
+  },
+  {
+    "key": "en:red-wine-vinegars",
+    "name": "Crni vinski ocat"
+  },
+  {
+    "key": "en:red-wines",
+    "name": "Crvena vina"
+  },
+  {
+    "key": "en:danish-wines",
+    "name": "Danska vina"
+  },
+  {
+    "key": "en:dessert-wines",
+    "name": "Desertna vina"
   },
   {
     "key": "en:dorset-blue-vinney",
     "name": "Dorset Blue Vinney"
   },
   {
-    "key": "en:glazes-with-balsamic-vinegar",
-    "name": "Glazes with balsamic vinegar"
+    "key": "en:mackerel-fillets-in-white-wine-and-herbs",
+    "name": "Fileti skuše u bijelom vinu i začinskom bilju"
   },
   {
-    "key": "en:glazes-with-vinegar",
-    "name": "Glazes with vinegar"
+    "key": "en:french-sparkling-wines",
+    "name": "Francuska pjenušava vina"
+  },
+  {
+    "key": "en:glazes-with-balsamic-vinegar",
+    "name": "Glazes with balsamic vinegar"
   },
   {
     "key": "en:glazes-with-white-vinegar",
     "name": "Glazes with white vinegar"
   },
   {
-    "key": "en:honey-vinegars",
-    "name": "Honey vinegars"
+    "key": "en:goji-vinegars",
+    "name": "Goji vinegars"
   },
   {
-    "key": "en:japanese-rice-vinegars",
-    "name": "Japanese rice vinegars"
+    "key": "en:jujube-vinegars",
+    "name": "Jujube vinegars"
   },
   {
-    "key": "en:red-rice-vinegars",
-    "name": "Red rice vinegars"
+    "key": "en:kaki-vinegars",
+    "name": "Kaki vinegars"
   },
   {
-    "key": "en:red-wine-vinegars",
-    "name": "Red wine vinegars"
+    "key": "en:cooking-wines",
+    "name": "Kuhanje vina"
   },
   {
-    "key": "en:rice-vinegars",
-    "name": "Rice vinegars"
+    "key": "en:maconnais-wines",
+    "name": "Maconnais vina"
+  },
+  {
+    "key": "en:medoc-wines",
+    "name": "Medočka vina"
+  },
+  {
+    "key": "en:stuffed-vine-leaves",
+    "name": "Nadjeveno lišće vinove loze"
+  },
+  {
+    "key": "en:dutch-wines",
+    "name": "Nizozemska vina"
+  },
+  {
+    "key": "en:organic-red-wines",
+    "name": "Organska crna vina"
+  },
+  {
+    "key": "en:perry-vinegars",
+    "name": "Perry vinegars"
+  },
+  {
+    "key": "en:wine-based-drinks",
+    "name": "Pića na bazi vina"
+  },
+  {
+    "key": "en:sparkling-wines",
+    "name": "Pjenušava vina"
+  },
+  {
+    "key": "en:fortified-wines",
+    "name": "Pojačana vina"
+  },
+  {
+    "key": "en:fortified-wines-such-as-natural-sweet-wines",
+    "name": "Pojačana vina kao što su prirodna slatka vina"
+  },
+  {
+    "key": "en:pomegranate-vinegars",
+    "name": "Pomegranate vinegars"
   },
   {
     "key": "en:rice-wine-vinegars",
-    "name": "Rice wine vinegars"
+    "name": "Rižin vinski ocat"
   },
   {
     "key": "en:roscos-de-vino",
     "name": "Roscos de vino"
   },
   {
-    "key": "en:salt-and-malt-vinegar-crisps",
-    "name": "Salt and malt vinegar crisps"
+    "key": "en:rose-wines",
+    "name": "Ružičasta vina"
   },
   {
-    "key": "en:salt-and-vinegar-crisps",
-    "name": "Salt and vinegar crisps"
+    "key": "en:sweet-wines",
+    "name": "Slatka vina"
   },
   {
-    "key": "en:spanish-vinegars",
-    "name": "Spanish vinegars"
+    "key": "en:slovenian-wines",
+    "name": "Slovenska vina"
   },
   {
-    "key": "en:stuffed-vine-leaves",
-    "name": "Stuffed vine leaves"
+    "key": "en:dry-white-wines",
+    "name": "Suha bijela vina"
   },
   {
-    "key": "en:sugarcane-vinegars",
-    "name": "Sugarcane vinegars"
+    "key": "en:swiss-wines",
+    "name": "Švicarska vina"
   },
   {
-    "key": "en:tomato-vinegars",
-    "name": "Tomato vinegars"
+    "key": "en:white-wine-sauces",
+    "name": "Umaci od bijelog vina"
   },
   {
-    "key": "en:traditional-balsamic-vinegar-of-modena",
-    "name": "Traditional Balsamic Vinegar of Modena"
+    "key": "en:red-wine-sauces",
+    "name": "Umaci od crnog vina"
   },
   {
-    "key": "en:traditional-balsamic-vinegar-of-reggio-emilia",
-    "name": "Traditional Balsamic Vinegar of Reggio Emilia"
-  },
-  {
-    "key": "en:traditional-balsamic-vinegars",
-    "name": "Traditional Balsamic Vinegars"
-  },
-  {
-    "key": "en:umeboshi-vinegars",
-    "name": "Umeboshi vinegars"
+    "key": "en:muscat-wine-sauce",
+    "name": "Umak od muškatnog vina"
   },
   {
     "key": "en:wines",
     "name": "Vina"
   },
   {
+    "key": "en:wines-from-albania",
+    "name": "Vina iz albanije"
+  },
+  {
+    "key": "en:wines-from-algeria",
+    "name": "Vina iz alžira"
+  },
+  {
+    "key": "en:wines-from-america",
+    "name": "Vina iz amerike"
+  },
+  {
+    "key": "en:wines-from-argentina",
+    "name": "Vina iz argentine"
+  },
+  {
+    "key": "en:wines-from-armenia",
+    "name": "Vina iz Armenije"
+  },
+  {
+    "key": "en:wines-from-australia",
+    "name": "Vina iz Australije"
+  },
+  {
+    "key": "en:wines-from-austria",
+    "name": "Vina iz austrije"
+  },
+  {
+    "key": "en:wines-from-belgium",
+    "name": "Vina iz belgije"
+  },
+  {
+    "key": "en:wines-from-brazil",
+    "name": "Vina iz brazila"
+  },
+  {
+    "key": "en:wines-from-bulgaria",
+    "name": "Vina iz bugarske"
+  },
+  {
+    "key": "en:wines-from-czech-republic",
+    "name": "Vina iz Češke"
+  },
+  {
+    "key": "en:wines-from-chile",
+    "name": "Vina iz čilea"
+  },
+  {
+    "key": "en:wines-from-france",
+    "name": "Vina iz Francuske"
+  },
+  {
+    "key": "en:wines-from-greece",
+    "name": "Vina iz grčke"
+  },
+  {
+    "key": "en:wines-from-georgia",
+    "name": "Vina iz Gruzije"
+  },
+  {
+    "key": "en:wines-from-italy",
+    "name": "Vina iz italije"
+  },
+  {
+    "key": "en:wines-from-south-africa",
+    "name": "Vina iz južne afrike"
+  },
+  {
+    "key": "en:wines-from-california",
+    "name": "Vina iz kalifornije"
+  },
+  {
+    "key": "en:wines-from-luxembourg",
+    "name": "Vina iz Luksemburga"
+  },
+  {
+    "key": "en:wines-from-hungary",
+    "name": "Vina iz Mađarske"
+  },
+  {
+    "key": "en:wines-from-germany",
+    "name": "Vina iz njemačke"
+  },
+  {
+    "key": "en:wines-from-portugal",
+    "name": "Vina iz portugala"
+  },
+  {
+    "key": "en:wines-from-spain",
+    "name": "Vina iz Španjolske"
+  },
+  {
+    "key": "en:wines-from-malta",
+    "name": "Vina s malte"
+  },
+  {
+    "key": "en:wine-without-geographic-indication",
+    "name": "Vino bez oznake zemljopisnog podrijetla"
+  },
+  {
+    "key": "en:madeira-wine",
+    "name": "Vino madeira"
+  },
+  {
+    "key": "hr:vino-marsala",
+    "name": "Vino marsala"
+  },
+  {
     "key": "en:vinaigrettes",
-    "name": "Vinaigrettes"
-  },
-  {
-    "key": "en:vinegars",
-    "name": "Vinegars"
-  },
-  {
-    "key": "en:white-rice-vinegars",
-    "name": "White rice vinegars"
-  },
-  {
-    "key": "en:white-vinegars",
-    "name": "White vinegars"
-  },
-  {
-    "key": "en:white-wine-vinegars",
-    "name": "White wine vinegars"
+    "name": "Vinogrete"
   },
   {
     "key": "en:wine-vinegars",
-    "name": "Wine vinegars"
+    "name": "Vinske octe"
   },
   {
-    "key": "en:xeres-vinegars",
-    "name": "Xeres vinegars"
+    "key": "en:wine-sauces",
+    "name": "Vinske umake"
+  },
+  {
+    "key": "en:wine-jellies",
+    "name": "Vinski želei"
   }
 ]

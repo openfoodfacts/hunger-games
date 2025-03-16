@@ -48,12 +48,24 @@
     "name": "Duurzaam Zeevruchten MSC"
   },
   {
+    "key": "en:fairtrade-australia-and-new-zealand",
+    "name": "Fairtrade Australia and New Zealand"
+  },
+  {
     "key": "en:low-or-no-salt",
     "name": "Geen of weinig zout"
   },
   {
     "key": "en:made-in-swiss",
     "name": "Geproduceerd in Zwitserland"
+  },
+  {
+    "key": "en:fed-without-soy",
+    "name": "Gevoerd zonder soja"
+  },
+  {
+    "key": "en:high-in-zinc",
+    "name": "High in zinc"
   },
   {
     "key": "en:with-sweeteners",
@@ -120,6 +132,10 @@
     "name": "ZA-BIO-171"
   },
   {
+    "key": "en:zinc-source",
+    "name": "Zinc source"
+  },
+  {
     "key": "en:zm-bio-141",
     "name": "ZM-BIO-141"
   },
@@ -136,6 +152,10 @@
     "name": "Zonder"
   },
   {
+    "key": "en:without-allergens",
+    "name": "Zonder allergenen"
+  },
+  {
     "key": "en:no-aspartame",
     "name": "Zonder Aspartaam"
   },
@@ -144,8 +164,16 @@
     "name": "Zonder bisfenol A"
   },
   {
+    "key": "en:without-brown-muscle",
+    "name": "Zonder bruine spier"
+  },
+  {
     "key": "en:no-eggs",
     "name": "Zonder eieren"
+  },
+  {
+    "key": "en:no-emulsifiers",
+    "name": "Zonder emulgatoren"
   },
   {
     "key": "en:no-gelatin",
@@ -176,16 +204,28 @@
     "name": "Zonder kunstmatige kleurstoffen"
   },
   {
+    "key": "en:no-artificial-colours-and-preservatives",
+    "name": "Zonder kunstmatige kleurstoffen en conserveermiddelen"
+  },
+  {
     "key": "en:no-artificial-colours-or-flavours",
     "name": "Zonder kunstmatige kleurstoffen of smaakstoffen"
+  },
+  {
+    "key": "fr:sans-aromes-ni-colorants-artificiels",
+    "name": "Zonder kunstmatige smaakstoffen en kleurstoffen"
   },
   {
     "key": "en:no-artificial-sweeteners",
     "name": "Zonder kunstmatige suikers"
   },
   {
-    "key": "bg:без-изкуствени-добавки",
+    "key": "en:no-artificial-additives",
     "name": "Zonder kunstmatige toevoegingen"
+  },
+  {
+    "key": "en:without-sodium-nitrite",
+    "name": "Zonder natriumnitriet"
   },
   {
     "key": "en:no-nuts",
@@ -194,6 +234,14 @@
   {
     "key": "en:low-or-no-sugar",
     "name": "Zonder of weinig suiker"
+  },
+  {
+    "key": "en:fed-without-gmos",
+    "name": "Zonder OGM voedsel"
+  },
+  {
+    "key": "en:without-oil",
+    "name": "Zonder olie"
   },
   {
     "key": "en:no-palm-oil",
@@ -234,6 +282,10 @@
   {
     "key": "en:no-onion",
     "name": "Zonder ui"
+  },
+  {
+    "key": "en:saturated-fat-free",
+    "name": "Zonder verzadigde vetzuren"
   },
   {
     "key": "en:without-sweeteners",

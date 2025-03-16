@@ -1,11 +1,59 @@
 [
   {
+    "key": "en:baguette-sandwich-with-merguez-sausage",
+    "name": "Baguette-Sandwich mit Merguez-Wurst"
+  },
+  {
+    "key": "en:baguette-sandwiches-with-vegetables-and-mayonnaise",
+    "name": "Baguette-Sandwiches mit Gemüse und Mayonnaise"
+  },
+  {
+    "key": "en:baguette-sandwiches-with-salami-and-butter",
+    "name": "Baguette-Sandwiches mit Salami und Butter"
+  },
+  {
+    "key": "en:baguette-sandwiches-with-ham-and-butter",
+    "name": "Baguette-Sandwiches mit Schinken und Butter"
+  },
+  {
+    "key": "en:baguette-sandwiches-with-ham-and-emmental-cheese",
+    "name": "Baguette-Sandwiches mit Schinken und Emmentaler Käse"
+  },
+  {
     "key": "en:beers-with-chestnut",
     "name": "Biere mit Kastanien"
   },
   {
-    "key": "en:biscuit-with-fruit-covering",
+    "key": "en:pear-tart-with-almonds",
+    "name": "Birnentorte mit Mandeln"
+  },
+  {
+    "key": "en:tartlet-biscuits-with-fruit-preparation",
     "name": "Biscuit mit Fruchtüberzug"
+  },
+  {
+    "key": "en:breads-mith-malted-grains",
+    "name": "Breads mith malted grains"
+  },
+  {
+    "key": "en:sausage-bacon-and-egg-sandwiches",
+    "name": "Brötchen mit Wurst"
+  },
+  {
+    "key": "en:camembert-with-calvados",
+    "name": "Camembert mit Calvados"
+  },
+  {
+    "key": "en:cola-with-sugar",
+    "name": "Cola mit Zucker"
+  },
+  {
+    "key": "en:cola-with-sugar-and-artificial-sweetener",
+    "name": "Cola mit Zucker und künstlichen Süßstoffen"
+  },
+  {
+    "key": "en:cola-with-sugar-and-without-caffeine",
+    "name": "Cola mit Zucker und ohne Koffein"
   },
   {
     "key": "en:cookies-with-milk-chocolate",
@@ -26,6 +74,10 @@
   {
     "key": "en:filled-crepes-with-chocolate",
     "name": "Crêpes gefüllt mit Schokolade"
+  },
+  {
+    "key": "en:crepe-filled-with-strawberries",
+    "name": "Crêpes mit Erdbeeren gefüllt"
   },
   {
     "key": "en:dark-chocolates-with-fleur-de-sel",
@@ -64,11 +116,15 @@
     "name": "Dunkle Schokoladen mit Süßungsmitteln"
   },
   {
+    "key": "en:ice-cream-bars-coated-with-chocolate",
+    "name": "Eis am Stiel überzogen mit Schokolade"
+  },
+  {
     "key": "fr:glaces-aux-amandes",
     "name": "Eiskrem mit Mandeln"
   },
   {
-    "key": "fr:glaces-aux-fruits-rouges",
+    "key": "en:berries-ice-cream-tubs",
     "name": "Eiskrem mit roten Früchten"
   },
   {
@@ -80,16 +136,36 @@
     "name": "Energydrink mit Zucker"
   },
   {
-    "key": "en:chocolate-covered-peanuts",
+    "key": "fr:terrines-de-canard-aux-morilles",
+    "name": "Ententerrine mit Morcheln"
+  },
+  {
+    "key": "en:chocolate-coated-peanuts",
     "name": "Erdnüsse mit Schokoladenüberzug"
   },
   {
-    "key": "en:chocolate-covered-fruits",
+    "key": "en:fresh-pasta-stuffed-with-vegetables",
+    "name": "Frische Pasta gefüllt mit Gemüse"
+  },
+  {
+    "key": "en:fresh-pasta-stuffed-with-cheese",
+    "name": "Frische Pasta mit Käse gefüllt"
+  },
+  {
+    "key": "en:chocolate-coated-fruits",
     "name": "Früchte mit Schokoladenüberzug"
   },
   {
     "key": "en:fruit-yogurts-with-fruit-chunks",
     "name": "Fruchtjoghurt mit Fruchtstücken"
+  },
+  {
+    "key": "en:yogurts-with-fruits-and-sugar",
+    "name": "Fruchtjoghurts mit Zucker"
+  },
+  {
+    "key": "en:carbonated-fruit-soft-drink",
+    "name": "Fruchtlimonade mit Kohlensäure"
   },
   {
     "key": "en:low-sugar-fruit-jam",
@@ -98,6 +174,10 @@
   {
     "key": "en:cereals-with-fruits",
     "name": "Frühstückscerealien mit Früchten"
+  },
+  {
+    "key": "en:sandwiches-with-vegetables-and-mayonnaise",
+    "name": "Gemüse-Sandwiches mit Mayonnaise"
   },
   {
     "key": "en:puffed-corn-cakes-with-black-chocolate",
@@ -152,8 +232,20 @@
     "name": "Hartweizennudeln mit Ei"
   },
   {
+    "key": "en:instant-chicory-with-water",
+    "name": "Instant-Chicorée mit Wasser"
+  },
+  {
+    "key": "en:instant-powder-for-coffee-with-milk",
+    "name": "Instantpulver für Kaffee mit Milch"
+  },
+  {
     "key": "en:yogurts-with-cereals",
     "name": "Joghurt mit Müsli"
+  },
+  {
+    "key": "en:coffee-with-milk-with-sugar",
+    "name": "Kaffee mit Milch und Zucker"
   },
   {
     "key": "en:chocolate-sandwich-cookies",
@@ -170,6 +262,10 @@
   {
     "key": "en:cheesecake-with-red-berries",
     "name": "Käsekuchen mit roten Beeren"
+  },
+  {
+    "key": "en:chewing-gum-with-sugar",
+    "name": "Kaugummi mit Zucker"
   },
   {
     "key": "en:dark-chocolate-biscuits",
@@ -224,7 +320,7 @@
     "name": "Madeleines mit Schokolade"
   },
   {
-    "key": "en:chocolate-covered-almonds",
+    "key": "en:chocolate-coated-almonds",
     "name": "Mandeln mit Schokoladenüberzug"
   },
   {
@@ -242,6 +338,10 @@
   {
     "key": "en:mantecados-and-polvorones-with-vegetal-fat",
     "name": "Mantecados und Polvorón mit pflanzlichem Fett"
+  },
+  {
+    "key": "en:margarines-high-in-omega-3",
+    "name": "Margarinen mit hohem Omega-3-Gehalt"
   },
   {
     "key": "en:shelled-chestnuts",
@@ -308,6 +408,10 @@
     "name": "Mittelkornreis"
   },
   {
+    "key": "en:mediterranean-mussels",
+    "name": "Mittelmeer-Muscheln"
+  },
+  {
     "key": "de:mittelrhein",
     "name": "Mittelrhein"
   },
@@ -328,6 +432,10 @@
     "name": "Münsterkäse mit Rohmilch"
   },
   {
+    "key": "en:mussels-with-escabeche",
+    "name": "Muscheln mit Escabeche"
+  },
+  {
     "key": "en:banana-cereal-bars",
     "name": "Müsliriegel mit Bananenstückchen"
   },
@@ -344,6 +452,10 @@
     "name": "Müslis mit Früchten"
   },
   {
+    "key": "en:mueslis-with-nuts",
+    "name": "Müslis mit Nüssen"
+  },
+  {
     "key": "en:mueslis-with-chocolate",
     "name": "Müslis mit Schokolade"
   },
@@ -354,6 +466,34 @@
   {
     "key": "en:mildly-carbonated-natural-mineral-water",
     "name": "Natürliches Mineralwasser mit wenig Kohlensäure versetzt"
+  },
+  {
+    "key": "en:pasta-with-fish",
+    "name": "Nudeln mit Fisch"
+  },
+  {
+    "key": "en:pasta-with-meat",
+    "name": "Nudeln mit Fleisch"
+  },
+  {
+    "key": "en:pasta-stuffed-with-meat",
+    "name": "Nudeln mit Fleischfüllung"
+  },
+  {
+    "key": "en:pasta-with-mushrooms",
+    "name": "Nudeln mit Pilzen"
+  },
+  {
+    "key": "en:pasta-with-beef",
+    "name": "Nudeln mit Rindfleisch"
+  },
+  {
+    "key": "en:pasta-with-pork",
+    "name": "Nudeln mit Schweinefleisch"
+  },
+  {
+    "key": "en:orange-juices-with-pulp",
+    "name": "Orangensaft mit Fruchtfleisch"
   },
   {
     "key": "en:ouzo-of-mitilene",
@@ -376,12 +516,32 @@
     "name": "Quiche mit Speck"
   },
   {
+    "key": "en:beef-stew-with-carrots",
+    "name": "Rindfleischeintopf mit Karotten"
+  },
+  {
+    "key": "en:sandwich-with-egg-and-vegetables-and-mayonnaise",
+    "name": "Sandwich mit Ei und Gemüse und Mayonnaise"
+  },
+  {
+    "key": "en:sandwich-with-pate-and-pickles",
+    "name": "Sandwich mit Pastete und Gurken"
+  },
+  {
     "key": "en:sandwiches-filled-with-cold-cuts",
     "name": "Sandwiche belegt mit Aufschnitt"
   },
   {
-    "key": "en:vegetable-sandwiches",
+    "key": "en:raw-vegetable-sandwiches",
     "name": "Sandwiches mit rohem Gemüse"
+  },
+  {
+    "key": "en:sandwiches-with-ham-and-emmental-cheese-and-butter",
+    "name": "Sandwiches mit Schinken"
+  },
+  {
+    "key": "en:sandwiches-with-ham-and-emmental-cheese",
+    "name": "Sandwiches mit Schinken und Emmentaler Käse"
   },
   {
     "key": "en:ham-and-cheese-sandwiches",
@@ -432,6 +592,10 @@
     "name": "Schokoladen mit Süßungsmitteln"
   },
   {
+    "key": "fr:pains-au-chocolat-a-l-huile-de-tournesol",
+    "name": "Schokoladen-Croissants mit Sonnenblumenöl"
+  },
+  {
     "key": "en:chocolate-nuts-cookie-bars",
     "name": "Schokoladenkekse mit Nüssen"
   },
@@ -449,7 +613,11 @@
   },
   {
     "key": "en:lemon-flavored-black-teas",
-    "name": "Schwarztees mit Zitronenaroma"
+    "name": "Schwarze Tees mit Zitronenaroma"
+  },
+  {
+    "key": "en:shandy-with-less-than-1-of-alcohol",
+    "name": "Shandy mit weniger als 1° Alkohol"
   },
   {
     "key": "en:mixed-fruit-soy-yogurts",
@@ -458,6 +626,18 @@
   {
     "key": "en:tropical-fruits-soy-yogurts",
     "name": "Sojajoghurt mit tropischen Früchten"
+  },
+  {
+    "key": "en:still-soft-drink-with-tea-extract",
+    "name": "Stillgetränk mit Teeextrakt"
+  },
+  {
+    "key": "en:soup-for-baby-with-vegetables-and-cereals-and-milk",
+    "name": "Suppe für Baby mit Gemüse"
+  },
+  {
+    "key": "en:soup-for-baby-with-vegetables-and-potatoes",
+    "name": "Suppe für Baby mit Gemüse und Kartoffeln"
   },
   {
     "key": "en:tabbouleh-with-olive-oil",
@@ -476,8 +656,60 @@
     "name": "Tees mit Bergamotte"
   },
   {
+    "key": "en:sandwich-with-tuna-and-vegetables",
+    "name": "Thunfisch-Sandwich mit Gemüse"
+  },
+  {
+    "key": "en:tomato-sauces-with-basil",
+    "name": "Tomatensaucen mit Basilikum"
+  },
+  {
+    "key": "en:tomato-sauces-with-vegetables",
+    "name": "Tomatensaucen mit Gemüse"
+  },
+  {
+    "key": "en:tomato-sauces-with-cheese",
+    "name": "Tomatensaucen mit Käse"
+  },
+  {
+    "key": "en:tomato-sauces-with-olives",
+    "name": "Tomatensaucen mit Oliven"
+  },
+  {
+    "key": "fr:tortellini-au-poulet",
+    "name": "Tortellini mit Hühnchen"
+  },
+  {
+    "key": "fr:tortellini-au-fromage",
+    "name": "Tortellini mit Käse"
+  },
+  {
+    "key": "fr:tortellini-aux-quatre-fromages",
+    "name": "Tortellini mit vier Käsesorten"
+  },
+  {
     "key": "en:fruit-tarts",
     "name": "Torten mit obst"
+  },
+  {
+    "key": "en:vanilla-ice-cream-bars-coated-with-dark-chocolate",
+    "name": "Vanilleeis am Stiel überzogen mit dunkle Schokolade"
+  },
+  {
+    "key": "en:vanilla-ice-cream-bars-coated-with-milk-chocolate",
+    "name": "Vanilleeis am Stiel überzogen mit Milchschokolade"
+  },
+  {
+    "key": "en:vanilla-ice-cream-bars-coated-with-milk-chocolate-and-almonds",
+    "name": "Vanilleeis am Stiel überzogen mit Milchschokolade und Mandeln"
+  },
+  {
+    "key": "en:vanilla-ice-cream-bars-coated-with-white-chocolate",
+    "name": "Vanilleeis am Stiel überzogen mit weiße Schokolade"
+  },
+  {
+    "key": "en:vanilla-ice-cream-bars-coated-with-white-chocolate-and-almonds",
+    "name": "Vanilleeis am Stiel überzogen mit weiße Schokolade und Mandeln"
   },
   {
     "key": "en:almond-creme-filled-wafers",
@@ -498,6 +730,10 @@
   {
     "key": "en:soft-cheese-with-a-natural-rind",
     "name": "Weichkäse mit Naturrinde"
+  },
+  {
+    "key": "en:white-chocolate-bar-with-praline",
+    "name": "Weiße Schokolade mit Praliné"
   },
   {
     "key": "en:white-chocolates-with-hazelnuts",

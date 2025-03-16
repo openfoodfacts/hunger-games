@@ -40,6 +40,10 @@
     "name": "Alcaparrones encurtidos"
   },
   {
+    "key": "en:pure-alcohol",
+    "name": "Alcohol puro"
+  },
+  {
     "key": "en:alcohol-free-cocktails",
     "name": "Alcohol-free cocktails"
   },
@@ -52,16 +56,32 @@
     "name": "Bebidas alcohólicas"
   },
   {
+    "key": "en:beer-based-alcoholic-beverages",
+    "name": "Bebidas alcohólicas a base de cerveza"
+  },
+  {
+    "key": "en:rum-based-alcoholic-beverages",
+    "name": "Bebidas alcohólicas a base de ron"
+  },
+  {
+    "key": "en:wine-based-alcoholic-beverages",
+    "name": "Bebidas alcohólicas a base de vino"
+  },
+  {
+    "key": "en:vodka-based-alcoholic-beverages",
+    "name": "Bebidas alcohólicas a base de vodka"
+  },
+  {
+    "key": "en:artisanal-spirits",
+    "name": "Bebidas alcohólicas artesanas"
+  },
+  {
+    "key": "en:premixed-alcoholic-beverages",
+    "name": "Bebidas alcohólicas premezcladas"
+  },
+  {
     "key": "en:non-alcoholic-beverages",
     "name": "Bebidas no alcohólicas"
-  },
-  {
-    "key": "en:beer-based-alcoholic-beverages",
-    "name": "Beer-based alcoholic beverages"
-  },
-  {
-    "key": "en:beers-with-low-alcohol-content",
-    "name": "Beers with low alcohol-content"
   },
   {
     "key": "en:non-alcoholic-beers",
@@ -80,8 +100,40 @@
     "name": "Eggnog without alcohol"
   },
   {
+    "key": "en:non-alcoholic-ipa",
+    "name": "IPA sin alcohol"
+  },
+  {
+    "key": "en:alcohol-making-kits",
+    "name": "Kits para hacer alcohol"
+  },
+  {
     "key": "es:miel-de-la-alcarria",
     "name": "Miel de La Alcarria"
+  },
+  {
+    "key": "en:non-grape-alcoholic-beverages",
+    "name": "Non grape alcoholic beverages"
+  },
+  {
+    "key": "en:non-alcoholic-cherry-kriek",
+    "name": "Non-alcoholic cherry kriek"
+  },
+  {
+    "key": "en:non-alcoholic-lager-beers",
+    "name": "Non-alcoholic lager beers"
+  },
+  {
+    "key": "en:non-alcoholic-organic-beers",
+    "name": "Non-alcoholic organic beers"
+  },
+  {
+    "key": "en:non-alcoholic-pilsner-beers",
+    "name": "Non-alcoholic pilsner beers"
+  },
+  {
+    "key": "en:non-alcoholic-radler-beers",
+    "name": "Non-alcoholic radler beers"
   },
   {
     "key": "en:non-alcoholic-wheat-beers",
@@ -92,20 +144,20 @@
     "name": "Non-alcoholic wines"
   },
   {
-    "key": "en:premixed-alcoholic-beverages",
-    "name": "Premixed alcoholic beverages"
+    "key": "en:non-alcoholic-instant-beverages-variety-packs",
+    "name": "Packs variados de bebidas instantáneas sin alcohol"
+  },
+  {
+    "key": "en:alcoholic-beverages-variety-packs",
+    "name": "Paquetes variados de bebidas alcohólicas"
+  },
+  {
+    "key": "en:non-alcoholic-beverages-variety-packs",
+    "name": "Paquetes variados de bebidas sin alcohol"
   },
   {
     "key": "en:punch-cocktail-with-16-alcohol",
     "name": "Punch cocktail with 16% alcohol"
-  },
-  {
-    "key": "en:pure-alcohol",
-    "name": "Pure alcohol"
-  },
-  {
-    "key": "en:rum-based-alcoholic-beverages",
-    "name": "Rum-based alcoholic beverages"
   },
   {
     "key": "en:caraway-seeds",
@@ -113,7 +165,11 @@
   },
   {
     "key": "en:shandy-with-less-than-1-of-alcohol",
-    "name": "Shandy with less than 1° of alcohol"
+    "name": "Shandy con menos de 1° de alcohol"
+  },
+  {
+    "key": "en:non-alcoholic-ciders",
+    "name": "Sidras sin alcohol"
   },
   {
     "key": "en:vanilla-alcoholic-extract",
@@ -122,13 +178,5 @@
   {
     "key": "en:alcohol-vinegars",
     "name": "Vinagres de alcohol"
-  },
-  {
-    "key": "en:vodka-based-alcoholic-beverages",
-    "name": "Vodka-based alcoholic beverages"
-  },
-  {
-    "key": "en:wine-based-alcoholic-beverages",
-    "name": "Wine-based alcoholic beverages"
   }
 ]

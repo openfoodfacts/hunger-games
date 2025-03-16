@@ -60,6 +60,10 @@
     "name": "Black salsify"
   },
   {
+    "key": "en:brazil-nuts-salted",
+    "name": "Brazil nuts(salted)"
+  },
+  {
     "key": "en:british-salts",
     "name": "British salts"
   },
@@ -92,12 +96,20 @@
     "name": "Cantal Salers"
   },
   {
+    "key": "en:carrot-salads",
+    "name": "Carrot salads"
+  },
+  {
     "key": "en:celery-salt",
     "name": "Celery salt"
   },
   {
     "key": "en:chicken-salads",
     "name": "Chicken salads"
+  },
+  {
+    "key": "en:chicken-salami",
+    "name": "Chicken salami"
   },
   {
     "key": "en:cooked-curing-salted-roast-poultry",
@@ -144,6 +156,10 @@
     "name": "Fresh fruit salad"
   },
   {
+    "key": "en:fresh-salsify",
+    "name": "Fresh salsify"
+  },
+  {
     "key": "en:frozen-raw-salsify",
     "name": "Frozen raw salsify"
   },
@@ -152,8 +168,20 @@
     "name": "Frozen salads"
   },
   {
+    "key": "en:frozen-salmon-fillets",
+    "name": "Frozen salmon fillets"
+  },
+  {
     "key": "en:frozen-salsify",
     "name": "Frozen salsify"
+  },
+  {
+    "key": "en:frozen-salty-snacks",
+    "name": "Frozen salty snacks"
+  },
+  {
+    "key": "en:frozen-wild-salmons",
+    "name": "Frozen wild salmons"
   },
   {
     "key": "en:fruit-biscuits-with-reduced-salt",
@@ -208,8 +236,16 @@
     "name": "Irish salts"
   },
   {
+    "key": "en:italian-salami",
+    "name": "Italian salami"
+  },
+  {
     "key": "en:italian-salts",
     "name": "Italian salts"
+  },
+  {
+    "key": "en:kłodawa-salt",
+    "name": "Kłodawa salt"
   },
   {
     "key": "en:leaf-salads",
@@ -234,6 +270,10 @@
   {
     "key": "en:london-cure-smoked-salmon",
     "name": "London Cure Smoked Salmon"
+  },
+  {
+    "key": "en:low-sodium-salts",
+    "name": "Low-sodium salts"
   },
   {
     "key": "en:meals-with-salmon",
@@ -308,6 +348,14 @@
     "name": "Peanuts cooked in water with salt"
   },
   {
+    "key": "en:pecan-nuts-roasted-and-salted",
+    "name": "Pecan nuts(roasted and salted)"
+  },
+  {
+    "key": "en:pecan-nuts-salted",
+    "name": "Pecan nuts(salted)"
+  },
+  {
     "key": "en:piemontese-salads",
     "name": "Piemontese salads"
   },
@@ -324,12 +372,16 @@
     "name": "Pink salmon rillettes"
   },
   {
-    "key": "en:pistachio-nut-grilled-salted",
-    "name": "Pistachio nut grilled salted"
+    "key": "en:pistachios-roasted-and-salted",
+    "name": "Pistachios (roasted and salted)"
   },
   {
     "key": "en:plain-salty-snacks",
     "name": "Plain salty snacks"
+  },
+  {
+    "key": "en:polish-salts",
+    "name": "Polish salts"
   },
   {
     "key": "en:pork-salami",
@@ -376,6 +428,10 @@
     "name": "Puffed salty snacks"
   },
   {
+    "key": "en:puffed-salty-snacks-potato-soy-based",
+    "name": "Puffed salty snacks (potato/soy based)"
+  },
+  {
     "key": "en:puffed-salty-snacks-made-from-maize",
     "name": "Puffed salty snacks made from maize"
   },
@@ -408,8 +464,16 @@
     "name": "Rice salads"
   },
   {
-    "key": "en:roasted-salted-almonds",
-    "name": "Roasted salted almonds"
+    "key": "en:roasted-and-salted-almonds",
+    "name": "Roasted and salted almonds"
+  },
+  {
+    "key": "en:rusks-without-salt",
+    "name": "Rusks without salt"
+  },
+  {
+    "key": "en:salad-creams",
+    "name": "Salad creams"
   },
   {
     "key": "en:salad-dressing-with-50-75-of-oil",
@@ -452,6 +516,10 @@
     "name": "Salami pork and beef"
   },
   {
+    "key": "en:salami-ungherese",
+    "name": "Salami ungherese"
+  },
+  {
     "key": "en:salema",
     "name": "Salema"
   },
@@ -478,6 +546,10 @@
   {
     "key": "en:salmon-oils",
     "name": "Salmon oils"
+  },
+  {
+    "key": "en:salmon-pates",
+    "name": "Salmon Pâtés"
   },
   {
     "key": "en:salmon-pizza",
@@ -584,10 +656,6 @@
     "name": "Salted almonds"
   },
   {
-    "key": "en:salted-and-grilled-almonds",
-    "name": "Salted and grilled almonds"
-  },
-  {
     "key": "en:salted-boiled-cod",
     "name": "Salted boiled cod"
   },
@@ -616,6 +684,10 @@
     "name": "Salted crispy crepe with cheese"
   },
   {
+    "key": "en:salted-crumbles",
+    "name": "Salted crumbles"
+  },
+  {
     "key": "en:salted-dark-chocolates",
     "name": "Salted dark chocolates"
   },
@@ -638,10 +710,6 @@
   {
     "key": "en:salted-peanuts",
     "name": "Salted peanuts"
-  },
-  {
-    "key": "en:salted-pecan-nut",
-    "name": "Salted pecan nut"
   },
   {
     "key": "en:salted-pies",
@@ -688,10 +756,6 @@
     "name": "Salty liquorice candies"
   },
   {
-    "key": "en:salty-palmiers",
-    "name": "Salty palmiers"
-  },
-  {
     "key": "en:salty-roasted-chickpeas",
     "name": "Salty roasted chickpeas"
   },
@@ -714,10 +778,6 @@
   {
     "key": "en:salty-snacks-made-from-potato",
     "name": "Salty snacks made from potato"
-  },
-  {
-    "key": "en:salty-snacks-puff-pastry",
-    "name": "Salty snacks puff pastry"
   },
   {
     "key": "en:salty-snacks-with-reduced-fat",
@@ -752,6 +812,10 @@
     "name": "Sea salts"
   },
   {
+    "key": "en:seafood-salads",
+    "name": "Seafood salads"
+  },
+  {
     "key": "en:semi-preserved-anchovy-in-salt",
     "name": "Semi-preserved anchovy in salt"
   },
@@ -762,6 +826,10 @@
   {
     "key": "en:smoked-salmon-for-tasting",
     "name": "Smoked salmon for tasting"
+  },
+  {
+    "key": "fr:ravioli-au-saumon-fume",
+    "name": "Smoked salmon ravioli"
   },
   {
     "key": "en:smoked-salmons",
@@ -792,8 +860,8 @@
     "name": "Tuna and vegetable salads"
   },
   {
-    "key": "en:tuna-salad",
-    "name": "Tuna salad"
+    "key": "en:tuna-salads",
+    "name": "Tuna salads"
   },
   {
     "key": "en:turkey-salami",

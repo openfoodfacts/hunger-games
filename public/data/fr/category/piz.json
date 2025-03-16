@@ -8,6 +8,10 @@
     "name": "Base de pizza tomatée"
   },
   {
+    "key": "en:fresh-pizzas-pies-and-quiches",
+    "name": "Fresh pizzas pies and quiches"
+  },
+  {
     "key": "en:raw-pizza-base",
     "name": "Pâte à pizza crue"
   },
@@ -28,6 +32,14 @@
     "name": "Pâtes à pizza"
   },
   {
+    "key": "en:frozen-pizza-dough",
+    "name": "Pâtes à pizza surgelées"
+  },
+  {
+    "key": "en:cured-ham-pizza",
+    "name": "Pizza au jambon"
+  },
+  {
     "key": "en:chicken-pizza",
     "name": "Pizza au poulet"
   },
@@ -36,7 +48,7 @@
     "name": "Pizza au saumon"
   },
   {
-    "key": "en:cured-ham-pizza",
+    "key": "en:speck-pizza",
     "name": "Pizza au speck"
   },
   {
@@ -46,10 +58,6 @@
   {
     "key": "en:cheese-and-onion-pizza-with-lardoons",
     "name": "Pizza aux lardons oignons et fromage"
-  },
-  {
-    "key": "en:vegetable-pizza",
-    "name": "Pizza aux légumes"
   },
   {
     "key": "en:cheese-and-mushrooms-pizza",
@@ -104,6 +112,10 @@
     "name": "Pizzas aux cinq fromages"
   },
   {
+    "key": "en:vegetable-pizza",
+    "name": "Pizzas aux légumes"
+  },
+  {
     "key": "en:four-cheese-pizza",
     "name": "Pizzas aux quatre fromages"
   },
@@ -136,12 +148,24 @@
     "name": "Pizzas royales"
   },
   {
+    "key": "fr:pizzas-savoyardes",
+    "name": "Pizzas savoyardes"
+  },
+  {
     "key": "en:frozen-pizzas",
     "name": "Pizzas surgelées"
   },
   {
     "key": "en:pizzas-pies-and-quiches",
     "name": "Pizzas tartes salées et quiches"
+  },
+  {
+    "key": "en:plant-based-pizzas",
+    "name": "Pizzas végétales"
+  },
+  {
+    "key": "en:vegetarian-pizzas",
+    "name": "Pizzas végétariennes"
   },
   {
     "key": "en:pizza-pastry-base",
@@ -154,9 +178,5 @@
   {
     "key": "en:pizza-sauces",
     "name": "Sauces pour pizzas"
-  },
-  {
-    "key": "en:speck-pizza",
-    "name": "Speck pizza"
   }
 ]

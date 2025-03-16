@@ -20,6 +20,10 @@
     "name": "Bienenprodukte"
   },
   {
+    "key": "en:beer-based-alcoholic-beverages",
+    "name": "Bierbasierte alkoholische Getränke"
+  },
+  {
     "key": "en:beers",
     "name": "Biere"
   },
@@ -28,11 +32,15 @@
     "name": "Biere aus dem Vereinigten Königreich"
   },
   {
+    "key": "en:beers-from-poland",
+    "name": "Biere aus Polen"
+  },
+  {
     "key": "en:beers-with-chestnut",
     "name": "Biere mit Kastanien"
   },
   {
-    "key": "de:biermischgetränk",
+    "key": "en:shandy",
     "name": "Biermischgetränk"
   },
   {
@@ -56,15 +64,15 @@
     "name": "Deutsche Biere"
   },
   {
-    "key": "en:double-beer",
+    "key": "en:belgian-style-dubbel-ales",
     "name": "Doppelte Biere"
   },
   {
-    "key": "en:beers-from-dortmund",
+    "key": "en:dortmunder-export",
     "name": "Dortmunder Biere"
   },
   {
-    "key": "en:triple-beer",
+    "key": "en:triple-ales",
     "name": "Dreifache Biere"
   },
   {
@@ -76,11 +84,15 @@
     "name": "Glutenfreies Bier"
   },
   {
+    "key": "en:pale-lagers",
+    "name": "Helle Biere"
+  },
+  {
     "key": "de:hofer-biere",
     "name": "Hofer Biere"
   },
   {
-    "key": "en:beers-from-ireland",
+    "key": "en:irish-beers",
     "name": "Irische Biere"
   },
   {
@@ -96,6 +108,14 @@
     "name": "Kulmbacher Bier"
   },
   {
+    "key": "en:latvian-beers",
+    "name": "Lettische Biere"
+  },
+  {
+    "key": "en:lithuanian-beers",
+    "name": "Litauische Biere"
+  },
+  {
     "key": "de:mainfranken-biere",
     "name": "Mainfranken Biere"
   },
@@ -108,15 +128,39 @@
     "name": "Münchner Biere"
   },
   {
+    "key": "en:dutch-beers",
+    "name": "Niederländische Biere"
+  },
+  {
     "key": "de:reuther-biere",
     "name": "Reuther Biere"
+  },
+  {
+    "key": "en:scottish-beers",
+    "name": "Schottische Biere"
+  },
+  {
+    "key": "en:swedish-beers",
+    "name": "Schwedische Biere"
+  },
+  {
+    "key": "en:spanish-beers",
+    "name": "Spanische Biere"
   },
   {
     "key": "en:beers-from-czech-republic",
     "name": "Tschechische Biere"
   },
   {
-    "key": "en:quadruple-beer",
+    "key": "en:unfiltered-beers",
+    "name": "Ungfiltriertes Bier"
+  },
+  {
+    "key": "en:unpasteurized-beers",
+    "name": "Unpasteurisierte Biere"
+  },
+  {
+    "key": "en:quadruple-ales",
     "name": "Vierfache Biere"
   },
   {

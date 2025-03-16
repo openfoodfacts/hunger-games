@@ -4,12 +4,16 @@
     "name": "Blue Stilton cheese"
   },
   {
-    "key": "en:cinnamon-sticks",
-    "name": "Cinnamon sticks"
-  },
-  {
     "key": "en:ice-cream-bars",
     "name": "Eis am Stiel"
+  },
+  {
+    "key": "en:ice-cream-bar-variety-packs",
+    "name": "Eis am Stiel Mischpackungen"
+  },
+  {
+    "key": "en:ice-cream-bars-coated-with-chocolate",
+    "name": "Eis am Stiel überzogen mit Schokolade"
   },
   {
     "key": "en:mozzarella-sticks",
@@ -18,10 +22,6 @@
   {
     "key": "en:plain-stirred-yogurts",
     "name": "Plain stirred yogurts"
-  },
-  {
-    "key": "en:chocolate-ice-cream-bars",
-    "name": "Schokoladeneis am Stiel"
   },
   {
     "key": "en:sorbets-on-stick",
@@ -60,10 +60,6 @@
     "name": "Still fruit soft drinks"
   },
   {
-    "key": "en:still-soft-drink-with-tea-extract",
-    "name": "Still soft drink with tea extract"
-  },
-  {
     "key": "en:still-soft-drink-with-tea-extract-flavoured-with-sugar",
     "name": "Still soft drink with tea extract flavoured with sugar"
   },
@@ -76,6 +72,14 @@
     "name": "Still soft drink with tea extract with sugar and artificial sweetener(s)"
   },
   {
+    "key": "en:still-soft-drink-with-tea-extract",
+    "name": "Stillgetränk mit Teeextrakt"
+  },
+  {
+    "key": "en:still-soft-drinks",
+    "name": "Stillgetränke"
+  },
+  {
     "key": "en:stilton-cheese",
     "name": "Stilton cheese"
   },
@@ -84,12 +88,36 @@
     "name": "Stinking Bishop cheese"
   },
   {
+    "key": "en:stirred-vanilla-yogurt-drinks",
+    "name": "Stirred vanilla yogurt drinks"
+  },
+  {
+    "key": "en:stirred-yogurt-drinks",
+    "name": "Stirred yogurt drinks"
+  },
+  {
     "key": "en:surimi-on-sticks",
     "name": "Surimi on sticks"
   },
   {
-    "key": "en:vanilla-ice-cream-bars",
-    "name": "Vanilleeis am Stiel"
+    "key": "en:vanilla-ice-cream-bars-coated-with-dark-chocolate",
+    "name": "Vanilleeis am Stiel überzogen mit dunkle Schokolade"
+  },
+  {
+    "key": "en:vanilla-ice-cream-bars-coated-with-milk-chocolate",
+    "name": "Vanilleeis am Stiel überzogen mit Milchschokolade"
+  },
+  {
+    "key": "en:vanilla-ice-cream-bars-coated-with-milk-chocolate-and-almonds",
+    "name": "Vanilleeis am Stiel überzogen mit Milchschokolade und Mandeln"
+  },
+  {
+    "key": "en:vanilla-ice-cream-bars-coated-with-white-chocolate",
+    "name": "Vanilleeis am Stiel überzogen mit weiße Schokolade"
+  },
+  {
+    "key": "en:vanilla-ice-cream-bars-coated-with-white-chocolate-and-almonds",
+    "name": "Vanilleeis am Stiel überzogen mit weiße Schokolade und Mandeln"
   },
   {
     "key": "en:wheat-bran-sticks",

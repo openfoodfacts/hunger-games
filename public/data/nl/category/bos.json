@@ -4,20 +4,20 @@
     "name": "Aardbeien-bosbessencompotes"
   },
   {
-    "key": "en:frozen-blueberries",
-    "name": "Bevroren bosbessen"
-  },
-  {
-    "key": "en:frozen-berries",
-    "name": "Bevroren bosvruchten"
-  },
-  {
     "key": "en:common-bilberries",
     "name": "Blauwe bosbessen"
   },
   {
     "key": "en:blueberries",
-    "name": "Bosbessen familie"
+    "name": "Bosbessen"
+  },
+  {
+    "key": "en:frozen-blueberries",
+    "name": "Bosbessen (diepvries)"
+  },
+  {
+    "key": "en:bilberry-coulis",
+    "name": "Bosbessencoulis"
   },
   {
     "key": "en:bilberries-jams",
@@ -30,6 +30,10 @@
   {
     "key": "en:blueberry-pies",
     "name": "Bosbessentaarten"
+  },
+  {
+    "key": "en:blueberry-tartlets",
+    "name": "Bosbessentaartjes"
   },
   {
     "key": "en:blueberry-yogurts",
@@ -56,11 +60,19 @@
     "name": "Bosvruchtensojayoghurts"
   },
   {
+    "key": "en:frozen-berries",
+    "name": "Diepvries bosvruchten"
+  },
+  {
     "key": "en:dried-bilberries",
     "name": "Gedroogde bosbessen"
   },
   {
     "key": "en:lingonberries",
     "name": "Rode bosbessen"
+  },
+  {
+    "key": "en:fresh-blueberries",
+    "name": "Verse bosbessen"
   }
 ]

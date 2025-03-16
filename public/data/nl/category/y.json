@@ -20,6 +20,10 @@
     "name": "Blackberry yogurts"
   },
   {
+    "key": "en:bulgarian-yogurt",
+    "name": "Bulgarian yogurt"
+  },
+  {
     "key": "en:cooked-egg-yolk",
     "name": "Cooked egg yolk"
   },
@@ -48,40 +52,12 @@
     "name": "Egg yolk powder"
   },
   {
-    "key": "en:fat-free-fermented-milk-yogurt-with-fruits-and-sweetener",
-    "name": "Fat free fermented milk yogurt with fruits and sweetener"
-  },
-  {
-    "key": "en:fat-free-fermented-milk-yogurt-with-fruits-and-sweetener-fortified-with-vitamin-d",
-    "name": "Fat free fermented milk yogurt with fruits and sweetener fortified with vitamin D"
-  },
-  {
-    "key": "en:fat-free-flavoured-fermented-milk-yogurt-with-sweetener",
-    "name": "Fat free flavoured fermented milk yogurt with sweetener"
-  },
-  {
-    "key": "en:fat-free-plain-fermented-milk-yogurt",
-    "name": "Fat free plain fermented milk yogurt"
-  },
-  {
     "key": "en:fat-free-fermented-yogurt-with-cereals",
     "name": "Fat-free fermented yogurt with cereals"
   },
   {
-    "key": "en:fermented-milk-flavoured-yogurt-with-sugar-and-cream",
-    "name": "Fermented milk flavoured yogurt with sugar and cream"
-  },
-  {
-    "key": "en:fermented-milk-yogurt-fortified-with-vitamin-d-with-fruits-and-sugar",
-    "name": "Fermented milk yogurt fortified with vitamin D with fruits and sugar"
-  },
-  {
     "key": "en:fermented-milk-yogurt-with-cereals",
     "name": "Fermented milk yogurt with cereals"
-  },
-  {
-    "key": "en:fermented-milk-yogurt-with-fruits-and-sugar-and-cream",
-    "name": "Fermented milk yogurt with fruits and sugar and cream"
   },
   {
     "key": "en:fine-fettle-yorkshire",
@@ -90,6 +66,10 @@
   {
     "key": "en:flavoured-bifidus-yogurts",
     "name": "Flavoured bifidus yogurts"
+  },
+  {
+    "key": "en:flavoured-drinkable-yogurts-with-sugar",
+    "name": "Flavoured drinkable yogurts with sugar"
   },
   {
     "key": "en:french-baguette-with-yeast",
@@ -104,6 +84,14 @@
     "name": "Fresh yam potatoes"
   },
   {
+    "key": "en:frozen-yakitori-chicken-skewers",
+    "name": "Frozen Yakitori chicken skewers"
+  },
+  {
+    "key": "en:frozen-yellowfin-tuna-loin",
+    "name": "Frozen yellowfin tuna loin"
+  },
+  {
     "key": "en:flavoured-yogurts",
     "name": "Gearomatiseerde yoghurts"
   },
@@ -116,8 +104,12 @@
     "name": "Grapefruit yogurts"
   },
   {
-    "key": "en:greek-style-yogurt-on-a-bed-of-fruits",
-    "name": "Greek-style yogurt on a bed of fruits"
+    "key": "en:greek-style-yogurts-plain",
+    "name": "Greek-style yogurts (plain)"
+  },
+  {
+    "key": "en:greek-style-yogurts-on-a-bed-of-fruits",
+    "name": "Greek-style yogurts on a bed of fruits"
   },
   {
     "key": "en:greek-style-yogurts",
@@ -164,16 +156,16 @@
     "name": "Peeled boiled yam potato"
   },
   {
-    "key": "en:plain-fermented-milk-yogurt-with-cream",
-    "name": "Plain fermented milk yogurt with cream"
+    "key": "en:plain-drinkable-yogurts",
+    "name": "Plain drinkable yogurts"
   },
   {
     "key": "en:plain-goat-yogurts",
     "name": "Plain goat yogurts"
   },
   {
-    "key": "en:plain-greek-style-yogurts",
-    "name": "Plain greek-style yogurts"
+    "key": "en:plain-low-fat-yogurts",
+    "name": "Plain low-fat yogurts"
   },
   {
     "key": "en:plain-yogurt-with-sugar",
@@ -192,8 +184,24 @@
     "name": "Raspberry soy yogurts"
   },
   {
+    "key": "en:refrigerated-non-dairy-yogurts",
+    "name": "Refrigerated non-dairy yogurts"
+  },
+  {
+    "key": "en:red-fruit-yoghurts",
+    "name": "Rood fruit yoghurts"
+  },
+  {
     "key": "en:spinach-young-leaves",
     "name": "Spinach young leaves"
+  },
+  {
+    "key": "en:stirred-vanilla-yogurt-drinks",
+    "name": "Stirred vanilla yogurt drinks"
+  },
+  {
+    "key": "en:stirred-yogurt-drinks",
+    "name": "Stirred yogurt drinks"
   },
   {
     "key": "en:sweetened-plain-bifidus-yogurts",
@@ -204,8 +212,8 @@
     "name": "Toasted egg yolk turrón"
   },
   {
-    "key": "en:vanilla-yogurt-drinks",
-    "name": "Vanilla yogurt drinks"
+    "key": "en:twin-pot-yogurts",
+    "name": "Twin-pot yogurts"
   },
   {
     "key": "en:whole-milk-yogurts",
@@ -232,12 +240,28 @@
     "name": "Yam potatoes"
   },
   {
+    "key": "en:yellow-cheeses",
+    "name": "Yellow cheeses"
+  },
+  {
     "key": "en:yellow-grapefruit-pulp",
     "name": "Yellow grapefruit pulp"
   },
   {
+    "key": "en:yellow-kiwis",
+    "name": "Yellow kiwis"
+  },
+  {
     "key": "en:yellow-mustards",
     "name": "Yellow mustards"
+  },
+  {
+    "key": "en:yellowfin-tuna-loin",
+    "name": "Yellowfin tuna loin"
+  },
+  {
+    "key": "en:chocolate-yoghurt-drinks",
+    "name": "Yoghurt dranken met chocolade"
   },
   {
     "key": "en:banana-yogurts",
@@ -268,6 +292,22 @@
     "name": "Yoghurtdranken met fruit en suiker"
   },
   {
+    "key": "en:flavoured-yogurt-drinks",
+    "name": "Yoghurtdranken met smaak"
+  },
+  {
+    "key": "en:yogurt-drinks-with-sugar",
+    "name": "Yoghurtdranken met suiker"
+  },
+  {
+    "key": "en:vanilla-yogurt-drinks",
+    "name": "Yoghurtdranken met vanille"
+  },
+  {
+    "key": "en:yogurt-drinks-without-sugar",
+    "name": "Yoghurtdranken zonder suiker"
+  },
+  {
     "key": "en:frozen-yogurts",
     "name": "Yoghurtijs"
   },
@@ -276,11 +316,15 @@
     "name": "Yoghurts"
   },
   {
+    "key": "en:yogurt-with-fruits-and-sugar",
+    "name": "Yoghurts met fruit en suiker"
+  },
+  {
     "key": "en:sweetened-yogurts",
     "name": "Yoghurts met suiker"
   },
   {
-    "key": "en:yoghurts-high-in-protein-on-a-fruit-layer",
+    "key": "en:yogurts-high-in-protein-on-a-fruit-layer",
     "name": "Yoghurts op een laag fruit"
   },
   {
@@ -298,14 +342,6 @@
   {
     "key": "en:yogurt-greek-style-ewe-s-milk",
     "name": "Yogurt Greek-style ewe's milk"
-  },
-  {
-    "key": "en:yogurt-with-fruits-and-sugar",
-    "name": "Yogurt with fruits and sugar"
-  },
-  {
-    "key": "en:yogurt-with-fruits-and-sweetener",
-    "name": "Yogurt with fruits and sweetener"
   },
   {
     "key": "en:yogurt-with-fruits-no-0-fat",
@@ -334,5 +370,9 @@
   {
     "key": "en:yule-log",
     "name": "Yule log"
+  },
+  {
+    "key": "en:yuzu",
+    "name": "Yuzu"
   }
 ]

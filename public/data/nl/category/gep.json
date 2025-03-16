@@ -1,5 +1,13 @@
 [
   {
+    "key": "en:shelled-almonds",
+    "name": "Amandelen (gepeld)"
+  },
+  {
+    "key": "en:banana-flowers-in-brine",
+    "name": "Bananenbloemen(gepekeld)"
+  },
+  {
     "key": "en:rice-chocolates",
     "name": "Chocola met gepofte rijst"
   },
@@ -72,16 +80,16 @@
     "name": "Gepasteuriseerde Munster"
   },
   {
+    "key": "en:pasteurised-products",
+    "name": "Gepasteuriseerde producten"
+  },
+  {
     "key": "en:pasteurized-butters",
     "name": "Gepasteuriseerde roomboters"
   },
   {
     "key": "en:brined-cheeses",
     "name": "Gepeklde kazen"
-  },
-  {
-    "key": "en:shelled-almonds",
-    "name": "Gepelde amandelen"
   },
   {
     "key": "en:shelled-hazelnuts",
@@ -104,19 +112,11 @@
     "name": "Gepelde noten"
   },
   {
-    "key": "en:shelled-brazil-nuts",
-    "name": "Gepelde paranoten"
-  },
-  {
-    "key": "en:shelled-pecan-nuts",
-    "name": "Gepelde pecannoten"
-  },
-  {
     "key": "en:shelled-pine-nuts",
     "name": "Gepelde pijnboompitten"
   },
   {
-    "key": "en:shelled-pistachios",
+    "key": "en:pistachio-kernels",
     "name": "Gepelde pistachenoten"
   },
   {
@@ -132,16 +132,16 @@
     "name": "Gepelde rode linzen"
   },
   {
-    "key": "en:walnut-kernels",
-    "name": "Gepelde walnoten"
-  },
-  {
     "key": "en:blanched-shelled-hazelnuts",
     "name": "Gepelde witte hazelnoten"
   },
   {
     "key": "en:shelled-sunflower-seeds",
     "name": "Gepelde zonnebloempitten"
+  },
+  {
+    "key": "en:squeezed-pomegranate-juices",
+    "name": "Geperst granaatappelsap"
   },
   {
     "key": "en:squeezed-blueberry-juices",
@@ -208,12 +208,20 @@
     "name": "Gepofte tarwe"
   },
   {
-    "key": "en:puffed-salty-snacks",
-    "name": "Gepofte zoutjes"
+    "key": "en:puffed-salty-snacks-potato-soy-based",
+    "name": "Gepofte zoutjes (aardappel/soja basis)"
+  },
+  {
+    "key": "en:prepared-potatoes",
+    "name": "Geprepareerde aardappelen"
   },
   {
     "key": "en:cooked-chicken",
     "name": "Geprepareerde kip"
+  },
+  {
+    "key": "en:prepared-sweet-potatoes",
+    "name": "Geprepareerde zoete aardappelen"
   },
   {
     "key": "en:mashed-split-peas",
@@ -240,7 +248,15 @@
     "name": "Onverhitte geperste kazen"
   },
   {
-    "key": "en:cooked-pressed-cheeses",
+    "key": "en:shelled-brazil-nuts",
+    "name": "Paranoten(gepeld)"
+  },
+  {
+    "key": "en:pumpkin-seeds-non-roasted-shelled-unsalted",
+    "name": "Pompoenpitten(gepeld/ongeroosterd/ongezouten)"
+  },
+  {
+    "key": "en:hard-cheeses",
     "name": "Verhitte geperste kazen"
   },
   {
@@ -254,5 +270,13 @@
   {
     "key": "en:squeezed-orange-juices",
     "name": "Vers geperste sinaasappelsappen"
+  },
+  {
+    "key": "en:walnut-kernels",
+    "name": "Walnoten (gepeld)"
+  },
+  {
+    "key": "en:shelled-seeds",
+    "name": "Zaden (gepeld)"
   }
 ]

@@ -4,11 +4,11 @@
     "name": "Agneau du Quercy"
   },
   {
-    "key": "en:quadruple-beer",
+    "key": "en:quadruple-ales",
     "name": "Bière quadruple"
   },
   {
-    "key": "en:quinoa-milks",
+    "key": "en:quinoa-based-drinks",
     "name": "Boissons au quinoa"
   },
   {
@@ -24,7 +24,7 @@
     "name": "Chips au quinoa"
   },
   {
-    "key": "fr:confitures-de-quetsches",
+    "key": "en:dew-jams",
     "name": "Confitures de quetsches"
   },
   {
@@ -46,6 +46,10 @@
   {
     "key": "en:quinoa-flakes",
     "name": "Flocons de quinoa"
+  },
+  {
+    "key": "en:fresh-pizzas-pies-and-quiches",
+    "name": "Fresh pizzas pies and quiches"
   },
   {
     "key": "en:isle-of-man-queenies",
@@ -126,6 +130,14 @@
   {
     "key": "en:plain-quarks",
     "name": "Quarks nature"
+  },
+  {
+    "key": "en:beef-front-quarter",
+    "name": "Quartier avant de boeuf"
+  },
+  {
+    "key": "en:frozen-beef-front-quarter",
+    "name": "Quartier avant de boeuf surgelé"
   },
   {
     "key": "en:quartered-champignon-mushrooms",
@@ -268,6 +280,14 @@
     "name": "Quiches lorraines"
   },
   {
+    "key": "en:frozen-lorraine-quiche",
+    "name": "Quiches lorraines surgelées"
+  },
+  {
+    "key": "en:frozen-quiches",
+    "name": "Quiches surgelées"
+  },
+  {
     "key": "fr:quincy-val-de-loire",
     "name": "Quincy Val de Loire"
   },
@@ -280,8 +300,8 @@
     "name": "Quinoa bouilli non salé"
   },
   {
-    "key": "en:quinoa-fr-raw",
-    "name": "Quinoa FR cru"
+    "key": "en:raw-quinoa-from-france",
+    "name": "Quinoa de France cru"
   },
   {
     "key": "en:quinoa-fr-boiled-cooked-in-water-unsalted",

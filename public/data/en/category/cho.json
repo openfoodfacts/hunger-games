@@ -8,10 +8,6 @@
     "name": "Assorted chocolates"
   },
   {
-    "key": "en:bars-covered-with-chocolate",
-    "name": "Bars covered with chocolate"
-  },
-  {
     "key": "en:base-formulation-for-chocolate-mousse",
     "name": "Base formulation for chocolate mousse"
   },
@@ -24,12 +20,24 @@
     "name": "Biscuit (cookie) snack w chocolate filling"
   },
   {
-    "key": "en:biscuit-small-tart-with-chocolate-pre-packed",
-    "name": "Biscuit (small tart) with chocolate pre-packed"
-  },
-  {
     "key": "en:biscuit-with-a-chocolate-bar-covering",
     "name": "Biscuit with a chocolate bar covering"
+  },
+  {
+    "key": "en:biscuit-with-a-dark-chocolate-bar-covering",
+    "name": "Biscuit with a dark chocolate bar covering"
+  },
+  {
+    "key": "en:biscuit-with-a-filled-chocolate-bar-covering",
+    "name": "Biscuit with a filled chocolate bar covering"
+  },
+  {
+    "key": "en:biscuit-with-a-milk-chocolate-bar-covering",
+    "name": "Biscuit with a milk chocolate bar covering"
+  },
+  {
+    "key": "en:biscuit-with-a-white-chocolate-bar-covering",
+    "name": "Biscuit with a white chocolate bar covering"
   },
   {
     "key": "en:biscuit-with-chocolate-covering",
@@ -38,6 +46,10 @@
   {
     "key": "en:black-chopped-olives",
     "name": "Black chopped olives"
+  },
+  {
+    "key": "en:bok-choy",
+    "name": "Bok choy"
   },
   {
     "key": "en:breakfast-biscuit-with-chocolate",
@@ -88,6 +100,10 @@
     "name": "Butter biscuit with chocolate"
   },
   {
+    "key": "en:candy-chocolate-bars",
+    "name": "Candy chocolate bars"
+  },
+  {
     "key": "en:canned-chocolate-creamy-puddings",
     "name": "Canned chocolate creamy puddings"
   },
@@ -128,8 +144,8 @@
     "name": "Chocolate Advent calendars"
   },
   {
-    "key": "en:chocolate-almond-milks",
-    "name": "Chocolate almond milks"
+    "key": "en:chocolate-almond-based-drinks",
+    "name": "Chocolate almond-based drinks"
   },
   {
     "key": "en:chocolate-and-hazelnut-cookies",
@@ -146,10 +162,6 @@
   {
     "key": "en:chocolate-biscuity-bars",
     "name": "Chocolate biscuity bars"
-  },
-  {
-    "key": "en:chocolate-cake-with-melting-centre",
-    "name": "Chocolate cake with melting centre"
   },
   {
     "key": "en:chocolate-cakes",
@@ -188,12 +200,32 @@
     "name": "Chocolate chunks yogurts"
   },
   {
-    "key": "en:chocolate-coated-ice-cream",
-    "name": "Chocolate coated ice cream"
+    "key": "en:chocolate-coated-almonds",
+    "name": "Chocolate coated almonds"
+  },
+  {
+    "key": "en:chocolate-coated-chickpeas",
+    "name": "Chocolate coated chickpeas"
+  },
+  {
+    "key": "en:chocolate-coated-coffee-beans",
+    "name": "Chocolate coated coffee beans"
+  },
+  {
+    "key": "en:chocolate-coated-fruits",
+    "name": "Chocolate coated fruits"
   },
   {
     "key": "en:chocolate-coated-maraschino-cherries",
     "name": "Chocolate coated maraschino cherries"
+  },
+  {
+    "key": "en:chocolate-coated-peanuts",
+    "name": "Chocolate coated peanuts"
+  },
+  {
+    "key": "en:chocolate-coated-pistachios",
+    "name": "Chocolate coated pistachios"
   },
   {
     "key": "en:chocolate-coated-waffles",
@@ -212,16 +244,16 @@
     "name": "Chocolate confectionery with dairy filling"
   },
   {
-    "key": "en:chocolate-covered-almonds",
-    "name": "Chocolate covered almonds"
+    "key": "en:chocolate-covered-bars-with-milk-and-cereals",
+    "name": "Chocolate covered bars with milk and cereals"
+  },
+  {
+    "key": "en:chocolate-covered-brazil-nuts",
+    "name": "Chocolate covered Brazil nuts"
   },
   {
     "key": "en:chocolate-covered-cherries",
     "name": "Chocolate covered cherries"
-  },
-  {
-    "key": "en:chocolate-covered-chickpeas",
-    "name": "Chocolate covered chickpeas"
   },
   {
     "key": "en:chocolate-covered-coconut-balls",
@@ -232,10 +264,6 @@
     "name": "Chocolate covered cranberries"
   },
   {
-    "key": "en:chocolate-covered-fruits",
-    "name": "Chocolate covered fruits"
-  },
-  {
     "key": "en:chocolate-covered-hazelnuts",
     "name": "Chocolate covered hazelnuts"
   },
@@ -244,8 +272,12 @@
     "name": "Chocolate covered nuts"
   },
   {
-    "key": "en:chocolate-covered-peanuts",
-    "name": "Chocolate covered peanuts"
+    "key": "en:chocolate-covered-nuts-and-fruits",
+    "name": "Chocolate covered nuts and fruits"
+  },
+  {
+    "key": "en:chocolate-covered-nuts-and-fruits-mixes",
+    "name": "Chocolate covered nuts and fruits mixes"
   },
   {
     "key": "en:chocolate-creamy-puddings",
@@ -260,6 +292,10 @@
     "name": "Chocolate croissant prepacked"
   },
   {
+    "key": "fr:pains-au-chocolat-a-l-huile-de-tournesol",
+    "name": "Chocolate croissants with sunflower oil"
+  },
+  {
     "key": "en:chocolate-custard-puddings",
     "name": "Chocolate custard puddings"
   },
@@ -272,6 +308,10 @@
     "name": "Chocolate dinosaurs"
   },
   {
+    "key": "en:chocolate-drops",
+    "name": "Chocolate drops"
+  },
+  {
     "key": "en:chocolate-eclairs",
     "name": "Chocolate eclairs"
   },
@@ -282,10 +322,6 @@
   {
     "key": "en:chocolate-filled-with-praline",
     "name": "Chocolate filled with praline"
-  },
-  {
-    "key": "en:chocolate-ice-cream-bars",
-    "name": "Chocolate ice cream bars"
   },
   {
     "key": "en:chocolate-ice-cream-tubs",
@@ -336,10 +372,6 @@
     "name": "Chocolate pies"
   },
   {
-    "key": "en:chocolate-powders",
-    "name": "Chocolate powders"
-  },
-  {
     "key": "en:chocolate-puffed-rice",
     "name": "Chocolate puffed rice"
   },
@@ -352,8 +384,12 @@
     "name": "Chocolate puffed rice not fortified with vitamins and chemical elements"
   },
   {
-    "key": "en:chocolate-puffed-wheat-grains",
-    "name": "Chocolate puffed wheat grains"
+    "key": "en:chocolate-puffed-spelt",
+    "name": "Chocolate puffed spelt"
+  },
+  {
+    "key": "en:chocolate-puffed-wheat",
+    "name": "Chocolate puffed wheat"
   },
   {
     "key": "en:chocolate-puffed-wheat-grains-fortified-with-vitamins-and-chemical-elements",
@@ -396,8 +432,8 @@
     "name": "Chocolate soy desserts"
   },
   {
-    "key": "en:chocolate-soy-milks",
-    "name": "Chocolate soy milks"
+    "key": "en:chocolate-soy-based-drinks",
+    "name": "Chocolate soy-based drinks"
   },
   {
     "key": "en:chocolate-spreads",
@@ -414,14 +450,6 @@
   {
     "key": "en:chocolate-stuffed-wafers",
     "name": "Chocolate stuffed wafers"
-  },
-  {
-    "key": "fr:substituts-du-chocolat",
-    "name": "Chocolate substitutes"
-  },
-  {
-    "key": "en:chocolate-tartlets",
-    "name": "Chocolate tartlets"
   },
   {
     "key": "en:chocolate-tiramisu",
@@ -450,6 +478,10 @@
   {
     "key": "en:chocolate-wheat-shells",
     "name": "Chocolate wheat shells"
+  },
+  {
+    "key": "en:chocolate-yoghurt-drinks",
+    "name": "Chocolate yoghurt drinks"
   },
   {
     "key": "en:chocolate-coated-marshmallow-treats",
@@ -568,16 +600,16 @@
     "name": "Cocoa and chocolate powders"
   },
   {
+    "key": "en:compound-chocolates",
+    "name": "Compound chocolates"
+  },
+  {
     "key": "en:cooked-ham-choice",
     "name": "Cooked ham choice"
   },
   {
     "key": "en:cooked-ham-choice-rind-less-and-fatless",
     "name": "Cooked ham choice rind less and fatless"
-  },
-  {
-    "key": "en:cooked-ham-choice-w-rind",
-    "name": "Cooked ham choice w rind"
   },
   {
     "key": "en:cooked-ham-choice-with-rind",
@@ -636,10 +668,6 @@
     "name": "Dairy chocolate desserts"
   },
   {
-    "key": "en:dark-choclate-sprinkles",
-    "name": "Dark choclate sprinkles"
-  },
-  {
     "key": "en:dark-chocolate-bar",
     "name": "Dark chocolate bar"
   },
@@ -678,6 +706,14 @@
   {
     "key": "en:dark-chocolate-filled-with-mint-confectionery",
     "name": "Dark chocolate filled with mint confectionery"
+  },
+  {
+    "key": "en:dark-chocolate-paste-for-cooking",
+    "name": "Dark chocolate paste for cooking"
+  },
+  {
+    "key": "en:dark-chocolate-sprinkles",
+    "name": "Dark chocolate sprinkles"
   },
   {
     "key": "en:dark-chocolate-with-caramel",
@@ -852,6 +888,14 @@
     "name": "Frozen chopped spinachs"
   },
   {
+    "key": "en:frozen-veal-chop",
+    "name": "Frozen veal chop"
+  },
+  {
+    "key": "en:fruit-preserves-with-chocolate",
+    "name": "Fruit preserves with chocolate"
+  },
+  {
     "key": "en:goblet-of-chocolate-ice-cream-topped-with-whipped-cream",
     "name": "Goblet of chocolate ice cream topped with whipped cream"
   },
@@ -878,6 +922,22 @@
   {
     "key": "en:hollow-chocolate-eggs",
     "name": "Hollow chocolate eggs"
+  },
+  {
+    "key": "en:iberian-chorizo",
+    "name": "Iberian chorizo"
+  },
+  {
+    "key": "en:ice-cream-bars-coated-with-chocolate",
+    "name": "Ice cream bars coated with chocolate"
+  },
+  {
+    "key": "en:ice-cream-candy-chocolate-bars",
+    "name": "Ice cream candy chocolate bars"
+  },
+  {
+    "key": "en:instant-chocolate-powders",
+    "name": "Instant chocolate powders"
   },
   {
     "key": "en:instant-cocoa-or-chocolate-beverage-with-sugar-fortified-with-vitamins-and-chemical-elements-ready-to-drink-reconstituted-with-standard-semi-skimm",
@@ -916,10 +976,6 @@
     "name": "Milk bread rolls with chocolate"
   },
   {
-    "key": "en:milk-choclate-sprinkles",
-    "name": "Milk choclate sprinkles"
-  },
-  {
     "key": "en:milk-chocolate-bar",
     "name": "Milk chocolate bar"
   },
@@ -946,6 +1002,10 @@
   {
     "key": "en:milk-chocolate-molds",
     "name": "Milk chocolate molds"
+  },
+  {
+    "key": "en:milk-chocolate-sprinkles",
+    "name": "Milk chocolate sprinkles"
   },
   {
     "key": "en:milk-chocolate-with-caramel",
@@ -984,8 +1044,8 @@
     "name": "Milk chocolates with sweeteners"
   },
   {
-    "key": "en:milky-cereal-breakfast-bar-with-chocolate-fortified-with-vitamins-and-minerals",
-    "name": "Milky cereal breakfast bar with chocolate fortified with vitamins and minerals"
+    "key": "en:molten-chocolate-cakes",
+    "name": "Molten chocolate cakes"
   },
   {
     "key": "en:mueslis-with-chocolate",
@@ -1084,6 +1144,10 @@
     "name": "Salted milk chocolates"
   },
   {
+    "key": "en:sarta-chorizo",
+    "name": "Sarta chorizo"
+  },
+  {
     "key": "en:shortbread-biscuit-with-butter-and-chocolate",
     "name": "Shortbread biscuit with butter and chocolate"
   },
@@ -1120,6 +1184,10 @@
     "name": "Swiss chocolates"
   },
   {
+    "key": "en:tartlet-biscuits-with-chocolate",
+    "name": "Tartlet biscuits with chocolate"
+  },
+  {
     "key": "en:thin-crunchy-wafer-biscuit-with-chocolate",
     "name": "Thin crunchy wafer biscuit with chocolate"
   },
@@ -1130,6 +1198,26 @@
   {
     "key": "en:unfortified-diet-chocolate-breakfast-cereals",
     "name": "Unfortified diet chocolate breakfast cereals"
+  },
+  {
+    "key": "en:vanilla-ice-cream-bars-coated-with-dark-chocolate",
+    "name": "Vanilla ice cream bars coated with dark chocolate"
+  },
+  {
+    "key": "en:vanilla-ice-cream-bars-coated-with-milk-chocolate",
+    "name": "Vanilla ice cream bars coated with milk chocolate"
+  },
+  {
+    "key": "en:vanilla-ice-cream-bars-coated-with-milk-chocolate-and-almonds",
+    "name": "Vanilla ice cream bars coated with milk chocolate and almonds"
+  },
+  {
+    "key": "en:vanilla-ice-cream-bars-coated-with-white-chocolate",
+    "name": "Vanilla ice cream bars coated with white chocolate"
+  },
+  {
+    "key": "en:vanilla-ice-cream-bars-coated-with-white-chocolate-and-almonds",
+    "name": "Vanilla ice cream bars coated with white chocolate and almonds"
   },
   {
     "key": "en:veal-chop",
@@ -1156,7 +1244,7 @@
     "name": "White chocolate bar with nuts"
   },
   {
-    "key": "fr:chocolat-blanc-en-tablette-aux-praline",
+    "key": "en:white-chocolate-bar-with-praline",
     "name": "White chocolate bar with praline"
   },
   {
@@ -1170,6 +1258,10 @@
   {
     "key": "en:white-chocolate-biscuits",
     "name": "White chocolate biscuits"
+  },
+  {
+    "key": "en:white-chocolate-ice-cream-tubs",
+    "name": "White chocolate ice cream tubs"
   },
   {
     "key": "en:white-chocolate-with-coconut-pieces",
@@ -1186,6 +1278,10 @@
   {
     "key": "en:white-chocolates-with-hazelnuts",
     "name": "White chocolates with hazelnuts"
+  },
+  {
+    "key": "en:white-chocolates-with-rice-crisps",
+    "name": "White chocolates with rice crisps"
   },
   {
     "key": "en:white-chocolates-with-sweeteners",

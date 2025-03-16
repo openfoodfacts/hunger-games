@@ -1,6 +1,334 @@
 [
   {
+    "key": "en:beer-based-alcoholic-beverages",
+    "name": "Alkoholna pića na bazi piva"
+  },
+  {
+    "key": "en:rum-based-alcoholic-beverages",
+    "name": "Alkoholna pića na bazi ruma"
+  },
+  {
+    "key": "en:wine-based-alcoholic-beverages",
+    "name": "Alkoholna pića na bazi vina"
+  },
+  {
+    "key": "en:vodka-based-alcoholic-beverages",
+    "name": "Alkoholna pića na bazi votke"
+  },
+  {
     "key": "en:beef-from-bazas",
     "name": "Beef from Bazas"
+  },
+  {
+    "key": "en:elderberries",
+    "name": "Bobice bazge"
+  },
+  {
+    "key": "en:chocolate-soy-based-drinks",
+    "name": "Čokoladna pića na bazi soje"
+  },
+  {
+    "key": "en:elderberry-flowers",
+    "name": "Cvjetovi bazge"
+  },
+  {
+    "key": "en:vegetables-based-foods",
+    "name": "Hrana na bazi povrća"
+  },
+  {
+    "key": "en:fruits-based-foods",
+    "name": "Hrana na bazi voća"
+  },
+  {
+    "key": "en:fruits-and-vegetables-based-foods",
+    "name": "Hrana na bazi voća i povrća"
+  },
+  {
+    "key": "en:vegetable-based-foods-and-beverages",
+    "name": "Hranu i piće na bazi povrća"
+  },
+  {
+    "key": "en:plant-based-meals",
+    "name": "Jela na biljnoj bazi"
+  },
+  {
+    "key": "en:plant-based-ice-cream-tubs",
+    "name": "Kadice za sladoled na biljnoj bazi"
+  },
+  {
+    "key": "en:coffee-soy-based-drinks",
+    "name": "Kava pića na bazi soje"
+  },
+  {
+    "key": "en:khorasan-wheat-based-drinks",
+    "name": "Khorasan pića na bazi pšenice"
+  },
+  {
+    "key": "en:plant-based-pickles",
+    "name": "Kiseli krastavci na biljnoj bazi"
+  },
+  {
+    "key": "en:whiskey-based-cocktail",
+    "name": "Koktel na bazi viskija"
+  },
+  {
+    "key": "en:plant-based-ice-cream-cones",
+    "name": "Korneti sladoleda na biljnoj bazi"
+  },
+  {
+    "key": "en:almond-based-creams-for-cooking",
+    "name": "Kreme na bazi badema za kuhanje"
+  },
+  {
+    "key": "en:millet-based-creams-for-cooking",
+    "name": "Kreme na bazi prosa za kuhanje"
+  },
+  {
+    "key": "en:rice-based-creams-for-cooking",
+    "name": "Kreme na bazi riže za kuhanje"
+  },
+  {
+    "key": "en:oat-based-creams-for-cooking",
+    "name": "Kreme na bazi zobi za kuhanje"
+  },
+  {
+    "key": "en:plant-based-creams",
+    "name": "Kreme na biljnoj bazi"
+  },
+  {
+    "key": "en:coconut-based-creams-for-cooking",
+    "name": "Kreme za kuhanje na bazi kokosa"
+  },
+  {
+    "key": "en:spelt-based-creams-for-cooking",
+    "name": "Kreme za kuhanje na bazi pira"
+  },
+  {
+    "key": "en:cooked-pizza-base",
+    "name": "Kuhana baza za pizzu"
+  },
+  {
+    "key": "en:puffed-salty-snacks-potato-soy-based",
+    "name": "Lisnate slane grickalice (na bazi krumpira/soje)"
+  },
+  {
+    "key": "en:plant-based-mixed-pickles",
+    "name": "Miješani kiseli krastavci na biljnoj bazi"
+  },
+  {
+    "key": "en:plant-based-spreads",
+    "name": "Namazi na biljnoj bazi"
+  },
+  {
+    "key": "en:unsweetened-plain-almond-based-drinks",
+    "name": "Nezaslađena obična pića na bazi badema"
+  },
+  {
+    "key": "en:unsweetened-plain-soy-based-drinks",
+    "name": "Nezaslađena obična pića na bazi soje"
+  },
+  {
+    "key": "en:plain-rice-based-drinks",
+    "name": "Obična pića na bazi riže"
+  },
+  {
+    "key": "en:plant-based-pates",
+    "name": "Paštete na biljnoj bazi"
+  },
+  {
+    "key": "en:amaranth-based-drinks",
+    "name": "Pića na bazi amaranta"
+  },
+  {
+    "key": "en:almond-based-drinks",
+    "name": "Pića na bazi badema"
+  },
+  {
+    "key": "en:tea-based-beverages",
+    "name": "Pića na bazi čaja"
+  },
+  {
+    "key": "en:chocolate-almond-based-drinks",
+    "name": "Pića na bazi čokolade i badema"
+  },
+  {
+    "key": "en:buckwheat-based-drinks",
+    "name": "Pića na bazi heljde"
+  },
+  {
+    "key": "en:barley-based-drinks",
+    "name": "Pića na bazi ječma"
+  },
+  {
+    "key": "en:canary-grass-based-drinks",
+    "name": "Pića na bazi kanarinske trave"
+  },
+  {
+    "key": "en:chestnut-based-drinks",
+    "name": "Pića na bazi kestena"
+  },
+  {
+    "key": "en:coconut-based-drinks",
+    "name": "Pića na bazi kokosa"
+  },
+  {
+    "key": "en:hemp-based-drinks",
+    "name": "Pića na bazi konoplje"
+  },
+  {
+    "key": "en:maize-based-drinks",
+    "name": "Pića na bazi kukuruza"
+  },
+  {
+    "key": "en:quinoa-based-drinks",
+    "name": "Pića na bazi kvinoje"
+  },
+  {
+    "key": "en:hazelnut-based-drinks",
+    "name": "Pića na bazi lješnjaka"
+  },
+  {
+    "key": "en:legume-based-drinks",
+    "name": "Pića na bazi mahunarki"
+  },
+  {
+    "key": "en:macadamia-nut-based-drinks",
+    "name": "Pića na bazi makadamije"
+  },
+  {
+    "key": "en:walnut-based-drinks",
+    "name": "Pića na bazi oraha"
+  },
+  {
+    "key": "en:nut-based-drinks",
+    "name": "Pića na bazi orašastih plodova"
+  },
+  {
+    "key": "en:spelt-based-drinks",
+    "name": "Pića na bazi pira"
+  },
+  {
+    "key": "en:vegetable-based-beverages",
+    "name": "Pića na bazi povrća"
+  },
+  {
+    "key": "en:millet-based-drinks",
+    "name": "Pića na bazi prosa"
+  },
+  {
+    "key": "en:wheat-based-drinks",
+    "name": "Pića na bazi pšenice"
+  },
+  {
+    "key": "en:rice-based-drinks",
+    "name": "Pića na bazi riže"
+  },
+  {
+    "key": "en:cocoa-rice-based-drinks",
+    "name": "Pića na bazi riže i kakaa"
+  },
+  {
+    "key": "en:vanilla-rice-based-drinks",
+    "name": "Pića na bazi riže vanilije"
+  },
+  {
+    "key": "en:sesame-based-drinks",
+    "name": "Pića na bazi sezama"
+  },
+  {
+    "key": "en:soy-based-drinks",
+    "name": "Pića na bazi soje"
+  },
+  {
+    "key": "en:teff-based-drinks",
+    "name": "Pića na bazi tefa"
+  },
+  {
+    "key": "en:tigernut-based-drinks",
+    "name": "Pića na bazi tigrovog oraha"
+  },
+  {
+    "key": "en:vanilla-almond-based-drinks",
+    "name": "Pića na bazi vanilije i badema"
+  },
+  {
+    "key": "en:vanilla-soy-based-drinks",
+    "name": "Pića na bazi vanilije soje"
+  },
+  {
+    "key": "en:wine-based-drinks",
+    "name": "Pića na bazi vina"
+  },
+  {
+    "key": "en:fruit-based-beverages",
+    "name": "Pića na bazi voća"
+  },
+  {
+    "key": "en:cereal-based-drinks",
+    "name": "Pića na bazi žitarica"
+  },
+  {
+    "key": "en:oat-based-drinks",
+    "name": "Pića na bazi zobi"
+  },
+  {
+    "key": "en:plant-based-beverages",
+    "name": "Pića na biljnoj bazi"
+  },
+  {
+    "key": "en:beef-based-burger-with-15-fat",
+    "name": "Pljeskavica na bazi govedine s 15% masti"
+  },
+  {
+    "key": "en:plant-based-ice-cream-bars",
+    "name": "Pločice sladoleda na biljnoj bazi"
+  },
+  {
+    "key": "en:honey-based-preparations",
+    "name": "Pripravci na bazi meda"
+  },
+  {
+    "key": "en:elderberry-products",
+    "name": "Proizvodi od bazge"
+  },
+  {
+    "key": "en:dough-based-meals-variety-packs",
+    "name": "Različita pakiranja jela na bazi tijesta"
+  },
+  {
+    "key": "en:plant-based-ice-creams",
+    "name": "Sladoledi na biljnoj bazi"
+  },
+  {
+    "key": "en:plant-based-ice-cream-sandwiches",
+    "name": "Sladoledni sendviči na biljnoj bazi"
+  },
+  {
+    "key": "en:meat-based-sauces",
+    "name": "Umaci na bazi mesa"
+  },
+  {
+    "key": "en:meat-based-pasta-sauces",
+    "name": "Umaci za tjesteninu na bazi mesa"
+  },
+  {
+    "key": "en:fruit-juice-mixed-apple-base-standard",
+    "name": "Voćni sok miješani - baza jabuka standard"
+  },
+  {
+    "key": "en:sweetened-plain-almond-based-drinks",
+    "name": "Zaslađena obična pića na bazi badema"
+  },
+  {
+    "key": "en:sweetened-plain-soy-based-drinks",
+    "name": "Zaslađena obična pića na bazi soje"
+  },
+  {
+    "key": "en:plantbased-gelatin",
+    "name": "Želatina na biljnoj bazi"
+  },
+  {
+    "key": "en:elderberry-jellies",
+    "name": "Žele od bazge"
   }
 ]

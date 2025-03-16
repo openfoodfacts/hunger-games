@@ -64,6 +64,10 @@
     "name": "Carpaccio de boeuf"
   },
   {
+    "key": "en:frozen-beef-carpaccio",
+    "name": "Carpaccio de boeuf surgelé"
+  },
+  {
     "key": "en:beef-heart",
     "name": "Coeur de boeuf"
   },
@@ -88,6 +92,10 @@
     "name": "Entrecôte de boeuf partie maigre grillée"
   },
   {
+    "key": "en:frozen-beef-rib-steak",
+    "name": "Entrecôte de boeuf surgelée"
+  },
+  {
     "key": "en:beef-shoulder",
     "name": "Epaule de boeuf"
   },
@@ -106,6 +114,10 @@
   {
     "key": "en:roasted-beef-sirloin-steak",
     "name": "Faux-filet de boeuf rôti"
+  },
+  {
+    "key": "en:beef-livers",
+    "name": "Foies de boeuf"
   },
   {
     "key": "en:beef-round",
@@ -196,6 +208,14 @@
     "name": "Plats de côtes de boeuf"
   },
   {
+    "key": "en:beef-front-quarter",
+    "name": "Quartier avant de boeuf"
+  },
+  {
+    "key": "en:frozen-beef-front-quarter",
+    "name": "Quartier avant de boeuf surgelé"
+  },
+  {
     "key": "en:beef-oxtail",
     "name": "Queue de boeuf"
   },
@@ -262,5 +282,9 @@
   {
     "key": "en:cooked-beef-meat",
     "name": "Viande de boeuf cuite"
+  },
+  {
+    "key": "en:smoked-cooked-beef-meat",
+    "name": "Viande de boeuf fumée cuite"
   }
 ]

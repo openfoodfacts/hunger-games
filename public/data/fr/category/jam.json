@@ -200,11 +200,11 @@
     "name": "Jambons britanniques"
   },
   {
-    "key": "en:cured-ham",
+    "key": "en:cured-hams",
     "name": "Jambons crus"
   },
   {
-    "key": "en:smoked-cured-ham",
+    "key": "en:smoked-cured-hams",
     "name": "Jambons crus fumés"
   },
   {
@@ -226,10 +226,6 @@
   {
     "key": "en:hams-of-san-daniele",
     "name": "Jambons de San Daniele"
-  },
-  {
-    "key": "en:poultry-hams",
-    "name": "Jambons de volaille"
   },
   {
     "key": "en:westphalian-ham",
@@ -270,6 +266,10 @@
   {
     "key": "en:panini-with-cured-ham-mozzarella-cheese-and-tomato",
     "name": "Panini au jambon cru"
+  },
+  {
+    "key": "en:cured-ham-pizza",
+    "name": "Pizza au jambon"
   },
   {
     "key": "en:pizza-with-ham-and-cheese",
@@ -372,12 +372,24 @@
     "name": "Saucissons de jambon"
   },
   {
+    "key": "en:shelf-stable-jams",
+    "name": "Shelf-stable jams"
+  },
+  {
     "key": "en:ham-substitutes",
     "name": "Substituts du jambon blanc"
   },
   {
+    "key": "en:tangerine-jams",
+    "name": "Tangerine jams"
+  },
+  {
     "key": "fr:tortellini-au-jambon-cru",
     "name": "Tortellini au jambon cru"
+  },
+  {
+    "key": "en:wine-jams",
+    "name": "Wine jams"
   },
   {
     "key": "en:ham-wraps",

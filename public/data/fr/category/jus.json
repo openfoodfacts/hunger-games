@@ -40,6 +40,10 @@
     "name": "Boisson plate aux fruits non sucrée avec édulcorants et moins de 10% de jus"
   },
   {
+    "key": "en:beverages-from-desugared-fruit-juices",
+    "name": "Boissons à base de jus de fruits désucrés"
+  },
+  {
     "key": "en:carbonated-fruit-soft-drinks-with-sugar-with-10-50-of-fruit-juice",
     "name": "Boissons gazeuses non sucrées aux fruits avec 10 à 50% de jus"
   },
@@ -70,6 +74,22 @@
   {
     "key": "en:still-fruit-soft-drink-with-sugar-and-with-10-50-of-fruit-juice",
     "name": "Boissons plates aux fruits sucrées avec 10 à 50% de jus"
+  },
+  {
+    "key": "en:lemon-juice-concentrates",
+    "name": "Concentrés de jus de citrons"
+  },
+  {
+    "key": "en:lime-juice-concentrates",
+    "name": "Concentrés de jus de citrons verts"
+  },
+  {
+    "key": "en:fruit-juice-concentrates",
+    "name": "Concentrés de jus de fruits"
+  },
+  {
+    "key": "en:apple-juice-concentrates",
+    "name": "Concentrés de jus de pommes"
   },
   {
     "key": "en:oat-milk-yogurts",
@@ -104,7 +124,7 @@
     "name": "Jus d'ananas"
   },
   {
-    "key": "en:pineapple-from-concentrate",
+    "key": "en:pineapple-juices-from-concentrate",
     "name": "Jus d'ananas à base de concentré"
   },
   {
@@ -124,11 +144,15 @@
     "name": "Jus d'orange à base de concentré"
   },
   {
+    "key": "en:orange-juices-with-pulp",
+    "name": "Jus d'orange avec pulpe"
+  },
+  {
     "key": "en:refrigerated-squeezed-orange-juices",
     "name": "Jus d'orange frais"
   },
   {
-    "key": "en:orange-juice-home-made",
+    "key": "en:orange-juices-home-made",
     "name": "Jus d'orange maison"
   },
   {
@@ -140,7 +164,7 @@
     "name": "Jus d'orange sanguine"
   },
   {
-    "key": "fr:jus-d-orange-sans-pulpe",
+    "key": "en:orange-juices-without-pulp",
     "name": "Jus d'orange sans pulpe"
   },
   {
@@ -148,7 +172,7 @@
     "name": "Jus de betterave"
   },
   {
-    "key": "en:cranberry-juice",
+    "key": "en:cranberry-juices",
     "name": "Jus de canneberge"
   },
   {
@@ -220,7 +244,7 @@
     "name": "Jus de fruits frais"
   },
   {
-    "key": "en:squeezed-juices",
+    "key": "en:squeezed-fruit-juices",
     "name": "Jus de fruits pur jus"
   },
   {
@@ -328,8 +352,16 @@
     "name": "Jus de pomme à base de concentré"
   },
   {
+    "key": "en:flavoured-apple-juices",
+    "name": "Jus de pomme aromatisé"
+  },
+  {
     "key": "en:sparkling-apple-juices",
     "name": "Jus de pomme pétillants"
+  },
+  {
+    "key": "en:enriched-apple-juices",
+    "name": "Jus de pommes enrichés"
   },
   {
     "key": "en:squeezed-apple-juices",
@@ -356,8 +388,16 @@
     "name": "Jus de raisin à base de concentré"
   },
   {
+    "key": "en:white-grape-juices",
+    "name": "Jus de raisin blanc"
+  },
+  {
     "key": "en:squeezed-grape-juices",
     "name": "Jus de raisin pur jus"
+  },
+  {
+    "key": "en:red-grape-juices",
+    "name": "Jus de raisin rouge"
   },
   {
     "key": "en:pure-tomato-juices",
@@ -388,10 +428,6 @@
     "name": "Jus multifruit - base pomme standard"
   },
   {
-    "key": "en:multivitamin-mixed-fruits-juice-reconstituted-from-a-concentrate",
-    "name": "Jus multifruit à base de concentré"
-  },
-  {
     "key": "en:orange-based-mixed-fruits-multivitamin-juice",
     "name": "Jus multifruit multivitaminé à base d'orange"
   },
@@ -408,12 +444,20 @@
     "name": "Jus multifruits à base de concentrés"
   },
   {
+    "key": "en:multifruit-juices-with-coconut-water",
+    "name": "Jus multifruits à l'eau de coco"
+  },
+  {
     "key": "en:refrigerated-squeezed-multifruit-juices",
     "name": "Jus multifruits frais"
   },
   {
     "key": "en:squeezed-multifruit-juices",
     "name": "Jus multifruits pur jus"
+  },
+  {
+    "key": "en:gravy",
+    "name": "Sauce au jus de viande"
   },
   {
     "key": "fr:tomates-entieres-pelees-au-jus",

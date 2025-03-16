@@ -1,5 +1,9 @@
 [
   {
+    "key": "en:flavoured-oils",
+    "name": "Aceites aromatizados"
+  },
+  {
     "key": "en:flavored-waters",
     "name": "Agua aromatizada"
   },
@@ -12,10 +16,6 @@
     "name": "Aromas"
   },
   {
-    "key": "en:aromatised-instant-coffees",
-    "name": "Aromatised instant coffees"
-  },
-  {
     "key": "en:breaded-onion-rings",
     "name": "Aros de cebolla empanados"
   },
@@ -26,6 +26,10 @@
   {
     "key": "en:bresse-blue-cheese-from-cow-s-milk-reduced-fat-around-15-fat",
     "name": "Bresse blue cheese from cow's milk reduced fat around 15% fat"
+  },
+  {
+    "key": "en:aromatised-instant-coffees",
+    "name": "Cafés instantáneos aromatizados"
   },
   {
     "key": "en:flavored-beers",
@@ -48,7 +52,7 @@
     "name": "Herbal vodka from the North Podlasie Lowland aromatised with an extract of bison grass"
   },
   {
-    "key": "en:aromatic-herbs",
+    "key": "en:herbs",
     "name": "Hierbas aromáticas"
   },
   {
@@ -64,12 +68,16 @@
     "name": "Mezclas de hierbas aromáticas y especias"
   },
   {
-    "key": "en:mixtures-of-aromatic-plants",
+    "key": "en:mixed-herbs",
     "name": "Mezclas de plantas aromáticas"
   },
   {
     "key": "en:plain-creamy-fresh-cream-cheese-around-8-fat",
     "name": "Plain creamy fresh cream cheese around 8% fat"
+  },
+  {
+    "key": "en:plain-fresh-cream-cheese-around-1-fat",
+    "name": "Plain fresh cream cheese around 1% fat"
   },
   {
     "key": "en:plain-fresh-cream-cheese-around-3-fat",
@@ -152,11 +160,19 @@
     "name": "Tés aromatizados"
   },
   {
+    "key": "fr:thes-verts-aromatises",
+    "name": "Tés verdes aromatizados"
+  },
+  {
     "key": "en:uncured-soft-cheese-spreadable-with-around-20-fat",
     "name": "Uncured soft cheese spreadable with around 20% fat"
   },
   {
     "key": "en:uncured-soft-cheese-spreadable-with-around-25-fat",
     "name": "Uncured soft cheese spreadable with around 25% fat"
+  },
+  {
+    "key": "en:flavoured-wines",
+    "name": "Vinos aromatizados"
   }
 ]

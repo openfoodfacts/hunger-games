@@ -8,12 +8,60 @@
     "name": "Baguette kebab with vegetables"
   },
   {
+    "key": "en:gluten-free-biscuits",
+    "name": "Bezglutenski keksi"
+  },
+  {
+    "key": "en:chestnut-flours",
+    "name": "Brašna od kestena"
+  },
+  {
+    "key": "en:chestnut-flours-t110",
+    "name": "Brašna od kestena t110"
+  },
+  {
+    "key": "en:coconut-kernel-in-syrup",
+    "name": "Coconut kernel in syrup"
+  },
+  {
+    "key": "en:chocolate-puffed-rice-not-fortified-with-vitamins-and-chemical-elements",
+    "name": "Čokoladna lisnata riža koja nije obogaćena vitaminima i kemijskim elementima"
+  },
+  {
+    "key": "en:chocolate-puffed-rice-fortified-with-vitamins-and-chemical-elements",
+    "name": "Čokoladna lisnata riža obogaćena vitaminima i kemijskim elementima"
+  },
+  {
+    "key": "en:chocolate-puffed-wheat-grains-fortified-with-vitamins-and-chemical-elements",
+    "name": "Čokoladna napuhana zrna pšenice obogaćena vitaminima i kemijskim elementima"
+  },
+  {
+    "key": "en:breakfast-chocolate-cereals-with-wheat-grain-flakes-not-fortified-with-vitamins-and-chemical-elements",
+    "name": "Čokoladne pahuljice za doručak s pahuljicama pšeničnog zrna koje nisu obogaćene vitaminima i kemijskim elementima"
+  },
+  {
+    "key": "en:chocolate-biscuits",
+    "name": "Čokoladni keksi"
+  },
+  {
+    "key": "en:chocolate-nuts-cookie-bars",
+    "name": "Čokoladni orasi Keksi"
+  },
+  {
+    "key": "en:chocolate-sandwich-cookies",
+    "name": "Čokoladni sendvič Keksi"
+  },
+  {
     "key": "en:doner-kebab",
     "name": "Doner kebab"
   },
   {
     "key": "en:dried-coconut-kernel",
     "name": "Dried coconut kernel"
+  },
+  {
+    "key": "en:filled-biscuits",
+    "name": "Filovani keks"
   },
   {
     "key": "en:fresh-immature-coconut-kernel",
@@ -24,24 +72,48 @@
     "name": "Fresh ripe coconut kernel"
   },
   {
-    "key": "en:frozen-corn-kernels",
-    "name": "Frozen corn kernels"
+    "key": "en:crunchy-chocolate-muesli-fortified-with-vitamins-and-chemical-elements",
+    "name": "Hrskavi čokoladni müsli obogaćen vitaminima i kemijskim elementima"
   },
   {
-    "key": "en:fruit-kefir-yogurts",
-    "name": "Fruit kefir yogurts"
+    "key": "en:crunchy-muesli-with-chocolate-not-fortified-with-vitamins-and-chemical-elements",
+    "name": "Hrskavi müsli s čokoladom koji nisu obogaćeni vitaminima i kemijskim elementima"
   },
   {
-    "key": "en:kebab-breads",
-    "name": "Kebab breads"
+    "key": "en:crunchy-muesli-with-fruits-not-fortified-with-vitamins-and-chemical-elements",
+    "name": "Hrskavi müsli s voćem koji nije obogaćen vitaminima i kemijskim elementima"
+  },
+  {
+    "key": "en:crunchy-muesli-with-fruits-fortified-with-vitamins-and-chemical-elements",
+    "name": "Hrskavi müsli s voćem obogaćeni vitaminima i kemijskim elementima"
+  },
+  {
+    "key": "en:chestnut-yogurts",
+    "name": "Jogurti od kestena"
+  },
+  {
+    "key": "en:chestnut-ice-cream-tubs",
+    "name": "Kadice sladoleda od kestena"
+  },
+  {
+    "key": "en:caramel-chocolate-cookie-bars",
+    "name": "Karamel čokoladne keksiće"
   },
   {
     "key": "en:kebab-pizzas",
-    "name": "Kebab pizzas"
+    "name": "Kebab pizze"
   },
   {
-    "key": "en:kebab-sauces",
-    "name": "Kebab sauces"
+    "key": "en:tomato-ketchup",
+    "name": "Kečap"
+  },
+  {
+    "key": "en:ketchup-crisps",
+    "name": "Kečap čips"
+  },
+  {
+    "key": "en:kedgeree",
+    "name": "Kedgeree"
   },
   {
     "key": "en:kefir",
@@ -49,23 +121,23 @@
   },
   {
     "key": "en:kefir-1",
-    "name": "Kefir 1 %"
+    "name": "Kefir 1%"
   },
   {
     "key": "en:kefir-2-5",
-    "name": "Kefir 2.5 %"
+    "name": "Kefir 2‚5%"
   },
   {
     "key": "en:kefir-3-2",
-    "name": "Kefir 3.2 %"
-  },
-  {
-    "key": "en:kefir-for-children",
-    "name": "Kefir for children"
+    "name": "Kefir 3‚2%"
   },
   {
     "key": "en:kefir-yogurts",
-    "name": "Kefir yogurts"
+    "name": "Kefir jogurti"
+  },
+  {
+    "key": "en:kefir-for-children",
+    "name": "Kefir za djecu"
   },
   {
     "key": "en:kefta",
@@ -76,31 +148,231 @@
     "name": "Kefta substitutes"
   },
   {
+    "key": "en:biscuits",
+    "name": "Keksi"
+  },
+  {
+    "key": "en:biscuits-and-cakes",
+    "name": "Keksi i kolači"
+  },
+  {
+    "key": "en:almond-cookies",
+    "name": "Keksi od badema"
+  },
+  {
+    "key": "en:white-chocolate-biscuits",
+    "name": "Keksi od bijele čokolade"
+  },
+  {
+    "key": "en:chocolate-and-hazelnut-cookies",
+    "name": "Keksi od čokolade i lješnjaka"
+  },
+  {
+    "key": "en:strawberry-biscuits",
+    "name": "Keksi od jagoda"
+  },
+  {
+    "key": "en:milk-chocolate-biscuits",
+    "name": "Keksi od mliječne čokolade"
+  },
+  {
+    "key": "en:shortbread-cookies",
+    "name": "Keksi od prhkog tijesta"
+  },
+  {
+    "key": "en:dark-chocolate-biscuits",
+    "name": "Keksi od tamne čokolade"
+  },
+  {
+    "key": "en:cookies-with-chocolate-and-coconut",
+    "name": "Keksi s čokoladom i kokosom"
+  },
+  {
+    "key": "en:cookies-with-chocolate-and-nougat",
+    "name": "Keksi s čokoladom i nugatom"
+  },
+  {
+    "key": "en:raisin-cookies",
+    "name": "Keksi s grožđicama"
+  },
+  {
+    "key": "en:biscuits-with-nuts",
+    "name": "Keksi s orasima"
+  },
+  {
+    "key": "en:chocolate-chip-cookies",
+    "name": "Keksi sa cokoladnim komadima"
+  },
+  {
+    "key": "en:biscuits-for-babies",
+    "name": "Keksi za bebe"
+  },
+  {
+    "key": "fr:biscuits-fourres-aux-fruits",
+    "name": "Keksići punjeni voćem"
+  },
+  {
+    "key": "en:cookies-with-milk-chocolate",
+    "name": "Keksovi s mliječnom čokoladom"
+  },
+  {
     "key": "en:kentish-ale",
     "name": "Kentish ale"
   },
   {
-    "key": "en:ketchup",
-    "name": "Ketchup"
+    "key": "en:chestnuts-in-syrup",
+    "name": "Kesteni u saftu"
   },
   {
-    "key": "en:ketchup-crisps",
-    "name": "Ketchup crisps"
+    "key": "en:chestnut-honey",
+    "name": "Kestenov med"
+  },
+  {
+    "key": "en:chestnuts",
+    "name": "Kestenovi"
+  },
+  {
+    "key": "en:ketchup",
+    "name": "Ketchap"
+  },
+  {
+    "key": "en:curly-kale",
+    "name": "Kovrčavi kelj"
+  },
+  {
+    "key": "en:cooked-curly-kale",
+    "name": "Kuhani kovrčavi kelj"
+  },
+  {
+    "key": "en:flaky-biscuits",
+    "name": "Lisnati keksi"
+  },
+  {
+    "key": "en:puffed-rice-fortified-with-vitamins-and-chemical-elements",
+    "name": "Lisnatu rižu obogaćenu vitaminima i kemijskim elementima"
   },
   {
     "key": "en:olive-oils-from-agios-mattheos-kerkyras",
-    "name": "Olive oils from Agios Mattheos Kerkyras"
+    "name": "Maslinova ulja iz Agios Mattheos Kerkyras"
   },
   {
     "key": "en:olive-oils-from-kefalonia",
-    "name": "Olive oils from Kefalonia"
+    "name": "Maslinova ulja s Kefalonije"
   },
   {
-    "key": "en:tomato-ketchup",
-    "name": "Tomato Ketchup"
+    "key": "en:powdered-chestnut-milks",
+    "name": "Mlijeka od kestena u prahu"
   },
   {
-    "key": "en:walnut-kernels",
-    "name": "Walnut kernels"
+    "key": "en:muesli-flakes-not-fortified-with-vitamins-and-chemical-elements",
+    "name": "Muesli pahuljice koje nisu obogaćene vitaminima i kemijskim elementima"
+  },
+  {
+    "key": "en:muesli-flakes-fortified-with-vitamins-and-chemical-elements",
+    "name": "Muesli pahuljice obogaćene vitaminima i kemijskim elementima"
+  },
+  {
+    "key": "en:plain-corn-flakes-not-fortified-with-vitamins-and-chemical-elements",
+    "name": "Obične kukuruzne pahuljice koje nisu obogaćene vitaminima i kemijskim elementima"
+  },
+  {
+    "key": "en:plain-corn-flakes-fortified-with-vitamins-and-chemical-elements",
+    "name": "Obične kukuruzne pahuljice obogaćene vitaminima i kemijskim elementima"
+  },
+  {
+    "key": "en:coated-chocolate-bar-without-biscuit",
+    "name": "Obložena čokoladica bez keksa"
+  },
+  {
+    "key": "en:shelled-chestnuts",
+    "name": "Oljušteni kesteni"
+  },
+  {
+    "key": "en:biscuits-or-cookies-variety-packs",
+    "name": "Pakiranja keksa ili kolačića"
+  },
+  {
+    "key": "en:chestnut-based-drinks",
+    "name": "Pića na bazi kestena"
+  },
+  {
+    "key": "en:beers-with-chestnut",
+    "name": "Piva s kestenom"
+  },
+  {
+    "key": "en:chestnut-mousses",
+    "name": "Pjene od kestena"
+  },
+  {
+    "key": "en:crispy-biscuits",
+    "name": "Prhki keksići"
+  },
+  {
+    "key": "en:sugar-iced-corn-flakes-not-fortified-with-vitamins-and-chemical-elements",
+    "name": "Šećerne kukuruzne pahuljice koje nisu obogaćene vitaminima i kemijskim elementima"
+  },
+  {
+    "key": "en:sugar-iced-corn-flakes-fortified-with-vitamins-and-chemical-elements",
+    "name": "Šećerom ledene kukuruzne pahuljice obogaćene vitaminima i kemijskim elementima"
+  },
+  {
+    "key": "en:chestnut-syrups",
+    "name": "Sirupi od kestena"
+  },
+  {
+    "key": "en:frozen-chestnuts",
+    "name": "Smrznuti kesteni"
+  },
+  {
+    "key": "en:sprits-biscuits",
+    "name": "Špric keksi"
+  },
+  {
+    "key": "en:dry-biscuits",
+    "name": "Suhi keks"
+  },
+  {
+    "key": "en:tartlet-biscuits-with-chocolate",
+    "name": "Tartlet keksi s čokoladom"
+  },
+  {
+    "key": "en:tartlet-biscuits-with-fruit-preparation",
+    "name": "Tartlet keksi s voćnim pripravkom"
+  },
+  {
+    "key": "en:tomato-ketchup-substitutes",
+    "name": "Tomato ketchup substitutes"
+  },
+  {
+    "key": "en:chestnut-applesauces",
+    "name": "Umaci od jabuka od kestena"
+  },
+  {
+    "key": "en:kebab-sauces",
+    "name": "Umaci za kebab"
+  },
+  {
+    "key": "en:fruit-kefir-yogurts",
+    "name": "Voćni kefir jogurti"
+  },
+  {
+    "key": "en:fruit-biscuits",
+    "name": "Voćni keksi"
+  },
+  {
+    "key": "en:chestnut-spreads",
+    "name": "Zaslađeni kesten pire"
+  },
+  {
+    "key": "en:breakfast-cereals-not-fortified-with-vitamins-and-chemical-elements",
+    "name": "Žitarice za doručak koje nisu obogaćene vitaminima i kemijskim elementima"
+  },
+  {
+    "key": "en:breakfast-cereals-fortified-with-vitamins-and-chemical-elements",
+    "name": "Žitarice za doručak obogaćene vitaminima i kemijskim elementima"
+  },
+  {
+    "key": "en:oatmeal-cookies",
+    "name": "Zobeni Keksi"
   }
 ]

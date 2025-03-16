@@ -12,6 +12,10 @@
     "name": "Capelin"
   },
   {
+    "key": "en:capelin-roe",
+    "name": "Capelin roe"
+  },
+  {
     "key": "en:capellini",
     "name": "Capellini"
   },
@@ -32,12 +36,32 @@
     "name": "Capón del Prat"
   },
   {
+    "key": "en:cappuccino",
+    "name": "Cappuccino"
+  },
+  {
+    "key": "en:instant-powder-for-cappuccino-with-chocolate",
+    "name": "Cappuccino de chocolate en polvo instantáneo"
+  },
+  {
+    "key": "en:instant-cappuccino-without-sugar",
+    "name": "Cappuccino instantáneo sin azúcar"
+  },
+  {
     "key": "en:cappuccino-without-sugar",
-    "name": "Cappuccino without sugar"
+    "name": "Cappuccino sin azúcar"
   },
   {
     "key": "en:powdered-cappucino",
     "name": "Cappucino en polvo"
+  },
+  {
+    "key": "en:dolce-gusto-compatible-capsules",
+    "name": "Cápsulas compatibles con Dolce Gusto"
+  },
+  {
+    "key": "en:cocoa-capsules",
+    "name": "Cápsulas de cacao"
   },
   {
     "key": "en:coffee-capsules",
@@ -56,20 +80,20 @@
     "name": "Cápsulas de café compatibles con Senseo"
   },
   {
+    "key": "en:decaffeinated-coffee-capsules",
+    "name": "Cápsulas de café descafeinado"
+  },
+  {
+    "key": "en:tea-capsules",
+    "name": "Cápsulas de té"
+  },
+  {
     "key": "en:capsules",
     "name": "Capsules"
   },
   {
-    "key": "en:decaffeinated-coffee-capsules",
-    "name": "Decaffeinated coffee capsules"
-  },
-  {
-    "key": "en:instant-cappuccino-without-sugar",
-    "name": "Instant cappuccino without sugar"
-  },
-  {
-    "key": "en:instant-powder-for-cappuccino-with-chocolate",
-    "name": "Instant powder for cappuccino with chocolate"
+    "key": "en:instant-coffee-substitute-capsules-or-pods",
+    "name": "Instant coffee substitute capsules or pods"
   },
   {
     "key": "es:pollo-y-capon-del-prat",
@@ -82,9 +106,5 @@
   {
     "key": "en:tassimo-compatible-coffee-capsules",
     "name": "Tassimo-compatible coffee capsules"
-  },
-  {
-    "key": "en:tea-capsules",
-    "name": "Tea capsules"
   }
 ]

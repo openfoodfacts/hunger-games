@@ -1,13 +1,5 @@
 [
   {
-    "key": "en:cooked-curly-kale",
-    "name": "Cooked curly kale"
-  },
-  {
-    "key": "en:curly-kale",
-    "name": "Curly kale"
-  },
-  {
     "key": "en:breaded-turkey",
     "name": "Gepandeerde kalkoen"
   },
@@ -32,8 +24,16 @@
     "name": "Kalfsvlezen"
   },
   {
-    "key": "fr:cordons-bleus-de-dinde",
+    "key": "en:turkey-cordons-bleus",
     "name": "Kalkoen cordon bleus"
+  },
+  {
+    "key": "en:turkey-and-its-products",
+    "name": "Kalkoen en afgeleide producten"
+  },
+  {
+    "key": "en:turkey-preparations",
+    "name": "Kalkoenbereidingen"
   },
   {
     "key": "en:turkey-breasts",
@@ -42,10 +42,6 @@
   {
     "key": "en:turkey-thighs",
     "name": "Kalkoendijen"
-  },
-  {
-    "key": "en:turkey-dishes",
-    "name": "Kalkoenenvleesmaaltijden"
   },
   {
     "key": "en:turkey-fillets",
@@ -64,12 +60,24 @@
     "name": "Kalkoennuggets"
   },
   {
+    "key": "en:turkey-patties",
+    "name": "Kalkoenpasteitjes"
+  },
+  {
     "key": "en:turkey-salami",
     "name": "Kalkoensalamis"
   },
   {
     "key": "en:turkey-sandwiches",
     "name": "Kalkoensandwiches"
+  },
+  {
+    "key": "en:turkey-fat",
+    "name": "Kalkoenvetten"
+  },
+  {
+    "key": "en:turkey-dishes",
+    "name": "Kalkoenvleesmaaltijden"
   },
   {
     "key": "en:turkeys",

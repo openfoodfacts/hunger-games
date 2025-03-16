@@ -1,9 +1,5 @@
 [
   {
-    "key": "en:arabica-ground-coffees",
-    "name": "Arabica ground coffees"
-  },
-  {
     "key": "en:arabica-coffee-beans",
     "name": "Arabica koffiebonen"
   },
@@ -36,6 +32,10 @@
     "name": "Arctic char"
   },
   {
+    "key": "en:areca-nuts",
+    "name": "Areca nuts"
+  },
+  {
     "key": "en:arepas",
     "name": "Arepas"
   },
@@ -50,6 +50,10 @@
   {
     "key": "en:argolida",
     "name": "Argolida"
+  },
+  {
+    "key": "en:ariane-apples",
+    "name": "Ariane apples"
   },
   {
     "key": "en:armagh-bramley-apples",
@@ -84,8 +88,16 @@
     "name": "Aromatische planten in pot"
   },
   {
+    "key": "en:arpacas",
+    "name": "Arpacas"
+  },
+  {
     "key": "en:arrabbiata-sauces",
     "name": "Arrabiatasauzen"
+  },
+  {
+    "key": "en:arrotolata-pancetta",
+    "name": "Arrotolata pancetta"
   },
   {
     "key": "en:artichoke-spreads",
@@ -106,6 +118,10 @@
   {
     "key": "en:canned-artichokes",
     "name": "Artisjokken en blik/pot"
+  },
+  {
+    "key": "en:armagnac-babas",
+    "name": "Babas met armagnac"
   },
   {
     "key": "en:bas-armagnac",
@@ -152,20 +168,12 @@
     "name": "Carbonated soft drinks without fruit juice with sugar and artificial sweeteners"
   },
   {
-    "key": "en:chinese-artichokes",
-    "name": "Chinese artichokes"
-  },
-  {
     "key": "en:cola-with-sugar-and-artificial-sweetener",
-    "name": "Cola with sugar and artificial sweetener"
+    "name": "Cola met suiker en artificiële zoetstoffen"
   },
   {
     "key": "en:concentrate-syrup-without-sugar-and-with-artificial-sweeteners",
     "name": "Concentrate syrup without sugar and with artificial sweeteners"
-  },
-  {
-    "key": "en:cooked-globe-artichoke",
-    "name": "Cooked globe artichoke"
   },
   {
     "key": "en:cooked-jerusalem-artichoke",
@@ -201,7 +209,7 @@
   },
   {
     "key": "en:energy-drink-without-sugar-and-with-artificial-sweeteners",
-    "name": "Energiedrankenzonder suiker met artificiële zoetstoffen"
+    "name": "Energiedranken zonder suiker met artificiële zoetstoffen"
   },
   {
     "key": "en:firm-cheese-around-27-fat-maasdam-type-cheese",
@@ -210,18 +218,6 @@
   {
     "key": "en:flavoured-uncured-soft-cheese-spreadable-with-around-30-40-fat",
     "name": "Flavoured uncured soft cheese spreadable with around 30-40% fat"
-  },
-  {
-    "key": "en:fresh-artichokes",
-    "name": "Fresh artichokes"
-  },
-  {
-    "key": "en:frozen-artichoke-bottom",
-    "name": "Frozen artichoke bottom"
-  },
-  {
-    "key": "en:frozen-chinese-artichokes",
-    "name": "Frozen Chinese artichokes"
   },
   {
     "key": "en:fruits-of-aragon",
@@ -240,6 +236,14 @@
     "name": "Gedroogde en gemalen aromatische planten"
   },
   {
+    "key": "en:cooked-globe-artichoke",
+    "name": "Gekookte artisjok"
+  },
+  {
+    "key": "en:arabica-ground-coffees",
+    "name": "Gemalen Arabica koffies"
+  },
+  {
     "key": "en:marinated-canned-artichokes",
     "name": "Gemarineerde artisjokken in blik/pot"
   },
@@ -252,10 +256,6 @@
     "name": "Herbal vodka from the North Podlasie Lowland aromatised with an extract of bison grass"
   },
   {
-    "key": "en:jerusalem-artichoke",
-    "name": "Jerusalem artichoke"
-  },
-  {
     "key": "en:low-lactose-milk",
     "name": "Lactose-arme melk"
   },
@@ -266,10 +266,6 @@
   {
     "key": "en:lemonade-without-sugar-with-artificial-sweeteners",
     "name": "Limonade zonder suiker met artificiële zoetstoffen"
-  },
-  {
-    "key": "en:liver-sausages-from-ariege",
-    "name": "Liver sausages from Ariége"
   },
   {
     "key": "en:olive-oils-from-arxanes-irakliou-kritis",
@@ -286,6 +282,10 @@
   {
     "key": "en:plain-creamy-fresh-cream-cheese-around-8-fat",
     "name": "Plain creamy fresh cream cheese around 8% fat"
+  },
+  {
+    "key": "en:plain-fresh-cream-cheese-around-1-fat",
+    "name": "Plain fresh cream cheese around 1% fat"
   },
   {
     "key": "en:plain-fresh-cream-cheese-around-3-fat",
@@ -372,12 +372,16 @@
     "name": "Verse aromatische planten"
   },
   {
+    "key": "en:fresh-artichokes",
+    "name": "Verse artisjokken"
+  },
+  {
     "key": "en:wines-from-argentina",
-    "name": "Wines from Argentina"
+    "name": "Wijnen uit Argentinië"
   },
   {
     "key": "en:wines-from-armenia",
-    "name": "Wines from Armenia"
+    "name": "Wijnen uit Armenië"
   },
   {
     "key": "fr:blanche-armagnac",

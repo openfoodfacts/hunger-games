@@ -8,10 +8,6 @@
     "name": "Armenian sea products"
   },
   {
-    "key": "en:bakery-products",
-    "name": "Bakery products"
-  },
-  {
     "key": "en:balls-from-soy-and-or-wheat-proteins",
     "name": "Balls from soy and or wheat proteins"
   },
@@ -22,14 +18,6 @@
   {
     "key": "en:belgian-bakery-products",
     "name": "Belgian bakery products"
-  },
-  {
-    "key": "en:belgian-meat-products",
-    "name": "Belgian meat products"
-  },
-  {
-    "key": "en:belgian-sea-products",
-    "name": "Belgian sea products"
   },
   {
     "key": "en:beware-multiple-products",
@@ -44,24 +32,12 @@
     "name": "Brazilian sea products"
   },
   {
-    "key": "en:british-sea-products",
-    "name": "British sea products"
-  },
-  {
     "key": "en:bulgarian-meat-products",
     "name": "Bulgarian meat products"
   },
   {
     "key": "en:chicken-and-its-products",
     "name": "Chicken and its products"
-  },
-  {
-    "key": "en:chinese-sea-products",
-    "name": "Chinese sea products"
-  },
-  {
-    "key": "en:cocoa-and-its-products",
-    "name": "Cocoa and its products"
   },
   {
     "key": "en:croatian-bakery-products",
@@ -88,8 +64,8 @@
     "name": "Czech meat products"
   },
   {
-    "key": "en:czech-sea-products",
-    "name": "Czech sea products"
+    "key": "en:dairy-by-products",
+    "name": "Dairy by-products"
   },
   {
     "key": "en:dried-deffated-black-soldier-fly-protein",
@@ -100,8 +76,8 @@
     "name": "Dried Provence herbs"
   },
   {
-    "key": "en:fenugreek-products",
-    "name": "Fenugreek products"
+    "key": "en:incorrect-product-type",
+    "name": "Falscher product type"
   },
   {
     "key": "en:finnish-bakery-products",
@@ -112,10 +88,6 @@
     "name": "Finnish meat products"
   },
   {
-    "key": "en:finnish-sea-products",
-    "name": "Finnish sea products"
-  },
-  {
     "key": "en:fishes-and-their-products",
     "name": "Fishes and their products"
   },
@@ -124,12 +96,8 @@
     "name": "French meat products"
   },
   {
-    "key": "en:german-meat-products",
-    "name": "German meat products"
-  },
-  {
-    "key": "en:german-sea-products",
-    "name": "German sea products"
+    "key": "en:frozen-cereals-and-their-products",
+    "name": "Frozen cereals and their products"
   },
   {
     "key": "en:dried-products",
@@ -160,20 +128,12 @@
     "name": "Hungarian meat products"
   },
   {
-    "key": "en:hungarian-sea-products",
-    "name": "Hungarian sea products"
-  },
-  {
     "key": "en:irish-sea-products",
     "name": "Irish sea products"
   },
   {
     "key": "en:italian-bakery-products",
     "name": "Italian bakery products"
-  },
-  {
-    "key": "en:italian-meat-products",
-    "name": "Italian meat products"
   },
   {
     "key": "en:italian-sea-products",
@@ -200,6 +160,10 @@
     "name": "Lithuanian meat products"
   },
   {
+    "key": "en:licensed-products",
+    "name": "Lizensierte Produkte"
+  },
+  {
     "key": "en:meat-analogues-from-pea-proteins",
     "name": "Meat analogues from pea proteins"
   },
@@ -208,16 +172,16 @@
     "name": "Meat analogues from soy or wheat proteins"
   },
   {
+    "key": "en:unpasteurised-products",
+    "name": "Nicht pasteurisierte Produkte"
+  },
+  {
     "key": "en:non-food-products",
     "name": "Non-Food-Produkte"
   },
   {
     "key": "en:norwegian-meat-products",
     "name": "Norwegian meat products"
-  },
-  {
-    "key": "en:norwegian-sea-products",
-    "name": "Norwegian sea products"
   },
   {
     "key": "en:nuggets-from-soy-and-wheat-proteins",
@@ -244,6 +208,10 @@
     "name": "Panierte Produkte"
   },
   {
+    "key": "en:pasteurised-products",
+    "name": "Pasteurisierte Produkte"
+  },
+  {
     "key": "en:patties-from-soy-and-or-wheat-proteins",
     "name": "Patties from soy and or wheat proteins"
   },
@@ -268,8 +236,8 @@
     "name": "Portuguese meat products"
   },
   {
-    "key": "en:portuguese-sea-products",
-    "name": "Portuguese sea products"
+    "key": "en:processed-cereals",
+    "name": "Processed cereals"
   },
   {
     "key": "en:processed-cheese-around-20-fat-in-cubes",
@@ -294,6 +262,10 @@
   {
     "key": "en:products-for-specific-diets",
     "name": "Products for specific diets"
+  },
+  {
+    "key": "en:products-that-cannot-be-found-in-metropolitan-france",
+    "name": "Products that cannot be found in metropolitan France"
   },
   {
     "key": "en:products-sold-before-year-2000",
@@ -388,12 +360,12 @@
     "name": "Romanian meat products"
   },
   {
-    "key": "en:romanian-sea-products",
-    "name": "Romanian sea products"
-  },
-  {
     "key": "en:slovenian-meat-products",
     "name": "Slovenian meat products"
+  },
+  {
+    "key": "en:smoked-provolone",
+    "name": "Smoked provolone"
   },
   {
     "key": "en:spanish-bakery-products",
@@ -424,11 +396,15 @@
     "name": "Turkey and its products"
   },
   {
+    "key": "en:vegan-products",
+    "name": "Vegan products"
+  },
+  {
     "key": "en:white-fish-with-provencal-sauce",
     "name": "White fish with Provencal sauce"
   },
   {
-    "key": "en:yoghurts-high-in-protein-on-a-fruit-layer",
-    "name": "Yoghurts high in protein on a fruit layer"
+    "key": "en:yogurts-high-in-protein-on-a-fruit-layer",
+    "name": "Yogurts high in protein on a fruit layer"
   }
 ]

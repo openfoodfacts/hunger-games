@@ -1,9 +1,5 @@
 [
   {
-    "key": "en:beers-without-gluten",
-    "name": "Beers without gluten"
-  },
-  {
     "key": "en:cooked-globe-artichoke",
     "name": "Cooked globe artichoke"
   },
@@ -12,24 +8,56 @@
     "name": "Cooked unsalted gluten-free dry pasta"
   },
   {
+    "key": "en:dehydrated-mushroom-soup",
+    "name": "Dehidrirana juha od gljiva"
+  },
+  {
     "key": "en:glasswort",
     "name": "Glasswort"
   },
   {
-    "key": "en:glazed-doughnuts",
-    "name": "Glazed doughnuts"
+    "key": "en:head-cheese",
+    "name": "Glavati sir"
+  },
+  {
+    "key": "en:main-meals-for-babies",
+    "name": "Glavni obroci za bebe"
   },
   {
     "key": "en:glazes-with-balsamic-vinegar",
     "name": "Glazes with balsamic vinegar"
   },
   {
-    "key": "en:glazes-with-vinegar",
-    "name": "Glazes with vinegar"
-  },
-  {
     "key": "en:glazes-with-white-vinegar",
     "name": "Glazes with white vinegar"
+  },
+  {
+    "key": "en:glazed-doughnuts",
+    "name": "Glazirane krafne"
+  },
+  {
+    "key": "en:glazes-with-vinegar",
+    "name": "Glazure octom"
+  },
+  {
+    "key": "en:mushrooms",
+    "name": "Gljive"
+  },
+  {
+    "key": "en:red-pine-mushrooms",
+    "name": "Gljive crvene borovice"
+  },
+  {
+    "key": "en:canned-red-pine-mushrooms",
+    "name": "Gljive crvene borovice iz konzerve"
+  },
+  {
+    "key": "en:mushrooms-and-their-products",
+    "name": "Gljive i njihovi proizvodi"
+  },
+  {
+    "key": "en:champignon-mushrooms",
+    "name": "Gljive šampinjoni"
   },
   {
     "key": "en:gloucester-cheese",
@@ -41,86 +69,242 @@
   },
   {
     "key": "en:glucose",
-    "name": "Glucose"
+    "name": "Glukoza"
+  },
+  {
+    "key": "en:glutamate",
+    "name": "Glutamate"
   },
   {
     "key": "en:glutamine",
-    "name": "Glutamine"
-  },
-  {
-    "key": "en:gluten-flours",
-    "name": "Gluten flours"
-  },
-  {
-    "key": "en:gluten-free-bread-mixes",
-    "name": "Gluten free bread mixes"
-  },
-  {
-    "key": "en:gluten-free-biscuits",
-    "name": "Gluten-free biscuits"
-  },
-  {
-    "key": "en:gluten-free-breads",
-    "name": "Gluten-free breads"
+    "name": "Glutamin"
   },
   {
     "key": "en:gluten-free-dry-pasta",
     "name": "Gluten-free dry pasta"
   },
   {
-    "key": "en:gluten-free-pasta",
-    "name": "Gluten-free pasta"
-  },
-  {
-    "key": "en:gluten-free-penne",
-    "name": "Gluten-free penne"
-  },
-  {
-    "key": "en:gluten-free-penne-rigate",
-    "name": "Gluten-free penne rigate"
-  },
-  {
-    "key": "en:gluten-free-sliced-breads",
-    "name": "Gluten-free sliced breads"
-  },
-  {
-    "key": "en:gluten-free-spaghetti",
-    "name": "Gluten-free Spaghetti"
-  },
-  {
-    "key": "en:gluten-free-tagliatelles",
-    "name": "Gluten-free tagliatelles"
-  },
-  {
-    "key": "en:glutinous-rices",
-    "name": "Glutinous rices"
+    "key": "en:gluten-flours",
+    "name": "Glutenska brašna"
   },
   {
     "key": "en:glyko-triantafyllo-agrou",
     "name": "Glyko Triantafyllo Agrou"
   },
   {
+    "key": "en:mushroom-soups",
+    "name": "Juhe od gljiva"
+  },
+  {
+    "key": "en:canned-mushrooms",
+    "name": "Konzervirane gljive"
+  },
+  {
+    "key": "en:canned-king-trumpet-mushrooms",
+    "name": "Konzervirane kraljevske gljive trube"
+  },
+  {
+    "key": "en:canned-mixed-mushrooms",
+    "name": "Konzervirane miješane gljive"
+  },
+  {
+    "key": "en:canned-paddy-straw-mushrooms",
+    "name": "Konzervirane neoluštene gljive"
+  },
+  {
+    "key": "en:canned-shiitake-mushrooms",
+    "name": "Konzervirane shiitake gljive"
+  },
+  {
+    "key": "en:king-trumpet-mushrooms",
+    "name": "Kraljevske gljive trube"
+  },
+  {
+    "key": "en:cream-of-mushroom-soups",
+    "name": "Krem juhe od gljiva"
+  },
+  {
+    "key": "en:cream-of-champignon-mushroom-soups",
+    "name": "Krem juhe od gljiva od šampinjona"
+  },
+  {
+    "key": "en:gluten-free-breads",
+    "name": "Kruhovi bez glutena"
+  },
+  {
+    "key": "en:greek-style-marinated-mushrooms",
+    "name": "Marinirane gljive na grčki način"
+  },
+  {
     "key": "en:marrons-glaces",
     "name": "Marrons glacés"
   },
   {
+    "key": "en:mixed-mushrooms",
+    "name": "Miješane gljive"
+  },
+  {
+    "key": "en:nameko-mushrooms",
+    "name": "Nameko gljive"
+  },
+  {
+    "key": "en:canned-nameko-mushrooms",
+    "name": "Nameko gljive iz konzerve"
+  },
+  {
+    "key": "en:paddy-straw-mushrooms",
+    "name": "Neoluštene gljive"
+  },
+  {
+    "key": "en:omelette-with-mushrooms",
+    "name": "Omlet s gljivama"
+  },
+  {
+    "key": "en:ham-and-mushroom-pancake-in-cheese-sauce",
+    "name": "Palačinka od šunke i gljiva u umaku od sira"
+  },
+  {
     "key": "en:pasteles-de-gloria",
-    "name": "Pasteles de Gloria"
+    "name": "Pasteles de gloria"
+  },
+  {
+    "key": "en:gluten-free-penne",
+    "name": "Penne bez glutena"
+  },
+  {
+    "key": "en:mushroom-pies",
+    "name": "Pite od gljiva"
+  },
+  {
+    "key": "en:chicken-and-mushroom-pies",
+    "name": "Pite od piletine i gljiva"
+  },
+  {
+    "key": "en:beers-without-gluten",
+    "name": "Piva bez glutena"
+  },
+  {
+    "key": "en:cheese-and-mushrooms-pizza",
+    "name": "Pizza sa sirom i gljivama"
+  },
+  {
+    "key": "en:mushroom-powders",
+    "name": "Prah gljiva"
   },
   {
     "key": "en:products-without-gluten",
-    "name": "Products without gluten"
+    "name": "Proizvodi bez glutena"
+  },
+  {
+    "key": "en:mushroom-ravioli",
+    "name": "Ravioli s gljivama"
+  },
+  {
+    "key": "en:mushroom-risottos",
+    "name": "Rižoto od gljiva"
+  },
+  {
+    "key": "en:horn-of-plenty-mushrooms",
+    "name": "Rog obilja gljiva"
+  },
+  {
+    "key": "en:scotch-bonnet-mushrooms",
+    "name": "Scotch bonnet gljive"
+  },
+  {
+    "key": "en:shiitake-mushrooms",
+    "name": "Shiitake gljive"
   },
   {
     "key": "en:single-gloucester",
     "name": "Single Gloucester"
   },
   {
+    "key": "en:gluten-free-bread-mixes",
+    "name": "Smjese za kruh bez glutena"
+  },
+  {
+    "key": "en:frozen-mushrooms",
+    "name": "Smrznute gljive"
+  },
+  {
+    "key": "en:frozen-chanterelle-mushrooms",
+    "name": "Smrznute gljive lisičarke"
+  },
+  {
+    "key": "en:frozen-mixed-mushrooms",
+    "name": "Smrznute miješane gljive"
+  },
+  {
+    "key": "en:gluten-free-spaghetti",
+    "name": "Špageti bez glutena"
+  },
+  {
+    "key": "en:midland-hawthorn",
+    "name": "Srednji glog"
+  },
+  {
     "key": "en:steviol-glycosides",
-    "name": "Steviol glycosides"
+    "name": "Steviol glikozidi"
+  },
+  {
+    "key": "en:dried-mushrooms",
+    "name": "Sušene gljive"
+  },
+  {
+    "key": "en:dried-scotch-bonnet-mushrooms",
+    "name": "Sušene gljive scotch bonnet"
+  },
+  {
+    "key": "en:dried-mixed-mushrooms",
+    "name": "Sušene miješane gljive"
+  },
+  {
+    "key": "en:dried-shiitake-mushrooms",
+    "name": "Sušene shiitake gljive"
+  },
+  {
+    "key": "en:dried-horn-of-plenty-mushrooms",
+    "name": "Sušeni rog obilja gljiva"
+  },
+  {
+    "key": "en:pig-head",
+    "name": "Svinjska glava"
+  },
+  {
+    "key": "en:fresh-mushrooms",
+    "name": "Svježe gljive"
+  },
+  {
+    "key": "en:gluten-free-tagliatelles",
+    "name": "Tagliatelle bez glutena"
+  },
+  {
+    "key": "en:gluten-free-pasta",
+    "name": "Tjestenina bez glutena"
+  },
+  {
+    "key": "en:pasta-with-mushrooms",
+    "name": "Tjestenina s gljivama"
   },
   {
     "key": "en:traditionally-farmed-gloucestershire-old-spots-pork",
     "name": "Traditionally Farmed Gloucestershire Old Spots Pork"
+  },
+  {
+    "key": "en:mushroom-sauces",
+    "name": "Umaci od gljiva"
+  },
+  {
+    "key": "en:tomato-sauces-with-mushrooms",
+    "name": "Umaci od rajčice s gljivama"
+  },
+  {
+    "key": "en:cream-sauces-with-mushrooms",
+    "name": "Umaci od vrhnja s gljivama"
+  },
+  {
+    "key": "en:jew-s-ear-mushrooms",
+    "name": "Židovske gljive za uho"
   }
 ]

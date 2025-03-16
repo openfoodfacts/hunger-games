@@ -1,15 +1,51 @@
 [
   {
-    "key": "en:chocolate-covered-almonds",
+    "key": "en:chocolate-coated-almonds",
     "name": "Amandes enrobées de chocolat"
   },
   {
-    "key": "en:sugar-coated-almonds",
-    "name": "Amandes enrobées de sucre"
+    "key": "en:bacon-covered-with-cornmeal",
+    "name": "Bacon enrobé de farine de maïs"
+  },
+  {
+    "key": "en:smoked-bacon-covered-with-cornmeal",
+    "name": "Bacon fumé enrobé de farine de maïs"
   },
   {
     "key": "en:cereal-bar-with-fruits-fortified-with-vitamins-and-minerals",
     "name": "Barre céréalière équilibre aux fruits enrichie en vitamines et minéraux"
+  },
+  {
+    "key": "en:ice-cream-bars-coated-with-fat-reduced-cocoa",
+    "name": "Bâtonnets glacés enrobés de cacao maigre"
+  },
+  {
+    "key": "en:ice-cream-bars-coated-with-chocolate",
+    "name": "Bâtonnets glacés enrobés de chocolat"
+  },
+  {
+    "key": "en:ice-cream-bars-coated-with-fruit-sorbet",
+    "name": "Bâtonnets glacés enrobés de sorbet aux fruits"
+  },
+  {
+    "key": "en:vanilla-ice-cream-bars-coated-with-milk-chocolate",
+    "name": "Bâtonnets glacés vanille enrobés de chocolat au lait"
+  },
+  {
+    "key": "en:vanilla-ice-cream-bars-coated-with-milk-chocolate-and-almonds",
+    "name": "Bâtonnets glacés vanille enrobés de chocolat au lait aux amandes"
+  },
+  {
+    "key": "en:vanilla-ice-cream-bars-coated-with-white-chocolate",
+    "name": "Bâtonnets glacés vanille enrobés de chocolat blanc"
+  },
+  {
+    "key": "en:vanilla-ice-cream-bars-coated-with-white-chocolate-and-almonds",
+    "name": "Bâtonnets glacés vanille enrobés de chocolat blanc aux amandes"
+  },
+  {
+    "key": "en:vanilla-ice-cream-bars-coated-with-dark-chocolate",
+    "name": "Bâtonnets glacés vanille enrobés de chocolat noir"
   },
   {
     "key": "en:breakfast-biscuit-with-cereals-fortified-with-vitamins-and-chemical-elements",
@@ -168,8 +204,12 @@
     "name": "Corn flakes natures non enrichis en vitamines et minéraux"
   },
   {
-    "key": "en:enriched-apple-juices",
-    "name": "Enriched apple juices"
+    "key": "en:fat-free-fermented-dairy-desserts-with-fruits-and-sweeteners-fortified-with-vitamin-d",
+    "name": "Desserts lactés fermentés aux fruits édulcorés sans matière grasse enrichis en vitamine D"
+  },
+  {
+    "key": "en:fermented-dairy-desserts-with-fruits-enriched-with-vitamin-d",
+    "name": "Desserts lactés fermentés aux fruits enrichis en vitamine D"
   },
   {
     "key": "en:chocolate-covered-figs",
@@ -192,7 +232,7 @@
     "name": "Fruits à coques enrobés de chocolat"
   },
   {
-    "key": "en:chocolate-covered-fruits",
+    "key": "en:chocolate-coated-fruits",
     "name": "Fruits enrobés de chocolat"
   },
   {
@@ -208,8 +248,16 @@
     "name": "Grains de blé soufflés chocolatés enrichis en vitamines et minéraux"
   },
   {
+    "key": "en:chocolate-coated-coffee-beans",
+    "name": "Grains de café enrobés de chocolat"
+  },
+  {
     "key": "en:marshmallows-coated-with-chocolate",
     "name": "Guimauves enrobées de chocolat"
+  },
+  {
+    "key": "en:enriched-apple-juices",
+    "name": "Jus de pommes enrichés"
   },
   {
     "key": "en:semi-skimmed-uht-milk-fortified-with-vitamins",
@@ -268,11 +316,11 @@
     "name": "Pétales de maïs natures enrichis en vitamines et minéraux"
   },
   {
-    "key": "en:sugar-coated-pinenuts",
+    "key": "en:caramelized-pine-nuts",
     "name": "Pignons de pin enrobés de sucre"
   },
   {
-    "key": "en:chocolate-covered-chickpeas",
+    "key": "en:chocolate-coated-chickpeas",
     "name": "Pois chiches enrobés de chocolat"
   },
   {
@@ -298,13 +346,5 @@
   {
     "key": "en:puffed-rice-fortified-with-vitamins-and-chemical-elements",
     "name": "Riz soufflé nature enrichi en vitamines et minéraux"
-  },
-  {
-    "key": "en:fat-free-fermented-milk-yogurt-with-fruits-and-sweetener-fortified-with-vitamin-d",
-    "name": "Yaourt au lait fermenté aux fruits avec édulcorants à 0% de matières grasses enrichi en vitamine D"
-  },
-  {
-    "key": "en:fermented-milk-yogurt-fortified-with-vitamin-d-with-fruits-and-sugar",
-    "name": "Yaourt sucré au lait fermenté aux fruits enrichi en vitamine D"
   }
 ]

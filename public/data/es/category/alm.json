@@ -20,24 +20,44 @@
     "name": "Almendra de Mallorca"
   },
   {
+    "key": "en:raw-almonds",
+    "name": "Almendra natural"
+  },
+  {
+    "key": "en:roasted-almonds",
+    "name": "Almendra tostada"
+  },
+  {
     "key": "en:almonds",
     "name": "Almendras"
   },
   {
-    "key": "en:caramelized-almonds",
-    "name": "Almendras caramelizadas"
+    "key": "en:ground-almonds",
+    "name": "Almendras en polvo"
   },
   {
     "key": "es:almendras-garrapinadas",
     "name": "Almendras garrapiñadas"
   },
   {
-    "key": "en:chocolate-covered-almonds",
+    "key": "en:almond-flakes",
+    "name": "Almendras laminas"
+  },
+  {
+    "key": "en:chocolate-coated-almonds",
     "name": "Almendras recubiertas de chocolate"
   },
   {
     "key": "en:almond-creme-filled-wafers",
     "name": "Almendras rellenas de turrón"
+  },
+  {
+    "key": "en:blanched-almonds",
+    "name": "Almendras repeladas"
+  },
+  {
+    "key": "en:salted-almonds",
+    "name": "Almendras saladas"
   },
   {
     "key": "en:shelled-almonds",
@@ -72,28 +92,28 @@
     "name": "Almond cookies"
   },
   {
-    "key": "en:almond-flakes",
-    "name": "Almond flakes"
-  },
-  {
     "key": "en:almond-peeled-unpeeled-or-blanched",
     "name": "Almond peeled unpeeled or blanched"
   },
   {
-    "key": "en:cereal-bar-with-almonds-or-hazelnuts",
-    "name": "Barrita de cereales con almendras o avellanas"
+    "key": "en:almonds-roasted-and-unsalted",
+    "name": "Almonds(roasted and unsalted)"
+  },
+  {
+    "key": "en:cereal-bars-with-almonds",
+    "name": "Barrita de cereales con almendras"
   },
   {
     "key": "es:berenjena-de-almagro",
     "name": "Berenjena de Almagro"
   },
   {
-    "key": "en:chestnuts-in-syrup",
-    "name": "Castañas en almíbar"
+    "key": "en:cake-with-almond-flavoured-filling",
+    "name": "Cake with almond flavoured filling"
   },
   {
-    "key": "en:cereal-bar-with-almonds",
-    "name": "Cereal bar with almonds"
+    "key": "en:chestnuts-in-syrup",
+    "name": "Castañas en almíbar"
   },
   {
     "key": "en:cherries-in-syrup",
@@ -104,8 +124,8 @@
     "name": "Chocalte con leche almendrado"
   },
   {
-    "key": "en:chocolate-almond-milks",
-    "name": "Chocolate almond milks"
+    "key": "en:chocolate-almond-based-drinks",
+    "name": "Chocolate almond-based drinks"
   },
   {
     "key": "en:chocolates-with-almonds",
@@ -120,35 +140,43 @@
     "name": "Chocolates stuffed with almond paste"
   },
   {
-    "key": "en:almonds-spreads",
+    "key": "en:almond-spreads",
     "name": "Cremas a base de almendras"
+  },
+  {
+    "key": "en:croissant-with-almonds",
+    "name": "Croissant with almonds"
   },
   {
     "key": "en:croissant-with-almonds-from-bakery",
     "name": "Croissant with almonds from bakery"
   },
   {
+    "key": "en:croissants-with-almonds-and-pistachio",
+    "name": "Croissants with almonds and pistachio"
+  },
+  {
     "key": "es:desierto-de-almeria",
     "name": "Desierto de Almería"
+  },
+  {
+    "key": "en:fruit-salads-in-syrup",
+    "name": "Ensaladas de frutas en almíbar"
+  },
+  {
+    "key": "en:flavoured-almonds",
+    "name": "Flavoured almonds"
   },
   {
     "key": "en:fruits-in-syrup",
     "name": "Frutas en almíbar"
   },
   {
-    "key": "en:grilled-almonds",
-    "name": "Grilled almonds"
-  },
-  {
-    "key": "en:almond-meal",
-    "name": "Harinas de almendra"
-  },
-  {
     "key": "es:helado-de-vainilla-y-almendras",
     "name": "Helado de vainilla y almendras"
   },
   {
-    "key": "en:unsweetened-natural-almond-milks",
+    "key": "en:unsweetened-plain-almond-based-drinks",
     "name": "Leche de almendras natural sin edulcorar"
   },
   {
@@ -156,7 +184,7 @@
     "name": "Leches de almendra en polvo"
   },
   {
-    "key": "en:almond-milks",
+    "key": "en:almond-based-drinks",
     "name": "Leches de almendras"
   },
   {
@@ -172,6 +200,14 @@
     "name": "Mantecas de almendra"
   },
   {
+    "key": "en:marcona-almonds",
+    "name": "Marcona almonds"
+  },
+  {
+    "key": "es:marquesas-de-almendra",
+    "name": "Marquesas de Almendra"
+  },
+  {
     "key": "en:peaches-in-syrup",
     "name": "Melocotones en almíbar"
   },
@@ -184,16 +220,20 @@
     "name": "Natas vegetales a base de almendra para cocinar"
   },
   {
+    "key": "en:non-blanched-almonds",
+    "name": "Non-blanched almonds"
+  },
+  {
+    "key": "en:nonpareil-almonds",
+    "name": "Nonpareil almonds"
+  },
+  {
     "key": "es:norte-de-almeria",
     "name": "Norte de Almería"
   },
   {
     "key": "en:almond-paste",
     "name": "Pasta de almendras"
-  },
-  {
-    "key": "en:pear-tart-with-almonds",
-    "name": "Pear tart with almonds"
   },
   {
     "key": "en:pears-in-syrup",
@@ -204,24 +244,40 @@
     "name": "Piña en almíbar"
   },
   {
+    "key": "en:vegetable-dish-for-babies-from-12-months-with-starch-and-fish",
+    "name": "Plato de verduras para bebés a partir de los 12 meses con almidón y pescado"
+  },
+  {
+    "key": "en:vegetable-dish-for-babies-from-6-months-with-starch-and-fish",
+    "name": "Plato de verduras para bebés a partir de los 6 meses con almidón y pescado"
+  },
+  {
+    "key": "en:vegetable-dish-for-babies-from-8-months-with-starch-and-fish",
+    "name": "Plato de verduras para bebés a partir de los 8 meses con almidón y pescado"
+  },
+  {
     "key": "en:grapefruits-in-syrup",
     "name": "Pomelos en almíbar"
   },
   {
-    "key": "en:roasted-salted-almonds",
-    "name": "Roasted salted almonds"
+    "key": "en:roasted-and-salted-almonds",
+    "name": "Roasted and salted almonds"
   },
   {
-    "key": "en:salted-almonds",
-    "name": "Salted almonds"
+    "key": "en:slivered-almonds",
+    "name": "Slivered almonds"
   },
   {
-    "key": "en:salted-and-grilled-almonds",
-    "name": "Salted and grilled almonds"
+    "key": "en:smoked-almonds",
+    "name": "Smoked almonds"
   },
   {
-    "key": "en:sweetened-natural-almond-milks",
-    "name": "Sweetened natural almond milks"
+    "key": "en:sweetened-plain-almond-based-drinks",
+    "name": "Sweetened plain almond-based drinks"
+  },
+  {
+    "key": "en:pear-tart-with-almonds",
+    "name": "Tarta de pera con almendras"
   },
   {
     "key": "en:almond-cakes",
@@ -248,16 +304,40 @@
     "name": "Twelfth Night cake with almond paste"
   },
   {
-    "key": "en:vanilla-almond-milks",
-    "name": "Vanilla almond milks"
+    "key": "en:uht-almond-milks",
+    "name": "UHT almond milks"
+  },
+  {
+    "key": "en:unroasted-almonds",
+    "name": "Unroasted almonds"
+  },
+  {
+    "key": "en:unsalted-almonds",
+    "name": "Unsalted almonds"
+  },
+  {
+    "key": "en:unshelled-almonds",
+    "name": "Unshelled almonds"
+  },
+  {
+    "key": "en:vanilla-almond-based-drinks",
+    "name": "Vanilla almond-based drinks"
+  },
+  {
+    "key": "en:vanilla-ice-cream-bars-coated-with-milk-chocolate-and-almonds",
+    "name": "Vanilla ice cream bars coated with milk chocolate and almonds"
+  },
+  {
+    "key": "en:vanilla-ice-cream-bars-coated-with-white-chocolate-and-almonds",
+    "name": "Vanilla ice cream bars coated with white chocolate and almonds"
   },
   {
     "key": "en:walnut-and-almond-cake",
     "name": "Walnut and almond cake"
   },
   {
-    "key": "en:white-almond-purees",
-    "name": "White almond purees"
+    "key": "en:white-almond-butters",
+    "name": "White almond butters"
   },
   {
     "key": "fr:chocolat-blanc-en-tablette-aux-amandes",

@@ -1,6 +1,6 @@
 [
   {
-    "key": "en:pineapple-from-concentrate",
+    "key": "en:pineapple-juices-from-concentrate",
     "name": "Ananassäfte aus Konzentrat"
   },
   {
@@ -40,6 +40,10 @@
     "name": "Austern"
   },
   {
+    "key": "en:oyster-sauces",
+    "name": "Austernsaucen"
+  },
+  {
     "key": "en:austrian-cheeses",
     "name": "Austrian cheeses"
   },
@@ -48,16 +52,8 @@
     "name": "Austrian fruit"
   },
   {
-    "key": "en:austrian-fruit-spirit",
-    "name": "Austrian fruit spirit"
-  },
-  {
     "key": "en:austrian-liqueur",
     "name": "Austrian liqueur"
-  },
-  {
-    "key": "en:austrian-milks",
-    "name": "Austrian milks"
   },
   {
     "key": "en:austrian-oils-and-fats",
@@ -90,6 +86,10 @@
   {
     "key": "en:beers-from-united-kingdom",
     "name": "Biere aus dem Vereinigten Königreich"
+  },
+  {
+    "key": "en:beers-from-poland",
+    "name": "Biere aus Polen"
   },
   {
     "key": "fr:eau-de-vie-de-poire-de-bretagne",
@@ -208,6 +208,10 @@
     "name": "Fruchtsäfte aus Konzentrat"
   },
   {
+    "key": "en:beverages-from-desugared-fruit-juices",
+    "name": "Getränke aus entzuckerten Fruchtsäften"
+  },
+  {
     "key": "en:pomegranate-juices-from-concentrate",
     "name": "Granatapfelsäfte aus Konzentrat"
   },
@@ -224,8 +228,32 @@
     "name": "Honige aus Frankreich"
   },
   {
+    "key": "en:coffees-from-madagascar",
+    "name": "Kaffee aus Madagaskar"
+  },
+  {
+    "key": "en:coffees-from-the-dominican-republic",
+    "name": "Kaffees aus der Dominikanischen Republik"
+  },
+  {
     "key": "en:concentrated-carrot-juices",
     "name": "Karottensäfte aus Kartottenkonzentrat"
+  },
+  {
+    "key": "en:potatoes-from-france",
+    "name": "Kartoffeln aus Frankreich"
+  },
+  {
+    "key": "en:potatoes-from-italy",
+    "name": "Kartoffeln aus Italien"
+  },
+  {
+    "key": "en:potatoes-from-spain",
+    "name": "Kartoffeln aus Spanien"
+  },
+  {
+    "key": "en:potatoes-from-val-de-picones",
+    "name": "Kartoffeln aus Val de Picones"
   },
   {
     "key": "en:cheeses-from-the-united-kingdom",
@@ -256,6 +284,10 @@
     "name": "Marzipan aus Soto"
   },
   {
+    "key": "en:milks-from-austria",
+    "name": "Milks from Austria"
+  },
+  {
     "key": "en:multifruit-juices-from-concentrate",
     "name": "Multifruchtsäfte aus Konzentrat"
   },
@@ -282,6 +314,10 @@
   {
     "key": "en:olive-oils-from-portugal",
     "name": "Olivenöle aus Portugal"
+  },
+  {
+    "key": "en:olive-oils-from-spain",
+    "name": "Olivenöle aus Spanien"
   },
   {
     "key": "en:orange-juices-from-concentrate",
@@ -338,6 +374,22 @@
   {
     "key": "fr:eau-de-vie-de-cognac",
     "name": "Weinbrand aus Cognac und Umgebung"
+  },
+  {
+    "key": "en:wines-from-albania",
+    "name": "Weine aus Albanien"
+  },
+  {
+    "key": "en:wines-from-algeria",
+    "name": "Weine aus Algerien"
+  },
+  {
+    "key": "en:wines-from-argentina",
+    "name": "Weine aus Argentinien"
+  },
+  {
+    "key": "en:wines-from-armenia",
+    "name": "Weine aus Armenien"
   },
   {
     "key": "en:wines-from-australia",

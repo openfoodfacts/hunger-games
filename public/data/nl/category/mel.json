@@ -44,12 +44,8 @@
     "name": "Chocola met extra fijne melk"
   },
   {
-    "key": "en:milk-choclate-sprinkles",
+    "key": "en:milk-chocolate-sprinkles",
     "name": "Chocoladehagelslag melk"
-  },
-  {
-    "key": "en:chocolate-cake-with-melting-centre",
-    "name": "Chocolate cake with melting centre"
   },
   {
     "key": "en:dairy-desserts",
@@ -84,6 +80,10 @@
     "name": "Gefermenteerde melkdesserts natuur"
   },
   {
+    "key": "en:microfiltered-milks",
+    "name": "Gefilterde melken"
+  },
+  {
     "key": "en:homogenized-milks",
     "name": "Gehomogeniseerde melken"
   },
@@ -94,6 +94,10 @@
   {
     "key": "en:pasteurised-milks",
     "name": "Gepasteuriseerde melken"
+  },
+  {
+    "key": "en:whole-pasteurised-milks",
+    "name": "Gesteriliseerde volle melk"
   },
   {
     "key": "en:filled-milk-chocolates",
@@ -112,12 +116,24 @@
     "name": "Honeydew melon pulp"
   },
   {
+    "key": "en:high-digestible-milk",
+    "name": "Hoog verteerbare melk"
+  },
+  {
     "key": "en:hypoallergenic-milks",
     "name": "Hypoallergene melk"
   },
   {
-    "key": "en:coffee-drinks-with-milk",
-    "name": "Koffiedranken met melk"
+    "key": "en:evaporated-milks",
+    "name": "Ingedikte melken"
+  },
+  {
+    "key": "en:instant-coffee-with-milk-without-sugar",
+    "name": "Instant koffie met melk zonder suiker"
+  },
+  {
+    "key": "en:coffee-with-milk-with-sugar",
+    "name": "Koffie met melk met suiker"
   },
   {
     "key": "en:low-lactose-milk",
@@ -160,12 +176,20 @@
     "name": "Melk"
   },
   {
+    "key": "en:milks-liquid-and-powder",
+    "name": "Melk (vloeibaar en poeder)"
+  },
+  {
     "key": "en:vanilla-milks",
     "name": "Melk met vanille"
   },
   {
     "key": "en:mountain-milks",
     "name": "Melk van bergkoeien"
+  },
+  {
+    "key": "en:milks-for-premature-babies",
+    "name": "Melk voor premature baby's"
   },
   {
     "key": "en:milk-bread-rolls",
@@ -224,6 +248,14 @@
     "name": "Melkchocoladen"
   },
   {
+    "key": "en:milk-chocolate-bar-with-nougat",
+    "name": "Melkchocoladereep met nougat"
+  },
+  {
+    "key": "en:milk-chocolate-molds",
+    "name": "Melkchocoladevormen"
+  },
+  {
     "key": "en:milk-powders",
     "name": "Melkpoeders"
   },
@@ -242,10 +274,6 @@
   {
     "key": "fr:specialites-laitieres-nature-non-sucrees",
     "name": "Melkspecialiteiten natuur"
-  },
-  {
-    "key": "en:dairy-dessert-for-baby",
-    "name": "Melktoetje voor babies"
   },
   {
     "key": "en:milk-substitutes",
@@ -272,6 +300,10 @@
     "name": "Meloensorbet"
   },
   {
+    "key": "en:melon-seeds",
+    "name": "Melon seeds"
+  },
+  {
     "key": "en:melt-sandwich",
     "name": "Melt sandwich"
   },
@@ -286,6 +318,10 @@
   {
     "key": "en:non-homogenized-milks",
     "name": "Ongehomogeniseerde melken"
+  },
+  {
+    "key": "en:instant-powder-for-coffee-with-milk",
+    "name": "Oploskoffie met melkpoeder"
   },
   {
     "key": "en:canned-red-pine-mushrooms",
@@ -308,7 +344,7 @@
     "name": "Plantaardige melkchocolade"
   },
   {
-    "key": "en:plant-milks",
+    "key": "en:plant-based-milk-alternatives",
     "name": "Plantaardige melken"
   },
   {
@@ -340,20 +376,20 @@
     "name": "UHT-melken"
   },
   {
-    "key": "en:evaporated-milks",
-    "name": "Verdikte melken"
-  },
-  {
-    "key": "fr:laits-concentres-sucres",
+    "key": "en:evaporated-milks-with-sugar",
     "name": "Verdikte melken met suiker"
   },
   {
-    "key": "fr:laits-concentres-non-sucres",
+    "key": "en:evaporated-milks-without-sugar",
     "name": "Verdikte melken zonder suiker"
   },
   {
     "key": "en:fresh-milks",
     "name": "Verse melken"
+  },
+  {
+    "key": "en:whole-milk-uht",
+    "name": "Volle melk UHT"
   },
   {
     "key": "en:whole-milks",

@@ -1,5 +1,9 @@
 [
   {
+    "key": "en:shelf-stable-cooking-helpers",
+    "name": "Aides culinaires conservables"
+  },
+  {
     "key": "en:canned-seaweeds",
     "name": "Algues en conserve"
   },
@@ -10,6 +14,10 @@
   {
     "key": "en:canned-pineapples",
     "name": "Ananas en conserve"
+  },
+  {
+    "key": "en:appetite-control",
+    "name": "Appetite control"
   },
   {
     "key": "en:canned-artichokes",
@@ -28,11 +36,27 @@
     "name": "Asperges vertes en conserve"
   },
   {
+    "key": "en:pickles-relishes-chutneys-olives-variety-packs",
+    "name": "Assortiments de conserves au vinaigre et olives"
+  },
+  {
+    "key": "en:sauces-and-condiments-variety-packs",
+    "name": "Assortiments de sauces et condiments"
+  },
+  {
+    "key": "en:frozen-bananas",
+    "name": "Bananes congélés"
+  },
+  {
+    "key": "en:canned-barbunya",
+    "name": "Barbunya en conserve"
+  },
+  {
     "key": "en:jam-doughnuts",
     "name": "Beignets à la confiture"
   },
   {
-    "key": "en:canned-beet",
+    "key": "en:canned-beetroot",
     "name": "Betteraves en conserve"
   },
   {
@@ -42,10 +66,6 @@
   {
     "key": "en:concentrate-syrup-without-sugar-and-with-artificial-sweeteners",
     "name": "Boisson concentrée à diluer sans sucres ajoutés avec édulcorants"
-  },
-  {
-    "key": "en:soy-based-sliced",
-    "name": "Bouchées ou émincé au soja et blé (ne convient pas aux véganes ou végétaliens) préemballé"
   },
   {
     "key": "en:dehydrated-broth-with-meat-and-vegetables",
@@ -112,12 +132,24 @@
     "name": "Chili con carne"
   },
   {
+    "key": "en:canned-white-cabbage",
+    "name": "Choux blancs en conserve"
+  },
+  {
     "key": "en:canned-brussels-sprouts",
     "name": "Choux de Bruxelles en conserve"
   },
   {
     "key": "en:canned-cabbage",
     "name": "Choux en conserve"
+  },
+  {
+    "key": "en:canned-red-cabbage",
+    "name": "Choux rouges en conserve"
+  },
+  {
+    "key": "en:canned-green-cabbage",
+    "name": "Choux verts en conserve"
   },
   {
     "key": "en:canned-cauliflowers",
@@ -128,12 +160,36 @@
     "name": "Citron confit"
   },
   {
+    "key": "en:candied-lime",
+    "name": "Citron vert confit"
+  },
+  {
     "key": "en:canned-artichoke-hearts",
     "name": "Coeurs d'artichaut en conserve"
   },
   {
     "key": "en:canned-hearts-of-palm",
     "name": "Cœurs de palmier en conserve"
+  },
+  {
+    "key": "en:concentrated-coffees",
+    "name": "Concentrated coffees"
+  },
+  {
+    "key": "en:lemon-juice-concentrates",
+    "name": "Concentrés de jus de citrons"
+  },
+  {
+    "key": "en:lime-juice-concentrates",
+    "name": "Concentrés de jus de citrons verts"
+  },
+  {
+    "key": "en:fruit-juice-concentrates",
+    "name": "Concentrés de jus de fruits"
+  },
+  {
+    "key": "en:apple-juice-concentrates",
+    "name": "Concentrés de jus de pommes"
   },
   {
     "key": "en:tomato-pastes",
@@ -212,8 +268,8 @@
     "name": "Cônes vanille fraise"
   },
   {
-    "key": "en:conference-pears",
-    "name": "Conference pears"
+    "key": "en:confectionary-based-spreads",
+    "name": "Confectionary based spreads"
   },
   {
     "key": "en:confectioneries",
@@ -268,7 +324,7 @@
     "name": "Confits d'oignons"
   },
   {
-    "key": "en:beer-jams",
+    "key": "en:beer-spreads",
     "name": "Confits de bière"
   },
   {
@@ -300,8 +356,12 @@
     "name": "Confits de tomates"
   },
   {
-    "key": "en:wine-jams",
+    "key": "en:wine-spreads",
     "name": "Confits de vin"
+  },
+  {
+    "key": "en:beer-jams",
+    "name": "Confiture de bière"
   },
   {
     "key": "en:low-sugar-fruit-jam",
@@ -318,6 +378,10 @@
   {
     "key": "en:assorted-jams",
     "name": "Confitures assorties"
+  },
+  {
+    "key": "en:fruit-preserves-with-chocolate",
+    "name": "Confitures au chocolat"
   },
   {
     "key": "en:apricot-jams",
@@ -352,7 +416,7 @@
     "name": "Confitures d'orange"
   },
   {
-    "key": "fr:confitures-d-oranges-ameres",
+    "key": "en:bigarade-orange-marmelades",
     "name": "Confitures d'oranges amères"
   },
   {
@@ -388,6 +452,10 @@
     "name": "Confitures de figues"
   },
   {
+    "key": "en:rhubarb-strawberry-jams",
+    "name": "Confitures de fraise et de rhubarbe"
+  },
+  {
     "key": "en:strawberry-jams",
     "name": "Confitures de fraises"
   },
@@ -408,7 +476,7 @@
     "name": "Confitures de fruits tropicaux"
   },
   {
-    "key": "en:ginger-preserves",
+    "key": "en:ginger-jams",
     "name": "Confitures de gingembre"
   },
   {
@@ -436,7 +504,7 @@
     "name": "Confitures de litchis"
   },
   {
-    "key": "fr:confitures-de-mandarines",
+    "key": "en:mandarin-jams",
     "name": "Confitures de mandarines"
   },
   {
@@ -496,7 +564,7 @@
     "name": "Confitures de prunes"
   },
   {
-    "key": "fr:confitures-de-quetsches",
+    "key": "en:dew-jams",
     "name": "Confitures de quetsches"
   },
   {
@@ -524,8 +592,16 @@
     "name": "Confitures et marmelades"
   },
   {
+    "key": "en:extra-jams",
+    "name": "Confitures extra"
+  },
+  {
     "key": "en:mixed-fruit-jams",
     "name": "Confitures multifruits"
+  },
+  {
+    "key": "en:congee",
+    "name": "Congee"
   },
   {
     "key": "en:conger",
@@ -546,6 +622,10 @@
   {
     "key": "en:conwy-mussels",
     "name": "Conwy Mussels"
+  },
+  {
+    "key": "en:canned-squash",
+    "name": "Courge en conserve"
   },
   {
     "key": "en:christmas-brioche-with-candied-fruits",
@@ -668,6 +748,10 @@
     "name": "Girolles en conserve"
   },
   {
+    "key": "en:canned-okras",
+    "name": "Gombos en conserve"
+  },
+  {
     "key": "en:canned-herrings",
     "name": "Harengs en conserve"
   },
@@ -682,6 +766,10 @@
   {
     "key": "en:canned-white-common-beans",
     "name": "Haricots blancs en conserve"
+  },
+  {
+    "key": "en:canned-coco-white-beans",
+    "name": "Haricots cocos blancs en conserve"
   },
   {
     "key": "en:canned-scarlet-runner-beans",
@@ -716,7 +804,7 @@
     "name": "Jus d'abricot à base de concentré"
   },
   {
-    "key": "en:pineapple-from-concentrate",
+    "key": "en:pineapple-juices-from-concentrate",
     "name": "Jus d'ananas à base de concentré"
   },
   {
@@ -776,10 +864,6 @@
     "name": "Jus de tomates à base de concentré"
   },
   {
-    "key": "en:multivitamin-mixed-fruits-juice-reconstituted-from-a-concentrate",
-    "name": "Jus multifruit à base de concentré"
-  },
-  {
     "key": "en:multifruit-juices-from-concentrate",
     "name": "Jus multifruits à base de concentrés"
   },
@@ -812,11 +896,11 @@
     "name": "Laits concentrés"
   },
   {
-    "key": "fr:laits-concentres-non-sucres",
+    "key": "en:evaporated-milks-without-sugar",
     "name": "Laits concentrés non sucrés"
   },
   {
-    "key": "fr:laits-concentres-sucres",
+    "key": "en:evaporated-milks-with-sugar",
     "name": "Laits concentrés sucrés"
   },
   {
@@ -846,10 +930,6 @@
   {
     "key": "en:canned-lentils",
     "name": "Lentilles en conserve"
-  },
-  {
-    "key": "en:macaron-filled-with-jam",
-    "name": "Macaron moelleux fourré à la confiture"
   },
   {
     "key": "en:canned-diced-mixed-vegetables",
@@ -892,8 +972,8 @@
     "name": "Navets en conserve"
   },
   {
-    "key": "en:soybean-and-wheat-based-nuggets-vegan",
-    "name": "Nuggets soja et blé (convient aux véganes ou végétaliens) préemballé"
+    "key": "en:frozen-chicken-eggs",
+    "name": "Oeufs de poules congelés"
   },
   {
     "key": "en:cracked-marinated-green-olives",
@@ -932,6 +1012,10 @@
     "name": "Plats préparés en conserve"
   },
   {
+    "key": "en:canned-meals-with-meat",
+    "name": "Plats préparés en conserve à la viande"
+  },
+  {
     "key": "en:dishes-that-may-contain-horse-meat",
     "name": "Plats susceptibles de contenir de la viande de cheval"
   },
@@ -945,11 +1029,15 @@
   },
   {
     "key": "en:canned-oyster-mushrooms",
-    "name": "Pleurotes en huître en conserve"
+    "name": "Pleurotes en conserve"
   },
   {
     "key": "en:canned-leeks",
     "name": "Poireaux en conserve"
+  },
+  {
+    "key": "en:conference-pears",
+    "name": "Poires Conférence"
   },
   {
     "key": "en:canned-chickpeas",
@@ -994,10 +1082,6 @@
   {
     "key": "en:canned-alfalfa-sprouts",
     "name": "Pousses d'alfalfa en conserve"
-  },
-  {
-    "key": "en:canned-bamboo-shoots",
-    "name": "Pousses de bambou en conserve"
   },
   {
     "key": "en:canned-mung-bean-sprouts",
@@ -1128,12 +1212,32 @@
     "name": "Truffes en conserve"
   },
   {
+    "key": "en:canned-sheep-meat",
+    "name": "Viande de mouton en conserve"
+  },
+  {
+    "key": "en:canned-veal-meat",
+    "name": "Viande de veau en conserve"
+  },
+  {
+    "key": "en:canned-game",
+    "name": "Viandes de gibier en conserve"
+  },
+  {
     "key": "en:canned-meats",
     "name": "Viandes en conserve"
   },
   {
+    "key": "en:canned-poultries",
+    "name": "Volailles en conserve"
+  },
+  {
     "key": "en:canned-paddy-straw-mushrooms",
     "name": "Volvaire volvacée en conserve"
+  },
+  {
+    "key": "fr:yaourts-a-la-confiture-de-lait",
+    "name": "Yaourts à la confiture de lait"
   },
   {
     "key": "en:candied-orange-zest",

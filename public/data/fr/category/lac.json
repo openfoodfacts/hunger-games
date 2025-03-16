@@ -40,11 +40,7 @@
     "name": "Boissons lactées"
   },
   {
-    "key": "en:flavoured-dairy-drinks-with-sugar",
-    "name": "Boissons lactées aromatisées sucrées au lait fermenté"
-  },
-  {
-    "key": "en:coffee-drinks-with-milk",
+    "key": "en:cappuccino",
     "name": "Boissons lactées au café"
   },
   {
@@ -78,10 +74,6 @@
   {
     "key": "en:lactose-free-creams",
     "name": "Crèmes sans lactose"
-  },
-  {
-    "key": "en:dairy-dessert-for-baby",
-    "name": "Dessert lacté pour bébé"
   },
   {
     "key": "en:dairy-dessert-for-baby-with-semolina",
@@ -128,20 +120,56 @@
     "name": "Desserts lactés fermentés"
   },
   {
+    "key": "en:flavoured-fermented-dairy-desserts",
+    "name": "Desserts lactés fermentés aromatisés"
+  },
+  {
+    "key": "en:flavoured-fermented-dairy-desserts-with-sugar-and-cream",
+    "name": "Desserts lactés fermentés aromatisés sucrés à la crème"
+  },
+  {
     "key": "en:fermented-dairy-desserts-with-fruits",
     "name": "Desserts lactés fermentés aux fruits"
+  },
+  {
+    "key": "en:fat-free-fermented-dairy-desserts-with-fruits-and-sweeteners-fortified-with-vitamin-d",
+    "name": "Desserts lactés fermentés aux fruits édulcorés sans matière grasse enrichis en vitamine D"
+  },
+  {
+    "key": "en:fermented-dairy-desserts-with-fruits-enriched-with-vitamin-d",
+    "name": "Desserts lactés fermentés aux fruits enrichis en vitamine D"
+  },
+  {
+    "key": "en:fermented-dairy-desserts-with-fruits-sugar-and-cream",
+    "name": "Desserts lactés fermentés aux fruits sucrés à la crème"
+  },
+  {
+    "key": "en:fermented-dairy-desserts-with-fruits-and-sweeteners",
+    "name": "Desserts lactés fermentés édulcorés aux fruits"
+  },
+  {
+    "key": "en:fat-free-fermented-dairy-desserts-with-fruits-and-sweeteners",
+    "name": "Desserts lactés fermentés édulcorés aux fruits sans matière grasse"
+  },
+  {
+    "key": "en:fat-free-fermented-dairy-desserts-with-sweeteners",
+    "name": "Desserts lactés fermentés édulcorés sans matière grasse"
   },
   {
     "key": "en:plain-fermented-dairy-desserts",
     "name": "Desserts lactés fermentés nature"
   },
   {
-    "key": "en:baby-dairy-desserts",
-    "name": "Desserts lactés pour bébé"
+    "key": "en:plain-fermented-dairy-desserts-with-cream",
+    "name": "Desserts lactés fermentés nature à la crème"
   },
   {
-    "key": "en:sainte-maure-goat-cheeses",
-    "name": "Fromage de chèvre lactique affiné (type bûchette crottin Sainte-Maure)"
+    "key": "en:fat-free-plain-fermented-dairy-desserts",
+    "name": "Desserts lactés fermentés nature sans matière grasse"
+  },
+  {
+    "key": "en:dairy-dessert-for-baby",
+    "name": "Desserts lactés pour bébé"
   },
   {
     "key": "en:cheese-from-goat-s-milk-from-raw-milk",

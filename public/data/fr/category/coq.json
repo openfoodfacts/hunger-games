@@ -1,6 +1,6 @@
 [
   {
-    "key": "en:nuts-cereal-bars",
+    "key": "en:cereal-bars-with-nuts",
     "name": "Barres de céréales aux fruits à coques"
   },
   {
@@ -16,7 +16,7 @@
     "name": "Beurres de fruits à coques"
   },
   {
-    "key": "en:nut-milks",
+    "key": "en:nut-based-drinks",
     "name": "Boissons végétales de fruits à coque"
   },
   {
@@ -76,12 +76,20 @@
     "name": "Coquilles Saint-Jacques avec noix et corail"
   },
   {
-    "key": "fr:coquilles-saint-jacques-surgelees",
+    "key": "en:frozen-scallops-with-coral",
     "name": "Coquilles Saint-Jacques surgelées"
   },
   {
     "key": "fr:coquillettes",
     "name": "Coquillettes"
+  },
+  {
+    "key": "fr:coquillettes-blanches",
+    "name": "Coquillettes blanches"
+  },
+  {
+    "key": "fr:coquillettes-completes",
+    "name": "Coquillettes complètes"
   },
   {
     "key": "fr:coquillettes-de-ble-dur",
@@ -96,6 +104,14 @@
     "name": "Coquillettes sans gluten"
   },
   {
+    "key": "fr:coquillettes-semi-completes",
+    "name": "Coquillettes semi-complètes"
+  },
+  {
+    "key": "en:scallops-coral",
+    "name": "Corail de coquilles Saint-Jacques"
+  },
+  {
     "key": "en:nut-flours",
     "name": "Farines de fruits à coques"
   },
@@ -104,12 +120,20 @@
     "name": "Fruits à coque grillés"
   },
   {
+    "key": "en:unsalted-nuts",
+    "name": "Fruits à coque non-salés"
+  },
+  {
     "key": "en:salted-nuts",
     "name": "Fruits à coque salés"
   },
   {
     "key": "en:nuts",
     "name": "Fruits à coques"
+  },
+  {
+    "key": "en:caramelized-nuts",
+    "name": "Fruits à coques caramélisées"
   },
   {
     "key": "en:shelled-nuts",
@@ -130,6 +154,10 @@
   {
     "key": "en:frozen-nuts",
     "name": "Fruits à coques surgelés"
+  },
+  {
+    "key": "en:flavoured-nuts",
+    "name": "Fruits de coques aromatisées"
   },
   {
     "key": "en:soft-cake-with-nuts",
@@ -156,8 +184,24 @@
     "name": "Huiles de fruits à coques"
   },
   {
+    "key": "en:nut-macarons",
+    "name": "Macarons aux fruits à coques"
+  },
+  {
+    "key": "en:mixed-nuts",
+    "name": "Mélanges de fruits à coque"
+  },
+  {
+    "key": "en:mixed-nuts-and-dried-fruits",
+    "name": "Mélanges de fruits secs et de fruits à coque"
+  },
+  {
     "key": "en:mueslis-with-nuts",
     "name": "Mueslis aux fruits à coque"
+  },
+  {
+    "key": "en:frozen-scallops-without-coral",
+    "name": "Noix de coquilles Saint-Jacques surgelées"
   },
   {
     "key": "en:soft-boiled-eggs",

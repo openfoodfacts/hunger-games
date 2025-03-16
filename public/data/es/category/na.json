@@ -12,11 +12,15 @@
     "name": "Aguas minerales naturales carbonatadas"
   },
   {
+    "key": "en:raw-almonds",
+    "name": "Almendra natural"
+  },
+  {
     "key": "en:vialone-nano-rices",
     "name": "Arroces Vialone Nano"
   },
   {
-    "key": "en:tuna-in-brine",
+    "key": "en:tunas-in-brine",
     "name": "Atún al natural"
   },
   {
@@ -28,20 +32,24 @@
     "name": "Bebidas con naranja"
   },
   {
-    "key": "en:natural-rice-milks",
+    "key": "en:plain-rice-based-drinks",
     "name": "Bebidas de arroz naturales"
   },
   {
-    "key": "en:sweetened-natural-soy-milks",
+    "key": "en:sweetened-plain-soy-based-drinks",
     "name": "Bebidas de soja natural endulzadas"
   },
   {
-    "key": "en:unsweetened-natural-soy-milks",
+    "key": "en:unsweetened-plain-soy-based-drinks",
     "name": "Bebidas de soja natural sin azúcar"
   },
   {
     "key": "en:cream-puff",
     "name": "Bocadito de nata"
+  },
+  {
+    "key": "en:christmas-beers",
+    "name": "Cervezas de Navidad"
   },
   {
     "key": "en:cheese-naans",
@@ -76,16 +84,20 @@
     "name": "Fortified wines such as natural sweet wines"
   },
   {
+    "key": "en:garlic-naans",
+    "name": "Garlic Naans"
+  },
+  {
     "key": "en:christmas-foods-and-drinks",
     "name": "Gastronomía navideña"
   },
   {
-    "key": "en:unsweetened-natural-almond-milks",
-    "name": "Leche de almendras natural sin edulcorar"
+    "key": "es:granizados-de-naranja",
+    "name": "Granizados de naranja"
   },
   {
-    "key": "en:orange-marmalades",
-    "name": "Mermeladas de naranja"
+    "key": "en:unsweetened-plain-almond-based-drinks",
+    "name": "Leche de almendras natural sin edulcorar"
   },
   {
     "key": "en:orange-jams",
@@ -104,6 +116,10 @@
     "name": "Naba"
   },
   {
+    "key": "en:nabe",
+    "name": "Nabe"
+  },
+  {
     "key": "en:napa-valley",
     "name": "Napa Valley"
   },
@@ -114,6 +130,10 @@
   {
     "key": "en:creams",
     "name": "Nata"
+  },
+  {
+    "key": "en:sour-creams",
+    "name": "Nata agria"
   },
   {
     "key": "en:whipped-creams",
@@ -188,8 +208,20 @@
     "name": "Navarra"
   },
   {
+    "key": "en:nazca-potatoes",
+    "name": "Nazca potatoes"
+  },
+  {
     "key": "en:orange-nectars",
     "name": "Néctares de naranja"
+  },
+  {
+    "key": "en:pecan-nuts-plain",
+    "name": "Nuez pecana natural"
+  },
+  {
+    "key": "en:plain-naans",
+    "name": "Plain naans"
   },
   {
     "key": "es:queso-nata-de-cantabria",
@@ -220,14 +252,6 @@
     "name": "Sorbetes de naranja"
   },
   {
-    "key": "en:sweetened-natural-almond-milks",
-    "name": "Sweetened natural almond milks"
-  },
-  {
-    "key": "en:sweetened-natural-oat-milks",
-    "name": "Sweetened natural oat milks"
-  },
-  {
     "key": "es:ternera-de-navarra",
     "name": "Ternera de Navarra"
   },
@@ -248,10 +272,6 @@
     "name": "Turrones de nata y nueces"
   },
   {
-    "key": "en:unsweetened-natural-oat-milks",
-    "name": "Unsweetened natural oat milks"
-  },
-  {
     "key": "en:plain-soy-yogurts",
     "name": "Yogures de soja naturales"
   },
@@ -262,6 +282,10 @@
   {
     "key": "en:orange-juices",
     "name": "Zumos de naranja"
+  },
+  {
+    "key": "en:orange-juices-with-pulp",
+    "name": "Zumos de naranja con pulpa"
   },
   {
     "key": "en:squeezed-orange-juices",

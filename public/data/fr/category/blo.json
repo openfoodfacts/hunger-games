@@ -1,10 +1,18 @@
 [
   {
-    "key": "en:lagers",
+    "key": "en:american-style-blonde-ales",
+    "name": "American-style blonde ales"
+  },
+  {
+    "key": "en:belgian-style-blonde-ales",
+    "name": "Belgian-style blonde ales"
+  },
+  {
+    "key": "en:blonde-ales",
     "name": "Bières blondes"
   },
   {
-    "key": "fr:bieres-blondes-pur-malt",
+    "key": "en:pure-malt-blond-beers",
     "name": "Bières blondes pur malt"
   },
   {
@@ -32,8 +40,20 @@
     "name": "Blocs de feta"
   },
   {
+    "key": "en:gingerbread-blocks",
+    "name": "Blocs de pain d'épices"
+  },
+  {
+    "key": "en:blond-ipa",
+    "name": "Blond IPA"
+  },
+  {
     "key": "fr:blondies",
     "name": "Blondies"
+  },
+  {
+    "key": "en:pale-lagers",
+    "name": "Lagers blondes"
   },
   {
     "key": "en:blonde-lentils",
@@ -54,5 +74,9 @@
   {
     "key": "en:panela-blocks",
     "name": "Panela blocks"
+  },
+  {
+    "key": "en:blond-sugars",
+    "name": "Sucres blonds"
   }
 ]

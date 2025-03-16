@@ -1,7 +1,15 @@
 [
   {
-    "key": "en:salted-and-grilled-almonds",
+    "key": "en:almonds-roasted-and-unsalted",
+    "name": "Amandes grillées et non-salées"
+  },
+  {
+    "key": "en:roasted-and-salted-almonds",
     "name": "Amandes grillées et salées"
+  },
+  {
+    "key": "en:unsalted-almonds",
+    "name": "Amandes non-salées"
   },
   {
     "key": "en:salted-almonds",
@@ -28,8 +36,16 @@
     "name": "Blé dur précuit non salé en grains entiers"
   },
   {
+    "key": "en:salty-liquorice-candies",
+    "name": "Bonbons à la réglisse salée"
+  },
+  {
     "key": "en:unsalted-cooked-wheat-bulgur",
     "name": "Boulgour de blé cuit non salé"
+  },
+  {
+    "key": "en:brazil-nuts-salted",
+    "name": "Brazil nuts(salted)"
   },
   {
     "key": "en:peanut-grilled-salted",
@@ -72,6 +88,10 @@
     "name": "Caramels au beurre salé"
   },
   {
+    "key": "en:carrot-salads",
+    "name": "Carrot salads"
+  },
+  {
     "key": "en:chicken-salads",
     "name": "Chicken salads"
   },
@@ -112,6 +132,10 @@
     "name": "Frik cuit non salé"
   },
   {
+    "key": "en:unsalted-nuts",
+    "name": "Fruits à coque non-salés"
+  },
+  {
     "key": "en:salted-nuts",
     "name": "Fruits à coque salés"
   },
@@ -136,12 +160,12 @@
     "name": "Gower Salt Marsh Lamb"
   },
   {
-    "key": "en:sunflower-seed-grilled-and-salted",
-    "name": "Graines de tournesol grillées et salées"
+    "key": "en:pumpkin-seeds-non-roasted-shelled-unsalted",
+    "name": "Graines de courge(non-grillées/non-salées/décortiquées)"
   },
   {
-    "key": "fr:grignotage-sale",
-    "name": "Grignotage salé"
+    "key": "en:sunflower-seed-grilled-and-salted",
+    "name": "Graines de tournesol grillées et salées"
   },
   {
     "key": "en:olive-oils-from-colline-salernitane",
@@ -150,6 +174,10 @@
   {
     "key": "en:iodised-salts",
     "name": "Iodised salts"
+  },
+  {
+    "key": "en:italian-salami",
+    "name": "Italian salami"
   },
   {
     "key": "en:italian-salts",
@@ -166,6 +194,10 @@
   {
     "key": "en:pure-tomato-juice-with-6-g-salt-l",
     "name": "Jus de tomate pur jus salé à 6 g/L"
+  },
+  {
+    "key": "en:kłodawa-salt",
+    "name": "Kłodawa salt"
   },
   {
     "key": "en:london-cure-smoked-salmon",
@@ -224,12 +256,20 @@
     "name": "Noix de macadamia grillée et salée"
   },
   {
-    "key": "en:salted-pecan-nut",
+    "key": "en:pecan-nuts-roasted-and-salted",
+    "name": "Noix de Pécan grillées et salées"
+  },
+  {
+    "key": "en:pecan-nuts-salted",
     "name": "Noix de pécan salées"
   },
   {
     "key": "en:cooked-unsalted-plain-asian-noodles",
     "name": "Nouilles asiatiques cuites nature non salées"
+  },
+  {
+    "key": "en:fried-unsalted-rice-noodles",
+    "name": "Nouilles de riz sautées non salées"
   },
   {
     "key": "en:unsalted-boiled-pearled-barley",
@@ -238,10 +278,6 @@
   {
     "key": "en:oriel-sea-salt",
     "name": "Oriel Sea Salt"
-  },
-  {
-    "key": "en:salty-palmiers",
-    "name": "Palmiers salés"
   },
   {
     "key": "en:fresh-cooked-unsalted-egg-pasta",
@@ -268,7 +304,7 @@
     "name": "Petits salés aux lentilles"
   },
   {
-    "key": "en:pistachio-nut-grilled-salted",
+    "key": "en:pistachios-roasted-and-salted",
     "name": "Pistache grillée salée"
   },
   {
@@ -290,6 +326,10 @@
   {
     "key": "en:unsalted-polenta",
     "name": "Polenta non salée"
+  },
+  {
+    "key": "en:polish-salts",
+    "name": "Polish salts"
   },
   {
     "key": "en:salted-popcorn",
@@ -340,12 +380,12 @@
     "name": "Riz sauvage cuit non salé"
   },
   {
-    "key": "en:roasted-salted-almonds",
-    "name": "Roasted salted almonds"
-  },
-  {
     "key": "en:cooked-curing-salted-roast-poultry",
     "name": "Rôti de volaille en salaison cuit"
+  },
+  {
+    "key": "en:salad-creams",
+    "name": "Salad creams"
   },
   {
     "key": "en:pasta-salad-with-meat",
@@ -364,7 +404,7 @@
     "name": "Salade de thon et légumes en conserve"
   },
   {
-    "key": "en:tuna-salad",
+    "key": "en:tuna-salads",
     "name": "Salades au thon"
   },
   {
@@ -414,6 +454,10 @@
   {
     "key": "en:fruit-salads-in-syrup",
     "name": "Salades de fruits au sirop"
+  },
+  {
+    "key": "en:seafood-salads",
+    "name": "Salades de fruits de mer"
   },
   {
     "key": "en:fresh-fruit-salad",
@@ -520,12 +564,20 @@
     "name": "Salami de porc"
   },
   {
+    "key": "en:chicken-salami",
+    "name": "Salami de poulet"
+  },
+  {
     "key": "en:salami-pork-and-beef",
     "name": "Salami porc et boeuf"
   },
   {
     "key": "en:salami-danish-style",
     "name": "Salami type danois"
+  },
+  {
+    "key": "en:salami-ungherese",
+    "name": "Salami ungherese"
   },
   {
     "key": "en:salami",
@@ -538,6 +590,10 @@
   {
     "key": "en:glasswort",
     "name": "Salicorne"
+  },
+  {
+    "key": "en:salmon-pates",
+    "name": "Salmon Pâtés"
   },
   {
     "key": "en:salmorejo",
@@ -564,7 +620,7 @@
     "name": "Salsifis en conserve"
   },
   {
-    "key": "fr:salsifis-frais",
+    "key": "en:fresh-salsify",
     "name": "Salsifis frais"
   },
   {
@@ -580,8 +636,8 @@
     "name": "Salsifis surgelés crus"
   },
   {
-    "key": "en:salty-liquorice-candies",
-    "name": "Salty liquorice candies"
+    "key": "en:salted-crumbles",
+    "name": "Salted crumbles"
   },
   {
     "key": "en:baguette-sandwiches-with-salami-and-butter",
@@ -614,6 +670,10 @@
   {
     "key": "en:salty-snacks",
     "name": "Snacks salés"
+  },
+  {
+    "key": "en:frozen-salty-snacks",
+    "name": "Snacks salés surgelés"
   },
   {
     "key": "en:egg-salads-substitutes",

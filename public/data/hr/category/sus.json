@@ -1,43 +1,327 @@
 [
   {
-    "key": "en:avocado-and-salmon-sushis",
-    "name": "Avocado and salmon sushis"
+    "key": "en:frozen-sushis",
+    "name": "Frozen sushis"
   },
   {
-    "key": "en:cucumber-sushis",
-    "name": "Cucumber sushis"
+    "key": "en:ground-dried-seaweeds",
+    "name": "Mljevene sušene morske trave"
+  },
+  {
+    "key": "en:ground-dried-oregano",
+    "name": "Mljeveni sušeni origano"
+  },
+  {
+    "key": "en:ground-dried-vegetables",
+    "name": "Mljeveno sušeno povrće"
   },
   {
     "key": "en:nigiri-sushi",
     "name": "Nigiri sushi"
   },
   {
-    "key": "en:salmon-sushis",
-    "name": "Salmon sushis"
+    "key": "en:natural-dried-tomatoes",
+    "name": "Prirodne sušene rajčice"
   },
   {
-    "key": "en:shrimp-sushis",
-    "name": "Shrimp sushis"
+    "key": "en:ground-dried-thyme",
+    "name": "Samljevena sušena majčina dušica"
+  },
+  {
+    "key": "en:ground-dried-stevia",
+    "name": "Samljevena sušena stevija"
+  },
+  {
+    "key": "en:powdered-sesame-milks",
+    "name": "Susamovo mlijeko u prahu"
+  },
+  {
+    "key": "en:dried-plant-based-foods",
+    "name": "Sušena hrana biljnog podrijetla"
+  },
+  {
+    "key": "en:dried-meals",
+    "name": "Sušena jela"
+  },
+  {
+    "key": "en:dried-sage",
+    "name": "Sušena kadulja"
+  },
+  {
+    "key": "en:dried-lentils",
+    "name": "Sušena leća"
+  },
+  {
+    "key": "en:dried-mint",
+    "name": "Sušena metvica"
+  },
+  {
+    "key": "en:dried-sea-lettuce-seaweeds",
+    "name": "Sušena morska salata alge"
+  },
+  {
+    "key": "en:cured-smoked-ham-with-reduced-fat",
+    "name": "Sušena pršuta sa smanjenom masnoćom"
+  },
+  {
+    "key": "en:dried-green-lentils",
+    "name": "Sušena zelena leća"
+  },
+  {
+    "key": "en:dried-arame-seaweed",
+    "name": "Sušene alge arame"
+  },
+  {
+    "key": "en:dried-cochayuyo-seaweeds",
+    "name": "Sušene alge cochayuyo"
+  },
+  {
+    "key": "en:dried-hijiki-seaweeds",
+    "name": "Sušene alge hijiki"
+  },
+  {
+    "key": "en:dried-wakame-seaweeds",
+    "name": "Sušene alge wakame"
+  },
+  {
+    "key": "en:dried-bananas",
+    "name": "Sušene banane"
+  },
+  {
+    "key": "en:dried-cranberries",
+    "name": "Sušene brusnice"
+  },
+  {
+    "key": "en:dried-oyster-mushrooms",
+    "name": "Sušene bukovače"
+  },
+  {
+    "key": "en:dried-dulse-seaweeds",
+    "name": "Sušene dulse morske trave"
+  },
+  {
+    "key": "en:dried-mushrooms",
+    "name": "Sušene gljive"
+  },
+  {
+    "key": "en:dried-scotch-bonnet-mushrooms",
+    "name": "Sušene gljive scotch bonnet"
+  },
+  {
+    "key": "en:dried-apples",
+    "name": "Sušene jabuke"
+  },
+  {
+    "key": "en:dried-kombu-seaweeds",
+    "name": "Sušene kombu alge"
+  },
+  {
+    "key": "en:dried-mixed-mushrooms",
+    "name": "Sušene miješane gljive"
+  },
+  {
+    "key": "en:dried-seaweeds",
+    "name": "Sušene morske trave"
+  },
+  {
+    "key": "en:dried-nori-seaweeds",
+    "name": "Sušene nori alge"
+  },
+  {
+    "key": "en:dried-nori-seaweed-flakes",
+    "name": "Sušene pahuljice nori alge"
+  },
+  {
+    "key": "en:dried-papayas",
+    "name": "Sušene papaje"
+  },
+  {
+    "key": "en:dried-jew-s-ear-mushrooms",
+    "name": "Sušene pečurke"
+  },
+  {
+    "key": "en:dried-tomatoes",
+    "name": "Sušene rajčice"
+  },
+  {
+    "key": "en:dried-tomato-powder",
+    "name": "Sušene rajčice u prahu"
+  },
+  {
+    "key": "en:dried-tomato-in-oil",
+    "name": "Sušene rajčice u ulju"
+  },
+  {
+    "key": "en:dried-shiitake-mushrooms",
+    "name": "Sušene shiitake gljive"
+  },
+  {
+    "key": "en:dried-hams",
+    "name": "Sušene šunke"
+  },
+  {
+    "key": "en:dried-pineapple",
+    "name": "Sušeni ananas"
+  },
+  {
+    "key": "en:dried-basil",
+    "name": "Sušeni bosiljak"
+  },
+  {
+    "key": "en:dried-bouquet-garni",
+    "name": "Sušeni buket garni"
+  },
+  {
+    "key": "en:dried-savory",
+    "name": "Sušeni čubar"
+  },
+  {
+    "key": "en:dried-deffated-black-soldier-fly-protein",
+    "name": "Sušeni deffated protein crne vojničke muhe"
+  },
+  {
+    "key": "en:dried-tarragon",
+    "name": "Sušeni estragon"
+  },
+  {
+    "key": "en:dried-goji",
+    "name": "Sušeni goji"
+  },
+  {
+    "key": "en:dried-coconut",
+    "name": "Sušeni kokos"
+  },
+  {
+    "key": "en:dried-dill",
+    "name": "Sušeni kopar"
+  },
+  {
+    "key": "en:cured-pork-loin",
+    "name": "Sušeni lungić"
+  },
+  {
+    "key": "en:dried-mangoes",
+    "name": "Sušeni mango"
+  },
+  {
+    "key": "en:dried-sea-spaghetti-seaweeds",
+    "name": "Sušeni morski špageti alge"
+  },
+  {
+    "key": "en:dried-oregano",
+    "name": "Sušeni origano"
+  },
+  {
+    "key": "en:dried-parsley",
+    "name": "Sušeni peršin"
+  },
+  {
+    "key": "en:dried-products",
+    "name": "Sušeni proizvodi"
+  },
+  {
+    "key": "en:dried-products-to-be-rehydrated",
+    "name": "Sušeni proizvodi koji se rehidriraju"
+  },
+  {
+    "key": "en:dried-rice-noodles",
+    "name": "Sušeni rižini rezanci"
+  },
+  {
+    "key": "en:dried-horn-of-plenty-mushrooms",
+    "name": "Sušeni rog obilja gljiva"
+  },
+  {
+    "key": "en:cured-cheese",
+    "name": "Sušeni sir"
+  },
+  {
+    "key": "en:dried-split-peas",
+    "name": "Sušeni sitni grašak"
+  },
+  {
+    "key": "en:dried-chickpeas",
+    "name": "Sušeni slanutak"
+  },
+  {
+    "key": "en:dried-thyme",
+    "name": "Sušeni timijan"
+  },
+  {
+    "key": "en:dried-soy-vermicelli",
+    "name": "Sušeni vermicelli od soje"
+  },
+  {
+    "key": "en:dried-porcini-mushrooms",
+    "name": "Sušeni vrganji"
+  },
+  {
+    "key": "en:dried-green-peppercorns",
+    "name": "Sušeni zeleni papar u zrnu"
+  },
+  {
+    "key": "en:dried-coconut-flour",
+    "name": "Sušeno kokosovo brašno"
+  },
+  {
+    "key": "en:dried-meats",
+    "name": "Sušeno meso"
+  },
+  {
+    "key": "en:mixed-dried-fruits",
+    "name": "Sušeno miješano voće"
+  },
+  {
+    "key": "en:dried-vegetables",
+    "name": "Sušeno povrće"
+  },
+  {
+    "key": "en:dried-provence-herbs",
+    "name": "Sušeno Provansa bilje"
+  },
+  {
+    "key": "en:dried-fruits",
+    "name": "Sušeno voće"
+  },
+  {
+    "key": "en:sushis",
+    "name": "Sushi"
+  },
+  {
+    "key": "en:sushi-and-maki",
+    "name": "Sushi i maki"
   },
   {
     "key": "en:sushi-medley",
-    "name": "Sushi medley"
+    "name": "Sushi mješavina"
+  },
+  {
+    "key": "en:avocado-and-salmon-sushis",
+    "name": "Sushi od avokada i lososa"
+  },
+  {
+    "key": "en:cucumber-sushis",
+    "name": "Sushi od krastavaca"
+  },
+  {
+    "key": "en:salmon-sushis",
+    "name": "Sushi od lososa"
+  },
+  {
+    "key": "en:shrimp-sushis",
+    "name": "Sushi od škampa"
+  },
+  {
+    "key": "en:tuna-sushis",
+    "name": "Sushi od tune"
   },
   {
     "key": "en:sushi-rice",
-    "name": "Sushi rice"
+    "name": "Sushi riža"
   },
   {
     "key": "en:sushi-with-seafood-products",
     "name": "Sushi with seafood products"
-  },
-  {
-    "key": "en:sushis",
-    "name": "Sushis"
-  },
-  {
-    "key": "en:sushis-and-makis",
-    "name": "Sushis and makis"
   },
   {
     "key": "en:sushki",
@@ -50,9 +334,5 @@
   {
     "key": "en:sussex-slipcote",
     "name": "Sussex Slipcote"
-  },
-  {
-    "key": "en:tuna-sushis",
-    "name": "Tuna sushis"
   }
 ]

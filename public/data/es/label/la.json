@@ -20,6 +20,10 @@
     "name": "Alimentos de Castilla-La Mancha"
   },
   {
+    "key": "en:chicken-welfare",
+    "name": "Bienestar de las gallinas"
+  },
+  {
     "key": "es:comite-de-agricultura-ecologica-de-la-comunidad-de-madrid",
     "name": "Comité de Agricultura Ecologica de la Comunidad de Madrid"
   },
@@ -28,12 +32,16 @@
     "name": "Comité de Agricultura Ecológica de la Comunitat Valenciana"
   },
   {
+    "key": "en:catalan-council-of-organic-production",
+    "name": "Consejo Catalán de la Producción Agraria Ecológica"
+  },
+  {
     "key": "es:consejo-de-agricultura-ecologica-de-la-region-de-murcia",
     "name": "Consejo de Agricultura Ecologica de la Región de Murcia"
   },
   {
     "key": "en:contains-lactose",
-    "name": "Contains lactose"
+    "name": "Contiene lactosa"
   },
   {
     "key": "en:incorrect-data-on-label",
@@ -64,7 +72,7 @@
     "name": "Green Label - Israel"
   },
   {
-    "key": "bg:произведено-в-европейския-съюз",
+    "key": "en:made-in-the-eu",
     "name": "Hecho en la UE"
   },
   {
@@ -82,6 +90,10 @@
   {
     "key": "en:incorrect-nutrition-facts-on-label",
     "name": "Información nutricional en la etiqueta incorrecta"
+  },
+  {
+    "key": "en:isomaltulose-is-a-source-of-glucose-and-fructose",
+    "name": "La isomaltulosa es una fuente de glucosa y fructosa"
   },
   {
     "key": "fr:concours-international-de-vin-et-spiritueux",
@@ -150,10 +162,6 @@
   {
     "key": "en:ovo-lacto-vegetarian",
     "name": "Ovo-lacto-vegetariano"
-  },
-  {
-    "key": "en:producer-labels",
-    "name": "Producer labels"
   },
   {
     "key": "en:no-lactose",

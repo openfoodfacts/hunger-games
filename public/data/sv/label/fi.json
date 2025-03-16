@@ -88,12 +88,20 @@
     "name": "FI-EKO-401"
   },
   {
+    "key": "en:source-of-fibre",
+    "name": "Fiberkälla"
+  },
+  {
     "key": "en:filtered",
     "name": "Filtered"
   },
   {
     "key": "en:first-grade-tis-3-1983",
     "name": "First grade TIS 3-1983"
+  },
+  {
+    "key": "en:fishing-method",
+    "name": "Fiskemetod"
   },
   {
     "key": "en:gillnet-fishing",
@@ -116,6 +124,26 @@
     "name": "Longline fishing"
   },
   {
+    "key": "en:migros-m-check-fish-from-responsible-sources-1-5",
+    "name": "Migros M-Check fish from responsible sources 1/5"
+  },
+  {
+    "key": "en:migros-m-check-fish-from-responsible-sources-2-5",
+    "name": "Migros M-Check fish from responsible sources 2/5"
+  },
+  {
+    "key": "en:migros-m-check-fish-from-responsible-sources-3-5",
+    "name": "Migros M-Check fish from responsible sources 3/5"
+  },
+  {
+    "key": "en:migros-m-check-fish-from-responsible-sources-4-5",
+    "name": "Migros M-Check fish from responsible sources 4/5"
+  },
+  {
+    "key": "en:migros-m-check-fish-from-responsible-sources-5-5",
+    "name": "Migros M-Check fish from responsible sources 5/5"
+  },
+  {
     "key": "en:pelagic-net-fishing",
     "name": "Pelagic net fishing"
   },
@@ -130,10 +158,6 @@
   {
     "key": "en:seine-fishing",
     "name": "Seine fishing"
-  },
-  {
-    "key": "en:source-of-fibre",
-    "name": "Source of fibre"
   },
   {
     "key": "en:sustainable-fishery",

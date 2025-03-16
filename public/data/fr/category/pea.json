@@ -16,10 +16,6 @@
     "name": "Chapon rôti avec viande et peau"
   },
   {
-    "key": "en:conference-pears",
-    "name": "Conference pears"
-  },
-  {
     "key": "en:reheated-duck-confit-conserved-in-rendered-fat-without-skin",
     "name": "Confit de canard sans peau réchauffé"
   },
@@ -76,10 +72,6 @@
     "name": "Pommes de terre de conservation sans peau bouillies"
   },
   {
-    "key": "en:peeled-boiled-early-potato",
-    "name": "Pommes de terre primeur sans peau bouillies"
-  },
-  {
     "key": "en:peeled-potatoes",
     "name": "Pommes de terre sans peau"
   },
@@ -100,12 +92,16 @@
     "name": "Poulet cuisse viande et peau cru"
   },
   {
-    "key": "en:chicken-free-range-meat-and-skin-raw",
-    "name": "Poulet fermier viande et peau cru"
+    "key": "en:frozen-chicken-leg-meat-and-skin-raw",
+    "name": "Poulet cuisse viande et peau cru surgelée"
   },
   {
     "key": "en:chicken-breast-without-skin-raw",
     "name": "Poulet filet sans peau cru"
+  },
+  {
+    "key": "en:frozen-chicken-breast-without-skin-raw",
+    "name": "Poulet filet sans peau cru surgelé"
   },
   {
     "key": "en:chicken-breast-meat-and-skin-raw",
@@ -168,6 +164,10 @@
     "name": "Roasted peas"
   },
   {
+    "key": "en:sparkling-apple-or-pear-juices",
+    "name": "Sparkling apple or pear juices"
+  },
+  {
     "key": "en:thick-apple-pear-syrups",
     "name": "Thick apple pear syrups"
   },
@@ -181,7 +181,7 @@
   },
   {
     "key": "en:hen-meat-and-skin",
-    "name": "Viande de poulet avec peau"
+    "name": "Viande de poule avec peau"
   },
   {
     "key": "en:chicken-meat-without-skin",
@@ -198,5 +198,9 @@
   {
     "key": "en:pheasant-meat-and-skin",
     "name": "Viande et peau de faisan"
+  },
+  {
+    "key": "en:wasabi-coated-peanuts",
+    "name": "Wasabi coated peanuts"
   }
 ]

@@ -48,12 +48,12 @@
     "name": "Champignons à la grecque"
   },
   {
-    "key": "en:collard-greens",
-    "name": "Collard greens"
-  },
-  {
     "key": "en:frog-legs",
     "name": "Cuisses de Grenouilles"
+  },
+  {
+    "key": "en:frozen-frog-legs",
+    "name": "Cuisses de Grenouilles surgelées"
   },
   {
     "key": "en:fresh-broad-green-beans",
@@ -100,6 +100,10 @@
     "name": "Gazpacha marinated green olives"
   },
   {
+    "key": "en:pomegranate-seeds",
+    "name": "Graines de grenade"
+  },
+  {
     "key": "en:green-beans-imported-by-plane",
     "name": "Green beans imported by plane"
   },
@@ -110,6 +114,10 @@
   {
     "key": "en:green-chopped-olives",
     "name": "Green chopped olives"
+  },
+  {
+    "key": "en:green-jumbo",
+    "name": "Green Jumbo"
   },
   {
     "key": "en:pomegranates",
@@ -184,8 +192,12 @@
     "name": "Nectars de grenade"
   },
   {
-    "key": "fr:noix-de-grenoble",
+    "key": "en:walnuts-from-grenoble",
     "name": "Noix de Grenoble"
+  },
+  {
+    "key": "en:grenaille-potatoes",
+    "name": "Pomme de terre Grenaille"
   },
   {
     "key": "en:pomegranate-pulp-and-pips",
@@ -212,6 +224,10 @@
     "name": "Sirops de grenadine"
   },
   {
+    "key": "en:pomegranate-vinegars",
+    "name": "Vinaigres de grenade"
+  },
+  {
     "key": "en:wines-from-greece",
     "name": "Vins grecs"
   },
@@ -224,7 +240,7 @@
     "name": "Yaourt à la grecque au lait de brebis"
   },
   {
-    "key": "en:greek-style-yogurt-on-a-bed-of-fruits",
+    "key": "en:greek-style-yogurts-on-a-bed-of-fruits",
     "name": "Yaourt à la grecque sur lit de fruits"
   },
   {
@@ -232,7 +248,7 @@
     "name": "Yaourts à la grecque"
   },
   {
-    "key": "en:plain-greek-style-yogurts",
+    "key": "en:greek-style-yogurts-plain",
     "name": "Yaourts à la grecque nature"
   }
 ]

@@ -1,10 +1,338 @@
 [
   {
+    "key": "en:pineapple-in-juice",
+    "name": "Ananas u soku"
+  },
+  {
+    "key": "en:flavoured-apple-juices",
+    "name": "Aromatizirani sokovi od jabuke"
+  },
+  {
+    "key": "en:squeezed-tangerine-juices",
+    "name": "Cijeđene sokove mandarine"
+  },
+  {
+    "key": "en:squeezed-pear-juices",
+    "name": "Cijeđene sokove od krušaka"
+  },
+  {
+    "key": "en:squeezed-plum-juices",
+    "name": "Cijeđene sokove od šljiva"
+  },
+  {
+    "key": "en:squeezed-fruit-juices",
+    "name": "Cijeđeni sokovi"
+  },
+  {
+    "key": "en:squeezed-pineapple-juices",
+    "name": "Cijeđeni sokovi od ananasa"
+  },
+  {
+    "key": "en:squeezed-blueberry-juices",
+    "name": "Cijeđeni sokovi od borovnice"
+  },
+  {
+    "key": "en:squeezed-grapefruit-juices",
+    "name": "Cijeđeni sokovi od grejpa"
+  },
+  {
+    "key": "en:squeezed-grape-juices",
+    "name": "Cijeđeni sokovi od grožđa"
+  },
+  {
+    "key": "en:squeezed-apple-juices",
+    "name": "Cijeđeni sokovi od jabuka"
+  },
+  {
+    "key": "en:squeezed-pomegranate-juices",
+    "name": "Cijeđeni sokovi od nara"
+  },
+  {
+    "key": "en:squeezed-orange-juices",
+    "name": "Cijeđeni sokovi od naranče"
+  },
+  {
+    "key": "en:squeezed-multifruit-juices",
+    "name": "Cijeđeni sokovi od više voća"
+  },
+  {
+    "key": "en:pure-tomato-juices",
+    "name": "Čisti sokovi od rajčice"
+  },
+  {
+    "key": "en:home-made-grapefruit-juice",
+    "name": "Domaći sok od grejpa"
+  },
+  {
+    "key": "en:home-made-lemon-juice",
+    "name": "Domaći sok od limuna"
+  },
+  {
+    "key": "en:carbonated-soft-drinks-without-fruit-juice",
+    "name": "Gazirana pića bez voćnog soka"
+  },
+  {
+    "key": "en:carbonated-soft-drinks-without-fruit-juice-with-sugar",
+    "name": "Gazirana pića s šećerom bez voćnog soka"
+  },
+  {
+    "key": "en:sparkling-apple-juices",
+    "name": "Gazirani sokovi od jabuke"
+  },
+  {
+    "key": "en:squeezed-lemon-juices",
+    "name": "Iscijeđeni limunovi sokovi"
+  },
+  {
+    "key": "en:apple-juices-from-concentrate",
+    "name": "Jabučni sokovi iz koncentrata"
+  },
+  {
+    "key": "en:lemon-juice-concentrates",
+    "name": "Koncentrati limunovog soka"
+  },
+  {
+    "key": "en:lime-juice-concentrates",
+    "name": "Koncentrati soka limete"
+  },
+  {
+    "key": "en:apple-juice-concentrates",
+    "name": "Koncentrati soka od jabuke"
+  },
+  {
+    "key": "en:concentrated-carrot-juices",
+    "name": "Koncentrirani sokovi od mrkve"
+  },
+  {
+    "key": "en:concentrated-tomato-juices",
+    "name": "Koncentriranih sokova od rajčice"
+  },
+  {
+    "key": "en:canned-fruits-in-juice",
+    "name": "Konzervirano voće u soku"
+  },
+  {
+    "key": "en:mixed-fruits-pure-multivitamin-juice",
+    "name": "Miješano voće čisti multivitaminski sok"
+  },
+  {
+    "key": "en:multifruit-juices",
+    "name": "Multivoćni sokovi"
+  },
+  {
+    "key": "en:multifruit-juices-from-concentrate",
+    "name": "Multivoćni sokovi iz koncentrata"
+  },
+  {
+    "key": "en:beverages-from-desugared-fruit-juices",
+    "name": "Napitci od voćnih sokova bez šećera"
+  },
+  {
+    "key": "en:orange-juices-from-concentrate",
+    "name": "Narančin sok iz koncentrata"
+  },
+  {
+    "key": "en:enriched-apple-juices",
+    "name": "Obogaćeni sokovi od jabuke"
+  },
+  {
+    "key": "en:refrigerated-squeezed-juices",
+    "name": "Ohlađeni cijeđeni sokovi"
+  },
+  {
+    "key": "en:refrigerated-squeezed-tangerine-juices",
+    "name": "Ohlađeni cijeđeni sokovi mandarina"
+  },
+  {
+    "key": "en:refrigerated-squeezed-pineapple-juices",
+    "name": "Ohlađeni cijeđeni sokovi od ananasa"
+  },
+  {
+    "key": "en:refrigerated-squeezed-multifruit-juices",
+    "name": "Ohlađeni cijeđeni sokovi od više voća"
+  },
+  {
+    "key": "en:refrigerated-squeezed-orange-juices",
+    "name": "Ohlađeni sokovi od cijeđene naranče"
+  },
+  {
+    "key": "en:refrigerated-apple-juices",
+    "name": "Ohlađeni sokovi od jabuke"
+  },
+  {
+    "key": "en:strawberry-juice",
+    "name": "Sok od jagoda"
+  },
+  {
+    "key": "en:lemon-juice",
+    "name": "Sok od limuna"
+  },
+  {
+    "key": "en:mixed-red-fruits-juice-pure-juice",
+    "name": "Sok od miješanog crvenog voća čisti sok"
+  },
+  {
+    "key": "en:orange-juices-home-made",
+    "name": "Sok od naranče domaći"
+  },
+  {
+    "key": "en:peach-juices-from-concentrate",
+    "name": "Sokovi breskve iz koncentrata"
+  },
+  {
     "key": "en:juices-and-nectars",
     "name": "Sokovi i nektari"
   },
   {
+    "key": "en:lime-juices-from-concentrate",
+    "name": "Sokovi limete iz koncentrata"
+  },
+  {
+    "key": "en:tangerine-juices-from-concentrate",
+    "name": "Sokovi mandarina iz koncentrata"
+  },
+  {
+    "key": "en:pineapple-juices",
+    "name": "Sokovi od ananasa"
+  },
+  {
+    "key": "en:white-grape-juices",
+    "name": "Sokovi od bijelog grožđa"
+  },
+  {
+    "key": "en:blueberry-juices",
+    "name": "Sokovi od borovnice"
+  },
+  {
+    "key": "en:blueberry-juices-from-concentrate",
+    "name": "Sokovi od borovnice iz koncentrata"
+  },
+  {
+    "key": "en:peach-juices",
+    "name": "Sokovi od breskve"
+  },
+  {
+    "key": "en:cranberry-juices",
+    "name": "Sokovi od brusnice"
+  },
+  {
+    "key": "en:beetroot-juices",
+    "name": "Sokovi od cikle"
+  },
+  {
+    "key": "en:blood-orange-juices",
+    "name": "Sokovi od crvene naranče"
+  },
+  {
+    "key": "en:red-grape-juices",
+    "name": "Sokovi od crvenog grožđa"
+  },
+  {
+    "key": "en:grapefruit-juices",
+    "name": "Sokovi od grejpa"
+  },
+  {
+    "key": "en:grapefruit-juices-from-concentrate",
+    "name": "Sokovi od grejpa iz koncentrata"
+  },
+  {
+    "key": "en:grape-juices",
+    "name": "Sokovi od grožđa"
+  },
+  {
+    "key": "en:grape-juices-from-concentrate",
+    "name": "Sokovi od grožđa iz koncentrata"
+  },
+  {
+    "key": "en:apple-juices",
+    "name": "Sokovi od jabuke"
+  },
+  {
+    "key": "en:clementine-juices",
+    "name": "Sokovi od klementine"
+  },
+  {
+    "key": "en:pear-juices-from-concentrate",
+    "name": "Sokovi od krušaka iz koncentrata"
+  },
+  {
+    "key": "en:pear-juices",
+    "name": "Sokovi od kruške"
+  },
+  {
+    "key": "en:lime-juices",
+    "name": "Sokovi od limete"
+  },
+  {
+    "key": "en:tangerine-juices",
+    "name": "Sokovi od mandarina"
+  },
+  {
+    "key": "en:apricot-juices-from-concentrate",
+    "name": "Sokovi od marelica iz koncentrata"
+  },
+  {
+    "key": "en:carrot-juices",
+    "name": "Sokovi od mrkve"
+  },
+  {
+    "key": "en:pomegranate-juices",
+    "name": "Sokovi od nara"
+  },
+  {
+    "key": "en:pomegranate-juices-from-concentrate",
+    "name": "Sokovi od nara iz koncentrata"
+  },
+  {
+    "key": "en:orange-juices",
+    "name": "Sokovi od naranče"
+  },
+  {
+    "key": "en:orange-juices-with-pulp",
+    "name": "Sokovi od naranče s pulpom"
+  },
+  {
+    "key": "en:vegetable-juices",
+    "name": "Sokovi od povrća"
+  },
+  {
+    "key": "en:tomato-juices",
+    "name": "Sokovi od rajčice"
+  },
+  {
+    "key": "en:pink-grapefruit-juices",
+    "name": "Sokovi od ružičastog grejpa"
+  },
+  {
+    "key": "en:plum-juices-from-concentrate",
+    "name": "Sokovi od šljiva iz koncentrata"
+  },
+  {
+    "key": "en:prune-juices",
+    "name": "Sokovi od suhih šljiva"
+  },
+  {
+    "key": "en:fruit-and-vegetable-juices",
+    "name": "Sokovi od voća i povrća"
+  },
+  {
+    "key": "en:fresh-grapefruit-juice",
+    "name": "Svježi sok od grejpa"
+  },
+  {
+    "key": "en:fresh-pomegranate-juice",
+    "name": "Svježi sok od nara"
+  },
+  {
+    "key": "en:fruit-juice-mixed-apple-base-standard",
+    "name": "Voćni sok miješani - baza jabuka standard"
+  },
+  {
     "key": "en:fruit-juices",
     "name": "Voćni sokovi"
+  },
+  {
+    "key": "en:fruit-juices-from-concentrate",
+    "name": "Voćni sokovi iz koncentrata"
   }
 ]

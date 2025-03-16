@@ -1,14 +1,18 @@
 [
   {
-    "key": "en:chocolate-coated-ice-cream",
-    "name": "Barre glacée chocolatée"
+    "key": "en:ice-cream-bar-variety-packs",
+    "name": "Assortiments de bâtonnets glacés"
   },
   {
     "key": "en:plant-based-ice-cream-bars",
     "name": "Barre glacées végétales"
   },
   {
-    "key": "fr:barres-glacees",
+    "key": "en:ice-cream-candy-chocolate-bars",
+    "name": "Barres chocolatées glacées"
+  },
+  {
+    "key": "en:frozen-bars",
     "name": "Barres glacées"
   },
   {
@@ -16,12 +20,36 @@
     "name": "Bâtonnets glacés"
   },
   {
-    "key": "en:vanilla-ice-cream-bars",
-    "name": "Bâtonnets glacés à la vanille"
+    "key": "en:ice-cream-bars-coated-with-fat-reduced-cocoa",
+    "name": "Bâtonnets glacés enrobés de cacao maigre"
   },
   {
-    "key": "en:chocolate-ice-cream-bars",
-    "name": "Bâtonnets glacés au chocolat"
+    "key": "en:ice-cream-bars-coated-with-chocolate",
+    "name": "Bâtonnets glacés enrobés de chocolat"
+  },
+  {
+    "key": "en:ice-cream-bars-coated-with-fruit-sorbet",
+    "name": "Bâtonnets glacés enrobés de sorbet aux fruits"
+  },
+  {
+    "key": "en:vanilla-ice-cream-bars-coated-with-milk-chocolate",
+    "name": "Bâtonnets glacés vanille enrobés de chocolat au lait"
+  },
+  {
+    "key": "en:vanilla-ice-cream-bars-coated-with-milk-chocolate-and-almonds",
+    "name": "Bâtonnets glacés vanille enrobés de chocolat au lait aux amandes"
+  },
+  {
+    "key": "en:vanilla-ice-cream-bars-coated-with-white-chocolate",
+    "name": "Bâtonnets glacés vanille enrobés de chocolat blanc"
+  },
+  {
+    "key": "en:vanilla-ice-cream-bars-coated-with-white-chocolate-and-almonds",
+    "name": "Bâtonnets glacés vanille enrobés de chocolat blanc aux amandes"
+  },
+  {
+    "key": "en:vanilla-ice-cream-bars-coated-with-dark-chocolate",
+    "name": "Bâtonnets glacés vanille enrobés de chocolat noir"
   },
   {
     "key": "en:soft-cake-filled-with-fruit-paste-and-coated-with-sugar-icing",
@@ -88,10 +116,6 @@
     "name": "Crème glacée gourmande en bac"
   },
   {
-    "key": "fr:cremes-glacees-a-la-noix-de-pecan",
-    "name": "Crèmes glacées à la Noix de Pécan"
-  },
-  {
     "key": "en:ice-cream-tubs",
     "name": "Crèmes glacées en pot"
   },
@@ -132,10 +156,6 @@
     "name": "Desserts glacés"
   },
   {
-    "key": "fr:glace-aux-calissons",
-    "name": "Glace aux calissons"
-  },
-  {
     "key": "en:ice-cream-in-a-box",
     "name": "Glace en bac"
   },
@@ -160,7 +180,7 @@
     "name": "Glaces à la fraise"
   },
   {
-    "key": "fr:glaces-a-la-menthe",
+    "key": "en:mint-ice-cream-tubs",
     "name": "Glaces à la menthe"
   },
   {
@@ -172,7 +192,7 @@
     "name": "Glaces à la pistache"
   },
   {
-    "key": "fr:glaces-a-la-stracciatella",
+    "key": "en:stracciatella-ice-cream-tubs",
     "name": "Glaces à la stracciatella"
   },
   {
@@ -180,8 +200,12 @@
     "name": "Glaces à la vanille"
   },
   {
-    "key": "es:helado-de-vainilla-y-macadamia",
+    "key": "en:vanilla-and-macadamia-ice-cream-tubs",
     "name": "Glaces à la vanille et macadamia"
+  },
+  {
+    "key": "en:vanilla-and-pecan-ice-cream-tubs",
+    "name": "Glaces à la vanille et pécan"
   },
   {
     "key": "en:coffee-ice-cream-tubs",
@@ -196,11 +220,11 @@
     "name": "Glaces au chocolat"
   },
   {
-    "key": "fr:glaces-au-chocolat-blanc",
+    "key": "en:white-chocolate-ice-cream-tubs",
     "name": "Glaces au chocolat blanc"
   },
   {
-    "key": "fr:glaces-au-citron",
+    "key": "en:lemon-ice-cream-tubs",
     "name": "Glaces au citron"
   },
   {
@@ -208,24 +232,24 @@
     "name": "Glaces au nougat"
   },
   {
-    "key": "fr:glaces-au-praline",
-    "name": "Glaces au praliné"
-  },
-  {
     "key": "fr:glaces-aux-amandes",
     "name": "Glaces aux amandes"
   },
   {
-    "key": "fr:glaces-aux-fruits-rouges",
-    "name": "Glaces aux fruits-rouges"
+    "key": "en:berries-ice-cream-tubs",
+    "name": "Glaces aux fruits rouges"
   },
   {
-    "key": "en:chestnut-ice-creams",
+    "key": "en:chestnut-ice-cream-tubs",
     "name": "Glaces aux marrons"
   },
   {
-    "key": "fr:glaces-aux-noisettes",
+    "key": "en:hazelnut-ice-cream-tubs",
     "name": "Glaces aux noisettes"
+  },
+  {
+    "key": "en:walnut-ice-cream-tubs",
+    "name": "Glaces aux noix"
   },
   {
     "key": "en:ice-creams-and-sorbets",
@@ -234,6 +258,10 @@
   {
     "key": "en:rum-and-raisins-ice-cream-tubs",
     "name": "Glaces rhum-raisin"
+  },
+  {
+    "key": "en:ice-cubes",
+    "name": "Glaçons"
   },
   {
     "key": "en:glazed-doughnuts",

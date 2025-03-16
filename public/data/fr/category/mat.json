@@ -4,6 +4,10 @@
     "name": "% de matières grasses"
   },
   {
+    "key": "en:matooke-bananas",
+    "name": "Bananes matooke"
+  },
+  {
     "key": "en:reduced-fat-biscuit-bar-filled-with-fruits",
     "name": "Barre biscuitée fourrée aux fruits allégée en matière grasse"
   },
@@ -64,6 +68,22 @@
     "name": "Crèmes allégées en matière grasse"
   },
   {
+    "key": "en:fat-free-fermented-dairy-desserts-with-fruits-and-sweeteners-fortified-with-vitamin-d",
+    "name": "Desserts lactés fermentés aux fruits édulcorés sans matière grasse enrichis en vitamine D"
+  },
+  {
+    "key": "en:fat-free-fermented-dairy-desserts-with-fruits-and-sweeteners",
+    "name": "Desserts lactés fermentés édulcorés aux fruits sans matière grasse"
+  },
+  {
+    "key": "en:fat-free-fermented-dairy-desserts-with-sweeteners",
+    "name": "Desserts lactés fermentés édulcorés sans matière grasse"
+  },
+  {
+    "key": "en:fat-free-plain-fermented-dairy-desserts",
+    "name": "Desserts lactés fermentés nature sans matière grasse"
+  },
+  {
     "key": "en:extra-matured-gouda",
     "name": "Extra matured Gouda"
   },
@@ -76,8 +96,16 @@
     "name": "Fromage blanc nature à 0% de matières grasses"
   },
   {
+    "key": "en:plain-fresh-cream-cheese-around-1-fat",
+    "name": "Fromage blanc nature à 1% de matières grasses environ"
+  },
+  {
     "key": "en:plain-fresh-cream-cheese-around-3-fat",
     "name": "Fromage blanc nature à 3% de matières grasses environ"
+  },
+  {
+    "key": "en:plain-fresh-cream-cheese-reduced-fat",
+    "name": "Fromage blanc nature allégé en matières grasses"
   },
   {
     "key": "en:plain-creamy-fresh-cream-cheese-around-8-fat",
@@ -126,6 +154,10 @@
   {
     "key": "en:refrigerated-flavoured-milk-jelly-with-reduced-fat-and-sugar",
     "name": "Lait gélifié aromatisé allégé en matière grasse et en sucre rayon frais"
+  },
+  {
+    "key": "en:matcha-ipa",
+    "name": "Matcha IPA"
   },
   {
     "key": "en:butter-fat",
@@ -240,10 +272,6 @@
     "name": "Matières grasses végétales"
   },
   {
-    "key": "fr:matooke",
-    "name": "Matooke"
-  },
-  {
     "key": "en:70-fat-mayonnaise",
     "name": "Mayonnaise à 70% de matière grasse"
   },
@@ -258,6 +286,10 @@
   {
     "key": "en:raw-puff-pastry",
     "name": "Pâte feuilletée crue à la matière grasse végétale"
+  },
+  {
+    "key": "en:shortbread-dough-with-vegetable-fats",
+    "name": "Pâte sablée crue à la matière grasse végétale"
   },
   {
     "key": "en:2-3-fat-petit-suisse",
@@ -292,8 +324,8 @@
     "name": "Smetana avec 15% de matières grasses"
   },
   {
-    "key": "en:liquid-light-cream-with-4-to-8-fat",
-    "name": "Spécialité à base de crème légère fluide à 8% de matières grasses"
+    "key": "en:uht-compound-dairy-creams-with-4-to-8-fat",
+    "name": "Spécialités à base de crème liquide 4 à 8% de matières grasses UHT"
   },
   {
     "key": "en:minced-beef-steak-with-10-fat",
@@ -352,20 +384,8 @@
     "name": "Yaourt au lait fermenté aux céréales à 0% de matières grasses"
   },
   {
-    "key": "en:fat-free-fermented-milk-yogurt-with-fruits-and-sweetener",
-    "name": "Yaourt au lait fermenté aux fruits avec édulcorants à 0% de matières grasses"
-  },
-  {
-    "key": "en:fat-free-fermented-milk-yogurt-with-fruits-and-sweetener-fortified-with-vitamin-d",
-    "name": "Yaourt au lait fermenté aux fruits avec édulcorants à 0% de matières grasses enrichi en vitamine D"
-  },
-  {
-    "key": "en:fat-free-flavoured-fermented-milk-yogurt-with-sweetener",
-    "name": "Yaourt au lait fermenté avec édulcorants à 0% de matières grasses"
-  },
-  {
-    "key": "en:fat-free-plain-fermented-milk-yogurt",
-    "name": "Yaourt nature au lait fermenté à 0% de matières grasses"
+    "key": "fr:yaourts-a-boire-alleges-en-matieres-grasses",
+    "name": "Yaourts à boire allégés en matières grasses"
   },
   {
     "key": "en:low-fat-yogurts",

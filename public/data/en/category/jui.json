@@ -1,5 +1,9 @@
 [
   {
+    "key": "en:apple-juice-concentrates",
+    "name": "Apple juice concentrates"
+  },
+  {
     "key": "en:apple-juices",
     "name": "Apple juices"
   },
@@ -14,6 +18,10 @@
   {
     "key": "en:beetroot-juices",
     "name": "Beetroot juices"
+  },
+  {
+    "key": "en:beverages-from-desugared-fruit-juices",
+    "name": "Beverages from desugared fruit juices"
   },
   {
     "key": "en:blood-orange-juices",
@@ -100,8 +108,8 @@
     "name": "Concentrated tomato juices"
   },
   {
-    "key": "en:cranberry-juice",
-    "name": "Cranberry juice"
+    "key": "en:cranberry-juices",
+    "name": "Cranberry juices"
   },
   {
     "key": "en:enriched-apple-juices",
@@ -124,8 +132,16 @@
     "name": "Fresh pomegranate juice"
   },
   {
+    "key": "en:frozen-vegetable-juices",
+    "name": "Frozen vegetable juices"
+  },
+  {
     "key": "en:fruit-and-vegetable-juices",
     "name": "Fruit and vegetable juices"
+  },
+  {
+    "key": "en:fruit-juice-concentrates",
+    "name": "Fruit juice concentrates"
   },
   {
     "key": "en:fruit-juice-mixed-apple-base-standard",
@@ -172,6 +188,14 @@
     "name": "Lemon juice"
   },
   {
+    "key": "en:lemon-juice-concentrates",
+    "name": "Lemon juice concentrates"
+  },
+  {
+    "key": "en:lime-juice-concentrates",
+    "name": "Lime juice concentrates"
+  },
+  {
     "key": "en:lime-juices",
     "name": "Lime juices"
   },
@@ -196,24 +220,32 @@
     "name": "Multifruit juices from concentrate"
   },
   {
-    "key": "en:multivitamin-mixed-fruits-juice-reconstituted-from-a-concentrate",
-    "name": "Multivitamin mixed fruits juice reconstituted from a concentrate"
+    "key": "en:multifruit-juices-with-coconut-water",
+    "name": "Multifruit juices with coconut water"
   },
   {
     "key": "en:orange-based-mixed-fruits-multivitamin-juice",
     "name": "Orange based mixed fruits multivitamin juice"
   },
   {
-    "key": "en:orange-juice-home-made",
-    "name": "Orange juice home-made"
-  },
-  {
     "key": "en:orange-juices",
     "name": "Orange juices"
   },
   {
+    "key": "en:orange-juices-home-made",
+    "name": "Orange juices (home-made)"
+  },
+  {
     "key": "en:orange-juices-from-concentrate",
     "name": "Orange juices from concentrate"
+  },
+  {
+    "key": "en:orange-juices-with-pulp",
+    "name": "Orange juices with pulp"
+  },
+  {
+    "key": "en:orange-juices-without-pulp",
+    "name": "Orange juices without pulp"
   },
   {
     "key": "en:peach-juices",
@@ -238,6 +270,10 @@
   {
     "key": "en:pineapple-juices",
     "name": "Pineapple juices"
+  },
+  {
+    "key": "en:pineapple-juices-from-concentrate",
+    "name": "Pineapple juices from concentrate"
   },
   {
     "key": "en:pink-grapefruit-juices",
@@ -304,8 +340,16 @@
     "name": "Refrigerated squeezed tangerine juices"
   },
   {
+    "key": "en:refrigerated-vegetable-juices",
+    "name": "Refrigerated vegetable juices"
+  },
+  {
     "key": "en:sparkling-apple-juices",
     "name": "Sparkling apple juices"
+  },
+  {
+    "key": "en:sparkling-apple-or-pear-juices",
+    "name": "Sparkling apple or pear juices"
   },
   {
     "key": "en:squeezed-apple-juices",
@@ -320,16 +364,16 @@
     "name": "Squeezed clementine juices"
   },
   {
+    "key": "en:squeezed-fruit-juices",
+    "name": "Squeezed fruit juices"
+  },
+  {
     "key": "en:squeezed-grape-juices",
     "name": "Squeezed grape juices"
   },
   {
     "key": "en:squeezed-grapefruit-juices",
     "name": "Squeezed grapefruit juices"
-  },
-  {
-    "key": "en:squeezed-juices",
-    "name": "Squeezed juices"
   },
   {
     "key": "en:squeezed-lemon-juices",
@@ -398,6 +442,10 @@
   {
     "key": "en:tomato-juices",
     "name": "Tomato juices"
+  },
+  {
+    "key": "en:treated-vegetable-juices",
+    "name": "Treated vegetable juices"
   },
   {
     "key": "en:vegetable-juices",

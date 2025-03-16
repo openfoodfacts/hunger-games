@@ -40,6 +40,10 @@
     "name": "Chocolate relleno"
   },
   {
+    "key": "en:crepe-filled-with-strawberries",
+    "name": "Crepe relleno de fresas"
+  },
+  {
     "key": "en:croissant-filled-with-chocolate",
     "name": "Cruasán relleno de chocolate"
   },
@@ -56,6 +60,14 @@
     "name": "Galletas rellenas"
   },
   {
+    "key": "fr:biscuits-fourres-aux-fruits",
+    "name": "Galletas rellenas de fruta"
+  },
+  {
+    "key": "en:filled-chocolate-eggs",
+    "name": "Huevos de chocolate rellenos"
+  },
+  {
     "key": "es:infusiones-relajantes",
     "name": "Infusiones relajantes"
   },
@@ -64,8 +76,36 @@
     "name": "Obleas rellenas"
   },
   {
+    "key": "en:fresh-pasta-stuffed-with-cheese",
+    "name": "Pasta fresca rellena de queso"
+  },
+  {
+    "key": "en:fresh-pasta-stuffed-with-vegetables",
+    "name": "Pasta fresca rellena de verduras"
+  },
+  {
+    "key": "en:pasta-stuffed-with-meat",
+    "name": "Pasta rellena de carne"
+  },
+  {
+    "key": "en:pasta-stuffed-with-fish",
+    "name": "Pasta rellena de pescado"
+  },
+  {
+    "key": "en:pasta-stuffed-with-cheese",
+    "name": "Pasta rellena de queso"
+  },
+  {
+    "key": "en:pasta-stuffed-with-vegetables",
+    "name": "Pasta rellena de verduras"
+  },
+  {
     "key": "en:stuffed-pastas",
     "name": "Pastas rellenas"
+  },
+  {
+    "key": "en:stuffed-pastas-in-sauce",
+    "name": "Pastas rellenas en salsa"
   },
   {
     "key": "es:pimientos-del-piquillo-rellenos-de-chipirones",
@@ -74,5 +114,9 @@
   {
     "key": "en:stuffed-peppers",
     "name": "Pimientos rellenos"
+  },
+  {
+    "key": "en:relish",
+    "name": "Relish"
   }
 ]

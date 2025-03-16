@@ -1,115 +1,135 @@
 [
   {
     "key": "en:bolognese-pizzas",
-    "name": "Bolognese pizzas"
-  },
-  {
-    "key": "en:cheese-and-mushrooms-pizza",
-    "name": "Cheese and mushrooms pizza"
-  },
-  {
-    "key": "en:cheese-and-onion-pizza-with-lardoons",
-    "name": "Cheese and onion pizza with lardoons"
-  },
-  {
-    "key": "en:cheese-pizzas",
-    "name": "Cheese pizzas"
-  },
-  {
-    "key": "en:chicken-pizza",
-    "name": "Chicken pizza"
+    "name": "Bolonjez pizze"
   },
   {
     "key": "en:chorizo-pizzas",
-    "name": "Chorizo pizzas"
-  },
-  {
-    "key": "en:cooked-pizza-base",
-    "name": "Cooked pizza base"
+    "name": "Chorizo ​​pizze"
   },
   {
     "key": "en:cream-sauce-for-pizza-base",
     "name": "Cream sauce for pizza base"
   },
   {
-    "key": "en:cured-ham-pizza",
-    "name": "Cured Ham Pizza"
+    "key": "en:pepperoni-pizzas",
+    "name": "Feferoni pizze"
   },
   {
-    "key": "en:five-cheese-pizza",
-    "name": "Five Cheese Pizza"
+    "key": "en:fresh-pizzas-pies-and-quiches",
+    "name": "Fresh pizzas pies and quiches"
   },
   {
-    "key": "en:four-cheese-pizza",
-    "name": "Four Cheese Pizza"
-  },
-  {
-    "key": "en:frozen-pizzas",
-    "name": "Frozen pizzas"
-  },
-  {
-    "key": "en:frozen-pizzas-and-pies",
-    "name": "Frozen pizzas and pies"
-  },
-  {
-    "key": "en:goat-cheese-and-bacon-pizzas",
-    "name": "Goat cheese and bacon pizzas"
-  },
-  {
-    "key": "en:ham-pizzas",
-    "name": "Ham pizzas"
+    "key": "en:frozen-pizza-dough",
+    "name": "Frozen pizza dough"
   },
   {
     "key": "en:kebab-pizzas",
-    "name": "Kebab pizzas"
+    "name": "Kebab pizze"
   },
   {
-    "key": "en:margherita-pizza",
-    "name": "Margherita Pizza"
+    "key": "en:cooked-pizza-base",
+    "name": "Kuhana baza za pizzu"
   },
   {
     "key": "en:oval-pizzas",
-    "name": "Oval pizzas"
+    "name": "Ovalne pizze"
   },
   {
-    "key": "en:pepperoni-pizzas",
-    "name": "Pepperoni pizzas"
+    "key": "en:margherita-pizza",
+    "name": "Pizza margherita"
   },
   {
-    "key": "en:pizza-dough",
-    "name": "Pizza dough"
+    "key": "en:cheese-and-onion-pizza-with-lardoons",
+    "name": "Pizza od sira i luka s pečenjem"
+  },
+  {
+    "key": "en:three-cheese-pizza",
+    "name": "Pizza od tri sira"
   },
   {
     "key": "en:pizza-pastry-base",
     "name": "Pizza pastry base"
   },
   {
-    "key": "en:pizza-sauces",
-    "name": "Pizza sauces"
+    "key": "en:four-cheese-pizza",
+    "name": "Pizza s četiri sira"
+  },
+  {
+    "key": "en:five-cheese-pizza",
+    "name": "Pizza s pet sireva"
+  },
+  {
+    "key": "en:chicken-pizza",
+    "name": "Pizza s piletinom"
+  },
+  {
+    "key": "en:seafood-pizza",
+    "name": "Pizza s plodovima mora"
+  },
+  {
+    "key": "en:vegetable-pizza",
+    "name": "Pizza s povrćem"
+  },
+  {
+    "key": "en:pizza-with-raclette-cheese-and-lardoons",
+    "name": "Pizza s raclette sirom i pečenicama"
+  },
+  {
+    "key": "en:pizza-with-truffle",
+    "name": "Pizza s tartufima"
+  },
+  {
+    "key": "en:salmon-pizza",
+    "name": "Pizza sa lososom"
+  },
+  {
+    "key": "en:six-cheese-pizza",
+    "name": "Pizza sa šest sireva"
+  },
+  {
+    "key": "en:cheese-and-mushrooms-pizza",
+    "name": "Pizza sa sirom i gljivama"
+  },
+  {
+    "key": "en:cured-ham-pizza",
+    "name": "Pizza sa suhom šunkom"
   },
   {
     "key": "en:pizza-with-ham-and-cheese",
-    "name": "Pizza with ham and cheese"
+    "name": "Pizza sa šunkom i sirom"
   },
   {
     "key": "en:pizza-with-onion-and-anchovy-and-black-olives",
     "name": "Pizza with onion and anchovy and black olives"
   },
   {
-    "key": "en:pizza-with-raclette-cheese-and-lardoons",
-    "name": "Pizza with raclette cheese and lardoons"
-  },
-  {
-    "key": "en:pizza-with-truffle",
-    "name": "Pizza with truffle"
-  },
-  {
     "key": "en:pizzas",
-    "name": "Pizzas"
+    "name": "Pizze"
+  },
+  {
+    "key": "en:goat-cheese-and-bacon-pizzas",
+    "name": "Pizze od kozjeg sira i slanine"
+  },
+  {
+    "key": "en:tuna-pizzas",
+    "name": "Pizze od tune"
   },
   {
     "key": "en:pizzas-pies-and-quiches",
-    "name": "Pizzas pies and quiches"
+    "name": "Pizze pite i quichevi"
+  },
+  {
+    "key": "en:cheese-pizzas",
+    "name": "Pizze sa sirom"
+  },
+  {
+    "key": "en:ham-pizzas",
+    "name": "Pizze sa šunkom"
+  },
+  {
+    "key": "en:plant-based-pizzas",
+    "name": "Plant-based pizzas"
   },
   {
     "key": "en:raw-pizza-base",
@@ -124,16 +144,12 @@
     "name": "Regina pizza"
   },
   {
-    "key": "en:salmon-pizza",
-    "name": "Salmon pizza"
+    "key": "en:frozen-pizzas",
+    "name": "Smrznute pizze"
   },
   {
-    "key": "en:seafood-pizza",
-    "name": "Seafood pizza"
-  },
-  {
-    "key": "en:six-cheese-pizza",
-    "name": "Six Cheese Pizza"
+    "key": "en:frozen-pizzas-and-pies",
+    "name": "Smrznute pizze i pite"
   },
   {
     "key": "en:speck-pizza",
@@ -144,23 +160,23 @@
     "name": "Thin-crust pizza shell"
   },
   {
-    "key": "en:three-cheese-pizza",
-    "name": "Three Cheese Pizza"
-  },
-  {
-    "key": "en:tomato-sauce-for-pizza-base",
-    "name": "Tomato sauce for pizza base"
+    "key": "en:pizza-dough",
+    "name": "Tijesto za pizzu"
   },
   {
     "key": "en:topping-sauce-for-pizza",
     "name": "Topping sauce for pizza"
   },
   {
-    "key": "en:tuna-pizzas",
-    "name": "Tuna pizzas"
+    "key": "en:pizza-sauces",
+    "name": "Umaci za pizzu"
   },
   {
-    "key": "en:vegetable-pizza",
-    "name": "Vegetable pizza"
+    "key": "en:tomato-sauce-for-pizza-base",
+    "name": "Umak od rajčice za podlogu za pizzu"
+  },
+  {
+    "key": "en:vegetarian-pizzas",
+    "name": "Vegetarian pizzas"
   }
 ]

@@ -12,10 +12,6 @@
     "name": "Artichaut cuit"
   },
   {
-    "key": "en:eggplant-cooked",
-    "name": "Aubergine cuite"
-  },
-  {
     "key": "en:cooked-plantain-bananas",
     "name": "Bananes plantain cuites"
   },
@@ -196,6 +192,10 @@
     "name": "Courgettes cuisinées"
   },
   {
+    "key": "en:frozen-cooked-crab",
+    "name": "Crabe cuit surgelé"
+  },
+  {
     "key": "en:almond-based-creams-for-cooking",
     "name": "Crèmes végétales à base d'amande pour cuisiner"
   },
@@ -232,8 +232,16 @@
     "name": "Crevettes cuites"
   },
   {
+    "key": "en:frozen-cooked-shrimps",
+    "name": "Crevettes cuites surgelées"
+  },
+  {
     "key": "en:cooked-prawns",
     "name": "Crevettes roses cuites"
+  },
+  {
+    "key": "fr:croissants-surgeles-a-cuire",
+    "name": "Croissants surgelés à cuire"
   },
   {
     "key": "en:duck-leg-meat-with-skin",
@@ -280,8 +288,16 @@
     "name": "Cuisses de Grenouilles"
   },
   {
+    "key": "en:frozen-frog-legs",
+    "name": "Cuisses de Grenouilles surgelées"
+  },
+  {
     "key": "en:chicken-thighs",
     "name": "Cuisses de poulet"
+  },
+  {
+    "key": "en:smoked-cooked-turkey",
+    "name": "Dinde cuite fumée"
   },
   {
     "key": "en:cooked-shallots",
@@ -290,6 +306,10 @@
   {
     "key": "en:cooked-crayfish",
     "name": "Écrevisse cuite"
+  },
+  {
+    "key": "en:frozen-cooked-crayfish",
+    "name": "Écrevisse cuite surgelée"
   },
   {
     "key": "en:steamed-haddock",
@@ -312,10 +332,6 @@
     "name": "Épinards cuits"
   },
   {
-    "key": "en:frozen-cooked-spinach",
-    "name": "Épinards surgelés cuits"
-  },
-  {
     "key": "en:cooked-sweet-corn-on-the-cob",
     "name": "Epis de Maïs cuit"
   },
@@ -328,12 +344,16 @@
     "name": "Escalopes de veau cuites"
   },
   {
-    "key": "en:snail-in-cooked-parsley-butter",
+    "key": "en:cooked-snails-in-parsley-butter",
     "name": "Escargot en sauce au beurre persillé cuit"
   },
   {
     "key": "en:cooked-snails",
     "name": "Escargots cuits"
+  },
+  {
+    "key": "en:frozen-cooked-snails-in-parsley-butter",
+    "name": "Escargots en sauce au beurre persillé cuits surgelés"
   },
   {
     "key": "en:cooked-broad-beans",
@@ -420,7 +440,7 @@
     "name": "Frites surgelées à cuire au four"
   },
   {
-    "key": "en:cooked-pressed-cheeses",
+    "key": "en:hard-cheeses",
     "name": "Fromages à pâte pressée cuite"
   },
   {
@@ -484,6 +504,10 @@
     "name": "Haricots verts cuits"
   },
   {
+    "key": "en:frozen-cooked-lobster",
+    "name": "Homard cuit surgelé"
+  },
+  {
     "key": "en:cooked-ham-choice-with-rind",
     "name": "Jambon cuit choix avec couenne"
   },
@@ -538,6 +562,10 @@
   {
     "key": "en:cooked-calf-tongue",
     "name": "Langue de veau cuite"
+  },
+  {
+    "key": "en:cooked-tongues",
+    "name": "Langues cuites"
   },
   {
     "key": "en:smoked-lardoons-cooked",
@@ -624,6 +652,10 @@
     "name": "Mogettes de Vendée cuisinées à la tomate"
   },
   {
+    "key": "en:frozen-cooked-mussels",
+    "name": "Moules cuites surgelées"
+  },
+  {
     "key": "en:cooked-turnips",
     "name": "Navets cuits"
   },
@@ -636,8 +668,16 @@
     "name": "Nouilles asiatiques cuites nature non salées"
   },
   {
+    "key": "en:cooked-poultry-nuggets",
+    "name": "Nuggets de volaille cuits"
+  },
+  {
     "key": "en:cooked-onions",
     "name": "Oignons cuits"
+  },
+  {
+    "key": "en:cooked-abalone",
+    "name": "Ormeau cuit"
   },
   {
     "key": "en:frozen-pre-fried-cooked-vegetable-rosti",
@@ -776,6 +816,10 @@
     "name": "Pommes de terre cuites"
   },
   {
+    "key": "en:steamed-potatoes",
+    "name": "Pommes de terre cuites à la vapeur"
+  },
+  {
     "key": "en:frozen-baked-potatoes",
     "name": "Pommes de terre cuites surgelées"
   },
@@ -800,12 +844,20 @@
     "name": "Poule cuisse crue"
   },
   {
+    "key": "en:chicken-stewing-leg-frozen",
+    "name": "Poule cuisse surgelée"
+  },
+  {
     "key": "en:chicken-leg-meat-raw",
     "name": "Poulet cuisse viande cru"
   },
   {
     "key": "en:chicken-leg-meat-and-skin-raw",
     "name": "Poulet cuisse viande et peau cru"
+  },
+  {
+    "key": "en:frozen-chicken-leg-meat-and-skin-raw",
+    "name": "Poulet cuisse viande et peau cru surgelée"
   },
   {
     "key": "en:chicken-high-leg-meat-raw",
@@ -822,6 +874,10 @@
   {
     "key": "en:cooked-common-octopus",
     "name": "Poulpes cuits"
+  },
+  {
+    "key": "en:frozen-cooked-common-octopus",
+    "name": "Poulpes cuits surgelés"
   },
   {
     "key": "en:cooked-spaghetti-squash-pulp",
@@ -1004,10 +1060,6 @@
     "name": "Thon germon cuit à la vapeur sous pression"
   },
   {
-    "key": "en:rhubarb-stalk-cooked-with-sugar",
-    "name": "Tiges de rhubarbe cuites sucrées"
-  },
-  {
     "key": "en:cooked-jerusalem-artichoke",
     "name": "Topinambour cuit"
   },
@@ -1048,6 +1100,10 @@
     "name": "Viande de boeuf cuite"
   },
   {
+    "key": "en:smoked-cooked-beef-meat",
+    "name": "Viande de boeuf fumée cuite"
+  },
+  {
     "key": "en:cooked-rabbit-meat",
     "name": "Viande de lapin cuite"
   },
@@ -1060,6 +1116,10 @@
     "name": "Viande de porc cuite"
   },
   {
+    "key": "en:smoked-cooked-pork-meat",
+    "name": "Viande de porc cuite fumée"
+  },
+  {
     "key": "en:cooked-red-meat",
     "name": "Viande rouge cuite"
   },
@@ -1068,12 +1128,28 @@
     "name": "Viandes cuites"
   },
   {
+    "key": "en:smoked-cooked-meats",
+    "name": "Viandes cuites fumées"
+  },
+  {
     "key": "en:cooked-lamb-meat",
     "name": "Viandes d'agneau cuites"
   },
   {
     "key": "en:cooked-veal-meat",
     "name": "Viandes de veau cuites"
+  },
+  {
+    "key": "en:smoked-cooked-veal-meat",
+    "name": "Viandes de veau cuites fumées"
+  },
+  {
+    "key": "fr:viennoiseries-surgelees-a-cuire",
+    "name": "Viennoiseries surgelées à cuire"
+  },
+  {
+    "key": "en:cooking-wines",
+    "name": "Vins de cuisine"
   },
   {
     "key": "en:snapper-cooked",

@@ -1,5 +1,9 @@
 [
   {
+    "key": "en:pickles-relishes-chutneys-olives-variety-packs",
+    "name": "Assortiments de conserves au vinaigre et olives"
+  },
+  {
     "key": "en:wine-based-drinks",
     "name": "Boissons à base de vin"
   },
@@ -32,7 +36,7 @@
     "name": "Chips au sel et vinaigre de malt"
   },
   {
-    "key": "en:wine-jams",
+    "key": "en:wine-spreads",
     "name": "Confits de vin"
   },
   {
@@ -118,6 +122,10 @@
   {
     "key": "fr:fontaines-a-vin",
     "name": "Fontaines à vin"
+  },
+  {
+    "key": "en:wine-jellies",
+    "name": "Gelées de vin"
   },
   {
     "key": "en:kir",
@@ -240,6 +248,10 @@
     "name": "Vin de Savoie"
   },
   {
+    "key": "fr:vin-de-savoie-mousseux",
+    "name": "Vin de Savoie mousseux"
+  },
+  {
     "key": "fr:vin-des-allobroges",
     "name": "Vin des Allobroges"
   },
@@ -254,6 +266,10 @@
   {
     "key": "en:11-rose-wine",
     "name": "Vin rosé 11°"
+  },
+  {
+    "key": "en:sparkling-rose-wine",
+    "name": "Vin rosé pétillant"
   },
   {
     "key": "fr:vin-rosette",
@@ -280,6 +296,10 @@
     "name": "Vin rouge bio"
   },
   {
+    "key": "en:sparkling-red-wine",
+    "name": "Vin rouge pétillant"
+  },
+  {
     "key": "en:wine-without-geographic-indication",
     "name": "Vin sans indication géographique"
   },
@@ -294,6 +314,10 @@
   {
     "key": "en:umeboshi-vinegars",
     "name": "Vinaigre d'Umeboshi"
+  },
+  {
+    "key": "en:champaign-vinegars",
+    "name": "Vinaigre de Champagne"
   },
   {
     "key": "en:vinegars",
@@ -324,6 +348,10 @@
     "name": "Vinaigres d'alcools"
   },
   {
+    "key": "en:beer-vinegars",
+    "name": "Vinaigres de bière"
+  },
+  {
     "key": "en:sugarcane-vinegars",
     "name": "Vinaigres de canne"
   },
@@ -332,8 +360,32 @@
     "name": "Vinaigres de cidre"
   },
   {
+    "key": "en:goji-vinegars",
+    "name": "Vinaigres de goji"
+  },
+  {
+    "key": "en:pomegranate-vinegars",
+    "name": "Vinaigres de grenade"
+  },
+  {
+    "key": "en:jujube-vinegars",
+    "name": "Vinaigres de jujube"
+  },
+  {
+    "key": "en:kaki-vinegars",
+    "name": "Vinaigres de kaki"
+  },
+  {
     "key": "en:honey-vinegars",
     "name": "Vinaigres de miel"
+  },
+  {
+    "key": "en:coconut-vinegars",
+    "name": "Vinaigres de noix de coco"
+  },
+  {
+    "key": "en:perry-vinegars",
+    "name": "Vinaigres de poiré"
   },
   {
     "key": "en:rice-vinegars",
@@ -412,6 +464,10 @@
     "name": "Vins aromatisés"
   },
   {
+    "key": "en:wines-from-belgium",
+    "name": "Vins belges"
+  },
+  {
     "key": "en:white-wines",
     "name": "Vins blancs"
   },
@@ -424,6 +480,10 @@
     "name": "Vins blancs secs"
   },
   {
+    "key": "en:wines-from-bulgaria",
+    "name": "Vins bulgares"
+  },
+  {
     "key": "en:wines-from-california",
     "name": "Vins californiens"
   },
@@ -432,12 +492,36 @@
     "name": "Vins d'Afrique du Sud"
   },
   {
+    "key": "en:wines-from-albania",
+    "name": "Vins d'Albanie"
+  },
+  {
+    "key": "en:wines-from-algeria",
+    "name": "Vins d'Algérie"
+  },
+  {
+    "key": "en:wines-from-argentina",
+    "name": "Vins d'Argentine"
+  },
+  {
+    "key": "en:wines-from-armenia",
+    "name": "Vins d'Arménie"
+  },
+  {
     "key": "en:wines-from-australia",
     "name": "Vins d'Australie"
   },
   {
     "key": "en:wines-from-austria",
     "name": "Vins d'Autriche"
+  },
+  {
+    "key": "en:danish-wines",
+    "name": "Vins danois"
+  },
+  {
+    "key": "en:cooking-wines",
+    "name": "Vins de cuisine"
   },
   {
     "key": "en:wines-from-hungary",
@@ -450,6 +534,10 @@
   {
     "key": "fr:vins-de-pays",
     "name": "Vins de pays"
+  },
+  {
+    "key": "fr:vins-de-pays-de-l-herault",
+    "name": "Vins de Pays de l'Hérault"
   },
   {
     "key": "en:wines-from-czech-republic",
@@ -520,12 +608,20 @@
     "name": "Vins mutés de type vin doux naturel"
   },
   {
+    "key": "en:dutch-wines",
+    "name": "Vins néerlandais"
+  },
+  {
     "key": "en:beading-wines",
     "name": "Vins perlant"
   },
   {
     "key": "fr:vins-petillant",
     "name": "Vins pétillant"
+  },
+  {
+    "key": "en:french-sparkling-wines",
+    "name": "Vins pétillants français"
   },
   {
     "key": "en:wines-from-portugal",
@@ -542,6 +638,14 @@
   {
     "key": "en:non-alcoholic-wines",
     "name": "Vins sans alcool"
+  },
+  {
+    "key": "en:slovenian-wines",
+    "name": "Vins slovènes"
+  },
+  {
+    "key": "en:swiss-wines",
+    "name": "Vins suisses"
   },
   {
     "key": "fr:vins-vines",

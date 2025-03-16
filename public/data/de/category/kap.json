@@ -1,6 +1,6 @@
 [
   {
-    "key": "en:dolce-gusto-compatible-coffee-capsules",
+    "key": "en:dolce-gusto-compatible-capsules",
     "name": "Dolce Gusto-kompatible Kapseln"
   },
   {
@@ -16,6 +16,10 @@
     "name": "Kapernbeeren"
   },
   {
+    "key": "en:capsules",
+    "name": "Kapseln"
+  },
+  {
     "key": "en:nespresso-compatible-coffee-capsules",
     "name": "Nespresso-kompatible Kapseln"
   },
@@ -26,5 +30,9 @@
   {
     "key": "en:tassimo-compatible-coffee-capsules",
     "name": "Tassimo-kompatible Kapseln"
+  },
+  {
+    "key": "en:tea-capsules",
+    "name": "Tee Kapseln"
   }
 ]

@@ -1,10 +1,18 @@
 [
   {
-    "key": "en:grilled-almonds",
+    "key": "fr:alsace-pinot-gris",
+    "name": "Alsace Pinot gris"
+  },
+  {
+    "key": "en:roasted-almonds",
     "name": "Amandes grillées"
   },
   {
-    "key": "en:salted-and-grilled-almonds",
+    "key": "en:almonds-roasted-and-unsalted",
+    "name": "Amandes grillées et non-salées"
+  },
+  {
+    "key": "en:roasted-and-salted-almonds",
     "name": "Amandes grillées et salées"
   },
   {
@@ -120,6 +128,10 @@
     "name": "Graines de courge grillées"
   },
   {
+    "key": "en:pumpkin-seeds-non-roasted-shelled-unsalted",
+    "name": "Graines de courge(non-grillées/non-salées/décortiquées)"
+  },
+  {
     "key": "en:roasted-shelled-sunflower-seeds",
     "name": "Graines de tournesol décortiquées grillées"
   },
@@ -134,10 +146,6 @@
   {
     "key": "en:sunflower-seed-grilled-and-salted",
     "name": "Graines de tournesol grillées et salées"
-  },
-  {
-    "key": "fr:grignotage-sale",
-    "name": "Grignotage salé"
   },
   {
     "key": "en:toaster-pastries",
@@ -172,7 +180,7 @@
     "name": "Lotte grillée"
   },
   {
-    "key": "en:duck-brests-cooked-in-pan",
+    "key": "en:duck-breasts-cooked-in-pan",
     "name": "Magrets de canard grillés"
   },
   {
@@ -204,8 +212,16 @@
     "name": "Noix de Cajou grillées"
   },
   {
+    "key": "en:non-roasted-cashew-nuts",
+    "name": "Noix de cajou non-grillées"
+  },
+  {
     "key": "en:grilled-and-salted-macadamia-nut",
     "name": "Noix de macadamia grillée et salée"
+  },
+  {
+    "key": "en:pecan-nuts-roasted-and-salted",
+    "name": "Noix de Pécan grillées et salées"
   },
   {
     "key": "en:grilled-veal-tenderloin",
@@ -272,7 +288,7 @@
     "name": "Petits pains grillés"
   },
   {
-    "key": "en:pistachio-nut-grilled-salted",
+    "key": "en:pistachios-roasted-and-salted",
     "name": "Pistache grillée salée"
   },
   {
@@ -292,7 +308,7 @@
     "name": "Pois grillés salés"
   },
   {
-    "key": "en:grouned-grey-peppers",
+    "key": "en:grounded-grey-peppers",
     "name": "Poivre gris moulu"
   },
   {
@@ -362,5 +378,9 @@
   {
     "key": "en:meat-of-the-grisons",
     "name": "Viande des grisons"
+  },
+  {
+    "key": "en:grilled-veal-meat",
+    "name": "Viandes de veau grillées"
   }
 ]

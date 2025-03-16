@@ -48,6 +48,26 @@
     "name": "Baguettes de tradition française"
   },
   {
+    "key": "en:fresh-bananas",
+    "name": "Bananes fraîches"
+  },
+  {
+    "key": "en:fresh-cavendish-bananas",
+    "name": "Bananes fraîches Cavendish"
+  },
+  {
+    "key": "en:fresh-bananas-from-the-canary-islands",
+    "name": "Bananes fraîches des Canaries"
+  },
+  {
+    "key": "en:fresh-frecinette-bananas",
+    "name": "Bananes frecinettes fraîches"
+  },
+  {
+    "key": "en:fresh-red-bananas",
+    "name": "Bananes rouges fraîches"
+  },
+  {
     "key": "fr:barquettes-a-la-fraise",
     "name": "Barquettes à la fraise"
   },
@@ -80,11 +100,11 @@
     "name": "Beaune premier cru Les Vignes Franches rouge"
   },
   {
-    "key": "fr:beignets-fourres-a-la-framboise",
+    "key": "en:doughnuts-filled-with-raspberries",
     "name": "Beignets fourrés à la framboise"
   },
   {
-    "key": "en:fresh-beet",
+    "key": "en:fresh-beetroot",
     "name": "Betteraves fraîches"
   },
   {
@@ -122,6 +142,10 @@
   {
     "key": "en:fresh-broccoli",
     "name": "Brocolis frais"
+  },
+  {
+    "key": "en:fresh-fennel-bulbs",
+    "name": "Bulbes de fenouil frais"
   },
   {
     "key": "en:fresh-cranberries",
@@ -272,6 +296,10 @@
     "name": "Confiseries de France"
   },
   {
+    "key": "en:rhubarb-strawberry-jams",
+    "name": "Confitures de fraise et de rhubarbe"
+  },
+  {
     "key": "en:strawberry-jams",
     "name": "Confitures de fraises"
   },
@@ -290,6 +318,14 @@
   {
     "key": "en:fresh-squash",
     "name": "Courges fraîches"
+  },
+  {
+    "key": "en:fresh-pumpkins",
+    "name": "Courges fraîches Citrouilles fraîches"
+  },
+  {
+    "key": "en:fresh-spaghetti-squashes",
+    "name": "Courges spaghetti fraîches"
   },
   {
     "key": "en:fresh-zucchini",
@@ -324,6 +360,10 @@
     "name": "Crèmes de cassis françaises"
   },
   {
+    "key": "en:raspberry-liqueurs",
+    "name": "Crèmes de framboise"
+  },
+  {
     "key": "en:refrigerated-creamy-puddings",
     "name": "Crèmes dessert rayon frais"
   },
@@ -340,7 +380,7 @@
     "name": "Crêpes nature rayon frais"
   },
   {
-    "key": "fr:cresson-frais",
+    "key": "en:watercress-fresh",
     "name": "Cresson frais"
   },
   {
@@ -372,16 +412,16 @@
     "name": "Endives fraîches"
   },
   {
+    "key": "fr:entremets-macaron-framboise",
+    "name": "Entremets macaron framboise"
+  },
+  {
     "key": "en:fresh-spinachs",
     "name": "Épinards frais"
   },
   {
     "key": "en:fresh-tarragon",
     "name": "Estragon frais"
-  },
-  {
-    "key": "fr:fenouil-frais",
-    "name": "Fenouil frais"
   },
   {
     "key": "fr:fettucini-aux-oeufs-frais",
@@ -454,6 +494,10 @@
   {
     "key": "en:sponge-sandwich-cake-filled-and-topped-with-strawberries",
     "name": "Fraisier"
+  },
+  {
+    "key": "en:framboise-beers",
+    "name": "Framboise beers"
   },
   {
     "key": "fr:framboise-d-alsace",
@@ -804,11 +848,7 @@
     "name": "Noix de coco mûre fraîche"
   },
   {
-    "key": "en:fresh-walnut",
-    "name": "Noix fraîche"
-  },
-  {
-    "key": "fr:noix-fraiches",
+    "key": "en:fresh-walnuts",
     "name": "Noix fraîches"
   },
   {
@@ -856,7 +896,7 @@
     "name": "Pamplemousses frais"
   },
   {
-    "key": "fr:panais-frais",
+    "key": "en:fresh-parsnip",
     "name": "Panais frais"
   },
   {
@@ -870,6 +910,14 @@
   {
     "key": "en:fresh-papayas",
     "name": "Papayes fraîches"
+  },
+  {
+    "key": "en:fresh-lentil-pasta",
+    "name": "Pâtes de lentille fraîches"
+  },
+  {
+    "key": "en:fresh-chickpea-pasta",
+    "name": "Pâtes de pois chiche fraîches"
   },
   {
     "key": "en:fresh-pasta",
@@ -956,15 +1004,11 @@
     "name": "Pollen frais"
   },
   {
-    "key": "fr:pomelos-frais",
+    "key": "en:fresh-grapefruits",
     "name": "Pomélos frais"
   },
   {
-    "key": "en:fresh-potatoes",
-    "name": "Pommes de terre fraîches"
-  },
-  {
-    "key": "en:french-potatoes",
+    "key": "en:potatoes-from-france",
     "name": "Pommes de terre françaises"
   },
   {
@@ -1020,12 +1064,20 @@
     "name": "Produits carnés français"
   },
   {
+    "key": "en:products-that-cannot-be-found-in-metropolitan-france",
+    "name": "Produits introuvables en Métropole (pour la France)"
+  },
+  {
     "key": "en:fresh-plums",
     "name": "Prunes fraîches"
   },
   {
     "key": "fr:quetsches-fraiches",
     "name": "Quetsches fraîches"
+  },
+  {
+    "key": "en:raw-quinoa-from-france",
+    "name": "Quinoa de France cru"
   },
   {
     "key": "en:fresh-radishes",
@@ -1068,7 +1120,7 @@
     "name": "Rhizomes de gingembre frais"
   },
   {
-    "key": "en:fresh-rhubarbs",
+    "key": "en:fresh-rhubarb",
     "name": "Rhubarbes fraîches"
   },
   {
@@ -1100,7 +1152,7 @@
     "name": "Salades de fruits frais"
   },
   {
-    "key": "fr:salsifis-frais",
+    "key": "en:fresh-salsify",
     "name": "Salsifis frais"
   },
   {
@@ -1192,8 +1244,12 @@
     "name": "Tomates fraîches"
   },
   {
-    "key": "fr:topinambour-frais",
+    "key": "en:fresh-jerusalem-artichoke",
     "name": "Topinambour frais"
+  },
+  {
+    "key": "en:fresh-taro-tubers",
+    "name": "Tubercules de taro fraiches"
   },
   {
     "key": "en:fresh-lemon-verbena",
@@ -1256,12 +1312,20 @@
     "name": "Vins français"
   },
   {
+    "key": "en:french-sparkling-wines",
+    "name": "Vins pétillants français"
+  },
+  {
     "key": "en:french-whisky",
     "name": "Whisky français"
   },
   {
     "key": "en:strawberry-yogurt-drinks",
     "name": "Yaourts à boire goût fraise"
+  },
+  {
+    "key": "en:raspberry-drinkable-yogurts",
+    "name": "Yaourts à boire goût framboise"
   },
   {
     "key": "en:strawberry-yogurts",

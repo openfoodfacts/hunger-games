@@ -16,12 +16,28 @@
     "name": "Arroz con leche"
   },
   {
+    "key": "en:milk-chocolate-bar-with-nougat",
+    "name": "Barra de chocolate con leche y nougat"
+  },
+  {
     "key": "en:fruit-and-milk-beverages",
     "name": "Bebidas de fruta y leche"
   },
   {
     "key": "en:fermented-milk-drinks",
     "name": "Bebidas de leche fermentada"
+  },
+  {
+    "key": "en:coffee-with-milk-with-sugar",
+    "name": "Café con leche con azúcar"
+  },
+  {
+    "key": "en:instant-powder-for-coffee-with-milk",
+    "name": "Café con leche en polvo instantáneo"
+  },
+  {
+    "key": "en:instant-coffee-with-milk-without-sugar",
+    "name": "Café con leche instantáneo sin azúcar"
   },
   {
     "key": "en:milk-chocolates-with-almonds",
@@ -48,7 +64,7 @@
     "name": "Dulce de leche"
   },
   {
-    "key": "es:galletas-con-tableta-de-chocolate-con-leche",
+    "key": "en:biscuit-with-a-milk-chocolate-bar-covering",
     "name": "Galletas con tableta de chocolate con leche"
   },
   {
@@ -68,12 +84,16 @@
     "name": "Helados con leche vegetal"
   },
   {
-    "key": "en:dairy-spread",
+    "key": "en:dairy-spreads",
     "name": "La pasta de leche"
   },
   {
     "key": "es:lechazo-de-castilla-y-leon",
     "name": "Lechazo de Castilla y León"
+  },
+  {
+    "key": "en:high-digestible-milk",
+    "name": "Leche altamente digestible"
   },
   {
     "key": "es:leche-certificada-de-granja",
@@ -88,7 +108,7 @@
     "name": "Leche cruda"
   },
   {
-    "key": "en:unsweetened-natural-almond-milks",
+    "key": "en:unsweetened-plain-almond-based-drinks",
     "name": "Leche de almendras natural sin edulcorar"
   },
   {
@@ -104,15 +124,15 @@
     "name": "Leche de continuación para bebés a partir de 3 años"
   },
   {
-    "key": "de:heumilch",
+    "key": "en:haymilk",
     "name": "Leche de heno"
   },
   {
-    "key": "de:ziegen-heumilch",
+    "key": "en:goat-s-haymilk",
     "name": "Leche de heno de cabra"
   },
   {
-    "key": "de:schaf-heumilch",
+    "key": "en:sheep-s-haymilk",
     "name": "Leche de heno de oveja"
   },
   {
@@ -136,8 +156,12 @@
     "name": "Leche entera"
   },
   {
-    "key": "es:leche-entera-esterilizada",
+    "key": "en:whole-pasteurised-milks",
     "name": "Leche entera esterilizada"
+  },
+  {
+    "key": "en:whole-milk-uht",
+    "name": "Leche entera UHT"
   },
   {
     "key": "en:baby-milks",
@@ -168,7 +192,7 @@
     "name": "Leches de almendra en polvo"
   },
   {
-    "key": "en:almond-milks",
+    "key": "en:almond-based-drinks",
     "name": "Leches de almendras"
   },
   {
@@ -184,7 +208,7 @@
     "name": "Leches de avellana en polvo"
   },
   {
-    "key": "en:hazelnut-milks",
+    "key": "en:hazelnut-based-drinks",
     "name": "Leches de avellanas"
   },
   {
@@ -196,7 +220,7 @@
     "name": "Leches de castaña en polvo"
   },
   {
-    "key": "en:chestnut-milks",
+    "key": "en:chestnut-based-drinks",
     "name": "Leches de castañas"
   },
   {
@@ -208,11 +232,11 @@
     "name": "Leches de chocolate"
   },
   {
-    "key": "en:tigernut-milks",
+    "key": "en:tigernut-based-drinks",
     "name": "Leches de chufa"
   },
   {
-    "key": "en:coconut-milks",
+    "key": "en:coconut-milks-and-creams",
     "name": "Leches de coco"
   },
   {
@@ -220,7 +244,7 @@
     "name": "Leches de espelta en polvo"
   },
   {
-    "key": "en:nut-milks",
+    "key": "en:nut-based-drinks",
     "name": "Leches de frutos de cáscara"
   },
   {
@@ -228,7 +252,7 @@
     "name": "Leches de frutos de cáscara en polvo"
   },
   {
-    "key": "en:legume-milks",
+    "key": "en:legume-based-drinks",
     "name": "Leches de leguminosas"
   },
   {
@@ -240,11 +264,11 @@
     "name": "Leches de mijo en polvo"
   },
   {
-    "key": "en:walnut-milks",
+    "key": "en:walnut-based-drinks",
     "name": "Leches de nueces"
   },
   {
-    "key": "en:macadamia-nut-milks",
+    "key": "en:macadamia-nut-based-drinks",
     "name": "Leches de nueces de macadamia"
   },
   {
@@ -292,6 +316,14 @@
     "name": "Leches homogeneizadas"
   },
   {
+    "key": "en:microfiltered-milks",
+    "name": "Leches microfiltradas"
+  },
+  {
+    "key": "en:milks-for-premature-babies",
+    "name": "Leches para bebés prematuros"
+  },
+  {
     "key": "en:pasteurised-milks",
     "name": "Leches pasteurizadas"
   },
@@ -308,12 +340,24 @@
     "name": "Lechuga iceberg"
   },
   {
+    "key": "en:lecithin",
+    "name": "Lecithin"
+  },
+  {
     "key": "en:soy-lecithin",
     "name": "Lecitina de soja"
   },
   {
+    "key": "en:lecso",
+    "name": "Lecsó"
+  },
+  {
     "key": "en:mixed-plant-milks",
     "name": "Mezclas de leches vegetales"
+  },
+  {
+    "key": "en:milk-chocolate-molds",
+    "name": "Moldes de chocolate con leche"
   },
   {
     "key": "en:milk-bread-rolls",
@@ -350,6 +394,10 @@
   {
     "key": "en:semolina-puddings",
     "name": "Sémolas de leche"
+  },
+  {
+    "key": "en:sunflower-lecithin",
+    "name": "Sunflower lecithin"
   },
   {
     "key": "en:milk-substitutes",

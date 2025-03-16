@@ -1,9 +1,5 @@
 [
   {
-    "key": "en:5-beer",
-    "name": "5% beer"
-  },
-  {
     "key": "en:50-63-blended-fat-with-vegetable-and-animal-origins",
     "name": "50-63% blended fat with vegetable and animal origins"
   },
@@ -30,6 +26,10 @@
   {
     "key": "en:50-63-unsalted-vegetable-fat-with-plant-sterols-esters",
     "name": "50-63% unsalted vegetable fat with plant sterols esters"
+  },
+  {
+    "key": "en:5-beer",
+    "name": "Bier met 5% alcohol"
   },
   {
     "key": "en:carbonated-fruit-soft-drinks-with-sugar-with-10-50-of-fruit-juice",
@@ -82,5 +82,9 @@
   {
     "key": "en:still-fruit-soft-drink-with-sugar-and-with-10-50-of-fruit-juice",
     "name": "Still fruit soft drink with sugar and with 10-50% of fruit juice"
+  },
+  {
+    "key": "en:wheat-flour-type-55-for-bread",
+    "name": "Witte tarwebloem 550"
   }
 ]

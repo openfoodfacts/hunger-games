@@ -12,6 +12,10 @@
     "name": "Barre au chocolat sans biscuit"
   },
   {
+    "key": "en:non-alcoholic-organic-beers",
+    "name": "Bières biologiques sans alcool"
+  },
+  {
     "key": "en:non-alcoholic-wheat-beers",
     "name": "Bières de blé sans alcool"
   },
@@ -24,8 +28,8 @@
     "name": "Bières sans gluten"
   },
   {
-    "key": "en:unsalted-rusk",
-    "name": "Biscotte sans adjonction de sel"
+    "key": "en:rusks-without-salt",
+    "name": "Biscottes sans sel"
   },
   {
     "key": "en:gluten-free-biscuits",
@@ -76,6 +80,10 @@
     "name": "Boissons sans sucre ajouté"
   },
   {
+    "key": "en:sugarfree-candies",
+    "name": "Bonbons sans sucre"
+  },
+  {
     "key": "en:breakfast-sandwich",
     "name": "Breakfast sandwich"
   },
@@ -110,6 +118,10 @@
   {
     "key": "en:sauerkraut-without-garnish",
     "name": "Choucroutes sans garniture"
+  },
+  {
+    "key": "en:non-alcoholic-ciders",
+    "name": "Cidres sans alcool"
   },
   {
     "key": "fr:civet-de-sanglier",
@@ -168,6 +180,22 @@
     "name": "Daïquiri sans alcool"
   },
   {
+    "key": "en:fat-free-fermented-dairy-desserts-with-fruits-and-sweeteners-fortified-with-vitamin-d",
+    "name": "Desserts lactés fermentés aux fruits édulcorés sans matière grasse enrichis en vitamine D"
+  },
+  {
+    "key": "en:fat-free-fermented-dairy-desserts-with-fruits-and-sweeteners",
+    "name": "Desserts lactés fermentés édulcorés aux fruits sans matière grasse"
+  },
+  {
+    "key": "en:fat-free-fermented-dairy-desserts-with-sweeteners",
+    "name": "Desserts lactés fermentés édulcorés sans matière grasse"
+  },
+  {
+    "key": "en:fat-free-plain-fermented-dairy-desserts",
+    "name": "Desserts lactés fermentés nature sans matière grasse"
+  },
+  {
     "key": "en:hairy-crabgrass",
     "name": "Digitaire sanguine"
   },
@@ -192,8 +220,16 @@
     "name": "Goûter sec fourré (sandwiché) parfum chocolat"
   },
   {
+    "key": "en:healthy-french-bread-sandwiches",
+    "name": "Healthy french bread sandwiches"
+  },
+  {
     "key": "en:horseshoe-sandwich",
     "name": "Horseshoe sandwich"
+  },
+  {
+    "key": "en:non-alcoholic-ipa",
+    "name": "IPA sans alcool"
   },
   {
     "key": "en:hams-of-san-daniele",
@@ -204,7 +240,7 @@
     "name": "Jus d'orange sanguine"
   },
   {
-    "key": "fr:jus-d-orange-sans-pulpe",
+    "key": "en:orange-juices-without-pulp",
     "name": "Jus d'orange sans pulpe"
   },
   {
@@ -256,8 +292,20 @@
     "name": "Muesli floconneux aux fruits sans sucres ajoutés"
   },
   {
+    "key": "en:crunchy-mueslis-without-fruits",
+    "name": "Mueslis croustillants sans fruits"
+  },
+  {
+    "key": "en:unsalted-hazelnuts",
+    "name": "Noisettes sans sel"
+  },
+  {
     "key": "en:egg-free-spanish-omelettes",
     "name": "Omelettes espagnoles sans oeuf"
+  },
+  {
+    "key": "en:blood-oranges",
+    "name": "Oranges sanguines"
   },
   {
     "key": "en:sliced-breads-without-crust",
@@ -300,6 +348,14 @@
     "name": "Petits pots aux fruits sans banane pour bébé"
   },
   {
+    "key": "en:unsalted-pistachios",
+    "name": "Pistaches sans sel"
+  },
+  {
+    "key": "en:ploughman-s-sandwich",
+    "name": "Ploughman's sandwich"
+  },
+  {
     "key": "en:frozen-pan-fried-vegetables-without-mushrooms",
     "name": "Poêlée de légumes assaisonnés surgelée sans champignons"
   },
@@ -310,10 +366,6 @@
   {
     "key": "en:boiled-peeled-ware-potatoes",
     "name": "Pommes de terre de conservation sans peau bouillies"
-  },
-  {
-    "key": "en:peeled-boiled-early-potato",
-    "name": "Pommes de terre primeur sans peau bouillies"
   },
   {
     "key": "en:peeled-potatoes",
@@ -340,6 +392,14 @@
     "name": "Poulet filet sans peau cru"
   },
   {
+    "key": "en:frozen-chicken-breast-without-skin-raw",
+    "name": "Poulet filet sans peau cru surgelé"
+  },
+  {
+    "key": "en:gluten-free-bread-mixes",
+    "name": "Préparations pour pain sans gluten"
+  },
+  {
     "key": "en:products-without-gluten",
     "name": "Produits sans gluten"
   },
@@ -356,12 +416,12 @@
     "name": "Raisins sans pépins"
   },
   {
-    "key": "en:raw-vegetable-sandwiches",
-    "name": "Raw vegetable sandwiches"
-  },
-  {
     "key": "en:wild-boar-rillettes",
     "name": "Rillettes de sanglier"
+  },
+  {
+    "key": "en:sant-andrea-rices",
+    "name": "Riz Sant'Andrea"
   },
   {
     "key": "en:sana",
@@ -376,7 +436,7 @@
     "name": "Sandre"
   },
   {
-    "key": "fr:sandwich-aux-oeufs",
+    "key": "en:egg-sandwiches",
     "name": "Sandwich aux œufs"
   },
   {
@@ -488,6 +548,14 @@
     "name": "Sandwiches à la crème glacée végétale"
   },
   {
+    "key": "en:sausage-bacon-and-egg-sandwiches",
+    "name": "Sandwiches saucisse bacon et œuf"
+  },
+  {
+    "key": "en:sandwiches-with-sweet-fillings",
+    "name": "Sandwiches with sweet fillings"
+  },
+  {
     "key": "en:sandwiches",
     "name": "Sandwichs"
   },
@@ -592,7 +660,7 @@
     "name": "Sandwichs au thon"
   },
   {
-    "key": "en:vegetable-sandwiches",
+    "key": "en:raw-vegetable-sandwiches",
     "name": "Sandwichs aux crudités"
   },
   {
@@ -646,6 +714,10 @@
   {
     "key": "en:baguette-sandwiches-with-dry-sausage-and-butter",
     "name": "Sandwichs saucisson beurre"
+  },
+  {
+    "key": "en:frozen-sandwiches",
+    "name": "Sandwichs surgelés"
   },
   {
     "key": "en:beef-blood",
@@ -840,10 +912,6 @@
     "name": "Saucissons secs sans porc"
   },
   {
-    "key": "en:sausage-bacon-and-egg-sandwiches",
-    "name": "Sausage bacon and egg sandwiches"
-  },
-  {
     "key": "en:sugar-free-flavoured-syrups",
     "name": "Sirops aromatisés sans sucre"
   },
@@ -858,10 +926,6 @@
   {
     "key": "en:gluten-free-tagliatelles",
     "name": "Tagliatelles sans gluten"
-  },
-  {
-    "key": "en:seafood-terrine-with-or-without-fish",
-    "name": "Terrine de fruits de mer avec ou sans poisson"
   },
   {
     "key": "en:seafood-terrine-without-fish",
@@ -896,7 +960,7 @@
     "name": "Volnay premier cru Santenots"
   },
   {
-    "key": "fr:yaourts-a-boire-sans-sucres",
+    "key": "en:yogurt-drinks-without-sugar",
     "name": "Yaourts à boire sans sucres"
   },
   {

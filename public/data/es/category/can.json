@@ -24,16 +24,12 @@
     "name": "Azúcar de caña"
   },
   {
-    "key": "en:hemp-milks",
+    "key": "en:hemp-based-drinks",
     "name": "Bebidas de cáñamo"
   },
   {
-    "key": "en:beef-cannelloni",
-    "name": "Beef Cannelloni"
-  },
-  {
-    "key": "en:bolognese-cannelloni",
-    "name": "Bolognese Cannelloni"
+    "key": "en:cantal-cheese-sandwiches",
+    "name": "Bocadillos de queso Cantal"
   },
   {
     "key": "en:canada-apple-pulp",
@@ -48,16 +44,32 @@
     "name": "Canadian whiskeys"
   },
   {
+    "key": "en:salted-canapes",
+    "name": "Canapés salados"
+  },
+  {
     "key": "en:cancoillottes",
     "name": "Cancoillottes"
   },
   {
-    "key": "en:candied-lemon",
-    "name": "Candied lemon"
+    "key": "en:candied-bananas",
+    "name": "Candied bananas"
+  },
+  {
+    "key": "en:candied-lemon-zest",
+    "name": "Candied lemon zest"
+  },
+  {
+    "key": "en:candied-lime",
+    "name": "Candied lime"
   },
   {
     "key": "en:candied-orange-zest",
     "name": "Candied orange zest"
+  },
+  {
+    "key": "en:candied-peel",
+    "name": "Candied peel"
   },
   {
     "key": "en:candy-canes",
@@ -88,6 +100,10 @@
     "name": "Canelones"
   },
   {
+    "key": "en:vegetarian-cannelloni",
+    "name": "Canelones vegetarianos"
+  },
+  {
     "key": "en:canestrelli",
     "name": "Canestrelli"
   },
@@ -98,6 +114,14 @@
   {
     "key": "en:crab",
     "name": "Cangrejo"
+  },
+  {
+    "key": "en:spider-crab",
+    "name": "Cangrejo araña"
+  },
+  {
+    "key": "en:frozen-cooked-crab",
+    "name": "Cangrejo cocido congelado"
   },
   {
     "key": "en:canistrelli",
@@ -120,8 +144,8 @@
     "name": "Canned artichoke hearts"
   },
   {
-    "key": "en:canned-bamboo-shoots",
-    "name": "Canned bamboo shoots"
+    "key": "en:canned-barbunya",
+    "name": "Canned Barbunya"
   },
   {
     "key": "en:canned-belgian-endives",
@@ -150,6 +174,10 @@
   {
     "key": "en:canned-chocolate-creamy-puddings",
     "name": "Canned chocolate creamy puddings"
+  },
+  {
+    "key": "en:canned-coco-white-beans",
+    "name": "Canned coco white beans"
   },
   {
     "key": "en:canned-cod-liver",
@@ -212,6 +240,14 @@
     "name": "Canned fruit cocktail in syrup not drained"
   },
   {
+    "key": "en:canned-game",
+    "name": "Canned game"
+  },
+  {
+    "key": "en:canned-green-cabbage",
+    "name": "Canned green cabbage"
+  },
+  {
     "key": "en:canned-haricot-beans-with-tomato-sauce",
     "name": "Canned haricot beans with tomato sauce"
   },
@@ -220,8 +256,16 @@
     "name": "Canned jackfruit"
   },
   {
+    "key": "en:canned-meals-with-meat",
+    "name": "Canned meals with meat"
+  },
+  {
     "key": "en:canned-mussels-in-catalan-sauce",
     "name": "Canned mussels in Catalan sauce"
+  },
+  {
+    "key": "en:canned-okras",
+    "name": "Canned okras"
   },
   {
     "key": "en:canned-pacific-sauries",
@@ -248,6 +292,10 @@
     "name": "Canned pineapple in pineapple juice and syrup not drained"
   },
   {
+    "key": "en:canned-poultries",
+    "name": "Canned poultries"
+  },
+  {
     "key": "en:canned-prepared-mixed-tuna-and-vegetable-salad",
     "name": "Canned prepared mixed tuna and vegetable salad"
   },
@@ -264,6 +312,10 @@
     "name": "Canned raviolis filled with meat in tomato sauce"
   },
   {
+    "key": "en:canned-red-cabbage",
+    "name": "Canned red cabbage"
+  },
+  {
     "key": "en:canned-rice-puddings",
     "name": "Canned rice puddings"
   },
@@ -274,6 +326,18 @@
   {
     "key": "en:canned-semolina-puddings",
     "name": "Canned semolina puddings"
+  },
+  {
+    "key": "en:canned-sheep-meat",
+    "name": "Canned sheep meat"
+  },
+  {
+    "key": "en:canned-sorrel",
+    "name": "Canned sorrel"
+  },
+  {
+    "key": "en:canned-squash",
+    "name": "Canned squash"
   },
   {
     "key": "en:canned-tartiflettes",
@@ -296,32 +360,48 @@
     "name": "Canned vanilla puddings"
   },
   {
+    "key": "en:canned-veal-meat",
+    "name": "Canned veal meat"
+  },
+  {
     "key": "en:canned-vegetable-ravioli",
     "name": "Canned vegetable ravioli"
   },
   {
+    "key": "en:canned-white-cabbage",
+    "name": "Canned white cabbage"
+  },
+  {
+    "key": "en:bolognese-cannelloni",
+    "name": "Cannelloni a la boloñesa"
+  },
+  {
+    "key": "en:cannelloni-with-goat-cheese-and-spinach",
+    "name": "Cannelloni con queso de cabra y espinacas"
+  },
+  {
+    "key": "en:cannelloni-with-vegetables",
+    "name": "Cannelloni con verduras"
+  },
+  {
     "key": "en:cannelloni-with-cooked-vegetables",
-    "name": "Cannelloni with cooked vegetables"
+    "name": "Cannelloni con verduras cocidas"
+  },
+  {
+    "key": "en:beef-cannelloni",
+    "name": "Cannelloni de carne de vacuno"
+  },
+  {
+    "key": "en:cannelloni-with-fish",
+    "name": "Cannelloni de pescado"
   },
   {
     "key": "en:cannelloni-with-cooked-vegetables-and-goat-cheese",
     "name": "Cannelloni with cooked vegetables and goat cheese"
   },
   {
-    "key": "en:cannelloni-with-fish",
-    "name": "Cannelloni with fish"
-  },
-  {
-    "key": "en:cannelloni-with-goat-cheese-and-spinach",
-    "name": "Cannelloni with goat cheese and spinach"
-  },
-  {
     "key": "en:cannelloni-with-ricotta-and-spinach",
     "name": "Cannelloni with ricotta and spinach"
-  },
-  {
-    "key": "en:cannelloni-with-vegetables",
-    "name": "Cannelloni with vegetables"
   },
   {
     "key": "en:corn-salad",
@@ -330,10 +410,6 @@
   {
     "key": "en:cantal",
     "name": "Cantal"
-  },
-  {
-    "key": "en:cantal-cheese-sandwiches",
-    "name": "Cantal cheese sandwiches"
   },
   {
     "key": "en:cantal-salers",
@@ -368,12 +444,12 @@
     "name": "Costa de Cantabria"
   },
   {
-    "key": "en:cotton-candy-sugars",
-    "name": "Cotton candy sugars"
-  },
-  {
     "key": "en:french-candies",
     "name": "French candies"
+  },
+  {
+    "key": "en:fresh-bananas-from-the-canary-islands",
+    "name": "Fresh Bananas from the Canary Islands"
   },
   {
     "key": "es:gofio-canario",
@@ -390,6 +466,10 @@
   {
     "key": "en:honey-candies",
     "name": "Honey candies"
+  },
+  {
+    "key": "en:ice-cream-candy-chocolate-bars",
+    "name": "Ice cream candy chocolate bars"
   },
   {
     "key": "es:islas-canarias",
@@ -440,7 +520,7 @@
     "name": "Placas de trigo duro para canelones integrales o semi-integrales"
   },
   {
-    "key": "es:platano-de-canarias",
+    "key": "en:bananas-from-the-canary-islands",
     "name": "Plátano de Canarias"
   },
   {
@@ -454,6 +534,10 @@
   {
     "key": "en:prepared-and-canned-salad-with-meat",
     "name": "Prepared and canned salad with meat"
+  },
+  {
+    "key": "en:products-that-cannot-be-found-in-metropolitan-france",
+    "name": "Products that cannot be found in metropolitan France"
   },
   {
     "key": "es:queso-nata-de-cantabria",
@@ -472,10 +556,6 @@
     "name": "Root beer barrels candies"
   },
   {
-    "key": "en:salted-canapes",
-    "name": "Salted canapés"
-  },
-  {
     "key": "en:salty-canistrelli",
     "name": "Salty canistrelli"
   },
@@ -488,16 +568,16 @@
     "name": "Soft caramel candy"
   },
   {
+    "key": "en:sweet-liquorice-candies",
+    "name": "Sweet liquorice candies"
+  },
+  {
     "key": "en:syrup-for-canned-fruits",
     "name": "Syrup for canned fruits"
   },
   {
     "key": "es:tomate-la-canada",
     "name": "Tomate La Cañada"
-  },
-  {
-    "key": "en:vegetarian-cannelloni",
-    "name": "Vegetarian cannelloni"
   },
   {
     "key": "en:wines-from-canada",

@@ -12,15 +12,15 @@
     "name": "Bière de gingembre"
   },
   {
-    "key": "en:double-beer",
+    "key": "en:belgian-style-dubbel-ales",
     "name": "Bière double"
   },
   {
-    "key": "en:quadruple-beer",
+    "key": "en:quadruple-ales",
     "name": "Bière quadruple"
   },
   {
-    "key": "en:triple-beer",
+    "key": "en:triple-ales",
     "name": "Bière triple"
   },
   {
@@ -28,7 +28,7 @@
     "name": "Bières"
   },
   {
-    "key": "en:cherry-beers",
+    "key": "en:cherry-kriek-beers",
     "name": "Bières à la cerise"
   },
   {
@@ -76,15 +76,19 @@
     "name": "Bières bio"
   },
   {
+    "key": "en:non-alcoholic-organic-beers",
+    "name": "Bières biologiques sans alcool"
+  },
+  {
     "key": "en:wheat-beers",
     "name": "Bières blanches"
   },
   {
-    "key": "en:lagers",
+    "key": "en:blonde-ales",
     "name": "Bières blondes"
   },
   {
-    "key": "fr:bieres-blondes-pur-malt",
+    "key": "en:pure-malt-blond-beers",
     "name": "Bières blondes pur malt"
   },
   {
@@ -104,19 +108,23 @@
     "name": "Bières corses"
   },
   {
-    "key": "en:abbey-beer",
+    "key": "en:abbey-ales",
     "name": "Bières d'abbayes"
+  },
+  {
+    "key": "en:oktoberfest-beers",
+    "name": "Bières d'Oktoberfest"
   },
   {
     "key": "en:non-alcoholic-wheat-beers",
     "name": "Bières de blé sans alcool"
   },
   {
-    "key": "fr:bieres-de-garde",
+    "key": "en:french-style-pale-ale",
     "name": "Bières de garde"
   },
   {
-    "key": "fr:bieres-de-noel",
+    "key": "en:christmas-beers",
     "name": "Bières de Noël"
   },
   {
@@ -128,7 +136,19 @@
     "name": "Bières du Royaume Uni"
   },
   {
-    "key": "en:beers-with-low-alcohol-content",
+    "key": "en:scottish-beers",
+    "name": "Bières écossaises"
+  },
+  {
+    "key": "en:spanish-beers",
+    "name": "Bières espagnoles"
+  },
+  {
+    "key": "en:estonian-beers",
+    "name": "Bières estoniennes"
+  },
+  {
+    "key": "en:light-beers",
     "name": "Bières faiblement alcoolisées"
   },
   {
@@ -144,7 +164,15 @@
     "name": "Bières françaises"
   },
   {
-    "key": "en:beers-from-ireland",
+    "key": "en:industrial-beer",
+    "name": "Bieres industrielles"
+  },
+  {
+    "key": "ca:cervesa-ipa",
+    "name": "Bières IPA"
+  },
+  {
+    "key": "en:irish-beers",
     "name": "Bières irlandaises"
   },
   {
@@ -152,19 +180,43 @@
     "name": "Bières italiennes"
   },
   {
+    "key": "en:latvian-beers",
+    "name": "Bières lettones"
+  },
+  {
     "key": "en:lithuanian-beers",
     "name": "Bières lituaniennes"
+  },
+  {
+    "key": "en:dutch-beers",
+    "name": "Bières néerlandaises"
   },
   {
     "key": "en:black-beers",
     "name": "Bières noires"
   },
   {
-    "key": "fr:bieres-pur-malt",
+    "key": "en:unfiltered-beers",
+    "name": "Bières non filtrées"
+  },
+  {
+    "key": "en:unpasteurized-beers",
+    "name": "Bières non pasteurisées"
+  },
+  {
+    "key": "en:beers-from-poland",
+    "name": "Bières polonaises"
+  },
+  {
+    "key": "en:pure-malt-beers",
     "name": "Bières pur malt"
   },
   {
-    "key": "en:red-beers",
+    "key": "en:regional-beers",
+    "name": "Bières régionales"
+  },
+  {
+    "key": "en:red-ales",
     "name": "Bières rousses"
   },
   {
@@ -180,12 +232,28 @@
     "name": "Bières spéciales à 5° d'alcool"
   },
   {
+    "key": "en:swedish-beers",
+    "name": "Bières suédoises"
+  },
+  {
+    "key": "en:trappist-beers",
+    "name": "Bières trappistes"
+  },
+  {
     "key": "en:beer-based-alcoholic-beverages",
     "name": "Boissons alcoolisées à base de bière"
   },
   {
-    "key": "en:beer-jams",
+    "key": "en:beer-spreads",
     "name": "Confits de bière"
+  },
+  {
+    "key": "en:beer-jams",
+    "name": "Confiture de bière"
+  },
+  {
+    "key": "en:beer-jellies",
+    "name": "Gelées de bière"
   },
   {
     "key": "en:yeast",
@@ -194,5 +262,9 @@
   {
     "key": "en:beer-sausages",
     "name": "Saucisses de bière"
+  },
+  {
+    "key": "en:beer-vinegars",
+    "name": "Vinaigres de bière"
   }
 ]

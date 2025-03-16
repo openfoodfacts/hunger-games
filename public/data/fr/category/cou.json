@@ -48,8 +48,20 @@
     "name": "Bourgogne-coulanges-la-vineuse"
   },
   {
+    "key": "fr:cou-de-poulet",
+    "name": "Cou de poulet"
+  },
+  {
+    "key": "fr:cou-de-poulet-surgele",
+    "name": "Cou de poulet surgelé"
+  },
+  {
     "key": "en:pork-rind",
     "name": "Couenne de porc"
+  },
+  {
+    "key": "en:fried-pork-rind",
+    "name": "Couennes de porc frites"
   },
   {
     "key": "en:bigeye-scad",
@@ -80,6 +92,10 @@
     "name": "Coulis de fruits rouges"
   },
   {
+    "key": "en:frozen-fruits-coulis",
+    "name": "Coulis de fruits surgelés"
+  },
+  {
     "key": "en:mango-coulis",
     "name": "Coulis de mangue"
   },
@@ -94,6 +110,10 @@
   {
     "key": "en:coulommiers",
     "name": "Coulommiers"
+  },
+  {
+    "key": "en:country-specific-beers",
+    "name": "Country specific beers"
   },
   {
     "key": "en:goblet-of-coffee-ice-cream-topped-with-whipped-cream",
@@ -120,8 +140,12 @@
     "name": "Courge"
   },
   {
-    "key": "en:squash-pulp",
-    "name": "Courge musquée"
+    "key": "en:canned-squash",
+    "name": "Courge en conserve"
+  },
+  {
+    "key": "en:squash-pickles",
+    "name": "Courge marinée"
   },
   {
     "key": "en:pumpkins",
@@ -140,8 +164,16 @@
     "name": "Courges fraîches"
   },
   {
+    "key": "en:fresh-pumpkins",
+    "name": "Courges fraîches Citrouilles fraîches"
+  },
+  {
     "key": "en:spaghetti-squashes",
     "name": "Courges spaghetti"
+  },
+  {
+    "key": "en:fresh-spaghetti-squashes",
+    "name": "Courges spaghetti fraîches"
   },
   {
     "key": "en:zucchini",
@@ -260,6 +292,10 @@
     "name": "Graines de courge grillées"
   },
   {
+    "key": "en:pumpkin-seeds-non-roasted-shelled-unsalted",
+    "name": "Graines de courge(non-grillées/non-salées/décortiquées)"
+  },
+  {
     "key": "en:pumpkin-seed-oils",
     "name": "Huiles de pépins de courge"
   },
@@ -296,12 +332,16 @@
     "name": "Produits de la plante de courge"
   },
   {
-    "key": "en:sweet-green-hokkaido-squash",
+    "key": "en:sweet-green-hokkaido-pulp",
     "name": "Pulpe de courge hokkaïdo"
   },
   {
     "key": "en:pulp-of-melonnette-jaspee-from-vendee",
     "name": "Pulpe de courge melonnette"
+  },
+  {
+    "key": "en:squash-pulp",
+    "name": "Pulpe de courge musquée"
   },
   {
     "key": "en:spaghetti-squash-pulp",
@@ -346,6 +386,10 @@
   {
     "key": "en:zucchini-soups",
     "name": "Soupes aux courgettes"
+  },
+  {
+    "key": "en:fruit-tartlets",
+    "name": "Tartelettes aux fruits entiers ou coupés"
   },
   {
     "key": "en:cream-of-zucchini-soups",

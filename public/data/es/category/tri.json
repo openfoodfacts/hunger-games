@@ -8,15 +8,15 @@
     "name": "Almidón de trigo"
   },
   {
-    "key": "en:wheat-milks",
+    "key": "en:wheat-based-drinks",
     "name": "Bebidas de trigo"
   },
   {
-    "key": "en:khorasan-wheat-milks",
+    "key": "en:khorasan-wheat-based-drinks",
     "name": "Bebidas de trigo de Jorasán"
   },
   {
-    "key": "en:buckwheat-milks",
+    "key": "en:buckwheat-based-drinks",
     "name": "Bebidas de trigo sarraceno"
   },
   {
@@ -50,10 +50,6 @@
   {
     "key": "en:spirals-of-durum-wheat",
     "name": "Espirales de trigo duro"
-  },
-  {
-    "key": "en:whole-or-semi-whole-durum-wheat-spirals",
-    "name": "Espirales de trigo duro integrales o semi-integrales"
   },
   {
     "key": "es:estrellas-de-trigo-duro",
@@ -404,8 +400,12 @@
     "name": "Tripe dishes"
   },
   {
-    "key": "en:triple-beer",
-    "name": "Triple beer"
+    "key": "en:triple-ales",
+    "name": "Triple ales"
+  },
+  {
+    "key": "en:triple-ipa",
+    "name": "Triple IPA"
   },
   {
     "key": "en:tripoux",

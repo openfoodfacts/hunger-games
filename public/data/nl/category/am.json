@@ -12,7 +12,7 @@
     "name": "Amandelcreme voor koken"
   },
   {
-    "key": "en:almond-milks",
+    "key": "en:almond-based-drinks",
     "name": "Amandeldranken"
   },
   {
@@ -24,12 +24,60 @@
     "name": "Amandelen"
   },
   {
-    "key": "en:chocolate-covered-almonds",
+    "key": "en:flavoured-almonds",
+    "name": "Amandelen (gearomatiseerd)"
+  },
+  {
+    "key": "en:blanched-almonds",
+    "name": "Amandelen (geblancheerd)"
+  },
+  {
+    "key": "en:shelled-almonds",
+    "name": "Amandelen (gepeld)"
+  },
+  {
+    "key": "en:salted-almonds",
+    "name": "Amandelen (gezouten)"
+  },
+  {
+    "key": "en:whole-almonds",
+    "name": "Amandelen (heel)"
+  },
+  {
+    "key": "en:non-blanched-almonds",
+    "name": "Amandelen (niet geblancheerd)"
+  },
+  {
+    "key": "en:unroasted-almonds",
+    "name": "Amandelen (ongegrild)"
+  },
+  {
+    "key": "en:chocolate-coated-almonds",
     "name": "Amandelen in chocolade"
+  },
+  {
+    "key": "en:smoked-almonds",
+    "name": "Amandelen(gerookt)"
+  },
+  {
+    "key": "en:roasted-and-salted-almonds",
+    "name": "Amandelen(geroosterd en gezouten)"
+  },
+  {
+    "key": "en:unshelled-almonds",
+    "name": "Amandelen(ongepeld)"
+  },
+  {
+    "key": "en:unsalted-almonds",
+    "name": "Amandelen(ongezouten)"
   },
   {
     "key": "en:almond-cookies",
     "name": "Amandelkoekjes"
+  },
+  {
+    "key": "en:almond-paste",
+    "name": "Amandelmarsepein"
   },
   {
     "key": "en:almond-oils",
@@ -40,15 +88,11 @@
     "name": "Amandelolijven"
   },
   {
-    "key": "en:almond-paste",
-    "name": "Amandelpasta"
-  },
-  {
     "key": "en:almond-butters",
     "name": "Amandelpasta's"
   },
   {
-    "key": "en:almonds-spreads",
+    "key": "en:almond-spreads",
     "name": "Amandelpastas"
   },
   {
@@ -64,6 +108,10 @@
     "name": "Amandelturrón"
   },
   {
+    "key": "en:amandine-potatoes",
+    "name": "Amandine aardappelen"
+  },
+  {
     "key": "en:amaranth",
     "name": "Amaranth"
   },
@@ -72,7 +120,7 @@
     "name": "Amaranthdranken in poedervorm"
   },
   {
-    "key": "en:amaranth-milks",
+    "key": "en:amaranth-based-drinks",
     "name": "Amaranthmelken"
   },
   {
@@ -116,6 +164,14 @@
     "name": "Amber esdoornstropen"
   },
   {
+    "key": "en:amber-ipa",
+    "name": "Amber IPA"
+  },
+  {
+    "key": "en:amchoor",
+    "name": "Amchoor"
+  },
+  {
     "key": "en:american-bass",
     "name": "American bass"
   },
@@ -126,6 +182,18 @@
   {
     "key": "en:american-sea-scallop-without-coral",
     "name": "American sea scallop without coral"
+  },
+  {
+    "key": "en:american-style-blonde-ales",
+    "name": "American-style blonde ales"
+  },
+  {
+    "key": "en:american-style-ipa",
+    "name": "American-style IPA"
+  },
+  {
+    "key": "en:american-style-pale-ale-apa",
+    "name": "American-style Pale Ale (APA)"
   },
   {
     "key": "en:american-style-sauces",
@@ -140,6 +208,10 @@
     "name": "Amerikaanse wijnen"
   },
   {
+    "key": "en:indian-goosberry-powders",
+    "name": "Amla poeders"
+  },
+  {
     "key": "en:amynteo",
     "name": "Amynteo"
   },
@@ -152,6 +224,10 @@
     "name": "Chocolade met amandelpasta"
   },
   {
+    "key": "en:croissant-with-almonds-from-bakery",
+    "name": "Croissants met amandelen van de bakker"
+  },
+  {
     "key": "nl:filet-americain",
     "name": "Filet Americain"
   },
@@ -160,24 +236,12 @@
     "name": "Fourme d'Ambert cheese from cow's milk"
   },
   {
-    "key": "en:caramelized-almonds",
-    "name": "Gecarameliseerde amandelen"
+    "key": "en:roasted-almonds",
+    "name": "Gegrilde amandelen"
   },
   {
-    "key": "en:grilled-almonds",
-    "name": "Gegrilde amandel"
-  },
-  {
-    "key": "en:almond-meal",
-    "name": "Gemalen amandels"
-  },
-  {
-    "key": "en:shelled-almonds",
-    "name": "Gepelde amandelen"
-  },
-  {
-    "key": "en:salted-almonds",
-    "name": "Gezouten amandelen"
+    "key": "en:ground-almonds",
+    "name": "Gemalen amandelen"
   },
   {
     "key": "en:koufeta-amygdalou-geroskipou",
@@ -188,8 +252,16 @@
     "name": "Kouign-amann"
   },
   {
+    "key": "en:marcona-almonds",
+    "name": "Marcona amandelen"
+  },
+  {
     "key": "en:milk-chocolates-with-almonds",
     "name": "Melkchocola met amandelen"
+  },
+  {
+    "key": "en:pear-tart-with-almonds",
+    "name": "Perentaart met amandelen"
   },
   {
     "key": "en:puffed-amaranth",
@@ -212,7 +284,7 @@
     "name": "Wijnen uit Ambt Delden"
   },
   {
-    "key": "en:white-almond-purees",
+    "key": "en:white-almond-butters",
     "name": "Witte amandelpasta's"
   }
 ]

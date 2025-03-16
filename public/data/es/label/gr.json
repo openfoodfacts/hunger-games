@@ -48,6 +48,14 @@
     "name": "65% menos de grasa"
   },
   {
+    "key": "en:australian-grown",
+    "name": "Australian grown"
+  },
+  {
+    "key": "en:low-saturated-fat",
+    "name": "Bajo contenido de grasas saturadas"
+  },
+  {
     "key": "en:low-fat",
     "name": "Bajo en grasas"
   },
@@ -56,24 +64,32 @@
     "name": "Bajo o sin grasas"
   },
   {
+    "key": "fr:porc-fermier-eleve-en-plein-air",
+    "name": "Cerdo de granja criado al aire libre"
+  },
+  {
     "key": "en:rich-in-polyunsaturated-fatty-acids",
     "name": "Con valiosos ácidos grasos poliinsaturados"
   },
   {
-    "key": "en:crossed-grain-symbol",
-    "name": "Crossed Grain Symbol"
+    "key": "en:crossed-grain-trademark",
+    "name": "Crossed Grain Trademark"
   },
   {
     "key": "en:pdo-montes-de-granada",
     "name": "DOP Montes de Granada"
   },
   {
-    "key": "es:exceso-grasa-trans",
-    "name": "EXCESO GRASA TRANS"
+    "key": "es:exceso-grasas-saturadas",
+    "name": "Exceso Grasas Saturadas"
   },
   {
-    "key": "es:exceso-grasas-saturadas",
-    "name": "EXCESO GRASAS SATURADAS"
+    "key": "es:exceso-grasas-totales",
+    "name": "Exceso Grasas Totales"
+  },
+  {
+    "key": "es:exceso-grasas-trans",
+    "name": "Exceso Grasas Trans"
   },
   {
     "key": "en:first-grade-tis-3-1983",
@@ -152,12 +168,40 @@
     "name": "Green Label - Israel"
   },
   {
+    "key": "en:made-in-greece",
+    "name": "Made in Greece"
+  },
+  {
     "key": "en:muslim-consumer-group",
     "name": "Muslim Consumer Group"
   },
   {
+    "key": "en:nutriscore-grade-a",
+    "name": "Nutriscore Grade A"
+  },
+  {
+    "key": "en:nutriscore-grade-b",
+    "name": "Nutriscore Grade B"
+  },
+  {
+    "key": "en:nutriscore-grade-c",
+    "name": "Nutriscore Grade C"
+  },
+  {
+    "key": "en:nutriscore-grade-d",
+    "name": "Nutriscore Grade D"
+  },
+  {
+    "key": "en:nutriscore-grade-e",
+    "name": "Nutriscore Grade E"
+  },
+  {
     "key": "en:reduced-fat",
     "name": "Reducido en grasas"
+  },
+  {
+    "key": "en:rich-in-unsaturated-fatty-acids",
+    "name": "Rico en ácidos grasos insaturados"
   },
   {
     "key": "en:no-trans-fat",
@@ -174,5 +218,13 @@
   {
     "key": "en:no-hydrogenated-fats",
     "name": "Sin grasas hidrogenadas"
+  },
+  {
+    "key": "en:saturated-fat-free",
+    "name": "Sin grasas saturadas"
+  },
+  {
+    "key": "en:no-trans-fat-and-preservatives",
+    "name": "Sin grasas trans y conservantes"
   }
 ]

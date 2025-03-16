@@ -120,7 +120,7 @@
     "name": "Mélanges d'aliments à base de plantes surgelés"
   },
   {
-    "key": "en:mixtures-of-aromatic-plants",
+    "key": "en:mixed-herbs",
     "name": "Mélanges de plantes aromatiques"
   },
   {
@@ -144,8 +144,16 @@
     "name": "Pernand-Vergelesses premier cru Les Plantes des Champs et Combottes"
   },
   {
-    "key": "en:plain-pecan-nuts",
-    "name": "Plain pecan nuts"
+    "key": "en:pine-nuts-plain",
+    "name": "Pine nuts(plain)"
+  },
+  {
+    "key": "en:plain-naans",
+    "name": "Plain naans"
+  },
+  {
+    "key": "en:plain-pistachios",
+    "name": "Plain pistachios"
   },
   {
     "key": "en:ribwort-plantain",
@@ -250,6 +258,10 @@
   {
     "key": "fr:plate-de-florenville",
     "name": "Plate de Florenville"
+  },
+  {
+    "key": "en:meals-with-lamb",
+    "name": "Plats à base d'agneau"
   },
   {
     "key": "en:bulgur-dishes",
@@ -412,6 +424,10 @@
     "name": "Plats préparés en conserve"
   },
   {
+    "key": "en:canned-meals-with-meat",
+    "name": "Plats préparés en conserve à la viande"
+  },
+  {
     "key": "en:fresh-meals",
     "name": "Plats préparés frais"
   },
@@ -422,6 +438,10 @@
   {
     "key": "en:frozen-ready-made-meals",
     "name": "Plats préparés surgelés"
+  },
+  {
+    "key": "en:frozen-meals-with-meat",
+    "name": "Plats préparés surgelés à la viande"
   },
   {
     "key": "en:main-meals-for-babies",

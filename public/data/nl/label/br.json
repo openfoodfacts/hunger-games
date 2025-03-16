@@ -124,8 +124,12 @@
     "name": "Bron van fosfor"
   },
   {
-    "key": "en:source-of-iron",
+    "key": "en:iron-source",
     "name": "Bron van IJzer"
+  },
+  {
+    "key": "en:magnesium-source",
+    "name": "Bron van magnesium"
   },
   {
     "key": "en:natural-source-of-calcium",
@@ -152,6 +156,14 @@
     "name": "Bron van Vitamine B12"
   },
   {
+    "key": "en:vitamin-b2-source",
+    "name": "Bron van Vitamine B2"
+  },
+  {
+    "key": "en:vitamin-b3-source",
+    "name": "Bron van Vitamine B3"
+  },
+  {
     "key": "en:vitamin-b6-source",
     "name": "Bron van Vitamine B6"
   },
@@ -176,8 +188,8 @@
     "name": "Bronze medal of the German Agricultural Society"
   },
   {
-    "key": "en:brown-dot-india",
-    "name": "Brown Dot India"
+    "key": "en:brown-triangle-india",
+    "name": "Brown Triangle India"
   },
   {
     "key": "en:champion-beer-of-britain",
@@ -190,6 +202,10 @@
   {
     "key": "en:produced-in-brittany",
     "name": "Geproduceerd in Bretagne"
+  },
+  {
+    "key": "en:isomaltulose-is-a-source-of-glucose-and-fructose",
+    "name": "Isomaltulose is een bron van glucose en fructose"
   },
   {
     "key": "en:national-standard-for-bulgarian-white-cheese-in-brine",
@@ -209,6 +225,6 @@
   },
   {
     "key": "en:without-brown-muscle",
-    "name": "Without brown muscle"
+    "name": "Zonder bruine spier"
   }
 ]

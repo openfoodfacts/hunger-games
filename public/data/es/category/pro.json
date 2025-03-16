@@ -12,8 +12,8 @@
     "name": "Armenian sea products"
   },
   {
-    "key": "en:bakery-products",
-    "name": "Bakery products"
+    "key": "en:bakery-products-from-the-netherlands",
+    "name": "Bakery products from the Netherlands"
   },
   {
     "key": "en:balls-from-soy-and-or-wheat-proteins",
@@ -28,20 +28,12 @@
     "name": "Batidos protéicos"
   },
   {
-    "key": "en:beef-and-its-products",
-    "name": "Beef and its products"
-  },
-  {
     "key": "en:belgian-bakery-products",
     "name": "Belgian bakery products"
   },
   {
     "key": "en:belgian-meat-products",
     "name": "Belgian meat products"
-  },
-  {
-    "key": "en:belgian-sea-products",
-    "name": "Belgian sea products"
   },
   {
     "key": "en:beware-multiple-products",
@@ -52,28 +44,20 @@
     "name": "Blends of honey and propolis"
   },
   {
-    "key": "en:brazilian-sea-products",
-    "name": "Brazilian sea products"
-  },
-  {
-    "key": "en:british-sea-products",
-    "name": "British sea products"
-  },
-  {
     "key": "en:bulgarian-meat-products",
     "name": "Bulgarian meat products"
   },
   {
-    "key": "en:chicken-and-its-products",
-    "name": "Chicken and its products"
-  },
-  {
-    "key": "en:chinese-sea-products",
-    "name": "Chinese sea products"
-  },
-  {
     "key": "en:cocoa-and-its-products",
-    "name": "Cocoa and its products"
+    "name": "Cacao y sus productos"
+  },
+  {
+    "key": "en:pork-and-its-products",
+    "name": "Carne de cerdo y sus productos"
+  },
+  {
+    "key": "en:beef-and-its-products",
+    "name": "Carne de vacuno y sus productos"
   },
   {
     "key": "en:croatian-bakery-products",
@@ -100,8 +84,8 @@
     "name": "Czech meat products"
   },
   {
-    "key": "en:czech-sea-products",
-    "name": "Czech sea products"
+    "key": "en:dairy-by-products",
+    "name": "Dairy by-products"
   },
   {
     "key": "en:dried-deffated-black-soldier-fly-protein",
@@ -112,10 +96,6 @@
     "name": "Dried Provence herbs"
   },
   {
-    "key": "en:dutch-bakery-products",
-    "name": "Dutch bakery products"
-  },
-  {
     "key": "en:finnish-bakery-products",
     "name": "Finnish bakery products"
   },
@@ -124,16 +104,16 @@
     "name": "Finnish meat products"
   },
   {
-    "key": "en:finnish-sea-products",
-    "name": "Finnish sea products"
-  },
-  {
     "key": "en:fishes-and-their-products",
     "name": "Fishes and their products"
   },
   {
     "key": "en:french-meat-products",
     "name": "French meat products"
+  },
+  {
+    "key": "en:frozen-cereals-and-their-products",
+    "name": "Frozen cereals and their products"
   },
   {
     "key": "en:fruits-based-foods",
@@ -152,10 +132,6 @@
     "name": "German meat products"
   },
   {
-    "key": "en:german-sea-products",
-    "name": "German sea products"
-  },
-  {
     "key": "en:herbes-de-provence",
     "name": "Hierbas provenzales"
   },
@@ -168,10 +144,6 @@
     "name": "Hungarian meat products"
   },
   {
-    "key": "en:hungarian-sea-products",
-    "name": "Hungarian sea products"
-  },
-  {
     "key": "en:irish-sea-products",
     "name": "Irish sea products"
   },
@@ -180,12 +152,12 @@
     "name": "Italian bakery products"
   },
   {
-    "key": "en:italian-meat-products",
-    "name": "Italian meat products"
-  },
-  {
     "key": "en:italian-sea-products",
     "name": "Italian sea products"
+  },
+  {
+    "key": "en:licensed-products",
+    "name": "Licensed products"
   },
   {
     "key": "en:lithuanian-meat-products",
@@ -208,10 +180,6 @@
     "name": "Norwegian meat products"
   },
   {
-    "key": "en:norwegian-sea-products",
-    "name": "Norwegian sea products"
-  },
-  {
     "key": "en:nuggets-from-soy-and-wheat-proteins",
     "name": "Nuggets from soy and wheat proteins"
   },
@@ -232,8 +200,36 @@
     "name": "Open Products Facts"
   },
   {
+    "key": "en:dough-based-meals-variety-packs",
+    "name": "Paquetes surtidos de productos y comidas a base de masa"
+  },
+  {
+    "key": "en:cereal-variety-packs",
+    "name": "Paquetes variados de cereales - productos en grano y legumbres"
+  },
+  {
+    "key": "en:bakery-product-variety-packs",
+    "name": "Paquetes variados de productos de panadería y pan"
+  },
+  {
+    "key": "en:sweet-spread-variety-packs",
+    "name": "Paquetes variados de productos dulces para untar"
+  },
+  {
+    "key": "en:dairy-variety-packs",
+    "name": "Paquetes variados de productos lácteos"
+  },
+  {
+    "key": "en:sauces-and-condiments-variety-packs",
+    "name": "Paquetes variados de salsas - productos para untar y condimentos"
+  },
+  {
     "key": "en:patties-from-soy-and-or-wheat-proteins",
     "name": "Patties from soy and or wheat proteins"
+  },
+  {
+    "key": "en:turkey-and-its-products",
+    "name": "Pavo y sus productos"
   },
   {
     "key": "en:polish-bakery-products",
@@ -244,12 +240,12 @@
     "name": "Polish meat products"
   },
   {
-    "key": "en:protein-powders",
-    "name": "Polvos de proteína"
+    "key": "en:chicken-and-its-products",
+    "name": "Pollo y sus productos"
   },
   {
-    "key": "en:pork-and-its-products",
-    "name": "Pork and its products"
+    "key": "en:protein-powders",
+    "name": "Polvos de proteína"
   },
   {
     "key": "en:portuguese-bakery-products",
@@ -260,8 +256,8 @@
     "name": "Portuguese meat products"
   },
   {
-    "key": "en:portuguese-sea-products",
-    "name": "Portuguese sea products"
+    "key": "en:processed-cereals",
+    "name": "Processed cereals"
   },
   {
     "key": "en:processed-cheese-around-20-fat-in-cubes",
@@ -304,6 +300,14 @@
     "name": "Productos artesanales"
   },
   {
+    "key": "en:spanish-meat-products",
+    "name": "Productos cárnicos españoles"
+  },
+  {
+    "key": "en:italian-meat-products",
+    "name": "Productos cárnicos italianos"
+  },
+  {
     "key": "en:products-with-reduced-salt",
     "name": "Productos con sal reducida"
   },
@@ -314,6 +318,10 @@
   {
     "key": "en:mountain-products",
     "name": "Productos de montaña"
+  },
+  {
+    "key": "en:bakery-products",
+    "name": "Productos de panadería"
   },
   {
     "key": "en:nutmeg-tree-products",
@@ -330,6 +338,50 @@
   {
     "key": "en:seafood",
     "name": "Productos del mar"
+  },
+  {
+    "key": "en:german-sea-products",
+    "name": "Productos del mar alemanes"
+  },
+  {
+    "key": "en:belgian-sea-products",
+    "name": "Productos del mar belgas"
+  },
+  {
+    "key": "en:brazilian-sea-products",
+    "name": "Productos del mar brasileños"
+  },
+  {
+    "key": "en:british-sea-products",
+    "name": "Productos del mar británicos"
+  },
+  {
+    "key": "en:czech-sea-products",
+    "name": "Productos del mar checos"
+  },
+  {
+    "key": "en:chinese-sea-products",
+    "name": "Productos del mar chinos"
+  },
+  {
+    "key": "en:finnish-sea-products",
+    "name": "Productos del mar finlandeses"
+  },
+  {
+    "key": "en:hungarian-sea-products",
+    "name": "Productos del mar húngaros"
+  },
+  {
+    "key": "en:norwegian-sea-products",
+    "name": "Productos del mar noruegos"
+  },
+  {
+    "key": "en:portuguese-sea-products",
+    "name": "Productos del mar portugueses"
+  },
+  {
+    "key": "en:romanian-sea-products",
+    "name": "Productos del mar rumanos"
   },
   {
     "key": "en:olive-tree-products",
@@ -364,8 +416,28 @@
     "name": "Productos no alimenticios"
   },
   {
+    "key": "en:unpasteurised-products",
+    "name": "Productos no pasteurizados"
+  },
+  {
+    "key": "en:pasteurised-products",
+    "name": "Productos pasteurizados"
+  },
+  {
     "key": "en:products-without-gluten",
     "name": "Productos sin gluten"
+  },
+  {
+    "key": "en:products-sold-in-the-1970s",
+    "name": "Productos vendidos en la década de 1970"
+  },
+  {
+    "key": "en:products-sold-in-the-1980s",
+    "name": "Productos vendidos en la década de 1980"
+  },
+  {
+    "key": "en:products-sold-in-the-1990s",
+    "name": "Productos vendidos en la década de 1990"
   },
   {
     "key": "en:products-for-specific-diets",
@@ -384,16 +456,8 @@
     "name": "Products sold in the 1960s"
   },
   {
-    "key": "en:products-sold-in-the-1970s",
-    "name": "Products sold in the 1970s"
-  },
-  {
-    "key": "en:products-sold-in-the-1980s",
-    "name": "Products sold in the 1980s"
-  },
-  {
-    "key": "en:products-sold-in-the-1990s",
-    "name": "Products sold in the 1990s"
+    "key": "en:products-that-cannot-be-found-in-metropolitan-france",
+    "name": "Products that cannot be found in metropolitan France"
   },
   {
     "key": "en:profiteroles-with-custard-and-chocolate-sauce-refrigerated",
@@ -448,10 +512,6 @@
     "name": "Romanian meat products"
   },
   {
-    "key": "en:romanian-sea-products",
-    "name": "Romanian sea products"
-  },
-  {
     "key": "en:provencale-sauces",
     "name": "Salsas provenzales"
   },
@@ -464,12 +524,12 @@
     "name": "Slovenian meat products"
   },
   {
-    "key": "en:spanish-bakery-products",
-    "name": "Spanish bakery products"
+    "key": "en:smoked-provolone",
+    "name": "Smoked provolone"
   },
   {
-    "key": "en:spanish-meat-products",
-    "name": "Spanish meat products"
+    "key": "en:spanish-bakery-products",
+    "name": "Spanish bakery products"
   },
   {
     "key": "en:specific-products",
@@ -488,12 +548,16 @@
     "name": "Textured vegetable protein"
   },
   {
+    "key": "en:incorrect-product-type",
+    "name": "Tipo de producto incorrecto"
+  },
+  {
     "key": "en:tomatoes-and-their-products",
     "name": "Tomates y sus productos"
   },
   {
-    "key": "en:turkey-and-its-products",
-    "name": "Turkey and its products"
+    "key": "en:vegan-products",
+    "name": "Vegan products"
   },
   {
     "key": "en:vegetables-based-foods",
@@ -504,8 +568,8 @@
     "name": "White fish with Provencal sauce"
   },
   {
-    "key": "en:yoghurts-high-in-protein-on-a-fruit-layer",
-    "name": "Yoghurts high in protein on a fruit layer"
+    "key": "en:yogurts-high-in-protein-on-a-fruit-layer",
+    "name": "Yogurts high in protein on a fruit layer"
   },
   {
     "key": "en:apricot-juices-from-concentrate",
@@ -544,7 +608,7 @@
     "name": "Zumos de pera procedente de concentrado"
   },
   {
-    "key": "en:pineapple-from-concentrate",
+    "key": "en:pineapple-juices-from-concentrate",
     "name": "Zumos de piña procedente de concentrado"
   },
   {

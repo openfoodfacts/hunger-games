@@ -1,5 +1,9 @@
 [
   {
+    "key": "en:unfiltered-beers",
+    "name": "Bières non filtrées"
+  },
+  {
     "key": "en:grilled-lamb-chop-fillet",
     "name": "Côte de filet d'agneau grillée"
   },
@@ -148,7 +152,11 @@
     "name": "Filets de cabillaud panés"
   },
   {
-    "key": "fr:filets-de-canard",
+    "key": "en:frozen-cod-fillets",
+    "name": "Filets de cabillaud surgelés"
+  },
+  {
+    "key": "en:duck-fillets",
     "name": "Filets de canard"
   },
   {
@@ -224,16 +232,52 @@
     "name": "Filets de merlan"
   },
   {
+    "key": "en:frozen-pangasius-filets",
+    "name": "Filets de Panga surgelés"
+  },
+  {
     "key": "en:iridescent-shark-fillets",
     "name": "Filets de pangas"
+  },
+  {
+    "key": "en:frozen-fish-fillets",
+    "name": "Filets de poisson surgelés"
   },
   {
     "key": "en:fish-fillets",
     "name": "Filets de poissons"
   },
   {
+    "key": "en:freshwater-fish-fillets",
+    "name": "Filets de poissons d'eau douce"
+  },
+  {
+    "key": "en:frozen-freshwater-fish-fillets",
+    "name": "Filets de poissons d'eau douce surgelés"
+  },
+  {
+    "key": "en:farmed-fish-fillets",
+    "name": "Filets de poissons d'élevage"
+  },
+  {
+    "key": "en:frozen-farmed-fish-fillets",
+    "name": "Filets de poissons d'élevage surgelés"
+  },
+  {
+    "key": "en:marine-fish-fillets",
+    "name": "Filets de poissons de mer"
+  },
+  {
+    "key": "en:frozen-marine-fish-fillets",
+    "name": "Filets de poissons de mer surgelés"
+  },
+  {
     "key": "en:chicken-breasts",
     "name": "Filets de poulet"
+  },
+  {
+    "key": "fr:filets-de-poulet-fermier",
+    "name": "Filets de poulet fermier"
   },
   {
     "key": "fr:filets-de-poulet-rotis",
@@ -250,6 +294,10 @@
   {
     "key": "en:salmon-fillets",
     "name": "Filets de saumon"
+  },
+  {
+    "key": "en:frozen-salmon-fillets",
+    "name": "Filets de saumon surgelés"
   },
   {
     "key": "en:tuna-fillets",
@@ -280,12 +328,20 @@
     "name": "Filets de veau rôtis"
   },
   {
+    "key": "en:frozen-veal-fillets",
+    "name": "Filets de veau surgelés"
+  },
+  {
     "key": "fr:filets-mignons-de-dinde",
     "name": "Filets mignons de dinde"
   },
   {
     "key": "fr:filets-mignons-de-porc",
     "name": "Filets mignons de porc"
+  },
+  {
+    "key": "en:filled-pinsa",
+    "name": "Filled pinsa"
   },
   {
     "key": "en:filled-steamed-buns",
@@ -298,5 +354,13 @@
   {
     "key": "en:chicken-breast-without-skin-raw",
     "name": "Poulet filet sans peau cru"
+  },
+  {
+    "key": "en:frozen-chicken-breast-without-skin-raw",
+    "name": "Poulet filet sans peau cru surgelé"
+  },
+  {
+    "key": "en:sandwiches-with-sweet-fillings",
+    "name": "Sandwiches with sweet fillings"
   }
 ]

@@ -4,8 +4,16 @@
     "name": "Carbon Trust Reducing CO2"
   },
   {
+    "key": "en:energy-reduced",
+    "name": "Energy reduced"
+  },
+  {
     "key": "en:fsc-recycling",
     "name": "FSC Recycling"
+  },
+  {
+    "key": "en:mabra-recommends",
+    "name": "MåBra recommends"
   },
   {
     "key": "en:metal-recycles-forever",
@@ -14,6 +22,26 @@
   {
     "key": "de:migros-aus-der-region",
     "name": "Migros \"Aus der Region\""
+  },
+  {
+    "key": "en:migros-m-check-recyclable-constituent-materials-1-5",
+    "name": "Migros M-Check Rezyklierbare Inhaltsstoffe 1/5"
+  },
+  {
+    "key": "en:migros-m-check-recyclable-constituent-materials-2-5",
+    "name": "Migros M-Check Rezyklierbare Inhaltsstoffe 2/5"
+  },
+  {
+    "key": "en:migros-m-check-recyclable-constituent-materials-3-5",
+    "name": "Migros M-Check Rezyklierbare Inhaltsstoffe 3/5"
+  },
+  {
+    "key": "en:migros-m-check-recyclable-constituent-materials-4-5",
+    "name": "Migros M-Check Rezyklierbare Inhaltsstoffe 4/5"
+  },
+  {
+    "key": "en:migros-m-check-recyclable-constituent-materials-5-5",
+    "name": "Migros M-Check Rezyklierbare Inhaltsstoffe 5/5"
   },
   {
     "key": "en:new-recipe",
@@ -28,10 +56,6 @@
     "name": "Real California Milk"
   },
   {
-    "key": "en:refrigerated",
-    "name": "Refrigerated"
-  },
-  {
     "key": "en:high-in-calcium",
     "name": "Reich an Kalzium"
   },
@@ -42,6 +66,10 @@
   {
     "key": "en:rich-in-vegetable-protein",
     "name": "Reich an pflanzlichem Eiweiß"
+  },
+  {
+    "key": "en:rich-in-unsaturated-fatty-acids",
+    "name": "Reich an ungesättigten fettsäuren"
   },
   {
     "key": "en:rich-in-vitamin-a",
@@ -84,7 +112,7 @@
     "name": "Reine Kakaobutter"
   },
   {
-    "key": "en:reinheitsgebot",
+    "key": "de:reinheitsgebot",
     "name": "Reinheitsgebot"
   },
   {

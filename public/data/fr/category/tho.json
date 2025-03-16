@@ -16,6 +16,14 @@
     "name": "Lasagnes au thon"
   },
   {
+    "key": "en:yellowfin-tuna-loin",
+    "name": "Longe de thon albacore"
+  },
+  {
+    "key": "en:frozen-yellowfin-tuna-loin",
+    "name": "Longe de thon albacore surgelée"
+  },
+  {
     "key": "en:tuna-chunks",
     "name": "Miettes de thon"
   },
@@ -60,7 +68,7 @@
     "name": "Salade de thon et légumes en conserve"
   },
   {
-    "key": "en:tuna-salad",
+    "key": "en:tuna-salads",
     "name": "Salades au thon"
   },
   {
@@ -104,16 +112,16 @@
     "name": "Steaks de thon albacore"
   },
   {
+    "key": "fr:steaks-de-thon-albacore-surgeles",
+    "name": "Steaks de thon albacore surgelés"
+  },
+  {
     "key": "en:tuna-sushis",
     "name": "Sushis au thon"
   },
   {
     "key": "en:tuna-pies",
     "name": "Tartes au thon"
-  },
-  {
-    "key": "en:tuna-in-catalan-style",
-    "name": "Thon à la catalane"
   },
   {
     "key": "en:canned-albacore-in-olive-oil",
@@ -140,10 +148,6 @@
     "name": "Thon rôti"
   },
   {
-    "key": "en:atlantic-bluefin-tuna",
-    "name": "Thon rouge"
-  },
-  {
     "key": "fr:thon-crudites",
     "name": "Thon-crudités"
   },
@@ -168,8 +172,8 @@
     "name": "Thons à l'huile de tournesol"
   },
   {
-    "key": "fr:thons-a-la-catalane",
-    "name": "Thons à la Catalane"
+    "key": "en:tuna-in-catalan-style",
+    "name": "Thons à la catalane"
   },
   {
     "key": "en:tuna-mayo",
@@ -184,7 +188,7 @@
     "name": "Thons albacore au naturel"
   },
   {
-    "key": "en:tuna-in-brine",
+    "key": "en:tunas-in-brine",
     "name": "Thons au naturel"
   },
   {
@@ -194,6 +198,10 @@
   {
     "key": "fr:thons-blancs-au-naturel",
     "name": "Thons blancs au naturel"
+  },
+  {
+    "key": "en:raw-tunas",
+    "name": "Thons crus"
   },
   {
     "key": "en:canned-tunas",

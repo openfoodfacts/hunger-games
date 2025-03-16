@@ -4,11 +4,19 @@
     "name": "Aliments à base de fruits et de légumes"
   },
   {
-    "key": "en:austrian-fruit-spirit",
-    "name": "Austrian fruit spirit"
+    "key": "en:fruits-vegetables-nuts-seeds-variety-packs",
+    "name": "Assortiments de Fruits - Légumes - Noix et Graines"
   },
   {
-    "key": "en:sponge-cake-biscuits-wih-fruits-covering",
+    "key": "en:fruits-nuts-seed-variety-packs",
+    "name": "Assortiments de Fruits - Noix et Graines"
+  },
+  {
+    "key": "en:fruit-paste-variety-packs",
+    "name": "Assortiments de pâtes de fruits"
+  },
+  {
+    "key": "en:sponge-cake-biscuits-with-fruits-covering",
     "name": "Barquettes aux fruits"
   },
   {
@@ -36,7 +44,7 @@
     "name": "Barres de céréales aux fruits"
   },
   {
-    "key": "en:nuts-cereal-bars",
+    "key": "en:cereal-bars-with-nuts",
     "name": "Barres de céréales aux fruits à coques"
   },
   {
@@ -50,6 +58,10 @@
   {
     "key": "en:nut-bars",
     "name": "Barres de fruits à coques"
+  },
+  {
+    "key": "en:ice-cream-bars-coated-with-fruit-sorbet",
+    "name": "Bâtonnets glacés enrobés de sorbet aux fruits"
   },
   {
     "key": "en:sponge-cake-with-fruit-mousse",
@@ -70,10 +82,6 @@
   {
     "key": "en:shortbread-biscuit-with-fruits",
     "name": "Biscuit sec aux fruits"
-  },
-  {
-    "key": "en:biscuit-with-fruit-covering",
-    "name": "Biscuit sec nappé aux fruits"
   },
   {
     "key": "en:fruit-biscuits",
@@ -138,6 +146,10 @@
   {
     "key": "en:still-fruit-soft-drink-with-less-than-10-of-fruit-juice-without-sugar-and-with-artificial-sweeteners",
     "name": "Boisson plate aux fruits non sucrée avec édulcorants et moins de 10% de jus"
+  },
+  {
+    "key": "en:beverages-from-desugared-fruit-juices",
+    "name": "Boissons à base de jus de fruits désucrés"
   },
   {
     "key": "en:fruit-and-milk-beverages",
@@ -208,7 +220,7 @@
     "name": "Boissons plates aux fruits sucrées avec 10 à 50% de jus"
   },
   {
-    "key": "en:nut-milks",
+    "key": "en:nut-based-drinks",
     "name": "Boissons végétales de fruits à coque"
   },
   {
@@ -304,6 +316,14 @@
     "name": "Chocolat noir en tablette aux fruits secs"
   },
   {
+    "key": "en:chocolate-covered-nuts-and-fruits",
+    "name": "Chocolate covered nuts and fruits"
+  },
+  {
+    "key": "en:chocolate-covered-nuts-and-fruits-mixes",
+    "name": "Chocolate covered nuts and fruits mixes"
+  },
+  {
     "key": "en:chocolate-bar-with-dried-fruits",
     "name": "Chocolats aux fruits secs"
   },
@@ -334,6 +354,10 @@
   {
     "key": "en:refrigerated-fruits-compote-with-reduced-sugar",
     "name": "Compote de fruits allégée en sucres rayon frais"
+  },
+  {
+    "key": "en:fruit-juice-concentrates",
+    "name": "Concentrés de jus de fruits"
   },
   {
     "key": "en:fruit-confectioneries",
@@ -370,6 +394,10 @@
   {
     "key": "fr:coulis-de-fruits-rouges",
     "name": "Coulis de fruits rouges"
+  },
+  {
+    "key": "en:frozen-fruits-coulis",
+    "name": "Coulis de fruits surgelés"
   },
   {
     "key": "en:christmas-brioche-with-candied-fruits",
@@ -412,6 +440,30 @@
     "name": "Desserts lactés fermentés aux fruits"
   },
   {
+    "key": "en:fat-free-fermented-dairy-desserts-with-fruits-and-sweeteners-fortified-with-vitamin-d",
+    "name": "Desserts lactés fermentés aux fruits édulcorés sans matière grasse enrichis en vitamine D"
+  },
+  {
+    "key": "en:fermented-dairy-desserts-with-fruits-enriched-with-vitamin-d",
+    "name": "Desserts lactés fermentés aux fruits enrichis en vitamine D"
+  },
+  {
+    "key": "en:fermented-dairy-desserts-with-fruits-sugar-and-cream",
+    "name": "Desserts lactés fermentés aux fruits sucrés à la crème"
+  },
+  {
+    "key": "en:fermented-dairy-desserts-with-fruits-and-sweeteners",
+    "name": "Desserts lactés fermentés édulcorés aux fruits"
+  },
+  {
+    "key": "en:fat-free-fermented-dairy-desserts-with-fruits-and-sweeteners",
+    "name": "Desserts lactés fermentés édulcorés aux fruits sans matière grasse"
+  },
+  {
+    "key": "en:austrian-fruit-spirit",
+    "name": "Eau-de-vie de fruits autrichienne"
+  },
+  {
     "key": "en:nut-flours",
     "name": "Farines de fruits à coques"
   },
@@ -452,20 +504,36 @@
     "name": "Fruit à pain"
   },
   {
+    "key": "en:fruit-based-foods-prepared",
+    "name": "Fruit based foods (prepared)"
+  },
+  {
     "key": "de:obstbrand",
     "name": "Fruit brandy"
   },
   {
-    "key": "fr:fruit-preserves-with-chocolate",
-    "name": "Fruit preserves with chocolate"
+    "key": "en:fruit-flavoured-yogurt-drinks",
+    "name": "Fruit flavoured yogurt drinks"
+  },
+  {
+    "key": "en:fruit-ipa",
+    "name": "Fruit IPA"
   },
   {
     "key": "en:fruits",
     "name": "Fruits"
   },
   {
+    "key": "en:fruits-shelf-stable",
+    "name": "Fruits (shelf stable)"
+  },
+  {
     "key": "en:roasted-nuts",
     "name": "Fruits à coque grillés"
+  },
+  {
+    "key": "en:unsalted-nuts",
+    "name": "Fruits à coque non-salés"
   },
   {
     "key": "en:salted-nuts",
@@ -474,6 +542,10 @@
   {
     "key": "en:nuts",
     "name": "Fruits à coques"
+  },
+  {
+    "key": "en:caramelized-nuts",
+    "name": "Fruits à coques caramélisées"
   },
   {
     "key": "en:shelled-nuts",
@@ -520,12 +592,20 @@
     "name": "Fruits d'Aragon"
   },
   {
+    "key": "en:flavoured-nuts",
+    "name": "Fruits de coques aromatisées"
+  },
+  {
     "key": "en:passion-fruits",
     "name": "Fruits de la passion"
   },
   {
     "key": "en:frozen-cooked-seafood",
     "name": "Fruits de mer cuits surgelés"
+  },
+  {
+    "key": "en:marinated-seafood",
+    "name": "Fruits de mer marinés"
   },
   {
     "key": "en:frozen-seafood",
@@ -540,7 +620,7 @@
     "name": "Fruits en conserve au jus"
   },
   {
-    "key": "en:chocolate-covered-fruits",
+    "key": "en:chocolate-coated-fruits",
     "name": "Fruits enrobés de chocolat"
   },
   {
@@ -628,8 +708,8 @@
     "name": "German fruit spirit"
   },
   {
-    "key": "fr:glaces-aux-fruits-rouges",
-    "name": "Glaces aux fruits-rouges"
+    "key": "en:berries-ice-cream-tubs",
+    "name": "Glaces aux fruits rouges"
   },
   {
     "key": "en:snack-biscuit-with-fruits-filling",
@@ -688,7 +768,7 @@
     "name": "Jus de fruits frais"
   },
   {
-    "key": "en:squeezed-juices",
+    "key": "en:squeezed-fruit-juices",
     "name": "Jus de fruits pur jus"
   },
   {
@@ -698,6 +778,10 @@
   {
     "key": "en:fruit-liegeois",
     "name": "Liégeois aux fruits"
+  },
+  {
+    "key": "en:nut-macarons",
+    "name": "Macarons aux fruits à coques"
   },
   {
     "key": "en:canned-fruit-cocktail-in-syrup-not-drained",
@@ -720,12 +804,24 @@
     "name": "Mélange apéritif de graines et fruits séchés"
   },
   {
+    "key": "en:dried-fruit-and-seed-mixes",
+    "name": "Mélange de graines et fruits secs"
+  },
+  {
+    "key": "en:mixed-nuts",
+    "name": "Mélanges de fruits à coque"
+  },
+  {
     "key": "en:frozen-mixed-berries",
     "name": "Mélanges de fruits rouges surgelés"
   },
   {
-    "key": "en:dried-mixed-fruits",
+    "key": "en:mixed-dried-fruits",
     "name": "Mélanges de fruits secs"
+  },
+  {
+    "key": "en:mixed-nuts-and-dried-fruits",
+    "name": "Mélanges de fruits secs et de fruits à coque"
   },
   {
     "key": "en:frozen-mixed-fruits",
@@ -772,6 +868,10 @@
     "name": "Mueslis croustillants aux fruits"
   },
   {
+    "key": "en:crunchy-mueslis-without-fruits",
+    "name": "Mueslis croustillants sans fruits"
+  },
+  {
     "key": "en:bircher-style-mueslis-with-fruits",
     "name": "Mueslis floconneux aux fruits"
   },
@@ -788,8 +888,8 @@
     "name": "Nectars de fruits"
   },
   {
-    "key": "en:nuts-and-dried-fruits",
-    "name": "Nuts and dried fruits"
+    "key": "en:refrigerated-fruit-nectars",
+    "name": "Nectars de fruits réfrigérés"
   },
   {
     "key": "en:swedish-toast-with-fruits",
@@ -852,6 +952,10 @@
     "name": "Petits suisses au fruits"
   },
   {
+    "key": "en:pickled-fruits",
+    "name": "Pickles de fruits"
+  },
+  {
     "key": "en:seafood-pizza",
     "name": "Pizza aux fruits de mer"
   },
@@ -862,6 +966,14 @@
   {
     "key": "en:porridge-with-fruits",
     "name": "Porridge aux fruits"
+  },
+  {
+    "key": "en:prepared-fresh-fruits",
+    "name": "Prepared fresh fruits"
+  },
+  {
+    "key": "en:prepared-frozen-fruits",
+    "name": "Prepared frozen fruits"
   },
   {
     "key": "en:passion-fruit-pulp-and-pips",
@@ -876,8 +988,20 @@
     "name": "Quarks aux fruits"
   },
   {
+    "key": "en:red-fruit-yoghurts",
+    "name": "Red fruit yoghurts"
+  },
+  {
+    "key": "en:refrigerated-fruit-and-vegetable-preserves",
+    "name": "Refrigerated fruit and vegetable preserves"
+  },
+  {
     "key": "en:risotto-with-seafood",
     "name": "Risotto aux fruits de mer"
+  },
+  {
+    "key": "en:rice-puddings-with-a-fruit-preparation",
+    "name": "Riz au lait à la préparation de fruits"
   },
   {
     "key": "en:romanian-fruit-spirit",
@@ -896,12 +1020,20 @@
     "name": "Salades de fruits au sirop"
   },
   {
+    "key": "en:seafood-salads",
+    "name": "Salades de fruits de mer"
+  },
+  {
     "key": "en:fresh-fruit-salad",
     "name": "Salades de fruits frais"
   },
   {
     "key": "en:fruit-sauces",
     "name": "Sauces aux fruits"
+  },
+  {
+    "key": "en:shelf-stable-prepared-fruit-nuts-and-seeds-mixes",
+    "name": "Shelf-stable prepared fruit nuts and seeds Mixes"
   },
   {
     "key": "en:light-syrup-for-canned-fruits",
@@ -914,10 +1046,6 @@
   {
     "key": "en:syrups-with-fruits",
     "name": "Sirops aux fruits"
-  },
-  {
-    "key": "en:fruit-syrups",
-    "name": "Sirops de fruits"
   },
   {
     "key": "en:high-fructose-corn-syrups",
@@ -964,8 +1092,16 @@
     "name": "Tarte aux fruits rouges"
   },
   {
+    "key": "en:tartlet-biscuits-with-fruit-preparation",
+    "name": "Tartelettes à la préparation de fruits"
+  },
+  {
     "key": "en:fruit-tartlets",
-    "name": "Tartelettes aux fruits"
+    "name": "Tartelettes aux fruits entiers ou coupés"
+  },
+  {
+    "key": "en:frozen-fruit-tartlets",
+    "name": "Tartelettes aux fruits surgelées"
   },
   {
     "key": "en:fruit-tarts",
@@ -982,10 +1118,6 @@
   {
     "key": "en:seafood-terrine",
     "name": "Terrine de fruits de mer"
-  },
-  {
-    "key": "en:seafood-terrine-with-or-without-fish",
-    "name": "Terrine de fruits de mer avec ou sans poisson"
   },
   {
     "key": "en:seafood-terrine-with-fish",
@@ -1008,28 +1140,16 @@
     "name": "Turrón aux fruits"
   },
   {
-    "key": "en:greek-style-yogurt-on-a-bed-of-fruits",
+    "key": "en:unprepared-frozen-fruits",
+    "name": "Unprepared frozen fruits"
+  },
+  {
+    "key": "en:greek-style-yogurts-on-a-bed-of-fruits",
     "name": "Yaourt à la grecque sur lit de fruits"
   },
   {
     "key": "en:yogurt-with-fruits-no-0-fat",
     "name": "Yaourt aromatisé aux fruits non allégé en matières grasses"
-  },
-  {
-    "key": "en:fat-free-fermented-milk-yogurt-with-fruits-and-sweetener",
-    "name": "Yaourt au lait fermenté aux fruits avec édulcorants à 0% de matières grasses"
-  },
-  {
-    "key": "en:fat-free-fermented-milk-yogurt-with-fruits-and-sweetener-fortified-with-vitamin-d",
-    "name": "Yaourt au lait fermenté aux fruits avec édulcorants à 0% de matières grasses enrichi en vitamine D"
-  },
-  {
-    "key": "en:fermented-milk-yogurt-fortified-with-vitamin-d-with-fruits-and-sugar",
-    "name": "Yaourt sucré au lait fermenté aux fruits enrichi en vitamine D"
-  },
-  {
-    "key": "en:fermented-milk-yogurt-with-fruits-and-sugar-and-cream",
-    "name": "Yaourt sucré au lait fermenté aux fruits et à la crème"
   },
   {
     "key": "en:fruit-bifidus-yogurts",
@@ -1072,11 +1192,11 @@
     "name": "Yaourts soja aux fruits tropicaux"
   },
   {
-    "key": "en:yogurts-with-fruits-and-sugar",
-    "name": "Yaourts sucrés aux fruits"
+    "key": "en:yogurts-high-in-protein-on-a-fruit-layer",
+    "name": "Yaourts sur lit de fruits"
   },
   {
-    "key": "en:yoghurts-high-in-protein-on-a-fruit-layer",
-    "name": "Yaourts sur lit de fruits"
+    "key": "en:yogurts-with-fruits-and-sugar",
+    "name": "Yogurts with fruits and sugar"
   }
 ]

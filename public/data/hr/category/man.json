@@ -1,19 +1,31 @@
 [
   {
-    "key": "en:dried-mangoes",
-    "name": "Dried mangoes"
+    "key": "en:mango-chutneys",
+    "name": "Ajvari od manga"
   },
   {
-    "key": "en:fresh-mandarin-oranges",
-    "name": "Fresh mandarin oranges"
+    "key": "en:white-hams-with-less-salt",
+    "name": "Bijele šunke s manje soli"
   },
   {
-    "key": "en:fresh-mangoes",
-    "name": "Fresh mangoes"
+    "key": "en:squeezed-tangerine-juices",
+    "name": "Cijeđene sokove mandarine"
   },
   {
-    "key": "en:iced-teas-with-mango-flavor",
-    "name": "Iced teas with mango flavor"
+    "key": "en:dark-chocolate-bar-with-less-than-70-cocoa",
+    "name": "Crna čokolada s manje od 70% kakaa"
+  },
+  {
+    "key": "en:mandarin-jams",
+    "name": "Džemovi od mandarina"
+  },
+  {
+    "key": "en:mango-jams",
+    "name": "Džemovi od manga"
+  },
+  {
+    "key": "en:frozen-mangos",
+    "name": "Frozen mangos"
   },
   {
     "key": "en:isle-of-man-manx-loaghtan-lamb",
@@ -24,36 +36,32 @@
     "name": "Isle of Man Queenies"
   },
   {
+    "key": "en:mango-yogurts",
+    "name": "Jogurti od manga"
+  },
+  {
+    "key": "en:mango-compotes",
+    "name": "Kompoti od manga"
+  },
+  {
+    "key": "en:iced-teas-with-mango-flavor",
+    "name": "Ledeni čajevi s okusom manga"
+  },
+  {
     "key": "en:manchego",
     "name": "Manchego"
   },
   {
-    "key": "en:mandarin-oranges",
-    "name": "Mandarin oranges"
+    "key": "en:mandarins",
+    "name": "Mandarine"
   },
   {
     "key": "en:mandarin-oranges-in-syrup",
-    "name": "Mandarin oranges in syrup"
+    "name": "Mandarine u sirupu"
   },
   {
-    "key": "en:mandarin-pulp",
-    "name": "Mandarin pulp"
-  },
-  {
-    "key": "en:mandarin-sorbets",
-    "name": "Mandarin sorbets"
-  },
-  {
-    "key": "en:mango-applesauces",
-    "name": "Mango applesauces"
-  },
-  {
-    "key": "en:mango-chutneys",
-    "name": "Mango chutneys"
-  },
-  {
-    "key": "en:mango-compotes",
-    "name": "Mango compotes"
+    "key": "en:mangoes",
+    "name": "Mango"
   },
   {
     "key": "en:mango-coulis",
@@ -68,56 +76,68 @@
     "name": "Mango imported by plane"
   },
   {
-    "key": "en:mango-jams",
-    "name": "Mango jams"
-  },
-  {
-    "key": "en:mango-nectars",
-    "name": "Mango nectars"
+    "key": "en:mango-applesauces",
+    "name": "Mango jabuke"
   },
   {
     "key": "en:mango-pulp",
     "name": "Mango pulp"
   },
   {
-    "key": "en:mango-sorbets",
-    "name": "Mango sorbets"
-  },
-  {
-    "key": "en:mango-syrups",
-    "name": "Mango syrups"
-  },
-  {
-    "key": "en:mango-yogurts",
-    "name": "Mango yogurts"
-  },
-  {
-    "key": "en:mangoes",
-    "name": "Mangoes"
-  },
-  {
     "key": "en:mangoes-in-syrup",
-    "name": "Mangoes in syrup"
+    "name": "Mango u sirupu"
+  },
+  {
+    "key": "en:manitoba-flours",
+    "name": "Manitoba flours"
+  },
+  {
+    "key": "en:munsters-with-raw-milk",
+    "name": "Mansteri sa sirovim mlijekom"
   },
   {
     "key": "en:mantecados-and-polvorones",
-    "name": "Mantecados and polvorones"
+    "name": "Mantecados i polvorones"
   },
   {
     "key": "en:mantecados-and-polvorones-with-vegetal-fat",
-    "name": "Mantecados and polvorones with vegetal fat"
+    "name": "Mantecados i polvorones s biljnom masnoćom"
   },
   {
     "key": "en:mantecados-y-polvorones-with-margarine",
-    "name": "Mantecados y polvorones with margarine"
+    "name": "Mantecados y polvorones s margarinom"
   },
   {
     "key": "en:mantecados-y-polvorones-with-olive-oil",
-    "name": "Mantecados y polvorones with olive oil"
+    "name": "Mantecados y polvorones s maslinovim uljem"
   },
   {
     "key": "en:manuka-honeys",
-    "name": "Manuka honeys"
+    "name": "Manuka medovi"
+  },
+  {
+    "key": "en:tangerine-nectars",
+    "name": "Nektari mandarina"
+  },
+  {
+    "key": "en:mango-nectars",
+    "name": "Nektari manga"
+  },
+  {
+    "key": "en:refrigerated-squeezed-tangerine-juices",
+    "name": "Ohlađeni cijeđeni sokovi mandarina"
+  },
+  {
+    "key": "en:pickled-mangoes",
+    "name": "Pickled mangoes"
+  },
+  {
+    "key": "en:prepared-meats-with-less-salt",
+    "name": "Pripremljeno meso s manje soli"
+  },
+  {
+    "key": "en:mandarin-pulp",
+    "name": "Pulpa mandarine"
   },
   {
     "key": "en:rillettes-from-mans",
@@ -126,5 +146,41 @@
   {
     "key": "en:saint-nectaire-from-milks-collected-in-many-farms",
     "name": "Saint-Nectaire from milks collected in many farms"
+  },
+  {
+    "key": "en:shandy-with-less-than-1-of-alcohol",
+    "name": "Shandy s manje od 1° alkohola"
+  },
+  {
+    "key": "en:mango-syrups",
+    "name": "Sirupi od manga"
+  },
+  {
+    "key": "en:tangerine-juices-from-concentrate",
+    "name": "Sokovi mandarina iz koncentrata"
+  },
+  {
+    "key": "en:tangerine-juices",
+    "name": "Sokovi od mandarina"
+  },
+  {
+    "key": "en:mandarin-sorbets",
+    "name": "Sorbeti od mandarina"
+  },
+  {
+    "key": "en:mango-sorbets",
+    "name": "Sorbeti od manga"
+  },
+  {
+    "key": "en:dried-mangoes",
+    "name": "Sušeni mango"
+  },
+  {
+    "key": "en:fresh-mandarin-oranges",
+    "name": "Svježe mandarine"
+  },
+  {
+    "key": "en:fresh-mangoes",
+    "name": "Svježi mango"
   }
 ]

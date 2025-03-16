@@ -28,24 +28,32 @@
     "name": "Halal Monitoring Committee"
   },
   {
+    "key": "en:halal-quality-control",
+    "name": "Halal Quality Control"
+  },
+  {
     "key": "de:haltungsform",
     "name": "Haltungsform"
   },
   {
-    "key": "de:haltungsform-1-stallhaltung",
-    "name": "Haltungsform 1 Stallhaltung"
+    "key": "de:haltungsform-1-stall",
+    "name": "Haltungsform 1 Stall"
   },
   {
-    "key": "de:haltungsform-2-stallhaltungplus",
-    "name": "Haltungsform 2 StallhaltungPlus"
+    "key": "de:haltungsform-2-stall-platz",
+    "name": "Haltungsform 2 Stall + Platz"
   },
   {
-    "key": "de:haltungsform-3-außenklima",
-    "name": "Haltungsform 3 Außenklima"
+    "key": "de:haltungsform-3-frischluftklima",
+    "name": "Haltungsform 3 Frischluftklima"
   },
   {
-    "key": "de:haltungsform-4-premium",
-    "name": "Haltungsform 4 Premium"
+    "key": "de:haltungsform-4-auslauf-weide",
+    "name": "Haltungsform 4 Auslauf/Weide"
+  },
+  {
+    "key": "de:haltungsform-5-bio",
+    "name": "Haltungsform 5 Bio"
   },
   {
     "key": "en:distributor-labels",
@@ -64,6 +72,10 @@
     "name": "Max Havelaar Belgien"
   },
   {
+    "key": "en:max-havelaar-denmark",
+    "name": "Max Havelaar Denmark"
+  },
+  {
     "key": "en:max-havelaar-france",
     "name": "Max Havelaar Frankreich"
   },
@@ -72,11 +84,19 @@
     "name": "May have an adverse effect on activity and attention in children"
   },
   {
+    "key": "en:rainforest-alliance-hazelnut",
+    "name": "Rainforest Alliance Haselnuss"
+  },
+  {
     "key": "en:tav-hayosher",
     "name": "Tav HaYosher"
   },
   {
     "key": "de:typisch-harz",
     "name": "Typisch Harz"
+  },
+  {
+    "key": "en:utz-certified-hazelnut",
+    "name": "UTZ Certified Hazelnut"
   }
 ]

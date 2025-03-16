@@ -32,10 +32,6 @@
     "name": "Canned tomato puree"
   },
   {
-    "key": "en:cheese-ravioli-in-tomato-sauce",
-    "name": "Cheese ravioli in tomato sauce"
-  },
-  {
     "key": "en:cooked-white-beans-in-tomato-sauce",
     "name": "Cooked white beans in tomato sauce"
   },
@@ -80,6 +76,14 @@
     "name": "Green tomatoes"
   },
   {
+    "key": "en:heirloom-tomatoe",
+    "name": "Heirloom tomatoe"
+  },
+  {
+    "key": "en:cheese-ravioli-in-tomato-sauce",
+    "name": "Käseravioli in Tomatensauce"
+  },
+  {
     "key": "en:mackerel-fillets-with-tomato-and-basil",
     "name": "Mackerel fillets with tomato and basil"
   },
@@ -102,6 +106,10 @@
   {
     "key": "en:strained-tomatoes",
     "name": "Passierte Tomaten"
+  },
+  {
+    "key": "en:pickled-tomatoes",
+    "name": "Pickled tomatoes"
   },
   {
     "key": "en:pimented-tomato-sauces",
@@ -128,10 +136,6 @@
     "name": "Pure tomato juice with 6 g salt/L"
   },
   {
-    "key": "en:pure-tomato-juices",
-    "name": "Pure tomato juices"
-  },
-  {
     "key": "en:reduced-fat-tomme-cheese",
     "name": "Reduced fat Tomme cheese"
   },
@@ -142,6 +146,10 @@
   {
     "key": "en:reheatable-tomatoes-and-vermicelli-soup",
     "name": "Reheatable tomatoes and vermicelli soup"
+  },
+  {
+    "key": "en:pure-tomato-juices",
+    "name": "Reiner Tomatensaft"
   },
   {
     "key": "en:rice-stuffed-tomatoes",
@@ -188,8 +196,16 @@
     "name": "Tomaten von der Insel Reichenau"
   },
   {
+    "key": "en:tomato-bruschetta-spreads",
+    "name": "Tomaten-Bruschetta Aufstriche"
+  },
+  {
     "key": "en:cream-of-tomato-soups",
     "name": "Tomatencremesuppen"
+  },
+  {
+    "key": "en:tomato-ketchup",
+    "name": "Tomatenketchup"
   },
   {
     "key": "en:tomato-pastes",
@@ -210,6 +226,22 @@
   {
     "key": "en:tomato-sauces",
     "name": "Tomatensaucen"
+  },
+  {
+    "key": "en:tomato-sauces-with-basil",
+    "name": "Tomatensaucen mit Basilikum"
+  },
+  {
+    "key": "en:tomato-sauces-with-vegetables",
+    "name": "Tomatensaucen mit Gemüse"
+  },
+  {
+    "key": "en:tomato-sauces-with-cheese",
+    "name": "Tomatensaucen mit Käse"
+  },
+  {
+    "key": "en:tomato-sauces-with-olives",
+    "name": "Tomatensaucen mit Oliven"
   },
   {
     "key": "en:tomato-soups",
@@ -236,8 +268,8 @@
     "name": "Tomato jams"
   },
   {
-    "key": "en:tomato-ketchup",
-    "name": "Tomato Ketchup"
+    "key": "en:tomato-ketchup-substitutes",
+    "name": "Tomato ketchup substitutes"
   },
   {
     "key": "en:tomato-mustards",
@@ -256,20 +288,8 @@
     "name": "Tomato sauce for pizza base"
   },
   {
-    "key": "en:tomato-sauces-with-basil",
-    "name": "Tomato sauces with basil"
-  },
-  {
-    "key": "en:tomato-sauces-with-cheese",
-    "name": "Tomato sauces with cheese"
-  },
-  {
     "key": "en:tomato-sauces-with-mushrooms",
     "name": "Tomato sauces with mushrooms"
-  },
-  {
-    "key": "en:tomato-sauces-with-olives",
-    "name": "Tomato sauces with olives"
   },
   {
     "key": "en:tomato-sauces-with-onions",
@@ -282,10 +302,6 @@
   {
     "key": "en:tomato-sauces-with-ricotta",
     "name": "Tomato sauces with ricotta"
-  },
-  {
-    "key": "en:tomato-sauces-with-vegetables",
-    "name": "Tomato sauces with vegetables"
   },
   {
     "key": "en:tomato-vinegars",
@@ -313,7 +329,7 @@
   },
   {
     "key": "en:tomme-cheese-sandwiches",
-    "name": "Tomme cheese sandwiches"
+    "name": "Tomme-Käse-Sandwiches"
   },
   {
     "key": "en:tuna-flakes-in-tomato-sauce",

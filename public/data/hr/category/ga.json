@@ -4,12 +4,24 @@
     "name": "Anchovy fillets marinated in garlic and parsley"
   },
   {
-    "key": "en:black-forest-gateau",
-    "name": "Black Forest gâteau"
+    "key": "en:flavored-sparkling-waters",
+    "name": "Aromatizirane gazirane vode"
+  },
+  {
+    "key": "en:mildly-carbonated-natural-mineral-water",
+    "name": "Blago gazirana prirodna mineralna voda"
   },
   {
     "key": "en:bouquet-garni",
-    "name": "Bouquet garni"
+    "name": "Buket garni"
+  },
+  {
+    "key": "en:canned-game",
+    "name": "Canned game"
+  },
+  {
+    "key": "en:cola-sodas-without-caffeine",
+    "name": "Cola gazirana pića bez kofeina"
   },
   {
     "key": "en:cooked-feathered-game",
@@ -24,20 +36,24 @@
     "name": "Cooked garden peas"
   },
   {
-    "key": "en:cooked-sauerkraut-without-garnish",
-    "name": "Cooked sauerkraut without garnish"
+    "key": "en:crepes-and-galettes",
+    "name": "Crêpes i galettes"
   },
   {
-    "key": "en:crepes-and-galettes",
-    "name": "Crêpes and galettes"
+    "key": "en:black-forest-gateau",
+    "name": "Crna šuma gâteau"
   },
   {
     "key": "en:croutons-with-garlic",
     "name": "Croutons with garlic"
   },
   {
-    "key": "en:dried-bouquet-garni",
-    "name": "Dried bouquet garni"
+    "key": "en:diet-sodas",
+    "name": "Dijetalna gazirana pića"
+  },
+  {
+    "key": "en:dried-wild-garlic",
+    "name": "Dried wild garlic"
   },
   {
     "key": "en:filled-fritter-garnished-with-fish",
@@ -64,68 +80,32 @@
     "name": "Filled fritter garnished with vegetables"
   },
   {
-    "key": "en:fresh-bouquet-garni",
-    "name": "Fresh bouquet garni"
-  },
-  {
-    "key": "en:fresh-garlic",
-    "name": "Fresh garlic"
-  },
-  {
-    "key": "en:frozen-chopped-garlic",
-    "name": "Frozen chopped garlic"
-  },
-  {
     "key": "en:frozen-cooked-garden-peas-and-carrots",
     "name": "Frozen cooked garden peas and carrots"
   },
   {
-    "key": "en:frozen-green-garlic",
-    "name": "Frozen green garlic"
-  },
-  {
     "key": "en:gala-apples",
-    "name": "Gala apples"
+    "name": "Gala jabuke"
   },
   {
-    "key": "en:galantine",
-    "name": "Galantine"
+    "key": "en:galangal",
+    "name": "Galangal"
   },
   {
     "key": "en:galettes",
-    "name": "Galettes"
+    "name": "Galete"
+  },
+  {
+    "key": "en:honeydew-melons",
+    "name": "Galija dinja"
   },
   {
     "key": "en:galia-melons",
-    "name": "Galia melons"
-  },
-  {
-    "key": "en:game",
-    "name": "Game"
-  },
-  {
-    "key": "en:game-pates",
-    "name": "Game pâtés"
+    "name": "Galija dinje"
   },
   {
     "key": "en:garam-masala",
     "name": "Garam masala"
-  },
-  {
-    "key": "en:garden-chervil-leaves",
-    "name": "Garden chervil leaves"
-  },
-  {
-    "key": "en:garden-chervil-seeds",
-    "name": "Garden chervil seeds"
-  },
-  {
-    "key": "en:garden-cress",
-    "name": "Garden cress"
-  },
-  {
-    "key": "en:garden-strawberries",
-    "name": "Garden strawberries"
   },
   {
     "key": "en:garfish",
@@ -136,32 +116,60 @@
     "name": "Gari"
   },
   {
-    "key": "en:garlic",
-    "name": "Garlic"
+    "key": "en:garlic-naans",
+    "name": "Garlic Naans"
   },
   {
-    "key": "en:garlic-and-their-products",
-    "name": "Garlic and their products"
+    "key": "en:garlic-paste",
+    "name": "Garlic paste"
   },
   {
-    "key": "en:garlic-baguettes",
-    "name": "Garlic baguettes"
+    "key": "en:gouda",
+    "name": "Gauda"
   },
   {
-    "key": "en:garlic-breads",
-    "name": "Garlic breads"
-  },
-  {
-    "key": "en:garlic-powder",
-    "name": "Garlic powder"
-  },
-  {
-    "key": "en:garlic-sausage",
-    "name": "Garlic sausage"
+    "key": "en:goudas-with-cumin",
+    "name": "Gauda s kuminom"
   },
   {
     "key": "en:gazelle-horn",
     "name": "Gazelle horn"
+  },
+  {
+    "key": "en:carbonated-drinks",
+    "name": "Gazirana pića"
+  },
+  {
+    "key": "en:carbonated-soft-drinks-without-fruit-juice",
+    "name": "Gazirana pića bez voćnog soka"
+  },
+  {
+    "key": "en:sodas-with-exotic-fruits",
+    "name": "Gazirana pića s egzotičnim voćem"
+  },
+  {
+    "key": "en:carbonated-soft-drinks-without-fruit-juice-with-sugar",
+    "name": "Gazirana pića s šećerom bez voćnog soka"
+  },
+  {
+    "key": "en:carbonated-mineral-waters",
+    "name": "Gazirane mineralne vode"
+  },
+  {
+    "key": "en:carbonated-natural-mineral-waters",
+    "name": "Gazirane prirodne mineralne vode"
+  },
+  {
+    "key": "en:carbonated-waters",
+    "name": "Gazirane vode"
+  },
+  {
+    "key": "en:sparkling-apple-juices",
+    "name": "Gazirani sokovi od jabuke"
+  },
+  {
+    "key": "en:carbonated-fruit-soft-drink",
+    "name": "Gazirano voćno bezalkoholno piće"
   },
   {
     "key": "en:gazpacha-marinated-green-olives",
@@ -172,24 +180,28 @@
     "name": "Gazpacho"
   },
   {
-    "key": "en:green-garlic",
-    "name": "Green garlic"
+    "key": "en:light-fruit-sodas",
+    "name": "Lagano voćno gazirano piće"
   },
   {
-    "key": "en:ground-dried-bouquet-garni",
-    "name": "Ground dried bouquet garni"
+    "key": "en:lesser-galangal-powder",
+    "name": "Lesser Galangal powder"
   },
   {
     "key": "en:olive-oils-from-gata-hurdes",
-    "name": "Olive oils from Gata-Hurdes"
+    "name": "Maslinova ulja iz gata-hurdesa"
   },
   {
     "key": "en:olive-oils-from-les-garrigues",
-    "name": "Olive oils from Les Garrigues"
+    "name": "Maslinova ulja iz les garrigues"
   },
   {
-    "key": "en:pickled-garlic",
-    "name": "Pickled garlic"
+    "key": "en:young-goudas",
+    "name": "Mlade gaude"
+  },
+  {
+    "key": "en:ground-dried-bouquet-garni",
+    "name": "Mljeveni osušeni buket garni"
   },
   {
     "key": "en:pure-pork-saveloy-with-garlic",
@@ -200,15 +212,31 @@
     "name": "Salty snacks crackers garnished with cheese"
   },
   {
-    "key": "en:sauerkraut-with-garnish",
-    "name": "Sauerkraut with garnish"
-  },
-  {
-    "key": "en:sauerkraut-without-garnish",
-    "name": "Sauerkraut without garnish"
+    "key": "en:old-goudas",
+    "name": "Stare gaude"
   },
   {
     "key": "en:stewed-lamb-garnished-with-potatoes-and-other-vegetables",
     "name": "Stewed lamb garnished with potatoes and other vegetables"
+  },
+  {
+    "key": "en:dried-bouquet-garni",
+    "name": "Sušeni buket garni"
+  },
+  {
+    "key": "en:fresh-bouquet-garni",
+    "name": "Svježi buket garni"
+  },
+  {
+    "key": "en:fruit-sodas",
+    "name": "Voćno gazirano piće"
+  },
+  {
+    "key": "en:sodas",
+    "name": "Zaslađena gazirana pića"
+  },
+  {
+    "key": "en:matured-gouda",
+    "name": "Zrela gauda"
   }
 ]

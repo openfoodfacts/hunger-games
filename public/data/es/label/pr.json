@@ -1,5 +1,13 @@
 [
   {
+    "key": "en:high-proteins",
+    "name": "Alto en proteinas"
+  },
+  {
+    "key": "es:asociacion-del-sello-de-productos-de-comercio-justo",
+    "name": "Asociación del Sello de Productos de Comercio Justo"
+  },
+  {
     "key": "en:authentic-trappist-product",
     "name": "Authentic Trappist Product"
   },
@@ -8,19 +16,27 @@
     "name": "Certified product"
   },
   {
-    "key": "en:cold-pressed",
-    "name": "Cold pressed"
+    "key": "en:climate-neutral-product",
+    "name": "Climate Neutral product"
+  },
+  {
+    "key": "en:catalan-council-of-organic-production",
+    "name": "Consejo Catalán de la Producción Agraria Ecológica"
   },
   {
     "key": "en:croatian-product",
     "name": "Croatian product"
   },
   {
+    "key": "en:producer-labels",
+    "name": "Etiqueta de productor"
+  },
+  {
     "key": "en:farm-production",
     "name": "Farm production"
   },
   {
-    "key": "en:high-proteins",
+    "key": "en:source-of-proteins",
     "name": "Fuente de proteínas"
   },
   {
@@ -40,12 +56,16 @@
     "name": "Luomu - controlled organic production"
   },
   {
-    "key": "en:no-artificial-colours-and-preservatives",
-    "name": "No artificial colours and preservatives"
-  },
-  {
     "key": "en:planet-proof",
     "name": "Planet Proof"
+  },
+  {
+    "key": "en:portuguese-protected-product",
+    "name": "Portuguese protected product"
+  },
+  {
+    "key": "en:cold-pressed",
+    "name": "Prensado en frío"
   },
   {
     "key": "en:pro-montagna",
@@ -60,12 +80,12 @@
     "name": "Produced in croatia"
   },
   {
-    "key": "en:producer-labels",
-    "name": "Producer labels"
-  },
-  {
     "key": "en:produced-in-brittany",
     "name": "Producido en Bretaña"
+  },
+  {
+    "key": "en:product-of-canada",
+    "name": "Product of Canada"
   },
   {
     "key": "en:carbon-compensated-product",

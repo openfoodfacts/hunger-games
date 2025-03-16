@@ -1,5 +1,57 @@
 [
   {
+    "key": "en:10-less-sugar",
+    "name": "10% manje šećera"
+  },
+  {
+    "key": "en:10-less-salt",
+    "name": "10% manje soli"
+  },
+  {
+    "key": "en:15-less-sugar",
+    "name": "15% manje šećera"
+  },
+  {
+    "key": "en:15-less-salt",
+    "name": "15% manje soli"
+  },
+  {
+    "key": "en:20-less-sugar",
+    "name": "20% manje šećera"
+  },
+  {
+    "key": "en:25-less-sugar",
+    "name": "25% manje šećera"
+  },
+  {
+    "key": "en:30-less-sugar",
+    "name": "30% manje šećera"
+  },
+  {
+    "key": "en:35-less-sugar",
+    "name": "35% manje šećera"
+  },
+  {
+    "key": "en:40-less-sugar",
+    "name": "40% manje šećera"
+  },
+  {
+    "key": "en:45-less-sugar",
+    "name": "45% manje šećera"
+  },
+  {
+    "key": "en:50-less-sugar",
+    "name": "50% manje šećera"
+  },
+  {
+    "key": "en:55-less-sugar",
+    "name": "55% manje šećera"
+  },
+  {
+    "key": "en:60-less-sugar",
+    "name": "60% manje šećera"
+  },
+  {
     "key": "en:alimentos-de-castilla-la-mancha",
     "name": "Alimentos de Castilla-La Mancha"
   },
@@ -8,12 +60,60 @@
     "name": "Australian made"
   },
   {
+    "key": "en:no-hydrogenated-fats",
+    "name": "Bez hidrogeniziranih masti"
+  },
+  {
+    "key": "en:no-trans-fat-and-preservatives",
+    "name": "Bez trans masnih kiselina i konzervansa"
+  },
+  {
+    "key": "en:saturated-fat-free",
+    "name": "Bez zasićenih masti"
+  },
+  {
+    "key": "en:rich-in-unsaturated-fatty-acids",
+    "name": "Bogat nezasićenim masnim kiselinama"
+  },
+  {
+    "key": "en:pure-cocoa-butter",
+    "name": "Čisti kakao maslac"
+  },
+  {
     "key": "en:do-manzanilla-sanlucar-de-barrameda",
     "name": "DO Manzanilla-Sanlúcar de Barrameda"
   },
   {
     "key": "en:es-eco-023-ma",
     "name": "ES-ECO-023-MA"
+  },
+  {
+    "key": "en:fairtrade-mark-ireland",
+    "name": "Fairtrade Mark Ireland"
+  },
+  {
+    "key": "en:high-in-magnesium",
+    "name": "High in magnesium"
+  },
+  {
+    "key": "en:international-ice-cream-consortium-award-ice-cream-maker-of-the-year-2016",
+    "name": "International Ice Cream Consortium award ice cream maker of the year 2016"
+  },
+  {
+    "key": "en:international-ice-cream-consortium-award-ice-cream-maker-of-the-year-2017",
+    "name": "International Ice Cream Consortium award ice cream maker of the year 2017"
+  },
+  {
+    "key": "en:international-ice-cream-consortium-award-ice-cream-maker-of-the-year-2018",
+    "name": "International Ice Cream Consortium award ice cream maker of the year 2018"
+  },
+  {
+    "key": "en:international-ice-cream-consortium-award-ice-cream-maker-of-the-year-2019",
+    "name": "International Ice Cream Consortium award ice cream maker of the year 2019"
+  },
+  {
+    "key": "en:magnesium-source",
+    "name": "Izvor magnezija"
   },
   {
     "key": "en:ma-bio-102",
@@ -76,32 +176,28 @@
     "name": "MA-BIO-178"
   },
   {
-    "key": "en:made-in-belgium",
-    "name": "Made in Belgium"
+    "key": "en:mabra-recommends",
+    "name": "MåBra recommends"
   },
   {
     "key": "en:made-in-bulgaria",
     "name": "Made in Bulgaria"
   },
   {
+    "key": "en:made-in-canada",
+    "name": "Made in Canada"
+  },
+  {
     "key": "en:made-in-denmark",
     "name": "Made in Denmark"
   },
   {
-    "key": "en:made-in-france",
-    "name": "Made in France"
-  },
-  {
-    "key": "en:made-in-germany",
-    "name": "Made in Germany"
+    "key": "en:made-in-greece",
+    "name": "Made in Greece"
   },
   {
     "key": "en:made-in-hungary",
     "name": "Made in Hungary"
-  },
-  {
-    "key": "en:made-in-italy",
-    "name": "Made in Italy"
   },
   {
     "key": "en:made-in-luxembourg",
@@ -120,20 +216,20 @@
     "name": "Made in Portugal"
   },
   {
+    "key": "en:made-in-romania",
+    "name": "Made in Romania"
+  },
+  {
     "key": "en:made-in-russia",
     "name": "Made in Russia"
   },
   {
+    "key": "en:made-in-serbia",
+    "name": "Made in Serbia"
+  },
+  {
     "key": "en:made-in-spain",
     "name": "Made in Spain"
-  },
-  {
-    "key": "en:made-in-swiss",
-    "name": "Made in Swiss"
-  },
-  {
-    "key": "en:made-in-the-eu",
-    "name": "Made in the EU"
   },
   {
     "key": "en:made-with-free-range-eggs",
@@ -144,8 +240,24 @@
     "name": "Magen Tzedek"
   },
   {
+    "key": "en:low-or-no-fat",
+    "name": "Malo ili bez masti"
+  },
+  {
+    "key": "en:low-or-no-sugar",
+    "name": "Malo ili bez šećera"
+  },
+  {
+    "key": "en:low-or-no-salt",
+    "name": "Malo ili bez soli"
+  },
+  {
     "key": "en:manchester-beth-din",
     "name": "Manchester Beth Din"
+  },
+  {
+    "key": "en:reduced-sugar",
+    "name": "Manje šećera"
   },
   {
     "key": "en:max-havelaar",
@@ -154,6 +266,10 @@
   {
     "key": "en:max-havelaar-belgium",
     "name": "Max Havelaar Belgium"
+  },
+  {
+    "key": "en:max-havelaar-denmark",
+    "name": "Max Havelaar Denmark"
   },
   {
     "key": "en:max-havelaar-france",
@@ -166,6 +282,54 @@
   {
     "key": "en:may-have-an-adverse-effect-on-activity-and-attention-in-children",
     "name": "May have an adverse effect on activity and attention in children"
+  },
+  {
+    "key": "en:migros-m-check-environmentally-compatible-constituent-materials-1-5",
+    "name": "Migros M-Check Environmentally Compatible Constituent Materials 1/5"
+  },
+  {
+    "key": "en:migros-m-check-environmentally-compatible-constituent-materials-2-5",
+    "name": "Migros M-Check Environmentally Compatible Constituent Materials 2/5"
+  },
+  {
+    "key": "en:migros-m-check-environmentally-compatible-constituent-materials-3-5",
+    "name": "Migros M-Check Environmentally Compatible Constituent Materials 3/5"
+  },
+  {
+    "key": "en:migros-m-check-environmentally-compatible-constituent-materials-4-5",
+    "name": "Migros M-Check Environmentally Compatible Constituent Materials 4/5"
+  },
+  {
+    "key": "en:migros-m-check-environmentally-compatible-constituent-materials-5-5",
+    "name": "Migros M-Check Environmentally Compatible Constituent Materials 5/5"
+  },
+  {
+    "key": "en:migros-m-check-recyclable-constituent-materials-1-5",
+    "name": "Migros M-Check Recyclable Constituent Materials 1/5"
+  },
+  {
+    "key": "en:migros-m-check-recyclable-constituent-materials-2-5",
+    "name": "Migros M-Check Recyclable Constituent Materials 2/5"
+  },
+  {
+    "key": "en:migros-m-check-recyclable-constituent-materials-3-5",
+    "name": "Migros M-Check Recyclable Constituent Materials 3/5"
+  },
+  {
+    "key": "en:migros-m-check-recyclable-constituent-materials-4-5",
+    "name": "Migros M-Check Recyclable Constituent Materials 4/5"
+  },
+  {
+    "key": "en:migros-m-check-recyclable-constituent-materials-5-5",
+    "name": "Migros M-Check Recyclable Constituent Materials 5/5"
+  },
+  {
+    "key": "en:low-fat",
+    "name": "Nisko u mastima"
+  },
+  {
+    "key": "en:low-saturated-fat",
+    "name": "Nizka vsebnost nasičenih maščob"
   },
   {
     "key": "en:pdo-aceituna-alorena-de-malaga",
@@ -218,6 +382,10 @@
   {
     "key": "en:ukrainian-state-certification-system-conformity-mark-voluntary-certification",
     "name": "Ukrainian state certification system conformity mark (voluntary certification)"
+  },
+  {
+    "key": "en:high-in-omega-3",
+    "name": "Visoka vsebnost omega-3 maščob"
   },
   {
     "key": "en:wine-masters-challenge",

@@ -52,6 +52,10 @@
     "name": "Boletos comestibles troceados congelados"
   },
   {
+    "key": "en:dolce-gusto-compatible-capsules",
+    "name": "Cápsulas compatibles con Dolce Gusto"
+  },
+  {
     "key": "en:dolce-gusto-compatible-coffee-capsules",
     "name": "Cápsulas de café compatibles con Dolce Gusto"
   },
@@ -64,16 +68,16 @@
     "name": "Cápsulas de café compatibles con Senseo"
   },
   {
-    "key": "en:combined-oil",
-    "name": "Combined oil"
-  },
-  {
-    "key": "en:combined-oil-blended-vegetable-oils",
-    "name": "Combined oil (blended vegetable oils)"
+    "key": "en:combination-meals",
+    "name": "Combination Meals"
   },
   {
     "key": "en:comeragh-mountain-lamb",
     "name": "Comeragh Mountain Lamb"
+  },
+  {
+    "key": "en:comice-pears",
+    "name": "Comice pears"
   },
   {
     "key": "en:easter-food",
@@ -82,18 +86,6 @@
   {
     "key": "en:non-dairy-fermented-foods",
     "name": "Comida no láctea fermentada"
-  },
-  {
-    "key": "en:cat-food",
-    "name": "Comida para gatos"
-  },
-  {
-    "key": "en:pet-food",
-    "name": "Comida para mascotas"
-  },
-  {
-    "key": "en:dog-food",
-    "name": "Comida para perros"
   },
   {
     "key": "en:vegetable-based-foods-and-beverages",
@@ -118,6 +110,10 @@
   {
     "key": "en:meals-with-chicken",
     "name": "Comidas con pollo"
+  },
+  {
+    "key": "en:meals-with-salmon",
+    "name": "Comidas con salmón"
   },
   {
     "key": "en:beef-dishes",
@@ -176,7 +172,7 @@
     "name": "Comino en grano"
   },
   {
-    "key": "en:ground-cumin-seedskumin",
+    "key": "en:ground-cumin-seeds",
     "name": "Comino molido"
   },
   {
@@ -208,6 +204,14 @@
     "name": "Common sole"
   },
   {
+    "key": "en:common-wheat-pasta",
+    "name": "Common wheat pasta"
+  },
+  {
+    "key": "en:common-wheat-rusks",
+    "name": "Common wheat rusks"
+  },
+  {
     "key": "en:compotes",
     "name": "Compotas"
   },
@@ -224,20 +228,32 @@
     "name": "Compotas de manzana"
   },
   {
+    "key": "fr:compotes-pommes-mure",
+    "name": "Compotas de manzana y mora"
+  },
+  {
     "key": "en:light-compotes",
     "name": "Compotas ligeras"
   },
   {
     "key": "en:compotes-to-drink",
-    "name": "Compotes to drink"
+    "name": "Compotas para beber"
+  },
+  {
+    "key": "fr:compotes-sans-sucres",
+    "name": "Compotas sin azúcar"
+  },
+  {
+    "key": "en:compound-chocolates",
+    "name": "Compound chocolates"
+  },
+  {
+    "key": "en:compound-dairy-creams",
+    "name": "Compound dairy creams"
   },
   {
     "key": "en:comte",
     "name": "Comté"
-  },
-  {
-    "key": "en:comte-cheese-sandwiches",
-    "name": "Comté cheese sandwiches"
   },
   {
     "key": "en:cooked-common-octopus",
@@ -246,6 +262,18 @@
   {
     "key": "en:fried-common-sole",
     "name": "Fried common sole"
+  },
+  {
+    "key": "en:frozen-common-octopus",
+    "name": "Frozen common octopus"
+  },
+  {
+    "key": "en:frozen-common-sole",
+    "name": "Frozen common sole"
+  },
+  {
+    "key": "en:frozen-cooked-common-octopus",
+    "name": "Frozen cooked common octopus"
   },
   {
     "key": "en:fruits-compote-with-reduced-sugar",
@@ -258,6 +286,10 @@
   {
     "key": "en:grilled-common-sole",
     "name": "Grilled common sole"
+  },
+  {
+    "key": "en:cheeseburgers-from-fast-food-restaurants",
+    "name": "Hamburguesas de queso de restaurantes de comida rápida"
   },
   {
     "key": "en:white-common-wheat-flours",
@@ -280,8 +312,16 @@
     "name": "Mijo común"
   },
   {
-    "key": "en:new-season-comber-potatoes",
-    "name": "New Season Comber Potatoes"
+    "key": "en:not-ready-to-eat-combination-meals",
+    "name": "Not ready to eat combination meals"
+  },
+  {
+    "key": "en:dough-based-meals-variety-packs",
+    "name": "Paquetes surtidos de productos y comidas a base de masa"
+  },
+  {
+    "key": "en:fruits-nuts-seed-variety-packs",
+    "name": "Paquetes variados de combinación de fruta - frutos secos y semillas"
   },
   {
     "key": "en:peach-compotes",
@@ -300,6 +340,14 @@
     "name": "Pure apple compotes"
   },
   {
+    "key": "en:quince-compotes",
+    "name": "Quince compotes"
+  },
+  {
+    "key": "en:ready-to-eat-combination-meals",
+    "name": "Ready to eat combination meals"
+  },
+  {
     "key": "en:refrigerated-fruits-compote-with-reduced-sugar",
     "name": "Refrigerated fruits compote with reduced sugar"
   },
@@ -310,6 +358,10 @@
   {
     "key": "en:roasted-common-sole",
     "name": "Roasted common sole"
+  },
+  {
+    "key": "en:comte-cheese-sandwiches",
+    "name": "Sándwiches de queso Comté"
   },
   {
     "key": "en:steammed-common-sole",
@@ -324,7 +376,15 @@
     "name": "Tassimo-compatible coffee capsules"
   },
   {
+    "key": "en:uht-compound-dairy-creams-with-4-to-8-fat",
+    "name": "UHT compound dairy creams with 4 to 8% fat"
+  },
+  {
     "key": "en:common-vervain",
     "name": "Verbena común"
+  },
+  {
+    "key": "en:vitamin-mineral-combinations",
+    "name": "Vitamin mineral combinations"
   }
 ]

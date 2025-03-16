@@ -4,12 +4,20 @@
     "name": "Café certificado UTZ"
   },
   {
-    "key": "en:calidad-certificada",
-    "name": "Calidad Certificada"
+    "key": "en:certified-quality",
+    "name": "Calidad certificada"
+  },
+  {
+    "key": "en:calidad-certificada-de-andalucia",
+    "name": "Calidad Certificada de Andalucía"
   },
   {
     "key": "en:ccof-certified-organic",
     "name": "CCOF certified organic"
+  },
+  {
+    "key": "fr:porc-fermier-eleve-en-plein-air",
+    "name": "Cerdo de granja criado al aire libre"
   },
   {
     "key": "en:french-pork",
@@ -24,6 +32,10 @@
     "name": "Certificado organico ibd"
   },
   {
+    "key": "en:certified-by-certipaq",
+    "name": "Certificado por Certipaq"
+  },
+  {
     "key": "en:certified-by-ecocert",
     "name": "Certificado por Ecocert"
   },
@@ -36,8 +48,8 @@
     "name": "Certificado UTZ"
   },
   {
-    "key": "en:certified-b-corporation",
-    "name": "Certified B Corporation"
+    "key": "en:welfair-certificate",
+    "name": "Certificado Welfair"
   },
   {
     "key": "en:certified-belgian-abbey-beer",
@@ -54,10 +66,6 @@
   {
     "key": "en:certified-by-certiconfiance",
     "name": "Certified by Certiconfiance"
-  },
-  {
-    "key": "en:certified-by-certipaq",
-    "name": "Certified by Certipaq"
   },
   {
     "key": "en:certified-by-certisys",
@@ -88,16 +96,20 @@
     "name": "Certified iVegan"
   },
   {
+    "key": "en:certified-plant-based",
+    "name": "Certified plant based"
+  },
+  {
     "key": "fr:produit-certifie",
     "name": "Certified product"
   },
   {
-    "key": "en:certified-quality",
-    "name": "Certified quality"
-  },
-  {
     "key": "en:climate-neutral-certified",
     "name": "Climate Neutral Certified"
+  },
+  {
+    "key": "en:certified-b-corporation",
+    "name": "Empresa B certificada"
   },
   {
     "key": "en:napsi-certified",
@@ -118,6 +130,10 @@
   {
     "key": "en:qs-certification-mark",
     "name": "Sello de certificación QS"
+  },
+  {
+    "key": "en:no-garlic-or-onion",
+    "name": "Sin ajo ni cebolla"
   },
   {
     "key": "en:the-central-islamic-committee-of-thailand",
@@ -150,6 +166,10 @@
   {
     "key": "en:utz-certified-cocoa",
     "name": "UTZ Certified Cocoa"
+  },
+  {
+    "key": "en:utz-certified-hazelnut",
+    "name": "UTZ Certified Hazelnut"
   },
   {
     "key": "en:utz-certified-tea",

@@ -80,7 +80,15 @@
     "name": "Américains préparés"
   },
   {
-    "key": "fr:aubergines-preparees",
+    "key": "en:prepared-asparagus",
+    "name": "Asperges préparées"
+  },
+  {
+    "key": "en:prepared-foods-variety-packs",
+    "name": "Assortiments d'aliments préparés"
+  },
+  {
+    "key": "en:prepared-eggplants",
     "name": "Aubergines préparées"
   },
   {
@@ -134,6 +142,10 @@
   {
     "key": "fr:auxey-duresses-premier-cru-les-duresses-rouge-aoc-aop",
     "name": "Auxey-Duresses premier cru Les Duresses rouge AOC - AOP"
+  },
+  {
+    "key": "fr:auxey-duresses-premier-cru-reugne",
+    "name": "Auxey-Duresses premier cru Reugne"
   },
   {
     "key": "fr:auxey-duresses-premier-cru-reugne-blanc",
@@ -516,10 +528,6 @@
     "name": "Blé dur précuit non salé en grains entiers"
   },
   {
-    "key": "en:coconut-based-drink-plain-prepacked",
-    "name": "Boisson à la noix de coco nature préemballée"
-  },
-  {
     "key": "en:instant-cocoa-or-chocolate-beverage-with-sugar-fortified-with-vitamins-and-chemical-elements-ready-to-drink-reconstituted-with-standard-semi-skimm",
     "name": "Boisson cacaotée ou au chocolat instantanée sucrée enrichie en vitamines prête à boire (reconstituée avec du lait demi-écrémé standard)"
   },
@@ -528,8 +536,12 @@
     "name": "Boisson préparée sucrée à partir de sirop à la menthe à diluer dans l'eau"
   },
   {
-    "key": "en:soy-based-sliced",
-    "name": "Bouchées ou émincé au soja et blé (ne convient pas aux véganes ou végétaliens) préemballé"
+    "key": "en:premixed-alcoholic-beverages",
+    "name": "Boissons alcoolisées pré-mélangées"
+  },
+  {
+    "key": "en:beverages-and-beverages-preparations",
+    "name": "Boissons et préparations de boissons"
   },
   {
     "key": "en:dehydrated-broth-with-meat-and-vegetables",
@@ -744,8 +756,24 @@
     "name": "Chassagne-Montrachet premier cru Blanchot Dessus"
   },
   {
+    "key": "fr:chassagne-montrachet-premier-cru-blanchot-dessus-blanc",
+    "name": "Chassagne-Montrachet premier cru Blanchot dessus blanc"
+  },
+  {
+    "key": "fr:chassagne-montrachet-premier-cru-blanchot-dessus-rouge",
+    "name": "Chassagne-Montrachet premier cru Blanchot dessus rouge"
+  },
+  {
     "key": "fr:chassagne-montrachet-premier-cru-bois-de-chassagne",
     "name": "Chassagne-Montrachet premier cru Bois de Chassagne"
+  },
+  {
+    "key": "fr:chassagne-montrachet-premier-cru-bois-de-chassagne-blanc",
+    "name": "Chassagne-Montrachet premier cru Bois de Chassagne blanc"
+  },
+  {
+    "key": "fr:chassagne-montrachet-premier-cru-bois-de-chassagne-rouge",
+    "name": "Chassagne-Montrachet premier cru Bois de Chassagne rouge"
   },
   {
     "key": "fr:chassagne-montrachet-premier-cru-cailleret",
@@ -1316,8 +1344,16 @@
     "name": "Crêpes préemballées fourrées au chocolat"
   },
   {
+    "key": "en:ducks-prepared",
+    "name": "Ducks (prepared)"
+  },
+  {
     "key": "en:snails-preparations",
     "name": "Escargots préparés"
+  },
+  {
+    "key": "en:fish-freshly-prepared",
+    "name": "Fish (Freshly prepared)"
   },
   {
     "key": "fr:fixin-premier-cru-clos-de-la-perriere",
@@ -1364,11 +1400,15 @@
     "name": "Flocons d'avoine précuits"
   },
   {
-    "key": "en:semi-hard-cheeses",
+    "key": "en:pre-cooked-oat-flakes-with-sugar",
+    "name": "Flocons d'avoine précuits sucrés"
+  },
+  {
+    "key": "en:semi-hard-cheeses-from-ewe-s-milk",
     "name": "Fromage de brebis à pâte pressée"
   },
   {
-    "key": "en:cooked-pressed-cheeses",
+    "key": "en:hard-cheeses",
     "name": "Fromages à pâte pressée cuite"
   },
   {
@@ -1380,8 +1420,16 @@
     "name": "Fromages à pâte pressée non cuite"
   },
   {
-    "key": "fr:fruit-preserves-with-chocolate",
-    "name": "Fruit preserves with chocolate"
+    "key": "en:frozen-dough-based-meals-to-prepare",
+    "name": "Frozen dough based meals (to prepare)"
+  },
+  {
+    "key": "en:frozen-prepared-shellfish",
+    "name": "Frozen prepared shellfish"
+  },
+  {
+    "key": "en:fruit-based-foods-prepared",
+    "name": "Fruit based foods (prepared)"
   },
   {
     "key": "fr:gaillac-premieres-cotes",
@@ -1880,10 +1928,6 @@
     "name": "Lentilles préparées"
   },
   {
-    "key": "en:prepared-vegetables-macedoines",
-    "name": "Macédoines de légumes préparées"
-  },
-  {
     "key": "fr:maranges-premier-cru",
     "name": "Maranges premier cru"
   },
@@ -1990,6 +2034,14 @@
   {
     "key": "fr:mercurey-premier-cru-les-byots",
     "name": "Mercurey premier cru Les Byots"
+  },
+  {
+    "key": "fr:mercurey-premier-cru-les-byots-blanc",
+    "name": "Mercurey premier cru Les Byots blanc"
+  },
+  {
+    "key": "fr:mercurey-premier-cru-les-byots-rouge",
+    "name": "Mercurey premier cru Les Byots rouge"
   },
   {
     "key": "fr:mercurey-premier-cru-les-champs-martin",
@@ -2636,8 +2688,8 @@
     "name": "Morey-Saint-Denis premier cru rouge"
   },
   {
-    "key": "en:soybean-and-wheat-based-nuggets-vegan",
-    "name": "Nuggets soja et blé (convient aux véganes ou végétaliens) préemballé"
+    "key": "en:non-frozen-dough-based-meals-to-prepare",
+    "name": "Non-frozen dough based meals (to prepare)"
   },
   {
     "key": "fr:nuits-saint-georges-aux-vignerondes-premier-cru-aux-vignerondes",
@@ -3152,8 +3204,16 @@
     "name": "Pain au chocolat préemballé"
   },
   {
+    "key": "en:frozen-pre-baked-hamburger-buns",
+    "name": "Pains Burger précuits surgelés"
+  },
+  {
     "key": "en:pre-baked-breads",
     "name": "Pains précuits"
+  },
+  {
+    "key": "en:frozen-pre-baked-breads",
+    "name": "Pains précuits surgelés"
   },
   {
     "key": "en:frozen-pre-fried-cooked-vegetable-rosti",
@@ -3304,6 +3364,10 @@
     "name": "Plats préparés en conserve"
   },
   {
+    "key": "en:canned-meals-with-meat",
+    "name": "Plats préparés en conserve à la viande"
+  },
+  {
     "key": "en:fresh-meals",
     "name": "Plats préparés frais"
   },
@@ -3314,6 +3378,10 @@
   {
     "key": "en:frozen-ready-made-meals",
     "name": "Plats préparés surgelés"
+  },
+  {
+    "key": "en:frozen-meals-with-meat",
+    "name": "Plats préparés surgelés à la viande"
   },
   {
     "key": "en:pre-fried-potatoes-pan-fried-with-chicken",
@@ -3336,8 +3404,16 @@
     "name": "Pommes de terre normales préfrites surgelées"
   },
   {
+    "key": "en:prepared-potatoes",
+    "name": "Pommes de terre préparées"
+  },
+  {
     "key": "en:precooked-potatoes",
     "name": "Pommes de terres précuites"
+  },
+  {
+    "key": "en:pork-prepared",
+    "name": "Pork (prepared)"
   },
   {
     "key": "en:pre-food",
@@ -3360,8 +3436,8 @@
     "name": "Premières-côtes-de-bordeaux"
   },
   {
-    "key": "en:premixed-alcoholic-beverages",
-    "name": "Premixed alcoholic beverages"
+    "key": "fr:preparation-pour-bavarois",
+    "name": "Préparation pour bavarois"
   },
   {
     "key": "en:base-formulation-for-chocolate-mousse",
@@ -3468,6 +3544,26 @@
     "name": "Préparations de viande surgelées"
   },
   {
+    "key": "en:banana-bread-mixes",
+    "name": "Préparations pour banana bread"
+  },
+  {
+    "key": "en:biscuit-mixes",
+    "name": "Préparations pour biscuits"
+  },
+  {
+    "key": "en:beverage-preparations",
+    "name": "Préparations pour boissons"
+  },
+  {
+    "key": "en:brownies-mixes",
+    "name": "Préparations pour Brownies"
+  },
+  {
+    "key": "en:cookies-mixes",
+    "name": "Préparations pour cookies"
+  },
+  {
     "key": "en:mixes-for-dessert-creams",
     "name": "Préparations pour crèmes dessert"
   },
@@ -3508,6 +3604,10 @@
     "name": "Préparations pour Milk-shakes"
   },
   {
+    "key": "en:gluten-free-bread-mixes",
+    "name": "Préparations pour pain sans gluten"
+  },
+  {
     "key": "en:mixes-for-panna-cotta",
     "name": "Préparations pour panna cotta"
   },
@@ -3516,8 +3616,52 @@
     "name": "Préparations pour thés glacés"
   },
   {
+    "key": "en:prepared-alternate-meats",
+    "name": "Prepared alternate meats"
+  },
+  {
+    "key": "en:prepared-alternate-meats-broad",
+    "name": "Prepared alternate meats (broad)"
+  },
+  {
+    "key": "en:prepared-carrots",
+    "name": "Prepared carrots"
+  },
+  {
     "key": "en:prepared-fish",
     "name": "Prepared fish"
+  },
+  {
+    "key": "en:prepared-fresh-fruits",
+    "name": "Prepared fresh fruits"
+  },
+  {
+    "key": "en:prepared-frozen-fruits",
+    "name": "Prepared frozen fruits"
+  },
+  {
+    "key": "en:prepared-shelled-nuts-and-seeds",
+    "name": "Prepared shelled nuts and seeds"
+  },
+  {
+    "key": "en:prepared-snails",
+    "name": "Prepared snails"
+  },
+  {
+    "key": "en:prepared-spinachs",
+    "name": "Prepared spinachs"
+  },
+  {
+    "key": "en:prepared-sweet-potatoes",
+    "name": "Prepared sweet potatoes"
+  },
+  {
+    "key": "en:prepared-unshelled-nuts-or-seeds",
+    "name": "Prepared unshelled nuts or seeds"
+  },
+  {
+    "key": "en:prepared-veal-meat",
+    "name": "Prepared veal meat"
   },
   {
     "key": "fr:pres-sales-de-la-baie-de-somme",
@@ -3658,6 +3802,18 @@
   {
     "key": "fr:puligny-montrachet-premier-cru-sous-le-puits-blanc",
     "name": "Puligny-Montrachet premier cru Sous le Puits blanc"
+  },
+  {
+    "key": "en:refrigerated-fruit-and-vegetable-preserves",
+    "name": "Refrigerated fruit and vegetable preserves"
+  },
+  {
+    "key": "en:refrigerated-prepared-shellfish",
+    "name": "Refrigerated prepared shellfish"
+  },
+  {
+    "key": "en:rice-puddings-with-a-fruit-preparation",
+    "name": "Riz au lait à la préparation de fruits"
   },
   {
     "key": "en:frozen-pre-cooked-rice",
@@ -4736,16 +4892,48 @@
     "name": "Savigny-lès-Beaune premier cru rouge"
   },
   {
+    "key": "en:shelf-stable-prepared-aquatic-invertebrates",
+    "name": "Shelf-stable prepared aquatic invertebrates"
+  },
+  {
+    "key": "en:shelf-stable-prepared-fruit-nuts-and-seeds-mixes",
+    "name": "Shelf-stable prepared fruit nuts and seeds Mixes"
+  },
+  {
+    "key": "en:shelf-stable-prepared-shellfish",
+    "name": "Shelf-stable prepared shellfish"
+  },
+  {
+    "key": "en:soups-prepared-shelf-stable",
+    "name": "Soups (prepared) (Shelf Stable)"
+  },
+  {
     "key": "en:low-calorie-ready-to-drink-meal-replacement",
     "name": "Substitut de repas hypocalorique prêt à boire"
+  },
+  {
+    "key": "en:pressurized-whipped-cream-substitutes",
+    "name": "Substituts de crème fouettée sous pression"
+  },
+  {
+    "key": "en:tartlet-biscuits-with-fruit-preparation",
+    "name": "Tartelettes à la préparation de fruits"
   },
   {
     "key": "en:albacore-steamed-under-pressure",
     "name": "Thon germon cuit à la vapeur sous pression"
   },
   {
+    "key": "en:prepared-bruschetta-toasts",
+    "name": "Toasts bruschetta préparés"
+  },
+  {
     "key": "en:prepackaged-caen-style-tripes",
     "name": "Tripes à la mode de Caen préemballées"
+  },
+  {
+    "key": "en:vegetables-freshly-prepared",
+    "name": "Vegetables (freshly prepared)"
   },
   {
     "key": "fr:volnay-premier-cru",

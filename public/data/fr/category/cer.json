@@ -4,15 +4,15 @@
     "name": "Amidons de céréales"
   },
   {
-    "key": "en:cereal-bar-with-almonds",
+    "key": "en:cereal-variety-packs",
+    "name": "Assortiments de céréales - grains et légumes secs"
+  },
+  {
+    "key": "en:cereal-bars-with-almonds",
     "name": "Barre céréalière aux amandes"
   },
   {
-    "key": "en:cereal-bar-with-almonds-or-hazelnuts",
-    "name": "Barre céréalière aux amandes ou aux noisettes"
-  },
-  {
-    "key": "en:cereal-bar-with-hazelnuts",
+    "key": "en:cereal-bars-with-hazelnuts",
     "name": "Barre céréalière aux noisettes"
   },
   {
@@ -28,11 +28,7 @@
     "name": "Barre de céréales au chocolat renforcée en vitamines et minéraux"
   },
   {
-    "key": "en:milky-cereal-breakfast-bar-with-chocolate-fortified-with-vitamins-and-minerals",
-    "name": "Barre de céréales au lait et au chocolat"
-  },
-  {
-    "key": "fr:barres-chocolatees-au-lait-et-aux-cereales",
+    "key": "en:chocolate-covered-bars-with-milk-and-cereals",
     "name": "Barres chocolatées au lait et aux céréales"
   },
   {
@@ -64,7 +60,7 @@
     "name": "Barres de céréales aux fruits"
   },
   {
-    "key": "en:nuts-cereal-bars",
+    "key": "en:cereal-bars-with-nuts",
     "name": "Barres de céréales aux fruits à coques"
   },
   {
@@ -76,7 +72,7 @@
     "name": "Barres de céréales aux fruits et fruits à coques"
   },
   {
-    "key": "en:cherry-beers",
+    "key": "en:cherry-kriek-beers",
     "name": "Bières à la cerise"
   },
   {
@@ -112,7 +108,7 @@
     "name": "Boissons infantile lactée aux céréales"
   },
   {
-    "key": "en:cereal-milks",
+    "key": "en:cereal-based-drinks",
     "name": "Boissons végétales de céréales"
   },
   {
@@ -360,12 +356,20 @@
     "name": "Cerises dénoyautées"
   },
   {
+    "key": "en:pitted-dried-cherries",
+    "name": "Cerises dénoyautées séchées"
+  },
+  {
     "key": "en:chocolate-covered-cherries",
     "name": "Cerises enrobées au chocolat"
   },
   {
     "key": "en:fresh-cherries",
     "name": "Cerises fraîches"
+  },
+  {
+    "key": "en:dried-cherries",
+    "name": "Cerises séchées"
   },
   {
     "key": "en:walnut-kernels",
@@ -440,6 +444,14 @@
     "name": "Confitures de cerises"
   },
   {
+    "key": "en:german-grain-spirit",
+    "name": "Eau-de-vie de céréales allemande"
+  },
+  {
+    "key": "en:grain-spirits",
+    "name": "Eaux-de-vie de céréales"
+  },
+  {
     "key": "en:cereal-flours",
     "name": "Farines de céréales"
   },
@@ -454,6 +466,10 @@
   {
     "key": "en:cereal-flakes",
     "name": "Flocons de céréales"
+  },
+  {
+    "key": "en:frozen-cereals-and-their-products",
+    "name": "Frozen cereals and their products"
   },
   {
     "key": "en:cereals-and-vegetables-patties",
@@ -504,7 +520,7 @@
     "name": "Nectars de cerise"
   },
   {
-    "key": "fr:noisette-de-cervione",
+    "key": "en:hazelnuts-from-cervione",
     "name": "Noisette de Cervione"
   },
   {
@@ -512,8 +528,16 @@
     "name": "Nonnettes à la cerise"
   },
   {
+    "key": "en:packaged-cereals",
+    "name": "Packaged cereals"
+  },
+  {
     "key": "en:french-bread-multigrain-from-bakery",
     "name": "Pain artisanal aux céréales et graines"
+  },
+  {
+    "key": "en:breads-mith-malted-grains",
+    "name": "Pains de céréales germées"
   },
   {
     "key": "en:multigrain-sliced-breads",
@@ -554,6 +578,10 @@
   {
     "key": "en:cereal-flakes-with-nuts",
     "name": "Pétales de céréales aux fruits à coques"
+  },
+  {
+    "key": "en:processed-cereals",
+    "name": "Processed cereals"
   },
   {
     "key": "en:cereal-butters",

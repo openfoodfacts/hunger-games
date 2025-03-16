@@ -32,11 +32,11 @@
     "name": "Boissons aux fruits et au lait végetal"
   },
   {
-    "key": "en:plant-milks",
+    "key": "en:plant-based-milk-alternatives",
     "name": "Boissons végétales"
   },
   {
-    "key": "en:canary-grass-milks",
+    "key": "en:canary-grass-based-drinks",
     "name": "Boissons végétales d'alpiste"
   },
   {
@@ -48,11 +48,11 @@
     "name": "Boissons végétales d'amarante en poudre"
   },
   {
-    "key": "en:vanilla-oat-milks",
+    "key": "en:vanilla-oat-based-drinks",
     "name": "Boissons végétales d'avoine à la vanille"
   },
   {
-    "key": "en:cocoa-oat-milks",
+    "key": "en:cocoa-oat-based-drinks",
     "name": "Boissons végétales d'avoine au cacao"
   },
   {
@@ -60,15 +60,15 @@
     "name": "Boissons végétales d'avoine en poudre"
   },
   {
-    "key": "en:unsweetened-natural-oat-milks",
+    "key": "en:unsweetened-plain-oat-based-drinks",
     "name": "Boissons végétales d'avoine nature non sucrées"
   },
   {
-    "key": "en:sweetened-natural-oat-milks",
+    "key": "en:sweetened-plain-oat-based-drinks",
     "name": "Boissons végétales d'avoine nature sucrées"
   },
   {
-    "key": "en:spelt-milks",
+    "key": "en:spelt-based-drinks",
     "name": "Boissons végétales d'épeautre"
   },
   {
@@ -76,11 +76,11 @@
     "name": "Boissons végétales d'épeautre en poudre"
   },
   {
-    "key": "en:barley-milks",
+    "key": "en:barley-based-drinks",
     "name": "Boissons végétales d'orge"
   },
   {
-    "key": "en:wheat-milks",
+    "key": "en:wheat-based-drinks",
     "name": "Boissons végétales de blé"
   },
   {
@@ -88,11 +88,11 @@
     "name": "Boissons végétales de blé en poudre"
   },
   {
-    "key": "en:khorasan-wheat-milks",
+    "key": "en:khorasan-wheat-based-drinks",
     "name": "Boissons végétales de blé khorasan"
   },
   {
-    "key": "en:cereal-milks",
+    "key": "en:cereal-based-drinks",
     "name": "Boissons végétales de céréales"
   },
   {
@@ -100,11 +100,11 @@
     "name": "Boissons végétales de céréales en poudre"
   },
   {
-    "key": "en:hemp-milks",
+    "key": "en:hemp-based-drinks",
     "name": "Boissons végétales de chanvre"
   },
   {
-    "key": "en:chestnut-milks",
+    "key": "en:chestnut-based-drinks",
     "name": "Boissons végétales de châtaigne"
   },
   {
@@ -112,7 +112,11 @@
     "name": "Boissons végétales de châtaigne en poudre"
   },
   {
-    "key": "en:nut-milks",
+    "key": "en:coconut-based-drinks",
+    "name": "Boissons végétales de coco"
+  },
+  {
+    "key": "en:nut-based-drinks",
     "name": "Boissons végétales de fruits à coque"
   },
   {
@@ -120,7 +124,7 @@
     "name": "Boissons végétales de fruits à coque en poudre"
   },
   {
-    "key": "en:legume-milks",
+    "key": "en:legume-based-drinks",
     "name": "Boissons végétales de légumineuses"
   },
   {
@@ -132,7 +136,7 @@
     "name": "Boissons végétales de millet en poudre"
   },
   {
-    "key": "en:hazelnut-milks",
+    "key": "en:hazelnut-based-drinks",
     "name": "Boissons végétales de noisette"
   },
   {
@@ -140,11 +144,11 @@
     "name": "Boissons végétales de noisettes en poudre"
   },
   {
-    "key": "en:walnut-milks",
+    "key": "en:walnut-based-drinks",
     "name": "Boissons végétales de noix"
   },
   {
-    "key": "en:macadamia-nut-milks",
+    "key": "en:macadamia-nut-based-drinks",
     "name": "Boissons végétales de noix de macadamia"
   },
   {
@@ -160,11 +164,11 @@
     "name": "Boissons végétales de quinoa en poudre"
   },
   {
-    "key": "en:vanilla-rice-milks",
+    "key": "en:vanilla-rice-based-drinks",
     "name": "Boissons végétales de riz à la vanille"
   },
   {
-    "key": "en:cocoa-rice-milks",
+    "key": "en:cocoa-rice-based-drinks",
     "name": "Boissons végétales de riz au cacao"
   },
   {
@@ -172,11 +176,11 @@
     "name": "Boissons végétales de riz en poudre"
   },
   {
-    "key": "en:natural-rice-milks",
+    "key": "en:plain-rice-based-drinks",
     "name": "Boissons végétales de riz nature"
   },
   {
-    "key": "en:sesame-milks",
+    "key": "en:sesame-based-drinks",
     "name": "Boissons végétales de sésame"
   },
   {
@@ -184,19 +188,19 @@
     "name": "Boissons végétales de sésame en poudre"
   },
   {
-    "key": "en:soy-milks",
+    "key": "en:soy-based-drinks",
     "name": "Boissons végétales de soja"
   },
   {
-    "key": "en:vanilla-soy-milks",
+    "key": "en:vanilla-soy-based-drinks",
     "name": "Boissons végétales de soja à la vanille"
   },
   {
-    "key": "en:chocolate-soy-milks",
+    "key": "en:chocolate-soy-based-drinks",
     "name": "Boissons végétales de soja au chocolat"
   },
   {
-    "key": "en:coffee-soy-milks",
+    "key": "en:coffee-soy-based-drinks",
     "name": "Boissons végétales de soja avec du café"
   },
   {
@@ -204,11 +208,11 @@
     "name": "Boissons végétales de soja en poudre"
   },
   {
-    "key": "en:tigernut-milks",
+    "key": "en:tigernut-based-drinks",
     "name": "Boissons végétales de souchet"
   },
   {
-    "key": "en:teff-milks",
+    "key": "en:teff-based-drinks",
     "name": "Boissons végétales de teff"
   },
   {
@@ -220,12 +224,12 @@
     "name": "Boissons végétales en poudre"
   },
   {
-    "key": "en:soy-based-sliced",
-    "name": "Bouchées ou émincé au soja et blé (ne convient pas aux véganes ou végétaliens) préemballé"
-  },
-  {
     "key": "en:vegetarian-balls",
     "name": "Boulettes végétariennes"
+  },
+  {
+    "key": "en:frozen-vegetarian-balls",
+    "name": "Boulettes végétariennes surgelées"
   },
   {
     "key": "en:vegetarian-skewers",
@@ -328,6 +332,10 @@
     "name": "Frozen meat and vegetable mixes"
   },
   {
+    "key": "en:frozen-vegetable-juices",
+    "name": "Frozen vegetable juices"
+  },
+  {
     "key": "en:frozen-vegetables-for-paella",
     "name": "Frozen vegetables for paella"
   },
@@ -340,12 +348,12 @@
     "name": "Galettes végétariennes"
   },
   {
-    "key": "nl:plantbased-gelatin",
-    "name": "Gélifiants végétaux"
+    "key": "en:frozen-vegetarian-patties",
+    "name": "Galettes végétariennes surgelées"
   },
   {
-    "key": "en:german-vegetables",
-    "name": "German vegetables"
+    "key": "en:plantbased-gelatin",
+    "name": "Gélifiants végétaux"
   },
   {
     "key": "en:soy-based-minced-prepacked",
@@ -356,12 +364,20 @@
     "name": "Hachés végétaux"
   },
   {
+    "key": "en:frozen-vegetarian-grounds",
+    "name": "Hachés végétaux surgelés"
+  },
+  {
     "key": "en:vegetarian-hamburgers",
     "name": "Hamburgers végétariens"
   },
   {
     "key": "en:vegetarian-hot-dog-sandwiches",
     "name": "Hot-dogs végétariens"
+  },
+  {
+    "key": "en:hydrogenated-vegetable-oil",
+    "name": "Huiles végétales hydrogénées"
   },
   {
     "key": "en:vegetarian-lasagne",
@@ -464,16 +480,20 @@
     "name": "Mousses au chocolat végétaliennes"
   },
   {
-    "key": "en:soybean-and-wheat-based-nuggets-vegan",
-    "name": "Nuggets soja et blé (convient aux véganes ou végétaliens) préemballé"
-  },
-  {
     "key": "en:vegan-nuggets",
     "name": "Nuggets végans"
   },
   {
     "key": "en:vegetarian-nuggets",
     "name": "Nuggets végétariens"
+  },
+  {
+    "key": "en:frozen-vegetarian-nuggets",
+    "name": "Nuggets végétariens surgelés"
+  },
+  {
+    "key": "en:vegan-panna-cotta",
+    "name": "Panna cotta végétaliennes"
   },
   {
     "key": "en:baked-shortcrust-pastry-with-vegetable-oil",
@@ -486,6 +506,10 @@
   {
     "key": "en:raw-puff-pastry",
     "name": "Pâte feuilletée crue à la matière grasse végétale"
+  },
+  {
+    "key": "en:shortbread-dough-with-vegetable-fats",
+    "name": "Pâte sablée crue à la matière grasse végétale"
   },
   {
     "key": "en:plant-based-spreads",
@@ -512,8 +536,20 @@
     "name": "Piment végétarien"
   },
   {
+    "key": "en:plant-based-pizzas",
+    "name": "Pizzas végétales"
+  },
+  {
+    "key": "en:vegetarian-pizzas",
+    "name": "Pizzas végétariennes"
+  },
+  {
     "key": "en:plant-based-meals",
     "name": "Plats préparés d'origine végétale"
+  },
+  {
+    "key": "en:vegan-products",
+    "name": "Produits veganes"
   },
   {
     "key": "en:non-dairy-fermented-foods",
@@ -524,8 +560,16 @@
     "name": "Protéine végétale texturée"
   },
   {
-    "key": "en:raw-vegetable-sandwiches",
-    "name": "Raw vegetable sandwiches"
+    "key": "en:refrigerated-fruit-and-vegetable-preserves",
+    "name": "Refrigerated fruit and vegetable preserves"
+  },
+  {
+    "key": "en:refrigerated-vegetable-fats",
+    "name": "Refrigerated vegetable fats"
+  },
+  {
+    "key": "en:refrigerated-vegetable-juices",
+    "name": "Refrigerated vegetable juices"
   },
   {
     "key": "en:reheatable-vegetable-soups",
@@ -580,7 +624,7 @@
     "name": "Saucisses végétariennes de Francfort"
   },
   {
-    "key": "en:vegetarian-sausages-from-tofu",
+    "key": "en:vegan-sausages-from-tofu",
     "name": "Saucisses végétariennes de tofu"
   },
   {
@@ -596,6 +640,10 @@
     "name": "Semoules au lait végétaliennes"
   },
   {
+    "key": "en:shelf-stable-vegetable-fats",
+    "name": "Shelf-stable vegetable fats"
+  },
+  {
     "key": "en:vegetarian-spreads-with-meat-like-pieces",
     "name": "Tartinades avec des morceaux végétariens"
   },
@@ -604,16 +652,44 @@
     "name": "Tartinades véganes aux légumes"
   },
   {
+    "key": "en:vegetarian-vegetable-and-cheese-spreads",
+    "name": "Tartinades végétariennes aux légumes et fromage"
+  },
+  {
+    "key": "en:vegetarian-double-crust-pies",
+    "name": "Tourtes végétariennes"
+  },
+  {
+    "key": "en:treated-vegetable-juices",
+    "name": "Treated vegetable juices"
+  },
+  {
     "key": "en:vegan-hot-dog-saucages",
     "name": "Vegan hot dog saucages"
   },
   {
-    "key": "en:vegan-saucages",
-    "name": "Vegan saucages"
+    "key": "en:vegan-sausages",
+    "name": "Vegan sausages"
+  },
+  {
+    "key": "en:vegetable-based-frozen-ready-made-meals",
+    "name": "Vegetable based frozen ready-made meals"
   },
   {
     "key": "en:vegetable-oil-sprays",
     "name": "Vegetable oil sprays"
+  },
+  {
+    "key": "en:vegetables-freshly-prepared",
+    "name": "Vegetables (freshly prepared)"
+  },
+  {
+    "key": "en:vegetables-from-italy",
+    "name": "Vegetables from Italy"
+  },
+  {
+    "key": "en:vegetarian-meals",
+    "name": "Vegetarian meals"
   },
   {
     "key": "en:vegetarian-wraps",

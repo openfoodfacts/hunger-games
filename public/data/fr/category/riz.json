@@ -4,15 +4,19 @@
     "name": "Amidon de riz"
   },
   {
-    "key": "en:rice-milks",
+    "key": "en:rice-crackers",
+    "name": "Biscuits apéritifs au riz"
+  },
+  {
+    "key": "en:rice-based-drinks",
     "name": "Boissons au riz"
   },
   {
-    "key": "en:vanilla-rice-milks",
+    "key": "en:vanilla-rice-based-drinks",
     "name": "Boissons végétales de riz à la vanille"
   },
   {
-    "key": "en:cocoa-rice-milks",
+    "key": "en:cocoa-rice-based-drinks",
     "name": "Boissons végétales de riz au cacao"
   },
   {
@@ -20,11 +24,11 @@
     "name": "Boissons végétales de riz en poudre"
   },
   {
-    "key": "en:natural-rice-milks",
+    "key": "en:plain-rice-based-drinks",
     "name": "Boissons végétales de riz nature"
   },
   {
-    "key": "en:rice-in-a-box",
+    "key": "en:rice-in-pots",
     "name": "Box de riz"
   },
   {
@@ -120,6 +124,10 @@
     "name": "Mélanges de riz"
   },
   {
+    "key": "en:fried-unsalted-rice-noodles",
+    "name": "Nouilles de riz sautées non salées"
+  },
+  {
     "key": "en:rice-pasta",
     "name": "Pâtes de riz"
   },
@@ -150,6 +158,14 @@
   {
     "key": "en:rice-puddings",
     "name": "Riz au lait"
+  },
+  {
+    "key": "en:rice-puddings-with-a-fruit-preparation",
+    "name": "Riz au lait à la préparation de fruits"
+  },
+  {
+    "key": "en:plain-rice-puddings",
+    "name": "Riz au lait nature"
   },
   {
     "key": "en:vanilla-flavored-rice-pudding",
@@ -185,7 +201,11 @@
   },
   {
     "key": "en:brown-basmati-rices",
-    "name": "Riz Basmati bruns"
+    "name": "Riz Basmati complet"
+  },
+  {
+    "key": "en:semi-milled-basmati-rices",
+    "name": "Riz Basmati semi-complet"
   },
   {
     "key": "en:white-rices",
@@ -216,12 +236,24 @@
     "name": "Riz Bomba"
   },
   {
+    "key": "en:calrose-rices",
+    "name": "Riz Calrose"
+  },
+  {
+    "key": "en:camolino-rices",
+    "name": "Riz Camolino"
+  },
+  {
     "key": "en:fried-rice",
     "name": "Riz cantonais"
   },
   {
     "key": "en:carnaroli-rices",
     "name": "Riz Carnaroli"
+  },
+  {
+    "key": "en:carolino-rices",
+    "name": "Riz Carolino"
   },
   {
     "key": "en:brown-rices",
@@ -240,6 +272,14 @@
     "name": "Riz de Camargue"
   },
   {
+    "key": "en:brown-camargue-rices",
+    "name": "Riz de Camargue complet"
+  },
+  {
+    "key": "en:semi-milled-camargue-rices",
+    "name": "Riz de Camargue semi-complet"
+  },
+  {
     "key": "en:indica-rices",
     "name": "Riz de variété indica"
   },
@@ -252,8 +292,16 @@
     "name": "Riz étuvé"
   },
   {
+    "key": "en:fermented-rices",
+    "name": "Riz fermenté"
+  },
+  {
     "key": "en:glutinous-rices",
     "name": "Riz gluant"
+  },
+  {
+    "key": "en:kolam-rices",
+    "name": "Riz Kolam"
   },
   {
     "key": "en:koshihikari-rices",
@@ -272,12 +320,28 @@
     "name": "Riz Originario"
   },
   {
+    "key": "en:osmancik-rices",
+    "name": "Riz Osmancik"
+  },
+  {
     "key": "en:paddy-rices",
     "name": "Riz paddy"
   },
   {
     "key": "en:aromatic-rices",
     "name": "Riz parfumés"
+  },
+  {
+    "key": "en:parmal-rices",
+    "name": "Riz Parmal"
+  },
+  {
+    "key": "en:patna-rices",
+    "name": "Riz Patna"
+  },
+  {
+    "key": "en:pilavlik-rices",
+    "name": "Riz pilavlik"
   },
   {
     "key": "en:rices-for-paella",
@@ -328,6 +392,10 @@
     "name": "Riz rouge du Bhoutan"
   },
   {
+    "key": "en:sant-andrea-rices",
+    "name": "Riz Sant'Andrea"
+  },
+  {
     "key": "en:wild-rice",
     "name": "Riz sauvage"
   },
@@ -336,8 +404,16 @@
     "name": "Riz sauvage cuit non salé"
   },
   {
+    "key": "en:semi-milled-rices",
+    "name": "Riz semi-complet"
+  },
+  {
     "key": "en:senia-rices",
     "name": "Riz Sénia"
+  },
+  {
+    "key": "en:sona-masoori-rices",
+    "name": "Riz Sona Masoori"
   },
   {
     "key": "en:puffed-rice",
@@ -356,8 +432,16 @@
     "name": "Riz soufflé chocolaté non enrichi en vitamines et minéraux"
   },
   {
+    "key": "en:plain-puffed-rice",
+    "name": "Riz soufflé nature"
+  },
+  {
     "key": "en:puffed-rice-fortified-with-vitamins-and-chemical-elements",
     "name": "Riz soufflé nature enrichi en vitamines et minéraux"
+  },
+  {
+    "key": "en:sweetened-puffed-rice",
+    "name": "Riz soufflé sucré"
   },
   {
     "key": "en:surinam-rices",
@@ -377,7 +461,11 @@
   },
   {
     "key": "en:brown-jasmine-rices",
-    "name": "Riz thaï noir"
+    "name": "Riz thaï complet"
+  },
+  {
+    "key": "en:semi-milled-jasmine-rices",
+    "name": "Riz thaï semi-complet"
   },
   {
     "key": "en:vialone-nano-rices",

@@ -60,6 +60,10 @@
     "name": "Brown Basmati rices"
   },
   {
+    "key": "en:brown-camargue-rices",
+    "name": "Brown Camargue rices"
+  },
+  {
     "key": "en:brown-jasmine-rices",
     "name": "Brown Jasmine rices"
   },
@@ -68,8 +72,16 @@
     "name": "Brown rices"
   },
   {
+    "key": "en:calrose-rices",
+    "name": "Calrose rices"
+  },
+  {
     "key": "en:camargue-rices",
     "name": "Camargue rices"
+  },
+  {
+    "key": "en:camolino-rices",
+    "name": "Camolino rices"
   },
   {
     "key": "en:canned-rice-puddings",
@@ -82,6 +94,10 @@
   {
     "key": "en:carnaroli-rices",
     "name": "Carnaroli rices"
+  },
+  {
+    "key": "en:carolino-rices",
+    "name": "Carolino rices"
   },
   {
     "key": "en:chocolate-puffed-rice",
@@ -104,8 +120,8 @@
     "name": "Cocoa rice desserts"
   },
   {
-    "key": "en:cocoa-rice-milks",
-    "name": "Cocoa rice milks"
+    "key": "en:cocoa-rice-based-drinks",
+    "name": "Cocoa rice-based drinks"
   },
   {
     "key": "en:coffees-from-costa-rica",
@@ -124,12 +140,16 @@
     "name": "Dairy dessert for baby with rice"
   },
   {
-    "key": "en:dried-rice-noodles",
-    "name": "Dried rice noodles"
+    "key": "en:fermented-rices",
+    "name": "Fermented rices"
   },
   {
     "key": "en:fried-rice",
     "name": "Fried rice"
+  },
+  {
+    "key": "en:fried-unsalted-rice-noodles",
+    "name": "Fried unsalted rice noodles"
   },
   {
     "key": "en:frozen-pre-cooked-rice",
@@ -160,6 +180,10 @@
     "name": "Jasmine rice"
   },
   {
+    "key": "en:kolam-rices",
+    "name": "Kolam rices"
+  },
+  {
     "key": "en:koshihikari-rices",
     "name": "Koshihikari rices"
   },
@@ -176,12 +200,12 @@
     "name": "Mixed rices"
   },
   {
-    "key": "en:natural-rice-milks",
-    "name": "Natural rice milks"
-  },
-  {
     "key": "en:originario-rices",
     "name": "Originario rices"
+  },
+  {
+    "key": "en:osmancik-rices",
+    "name": "Osmancik rices"
   },
   {
     "key": "en:paddy-rices",
@@ -196,6 +220,30 @@
     "name": "Parboiled white rices"
   },
   {
+    "key": "en:parmal-rices",
+    "name": "Parmal rices"
+  },
+  {
+    "key": "en:patna-rices",
+    "name": "Patna rices"
+  },
+  {
+    "key": "en:pilavlik-rices",
+    "name": "Pilavlik rices"
+  },
+  {
+    "key": "en:plain-puffed-rice",
+    "name": "Plain puffed rice"
+  },
+  {
+    "key": "en:plain-rice-puddings",
+    "name": "Plain rice puddings"
+  },
+  {
+    "key": "en:plain-rice-based-drinks",
+    "name": "Plain rice-based drinks"
+  },
+  {
     "key": "en:powdered-rice-milks",
     "name": "Powdered rice milks"
   },
@@ -206,10 +254,6 @@
   {
     "key": "en:prepared-rices",
     "name": "Prepared rices"
-  },
-  {
-    "key": "en:puffed-rice",
-    "name": "Puffed rice"
   },
   {
     "key": "en:puffed-rice-cakes",
@@ -240,6 +284,10 @@
     "name": "Puffed wholegrain rice cakes"
   },
   {
+    "key": "en:ravioli-with-ricotta-and-spinach",
+    "name": "Ravioli with ricotta and spinach"
+  },
+  {
     "key": "en:red-rice-vinegars",
     "name": "Red rice vinegars"
   },
@@ -260,6 +308,10 @@
     "name": "Ricciarelli"
   },
   {
+    "key": "en:rice",
+    "name": "Rice"
+  },
+  {
     "key": "en:rice-beans",
     "name": "Rice beans"
   },
@@ -274,6 +326,10 @@
   {
     "key": "en:rice-chocolates",
     "name": "Rice chocolates"
+  },
+  {
+    "key": "en:rice-crackers",
+    "name": "Rice crackers"
   },
   {
     "key": "en:rice-desserts",
@@ -292,16 +348,12 @@
     "name": "Rice flours"
   },
   {
-    "key": "en:rice-in-a-box",
-    "name": "Rice in a box"
+    "key": "en:rice-in-pots",
+    "name": "Rice in pots"
   },
   {
     "key": "en:rice-milk-chocolates",
     "name": "Rice milk chocolates"
-  },
-  {
-    "key": "en:rice-milks",
-    "name": "Rice milks"
   },
   {
     "key": "en:rice-paper",
@@ -318,6 +370,10 @@
   {
     "key": "en:rice-puddings",
     "name": "Rice puddings"
+  },
+  {
+    "key": "en:rice-puddings-with-a-fruit-preparation",
+    "name": "Rice puddings with a fruit preparation"
   },
   {
     "key": "en:rice-salads",
@@ -340,10 +396,6 @@
     "name": "Rice syrups"
   },
   {
-    "key": "en:rice-vermicelli",
-    "name": "Rice vermicelli"
-  },
-  {
     "key": "en:rice-vinegars",
     "name": "Rice vinegars"
   },
@@ -354,6 +406,10 @@
   {
     "key": "en:rice-based-creams-for-cooking",
     "name": "Rice-based creams for cooking"
+  },
+  {
+    "key": "en:rice-based-drinks",
+    "name": "Rice-based drinks"
   },
   {
     "key": "en:rices-for-paella",
@@ -368,8 +424,32 @@
     "name": "Ricotta"
   },
   {
+    "key": "en:ricotta-substitutes",
+    "name": "Ricotta substitutes"
+  },
+  {
     "key": "en:roma-rices",
     "name": "Roma rices"
+  },
+  {
+    "key": "en:sant-andrea-rices",
+    "name": "Sant'Andrea Rices"
+  },
+  {
+    "key": "en:semi-milled-basmati-rices",
+    "name": "Semi-milled Basmati rices"
+  },
+  {
+    "key": "en:semi-milled-camargue-rices",
+    "name": "Semi-milled Camargue rices"
+  },
+  {
+    "key": "en:semi-milled-jasmine-rices",
+    "name": "Semi-milled Jasmine rices"
+  },
+  {
+    "key": "en:semi-milled-rices",
+    "name": "Semi-milled rices"
   },
   {
     "key": "en:senia-rices",
@@ -380,6 +460,10 @@
     "name": "Short grain rices"
   },
   {
+    "key": "en:sona-masoori-rices",
+    "name": "Sona Masoori rices"
+  },
+  {
     "key": "en:surinam-rices",
     "name": "Surinam rices"
   },
@@ -388,12 +472,20 @@
     "name": "Sushi rice"
   },
   {
+    "key": "en:sweetened-puffed-rice",
+    "name": "Sweetened puffed rice"
+  },
+  {
     "key": "en:tahibonet-rices",
     "name": "Tahibonet rices"
   },
   {
     "key": "en:tomato-sauces-with-ricotta",
     "name": "Tomato sauces with ricotta"
+  },
+  {
+    "key": "en:uht-rice-based-drinks",
+    "name": "UHT rice based drinks"
   },
   {
     "key": "en:unsalted-cooked-brown-rices",
@@ -420,8 +512,8 @@
     "name": "Vanilla flavored rice pudding"
   },
   {
-    "key": "en:vanilla-rice-milks",
-    "name": "Vanilla rice milks"
+    "key": "en:vanilla-rice-based-drinks",
+    "name": "Vanilla rice-based drinks"
   },
   {
     "key": "en:vegan-rice-puddings",
@@ -434,6 +526,10 @@
   {
     "key": "en:white-basmati-rices",
     "name": "White Basmati rices"
+  },
+  {
+    "key": "en:white-chocolates-with-rice-crisps",
+    "name": "White chocolates with rice crisps"
   },
   {
     "key": "en:white-jasmine-rices",

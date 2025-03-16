@@ -1,7 +1,15 @@
 [
   {
+    "key": "en:baltic-porter",
+    "name": "Baltic porter"
+  },
+  {
     "key": "en:beef-mutton-and-pork-merguez-sausage",
     "name": "Beef mutton and pork merguez sausage"
+  },
+  {
+    "key": "en:black-pork-head-cheese",
+    "name": "Black pork head-cheese"
   },
   {
     "key": "en:braised-pork-brain",
@@ -10,6 +18,10 @@
   {
     "key": "en:braised-pork-spare-ribs",
     "name": "Braised pork spare-ribs"
+  },
+  {
+    "key": "en:canned-cooked-lean-pork",
+    "name": "Canned cooked lean pork"
   },
   {
     "key": "en:canned-porcini-mushrooms",
@@ -68,11 +80,15 @@
     "name": "Cooked pork tenderloin roast"
   },
   {
+    "key": "en:cured-pork-loin",
+    "name": "Cured pork loin"
+  },
+  {
     "key": "en:devilled-pork-shoulder-in-mustard-sauce",
     "name": "Devilled pork shoulder in mustard sauce"
   },
   {
-    "key": "fr:saucissons-secs-pur-porc",
+    "key": "en:dry-sausage-pure-pork",
     "name": "Dry sausage pure pork"
   },
   {
@@ -88,12 +104,20 @@
     "name": "French pork"
   },
   {
+    "key": "en:fried-pork-rind",
+    "name": "Fried pork rind"
+  },
+  {
     "key": "en:frozen-chopped-porcini-mushrooms",
     "name": "Frozen chopped porcini mushrooms"
   },
   {
     "key": "en:frozen-porcini-mushrooms",
     "name": "Frozen porcini mushrooms"
+  },
+  {
+    "key": "en:frozen-pork-loin",
+    "name": "Frozen pork loin"
   },
   {
     "key": "en:frozen-whole-porcini-mushrooms",
@@ -124,16 +148,16 @@
     "name": "Olivenöle aus Portugal"
   },
   {
-    "key": "en:pasta-with-pork",
-    "name": "Pasta with pork"
-  },
-  {
     "key": "en:plain-porridge",
     "name": "Plain porridge"
   },
   {
     "key": "en:porchetta",
     "name": "Porchetta"
+  },
+  {
+    "key": "en:pork-prepared",
+    "name": "Pork (prepared)"
   },
   {
     "key": "en:pork-80-20-trimming",
@@ -150,6 +174,10 @@
   {
     "key": "en:pork-and-beef-mortadella",
     "name": "Pork and beef mortadella"
+  },
+  {
+    "key": "en:pork-and-cabbage-sausages",
+    "name": "Pork and cabbage sausages"
   },
   {
     "key": "en:pork-and-its-products",
@@ -256,24 +284,12 @@
     "name": "Pork racks"
   },
   {
-    "key": "en:pork-ribs",
-    "name": "Pork ribs"
-  },
-  {
     "key": "en:pork-rind",
     "name": "Pork rind"
   },
   {
-    "key": "en:pork-roasts",
-    "name": "Pork roasts"
-  },
-  {
     "key": "en:pork-round-steak",
     "name": "Pork round steak"
-  },
-  {
-    "key": "en:pork-salami",
-    "name": "Pork salami"
   },
   {
     "key": "en:pork-samosas",
@@ -300,20 +316,12 @@
     "name": "Pork shoulders"
   },
   {
-    "key": "en:pork-skewers",
-    "name": "Pork skewers"
-  },
-  {
     "key": "en:pork-snout-in-salad-dressing-sauce",
     "name": "Pork snout in salad dressing sauce"
   },
   {
     "key": "en:pork-spare-ribs",
     "name": "Pork spare-ribs"
-  },
-  {
-    "key": "en:pork-tenderloin",
-    "name": "Pork tenderloin"
   },
   {
     "key": "en:pork-tenderloin-lean",
@@ -340,8 +348,20 @@
     "name": "Porridge with fruits"
   },
   {
+    "key": "en:porters",
+    "name": "Porters"
+  },
+  {
+    "key": "en:portuguese-sea-products",
+    "name": "Portugiesische Meeresprodukte"
+  },
+  {
     "key": "en:wines-from-portugal",
     "name": "Portugiesische Weine"
+  },
+  {
+    "key": "en:portuguese-rums",
+    "name": "Portugiesischer Rum"
   },
   {
     "key": "en:portuguese-cheeses",
@@ -364,16 +384,8 @@
     "name": "Portuguese meat products"
   },
   {
-    "key": "en:portuguese-rums",
-    "name": "Portuguese rums"
-  },
-  {
     "key": "en:portuguese-salts",
     "name": "Portuguese salts"
-  },
-  {
-    "key": "en:portuguese-sea-products",
-    "name": "Portuguese sea products"
   },
   {
     "key": "en:portuguese-spirit-drinks",
@@ -444,6 +456,10 @@
     "name": "Sausage meat with pure pork"
   },
   {
+    "key": "en:smoked-cooked-pork-meat",
+    "name": "Smoked cooked pork meat"
+  },
+  {
     "key": "en:smoked-pork-belly",
     "name": "Smoked pork belly"
   },
@@ -474,6 +490,10 @@
   {
     "key": "en:viennese-pork-and-veal-sausages",
     "name": "Viennese pork and veal sausages"
+  },
+  {
+    "key": "en:white-pork-head-cheese",
+    "name": "White pork head-cheese"
   },
   {
     "key": "en:white-ports",

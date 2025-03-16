@@ -1,6 +1,366 @@
 [
   {
+    "key": "en:flavored-and-colored-dry-pastas",
+    "name": "Aromatizirane i obojene suhe tjestenine"
+  },
+  {
+    "key": "en:sugar-coated-almonds",
+    "name": "Bademi obloženi šećerom"
+  },
+  {
+    "key": "en:white-common-wheat-flours",
+    "name": "Bijela obična pšenična brašna"
+  },
+  {
+    "key": "en:common-wheat-flours",
+    "name": "Brašna od obične pšenice"
+  },
+  {
+    "key": "en:chocolate-puffed-rice-not-fortified-with-vitamins-and-chemical-elements",
+    "name": "Čokoladna lisnata riža koja nije obogaćena vitaminima i kemijskim elementima"
+  },
+  {
+    "key": "en:chocolate-puffed-rice-fortified-with-vitamins-and-chemical-elements",
+    "name": "Čokoladna lisnata riža obogaćena vitaminima i kemijskim elementima"
+  },
+  {
+    "key": "en:chocolate-puffed-wheat-grains-fortified-with-vitamins-and-chemical-elements",
+    "name": "Čokoladna napuhana zrna pšenice obogaćena vitaminima i kemijskim elementima"
+  },
+  {
+    "key": "en:breakfast-chocolate-cereals-with-wheat-grain-flakes-not-fortified-with-vitamins-and-chemical-elements",
+    "name": "Čokoladne pahuljice za doručak s pahuljicama pšeničnog zrna koje nisu obogaćene vitaminima i kemijskim elementima"
+  },
+  {
+    "key": "en:main-meals-for-babies",
+    "name": "Glavni obroci za bebe"
+  },
+  {
+    "key": "en:beef-cheek",
+    "name": "Goveđi obraz"
+  },
+  {
+    "key": "en:crunchy-chocolate-muesli-fortified-with-vitamins-and-chemical-elements",
+    "name": "Hrskavi čokoladni müsli obogaćen vitaminima i kemijskim elementima"
+  },
+  {
+    "key": "en:crunchy-muesli-with-chocolate-not-fortified-with-vitamins-and-chemical-elements",
+    "name": "Hrskavi müsli s čokoladom koji nisu obogaćeni vitaminima i kemijskim elementima"
+  },
+  {
+    "key": "en:crunchy-muesli-with-fruits-not-fortified-with-vitamins-and-chemical-elements",
+    "name": "Hrskavi müsli s voćem koji nije obogaćen vitaminima i kemijskim elementima"
+  },
+  {
+    "key": "en:crunchy-muesli-with-fruits-fortified-with-vitamins-and-chemical-elements",
+    "name": "Hrskavi müsli s voćem obogaćeni vitaminima i kemijskim elementima"
+  },
+  {
+    "key": "en:coffee-from-ivory-coast",
+    "name": "Kava s obale bjelokosti"
+  },
+  {
+    "key": "en:canned-white-common-beans",
+    "name": "Konzervirani bijeli obični grah"
+  },
+  {
+    "key": "en:canned-common-beans",
+    "name": "Konzervirani obični grah"
+  },
+  {
+    "key": "en:cone-wafer-for-ice-cream",
+    "name": "Kornet oblatna za sladoled"
+  },
+  {
+    "key": "en:puffed-rice-fortified-with-vitamins-and-chemical-elements",
+    "name": "Lisnatu rižu obogaćenu vitaminima i kemijskim elementima"
+  },
+  {
+    "key": "en:chocolate-coated-marshmallow-treats",
+    "name": "Marshmallow poslastice obložene čokoladom"
+  },
+  {
+    "key": "en:muesli-flakes-not-fortified-with-vitamins-and-chemical-elements",
+    "name": "Muesli pahuljice koje nisu obogaćene vitaminima i kemijskim elementima"
+  },
+  {
+    "key": "en:muesli-flakes-fortified-with-vitamins-and-chemical-elements",
+    "name": "Muesli pahuljice obogaćene vitaminima i kemijskim elementima"
+  },
+  {
+    "key": "en:unsweetened-plain-almond-based-drinks",
+    "name": "Nezaslađena obična pića na bazi badema"
+  },
+  {
+    "key": "en:unsweetened-plain-soy-based-drinks",
+    "name": "Nezaslađena obična pića na bazi soje"
+  },
+  {
+    "key": "en:low-calorie-meal-replacement",
+    "name": "Niskokalorična zamjena za obrok"
+  },
+  {
+    "key": "en:plain-petit-suisse",
+    "name": "Običan petit-suisse"
+  },
+  {
+    "key": "en:common-octopus",
+    "name": "Obična hobotnica"
+  },
+  {
+    "key": "en:plain-porridge",
+    "name": "Obična kaša"
+  },
+  {
+    "key": "en:common-nettle",
+    "name": "Obična kopriva"
+  },
+  {
+    "key": "en:plain-skyrs",
+    "name": "Obična neba"
+  },
+  {
+    "key": "en:plain-rice-based-drinks",
+    "name": "Obična pića na bazi riže"
+  },
+  {
+    "key": "en:common-vervain",
+    "name": "Obična vrbena"
+  },
+  {
+    "key": "en:plain-popcorn",
+    "name": "Obične kokice"
+  },
+  {
+    "key": "en:plain-doughnuts",
+    "name": "Obične krafne"
+  },
+  {
+    "key": "en:plain-corn-flakes",
+    "name": "Obične kukuruzne pahuljice"
+  },
+  {
+    "key": "en:plain-corn-flakes-not-fortified-with-vitamins-and-chemical-elements",
+    "name": "Obične kukuruzne pahuljice koje nisu obogaćene vitaminima i kemijskim elementima"
+  },
+  {
+    "key": "en:plain-corn-flakes-fortified-with-vitamins-and-chemical-elements",
+    "name": "Obične kukuruzne pahuljice obogaćene vitaminima i kemijskim elementima"
+  },
+  {
+    "key": "en:plain-milk-bread-rolls",
+    "name": "Obične mliječne žemlice"
+  },
+  {
+    "key": "en:plain-buckwheat-crepes",
+    "name": "Obične palačinke od heljde"
+  },
+  {
+    "key": "en:common-wheats",
+    "name": "Obične pšenice"
+  },
+  {
+    "key": "en:plain-cottage-cheeses",
+    "name": "Obične skute"
+  },
+  {
+    "key": "en:plain-bifidus-yogurts",
+    "name": "Obični bifidus jogurti"
+  },
+  {
+    "key": "en:plain-biscuit",
+    "name": "Obični biskvit"
+  },
+  {
+    "key": "en:plain-fermented-dairy-desserts",
+    "name": "Obični fermentirani mliječni deserti"
+  },
+  {
+    "key": "en:plain-mackerel-fillets",
+    "name": "Obični fileti skuše"
+  },
+  {
+    "key": "en:plain-yogurt-with-sugar",
+    "name": "Obični jogurt sa šećerom"
+  },
+  {
+    "key": "en:plain-yogurts",
+    "name": "Obični jogurti"
+  },
+  {
+    "key": "en:plain-goat-yogurts",
+    "name": "Obični kozji jogurti"
+  },
+  {
+    "key": "en:plain-quarks",
+    "name": "Obični kvarkovi"
+  },
+  {
+    "key": "fr:gaufres-liegeoises",
+    "name": "Obični mekani vafli u briselskom stilu"
+  },
+  {
+    "key": "en:plain-quenelles",
+    "name": "Obični quenelles"
+  },
+  {
+    "key": "en:plain-stirred-yogurts",
+    "name": "Obični razmućeni jogurti"
+  },
+  {
+    "key": "en:plain-soy-yogurts",
+    "name": "Obični sojini jogurti"
+  },
+  {
+    "key": "en:plain-tofu",
+    "name": "Obični tofu"
+  },
+  {
+    "key": "en:common-dentex",
+    "name": "Obični zubatac"
+  },
+  {
+    "key": "en:verbena-family",
+    "name": "Obitelj verbene"
+  },
+  {
+    "key": "en:caramel-stuffed-wafers",
+    "name": "Oblatne nadjevene karamelom"
+  },
+  {
+    "key": "en:hazelnut-cream-stuffed-wafers",
+    "name": "Oblatne nadjevene kremom od lješnjaka"
+  },
+  {
+    "key": "en:vanilla-stuffed-wafers",
+    "name": "Oblatne nadjevene vanilijom"
+  },
+  {
+    "key": "en:fruits-stuffed-wafers",
+    "name": "Oblatne punjene voćem"
+  },
+  {
+    "key": "en:coated-chocolate-bar-without-biscuit",
+    "name": "Obložena čokoladica bez keksa"
+  },
+  {
+    "key": "en:wraps",
+    "name": "Oblozi"
+  },
+  {
+    "key": "en:enriched-apple-juices",
+    "name": "Obogaćeni sokovi od jabuke"
+  },
+  {
+    "key": "en:skimmed-milks",
+    "name": "Obrana mlijeka"
+  },
+  {
+    "key": "en:ground-almonds",
+    "name": "Obrok od badema"
+  },
+  {
+    "key": "en:artisanal-ciders",
+    "name": "Obrtnički cideri"
+  },
+  {
+    "key": "en:artisan-jams",
+    "name": "Obrtnički džemovi"
+  },
+  {
+    "key": "en:artisan-products",
+    "name": "Obrtnički proizvodi"
+  },
+  {
+    "key": "en:artisan-cheeses",
+    "name": "Obrtnički sirevi"
+  },
+  {
+    "key": "en:pasteurised-skimmed-milk",
+    "name": "Pasterizirano obrano mlijeko"
+  },
+  {
+    "key": "en:caramelized-pine-nuts",
+    "name": "Pinjole obložene šećerom"
+  },
+  {
+    "key": "en:semi-polished-common-wheat-flours",
+    "name": "Polupolirano brašno od obične pšenice"
+  },
+  {
+    "key": "en:stuffed-wafers",
+    "name": "Punjene oblatne"
+  },
+  {
+    "key": "en:horn-of-plenty-mushrooms",
+    "name": "Rog obilja gljiva"
+  },
+  {
     "key": "en:saveloy-from-obernai-alsace",
     "name": "Saveloy from Obernai Alsace"
+  },
+  {
+    "key": "en:sugar-iced-corn-flakes-not-fortified-with-vitamins-and-chemical-elements",
+    "name": "Šećerne kukuruzne pahuljice koje nisu obogaćene vitaminima i kemijskim elementima"
+  },
+  {
+    "key": "en:sugar-iced-corn-flakes-fortified-with-vitamins-and-chemical-elements",
+    "name": "Šećerom ledene kukuruzne pahuljice obogaćene vitaminima i kemijskim elementima"
+  },
+  {
+    "key": "en:meal-kits",
+    "name": "Setovi obroka"
+  },
+  {
+    "key": "en:sugar-coated-chocolate-confectioneries",
+    "name": "Slastice od čokolade obložene šećerom"
+  },
+  {
+    "key": "en:frozen-common-beans",
+    "name": "Smrznuti obični grah"
+  },
+  {
+    "key": "en:dried-horn-of-plenty-mushrooms",
+    "name": "Sušeni rog obilja gljiva"
+  },
+  {
+    "key": "en:thin-crunchy-wafer-biscuit-with-chocolate",
+    "name": "Tanki hrskavi oblatni biskvit sa čokoladom"
+  },
+  {
+    "key": "en:chocolate-coated-waffles",
+    "name": "Vafli obloženi čokoladom"
+  },
+  {
+    "key": "en:evening-meals-for-babies",
+    "name": "Večernji obroci za bebe"
+  },
+  {
+    "key": "en:vegetarian-wraps",
+    "name": "Vegetarijanske obloge"
+  },
+  {
+    "key": "en:chocolate-coated-maraschino-cherries",
+    "name": "Višnje maraskine oblivene čokoladom"
+  },
+  {
+    "key": "en:meal-replacements",
+    "name": "Zamjene za obroke"
+  },
+  {
+    "key": "en:sweetened-plain-almond-based-drinks",
+    "name": "Zaslađena obična pića na bazi badema"
+  },
+  {
+    "key": "en:sweetened-plain-soy-based-drinks",
+    "name": "Zaslađena obična pića na bazi soje"
+  },
+  {
+    "key": "en:breakfast-cereals-not-fortified-with-vitamins-and-chemical-elements",
+    "name": "Žitarice za doručak koje nisu obogaćene vitaminima i kemijskim elementima"
+  },
+  {
+    "key": "en:breakfast-cereals-fortified-with-vitamins-and-chemical-elements",
+    "name": "Žitarice za doručak obogaćene vitaminima i kemijskim elementima"
   }
 ]

@@ -28,20 +28,36 @@
     "name": "Austrian fruit spirit"
   },
   {
+    "key": "en:fruits-cereal-bars",
+    "name": "Barritas de cereales y fruta"
+  },
+  {
     "key": "en:nut-bars",
     "name": "Barritas de frutos de cáscara"
   },
   {
-    "key": "en:smoothies",
-    "name": "Batidos de fruta"
+    "key": "en:carbonated-fruit-soft-drink",
+    "name": "Bebida gaseosa de frutas"
   },
   {
     "key": "en:fruit-based-beverages",
     "name": "Bebidas a base de frutas"
   },
   {
+    "key": "en:beverages-from-desugared-fruit-juices",
+    "name": "Bebidas a base de jugos de frutas sin azúcar"
+  },
+  {
     "key": "en:fruit-and-soy-beverages",
     "name": "Bebidas a base de zumo de frutas y soja"
+  },
+  {
+    "key": "en:carbonated-soft-drinks-without-fruit-juice-with-sugar",
+    "name": "Bebidas carbonatadas azucaradas sin jugo de frutas"
+  },
+  {
+    "key": "en:carbonated-soft-drinks-without-fruit-juice",
+    "name": "Bebidas carbonatadas sin jugo de frutas"
   },
   {
     "key": "en:fruit-and-milk-beverages",
@@ -74,10 +90,6 @@
   {
     "key": "en:biscuit-filled-with-fruit-paste",
     "name": "Biscuit filled with fruit paste"
-  },
-  {
-    "key": "en:biscuit-with-fruit-covering",
-    "name": "Biscuit with fruit covering"
   },
   {
     "key": "en:breakfast-cereals-diet-with-dried-fruits-fortified-with-vitamins-and-chemical-elements",
@@ -120,10 +132,6 @@
     "name": "Canned fruit cocktail in syrup not drained"
   },
   {
-    "key": "en:carbonated-fruit-soft-drink",
-    "name": "Carbonated fruit soft drink"
-  },
-  {
     "key": "en:carbonated-fruit-soft-drink-with-less-than-10-of-fruit-juice",
     "name": "Carbonated fruit soft drink with less than 10% of fruit juice"
   },
@@ -156,16 +164,8 @@
     "name": "Carbonated soft drink without fruit juice without sugar and with artificial sweeteners"
   },
   {
-    "key": "en:carbonated-soft-drinks-without-fruit-juice",
-    "name": "Carbonated soft drinks without fruit juice"
-  },
-  {
     "key": "en:carbonated-soft-drinks-without-fruit-juice-with-reduced-sugar",
     "name": "Carbonated soft drinks without fruit juice with reduced sugar"
-  },
-  {
-    "key": "en:carbonated-soft-drinks-without-fruit-juice-with-sugar",
-    "name": "Carbonated soft drinks without fruit juice with sugar"
   },
   {
     "key": "en:carbonated-soft-drinks-without-fruit-juice-with-sugar-and-artificial-sweeteners",
@@ -196,8 +196,20 @@
     "name": "Chocolate bar with dried fruits"
   },
   {
+    "key": "en:chocolate-covered-nuts-and-fruits",
+    "name": "Chocolate covered nuts and fruits"
+  },
+  {
+    "key": "en:chocolate-covered-nuts-and-fruits-mixes",
+    "name": "Chocolate covered nuts and fruits mixes"
+  },
+  {
     "key": "en:christmas-brioche-with-candied-fruits",
     "name": "Christmas brioche with candied fruits"
+  },
+  {
+    "key": "en:fruit-chutneys",
+    "name": "Chutneys de fruta"
   },
   {
     "key": "en:citrus-fruit-teas",
@@ -222,6 +234,10 @@
   {
     "key": "en:crunchy-mueslis-with-fruits",
     "name": "Crunchy mueslis with fruits"
+  },
+  {
+    "key": "en:crunchy-mueslis-without-fruits",
+    "name": "Crunchy mueslis without fruits"
   },
   {
     "key": "en:dairy-cereal-based-beverage-with-fruits-for-baby-s-snack-from-4-6-months",
@@ -252,6 +268,10 @@
     "name": "Doughnuts filled with fruits"
   },
   {
+    "key": "en:dried-fruit-and-seed-mixes",
+    "name": "Dried fruit and seed mixes"
+  },
+  {
     "key": "en:fruit-pastes",
     "name": "Dulces de frutas"
   },
@@ -268,40 +288,44 @@
     "name": "Ensaladas de frutas"
   },
   {
+    "key": "en:fruit-salads-in-syrup",
+    "name": "Ensaladas de frutas en almíbar"
+  },
+  {
     "key": "en:extruded-and-grilled-biscuits-with-fruits-filling",
     "name": "Extruded and grilled biscuits with fruits filling"
   },
   {
-    "key": "en:fat-free-fermented-milk-yogurt-with-fruits-and-sweetener",
-    "name": "Fat free fermented milk yogurt with fruits and sweetener"
+    "key": "en:fat-free-fermented-dairy-desserts-with-fruits-and-sweeteners",
+    "name": "Fat free fermented dairy desserts with fruits and sweeteners"
   },
   {
-    "key": "en:fat-free-fermented-milk-yogurt-with-fruits-and-sweetener-fortified-with-vitamin-d",
-    "name": "Fat free fermented milk yogurt with fruits and sweetener fortified with vitamin D"
+    "key": "en:fat-free-fermented-dairy-desserts-with-fruits-and-sweeteners-fortified-with-vitamin-d",
+    "name": "Fat free fermented dairy desserts with fruits and sweeteners fortified with vitamin D"
   },
   {
     "key": "en:fermented-dairy-desserts-with-fruits",
     "name": "Fermented dairy desserts with fruits"
   },
   {
+    "key": "en:fermented-dairy-desserts-with-fruits-and-sweeteners",
+    "name": "Fermented dairy desserts with fruits and sweeteners"
+  },
+  {
+    "key": "en:fermented-dairy-desserts-with-fruits-enriched-with-vitamin-d",
+    "name": "Fermented dairy desserts with fruits enriched with vitamin D"
+  },
+  {
+    "key": "en:fermented-dairy-desserts-with-fruits-sugar-and-cream",
+    "name": "Fermented dairy desserts with fruits sugar and cream"
+  },
+  {
     "key": "en:fermented-milk-drinks-with-fruits",
     "name": "Fermented milk drinks with fruits"
   },
   {
-    "key": "en:fermented-milk-yogurt-fortified-with-vitamin-d-with-fruits-and-sugar",
-    "name": "Fermented milk yogurt fortified with vitamin D with fruits and sugar"
-  },
-  {
-    "key": "en:fermented-milk-yogurt-with-fruits-and-sugar-and-cream",
-    "name": "Fermented milk yogurt with fruits and sugar and cream"
-  },
-  {
     "key": "en:french-fruit-spirit",
     "name": "French fruit spirit"
-  },
-  {
-    "key": "en:french-fruits",
-    "name": "French fruits"
   },
   {
     "key": "en:fresh-fruit-salad",
@@ -314,6 +338,14 @@
   {
     "key": "en:fromages-blancs-with-fruits",
     "name": "Fromages blancs with fruits"
+  },
+  {
+    "key": "en:frozen-fruit-tartlets",
+    "name": "Frozen fruit tartlets"
+  },
+  {
+    "key": "en:frozen-fruits-coulis",
+    "name": "Frozen fruits coulis"
   },
   {
     "key": "en:frozen-fruits-with-added-sugar",
@@ -332,12 +364,12 @@
     "name": "Fruit and plant-milk beverages"
   },
   {
-    "key": "en:fruit-bifidus-yogurts",
-    "name": "Fruit bifidus yogurts"
+    "key": "en:fruit-based-foods-prepared",
+    "name": "Fruit based foods (prepared)"
   },
   {
-    "key": "en:fruit-biscuits",
-    "name": "Fruit biscuits"
+    "key": "en:fruit-bifidus-yogurts",
+    "name": "Fruit bifidus yogurts"
   },
   {
     "key": "en:fruit-biscuits-with-reduced-fat",
@@ -352,16 +384,8 @@
     "name": "Fruit brandy"
   },
   {
-    "key": "en:fruit-cakes",
-    "name": "Fruit cakes"
-  },
-  {
     "key": "en:fruit-charlottes",
     "name": "Fruit Charlottes"
-  },
-  {
-    "key": "en:fruit-chutneys",
-    "name": "Fruit chutneys"
   },
   {
     "key": "en:fruit-confectioneries",
@@ -374,6 +398,18 @@
   {
     "key": "en:fruit-curds",
     "name": "Fruit curds"
+  },
+  {
+    "key": "en:fruit-flavoured-yogurt-drinks",
+    "name": "Fruit flavoured yogurt drinks"
+  },
+  {
+    "key": "en:fruit-ipa",
+    "name": "Fruit IPA"
+  },
+  {
+    "key": "en:fruit-juice-concentrates",
+    "name": "Fruit juice concentrates"
   },
   {
     "key": "en:fruit-juice-mixed-apple-base-standard",
@@ -396,16 +432,20 @@
     "name": "Fruit muffins"
   },
   {
+    "key": "en:fruit-paste-variety-packs",
+    "name": "Fruit paste variety packs"
+  },
+  {
     "key": "en:fruit-pies-with-confectioner-s-custard",
     "name": "Fruit pies with confectioner's custard"
   },
   {
-    "key": "en:fruit-quarks",
-    "name": "Fruit quarks"
+    "key": "en:fruit-preserves-with-chocolate",
+    "name": "Fruit preserves with chocolate"
   },
   {
-    "key": "en:fruit-salads-in-syrup",
-    "name": "Fruit salads in syrup"
+    "key": "en:fruit-quarks",
+    "name": "Fruit quarks"
   },
   {
     "key": "en:fruit-sauces",
@@ -420,10 +460,6 @@
     "name": "Fruit skyrs"
   },
   {
-    "key": "en:fruit-smoothies",
-    "name": "Fruit smoothies"
-  },
-  {
     "key": "en:fruit-stirred-yogurts",
     "name": "Fruit stirred yogurts"
   },
@@ -436,20 +472,16 @@
     "name": "Fruit tarts"
   },
   {
-    "key": "en:fruit-tiramisu",
-    "name": "Fruit tiramisu"
-  },
-  {
     "key": "en:fruit-based-beverages-for-baby-from-4-6-months",
     "name": "Fruit-based beverages for baby from 4/6 months"
   },
   {
-    "key": "en:fruits-batter-pudding",
-    "name": "Fruits batter-pudding"
+    "key": "en:fruits-shelf-stable",
+    "name": "Fruits (shelf stable)"
   },
   {
-    "key": "en:fruits-cereal-bars",
-    "name": "Fruits cereal bars"
+    "key": "en:fruits-batter-pudding",
+    "name": "Fruits batter-pudding"
   },
   {
     "key": "en:fruits-compote-with-reduced-sugar",
@@ -512,11 +544,15 @@
     "name": "Frutas en conserva"
   },
   {
+    "key": "en:french-fruits",
+    "name": "Frutas francesas"
+  },
+  {
     "key": "en:fresh-fruits",
     "name": "Frutas frescas"
   },
   {
-    "key": "en:chocolate-covered-fruits",
+    "key": "en:chocolate-coated-fruits",
     "name": "Frutas recubiertas de chocolate"
   },
   {
@@ -568,12 +604,20 @@
     "name": "Frutos del saúco negro"
   },
   {
+    "key": "en:fruit-biscuits",
+    "name": "Galletas de frutas"
+  },
+  {
+    "key": "fr:biscuits-fourres-aux-fruits",
+    "name": "Galletas rellenas de fruta"
+  },
+  {
     "key": "en:german-fruit-spirit",
     "name": "German fruit spirit"
   },
   {
-    "key": "en:greek-style-yogurt-on-a-bed-of-fruits",
-    "name": "Greek-style yogurt on a bed of fruits"
+    "key": "en:greek-style-yogurts-on-a-bed-of-fruits",
+    "name": "Greek-style yogurts on a bed of fruits"
   },
   {
     "key": "en:nut-flours",
@@ -582,6 +626,10 @@
   {
     "key": "en:hungarian-fruit-spirit",
     "name": "Hungarian fruit spirit"
+  },
+  {
+    "key": "en:ice-cream-bars-coated-with-fruit-sorbet",
+    "name": "Ice cream bars coated with fruit sorbet"
   },
   {
     "key": "en:fruit-teas",
@@ -600,11 +648,15 @@
     "name": "Jaleas de frutas"
   },
   {
+    "key": "en:syrups-with-fruits",
+    "name": "Jarabes con frutas"
+  },
+  {
     "key": "en:kiwi-fruit-pulp-and-seeds",
     "name": "Kiwi fruit pulp and seeds"
   },
   {
-    "key": "en:nut-milks",
+    "key": "en:nut-based-drinks",
     "name": "Leches de frutos de cáscara"
   },
   {
@@ -636,6 +688,10 @@
     "name": "Mermeladas y confituras de frutas tropicales"
   },
   {
+    "key": "en:unsalted-nuts",
+    "name": "Mezcla de frutos secos"
+  },
+  {
     "key": "en:frozen-mixed-fruits",
     "name": "Mezclas de frutas congeladas"
   },
@@ -644,7 +700,7 @@
     "name": "Mezclas de frutas del bosque congeladas"
   },
   {
-    "key": "en:dried-mixed-fruits",
+    "key": "en:mixed-dried-fruits",
     "name": "Mezclas de frutas deshidratadas"
   },
   {
@@ -672,16 +728,16 @@
     "name": "Mixed fruits pure multivitamin juice"
   },
   {
+    "key": "en:mixed-nuts-and-dried-fruits",
+    "name": "Mixed nuts and dried fruits"
+  },
+  {
     "key": "en:mixed-red-fruits-juice-pure-juice",
     "name": "Mixed red fruits juice pure juice"
   },
   {
     "key": "en:mueslis-with-fruits",
     "name": "Mueslis con frutas"
-  },
-  {
-    "key": "en:multivitamin-mixed-fruits-juice-reconstituted-from-a-concentrate",
-    "name": "Multivitamin mixed fruits juice reconstituted from a concentrate"
   },
   {
     "key": "en:multivitamin-mixed-fruits-nectars",
@@ -692,8 +748,8 @@
     "name": "Néctares de frutas"
   },
   {
-    "key": "en:nuts-and-dried-fruits",
-    "name": "Nuts and dried fruits"
+    "key": "en:refrigerated-fruit-nectars",
+    "name": "Néctares de frutas refrigerados"
   },
   {
     "key": "en:orange-based-mixed-fruits-multivitamin-juice",
@@ -704,12 +760,24 @@
     "name": "Panna cottas with fruit coulis"
   },
   {
+    "key": "en:fruits-nuts-seed-variety-packs",
+    "name": "Paquetes variados de combinación de fruta - frutos secos y semillas"
+  },
+  {
+    "key": "en:fruits-vegetables-nuts-seeds-variety-packs",
+    "name": "Paquetes variados de frutas - verduras - frutos secos y semillas"
+  },
+  {
     "key": "en:passion-fruit-pulp-and-pips",
     "name": "Passion fruit pulp and pips"
   },
   {
     "key": "en:petit-suisse-with-fruits",
     "name": "Petit-Suisse with fruits"
+  },
+  {
+    "key": "en:pickled-fruits",
+    "name": "Pickled fruits"
   },
   {
     "key": "en:plain-dairy-dessert-for-baby-with-fruits",
@@ -728,12 +796,28 @@
     "name": "Preparaciones a base de frutas y verduras"
   },
   {
+    "key": "en:prepared-fresh-fruits",
+    "name": "Prepared fresh fruits"
+  },
+  {
+    "key": "en:prepared-frozen-fruits",
+    "name": "Prepared frozen fruits"
+  },
+  {
     "key": "en:red-fruit-teas",
     "name": "Red fruit teas"
   },
   {
+    "key": "en:red-fruit-yoghurts",
+    "name": "Red fruit yoghurts"
+  },
+  {
     "key": "en:reduced-fat-biscuit-bar-filled-with-fruits",
     "name": "Reduced fat biscuit bar filled with fruits"
+  },
+  {
+    "key": "en:refrigerated-fruit-and-vegetable-preserves",
+    "name": "Refrigerated fruit and vegetable preserves"
   },
   {
     "key": "en:refrigerated-fruits-batter-pudding",
@@ -744,16 +828,20 @@
     "name": "Refrigerated fruits compote with reduced sugar"
   },
   {
+    "key": "en:rice-puddings-with-a-fruit-preparation",
+    "name": "Rice puddings with a fruit preparation"
+  },
+  {
     "key": "en:romanian-fruit-spirit",
     "name": "Romanian fruit spirit"
   },
   {
-    "key": "en:shortbread-biscuit-with-fruits",
-    "name": "Shortbread biscuit with fruits"
+    "key": "en:shelf-stable-prepared-fruit-nuts-and-seeds-mixes",
+    "name": "Shelf-stable prepared fruit nuts and seeds Mixes"
   },
   {
-    "key": "en:fruit-syrups",
-    "name": "Sirope de frutas"
+    "key": "en:shortbread-biscuit-with-fruits",
+    "name": "Shortbread biscuit with fruits"
   },
   {
     "key": "en:high-fructose-corn-syrups",
@@ -762,6 +850,10 @@
   {
     "key": "en:slovenian-fruit-spirit",
     "name": "Slovenian fruit spirit"
+  },
+  {
+    "key": "en:fruit-smoothies",
+    "name": "Smoothies de fruta"
   },
   {
     "key": "en:snack-biscuit-with-fruits-filling",
@@ -800,8 +892,8 @@
     "name": "Sparkling fruit wine"
   },
   {
-    "key": "en:sponge-cake-biscuits-wih-fruits-covering",
-    "name": "Sponge cake biscuits wih fruits covering"
+    "key": "en:sponge-cake-biscuits-with-fruits-covering",
+    "name": "Sponge cake biscuits with fruits covering"
   },
   {
     "key": "en:sponge-cake-with-fruit-mousse",
@@ -840,8 +932,12 @@
     "name": "Syrup for canned fruits"
   },
   {
-    "key": "en:syrups-with-fruits",
-    "name": "Syrups with fruits"
+    "key": "en:fruit-cakes",
+    "name": "Tartas de frutas"
+  },
+  {
+    "key": "en:tartlet-biscuits-with-fruit-preparation",
+    "name": "Tartlet biscuits with fruit preparation"
   },
   {
     "key": "en:thick-fruit-syrups",
@@ -852,16 +948,24 @@
     "name": "Thin biscuits with fruits"
   },
   {
+    "key": "en:fruit-tiramisu",
+    "name": "Tiramisú de frutas"
+  },
+  {
     "key": "en:fruit-turron",
     "name": "Turrones de frutas"
+  },
+  {
+    "key": "en:unprepared-frozen-fruits",
+    "name": "Unprepared frozen fruits"
   },
   {
     "key": "en:white-chocolate-bar-with-dried-fruits",
     "name": "White chocolate bar with dried fruits"
   },
   {
-    "key": "en:yoghurts-high-in-protein-on-a-fruit-layer",
-    "name": "Yoghurts high in protein on a fruit layer"
+    "key": "en:yogurts-with-fruits-and-sugar",
+    "name": "Yogures con frutas y azúcar"
   },
   {
     "key": "en:fruit-yogurts-with-fruit-chunks",
@@ -896,16 +1000,12 @@
     "name": "Yogurt with fruits and sugar"
   },
   {
-    "key": "en:yogurt-with-fruits-and-sweetener",
-    "name": "Yogurt with fruits and sweetener"
-  },
-  {
     "key": "en:yogurt-with-fruits-no-0-fat",
     "name": "Yogurt with fruits no 0% fat"
   },
   {
-    "key": "en:yogurts-with-fruits-and-sugar",
-    "name": "Yogurts with fruits and sugar"
+    "key": "en:yogurts-high-in-protein-on-a-fruit-layer",
+    "name": "Yogurts high in protein on a fruit layer"
   },
   {
     "key": "en:yogurts-with-fruits-and-sugar-no-0-fat",

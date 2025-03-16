@@ -20,7 +20,7 @@
     "name": "Biscuits à l'avoine"
   },
   {
-    "key": "en:oat-milks",
+    "key": "en:oat-based-drinks",
     "name": "Boissons à l'avoine"
   },
   {
@@ -28,11 +28,11 @@
     "name": "Boissons aux fruits et à l'avoine"
   },
   {
-    "key": "en:vanilla-oat-milks",
+    "key": "en:vanilla-oat-based-drinks",
     "name": "Boissons végétales d'avoine à la vanille"
   },
   {
-    "key": "en:cocoa-oat-milks",
+    "key": "en:cocoa-oat-based-drinks",
     "name": "Boissons végétales d'avoine au cacao"
   },
   {
@@ -40,11 +40,11 @@
     "name": "Boissons végétales d'avoine en poudre"
   },
   {
-    "key": "en:unsweetened-natural-oat-milks",
+    "key": "en:unsweetened-plain-oat-based-drinks",
     "name": "Boissons végétales d'avoine nature non sucrées"
   },
   {
-    "key": "en:sweetened-natural-oat-milks",
+    "key": "en:sweetened-plain-oat-based-drinks",
     "name": "Boissons végétales d'avoine nature sucrées"
   },
   {
@@ -64,12 +64,20 @@
     "name": "Flocons d'avoine"
   },
   {
-    "key": "en:boiled-oat-flakes",
+    "key": "en:rolled-oats-small",
+    "name": "Flocons d'avoine (petit)"
+  },
+  {
+    "key": "en:cooked-oat-flakes",
     "name": "Flocons d'avoine bouillis"
   },
   {
     "key": "en:pre-cooked-oat-flakes",
     "name": "Flocons d'avoine précuits"
+  },
+  {
+    "key": "en:pre-cooked-oat-flakes-with-sugar",
+    "name": "Flocons d'avoine précuits sucrés"
   },
   {
     "key": "en:puffed-oat-cakes",

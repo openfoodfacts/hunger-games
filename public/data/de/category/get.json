@@ -4,8 +4,32 @@
     "name": "Alkoholfreie Getränke"
   },
   {
+    "key": "en:non-alcoholic-beverages-variety-packs",
+    "name": "Alkoholfreie Getränke Mischpackungen"
+  },
+  {
+    "key": "en:non-alcoholic-instant-beverages-variety-packs",
+    "name": "Alkoholfreie Getränke Mischpackungen - nicht trinkfertig"
+  },
+  {
     "key": "en:alcoholic-beverages",
     "name": "Alkoholische Getränke"
+  },
+  {
+    "key": "en:alcoholic-beverages-variety-packs",
+    "name": "Alkoholische Getränke Mischpackungen"
+  },
+  {
+    "key": "en:flavoured-drinks",
+    "name": "Aromatisierte Getränke"
+  },
+  {
+    "key": "en:basil-seeds-drinks",
+    "name": "Basilikumsamen-Getränke"
+  },
+  {
+    "key": "en:beer-based-alcoholic-beverages",
+    "name": "Bierbasierte alkoholische Getränke"
   },
   {
     "key": "en:beverages-with-cranberry",
@@ -14,6 +38,10 @@
   {
     "key": "en:fermented-drinks",
     "name": "Fermentierte Getränke"
+  },
+  {
+    "key": "en:premixed-alcoholic-beverages",
+    "name": "Fertig gemischte alkoholische Getränke"
   },
   {
     "key": "en:mixed-cereal-flakes",
@@ -40,8 +68,16 @@
     "name": "Getränke"
   },
   {
+    "key": "en:beverages-from-desugared-fruit-juices",
+    "name": "Getränke aus entzuckerten Fruchtsäften"
+  },
+  {
     "key": "en:baby-drinks",
     "name": "Getränke für Babies"
+  },
+  {
+    "key": "en:beverage-variety-packs",
+    "name": "Getränke Mischpackungen"
   },
   {
     "key": "en:beverages-with-orange",
@@ -52,8 +88,16 @@
     "name": "Getränke mit Süßstoff"
   },
   {
+    "key": "en:beverages-and-beverages-preparations",
+    "name": "Getränke und Getränkezubereitungen"
+  },
+  {
     "key": "en:creamer",
     "name": "Getränkeweißer"
+  },
+  {
+    "key": "en:beverage-preparations",
+    "name": "Getränkezubereitungen"
   },
   {
     "key": "en:canned-cereals",
@@ -62,6 +106,10 @@
   {
     "key": "en:cereals-and-potatoes",
     "name": "Getreide und Kartoffeln"
+  },
+  {
+    "key": "en:grain-spirits",
+    "name": "Getreidebrände"
   },
   {
     "key": "en:flakes",
@@ -76,8 +124,12 @@
     "name": "Getreidemehle"
   },
   {
-    "key": "en:cereal-milks",
+    "key": "en:cereal-based-drinks",
     "name": "Getreidemilch"
+  },
+  {
+    "key": "en:cereal-variety-packs",
+    "name": "Getreidemischpackungen"
   },
   {
     "key": "en:cereal-oils",
@@ -90,6 +142,10 @@
   {
     "key": "en:cereal-bars",
     "name": "Getreideriegel"
+  },
+  {
+    "key": "en:cereal-chocolates",
+    "name": "Getreideschokolade"
   },
   {
     "key": "en:cereal-syrups",
@@ -132,7 +188,7 @@
     "name": "Getrocknete Fertiggerichte"
   },
   {
-    "key": "en:dried-mixed-fruits",
+    "key": "en:mixed-dried-fruits",
     "name": "Getrocknete Früchtemischung"
   },
   {
@@ -148,12 +204,20 @@
     "name": "Getrocknete Goji-Beeren"
   },
   {
+    "key": "en:dried-green-lentils",
+    "name": "Getrocknete grüne Linsen"
+  },
+  {
     "key": "en:dried-bilberries",
     "name": "Getrocknete Heidelbeeren"
   },
   {
     "key": "en:dried-coconut",
     "name": "Getrocknete Kokosnuss"
+  },
+  {
+    "key": "en:dried-lentils",
+    "name": "Getrocknete Linsen"
   },
   {
     "key": "en:dried-bay-laurel",
@@ -184,6 +248,10 @@
     "name": "Getrocknete Pilze"
   },
   {
+    "key": "en:dried-lingonberries",
+    "name": "Getrocknete Preiselbeeren"
+  },
+  {
     "key": "en:dried-products",
     "name": "Getrocknete Produkte"
   },
@@ -198,6 +266,10 @@
   {
     "key": "en:dried-shiitake-mushrooms",
     "name": "Getrocknete Shiitake Pilze"
+  },
+  {
+    "key": "en:dried-soy-vermicelli",
+    "name": "Getrocknete Soja-Vermicelli"
   },
   {
     "key": "en:dried-porcini-mushrooms",
@@ -244,7 +316,11 @@
     "name": "Heißgetränke zum Aufgließen"
   },
   {
-    "key": "en:chocolate-powders",
+    "key": "en:instant-cereal-powder-to-be-reconstituted-for-baby-from-6-months",
+    "name": "Instantes Getreidepulver zur Zubereitung für Babys ab 6 Monaten"
+  },
+  {
+    "key": "en:instant-chocolate-powders",
     "name": "Kakaohaltige Getränkepulver"
   },
   {
@@ -256,6 +332,14 @@
     "name": "Kohlensäurehaltige Getränke"
   },
   {
+    "key": "en:carbonated-soft-drinks-without-fruit-juice",
+    "name": "Kohlensäurehaltige Getränke ohne Fruchtsaft"
+  },
+  {
+    "key": "en:herbal-tea-beverages",
+    "name": "Kräutertee Getränke"
+  },
+  {
     "key": "en:plant-based-beverages",
     "name": "Pflanzliche Getränke"
   },
@@ -264,8 +348,16 @@
     "name": "Pflanzliche Lebensmittel und Getränke"
   },
   {
-    "key": "en:hard-liquors",
-    "name": "Stark alkoholische Getränke"
+    "key": "en:rum-based-alcoholic-beverages",
+    "name": "Rum-basierte alkoholische Getränke"
+  },
+  {
+    "key": "en:extruded-cereals",
+    "name": "Stranggepresstes Getreide"
+  },
+  {
+    "key": "en:partially-dried-pollen",
+    "name": "Teilweise getrockneter Pollen"
   },
   {
     "key": "en:unsweetened-beverages",
@@ -276,7 +368,15 @@
     "name": "Weihnachtliches Essen und Getränke"
   },
   {
+    "key": "en:wine-based-alcoholic-beverages",
+    "name": "Weinbasierte alkoholische Getränke"
+  },
+  {
     "key": "en:wine-based-drinks",
     "name": "Weinbasierte Getränke"
+  },
+  {
+    "key": "en:carbonated-soft-drinks-without-fruit-juice-with-sugar",
+    "name": "Zuckerhaltige kohlensäurehaltige Getränke ohne Fruchtsaft"
   }
 ]

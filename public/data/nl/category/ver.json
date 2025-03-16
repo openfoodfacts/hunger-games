@@ -4,6 +4,10 @@
     "name": "Aloe Vera sappen"
   },
   {
+    "key": "en:fresh-red-bananas",
+    "name": "Bananen(verse hele rode)"
+  },
+  {
     "key": "en:american-beers",
     "name": "Bier uit de Verenigde Staten van Amerika"
   },
@@ -16,6 +20,10 @@
     "name": "Breakfast cereals very rich in fibre fortified with vitamins and chemical elements"
   },
   {
+    "key": "fr:champignon-de-paris-frais",
+    "name": "Champignons (vers)"
+  },
+  {
     "key": "en:dehydrated-chicken-and-vermicelli-soup",
     "name": "Dehydrated chicken and vermicelli soup"
   },
@@ -25,7 +33,7 @@
   },
   {
     "key": "en:dried-soy-vermicelli",
-    "name": "Dried soy vermicelli"
+    "name": "Gedroogde soja vermicelli"
   },
   {
     "key": "en:refrigerated-squeezed-multifruit-juices",
@@ -44,8 +52,20 @@
     "name": "Gemalen gedroogde verse thijm"
   },
   {
+    "key": "en:high-digestible-milk",
+    "name": "Hoog verteerbare melk"
+  },
+  {
     "key": "en:chicken-and-vermicelli-soup",
     "name": "Kippensoepen met vermicelli"
+  },
+  {
+    "key": "en:mascarpone-substitutes",
+    "name": "Mascarpone-vervangers"
+  },
+  {
+    "key": "en:unsalted-cooked-soy-noodles",
+    "name": "Ongezouten gekookte soja vermicelli"
   },
   {
     "key": "en:breakfast-cereals-fortified-with-vitamins-and-chemical-elements",
@@ -88,8 +108,16 @@
     "name": "Reheatable tomatoes and vermicelli soup"
   },
   {
+    "key": "en:ricotta-substitutes",
+    "name": "Ricotta-vervangers"
+  },
+  {
+    "key": "fr:celeri-frais",
+    "name": "Selderij (vers)"
+  },
+  {
     "key": "en:soy-vermicelli",
-    "name": "Soy vermicelli"
+    "name": "Soja vermicelli"
   },
   {
     "key": "en:tomato-and-vermicelli-soups",
@@ -100,15 +128,11 @@
     "name": "Verbena"
   },
   {
-    "key": "en:evaporated-milks",
-    "name": "Verdikte melken"
-  },
-  {
-    "key": "fr:laits-concentres-sucres",
+    "key": "en:evaporated-milks-with-sugar",
     "name": "Verdikte melken met suiker"
   },
   {
-    "key": "fr:laits-concentres-non-sucres",
+    "key": "en:evaporated-milks-without-sugar",
     "name": "Verdikte melken zonder suiker"
   },
   {
@@ -120,12 +144,24 @@
     "name": "Verenigdkoninkrijkskazen"
   },
   {
-    "key": "en:cooked-pressed-cheeses",
+    "key": "en:hard-cheeses",
     "name": "Verhitte geperste kazen"
+  },
+  {
+    "key": "en:incorrect-product-type",
+    "name": "Verkeerd product type"
   },
   {
     "key": "en:vermouth",
     "name": "Vermouth"
+  },
+  {
+    "key": "en:verna-lemons",
+    "name": "Verna citroenen"
+  },
+  {
+    "key": "en:bulk",
+    "name": "Verpakkingsvrij"
   },
   {
     "key": "en:enriched-apple-juices",
@@ -160,16 +196,44 @@
     "name": "Vers vleesproducten"
   },
   {
+    "key": "en:fresh-strawberries",
+    "name": "Verse aardbeien"
+  },
+  {
+    "key": "en:fresh-jerusalem-artichoke",
+    "name": "Verse aardperen"
+  },
+  {
     "key": "en:fresh-seaweeds",
     "name": "Verse algen"
+  },
+  {
+    "key": "en:fresh-pineapple",
+    "name": "Verse ananas"
   },
   {
     "key": "en:refrigerated-squeezed-pineapple-juices",
     "name": "Verse Ananassappen"
   },
   {
+    "key": "en:fresh-apples",
+    "name": "Verse appels"
+  },
+  {
     "key": "en:fresh-aromatic-plants",
     "name": "Verse aromatische planten"
+  },
+  {
+    "key": "en:fresh-artichokes",
+    "name": "Verse artisjokken"
+  },
+  {
+    "key": "en:fresh-aubergines",
+    "name": "Verse aubergines"
+  },
+  {
+    "key": "en:fresh-bananas",
+    "name": "Verse bananen"
   },
   {
     "key": "en:fresh-basil",
@@ -178,6 +242,10 @@
   {
     "key": "en:fresh-legumes",
     "name": "Verse bonen"
+  },
+  {
+    "key": "en:fresh-blueberries",
+    "name": "Verse bosbessen"
   },
   {
     "key": "en:fresh-lemons",
@@ -214,6 +282,10 @@
   {
     "key": "en:fresh-eggs",
     "name": "Verse eieren"
+  },
+  {
+    "key": "en:fresh-egg-pasta",
+    "name": "Verse eierpasta"
   },
   {
     "key": "en:european-moose-meat",
@@ -256,6 +328,14 @@
     "name": "Verse gehakte vleesproducten"
   },
   {
+    "key": "en:fresh-yellow-sweet-peppers",
+    "name": "Verse gele paprikas"
+  },
+  {
+    "key": "en:fresh-yellow-onions",
+    "name": "Verse gele uien"
+  },
+  {
     "key": "en:fresh-ginger-rhizomes",
     "name": "Verse gemberwortels"
   },
@@ -264,7 +344,7 @@
     "name": "Verse gemsvlezen"
   },
   {
-    "key": "en:squeezed-pomegranate-juices",
+    "key": "en:fresh-pomegranate-juice",
     "name": "Verse granaatappelsappen"
   },
   {
@@ -288,6 +368,18 @@
     "name": "Verse groenten"
   },
   {
+    "key": "en:fresh-bananas-from-the-canary-islands",
+    "name": "Verse hele bananen van de Canarische eilanden"
+  },
+  {
+    "key": "en:fresh-cavendish-bananas",
+    "name": "Verse hele Cavendish bananen"
+  },
+  {
+    "key": "en:fresh-frecinette-bananas",
+    "name": "Verse hele frecinette bananen"
+  },
+  {
     "key": "en:kangaroo-fresh-meat",
     "name": "Verse kangaroevlezen"
   },
@@ -302,6 +394,14 @@
   {
     "key": "en:fresh-sprouts",
     "name": "Verse kiemen"
+  },
+  {
+    "key": "en:fresh-garlic",
+    "name": "Verse knoflook"
+  },
+  {
+    "key": "en:fresh-cabbages",
+    "name": "Verse kolen"
   },
   {
     "key": "en:rabbit-fresh-meat",
@@ -356,7 +456,7 @@
     "name": "Verse munt"
   },
   {
-    "key": "en:squeezed-juices",
+    "key": "en:squeezed-fruit-juices",
     "name": "Verse ongekoelde vruchtensappen"
   },
   {
@@ -380,8 +480,20 @@
     "name": "Verse parelhoenvlezen"
   },
   {
+    "key": "en:fresh-pasta-stuffed-with-vegetables",
+    "name": "Verse pasta gevuld met groenten"
+  },
+  {
+    "key": "en:fresh-pasta-stuffed-with-cheese",
+    "name": "Verse pasta gevuld met kaas"
+  },
+  {
     "key": "en:fresh-pasta",
     "name": "Verse pastas"
+  },
+  {
+    "key": "en:fresh-parsnip",
+    "name": "Verse pastinaken"
   },
   {
     "key": "en:squeezed-pear-juices",
@@ -392,6 +504,18 @@
     "name": "Verse peterselie"
   },
   {
+    "key": "en:fresh-pollen",
+    "name": "Verse pollen"
+  },
+  {
+    "key": "en:fresh-squash",
+    "name": "Verse pompenen"
+  },
+  {
+    "key": "en:fresh-leeks",
+    "name": "Verse prei"
+  },
+  {
     "key": "en:fresh-foods",
     "name": "Verse producten"
   },
@@ -400,8 +524,12 @@
     "name": "Verse pruimensappen"
   },
   {
-    "key": "en:fresh-rhubarbs",
+    "key": "en:fresh-rhubarb",
     "name": "Verse rabarber"
+  },
+  {
+    "key": "en:fresh-radishes",
+    "name": "Verse radijs"
   },
   {
     "key": "en:fresh-ravioli",
@@ -410,6 +538,14 @@
   {
     "key": "en:reindeer-meat",
     "name": "Verse rendiervlezen"
+  },
+  {
+    "key": "en:raw-beetroot",
+    "name": "Verse rode bieten"
+  },
+  {
+    "key": "en:fresh-red-radishes",
+    "name": "Verse rode radijs"
   },
   {
     "key": "en:fresh-red-onions",
@@ -424,12 +560,20 @@
     "name": "Verse rundertartaarsteaks"
   },
   {
+    "key": "en:fresh-salsify",
+    "name": "Verse schorseneren"
+  },
+  {
     "key": "en:fresh-shallots",
     "name": "Verse sjalotjes"
   },
   {
     "key": "en:fresh-flat-green-beans",
     "name": "Verse snijbonen"
+  },
+  {
+    "key": "en:fresh-spinachs",
+    "name": "Verse spinazies"
   },
   {
     "key": "en:fresh-stevia",
@@ -460,8 +604,20 @@
     "name": "Verse uikiemen"
   },
   {
+    "key": "en:fresh-fennel-bulbs",
+    "name": "Verse venkelknollen"
+  },
+  {
     "key": "en:fresh-meats",
     "name": "Verse vlezen"
+  },
+  {
+    "key": "en:fresh-walnuts",
+    "name": "Verse walnoten"
+  },
+  {
+    "key": "en:fresh-belgian-endives",
+    "name": "Verse witlof"
   },
   {
     "key": "en:fresh-white-onions",
@@ -470,6 +626,10 @@
   {
     "key": "en:fresh-carrots",
     "name": "Verse wortel"
+  },
+  {
+    "key": "en:fresh-black-radishes",
+    "name": "Verse zwarte radijs"
   },
   {
     "key": "en:fortified-wines",
@@ -490,6 +650,18 @@
   {
     "key": "fr:laits-entiers-concentres",
     "name": "Volle verdikte melken"
+  },
+  {
+    "key": "en:watercress-fresh",
+    "name": "Waterkers (vers)"
+  },
+  {
+    "key": "en:wheat-vermicelli",
+    "name": "Wheat vermicelli"
+  },
+  {
+    "key": "en:fresh-sweet-potatoes",
+    "name": "Zoete aardappelen (vers)"
   },
   {
     "key": "en:fortified-wines-such-as-natural-sweet-wines",

@@ -1,15 +1,7 @@
 [
   {
-    "key": "en:10-red-wine",
-    "name": "10% red wine"
-  },
-  {
     "key": "en:11-dry-white-wine",
     "name": "11% dry white wine"
-  },
-  {
-    "key": "en:11-red-wine",
-    "name": "11% red wine"
   },
   {
     "key": "en:11-rose-wine",
@@ -18,14 +10,6 @@
   {
     "key": "en:11-white-wine",
     "name": "11% white wine"
-  },
-  {
-    "key": "en:12-red-wine",
-    "name": "12% red wine"
-  },
-  {
-    "key": "en:13-red-wine",
-    "name": "13% red wine"
   },
   {
     "key": "en:beading-wines",
@@ -72,10 +56,6 @@
     "name": "Dutch wines"
   },
   {
-    "key": "en:flavoured-wines",
-    "name": "Flavoured wines"
-  },
-  {
     "key": "en:fortified-wines",
     "name": "Fortified wines"
   },
@@ -84,8 +64,8 @@
     "name": "Fortified wines such as natural sweet wines"
   },
   {
-    "key": "en:french-sparkling-wines",
-    "name": "French sparkling wines"
+    "key": "en:frozen-chicken-wings",
+    "name": "Frozen chicken wings"
   },
   {
     "key": "en:mackerel-fillets-in-white-wine-and-herbs",
@@ -104,7 +84,7 @@
     "name": "Madeira wine aspic"
   },
   {
-    "key": "it:marsala",
+    "key": "hr:vino-marsala",
     "name": "Marsala wine"
   },
   {
@@ -122,10 +102,6 @@
   {
     "key": "en:non-alcoholic-wines",
     "name": "Non-alcoholic wines"
-  },
-  {
-    "key": "en:organic-red-wines",
-    "name": "Organic red wines"
   },
   {
     "key": "en:red-windsor",
@@ -176,6 +152,14 @@
     "name": "Sparkling fruit wine"
   },
   {
+    "key": "en:sparkling-red-wine",
+    "name": "Sparkling red wine"
+  },
+  {
+    "key": "en:sparkling-rose-wine",
+    "name": "Sparkling Rosé wine"
+  },
+  {
     "key": "en:sparkling-white-wine",
     "name": "Sparkling white wine"
   },
@@ -208,24 +192,20 @@
     "name": "Wine jams"
   },
   {
+    "key": "en:wine-jellies",
+    "name": "Wine jellies"
+  },
+  {
     "key": "en:wine-sauces",
     "name": "Wine sauces"
   },
   {
-    "key": "en:wine-without-geographic-indication",
-    "name": "Wine without geographic indication"
-  },
-  {
-    "key": "en:wine-based-alcoholic-beverages",
-    "name": "Wine-based alcoholic beverages"
+    "key": "en:wine-spreads",
+    "name": "Wine spreads"
   },
   {
     "key": "en:wine-based-aperitif",
     "name": "Wine-based aperitif"
-  },
-  {
-    "key": "en:wines-from-albania",
-    "name": "Wines from Albania"
   },
   {
     "key": "en:wines-from-algeria",
@@ -236,32 +216,12 @@
     "name": "Wines from America"
   },
   {
-    "key": "en:wines-from-argentina",
-    "name": "Wines from Argentina"
-  },
-  {
     "key": "en:wines-from-armenia",
     "name": "Wines from Armenia"
   },
   {
     "key": "en:wines-from-australia",
     "name": "Wines from Australia"
-  },
-  {
-    "key": "en:wines-from-austria",
-    "name": "Wines from Austria"
-  },
-  {
-    "key": "en:wines-from-belgium",
-    "name": "Wines from Belgium"
-  },
-  {
-    "key": "en:wines-from-brazil",
-    "name": "Wines from Brazil"
-  },
-  {
-    "key": "en:wines-from-bulgaria",
-    "name": "Wines from Bulgaria"
   },
   {
     "key": "en:wines-from-california",

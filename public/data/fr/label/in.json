@@ -4,8 +4,8 @@
     "name": "Australian International Beer Awards"
   },
   {
-    "key": "en:brown-dot-india",
-    "name": "Brown Dot India"
+    "key": "en:brown-triangle-india",
+    "name": "Brown Triangle India"
   },
   {
     "key": "en:some-ingredients-not-from-italy",
@@ -68,6 +68,14 @@
     "name": "Concours International du Gamay"
   },
   {
+    "key": "en:conservation-international",
+    "name": "Conservation international"
+  },
+  {
+    "key": "en:fairtrade-india",
+    "name": "Fairtrade India"
+  },
+  {
     "key": "en:fairtrade-international",
     "name": "Fairtrade International"
   },
@@ -80,8 +88,36 @@
     "name": "Green Dot India"
   },
   {
+    "key": "en:high-in-biotin",
+    "name": "High in biotin"
+  },
+  {
+    "key": "en:high-in-iodine",
+    "name": "High in iodine"
+  },
+  {
+    "key": "en:high-in-iron",
+    "name": "High in iron"
+  },
+  {
+    "key": "en:high-in-magnesium",
+    "name": "High in magnesium"
+  },
+  {
+    "key": "en:high-in-pantothenic-acid",
+    "name": "High in pantothenic acid"
+  },
+  {
+    "key": "en:high-in-phosphore",
+    "name": "High in phosphore"
+  },
+  {
     "key": "en:high-in-salt-finland",
     "name": "High in salt - Finland"
+  },
+  {
+    "key": "en:high-in-zinc",
+    "name": "High in zinc"
   },
   {
     "key": "en:iberwine-in-miami",
@@ -148,32 +184,136 @@
     "name": "Informations nutritionnelles incorrectes sur l'emballage"
   },
   {
+    "key": "en:inspected-for-wholesomeness-by-the-u-s-department-of-agriculture",
+    "name": "Inspected for wholesomeness by the U.S. Department of Agriculture"
+  },
+  {
     "key": "en:institut-fresenius",
     "name": "Institut Fresenius"
   },
   {
-    "key": "en:made-in-denmark",
-    "name": "Made in Denmark"
+    "key": "en:international-ice-cream-consortium-award",
+    "name": "International Ice Cream Consortium award"
+  },
+  {
+    "key": "en:international-ice-cream-consortium-award-best-commercial-solution-2014",
+    "name": "International Ice Cream Consortium award best commercial solution 2014"
+  },
+  {
+    "key": "en:international-ice-cream-consortium-award-best-commercial-solution-2015",
+    "name": "International Ice Cream Consortium award best commercial solution 2015"
+  },
+  {
+    "key": "en:international-ice-cream-consortium-award-best-commercial-solution-2016",
+    "name": "International Ice Cream Consortium award best commercial solution 2016"
+  },
+  {
+    "key": "en:international-ice-cream-consortium-award-best-commercial-solution-2017",
+    "name": "International Ice Cream Consortium award best commercial solution 2017"
+  },
+  {
+    "key": "en:international-ice-cream-consortium-award-best-commercial-solution-2018",
+    "name": "International Ice Cream Consortium award best commercial solution 2018"
+  },
+  {
+    "key": "en:international-ice-cream-consortium-award-best-commercial-solution-2019",
+    "name": "International Ice Cream Consortium award best commercial solution 2019"
+  },
+  {
+    "key": "en:international-ice-cream-consortium-award-best-ice-cream-2014",
+    "name": "International Ice Cream Consortium award best ice cream 2014"
+  },
+  {
+    "key": "en:international-ice-cream-consortium-award-best-ice-cream-2015",
+    "name": "International Ice Cream Consortium award best ice cream 2015"
+  },
+  {
+    "key": "en:international-ice-cream-consortium-award-best-ice-cream-2016",
+    "name": "International Ice Cream Consortium award best ice cream 2016"
+  },
+  {
+    "key": "en:international-ice-cream-consortium-award-best-ice-cream-2017",
+    "name": "International Ice Cream Consortium award best ice cream 2017"
+  },
+  {
+    "key": "en:international-ice-cream-consortium-award-best-ice-cream-2018",
+    "name": "International Ice Cream Consortium award best ice cream 2018"
+  },
+  {
+    "key": "en:international-ice-cream-consortium-award-best-ice-cream-2019",
+    "name": "International Ice Cream Consortium award best ice cream 2019"
+  },
+  {
+    "key": "en:international-ice-cream-consortium-award-best-technical-solution-2014",
+    "name": "International Ice Cream Consortium award best technical solution 2014"
+  },
+  {
+    "key": "en:international-ice-cream-consortium-award-best-technical-solution-2015",
+    "name": "International Ice Cream Consortium award best technical solution 2015"
+  },
+  {
+    "key": "en:international-ice-cream-consortium-award-best-technical-solution-2016",
+    "name": "International Ice Cream Consortium award best technical solution 2016"
+  },
+  {
+    "key": "en:international-ice-cream-consortium-award-best-technical-solution-2017",
+    "name": "International Ice Cream Consortium award best technical solution 2017"
+  },
+  {
+    "key": "en:international-ice-cream-consortium-award-best-technical-solution-2018",
+    "name": "International Ice Cream Consortium award best technical solution 2018"
+  },
+  {
+    "key": "en:international-ice-cream-consortium-award-best-technical-solution-2019",
+    "name": "International Ice Cream Consortium award best technical solution 2019"
+  },
+  {
+    "key": "en:international-ice-cream-consortium-award-ice-cream-maker-of-the-year-2016",
+    "name": "International Ice Cream Consortium award ice cream maker of the year 2016"
+  },
+  {
+    "key": "en:international-ice-cream-consortium-award-ice-cream-maker-of-the-year-2017",
+    "name": "International Ice Cream Consortium award ice cream maker of the year 2017"
+  },
+  {
+    "key": "en:international-ice-cream-consortium-award-ice-cream-maker-of-the-year-2018",
+    "name": "International Ice Cream Consortium award ice cream maker of the year 2018"
+  },
+  {
+    "key": "en:international-ice-cream-consortium-award-ice-cream-maker-of-the-year-2019",
+    "name": "International Ice Cream Consortium award ice cream maker of the year 2019"
+  },
+  {
+    "key": "en:international-ice-cream-consortium-award-most-innovative-ice-cream-2014",
+    "name": "International Ice Cream Consortium award most innovative ice cream 2014"
+  },
+  {
+    "key": "en:international-ice-cream-consortium-award-most-innovative-ice-cream-2015",
+    "name": "International Ice Cream Consortium award most innovative ice cream 2015"
+  },
+  {
+    "key": "en:international-ice-cream-consortium-award-most-innovative-ice-cream-2016",
+    "name": "International Ice Cream Consortium award most innovative ice cream 2016"
+  },
+  {
+    "key": "en:international-ice-cream-consortium-award-most-innovative-ice-cream-2017",
+    "name": "International Ice Cream Consortium award most innovative ice cream 2017"
+  },
+  {
+    "key": "en:international-ice-cream-consortium-award-most-innovative-ice-cream-2018",
+    "name": "International Ice Cream Consortium award most innovative ice cream 2018"
+  },
+  {
+    "key": "en:international-ice-cream-consortium-award-most-innovative-ice-cream-2019",
+    "name": "International Ice Cream Consortium award most innovative ice cream 2019"
   },
   {
     "key": "en:made-in-hungary",
     "name": "Made in Hungary"
   },
   {
-    "key": "en:made-in-luxembourg",
-    "name": "Made in Luxembourg"
-  },
-  {
     "key": "en:made-in-mexico",
     "name": "Made in Mexico"
-  },
-  {
-    "key": "en:made-in-poland",
-    "name": "Made in Poland"
-  },
-  {
-    "key": "en:made-in-the-eu",
-    "name": "Made in the EU"
   },
   {
     "key": "fr:muslim-conseil-international",
@@ -200,8 +340,16 @@
     "name": "Production intégrée"
   },
   {
-    "key": "en:rich-in",
-    "name": "Rich in"
+    "key": "en:rich-in-vitamin-b2",
+    "name": "Rich in vitamin B2"
+  },
+  {
+    "key": "en:rich-in-vitamin-b3",
+    "name": "Rich in vitamin B3"
+  },
+  {
+    "key": "en:rich-in-unsaturated-fatty-acids",
+    "name": "Riche en acides gras insaturés"
   },
   {
     "key": "en:san-francisco-international-wine-competition",

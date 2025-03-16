@@ -1,11 +1,11 @@
 [
   {
     "key": "en:10-less-salt",
-    "name": "10% less salt"
+    "name": "10% mindre salt"
   },
   {
     "key": "en:15-less-salt",
-    "name": "15% less salt"
+    "name": "15% mindre salt"
   },
   {
     "key": "en:20-less-salt",
@@ -52,6 +52,22 @@
     "name": "Dolphin Safe"
   },
   {
+    "key": "en:high-in-sat-fat-health-canada",
+    "name": "High in Sat fat (Health Canada)"
+  },
+  {
+    "key": "en:high-in-sat-fat-and-sodium-health-canada",
+    "name": "High in Sat fat and Sodium (Health Canada)"
+  },
+  {
+    "key": "en:high-in-sat-fat-and-sugars-health-canada",
+    "name": "High in Sat fat and Sugars (Health Canada)"
+  },
+  {
+    "key": "en:high-in-sat-fat-sugars-and-sodium-health-canada",
+    "name": "High in Sat fat Sugars and Sodium (Health Canada)"
+  },
+  {
     "key": "en:high-in-salt-finland",
     "name": "Kraftigt saltat"
   },
@@ -64,6 +80,14 @@
     "name": "Low salt"
   },
   {
+    "key": "en:low-saturated-fat",
+    "name": "Low saturated fat"
+  },
+  {
+    "key": "fr:salage-naturel",
+    "name": "Naturligt saltad"
+  },
+  {
     "key": "en:no-added-salt",
     "name": "No added salt"
   },
@@ -74,6 +98,10 @@
   {
     "key": "en:reduced-salt",
     "name": "Reduced salt"
+  },
+  {
+    "key": "en:not-advised-for-children-and-pregnant-women",
+    "name": "Rekommenderas ej till barn samt gravida"
   },
   {
     "key": "en:sa-bio-102",
@@ -120,12 +148,20 @@
     "name": "San Francisco International Wine Competition"
   },
   {
+    "key": "en:saturated-fat-free",
+    "name": "Saturated fat-free"
+  },
+  {
     "key": "en:thai-fish-sauce-quality-label",
     "name": "Thai fish sauce quality label"
   },
   {
     "key": "en:tierra-de-sabor",
     "name": "Tierra de Sabor"
+  },
+  {
+    "key": "en:very-low-salt",
+    "name": "Very low salt"
   },
   {
     "key": "en:with-guerande-salt",

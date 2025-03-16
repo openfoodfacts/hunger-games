@@ -12,12 +12,20 @@
     "name": "EU/non-EU Agriculture"
   },
   {
+    "key": "en:fairtrade-norway",
+    "name": "Fairtrade Norway"
+  },
+  {
     "key": "en:low-or-no-fat",
     "name": "Low or no fat"
   },
   {
     "key": "en:low-or-no-salt",
     "name": "Low or no salt"
+  },
+  {
+    "key": "en:low-or-no-sodium",
+    "name": "Low or no Sodium"
   },
   {
     "key": "en:no-added-fat",
@@ -32,12 +40,12 @@
     "name": "No added salt"
   },
   {
-    "key": "en:no-added-thickener",
-    "name": "No added thickener"
+    "key": "en:no-added-sodium",
+    "name": "No added sodium"
   },
   {
-    "key": "en:no-additives",
-    "name": "No additives"
+    "key": "en:no-added-thickener",
+    "name": "No added thickener"
   },
   {
     "key": "en:no-alcohol",
@@ -54,10 +62,6 @@
   {
     "key": "en:no-artificial-colors",
     "name": "No artificial colors"
-  },
-  {
-    "key": "en:no-artificial-colours-and-preservatives",
-    "name": "No artificial colours and preservatives"
   },
   {
     "key": "en:no-artificial-flavour-enhancer",
@@ -104,10 +108,6 @@
     "name": "No eggs"
   },
   {
-    "key": "en:no-emulsifiers",
-    "name": "No emulsifiers"
-  },
-  {
     "key": "en:no-fat",
     "name": "No fat"
   },
@@ -120,6 +120,10 @@
     "name": "No flavour enhancer"
   },
   {
+    "key": "en:no-fructose-syrup",
+    "name": "No fructose syrup"
+  },
+  {
     "key": "en:no-garlic",
     "name": "No garlic"
   },
@@ -130,6 +134,14 @@
   {
     "key": "en:no-gelatin",
     "name": "No gelatin"
+  },
+  {
+    "key": "en:no-glucose-syrup",
+    "name": "No glucose syrup"
+  },
+  {
+    "key": "en:no-glucose-fructose-syrup",
+    "name": "No glucose-fructose syrup"
   },
   {
     "key": "en:no-gmos",
@@ -164,6 +176,10 @@
     "name": "No salt"
   },
   {
+    "key": "en:no-sodium",
+    "name": "No sodium"
+  },
+  {
     "key": "en:no-soja-lecithine",
     "name": "No soja lecithine"
   },
@@ -181,7 +197,11 @@
   },
   {
     "key": "en:no-trans-fat",
-    "name": "No Trans Fat"
+    "name": "No Trans fat"
+  },
+  {
+    "key": "en:no-trans-fat-and-preservatives",
+    "name": "No Trans Fat and preservatives"
   },
   {
     "key": "en:no-wheat",
@@ -210,14 +230,6 @@
   {
     "key": "en:non-vegetarian",
     "name": "Non-vegetarian"
-  },
-  {
-    "key": "en:not-advised-for-children-and-pregnant-women",
-    "name": "Not advised for children and pregnant women"
-  },
-  {
-    "key": "en:not-advised-for-pregnant-women",
-    "name": "Not advised for pregnant women"
   },
   {
     "key": "en:not-advised-for-specific-people",

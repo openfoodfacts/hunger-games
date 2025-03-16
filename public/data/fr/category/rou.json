@@ -4,10 +4,6 @@
     "name": "Abricots rouges du Roussillon"
   },
   {
-    "key": "en:lingonberries",
-    "name": "Airelles rouges"
-  },
-  {
     "key": "fr:ajaccio-rouge",
     "name": "Ajaccio rouge"
   },
@@ -92,8 +88,12 @@
     "name": "Auxey-Duresses premier cru Reugne rouge AOC - AOP"
   },
   {
-    "key": "en:red-banana",
+    "key": "en:red-bananas",
     "name": "Bananes rouges"
+  },
+  {
+    "key": "en:fresh-red-bananas",
+    "name": "Bananes rouges fraîches"
   },
   {
     "key": "fr:bea-du-roussillon",
@@ -280,15 +280,11 @@
     "name": "Beaune premier cru Sur les Grèves rouge"
   },
   {
-    "key": "en:uncooked-beetroots",
-    "name": "Betterave rouge crue"
-  },
-  {
     "key": "en:cooked-beetroots",
     "name": "Betteraves rouges cuites"
   },
   {
-    "key": "en:red-beers",
+    "key": "en:red-ales",
     "name": "Bières rousses"
   },
   {
@@ -302,6 +298,14 @@
   {
     "key": "fr:chassagne-montrachet-premier-cru-abbaye-de-morgeot-rouge",
     "name": "Chassagne-Montrachet premier cru Abbaye de Morgeot rouge"
+  },
+  {
+    "key": "fr:chassagne-montrachet-premier-cru-blanchot-dessus-rouge",
+    "name": "Chassagne-Montrachet premier cru Blanchot dessus rouge"
+  },
+  {
+    "key": "fr:chassagne-montrachet-premier-cru-bois-de-chassagne-rouge",
+    "name": "Chassagne-Montrachet premier cru Bois de Chassagne rouge"
   },
   {
     "key": "fr:chassagne-montrachet-premier-cru-cailleret-rouge",
@@ -480,6 +484,14 @@
     "name": "Chou rouge boulli"
   },
   {
+    "key": "en:pickled-red-cabbage",
+    "name": "Chou rouge mariné"
+  },
+  {
+    "key": "en:canned-red-cabbage",
+    "name": "Choux rouges en conserve"
+  },
+  {
     "key": "en:fresh-red-cabbage",
     "name": "Choux rouges frais"
   },
@@ -536,6 +548,10 @@
     "name": "Filets d'anchois roulés aux câpres"
   },
   {
+    "key": "en:soft-cheeses-with-a-red-rind",
+    "name": "Fromages à croûte rouge"
+  },
+  {
     "key": "en:romanian-cheeses",
     "name": "Fromages roumains"
   },
@@ -546,6 +562,10 @@
   {
     "key": "en:frozen-berries",
     "name": "Fruits rouges surgelés"
+  },
+  {
+    "key": "en:red-bean-patties",
+    "name": "Galettes aux haricots rouges"
   },
   {
     "key": "en:rice-paper",
@@ -648,8 +668,8 @@
     "name": "Givry premier cru Vigne Rouge"
   },
   {
-    "key": "fr:glaces-aux-fruits-rouges",
-    "name": "Glaces aux fruits-rouges"
+    "key": "en:berries-ice-cream-tubs",
+    "name": "Glaces aux fruits rouges"
   },
   {
     "key": "fr:grand-roussillon-rancio",
@@ -680,6 +700,10 @@
     "name": "Jus de fruits rouges"
   },
   {
+    "key": "en:red-grape-juices",
+    "name": "Jus de raisin rouge"
+  },
+  {
     "key": "fr:ladoix-premier-cru-bois-roussot",
     "name": "Ladoix premier cru Bois Roussot"
   },
@@ -694,6 +718,14 @@
   {
     "key": "en:frozen-mixed-berries",
     "name": "Mélanges de fruits rouges surgelés"
+  },
+  {
+    "key": "fr:mercurey-premier-cru-les-byots-rouge",
+    "name": "Mercurey premier cru Les Byots rouge"
+  },
+  {
+    "key": "en:meringue-roulades",
+    "name": "Meringue roulades"
   },
   {
     "key": "fr:miels-d-acacia-des-rives-du-danube-de-roumanie",
@@ -1024,6 +1056,10 @@
     "name": "Piments rouges"
   },
   {
+    "key": "en:red-peppers",
+    "name": "Poivres rouges"
+  },
+  {
     "key": "en:red-bell-peppers",
     "name": "Poivrons rouges"
   },
@@ -1038,6 +1074,10 @@
   {
     "key": "en:canned-sweet-red-peppers",
     "name": "Poivrons rouges en conserve"
+  },
+  {
+    "key": "en:red-potatoes",
+    "name": "Pommes de terres rouges"
   },
   {
     "key": "en:red-ports",
@@ -1120,6 +1160,10 @@
     "name": "Radis rouges"
   },
   {
+    "key": "en:red-radish-pickles",
+    "name": "Radis rouges marinés"
+  },
+  {
     "key": "fr:reuilly-rouge",
     "name": "Reuilly rouge"
   },
@@ -1194,6 +1238,14 @@
   {
     "key": "fr:roussette-de-savoie",
     "name": "Roussette de Savoie"
+  },
+  {
+    "key": "en:roux",
+    "name": "Roux"
+  },
+  {
+    "key": "en:brown-roux",
+    "name": "Roux bruns"
   },
   {
     "key": "fr:rully-premier-cru-agneux-rouge",
@@ -1596,10 +1648,6 @@
     "name": "Tarte aux fruits rouges"
   },
   {
-    "key": "en:atlantic-bluefin-tuna",
-    "name": "Thon rouge"
-  },
-  {
     "key": "en:atlantic-bluefin-tunas",
     "name": "Thons rouges"
   },
@@ -1626,6 +1674,10 @@
   {
     "key": "en:organic-red-wines",
     "name": "Vin rouge bio"
+  },
+  {
+    "key": "en:sparkling-red-wine",
+    "name": "Vin rouge pétillant"
   },
   {
     "key": "en:red-rice-vinegars",

@@ -36,6 +36,10 @@
     "name": "50% menos de sal"
   },
   {
+    "key": "en:low-saturated-fat",
+    "name": "Bajo contenido de grasas saturadas"
+  },
+  {
     "key": "en:low-salt",
     "name": "Bajo en sal"
   },
@@ -45,7 +49,7 @@
   },
   {
     "key": "en:cacao-controlled-by-ecocert-sa",
-    "name": "Cacao controlled by Ecocert SA"
+    "name": "Cacao controlado por Ecocert SA"
   },
   {
     "key": "en:catad-or-santiago-de-chile-wine-awards",
@@ -57,11 +61,27 @@
   },
   {
     "key": "es:exceso-grasas-saturadas",
-    "name": "EXCESO GRASAS SATURADAS"
+    "name": "Exceso Grasas Saturadas"
   },
   {
     "key": "en:high-in-salt-finland",
     "name": "High in salt - Finland"
+  },
+  {
+    "key": "en:high-in-sat-fat-health-canada",
+    "name": "High in Sat fat (Health Canada)"
+  },
+  {
+    "key": "en:high-in-sat-fat-and-sodium-health-canada",
+    "name": "High in Sat fat and Sodium (Health Canada)"
+  },
+  {
+    "key": "en:high-in-sat-fat-and-sugars-health-canada",
+    "name": "High in Sat fat and Sugars (Health Canada)"
+  },
+  {
+    "key": "en:high-in-sat-fat-sugars-and-sodium-health-canada",
+    "name": "High in Sat fat Sugars and Sodium (Health Canada)"
   },
   {
     "key": "en:reduced-salt",
@@ -104,6 +124,10 @@
     "name": "Sabor"
   },
   {
+    "key": "fr:salage-naturel",
+    "name": "Salado de forma natural"
+  },
+  {
     "key": "es:salon-internacional-del-vino-de-valladolid",
     "name": "Salon Internacional del Vino de Valladolid"
   },
@@ -122,6 +146,10 @@
   {
     "key": "en:no-artificial-colours-or-flavours",
     "name": "Sin colorantes o saborizantes artificiales"
+  },
+  {
+    "key": "en:saturated-fat-free",
+    "name": "Sin grasas saturadas"
   },
   {
     "key": "en:no-artificial-flavour-enhancer",
@@ -146,6 +174,10 @@
   {
     "key": "en:tierra-de-sabor",
     "name": "Tierra de Sabor"
+  },
+  {
+    "key": "en:very-low-salt",
+    "name": "Very low salt"
   },
   {
     "key": "en:with-guerande-salt",

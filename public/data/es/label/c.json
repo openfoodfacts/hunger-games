@@ -1,5 +1,13 @@
 [
   {
+    "key": "en:100-climate-compensated",
+    "name": "100% Climate Compensated"
+  },
+  {
+    "key": "en:120-days-grass-fed",
+    "name": "120 días alimentados con pasto"
+  },
+  {
     "key": "en:alimentos-de-castilla-la-mancha",
     "name": "Alimentos de Castilla-La Mancha"
   },
@@ -8,8 +16,16 @@
     "name": "Alto contenido de calcio"
   },
   {
+    "key": "es:asociacion-del-sello-de-productos-de-comercio-justo",
+    "name": "Asociación del Sello de Productos de Comercio Justo"
+  },
+  {
     "key": "en:low-sugar",
     "name": "Bajo contenido de azúcar"
+  },
+  {
+    "key": "en:low-saturated-fat",
+    "name": "Bajo contenido de grasas saturadas"
   },
   {
     "key": "en:ca-bio-149",
@@ -17,26 +33,10 @@
   },
   {
     "key": "en:cacao-controlled-by-ecocert-sa",
-    "name": "Cacao controlled by Ecocert SA"
+    "name": "Cacao controlado por Ecocert SA"
   },
   {
     "key": "en:utz-certified-coffee",
     "name": "Café certificado UTZ"
-  },
-  {
-    "key": "en:carrefour-quality",
-    "name": "Calidad Carrefour"
-  },
-  {
-    "key": "en:calidad-certificada",
-    "name": "Calidad Certificada"
-  },
-  {
-    "key": "en:qualite-france-french-quality",
-    "name": "Calidad francesa"
-  },
-  {
-    "key": "en:superior-quality",
-    "name": "Calidad superior"
   }
 ]

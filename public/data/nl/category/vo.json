@@ -8,6 +8,10 @@
     "name": "Amandelcreme voor koken"
   },
   {
+    "key": "en:chocolate-croissant-prepacked",
+    "name": "Chocolade croissants voorverpakt"
+  },
+  {
     "key": "en:frozen-pre-cooked-rice",
     "name": "Diepvries voorgekookte rijst"
   },
@@ -24,12 +28,32 @@
     "name": "Gesneden volkorenbroden"
   },
   {
+    "key": "en:whole-pasteurised-milks",
+    "name": "Gesteriliseerde volle melk"
+  },
+  {
     "key": "en:whole-common-wheat-flours",
     "name": "Gewone volkoren tarwemelen"
   },
   {
+    "key": "en:whole-millet",
+    "name": "Gierst (volkoren)"
+  },
+  {
     "key": "en:millet-based-creams-for-cooking",
     "name": "Gierstroom voor koken"
+  },
+  {
+    "key": "en:vegetable-dish-for-babies-from-12-months-with-starch-and-fish",
+    "name": "Groentegerecht voor baby's vanaf 12 maanden met zetmeel en vis"
+  },
+  {
+    "key": "en:vegetable-dish-for-babies-from-6-months-with-starch-and-fish",
+    "name": "Groentegerecht voor baby's vanaf 6 maanden met zetmeel en vis"
+  },
+  {
+    "key": "en:vegetable-dish-for-babies-from-8-months-with-starch-and-fish",
+    "name": "Groentegerecht voor baby's vanaf 8 maanden met zetmeel en vis"
   },
   {
     "key": "nl:groentemengsels-voor-spaghetti-en-macaroni",
@@ -38,10 +62,6 @@
   {
     "key": "fr:purees-de-sesame-demi-complet",
     "name": "Half-volkoren sesampastas"
-  },
-  {
-    "key": "en:durum-wheat-semolinas-for-couscous",
-    "name": "Harde tarwe griesmelen voor couscous"
   },
   {
     "key": "es:pastas-de-trigo-duro-integrales-o-semi-integrales",
@@ -56,31 +76,47 @@
     "name": "Herbal vodka from the North Podlasie Lowland aromatised with an extract of bison grass"
   },
   {
+    "key": "en:cone-wafer-for-ice-cream",
+    "name": "Hoorntje voor ijs"
+  },
+  {
+    "key": "en:instant-cereal-powder-to-be-reconstituted-for-baby-from-6-months",
+    "name": "Instante graanpoeder om te reconstitueren voor baby's vanaf 6 maanden"
+  },
+  {
     "key": "en:small-spelt-flour-t110",
     "name": "Klein volkoren speltmeel T110"
+  },
+  {
+    "key": "en:crispbreads-non-wholemeal",
+    "name": "Knäckebrot(niet-volkoren)"
+  },
+  {
+    "key": "en:crispbreads-wholemeal",
+    "name": "Knäckebrot(volkoren)"
   },
   {
     "key": "en:cold-starters",
     "name": "Koude voorgerechten"
   },
   {
-    "key": "en:lettische-vodkas",
-    "name": "Lettische vodkas"
-  },
-  {
-    "key": "en:dairy-dessert-for-baby",
-    "name": "Melktoetje voor babies"
+    "key": "en:milks-for-premature-babies",
+    "name": "Melk voor premature baby's"
   },
   {
     "key": "en:non-dairy-fermented-foods",
     "name": "Non-zuivel gefermenteerd voedsel"
   },
   {
+    "key": "en:vodka-from-norway",
+    "name": "Noorse Vodka"
+  },
+  {
     "key": "en:olive-oils-from-vorios-mylopotamos-rethymnis-kritis",
     "name": "Olijfoliën uit Vorios Mylopotamos Rethymnis Kritis"
   },
   {
-    "key": "en:chocolate-powders",
+    "key": "en:instant-chocolate-powders",
     "name": "Oplospoeder voor chocolademelk"
   },
   {
@@ -104,8 +140,20 @@
     "name": "Snacks en toetjes voor babies"
   },
   {
+    "key": "en:soup-for-baby-with-vegetables-and-cereals-and-milk",
+    "name": "Soep voor baby met groenten"
+  },
+  {
+    "key": "en:soup-for-baby-with-vegetables-and-potatoes",
+    "name": "Soep voor baby met groenten en aardappelen"
+  },
+  {
     "key": "fr:miels-de-sapin-des-vosges",
     "name": "Sparrenhoningen uit de Vogezen"
+  },
+  {
+    "key": "en:cotton-candy-sugars",
+    "name": "Suikers voor suikerspin"
   },
   {
     "key": "en:batches-withdrawn-from-retail-stores-in-february-2013",
@@ -121,7 +169,7 @@
   },
   {
     "key": "en:vodka-based-alcoholic-beverages",
-    "name": "Vodka-based alcoholic beverages"
+    "name": "Vodka-gebaseerde alcoholische dranken"
   },
   {
     "key": "en:food-additives",
@@ -144,28 +192,8 @@
     "name": "Voedsel op basis van fruit en groenten"
   },
   {
-    "key": "en:cooking-helpers",
-    "name": "Voedselhulpmiddelen"
-  },
-  {
-    "key": "en:rabbit-food",
-    "name": "Voer voor konijnen"
-  },
-  {
-    "key": "en:horse-food",
-    "name": "Voer voor paarden"
-  },
-  {
-    "key": "en:reptile-food",
-    "name": "Voer voor reptielen"
-  },
-  {
     "key": "en:eggs",
     "name": "Vogeleieren"
-  },
-  {
-    "key": "en:bird-food",
-    "name": "Vogelvoer"
   },
   {
     "key": "en:vol-au-vent",
@@ -200,10 +228,6 @@
     "name": "Volkoren graanmeel"
   },
   {
-    "key": "en:wheat-flour-type-150",
-    "name": "Volkoren graanmelen"
-  },
-  {
     "key": "en:puffed-wholegrain-rice-cakes",
     "name": "Volkoren rijstwafels"
   },
@@ -236,6 +260,10 @@
     "name": "Volkorenpastas"
   },
   {
+    "key": "en:whole-milk-uht",
+    "name": "Volle melk UHT"
+  },
+  {
     "key": "en:whole-milks",
     "name": "Volle melken"
   },
@@ -254,10 +282,6 @@
   {
     "key": "en:whole-milk-yogurts",
     "name": "Volle yoghurts"
-  },
-  {
-    "key": "en:pre-baked-breads",
-    "name": "Voorgebakken broden"
   },
   {
     "key": "en:precooked-potatoes",

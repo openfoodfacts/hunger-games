@@ -52,6 +52,10 @@
     "name": "Anchovy fillets rolled with capers"
   },
   {
+    "key": "en:babas-with-mirabelle-de-lorraine",
+    "name": "Babas with Mirabelle de Lorraine"
+  },
+  {
     "key": "en:baby-food-jar-with-banana",
     "name": "Baby food jar with banana"
   },
@@ -66,6 +70,10 @@
   {
     "key": "en:baby-food-jar-without-banana",
     "name": "Baby food jar without banana"
+  },
+  {
+    "key": "en:bacon-covered-with-cornmeal",
+    "name": "Bacon covered with cornmeal"
   },
   {
     "key": "en:baguette-kebab-with-vegetables",
@@ -140,10 +148,6 @@
     "name": "Baked shortcrust pastry with vegetable oil"
   },
   {
-    "key": "en:bars-covered-with-chocolate",
-    "name": "Bars covered with chocolate"
-  },
-  {
     "key": "en:basque-cake-with-cherries",
     "name": "Basque cake with cherries"
   },
@@ -184,10 +188,6 @@
     "name": "Beers with fruits"
   },
   {
-    "key": "en:beers-with-low-alcohol-content",
-    "name": "Beers with low alcohol-content"
-  },
-  {
     "key": "en:beers-with-pear",
     "name": "Beers with pear"
   },
@@ -224,10 +224,6 @@
     "name": "Bircher-style sugar free muesli flakes with fruits"
   },
   {
-    "key": "en:biscuit-small-tart-with-chocolate-pre-packed",
-    "name": "Biscuit (small tart) with chocolate pre-packed"
-  },
-  {
     "key": "en:biscuit-filled-with-fruit-paste",
     "name": "Biscuit filled with fruit paste"
   },
@@ -236,12 +232,24 @@
     "name": "Biscuit with a chocolate bar covering"
   },
   {
-    "key": "en:biscuit-with-chocolate-covering",
-    "name": "Biscuit with chocolate covering"
+    "key": "en:biscuit-with-a-dark-chocolate-bar-covering",
+    "name": "Biscuit with a dark chocolate bar covering"
   },
   {
-    "key": "en:biscuit-with-fruit-covering",
-    "name": "Biscuit with fruit covering"
+    "key": "en:biscuit-with-a-filled-chocolate-bar-covering",
+    "name": "Biscuit with a filled chocolate bar covering"
+  },
+  {
+    "key": "en:biscuit-with-a-milk-chocolate-bar-covering",
+    "name": "Biscuit with a milk chocolate bar covering"
+  },
+  {
+    "key": "en:biscuit-with-a-white-chocolate-bar-covering",
+    "name": "Biscuit with a white chocolate bar covering"
+  },
+  {
+    "key": "en:biscuit-with-chocolate-covering",
+    "name": "Biscuit with chocolate covering"
   },
   {
     "key": "en:biscuit-with-milk",
@@ -468,8 +476,20 @@
     "name": "Button mushroom sautéed without fat"
   },
   {
+    "key": "en:cake-with-almond-flavoured-filling",
+    "name": "Cake with almond flavoured filling"
+  },
+  {
+    "key": "en:camembert-with-calvados",
+    "name": "Camembert with Calvados"
+  },
+  {
     "key": "en:canned-haricot-beans-with-tomato-sauce",
     "name": "Canned haricot beans with tomato sauce"
+  },
+  {
+    "key": "en:canned-meals-with-meat",
+    "name": "Canned meals with meat"
   },
   {
     "key": "en:canned-raviolis-filled-with-meat-in-tomato-sauce",
@@ -536,16 +556,12 @@
     "name": "Carbonated soft drink without fruit juice without sugar and with artificial sweeteners"
   },
   {
-    "key": "en:carbonated-soft-drinks-without-fruit-juice",
-    "name": "Carbonated soft drinks without fruit juice"
+    "key": "en:carbonated-soft-drinks-with-tea-extract",
+    "name": "Carbonated soft drinks with tea extract"
   },
   {
     "key": "en:carbonated-soft-drinks-without-fruit-juice-with-reduced-sugar",
     "name": "Carbonated soft drinks without fruit juice with reduced sugar"
-  },
-  {
-    "key": "en:carbonated-soft-drinks-without-fruit-juice-with-sugar",
-    "name": "Carbonated soft drinks without fruit juice with sugar"
   },
   {
     "key": "en:carbonated-soft-drinks-without-fruit-juice-with-sugar-and-artificial-sweeteners",
@@ -560,14 +576,6 @@
     "name": "Cassoulets with Toulouse sausage"
   },
   {
-    "key": "en:cereal-bar-with-almonds",
-    "name": "Cereal bar with almonds"
-  },
-  {
-    "key": "en:cereal-bar-with-almonds-or-hazelnuts",
-    "name": "Cereal bar with almonds or hazelnuts"
-  },
-  {
     "key": "en:cereal-bar-with-chocolate-fortified-with-vitamins-and-minerals",
     "name": "Cereal bar with chocolate fortified with vitamins and minerals"
   },
@@ -576,8 +584,16 @@
     "name": "Cereal bar with fruits fortified with vitamins and minerals"
   },
   {
-    "key": "en:cereal-bar-with-hazelnuts",
-    "name": "Cereal bar with hazelnuts"
+    "key": "en:cereal-bars-with-almonds",
+    "name": "Cereal bars with almonds"
+  },
+  {
+    "key": "en:cereal-bars-with-hazelnuts",
+    "name": "Cereal bars with hazelnuts"
+  },
+  {
+    "key": "en:cereal-bars-with-nuts",
+    "name": "Cereal bars with nuts"
   },
   {
     "key": "en:cereal-clusters-with-chocolate",
@@ -668,10 +684,6 @@
     "name": "Chocolate bar with dried fruits"
   },
   {
-    "key": "en:chocolate-cake-with-melting-centre",
-    "name": "Chocolate cake with melting centre"
-  },
-  {
     "key": "en:chocolate-confectioneries-filled-with-praline",
     "name": "Chocolate confectioneries filled with praline"
   },
@@ -682,6 +694,14 @@
   {
     "key": "en:chocolate-confectionery-with-dairy-filling",
     "name": "Chocolate confectionery with dairy filling"
+  },
+  {
+    "key": "en:chocolate-covered-bars-with-milk-and-cereals",
+    "name": "Chocolate covered bars with milk and cereals"
+  },
+  {
+    "key": "fr:pains-au-chocolat-a-l-huile-de-tournesol",
+    "name": "Chocolate croissants with sunflower oil"
   },
   {
     "key": "en:chocolate-filled-with-praline",
@@ -774,10 +794,6 @@
   {
     "key": "en:cocoa-powder-for-beverages-with-sugar-fortified-with-vitamins-and-chemical-elements",
     "name": "Cocoa powder for beverages with sugar fortified with vitamins and chemical elements"
-  },
-  {
-    "key": "en:coffee-drinks-with-milk",
-    "name": "Coffee drinks with milk"
   },
   {
     "key": "en:coffee-with-milk-with-sugar",
@@ -992,8 +1008,16 @@
     "name": "Croissant filled with jam"
   },
   {
+    "key": "en:croissant-with-almonds",
+    "name": "Croissant with almonds"
+  },
+  {
     "key": "en:croissant-with-almonds-from-bakery",
     "name": "Croissant with almonds from bakery"
+  },
+  {
+    "key": "en:croissants-with-almonds-and-pistachio",
+    "name": "Croissants with almonds and pistachio"
   },
   {
     "key": "en:croutons-with-garlic",
@@ -1030,6 +1054,10 @@
   {
     "key": "en:crunchy-mueslis-with-fruits",
     "name": "Crunchy mueslis with fruits"
+  },
+  {
+    "key": "en:crunchy-mueslis-without-fruits",
+    "name": "Crunchy mueslis without fruits"
   },
   {
     "key": "en:cured-smoked-ham-with-reduced-fat",
@@ -1212,6 +1240,18 @@
     "name": "Doughnuts filled with fruits"
   },
   {
+    "key": "en:doughnuts-filled-with-raspberries",
+    "name": "Doughnuts filled with raspberries"
+  },
+  {
+    "key": "en:dry-sausages-with-hazelnuts",
+    "name": "Dry sausages with hazelnuts"
+  },
+  {
+    "key": "en:dry-sausages-with-walnuts",
+    "name": "Dry sausages with walnuts"
+  },
+  {
     "key": "en:dry-spicy-pork-sausage-with-red-pepper",
     "name": "Dry spicy pork sausage with red pepper"
   },
@@ -1272,6 +1312,14 @@
     "name": "Espresso coffee without sugar"
   },
   {
+    "key": "en:evaporated-milks-with-sugar",
+    "name": "Evaporated milks with sugar"
+  },
+  {
+    "key": "en:evaporated-milks-without-sugar",
+    "name": "Evaporated milks without sugar"
+  },
+  {
     "key": "en:extruded-and-grilled-biscuits-with-chocolate-filling",
     "name": "Extruded and grilled biscuits with chocolate filling"
   },
@@ -1280,16 +1328,16 @@
     "name": "Extruded and grilled biscuits with fruits filling"
   },
   {
-    "key": "en:fat-free-fermented-milk-yogurt-with-fruits-and-sweetener",
-    "name": "Fat free fermented milk yogurt with fruits and sweetener"
+    "key": "en:fat-free-fermented-dairy-desserts-with-fruits-and-sweeteners",
+    "name": "Fat free fermented dairy desserts with fruits and sweeteners"
   },
   {
-    "key": "en:fat-free-fermented-milk-yogurt-with-fruits-and-sweetener-fortified-with-vitamin-d",
-    "name": "Fat free fermented milk yogurt with fruits and sweetener fortified with vitamin D"
+    "key": "en:fat-free-fermented-dairy-desserts-with-fruits-and-sweeteners-fortified-with-vitamin-d",
+    "name": "Fat free fermented dairy desserts with fruits and sweeteners fortified with vitamin D"
   },
   {
-    "key": "en:fat-free-flavoured-fermented-milk-yogurt-with-sweetener",
-    "name": "Fat free flavoured fermented milk yogurt with sweetener"
+    "key": "en:fat-free-fermented-dairy-desserts-with-sweeteners",
+    "name": "Fat free fermented dairy desserts with sweeteners"
   },
   {
     "key": "en:fat-free-fermented-yogurt-with-cereals",
@@ -1300,6 +1348,18 @@
     "name": "Fermented dairy desserts with fruits"
   },
   {
+    "key": "en:fermented-dairy-desserts-with-fruits-and-sweeteners",
+    "name": "Fermented dairy desserts with fruits and sweeteners"
+  },
+  {
+    "key": "en:fermented-dairy-desserts-with-fruits-enriched-with-vitamin-d",
+    "name": "Fermented dairy desserts with fruits enriched with vitamin D"
+  },
+  {
+    "key": "en:fermented-dairy-desserts-with-fruits-sugar-and-cream",
+    "name": "Fermented dairy desserts with fruits sugar and cream"
+  },
+  {
     "key": "en:fermented-milk-drinks-with-fruits",
     "name": "Fermented milk drinks with fruits"
   },
@@ -1308,20 +1368,8 @@
     "name": "Fermented milk drinks with sugar"
   },
   {
-    "key": "en:fermented-milk-flavoured-yogurt-with-sugar-and-cream",
-    "name": "Fermented milk flavoured yogurt with sugar and cream"
-  },
-  {
-    "key": "en:fermented-milk-yogurt-fortified-with-vitamin-d-with-fruits-and-sugar",
-    "name": "Fermented milk yogurt fortified with vitamin D with fruits and sugar"
-  },
-  {
     "key": "en:fermented-milk-yogurt-with-cereals",
     "name": "Fermented milk yogurt with cereals"
-  },
-  {
-    "key": "en:fermented-milk-yogurt-with-fruits-and-sugar-and-cream",
-    "name": "Fermented milk yogurt with fruits and sugar and cream"
   },
   {
     "key": "en:filled-crepes-with-chocolate",
@@ -1360,8 +1408,12 @@
     "name": "Fish with bordelaise sauce"
   },
   {
-    "key": "en:flavoured-dairy-drinks-with-sugar",
-    "name": "Flavoured dairy drinks with sugar"
+    "key": "en:flavoured-drinkable-yogurts-with-sugar",
+    "name": "Flavoured drinkable yogurts with sugar"
+  },
+  {
+    "key": "en:flavoured-fermented-dairy-desserts-with-sugar-and-cream",
+    "name": "Flavoured fermented dairy desserts with sugar and cream"
   },
   {
     "key": "en:flavoured-soy-drinks-enriched-in-calcium-with-sugar",
@@ -1424,12 +1476,20 @@
     "name": "Fromages blancs with fruits"
   },
   {
+    "key": "en:frozen-chicken-breast-without-skin-raw",
+    "name": "Frozen chicken breast without skin raw"
+  },
+  {
     "key": "en:frozen-dessert-ice-cream-with-meringue",
     "name": "Frozen dessert ice cream with meringue"
   },
   {
     "key": "en:frozen-fruits-with-added-sugar",
     "name": "Frozen fruits with added sugar"
+  },
+  {
+    "key": "en:frozen-meals-with-meat",
+    "name": "Frozen meals with meat"
   },
   {
     "key": "en:frozen-pan-fried-vegetables-with-mushrooms-country-style",
@@ -1458,6 +1518,14 @@
   {
     "key": "en:frozen-rice-with-vegetables",
     "name": "Frozen Rice with vegetables"
+  },
+  {
+    "key": "en:frozen-scallops-with-coral",
+    "name": "Frozen scallops with coral"
+  },
+  {
+    "key": "en:frozen-scallops-without-coral",
+    "name": "Frozen scallops without coral"
   },
   {
     "key": "en:frozen-shortbread-dough-with-pure-butter",
@@ -1492,6 +1560,10 @@
     "name": "Fruit pies with confectioner's custard"
   },
   {
+    "key": "en:fruit-preserves-with-chocolate",
+    "name": "Fruit preserves with chocolate"
+  },
+  {
     "key": "en:fruit-yogurts-with-fruit-chunks",
     "name": "Fruit yogurts with fruit chunks"
   },
@@ -1502,6 +1574,14 @@
   {
     "key": "en:fruits-puree-without-sugar-added",
     "name": "Fruits puree without sugar added"
+  },
+  {
+    "key": "en:gherkins-with-espelette-pepper",
+    "name": "Gherkins with espelette pepper"
+  },
+  {
+    "key": "en:gherkins-with-onions",
+    "name": "Gherkins with onions"
   },
   {
     "key": "en:glazes-with-balsamic-vinegar",
@@ -1546,6 +1626,18 @@
   {
     "key": "en:home-made-bread-with-flour-for-home-made-bread-preparation",
     "name": "Home-made bread with flour for home-made bread preparation"
+  },
+  {
+    "key": "en:ice-cream-bars-coated-with-chocolate",
+    "name": "Ice cream bars coated with chocolate"
+  },
+  {
+    "key": "en:ice-cream-bars-coated-with-fat-reduced-cocoa",
+    "name": "Ice cream bars coated with fat-reduced cocoa"
+  },
+  {
+    "key": "en:ice-cream-bars-coated-with-fruit-sorbet",
+    "name": "Ice cream bars coated with fruit sorbet"
   },
   {
     "key": "en:iced-teas-with-mango-flavor",
@@ -1620,10 +1712,6 @@
     "name": "Lasagna with cooked vegetables and goat cheese"
   },
   {
-    "key": "en:lasagne-with-fish",
-    "name": "Lasagne with fish"
-  },
-  {
     "key": "en:lasagne-with-goat-cheese-and-spinach",
     "name": "Lasagne with goat cheese and spinach"
   },
@@ -1672,24 +1760,12 @@
     "name": "Lightly salted light butter with 60-62% fat"
   },
   {
-    "key": "en:liquid-light-cream-with-4-to-8-fat",
-    "name": "Liquid light cream with 4 to 8% fat"
-  },
-  {
     "key": "en:low-calorie-meal-replacement-in-powder-reconstituted-with-skimmed-milk",
     "name": "Low calorie meal replacement in powder reconstituted with skimmed milk"
   },
   {
     "key": "en:low-calorie-milkshake-meal-replacement-in-powder-reconstituted-with-skimmed-milk",
     "name": "Low calorie milkshake meal replacement in powder reconstituted with skimmed milk"
-  },
-  {
-    "key": "en:macaron-filled-with-cream",
-    "name": "Macaron filled with cream"
-  },
-  {
-    "key": "en:macaron-filled-with-jam",
-    "name": "Macaron filled with jam"
   },
   {
     "key": "en:mackerel-fillets-with-olives-and-lemon",
@@ -1768,6 +1844,10 @@
     "name": "Meals with horse meat"
   },
   {
+    "key": "en:meals-with-lamb",
+    "name": "Meals with lamb"
+  },
+  {
     "key": "en:meals-with-rabbit-or-hare",
     "name": "Meals with rabbit or hare"
   },
@@ -1840,10 +1920,6 @@
     "name": "Milk drinks fermented with L casei"
   },
   {
-    "key": "en:milky-cereal-breakfast-bar-with-chocolate-fortified-with-vitamins-and-minerals",
-    "name": "Milky cereal breakfast bar with chocolate fortified with vitamins and minerals"
-  },
-  {
     "key": "en:minced-beef-steak-with-10-fat",
     "name": "Minced beef steak with 10% fat"
   },
@@ -1872,6 +1948,10 @@
     "name": "Mortadella with pistachios pure pork"
   },
   {
+    "key": "en:mozzarellas-with-herbs",
+    "name": "Mozzarellas with herbs"
+  },
+  {
     "key": "en:muesli-flakes-fortified-with-vitamins-and-chemical-elements",
     "name": "Muesli flakes fortified with vitamins and chemical elements"
   },
@@ -1890,6 +1970,10 @@
   {
     "key": "en:mueslis-with-nuts",
     "name": "Mueslis with nuts"
+  },
+  {
+    "key": "en:multifruit-juices-with-coconut-water",
+    "name": "Multifruit juices with coconut water"
   },
   {
     "key": "en:munsters-with-raw-milk",
@@ -1922,6 +2006,14 @@
   {
     "key": "en:omelettes-with-cheese",
     "name": "Omelettes with cheese"
+  },
+  {
+    "key": "en:orange-juices-with-pulp",
+    "name": "Orange juices with pulp"
+  },
+  {
+    "key": "en:orange-juices-without-pulp",
+    "name": "Orange juices without pulp"
   },
   {
     "key": "en:panini-with-cured-ham-mozzarella-cheese-and-tomato",
@@ -2008,6 +2100,10 @@
     "name": "Pasta with salmon"
   },
   {
+    "key": "en:pasteurised-milks-fortified-with-vitamins",
+    "name": "Pasteurised milks fortified with vitamins"
+  },
+  {
     "key": "en:pastilla-filled-with-chicken-pie",
     "name": "Pastilla filled with chicken (pie)"
   },
@@ -2080,8 +2176,8 @@
     "name": "Plain dairy dessert for baby with fruits"
   },
   {
-    "key": "en:plain-fermented-milk-yogurt-with-cream",
-    "name": "Plain fermented milk yogurt with cream"
+    "key": "en:plain-fermented-dairy-desserts-with-cream",
+    "name": "Plain fermented dairy desserts with cream"
   },
   {
     "key": "en:plain-soy-drink-fortified-with-calcium",
@@ -2100,16 +2196,8 @@
     "name": "Popcorn with caramel"
   },
   {
-    "key": "en:popped-wheat-grain-with-caramel",
-    "name": "Popped wheat grain with caramel"
-  },
-  {
     "key": "en:popped-wheat-grain-with-caramel-fortified-with-vitamins-and-chemical-elements",
     "name": "Popped wheat grain with caramel fortified with vitamins and chemical elements"
-  },
-  {
-    "key": "en:popped-wheat-grain-with-honey",
-    "name": "Popped wheat grain with honey"
   },
   {
     "key": "en:popped-wheat-grain-with-honey-fortified-with-vitamins-and-chemical-elements",
@@ -2154,6 +2242,10 @@
   {
     "key": "en:potato-puree-made-from-flakes-reconstituted-with-whole-milk-with-added-fat",
     "name": "Potato puree made from flakes reconstituted with whole milk with added fat"
+  },
+  {
+    "key": "en:pre-cooked-oat-flakes-with-sugar",
+    "name": "Pre-cooked oat flakes with sugar"
   },
   {
     "key": "en:pre-fried-potatoes-pan-fried-with-chicken",
@@ -2244,6 +2336,14 @@
     "name": "Puffed salty snacks made from maize with peanuts"
   },
   {
+    "key": "en:puffed-wheat-with-caramel",
+    "name": "Puffed wheat with caramel"
+  },
+  {
+    "key": "en:puffed-wheat-with-honey",
+    "name": "Puffed wheat with honey"
+  },
+  {
     "key": "en:punch-cocktail-with-16-alcohol",
     "name": "Punch cocktail with 16% alcohol"
   },
@@ -2306,6 +2406,10 @@
   {
     "key": "en:ravioli-with-porcini-mushrooms",
     "name": "Ravioli with porcini mushrooms"
+  },
+  {
+    "key": "en:ravioli-with-ricotta-and-spinach",
+    "name": "Ravioli with ricotta and spinach"
   },
   {
     "key": "en:ravioli-with-vegetables",
@@ -2376,12 +2480,12 @@
     "name": "Rehydrated broth stock with poultry"
   },
   {
-    "key": "en:rhubarb-stalk-cooked-with-sugar",
-    "name": "Rhubarb stalk cooked with sugar"
-  },
-  {
     "key": "en:rice-pudding-with-caramel-sauce",
     "name": "Rice pudding with caramel sauce"
+  },
+  {
+    "key": "en:rice-puddings-with-a-fruit-preparation",
+    "name": "Rice puddings with a fruit preparation"
   },
   {
     "key": "en:risotto-with-cheese",
@@ -2426,6 +2530,10 @@
   {
     "key": "en:rusk-with-eggs",
     "name": "Rusk with eggs"
+  },
+  {
+    "key": "en:rusks-without-salt",
+    "name": "Rusks without salt"
   },
   {
     "key": "en:salad-dressing-with-50-75-of-oil",
@@ -2524,16 +2632,8 @@
     "name": "Sandwich with pâté and pickles"
   },
   {
-    "key": "en:sandwich-with-tuna-and-vegetables",
-    "name": "Sandwich with tuna and vegetables"
-  },
-  {
     "key": "en:sandwiches-filled-with-cold-cuts",
     "name": "Sandwiches filled with cold cuts"
-  },
-  {
-    "key": "en:sandwiches-with-camembert-cheese",
-    "name": "Sandwiches with camembert cheese"
   },
   {
     "key": "en:sandwiches-with-ham-and-emmental-cheese",
@@ -2542,6 +2642,10 @@
   {
     "key": "en:sandwiches-with-ham-and-emmental-cheese-and-butter",
     "name": "Sandwiches with ham and emmental cheese and butter"
+  },
+  {
+    "key": "en:sandwiches-with-sweet-fillings",
+    "name": "Sandwiches with sweet fillings"
   },
   {
     "key": "en:sandwiches-with-vegetables-and-mayonnaise",
@@ -2624,10 +2728,6 @@
     "name": "Seafood terrine with fish"
   },
   {
-    "key": "en:seafood-terrine-with-or-without-fish",
-    "name": "Seafood terrine with or without fish"
-  },
-  {
     "key": "en:seafood-terrine-without-fish",
     "name": "Seafood terrine without fish"
   },
@@ -2704,6 +2804,10 @@
     "name": "Shortbread dough with pure butter"
   },
   {
+    "key": "en:shortbread-dough-with-vegetable-fats",
+    "name": "Shortbread dough with vegetable fats"
+  },
+  {
     "key": "en:shortcrust-pastry-with-pure-butter",
     "name": "Shortcrust pastry with pure butter"
   },
@@ -2726,6 +2830,10 @@
   {
     "key": "en:smetana-with-15-to-34-fat",
     "name": "Smetana with 15% to 34% fat"
+  },
+  {
+    "key": "en:smoked-bacon-covered-with-cornmeal",
+    "name": "Smoked bacon covered with cornmeal"
   },
   {
     "key": "en:snack-biscuit-with-fruits-filling",
@@ -2754,6 +2862,10 @@
   {
     "key": "en:soft-cheese-with-a-natural-rind",
     "name": "Soft cheese with a natural rind"
+  },
+  {
+    "key": "en:soft-cheeses-with-a-red-rind",
+    "name": "Soft cheeses with a red rind"
   },
   {
     "key": "en:soft-cheeses-with-bloomy-rind",
@@ -2820,6 +2932,10 @@
     "name": "Spinach with cream sauce"
   },
   {
+    "key": "en:sponge-cake-biscuits-with-fruits-covering",
+    "name": "Sponge cake biscuits with fruits covering"
+  },
+  {
     "key": "en:sponge-cake-filled-and-covered-with-chocolate",
     "name": "Sponge cake filled and covered with chocolate"
   },
@@ -2830,6 +2946,10 @@
   {
     "key": "en:sponge-sandwich-cake-filled-and-topped-with-strawberries",
     "name": "Sponge sandwich cake filled and topped with strawberries"
+  },
+  {
+    "key": "en:spreads-with-foie-gras",
+    "name": "Spreads with foie gras"
   },
   {
     "key": "en:stewed-lamb-garnished-with-potatoes-and-other-vegetables",
@@ -2944,6 +3064,14 @@
     "name": "Tagliatelle with cheese sauce"
   },
   {
+    "key": "en:tartlet-biscuits-with-chocolate",
+    "name": "Tartlet biscuits with chocolate"
+  },
+  {
+    "key": "en:tartlet-biscuits-with-fruit-preparation",
+    "name": "Tartlet biscuits with fruit preparation"
+  },
+  {
     "key": "en:teas-with-bergamot",
     "name": "Teas with bergamot"
   },
@@ -3020,6 +3148,14 @@
     "name": "Twelfth Night cake with almond paste"
   },
   {
+    "key": "en:uht-compound-dairy-creams-with-4-to-8-fat",
+    "name": "UHT compound dairy creams with 4 to 8% fat"
+  },
+  {
+    "key": "en:uht-milk-fortified-with-vitamins",
+    "name": "UHT milk fortified with vitamins"
+  },
+  {
     "key": "en:uncured-soft-cheese-spreadable-with-around-20-fat",
     "name": "Uncured soft cheese spreadable with around 20% fat"
   },
@@ -3050,6 +3186,26 @@
   {
     "key": "en:unsalted-pre-cooked-durum-wheat-with-whole-grain",
     "name": "Unsalted pre-cooked durum wheat with whole grain"
+  },
+  {
+    "key": "en:vanilla-ice-cream-bars-coated-with-dark-chocolate",
+    "name": "Vanilla ice cream bars coated with dark chocolate"
+  },
+  {
+    "key": "en:vanilla-ice-cream-bars-coated-with-milk-chocolate",
+    "name": "Vanilla ice cream bars coated with milk chocolate"
+  },
+  {
+    "key": "en:vanilla-ice-cream-bars-coated-with-milk-chocolate-and-almonds",
+    "name": "Vanilla ice cream bars coated with milk chocolate and almonds"
+  },
+  {
+    "key": "en:vanilla-ice-cream-bars-coated-with-white-chocolate",
+    "name": "Vanilla ice cream bars coated with white chocolate"
+  },
+  {
+    "key": "en:vanilla-ice-cream-bars-coated-with-white-chocolate-and-almonds",
+    "name": "Vanilla ice cream bars coated with white chocolate and almonds"
   },
   {
     "key": "en:veal-minced-steak-with-15-fat",
@@ -3140,7 +3296,7 @@
     "name": "White chocolate bar with nuts"
   },
   {
-    "key": "fr:chocolat-blanc-en-tablette-aux-praline",
+    "key": "en:white-chocolate-bar-with-praline",
     "name": "White chocolate bar with praline"
   },
   {
@@ -3160,12 +3316,12 @@
     "name": "White chocolates with hazelnuts"
   },
   {
-    "key": "en:white-chocolates-with-sweeteners",
-    "name": "White chocolates with sweeteners"
+    "key": "en:white-chocolates-with-rice-crisps",
+    "name": "White chocolates with rice crisps"
   },
   {
-    "key": "en:white-coffee-without-sugar",
-    "name": "White coffee without sugar"
+    "key": "en:white-chocolates-with-sweeteners",
+    "name": "White chocolates with sweeteners"
   },
   {
     "key": "en:white-fish-with-florentine-sauce",
@@ -3220,16 +3376,20 @@
     "name": "Wine without geographic indication"
   },
   {
+    "key": "en:yogurt-drinks-with-sugar",
+    "name": "Yogurt drinks with sugar"
+  },
+  {
+    "key": "en:yogurt-drinks-without-sugar",
+    "name": "Yogurt drinks without sugar"
+  },
+  {
     "key": "en:yogurt-fruit-flavoured-with-sugar-no-0-fat",
     "name": "Yogurt fruit flavoured with sugar no 0% fat"
   },
   {
     "key": "en:yogurt-with-fruits-and-sugar",
     "name": "Yogurt with fruits and sugar"
-  },
-  {
-    "key": "en:yogurt-with-fruits-and-sweetener",
-    "name": "Yogurt with fruits and sweetener"
   },
   {
     "key": "en:yogurt-with-fruits-no-0-fat",

@@ -1,9 +1,5 @@
 [
   {
-    "key": "en:agricultural-rums",
-    "name": "Agricultural rums"
-  },
-  {
     "key": "en:amber-rum",
     "name": "Amber rum"
   },
@@ -20,12 +16,16 @@
     "name": "Brown rum"
   },
   {
-    "key": "en:lagers",
+    "key": "en:blonde-ales",
     "name": "Cerveza rubia"
   },
   {
     "key": "en:cigarette-russes",
     "name": "Cigarette Russes"
+  },
+  {
+    "key": "en:common-wheat-rusks",
+    "name": "Common wheat rusks"
   },
   {
     "key": "en:cooked-rutabaga",
@@ -50,10 +50,6 @@
   {
     "key": "en:grilled-beef-rump-steak",
     "name": "Grilled beef rump steak"
-  },
-  {
-    "key": "en:haitian-rums",
-    "name": "Haitian rums"
   },
   {
     "key": "en:jamaican-rum",
@@ -84,8 +80,8 @@
     "name": "Old rums"
   },
   {
-    "key": "en:portuguese-rums",
-    "name": "Portuguese rums"
+    "key": "en:romanian-sea-products",
+    "name": "Productos del mar rumanos"
   },
   {
     "key": "en:rocket",
@@ -96,7 +92,7 @@
     "name": "Rueda"
   },
   {
-    "key": "en:rhubarbs",
+    "key": "en:rhubarb",
     "name": "Ruibarbos"
   },
   {
@@ -108,10 +104,6 @@
     "name": "Rum baba"
   },
   {
-    "key": "en:rum-based-alcoholic-beverages",
-    "name": "Rum-based alcoholic beverages"
-  },
-  {
     "key": "en:rum-based-cocktail",
     "name": "Rum-based cocktail"
   },
@@ -120,12 +112,28 @@
     "name": "Runeberg torte"
   },
   {
+    "key": "en:runner-beans-from-styria",
+    "name": "Runner beans from Styria"
+  },
+  {
     "key": "en:rusk-with-eggs",
     "name": "Rusk with eggs"
   },
   {
+    "key": "en:rusks-without-salt",
+    "name": "Rusks without salt"
+  },
+  {
     "key": "en:russian-champagne",
     "name": "Russian champagne"
+  },
+  {
+    "key": "en:russian-cheeses",
+    "name": "Russian cheeses"
+  },
+  {
+    "key": "en:russian-pickles",
+    "name": "Russian pickles"
   },
   {
     "key": "en:russian-vodkas",
@@ -148,10 +156,6 @@
     "name": "Spelt rusks"
   },
   {
-    "key": "en:unsalted-rusk",
-    "name": "Unsalted rusk"
-  },
-  {
     "key": "en:wheat-rusk-slices",
     "name": "Wheat rusk slices"
   },
@@ -162,5 +166,9 @@
   {
     "key": "en:wholemeal-rusks",
     "name": "Wholemeal rusks"
+  },
+  {
+    "key": "en:rhubarb-yogurts",
+    "name": "Yogures de ruibarbo"
   }
 ]

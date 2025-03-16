@@ -28,6 +28,10 @@
     "name": "Eier aus ökologischer Erzeugung"
   },
   {
+    "key": "fr:colorants-pour-oeufs",
+    "name": "Eierfärben"
+  },
+  {
     "key": "en:egg-free-spanish-omelettes",
     "name": "Eierfreie Kartoffel Tortillas"
   },
@@ -42,6 +46,10 @@
   {
     "key": "en:egg-pastas",
     "name": "Eierpasta"
+  },
+  {
+    "key": "en:egg-sandwiches",
+    "name": "Eiersandwiches"
   },
   {
     "key": "en:egg-spaghetti",
@@ -88,7 +96,7 @@
     "name": "Eingelegte Peperoni"
   },
   {
-    "key": "en:pickled-beets",
+    "key": "en:beetroot-pickled",
     "name": "Eingelegte rote Bete"
   },
   {
@@ -96,8 +104,12 @@
     "name": "Eingelegter Knoblauch"
   },
   {
-    "key": "en:vegetable-pickles",
+    "key": "en:pickled-vegetables",
     "name": "Eingelegtes Gemüse"
+  },
+  {
+    "key": "en:pickles-relishes-chutneys-olives-variety-packs",
+    "name": "Eingelegtes Gemüse / Relishes / Chutneys / Oliven - Mischpackungen"
   },
   {
     "key": "en:canned-seaweeds",
@@ -118,6 +130,14 @@
   {
     "key": "en:ice-cream-bars",
     "name": "Eis am Stiel"
+  },
+  {
+    "key": "en:ice-cream-bar-variety-packs",
+    "name": "Eis am Stiel Mischpackungen"
+  },
+  {
+    "key": "en:ice-cream-bars-coated-with-chocolate",
+    "name": "Eis am Stiel überzogen mit Schokolade"
   },
   {
     "key": "en:egg-salads",
@@ -148,6 +168,10 @@
     "name": "Eisbergsalat"
   },
   {
+    "key": "en:eisbock-beers",
+    "name": "Eisbock beers"
+  },
+  {
     "key": "de:eisenberg",
     "name": "Eisenberg"
   },
@@ -164,7 +188,7 @@
     "name": "Eiskrem mit Mandeln"
   },
   {
-    "key": "fr:glaces-aux-fruits-rouges",
+    "key": "en:berries-ice-cream-tubs",
     "name": "Eiskrem mit roten Früchten"
   },
   {
@@ -172,7 +196,7 @@
     "name": "Eiskrem-Sandwiche"
   },
   {
-    "key": "fr:barres-glacees",
+    "key": "en:frozen-bars",
     "name": "Eisriegel"
   },
   {
@@ -225,7 +249,11 @@
   },
   {
     "key": "en:plant-based-pickles",
-    "name": "Pflanzliches eingelegtes Gemüse"
+    "name": "Pflanzliches eingelegtes Pflanze"
+  },
+  {
+    "key": "en:sandwich-with-egg-and-vegetables-and-mayonnaise",
+    "name": "Sandwich mit Ei und Gemüse und Mayonnaise"
   },
   {
     "key": "en:scotch-eggs",
@@ -236,7 +264,7 @@
     "name": "Semi-polished einkorn wheat flours"
   },
   {
-    "key": "en:tuna-in-brine",
+    "key": "en:tunas-in-brine",
     "name": "Thunfische im eigenen Saft"
   },
   {

@@ -1,7 +1,19 @@
 [
   {
-    "key": "en:crossed-grain-symbol",
-    "name": "Crossed Grain Symbol"
+    "key": "en:120-days-grass-fed",
+    "name": "120 days grass-fed"
+  },
+  {
+    "key": "en:150-days-grass-fed",
+    "name": "150 days grass-fed"
+  },
+  {
+    "key": "en:australian-grown",
+    "name": "Australian grown"
+  },
+  {
+    "key": "en:crossed-grain-trademark",
+    "name": "Crossed Grain Trademark"
   },
   {
     "key": "en:first-grade-tis-3-1983",
@@ -72,10 +84,6 @@
     "name": "GR-BIO-18"
   },
   {
-    "key": "en:green-dot",
-    "name": "Green Dot"
-  },
-  {
     "key": "en:green-dot-india",
     "name": "Green Dot India"
   },
@@ -84,8 +92,16 @@
     "name": "Green Label - Israel"
   },
   {
+    "key": "en:green-dot",
+    "name": "Gröna Punkten"
+  },
+  {
     "key": "en:grown-in-france",
     "name": "Grown in France"
+  },
+  {
+    "key": "en:made-in-greece",
+    "name": "Made in Greece"
   },
   {
     "key": "en:muslim-consumer-group",
@@ -116,23 +132,51 @@
     "name": "Nutriscore Grade A"
   },
   {
+    "key": "en:nutriscore-grade-a-new-calculation",
+    "name": "Nutriscore Grade A - New calculation"
+  },
+  {
     "key": "en:nutriscore-grade-b",
     "name": "Nutriscore Grade B"
+  },
+  {
+    "key": "en:nutriscore-grade-b-new-calculation",
+    "name": "Nutriscore Grade B - New calculation"
   },
   {
     "key": "en:nutriscore-grade-c",
     "name": "Nutriscore Grade C"
   },
   {
+    "key": "en:nutriscore-grade-c-new-calculation",
+    "name": "Nutriscore Grade C - New calculation"
+  },
+  {
     "key": "en:nutriscore-grade-d",
     "name": "Nutriscore Grade D"
+  },
+  {
+    "key": "en:nutriscore-grade-d-new-calculation",
+    "name": "Nutriscore Grade D - New calculation"
   },
   {
     "key": "en:nutriscore-grade-e",
     "name": "Nutriscore Grade E"
   },
   {
+    "key": "en:nutriscore-grade-e-new-calculation",
+    "name": "Nutriscore Grade E - New calculation"
+  },
+  {
     "key": "en:pdo-montes-de-granada",
     "name": "PDO Montes de Granada"
+  },
+  {
+    "key": "en:not-advised-for-pregnant-women",
+    "name": "Rekommanderas ej till gravida"
+  },
+  {
+    "key": "en:not-advised-for-children-and-pregnant-women",
+    "name": "Rekommenderas ej till barn samt gravida"
   }
 ]

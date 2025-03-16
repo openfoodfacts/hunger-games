@@ -4,6 +4,10 @@
     "name": "Assortiments de biscuits"
   },
   {
+    "key": "en:biscuits-or-cookies-variety-packs",
+    "name": "Assortiments de gâteaux secs et biscuits"
+  },
+  {
     "key": "en:coated-chocolate-bar-without-biscuit",
     "name": "Barre au chocolat sans biscuit"
   },
@@ -28,10 +32,6 @@
     "name": "Barres chocolatées biscuitées aux noisettes"
   },
   {
-    "key": "en:unsalted-rusk",
-    "name": "Biscotte sans adjonction de sel"
-  },
-  {
     "key": "en:rusks",
     "name": "Biscottes"
   },
@@ -48,7 +48,7 @@
     "name": "Biscottes d'épeautre"
   },
   {
-    "key": "fr:biscottes-de-froment",
+    "key": "en:common-wheat-rusks",
     "name": "Biscottes de froment"
   },
   {
@@ -56,11 +56,11 @@
     "name": "Biscottes multicéréales"
   },
   {
-    "key": "fr:biscottes-pauvres-en-sel",
-    "name": "Biscottes pauvres en sel"
+    "key": "en:rusks-without-salt",
+    "name": "Biscottes sans sel"
   },
   {
-    "key": "en:salty-snacks-puff-pastry",
+    "key": "en:puffed-salty-snacks",
     "name": "Biscuit apéritif feuilleté"
   },
   {
@@ -120,10 +120,6 @@
     "name": "Biscuit sec croquant au chocolat allégé en matière grasse"
   },
   {
-    "key": "en:biscuit-with-fruit-covering",
-    "name": "Biscuit sec nappé aux fruits"
-  },
-  {
     "key": "en:plain-biscuit",
     "name": "Biscuit sec nature"
   },
@@ -160,12 +156,16 @@
     "name": "Biscuits à la myrtille"
   },
   {
-    "key": "en:crackers",
+    "key": "en:crackers-appetizers",
     "name": "Biscuits apéritifs"
   },
   {
     "key": "en:salty-snacks-with-reduced-fat",
     "name": "Biscuits apéritifs allégés"
+  },
+  {
+    "key": "en:rice-crackers",
+    "name": "Biscuits apéritifs au riz"
   },
   {
     "key": "en:salty-sesame-snacks",
@@ -180,8 +180,8 @@
     "name": "Biscuits apéritifs nature"
   },
   {
-    "key": "en:puffed-salty-snacks",
-    "name": "Biscuits apéritifs soufflés"
+    "key": "en:puffed-salty-snacks-potato-soy-based",
+    "name": "Biscuits apéritifs soufflés (à base de pomme de terre/soja)"
   },
   {
     "key": "en:puffed-salty-snacks-made-from-maize",
@@ -228,6 +228,14 @@
     "name": "Biscuits cigarettes"
   },
   {
+    "key": "en:crackers-breakfast",
+    "name": "Biscuits crackers"
+  },
+  {
+    "key": "en:crispy-biscuits",
+    "name": "Biscuits croustillants"
+  },
+  {
     "key": "fr:biscuits-edulcores",
     "name": "Biscuits édulcorés"
   },
@@ -238,6 +246,10 @@
   {
     "key": "en:flaky-biscuits",
     "name": "Biscuits feuilletés"
+  },
+  {
+    "key": "en:cheese-puff-pastries",
+    "name": "Biscuits Feuilletés auf fromage"
   },
   {
     "key": "en:filled-biscuits",
@@ -260,12 +272,12 @@
     "name": "Biscuits nappés au chocolat"
   },
   {
-    "key": "en:biscuits-for-babies",
-    "name": "Biscuits pour bébé"
+    "key": "en:biscuits-or-cookies-perishable",
+    "name": "Biscuits or Cookies (Perishable)"
   },
   {
-    "key": "en:cat-biscuits",
-    "name": "Biscuits pour chats"
+    "key": "en:biscuits-for-babies",
+    "name": "Biscuits pour bébé"
   },
   {
     "key": "fr:biscuits-roses-de-reims",
@@ -304,24 +316,32 @@
     "name": "Biscuits sprits natures"
   },
   {
+    "key": "en:biscuits-and-crackers",
+    "name": "Biscuits sucrés & biscuits apéritifs"
+  },
+  {
     "key": "en:biscuit-with-a-chocolate-bar-covering",
     "name": "Biscuits tablette de chocolat"
   },
   {
-    "key": "es:galletas-con-tableta-de-chocolate-con-leche",
+    "key": "en:biscuit-with-a-milk-chocolate-bar-covering",
     "name": "Biscuits tablette de chocolat au lait"
   },
   {
-    "key": "fr:biscuits-tablette-de-chocolat-blanc",
+    "key": "en:biscuit-with-a-white-chocolate-bar-covering",
     "name": "Biscuits tablette de chocolat blanc"
   },
   {
-    "key": "es:galletas-con-tableta-de-chocolate-negro",
+    "key": "en:biscuit-with-a-dark-chocolate-bar-covering",
     "name": "Biscuits tablette de chocolat noir"
   },
   {
-    "key": "fr:biscuits-tablette-fourree",
+    "key": "en:biscuit-with-a-filled-chocolate-bar-covering",
     "name": "Biscuits tablette fourrée"
+  },
+  {
+    "key": "en:biscuits-cookies-shelf-stable",
+    "name": "Biscuits/Cookies (Shelf Stable)"
   },
   {
     "key": "en:lobster-bisque",
@@ -336,16 +356,16 @@
     "name": "Cacahuètes enrobées d'un biscuit pour apéritif"
   },
   {
-    "key": "en:crispy-biscuits",
-    "name": "Crispy biscuits"
-  },
-  {
     "key": "fr:farines-biscuitieres",
     "name": "Farines biscuitières"
   },
   {
     "key": "en:herbal-vodka-from-the-north-podlasie-lowland-aromatised-with-an-extract-of-bison-grass",
     "name": "Herbal vodka from the North Podlasie Lowland aromatised with an extract of bison grass"
+  },
+  {
+    "key": "en:biscuit-mixes",
+    "name": "Préparations pour biscuits"
   },
   {
     "key": "en:stinking-bishop-cheese",

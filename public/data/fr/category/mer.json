@@ -76,8 +76,20 @@
     "name": "Filets de merlan"
   },
   {
+    "key": "en:marine-fish-fillets",
+    "name": "Filets de poissons de mer"
+  },
+  {
+    "key": "en:frozen-marine-fish-fillets",
+    "name": "Filets de poissons de mer surgelés"
+  },
+  {
     "key": "en:frozen-cooked-seafood",
     "name": "Fruits de mer cuits surgelés"
+  },
+  {
+    "key": "en:marinated-seafood",
+    "name": "Fruits de mer marinés"
   },
   {
     "key": "en:frozen-seafood",
@@ -176,6 +188,14 @@
     "name": "Mercurey premier cru Les Byots"
   },
   {
+    "key": "fr:mercurey-premier-cru-les-byots-blanc",
+    "name": "Mercurey premier cru Les Byots blanc"
+  },
+  {
+    "key": "fr:mercurey-premier-cru-les-byots-rouge",
+    "name": "Mercurey premier cru Les Byots rouge"
+  },
+  {
     "key": "fr:mercurey-premier-cru-les-champs-martin",
     "name": "Mercurey premier cru Les Champs Martin"
   },
@@ -264,6 +284,14 @@
     "name": "Merguez pur bœuf"
   },
   {
+    "key": "fr:merguez-surgelees",
+    "name": "Merguez surgelées"
+  },
+  {
+    "key": "en:meringue-roulades",
+    "name": "Meringue roulades"
+  },
+  {
     "key": "en:meringues",
     "name": "Meringues"
   },
@@ -316,6 +344,14 @@
     "name": "Poisson blanc de mer cuit"
   },
   {
+    "key": "en:marine-fishes",
+    "name": "Poissons de mer"
+  },
+  {
+    "key": "en:frozen-marine-fishes",
+    "name": "Poissons de mer surgelés"
+  },
+  {
     "key": "en:breaded-whiting",
     "name": "Poissons panés de merlan"
   },
@@ -324,7 +360,7 @@
     "name": "Poissons panés de merlu blanc"
   },
   {
-    "key": "fr:pommes-de-terre-de-merville",
+    "key": "en:potatoes-from-merville",
     "name": "Pommes de terre de Merville"
   },
   {
@@ -400,6 +436,10 @@
     "name": "Risotto aux fruits de mer"
   },
   {
+    "key": "en:seafood-salads",
+    "name": "Salades de fruits de mer"
+  },
+  {
     "key": "en:baguette-sandwich-with-merguez-sausage",
     "name": "Sandwich baguette à la merguez"
   },
@@ -418,10 +458,6 @@
   {
     "key": "en:seafood-terrine",
     "name": "Terrine de fruits de mer"
-  },
-  {
-    "key": "en:seafood-terrine-with-or-without-fish",
-    "name": "Terrine de fruits de mer avec ou sans poisson"
   },
   {
     "key": "en:seafood-terrine-with-fish",

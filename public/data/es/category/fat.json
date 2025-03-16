@@ -184,20 +184,20 @@
     "name": "Easy-to-spread unsalted butter with 82% fat"
   },
   {
-    "key": "en:fat-free-fermented-milk-yogurt-with-fruits-and-sweetener",
-    "name": "Fat free fermented milk yogurt with fruits and sweetener"
+    "key": "en:fat-free-fermented-dairy-desserts-with-fruits-and-sweeteners",
+    "name": "Fat free fermented dairy desserts with fruits and sweeteners"
   },
   {
-    "key": "en:fat-free-fermented-milk-yogurt-with-fruits-and-sweetener-fortified-with-vitamin-d",
-    "name": "Fat free fermented milk yogurt with fruits and sweetener fortified with vitamin D"
+    "key": "en:fat-free-fermented-dairy-desserts-with-fruits-and-sweeteners-fortified-with-vitamin-d",
+    "name": "Fat free fermented dairy desserts with fruits and sweeteners fortified with vitamin D"
   },
   {
-    "key": "en:fat-free-flavoured-fermented-milk-yogurt-with-sweetener",
-    "name": "Fat free flavoured fermented milk yogurt with sweetener"
+    "key": "en:fat-free-fermented-dairy-desserts-with-sweeteners",
+    "name": "Fat free fermented dairy desserts with sweeteners"
   },
   {
-    "key": "en:fat-free-plain-fermented-milk-yogurt",
-    "name": "Fat free plain fermented milk yogurt"
+    "key": "en:fat-free-plain-fermented-dairy-desserts",
+    "name": "Fat free plain fermented dairy desserts"
   },
   {
     "key": "en:fat-free-plain-fresh-cream-cheese",
@@ -232,6 +232,10 @@
     "name": "Fruits flavoured fat fresh cream cheese"
   },
   {
+    "key": "en:goose-fats",
+    "name": "Goose fats"
+  },
+  {
     "key": "en:greek-oils-and-fats",
     "name": "Greek oils and fats"
   },
@@ -240,8 +244,8 @@
     "name": "Hard cheese emmental-type cheese reduced fat"
   },
   {
-    "key": "en:hungarian-oils-and-fats",
-    "name": "Hungarian oils and fats"
+    "key": "en:ice-cream-bars-coated-with-fat-reduced-cocoa",
+    "name": "Ice cream bars coated with fat-reduced cocoa"
   },
   {
     "key": "en:italian-oils-and-fats",
@@ -268,10 +272,6 @@
     "name": "Liquid 30% fat UHT cream"
   },
   {
-    "key": "en:liquid-light-cream-with-4-to-8-fat",
-    "name": "Liquid light cream with 4 to 8% fat"
-  },
-  {
     "key": "en:low-fat-prepared-meals",
     "name": "Low-fat prepared meals"
   },
@@ -296,8 +296,20 @@
     "name": "Plain creamy fresh cream cheese around 8% fat"
   },
   {
+    "key": "en:plain-fresh-cream-cheese-around-1-fat",
+    "name": "Plain fresh cream cheese around 1% fat"
+  },
+  {
     "key": "en:plain-fresh-cream-cheese-around-3-fat",
     "name": "Plain fresh cream cheese around 3% fat"
+  },
+  {
+    "key": "en:plain-fresh-cream-cheese-reduced-fat",
+    "name": "Plain fresh cream cheese reduced fat"
+  },
+  {
+    "key": "en:plain-low-fat-yogurts",
+    "name": "Plain low-fat yogurts"
   },
   {
     "key": "en:plain-petit-suisse-around-4-fat",
@@ -396,6 +408,10 @@
     "name": "Refrigerated flavoured milk jelly with reduced fat and sugar"
   },
   {
+    "key": "en:refrigerated-vegetable-fats",
+    "name": "Refrigerated vegetable fats"
+  },
+  {
     "key": "en:reheated-duck-confit-conserved-in-rendered-fat-without-skin",
     "name": "Reheated duck confit conserved in rendered fat without skin"
   },
@@ -422,6 +438,14 @@
   {
     "key": "en:sauteed-potato-with-goose-fat",
     "name": "Sautéed potato with goose fat"
+  },
+  {
+    "key": "en:shelf-stable-vegetable-fats",
+    "name": "Shelf-stable vegetable fats"
+  },
+  {
+    "key": "en:shortbread-dough-with-vegetable-fats",
+    "name": "Shortbread dough with vegetable fats"
   },
   {
     "key": "en:smetana-with-15-fat",
@@ -474,6 +498,10 @@
   {
     "key": "en:turkey-fat",
     "name": "Turkey fat"
+  },
+  {
+    "key": "en:uht-compound-dairy-creams-with-4-to-8-fat",
+    "name": "UHT compound dairy creams with 4 to 8% fat"
   },
   {
     "key": "en:uncured-soft-cheese-spreadable-with-around-20-fat",

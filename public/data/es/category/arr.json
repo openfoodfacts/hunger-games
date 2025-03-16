@@ -148,11 +148,15 @@
     "name": "Arroces Vialone Nano"
   },
   {
+    "key": "en:arrotolata-pancetta",
+    "name": "Arrotolata pancetta"
+  },
+  {
     "key": "en:rice-puddings",
     "name": "Arroz con leche"
   },
   {
-    "key": "es:arroz-de-valencia",
+    "key": "en:rice",
     "name": "Arroz de Valencia"
   },
   {
@@ -168,6 +172,10 @@
     "name": "Arroz inflado"
   },
   {
+    "key": "en:semi-milled-jasmine-rices",
+    "name": "Arroz Jazmín semi-integral"
+  },
+  {
     "key": "en:frozen-pre-cooked-rice",
     "name": "Arroz precocido congelado"
   },
@@ -176,19 +184,19 @@
     "name": "Arroz salvaje"
   },
   {
-    "key": "en:rice-milks",
+    "key": "en:rice-based-drinks",
     "name": "Bebidas de arroz"
   },
   {
-    "key": "en:cocoa-rice-milks",
+    "key": "en:cocoa-rice-based-drinks",
     "name": "Bebidas de arroz con cacao"
   },
   {
-    "key": "en:vanilla-rice-milks",
+    "key": "en:vanilla-rice-based-drinks",
     "name": "Bebidas de arroz con vainilla"
   },
   {
-    "key": "en:natural-rice-milks",
+    "key": "en:plain-rice-based-drinks",
     "name": "Bebidas de arroz naturales"
   },
   {
@@ -294,5 +302,9 @@
   {
     "key": "en:rice-vinegars",
     "name": "Vinagres de arroz"
+  },
+  {
+    "key": "en:red-rice-vinegars",
+    "name": "Vinagres de arroz rojos"
   }
 ]

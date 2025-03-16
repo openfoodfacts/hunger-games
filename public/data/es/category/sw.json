@@ -44,10 +44,6 @@
     "name": "Carbonated soft drinks without fruit juice with sugar and artificial sweeteners"
   },
   {
-    "key": "en:cola-with-sugar-and-artificial-sweetener",
-    "name": "Cola with sugar and artificial sweetener"
-  },
-  {
     "key": "en:concentrate-syrup-without-sugar-and-with-artificial-sweeteners",
     "name": "Concentrate syrup without sugar and with artificial sweeteners"
   },
@@ -92,16 +88,20 @@
     "name": "Energy drink without sugar and with artificial sweeteners"
   },
   {
-    "key": "en:fat-free-fermented-milk-yogurt-with-fruits-and-sweetener",
-    "name": "Fat free fermented milk yogurt with fruits and sweetener"
+    "key": "en:fat-free-fermented-dairy-desserts-with-fruits-and-sweeteners",
+    "name": "Fat free fermented dairy desserts with fruits and sweeteners"
   },
   {
-    "key": "en:fat-free-fermented-milk-yogurt-with-fruits-and-sweetener-fortified-with-vitamin-d",
-    "name": "Fat free fermented milk yogurt with fruits and sweetener fortified with vitamin D"
+    "key": "en:fat-free-fermented-dairy-desserts-with-fruits-and-sweeteners-fortified-with-vitamin-d",
+    "name": "Fat free fermented dairy desserts with fruits and sweeteners fortified with vitamin D"
   },
   {
-    "key": "en:fat-free-flavoured-fermented-milk-yogurt-with-sweetener",
-    "name": "Fat free flavoured fermented milk yogurt with sweetener"
+    "key": "en:fat-free-fermented-dairy-desserts-with-sweeteners",
+    "name": "Fat free fermented dairy desserts with sweeteners"
+  },
+  {
+    "key": "en:fermented-dairy-desserts-with-fruits-and-sweeteners",
+    "name": "Fermented dairy desserts with fruits and sweeteners"
   },
   {
     "key": "en:fortified-wines-such-as-natural-sweet-wines",
@@ -112,12 +112,36 @@
     "name": "Fresh sweet corn"
   },
   {
+    "key": "en:fresh-sweet-pastries-and-pies",
+    "name": "Fresh sweet pastries and pies"
+  },
+  {
     "key": "en:fresh-sweet-peppers",
     "name": "Fresh sweet peppers"
   },
   {
+    "key": "en:fresh-sweet-potatoes",
+    "name": "Fresh sweet potatoes"
+  },
+  {
+    "key": "en:fresh-yellow-sweet-peppers",
+    "name": "Fresh yellow sweet peppers"
+  },
+  {
+    "key": "en:frozen-sweet-pies",
+    "name": "Frozen sweet pies"
+  },
+  {
+    "key": "en:frozen-sweet-potatoes",
+    "name": "Frozen sweet potatoes"
+  },
+  {
     "key": "en:gherkins-in-sweet-and-sour-sauce",
     "name": "Gherkins in sweet and sour sauce"
+  },
+  {
+    "key": "en:harrow-sweet-pears",
+    "name": "Harrow Sweet pears"
   },
   {
     "key": "en:lamb-sweetbread",
@@ -144,8 +168,28 @@
     "name": "Pan-fried calf sweetbread"
   },
   {
+    "key": "en:peeled-sweet-potatoes",
+    "name": "Peeled sweet potatoes"
+  },
+  {
+    "key": "en:pickled-sweet-corn",
+    "name": "Pickled sweet corn"
+  },
+  {
+    "key": "en:prepared-sweet-potatoes",
+    "name": "Prepared sweet potatoes"
+  },
+  {
     "key": "en:roasted-swordfish",
     "name": "Roasted Swordfish"
+  },
+  {
+    "key": "en:sandwiches-with-sweet-fillings",
+    "name": "Sandwiches with sweet fillings"
+  },
+  {
+    "key": "en:shelf-stable-sweet-pies",
+    "name": "Shelf-stable sweet pies"
   },
   {
     "key": "en:smoked-swordfish",
@@ -180,6 +224,10 @@
     "name": "Sugar-free colas with artificial sweeteners and without caffeine"
   },
   {
+    "key": "en:swabian-spatzle",
+    "name": "Swabian Spätzle"
+  },
+  {
     "key": "en:swaledale-cheese",
     "name": "Swaledale cheese"
   },
@@ -208,8 +256,8 @@
     "name": "Sweet apples"
   },
   {
-    "key": "en:sweet-ciders",
-    "name": "Sweet ciders"
+    "key": "en:sweet-bean-paste",
+    "name": "Sweet bean paste"
   },
   {
     "key": "en:sweet-corn-on-the-cob",
@@ -220,6 +268,10 @@
     "name": "Sweet cream butters"
   },
   {
+    "key": "en:sweet-dumpling-squashes",
+    "name": "Sweet dumpling squashes"
+  },
+  {
     "key": "en:sweet-filled-crepes",
     "name": "Sweet filled crêpes"
   },
@@ -228,12 +280,16 @@
     "name": "Sweet Fritters"
   },
   {
-    "key": "en:sweet-green-hokkaido-squash",
-    "name": "Sweet green hokkaido squash"
+    "key": "en:sweet-green-hokkaido-pulp",
+    "name": "Sweet green hokkaido pulp"
   },
   {
-    "key": "en:sweet-mousses",
-    "name": "Sweet mousses"
+    "key": "en:sweet-liquorice-candies",
+    "name": "Sweet liquorice candies"
+  },
+  {
+    "key": "en:sweet-pastries-and-pies",
+    "name": "Sweet pastries and pies"
   },
   {
     "key": "en:sweet-pepper-chutneys",
@@ -252,6 +308,10 @@
     "name": "Sweet potato puree cooked with cream"
   },
   {
+    "key": "en:sweet-potato-soups",
+    "name": "Sweet potato soups"
+  },
+  {
     "key": "en:sweet-potato-spreads",
     "name": "Sweet potato spreads"
   },
@@ -260,16 +320,24 @@
     "name": "Sweetened fermented milk drinks with L casei"
   },
   {
-    "key": "en:sweetened-natural-almond-milks",
-    "name": "Sweetened natural almond milks"
-  },
-  {
-    "key": "en:sweetened-natural-oat-milks",
-    "name": "Sweetened natural oat milks"
+    "key": "en:sweetened-plain-almond-based-drinks",
+    "name": "Sweetened plain almond-based drinks"
   },
   {
     "key": "en:sweetened-plain-bifidus-yogurts",
     "name": "Sweetened plain bifidus yogurts"
+  },
+  {
+    "key": "en:sweetened-plain-oat-based-drinks",
+    "name": "Sweetened plain oat-based drinks"
+  },
+  {
+    "key": "en:sweetened-puffed-rice",
+    "name": "Sweetened puffed rice"
+  },
+  {
+    "key": "en:sweetened-puffed-wheat",
+    "name": "Sweetened puffed wheat"
   },
   {
     "key": "en:swiss-chocolates",
@@ -290,6 +358,10 @@
   {
     "key": "en:swiss-sausages-to-cook",
     "name": "Swiss sausages to cook"
+  },
+  {
+    "key": "en:swiss-vacherin-mont-d-or",
+    "name": "Swiss Vacherin Mont-d'Or"
   },
   {
     "key": "en:swiss-wines",
@@ -314,9 +386,5 @@
   {
     "key": "en:wheat-wholemeal-swedish-toast",
     "name": "Wheat wholemeal Swedish toast"
-  },
-  {
-    "key": "en:yogurt-with-fruits-and-sweetener",
-    "name": "Yogurt with fruits and sweetener"
   }
 ]

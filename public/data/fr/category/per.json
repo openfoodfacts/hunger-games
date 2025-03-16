@@ -28,6 +28,10 @@
     "name": "Beaune premier cru Pertuisots rouge"
   },
   {
+    "key": "en:biscuits-or-cookies-perishable",
+    "name": "Biscuits or Cookies (Perishable)"
+  },
+  {
     "key": "en:peruvian-coffee",
     "name": "Café du Pérou"
   },
@@ -36,8 +40,20 @@
     "name": "Chapon du Périgord"
   },
   {
-    "key": "en:snail-in-cooked-parsley-butter",
+    "key": "en:cheeses-perishable",
+    "name": "Cheeses (perishable)"
+  },
+  {
+    "key": "en:cooked-snails-in-parsley-butter",
     "name": "Escargot en sauce au beurre persillé cuit"
+  },
+  {
+    "key": "en:frozen-cooked-snails-in-parsley-butter",
+    "name": "Escargots en sauce au beurre persillé cuits surgelés"
+  },
+  {
+    "key": "en:frozen-snails-in-parsley-butter",
+    "name": "Escargots en sauce au beurre persillé surgelés"
   },
   {
     "key": "en:anchovy-fillets-marinated-in-garlic-and-parsley",
@@ -64,6 +80,10 @@
     "name": "Fromages à pâte persillée français"
   },
   {
+    "key": "fr:gaillac-perle",
+    "name": "Gaillac perlé"
+  },
+  {
     "key": "fr:gevrey-chambertin-premier-cru-la-perriere",
     "name": "Gevrey-Chambertin premier cru La Perrière"
   },
@@ -88,6 +108,10 @@
     "name": "Mâcon Péronne"
   },
   {
+    "key": "en:margarine-perishable",
+    "name": "Margarine (Perishable)"
+  },
+  {
     "key": "fr:meursault-premier-cru-clos-des-perrieres",
     "name": "Meursault premier cru Clos des Perrières"
   },
@@ -100,7 +124,7 @@
     "name": "Millepertuis perforé"
   },
   {
-    "key": "fr:noix-du-perigord",
+    "key": "en:walnuts-from-the-perigord",
     "name": "Noix du Périgord"
   },
   {
@@ -174,6 +198,10 @@
   {
     "key": "en:nile-perch",
     "name": "Perche du Nil"
+  },
+  {
+    "key": "en:frozen-nile-perch",
+    "name": "Perche du Nil surgelée"
   },
   {
     "key": "en:roasted-european-perch",

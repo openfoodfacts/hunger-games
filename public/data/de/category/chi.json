@@ -56,10 +56,6 @@
     "name": "Chicken and its products"
   },
   {
-    "key": "en:chicken-and-mushroom-pies",
-    "name": "Chicken and mushroom pies"
-  },
-  {
     "key": "en:chicken-and-vegetables-soup",
     "name": "Chicken and vegetables soup"
   },
@@ -80,8 +76,16 @@
     "name": "Chicken breast without skin raw"
   },
   {
+    "key": "en:chicken-carcass",
+    "name": "Chicken carcass"
+  },
+  {
     "key": "en:chicken-chop-suey",
     "name": "Chicken chop suey"
+  },
+  {
+    "key": "en:chicken-cordons-bleus",
+    "name": "Chicken cordons bleus"
   },
   {
     "key": "en:chicken-couscous",
@@ -100,6 +104,10 @@
     "name": "Chicken fat"
   },
   {
+    "key": "en:chicken-feet",
+    "name": "Chicken feet"
+  },
+  {
     "key": "en:chicken-free-range-meat-and-skin-raw",
     "name": "Chicken free-range meat and skin raw"
   },
@@ -108,16 +116,20 @@
     "name": "Chicken gizzards"
   },
   {
-    "key": "en:chicken-hamburgers",
-    "name": "Chicken hamburgers"
-  },
-  {
     "key": "en:chicken-heart",
     "name": "Chicken heart"
   },
   {
     "key": "en:chicken-high-leg-meat-raw",
     "name": "Chicken high leg meat raw"
+  },
+  {
+    "key": "en:chicken-hotpot",
+    "name": "Chicken hotpot"
+  },
+  {
+    "key": "en:chicken-kievs-substitutes",
+    "name": "Chicken kievs substitutes"
   },
   {
     "key": "en:chicken-leg-meat-and-skin-raw",
@@ -152,6 +164,10 @@
     "name": "Chicken nems"
   },
   {
+    "key": "en:chicken-offals",
+    "name": "Chicken offals"
+  },
+  {
     "key": "en:chicken-patties",
     "name": "Chicken patties"
   },
@@ -172,8 +188,12 @@
     "name": "Chicken salads"
   },
   {
-    "key": "en:chicken-skewers",
-    "name": "Chicken skewers"
+    "key": "en:chicken-salami",
+    "name": "Chicken salami"
+  },
+  {
+    "key": "en:chicken-seasoning",
+    "name": "Chicken seasoning"
   },
   {
     "key": "en:chicken-soups",
@@ -182,6 +202,10 @@
   {
     "key": "en:chicken-spreads",
     "name": "Chicken spreads"
+  },
+  {
+    "key": "en:chicken-stewing-leg-frozen",
+    "name": "Chicken stewing leg frozen"
   },
   {
     "key": "en:chicken-stewing-leg-raw",
@@ -194,14 +218,6 @@
   {
     "key": "en:chicken-terrines",
     "name": "Chicken terrines"
-  },
-  {
-    "key": "en:chicken-tikka",
-    "name": "Chicken Tikka"
-  },
-  {
-    "key": "en:chicken-tikka-masala",
-    "name": "Chicken tikka masala"
   },
   {
     "key": "en:chicken-white-race-meat-and-skin-raw",
@@ -218,10 +234,6 @@
   {
     "key": "en:chicken-with-curry-and-coconut-milk-sauce",
     "name": "Chicken with curry and coconut milk sauce"
-  },
-  {
-    "key": "en:chicken-wraps",
-    "name": "Chicken wraps"
   },
   {
     "key": "en:chickpea-crisps",
@@ -249,15 +261,11 @@
   },
   {
     "key": "en:chili-sin-carne",
-    "name": "Chili sin carne"
+    "name": "Chili sin Carne"
   },
   {
     "key": "en:chili-peppers",
     "name": "Chilischoten"
-  },
-  {
-    "key": "en:chinese-artichokes",
-    "name": "Chinese artichokes"
   },
   {
     "key": "en:chinese-black-truffles",
@@ -280,16 +288,16 @@
     "name": "Chinese raviolis"
   },
   {
-    "key": "en:chinese-sea-products",
-    "name": "Chinese sea products"
-  },
-  {
     "key": "en:chinese-egg-noodles",
     "name": "Chinesische Eiernudeln"
   },
   {
     "key": "en:chinese-green-teas",
-    "name": "Chinesische grüner Tees"
+    "name": "Chinesische grüne Tees"
+  },
+  {
+    "key": "en:chinese-sea-products",
+    "name": "Chinesische Meeresprodukte"
   },
   {
     "key": "en:chinese-noodles",
@@ -298,6 +306,10 @@
   {
     "key": "en:chinese-nougats",
     "name": "Chinesischer Nougat"
+  },
+  {
+    "key": "en:chinotto",
+    "name": "Chinotto"
   },
   {
     "key": "en:chipolatas",
@@ -330,10 +342,6 @@
   {
     "key": "en:chocolate-chip-muffins",
     "name": "Chocolate chip muffins"
-  },
-  {
-    "key": "en:chocolate-covered-chickpeas",
-    "name": "Chocolate covered chickpeas"
   },
   {
     "key": "en:cooked-chick-peas",
@@ -380,24 +388,68 @@
     "name": "Dried chickpeas"
   },
   {
+    "key": "en:dried-chives",
+    "name": "Dried Chives"
+  },
+  {
     "key": "en:dried-coconut-chips",
     "name": "Dried coconut chips"
+  },
+  {
+    "key": "en:dry-chickpea-pasta",
+    "name": "Dry chickpea pasta"
   },
   {
     "key": "en:escacena-chickpeas",
     "name": "Escacena chickpeas"
   },
   {
-    "key": "en:fried-chicken-wraps",
-    "name": "Fried chicken wraps"
+    "key": "en:fish-and-chips",
+    "name": "Fish and Chips"
   },
   {
-    "key": "en:frozen-chinese-artichokes",
-    "name": "Frozen Chinese artichokes"
+    "key": "en:fresh-chickpea-pasta",
+    "name": "Fresh chickpea pasta"
+  },
+  {
+    "key": "en:frozen-breaded-chicken",
+    "name": "Frozen breaded chicken"
+  },
+  {
+    "key": "en:frozen-chicken-breast-without-skin-raw",
+    "name": "Frozen chicken breast without skin raw"
+  },
+  {
+    "key": "en:frozen-chicken-eggs",
+    "name": "Frozen chicken eggs"
+  },
+  {
+    "key": "en:frozen-chicken-leg-meat-and-skin-raw",
+    "name": "Frozen chicken leg meat and skin raw"
+  },
+  {
+    "key": "en:frozen-chicken-nuggets",
+    "name": "Frozen chicken nuggets"
+  },
+  {
+    "key": "en:frozen-chicken-skewers",
+    "name": "Frozen chicken skewers"
+  },
+  {
+    "key": "en:frozen-chicken-wings",
+    "name": "Frozen chicken wings"
+  },
+  {
+    "key": "en:frozen-chickens",
+    "name": "Frozen chickens"
   },
   {
     "key": "en:frozen-cooked-spiced-potato-chips",
     "name": "Frozen cooked spiced potato chips"
+  },
+  {
+    "key": "en:frozen-yakitori-chicken-skewers",
+    "name": "Frozen Yakitori chicken skewers"
   },
   {
     "key": "en:fuentesauco-chickpeas",
@@ -420,16 +472,16 @@
     "name": "Instant chicory"
   },
   {
-    "key": "en:instant-chicory-with-water",
-    "name": "Instant chicory with water"
-  },
-  {
     "key": "en:instant-mix-of-chicory-and-coffee-powder",
     "name": "Instant mix of chicory and coffee powder"
   },
   {
     "key": "en:instant-pasta-with-chicken",
     "name": "Instant pasta with chicken"
+  },
+  {
+    "key": "en:instant-chicory-with-water",
+    "name": "Instant-Chicorée mit Wasser"
   },
   {
     "key": "en:jerk-chicken-wraps",
@@ -458,6 +510,10 @@
   {
     "key": "en:liquid-chicken-broths",
     "name": "Liquid chicken broths"
+  },
+  {
+    "key": "en:liquid-chicory",
+    "name": "Liquid chicory"
   },
   {
     "key": "en:corn-chips",
@@ -582,10 +638,6 @@
   {
     "key": "en:sweet-and-sour-chicken",
     "name": "Sweet and sour chicken"
-  },
-  {
-    "key": "en:tandoori-chicken",
-    "name": "Tandoori chicken"
   },
   {
     "key": "en:wines-from-chile",

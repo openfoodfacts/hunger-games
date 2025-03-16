@@ -52,12 +52,16 @@
     "name": "Dranken voor babies gebaseerd op planten"
   },
   {
+    "key": "en:emmental-slices",
+    "name": "Emmental in plakjes"
+  },
+  {
     "key": "en:european-plaice",
     "name": "European plaice"
   },
   {
-    "key": "en:fat-free-plain-fermented-milk-yogurt",
-    "name": "Fat free plain fermented milk yogurt"
+    "key": "en:fat-free-plain-fermented-dairy-desserts",
+    "name": "Fat free plain fermented dairy desserts"
   },
   {
     "key": "en:fat-free-plain-fresh-cream-cheese",
@@ -92,6 +96,10 @@
     "name": "Gevriesdroogde aromatische planten"
   },
   {
+    "key": "en:greek-style-yogurts-plain",
+    "name": "Greek-style yogurts (plain)"
+  },
+  {
     "key": "en:green-beans-imported-by-plane",
     "name": "Green beans imported by plane"
   },
@@ -114,6 +122,14 @@
   {
     "key": "en:margarines-with-plant-sterols-esters",
     "name": "Margarines with plant sterols esters"
+  },
+  {
+    "key": "en:sliced-mozzarellas",
+    "name": "Mozzarella in plakjes"
+  },
+  {
+    "key": "en:pine-nuts-plain",
+    "name": "Pine nuts(plain)"
   },
   {
     "key": "en:plain-biscuit",
@@ -176,24 +192,32 @@
     "name": "Plain doughnuts"
   },
   {
-    "key": "en:plain-fermented-milk-yogurt-with-cream",
-    "name": "Plain fermented milk yogurt with cream"
+    "key": "en:plain-drinkable-yogurts",
+    "name": "Plain drinkable yogurts"
+  },
+  {
+    "key": "en:plain-fermented-dairy-desserts-with-cream",
+    "name": "Plain fermented dairy desserts with cream"
   },
   {
     "key": "en:plain-fermented-skimmed-milk-drink",
     "name": "Plain fermented skimmed milk drink"
   },
   {
+    "key": "en:plain-fresh-cream-cheese-around-1-fat",
+    "name": "Plain fresh cream cheese around 1% fat"
+  },
+  {
     "key": "en:plain-fresh-cream-cheese-around-3-fat",
     "name": "Plain fresh cream cheese around 3% fat"
   },
   {
-    "key": "en:plain-goat-yogurts",
-    "name": "Plain goat yogurts"
+    "key": "en:plain-fresh-cream-cheese-reduced-fat",
+    "name": "Plain fresh cream cheese reduced fat"
   },
   {
-    "key": "en:plain-greek-style-yogurts",
-    "name": "Plain greek-style yogurts"
+    "key": "en:plain-goat-yogurts",
+    "name": "Plain goat yogurts"
   },
   {
     "key": "en:plain-junkets",
@@ -204,12 +228,20 @@
     "name": "Plain lardons"
   },
   {
+    "key": "en:plain-low-fat-yogurts",
+    "name": "Plain low-fat yogurts"
+  },
+  {
     "key": "en:plain-madeleines",
     "name": "Plain madeleines"
   },
   {
     "key": "en:plain-milk-bread-rolls",
     "name": "Plain milk bread rolls"
+  },
+  {
+    "key": "en:plain-naans",
+    "name": "Plain naans"
   },
   {
     "key": "en:plain-panna-cottas",
@@ -226,6 +258,22 @@
   {
     "key": "en:plain-popcorn",
     "name": "Plain popcorn"
+  },
+  {
+    "key": "en:plain-puffed-rice",
+    "name": "Plain puffed rice"
+  },
+  {
+    "key": "en:plain-puffed-spelt",
+    "name": "Plain puffed spelt"
+  },
+  {
+    "key": "en:plain-puffed-wheat",
+    "name": "Plain puffed wheat"
+  },
+  {
+    "key": "en:plain-rice-puddings",
+    "name": "Plain rice puddings"
   },
   {
     "key": "en:plain-salty-snacks",
@@ -254,6 +302,10 @@
   {
     "key": "en:plain-yogurt-with-sugar",
     "name": "Plain yogurt with sugar"
+  },
+  {
+    "key": "en:plant-based-pizzas",
+    "name": "Plant-based pizzas"
   },
   {
     "key": "en:plant-based-sausage-with-wheat-or-seitan",
@@ -296,6 +348,10 @@
     "name": "Plantaardige fruitdranken"
   },
   {
+    "key": "en:plantbased-gelatin",
+    "name": "Plantaardige gelatines"
+  },
+  {
     "key": "en:freeze-dried-plant-based-foods",
     "name": "Plantaardige gevriesdroogde producten"
   },
@@ -336,7 +392,7 @@
     "name": "Plantaardige melkchocolade"
   },
   {
-    "key": "en:plant-milks",
+    "key": "en:plant-based-milk-alternatives",
     "name": "Plantaardige melken"
   },
   {
@@ -412,10 +468,6 @@
     "name": "Plantaardige zoetzuren"
   },
   {
-    "key": "nl:plantbased-gelatin",
-    "name": "Plantbased gelatin"
-  },
-  {
     "key": "en:potted-plants",
     "name": "Planten in pot"
   },
@@ -448,8 +500,24 @@
     "name": "Steamed European plaice"
   },
   {
+    "key": "en:sweetened-plain-almond-based-drinks",
+    "name": "Sweetened plain almond-based drinks"
+  },
+  {
     "key": "en:sweetened-plain-bifidus-yogurts",
     "name": "Sweetened plain bifidus yogurts"
+  },
+  {
+    "key": "en:sweetened-plain-oat-based-drinks",
+    "name": "Sweetened plain oat-based drinks"
+  },
+  {
+    "key": "en:unsweetened-plain-almond-based-drinks",
+    "name": "Unsweetened plain almond-based drinks"
+  },
+  {
+    "key": "en:unsweetened-plain-oat-based-drinks",
+    "name": "Unsweetened plain oat-based drinks"
   },
   {
     "key": "en:fresh-aromatic-plants",

@@ -1,75 +1,415 @@
 [
   {
+    "key": "en:alcoholic-beverages",
+    "name": "Alkoholna pića"
+  },
+  {
+    "key": "en:beer-based-alcoholic-beverages",
+    "name": "Alkoholna pića na bazi piva"
+  },
+  {
+    "key": "en:rum-based-alcoholic-beverages",
+    "name": "Alkoholna pića na bazi ruma"
+  },
+  {
+    "key": "en:wine-based-alcoholic-beverages",
+    "name": "Alkoholna pića na bazi vina"
+  },
+  {
+    "key": "en:vodka-based-alcoholic-beverages",
+    "name": "Alkoholna pića na bazi votke"
+  },
+  {
+    "key": "en:flavoured-drinks",
+    "name": "Aromatizirana pića"
+  },
+  {
+    "key": "en:bamboo-shoots-pickles",
+    "name": "Bamboo shoots pickles"
+  },
+  {
+    "key": "en:non-alcoholic-beverages",
+    "name": "Bezalkoholna pića"
+  },
+  {
+    "key": "en:blackcurrant-soft-drinks",
+    "name": "Bezalkoholna pića od crnog ribiza"
+  },
+  {
+    "key": "en:apple-soft-drinks",
+    "name": "Bezalkoholna pića od jabuke"
+  },
+  {
+    "key": "en:lemon-soft-drinks",
+    "name": "Bezalkoholna pića s limunom"
+  },
+  {
+    "key": "en:still-soft-drinks",
+    "name": "Bezalkoholno piće"
+  },
+  {
+    "key": "en:still-soft-drink-with-tea-extract",
+    "name": "Bezalkoholno piće s ekstraktom čaja"
+  },
+  {
+    "key": "en:plant-based-foods-and-beverages",
+    "name": "Biljne hrane i pića"
+  },
+  {
+    "key": "en:christmas-foods-and-drinks",
+    "name": "Božićna jela i pića"
+  },
+  {
+    "key": "en:celery-stalks-pickles",
+    "name": "Celery stalks pickles"
+  },
+  {
     "key": "en:cheese-and-pickle-sandwich",
     "name": "Cheese and pickle sandwich"
   },
   {
-    "key": "en:legume-pickles",
-    "name": "Legume pickles"
+    "key": "en:chocolate-soy-based-drinks",
+    "name": "Čokoladna pića na bazi soje"
   },
   {
-    "key": "en:mixed-vegetable-pickles",
-    "name": "Mixed vegetable pickles"
+    "key": "en:cola-sodas-without-caffeine",
+    "name": "Cola gazirana pića bez kofeina"
   },
   {
-    "key": "en:pickled-beets",
-    "name": "Pickled beets"
+    "key": "en:dehydrated-beverages",
+    "name": "Dehidrirana pića"
   },
   {
-    "key": "en:pickled-caper-berries",
-    "name": "Pickled caper berries"
+    "key": "en:distilled-beverages",
+    "name": "Destilirana pića"
   },
   {
-    "key": "en:pickled-capers",
-    "name": "Pickled capers"
+    "key": "en:diet-sodas",
+    "name": "Dijetalna gazirana pića"
   },
   {
-    "key": "en:pickled-carrots",
-    "name": "Pickled carrots"
+    "key": "en:diet-beverages",
+    "name": "Dijetalna pića"
   },
   {
-    "key": "en:pickled-cucumbers",
-    "name": "Pickled cucumbers"
+    "key": "en:diet-cola-soft-drink",
+    "name": "Dijetalno bezalkoholno piće kola"
   },
   {
-    "key": "en:pickled-eggplants",
-    "name": "Pickled eggplants"
+    "key": "en:dill-pickles",
+    "name": "Dill pickles"
   },
   {
-    "key": "en:pickled-garlic",
-    "name": "Pickled garlic"
+    "key": "en:baby-drinks",
+    "name": "Dječja pića"
   },
   {
-    "key": "en:pickled-gherkins",
-    "name": "Pickled gherkins"
+    "key": "en:energy-drinks",
+    "name": "Energetska pića"
   },
   {
-    "key": "en:pickled-green-peppercorns",
-    "name": "Pickled green peppercorns"
+    "key": "en:energy-drink-with-sugar",
+    "name": "Energetsko piće sa šećerom"
   },
   {
-    "key": "en:pickled-guindilla-peppers",
-    "name": "Pickled guindilla peppers"
+    "key": "en:fermented-drinks",
+    "name": "Fermentirana pića"
   },
   {
-    "key": "en:pickled-herring",
-    "name": "Pickled herring"
+    "key": "en:carbonated-drinks",
+    "name": "Gazirana pića"
   },
   {
-    "key": "en:pickled-lupin-beans",
-    "name": "Pickled lupin beans"
+    "key": "en:carbonated-soft-drinks-without-fruit-juice",
+    "name": "Gazirana pića bez voćnog soka"
   },
   {
-    "key": "en:pickled-onions",
-    "name": "Pickled onions"
+    "key": "en:sodas-with-exotic-fruits",
+    "name": "Gazirana pića s egzotičnim voćem"
   },
   {
-    "key": "en:pickled-peppers",
-    "name": "Pickled peppers"
+    "key": "en:carbonated-soft-drinks-without-fruit-juice-with-sugar",
+    "name": "Gazirana pića s šećerom bez voćnog soka"
   },
   {
-    "key": "en:pickled-sausages",
-    "name": "Pickled sausages"
+    "key": "en:carbonated-fruit-soft-drink",
+    "name": "Gazirano voćno bezalkoholno piće"
+  },
+  {
+    "key": "en:halloween-foods-and-drinks",
+    "name": "Hrana i piće za noć vještica"
+  },
+  {
+    "key": "en:vegetable-based-foods-and-beverages",
+    "name": "Hranu i piće na bazi povrća"
+  },
+  {
+    "key": "en:croatian-spirit-drinks",
+    "name": "Hrvatska žestoka pića"
+  },
+  {
+    "key": "en:coffee-soy-based-drinks",
+    "name": "Kava pića na bazi soje"
+  },
+  {
+    "key": "en:khorasan-wheat-based-drinks",
+    "name": "Khorasan pića na bazi pšenice"
+  },
+  {
+    "key": "en:compotes-to-drink",
+    "name": "Kompoti za piće"
+  },
+  {
+    "key": "en:potatoes-from-val-de-picones",
+    "name": "Krumpir iz val de picones"
+  },
+  {
+    "key": "en:light-lemon-soft-drinks",
+    "name": "Lagana bezalkoholna pića s limunom"
+  },
+  {
+    "key": "en:light-fruit-sodas",
+    "name": "Lagano voćno gazirano piće"
+  },
+  {
+    "key": "en:mixed-drinks",
+    "name": "Miješana pića"
+  },
+  {
+    "key": "en:orange-soft-drinks",
+    "name": "Narančasta bezalkoholna pića"
+  },
+  {
+    "key": "en:unsweetened-plain-almond-based-drinks",
+    "name": "Nezaslađena obična pića na bazi badema"
+  },
+  {
+    "key": "en:unsweetened-plain-soy-based-drinks",
+    "name": "Nezaslađena obična pića na bazi soje"
+  },
+  {
+    "key": "en:unsweetened-beverages",
+    "name": "Nezaslađenih pića"
+  },
+  {
+    "key": "de:deutsche-spirituosen",
+    "name": "Njemačka žestoka pića"
+  },
+  {
+    "key": "en:plain-rice-based-drinks",
+    "name": "Obična pića na bazi riže"
+  },
+  {
+    "key": "en:alcoholic-beverages-variety-packs",
+    "name": "Pakiranja raznih alkoholnih pića"
+  },
+  {
+    "key": "en:beverage-variety-packs",
+    "name": "Pakiranja raznih pića"
+  },
+  {
+    "key": "en:beverages",
+    "name": "Pića"
+  },
+  {
+    "key": "en:beverages-and-beverages-preparations",
+    "name": "Pića i pripravci za piće"
+  },
+  {
+    "key": "en:amaranth-based-drinks",
+    "name": "Pića na bazi amaranta"
+  },
+  {
+    "key": "en:almond-based-drinks",
+    "name": "Pića na bazi badema"
+  },
+  {
+    "key": "en:tea-based-beverages",
+    "name": "Pića na bazi čaja"
+  },
+  {
+    "key": "en:chocolate-almond-based-drinks",
+    "name": "Pića na bazi čokolade i badema"
+  },
+  {
+    "key": "en:buckwheat-based-drinks",
+    "name": "Pića na bazi heljde"
+  },
+  {
+    "key": "en:barley-based-drinks",
+    "name": "Pića na bazi ječma"
+  },
+  {
+    "key": "en:canary-grass-based-drinks",
+    "name": "Pića na bazi kanarinske trave"
+  },
+  {
+    "key": "en:chestnut-based-drinks",
+    "name": "Pića na bazi kestena"
+  },
+  {
+    "key": "en:coconut-based-drinks",
+    "name": "Pića na bazi kokosa"
+  },
+  {
+    "key": "en:hemp-based-drinks",
+    "name": "Pića na bazi konoplje"
+  },
+  {
+    "key": "en:maize-based-drinks",
+    "name": "Pića na bazi kukuruza"
+  },
+  {
+    "key": "en:quinoa-based-drinks",
+    "name": "Pića na bazi kvinoje"
+  },
+  {
+    "key": "en:hazelnut-based-drinks",
+    "name": "Pića na bazi lješnjaka"
+  },
+  {
+    "key": "en:legume-based-drinks",
+    "name": "Pića na bazi mahunarki"
+  },
+  {
+    "key": "en:macadamia-nut-based-drinks",
+    "name": "Pića na bazi makadamije"
+  },
+  {
+    "key": "en:walnut-based-drinks",
+    "name": "Pića na bazi oraha"
+  },
+  {
+    "key": "en:nut-based-drinks",
+    "name": "Pića na bazi orašastih plodova"
+  },
+  {
+    "key": "en:spelt-based-drinks",
+    "name": "Pića na bazi pira"
+  },
+  {
+    "key": "en:vegetable-based-beverages",
+    "name": "Pića na bazi povrća"
+  },
+  {
+    "key": "en:millet-based-drinks",
+    "name": "Pića na bazi prosa"
+  },
+  {
+    "key": "en:wheat-based-drinks",
+    "name": "Pića na bazi pšenice"
+  },
+  {
+    "key": "en:rice-based-drinks",
+    "name": "Pića na bazi riže"
+  },
+  {
+    "key": "en:cocoa-rice-based-drinks",
+    "name": "Pića na bazi riže i kakaa"
+  },
+  {
+    "key": "en:vanilla-rice-based-drinks",
+    "name": "Pića na bazi riže vanilije"
+  },
+  {
+    "key": "en:sesame-based-drinks",
+    "name": "Pića na bazi sezama"
+  },
+  {
+    "key": "en:soy-based-drinks",
+    "name": "Pića na bazi soje"
+  },
+  {
+    "key": "en:teff-based-drinks",
+    "name": "Pića na bazi tefa"
+  },
+  {
+    "key": "en:tigernut-based-drinks",
+    "name": "Pića na bazi tigrovog oraha"
+  },
+  {
+    "key": "en:vanilla-almond-based-drinks",
+    "name": "Pića na bazi vanilije i badema"
+  },
+  {
+    "key": "en:vanilla-soy-based-drinks",
+    "name": "Pića na bazi vanilije soje"
+  },
+  {
+    "key": "en:wine-based-drinks",
+    "name": "Pića na bazi vina"
+  },
+  {
+    "key": "en:fruit-based-beverages",
+    "name": "Pića na bazi voća"
+  },
+  {
+    "key": "en:cereal-based-drinks",
+    "name": "Pića na bazi žitarica"
+  },
+  {
+    "key": "en:oat-based-drinks",
+    "name": "Pića na bazi zobi"
+  },
+  {
+    "key": "en:plant-based-beverages",
+    "name": "Pića na biljnoj bazi"
+  },
+  {
+    "key": "en:basil-seeds-drinks",
+    "name": "Pića od sjemenki bosiljka"
+  },
+  {
+    "key": "en:vanilla-yogurt-drinks",
+    "name": "Pića s jogurtom od vanilije"
+  },
+  {
+    "key": "en:beverages-with-orange",
+    "name": "Pića s narančom"
+  },
+  {
+    "key": "en:pickled-cep-mushrooms",
+    "name": "Pickled cep mushrooms"
+  },
+  {
+    "key": "en:pickled-chanterelles",
+    "name": "Pickled chanterelles"
+  },
+  {
+    "key": "en:pickled-fruits",
+    "name": "Pickled fruits"
+  },
+  {
+    "key": "en:pickled-limes",
+    "name": "Pickled limes"
+  },
+  {
+    "key": "en:pickled-mangoes",
+    "name": "Pickled mangoes"
+  },
+  {
+    "key": "en:pickled-mushrooms",
+    "name": "Pickled Mushrooms"
+  },
+  {
+    "key": "en:pickled-plums",
+    "name": "Pickled plums"
+  },
+  {
+    "key": "en:pickled-red-cabbage",
+    "name": "Pickled red cabbage"
+  },
+  {
+    "key": "en:pickled-sweet-corn",
+    "name": "Pickled sweet corn"
+  },
+  {
+    "key": "en:pickled-tomatoes",
+    "name": "Pickled tomatoes"
+  },
+  {
+    "key": "en:pickled-white-cabbage",
+    "name": "Pickled white cabbage"
   },
   {
     "key": "en:pickles",
@@ -80,19 +420,95 @@
     "name": "Picodon"
   },
   {
-    "key": "en:plant-based-mixed-pickles",
-    "name": "Plant-based mixed pickles"
+    "key": "en:polish-pickles",
+    "name": "Polish pickles"
   },
   {
-    "key": "en:plant-based-pickles",
-    "name": "Plant-based pickles"
+    "key": "en:portuguese-spirit-drinks",
+    "name": "Portugalska žestoka pića"
   },
   {
-    "key": "en:sandwich-with-pate-and-pickles",
-    "name": "Sandwich with pâté and pickles"
+    "key": "en:premixed-alcoholic-beverages",
+    "name": "Prethodno miješana alkoholna pića"
   },
   {
-    "key": "en:vegetable-pickles",
-    "name": "Vegetable pickles"
+    "key": "en:beverage-preparations",
+    "name": "Pripravci za piće"
+  },
+  {
+    "key": "en:pumpkin-pickles",
+    "name": "Pumpkin pickles"
+  },
+  {
+    "key": "en:radish-pickles",
+    "name": "Radish pickles"
+  },
+  {
+    "key": "en:baby-infant-foods-beverages-variety-packs",
+    "name": "Različita pakiranja hrane/hrane za dojenčad/pića"
+  },
+  {
+    "key": "en:non-alcoholic-instant-beverages-variety-packs",
+    "name": "Razna pakiranja bezalkoholnih instant pića"
+  },
+  {
+    "key": "en:non-alcoholic-beverages-variety-packs",
+    "name": "Raznovrsna pakiranja bezalkoholnih pića"
+  },
+  {
+    "key": "en:red-radish-pickles",
+    "name": "Red radish pickles"
+  },
+  {
+    "key": "en:russian-pickles",
+    "name": "Russian pickles"
+  },
+  {
+    "key": "en:squash-pickles",
+    "name": "Squash pickles"
+  },
+  {
+    "key": "en:light-orange-soft-drinks",
+    "name": "Svijetlonarančasta bezalkoholna pića"
+  },
+  {
+    "key": "en:turnips-pickles",
+    "name": "Turnips pickles"
+  },
+  {
+    "key": "en:artificially-sweetened-beverages",
+    "name": "Umjetno zaslađena pića"
+  },
+  {
+    "key": "en:fruit-sodas",
+    "name": "Voćno gazirano piće"
+  },
+  {
+    "key": "en:artisanal-spirits",
+    "name": "Zanatska žestoka pića"
+  },
+  {
+    "key": "en:sodas",
+    "name": "Zaslađena gazirana pića"
+  },
+  {
+    "key": "en:sweetened-plain-almond-based-drinks",
+    "name": "Zaslađena obična pića na bazi badema"
+  },
+  {
+    "key": "en:sweetened-plain-soy-based-drinks",
+    "name": "Zaslađena obična pića na bazi soje"
+  },
+  {
+    "key": "en:sweetened-beverages",
+    "name": "Zaslađena pića"
+  },
+  {
+    "key": "en:hard-liquors",
+    "name": "Žestoka pića"
+  },
+  {
+    "key": "en:grain-spirits",
+    "name": "Žitna žestoka pića"
   }
 ]

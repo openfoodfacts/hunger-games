@@ -1,5 +1,13 @@
 [
   {
+    "key": "en:chicken-offals",
+    "name": "Abats de poulets"
+  },
+  {
+    "key": "en:agar-agar-powder",
+    "name": "Agar agar en poudre"
+  },
+  {
     "key": "fr:aiguillettes-de-poulet",
     "name": "Aiguillettes de poulet"
   },
@@ -12,6 +20,10 @@
     "name": "Ailes de poulet"
   },
   {
+    "key": "en:frozen-chicken-wings",
+    "name": "Ailes de poulet surgelées"
+  },
+  {
     "key": "en:baby-foods",
     "name": "Aliments pour bébé"
   },
@@ -20,7 +32,7 @@
     "name": "Allumettes de poulet"
   },
   {
-    "key": "en:almond-meal",
+    "key": "en:ground-almonds",
     "name": "Amandes en poudre"
   },
   {
@@ -46,10 +58,6 @@
   {
     "key": "en:biscuits-for-babies",
     "name": "Biscuits pour bébé"
-  },
-  {
-    "key": "en:cat-biscuits",
-    "name": "Biscuits pour chats"
   },
   {
     "key": "en:egg-white-powder",
@@ -212,8 +220,16 @@
     "name": "Brochettes de poulet"
   },
   {
+    "key": "en:frozen-chicken-skewers",
+    "name": "Brochettes de poulet surgelées"
+  },
+  {
     "key": "en:yakitori-chicken-skewers",
     "name": "Brochettes de poulet Yakitori"
+  },
+  {
+    "key": "en:frozen-yakitori-chicken-skewers",
+    "name": "Brochettes de poulet Yakitori surgelées"
   },
   {
     "key": "en:coated-peanuts",
@@ -250,6 +266,10 @@
   {
     "key": "en:powdered-cappucino",
     "name": "Cappuccino en poudre"
+  },
+  {
+    "key": "en:chicken-carcass",
+    "name": "Carcasse de poulet"
   },
   {
     "key": "en:cardamom-powder",
@@ -388,7 +408,7 @@
     "name": "Chips au poulet"
   },
   {
-    "key": "en:chocolate-powders",
+    "key": "en:instant-chocolate-powders",
     "name": "Chocolats en poudre"
   },
   {
@@ -428,12 +448,20 @@
     "name": "Cône pour glace"
   },
   {
-    "key": "fr:cordons-bleus-de-poulet",
+    "key": "en:chicken-cordons-bleus",
     "name": "Cordons bleus de poulet"
   },
   {
     "key": "en:ground-coriander-leaves",
     "name": "Coriandre en poudre"
+  },
+  {
+    "key": "fr:cou-de-poulet",
+    "name": "Cou de poulet"
+  },
+  {
+    "key": "fr:cou-de-poulet-surgele",
+    "name": "Cou de poulet surgelé"
   },
   {
     "key": "en:dehydrated-aromatic-stock-cube-for-fish",
@@ -480,14 +508,6 @@
     "name": "Crèmes végétales pour cuisiner"
   },
   {
-    "key": "en:dry-cat-food",
-    "name": "Croquettes pour chat"
-  },
-  {
-    "key": "en:dry-dog-food",
-    "name": "Croquettes pour chien"
-  },
-  {
     "key": "en:boiled-chicken-leg-with-meat-and-skin",
     "name": "Cuisse de poulet avec viande et peau bouillie"
   },
@@ -508,7 +528,7 @@
     "name": "Cuisses de poulet"
   },
   {
-    "key": "en:ground-cumin-seedskumin",
+    "key": "en:ground-cumin-seeds",
     "name": "Cumin en poudre"
   },
   {
@@ -518,10 +538,6 @@
   {
     "key": "en:curry-powder",
     "name": "Curry en poudre"
-  },
-  {
-    "key": "en:dairy-dessert-for-baby",
-    "name": "Dessert lacté pour bébé"
   },
   {
     "key": "en:dairy-dessert-for-baby-with-semolina",
@@ -548,7 +564,7 @@
     "name": "Desserts au fruit pour bébé"
   },
   {
-    "key": "en:baby-dairy-desserts",
+    "key": "en:dairy-dessert-for-baby",
     "name": "Desserts lactés pour bébé"
   },
   {
@@ -564,12 +580,20 @@
     "name": "Escalopes de poulet panées"
   },
   {
+    "key": "en:flour-for-tempura",
+    "name": "Farines pour tempura"
+  },
+  {
     "key": "en:cooked-chicken-breast-without-skin",
     "name": "Filet de poulet sans peau cuit"
   },
   {
     "key": "en:chicken-breasts",
     "name": "Filets de poulet"
+  },
+  {
+    "key": "fr:filets-de-poulet-fermier",
+    "name": "Filets de poulet fermier"
   },
   {
     "key": "fr:filets-de-poulet-rotis",
@@ -672,6 +696,10 @@
     "name": "Lait de poule sans alcool"
   },
   {
+    "key": "en:milks-liquid-and-powder",
+    "name": "Laits (fluide et poudre)"
+  },
+  {
     "key": "en:powdered-khorasan-wheat-milks",
     "name": "Laits de blé khorasan en poudre"
   },
@@ -772,7 +800,7 @@
     "name": "Nems au poulet"
   },
   {
-    "key": "en:hazelnuts-powder",
+    "key": "en:hazelnut-powders",
     "name": "Noisettes en poudre"
   },
   {
@@ -780,64 +808,16 @@
     "name": "Noix de muscade en poudre"
   },
   {
-    "key": "en:wet-pet-food",
-    "name": "Nourriture humide pour animaux"
-  },
-  {
-    "key": "en:pet-food",
-    "name": "Nourriture pour animaux"
-  },
-  {
-    "key": "en:miscellaneous-pet-food",
-    "name": "Nourriture pour animaux variés"
-  },
-  {
-    "key": "en:senior-cat-food",
-    "name": "Nourriture pour chat agé"
-  },
-  {
-    "key": "en:castrated-cat-food",
-    "name": "Nourriture pour chat castré"
-  },
-  {
-    "key": "en:cat-food",
-    "name": "Nourriture pour chats"
-  },
-  {
-    "key": "en:horse-food",
-    "name": "Nourriture pour chevaux"
-  },
-  {
-    "key": "en:dog-food",
-    "name": "Nourriture pour chiens"
-  },
-  {
-    "key": "en:rabbit-food",
-    "name": "Nourriture pour lapins"
-  },
-  {
-    "key": "en:bird-food",
-    "name": "Nourriture pour oiseaux"
-  },
-  {
-    "key": "en:fish-food",
-    "name": "Nourriture pour poissons"
-  },
-  {
-    "key": "en:reptile-food",
-    "name": "Nourriture pour reptiles"
-  },
-  {
-    "key": "en:rodent-food",
-    "name": "Nourriture pour rongeurs"
-  },
-  {
-    "key": "en:dry-pet-food",
-    "name": "Nourriture sèche pour animaux"
+    "key": "xx:lamian",
+    "name": "Nouilles pour ramen"
   },
   {
     "key": "en:chicken-nuggets",
     "name": "Nuggets de poulet"
+  },
+  {
+    "key": "en:frozen-chicken-nuggets",
+    "name": "Nuggets de poulet surgelés"
   },
   {
     "key": "fr:nuits-saint-georges-premier-cru-les-poulettes",
@@ -858,6 +838,10 @@
   {
     "key": "en:chicken-eggs",
     "name": "Œufs de poules"
+  },
+  {
+    "key": "en:frozen-chicken-eggs",
+    "name": "Oeufs de poules congelés"
   },
   {
     "key": "en:barn-chicken-eggs",
@@ -896,6 +880,10 @@
     "name": "Pain de campagne fait maison avec farine pour machine à pain"
   },
   {
+    "key": "en:bruschetta-breads",
+    "name": "Pains pour bruschetta"
+  },
+  {
     "key": "en:powdered-panela",
     "name": "Panela en poudre"
   },
@@ -912,20 +900,20 @@
     "name": "Pastilla au poulet"
   },
   {
-    "key": "en:wet-cat-food",
-    "name": "Pâtées pour chat"
-  },
-  {
-    "key": "en:wet-dog-food",
-    "name": "Pâtées pour chien"
-  },
-  {
     "key": "en:chicken-liver-pate",
     "name": "Pâtés de foie de poulet"
   },
   {
     "key": "en:instant-pasta-with-chicken",
     "name": "Pâtes instantanées au poulet"
+  },
+  {
+    "key": "en:chicken-feet",
+    "name": "Pattes de poulets"
+  },
+  {
+    "key": "en:lesser-galangal-powder",
+    "name": "Petit Galanga en poudre"
   },
   {
     "key": "en:ice-cream-cup-for-children",
@@ -1040,6 +1028,10 @@
     "name": "Pommard Les Poutures"
   },
   {
+    "key": "en:potatoes-for-hash-browns",
+    "name": "Pommes de terre pour pommes de terre rissolées"
+  },
+  {
     "key": "en:soups-for-babies",
     "name": "Potages pour bébé"
   },
@@ -1074,6 +1066,10 @@
   {
     "key": "en:mushroom-powders",
     "name": "Poudres de champignons"
+  },
+  {
+    "key": "en:okra-powders",
+    "name": "Poudres de gombo"
   },
   {
     "key": "fr:pouilly-fuisse",
@@ -1112,8 +1108,20 @@
     "name": "Poule cuisse crue"
   },
   {
+    "key": "en:chicken-stewing-leg-frozen",
+    "name": "Poule cuisse surgelée"
+  },
+  {
+    "key": "en:frozen-hen",
+    "name": "Poule surgelée"
+  },
+  {
     "key": "en:chicken-white-race-meat-and-skin-raw",
     "name": "Poulet (var. blanc) viande et peau cru"
+  },
+  {
+    "key": "en:chicken-kievs",
+    "name": "Poulet à la Kiev"
   },
   {
     "key": "en:chicken-wing-meat-and-skin-raw",
@@ -1130,6 +1138,10 @@
   {
     "key": "en:chicken-leg-meat-and-skin-raw",
     "name": "Poulet cuisse viande et peau cru"
+  },
+  {
+    "key": "en:frozen-chicken-leg-meat-and-skin-raw",
+    "name": "Poulet cuisse viande et peau cru surgelée"
   },
   {
     "key": "fr:poulet-de-bresse",
@@ -1156,12 +1168,12 @@
     "name": "Poulet éviscéré sans abats cru"
   },
   {
-    "key": "en:chicken-free-range-meat-and-skin-raw",
-    "name": "Poulet fermier viande et peau cru"
-  },
-  {
     "key": "en:chicken-breast-without-skin-raw",
     "name": "Poulet filet sans peau cru"
+  },
+  {
+    "key": "en:frozen-chicken-breast-without-skin-raw",
+    "name": "Poulet filet sans peau cru surgelé"
   },
   {
     "key": "en:chicken-high-leg-meat-raw",
@@ -1174,6 +1186,10 @@
   {
     "key": "en:tandoori-chicken",
     "name": "Poulet tandoori"
+  },
+  {
+    "key": "en:chicken-tikka",
+    "name": "Poulet tikka"
   },
   {
     "key": "en:chicken-tikka-masala",
@@ -1212,7 +1228,7 @@
     "name": "Poulets entiers"
   },
   {
-    "key": "fr:poulets-fermiers",
+    "key": "en:chicken-free-range-meat-and-skin-raw",
     "name": "Poulets fermiers"
   },
   {
@@ -1228,8 +1244,16 @@
     "name": "Poulets panés"
   },
   {
+    "key": "en:frozen-breaded-chicken",
+    "name": "Poulets panés surgelés"
+  },
+  {
     "key": "en:roast-chicken",
     "name": "Poulets rôtis"
+  },
+  {
+    "key": "en:frozen-chickens",
+    "name": "Poulets surgelés"
   },
   {
     "key": "en:pouligny-saint-pierre",
@@ -1240,8 +1264,16 @@
     "name": "Poulpe"
   },
   {
+    "key": "en:frozen-common-octopus",
+    "name": "Poulpe surgelé"
+  },
+  {
     "key": "en:cooked-common-octopus",
     "name": "Poulpes cuits"
+  },
+  {
+    "key": "en:frozen-cooked-common-octopus",
+    "name": "Poulpes cuits surgelés"
   },
   {
     "key": "en:sprouts",
@@ -1268,8 +1300,12 @@
     "name": "Pousses de bambou crues"
   },
   {
-    "key": "en:canned-bamboo-shoots",
-    "name": "Pousses de bambou en conserve"
+    "key": "en:bamboo-shoots-pickles",
+    "name": "Pousses de bambou marinées"
+  },
+  {
+    "key": "en:dried-bamboo-shoots",
+    "name": "Pousses de bambou séchées"
   },
   {
     "key": "en:canned-mung-bean-sprouts",
@@ -1304,6 +1340,10 @@
     "name": "Pousses séchées"
   },
   {
+    "key": "fr:preparation-pour-bavarois",
+    "name": "Préparation pour bavarois"
+  },
+  {
     "key": "en:base-formulation-for-chocolate-mousse",
     "name": "Préparation pour mousse au chocolat"
   },
@@ -1318,6 +1358,26 @@
   {
     "key": "en:chicken-spreads",
     "name": "Préparations de poulet à tartiner"
+  },
+  {
+    "key": "en:banana-bread-mixes",
+    "name": "Préparations pour banana bread"
+  },
+  {
+    "key": "en:biscuit-mixes",
+    "name": "Préparations pour biscuits"
+  },
+  {
+    "key": "en:beverage-preparations",
+    "name": "Préparations pour boissons"
+  },
+  {
+    "key": "en:brownies-mixes",
+    "name": "Préparations pour Brownies"
+  },
+  {
+    "key": "en:cookies-mixes",
+    "name": "Préparations pour cookies"
   },
   {
     "key": "en:mixes-for-dessert-creams",
@@ -1360,12 +1420,20 @@
     "name": "Préparations pour Milk-shakes"
   },
   {
+    "key": "en:gluten-free-bread-mixes",
+    "name": "Préparations pour pain sans gluten"
+  },
+  {
     "key": "en:mixes-for-panna-cotta",
     "name": "Préparations pour panna cotta"
   },
   {
     "key": "en:iced-teas-preparations",
     "name": "Préparations pour thés glacés"
+  },
+  {
+    "key": "en:products-that-cannot-be-found-in-metropolitan-france",
+    "name": "Produits introuvables en Métropole (pour la France)"
   },
   {
     "key": "en:protein-powders",
@@ -1418,6 +1486,10 @@
   {
     "key": "en:piemontese-salads-with-chicken",
     "name": "Salades piémontaises au poulet"
+  },
+  {
+    "key": "en:chicken-salami",
+    "name": "Salami de poulet"
   },
   {
     "key": "en:samoussas-with-chicken",
@@ -1533,7 +1605,7 @@
   },
   {
     "key": "en:hen-meat-and-skin",
-    "name": "Viande de poulet avec peau"
+    "name": "Viande de poule avec peau"
   },
   {
     "key": "en:chicken-meat-without-skin",
@@ -1542,5 +1614,9 @@
   {
     "key": "en:chicken-wraps",
     "name": "Wraps au poulet"
+  },
+  {
+    "key": "en:fried-chicken-wraps",
+    "name": "Wraps au poulet frit"
   }
 ]

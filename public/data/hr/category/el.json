@@ -32,16 +32,8 @@
     "name": "Breakfast cereals filled with something other than chocolate fortified with vitamins and chemical elements"
   },
   {
-    "key": "en:breakfast-cereals-fortified-with-vitamins-and-chemical-elements",
-    "name": "Breakfast cereals fortified with vitamins and chemical elements"
-  },
-  {
     "key": "en:breakfast-cereals-mix-of-puffed-cereals-fortified-with-vitamins-and-chemical-elements",
     "name": "Breakfast cereals mix of puffed cereals fortified with vitamins and chemical elements"
-  },
-  {
-    "key": "en:breakfast-cereals-not-fortified-with-vitamins-and-chemical-elements",
-    "name": "Breakfast cereals not fortified with vitamins and chemical elements"
   },
   {
     "key": "en:breakfast-cereals-puffed-cereals-wholemeal-fortified-with-vitamins-and-chemical-elements",
@@ -76,24 +68,8 @@
     "name": "Breakfast chocolate cereals not filled and not fortified with vitamins and chemical elements"
   },
   {
-    "key": "en:breakfast-chocolate-cereals-with-wheat-grain-flakes-not-fortified-with-vitamins-and-chemical-elements",
-    "name": "Breakfast chocolate cereals with wheat grain flakes not fortified with vitamins and chemical elements"
-  },
-  {
     "key": "en:breakfast-chocolate-high-fiber-cereals-fortified-with-vitamins-and-chemical-elements",
     "name": "Breakfast chocolate high-fiber cereals fortified with vitamins and chemical elements"
-  },
-  {
-    "key": "en:chocolate-puffed-rice-fortified-with-vitamins-and-chemical-elements",
-    "name": "Chocolate puffed rice fortified with vitamins and chemical elements"
-  },
-  {
-    "key": "en:chocolate-puffed-rice-not-fortified-with-vitamins-and-chemical-elements",
-    "name": "Chocolate puffed rice not fortified with vitamins and chemical elements"
-  },
-  {
-    "key": "en:chocolate-puffed-wheat-grains-fortified-with-vitamins-and-chemical-elements",
-    "name": "Chocolate puffed wheat grains fortified with vitamins and chemical elements"
   },
   {
     "key": "en:chocolate-wheat-grain-flakes-fortified-with-vitamins-and-chemical-elements",
@@ -104,20 +80,20 @@
     "name": "Cocoa powder for beverages with sugar fortified with vitamins and chemical elements"
   },
   {
-    "key": "en:crunchy-chocolate-muesli-fortified-with-vitamins-and-chemical-elements",
-    "name": "Crunchy chocolate muesli fortified with vitamins and chemical elements"
+    "key": "en:chocolate-puffed-rice-not-fortified-with-vitamins-and-chemical-elements",
+    "name": "Čokoladna lisnata riža koja nije obogaćena vitaminima i kemijskim elementima"
   },
   {
-    "key": "en:crunchy-muesli-with-chocolate-not-fortified-with-vitamins-and-chemical-elements",
-    "name": "Crunchy muesli with chocolate not fortified with vitamins and chemical elements"
+    "key": "en:chocolate-puffed-rice-fortified-with-vitamins-and-chemical-elements",
+    "name": "Čokoladna lisnata riža obogaćena vitaminima i kemijskim elementima"
   },
   {
-    "key": "en:crunchy-muesli-with-fruits-fortified-with-vitamins-and-chemical-elements",
-    "name": "Crunchy muesli with fruits fortified with vitamins and chemical elements"
+    "key": "en:chocolate-puffed-wheat-grains-fortified-with-vitamins-and-chemical-elements",
+    "name": "Čokoladna napuhana zrna pšenice obogaćena vitaminima i kemijskim elementima"
   },
   {
-    "key": "en:crunchy-muesli-with-fruits-not-fortified-with-vitamins-and-chemical-elements",
-    "name": "Crunchy muesli with fruits not fortified with vitamins and chemical elements"
+    "key": "en:breakfast-chocolate-cereals-with-wheat-grain-flakes-not-fortified-with-vitamins-and-chemical-elements",
+    "name": "Čokoladne pahuljice za doručak s pahuljicama pšeničnog zrna koje nisu obogaćene vitaminima i kemijskim elementima"
   },
   {
     "key": "en:diet-breakfast-cereals-fortified-with-vitamins-and-chemical-elements",
@@ -140,68 +116,72 @@
     "name": "Diet chocolate breakfast cereals fortified with vitamins and chemical elements"
   },
   {
-    "key": "en:elderberries",
-    "name": "Elderberries"
-  },
-  {
-    "key": "en:elderberry-flowers",
-    "name": "Elderberry flowers"
-  },
-  {
-    "key": "en:elderberry-jellies",
-    "name": "Elderberry jellies"
-  },
-  {
-    "key": "en:elderberry-products",
-    "name": "Elderberry products"
-  },
-  {
     "key": "en:elstar-apples",
-    "name": "Elstar apples"
+    "name": "Elstar jabuke"
   },
   {
     "key": "en:file-elena",
     "name": "File Elena"
   },
   {
+    "key": "en:crunchy-chocolate-muesli-fortified-with-vitamins-and-chemical-elements",
+    "name": "Hrskavi čokoladni müsli obogaćen vitaminima i kemijskim elementima"
+  },
+  {
+    "key": "en:crunchy-muesli-with-chocolate-not-fortified-with-vitamins-and-chemical-elements",
+    "name": "Hrskavi müsli s čokoladom koji nisu obogaćeni vitaminima i kemijskim elementima"
+  },
+  {
+    "key": "en:crunchy-muesli-with-fruits-not-fortified-with-vitamins-and-chemical-elements",
+    "name": "Hrskavi müsli s voćem koji nije obogaćen vitaminima i kemijskim elementima"
+  },
+  {
+    "key": "en:crunchy-muesli-with-fruits-fortified-with-vitamins-and-chemical-elements",
+    "name": "Hrskavi müsli s voćem obogaćeni vitaminima i kemijskim elementima"
+  },
+  {
     "key": "en:instant-cocoa-or-chocolate-beverage-with-sugar-fortified-with-vitamins-and-chemical-elements-ready-to-drink-reconstituted-with-standard-semi-skimm",
     "name": "Instant cocoa or chocolate beverage with sugar fortified with vitamins and chemical elements ready-to-drink (reconstituted with standard semi-skimm"
   },
   {
-    "key": "en:muesli-flakes-fortified-with-vitamins-and-chemical-elements",
-    "name": "Muesli flakes fortified with vitamins and chemical elements"
-  },
-  {
-    "key": "en:muesli-flakes-not-fortified-with-vitamins-and-chemical-elements",
-    "name": "Muesli flakes not fortified with vitamins and chemical elements"
+    "key": "en:puffed-rice-fortified-with-vitamins-and-chemical-elements",
+    "name": "Lisnatu rižu obogaćenu vitaminima i kemijskim elementima"
   },
   {
     "key": "en:olive-oils-from-elaiolado-finiki-lakonias",
-    "name": "Olive oils from Elaiolado Finiki Lakonias"
+    "name": "Maslinova ulja iz elaiolado finiki lakonias"
   },
   {
     "key": "en:olive-oils-from-exeretiko-partheno-eleolado-trizinia",
-    "name": "Olive oils from Exeretiko partheno eleolado \"Trizinia\""
+    "name": "Maslinova ulja iz exeretiko partheno eleolado \"trizinia\""
   },
   {
     "key": "en:olive-oils-from-exeretiko-partheno-eleolado-selino-kritis",
-    "name": "Olive oils from Exeretiko Partheno Eleolado Selino Kritis"
+    "name": "Maslinova ulja iz exeretiko partheno eleolado selino kritis"
   },
   {
     "key": "en:olive-oils-from-exeretiko-partheno-eleolado-thrapsano",
-    "name": "Olive oils from Exeretiko partheno eleolado Thrapsano"
+    "name": "Maslinova ulja iz exeretiko partheno eleolado thrapsano"
+  },
+  {
+    "key": "en:muesli-flakes-not-fortified-with-vitamins-and-chemical-elements",
+    "name": "Muesli pahuljice koje nisu obogaćene vitaminima i kemijskim elementima"
+  },
+  {
+    "key": "en:muesli-flakes-fortified-with-vitamins-and-chemical-elements",
+    "name": "Muesli pahuljice obogaćene vitaminima i kemijskim elementima"
+  },
+  {
+    "key": "en:plain-corn-flakes-not-fortified-with-vitamins-and-chemical-elements",
+    "name": "Obične kukuruzne pahuljice koje nisu obogaćene vitaminima i kemijskim elementima"
+  },
+  {
+    "key": "en:plain-corn-flakes-fortified-with-vitamins-and-chemical-elements",
+    "name": "Obične kukuruzne pahuljice obogaćene vitaminima i kemijskim elementima"
   },
   {
     "key": "en:partially-skimmed-chocolate-flavoured-milk-with-sugar-fortified-with-vitamins-and-chemicals-elements",
     "name": "Partially skimmed chocolate flavoured milk with sugar fortified with vitamins and chemicals elements"
-  },
-  {
-    "key": "en:plain-corn-flakes-fortified-with-vitamins-and-chemical-elements",
-    "name": "Plain corn flakes fortified with vitamins and chemical elements"
-  },
-  {
-    "key": "en:plain-corn-flakes-not-fortified-with-vitamins-and-chemical-elements",
-    "name": "Plain corn flakes not fortified with vitamins and chemical elements"
   },
   {
     "key": "en:popped-wheat-grain-with-caramel-fortified-with-vitamins-and-chemical-elements",
@@ -212,20 +192,16 @@
     "name": "Popped wheat grain with honey fortified with vitamins and chemical elements"
   },
   {
-    "key": "en:puffed-rice-fortified-with-vitamins-and-chemical-elements",
-    "name": "Puffed rice fortified with vitamins and chemical elements"
-  },
-  {
     "key": "en:ras-el-hanout",
     "name": "Ras el hanout"
   },
   {
-    "key": "en:sugar-iced-corn-flakes-fortified-with-vitamins-and-chemical-elements",
-    "name": "Sugar iced corn flakes fortified with vitamins and chemical elements"
+    "key": "en:sugar-iced-corn-flakes-not-fortified-with-vitamins-and-chemical-elements",
+    "name": "Šećerne kukuruzne pahuljice koje nisu obogaćene vitaminima i kemijskim elementima"
   },
   {
-    "key": "en:sugar-iced-corn-flakes-not-fortified-with-vitamins-and-chemical-elements",
-    "name": "Sugar iced corn flakes not fortified with vitamins and chemical elements"
+    "key": "en:sugar-iced-corn-flakes-fortified-with-vitamins-and-chemical-elements",
+    "name": "Šećerom ledene kukuruzne pahuljice obogaćene vitaminima i kemijskim elementima"
   },
   {
     "key": "en:unfilled-breakfast-chocolate-cereals-fortified-with-vitamins-and-chemical-elements",
@@ -234,5 +210,13 @@
   {
     "key": "en:wapiti-elk-meat",
     "name": "Wapiti elk meat"
+  },
+  {
+    "key": "en:breakfast-cereals-not-fortified-with-vitamins-and-chemical-elements",
+    "name": "Žitarice za doručak koje nisu obogaćene vitaminima i kemijskim elementima"
+  },
+  {
+    "key": "en:breakfast-cereals-fortified-with-vitamins-and-chemical-elements",
+    "name": "Žitarice za doručak obogaćene vitaminima i kemijskim elementima"
   }
 ]

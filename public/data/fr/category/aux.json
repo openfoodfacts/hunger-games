@@ -88,6 +88,10 @@
     "name": "Auxey-Duresses premier cru Les Duresses rouge AOC - AOP"
   },
   {
+    "key": "fr:auxey-duresses-premier-cru-reugne",
+    "name": "Auxey-Duresses premier cru Reugne"
+  },
+  {
     "key": "fr:auxey-duresses-premier-cru-reugne-blanc",
     "name": "Auxey-Duresses premier cru Reugne blanc"
   },
@@ -104,11 +108,7 @@
     "name": "Auxey-Duresses premier cru Reugne rouge AOC - AOP"
   },
   {
-    "key": "fr:auxey-duresses-reugne",
-    "name": "Auxey-Duresses Reugne"
-  },
-  {
-    "key": "en:sponge-cake-biscuits-wih-fruits-covering",
+    "key": "en:sponge-cake-biscuits-with-fruits-covering",
     "name": "Barquettes aux fruits"
   },
   {
@@ -116,15 +116,11 @@
     "name": "Barre biscuitée fourrée aux fruits allégée en matière grasse"
   },
   {
-    "key": "en:cereal-bar-with-almonds",
+    "key": "en:cereal-bars-with-almonds",
     "name": "Barre céréalière aux amandes"
   },
   {
-    "key": "en:cereal-bar-with-almonds-or-hazelnuts",
-    "name": "Barre céréalière aux amandes ou aux noisettes"
-  },
-  {
-    "key": "en:cereal-bar-with-hazelnuts",
+    "key": "en:cereal-bars-with-hazelnuts",
     "name": "Barre céréalière aux noisettes"
   },
   {
@@ -136,7 +132,7 @@
     "name": "Barres aux fruits"
   },
   {
-    "key": "fr:barres-chocolatees-au-lait-et-aux-cereales",
+    "key": "en:chocolate-covered-bars-with-milk-and-cereals",
     "name": "Barres chocolatées au lait et aux céréales"
   },
   {
@@ -160,7 +156,7 @@
     "name": "Barres de céréales aux fruits"
   },
   {
-    "key": "en:nuts-cereal-bars",
+    "key": "en:cereal-bars-with-nuts",
     "name": "Barres de céréales aux fruits à coques"
   },
   {
@@ -170,6 +166,18 @@
   {
     "key": "fr:barres-de-cereales-aux-fruits-et-fruits-a-coques",
     "name": "Barres de céréales aux fruits et fruits à coques"
+  },
+  {
+    "key": "en:ice-cream-bars-coated-with-fruit-sorbet",
+    "name": "Bâtonnets glacés enrobés de sorbet aux fruits"
+  },
+  {
+    "key": "en:vanilla-ice-cream-bars-coated-with-milk-chocolate-and-almonds",
+    "name": "Bâtonnets glacés vanille enrobés de chocolat au lait aux amandes"
+  },
+  {
+    "key": "en:vanilla-ice-cream-bars-coated-with-white-chocolate-and-almonds",
+    "name": "Bâtonnets glacés vanille enrobés de chocolat blanc aux amandes"
   },
   {
     "key": "en:sponge-cake-with-fruit-mousse",
@@ -214,10 +222,6 @@
   {
     "key": "en:shortbread-biscuit-with-fruits",
     "name": "Biscuit sec aux fruits"
-  },
-  {
-    "key": "en:biscuit-with-fruit-covering",
-    "name": "Biscuit sec nappé aux fruits"
   },
   {
     "key": "en:fruit-biscuits",
@@ -304,6 +308,10 @@
     "name": "Boissons aux fruits pour bébé dès 4/6 mois"
   },
   {
+    "key": "en:basil-seeds-drinks",
+    "name": "Boissons aux graines de basilic"
+  },
+  {
     "key": "en:vegetable-based-beverages",
     "name": "Boissons aux légumes"
   },
@@ -348,10 +356,6 @@
     "name": "Bouchées à la reine au poisson et aux fruits de mer"
   },
   {
-    "key": "en:soy-based-sliced",
-    "name": "Bouchées ou émincé au soja et blé (ne convient pas aux véganes ou végétaliens) préemballé"
-  },
-  {
     "key": "fr:boudins-aux-oignons",
     "name": "Boudins aux oignons"
   },
@@ -394,10 +398,6 @@
   {
     "key": "fr:brioches-aux-fruits",
     "name": "Brioches aux fruits"
-  },
-  {
-    "key": "en:vegetables-cakes",
-    "name": "Cake aux legumes"
   },
   {
     "key": "en:savoury-cake-with-vegetables",
@@ -504,7 +504,7 @@
     "name": "Chocolat blanc en tablette aux noisettes"
   },
   {
-    "key": "fr:chocolat-blanc-en-tablette-aux-praline",
+    "key": "en:white-chocolate-bar-with-praline",
     "name": "Chocolat blanc en tablette aux praliné"
   },
   {
@@ -608,6 +608,10 @@
     "name": "Cookies au chocolat et aux noisettes"
   },
   {
+    "key": "en:gherkins-with-onions",
+    "name": "Cornichons aux oignons"
+  },
+  {
     "key": "fr:coteaux-de-l-auxois",
     "name": "Coteaux de l'Auxois"
   },
@@ -656,6 +660,14 @@
     "name": "Croissant aux amandes artisanal"
   },
   {
+    "key": "en:croissant-with-almonds",
+    "name": "Croissants aux amandes"
+  },
+  {
+    "key": "en:croissants-with-almonds-and-pistachio",
+    "name": "Croissants aux amandes et pistache"
+  },
+  {
     "key": "en:almond-cookies",
     "name": "Croquants aux amandes"
   },
@@ -694,6 +706,26 @@
   {
     "key": "en:fermented-dairy-desserts-with-fruits",
     "name": "Desserts lactés fermentés aux fruits"
+  },
+  {
+    "key": "en:fat-free-fermented-dairy-desserts-with-fruits-and-sweeteners-fortified-with-vitamin-d",
+    "name": "Desserts lactés fermentés aux fruits édulcorés sans matière grasse enrichis en vitamine D"
+  },
+  {
+    "key": "en:fermented-dairy-desserts-with-fruits-enriched-with-vitamin-d",
+    "name": "Desserts lactés fermentés aux fruits enrichis en vitamine D"
+  },
+  {
+    "key": "en:fermented-dairy-desserts-with-fruits-sugar-and-cream",
+    "name": "Desserts lactés fermentés aux fruits sucrés à la crème"
+  },
+  {
+    "key": "en:fermented-dairy-desserts-with-fruits-and-sweeteners",
+    "name": "Desserts lactés fermentés édulcorés aux fruits"
+  },
+  {
+    "key": "en:fat-free-fermented-dairy-desserts-with-fruits-and-sweeteners",
+    "name": "Desserts lactés fermentés édulcorés aux fruits sans matière grasse"
   },
   {
     "key": "en:breton-pudding-cake-with-apples",
@@ -792,6 +824,10 @@
     "name": "Galettes aux champignons"
   },
   {
+    "key": "en:red-bean-patties",
+    "name": "Galettes aux haricots rouges"
+  },
+  {
     "key": "en:cereals-and-vegetables-patties",
     "name": "Galettes de céréales aux légumes"
   },
@@ -814,6 +850,10 @@
   {
     "key": "en:almond-cakes",
     "name": "Gâteaux aux amandes"
+  },
+  {
+    "key": "en:banana-breads",
+    "name": "Gâteaux aux bananes"
   },
   {
     "key": "en:dried-fig-cakes",
@@ -856,24 +896,24 @@
     "name": "Givry premier cru Clos du Cellier aux Moines rouge"
   },
   {
-    "key": "fr:glace-aux-calissons",
-    "name": "Glace aux calissons"
-  },
-  {
     "key": "fr:glaces-aux-amandes",
     "name": "Glaces aux amandes"
   },
   {
-    "key": "fr:glaces-aux-fruits-rouges",
-    "name": "Glaces aux fruits-rouges"
+    "key": "en:berries-ice-cream-tubs",
+    "name": "Glaces aux fruits rouges"
   },
   {
-    "key": "en:chestnut-ice-creams",
+    "key": "en:chestnut-ice-cream-tubs",
     "name": "Glaces aux marrons"
   },
   {
-    "key": "fr:glaces-aux-noisettes",
+    "key": "en:hazelnut-ice-cream-tubs",
     "name": "Glaces aux noisettes"
+  },
+  {
+    "key": "en:walnut-ice-cream-tubs",
+    "name": "Glaces aux noix"
   },
   {
     "key": "fr:gyosas-aux-crevettes",
@@ -892,6 +932,14 @@
     "name": "Houmous aux poivrons"
   },
   {
+    "key": "en:herb-flavoured-oils",
+    "name": "Huiles aromatisées aux herbes"
+  },
+  {
+    "key": "en:herb-flavoured-olive-oils",
+    "name": "Huiles d'olive aromatisées aux herbes"
+  },
+  {
     "key": "en:citrus-fruit-teas",
     "name": "Infusions aux agrumes"
   },
@@ -908,7 +956,7 @@
     "name": "Infusions aux fruits rouges"
   },
   {
-    "key": "en:vegetable-lasagne",
+    "key": "en:vegetable-lasagnas",
     "name": "Lasagnes aux légumes"
   },
   {
@@ -926,6 +974,10 @@
   {
     "key": "en:advocaat",
     "name": "Liqueur aux œufs"
+  },
+  {
+    "key": "en:nut-macarons",
+    "name": "Macarons aux fruits à coques"
   },
   {
     "key": "en:madeleines-with-raisin",
@@ -1058,10 +1110,6 @@
   {
     "key": "en:sauteed-noodles-with-shrimps",
     "name": "Nouilles sautées aux crevettes"
-  },
-  {
-    "key": "en:soybean-and-wheat-based-nuggets-vegan",
-    "name": "Nuggets soja et blé (convient aux véganes ou végétaliens) préemballé"
   },
   {
     "key": "fr:nuits-saint-georges-aux-vignerondes-premier-cru-aux-vignerondes",
@@ -1236,7 +1284,7 @@
     "name": "Panna cottas aux fruits rouges"
   },
   {
-    "key": "en:almonds-spreads",
+    "key": "en:almond-spreads",
     "name": "Pâtes à tartiner aux amandes"
   },
   {
@@ -1286,6 +1334,10 @@
   {
     "key": "en:fresh-pasta-stuffed-with-vegetables",
     "name": "Pâtes fraîches farcies aux légumes"
+  },
+  {
+    "key": "en:spinach-flavored-dry-pastas",
+    "name": "Pâtes sèches aromatisées aux épinards"
   },
   {
     "key": "en:dry-egg-pastas",
@@ -1344,12 +1396,12 @@
     "name": "Pizza aux lardons oignons et fromage"
   },
   {
-    "key": "en:vegetable-pizza",
-    "name": "Pizza aux légumes"
-  },
-  {
     "key": "en:five-cheese-pizza",
     "name": "Pizzas aux cinq fromages"
+  },
+  {
+    "key": "en:vegetable-pizza",
+    "name": "Pizzas aux légumes"
   },
   {
     "key": "en:four-cheese-pizza",
@@ -1456,7 +1508,7 @@
     "name": "Risottos aux cèpes"
   },
   {
-    "key": "en:mushrooms-risottos",
+    "key": "en:mushroom-risottos",
     "name": "Risottos aux champignons"
   },
   {
@@ -1484,11 +1536,11 @@
     "name": "Samoussas aux légumes"
   },
   {
-    "key": "fr:sandwich-aux-oeufs",
+    "key": "en:egg-sandwiches",
     "name": "Sandwich aux œufs"
   },
   {
-    "key": "en:vegetable-sandwiches",
+    "key": "en:raw-vegetable-sandwiches",
     "name": "Sandwichs aux crudités"
   },
   {
@@ -1548,19 +1600,19 @@
     "name": "Sauces tomates aux olives"
   },
   {
-    "key": "hu:sertés-májkolbászok",
-    "name": "Saucisses aux choux"
-  },
-  {
     "key": "en:sausages-with-lentils",
     "name": "Saucisses aux lentilles"
+  },
+  {
+    "key": "en:pork-and-cabbage-sausages",
+    "name": "Saucisses de porc aux choux"
   },
   {
     "key": "fr:saucisses-de-toulouse-aux-lentilles",
     "name": "Saucisses de Toulouse aux lentilles"
   },
   {
-    "key": "fr:saucissons-secs-aux-noisettes",
+    "key": "en:dry-sausages-with-hazelnuts",
     "name": "Saucissons secs aux noisettes"
   },
   {
@@ -1672,6 +1724,10 @@
     "name": "Soupe à la volaille et aux vermicelles déshydratée"
   },
   {
+    "key": "en:asparagus-soups-reheatable",
+    "name": "Soupe aux asperges à réchauffer"
+  },
+  {
     "key": "en:dehydrated-cereals-and-vegetables-soup",
     "name": "Soupe aux céréales et aux légumes déshydratée"
   },
@@ -1682,10 +1738,6 @@
   {
     "key": "en:reheatable-mixed-vegetables-soup",
     "name": "Soupe aux légumes variés à réchauffer"
-  },
-  {
-    "key": "en:lentils-soup",
-    "name": "Soupe aux lentilles"
   },
   {
     "key": "en:leek-and-potato-soup",
@@ -1728,7 +1780,7 @@
     "name": "Soupes aux asperges"
   },
   {
-    "key": "en:dehydrated-asparagus-soup",
+    "key": "en:dehydrated-asparagus-soups",
     "name": "Soupes aux asperges déshydratées"
   },
   {
@@ -1821,7 +1873,11 @@
   },
   {
     "key": "en:fruit-tartlets",
-    "name": "Tartelettes aux fruits"
+    "name": "Tartelettes aux fruits entiers ou coupés"
+  },
+  {
+    "key": "en:frozen-fruit-tartlets",
+    "name": "Tartelettes aux fruits surgelées"
   },
   {
     "key": "en:apricot-pies",
@@ -1872,8 +1928,16 @@
     "name": "Tartes aux pommes néerlandaises"
   },
   {
+    "key": "en:frozen-apple-pies",
+    "name": "Tartes aux pommes surgelées"
+  },
+  {
     "key": "en:vegan-vegetable-spreads",
     "name": "Tartinades véganes aux légumes"
+  },
+  {
+    "key": "en:vegetarian-vegetable-and-cheese-spreads",
+    "name": "Tartinades végétariennes aux légumes et fromage"
   },
   {
     "key": "en:extruded-and-grilled-biscuits-with-fruits-filling",
@@ -1904,7 +1968,7 @@
     "name": "Tourons aux amandes"
   },
   {
-    "key": "en:peanuts-turron",
+    "key": "en:peanut-turron",
     "name": "Tourons aux cacahuètes"
   },
   {
@@ -1968,22 +2032,6 @@
     "name": "Yaourt au lait fermenté aux céréales à 0% de matières grasses"
   },
   {
-    "key": "en:fat-free-fermented-milk-yogurt-with-fruits-and-sweetener",
-    "name": "Yaourt au lait fermenté aux fruits avec édulcorants à 0% de matières grasses"
-  },
-  {
-    "key": "en:fat-free-fermented-milk-yogurt-with-fruits-and-sweetener-fortified-with-vitamin-d",
-    "name": "Yaourt au lait fermenté aux fruits avec édulcorants à 0% de matières grasses enrichi en vitamine D"
-  },
-  {
-    "key": "en:fermented-milk-yogurt-fortified-with-vitamin-d-with-fruits-and-sugar",
-    "name": "Yaourt sucré au lait fermenté aux fruits enrichi en vitamine D"
-  },
-  {
-    "key": "en:fermented-milk-yogurt-with-fruits-and-sugar-and-cream",
-    "name": "Yaourt sucré au lait fermenté aux fruits et à la crème"
-  },
-  {
     "key": "en:fruit-bifidus-yogurts",
     "name": "Yaourts au bifidus aux fruits"
   },
@@ -2042,9 +2090,5 @@
   {
     "key": "en:tropical-fruits-soy-yogurts",
     "name": "Yaourts soja aux fruits tropicaux"
-  },
-  {
-    "key": "en:yogurts-with-fruits-and-sugar",
-    "name": "Yaourts sucrés aux fruits"
   }
 ]

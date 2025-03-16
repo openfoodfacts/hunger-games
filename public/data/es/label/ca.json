@@ -13,7 +13,7 @@
   },
   {
     "key": "en:cacao-controlled-by-ecocert-sa",
-    "name": "Cacao controlled by Ecocert SA"
+    "name": "Cacao controlado por Ecocert SA"
   },
   {
     "key": "en:utz-certified-coffee",
@@ -24,8 +24,12 @@
     "name": "Calidad Carrefour"
   },
   {
-    "key": "en:calidad-certificada",
-    "name": "Calidad Certificada"
+    "key": "en:certified-quality",
+    "name": "Calidad certificada"
+  },
+  {
+    "key": "en:calidad-certificada-de-andalucia",
+    "name": "Calidad Certificada de Andalucía"
   },
   {
     "key": "en:qualite-france-french-quality",
@@ -38,6 +42,10 @@
   {
     "key": "en:canada-organic",
     "name": "Canada Organic"
+  },
+  {
+    "key": "en:canadian-front-of-package-nutrition-symbol",
+    "name": "Canadian Front-of-package nutrition symbol"
   },
   {
     "key": "en:carbon-trust",
@@ -76,7 +84,7 @@
     "name": "Catad'Or Santiago de Chile Wine Awards"
   },
   {
-    "key": "en:krav",
+    "key": "ca:categoria-extra",
     "name": "Categoría “Extra”"
   },
   {
@@ -92,8 +100,16 @@
     "name": "Certified by Ecocert Canada"
   },
   {
+    "key": "en:with-caffeine",
+    "name": "Con cafeína"
+  },
+  {
+    "key": "en:catalan-council-of-organic-production",
+    "name": "Consejo Catalán de la Producción Agraria Ecológica"
+  },
+  {
     "key": "es:contiene-cafeina-evitar-en-ninos",
-    "name": "CONTIENE CAFEÍNA — EVITAR EN NIÑOS"
+    "name": "Contiene cafeína evitar en niños"
   },
   {
     "key": "en:pdo-arroz-de-calasparra",
@@ -113,7 +129,11 @@
   },
   {
     "key": "es:exceso-calorias",
-    "name": "EXCESO CALORÍAS"
+    "name": "Exceso Calorías"
+  },
+  {
+    "key": "en:fairtrade-canada",
+    "name": "Fairtrade Canada"
   },
   {
     "key": "en:calcium-source",
@@ -126,6 +146,34 @@
   {
     "key": "en:galicia-calidade",
     "name": "Galicia Calidade"
+  },
+  {
+    "key": "en:high-in-sat-fat-health-canada",
+    "name": "High in Sat fat (Health Canada)"
+  },
+  {
+    "key": "en:high-in-sat-fat-and-sodium-health-canada",
+    "name": "High in Sat fat and Sodium (Health Canada)"
+  },
+  {
+    "key": "en:high-in-sat-fat-and-sugars-health-canada",
+    "name": "High in Sat fat and Sugars (Health Canada)"
+  },
+  {
+    "key": "en:high-in-sat-fat-sugars-and-sodium-health-canada",
+    "name": "High in Sat fat Sugars and Sodium (Health Canada)"
+  },
+  {
+    "key": "en:high-in-sodium-health-canada",
+    "name": "High in Sodium (Health Canada)"
+  },
+  {
+    "key": "en:high-in-sugars-health-canada",
+    "name": "High in Sugars (Health Canada)"
+  },
+  {
+    "key": "en:high-in-sugars-and-sodium-health-canada",
+    "name": "High in Sugars and Sodium (Health Canada)"
   },
   {
     "key": "en:carbon-footprint",
@@ -144,8 +192,40 @@
     "name": "IGP Plátano de Canarias"
   },
   {
+    "key": "en:islamic-food-and-nutrition-council-of-canada",
+    "name": "Islamic Food and Nutrition Council of Canada"
+  },
+  {
+    "key": "en:made-in-canada",
+    "name": "Made in Canada"
+  },
+  {
     "key": "en:pure-cocoa-butter",
     "name": "Manteca de cacao pura"
+  },
+  {
+    "key": "en:nutriscore-grade-a-new-calculation",
+    "name": "Nutriscore A - Nuevo cálculo"
+  },
+  {
+    "key": "en:nutriscore-grade-b-new-calculation",
+    "name": "Nutriscore B - Nuevo cálculo"
+  },
+  {
+    "key": "en:nutriscore-grade-c-new-calculation",
+    "name": "Nutriscore C - Nuevo cálculo"
+  },
+  {
+    "key": "en:nutriscore-grade-d-new-calculation",
+    "name": "Nutriscore D - Nuevo cálculo"
+  },
+  {
+    "key": "en:nutriscore-grade-e-new-calculation",
+    "name": "Nutriscore E - Nuevo cálculo"
+  },
+  {
+    "key": "en:product-of-canada",
+    "name": "Product of Canada"
   },
   {
     "key": "en:carbon-compensated-product",
@@ -182,9 +262,5 @@
   {
     "key": "en:vt-castilla",
     "name": "VT Castilla"
-  },
-  {
-    "key": "en:with-caffeine",
-    "name": "With caffeine"
   }
 ]

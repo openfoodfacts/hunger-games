@@ -1,9 +1,5 @@
 [
   {
-    "key": "en:do-not-freeze",
-    "name": "Do not freeze"
-  },
-  {
     "key": "en:do-not-freeze-again",
     "name": "Do not freeze again"
   },
@@ -12,16 +8,12 @@
     "name": "EU/non-EU Agriculture"
   },
   {
-    "key": "en:low-or-no-fat",
-    "name": "Low or no fat"
+    "key": "en:fairtrade-norway",
+    "name": "Fairtrade Norway"
   },
   {
-    "key": "en:low-or-no-salt",
-    "name": "Low or no salt"
-  },
-  {
-    "key": "en:low-or-no-sugar",
-    "name": "Low or no sugar"
+    "key": "en:low-or-no-sodium",
+    "name": "Low or no Sodium"
   },
   {
     "key": "en:no-added-fat",
@@ -34,6 +26,10 @@
   {
     "key": "en:no-added-salt",
     "name": "No added salt"
+  },
+  {
+    "key": "en:no-added-sodium",
+    "name": "No added sodium"
   },
   {
     "key": "en:no-added-thickener",
@@ -50,14 +46,6 @@
   {
     "key": "en:no-artificial-additives",
     "name": "No artificial additives"
-  },
-  {
-    "key": "en:no-artificial-colours-and-preservatives",
-    "name": "No artificial colours and preservatives"
-  },
-  {
-    "key": "en:no-artificial-flavors",
-    "name": "No artificial flavors"
   },
   {
     "key": "en:no-artificial-flavour-enhancer",
@@ -84,10 +72,6 @@
     "name": "No Bisphenol-A"
   },
   {
-    "key": "en:no-caffeine",
-    "name": "No caffeine"
-  },
-  {
     "key": "en:no-cholesterol",
     "name": "No cholesterol"
   },
@@ -112,24 +96,8 @@
     "name": "No garlic or onion"
   },
   {
-    "key": "en:no-gelatin",
-    "name": "No gelatin"
-  },
-  {
-    "key": "en:no-gmos",
-    "name": "No GMOs"
-  },
-  {
-    "key": "en:no-hydrogenated-fats",
-    "name": "No hydrogenated fats"
-  },
-  {
     "key": "en:no-lecithine",
     "name": "No lecithine"
-  },
-  {
-    "key": "en:no-milk",
-    "name": "No milk"
   },
   {
     "key": "en:no-msg",
@@ -144,16 +112,12 @@
     "name": "No onion"
   },
   {
-    "key": "en:no-palm-oil",
-    "name": "No palm oil"
-  },
-  {
     "key": "en:no-peanuts",
     "name": "No peanuts"
   },
   {
-    "key": "en:no-salt",
-    "name": "No salt"
+    "key": "en:no-sodium",
+    "name": "No sodium"
   },
   {
     "key": "en:no-soja-lecithine",
@@ -162,10 +126,6 @@
   {
     "key": "en:no-thickening-agent",
     "name": "No thickening agent"
-  },
-  {
-    "key": "en:no-trans-fat",
-    "name": "No Trans Fat"
   },
   {
     "key": "en:no-wheat",
@@ -180,10 +140,6 @@
     "name": "Non GMO project"
   },
   {
-    "key": "en:non-eu-agriculture",
-    "name": "Non-EU Agriculture"
-  },
-  {
     "key": "en:non-fair-trade",
     "name": "Non-fair trade"
   },
@@ -192,24 +148,12 @@
     "name": "Non-organic"
   },
   {
-    "key": "en:non-vegan",
-    "name": "Non-vegan"
-  },
-  {
     "key": "en:non-vegetarian",
     "name": "Non-vegetarian"
   },
   {
     "key": "en:not-advised-for-children-and-pregnant-women",
     "name": "Not advised for children and pregnant women"
-  },
-  {
-    "key": "en:not-advised-for-pregnant-women",
-    "name": "Not advised for pregnant women"
-  },
-  {
-    "key": "en:not-advised-for-specific-people",
-    "name": "Not advised for specific people"
   },
   {
     "key": "en:not-hardened",
@@ -222,6 +166,26 @@
   {
     "key": "en:not-suited-for-children-under-1-years",
     "name": "Not suited for children under 1 years"
+  },
+  {
+    "key": "en:nutriscore-grade-a-new-calculation",
+    "name": "Nutriscore oznaka A - Novi izračun"
+  },
+  {
+    "key": "en:nutriscore-grade-b-new-calculation",
+    "name": "Nutriscore oznaka B - Novi izračun"
+  },
+  {
+    "key": "en:nutriscore-grade-c-new-calculation",
+    "name": "Nutriscore oznaka C - Novi izračun"
+  },
+  {
+    "key": "en:nutriscore-grade-d-new-calculation",
+    "name": "Nutriscore oznaka D - Novi izračun"
+  },
+  {
+    "key": "en:nutriscore-grade-e-new-calculation",
+    "name": "Nutriscore oznaka E - Novi izračun"
   },
   {
     "key": "en:raised-in-norway",

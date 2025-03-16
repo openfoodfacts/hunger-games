@@ -4,6 +4,10 @@
     "name": "Assortiment de croissants et pains au chocolat"
   },
   {
+    "key": "en:bakery-product-variety-packs",
+    "name": "Assortiments de pains et produits de boulangerie"
+  },
+  {
     "key": "en:french-baguette-with-yeast",
     "name": "Baguette de pain au levain"
   },
@@ -16,12 +20,16 @@
     "name": "Baguettes de pain sans sel"
   },
   {
-    "key": "en:french-bread-ball-with-yeast",
-    "name": "Boule de pain au levain"
+    "key": "en:banh-bao",
+    "name": "Banh Bao (Pain brioché farci)"
   },
   {
-    "key": "en:buns",
-    "name": "Buns (petits pains)"
+    "key": "en:gingerbread-blocks",
+    "name": "Blocs de pain d'épices"
+  },
+  {
+    "key": "en:french-bread-ball-with-yeast",
+    "name": "Boule de pain au levain"
   },
   {
     "key": "fr:cocos-de-paimpol",
@@ -228,12 +236,28 @@
     "name": "Pains Burger"
   },
   {
+    "key": "en:frozen-pre-baked-hamburger-buns",
+    "name": "Pains Burger précuits surgelés"
+  },
+  {
+    "key": "en:frozen-hamburger-buns",
+    "name": "Pains Burger surgelés"
+  },
+  {
     "key": "en:wholemeal-breads",
     "name": "Pains complets"
   },
   {
     "key": "en:crispbreads",
     "name": "Pains croustillants"
+  },
+  {
+    "key": "en:crispbreads-wholemeal",
+    "name": "Pains croustillants complets"
+  },
+  {
+    "key": "en:crispbreads-non-wholemeal",
+    "name": "Pains croustillants non-complets"
   },
   {
     "key": "en:gingerbreads",
@@ -250,6 +274,10 @@
   {
     "key": "en:pains-de-campagne",
     "name": "Pains de campagne"
+  },
+  {
+    "key": "en:breads-mith-malted-grains",
+    "name": "Pains de céréales germées"
   },
   {
     "key": "en:sliced-breads",
@@ -320,12 +348,24 @@
     "name": "Pains Pita"
   },
   {
+    "key": "en:frozen-pre-baked-pitas",
+    "name": "Pains Pita surgelé"
+  },
+  {
     "key": "en:flatbreads",
     "name": "Pains plats"
   },
   {
+    "key": "en:bruschetta-breads",
+    "name": "Pains pour bruschetta"
+  },
+  {
     "key": "en:pre-baked-breads",
     "name": "Pains précuits"
+  },
+  {
+    "key": "en:frozen-pre-baked-breads",
+    "name": "Pains précuits surgelés"
   },
   {
     "key": "en:gluten-free-breads",
@@ -344,8 +384,16 @@
     "name": "Pains surprise"
   },
   {
+    "key": "en:bread-rolls",
+    "name": "Petits pains"
+  },
+  {
     "key": "en:toasted-bread-rolls",
     "name": "Petits pains grillés"
+  },
+  {
+    "key": "en:gluten-free-bread-mixes",
+    "name": "Préparations pour pain sans gluten"
   },
   {
     "key": "en:sandwich-made-with-loaf-bread-and-various-fillings",

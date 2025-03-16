@@ -1,23 +1,135 @@
 [
   {
+    "key": "en:flavoured-olive-oils",
+    "name": "Aromatizirana maslinova ulja"
+  },
+  {
+    "key": "en:austrian-oils-and-fats",
+    "name": "Austrijska ulja i masti"
+  },
+  {
+    "key": "en:baguette-sandwiches-with-salami-and-butter",
+    "name": "Baguette sendviči sa salamom i maslacem"
+  },
+  {
+    "key": "en:baguette-sandwiches-with-ham-and-butter",
+    "name": "Baguette sendviči sa šunkom i maslacem"
+  },
+  {
+    "key": "en:bangers-and-mash",
+    "name": "Bangers and Mash"
+  },
+  {
+    "key": "en:belgian-butters",
+    "name": "Belgijski maslaci"
+  },
+  {
+    "key": "en:vegetable-fats",
+    "name": "Biljne masti"
+  },
+  {
+    "key": "en:lightly-salted-butter-with-80-fat",
+    "name": "Blago posoljeni maslac s 80% masti"
+  },
+  {
+    "key": "en:lightly-salted-light-butter-with-60-62-fat",
+    "name": "Blago posoljeni svijetli maslac sa 60-62% masti"
+  },
+  {
+    "key": "en:mildly-soured-butters",
+    "name": "Blago ukiseljene maslace"
+  },
+  {
     "key": "hr:bračko-maslinovo-ulje",
     "name": "Bračko maslinovo ulje"
   },
   {
-    "key": "en:chicken-tikka-masala",
-    "name": "Chicken tikka masala"
+    "key": "en:british-oils-and-fats",
+    "name": "Britanska ulja i masti"
+  },
+  {
+    "key": "en:whole-black-olives",
+    "name": "Cijele crne masline"
+  },
+  {
+    "key": "en:whole-marinated-green-olives",
+    "name": "Cijele marinirane zelene masline"
+  },
+  {
+    "key": "en:whole-olives",
+    "name": "Cijele masline"
+  },
+  {
+    "key": "en:whole-green-olives",
+    "name": "Cijele zelene masline"
+  },
+  {
+    "key": "en:potato-crisps-in-olive-oil",
+    "name": "Čips od krumpira u maslinovom ulju"
+  },
+  {
+    "key": "en:pure-peanut-butters",
+    "name": "Čisti maslac od kikirikija"
+  },
+  {
+    "key": "en:black-olives",
+    "name": "Crne masline"
+  },
+  {
+    "key": "en:black-pitted-olives",
+    "name": "Crne masline bez koštice"
+  },
+  {
+    "key": "en:black-olives-in-brine",
+    "name": "Crne masline u salamuri"
+  },
+  {
+    "key": "en:black-olives-in-oil",
+    "name": "Crne masline u ulju"
+  },
+  {
+    "key": "en:black-chopped-olives",
+    "name": "Crne nasjeckane masline"
+  },
+  {
+    "key": "en:smoked-lardons",
+    "name": "Dimljene masti"
+  },
+  {
+    "key": "en:virgin-olive-oils",
+    "name": "Djevičanska maslinova ulja"
   },
   {
     "key": "en:extra-virgin-olive-oils",
-    "name": "Ekstra djevičansko maslinovo ulje"
+    "name": "Ekstra djevičanska maslinova ulja"
   },
   {
     "key": "hr:ekstra-djevičansko-maslinovo-ulje-cres",
     "name": "Ekstra djevičansko maslinovo ulje Cres"
   },
   {
-    "key": "en:frozen-mashed-potatoes",
-    "name": "Frozen mashed potatoes"
+    "key": "en:fat-free-fermented-yogurt-with-cereals",
+    "name": "Fermentirani jogurt bez masti sa žitaricama"
+  },
+  {
+    "key": "en:sardine-fillets-in-olive-oil",
+    "name": "Fileti sardina u maslinovom ulju"
+  },
+  {
+    "key": "en:mackerel-fillets-with-olives-and-lemon",
+    "name": "Fileti skuše s maslinama i limunom"
+  },
+  {
+    "key": "en:french-butters",
+    "name": "Francuski maslaci"
+  },
+  {
+    "key": "en:frozen-mashed-cauliflower",
+    "name": "Frozen mashed cauliflower"
+  },
+  {
+    "key": "en:frozen-mashed-vegetables",
+    "name": "Frozen mashed vegetables"
   },
   {
     "key": "en:frozen-pre-fried-mashed-potato-balls",
@@ -28,56 +140,136 @@
     "name": "Garam masala"
   },
   {
-    "key": "en:instant-mashed-potatoes",
-    "name": "Instant mashed potatoes"
+    "key": "en:greek-oils-and-fats",
+    "name": "Grčka ulja i masti"
+  },
+  {
+    "key": "en:goose-fats",
+    "name": "Guščje masti"
+  },
+  {
+    "key": "en:crunchy-peanut-butters",
+    "name": "Hrskavi maslaci od kikirikija"
+  },
+  {
+    "key": "en:croatian-oils-and-fats",
+    "name": "Hrvatska ulja i masti"
+  },
+  {
+    "key": "en:cocoa-butter",
+    "name": "Kakao maslac"
+  },
+  {
+    "key": "en:salted-butter-caramels",
+    "name": "Karamele od slanog maslaca"
+  },
+  {
+    "key": "en:pickles-relishes-chutneys-olives-variety-packs",
+    "name": "Kiseli krastavci - slastice - chutney - pakiranja maslina"
+  },
+  {
+    "key": "en:coconut-butters",
+    "name": "Kokosovi maslaci"
+  },
+  {
+    "key": "en:canned-albacore-in-olive-oil",
+    "name": "Konzervirani albacore u maslinovom ulju"
+  },
+  {
+    "key": "en:canned-butter-beans",
+    "name": "Konzervirani maslac grah"
   },
   {
     "key": "hr:korčulansko-maslinovo-ulje",
     "name": "Korčulansko maslinovo ulje"
   },
   {
+    "key": "en:goat-butters",
+    "name": "Kozji maslaci"
+  },
+  {
     "key": "hr:krčko-maslinovo-ulje",
     "name": "Krčko maslinovo ulje"
+  },
+  {
+    "key": "en:butter-croissants",
+    "name": "Kroasani s maslacem"
+  },
+  {
+    "key": "en:cooked-minced-beef-steak-with-10-fat",
+    "name": "Kuhani mljeveni goveđi odrezak sa 10% masti"
+  },
+  {
+    "key": "en:cooked-minced-beef-steak-with-15-fat",
+    "name": "Kuhani mljeveni goveđi odrezak sa 15% masti"
+  },
+  {
+    "key": "en:cooked-minced-beef-steak-with-20-fat",
+    "name": "Kuhani mljeveni goveđi odrezak sa 20% masti"
+  },
+  {
+    "key": "en:cooked-minced-beef-steak-with-5-fat",
+    "name": "Kuhani mljeveni goveđi odrezak sa 5% masti"
+  },
+  {
+    "key": "en:cooked-snails-in-parsley-butter",
+    "name": "Kuhani puževi na peršinovom maslacu"
+  },
+  {
+    "key": "en:quark-with-10-fat-in-dry-mass",
+    "name": "Kvark sa 10% masti u suhoj masi"
+  },
+  {
+    "key": "en:quark-with-20-fat-in-dry-mass",
+    "name": "Kvark sa 20% masti u suhoj masi"
+  },
+  {
+    "key": "en:quark-with-50-fat-in-dry-mass",
+    "name": "Kvark sa 50% masti u suhoj masi"
+  },
+  {
+    "key": "en:molded-butters",
+    "name": "Lijevani maslaci"
+  },
+  {
+    "key": "en:olive-leaves",
+    "name": "Listovi masline"
   },
   {
     "key": "en:dandelion",
     "name": "Ljekoviti maslačak"
   },
   {
+    "key": "en:70-fat-mayonnaise",
+    "name": "Majoneza sa 70% masti"
+  },
+  {
+    "key": "en:mantecados-and-polvorones-with-vegetal-fat",
+    "name": "Mantecados i polvorones s biljnom masnoćom"
+  },
+  {
+    "key": "en:mantecados-y-polvorones-with-olive-oil",
+    "name": "Mantecados y polvorones s maslinovim uljem"
+  },
+  {
+    "key": "en:marinated-olives",
+    "name": "Marinirane masline"
+  },
+  {
+    "key": "en:pitted-marinated-green-olives",
+    "name": "Marinirane zelene masline bez koštica"
+  },
+  {
+    "key": "en:olive-oils-from-maroc",
+    "name": "Marokanska maslinova ulja"
+  },
+  {
+    "key": "en:massaman-curry-pastes",
+    "name": "Masaman curry paste"
+  },
+  {
     "key": "en:mascarpone",
     "name": "Mascarpone"
-  },
-  {
-    "key": "en:mashed-broccoli",
-    "name": "Mashed broccoli"
-  },
-  {
-    "key": "en:mashed-carrots",
-    "name": "Mashed carrots"
-  },
-  {
-    "key": "en:mashed-cauliflower",
-    "name": "Mashed cauliflower"
-  },
-  {
-    "key": "en:mashed-celeriac",
-    "name": "Mashed celeriac"
-  },
-  {
-    "key": "en:mashed-potatoes",
-    "name": "Mashed potatoes"
-  },
-  {
-    "key": "en:mashed-pumpkins",
-    "name": "Mashed pumpkins"
-  },
-  {
-    "key": "en:mashed-spinachs",
-    "name": "Mashed spinachs"
-  },
-  {
-    "key": "en:mashed-split-peas",
-    "name": "Mashed split peas"
   },
   {
     "key": "en:mashed-vegetables",
@@ -88,24 +280,752 @@
     "name": "Mashed vegetables mix"
   },
   {
-    "key": "en:mashed-zucchini",
-    "name": "Mashed zucchini"
+    "key": "en:mashua",
+    "name": "Mashua"
+  },
+  {
+    "key": "en:butter-fat",
+    "name": "Maslac od maslaca"
+  },
+  {
+    "key": "en:butter-oil-or-concentrated-butter",
+    "name": "Maslac ulje ili koncentrirani maslac"
+  },
+  {
+    "key": "en:macadamia-nut-butters",
+    "name": "Maslaca od makadamija oraha"
+  },
+  {
+    "key": "en:almond-butters",
+    "name": "Maslaci od badema"
+  },
+  {
+    "key": "en:cashew-butters",
+    "name": "Maslaci od indijskog oraha"
+  },
+  {
+    "key": "en:peanut-butters",
+    "name": "Maslaci od kikirikija"
+  },
+  {
+    "key": "en:sour-cream-butters",
+    "name": "Maslaci od kiselog vrhnja"
+  },
+  {
+    "key": "en:hazelnut-butters",
+    "name": "Maslaci od lješnjaka"
+  },
+  {
+    "key": "en:legume-butters",
+    "name": "Maslaci od mahunarki"
+  },
+  {
+    "key": "en:walnut-butters",
+    "name": "Maslaci od oraha"
+  },
+  {
+    "key": "en:nut-butters",
+    "name": "Maslaci od orašastih plodova"
+  },
+  {
+    "key": "en:pistachio-butters",
+    "name": "Maslaci od pistacija"
+  },
+  {
+    "key": "en:pumpkin-seed-butters",
+    "name": "Maslaci od sjemenki bundeve"
+  },
+  {
+    "key": "en:sunflower-seed-butters",
+    "name": "Maslaci od sjemenki suncokreta"
+  },
+  {
+    "key": "en:sweet-cream-butters",
+    "name": "Maslaci od slatkog vrhnja"
+  },
+  {
+    "key": "en:cereal-butters",
+    "name": "Maslaci od žitarica"
   },
   {
     "key": "en:butters",
-    "name": "Maslac"
+    "name": "Maslacima"
   },
   {
-    "key": "en:massaman-curry-pastes",
-    "name": "Massaman curry pastes"
+    "key": "en:olives",
+    "name": "Masline"
   },
   {
-    "key": "en:quark-with-10-fat-in-dry-mass",
-    "name": "Quark with 10% fat in dry mass"
+    "key": "en:pitted-olives",
+    "name": "Masline bez koštice"
   },
   {
-    "key": "en:quark-with-20-fat-in-dry-mass",
-    "name": "Quark with 20% fat in dry mass"
+    "key": "en:olive-oils",
+    "name": "Maslinova ulja"
+  },
+  {
+    "key": "en:olive-oils-from-agios-mattheos-kerkyras",
+    "name": "Maslinova ulja iz Agios Mattheos Kerkyras"
+  },
+  {
+    "key": "en:olive-oils-from-aix-en-provence",
+    "name": "Maslinova ulja iz aix-en-provencea"
+  },
+  {
+    "key": "en:olive-oils-from-alto-crotonese",
+    "name": "Maslinova ulja iz alto krotoneza"
+  },
+  {
+    "key": "en:olive-oils-from-algeria",
+    "name": "Maslinova ulja iz alžira"
+  },
+  {
+    "key": "en:olive-oils-from-antequera",
+    "name": "Maslinova ulja iz antequere"
+  },
+  {
+    "key": "en:olive-oils-from-apokoronas-chanion-kritis",
+    "name": "Maslinova ulja iz apokoronas chanion kritis"
+  },
+  {
+    "key": "en:olive-oils-from-argentina",
+    "name": "Maslinova ulja iz argentine"
+  },
+  {
+    "key": "en:olive-oils-from-arxanes-irakliou-kritis",
+    "name": "Maslinova ulja iz arxanes irakliou kritis"
+  },
+  {
+    "key": "en:olive-oils-from-baena",
+    "name": "Maslinova ulja iz baene"
+  },
+  {
+    "key": "en:olive-oils-from-baix-ebre-montsia",
+    "name": "Maslinova ulja iz baix ebre-montsià"
+  },
+  {
+    "key": "en:olive-oils-from-bajo-aragon",
+    "name": "Maslinova ulja iz bajo aragóna"
+  },
+  {
+    "key": "en:olive-oils-from-beira-alta",
+    "name": "Maslinova ulja iz beira alta"
+  },
+  {
+    "key": "en:olive-oils-from-beira-baixa",
+    "name": "Maslinova ulja iz beira baixa"
+  },
+  {
+    "key": "en:olive-oils-from-bruzio",
+    "name": "Maslinova ulja iz bruzija"
+  },
+  {
+    "key": "en:olive-oils-from-campo-de-calatrava",
+    "name": "Maslinova ulja iz Campo de Calatrava"
+  },
+  {
+    "key": "en:olive-oils-from-campo-de-montiel",
+    "name": "Maslinova ulja iz Campo de Montiela"
+  },
+  {
+    "key": "en:olive-oils-from-canino",
+    "name": "Maslinova ulja iz canino"
+  },
+  {
+    "key": "en:olive-oils-from-cartoceto",
+    "name": "Maslinova ulja iz cartoceta"
+  },
+  {
+    "key": "en:olive-oils-from-chianti-classico",
+    "name": "Maslinova ulja iz chianti classico"
+  },
+  {
+    "key": "en:olive-oils-from-collina-di-brindisi",
+    "name": "Maslinova ulja iz Collina di Brindisi"
+  },
+  {
+    "key": "en:olive-oils-from-colline-di-romagna",
+    "name": "Maslinova ulja iz Colline di romagna"
+  },
+  {
+    "key": "en:olive-oils-from-colline-salernitane",
+    "name": "Maslinova ulja iz colline salernitane"
+  },
+  {
+    "key": "en:olive-oils-from-comunitat-valenciana",
+    "name": "Maslinova ulja iz Comunitat Valenciana"
+  },
+  {
+    "key": "en:olive-oils-from-dauno",
+    "name": "Maslinova ulja iz dauno"
+  },
+  {
+    "key": "en:olive-oils-from-elaiolado-finiki-lakonias",
+    "name": "Maslinova ulja iz elaiolado finiki lakonias"
+  },
+  {
+    "key": "en:olive-oils-from-emporda",
+    "name": "Maslinova ulja iz empordà"
+  },
+  {
+    "key": "en:olive-oils-from-estepa",
+    "name": "Maslinova ulja iz estepe"
+  },
+  {
+    "key": "en:olive-oils-from-exeretiko-partheno-eleolado-trizinia",
+    "name": "Maslinova ulja iz exeretiko partheno eleolado \"trizinia\""
+  },
+  {
+    "key": "en:olive-oils-from-exeretiko-partheno-eleolado-selino-kritis",
+    "name": "Maslinova ulja iz exeretiko partheno eleolado selino kritis"
+  },
+  {
+    "key": "en:olive-oils-from-exeretiko-partheno-eleolado-thrapsano",
+    "name": "Maslinova ulja iz exeretiko partheno eleolado thrapsano"
+  },
+  {
+    "key": "en:olive-oils-from-france",
+    "name": "Maslinova ulja iz Francuske"
+  },
+  {
+    "key": "en:olive-oils-from-gata-hurdes",
+    "name": "Maslinova ulja iz gata-hurdesa"
+  },
+  {
+    "key": "en:olive-oils-from-greece",
+    "name": "Maslinova ulja iz grčke"
+  },
+  {
+    "key": "en:olive-oils-from-irpinia-colline-dell-ufita",
+    "name": "Maslinova ulja iz irpinia - colline dell'ufita"
+  },
+  {
+    "key": "en:olive-oils-from-italy",
+    "name": "Maslinova ulja iz italije"
+  },
+  {
+    "key": "en:olive-oils-from-jaen",
+    "name": "Maslinova ulja iz jaéna"
+  },
+  {
+    "key": "en:olive-oils-from-south-africa",
+    "name": "Maslinova ulja iz Južne Afrike"
+  },
+  {
+    "key": "en:olive-oils-from-kalamata",
+    "name": "Maslinova ulja iz kalamata"
+  },
+  {
+    "key": "en:olive-oils-from-colline-teatine",
+    "name": "Maslinova ulja iz koline teatina"
+  },
+  {
+    "key": "en:olive-oils-from-kolymvari-chanion-kritis",
+    "name": "Maslinova ulja iz kolymvari chanion kritis"
+  },
+  {
+    "key": "en:olive-oils-from-kranidi-argolidas",
+    "name": "Maslinova ulja iz kranidi argolidas"
+  },
+  {
+    "key": "en:olive-oils-from-la-alcarria",
+    "name": "Maslinova ulja iz la alcarrije"
+  },
+  {
+    "key": "en:olive-oils-from-laghi-lombardi",
+    "name": "Maslinova ulja iz laghi lombardi"
+  },
+  {
+    "key": "en:olive-oils-from-lakonia",
+    "name": "Maslinova ulja iz lakonije"
+  },
+  {
+    "key": "en:olive-oils-from-lametia",
+    "name": "Maslinova ulja iz lametia"
+  },
+  {
+    "key": "en:olive-oils-from-les-garrigues",
+    "name": "Maslinova ulja iz les garrigues"
+  },
+  {
+    "key": "en:olive-oils-from-lesvos-mytilini",
+    "name": "Maslinova ulja iz Lesvos Mytilinija"
+  },
+  {
+    "key": "en:olive-oils-from-lucca",
+    "name": "Maslinova ulja iz Lucca"
+  },
+  {
+    "key": "en:olive-oils-from-lucena",
+    "name": "Maslinova ulja iz lucene"
+  },
+  {
+    "key": "en:olive-oils-from-lygourio-asklipiou",
+    "name": "Maslinova ulja iz lygourio asklipiou"
+  },
+  {
+    "key": "en:olive-oils-from-marche",
+    "name": "Maslinova ulja iz Marchea"
+  },
+  {
+    "key": "en:olive-oils-from-monterrubio",
+    "name": "Maslinova ulja iz monterrubia"
+  },
+  {
+    "key": "en:olive-oils-from-montes-de-granada",
+    "name": "Maslinova ulja iz Montes de Granada"
+  },
+  {
+    "key": "en:olive-oils-from-montes-de-toledo",
+    "name": "Maslinova ulja iz Montes de Toleda"
+  },
+  {
+    "key": "en:olive-oils-from-monti-iblei",
+    "name": "Maslinova ulja iz monti iblei"
+  },
+  {
+    "key": "en:olive-oils-from-montoro-adamuz",
+    "name": "Maslinova ulja iz montoro-adamuza"
+  },
+  {
+    "key": "en:olive-oils-from-moura",
+    "name": "Maslinova ulja iz moura"
+  },
+  {
+    "key": "en:olive-oils-from-navarra",
+    "name": "Maslinova ulja iz Navarre"
+  },
+  {
+    "key": "en:olive-oils-from-nice",
+    "name": "Maslinova ulja iz nice"
+  },
+  {
+    "key": "en:olive-oils-from-norte-alentejano",
+    "name": "Maslinova ulja iz norte alentejano"
+  },
+  {
+    "key": "en:olive-oils-from-olympia",
+    "name": "Maslinova ulja iz Olimpije"
+  },
+  {
+    "key": "en:olive-oils-from-olio-di-calabria",
+    "name": "Maslinova ulja iz olio di calabria"
+  },
+  {
+    "key": "en:olive-oils-from-olio-di-puglia",
+    "name": "Maslinova ulja iz olio di puglia"
+  },
+  {
+    "key": "en:olive-oils-from-olio-di-roma",
+    "name": "Maslinova ulja iz olio di roma"
+  },
+  {
+    "key": "en:olive-oils-from-olio-lucano",
+    "name": "Maslinova ulja iz olio lucano"
+  },
+  {
+    "key": "en:olive-oils-from-peza-irakliou-kritis",
+    "name": "Maslinova ulja iz peza irakliou kritis"
+  },
+  {
+    "key": "en:olive-oils-from-poniente-de-granada",
+    "name": "Maslinova ulja iz Poniente de Granada"
+  },
+  {
+    "key": "en:olive-oils-from-colline-pontine",
+    "name": "Maslinova ulja iz pontinskog kolina"
+  },
+  {
+    "key": "en:olive-oils-from-portugal",
+    "name": "Maslinova ulja iz portugala"
+  },
+  {
+    "key": "en:olive-oils-from-pretuziano-delle-colline-teramane",
+    "name": "Maslinova ulja iz pretuziano delle colline teramane"
+  },
+  {
+    "key": "en:olive-oils-from-preveza",
+    "name": "Maslinova ulja iz preveze"
+  },
+  {
+    "key": "en:olive-oils-from-priego-de-cordoba",
+    "name": "Maslinova ulja iz Priego de Córdoba"
+  },
+  {
+    "key": "en:olive-oils-from-ribatejo",
+    "name": "Maslinova ulja iz ribateja"
+  },
+  {
+    "key": "en:olive-oils-from-rioja",
+    "name": "Maslinova ulja iz Rioje"
+  },
+  {
+    "key": "en:olive-oils-from-samos",
+    "name": "Maslinova ulja iz samosa"
+  },
+  {
+    "key": "en:olive-oils-from-sierra-de-cadiz",
+    "name": "Maslinova ulja iz Sierra de Cádiz"
+  },
+  {
+    "key": "en:olive-oils-from-sierra-de-cazorla",
+    "name": "Maslinova ulja iz Sierra de Cazorla"
+  },
+  {
+    "key": "en:olive-oils-from-sierra-de-segura",
+    "name": "Maslinova ulja iz sierra de segura"
+  },
+  {
+    "key": "en:olive-oils-from-sierra-del-moncayo",
+    "name": "Maslinova ulja iz sierra del moncayo"
+  },
+  {
+    "key": "en:olive-oils-from-sierra-magina",
+    "name": "Maslinova ulja iz sierra mágina"
+  },
+  {
+    "key": "en:olive-oils-from-sitia-lasithiou-kritis",
+    "name": "Maslinova ulja iz Sitia lasithiou kritis"
+  },
+  {
+    "key": "en:olive-oils-from-siurana",
+    "name": "Maslinova ulja iz siurane"
+  },
+  {
+    "key": "en:olive-oils-from-spain",
+    "name": "Maslinova ulja iz Španjolske"
+  },
+  {
+    "key": "en:olive-oils-from-tergeste",
+    "name": "Maslinova ulja iz tergeste"
+  },
+  {
+    "key": "en:olive-oils-from-terra-di-bari",
+    "name": "Maslinova ulja iz terra di bari"
+  },
+  {
+    "key": "en:olive-oils-from-terre-aurunche",
+    "name": "Maslinova ulja iz terre aurunche"
+  },
+  {
+    "key": "en:olive-oils-from-terre-di-siena",
+    "name": "Maslinova ulja iz terre di Siene"
+  },
+  {
+    "key": "en:olive-oils-from-terre-tarentine",
+    "name": "Maslinova ulja iz terre tarentine"
+  },
+  {
+    "key": "en:olive-oils-from-toscano",
+    "name": "Maslinova ulja iz Toskane"
+  },
+  {
+    "key": "en:olive-oils-from-tras-os-montes",
+    "name": "Maslinova ulja iz trás-os-montes"
+  },
+  {
+    "key": "en:olive-oils-from-tuscia",
+    "name": "Maslinova ulja iz tuscie"
+  },
+  {
+    "key": "en:olive-oils-from-umbria",
+    "name": "Maslinova ulja iz Umbrije"
+  },
+  {
+    "key": "en:olive-oils-from-alentejo-interior",
+    "name": "Maslinova ulja iz unutrašnjosti alenteja"
+  },
+  {
+    "key": "en:olive-oils-from-beira-interior",
+    "name": "Maslinova ulja iz unutrašnjosti beira"
+  },
+  {
+    "key": "en:olive-oils-from-val-di-mazara",
+    "name": "Maslinova ulja iz val di mazara"
+  },
+  {
+    "key": "en:olive-oils-from-valdemone",
+    "name": "Maslinova ulja iz valdemona"
+  },
+  {
+    "key": "en:olive-oils-from-valle-del-belice",
+    "name": "Maslinova ulja iz Valle del Belice"
+  },
+  {
+    "key": "en:olive-oils-from-vallee-des-baux-de-provence",
+    "name": "Maslinova ulja iz vallée des baux-de-provence"
+  },
+  {
+    "key": "en:olive-oils-from-valli-trapanesi",
+    "name": "Maslinova ulja iz valli trapanesi"
+  },
+  {
+    "key": "en:olive-oils-from-veneto",
+    "name": "Maslinova ulja iz Veneta"
+  },
+  {
+    "key": "en:olive-oils-from-veneto-del-grappa",
+    "name": "Maslinova ulja iz veneto del grappa"
+  },
+  {
+    "key": "en:olive-oils-from-veneto-euganei-e-berici",
+    "name": "Maslinova ulja iz Veneto Euganei e Berici"
+  },
+  {
+    "key": "en:olive-oils-from-veneto-valpolicella",
+    "name": "Maslinova ulja iz veneto valpolicella"
+  },
+  {
+    "key": "en:olive-oils-from-viannos-irakliou-kritis",
+    "name": "Maslinova ulja iz viannos irakliou kritis"
+  },
+  {
+    "key": "en:olive-oils-from-haute-provence",
+    "name": "Maslinova ulja iz visoke Provanse"
+  },
+  {
+    "key": "en:olive-oils-from-vorios-mylopotamos-rethymnis-kritis",
+    "name": "Maslinova ulja iz vorios mylopotamos rethymnis kritis"
+  },
+  {
+    "key": "en:olive-oils-from-aprutino-pescarese",
+    "name": "Maslinova ulja od aprutino pescarese"
+  },
+  {
+    "key": "en:olive-oils-from-brisighella",
+    "name": "Maslinova ulja od brisighella"
+  },
+  {
+    "key": "en:olive-oils-from-cilento",
+    "name": "Maslinova ulja od cilenta"
+  },
+  {
+    "key": "en:olive-oils-from-krokees-lakonias",
+    "name": "Maslinova ulja od krokees lakonija"
+  },
+  {
+    "key": "en:olive-oils-from-molise",
+    "name": "Maslinova ulja od molise"
+  },
+  {
+    "key": "en:olive-oils-from-petrina-lakonias",
+    "name": "Maslinova ulja od petrinih lakonija"
+  },
+  {
+    "key": "en:olive-oils-from-riviera-ligure",
+    "name": "Maslinova ulja od riviera ligure"
+  },
+  {
+    "key": "en:olive-oils-from-sabina",
+    "name": "Maslinova ulja od sabine"
+  },
+  {
+    "key": "en:olive-oils-from-sardegna",
+    "name": "Maslinova ulja od sardinje"
+  },
+  {
+    "key": "en:olive-oils-from-seggiano",
+    "name": "Maslinova ulja od seggiano"
+  },
+  {
+    "key": "en:olive-oils-from-vulture",
+    "name": "Maslinova ulja od supa"
+  },
+  {
+    "key": "en:olive-oils-from-ibiza",
+    "name": "Maslinova ulja s ibize"
+  },
+  {
+    "key": "en:olive-oils-from-kefalonia",
+    "name": "Maslinova ulja s Kefalonije"
+  },
+  {
+    "key": "en:olive-oils-from-corsica",
+    "name": "Maslinova ulja s Korzike"
+  },
+  {
+    "key": "en:olive-oils-from-mallorca",
+    "name": "Maslinova ulja s Mallorce"
+  },
+  {
+    "key": "en:olive-oils-from-monte-etna",
+    "name": "Maslinova ulja s monte etne"
+  },
+  {
+    "key": "en:herb-flavoured-olive-oils",
+    "name": "Maslinova ulja s okusom bilja"
+  },
+  {
+    "key": "en:citrus-flavoured-olive-oils",
+    "name": "Maslinova ulja s okusom citrusa"
+  },
+  {
+    "key": "en:truffle-flavoured-olive-oils",
+    "name": "Maslinova ulja s okusom tartufa"
+  },
+  {
+    "key": "en:olive-oils-from-penisola-sorrentina",
+    "name": "Maslinova ulja s penisola sorrentina"
+  },
+  {
+    "key": "en:olive-oils-from-rhodos",
+    "name": "Maslinova ulja s rodosa"
+  },
+  {
+    "key": "en:olive-oils-from-terra-alta",
+    "name": "Maslinova ulja s terra alta"
+  },
+  {
+    "key": "en:olive-oils-from-terra-d-otranto",
+    "name": "Maslinova ulja s terra d'otranta"
+  },
+  {
+    "key": "en:olive-oils-from-sicilia",
+    "name": "Maslinova ulja sa Sicilije"
+  },
+  {
+    "key": "en:olive-oils-from-thassos",
+    "name": "Maslinova ulja sa tasosa"
+  },
+  {
+    "key": "en:olive-oils-from-zakynthos",
+    "name": "Maslinova ulja sa zakintosa"
+  },
+  {
+    "key": "en:olive-oil-from-nimes",
+    "name": "Maslinovo ulje iz Nîmesa"
+  },
+  {
+    "key": "en:olive-oil-from-nyons",
+    "name": "Maslinovo ulje iz nyonsa"
+  },
+  {
+    "key": "en:olive-oils-from-tunisia",
+    "name": "Maslinovo ulje iz tunisa"
+  },
+  {
+    "key": "en:fatty-fishes",
+    "name": "Masne ribe"
+  },
+  {
+    "key": "en:fats",
+    "name": "Masti"
+  },
+  {
+    "key": "en:codliver-fats",
+    "name": "Masti bakalara"
+  },
+  {
+    "key": "en:spreadable-fats",
+    "name": "Masti za mazanje"
+  },
+  {
+    "key": "en:dandelion-honeys",
+    "name": "Medovi od maslačka"
+  },
+  {
+    "key": "en:mixed-nut-butters",
+    "name": "Miješani maslac od orašastih plodova"
+  },
+  {
+    "key": "en:olive-oil-mixes",
+    "name": "Mješavine maslinovog ulja"
+  },
+  {
+    "key": "en:milkfat",
+    "name": "Mliječne masti"
+  },
+  {
+    "key": "en:minced-beef-steak-with-10-fat",
+    "name": "Mljeveni goveđi odrezak sa 10% masti"
+  },
+  {
+    "key": "en:minced-beef-steak-with-15-fat",
+    "name": "Mljeveni goveđi odrezak sa 15% masti"
+  },
+  {
+    "key": "en:minced-beef-steak-with-20-fat",
+    "name": "Mljeveni goveđi odrezak sa 20% masti"
+  },
+  {
+    "key": "en:minced-beef-steak-with-5-fat",
+    "name": "Mljeveni goveđi odrezak sa 5% masti"
+  },
+  {
+    "key": "en:cracked-marinated-green-olives",
+    "name": "Napuknute marinirane zelene masline"
+  },
+  {
+    "key": "en:cracked-olives",
+    "name": "Napuknute masline"
+  },
+  {
+    "key": "en:chopped-olives",
+    "name": "Nasjeckane masline"
+  },
+  {
+    "key": "en:unsalted-butter-with-82-fat",
+    "name": "Neslani maslac sa 82% masti"
+  },
+  {
+    "key": "en:unsalted-butters",
+    "name": "Neslani maslaci"
+  },
+  {
+    "key": "en:sheep-butters",
+    "name": "Ovčji maslaci"
+  },
+  {
+    "key": "en:duck-fat",
+    "name": "Pačja mast"
+  },
+  {
+    "key": "en:pasteurized-butters",
+    "name": "Pasterizirani maslaci"
+  },
+  {
+    "key": "en:chicken-fat",
+    "name": "Pileća mast"
+  },
+  {
+    "key": "en:chicken-tikka-masala",
+    "name": "Pileća tikka masala"
+  },
+  {
+    "key": "en:beef-based-burger-with-15-fat",
+    "name": "Pljeskavica na bazi govedine s 15% masti"
+  },
+  {
+    "key": "en:half-salted-butter",
+    "name": "Poluslani maslac"
+  },
+  {
+    "key": "en:semi-ripe-whole-olives",
+    "name": "Poluzrele cijele masline"
+  },
+  {
+    "key": "en:semi-ripe-olives",
+    "name": "Poluzrele masline"
+  },
+  {
+    "key": "en:salad-dressing-with-reduced-fat",
+    "name": "Preljev za salatu sa smanjenom masnoćom"
+  },
+  {
+    "key": "en:olive-tree-products",
+    "name": "Proizvodi od maslina"
+  },
+  {
+    "key": "en:stuffed-olives",
+    "name": "Punjene masline"
+  },
+  {
+    "key": "en:pure-mashed-potatoes",
+    "name": "Pure mashed potatoes"
+  },
+  {
+    "key": "en:turkey-fat",
+    "name": "Pureća mast"
   },
   {
     "key": "en:quark-with-30-fat-in-dry-mass",
@@ -116,19 +1036,167 @@
     "name": "Quark with 45% fat in dry mass"
   },
   {
-    "key": "en:quark-with-50-fat-in-dry-mass",
-    "name": "Quark with 50% fat in dry mass"
-  },
-  {
     "key": "en:quark-with-65-to-85-fat-in-dry-mass",
     "name": "Quark with 65% to 85% fat in dry mass"
+  },
+  {
+    "key": "en:refined-olive-oils",
+    "name": "Rafinirana maslinova ulja"
+  },
+  {
+    "key": "en:sardines-in-olive-oil",
+    "name": "Sardine u maslinovom ulju"
+  },
+  {
+    "key": "en:sandwiches-with-ham-and-emmental-cheese-and-butter",
+    "name": "Sendviči sa šunkom i ementalcem i maslacem"
+  },
+  {
+    "key": "en:ham-and-butter-sandwiches",
+    "name": "Sendviči sa šunkom i maslacem"
+  },
+  {
+    "key": "en:shea-butter",
+    "name": "Shea maslac"
+  },
+  {
+    "key": "en:salted-butters",
+    "name": "Slani maslaci"
+  },
+  {
+    "key": "en:smetana-with-15-to-19-fat",
+    "name": "Smetana sa 15% do 19% masti"
+  },
+  {
+    "key": "en:smetana-with-15-to-34-fat",
+    "name": "Smetana sa 15% do 34% masti"
+  },
+  {
+    "key": "en:smetana-with-15-fat",
+    "name": "Smetana sa 15% masti"
+  },
+  {
+    "key": "en:frozen-butter-beans",
+    "name": "Smrznuti grah s maslacem"
+  },
+  {
+    "key": "en:soybean-butters",
+    "name": "Sojini maslaci"
   },
   {
     "key": "hr:šoltansko-maslinovo-ulje",
     "name": "Šoltansko maslinovo ulje"
   },
   {
+    "key": "en:sona-masoori-rices",
+    "name": "Sona Masoori rices"
+  },
+  {
+    "key": "en:spanish-butters",
+    "name": "Španjolski maslaci"
+  },
+  {
+    "key": "en:cured-smoked-ham-with-reduced-fat",
+    "name": "Sušena pršuta sa smanjenom masnoćom"
+  },
+  {
+    "key": "en:light-butter",
+    "name": "Svijetli maslac"
+  },
+  {
+    "key": "en:pork-fat",
+    "name": "Svinjska mast"
+  },
+  {
+    "key": "en:lards",
+    "name": "Svinjske masti"
+  },
+  {
+    "key": "en:tabbouleh-with-olive-oil",
+    "name": "Tabule s maslinovim uljem"
+  },
+  {
     "key": "en:tikka-masala-sauce",
-    "name": "Tikka masala sauce"
+    "name": "Tikka masala umak"
+  },
+  {
+    "key": "en:tuna-in-olive-oil",
+    "name": "Tuna u maslinovom ulju"
+  },
+  {
+    "key": "en:olive-pomace-oils",
+    "name": "Ulja komine masline"
+  },
+  {
+    "key": "en:butter-sauces",
+    "name": "Umaci od maslaca"
+  },
+  {
+    "key": "en:olive-sauces",
+    "name": "Umaci od maslina"
+  },
+  {
+    "key": "en:tomato-sauces-with-olives",
+    "name": "Umaci od rajčice s maslinama"
+  },
+  {
+    "key": "en:white-butter-sauces",
+    "name": "Umaci s bijelim maslacem"
+  },
+  {
+    "key": "en:vegetarian-olive-pates",
+    "name": "Vegetarijanske paštete od maslina"
+  },
+  {
+    "key": "en:spiced-flavoured-olive-oils",
+    "name": "Začinjena aromatizirana maslinova ulja"
+  },
+  {
+    "key": "en:mascarpone-substitutes",
+    "name": "Zamjene za mascarpone"
+  },
+  {
+    "key": "en:green-olives",
+    "name": "Zelene masline"
+  },
+  {
+    "key": "en:green-pitted-olives",
+    "name": "Zelene masline bez koštice"
+  },
+  {
+    "key": "en:green-olives-stuffed-of-almond",
+    "name": "Zelene masline punjene bademima"
+  },
+  {
+    "key": "en:green-olives-stuffed-of-anchovies",
+    "name": "Zelene masline punjene inćunima"
+  },
+  {
+    "key": "en:green-olives-stuffed-of-lemon",
+    "name": "Zelene masline punjene limunom"
+  },
+  {
+    "key": "en:green-olives-stuffed-of-peppers",
+    "name": "Zelene masline punjene paprikom"
+  },
+  {
+    "key": "en:green-olives-in-brine",
+    "name": "Zelene masline u salamuri"
+  },
+  {
+    "key": "en:green-cracked-olives",
+    "name": "Zelene napuknute masline"
+  },
+  {
+    "key": "en:green-chopped-olives",
+    "name": "Zelene nasjeckane masline"
+  },
+  {
+    "key": "en:green-stuffed-olives",
+    "name": "Zelene punjene masline"
+  },
+  {
+    "key": "en:animal-fats",
+    "name": "Životinjske masti"
   }
 ]
