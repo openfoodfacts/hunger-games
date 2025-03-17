@@ -1,9 +1,5 @@
 [
   {
-    "key": "en:aromatised-instant-coffees",
-    "name": "Aromatised instant coffees"
-  },
-  {
     "key": "fr:arome-de-fleurs-d-oranger",
     "name": "Arôme de fleurs d'oranger"
   },
@@ -64,6 +60,10 @@
     "name": "Boisson lactée aromatisée au chocolat sucrée au lait partiellement écrémé enrichie en vitamines et minéraux"
   },
   {
+    "key": "en:flavoured-drinks",
+    "name": "Boissons aromatisées"
+  },
+  {
     "key": "en:soy-drinks-flavoured-with-sugar",
     "name": "Boissons au soja aromatisées sucrées"
   },
@@ -72,8 +72,20 @@
     "name": "Boissons au soja aromatisées sucrées enrichies en calcium"
   },
   {
-    "key": "en:flavoured-dairy-drinks-with-sugar",
-    "name": "Boissons lactées aromatisées sucrées au lait fermenté"
+    "key": "en:carbonated-soft-drinks-with-tea-extract",
+    "name": "Boissons gazeuses au thé aromatisées"
+  },
+  {
+    "key": "fr:boudins-blancs-aromatises",
+    "name": "Boudins blancs aromatisés"
+  },
+  {
+    "key": "en:aromatised-instant-coffees",
+    "name": "Cafés instantanés aromatisés"
+  },
+  {
+    "key": "en:flavoured-corn-crisps",
+    "name": "Chips de maïs aromatisées"
   },
   {
     "key": "en:flavoured-potato-crisps",
@@ -116,6 +128,14 @@
     "name": "Dessert au soja aromatisé"
   },
   {
+    "key": "en:flavoured-fermented-dairy-desserts",
+    "name": "Desserts lactés fermentés aromatisés"
+  },
+  {
+    "key": "en:flavoured-fermented-dairy-desserts-with-sugar-and-cream",
+    "name": "Desserts lactés fermentés aromatisés sucrés à la crème"
+  },
+  {
     "key": "en:flavored-waters",
     "name": "Eaux aromatisées"
   },
@@ -152,20 +172,60 @@
     "name": "Fromages blancs aromatisés"
   },
   {
+    "key": "en:flavoured-nuts",
+    "name": "Fruits de coques aromatisées"
+  },
+  {
     "key": "en:herbal-vodka-from-the-north-podlasie-lowland-aromatised-with-an-extract-of-bison-grass",
     "name": "Herbal vodka from the North Podlasie Lowland aromatised with an extract of bison grass"
   },
   {
-    "key": "en:aromatic-herbs",
+    "key": "en:herbs",
     "name": "Herbes aromatiques"
   },
   {
-    "key": "fr:huiles-aromatisees",
+    "key": "en:flavoured-oils",
     "name": "Huiles aromatisées"
+  },
+  {
+    "key": "en:citrus-flavoured-oils",
+    "name": "Huiles aromatisées à la citron"
+  },
+  {
+    "key": "en:truffle-flavoured-oils",
+    "name": "Huiles aromatisées à la truffe"
+  },
+  {
+    "key": "en:herb-flavoured-oils",
+    "name": "Huiles aromatisées aux herbes"
+  },
+  {
+    "key": "en:spiced-flavoured-oils",
+    "name": "Huiles aromatisées épicées"
   },
   {
     "key": "en:flavoured-olive-oils",
     "name": "Huiles d'olive aromatisées"
+  },
+  {
+    "key": "en:citrus-flavoured-olive-oils",
+    "name": "Huiles d'olive aromatisées à la citron"
+  },
+  {
+    "key": "en:truffle-flavoured-olive-oils",
+    "name": "Huiles d'olive aromatisées à la truffe"
+  },
+  {
+    "key": "en:herb-flavoured-olive-oils",
+    "name": "Huiles d'olive aromatisées aux herbes"
+  },
+  {
+    "key": "en:spiced-flavoured-olive-oils",
+    "name": "Huiles d'olive aromatisées épicées"
+  },
+  {
+    "key": "en:flavoured-apple-juices",
+    "name": "Jus de pomme aromatisé"
   },
   {
     "key": "en:flavoured-milk-jelly",
@@ -208,7 +268,7 @@
     "name": "Laits emprésurés aromatisés"
   },
   {
-    "key": "en:mixtures-of-aromatic-plants",
+    "key": "en:mixed-herbs",
     "name": "Mélanges de plantes aromatiques"
   },
   {
@@ -220,8 +280,16 @@
     "name": "Nouilles asiatiques cuites aromatisées"
   },
   {
+    "key": "en:spinach-flavored-dry-pastas",
+    "name": "Pâtes sèches aromatisées aux épinards"
+  },
+  {
     "key": "en:flavored-and-colored-dry-pastas",
     "name": "Pâtes sèches aromatisées et colorées"
+  },
+  {
+    "key": "en:flavoured-pistachios",
+    "name": "Pistaches aromatisées"
   },
   {
     "key": "en:aromatic-plants",
@@ -300,20 +368,20 @@
     "name": "Vins blancs mousseux aromatisés"
   },
   {
-    "key": "en:yogurt-with-fruits-no-0-fat",
-    "name": "Yaourt aromatisé aux fruits non allégé en matières grasses"
+    "key": "en:flavored-vodka",
+    "name": "Vodka aromatisée"
   },
   {
-    "key": "en:yogurt-with-fruits-and-sweetener",
-    "name": "Yaourt aromatisé avec édulcorants"
+    "key": "en:yogurt-with-fruits-no-0-fat",
+    "name": "Yaourt aromatisé aux fruits non allégé en matières grasses"
   },
   {
     "key": "en:yogurt-with-fruits-and-sugar",
     "name": "Yaourt aromatisé sucré"
   },
   {
-    "key": "en:fermented-milk-flavoured-yogurt-with-sugar-and-cream",
-    "name": "Yaourt sucré aromatisé au lait fermenté et à la crème"
+    "key": "en:flavoured-drinkable-yogurts-with-sugar",
+    "name": "Yaourts à boire aromatisés sucrés"
   },
   {
     "key": "en:flavoured-yogurts",

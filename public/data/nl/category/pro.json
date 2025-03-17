@@ -12,12 +12,12 @@
     "name": "Armenian sea products"
   },
   {
-    "key": "en:balls-from-soy-and-or-wheat-proteins",
-    "name": "Balls from soy and or wheat proteins"
+    "key": "en:bakery-products-from-the-netherlands",
+    "name": "Bakery products from the Netherlands"
   },
   {
-    "key": "en:beef-and-its-products",
-    "name": "Beef and its products"
+    "key": "en:balls-from-soy-and-or-wheat-proteins",
+    "name": "Balls from soy and or wheat proteins"
   },
   {
     "key": "en:belgian-meat-products",
@@ -84,12 +84,12 @@
     "name": "Czech sea products"
   },
   {
-    "key": "en:dried-provence-herbs",
-    "name": "Dried Provence herbs"
+    "key": "en:dairy-by-products",
+    "name": "Dairy by-products"
   },
   {
-    "key": "en:dutch-bakery-products",
-    "name": "Dutch bakery products"
+    "key": "en:dried-provence-herbs",
+    "name": "Dried Provence herbs"
   },
   {
     "key": "en:finnish-bakery-products",
@@ -104,12 +104,12 @@
     "name": "Finnish sea products"
   },
   {
-    "key": "en:fishes-and-their-products",
-    "name": "Fishes and their products"
-  },
-  {
     "key": "en:french-meat-products",
     "name": "French meat products"
+  },
+  {
+    "key": "en:frozen-cereals-and-their-products",
+    "name": "Frozen cereals and their products"
   },
   {
     "key": "en:fruits-based-foods",
@@ -136,8 +136,16 @@
     "name": "Gekoelde producten"
   },
   {
+    "key": "en:licensed-products",
+    "name": "Gelicenseerde producten"
+  },
+  {
     "key": "en:breaded-products",
     "name": "Gepaneerde producten"
+  },
+  {
+    "key": "en:pasteurised-products",
+    "name": "Gepasteuriseerde producten"
   },
   {
     "key": "en:german-bakery-products",
@@ -158,6 +166,10 @@
   {
     "key": "en:products-without-gluten",
     "name": "Glutenvrije producten"
+  },
+  {
+    "key": "en:vegetables-based-foods",
+    "name": "Groente en afgeleide producten"
   },
   {
     "key": "en:semi-preserved-foods",
@@ -198,6 +210,10 @@
   {
     "key": "en:italian-sea-products",
     "name": "Italian sea products"
+  },
+  {
+    "key": "en:turkey-and-its-products",
+    "name": "Kalkoen en afgeleide producten"
   },
   {
     "key": "en:chicken-and-its-products",
@@ -260,6 +276,10 @@
     "name": "Olijfoliën uit de vallei van Baux-de-Provence"
   },
   {
+    "key": "en:unpasteurised-products",
+    "name": "Ongepasteuriseerde producten"
+  },
+  {
     "key": "en:open-products-facts",
     "name": "Open Products Facts"
   },
@@ -292,10 +312,6 @@
     "name": "Pompoen en afgeleide producten"
   },
   {
-    "key": "en:pork-and-its-products",
-    "name": "Pork and its products"
-  },
-  {
     "key": "en:portuguese-bakery-products",
     "name": "Portuguese bakery products"
   },
@@ -306,6 +322,10 @@
   {
     "key": "en:portuguese-sea-products",
     "name": "Portuguese sea products"
+  },
+  {
+    "key": "en:processed-cereals",
+    "name": "Processed cereals"
   },
   {
     "key": "en:processed-cheese-around-20-fat-in-cubes",
@@ -326,6 +346,10 @@
   {
     "key": "en:processed-cheese-with-fresh-cream-cheese-and-walnuts",
     "name": "Processed cheese with fresh cream cheese and walnuts"
+  },
+  {
+    "key": "en:products-that-cannot-be-found-in-metropolitan-france",
+    "name": "Producten die niet in Frankrijk gevonden kunnen worden"
   },
   {
     "key": "en:products-with-reduced-salt",
@@ -396,6 +420,10 @@
     "name": "Pronkbonen in blik/pot"
   },
   {
+    "key": "en:runner-beans-from-styria",
+    "name": "Pronkbonen uit Stiermarken"
+  },
+  {
     "key": "en:propolis",
     "name": "Propolis"
   },
@@ -456,12 +484,20 @@
     "name": "Romanian sea products"
   },
   {
+    "key": "en:beef-and-its-products",
+    "name": "Rundvlees en afgeleide producten"
+  },
+  {
     "key": "en:slovenian-meat-products",
     "name": "Slovenian meat products"
   },
   {
     "key": "en:spreads",
     "name": "Smeerbare producten"
+  },
+  {
+    "key": "en:smoked-provolone",
+    "name": "Smoked provolone"
   },
   {
     "key": "en:spanish-bakery-products",
@@ -473,7 +509,7 @@
   },
   {
     "key": "en:specific-products",
-    "name": "Specific products"
+    "name": "Specifieke producten"
   },
   {
     "key": "en:sushi-with-seafood-products",
@@ -492,12 +528,20 @@
     "name": "Tomaten en afgeleide producten"
   },
   {
-    "key": "en:turkey-and-its-products",
-    "name": "Turkey and its products"
-  },
-  {
     "key": "en:onions-and-their-products",
     "name": "Ui en afgeleide producten"
+  },
+  {
+    "key": "en:pork-and-its-products",
+    "name": "Varken en afgeleide producten"
+  },
+  {
+    "key": "en:vegan-products",
+    "name": "Veganistische producten"
+  },
+  {
+    "key": "en:incorrect-product-type",
+    "name": "Verkeerd product type"
   },
   {
     "key": "en:fresh-beef-preparations",
@@ -510,6 +554,10 @@
   {
     "key": "en:fresh-foods",
     "name": "Verse producten"
+  },
+  {
+    "key": "en:fishes-and-their-products",
+    "name": "Vis- en afgeleide producten"
   },
   {
     "key": "en:white-fish-with-provencal-sauce",

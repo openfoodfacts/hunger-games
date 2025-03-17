@@ -1,5 +1,17 @@
 [
   {
+    "key": "en:unroasted-almonds",
+    "name": "Amandelen (ongegrild)"
+  },
+  {
+    "key": "en:unshelled-almonds",
+    "name": "Amandelen(ongepeld)"
+  },
+  {
+    "key": "en:unsalted-almonds",
+    "name": "Amandelen(ongezouten)"
+  },
+  {
     "key": "en:cereals-for-babies",
     "name": "Baby ontbijtpappen"
   },
@@ -24,12 +36,24 @@
     "name": "Cooked sweet corn on the cob"
   },
   {
+    "key": "en:crackers-breakfast",
+    "name": "Crackers(ontbijt)"
+  },
+  {
+    "key": "fr:croissants-ordinaires",
+    "name": "Croissants (ongevuld)"
+  },
+  {
     "key": "en:croutons-with-onions",
     "name": "Croutons with onions"
   },
   {
     "key": "en:dehydrated-onion-soup",
     "name": "Dehydrated onion soup"
+  },
+  {
+    "key": "en:beverages-from-desugared-fruit-juices",
+    "name": "Dranken op basis van ongezoete vruchtensappen"
   },
   {
     "key": "en:dried-onions",
@@ -44,12 +68,20 @@
     "name": "Frozen corn on the cob"
   },
   {
+    "key": "en:frozen-mixed-meat-on-skewer",
+    "name": "Frozen mixed meat on skewer"
+  },
+  {
     "key": "en:frozen-onions",
     "name": "Frozen onions"
   },
   {
     "key": "en:frozen-raw-onions",
     "name": "Frozen raw onions"
+  },
+  {
+    "key": "en:pitted-dried-apricots",
+    "name": "Gedroogde ontpitte abrikozen"
   },
   {
     "key": "en:puffed-cereals",
@@ -64,8 +96,20 @@
     "name": "Gevulde ontbijtgranen"
   },
   {
-    "key": "en:greek-style-yogurt-on-a-bed-of-fruits",
-    "name": "Greek-style yogurt on a bed of fruits"
+    "key": "en:gherkins-with-onions",
+    "name": "Gherkins with onions"
+  },
+  {
+    "key": "en:greek-style-yogurts-on-a-bed-of-fruits",
+    "name": "Greek-style yogurts on a bed of fruits"
+  },
+  {
+    "key": "en:unshelled-hazelnuts",
+    "name": "Hazelnoten (ongepeld)"
+  },
+  {
+    "key": "en:unsalted-hazelnuts",
+    "name": "Hazelnoten (ongezouten)"
   },
   {
     "key": "en:heatable-onion-soup",
@@ -84,12 +128,20 @@
     "name": "Mixed meat on skewer"
   },
   {
+    "key": "en:unfiltered-beers",
+    "name": "Ongefilterde bieren"
+  },
+  {
     "key": "en:non-homogenized-milks",
     "name": "Ongehomogeniseerde melken"
   },
   {
-    "key": "en:uncooked-beetroots",
-    "name": "Ongekookte rode bieten"
+    "key": "en:unpasteurized-beers",
+    "name": "Ongepasteuriseerde bieren"
+  },
+  {
+    "key": "en:unpasteurised-products",
+    "name": "Ongepasteuriseerde producten"
   },
   {
     "key": "en:roasted-unshelled-pumpkin-seeds",
@@ -116,12 +168,20 @@
     "name": "Ongerookte spek"
   },
   {
-    "key": "en:unsweetened-natural-soy-milks",
+    "key": "en:unsweetened-plain-soy-based-drinks",
     "name": "Ongezoete sojadranken"
+  },
+  {
+    "key": "en:unsalted-cooked-soy-noodles",
+    "name": "Ongezouten gekookte soja vermicelli"
   },
   {
     "key": "en:unsalted-margarines",
     "name": "Ongezouten margarine"
+  },
+  {
+    "key": "en:unsalted-nuts",
+    "name": "Ongezouten peulvruchten"
   },
   {
     "key": "en:unsalted-butters",
@@ -180,7 +240,7 @@
     "name": "Ontbijtgranen verrijkt met vitaminen en mineralen"
   },
   {
-    "key": "en:gingerbreads",
+    "key": "nl:ontbijtkoeken",
     "name": "Ontbijtkoeken"
   },
   {
@@ -216,15 +276,31 @@
     "name": "Onverhitte geperste kazen"
   },
   {
-    "key": "en:plain-pecan-nuts",
-    "name": "Pecannoten (onbehandeld)"
+    "key": "en:unshelled-brazil-nuts",
+    "name": "Paranoten(ongepeld)"
+  },
+  {
+    "key": "en:brazil-nuts-unsalted",
+    "name": "Paranoten(ongezouten)"
+  },
+  {
+    "key": "en:plain-pistachios",
+    "name": "Pistachenote (onbehandeld)"
+  },
+  {
+    "key": "en:unsalted-pistachios",
+    "name": "Pistachenoten (ongezouten)"
   },
   {
     "key": "en:pizza-with-onion-and-anchovy-and-black-olives",
     "name": "Pizza with onion and anchovy and black olives"
   },
   {
-    "key": "en:quinoa-fr-raw",
+    "key": "en:pumpkin-seeds-non-roasted-shelled-unsalted",
+    "name": "Pompoenpitten(gepeld/ongeroosterd/ongezouten)"
+  },
+  {
+    "key": "en:raw-quinoa-from-france",
     "name": "Quinoa uit Frankrijk (ongekookt)"
   },
   {
@@ -256,7 +332,7 @@
     "name": "Turkey leg meat only"
   },
   {
-    "key": "en:squeezed-juices",
+    "key": "en:squeezed-fruit-juices",
     "name": "Verse ongekoelde vruchtensappen"
   },
   {

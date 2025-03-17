@@ -68,6 +68,14 @@
     "name": "Boissons distillés"
   },
   {
+    "key": "en:turkey-skewers",
+    "name": "Brochettes de dinde"
+  },
+  {
+    "key": "en:frozen-turkey-skewers",
+    "name": "Brochettes de dinde surgelées"
+  },
+  {
     "key": "fr:cassis-de-dijon",
     "name": "Cassis de Dijon"
   },
@@ -100,7 +108,7 @@
     "name": "Confitures diététiques"
   },
   {
-    "key": "fr:cordons-bleus-de-dinde",
+    "key": "en:turkey-cordons-bleus",
     "name": "Cordons bleus de dinde"
   },
   {
@@ -132,8 +140,16 @@
     "name": "Digitaires"
   },
   {
+    "key": "en:smoked-cooked-turkey",
+    "name": "Dinde cuite fumée"
+  },
+  {
     "key": "fr:dinde-de-bresse",
     "name": "Dinde de Bresse"
+  },
+  {
+    "key": "en:turkey-and-its-products",
+    "name": "Dinde et dérivés"
   },
   {
     "key": "en:turkeys",
@@ -158,6 +174,10 @@
   {
     "key": "en:sausage-from-savoy",
     "name": "Diots de Savoie"
+  },
+  {
+    "key": "en:dressings-and-dips-shelf-stable",
+    "name": "Dressings and Dips (Shelf Stable)"
   },
   {
     "key": "en:roasted-turkey-escalope",
@@ -200,10 +220,6 @@
     "name": "Graisse de dinde"
   },
   {
-    "key": "en:high-digestible-milk",
-    "name": "High digestible milk"
-  },
-  {
     "key": "en:olive-oils-from-val-di-mazara",
     "name": "Huile d'olive de Val di Mazara"
   },
@@ -234,6 +250,10 @@
   {
     "key": "en:olive-oils-from-olio-di-roma",
     "name": "Huiles d'olive de Olio di Roma"
+  },
+  {
+    "key": "en:high-digestible-milk",
+    "name": "Lait hautement digestible"
   },
   {
     "key": "fr:lardons-de-dinde",
@@ -334,5 +354,9 @@
   {
     "key": "fr:viande-de-dinde-sans-peau",
     "name": "Viande de dinde sans peau"
+  },
+  {
+    "key": "en:frozen-turkey-meat",
+    "name": "Viande de dinde surgelée"
   }
 ]

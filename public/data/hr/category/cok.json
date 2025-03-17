@@ -1,6 +1,786 @@
 [
   {
+    "key": "en:flavoured-white-chocolates",
+    "name": "Aromatizirane bijele čokolade"
+  },
+  {
+    "key": "en:flavoured-milk-chocolates",
+    "name": "Aromatizirane mliječne čokolade"
+  },
+  {
+    "key": "en:chocolate-coated-almonds",
+    "name": "Bademi preliveni čokoladom"
+  },
+  {
+    "key": "fr:chocolat-blanc-en-tablette-aux-raisins",
+    "name": "Bijela čokolada s grožđicama"
+  },
+  {
+    "key": "en:white-chocolate-with-coconut-pieces",
+    "name": "Bijela čokolada s komadićima kokosa"
+  },
+  {
+    "key": "fr:chocolat-blanc-en-tablette-aux-noisettes",
+    "name": "Bijela čokolada s orasima"
+  },
+  {
+    "key": "en:white-chocolate-bar-with-praline",
+    "name": "Bijela čokolada s pralinama"
+  },
+  {
+    "key": "en:white-chocolates",
+    "name": "Bijele čokolade"
+  },
+  {
+    "key": "en:white-chocolates-with-almonds",
+    "name": "Bijele čokolade s bademima"
+  },
+  {
+    "key": "en:white-chocolates-with-hazelnuts",
+    "name": "Bijele čokolade s lješnjacima"
+  },
+  {
+    "key": "en:white-chocolates-with-sweeteners",
+    "name": "Bijele čokolade sa zaslađivačima"
+  },
+  {
+    "key": "en:plant-milk-chocolates",
+    "name": "Biljne mliječne čokolade"
+  },
+  {
+    "key": "en:biscuit-with-chocolate-covering",
+    "name": "Biskvit s čokoladnim preljevom"
+  },
+  {
+    "key": "en:biscuit-with-a-chocolate-bar-covering",
+    "name": "Biskvit s preljevom od čokolade"
+  },
+  {
+    "key": "en:biscuit-with-a-milk-chocolate-bar-covering",
+    "name": "Biskvit s preljevom od mliječne čokolade"
+  },
+  {
+    "key": "en:biscuit-with-a-dark-chocolate-bar-covering",
+    "name": "Biskvit s preljevom od tamne čokolade"
+  },
+  {
+    "key": "en:milk-chocolate-candies",
+    "name": "Bomboni od mliječne čokolade"
+  },
+  {
+    "key": "en:christmas-chocolates",
+    "name": "Božićne čokolade"
+  },
+  {
+    "key": "en:brioche-filled-with-chocolate-drops",
+    "name": "Brioche punjen čokoladnim kapljicama"
+  },
+  {
+    "key": "en:chocolate-covered-cranberries",
+    "name": "Brusnice prelivene čokoladom"
+  },
+  {
+    "key": "en:chocolate-filled-with-praline",
+    "name": "Čokolada punjena pralinama"
+  },
+  {
     "key": "en:chocolates",
     "name": "Čokolade"
+  },
+  {
+    "key": "en:chocolates-from-modica-igp",
+    "name": "Čokolade od modica igp"
+  },
+  {
+    "key": "en:rice-milk-chocolates",
+    "name": "Čokolade od rižinog mlijeka"
+  },
+  {
+    "key": "en:cereal-chocolates",
+    "name": "Čokolade od žitarica"
+  },
+  {
+    "key": "en:chocolates-stuffed-with-almond-paste",
+    "name": "Čokolade punjene pastom od badema"
+  },
+  {
+    "key": "en:chocolates-with-almonds",
+    "name": "Čokolade s bademima"
+  },
+  {
+    "key": "en:chocolates-with-extra-fine-milk",
+    "name": "Čokolade s ekstra finim mlijekom"
+  },
+  {
+    "key": "en:chocolates-with-raisins",
+    "name": "Čokolade s grožđicama"
+  },
+  {
+    "key": "en:chocolates-with-hazelnuts",
+    "name": "Čokolade s lješnjacima"
+  },
+  {
+    "key": "en:flavoured-chocolates",
+    "name": "Čokolade s okusom"
+  },
+  {
+    "key": "en:chocolates-with-praline",
+    "name": "Čokolade s pralinama"
+  },
+  {
+    "key": "en:chocolates-with-sweeteners",
+    "name": "Čokolade sa zaslađivačima"
+  },
+  {
+    "key": "en:candy-chocolate-bars",
+    "name": "Čokoladice"
+  },
+  {
+    "key": "en:chocolate-eggs",
+    "name": "Čokoladna jaja"
+  },
+  {
+    "key": "en:chocolate-puffed-wheat",
+    "name": "Čokoladna lisnata pšenica"
+  },
+  {
+    "key": "en:chocolate-puffed-rice",
+    "name": "Čokoladna lisnata riža"
+  },
+  {
+    "key": "en:chocolate-puffed-rice-not-fortified-with-vitamins-and-chemical-elements",
+    "name": "Čokoladna lisnata riža koja nije obogaćena vitaminima i kemijskim elementima"
+  },
+  {
+    "key": "en:chocolate-puffed-rice-fortified-with-vitamins-and-chemical-elements",
+    "name": "Čokoladna lisnata riža obogaćena vitaminima i kemijskim elementima"
+  },
+  {
+    "key": "en:chocolate-milks",
+    "name": "Čokoladna mlijeka"
+  },
+  {
+    "key": "en:chocolate-puffed-wheat-grains-fortified-with-vitamins-and-chemical-elements",
+    "name": "Čokoladna napuhana zrna pšenice obogaćena vitaminima i kemijskim elementima"
+  },
+  {
+    "key": "en:chocolate-soy-based-drinks",
+    "name": "Čokoladna pića na bazi soje"
+  },
+  {
+    "key": "en:chocolate-letters",
+    "name": "Čokoladna slova"
+  },
+  {
+    "key": "en:chocolate-cereals",
+    "name": "Čokoladne pahuljice"
+  },
+  {
+    "key": "en:breakfast-chocolate-cereals-with-wheat-grain-flakes-not-fortified-with-vitamins-and-chemical-elements",
+    "name": "Čokoladne pahuljice za doručak s pahuljicama pšeničnog zrna koje nisu obogaćene vitaminima i kemijskim elementima"
+  },
+  {
+    "key": "en:chocolate-pies",
+    "name": "Čokoladne pite"
+  },
+  {
+    "key": "en:chocolate-mousses",
+    "name": "Čokoladne pjenice"
+  },
+  {
+    "key": "en:chocolate-wheat-shells",
+    "name": "Čokoladne pšenične ljuske"
+  },
+  {
+    "key": "en:chocolate-charlottes",
+    "name": "Čokoladne šarlote"
+  },
+  {
+    "key": "en:chocolate-sculptures",
+    "name": "Čokoladne skulpture"
+  },
+  {
+    "key": "en:chocolate-cereal-bars",
+    "name": "Čokoladne žitne pločice"
+  },
+  {
+    "key": "en:chocolate-advent-calendars",
+    "name": "Čokoladni adventski kalendari"
+  },
+  {
+    "key": "en:chocolate-biscuity-bars",
+    "name": "Čokoladni biskvit"
+  },
+  {
+    "key": "en:chocolate-candies",
+    "name": "Čokoladni bomboni"
+  },
+  {
+    "key": "en:chocolate-desserts",
+    "name": "Čokoladni deserti"
+  },
+  {
+    "key": "en:chocolate-dinosaurs",
+    "name": "Čokoladni dinosauri"
+  },
+  {
+    "key": "en:chocolate-santa-clauses",
+    "name": "Čokoladni djedovi Božićnjaci"
+  },
+  {
+    "key": "en:chocolate-eclairs",
+    "name": "Čokoladni ekleri"
+  },
+  {
+    "key": "en:chocolate-biscuits",
+    "name": "Čokoladni keksi"
+  },
+  {
+    "key": "en:chocolate-cakes",
+    "name": "Čokoladni kolači"
+  },
+  {
+    "key": "en:chocolate-creamy-puddings",
+    "name": "Čokoladni kremasti puding"
+  },
+  {
+    "key": "en:chocolate-croissant",
+    "name": "Čokoladni kroasan"
+  },
+  {
+    "key": "en:chocolate-croissant-prepacked",
+    "name": "Čokoladni kroasan unaprijed upakiran"
+  },
+  {
+    "key": "fr:pains-au-chocolat-a-l-huile-de-tournesol",
+    "name": "Čokoladni kroasani sa suncokretovim uljem"
+  },
+  {
+    "key": "en:chocolate-madeleines",
+    "name": "Čokoladni madeleines"
+  },
+  {
+    "key": "en:chocolate-muffins",
+    "name": "Čokoladni muffini"
+  },
+  {
+    "key": "en:chocolate-spreads",
+    "name": "Čokoladni namazi"
+  },
+  {
+    "key": "en:chocolate-nougats",
+    "name": "Čokoladni nugati"
+  },
+  {
+    "key": "en:chocolate-nuts-cookie-bars",
+    "name": "Čokoladni orasi Keksi"
+  },
+  {
+    "key": "en:chocolate-sprinkles",
+    "name": "Čokoladni posipi"
+  },
+  {
+    "key": "en:instant-chocolate-powders",
+    "name": "Čokoladni prahovi"
+  },
+  {
+    "key": "en:chocolate-sandwich-cookies",
+    "name": "Čokoladni sendvič Keksi"
+  },
+  {
+    "key": "en:chocolate-confectionery-with-dairy-filling",
+    "name": "Čokoladni slatkiši s mliječnim punjenjem"
+  },
+  {
+    "key": "en:chocolate-soy-desserts",
+    "name": "Čokoladni sojini deserti"
+  },
+  {
+    "key": "en:chocolate-truffles",
+    "name": "Čokoladni tartufi"
+  },
+  {
+    "key": "en:chocolate-tiramisu",
+    "name": "Čokoladni tiramisu"
+  },
+  {
+    "key": "en:chocolate-turron",
+    "name": "Čokoladni turrón"
+  },
+  {
+    "key": "en:chocolate-turron-with-almonds",
+    "name": "Čokoladni turrón s bademima"
+  },
+  {
+    "key": "en:chocolate-turron-with-puffed-rice",
+    "name": "Čokoladni turrón s lisnatom rižom"
+  },
+  {
+    "key": "en:chocolate-sauce",
+    "name": "Čokoladni umak"
+  },
+  {
+    "key": "en:chocolate-rabbits",
+    "name": "Čokoladni zečevi"
+  },
+  {
+    "key": "en:crepes-dentelle-with-chocolate",
+    "name": "Crêpes dentelle s čokoladom"
+  },
+  {
+    "key": "en:dark-chocolate-filled-with-mint-confectionery",
+    "name": "Crna čokolada punjena mentom slastica"
+  },
+  {
+    "key": "en:dark-chocolate-bar-with-less-than-70-cocoa",
+    "name": "Crna čokolada s manje od 70% kakaa"
+  },
+  {
+    "key": "en:dark-chocolate-bar-with-more-than-70-cocoa",
+    "name": "Crna čokolada s više od 70% kakaa"
+  },
+  {
+    "key": "en:dark-chocolate-bar-with-dried-fruits",
+    "name": "Crna čokolada sa suhim voćem"
+  },
+  {
+    "key": "en:diet-chocolate-breakfast-cereals",
+    "name": "Dijetne čokoladne žitarice za doručak"
+  },
+  {
+    "key": "en:extra-fine-dark-chocolates",
+    "name": "Ekstra fine tamne čokolade"
+  },
+  {
+    "key": "en:fleur-de-sel-chocolates",
+    "name": "Fleur de sel čokolade"
+  },
+  {
+    "key": "en:chocolate-covered-raisins",
+    "name": "Grožđice prelivene čokoladom"
+  },
+  {
+    "key": "en:crunchy-chocolate-muesli-fortified-with-vitamins-and-chemical-elements",
+    "name": "Hrskavi čokoladni müsli obogaćen vitaminima i kemijskim elementima"
+  },
+  {
+    "key": "en:crunchy-mueslis-with-chocolate",
+    "name": "Hrskavi müsli s čokoladom"
+  },
+  {
+    "key": "en:crunchy-muesli-with-chocolate-not-fortified-with-vitamins-and-chemical-elements",
+    "name": "Hrskavi müsli s čokoladom koji nisu obogaćeni vitaminima i kemijskim elementima"
+  },
+  {
+    "key": "en:instant-powder-for-cappuccino-with-chocolate",
+    "name": "Instant prah za cappuccino s čokoladom"
+  },
+  {
+    "key": "en:chocolate-ice-cream-tubs",
+    "name": "Kadice za sladoled od čokolade"
+  },
+  {
+    "key": "en:cocoa-and-chocolate-powders",
+    "name": "Kakao i čokoladni prah"
+  },
+  {
+    "key": "en:chocolate-molds",
+    "name": "Kalupi za čokoladu"
+  },
+  {
+    "key": "en:milk-chocolate-molds",
+    "name": "Kalupi za mliječnu čokoladu"
+  },
+  {
+    "key": "en:caramel-chocolates",
+    "name": "Karamel čokolade"
+  },
+  {
+    "key": "en:caramel-chocolate-cookie-bars",
+    "name": "Karamel čokoladne keksiće"
+  },
+  {
+    "key": "en:caramel-chocolate-bars",
+    "name": "Karamel čokoladne pločice"
+  },
+  {
+    "key": "en:porridge-with-chocolate",
+    "name": "Kaša s čokoladom"
+  },
+  {
+    "key": "en:white-chocolate-biscuits",
+    "name": "Keksi od bijele čokolade"
+  },
+  {
+    "key": "en:chocolate-and-hazelnut-cookies",
+    "name": "Keksi od čokolade i lješnjaka"
+  },
+  {
+    "key": "en:milk-chocolate-biscuits",
+    "name": "Keksi od mliječne čokolade"
+  },
+  {
+    "key": "en:dark-chocolate-biscuits",
+    "name": "Keksi od tamne čokolade"
+  },
+  {
+    "key": "en:cookies-with-chocolate-and-coconut",
+    "name": "Keksi s čokoladom i kokosom"
+  },
+  {
+    "key": "en:cookies-with-chocolate-and-nougat",
+    "name": "Keksi s čokoladom i nugatom"
+  },
+  {
+    "key": "en:chocolate-chip-cookies",
+    "name": "Keksi sa cokoladnim komadima"
+  },
+  {
+    "key": "en:cookies-with-milk-chocolate",
+    "name": "Keksovi s mliječnom čokoladom"
+  },
+  {
+    "key": "en:chocolate-coated-peanuts",
+    "name": "Kikiriki preliven čokoladom"
+  },
+  {
+    "key": "en:chocolate-covered-coconut-balls",
+    "name": "Kokos kuglice prelivene čokoladom"
+  },
+  {
+    "key": "en:molten-chocolate-cakes",
+    "name": "Kolači od rastopljene čokolade"
+  },
+  {
+    "key": "en:puffed-rice-cakes-with-black-chocolate",
+    "name": "Kolačići od lisnate riže s crnom čokoladom"
+  },
+  {
+    "key": "en:chocolate-chunks-yogurts",
+    "name": "Komadići čokolade jogurti"
+  },
+  {
+    "key": "en:chocolate-vanilla-ice-cream-cones",
+    "name": "Kornete sladoleda čokolada-vanilija"
+  },
+  {
+    "key": "en:chocolate-mint-ice-cream-cones",
+    "name": "Korneti sladoleda čokolada-menta"
+  },
+  {
+    "key": "en:chocolate-pistachio-ice-cream-cones",
+    "name": "Korneti sladoleda od čokolade i pistacija"
+  },
+  {
+    "key": "en:doughnuts-filled-with-chocolate",
+    "name": "Krafne punjene čokoladom"
+  },
+  {
+    "key": "en:croissant-filled-with-chocolate",
+    "name": "Kroasan punjen čokoladom"
+  },
+  {
+    "key": "en:liqueur-chocolates",
+    "name": "Liker čokolade"
+  },
+  {
+    "key": "en:puffed-cereal-milk-chocolates",
+    "name": "Lisnate mliječne čokolade od žitarica"
+  },
+  {
+    "key": "en:puffed-rice-cakes-with-white-chocolate",
+    "name": "Lisnate riže s bijelom čokoladom"
+  },
+  {
+    "key": "en:puffed-rice-cakes-with-milk-chocolate",
+    "name": "Lisnate riže s mliječnom čokoladom"
+  },
+  {
+    "key": "en:puffed-corn-cakes-with-black-chocolate",
+    "name": "Lisnati kukuruzni kolačići s crnom čokoladom"
+  },
+  {
+    "key": "en:puffed-corn-cakes-with-milk-chocolate",
+    "name": "Lisnati kukuruzni kolačići s mliječnom čokoladom"
+  },
+  {
+    "key": "en:chocolate-covered-hazelnuts",
+    "name": "Lješnjaci preliveni čokoladom"
+  },
+  {
+    "key": "en:chocolate-coated-marshmallow-treats",
+    "name": "Marshmallow poslastice obložene čokoladom"
+  },
+  {
+    "key": "en:marshmallows-coated-with-chocolate",
+    "name": "Marshmallows preliven čokoladom"
+  },
+  {
+    "key": "en:milk-chocolate-bar-without-sugar-with-sweeteners",
+    "name": "Mliječna čokolada bez šećera sa zaslađivačima"
+  },
+  {
+    "key": "en:milk-chocolate-with-caramel",
+    "name": "Mliječna čokolada s karamelom"
+  },
+  {
+    "key": "en:milk-chocolate-with-dried-fruits",
+    "name": "Mliječna čokolada sa suhim voćem"
+  },
+  {
+    "key": "en:milk-chocolates",
+    "name": "Mliječne čokolade"
+  },
+  {
+    "key": "en:milk-chocolates-with-almonds",
+    "name": "Mliječne čokolade s bademima"
+  },
+  {
+    "key": "en:milk-chocolates-with-fleur-de-sel",
+    "name": "Mliječne čokolade s fleur de sel"
+  },
+  {
+    "key": "en:milk-chocolates-with-raisins",
+    "name": "Mliječne čokolade s grožđicama"
+  },
+  {
+    "key": "en:milk-chocolates-with-hazelnuts",
+    "name": "Mliječne čokolade s lješnjacima"
+  },
+  {
+    "key": "en:milk-chocolates-with-sweeteners",
+    "name": "Mliječne čokolade sa zaslađivačima"
+  },
+  {
+    "key": "en:dairy-chocolate-desserts",
+    "name": "Mliječni čokoladni deserti"
+  },
+  {
+    "key": "en:milk-bread-rolls-with-chocolate",
+    "name": "Mliječni kruh s čokoladom"
+  },
+  {
+    "key": "en:chocolate-chip-muffins",
+    "name": "Muffini s komadićima čokolade"
+  },
+  {
+    "key": "en:mueslis-with-chocolate",
+    "name": "Musli s čokoladom"
+  },
+  {
+    "key": "en:chocolate-stuffed-wafers",
+    "name": "Napolitanke punjene čokoladom"
+  },
+  {
+    "key": "en:coated-chocolate-bar-without-biscuit",
+    "name": "Obložena čokoladica bez keksa"
+  },
+  {
+    "key": "en:chocolate-covered-nuts",
+    "name": "Orasi preliveni čokoladom"
+  },
+  {
+    "key": "en:chocolate-almond-based-drinks",
+    "name": "Pića na bazi čokolade i badema"
+  },
+  {
+    "key": "en:milk-chocolate-bar-with-nougat",
+    "name": "Pločica mliječne čokolade s nugatom"
+  },
+  {
+    "key": "en:filled-chocolate-eggs",
+    "name": "Punjena čokoladna jaja"
+  },
+  {
+    "key": "en:filled-white-chocolates",
+    "name": "Punjene bijele čokolade"
+  },
+  {
+    "key": "en:filled-chocolates",
+    "name": "Punjene čokolade"
+  },
+  {
+    "key": "en:filled-milk-chocolates",
+    "name": "Punjene mliječne čokolade"
+  },
+  {
+    "key": "en:filled-crepes-with-chocolate",
+    "name": "Punjene palačinke s čokoladom"
+  },
+  {
+    "key": "en:filled-dark-chocolates",
+    "name": "Punjene tamne čokolade"
+  },
+  {
+    "key": "en:assorted-chocolates",
+    "name": "Razne čokolade"
+  },
+  {
+    "key": "en:assorted-chocolate-candies",
+    "name": "Razni čokoladni bomboni"
+  },
+  {
+    "key": "en:rice-chocolates",
+    "name": "Rižine čokolade"
+  },
+  {
+    "key": "en:salted-chocolates",
+    "name": "Slane čokolade"
+  },
+  {
+    "key": "en:salted-milk-chocolates",
+    "name": "Slane mliječne čokolade"
+  },
+  {
+    "key": "en:salted-dark-chocolates",
+    "name": "Slane tamne čokolade"
+  },
+  {
+    "key": "en:chocolate-coated-chickpeas",
+    "name": "Slanutak preliven čokoladom"
+  },
+  {
+    "key": "en:sugar-coated-chocolate-confectioneries",
+    "name": "Slastice od čokolade obložene šećerom"
+  },
+  {
+    "key": "en:compound-chocolates",
+    "name": "Složene čokolade"
+  },
+  {
+    "key": "en:chocolate-covered-figs",
+    "name": "Smokve prelivene čokoladom"
+  },
+  {
+    "key": "en:ice-cream-candy-chocolate-bars",
+    "name": "Smrznute bombone čokoladice"
+  },
+  {
+    "key": "en:milk-chocolate-bar",
+    "name": "Štanglica mliječne čokolade"
+  },
+  {
+    "key": "en:ice-cream-bars-coated-with-chocolate",
+    "name": "Štanglice sladoleda od čokolade"
+  },
+  {
+    "key": "en:chocolate-covered-prune",
+    "name": "Suhe šljive prelivene čokoladom"
+  },
+  {
+    "key": "en:hollow-chocolate-eggs",
+    "name": "Šuplja čokoladna jaja"
+  },
+  {
+    "key": "en:swiss-chocolates",
+    "name": "Švicarske čokolade"
+  },
+  {
+    "key": "en:dark-chocolate-bar-without-sugar-and-with-artificial-sweeteners",
+    "name": "Tamna čokolada bez šećera i s umjetnim sladilima"
+  },
+  {
+    "key": "en:dark-chocolate-with-caramel",
+    "name": "Tamna čokolada s karamelom"
+  },
+  {
+    "key": "en:dark-chocolate-bar-with-fruits",
+    "name": "Tamna čokolada s voćem"
+  },
+  {
+    "key": "en:dark-chocolate-bar-for-cooking-with-more-than-40-cocoa",
+    "name": "Tamna čokolada za kuhanje s više od 40% kakaa"
+  },
+  {
+    "key": "en:dark-chocolates",
+    "name": "Tamne čokolade"
+  },
+  {
+    "key": "en:dark-chocolates-with-almonds",
+    "name": "Tamne čokolade s bademima"
+  },
+  {
+    "key": "en:dark-chocolates-with-ginger",
+    "name": "Tamne čokolade s đumbirom"
+  },
+  {
+    "key": "en:dark-chocolates-with-fleur-de-sel",
+    "name": "Tamne čokolade s fleur de sel"
+  },
+  {
+    "key": "en:dark-chocolates-with-raisins",
+    "name": "Tamne čokolade s grožđicama"
+  },
+  {
+    "key": "en:dark-chocolates-with-cocoa-nibs",
+    "name": "Tamne čokolade s kakaovcima"
+  },
+  {
+    "key": "en:dark-chocolates-with-coffee",
+    "name": "Tamne čokolade s kavom"
+  },
+  {
+    "key": "en:dark-chocolates-with-pear",
+    "name": "Tamne čokolade s kruškom"
+  },
+  {
+    "key": "en:dark-chocolates-with-hazelnuts",
+    "name": "Tamne čokolade s lješnjacima"
+  },
+  {
+    "key": "en:dark-chocolates-with-raspberries",
+    "name": "Tamne čokolade s malinama"
+  },
+  {
+    "key": "en:dark-chocolates-with-orange",
+    "name": "Tamne čokolade s narančom"
+  },
+  {
+    "key": "en:flavoured-dark-chocolates",
+    "name": "Tamne čokolade s okusom"
+  },
+  {
+    "key": "en:dark-chocolates-with-sweeteners",
+    "name": "Tamne čokolade sa zaslađivačima"
+  },
+  {
+    "key": "en:thin-crunchy-wafer-biscuit-with-chocolate",
+    "name": "Tanki hrskavi oblatni biskvit sa čokoladom"
+  },
+  {
+    "key": "en:tartlet-biscuits-with-chocolate",
+    "name": "Tartlet keksi s čokoladom"
+  },
+  {
+    "key": "en:chocolate-coated-waffles",
+    "name": "Vafli obloženi čokoladom"
+  },
+  {
+    "key": "en:vegan-chocolate-puddings",
+    "name": "Veganski puding od čokolade"
+  },
+  {
+    "key": "en:chocolate-coated-maraschino-cherries",
+    "name": "Višnje maraskine oblivene čokoladom"
+  },
+  {
+    "key": "en:chocolate-covered-cherries",
+    "name": "Višnje prelivene čokoladom"
+  },
+  {
+    "key": "en:liquor-filled-chocolate-covered-cherries",
+    "name": "Višnje punjene likerom prelivene čokoladom"
+  },
+  {
+    "key": "en:chocolate-coated-fruits",
+    "name": "Voće preliveno čokoladom"
+  },
+  {
+    "key": "en:breakfast-cereals-filled-with-chocolate",
+    "name": "Žitarice za doručak punjene čokoladom"
+  },
+  {
+    "key": "en:cereal-flakes-with-chocolate",
+    "name": "Žitne pahuljice s čokoladom"
   }
 ]

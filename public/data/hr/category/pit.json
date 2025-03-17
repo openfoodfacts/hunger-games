@@ -1,15 +1,27 @@
 [
   {
-    "key": "en:black-pitted-olives",
-    "name": "Black pitted olives"
+    "key": "en:lemon-meringue-pies",
+    "name": "Beze pite od limuna"
   },
   {
-    "key": "en:green-pitted-olives",
-    "name": "Green pitted olives"
+    "key": "en:chocolate-pies",
+    "name": "Čokoladne pite"
+  },
+  {
+    "key": "en:frozen-pitted-apricot",
+    "name": "Frozen pitted apricot"
+  },
+  {
+    "key": "en:frozen-pre-baked-pitas",
+    "name": "Frozen pre-baked pitas"
   },
   {
     "key": "en:hiromeri-pitsilias",
     "name": "Hiromeri Pitsilias"
+  },
+  {
+    "key": "en:cream-pies",
+    "name": "Krem pite"
   },
   {
     "key": "en:loukaniko-pitsilias",
@@ -20,43 +32,171 @@
     "name": "Lountza Pitsilias"
   },
   {
-    "key": "en:cakes",
-    "name": "Pita"
+    "key": "en:dutch-apple-pies",
+    "name": "Nizozemske pite od jabuka"
+  },
+  {
+    "key": "en:open-pies",
+    "name": "Otvorene pite"
+  },
+  {
+    "key": "en:beef-cottage-pies",
+    "name": "Pastirska pita"
+  },
+  {
+    "key": "en:squid-and-spicy-tomato-sauce-pie",
+    "name": "Pita s lignjama i pikantnim umakom od rajčice"
   },
   {
     "key": "en:pita-sauces",
-    "name": "Pita sauces"
+    "name": "Pita umaci"
+  },
+  {
+    "key": "en:pitayas",
+    "name": "Pitaje"
   },
   {
     "key": "en:pitas",
     "name": "Pitas"
   },
   {
-    "key": "en:pitayas",
-    "name": "Pitayas"
+    "key": "en:pies",
+    "name": "Pite"
   },
   {
-    "key": "en:pitted-apricot",
-    "name": "Pitted apricot"
+    "key": "en:norman-style-pies",
+    "name": "Pite na normanski način"
   },
   {
-    "key": "en:pitted-cherries",
-    "name": "Pitted cherries"
+    "key": "en:blueberry-pies",
+    "name": "Pite od borovnica"
   },
   {
-    "key": "en:pitted-dates",
-    "name": "Pitted dates"
+    "key": "en:pumpkin-pies",
+    "name": "Pite od bundeve"
   },
   {
-    "key": "en:pitted-dried-apricots",
-    "name": "Pitted dried apricots"
+    "key": "en:mushroom-pies",
+    "name": "Pite od gljiva"
   },
   {
-    "key": "en:pitted-marinated-green-olives",
-    "name": "Pitted marinated green olives"
+    "key": "en:apple-pies",
+    "name": "Pite od jabuka"
   },
   {
-    "key": "en:pitted-olives",
-    "name": "Pitted olives"
+    "key": "en:strawberry-pies",
+    "name": "Pite od jagoda"
+  },
+  {
+    "key": "en:coconut-pies",
+    "name": "Pite od kokosa"
+  },
+  {
+    "key": "en:pear-pies",
+    "name": "Pite od krušaka"
+  },
+  {
+    "key": "en:onion-pies",
+    "name": "Pite od luka"
+  },
+  {
+    "key": "en:raspberry-pies",
+    "name": "Pite od malina"
+  },
+  {
+    "key": "en:apricot-pies",
+    "name": "Pite od marelica"
+  },
+  {
+    "key": "en:meat-pies",
+    "name": "Pite od mesa"
+  },
+  {
+    "key": "en:pecan-pies",
+    "name": "Pite od oraha oraha"
+  },
+  {
+    "key": "en:chicken-and-mushroom-pies",
+    "name": "Pite od piletine i gljiva"
+  },
+  {
+    "key": "en:vegetables-pies",
+    "name": "Pite od povrća"
+  },
+  {
+    "key": "en:tomatoes-pies",
+    "name": "Pite od rajčice"
+  },
+  {
+    "key": "en:cheese-pies",
+    "name": "Pite od sira"
+  },
+  {
+    "key": "en:tuna-pies",
+    "name": "Pite od tune"
+  },
+  {
+    "key": "en:double-crust-pies",
+    "name": "Pite s dvije kore"
+  },
+  {
+    "key": "en:nuts-pies",
+    "name": "Pite s orasima"
+  },
+  {
+    "key": "en:drinking-water",
+    "name": "Piti vodu"
+  },
+  {
+    "key": "en:yogurt-drinks",
+    "name": "Pitki jogurti"
+  },
+  {
+    "key": "en:raspberry-drinkable-yogurts",
+    "name": "Pitki jogurti od maline"
+  },
+  {
+    "key": "en:pomegranates",
+    "name": "Pitomi šipak"
+  },
+  {
+    "key": "en:pitted-dried-cherries",
+    "name": "Pitted dried cherries"
+  },
+  {
+    "key": "en:pizzas-pies-and-quiches",
+    "name": "Pizze pite i quichevi"
+  },
+  {
+    "key": "en:sugar-pies",
+    "name": "Šećerne pite"
+  },
+  {
+    "key": "en:salted-pies",
+    "name": "Slane pite"
+  },
+  {
+    "key": "en:sweet-pies",
+    "name": "Slatke pite"
+  },
+  {
+    "key": "en:frozen-pies",
+    "name": "Smrznute pite"
+  },
+  {
+    "key": "en:frozen-apple-pies",
+    "name": "Smrznute pite od jabuka"
+  },
+  {
+    "key": "en:frozen-pizzas-and-pies",
+    "name": "Smrznute pizze i pite"
+  },
+  {
+    "key": "en:pie-dough",
+    "name": "Tijesto za pitu"
+  },
+  {
+    "key": "en:tropezian-pies",
+    "name": "Tropeške pite"
   }
 ]

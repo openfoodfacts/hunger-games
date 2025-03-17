@@ -1,11 +1,7 @@
 [
   {
-    "key": "en:ayrshire-new-potatoes",
-    "name": "Ayrshire New Potatoes"
-  },
-  {
-    "key": "en:soy-based-sliced",
-    "name": "Bouchées ou émincé au soja et blé (ne convient pas aux véganes ou végétaliens) préemballé"
+    "key": "en:dutch-beers",
+    "name": "Bières néerlandaises"
   },
   {
     "key": "en:nespresso-compatible-coffee-capsules",
@@ -18,10 +14,6 @@
   {
     "key": "en:juices-and-nectars",
     "name": "Jus et nectars"
-  },
-  {
-    "key": "en:dutch-vegetables",
-    "name": "Légumes néerlandais"
   },
   {
     "key": "en:lough-neagh-eel",
@@ -76,6 +68,10 @@
     "name": "Nectars de fruits"
   },
   {
+    "key": "en:refrigerated-fruit-nectars",
+    "name": "Nectars de fruits réfrigérés"
+  },
+  {
     "key": "en:guava-nectars",
     "name": "Nectars de goyave"
   },
@@ -86,6 +82,10 @@
   {
     "key": "en:kiwi-nectars",
     "name": "Nectars de kiwi"
+  },
+  {
+    "key": "en:lychee-nectars",
+    "name": "Nectars de litchi"
   },
   {
     "key": "en:tangerine-nectars",
@@ -122,6 +122,10 @@
   {
     "key": "en:apple-nectars",
     "name": "Nectars de pomme"
+  },
+  {
+    "key": "en:sparkling-apple-nectars",
+    "name": "Nectars de pomme pétillants"
   },
   {
     "key": "en:grape-nectars",
@@ -176,8 +180,12 @@
     "name": "Neufchâtel"
   },
   {
-    "key": "en:new-season-comber-potatoes",
-    "name": "New Season Comber Potatoes"
+    "key": "en:neules",
+    "name": "Neules"
+  },
+  {
+    "key": "en:new-england-ipa",
+    "name": "New England IPA"
   },
   {
     "key": "en:newcastle-brown-ale",
@@ -204,7 +212,7 @@
     "name": "Pernand-Vergelesses premier cru Creux de la Net rouge"
   },
   {
-    "key": "en:dutch-bakery-products",
+    "key": "en:bakery-products-from-the-netherlands",
     "name": "Produits de boulangerie néerlandais"
   },
   {
@@ -228,11 +236,11 @@
     "name": "Sauces pour nems"
   },
   {
-    "key": "en:sparkling-apple-nectars",
-    "name": "Sparkling apple nectars"
-  },
-  {
     "key": "en:dutch-apple-pies",
     "name": "Tartes aux pommes néerlandaises"
+  },
+  {
+    "key": "en:dutch-wines",
+    "name": "Vins néerlandais"
   }
 ]

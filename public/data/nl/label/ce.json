@@ -1,7 +1,7 @@
 [
   {
-    "key": "en:calidad-certificada",
-    "name": "Calidad Certificada"
+    "key": "en:calidad-certificada-de-andalucia",
+    "name": "Calidad Certificada de Andalucía"
   },
   {
     "key": "en:ccof-certified-organic",
@@ -22,10 +22,6 @@
   {
     "key": "en:certified-by-certiconfiance",
     "name": "Certified by Certiconfiance"
-  },
-  {
-    "key": "en:certified-by-certipaq",
-    "name": "Certified by Certipaq"
   },
   {
     "key": "en:certified-by-ecocert-canada",
@@ -52,6 +48,10 @@
     "name": "Certified iVegan"
   },
   {
+    "key": "en:certified-plant-based",
+    "name": "Certified plant based"
+  },
+  {
     "key": "fr:produit-certifie",
     "name": "Certified product"
   },
@@ -62,6 +62,10 @@
   {
     "key": "en:climate-neutral-certified",
     "name": "Climate Neutral Certified"
+  },
+  {
+    "key": "en:certified-by-certipaq",
+    "name": "Gecertificeerd door Certipaq"
   },
   {
     "key": "en:certified-by-certisys",
@@ -112,11 +116,19 @@
     "name": "UTZ Certified Coffee"
   },
   {
+    "key": "en:utz-certified-hazelnut",
+    "name": "UTZ Certified Hazelnoot"
+  },
+  {
     "key": "en:utz-certified-tea",
     "name": "UTZ Certified Thee"
   },
   {
     "key": "en:vegecert-certified-vegan",
     "name": "VegeCert - Certified Vegan"
+  },
+  {
+    "key": "en:welfair-certificate",
+    "name": "Welfair certificate"
   }
 ]

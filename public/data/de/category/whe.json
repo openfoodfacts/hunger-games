@@ -16,8 +16,8 @@
     "name": "Cheese from ewe's whey"
   },
   {
-    "key": "en:chocolate-puffed-wheat-grains",
-    "name": "Chocolate puffed wheat grains"
+    "key": "en:chocolate-puffed-wheat",
+    "name": "Chocolate puffed wheat"
   },
   {
     "key": "en:chocolate-puffed-wheat-grains-fortified-with-vitamins-and-chemical-elements",
@@ -36,8 +36,16 @@
     "name": "Common wheat flours"
   },
   {
+    "key": "en:common-wheat-pasta",
+    "name": "Common wheat pasta"
+  },
+  {
     "key": "en:cooked-whelk",
     "name": "Cooked whelk"
+  },
+  {
+    "key": "en:dry-durum-wheat-pasta",
+    "name": "Dry durum wheat pasta"
   },
   {
     "key": "en:durum-wheat-flours",
@@ -108,20 +116,16 @@
     "name": "Patties from soy and or wheat proteins"
   },
   {
+    "key": "en:plain-puffed-wheat",
+    "name": "Plain puffed wheat"
+  },
+  {
     "key": "en:plant-based-sausage-with-wheat-or-seitan",
     "name": "Plant-based sausage with wheat or seitan"
   },
   {
-    "key": "en:popped-wheat-grain-with-caramel",
-    "name": "Popped wheat grain with caramel"
-  },
-  {
     "key": "en:popped-wheat-grain-with-caramel-fortified-with-vitamins-and-chemical-elements",
     "name": "Popped wheat grain with caramel fortified with vitamins and chemical elements"
-  },
-  {
-    "key": "en:popped-wheat-grain-with-honey",
-    "name": "Popped wheat grain with honey"
   },
   {
     "key": "en:popped-wheat-grain-with-honey-fortified-with-vitamins-and-chemical-elements",
@@ -156,16 +160,24 @@
     "name": "Puffed wheat"
   },
   {
-    "key": "en:puffed-wheat-grains",
-    "name": "Puffed wheat grains"
+    "key": "en:puffed-wheat-with-caramel",
+    "name": "Puffed wheat with caramel"
   },
   {
-    "key": "en:refined-wheat-flour",
-    "name": "Refined wheat flour"
+    "key": "en:puffed-wheat-with-honey",
+    "name": "Puffed wheat with honey"
+  },
+  {
+    "key": "en:raw-sprouted-wheat",
+    "name": "Raw sprouted wheat"
   },
   {
     "key": "en:self-raising-wheat-flour",
     "name": "Self-raising wheat flour"
+  },
+  {
+    "key": "en:semi-whole-durum-wheat-spirals",
+    "name": "Semi whole durum wheat spirals"
   },
   {
     "key": "en:semi-polished-common-wheat-flours",
@@ -180,16 +192,16 @@
     "name": "Semi-polished wheat flours"
   },
   {
-    "key": "en:soybean-and-wheat-based-nuggets-vegan",
-    "name": "Soybean and wheat-based nuggets (vegan)"
-  },
-  {
     "key": "en:spirals-of-durum-wheat",
     "name": "Spirals of durum wheat"
   },
   {
     "key": "en:sprouted-wheat",
     "name": "Sprouted wheat"
+  },
+  {
+    "key": "en:sweetened-puffed-wheat",
+    "name": "Sweetened puffed wheat"
   },
   {
     "key": "en:t110-khorasan-wheat-flours",
@@ -228,6 +240,10 @@
     "name": "Wheat crackers"
   },
   {
+    "key": "en:wheat-daliya",
+    "name": "Wheat Daliya"
+  },
+  {
     "key": "en:wheat-flour-t45",
     "name": "Wheat flour T45"
   },
@@ -254,6 +270,10 @@
   {
     "key": "en:wheat-syrups",
     "name": "Wheat syrups"
+  },
+  {
+    "key": "en:wheat-vermicelli",
+    "name": "Wheat vermicelli"
   },
   {
     "key": "en:wheat-wholemeal-swedish-toast",
@@ -292,6 +312,10 @@
     "name": "Whole durum wheat pasta"
   },
   {
+    "key": "en:whole-durum-wheat-spirals",
+    "name": "Whole durum wheat spirals"
+  },
+  {
     "key": "en:whole-einkorn-wheat-flours",
     "name": "Whole einkorn wheat flours"
   },
@@ -316,16 +340,8 @@
     "name": "Whole or semi-whole durum wheat spaghetti"
   },
   {
-    "key": "en:whole-or-semi-whole-durum-wheat-spirals",
-    "name": "Whole or semi-whole durum wheat spirals"
-  },
-  {
     "key": "en:whole-or-semi-whole-durum-wheat-stars",
     "name": "Whole or semi-whole durum wheat stars"
-  },
-  {
-    "key": "en:whole-wheat-flours",
-    "name": "Whole wheat flours"
   },
   {
     "key": "en:whole-wheat-english-muffins",

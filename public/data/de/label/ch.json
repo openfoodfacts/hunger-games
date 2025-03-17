@@ -4,6 +4,10 @@
     "name": "Catad'Or Santiago de Chile Wine Awards"
   },
   {
+    "key": "en:ch-043-006",
+    "name": "CH-043-006"
+  },
+  {
     "key": "en:ch-bio-004",
     "name": "CH-BIO-004"
   },
@@ -44,14 +48,6 @@
     "name": "Charte LU Harmony"
   },
   {
-    "key": "en:chicken-welfare",
-    "name": "Chicken welfare"
-  },
-  {
-    "key": "en:chickens-raised-without-antibiotics-since-birth",
-    "name": "Chickens raised without antibiotics since birth"
-  },
-  {
     "key": "en:no-cholesterol",
     "name": "Cholesterinfrei"
   },
@@ -76,16 +72,136 @@
     "name": "Mediterranean International Wine and Spirit Challenge"
   },
   {
+    "key": "en:migros-m-check",
+    "name": "Migros M-Check"
+  },
+  {
+    "key": "en:migros-m-check-fish-from-responsible-sources-1-5",
+    "name": "Migros M-Check Fisch aus verantwortungsvollen Quellen 1/5"
+  },
+  {
+    "key": "en:migros-m-check-fish-from-responsible-sources-2-5",
+    "name": "Migros M-Check Fisch aus verantwortungsvollen Quellen 2/5"
+  },
+  {
+    "key": "en:migros-m-check-fish-from-responsible-sources-3-5",
+    "name": "Migros M-Check Fisch aus verantwortungsvollen Quellen 3/5"
+  },
+  {
+    "key": "en:migros-m-check-fish-from-responsible-sources-4-5",
+    "name": "Migros M-Check Fisch aus verantwortungsvollen Quellen 4/5"
+  },
+  {
+    "key": "en:migros-m-check-fish-from-responsible-sources-5-5",
+    "name": "Migros M-Check Fisch aus verantwortungsvollen Quellen 5/5"
+  },
+  {
+    "key": "en:migros-m-check-climate-compatibility-1-5",
+    "name": "Migros M-Check Klimaverträglichkeit 1/5"
+  },
+  {
+    "key": "en:migros-m-check-climate-compatibility-2-5",
+    "name": "Migros M-Check Klimaverträglichkeit 2/5"
+  },
+  {
+    "key": "en:migros-m-check-climate-compatibility-3-5",
+    "name": "Migros M-Check Klimaverträglichkeit 3/5"
+  },
+  {
+    "key": "en:migros-m-check-climate-compatibility-4-5",
+    "name": "Migros M-Check Klimaverträglichkeit 4/5"
+  },
+  {
+    "key": "en:migros-m-check-climate-compatibility-5-5",
+    "name": "Migros M-Check Klimaverträglichkeit 5/5"
+  },
+  {
+    "key": "en:migros-m-check-recyclable-constituent-materials-1-5",
+    "name": "Migros M-Check Rezyklierbare Inhaltsstoffe 1/5"
+  },
+  {
+    "key": "en:migros-m-check-recyclable-constituent-materials-2-5",
+    "name": "Migros M-Check Rezyklierbare Inhaltsstoffe 2/5"
+  },
+  {
+    "key": "en:migros-m-check-recyclable-constituent-materials-3-5",
+    "name": "Migros M-Check Rezyklierbare Inhaltsstoffe 3/5"
+  },
+  {
+    "key": "en:migros-m-check-recyclable-constituent-materials-4-5",
+    "name": "Migros M-Check Rezyklierbare Inhaltsstoffe 4/5"
+  },
+  {
+    "key": "en:migros-m-check-recyclable-constituent-materials-5-5",
+    "name": "Migros M-Check Rezyklierbare Inhaltsstoffe 5/5"
+  },
+  {
+    "key": "en:migros-m-check-animal-welfare-1-5",
+    "name": "Migros M-Check Tierwohl 1/5"
+  },
+  {
+    "key": "en:migros-m-check-animal-welfare-2-5",
+    "name": "Migros M-Check Tierwohl 2/5"
+  },
+  {
+    "key": "en:migros-m-check-animal-welfare-3-5",
+    "name": "Migros M-Check Tierwohl 3/5"
+  },
+  {
+    "key": "en:migros-m-check-animal-welfare-4-5",
+    "name": "Migros M-Check Tierwohl 4/5"
+  },
+  {
+    "key": "en:migros-m-check-animal-welfare-5-5",
+    "name": "Migros M-Check Tierwohl 5/5"
+  },
+  {
+    "key": "en:migros-m-check-environmentally-friendly-packaging-1-5",
+    "name": "Migros M-Check Umweltfreundliche Verpackung 1/5"
+  },
+  {
+    "key": "en:migros-m-check-environmentally-friendly-packaging-2-5",
+    "name": "Migros M-Check Umweltfreundliche Verpackung 2/5"
+  },
+  {
+    "key": "en:migros-m-check-environmentally-friendly-packaging-3-5",
+    "name": "Migros M-Check Umweltfreundliche Verpackung 3/5"
+  },
+  {
+    "key": "en:migros-m-check-environmentally-friendly-packaging-4-5",
+    "name": "Migros M-Check Umweltfreundliche Verpackung 4/5"
+  },
+  {
+    "key": "en:migros-m-check-environmentally-friendly-packaging-5-5",
+    "name": "Migros M-Check Umweltfreundliche Verpackung 5/5"
+  },
+  {
+    "key": "en:migros-m-check-environmentally-compatible-constituent-materials-1-5",
+    "name": "Migros M-Check Umweltverträgliche Inhaltsstoffe 1/5"
+  },
+  {
+    "key": "en:migros-m-check-environmentally-compatible-constituent-materials-2-5",
+    "name": "Migros M-Check Umweltverträgliche Inhaltsstoffe 2/5"
+  },
+  {
+    "key": "en:migros-m-check-environmentally-compatible-constituent-materials-3-5",
+    "name": "Migros M-Check Umweltverträgliche Inhaltsstoffe 3/5"
+  },
+  {
+    "key": "en:migros-m-check-environmentally-compatible-constituent-materials-4-5",
+    "name": "Migros M-Check Umweltverträgliche Inhaltsstoffe 4/5"
+  },
+  {
+    "key": "en:migros-m-check-environmentally-compatible-constituent-materials-5-5",
+    "name": "Migros M-Check Umweltverträgliche Inhaltsstoffe 5/5"
+  },
+  {
     "key": "en:national-standard-for-bulgarian-white-cheese-in-brine",
     "name": "National standard for Bulgarian white cheese in brine"
   },
   {
     "key": "en:new-standard-chicken",
     "name": "New standard chicken"
-  },
-  {
-    "key": "en:not-suited-for-children-under-1-years",
-    "name": "Not suited for children under 1 years"
   },
   {
     "key": "en:pdo-chufa-de-valencia",

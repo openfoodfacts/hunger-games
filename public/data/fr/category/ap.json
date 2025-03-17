@@ -16,6 +16,10 @@
     "name": "Abricots au sirop léger appertisés non égouttés"
   },
   {
+    "key": "en:american-style-pale-ale-apa",
+    "name": "American-style Pale Ale (APA)"
+  },
+  {
     "key": "en:canned-drained-pineapple-in-pineapple-juice-and-syrup",
     "name": "Ananas au sirop et jus d'ananas appertisé égoutté"
   },
@@ -40,6 +44,14 @@
     "name": "Appenzeller"
   },
   {
+    "key": "en:appetite-control",
+    "name": "Appetite control"
+  },
+  {
+    "key": "en:apple-liqueur",
+    "name": "Apple liqueur"
+  },
+  {
     "key": "en:apple-pie-mixes",
     "name": "Apple Pie Mixes"
   },
@@ -52,11 +64,7 @@
     "name": "Applewood"
   },
   {
-    "key": "en:armagh-bramley-apples",
-    "name": "Armagh Bramley Apples"
-  },
-  {
-    "key": "en:salty-snacks-puff-pastry",
+    "key": "en:puffed-salty-snacks",
     "name": "Biscuit apéritif feuilleté"
   },
   {
@@ -68,12 +76,16 @@
     "name": "Biscuit apéritif soufflé à base de pomme de terre et de soja"
   },
   {
-    "key": "en:crackers",
+    "key": "en:crackers-appetizers",
     "name": "Biscuits apéritifs"
   },
   {
     "key": "en:salty-snacks-with-reduced-fat",
     "name": "Biscuits apéritifs allégés"
+  },
+  {
+    "key": "en:rice-crackers",
+    "name": "Biscuits apéritifs au riz"
   },
   {
     "key": "en:salty-sesame-snacks",
@@ -88,8 +100,8 @@
     "name": "Biscuits apéritifs nature"
   },
   {
-    "key": "en:puffed-salty-snacks",
-    "name": "Biscuits apéritifs soufflés"
+    "key": "en:puffed-salty-snacks-potato-soy-based",
+    "name": "Biscuits apéritifs soufflés (à base de pomme de terre/soja)"
   },
   {
     "key": "en:puffed-salty-snacks-made-from-maize",
@@ -100,24 +112,16 @@
     "name": "Biscuits apéritifs soufflés à base de pomme de terre"
   },
   {
+    "key": "en:biscuits-and-crackers",
+    "name": "Biscuits sucrés & biscuits apéritifs"
+  },
+  {
     "key": "en:coated-peanuts",
     "name": "Cacahuètes enrobées d'un biscuit pour apéritif"
   },
   {
     "key": "en:canned-palm-heart",
     "name": "Coeur de palmier appertisé"
-  },
-  {
-    "key": "en:elstar-apples",
-    "name": "Elstar apples"
-  },
-  {
-    "key": "en:enriched-apple-juices",
-    "name": "Enriched apple juices"
-  },
-  {
-    "key": "en:flavoured-apple-juices",
-    "name": "Flavoured apple juices"
   },
   {
     "key": "fr:flutes-et-torsades-aperitifs",
@@ -216,8 +220,8 @@
     "name": "Sirop pour fruits appertisés"
   },
   {
-    "key": "en:sparkling-apple-nectars",
-    "name": "Sparkling apple nectars"
+    "key": "en:sparkling-apple-or-pear-juices",
+    "name": "Sparkling apple or pear juices"
   },
   {
     "key": "en:thick-apple-pear-syrups",

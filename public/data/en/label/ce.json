@@ -1,7 +1,7 @@
 [
   {
-    "key": "en:calidad-certificada",
-    "name": "Calidad Certificada"
+    "key": "en:calidad-certificada-de-andalucia",
+    "name": "Calidad Certificada de Andalucía"
   },
   {
     "key": "en:ccof-certified-organic",
@@ -68,6 +68,10 @@
     "name": "Certified iVegan"
   },
   {
+    "key": "en:certified-plant-based",
+    "name": "Certified plant based"
+  },
+  {
     "key": "fr:produit-certifie",
     "name": "Certified product"
   },
@@ -132,11 +136,19 @@
     "name": "UTZ Certified Coffee"
   },
   {
+    "key": "en:utz-certified-hazelnut",
+    "name": "UTZ Certified Hazelnut"
+  },
+  {
     "key": "en:utz-certified-tea",
     "name": "UTZ Certified Tea"
   },
   {
     "key": "en:vegecert-certified-vegan",
     "name": "VegeCert - Certified Vegan"
+  },
+  {
+    "key": "en:welfair-certificate",
+    "name": "Welfair certificate"
   }
 ]

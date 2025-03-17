@@ -1,23 +1,23 @@
 [
   {
     "key": "en:alaska-pollock",
-    "name": "Alaska pollock"
+    "name": "Aljaski pollock"
   },
   {
-    "key": "en:breaded-alaska-pollock",
-    "name": "Breaded Alaska pollock"
-  },
-  {
-    "key": "en:corn-semolinas-for-polenta",
-    "name": "Corn semolinas for polenta"
+    "key": "en:whole-or-semi-whole-durum-wheat-letters",
+    "name": "Cjelovita ili polucjelovita durum pšenica slova"
   },
   {
     "key": "en:dried-pre-cooked-polenta-semolina",
     "name": "Dried pre-cooked polenta semolina"
   },
   {
-    "key": "en:fresh-pollen",
-    "name": "Fresh pollen"
+    "key": "en:whole-or-semi-whole-durum-wheat-farfalle",
+    "name": "Farfalle od cjelovite ili polucjelovite durum pšenice"
+  },
+  {
+    "key": "en:frozen-alaska-pollock",
+    "name": "Frozen Alaska pollock"
   },
   {
     "key": "en:lough-neagh-pollan",
@@ -25,43 +25,79 @@
   },
   {
     "key": "en:mantecados-and-polvorones",
-    "name": "Mantecados and polvorones"
+    "name": "Mantecados i polvorones"
   },
   {
     "key": "en:mantecados-and-polvorones-with-vegetal-fat",
-    "name": "Mantecados and polvorones with vegetal fat"
+    "name": "Mantecados i polvorones s biljnom masnoćom"
   },
   {
     "key": "en:mantecados-y-polvorones-with-margarine",
-    "name": "Mantecados y polvorones with margarine"
+    "name": "Mantecados y polvorones s margarinom"
   },
   {
     "key": "en:mantecados-y-polvorones-with-olive-oil",
-    "name": "Mantecados y polvorones with olive oil"
+    "name": "Mantecados y polvorones s maslinovim uljem"
   },
   {
-    "key": "en:partially-dried-pollen",
-    "name": "Partially dried pollen"
+    "key": "en:meat-patties",
+    "name": "Mesne polpete"
+  },
+  {
+    "key": "en:organic-semi-skimmed-milks",
+    "name": "Organsko poluobrano mlijeko"
+  },
+  {
+    "key": "en:beers-from-poland",
+    "name": "Piva iz Poljske"
+  },
+  {
+    "key": "en:breaded-alaska-pollock",
+    "name": "Pohani aljaski pollock"
+  },
+  {
+    "key": "en:polish-meat-products",
+    "name": "Polirati mesne proizvode"
   },
   {
     "key": "en:polish-bakery-products",
     "name": "Polish bakery products"
   },
   {
-    "key": "en:polish-cheeses",
-    "name": "Polish cheeses"
+    "key": "en:polish-pickles",
+    "name": "Polish pickles"
   },
   {
-    "key": "en:polish-meat-products",
-    "name": "Polish meat products"
-  },
-  {
-    "key": "en:polish-vodkas",
-    "name": "Polish vodkas"
+    "key": "en:polish-salts",
+    "name": "Polish salts"
   },
   {
     "key": "hr:poljički-soparnik",
     "name": "Poljički soparnik"
+  },
+  {
+    "key": "en:farming-products",
+    "name": "Poljoprivredni proizvodi"
+  },
+  {
+    "key": "en:agricultural-rums",
+    "name": "Poljoprivredni rumovi"
+  },
+  {
+    "key": "en:field-horsetail",
+    "name": "Poljska preslica"
+  },
+  {
+    "key": "en:polish-vodkas",
+    "name": "Poljske votke"
+  },
+  {
+    "key": "en:marrowfat-peas",
+    "name": "Poljski grah"
+  },
+  {
+    "key": "en:polish-cheeses",
+    "name": "Poljski sirevi"
   },
   {
     "key": "en:pollack",
@@ -72,39 +108,107 @@
     "name": "Pollan"
   },
   {
-    "key": "en:pollens",
-    "name": "Pollens"
-  },
-  {
     "key": "en:pollock-fillets",
-    "name": "Pollock fillets"
+    "name": "Pollock fileti"
   },
   {
     "key": "en:pollocks",
     "name": "Pollocks"
   },
   {
-    "key": "en:semi-polished-common-wheat-flours",
-    "name": "Semi-polished common wheat flours"
+    "key": "en:semi-preserved-lump-roe",
+    "name": "Polukonzervirana grumena ikra"
   },
   {
-    "key": "en:semi-polished-einkorn-wheat-flours",
-    "name": "Semi-polished einkorn wheat flours"
+    "key": "en:semi-preserved-caviar",
+    "name": "Polukonzervirani kavijar"
+  },
+  {
+    "key": "en:semi-preserved-foods",
+    "name": "Polukonzervisana hrana"
+  },
+  {
+    "key": "en:half-cooked-pressed-cheeses",
+    "name": "Polukuhani prešani sirevi"
+  },
+  {
+    "key": "en:semi-milled-jasmine-rices",
+    "name": "Polumljevene riže jasmina"
+  },
+  {
+    "key": "en:semi-skimmed-milks",
+    "name": "Poluobrano mlijeko"
+  },
+  {
+    "key": "en:semi-skimmed-milk-with-reduced-lactose",
+    "name": "Poluobrano mlijeko sa smanjenom količinom laktoze"
+  },
+  {
+    "key": "en:semi-skimmed-milk-uht",
+    "name": "Poluobrano mlijeko uht"
+  },
+  {
+    "key": "en:semi-skimmed-pasteurised-milk",
+    "name": "Poluobrano pasterizirano mlijeko"
   },
   {
     "key": "en:semi-polished-wheat-flours",
-    "name": "Semi-polished wheat flours"
+    "name": "Polupolirana pšenična brašna"
+  },
+  {
+    "key": "en:semi-polished-einkorn-wheat-flours",
+    "name": "Polupolirana pšenična brašna od jednozrna"
+  },
+  {
+    "key": "en:semi-polished-common-wheat-flours",
+    "name": "Polupolirano brašno od obične pšenice"
+  },
+  {
+    "key": "en:half-salted-butter",
+    "name": "Poluslani maslac"
+  },
+  {
+    "key": "en:half-dry-ciders",
+    "name": "Polusuhi cideri"
+  },
+  {
+    "key": "en:semi-cured-cheese",
+    "name": "Polusušeni sir"
+  },
+  {
+    "key": "en:semi-ripe-whole-olives",
+    "name": "Poluzrele cijele masline"
+  },
+  {
+    "key": "en:semi-ripe-olives",
+    "name": "Poluzrele masline"
+  },
+  {
+    "key": "en:shelf-stable-cooking-helpers",
+    "name": "Pomoćnici kuhanja stabilni na policama"
   },
   {
     "key": "en:smoked-alaska-pollock",
     "name": "Smoked Alaska pollock"
   },
   {
-    "key": "en:traditional-lithuanian-polish-cakes",
-    "name": "Traditional Lithuanian-Polish cakes"
+    "key": "en:whole-or-semi-whole-durum-wheat-spaghetti",
+    "name": "Špageti od punog ili polucjelovitog zrna durum pšenice"
   },
   {
     "key": "en:unsalted-polenta",
     "name": "Unsalted polenta"
+  },
+  {
+    "key": "en:vegan-patties",
+    "name": "Veganske polpete"
+  },
+  {
+    "key": "en:vegetarian-patties",
+    "name": "Vegetarijanske polpete"
+  },
+  {
+    "key": "en:whole-or-semi-whole-durum-wheat-stars",
+    "name": "Zvjezdice od punog ili polucjelovitog zrna durum pšenice"
   }
 ]

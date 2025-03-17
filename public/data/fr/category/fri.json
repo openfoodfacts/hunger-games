@@ -16,12 +16,12 @@
     "name": "Chips et frites"
   },
   {
-    "key": "en:curly-kale",
-    "name": "Chou frisé"
-  },
-  {
     "key": "en:cooked-curly-kale",
     "name": "Chou frisé cuit"
+  },
+  {
+    "key": "en:fried-pork-rind",
+    "name": "Couennes de porc frites"
   },
   {
     "key": "en:fried-fish-croquette",
@@ -46,10 +46,6 @@
   {
     "key": "en:fried-cheese",
     "name": "Fried cheese"
-  },
-  {
-    "key": "en:fried-chicken-wraps",
-    "name": "Fried chicken wraps"
   },
   {
     "key": "en:fried-potato-sauces",
@@ -168,7 +164,15 @@
     "name": "Substituts des fricadelles"
   },
   {
+    "key": "en:takeaway-fries",
+    "name": "Takeaway fries"
+  },
+  {
     "key": "fr:vacherin-fribourgeois",
     "name": "Vacherin fribourgeois"
+  },
+  {
+    "key": "en:fried-chicken-wraps",
+    "name": "Wraps au poulet frit"
   }
 ]

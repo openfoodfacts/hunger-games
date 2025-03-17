@@ -88,8 +88,16 @@
     "name": "Chicken breasts"
   },
   {
+    "key": "en:chicken-carcass",
+    "name": "Chicken carcass"
+  },
+  {
     "key": "en:chicken-chop-suey",
     "name": "Chicken chop suey"
+  },
+  {
+    "key": "en:chicken-cordons-bleus",
+    "name": "Chicken cordons bleus"
   },
   {
     "key": "en:chicken-couscous",
@@ -120,6 +128,10 @@
     "name": "Chicken fat"
   },
   {
+    "key": "en:chicken-feet",
+    "name": "Chicken feet"
+  },
+  {
     "key": "en:chicken-free-range-meat-and-skin-raw",
     "name": "Chicken free-range meat and skin raw"
   },
@@ -138,6 +150,18 @@
   {
     "key": "en:chicken-high-leg-meat-raw",
     "name": "Chicken high leg meat raw"
+  },
+  {
+    "key": "en:chicken-hotpot",
+    "name": "Chicken hotpot"
+  },
+  {
+    "key": "en:chicken-kievs",
+    "name": "Chicken kievs"
+  },
+  {
+    "key": "en:chicken-kievs-substitutes",
+    "name": "Chicken kievs substitutes"
   },
   {
     "key": "en:chicken-leg-meat-and-skin-raw",
@@ -176,6 +200,10 @@
     "name": "Chicken nuggets"
   },
   {
+    "key": "en:chicken-offals",
+    "name": "Chicken offals"
+  },
+  {
     "key": "en:chicken-patties",
     "name": "Chicken patties"
   },
@@ -204,12 +232,20 @@
     "name": "Chicken salads"
   },
   {
+    "key": "en:chicken-salami",
+    "name": "Chicken salami"
+  },
+  {
     "key": "en:chicken-sandwiches",
     "name": "Chicken sandwiches"
   },
   {
     "key": "en:chicken-sausages",
     "name": "Chicken sausages"
+  },
+  {
+    "key": "en:chicken-seasoning",
+    "name": "Chicken seasoning"
   },
   {
     "key": "en:chicken-skewers",
@@ -222,6 +258,10 @@
   {
     "key": "en:chicken-spreads",
     "name": "Chicken spreads"
+  },
+  {
+    "key": "en:chicken-stewing-leg-frozen",
+    "name": "Chicken stewing leg frozen"
   },
   {
     "key": "en:chicken-stewing-leg-raw",
@@ -245,7 +285,7 @@
   },
   {
     "key": "en:chicken-tikka",
-    "name": "Chicken Tikka"
+    "name": "Chicken tikka"
   },
   {
     "key": "en:chicken-tikka-masala",
@@ -304,10 +344,6 @@
     "name": "Chili sin carne"
   },
   {
-    "key": "en:chinese-artichokes",
-    "name": "Chinese artichokes"
-  },
-  {
     "key": "en:chinese-black-truffles",
     "name": "Chinese black truffles"
   },
@@ -348,6 +384,10 @@
     "name": "Chinese sea products"
   },
   {
+    "key": "en:chinotto",
+    "name": "Chinotto"
+  },
+  {
     "key": "en:chipolatas",
     "name": "Chipolatas"
   },
@@ -380,8 +420,8 @@
     "name": "Chocolate chip muffins"
   },
   {
-    "key": "en:chocolate-covered-chickpeas",
-    "name": "Chocolate covered chickpeas"
+    "key": "en:chocolate-coated-chickpeas",
+    "name": "Chocolate coated chickpeas"
   },
   {
     "key": "en:cooked-chick-peas",
@@ -440,16 +480,32 @@
     "name": "Dried chickpeas"
   },
   {
+    "key": "en:dried-chives",
+    "name": "Dried Chives"
+  },
+  {
     "key": "en:dried-coconut-chips",
     "name": "Dried coconut chips"
+  },
+  {
+    "key": "en:dry-chickpea-pasta",
+    "name": "Dry chickpea pasta"
   },
   {
     "key": "en:escacena-chickpeas",
     "name": "Escacena chickpeas"
   },
   {
+    "key": "en:fish-and-chips",
+    "name": "Fish and Chips"
+  },
+  {
     "key": "en:free-range-chicken-eggs",
     "name": "Free-range chicken eggs"
+  },
+  {
+    "key": "en:fresh-chickpea-pasta",
+    "name": "Fresh chickpea pasta"
   },
   {
     "key": "en:fresh-chives",
@@ -460,12 +516,40 @@
     "name": "Fried chicken wraps"
   },
   {
-    "key": "en:frozen-chickpeas",
-    "name": "Frozen chickpeas"
+    "key": "en:frozen-breaded-chicken",
+    "name": "Frozen breaded chicken"
   },
   {
-    "key": "en:frozen-chinese-artichokes",
-    "name": "Frozen Chinese artichokes"
+    "key": "en:frozen-chicken-breast-without-skin-raw",
+    "name": "Frozen chicken breast without skin raw"
+  },
+  {
+    "key": "en:frozen-chicken-eggs",
+    "name": "Frozen chicken eggs"
+  },
+  {
+    "key": "en:frozen-chicken-leg-meat-and-skin-raw",
+    "name": "Frozen chicken leg meat and skin raw"
+  },
+  {
+    "key": "en:frozen-chicken-nuggets",
+    "name": "Frozen chicken nuggets"
+  },
+  {
+    "key": "en:frozen-chicken-skewers",
+    "name": "Frozen chicken skewers"
+  },
+  {
+    "key": "en:frozen-chicken-wings",
+    "name": "Frozen chicken wings"
+  },
+  {
+    "key": "en:frozen-chickens",
+    "name": "Frozen chickens"
+  },
+  {
+    "key": "en:frozen-chickpeas",
+    "name": "Frozen chickpeas"
   },
   {
     "key": "en:frozen-chives",
@@ -474,6 +558,10 @@
   {
     "key": "en:frozen-cooked-spiced-potato-chips",
     "name": "Frozen cooked spiced potato chips"
+  },
+  {
+    "key": "en:frozen-yakitori-chicken-skewers",
+    "name": "Frozen Yakitori chicken skewers"
   },
   {
     "key": "en:fuentesauco-chickpeas",
@@ -526,6 +614,10 @@
   {
     "key": "en:liquid-chicken-broths",
     "name": "Liquid chicken broths"
+  },
+  {
+    "key": "en:liquid-chicory",
+    "name": "Liquid chicory"
   },
   {
     "key": "en:lyophilized-chives",

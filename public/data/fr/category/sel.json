@@ -20,12 +20,8 @@
     "name": "Beurres demi-sel à 80% MG"
   },
   {
-    "key": "en:unsalted-rusk",
-    "name": "Biscotte sans adjonction de sel"
-  },
-  {
-    "key": "fr:biscottes-pauvres-en-sel",
-    "name": "Biscottes pauvres en sel"
+    "key": "en:rusks-without-salt",
+    "name": "Biscottes sans sel"
   },
   {
     "key": "en:prepared-meats-with-less-salt",
@@ -124,12 +120,20 @@
     "name": "Matière grasse végétale légère à 30-40% doux demi-sel"
   },
   {
+    "key": "en:unsalted-hazelnuts",
+    "name": "Noisettes sans sel"
+  },
+  {
     "key": "en:salt-cured-pork-ear",
     "name": "Oreille de porc demi-sel"
   },
   {
     "key": "en:salt-cured-pork-trotters",
     "name": "Pied de porc demi-sel"
+  },
+  {
+    "key": "en:unsalted-pistachios",
+    "name": "Pistaches sans sel"
   },
   {
     "key": "en:salt-cured-pork-belly",
@@ -250,6 +254,10 @@
   {
     "key": "en:portuguese-salts",
     "name": "Sels portugais"
+  },
+  {
+    "key": "en:low-sodium-salts",
+    "name": "Sels réduits en sodium"
   },
   {
     "key": "fr:sels-roses-de-l-himalaya",

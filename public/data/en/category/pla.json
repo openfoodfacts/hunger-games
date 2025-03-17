@@ -24,10 +24,6 @@
     "name": "Canned plant-based foods"
   },
   {
-    "key": "en:coconut-based-drink-plain-prepacked",
-    "name": "Coconut-based drink plain prepacked"
-  },
-  {
     "key": "en:cooked-plantain-bananas",
     "name": "Cooked plantain bananas"
   },
@@ -64,8 +60,8 @@
     "name": "European plaice"
   },
   {
-    "key": "en:fat-free-plain-fermented-milk-yogurt",
-    "name": "Fat free plain fermented milk yogurt"
+    "key": "en:fat-free-plain-fermented-dairy-desserts",
+    "name": "Fat free plain fermented dairy desserts"
   },
   {
     "key": "en:fat-free-plain-fresh-cream-cheese",
@@ -112,6 +108,10 @@
     "name": "Fruit and plant-milk beverages"
   },
   {
+    "key": "en:greek-style-yogurts-plain",
+    "name": "Greek-style yogurts (plain)"
+  },
+  {
     "key": "en:green-beans-imported-by-plane",
     "name": "Green beans imported by plane"
   },
@@ -140,8 +140,12 @@
     "name": "Mixed plant milks"
   },
   {
-    "key": "en:mixtures-of-aromatic-plants",
-    "name": "Mixtures of aromatic plants"
+    "key": "en:pecan-nuts-plain",
+    "name": "Pecan nuts(plain)"
+  },
+  {
+    "key": "en:pine-nuts-plain",
+    "name": "Pine nuts(plain)"
   },
   {
     "key": "en:plain-bifidus-yogurts",
@@ -184,6 +188,10 @@
     "name": "Plain cottage cheeses"
   },
   {
+    "key": "en:plain-cow-milk-yogurts",
+    "name": "Plain cow milk yogurts"
+  },
+  {
     "key": "en:plain-creamy-fresh-cream-cheese-around-8-fat",
     "name": "Plain creamy fresh cream cheese around 8% fat"
   },
@@ -216,28 +224,36 @@
     "name": "Plain doughnuts"
   },
   {
+    "key": "en:plain-drinkable-yogurts",
+    "name": "Plain drinkable yogurts"
+  },
+  {
     "key": "en:plain-fermented-dairy-desserts",
     "name": "Plain fermented dairy desserts"
   },
   {
-    "key": "en:plain-fermented-milk-yogurt-with-cream",
-    "name": "Plain fermented milk yogurt with cream"
+    "key": "en:plain-fermented-dairy-desserts-with-cream",
+    "name": "Plain fermented dairy desserts with cream"
   },
   {
     "key": "en:plain-fermented-skimmed-milk-drink",
     "name": "Plain fermented skimmed milk drink"
   },
   {
+    "key": "en:plain-fresh-cream-cheese-around-1-fat",
+    "name": "Plain fresh cream cheese around 1% fat"
+  },
+  {
     "key": "en:plain-fresh-cream-cheese-around-3-fat",
     "name": "Plain fresh cream cheese around 3% fat"
   },
   {
-    "key": "en:plain-goat-yogurts",
-    "name": "Plain goat yogurts"
+    "key": "en:plain-fresh-cream-cheese-reduced-fat",
+    "name": "Plain fresh cream cheese reduced fat"
   },
   {
-    "key": "en:plain-greek-style-yogurts",
-    "name": "Plain greek-style yogurts"
+    "key": "en:plain-goat-yogurts",
+    "name": "Plain goat yogurts"
   },
   {
     "key": "en:plain-junkets",
@@ -246,6 +262,10 @@
   {
     "key": "en:plain-lardons",
     "name": "Plain lardons"
+  },
+  {
+    "key": "en:plain-low-fat-yogurts",
+    "name": "Plain low-fat yogurts"
   },
   {
     "key": "en:plain-mackerel-fillets",
@@ -260,12 +280,12 @@
     "name": "Plain milk bread rolls"
   },
   {
-    "key": "en:plain-panna-cottas",
-    "name": "Plain panna cottas"
+    "key": "en:plain-naans",
+    "name": "Plain naans"
   },
   {
-    "key": "en:plain-pecan-nuts",
-    "name": "Plain pecan nuts"
+    "key": "en:plain-panna-cottas",
+    "name": "Plain panna cottas"
   },
   {
     "key": "en:plain-petit-suisse",
@@ -280,12 +300,28 @@
     "name": "Plain Petit-Suisse around 9% fat"
   },
   {
+    "key": "en:plain-pistachios",
+    "name": "Plain pistachios"
+  },
+  {
     "key": "en:plain-popcorn",
     "name": "Plain popcorn"
   },
   {
     "key": "en:plain-porridge",
     "name": "Plain porridge"
+  },
+  {
+    "key": "en:plain-puffed-rice",
+    "name": "Plain puffed rice"
+  },
+  {
+    "key": "en:plain-puffed-spelt",
+    "name": "Plain puffed spelt"
+  },
+  {
+    "key": "en:plain-puffed-wheat",
+    "name": "Plain puffed wheat"
   },
   {
     "key": "en:plain-quarks",
@@ -296,8 +332,20 @@
     "name": "Plain quenelles"
   },
   {
+    "key": "en:plain-rice-puddings",
+    "name": "Plain rice puddings"
+  },
+  {
+    "key": "en:plain-rice-based-drinks",
+    "name": "Plain rice-based drinks"
+  },
+  {
     "key": "en:plain-salty-snacks",
     "name": "Plain salty snacks"
+  },
+  {
+    "key": "en:plain-sheep-milk-yogurts",
+    "name": "Plain sheep milk yogurts"
   },
   {
     "key": "en:plain-skyrs",
@@ -348,10 +396,6 @@
     "name": "Plant milk chocolates"
   },
   {
-    "key": "en:plant-milks",
-    "name": "Plant milks"
-  },
-  {
     "key": "en:plant-based-beverage-for-baby",
     "name": "Plant-based beverage for baby"
   },
@@ -400,6 +444,10 @@
     "name": "Plant-based meals"
   },
   {
+    "key": "en:plant-based-milk-alternatives",
+    "name": "Plant-based milk alternatives"
+  },
+  {
     "key": "en:plant-based-mixed-pickles",
     "name": "Plant-based mixed pickles"
   },
@@ -412,6 +460,10 @@
     "name": "Plant-based pickles"
   },
   {
+    "key": "en:plant-based-pizzas",
+    "name": "Plant-based pizzas"
+  },
+  {
     "key": "en:plant-based-sausage-with-wheat-or-seitan",
     "name": "Plant-based sausage with wheat or seitan"
   },
@@ -422,6 +474,10 @@
   {
     "key": "en:plantain-bananas",
     "name": "Plantain bananas"
+  },
+  {
+    "key": "en:plantbased-gelatin",
+    "name": "Plantbased gelatin"
   },
   {
     "key": "en:platerines",
@@ -464,7 +520,31 @@
     "name": "Steamed European plaice"
   },
   {
+    "key": "en:sweetened-plain-almond-based-drinks",
+    "name": "Sweetened plain almond-based drinks"
+  },
+  {
     "key": "en:sweetened-plain-bifidus-yogurts",
     "name": "Sweetened plain bifidus yogurts"
+  },
+  {
+    "key": "en:sweetened-plain-oat-based-drinks",
+    "name": "Sweetened plain oat-based drinks"
+  },
+  {
+    "key": "en:sweetened-plain-soy-based-drinks",
+    "name": "Sweetened plain soy-based drinks"
+  },
+  {
+    "key": "en:unsweetened-plain-almond-based-drinks",
+    "name": "Unsweetened plain almond-based drinks"
+  },
+  {
+    "key": "en:unsweetened-plain-oat-based-drinks",
+    "name": "Unsweetened plain oat-based drinks"
+  },
+  {
+    "key": "en:unsweetened-plain-soy-based-drinks",
+    "name": "Unsweetened plain soy-based drinks"
   }
 ]

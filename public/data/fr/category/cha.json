@@ -64,10 +64,6 @@
     "name": "Bières à la chataigne"
   },
   {
-    "key": "en:cat-biscuits",
-    "name": "Biscuits pour chats"
-  },
-  {
     "key": "fr:boeuf-charolais-du-bourbonnais",
     "name": "Bœuf charolais du Bourbonnais"
   },
@@ -84,11 +80,11 @@
     "name": "Boissons chaudes"
   },
   {
-    "key": "en:hemp-milks",
+    "key": "en:hemp-based-drinks",
     "name": "Boissons végétales de chanvre"
   },
   {
-    "key": "en:chestnut-milks",
+    "key": "en:chestnut-based-drinks",
     "name": "Boissons végétales de châtaigne"
   },
   {
@@ -126,6 +122,10 @@
   {
     "key": "fr:bourgogne-le-chapitre",
     "name": "Bourgogne-le-chapitre"
+  },
+  {
+    "key": "en:chaat",
+    "name": "Chaat"
   },
   {
     "key": "fr:chabichous-du-poitou",
@@ -342,6 +342,10 @@
   {
     "key": "en:sausage-meat-with-pure-pork",
     "name": "Chair à saucisse pur porc"
+  },
+  {
+    "key": "en:coconut-kernel-in-syrup",
+    "name": "Chair de noix de coco au sirop"
   },
   {
     "key": "fr:chair-de-tomates",
@@ -588,6 +592,10 @@
     "name": "Champignons frais"
   },
   {
+    "key": "en:pickled-mushrooms",
+    "name": "Champignons marinés"
+  },
+  {
     "key": "en:nameko-mushrooms",
     "name": "Champignons nameko"
   },
@@ -618,6 +626,10 @@
   {
     "key": "en:frozen-mushrooms",
     "name": "Champignons surgelés"
+  },
+  {
+    "key": "en:pickled-chanterelles",
+    "name": "Chanterelles marinées"
   },
   {
     "key": "en:chaource",
@@ -670,6 +682,10 @@
   {
     "key": "fr:charcuteries-diverses",
     "name": "Charcuteries diverses"
+  },
+  {
+    "key": "en:mary-thistle",
+    "name": "Chardon-Marie"
   },
   {
     "key": "fr:charentais",
@@ -732,8 +748,24 @@
     "name": "Chassagne-Montrachet premier cru Blanchot Dessus"
   },
   {
+    "key": "fr:chassagne-montrachet-premier-cru-blanchot-dessus-blanc",
+    "name": "Chassagne-Montrachet premier cru Blanchot dessus blanc"
+  },
+  {
+    "key": "fr:chassagne-montrachet-premier-cru-blanchot-dessus-rouge",
+    "name": "Chassagne-Montrachet premier cru Blanchot dessus rouge"
+  },
+  {
     "key": "fr:chassagne-montrachet-premier-cru-bois-de-chassagne",
     "name": "Chassagne-Montrachet premier cru Bois de Chassagne"
+  },
+  {
+    "key": "fr:chassagne-montrachet-premier-cru-bois-de-chassagne-blanc",
+    "name": "Chassagne-Montrachet premier cru Bois de Chassagne blanc"
+  },
+  {
+    "key": "fr:chassagne-montrachet-premier-cru-bois-de-chassagne-rouge",
+    "name": "Chassagne-Montrachet premier cru Bois de Chassagne rouge"
   },
   {
     "key": "fr:chassagne-montrachet-premier-cru-cailleret",
@@ -1328,6 +1360,10 @@
     "name": "Châteauneuf-du-Pape"
   },
   {
+    "key": "fr:chateauneuf-du-pape-blanc",
+    "name": "Châteauneuf-du-Pape blanc"
+  },
+  {
     "key": "fr:chatillon-en-diois",
     "name": "Châtillon-en-Diois"
   },
@@ -1382,10 +1418,6 @@
   {
     "key": "en:buckwheat-crepe-filled-with-cheese-ham-and-mushrooms",
     "name": "Crêpes jambon fromage champignon"
-  },
-  {
-    "key": "en:dry-cat-food",
-    "name": "Croquettes pour chat"
   },
   {
     "key": "en:crottin-de-chavignol-cheese",
@@ -1744,18 +1776,6 @@
     "name": "Morey-Saint-Denis premier cru Les Charrières rouge"
   },
   {
-    "key": "en:senior-cat-food",
-    "name": "Nourriture pour chat agé"
-  },
-  {
-    "key": "en:castrated-cat-food",
-    "name": "Nourriture pour chat castré"
-  },
-  {
-    "key": "en:cat-food",
-    "name": "Nourriture pour chats"
-  },
-  {
     "key": "fr:nuits-saint-georges-premier-cru-aux-chaignots",
     "name": "Nuits-Saint-Georges premier cru Aux Chaignots"
   },
@@ -1832,10 +1852,6 @@
     "name": "Omelette aux champignons"
   },
   {
-    "key": "en:wet-cat-food",
-    "name": "Pâtées pour chat"
-  },
-  {
     "key": "en:pasta-with-mushrooms",
     "name": "Pâtes aux champignons"
   },
@@ -1864,6 +1880,10 @@
     "name": "Poêlée de légumes assaisonnés surgelée sans champignons"
   },
   {
+    "key": "en:marrowfat-peas",
+    "name": "Pois des champs"
+  },
+  {
     "key": "fr:pommard-la-chaniere",
     "name": "Pommard La Chanière"
   },
@@ -1878,6 +1898,10 @@
   {
     "key": "fr:pommard-les-charmots",
     "name": "Pommard Les Charmots"
+  },
+  {
+    "key": "en:apples-chantecler",
+    "name": "Pommes Chantecler"
   },
   {
     "key": "en:charlotte-potatoes",
@@ -1952,7 +1976,7 @@
     "name": "Rillettes de gibiers de chasse"
   },
   {
-    "key": "en:mushrooms-risottos",
+    "key": "en:mushroom-risottos",
     "name": "Risottos aux champignons"
   },
   {
@@ -2146,6 +2170,10 @@
   {
     "key": "en:chamois-fresh-meat",
     "name": "Viande fraîche de Chamois"
+  },
+  {
+    "key": "en:champaign-vinegars",
+    "name": "Vinaigre de Champagne"
   },
   {
     "key": "fr:volailles-de-challans",

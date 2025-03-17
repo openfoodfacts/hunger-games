@@ -1,6 +1,6 @@
 [
   {
-    "key": "en:chocolate-covered-almonds",
+    "key": "en:chocolate-coated-almonds",
     "name": "Amandes enrobées de chocolat"
   },
   {
@@ -32,10 +32,6 @@
     "name": "Barre de céréales au chocolat renforcée en vitamines et minéraux"
   },
   {
-    "key": "en:milky-cereal-breakfast-bar-with-chocolate-fortified-with-vitamins-and-minerals",
-    "name": "Barre de céréales au lait et au chocolat"
-  },
-  {
     "key": "en:milk-chocolate-bar-with-nougat",
     "name": "Barre de chocolat au lait avec nougat"
   },
@@ -48,11 +44,7 @@
     "name": "Barre de chocolat au lait frais avec génoise"
   },
   {
-    "key": "en:chocolate-coated-ice-cream",
-    "name": "Barre glacée chocolatée"
-  },
-  {
-    "key": "en:bars-covered-with-chocolate",
+    "key": "en:candy-chocolate-bars",
     "name": "Barres chocolatées"
   },
   {
@@ -68,7 +60,7 @@
     "name": "Barres chocolatées au lait"
   },
   {
-    "key": "fr:barres-chocolatees-au-lait-et-aux-cereales",
+    "key": "en:chocolate-covered-bars-with-milk-and-cereals",
     "name": "Barres chocolatées au lait et aux céréales"
   },
   {
@@ -92,6 +84,10 @@
     "name": "Barres chocolatées fourrées aux fruits"
   },
   {
+    "key": "en:ice-cream-candy-chocolate-bars",
+    "name": "Barres chocolatées glacées"
+  },
+  {
     "key": "en:chocolate-cereal-bars",
     "name": "Barres de céréales au chocolat"
   },
@@ -100,8 +96,28 @@
     "name": "Barres de céréales aux fruits et chocolat"
   },
   {
-    "key": "en:chocolate-ice-cream-bars",
-    "name": "Bâtonnets glacés au chocolat"
+    "key": "en:ice-cream-bars-coated-with-chocolate",
+    "name": "Bâtonnets glacés enrobés de chocolat"
+  },
+  {
+    "key": "en:vanilla-ice-cream-bars-coated-with-milk-chocolate",
+    "name": "Bâtonnets glacés vanille enrobés de chocolat au lait"
+  },
+  {
+    "key": "en:vanilla-ice-cream-bars-coated-with-milk-chocolate-and-almonds",
+    "name": "Bâtonnets glacés vanille enrobés de chocolat au lait aux amandes"
+  },
+  {
+    "key": "en:vanilla-ice-cream-bars-coated-with-white-chocolate",
+    "name": "Bâtonnets glacés vanille enrobés de chocolat blanc"
+  },
+  {
+    "key": "en:vanilla-ice-cream-bars-coated-with-white-chocolate-and-almonds",
+    "name": "Bâtonnets glacés vanille enrobés de chocolat blanc aux amandes"
+  },
+  {
+    "key": "en:vanilla-ice-cream-bars-coated-with-dark-chocolate",
+    "name": "Bâtonnets glacés vanille enrobés de chocolat noir"
   },
   {
     "key": "fr:beaune-les-chouacheux",
@@ -160,20 +176,24 @@
     "name": "Biscuits tablette de chocolat"
   },
   {
-    "key": "es:galletas-con-tableta-de-chocolate-con-leche",
+    "key": "en:biscuit-with-a-milk-chocolate-bar-covering",
     "name": "Biscuits tablette de chocolat au lait"
   },
   {
-    "key": "fr:biscuits-tablette-de-chocolat-blanc",
+    "key": "en:biscuit-with-a-white-chocolate-bar-covering",
     "name": "Biscuits tablette de chocolat blanc"
   },
   {
-    "key": "es:galletas-con-tableta-de-chocolate-negro",
+    "key": "en:biscuit-with-a-dark-chocolate-bar-covering",
     "name": "Biscuits tablette de chocolat noir"
   },
   {
     "key": "en:black-chopped-olives",
     "name": "Black chopped olives"
+  },
+  {
+    "key": "en:chocolate-puffed-wheat",
+    "name": "Blé soufflé chocolaté"
   },
   {
     "key": "en:instant-cocoa-or-chocolate-beverage-with-sugar-fortified-with-vitamins-and-chemical-elements-ready-to-drink-reconstituted-with-standard-semi-skimm",
@@ -184,7 +204,7 @@
     "name": "Boisson lactée aromatisée au chocolat sucrée au lait partiellement écrémé enrichie en vitamines et minéraux"
   },
   {
-    "key": "en:chocolate-soy-milks",
+    "key": "en:chocolate-soy-based-drinks",
     "name": "Boissons végétales de soja au chocolat"
   },
   {
@@ -224,7 +244,7 @@
     "name": "Brioches au chocolat"
   },
   {
-    "key": "en:chocolate-covered-peanuts",
+    "key": "en:chocolate-coated-peanuts",
     "name": "Cacahuètes au chocolat"
   },
   {
@@ -332,7 +352,7 @@
     "name": "Chocolat blanc en tablette aux noisettes"
   },
   {
-    "key": "fr:chocolat-blanc-en-tablette-aux-praline",
+    "key": "en:white-chocolate-bar-with-praline",
     "name": "Chocolat blanc en tablette aux praliné"
   },
   {
@@ -362,6 +382,22 @@
   {
     "key": "en:dark-chocolate-bar-for-cooking-with-more-than-40-cocoa",
     "name": "Chocolat noir pâtissier en tablette à 40% de cacao minimum"
+  },
+  {
+    "key": "en:chocolate-coated-pistachios",
+    "name": "Chocolate coated pistachios"
+  },
+  {
+    "key": "en:chocolate-covered-brazil-nuts",
+    "name": "Chocolate covered Brazil nuts"
+  },
+  {
+    "key": "en:chocolate-covered-nuts-and-fruits",
+    "name": "Chocolate covered nuts and fruits"
+  },
+  {
+    "key": "en:chocolate-covered-nuts-and-fruits-mixes",
+    "name": "Chocolate covered nuts and fruits mixes"
   },
   {
     "key": "en:chocolate-letters",
@@ -516,7 +552,7 @@
     "name": "Chocolats édulcorés"
   },
   {
-    "key": "en:chocolate-powders",
+    "key": "en:instant-chocolate-powders",
     "name": "Chocolats en poudre"
   },
   {
@@ -660,6 +696,14 @@
     "name": "Chorizo en tranches"
   },
   {
+    "key": "en:iberian-chorizo",
+    "name": "Chorizo Iberico"
+  },
+  {
+    "key": "en:sarta-chorizo",
+    "name": "Chorizo ​​Sarte"
+  },
+  {
     "key": "en:dry-spicy-pork-sausage-with-red-pepper",
     "name": "Chorizo supérieur doux"
   },
@@ -676,8 +720,12 @@
     "name": "Chou blanc"
   },
   {
-    "key": "en:chinese-cabbage",
-    "name": "Chou chinois"
+    "key": "en:pickled-white-cabbage",
+    "name": "Chou blanc mariné"
+  },
+  {
+    "key": "en:collard-greens",
+    "name": "Chou cavalier"
   },
   {
     "key": "en:cooked-chinese-cabbage",
@@ -690,10 +738,6 @@
   {
     "key": "en:fresh-cabbages",
     "name": "Chou frais"
-  },
-  {
-    "key": "en:curly-kale",
-    "name": "Chou frisé"
   },
   {
     "key": "en:cooked-curly-kale",
@@ -710,6 +754,10 @@
   {
     "key": "en:boiled-red-cabbage",
     "name": "Chou rouge boulli"
+  },
+  {
+    "key": "en:pickled-red-cabbage",
+    "name": "Chou rouge mariné"
   },
   {
     "key": "en:green-cabbage",
@@ -760,8 +808,16 @@
     "name": "Choux à la crème chantilly"
   },
   {
+    "key": "en:canned-white-cabbage",
+    "name": "Choux blancs en conserve"
+  },
+  {
     "key": "en:cabbages",
     "name": "Choux cabus"
+  },
+  {
+    "key": "en:chinese-cabbage",
+    "name": "Choux chinois"
   },
   {
     "key": "en:brussels-sprouts",
@@ -792,8 +848,20 @@
     "name": "Choux en conserve"
   },
   {
+    "key": "en:curly-kale",
+    "name": "Choux kale"
+  },
+  {
+    "key": "en:pointed-cabbages",
+    "name": "Choux pointus"
+  },
+  {
     "key": "en:romanesco",
     "name": "Choux romanesco"
+  },
+  {
+    "key": "en:canned-red-cabbage",
+    "name": "Choux rouges en conserve"
   },
   {
     "key": "en:fresh-red-cabbage",
@@ -802,6 +870,10 @@
   {
     "key": "en:frozen-red-cabbage",
     "name": "Choux rouges surgelés"
+  },
+  {
+    "key": "en:canned-green-cabbage",
+    "name": "Choux verts en conserve"
   },
   {
     "key": "en:cauliflowers",
@@ -852,8 +924,8 @@
     "name": "Confiseries chocolatées"
   },
   {
-    "key": "en:cooked-ham-choice-w-rind",
-    "name": "Cooked ham choice w rind"
+    "key": "en:fruit-preserves-with-chocolate",
+    "name": "Confitures au chocolat"
   },
   {
     "key": "en:chocolate-chip-cookies",
@@ -924,8 +996,8 @@
     "name": "Croissants fourrés au chocolat"
   },
   {
-    "key": "en:dark-choclate-sprinkles",
-    "name": "Dark choclate sprinkles"
+    "key": "en:dark-chocolate-sprinkles",
+    "name": "Dark chocolate sprinkles"
   },
   {
     "key": "fr:dessert-glace-feuillete-chocolat-brownie",
@@ -960,6 +1032,10 @@
     "name": "Épaule de porc cuite choix découennée dégraissée"
   },
   {
+    "key": "en:chocolate-puffed-spelt",
+    "name": "Épeautre soufflé chocolaté"
+  },
+  {
     "key": "en:chocolate-covered-figs",
     "name": "Figues enrobées de chocolat"
   },
@@ -992,15 +1068,11 @@
     "name": "Frozen chopped green beans"
   },
   {
-    "key": "fr:fruit-preserves-with-chocolate",
-    "name": "Fruit preserves with chocolate"
-  },
-  {
     "key": "en:chocolate-covered-nuts",
     "name": "Fruits à coques enrobés de chocolat"
   },
   {
-    "key": "en:chocolate-covered-fruits",
+    "key": "en:chocolate-coated-fruits",
     "name": "Fruits enrobés de chocolat"
   },
   {
@@ -1084,7 +1156,7 @@
     "name": "Glaces au chocolat"
   },
   {
-    "key": "fr:glaces-au-chocolat-blanc",
+    "key": "en:white-chocolate-ice-cream-tubs",
     "name": "Glaces au chocolat blanc"
   },
   {
@@ -1092,12 +1164,12 @@
     "name": "Goûter sec fourré (sandwiché) parfum chocolat"
   },
   {
-    "key": "en:chocolate-puffed-wheat-grains",
-    "name": "Grains de blé soufflés chocolatés"
-  },
-  {
     "key": "en:chocolate-puffed-wheat-grains-fortified-with-vitamins-and-chemical-elements",
     "name": "Grains de blé soufflés chocolatés enrichis en vitamines et minéraux"
+  },
+  {
+    "key": "en:chocolate-coated-coffee-beans",
+    "name": "Grains de café enrobés de chocolat"
   },
   {
     "key": "en:cauliflower-gratins",
@@ -1132,7 +1204,7 @@
     "name": "Laits aromatisés au chocolat partiellement écrémés"
   },
   {
-    "key": "en:chocolate-almond-milks",
+    "key": "en:chocolate-almond-based-drinks",
     "name": "Laits d'amande au chocolat"
   },
   {
@@ -1148,12 +1220,12 @@
     "name": "Madeleines au chocolat"
   },
   {
-    "key": "en:milk-choclate-sprinkles",
-    "name": "Milk choclate sprinkles"
+    "key": "fr:marquise-au-chocolat",
+    "name": "Marquise au chocolat"
   },
   {
-    "key": "en:milk-chocolate-molds",
-    "name": "Milk chocolate molds"
+    "key": "en:milk-chocolate-sprinkles",
+    "name": "Milk chocolate sprinkles"
   },
   {
     "key": "en:milk-chocolates-with-praline",
@@ -1164,12 +1236,16 @@
     "name": "Milk chocolates with raisins"
   },
   {
-    "key": "en:chocolate-cake-with-melting-centre",
+    "key": "en:molten-chocolate-cakes",
     "name": "Moelleux au chocolat"
   },
   {
     "key": "en:chocolate-molds",
     "name": "Moulages en chocolat"
+  },
+  {
+    "key": "en:milk-chocolate-molds",
+    "name": "Moulages en chocolat au lait"
   },
   {
     "key": "fr:mousse-au-chocolat-au-nougat",
@@ -1276,6 +1352,10 @@
     "name": "Pains au lait au chocolat"
   },
   {
+    "key": "en:bok-choy",
+    "name": "Pak choï"
+  },
+  {
     "key": "fr:panettone-au-chocolat",
     "name": "Panettone au chocolat"
   },
@@ -1284,12 +1364,20 @@
     "name": "Papillotes en chocolat"
   },
   {
+    "key": "en:dark-chocolate-paste-for-cooking",
+    "name": "Pâte de chocolat noir pâtissier"
+  },
+  {
     "key": "en:chocolate-spreads",
     "name": "Pâtes à tartiner au chocolat"
   },
   {
     "key": "en:cereal-clusters-with-chocolate",
     "name": "Pépites de céréales au chocolat"
+  },
+  {
+    "key": "en:chocolate-drops",
+    "name": "Pépites de chocolat"
   },
   {
     "key": "en:chocolate-santa-clauses",
@@ -1324,7 +1412,7 @@
     "name": "Pizzas au chorizo"
   },
   {
-    "key": "en:chocolate-covered-chickpeas",
+    "key": "en:chocolate-coated-chickpeas",
     "name": "Pois chiches enrobés de chocolat"
   },
   {
@@ -1350,6 +1438,10 @@
   {
     "key": "en:mashed-cauliflower",
     "name": "Purées de choux-fleurs"
+  },
+  {
+    "key": "en:frozen-mashed-cauliflower",
+    "name": "Purées de choux-fleurs surgelées"
   },
   {
     "key": "en:chocolate-covered-raisins",
@@ -1400,8 +1492,8 @@
     "name": "Sauce au chocolat"
   },
   {
-    "key": "hu:sertés-májkolbászok",
-    "name": "Saucisses aux choux"
+    "key": "en:pork-and-cabbage-sausages",
+    "name": "Saucisses de porc aux choux"
   },
   {
     "key": "en:chocolate-sculptures",
@@ -1412,19 +1504,15 @@
     "name": "Soupe chorba frik à base de viande et de frik"
   },
   {
-    "key": "fr:substituts-du-chocolat",
-    "name": "Substituts du chocolat"
+    "key": "en:compound-chocolates",
+    "name": "Succédanés du chocolat"
   },
   {
     "key": "en:milk-chocolate-bar",
     "name": "Tablette de chocolat au lait"
   },
   {
-    "key": "en:biscuit-small-tart-with-chocolate-pre-packed",
-    "name": "Tartelette au chocolat"
-  },
-  {
-    "key": "en:chocolate-tartlets",
+    "key": "en:tartlet-biscuits-with-chocolate",
     "name": "Tartelettes au chocolat"
   },
   {
@@ -1466,6 +1554,14 @@
   {
     "key": "fr:volailles-de-cholet",
     "name": "Volailles de Cholet"
+  },
+  {
+    "key": "en:white-chocolates-with-rice-crisps",
+    "name": "White chocolates with rice crisps"
+  },
+  {
+    "key": "en:chocolate-yoghurt-drinks",
+    "name": "Yaourts à boire goût chocolat"
   },
   {
     "key": "en:chocolate-chunks-yogurts",

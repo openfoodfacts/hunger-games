@@ -16,6 +16,10 @@
     "name": "Biscuit with reduced sugar"
   },
   {
+    "key": "en:blond-sugars",
+    "name": "Blond sugars"
+  },
+  {
     "key": "en:bottled-water-flavoured-with-sugar",
     "name": "Bottled water flavoured with sugar"
   },
@@ -94,10 +98,6 @@
   {
     "key": "en:carbonated-soft-drinks-without-fruit-juice-with-reduced-sugar",
     "name": "Carbonated soft drinks without fruit juice with reduced sugar"
-  },
-  {
-    "key": "en:carbonated-soft-drinks-without-fruit-juice-with-sugar",
-    "name": "Carbonated soft drinks without fruit juice with sugar"
   },
   {
     "key": "en:carbonated-soft-drinks-without-fruit-juice-with-sugar-and-artificial-sweeteners",
@@ -188,24 +188,28 @@
     "name": "Espresso coffee without sugar"
   },
   {
+    "key": "en:evaporated-milks-with-sugar",
+    "name": "Evaporated milks with sugar"
+  },
+  {
+    "key": "en:evaporated-milks-without-sugar",
+    "name": "Evaporated milks without sugar"
+  },
+  {
+    "key": "en:fermented-dairy-desserts-with-fruits-sugar-and-cream",
+    "name": "Fermented dairy desserts with fruits sugar and cream"
+  },
+  {
     "key": "en:fermented-milk-drinks-with-sugar",
     "name": "Fermented milk drinks with sugar"
   },
   {
-    "key": "en:fermented-milk-flavoured-yogurt-with-sugar-and-cream",
-    "name": "Fermented milk flavoured yogurt with sugar and cream"
+    "key": "en:flavoured-drinkable-yogurts-with-sugar",
+    "name": "Flavoured drinkable yogurts with sugar"
   },
   {
-    "key": "en:fermented-milk-yogurt-fortified-with-vitamin-d-with-fruits-and-sugar",
-    "name": "Fermented milk yogurt fortified with vitamin D with fruits and sugar"
-  },
-  {
-    "key": "en:fermented-milk-yogurt-with-fruits-and-sugar-and-cream",
-    "name": "Fermented milk yogurt with fruits and sugar and cream"
-  },
-  {
-    "key": "en:flavoured-dairy-drinks-with-sugar",
-    "name": "Flavoured dairy drinks with sugar"
+    "key": "en:flavoured-fermented-dairy-desserts-with-sugar-and-cream",
+    "name": "Flavoured fermented dairy desserts with sugar and cream"
   },
   {
     "key": "en:flavoured-soy-drinks-enriched-in-calcium-with-sugar",
@@ -256,7 +260,7 @@
     "name": "Inverted sugar syrups"
   },
   {
-    "key": "km:ស្ករត្នោតកំពង់ស្ពឺ",
+    "key": "hr:kampong-speu-palmin-šećer",
     "name": "Kampong Speu Palm Sugar"
   },
   {
@@ -328,16 +332,16 @@
     "name": "Powdered sugars"
   },
   {
+    "key": "en:pre-cooked-oat-flakes-with-sugar",
+    "name": "Pre-cooked oat flakes with sugar"
+  },
+  {
     "key": "en:refrigerated-flavoured-milk-jelly-with-reduced-fat-and-sugar",
     "name": "Refrigerated flavoured milk jelly with reduced fat and sugar"
   },
   {
     "key": "en:refrigerated-fruits-compote-with-reduced-sugar",
     "name": "Refrigerated fruits compote with reduced sugar"
-  },
-  {
-    "key": "en:rhubarb-stalk-cooked-with-sugar",
-    "name": "Rhubarb stalk cooked with sugar"
   },
   {
     "key": "en:soft-cake-filled-with-fruit-paste-and-coated-with-sugar-icing",
@@ -392,10 +396,6 @@
     "name": "Sugar coated chocolate confectioneries"
   },
   {
-    "key": "en:sugar-coated-pinenuts",
-    "name": "Sugar coated pinenuts"
-  },
-  {
     "key": "en:sugar-free-ready-to-drink-instant-chicory-with-artificial-sweeteners-reconstituted-with-standard-semi-skimmed-milk",
     "name": "Sugar free ready-to-drink instant chicory with artificial sweeteners reconstituted with standard semi-skimmed milk"
   },
@@ -440,12 +440,24 @@
     "name": "Sugarcane vinegars"
   },
   {
+    "key": "en:sugarcanes",
+    "name": "Sugarcanes"
+  },
+  {
+    "key": "en:sugarcanes-in-syrup",
+    "name": "Sugarcanes in syrup"
+  },
+  {
     "key": "en:sugared-crepes",
     "name": "Sugared crêpes"
   },
   {
     "key": "en:sugared-popcorn",
     "name": "Sugared popcorn"
+  },
+  {
+    "key": "en:sugarfree-candies",
+    "name": "Sugarfree candies"
   },
   {
     "key": "en:sugary-cooking-helpers",
@@ -460,8 +472,8 @@
     "name": "Syrup with sugar to be diluted"
   },
   {
-    "key": "en:thick-sugar-syrup",
-    "name": "Thick sugar syrup"
+    "key": "en:thick-sugar-syrups",
+    "name": "Thick sugar syrups"
   },
   {
     "key": "en:tonic-drink-with-sugar",
@@ -484,8 +496,8 @@
     "name": "Vanillin sugars"
   },
   {
-    "key": "en:white-coffee-without-sugar",
-    "name": "White coffee without sugar"
+    "key": "en:white-sugars",
+    "name": "White sugars"
   },
   {
     "key": "en:whole-condensed-milk-with-sugar",
@@ -494,6 +506,14 @@
   {
     "key": "en:whole-condensed-milk-without-sugar",
     "name": "Whole condensed milk without sugar"
+  },
+  {
+    "key": "en:yogurt-drinks-with-sugar",
+    "name": "Yogurt drinks with sugar"
+  },
+  {
+    "key": "en:yogurt-drinks-without-sugar",
+    "name": "Yogurt drinks without sugar"
   },
   {
     "key": "en:yogurt-fruit-flavoured-with-sugar-no-0-fat",

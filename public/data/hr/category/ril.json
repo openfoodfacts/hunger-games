@@ -1,13 +1,5 @@
 [
   {
-    "key": "en:beef-rillettes",
-    "name": "Beef rillettes"
-  },
-  {
-    "key": "en:chicken-rillettes",
-    "name": "Chicken rillettes"
-  },
-  {
     "key": "en:crab-rillettes",
     "name": "Crab rillettes"
   },
@@ -16,16 +8,8 @@
     "name": "Crustacean rillettes"
   },
   {
-    "key": "en:duck-rillettes",
-    "name": "Duck rillettes"
-  },
-  {
     "key": "en:eel-rillettes",
     "name": "Eel rillettes"
-  },
-  {
-    "key": "en:fish-rillettes",
-    "name": "Fish rillettes"
   },
   {
     "key": "en:french-rillettes",
@@ -34,6 +18,10 @@
   {
     "key": "en:goose-rillettes",
     "name": "Goose rillettes"
+  },
+  {
+    "key": "en:beef-rillettes",
+    "name": "Goveđi rilet"
   },
   {
     "key": "en:hare-rillettes",
@@ -64,24 +52,36 @@
     "name": "Mutton rillettes"
   },
   {
+    "key": "en:duck-rillettes",
+    "name": "Pačji rillettes"
+  },
+  {
     "key": "en:pike-rillettes",
     "name": "Pike rillettes"
+  },
+  {
+    "key": "en:chicken-rillettes",
+    "name": "Pileći rileti"
   },
   {
     "key": "en:pink-salmon-rillettes",
     "name": "Pink salmon rillettes"
   },
   {
-    "key": "en:pork-rillettes",
-    "name": "Pork rillettes"
+    "key": "en:pure-goose-rillettes",
+    "name": "Pure goose rillettes"
+  },
+  {
+    "key": "en:fish-rillettes",
+    "name": "Riblji rileti"
+  },
+  {
+    "key": "en:white-meat-rillettes",
+    "name": "Rileti od bijelog mesa"
   },
   {
     "key": "en:poultry-rillettes",
-    "name": "Poultry rillettes"
-  },
-  {
-    "key": "en:pure-goose-rillettes",
-    "name": "Pure goose rillettes"
+    "name": "Rileti od peradi"
   },
   {
     "key": "en:rillettes",
@@ -92,12 +92,16 @@
     "name": "Rillettes from Mans"
   },
   {
-    "key": "en:rillettes-pure-pork",
-    "name": "Rillettes pure pork"
+    "key": "en:salmon-rillettes",
+    "name": "Rillettes od lososa"
   },
   {
-    "key": "en:salmon-rillettes",
-    "name": "Salmon Rillettes"
+    "key": "en:tuna-rillettes",
+    "name": "Rillettes od tune"
+  },
+  {
+    "key": "en:rillettes-pure-pork",
+    "name": "Rillettes pure pork"
   },
   {
     "key": "en:sardine-rillettes",
@@ -124,20 +128,16 @@
     "name": "Sturgeon rillettes"
   },
   {
+    "key": "en:pork-rillettes",
+    "name": "Svinjski rileti"
+  },
+  {
     "key": "en:trout-rillettes",
     "name": "Trout rillettes"
   },
   {
-    "key": "en:tuna-rillettes",
-    "name": "Tuna rillettes"
-  },
-  {
     "key": "en:turkey-rillettes",
     "name": "Turkey rillettes"
-  },
-  {
-    "key": "en:white-meat-rillettes",
-    "name": "White meat rillettes"
   },
   {
     "key": "en:wild-bass-rillettes",

@@ -12,8 +12,8 @@
     "name": "Arachides bouillies salées"
   },
   {
-    "key": "en:boiled-asparagus",
-    "name": "Asperge bouillie"
+    "key": "en:bakery-product-variety-packs",
+    "name": "Assortiments de pains et produits de boulangerie"
   },
   {
     "key": "fr:beaune-les-boucherottes",
@@ -60,10 +60,6 @@
     "name": "Bouchées à la vapeur chinoises cuites"
   },
   {
-    "key": "en:soy-based-sliced",
-    "name": "Bouchées ou émincé au soja et blé (ne convient pas aux véganes ou végétaliens) préemballé"
-  },
-  {
     "key": "fr:bouches-du-rhone",
     "name": "Bouches-du-Rhône"
   },
@@ -102,6 +98,10 @@
   {
     "key": "fr:boudins-blancs-a-l-ancienne",
     "name": "Boudins blancs à l'ancienne"
+  },
+  {
+    "key": "fr:boudins-blancs-aromatises",
+    "name": "Boudins blancs aromatisés"
   },
   {
     "key": "en:black-pudding",
@@ -186,6 +186,14 @@
   {
     "key": "en:mutton-broth",
     "name": "Bouillons de mouton"
+  },
+  {
+    "key": "en:fish-broths",
+    "name": "Bouillons de poisson"
+  },
+  {
+    "key": "en:liquid-fish-broths",
+    "name": "Bouillons de poisson liquides"
   },
   {
     "key": "en:poultry-broth",
@@ -284,8 +292,16 @@
     "name": "Boulettes de viande"
   },
   {
+    "key": "en:frozen-meat-balls",
+    "name": "Boulettes de viande surgelées"
+  },
+  {
     "key": "en:vegetarian-balls",
     "name": "Boulettes végétariennes"
+  },
+  {
+    "key": "en:frozen-vegetarian-balls",
+    "name": "Boulettes végétariennes surgelées"
   },
   {
     "key": "en:bulgur",
@@ -560,11 +576,15 @@
     "name": "Escargots de Bourgogne"
   },
   {
+    "key": "en:wheat-daliya",
+    "name": "Farines de boulgour"
+  },
+  {
     "key": "en:boiled-fennel",
     "name": "Fenouil bouilli"
   },
   {
-    "key": "en:boiled-oat-flakes",
+    "key": "en:cooked-oat-flakes",
     "name": "Flocons d'avoine bouillis"
   },
   {
@@ -656,6 +676,10 @@
     "name": "Moutarde de Bourgogne"
   },
   {
+    "key": "en:golden-ball-turnips",
+    "name": "Navets jaune boule d'or"
+  },
+  {
     "key": "fr:nuits-saint-georges-premier-cru-aux-boudots",
     "name": "Nuits-Saint-Georges premier cru Aux Boudots"
   },
@@ -700,16 +724,16 @@
     "name": "Pommard Les Boucherottes"
   },
   {
-    "key": "en:boiled-potatoes",
+    "key": "fr:pommes-de-terre-bouillies",
     "name": "Pommes de terre bouillies"
+  },
+  {
+    "key": "en:boiled-or-steamed-potatoes",
+    "name": "Pommes de terre bouillies ou à la vapeur"
   },
   {
     "key": "en:boiled-peeled-ware-potatoes",
     "name": "Pommes de terre de conservation sans peau bouillies"
-  },
-  {
-    "key": "en:peeled-boiled-early-potato",
-    "name": "Pommes de terre primeur sans peau bouillies"
   },
   {
     "key": "en:bakery-products",
@@ -736,7 +760,7 @@
     "name": "Produits de boulangerie hongrois"
   },
   {
-    "key": "en:dutch-bakery-products",
+    "key": "en:bakery-products-from-the-netherlands",
     "name": "Produits de boulangerie néerlandais"
   },
   {

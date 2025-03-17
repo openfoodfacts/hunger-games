@@ -1,7 +1,11 @@
 [
   {
-    "key": "en:frozen-raspberries",
-    "name": "Bevroren frambozen"
+    "key": "en:potatoes-from-france",
+    "name": "Aardappelen uit Frankrijk"
+  },
+  {
+    "key": "en:french-bread-sandwiches",
+    "name": "Broodjes op Frans brood"
   },
   {
     "key": "fr:cremes-fraiches",
@@ -12,12 +16,24 @@
     "name": "Cremes fraiches light"
   },
   {
-    "key": "fr:beignets-fourres-a-la-framboise",
+    "key": "en:doughnuts-filled-with-raspberries",
     "name": "Donuts gevuld met framboos"
+  },
+  {
+    "key": "en:framboise-beers",
+    "name": "Framboise-Lambic"
+  },
+  {
+    "key": "en:raspberry-drinkable-yogurts",
+    "name": "Framboosdrinkyoghurts"
   },
   {
     "key": "en:raspberries",
     "name": "Frambozen"
+  },
+  {
+    "key": "en:frozen-raspberries",
+    "name": "Frambozen (diepvries)"
   },
   {
     "key": "en:iced-teas-with-raspberry-flavor",
@@ -34,6 +50,10 @@
   {
     "key": "en:raspberry-cheesecakes",
     "name": "Frambozencheesecakes"
+  },
+  {
+    "key": "fr:compotes-de-framboise",
+    "name": "Frambozencompotes"
   },
   {
     "key": "en:raspberry-coulis",
@@ -104,6 +124,10 @@
     "name": "Franse kazen"
   },
   {
+    "key": "en:french-sparkling-wines",
+    "name": "Franse mousserende wijnen"
+  },
+  {
     "key": "en:french-pralines",
     "name": "Franse praliné"
   },
@@ -132,15 +156,23 @@
     "name": "Gruyère uit Frankrijk"
   },
   {
+    "key": "en:french-nuts",
+    "name": "Noten uit Frankrijk"
+  },
+  {
     "key": "en:olive-oils-from-france",
     "name": "Olijfoliën uit Frankrijk"
+  },
+  {
+    "key": "en:products-that-cannot-be-found-in-metropolitan-france",
+    "name": "Producten die niet in Frankrijk gevonden kunnen worden"
   },
   {
     "key": "en:quinoa-fr-boiled-cooked-in-water-unsalted",
     "name": "Quinoa uit Frankrijk (gekookt)"
   },
   {
-    "key": "en:quinoa-fr-raw",
+    "key": "en:raw-quinoa-from-france",
     "name": "Quinoa uit Frankrijk (ongekookt)"
   },
   {

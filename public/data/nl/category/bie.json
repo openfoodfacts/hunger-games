@@ -28,12 +28,24 @@
     "name": "Biefstukken"
   },
   {
+    "key": "en:beer-based-alcoholic-beverages",
+    "name": "Bier gebaseerde alcoholische dranken"
+  },
+  {
+    "key": "en:5-beer",
+    "name": "Bier met 5% alcohol"
+  },
+  {
     "key": "en:american-beers",
     "name": "Bier uit de Verenigde Staten van Amerika"
   },
   {
     "key": "en:beers",
     "name": "Bieren"
+  },
+  {
+    "key": "en:beers-from-poland",
+    "name": "Bieren uit Polen"
   },
   {
     "key": "en:potted-chives",
@@ -44,6 +56,10 @@
     "name": "Bieslook"
   },
   {
+    "key": "en:vacuum-packed-beetroot",
+    "name": "Bieten(Vacuümverpakt)"
+  },
+  {
     "key": "en:beets-salads",
     "name": "Bietjessalade"
   },
@@ -52,8 +68,16 @@
     "name": "Bietsuikers"
   },
   {
+    "key": "en:non-alcoholic-organic-beers",
+    "name": "Biologische alcoholvrije bieren"
+  },
+  {
     "key": "en:organic-beers",
     "name": "Biologische bieren"
+  },
+  {
+    "key": "en:blonde-ales",
+    "name": "Blonde bieren"
   },
   {
     "key": "en:beers-from-bremen",
@@ -76,16 +100,20 @@
     "name": "Donkere bieren"
   },
   {
-    "key": "en:beers-from-dortmund",
+    "key": "en:dortmunder-export",
     "name": "Dortmunder bieren"
   },
   {
-    "key": "en:double-beer",
+    "key": "en:belgian-style-dubbel-ales",
     "name": "Dubbelgegist bier"
   },
   {
     "key": "en:beers-from-germany",
     "name": "Duitse bieren"
+  },
+  {
+    "key": "en:finnish-beers",
+    "name": "Finse bieren"
   },
   {
     "key": "en:french-beers",
@@ -108,11 +136,19 @@
     "name": "Gevriesdroogde biesloken"
   },
   {
-    "key": "en:beers-from-ireland",
+    "key": "en:beers-without-gluten",
+    "name": "Glutenvrije bieren"
+  },
+  {
+    "key": "en:irish-beers",
     "name": "Ierse bieren"
   },
   {
-    "key": "en:pickled-beets",
+    "key": "en:industrial-beer",
+    "name": "Industrieel bier"
+  },
+  {
+    "key": "en:beetroot-pickled",
     "name": "Ingemaakte rode bieten"
   },
   {
@@ -124,19 +160,35 @@
     "name": "Keulse bieren"
   },
   {
-    "key": "en:uncooked-beetroots",
-    "name": "Ongekookte rode bieten"
+    "key": "en:latvian-beers",
+    "name": "Lettse bieren"
   },
   {
-    "key": "en:quadruple-beer",
+    "key": "en:lithuanian-beers",
+    "name": "Litouwse bieren"
+  },
+  {
+    "key": "en:dutch-beers",
+    "name": "Nederlandse bieren"
+  },
+  {
+    "key": "en:unfiltered-beers",
+    "name": "Ongefilterde bieren"
+  },
+  {
+    "key": "en:unpasteurized-beers",
+    "name": "Ongepasteuriseerde bieren"
+  },
+  {
+    "key": "en:quadruple-ales",
     "name": "Quadrupel bieren"
   },
   {
-    "key": "en:beet",
+    "key": "en:beetroot",
     "name": "Rode bieten"
   },
   {
-    "key": "en:canned-beet",
+    "key": "en:canned-beetroot",
     "name": "Rode bieten in blik/pot"
   },
   {
@@ -144,15 +196,31 @@
     "name": "Rode bietensappen"
   },
   {
+    "key": "en:scottish-beers",
+    "name": "Schotse bieren"
+  },
+  {
+    "key": "en:spanish-beers",
+    "name": "Spaanse bieren"
+  },
+  {
     "key": "en:strong-beers",
     "name": "Sterke bieren"
   },
   {
-    "key": "en:triple-beer",
+    "key": "en:triple-ales",
     "name": "Tripel bieren"
   },
   {
     "key": "en:beers-from-czech-republic",
     "name": "Tsjechische bieren"
+  },
+  {
+    "key": "en:raw-beetroot",
+    "name": "Verse rode bieten"
+  },
+  {
+    "key": "en:swedish-beers",
+    "name": "Zweedse bieren"
   }
 ]

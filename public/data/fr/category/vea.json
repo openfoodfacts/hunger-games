@@ -1,5 +1,13 @@
 [
   {
+    "key": "en:veal-offals",
+    "name": "Abats de veau"
+  },
+  {
+    "key": "en:frozen-veal-offals",
+    "name": "Abats de veau surgelés"
+  },
+  {
     "key": "fr:axoa-de-veau",
     "name": "Axoa de veau"
   },
@@ -48,6 +56,10 @@
     "name": "Côte de veau grillée"
   },
   {
+    "key": "en:frozen-veal-chop",
+    "name": "Côte de veau surgelée"
+  },
+  {
     "key": "en:veal-shoulder",
     "name": "Epaule de veau"
   },
@@ -58,6 +70,10 @@
   {
     "key": "en:grilled-veal-shoulder",
     "name": "Epaule de veau grillée"
+  },
+  {
+    "key": "en:frozen-veal-shoulder",
+    "name": "Epaule de veau surgelée"
   },
   {
     "key": "en:veal-escalopes",
@@ -78,6 +94,10 @@
   {
     "key": "en:roasted-veal-fillet",
     "name": "Filets de veau rôtis"
+  },
+  {
+    "key": "en:frozen-veal-fillets",
+    "name": "Filets de veau surgelés"
   },
   {
     "key": "en:calf-liver",
@@ -106,6 +126,10 @@
   {
     "key": "en:braised-veal-knuckle",
     "name": "Jarret de veau braisé"
+  },
+  {
+    "key": "en:frozen-veal-knuckle",
+    "name": "Jarret de veau surgelé"
   },
   {
     "key": "en:calf-tongue",
@@ -146,6 +170,10 @@
   {
     "key": "en:veal-breast",
     "name": "Poitrine de veau"
+  },
+  {
+    "key": "en:prepared-veal-meat",
+    "name": "Prepared veal meat"
   },
   {
     "key": "en:veal-quenelle-in-sauce",
@@ -224,11 +252,23 @@
     "name": "Veau Оrlov"
   },
   {
+    "key": "en:canned-veal-meat",
+    "name": "Viande de veau en conserve"
+  },
+  {
     "key": "en:veal-meat",
     "name": "Viandes de veau"
   },
   {
     "key": "en:cooked-veal-meat",
     "name": "Viandes de veau cuites"
+  },
+  {
+    "key": "en:smoked-cooked-veal-meat",
+    "name": "Viandes de veau cuites fumées"
+  },
+  {
+    "key": "en:grilled-veal-meat",
+    "name": "Viandes de veau grillées"
   }
 ]

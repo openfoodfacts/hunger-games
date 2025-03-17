@@ -140,7 +140,7 @@
     "name": "Boissons plates aux fruits sucrées avec 10 à 50% de jus"
   },
   {
-    "key": "en:coffee-soy-milks",
+    "key": "en:coffee-soy-based-drinks",
     "name": "Boissons végétales de soja avec du café"
   },
   {
@@ -170,6 +170,10 @@
   {
     "key": "en:mix-of-chicory-and-coffee-instant-without-sugar-ready-to-drink-reconstituted-with-standard-semi-skimmed-milk",
     "name": "Chicorée et café instantané non sucré prête à boire (reconstituée avec du lait demi-écrémé standard)"
+  },
+  {
+    "key": "en:instant-chicory-with-water",
+    "name": "Chicorée instantanée avec de l'eau"
   },
   {
     "key": "en:sugar-free-ready-to-drink-instant-chicory-with-artificial-sweeteners-reconstituted-with-standard-semi-skimmed-milk",
@@ -246,6 +250,10 @@
   {
     "key": "en:cooked-ham-with-rind-of-superior-quality",
     "name": "Jambon cuit supérieur avec couenne"
+  },
+  {
+    "key": "en:orange-juices-with-pulp",
+    "name": "Jus d'orange avec pulpe"
   },
   {
     "key": "en:lemonade-without-sugar-with-artificial-sweeteners",
@@ -420,10 +428,6 @@
     "name": "Tartinades avec des morceaux végétariens"
   },
   {
-    "key": "en:seafood-terrine-with-or-without-fish",
-    "name": "Terrine de fruits de mer avec ou sans poisson"
-  },
-  {
     "key": "en:seafood-terrine-with-fish",
     "name": "Terrine de fruits de mer avec poisson"
   },
@@ -449,23 +453,11 @@
   },
   {
     "key": "en:hen-meat-and-skin",
-    "name": "Viande de poulet avec peau"
+    "name": "Viande de poule avec peau"
   },
   {
-    "key": "en:yogurt-with-fruits-and-sweetener",
-    "name": "Yaourt aromatisé avec édulcorants"
-  },
-  {
-    "key": "en:fat-free-fermented-milk-yogurt-with-fruits-and-sweetener",
-    "name": "Yaourt au lait fermenté aux fruits avec édulcorants à 0% de matières grasses"
-  },
-  {
-    "key": "en:fat-free-fermented-milk-yogurt-with-fruits-and-sweetener-fortified-with-vitamin-d",
-    "name": "Yaourt au lait fermenté aux fruits avec édulcorants à 0% de matières grasses enrichi en vitamine D"
-  },
-  {
-    "key": "en:fat-free-flavoured-fermented-milk-yogurt-with-sweetener",
-    "name": "Yaourt au lait fermenté avec édulcorants à 0% de matières grasses"
+    "key": "en:yogurt-drinks-with-sugar",
+    "name": "Yaourts à boire avec sucre"
   },
   {
     "key": "en:fruit-yogurts-with-fruit-chunks",

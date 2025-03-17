@@ -16,6 +16,14 @@
     "name": "Biscuit sec croquant au chocolat allégé en matière grasse"
   },
   {
+    "key": "en:crispy-biscuits",
+    "name": "Biscuits croustillants"
+  },
+  {
+    "key": "en:croatian-spirit-drinks",
+    "name": "Boissons spiritueuses croates"
+  },
+  {
     "key": "fr:chassagne-montrachet-premier-cru-ez-crottes",
     "name": "Chassagne-Montrachet premier cru Ez Crottes"
   },
@@ -40,10 +48,6 @@
     "name": "Croatian liqueur"
   },
   {
-    "key": "en:croatian-spirit-drinks",
-    "name": "Croatian spirit drinks"
-  },
-  {
     "key": "en:gummy-crocodiles",
     "name": "Crocodiles gélifiés"
   },
@@ -52,16 +56,16 @@
     "name": "Croglin"
   },
   {
-    "key": "en:croissant-from-bakery",
-    "name": "Croissant artisanal"
-  },
-  {
     "key": "en:croissant-with-almonds-from-bakery",
     "name": "Croissant aux amandes artisanal"
   },
   {
     "key": "en:croissants",
     "name": "Croissants"
+  },
+  {
+    "key": "en:bakery-croissants",
+    "name": "Croissants artisanal"
   },
   {
     "key": "en:butter-croissants",
@@ -74,6 +78,14 @@
   {
     "key": "en:ham-and-cheese-croissants",
     "name": "Croissants au jambon fromage"
+  },
+  {
+    "key": "en:croissant-with-almonds",
+    "name": "Croissants aux amandes"
+  },
+  {
+    "key": "en:croissants-with-almonds-and-pistachio",
+    "name": "Croissants aux amandes et pistache"
   },
   {
     "key": "en:filled-croissants",
@@ -98,6 +110,10 @@
   {
     "key": "fr:croissants-surgeles",
     "name": "Croissants surgelés"
+  },
+  {
+    "key": "fr:croissants-surgeles-a-cuire",
+    "name": "Croissants surgelés à cuire"
   },
   {
     "key": "en:almond-cookies",
@@ -130,22 +146,6 @@
   {
     "key": "fr:croquettes-de-pommes-de-terre-surgelees",
     "name": "Croquettes de pommes de terre surgelées"
-  },
-  {
-    "key": "en:dry-cat-food",
-    "name": "Croquettes pour chat"
-  },
-  {
-    "key": "en:dry-dog-food",
-    "name": "Croquettes pour chien"
-  },
-  {
-    "key": "en:chinese-artichokes",
-    "name": "Crosnes"
-  },
-  {
-    "key": "en:frozen-chinese-artichokes",
-    "name": "Crosnes surgelés"
   },
   {
     "key": "en:crostata",
@@ -228,10 +228,6 @@
     "name": "Fromage de chèvre à pâte molle et croûte fleurie"
   },
   {
-    "key": "en:sainte-maure-goat-cheeses",
-    "name": "Fromage de chèvre lactique affiné (type bûchette crottin Sainte-Maure)"
-  },
-  {
     "key": "en:cheese-from-goat-s-milk-from-raw-milk",
     "name": "Fromage de chèvre lactique affiné au lait cru (type Crottin de Chavignol Picodon Rocamadour Sainte-Maure de Touraine)"
   },
@@ -246,6 +242,10 @@
   {
     "key": "en:soft-ripened-round-cheese-with-bloomy-rind-around-5-fat-camembert-type-cheese-reduced-fat",
     "name": "Fromage rond à pâte molle et croûte fleurie environ 5% MG type camembert allégé en matière grasse"
+  },
+  {
+    "key": "en:soft-cheeses-with-a-red-rind",
+    "name": "Fromages à croûte rouge"
   },
   {
     "key": "en:soft-cheeses-with-bloomy-rind",
@@ -324,6 +324,10 @@
     "name": "Mueslis croustillants aux fruits"
   },
   {
+    "key": "en:crunchy-mueslis-without-fruits",
+    "name": "Mueslis croustillants sans fruits"
+  },
+  {
     "key": "fr:nuits-saint-georges-premier-cru-les-crots",
     "name": "Nuits-Saint-Georges premier cru Les Crots"
   },
@@ -338,6 +342,14 @@
   {
     "key": "en:crispbreads",
     "name": "Pains croustillants"
+  },
+  {
+    "key": "en:crispbreads-wholemeal",
+    "name": "Pains croustillants complets"
+  },
+  {
+    "key": "en:crispbreads-non-wholemeal",
+    "name": "Pains croustillants non-complets"
   },
   {
     "key": "en:sliced-breads-without-crust",

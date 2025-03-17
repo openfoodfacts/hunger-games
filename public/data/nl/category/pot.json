@@ -20,6 +20,10 @@
     "name": "Algenmengsels in blik/pot"
   },
   {
+    "key": "en:allians-potatoes",
+    "name": "Allians potatoes"
+  },
+  {
     "key": "en:canned-pineapples",
     "name": "Ananas in blik/pot"
   },
@@ -34,10 +38,6 @@
   {
     "key": "en:canned-asparagus",
     "name": "Asperges in blik/pot"
-  },
-  {
-    "key": "en:ayrshire-new-potatoes",
-    "name": "Ayrshire New Potatoes"
   },
   {
     "key": "en:baked-peeled-potatoes",
@@ -60,12 +60,12 @@
     "name": "Bloemkool in blik/pot"
   },
   {
-    "key": "en:boiled-peeled-ware-potatoes",
-    "name": "Boiled peeled ware potatoes"
+    "key": "en:boiled-or-steamed-potatoes",
+    "name": "Boiled or steamed potatoes"
   },
   {
-    "key": "en:boiled-potatoes",
-    "name": "Boiled potatoes"
+    "key": "en:boiled-peeled-ware-potatoes",
+    "name": "Boiled peeled ware potatoes"
   },
   {
     "key": "en:canned-legumes",
@@ -86,10 +86,6 @@
   {
     "key": "en:canned-plant-based-foods",
     "name": "Conserven Producten in blik/pot"
-  },
-  {
-    "key": "en:cooked-sweet-potatoes",
-    "name": "Cooked sweet potatoes"
   },
   {
     "key": "en:crisps-made-from-reconstituted-potato",
@@ -122,14 +118,6 @@
   {
     "key": "en:canned-flageolet-beans",
     "name": "Flageoletbonen in blik/pot"
-  },
-  {
-    "key": "en:french-potatoes",
-    "name": "French potatoes"
-  },
-  {
-    "key": "en:fresh-potatoes",
-    "name": "Fresh potatoes"
   },
   {
     "key": "en:fresh-yam-potatoes",
@@ -232,10 +220,6 @@
     "name": "Haring in blik/pot"
   },
   {
-    "key": "en:hashed-brown-potatoes",
-    "name": "Hashed brown potatoes"
-  },
-  {
     "key": "en:canned-whole-champignon-mushrooms",
     "name": "Hele champignons in blik/pot"
   },
@@ -249,7 +233,7 @@
   },
   {
     "key": "en:canned-meals",
-    "name": "Kant en klaargerechten in blik/pot"
+    "name": "Kant-en-klaarmaaltijden in blik/pot"
   },
   {
     "key": "en:canned-cheeses",
@@ -284,6 +268,10 @@
     "name": "Linzen in blik/pot"
   },
   {
+    "key": "en:louisiana-potatoes",
+    "name": "Louisiana potatoes"
+  },
+  {
     "key": "en:tinned-mackerels",
     "name": "Makreel in blik/pot"
   },
@@ -300,12 +288,8 @@
     "name": "Muntplanten in pot"
   },
   {
-    "key": "en:new-potatoes",
-    "name": "New potatoes"
-  },
-  {
-    "key": "en:new-season-comber-potatoes",
-    "name": "New Season Comber Potatoes"
+    "key": "en:nazca-potatoes",
+    "name": "Nazca potatoes"
   },
   {
     "key": "en:canned-nuts",
@@ -324,6 +308,10 @@
     "name": "Oreganoplanten in pot"
   },
   {
+    "key": "en:ostara-potatoes",
+    "name": "Ostara potatoes"
+  },
+  {
     "key": "en:canned-mushrooms",
     "name": "Paddestoelen in blik/pot"
   },
@@ -336,8 +324,8 @@
     "name": "Palmharten in blik/pot"
   },
   {
-    "key": "en:peeled-boiled-early-potato",
-    "name": "Peeled boiled early potato"
+    "key": "en:pates-in-pots",
+    "name": "Pâtés in pots"
   },
   {
     "key": "en:peeled-boiled-yam-potato",
@@ -380,8 +368,44 @@
     "name": "Potato puree made from flakes reconstituted with whole milk with added fat"
   },
   {
+    "key": "en:potatoes-for-gratin",
+    "name": "Potatoes for gratin"
+  },
+  {
+    "key": "en:potatoes-for-hash-browns",
+    "name": "Potatoes for hash browns"
+  },
+  {
+    "key": "en:potatoes-for-raclette",
+    "name": "Potatoes for raclette"
+  },
+  {
     "key": "en:potatoes-for-steaming",
     "name": "Potatoes for steaming"
+  },
+  {
+    "key": "en:potatoes-from-alto-viterbese",
+    "name": "Potatoes from Alto Viterbese"
+  },
+  {
+    "key": "en:potatoes-from-fucino",
+    "name": "Potatoes from Fucino"
+  },
+  {
+    "key": "en:potatoes-from-ile-de-re",
+    "name": "Potatoes from Île de Ré"
+  },
+  {
+    "key": "en:potatoes-from-merville",
+    "name": "Potatoes from Merville"
+  },
+  {
+    "key": "en:potatoes-from-noirmoutier",
+    "name": "Potatoes from Noirmoutier"
+  },
+  {
+    "key": "en:potatoes-from-sila",
+    "name": "Potatoes from Sila"
   },
   {
     "key": "nl:potjesvlees-uit-de-westhoek",
@@ -424,6 +448,10 @@
     "name": "Puffed salty snacks made from potato and soy"
   },
   {
+    "key": "en:pure-mashed-potatoes",
+    "name": "Pure mashed potatoes"
+  },
+  {
     "key": "en:canned-raviolis",
     "name": "Ravioli in blik/pot"
   },
@@ -436,7 +464,7 @@
     "name": "Roasted potatoes"
   },
   {
-    "key": "en:canned-beet",
+    "key": "en:canned-beetroot",
     "name": "Rode bieten in blik/pot"
   },
   {
@@ -508,6 +536,10 @@
     "name": "Spruiten in blik/pot"
   },
   {
+    "key": "en:steamed-potatoes",
+    "name": "Steamed potatoes"
+  },
+  {
     "key": "en:stewed-lamb-garnished-with-potatoes-and-other-vegetables",
     "name": "Stewed lamb garnished with potatoes and other vegetables"
   },
@@ -548,6 +580,10 @@
     "name": "Tuinbonen in blik/pot"
   },
   {
+    "key": "en:twin-pot-yogurts",
+    "name": "Twin-pot yogurts"
+  },
+  {
     "key": "en:unsalted-potato-puree-made-from-flakes-reconstituted-with-semi-skimmed-milk-and-water",
     "name": "Unsalted Potato puree made from flakes reconstituted with semi-skimmed milk and water"
   },
@@ -558,6 +594,10 @@
   {
     "key": "en:vacuum-packed-steamed-potatoes",
     "name": "Vacuum-packed steamed potatoes"
+  },
+  {
+    "key": "en:vegetable-pots",
+    "name": "Vegetable pots"
   },
   {
     "key": "en:canned-fishes",

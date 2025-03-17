@@ -4,19 +4,27 @@
     "name": "Alsace Grand Cru Kirchberg de Ribeauvillé"
   },
   {
+    "key": "fr:alsace-riesling",
+    "name": "Alsace Riesling"
+  },
+  {
     "key": "en:rice-starch",
     "name": "Amidon de riz"
   },
   {
-    "key": "en:rice-milks",
+    "key": "en:rice-crackers",
+    "name": "Biscuits apéritifs au riz"
+  },
+  {
+    "key": "en:rice-based-drinks",
     "name": "Boissons au riz"
   },
   {
-    "key": "en:vanilla-rice-milks",
+    "key": "en:vanilla-rice-based-drinks",
     "name": "Boissons végétales de riz à la vanille"
   },
   {
-    "key": "en:cocoa-rice-milks",
+    "key": "en:cocoa-rice-based-drinks",
     "name": "Boissons végétales de riz au cacao"
   },
   {
@@ -24,19 +32,11 @@
     "name": "Boissons végétales de riz en poudre"
   },
   {
-    "key": "en:natural-rice-milks",
+    "key": "en:plain-rice-based-drinks",
     "name": "Boissons végétales de riz nature"
   },
   {
-    "key": "en:rice-in-a-box",
+    "key": "en:rice-in-pots",
     "name": "Box de riz"
-  },
-  {
-    "key": "en:coffees-from-costa-rica",
-    "name": "Café du Costa Rica"
-  },
-  {
-    "key": "en:cannelloni-with-ricotta-and-spinach",
-    "name": "Cannelloni à la ricotta et aux épinards"
   }
 ]

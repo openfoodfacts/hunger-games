@@ -100,6 +100,14 @@
     "name": "Foie gras de canard entier cuit"
   },
   {
+    "key": "en:whole-frozen-duck-liver-foie-gras",
+    "name": "Foie gras de canard entier surgelé"
+  },
+  {
+    "key": "en:beef-livers",
+    "name": "Foies de boeuf"
+  },
+  {
     "key": "en:rabbit-liver",
     "name": "Foies de lapin"
   },
@@ -148,15 +156,15 @@
     "name": "Huiles de foie de cabillaud"
   },
   {
-    "key": "de:heumilch",
+    "key": "en:haymilk",
     "name": "Lait de foin"
   },
   {
-    "key": "de:schaf-heumilch",
+    "key": "en:sheep-s-haymilk",
     "name": "Lait de foin de brebis"
   },
   {
-    "key": "de:ziegen-heumilch",
+    "key": "en:goat-s-haymilk",
     "name": "Lait de foin de chèvre"
   },
   {
@@ -208,24 +216,20 @@
     "name": "Pâtés de foie gras"
   },
   {
-    "key": "en:liver-sausages",
-    "name": "Saucisses de foie"
-  },
-  {
-    "key": "en:alsatian-liver-sausages",
-    "name": "Saucisses de foie alsacienne"
-  },
-  {
-    "key": "en:liver-sausages-from-ariege",
-    "name": "Saucisses de foie ariégeoise"
-  },
-  {
     "key": "en:pork-liver-sausages",
     "name": "Saucisses de foie de porc"
   },
   {
+    "key": "en:cured-liver-sausages",
+    "name": "Saucisses sèches de foie"
+  },
+  {
     "key": "en:foie-gras-substitutes",
     "name": "Substituts du foie gras"
+  },
+  {
+    "key": "en:spreads-with-foie-gras",
+    "name": "Tartinables au foie gras"
   },
   {
     "key": "fr:terrine-de-foie-gras",

@@ -12,7 +12,11 @@
     "name": "Baby start milk from 10 months"
   },
   {
-    "key": "en:millet-milks",
+    "key": "en:barnyard-millet",
+    "name": "Barnyard millet"
+  },
+  {
+    "key": "en:millet-based-drinks",
     "name": "Boissons au millet"
   },
   {
@@ -44,16 +48,28 @@
     "name": "Farines de millet"
   },
   {
+    "key": "en:finger-millet",
+    "name": "Finger Millet"
+  },
+  {
     "key": "en:millet-flakes",
     "name": "Flocons de millet"
+  },
+  {
+    "key": "en:foxtail-millet",
+    "name": "Foxtail millet"
   },
   {
     "key": "en:millet-groats",
     "name": "Gruau de millet"
   },
   {
-    "key": "en:high-digestible-milk",
-    "name": "High digestible milk"
+    "key": "en:half-milk-and-half-cream",
+    "name": "Half milk and half cream"
+  },
+  {
+    "key": "en:little-millet",
+    "name": "Little millet"
   },
   {
     "key": "fr:macon-milly-lamartine",
@@ -76,12 +92,8 @@
     "name": "Mil entier"
   },
   {
-    "key": "en:milk-choclate-sprinkles",
-    "name": "Milk choclate sprinkles"
-  },
-  {
-    "key": "en:milk-chocolate-molds",
-    "name": "Milk chocolate molds"
+    "key": "en:milk-chocolate-sprinkles",
+    "name": "Milk chocolate sprinkles"
   },
   {
     "key": "en:milk-chocolates-with-praline",
@@ -90,6 +102,14 @@
   {
     "key": "en:milk-chocolates-with-raisins",
     "name": "Milk chocolates with raisins"
+  },
+  {
+    "key": "en:milk-stouts",
+    "name": "Milk stouts"
+  },
+  {
+    "key": "en:milkshake-ipa",
+    "name": "Milkshake IPA"
   },
   {
     "key": "en:milkshakes",
@@ -124,6 +144,10 @@
     "name": "Millet soufflé"
   },
   {
+    "key": "en:milsubstitutes",
+    "name": "Milsubstitutes"
+  },
+  {
     "key": "fr:morey-saint-denis-premier-cru-les-milandes",
     "name": "Morey-Saint-Denis premier cru Les Milandes"
   },
@@ -136,11 +160,27 @@
     "name": "Morey-Saint-Denis premier cru Les Millandes rouge"
   },
   {
+    "key": "en:pasteurised-milks-fortified-with-vitamins",
+    "name": "Pasteurised milks fortified with vitamins"
+  },
+  {
     "key": "en:milk-shakes-preparations",
     "name": "Préparations pour Milk-shakes"
   },
   {
+    "key": "en:refrigerated-milks",
+    "name": "Refrigerated milks"
+  },
+  {
     "key": "en:low-calorie-milkshake-meal-replacement-in-powder-reconstituted-with-skimmed-milk",
     "name": "Substitut de repas hypocalorique milk-shake en poudre reconstitué avec lait écrémé"
+  },
+  {
+    "key": "en:uht-almond-milks",
+    "name": "UHT almond milks"
+  },
+  {
+    "key": "en:uht-milk-fortified-with-vitamins",
+    "name": "UHT milk fortified with vitamins"
   }
 ]

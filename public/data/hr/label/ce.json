@@ -1,7 +1,7 @@
 [
   {
-    "key": "en:calidad-certificada",
-    "name": "Calidad Certificada"
+    "key": "en:calidad-certificada-de-andalucia",
+    "name": "Calidad Certificada de Andalucía"
   },
   {
     "key": "en:ccof-certified-organic",
@@ -26,6 +26,10 @@
   {
     "key": "en:certified-by-avicert",
     "name": "Certified by Avicert"
+  },
+  {
+    "key": "en:certified-by-veritas",
+    "name": "Certified by bureau veritas"
   },
   {
     "key": "en:certified-by-certiconfiance",
@@ -56,16 +60,16 @@
     "name": "Certified by Qualisud"
   },
   {
-    "key": "en:certified-by-veritas",
-    "name": "Certified by Veritas"
-  },
-  {
     "key": "en:certified-gluten-free",
     "name": "Certified gluten-free"
   },
   {
     "key": "en:certified-ivegan",
     "name": "Certified iVegan"
+  },
+  {
+    "key": "en:certified-plant-based",
+    "name": "Certified plant based"
   },
   {
     "key": "fr:produit-certifie",
@@ -86,6 +90,10 @@
   {
     "key": "en:nz-vegetarian-society-vegan-certification",
     "name": "NZ Vegetarian Society Vegan Certification"
+  },
+  {
+    "key": "en:responsible-aquaculture-asc",
+    "name": "Odgovorna akvakultura certifikat ASC"
   },
   {
     "key": "en:qs-certification-mark",
@@ -132,11 +140,19 @@
     "name": "UTZ Certified Coffee"
   },
   {
+    "key": "en:utz-certified-hazelnut",
+    "name": "UTZ Certified Hazelnut"
+  },
+  {
     "key": "en:utz-certified-tea",
     "name": "UTZ Certified Tea"
   },
   {
     "key": "en:vegecert-certified-vegan",
     "name": "VegeCert - Certified Vegan"
+  },
+  {
+    "key": "en:welfair-certificate",
+    "name": "Welfair certificate"
   }
 ]

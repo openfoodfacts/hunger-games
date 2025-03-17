@@ -32,6 +32,10 @@
     "name": "Belgian Family Brewers"
   },
   {
+    "key": "en:with-wholemeal-flour",
+    "name": "Contient de la farine complète"
+  },
+  {
     "key": "en:farm-production",
     "name": "Fabrication à la ferme"
   },
@@ -44,11 +48,19 @@
     "name": "Fabrique"
   },
   {
+    "key": "en:made-in-denmark",
+    "name": "Fabriqué au Danemark"
+  },
+  {
+    "key": "en:made-in-luxembourg",
+    "name": "Fabriqué au Luxembourg"
+  },
+  {
     "key": "en:made-in-portugal",
     "name": "Fabriqué au Portugal"
   },
   {
-    "key": "bg:произведено-в-европейския-съюз",
+    "key": "en:made-in-the-eu",
     "name": "Fabriqué dans l'UE"
   },
   {
@@ -80,20 +92,36 @@
     "name": "Fabriqué en Gourmandie"
   },
   {
+    "key": "en:made-in-greece",
+    "name": "Fabriqué en Grèce"
+  },
+  {
     "key": "en:made-in-italy",
     "name": "Fabriqué en Italie"
+  },
+  {
+    "key": "en:made-in-poland",
+    "name": "Fabriqué en Pologne"
+  },
+  {
+    "key": "en:made-in-romania",
+    "name": "Fabriqué en Roumanie"
   },
   {
     "key": "en:made-in-russia",
     "name": "Fabriqué en Russie"
   },
   {
+    "key": "en:made-in-serbia",
+    "name": "Fabriqué en Serbie"
+  },
+  {
     "key": "en:made-in-swiss",
     "name": "Fabriqué en Suisse"
   },
   {
-    "key": "en:face",
-    "name": "FACE"
+    "key": "en:low-saturated-fat",
+    "name": "Faible teneur en graisses saturées"
   },
   {
     "key": "en:low-sodium",
@@ -104,12 +132,64 @@
     "name": "Fair for Life"
   },
   {
+    "key": "en:fairtrade-australia-and-new-zealand",
+    "name": "Fairtrade Australia and New Zealand"
+  },
+  {
+    "key": "en:fairtrade-belgium",
+    "name": "Fairtrade Belgium"
+  },
+  {
+    "key": "en:fairtrade-canada",
+    "name": "Fairtrade Canada"
+  },
+  {
+    "key": "en:fairtrade-cocoa",
+    "name": "Fairtrade cocoa"
+  },
+  {
+    "key": "en:fairtrade-india",
+    "name": "Fairtrade India"
+  },
+  {
     "key": "en:fairtrade-international",
     "name": "Fairtrade International"
   },
   {
+    "key": "en:fairtrade-italia",
+    "name": "Fairtrade Italia"
+  },
+  {
+    "key": "en:fairtrade-korea",
+    "name": "Fairtrade Korea"
+  },
+  {
+    "key": "en:fairtrade-mark-ireland",
+    "name": "Fairtrade Mark Ireland"
+  },
+  {
+    "key": "en:fairtrade-norway",
+    "name": "Fairtrade Norway"
+  },
+  {
+    "key": "en:fairtrade-poland",
+    "name": "Fairtrade Poland"
+  },
+  {
+    "key": "en:fairtrade-sweden",
+    "name": "Fairtrade Sweden"
+  },
+  {
+    "key": "en:fairtrade-taiwan",
+    "name": "Fairtrade Taiwan"
+  },
+  {
     "key": "en:fairtrade-usa",
     "name": "Fairtrade USA"
+  },
+  {
+    "key": "en:made-in-canada",
+    "name": "Fait au Canada"
   },
   {
     "key": "en:made-with-free-range-eggs",
@@ -136,7 +216,19 @@
     "name": "High level of fat - Israel"
   },
   {
+    "key": "en:high-monounsaturated-fat",
+    "name": "High monounsaturated fat"
+  },
+  {
     "key": "en:naturland-fair",
     "name": "Naturland Fair"
+  },
+  {
+    "key": "en:the-czech-fairtrade-association",
+    "name": "The Czech Fairtrade Association"
+  },
+  {
+    "key": "en:the-fairtrade-foundation",
+    "name": "The Fairtrade Foundation"
   }
 ]

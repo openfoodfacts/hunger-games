@@ -1,13 +1,5 @@
 [
   {
-    "key": "en:10-less-salt",
-    "name": "10% less salt"
-  },
-  {
-    "key": "en:15-less-salt",
-    "name": "15% less salt"
-  },
-  {
     "key": "en:20-less-salt",
     "name": "20% less salt"
   },
@@ -44,28 +36,36 @@
     "name": "DO Manzanilla-Sanlúcar de Barrameda"
   },
   {
-    "key": "en:dolphin-safe",
-    "name": "Dolphin Safe"
-  },
-  {
     "key": "en:high-in-salt-finland",
     "name": "High in salt - Finland"
   },
   {
-    "key": "en:low-or-no-salt",
-    "name": "Low or no salt"
+    "key": "en:high-in-sat-fat-health-canada",
+    "name": "High in Sat fat (Health Canada)"
+  },
+  {
+    "key": "en:high-in-sat-fat-and-sodium-health-canada",
+    "name": "High in Sat fat and Sodium (Health Canada)"
+  },
+  {
+    "key": "en:high-in-sat-fat-and-sugars-health-canada",
+    "name": "High in Sat fat and Sugars (Health Canada)"
+  },
+  {
+    "key": "en:high-in-sat-fat-sugars-and-sodium-health-canada",
+    "name": "High in Sat fat Sugars and Sodium (Health Canada)"
+  },
+  {
+    "key": "fr:salage-naturel",
+    "name": "Naturally salted"
   },
   {
     "key": "en:no-added-salt",
     "name": "No added salt"
   },
   {
-    "key": "en:no-salt",
-    "name": "No salt"
-  },
-  {
-    "key": "en:reduced-salt",
-    "name": "Reduced salt"
+    "key": "en:with-sweeteners",
+    "name": "Sa zaslađivačima"
   },
   {
     "key": "en:sa-bio-102",
@@ -122,6 +122,10 @@
   {
     "key": "en:tierra-de-sabor",
     "name": "Tierra de Sabor"
+  },
+  {
+    "key": "en:very-low-salt",
+    "name": "Very low salt"
   },
   {
     "key": "en:with-guerande-salt",

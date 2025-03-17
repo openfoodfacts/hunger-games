@@ -96,6 +96,10 @@
     "name": "Geen vet of vetarm"
   },
   {
+    "key": "en:low-saturated-fat",
+    "name": "Laag gehalte aan verzadigde vetzuren"
+  },
+  {
     "key": "en:lacto-vegetarian",
     "name": "Lacto-vegetarian"
   },
@@ -138,6 +142,10 @@
   {
     "key": "en:plamil-foods-vegan",
     "name": "Plamil Foods Vegan"
+  },
+  {
+    "key": "en:rich-in-unsaturated-fatty-acids",
+    "name": "Rijk aan onverzadigde vetzuren"
   },
   {
     "key": "en:rich-in-polyunsaturated-fatty-acids",
@@ -244,6 +252,10 @@
     "name": "Verdikkingsmiddelvrij"
   },
   {
+    "key": "en:packaged-in-germany",
+    "name": "Verpakt in Duitsland"
+  },
+  {
     "key": "en:packaged-in-france",
     "name": "Verpakt in Frankrijk"
   },
@@ -252,12 +264,20 @@
     "name": "Verrijkt met calcium"
   },
   {
-    "key": "en:enriched-wih-minerals",
+    "key": "en:enriched-with-minerals",
     "name": "Verrijkt met mineralen"
   },
   {
-    "key": "en:enriched-wih-vitamins",
+    "key": "en:enriched-with-vitamins",
     "name": "Verrijkt met vitaminen"
+  },
+  {
+    "key": "en:very-low-salt",
+    "name": "Very low salt"
+  },
+  {
+    "key": "en:very-low-sodium",
+    "name": "Very low sodium"
   },
   {
     "key": "en:low-fat",
@@ -274,5 +294,9 @@
   {
     "key": "en:natural-product-without-vegetable-oils",
     "name": "Zonder plantaardige vetten"
+  },
+  {
+    "key": "en:saturated-fat-free",
+    "name": "Zonder verzadigde vetzuren"
   }
 ]

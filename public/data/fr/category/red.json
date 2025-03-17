@@ -32,6 +32,14 @@
     "name": "Deer red fresh meat"
   },
   {
+    "key": "en:flanders-red",
+    "name": "Flanders red"
+  },
+  {
+    "key": "en:irish-red-ales",
+    "name": "Irish red ales"
+  },
+  {
     "key": "en:cooked-ham-superior-quality-reduced-salt",
     "name": "Jambon cuit supérieur à teneur réduite en sel"
   },
@@ -60,6 +68,10 @@
     "name": "Pommes Red Delicious"
   },
   {
+    "key": "en:top-red-apples",
+    "name": "Pommes top red"
+  },
+  {
     "key": "fr:porto-reductifs",
     "name": "Porto réductifs"
   },
@@ -72,8 +84,12 @@
     "name": "Red cabbage with apple"
   },
   {
-    "key": "en:red-grape-juices",
-    "name": "Red grape juices"
+    "key": "en:red-fruit-yoghurts",
+    "name": "Red fruit yoghurts"
+  },
+  {
+    "key": "en:red-ipa",
+    "name": "Red IPA"
   },
   {
     "key": "en:red-leicester",
@@ -94,5 +110,9 @@
   {
     "key": "fr:savigny-les-beaune-premier-cru-redrescul-rouge",
     "name": "Savigny-lès-Beaune premier cru Redrescul rouge"
+  },
+  {
+    "key": "en:low-sodium-salts",
+    "name": "Sels réduits en sodium"
   }
 ]

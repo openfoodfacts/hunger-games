@@ -88,6 +88,10 @@
     "name": "Auxey-Duresses premier cru Les Duresses rouge AOC - AOP"
   },
   {
+    "key": "fr:auxey-duresses-premier-cru-reugne",
+    "name": "Auxey-Duresses premier cru Reugne"
+  },
+  {
     "key": "fr:auxey-duresses-premier-cru-reugne-blanc",
     "name": "Auxey-Duresses premier cru Reugne blanc"
   },
@@ -102,10 +106,6 @@
   {
     "key": "fr:auxey-duresses-premier-cru-reugne-rouge-aoc-aop",
     "name": "Auxey-Duresses premier cru Reugne rouge AOC - AOP"
-  },
-  {
-    "key": "fr:auxey-duresses-reugne",
-    "name": "Auxey-Duresses Reugne"
   },
   {
     "key": "en:whole-durum-wheat",
@@ -146,6 +146,18 @@
   {
     "key": "fr:cotes-de-duras",
     "name": "Côtes de Duras"
+  },
+  {
+    "key": "en:durian",
+    "name": "Durian"
+  },
+  {
+    "key": "en:dried-durian",
+    "name": "Durian séché"
+  },
+  {
+    "key": "en:duroc-ham",
+    "name": "Duroc ham"
   },
   {
     "key": "en:durum-wheat-pasta-vysshiy-sort-gost",
@@ -240,6 +252,10 @@
     "name": "Pâtes de blé dur entier ou semi-entier"
   },
   {
+    "key": "en:dry-durum-wheat-pasta",
+    "name": "Pâtes de blé dur sèches"
+  },
+  {
     "key": "es:pastas-de-trigo-duro-semi-integrales",
     "name": "Pâtes de blé dur semi-complet"
   },
@@ -284,8 +300,12 @@
     "name": "Spirales de blé dur"
   },
   {
-    "key": "en:whole-or-semi-whole-durum-wheat-spirals",
-    "name": "Spirales de blé dur entier ou semi-entier"
+    "key": "en:whole-durum-wheat-spirals",
+    "name": "Spirales de blé dur complet"
+  },
+  {
+    "key": "en:semi-whole-durum-wheat-spirals",
+    "name": "Spirales de blé dur semi-complet"
   },
   {
     "key": "es:fideos-de-trigo-duro",

@@ -4,8 +4,16 @@
     "name": "Blauer Engel"
   },
   {
-    "key": "en:enriched-wih-minerals",
-    "name": "Enriched wih minerals"
+    "key": "en:energy-free",
+    "name": "Energy free"
+  },
+  {
+    "key": "en:energy-reduced",
+    "name": "Energy reduced"
+  },
+  {
+    "key": "en:enriched-with-minerals",
+    "name": "Enriched with minerals"
   },
   {
     "key": "en:contains-alcohol",
@@ -22,6 +30,10 @@
   {
     "key": "en:contains-gmos",
     "name": "Enthält GVO"
+  },
+  {
+    "key": "en:contains-lactose",
+    "name": "Enthält Laktose"
   },
   {
     "key": "en:contains-milk",
@@ -44,7 +56,11 @@
     "name": "Französische Ente"
   },
   {
-    "key": "de:haltungsform-3-außenklima",
-    "name": "Haltungsform 3 Außenklima"
+    "key": "en:duck-born-and-bred-in-france",
+    "name": "In Frankreich geborene und aufgezogene Ente"
+  },
+  {
+    "key": "en:low-energy",
+    "name": "Low energy"
   }
 ]

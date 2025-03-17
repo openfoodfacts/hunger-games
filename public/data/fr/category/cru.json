@@ -284,6 +284,10 @@
     "name": "Alsace Grand Cru Zotzenberg"
   },
   {
+    "key": "en:raw-almonds",
+    "name": "Amandes décortiqués crues"
+  },
+  {
     "key": "en:raw-eels",
     "name": "Anguilles crues"
   },
@@ -338,6 +342,10 @@
   {
     "key": "fr:auxey-duresses-premier-cru-les-duresses-rouge-aoc-aop",
     "name": "Auxey-Duresses premier cru Les Duresses rouge AOC - AOP"
+  },
+  {
+    "key": "fr:auxey-duresses-premier-cru-reugne",
+    "name": "Auxey-Duresses premier cru Reugne"
   },
   {
     "key": "fr:auxey-duresses-premier-cru-reugne-blanc",
@@ -704,8 +712,12 @@
     "name": "Beaune premier cru Sur les Grèves rouge"
   },
   {
-    "key": "en:uncooked-beetroots",
-    "name": "Betterave rouge crue"
+    "key": "en:raw-beetroot",
+    "name": "Betteraves crues"
+  },
+  {
+    "key": "en:raw-sprouted-wheat",
+    "name": "Blé germé cru"
   },
   {
     "key": "en:camemberts-from-raw-buffalo-milk",
@@ -944,8 +956,24 @@
     "name": "Chassagne-Montrachet premier cru Blanchot Dessus"
   },
   {
+    "key": "fr:chassagne-montrachet-premier-cru-blanchot-dessus-blanc",
+    "name": "Chassagne-Montrachet premier cru Blanchot dessus blanc"
+  },
+  {
+    "key": "fr:chassagne-montrachet-premier-cru-blanchot-dessus-rouge",
+    "name": "Chassagne-Montrachet premier cru Blanchot dessus rouge"
+  },
+  {
     "key": "fr:chassagne-montrachet-premier-cru-bois-de-chassagne",
     "name": "Chassagne-Montrachet premier cru Bois de Chassagne"
+  },
+  {
+    "key": "fr:chassagne-montrachet-premier-cru-bois-de-chassagne-blanc",
+    "name": "Chassagne-Montrachet premier cru Bois de Chassagne blanc"
+  },
+  {
+    "key": "fr:chassagne-montrachet-premier-cru-bois-de-chassagne-rouge",
+    "name": "Chassagne-Montrachet premier cru Bois de Chassagne rouge"
   },
   {
     "key": "fr:chassagne-montrachet-premier-cru-cailleret",
@@ -1984,11 +2012,11 @@
     "name": "Jambon cru fumé allégé en matières grasses"
   },
   {
-    "key": "en:cured-ham",
+    "key": "en:cured-hams",
     "name": "Jambons crus"
   },
   {
-    "key": "en:smoked-cured-ham",
+    "key": "en:smoked-cured-hams",
     "name": "Jambons crus fumés"
   },
   {
@@ -2158,6 +2186,14 @@
   {
     "key": "fr:mercurey-premier-cru-les-byots",
     "name": "Mercurey premier cru Les Byots"
+  },
+  {
+    "key": "fr:mercurey-premier-cru-les-byots-blanc",
+    "name": "Mercurey premier cru Les Byots blanc"
+  },
+  {
+    "key": "fr:mercurey-premier-cru-les-byots-rouge",
+    "name": "Mercurey premier cru Les Byots rouge"
   },
   {
     "key": "fr:mercurey-premier-cru-les-champs-martin",
@@ -2808,6 +2844,14 @@
     "name": "Munsters au lait cru"
   },
   {
+    "key": "en:raw-hazelnuts",
+    "name": "Noisettes décortiquées crues"
+  },
+  {
+    "key": "en:raw-cashew-nuts",
+    "name": "Noix de cajou crues"
+  },
+  {
     "key": "fr:nuits-saint-georges-aux-vignerondes-premier-cru-aux-vignerondes",
     "name": "Nuits-Saint-Georges Aux Vignerondes premier cru Aux Vignerondes"
   },
@@ -3320,6 +3364,10 @@
     "name": "Oignons surgelés crus"
   },
   {
+    "key": "en:fresh-sorrel",
+    "name": "Oseille crue"
+  },
+  {
     "key": "en:panini-with-cured-ham-mozzarella-cheese-and-tomato",
     "name": "Panini au jambon cru"
   },
@@ -3366,6 +3414,10 @@
   {
     "key": "en:raw-shortbread-dough",
     "name": "Pâte sablée crue"
+  },
+  {
+    "key": "en:shortbread-dough-with-vegetable-fats",
+    "name": "Pâte sablée crue à la matière grasse végétale"
   },
   {
     "key": "en:raw-shortbread-dough-with-pure-butter",
@@ -3508,16 +3560,20 @@
     "name": "Poulet cuisse viande et peau cru"
   },
   {
+    "key": "en:frozen-chicken-leg-meat-and-skin-raw",
+    "name": "Poulet cuisse viande et peau cru surgelée"
+  },
+  {
     "key": "en:chicken-eviscerated-without-offal-raw",
     "name": "Poulet éviscéré sans abats cru"
   },
   {
-    "key": "en:chicken-free-range-meat-and-skin-raw",
-    "name": "Poulet fermier viande et peau cru"
-  },
-  {
     "key": "en:chicken-breast-without-skin-raw",
     "name": "Poulet filet sans peau cru"
+  },
+  {
+    "key": "en:frozen-chicken-breast-without-skin-raw",
+    "name": "Poulet filet sans peau cru surgelé"
   },
   {
     "key": "en:chicken-high-leg-meat-raw",
@@ -3672,8 +3728,8 @@
     "name": "Puligny-Montrachet premier cru Sous le Puits blanc"
   },
   {
-    "key": "en:quinoa-fr-raw",
-    "name": "Quinoa FR cru"
+    "key": "en:raw-quinoa-from-france",
+    "name": "Quinoa de France cru"
   },
   {
     "key": "en:crustacean-rillettes",
@@ -4336,6 +4392,10 @@
     "name": "Salsifis surgelés crus"
   },
   {
+    "key": "en:salted-crumbles",
+    "name": "Salted crumbles"
+  },
+  {
     "key": "en:baguette-sandwiches-with-vegetables-and-mayonnaise",
     "name": "Sandwich baguette crudités mayonnaise"
   },
@@ -4388,7 +4448,7 @@
     "name": "Sandwich triangle thon crudités"
   },
   {
-    "key": "en:vegetable-sandwiches",
+    "key": "en:raw-vegetable-sandwiches",
     "name": "Sandwichs aux crudités"
   },
   {
@@ -4546,10 +4606,6 @@
   {
     "key": "fr:santenay-premier-cru-rouge",
     "name": "Santenay premier cru rouge"
-  },
-  {
-    "key": "fr:sauces-crudites",
-    "name": "Sauces crudités"
   },
   {
     "key": "en:salad-dressing-with-reduced-fat",
@@ -4846,6 +4902,10 @@
   {
     "key": "fr:thon-crudites",
     "name": "Thon-crudités"
+  },
+  {
+    "key": "en:raw-tunas",
+    "name": "Thons crus"
   },
   {
     "key": "en:tomato-in-season-raw",

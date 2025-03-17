@@ -1,39 +1,15 @@
 [
   {
-    "key": "en:anti-reflux-milk",
-    "name": "Anti-reflux milk"
-  },
-  {
     "key": "en:chocolate-mousse-topped-with-whipped-cream-refrigerated",
     "name": "Chocolate mousse topped with whipped cream refrigerated"
   },
   {
-    "key": "en:palm-oil-refined",
-    "name": "Palm oil refined"
+    "key": "en:anti-reflux-milk",
+    "name": "Mlijeko protiv refluksa"
   },
   {
     "key": "en:profiteroles-with-custard-and-chocolate-sauce-refrigerated",
     "name": "Profiteroles with custard and chocolate sauce refrigerated"
-  },
-  {
-    "key": "en:refined-coco-oils",
-    "name": "Refined coco oils"
-  },
-  {
-    "key": "en:refined-deodorized-sunflower-oils",
-    "name": "Refined deodorized sunflower oils"
-  },
-  {
-    "key": "en:refined-olive-oils",
-    "name": "Refined olive oils"
-  },
-  {
-    "key": "en:refined-wheat-flour",
-    "name": "Refined wheat flour"
-  },
-  {
-    "key": "en:refried-beans",
-    "name": "Refried beans"
   },
   {
     "key": "en:refrigerated-15-20-fat-light-thick-cream",
@@ -44,8 +20,8 @@
     "name": "Refrigerated 30% fat thick cream"
   },
   {
-    "key": "en:refrigerated-apple-juices",
-    "name": "Refrigerated apple juices"
+    "key": "en:refrigerated-baking-mixes",
+    "name": "Refrigerated baking mixes"
   },
   {
     "key": "en:refrigerated-black-pudding",
@@ -72,16 +48,20 @@
     "name": "Refrigerated chocolate mousses"
   },
   {
+    "key": "en:refrigerated-chutneys",
+    "name": "Refrigerated Chutneys"
+  },
+  {
     "key": "en:refrigerated-coffee-puddings",
     "name": "Refrigerated coffee puddings"
   },
   {
-    "key": "en:refrigerated-creamy-puddings",
-    "name": "Refrigerated creamy puddings"
+    "key": "en:refrigerated-cooking-helpers",
+    "name": "Refrigerated cooking helpers"
   },
   {
-    "key": "en:refrigerated-cremes-brulees",
-    "name": "Refrigerated crèmes brûlées"
+    "key": "en:refrigerated-creams",
+    "name": "Refrigerated creams"
   },
   {
     "key": "en:refrigerated-custard-dessert-with-reduced-fat",
@@ -92,12 +72,16 @@
     "name": "Refrigerated custard puddings with caramel sauce"
   },
   {
-    "key": "en:refrigerated-falafel",
-    "name": "Refrigerated falafel"
+    "key": "en:refrigerated-dessert-sauces",
+    "name": "Refrigerated dessert sauces"
   },
   {
-    "key": "en:refrigerated-flan-with-eggs",
-    "name": "Refrigerated flan with eggs"
+    "key": "en:refrigerated-desserts",
+    "name": "Refrigerated desserts"
+  },
+  {
+    "key": "en:refrigerated-dough-based-meals-ready",
+    "name": "Refrigerated dough based meals (ready)"
   },
   {
     "key": "en:refrigerated-flavoured-milk-jelly",
@@ -112,8 +96,8 @@
     "name": "Refrigerated flavoured milk jelly with reduced fat and sugar"
   },
   {
-    "key": "en:refrigerated-foods",
-    "name": "Refrigerated foods"
+    "key": "en:refrigerated-fruit-and-vegetable-preserves",
+    "name": "Refrigerated fruit and vegetable preserves"
   },
   {
     "key": "en:refrigerated-fruits-batter-pudding",
@@ -124,20 +108,44 @@
     "name": "Refrigerated fruits compote with reduced sugar"
   },
   {
+    "key": "en:refrigerated-grain-based-meal-kits",
+    "name": "Refrigerated grain based meal kits"
+  },
+  {
     "key": "en:refrigerated-ground-beef-meats",
     "name": "Refrigerated ground beef meats"
   },
   {
-    "key": "en:refrigerated-meals",
-    "name": "Refrigerated meals"
+    "key": "en:refrigerated-herbs-and-spices",
+    "name": "Refrigerated Herbs and Spices"
   },
   {
     "key": "en:refrigerated-milk-based-chocolate-mousses",
     "name": "Refrigerated milk-based chocolate mousses"
   },
   {
+    "key": "en:refrigerated-milks",
+    "name": "Refrigerated milks"
+  },
+  {
+    "key": "en:refrigerated-non-dairy-yogurts",
+    "name": "Refrigerated non-dairy yogurts"
+  },
+  {
+    "key": "en:refrigerated-olives",
+    "name": "Refrigerated olives"
+  },
+  {
+    "key": "en:refrigerated-other-sauces",
+    "name": "Refrigerated other sauces"
+  },
+  {
     "key": "en:refrigerated-panna-cotta",
     "name": "Refrigerated panna cotta"
+  },
+  {
+    "key": "en:refrigerated-pates",
+    "name": "Refrigerated Pâtés"
   },
   {
     "key": "en:refrigerated-plain-crepes",
@@ -146,6 +154,10 @@
   {
     "key": "en:refrigerated-plant-based-foods",
     "name": "Refrigerated plant-based foods"
+  },
+  {
+    "key": "en:refrigerated-prepared-shellfish",
+    "name": "Refrigerated prepared shellfish"
   },
   {
     "key": "en:refrigerated-rice-pudding-with-caramel-sauce",
@@ -160,35 +172,15 @@
     "name": "Refrigerated semolina puddings with raisins and caramel sauce"
   },
   {
-    "key": "en:refrigerated-soups",
-    "name": "Refrigerated soups"
-  },
-  {
-    "key": "en:refrigerated-squeezed-juices",
-    "name": "Refrigerated squeezed juices"
-  },
-  {
-    "key": "en:refrigerated-squeezed-multifruit-juices",
-    "name": "Refrigerated squeezed multifruit juices"
-  },
-  {
-    "key": "en:refrigerated-squeezed-orange-juices",
-    "name": "Refrigerated squeezed orange juices"
-  },
-  {
-    "key": "en:refrigerated-squeezed-pineapple-juices",
-    "name": "Refrigerated squeezed pineapple juices"
-  },
-  {
-    "key": "en:refrigerated-squeezed-tangerine-juices",
-    "name": "Refrigerated squeezed tangerine juices"
-  },
-  {
     "key": "en:refrigerated-vanilla-creamy-puddings",
     "name": "Refrigerated vanilla creamy puddings"
   },
   {
-    "key": "en:refrigerated-vegetable-soups",
-    "name": "Refrigerated vegetable soups"
+    "key": "en:refrigerated-vegetable-fats",
+    "name": "Refrigerated vegetable fats"
+  },
+  {
+    "key": "en:refrigerated-vegetable-juices",
+    "name": "Refrigerated vegetable juices"
   }
 ]

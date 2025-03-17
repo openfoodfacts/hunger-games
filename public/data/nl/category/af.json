@@ -1,5 +1,9 @@
 [
   {
+    "key": "en:pre-baked-breads",
+    "name": "Afbakbroden"
+  },
+  {
     "key": "en:weight-loss-tea-blends",
     "name": "Afslank thee melanges"
   },
@@ -22,6 +26,14 @@
   {
     "key": "en:fruits-based-foods",
     "name": "Fruit en afgeleide producten"
+  },
+  {
+    "key": "en:vegetables-based-foods",
+    "name": "Groente en afgeleide producten"
+  },
+  {
+    "key": "en:turkey-and-its-products",
+    "name": "Kalkoen en afgeleide producten"
   },
   {
     "key": "en:chicken-and-its-products",
@@ -48,12 +60,24 @@
     "name": "Pompoenzaden en afgeleiden"
   },
   {
+    "key": "en:beef-and-its-products",
+    "name": "Rundvlees en afgeleide producten"
+  },
+  {
     "key": "en:tomatoes-and-their-products",
     "name": "Tomaten en afgeleide producten"
   },
   {
     "key": "en:onions-and-their-products",
     "name": "Ui en afgeleide producten"
+  },
+  {
+    "key": "en:pork-and-its-products",
+    "name": "Varken en afgeleide producten"
+  },
+  {
+    "key": "en:fishes-and-their-products",
+    "name": "Vis- en afgeleide producten"
   },
   {
     "key": "en:sunflower-seeds-and-their-products",

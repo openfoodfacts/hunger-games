@@ -24,8 +24,16 @@
     "name": "Furchtsäfte und Sojagetränke"
   },
   {
-    "key": "en:sweetened-natural-soy-milks",
+    "key": "en:puffed-salty-snacks-potato-soy-based",
+    "name": "Gepuffte salzige Snacks (Kartoffel/Soja)"
+  },
+  {
+    "key": "en:sweetened-plain-soy-based-drinks",
     "name": "Gesüßte natürliche Sojamilch"
+  },
+  {
+    "key": "en:dried-soy-vermicelli",
+    "name": "Getrocknete Soja-Vermicelli"
   },
   {
     "key": "en:blueberry-soy-yogurts",
@@ -56,6 +64,10 @@
     "name": "Soja-Nachtische"
   },
   {
+    "key": "en:soy-vermicelli",
+    "name": "Soja-Vermicelli"
+  },
+  {
     "key": "en:soy-flakes",
     "name": "Sojaflocken"
   },
@@ -68,7 +80,7 @@
     "name": "Sojajoghurt mit tropischen Früchten"
   },
   {
-    "key": "en:soy-milks",
+    "key": "en:soy-based-drinks",
     "name": "Sojamilch"
   },
   {
@@ -84,11 +96,15 @@
     "name": "Sojasoßen"
   },
   {
-    "key": "en:unsweetened-natural-soy-milks",
+    "key": "en:unsalted-cooked-soy-noodles",
+    "name": "Ungesalzene gekochte Soja-Nudeln"
+  },
+  {
+    "key": "en:unsweetened-plain-soy-based-drinks",
     "name": "Ungesüßte natürliche Sojamilch"
   },
   {
-    "key": "en:vanilla-soy-milks",
+    "key": "en:vanilla-soy-based-drinks",
     "name": "Vanille-Soja-Milch"
   }
 ]

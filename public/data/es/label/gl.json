@@ -12,8 +12,16 @@
     "name": "DZG Gluten free"
   },
   {
+    "key": "en:gfco-gluten-free",
+    "name": "GFCO Gluten Free"
+  },
+  {
     "key": "en:globalg-a-p",
     "name": "GLOBALG.A.P."
+  },
+  {
+    "key": "en:isomaltulose-is-a-source-of-glucose-and-fructose",
+    "name": "La isomaltulosa es una fuente de glucosa y fructosa"
   },
   {
     "key": "en:no-msg",
@@ -22,5 +30,13 @@
   {
     "key": "en:no-gluten",
     "name": "Sin gluten"
+  },
+  {
+    "key": "en:no-glucose-syrup",
+    "name": "Sin jarabe de glucosa"
+  },
+  {
+    "key": "en:no-glucose-fructose-syrup",
+    "name": "Sin jarabe de glucosa-fructosa"
   }
 ]

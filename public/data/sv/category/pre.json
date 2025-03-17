@@ -12,8 +12,12 @@
     "name": "Beef preparations"
   },
   {
-    "key": "en:biscuit-small-tart-with-chocolate-pre-packed",
-    "name": "Biscuit (small tart) with chocolate pre-packed"
+    "key": "en:beverage-preparations",
+    "name": "Beverage preparations"
+  },
+  {
+    "key": "en:beverages-and-beverages-preparations",
+    "name": "Beverages and beverages preparations"
   },
   {
     "key": "en:bread-pretzels",
@@ -40,16 +44,16 @@
     "name": "Chocolate croissant prepacked"
   },
   {
-    "key": "en:coconut-based-drink-plain-prepacked",
-    "name": "Coconut-based drink plain prepacked"
-  },
-  {
-    "key": "en:cooked-pressed-cheeses",
-    "name": "Cooked pressed cheeses"
-  },
-  {
     "key": "en:dried-pre-cooked-polenta-semolina",
     "name": "Dried pre-cooked polenta semolina"
+  },
+  {
+    "key": "en:ducks-prepared",
+    "name": "Ducks (prepared)"
+  },
+  {
+    "key": "en:fish-freshly-prepared",
+    "name": "Fish (Freshly prepared)"
   },
   {
     "key": "en:fish-preparations",
@@ -80,6 +84,10 @@
     "name": "Frozen cooked pre-fried potato cubes"
   },
   {
+    "key": "en:frozen-dough-based-meals-to-prepare",
+    "name": "Frozen dough based meals (to prepare)"
+  },
+  {
     "key": "en:frozen-ground-beef-preparations",
     "name": "Frozen ground beef preparations"
   },
@@ -90,6 +98,18 @@
   {
     "key": "en:frozen-meat-preparations",
     "name": "Frozen meat preparations"
+  },
+  {
+    "key": "en:frozen-pre-baked-breads",
+    "name": "Frozen pre-baked breads"
+  },
+  {
+    "key": "en:frozen-pre-baked-hamburger-buns",
+    "name": "Frozen pre-baked hamburger buns"
+  },
+  {
+    "key": "en:frozen-pre-baked-pitas",
+    "name": "Frozen pre-baked pitas"
   },
   {
     "key": "en:frozen-pre-cooked-rice",
@@ -112,8 +132,20 @@
     "name": "Frozen precooked green peas"
   },
   {
+    "key": "en:frozen-prepared-shellfish",
+    "name": "Frozen prepared shellfish"
+  },
+  {
     "key": "en:fruit-and-vegetable-preserves",
     "name": "Fruit and vegetable preserves"
+  },
+  {
+    "key": "en:fruit-based-foods-prepared",
+    "name": "Fruit based foods (prepared)"
+  },
+  {
+    "key": "en:fruit-preserves-with-chocolate",
+    "name": "Fruit preserves with chocolate"
   },
   {
     "key": "en:ginger-preserves",
@@ -164,6 +196,10 @@
     "name": "Milks for premature babies"
   },
   {
+    "key": "en:non-frozen-dough-based-meals-to-prepare",
+    "name": "Non-frozen dough based meals (to prepare)"
+  },
+  {
     "key": "en:olive-oils-from-pretuziano-delle-colline-teramane",
     "name": "Olive oils from Pretuziano delle Colline Teramane"
   },
@@ -172,12 +208,20 @@
     "name": "Olive oils from Preveza"
   },
   {
+    "key": "en:pork-prepared",
+    "name": "Pork (prepared)"
+  },
+  {
     "key": "en:pork-preparations",
     "name": "Pork preparations"
   },
   {
     "key": "en:potato-preparations",
     "name": "Potato preparations"
+  },
+  {
+    "key": "en:poultry-minced-preparations",
+    "name": "Poultry minced preparations"
   },
   {
     "key": "en:pre-baked-breads",
@@ -194,6 +238,10 @@
   {
     "key": "en:pre-cooked-oat-flakes",
     "name": "Pre-cooked oat flakes"
+  },
+  {
+    "key": "en:pre-cooked-oat-flakes-with-sugar",
+    "name": "Pre-cooked oat flakes with sugar"
   },
   {
     "key": "en:pre-cooked-whole-wheat",
@@ -236,6 +284,14 @@
     "name": "Preparations made from crabs"
   },
   {
+    "key": "en:prepared-alternate-meats",
+    "name": "Prepared alternate meats"
+  },
+  {
+    "key": "en:prepared-alternate-meats-broad",
+    "name": "Prepared alternate meats (broad)"
+  },
+  {
     "key": "en:prepared-and-canned-salad-with-fish",
     "name": "Prepared and canned salad with fish"
   },
@@ -244,12 +300,40 @@
     "name": "Prepared and canned salad with meat"
   },
   {
+    "key": "en:prepared-asparagus",
+    "name": "Prepared asparagus"
+  },
+  {
+    "key": "en:prepared-bruschetta-toasts",
+    "name": "Prepared bruschetta toasts"
+  },
+  {
+    "key": "en:prepared-carrots",
+    "name": "Prepared carrots"
+  },
+  {
     "key": "en:prepared-couscous",
     "name": "Prepared couscous"
   },
   {
+    "key": "en:prepared-eggplants",
+    "name": "Prepared eggplants"
+  },
+  {
     "key": "en:prepared-fish",
     "name": "Prepared fish"
+  },
+  {
+    "key": "en:prepared-foods-variety-packs",
+    "name": "Prepared foods variety packs"
+  },
+  {
+    "key": "en:prepared-fresh-fruits",
+    "name": "Prepared fresh fruits"
+  },
+  {
+    "key": "en:prepared-frozen-fruits",
+    "name": "Prepared frozen fruits"
   },
   {
     "key": "en:prepared-lasagne",
@@ -272,6 +356,10 @@
     "name": "Prepared meats with less salt"
   },
   {
+    "key": "en:prepared-potatoes",
+    "name": "Prepared potatoes"
+  },
+  {
     "key": "en:prepared-potatoes-salad-home-made",
     "name": "Prepared potatoes salad home-made"
   },
@@ -284,12 +372,32 @@
     "name": "Prepared salads"
   },
   {
-    "key": "en:prepared-vegetables",
-    "name": "Prepared vegetables"
+    "key": "en:prepared-shelled-nuts-and-seeds",
+    "name": "Prepared shelled nuts and seeds"
   },
   {
-    "key": "en:prepared-vegetables-macedoines",
-    "name": "Prepared vegetables macedoines"
+    "key": "en:prepared-snails",
+    "name": "Prepared snails"
+  },
+  {
+    "key": "en:prepared-spinachs",
+    "name": "Prepared spinachs"
+  },
+  {
+    "key": "en:prepared-sweet-potatoes",
+    "name": "Prepared sweet potatoes"
+  },
+  {
+    "key": "en:prepared-unshelled-nuts-or-seeds",
+    "name": "Prepared unshelled nuts or seeds"
+  },
+  {
+    "key": "en:prepared-veal-meat",
+    "name": "Prepared veal meat"
+  },
+  {
+    "key": "en:prepared-vegetables",
+    "name": "Prepared vegetables"
   },
   {
     "key": "en:prepared-zucchini",
@@ -308,8 +416,24 @@
     "name": "Preserved poultry liver"
   },
   {
+    "key": "en:pressurized-whipped-cream-substitutes",
+    "name": "Pressurized whipped cream substitutes"
+  },
+  {
     "key": "en:pretzel",
     "name": "Pretzel"
+  },
+  {
+    "key": "en:refrigerated-fruit-and-vegetable-preserves",
+    "name": "Refrigerated fruit and vegetable preserves"
+  },
+  {
+    "key": "en:refrigerated-prepared-shellfish",
+    "name": "Refrigerated prepared shellfish"
+  },
+  {
+    "key": "en:rice-puddings-with-a-fruit-preparation",
+    "name": "Rice puddings with a fruit preparation"
   },
   {
     "key": "en:rose-petal-preserves",
@@ -340,8 +464,24 @@
     "name": "Semi-preserved lump roe"
   },
   {
+    "key": "en:shelf-stable-prepared-aquatic-invertebrates",
+    "name": "Shelf-stable prepared aquatic invertebrates"
+  },
+  {
+    "key": "en:shelf-stable-prepared-fruit-nuts-and-seeds-mixes",
+    "name": "Shelf-stable prepared fruit nuts and seeds Mixes"
+  },
+  {
+    "key": "en:shelf-stable-prepared-shellfish",
+    "name": "Shelf-stable prepared shellfish"
+  },
+  {
     "key": "en:snails-preparations",
     "name": "Snails preparations"
+  },
+  {
+    "key": "en:soups-prepared-shelf-stable",
+    "name": "Soups (prepared) (Shelf Stable)"
   },
   {
     "key": "en:soy-based-minced-prepacked",
@@ -350,6 +490,10 @@
   {
     "key": "en:soy-based-patty-plain-vegetable-steak-prepacked",
     "name": "Soy-based patty plain (vegetable steak) prepacked"
+  },
+  {
+    "key": "en:tartlet-biscuits-with-fruit-preparation",
+    "name": "Tartlet biscuits with fruit preparation"
   },
   {
     "key": "en:turkey-preparations",
@@ -362,6 +506,10 @@
   {
     "key": "en:unsalted-pre-cooked-durum-wheat-with-whole-grain",
     "name": "Unsalted pre-cooked durum wheat with whole grain"
+  },
+  {
+    "key": "en:vegetables-freshly-prepared",
+    "name": "Vegetables (freshly prepared)"
   },
   {
     "key": "en:whipped-cream-under-pressure-uht",

@@ -8,6 +8,34 @@
     "name": "DO Manzanilla-Sanlúcar de Barrameda"
   },
   {
+    "key": "en:high-in-sat-fat-health-canada",
+    "name": "Élevé en Gras sat. (Santé Canada)"
+  },
+  {
+    "key": "en:high-in-sat-fat-and-sodium-health-canada",
+    "name": "Élevé en Gras sat. et Sodium (Santé Canada)"
+  },
+  {
+    "key": "en:high-in-sat-fat-and-sugars-health-canada",
+    "name": "Élevé en Gras sat. et Sucres (Santé Canada)"
+  },
+  {
+    "key": "en:high-in-sat-fat-sugars-and-sodium-health-canada",
+    "name": "Élevé en Gras sat. Sucres et Sodium (Santé Canada)"
+  },
+  {
+    "key": "en:high-in-sodium-health-canada",
+    "name": "Élevé en Sodium (Santé Canada)"
+  },
+  {
+    "key": "en:high-in-sugars-health-canada",
+    "name": "Élevé en Sucres (Santé Canada)"
+  },
+  {
+    "key": "en:high-in-sugars-and-sodium-health-canada",
+    "name": "Élevé en Sucres et Sodium (Santé Canada)"
+  },
+  {
     "key": "en:tooth-health-related-labels",
     "name": "Labels liés à la santé des dents"
   },
@@ -22,6 +50,10 @@
   {
     "key": "en:eggs-from-animals-fed-without-gmos",
     "name": "Oeufs issus d'animaux nourris sans OGMs"
+  },
+  {
+    "key": "en:low-or-no-sodium",
+    "name": "Pauvre ou sans sodium"
   },
   {
     "key": "en:porks-raised-without-antibiotics",
@@ -80,7 +112,7 @@
     "name": "Sans additifs"
   },
   {
-    "key": "bg:без-изкуствени-добавки",
+    "key": "en:no-artificial-additives",
     "name": "Sans additifs artificiels"
   },
   {
@@ -98,6 +130,10 @@
   {
     "key": "en:no-alcohol",
     "name": "Sans alcool"
+  },
+  {
+    "key": "en:without-allergens",
+    "name": "Sans allergènes"
   },
   {
     "key": "en:without-modified-starches",
@@ -136,6 +172,10 @@
     "name": "Sans arômes artificiels"
   },
   {
+    "key": "fr:sans-aromes-ni-colorants-artificiels",
+    "name": "Sans arômes ni colorants artificiels"
+  },
+  {
     "key": "en:no-aspartame",
     "name": "Sans aspartame"
   },
@@ -164,6 +204,10 @@
     "name": "Sans colorants azoïques"
   },
   {
+    "key": "en:no-artificial-colours-and-preservatives",
+    "name": "Sans colorants et conservateurs artificiels"
+  },
+  {
     "key": "en:no-artificial-colours-or-flavours",
     "name": "Sans colorants ni arômes artificiels"
   },
@@ -188,6 +232,10 @@
     "name": "Sans édulcorants"
   },
   {
+    "key": "en:no-emulsifiers",
+    "name": "Sans émulsifiants"
+  },
+  {
     "key": "en:no-thickening-agent",
     "name": "Sans épaississant"
   },
@@ -202,6 +250,10 @@
   {
     "key": "en:no-artificial-flavour-enhancer",
     "name": "Sans exhausteurs de goût artificiels"
+  },
+  {
+    "key": "en:no-nuts",
+    "name": "Sans fruits à coque"
   },
   {
     "key": "en:no-gelatin",
@@ -220,8 +272,16 @@
     "name": "Sans gluten"
   },
   {
+    "key": "en:no-trans-fat-and-preservatives",
+    "name": "Sans gras trans et conservateurs"
+  },
+  {
     "key": "en:without-hormones",
     "name": "Sans hormone"
+  },
+  {
+    "key": "en:without-oil",
+    "name": "Sans huile"
   },
   {
     "key": "en:no-palm-oil",
@@ -260,6 +320,10 @@
     "name": "Sans matière grasse hydrogénée"
   },
   {
+    "key": "en:saturated-fat-free",
+    "name": "Sans matières grasses saturées"
+  },
+  {
     "key": "en:without-brown-muscle",
     "name": "Sans muscle brun"
   },
@@ -296,12 +360,28 @@
     "name": "Sans résidus de pesticides"
   },
   {
+    "key": "fr:sans-residus-de-pesticides-collectif-nouveaux-champs",
+    "name": "Sans résidus de pesticides collectif nouveaux champs"
+  },
+  {
     "key": "en:no-salt",
     "name": "Sans sel"
   },
   {
     "key": "en:no-added-salt",
     "name": "Sans sel ajouté"
+  },
+  {
+    "key": "en:no-fructose-syrup",
+    "name": "Sans sirop de fructose"
+  },
+  {
+    "key": "en:no-glucose-syrup",
+    "name": "Sans sirop de glucose"
+  },
+  {
+    "key": "en:no-glucose-fructose-syrup",
+    "name": "Sans sirop de glucose-fructose"
   },
   {
     "key": "en:no-soy",
@@ -328,7 +408,7 @@
     "name": "Soja Français sans OGM"
   },
   {
-    "key": "fr:union-francaise-pour-la-sante-bucco-dentaire",
+    "key": "en:ufsbd",
     "name": "Union française pour la santé bucco-dentaire"
   }
 ]

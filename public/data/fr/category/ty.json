@@ -60,10 +60,6 @@
     "name": "Feta-type cheese"
   },
   {
-    "key": "en:sainte-maure-goat-cheeses",
-    "name": "Fromage de chèvre lactique affiné (type bûchette crottin Sainte-Maure)"
-  },
-  {
     "key": "en:cheese-from-goat-s-milk-from-raw-milk",
     "name": "Fromage de chèvre lactique affiné au lait cru (type Crottin de Chavignol Picodon Rocamadour Sainte-Maure de Touraine)"
   },
@@ -92,6 +88,10 @@
     "name": "Fromage type Maasdam 27% MG"
   },
   {
+    "key": "en:incorrect-product-type",
+    "name": "Mauvais product type"
+  },
+  {
     "key": "en:pizza-with-raclette-cheese-and-lardoons",
     "name": "Pizza type raclette"
   },
@@ -114,6 +114,10 @@
   {
     "key": "en:salami-danish-style",
     "name": "Salami type danois"
+  },
+  {
+    "key": "en:bruschetta-spreads",
+    "name": "Tartinades type bruschetta"
   },
   {
     "key": "en:fortified-wines-such-as-natural-sweet-wines",

@@ -4,6 +4,14 @@
     "name": "-25% soli"
   },
   {
+    "key": "en:10-less-salt",
+    "name": "10% manje soli"
+  },
+  {
+    "key": "en:15-less-salt",
+    "name": "15% manje soli"
+  },
+  {
     "key": "en:low-salt",
     "name": "Bez dodane soli"
   },
@@ -12,8 +20,8 @@
     "name": "Bez soje"
   },
   {
-    "key": "en:calcium-source",
-    "name": "Calcium source"
+    "key": "en:no-salt",
+    "name": "Bez soli"
   },
   {
     "key": "en:contains-soy",
@@ -28,16 +36,120 @@
     "name": "French soy without GMOs"
   },
   {
+    "key": "en:high-in-sat-fat-and-sodium-health-canada",
+    "name": "High in Sat fat and Sodium (Health Canada)"
+  },
+  {
+    "key": "en:high-in-sat-fat-sugars-and-sodium-health-canada",
+    "name": "High in Sat fat Sugars and Sodium (Health Canada)"
+  },
+  {
+    "key": "en:high-in-sodium-health-canada",
+    "name": "High in Sodium (Health Canada)"
+  },
+  {
+    "key": "en:high-in-sugars-and-sodium-health-canada",
+    "name": "High in Sugars and Sodium (Health Canada)"
+  },
+  {
     "key": "en:high-level-of-sodium-israel",
     "name": "High level of sodium - Israel"
+  },
+  {
+    "key": "en:international-ice-cream-consortium-award-best-commercial-solution-2014",
+    "name": "International Ice Cream Consortium award best commercial solution 2014"
+  },
+  {
+    "key": "en:international-ice-cream-consortium-award-best-commercial-solution-2015",
+    "name": "International Ice Cream Consortium award best commercial solution 2015"
+  },
+  {
+    "key": "en:international-ice-cream-consortium-award-best-commercial-solution-2016",
+    "name": "International Ice Cream Consortium award best commercial solution 2016"
+  },
+  {
+    "key": "en:international-ice-cream-consortium-award-best-commercial-solution-2017",
+    "name": "International Ice Cream Consortium award best commercial solution 2017"
+  },
+  {
+    "key": "en:international-ice-cream-consortium-award-best-commercial-solution-2018",
+    "name": "International Ice Cream Consortium award best commercial solution 2018"
+  },
+  {
+    "key": "en:international-ice-cream-consortium-award-best-commercial-solution-2019",
+    "name": "International Ice Cream Consortium award best commercial solution 2019"
+  },
+  {
+    "key": "en:international-ice-cream-consortium-award-best-technical-solution-2014",
+    "name": "International Ice Cream Consortium award best technical solution 2014"
+  },
+  {
+    "key": "en:international-ice-cream-consortium-award-best-technical-solution-2015",
+    "name": "International Ice Cream Consortium award best technical solution 2015"
+  },
+  {
+    "key": "en:international-ice-cream-consortium-award-best-technical-solution-2016",
+    "name": "International Ice Cream Consortium award best technical solution 2016"
+  },
+  {
+    "key": "en:international-ice-cream-consortium-award-best-technical-solution-2017",
+    "name": "International Ice Cream Consortium award best technical solution 2017"
+  },
+  {
+    "key": "en:international-ice-cream-consortium-award-best-technical-solution-2018",
+    "name": "International Ice Cream Consortium award best technical solution 2018"
+  },
+  {
+    "key": "en:international-ice-cream-consortium-award-best-technical-solution-2019",
+    "name": "International Ice Cream Consortium award best technical solution 2019"
+  },
+  {
+    "key": "en:iodine-source",
+    "name": "Iodine source"
+  },
+  {
+    "key": "en:iron-source",
+    "name": "Iron source"
+  },
+  {
+    "key": "en:low-or-no-sodium",
+    "name": "Low or no Sodium"
   },
   {
     "key": "en:low-sodium",
     "name": "Low Sodium"
   },
   {
-    "key": "en:natural-source-of-calcium",
-    "name": "Natural source of calcium"
+    "key": "en:low-or-no-salt",
+    "name": "Malo ili bez soli"
+  },
+  {
+    "key": "en:migros-m-check-fish-from-responsible-sources-1-5",
+    "name": "Migros M-Check fish from responsible sources 1/5"
+  },
+  {
+    "key": "en:migros-m-check-fish-from-responsible-sources-2-5",
+    "name": "Migros M-Check fish from responsible sources 2/5"
+  },
+  {
+    "key": "en:migros-m-check-fish-from-responsible-sources-3-5",
+    "name": "Migros M-Check fish from responsible sources 3/5"
+  },
+  {
+    "key": "en:migros-m-check-fish-from-responsible-sources-4-5",
+    "name": "Migros M-Check fish from responsible sources 4/5"
+  },
+  {
+    "key": "en:migros-m-check-fish-from-responsible-sources-5-5",
+    "name": "Migros M-Check fish from responsible sources 5/5"
+  },
+  {
+    "key": "en:no-added-sodium",
+    "name": "No added sodium"
+  },
+  {
+    "key": "en:no-sodium",
+    "name": "No sodium"
   },
   {
     "key": "en:no-soja-lecithine",
@@ -58,6 +170,10 @@
   {
     "key": "en:phosphore-source",
     "name": "Phosphore source"
+  },
+  {
+    "key": "en:reduced-salt",
+    "name": "Smanjena količina soli"
   },
   {
     "key": "en:so-bio-140",
@@ -84,12 +200,16 @@
     "name": "Some ingredients not from Italy"
   },
   {
-    "key": "en:source-of-fibre",
-    "name": "Source of fibre"
+    "key": "en:source-of-biotin",
+    "name": "Source of biotin"
   },
   {
-    "key": "en:source-of-iron",
-    "name": "Source of iron"
+    "key": "en:source-of-omega-3",
+    "name": "Source of omega-3"
+  },
+  {
+    "key": "en:source-of-pantothenic-acid",
+    "name": "Source of pantothenic acid"
   },
   {
     "key": "en:south-african-national-bottled-water-association",
@@ -98,10 +218,6 @@
   {
     "key": "en:sulfites-and-so2-10ppm",
     "name": "Sulfites and SO2 > 10ppm"
-  },
-  {
-    "key": "en:the-vegan-society",
-    "name": "The Vegan Society"
   },
   {
     "key": "en:true-source-certified",
@@ -124,43 +240,19 @@
     "name": "Vegetarian Society Approved Vegan"
   },
   {
-    "key": "en:vitamin-a-source",
-    "name": "Vitamin A source"
+    "key": "en:very-low-sodium",
+    "name": "Very low sodium"
   },
   {
-    "key": "en:vitamin-b-source",
-    "name": "Vitamin B source"
-  },
-  {
-    "key": "en:vitamin-b1-source",
-    "name": "Vitamin B1 source"
-  },
-  {
-    "key": "en:vitamin-b12-source",
-    "name": "Vitamin B12 source"
-  },
-  {
-    "key": "en:vitamin-b6-source",
-    "name": "Vitamin B6 source"
-  },
-  {
-    "key": "en:vitamin-b9-source",
-    "name": "Vitamin B9 source"
-  },
-  {
-    "key": "en:vitamin-c-source",
-    "name": "Vitamin C source"
-  },
-  {
-    "key": "en:vitamin-d-source",
-    "name": "Vitamin D source"
-  },
-  {
-    "key": "en:vitamin-e-source",
-    "name": "Vitamin E source"
+    "key": "en:vitamin-b2-source",
+    "name": "Vitamin B2 source"
   },
   {
     "key": "en:without-sodium-nitrite",
     "name": "Without sodium nitrite"
+  },
+  {
+    "key": "en:zinc-source",
+    "name": "Zinc source"
   }
 ]

@@ -64,32 +64,12 @@
     "name": "German fruit spirit"
   },
   {
-    "key": "en:german-grain-spirit",
-    "name": "German grain spirit"
-  },
-  {
-    "key": "en:german-liqueur",
-    "name": "German liqueur"
-  },
-  {
-    "key": "en:german-meat-products",
-    "name": "German meat products"
+    "key": "en:german-liqueurs",
+    "name": "German liqueurs"
   },
   {
     "key": "en:german-pasta",
     "name": "German pasta"
-  },
-  {
-    "key": "en:german-sea-products",
-    "name": "German sea products"
-  },
-  {
-    "key": "en:german-spirit-drinks",
-    "name": "German spirit drinks"
-  },
-  {
-    "key": "en:german-vegetables",
-    "name": "German vegetables"
   },
   {
     "key": "en:german-weinbrand",
@@ -109,7 +89,7 @@
   },
   {
     "key": "en:roasted-green-teas",
-    "name": "Geröstete grüner Tees"
+    "name": "Geröstete grüne Tees"
   },
   {
     "key": "en:roasted-hazelnuts",
@@ -117,18 +97,22 @@
   },
   {
     "key": "en:roasted-japanese-green-teas",
-    "name": "Geröstete japanische grüner Tees"
+    "name": "Geröstete japanische grüne Tees"
   },
   {
     "key": "en:roasted-coffee-beans",
     "name": "Geröstete Kaffeebohnen"
   },
   {
+    "key": "en:torrefacto-coffees",
+    "name": "Geröstete Kaffees"
+  },
+  {
     "key": "en:roasted-pumpkin-seeds",
     "name": "Geröstete Kürbiskerne"
   },
   {
-    "key": "en:grilled-almonds",
+    "key": "en:roasted-almonds",
     "name": "Geröstete Mandeln"
   },
   {
@@ -152,8 +136,12 @@
     "name": "Gerste"
   },
   {
-    "key": "en:barley-milks",
+    "key": "en:barley-based-drinks",
     "name": "Gerstemilch"
+  },
+  {
+    "key": "en:barley-flakes",
+    "name": "Gerstenflocken"
   },
   {
     "key": "en:barley-malt-syrup",
@@ -164,8 +152,16 @@
     "name": "Gerstenmehl"
   },
   {
+    "key": "en:barley-pasta",
+    "name": "Gerstenudeln"
+  },
+  {
     "key": "en:seasoned-grated-carrots",
     "name": "Gewürzte geriebene Karotten"
+  },
+  {
+    "key": "en:pan-fried-dishes",
+    "name": "In der Pfanne gebratene Gerichte"
   },
   {
     "key": "en:grated-coconut",
@@ -192,12 +188,20 @@
     "name": "Quinoa-Gerichte"
   },
   {
+    "key": "en:dough-based-meals-variety-packs",
+    "name": "Teigbasierte Gerichtemischpackungen"
+  },
+  {
     "key": "en:ground-dried-thyme",
     "name": "Thymian gerebelt"
   },
   {
     "key": "en:roasted-shelled-sunflower-seeds",
     "name": "Ungeschälte geröstete Sonnenblumenkerne"
+  },
+  {
+    "key": "en:vegetables-from-germany",
+    "name": "Vegetables from Germany"
   },
   {
     "key": "en:wheat-germ",

@@ -1,5 +1,37 @@
 [
   {
+    "key": "en:acacia-honeys-from-alsace",
+    "name": "Bagremov med iz alzasa"
+  },
+  {
+    "key": "en:acacia-honeys",
+    "name": "Bagremovi medovi"
+  },
+  {
+    "key": "en:acacia-honeys-from-jura",
+    "name": "Bagremovi medovi od jure"
+  },
+  {
+    "key": "en:white-honeys-from-tigrai",
+    "name": "Bijeli med od tigraja"
+  },
+  {
+    "key": "en:honey-candies",
+    "name": "Bomboni od meda"
+  },
+  {
+    "key": "en:pine-honeys",
+    "name": "Borovi medovi"
+  },
+  {
+    "key": "en:citrus-honeys",
+    "name": "Citrusni medovi"
+  },
+  {
+    "key": "en:flower-honeys",
+    "name": "Cvjetni medovi"
+  },
+  {
     "key": "en:farmed-mediterranean-bass",
     "name": "Farmed Mediterranean bass"
   },
@@ -8,44 +40,236 @@
     "name": "Frozen pan-fried Mediterranean-style grilled vegetables"
   },
   {
-    "key": "en:honeys-from-the-mediterranean-sea",
-    "name": "Honeys from the Mediterranean Sea"
+    "key": "en:gummy-bears",
+    "name": "Gumeni medvjedići"
   },
   {
-    "key": "en:medicinal-waters",
-    "name": "Medicinal waters"
+    "key": "en:oak-honeys",
+    "name": "Hrastovi medovi"
   },
   {
-    "key": "en:mediterannean-honeys",
-    "name": "Mediterannean honeys"
+    "key": "en:fir-honeys",
+    "name": "Jelovi medovi"
+  },
+  {
+    "key": "en:honey-yogurts",
+    "name": "Jogurti od meda"
+  },
+  {
+    "key": "en:chestnut-honey",
+    "name": "Kestenov med"
+  },
+  {
+    "key": "en:linden-honeys",
+    "name": "Lipovi medovi"
+  },
+  {
+    "key": "en:manuka-honeys",
+    "name": "Manuka medovi"
+  },
+  {
+    "key": "en:honey-of-biscay",
+    "name": "Med od biskaje"
+  },
+  {
+    "key": "en:honey-from-coniferous-trees",
+    "name": "Med od crnogoričnog drveća"
+  },
+  {
+    "key": "en:honey-of-corsica",
+    "name": "Med s Korzike"
+  },
+  {
+    "key": "en:honey-mustards",
+    "name": "Med senfovi"
+  },
+  {
+    "key": "en:honey-dill-sauces",
+    "name": "Med umaci od kopra"
+  },
+  {
+    "key": "en:gingerbreads",
+    "name": "Medenjaci"
   },
   {
     "key": "en:mediterranean-mussels",
-    "name": "Mediterranean mussels"
+    "name": "Mediteranske dagnje"
   },
   {
-    "key": "en:medium-grain-rices",
-    "name": "Medium grain rices"
-  },
-  {
-    "key": "en:medium-maple-syrups",
-    "name": "Medium maple syrups"
+    "key": "en:mediterannean-honeys",
+    "name": "Mediteranski medovi"
   },
   {
     "key": "en:medjool-dates",
-    "name": "Medjool dates"
-  },
-  {
-    "key": "en:medlars",
-    "name": "Medlars"
+    "name": "Medjool datulje"
   },
   {
     "key": "en:medoc-wines",
-    "name": "Medoc wines"
+    "name": "Medočka vina"
   },
   {
-    "key": "en:sushi-medley",
-    "name": "Sushi medley"
+    "key": "en:honeybush",
+    "name": "Medonosni grm"
+  },
+  {
+    "key": "en:honeys",
+    "name": "Medovi"
+  },
+  {
+    "key": "en:honeys-from-the-alps",
+    "name": "Medovi iz Alpa"
+  },
+  {
+    "key": "en:honeys-from-alsace",
+    "name": "Medovi iz alzasa"
+  },
+  {
+    "key": "en:honeys-from-belgium",
+    "name": "Medovi iz belgije"
+  },
+  {
+    "key": "en:honeys-from-bulgaria",
+    "name": "Medovi iz bugarske"
+  },
+  {
+    "key": "en:honeys-from-france",
+    "name": "Medovi iz Francuske"
+  },
+  {
+    "key": "en:honeys-from-yemen",
+    "name": "Medovi iz Jemena"
+  },
+  {
+    "key": "en:honeys-from-romania",
+    "name": "Medovi iz rumunjske"
+  },
+  {
+    "key": "en:honeys-from-the-mediterranean-sea",
+    "name": "Medovi iz Sredozemnog mora"
+  },
+  {
+    "key": "en:honeys-from-the-united-kingdom",
+    "name": "Medovi iz Ujedinjenog Kraljevstva"
+  },
+  {
+    "key": "en:clover-honeys",
+    "name": "Medovi od djeteline"
+  },
+  {
+    "key": "en:eucalyptus-honeys",
+    "name": "Medovi od eukaliptusa"
+  },
+  {
+    "key": "en:buckwheat-honeys",
+    "name": "Medovi od heljde"
+  },
+  {
+    "key": "en:honeys-from-jura",
+    "name": "Medovi od jure"
+  },
+  {
+    "key": "en:bramble-honeys",
+    "name": "Medovi od kupine"
+  },
+  {
+    "key": "en:lavender-honeys",
+    "name": "Medovi od lavande"
+  },
+  {
+    "key": "en:lychee-honeys",
+    "name": "Medovi od ličija"
+  },
+  {
+    "key": "en:thyme-honeys",
+    "name": "Medovi od majčine dušice"
+  },
+  {
+    "key": "en:raspberry-honeys",
+    "name": "Medovi od maline"
+  },
+  {
+    "key": "en:dandelion-honeys",
+    "name": "Medovi od maslačka"
+  },
+  {
+    "key": "en:orange-blossom-honeys",
+    "name": "Medovi od narančinog cvijeta"
+  },
+  {
+    "key": "en:cornflower-honeys",
+    "name": "Medovi od različka"
+  },
+  {
+    "key": "en:rosemary-honeys",
+    "name": "Medovi od ružmarina"
+  },
+  {
+    "key": "en:heather-honeys",
+    "name": "Medovi od vrijeska"
+  },
+  {
+    "key": "en:honeys-from-the-mountains",
+    "name": "Medovi s planina"
+  },
+  {
+    "key": "en:cherry-blossom-honeys",
+    "name": "Medovi trešnjinog cvijeta"
+  },
+  {
+    "key": "en:jellyfish",
+    "name": "Meduza"
+  },
+  {
+    "key": "en:honey-and-royal-jelly-mixtures",
+    "name": "Mješavine meda i matične mliječi"
+  },
+  {
+    "key": "en:blends-of-honey-and-propolis",
+    "name": "Mješavine meda i propolisa"
+  },
+  {
+    "key": "en:honey-vinegars",
+    "name": "Octa od meda"
+  },
+  {
+    "key": "en:chicken-nuggets",
+    "name": "Pileći medaljoni"
+  },
+  {
+    "key": "en:honey-based-preparations",
+    "name": "Pripravci na bazi meda"
+  },
+  {
+    "key": "en:forest-honeys",
+    "name": "Šumski medovi"
+  },
+  {
+    "key": "en:sunflower-honeys",
+    "name": "Suncokretov med"
+  },
+  {
+    "key": "en:italian-honeys",
+    "name": "Talijanski medovi"
+  },
+  {
+    "key": "en:liquid-honeys",
+    "name": "Tekući medovi"
+  },
+  {
+    "key": "en:tula-gingerbread",
+    "name": "Tulski medenjak"
+  },
+  {
+    "key": "en:ulmo-blossom-honeys",
+    "name": "Ulmo cvjetni medovi"
+  },
+  {
+    "key": "en:honey-sauces",
+    "name": "Umaci od meda"
+  },
+  {
+    "key": "en:honey-stuffed-waffles",
+    "name": "Vafli punjeni medom"
   },
   {
     "key": "en:veal-medallion",
@@ -54,5 +278,9 @@
   {
     "key": "en:wild-mediterranean-bass",
     "name": "Wild mediterranean bass"
+  },
+  {
+    "key": "en:cereals-with-honey",
+    "name": "Žitarice s medom"
   }
 ]

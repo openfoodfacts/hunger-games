@@ -4,6 +4,10 @@
     "name": "Alimentos de Castilla-La Mancha"
   },
   {
+    "key": "en:with-caffeine",
+    "name": "Avec caféine"
+  },
+  {
     "key": "en:canada-organic",
     "name": "Biologique Canada"
   },
@@ -24,12 +28,16 @@
     "name": "Café certifié UTZ"
   },
   {
-    "key": "en:calidad-certificada",
-    "name": "Calidad Certificada"
+    "key": "en:calidad-certificada-de-andalucia",
+    "name": "Calidad Certificada de Andalucía"
   },
   {
     "key": "en:french-duck",
     "name": "Canard Français"
+  },
+  {
+    "key": "en:duck-born-and-bred-in-france",
+    "name": "Canard né et élevé en France"
   },
   {
     "key": "en:carbon-trust",
@@ -60,7 +68,11 @@
     "name": "Catad'Or Santiago de Chile Wine Awards"
   },
   {
-    "key": "en:krav",
+    "key": "en:catalan-council-of-organic-production",
+    "name": "Catalan Council of Organic Production"
+  },
+  {
+    "key": "ca:categoria-extra",
     "name": "Catégorie “Extra”"
   },
   {
@@ -84,6 +96,34 @@
     "name": "Ecocert Canada"
   },
   {
+    "key": "en:high-in-sat-fat-health-canada",
+    "name": "Élevé en Gras sat. (Santé Canada)"
+  },
+  {
+    "key": "en:high-in-sat-fat-and-sodium-health-canada",
+    "name": "Élevé en Gras sat. et Sodium (Santé Canada)"
+  },
+  {
+    "key": "en:high-in-sat-fat-and-sugars-health-canada",
+    "name": "Élevé en Gras sat. et Sucres (Santé Canada)"
+  },
+  {
+    "key": "en:high-in-sat-fat-sugars-and-sodium-health-canada",
+    "name": "Élevé en Gras sat. Sucres et Sodium (Santé Canada)"
+  },
+  {
+    "key": "en:high-in-sodium-health-canada",
+    "name": "Élevé en Sodium (Santé Canada)"
+  },
+  {
+    "key": "en:high-in-sugars-health-canada",
+    "name": "Élevé en Sucres (Santé Canada)"
+  },
+  {
+    "key": "en:high-in-sugars-and-sodium-health-canada",
+    "name": "Élevé en Sucres et Sodium (Santé Canada)"
+  },
+  {
     "key": "en:carbon-footprint",
     "name": "Empreinte carbone"
   },
@@ -96,12 +136,44 @@
     "name": "Etiqueta de Calidad Doñana 21"
   },
   {
+    "key": "en:fairtrade-canada",
+    "name": "Fairtrade Canada"
+  },
+  {
+    "key": "en:made-in-canada",
+    "name": "Fait au Canada"
+  },
+  {
     "key": "en:galicia-calidade",
     "name": "Galicia Calidade"
   },
   {
+    "key": "en:islamic-food-and-nutrition-council-of-canada",
+    "name": "Islamic Food and Nutrition Council of Canada"
+  },
+  {
     "key": "fr:label-carrefour",
     "name": "Label Carrefour"
+  },
+  {
+    "key": "en:nutriscore-grade-a-new-calculation",
+    "name": "Nutriscore A - Nouveau calcul"
+  },
+  {
+    "key": "en:nutriscore-grade-b-new-calculation",
+    "name": "Nutriscore B - Nouveau calcul"
+  },
+  {
+    "key": "en:nutriscore-grade-c-new-calculation",
+    "name": "Nutriscore C - Nouveau calcul"
+  },
+  {
+    "key": "en:nutriscore-grade-d-new-calculation",
+    "name": "Nutriscore D - Nouveau calcul"
+  },
+  {
+    "key": "en:nutriscore-grade-e-new-calculation",
+    "name": "Nutriscore E - Nouveau calcul"
   },
   {
     "key": "en:pdo-arroz-de-calasparra",
@@ -124,12 +196,24 @@
     "name": "Produit compensé carbone"
   },
   {
+    "key": "en:product-of-canada",
+    "name": "Produit du Canada"
+  },
+  {
     "key": "en:pure-cocoa-butter",
     "name": "Pur beurre de cacao"
   },
   {
     "key": "en:carrefour-quality",
     "name": "Qualité Carrefour"
+  },
+  {
+    "key": "en:rainforest-alliance-cocoa",
+    "name": "Rainforest Alliance Cacao"
+  },
+  {
+    "key": "en:rainforest-alliance-coffee",
+    "name": "Rainforest Alliance Café"
   },
   {
     "key": "en:rainforest-alliance-cassave",
@@ -174,9 +258,5 @@
   {
     "key": "en:vt-castilla",
     "name": "VT Castilla"
-  },
-  {
-    "key": "en:with-caffeine",
-    "name": "With caffeine"
   }
 ]

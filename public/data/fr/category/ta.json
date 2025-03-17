@@ -1,22 +1,26 @@
 [
   {
+    "key": "en:sweet-spread-variety-packs",
+    "name": "Assortiments de pâtes à tartiner sucrées"
+  },
+  {
     "key": "en:biscuit-with-a-chocolate-bar-covering",
     "name": "Biscuits tablette de chocolat"
   },
   {
-    "key": "es:galletas-con-tableta-de-chocolate-con-leche",
+    "key": "en:biscuit-with-a-milk-chocolate-bar-covering",
     "name": "Biscuits tablette de chocolat au lait"
   },
   {
-    "key": "fr:biscuits-tablette-de-chocolat-blanc",
+    "key": "en:biscuit-with-a-white-chocolate-bar-covering",
     "name": "Biscuits tablette de chocolat blanc"
   },
   {
-    "key": "es:galletas-con-tableta-de-chocolate-negro",
+    "key": "en:biscuit-with-a-dark-chocolate-bar-covering",
     "name": "Biscuits tablette de chocolat noir"
   },
   {
-    "key": "fr:biscuits-tablette-fourree",
+    "key": "en:biscuit-with-a-filled-chocolate-bar-covering",
     "name": "Biscuits tablette fourrée"
   },
   {
@@ -34,9 +38,5 @@
   {
     "key": "en:milk-chocolate-bar-without-sugar-with-sweeteners",
     "name": "Chocolat au lait en tablette sans sucres ajoutés avec édulcorants"
-  },
-  {
-    "key": "en:white-chocolate-bars",
-    "name": "Chocolat blanc en tablette"
   }
 ]

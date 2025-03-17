@@ -1,5 +1,13 @@
 [
   {
+    "key": "de:100-milch-aus-österreich",
+    "name": "100% Milch aus österreich"
+  },
+  {
+    "key": "fr:pomme-origine-france",
+    "name": "Apfel aus Frankreich"
+  },
+  {
     "key": "en:apples-from-france",
     "name": "Äpfel aus Frankreich"
   },
@@ -32,6 +40,10 @@
     "name": "Ausgewiesene Herkunftsbezeichnung"
   },
   {
+    "key": "en:australian-grown",
+    "name": "Australian grown"
+  },
+  {
     "key": "en:australian-international-beer-awards",
     "name": "Australian International Beer Awards"
   },
@@ -56,6 +68,10 @@
     "name": "Einige Zutaten stammen nicht aus Italien"
   },
   {
+    "key": "en:fairtrade-australia-and-new-zealand",
+    "name": "Fairtrade Australia and New Zealand"
+  },
+  {
     "key": "en:incorrect-data-on-label",
     "name": "Falsche Angaben auf der Verpackung"
   },
@@ -68,12 +84,16 @@
     "name": "Fleisch aus Frankreich"
   },
   {
+    "key": "fr:porc-fermier-eleve-en-plein-air",
+    "name": "Freiland aufgezogenes Schwein"
+  },
+  {
     "key": "en:halal-food-authority",
     "name": "Halal Food Authority"
   },
   {
-    "key": "de:haltungsform-3-außenklima",
-    "name": "Haltungsform 3 Außenklima"
+    "key": "de:haltungsform-4-auslauf-weide",
+    "name": "Haltungsform 4 Auslauf/Weide"
   },
   {
     "key": "en:honey-from-france",
@@ -82,6 +102,10 @@
   {
     "key": "en:australian-made",
     "name": "In Australien gemacht"
+  },
+  {
+    "key": "en:duck-born-and-bred-in-france",
+    "name": "In Frankreich geborene und aufgezogene Ente"
   },
   {
     "key": "en:raised-in-norway",
@@ -98,6 +122,26 @@
   {
     "key": "de:migros-aus-der-region",
     "name": "Migros \"Aus der Region\""
+  },
+  {
+    "key": "en:migros-m-check-fish-from-responsible-sources-1-5",
+    "name": "Migros M-Check Fisch aus verantwortungsvollen Quellen 1/5"
+  },
+  {
+    "key": "en:migros-m-check-fish-from-responsible-sources-2-5",
+    "name": "Migros M-Check Fisch aus verantwortungsvollen Quellen 2/5"
+  },
+  {
+    "key": "en:migros-m-check-fish-from-responsible-sources-3-5",
+    "name": "Migros M-Check Fisch aus verantwortungsvollen Quellen 3/5"
+  },
+  {
+    "key": "en:migros-m-check-fish-from-responsible-sources-4-5",
+    "name": "Migros M-Check Fisch aus verantwortungsvollen Quellen 4/5"
+  },
+  {
+    "key": "en:migros-m-check-fish-from-responsible-sources-5-5",
+    "name": "Migros M-Check Fisch aus verantwortungsvollen Quellen 5/5"
   },
   {
     "key": "en:french-milk",

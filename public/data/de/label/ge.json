@@ -56,8 +56,20 @@
     "name": "Gehobene Qualität"
   },
   {
+    "key": "en:refrigerated",
+    "name": "Gekühlt"
+  },
+  {
+    "key": "bg:утвърден-стандарт-българия",
+    "name": "Genehmigter Standard Bulgarien"
+  },
+  {
     "key": "en:no-gmos",
     "name": "Gentechnikfrei"
+  },
+  {
+    "key": "en:low-saturated-fat",
+    "name": "Geringer Gehalt an gesättigten Fettsäuren"
   },
   {
     "key": "en:spanish-protected-product",
@@ -76,8 +88,16 @@
     "name": "Hoher Omega-3-Gehalt"
   },
   {
+    "key": "en:chickens-raised-without-antibiotics-since-birth",
+    "name": "Hühneraufzucht ohne Antibiotika seit der Geburt"
+  },
+  {
     "key": "en:australian-made",
     "name": "In Australien gemacht"
+  },
+  {
+    "key": "en:duck-born-and-bred-in-france",
+    "name": "In Frankreich geborene und aufgezogene Ente"
   },
   {
     "key": "en:harvested-in-france",
@@ -104,6 +124,14 @@
     "name": "Mit Trockensalz gesalzen"
   },
   {
+    "key": "fr:salage-naturel",
+    "name": "Natürlich gesalzen"
+  },
+  {
+    "key": "en:not-suited-for-children-under-1-years",
+    "name": "Nicht geeignet für Kinder unter 1 Jahr"
+  },
+  {
     "key": "en:never-frozen",
     "name": "Nie gefroren"
   },
@@ -113,7 +141,7 @@
   },
   {
     "key": "en:no-gelatin",
-    "name": "Ohne Gelatin"
+    "name": "Ohne Gelatine"
   },
   {
     "key": "de:ohne-gentechnik",
@@ -124,12 +152,20 @@
     "name": "Ohne Gentechnik hergestellt"
   },
   {
+    "key": "en:saturated-fat-free",
+    "name": "Ohne gesättigte Fettsäuren"
+  },
+  {
     "key": "en:no-flavour-enhancer",
     "name": "Ohne Geschmacksverstärker"
   },
   {
     "key": "en:no-artificial-flavour-enhancer",
     "name": "Ohne künstliche Geschmaksverstärker"
+  },
+  {
+    "key": "en:fed-without-soy",
+    "name": "Ohne Soja gefüttert"
   },
   {
     "key": "en:porks-raised-without-antibiotics-since-birth",

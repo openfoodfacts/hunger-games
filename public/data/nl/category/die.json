@@ -1,15 +1,43 @@
 [
   {
+    "key": "en:frozen-redcurrants",
+    "name": "Aalbessen (diepvries)"
+  },
+  {
+    "key": "en:frozen-strawberries",
+    "name": "Aardbeien (diepvries)"
+  },
+  {
+    "key": "en:frozen-pineapples",
+    "name": "Ananas (diepvries)"
+  },
+  {
+    "key": "en:frozen-avocados",
+    "name": "Avocados (diepvries)"
+  },
+  {
+    "key": "en:frozen-bananas",
+    "name": "Bananen(diepvries)"
+  },
+  {
+    "key": "en:frozen-blueberries",
+    "name": "Bosbessen (diepvries)"
+  },
+  {
+    "key": "en:frozen-blackberries",
+    "name": "Bramen (diepvries)"
+  },
+  {
     "key": "en:breakfast-cereals-diet-with-dried-fruits-fortified-with-vitamins-and-chemical-elements",
     "name": "Breakfast cereals diet with dried fruits fortified with vitamins and chemical elements"
   },
   {
-    "key": "en:dietary-jams",
-    "name": "Dieetjams"
+    "key": "en:frozen-citrus",
+    "name": "Citrusfruit (diepvries)"
   },
   {
-    "key": "en:frozen-poultry",
-    "name": "Diepvres gevogelten"
+    "key": "en:dietary-jams",
+    "name": "Dieetjams"
   },
   {
     "key": "en:frozen-fried-potatoes",
@@ -50,6 +78,10 @@
   {
     "key": "en:frozen-cauliflower-florets",
     "name": "Diepvries bloemkool"
+  },
+  {
+    "key": "en:frozen-berries",
+    "name": "Diepvries bosvruchten"
   },
   {
     "key": "en:frozen-broccolis",
@@ -102,6 +134,10 @@
   {
     "key": "en:frozen-yellow-peppers",
     "name": "Diepvries gele paprika"
+  },
+  {
+    "key": "en:frozen-poultry",
+    "name": "Diepvries gevogelten"
   },
   {
     "key": "en:frozen-common-beans",
@@ -212,8 +248,16 @@
     "name": "Diepvriesaardappelen"
   },
   {
+    "key": "en:frozen-artichoke-bottom",
+    "name": "Diepvriesartisjokharten"
+  },
+  {
     "key": "fr:viennoiseries-surgelees",
     "name": "Diepvriesbroden"
+  },
+  {
+    "key": "en:frozen-breads",
+    "name": "Diepvriesbrood"
   },
   {
     "key": "en:frozen-zucchini",
@@ -258,10 +302,6 @@
   {
     "key": "fr:cones-et-batonnets-surgeles",
     "name": "Diepvriesijsjes"
-  },
-  {
-    "key": "en:refrigerated-meals",
-    "name": "Diepvrieskant en klaarmaaltijden"
   },
   {
     "key": "en:frozen-cardoons",
@@ -332,6 +372,10 @@
     "name": "Diepvriesproducten"
   },
   {
+    "key": "en:frozen-rhubarb-stalk",
+    "name": "Diepvriesrabarber"
+  },
+  {
     "key": "en:frozen-ravioli",
     "name": "Diepvriesraviolis"
   },
@@ -346,6 +390,10 @@
   {
     "key": "en:frozen-salsify",
     "name": "Diepvriesschorseneren"
+  },
+  {
+    "key": "en:frozen-raw-salsify",
+    "name": "Diepvriesschorseneren(rauw)"
   },
   {
     "key": "en:frozen-soups",
@@ -380,8 +428,8 @@
     "name": "Diepvrieswortels"
   },
   {
-    "key": "en:pet-food",
-    "name": "Dierenvoer"
+    "key": "en:frozen-seafood",
+    "name": "Diepvrieszeevruchten"
   },
   {
     "key": "en:animal-fats",
@@ -432,8 +480,8 @@
     "name": "Dietary drink for sport"
   },
   {
-    "key": "en:dry-pet-food",
-    "name": "Droog dierenvoedsel"
+    "key": "en:frozen-raspberries",
+    "name": "Frambozen (diepvries)"
   },
   {
     "key": "en:frozen-chopped-cardoons",
@@ -456,12 +504,24 @@
     "name": "Gesneden diepvrieschampignons"
   },
   {
+    "key": "en:frozen-pomegranates",
+    "name": "Granaatappels (diepvries)"
+  },
+  {
     "key": "en:frozen-whole-champignon-mushrooms",
     "name": "Hele diepvrieschampignons"
   },
   {
     "key": "en:frozen-whole-green-asparagus",
     "name": "Hele groene diepvriesasperges"
+  },
+  {
+    "key": "en:refrigerated-meals",
+    "name": "Kant-en-klaarmaaltijden (diepvries)"
+  },
+  {
+    "key": "en:frozen-mangos",
+    "name": "Mangos (diepvries)"
   },
   {
     "key": "en:plain-diet-breakfast-cereals-not-fortified",
@@ -472,8 +532,16 @@
     "name": "Plantaardige diepvriesproducten"
   },
   {
+    "key": "en:products-that-cannot-be-found-in-metropolitan-france",
+    "name": "Producten die niet in Frankrijk gevonden kunnen worden"
+  },
+  {
     "key": "en:products-for-specific-diets",
     "name": "Products for specific diets"
+  },
+  {
+    "key": "en:frozen-tropical-fruits",
+    "name": "Tropisch fruit (diepvries)"
   },
   {
     "key": "en:unfortified-diet-chocolate-breakfast-cereals",
@@ -482,5 +550,9 @@
   {
     "key": "en:frozen-white-asparagus",
     "name": "Witte diepvriesasperges"
+  },
+  {
+    "key": "en:frozen-sweet-potatoes",
+    "name": "Zoete aardappelen (diepvries)"
   }
 ]

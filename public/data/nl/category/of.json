@@ -48,6 +48,10 @@
     "name": "Chicken eviscerated without offal raw"
   },
   {
+    "key": "en:chicken-offals",
+    "name": "Chicken offals"
+  },
+  {
     "key": "en:cooked-ham-of-superior-quality",
     "name": "Cooked ham of superior quality"
   },
@@ -60,8 +64,12 @@
     "name": "Cooked offal"
   },
   {
-    "key": "en:cream-of-asparagus-soups",
-    "name": "Cream of asparagus soups"
+    "key": "en:frozen-offals-soup",
+    "name": "Frozen offals Soup"
+  },
+  {
+    "key": "en:frozen-veal-offals",
+    "name": "Frozen veal offals"
   },
   {
     "key": "en:fruits-of-aragon",
@@ -84,8 +92,8 @@
     "name": "Goblet of peach Melba ice cream"
   },
   {
-    "key": "en:greek-style-yogurt-on-a-bed-of-fruits",
-    "name": "Greek-style yogurt on a bed of fruits"
+    "key": "en:greek-style-yogurts-on-a-bed-of-fruits",
+    "name": "Greek-style yogurts on a bed of fruits"
   },
   {
     "key": "en:herbal-vodka-from-the-north-podlasie-lowland-aromatised-with-an-extract-of-bison-grass",
@@ -148,12 +156,20 @@
     "name": "Mix of grains and raisins"
   },
   {
+    "key": "en:mix-of-olive-oil-and-seeds-oil",
+    "name": "Mix of olive oil and seeds oil"
+  },
+  {
     "key": "en:mix-of-salted-grains-and-raisins",
     "name": "Mix of salted grains and raisins"
   },
   {
     "key": "en:mixtures-of-vegetables-for-broth",
     "name": "Mixtures of vegetables for broth"
+  },
+  {
+    "key": "en:offals-soup",
+    "name": "Offals Soup"
   },
   {
     "key": "en:ouzo-of-kalamata",
@@ -268,10 +284,6 @@
     "name": "Salad dressing with reduced fat and 25-50% of oil"
   },
   {
-    "key": "en:shandy-with-less-than-1-of-alcohol",
-    "name": "Shandy with less than 1° of alcohol"
-  },
-  {
     "key": "en:spirals-of-durum-wheat",
     "name": "Spirals of durum wheat"
   },
@@ -298,5 +310,9 @@
   {
     "key": "en:vale-of-evesham-asparagus",
     "name": "Vale of Evesham Asparagus"
+  },
+  {
+    "key": "en:veal-offals",
+    "name": "Veal offals"
   }
 ]

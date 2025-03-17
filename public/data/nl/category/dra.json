@@ -1,11 +1,23 @@
 [
   {
+    "key": "en:non-alcoholic-beverages-variety-packs",
+    "name": "Aassortimenten van alcoholvrije dranken"
+  },
+  {
+    "key": "en:alcoholic-beverages-variety-packs",
+    "name": "Alcoholische drankassortimenten"
+  },
+  {
     "key": "en:alcoholic-beverages",
     "name": "Alcoholische dranken"
   },
   {
     "key": "en:non-alcoholic-beverages",
     "name": "Alcoholvrije dranken"
+  },
+  {
+    "key": "en:beer-based-alcoholic-beverages",
+    "name": "Bier gebaseerde alcoholische dranken"
   },
   {
     "key": "en:canned-apricots-in-light-syrup-not-drained",
@@ -18,10 +30,6 @@
   {
     "key": "en:canned-drained-apricots-in-light-syrup",
     "name": "Canned drained apricots in light syrup"
-  },
-  {
-    "key": "en:canned-drained-bamboo-shoots",
-    "name": "Canned drained bamboo shoots"
   },
   {
     "key": "en:canned-drained-fruit-cocktail-in-light-syrup",
@@ -64,12 +72,28 @@
     "name": "Dragon"
   },
   {
+    "key": "en:beverage-variety-packs",
+    "name": "Drankassortimenten"
+  },
+  {
+    "key": "en:beverage-preparations",
+    "name": "Drankbereidingen"
+  },
+  {
     "key": "en:beverages",
     "name": "Dranken"
   },
   {
+    "key": "en:beverages-and-beverages-preparations",
+    "name": "Dranken en drankbereidingen"
+  },
+  {
     "key": "en:beverages-with-cranberry",
     "name": "Dranken met veenbessensmaak"
+  },
+  {
+    "key": "en:beverages-from-desugared-fruit-juices",
+    "name": "Dranken op basis van ongezoete vruchtensappen"
   },
   {
     "key": "en:tea-based-beverages",
@@ -82,6 +106,10 @@
   {
     "key": "en:plant-based-beverage-for-baby",
     "name": "Dranken voor babies gebaseerd op planten"
+  },
+  {
+    "key": "de:deutsche-spirituosen",
+    "name": "Duitse sterke dranken"
   },
   {
     "key": "en:herbal-tea-beverages",
@@ -124,6 +152,14 @@
     "name": "Koolzuurhoudende dranken"
   },
   {
+    "key": "en:carbonated-soft-drinks-without-fruit-juice-with-sugar",
+    "name": "Koolzuurhoudende dranken met suiker zonder vruchtensap"
+  },
+  {
+    "key": "en:carbonated-soft-drinks-without-fruit-juice",
+    "name": "Koolzuurhoudende dranken zonder vruchtensap"
+  },
+  {
     "key": "en:artificially-sweetened-beverages",
     "name": "Kunstmatig gezoete dranken"
   },
@@ -144,6 +180,10 @@
     "name": "Plantaardige levensmiddelen en dranken"
   },
   {
+    "key": "en:rum-based-alcoholic-beverages",
+    "name": "Rum-gebaseerde alcoholische dranken"
+  },
+  {
     "key": "en:unsweetened-beverages",
     "name": "Suikervrije dranken"
   },
@@ -152,11 +192,23 @@
     "name": "Verse dragon"
   },
   {
+    "key": "en:vodka-based-alcoholic-beverages",
+    "name": "Vodka-gebaseerde alcoholische dranken"
+  },
+  {
     "key": "en:vegetable-based-foods-and-beverages",
     "name": "Voedsel en dranken op basis van groenten"
   },
   {
     "key": "en:hot-beverages",
     "name": "Warme dranken"
+  },
+  {
+    "key": "en:wine-based-alcoholic-beverages",
+    "name": "Wijngebaseerde alcoholische dranken"
+  },
+  {
+    "key": "en:chocolate-yoghurt-drinks",
+    "name": "Yoghurt dranken met chocolade"
   }
 ]
