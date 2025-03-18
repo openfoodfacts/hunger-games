@@ -338,53 +338,53 @@
       "green_for_same": "輸入值相符的帶入<1>綠色</1>。",
       "orange_for_empty": "對於那些輸入值為空的帶入<1>橙色</1>。",
       "red_for_different": "對於那些不同輸入值帶入<1>紅色</1>。",
-      "indicate_not_provided_value": "Empty inputs are ignored. If fibers are not present in the table, you can put \"-\" to specify the value is not available.",
-      "validate_one_column": "Once you've verified one column, you can validate. It's useless to fill both columns. The data base only save one of them. The second one is computed by using proportionality.",
-      "skip_button": "If you don't know how to deal with an image, or you just don't want to do it, press \"skip\". Other user will be able to handle it.",
-      "invalid_image_button": "If the pictures is not a nutritional table, press \"Invalid image\" to remove it from the list of the images to verify",
+      "indicate_not_provided_value": "輸入為空的欄位將被忽略。如果表中不存在纖維，則可以輸入“-”來指出該值不可用。",
+      "validate_one_column": "一旦您驗證了一列，您就可以識別其有效性。填寫兩列是無效的。資料庫只保存其中一個。第二個是利用比例計算的。",
+      "skip_button": "如果您不知道如何處理圖像，或者您只是不想這樣做，請按“跳過”。其他用戶將能夠處理它。",
+      "invalid_image_button": "如果圖片不是營養表，請按「無效圖片」將其從圖片清單中刪除以進行驗證",
       "close": "關閉"
     }
   },
   "notfound": {
-    "image_alt": "404 not found",
-    "nopage": "Whoops! The page you're looking for can't be found.",
-    "redirect1": "Want to play some games?",
-    "redirect2": "Click here"
+    "image_alt": "404 頁面不存在",
+    "nopage": "哎呀！找不到此頁面。",
+    "redirect1": "要不要玩點遊戲？",
+    "redirect2": "點擊這裡"
   },
   "nutriscore": {
-    "image_alt": "cropped image",
-    "label": "Annotate Nutri-Score logo detection by batch.",
-    "description": "To do so, select all the images showing the correct/wrong Nutri-Score value ({{label}}), and click on the bottom buttons to say if you selected a set correct or wrong ones.",
-    "images_remaining": "Still {{remaining}} to annotate",
-    "image_sizes": "Image sizes",
-    "zoom_on_logo": "Zoom on logo",
+    "image_alt": "剪裁過的圖片",
+    "label": "按批次註釋 Nutri-Score 標誌檢測。",
+    "description": "為此，請選擇所有顯示正確/錯誤的 Nutri-Score 值（{{label}}）的圖片，然後點擊底部的按鈕來判斷您是否選擇了一組正確或錯誤的圖片。",
+    "images_remaining": "仍有 {{remaining}} 需要註釋",
+    "image_sizes": "圖片大小",
+    "zoom_on_logo": "放大品牌標誌",
     "select_all": "選取全部",
     "deselect_all": "取消選取全部",
-    "incorrect": "Wrong",
-    "correct": "Correct ({{label}})"
+    "incorrect": "有誤的",
+    "correct": "正確的"
   },
   "eco-score": {
-    "description": "Here is a summary of questions that could improve Eco-Score computation",
+    "description": "正確的",
     "countryLabel": "地區"
   },
   "ingredients": {
-    "description": "This game allows you to validate the pre-selection of images of ingredients lists in various languages for a product, and validate the extracted ingredients.",
-    "current_text": "text from off",
-    "confidence_score": "language confidence",
-    "revert": "Revert",
-    "parsing": "Get server understanding",
-    "send": "Validate & send",
-    "skip": "Skip this product",
-    "getRobotoffPrediciton": "Get predictions from Robotoff"
+    "description": "這個遊戲可以讓你驗證某個產品的各種語言成分清單圖像的預選，並驗證提取的成分。",
+    "current_text": "文字來自關閉",
+    "confidence_score": "語言信賴度",
+    "revert": "復原",
+    "parsing": "了解伺服器",
+    "send": "驗證並發送",
+    "skip": "跳過此產品",
+    "getRobotoffPrediciton": "從 Robotoff 取得預測"
   },
   "footer": {
     "appStore": {
-      "title": "App Store",
-      "subtitle": "Download on the"
+      "title": "應用軟體商城",
+      "subtitle": "立即下載"
     },
     "playStore": {
-      "title": "Play Store",
-      "subtitle": "Get it on"
+      "title": "Play商店",
+      "subtitle": "開始吧"
     },
     "microsoft": {
       "title": "Microsoft",
