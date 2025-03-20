@@ -57,12 +57,12 @@
     "brand": "Marke",
     "brands": "Marken",
     "packaging": "Verpackung",
-    "quantity": "Mengenangabe",
+    "quantity": "Menge",
     "insightTypeLabel": "Zeigt nur",
     "ingredients": "Zutaten",
     "product_weight": "Produktgewicht",
     "popularity_sort": "Nach Beliebtheit sortieren",
-    "see_examples": "Beispiele hierfür sind ",
+    "see_examples": "Siehe Beispiele hierfür ",
     "no": "Nein",
     "skip": "Überspringen",
     "yes": "Ja",
@@ -79,18 +79,18 @@
     "remaining_annotations": "Verbleibende Fragen",
     "annotated_annotations": "Kommentiert",
     "filters": {
-      "active_filter_number": "mehr als {{count}} Filter",
-      "active_filter_number_one": "mehr als {{count}} Filter",
-      "active_filter_number_zero": "Kein Filter",
+      "active_filter_number": "+{{count}} Filter",
+      "active_filter_number_one": "+{{count}} Filter",
+      "active_filter_number_zero": "Ohne Filter",
       "short_label": {
-        "value": "Wert",
+        "value": "Werte",
         "country": "Land",
         "brand": "Marke",
         "popularity": "Beliebtheit",
-        "campaign": "Kampagne"
+        "campaign": "Projekt"
       },
       "long_label": {
-        "type": "Fragentyp",
+        "type": "Art der Frage",
         "value": "Vorgeschlagener Wert",
         "country": "Produktionsland",
         "brand": "Marke des Produkts",
@@ -99,8 +99,8 @@
         "campaign": "Kampagne"
       },
       "placeholders": {
-        "value": "Wert (Fanta, de:bio,...)",
-        "brand": "Aldi, Landliebe, Rügenwalder Mühle...",
+        "value": "Wert (Fanta, de: biologisch, ...)",
+        "brand": "Rewe, Danone, Herta, ...",
         "campaign": "Kampagnen kommentieren"
       },
       "actions": {
