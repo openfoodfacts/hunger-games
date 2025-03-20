@@ -70,6 +70,8 @@
     "countries": "국가",
     "view": "뷰",
     "edit": "수정",
+    "remaining": "Remaining: {{count}}",
+    "remaining_other": "Remaining: >100",
     "hide_images": "사진 숨기기 (더 빨리 로딩)",
     "display_images": "사진 표시",
     "annotations": "주석",
@@ -129,7 +131,7 @@
     "logos-deep-search": "Infinite annotation",
     "manage": "관리",
     "insights": "인사이트",
-    "nutritions": "영양 성분 표시",
+    "nutritions": "영양",
     "settings": "설정",
     "eco-score": "친환경 점수",
     "dashboard": "Logos dashboard",
@@ -247,7 +249,7 @@
     "Open_Food_Facts_wiki": "Open Food Facts wiki (en)",
     "Translators": "번역에 도움을 주신 분들",
     "Partners": "파트너",
-    "Open_Beauty_Facts": "Open Beauty Facts - 화장품",
+    "Open_Beauty_Facts": "Open Beauty Facts - cosmetics",
     "text2": "세계 각국에서 식품의 협업 무료 오픈 데이터베이스."
   },
   "helper": {
@@ -313,53 +315,34 @@
     "close": "닫기"
   },
   "nutrition": {
+    "table_partialy_filled": "Table with already some data",
+    "display_off_values": "Display values from OpenFoodFacts",
+    "nutrients": "Nutrients",
+    "serving_size": "서빙 사이즈",
+    "add_nutrient": "-- add nutrient --",
+    "validate_100g": "Validate (100g)",
+    "validate_serving": "Validate (serving)",
+    "skip": "건너뛰기",
+    "invalid_image": "Invalid image",
+    "pictures": {
+      "picture_date": "Photo uploaded",
+      "selected_as_nutrients": "Selected as nutriment image ✅",
+      "not_selected_as_nutrients": "Not selected as nutriment ❌"
+    },
     "instructions": {
-      "cropTheTable": "주석을 쉽게 생성하기 위해 사진을 자르세요",
-      "verifyNutrimentDetected": "인식된 영양소가 정확한지 검증해주세요",
-      "selectMissingNutriments": "누락된 영양소를 추가하세요 (단어 상자가 없어도 클릭 가능)",
-      "selectValue": "아래 항목들의 영양학적 가치를 선택하세요: "
-    },
-    "steps": {
-      "1": "자르기",
-      "2": "특별한 가치",
-      "3": "영양소 선택",
-      "4": "가치 선택"
-    },
-    "loading": "불러오는 중…",
-    "unknown_brand": "브랜드 알 수 없음",
-    "value_missing": "You forgot to input a value.",
-    "next": "Next step",
-    "prev": "Prev step",
-    "skip": "이 상품 건너뛰기",
-    "validate": "표 \b검사",
-    "unselect_picture": "영양 정보 없음",
-    "basis": "데이터 목적: ",
-    "servingSize": "1회 제공량",
-    "value": "값",
-    "unit": "단위",
-    "nutriments": {
-      "nutriment_energy-kj": "에너지 (kJ)",
-      "nutriment_energy-kcal": "열량 (kcal)",
-      "nutriment_fat": "지방",
-      "nutriment_saturated-fat": "포화 지방",
-      "nutriment_carbohydrates": "탄수화물",
-      "nutriment_sugars": "Sugar",
-      "nutriment_proteins": "Protein content",
-      "nutriment_fiber": "Fibres",
-      "nutriment_salt": "소금",
-      "nutriment_sodium": "나트륨"
-    },
-    "history": {
-      "title": "세션 내역",
-      "status": "상태",
-      "product name": "제품명",
-      "view": "페이지 보기",
-      "edit": "페이지 수정",
-      "SKIP": "무시함",
-      "VALIDATED": "편집함",
-      "WRONG_IMAGE": "선택되지 않은 사진",
-      "close": "닫기",
-      "open": "내역 열기"
+      "open_button": "Open instructions",
+      "title": "How to use the interface",
+      "chose_between_empty_and_partially_filled": "You can chose between products for which OpenFoodFacts (OFF) has no data about the nutrients. Or product with partially filled nutrient table.",
+      "picture_date_is_display": "The date of the picture is displayed on top of it. Allowing you to check if it's a recent one.",
+      "nutriments_from_off_are_displayed": "You can display data that are already present in the OFF database. They will appear under the inputs:",
+      "green_for_same": "With <1>green</1> for those matching with the input value.",
+      "orange_for_empty": "With <1>orange</1> for those with empty input value.",
+      "red_for_different": "With <1>red</1> for those with different input value.",
+      "indicate_not_provided_value": "Empty inputs are ignored. If fibers are not present in the table, you can put \"-\" to specify the value is not available.",
+      "validate_one_column": "Once you've verified one column, you can validate. It's useless to fill both columns. The data base only save one of them. The second one is computed by using proportionality.",
+      "skip_button": "If you don't know how to deal with an image, or you just don't want to do it, press \"skip\". Other user will be able to handle it.",
+      "invalid_image_button": "If the pictures is not a nutritional table, press \"Invalid image\" to remove it from the list of the images to verify",
+      "close": "닫기"
     }
   },
   "notfound": {

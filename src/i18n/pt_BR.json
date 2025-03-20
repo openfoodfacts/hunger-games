@@ -70,6 +70,8 @@
     "countries": "Países",
     "view": "Exibir",
     "edit": "Editar",
+    "remaining": "Restante(s): {{count}}",
+    "remaining_other": "Restante: >100",
     "hide_images": "Ocultar imagens (carregamento mais rápido)",
     "display_images": "Mostrar imagens",
     "annotations": "Anotações",
@@ -129,7 +131,7 @@
     "logos-deep-search": "Anotação infinita",
     "manage": "Gerencie",
     "insights": "Percepções",
-    "nutritions": "Informação nutricional",
+    "nutritions": "Nutrição",
     "settings": "Definições",
     "eco-score": "Eco-score",
     "dashboard": "Painel de Logos",
@@ -247,7 +249,7 @@
     "Open_Food_Facts_wiki": "Ar Food Facts wiki (en)",
     "Translators": "Tradutores",
     "Partners": "Parceiros",
-    "Open_Beauty_Facts": "Open Beauty Facts - Cosméticos",
+    "Open_Beauty_Facts": "Open Beauty Facts - cosméticos",
     "text2": "Uma base de dados colaborativa, livre e aberta sobre produtos alimentares de todo o mundo."
   },
   "helper": {
@@ -313,53 +315,34 @@
     "close": "Fechar"
   },
   "nutrition": {
+    "table_partialy_filled": "Tabela já com alguns dados",
+    "display_off_values": "Exibir valores de OpenFoodFacts",
+    "nutrients": "Nutrientes",
+    "serving_size": "Tamanho da porção",
+    "add_nutrient": "-- adicionar nutrientes --",
+    "validate_100g": "Validar (100g)",
+    "validate_serving": "Validar (porção)",
+    "skip": "Pular",
+    "invalid_image": "Imagem inválida",
+    "pictures": {
+      "picture_date": "Foto carregada",
+      "selected_as_nutrients": "Selecionado como imagem nutricional ✅",
+      "not_selected_as_nutrients": "Não selecionado como nutriente ❌"
+    },
     "instructions": {
-      "cropTheTable": "Recorte a imagem para simplificar sua anotação",
-      "verifyNutrimentDetected": "Indique se o nutrimento detectado está correto",
-      "selectMissingNutriments": "Adicionar nutrientes faltantes (você pode clicar mesmo se a palavra não tiver caixa de seleção)",
-      "selectValue": "Selecione o valor nutricional de: "
-    },
-    "steps": {
-      "1": "Recortar",
-      "2": "Valores especiais",
-      "3": "Seleção de Nutrientes",
-      "4": "Seleção de Valores"
-    },
-    "loading": "Carregando...",
-    "unknown_brand": "Marca desconhecida",
-    "value_missing": "Você se esqueceu de inserir um valor.",
-    "next": "Próximo passo",
-    "prev": "Passo Anterior",
-    "skip": "Pular este produto",
-    "validate": "Validar Tabela",
-    "unselect_picture": "Sem informações nutricionais",
-    "basis": "dados para: ",
-    "servingSize": "tamanho da porção",
-    "value": "Valor",
-    "unit": "Unidade",
-    "nutriments": {
-      "nutriment_energy-kj": "Energia (kJ)",
-      "nutriment_energy-kcal": "Energia (kCal)",
-      "nutriment_fat": "Gordura",
-      "nutriment_saturated-fat": "Gordura saturada",
-      "nutriment_carbohydrates": "Carboidratos",
-      "nutriment_sugars": "Açúcar",
-      "nutriment_proteins": "Teor de proteína",
-      "nutriment_fiber": "Fibras",
-      "nutriment_salt": "Sal :",
-      "nutriment_sodium": "Sódio"
-    },
-    "history": {
-      "title": "Histórico da Sessão",
-      "status": "status",
-      "product name": "nome do produto",
-      "view": "visualizar página",
-      "edit": "editar página",
-      "SKIP": "ignorado",
-      "VALIDATED": "editado",
-      "WRONG_IMAGE": "imagem não selecionada",
-      "close": "fechar",
-      "open": "abrir histórico"
+      "open_button": "Abrir instruções",
+      "title": "Como usar a interface",
+      "chose_between_empty_and_partially_filled": "Você pode escolher entre produtos para os quais o OpenFoodFacts (OFF) não tem dados sobre os nutrientes. Ou produtos com tabela de nutrientes parcialmente preenchida.",
+      "picture_date_is_display": "A data da imagem é exibida no topo. Isso permite que você verifique se é recente.",
+      "nutriments_from_off_are_displayed": "Você pode exibir os dados que já estão presentes no banco de dados OFF. Eles aparecerão sob as entradas:",
+      "green_for_same": "Com <1>verde</1> para aqueles que correspondem ao valor de entrada.",
+      "orange_for_empty": "Com <1>laranja</1> para aqueles com valor de entrada vazio.",
+      "red_for_different": "Com <1>red</1> para aqueles com um valor de entrada diferente.",
+      "indicate_not_provided_value": "Entradas vazias são ignoradas. Se fibras não estão presentes na tabela, você pode colocar \"-\" para especificar o valor não está disponível.",
+      "validate_one_column": "Uma vez verificada uma coluna, você pode validar. É inútil preencher ambas as colunas. A base de dados apenas salva um deles. A segunda é calculada utilizando a proporcionalidade.",
+      "skip_button": "Se você não sabe como lidar com uma imagem, ou simplesmente não quer fazê-lo, pressione \"pular\". Outro usuário poderá lidar com isso.",
+      "invalid_image_button": "Se a foto não for uma tabela nutricional, pressione ''imagem inválida'' para removê-la da lista de imagens para verificar.",
+      "close": "Fechar"
     }
   },
   "notfound": {
