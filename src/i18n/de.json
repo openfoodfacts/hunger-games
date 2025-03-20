@@ -19,7 +19,7 @@
     },
     "account_band": {
       "title": "Möchten Sie einen wichtigen Beitrag leisten? Erstellen Sie ein Konto oder melden Sie sich bei Open Food Facts an!",
-      "log_in": "Benutzername",
+      "log_in": "Anmelden",
       "sign_up": "Registrieren",
       "contribution_details": "Erfahren Sie, warum Ihr Beitrag wichtig ist"
     },
@@ -27,21 +27,21 @@
     "contribution_modal": {
       "title": "Ihr Beitrag ist wichtig",
       "information": "Hunger Games ist ein Versuch, die Ergebnisse unserer OCR und künstlichen Intelligenz zu nutzen. Wenn Sie die Hunger Games von Open Food Facts nutzen, verbessern Sie unsere gesamte Datenbank, die der Gemeinschaft hilft, bessere Lebensmittelentscheidungen zu treffen. Wir nehmen Ihre Anmerkungen auf und nutzen sie, um Open Food Facts noch genauer und effizienter zu machen.",
-      "thank_you": "Vielen Dank, dass Sie uns helfen, Open Food Facts zu verbessern, damit mehr Menschen es leicht nutzen können."
+      "thank_you": "Vielen Dank, dass Sie uns helfen, Open Food Facts zu verbessern, damit mehr Menschen es einfacher nutzen können."
     },
     "statistics": {
       "title": "{{userName}} Statistiken:",
       "editorCount": {
-        "title": "Bearbeiter",
+        "title": "Herausgeber",
         "description": "Anzahl der durchgeführten Bearbeitungen"
       },
       "contributorCount": {
-        "title": "Mitwirkende(r)",
-        "description": "Neues Produkt wird hinzugefügt"
+        "title": "Beitragende",
+        "description": "Ein neues Produkt hinzufügen"
       },
       "photographerCount": {
-        "title": "Fotograf",
-        "description": "Foto für ein Produkt wird aufgenommen"
+        "title": "Fotografen",
+        "description": "Fotografien für ein Produkt aufnehmen"
       }
     }
   },
@@ -50,13 +50,13 @@
     "loading": "Wird geladen"
   },
   "questions": {
-    "category": "Kategorie",
+    "category": "Rubrik",
     "categories": "Kategorien",
-    "label": "Etikett",
+    "label": "Bezeichnung",
     "labels": "Labels",
     "brand": "Marke",
     "brands": "Marken",
-    "packaging": "Verpackungsarten",
+    "packaging": "Verpackung",
     "quantity": "Mengenangabe",
     "insightTypeLabel": "Zeigt nur",
     "ingredients": "Zutaten",
@@ -114,7 +114,7 @@
     "flag": "Stimmt etwas nicht? Melden/Kennzeichnen Sie das Bild!",
     "unflag": "Kennzeichnung des Bildes aufheben",
     "reset_filters": "Filter zurücksetzen",
-    "log_in": "Benutzername",
+    "log_in": "Anmelden",
     "sign_up": "Registrieren",
     "login_title": "Bringen Sie Ihre Anmerkungen zum Tragen",
     "login_description": "Sie sind derzeit nicht bei Open Food Facts angemeldet. Um Ihre Antworten direkt auf Produkte anzuwenden und Ihrem Konto zuzuordnen, melden Sie sich bitte bei Ihrem Open Food Facts-Konto an oder erstellen Sie eines.",
