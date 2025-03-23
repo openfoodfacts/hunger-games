@@ -71,7 +71,7 @@
     "view": "檢視",
     "edit": "編輯",
     "remaining": "Remaining: {{count}}",
-    "remaining_other": "Remaining: >100",
+    "remaining_other": "剩余：>100",
     "hide_images": "隱藏圖片（載入較快）",
     "display_images": "顯示圖片",
     "annotations": "3. Annotations",
@@ -168,7 +168,7 @@
     "human_required": "人类需求",
     "edit_product": "打开产品编辑",
     "view_product": "打开产品页面",
-    "view_crops_for_this_product": "Annotate product logos"
+    "view_crops_for_this_product": "批注产品标志"
   },
   "logos": {
     "annotation": "注解： ",
@@ -214,7 +214,7 @@
     "deep_search": {
       "title": "查找徽标",
       "description": "选择一个你想要找的图标，然后将它们全部捕获。对于你注释的每个图标，我们会获取他相邻的图标这样你就不用停下注释了。（按shift键来选中一系列图标）",
-      "ref_logos": "Reference logos (logo already annotated with this value)",
+      "ref_logos": "参考徽标（徽标已用该值注释）",
       "remaining": "Remaining to annotate",
       "select_all": "全选",
       "unselect_all": "取消全选"
@@ -327,10 +327,10 @@
     "pictures": {
       "picture_date": "图片已上传",
       "selected_as_nutrients": "被选为营养形象✅",
-      "not_selected_as_nutrients": "Not selected as nutriment ❌"
+      "not_selected_as_nutrients": "未被选为营养品 ❌"
     },
     "instructions": {
-      "open_button": "Open instructions",
+      "open_button": "打开说明",
       "title": "How to use the interface",
       "chose_between_empty_and_partially_filled": "You can chose between products for which OpenFoodFacts (OFF) has no data about the nutrients. Or product with partially filled nutrient table.",
       "picture_date_is_display": "The date of the picture is displayed on top of it. Allowing you to check if it's a recent one.",
@@ -341,7 +341,7 @@
       "indicate_not_provided_value": "Empty inputs are ignored. If fibers are not present in the table, you can put \"-\" to specify the value is not available.",
       "validate_one_column": "Once you've verified one column, you can validate. It's useless to fill both columns. The data base only save one of them. The second one is computed by using proportionality.",
       "skip_button": "If you don't know how to deal with an image, or you just don't want to do it, press \"skip\". Other user will be able to handle it.",
-      "invalid_image_button": "If the pictures is not a nutritional table, press \"Invalid image\" to remove it from the list of the images to verify",
+      "invalid_image_button": "如果图片不是营养表，请按“无效图片”将其从图片列表中删除以进行验证",
       "close": "關閉"
     }
   },
