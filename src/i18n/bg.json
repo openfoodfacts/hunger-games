@@ -341,7 +341,7 @@
       "indicate_not_provided_value": "Празните входни данни се пренебрегват. Ако влакната не присъстват в таблицата, можете да поставите \"-\", за да укажете, че стойността не е налична.",
       "validate_one_column": "След като потвърдите една колона, можете да потвърдите. Безполезно е да попълвате и двете колони. Базата данни запазва само една от тях. Втората се изчислява чрез пропорционалност.",
       "skip_button": "Ако не знаете как да се справите с дадено изображение или просто не искате да го правите, натиснете „пропускане“. Друг потребител ще може да се справи с него.",
-      "invalid_image_button": "If the pictures is not a nutritional table, press \"Invalid image\" to remove it from the list of the images to verify",
+      "invalid_image_button": "Ако снимките не са хранителна таблица, натиснете „Невалидно изображение“, за да го премахнете от списъка с изображения за проверка",
       "close": "Затвори"
     }
   },
@@ -369,26 +369,26 @@
   },
   "ingredients": {
     "description": "Тази игра позволява да валидирате избраните изображения от списъци от съставки за избран продукт на разлини езици, и да потвърдите избраните съставки.",
-    "current_text": "text from off",
-    "confidence_score": "language confidence",
-    "revert": "Revert",
-    "parsing": "Get server understanding",
-    "send": "Validate & send",
+    "current_text": "текст от изкл",
+    "confidence_score": "езикова увереност",
+    "revert": "Връщане",
+    "parsing": "Получете разбиране от сървъра",
+    "send": "Потвърдете и изпратете",
     "skip": "Пропусни този продукт",
-    "getRobotoffPrediciton": "Get predictions from Robotoff"
+    "getRobotoffPrediciton": "Вземете прогнози от Robotoff"
   },
   "footer": {
     "appStore": {
       "title": "App Store",
-      "subtitle": "Download on the"
+      "subtitle": "Изтегляне на"
     },
     "playStore": {
       "title": "Play Store",
-      "subtitle": "Get it on"
+      "subtitle": "Включете го"
     },
     "microsoft": {
       "title": "Microsoft",
-      "subtitle": "Get it from"
+      "subtitle": "Вземете го от"
     },
     "androidAPK": {
       "title": "APK за Android",
