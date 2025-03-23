@@ -70,8 +70,8 @@
     "countries": "Страни",
     "view": "Преглед",
     "edit": "Редактирай",
-    "remaining": "Remaining: {{count}}",
-    "remaining_other": "Remaining: >100",
+    "remaining": "Оставащи: {{count}}",
+    "remaining_other": "Остават: >100",
     "hide_images": "Скриване на снимките (по-бързо зареждане)",
     "display_images": "Покажи снимките",
     "annotations": "Пояснения",
@@ -209,11 +209,11 @@
     "no_more_questions": "Няма повече въпроси за тази емблема. Можете да опитате да намерите повече емблеми със следната игра.",
     "loading_messages": {
       "pending_reference_logos": "Зареждаме някои примерни логота, за да осъществим търсенето",
-      "failed_reference_logos": "We did not find any logos with this annotation. Try to use the following game to annotate some of them."
+      "failed_reference_logos": "Не намерихме емблеми с тази забележка. Опитайте се да използвате следната игра, за да коментирате някои от тях."
     },
     "deep_search": {
       "title": "Търсене на логота",
-      "description": "Select a logo you want to look for, and let's go to catch them all. For every logo you annotate, we will fetch it's neighbors such that you might never stop to annotate. (Press Shift to select range of logos)",
+      "description": "Изберете емблема, която искате да търсите, и нека да ги хванем всички. За всяко лого, което коментирате, ние ще извлечем неговите съседи, така че може никога да не спрете да коментирате. (Натиснете Shift, за да изберете редица от емблеми)",
       "ref_logos": "Лога за справка (логото вече е анотирано с тази стойност)",
       "remaining": "Останали за поясняване",
       "select_all": "Избери всички",
@@ -249,7 +249,7 @@
     "Open_Food_Facts_wiki": "Open Food Facts wiki (en)",
     "Translators": "Преводачи",
     "Partners": "Партньори",
-    "Open_Beauty_Facts": "Open Beauty Facts - cosmetics",
+    "Open_Beauty_Facts": "Open Beauty Facts - козметика",
     "text2": "Съвместна, безплатна и отворена база данни за съставки и информация за хранителни продукти от света."
   },
   "helper": {
@@ -270,13 +270,13 @@
       },
       "page3": {
         "title": "Игра с емблеми",
-        "text1": "Another popular game is the logos game where you have to <strong>select all the logos</strong> you feel are the same.",
+        "text1": "Друга популярна игра е играта с емблеми, където трябва <strong>да изберете всички емблеми</strong> , които смятате, че са еднакви.",
         "text2": "Както е показано в примера, след като изберете всички подобни емблеми, просто въведете тяхната стойност и изберете къде е марка, етикет или нещо друго. Толкова е просто!"
       },
       "page4": {
         "title": "Игра с въпроси за Eco-Score",
         "text1": "Помогнете ни да завършим оставащите въпроси в етикетите с най-висок приоритет!",
-        "text2": "These cards are linked to labels used in the computation of the Eco-Score.",
+        "text2": "Тези карти са свързани с етикети, използвани при изчисляването на Eco-Score.",
         "text3": "<strong>Какво е Eco-Score?</strong>",
         "text4": "Eco-Score улавя общия отпечатък върху околната среда, което улеснява потребителите да сравняват продуктите и да решават кой е по-добър за околната среда."
       },
@@ -315,32 +315,32 @@
     "close": "Затвори"
   },
   "nutrition": {
-    "table_partialy_filled": "Table with already some data",
-    "display_off_values": "Display values from OpenFoodFacts",
-    "nutrients": "Nutrients",
+    "table_partialy_filled": "Таблица с някои данни",
+    "display_off_values": "Показване на стойности от OpenFoodFacts",
+    "nutrients": "Хранителни вещества",
     "serving_size": "Размер на порция",
-    "add_nutrient": "-- add nutrient --",
-    "validate_100g": "Validate (100g)",
-    "validate_serving": "Validate (serving)",
+    "add_nutrient": "-- добавете хранителни вещества --",
+    "validate_100g": "Потвърдете (100г)",
+    "validate_serving": "Потвърдете (порция)",
     "skip": "Пропусни",
-    "invalid_image": "Invalid image",
+    "invalid_image": "Невалидна снимка",
     "pictures": {
-      "picture_date": "Photo uploaded",
-      "selected_as_nutrients": "Selected as nutriment image ✅",
-      "not_selected_as_nutrients": "Not selected as nutriment ❌"
+      "picture_date": "Снимката е качена",
+      "selected_as_nutrients": "Избрано като хранително изображение ✅",
+      "not_selected_as_nutrients": "Не е избрано като хранително вещество ❌"
     },
     "instructions": {
-      "open_button": "Open instructions",
-      "title": "How to use the interface",
-      "chose_between_empty_and_partially_filled": "You can chose between products for which OpenFoodFacts (OFF) has no data about the nutrients. Or product with partially filled nutrient table.",
-      "picture_date_is_display": "The date of the picture is displayed on top of it. Allowing you to check if it's a recent one.",
-      "nutriments_from_off_are_displayed": "You can display data that are already present in the OFF database. They will appear under the inputs:",
-      "green_for_same": "With <1>green</1> for those matching with the input value.",
-      "orange_for_empty": "With <1>orange</1> for those with empty input value.",
-      "red_for_different": "With <1>red</1> for those with different input value.",
-      "indicate_not_provided_value": "Empty inputs are ignored. If fibers are not present in the table, you can put \"-\" to specify the value is not available.",
-      "validate_one_column": "Once you've verified one column, you can validate. It's useless to fill both columns. The data base only save one of them. The second one is computed by using proportionality.",
-      "skip_button": "If you don't know how to deal with an image, or you just don't want to do it, press \"skip\". Other user will be able to handle it.",
+      "open_button": "Отворете инструкциите",
+      "title": "Как да използвате интерфейса",
+      "chose_between_empty_and_partially_filled": "Можете да избирате между продукти, за които OpenFoodFacts (OFF) няма данни за хранителните вещества. Или продукт с частично попълнена таблица с хранителни вещества.",
+      "picture_date_is_display": "Датата на снимката се показва отгоре. Позволява ви да проверите дали е скорошна.",
+      "nutriments_from_off_are_displayed": "Можете да показвате данни, които вече присъстват в OFF базата данни. Те ще се появят под входните данни:",
+      "green_for_same": "Със <1>зелено</1> за тези, които съответстват на въведената стойност.",
+      "orange_for_empty": "С <1>оранжево</1> за тези с празна входна стойност.",
+      "red_for_different": "С <1>червено</1> за тези с различна входна стойност.",
+      "indicate_not_provided_value": "Празните входни данни се пренебрегват. Ако влакната не присъстват в таблицата, можете да поставите \"-\", за да укажете, че стойността не е налична.",
+      "validate_one_column": "След като потвърдите една колона, можете да потвърдите. Безполезно е да попълвате и двете колони. Базата данни запазва само една от тях. Втората се изчислява чрез пропорционалност.",
+      "skip_button": "Ако не знаете как да се справите с дадено изображение или просто не искате да го правите, натиснете „пропускане“. Друг потребител ще може да се справи с него.",
       "invalid_image_button": "If the pictures is not a nutritional table, press \"Invalid image\" to remove it from the list of the images to verify",
       "close": "Затвори"
     }
