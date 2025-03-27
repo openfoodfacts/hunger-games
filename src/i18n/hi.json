@@ -255,7 +255,7 @@
   "helper": {
     "welcome": {
       "page1": {
-        "title": "Welcome to Hunger Games",
+        "title": "हंगर गेम्स में आपका स्वागत है",
         "text1": "Hunger Games is a collection of mini-games that help contribute to Open Food Facts in many ways. You can play our really exciting games from anywhere. Here is a guided tour of the entire website which will get you started.",
         "text2": "Make sure to login to the Open Food Facts website to get credit for your contributions. If you make a mistake, please take the time to correct it by heading to the website.",
         "text3": "In case of any doubt about the games, click on the question mark icon at the top right of the page, and you can reach us on slack at the #hunger-games channel"
@@ -307,7 +307,7 @@
         "text1": "Indicate the type of logo (label, brand, QRcode, ...)",
         "text2": "If it is a label or a brand logo, indicate which one it is",
         "text3": "Now you can submit your selection",
-        "text4": "Thank you :)"
+        "text4": "धन्यवाद :)"
       }
     },
     "previous": "Prev",
@@ -317,7 +317,7 @@
   "nutrition": {
     "table_partialy_filled": "Table with already some data",
     "display_off_values": "Display values from OpenFoodFacts",
-    "nutrients": "Nutrients",
+    "nutrients": "पोषक तत्व",
     "serving_size": "सेवारत माप",
     "add_nutrient": "-- add nutrient --",
     "validate_100g": "Validate (100g)",
