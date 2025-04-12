@@ -1,4 +1,4 @@
-# Hunger Games: One-click categorizer for Open Food Facts
+# Hunger Games: Annotation games for Open Food Facts
 
 Hunger Games is a series of mini-apps that let users contribute data to Open Food Facts, in a rather fun way using React.
 You are very welcome to write the game you want.
@@ -43,51 +43,53 @@ The main goal is: Every Open Food Facts user can annotate products in a few minu
 
 - [Node](https://nodejs.org)
 
-## Setup:
+## Setup
+### Node & Yarn
 
 - [Install Node](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
 - [Install yarn](https://classic.yarnpkg.com/lang/en/docs/install/)
 - Install libraries: `yarn install`
 - run the project locally `yarn dev`
 
-## Libraries:
-
-- React
-- [MUI](mui.com) (UI library based on material design)
-- Axios (HTTP calls)
-
-## APIs:
-
-Open Food Facts APIs and [Robotoff](https://github.com/openfoodfacts/robotoff)
-
-## Build
+### Build Yarn
 
 ```
 yarn build
 ```
 
-## Countries list
+### Generate the Countries list
 
 ```
 yarn countries
 ```
 
-Generate the JSON file `src/assets/countries.json` which contains all the countries available on OFF taxonomy. Data are obtained from static.openfoodfacts.org
+Generates the JSON file `src/assets/countries.json` which contains all the countries available on OFF taxonomy. Data are obtained from static.openfoodfacts.org
 
-## Taxonomy auto-complete
+### Update the Taxonomy auto-complete file
 
 ```
 node update-taxonomy-suggestions.js
 ```
 
-Fetch categories and labels taxonomy from OpenFoodFacts static files, and generate JSON files used by the `Autocomplete` fields.
+Fetch categories and labels taxonomy from Open Food Facts static files, and generate JSON files used by the `Autocomplete` fields.
 
-## How to define a dashboard
+### Maintenance - How to define a dashboard
 
 Go to `src/pages/logosValidator/dashboardDefinition.ts`. You have two objects to edit:
 
 - `LOGOS` which contains the logos available in dashboards. Add the logos you need by providing at least `tag`, `label`, and `logo` properties.
 - `DASHBOARD` which for a dashboard associates an array of logos.
+
+## Libraries we depend on
+
+- React
+- [MUI](mui.com) (UI library based on material design)
+- Axios (HTTP calls)
+
+## APIs we depend on
+
+Open Food Facts APIs and [Robotoff](https://github.com/openfoodfacts/robotoff)
+
 
 ## How you can help
 
