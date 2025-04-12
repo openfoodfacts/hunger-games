@@ -51,7 +51,7 @@ The main goal is: Every Open Food Facts user can annotate products in a few minu
 - Install libraries: `yarn install`
 - run the project locally `yarn dev`
 
-### Build Yarn
+### Build with Yarn
 
 ```
 yarn build
