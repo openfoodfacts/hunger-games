@@ -212,6 +212,22 @@
     "name": "Alsace Grand Cru Zotzenberg"
   },
   {
+    "key": "en:cereal-variety-packs",
+    "name": "Assortiments de céréales - grains et légumes secs"
+  },
+  {
+    "key": "en:fruits-vegetables-nuts-seeds-variety-packs",
+    "name": "Assortiments de Fruits - Légumes - Noix et Graines"
+  },
+  {
+    "key": "en:fruits-nuts-seed-variety-packs",
+    "name": "Assortiments de Fruits - Noix et Graines"
+  },
+  {
+    "key": "en:graffiti-eggplants",
+    "name": "Aubergines graffiti"
+  },
+  {
     "key": "fr:auxey-duresses-les-grands-champs",
     "name": "Auxey-Duresses Les Grands Champs"
   },
@@ -270,6 +286,10 @@
   {
     "key": "en:duck-liver-foie-gras-without-pieces",
     "name": "Bloc de foie gras de canard sans morceaux"
+  },
+  {
+    "key": "en:basil-seeds-drinks",
+    "name": "Boissons aux graines de basilic"
   },
   {
     "key": "fr:bourgogne-passe-tout-grains",
@@ -400,8 +420,28 @@
     "name": "Desserts aux graines de chia"
   },
   {
+    "key": "en:fat-free-fermented-dairy-desserts-with-fruits-and-sweeteners-fortified-with-vitamin-d",
+    "name": "Desserts lactés fermentés aux fruits édulcorés sans matière grasse enrichis en vitamine D"
+  },
+  {
+    "key": "en:fat-free-fermented-dairy-desserts-with-fruits-and-sweeteners",
+    "name": "Desserts lactés fermentés édulcorés aux fruits sans matière grasse"
+  },
+  {
+    "key": "en:fat-free-fermented-dairy-desserts-with-sweeteners",
+    "name": "Desserts lactés fermentés édulcorés sans matière grasse"
+  },
+  {
+    "key": "en:fat-free-plain-fermented-dairy-desserts",
+    "name": "Desserts lactés fermentés nature sans matière grasse"
+  },
+  {
     "key": "en:whole-cooked-duck-liver-foie-gras",
     "name": "Foie gras de canard entier cuit"
+  },
+  {
+    "key": "en:whole-frozen-duck-liver-foie-gras",
+    "name": "Foie gras de canard entier surgelé"
   },
   {
     "key": "en:foies-gras",
@@ -436,16 +476,20 @@
     "name": "French grape marc spirit or grape marc"
   },
   {
-    "key": "en:fresh-grapefruits",
-    "name": "Fresh grapefruits"
-  },
-  {
     "key": "en:fat-free-plain-fresh-cream-cheese",
     "name": "Fromage blanc nature à 0% de matières grasses"
   },
   {
+    "key": "en:plain-fresh-cream-cheese-around-1-fat",
+    "name": "Fromage blanc nature à 1% de matières grasses environ"
+  },
+  {
     "key": "en:plain-fresh-cream-cheese-around-3-fat",
     "name": "Fromage blanc nature à 3% de matières grasses environ"
+  },
+  {
+    "key": "en:plain-fresh-cream-cheese-reduced-fat",
+    "name": "Fromage blanc nature allégé en matières grasses"
   },
   {
     "key": "en:plain-creamy-fresh-cream-cheese-around-8-fat",
@@ -476,8 +520,12 @@
     "name": "Fromage rond à pâte molle et croûte fleurie environ 5% MG type camembert allégé en matière grasse"
   },
   {
-    "key": "en:german-grain-spirit",
-    "name": "German grain spirit"
+    "key": "en:frozen-grain-based-meal-kits",
+    "name": "Frozen grain based meal kits"
+  },
+  {
+    "key": "en:frozen-grain-based-meals",
+    "name": "Frozen grain based meals"
   },
   {
     "key": "fr:givry-premier-cru-la-grande-berge",
@@ -524,8 +572,16 @@
     "name": "Gracilaire séchée"
   },
   {
-    "key": "en:grain-spirits",
-    "name": "Grain spirits"
+    "key": "en:grain-based-meal-kits",
+    "name": "Grain based meal kits"
+  },
+  {
+    "key": "en:grain-based-meal-variety-pack",
+    "name": "Grain based meal variety pack"
+  },
+  {
+    "key": "en:grain-based-meals",
+    "name": "Grain based meals"
   },
   {
     "key": "en:gold-flax-seeds",
@@ -556,6 +612,10 @@
     "name": "Graines de coriandre"
   },
   {
+    "key": "en:cotton-seeds",
+    "name": "Graines de coton"
+  },
+  {
     "key": "en:pumpkin-seeds",
     "name": "Graines de courge"
   },
@@ -584,6 +644,10 @@
     "name": "Graines de courge grillées"
   },
   {
+    "key": "en:pumpkin-seeds-non-roasted-shelled-unsalted",
+    "name": "Graines de courge(non-grillées/non-salées/décortiquées)"
+  },
+  {
     "key": "en:cucurbitacea-seeds",
     "name": "Graines de cucurbitacées"
   },
@@ -608,6 +672,14 @@
     "name": "Graines de fenugrec entiers"
   },
   {
+    "key": "fr:graines-de-frene-epineux",
+    "name": "Graines de frêne épineux"
+  },
+  {
+    "key": "en:pomegranate-seeds",
+    "name": "Graines de grenade"
+  },
+  {
     "key": "en:legume-seeds",
     "name": "Graines de légumineuses"
   },
@@ -620,12 +692,24 @@
     "name": "Graines de lin brun"
   },
   {
+    "key": "en:lotus-seeds",
+    "name": "Graines de lotus"
+  },
+  {
     "key": "en:lupin-grains",
     "name": "Graines de lupin"
   },
   {
     "key": "en:sprouted-alfalfa-seeds",
     "name": "Graines de luzerne germées"
+  },
+  {
+    "key": "en:melon-seeds",
+    "name": "Graines de melon"
+  },
+  {
+    "key": "en:mustard-seeds",
+    "name": "Graines de moutarde"
   },
   {
     "key": "en:papaver-seeds",
@@ -668,28 +752,12 @@
     "name": "Graines de tournesol grillées et salées"
   },
   {
-    "key": "en:puffed-wheat-grains",
-    "name": "Grains de blé soufflés"
-  },
-  {
-    "key": "en:popped-wheat-grain-with-caramel",
-    "name": "Grains de blé soufflés au caramel"
-  },
-  {
     "key": "en:popped-wheat-grain-with-caramel-fortified-with-vitamins-and-chemical-elements",
     "name": "Grains de blé soufflés au caramel enrichis en vitamines et minéraux"
   },
   {
-    "key": "en:popped-wheat-grain-with-honey",
-    "name": "Grains de blé soufflés au miel"
-  },
-  {
     "key": "en:popped-wheat-grain-with-honey-fortified-with-vitamins-and-chemical-elements",
     "name": "Grains de blé soufflés au miel enrichis en vitamines et minéraux"
-  },
-  {
-    "key": "en:chocolate-puffed-wheat-grains",
-    "name": "Grains de blé soufflés chocolatés"
   },
   {
     "key": "en:chocolate-puffed-wheat-grains-fortified-with-vitamins-and-chemical-elements",
@@ -702,6 +770,10 @@
   {
     "key": "en:arabica-coffee-beans",
     "name": "Grains de café arabica"
+  },
+  {
+    "key": "en:chocolate-coated-coffee-beans",
+    "name": "Grains de café enrobés de chocolat"
   },
   {
     "key": "en:robusta-coffee-beans",
@@ -720,7 +792,7 @@
     "name": "Grains soufflées"
   },
   {
-    "key": "nl:goose-fats",
+    "key": "en:goose-fats",
     "name": "Graisse d'oie"
   },
   {
@@ -768,6 +840,10 @@
     "name": "Granizados"
   },
   {
+    "key": "it:grappa-della-valle-d-aosta",
+    "name": "Grappa de la Vallée d'Aoste"
+  },
+  {
     "key": "fr:gras-de-boeuf",
     "name": "Gras de bœuf"
   },
@@ -798,6 +874,10 @@
   {
     "key": "en:vegetable-gratins",
     "name": "Gratins de légumes"
+  },
+  {
+    "key": "en:frozen-vegetable-gratins",
+    "name": "Gratins de légumes surgelés"
   },
   {
     "key": "en:pasta-gratin",
@@ -1048,6 +1128,18 @@
     "name": "Mélange apéritif de graines salées et raisins secs"
   },
   {
+    "key": "en:mix-of-olive-oil-and-seeds-oil",
+    "name": "Mélange d'huile d'olive et de graines"
+  },
+  {
+    "key": "en:dried-fruit-and-seed-mixes",
+    "name": "Mélange de graines et fruits secs"
+  },
+  {
+    "key": "en:mixed-seeds",
+    "name": "Mélanges de graines"
+  },
+  {
     "key": "fr:mercurey-premier-cru-clos-des-grands-voyens",
     "name": "Mercurey premier cru Clos des grands Voyens"
   },
@@ -1070,6 +1162,10 @@
   {
     "key": "en:natural-grated-tomato",
     "name": "Natural grated tomato"
+  },
+  {
+    "key": "en:non-grape-alcoholic-beverages",
+    "name": "Non grape alcoholic beverages"
   },
   {
     "key": "fr:nuits-saint-georges-premier-cru-clos-des-grandes-vignes",
@@ -1102,6 +1198,10 @@
   {
     "key": "en:raw-puff-pastry",
     "name": "Pâte feuilletée crue à la matière grasse végétale"
+  },
+  {
+    "key": "en:shortbread-dough-with-vegetable-fats",
+    "name": "Pâte sablée crue à la matière grasse végétale"
   },
   {
     "key": "en:foies-gras-pates",
@@ -1156,6 +1256,10 @@
     "name": "Pommard Les Grands Epenots"
   },
   {
+    "key": "en:potatoes-for-gratin",
+    "name": "Pomme de terre gratin"
+  },
+  {
     "key": "en:sauteed-potato-with-goose-fat",
     "name": "Pommes de terre sautées à la graisse de canard"
   },
@@ -1176,8 +1280,8 @@
     "name": "Purées de graines de tournesol"
   },
   {
-    "key": "en:red-grape-juices",
-    "name": "Red grape juices"
+    "key": "en:refrigerated-grain-based-meal-kits",
+    "name": "Refrigerated grain based meal kits"
   },
   {
     "key": "en:short-grain-rices",
@@ -1288,8 +1392,8 @@
     "name": "Smetana avec 15% de matières grasses"
   },
   {
-    "key": "en:liquid-light-cream-with-4-to-8-fat",
-    "name": "Spécialité à base de crème légère fluide à 8% de matières grasses"
+    "key": "en:uht-compound-dairy-creams-with-4-to-8-fat",
+    "name": "Spécialités à base de crème liquide 4 à 8% de matières grasses UHT"
   },
   {
     "key": "en:minced-beef-steak-with-10-fat",
@@ -1336,6 +1440,10 @@
     "name": "Substituts du foie gras"
   },
   {
+    "key": "en:spreads-with-foie-gras",
+    "name": "Tartinables au foie gras"
+  },
+  {
     "key": "fr:terrine-de-foie-gras",
     "name": "Terrine de foie gras"
   },
@@ -1356,10 +1464,6 @@
     "name": "Vinaigrettes allégées en matières grasses"
   },
   {
-    "key": "en:white-grape-juices",
-    "name": "White grape juices"
-  },
-  {
     "key": "en:yogurt-with-fruits-no-0-fat",
     "name": "Yaourt aromatisé aux fruits non allégé en matières grasses"
   },
@@ -1368,20 +1472,8 @@
     "name": "Yaourt au lait fermenté aux céréales à 0% de matières grasses"
   },
   {
-    "key": "en:fat-free-fermented-milk-yogurt-with-fruits-and-sweetener",
-    "name": "Yaourt au lait fermenté aux fruits avec édulcorants à 0% de matières grasses"
-  },
-  {
-    "key": "en:fat-free-fermented-milk-yogurt-with-fruits-and-sweetener-fortified-with-vitamin-d",
-    "name": "Yaourt au lait fermenté aux fruits avec édulcorants à 0% de matières grasses enrichi en vitamine D"
-  },
-  {
-    "key": "en:fat-free-flavoured-fermented-milk-yogurt-with-sweetener",
-    "name": "Yaourt au lait fermenté avec édulcorants à 0% de matières grasses"
-  },
-  {
-    "key": "en:fat-free-plain-fermented-milk-yogurt",
-    "name": "Yaourt nature au lait fermenté à 0% de matières grasses"
+    "key": "fr:yaourts-a-boire-alleges-en-matieres-grasses",
+    "name": "Yaourts à boire allégés en matières grasses"
   },
   {
     "key": "en:low-fat-yogurts",

@@ -4,6 +4,10 @@
     "name": "Aceites de palma"
   },
   {
+    "key": "en:american-style-pale-ale-apa",
+    "name": "American-style Pale Ale (APA)"
+  },
+  {
     "key": "en:austrian-palinka",
     "name": "Austrian Pálinka"
   },
@@ -12,27 +16,23 @@
     "name": "Canned palm heart"
   },
   {
+    "key": "en:french-style-pale-ale",
+    "name": "French-style pale ale"
+  },
+  {
     "key": "en:ice-cream-bars",
     "name": "Helados de palo"
   },
   {
-    "key": "en:chocolate-ice-cream-bars",
+    "key": "en:ice-cream-bars-coated-with-chocolate",
     "name": "Helados de palo de chocolate"
-  },
-  {
-    "key": "en:vanilla-ice-cream-bars",
-    "name": "Helados de palo de vainilla"
   },
   {
     "key": "en:hungarian-palinka",
     "name": "Hungarian Pálinka"
   },
   {
-    "key": "en:india-pale-ale-ipa",
-    "name": "India Pale Ale (IPA)"
-  },
-  {
-    "key": "km:ស្ករត្នោតកំពង់ស្ពឺ",
+    "key": "hr:kampong-speu-palmin-šećer",
     "name": "Kampong Speu Palm Sugar"
   },
   {
@@ -44,7 +44,15 @@
     "name": "Los Palacios"
   },
   {
-    "key": "pl:palinca",
+    "key": "en:ice-cream-bar-variety-packs",
+    "name": "Pacquetes variados de helados de palo"
+  },
+  {
+    "key": "en:pale-ales",
+    "name": "Pale ales"
+  },
+  {
+    "key": "en:palinka",
     "name": "Pálinka"
   },
   {
@@ -98,9 +106,5 @@
   {
     "key": "en:retsina-of-pallini",
     "name": "Retsina of Pallini"
-  },
-  {
-    "key": "en:salty-palmiers",
-    "name": "Salty palmiers"
   }
 ]

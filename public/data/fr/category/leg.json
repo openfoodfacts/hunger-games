@@ -28,6 +28,18 @@
     "name": "Ananas au sirop léger appertisé non égoutté"
   },
   {
+    "key": "en:vegetable-aspic",
+    "name": "Aspic de légumes"
+  },
+  {
+    "key": "en:cereal-variety-packs",
+    "name": "Assortiments de céréales - grains et légumes secs"
+  },
+  {
+    "key": "en:fruits-vegetables-nuts-seeds-variety-packs",
+    "name": "Assortiments de Fruits - Légumes - Noix et Graines"
+  },
+  {
     "key": "en:vegetable-fritters",
     "name": "Beignets de légumes"
   },
@@ -52,7 +64,7 @@
     "name": "Boissons aux légumes"
   },
   {
-    "key": "en:legume-milks",
+    "key": "en:legume-based-drinks",
     "name": "Boissons végétales de légumineuses"
   },
   {
@@ -96,7 +108,7 @@
     "name": "Bouillons de légumes liquides"
   },
   {
-    "key": "en:vegetables-in-a-box",
+    "key": "en:vegetable-pots",
     "name": "Box de légumes"
   },
   {
@@ -110,10 +122,6 @@
   {
     "key": "en:frozen-diced-vegetables",
     "name": "Brunoise de légumes surgelée"
-  },
-  {
-    "key": "en:vegetables-cakes",
-    "name": "Cake aux legumes"
   },
   {
     "key": "en:savoury-cake-with-vegetables",
@@ -188,6 +196,10 @@
     "name": "Galettes de légumes panées"
   },
   {
+    "key": "en:frozen-vegetable-patties",
+    "name": "Galettes de légumes surgelées"
+  },
+  {
     "key": "en:puffed-pulse-cakes",
     "name": "Galettes de légumineuses soufflées"
   },
@@ -210,6 +222,10 @@
   {
     "key": "en:vegetable-gratins",
     "name": "Gratins de légumes"
+  },
+  {
+    "key": "en:frozen-vegetable-gratins",
+    "name": "Gratins de légumes surgelés"
   },
   {
     "key": "en:vegetable-gyoza",
@@ -240,7 +256,7 @@
     "name": "Jus de légumes"
   },
   {
-    "key": "en:vegetable-lasagne",
+    "key": "en:vegetable-lasagnas",
     "name": "Lasagnes aux légumes"
   },
   {
@@ -250,6 +266,14 @@
   {
     "key": "en:lasagna-with-cooked-vegetables-and-goat-cheese",
     "name": "Lasagnes aux légumes cuits et au fromage de chèvre"
+  },
+  {
+    "key": "en:vegetables",
+    "name": "Légumes"
+  },
+  {
+    "key": "en:vegetables-from-germany",
+    "name": "Légumes allemands"
   },
   {
     "key": "en:plant-based-mixed-pickles",
@@ -272,11 +296,15 @@
     "name": "Légumes cuits pour couscous"
   },
   {
+    "key": "en:vegetables-from-the-netherlands",
+    "name": "Légumes du Pays-Bas"
+  },
+  {
     "key": "en:canned-vegetables",
     "name": "Légumes en conserve"
   },
   {
-    "key": "en:spanish-vegetables",
+    "key": "en:vegetables-from-spain",
     "name": "Légumes espagnols"
   },
   {
@@ -286,6 +314,14 @@
   {
     "key": "en:stuffed-vegetables",
     "name": "Légumes farcis"
+  },
+  {
+    "key": "en:stuffed-vegetables-in-oil",
+    "name": "Légumes farcis dans l'huile"
+  },
+  {
+    "key": "en:fermented-vegetables",
+    "name": "Légumes fermentés"
   },
   {
     "key": "en:fresh-vegetables",
@@ -298,10 +334,6 @@
   {
     "key": "en:freeze-dried-vegetables",
     "name": "Légumes lyophilisées"
-  },
-  {
-    "key": "en:dutch-vegetables",
-    "name": "Légumes néerlandais"
   },
   {
     "key": "en:frozen-mixed-vegetables-for-couscous",
@@ -342,6 +374,10 @@
   {
     "key": "en:leaf-vegetables",
     "name": "Légumes-feuilles"
+  },
+  {
+    "key": "en:root-vegetables",
+    "name": "Légumes-racines"
   },
   {
     "key": "en:legumes",
@@ -386,10 +422,6 @@
   {
     "key": "en:canned-diced-mixed-vegetables",
     "name": "Macédoines de légumes en conserve"
-  },
-  {
-    "key": "en:prepared-vegetables-macedoines",
-    "name": "Macédoines de légumes préparées"
   },
   {
     "key": "en:vegetable-bouillon-pots",
@@ -508,7 +540,7 @@
     "name": "Petits pots aux légumes pour bébés dès 4-6 mois"
   },
   {
-    "key": "en:vegetable-pickles",
+    "key": "en:pickled-vegetables",
     "name": "Pickles de légumes"
   },
   {
@@ -521,7 +553,7 @@
   },
   {
     "key": "en:vegetable-pizza",
-    "name": "Pizza aux légumes"
+    "name": "Pizzas aux légumes"
   },
   {
     "key": "en:vegetable-dish-for-babies-from-12-months-with-starch-and-meat",
@@ -618,6 +650,10 @@
   {
     "key": "en:mashed-vegetables",
     "name": "Purées de légumes"
+  },
+  {
+    "key": "en:frozen-mashed-vegetables",
+    "name": "Purées de légumes surgelées"
   },
   {
     "key": "en:quiches-with-vegetables",
@@ -736,10 +772,6 @@
     "name": "Spanish legumes"
   },
   {
-    "key": "en:liquid-light-cream-with-4-to-8-fat",
-    "name": "Spécialité à base de crème légère fluide à 8% de matières grasses"
-  },
-  {
     "key": "en:tabbouleh-with-fresh-vegetables",
     "name": "Taboulés aux légumes"
   },
@@ -750,6 +782,10 @@
   {
     "key": "en:vegan-vegetable-spreads",
     "name": "Tartinades véganes aux légumes"
+  },
+  {
+    "key": "en:vegetarian-vegetable-and-cheese-spreads",
+    "name": "Tartinades végétariennes aux légumes et fromage"
   },
   {
     "key": "en:frozen-vegetable-tempura",

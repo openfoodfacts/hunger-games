@@ -8,6 +8,10 @@
     "name": "Biscuit apéritif soufflé à base de pomme de terre et de soja"
   },
   {
+    "key": "en:puffed-salty-snacks-potato-soy-based",
+    "name": "Biscuits apéritifs soufflés (à base de pomme de terre/soja)"
+  },
+  {
     "key": "en:plain-soy-drink-fortified-with-calcium",
     "name": "Boisson au soja nature enrichie en calcium"
   },
@@ -24,36 +28,32 @@
     "name": "Boissons aux fruits et au soja"
   },
   {
-    "key": "en:unsweetened-natural-soy-milks",
+    "key": "en:unsweetened-plain-soy-based-drinks",
     "name": "Boissons de soja nature non sucrées"
   },
   {
-    "key": "en:sweetened-natural-soy-milks",
+    "key": "en:sweetened-plain-soy-based-drinks",
     "name": "Boissons de soja nature sucrées"
   },
   {
-    "key": "en:soy-milks",
+    "key": "en:soy-based-drinks",
     "name": "Boissons végétales de soja"
   },
   {
-    "key": "en:vanilla-soy-milks",
+    "key": "en:vanilla-soy-based-drinks",
     "name": "Boissons végétales de soja à la vanille"
   },
   {
-    "key": "en:chocolate-soy-milks",
+    "key": "en:chocolate-soy-based-drinks",
     "name": "Boissons végétales de soja au chocolat"
   },
   {
-    "key": "en:coffee-soy-milks",
+    "key": "en:coffee-soy-based-drinks",
     "name": "Boissons végétales de soja avec du café"
   },
   {
     "key": "en:powdered-soy-milks",
     "name": "Boissons végétales de soja en poudre"
-  },
-  {
-    "key": "en:soy-based-sliced",
-    "name": "Bouchées ou émincé au soja et blé (ne convient pas aux véganes ou végétaliens) préemballé"
   },
   {
     "key": "en:balls-from-soy-and-or-wheat-proteins",
@@ -100,6 +100,10 @@
     "name": "Fèves de soja"
   },
   {
+    "key": "en:dried-soy-beans",
+    "name": "Fèves de soja séchées"
+  },
+  {
     "key": "en:soy-flakes",
     "name": "Flocons de soja"
   },
@@ -130,10 +134,6 @@
   {
     "key": "en:nuggets-from-soy-and-wheat-proteins",
     "name": "Nuggets à base de protéines de soja et blé"
-  },
-  {
-    "key": "en:soybean-and-wheat-based-nuggets-vegan",
-    "name": "Nuggets soja et blé (convient aux véganes ou végétaliens) préemballé"
   },
   {
     "key": "en:textured-soy-protein",

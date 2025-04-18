@@ -1,5 +1,9 @@
 [
   {
+    "key": "en:pear-tart-with-almonds",
+    "name": "Birnentorte mit Mandeln"
+  },
+  {
     "key": "en:whole-almond-purees",
     "name": "Braunes Mandelmus"
   },
@@ -24,6 +28,10 @@
     "name": "Fresh mangoes"
   },
   {
+    "key": "en:frozen-mangos",
+    "name": "Frozen mangos"
+  },
+  {
     "key": "en:whole-almonds",
     "name": "Ganze Mandeln"
   },
@@ -32,11 +40,11 @@
     "name": "Gekühlte Mandarinendirektsäfte"
   },
   {
-    "key": "en:almond-meal",
+    "key": "en:ground-almonds",
     "name": "Gemahlene Mandeln"
   },
   {
-    "key": "en:grilled-almonds",
+    "key": "en:roasted-almonds",
     "name": "Geröstete Mandeln"
   },
   {
@@ -68,6 +76,10 @@
     "name": "Manchego"
   },
   {
+    "key": "en:mandarin-jams",
+    "name": "Mandarin jams"
+  },
+  {
     "key": "en:mandarin-oranges-in-syrup",
     "name": "Mandarin oranges in syrup"
   },
@@ -76,16 +88,16 @@
     "name": "Mandarin pulp"
   },
   {
-    "key": "en:mandarin-sorbets",
-    "name": "Mandarin sorbets"
-  },
-  {
-    "key": "en:mandarin-oranges",
+    "key": "en:mandarins",
     "name": "Mandarinen"
   },
   {
     "key": "en:clementine-jams",
     "name": "Mandarinen Marmelade"
+  },
+  {
+    "key": "en:mandarin-sorbets",
+    "name": "Mandarinen-Sorbets"
   },
   {
     "key": "fr:miels-de-mandarinier",
@@ -108,7 +120,7 @@
     "name": "Mandarinensäfte aus Konzentrat"
   },
   {
-    "key": "en:almonds-spreads",
+    "key": "en:almond-spreads",
     "name": "Mandel-Crèmes"
   },
   {
@@ -132,7 +144,7 @@
     "name": "Mandelmarzipan"
   },
   {
-    "key": "en:almond-milks",
+    "key": "en:almond-based-drinks",
     "name": "Mandelmilch"
   },
   {
@@ -144,7 +156,19 @@
     "name": "Mandeln"
   },
   {
-    "key": "en:chocolate-covered-almonds",
+    "key": "en:almond-flakes",
+    "name": "Mandeln (Gehobelt)"
+  },
+  {
+    "key": "en:raw-almonds",
+    "name": "Mandeln (Naturbelassen)"
+  },
+  {
+    "key": "en:slivered-almonds",
+    "name": "Mandeln gestiftet"
+  },
+  {
+    "key": "en:chocolate-coated-almonds",
     "name": "Mandeln mit Schokoladenüberzug"
   },
   {
@@ -154,6 +178,10 @@
   {
     "key": "en:shelled-almonds",
     "name": "Mandeln ohne Schale"
+  },
+  {
+    "key": "fr:amandes-hachees",
+    "name": "Mandeln(gehackt)"
   },
   {
     "key": "en:almond-oils",
@@ -169,11 +197,11 @@
   },
   {
     "key": "en:mango-chutneys",
-    "name": "Mango chutneys"
+    "name": "Mango Chutneys"
   },
   {
     "key": "en:mango-coulis",
-    "name": "Mango coulis"
+    "name": "Mango Coulis"
   },
   {
     "key": "en:mango-imported-by-boat",
@@ -190,10 +218,6 @@
   {
     "key": "en:mango-sorbets",
     "name": "Mango Sorbets"
-  },
-  {
-    "key": "en:mango-syrups",
-    "name": "Mango syrups"
   },
   {
     "key": "en:mango-applesauces",
@@ -232,8 +256,16 @@
     "name": "Mangos in Sirup"
   },
   {
+    "key": "en:mango-syrups",
+    "name": "Mangosirups"
+  },
+  {
     "key": "en:cassava-crisps",
     "name": "Maniok Chips"
+  },
+  {
+    "key": "en:manitoba-flours",
+    "name": "Manitoba flours"
   },
   {
     "key": "de:manouri",
@@ -262,6 +294,10 @@
   {
     "key": "en:milk-chocolates-with-almonds",
     "name": "Milchschokolade mit Mandeln"
+  },
+  {
+    "key": "en:pickled-mangoes",
+    "name": "Pickled mangoes"
   },
   {
     "key": "en:rillettes-from-mans",
@@ -296,11 +332,19 @@
     "name": "Tiefkühl-Mangoldblätter"
   },
   {
+    "key": "en:vanilla-ice-cream-bars-coated-with-milk-chocolate-and-almonds",
+    "name": "Vanilleeis am Stiel überzogen mit Milchschokolade und Mandeln"
+  },
+  {
+    "key": "en:vanilla-ice-cream-bars-coated-with-white-chocolate-and-almonds",
+    "name": "Vanilleeis am Stiel überzogen mit weiße Schokolade und Mandeln"
+  },
+  {
     "key": "en:almond-creme-filled-wafers",
     "name": "Waffeln mit Mandelcreme"
   },
   {
-    "key": "en:white-almond-purees",
+    "key": "en:white-almond-butters",
     "name": "Weißes Mandelmus"
   }
 ]

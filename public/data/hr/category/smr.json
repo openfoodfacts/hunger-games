@@ -1,0 +1,594 @@
+[
+  {
+    "key": "en:morel",
+    "name": "Smrčak"
+  },
+  {
+    "key": "en:frozen-broccolis",
+    "name": "Smrznuta brokula"
+  },
+  {
+    "key": "en:frozen-ready-made-meals",
+    "name": "Smrznuta gotova jela"
+  },
+  {
+    "key": "en:frozen-plant-based-foods",
+    "name": "Smrznuta hrana biljnog podrijetla"
+  },
+  {
+    "key": "en:frozen-mint",
+    "name": "Smrznuta menta"
+  },
+  {
+    "key": "en:frozen-carrots",
+    "name": "Smrznuta mrkva"
+  },
+  {
+    "key": "en:frozen-chopped-carrots",
+    "name": "Smrznuta nasjeckana mrkva"
+  },
+  {
+    "key": "en:frozen-poultry",
+    "name": "Smrznuta perad"
+  },
+  {
+    "key": "en:frozen-pre-cooked-rice",
+    "name": "Smrznuta prethodno kuhana riža"
+  },
+  {
+    "key": "en:frozen-turnips",
+    "name": "Smrznuta repa"
+  },
+  {
+    "key": "en:frozen-fish-in-sauce",
+    "name": "Smrznuta riba u umaku"
+  },
+  {
+    "key": "en:frozen-rice-with-vegetables",
+    "name": "Smrznuta riža s povrćem"
+  },
+  {
+    "key": "en:frozen-saithe",
+    "name": "Smrznuta saie"
+  },
+  {
+    "key": "en:frozen-artichoke-hearts",
+    "name": "Smrznuta srca artičoka"
+  },
+  {
+    "key": "en:frozen-spearmint",
+    "name": "Smrznuta zelena metvica"
+  },
+  {
+    "key": "en:frozen-corn-kernels",
+    "name": "Smrznuta zrna kukuruza"
+  },
+  {
+    "key": "en:frozen-artichokes",
+    "name": "Smrznute artičoke"
+  },
+  {
+    "key": "en:frozen-white-asparagus",
+    "name": "Smrznute bijele šparoge"
+  },
+  {
+    "key": "en:frozen-chards",
+    "name": "Smrznute blitve"
+  },
+  {
+    "key": "en:ice-cream-candy-chocolate-bars",
+    "name": "Smrznute bombone čokoladice"
+  },
+  {
+    "key": "en:frozen-blueberries",
+    "name": "Smrznute borovnice"
+  },
+  {
+    "key": "en:frozen-cranberries",
+    "name": "Smrznute brusnice"
+  },
+  {
+    "key": "en:frozen-oyster-mushrooms",
+    "name": "Smrznute bukovače"
+  },
+  {
+    "key": "en:frozen-pumpkins",
+    "name": "Smrznute bundeve"
+  },
+  {
+    "key": "en:frozen-whole-green-asparagus",
+    "name": "Smrznute cijele zelene šparoge"
+  },
+  {
+    "key": "en:frozen-red-peppers",
+    "name": "Smrznute crvene paprike"
+  },
+  {
+    "key": "en:frozen-mushrooms",
+    "name": "Smrznute gljive"
+  },
+  {
+    "key": "en:frozen-chanterelle-mushrooms",
+    "name": "Smrznute gljive lisičarke"
+  },
+  {
+    "key": "en:frozen-snacks-and-starters",
+    "name": "Smrznute grickalice i predjela"
+  },
+  {
+    "key": "en:frozen-strawberries",
+    "name": "Smrznute jagode"
+  },
+  {
+    "key": "en:frozen-soups",
+    "name": "Smrznute juhe"
+  },
+  {
+    "key": "en:frozen-vegetable-soups",
+    "name": "Smrznute juhe od povrća"
+  },
+  {
+    "key": "en:frozen-blackberries",
+    "name": "Smrznute kupine"
+  },
+  {
+    "key": "en:frozen-lasagne",
+    "name": "Smrznute lazanje"
+  },
+  {
+    "key": "en:frozen-legumes",
+    "name": "Smrznute mahunarke"
+  },
+  {
+    "key": "en:frozen-green-beans",
+    "name": "Smrznute mahune"
+  },
+  {
+    "key": "en:frozen-raspberries",
+    "name": "Smrznute maline"
+  },
+  {
+    "key": "en:frozen-mixed-mushrooms",
+    "name": "Smrznute miješane gljive"
+  },
+  {
+    "key": "en:frozen-mixed-peppers",
+    "name": "Smrznute miješane paprike"
+  },
+  {
+    "key": "en:frozen-plant-based-foods-mixes",
+    "name": "Smrznute mješavine biljnih namirnica"
+  },
+  {
+    "key": "en:frozen-baby-artichokes",
+    "name": "Smrznute mlade artičoke"
+  },
+  {
+    "key": "en:frozen-baby-carrots",
+    "name": "Smrznute mlade mrkve"
+  },
+  {
+    "key": "en:frozen-ground-beef-steaks",
+    "name": "Smrznute mljevene goveđe odreske"
+  },
+  {
+    "key": "en:frozen-foods",
+    "name": "Smrznute namirnice"
+  },
+  {
+    "key": "en:frozen-sliced-zucchini",
+    "name": "Smrznute narezane tikvice"
+  },
+  {
+    "key": "en:frozen-chopped-artichokes",
+    "name": "Smrznute nasjeckane artičoke"
+  },
+  {
+    "key": "en:frozen-chopped-chards",
+    "name": "Smrznute nasjeckane blitve"
+  },
+  {
+    "key": "en:frozen-chopped-green-asparagus",
+    "name": "Smrznute nasjeckane zelene šparoge"
+  },
+  {
+    "key": "en:frozen-peppers",
+    "name": "Smrznute paprike"
+  },
+  {
+    "key": "en:frozen-pies",
+    "name": "Smrznute pite"
+  },
+  {
+    "key": "en:frozen-apple-pies",
+    "name": "Smrznute pite od jabuka"
+  },
+  {
+    "key": "en:frozen-pizzas",
+    "name": "Smrznute pizze"
+  },
+  {
+    "key": "en:frozen-pizzas-and-pies",
+    "name": "Smrznute pizze i pite"
+  },
+  {
+    "key": "en:frozen-flat-green-beans",
+    "name": "Smrznute plosnate mahune"
+  },
+  {
+    "key": "en:frozen-brussels-sprouts",
+    "name": "Smrznute prokulice"
+  },
+  {
+    "key": "en:frozen-fishes",
+    "name": "Smrznute ribe"
+  },
+  {
+    "key": "en:frozen-salads",
+    "name": "Smrznute salate"
+  },
+  {
+    "key": "en:frozen-bars",
+    "name": "Smrznute šipke"
+  },
+  {
+    "key": "en:frozen-asparagus",
+    "name": "Smrznute šparoge"
+  },
+  {
+    "key": "en:frozen-zucchini",
+    "name": "Smrznute tikvice"
+  },
+  {
+    "key": "en:frozen-diced-zucchinis",
+    "name": "Smrznute tikvice narezane na kockice"
+  },
+  {
+    "key": "en:frozen-green-peppers",
+    "name": "Smrznute zelene paprike"
+  },
+  {
+    "key": "en:frozen-green-asparagus",
+    "name": "Smrznute zelene šparoge"
+  },
+  {
+    "key": "en:frozen-cereals",
+    "name": "Smrznute žitarice"
+  },
+  {
+    "key": "en:frozen-yellow-peppers",
+    "name": "Smrznute žute paprike"
+  },
+  {
+    "key": "en:frozen-pineapples",
+    "name": "Smrznuti ananas"
+  },
+  {
+    "key": "en:frozen-avocados",
+    "name": "Smrznuti avokado"
+  },
+  {
+    "key": "en:frozen-broad-beans",
+    "name": "Smrznuti bob"
+  },
+  {
+    "key": "en:frozen-basil",
+    "name": "Smrznuti bosiljak"
+  },
+  {
+    "key": "en:frozen-whole-champignon-mushrooms",
+    "name": "Smrznuti cijeli šampinjoni"
+  },
+  {
+    "key": "en:frozen-whole-porcini-mushrooms",
+    "name": "Smrznuti cijeli vrganji"
+  },
+  {
+    "key": "en:frozen-citrus",
+    "name": "Smrznuti citrusi"
+  },
+  {
+    "key": "en:frozen-red-cabbage",
+    "name": "Smrznuti crveni kupus"
+  },
+  {
+    "key": "en:frozen-redcurrants",
+    "name": "Smrznuti crveni ribizli"
+  },
+  {
+    "key": "en:frozen-cauliflower-florets",
+    "name": "Smrznuti cvjetovi cvjetače"
+  },
+  {
+    "key": "en:frozen-dauphine-potatoes",
+    "name": "Smrznuti dauphine krumpir"
+  },
+  {
+    "key": "en:frozen-desserts",
+    "name": "Smrznuti deserti"
+  },
+  {
+    "key": "en:frozen-edamame",
+    "name": "Smrznuti edamame"
+  },
+  {
+    "key": "en:frozen-falafel",
+    "name": "Smrznuti falafel"
+  },
+  {
+    "key": "en:frozen-hake-fillet",
+    "name": "Smrznuti file oslića"
+  },
+  {
+    "key": "en:frozen-butter-beans",
+    "name": "Smrznuti grah s maslacem"
+  },
+  {
+    "key": "en:frozen-peas-and-carrots",
+    "name": "Smrznuti grašak i mrkva"
+  },
+  {
+    "key": "en:frozen-horchatas-de-chufa",
+    "name": "Smrznuti horchatas de chufa"
+  },
+  {
+    "key": "en:frozen-yogurts",
+    "name": "Smrznuti jogurti"
+  },
+  {
+    "key": "en:frozen-cardoons",
+    "name": "Smrznuti kartoni"
+  },
+  {
+    "key": "en:frozen-chestnuts",
+    "name": "Smrznuti kesteni"
+  },
+  {
+    "key": "en:frozen-corn-on-the-cob",
+    "name": "Smrznuti klip kukuruza"
+  },
+  {
+    "key": "en:frozen-cakes-and-pastries",
+    "name": "Smrznuti kolači i kolači"
+  },
+  {
+    "key": "en:frozen-dill",
+    "name": "Smrznuti kopar"
+  },
+  {
+    "key": "fr:croquettes-de-pommes-de-terre-surgelees",
+    "name": "Smrznuti kroketi od krumpira"
+  },
+  {
+    "key": "en:frozen-breads",
+    "name": "Smrznuti kruhovi"
+  },
+  {
+    "key": "en:frozen-potatoes",
+    "name": "Smrznuti krumpir"
+  },
+  {
+    "key": "en:frozen-fries",
+    "name": "Smrznuti krumpirići"
+  },
+  {
+    "key": "en:frozen-cooked-crab",
+    "name": "Smrznuti kuhani rak"
+  },
+  {
+    "key": "en:frozen-corn",
+    "name": "Smrznuti kukuruz"
+  },
+  {
+    "key": "en:frozen-lima-beans",
+    "name": "Smrznuti lima grah"
+  },
+  {
+    "key": "en:frozen-chard-leaves",
+    "name": "Smrznuti listovi blitve"
+  },
+  {
+    "key": "en:frozen-lorraine-quiche",
+    "name": "Smrznuti lorraine quiche"
+  },
+  {
+    "key": "en:frozen-onions",
+    "name": "Smrznuti luk"
+  },
+  {
+    "key": "en:frozen-meat-preparations",
+    "name": "Smrznuti mesni pripravci"
+  },
+  {
+    "key": "en:frozen-ground-meat-preparations",
+    "name": "Smrznuti mljeveni mesni pripravci"
+  },
+  {
+    "key": "en:frozen-ground-steaks",
+    "name": "Smrznuti mljeveni odresci"
+  },
+  {
+    "key": "en:frozen-sliced-champignon-mushrooms",
+    "name": "Smrznuti narezani šampinjoni"
+  },
+  {
+    "key": "en:frozen-chopped-garlic",
+    "name": "Smrznuti nasjeckani češnjak"
+  },
+  {
+    "key": "en:frozen-chopped-cardoons",
+    "name": "Smrznuti nasjeckani kartoni"
+  },
+  {
+    "key": "en:frozen-chopped-onions",
+    "name": "Smrznuti nasjeckani luk"
+  },
+  {
+    "key": "en:frozen-chopped-spinachs",
+    "name": "Smrznuti nasjeckani špinat"
+  },
+  {
+    "key": "en:frozen-chopped-porcini-mushrooms",
+    "name": "Smrznuti nasjeckani vrganji"
+  },
+  {
+    "key": "en:frozen-common-beans",
+    "name": "Smrznuti obični grah"
+  },
+  {
+    "key": "en:frozen-steaks",
+    "name": "Smrznuti odresci"
+  },
+  {
+    "key": "en:frozen-nuts",
+    "name": "Smrznuti orasi"
+  },
+  {
+    "key": "en:frozen-aubergines",
+    "name": "Smrznuti patlidžani"
+  },
+  {
+    "key": "en:frozen-baked-potatoes",
+    "name": "Smrznuti pečeni krumpir"
+  },
+  {
+    "key": "en:frozen-parsley",
+    "name": "Smrznuti peršin"
+  },
+  {
+    "key": "en:frozen-mashed-potatoes",
+    "name": "Smrznuti pire krumpir"
+  },
+  {
+    "key": "en:frozen-seafood",
+    "name": "Smrznuti plodovi mora"
+  },
+  {
+    "key": "en:frozen-leeks",
+    "name": "Smrznuti poriluk"
+  },
+  {
+    "key": "en:frozen-ground-beef-preparations",
+    "name": "Smrznuti pripravci od mljevene govedine"
+  },
+  {
+    "key": "en:frozen-fried-potatoes",
+    "name": "Smrznuti prženi krumpir"
+  },
+  {
+    "key": "en:frozen-snails",
+    "name": "Smrznuti puževi"
+  },
+  {
+    "key": "en:frozen-ravioli",
+    "name": "Smrznuti ravioli"
+  },
+  {
+    "key": "en:frozen-romanesco",
+    "name": "Smrznuti romanesco"
+  },
+  {
+    "key": "en:frozen-salsify",
+    "name": "Smrznuti salsify"
+  },
+  {
+    "key": "en:frozen-champignon-mushrooms",
+    "name": "Smrznuti šampinjoni"
+  },
+  {
+    "key": "en:frozen-sandwiches",
+    "name": "Smrznuti sendviči"
+  },
+  {
+    "key": "en:frozen-pomegranates",
+    "name": "Smrznuti šipak"
+  },
+  {
+    "key": "en:frozen-raw-salsify",
+    "name": "Smrznuti sirovi salsify"
+  },
+  {
+    "key": "en:frozen-shrimps",
+    "name": "Smrznuti škampi"
+  },
+  {
+    "key": "en:frozen-chickpeas",
+    "name": "Smrznuti slanutak"
+  },
+  {
+    "key": "en:frozen-spinachs",
+    "name": "Smrznuti špinat"
+  },
+  {
+    "key": "en:frozen-chives",
+    "name": "Smrznuti vlasac"
+  },
+  {
+    "key": "en:frozen-porcini-mushrooms",
+    "name": "Smrznuti vrganji"
+  },
+  {
+    "key": "en:frozen-green-garlic",
+    "name": "Smrznuti zeleni češnjak"
+  },
+  {
+    "key": "en:frozen-green-peas",
+    "name": "Smrznuti zeleni grašak"
+  },
+  {
+    "key": "en:frozen-aromatic-plants",
+    "name": "Smrznuto aromatično bilje"
+  },
+  {
+    "key": "en:frozen-berries",
+    "name": "Smrznuto bobičasto voće"
+  },
+  {
+    "key": "en:frozen-spinach-leaves",
+    "name": "Smrznuto lišće špinata"
+  },
+  {
+    "key": "en:frozen-puff-pastry",
+    "name": "Smrznuto lisnato tijesto"
+  },
+  {
+    "key": "en:frozen-meats",
+    "name": "Smrznuto meso"
+  },
+  {
+    "key": "en:frozen-mixed-berries",
+    "name": "Smrznuto miješano bobičasto voće"
+  },
+  {
+    "key": "en:frozen-mixed-vegetables",
+    "name": "Smrznuto miješano povrće"
+  },
+  {
+    "key": "en:frozen-mixed-tropical-fruits",
+    "name": "Smrznuto miješano tropsko voće"
+  },
+  {
+    "key": "en:frozen-mixed-fruits",
+    "name": "Smrznuto miješano voće"
+  },
+  {
+    "key": "en:frozen-vegetables",
+    "name": "Smrznuto povrće"
+  },
+  {
+    "key": "en:frozen-tropical-fruits",
+    "name": "Smrznuto tropsko voće"
+  },
+  {
+    "key": "en:frozen-fruits",
+    "name": "Smrznuto voće"
+  },
+  {
+    "key": "en:frozen-fruits-with-added-sugar",
+    "name": "Smrznuto voće s dodatkom šećera"
+  },
+  {
+    "key": "en:frozen-vegetable-tempura",
+    "name": "Tempura od smrznutog povrća"
+  }
+]

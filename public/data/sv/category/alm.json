@@ -24,10 +24,6 @@
     "name": "Almond flakes"
   },
   {
-    "key": "en:almond-meal",
-    "name": "Almond meal"
-  },
-  {
     "key": "en:almond-milk-yogurts",
     "name": "Almond milk yogurts"
   },
@@ -40,6 +36,10 @@
     "name": "Almond peeled unpeeled or blanched"
   },
   {
+    "key": "en:almond-spreads",
+    "name": "Almond spreads"
+  },
+  {
     "key": "en:almond-turron",
     "name": "Almond turrón"
   },
@@ -48,28 +48,28 @@
     "name": "Almond-based creams for cooking"
   },
   {
-    "key": "en:almonds-spreads",
-    "name": "Almonds spreads"
+    "key": "en:almonds-roasted-and-unsalted",
+    "name": "Almonds(roasted and unsalted)"
   },
   {
-    "key": "en:caramelized-almonds",
-    "name": "Caramelized almonds"
+    "key": "en:blanched-almonds",
+    "name": "Blanched almonds"
   },
   {
-    "key": "en:cereal-bar-with-almonds",
-    "name": "Cereal bar with almonds"
+    "key": "en:cake-with-almond-flavoured-filling",
+    "name": "Cake with almond flavoured filling"
   },
   {
-    "key": "en:cereal-bar-with-almonds-or-hazelnuts",
-    "name": "Cereal bar with almonds or hazelnuts"
+    "key": "en:cereal-bars-with-almonds",
+    "name": "Cereal bars with almonds"
   },
   {
-    "key": "en:chocolate-almond-milks",
-    "name": "Chocolate almond milks"
+    "key": "en:chocolate-almond-based-drinks",
+    "name": "Chocolate almond-based drinks"
   },
   {
-    "key": "en:chocolate-covered-almonds",
-    "name": "Chocolate covered almonds"
+    "key": "en:chocolate-coated-almonds",
+    "name": "Chocolate coated almonds"
   },
   {
     "key": "en:chocolate-turron-with-almonds",
@@ -84,20 +84,44 @@
     "name": "Creamy almond turrón"
   },
   {
+    "key": "en:croissant-with-almonds",
+    "name": "Croissant with almonds"
+  },
+  {
     "key": "en:croissant-with-almonds-from-bakery",
     "name": "Croissant with almonds from bakery"
+  },
+  {
+    "key": "en:croissants-with-almonds-and-pistachio",
+    "name": "Croissants with almonds and pistachio"
   },
   {
     "key": "en:crunchy-almond-turron",
     "name": "Crunchy almond turrón"
   },
   {
+    "key": "en:flavoured-almonds",
+    "name": "Flavoured almonds"
+  },
+  {
     "key": "en:green-olives-stuffed-of-almond",
     "name": "Green olives stuffed of almond"
   },
   {
-    "key": "en:grilled-almonds",
-    "name": "Grilled almonds"
+    "key": "en:ground-almonds",
+    "name": "Ground almonds"
+  },
+  {
+    "key": "en:marcona-almonds",
+    "name": "Marcona almonds"
+  },
+  {
+    "key": "en:non-blanched-almonds",
+    "name": "Non-blanched almonds"
+  },
+  {
+    "key": "en:nonpareil-almonds",
+    "name": "Nonpareil almonds"
   },
   {
     "key": "en:pear-tart-with-almonds",
@@ -108,48 +132,84 @@
     "name": "Powdered almond milks"
   },
   {
-    "key": "en:roasted-salted-almonds",
-    "name": "Roasted salted almonds"
+    "key": "en:raw-almonds",
+    "name": "Raw almonds"
+  },
+  {
+    "key": "en:roasted-almonds",
+    "name": "Roasted almonds"
+  },
+  {
+    "key": "en:roasted-and-salted-almonds",
+    "name": "Roasted and salted almonds"
   },
   {
     "key": "en:salted-almonds",
     "name": "Salted almonds"
   },
   {
-    "key": "en:salted-and-grilled-almonds",
-    "name": "Salted and grilled almonds"
-  },
-  {
     "key": "en:shelled-almonds",
     "name": "Shelled almonds"
+  },
+  {
+    "key": "en:slivered-almonds",
+    "name": "Slivered almonds"
+  },
+  {
+    "key": "en:smoked-almonds",
+    "name": "Smoked almonds"
   },
   {
     "key": "en:sugar-coated-almonds",
     "name": "Sugar coated almonds"
   },
   {
-    "key": "en:sweetened-natural-almond-milks",
-    "name": "Sweetened natural almond milks"
+    "key": "en:sweetened-plain-almond-based-drinks",
+    "name": "Sweetened plain almond-based drinks"
   },
   {
     "key": "en:twelfth-night-cake-with-almond-paste",
     "name": "Twelfth Night cake with almond paste"
   },
   {
-    "key": "en:unsweetened-natural-almond-milks",
-    "name": "Unsweetened natural almond milks"
+    "key": "en:uht-almond-milks",
+    "name": "UHT almond milks"
   },
   {
-    "key": "en:vanilla-almond-milks",
-    "name": "Vanilla almond milks"
+    "key": "en:unroasted-almonds",
+    "name": "Unroasted almonds"
+  },
+  {
+    "key": "en:unsalted-almonds",
+    "name": "Unsalted almonds"
+  },
+  {
+    "key": "en:unshelled-almonds",
+    "name": "Unshelled almonds"
+  },
+  {
+    "key": "en:unsweetened-plain-almond-based-drinks",
+    "name": "Unsweetened plain almond-based drinks"
+  },
+  {
+    "key": "en:vanilla-almond-based-drinks",
+    "name": "Vanilla almond-based drinks"
+  },
+  {
+    "key": "en:vanilla-ice-cream-bars-coated-with-milk-chocolate-and-almonds",
+    "name": "Vanilla ice cream bars coated with milk chocolate and almonds"
+  },
+  {
+    "key": "en:vanilla-ice-cream-bars-coated-with-white-chocolate-and-almonds",
+    "name": "Vanilla ice cream bars coated with white chocolate and almonds"
   },
   {
     "key": "en:walnut-and-almond-cake",
     "name": "Walnut and almond cake"
   },
   {
-    "key": "en:white-almond-purees",
-    "name": "White almond purees"
+    "key": "en:white-almond-butters",
+    "name": "White almond butters"
   },
   {
     "key": "fr:chocolat-blanc-en-tablette-aux-amandes",

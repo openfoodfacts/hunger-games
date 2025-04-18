@@ -1,5 +1,9 @@
 [
   {
+    "key": "en:catharina-sour-beers",
+    "name": "Catharina Sour beers"
+  },
+  {
     "key": "en:cheese-souffle",
     "name": "Cheese soufflé"
   },
@@ -8,24 +12,12 @@
     "name": "Chorba frik soup with meat and frik"
   },
   {
-    "key": "en:cream-of-asparagus-soups",
-    "name": "Cream of asparagus soups"
-  },
-  {
     "key": "en:dehydrated-and-reconstituted-watercress-soup",
     "name": "Dehydrated and reconstituted watercress soup"
   },
   {
     "key": "en:dehydrated-asian-style-soup-with-noodles",
     "name": "Dehydrated Asian-style soup with noodles"
-  },
-  {
-    "key": "en:dehydrated-asparagus-soup",
-    "name": "Dehydrated asparagus soup"
-  },
-  {
-    "key": "en:dehydrated-carrot-soups",
-    "name": "Dehydrated carrot soups"
   },
   {
     "key": "en:dehydrated-cereals-and-vegetables-soup",
@@ -96,6 +88,10 @@
     "name": "Frozen mixed vegetables for soups"
   },
   {
+    "key": "en:frozen-offals-soup",
+    "name": "Frozen offals Soup"
+  },
+  {
     "key": "en:heatable-onion-soup",
     "name": "Heatable onion soup"
   },
@@ -104,16 +100,20 @@
     "name": "Leek and potato soup"
   },
   {
-    "key": "en:lentils-soup",
-    "name": "Lentils soup"
-  },
-  {
     "key": "en:minestrone-soups",
     "name": "Minestrone soups"
   },
   {
+    "key": "en:offals-soup",
+    "name": "Offals Soup"
+  },
+  {
     "key": "en:pistou-soup",
     "name": "Pistou soup"
+  },
+  {
+    "key": "en:ramen-soup",
+    "name": "Ramen Soup"
   },
   {
     "key": "en:reconstituted-crustacean-soup",
@@ -168,16 +168,32 @@
     "name": "Reheatable watercress soup"
   },
   {
+    "key": "en:shelf-stable-soup-additions",
+    "name": "Shelf-stable soup additions"
+  },
+  {
     "key": "en:soumaintrain",
     "name": "Soumaintrain"
   },
   {
-    "key": "en:soup-for-baby-with-vegetables-and-cereals-and-milk",
-    "name": "Soup for baby with vegetables and cereals and milk"
+    "key": "en:soups-prepared-shelf-stable",
+    "name": "Soups (prepared) (Shelf Stable)"
+  },
+  {
+    "key": "en:sour-beers",
+    "name": "Sour beers"
   },
   {
     "key": "en:sour-cream-butters",
     "name": "Sour cream butters"
+  },
+  {
+    "key": "en:sour-cream-substitutes",
+    "name": "Sour cream substitutes"
+  },
+  {
+    "key": "en:sour-ipa",
+    "name": "Sour IPA"
   },
   {
     "key": "en:soured-milk-quark",
@@ -198,5 +214,9 @@
   {
     "key": "en:tomato-and-vermicelli-soups",
     "name": "Tomato and vermicelli soups"
+  },
+  {
+    "key": "en:watercress-soups",
+    "name": "Watercress soups"
   }
 ]

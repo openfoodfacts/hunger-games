@@ -82,20 +82,32 @@ const UserData = ({ userName }) => {
   }, [userName]);
 
   return (
-    <Box sx={{ p: 2, mb: 10 }}>
+    <Box sx={{ p: 2, mb: 10, textAlign: "center" }}>
       <Typography component="h3" variant="h5" sx={{ pb: 3 }}>
         {t("home.statistics.title", { userName })}
       </Typography>
-      <Stack direction={{ xs: "column", sm: "row" }} spacing={2}>
+      <Stack
+        direction={{ xs: "column", sm: "column", md: "row" }}
+        spacing={2}
+        justifyContent="center"
+        alignItems={{ xs: "center"}}
+      >
         {Object.keys(counts).map((countType) => (
           <CountCard
             key={countType}
             translationKey={countType}
             value={counts[countType]}
+            sx = {{
+              display: "flex",
+              flexDirection: "column",
+              minHeight: "100px",
+              textAlign: "center",
+            }}
           />
         ))}
       </Stack>
     </Box>
   );
+  
 };
 export default UserData;

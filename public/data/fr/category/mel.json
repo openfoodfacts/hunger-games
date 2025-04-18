@@ -1,5 +1,9 @@
 [
   {
+    "key": "en:premixed-alcoholic-beverages",
+    "name": "Boissons alcoolisées pré-mélangées"
+  },
+  {
     "key": "en:brie-de-melun",
     "name": "Brie de Melun"
   },
@@ -20,8 +24,8 @@
     "name": "Coupe glacée parfum pêche Melba"
   },
   {
-    "key": "en:combined-oil-blended-vegetable-oils",
-    "name": "Huile combinée (mélange d'huiles)"
+    "key": "en:melon-seeds",
+    "name": "Graines de melon"
   },
   {
     "key": "en:watermelon-seed-oils",
@@ -60,8 +64,16 @@
     "name": "Mélange d'épices pour guacamole"
   },
   {
+    "key": "en:mix-of-olive-oil-and-seeds-oil",
+    "name": "Mélange d'huile d'olive et de graines"
+  },
+  {
     "key": "en:mix-of-cereals-and-legumes",
     "name": "Mélange de céréales et légumineuses"
+  },
+  {
+    "key": "en:dried-fruit-and-seed-mixes",
+    "name": "Mélange de graines et fruits secs"
   },
   {
     "key": "fr:melange-sticks-et-bretzels",
@@ -116,12 +128,20 @@
     "name": "Mélanges de flocons de céréales"
   },
   {
+    "key": "en:mixed-nuts",
+    "name": "Mélanges de fruits à coque"
+  },
+  {
     "key": "en:frozen-mixed-berries",
     "name": "Mélanges de fruits rouges surgelés"
   },
   {
-    "key": "en:dried-mixed-fruits",
+    "key": "en:mixed-dried-fruits",
     "name": "Mélanges de fruits secs"
+  },
+  {
+    "key": "en:mixed-nuts-and-dried-fruits",
+    "name": "Mélanges de fruits secs et de fruits à coque"
   },
   {
     "key": "en:frozen-mixed-fruits",
@@ -130,6 +150,14 @@
   {
     "key": "en:frozen-mixed-tropical-fruits",
     "name": "Mélanges de fruits tropicaux surgelés"
+  },
+  {
+    "key": "en:mixed-seeds",
+    "name": "Mélanges de graines"
+  },
+  {
+    "key": "en:olive-oil-mixes",
+    "name": "Mélanges de huiles d'olives"
   },
   {
     "key": "en:mixed-vegetables",
@@ -152,7 +180,7 @@
     "name": "Mélanges de légumes surgelés"
   },
   {
-    "key": "en:mixtures-of-aromatic-plants",
+    "key": "en:mixed-herbs",
     "name": "Mélanges de plantes aromatiques"
   },
   {
@@ -190,6 +218,10 @@
   {
     "key": "en:muskmelons",
     "name": "Melons"
+  },
+  {
+    "key": "en:muskmelons-in-syrup",
+    "name": "Melons au sirop"
   },
   {
     "key": "en:branco-melons",
@@ -286,6 +318,10 @@
   {
     "key": "en:mashed-vegetables-mix",
     "name": "Purée de légumes mélangés"
+  },
+  {
+    "key": "en:mixed-nut-butters",
+    "name": "Purées de noix mélangées"
   },
   {
     "key": "en:molokhia-sauce",

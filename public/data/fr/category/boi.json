@@ -16,6 +16,22 @@
     "name": "Aliments et boissons de Noël"
   },
   {
+    "key": "en:beverage-variety-packs",
+    "name": "Assortiments de boissons"
+  },
+  {
+    "key": "en:alcoholic-beverages-variety-packs",
+    "name": "Assortiments de boissons alcoolisées"
+  },
+  {
+    "key": "en:non-alcoholic-beverages-variety-packs",
+    "name": "Assortiments de boissons non alcoolisées"
+  },
+  {
+    "key": "en:non-alcoholic-instant-beverages-variety-packs",
+    "name": "Assortiments de Boissons non alcoolisées instantanés"
+  },
+  {
     "key": "fr:blagny-la-piece-sous-le-bois",
     "name": "Blagny La Pièce sous le Bois"
   },
@@ -34,10 +50,6 @@
   {
     "key": "en:bottled-water-flavoured-without-sugar-and-with-artificial-sweeteners",
     "name": "Boisson à l'eau minérale ou de source aromatisée non sucrée avec édulcorants"
-  },
-  {
-    "key": "en:coconut-based-drink-plain-prepacked",
-    "name": "Boisson à la noix de coco nature préemballée"
   },
   {
     "key": "en:plain-soy-drink-fortified-with-calcium",
@@ -160,6 +172,10 @@
     "name": "Boissons"
   },
   {
+    "key": "en:beverages-from-desugared-fruit-juices",
+    "name": "Boissons à base de jus de fruits désucrés"
+  },
+  {
     "key": "en:plant-based-beverages",
     "name": "Boissons à base de végétaux"
   },
@@ -172,11 +188,11 @@
     "name": "Boissons à l'aloe-vera"
   },
   {
-    "key": "en:amaranth-milks",
+    "key": "en:amaranth-based-drinks",
     "name": "Boissons à l'amarante"
   },
   {
-    "key": "en:oat-milks",
+    "key": "en:oat-based-drinks",
     "name": "Boissons à l'avoine"
   },
   {
@@ -208,6 +224,14 @@
     "name": "Boissons alcoolisées à base de vodka"
   },
   {
+    "key": "en:premixed-alcoholic-beverages",
+    "name": "Boissons alcoolisées pré-mélangées"
+  },
+  {
+    "key": "en:flavoured-drinks",
+    "name": "Boissons aromatisées"
+  },
+  {
     "key": "en:coffee-drinks",
     "name": "Boissons au café"
   },
@@ -220,23 +244,23 @@
     "name": "Boissons au lait végétal fermentées"
   },
   {
-    "key": "en:maize-milks",
+    "key": "en:maize-based-drinks",
     "name": "Boissons au maïs"
   },
   {
-    "key": "en:millet-milks",
+    "key": "en:millet-based-drinks",
     "name": "Boissons au millet"
   },
   {
-    "key": "en:quinoa-milks",
+    "key": "en:quinoa-based-drinks",
     "name": "Boissons au quinoa"
   },
   {
-    "key": "en:rice-milks",
+    "key": "en:rice-based-drinks",
     "name": "Boissons au riz"
   },
   {
-    "key": "en:buckwheat-milks",
+    "key": "en:buckwheat-based-drinks",
     "name": "Boissons au sarrasin"
   },
   {
@@ -272,6 +296,10 @@
     "name": "Boissons aux fruits pour bébé dès 4/6 mois"
   },
   {
+    "key": "en:basil-seeds-drinks",
+    "name": "Boissons aux graines de basilic"
+  },
+  {
     "key": "en:vegetable-based-beverages",
     "name": "Boissons aux légumes"
   },
@@ -284,11 +312,11 @@
     "name": "Boissons chaudes"
   },
   {
-    "key": "en:unsweetened-natural-soy-milks",
+    "key": "en:unsweetened-plain-soy-based-drinks",
     "name": "Boissons de soja nature non sucrées"
   },
   {
-    "key": "en:sweetened-natural-soy-milks",
+    "key": "en:sweetened-plain-soy-based-drinks",
     "name": "Boissons de soja nature sucrées"
   },
   {
@@ -304,12 +332,20 @@
     "name": "Boissons énergisantes"
   },
   {
+    "key": "en:beverages-and-beverages-preparations",
+    "name": "Boissons et préparations de boissons"
+  },
+  {
     "key": "en:fermented-drinks",
     "name": "Boissons fermentées"
   },
   {
     "key": "en:carbonated-drinks",
     "name": "Boissons gazeuses"
+  },
+  {
+    "key": "en:carbonated-soft-drinks-with-tea-extract",
+    "name": "Boissons gazeuses au thé aromatisées"
   },
   {
     "key": "en:carbonated-fruit-soft-drinks-with-sugar-with-10-50-of-fruit-juice",
@@ -344,11 +380,7 @@
     "name": "Boissons lactées"
   },
   {
-    "key": "en:flavoured-dairy-drinks-with-sugar",
-    "name": "Boissons lactées aromatisées sucrées au lait fermenté"
-  },
-  {
-    "key": "en:coffee-drinks-with-milk",
+    "key": "en:cappuccino",
     "name": "Boissons lactées au café"
   },
   {
@@ -420,23 +452,31 @@
     "name": "Boissons sans sucre ajouté"
   },
   {
-    "key": "en:spirit-drinks",
-    "name": "Boissons spiritueuses"
+    "key": "de:deutsche-spirituosen",
+    "name": "Boissons spiritueuses allemandes"
   },
   {
     "key": "en:austrian-spirit-drinks",
     "name": "Boissons spiritueuses autrichiennes"
   },
   {
+    "key": "en:croatian-spirit-drinks",
+    "name": "Boissons spiritueuses croates"
+  },
+  {
+    "key": "en:portuguese-spirit-drinks",
+    "name": "Boissons spiritueuses portugaises"
+  },
+  {
     "key": "en:slovenian-spirit-drinks",
     "name": "Boissons spiritueuses slovènes"
   },
   {
-    "key": "en:plant-milks",
+    "key": "en:plant-based-milk-alternatives",
     "name": "Boissons végétales"
   },
   {
-    "key": "en:canary-grass-milks",
+    "key": "en:canary-grass-based-drinks",
     "name": "Boissons végétales d'alpiste"
   },
   {
@@ -448,11 +488,11 @@
     "name": "Boissons végétales d'amarante en poudre"
   },
   {
-    "key": "en:vanilla-oat-milks",
+    "key": "en:vanilla-oat-based-drinks",
     "name": "Boissons végétales d'avoine à la vanille"
   },
   {
-    "key": "en:cocoa-oat-milks",
+    "key": "en:cocoa-oat-based-drinks",
     "name": "Boissons végétales d'avoine au cacao"
   },
   {
@@ -460,15 +500,15 @@
     "name": "Boissons végétales d'avoine en poudre"
   },
   {
-    "key": "en:unsweetened-natural-oat-milks",
+    "key": "en:unsweetened-plain-oat-based-drinks",
     "name": "Boissons végétales d'avoine nature non sucrées"
   },
   {
-    "key": "en:sweetened-natural-oat-milks",
+    "key": "en:sweetened-plain-oat-based-drinks",
     "name": "Boissons végétales d'avoine nature sucrées"
   },
   {
-    "key": "en:spelt-milks",
+    "key": "en:spelt-based-drinks",
     "name": "Boissons végétales d'épeautre"
   },
   {
@@ -476,11 +516,11 @@
     "name": "Boissons végétales d'épeautre en poudre"
   },
   {
-    "key": "en:barley-milks",
+    "key": "en:barley-based-drinks",
     "name": "Boissons végétales d'orge"
   },
   {
-    "key": "en:wheat-milks",
+    "key": "en:wheat-based-drinks",
     "name": "Boissons végétales de blé"
   },
   {
@@ -488,11 +528,11 @@
     "name": "Boissons végétales de blé en poudre"
   },
   {
-    "key": "en:khorasan-wheat-milks",
+    "key": "en:khorasan-wheat-based-drinks",
     "name": "Boissons végétales de blé khorasan"
   },
   {
-    "key": "en:cereal-milks",
+    "key": "en:cereal-based-drinks",
     "name": "Boissons végétales de céréales"
   },
   {
@@ -500,11 +540,11 @@
     "name": "Boissons végétales de céréales en poudre"
   },
   {
-    "key": "en:hemp-milks",
+    "key": "en:hemp-based-drinks",
     "name": "Boissons végétales de chanvre"
   },
   {
-    "key": "en:chestnut-milks",
+    "key": "en:chestnut-based-drinks",
     "name": "Boissons végétales de châtaigne"
   },
   {
@@ -512,7 +552,11 @@
     "name": "Boissons végétales de châtaigne en poudre"
   },
   {
-    "key": "en:nut-milks",
+    "key": "en:coconut-based-drinks",
+    "name": "Boissons végétales de coco"
+  },
+  {
+    "key": "en:nut-based-drinks",
     "name": "Boissons végétales de fruits à coque"
   },
   {
@@ -520,7 +564,7 @@
     "name": "Boissons végétales de fruits à coque en poudre"
   },
   {
-    "key": "en:legume-milks",
+    "key": "en:legume-based-drinks",
     "name": "Boissons végétales de légumineuses"
   },
   {
@@ -532,7 +576,7 @@
     "name": "Boissons végétales de millet en poudre"
   },
   {
-    "key": "en:hazelnut-milks",
+    "key": "en:hazelnut-based-drinks",
     "name": "Boissons végétales de noisette"
   },
   {
@@ -540,11 +584,11 @@
     "name": "Boissons végétales de noisettes en poudre"
   },
   {
-    "key": "en:walnut-milks",
+    "key": "en:walnut-based-drinks",
     "name": "Boissons végétales de noix"
   },
   {
-    "key": "en:macadamia-nut-milks",
+    "key": "en:macadamia-nut-based-drinks",
     "name": "Boissons végétales de noix de macadamia"
   },
   {
@@ -560,11 +604,11 @@
     "name": "Boissons végétales de quinoa en poudre"
   },
   {
-    "key": "en:vanilla-rice-milks",
+    "key": "en:vanilla-rice-based-drinks",
     "name": "Boissons végétales de riz à la vanille"
   },
   {
-    "key": "en:cocoa-rice-milks",
+    "key": "en:cocoa-rice-based-drinks",
     "name": "Boissons végétales de riz au cacao"
   },
   {
@@ -572,11 +616,11 @@
     "name": "Boissons végétales de riz en poudre"
   },
   {
-    "key": "en:natural-rice-milks",
+    "key": "en:plain-rice-based-drinks",
     "name": "Boissons végétales de riz nature"
   },
   {
-    "key": "en:sesame-milks",
+    "key": "en:sesame-based-drinks",
     "name": "Boissons végétales de sésame"
   },
   {
@@ -584,19 +628,19 @@
     "name": "Boissons végétales de sésame en poudre"
   },
   {
-    "key": "en:soy-milks",
+    "key": "en:soy-based-drinks",
     "name": "Boissons végétales de soja"
   },
   {
-    "key": "en:vanilla-soy-milks",
+    "key": "en:vanilla-soy-based-drinks",
     "name": "Boissons végétales de soja à la vanille"
   },
   {
-    "key": "en:chocolate-soy-milks",
+    "key": "en:chocolate-soy-based-drinks",
     "name": "Boissons végétales de soja au chocolat"
   },
   {
-    "key": "en:coffee-soy-milks",
+    "key": "en:coffee-soy-based-drinks",
     "name": "Boissons végétales de soja avec du café"
   },
   {
@@ -604,11 +648,11 @@
     "name": "Boissons végétales de soja en poudre"
   },
   {
-    "key": "en:tigernut-milks",
+    "key": "en:tigernut-based-drinks",
     "name": "Boissons végétales de souchet"
   },
   {
-    "key": "en:teff-milks",
+    "key": "en:teff-based-drinks",
     "name": "Boissons végétales de teff"
   },
   {
@@ -622,6 +666,14 @@
   {
     "key": "fr:chassagne-montrachet-premier-cru-bois-de-chassagne",
     "name": "Chassagne-Montrachet premier cru Bois de Chassagne"
+  },
+  {
+    "key": "fr:chassagne-montrachet-premier-cru-bois-de-chassagne-blanc",
+    "name": "Chassagne-Montrachet premier cru Bois de Chassagne blanc"
+  },
+  {
+    "key": "fr:chassagne-montrachet-premier-cru-bois-de-chassagne-rouge",
+    "name": "Chassagne-Montrachet premier cru Bois de Chassagne rouge"
   },
   {
     "key": "fr:chassagne-montrachet-premier-cru-les-boirettes",
@@ -704,23 +756,59 @@
     "name": "Poudre cacaotée sucrée pour boisson enrichie en vitamines et minéraux"
   },
   {
+    "key": "en:beverage-preparations",
+    "name": "Préparations pour boissons"
+  },
+  {
     "key": "en:low-calorie-ready-to-drink-meal-replacement",
     "name": "Substitut de repas hypocalorique prêt à boire"
   },
   {
-    "key": "en:drinkable-yogurts",
+    "key": "en:yogurt-drinks",
     "name": "Yaourts à boire"
+  },
+  {
+    "key": "fr:yaourts-a-boire-alleges-en-matieres-grasses",
+    "name": "Yaourts à boire allégés en matières grasses"
+  },
+  {
+    "key": "en:flavoured-drinkable-yogurts-with-sugar",
+    "name": "Yaourts à boire aromatisés sucrés"
+  },
+  {
+    "key": "en:yogurt-drinks-with-sugar",
+    "name": "Yaourts à boire avec sucre"
+  },
+  {
+    "key": "en:chocolate-yoghurt-drinks",
+    "name": "Yaourts à boire goût chocolat"
   },
   {
     "key": "en:strawberry-yogurt-drinks",
     "name": "Yaourts à boire goût fraise"
   },
   {
+    "key": "en:raspberry-drinkable-yogurts",
+    "name": "Yaourts à boire goût framboise"
+  },
+  {
     "key": "en:vanilla-yogurt-drinks",
     "name": "Yaourts à boire goût vanille"
   },
   {
-    "key": "fr:yaourts-a-boire-sans-sucres",
+    "key": "fr:yaourts-a-boire-nature-bio",
+    "name": "Yaourts à boire nature bio"
+  },
+  {
+    "key": "en:yogurt-drinks-without-sugar",
     "name": "Yaourts à boire sans sucres"
+  },
+  {
+    "key": "en:stirred-yogurt-drinks",
+    "name": "Yaourts brassés à boire"
+  },
+  {
+    "key": "en:plain-drinkable-yogurts",
+    "name": "Yaourts brassés natures à boire"
   }
 ]

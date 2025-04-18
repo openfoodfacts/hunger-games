@@ -4,27 +4,351 @@
     "name": "Al d'jote Pies"
   },
   {
-    "key": "en:job-s-tears",
-    "name": "Job's Tears"
+    "key": "en:flavoured-bifidus-yogurts",
+    "name": "Aromatizirani bifidus jogurti"
+  },
+  {
+    "key": "en:flavoured-yogurts",
+    "name": "Aromatizirani jogurti"
+  },
+  {
+    "key": "en:bifidus-yogurts",
+    "name": "Bifidus jogurti"
+  },
+  {
+    "key": "en:berries-soy-yogurts",
+    "name": "Bobičasto voće soja jogurti"
+  },
+  {
+    "key": "en:fat-free-fermented-yogurt-with-cereals",
+    "name": "Fermentirani jogurt bez masti sa žitaricama"
+  },
+  {
+    "key": "en:strawberry-soy-yogurts",
+    "name": "Jagoda soja jogurti"
+  },
+  {
+    "key": "en:iodised-salts",
+    "name": "Jodirane soli"
+  },
+  {
+    "key": "en:vanilla-yogurt",
+    "name": "Jogurt od vanilije"
+  },
+  {
+    "key": "en:yogurt-with-fruits-and-sugar",
+    "name": "Jogurt s voćem i šećerom"
   },
   {
     "key": "en:yogurts",
-    "name": "Jogurt"
+    "name": "Jogurti"
+  },
+  {
+    "key": "en:lactose-free-yogurts",
+    "name": "Jogurti bez laktoze"
+  },
+  {
+    "key": "en:greek-style-yogurts",
+    "name": "Jogurti na grčki način"
+  },
+  {
+    "key": "en:pineapple-yogurts",
+    "name": "Jogurti od ananasa"
+  },
+  {
+    "key": "en:almond-milk-yogurts",
+    "name": "Jogurti od bademovog mlijeka"
+  },
+  {
+    "key": "en:banana-yogurts",
+    "name": "Jogurti od banane"
+  },
+  {
+    "key": "en:banana-soy-yogurts",
+    "name": "Jogurti od banane i soje"
+  },
+  {
+    "key": "en:blueberry-yogurts",
+    "name": "Jogurti od borovnice"
+  },
+  {
+    "key": "en:blueberry-soy-yogurts",
+    "name": "Jogurti od borovnice i soje"
+  },
+  {
+    "key": "en:peach-yogurts",
+    "name": "Jogurti od breskve"
+  },
+  {
+    "key": "en:peach-soy-yogurts",
+    "name": "Jogurti od breskve i soje"
+  },
+  {
+    "key": "en:grapefruit-yogurts",
+    "name": "Jogurti od grejpa"
+  },
+  {
+    "key": "en:apple-yogurts",
+    "name": "Jogurti od jabuka"
+  },
+  {
+    "key": "en:strawberry-yogurts",
+    "name": "Jogurti od jagoda"
+  },
+  {
+    "key": "en:chestnut-yogurts",
+    "name": "Jogurti od kestena"
+  },
+  {
+    "key": "en:kiwi-yogurts",
+    "name": "Jogurti od kivija"
+  },
+  {
+    "key": "en:coconutmilk-yogurts",
+    "name": "Jogurti od kokosovog mlijeka"
+  },
+  {
+    "key": "en:goat-milk-yogurts",
+    "name": "Jogurti od kozjeg mlijeka"
+  },
+  {
+    "key": "en:cow-milk-yogurts",
+    "name": "Jogurti od kravljeg mlijeka"
+  },
+  {
+    "key": "en:pear-yogurts",
+    "name": "Jogurti od kruške"
+  },
+  {
+    "key": "en:blackberry-yogurts",
+    "name": "Jogurti od kupina"
+  },
+  {
+    "key": "en:hazelnut-yogurts",
+    "name": "Jogurti od lješnjaka"
+  },
+  {
+    "key": "en:raspberry-yogurts",
+    "name": "Jogurti od malina"
+  },
+  {
+    "key": "en:raspberry-soy-yogurts",
+    "name": "Jogurti od maline i soje"
+  },
+  {
+    "key": "en:mango-yogurts",
+    "name": "Jogurti od manga"
+  },
+  {
+    "key": "en:apricot-yogurts",
+    "name": "Jogurti od marelice"
+  },
+  {
+    "key": "en:apricot-soy-yogurts",
+    "name": "Jogurti od marelice i soje"
+  },
+  {
+    "key": "en:honey-yogurts",
+    "name": "Jogurti od meda"
+  },
+  {
+    "key": "en:sheep-milk-yogurts",
+    "name": "Jogurti od ovčjeg mlijeka"
+  },
+  {
+    "key": "en:rhubarb-yogurts",
+    "name": "Jogurti od rabarbare"
+  },
+  {
+    "key": "en:plum-yogurts",
+    "name": "Jogurti od šljiva"
+  },
+  {
+    "key": "en:fig-yogurts",
+    "name": "Jogurti od smokava"
+  },
+  {
+    "key": "en:soy-milk-yogurts",
+    "name": "Jogurti od sojinog mlijeka"
+  },
+  {
+    "key": "en:prune-yogurts",
+    "name": "Jogurti od suhih šljiva"
+  },
+  {
+    "key": "en:cherry-soy-yogurts",
+    "name": "Jogurti od trešnje i soje"
+  },
+  {
+    "key": "en:cherry-yogurts",
+    "name": "Jogurti od višanja"
+  },
+  {
+    "key": "en:oat-milk-yogurts",
+    "name": "Jogurti od zobenog mlijeka"
+  },
+  {
+    "key": "en:lemon-yogurts",
+    "name": "Jogurti s limunom"
+  },
+  {
+    "key": "en:yogurts-high-in-protein-on-a-fruit-layer",
+    "name": "Jogurti s visokim udjelom proteina na voćnom sloju"
+  },
+  {
+    "key": "en:yogurts-with-fruits-and-sugar",
+    "name": "Jogurti s voćem i šećerom"
+  },
+  {
+    "key": "en:yogurts-with-cereals",
+    "name": "Jogurti sa žitaricama"
   },
   {
     "key": "en:john-dory",
     "name": "John Dory"
   },
   {
+    "key": "en:caramel-yogurts",
+    "name": "Karamel jogurti"
+  },
+  {
+    "key": "en:kefir-yogurts",
+    "name": "Kefir jogurti"
+  },
+  {
+    "key": "en:coconut-yogurts",
+    "name": "Kokosovi jogurti"
+  },
+  {
+    "key": "en:yogurt-cake",
+    "name": "Kolač od jogurta"
+  },
+  {
+    "key": "en:puffed-rice-cakes-with-yogurt",
+    "name": "Kolačići od lisnate riže s jogurtom"
+  },
+  {
+    "key": "en:chocolate-chunks-yogurts",
+    "name": "Komadići čokolade jogurti"
+  },
+  {
+    "key": "en:lemon-soy-yogurts",
+    "name": "Limun sojini jogurti"
+  },
+  {
+    "key": "en:mixed-yogurts",
+    "name": "Miješani jogurti"
+  },
+  {
+    "key": "en:mixed-fruit-soy-yogurts",
+    "name": "Miješani voćni sojini jogurti"
+  },
+  {
+    "key": "en:strawberry-yogurt-drinks",
+    "name": "Napitci od jogurta od jagode"
+  },
+  {
+    "key": "en:low-fat-yogurts",
+    "name": "Nemasni jogurti"
+  },
+  {
+    "key": "en:plain-bifidus-yogurts",
+    "name": "Obični bifidus jogurti"
+  },
+  {
+    "key": "en:plain-yogurt-with-sugar",
+    "name": "Obični jogurt sa šećerom"
+  },
+  {
+    "key": "en:plain-yogurts",
+    "name": "Obični jogurti"
+  },
+  {
+    "key": "en:plain-goat-yogurts",
+    "name": "Obični kozji jogurti"
+  },
+  {
+    "key": "en:plain-stirred-yogurts",
+    "name": "Obični razmućeni jogurti"
+  },
+  {
+    "key": "en:plain-soy-yogurts",
+    "name": "Obični sojini jogurti"
+  },
+  {
     "key": "en:perforate-st-john-s-wort",
-    "name": "Perforate St John's-wort"
+    "name": "Perforirati st john's-wort"
+  },
+  {
+    "key": "en:vanilla-yogurt-drinks",
+    "name": "Pića s jogurtom od vanilije"
+  },
+  {
+    "key": "en:yogurt-drinks",
+    "name": "Pitki jogurti"
+  },
+  {
+    "key": "en:raspberry-drinkable-yogurts",
+    "name": "Pitki jogurti od maline"
   },
   {
     "key": "en:pork-jowl",
     "name": "Pork jowl"
   },
   {
+    "key": "en:whole-milk-yogurts",
+    "name": "Punomasni jogurti"
+  },
+  {
+    "key": "en:stirred-yogurts",
+    "name": "Razmućeni jogurti"
+  },
+  {
     "key": "en:rindless-pork-jowl",
     "name": "Rindless pork jowl"
+  },
+  {
+    "key": "en:frozen-yogurts",
+    "name": "Smrznuti jogurti"
+  },
+  {
+    "key": "en:tropical-fruits-soy-yogurts",
+    "name": "Tropsko voće sojini jogurti"
+  },
+  {
+    "key": "en:yogurt-sauces",
+    "name": "Umaci od jogurta"
+  },
+  {
+    "key": "en:non-dairy-yogurts",
+    "name": "Veganski jogurti"
+  },
+  {
+    "key": "en:fruit-bifidus-yogurts",
+    "name": "Voćni bifidus jogurti"
+  },
+  {
+    "key": "en:fruit-yogurts",
+    "name": "Voćni jogurti"
+  },
+  {
+    "key": "en:fruit-yogurts-with-fruit-chunks",
+    "name": "Voćni jogurti s komadićima voća"
+  },
+  {
+    "key": "en:fruit-kefir-yogurts",
+    "name": "Voćni kefir jogurti"
+  },
+  {
+    "key": "en:fruit-stirred-yogurts",
+    "name": "Voćni miješani jogurti"
+  },
+  {
+    "key": "en:fruit-soy-yogurts",
+    "name": "Voćni sojini jogurti"
+  },
+  {
+    "key": "en:sweetened-yogurts",
+    "name": "Zaslađeni jogurti"
   }
 ]

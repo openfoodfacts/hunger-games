@@ -12,23 +12,23 @@
     "name": "Bette cuite"
   },
   {
-    "key": "en:uncooked-beetroots",
-    "name": "Betterave rouge crue"
-  },
-  {
-    "key": "en:beet",
+    "key": "en:beetroot",
     "name": "Betteraves"
   },
   {
-    "key": "en:canned-beet",
+    "key": "en:raw-beetroot",
+    "name": "Betteraves crues"
+  },
+  {
+    "key": "en:canned-beetroot",
     "name": "Betteraves en conserve"
   },
   {
-    "key": "en:fresh-beet",
+    "key": "en:fresh-beetroot",
     "name": "Betteraves fraîches"
   },
   {
-    "key": "en:pickled-beets",
+    "key": "en:beetroot-pickled",
     "name": "Betteraves marinées"
   },
   {
@@ -36,7 +36,7 @@
     "name": "Betteraves rouges cuites"
   },
   {
-    "key": "fr:betteraves-sous-vide",
+    "key": "en:vacuum-packed-beetroot",
     "name": "Betteraves sous vide"
   },
   {
@@ -50,5 +50,9 @@
   {
     "key": "en:beets-salads",
     "name": "Salades de betteraves"
+  },
+  {
+    "key": "en:beet-sugars",
+    "name": "Sucres de betterave"
   }
 ]

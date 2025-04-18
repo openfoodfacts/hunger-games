@@ -8,16 +8,44 @@
     "name": "Association Rituelle de la Grande Mosquée de Lyon"
   },
   {
+    "key": "en:australian-grown",
+    "name": "Australian grown"
+  },
+  {
     "key": "fr:concours-des-vins-du-grand-delta-a-avignon",
     "name": "Concours des vins du Grand Delta à Avignon"
   },
   {
-    "key": "en:crossed-grain-symbol",
-    "name": "Crossed Grain Symbol"
+    "key": "en:high-in-sat-fat-health-canada",
+    "name": "Élevé en Gras sat. (Santé Canada)"
+  },
+  {
+    "key": "en:high-in-sat-fat-and-sodium-health-canada",
+    "name": "Élevé en Gras sat. et Sodium (Santé Canada)"
+  },
+  {
+    "key": "en:high-in-sat-fat-and-sugars-health-canada",
+    "name": "Élevé en Gras sat. et Sucres (Santé Canada)"
+  },
+  {
+    "key": "en:high-in-sat-fat-sugars-and-sodium-health-canada",
+    "name": "Élevé en Gras sat. Sucres et Sodium (Santé Canada)"
+  },
+  {
+    "key": "en:made-in-greece",
+    "name": "Fabriqué en Grèce"
+  },
+  {
+    "key": "en:low-saturated-fat",
+    "name": "Faible teneur en graisses saturées"
   },
   {
     "key": "en:first-grade-tis-3-1983",
     "name": "First grade TIS 3-1983"
+  },
+  {
+    "key": "fr:foie-gras-de-france",
+    "name": "Foie gras de France"
   },
   {
     "key": "en:gr-bio-01",
@@ -100,7 +128,7 @@
     "name": "Green Label - Israel"
   },
   {
-    "key": "fr:matieres-grasses",
+    "key": "en:fats",
     "name": "Matières grasses"
   },
   {
@@ -156,6 +184,26 @@
     "name": "Muslim Consumer Group"
   },
   {
+    "key": "en:nutriscore-grade-a",
+    "name": "Nutriscore Grade A"
+  },
+  {
+    "key": "en:nutriscore-grade-b",
+    "name": "Nutriscore Grade B"
+  },
+  {
+    "key": "en:nutriscore-grade-c",
+    "name": "Nutriscore Grade C"
+  },
+  {
+    "key": "en:nutriscore-grade-d",
+    "name": "Nutriscore Grade D"
+  },
+  {
+    "key": "en:nutriscore-grade-e",
+    "name": "Nutriscore Grade E"
+  },
+  {
     "key": "en:pdo-montes-de-granada",
     "name": "PDO Montes de Granada"
   },
@@ -168,12 +216,20 @@
     "name": "Peu ou pas de matière grasse"
   },
   {
+    "key": "en:rich-in-unsaturated-fatty-acids",
+    "name": "Riche en acides gras insaturés"
+  },
+  {
     "key": "en:rich-in-polyunsaturated-fatty-acids",
     "name": "Riche en acides gras polyinsaturés"
   },
   {
     "key": "en:no-trans-fat",
     "name": "Sans acides gras trans"
+  },
+  {
+    "key": "en:no-trans-fat-and-preservatives",
+    "name": "Sans gras trans et conservateurs"
   },
   {
     "key": "en:no-fat",
@@ -186,5 +242,9 @@
   {
     "key": "en:no-hydrogenated-fats",
     "name": "Sans matière grasse hydrogénée"
+  },
+  {
+    "key": "en:saturated-fat-free",
+    "name": "Sans matières grasses saturées"
   }
 ]

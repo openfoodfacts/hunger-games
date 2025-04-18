@@ -12,12 +12,24 @@
     "name": "Authentic Trappist Product"
   },
   {
+    "key": "en:without-addition-of-dairy-products",
+    "name": "Bez dodataka mliječnih proizvoda"
+  },
+  {
     "key": "en:carbon-compensated-product",
     "name": "Carbon compensated product"
   },
   {
+    "key": "en:catalan-council-of-organic-production",
+    "name": "Catalan Council of Organic Production"
+  },
+  {
     "key": "fr:produit-certifie",
     "name": "Certified product"
+  },
+  {
+    "key": "en:climate-neutral-product",
+    "name": "Climate Neutral product"
   },
   {
     "key": "en:cold-pressed",
@@ -34,10 +46,6 @@
   {
     "key": "en:farm-production",
     "name": "Farm production"
-  },
-  {
-    "key": "en:high-proteins",
-    "name": "High proteins"
   },
   {
     "key": "hr:hrvatski-otočni-proizvod",
@@ -64,20 +72,24 @@
     "name": "Integrated production"
   },
   {
-    "key": "en:luomu-controlled-organic-production",
-    "name": "Luomu - controlled organic production"
+    "key": "en:source-of-proteins",
+    "name": "Izvor proteina"
   },
   {
-    "key": "en:natural-product",
-    "name": "Natural product"
+    "key": "en:luomu-controlled-organic-production",
+    "name": "Luomu - controlled organic production"
   },
   {
     "key": "en:natural-product-without-vegetable-oils",
     "name": "Natural product without vegetable oils"
   },
   {
-    "key": "en:no-artificial-colours-and-preservatives",
-    "name": "No artificial colours and preservatives"
+    "key": "en:not-advised-for-specific-people",
+    "name": "Nije preporučljivo za određene osobe"
+  },
+  {
+    "key": "en:not-advised-for-pregnant-women",
+    "name": "Nije preporučljivo za trudnice"
   },
   {
     "key": "en:no-artificial-preservatives",
@@ -96,16 +108,16 @@
     "name": "Not advised for children and pregnant women"
   },
   {
-    "key": "en:not-advised-for-pregnant-women",
-    "name": "Not advised for pregnant women"
-  },
-  {
     "key": "en:producer-labels",
     "name": "Oznaka proizvođača"
   },
   {
     "key": "en:planet-proof",
     "name": "Planet Proof"
+  },
+  {
+    "key": "en:portuguese-protected-product",
+    "name": "Portuguese protected product"
   },
   {
     "key": "en:excessive-consumption-can-have-laxative-effects",
@@ -116,6 +128,26 @@
     "name": "Preservatives"
   },
   {
+    "key": "en:natural-product",
+    "name": "Prirodan proizvod"
+  },
+  {
+    "key": "en:natural-flavors",
+    "name": "Prirodne arome"
+  },
+  {
+    "key": "en:natural-co2",
+    "name": "Prirodni co2"
+  },
+  {
+    "key": "en:natural-source-of-calcium",
+    "name": "Prirodni izvor kalcija"
+  },
+  {
+    "key": "en:naturally-rich-in-vitamin-e",
+    "name": "Prirodno bogato vitaminom E"
+  },
+  {
     "key": "en:pro-montagna",
     "name": "Pro Montagna"
   },
@@ -124,12 +156,44 @@
     "name": "Produced in Brittany"
   },
   {
+    "key": "en:product-of-canada",
+    "name": "Product of Canada"
+  },
+  {
     "key": "en:products-for-professional-use",
     "name": "Products for professional use"
   },
   {
+    "key": "en:made-in-belgium",
+    "name": "Proizvedeno u Belgiji"
+  },
+  {
+    "key": "en:made-in-the-eu",
+    "name": "Proizvedeno u EU"
+  },
+  {
+    "key": "en:made-in-france",
+    "name": "Proizvedeno u Francuskoj"
+  },
+  {
     "key": "en:produced-in-croatia",
     "name": "Proizvedeno u hrvatskoj"
+  },
+  {
+    "key": "en:made-in-italy",
+    "name": "Proizvedeno u Italiji"
+  },
+  {
+    "key": "en:made-in-germany",
+    "name": "Proizvedeno u Njemačkoj"
+  },
+  {
+    "key": "en:made-in-swiss",
+    "name": "Proizvedeno u Švicarskoj"
+  },
+  {
+    "key": "hr:proizvod-zagrebačke-županije",
+    "name": "Proizvod zagrebačke županije"
   },
   {
     "key": "en:rich-in-vegetable-protein",
@@ -160,7 +224,7 @@
     "name": "Vege Project Vegetarian"
   },
   {
-    "key": "en:without-addition-of-dairy-products",
-    "name": "Without addition of dairy products"
+    "key": "en:crossed-grain-trademark",
+    "name": "Znak precrtane pšenice"
   }
 ]

@@ -4,11 +4,11 @@
     "name": "Alcool pur"
   },
   {
-    "key": "fr:bieres-blondes-pur-malt",
+    "key": "en:pure-malt-blond-beers",
     "name": "Bières blondes pur malt"
   },
   {
-    "key": "fr:bieres-pur-malt",
+    "key": "en:pure-malt-beers",
     "name": "Bières pur malt"
   },
   {
@@ -56,7 +56,7 @@
     "name": "Jus de clémentine pur jus"
   },
   {
-    "key": "en:squeezed-juices",
+    "key": "en:squeezed-fruit-juices",
     "name": "Jus de fruits pur jus"
   },
   {
@@ -232,7 +232,7 @@
     "name": "Purées d'amande"
   },
   {
-    "key": "en:white-almond-purees",
+    "key": "en:white-almond-butters",
     "name": "Purées d'amande blanche"
   },
   {
@@ -268,6 +268,10 @@
     "name": "Purées de choux-fleurs"
   },
   {
+    "key": "en:frozen-mashed-cauliflower",
+    "name": "Purées de choux-fleurs surgelées"
+  },
+  {
     "key": "en:mashed-zucchini",
     "name": "Purées de courgettes"
   },
@@ -288,6 +292,10 @@
     "name": "Purées de légumes"
   },
   {
+    "key": "en:frozen-mashed-vegetables",
+    "name": "Purées de légumes surgelées"
+  },
+  {
     "key": "en:hazelnut-butters",
     "name": "Purées de noisette"
   },
@@ -298,6 +306,10 @@
   {
     "key": "en:coconut-butters",
     "name": "Purées de noix de coco"
+  },
+  {
+    "key": "en:mixed-nut-butters",
+    "name": "Purées de noix mélangées"
   },
   {
     "key": "en:mashed-split-peas",
@@ -316,8 +328,16 @@
     "name": "Purées de pommes de terre surgelée"
   },
   {
+    "key": "en:pure-mashed-potatoes",
+    "name": "Purées de pommes de terres pures"
+  },
+  {
     "key": "en:mashed-pumpkins",
     "name": "Purées de potirons"
+  },
+  {
+    "key": "en:prune-purees",
+    "name": "Purées de pruneaux"
   },
   {
     "key": "en:tahini",
@@ -334,6 +354,10 @@
   {
     "key": "en:tomato-purees",
     "name": "Purées de tomates"
+  },
+  {
+    "key": "en:purple-garlic",
+    "name": "Purple garlic"
   },
   {
     "key": "en:pure-goose-rillettes",
@@ -356,7 +380,7 @@
     "name": "Saucissons cuits pur porc"
   },
   {
-    "key": "fr:saucissons-secs-pur-porc",
+    "key": "en:dry-sausage-pure-pork",
     "name": "Saucissons secs pur porc"
   },
   {
@@ -370,5 +394,9 @@
   {
     "key": "en:refrigerated-ground-beef-meats",
     "name": "Viandes hachées pur bœuf refrigérées"
+  },
+  {
+    "key": "en:frozen-ground-beef-meats",
+    "name": "Viandes hachées pur bœuf surgelées"
   }
 ]

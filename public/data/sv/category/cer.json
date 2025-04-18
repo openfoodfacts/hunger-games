@@ -104,14 +104,6 @@
     "name": "Canned cereals"
   },
   {
-    "key": "en:cereal-bar-with-almonds",
-    "name": "Cereal bar with almonds"
-  },
-  {
-    "key": "en:cereal-bar-with-almonds-or-hazelnuts",
-    "name": "Cereal bar with almonds or hazelnuts"
-  },
-  {
     "key": "en:cereal-bar-with-chocolate-fortified-with-vitamins-and-minerals",
     "name": "Cereal bar with chocolate fortified with vitamins and minerals"
   },
@@ -120,12 +112,20 @@
     "name": "Cereal bar with fruits fortified with vitamins and minerals"
   },
   {
-    "key": "en:cereal-bar-with-hazelnuts",
-    "name": "Cereal bar with hazelnuts"
-  },
-  {
     "key": "en:cereal-bars",
     "name": "Cereal bars"
+  },
+  {
+    "key": "en:cereal-bars-with-almonds",
+    "name": "Cereal bars with almonds"
+  },
+  {
+    "key": "en:cereal-bars-with-hazelnuts",
+    "name": "Cereal bars with hazelnuts"
+  },
+  {
+    "key": "en:cereal-bars-with-nuts",
+    "name": "Cereal bars with nuts"
   },
   {
     "key": "en:cereal-brans",
@@ -134,10 +134,6 @@
   {
     "key": "en:cereal-butters",
     "name": "Cereal butters"
-  },
-  {
-    "key": "en:cereal-chocolates",
-    "name": "Cereal chocolates"
   },
   {
     "key": "en:cereal-clusters-with-chocolate",
@@ -180,10 +176,6 @@
     "name": "Cereal grains"
   },
   {
-    "key": "en:cereal-milks",
-    "name": "Cereal milks"
-  },
-  {
     "key": "en:cereal-oils",
     "name": "Cereal oils"
   },
@@ -204,12 +196,12 @@
     "name": "Cereal syrups"
   },
   {
-    "key": "en:cereals-and-potatoes",
-    "name": "Cereals and potatoes"
+    "key": "en:cereal-variety-packs",
+    "name": "Cereal variety packs"
   },
   {
-    "key": "en:cereals-and-their-products",
-    "name": "Cereals and their products"
+    "key": "en:cereal-based-drinks",
+    "name": "Cereal-based drinks"
   },
   {
     "key": "en:cereals-and-vegetables-patties",
@@ -254,6 +246,10 @@
   {
     "key": "en:chocolate-cereals",
     "name": "Chocolate cereals"
+  },
+  {
+    "key": "en:chocolate-covered-bars-with-milk-and-cereals",
+    "name": "Chocolate covered bars with milk and cereals"
   },
   {
     "key": "en:crunchy-cereal-clusters",
@@ -348,8 +344,16 @@
     "name": "Frozen cereals"
   },
   {
+    "key": "en:frozen-cereals-and-their-products",
+    "name": "Frozen cereals and their products"
+  },
+  {
     "key": "en:fruits-cereal-bars",
     "name": "Fruits cereal bars"
+  },
+  {
+    "key": "en:hazelnuts-from-cervione",
+    "name": "Hazelnuts from Cervione"
   },
   {
     "key": "en:honey-cereal-balls",
@@ -368,10 +372,6 @@
     "name": "Low calorie cereal bar"
   },
   {
-    "key": "en:milky-cereal-breakfast-bar-with-chocolate-fortified-with-vitamins-and-minerals",
-    "name": "Milky cereal breakfast bar with chocolate fortified with vitamins and minerals"
-  },
-  {
     "key": "en:milky-cereal-based-beverages",
     "name": "Milky cereal-based beverages"
   },
@@ -388,8 +388,8 @@
     "name": "Mixed puffed cereals"
   },
   {
-    "key": "en:nuts-cereal-bars",
-    "name": "Nuts cereal bars"
+    "key": "en:packaged-cereals",
+    "name": "Packaged cereals"
   },
   {
     "key": "en:plain-diet-breakfast-cereals-not-fortified",
@@ -398,6 +398,10 @@
   {
     "key": "en:powdered-cereal-milks",
     "name": "Powdered cereal milks"
+  },
+  {
+    "key": "en:processed-cereals",
+    "name": "Processed cereals"
   },
   {
     "key": "en:puffed-cereal-cakes",

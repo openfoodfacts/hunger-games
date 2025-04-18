@@ -8,6 +8,26 @@
     "name": "Baba ghanoush"
   },
   {
+    "key": "en:armagnac-babas",
+    "name": "Babas met armagnac"
+  },
+  {
+    "key": "en:limoncello-babas",
+    "name": "Babas met limoncello"
+  },
+  {
+    "key": "en:babas-with-mirabelle-de-lorraine",
+    "name": "Babas met Mirabelle de Lorraine"
+  },
+  {
+    "key": "en:mojito-babas",
+    "name": "Babas met Mojito"
+  },
+  {
+    "key": "en:whiskey-babas",
+    "name": "Babas met whisky"
+  },
+  {
     "key": "en:baby-food-jar-with-banana",
     "name": "Baby food jar with banana"
   },
@@ -18,10 +38,6 @@
   {
     "key": "en:baby-food-jar-with-vegetables-from-4-6-months",
     "name": "Baby food jar with vegetables from 4-6 months"
-  },
-  {
-    "key": "en:baby-food-jar-without-banana",
-    "name": "Baby food jar without banana"
   },
   {
     "key": "en:baby-milks-in-powder",
@@ -64,6 +80,10 @@
     "name": "Baby-vruchtentoetjes"
   },
   {
+    "key": "en:baby-infant-foods-beverages-variety-packs",
+    "name": "Baby/Peuter levensmiddelassortimenten"
+  },
+  {
     "key": "fr:compotes-pour-bebe",
     "name": "Babycompotes"
   },
@@ -88,8 +108,12 @@
     "name": "Babymelk"
   },
   {
-    "key": "en:baby-dairy-desserts",
+    "key": "en:dairy-dessert-for-baby",
     "name": "Babymelktoetjes"
+  },
+  {
+    "key": "en:baby-food-jar-without-banana",
+    "name": "Babypotje zonder banaan"
   },
   {
     "key": "fr:petits-pots-pour-bebe",
@@ -102,10 +126,6 @@
   {
     "key": "en:soups-for-babies",
     "name": "Babysoepen"
-  },
-  {
-    "key": "en:soup-for-baby-with-vegetables-and-potatoes",
-    "name": "Babysoepen met groenten en aardappelen"
   },
   {
     "key": "en:fish-menus-for-babies",
@@ -184,20 +204,28 @@
     "name": "Fruit-based beverages for baby from 4/6 months"
   },
   {
+    "key": "en:vegetable-dish-for-babies-from-12-months-with-starch-and-fish",
+    "name": "Groentegerecht voor baby's vanaf 12 maanden met zetmeel en vis"
+  },
+  {
+    "key": "en:vegetable-dish-for-babies-from-6-months-with-starch-and-fish",
+    "name": "Groentegerecht voor baby's vanaf 6 maanden met zetmeel en vis"
+  },
+  {
+    "key": "en:vegetable-dish-for-babies-from-8-months-with-starch-and-fish",
+    "name": "Groentegerecht voor baby's vanaf 8 maanden met zetmeel en vis"
+  },
+  {
     "key": "en:instant-cereal-powder-to-be-reconstituted-for-baby-from-4-6-months",
     "name": "Instant cereal powder to be reconstituted for baby from 4/6 months"
   },
   {
     "key": "en:instant-cereal-powder-to-be-reconstituted-for-baby-from-6-months",
-    "name": "Instant cereal powder to be reconstituted for baby from 6 months"
-  },
-  {
-    "key": "en:dairy-dessert-for-baby",
-    "name": "Melktoetje voor babies"
+    "name": "Instante graanpoeder om te reconstitueren voor baby's vanaf 6 maanden"
   },
   {
     "key": "en:milks-for-premature-babies",
-    "name": "Milks for premature babies"
+    "name": "Melk voor premature baby's"
   },
   {
     "key": "en:plain-dairy-dessert-for-baby",
@@ -233,11 +261,15 @@
   },
   {
     "key": "en:soup-for-baby-with-vegetables-and-cereals-and-milk",
-    "name": "Soup for baby with vegetables and cereals and milk"
+    "name": "Soep voor baby met groenten"
   },
   {
-    "key": "en:vegetable-dish-for-babies-from-12-months-with-starch-and-fish",
-    "name": "Vegetable dish for babies from 12 months with starch and fish"
+    "key": "en:soup-for-baby-with-vegetables-and-potatoes",
+    "name": "Soep voor baby met groenten en aardappelen"
+  },
+  {
+    "key": "en:specialised-baby-drinks",
+    "name": "Specialised baby drinks"
   },
   {
     "key": "en:vegetable-dish-for-babies-from-12-months-with-starch-and-meat",
@@ -252,16 +284,8 @@
     "name": "Vegetable dish for babies from 18 months with starch and meat"
   },
   {
-    "key": "en:vegetable-dish-for-babies-from-6-months-with-starch-and-fish",
-    "name": "Vegetable dish for babies from 6 months with starch and fish"
-  },
-  {
     "key": "en:vegetable-dish-for-babies-from-6-months-with-starch-and-meat",
     "name": "Vegetable dish for babies from 6 months with starch and meat"
-  },
-  {
-    "key": "en:vegetable-dish-for-babies-from-8-months-with-starch-and-fish",
-    "name": "Vegetable dish for babies from 8 months with starch and fish"
   },
   {
     "key": "en:vegetable-dish-for-babies-from-8-months-with-starch-and-meat",

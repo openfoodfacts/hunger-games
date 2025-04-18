@@ -20,8 +20,20 @@
     "name": "Bruine suikers"
   },
   {
+    "key": "en:cappuccino-without-sugar",
+    "name": "Cappuccino zonder suiker"
+  },
+  {
     "key": "en:cola-with-sugar",
     "name": "Cola met suiker"
+  },
+  {
+    "key": "en:cola-with-sugar-and-artificial-sweetener",
+    "name": "Cola met suiker en artificiële zoetstoffen"
+  },
+  {
+    "key": "en:cola-with-sugar-and-without-caffeine",
+    "name": "Cola met suiker en zonder cafeïne"
   },
   {
     "key": "en:sugar-free-colas-with-artificial-sweeteners-and-without-caffeine",
@@ -33,15 +45,43 @@
   },
   {
     "key": "en:energy-drink-without-sugar-and-with-artificial-sweeteners",
-    "name": "Energiedrankenzonder suiker met artificiële zoetstoffen"
+    "name": "Energiedranken zonder suiker met artificiële zoetstoffen"
+  },
+  {
+    "key": "en:espresso-coffee-without-sugar",
+    "name": "Espresso koffie zonder suiker"
   },
   {
     "key": "en:fat-free-plain-petit-suisse",
     "name": "Fat free plain Petit-Suisse"
   },
   {
+    "key": "en:fromages-blancs-petit-suisses-and-skyr",
+    "name": "Fromages blancs - petit suisses and skyr"
+  },
+  {
     "key": "en:caramelized-mixed-nuts",
     "name": "Gemengde suikernoten"
+  },
+  {
+    "key": "en:instant-coffee-with-milk-without-sugar",
+    "name": "Instant koffie met melk zonder suiker"
+  },
+  {
+    "key": "en:sugar-free-chewing-gum",
+    "name": "Kauwgom (suikervrij)"
+  },
+  {
+    "key": "en:chewing-gum-with-sugar",
+    "name": "Kauwgom met suiker"
+  },
+  {
+    "key": "en:coffee-with-milk-with-sugar",
+    "name": "Koffie met melk met suiker"
+  },
+  {
+    "key": "en:carbonated-soft-drinks-without-fruit-juice-with-sugar",
+    "name": "Koolzuurhoudende dranken met suiker zonder vruchtensap"
   },
   {
     "key": "en:lemonade-with-sugar",
@@ -58,6 +98,10 @@
   {
     "key": "en:sweet-mousses",
     "name": "Mousses met suiker"
+  },
+  {
+    "key": "en:instant-decaffeinated-coffee-without-sugar",
+    "name": "Oploskoffie zonder suiker"
   },
   {
     "key": "en:petit-suisse-with-fruits",
@@ -82,6 +126,10 @@
   {
     "key": "en:plain-petit-suisse-around-9-fat",
     "name": "Plain Petit-Suisse around 9% fat"
+  },
+  {
+    "key": "en:sugarfree-candies",
+    "name": "Snoep (suikervrij)"
   },
   {
     "key": "en:sugars",
@@ -128,7 +176,11 @@
     "name": "Suikermeloenen"
   },
   {
-    "key": "en:sugar-coated-pinenuts",
+    "key": "en:caramelized-nuts",
+    "name": "Suikernoten"
+  },
+  {
+    "key": "en:caramelized-pine-nuts",
     "name": "Suikerpijnboompitten"
   },
   {
@@ -140,16 +192,24 @@
     "name": "Suikerrietazijnen"
   },
   {
+    "key": "en:cotton-candy-sugars",
+    "name": "Suikers voor suikerspin"
+  },
+  {
     "key": "en:cotton-candy",
     "name": "Suikerspin"
   },
   {
-    "key": "en:thick-sugar-syrup",
+    "key": "en:thick-sugar-syrups",
     "name": "Suikerstropen"
   },
   {
     "key": "en:sugar-substitutes",
     "name": "Suikervervangers"
+  },
+  {
+    "key": "fr:compotes-sans-sucres",
+    "name": "Suikervrije compotes"
   },
   {
     "key": "en:unsweetened-beverages",
@@ -164,10 +224,6 @@
     "name": "Suikervrije jams"
   },
   {
-    "key": "en:sugar-free-chewing-gum",
-    "name": "Suikervrije kauwgom"
-  },
-  {
     "key": "en:unsweetened-flavored-waters",
     "name": "Suikervrije waters"
   },
@@ -176,16 +232,32 @@
     "name": "Taarten met suiker"
   },
   {
-    "key": "fr:laits-concentres-sucres",
+    "key": "en:evaporated-milks-with-sugar",
     "name": "Verdikte melken met suiker"
   },
   {
-    "key": "fr:laits-concentres-non-sucres",
+    "key": "en:evaporated-milks-without-sugar",
     "name": "Verdikte melken zonder suiker"
+  },
+  {
+    "key": "en:white-sugars",
+    "name": "Witte suiker"
   },
   {
     "key": "en:fermented-milk-drinks-with-fruits",
     "name": "Yoghurtdranken met fruit en suiker"
+  },
+  {
+    "key": "en:yogurt-drinks-with-sugar",
+    "name": "Yoghurtdranken met suiker"
+  },
+  {
+    "key": "en:yogurt-drinks-without-sugar",
+    "name": "Yoghurtdranken zonder suiker"
+  },
+  {
+    "key": "en:yogurt-with-fruits-and-sugar",
+    "name": "Yoghurts met fruit en suiker"
   },
   {
     "key": "en:sweetened-yogurts",

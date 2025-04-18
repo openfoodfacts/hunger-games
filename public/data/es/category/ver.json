@@ -56,10 +56,6 @@
     "name": "Aceitunas verdes troceadas"
   },
   {
-    "key": "en:aloe-vera-drinks",
-    "name": "Aloe Vera drinks"
-  },
-  {
     "key": "es:alubias-con-verduras",
     "name": "Alubias con verduras"
   },
@@ -70,6 +66,22 @@
   {
     "key": "en:vegetable-based-beverages",
     "name": "Bebidas a base de verduras y hortalizas"
+  },
+  {
+    "key": "en:aloe-vera-drinks",
+    "name": "Bebidas de aloe vera"
+  },
+  {
+    "key": "en:sandwich-with-tuna-and-vegetables",
+    "name": "Bocadillo de atún y verduras"
+  },
+  {
+    "key": "en:sandwich-with-egg-and-vegetables-and-mayonnaise",
+    "name": "Bocadillo de huevo y verduras con mayonesa"
+  },
+  {
+    "key": "en:baguette-sandwiches-with-vegetables-and-mayonnaise",
+    "name": "Bocadillos de verduras y mayonesa"
   },
   {
     "key": "en:breakfast-cereals-very-rich-in-fibre-fortified-with-vitamins-and-chemical-elements",
@@ -100,6 +112,14 @@
     "name": "Caldos de verduras líquidos"
   },
   {
+    "key": "en:cannelloni-with-vegetables",
+    "name": "Cannelloni con verduras"
+  },
+  {
+    "key": "en:cannelloni-with-cooked-vegetables",
+    "name": "Cannelloni con verduras cocidas"
+  },
+  {
     "key": "en:green-cardamom",
     "name": "Cardamono verde"
   },
@@ -118,10 +138,6 @@
   {
     "key": "en:dehydrated-tomato-and-vermicelli-soup",
     "name": "Dehydrated tomato and vermicelli soup"
-  },
-  {
-    "key": "en:dried-soy-vermicelli",
-    "name": "Dried soy vermicelli"
   },
   {
     "key": "en:green-asparagus",
@@ -228,7 +244,7 @@
     "name": "Judías verdes troceadas congeladas"
   },
   {
-    "key": "en:vegetable-lasagne",
+    "key": "en:vegetable-lasagnas",
     "name": "Lasaña de verduras"
   },
   {
@@ -280,12 +296,28 @@
     "name": "Multi-coloured vermicelli"
   },
   {
+    "key": "en:vegetable-nems",
+    "name": "Nems de verduras"
+  },
+  {
     "key": "en:common-nettle",
     "name": "Ortiga verde"
   },
   {
+    "key": "en:fruits-vegetables-nuts-seeds-variety-packs",
+    "name": "Paquetes variados de frutas - verduras - frutos secos y semillas"
+  },
+  {
     "key": "es:parrilladas-de-verduras-congelada",
     "name": "Parrilladas de verduras congelada"
+  },
+  {
+    "key": "en:fresh-pasta-stuffed-with-vegetables",
+    "name": "Pasta fresca rellena de verduras"
+  },
+  {
+    "key": "en:pasta-stuffed-with-vegetables",
+    "name": "Pasta rellena de verduras"
   },
   {
     "key": "en:green-pestos",
@@ -336,8 +368,24 @@
     "name": "Pizzas de verduras"
   },
   {
+    "key": "en:vegetable-dish-for-babies-from-12-months-with-starch-and-fish",
+    "name": "Plato de verduras para bebés a partir de los 12 meses con almidón y pescado"
+  },
+  {
+    "key": "en:vegetable-dish-for-babies-from-6-months-with-starch-and-fish",
+    "name": "Plato de verduras para bebés a partir de los 6 meses con almidón y pescado"
+  },
+  {
+    "key": "en:vegetable-dish-for-babies-from-8-months-with-starch-and-fish",
+    "name": "Plato de verduras para bebés a partir de los 8 meses con almidón y pescado"
+  },
+  {
     "key": "en:fruit-and-vegetable-preserves",
     "name": "Preparaciones a base de frutas y verduras"
+  },
+  {
+    "key": "en:ravioli-with-vegetables",
+    "name": "Ravioli con verduras"
   },
   {
     "key": "en:reheatable-chicken-and-vermicelli-soup",
@@ -360,6 +408,18 @@
     "name": "Salsas verdes"
   },
   {
+    "key": "en:sandwiches-with-vegetables-and-mayonnaise",
+    "name": "Sándwiches de verduras y mayonesa"
+  },
+  {
+    "key": "en:soup-for-baby-with-vegetables-and-cereals-and-milk",
+    "name": "Sopa para bebé con verduras"
+  },
+  {
+    "key": "en:soup-for-baby-with-vegetables-and-potatoes",
+    "name": "Sopa para bebé con verduras y papas"
+  },
+  {
     "key": "en:vegetable-soups",
     "name": "Sopas de verduras y hortalizas"
   },
@@ -380,10 +440,6 @@
     "name": "Sopas de verduras y hortalizas refrigeradas"
   },
   {
-    "key": "en:soy-vermicelli",
-    "name": "Soy vermicelli"
-  },
-  {
     "key": "en:frozen-vegetable-tempura",
     "name": "Tempuras de verduras congeladas"
   },
@@ -392,8 +448,16 @@
     "name": "Tés verdes"
   },
   {
+    "key": "fr:thes-verts-aromatises",
+    "name": "Tés verdes aromatizados"
+  },
+  {
     "key": "en:chinese-green-teas",
     "name": "Tés verdes chinos"
+  },
+  {
+    "key": "en:green-teas-with-mint",
+    "name": "Tés verdes con menta"
   },
   {
     "key": "en:japanese-green-teas",
@@ -460,7 +524,7 @@
     "name": "Verduras y hortalizas en conserva"
   },
   {
-    "key": "en:vegetable-pickles",
+    "key": "en:pickled-vegetables",
     "name": "Verduras y hortalizas encurtidas"
   },
   {
@@ -482,6 +546,14 @@
   {
     "key": "en:vermouth",
     "name": "Vermut"
+  },
+  {
+    "key": "en:verna-lemons",
+    "name": "Verna lemons"
+  },
+  {
+    "key": "en:wheat-vermicelli",
+    "name": "Wheat vermicelli"
   },
   {
     "key": "en:fruit-and-vegetable-juices",

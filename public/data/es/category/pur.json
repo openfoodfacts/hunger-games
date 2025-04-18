@@ -1,5 +1,9 @@
 [
   {
+    "key": "en:pure-alcohol",
+    "name": "Alcohol puro"
+  },
+  {
     "key": "en:canned-tomato-puree",
     "name": "Canned tomato puree"
   },
@@ -12,7 +16,7 @@
     "name": "Cooked shortbread dough with pure butter"
   },
   {
-    "key": "fr:saucissons-secs-pur-porc",
+    "key": "en:dry-sausage-pure-pork",
     "name": "Dry sausage pure pork"
   },
   {
@@ -80,12 +84,12 @@
     "name": "Potato puree made from flakes reconstituted with whole milk with added fat"
   },
   {
-    "key": "en:purees",
-    "name": "Puré"
+    "key": "en:prune-purees",
+    "name": "Prune purees"
   },
   {
-    "key": "en:pure-alcohol",
-    "name": "Pure alcohol"
+    "key": "en:purees",
+    "name": "Puré"
   },
   {
     "key": "en:pure-apple-compotes",
@@ -112,6 +116,18 @@
     "name": "Pure goose rillettes"
   },
   {
+    "key": "en:pure-malt-beers",
+    "name": "Pure malt beers"
+  },
+  {
+    "key": "en:pure-malt-blond-beers",
+    "name": "Pure malt blond beers"
+  },
+  {
+    "key": "en:pure-mashed-potatoes",
+    "name": "Pure mashed potatoes"
+  },
+  {
     "key": "en:pure-peanut-butters",
     "name": "Pure peanut butters"
   },
@@ -130,10 +146,6 @@
   {
     "key": "en:pure-tomato-juice-with-6-g-salt-l",
     "name": "Pure tomato juice with 6 g salt/L"
-  },
-  {
-    "key": "en:pure-tomato-juices",
-    "name": "Pure tomato juices"
   },
   {
     "key": "en:oilseed-purees",
@@ -180,11 +192,11 @@
     "name": "Unsalted potato puree with milk and butter"
   },
   {
-    "key": "en:white-almond-purees",
-    "name": "White almond purees"
-  },
-  {
     "key": "en:whole-almond-purees",
     "name": "Whole almond purees"
+  },
+  {
+    "key": "en:pure-tomato-juices",
+    "name": "Zumos de tomate puro"
   }
 ]

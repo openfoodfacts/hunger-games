@@ -40,8 +40,32 @@
     "name": "Blé germé"
   },
   {
+    "key": "en:raw-sprouted-wheat",
+    "name": "Blé germé cru"
+  },
+  {
     "key": "en:puffed-wheat",
     "name": "Blé soufflé"
+  },
+  {
+    "key": "en:puffed-wheat-with-caramel",
+    "name": "Blé soufflé au caramel"
+  },
+  {
+    "key": "en:puffed-wheat-with-honey",
+    "name": "Blé soufflé au miel"
+  },
+  {
+    "key": "en:chocolate-puffed-wheat",
+    "name": "Blé soufflé chocolaté"
+  },
+  {
+    "key": "en:plain-puffed-wheat",
+    "name": "Blé soufflé nature"
+  },
+  {
+    "key": "en:sweetened-puffed-wheat",
+    "name": "Blé soufflé sucré"
   },
   {
     "key": "en:blended-scotch-whisky",
@@ -120,7 +144,7 @@
     "name": "Bleus du Vercors"
   },
   {
-    "key": "en:wheat-milks",
+    "key": "en:wheat-based-drinks",
     "name": "Boissons végétales de blé"
   },
   {
@@ -128,12 +152,8 @@
     "name": "Boissons végétales de blé en poudre"
   },
   {
-    "key": "en:khorasan-wheat-milks",
+    "key": "en:khorasan-wheat-based-drinks",
     "name": "Boissons végétales de blé khorasan"
-  },
-  {
-    "key": "en:soy-based-sliced",
-    "name": "Bouchées ou émincé au soja et blé (ne convient pas aux véganes ou végétaliens) préemballé"
   },
   {
     "key": "en:balls-from-soy-and-or-wheat-proteins",
@@ -156,19 +176,19 @@
     "name": "Coquillettes de blé dur"
   },
   {
-    "key": "fr:cordons-bleus",
+    "key": "en:cordons-bleus",
     "name": "Cordons bleus"
   },
   {
-    "key": "fr:cordons-bleus-de-dinde",
+    "key": "en:turkey-cordons-bleus",
     "name": "Cordons bleus de dinde"
   },
   {
-    "key": "fr:cordons-bleus-de-poulet",
+    "key": "en:chicken-cordons-bleus",
     "name": "Cordons bleus de poulet"
   },
   {
-    "key": "fr:cordons-bleus-de-volaille",
+    "key": "en:poultry-cordons-bleus",
     "name": "Cordons bleus de volaille"
   },
   {
@@ -320,28 +340,12 @@
     "name": "Gnocchi de semoule de blé dur"
   },
   {
-    "key": "en:puffed-wheat-grains",
-    "name": "Grains de blé soufflés"
-  },
-  {
-    "key": "en:popped-wheat-grain-with-caramel",
-    "name": "Grains de blé soufflés au caramel"
-  },
-  {
     "key": "en:popped-wheat-grain-with-caramel-fortified-with-vitamins-and-chemical-elements",
     "name": "Grains de blé soufflés au caramel enrichis en vitamines et minéraux"
   },
   {
-    "key": "en:popped-wheat-grain-with-honey",
-    "name": "Grains de blé soufflés au miel"
-  },
-  {
     "key": "en:popped-wheat-grain-with-honey-fortified-with-vitamins-and-chemical-elements",
     "name": "Grains de blé soufflés au miel enrichis en vitamines et minéraux"
-  },
-  {
-    "key": "en:chocolate-puffed-wheat-grains",
-    "name": "Grains de blé soufflés chocolatés"
   },
   {
     "key": "en:chocolate-puffed-wheat-grains-fortified-with-vitamins-and-chemical-elements",
@@ -412,10 +416,6 @@
     "name": "Nuggets à base de protéines de soja et blé"
   },
   {
-    "key": "en:soybean-and-wheat-based-nuggets-vegan",
-    "name": "Nuggets soja et blé (convient aux véganes ou végétaliens) préemballé"
-  },
-  {
     "key": "en:bread-white-from-wheat-flour-of-the-highest-grade-gost-26987-86",
     "name": "Pain blanc à base de farine de blé de la plus haute qualité GOST 26987-86"
   },
@@ -452,12 +452,20 @@
     "name": "Pâtes de blé dur entier ou semi-entier"
   },
   {
+    "key": "en:dry-durum-wheat-pasta",
+    "name": "Pâtes de blé dur sèches"
+  },
+  {
     "key": "es:pastas-de-trigo-duro-semi-integrales",
     "name": "Pâtes de blé dur semi-complet"
   },
   {
     "key": "en:khorasan-pasta",
     "name": "Pâtes de blé khorasan"
+  },
+  {
+    "key": "en:common-wheat-pasta",
+    "name": "Pâtes de blé tendre"
   },
   {
     "key": "en:dried-wholemeal-pasta",
@@ -544,8 +552,12 @@
     "name": "Spirales de blé dur"
   },
   {
-    "key": "en:whole-or-semi-whole-durum-wheat-spirals",
-    "name": "Spirales de blé dur entier ou semi-entier"
+    "key": "en:whole-durum-wheat-spirals",
+    "name": "Spirales de blé dur complet"
+  },
+  {
+    "key": "en:semi-whole-durum-wheat-spirals",
+    "name": "Spirales de blé dur semi-complet"
   },
   {
     "key": "en:meat-analogues-from-soy-or-wheat-proteins",

@@ -20,8 +20,24 @@
     "name": "Contient naturellement des sulfites"
   },
   {
-    "key": "en:reinheitsgebot",
+    "key": "de:reinheitsgebot",
     "name": "Décret sur la pureté de la bière"
+  },
+  {
+    "key": "en:high-in-sat-fat-and-sugars-health-canada",
+    "name": "Élevé en Gras sat. et Sucres (Santé Canada)"
+  },
+  {
+    "key": "en:high-in-sat-fat-sugars-and-sodium-health-canada",
+    "name": "Élevé en Gras sat. Sucres et Sodium (Santé Canada)"
+  },
+  {
+    "key": "en:high-in-sugars-health-canada",
+    "name": "Élevé en Sucres (Santé Canada)"
+  },
+  {
+    "key": "en:high-in-sugars-and-sodium-health-canada",
+    "name": "Élevé en Sucres et Sodium (Santé Canada)"
   },
   {
     "key": "en:made-in-swiss",
@@ -100,10 +116,6 @@
     "name": "Moins 60% de sucre"
   },
   {
-    "key": "en:not-suited-for-children-under-1-years",
-    "name": "Not suited for children under 1 years"
-  },
-  {
     "key": "en:low-sugar",
     "name": "Peu de sucre"
   },
@@ -136,6 +148,10 @@
     "name": "Sans sulfites"
   },
   {
+    "key": "en:swiss-sugar",
+    "name": "Sucre suisse"
+  },
+  {
     "key": "fr:sud-de-france",
     "name": "Sud de France"
   },
@@ -150,5 +166,9 @@
   {
     "key": "en:sustainable",
     "name": "Sustainable"
+  },
+  {
+    "key": "en:canadian-front-of-package-nutrition-symbol",
+    "name": "Symbole nutritionnel sur le devant de l'emballage"
   }
 ]

@@ -12,12 +12,20 @@
     "name": "EU/non-EU Agriculture"
   },
   {
+    "key": "en:fairtrade-norway",
+    "name": "Fairtrade Norway"
+  },
+  {
     "key": "en:low-or-no-fat",
     "name": "Low or no fat"
   },
   {
     "key": "en:low-or-no-salt",
     "name": "Low or no salt"
+  },
+  {
+    "key": "en:low-or-no-sodium",
+    "name": "Low or no Sodium"
   },
   {
     "key": "en:low-or-no-sugar",
@@ -34,6 +42,10 @@
   {
     "key": "en:no-added-salt",
     "name": "No added salt"
+  },
+  {
+    "key": "en:no-added-sodium",
+    "name": "No added sodium"
   },
   {
     "key": "en:no-added-sugar",
@@ -136,6 +148,10 @@
     "name": "No flavour enhancer"
   },
   {
+    "key": "en:no-fructose-syrup",
+    "name": "No fructose syrup"
+  },
+  {
     "key": "en:no-garlic",
     "name": "No garlic"
   },
@@ -146,6 +162,14 @@
   {
     "key": "en:no-gelatin",
     "name": "No gelatin"
+  },
+  {
+    "key": "en:no-glucose-syrup",
+    "name": "No glucose syrup"
+  },
+  {
+    "key": "en:no-glucose-fructose-syrup",
+    "name": "No glucose-fructose syrup"
   },
   {
     "key": "en:no-gluten",
@@ -200,6 +224,10 @@
     "name": "No salt"
   },
   {
+    "key": "en:no-sodium",
+    "name": "No sodium"
+  },
+  {
     "key": "en:no-soja-lecithine",
     "name": "No soja lecithine"
   },
@@ -217,7 +245,11 @@
   },
   {
     "key": "en:no-trans-fat",
-    "name": "No Trans Fat"
+    "name": "No Trans fat"
+  },
+  {
+    "key": "en:no-trans-fat-and-preservatives",
+    "name": "No Trans Fat and preservatives"
   },
   {
     "key": "en:no-wheat",

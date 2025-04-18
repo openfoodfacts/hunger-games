@@ -4,83 +4,271 @@
     "name": "60% unsalted vegetable fat with sunflowerseed"
   },
   {
+    "key": "en:baguette-sandwiches-with-ham-and-emmental-cheese",
+    "name": "Baguette sendviči sa šunkom i ementalcem"
+  },
+  {
+    "key": "en:baguette-sandwiches-with-ham-and-butter",
+    "name": "Baguette sendviči sa šunkom i maslacem"
+  },
+  {
+    "key": "en:bayonne-ham",
+    "name": "Bajon šunka"
+  },
+  {
+    "key": "en:white-smoked-hams",
+    "name": "Bijele dimljene šunke"
+  },
+  {
+    "key": "en:white-hams",
+    "name": "Bijele šunke"
+  },
+  {
+    "key": "en:white-hams-with-less-salt",
+    "name": "Bijele šunke s manje soli"
+  },
+  {
+    "key": "en:british-hams",
+    "name": "Britanske šunke"
+  },
+  {
+    "key": "en:potato-crisps-in-sunflower-oil",
+    "name": "Čips od krumpira u suncokretovom ulju"
+  },
+  {
+    "key": "fr:pains-au-chocolat-a-l-huile-de-tournesol",
+    "name": "Čokoladni kroasani sa suncokretovim uljem"
+  },
+  {
+    "key": "en:duroc-ham",
+    "name": "Duroc šunka"
+  },
+  {
+    "key": "en:endives-with-ham",
+    "name": "Endivija sa šunkom"
+  },
+  {
+    "key": "en:french-hams",
+    "name": "Francuske šunke"
+  },
+  {
+    "key": "en:ham-sausages",
+    "name": "Kobasice od šunke"
+  },
+  {
+    "key": "en:diced-ham",
+    "name": "Kockice šunke"
+  },
+  {
+    "key": "en:ham-croissants",
+    "name": "Kroasani sa šunkom"
+  },
+  {
+    "key": "en:ham-and-cheese-croissants",
+    "name": "Kroasani sa šunkom i sirom"
+  },
+  {
+    "key": "en:puff-pastries-with-ham-and-cheese",
+    "name": "Lisnato pecivo sa šunkom i sirom"
+  },
+  {
     "key": "en:mackerel-fillets-in-sunflower-oil",
     "name": "Mackerel fillets in sunflower oil"
   },
   {
-    "key": "en:nonrefined-sunflower-oils",
-    "name": "Nonrefined sunflower oils"
-  },
-  {
-    "key": "en:potato-crisps-in-sunflower-oil",
-    "name": "Potato crisps in sunflower oil"
-  },
-  {
-    "key": "en:refined-deodorized-sunflower-oils",
-    "name": "Refined deodorized sunflower oils"
-  },
-  {
-    "key": "en:roasted-shelled-sunflower-seeds",
-    "name": "Roasted shelled sunflower seeds"
-  },
-  {
-    "key": "en:roasted-sunflower-seeds",
-    "name": "Roasted sunflower seeds"
-  },
-  {
-    "key": "en:roasted-unshelled-sunflower-seeds",
-    "name": "Roasted unshelled sunflower seeds"
-  },
-  {
-    "key": "en:sardines-in-sunflower-oil",
-    "name": "Sardines in sunflower oil"
-  },
-  {
-    "key": "en:shelled-sunflower-seeds",
-    "name": "Shelled sunflower seeds"
-  },
-  {
-    "key": "en:sundae-ice-cream",
-    "name": "Sundae ice cream"
-  },
-  {
-    "key": "en:sunflower-halva",
-    "name": "Sunflower halva"
-  },
-  {
-    "key": "en:sunflower-honeys",
-    "name": "Sunflower honeys"
-  },
-  {
     "key": "en:sunflower-oil-mayonnaises",
-    "name": "Sunflower oil mayonnaises"
-  },
-  {
-    "key": "en:sunflower-oils",
-    "name": "Sunflower oils"
+    "name": "Majoneze od suncokretovog ulja"
   },
   {
     "key": "en:sunflower-seed-butters",
-    "name": "Sunflower seed butters"
+    "name": "Maslaci od sjemenki suncokreta"
+  },
+  {
+    "key": "en:nonrefined-sunflower-oils",
+    "name": "Nerafinirana suncokretova ulja"
+  },
+  {
+    "key": "en:shelled-sunflower-seeds",
+    "name": "Oljuštene sjemenke suncokreta"
+  },
+  {
+    "key": "en:organic-sungold",
+    "name": "Organic SunGold"
+  },
+  {
+    "key": "en:buckwheat-crepe-with-cheese-and-ham",
+    "name": "Palačinka od heljde sa sirom i šunkom"
+  },
+  {
+    "key": "en:ham-and-mushroom-pancake-in-cheese-sauce",
+    "name": "Palačinka od šunke i gljiva u umaku od sira"
+  },
+  {
+    "key": "en:parma-ham",
+    "name": "Parma šunka"
+  },
+  {
+    "key": "en:piemontese-salads-with-ham",
+    "name": "Piemontese salate sa šunkom"
+  },
+  {
+    "key": "en:braised-hams",
+    "name": "Pirjane šunke"
+  },
+  {
+    "key": "en:cured-ham-pizza",
+    "name": "Pizza sa suhom šunkom"
+  },
+  {
+    "key": "en:pizza-with-ham-and-cheese",
+    "name": "Pizza sa šunkom i sirom"
+  },
+  {
+    "key": "en:ham-pizzas",
+    "name": "Pizze sa šunkom"
+  },
+  {
+    "key": "en:roasted-shelled-sunflower-seeds",
+    "name": "Pržene oljuštene sjemenke suncokreta"
+  },
+  {
+    "key": "en:roasted-sunflower-seeds",
+    "name": "Pržene sjemenke suncokreta"
+  },
+  {
+    "key": "en:roasted-unshelled-sunflower-seeds",
+    "name": "Pržene sjemenke suncokreta bez ljuske"
+  },
+  {
+    "key": "en:refined-deodorized-sunflower-oils",
+    "name": "Rafinirana dezodorirana suncokretova ulja"
+  },
+  {
+    "key": "en:ham-ravioli",
+    "name": "Ravioli sa šunkom"
+  },
+  {
+    "key": "en:sardines-in-sunflower-oil",
+    "name": "Sardine u suncokretovom ulju"
+  },
+  {
+    "key": "en:ham-sandwiches",
+    "name": "Sendviči sa šunkom"
+  },
+  {
+    "key": "en:sandwiches-with-ham-and-emmental-cheese",
+    "name": "Sendviči sa šunkom i ementalcem"
+  },
+  {
+    "key": "en:sandwiches-with-ham-and-emmental-cheese-and-butter",
+    "name": "Sendviči sa šunkom i ementalcem i maslacem"
+  },
+  {
+    "key": "en:ham-and-butter-sandwiches",
+    "name": "Sendviči sa šunkom i maslacem"
+  },
+  {
+    "key": "en:ham-and-cheese-sandwiches",
+    "name": "Sendviči sa šunkom i sirom"
+  },
+  {
+    "key": "en:serrano-ham",
+    "name": "Serano šunka"
+  },
+  {
+    "key": "en:sunflower-seeds",
+    "name": "Sjemenke suncokreta"
+  },
+  {
+    "key": "en:unshelled-sunflower-seeds",
+    "name": "Sjemenke suncokreta bez ljuske"
+  },
+  {
+    "key": "en:sunflower-seeds-and-their-products",
+    "name": "Sjemenke suncokreta i njihovi proizvodi"
+  },
+  {
+    "key": "en:spanish-hams",
+    "name": "Španjolske šunke"
+  },
+  {
+    "key": "en:cured-hams",
+    "name": "Suhomesnate šunke"
+  },
+  {
+    "key": "en:sunflower-lecithin",
+    "name": "Suncokretov lecitin"
+  },
+  {
+    "key": "en:sunflower-honeys",
+    "name": "Suncokretov med"
+  },
+  {
+    "key": "en:sunflower-halva",
+    "name": "Suncokretova halva"
+  },
+  {
+    "key": "en:sunflower-oils",
+    "name": "Suncokretova ulja"
+  },
+  {
+    "key": "en:sunculita-dry-bacon",
+    "name": "Sunculita dry bacon"
+  },
+  {
+    "key": "en:sundae-ice-cream",
+    "name": "Sundae sladoled"
   },
   {
     "key": "en:sunflower-seed-grilled-and-salted",
     "name": "Sunflower seed grilled and salted"
   },
   {
-    "key": "en:sunflower-seeds",
-    "name": "Sunflower seeds"
+    "key": "en:sungold",
+    "name": "Sungold"
   },
   {
-    "key": "en:sunflower-seeds-and-their-products",
-    "name": "Sunflower seeds and their products"
+    "key": "en:sungold-jumbo",
+    "name": "Sungold Jumbo"
+  },
+  {
+    "key": "en:hams",
+    "name": "Šunke"
+  },
+  {
+    "key": "en:poultry-hams",
+    "name": "Šunke peradi"
+  },
+  {
+    "key": "en:hams-of-san-daniele",
+    "name": "Šunke San Daniele"
+  },
+  {
+    "key": "en:dried-hams",
+    "name": "Sušene šunke"
+  },
+  {
+    "key": "en:italian-hams",
+    "name": "Talijanske šunke"
+  },
+  {
+    "key": "en:toasted-ham-sandwich-topped-with-grated-cheese",
+    "name": "Tostirani sendvič sa šunkom preliven naribanim sirom"
   },
   {
     "key": "en:tunas-in-sunflower-oil",
-    "name": "Tunas in sunflower oil"
+    "name": "Tune u suncokretovom ulju"
   },
   {
-    "key": "en:unshelled-sunflower-seeds",
-    "name": "Unshelled sunflower seeds"
+    "key": "en:ham-substitutes",
+    "name": "Zamjene za šunku"
+  },
+  {
+    "key": "en:ham-wraps",
+    "name": "Zamotuljke od šunke"
+  },
+  {
+    "key": "en:ham-and-goat-cheese-wraps",
+    "name": "Zamotuljke od šunke i kozjeg sira"
   }
 ]

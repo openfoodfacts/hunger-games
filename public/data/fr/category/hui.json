@@ -48,14 +48,6 @@
     "name": "Hareng fumé à l'huile"
   },
   {
-    "key": "en:combined-oil",
-    "name": "Huile combinée"
-  },
-  {
-    "key": "en:combined-oil-blended-vegetable-oils",
-    "name": "Huile combinée (mélange d'huiles)"
-  },
-  {
     "key": "en:apricot-kernel-oil",
     "name": "Huile d'amandes d'abricot"
   },
@@ -456,8 +448,24 @@
     "name": "Huiles"
   },
   {
-    "key": "fr:huiles-aromatisees",
+    "key": "en:flavoured-oils",
     "name": "Huiles aromatisées"
+  },
+  {
+    "key": "en:citrus-flavoured-oils",
+    "name": "Huiles aromatisées à la citron"
+  },
+  {
+    "key": "en:truffle-flavoured-oils",
+    "name": "Huiles aromatisées à la truffe"
+  },
+  {
+    "key": "en:herb-flavoured-oils",
+    "name": "Huiles aromatisées aux herbes"
+  },
+  {
+    "key": "en:spiced-flavoured-oils",
+    "name": "Huiles aromatisées épicées"
   },
   {
     "key": "en:almond-oils",
@@ -486,6 +494,22 @@
   {
     "key": "en:flavoured-olive-oils",
     "name": "Huiles d'olive aromatisées"
+  },
+  {
+    "key": "en:citrus-flavoured-olive-oils",
+    "name": "Huiles d'olive aromatisées à la citron"
+  },
+  {
+    "key": "en:truffle-flavoured-olive-oils",
+    "name": "Huiles d'olive aromatisées à la truffe"
+  },
+  {
+    "key": "en:herb-flavoured-olive-oils",
+    "name": "Huiles d'olive aromatisées aux herbes"
+  },
+  {
+    "key": "en:spiced-flavoured-olive-oils",
+    "name": "Huiles d'olive aromatisées épicées"
   },
   {
     "key": "en:olive-oils-from-south-africa",
@@ -704,6 +728,10 @@
     "name": "Huiles de colza"
   },
   {
+    "key": "en:coprah-oils",
+    "name": "Huiles de coprah"
+  },
+  {
     "key": "en:cottonseed-oils",
     "name": "Huiles de coton"
   },
@@ -844,8 +872,8 @@
     "name": "Huiles et graisses italiennes"
   },
   {
-    "key": "fr:huiles-pimentees",
-    "name": "Huiles pimentées"
+    "key": "en:hydrogenated-vegetable-oil",
+    "name": "Huiles végétales hydrogénées"
   },
   {
     "key": "en:virgin-coconut-oils",
@@ -868,6 +896,18 @@
     "name": "Huîtres plates"
   },
   {
+    "key": "fr:huitres-speciales",
+    "name": "Huîtres spéciales"
+  },
+  {
+    "key": "fr:huitres-speciales-marennes-oleron",
+    "name": "Huîtres spéciales Marennes Oléron"
+  },
+  {
+    "key": "en:stuffed-vegetables-in-oil",
+    "name": "Légumes farcis dans l'huile"
+  },
+  {
     "key": "en:mantecados-y-polvorones-with-olive-oil",
     "name": "Mantecados et polvorones á l'huile d'olive"
   },
@@ -876,8 +916,16 @@
     "name": "Mayonnaises à l'huile de tournesol"
   },
   {
+    "key": "en:mix-of-olive-oil-and-seeds-oil",
+    "name": "Mélange d'huile d'olive et de graines"
+  },
+  {
     "key": "en:mixed-vegetable-oils",
     "name": "Mélanges d'huiles"
+  },
+  {
+    "key": "en:olive-oil-mixes",
+    "name": "Mélanges de huiles d'olives"
   },
   {
     "key": "en:tuna-flakes-in-oil",
@@ -894,14 +942,6 @@
   {
     "key": "en:chopped-oyster-mushrooms",
     "name": "Pleurotes en huître émincés"
-  },
-  {
-    "key": "en:canned-oyster-mushrooms",
-    "name": "Pleurotes en huître en conserve"
-  },
-  {
-    "key": "en:whole-oyster-mushrooms",
-    "name": "Pleurotes en huître entiers"
   },
   {
     "key": "en:dried-oyster-mushrooms",
@@ -977,6 +1017,6 @@
   },
   {
     "key": "en:dried-tomato-in-oil",
-    "name": "Tomate séchée à l'huile"
+    "name": "Tomates séchées à l'huile"
   }
 ]

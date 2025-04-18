@@ -4,8 +4,8 @@
     "name": "5% beer"
   },
   {
-    "key": "en:abbey-beer",
-    "name": "Abbey beer"
+    "key": "en:altbier-beers",
+    "name": "Altbier beers"
   },
   {
     "key": "en:amber-beers",
@@ -72,6 +72,10 @@
     "name": "Beef chuck"
   },
   {
+    "key": "en:beef-cottage-pies",
+    "name": "Beef cottage pies"
+  },
+  {
     "key": "en:beef-dishes",
     "name": "Beef dishes"
   },
@@ -100,12 +104,24 @@
     "name": "Beef from Vendée"
   },
   {
+    "key": "en:beef-front-quarter",
+    "name": "Beef front quarter"
+  },
+  {
+    "key": "en:beef-hamburgers",
+    "name": "Beef hamburgers"
+  },
+  {
     "key": "en:beef-hanger-steak",
     "name": "Beef hanger steak"
   },
   {
     "key": "en:beef-heart",
     "name": "Beef heart"
+  },
+  {
+    "key": "en:beef-hotpot",
+    "name": "Beef hotpot"
   },
   {
     "key": "en:beef-jerkies",
@@ -118,6 +134,14 @@
   {
     "key": "en:beef-knuckle",
     "name": "Beef knuckle"
+  },
+  {
+    "key": "en:beef-livers",
+    "name": "Beef livers"
+  },
+  {
+    "key": "en:beef-marrowbone",
+    "name": "Beef marrowbone"
   },
   {
     "key": "en:beef-meat-balls",
@@ -146,6 +170,10 @@
   {
     "key": "en:beef-patties",
     "name": "Beef patties"
+  },
+  {
+    "key": "en:beef-pies",
+    "name": "Beef pies"
   },
   {
     "key": "en:beef-preparations",
@@ -182,6 +210,10 @@
   {
     "key": "en:beef-samosas",
     "name": "Beef samosas"
+  },
+  {
+    "key": "en:beef-sausages",
+    "name": "Beef sausages"
   },
   {
     "key": "en:beef-short-ribs",
@@ -248,6 +280,10 @@
     "name": "Beef tripes"
   },
   {
+    "key": "en:beef-wellington",
+    "name": "Beef Wellington"
+  },
+  {
     "key": "en:beemster",
     "name": "Beemster"
   },
@@ -260,8 +296,20 @@
     "name": "Beer jams"
   },
   {
+    "key": "en:beer-jellies",
+    "name": "Beer jellies"
+  },
+  {
     "key": "en:beer-sausages",
     "name": "Beer sausages"
+  },
+  {
+    "key": "en:beer-spreads",
+    "name": "Beer spreads"
+  },
+  {
+    "key": "en:beer-vinegars",
+    "name": "Beer vinegars"
   },
   {
     "key": "en:beer-based-alcoholic-beverages",
@@ -280,16 +328,12 @@
     "name": "Beers from Czech republic"
   },
   {
-    "key": "en:beers-from-dortmund",
-    "name": "Beers from Dortmund"
-  },
-  {
     "key": "en:beers-from-germany",
     "name": "Beers from Germany"
   },
   {
-    "key": "en:beers-from-ireland",
-    "name": "Beers from Ireland"
+    "key": "en:beers-from-poland",
+    "name": "Beers from Poland"
   },
   {
     "key": "en:beers-from-united-kingdom",
@@ -304,10 +348,6 @@
     "name": "Beers with fruits"
   },
   {
-    "key": "en:beers-with-low-alcohol-content",
-    "name": "Beers with low alcohol-content"
-  },
-  {
     "key": "en:beers-with-pear",
     "name": "Beers with pear"
   },
@@ -316,16 +356,20 @@
     "name": "Beers without gluten"
   },
   {
-    "key": "en:beet",
-    "name": "Beet"
-  },
-  {
     "key": "en:beet-sugars",
     "name": "Beet sugars"
   },
   {
+    "key": "en:beetroot",
+    "name": "Beetroot"
+  },
+  {
     "key": "en:beetroot-juices",
     "name": "Beetroot juices"
+  },
+  {
+    "key": "en:beetroot-pickled",
+    "name": "Beetroot(pickled)"
   },
   {
     "key": "en:beets-salads",
@@ -338,6 +382,10 @@
   {
     "key": "en:black-beers",
     "name": "Black beers"
+  },
+  {
+    "key": "en:bock-beers",
+    "name": "Bock beers"
   },
   {
     "key": "en:boiled-beef-knuckle",
@@ -376,12 +424,20 @@
     "name": "Bulgarian beers"
   },
   {
-    "key": "en:canned-beet",
-    "name": "Canned beet"
+    "key": "en:canned-beetroot",
+    "name": "Canned beetroot"
   },
   {
-    "key": "en:cherry-beers",
-    "name": "Cherry beers"
+    "key": "en:catharina-sour-beers",
+    "name": "Catharina Sour beers"
+  },
+  {
+    "key": "en:cherry-kriek-beers",
+    "name": "Cherry Kriek beers"
+  },
+  {
+    "key": "en:christmas-beers",
+    "name": "Christmas beers"
   },
   {
     "key": "en:cooked-beef-and-mutton-merguez-sausages",
@@ -448,16 +504,40 @@
     "name": "Corsican beers"
   },
   {
+    "key": "en:country-specific-beers",
+    "name": "Country specific beers"
+  },
+  {
     "key": "en:craft-beers",
     "name": "Craft beers"
   },
   {
-    "key": "en:double-beer",
-    "name": "Double beer"
+    "key": "en:danish-beers",
+    "name": "Danish beers"
+  },
+  {
+    "key": "en:doppelbock-beers",
+    "name": "Doppelbock beers"
+  },
+  {
+    "key": "en:dutch-beers",
+    "name": "Dutch beers"
+  },
+  {
+    "key": "en:eisbock-beers",
+    "name": "Eisbock beers"
+  },
+  {
+    "key": "en:estonian-beers",
+    "name": "Estonian beers"
   },
   {
     "key": "en:faro-beers",
     "name": "Faro beers"
+  },
+  {
+    "key": "en:festbier-beers",
+    "name": "Festbier beers"
   },
   {
     "key": "en:finnish-beers",
@@ -468,6 +548,10 @@
     "name": "Flavored beers"
   },
   {
+    "key": "en:framboise-beers",
+    "name": "Framboise beers"
+  },
+  {
     "key": "en:french-beers",
     "name": "French beers"
   },
@@ -476,8 +560,8 @@
     "name": "Fresh beef preparations"
   },
   {
-    "key": "en:fresh-beet",
-    "name": "Fresh beet"
+    "key": "en:fresh-beetroot",
+    "name": "Fresh beetroot"
   },
   {
     "key": "en:fresh-ground-beef-preparations",
@@ -490,6 +574,30 @@
   {
     "key": "en:fritter-filled-with-beef",
     "name": "Fritter filled with beef"
+  },
+  {
+    "key": "en:frozen-beef-carpaccio",
+    "name": "Frozen beef carpaccio"
+  },
+  {
+    "key": "en:frozen-beef-front-quarter",
+    "name": "Frozen beef front quarter"
+  },
+  {
+    "key": "en:frozen-beef-marrowbone",
+    "name": "Frozen beef marrowbone"
+  },
+  {
+    "key": "en:frozen-beef-rib-steak",
+    "name": "Frozen beef rib steak"
+  },
+  {
+    "key": "en:frozen-beef-skewers",
+    "name": "Frozen beef skewers"
+  },
+  {
+    "key": "en:frozen-ground-beef-meats",
+    "name": "Frozen ground beef meats"
   },
   {
     "key": "en:frozen-ground-beef-preparations",
@@ -540,6 +648,10 @@
     "name": "Grilled lean beef rib steak"
   },
   {
+    "key": "en:grodziskie-beers",
+    "name": "Grodziskie beers"
+  },
+  {
     "key": "en:ground-beef-meats",
     "name": "Ground beef meats"
   },
@@ -552,24 +664,48 @@
     "name": "Ground beef steaks"
   },
   {
+    "key": "en:hefeweizen-beers",
+    "name": "Hefeweizen beers"
+  },
+  {
+    "key": "en:industrial-beer",
+    "name": "Industrial beer"
+  },
+  {
     "key": "en:instant-pasta-with-beef",
     "name": "Instant pasta with beef"
+  },
+  {
+    "key": "en:irish-beers",
+    "name": "Irish beers"
   },
   {
     "key": "en:italian-beers",
     "name": "Italian beers"
   },
   {
-    "key": "en:kriek-lambic-beers",
-    "name": "Kriek lambic beers"
-  },
-  {
     "key": "en:lambic-beers",
     "name": "Lambic beers"
   },
   {
+    "key": "en:latvian-beers",
+    "name": "Latvian beers"
+  },
+  {
+    "key": "en:light-beers",
+    "name": "Light beers"
+  },
+  {
     "key": "en:lithuanian-beers",
     "name": "Lithuanian beers"
+  },
+  {
+    "key": "en:maibock-beers",
+    "name": "Maibock beers"
+  },
+  {
+    "key": "en:marzen-beers",
+    "name": "Märzen beers"
   },
   {
     "key": "en:minced-beef-steak-with-10-fat",
@@ -588,12 +724,40 @@
     "name": "Minced beef steak with 5% fat"
   },
   {
+    "key": "en:munich-helles-beers",
+    "name": "Munich Helles beers"
+  },
+  {
     "key": "en:non-alcoholic-beers",
     "name": "Non-alcoholic beers"
   },
   {
+    "key": "en:non-alcoholic-lager-beers",
+    "name": "Non-alcoholic lager beers"
+  },
+  {
+    "key": "en:non-alcoholic-organic-beers",
+    "name": "Non-alcoholic organic beers"
+  },
+  {
+    "key": "en:non-alcoholic-pilsner-beers",
+    "name": "Non-alcoholic pilsner beers"
+  },
+  {
+    "key": "en:non-alcoholic-radler-beers",
+    "name": "Non-alcoholic radler beers"
+  },
+  {
     "key": "en:non-alcoholic-wheat-beers",
     "name": "Non-alcoholic wheat beers"
+  },
+  {
+    "key": "en:norwegian-beers",
+    "name": "Norwegian beers"
+  },
+  {
+    "key": "en:oktoberfest-beers",
+    "name": "Oktoberfest beers"
   },
   {
     "key": "en:organic-beers",
@@ -604,12 +768,12 @@
     "name": "Orkney beef"
   },
   {
-    "key": "en:pasta-with-beef",
-    "name": "Pasta with beef"
+    "key": "en:packaged-beers",
+    "name": "Packaged beers"
   },
   {
-    "key": "en:pickled-beets",
-    "name": "Pickled beets"
+    "key": "en:pasta-with-beef",
+    "name": "Pasta with beef"
   },
   {
     "key": "en:pork-and-beef-merguez-sausage",
@@ -624,16 +788,28 @@
     "name": "Pure beef merguez sausage"
   },
   {
-    "key": "en:quadruple-beer",
-    "name": "Quadruple beer"
+    "key": "en:pure-malt-beers",
+    "name": "Pure malt beers"
   },
   {
-    "key": "en:red-beers",
-    "name": "Red beers"
+    "key": "en:pure-malt-blond-beers",
+    "name": "Pure malt blond beers"
+  },
+  {
+    "key": "en:radler-beers",
+    "name": "Radler beers"
+  },
+  {
+    "key": "en:raw-beetroot",
+    "name": "Raw beetroot"
   },
   {
     "key": "en:refrigerated-ground-beef-meats",
     "name": "Refrigerated ground beef meats"
+  },
+  {
+    "key": "en:regional-beers",
+    "name": "Regional beers"
   },
   {
     "key": "en:roast-beef",
@@ -656,6 +832,10 @@
     "name": "Root beer barrels candies"
   },
   {
+    "key": "en:root-beers",
+    "name": "Root beers"
+  },
+  {
     "key": "en:salami-pork-and-beef",
     "name": "Salami pork and beef"
   },
@@ -668,12 +848,36 @@
     "name": "Scotch Beef"
   },
   {
+    "key": "en:scottish-beers",
+    "name": "Scottish beers"
+  },
+  {
+    "key": "en:smoked-beers",
+    "name": "Smoked beers"
+  },
+  {
+    "key": "en:smoked-cooked-beef-meat",
+    "name": "Smoked cooked beef meat"
+  },
+  {
+    "key": "en:sour-beers",
+    "name": "Sour beers"
+  },
+  {
+    "key": "en:spanish-beers",
+    "name": "Spanish beers"
+  },
+  {
     "key": "en:special-beers",
     "name": "Special beers"
   },
   {
     "key": "en:strong-beers",
     "name": "Strong beers"
+  },
+  {
+    "key": "en:swedish-beers",
+    "name": "Swedish beers"
   },
   {
     "key": "en:swedish-style-pork-and-beef-meat-balls",
@@ -684,12 +888,28 @@
     "name": "Tongue of beef with hot sauce"
   },
   {
-    "key": "en:triple-beer",
-    "name": "Triple beer"
+    "key": "en:trappist-beers",
+    "name": "Trappist beers"
   },
   {
-    "key": "en:uncooked-beetroots",
-    "name": "Uncooked beetroots"
+    "key": "en:ukrainian-beers",
+    "name": "Ukrainian beers"
+  },
+  {
+    "key": "en:unfiltered-beers",
+    "name": "Unfiltered beers"
+  },
+  {
+    "key": "en:unpasteurized-beers",
+    "name": "Unpasteurized beers"
+  },
+  {
+    "key": "en:vacuum-packed-beetroot",
+    "name": "Vacuum-packed beetroot"
+  },
+  {
+    "key": "en:weizenbock-beers",
+    "name": "Weizenbock beers"
   },
   {
     "key": "en:welsh-beef",

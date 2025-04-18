@@ -16,15 +16,19 @@
     "name": "Croissant gevuld met room"
   },
   {
+    "key": "en:filled-croissants",
+    "name": "Croissants (gevuld)"
+  },
+  {
     "key": "en:frozen-poultry",
-    "name": "Diepvres gevogelten"
+    "name": "Diepvries gevogelten"
   },
   {
     "key": "en:doughnuts-filled-with-chocolate",
     "name": "Donuts gevuld met chocolade"
   },
   {
-    "key": "fr:beignets-fourres-a-la-framboise",
+    "key": "en:doughnuts-filled-with-raspberries",
     "name": "Donuts gevuld met framboos"
   },
   {
@@ -48,7 +52,7 @@
     "name": "Gevierendeelde champignons in blik/pot"
   },
   {
-    "key": "en:cooked-poultry-breast-slices",
+    "key": "en:poultry-hams",
     "name": "Gevogelte bilvlees"
   },
   {
@@ -136,6 +140,10 @@
     "name": "Gevriesdroogde producten"
   },
   {
+    "key": "en:filled-biscuits",
+    "name": "Gevulde biscuits"
+  },
+  {
     "key": "en:filled-buckwheat-crepes",
     "name": "Gevulde boekweitpannenkoeken"
   },
@@ -148,8 +156,12 @@
     "name": "Gevulde focaccias"
   },
   {
-    "key": "en:filled-biscuits",
-    "name": "Gevulde koekjes"
+    "key": "en:cake-with-almond-flavoured-filling",
+    "name": "Gevulde Koeken"
+  },
+  {
+    "key": "fr:biscuits-fourres-aux-fruits",
+    "name": "Gevulde koekjes met fruit"
   },
   {
     "key": "en:filled-milk-chocolates",
@@ -168,12 +180,24 @@
     "name": "Gevulde pannenknoeken"
   },
   {
+    "key": "en:crepe-filled-with-strawberries",
+    "name": "Gevulde pannenkoeken met aardbeien"
+  },
+  {
     "key": "en:stuffed-peppers",
     "name": "Gevulde paprikas"
   },
   {
+    "key": "en:pasta-stuffed-with-fish",
+    "name": "Gevulde pasta met vis"
+  },
+  {
     "key": "en:stuffed-pastas",
     "name": "Gevulde pastas"
+  },
+  {
+    "key": "en:stuffed-pastas-in-sauce",
+    "name": "Gevulde pastas in saus"
   },
   {
     "key": "en:filled-dark-chocolates",
@@ -232,12 +256,36 @@
     "name": "Pannenkoeken gevuld met jam"
   },
   {
+    "key": "en:pasta-stuffed-with-vegetables",
+    "name": "Pasta gevuld met groenten"
+  },
+  {
+    "key": "en:pasta-stuffed-with-cheese",
+    "name": "Pasta gevuld met kaas"
+  },
+  {
+    "key": "en:pasta-stuffed-with-meat",
+    "name": "Pasta gevuld met vlees"
+  },
+  {
     "key": "en:freeze-dried-plant-based-foods",
     "name": "Plantaardige gevriesdroogde producten"
   },
   {
+    "key": "en:products-that-cannot-be-found-in-metropolitan-france",
+    "name": "Producten die niet in Frankrijk gevonden kunnen worden"
+  },
+  {
     "key": "en:rice-stuffed-tomatoes",
     "name": "Tomaten gevuld met rijst"
+  },
+  {
+    "key": "en:fresh-pasta-stuffed-with-vegetables",
+    "name": "Verse pasta gevuld met groenten"
+  },
+  {
+    "key": "en:fresh-pasta-stuffed-with-cheese",
+    "name": "Verse pasta gevuld met kaas"
   },
   {
     "key": "en:chocolate-stuffed-wafers",

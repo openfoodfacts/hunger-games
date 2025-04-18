@@ -36,8 +36,16 @@
     "name": "Alsace Grand Cru Marckrain"
   },
   {
+    "key": "en:marcona-almonds",
+    "name": "Amandes Marcona"
+  },
+  {
     "key": "en:marinated-common-anchovy",
     "name": "Anchois commun mariné"
+  },
+  {
+    "key": "en:pickled-eggplants",
+    "name": "Aubergines marinées"
   },
   {
     "key": "fr:beaune-les-marconnets",
@@ -52,7 +60,7 @@
     "name": "Beaune premier cru Les Marconnets rouge"
   },
   {
-    "key": "en:pickled-beets",
+    "key": "en:beetroot-pickled",
     "name": "Betteraves marinées"
   },
   {
@@ -60,8 +68,32 @@
     "name": "Bonnes-mares"
   },
   {
+    "key": "en:butter-and-margarine-mix",
+    "name": "Butter and margarine mix"
+  },
+  {
+    "key": "en:celery-stalks-pickles",
+    "name": "Céleri-branche mariné"
+  },
+  {
+    "key": "en:pickled-cep-mushrooms",
+    "name": "Cèpes marinés"
+  },
+  {
     "key": "en:chocolate-coated-maraschino-cherries",
     "name": "Cerises au marasquin enrobées de chocolat"
+  },
+  {
+    "key": "en:pickled-mushrooms",
+    "name": "Champignons marinés"
+  },
+  {
+    "key": "en:pickled-chanterelles",
+    "name": "Chanterelles marinées"
+  },
+  {
+    "key": "en:mary-thistle",
+    "name": "Chardon-Marie"
   },
   {
     "key": "fr:chassagne-montrachet-premier-cru-tonton-marcel",
@@ -76,12 +108,24 @@
     "name": "Chassagne-Montrachet premier cru Tonton Marcel rouge"
   },
   {
+    "key": "en:pickled-white-cabbage",
+    "name": "Chou blanc mariné"
+  },
+  {
+    "key": "en:pickled-red-cabbage",
+    "name": "Chou rouge mariné"
+  },
+  {
     "key": "en:fruit-and-vegetable-preserves",
     "name": "Confitures et marmelades"
   },
   {
     "key": "fr:cotes-du-marmandais",
     "name": "Côtes du Marmandais"
+  },
+  {
+    "key": "en:squash-pickles",
+    "name": "Courge marinée"
   },
   {
     "key": "en:vanilla-flavoured-chestnut-cream",
@@ -128,6 +172,10 @@
     "name": "French grape marc spirit or grape marc"
   },
   {
+    "key": "en:marinated-seafood",
+    "name": "Fruits de mer marinés"
+  },
+  {
     "key": "en:marble-cakes",
     "name": "Gâteaux marbrés"
   },
@@ -172,7 +220,7 @@
     "name": "Givry premier cru Petit Marole rouge"
   },
   {
-    "key": "en:chestnut-ice-creams",
+    "key": "en:chestnut-ice-cream-tubs",
     "name": "Glaces aux marrons"
   },
   {
@@ -200,8 +248,16 @@
     "name": "Huîtres Marennes Oléron"
   },
   {
+    "key": "fr:huitres-speciales-marennes-oleron",
+    "name": "Huîtres spéciales Marennes Oléron"
+  },
+  {
     "key": "en:italian-grape-marc-spirit-or-grape-marc",
     "name": "Italian grape marc spirit or grape marc"
+  },
+  {
+    "key": "en:pickled-sweet-corn",
+    "name": "Maïs doux mariné"
   },
   {
     "key": "en:mantecados-y-polvorones-with-margarine",
@@ -312,6 +368,10 @@
     "name": "Maredsous"
   },
   {
+    "key": "en:margarine-perishable",
+    "name": "Margarine (Perishable)"
+  },
+  {
     "key": "en:margarines-with-plant-sterols-esters",
     "name": "Margarine aux esters de stérol végétal"
   },
@@ -372,18 +432,6 @@
     "name": "Marmelades"
   },
   {
-    "key": "en:orange-marmalades",
-    "name": "Marmelades d'oranges"
-  },
-  {
-    "key": "en:bigarade-orange-marmelades",
-    "name": "Marmelades d'oranges amères"
-  },
-  {
-    "key": "en:lemon-marmelades",
-    "name": "Marmelades de citrons"
-  },
-  {
     "key": "en:bouillon-pots",
     "name": "Marmites de bouillon"
   },
@@ -404,11 +452,15 @@
     "name": "Maroilles laitier"
   },
   {
+    "key": "fr:marquise-au-chocolat",
+    "name": "Marquise au chocolat"
+  },
+  {
     "key": "en:marrons-glaces",
     "name": "Marrons glacés"
   },
   {
-    "key": "it:marsala",
+    "key": "hr:vino-marsala",
     "name": "Marsala"
   },
   {
@@ -422,6 +474,14 @@
   {
     "key": "fr:marsannay-rose",
     "name": "Marsannay rosé"
+  },
+  {
+    "key": "en:maruboshi",
+    "name": "Maruboshi"
+  },
+  {
+    "key": "en:marzen-beers",
+    "name": "Märzen beers"
   },
   {
     "key": "fr:mercurey-premier-cru-clos-marcilly",
@@ -450,6 +510,10 @@
   {
     "key": "en:bog-bilberries",
     "name": "Myrtilles des marais"
+  },
+  {
+    "key": "en:turnips-pickles",
+    "name": "Navets marinés"
   },
   {
     "key": "fr:nuits-saint-georges-premier-cru-clos-de-la-marechale",
@@ -502,6 +566,22 @@
   {
     "key": "en:marinated-fish",
     "name": "Poisson mariné"
+  },
+  {
+    "key": "en:pumpkin-pickles",
+    "name": "Potiron mariné"
+  },
+  {
+    "key": "en:bamboo-shoots-pickles",
+    "name": "Pousses de bambou marinées"
+  },
+  {
+    "key": "en:radish-pickles",
+    "name": "Radis marinés"
+  },
+  {
+    "key": "en:red-radish-pickles",
+    "name": "Radis rouges marinés"
   },
   {
     "key": "en:retsina-of-markopoulo",
@@ -632,8 +712,16 @@
     "name": "Tartes au maroilles"
   },
   {
+    "key": "en:pickled-tomatoes",
+    "name": "Tomates marinées"
+  },
+  {
     "key": "fr:veau-marengo",
     "name": "Veau marengo"
+  },
+  {
+    "key": "en:maranta-noodles",
+    "name": "Vermicelles de marante"
   },
   {
     "key": "en:whole-marinated-green-olives",

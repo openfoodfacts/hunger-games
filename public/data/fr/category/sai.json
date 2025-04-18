@@ -72,8 +72,12 @@
     "name": "Coquilles Saint-Jacques avec noix et corail"
   },
   {
-    "key": "fr:coquilles-saint-jacques-surgelees",
+    "key": "en:frozen-scallops-with-coral",
     "name": "Coquilles Saint-Jacques surgelées"
+  },
+  {
+    "key": "en:scallops-coral",
+    "name": "Corail de coquilles Saint-Jacques"
   },
   {
     "key": "fr:coteaux-du-languedoc-coteaux-de-saint-christol",
@@ -106,10 +110,6 @@
   {
     "key": "en:strawberry-off-season-raw",
     "name": "Fraise hors saison crue"
-  },
-  {
-    "key": "en:sainte-maure-goat-cheeses",
-    "name": "Fromage de chèvre lactique affiné (type bûchette crottin Sainte-Maure)"
   },
   {
     "key": "en:cheese-from-goat-s-milk-from-raw-milk",
@@ -434,6 +434,10 @@
   {
     "key": "fr:muscat-de-saint-jean-de-minervois",
     "name": "Muscat de Saint-Jean-de-Minervois"
+  },
+  {
+    "key": "en:frozen-scallops-without-coral",
+    "name": "Noix de coquilles Saint-Jacques surgelées"
   },
   {
     "key": "en:scallop",
@@ -1400,6 +1404,10 @@
     "name": "Saint-Joseph"
   },
   {
+    "key": "fr:saint-joseph-blanc",
+    "name": "Saint-Joseph blanc"
+  },
+  {
     "key": "fr:saint-julien",
     "name": "Saint-Julien"
   },
@@ -1484,8 +1492,8 @@
     "name": "Sainte-Maure de Touraine"
   },
   {
-    "key": "en:sainte-maure-de-touraine-goat-cheese",
-    "name": "Sainte-Maure de Touraine (fromage de chèvre)"
+    "key": "en:saison-ales",
+    "name": "Saison ales"
   },
   {
     "key": "en:scallops-tart",

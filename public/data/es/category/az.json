@@ -33,7 +33,7 @@
   },
   {
     "key": "en:granulated-sugars",
-    "name": "Azúcar blanco"
+    "name": "Azúcar cristalizado"
   },
   {
     "key": "en:cane-sugar",
@@ -64,15 +64,31 @@
     "name": "Azúcar vainillado"
   },
   {
+    "key": "en:white-sugars",
+    "name": "Azúcares blancos"
+  },
+  {
+    "key": "en:cotton-candy-sugars",
+    "name": "Azúcares para algodón de azúcar"
+  },
+  {
     "key": "en:azuki-beans",
     "name": "Azukis"
+  },
+  {
+    "key": "en:beverages-from-desugared-fruit-juices",
+    "name": "Bebidas a base de jugos de frutas sin azúcar"
   },
   {
     "key": "en:sweetened-beverages",
     "name": "Bebidas azucaradas"
   },
   {
-    "key": "en:unsweetened-natural-soy-milks",
+    "key": "en:carbonated-soft-drinks-without-fruit-juice-with-sugar",
+    "name": "Bebidas carbonatadas azucaradas sin jugo de frutas"
+  },
+  {
+    "key": "en:unsweetened-plain-soy-based-drinks",
     "name": "Bebidas de soja natural sin azúcar"
   },
   {
@@ -80,8 +96,76 @@
     "name": "Bebidas no azucaradas"
   },
   {
+    "key": "en:instant-white-coffee-without-sugar",
+    "name": "Café blanco instantáneo sin azúcar"
+  },
+  {
+    "key": "en:latte",
+    "name": "Café blanco sin azúcar"
+  },
+  {
+    "key": "en:coffee-with-milk-with-sugar",
+    "name": "Café con leche con azúcar"
+  },
+  {
+    "key": "en:instant-coffee-with-milk-without-sugar",
+    "name": "Café con leche instantáneo sin azúcar"
+  },
+  {
+    "key": "en:instant-decaffeinated-coffee-without-sugar",
+    "name": "Café descafeinado instantáneo sin azúcar"
+  },
+  {
+    "key": "en:decaffeinated-coffee-without-sugar",
+    "name": "Café descafeinado sin azúcar"
+  },
+  {
+    "key": "en:espresso-coffee-without-sugar",
+    "name": "Café expreso sin azúcar"
+  },
+  {
+    "key": "en:instant-coffee-without-sugar",
+    "name": "Café instantáneo sin azúcar"
+  },
+  {
+    "key": "en:instant-cappuccino-without-sugar",
+    "name": "Cappuccino instantáneo sin azúcar"
+  },
+  {
+    "key": "en:cappuccino-without-sugar",
+    "name": "Cappuccino sin azúcar"
+  },
+  {
+    "key": "en:chewing-gum-with-sugar",
+    "name": "Chicle con azúcar"
+  },
+  {
     "key": "en:sugar-free-chewing-gum",
     "name": "Chicles sin azúcar"
+  },
+  {
+    "key": "en:cola-with-sugar",
+    "name": "Cola con azúcar"
+  },
+  {
+    "key": "en:cola-with-sugar-and-artificial-sweetener",
+    "name": "Cola con azúcar y edulcorantes artificiales"
+  },
+  {
+    "key": "en:cola-with-sugar-and-without-caffeine",
+    "name": "Cola con azúcar y sin cafeína"
+  },
+  {
+    "key": "fr:compotes-sans-sucres",
+    "name": "Compotas sin azúcar"
+  },
+  {
+    "key": "en:vegetarian-cordons-bleus",
+    "name": "Cordones azules vegetarianos"
+  },
+  {
+    "key": "en:sugarfree-candies",
+    "name": "Golosinas sin azúcar"
   },
   {
     "key": "en:orange-blossom-honeys",
@@ -92,7 +176,7 @@
     "name": "Palomitas azucaradas"
   },
   {
-    "key": "en:sugar-coated-pinenuts",
+    "key": "en:caramelized-pine-nuts",
     "name": "Piñones cubiertos de azúcar"
   },
   {
@@ -106,5 +190,9 @@
   {
     "key": "en:sugar-substitutes",
     "name": "Sustitutos del azúcar"
+  },
+  {
+    "key": "en:yogurts-with-fruits-and-sugar",
+    "name": "Yogures con frutas y azúcar"
   }
 ]

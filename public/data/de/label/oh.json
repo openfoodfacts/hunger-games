@@ -8,12 +8,20 @@
     "name": "Hühneraufzucht ohne Antibiotika"
   },
   {
+    "key": "en:chickens-raised-without-antibiotics-since-birth",
+    "name": "Hühneraufzucht ohne Antibiotika seit der Geburt"
+  },
+  {
     "key": "en:without",
     "name": "Ohne"
   },
   {
     "key": "en:no-alcohol",
     "name": "Ohne Alkohol"
+  },
+  {
+    "key": "en:without-allergens",
+    "name": "Ohne Allergene"
   },
   {
     "key": "en:no-antibiotics",
@@ -36,8 +44,16 @@
     "name": "Ohne Bisphenol-A"
   },
   {
+    "key": "en:without-brown-muscle",
+    "name": "Ohne braunen Muskel"
+  },
+  {
     "key": "en:no-eggs",
     "name": "Ohne Ei"
+  },
+  {
+    "key": "en:no-emulsifiers",
+    "name": "Ohne Emulgatoren"
   },
   {
     "key": "en:no-peanuts",
@@ -56,8 +72,12 @@
     "name": "Ohne Fett"
   },
   {
+    "key": "en:no-fructose-syrup",
+    "name": "Ohne Fruktose-Sirup"
+  },
+  {
     "key": "en:no-gelatin",
-    "name": "Ohne Gelatin"
+    "name": "Ohne Gelatine"
   },
   {
     "key": "de:ohne-gentechnik",
@@ -68,8 +88,20 @@
     "name": "Ohne Gentechnik hergestellt"
   },
   {
+    "key": "en:saturated-fat-free",
+    "name": "Ohne gesättigte Fettsäuren"
+  },
+  {
     "key": "en:no-flavour-enhancer",
     "name": "Ohne Geschmacksverstärker"
+  },
+  {
+    "key": "en:no-glucose-fructose-syrup",
+    "name": "Ohne Glukose-Fruktose-Sirup"
+  },
+  {
+    "key": "en:no-glucose-syrup",
+    "name": "Ohne Glukosesirup"
   },
   {
     "key": "en:without-hormones",
@@ -84,6 +116,10 @@
     "name": "Ohne künstliche Aromen"
   },
   {
+    "key": "fr:sans-aromes-ni-colorants-artificiels",
+    "name": "Ohne künstliche Aromen und Farbstoffe"
+  },
+  {
     "key": "en:no-artificial-colors",
     "name": "Ohne künstliche Farbstoffe"
   },
@@ -96,7 +132,7 @@
     "name": "Ohne künstliche Konservierungsstoffe"
   },
   {
-    "key": "bg:без-изкуствени-добавки",
+    "key": "en:no-artificial-additives",
     "name": "Ohne künstliche Zusätze"
   },
   {
@@ -118,6 +154,14 @@
   {
     "key": "en:without-sodium-nitrite",
     "name": "Ohne Natriumnitrit"
+  },
+  {
+    "key": "en:no-nuts",
+    "name": "Ohne Nüsse"
+  },
+  {
+    "key": "en:without-oil",
+    "name": "Ohne Öl"
   },
   {
     "key": "en:no-palm-oil",
@@ -144,6 +188,10 @@
     "name": "Ohne Schwefel"
   },
   {
+    "key": "en:fed-without-soy",
+    "name": "Ohne Soja gefüttert"
+  },
+  {
     "key": "en:without-sulfites",
     "name": "Ohne Sulfite"
   },
@@ -154,6 +202,10 @@
   {
     "key": "en:no-trans-fat",
     "name": "Ohne Transfette"
+  },
+  {
+    "key": "en:no-trans-fat-and-preservatives",
+    "name": "Ohne Transfette und Konservierungsstoffe"
   },
   {
     "key": "en:no-thickening-agent",

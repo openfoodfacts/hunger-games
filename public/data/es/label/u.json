@@ -44,16 +44,20 @@
     "name": "Fairtrade USA"
   },
   {
-    "key": "bg:произведено-в-европейския-съюз",
+    "key": "en:made-in-the-eu",
     "name": "Hecho en la UE"
+  },
+  {
+    "key": "en:inspected-for-wholesomeness-by-the-u-s-department-of-agriculture",
+    "name": "Inspected for wholesomeness by the U.S. Department of Agriculture"
   },
   {
     "key": "en:kosher-under-supervision-of-rabbi-weitman-tnuva",
     "name": "Kosher under supervision of Rabbi Weitman Tnuva"
   },
   {
-    "key": "en:not-suited-for-children-under-1-years",
-    "name": "Not suited for children under 1 years"
+    "key": "en:isomaltulose-is-a-source-of-glucose-and-fructose",
+    "name": "La isomaltulosa es una fuente de glucosa y fructosa"
   },
   {
     "key": "en:products-for-professional-use",
@@ -132,6 +136,10 @@
     "name": "UA-BIO-177"
   },
   {
+    "key": "en:ufsbd",
+    "name": "UFSBD"
+  },
+  {
     "key": "en:ug-bio-102",
     "name": "UG-BIO-102"
   },
@@ -204,10 +212,6 @@
     "name": "Un consumo excesivo puede tener efectos laxantes"
   },
   {
-    "key": "en:unfiltered",
-    "name": "Unfiltered"
-  },
-  {
     "key": "en:unfrozen",
     "name": "Unfrozen"
   },
@@ -230,10 +234,6 @@
   {
     "key": "en:european-vegetarian-union-vegan",
     "name": "Unión Vegetariana y vegana Europea"
-  },
-  {
-    "key": "en:unpasteurized",
-    "name": "Unpasteurized"
   },
   {
     "key": "en:us-bio-140",
@@ -262,6 +262,10 @@
   {
     "key": "en:utz-certified-cocoa",
     "name": "UTZ Certified Cocoa"
+  },
+  {
+    "key": "en:utz-certified-hazelnut",
+    "name": "UTZ Certified Hazelnut"
   },
   {
     "key": "en:utz-certified-tea",

@@ -116,10 +116,6 @@
     "name": "Fried cheese"
   },
   {
-    "key": "en:fried-chicken-wraps",
-    "name": "Fried chicken wraps"
-  },
-  {
     "key": "en:fried-common-sole",
     "name": "Fried common sole"
   },
@@ -146,6 +142,10 @@
   {
     "key": "en:fried-squid",
     "name": "Fried Squid"
+  },
+  {
+    "key": "en:fried-unsalted-rice-noodles",
+    "name": "Fried unsalted rice noodles"
   },
   {
     "key": "en:fried-whiting",
@@ -248,8 +248,8 @@
     "name": "Meat fritters"
   },
   {
-    "key": "en:microwave-fries",
-    "name": "Microwave fries"
+    "key": "en:pecan-nuts-roasted-and-salted",
+    "name": "Nueces pecanas fritas y saladas"
   },
   {
     "key": "en:pan-fried-calf-sweetbread",
@@ -268,8 +268,16 @@
     "name": "Papas fritas congeladas"
   },
   {
+    "key": "en:microwave-fries",
+    "name": "Papas fritas para microondas"
+  },
+  {
     "key": "en:fries",
     "name": "Patatas fritas"
+  },
+  {
+    "key": "fr:chips-a-la-moutarde",
+    "name": "Patatas fritas con mostaza"
   },
   {
     "key": "en:frozen-fries",
@@ -324,11 +332,19 @@
     "name": "Sweet Fritters"
   },
   {
+    "key": "en:takeaway-fries",
+    "name": "Takeaway fries"
+  },
+  {
     "key": "en:toasted-ham-sandwich-topped-with-grated-cheese-and-a-fried-egg",
     "name": "Toasted ham sandwich topped with grated cheese and a fried egg"
   },
   {
     "key": "en:vegetable-fritters",
     "name": "Vegetable fritters"
+  },
+  {
+    "key": "en:fried-chicken-wraps",
+    "name": "Wraps de pollo frito"
   }
 ]

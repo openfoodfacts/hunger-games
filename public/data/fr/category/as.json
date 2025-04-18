@@ -4,6 +4,10 @@
     "name": "Ascophylle noueux séché"
   },
   {
+    "key": "en:asafoetida",
+    "name": "Ase fétide"
+  },
+  {
     "key": "bg:асеновград",
     "name": "Asenovgrad"
   },
@@ -12,7 +16,7 @@
     "name": "Ashdown Foresters"
   },
   {
-    "key": "it:asiago",
+    "key": "en:asiago",
     "name": "Asiago"
   },
   {
@@ -20,11 +24,7 @@
     "name": "Aspartames"
   },
   {
-    "key": "en:boiled-asparagus",
-    "name": "Asperge bouillie"
-  },
-  {
-    "key": "fr:asperge-des-sables-des-landes",
+    "key": "en:asparagus-from-sable-des-landes",
     "name": "Asperge des sables des Landes"
   },
   {
@@ -68,12 +68,8 @@
     "name": "Asperges pelées"
   },
   {
-    "key": "fr:asperges-pelees-a-la-main",
-    "name": "Asperges pelées à la main"
-  },
-  {
-    "key": "en:wild-asparagus",
-    "name": "Asperges sauvages"
+    "key": "en:prepared-asparagus",
+    "name": "Asperges préparées"
   },
   {
     "key": "en:frozen-asparagus",
@@ -100,6 +96,22 @@
     "name": "Asperges violettes"
   },
   {
+    "key": "en:aspic",
+    "name": "Aspic"
+  },
+  {
+    "key": "en:vegetable-aspic",
+    "name": "Aspic de légumes"
+  },
+  {
+    "key": "en:fish-aspic",
+    "name": "Aspic de poisson"
+  },
+  {
+    "key": "en:meat-aspic",
+    "name": "Aspic de viande"
+  },
+  {
     "key": "en:baby-dishes",
     "name": "Assiettes pour bébé"
   },
@@ -116,28 +128,128 @@
     "name": "Assortiments chipolatas et merguez"
   },
   {
+    "key": "en:variety-packs",
+    "name": "Assortiments d'aliments"
+  },
+  {
+    "key": "en:prepared-foods-variety-packs",
+    "name": "Assortiments d'aliments préparés"
+  },
+  {
+    "key": "en:condiment-variety-packs",
+    "name": "Assortiments d'assaisonnements"
+  },
+  {
+    "key": "en:herbs-spices-extracts-variety-packs",
+    "name": "Assortiments d'herbes et épices"
+  },
+  {
+    "key": "en:ice-cream-bar-variety-packs",
+    "name": "Assortiments de bâtonnets glacés"
+  },
+  {
     "key": "en:assortments-of-biscuits",
     "name": "Assortiments de biscuits"
+  },
+  {
+    "key": "en:beverage-variety-packs",
+    "name": "Assortiments de boissons"
+  },
+  {
+    "key": "en:alcoholic-beverages-variety-packs",
+    "name": "Assortiments de boissons alcoolisées"
+  },
+  {
+    "key": "en:non-alcoholic-beverages-variety-packs",
+    "name": "Assortiments de boissons non alcoolisées"
+  },
+  {
+    "key": "en:non-alcoholic-instant-beverages-variety-packs",
+    "name": "Assortiments de Boissons non alcoolisées instantanés"
   },
   {
     "key": "en:assorted-chocolate-candies",
     "name": "Assortiments de bonbons de chocolat"
   },
   {
+    "key": "en:coffee-and-tea-variety-packs",
+    "name": "Assortiments de cafés et thés"
+  },
+  {
+    "key": "en:cereal-variety-packs",
+    "name": "Assortiments de céréales - grains et légumes secs"
+  },
+  {
     "key": "en:assorted-chocolates",
     "name": "Assortiments de chocolats"
+  },
+  {
+    "key": "en:pickles-relishes-chutneys-olives-variety-packs",
+    "name": "Assortiments de conserves au vinaigre et olives"
+  },
+  {
+    "key": "en:sweetener-variety-packs",
+    "name": "Assortiments de édulcorants"
+  },
+  {
+    "key": "en:fruits-vegetables-nuts-seeds-variety-packs",
+    "name": "Assortiments de Fruits - Légumes - Noix et Graines"
+  },
+  {
+    "key": "en:fruits-nuts-seed-variety-packs",
+    "name": "Assortiments de Fruits - Noix et Graines"
+  },
+  {
+    "key": "en:biscuits-or-cookies-variety-packs",
+    "name": "Assortiments de gâteaux secs et biscuits"
   },
   {
     "key": "fr:assortiments-de-macarons",
     "name": "Assortiments de macarons"
   },
   {
+    "key": "en:bakery-product-variety-packs",
+    "name": "Assortiments de pains et produits de boulangerie"
+  },
+  {
+    "key": "en:sweet-spread-variety-packs",
+    "name": "Assortiments de pâtes à tartiner sucrées"
+  },
+  {
+    "key": "en:fruit-paste-variety-packs",
+    "name": "Assortiments de pâtes de fruits"
+  },
+  {
+    "key": "en:pepper-variety-packs",
+    "name": "Assortiments de poivrons et piments"
+  },
+  {
+    "key": "en:dairy-variety-packs",
+    "name": "Assortiments de produits laitiers"
+  },
+  {
+    "key": "en:sauces-and-condiments-variety-packs",
+    "name": "Assortiments de sauces et condiments"
+  },
+  {
     "key": "fr:assortiments-de-saucisses",
     "name": "Assortiments de saucisses"
   },
   {
+    "key": "en:snacks-variety-packs",
+    "name": "Assortiments de snacks"
+  },
+  {
     "key": "en:sushi-medley",
     "name": "Assortiments de sushi"
+  },
+  {
+    "key": "en:mongolian-milkvetch",
+    "name": "Astragale de Mongolie"
+  },
+  {
+    "key": "en:baby-infant-foods-beverages-variety-packs",
+    "name": "Bébés/Nourrissons - assortiments de nourriture"
   },
   {
     "key": "en:seasoned-grated-carrots",
@@ -166,6 +278,10 @@
   {
     "key": "en:aspartame-in-powder",
     "name": "Édulcorant à l'aspartame en poudre"
+  },
+  {
+    "key": "en:flavoured-asian-noodles",
+    "name": "Flavoured Asian noodles"
   },
   {
     "key": "en:frozen-chopped-green-asparagus",
@@ -204,11 +320,19 @@
     "name": "Poêlée de légumes assaisonnés surgelée sans champignons"
   },
   {
+    "key": "en:asparagus-heads",
+    "name": "Pointes d'asperges"
+  },
+  {
+    "key": "en:asparagus-soups-reheatable",
+    "name": "Soupe aux asperges à réchauffer"
+  },
+  {
     "key": "en:asparagus-soups",
     "name": "Soupes aux asperges"
   },
   {
-    "key": "en:dehydrated-asparagus-soup",
+    "key": "en:dehydrated-asparagus-soups",
     "name": "Soupes aux asperges déshydratées"
   },
   {

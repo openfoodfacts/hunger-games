@@ -36,8 +36,20 @@
     "name": "Alitas de pollo"
   },
   {
+    "key": "en:ground-almonds",
+    "name": "Almendras en polvo"
+  },
+  {
     "key": "en:powdered-saffron",
     "name": "Azafrán en polvo"
+  },
+  {
+    "key": "en:beers-from-poland",
+    "name": "Beers from Poland"
+  },
+  {
+    "key": "fr:sandwichs-polaires",
+    "name": "Bocadillos polares"
   },
   {
     "key": "en:breaded-alaska-pollock",
@@ -52,12 +64,20 @@
     "name": "Cacaos y chocolates en polvo"
   },
   {
+    "key": "en:instant-powder-for-coffee-with-milk",
+    "name": "Café con leche en polvo instantáneo"
+  },
+  {
     "key": "en:vegetable-bouillon-powders",
     "name": "Caldos de verduras en polvo"
   },
   {
     "key": "en:bouillon-powders",
     "name": "Caldos en polvo"
+  },
+  {
+    "key": "en:instant-powder-for-cappuccino-with-chocolate",
+    "name": "Cappuccino de chocolate en polvo instantáneo"
   },
   {
     "key": "en:powdered-cappucino",
@@ -68,7 +88,11 @@
     "name": "Cayena en polvo"
   },
   {
-    "key": "en:chocolate-powders",
+    "key": "en:instant-cereal-powder-to-be-reconstituted-for-baby-from-6-months",
+    "name": "Cereal en polvo instantáneo para bebés a partir de 6 meses"
+  },
+  {
+    "key": "en:instant-chocolate-powders",
     "name": "Chocolates en polvo"
   },
   {
@@ -78,6 +102,10 @@
   {
     "key": "en:meals-with-chicken",
     "name": "Comidas con pollo"
+  },
+  {
+    "key": "en:chicken-curry",
+    "name": "Curry de pollo"
   },
   {
     "key": "en:curry-powder",
@@ -92,12 +120,20 @@
     "name": "Empanada de pollo"
   },
   {
+    "key": "en:chicken-and-mushroom-pies",
+    "name": "Empanadas de pollo y champiñones"
+  },
+  {
     "key": "en:cooked-chicken-breast-slices",
     "name": "Fiambre de pechuga de pollo"
   },
   {
-    "key": "en:fresh-pollen",
-    "name": "Fresh pollen"
+    "key": "en:frozen-alaska-pollock",
+    "name": "Frozen Alaska pollock"
+  },
+  {
+    "key": "en:chicken-hamburgers",
+    "name": "Hamburguesas de pollo"
   },
   {
     "key": "en:milk-powders",
@@ -212,6 +248,10 @@
     "name": "Menta poleo"
   },
   {
+    "key": "en:chicken-thighs",
+    "name": "Muslos de pollo"
+  },
+  {
     "key": "en:chicken-nems",
     "name": "Nems de pollo"
   },
@@ -222,10 +262,6 @@
   {
     "key": "en:powdered-panela",
     "name": "Panela en polvo"
-  },
-  {
-    "key": "en:partially-dried-pollen",
-    "name": "Partially dried pollen"
   },
   {
     "key": "en:chicken-breasts",
@@ -256,6 +292,14 @@
     "name": "Polen"
   },
   {
+    "key": "en:fresh-pollen",
+    "name": "Polen fresco"
+  },
+  {
+    "key": "en:partially-dried-pollen",
+    "name": "Polen parcialmente seco"
+  },
+  {
     "key": "en:polish-bakery-products",
     "name": "Polish bakery products"
   },
@@ -266,6 +310,14 @@
   {
     "key": "en:polish-meat-products",
     "name": "Polish meat products"
+  },
+  {
+    "key": "en:polish-pickles",
+    "name": "Polish pickles"
+  },
+  {
+    "key": "en:polish-salts",
+    "name": "Polish salts"
   },
   {
     "key": "en:polish-vodkas",
@@ -284,16 +336,44 @@
     "name": "Pollo"
   },
   {
+    "key": "en:roast-chicken",
+    "name": "Pollo asado"
+  },
+  {
     "key": "es:pollo-del-prat",
     "name": "Pollo del Prat"
+  },
+  {
+    "key": "en:breaded-chicken",
+    "name": "Pollo empanado"
+  },
+  {
+    "key": "en:chicken-kievs",
+    "name": "Pollo Kiev"
   },
   {
     "key": "en:cooked-chicken",
     "name": "Pollo Preparado"
   },
   {
+    "key": "en:tandoori-chicken",
+    "name": "Pollo tandoori"
+  },
+  {
+    "key": "en:chicken-tikka",
+    "name": "Pollo tikka"
+  },
+  {
+    "key": "en:chicken-tikka-masala",
+    "name": "Pollo tikka masala"
+  },
+  {
     "key": "es:pollo-y-capon-del-prat",
     "name": "Pollo y Capón del Prat"
+  },
+  {
+    "key": "en:chicken-and-its-products",
+    "name": "Pollo y sus productos"
   },
   {
     "key": "en:pollock-fillets",
@@ -352,8 +432,8 @@
     "name": "Suero en polvo"
   },
   {
-    "key": "en:traditional-lithuanian-polish-cakes",
-    "name": "Traditional Lithuanian-Polish cakes"
+    "key": "fr:tortellini-au-poulet",
+    "name": "Tortellini de pollo"
   },
   {
     "key": "en:unsalted-polenta",
@@ -362,5 +442,13 @@
   {
     "key": "en:vanilla-powder",
     "name": "Vainilla en polvo"
+  },
+  {
+    "key": "en:chicken-wraps",
+    "name": "Wraps de pollo"
+  },
+  {
+    "key": "en:fried-chicken-wraps",
+    "name": "Wraps de pollo frito"
   }
 ]

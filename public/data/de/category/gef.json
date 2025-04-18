@@ -4,8 +4,24 @@
     "name": "Crêpes gefüllt mit Schokolade"
   },
   {
+    "key": "en:crepe-filled-with-strawberries",
+    "name": "Crêpes mit Erdbeeren gefüllt"
+  },
+  {
+    "key": "en:fresh-pasta-stuffed-with-vegetables",
+    "name": "Frische Pasta gefüllt mit Gemüse"
+  },
+  {
+    "key": "en:fresh-pasta-stuffed-with-cheese",
+    "name": "Frische Pasta mit Käse gefüllt"
+  },
+  {
     "key": "en:poultries",
     "name": "Geflügel"
+  },
+  {
+    "key": "en:poultry-broth",
+    "name": "Geflügelbrühen"
   },
   {
     "key": "en:poultry-rillettes",
@@ -14,6 +30,10 @@
   {
     "key": "en:poultry-meals",
     "name": "Geflügelgerichte"
+  },
+  {
+    "key": "en:poultry-liver",
+    "name": "Geflügelleber"
   },
   {
     "key": "de:geflügelleberwürste",
@@ -32,8 +52,12 @@
     "name": "Geflügelsandwiches"
   },
   {
-    "key": "en:cooked-poultry-breast-slices",
+    "key": "en:poultry-hams",
     "name": "Geflügelschinken"
+  },
+  {
+    "key": "en:poultry-skewers",
+    "name": "Geflügelspieße"
   },
   {
     "key": "en:poultry-terrines",
@@ -60,8 +84,24 @@
     "name": "Gefriergetrocknete Lebensmittel"
   },
   {
+    "key": "en:lyophilized-parsley",
+    "name": "Gefriergetrocknete Petersilie"
+  },
+  {
+    "key": "en:freeze-dried-plant-based-foods",
+    "name": "Gefriergetrocknete pflanzliche Lebensmittel"
+  },
+  {
+    "key": "en:lyophilized-ginger",
+    "name": "Gefriergetrockneter Ingwer"
+  },
+  {
     "key": "en:lyophilized-chives",
     "name": "Gefriergetrockneter Schnittlauch"
+  },
+  {
+    "key": "en:freeze-dried-vegetables",
+    "name": "Gefriergetrocknetes Gemüse"
   },
   {
     "key": "en:frozen-green-peppers",
@@ -212,6 +252,10 @@
     "name": "Gefrorene Pommes"
   },
   {
+    "key": "en:frozen-lorraine-quiche",
+    "name": "Gefrorene Quiche Lorraine"
+  },
+  {
     "key": "en:frozen-ground-beef-preparations",
     "name": "Gefrorene Rinderhackprodukte"
   },
@@ -276,8 +320,16 @@
     "name": "Gefüllte Crêpes"
   },
   {
+    "key": "en:filled-croissants",
+    "name": "Gefüllte Croissants"
+  },
+  {
     "key": "en:filled-dark-chocolates",
     "name": "Gefüllte dunkle Schokolade"
+  },
+  {
+    "key": "en:filled-gnocchi",
+    "name": "Gefüllte Gnocchi"
   },
   {
     "key": "en:green-stuffed-olives",
@@ -304,12 +356,20 @@
     "name": "Gefüllte Nudeln"
   },
   {
+    "key": "en:stuffed-pastas-in-sauce",
+    "name": "Gefüllte Nudeln in Sauce"
+  },
+  {
     "key": "en:stuffed-olives",
     "name": "Gefüllte Oliven"
   },
   {
     "key": "en:filled-chocolates",
     "name": "Gefüllte Schokolade"
+  },
+  {
+    "key": "en:filled-chocolate-eggs",
+    "name": "Gefüllte Schokoladeneier"
   },
   {
     "key": "en:stuffed-waffles",
@@ -320,6 +380,10 @@
     "name": "Gefüllte Weinblätter"
   },
   {
+    "key": "en:filled-white-chocolates",
+    "name": "Gefüllte weiße Schokoladen"
+  },
+  {
     "key": "en:stuffed-vegetables",
     "name": "Gefülltes Gemüse"
   },
@@ -328,12 +392,20 @@
     "name": "Gekochtes Geflügel"
   },
   {
+    "key": "en:pasta-stuffed-with-vegetables",
+    "name": "Gemüse gefüllte Pasta"
+  },
+  {
     "key": "en:green-olives-stuffed-of-almond",
     "name": "Grüne Oliven gefüllt mit Mandeln"
   },
   {
     "key": "en:chocolate-sandwich-cookies",
     "name": "Kakao Kekse gefüllt mit Vanillegeschmack"
+  },
+  {
+    "key": "en:pasta-stuffed-with-cheese",
+    "name": "Käse gefüllte Pasta"
   },
   {
     "key": "en:croissant-filled-with-jam",

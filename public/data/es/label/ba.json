@@ -44,6 +44,10 @@
     "name": "Bajo contenido de azúcar"
   },
   {
+    "key": "en:low-saturated-fat",
+    "name": "Bajo contenido de grasas saturadas"
+  },
+  {
     "key": "en:low-fat",
     "name": "Bajo en grasas"
   },
@@ -68,12 +72,24 @@
     "name": "Bajo o sin grasas"
   },
   {
+    "key": "en:low-or-no-sodium",
+    "name": "Bajo o sin sodio"
+  },
+  {
+    "key": "en:certified-plant-based",
+    "name": "Certified plant based"
+  },
+  {
     "key": "en:do-manzanilla-sanlucar-de-barrameda",
     "name": "DO Manzanilla-Sanlúcar de Barrameda"
   },
   {
     "key": "en:pgi-alubia-de-la-baneza-leon",
     "name": "IGP Alubia de La Bañeza-León"
+  },
+  {
+    "key": "en:rainforest-alliance-bananas",
+    "name": "Rainforest Alliance Bananas"
   },
   {
     "key": "en:rspo-mass-balance",

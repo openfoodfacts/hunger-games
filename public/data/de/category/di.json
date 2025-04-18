@@ -100,6 +100,10 @@
     "name": "Dill"
   },
   {
+    "key": "en:dill-pickles",
+    "name": "Dill pickles"
+  },
+  {
     "key": "en:spelts",
     "name": "Dinkel"
   },
@@ -128,8 +132,12 @@
     "name": "Dinkelmehle Type 812"
   },
   {
-    "key": "en:spelt-milks",
+    "key": "en:spelt-based-drinks",
     "name": "Dinkelmilch"
+  },
+  {
+    "key": "en:spelt-pastas",
+    "name": "Dinkelteigwaren"
   },
   {
     "key": "en:spelt-rusks",
@@ -140,7 +148,7 @@
     "name": "Dips"
   },
   {
-    "key": "en:squeezed-juices",
+    "key": "en:squeezed-fruit-juices",
     "name": "Direktsäfte"
   },
   {
@@ -162,6 +170,14 @@
   {
     "key": "en:distilled-beverages",
     "name": "Distilled beverages"
+  },
+  {
+    "key": "en:dressings-and-dips-shelf-stable",
+    "name": "Dressings and Dips (Shelf Stable)"
+  },
+  {
+    "key": "en:dried-dill",
+    "name": "Dried dill"
   },
   {
     "key": "en:crabgrass",
@@ -208,20 +224,12 @@
     "name": "Hare dishes"
   },
   {
-    "key": "en:high-digestible-milk",
-    "name": "High digestible milk"
-  },
-  {
     "key": "en:honey-dill-sauces",
     "name": "Honey dill sauces"
   },
   {
     "key": "en:lemon-base-for-beverage-without-sugar-to-be-diluted",
     "name": "Lemon base for beverage without sugar to be diluted"
-  },
-  {
-    "key": "en:lentil-dishes",
-    "name": "Lentil dishes"
   },
   {
     "key": "en:mint-flavoured-syrup-with-sugar-diluted-in-water",
@@ -272,10 +280,6 @@
     "name": "Posten die im Februar 2013 aus dem Handel genommen wurden"
   },
   {
-    "key": "en:potato-dishes",
-    "name": "Potato dishes"
-  },
-  {
     "key": "en:products-for-specific-diets",
     "name": "Products for specific diets"
   },
@@ -310,10 +314,6 @@
   {
     "key": "en:unfortified-diet-chocolate-breakfast-cereals",
     "name": "Unfortified diet chocolate breakfast cereals"
-  },
-  {
-    "key": "en:veal-meat-dishes",
-    "name": "Veal meat dishes"
   },
   {
     "key": "en:vegetable-dish-for-babies-from-12-months-with-starch-and-fish",

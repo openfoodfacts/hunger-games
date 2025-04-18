@@ -1,5 +1,17 @@
 [
   {
+    "key": "en:potatoes-from-france",
+    "name": "Aardappelen uit Frankrijk"
+  },
+  {
+    "key": "en:potatoes-from-italy",
+    "name": "Aardappelen uit Italië"
+  },
+  {
+    "key": "en:potatoes-from-spain",
+    "name": "Aardappelen uit Spanje"
+  },
+  {
     "key": "en:strawberry-off-season-raw",
     "name": "Aardbeien (uit de kas)"
   },
@@ -12,7 +24,7 @@
     "name": "Acaciahoningen uit de Jura"
   },
   {
-    "key": "en:pineapple-from-concentrate",
+    "key": "en:pineapple-juices-from-concentrate",
     "name": "Ananassappen uit concentraat"
   },
   {
@@ -30,6 +42,10 @@
   {
     "key": "en:american-beers",
     "name": "Bier uit de Verenigde Staten van Amerika"
+  },
+  {
+    "key": "en:beers-from-poland",
+    "name": "Bieren uit Polen"
   },
   {
     "key": "fr:miels-de-fleurs-d-alsace",
@@ -100,6 +116,14 @@
     "name": "Grapefruitsappen uit concentraat"
   },
   {
+    "key": "en:vegetables-from-italy",
+    "name": "Groenten uit Italië"
+  },
+  {
+    "key": "en:vegetables-from-the-netherlands",
+    "name": "Groenten uit Nederland"
+  },
+  {
     "key": "en:french-gruyeres",
     "name": "Gruyère uit Frankrijk"
   },
@@ -110,6 +134,10 @@
   {
     "key": "en:hams-of-san-daniele",
     "name": "Ham uit San Daniele"
+  },
+  {
+    "key": "en:hazelnuts-from-cervione",
+    "name": "Hazelnoten uit Cervione"
   },
   {
     "key": "fr:miels-d-aquitaine",
@@ -172,6 +200,42 @@
     "name": "Kazen uit Corsica"
   },
   {
+    "key": "en:cypriot-cheeses",
+    "name": "Kazen uit Cyprus"
+  },
+  {
+    "key": "en:coffees-from-costa-rica",
+    "name": "Koffie uit Costa Rica"
+  },
+  {
+    "key": "en:philippine-coffee",
+    "name": "Koffie uit de Filipijnen"
+  },
+  {
+    "key": "en:coffee-from-ivory-coast",
+    "name": "Koffie uit Ivoorkust"
+  },
+  {
+    "key": "en:coffees-from-laos",
+    "name": "Koffie uit Laos"
+  },
+  {
+    "key": "en:coffees-from-madagascar",
+    "name": "Koffie uit Madagascar"
+  },
+  {
+    "key": "en:coffees-from-nicaragua",
+    "name": "Koffie uit Nicaragua"
+  },
+  {
+    "key": "en:coffee-from-ouganda",
+    "name": "Koffie uit Oeganda"
+  },
+  {
+    "key": "en:coffees-from-tanzania",
+    "name": "Koffie uit Tanzania"
+  },
+  {
     "key": "en:lime-juices-from-concentrate",
     "name": "Limoensappen uit concentraat"
   },
@@ -190,6 +254,10 @@
   {
     "key": "en:nougats-from-montelimar",
     "name": "Noga uit Montélimar"
+  },
+  {
+    "key": "en:french-nuts",
+    "name": "Noten uit Frankrijk"
   },
   {
     "key": "en:olive-oils-from-agios-mattheos-kerkyras",
@@ -728,6 +796,10 @@
     "name": "Olijfoliën uit ZuidArgentina"
   },
   {
+    "key": "en:olive-oils-from-hungary",
+    "name": "Olijfolies uit Hongarije"
+  },
+  {
     "key": "fr:pates-d-alsace",
     "name": "Pastas uit de Alsace"
   },
@@ -756,6 +828,10 @@
     "name": "Potjesvlees uit de Westhoek"
   },
   {
+    "key": "en:runner-beans-from-styria",
+    "name": "Pronkbonen uit Stiermarken"
+  },
+  {
     "key": "en:plum-juices-from-concentrate",
     "name": "Pruimensappen uit concentraat"
   },
@@ -764,7 +840,7 @@
     "name": "Quinoa uit Frankrijk (gekookt)"
   },
   {
-    "key": "en:quinoa-fr-raw",
+    "key": "en:raw-quinoa-from-france",
     "name": "Quinoa uit Frankrijk (ongekookt)"
   },
   {
@@ -824,6 +900,14 @@
     "name": "Uit de handel genomen voor februari 2013"
   },
   {
+    "key": "en:walnuts-from-the-perigord",
+    "name": "Walnoten uit de Périgord"
+  },
+  {
+    "key": "en:walnuts-from-grenoble",
+    "name": "Walnoten uit Grenoble"
+  },
+  {
     "key": "fr:eau-de-vie-de-vin-originaire-du-centre-est",
     "name": "Wijn eau-de-vies uit de Centre-Est"
   },
@@ -864,16 +948,28 @@
     "name": "Wijn-eau-de-vies uit de Côtes-du-Rhône"
   },
   {
-    "key": "fr:eau-de-vie-de-vin-de-la-marne",
-    "name": "Wijn-eau-de-vies uit de Marne"
-  },
-  {
     "key": "fr:eau-de-vie-de-vin-originaire-de-provence",
     "name": "Wijn-eau-de-vies uit de Provence"
   },
   {
+    "key": "en:wines-from-albania",
+    "name": "Wijnen uit Albanië"
+  },
+  {
+    "key": "en:wines-from-algeria",
+    "name": "Wijnen uit Algerije"
+  },
+  {
     "key": "nl:wijnen-uit-ambt-delden",
     "name": "Wijnen uit Ambt Delden"
+  },
+  {
+    "key": "en:wines-from-argentina",
+    "name": "Wijnen uit Argentinië"
+  },
+  {
+    "key": "en:wines-from-armenia",
+    "name": "Wijnen uit Armenië"
   },
   {
     "key": "nl:wijnen-uit-de-achterhoek-winterswijk",
@@ -940,6 +1036,10 @@
     "name": "Wijnen uit Zuid-Holland"
   },
   {
+    "key": "en:vodkas-from-lithania",
+    "name": "Wodkas uit Litouwen"
+  },
+  {
     "key": "en:lorrain-sausages",
     "name": "Worst uit de Lorraine"
   },
@@ -978,5 +1078,17 @@
   {
     "key": "en:guerande-salts",
     "name": "Zout uit de Guérande"
+  },
+  {
+    "key": "en:salts-from-quebec",
+    "name": "Zout uit Québec"
+  },
+  {
+    "key": "fr:choucroute-d-alsace",
+    "name": "Zuurkolen uit de Elzas"
+  },
+  {
+    "key": "en:cooked-sauerkraut-without-garnish",
+    "name": "Zuurkolen zonder garnering (uitgelekt"
   }
 ]

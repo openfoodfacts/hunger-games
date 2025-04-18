@@ -32,7 +32,7 @@
     "name": "Café crème instantané non sucré"
   },
   {
-    "key": "en:white-coffee-without-sugar",
+    "key": "en:latte",
     "name": "Café crème non sucré"
   },
   {
@@ -48,7 +48,7 @@
     "name": "Chips cocktail de crevettes"
   },
   {
-    "key": "fr:chips-de-manioc-a-la-crevette",
+    "key": "en:prawn-crackers",
     "name": "Chips de manioc à la crevette"
   },
   {
@@ -184,16 +184,12 @@
     "name": "Crèmes aux œufs"
   },
   {
-    "key": "fr:cremes-brulees",
+    "key": "en:creme-brulee",
     "name": "Crèmes brûlées"
   },
   {
     "key": "en:refrigerated-caramelized-custard-cream",
     "name": "Crèmes brûlées rayon frais"
-  },
-  {
-    "key": "en:refrigerated-cremes-brulees",
-    "name": "Crèmes brûlées réfrigérées"
   },
   {
     "key": "en:custard-puddings-with-caramel-sauce",
@@ -228,12 +224,24 @@
     "name": "Crèmes de citron"
   },
   {
+    "key": "en:raspberry-liqueurs",
+    "name": "Crèmes de framboise"
+  },
+  {
     "key": "en:fruit-curds",
     "name": "Crèmes de fruits à tartiner"
   },
   {
     "key": "en:chestnut-spreads",
     "name": "Crèmes de marrons"
+  },
+  {
+    "key": "fr:cremes-de-mure",
+    "name": "Crèmes de mure"
+  },
+  {
+    "key": "fr:cremes-de-peche",
+    "name": "Crèmes de pèche"
   },
   {
     "key": "fr:cremes-de-pistaches",
@@ -342,10 +350,6 @@
   {
     "key": "fr:cremes-fraiches",
     "name": "Crèmes fraîches"
-  },
-  {
-    "key": "fr:cremes-glacees-a-la-noix-de-pecan",
-    "name": "Crèmes glacées à la Noix de Pécan"
   },
   {
     "key": "en:ice-cream-tubs",
@@ -552,7 +556,7 @@
     "name": "Cresson alénois"
   },
   {
-    "key": "fr:cresson-frais",
+    "key": "en:watercress-fresh",
     "name": "Cresson frais"
   },
   {
@@ -566,6 +570,10 @@
   {
     "key": "en:cooked-shrimps",
     "name": "Crevettes cuites"
+  },
+  {
+    "key": "en:frozen-cooked-shrimps",
+    "name": "Crevettes cuites surgelées"
   },
   {
     "key": "fr:crevettes-decortiquees",
@@ -608,6 +616,22 @@
     "name": "Croquettes aux crevettes"
   },
   {
+    "key": "en:flavoured-fermented-dairy-desserts-with-sugar-and-cream",
+    "name": "Desserts lactés fermentés aromatisés sucrés à la crème"
+  },
+  {
+    "key": "en:fermented-dairy-desserts-with-fruits-sugar-and-cream",
+    "name": "Desserts lactés fermentés aux fruits sucrés à la crème"
+  },
+  {
+    "key": "en:plain-fermented-dairy-desserts-with-cream",
+    "name": "Desserts lactés fermentés nature à la crème"
+  },
+  {
+    "key": "en:entremets-mousses-and-creamy-puddings",
+    "name": "Entremets - mousses et crème desserts"
+  },
+  {
     "key": "en:spinach-with-cream-sauce",
     "name": "Épinards à la crème"
   },
@@ -630,6 +654,10 @@
   {
     "key": "en:double-cream-cheeses",
     "name": "Fromages double crème"
+  },
+  {
+    "key": "en:frozen-creams",
+    "name": "Frozen creams"
   },
   {
     "key": "en:basque-cake-with-custard",
@@ -656,12 +684,16 @@
     "name": "Gyosas aux crevettes"
   },
   {
+    "key": "en:half-milk-and-half-cream",
+    "name": "Half milk and half cream"
+  },
+  {
     "key": "en:pacific-oysters",
     "name": "Huîtres creuses"
   },
   {
-    "key": "en:macaron-filled-with-cream",
-    "name": "Macaron moelleux fourré à la crème"
+    "key": "en:coconut-milks-and-creams",
+    "name": "Laits et crèmes de coco"
   },
   {
     "key": "fr:mercurey-premier-cru-les-crets",
@@ -678,6 +710,10 @@
   {
     "key": "en:refrigerated-chestnut-mousse",
     "name": "Mousse à la crème de marrons rayon frais"
+  },
+  {
+    "key": "it:mostarda-di-cremona",
+    "name": "Moutarde de Crémone"
   },
   {
     "key": "en:egg-roll-with-cooked-shrimp",
@@ -740,6 +776,10 @@
     "name": "Ravioli vapeur chinois à la crevette cuit"
   },
   {
+    "key": "en:refrigerated-creams",
+    "name": "Refrigerated creams"
+  },
+  {
     "key": "en:shrimp-rillettes",
     "name": "Rillettes de crevette"
   },
@@ -758,6 +798,10 @@
   {
     "key": "fr:saint-aubin-premier-cru-en-creot-rouge",
     "name": "Saint-Aubin premier cru En Créot rouge"
+  },
+  {
+    "key": "en:salad-creams",
+    "name": "Salad creams"
   },
   {
     "key": "en:plant-based-ice-cream-sandwiches",
@@ -800,20 +844,28 @@
     "name": "Soupes au cresson déshydratée"
   },
   {
-    "key": "en:watercress-soups",
-    "name": "Soupes de cresson"
-  },
-  {
     "key": "fr:soupes-de-crevettes",
     "name": "Soupes de crevettes"
   },
   {
-    "key": "en:liquid-light-cream-with-4-to-8-fat",
-    "name": "Spécialité à base de crème légère fluide à 8% de matières grasses"
+    "key": "en:uht-compound-dairy-creams-with-4-to-8-fat",
+    "name": "Spécialités à base de crème liquide 4 à 8% de matières grasses UHT"
   },
   {
     "key": "en:low-calorie-custard-cream-meal-replacement",
     "name": "Substitut de repas hypocalorique crème dessert"
+  },
+  {
+    "key": "en:sour-cream-substitutes",
+    "name": "Substituts de crème épaisse"
+  },
+  {
+    "key": "en:pressurized-whipped-cream-substitutes",
+    "name": "Substituts de crème fouettée sous pression"
+  },
+  {
+    "key": "en:compound-dairy-creams",
+    "name": "Succédanés de la crème"
   },
   {
     "key": "en:shrimp-sushis",
@@ -838,17 +890,5 @@
   {
     "key": "en:creamy-peanut-turron",
     "name": "Tourons crémeux aux cacahuètes"
-  },
-  {
-    "key": "en:plain-fermented-milk-yogurt-with-cream",
-    "name": "Yaourt au lait fermenté à la crème"
-  },
-  {
-    "key": "en:fermented-milk-flavoured-yogurt-with-sugar-and-cream",
-    "name": "Yaourt sucré aromatisé au lait fermenté et à la crème"
-  },
-  {
-    "key": "en:fermented-milk-yogurt-with-fruits-and-sugar-and-cream",
-    "name": "Yaourt sucré au lait fermenté aux fruits et à la crème"
   }
 ]

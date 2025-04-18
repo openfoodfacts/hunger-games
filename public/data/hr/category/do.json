@@ -1,15 +1,11 @@
 [
   {
-    "key": "en:beers-from-dortmund",
-    "name": "Beers from Dortmund"
+    "key": "en:breakfast-biscuit",
+    "name": "Biskvit za doručak"
   },
   {
-    "key": "en:cheese-doodles",
-    "name": "Cheese doodles"
-  },
-  {
-    "key": "en:coffees-from-the-dominican-republic",
-    "name": "Coffees from the Dominican Republic"
+    "key": "en:breakfast-chocolate-cereals-with-wheat-grain-flakes-not-fortified-with-vitamins-and-chemical-elements",
+    "name": "Čokoladne pahuljice za doručak s pahuljicama pšeničnog zrna koje nisu obogaćene vitaminima i kemijskim elementima"
   },
   {
     "key": "en:cooked-shortbread-dough",
@@ -20,24 +16,40 @@
     "name": "Cooked shortbread dough with pure butter"
   },
   {
+    "key": "en:diet-chocolate-breakfast-cereals",
+    "name": "Dijetne čokoladne žitarice za doručak"
+  },
+  {
     "key": "en:dietary-supplements",
     "name": "Dodaci prehrani"
   },
   {
-    "key": "en:dog-food",
-    "name": "Dog food"
+    "key": "en:bodybuilding-supplements",
+    "name": "Dodaci prehrani za bodybuilding"
+  },
+  {
+    "key": "en:dolce-gusto-compatible-capsules",
+    "name": "Dolce gusto kompatibilne kapsule"
   },
   {
     "key": "en:dolce-gusto-compatible-coffee-capsules",
-    "name": "Dolce Gusto-compatible coffee capsules"
+    "name": "Dolce gusto kompatibilne kapsule za kavu"
   },
   {
     "key": "en:dolmas",
-    "name": "Dolmas"
+    "name": "Dolme"
+  },
+  {
+    "key": "en:home-made-grapefruit-juice",
+    "name": "Domaći sok od grejpa"
+  },
+  {
+    "key": "en:home-made-lemon-juice",
+    "name": "Domaći sok od limuna"
   },
   {
     "key": "en:dominican-rums",
-    "name": "Dominican rums"
+    "name": "Dominikanski rumovi"
   },
   {
     "key": "en:doner-kebab",
@@ -49,7 +61,11 @@
   },
   {
     "key": "en:doogh-and-ayran",
-    "name": "Doogh and ayran"
+    "name": "Doogh i ajran"
+  },
+  {
+    "key": "en:doppelbock-beers",
+    "name": "Doppelbock beers"
   },
   {
     "key": "en:dorayaki",
@@ -68,48 +84,60 @@
     "name": "Dorset Drum"
   },
   {
-    "key": "en:double-beer",
-    "name": "Double beer"
+    "key": "en:dortmunder-export",
+    "name": "Dortmunder export"
   },
   {
-    "key": "en:double-cheeseburgers",
-    "name": "Double cheeseburgers"
+    "key": "en:breakfasts",
+    "name": "Doručci"
+  },
+  {
+    "key": "en:dosa-batter-mixes",
+    "name": "Dosa batter mixes"
   },
   {
     "key": "en:double-cheeseburgers-from-fast-food-restaurants",
     "name": "Double cheeseburgers from fast food restaurants"
   },
   {
-    "key": "en:double-concentrate-tomato-paste",
-    "name": "Double concentrate tomato paste"
+    "key": "en:double-dry-hopped-ipa",
+    "name": "Double dry-hopped IPA"
   },
   {
-    "key": "en:double-cream-cheeses",
-    "name": "Double cream cheeses"
+    "key": "en:double-ipa",
+    "name": "Double IPA"
   },
   {
-    "key": "en:double-flavour-creamy-puddings",
-    "name": "Double flavour creamy puddings"
-  },
-  {
-    "key": "en:doughnuts",
-    "name": "Doughnuts"
-  },
-  {
-    "key": "en:doughnuts-filled-with-chocolate",
-    "name": "Doughnuts filled with chocolate"
-  },
-  {
-    "key": "en:doughnuts-filled-with-fruits",
-    "name": "Doughnuts filled with fruits"
+    "key": "en:dough-based-meals-ready",
+    "name": "Dough based meals (ready)"
   },
   {
     "key": "en:dovedale-cheese",
     "name": "Dovedale cheese"
   },
   {
-    "key": "en:dry-dog-food",
-    "name": "Dry Dog Food"
+    "key": "en:flammekueche-dough",
+    "name": "Flammekueche dough"
+  },
+  {
+    "key": "en:foccacia-dough",
+    "name": "Foccacia dough"
+  },
+  {
+    "key": "en:infant-formulas",
+    "name": "Formule za dojenčad"
+  },
+  {
+    "key": "en:frozen-dough-based-meals-to-prepare",
+    "name": "Frozen dough based meals (to prepare)"
+  },
+  {
+    "key": "en:frozen-doughnuts",
+    "name": "Frozen doughnuts"
+  },
+  {
+    "key": "en:frozen-pizza-dough",
+    "name": "Frozen pizza dough"
   },
   {
     "key": "en:frozen-raw-shortbread-dough-with-pure-butter",
@@ -120,44 +148,24 @@
     "name": "Frozen shortbread dough with pure butter"
   },
   {
-    "key": "en:glazed-doughnuts",
-    "name": "Glazed doughnuts"
-  },
-  {
-    "key": "en:hot-dog-buns",
-    "name": "Hot dog buns"
-  },
-  {
     "key": "en:hot-dog-sandwiches",
     "name": "Hot dog sandwiches"
-  },
-  {
-    "key": "en:jam-doughnuts",
-    "name": "Jam doughnuts"
   },
   {
     "key": "en:john-dory",
     "name": "John Dory"
   },
   {
-    "key": "en:phyllo-dough",
-    "name": "Phyllo dough"
+    "key": "en:coffees-from-the-dominican-republic",
+    "name": "Kave iz dominikanske republike"
+  },
+  {
+    "key": "en:non-frozen-dough-based-meals-to-prepare",
+    "name": "Non-frozen dough based meals (to prepare)"
   },
   {
     "key": "en:phyllo-dough-raw",
     "name": "Phyllo dough raw"
-  },
-  {
-    "key": "en:pie-dough",
-    "name": "Pie dough"
-  },
-  {
-    "key": "en:pizza-dough",
-    "name": "Pizza dough"
-  },
-  {
-    "key": "en:plain-doughnuts",
-    "name": "Plain doughnuts"
   },
   {
     "key": "en:processed-cheese-double-cream-around-31-fat",
@@ -172,31 +180,75 @@
     "name": "Raw shortbread dough with pure butter"
   },
   {
-    "key": "en:shortbread-dough",
-    "name": "Shortbread dough"
+    "key": "en:baby-infant-foods-beverages-variety-packs",
+    "name": "Različita pakiranja hrane/hrane za dojenčad/pića"
+  },
+  {
+    "key": "en:refrigerated-dough-based-meals-ready",
+    "name": "Refrigerated dough based meals (ready)"
   },
   {
     "key": "en:shortbread-dough-with-pure-butter",
     "name": "Shortbread dough with pure butter"
   },
   {
+    "key": "en:shortbread-dough-with-vegetable-fats",
+    "name": "Shortbread dough with vegetable fats"
+  },
+  {
+    "key": "en:smetana-with-15-to-19-fat",
+    "name": "Smetana sa 15% do 19% masti"
+  },
+  {
+    "key": "en:smetana-with-15-to-34-fat",
+    "name": "Smetana sa 15% do 34% masti"
+  },
+  {
+    "key": "en:frozen-fruits-with-added-sugar",
+    "name": "Smrznuto voće s dodatkom šećera"
+  },
+  {
     "key": "en:soft-ripened-cheese-double-cream-around-30-fat",
     "name": "Soft-ripened cheese double cream around 30% fat"
+  },
+  {
+    "key": "en:orange-juices-home-made",
+    "name": "Sok od naranče domaći"
   },
   {
     "key": "en:vegan-hot-dog-saucages",
     "name": "Vegan hot dog saucages"
   },
   {
+    "key": "en:vegetarian-double-crust-pies",
+    "name": "Vegetarian double crust pies"
+  },
+  {
     "key": "en:vegetarian-hot-dog-sandwiches",
-    "name": "Vegetarian hot dog sandwiches"
+    "name": "Vegetarijanski hot dog sendviči"
   },
   {
-    "key": "en:vegetarian-hot-dog-sausages",
-    "name": "Vegetarian hot dog sausages"
+    "key": "en:fruits-puree-without-sugar-added",
+    "name": "Voćni pire bez dodanog šećera"
   },
   {
-    "key": "en:wet-dog-food",
-    "name": "Wet dog food"
+    "key": "en:wet-dosa-batter-mixes",
+    "name": "Wet dosa batter mixes"
+  },
+  {
+    "key": "en:breakfast-cereals",
+    "name": "Žitarice za doručak"
+  },
+  {
+    "key": "en:breakfast-cereals-not-fortified-with-vitamins-and-chemical-elements",
+    "name": "Žitarice za doručak koje nisu obogaćene vitaminima i kemijskim elementima"
+  },
+  {
+    "key": "en:breakfast-cereals-fortified-with-vitamins-and-chemical-elements",
+    "name": "Žitarice za doručak obogaćene vitaminima i kemijskim elementima"
+  },
+  {
+    "key": "en:breakfast-cereals-filled-with-chocolate",
+    "name": "Žitarice za doručak punjene čokoladom"
   }
 ]

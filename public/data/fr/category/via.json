@@ -8,6 +8,10 @@
     "name": "Alternatives à la viande"
   },
   {
+    "key": "en:meat-aspic",
+    "name": "Aspic de viande"
+  },
+  {
     "key": "en:meat-fritters",
     "name": "Beignets de viande"
   },
@@ -32,6 +36,10 @@
     "name": "Boulettes de viande"
   },
   {
+    "key": "en:frozen-meat-balls",
+    "name": "Boulettes de viande surgelées"
+  },
+  {
     "key": "en:filled-fritter-garnished-with-meat",
     "name": "Brick à la viande"
   },
@@ -42,6 +50,10 @@
   {
     "key": "en:mixed-meat-on-skewer",
     "name": "Brochette mixte de viande"
+  },
+  {
+    "key": "en:frozen-mixed-meat-on-skewer",
+    "name": "Brochette mixte de viande surgelée"
   },
   {
     "key": "en:meat-skewers",
@@ -84,6 +96,10 @@
     "name": "Escalopes de viande panées"
   },
   {
+    "key": "en:frozen-breaded-meat-cutlets",
+    "name": "Escalopes de viande panées surgelées"
+  },
+  {
     "key": "en:meat-in-puff-pastry",
     "name": "Feuilleté à la viande"
   },
@@ -117,7 +133,7 @@
   },
   {
     "key": "en:pasta-stuffed-with-meat",
-    "name": "Pates farcies à la viande"
+    "name": "Pâtes farcies à la viande"
   },
   {
     "key": "en:cooked-fresh-pasta-stuffed-with-meat",
@@ -150,6 +166,14 @@
   {
     "key": "en:meals-with-meat",
     "name": "Plats préparés à la viande"
+  },
+  {
+    "key": "en:canned-meals-with-meat",
+    "name": "Plats préparés en conserve à la viande"
+  },
+  {
+    "key": "en:frozen-meals-with-meat",
+    "name": "Plats préparés surgelés à la viande"
   },
   {
     "key": "en:dishes-that-may-contain-horse-meat",
@@ -188,8 +212,8 @@
     "name": "Poulet cuisse viande et peau cru"
   },
   {
-    "key": "en:chicken-free-range-meat-and-skin-raw",
-    "name": "Poulet fermier viande et peau cru"
+    "key": "en:frozen-chicken-leg-meat-and-skin-raw",
+    "name": "Poulet cuisse viande et peau cru surgelée"
   },
   {
     "key": "en:chicken-high-leg-meat-raw",
@@ -296,6 +320,10 @@
     "name": "Salades de viande"
   },
   {
+    "key": "en:gravy",
+    "name": "Sauce au jus de viande"
+  },
+  {
     "key": "en:meat-based-pasta-sauces",
     "name": "Sauce tomate à la viande"
   },
@@ -364,6 +392,10 @@
     "name": "Viande de bœuf et dérivés"
   },
   {
+    "key": "en:smoked-cooked-beef-meat",
+    "name": "Viande de boeuf fumée cuite"
+  },
+  {
     "key": "en:beef-jerkies",
     "name": "Viande de bœuf séchée"
   },
@@ -404,6 +436,10 @@
     "name": "Viande de dinde sans peau"
   },
   {
+    "key": "en:frozen-turkey-meat",
+    "name": "Viande de dinde surgelée"
+  },
+  {
     "key": "en:pheasant-meat",
     "name": "Viande de faisan"
   },
@@ -436,6 +472,10 @@
     "name": "Viande de lièvre"
   },
   {
+    "key": "en:canned-sheep-meat",
+    "name": "Viande de mouton en conserve"
+  },
+  {
     "key": "en:roasted-pigeon-meat",
     "name": "Viande de pigeon rôtie"
   },
@@ -444,16 +484,24 @@
     "name": "Viande de porc cuite"
   },
   {
+    "key": "en:smoked-cooked-pork-meat",
+    "name": "Viande de porc cuite fumée"
+  },
+  {
     "key": "en:hen-meat",
     "name": "Viande de poule"
   },
   {
     "key": "en:hen-meat-and-skin",
-    "name": "Viande de poulet avec peau"
+    "name": "Viande de poule avec peau"
   },
   {
     "key": "en:chicken-meat-without-skin",
     "name": "Viande de poulet sans peau"
+  },
+  {
+    "key": "en:canned-veal-meat",
+    "name": "Viande de veau en conserve"
   },
   {
     "key": "en:meat-of-the-grisons",
@@ -516,12 +564,24 @@
     "name": "Viandes cuites"
   },
   {
+    "key": "en:smoked-cooked-meats",
+    "name": "Viandes cuites fumées"
+  },
+  {
     "key": "en:lamb-meat",
     "name": "Viandes d'agneau"
   },
   {
     "key": "en:cooked-lamb-meat",
     "name": "Viandes d'agneau cuites"
+  },
+  {
+    "key": "en:frozen-lamb-meat",
+    "name": "Viandes d'agneau surgelées"
+  },
+  {
+    "key": "en:canned-game",
+    "name": "Viandes de gibier en conserve"
   },
   {
     "key": "en:sheep-meat",
@@ -534,6 +594,14 @@
   {
     "key": "en:cooked-veal-meat",
     "name": "Viandes de veau cuites"
+  },
+  {
+    "key": "en:smoked-cooked-veal-meat",
+    "name": "Viandes de veau cuites fumées"
+  },
+  {
+    "key": "en:grilled-veal-meat",
+    "name": "Viandes de veau grillées"
   },
   {
     "key": "en:canned-meats",
@@ -574,6 +642,14 @@
   {
     "key": "en:refrigerated-ground-beef-meats",
     "name": "Viandes hachées pur bœuf refrigérées"
+  },
+  {
+    "key": "en:frozen-ground-beef-meats",
+    "name": "Viandes hachées pur bœuf surgelées"
+  },
+  {
+    "key": "en:frozen-ground-meats",
+    "name": "Viandes hachées surgelées"
   },
   {
     "key": "en:dried-meats",

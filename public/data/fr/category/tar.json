@@ -1,5 +1,9 @@
 [
   {
+    "key": "en:sweet-spread-variety-packs",
+    "name": "Assortiments de pâtes à tartiner sucrées"
+  },
+  {
     "key": "fr:clos-de-tart",
     "name": "Clos de Tart"
   },
@@ -68,6 +72,10 @@
     "name": "Matières grasses à tartiner"
   },
   {
+    "key": "en:oranges-tarocco",
+    "name": "Oranges Tarocco"
+  },
+  {
     "key": "en:pie-dough",
     "name": "Pâtes à tarte"
   },
@@ -96,7 +104,7 @@
     "name": "Pâtes à tartiner au spéculoos"
   },
   {
-    "key": "en:almonds-spreads",
+    "key": "en:almond-spreads",
     "name": "Pâtes à tartiner aux amandes"
   },
   {
@@ -156,7 +164,7 @@
     "name": "Produits à tartiner sucrés"
   },
   {
-    "key": "en:dairy-spread",
+    "key": "en:dairy-spreads",
     "name": "Produits laitiers à tartiner"
   },
   {
@@ -186,6 +194,10 @@
   {
     "key": "en:salmon-taramasalata",
     "name": "Taramas au saumon"
+  },
+  {
+    "key": "en:tare-sauces",
+    "name": "Tare"
   },
   {
     "key": "en:seaweed-spreads",
@@ -232,10 +244,6 @@
     "name": "Tarte épinard chèvre"
   },
   {
-    "key": "en:biscuit-small-tart-with-chocolate-pre-packed",
-    "name": "Tartelette au chocolat"
-  },
-  {
     "key": "en:tartlets",
     "name": "Tartelettes"
   },
@@ -260,11 +268,15 @@
     "name": "Tartelettes à la poire"
   },
   {
+    "key": "en:tartlet-biscuits-with-fruit-preparation",
+    "name": "Tartelettes à la préparation de fruits"
+  },
+  {
     "key": "fr:tartelettes-au-caramel",
     "name": "Tartelettes au caramel"
   },
   {
-    "key": "en:chocolate-tartlets",
+    "key": "en:tartlet-biscuits-with-chocolate",
     "name": "Tartelettes au chocolat"
   },
   {
@@ -273,7 +285,11 @@
   },
   {
     "key": "en:fruit-tartlets",
-    "name": "Tartelettes aux fruits"
+    "name": "Tartelettes aux fruits entiers ou coupés"
+  },
+  {
+    "key": "en:frozen-fruit-tartlets",
+    "name": "Tartelettes aux fruits surgelées"
   },
   {
     "key": "en:pies",
@@ -392,6 +408,10 @@
     "name": "Tartes aux pommes néerlandaises"
   },
   {
+    "key": "en:frozen-apple-pies",
+    "name": "Tartes aux pommes surgelées"
+  },
+  {
     "key": "en:norman-style-pies",
     "name": "Tartes normandes"
   },
@@ -424,8 +444,16 @@
     "name": "Tartiflettes en conserve"
   },
   {
+    "key": "en:spreads-with-foie-gras",
+    "name": "Tartinables au foie gras"
+  },
+  {
     "key": "en:vegetarian-spreads-with-meat-like-pieces",
     "name": "Tartinades avec des morceaux végétariens"
+  },
+  {
+    "key": "en:ginger-preserves",
+    "name": "Tartinades de gingembre"
   },
   {
     "key": "en:bean-spreads",
@@ -440,8 +468,16 @@
     "name": "Tartinades de patates douces"
   },
   {
+    "key": "en:bruschetta-spreads",
+    "name": "Tartinades type bruschetta"
+  },
+  {
     "key": "en:vegan-vegetable-spreads",
     "name": "Tartinades véganes aux légumes"
+  },
+  {
+    "key": "en:vegetarian-vegetable-and-cheese-spreads",
+    "name": "Tartinades végétariennes aux légumes et fromage"
   },
   {
     "key": "en:extruded-crispbreads",
@@ -474,5 +510,9 @@
   {
     "key": "en:cooked-taro-tubes",
     "name": "Tubercules de taro cuits"
+  },
+  {
+    "key": "en:fresh-taro-tubers",
+    "name": "Tubercules de taro fraiches"
   }
 ]

@@ -1,9 +1,5 @@
 [
   {
-    "key": "en:atlantic-bluefin-tuna",
-    "name": "Atlantic bluefin tuna"
-  },
-  {
     "key": "en:atlantic-bluefin-tunas",
     "name": "Atlantic bluefin tunas"
   },
@@ -24,6 +20,10 @@
     "name": "Canned prepared mixed tuna and vegetable salad"
   },
   {
+    "key": "en:frozen-yellowfin-tuna-loin",
+    "name": "Frozen yellowfin tuna loin"
+  },
+  {
     "key": "en:longtail-tuna",
     "name": "Longtail tuna"
   },
@@ -40,16 +40,16 @@
     "name": "Pasta salad with tuna"
   },
   {
+    "key": "en:raw-tunas",
+    "name": "Raw tunas"
+  },
+  {
     "key": "en:roasted-tuna",
     "name": "Roasted Tuna"
   },
   {
     "key": "en:sandwich-made-with-wholemeal-loaf-bread-and-tuna-and-vegetables-and-mayonnaise",
     "name": "Sandwich made with wholemeal loaf bread and tuna and vegetables and mayonnaise"
-  },
-  {
-    "key": "en:sandwich-with-tuna-and-vegetables",
-    "name": "Sandwich with tuna and vegetables"
   },
   {
     "key": "en:skipjack-tuna",
@@ -88,24 +88,12 @@
     "name": "Tuna mayo"
   },
   {
-    "key": "en:tuna-pies",
-    "name": "Tuna pies"
-  },
-  {
     "key": "en:tuna-samosas",
     "name": "Tuna samosas"
   },
   {
-    "key": "en:tuna-sandwiches",
-    "name": "Tuna sandwiches"
-  },
-  {
     "key": "en:tuna-spreads",
     "name": "Tuna spreads"
-  },
-  {
-    "key": "en:tuna-sushis",
-    "name": "Tuna sushis"
   },
   {
     "key": "en:tunas-in-escabeche-sauce",
@@ -118,5 +106,9 @@
   {
     "key": "en:whole-tunas",
     "name": "Whole tunas"
+  },
+  {
+    "key": "en:yellowfin-tuna-loin",
+    "name": "Yellowfin tuna loin"
   }
 ]

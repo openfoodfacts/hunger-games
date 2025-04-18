@@ -8,6 +8,14 @@
     "name": "Arômes pâtisserie"
   },
   {
+    "key": "en:sweet-spread-variety-packs",
+    "name": "Assortiments de pâtes à tartiner sucrées"
+  },
+  {
+    "key": "en:fruit-paste-variety-packs",
+    "name": "Assortiments de pâtes de fruits"
+  },
+  {
     "key": "en:pastry-biscuit-with-meringue",
     "name": "Biscuit pâtissier meringué"
   },
@@ -84,7 +92,7 @@
     "name": "Fromage à pâte molle triple crème environ 40% MG"
   },
   {
-    "key": "en:semi-hard-cheeses",
+    "key": "en:semi-hard-cheeses-from-ewe-s-milk",
     "name": "Fromage de brebis à pâte pressée"
   },
   {
@@ -116,6 +124,10 @@
     "name": "Fromages à pâte fraîche"
   },
   {
+    "key": "en:soft-cheeses",
+    "name": "Fromages à pâte molle"
+  },
+  {
     "key": "en:soft-cheeses-with-bloomy-rind",
     "name": "Fromages à pâte molle à croûte fleurie"
   },
@@ -136,7 +148,7 @@
     "name": "Fromages à pâte persillée français"
   },
   {
-    "key": "en:cooked-pressed-cheeses",
+    "key": "en:hard-cheeses",
     "name": "Fromages à pâte pressée cuite"
   },
   {
@@ -168,8 +180,20 @@
     "name": "Patates douces cuites"
   },
   {
+    "key": "en:frozen-sweet-potatoes",
+    "name": "Patates douces surgelées"
+  },
+  {
     "key": "en:pate",
     "name": "Pâté"
+  },
+  {
+    "key": "en:flammekueche-dough",
+    "name": "Pâte à flammekueche"
+  },
+  {
+    "key": "en:foccacia-dough",
+    "name": "Pâte à focaccia"
   },
   {
     "key": "en:raw-pizza-base",
@@ -228,8 +252,16 @@
     "name": "Pâté de Campagne Breton"
   },
   {
+    "key": "en:dark-chocolate-paste-for-cooking",
+    "name": "Pâte de chocolat noir pâtissier"
+  },
+  {
     "key": "en:pork-liver-pate-superior-quality",
     "name": "Pâté de foie de porc supérieur"
+  },
+  {
+    "key": "en:sweet-bean-paste",
+    "name": "Pâte de haricots"
   },
   {
     "key": "en:pate-in-crust",
@@ -296,6 +328,10 @@
     "name": "Pâte sablée crue"
   },
   {
+    "key": "en:shortbread-dough-with-vegetable-fats",
+    "name": "Pâte sablée crue à la matière grasse végétale"
+  },
+  {
     "key": "en:cooked-shortbread-dough",
     "name": "Pâte sablée cuite"
   },
@@ -320,14 +356,6 @@
     "name": "Pâte sablée pur beurre surgelée crue"
   },
   {
-    "key": "en:wet-cat-food",
-    "name": "Pâtées pour chat"
-  },
-  {
-    "key": "en:wet-dog-food",
-    "name": "Pâtées pour chien"
-  },
-  {
     "key": "en:bolognese-style-pasta",
     "name": "Pâtes à la bolognaise"
   },
@@ -342,6 +370,10 @@
   {
     "key": "en:pizza-dough",
     "name": "Pâtes à pizza"
+  },
+  {
+    "key": "en:frozen-pizza-dough",
+    "name": "Pâtes à pizza surgelées"
   },
   {
     "key": "en:fondants",
@@ -376,7 +408,7 @@
     "name": "Pâtes à tartiner au spéculoos"
   },
   {
-    "key": "en:almonds-spreads",
+    "key": "en:almond-spreads",
     "name": "Pâtes à tartiner aux amandes"
   },
   {
@@ -410,6 +442,10 @@
   {
     "key": "en:gluten-free-pasta",
     "name": "Pâtes alimentaires sans gluten"
+  },
+  {
+    "key": "en:german-pasta",
+    "name": "Pâtes allemandes"
   },
   {
     "key": "en:alphabet-pasta",
@@ -446,6 +482,10 @@
   {
     "key": "en:shortcrust-pastry",
     "name": "Pâtes brisées"
+  },
+  {
+    "key": "en:garlic-paste",
+    "name": "Pâtes d'ail"
   },
   {
     "key": "fr:pates-d-alsace",
@@ -488,12 +528,20 @@
     "name": "Pâtes de blé dur entier ou semi-entier"
   },
   {
+    "key": "en:dry-durum-wheat-pasta",
+    "name": "Pâtes de blé dur sèches"
+  },
+  {
     "key": "es:pastas-de-trigo-duro-semi-integrales",
     "name": "Pâtes de blé dur semi-complet"
   },
   {
     "key": "en:khorasan-pasta",
     "name": "Pâtes de blé khorasan"
+  },
+  {
+    "key": "en:common-wheat-pasta",
+    "name": "Pâtes de blé tendre"
   },
   {
     "key": "en:country-style-pates",
@@ -580,6 +628,14 @@
     "name": "Pâtes de lentille"
   },
   {
+    "key": "en:fresh-lentil-pasta",
+    "name": "Pâtes de lentille fraîches"
+  },
+  {
+    "key": "en:dry-lentil-pasta",
+    "name": "Pâtes de lentille sèches"
+  },
+  {
     "key": "en:corn-pasta",
     "name": "Pâtes de maïs"
   },
@@ -598,6 +654,14 @@
   {
     "key": "en:chickpea-pasta",
     "name": "Pâtes de pois chiche"
+  },
+  {
+    "key": "en:fresh-chickpea-pasta",
+    "name": "Pâtes de pois chiche fraîches"
+  },
+  {
+    "key": "en:dry-chickpea-pasta",
+    "name": "Pâtes de pois chiche sèches"
   },
   {
     "key": "en:apple-pastes",
@@ -632,6 +696,14 @@
     "name": "Pâtés de tête"
   },
   {
+    "key": "en:white-pork-head-cheese",
+    "name": "Pâtés de tête de porc blanc"
+  },
+  {
+    "key": "en:black-pork-head-cheese",
+    "name": "Pâtés de tête de porc noir"
+  },
+  {
     "key": "en:pasta-with-cheese-sauce",
     "name": "Pâtes en sauce aux fromages"
   },
@@ -641,7 +713,7 @@
   },
   {
     "key": "en:pasta-stuffed-with-meat",
-    "name": "Pates farcies à la viande"
+    "name": "Pâtes farcies à la viande"
   },
   {
     "key": "en:pasta-stuffed-with-cheese",
@@ -654,6 +726,10 @@
   {
     "key": "en:pasta-stuffed-with-vegetables",
     "name": "Pates farcies aux légumes"
+  },
+  {
+    "key": "en:stuffed-pastas-in-sauce",
+    "name": "Pâtes farcies en sauce"
   },
   {
     "key": "en:puff-pastry-sheets",
@@ -700,6 +776,10 @@
     "name": "Pâtes fraîches farcies aux légumes"
   },
   {
+    "key": "en:pates-in-pots",
+    "name": "Pâtés in pots"
+  },
+  {
     "key": "en:instant-pasta",
     "name": "Pâtes instantanées"
   },
@@ -722,6 +802,10 @@
   {
     "key": "en:dry-pastas",
     "name": "Pâtes sèches"
+  },
+  {
+    "key": "en:spinach-flavored-dry-pastas",
+    "name": "Pâtes sèches aromatisées aux épinards"
   },
   {
     "key": "en:flavored-and-colored-dry-pastas",
@@ -760,12 +844,16 @@
     "name": "Pâtés végétaux"
   },
   {
+    "key": "en:sweet-dumpling-squashes",
+    "name": "Patidou"
+  },
+  {
     "key": "en:pastries",
     "name": "Pâtisseries"
   },
   {
     "key": "en:pattypan-squash",
-    "name": "Pâtisson"
+    "name": "Pâtissons"
   },
   {
     "key": "fr:patrimonio",
@@ -776,6 +864,10 @@
     "name": "Pattes de crabe décortiquées"
   },
   {
+    "key": "en:chicken-feet",
+    "name": "Pattes de poulets"
+  },
+  {
     "key": "en:pasta-dishes",
     "name": "Plats à base de pâtes"
   },
@@ -784,12 +876,24 @@
     "name": "Préparation pour pâte à pizza"
   },
   {
+    "key": "en:dough-based-meals-variety-packs",
+    "name": "Produits à base de pâte"
+  },
+  {
     "key": "en:profiteroles-with-custard-and-chocolate-sauce-refrigerated",
     "name": "Profiteroles avec crème pâtissière et sauce chocolat"
   },
   {
     "key": "en:sweet-potato-puree-cooked-with-cream",
     "name": "Purée de patates douces cuisinée à la crème"
+  },
+  {
+    "key": "en:refrigerated-pates",
+    "name": "Refrigerated Pâtés"
+  },
+  {
+    "key": "en:patna-rices",
+    "name": "Riz Patna"
   },
   {
     "key": "en:pasta-salad-with-meat",
@@ -822,6 +926,10 @@
   {
     "key": "en:vegetarian-pasta-salads",
     "name": "Salades de pâtes végétariennes"
+  },
+  {
+    "key": "en:salmon-pates",
+    "name": "Salmon Pâtés"
   },
   {
     "key": "en:sandwich-with-pate-and-pickles",

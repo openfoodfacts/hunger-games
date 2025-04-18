@@ -8,8 +8,8 @@
     "name": "Algues laitue de mer sèches"
   },
   {
-    "key": "en:milky-cereal-breakfast-bar-with-chocolate-fortified-with-vitamins-and-minerals",
-    "name": "Barre de céréales au lait et au chocolat"
+    "key": "en:dairy-variety-packs",
+    "name": "Assortiments de produits laitiers"
   },
   {
     "key": "en:milk-chocolate-bar-with-nougat",
@@ -28,8 +28,16 @@
     "name": "Barres chocolatées au lait"
   },
   {
-    "key": "fr:barres-chocolatees-au-lait-et-aux-cereales",
+    "key": "en:chocolate-covered-bars-with-milk-and-cereals",
     "name": "Barres chocolatées au lait et aux céréales"
+  },
+  {
+    "key": "en:vanilla-ice-cream-bars-coated-with-milk-chocolate",
+    "name": "Bâtonnets glacés vanille enrobés de chocolat au lait"
+  },
+  {
+    "key": "en:vanilla-ice-cream-bars-coated-with-milk-chocolate-and-almonds",
+    "name": "Bâtonnets glacés vanille enrobés de chocolat au lait aux amandes"
   },
   {
     "key": "en:sheep-butters",
@@ -48,7 +56,7 @@
     "name": "Biscuits au chocolat au lait"
   },
   {
-    "key": "es:galletas-con-tableta-de-chocolate-con-leche",
+    "key": "en:biscuit-with-a-milk-chocolate-bar-covering",
     "name": "Biscuits tablette de chocolat au lait"
   },
   {
@@ -74,10 +82,6 @@
   {
     "key": "en:fruit-and-plant-milk-beverages",
     "name": "Boissons aux fruits et au lait végetal"
-  },
-  {
-    "key": "en:flavoured-dairy-drinks-with-sugar",
-    "name": "Boissons lactées aromatisées sucrées au lait fermenté"
   },
   {
     "key": "en:milk-chocolate-candies",
@@ -348,15 +352,15 @@
     "name": "Lait de croissance pour enfants en bas âge"
   },
   {
-    "key": "de:heumilch",
+    "key": "en:haymilk",
     "name": "Lait de foin"
   },
   {
-    "key": "de:schaf-heumilch",
+    "key": "en:sheep-s-haymilk",
     "name": "Lait de foin de brebis"
   },
   {
-    "key": "de:ziegen-heumilch",
+    "key": "en:goat-s-haymilk",
     "name": "Lait de foin de chèvre"
   },
   {
@@ -400,8 +404,16 @@
     "name": "Lait gélifié aromatisé rayon frais"
   },
   {
+    "key": "en:high-digestible-milk",
+    "name": "Lait hautement digestible"
+  },
+  {
     "key": "en:milks",
     "name": "Laits"
+  },
+  {
+    "key": "en:milks-liquid-and-powder",
+    "name": "Laits (fluide et poudre)"
   },
   {
     "key": "en:infant-formulas",
@@ -444,7 +456,7 @@
     "name": "Laits au four"
   },
   {
-    "key": "en:austrian-milks",
+    "key": "en:milks-from-austria",
     "name": "Laits autrichiens"
   },
   {
@@ -452,11 +464,11 @@
     "name": "Laits concentrés"
   },
   {
-    "key": "fr:laits-concentres-non-sucres",
+    "key": "en:evaporated-milks-without-sugar",
     "name": "Laits concentrés non sucrés"
   },
   {
-    "key": "fr:laits-concentres-sucres",
+    "key": "en:evaporated-milks-with-sugar",
     "name": "Laits concentrés sucrés"
   },
   {
@@ -468,23 +480,23 @@
     "name": "Laits cru"
   },
   {
-    "key": "en:almond-milks",
+    "key": "en:almond-based-drinks",
     "name": "Laits d'amande"
   },
   {
-    "key": "en:chocolate-almond-milks",
+    "key": "en:chocolate-almond-based-drinks",
     "name": "Laits d'amande au chocolat"
   },
   {
-    "key": "en:unsweetened-natural-almond-milks",
+    "key": "en:unsweetened-plain-almond-based-drinks",
     "name": "Laits d'amande natures non sucrés"
   },
   {
-    "key": "en:sweetened-natural-almond-milks",
+    "key": "en:sweetened-plain-almond-based-drinks",
     "name": "Laits d'amande natures sucrés"
   },
   {
-    "key": "en:vanilla-almond-milks",
+    "key": "en:vanilla-almond-based-drinks",
     "name": "Laits d'amande vanille"
   },
   {
@@ -498,10 +510,6 @@
   {
     "key": "en:goat-milks",
     "name": "Laits de chèvre"
-  },
-  {
-    "key": "en:coconut-milks",
-    "name": "Laits de coco"
   },
   {
     "key": "en:growth-milks",
@@ -612,16 +620,16 @@
     "name": "Laits entiers pasteurisés"
   },
   {
-    "key": "es:leche-entera-esterilizada",
-    "name": "Laits entiers stérilisés"
-  },
-  {
     "key": "en:esl-milks",
     "name": "Laits ESL"
   },
   {
     "key": "en:spanish-milks",
     "name": "Laits espagnols"
+  },
+  {
+    "key": "en:coconut-milks-and-creams",
+    "name": "Laits et crèmes de coco"
   },
   {
     "key": "en:fresh-milks",
@@ -724,6 +732,10 @@
     "name": "Matière grasse mélangée végétale et laitière à tartiner à 30-40% MG demi-sel"
   },
   {
+    "key": "en:milk-chocolate-molds",
+    "name": "Moulages en chocolat au lait"
+  },
+  {
     "key": "en:refrigerated-milk-based-chocolate-mousses",
     "name": "Mousses au chocolat au lait rayon frais"
   },
@@ -780,7 +792,7 @@
     "name": "Produits laitiers"
   },
   {
-    "key": "en:dairy-spread",
+    "key": "en:dairy-spreads",
     "name": "Produits laitiers à tartiner"
   },
   {
@@ -818,6 +830,14 @@
   {
     "key": "en:rice-puddings",
     "name": "Riz au lait"
+  },
+  {
+    "key": "en:rice-puddings-with-a-fruit-preparation",
+    "name": "Riz au lait à la préparation de fruits"
+  },
+  {
+    "key": "en:plain-rice-puddings",
+    "name": "Riz au lait nature"
   },
   {
     "key": "en:vanilla-flavored-rice-pudding",
@@ -900,10 +920,6 @@
     "name": "Yaourt à la grecque au lait de brebis"
   },
   {
-    "key": "en:plain-fermented-milk-yogurt-with-cream",
-    "name": "Yaourt au lait fermenté à la crème"
-  },
-  {
     "key": "en:fermented-milk-yogurt-with-cereals",
     "name": "Yaourt au lait fermenté aux céréales"
   },
@@ -912,36 +928,16 @@
     "name": "Yaourt au lait fermenté aux céréales à 0% de matières grasses"
   },
   {
-    "key": "en:fat-free-fermented-milk-yogurt-with-fruits-and-sweetener",
-    "name": "Yaourt au lait fermenté aux fruits avec édulcorants à 0% de matières grasses"
-  },
-  {
-    "key": "en:fat-free-fermented-milk-yogurt-with-fruits-and-sweetener-fortified-with-vitamin-d",
-    "name": "Yaourt au lait fermenté aux fruits avec édulcorants à 0% de matières grasses enrichi en vitamine D"
-  },
-  {
-    "key": "en:fat-free-flavoured-fermented-milk-yogurt-with-sweetener",
-    "name": "Yaourt au lait fermenté avec édulcorants à 0% de matières grasses"
-  },
-  {
-    "key": "en:fat-free-plain-fermented-milk-yogurt",
-    "name": "Yaourt nature au lait fermenté à 0% de matières grasses"
-  },
-  {
-    "key": "en:fermented-milk-flavoured-yogurt-with-sugar-and-cream",
-    "name": "Yaourt sucré aromatisé au lait fermenté et à la crème"
-  },
-  {
-    "key": "en:fermented-milk-yogurt-fortified-with-vitamin-d-with-fruits-and-sugar",
-    "name": "Yaourt sucré au lait fermenté aux fruits enrichi en vitamine D"
-  },
-  {
-    "key": "en:fermented-milk-yogurt-with-fruits-and-sugar-and-cream",
-    "name": "Yaourt sucré au lait fermenté aux fruits et à la crème"
+    "key": "fr:yaourts-a-la-confiture-de-lait",
+    "name": "Yaourts à la confiture de lait"
   },
   {
     "key": "en:sheep-milk-yogurts",
     "name": "Yaourts au lait de brebis"
+  },
+  {
+    "key": "en:plain-sheep-milk-yogurts",
+    "name": "Yaourts au lait de brebis nature"
   },
   {
     "key": "en:goat-milk-yogurts",
@@ -950,5 +946,9 @@
   {
     "key": "en:cow-milk-yogurts",
     "name": "Yaourts au lait de vache"
+  },
+  {
+    "key": "en:plain-cow-milk-yogurts",
+    "name": "Yaourts au lait de vache nature"
   }
 ]

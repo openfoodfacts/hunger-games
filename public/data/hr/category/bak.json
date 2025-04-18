@@ -1,11 +1,15 @@
 [
   {
-    "key": "en:baked-alaska",
-    "name": "Baked Alaska"
+    "key": "en:cods",
+    "name": "Bakalar"
   },
   {
-    "key": "en:baked-beans-in-tomato-sauce",
-    "name": "Baked beans in tomato sauce"
+    "key": "en:cod-acras",
+    "name": "Bakalar acras"
+  },
+  {
+    "key": "en:baked-alaska",
+    "name": "Baked Alaska"
   },
   {
     "key": "en:baked-capon-meat-and-skin",
@@ -16,10 +20,6 @@
     "name": "Baked farmed salmons"
   },
   {
-    "key": "en:baked-milk",
-    "name": "Baked milk"
-  },
-  {
     "key": "en:baked-peeled-potatoes",
     "name": "Baked peeled potatoes"
   },
@@ -28,32 +28,20 @@
     "name": "Baked shortcrust pastry with vegetable oil"
   },
   {
-    "key": "en:baker-s-yeast",
-    "name": "Baker's yeast"
-  },
-  {
-    "key": "en:baker-s-yeast-compressed",
-    "name": "Baker's yeast compressed"
-  },
-  {
-    "key": "en:bakery-products",
-    "name": "Bakery products"
+    "key": "en:bakery-croissants",
+    "name": "Bakery Croissants"
   },
   {
     "key": "en:baking-mixes",
     "name": "Baking Mixes"
   },
   {
-    "key": "en:baking-powder-or-raising-agent",
-    "name": "Baking powder or raising agent"
-  },
-  {
     "key": "en:baklava",
     "name": "Baklava"
   },
   {
-    "key": "en:belgian-bakery-products",
-    "name": "Belgian bakery products"
+    "key": "en:cod-brandade",
+    "name": "Brandade od bakalara"
   },
   {
     "key": "en:brioche-from-bakery",
@@ -68,10 +56,6 @@
     "name": "Croatian bakery products"
   },
   {
-    "key": "en:croissant-from-bakery",
-    "name": "Croissant from bakery"
-  },
-  {
     "key": "en:croissant-with-almonds-from-bakery",
     "name": "Croissant with almonds from bakery"
   },
@@ -84,8 +68,12 @@
     "name": "Czech bakery products"
   },
   {
-    "key": "en:dutch-bakery-products",
-    "name": "Dutch bakery products"
+    "key": "en:smoked-cod-roe",
+    "name": "Dimljena ikra bakalara"
+  },
+  {
+    "key": "en:cod-fillets",
+    "name": "Fileti bakalara"
   },
   {
     "key": "en:finnish-bakery-products",
@@ -96,12 +84,20 @@
     "name": "French bread multigrain from bakery"
   },
   {
-    "key": "en:frozen-baked-potatoes",
-    "name": "Frozen baked potatoes"
+    "key": "en:frozen-baking-mixes",
+    "name": "Frozen baking mixes"
   },
   {
-    "key": "en:german-bakery-products",
-    "name": "German bakery products"
+    "key": "en:frozen-pre-baked-breads",
+    "name": "Frozen pre-baked breads"
+  },
+  {
+    "key": "en:frozen-pre-baked-hamburger-buns",
+    "name": "Frozen pre-baked hamburger buns"
+  },
+  {
+    "key": "en:frozen-pre-baked-pitas",
+    "name": "Frozen pre-baked pitas"
   },
   {
     "key": "en:hungarian-bakery-products",
@@ -112,8 +108,24 @@
     "name": "Italian bakery products"
   },
   {
+    "key": "en:meals-with-cod",
+    "name": "Jela s bakalarom"
+  },
+  {
+    "key": "en:cod-livers",
+    "name": "Jetra bakalara"
+  },
+  {
+    "key": "en:codliver-fats",
+    "name": "Masti bakalara"
+  },
+  {
     "key": "en:milk-roll-from-bakery",
     "name": "Milk roll from bakery"
+  },
+  {
+    "key": "en:breaded-cod-fish",
+    "name": "Pohani bakalar"
   },
   {
     "key": "en:polish-bakery-products",
@@ -124,12 +136,16 @@
     "name": "Portuguese bakery products"
   },
   {
-    "key": "en:pre-baked-breads",
-    "name": "Pre-baked breads"
-  },
-  {
     "key": "en:puff-pastry-biscuit-from-bakery",
     "name": "Puff pastry biscuit from bakery"
+  },
+  {
+    "key": "en:refrigerated-baking-mixes",
+    "name": "Refrigerated baking mixes"
+  },
+  {
+    "key": "en:shelf-stable-baking-mixes",
+    "name": "Shelf-stable baking mixes"
   },
   {
     "key": "en:spanish-bakery-products",

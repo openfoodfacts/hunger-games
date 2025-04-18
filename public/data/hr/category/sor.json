@@ -1,95 +1,35 @@
 [
   {
     "key": "en:ananas-sorbets",
-    "name": "Ananas sorbets"
+    "name": "Ananas sorbeti"
   },
   {
-    "key": "en:apple-sorbets",
-    "name": "Apple sorbets"
-  },
-  {
-    "key": "en:apricot-sorbets",
-    "name": "Apricot sorbets"
-  },
-  {
-    "key": "en:artificially-sweetened-sorbets",
-    "name": "Artificially sweetened sorbets"
-  },
-  {
-    "key": "en:blackcurrent-sorbets",
-    "name": "Blackcurrent sorbets"
-  },
-  {
-    "key": "en:blueberry-sorbets",
-    "name": "Blueberry sorbets"
-  },
-  {
-    "key": "en:cherry-sorbets",
-    "name": "Cherry sorbets"
-  },
-  {
-    "key": "en:coconut-sorbets",
-    "name": "Coconut sorbets"
+    "key": "en:canned-sorrel",
+    "name": "Canned sorrel"
   },
   {
     "key": "en:durum-wheat-pasta-vysshiy-sort-gost",
     "name": "Durum wheat pasta vysshiy sort GOST"
   },
   {
-    "key": "en:lemon-sorbets",
-    "name": "Lemon sorbets"
+    "key": "en:fresh-sorrel",
+    "name": "Fresh sorrel"
   },
   {
-    "key": "en:lime-sorbets",
-    "name": "Lime sorbets"
-  },
-  {
-    "key": "en:mandarin-sorbets",
-    "name": "Mandarin sorbets"
-  },
-  {
-    "key": "en:mango-sorbets",
-    "name": "Mango sorbets"
-  },
-  {
-    "key": "en:melon-sorbets",
-    "name": "Melon sorbets"
-  },
-  {
-    "key": "en:multifruit-sorbets",
-    "name": "Multifruit sorbets"
+    "key": "en:ice-cream-bars-coated-with-fruit-sorbet",
+    "name": "Ice cream bars coated with fruit sorbet"
   },
   {
     "key": "en:olive-oils-from-penisola-sorrentina",
-    "name": "Olive oils from Penisola Sorrentina"
+    "name": "Maslinova ulja s penisola sorrentina"
   },
   {
-    "key": "en:orange-sorbets",
-    "name": "Orange sorbets"
+    "key": "en:pepper-variety-packs",
+    "name": "Pakiranja sorti paprike"
   },
   {
-    "key": "en:passion-fruit-sorbets",
-    "name": "Passion fruit sorbets"
-  },
-  {
-    "key": "en:peach-sorbets",
-    "name": "Peach sorbets"
-  },
-  {
-    "key": "en:pear-sorbets",
-    "name": "Pear sorbets"
-  },
-  {
-    "key": "en:plum-sorbets",
-    "name": "Plum sorbets"
-  },
-  {
-    "key": "en:puffed-sorghum-cakes",
-    "name": "Puffed sorghum cakes"
-  },
-  {
-    "key": "en:raspberry-sorbets",
-    "name": "Raspberry sorbets"
+    "key": "en:fruits-nuts-seed-variety-packs",
+    "name": "Pakiranja sorti voće-orašasti plodovi-sjemenke"
   },
   {
     "key": "en:salmon-with-sorrel",
@@ -101,35 +41,119 @@
   },
   {
     "key": "en:sorbet-tub",
-    "name": "Sorbet tub"
+    "name": "Sorbet kada"
+  },
+  {
+    "key": "en:blackcurrent-sorbets",
+    "name": "Sorbet od crnog ribiza"
   },
   {
     "key": "en:sorbets",
-    "name": "Sorbets"
+    "name": "Sorbeti"
   },
   {
     "key": "en:sorbets-on-stick",
-    "name": "Sorbets on stick"
+    "name": "Sorbeti na štapiću"
+  },
+  {
+    "key": "en:banana-sorbets",
+    "name": "Sorbeti od banane"
+  },
+  {
+    "key": "en:blueberry-sorbets",
+    "name": "Sorbeti od borovnice"
+  },
+  {
+    "key": "en:peach-sorbets",
+    "name": "Sorbeti od breskve"
+  },
+  {
+    "key": "en:melon-sorbets",
+    "name": "Sorbeti od dinje"
+  },
+  {
+    "key": "en:apple-sorbets",
+    "name": "Sorbeti od jabuka"
+  },
+  {
+    "key": "en:strawberry-sorbets",
+    "name": "Sorbeti od jagoda"
+  },
+  {
+    "key": "en:kiwi-sorbets",
+    "name": "Sorbeti od kivija"
+  },
+  {
+    "key": "en:coconut-sorbets",
+    "name": "Sorbeti od kokosa"
+  },
+  {
+    "key": "en:pear-sorbets",
+    "name": "Sorbeti od krušaka"
+  },
+  {
+    "key": "en:blackberry-sorbets",
+    "name": "Sorbeti od kupina"
+  },
+  {
+    "key": "en:lime-sorbets",
+    "name": "Sorbeti od limete"
+  },
+  {
+    "key": "en:lemon-sorbets",
+    "name": "Sorbeti od limuna"
+  },
+  {
+    "key": "en:raspberry-sorbets",
+    "name": "Sorbeti od malina"
+  },
+  {
+    "key": "en:mandarin-sorbets",
+    "name": "Sorbeti od mandarina"
+  },
+  {
+    "key": "en:mango-sorbets",
+    "name": "Sorbeti od manga"
+  },
+  {
+    "key": "en:passion-fruit-sorbets",
+    "name": "Sorbeti od marakuje"
+  },
+  {
+    "key": "en:apricot-sorbets",
+    "name": "Sorbeti od marelica"
+  },
+  {
+    "key": "en:orange-sorbets",
+    "name": "Sorbeti od naranče"
+  },
+  {
+    "key": "en:plum-sorbets",
+    "name": "Sorbeti od šljiva"
+  },
+  {
+    "key": "en:fig-sorbets",
+    "name": "Sorbeti od smokava"
+  },
+  {
+    "key": "en:cherry-sorbets",
+    "name": "Sorbeti od višanja"
+  },
+  {
+    "key": "en:multifruit-sorbets",
+    "name": "Sorbeti od više voća"
   },
   {
     "key": "en:sorbitol",
     "name": "Sorbitol"
   },
   {
-    "key": "en:sorghum",
-    "name": "Sorghum"
-  },
-  {
-    "key": "en:sorghum-flours",
-    "name": "Sorghum flours"
-  },
-  {
     "key": "en:sorrel",
     "name": "Sorrel"
   },
   {
-    "key": "en:strawberry-sorbets",
-    "name": "Strawberry sorbets"
+    "key": "en:artificially-sweetened-sorbets",
+    "name": "Umjetno zaslađeni sorbeti"
   },
   {
     "key": "en:white-fish-with-sorrel-sauce",
