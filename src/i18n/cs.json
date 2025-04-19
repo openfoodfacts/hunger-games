@@ -56,7 +56,7 @@
     "labels": "Štítky",
     "brand": "značka",
     "brands": "Značky",
-    "packaging": "balení",
+    "packaging": "obal",
     "quantity": "Množství",
     "insightTypeLabel": "Zobrazuje pouze",
     "ingredients": "Složení",
@@ -70,6 +70,8 @@
     "countries": "Země",
     "view": "Zobrazit",
     "edit": "Upravit",
+    "remaining": "Zbývá: {{count}}",
+    "remaining_other": "Zbývá: > 100",
     "hide_images": "Skrýt obrázky (rychlejší načítání)",
     "display_images": "Zobrazovat obrázky",
     "annotations": "Anotace",
@@ -247,7 +249,7 @@
     "Open_Food_Facts_wiki": "Open Food Facts wiki (en)",
     "Translators": "Překladatelé",
     "Partners": "Partneři",
-    "Open_Beauty_Facts": "Open Beauty Facts - Kosmetika",
+    "Open_Beauty_Facts": "Open Beauty Facts - kosmetika",
     "text2": "Společná, bezplatná a otevřená databáze potravinářských produktů z celého světa."
   },
   "helper": {
@@ -313,53 +315,34 @@
     "close": "Zavřít"
   },
   "nutrition": {
+    "table_partialy_filled": "Tabulka s již nějakými údaji",
+    "display_off_values": "Zobrazit hodnoty z OpenFoodFacts",
+    "nutrients": "Živiny",
+    "serving_size": "Velikost porce",
+    "add_nutrient": "-- přidat živiny --",
+    "validate_100g": "Ověřit (100 g)",
+    "validate_serving": "Ověřit (porce)",
+    "skip": "Přeskočit",
+    "invalid_image": "Neplatný obrázek",
+    "pictures": {
+      "picture_date": "Fotka byla nahrána",
+      "selected_as_nutrients": "Vybráno jako nutriční obrázek ✅",
+      "not_selected_as_nutrients": "Není vybráno jako živina ❌"
+    },
     "instructions": {
-      "cropTheTable": "Oříznutím obrázku zjednodušíte anotaci",
-      "verifyNutrimentDetected": "Uveďte, zda je zjištěná výživa správná",
-      "selectMissingNutriments": "Přidejte chybějící živiny (můžete kliknout, i když slovo nemá žádné pole)",
-      "selectValue": "Vyberte nutriční hodnotu: "
-    },
-    "steps": {
-      "1": "Oříznout",
-      "2": "Zvláštní hodnoty",
-      "3": "Výběr živin",
-      "4": "Výběr hodnot"
-    },
-    "loading": "Načítání...",
-    "unknown_brand": "Značka neznámá",
-    "value_missing": "Zapomněli jste zadat hodnotu.",
-    "next": "Další krok",
-    "prev": "Předchozí krok",
-    "skip": "Přeskočit tento produkt",
-    "validate": "Ověřit tabulku",
-    "unselect_picture": "Žádné nutriční informace",
-    "basis": "údaje pro: ",
-    "servingSize": "velikost porce",
-    "value": "Hodnota",
-    "unit": "Jednotka",
-    "nutriments": {
-      "nutriment_energy-kj": "Energie (kJ)",
-      "nutriment_energy-kcal": "Energie (kCal)",
-      "nutriment_fat": "Tuky",
-      "nutriment_saturated-fat": "Nasycené tuky",
-      "nutriment_carbohydrates": "Sacharidy",
-      "nutriment_sugars": "Cukr",
-      "nutriment_proteins": "Obsah bílkovin",
-      "nutriment_fiber": "Vlákniny",
-      "nutriment_salt": "Sůl",
-      "nutriment_sodium": "Sodík"
-    },
-    "history": {
-      "title": "Historie relace",
-      "status": "stav",
-      "product name": "název produktu",
-      "view": "zobrazit stránku",
-      "edit": "upravit stránku",
-      "SKIP": "ignorováno",
-      "VALIDATED": "upraveno",
-      "WRONG_IMAGE": "nevybraný obrázek",
-      "close": "zavřít",
-      "open": "otevřít historii"
+      "open_button": "Otevřít pokyny",
+      "title": "Jak používat rozhraní",
+      "chose_between_empty_and_partially_filled": "Můžete si vybrat mezi produkty, pro které OpenFoodFacts (OFF) nemá žádné údaje o živinách. Nebo produkt s částečně vyplněnou tabulkou živin.",
+      "picture_date_is_display": "Nad ním se zobrazí datum snímku. Umožní vám zkontrolovat, zda se jedná o poslední.",
+      "nutriments_from_off_are_displayed": "Můžete zobrazit data, která jsou již přítomna v databázi OFF. Objeví se pod vstupy:",
+      "green_for_same": "Se zeleným <1></1> pro ty, které odpovídají vstupní hodnotě.",
+      "orange_for_empty": "S <1>oranžovou</1> pro ty s prázdnou vstupní hodnotou.",
+      "red_for_different": "S <1>červenou</1> pro ty s jinou vstupní hodnotou.",
+      "indicate_not_provided_value": "Prázdné vstupy jsou ignorovány. Pokud nejsou vlákna v tabulce přítomna, můžete zadat \"-\" a určit tak, že hodnota není k dispozici.",
+      "validate_one_column": "Jakmile ověříte jeden sloupec, můžete provést ověření. Je zbytečné vyplňovat oba sloupce. Databáze ukládá pouze jeden z nich. Druhý je vypočítán pomocí proporcionality.",
+      "skip_button": "Pokud si s obrázkem nevíte rady, nebo se vám to prostě nechce, stiskněte „přeskočit“. Ostatní uživatelé to zvládnou.",
+      "invalid_image_button": "Pokud obrázky nejsou nutriční tabulkou, stiskněte \"Neplatný obrázek\" pro odstranění ze seznamu obrázků pro ověření",
+      "close": "Zavřít"
     }
   },
   "notfound": {

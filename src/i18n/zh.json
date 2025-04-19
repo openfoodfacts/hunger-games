@@ -5,27 +5,27 @@
       "cards": {
         "questions": {
           "title": "常見問答",
-          "description": "請讓我們知道這圖片是否回答了那些問題。"
+          "description": "告诉我们给出的图像是否回答了问题"
         },
         "logos": {
           "title": "標誌",
-          "description": "請找出與指定表章匹配的所有表章"
+          "description": "找到所有与给定徽标相同的徽标"
         },
         "eco_score": {
-          "title": "環保評分",
-          "description": "註釋最具價值的問題"
+          "title": "Eco-score",
+          "description": "标注价值最高的问题"
         }
       }
     },
     "account_band": {
-      "title": "想要讓您的貢獻有所價值嗎？在Open Food Facts上創建帳戶或登入吧！",
+      "title": "想让你的贡献有价值吗？在食品产品数据库上创建或登陆一个账户！",
       "log_in": "用戶名",
-      "sign_up": "註冊",
+      "sign_up": "注册",
       "contribution_details": "了解為何您的貢獻很重要"
     },
-    "saved_filters": "已儲存的篩選器",
+    "saved_filters": "已保存的筛选器",
     "contribution_modal": {
-      "title": "您的貢獻很重要",
+      "title": "你的贡献很重要",
       "information": "「飢餓遊戲」是我們運用OCR（光學字符識別）和人工智能的一項成果。當您使用Open Food Facts的「飢餓遊戲」時，您可以幫助我們改善整個資料庫，從而替社區做出更好的飲食選擇。我們將會收集您的註解，並將使用它們，以使Open Food Facts變得更加準確和高效。",
       "thank_you": "感謝您協助我們改進Open Food Facts，讓更多人能夠更輕鬆地使用它。"
     },
@@ -36,7 +36,7 @@
         "description": "已完成版本數"
       },
       "contributorCount": {
-        "title": "貢獻者",
+        "title": "贡献者",
         "description": "新增新商品"
       },
       "photographerCount": {
@@ -52,7 +52,7 @@
   "questions": {
     "category": "分類",
     "categories": "類別",
-    "label": "標籤",
+    "label": "标签",
     "labels": "标签",
     "brand": "品牌",
     "brands": "品牌",
@@ -70,6 +70,8 @@
     "countries": "國家地區",
     "view": "檢視",
     "edit": "編輯",
+    "remaining": "Remaining: {{count}}",
+    "remaining_other": "剩余：>100",
     "hide_images": "隱藏圖片（載入較快）",
     "display_images": "顯示圖片",
     "annotations": "3. Annotations",
@@ -90,7 +92,7 @@
       "long_label": {
         "type": "問題類型",
         "value": "建議值",
-        "country": "產地",
+        "country": "产地",
         "brand": "產品品牌",
         "popularity": "依熱門程度排序",
         "edit": "",
@@ -113,7 +115,7 @@
     "unflag": "取消图像标记",
     "reset_filters": "重置过滤器",
     "log_in": "用戶名",
-    "sign_up": "註冊",
+    "sign_up": "注册",
     "login_title": "让你的注释有价值",
     "login_description": "目前您没有登录 Open Food Facts。要将您的回答直接应用于产品并关联到您的帐户，请登录您的 Open Food Facts 帐户，或创建一个新账户",
     "please_wait_while_we_fetch_the_question": "我们正在处理问题中，请稍等！"
@@ -129,9 +131,9 @@
     "logos-deep-search": "无限注解",
     "manage": "管理",
     "insights": "深層研析",
-    "nutritions": "營養成分",
+    "nutritions": "营养",
     "settings": "設定",
-    "eco-score": "環保評分",
+    "eco-score": "Eco-score",
     "dashboard": "标志选项列表",
     "tour": "导览演示",
     "logged_in_user": "以 {{用户名}} 身份登录",
@@ -166,7 +168,7 @@
     "human_required": "人类需求",
     "edit_product": "打开产品编辑",
     "view_product": "打开产品页面",
-    "view_crops_for_this_product": "Annotate product logos"
+    "view_crops_for_this_product": "批注产品标志"
   },
   "logos": {
     "annotation": "注解： ",
@@ -212,7 +214,7 @@
     "deep_search": {
       "title": "查找徽标",
       "description": "选择一个你想要找的图标，然后将它们全部捕获。对于你注释的每个图标，我们会获取他相邻的图标这样你就不用停下注释了。（按shift键来选中一系列图标）",
-      "ref_logos": "Reference logos (logo already annotated with this value)",
+      "ref_logos": "参考徽标（徽标已用该值注释）",
       "remaining": "Remaining to annotate",
       "select_all": "全选",
       "unselect_all": "取消全选"
@@ -247,7 +249,7 @@
     "Open_Food_Facts_wiki": "Open Food Facts维基百科(英文)",
     "Translators": "翻譯員",
     "Partners": "合作伙伴",
-    "Open_Beauty_Facts": "Open Beauty Facts - 化妝品",
+    "Open_Beauty_Facts": "Open Beauty Facts - cosmetics",
     "text2": "來自全世界共同協作、自由且開放的食品資料庫。"
   },
   "helper": {
@@ -313,53 +315,34 @@
     "close": "關閉"
   },
   "nutrition": {
+    "table_partialy_filled": "已包含一些数据的表格",
+    "display_off_values": "Display values from OpenFoodFacts",
+    "nutrients": "营养成分",
+    "serving_size": "份量",
+    "add_nutrient": "-- add nutrient --",
+    "validate_100g": "Validate (100g)",
+    "validate_serving": "Validate (serving)",
+    "skip": "略過",
+    "invalid_image": "无效的图片",
+    "pictures": {
+      "picture_date": "图片已上传",
+      "selected_as_nutrients": "被选为营养形象✅",
+      "not_selected_as_nutrients": "未被选为营养品 ❌"
+    },
     "instructions": {
-      "cropTheTable": "裁剪图像以简化标注",
-      "verifyNutrimentDetected": "指明检测的营养成分是否正确",
-      "selectMissingNutriments": "添加缺失的营养成分 (即使单词没有方框也可以点击)",
-      "selectValue": "選取欲查看營養值的成分："
-    },
-    "steps": {
-      "1": "裁切",
-      "2": "特殊值",
-      "3": "营养成分选择",
-      "4": "值选择"
-    },
-    "loading": "載入中...",
-    "unknown_brand": "未知品牌",
-    "value_missing": "您忘了输入数值",
-    "next": "下一步",
-    "prev": "上一步",
-    "skip": "跳过此产品",
-    "validate": "验证表",
-    "unselect_picture": "无营养成分信息",
-    "basis": "数据用于： ",
-    "servingSize": "份量",
-    "value": "值",
-    "unit": "單位",
-    "nutriments": {
-      "nutriment_energy-kj": "能量（kJ）",
-      "nutriment_energy-kcal": "卡路里 (kcal)",
-      "nutriment_fat": "脂肪",
-      "nutriment_saturated-fat": "飽和脂肪",
-      "nutriment_carbohydrates": "碳水化合物",
-      "nutriment_sugars": "糖",
-      "nutriment_proteins": "蛋白质含量",
-      "nutriment_fiber": "纤维",
-      "nutriment_salt": "鹽",
-      "nutriment_sodium": "鈉"
-    },
-    "history": {
-      "title": "会话历史",
-      "status": "狀態",
-      "product name": "产品名称",
-      "view": "查看页面",
-      "edit": "编辑页面",
-      "SKIP": "已忽略",
-      "VALIDATED": "已编辑",
-      "WRONG_IMAGE": "未选中的图片",
-      "close": "關閉",
-      "open": "打开历史记录"
+      "open_button": "打开说明",
+      "title": "How to use the interface",
+      "chose_between_empty_and_partially_filled": "You can chose between products for which OpenFoodFacts (OFF) has no data about the nutrients. Or product with partially filled nutrient table.",
+      "picture_date_is_display": "The date of the picture is displayed on top of it. Allowing you to check if it's a recent one.",
+      "nutriments_from_off_are_displayed": "",
+      "green_for_same": "With <1>green</1> for those matching with the input value.",
+      "orange_for_empty": "With <1>orange</1> for those with empty input value.",
+      "red_for_different": "With <1>red</1> for those with different input value.",
+      "indicate_not_provided_value": "Empty inputs are ignored. If fibers are not present in the table, you can put \"-\" to specify the value is not available.",
+      "validate_one_column": "Once you've verified one column, you can validate. It's useless to fill both columns. The data base only save one of them. The second one is computed by using proportionality.",
+      "skip_button": "If you don't know how to deal with an image, or you just don't want to do it, press \"skip\". Other user will be able to handle it.",
+      "invalid_image_button": "如果图片不是营养表，请按“无效图片”将其从图片列表中删除以进行验证",
+      "close": "關閉"
     }
   },
   "notfound": {
@@ -386,9 +369,9 @@
   },
   "ingredients": {
     "description": "This game allows you to validate the pre-selection of images of ingredients lists in various languages for a product, and validate the extracted ingredients.",
-    "current_text": "text from off",
+    "current_text": "",
     "confidence_score": "language confidence",
-    "revert": "Revert",
+    "revert": "复原",
     "parsing": "Get server understanding",
     "send": "Validate & send",
     "skip": "跳过此产品",
@@ -401,7 +384,7 @@
     },
     "playStore": {
       "title": "Play商店",
-      "subtitle": "Get it on"
+      "subtitle": "下载"
     },
     "microsoft": {
       "title": "微软",

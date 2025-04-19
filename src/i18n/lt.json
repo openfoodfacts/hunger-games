@@ -70,6 +70,8 @@
     "countries": "Šalys",
     "view": "Žiūrėti",
     "edit": "Redaguoti",
+    "remaining": "Liko: {{count}}",
+    "remaining_other": "Likusieji: >100",
     "hide_images": "Paslėpti nuotraukas (greitesnis užkrovimas)",
     "display_images": "Rodyti nuotraukas",
     "annotations": "Anotacijos",
@@ -247,7 +249,7 @@
     "Open_Food_Facts_wiki": "Open Food Facts wiki (en)",
     "Translators": "Vertėjai",
     "Partners": "Partneriai",
-    "Open_Beauty_Facts": "Open Beauty Facts - Kosmetika",
+    "Open_Beauty_Facts": "„Open Beauty Facts“. Kosmetika",
     "text2": "Bendradarbiaujanti, nemokama ir atvira maisto produktų iš viso pasaulio duomenų bazė."
   },
   "helper": {
@@ -313,53 +315,34 @@
     "close": "Uždaryti"
   },
   "nutrition": {
+    "table_partialy_filled": "Lentelė su jau esamais kai kuriais duomenimis",
+    "display_off_values": "Rodyti vertes iš „OpenFoodFacts“",
+    "nutrients": "Maistinės medžiagos",
+    "serving_size": "Porcijos dydis",
+    "add_nutrient": "-- pridėti maistinę medžiagą --",
+    "validate_100g": "Patvirtinti (100 g)",
+    "validate_serving": "Patvirtinti (porcija)",
+    "skip": "Praleisti",
+    "invalid_image": "Neleistinas vaizdas",
+    "pictures": {
+      "picture_date": "Nuotrauka įkelta",
+      "selected_as_nutrients": "Pasirinktas kaip maisto medžiagos vaizdas ✅",
+      "not_selected_as_nutrients": "Nepasirinktas kaip maisto medžiaga ❌"
+    },
     "instructions": {
-      "cropTheTable": "Apkirpkite vaizdą, kad supaprastintumėte komentarą",
-      "verifyNutrimentDetected": "Nurodykite, ar aptikta maistinė medžiaga yra teisinga",
-      "selectMissingNutriments": "Pridėkite trūkstamas maistines medžiagas (galite spustelėti, net jei žodyje nėra langelio)",
-      "selectValue": "Pasirinkite maistinę vertę: "
-    },
-    "steps": {
-      "1": "Apkarpyti",
-      "2": "Ypatingos vertybės",
-      "3": "Maistinių medžiagų pasirinkimas",
-      "4": "Vertybių pasirinkimas"
-    },
-    "loading": "Įkeliama...",
-    "unknown_brand": "Prekinis ženklas nežinomas",
-    "value_missing": "Pamiršai įvesti vertę.",
-    "next": "Kitas žingsnis",
-    "prev": "Ankstesnis žingsnis",
-    "skip": "Praleisti šį produktą",
-    "validate": "Patvirtinkite lentelę",
-    "unselect_picture": "Nėra informacijos apie maistingumą",
-    "basis": "duomenys, skirti: ",
-    "servingSize": "porcijos dydis",
-    "value": "Vertė",
-    "unit": "Vienetas",
-    "nutriments": {
-      "nutriment_energy-kj": "Energija (kJ)",
-      "nutriment_energy-kcal": "Energija (kCal)",
-      "nutriment_fat": "Riebalai",
-      "nutriment_saturated-fat": "Sotieji riebalai",
-      "nutriment_carbohydrates": "Carbohydrate",
-      "nutriment_sugars": "Cukrus",
-      "nutriment_proteins": "Baltymų kiekis",
-      "nutriment_fiber": "Skaidulos",
-      "nutriment_salt": "Druska",
-      "nutriment_sodium": "Natris"
-    },
-    "history": {
-      "title": "Sesijos istorija",
-      "status": "būsena",
-      "product name": "produkto pavadinimas",
-      "view": "peržiūrėti puslapį",
-      "edit": "redaguoti puslapį",
-      "SKIP": "ignoruojamas",
-      "VALIDATED": "redagavo",
-      "WRONG_IMAGE": "nepasirinkta nuotrauka",
-      "close": "uždaryti",
-      "open": "atidaryti istoriją"
+      "open_button": "Atverti instrukciją",
+      "title": "Kaip naudotis sąsaja",
+      "chose_between_empty_and_partially_filled": "Galite rinktis iš produktų, apie kurių maistines medžiagas „OpenFoodFacts“ (OFF) neturi duomenų. Arba produktą su iš dalies užpildyta maistinių medžiagų lentele.",
+      "picture_date_is_display": "Viršuje rodoma nuotraukos data. Leidžia jums patikrinti, ar ji yra nauja.",
+      "nutriments_from_off_are_displayed": "Galite rodyti duomenis, kurie jau yra OFF duomenų bazėje. Jie bus rodomi po įvestimis:",
+      "green_for_same": "Su <1>žalia</1> tų, kurie atitinka įvesties vertę.",
+      "orange_for_empty": "Su <1>oranžine</1> tų, kurių įvesties reikšmė tuščia.",
+      "red_for_different": "Su <1>raudona</1> tų, kurių įvesties vertė skiriasi.",
+      "indicate_not_provided_value": "Tuščios įvestys nepaisomos. Jei lentelėje nėra skaidulų, galite įrašyti „-“, norėdami nurodyti, kad reikšmės nėra.",
+      "validate_one_column": "Once you've verified one column, you can validate. It's useless to fill both columns. The data base only save one of them. The second one is computed by using proportionality.",
+      "skip_button": "If you don't know how to deal with an image, or you just don't want to do it, press \"skip\". Other user will be able to handle it.",
+      "invalid_image_button": "If the pictures is not a nutritional table, press \"Invalid image\" to remove it from the list of the images to verify",
+      "close": "Uždaryti"
     }
   },
   "notfound": {
