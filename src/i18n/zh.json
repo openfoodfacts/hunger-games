@@ -21,7 +21,7 @@
       "title": "想让你的贡献有价值吗？在食品产品数据库上创建或登陆一个账户！",
       "log_in": "用戶名",
       "sign_up": "注册",
-      "contribution_details": "了解為何您的貢獻很重要"
+      "contribution_details": "了解为什么您的贡献很重要"
     },
     "saved_filters": "已保存的筛选器",
     "contribution_modal": {
@@ -47,11 +47,11 @@
   },
   "flagged_images": {
     "title": "由用戶標記的圖片",
-    "loading": "載入中"
+    "loading": "正在加载"
   },
   "questions": {
-    "category": "分類",
-    "categories": "類別",
+    "category": "类别",
+    "categories": "类别",
     "label": "标签",
     "labels": "标签",
     "brand": "品牌",
@@ -319,7 +319,7 @@
     "display_off_values": "Display values from OpenFoodFacts",
     "nutrients": "营养成分",
     "serving_size": "份量",
-    "add_nutrient": "-- add nutrient --",
+    "add_nutrient": "-- 添加营养素 --",
     "validate_100g": "Validate (100g)",
     "validate_serving": "Validate (serving)",
     "skip": "略過",
@@ -331,7 +331,7 @@
     },
     "instructions": {
       "open_button": "打开说明",
-      "title": "How to use the interface",
+      "title": "如何使用界面",
       "chose_between_empty_and_partially_filled": "You can chose between products for which OpenFoodFacts (OFF) has no data about the nutrients. Or product with partially filled nutrient table.",
       "picture_date_is_display": "The date of the picture is displayed on top of it. Allowing you to check if it's a recent one.",
       "nutriments_from_off_are_displayed": "",
@@ -373,7 +373,7 @@
     "confidence_score": "language confidence",
     "revert": "复原",
     "parsing": "Get server understanding",
-    "send": "Validate & send",
+    "send": "验证并发送",
     "skip": "跳过此产品",
     "getRobotoffPrediciton": "Get predictions from Robotoff"
   },
