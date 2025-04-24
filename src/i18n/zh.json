@@ -4,7 +4,7 @@
       "title": "你想玩什么游戏？",
       "cards": {
         "questions": {
-          "title": "常見問答",
+          "title": "问题",
           "description": "告诉我们给出的图像是否回答了问题"
         },
         "logos": {
@@ -26,27 +26,27 @@
     "saved_filters": "已保存的筛选器",
     "contribution_modal": {
       "title": "你的贡献很重要",
-      "information": "「飢餓遊戲」是我們運用OCR（光學字符識別）和人工智能的一項成果。當您使用Open Food Facts的「飢餓遊戲」時，您可以幫助我們改善整個資料庫，從而替社區做出更好的飲食選擇。我們將會收集您的註解，並將使用它們，以使Open Food Facts變得更加準確和高效。",
-      "thank_you": "感謝您協助我們改進Open Food Facts，讓更多人能夠更輕鬆地使用它。"
+      "information": "“饥饿游戏”致力于充分利用我们的光学字符识别（OCR）和人工智能的成果。当您使用 Open Food Facts 的“饥饿游戏”时，您将改进我们的整个数据库，从而帮助社区做出更好的食物选择。我们会收集您的注释，并利用它们来提高 Open Food Facts 的准确性和效率。",
+      "thank_you": "感谢您帮助我们改进 Open Food Facts，以便更多人可以轻松使用它。"
     },
     "statistics": {
       "title": "{{userName}} 的統計資料：",
       "editorCount": {
         "title": "編輯",
-        "description": "已完成版本數"
+        "description": "完成的版本数量"
       },
       "contributorCount": {
         "title": "贡献者",
         "description": "新增新商品"
       },
       "photographerCount": {
-        "title": "攝影師",
-        "description": "為產品拍攝照片"
+        "title": "摄影师",
+        "description": "为产品拍照"
       }
     }
   },
   "flagged_images": {
-    "title": "由用戶標記的圖片",
+    "title": "用户标记的图片",
     "loading": "正在加载"
   },
   "questions": {
@@ -56,7 +56,7 @@
     "labels": "标签",
     "brand": "品牌",
     "brands": "品牌",
-    "packaging": "包裝",
+    "packaging": "包装",
     "quantity": "數量",
     "insightTypeLabel": "僅顯示",
     "ingredients": "成分",
@@ -123,7 +123,7 @@
   "menu": {
     "title": "飢餓遊戲",
     "games": "遊戲",
-    "questions": "常見問答",
+    "questions": "问题",
     "logos": "標誌",
     "logos-annotation": "徽标（Logo）注释",
     "logos-search": "查找徽标",
