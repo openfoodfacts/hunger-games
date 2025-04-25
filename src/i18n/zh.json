@@ -5,11 +5,11 @@
       "cards": {
         "questions": {
           "title": "问题",
-          "description": "告诉我们给出的图像是否回答了问题"
+          "description": "给出的图像是否回答了问题"
         },
         "logos": {
-          "title": "標誌",
-          "description": "找到所有与给定徽标相同的徽标"
+          "title": "标志",
+          "description": "查找符合给定标志的所有标志"
         },
         "eco_score": {
           "title": "Eco-score",
@@ -19,7 +19,7 @@
     },
     "account_band": {
       "title": "想让你的贡献有价值吗？在食品产品数据库上创建或登陆一个账户！",
-      "log_in": "用戶名",
+      "log_in": "用户名",
       "sign_up": "注册",
       "contribution_details": "了解为什么您的贡献很重要"
     },
@@ -32,7 +32,7 @@
     "statistics": {
       "title": "{{userName}} 的統計資料：",
       "editorCount": {
-        "title": "編輯",
+        "title": "编辑",
         "description": "完成的版本数量"
       },
       "contributorCount": {
@@ -70,7 +70,7 @@
     "countries": "国家/地区",
     "view": "查看",
     "edit": "编辑",
-    "remaining": "Remaining: {{count}}",
+    "remaining": "剩余： {{count}}",
     "remaining_other": "剩余：>100",
     "hide_images": "隐藏图像 （页面更快加载）",
     "display_images": "显示图像",
@@ -114,7 +114,7 @@
     "flag": "有什么问题？报告或标记图像！",
     "unflag": "取消图像标记",
     "reset_filters": "重置过滤器",
-    "log_in": "用戶名",
+    "log_in": "用户名",
     "sign_up": "注册",
     "login_title": "让你的注释有价值",
     "login_description": "目前您没有登录 Open Food Facts。要将您的提交内容直接应用于产品并关联到您的帐户，请登录您的 Open Food Facts 帐户，或创建一个新账户",
@@ -124,7 +124,7 @@
     "title": "饥饿游戏",
     "games": "游戏",
     "questions": "问题",
-    "logos": "標誌",
+    "logos": "标志",
     "logos-annotation": "徽标（Logo）注释",
     "logos-search": "查找徽标",
     "logos-product-search": "每个产品的注释",
@@ -215,7 +215,7 @@
       "title": "查找徽标",
       "description": "选择一个你想要找的图标，然后将它们全部捕获。对于你注释的每个图标，我们会获取他相邻的图标这样你就不用停下注释了。（按shift键来选中一系列图标）",
       "ref_logos": "参考徽标（徽标已用该值注释）",
-      "remaining": "Remaining to annotate",
+      "remaining": "尚待注释",
       "select_all": "全选",
       "unselect_all": "取消全选"
     }
