@@ -370,9 +370,9 @@
   "ingredients": {
     "description": "Dette spil lader dig validere forvalget af billeder af ingredienslister på forskellige sprog for et produkt og validere de udtrukne ingredienser.",
     "current_text": "tekst fra off",
-    "confidence_score": "language confidence",
+    "confidence_score": "sproglig sikkerhed",
     "revert": "Tilbagefør",
-    "parsing": "Get server understanding",
+    "parsing": "Få serverforståelse",
     "send": "Bekræft og send",
     "skip": "Overspring dette produkt",
     "getRobotoffPrediciton": "Få forudsigelser fra Robotoff"
