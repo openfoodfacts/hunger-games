@@ -256,7 +256,7 @@
     "welcome": {
       "page1": {
         "title": "歡迎來到《飢餓遊戲》",
-        "text1": "Hunger Games is a collection of mini-games that help contribute to Open Food Facts in many ways. You can play our really exciting games from anywhere. Here is a guided tour of the entire website which will get you started.",
+        "text1": "Hunger Games（饥饿游戏）是一系列迷你游戏的集合，它们以多种方式为“Open Food Facts”项目做出贡献。您可以随时随地畅玩我们精彩刺激的游戏。以下是网站全貌的导览，助您快速入门。",
         "text2": "这些操作简单有趣，动动手指就能完成。别忘了登录 Open Food Facts 网站领取您的贡献荣誉。如果出现操作失误，请登录网站改正相关信息。",
         "text3": "如果對遊戲有任何疑問，請點擊頁面右上角的問號圖標，您可以通過 Slack 上的 #hunger-games 頻道聯繫我們。"
       },
@@ -333,14 +333,14 @@
       "open_button": "打开说明",
       "title": "如何使用界面",
       "chose_between_empty_and_partially_filled": "You can chose between products for which OpenFoodFacts (OFF) has no data about the nutrients. Or product with partially filled nutrient table.",
-      "picture_date_is_display": "The date of the picture is displayed on top of it. Allowing you to check if it's a recent one.",
+      "picture_date_is_display": "照片的日期显示在上方。方便您检查它是否是最近的照片。",
       "nutriments_from_off_are_displayed": "",
-      "green_for_same": "With <1>green</1> for those matching with the input value.",
-      "orange_for_empty": "With <1>orange</1> for those with empty input value.",
-      "red_for_different": "With <1>red</1> for those with different input value.",
-      "indicate_not_provided_value": "Empty inputs are ignored. If fibers are not present in the table, you can put \"-\" to specify the value is not available.",
-      "validate_one_column": "Once you've verified one column, you can validate. It's useless to fill both columns. The data base only save one of them. The second one is computed by using proportionality.",
-      "skip_button": "If you don't know how to deal with an image, or you just don't want to do it, press \"skip\". Other user will be able to handle it.",
+      "green_for_same": "将匹配的输入值标记为<1>绿色</1>。",
+      "orange_for_empty": "将空值标记为<1>橙色</1>。",
+      "red_for_different": "将不同的输入值标记为<1>红色</1>。",
+      "indicate_not_provided_value": "空白输入将被忽略。如果表中不存在纤维，您可以输入“-”符号来指定该值不可用。",
+      "validate_one_column": "验证完一列后，就可以进行验证了。两列都填不起作用。数据库只保存其中一列。第二列是按比例计算的。",
+      "skip_button": "如果您不知道如何处理某个图像，或者您不想处理，请点击“跳过”。其他用户将能够处理它。",
       "invalid_image_button": "如果图片不是营养表，请按“无效图片”将其从图片列表中删除以进行验证",
       "close": "關閉"
     }
@@ -368,14 +368,14 @@
     "countryLabel": "国家/地区"
   },
   "ingredients": {
-    "description": "This game allows you to validate the pre-selection of images of ingredients lists in various languages for a product, and validate the extracted ingredients.",
+    "description": "这个游戏可以让你验证某个产品的各种语言配料表图像预选区域，并验证提取的配料表内容。",
     "current_text": "",
     "confidence_score": "language confidence",
     "revert": "复原",
     "parsing": "Get server understanding",
     "send": "验证并发送",
     "skip": "跳过此产品",
-    "getRobotoffPrediciton": "Get predictions from Robotoff"
+    "getRobotoffPrediciton": "从 Robotoff 服务获取预测"
   },
   "footer": {
     "appStore": {
