@@ -32,10 +32,12 @@ The main goal is: Every Open Food Facts user can annotate products in a few minu
 - Join us at [https://openfoodfacts.slack.com/](https://openfoodfacts.slack.com/) in the channel #hunger-games. (Signup at [https://slack.openfoodfacts.org/](https://slack.openfoodfacts.org/)
 
 ## 🎨 Design & User interface
-- We strive for a playful and refined UI that's very efficient on the Web and on Mobile. 
+
+- We strive for a playful and refined UI that's very efficient on the Web and on Mobile.
 - [![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?logo=figma&logoColor=white) Mockups on the current app and future plans to discuss](https://www.figma.com/design/pngqJwPkytFik6h4EW396n/Hunger-Games?node-id=801-2&p=f&t=xQnrkht1cbTJGOw9-0)
 
 ## Outstanding issues
+
 - We need performance improvements server side (degrading the experience)
 - We need to step up our design, as well as cognitive load on the users for the questions
 
@@ -44,6 +46,7 @@ The main goal is: Every Open Food Facts user can annotate products in a few minu
 - [Node](https://nodejs.org)
 
 ## Setup
+
 ### Node & Yarn
 
 - [Install Node](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
@@ -90,7 +93,6 @@ Go to `src/pages/logosValidator/dashboardDefinition.ts`. You have two objects to
 
 Open Food Facts APIs and [Robotoff](https://github.com/openfoodfacts/robotoff)
 
-
 ## How you can help
 
 For developers, you can have a look at [good first issues](https://github.com/openfoodfacts/hunger-games/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc+label%3A%22good+first+issue%22) or ask on [slack](https://slack.openfoodfacts.org/) in hunger-games channel.
@@ -98,16 +100,18 @@ For developers, you can have a look at [good first issues](https://github.com/op
 You can also help by improving [translation in your language](https://translate.openfoodfacts.org/translate/openfoodfacts/1942/en-fr?filter=basic&value=0), Or the [wiki page](https://wiki.openfoodfacts.org/Hunger_Games) of the project
 
 ## 📆 Weekly meetings (joint with the ML/Robotoff meeting)
+
 - We e-meet every Tuesday at 11:00 Paris Time (10:00 London Time, 15:30 IST, 02:00 AM PT)
 - ![Google Meet](https://img.shields.io/badge/Google%20Meet-00897B?logo=google-meet&logoColor=white) Video call link: https://meet.google.com/qvv-grzm-gzb
 - Join by phone: https://tel.meet/qvv-grzm-gzb?pin=9965177492770
 - Add the Event to your Calendar by [adding the Open Food Facts community calendar to your calendar](https://wiki.openfoodfacts.org/Events)
-- [Weekly Agenda](https://drive.google.com/open?id=1RUfmWHjtFVaBcvQ17YfXu6FW6oRFWg-2lncljG0giKI): please add the Agenda items as early as you can. Make sure to check the Agenda items in advance of the meeting, so that we have the most informed discussions possible. 
+- [Weekly Agenda](https://drive.google.com/open?id=1RUfmWHjtFVaBcvQ17YfXu6FW6oRFWg-2lncljG0giKI): please add the Agenda items as early as you can. Make sure to check the Agenda items in advance of the meeting, so that we have the most informed discussions possible.
 - The meeting will handle Agenda items first, and if time permits, collaborative bug triage.
 - We strive to timebox the core of the meeting (decision making) to 30 minutes, with an optional free discussion/live debugging afterwards.
 - We take comprehensive notes in the Weekly Agenda of agenda item discussions and of decisions taken.
 
 ## 👩‍⚖️ Licence
+
 - See LICENSE.md
 
 ## Contributors

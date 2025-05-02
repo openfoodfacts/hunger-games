@@ -30,8 +30,16 @@ import { useSearchParamsState } from "../../hooks/useSearchParamsState";
 
 export default function Nutrition() {
   const { t } = useTranslation();
-  const [partiallyFilled, setPartiallyFilled] = useSearchParamsState('partiallyFilled', false, Boolean);
-  const [displayOFFValue, setDisplayOFFValue] = useSearchParamsState('displayValue', false, Boolean);
+  const [partiallyFilled, setPartiallyFilled] = useSearchParamsState(
+    "partiallyFilled",
+    false,
+    Boolean,
+  );
+  const [displayOFFValue, setDisplayOFFValue] = useSearchParamsState(
+    "displayValue",
+    false,
+    Boolean,
+  );
 
   const handlePartiallyFilled = (_, checked) => {
     setPartiallyFilled(checked);

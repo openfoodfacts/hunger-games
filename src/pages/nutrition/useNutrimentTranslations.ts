@@ -10,7 +10,7 @@ function parseNutrients(data: undefined | Nutri[]): Record<string, string> {
   const rep = {};
 
   if (data === undefined) {
-    return {}
+    return {};
   }
   data.forEach((item) => {
     const { id, name, nutrients } = item;

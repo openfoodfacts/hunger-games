@@ -103,7 +103,7 @@ export function useRobotoffPredictions(partiallyFilled: boolean) {
 
   const nextItem = React.useCallback(() => {
     setInsightIndex((p) => p + 1);
-    setCount((p) => p === 100 ? p : p - 1);
+    setCount((p) => (p === 100 ? p : p - 1));
   }, []);
 
   const insight = insights.data[insightIndex];

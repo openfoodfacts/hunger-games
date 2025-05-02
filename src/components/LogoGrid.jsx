@@ -74,8 +74,8 @@ const LogoCard = React.memo(
           backgroundColor: selected
             ? theme.palette.action.selected
             : annotation_type
-            ? theme.palette.action.disabledBackground
-            : undefined,
+              ? theme.palette.action.disabledBackground
+              : undefined,
           // border: selected ? `solid ${theme.palette.primary.main} ${theme.spacing(1)}` : undefined,
           position: "relative",
         }}

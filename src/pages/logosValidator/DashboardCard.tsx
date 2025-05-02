@@ -66,8 +66,8 @@ const DashboardCard = (props: LogoDefinition) => {
           questionNumber === "?"
             ? "info"
             : questionNumber > 0
-            ? "error"
-            : "success"
+              ? "error"
+              : "success"
         }
       >
         <Card
