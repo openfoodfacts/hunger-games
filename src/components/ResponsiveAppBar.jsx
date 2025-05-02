@@ -25,7 +25,7 @@ import QuestionMarkIcon from "@mui/icons-material/QuestionMark";
 import DevModeContext from "../contexts/devMode";
 import LoginContext from "../contexts/login";
 import logo from "../assets/logo.png";
-import { Link } from "react-router-dom";
+import { Link } from "react-router";
 
 import { useTranslation } from "react-i18next";
 import WelcomeTour from "./welcome/Welcome";
