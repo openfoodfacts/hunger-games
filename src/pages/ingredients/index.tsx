@@ -45,7 +45,7 @@ function ProductInterface(props) {
       <Typography variant="h6">
         {product_name || "No product name"} (scan: {scans_n})
         <br />
-        <a href={off.getProductUrl(code)}>{code}</a>
+        <a href={off.getProductUrl(code)} rel="noopener noreferrer">{code}</a>
       </Typography>
       <Stack direction="column">
         {selectedImages?.length > 0 && (

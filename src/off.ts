@@ -88,9 +88,10 @@ const offService = {
 
   getProductUrl(barcode) {
     const lang = getLang();
+    const sanitizedBarcode = encodeURIComponent(barcode); // Ensure barcode is safe
     return `https://world${
       lang === "en" ? "" : "-" + lang
-    }.${OFF_DOMAIN}/product/${barcode}`;
+    }.${OFF_DOMAIN}/product/${sanitizedBarcode}`;
   },
 
   getProductEditUrl(barcode) {
