@@ -20,8 +20,8 @@ axios("https://static.openfoodfacts.org/data/taxonomies/countries.json")
               value.language_codes === undefined
                 ? "en"
                 : value.language_codes.en === undefined
-                ? undefined
-                : value.language_codes.en.split(",")[0];
+                  ? undefined
+                  : value.language_codes.en.split(",")[0];
             return {
               id: key,
               label: value.name.en,
@@ -45,8 +45,8 @@ axios("https://static.openfoodfacts.org/data/taxonomies/countries.json")
                   value.language_codes === undefined
                     ? "en"
                     : value.language_codes.en === undefined
-                    ? undefined
-                    : value.language_codes.en.split(",")[0];
+                      ? undefined
+                      : value.language_codes.en.split(",")[0];
                 return languageCode;
               })
               .filter(Boolean),

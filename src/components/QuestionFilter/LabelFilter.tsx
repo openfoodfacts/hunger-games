@@ -129,8 +129,8 @@ const LabelFilter = (props) => {
         />
       )}
       filterOptions={(options, state) => {
-        return options.filter(
-          (option) => option?.cleanName.includes(cleanName(state.inputValue)),
+        return options.filter((option) =>
+          option?.cleanName.includes(cleanName(state.inputValue)),
         );
       }}
     />

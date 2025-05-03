@@ -23,14 +23,14 @@ import Loader from "./pages/loader";
 import { CountryProvider } from "./contexts/CountryProvider";
 
 const EcoScorePage = React.lazy(() => import("./pages/eco-score"));
-const LogoAnnotationPage = React.lazy(() =>
-  import("./pages/logos/LogoAnnotation"),
+const LogoAnnotationPage = React.lazy(
+  () => import("./pages/logos/LogoAnnotation"),
 );
 const LogoSearchPage = React.lazy(() => import("./pages/logos/LogoSearch"));
 const LogoUpdatePage = React.lazy(() => import("./pages/logos/LogoUpdate"));
 const LogoDeepSearch = React.lazy(() => import("./pages/logos/LogoDeepSearch"));
-const ProductLogoAnnotationPage = React.lazy(() =>
-  import("./pages/logos/ProductLogoAnnotations"),
+const ProductLogoAnnotationPage = React.lazy(
+  () => import("./pages/logos/ProductLogoAnnotations"),
 );
 const SettingsPage = React.lazy(() => import("./pages/settings"));
 const QuestionsPage = React.lazy(() => import("./pages/questions"));
@@ -39,12 +39,12 @@ const NotFoundPage = React.lazy(() => import("./pages/not-found"));
 const Home = React.lazy(() => import("./pages/home"));
 const Nutrition = React.lazy(() => import("./pages/nutrition"));
 const FlaggedImages = React.lazy(() => import("./pages/flaggedImages"));
-const ShouldLoggedinPage = React.lazy(() =>
-  import("./pages/shouldLoggedinPage"),
+const ShouldLoggedinPage = React.lazy(
+  () => import("./pages/shouldLoggedinPage"),
 );
 const PackagingPage = React.lazy(() => import("./pages/packaging"));
-const LogoQuestionValidator = React.lazy(() =>
-  import("./pages/logosValidator/LogoQuestionValidator"),
+const LogoQuestionValidator = React.lazy(
+  () => import("./pages/logosValidator/LogoQuestionValidator"),
 );
 const DashBoard = React.lazy(() => import("./pages/logosValidator/DashBoard"));
 const GalaBoard = React.lazy(() => import("./pages/GalaPage"));

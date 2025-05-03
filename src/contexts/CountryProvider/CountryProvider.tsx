@@ -35,8 +35,8 @@ export function CountryProvider({ children }) {
     const lowercasedCountry = ValidCountryCodes.has(searchParamsCountry)
       ? searchParamsCountry
       : ValidCountryCodes.has(country?.toLocaleLowerCase())
-      ? country?.toLocaleLowerCase()
-      : "";
+        ? country?.toLocaleLowerCase()
+        : "";
 
     return {
       country: lowercasedCountry,
