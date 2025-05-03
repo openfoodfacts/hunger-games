@@ -1,7 +1,25 @@
 name: Add PRs to the new Hunger Games GitHub Project
 
 on:
-  - pull_request_target
+  pull_request_target:
+    types:
+      - assigned
+      - unassigned
+      - labeled
+      - unlabeled
+      - opened
+      - edited
+      - closed
+      - reopened
+      - synchronize
+      - converted_to_draft
+      - ready_for_review
+      - locked
+      - unlocked
+      - review_requested
+      - review_request_removed
+      - auto_merge_enabled
+      - auto_merge_disabled
 
 jobs:
   add-to-project:
@@ -14,3 +32,9 @@ jobs:
           project-url: https://github.com/orgs/openfoodfacts/projects/40
           github-token: ${{ secrets.ADD_TO_PROJECT_PAT || github.token }}
           label-operator: AND
+      - uses: actions/add-to-project@main
+        with:
+          project-url: https://github.com/orgs/openfoodfacts/projects/136 # Add issue to the Translations project
+          github-token: ${{ secrets.ADD_TO_PROJECT_PAT }}
+          labeled: 🌐 Translations, translations, i18n, Translations
+          label-operator: OR

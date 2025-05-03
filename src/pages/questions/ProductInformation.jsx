@@ -43,7 +43,6 @@ import {
   useOtherQuestions,
   useFlagImage,
 } from "./utils";
-import { capitaliseName } from "../../utils";
 
 const ProductInformation = (props) => {
   const { question, productData } = props;
@@ -71,19 +70,6 @@ const ProductInformation = (props) => {
   if (!question || question.insight_id === NO_QUESTION_LEFT) {
     return null;
   }
-
-  const splitCountries = (string) => {
-    if (!string) return;
-    let countries = string.split(", ");
-    let allCountries = "";
-    for (let i = 0; i < countries.length; i++) {
-      allCountries += capitaliseName(countries[i]);
-      if (i !== countries.length - 1) {
-        allCountries += ", ";
-      }
-    }
-    return allCountries;
-  };
 
   return (
     <Box>
@@ -280,18 +266,44 @@ const ProductInformation = (props) => {
             th: { verticalAlign: "top", pr: 0 },
           }}
         >
-          {Object.keys(ADDITIONAL_INFO_TRANSLATION).map((infoKey) => (
-            <TableRow key={infoKey}>
-              <TableCell component="th" scope="row">
-                {t(`questions.${ADDITIONAL_INFO_TRANSLATION[infoKey]}`)}
-              </TableCell>
-              {infoKey !== "countriesTags" ? (
-                <TableCell>{productData?.[infoKey]}</TableCell>
-              ) : (
-                <TableCell>{splitCountries(productData?.[infoKey])}</TableCell>
-              )}
-            </TableRow>
-          ))}
+          {Object.keys(ADDITIONAL_INFO_TRANSLATION).map((infoKey) => {
+            console.log(ADDITIONAL_INFO_TRANSLATION[infoKey]);
+            const { i18nKey, translatedKey, getLink } =
+              ADDITIONAL_INFO_TRANSLATION[infoKey];
+
+            const value =
+              (translatedKey && productData?.[translatedKey]) ??
+              productData?.[infoKey] ??
+              "?";
+
+            return (
+              <TableRow key={infoKey}>
+                <TableCell component="th" scope="row">
+                  {t(`questions.${i18nKey}`)}
+                </TableCell>
+                {Array.isArray(value) ? (
+                  <TableCell>
+                    {getLink
+                      ? value.map((name, index) => (
+                          <React.Fragment key={name}>
+                            <a
+                              href={getLink(name)}
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              {name}
+                            </a>
+                            {index < value.length - 1 ? ", " : ""}
+                          </React.Fragment>
+                        ))
+                      : value.join(", ")}
+                  </TableCell>
+                ) : (
+                  <TableCell>{value}</TableCell>
+                )}
+              </TableRow>
+            );
+          })}
         </TableBody>
       </Table>
       {isDevMode && devCustomization.showDebug && (

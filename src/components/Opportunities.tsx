@@ -19,13 +19,13 @@ import { getLang } from "../localeStorageManager";
 const pageSize = 25;
 
 const OpportunityCard = (props) => {
-  const { type, value, name, campaign, country, questionNumber } = props;
+  const { type, value, name, campaign, countryCode, questionNumber } = props;
 
   const targetUrl = `/questions?${getQuestionSearchParams({
     valueTag: value,
     insightType: type,
     campaign,
-    countryFilter: country,
+    countryFilter: countryCode,
     sortByPopularity: true,
   })}`;
 
@@ -93,21 +93,27 @@ const useTranslation = (toTranslate) => {
 };
 
 const Opportunities = (props) => {
-  const { type, campaign, country } = props;
+  const { type, campaign, countryCode } = props;
   const [remainingQuestions, setRemainingQuestions] = React.useState([]);
   const [isLoading, setIsLoading] = React.useState(true);
   const [page, setPage] = React.useState(1);
 
   React.useEffect(() => {
     setRemainingQuestions([]);
-  }, [type, campaign, country]);
+  }, [type, campaign, countryCode]);
 
   React.useEffect(() => {
     let isValid = true;
     setIsLoading(true);
 
     robotoff
-      .getUnansweredValues({ type, campaign, country, page, count: pageSize })
+      .getUnansweredValues({
+        type,
+        campaign,
+        countryCode,
+        page,
+        count: pageSize,
+      })
       .then(({ data }) => {
         if (isValid) {
           setRemainingQuestions((prev) => [
@@ -124,7 +130,7 @@ const Opportunities = (props) => {
     return () => {
       isValid = false;
     };
-  }, [type, campaign, country, page]);
+  }, [type, campaign, countryCode, page]);
 
   const translation = useTranslation(
     remainingQuestions.map(([value]) => value),
@@ -156,7 +162,7 @@ const Opportunities = (props) => {
                 name={name}
                 type={type}
                 campaign={campaign}
-                country={country}
+                countryCode={countryCode}
                 questionNumber={questionNumber}
               />
             );

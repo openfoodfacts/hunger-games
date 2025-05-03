@@ -8,6 +8,7 @@ import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
+import Select from "@mui/material/Select";
 import MenuItem from "@mui/material/MenuItem";
 import ListSubheader from "@mui/material/ListSubheader";
 import Tooltip from "@mui/material/Tooltip";
@@ -31,6 +32,8 @@ import WelcomeTour from "./welcome/Welcome";
 import { useMediaQuery } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import { OFF_URL } from "../const";
+import { useCountry } from "../contexts/CountryProvider";
+import countryNames from "../assets/countries.json";
 
 // Object with no url are subheader in the menu
 const pages = [
@@ -59,10 +62,14 @@ const pages = [
       },
     ],
   },
+  {
+    url: "nutrition",
+    translationKey: "menu.nutritions",
+    desktopOnly: true,
+  },
   { translationKey: "menu.manage" },
   { url: "insights", translationKey: "menu.insights", devModeOnly: true },
   { url: "dashboard", translationKey: "menu.dashboard" },
-  // { url: "nutriscore", translationKey: "menu.nutriscore", devModeOnly: true },
   { url: "settings", translationKey: "menu.settings", mobileOnly: true },
 ];
 
@@ -113,6 +120,7 @@ const ResponsiveAppBar = () => {
   const { t } = useTranslation();
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [isTourOpen, setIsTourOpen] = React.useState(false);
+  const [country, setCountry] = useCountry();
   const theme = useTheme();
   const isDesktop = useMediaQuery(theme.breakpoints.up("md"));
 
@@ -134,6 +142,9 @@ const ResponsiveAppBar = () => {
     }
     if (page.mobileOnly) {
       return !isDesktop;
+    }
+    if (page.desktopOnly) {
+      return isDesktop;
     }
     return true;
   };
@@ -402,12 +413,30 @@ const ResponsiveAppBar = () => {
               sx={{
                 display: "flex",
                 flexDirection: "row",
-                alignItems: "baseline",
+                alignItems: "center",
                 "&>*": {
                   mr: 1.5,
                 },
               }}
             >
+              <Select
+                value={country || "world"}
+                onChange={(event) =>
+                  setCountry(
+                    event.target.value === "world" ? "" : event.target.value,
+                    "global",
+                  )
+                }
+                variant="outlined"
+                sx={{ fieldset: { border: "none" } }}
+              >
+                {countryNames.map(({ label, countryCode }) => (
+                  <MenuItem value={countryCode || "world"} key={countryCode}>
+                    {label}
+                    {countryCode && ` (${countryCode})`}
+                  </MenuItem>
+                ))}
+              </Select>
               <IconButton
                 color="inherit"
                 onClick={handleCloseNavMenu}

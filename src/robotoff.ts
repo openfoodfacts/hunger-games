@@ -1,5 +1,5 @@
 import axios from "axios";
-import { ROBOTOFF_API_URL, IS_DEVELOPMENT_MODE, OFF_IMAGE_URL } from "./const";
+import { ROBOTOFF_API_URL, IS_DEVELOPMENT_MODE } from "./const";
 import { getLang } from "./localeStorageManager";
 import COUNTRIES from "./assets/countries.json";
 import { reformatValueTag, removeEmptyKeys } from "./utils";
@@ -161,6 +161,8 @@ const robotoff = {
     annotation = "",
     page = 1,
     count = 25,
+    campaigns = "",
+    country = "",
   ) {
     let annotated;
     if (annotation.length && annotation === "not_annotated") {
@@ -176,6 +178,8 @@ const robotoff = {
         page,
         annotated,
         count,
+        campaigns,
+        countries: country,
       }),
     });
   },
@@ -195,57 +199,24 @@ const robotoff = {
     );
   },
 
-  getNutritionValueFromImage(language, imageOcrUrl, images) {
-    const ocrUrlSubString = imageOcrUrl.split("/");
-
-    // setting a default value, assuming length of ocrUrlSubString is 7,
-    // and product code is 8 characters long
-    let productCodeForOcrUrl = ocrUrlSubString[5];
-
-    const nutritionKeyWithLangSuffix = `nutrition_${language}`;
-
-    let imgid = "";
-    for (const key in images) {
-      if (nutritionKeyWithLangSuffix === key) {
-        imgid = images[nutritionKeyWithLangSuffix].imgid;
-      }
-    }
-
-    if (ocrUrlSubString.length > 7) {
-      // the productCode is 13 characters long
-      productCodeForOcrUrl =
-        ocrUrlSubString[5] +
-        "/" +
-        ocrUrlSubString[6] +
-        "/" +
-        ocrUrlSubString[7] +
-        "/" +
-        ocrUrlSubString[8];
-    }
-
-    return axios.get(
-      `${ROBOTOFF_API_URL}/predict/nutrient?ocr_url=${OFF_IMAGE_URL}}/${productCodeForOcrUrl}/${imgid}.json`,
-    );
-  },
-
   getUnansweredValues(params: {
     type: "label" | "brand" | "category";
-    country;
+    countryCode;
     campaign;
     page?: number;
     count?: number;
   }) {
-    let page = params.page ?? 1;
-    page = page >= 1 ? page : 1;
+    const { page = 1, countryCode, ...other } = params;
 
     return axios.get(
-      `${ROBOTOFF_API_URL}/questions/unanswered/?${Object.keys({
-        ...params,
-        countries: countryId2countryCode(params.country),
-        page,
-      })
-        .filter((key) => params[key] !== undefined)
-        .map((key) => `${key}=${params[key]}`)
+      `${ROBOTOFF_API_URL}/questions/unanswered/?${Object.entries(
+        removeEmptyKeys({
+          ...other,
+          countries: countryCode,
+          page: page >= 1 ? page : 1,
+        }),
+      )
+        .map(([key, value]) => `${key}=${value}`)
         .join("&")}`,
     );
   },

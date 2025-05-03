@@ -10,26 +10,28 @@ type TaxonomyAutoSelectProps = Omit<TextFieldProps, "value" | "onChange"> & {
    * The taxonly to querry
    */
   taxonomy: TaxonomyNames;
-  onChange: (itemId: string) => void;
+  onChange: (itemId: string, ctx?: object) => void;
   value: string;
   /**
    * The the id bellow the text field
    */
   showKey?: boolean;
+  lang?: string;
 };
 
 const isOptionEqualToValue = (option: string | TaxonomyItem, value: string) =>
   (typeof option === "string" ? option : option.text) === value;
 
 export default function TaxonomyAutoSelect(props: TaxonomyAutoSelectProps) {
-  const { taxonomy, value, onChange, showKey, fullWidth, ...other } = props;
+  const { taxonomy, value, onChange, showKey, fullWidth, lang, ...other } =
+    props;
   const [inputValue, setInputValue] = React.useState("");
   const [selectedValue, setSelectedValue] = React.useState(null);
   const [options, setOptions] = React.useState<
     readonly (string | TaxonomyItem)[]
   >([]);
 
-  const language = "en"; //getLang();
+  const language = lang ?? "en"; //getLang();
 
   const fetch = React.useMemo(
     () =>
@@ -76,9 +78,6 @@ export default function TaxonomyAutoSelect(props: TaxonomyAutoSelectProps) {
     };
   }, [value, inputValue, fetch]);
 
-  const selectedOption = options.find((option) =>
-    isOptionEqualToValue(option, value),
-  );
   return (
     <Autocomplete
       getOptionLabel={(option) =>
@@ -96,9 +95,8 @@ export default function TaxonomyAutoSelect(props: TaxonomyAutoSelectProps) {
       isOptionEqualToValue={isOptionEqualToValue}
       // noOptionsText="No locations"
       onChange={(event: any, newValue: TaxonomyItem | null | string) => {
-        console.log({ newValue });
         if (typeof newValue === "object") {
-          onChange(newValue.text);
+          onChange(newValue.text, newValue);
           setSelectedValue(newValue);
           return;
         }
@@ -108,12 +106,6 @@ export default function TaxonomyAutoSelect(props: TaxonomyAutoSelectProps) {
         setInputValue(newInputValue);
       }}
       onBlur={() => {
-        console.log("blur");
-        console.log({
-          inputValue,
-          value,
-          selectedOption,
-        });
         if (
           inputValue === value ||
           (selectedValue && selectedValue.text === inputValue)
@@ -128,7 +120,6 @@ export default function TaxonomyAutoSelect(props: TaxonomyAutoSelectProps) {
           {...params}
           {...other}
           onKeyDown={(event) => {
-            console.log(event.key);
             if (event.key === "Enter") {
               event.preventDefault();
             }

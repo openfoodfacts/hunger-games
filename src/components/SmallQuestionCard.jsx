@@ -44,8 +44,8 @@ const SmallQuestionCard = (props) => {
         questionNumber === "?"
           ? "info"
           : questionNumber > 0
-          ? "error"
-          : "success"
+            ? "error"
+            : "success"
       }
     >
       <Card sx={{ minWidth: 200, maxWidth: 350 }}>
