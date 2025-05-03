@@ -95,6 +95,10 @@ const offService = {
 
   getProductEditUrl(barcode) {
     const lang = getLang();
+    const barcodeRegex = /^[0-9A-Za-z]+$/; // Adjust regex to match valid barcode patterns
+    if (!barcodeRegex.test(barcode)) {
+      throw new Error("Invalid barcode format");
+    }
     return `https://world${
       lang === "en" ? "" : "-" + lang
     }.${OFF_DOMAIN}/cgi/product.pl?type=edit&code=${barcode}`;

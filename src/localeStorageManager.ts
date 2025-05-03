@@ -97,9 +97,10 @@ export const getLang = () => {
 
   const urlParams = new URLSearchParams(window.location.search);
   const urlLanguage = urlParams.has("language") && urlParams.get("language");
+  const allowedLanguages = ["en", "fr", "es", "de", "it"]; // Add allowed languages here
 
   return (
-    urlLanguage ||
+    (urlLanguage && allowedLanguages.includes(urlLanguage) ? urlLanguage : null) ||
     settings[localSettingsKeys.language] ||
     // @ts-expect-error Property 'userLanguage' does not exist on type 'Navigator'.
     (navigator.language || navigator.userLanguage).split("-")[0]
