@@ -51,6 +51,7 @@ const GalaBoard = React.lazy(() => import("./pages/GalaPage"));
 const IngredientPage = React.lazy(() => import("./pages/ingredients"));
 const Brandinator = React.lazy(() => import("./pages/Brandinator"));
 const BugPage = React.lazy(() => import("./pages/bug"));
+const SpellCheck = React.lazy(() => import("./pages/spell-check"));
 
 const TaxonomyWalk = React.lazy(() => import("./pages/taxonomyWalk"));
 
@@ -348,6 +349,8 @@ export default function App() {
                       )
                     }
                   />
+                  <Route path="/spell-check" element={<SpellCheck />} />
+
                   {showFlaggedImage && (
                     <Route path="/flagged-images" element={<FlaggedImages />} />
                   )}
