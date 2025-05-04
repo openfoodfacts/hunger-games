@@ -1,6 +1,6 @@
 # Hunger Games: Annotation games for Open Food Facts
 
-Hunger Games is a series of mini-apps that let users contribute data to Open Food Facts, in a rather fun way using React.
+Hunger Games is a series of mini-apps that let users contribute data to Open Food Facts, in a rather fun way using React. It relies heavily on Robotoff APIs, as well as Open Food Facts APIs.
 You are very welcome to write the game you want.
 
 <picture>
