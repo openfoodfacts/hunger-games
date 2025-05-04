@@ -257,11 +257,9 @@ __metadata:
   linkType: hard
 
 "@babel/runtime@npm:^7.0.0, @babel/runtime@npm:^7.12.1, @babel/runtime@npm:^7.12.13, @babel/runtime@npm:^7.12.5, @babel/runtime@npm:^7.18.3, @babel/runtime@npm:^7.20.6, @babel/runtime@npm:^7.23.2, @babel/runtime@npm:^7.5.5, @babel/runtime@npm:^7.8.7, @babel/runtime@npm:^7.9.2":
-  version: 7.23.2
-  resolution: "@babel/runtime@npm:7.23.2"
-  dependencies:
-    regenerator-runtime: ^0.14.0
-  checksum: 6c4df4839ec75ca10175f636d6362f91df8a3137f86b38f6cd3a4c90668a0fe8e9281d320958f4fbd43b394988958585a17c3aab2a4ea6bf7316b22916a371fb
+  version: 7.27.1
+  resolution: "@babel/runtime@npm:7.27.1"
+  checksum: 11339838a54783e5b14e04d94d7a4d032e9965c5823f3f687e41556fa40344ae7aeb57c535720b7a74ab3e8217def7834a6f1a665ee55bbb3befede141419913
   languageName: node
   linkType: hard
 
@@ -1915,14 +1913,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"axios@npm:^0.28.0":
-  version: 0.28.1
-  resolution: "axios@npm:0.28.1"
+"axios@npm:^0.30.0":
+  version: 0.30.0
+  resolution: "axios@npm:0.30.0"
   dependencies:
-    follow-redirects: ^1.15.0
+    follow-redirects: ^1.15.4
     form-data: ^4.0.0
     proxy-from-env: ^1.1.0
-  checksum: 5115a38d79064d07437c5a28f15841e3607634040e3120ec06a2c4367a7d07cf213b16496eab53b6f58ebc5fb377a440ba9ed4782529b14449a1e285734bfb54
+  checksum: 5179e93f4d8a4f8fc6fce3d46b4087aff60d1f2aeb36fad289e506dfd327c3436aafe1a91b371f47ffc2ef1b0a3f7ea278a24f6b1af88216d691b1e6c262b32f
   languageName: node
   linkType: hard
 
@@ -3397,13 +3395,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"follow-redirects@npm:^1.15.0":
-  version: 1.15.6
-  resolution: "follow-redirects@npm:1.15.6"
+"follow-redirects@npm:^1.15.4":
+  version: 1.15.9
+  resolution: "follow-redirects@npm:1.15.9"
   peerDependenciesMeta:
     debug:
       optional: true
-  checksum: a62c378dfc8c00f60b9c80cab158ba54e99ba0239a5dd7c81245e5a5b39d10f0c35e249c3379eae719ff0285fff88c365dd446fab19dee771f1d76252df1bbf5
+  checksum: 859e2bacc7a54506f2bf9aacb10d165df78c8c1b0ceb8023f966621b233717dab56e8d08baadc3ad3b9db58af290413d585c999694b7c146aaf2616340c3d2a6
   languageName: node
   linkType: hard
 
@@ -3922,7 +3920,7 @@ __metadata:
     "@typescript-eslint/eslint-plugin": ^8.31.1
     "@typescript-eslint/parser": ^8.31.1
     "@vitejs/plugin-react": ^4.1.1
-    axios: ^0.28.0
+    axios: ^0.30.0
     eslint: ^9.26.0
     eslint-plugin-prettier: ^5.2.6
     eslint-plugin-react: ^7.37.5
@@ -5661,13 +5659,6 @@ __metadata:
     get-proto: ^1.0.1
     which-builtin-type: ^1.2.1
   checksum: ccc5debeb66125e276ae73909cecb27e47c35d9bb79d9cc8d8d055f008c58010ab8cb401299786e505e4aab733a64cba9daf5f312a58e96a43df66adad221870
-  languageName: node
-  linkType: hard
-
-"regenerator-runtime@npm:^0.14.0":
-  version: 0.14.0
-  resolution: "regenerator-runtime@npm:0.14.0"
-  checksum: 1c977ad82a82a4412e4f639d65d22be376d3ebdd30da2c003eeafdaaacd03fc00c2320f18120007ee700900979284fc78a9f00da7fb593f6e6eeebc673fba9a3
   languageName: node
   linkType: hard
 
