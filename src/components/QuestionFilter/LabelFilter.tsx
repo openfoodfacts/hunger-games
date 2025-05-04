@@ -44,7 +44,12 @@ const useOptionFetching = (insightType, inputValue, lang) => {
               AVAILABLE_OPTIONS.includes(lang) ? lang : "en"
             }/${insightType}/${key}.json`,
           )
-          .then(({ data }) => {
+          .then((rep) => {
+            const { data } = rep;
+
+            if (!Array.isArray(data)) {
+              throw new Error("Did not get the correct JSON");
+            }
             setOptions((prevOptions) => {
               const existingKeys = prevOptions.map((x) => x.key);
               return [

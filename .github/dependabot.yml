@@ -28,10 +28,6 @@ updates:
       emotion:
         patterns:
           - "@emotion/*"
-      redux:
-        patterns:
-          - "@reduxjs/toolkit"
-          - "react-redux"
       vite:
         patterns:
           - "@vitejs/plugin-react"

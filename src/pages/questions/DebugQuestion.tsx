@@ -16,8 +16,12 @@ import Table from "@mui/material/Table";
 import TableBody from "@mui/material/TableBody";
 import TableRow from "@mui/material/TableRow";
 import TableCell from "@mui/material/TableCell";
+import { useQuery } from "@tanstack/react-query";
 
-const fetchData = async (insightId) => {
+const fetchData = (insightId?: string) => async () => {
+  if (!insightId) {
+    return null;
+  }
   const response = await robotoff.insightDetail(insightId);
 
   if (!response) {
@@ -37,7 +41,7 @@ const fetchData = async (insightId) => {
 };
 
 const getCroppedLogoUrl = (
-  debugResponse: null | {
+  debugResponse?: null | {
     source_image?: string;
     bounding_box?: number[];
   },
@@ -55,55 +59,30 @@ const getCroppedLogoUrl = (
   return robotoff.getCroppedImageUrl(sourceImage, bounding_box);
 };
 
-const DebugQuestion = (props) => {
+interface DebugQuestionProps {
+  insightId: string;
+}
+
+const DebugQuestion = (props: DebugQuestionProps) => {
   const { insightId } = props;
-  const [isLoading, setIsLoading] = React.useState(true);
-  const [debugResponse, setDebugResponse] = React.useState<null | {
-    source_image?: string;
-    bounding_box?: number[];
-    data?: any;
-  }>({});
-  const [openDetails, setOpenDetails] = React.useState<any>({
-    resume: false,
-    json_details: false,
+
+  const { data, status } = useQuery({
+    queryKey: ["insight-details", insightId],
+    queryFn: fetchData(insightId),
   });
 
-  const handleChange = (panelId) => (event, newState) => {
-    setOpenDetails((prev) => ({ ...prev, [panelId]: newState }));
-  };
+  const [resumeIsOpen, setResumeIsOpen] = React.useState(false);
+  const [jsonDetailIsOpen, setJsonDetailIsOpen] = React.useState(false);
 
-  React.useEffect(() => {
-    setIsLoading(true);
-    let isValid = true;
-    fetchData(insightId)
-      .then((response) => {
-        if (!isValid) {
-          return;
-        }
-        setIsLoading(false);
-        setDebugResponse(response);
-      })
-      .catch((e) => {
-        if (!isValid) {
-          return;
-        }
-        setIsLoading(false);
-        setDebugResponse(e);
-      });
-    return () => {
-      isValid = false;
-    };
-  }, [insightId]);
-
-  const croppedUrl = getCroppedLogoUrl(debugResponse);
+  const croppedUrl = getCroppedLogoUrl(data);
   return (
     <>
       <Divider sx={{ mt: 2 }} />
       <Box sx={{ px: 2, my: 2 }}>
         <Accordion
           variant="outlined"
-          onChange={handleChange("resume")}
-          expanded={openDetails["resume"]}
+          onChange={(_, isOpen) => setResumeIsOpen(isOpen)}
+          expanded={resumeIsOpen}
         >
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
@@ -113,9 +92,9 @@ const DebugQuestion = (props) => {
             <Typography>resume</Typography>
           </AccordionSummary>
           <AccordionDetails>
-            {isLoading ? (
-              <LinearProgress />
-            ) : (
+            {status === "pending" && <LinearProgress />}
+            {status === "error" && <Typography>An error occurred</Typography>}
+            {status === "success" && (
               <div>
                 <Table size="small">
                   <TableBody
@@ -128,14 +107,14 @@ const DebugQuestion = (props) => {
                       <TableCell component="th" scope="row">
                         insight id
                       </TableCell>
-                      <TableCell>{debugResponse?.data?.id}</TableCell>
+                      <TableCell>{data?.data?.id}</TableCell>
                     </TableRow>
 
                     <TableRow>
                       <TableCell component="th" scope="row">
                         generator model
                       </TableCell>
-                      <TableCell>{debugResponse?.data?.predictor}</TableCell>
+                      <TableCell>{data?.data?.predictor}</TableCell>
                     </TableRow>
 
                     <TableRow>
@@ -143,9 +122,7 @@ const DebugQuestion = (props) => {
                         timestamp
                       </TableCell>
                       <TableCell>
-                        {new Date(
-                          debugResponse?.data?.timestamp,
-                        ).toLocaleString()}
+                        {new Date(data?.data?.timestamp).toLocaleString()}
                       </TableCell>
                     </TableRow>
                   </TableBody>
@@ -163,8 +140,8 @@ const DebugQuestion = (props) => {
         </Accordion>
         <Accordion
           variant="outlined"
-          onChange={handleChange("json_details")}
-          expanded={openDetails["json_details"]}
+          onChange={(_, isOpen) => setJsonDetailIsOpen(isOpen)}
+          expanded={jsonDetailIsOpen}
         >
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
@@ -174,11 +151,11 @@ const DebugQuestion = (props) => {
             <Typography>raw JSON</Typography>
           </AccordionSummary>
           <AccordionDetails>
-            {isLoading ? (
-              <LinearProgress />
-            ) : (
+            {status === "pending" && <LinearProgress />}
+            {status === "error" && <Typography>An error occurred</Typography>}
+            {status === "success" && (
               <Typography variant="caption" component="pre">
-                {JSON.stringify(debugResponse?.data ?? debugResponse, null, 2)}
+                {JSON.stringify(data?.data ?? data, null, 2)}
               </Typography>
             )}
           </AccordionDetails>
