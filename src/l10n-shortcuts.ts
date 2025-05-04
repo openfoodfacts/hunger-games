@@ -24,7 +24,7 @@ const SHORTCUT_LOCALISATION = {
   },
 };
 
-export const getShortcuts = (lang?: string): ShortcutLocalization => {
+export const getShortcuts = (lang?: string): Shortcuts => {
   return {
     ...SHORTCUT_LOCALISATION.en,
     ...SHORTCUT_LOCALISATION[lang ?? getLang()],

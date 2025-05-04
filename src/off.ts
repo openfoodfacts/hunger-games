@@ -9,10 +9,20 @@ import {
   URL_ORIGINE,
 } from "./const";
 import axios from "axios";
-import combineURLs from "axios/lib/helpers/combineURLs";
 
 const BARCODE_REGEX = /(...)(...)(...)(.*)$/;
 
+interface Product {
+  product_name?: string;
+  brands?: string[];
+  ingredients_text?: string;
+  countries_tags?: string[];
+  images?: any;
+  categories?: string[];
+  categories_tags?: string[];
+  labels_tags?: string;
+  quantity?: string;
+}
 const offService = {
   getCookie(name) {
     const cookies = document.cookie
@@ -68,7 +78,7 @@ const offService = {
   getProduct(barcode) {
     const lang = getLang();
 
-    return axios.get(
+    return axios.get<{ code: string; product: Product }>(
       `${OFF_API_URL}/product/${barcode}.json?fields=${[
         "product_name",
         "brands",
@@ -104,7 +114,7 @@ const offService = {
   },
 
   getImageUrl(imagePath) {
-    return combineURLs(OFF_IMAGE_URL, imagePath);
+    return `${OFF_IMAGE_URL}/${imagePath}`;
   },
 
   getTableExtractionAI({ img, x0, y0, x1, y1 }) {
@@ -193,10 +203,7 @@ const offService = {
       fields: "ingredients",
       lc: lang,
       tags_lc: lang,
-      product: {
-        lang,
-        [`ingredients_text_${lang}`]: text,
-      },
+      product: { lang, [`ingredients_text_${lang}`]: text },
     });
   },
 };

@@ -1,17 +1,22 @@
 import * as React from "react";
 import { UNITS } from "./config";
 import { FORCED_UNITS, isValidUnit } from "./utils";
+import { NutrimentPrediction } from "./insight.types";
 
 interface NutrimentCellProps {
   nutrimentId: string;
   nutrimentKey: string;
   tabIndex: number;
-  value?: string;
-  unit?: string;
+  value: string | null;
+  unit: string | null;
   productValue?: number;
   productUnit?: string;
   displayOFFValue: boolean;
-  setValues: (object) => void;
+  setValues: (
+    update: (
+      prev: Record<string, Pick<NutrimentPrediction, "value" | "unit">>,
+    ) => Record<string, Pick<NutrimentPrediction, "value" | "unit">>,
+  ) => void;
 }
 
 function getRatio(unit: "g" | "mg" | "µg" | string) {
@@ -37,7 +42,12 @@ function clean(input: undefined | string | null | number): string {
   return `${input}`.replaceAll(" ", "").toLowerCase();
 }
 
-function getLegendColor(productValue, value, productUnit, unit) {
+function getLegendColor(
+  productValue: undefined | string | null | number,
+  value: undefined | string | null | number,
+  productUnit: undefined | string | null,
+  unit: undefined | string | null,
+) {
   const cleanProductValue = clean(productValue);
   const cleanProductUnit = clean(productUnit);
   const cleanValue = clean(value);
@@ -59,9 +69,11 @@ function getLegendColor(productValue, value, productUnit, unit) {
   const ratioProduct = getRatio(cleanProductUnit);
   const ratioInput = getRatio(cleanUnit);
   const numberProduct = Number.parseFloat(
-    cleanProductValue.match(/(\.|,|\d)+/)[0],
+    cleanProductValue.match(/(\.|,|\d)+/)?.[0] ?? "",
   );
-  const numberInput = Number.parseFloat(cleanValue.match(/(\.|,|\d)+/)[0]);
+  const numberInput = Number.parseFloat(
+    cleanValue.match(/(\.|,|\d)+/)?.[0] ?? "",
+  );
 
   if (ratioProduct * numberProduct === ratioInput * numberInput) {
     return "green";
@@ -94,13 +106,13 @@ export const NutrimentCell = (props: NutrimentCellProps) => {
         const element = document.querySelector(
           `tr[data-label-id=${nutrimentId}]`,
         );
-        element.classList.add("focused");
+        element?.classList.add("focused");
       }}
       onBlur={() => {
         const element = document.querySelector(
           `tr[data-label-id=${nutrimentId}]`,
         );
-        element.classList.remove("focused");
+        element?.classList.remove("focused");
       }}
     >
       <div style={{ display: "inline-table" }}>

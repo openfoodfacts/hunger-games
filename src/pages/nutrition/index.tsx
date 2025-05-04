@@ -26,26 +26,31 @@ import Instructions from "./Instructions";
 import useNutrimentTranslations from "./useNutrimentTranslations";
 import { useCountry } from "../../contexts/CountryProvider";
 import { useTranslation } from "react-i18next";
-import { useSearchParamsState } from "../../hooks/useSearchParamsState";
+import { useSearchParams } from "react-router";
 
 export default function Nutrition() {
   const { t } = useTranslation();
-  const [partiallyFilled, setPartiallyFilled] = useSearchParamsState(
-    "partiallyFilled",
-    false,
-    Boolean,
-  );
-  const [displayOFFValue, setDisplayOFFValue] = useSearchParamsState(
-    "displayValue",
-    false,
-    Boolean,
-  );
 
-  const handlePartiallyFilled = (_, checked) => {
-    setPartiallyFilled(checked);
-    setDisplayOFFValue(checked);
+  const [urlParams, setUrlParams] = useSearchParams();
+
+  const partiallyFilled = Boolean(urlParams.get("partiallyFilled"));
+  const displayOFFValue = Boolean(urlParams.get("displayValue"));
+
+  const handlePartiallyFilled = (checked: boolean) => {
+    setUrlParams((prev: URLSearchParams) => {
+      const newParams = new URLSearchParams(prev);
+      newParams.set("partiallyFilled", checked.toString());
+      newParams.set("displayValue", checked.toString());
+      return newParams;
+    });
   };
-  const handleDisplayOFFValue = (_, checked) => setDisplayOFFValue(checked);
+  const handleDisplayOFFValue = (checked: boolean) =>
+    setUrlParams((prev: URLSearchParams) => {
+      const newParams = new URLSearchParams(prev);
+
+      newParams.set("displayValue", checked.toString());
+      return newParams;
+    });
   const [country] = useCountry();
 
   const languageCode = getCountryLanguageCode(country);
@@ -57,7 +62,7 @@ export default function Nutrition() {
   const [values, setValues] = React.useState<
     Record<string, Pick<NutrimentPrediction, "value" | "unit">>
   >({});
-  const apiRef = React.useRef<ReactZoomPanPinchRef>();
+  const apiRef = React.useRef<ReactZoomPanPinchRef>(null);
 
   React.useEffect(() => {
     if (!insight || typeof insight === "string") {
@@ -67,8 +72,9 @@ export default function Nutrition() {
 
     const defaultizedInsightValues = Object.fromEntries(
       Object.entries(insight.data.nutrients).map(([id, values]) => {
-        const defaultUnit = NUTRIMENTS.find((item) => item.id === id)?.unit;
-        return [id, { unit: defaultUnit, ...values }];
+        const defaultUnit =
+          NUTRIMENTS.find((item) => item.id === id)?.unit ?? null;
+        return [id, { ...values, unit: values.unit ?? defaultUnit }];
       }),
     );
 
@@ -105,7 +111,7 @@ export default function Nutrition() {
                 control={
                   <Checkbox
                     checked={partiallyFilled}
-                    onChange={handlePartiallyFilled}
+                    onChange={(_, checked) => handlePartiallyFilled(checked)}
                   />
                 }
                 label={t("nutrition.table_partialy_filled")}
@@ -115,7 +121,7 @@ export default function Nutrition() {
                 control={
                   <Checkbox
                     checked={partiallyFilled ? displayOFFValue : false}
-                    onChange={handleDisplayOFFValue}
+                    onChange={(_, checked) => handleDisplayOFFValue(checked)}
                   />
                 }
                 label={t("nutrition.display_off_values")}
@@ -194,7 +200,7 @@ export default function Nutrition() {
                         >
                           <td
                             style={{
-                              paddingLeft: 10 + depth ? depth * 10 : 0,
+                              paddingLeft: 10 + (depth ? depth * 10 : 0),
                               paddingRight: 4,
                             }}
                           >
@@ -252,7 +258,7 @@ export default function Nutrition() {
                           setValues((prev) => {
                             const defaultUnit = NUTRIMENTS.find(
                               (item) => item.id === event.target.value,
-                            ).unit;
+                            )?.unit;
                             return {
                               ...prev,
                               [`${event.target.value}_100g`]: {
@@ -300,7 +306,7 @@ export default function Nutrition() {
                             type: "100g",
                           });
                           nextItem();
-                          apiRef.current.resetTransform();
+                          apiRef.current?.resetTransform();
                         }}
                       >
                         {t("nutrition.validate_100g")}
@@ -319,7 +325,7 @@ export default function Nutrition() {
                             type: "serving",
                           });
                           nextItem();
-                          apiRef.current.resetTransform();
+                          apiRef.current?.resetTransform();
                         }}
                       >
                         {t("nutrition.validate_serving")}
@@ -338,7 +344,7 @@ export default function Nutrition() {
                 onClick={() => {
                   skipRobotoff({ insightId: insight.id });
                   nextItem();
-                  apiRef.current.resetTransform();
+                  apiRef.current?.resetTransform();
                 }}
               >
                 {t("nutrition.skip")}
@@ -351,7 +357,7 @@ export default function Nutrition() {
                 onClick={() => {
                   deleteRobotoff({ insightId: insight.id });
                   nextItem();
-                  apiRef.current.resetTransform();
+                  apiRef.current?.resetTransform();
                 }}
               >
                 {t("nutrition.invalid_image")}

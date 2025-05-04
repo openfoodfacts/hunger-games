@@ -10,6 +10,7 @@ export interface QuestionInterface {
   insight_type: string;
   question: string;
   source_image_url?: string;
+  ref_image_url?: string;
   type: string;
   value: string;
   value_tag: string;
@@ -30,23 +31,13 @@ function countryId2countryCode(id: string | null) {
 
 const robotoff = {
   annotate(insightId: string, annotation) {
-    if (IS_DEVELOPMENT_MODE) {
-      console.log(
-        `Annotated, ${ROBOTOFF_API_URL}/insights/annotate`,
-        new URLSearchParams(
-          `insight_id=${insightId}&annotation=${annotation}&update=1`,
-        ),
-        { withCredentials: true },
-      );
-    } else {
-      return axios.post(
-        `${ROBOTOFF_API_URL}/insights/annotate`,
-        new URLSearchParams(
-          `insight_id=${insightId}&annotation=${annotation}&update=1`,
-        ),
-        { withCredentials: true },
-      );
-    }
+    return axios.post(
+      `${ROBOTOFF_API_URL}/insights/annotate`,
+      new URLSearchParams(
+        `insight_id=${insightId}&annotation=${annotation}&update=1`,
+      ),
+      { withCredentials: true },
+    );
   },
 
   questionsByProductCode(code: string) {
@@ -87,12 +78,7 @@ const robotoff = {
     const lang = getLang();
 
     return axios.get<GetQuestionsResponse>(`${ROBOTOFF_API_URL}/questions/`, {
-      params: removeEmptyKeys({
-        ...searchParams,
-        lang,
-        count,
-        page,
-      }),
+      params: removeEmptyKeys({ ...searchParams, lang, count, page }),
     });
   },
 
@@ -107,10 +93,7 @@ const robotoff = {
   updateLogo(logoId, value, type) {
     return axios.put(
       `${ROBOTOFF_API_URL}/images/logos/${logoId}`,
-      removeEmptyKeys({
-        value,
-        type,
-      }),
+      removeEmptyKeys({ value, type }),
       { withCredentials: true },
     );
   },
@@ -136,20 +119,13 @@ const robotoff = {
       logoId.length > 0
         ? `${ROBOTOFF_API_URL}/ann/search/${logoId}`
         : `${ROBOTOFF_API_URL}/ann/search`;
-    return axios.get(url, {
-      params: removeEmptyKeys({
-        index,
-        count,
-      }),
-    });
+    return axios.get(url, { params: removeEmptyKeys({ index, count }) });
   },
 
   annotateLogos(annotations) {
     return axios.post(
       `${ROBOTOFF_API_URL}/images/logos/annotate`,
-      removeEmptyKeys({
-        annotations,
-      }),
+      removeEmptyKeys({ annotations }),
       { withCredentials: true },
     );
   },
