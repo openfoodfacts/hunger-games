@@ -1,11 +1,11 @@
 # Hunger Games: Annotation games for Open Food Facts
 
-Hunger Games is a series of mini-apps that let users contribute data to Open Food Facts, in a rather fun way using React.
+Hunger Games is a series of mini-apps that let users contribute data to Open Food Facts, in a rather fun way using React. It relies heavily on Robotoff APIs, as well as Open Food Facts APIs.
 You are very welcome to write the game you want.
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://static.openfoodfacts.org/images/logos/off-logo-horizontal-dark.png">
-  <source media="(prefers-color-scheme: light)" srcset="https://static.openfoodfacts.org/images/logos/off-logo-horizontal-light.png">
+  <source media="(prefers-color-scheme: dark)" srcset="https://static.openfoodfacts.org/images/logos/off-logo-horizontal-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://static.openfoodfacts.org/images/logos/off-logo-horizontal-light.svg">
   <img height="100" src="https://static.openfoodfacts.org/images/logos/off-logo-horizontal-light.png">
 </picture>
 
@@ -35,6 +35,7 @@ The main goal is: Every Open Food Facts user can annotate products in a few minu
 
 - We strive for a playful and refined UI that's very efficient on the Web and on Mobile.
 - [![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?logo=figma&logoColor=white) Mockups on the current app and future plans to discuss](https://www.figma.com/design/pngqJwPkytFik6h4EW396n/Hunger-Games?node-id=801-2&p=f&t=xQnrkht1cbTJGOw9-0)
+- Are you a designer ? [Join the design team](https://github.com/openfoodfacts/openfoodfacts-design)
 
 ## Outstanding issues
 
