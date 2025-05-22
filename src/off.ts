@@ -9,7 +9,6 @@ import {
   URL_ORIGINE,
 } from "./const";
 import axios from "axios";
-import combineURLs from "axios/lib/helpers/combineURLs";
 
 const BARCODE_REGEX = /(...)(...)(...)(.*)$/;
 
@@ -104,7 +103,8 @@ const offService = {
   },
 
   getImageUrl(imagePath) {
-    return combineURLs(OFF_IMAGE_URL, imagePath);
+    // Replace leading slash if present to avoid double slashes in the URL
+    return `${OFF_IMAGE_URL}/${imagePath.replace(/^\//, "")}`;
   },
 
   getTableExtractionAI({ img, x0, y0, x1, y1 }) {
