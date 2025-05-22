@@ -334,12 +334,8 @@
       "title": "如何使用界面",
       "chose_between_empty_and_partially_filled": "You can chose between products for which OpenFoodFacts (OFF) has no data about the nutrients. Or product with partially filled nutrient table.",
       "picture_date_is_display": "照片的日期显示在上方。方便您检查它是否是最近的照片。",
-      "nutriments_from_off_are_displayed": "",
-      "green_for_same": "将匹配的输入值标记为<1>绿色</1>。",
-      "orange_for_empty": "将空值标记为<1>橙色</1>。",
-      "red_for_different": "将不同的输入值标记为<1>红色</1>。",
       "indicate_not_provided_value": "空白输入将被忽略。如果表中不存在纤维，您可以输入“-”符号来指定该值不可用。",
-      "validate_one_column": "验证完一列后，就可以进行验证了。两列都填不起作用。数据库只保存其中一列。第二列是按比例计算的。",
+      "validate_one_column": "选择图片中显示的尺寸。如果您有100克的份量，请选择100克，因为这是标准尺寸。",
       "skip_button": "如果您不知道如何处理某个图像，或者您不想处理，请点击“跳过”。其他用户将能够处理它。",
       "invalid_image_button": "如果图片不是营养表，请按“无效图片”将其从图片列表中删除以进行验证",
       "close": "關閉"
