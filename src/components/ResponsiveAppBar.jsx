@@ -421,12 +421,12 @@ const ResponsiveAppBar = () => {
             >
               <Select
                 value={country || "world"}
-                onChange={(event) =>
+                onChange={(event) => {
                   setCountry(
                     event.target.value === "world" ? "" : event.target.value,
                     "global",
-                  )
-                }
+                  );
+                }}
                 variant="outlined"
                 sx={{ fieldset: { border: "none" } }}
               >
