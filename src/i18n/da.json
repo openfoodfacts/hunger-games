@@ -334,12 +334,8 @@
       "title": "Sådan bruger du grænsefladen",
       "chose_between_empty_and_partially_filled": "Du kan vælge mellem produkter, som OpenFoodFacts (OFF) ikke har næringsdata for, eller produkter med delvist udfyldt næringstabel.",
       "picture_date_is_display": "Datoen for billedet vises oven på det, så du kan se, om det er nyligt.",
-      "nutriments_from_off_are_displayed": "Du kan vise data, der allerede findes i OFF-databasen. De vises under inputfelterne:",
-      "green_for_same": "Med <1>grøn</1> for dem, der matcher inputværdien.",
-      "orange_for_empty": "Med <1>orange</1> for dem med tom inputværdi.",
-      "red_for_different": "Med <1>rød</1> for dem med anden inputværdi.",
       "indicate_not_provided_value": "Tomme felter ignoreres. Hvis kostfibre ikke er angivet i tabellen, kan du skrive \"-\" for at angive, at værdien ikke er tilgængelig.",
-      "validate_one_column": "Når du har verificeret én kolonne, kan du godkende. Det er unødvendigt at udfylde begge kolonner, da databasen kun gemmer den ene. Den anden beregnes ud fra proportionalitet.",
+      "validate_one_column": "Vælg den størrelse, der vises på billedet. Hvis du har en portionsstørrelse på 100 g, skal du vælge 100 g, da det er et normaliseret format.",
       "skip_button": "Hvis du ikke ved, hvordan man gør med et billede – eller bare ikke har lyst – så tryk på \"spring over\". En anden bruger kan gøre det.",
       "invalid_image_button": "Hvis billederne ikke er en ernæringstabel, så tryk på \"Ugyldigt billede\" for at fjerne det fra listen over de billeder, der skal verificeres",
       "close": "Luk"
