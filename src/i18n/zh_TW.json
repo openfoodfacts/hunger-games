@@ -334,12 +334,8 @@
       "title": "如何操作介面",
       "chose_between_empty_and_partially_filled": "您可以選擇 OpenFoodFacts (OFF) 沒有其營養成分資料的產品。或營養表未完全填寫的產品。",
       "picture_date_is_display": "圖片的日期顯示在它上面。便於您檢查它是否是最近的。",
-      "nutriments_from_off_are_displayed": "您可以顯示 OFF 資料庫中已存在的資料。它們將出現在輸入的資料下方：",
-      "green_for_same": "輸入值相符的帶入<1>綠色</1>。",
-      "orange_for_empty": "對於那些輸入值為空的帶入<1>橙色</1>。",
-      "red_for_different": "對於那些不同輸入值帶入<1>紅色</1>。",
       "indicate_not_provided_value": "輸入為空的欄位將被忽略。如果表中不存在纖維，則可以輸入“-”來指出該值不可用。",
-      "validate_one_column": "一旦您驗證了一列，您就可以識別其有效性。填寫兩列是無效的。資料庫只保存其中一個。第二個是利用比例計算的。",
+      "validate_one_column": "選擇圖片中顯示的尺寸。如果您有 100g 的份量，請選擇 100g，因為這是標準化格式。",
       "skip_button": "如果您不知道如何處理圖像，或者您只是不想這樣做，請按“跳過”。其他用戶將能夠處理它。",
       "invalid_image_button": "如果圖片不是營養表，請按「無效圖片」將其從圖片清單中刪除以進行驗證",
       "close": "關閉"
