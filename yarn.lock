@@ -1135,9 +1135,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@openfoodfacts/openfoodfacts-webcomponents@file:../openfoodfacts-webcomponents/web-components::locator=hunger-game%40workspace%3A.":
-  version: 1.4.2
-  resolution: "@openfoodfacts/openfoodfacts-webcomponents@file:../openfoodfacts-webcomponents/web-components#../openfoodfacts-webcomponents/web-components::hash=fa0e87&locator=hunger-game%40workspace%3A."
+"@openfoodfacts/openfoodfacts-webcomponents@npm:1.5.1":
+  version: 1.5.1
+  resolution: "@openfoodfacts/openfoodfacts-webcomponents@npm:1.5.1"
   dependencies:
     "@lit-labs/signals": ^0.1.2
     "@lit/localize": ^0.12.2
@@ -1148,7 +1148,7 @@ __metadata:
     dompurify: ^3.2.5
     lit: ^3.3.0
     lit-html: ^3.3.0
-  checksum: e3f89bdf5601edef656f7666152bb43087cbb0ed75b2c48ef3f1d3d71618d7fd1cb364b87f3471381d2fa091660cac104698ffdeb90d8e2eb4b36e84a8101869
+  checksum: 827be150881250335ba785c125fc8734ec8518518590a4bca165c8924b003a7ff55872b3d3395b453f192fc1b3fe13d07240339eecabf96c7740e4566445a112
   languageName: node
   linkType: hard
 
@@ -2779,16 +2779,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fetch-blob@npm:^3.1.2":
-  version: 3.2.0
-  resolution: "fetch-blob@npm:3.2.0"
-  dependencies:
-    node-domexception: ^1.0.0
-    web-streams-polyfill: ^3.0.3
-  checksum: f19bc28a2a0b9626e69fd7cf3a05798706db7f6c7548da657cbf5026a570945f5eeaedff52007ea35c8bcd3d237c58a20bf1543bc568ab2422411d762dd3d5bf
-  languageName: node
-  linkType: hard
-
 "file-entry-cache@npm:^8.0.0":
   version: 8.0.0
   resolution: "file-entry-cache@npm:8.0.0"
@@ -2895,15 +2885,6 @@ __metadata:
     es-set-tostringtag: ^2.1.0
     mime-types: ^2.1.12
   checksum: e887298b22c13c7c9c5a8ba3716f295a479a13ca78bfd855ef11cbce1bcf22bc0ae2062e94808e21d46e5c667664a1a1a8a7f57d7040193c1fefbfb11af58aab
-  languageName: node
-  linkType: hard
-
-"formdata-polyfill@npm:^4.0.10":
-  version: 4.0.10
-  resolution: "formdata-polyfill@npm:4.0.10"
-  dependencies:
-    fetch-blob: ^3.1.2
-  checksum: 82a34df292afadd82b43d4a740ce387bc08541e0a534358425193017bf9fb3567875dc5f69564984b1da979979b70703aa73dee715a17b6c229752ae736dd9db
   languageName: node
   linkType: hard
 
@@ -3208,7 +3189,7 @@ __metadata:
     "@mui/lab": ^5.0.0-alpha.151
     "@mui/material": ^5.14.16
     "@mui/x-data-grid": ^6.18.0
-    "@openfoodfacts/openfoodfacts-webcomponents": "file:../openfoodfacts-webcomponents/web-components"
+    "@openfoodfacts/openfoodfacts-webcomponents": 1.5.1
     "@reduxjs/toolkit": ^1.9.7
     "@types/node": ^20.8.10
     "@types/react": ^18.2.34
@@ -3220,7 +3201,6 @@ __metadata:
     eslint: ^9.26.0
     eslint-plugin-prettier: ^5.2.6
     eslint-plugin-react: ^7.37.5
-    formdata-polyfill: ^4.0.10
     husky: ^9.1.7
     i18next: ^23.6.0
     lodash.isequal: ^4.5.0
@@ -4007,13 +3987,6 @@ __metadata:
   version: 1.0.0
   resolution: "negotiator@npm:1.0.0"
   checksum: 20ebfe79b2d2e7cf9cbc8239a72662b584f71164096e6e8896c8325055497c96f6b80cd22c258e8a2f2aa382a787795ec3ee8b37b422a302c7d4381b0d5ecfbb
-  languageName: node
-  linkType: hard
-
-"node-domexception@npm:^1.0.0":
-  version: 1.0.0
-  resolution: "node-domexception@npm:1.0.0"
-  checksum: ee1d37dd2a4eb26a8a92cd6b64dfc29caec72bff5e1ed9aba80c294f57a31ba4895a60fd48347cf17dd6e766da0ae87d75657dfd1f384ebfa60462c2283f5c7f
   languageName: node
   linkType: hard
 
@@ -5526,13 +5499,6 @@ __metadata:
   version: 3.1.0
   resolution: "void-elements@npm:3.1.0"
   checksum: 0390f818107fa8fce55bb0a5c3f661056001c1d5a2a48c28d582d4d847347c2ab5b7f8272314cac58acf62345126b6b09bea623a185935f6b1c3bbce0dfd7f7f
-  languageName: node
-  linkType: hard
-
-"web-streams-polyfill@npm:^3.0.3":
-  version: 3.3.3
-  resolution: "web-streams-polyfill@npm:3.3.3"
-  checksum: 21ab5ea08a730a2ef8023736afe16713b4f2023ec1c7085c16c8e293ee17ed085dff63a0ad8722da30c99c4ccbd4ccd1b2e79c861829f7ef2963d7de7004c2cb
   languageName: node
   linkType: hard
 
