@@ -334,12 +334,8 @@
       "title": "Jak používat rozhraní",
       "chose_between_empty_and_partially_filled": "Můžete si vybrat mezi produkty, pro které OpenFoodFacts (OFF) nemá žádné údaje o živinách. Nebo produkt s částečně vyplněnou tabulkou živin.",
       "picture_date_is_display": "Nad ním se zobrazí datum snímku. Umožní vám zkontrolovat, zda se jedná o poslední.",
-      "nutriments_from_off_are_displayed": "Můžete zobrazit data, která jsou již přítomna v databázi OFF. Objeví se pod vstupy:",
-      "green_for_same": "Se zeleným <1></1> pro ty, které odpovídají vstupní hodnotě.",
-      "orange_for_empty": "S <1>oranžovou</1> pro ty s prázdnou vstupní hodnotou.",
-      "red_for_different": "S <1>červenou</1> pro ty s jinou vstupní hodnotou.",
       "indicate_not_provided_value": "Prázdné vstupy jsou ignorovány. Pokud nejsou vlákna v tabulce přítomna, můžete zadat \"-\" a určit tak, že hodnota není k dispozici.",
-      "validate_one_column": "Jakmile ověříte jeden sloupec, můžete provést ověření. Je zbytečné vyplňovat oba sloupce. Databáze ukládá pouze jeden z nich. Druhý je vypočítán pomocí proporcionality.",
+      "validate_one_column": "Vyberte velikost zobrazenou na obrázku. Pokud máte 100 g a velikost porce, zvolte prosím 100 g, protože se jedná o normalizovaný formát.",
       "skip_button": "Pokud si s obrázkem nevíte rady, nebo se vám to prostě nechce, stiskněte „přeskočit“. Ostatní uživatelé to zvládnou.",
       "invalid_image_button": "Pokud obrázky nejsou nutriční tabulkou, stiskněte \"Neplatný obrázek\" pro odstranění ze seznamu obrázků pro ověření",
       "close": "Zavřít"
