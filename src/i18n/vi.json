@@ -334,12 +334,8 @@
       "title": "Cách sử dụng giao diện",
       "chose_between_empty_and_partially_filled": "Bạn có thể chọn giữa các sản phẩm mà OpenFoodFacts (OFF) không có dữ liệu về chất dinh dưỡng. Hoặc sản phẩm có bảng chất dinh dưỡng được điền một phần.",
       "picture_date_is_display": "Ngày chụp ảnh được hiển thị ở trên cùng. Cho phép bạn kiểm tra xem đó có phải là ảnh chụp gần đây không.",
-      "nutriments_from_off_are_displayed": "Bạn có thể hiển thị dữ liệu đã có trong cơ sở dữ liệu OFF. Chúng sẽ xuất hiện bên dưới các đầu vào:",
-      "green_for_same": "Với <1>màu xanh lá cây</1> dành cho những giá trị khớp với giá trị đầu vào.",
-      "orange_for_empty": "Với <1>màu cam</1> dành cho những trường hợp có giá trị đầu vào trống.",
-      "red_for_different": "Với <1>màu đỏ</1> dành cho những người có giá trị đầu vào khác nhau.",
       "indicate_not_provided_value": "Các đầu vào trống sẽ bị bỏ qua. Nếu không có thông tin nào trong bảng, bạn có thể đặt \"-\" để chỉ định giá trị không khả dụng.",
-      "validate_one_column": "Sau khi bạn đã xác minh một cột, bạn có thể xác thực. Việc điền cả hai cột là không cần thiết vì cơ sở dữ liệu chỉ lưu một trong số đó. Cột còn lại sẽ được tính toán dựa trên tỷ lệ.",
+      "validate_one_column": "Chọn kích thước hiển thị trong hình. Nếu bạn có 100g và khẩu phần ăn, vui lòng chọn 100g vì đây là định dạng chuẩn hóa.",
       "skip_button": "Nếu bạn không biết cách xử lý hình ảnh hoặc không muốn xử lý, hãy nhấn \"bỏ qua\". Người dùng khác có thể xử lý.",
       "invalid_image_button": "Nếu hình ảnh không phải là bảng dinh dưỡng, hãy nhấn \"Hình ảnh không hợp lệ\" để xóa hình ảnh khỏi danh sách hình ảnh cần xác minh",
       "close": "Đóng"
