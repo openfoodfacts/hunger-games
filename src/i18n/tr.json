@@ -334,12 +334,8 @@
       "title": "Arayüz nasıl kullanılır",
       "chose_between_empty_and_partially_filled": "OpenFoodFacts'in (OFF) besin değerleri hakkında verisi olmayan ürünler arasından seçim yapabilirsiniz. Ya da besin tablosu kısmen doldurulmuş ürün.",
       "picture_date_is_display": "Fotoğrafların çekilme tarihleri üzerinde yazar, bu şekilde yeni olup olmadığını kontrol edebilirsiniz.",
-      "nutriments_from_off_are_displayed": "OFF veritabanında halihazırda mevcut olan verileri görüntüleyebilirsiniz. Bunlar girdilerin altında görünecektir:",
-      "green_for_same": "With <1>green</1> for those matching with the input value.",
-      "orange_for_empty": "With <1>orange</1> for those with empty input value.",
-      "red_for_different": "With <1>red</1> for those with different input value.",
       "indicate_not_provided_value": "Boş girdiler göz ardı edilir. Tabloda lifler yoksa, değerin mevcut olmadığını belirtmek için \"-\" koyabilirsiniz.",
-      "validate_one_column": "Bir sütunu doğruladıktan sonra doğrulayabilirsiniz. Her iki sütunu da doldurmak işe yaramaz. Veri tabanı bunlardan sadece birini kaydeder. İkincisi orantılılık kullanılarak hesaplanır.",
+      "validate_one_column": "Resimde gösterilen boyutu seçin. 100g ve porsiyon boyutunuz varsa, lütfen 100g'ı seçin çünkü bu normalleştirilmiş bir formattır.",
       "skip_button": "Bir görüntü ile nasıl başa çıkacağınızı bilmiyorsanız veya sadece yapmak istemiyorsanız, \"atla\" tuşuna basın. Diğer kullanıcı bunu halledebilecektir.",
       "invalid_image_button": "Resim bir beslenme tablosu değilse, doğrulamak için resim listesinden kaldırmak üzere \"Geçersiz resim\"e tıklayın.",
       "close": "Kapat"
