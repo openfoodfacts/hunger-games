@@ -334,12 +334,8 @@
       "title": "Cómo utilizar la interfaz",
       "chose_between_empty_and_partially_filled": "Puede elegir entre productos para los cuales OpenFoodFacts (OFF) no tiene datos sobre los nutrientes. O producto con tabla de nutrientes parcialmente rellenada.",
       "picture_date_is_display": "La fecha de la imagen se muestra encima. Permitiéndole comprobar si es reciente.",
-      "nutriments_from_off_are_displayed": "Puede mostrar datos que ya están presentes en la base de datos OFF. Aparecerán debajo de las entradas:",
-      "green_for_same": "Con <1>green</1> para aquellos que coinciden con el valor de entrada.",
-      "orange_for_empty": "Con <1>orange</1> para aquellos con valor de entrada vacío.",
-      "red_for_different": "Con <1>red</1> para aquellos con diferente valor de entrada.",
       "indicate_not_provided_value": "Las entradas vacías se ignoran. Si las fibras no están presentes en la tabla, puede escribir \"-\" para especificar que el valor no está disponible.",
-      "validate_one_column": "Una vez que haya verificado una columna, puede validarla. Es inútil rellenar ambas columnas. La base de datos sólo guarda una de ellas. El segundo se calcula utilizando la proporcionalidad.",
+      "validate_one_column": "Seleccione el tamaño que se muestra en la imagen. Si tiene 100 g y una porción, seleccione 100 g, ya que es un formato normalizado.",
       "skip_button": "Si no sabes cómo manejar una imagen, o simplemente no quieres hacerlo, presiona \"saltar\". Otro usuario podrá manejarla.",
       "invalid_image_button": "Si las imágenes no son una tabla nutricional, presione \"Imagen no válida\" para eliminarla de la lista de imágenes a verificar.",
       "close": "Cerrar"
