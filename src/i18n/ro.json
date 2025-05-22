@@ -334,12 +334,8 @@
       "title": "Cum se utilizează interfața",
       "chose_between_empty_and_partially_filled": "Puteți alege dintre produsele pentru care OpenFoodFacts (OFF) nu are date despre nutrienți. Sau produs cu tabel de nutrienți parțial umplut.",
       "picture_date_is_display": "Data fotografiei este afișată deasupra ei. Vă permite să verificați dacă este recentă.",
-      "nutriments_from_off_are_displayed": "Puteți afișa date care sunt deja prezente în baza de date OFF. Acestea vor apărea sub intrări:",
-      "green_for_same": "Cu <1>verde</1> pentru cele care se potrivesc cu valoarea de intrare.",
-      "orange_for_empty": "Cu <1>portocaliu</1> pentru cele cu valoare de intrare goală.",
-      "red_for_different": "Cu <1>portocaliu</1> pentru cele cu valoare de intrare diferită.",
       "indicate_not_provided_value": "Intrările goale sunt ignorate. Dacă fibrele nu sunt prezente în tabel, puteți pune „-” pentru a specifica că valoarea nu este disponibilă.",
-      "validate_one_column": "După ce ați verificat o coloană, puteți valida. Este inutil să umpleți ambele coloane. Baza de date salvează doar una dintre ele. Al doilea este calculat folosind proporționalitatea.",
+      "validate_one_column": "Alegeți dimensiunea așa cum este afișată în imagine. Dacă aveți 100g și o porție, vă rugăm să alegeți 100g deoarece este un format normalizat.",
       "skip_button": "Dacă nu știi cum să te descurci cu o imagine, sau pur și simplu nu vrei să o faci, apasă pe „săriți”. Alţi utilizatori vor putea descurca.",
       "invalid_image_button": "Dacă imaginile nu sunt un tabel nutrițional, apăsați pe „Imagine invalidă” pentru a o elimina din lista de imagini de verificat",
       "close": "Închidere"
