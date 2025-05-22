@@ -334,12 +334,8 @@
       "title": "Jak korzystać z interfejsu",
       "chose_between_empty_and_partially_filled": "Możesz wybierać między produktami, dla których OpenFoodFacts (OFF) nie ma danych o składnikach odżywczych. Lub produktami z częściowo wypełnioną tabelą składników odżywczych.",
       "picture_date_is_display": "Data zdjęcia jest nad nim wyświetlana. Pozwala to sprawdzić, czy to zdjęcie jest nowe.",
-      "nutriments_from_off_are_displayed": "Możesz wyświetlić dane, które są już zapisane w bazie danych OFF. Pojawią się one poniżej pól do wpisywania danych:",
-      "green_for_same": "Z kolorem <1>zielonym</1> dla tych, które pasują do danych wejściowych.",
-      "orange_for_empty": "Z kolorem <1>pomarańczowym</1> dla tych z pustymi danymi wejściowymi.",
-      "red_for_different": "Z kolorem <1>czerwonym</1> dla tych z inną danymi wejściowymi.",
       "indicate_not_provided_value": "Puste pola są ignorowane. Jeśli w tabeli nie ma informacji o błonniku, możesz wpisać „-”, aby zaznaczyć, że wartość jest niedostępna.",
-      "validate_one_column": "Po zweryfikowaniu jednej kolumny możesz ją zatwierdzić. Nie ma sensu wypełniać obu kolumn. Baza danych zapisuje tylko jedną z nich. Druga jest obliczana przy użyciu proporcjonalności.",
+      "validate_one_column": "Wybierz rozmiar, który jest wyświetlany na obrazku. Jeśli masz 100g i wielkość porcji, wybierz 100g, ponieważ jest to znormalizowany format.",
       "skip_button": "Jeśli nie wiesz, jak przetworzyć obraz, lub po prostu nie chcesz tego robić, naciśnij „pomiń”. Inny użytkownik się tym zajmie.",
       "invalid_image_button": "Jeśli obraz nie przedstawia tabeli wartości odżywczych, naciśnij „Nieprawidłowy obraz”, aby usunąć go z listy do weryfikacji",
       "close": "Zamknij"
