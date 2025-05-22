@@ -9,7 +9,11 @@ declare namespace JSX {
       HTMLElement
     >;
     "robotoff-nutrients": React.DetailedHTMLProps<
-      React.HTMLAttributes<HTMLElement> & { barcode?: string },
+      React.HTMLAttributes<HTMLElement> & { "product-code"?: string },
+      HTMLElement
+    >;
+    "robotoff-ingredients": React.DetailedHTMLProps<
+      React.HTMLAttributes<HTMLElement> & { "product-code"?: string },
       HTMLElement
     >;
   }

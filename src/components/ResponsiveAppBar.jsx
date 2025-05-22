@@ -68,6 +68,10 @@ const pages = [
     desktopOnly: true,
   },
   { translationKey: "menu.manage" },
+  {
+    url: "ingredient-spellcheck",
+    translationKey: "menu.ingredient-spellcheck",
+  },
   { url: "insights", translationKey: "menu.insights", devModeOnly: true },
   { url: "dashboard", translationKey: "menu.dashboard" },
   { url: "settings", translationKey: "menu.settings", mobileOnly: true },

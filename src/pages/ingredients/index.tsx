@@ -107,7 +107,7 @@ function ProductInterface(props) {
                           </Link>{" "}
                           {uploaded_t &&
                             new Date(uploaded_t * 1000).toLocaleDateString(
-                              undefined,
+                              unindefined,
                               {
                                 year: "numeric",
                                 month: "short",
