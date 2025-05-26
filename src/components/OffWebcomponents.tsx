@@ -3,6 +3,7 @@ import { OFF_IMAGE_URL, OFF_URL, ROBOTOFF_API_URL } from "../const";
 import { useCountry } from "../contexts/CountryProvider";
 import { getCountryLanguageCode } from "../pages/nutrition/utils";
 import "@openfoodfacts/openfoodfacts-webcomponents";
+import { json } from "stream/consumers";
 
 export const OffWebcomponentsConfiguration = () => {
   const [country] = useCountry();
@@ -27,6 +28,22 @@ export const RobotoffNutrients = () => {
   return (
     <div>
       <robotoff-nutrients></robotoff-nutrients>
+    </div>
+  );
+};
+
+export const RobotoffIngredients = () => {
+  const [searchParams] = useSearchParams();
+
+  const country = searchParams.get("country");
+
+  const languageCodes = JSON.stringify([getCountryLanguageCode(country)]);
+
+  return (
+    <div>
+      <robotoff-ingredients
+        language-codes={languageCodes}
+      ></robotoff-ingredients>
     </div>
   );
 };

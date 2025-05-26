@@ -1135,20 +1135,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@openfoodfacts/openfoodfacts-webcomponents@npm:1.5.1":
-  version: 1.5.1
-  resolution: "@openfoodfacts/openfoodfacts-webcomponents@npm:1.5.1"
+"@openfoodfacts/openfoodfacts-webcomponents@npm:1.6.0":
+  version: 1.6.0
+  resolution: "@openfoodfacts/openfoodfacts-webcomponents@npm:1.6.0"
   dependencies:
     "@lit-labs/signals": ^0.1.2
     "@lit/localize": ^0.12.2
     "@lit/task": ^1.0.2
     "@panzoom/panzoom": ^4.6.0
     "@types/dompurify": ^3.0.5
-    diff: ^7.0.0
+    diff: ^8.0.1
     dompurify: ^3.2.5
     lit: ^3.3.0
     lit-html: ^3.3.0
-  checksum: 827be150881250335ba785c125fc8734ec8518518590a4bca165c8924b003a7ff55872b3d3395b453f192fc1b3fe13d07240339eecabf96c7740e4566445a112
+  checksum: 6abde959414e0c3fbeacd94787ed3d45ee76b789b8c916d315d087a4604d5ea085288bf9e08bbf70badcb0fea0d9ef17930ac97b29f4721b1b6c7ca89d1e3a0b
   languageName: node
   linkType: hard
 
@@ -2198,10 +2198,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"diff@npm:^7.0.0":
-  version: 7.0.0
-  resolution: "diff@npm:7.0.0"
-  checksum: 5db0d339476b18dfbc8a08a7504fbcc74789eec626c8d20cf2cdd1871f1448962888128f4447c8f50a1e41a80decfe5e8489c375843b8cf1d42b7c2b611da4e1
+"diff@npm:^8.0.1":
+  version: 8.0.2
+  resolution: "diff@npm:8.0.2"
+  checksum: 0d5556beff9aa688117ef79b1c88eb663df9959bc59946122330932c01e8db5529f914dcc87bf00fd1fecbca75731e6be7c8fabe1e34e10d6557e0536b7c856c
   languageName: node
   linkType: hard
 
@@ -3189,7 +3189,7 @@ __metadata:
     "@mui/lab": ^5.0.0-alpha.151
     "@mui/material": ^5.14.16
     "@mui/x-data-grid": ^6.18.0
-    "@openfoodfacts/openfoodfacts-webcomponents": 1.5.1
+    "@openfoodfacts/openfoodfacts-webcomponents": 1.6.0
     "@reduxjs/toolkit": ^1.9.7
     "@types/node": ^20.8.10
     "@types/react": ^18.2.34
