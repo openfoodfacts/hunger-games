@@ -71,7 +71,7 @@
     "view": "Visa",
     "edit": "Redigera",
     "remaining": "Återstående: {{count}}",
-    "remaining_other": "Remaining: >100",
+    "remaining_other": "Återstående: >100",
     "hide_images": "Dölj bilder (snabbare laddning)",
     "display_images": "Visa bilder",
     "annotations": "Anteckningar",
@@ -250,7 +250,7 @@
     "Open_Food_Facts_wiki": "Open Food Facts wiki (en)",
     "Translators": "Översättare",
     "Partners": "Partner",
-    "Open_Beauty_Facts": "Open Beauty Facts - cosmetics",
+    "Open_Beauty_Facts": "Open Beauty Facts - Kosmetika",
     "text2": "En kollaborativ, fri och öppen databas över livsmedelsprodukter från hela världen."
   },
   "helper": {
@@ -316,7 +316,7 @@
     "close": "Stäng"
   },
   "nutrition": {
-    "table_partialy_filled": "Table with already some data",
+    "table_partialy_filled": "Tabell med redan en del data",
     "display_off_values": "Visa värden från OpenFoodFacts",
     "nutrients": "Näringsämnen",
     "serving_size": "Portionsstorlek",
@@ -324,15 +324,15 @@
     "validate_100g": "Validera (100 g)",
     "validate_serving": "Validera (portion)",
     "skip": "Hoppa over",
-    "invalid_image": "Invalid image",
+    "invalid_image": "Ogiltig bild",
     "pictures": {
-      "picture_date": "Photo uploaded",
-      "selected_as_nutrients": "Selected as nutriment image ✅",
-      "not_selected_as_nutrients": "Not selected as nutriment ❌"
+      "picture_date": "Foto uppladdat",
+      "selected_as_nutrients": "Vald som näringsbild ✅",
+      "not_selected_as_nutrients": "Ej vald som näringsämne ❌"
     },
     "instructions": {
-      "open_button": "Open instructions",
-      "title": "How to use the interface",
+      "open_button": "Öppna instruktioner",
+      "title": "Hur man använder gränssnittet",
       "chose_between_empty_and_partially_filled": "You can chose between products for which OpenFoodFacts (OFF) has no data about the nutrients. Or product with partially filled nutrient table.",
       "picture_date_is_display": "The date of the picture is displayed on top of it. Allowing you to check if it's a recent one.",
       "indicate_not_provided_value": "Empty inputs are ignored. If fibers are not present in the table, you can put \"-\" to specify the value is not available.",
