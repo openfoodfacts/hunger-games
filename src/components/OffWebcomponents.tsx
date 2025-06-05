@@ -24,26 +24,45 @@ export const OffWebcomponentsConfiguration = () => {
   );
 };
 
-export const RobotoffNutrients = () => {
-  return (
-    <div>
-      <robotoff-nutrients></robotoff-nutrients>
-    </div>
-  );
-};
-
-export const RobotoffIngredients = () => {
+const getLanguageCodes = () => {
   const [searchParams] = useSearchParams();
 
   const country = searchParams.get("country");
 
-  const languageCodes = JSON.stringify([getCountryLanguageCode(country)]);
+  return JSON.stringify([getCountryLanguageCode(country)]);
+};
+
+export const RobotoffNutrientExtraction = () => {
+  const languageCodes = getLanguageCodes();
 
   return (
     <div>
-      <robotoff-ingredients
+      <robotoff-nutrient-extraction
         language-codes={languageCodes}
-      ></robotoff-ingredients>
+      ></robotoff-nutrient-extraction>
+    </div>
+  );
+};
+
+export const RobotoffIngredientSpellcheck = () => {
+  const languageCodes = getLanguageCodes();
+
+  return (
+    <div>
+      <robotoff-ingredient-spellcheck
+        language-codes={languageCodes}
+      ></robotoff-ingredient-spellcheck>
+    </div>
+  );
+};
+
+export const RobotoffIngredientDetection = () => {
+  const languageCodes = getLanguageCodes();
+  return (
+    <div>
+      <robotoff-ingredient-detection
+        language-codes={languageCodes}
+      ></robotoff-ingredient-detection>
     </div>
   );
 };

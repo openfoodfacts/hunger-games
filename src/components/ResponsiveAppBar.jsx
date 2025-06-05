@@ -72,6 +72,10 @@ const pages = [
     url: "ingredient-spellcheck",
     translationKey: "menu.ingredient-spellcheck",
   },
+  {
+    url: "ingredient-detection",
+    translationKey: "menu.ingredient-detection",
+  },
   { url: "insights", translationKey: "menu.insights", devModeOnly: true },
   { url: "dashboard", translationKey: "menu.dashboard" },
   { url: "settings", translationKey: "menu.settings", mobileOnly: true },

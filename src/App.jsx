@@ -56,6 +56,9 @@ const TaxonomyWalk = React.lazy(() => import("./pages/taxonomyWalk"));
 const IngredientSpellcheckPage = React.lazy(
   () => import("./pages/ingredient-spellcheck"),
 );
+const IngredientDetectionPage = React.lazy(
+  () => import("./pages/ingredient-detection"),
+);
 
 // OFF colors
 const latte = "#F6F3F0";
@@ -371,6 +374,10 @@ export default function App() {
                   <Route
                     path="/ingredient-spellcheck"
                     element={<IngredientSpellcheckPage />}
+                  />
+                  <Route
+                    path="/ingredient-detection"
+                    element={<IngredientDetectionPage />}
                   />
                 </Routes>
               </DevModeContext.Provider>

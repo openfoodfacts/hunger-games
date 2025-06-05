@@ -239,6 +239,127 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@cropper/element-canvas@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "@cropper/element-canvas@npm:2.0.0"
+  dependencies:
+    "@cropper/element": ^2.0.0
+    "@cropper/utils": ^2.0.0
+  checksum: 4eaf265d61d9fd6cbf3221896532718031e3cb764a85560b822e1f476ca9c910911501a94a7039dec17deac1f8d318514caaca95a3e92df4bc6fb603ee3ff600
+  languageName: node
+  linkType: hard
+
+"@cropper/element-crosshair@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "@cropper/element-crosshair@npm:2.0.0"
+  dependencies:
+    "@cropper/element": ^2.0.0
+    "@cropper/utils": ^2.0.0
+  checksum: b39d98b93ba5fdfaca40fb11b4c0b86f2ac1484f8a3f707f3441b6bb391999d33b45f8edab2919f5efac29c0a8f6e88c60d47acced766c8444d285339205a5b2
+  languageName: node
+  linkType: hard
+
+"@cropper/element-grid@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "@cropper/element-grid@npm:2.0.0"
+  dependencies:
+    "@cropper/element": ^2.0.0
+    "@cropper/utils": ^2.0.0
+  checksum: fb64546afb7c2a71d1510a98e30dd9d10921d41abad9111458808aa4d35c9f3308f75c0f0a09c448d397f746f1b43fa80c5fee2f6399f80ab53a43e167dd140e
+  languageName: node
+  linkType: hard
+
+"@cropper/element-handle@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "@cropper/element-handle@npm:2.0.0"
+  dependencies:
+    "@cropper/element": ^2.0.0
+    "@cropper/utils": ^2.0.0
+  checksum: 66d869f7c3de80edd255479d2538f5df20adfc8824fcb9404ac189260bc8af2810883d880dd839145cda5874e3a99b0c1519bb13a45e58ba919efe10f96e96d5
+  languageName: node
+  linkType: hard
+
+"@cropper/element-image@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "@cropper/element-image@npm:2.0.0"
+  dependencies:
+    "@cropper/element": ^2.0.0
+    "@cropper/element-canvas": ^2.0.0
+    "@cropper/utils": ^2.0.0
+  checksum: 43c9a8f23954f2f8e7dc504c652ff4cccb680b677915e30bf0c9e54b4bc7adc7a34c27fcbb612aae53f1836e8e0c4fb51ca1c7c13728b765247727ba74d86b62
+  languageName: node
+  linkType: hard
+
+"@cropper/element-selection@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "@cropper/element-selection@npm:2.0.0"
+  dependencies:
+    "@cropper/element": ^2.0.0
+    "@cropper/element-canvas": ^2.0.0
+    "@cropper/element-image": ^2.0.0
+    "@cropper/utils": ^2.0.0
+  checksum: 3ed4d52f214231e875612773a7d092e578714b438dbd4236968262c79a29ac209b73dd893a99e8113dc72aa6c778834610444980a4da8702600a2912e6aaaefe
+  languageName: node
+  linkType: hard
+
+"@cropper/element-shade@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "@cropper/element-shade@npm:2.0.0"
+  dependencies:
+    "@cropper/element": ^2.0.0
+    "@cropper/element-canvas": ^2.0.0
+    "@cropper/element-selection": ^2.0.0
+    "@cropper/utils": ^2.0.0
+  checksum: f5bad9c7621437c044717936566760028cb9d691d34f0662eea7b0112929ff9d4e767aec7da725b48c9ccbf2516548b73961c29a71739a0583b781ff44c078e4
+  languageName: node
+  linkType: hard
+
+"@cropper/element-viewer@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "@cropper/element-viewer@npm:2.0.0"
+  dependencies:
+    "@cropper/element": ^2.0.0
+    "@cropper/element-canvas": ^2.0.0
+    "@cropper/element-image": ^2.0.0
+    "@cropper/element-selection": ^2.0.0
+    "@cropper/utils": ^2.0.0
+  checksum: 694a76107fa8795d29ed10d515da2d5950c75ffe5563197eb7f837ecc4cedeb4ee7dad74b17feae1819e70e1b55a9c4390ea0fb2387b9fa9fcd86d3ee77d0e6a
+  languageName: node
+  linkType: hard
+
+"@cropper/element@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "@cropper/element@npm:2.0.0"
+  dependencies:
+    "@cropper/utils": ^2.0.0
+  checksum: 8a89e5f35e71c0d5a33b05353ba482cd67d29219821c93c7148f3022fc3dd597be7dd4ed4fb028652671b052233e865095f0f3e8d0b4ef40d10804b33398c920
+  languageName: node
+  linkType: hard
+
+"@cropper/elements@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "@cropper/elements@npm:2.0.0"
+  dependencies:
+    "@cropper/element": ^2.0.0
+    "@cropper/element-canvas": ^2.0.0
+    "@cropper/element-crosshair": ^2.0.0
+    "@cropper/element-grid": ^2.0.0
+    "@cropper/element-handle": ^2.0.0
+    "@cropper/element-image": ^2.0.0
+    "@cropper/element-selection": ^2.0.0
+    "@cropper/element-shade": ^2.0.0
+    "@cropper/element-viewer": ^2.0.0
+  checksum: 47463b5b207431ce7b98e425cecd0b97c349cf0862f5388720d1342799f0c281b64af13f74372411730930b9733935062ee846b04016a6ca68658e9bb66d4647
+  languageName: node
+  linkType: hard
+
+"@cropper/utils@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "@cropper/utils@npm:2.0.0"
+  checksum: 8c309c0b22ff9826a9803ce3729ad3b7a6436e49ac0bf7d7cc94337068a78fb944d168d392891c87fbcf847cbd6407bedd9bd47575c3de4dc00776501451a5f1
+  languageName: node
+  linkType: hard
+
 "@emotion/babel-plugin@npm:^11.13.5":
   version: 11.13.5
   resolution: "@emotion/babel-plugin@npm:11.13.5"
@@ -1135,27 +1256,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@openfoodfacts/openfoodfacts-webcomponents@npm:1.6.0":
-  version: 1.6.0
-  resolution: "@openfoodfacts/openfoodfacts-webcomponents@npm:1.6.0"
+"@openfoodfacts/openfoodfacts-webcomponents@npm:1.7.0":
+  version: 1.7.0
+  resolution: "@openfoodfacts/openfoodfacts-webcomponents@npm:1.7.0"
   dependencies:
     "@lit-labs/signals": ^0.1.2
     "@lit/localize": ^0.12.2
     "@lit/task": ^1.0.2
-    "@panzoom/panzoom": ^4.6.0
-    "@types/dompurify": ^3.0.5
+    cropperjs: ^2.0.0
     diff: ^8.0.1
-    dompurify: ^3.2.5
+    dompurify: ^3.2.6
     lit: ^3.3.0
     lit-html: ^3.3.0
-  checksum: 6abde959414e0c3fbeacd94787ed3d45ee76b789b8c916d315d087a4604d5ea085288bf9e08bbf70badcb0fea0d9ef17930ac97b29f4721b1b6c7ca89d1e3a0b
-  languageName: node
-  linkType: hard
-
-"@panzoom/panzoom@npm:^4.6.0":
-  version: 4.6.0
-  resolution: "@panzoom/panzoom@npm:4.6.0"
-  checksum: b48dc93ba145ec69100afa3b199b51e8b7ca5bacc8534dd96c4a69cfcde473980741568bf83ad99c86a4aef8b5a5625518c7145d5b01005fb87098d6897fe8be
+  checksum: 50fbd97b356596f1632db047d9ab1babfca0d9d1fcef4c788e2651e6c0ec66315ee488792b69dd8a61b36b10805a67336cf406cd742211f1dc87fbd600043512
   languageName: node
   linkType: hard
 
@@ -1397,15 +1510,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/dompurify@npm:^3.0.5":
-  version: 3.0.5
-  resolution: "@types/dompurify@npm:3.0.5"
-  dependencies:
-    "@types/trusted-types": "*"
-  checksum: ffc34eca6a4536e1c8c16a47cce2623c5a118a9785492e71230052d92933ff096d14326ff449031e8dfaac509413222372d8f2b28786a13159de6241df716185
-  languageName: node
-  linkType: hard
-
 "@types/estree@npm:1.0.7, @types/estree@npm:^1.0.6":
   version: 1.0.7
   resolution: "@types/estree@npm:1.0.7"
@@ -1490,7 +1594,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/trusted-types@npm:*, @types/trusted-types@npm:^2.0.2, @types/trusted-types@npm:^2.0.7":
+"@types/trusted-types@npm:^2.0.2, @types/trusted-types@npm:^2.0.7":
   version: 2.0.7
   resolution: "@types/trusted-types@npm:2.0.7"
   checksum: 8e4202766a65877efcf5d5a41b7dd458480b36195e580a3b1085ad21e948bc417d55d6f8af1fd2a7ad008015d4117d5fdfe432731157da3c68678487174e4ba3
@@ -2074,6 +2178,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"cropperjs@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "cropperjs@npm:2.0.0"
+  dependencies:
+    "@cropper/elements": ^2.0.0
+    "@cropper/utils": ^2.0.0
+  checksum: b48f84fee517f82daf0db77f4b174ae90598a41bf36fc6e51ca90f37ba90a8793b84a80a310b79b9e3b5169150723a2e64865039db8c723c5725dd915c1a0d3b
+  languageName: node
+  linkType: hard
+
 "cross-spawn@npm:^7.0.6":
   version: 7.0.6
   resolution: "cross-spawn@npm:7.0.6"
@@ -2224,15 +2338,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dompurify@npm:^3.2.5":
-  version: 3.2.5
-  resolution: "dompurify@npm:3.2.5"
+"dompurify@npm:^3.2.6":
+  version: 3.2.6
+  resolution: "dompurify@npm:3.2.6"
   dependencies:
     "@types/trusted-types": ^2.0.7
   dependenciesMeta:
     "@types/trusted-types":
       optional: true
-  checksum: bd3b40810cc74312970dc6b99d38450ec839c81fb56c27d2c1b815ce0206b73e9cd4fe2e9021f735a1aaebf017990a63e6454e7d9c893f72b365b94d030ec9c4
+  checksum: 4d002997dbae13f6bdf0e6be014384129c83b1ee8cd3fca9d96f95b9142d1e96256924466a2fc25e7ffb6ede54290e5c4a7d1bd10f9b14cfa07928dd799c3b42
   languageName: node
   linkType: hard
 
@@ -3189,7 +3303,7 @@ __metadata:
     "@mui/lab": ^5.0.0-alpha.151
     "@mui/material": ^5.14.16
     "@mui/x-data-grid": ^6.18.0
-    "@openfoodfacts/openfoodfacts-webcomponents": 1.6.0
+    "@openfoodfacts/openfoodfacts-webcomponents": 1.7.0
     "@reduxjs/toolkit": ^1.9.7
     "@types/node": ^20.8.10
     "@types/react": ^18.2.34
