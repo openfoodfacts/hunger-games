@@ -29,7 +29,9 @@ export const OffWebcomponentsConfiguration = () => {
 export const RobotoffNutrientExtraction = () => {
   return (
     <div>
-      <robotoff-nutrient-extraction></robotoff-nutrient-extraction>
+      <robotoff-nutrient-extraction
+        display-product-link
+      ></robotoff-nutrient-extraction>
     </div>
   );
 };
@@ -37,7 +39,9 @@ export const RobotoffNutrientExtraction = () => {
 export const RobotoffIngredientSpellcheck = () => {
   return (
     <div>
-      <robotoff-ingredient-spellcheck></robotoff-ingredient-spellcheck>
+      <robotoff-ingredient-spellcheck
+        display-product-link
+      ></robotoff-ingredient-spellcheck>
     </div>
   );
 };
@@ -45,7 +49,9 @@ export const RobotoffIngredientSpellcheck = () => {
 export const RobotoffIngredientDetection = () => {
   return (
     <div>
-      <robotoff-ingredient-detection></robotoff-ingredient-detection>
+      <robotoff-ingredient-detection
+        display-product-link
+      ></robotoff-ingredient-detection>
     </div>
   );
 };
