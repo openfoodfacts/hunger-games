@@ -21,6 +21,7 @@ import ColorModeContext from "./contexts/colorMode";
 
 import Loader from "./pages/loader";
 import { CountryProvider } from "./contexts/CountryProvider";
+import { OffWebcomponentsConfiguration } from "./components/OffWebcomponents";
 
 const EcoScorePage = React.lazy(() => import("./pages/eco-score"));
 const LogoAnnotationPage = React.lazy(
@@ -250,6 +251,7 @@ export default function App() {
               >
                 <CssBaseline />
                 <ResponsiveAppBar />
+                <OffWebcomponentsConfiguration />
                 <Routes>
                   <Route path="/" element={<Home />} />
                   <Route path="/eco-score" element={<EcoScorePage />} />

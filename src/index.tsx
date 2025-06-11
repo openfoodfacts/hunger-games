@@ -9,8 +9,6 @@ import reportWebVitals from "./reportWebVitals";
 
 import { MatomoProvider, createInstance } from "@jonkoops/matomo-tracker-react";
 
-import { OffWebcomponentsConfiguration } from "./components/OffWebcomponents";
-
 const instance = createInstance({
   urlBase: "https://analytics.openfoodfacts.org/",
   siteId: 3,
@@ -19,9 +17,6 @@ const instance = createInstance({
 const root = ReactDOM.createRoot(document.getElementById("root")!);
 root.render(
   <React.StrictMode>
-    {/* Add the off-webcomponents-configuration component here */}
-    <OffWebcomponentsConfiguration />
-
     <BrowserRouter>
       <MatomoProvider value={instance}>
         <App />
