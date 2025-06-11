@@ -3,14 +3,14 @@ import { useCountry } from "../contexts/CountryProvider";
 import { getCountryLanguageCode } from "../pages/nutrition/utils";
 import "@openfoodfacts/openfoodfacts-webcomponents";
 
-const getLanguageCodes = () => {
+const getLanguageCode = () => {
   const [country] = useCountry();
 
   return getCountryLanguageCode(country);
 };
 
 export const OffWebcomponentsConfiguration = () => {
-  const languageCode = getLanguageCodes();
+  const languageCode = getLanguageCode();
 
   const robotoffConfiguration = JSON.stringify({
     apiUrl: ROBOTOFF_API_URL,
