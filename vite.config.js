@@ -8,7 +8,7 @@ export default defineConfig({
     viteStaticCopy({
       targets: [
         {
-          src: "./node_modules/@openfoodfacts/openfoodfacts-webcomponents/dist/localization/locales/*.js",
+          src: path.resolve(__dirname, "./node_modules/@openfoodfacts/openfoodfacts-webcomponents/dist/localization/locales/*.js"),
           dest: "assets/localization/locales",
         },
       ],
