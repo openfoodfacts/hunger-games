@@ -1,29 +1,29 @@
 {
   "home": {
     "game_selector": {
-      "title": "What game would you like to play?",
+      "title": "Çfarë loje do të dëshironit të luanit?",
       "cards": {
         "questions": {
-          "title": "Questions",
-          "description": "Tell us if the given image answers the questions"
+          "title": "Pyetje",
+          "description": "Na tregoni nëse imazhi i dhënë i përgjigjet pyetjeve"
         },
         "logos": {
-          "title": "Logos",
-          "description": "Find all the logos matching the given logo"
+          "title": "Logot",
+          "description": "Gjej të gjitha logot që përputhen me logon e dhënë"
         },
         "eco_score": {
-          "title": "Eco-score",
-          "description": "Annotate the questions with the highest value"
+          "title": "Eko-rezultati",
+          "description": "Shënoni pyetjet me vlerën më të lartë"
         }
       }
     },
     "account_band": {
-      "title": "Want to make your contribution count? Create an account or sign in on Open Food Facts!",
-      "log_in": "Login",
-      "sign_up": "Sign up",
-      "contribution_details": "Learn why your contribution matters"
+      "title": "Dëshironi që kontributi juaj të ketë vlerë? Krijoni një llogari ose hyni në Open Food Facts?",
+      "log_in": "Identifikohu",
+      "sign_up": "regjistrohu",
+      "contribution_details": "Mësoni pse kontributi juaj ka rëndësi"
     },
-    "saved_filters": "Saved Filters",
+    "saved_filters": "Filtrat e ruajtur",
     "contribution_modal": {
       "title": "Your contribution matters",
       "information": "Hunger Games is an effort to leverage the results of our OCR and artificial intelligence. When you use Hunger Games by Open Food Facts, you improve our entire database which helps the community make better food choices. We gather your annotations and use them to make Open Food Facts more accurate and efficient.",
@@ -114,8 +114,8 @@
     "flag": "Something wrong? Report/flag the image!",
     "unflag": "Unflag the image",
     "reset_filters": "Reset filters",
-    "log_in": "Login",
-    "sign_up": "Sign up",
+    "log_in": "Identifikohu",
+    "sign_up": "regjistrohu",
     "login_title": "Make your annotation count",
     "login_description": "You are not currently logged into Open Food Facts. To get your answers directly applied to products, and associated to your account, consider logging in to your Open Food Facts account, or creating one",
     "please_wait_while_we_fetch_the_question": "Please wait while we fetch the question!"
@@ -123,8 +123,8 @@
   "menu": {
     "title": "Hunger Games",
     "games": "Games",
-    "questions": "Questions",
-    "logos": "Logos",
+    "questions": "Pyetje",
+    "logos": "Logot",
     "logos-annotation": "Logos annotation",
     "logos-search": "Logos search",
     "logos-product-search": "Annotation per products",
@@ -135,7 +135,7 @@
     "ingredient-spellcheck": "Kontroll drejtshkrimor i përbërësve",
     "ingredient-detection": "Zbulimi i përbërësve",
     "settings": "Settings",
-    "eco-score": "Eco-score",
+    "eco-score": "Eko-rezultati",
     "dashboard": "Logos dashboard",
     "tour": "Show tour",
     "logged_in_user": "Logged as {{userName}}",
