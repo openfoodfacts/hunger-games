@@ -2,6 +2,7 @@ import * as React from "react";
 
 import robotoff from "../robotoff";
 import off from "../off";
+import { CircularProgress } from "@mui/material";
 
 const fetchData = async (insightId) => {
   const response = await robotoff.insightDetail(insightId);
@@ -44,9 +45,11 @@ const getCroppedLogoUrl = (
 const CroppedLogo = (props) => {
   const { insightId, ...other } = props;
   const [logoUrl, setLogoUrl] = React.useState(null);
+  const [loading, setLoading] = React.useState(true);
 
   React.useEffect(() => {
     let isValid = true;
+    setLoading(true);
 
     fetchData(insightId)
       .then(getCroppedLogoUrl)
@@ -55,12 +58,19 @@ const CroppedLogo = (props) => {
           setLogoUrl(url);
         }
       })
-      .catch(() => {});
+      .catch(() => {})
+      .finally(() => {
+        setLoading(false);
+      });
 
     return () => {
       isValid = false;
     };
   }, [insightId]);
+
+  if (loading) {
+    return <CircularProgress {...other} />;
+  }
 
   if (!logoUrl) {
     return null;
