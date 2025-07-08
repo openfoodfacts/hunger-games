@@ -2,7 +2,6 @@ import * as React from "react";
 
 import robotoff from "../robotoff";
 import off from "../off";
-import { CircularProgress } from "@mui/material";
 
 const fetchData = async (insightId) => {
   const response = await robotoff.insightDetail(insightId);
@@ -68,11 +67,7 @@ const CroppedLogo = (props) => {
     };
   }, [insightId]);
 
-  if (loading) {
-    return <CircularProgress {...other} />;
-  }
-
-  if (!logoUrl) {
+  if (loading || !logoUrl) {
     return null;
   }
   return <img alt="logo used in prediction" src={logoUrl} {...other} />;
