@@ -69,12 +69,22 @@ const pages = [
   },
   { translationKey: "menu.manage" },
   {
-    url: "ingredient-spellcheck",
-    translationKey: "menu.ingredient-spellcheck",
-  },
-  {
-    url: "ingredient-detection",
-    translationKey: "menu.ingredient-detection",
+    translationKey: "menu.ingredients",
+    children: [
+      {
+        url: "ingredients",
+        translationKey: "menu.ingredients",
+        devModeOnly: true,
+      },
+      {
+        url: "ingredient-spellcheck",
+        translationKey: "menu.ingredient-spellcheck",
+      },
+      {
+        url: "ingredient-detection",
+        translationKey: "menu.ingredient-detection",
+      },
+    ],
   },
   { url: "insights", translationKey: "menu.insights", devModeOnly: true },
   { url: "dashboard", translationKey: "menu.dashboard" },
