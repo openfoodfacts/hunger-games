@@ -171,10 +171,6 @@ const ResponsiveAppBar = () => {
       return isPageVisible(page);
     });
 
-  React.useEffect(() => {
-    console.log("Boolean(anchorElNav) : ", Boolean(anchorElNav));
-  }, [anchorElNav]);
-
   return (
     <AppBar
       position="static"
