@@ -72,11 +72,6 @@ const pages = [
     translationKey: "menu.ingredients",
     children: [
       {
-        url: "ingredients",
-        translationKey: "menu.ingredients",
-        devModeOnly: true,
-      },
-      {
         url: "ingredient-spellcheck",
         translationKey: "menu.ingredient-spellcheck",
       },
