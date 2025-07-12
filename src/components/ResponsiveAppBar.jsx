@@ -201,106 +201,109 @@ const ResponsiveAppBar = () => {
             >
               <MenuIcon />
             </IconButton>
-            <Menu
-              id="menu-appbar"
-              anchorEl={anchorElNav}
-              anchorOrigin={{
-                vertical: "bottom",
-                horizontal: "left",
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: "top",
-                horizontal: "left",
-              }}
-              open={Boolean(anchorElNav)}
-              onClose={handleCloseNavMenu}
-              sx={{
-                display: { xs: "block", md: "none" },
-              }}
-            >
-              {displayedPages.map((page) => {
-                if (page.url) {
-                  return (
-                    <MenuItem
-                      key={`Mobile-${page.translationKey}`}
-                      onClick={handleCloseNavMenu}
-                      component={Link}
-                      to={`/${page.url}`}
-                    >
-                      <Typography textAlign="center">
-                        {t(page.translationKey)}
-                      </Typography>
-                    </MenuItem>
-                  );
-                }
-                if (page.children) {
-                  return (
-                    <List
-                      component="div"
-                      disablePadding
-                      key={page.translationKey}
-                    >
+            {anchorElNav && (
+              <Menu
+                id="menu-appbar"
+                anchorEl={anchorElNav}
+                anchorOrigin={{
+                  vertical: "bottom",
+                  horizontal: "left",
+                }}
+                // keepMounted
+                transformOrigin={{
+                  vertical: "top",
+                  horizontal: "left",
+                }}
+                open={Boolean(anchorElNav)}
+                onClose={handleCloseNavMenu}
+                sx={{
+                  display: { xs: "block", md: "none" },
+                }}
+              >
+                {displayedPages.map((page) => {
+                  if (page.url) {
+                    return (
                       <MenuItem
-                        onClick={() =>
-                          setMenuOpenState((prev) => ({
-                            ...prev,
-                            [`Mobile-${page.translationKey}`]:
-                              !prev[`Mobile-${page.translationKey}`],
-                          }))
-                        }
+                        key={`Mobile-${page.translationKey}`}
+                        onClick={handleCloseNavMenu}
+                        component={Link}
+                        to={`/${page.url}`}
                       >
                         <Typography textAlign="center">
                           {t(page.translationKey)}
                         </Typography>
-
-                        {menuOpenState[`Mobile-${page.translationKey}`] ? (
-                          <ExpandLess />
-                        ) : (
-                          <ExpandMore />
-                        )}
                       </MenuItem>
-                      <Collapse
-                        in={menuOpenState[`Mobile-${page.translationKey}`]}
-                        timeout="auto"
-                        unmountOnExit
+                    );
+                  }
+                  if (page.children) {
+                    return (
+                      <List
+                        component="div"
+                        disablePadding
+                        key={page.translationKey}
                       >
-                        <List component="div" disablePadding>
-                          {page.children.map((subPage) => (
-                            <MenuItem
-                              sx={{ pl: 4 }}
-                              key={subPage.translationKey}
-                              onClick={handleCloseNavMenu}
-                              component={Link}
-                              to={`/${subPage.url}`}
-                            >
-                              <Typography textAlign="center">
-                                {t(subPage.translationKey)}
-                              </Typography>
-                            </MenuItem>
-                          ))}
-                        </List>
-                      </Collapse>
-                    </List>
+                        <MenuItem
+                          onClick={() =>
+                            setMenuOpenState((prev) => ({
+                              ...prev,
+                              [`Mobile-${page.translationKey}`]:
+                                !prev[`Mobile-${page.translationKey}`],
+                            }))
+                          }
+                        >
+                          <Typography textAlign="center">
+                            {t(page.translationKey)}
+                          </Typography>
+
+                          {menuOpenState[`Mobile-${page.translationKey}`] ? (
+                            <ExpandLess />
+                          ) : (
+                            <ExpandMore />
+                          )}
+                        </MenuItem>
+                        <Collapse
+                          in={menuOpenState[`Mobile-${page.translationKey}`]}
+                          timeout="auto"
+                          unmountOnExit
+                        >
+                          <List component="div" disablePadding>
+                            {page.children.map((subPage) => (
+                              <MenuItem
+                                sx={{ pl: 4 }}
+                                key={subPage.translationKey}
+                                onClick={handleCloseNavMenu}
+                                component={Link}
+                                to={`/${subPage.url}`}
+                              >
+                                <Typography textAlign="center">
+                                  {t(subPage.translationKey)}
+                                </Typography>
+                              </MenuItem>
+                            ))}
+                          </List>
+                        </Collapse>
+                      </List>
+                    );
+                  }
+                  return (
+                    <ListSubheader key={`Mobile-${page.translationKey}`}>
+                      {t(page.translationKey)}
+                    </ListSubheader>
                   );
-                }
-                return (
-                  <ListSubheader key={`Mobile-${page.translationKey}`}>
-                    {t(page.translationKey)}
-                  </ListSubheader>
-                );
-              })}
-              <MenuItem
-                component="button"
-                color="inherit"
-                onClick={() => {
-                  setIsTourOpen(true);
-                  handleCloseNavMenu();
-                }}
-              >
-                <Typography textAlign="center">{t("menu.tour")}</Typography>
-              </MenuItem>
-            </Menu>
+                })}
+                <MenuItem
+                  component="button"
+                  color="inherit"
+                  onClick={() => {
+                    setIsTourOpen(true);
+                    handleCloseNavMenu();
+                  }}
+                >
+                  <Typography textAlign="center">{t("menu.tour")}</Typography>
+                </MenuItem>
+              </Menu>
+            )}
+
             <Typography
               variant="h5"
               noWrap
