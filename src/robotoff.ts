@@ -76,9 +76,7 @@ const robotoff = {
       insight_types: insightType,
       value_tag: valueTag,
       brands: reformatValueTag(brandFilter),
-      countries: countryId2countryCode(
-        countryFilter !== "en:world" ? countryFilter : null,
-      ),
+      countries: countryFilter,
       campaign,
       predictor,
       order_by: sortByPopularity ? "popularity" : "random",
