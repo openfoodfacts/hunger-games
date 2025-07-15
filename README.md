@@ -37,31 +37,37 @@ The main goal is: Every Open Food Facts user can annotate products in a few minu
 - [![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?logo=figma&logoColor=white) Mockups on the current app and future plans to discuss](https://www.figma.com/design/pngqJwPkytFik6h4EW396n/Hunger-Games?node-id=801-2&p=f&t=xQnrkht1cbTJGOw9-0)
 - Are you a designer ? [Join the design team](https://github.com/openfoodfacts/openfoodfacts-design)
 
-## Outstanding issues
+## 🐛 Outstanding issues
 
 - We need performance improvements server side (degrading the experience)
 - We need to step up our design, as well as cognitive load on the users for the questions
 
-## Requirements:
+
+## 👩‍💻 Development
+
+### Requirements:
 
 - [Node](https://nodejs.org)
 
-## Setup
+### Setup
 
-### Node & Yarn
+#### Node & Yarn
 
 - [Install Node](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
 - [Install yarn](https://classic.yarnpkg.com/lang/en/docs/install/)
 - Install libraries: `yarn install`
 - run the project locally `yarn dev`
 
-### Build with Yarn
+#### Build with Yarn
 
 ```
 yarn build
 ```
 
-### Generate the Countries list
+#### Ensure you don't run into CORS issues
+* You may encounter CORS issues while testing Hunger Games on your localhost. You can use an extension to overcome those CORS exceptions on localhost. [You can use this one](https://chromewebstore.google.com/detail/moesif-origincors-changer/digfbfaphojjndkpccljibejjbppifbc?pli=1), for no particular reason (we haven't checked it's safe to use, Alexandre uses it though)
+
+#### Generate the Countries list
 
 ```
 yarn countries
@@ -69,7 +75,7 @@ yarn countries
 
 Generates the JSON file `src/assets/countries.json` which contains all the countries available on OFF taxonomy. Data are obtained from static.openfoodfacts.org
 
-### Update the Taxonomy auto-complete file
+#### Update the Taxonomy auto-complete file
 
 ```
 node update-taxonomy-suggestions.js
@@ -77,20 +83,20 @@ node update-taxonomy-suggestions.js
 
 Fetch categories and labels taxonomy from Open Food Facts static files, and generate JSON files used by the `Autocomplete` fields.
 
-### Maintenance - How to define a dashboard
+#### Maintenance - How to define a dashboard
 
 Go to `src/pages/logosValidator/dashboardDefinition.ts`. You have two objects to edit:
 
 - `LOGOS` which contains the logos available in dashboards. Add the logos you need by providing at least `tag`, `label`, and `logo` properties.
 - `DASHBOARD` which for a dashboard associates an array of logos.
 
-## Libraries we depend on
+### Libraries we depend on
 
 - React
 - [MUI](mui.com) (UI library based on material design)
 - Axios (HTTP calls)
 
-## APIs we depend on
+### APIs we depend on
 
 Open Food Facts APIs and [Robotoff](https://github.com/openfoodfacts/robotoff)
 
