@@ -1,13 +1,20 @@
-# Hunger Games: Annotation games for Open Food Facts
-
-Hunger Games is a series of mini-apps that let users contribute data to Open Food Facts, in a rather fun way using React. It relies heavily on Robotoff APIs, as well as Open Food Facts APIs.
-You are very welcome to write the game you want.
-
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://static.openfoodfacts.org/images/logos/off-logo-horizontal-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="https://static.openfoodfacts.org/images/logos/off-logo-horizontal-light.svg">
   <img height="100" src="https://static.openfoodfacts.org/images/logos/off-logo-horizontal-light.png">
 </picture>
+
+# Hunger Games: Annotation games for Open Food Facts
+
+Hunger Games is a series of mini-apps that let users contribute data to Open Food Facts, in a rather fun way using React. It relies heavily on Robotoff APIs, as well as Open Food Facts APIs.
+You are very welcome to write the game you want.
+
+## Why Hunger Games?
+
+- Because we are sympathetic to Katniss' fight against Panem.
+- Open Food Facts generates a lot of photos, and we need to turn them into reliable data about food and cosmetics, at very large scale.
+- We process all pictures using top OCR and Machine earning techniques and get a lot of predictions about the products.
+- We then need to let users leverage those predictions to easily complete products, in a fun way, on their desktop and/or mobile devices.
 
 ![GitHub language count](https://img.shields.io/github/languages/count/openfoodfacts/hunger-games)
 ![GitHub top language](https://img.shields.io/github/languages/top/openfoodfacts/hunger-games)
@@ -18,16 +25,11 @@ You are very welcome to write the game you want.
 
 The production website is available at https://hunger.openfoodfacts.org
 
-## Why Hunger Games?
 
-- Because we are sympathetic to Katniss' fight against Panem.
-- Open Food Facts generates a lot of photos, and we need to turn them into reliable data about food and cosmetics, at very large scale.
-- We process all pictures using top OCR and Machine earning techniques and get a lot of predictions about the products.
-- We then need to let users leverage this data to easily complete products, in a fun way, on their mobiles.
 
 The main goal is: Every Open Food Facts user can annotate products in a few minutes.
 
-## Who do I talk to?
+## 💬 Who do I talk to?
 
 - Join us at [https://openfoodfacts.slack.com/](https://openfoodfacts.slack.com/) in the channel #hunger-games. (Signup at [https://slack.openfoodfacts.org/](https://slack.openfoodfacts.org/)
 
@@ -120,7 +122,7 @@ You can also help by improving [translation in your language](https://translate.
 
 ## 👩‍⚖️ Licence
 
-- See LICENSE.md
+- See [LICENSE.md](./LICENSE.md)
 
 ## Contributors
 
