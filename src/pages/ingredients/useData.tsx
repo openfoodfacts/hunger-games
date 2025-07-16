@@ -42,7 +42,7 @@ const formatData = (product) => {
     .filter((key) => key.startsWith("ingredients"))
     .map((key) => {
       const imageData = images[key];
-      
+
       const [_, x, y] = images[key].geometry.split("-");
 
       const countryCode = key.startsWith("ingredients_")
@@ -86,22 +86,24 @@ const formatData = (product) => {
     ingredient,
     scans_n,
     ...ingredientTexts,
-  
   };
 };
 
-
-async function fetchIngredientDetectionInsights({ page = 1, count = 25, countryCode = "" }) {
+async function fetchIngredientDetectionInsights({
+  page = 1,
+  count = 25,
+  countryCode = "",
+}) {
   try {
     const { data } = await robotoff.getInsights(
-      "", 
-      "ingredient_detection", 
-      "", 
-      "not_annotated", 
+      "",
+      "ingredient_detection",
+      "",
+      "not_annotated",
       page,
       count,
-      "", 
-      countryCode
+      "",
+      countryCode,
     );
     return data.insights || [];
   } catch (error) {
@@ -125,10 +127,12 @@ export default function useData(countryCode): [any[], () => void, boolean] {
     const load = async () => {
       setIsLoading(true);
 
-      
-      const insights = await fetchIngredientDetectionInsights({ page, count: 25, countryCode: countryCode || "" });
+      const insights = await fetchIngredientDetectionInsights({
+        page,
+        count: 25,
+        countryCode: countryCode || "",
+      });
       if (isValid) {
-        
         setData(insights);
         setIsLoading(false);
       }

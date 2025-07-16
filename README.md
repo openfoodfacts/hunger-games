@@ -25,8 +25,6 @@ You are very welcome to write the game you want.
 
 The production website is available at https://hunger.openfoodfacts.org
 
-
-
 The main goal is: Every Open Food Facts user can annotate products in a few minutes.
 
 ## 💬 Who do I talk to?
@@ -43,7 +41,6 @@ The main goal is: Every Open Food Facts user can annotate products in a few minu
 
 - We need performance improvements server side (degrading the experience)
 - We need to step up our design, as well as cognitive load on the users for the questions
-
 
 ## 👩‍💻 Development
 
@@ -68,7 +65,7 @@ yarn build
 
 #### Ensure you don't run into CORS issues
 
-* You may encounter CORS issues while testing Hunger Games on your localhost. You can use an extension to overcome those CORS exceptions on localhost. [You can use this one](https://chromewebstore.google.com/detail/moesif-origincors-changer/digfbfaphojjndkpccljibejjbppifbc?pli=1), for no particular reason (we haven't checked it's safe to use)
+- You may encounter CORS issues while testing Hunger Games on your localhost. You can use an extension to overcome those CORS exceptions on localhost. [You can use this one](https://chromewebstore.google.com/detail/moesif-origincors-changer/digfbfaphojjndkpccljibejjbppifbc?pli=1), for no particular reason (we haven't checked it's safe to use)
 
 #### Generate the Countries list
 
