@@ -60,6 +60,11 @@ export default function useRobotoffPrediction(
         setIsLoading(false);
         setError(null);
         setData(rep);
+      })
+      .catch((err) => {
+        setIsLoading(false);
+        setError("Sorry, the server is temporarily unavailable. Please try again later.");
+        setData(null);
       });
   }, [fetchUrl]);
 

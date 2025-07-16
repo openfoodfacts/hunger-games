@@ -1,6 +1,7 @@
 import * as React from "react";
 import off from "../../off";
 import { ROBOTOFF_API_URL } from "../../const";
+import robotoff from "../../robotoff";
 
 const imagesToRead = [
   {
@@ -89,14 +90,32 @@ const formatData = (product) => {
   };
 };
 
+// Add a function to fetch ingredient_detection insights from Robotoff
+async function fetchIngredientDetectionInsights({ page = 1, count = 25, countryCode = "" }) {
+  try {
+    const { data } = await robotoff.getInsights(
+      "", // barcode
+      "ingredient_detection", // insightType
+      "", // valueTag
+      "not_annotated", // annotation
+      page,
+      count,
+      "", // campaigns
+      countryCode
+    );
+    return data.insights || [];
+  } catch (error) {
+    console.error("Failed to fetch ingredient_detection insights", error);
+    return [];
+  }
+}
+
 export default function useData(countryCode): [any[], () => void, boolean] {
   const [data, setData] = React.useState([]);
   const prevCountry = React.useRef(countryCode);
   const [isLoading, setIsLoading] = React.useState(true);
   const [page, setPage] = React.useState(() => {
-    return 0;
-    // Seems that API fails for large page number
-    //return new Date().getMilliseconds() % 50;
+    return 1;
   });
   const seenCodes = React.useRef([]);
 
@@ -106,38 +125,12 @@ export default function useData(countryCode): [any[], () => void, boolean] {
     const load = async () => {
       setIsLoading(true);
 
-      try {
-        const {
-          data: { products },
-        } = await off.searchProducts({
-          page,
-          pageSize: 25,
-          filters: imagesToRead,
-          fields: "all",
-          countryCode: countryCode || "world",
-        });
-        if (isValid) {
-          const rep = products
-            .filter((p) => {
-              const isNew = !seenCodes.current[p.code]; // prevent from adding products already seen
-              if (isNew) {
-                seenCodes.current[p.code] = true;
-              }
-
-              return isNew;
-            })
-            .map(formatData);
-
-          if (prevCountry.current !== countryCode) {
-            setData(rep);
-            prevCountry.current = countryCode;
-          } else {
-            setData((prev) => [...prev, ...rep]);
-          }
-          setIsLoading(false);
-        }
-      } catch (error) {
-        console.log(error);
+      // Fetch ingredient_detection insights from Robotoff
+      const insights = await fetchIngredientDetectionInsights({ page, count: 25, countryCode: countryCode || "" });
+      if (isValid) {
+        // Optionally, you can format or filter insights as needed
+        setData(insights);
+        setIsLoading(false);
       }
     };
 
@@ -152,7 +145,6 @@ export default function useData(countryCode): [any[], () => void, boolean] {
   }, []);
 
   React.useEffect(() => {
-    // This is dummy but will be ok for a PoC
     if (data.length < 5 && !isLoading) {
       setPage((p) => p + 1);
     }

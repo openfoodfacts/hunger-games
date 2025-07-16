@@ -1,5 +1,4 @@
 import * as React from "react";
-import axios from "axios";
 import robotoff from "../../robotoff";
 import { InsightType } from "./insight.types";
 import { useCountry } from "../../contexts/CountryProvider";
@@ -13,6 +12,7 @@ export type ProductType = {
 export function useRobotoffPredictions(partiallyFilled: boolean) {
   const [isLoading, setIsLoading] = React.useState(false);
   const [count, setCount] = React.useState(0);
+  const [error, setError] = React.useState<string | null>(null);
 
   const campaign = partiallyFilled
     ? "incomplete-nutrition"
@@ -41,6 +41,7 @@ export function useRobotoffPredictions(partiallyFilled: boolean) {
     }
     let valid = true;
     setIsLoading(true);
+    setError(null);
 
     robotoff
       .getInsights(
@@ -76,6 +77,10 @@ export function useRobotoffPredictions(partiallyFilled: boolean) {
         });
 
         setIsLoading(false);
+      })
+      .catch((err) => {
+        setIsLoading(false);
+        setError("Sorry, the server is temporarily unavailable. Please try again later.");
       });
 
     return () => {
@@ -91,13 +96,13 @@ export function useRobotoffPredictions(partiallyFilled: boolean) {
 
     barecodeToImport.forEach((code) => {
       setOffData((prev) => ({ ...prev, [code]: "loading" }));
-      axios
-        .get(
-          `https://world.openfoodfacts.org/api/v2/product/${code}.json?fields=serving_size,nutriments,images`,
-        )
-        .then(({ data: { product } }) => {
-          setOffData((prev) => ({ ...prev, [code]: product }));
-        });
+      // axios
+      //   .get(
+      //     `https://world.openfoodfacts.org/api/v2/product/${code}.json?fields=serving_size,nutriments,images`,
+      //   )
+      //   .then(({ data: { product } }) => {
+      //     setOffData((prev) => ({ ...prev, [code]: product }));
+      //   });
     });
   }, [insightIndex, insights.data]);
 
@@ -116,5 +121,6 @@ export function useRobotoffPredictions(partiallyFilled: boolean) {
     nextItem,
     count,
     product: product === "loading" ? undefined : product,
+    error,
   };
 }
