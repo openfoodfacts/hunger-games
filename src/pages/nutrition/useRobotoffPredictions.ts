@@ -96,13 +96,7 @@ export function useRobotoffPredictions(partiallyFilled: boolean) {
 
     barecodeToImport.forEach((code) => {
       setOffData((prev) => ({ ...prev, [code]: "loading" }));
-      // axios
-      //   .get(
-      //     `https://world.openfoodfacts.org/api/v2/product/${code}.json?fields=serving_size,nutriments,images`,
-      //   )
-      //   .then(({ data: { product } }) => {
-      //     setOffData((prev) => ({ ...prev, [code]: product }));
-      //   });
+      
     });
   }, [insightIndex, insights.data]);
 

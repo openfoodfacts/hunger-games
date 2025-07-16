@@ -42,7 +42,7 @@ const formatData = (product) => {
     .filter((key) => key.startsWith("ingredients"))
     .map((key) => {
       const imageData = images[key];
-      // eslint-disable-next-line @typescript-eslint/no-unused-vars
+      
       const [_, x, y] = images[key].geometry.split("-");
 
       const countryCode = key.startsWith("ingredients_")
@@ -86,21 +86,21 @@ const formatData = (product) => {
     ingredient,
     scans_n,
     ...ingredientTexts,
-    // images,
+  
   };
 };
 
-// Add a function to fetch ingredient_detection insights from Robotoff
+
 async function fetchIngredientDetectionInsights({ page = 1, count = 25, countryCode = "" }) {
   try {
     const { data } = await robotoff.getInsights(
-      "", // barcode
-      "ingredient_detection", // insightType
-      "", // valueTag
-      "not_annotated", // annotation
+      "", 
+      "ingredient_detection", 
+      "", 
+      "not_annotated", 
       page,
       count,
-      "", // campaigns
+      "", 
       countryCode
     );
     return data.insights || [];
@@ -125,10 +125,10 @@ export default function useData(countryCode): [any[], () => void, boolean] {
     const load = async () => {
       setIsLoading(true);
 
-      // Fetch ingredient_detection insights from Robotoff
+      
       const insights = await fetchIngredientDetectionInsights({ page, count: 25, countryCode: countryCode || "" });
       if (isValid) {
-        // Optionally, you can format or filter insights as needed
+        
         setData(insights);
         setIsLoading(false);
       }

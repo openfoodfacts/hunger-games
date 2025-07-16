@@ -42,7 +42,7 @@ export default function useRobotoffPrediction(
 
     axios
       .get<
-        GetIngredientsResponse | GetIngredientsError // That's not clean, but errors return a 200
+        GetIngredientsResponse | GetIngredientsError 
       >(fetchUrl)
       .then((result) => {
         if (isError(result.data)) {
