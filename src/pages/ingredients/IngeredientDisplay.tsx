@@ -22,21 +22,19 @@ type ParsedIngredientsType = {
   text: string;
   vegan: BooleanEstimation;
   vegetarian: BooleanEstimation;
+  is_in_taxonomy: 1 | 0
 };
 
 function getColor(ingredient: ParsedIngredientsType) {
-  if (ingredient.ciqual_proxy_food_code !== undefined) return "green";
-  if (ingredient.vegetarian !== undefined) return "lightgreen";
-  if (ingredient.ingredients !== undefined) return "blue";
-  return "orange";
+  if (ingredient.is_in_taxonomy) { return 'green' }
+  return 'red'
+
 }
 
 function getTitle(ingredient: ParsedIngredientsType) {
-  if (ingredient.ciqual_proxy_food_code !== undefined)
-    return "This ingredient has CIQUAL id";
-  if (ingredient.vegetarian !== undefined) return "recognised as a vegetarian";
-  if (ingredient.ingredients !== undefined) return "contains sub ingredients";
-  return `unknown ingredient: ${ingredient.text}"`;
+  if (ingredient.is_in_taxonomy) { return 'Ingredient dans la taxonomie' }
+  return 'Ingrédient inconnu'
+
 }
 function ColorText({
   text,
