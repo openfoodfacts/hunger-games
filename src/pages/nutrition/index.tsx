@@ -8,8 +8,7 @@ import { useRobotoffPredictions } from "./useRobotoffPredictions";
 import Alert from "@mui/material/Alert";
 
 export default function Nutrition() {
-  // Use the hook to get the error state
-  const { error } = useRobotoffPredictions(false); // or true, depending on the game mode
+  const { error } = useRobotoffPredictions(false);
   return (
     <React.Suspense>
       <ErrorBoundary>

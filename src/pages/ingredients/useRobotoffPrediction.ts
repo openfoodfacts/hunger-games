@@ -41,9 +41,7 @@ export default function useRobotoffPrediction(
     setIsLoading(true);
 
     axios
-      .get<
-        GetIngredientsResponse | GetIngredientsError 
-      >(fetchUrl)
+      .get<GetIngredientsResponse | GetIngredientsError>(fetchUrl)
       .then((result) => {
         if (isError(result.data)) {
           setIsLoading(false);
@@ -63,7 +61,9 @@ export default function useRobotoffPrediction(
       })
       .catch((err) => {
         setIsLoading(false);
-        setError("Sorry, the server is temporarily unavailable. Please try again later.");
+        setError(
+          "Sorry, the server is temporarily unavailable. Please try again later.",
+        );
         setData(null);
       });
   }, [fetchUrl]);

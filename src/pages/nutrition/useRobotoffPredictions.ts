@@ -80,7 +80,9 @@ export function useRobotoffPredictions(partiallyFilled: boolean) {
       })
       .catch((err) => {
         setIsLoading(false);
-        setError("Sorry, the server is temporarily unavailable. Please try again later.");
+        setError(
+          "Sorry, the server is temporarily unavailable. Please try again later.",
+        );
       });
 
     return () => {
@@ -96,7 +98,6 @@ export function useRobotoffPredictions(partiallyFilled: boolean) {
 
     barecodeToImport.forEach((code) => {
       setOffData((prev) => ({ ...prev, [code]: "loading" }));
-      
     });
   }, [insightIndex, insights.data]);
 
