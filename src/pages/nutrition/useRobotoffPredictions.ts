@@ -1,7 +1,7 @@
-import * as React from "react";
-import robotoff from "../../robotoff";
-import { InsightType } from "./insight.types";
-import { useCountry } from "../../contexts/CountryProvider";
+import * as React from 'react';
+import robotoff from '../../robotoff';
+import { InsightType } from './insight.types';
+import { useCountry } from '../../contexts/CountryProvider';
 
 export type ProductType = {
   images: Record<string, any>;
@@ -15,11 +15,11 @@ export function useRobotoffPredictions(partiallyFilled: boolean) {
   const [error, setError] = React.useState<string | null>(null);
 
   const campaign = partiallyFilled
-    ? "incomplete-nutrition"
-    : "missing-nutrition";
+    ? 'incomplete-nutrition'
+    : 'missing-nutrition';
 
   const [insights, setInsights] = React.useState<{
-    campaign: "incomplete-nutrition" | "missing-nutrition";
+    campaign: 'incomplete-nutrition' | 'missing-nutrition';
     data: InsightType[];
   }>({
     campaign,
@@ -27,7 +27,7 @@ export function useRobotoffPredictions(partiallyFilled: boolean) {
   });
 
   const [offData, setOffData] = React.useState<{
-    [barecode: string]: "loading" | ProductType;
+    [barecode: string]: 'loading' | ProductType;
   }>({});
   const [insightIndex, setInsightIndex] = React.useState(0);
   const [country] = useCountry();
@@ -45,14 +45,14 @@ export function useRobotoffPredictions(partiallyFilled: boolean) {
 
     robotoff
       .getInsights(
-        "",
-        "nutrient_extraction",
-        "",
-        "not_annotated",
+        '',
+        'nutrient_extraction',
+        '',
+        'not_annotated',
         1,
         25,
         campaign,
-        country,
+        country
       )
       .then(({ data }) => {
         if (!valid) {
@@ -81,7 +81,7 @@ export function useRobotoffPredictions(partiallyFilled: boolean) {
       .catch((err) => {
         setIsLoading(false);
         setError(
-          "Sorry, the server is temporarily unavailable. Please try again later.",
+          'Sorry, the server is temporarily unavailable. Please try again later.'
         );
       });
 
@@ -97,7 +97,7 @@ export function useRobotoffPredictions(partiallyFilled: boolean) {
       .map((insight) => insight.barcode);
 
     barecodeToImport.forEach((code) => {
-      setOffData((prev) => ({ ...prev, [code]: "loading" }));
+      setOffData((prev) => ({ ...prev, [code]: 'loading' }));
     });
   }, [insightIndex, insights.data]);
 
@@ -115,7 +115,7 @@ export function useRobotoffPredictions(partiallyFilled: boolean) {
     insight,
     nextItem,
     count,
-    product: product === "loading" ? undefined : product,
+    product: product === 'loading' ? undefined : product,
     error,
   };
 }

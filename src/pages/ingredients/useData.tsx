@@ -1,23 +1,23 @@
-import * as React from "react";
-import off from "../../off";
-import { ROBOTOFF_API_URL } from "../../const";
-import robotoff from "../../robotoff";
+import * as React from 'react';
+import off from '../../off';
+import { ROBOTOFF_API_URL } from '../../const';
+import robotoff from '../../robotoff';
 
 const imagesToRead = [
   {
-    tagtype: "states",
-    tag_contains: "contains",
-    tag: "en:ingredients-to-be-completed",
+    tagtype: 'states',
+    tag_contains: 'contains',
+    tag: 'en:ingredients-to-be-completed',
   },
   {
-    tagtype: "states",
-    tag_contains: "contains",
-    tag: "en:ingredients-photo-selected",
+    tagtype: 'states',
+    tag_contains: 'contains',
+    tag: 'en:ingredients-photo-selected',
   },
 ];
 
-const getImageUrl = (base, id, resolution: "100" | "400" | "full") => {
-  return `${base}${id}${resolution === "full" ? "" : `.${resolution}`}.jpg`;
+const getImageUrl = (base, id, resolution: '100' | '400' | 'full') => {
+  return `${base}${id}${resolution === 'full' ? '' : `.${resolution}`}.jpg`;
 };
 
 const getIngredientExtractionUrl = (base, id) => {
@@ -36,26 +36,26 @@ const formatData = (product) => {
     ...other
   } = product;
 
-  const baseImageUrl = image_ingredients_url.replace(/ingredients.*/, "");
+  const baseImageUrl = image_ingredients_url.replace(/ingredients.*/, '');
 
   const selectedImages = Object.keys(images)
-    .filter((key) => key.startsWith("ingredients"))
+    .filter((key) => key.startsWith('ingredients'))
     .map((key) => {
       const imageData = images[key];
-      const [_, x, y] = images[key].geometry.split("-");
+      const [_, x, y] = images[key].geometry.split('-');
 
-      const countryCode = key.startsWith("ingredients_")
-        ? key.slice("ingredients_".length)
-        : "";
+      const countryCode = key.startsWith('ingredients_')
+        ? key.slice('ingredients_'.length)
+        : '';
 
       const { uploaded_t, uploader } = images[imageData.imgid];
       return {
         imgId: imageData.imgid,
         countryCode,
-        imageUrl: getImageUrl(baseImageUrl, imageData.imgid, "full"),
+        imageUrl: getImageUrl(baseImageUrl, imageData.imgid, 'full'),
         fetchDataUrl: getIngredientExtractionUrl(
-          baseImageUrl.replace("images.", "static."),
-          imageData.imgid,
+          baseImageUrl.replace('images.', 'static.'),
+          imageData.imgid
         ),
         uploaded_t,
         uploader,
@@ -72,7 +72,7 @@ const formatData = (product) => {
     });
   const ingredientTexts = {};
   Object.entries(other).forEach(([key, value]) => {
-    if (key.startsWith("ingredient")) {
+    if (key.startsWith('ingredient')) {
       ingredientTexts[key] = value;
     }
   });
@@ -91,22 +91,22 @@ const formatData = (product) => {
 async function fetchIngredientDetectionInsights({
   page = 1,
   count = 25,
-  countryCode = "",
+  countryCode = '',
 }) {
   try {
     const { data } = await robotoff.getInsights(
-      "",
-      "ingredient_detection",
-      "",
-      "not_annotated",
+      '',
+      'ingredient_detection',
+      '',
+      'not_annotated',
       page,
       count,
-      "",
-      countryCode,
+      '',
+      countryCode
     );
     return data.insights || [];
   } catch (error) {
-    console.error("Failed to fetch ingredient_detection insights", error);
+    console.error('Failed to fetch ingredient_detection insights', error);
     return [];
   }
 }
@@ -129,7 +129,7 @@ export default function useData(countryCode): [any[], () => void, boolean] {
       const insights = await fetchIngredientDetectionInsights({
         page,
         count: 25,
-        countryCode: countryCode || "",
+        countryCode: countryCode || '',
       });
       if (isValid) {
         setData(insights);

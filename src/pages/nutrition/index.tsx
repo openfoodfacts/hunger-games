@@ -1,11 +1,11 @@
-import * as React from "react";
+import * as React from 'react';
 
-import { ErrorBoundary } from "../taxonomyWalk/Error";
-import Instructions from "./Instructions";
-import { RobotoffNutrientExtraction } from "../../components/OffWebcomponents";
-import { Box } from "@mui/material";
-import { useRobotoffPredictions } from "./useRobotoffPredictions";
-import Alert from "@mui/material/Alert";
+import { ErrorBoundary } from '../taxonomyWalk/Error';
+import Instructions from './Instructions';
+import { RobotoffNutrientExtraction } from '../../components/OffWebcomponents';
+import { Box } from '@mui/material';
+import { useRobotoffPredictions } from './useRobotoffPredictions';
+import Alert from '@mui/material/Alert';
 
 export default function Nutrition() {
   const { error } = useRobotoffPredictions(false);
