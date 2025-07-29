@@ -35,8 +35,17 @@ import { OFF_URL } from "../const";
 import { useCountry } from "../contexts/CountryProvider";
 import countryNames from "../assets/countries.json";
 
+type Page = {
+  translationKey: string;
+  url?: string;
+  devModeOnly?: boolean;
+  mobileOnly?: boolean;
+  desktopOnly?: boolean;
+  children?: Page[];
+};
+
 // Object with no url are subheader in the menu
-const pages = [
+const PAGES: Page[] = [
   { translationKey: "menu.games" },
   { url: "questions", translationKey: "menu.questions" },
   { url: "eco-score", translationKey: "menu.eco-score" },
@@ -91,6 +100,11 @@ const MultiPagesButton = ({
   children,
   isOpen,
   toggleIsOpen,
+}: {
+  translationKey: string;
+  children: Page[];
+  isOpen: boolean;
+  toggleIsOpen: () => void;
 }) => {
   const { t } = useTranslation();
   const anchorEl = React.useRef(null);
@@ -149,7 +163,12 @@ const ResponsiveAppBar = () => {
   const { devMode: isDevMode, visiblePages } = React.useContext(DevModeContext);
   const [menuOpenState, setMenuOpenState] = React.useState({});
 
-  const isPageVisible = (page) => {
+  const isPageVisible = (page: {
+    devModeOnly?: boolean;
+    mobileOnly?: boolean;
+    desktopOnly?: boolean;
+    url?: string;
+  }) => {
     if (page.devModeOnly) {
       return isDevMode && visiblePages[page.url];
     }
@@ -162,19 +181,17 @@ const ResponsiveAppBar = () => {
     return true;
   };
 
-  const displayedPages = pages
-    .map((page) => {
-      if (!page.children) {
-        return page;
-      }
-      return { ...page, children: page.children.filter(isPageVisible) };
-    })
-    .filter((page) => {
-      if (page.children !== undefined && page.children.length === 0) {
-        return false;
-      }
-      return isPageVisible(page);
-    });
+  const displayedPages = PAGES.map((page) => {
+    if (!page.children) {
+      return page;
+    }
+    return { ...page, children: page.children.filter(isPageVisible) };
+  }).filter((page) => {
+    if (page.children !== undefined && page.children.length === 0) {
+      return false;
+    }
+    return isPageVisible(page);
+  });
 
   return (
     <AppBar
@@ -190,7 +207,7 @@ const ResponsiveAppBar = () => {
           <Box
             sx={{
               flexGrow: 1,
-              display: { xs: "flex", md: "none" },
+              display: { xs: "flex", lg: "none" },
               alignItems: "center",
               justifyContent: "space-between",
               maxWidth: "100%",
@@ -345,7 +362,7 @@ const ResponsiveAppBar = () => {
           {/* Desktop content */}
           <Box
             sx={{
-              display: { xs: "none", md: "flex" },
+              display: { xs: "none", lg: "flex" },
               flexDirection: "row",
               alignItems: "center",
               width: "100%",
@@ -354,9 +371,9 @@ const ResponsiveAppBar = () => {
           >
             <Box
               sx={{
-                display: { xs: "none", md: "flex" },
+                display: "flex",
                 flexDirection: "row",
-                alignItems: "baseline",
+                alignItems: "center",
               }}
             >
               <MuiLink
@@ -373,7 +390,6 @@ const ResponsiveAppBar = () => {
               </MuiLink>
               <Typography
                 variant="h6"
-                noWrap
                 component={Link}
                 to="/"
                 sx={{
@@ -405,10 +421,12 @@ const ResponsiveAppBar = () => {
                   );
                 }
 
-                if (page.children) {
+                const children = page.children;
+                if (children != null) {
                   return (
                     <MultiPagesButton
                       {...page}
+                      children={children}
                       key={page.translationKey}
                       isOpen={!!menuOpenState[`Desktop-${page.translationKey}`]}
                       toggleIsOpen={() =>
