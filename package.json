@@ -59,6 +59,7 @@
     "nutriments": "node update-nutriments.js",
     "test": "react-scripts test",
     "deploy": "bash deploy.sh",
+    "lint": "prettier --check . && eslint .",
     "prepare": "husky"
   },
   "eslintConfig": {
