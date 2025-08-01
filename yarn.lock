@@ -2301,7 +2301,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"chokidar@npm:^3.5.3":
+"chokidar@npm:^3.6.0":
   version: 3.6.0
   resolution: "chokidar@npm:3.6.0"
   dependencies:
@@ -3599,7 +3599,7 @@ __metadata:
     typescript: "npm:^5.8.3"
     typescript-eslint: "npm:^8.36.0"
     vite: "npm:^7.0.4"
-    vite-plugin-static-copy: "npm:^3.0.0"
+    vite-plugin-static-copy: "npm:^3.1.1"
     web-vitals: "npm:^3.5.2"
   languageName: unknown
   linkType: soft
@@ -5661,7 +5661,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tinyglobby@npm:^0.2.12, tinyglobby@npm:^0.2.13, tinyglobby@npm:^0.2.14":
+"tinyglobby@npm:^0.2.12, tinyglobby@npm:^0.2.14":
   version: 0.2.14
   resolution: "tinyglobby@npm:0.2.14"
   dependencies:
@@ -5899,18 +5899,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite-plugin-static-copy@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "vite-plugin-static-copy@npm:3.0.0"
+"vite-plugin-static-copy@npm:^3.1.1":
+  version: 3.1.1
+  resolution: "vite-plugin-static-copy@npm:3.1.1"
   dependencies:
-    chokidar: "npm:^3.5.3"
+    chokidar: "npm:^3.6.0"
     fs-extra: "npm:^11.3.0"
     p-map: "npm:^7.0.3"
     picocolors: "npm:^1.1.1"
-    tinyglobby: "npm:^0.2.13"
+    tinyglobby: "npm:^0.2.14"
   peerDependencies:
-    vite: ^5.0.0 || ^6.0.0
-  checksum: 10c0/893ff379da3c778dd6f6001189bde0bd79c9432424ac46ec5f91976715eef310eae7683995d0d362e3b55ba48b1140bcd266c0d7966f734349fb478a74f457c0
+    vite: ^5.0.0 || ^6.0.0 || ^7.0.0
+  checksum: 10c0/a4dd5d31212b037d4902d55c2ee83866e496857bf948f258599dc24ec61b4628cf0dd23e4a7d7dc189d33ad1489427e976fa95e4db61b394d0be4f63077ef92c
   languageName: node
   linkType: hard
 
