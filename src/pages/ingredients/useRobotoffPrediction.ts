@@ -1,5 +1,5 @@
-import * as React from "react";
-import axios from "axios";
+import * as React from 'react';
+import axios from 'axios';
 
 type Entities = {
   start: number;
@@ -18,12 +18,12 @@ type GetIngredientsResponse = {
 type GetIngredientsError = { error: string; description: string };
 
 function isError(
-  rep: GetIngredientsResponse | GetIngredientsError,
+  rep: GetIngredientsResponse | GetIngredientsError
 ): rep is GetIngredientsError {
   return (rep as GetIngredientsError).error !== undefined;
 }
 
-type LangContent = Pick<Entities, "start" | "end" | "score" | "text">;
+type LangContent = Pick<Entities, 'start' | 'end' | 'score' | 'text'>;
 
 export type DataType = {
   fullText: string;
@@ -31,7 +31,7 @@ export type DataType = {
 };
 
 export default function useRobotoffPrediction(
-  fetchUrl: string,
+  fetchUrl: string
 ): [null | DataType, () => void, boolean, null | string] {
   const [isLoading, setIsLoading] = React.useState(false);
   const [error, setError] = React.useState(null);
@@ -41,9 +41,7 @@ export default function useRobotoffPrediction(
     setIsLoading(true);
 
     axios
-      .get<
-        GetIngredientsResponse | GetIngredientsError // That's not clean, but errors return a 200
-      >(fetchUrl)
+      .get<GetIngredientsResponse | GetIngredientsError>(fetchUrl)
       .then((result) => {
         if (isError(result.data)) {
           setIsLoading(false);
@@ -60,6 +58,13 @@ export default function useRobotoffPrediction(
         setIsLoading(false);
         setError(null);
         setData(rep);
+      })
+      .catch((err) => {
+        setIsLoading(false);
+        setError(
+          'Sorry, the server is temporarily unavailable. Please try again later.'
+        );
+        setData(null);
       });
   }, [fetchUrl]);
 

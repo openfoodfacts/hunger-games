@@ -1,22 +1,23 @@
-import * as React from "react";
-import off from "../../off";
-import { ROBOTOFF_API_URL } from "../../const";
+import * as React from 'react';
+import off from '../../off';
+import { ROBOTOFF_API_URL } from '../../const';
+import robotoff from '../../robotoff';
 
 const imagesToRead = [
   {
-    tagtype: "states",
-    tag_contains: "contains",
-    tag: "en:ingredients-to-be-completed",
+    tagtype: 'states',
+    tag_contains: 'contains',
+    tag: 'en:ingredients-to-be-completed',
   },
   {
-    tagtype: "states",
-    tag_contains: "contains",
-    tag: "en:ingredients-photo-selected",
+    tagtype: 'states',
+    tag_contains: 'contains',
+    tag: 'en:ingredients-photo-selected',
   },
 ];
 
-const getImageUrl = (base, id, resolution: "100" | "400" | "full") => {
-  return `${base}${id}${resolution === "full" ? "" : `.${resolution}`}.jpg`;
+const getImageUrl = (base, id, resolution: '100' | '400' | 'full') => {
+  return `${base}${id}${resolution === 'full' ? '' : `.${resolution}`}.jpg`;
 };
 
 const getIngredientExtractionUrl = (base, id) => {
@@ -35,27 +36,26 @@ const formatData = (product) => {
     ...other
   } = product;
 
-  const baseImageUrl = image_ingredients_url.replace(/ingredients.*/, "");
+  const baseImageUrl = image_ingredients_url.replace(/ingredients.*/, '');
 
   const selectedImages = Object.keys(images)
-    .filter((key) => key.startsWith("ingredients"))
+    .filter((key) => key.startsWith('ingredients'))
     .map((key) => {
       const imageData = images[key];
-      // eslint-disable-next-line @typescript-eslint/no-unused-vars
-      const [_, x, y] = images[key].geometry.split("-");
+      const [_, x, y] = images[key].geometry.split('-');
 
-      const countryCode = key.startsWith("ingredients_")
-        ? key.slice("ingredients_".length)
-        : "";
+      const countryCode = key.startsWith('ingredients_')
+        ? key.slice('ingredients_'.length)
+        : '';
 
       const { uploaded_t, uploader } = images[imageData.imgid];
       return {
         imgId: imageData.imgid,
         countryCode,
-        imageUrl: getImageUrl(baseImageUrl, imageData.imgid, "full"),
+        imageUrl: getImageUrl(baseImageUrl, imageData.imgid, 'full'),
         fetchDataUrl: getIngredientExtractionUrl(
-          baseImageUrl.replace("images.", "static."),
-          imageData.imgid,
+          baseImageUrl.replace('images.', 'static.'),
+          imageData.imgid
         ),
         uploaded_t,
         uploader,
@@ -72,7 +72,7 @@ const formatData = (product) => {
     });
   const ingredientTexts = {};
   Object.entries(other).forEach(([key, value]) => {
-    if (key.startsWith("ingredient")) {
+    if (key.startsWith('ingredient')) {
       ingredientTexts[key] = value;
     }
   });
@@ -85,18 +85,38 @@ const formatData = (product) => {
     ingredient,
     scans_n,
     ...ingredientTexts,
-    // images,
   };
 };
+
+async function fetchIngredientDetectionInsights({
+  page = 1,
+  count = 25,
+  countryCode = '',
+}) {
+  try {
+    const { data } = await robotoff.getInsights(
+      '',
+      'ingredient_detection',
+      '',
+      'not_annotated',
+      page,
+      count,
+      '',
+      countryCode
+    );
+    return data.insights || [];
+  } catch (error) {
+    console.error('Failed to fetch ingredient_detection insights', error);
+    return [];
+  }
+}
 
 export default function useData(countryCode): [any[], () => void, boolean] {
   const [data, setData] = React.useState([]);
   const prevCountry = React.useRef(countryCode);
   const [isLoading, setIsLoading] = React.useState(true);
   const [page, setPage] = React.useState(() => {
-    return 0;
-    // Seems that API fails for large page number
-    //return new Date().getMilliseconds() % 50;
+    return 1;
   });
   const seenCodes = React.useRef([]);
 
@@ -106,38 +126,14 @@ export default function useData(countryCode): [any[], () => void, boolean] {
     const load = async () => {
       setIsLoading(true);
 
-      try {
-        const {
-          data: { products },
-        } = await off.searchProducts({
-          page,
-          pageSize: 25,
-          filters: imagesToRead,
-          fields: "all",
-          countryCode: countryCode || "world",
-        });
-        if (isValid) {
-          const rep = products
-            .filter((p) => {
-              const isNew = !seenCodes.current[p.code]; // prevent from adding products already seen
-              if (isNew) {
-                seenCodes.current[p.code] = true;
-              }
-
-              return isNew;
-            })
-            .map(formatData);
-
-          if (prevCountry.current !== countryCode) {
-            setData(rep);
-            prevCountry.current = countryCode;
-          } else {
-            setData((prev) => [...prev, ...rep]);
-          }
-          setIsLoading(false);
-        }
-      } catch (error) {
-        console.log(error);
+      const insights = await fetchIngredientDetectionInsights({
+        page,
+        count: 25,
+        countryCode: countryCode || '',
+      });
+      if (isValid) {
+        setData(insights);
+        setIsLoading(false);
       }
     };
 
@@ -152,7 +148,6 @@ export default function useData(countryCode): [any[], () => void, boolean] {
   }, []);
 
   React.useEffect(() => {
-    // This is dummy but will be ok for a PoC
     if (data.length < 5 && !isLoading) {
       setPage((p) => p + 1);
     }
