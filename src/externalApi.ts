@@ -1,29 +1,17 @@
-import axios from "axios";
-
-export const addImageFlag = ({ barcode, imgid, url }) => {
-  axios
-    .put(
-      `https://amathjourney.com/api/off-annotation/flag-image/${barcode}`,
-      { imgid, url },
-      { fetchOptions: { mode: "no-cors" } },
-    )
-    .catch(() => {
-      console.log("Image flagged");
-    });
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+export const addImageFlag = (opts: {
+  barcode: string;
+  imgid: string;
+  url: string;
+}) => {
+  // TODO: Replace this with NutriPatrol
+  throw new Error("This function is not implemented yet");
 };
 
-export const removeImageFlag = ({ barcode, imgid }) => {
-  axios
-    .delete(
-      `https://amathjourney.com/api/off-annotation/flag-image/${barcode}`,
-      {
-        data: { imgid },
-        fetchOptions: { mode: "no-cors" },
-      },
-    )
-    .catch(() => {
-      console.log("Something went wrong. Image could not be flagged");
-    });
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+export const removeImageFlag = (opts: { barcode: string; imgid: string }) => {
+  // TODO: Replace this with NutriPatrol
+  throw new Error("This function is not implemented yet");
 };
 
 const externalApi = {
