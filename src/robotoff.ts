@@ -61,7 +61,19 @@ const robotoff = {
       });
   },
 
-  questions(filterState, count = 10, page = 1) {
+  questions(
+    filterState: Partial<{
+      insightType: string;
+      brandFilter: string;
+      valueTag: string;
+      countryFilter: string;
+      sortByPopularity: boolean;
+      campaign: string;
+      predictor: string;
+    }>,
+    count = 10,
+    page = 1,
+  ) {
     const {
       insightType,
       brandFilter,
@@ -94,15 +106,15 @@ const robotoff = {
     });
   },
 
-  insightDetail(insight_id) {
+  insightDetail(insight_id: string) {
     return axios.get(`${ROBOTOFF_API_URL}/insights/detail/${insight_id}`);
   },
 
-  loadLogo(logoId) {
+  loadLogo(logoId: string) {
     return axios.get(`${ROBOTOFF_API_URL}/images/logos/${logoId}`);
   },
 
-  updateLogo(logoId, value, type) {
+  updateLogo(logoId: string, value: string, type: string) {
     return axios.put(
       `${ROBOTOFF_API_URL}/images/logos/${logoId}`,
       removeEmptyKeys({
@@ -113,7 +125,13 @@ const robotoff = {
     );
   },
 
-  searchLogos(barcode, value, type, count = 25, random = false) {
+  searchLogos(
+    barcode: string,
+    value: string,
+    type: string,
+    count = 25,
+    random = false,
+  ) {
     const formattedValue = /^[a-z][a-z]:/.test(value)
       ? { taxonomy_value: value }
       : { value };
