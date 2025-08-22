@@ -7,28 +7,45 @@ import {
 
 import { IS_DEVELOPMENT_MODE } from "../../const";
 import { DEFAULT_FILTER_STATE } from "../../components/QuestionFilter/const";
-import robotoff from "../../robotoff";
+import robotoff, { QuestionInterface } from "../../robotoff";
 
 import { sleep } from "../../utils";
 
 const PAGE_SIZE = 25;
 
-export const fetchQuestions = createAsyncThunk(
-  "fetchQuestions",
-  async (_, thunkApi) => {
-    const state = thunkApi.getState();
-    const { data } = await robotoff.questions(
-      state.questionBuffer.filterState,
-      PAGE_SIZE,
-      state.questionBuffer.page,
-    );
-    return { page: state.questionBuffer.page, pages_size: PAGE_SIZE, ...data };
-  },
-);
+type FetchQuestionsReturned = {
+  page: number;
+  pages_size: number;
+  questions: QuestionInterface[];
+  count: number;
+};
+
+type FetchQuestionsState = {
+  questionBuffer: { filterState: unknown; page: number };
+};
+
+export const fetchQuestions = createAsyncThunk<
+  FetchQuestionsReturned,
+  void,
+  { state: FetchQuestionsState }
+>("fetchQuestions", async (_, thunkApi) => {
+  const state = thunkApi.getState();
+  const { data } = await robotoff.questions(
+    state.questionBuffer.filterState,
+    PAGE_SIZE,
+    state.questionBuffer.page,
+  );
+  return { page: state.questionBuffer.page, pages_size: PAGE_SIZE, ...data };
+});
+
+type AnswerQuestionArgs = {
+  insight_id: string;
+  value: string;
+};
 
 export const answerQuestion = createAsyncThunk(
   "answerQuestion",
-  async ({ insight_id, value }) => {
+  async ({ insight_id, value }: AnswerQuestionArgs) => {
     if (IS_DEVELOPMENT_MODE) {
       return await sleep(500);
     }
