@@ -11,7 +11,7 @@
           "title": "Logos",
           "description": "Find all the logos matching the given logo"
         },
-        "eco_score": {
+        "green_score": {
           "title": "Eco-score",
           "description": "Annotate the questions with the highest value"
         }
@@ -362,7 +362,7 @@
     "incorrect": "Wrong",
     "correct": "Correct ({{label}})"
   },
-  "eco-score": {
+  "green-score": {
     "description": "Here is a summary of questions that could improve Eco-Score computation",
     "countryLabel": "Country"
   },
