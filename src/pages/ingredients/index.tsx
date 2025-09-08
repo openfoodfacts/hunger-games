@@ -176,7 +176,7 @@ export default function IngredientsPage() {
         <TextField
           select
           size="small"
-          label={t("eco-score.countryLabel")}
+          label={t("green-score.countryLabel")}
           value={selectedCountry}
           onChange={(event) => {
             setSelectedCountry(event.target.value);

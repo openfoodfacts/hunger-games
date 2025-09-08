@@ -48,7 +48,7 @@ type Page = {
 const PAGES: Page[] = [
   { translationKey: "menu.games" },
   { url: "questions", translationKey: "menu.questions" },
-  { url: "eco-score", translationKey: "menu.eco-score" },
+  { url: "green-score", translationKey: "menu.green-score" },
   {
     translationKey: "menu.logos",
     children: [

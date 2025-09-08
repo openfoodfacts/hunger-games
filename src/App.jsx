@@ -23,7 +23,7 @@ import Loader from "./pages/loader";
 import { CountryProvider } from "./contexts/CountryProvider";
 import { OffWebcomponentsConfiguration } from "./components/OffWebcomponents";
 
-const EcoScorePage = React.lazy(() => import("./pages/eco-score"));
+const GreenScorePage = React.lazy(() => import("./pages/green-score"));
 const LogoAnnotationPage = React.lazy(
   () => import("./pages/logos/LogoAnnotation"),
 );
@@ -254,7 +254,8 @@ export default function App() {
                 <OffWebcomponentsConfiguration />
                 <Routes>
                   <Route path="/" element={<Home />} />
-                  <Route path="/eco-score" element={<EcoScorePage />} />
+                  <Route path="/eco-score" element={<GreenScorePage />} />
+                  <Route path="/green-score" element={<GreenScorePage />} />
                   <Route
                     path="/logos"
                     element={
