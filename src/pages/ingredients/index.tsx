@@ -160,7 +160,7 @@ export default function IngredientsPage() {
     return country.countryCode;
   }, [selectedCountry]);
 
-  const [data, removeHead, isLoading] = useData(selectedCountryCode);
+  const [data, removeHead, isLoading, hasError] = useData(selectedCountryCode);
 
   return (
     <React.Suspense fallback={<Loader />}>
@@ -193,11 +193,11 @@ export default function IngredientsPage() {
       {/* <IngeredientDisplay /> */}
       {isLoading ? (
         "loading..."
-      ) : data && data.length === 0 ? (
-        "No data"
-      ) : (
-        <ProductInterface product={data[0]} next={removeHead} />
-      )}
+      ) : data && data.length === 0 ?
+        "No data found" : hasError ? "An error occured"
+          : (
+            <ProductInterface product={data[0]} next={removeHead} />
+          )}
 
       {/* <pre>{JSON.stringify(data, null, 2)}</pre> */}
     </React.Suspense>
