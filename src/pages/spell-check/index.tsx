@@ -4,7 +4,7 @@ import { useRobotoffPredictions } from "./useRobotoffPredictions";
 import { Box, Typography } from "@mui/material";
 import { ErrorBoundary } from "../taxonomyWalk/Error";
 import ShowImage from "./ShowImage";
-import LinksToProduct from "../nutrition/LinksToProduct";
+// import LinksToProduct from "../nutrition/LinksToProduct";
 import { TextCorrection } from "./TextCorrection/TextCorrection";
 
 export default function Nutrition() {
@@ -28,11 +28,6 @@ export default function Nutrition() {
             <ShowImage barcode={insight.barcode} images={product?.images} />
           </Box>
           <Box sx={{ width: "50%", p: 2 }}>
-            <LinksToProduct
-              barcode={insight?.barcode}
-              count={count}
-              sx={{ mb: 2 }}
-            />
             {original === undefined || correction === undefined ? (
               <Typography>Loading texts... </Typography>
             ) : (
