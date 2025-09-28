@@ -1,7 +1,7 @@
 import axios from "axios";
+
 import { ROBOTOFF_API_URL, IS_DEVELOPMENT_MODE } from "./const";
 import { getLang } from "./localeStorageManager";
-import COUNTRIES from "./assets/countries.json";
 import { reformatValueTag, removeEmptyKeys } from "./utils";
 
 export interface QuestionInterface {
@@ -16,17 +16,6 @@ export interface QuestionInterface {
 }
 
 type GetQuestionsResponse = { count: number; questions: QuestionInterface[] };
-
-function countryId2countryCode(id: string | null) {
-  if (id === null) {
-    return null;
-  }
-  const code = COUNTRIES.find((c) => c.id === id)?.countryCode;
-  if (code) {
-    return code.toLowerCase();
-  }
-  return code;
-}
 
 const robotoff = {
   annotate(insightId: string, annotation) {
@@ -49,16 +38,19 @@ const robotoff = {
     }
   },
 
-  questionsByProductCode(code: string) {
-    return axios
-      .get<GetQuestionsResponse>(`${ROBOTOFF_API_URL}/questions/${code}`)
-      .then((result) => {
-        const questions = result.data.questions;
-        result.data.questions = questions.filter(
-          (question) => question.source_image_url,
-        );
-        return result;
-      });
+  async questionsByProductCode(code: string) {
+    const result = await axios.get<GetQuestionsResponse>(
+      `${ROBOTOFF_API_URL}/questions/${code}`,
+    );
+
+    return {
+      ...result,
+      data: {
+        ...result.data,
+        // Filter out questions without image
+        questions: result.data.questions.filter((q) => q.source_image_url),
+      },
+    };
   },
 
   questions(
@@ -147,11 +139,12 @@ const robotoff = {
     });
   },
 
-  getLogoAnnotations(logoId, index, count = 25) {
-    const url =
-      logoId.length > 0
-        ? `${ROBOTOFF_API_URL}/ann/search/${logoId}`
-        : `${ROBOTOFF_API_URL}/ann/search`;
+  getLogoAnnotations(logoId: string, index: number, count = 25) {
+    let url = `${ROBOTOFF_API_URL}/ann/search`;
+    if (logoId.length > 0) {
+      url += `/${logoId}`;
+    }
+
     return axios.get(url, {
       params: removeEmptyKeys({
         index,
@@ -200,30 +193,46 @@ const robotoff = {
     });
   },
 
-  getUserStatistics(username) {
+  getUserStatistics(username: string) {
     return axios.get(`${ROBOTOFF_API_URL}/users/statistics/${username}`);
   },
 
-  getCroppedImageUrl(imageUrl, boundingBox) {
+  getCroppedImageUrl(
+    imageUrl: string,
+    boundingBox: [number, number, number, number],
+  ) {
     const [y_min, x_min, y_max, x_max] = boundingBox;
-    return `${ROBOTOFF_API_URL}/images/crop?image_url=${imageUrl}&y_min=${y_min}&x_min=${x_min}&y_max=${y_max}&x_max=${x_max}`;
+
+    const params = new URLSearchParams({
+      image_url: imageUrl,
+      y_min: y_min.toString(),
+      x_min: x_min.toString(),
+      y_max: y_max.toString(),
+      x_max: x_max.toString(),
+    });
+
+    return `${ROBOTOFF_API_URL}/images/crop?${params.toString()}`;
   },
 
-  getLogosImages(logoIds) {
-    return axios.get(
-      `${ROBOTOFF_API_URL}/images/logos?logo_ids=${logoIds.join(",")}`,
-    );
+  getLogosImages(logoIds: string[]) {
+    const params = new URLSearchParams({
+      logo_ids: logoIds.join(","),
+    });
+
+    return axios.get(`${ROBOTOFF_API_URL}/images/logos?${params.toString()}`);
   },
 
-  getUnansweredValues(params: {
+  getUnansweredValues({
+    page = 1,
+    countryCode,
+    ...other
+  }: {
     type: "label" | "brand" | "category";
-    countryCode;
-    campaign;
+    countryCode: string;
+    campaign: string;
     page?: number;
     count?: number;
   }) {
-    const { page = 1, countryCode, ...other } = params;
-
     return axios.get(
       `${ROBOTOFF_API_URL}/questions/unanswered/?${Object.entries(
         removeEmptyKeys({
