@@ -78,56 +78,60 @@ const cafecreme = "#f2e9e4";
 const white = "#ffffff";
 const black = "#000000";
 
-const getToken = (colorMode) => ({
-  palette: {
-    mode: colorMode,
-    success: {
-      main: "#8bc34a",
-      contrastText: white,
+/**
+ * @param {"light" | "dark"} colorMode
+ */
+const createOffTheme = (colorMode) =>
+  createTheme({
+    palette: {
+      mode: colorMode,
+      success: {
+        main: "#8bc34a",
+        contrastText: white,
+      },
+      error: {
+        main: "#ff5252",
+        contrastText: white,
+      },
+      primary: {
+        ...(colorMode === "dark"
+          ? {
+              dark: mocha,
+              main: macchiato,
+              light: macchiato,
+            }
+          : {
+              dark: ristreto,
+              main: chocolate,
+              light: cortado,
+            }),
+        contrastText: white,
+      },
+      secondary: {
+        ...(colorMode === "dark"
+          ? {
+              dark: chocolate,
+              main: cortado,
+              light: mocha,
+            }
+          : {
+              light: latte,
+              main: cappucino,
+              dark: latteMacchiato,
+            }),
+        contrastText: black,
+      },
+      cafeCreme:
+        colorMode === "dark"
+          ? { main: ristreto, contrastText: white }
+          : { main: cafecreme, contrastText: black },
     },
-    error: {
-      main: "#ff5252",
-      contrastText: white,
+    components: {
+      MuiLink: {
+        defaultProps: { color: "inherit" },
+      },
     },
-    primary: {
-      ...(colorMode === "dark"
-        ? {
-            dark: mocha,
-            main: macchiato,
-            light: macchiato,
-          }
-        : {
-            dark: ristreto,
-            main: chocolate,
-            light: cortado,
-          }),
-      contrastText: white,
-    },
-    secondary: {
-      ...(colorMode === "dark"
-        ? {
-            dark: chocolate,
-            main: cortado,
-            light: mocha,
-          }
-        : {
-            light: latte,
-            main: cappucino,
-            dark: latteMacchiato,
-          }),
-      contrastText: black,
-    },
-    cafeCreme:
-      colorMode === "dark"
-        ? { main: ristreto, contrastText: white }
-        : { main: cafecreme, contrastText: black },
-  },
-  components: {
-    MuiLink: {
-      defaultProps: { color: "inherit" },
-    },
-  },
-});
+  });
 
 const ADMINS = [
   "alex-off",
@@ -234,7 +238,7 @@ export default function App() {
     [],
   );
 
-  const theme = createTheme(getToken(mode));
+  const theme = createOffTheme(mode);
 
   return (
     <React.Suspense fallback={<Loader />}>
