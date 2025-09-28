@@ -1,4 +1,13 @@
-export const DEFAULT_FILTER_STATE = {
+export type FilterState = {
+  insightType: string;
+  brandFilter: string;
+  countryFilter: string;
+  sortByPopularity: boolean;
+  valueTag: string;
+  campaign: string;
+};
+
+export const DEFAULT_FILTER_STATE: FilterState = {
   insightType: "brand",
   brandFilter: "",
   countryFilter: "",
@@ -45,7 +54,7 @@ export const key2urlParam = {
   campaign: "campaign",
 };
 
-const urlParams2Key = {};
+const urlParams2Key: Record<string, string> = {};
 Object.entries(key2urlParam).forEach(([key, value]) => {
   urlParams2Key[value] = key;
 });
