@@ -1393,19 +1393,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@openfoodfacts/openfoodfacts-webcomponents@npm:1.12.3":
-  version: 1.12.3
-  resolution: "@openfoodfacts/openfoodfacts-webcomponents@npm:1.12.3"
+"@openfoodfacts/openfoodfacts-webcomponents@npm:1.14.2":
+  version: 1.14.2
+  resolution: "@openfoodfacts/openfoodfacts-webcomponents@npm:1.14.2"
   dependencies:
     "@lit-labs/signals": "npm:^0.1.2"
     "@lit/localize": "npm:^0.12.2"
     "@lit/task": "npm:^1.0.2"
     cropperjs: "npm:^2.0.0"
+    dayjs: "npm:^1.11.18"
     diff: "npm:^8.0.1"
     dompurify: "npm:^3.2.6"
     lit: "npm:^3.3.0"
     lit-html: "npm:^3.3.0"
-  checksum: 10c0/3344d13eeae1b7816b99423df778b6f7bece7b65f1ba34d5d45c5eb8d410d31a7385d7febd3bbd796586d1d05549fb2d5c5f09e78ea9fef5e7bbcc6026754d72
+    marked: "npm:^16.2.1"
+  checksum: 10c0/cca2654b76d05d3c77145e3a17eb7565ba59c489d8bd019fe96e20380f853ed201ae5139083c9dc95d5dceaa2fe2cf571521674b0281386b3269e5de1fb9b777
   languageName: node
   linkType: hard
 
@@ -2468,6 +2470,13 @@ __metadata:
     es-errors: "npm:^1.3.0"
     is-data-view: "npm:^1.0.1"
   checksum: 10c0/fa7aa40078025b7810dcffc16df02c480573b7b53ef1205aa6a61533011005c1890e5ba17018c692ce7c900212b547262d33279fde801ad9843edc0863bf78c4
+  languageName: node
+  linkType: hard
+
+"dayjs@npm:^1.11.18":
+  version: 1.11.18
+  resolution: "dayjs@npm:1.11.18"
+  checksum: 10c0/83b67f5d977e2634edf4f5abdd91d9041a696943143638063016915d2cd8c7e57e0751e40379a07ebca8be7a48dd380bef8752d22a63670f2d15970e34f96d7a
   languageName: node
   linkType: hard
 
@@ -3571,7 +3580,7 @@ __metadata:
     "@mui/lab": "npm:^5.0.0-alpha.151"
     "@mui/material": "npm:^5.14.16"
     "@mui/x-data-grid": "npm:^6.18.0"
-    "@openfoodfacts/openfoodfacts-webcomponents": "npm:1.12.3"
+    "@openfoodfacts/openfoodfacts-webcomponents": "npm:1.14.2"
     "@reduxjs/toolkit": "npm:^1.9.7"
     "@types/node": "npm:^24.5.2"
     "@types/react": "npm:^19.1.13"
@@ -4230,6 +4239,15 @@ __metadata:
     promise-retry: "npm:^2.0.1"
     ssri: "npm:^12.0.0"
   checksum: 10c0/c40efb5e5296e7feb8e37155bde8eb70bc57d731b1f7d90e35a092fde403d7697c56fb49334d92d330d6f1ca29a98142036d6480a12681133a0a1453164cb2f0
+  languageName: node
+  linkType: hard
+
+"marked@npm:^16.2.1":
+  version: 16.3.0
+  resolution: "marked@npm:16.3.0"
+  bin:
+    marked: bin/marked.js
+  checksum: 10c0/5a3d7da93d7692014c8764c31dc741fa6ee16d8573788a3b28d041c440e79177c46d786ad7c1fc2b3f5e301d6db32e22da45efd4c00ddbc31caf87bd8e9a673b
   languageName: node
   linkType: hard
 
