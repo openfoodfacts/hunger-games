@@ -22,6 +22,7 @@ export const OffWebcomponentsConfiguration = () => {
       robotoff-configuration={robotoffConfiguration}
       openfoodfacts-api-url={OFF_URL}
       language-code={languageCode}
+      assets-images-path="/assets/webcomponents"
     ></off-webcomponents-configuration>
   );
 };
