@@ -9,11 +9,8 @@ export default defineConfig({
     viteStaticCopy({
       targets: [
         {
-          src: path.resolve(
-            __dirname,
-            "node_modules/@openfoodfacts/openfoodfacts-webcomponents/dist/localization/locales/*.js",
-          ),
-          dest: "assets/localization/locales",
+          src: "node_modules/@openfoodfacts/openfoodfacts-webcomponents/dist/assets/**/*",
+          dest: "assets/webcomponents",
         },
       ],
     }),
