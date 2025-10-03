@@ -3,7 +3,7 @@ import * as React from "react";
 import robotoff from "../robotoff";
 import off from "../off";
 
-const fetchData = async (insightId) => {
+const fetchData = async (insightId: string) => {
   const response = await robotoff.insightDetail(insightId);
 
   if (!response) {
