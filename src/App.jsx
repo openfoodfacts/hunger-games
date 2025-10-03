@@ -1,7 +1,7 @@
 import React from "react";
 import CssBaseline from "@mui/material/CssBaseline";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-import { Routes, Route, useLocation } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router";
 import { useMatomo } from "@jonkoops/matomo-tracker-react";
 import axios from "axios";
 
