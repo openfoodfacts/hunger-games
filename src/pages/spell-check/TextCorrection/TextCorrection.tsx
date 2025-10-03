@@ -156,8 +156,8 @@ export function TextCorrection(props: TextCorrectionProps) {
                       suggestionChoices[i] === false
                         ? "red"
                         : suggestionChoices[i] === true
-                        ? "green"
-                        : "none",
+                          ? "green"
+                          : "none",
                   }}
                 />
               ))}
