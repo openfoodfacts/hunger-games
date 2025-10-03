@@ -857,10 +857,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eslint/js@npm:^9.34.0":
-  version: 9.34.0
-  resolution: "@eslint/js@npm:9.34.0"
-  checksum: 10c0/53f1bfd2a374683d9382a6850354555f6e89a88416c34a5d34e9fbbaf717e97c2b06300e8f93e5eddba8bda8951ccab7f93a680e56ded1a3d21d526019e69bab
+"@eslint/js@npm:^9.37.0":
+  version: 9.37.0
+  resolution: "@eslint/js@npm:9.37.0"
+  checksum: 10c0/84f98a6213522fc76ea104bd910f606136200bd918544e056a7a22442d3f9d5c3c5cd7f4cdf2499d49b1fa140155b87d597a1f16d01644920f05c228e9ca0378
   languageName: node
   linkType: hard
 
@@ -3574,7 +3574,7 @@ __metadata:
     "@emotion/react": "npm:^11.10.4"
     "@emotion/styled": "npm:^11.14.1"
     "@eslint/eslintrc": "npm:^3.3.1"
-    "@eslint/js": "npm:^9.34.0"
+    "@eslint/js": "npm:^9.37.0"
     "@jonkoops/matomo-tracker-react": "npm:^0.7.0"
     "@mui/icons-material": "npm:^5.14.16"
     "@mui/lab": "npm:^5.0.0-alpha.151"
