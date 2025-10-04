@@ -15,26 +15,37 @@ const imagesToRead = [
   },
 ];
 
-const getImageUrl = (base, id, resolution: "100" | "400" | "full") => {
+const getImageUrl = (
+  base: string,
+  id: string,
+  resolution: "100" | "400" | "full",
+) => {
   return `${base}${id}${resolution === "full" ? "" : `.${resolution}`}.jpg`;
 };
 
-const getIngredientExtractionUrl = (base, id) => {
+const getIngredientExtractionUrl = (base: string, id: string) => {
   return `${ROBOTOFF_API_URL}/predict/ingredient_list?ocr_url=${base}${id}.json`;
 };
 
-const formatData = (product) => {
-  const {
-    code,
-    lang,
-    image_ingredients_url,
-    product_name,
-    ingredient,
-    images,
-    scans_n,
-    ...other
-  } = product;
-
+const formatData = ({
+  code,
+  lang,
+  image_ingredients_url,
+  product_name,
+  ingredient,
+  images,
+  scans_n,
+  ...other
+}: {
+  code: string;
+  lang: string;
+  image_ingredients_url: string;
+  product_name: string;
+  ingredient: any;
+  images: any;
+  scans_n: any;
+  [x: string]: unknown;
+}) => {
   const baseImageUrl = image_ingredients_url.replace(/ingredients.*/, "");
 
   const selectedImages = Object.keys(images)

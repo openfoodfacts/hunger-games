@@ -12,8 +12,10 @@ import axios from "axios";
 
 const BARCODE_REGEX = /(...)(...)(...)(.*)$/;
 
-const offService = {
-  getCookie(name) {
+class OffService {
+  private readonly axios: typeof axios = axios;
+
+  getCookie(name: string) {
     const cookies = document.cookie
       .split(";")
       .filter((item) => item.trim().startsWith(`${name}=`));
@@ -22,7 +24,7 @@ const offService = {
       return cookie.split("=", 2)[1];
     }
     return "";
-  },
+  }
 
   getUsername() {
     const sessionCookie = this.getCookie("session");
@@ -42,9 +44,9 @@ const offService = {
       }
     });
     return username;
-  },
+  }
 
-  getFormatedBarcode: (barcode) => {
+  getFormatedBarcode(barcode: string) {
     const match = BARCODE_REGEX.exec(barcode);
 
     if (match !== null) {
@@ -53,18 +55,18 @@ const offService = {
     }
 
     return barcode;
-  },
+  }
 
-  getCategoriesTranslations({ categories }) {
+  getCategoriesTranslations({ categories }: { categories: string[] }) {
     const lang = getLang();
     return axios.get(
       `${OFF_API_URL_V2}/taxonomy?tagtype=categories&lc=en%2C${lang}&cc=fr&fields=name,wikidata&tags=${categories.join(
         ",",
       )}`,
     );
-  },
+  }
 
-  getProduct(barcode) {
+  getProduct(barcode: string) {
     const lang = getLang();
 
     return axios.get(
@@ -83,35 +85,60 @@ const offService = {
         "quantity",
       ].join(",")}`,
     );
-  },
+  }
 
-  getProductUrl(barcode) {
+  getProductUrl(barcode: string) {
     const lang = getLang();
     return `https://world${
       lang === "en" ? "" : "-" + lang
     }.${OFF_DOMAIN}/product/${barcode}`;
-  },
+  }
 
-  getProductEditUrl(barcode) {
+  getProductEditUrl(barcode: string) {
     const lang = getLang();
     return `https://world${
       lang === "en" ? "" : "-" + lang
     }.${OFF_DOMAIN}/cgi/product.pl?type=edit&code=${barcode}`;
-  },
-  getLogoCropsByBarcodeUrl(barcode) {
-    return `${URL_ORIGINE}/logos/search?barcode=${barcode}`;
-  },
+  }
 
-  getImageUrl(imagePath) {
+  getLogoCropsByBarcodeUrl(barcode: string) {
+    return `${URL_ORIGINE}/logos/search?barcode=${barcode}`;
+  }
+
+  getImageUrl(imagePath: string) {
     // Replace leading slash if present to avoid double slashes in the URL
     return `${OFF_IMAGE_URL}/${imagePath.replace(/^\//, "")}`;
-  },
+  }
 
-  getTableExtractionAI({ img, x0, y0, x1, y1 }) {
+  getTableExtractionAI({
+    img,
+    x0,
+    y0,
+    x1,
+    y1,
+  }: {
+    img: string;
+    x0: number;
+    y0: number;
+    x1: number;
+    y1: number;
+  }) {
     return `https://off-nutri-test.azurewebsites.net/api/get-nutri-table?name=${img}%7C(${x0},${y0},${x1},${y1})`;
-  },
+  }
 
-  getNutritionToFillUrl({ page, country, creator, category, code = false }) {
+  getNutritionToFillUrl({
+    page,
+    country,
+    creator,
+    category,
+    code = false,
+  }: {
+    page?: number;
+    country?: string;
+    creator?: string;
+    category?: string;
+    code?: string | boolean;
+  }) {
     if (code) {
       return `${OFF_API_URL}/product/${code}.json?fields=code,states,lang,image_nutrition_url,product_name,nutriments,images,creator,countries`;
     }
@@ -141,7 +168,7 @@ const offService = {
           ? `&tagtype_${categoryTagNumber}=categories&tag_contains_${categoryTagNumber}=contains&tag_${categoryTagNumber}=${category}`
           : ""
       }`;
-  },
+  }
 
   searchProducts({
     page = 1,
@@ -149,6 +176,12 @@ const offService = {
     filters = [],
     countryCode = "world",
     fields = "code",
+  }: {
+    page?: number;
+    pageSize?: number;
+    filters?: { [key: string]: string }[];
+    countryCode?: string;
+    fields?: string;
   }) {
     const searchParams = {
       page: page.toString(),
@@ -170,7 +203,7 @@ const offService = {
     return axios.get(
       `${OFF_SEARCH.replace("world", countryCode)}?${urlParams.toString()}`,
     );
-  },
+  }
 
   setIngedrient(editionParams: { code: string; text: string; lang?: string }) {
     const { code, lang, text } = editionParams;
@@ -184,7 +217,7 @@ const offService = {
     return axios.patch(`${OFF_API_URL_V3}/product/${code}`, {
       product: { [`ingredients_text${lang ? `_${lang}` : ""}`]: text },
     });
-  },
+  }
 
   async getIngedrientParsing(editionParams: { text: string; lang: string }) {
     const { lang, text } = editionParams;
@@ -198,7 +231,9 @@ const offService = {
         [`ingredients_text_${lang}`]: text,
       },
     });
-  },
-};
+  }
+}
+
+const offService = new OffService();
 
 export default offService;
