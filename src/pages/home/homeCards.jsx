@@ -21,7 +21,7 @@ const cards = [
   {
     title: "home.game_selector.cards.logos.title",
     desc: "home.game_selector.cards.logos.description",
-    link: "/logos",
+    link: "/logos/deep-search",
     image: home_logos,
   },
   {
