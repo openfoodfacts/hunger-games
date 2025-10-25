@@ -43,6 +43,8 @@ import {
   useOtherQuestions,
   useFlagImage,
 } from "./utils";
+import { useTheme } from "@mui/material/styles";
+
 
 const ProductInformation = (props) => {
   const { question, productData } = props;
@@ -54,6 +56,7 @@ const ProductInformation = (props) => {
     () => getPageCustomization().questionPage,
   );
   const [flagged, flagImage, deleteFlagImage] = useFlagImage(question?.barcode);
+  const theme = useTheme();
 
   const [
     otherQuestionsState,
@@ -282,7 +285,16 @@ const ProductInformation = (props) => {
                   {t(`questions.${i18nKey}`)}
                 </TableCell>
                 {Array.isArray(value) ? (
-                  <TableCell>
+                  <TableCell
+                    sx={{
+                      "& a": {
+                        color: theme.palette.mode === "dark" ? "white" : "black",
+                        textDecoration: "none",
+                        fontWeight: 500,
+                        "&:hover": { textDecoration: "underline" },
+                      },
+                    }}
+                  >
                     {getLink
                       ? value.map((name, index) => (
                           <React.Fragment key={name}>
