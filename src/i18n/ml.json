@@ -1,33 +1,33 @@
 {
   "home": {
     "game_selector": {
-      "title": "What game would you like to play?",
+      "title": "നിങ്ങൾ ഏത് ഗെയിം കളിക്കാൻ താല്പര്യപ്പെടുന്നു?",
       "cards": {
         "questions": {
-          "title": "Questions",
-          "description": "Tell us if the given image answers the questions"
+          "title": "ചോദ്യങ്ങൾ",
+          "description": "ഞങ്ങളോട് പറയു ഈ തന്നിരിക്കുന്ന ചിത്രം ചോദ്യങ്ങൾക്ക് ഉത്തരം നൽകുന്നുണ്ടോ"
         },
         "logos": {
-          "title": "Logos",
-          "description": "Find all the logos matching the given logo"
+          "title": "ലോഗോകൾ",
+          "description": "തന്നിരിക്കുന്ന ലോഗോക്ക് ചേരുന്ന എല്ലാ ലോഗോക്കളും കണ്ടെത്തുക"
         },
-        "eco_score": {
-          "title": "Eco-score",
-          "description": "Annotate the questions with the highest value"
+        "green_score": {
+          "title": "എക്കോ - സ്കോർ",
+          "description": "ചോദ്യങ്ങൾക്ക് ഉയർന്ന മൂല്യം അടയാള പെടുത്തുക"
         }
       }
     },
     "account_band": {
-      "title": "Want to make your contribution count? Create an account or sign in on Open Food Facts!",
+      "title": "നിങ്ങളുടെ സംഭാവനകൾ പരിഗണിക്കപ്പെടണമോ? ഓപ്പൺ ഫുഡ് ഫാക്റ്റ്‌സിൽ അക്കൗണ്ട് സൃഷ്ടിക്കൂ അലെങ്കിൽ സൈൻ ഇൻ ചെയ്യു!",
       "log_in": "Username",
-      "sign_up": "Sign up",
-      "contribution_details": "Learn why your contribution matters"
+      "sign_up": "സൈൻ അപ്പ്",
+      "contribution_details": "പടിക്കു എന്തുകൊണ്ട് നിങ്ങളുടെ സംഭാവനകൾ പ്രധാനമാണ്"
     },
-    "saved_filters": "Saved Filters",
+    "saved_filters": "സേവ് ചെയ്യപ്പെട്ട ഫിൽട്ടറുകൾ",
     "contribution_modal": {
-      "title": "Your contribution matters",
-      "information": "Hunger Games is an effort to leverage the results of our OCR and artificial intelligence. When you use Hunger Games by Open Food Facts, you improve our entire database which helps the community make better food choices. We gather your annotations and use them to make Open Food Facts more accurate and efficient.",
-      "thank_you": "Thank you for helping us improve Open Food Facts so that more people can use it easily."
+      "title": "നിങ്ങളുടെ സംഭാവനകൾ പ്രധാനമാണ്",
+      "information": "ഹംഗർ ഗെയിംസ് എന്നത് OCR- ൻ്റെയും കൃത്രിമബുദ്ധിയുടെയും ഫലത്തെ പൂർണമായി ഉപയോഗപ്പെടുത്താനുള്ള ശ്രമമാണ്. ഓപ്പൺ ഫുഡ് ഫാക്റ്റ്സിൻ്റെ ഹങ്കർ ഗെയിംസ് താങ്കൾ ഉപയോഗിക്കുമ്പോൾ, താങ്കൾ ഞങ്ങളുടെ മുഴവൻ ഡാറ്റാബേസും മെച്ചപ്പെടുത്തുന്നു അതുവഴി സമുദായത്തെ മെച്ചപ്പെട്ട ആഹാര തീരുമാനങ്ങൾ എടുക്കാൻ സഹായിക്കുന്നു. ഞങ്ങൾ നിങ്ങളുടെ Annotations ശേഖരിച്ച് ഓപൺ ഫുഡ് ഫാക്റ്റ്സിനെ കൂടുതൽ കൃത്യവും കാര്യക്ഷമവും ആകാൻ ഉപയോഗിക്കും.",
+      "thank_you": "കൂടുതൽ ആളുകൾക്ക് എളുപ്പത്തിൽ ഉപയോഗിക്കാൻ ഓപൺ ഫുഡ് ഫാക്റ്റ്സിനെ മെച്ചപ്പെടുത്താൻ സഹായിച്ചതിന് നന്ദി."
     },
     "statistics": {
       "title": "{{userName}} statistics:",
@@ -36,26 +36,26 @@
         "description": "Number of editions done"
       },
       "contributorCount": {
-        "title": "Contributor",
-        "description": "Adding a new product"
+        "title": "സംഘാടകർ",
+        "description": "പുതിയ ഉത്പാദനം കൂട്ടി ചേർക്കുന്നു"
       },
       "photographerCount": {
-        "title": "Photographer",
-        "description": "Taking photos for a product"
+        "title": "ഫോട്ടോഗ്രാഫർ",
+        "description": "ഉത്പാദനത്തിന് വേണ്ടി ചിത്രങ്ങൾ പകർത്തുന്നു"
       }
     }
   },
   "flagged_images": {
-    "title": "Images flagged by users",
-    "loading": "Loading"
+    "title": "യൂസേഴ്സ് ഫ്ലാഗ് ചെയ്ത ചിത്രങ്ങൾ",
+    "loading": "ലോഡ് ചെയ്യുന്നു"
   },
   "questions": {
-    "category": "category",
+    "category": "വിഭാഗം",
     "categories": "വിഭാഗങ്ങൾ",
-    "label": "label",
+    "label": "ലേബൽ",
     "labels": "Labels",
-    "brand": "brand",
-    "brands": "Brands",
+    "brand": "ബ്രാൻഡ്",
+    "brands": "ബ്രാൻഡുകൾ",
     "packaging": "packaging",
     "quantity": "Quantity",
     "insightTypeLabel": "Only shows",
@@ -70,6 +70,8 @@
     "countries": "Countries",
     "view": "View",
     "edit": "Edit",
+    "remaining": "Remaining: {{count}}",
+    "remaining_other": "Remaining: >100",
     "hide_images": "Hide images (faster loading)",
     "display_images": "Display images",
     "annotations": "Annotations",
@@ -83,7 +85,7 @@
       "short_label": {
         "value": "value",
         "country": "country",
-        "brand": "brand",
+        "brand": "ബ്രാൻഡ്",
         "popularity": "popularity",
         "campaign": "camp"
       },
@@ -113,7 +115,7 @@
     "unflag": "Unflag the image",
     "reset_filters": "Reset filters",
     "log_in": "Username",
-    "sign_up": "Sign up",
+    "sign_up": "സൈൻ അപ്പ്",
     "login_title": "Make your annotation count",
     "login_description": "You are not currently logged into Open Food Facts. To get your answers directly applied to products, and associated to your account, consider logging in to your Open Food Facts account, or creating one",
     "please_wait_while_we_fetch_the_question": "Please wait while we fetch the question!"
@@ -121,17 +123,19 @@
   "menu": {
     "title": "Hunger Games",
     "games": "Games",
-    "questions": "Questions",
-    "logos": "Logos",
+    "questions": "ചോദ്യങ്ങൾ",
+    "logos": "ലോഗോകൾ",
     "logos-annotation": "Logos annotation",
     "logos-search": "Logos search",
     "logos-product-search": "Annotation per products",
     "logos-deep-search": "Infinite annotation",
     "manage": "Manage",
     "insights": "Insights",
-    "nutritions": "Nutrition facts",
+    "nutritions": "Nutrition",
+    "ingredient-spellcheck": "ചേരുവകളുടെ അക്ഷരത്തെറ്റ് പരിശോധന",
+    "ingredient-detection": "ചേരുവ കണ്ടെത്തൽ",
     "settings": "Settings",
-    "eco-score": "Eco-score",
+    "green-score": "Green-Score",
     "dashboard": "Logos dashboard",
     "tour": "Show tour",
     "logged_in_user": "Logged as {{userName}}",
@@ -247,7 +251,7 @@
     "Open_Food_Facts_wiki": "Open Food Facts wiki (en)",
     "Translators": "Translators",
     "Partners": "Partners",
-    "Open_Beauty_Facts": "Open Beauty Facts - Cosmetics",
+    "Open_Beauty_Facts": "Open Beauty Facts - cosmetics",
     "text2": "A collaborative, free and open database of food products from around the world."
   },
   "helper": {
@@ -313,53 +317,30 @@
     "close": "Close"
   },
   "nutrition": {
+    "table_partialy_filled": "Table with already some data",
+    "display_off_values": "Display values from OpenFoodFacts",
+    "nutrients": "Nutrients",
+    "serving_size": "Serving size",
+    "add_nutrient": "-- add nutrient --",
+    "validate_100g": "Validate (100g)",
+    "validate_serving": "Validate (serving)",
+    "skip": "Skip",
+    "invalid_image": "Invalid image",
+    "pictures": {
+      "picture_date": "Photo uploaded",
+      "selected_as_nutrients": "Selected as nutriment image ✅",
+      "not_selected_as_nutrients": "Not selected as nutriment ❌"
+    },
     "instructions": {
-      "cropTheTable": "Crop the image to simplify your annotation",
-      "verifyNutrimentDetected": "Indicate if the nutriment detected is correct",
-      "selectMissingNutriments": "Add missing nutriments (you can click even if the word has no box)",
-      "selectValue": "Select the nutritional value of: "
-    },
-    "steps": {
-      "1": "Crop",
-      "2": "Special values",
-      "3": "Nutriments Selection",
-      "4": "Values Selection"
-    },
-    "loading": "Loading...",
-    "unknown_brand": "Brand Unknown",
-    "value_missing": "You forgot to input a value.",
-    "next": "Next step",
-    "prev": "Prev step",
-    "skip": "Skip this product",
-    "validate": "Validate Table",
-    "unselect_picture": "No nutrition info",
-    "basis": "data for: ",
-    "servingSize": "serving size",
-    "value": "Value",
-    "unit": "Unit",
-    "nutriments": {
-      "nutriment_energy-kj": "Energy (kJ)",
-      "nutriment_energy-kcal": "Energy (kCal)",
-      "nutriment_fat": "Fat",
-      "nutriment_saturated-fat": "Saturated fat",
-      "nutriment_carbohydrates": "Carbohydrate",
-      "nutriment_sugars": "Sugar",
-      "nutriment_proteins": "Protein content",
-      "nutriment_fiber": "Fibres",
-      "nutriment_salt": "Salt",
-      "nutriment_sodium": "Sodium"
-    },
-    "history": {
-      "title": "Session History",
-      "status": "status",
-      "product name": "product name",
-      "view": "view page",
-      "edit": "edit page",
-      "SKIP": "ignored",
-      "VALIDATED": "edited",
-      "WRONG_IMAGE": "unselected picture",
-      "close": "close",
-      "open": "open history"
+      "open_button": "Open instructions",
+      "title": "How to use the interface",
+      "chose_between_empty_and_partially_filled": "You can chose between products for which OpenFoodFacts (OFF) has no data about the nutrients. Or product with partially filled nutrient table.",
+      "picture_date_is_display": "The date of the picture is displayed on top of it. Allowing you to check if it's a recent one.",
+      "indicate_not_provided_value": "Empty inputs are ignored. If fibers are not present in the table, you can put \"-\" to specify the value is not available.",
+      "validate_one_column": "ചിത്രത്തിൽ കാണിച്ചിരിക്കുന്ന വലുപ്പം തിരഞ്ഞെടുക്കുക. നിങ്ങൾക്ക് 100 ഗ്രാം, സെർവിംഗ് വലുപ്പം എന്നിവ ഉണ്ടെങ്കിൽ, ദയവായി 100 ഗ്രാം തിരഞ്ഞെടുക്കുക, കാരണം ഇത് ഒരു നോർമലൈസ്ഡ് ഫോർമാറ്റാണ്.",
+      "skip_button": "If you don't know how to deal with an image, or you just don't want to do it, press \"skip\". Other user will be able to handle it.",
+      "invalid_image_button": "If the pictures is not a nutritional table, press \"Invalid image\" to remove it from the list of the images to verify",
+      "close": "Close"
     }
   },
   "notfound": {
@@ -380,7 +361,7 @@
     "incorrect": "Wrong",
     "correct": "Correct ({{label}})"
   },
-  "eco-score": {
+  "green-score": {
     "description": "Here is a summary of questions that could improve Eco-Score computation",
     "countryLabel": "Country"
   },

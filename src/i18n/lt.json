@@ -11,7 +11,7 @@
           "title": "Logotipai",
           "description": "Raskite visus logotipus, atitinkančius pateiktą logotipą"
         },
-        "eco_score": {
+        "green_score": {
           "title": "Ekologinis balas",
           "description": "Anotuoti klausimus, kurių vertė yra didžiausia"
         }
@@ -70,6 +70,8 @@
     "countries": "Šalys",
     "view": "Žiūrėti",
     "edit": "Redaguoti",
+    "remaining": "Liko: {{count}}",
+    "remaining_other": "Likusieji: >100",
     "hide_images": "Paslėpti nuotraukas (greitesnis užkrovimas)",
     "display_images": "Rodyti nuotraukas",
     "annotations": "Anotacijos",
@@ -130,8 +132,10 @@
     "manage": "Tvarkyti",
     "insights": "Įžvalgos",
     "nutritions": "Maistingumas",
+    "ingredient-spellcheck": "Sudedamosios dalies rašybos patikra",
+    "ingredient-detection": "Sudedamosios dalies aptikimas",
     "settings": "Nustatymai",
-    "eco-score": "Ekologinis balas",
+    "green-score": "Green-Score",
     "dashboard": "Logotipų įrankų skydelis",
     "tour": "Rodyti gidą",
     "logged_in_user": "Prisijungęs kaip {{userName}}",
@@ -247,7 +251,7 @@
     "Open_Food_Facts_wiki": "Open Food Facts wiki (en)",
     "Translators": "Vertėjai",
     "Partners": "Partneriai",
-    "Open_Beauty_Facts": "Open Beauty Facts - Kosmetika",
+    "Open_Beauty_Facts": "„Open Beauty Facts“. Kosmetika",
     "text2": "Bendradarbiaujanti, nemokama ir atvira maisto produktų iš viso pasaulio duomenų bazė."
   },
   "helper": {
@@ -313,53 +317,30 @@
     "close": "Uždaryti"
   },
   "nutrition": {
+    "table_partialy_filled": "Lentelė su jau esamais kai kuriais duomenimis",
+    "display_off_values": "Rodyti vertes iš „OpenFoodFacts“",
+    "nutrients": "Maistinės medžiagos",
+    "serving_size": "Porcijos dydis",
+    "add_nutrient": "-- pridėti maistinę medžiagą --",
+    "validate_100g": "Patvirtinti (100 g)",
+    "validate_serving": "Patvirtinti (porcija)",
+    "skip": "Praleisti",
+    "invalid_image": "Neleistinas vaizdas",
+    "pictures": {
+      "picture_date": "Nuotrauka įkelta",
+      "selected_as_nutrients": "Pasirinktas kaip maisto medžiagos vaizdas ✅",
+      "not_selected_as_nutrients": "Nepasirinktas kaip maisto medžiaga ❌"
+    },
     "instructions": {
-      "cropTheTable": "Apkirpkite vaizdą, kad supaprastintumėte komentarą",
-      "verifyNutrimentDetected": "Nurodykite, ar aptikta maistinė medžiaga yra teisinga",
-      "selectMissingNutriments": "Pridėkite trūkstamas maistines medžiagas (galite spustelėti, net jei žodyje nėra langelio)",
-      "selectValue": "Pasirinkite maistinę vertę: "
-    },
-    "steps": {
-      "1": "Apkarpyti",
-      "2": "Ypatingos vertybės",
-      "3": "Maistinių medžiagų pasirinkimas",
-      "4": "Vertybių pasirinkimas"
-    },
-    "loading": "Įkeliama...",
-    "unknown_brand": "Prekinis ženklas nežinomas",
-    "value_missing": "Pamiršai įvesti vertę.",
-    "next": "Kitas žingsnis",
-    "prev": "Ankstesnis žingsnis",
-    "skip": "Praleisti šį produktą",
-    "validate": "Patvirtinkite lentelę",
-    "unselect_picture": "Nėra informacijos apie maistingumą",
-    "basis": "duomenys, skirti: ",
-    "servingSize": "porcijos dydis",
-    "value": "Vertė",
-    "unit": "Vienetas",
-    "nutriments": {
-      "nutriment_energy-kj": "Energija (kJ)",
-      "nutriment_energy-kcal": "Energija (kCal)",
-      "nutriment_fat": "Riebalai",
-      "nutriment_saturated-fat": "Sotieji riebalai",
-      "nutriment_carbohydrates": "Carbohydrate",
-      "nutriment_sugars": "Cukrus",
-      "nutriment_proteins": "Baltymų kiekis",
-      "nutriment_fiber": "Skaidulos",
-      "nutriment_salt": "Druska",
-      "nutriment_sodium": "Natris"
-    },
-    "history": {
-      "title": "Sesijos istorija",
-      "status": "būsena",
-      "product name": "produkto pavadinimas",
-      "view": "peržiūrėti puslapį",
-      "edit": "redaguoti puslapį",
-      "SKIP": "ignoruojamas",
-      "VALIDATED": "redagavo",
-      "WRONG_IMAGE": "nepasirinkta nuotrauka",
-      "close": "uždaryti",
-      "open": "atidaryti istoriją"
+      "open_button": "Atverti instrukciją",
+      "title": "Kaip naudotis sąsaja",
+      "chose_between_empty_and_partially_filled": "Galite rinktis iš produktų, apie kurių maistines medžiagas „OpenFoodFacts“ (OFF) neturi duomenų. Arba produktą su iš dalies užpildyta maistinių medžiagų lentele.",
+      "picture_date_is_display": "Viršuje rodoma nuotraukos data. Leidžia jums patikrinti, ar ji yra nauja.",
+      "indicate_not_provided_value": "Tuščios įvestys nepaisomos. Jei lentelėje nėra skaidulų, galite įrašyti „-“, norėdami nurodyti, kad reikšmės nėra.",
+      "validate_one_column": "Pasirinkite paveikslėlyje nurodytą dydį. Jei turite 100 g ir porcijos dydį, rinkitės 100 g, nes tai normalizuotas formatas.",
+      "skip_button": "If you don't know how to deal with an image, or you just don't want to do it, press \"skip\". Other user will be able to handle it.",
+      "invalid_image_button": "If the pictures is not a nutritional table, press \"Invalid image\" to remove it from the list of the images to verify",
+      "close": "Uždaryti"
     }
   },
   "notfound": {
@@ -380,7 +361,7 @@
     "incorrect": "Neteisingai",
     "correct": "Teisingai ({{label}})"
   },
-  "eco-score": {
+  "green-score": {
     "description": "Čia pateikiama klausimų, kurie galėtų pagerinti Eco-Score skaičiavimą, suvestinė",
     "countryLabel": "Šalis"
   },

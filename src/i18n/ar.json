@@ -11,7 +11,7 @@
           "title": "شعارات",
           "description": "أوجد جميع الشعارات التي تطابق الشعار المعطى"
         },
-        "eco_score": {
+        "green_score": {
           "title": "العلامة البيئية Eco-score",
           "description": "علق على الأسئلة بجودة أعلى"
         }
@@ -26,7 +26,7 @@
     "saved_filters": "فرز محفوظ",
     "contribution_modal": {
       "title": "مساهمتك مهمة",
-      "information": "ألعاب الجوع هي محاولة للاستفادة من نتائج التعرف الضوئي على الحروف والذكاء الاصطناعي.  عند استخدام Hunger Games بواسطة Open Food Facts، فإنك تقوم بتحسين قاعدة البيانات بأكملها مما يساعد المجتمع على اتخاذ خيارات غذائية أفضل.  نحن نجمع تعليقاتك التوضيحية ونستخدمها لجعل Open Food Facts أكثر دقة وكفاءة",
+      "information": "ألعاب الجوع هي محاولة للاستفادة من نتائج التعرف الضوئي على الحروف والذكاء الاصطناعي. عندما تستخدم ألعاب الجوع بواسطة Open Food Facts، فإنك تحسن قاعدة بياناتنا بأكملها مما يساعد المجتمع على اتخاذ خيارات غذائية أفضل. نجمع شروحك ونستخدمها لجعل حقائق الطعام المفتوحة أكثر دقه وكفاءة\n",
       "thank_you": "نشكرك على مساعدتنا في تحسين Open Food Facts حتى يتمكن عدد أكبر من الأشخاص من استخدامها بسهولة"
     },
     "statistics": {
@@ -70,6 +70,8 @@
     "countries": "بلدان",
     "view": "مشاهدة",
     "edit": "تحرير",
+    "remaining": "المتبقي: {{count}}",
+    "remaining_other": "المتبقي: >100",
     "hide_images": "إخفاء الصور (تحميل أسرع)",
     "display_images": "عرض الصور",
     "annotations": "الشروح",
@@ -129,10 +131,11 @@
     "logos-deep-search": "تعليق توضيحي لا نهائي",
     "manage": "يدير",
     "insights": "تاريخ انتهاء صلاحية",
-    "nutritions": "حقائق غذائية",
+    "nutritions": "التغذية",
+    "ingredient-spellcheck": "التدقيق الإملائي للمكونات",
+    "ingredient-detection": "كشف المكونات",
     "settings": "الإعدادات",
-    "eco-score": "العلامة البيئية Eco-score",
-    "ingredient-spellcheck": "تدقيق إملائي للمكونات",
+    "green-score": "النتيجة البيئية",
     "dashboard": "لوحة معلومات الشعارات",
     "tour": "اعرض الجوله",
     "logged_in_user": "مُسجّل بأسم {{userName}}",
@@ -314,53 +317,30 @@
     "close": "إغلق"
   },
   "nutrition": {
+    "table_partialy_filled": "جدول مع بيانات فعلًا",
+    "display_off_values": "أُظهِر قيم من OpenFoodFacts",
+    "nutrients": "مواد غذائية",
+    "serving_size": "حجم الحصة",
+    "add_nutrient": "-- ضف مادة غذائية --",
+    "validate_100g": "تحقق (100 جرام)",
+    "validate_serving": "تحقق (حصة)",
+    "skip": "تخطي",
+    "invalid_image": "صورة باطلة",
+    "pictures": {
+      "picture_date": "تم رفع الصورة",
+      "selected_as_nutrients": "تم التحديد كصورة غذائية ✅",
+      "not_selected_as_nutrients": "ليس محدد كغذاء ❌"
+    },
     "instructions": {
-      "cropTheTable": "قم بتحديد الصورة لتبسيط التعليق التوضيحي الخاص بك",
-      "verifyNutrimentDetected": "وضّح ما إذا كانت المغذيات المكتشفة صحيحة",
-      "selectMissingNutriments": "أضف العناصر الغذائية المفقودة (يمكنك النقر حتى إذا لم يكن للكلمة مربع)",
-      "selectValue": "اختر القيمة الغذائية لـ: "
-    },
-    "steps": {
-      "1": "قص (تحديد)",
-      "2": "قيم خاصة",
-      "3": "اختيار العناصر الغذائية",
-      "4": "اختيار القيم"
-    },
-    "loading": "تحميل...",
-    "unknown_brand": "العلامة التجارية غير معروفة",
-    "value_missing": "نسيت إدخال قيمة.",
-    "next": "الخطوة التالية",
-    "prev": "لم",
-    "skip": "تخطي هذا المنتج",
-    "validate": "تحقق من صحة الجدول",
-    "unselect_picture": "لا توجد معلومات غذائية",
-    "basis": "بيانات عن: ",
-    "servingSize": "حجم الحصة",
-    "value": "القيمة",
-    "unit": "وحدة",
-    "nutriments": {
-      "nutriment_energy-kj": "(kJ) الطاقة",
-      "nutriment_energy-kcal": "الطاقة (كيلو كالوري)",
-      "nutriment_fat": "الدهون",
-      "nutriment_saturated-fat": "الدهون المشبعة",
-      "nutriment_carbohydrates": "كربوهيدرات",
-      "nutriment_sugars": "السكر",
-      "nutriment_proteins": "محتوى البروتين",
-      "nutriment_fiber": "ألياف",
-      "nutriment_salt": "ملح",
-      "nutriment_sodium": "صوديوم"
-    },
-    "history": {
-      "title": "سجل الجلسة",
-      "status": "الحالة",
-      "product name": "اسم المنتج",
-      "view": "عرض الصفحة",
-      "edit": "تعديل الصفحة",
-      "SKIP": "تم تجاهله",
-      "VALIDATED": "تم التعديل",
-      "WRONG_IMAGE": "صورة غير محددة",
-      "close": "إغلاق",
-      "open": "فتح السجل"
+      "open_button": "فتح التعليمات",
+      "title": "كيفية استخدام الواجهة",
+      "chose_between_empty_and_partially_filled": "يمكنك الاختيار بين المنتجات التي لا تتوفر لها بيانات عن العناصر الغذائية في OpenFoodFacts (OFF). أو المنتج الذي يحتوي على جدول مغذيات مملوء جزئيًا.",
+      "picture_date_is_display": "تاريخ الصورة معرضة فوقها. مما يسمح لك بالتحقق مما إذا كانت جديدة.",
+      "indicate_not_provided_value": "يتم تجاهل المدخلات الفارغة. إذا لم تكن الألياف موجودة في الجدول، يمكنك وضع \"-\" لتحديد أن القيمة غير متوفرة.",
+      "validate_one_column": "اختر الحجم الموضح في الصورة. إذا كان لديك ١٠٠ غرام وحجم الحصة، يُرجى اختيار ١٠٠ غرام لأنه حجم عادي.",
+      "skip_button": "إذا كنت لا تعرف كيفية التعامل مع صورة، أو لا تريد القيام بذلك، فانقر فوق \"تخطي\". سيتمكن مستخدم آخر من التعامل مع الأمر.",
+      "invalid_image_button": "إذا لم تكن الصور جدولًا غذائيًا، اضغط على \"صورة غير صالحة\" لإزالتها من قائمة الصور للتحقق",
+      "close": "إغلق"
     }
   },
   "notfound": {
@@ -381,7 +361,7 @@
     "incorrect": "خاطئ",
     "correct": "صحيح ({{label}})"
   },
-  "eco-score": {
+  "green-score": {
     "description": "إليك ملخص للأسئلة التي قد تحسن حساب درجة البيئة",
     "countryLabel": "البلد"
   },

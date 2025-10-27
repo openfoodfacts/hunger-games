@@ -9,9 +9,9 @@
         },
         "logos": {
           "title": "Loga",
-          "description": "Znajdź wszystkie inne logo pasujące do danego logo"
+          "description": "Znajdź wszystkie loga pasujące do danego logo"
         },
-        "eco_score": {
+        "green_score": {
           "title": "Eco-Score",
           "description": "Oznacz pytania o najwyższej wartości"
         }
@@ -26,7 +26,7 @@
     "saved_filters": "Zapisane filtry",
     "contribution_modal": {
       "title": "Twój wkład ma znaczenie",
-      "information": "Igrzyska Śmierci to inicjatywa, w której wykorzystujemy nasze OCR i sztuczną inteligencję. Kiedy używasz Igrzysk Śmierci od Open Food Facts, polepszasz całą naszą bazę danych, co pomaga społeczności podejmować lepsze wybory żywieniowe. Zbieramy twoje adnotacje i używamy ich, by Open Food Facts było bardziej dokładne i wydajne.",
+      "information": "Igrzyska Śmierci to inicjatywa, w której wykorzystujemy nasze OCR i sztuczną inteligencję. Kiedy używasz Igrzysk Śmierci od Open Food Facts, ulepszasz całą naszą bazę danych, co pomaga społeczności podejmować lepsze wybory żywieniowe. Zbieramy twoje adnotacje i używamy ich, by Open Food Facts było bardziej dokładne i wydajne.",
       "thank_you": "Dziękujemy za pomoc w ulepszaniu Open Food Facts, aby więcej osób mogło z niego łatwo korzystać."
     },
     "statistics": {
@@ -62,7 +62,7 @@
     "ingredients": "Składniki",
     "product_weight": "waga produktu",
     "popularity_sort": "Sortuj według popularności",
-    "see_examples": "Zobacz przykłady",
+    "see_examples": "Zobacz przykłady ",
     "no": "Nie",
     "skip": "Pomiń",
     "yes": "Tak",
@@ -70,6 +70,8 @@
     "countries": "Kraje",
     "view": "Zobacz",
     "edit": "Edytuj",
+    "remaining": "Pozostało: {{count}}",
+    "remaining_other": "Pozostało: >100",
     "hide_images": "Ukryj obrazy (szybsze ładowanie)",
     "display_images": "Wyświetlaj obrazki",
     "annotations": "Dodatkowe informacje",
@@ -129,9 +131,11 @@
     "logos-deep-search": "Nieskończona adnotacja",
     "manage": "Zarządzaj",
     "insights": "Spostrzeżenia",
-    "nutritions": "Wartości odżywcze",
+    "nutritions": "Odżywianie",
+    "ingredient-spellcheck": "Sprawdzanie pisowni składników",
+    "ingredient-detection": "Wykrywanie składników",
     "settings": "Ustawienia",
-    "eco-score": "Eco-Score",
+    "green-score": "Green-Score",
     "dashboard": "Pulpit logowania",
     "tour": "Pokaż przewodnik",
     "logged_in_user": "Zalogowano jako {{userName}}",
@@ -247,14 +251,14 @@
     "Open_Food_Facts_wiki": "Open Food Facts wiki (en)",
     "Translators": "Tłumacze",
     "Partners": "Partnerzy",
-    "Open_Beauty_Facts": "Open Beauty Facts - Kosmetyki",
+    "Open_Beauty_Facts": "Open Beauty Facts - kosmetyki",
     "text2": "Wspólna, wolna i otwarta baza produktów spożywczych z całego świata."
   },
   "helper": {
     "welcome": {
       "page1": {
         "title": "Witamy na Igrzyskach Śmierci",
-        "text1": "Hunger Games is a collection of mini-games that help contribute to Open Food Facts in many ways. You can play our really exciting games from anywhere. Here is a guided tour of the entire website which will get you started.",
+        "text1": "Hunger Games to zbiór mini-gier, które pomagają wspierać Open Food Facts na różne sposoby. Możesz grać w nasze naprawdę ekscytujące gry gdziekolwiek. Oto przewodnik po całej stronie, który pomoże ci zacząć.",
         "text2": "Pamiętaj, aby zalogować się na stronie Open Food Facts, aby otrzymać kredyt za swój wkład. Jeśli popełnisz błąd, poświęć trochę czasu, aby go poprawić, przechodząc na stronę internetową.",
         "text3": "W razie jakichkolwiek wątpliwości co do gier, kliknij ikonę znaku zapytania w prawym górnym rogu strony, a skontaktujesz się z nami na Slacku na kanale #hunger-games"
       },
@@ -313,53 +317,30 @@
     "close": "Zamknij"
   },
   "nutrition": {
+    "table_partialy_filled": "Tabela zawierająca już pewne dane",
+    "display_off_values": "Wyświetl wartości z OpenFoodFacts",
+    "nutrients": "Składniki odżywcze",
+    "serving_size": "Wielkość porcji",
+    "add_nutrient": "-- dodaj składnik odżywczy --",
+    "validate_100g": "Zatwierdź (100g)",
+    "validate_serving": "Zatwierdź (porcja)",
+    "skip": "Pomiń",
+    "invalid_image": "Nieprawidłowy obraz",
+    "pictures": {
+      "picture_date": "Zdjęcie przesłane",
+      "selected_as_nutrients": "Wybrano jako zdjęcie składnika odżywczego ✅",
+      "not_selected_as_nutrients": "Nie wybrano jako składnik odżywczy ❌"
+    },
     "instructions": {
-      "cropTheTable": "Przytnij obraz, aby uprościć adnotację",
-      "verifyNutrimentDetected": "Zaznacz, czy wykryty składnik odżywczy jest prawidłowy",
-      "selectMissingNutriments": "Dodaj brakujące składniki odżywcze (możesz kliknąć również jeśli słowo nie ma ramki)",
-      "selectValue": "Wybierz wartość odżywczą: "
-    },
-    "steps": {
-      "1": "Przytnij",
-      "2": "Wartości specjalne",
-      "3": "Wybór składników odżywczych",
-      "4": "Wybór wartości"
-    },
-    "loading": "Ładowanie...",
-    "unknown_brand": "Marka nieznana",
-    "value_missing": "Zapomniałeś wprowadzić wartość.",
-    "next": "Następny krok",
-    "prev": "Poprzedni krok",
-    "skip": "Pomiń ten produkt",
-    "validate": "Zatwierdź tabelę",
-    "unselect_picture": "Brak informacji żywieniowych",
-    "basis": "dane dla: ",
-    "servingSize": "wielkość porcji",
-    "value": "Wartość",
-    "unit": "Jednostka",
-    "nutriments": {
-      "nutriment_energy-kj": "Energia (kJ)",
-      "nutriment_energy-kcal": "Energia (kcal)",
-      "nutriment_fat": "Tłuszcz",
-      "nutriment_saturated-fat": "Tłuszcz nasycony",
-      "nutriment_carbohydrates": "Węglowodany",
-      "nutriment_sugars": "Cukry",
-      "nutriment_proteins": "Zawartość białka",
-      "nutriment_fiber": "Włókna",
-      "nutriment_salt": "Sól",
-      "nutriment_sodium": "Sód"
-    },
-    "history": {
-      "title": "Historia sesji",
-      "status": "status",
-      "product name": "nazwa produktu",
-      "view": "zobacz stronę",
-      "edit": "edytuj stronę",
-      "SKIP": "zignorowane",
-      "VALIDATED": "edytowane",
-      "WRONG_IMAGE": "niezaznaczone zdjęcie",
-      "close": "zamknij",
-      "open": "otwórz historię"
+      "open_button": "Otwórz instrukcje",
+      "title": "Jak korzystać z interfejsu",
+      "chose_between_empty_and_partially_filled": "Możesz wybierać między produktami, dla których OpenFoodFacts (OFF) nie ma danych o składnikach odżywczych. Lub produktami z częściowo wypełnioną tabelą składników odżywczych.",
+      "picture_date_is_display": "Data zdjęcia jest nad nim wyświetlana. Pozwala to sprawdzić, czy to zdjęcie jest nowe.",
+      "indicate_not_provided_value": "Puste pola są ignorowane. Jeśli w tabeli nie ma informacji o błonniku, możesz wpisać „-”, aby zaznaczyć, że wartość jest niedostępna.",
+      "validate_one_column": "Wybierz rozmiar, który jest wyświetlany na obrazku. Jeśli masz 100g i wielkość porcji, wybierz 100g, ponieważ jest to znormalizowany format.",
+      "skip_button": "Jeśli nie wiesz, jak przetworzyć obraz, lub po prostu nie chcesz tego robić, naciśnij „pomiń”. Inny użytkownik się tym zajmie.",
+      "invalid_image_button": "Jeśli obraz nie przedstawia tabeli wartości odżywczych, naciśnij „Nieprawidłowy obraz”, aby usunąć go z listy do weryfikacji",
+      "close": "Zamknij"
     }
   },
   "notfound": {
@@ -380,16 +361,16 @@
     "incorrect": "Błąd",
     "correct": "Poprawnie ({{label}})"
   },
-  "eco-score": {
+  "green-score": {
     "description": "Oto podsumowanie pytań, które mogą poprawić obliczenie Eco-Score",
     "countryLabel": "Kraj"
   },
   "ingredients": {
-    "description": "This game allows you to validate the pre-selection of images of ingredients lists in various languages for a product, and validate the extracted ingredients.",
+    "description": "Ta gra pozwala Ci zweryfikować wstępnie wybrane obrazy list składników w różnych językach dla danego produktu oraz zatwierdzić wyodrębnione składniki.",
     "current_text": "text from off",
     "confidence_score": "pewność językowa",
     "revert": "Przywróć",
-    "parsing": "Get server understanding",
+    "parsing": "Zrozumienie działania serwera",
     "send": "Zatwierdź i wyślij",
     "skip": "Pomiń ten produkt",
     "getRobotoffPrediciton": "Otrzymuj prognozy od Robotoff"

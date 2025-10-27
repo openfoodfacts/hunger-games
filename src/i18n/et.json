@@ -11,7 +11,7 @@
           "title": "Logos",
           "description": "Find all the logos matching the given logo"
         },
-        "eco_score": {
+        "green_score": {
           "title": "Eco-score",
           "description": "Annotate the questions with the highest value"
         }
@@ -46,7 +46,7 @@
     }
   },
   "flagged_images": {
-    "title": "Images flagged by users",
+    "title": "Kasutajate poolt märgistatud pildid",
     "loading": "Laadimine"
   },
   "questions": {
@@ -70,6 +70,8 @@
     "countries": "Riigid",
     "view": "Vaata",
     "edit": "Muuda",
+    "remaining": "Remaining: {{count}}",
+    "remaining_other": "Remaining: >100",
     "hide_images": "Kiirema laadimise huvides peida pildid",
     "display_images": "Näita pilte",
     "annotations": "Annotations",
@@ -129,12 +131,13 @@
     "logos-deep-search": "Infinite annotation",
     "manage": "Halda",
     "insights": "Insights",
-    "nutritions": "Nutrition facts",
+    "nutritions": "Toitained",
+    "ingredient-spellcheck": "Koostisosade õigekirjakontroll",
+    "ingredient-detection": "Koostisosade tuvastamine",
     "settings": "Seaded",
-    "eco-score": "Eco-score",
+    "green-score": "Green-Score",
     "dashboard": "Logos dashboard",
     "tour": "Show tour",
-    "ingredient-spellcheck": "Koostisosade õigekirjakontroll",
     "logged_in_user": "Sisse logitud kui {{userName}}",
     "log_in": "Klõpsa sisselogimiseks"
   },
@@ -247,8 +250,8 @@
     "Press": "Press",
     "Open_Food_Facts_wiki": "Open Food Facts wiki (en)",
     "Translators": "Tõlkijad",
-    "Partners": "Partners",
-    "Open_Beauty_Facts": "Open Beauty Facts - Cosmetics",
+    "Partners": "Partnerid",
+    "Open_Beauty_Facts": "Open Beauty Facts - cosmetics",
     "text2": "A collaborative, free and open database of food products from around the world."
   },
   "helper": {
@@ -314,53 +317,30 @@
     "close": "Sulge"
   },
   "nutrition": {
+    "table_partialy_filled": "Table with already some data",
+    "display_off_values": "Display values from OpenFoodFacts",
+    "nutrients": "Nutrients",
+    "serving_size": "Serving size",
+    "add_nutrient": "-- add nutrient --",
+    "validate_100g": "Validate (100g)",
+    "validate_serving": "Validate (serving)",
+    "skip": "Skip",
+    "invalid_image": "Invalid image",
+    "pictures": {
+      "picture_date": "Photo uploaded",
+      "selected_as_nutrients": "Selected as nutriment image ✅",
+      "not_selected_as_nutrients": "Not selected as nutriment ❌"
+    },
     "instructions": {
-      "cropTheTable": "Crop the image to simplify your annotation",
-      "verifyNutrimentDetected": "Indicate if the nutriment detected is correct",
-      "selectMissingNutriments": "Add missing nutriments (you can click even if the word has no box)",
-      "selectValue": "Select the nutritional value of: "
-    },
-    "steps": {
-      "1": "Crop",
-      "2": "Special values",
-      "3": "Nutriments Selection",
-      "4": "Values Selection"
-    },
-    "loading": "Loading...",
-    "unknown_brand": "Brand Unknown",
-    "value_missing": "You forgot to input a value.",
-    "next": "Next step",
-    "prev": "Prev step",
-    "skip": "Jäta see toode vahele",
-    "validate": "Validate Table",
-    "unselect_picture": "Toitumisalane teave puudub",
-    "basis": "data for: ",
-    "servingSize": "serving size",
-    "value": "Väärtus",
-    "unit": "Unit",
-    "nutriments": {
-      "nutriment_energy-kj": "Energy (kJ)",
-      "nutriment_energy-kcal": "Energy (kCal)",
-      "nutriment_fat": "Rasvad",
-      "nutriment_saturated-fat": "Küllastunud rasvhapped",
-      "nutriment_carbohydrates": "Süsivesikud",
-      "nutriment_sugars": "Sugar",
-      "nutriment_proteins": "Protein content",
-      "nutriment_fiber": "Fibres",
-      "nutriment_salt": "Sool",
-      "nutriment_sodium": "Sodium"
-    },
-    "history": {
-      "title": "Sessiooni ajalugu",
-      "status": "olek",
-      "product name": "toote nimi",
-      "view": "vaata lehte",
-      "edit": "muuda lehte",
-      "SKIP": "ignored",
-      "VALIDATED": "edited",
-      "WRONG_IMAGE": "unselected picture",
-      "close": "sulge",
-      "open": "ava ajalugu"
+      "open_button": "Open instructions",
+      "title": "How to use the interface",
+      "chose_between_empty_and_partially_filled": "You can chose between products for which OpenFoodFacts (OFF) has no data about the nutrients. Or product with partially filled nutrient table.",
+      "picture_date_is_display": "The date of the picture is displayed on top of it. Allowing you to check if it's a recent one.",
+      "indicate_not_provided_value": "Empty inputs are ignored. If fibers are not present in the table, you can put \"-\" to specify the value is not available.",
+      "validate_one_column": "Valige pildil kuvatud suurus. Kui teil on 100 g ja portsjoni suurus, valige palun 100 g, kuna see on normaliseeritud formaat.",
+      "skip_button": "Kui sa ei tea, kuidas pildiga ümber käia või sa lihtsalt ei taha seda teha, vajuta „Jäta vahele“. Teised kasutajad saavad sellega hakkama.",
+      "invalid_image_button": "If the pictures is not a nutritional table, press \"Invalid image\" to remove it from the list of the images to verify",
+      "close": "Sulge"
     }
   },
   "notfound": {
@@ -381,9 +361,9 @@
     "incorrect": "Wrong",
     "correct": "Correct ({{label}})"
   },
-  "eco-score": {
+  "green-score": {
     "description": "Here is a summary of questions that could improve Eco-Score computation",
-    "countryLabel": "Country"
+    "countryLabel": "Riik"
   },
   "ingredients": {
     "description": "This game allows you to validate the pre-selection of images of ingredients lists in various languages for a product, and validate the extracted ingredients.",

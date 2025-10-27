@@ -11,7 +11,7 @@
           "title": "Logo's",
           "description": "Vind alle logo's die overeenkomen met het gegeven logo"
         },
-        "eco_score": {
+        "green_score": {
           "title": "Eco-Score",
           "description": "Annoteer de vragen met de hoogste waarde"
         }
@@ -70,6 +70,8 @@
     "countries": "Landen",
     "view": "Bekijk",
     "edit": "Bewerken",
+    "remaining": "Resterend: {{count}}",
+    "remaining_other": "Resterend: >100",
     "hide_images": "Afbeeldingen verbergen (sneller laden)",
     "display_images": "Afbeelding weergeven",
     "annotations": "Aantekeningen",
@@ -129,9 +131,11 @@
     "logos-deep-search": "Oneindige annotatie",
     "manage": "Beheer",
     "insights": "Inzichten",
-    "nutritions": "Voedingswaarden",
+    "nutritions": "Voedingswaarde",
+    "ingredient-spellcheck": "Ingrediënten spellingscontrole",
+    "ingredient-detection": "Ingrediëntdetectie",
     "settings": "Instellingen",
-    "eco-score": "Eco-Score",
+    "green-score": "Green-Score",
     "dashboard": "Logo's-dashboard",
     "tour": "Toon rondleiding",
     "logged_in_user": "Ingelogd als {{userName}}",
@@ -247,7 +251,7 @@
     "Open_Food_Facts_wiki": "Open Food Facts wiki (en)",
     "Translators": "Vertalers",
     "Partners": "Partners",
-    "Open_Beauty_Facts": "Open Beauty Facts - Cosmetica",
+    "Open_Beauty_Facts": "Open Beauty Facts - cosmetica",
     "text2": "Een gezamenlijke, vrije en open database van voedingsmiddelen uit de hele wereld."
   },
   "helper": {
@@ -313,53 +317,30 @@
     "close": "Sluit"
   },
   "nutrition": {
+    "table_partialy_filled": "Tabel met al enkele gegevens",
+    "display_off_values": "Waarden van OpenFoodFacts weergeven",
+    "nutrients": "Voedingsstoffen",
+    "serving_size": "Grootte van een portie",
+    "add_nutrient": "--voedingsstof toevoegen--",
+    "validate_100g": "Valideren (100g)",
+    "validate_serving": "Valideren (portie)",
+    "skip": "Overslaan",
+    "invalid_image": "Ongeldige afbeelding",
+    "pictures": {
+      "picture_date": "Foto geüpload",
+      "selected_as_nutrients": "Geselecteerd als voedingsafbeelding ✅",
+      "not_selected_as_nutrients": "Niet geselecteerd als voedingsmiddel ❌"
+    },
     "instructions": {
-      "cropTheTable": "Werk de afbeelding bij om je aantekening te vereenvoudigen",
-      "verifyNutrimentDetected": "Geef aan of de gedetecteerde voeding correct is",
-      "selectMissingNutriments": "Voeg ontbrekende voedingsstoffen toe (je kunt hierop klikken zelfs als het woord geen vakje heeft)",
-      "selectValue": "Selecteer de voedingswaarde van: "
-    },
-    "steps": {
-      "1": "Bijsnijden",
-      "2": "Speciale waarden",
-      "3": "Selectie van voedingsstoffen",
-      "4": "Waarden Selectie"
-    },
-    "loading": "Bezig met laden...",
-    "unknown_brand": "Merk onbekend",
-    "value_missing": "U bent vergeten een waarde in te voeren.",
-    "next": "Volgende stap",
-    "prev": "Vorige stap",
-    "skip": "Dit product overslaan",
-    "validate": "Tabel goedkeuren",
-    "unselect_picture": "Geen voedingsinformatie",
-    "basis": "gegevens voor: ",
-    "servingSize": "grootte van een portie",
-    "value": "Waarde",
-    "unit": "Eenheid",
-    "nutriments": {
-      "nutriment_energy-kj": "Energie (kJ)",
-      "nutriment_energy-kcal": "Energie (kcal)",
-      "nutriment_fat": "Vet",
-      "nutriment_saturated-fat": "Verzadigd vet",
-      "nutriment_carbohydrates": "Koolhydraten",
-      "nutriment_sugars": "Suiker",
-      "nutriment_proteins": "Eiwitgehalte",
-      "nutriment_fiber": "Vezels",
-      "nutriment_salt": "Zout",
-      "nutriment_sodium": "Natrium"
-    },
-    "history": {
-      "title": "Sessiegeschiedenis",
-      "status": "status",
-      "product name": "productnaam",
-      "view": "pagina bekijken",
-      "edit": "pagina bewerken",
-      "SKIP": "genegeerd",
-      "VALIDATED": "bewerkt",
-      "WRONG_IMAGE": "ongeselecteerde afbeelding",
-      "close": "sluiten",
-      "open": "geschiedenis openen"
+      "open_button": "Open instructies",
+      "title": "Hoe de interface te gebruiken",
+      "chose_between_empty_and_partially_filled": "U kunt kiezen tussen producten waarvoor OpenFoodFacts (OFF) geen gegevens heeft over de voedingsstoffen. Of producten met gedeeltelijk gevulde voedingstafel.",
+      "picture_date_is_display": "De datum van de foto wordt erboven getoond. Zo kunt u controleren of het een recente foto is.",
+      "indicate_not_provided_value": "Lege invoer wordt genegeerd. Als er geen vezels in de tabel aangegeven worden, kunt u \"-\" gebruiken om aan te geven dat de waarde niet gespecifieerd wordt.",
+      "validate_one_column": "Kies de grootte die op de afbeelding wordt weergegeven. Als u 100g en een portiegrootte heeft, kies dan 100g, omdat dit een genormaliseerd formaat is.",
+      "skip_button": "Als je niet weet hoe je met een afbeelding om moet gaan, of je wilt deze gewoon niet doen, druk dan op “skip”. Een andere gebruiker kan het dan afhandelen.",
+      "invalid_image_button": "Als de afbeeldingen geen voedingswaardetabel bevatten, druk dan op “ Ongeldige afbeelding” om de afbeelding te verwijderen uit de lijst met te controleren afbeeldingen",
+      "close": "Sluit"
     }
   },
   "notfound": {
@@ -380,7 +361,7 @@
     "incorrect": "Mis",
     "correct": "Correct ({{label}})"
   },
-  "eco-score": {
+  "green-score": {
     "description": "Hier is een samenvatting van vragen die de berekening van de Eco-score kunnen verbeteren",
     "countryLabel": "Land"
   },

@@ -5,13 +5,13 @@
       "cards": {
         "questions": {
           "title": "Câu hỏi",
-          "description": "Hãy nói cho chúng biết nếu hình ảnh này trả lời cho các câu hỏi"
+          "description": "Hãy nói cho chúng tôi biết nếu hình ảnh này trả lời cho các câu hỏi"
         },
         "logos": {
           "title": "Biểu tượng",
           "description": "Tìm tất cả các logo phù hợp với logo đã cho"
         },
-        "eco_score": {
+        "green_score": {
           "title": "Điểm sinh thái",
           "description": "Chú thích các câu hỏi có giá trị cao nhất"
         }
@@ -32,7 +32,7 @@
     "statistics": {
       "title": "{{userName}} thống kê:",
       "editorCount": {
-        "title": "Editor",
+        "title": "biên tập viên",
         "description": "Số lần chỉnh sửa đã thực hiện"
       },
       "contributorCount": {
@@ -70,6 +70,8 @@
     "countries": "Quốc gia",
     "view": "Hiển thị",
     "edit": "Chỉnh sửa",
+    "remaining": "Còn lại: {{count}}",
+    "remaining_other": "Còn lại: >100",
     "hide_images": "Ẩn hình ảnh (tải nhanh hơn)",
     "display_images": "Hiển thị hình ảnh",
     "annotations": "Chú thích",
@@ -97,7 +99,7 @@
         "campaign": "Chiến dịch"
       },
       "placeholders": {
-        "value": "Value (Fanta, en:organic,...)",
+        "value": "Giá trị (Fanta, en:organic,...)",
         "brand": "Auchan, Danone, Herta, ...",
         "campaign": "Chiến dịch chú thích"
       },
@@ -129,9 +131,11 @@
     "logos-deep-search": "Chú thích vô hạn",
     "manage": "Quản lý",
     "insights": "Thông tin chi tiết",
-    "nutritions": "Giá trị dinh dưỡng",
+    "nutritions": "Dinh dưỡng",
+    "ingredient-spellcheck": "Kiểm tra chính tả thành phần",
+    "ingredient-detection": "Phát hiện thành phần",
     "settings": "Cài đặt",
-    "eco-score": "Điểm sinh thái",
+    "green-score": "Điểm sinh thái",
     "dashboard": "Logo Bảng Điều Khiển",
     "tour": "Hiện hướng dẫn",
     "logged_in_user": "Đã đăng nhập dưới tài khoản {{userName}}",
@@ -166,7 +170,7 @@
     "human_required": "Yêu cầu nhân tố",
     "edit_product": "Mở chỉnh sửa sản phẩm",
     "view_product": "Mở trang sản phẩm",
-    "view_crops_for_this_product": "Annotate product logos"
+    "view_crops_for_this_product": "Chú thích logo sản phẩm"
   },
   "logos": {
     "annotation": "Chú thích: ",
@@ -195,7 +199,7 @@
     "no_found": "Không tìm thấy logo",
     "search": "Tìm kiếm",
     "number_of_results": "Số lượng kết quả:",
-    "loading": "Loading...",
+    "loading": "Loading…",
     "refresh": "Làm mới",
     "search_specific": "Tìm kiếm logo cụ thể",
     "load_more": "Tải thêm",
@@ -206,14 +210,14 @@
     "crop_image_title": "cắt logo",
     "no_more_questions": "Không còn câu hỏi nào về logo này nữa. Bạn có thể thử tìm thêm logo với trò chơi sau.",
     "loading_messages": {
-      "pending_reference_logos": "We are loading some logos examples to initialise the search",
+      "pending_reference_logos": "Chúng tôi đang tải một số ví dụ về logo để khởi tạo tìm kiếm",
       "failed_reference_logos": "Chúng tôi không tìm thấy bất kỳ logo nào có chú thích này. Hãy thử sử dụng trò chơi sau đây để chú thích một vài trong số chúng."
     },
     "deep_search": {
-      "title": "Logo search",
-      "description": "Select a logo you want to look for, and let's go to catch them all. For every logo you annotate, we will fetch it's neighbors such that you might never stop to annotate. (Press Shift to select range of logos)",
-      "ref_logos": "Reference logos (logo already annotated with this value)",
-      "remaining": "Remaining to annotate",
+      "title": "Tìm kiếm logo",
+      "description": "Chọn một logo bạn muốn tìm, và chúng ta sẽ cùng đi bắt chúng tất cả. Mỗi khi bạn chú thích một logo, chúng tôi sẽ lấy các logo lân cận để bạn có thể tiếp tục chú thích không ngừng. (Nhấn Shift để chọn một dãy logo)",
+      "ref_logos": "Logo tham chiếu (logo đã được chú thích với giá trị này)",
+      "remaining": "Còn lại để chú thích",
       "select_all": "Chọn tất cả",
       "unselect_all": "Bỏ chọn Tất cả"
     }
@@ -227,7 +231,7 @@
     "dev_mode_label": "Chế độ nhà phát triển",
     "dev_page_toggle": "Hiển thị trang {{name}}",
     "join_community": "Tham gia cộng đồng",
-    "text1": "Open Food Facts is a collaborative project built by tens of thousands of volunteers and managed by a non-profit organization with 8 employees. We need your donations to fund the Open Food Facts 2024 budget and to continue to develop the project.",
+    "text1": "Open Food Facts là một dự án hợp tác được xây dựng bởi hàng chục nghìn tình nguyện viên và được quản lý bởi một tổ chức phi lợi nhuận với 8 nhân viên. Chúng tôi cần sự đóng góp của bạn để tài trợ cho ngân sách Open Food Facts 2024 và để tiếp tục phát triển dự án.",
     "thank_you": "Cảm ơn bạn",
     "donate": "Ủng hộ",
     "join_the_community": {
@@ -247,14 +251,14 @@
     "Open_Food_Facts_wiki": "Open Food Facts wiki (en)",
     "Translators": "Người dịch",
     "Partners": "Các đối tác",
-    "Open_Beauty_Facts": "Open Beauty Facts - Mỹ phẩm",
+    "Open_Beauty_Facts": "Open Beauty Facts - ",
     "text2": "Một cơ sở dữ liệu hợp tác, tự do và cởi mở của các sản phẩm thực phẩm từ khắp nơi trên thế giới."
   },
   "helper": {
     "welcome": {
       "page1": {
         "title": "Chào mừng đến với Hunger Games",
-        "text1": "Hunger Games is a collection of mini-games that help contribute to Open Food Facts in many ways. You can play our really exciting games from anywhere. Here is a guided tour of the entire website which will get you started.",
+        "text1": "Hunger Games là một bộ sưu tập các trò chơi nhỏ giúp đóng góp vào Open Food Facts theo nhiều cách. Bạn có thể chơi những trò chơi rất thú vị này từ bất cứ đâu. Đây là hướng dẫn tham quan toàn bộ trang web khi bạn bắt đầu.",
         "text2": "Đảm bảo đăng nhập vào trang web Open Food Facts để nhận được phần thưởng cho những đóng góp của bạn. Nếu bạn mắc lỗi, vui lòng sửa lại bằng cách truy cập trang web.",
         "text3": "Trong trường hợp có thắc mắc về trò chơi, hãy nhấn vào biểu tượng dấu hỏi trên cùng bên phải của trang và bạn có thể liên hệ với chúng tôi tại kênh #hunger-game"
       },
@@ -313,53 +317,30 @@
     "close": "Đóng"
   },
   "nutrition": {
+    "table_partialy_filled": "Bảng đã có một số dữ liệu",
+    "display_off_values": "Hiển thị giá trị từ OpenFoodFacts",
+    "nutrients": "Chất dinh dưỡng",
+    "serving_size": "Kích thước phục vụ",
+    "add_nutrient": "-- bổ sung chất dinh dưỡng --",
+    "validate_100g": "Xác thực (100g)",
+    "validate_serving": "Xác thực (Khẩu phần)",
+    "skip": "Bỏ qua",
+    "invalid_image": "Ảnh không hợp lệ",
+    "pictures": {
+      "picture_date": "Ảnh đã tải lên",
+      "selected_as_nutrients": "Được chọn làm hình ảnh dinh dưỡng ✅",
+      "not_selected_as_nutrients": "Không được chọn làm chất dinh dưỡng ❌"
+    },
     "instructions": {
-      "cropTheTable": "Cắt hình ảnh để đơn giản hóa chú thích của bạn",
-      "verifyNutrimentDetected": "Cho biết liệu thành phần dinh dưỡng được phát hiện có chính xác hay không",
-      "selectMissingNutriments": "Thêm các chất dinh dưỡng bị thiếu (bạn có thể nhấp vào ngay cả khi từ đó không có ô)",
-      "selectValue": "Chọn giá trị dinh dưỡng của: "
-    },
-    "steps": {
-      "1": "Cắt",
-      "2": "Giá trị đặc biệt",
-      "3": "Lựa chọn chất dinh dưỡng",
-      "4": "Lựa chọn giá trị"
-    },
-    "loading": "Đang tải...",
-    "unknown_brand": "Nhãn hiệu không xác định",
-    "value_missing": "Bạn quên nhập một giá trị.",
-    "next": "Bước tiếp theo",
-    "prev": "Bước trước đó",
-    "skip": "Bỏ qua sản phẩm này",
-    "validate": "Xác thực bảng",
-    "unselect_picture": "Không có thông tin dinh dưỡng",
-    "basis": "dữ liệu cho: ",
-    "servingSize": "khẩu phần ăn",
-    "value": "Giá trị",
-    "unit": "Đơn vị",
-    "nutriments": {
-      "nutriment_energy-kj": "Năng lượng (kJ)",
-      "nutriment_energy-kcal": "Năng lượng (kCal)",
-      "nutriment_fat": "Chất béo",
-      "nutriment_saturated-fat": "Chất béo bão hòa",
-      "nutriment_carbohydrates": "Cacbohydrat",
-      "nutriment_sugars": "Sugar",
-      "nutriment_proteins": "Protein content",
-      "nutriment_fiber": "Fibres",
-      "nutriment_salt": "Muối",
-      "nutriment_sodium": "Natri"
-    },
-    "history": {
-      "title": "Lịch sử Phiên",
-      "status": "trạng thái",
-      "product name": "tên sản phẩm",
-      "view": "xem trang",
-      "edit": "chỉnh sửa trang",
-      "SKIP": "đã bỏ qua",
-      "VALIDATED": "đã chỉnh sửa",
-      "WRONG_IMAGE": "hình ảnh không được chọn",
-      "close": "đóng",
-      "open": "mở lịch sử"
+      "open_button": "Mở hướng dẫn",
+      "title": "Cách sử dụng giao diện",
+      "chose_between_empty_and_partially_filled": "Bạn có thể chọn giữa các sản phẩm mà OpenFoodFacts (OFF) không có dữ liệu về chất dinh dưỡng. Hoặc sản phẩm có bảng chất dinh dưỡng được điền một phần.",
+      "picture_date_is_display": "Ngày chụp ảnh được hiển thị ở trên cùng. Cho phép bạn kiểm tra xem đó có phải là ảnh chụp gần đây không.",
+      "indicate_not_provided_value": "Các đầu vào trống sẽ bị bỏ qua. Nếu không có thông tin nào trong bảng, bạn có thể đặt \"-\" để chỉ định giá trị không khả dụng.",
+      "validate_one_column": "Chọn kích thước hiển thị trong hình. Nếu bạn có 100g và khẩu phần ăn, vui lòng chọn 100g vì đây là định dạng chuẩn hóa.",
+      "skip_button": "Nếu bạn không biết cách xử lý hình ảnh hoặc không muốn xử lý, hãy nhấn \"bỏ qua\". Người dùng khác có thể xử lý.",
+      "invalid_image_button": "Nếu hình ảnh không phải là bảng dinh dưỡng, hãy nhấn \"Hình ảnh không hợp lệ\" để xóa hình ảnh khỏi danh sách hình ảnh cần xác minh",
+      "close": "Đóng"
     }
   },
   "notfound": {
@@ -380,32 +361,32 @@
     "incorrect": "Sai",
     "correct": "Đúng ({{label}})"
   },
-  "eco-score": {
+  "green-score": {
     "description": "Đây là bản tóm tắt các câu hỏi có thể cải thiện phần tính toán Điểm sinh thái",
     "countryLabel": "Quốc gia"
   },
   "ingredients": {
-    "description": "This game allows you to validate the pre-selection of images of ingredients lists in various languages for a product, and validate the extracted ingredients.",
-    "current_text": "text from off",
-    "confidence_score": "language confidence",
-    "revert": "Revert",
-    "parsing": "Get server understanding",
-    "send": "Validate & send",
+    "description": "Trò chơi này cho phép bạn xác nhận hình ảnh các thành phần từ nhiều ngôn ngữ khác nhau cho một sản phẩm và xác nhận các thành phần đã được trích xuất.",
+    "current_text": "văn bản từ Open Food Facts",
+    "confidence_score": "sự tự tin về ngôn ngữ",
+    "revert": "Quay lại",
+    "parsing": "Nhận hiểu biết về máy chủ",
+    "send": "Xác thực & gửi",
     "skip": "Bỏ qua sản phẩm này",
-    "getRobotoffPrediciton": "Get predictions from Robotoff"
+    "getRobotoffPrediciton": "Nhận dự đoán từ Robotoff"
   },
   "footer": {
     "appStore": {
       "title": "App Store",
-      "subtitle": "Download on the"
+      "subtitle": "Tải xuống trên"
     },
     "playStore": {
       "title": "Play Store",
-      "subtitle": "Get it on"
+      "subtitle": "Lấy nó trên"
     },
     "microsoft": {
       "title": "Microsoft",
-      "subtitle": "Get it from"
+      "subtitle": "Lấy nó từ"
     },
     "androidAPK": {
       "title": "Android APK",

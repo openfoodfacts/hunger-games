@@ -11,7 +11,7 @@
           "title": "לוגואים",
           "description": "איתור כל הלוגואים שתואמים ללוגו המוצג"
         },
-        "eco_score": {
+        "green_score": {
           "title": "Eco-Score",
           "description": "תיוג השאלות עם הערך הגבוה ביותר"
         }
@@ -70,6 +70,8 @@
     "countries": "מדינות",
     "view": "הצגה",
     "edit": "עריכה",
+    "remaining": "נותרו: {{count}}",
+    "remaining_other": "נותרו: >100",
     "hide_images": "הסתרת תמונות (טעינה מואצת)",
     "display_images": "הצגת תמונות",
     "annotations": "הסברים",
@@ -129,9 +131,11 @@
     "logos-deep-search": "תיוג אינסופי",
     "manage": "ניהול",
     "insights": "תובנות",
-    "nutritions": "מפרט תזונתי",
+    "nutritions": "תזונה",
+    "ingredient-spellcheck": "בדיקת איות של מרכיבים",
+    "ingredient-detection": "זיהוי מרכיבים",
     "settings": "הגדרות",
-    "eco-score": "Eco-Score",
+    "green-score": "Green-Score",
     "dashboard": "לוח בקרה ללוגואים",
     "tour": "הצגת סיור",
     "logged_in_user": "נכנסת בשם {{userName}}",
@@ -247,7 +251,7 @@
     "Open_Food_Facts_wiki": "הוויקי של Open Food Facts (אנגלית)",
     "Translators": "מתרגמים",
     "Partners": "שותפים",
-    "Open_Beauty_Facts": "Open Beauty Facts - טיפוח",
+    "Open_Beauty_Facts": "Open Beauty Facts - מוצרי טיפוח",
     "text2": "מסד נתונים חופשי, פתוח ושיתופי של מוצרי מזון מכל רחבי העולם."
   },
   "helper": {
@@ -313,53 +317,30 @@
     "close": "סגירה"
   },
   "nutrition": {
+    "table_partialy_filled": "טבלה עם כמה נתונים שמולאו כבר",
+    "display_off_values": "הצגת ערכים מ־Open Food Facts",
+    "nutrients": "חומרי הזנה",
+    "serving_size": "גודל ההגשה",
+    "add_nutrient": "-- הוספת חומר הזנה --",
+    "validate_100g": "אימות (100 גרם)",
+    "validate_serving": "אימות (מנה)",
+    "skip": "דילוג",
+    "invalid_image": "תמונה שגויה",
+    "pictures": {
+      "picture_date": "הועלתה תמונה",
+      "selected_as_nutrients": "נבחרה כתמונת תזונה ✅",
+      "not_selected_as_nutrients": "לא נבחר כתזונה ❌"
+    },
     "instructions": {
-      "cropTheTable": "ניתן לחתוך את התמונה כדי לפשט את התיאור שלך",
-      "verifyNutrimentDetected": "נא לציין אם חומרי ההזנה שזוהו נכונים",
-      "selectMissingNutriments": "הוספת חומרי הזנה חסרים (ניתן ללחוץ אפילו אם למילה אין תיבה מסביבה)",
-      "selectValue": "נא לבחור את הערך התזונתי של: "
-    },
-    "steps": {
-      "1": "חיתוך",
-      "2": "ערכים מיוחדים",
-      "3": "בחירת חומרי הזנה",
-      "4": "בחירת ערכים"
-    },
-    "loading": "בטעינה…",
-    "unknown_brand": "מותג לא ידוע",
-    "value_missing": "שכחת למלא ערך.",
-    "next": "השלב הבא",
-    "prev": "השלב הקודם",
-    "skip": "דילוג על מוצר זה",
-    "validate": "אימות טבלה",
-    "unselect_picture": "אין מפרט תזונתי",
-    "basis": "נתונים עבור: ",
-    "servingSize": "גודל הגשה",
-    "value": "ערך",
-    "unit": "יחידה",
-    "nutriments": {
-      "nutriment_energy-kj": "אנרגיה (kJ)",
-      "nutriment_energy-kcal": "אנרגיה (קק״ל)",
-      "nutriment_fat": "שומן",
-      "nutriment_saturated-fat": "שומן רווי",
-      "nutriment_carbohydrates": "פחמימות",
-      "nutriment_sugars": "סוכר",
-      "nutriment_proteins": "תכולת חלבון",
-      "nutriment_fiber": "סיבים",
-      "nutriment_salt": "מלח",
-      "nutriment_sodium": "נתרן"
-    },
-    "history": {
-      "title": "היסטוריית ההפעלות",
-      "status": "מצב",
-      "product name": "שם המוצר",
-      "view": "הצגת עמוד",
-      "edit": "עריכת עמוד",
-      "SKIP": "התעלמת",
-      "VALIDATED": "נערך",
-      "WRONG_IMAGE": "תמונה שלא נבחרה",
-      "close": "סגירה",
-      "open": "פתיחת היסטוריה"
+      "open_button": "פתיחת ההנחיות",
+      "title": "איך להשתמש במנשק המשתמש",
+      "chose_between_empty_and_partially_filled": "ניתן לבחור בין מוצרים שעבורם ל־OpenFoodFacts (OFF) אין נתונים לגבי רכיבי התזונה. או מוצר עם טבלת תזונה חלקית.",
+      "picture_date_is_display": "תאריך התמונה מוצג מעליה. מה שמאפשר לבדוק אם צולמה לאחרונה.",
+      "indicate_not_provided_value": "נתוני קלט ריקים זוכים להתעלמות. אם לא מופיעים סיבים בטבלה, אפשר להוסיף „-” כדי לציין שהערך לא זמין.",
+      "validate_one_column": "בחרו את הגודל שמוצג בתמונה. אם יש לכם גודל מנה של 100 גרם, אנא בחרו 100 גרם מכיוון שזהו פורמט מנורמל.",
+      "skip_button": "אם לא ברור לך איך להתמודד עם תמונה, או שאין לך חשק, יש ללחוץ על „דילוג”. משתמשים אחרים יוכלו להתמודד עם זה.",
+      "invalid_image_button": "אם התמונות אינן טבלה תזונתית, יש ללחוץ על „תמונה שגויה” כדי להסיר אותה מרשימת התמונות לאימות",
+      "close": "סגירה"
     }
   },
   "notfound": {
@@ -380,7 +361,7 @@
     "incorrect": "שגוי",
     "correct": "נכון ({{label}})"
   },
-  "eco-score": {
+  "green-score": {
     "description": "הנה תקציר לשאלות שיכולות לשפר את החישוב של Eco-Score",
     "countryLabel": "מדינה"
   },

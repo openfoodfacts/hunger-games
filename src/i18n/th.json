@@ -11,7 +11,7 @@
           "title": "Logos",
           "description": "Find all the logos matching the given logo"
         },
-        "eco_score": {
+        "green_score": {
           "title": "Eco-score",
           "description": "Annotate the questions with the highest value"
         }
@@ -70,6 +70,8 @@
     "countries": "ประเทศ",
     "view": "View",
     "edit": "แก้ไข",
+    "remaining": "Remaining: {{count}}",
+    "remaining_other": "Remaining: >100",
     "hide_images": "ซ่อนรูปภาพ (โหลดเร็วขึ้น)",
     "display_images": "Display images",
     "annotations": "Annotations",
@@ -129,9 +131,11 @@
     "logos-deep-search": "Infinite annotation",
     "manage": "จัดการ",
     "insights": "ข้อมูลเชิงลึก",
-    "nutritions": "ข้อมูลโภชนาการ",
+    "nutritions": "อาหารการกิน",
+    "ingredient-spellcheck": "การตรวจสอบคำสะกดของส่วนผสม",
+    "ingredient-detection": "การตรวจจับส่วนผสม",
     "settings": "ตั้งค่า",
-    "eco-score": "Eco-score",
+    "green-score": "Green-Score",
     "dashboard": "Logos dashboard",
     "tour": "แสดงทัวร์",
     "logged_in_user": "Logged as {{userName}}",
@@ -247,7 +251,7 @@
     "Open_Food_Facts_wiki": "Open Food Facts wiki (en)",
     "Translators": "Translators",
     "Partners": "Partners",
-    "Open_Beauty_Facts": "Open Beauty Facts - Cosmetics",
+    "Open_Beauty_Facts": "Open Beauty Facts - cosmetics",
     "text2": "การทำงานร่วมกันของฐานข้อมูลฟรีและเปิดของผลิตภัณฑ์อาหารจากทั่วโลก"
   },
   "helper": {
@@ -313,53 +317,30 @@
     "close": "ปิด"
   },
   "nutrition": {
+    "table_partialy_filled": "Table with already some data",
+    "display_off_values": "Display values from OpenFoodFacts",
+    "nutrients": "Nutrients",
+    "serving_size": "หน่วยบริโภค",
+    "add_nutrient": "-- add nutrient --",
+    "validate_100g": "Validate (100g)",
+    "validate_serving": "Validate (serving)",
+    "skip": "Skip",
+    "invalid_image": "Invalid image",
+    "pictures": {
+      "picture_date": "Photo uploaded",
+      "selected_as_nutrients": "Selected as nutriment image ✅",
+      "not_selected_as_nutrients": "Not selected as nutriment ❌"
+    },
     "instructions": {
-      "cropTheTable": "Crop the image to simplify your annotation",
-      "verifyNutrimentDetected": "Indicate if the nutriment detected is correct",
-      "selectMissingNutriments": "Add missing nutriments (you can click even if the word has no box)",
-      "selectValue": "Select the nutritional value of: "
-    },
-    "steps": {
-      "1": "Crop",
-      "2": "Special values",
-      "3": "Nutriments Selection",
-      "4": "Values Selection"
-    },
-    "loading": "Loading...",
-    "unknown_brand": "Brand Unknown",
-    "value_missing": "You forgot to input a value.",
-    "next": "Next step",
-    "prev": "Prev step",
-    "skip": "Skip this product",
-    "validate": "Validate Table",
-    "unselect_picture": "No nutrition info",
-    "basis": "data for: ",
-    "servingSize": "หน่วยบริโภค",
-    "value": "Value",
-    "unit": "Unit",
-    "nutriments": {
-      "nutriment_energy-kj": "พลังงาน (กิโลจูล)",
-      "nutriment_energy-kcal": "พลังงาน (กิโลแคลอรี)",
-      "nutriment_fat": "ไขมัน",
-      "nutriment_saturated-fat": "ไขมันอิ่มตัว",
-      "nutriment_carbohydrates": "คาร์โบไฮเดรต",
-      "nutriment_sugars": "น้ำตาล",
-      "nutriment_proteins": "ปริมาณโปรตีน",
-      "nutriment_fiber": "ใยอาหาร",
-      "nutriment_salt": "เกลือ",
-      "nutriment_sodium": "โซเดียม"
-    },
-    "history": {
-      "title": "Session History",
-      "status": "status",
-      "product name": "product name",
-      "view": "view page",
-      "edit": "edit page",
-      "SKIP": "ignored",
-      "VALIDATED": "edited",
-      "WRONG_IMAGE": "unselected picture",
-      "close": "close",
-      "open": "open history"
+      "open_button": "Open instructions",
+      "title": "How to use the interface",
+      "chose_between_empty_and_partially_filled": "You can chose between products for which OpenFoodFacts (OFF) has no data about the nutrients. Or product with partially filled nutrient table.",
+      "picture_date_is_display": "The date of the picture is displayed on top of it. Allowing you to check if it's a recent one.",
+      "indicate_not_provided_value": "Empty inputs are ignored. If fibers are not present in the table, you can put \"-\" to specify the value is not available.",
+      "validate_one_column": "เลือกขนาดตามที่แสดงไว้ในรูปภาพ หากคุณมีขนาด 100 กรัมและมีขนาดรับประทาน โปรดเลือก 100 กรัม เนื่องจากเป็นรูปแบบปกติ",
+      "skip_button": "If you don't know how to deal with an image, or you just don't want to do it, press \"skip\". Other user will be able to handle it.",
+      "invalid_image_button": "If the pictures is not a nutritional table, press \"Invalid image\" to remove it from the list of the images to verify",
+      "close": "ปิด"
     }
   },
   "notfound": {
@@ -380,7 +361,7 @@
     "incorrect": "Wrong",
     "correct": "Correct ({{label}})"
   },
-  "eco-score": {
+  "green-score": {
     "description": "Here is a summary of questions that could improve Eco-Score computation",
     "countryLabel": "Country"
   },
