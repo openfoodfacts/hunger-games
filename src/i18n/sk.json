@@ -11,7 +11,7 @@
           "title": "Logá",
           "description": "Nájdite všetky logá zodpovedajúce danému logu"
         },
-        "eco_score": {
+        "green_score": {
           "title": "Eko-skóre",
           "description": "Označte otázky s najvyššou hodnotou"
         }
@@ -70,6 +70,8 @@
     "countries": "Krajiny",
     "view": "Zobrazenie",
     "edit": "Upraviť",
+    "remaining": "Ostáva: {{count}}",
+    "remaining_other": "Ostáva: >100",
     "hide_images": "Skryť obrázky (rýchlejšie načítanie)",
     "display_images": "Zobrazovať obrázky",
     "annotations": "Poznámky",
@@ -130,8 +132,10 @@
     "manage": "Spravovať",
     "insights": "Insight",
     "nutritions": "Nutričné hodnoty",
+    "ingredient-spellcheck": "Kontrola pravopisu ingrediencií",
+    "ingredient-detection": "Detekcia zložiek",
     "settings": "Nastavenia",
-    "eco-score": "Eko-skóre",
+    "green-score": "Eko-skóre",
     "dashboard": "Panel loga",
     "tour": "Zobraziť prehliadku",
     "logged_in_user": "Prihlásený ako {{userName}}",
@@ -247,7 +251,7 @@
     "Open_Food_Facts_wiki": "Open Food Facts wiki (en)",
     "Translators": "Prekladatelia",
     "Partners": "Partneri",
-    "Open_Beauty_Facts": "Open Beauty Facts – Kozmetika",
+    "Open_Beauty_Facts": "Otvor Beaty Facts – kozmetika",
     "text2": "Spoločná, bezplatná a otvorená databáza potravinárskych výrobkov z celého sveta."
   },
   "helper": {
@@ -313,53 +317,30 @@
     "close": "Zatvoriť"
   },
   "nutrition": {
+    "table_partialy_filled": "Tabuľka s existujúcimi údajmi",
+    "display_off_values": "Zobraz hodnoty z OpenFoodFacts",
+    "nutrients": "Živiny",
+    "serving_size": "Veľkosť porcie",
+    "add_nutrient": "-- pridať živiny --",
+    "validate_100g": "Skontrolovať (100g)",
+    "validate_serving": "Skontrolovať (porcia)",
+    "skip": "Preskočiť",
+    "invalid_image": "Nesprávny obrázok",
+    "pictures": {
+      "picture_date": "Fotka nahraná",
+      "selected_as_nutrients": "Vybrané ako obrázok výživy ✅",
+      "not_selected_as_nutrients": "Nevybrané ako výživa ❌"
+    },
     "instructions": {
-      "cropTheTable": "Ak chcete anotáciu zjednodušiť, orežte obrázok",
-      "verifyNutrimentDetected": "Uveďte, či je zistená výživa správna",
-      "selectMissingNutriments": "Pridajte chýbajúce živiny (môžete kliknúť, aj keď slovo nemá žiadne políčko)",
-      "selectValue": "Vyberte si nutričnú hodnotu: "
-    },
-    "steps": {
-      "1": "Orezať",
-      "2": "Špeciálne hodnoty",
-      "3": "Výber živín",
-      "4": "Výber hodnôt"
-    },
-    "loading": "Načítava sa...",
-    "unknown_brand": "Neznáma značka",
-    "value_missing": "Zabudli ste vložiť hodnotu.",
-    "next": "Ďalší krok",
-    "prev": "Predchádzajúci krok",
-    "skip": "Preskočiť tento produkt",
-    "validate": "Overiť tabuľku",
-    "unselect_picture": "Žiadne informácie o výžive",
-    "basis": "údaje pre: ",
-    "servingSize": "veľkosť porcie",
-    "value": "Hodnota",
-    "unit": "Jednotka",
-    "nutriments": {
-      "nutriment_energy-kj": "Energia (kJ)",
-      "nutriment_energy-kcal": "Energia (kCal)",
-      "nutriment_fat": "Tuk",
-      "nutriment_saturated-fat": "Nasýtený tuk",
-      "nutriment_carbohydrates": "Sacharidy",
-      "nutriment_sugars": "Cukor",
-      "nutriment_proteins": "Obsah bielkovín",
-      "nutriment_fiber": "Vláknina",
-      "nutriment_salt": "Soľ",
-      "nutriment_sodium": "Sodík"
-    },
-    "history": {
-      "title": "História relácie",
-      "status": "stav",
-      "product name": "Názov produktu",
-      "view": "Zobraziť stránku",
-      "edit": "Upraviť stránku",
-      "SKIP": "Ignorované",
-      "VALIDATED": "upravené",
-      "WRONG_IMAGE": "nevybraný obrázok",
-      "close": "zatvoriť",
-      "open": "otvoriť históriu"
+      "open_button": "Otvorte pokyny",
+      "title": "Ako používať rozhranie",
+      "chose_between_empty_and_partially_filled": "Môžete si vybrať medzi produktmi, pre ktoré OpenFoodFacts (OFF) nemá žiadne údaje o živinách. Alebo produkt s čiastočne vyplnenou nutričnou tabuľkou.",
+      "picture_date_is_display": "V hornej časti obrázka sa zobrazí dátum. Umožňuje vám skontrolovať, či ide o nedávny.",
+      "indicate_not_provided_value": "Prázdne vstupy sú ignorované. Ak sa vláknina v tabuľke nenachádza, môžete zadať „-“, aby ste určili, že hodnota nie je k dispozícii.",
+      "validate_one_column": "Vyberte veľkosť zobrazenú na obrázku. Ak máte 100 g a veľkosť porcie, vyberte 100 g, pretože ide o normalizovaný formát.",
+      "skip_button": "Ak si s obrázkom neviete dať rady, alebo sa vám to jednoducho nechce, stlačte „preskočiť“. Iný používateľ to zvládne.",
+      "invalid_image_button": "Ak obrázky nie sú nutričnou tabuľkou, stlačte „Neplatný obrázok“ a odstráňte ho zo zoznamu obrázkov na overenie",
+      "close": "Zatvoriť"
     }
   },
   "notfound": {
@@ -380,7 +361,7 @@
     "incorrect": "Nesprávne",
     "correct": "Správne ({{label}})"
   },
-  "eco-score": {
+  "green-score": {
     "description": "Tu je súhrn otázok, ktoré by mohli zlepšiť výpočet ekologického skóre",
     "countryLabel": "Krajina"
   },

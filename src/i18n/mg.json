@@ -1,169 +1,173 @@
 {
   "home": {
     "game_selector": {
-      "title": "What game would you like to play?",
+      "title": "Inona no lalao tianao hatao?",
       "cards": {
         "questions": {
-          "title": "Questions",
-          "description": "Tell us if the given image answers the questions"
+          "title": "Fanontaniana",
+          "description": "Lazao anay raha mamaly ny fanontaniana ny sary nomena"
         },
         "logos": {
-          "title": "Logos",
-          "description": "Find all the logos matching the given logo"
+          "title": "Famantarana",
+          "description": "Tadiavo ny famantarana rehetra mifanaraka amin'ny famantarana nomena"
         },
-        "eco_score": {
+        "green_score": {
           "title": "Eco-score",
-          "description": "Annotate the questions with the highest value"
+          "description": "Ataovy an-tsoratra ireo fanontaniana manana sanda ambony indrindra"
         }
       }
     },
     "account_band": {
-      "title": "Want to make your contribution count? Create an account or sign in on Open Food Facts!",
+      "title": "Te hahita ny anjara birikinao ve ianao? Mamorona kaonty na midira ao amin'ny Open Food Facts!",
       "log_in": "Login",
-      "sign_up": "Sign up",
-      "contribution_details": "Learn why your contribution matters"
+      "sign_up": "Hiditra Mpikambana",
+      "contribution_details": "Fantaro ny maha zava-dehibe ny fandraisanao anjara"
     },
-    "saved_filters": "Saved Filters",
+    "saved_filters": "Sivana voatahiry",
     "contribution_modal": {
-      "title": "Your contribution matters",
-      "information": "Hunger Games is an effort to leverage the results of our OCR and artificial intelligence. When you use Hunger Games by Open Food Facts, you improve our entire database which helps the community make better food choices. We gather your annotations and use them to make Open Food Facts more accurate and efficient.",
-      "thank_you": "Thank you for helping us improve Open Food Facts so that more people can use it easily."
+      "title": "Zava-dehibe ny fandraisanao anjara",
+      "information": "Ny Hunger Games dia ezaka hampiasana ny vokatry ny OCR sy ny faharanitan-tsaina artifisialy. Rehefa mampiasa Hunger Games avy amin'ny Open Food Facts ianao dia manatsara ny angonay manontolo izay manampy ny vondrom-piarahamonina hanao safidy sakafo tsara kokoa. Angoninay ny fanamarihanao ary ampiasainay mba hahatonga ny Open Food Facts ho marina sy mahomby kokoa.",
+      "thank_you": "Misaotra anao nanampy anay hanatsara ny Open Food Facts mba ahafahan'ny olona maro mampiasa azy mora kokoa."
     },
     "statistics": {
-      "title": "{{userName}} statistics:",
+      "title": "{{userName}} antontan’isa:",
       "editorCount": {
         "title": "Editor",
-        "description": "Number of editions done"
+        "description": "Isan'ny fanontana vita"
       },
       "contributorCount": {
-        "title": "Contributor",
-        "description": "Adding a new product"
+        "title": "Mpandray anjara",
+        "description": "Manampy vokatra vaovao"
       },
       "photographerCount": {
-        "title": "Photographer",
-        "description": "Taking photos for a product"
+        "title": "Mpaka sary",
+        "description": "Maka sary ho an'ny vokatra iray"
       }
     }
   },
   "flagged_images": {
-    "title": "Images flagged by users",
+    "title": "Sary nasehon'ny mpampiasa",
     "loading": "Loading"
   },
   "questions": {
     "category": "sokajy",
     "categories": "Sokajy",
-    "label": "label",
+    "label": "etikety",
     "labels": "Labels",
     "brand": "marika",
     "brands": "Marika",
-    "packaging": "packaging",
-    "quantity": "Quantity",
-    "insightTypeLabel": "Only shows",
-    "ingredients": "Ingredients",
-    "product_weight": "product weight",
-    "popularity_sort": "Sort by popularity",
-    "see_examples": "See examples of this ",
-    "no": "No",
-    "skip": "Skip",
-    "yes": "Yes",
-    "no_questions_remaining": "No questions remaining",
-    "countries": "Countries",
-    "view": "View",
-    "edit": "Edit",
-    "hide_images": "Hide images (faster loading)",
-    "display_images": "Display images",
-    "annotations": "Annotations",
-    "last_annotations": "Last annotations",
-    "remaining_annotations": "Remaining questions",
+    "packaging": "fonosana",
+    "quantity": "Habetsahana",
+    "insightTypeLabel": "Fampisehoana ihany",
+    "ingredients": "Kanonkanona",
+    "product_weight": "lanjan'ny vokatra",
+    "popularity_sort": "Alahatra araka ny lazany",
+    "see_examples": "Jereo ny ohatra momba izany ",
+    "no": "Tsia",
+    "skip": "Dingana",
+    "yes": "Eny",
+    "no_questions_remaining": "Tsy misy fanontaniana tavela",
+    "countries": "Firenena",
+    "view": "Jery",
+    "edit": "Ovaina",
+    "remaining": "Remaining: {{count}}",
+    "remaining_other": "Remaining: >100",
+    "hide_images": "Afenina ny sary (fampakarana haingana kokoa)",
+    "display_images": "Aseho ireo sary",
+    "annotations": "Fanazavana",
+    "last_annotations": "Fanazavana farany",
+    "remaining_annotations": "Fanontaniana sisa",
     "annotated_annotations": "Annotated",
     "filters": {
-      "active_filter_number": "+{{count}} filters",
-      "active_filter_number_one": "+{{count}} filter",
-      "active_filter_number_zero": "no filter",
+      "active_filter_number": "+{{count}} sivana",
+      "active_filter_number_one": "+{{count}} sivana",
+      "active_filter_number_zero": "tsy misy sivana",
       "short_label": {
-        "value": "value",
+        "value": "sandany",
         "country": "firenena",
         "brand": "marika",
-        "popularity": "popularity",
+        "popularity": "laza",
         "campaign": "camp"
       },
       "long_label": {
-        "type": "Question Type",
+        "type": "Karazana fanontaniana",
         "value": "Proposed Value",
-        "country": "Product Country",
-        "brand": "Product Brand",
-        "popularity": "Sort by popularity",
+        "country": "Vokatry ny firenena",
+        "brand": "Mariky ny vokatra",
+        "popularity": "Alahatra araka ny lazany",
         "edit": "",
-        "campaign": "Campaign"
+        "campaign": "Fanentanana"
       },
       "placeholders": {
-        "value": "Value (Fanta, en:organic,...)",
+        "value": "Sanda (Fanta, en:organika,...)",
         "brand": "Auchan, Danone, Herta, ...",
-        "campaign": "Annotation campaigns"
+        "campaign": "Fanamarihan'ny fanentanana"
       },
       "actions": {
-        "edit": "Edit Filters",
-        "cancel": "Cancel",
-        "apply": "Apply"
+        "edit": "Ovaina ny sivana",
+        "cancel": "Ajanona",
+        "apply": "Hampiaro"
       }
     },
-    "other_questions": "Other questions",
-    "send": "Send",
+    "other_questions": "Fanontaniana hafa",
+    "send": "Alefaso",
     "flag": "Something wrong? Report/flag the image!",
     "unflag": "Unflag the image",
-    "reset_filters": "Reset filters",
+    "reset_filters": "Avereno ny sivana",
     "log_in": "Login",
-    "sign_up": "Sign up",
-    "login_title": "Make your annotation count",
+    "sign_up": "Hiditra Mpikambana",
+    "login_title": "Asio lanja ny fanamarihanao",
     "login_description": "You are not currently logged into Open Food Facts. To get your answers directly applied to products, and associated to your account, consider logging in to your Open Food Facts account, or creating one",
-    "please_wait_while_we_fetch_the_question": "Please wait while we fetch the question!"
+    "please_wait_while_we_fetch_the_question": "Andraso azafady fa haka ny fanontaniana izahay!"
   },
   "menu": {
     "title": "Hunger Games",
-    "games": "Games",
-    "questions": "Questions",
-    "logos": "Logos",
+    "games": "Lalao",
+    "questions": "Fanontaniana",
+    "logos": "Famantarana",
     "logos-annotation": "Logos annotation",
     "logos-search": "Logos search",
-    "logos-product-search": "Annotation per products",
-    "logos-deep-search": "Infinite annotation",
-    "manage": "Manage",
-    "insights": "Insights",
-    "nutritions": "Nutrition facts",
-    "settings": "Settings",
-    "eco-score": "Eco-score",
+    "logos-product-search": "Fanamarihana isaky ny vokatra",
+    "logos-deep-search": "Fanazavana tsy manam-petra",
+    "manage": "Fitantanana",
+    "insights": "Fijery",
+    "nutritions": "Nutrition",
+    "ingredient-spellcheck": "Fanamarinana tsipelina ingredient",
+    "ingredient-detection": "Famantarana ny ingredient",
+    "settings": "Fikiràna",
+    "green-score": "Green-Score",
     "dashboard": "Logos dashboard",
     "tour": "Show tour",
     "logged_in_user": "Logged as {{userName}}",
     "log_in": "Click to login"
   },
   "insights": {
-    "insights": "Insights",
+    "insights": "Fijery",
     "barcode": "Kaody bara",
-    "barcode_placeholder": "barcode",
+    "barcode_placeholder": "kaody bara",
     "value_tag": "Value tag",
     "value_placeholder": "ex: en:mueslis, bjorg,...",
-    "type": "Type",
+    "type": "Karazana",
     "annotated": "Annotated",
-    "annotation": "Annotation",
+    "annotation": "Filazana fohy",
     "not_annotated": "Not annotated",
-    "all": "All",
-    "label": "Label",
-    "product_weight": "Product weight",
-    "category": "Category",
-    "expiration_date": "Expiration date",
-    "packager_code": "Packager code",
-    "skipped": "Skipped (-1)",
-    "rejected": "Rejected (0)",
-    "accepted": "Accepted (1)",
-    "search": "Search",
-    "count": "Count",
+    "all": "Rehetra",
+    "label": "Etikety",
+    "product_weight": "Lanjan'ny vokatra",
+    "category": "Sokajy",
+    "expiration_date": "Daty farany",
+    "packager_code": "Kaody fonosana",
+    "skipped": "Voadingana(-1)",
+    "rejected": "Nolavina (0)",
+    "accepted": "Nekena (1)",
+    "search": "Karoka",
+    "count": "Manisa",
     "id": "Id",
-    "value": "Value",
-    "created_at": "Created at",
-    "completed_at": "Completed at",
-    "automatic": "Automatic",
-    "human_required": "Human required",
+    "value": "Sandany",
+    "created_at": "Noforonina tamin'ny",
+    "completed_at": "Vita tamin'ny",
+    "automatic": "Mandeha ho azy",
+    "human_required": "Filàn'ny olombelona",
     "edit_product": "Open product edit",
     "view_product": "Open product page",
     "view_crops_for_this_product": "Annotate product logos"
@@ -171,33 +175,33 @@
   "logos": {
     "annotation": "Annotation: ",
     "annotations": "Logo annotations",
-    "task_description": "Select all logos that are exactly the same, and give them a name like \"en:EU Organic\" and a type like \"label\".",
-    "select_all": "Select all",
-    "unselect_all": "Unselect all",
+    "task_description": "Safidio ny famantarana rehetra mitovy tanteraka, ary omeo anarana toy ny \"en:EU Organic\" sy karazana toy ny \"label\".",
+    "select_all": "Fidio daholo",
+    "unselect_all": "Esory daholo",
     "distance": "Distance:",
-    "value": "Value",
+    "value": "Sandany",
     "submit": "Submit",
-    "type": "Type",
-    "label": "Label",
-    "brand": "Brand",
-    "packager_code": "Packager code",
-    "packaging": "Packaging",
+    "type": "Karazana",
+    "label": "Etikety",
+    "brand": "Marika",
+    "packager_code": "Kaody fonosana",
+    "packaging": "Fonosana",
     "qr_code": "QR code",
-    "category": "Category",
+    "category": "Sokajy",
     "nutrition_label": "Nutrition label",
     "no_logo": "Not a logo",
     "store": "Store",
     "detail": "Logo detail",
     "id": "Logo ID:",
     "barcode": "Barcode:",
-    "full_image": "Full image",
+    "full_image": "Sary feno",
     "update": "Update",
     "no_found": "No logo found",
-    "search": "Search",
-    "number_of_results": "Number of results:",
+    "search": "Karoka",
+    "number_of_results": "Isan'ny valiny:",
     "loading": "Loading…",
-    "refresh": "Refresh",
-    "search_specific": "Search specific logo",
+    "refresh": "Havaozina",
+    "search_specific": "Mitadiava famantarana manokana",
     "load_more": "Load more",
     "no_results": "No logo found",
     "result_count": "Shows {{showing}} on {{available}} available",
@@ -206,193 +210,170 @@
     "crop_image_title": "crop of the logo",
     "no_more_questions": "No more questions about this logo. You can try to find more logos with the following game.",
     "loading_messages": {
-      "pending_reference_logos": "We are loading some logos examples to initialise the search",
-      "failed_reference_logos": "We did not find any logos with this annotation. Try to use the following game to annotate some of them."
+      "pending_reference_logos": "Mametraka ohatra momba ny famantarana izahay mba hanombohana ny fikarohana",
+      "failed_reference_logos": "Tsy nahita famantarana misy an'io fanamarihana io izahay. Andramo ny mampiasa ity lalao manaraka ity mba hanamarihana ny sasany amin'izy ireo."
     },
     "deep_search": {
-      "title": "Logo search",
-      "description": "Select a logo you want to look for, and let's go to catch them all. For every logo you annotate, we will fetch it's neighbors such that you might never stop to annotate. (Press Shift to select range of logos)",
+      "title": "Fikarohana famantarana",
+      "description": "Mifidiana famantarana tianao hotadiavina, ary andao haka azy rehetra. Ho an'ny famantarana rehetra apetrakao dia halainay ny mifanakaiky aminy mba tsy hijanonanao manoratra. (Tsindrio ny Shift hisafidianana karazana famantarana)",
       "ref_logos": "Reference logos (logo already annotated with this value)",
       "remaining": "Remaining to annotate",
-      "select_all": "Select All",
-      "unselect_all": "Deselect All"
+      "select_all": "Fidio daholo",
+      "unselect_all": "Esory daholo"
     }
   },
   "settings": {
-    "settings": "Settings",
-    "language": "Languages",
-    "save": "Save",
-    "reportIssue": "Found a bug? Please let us know.",
-    "dev_mode_title": "To get more options, activate the dev mode",
+    "settings": "Fikiràna",
+    "language": "Fiteny",
+    "save": "Tehirizo",
+    "reportIssue": "Sendra olana? Hampahafantaro anay azafady.",
+    "dev_mode_title": "Raha te hahazo safidy bebe kokoa, ampio ny mode dev",
     "dev_mode_label": "Dev Mode",
     "dev_page_toggle": "Show {{name}} page",
     "join_community": "Join the community",
-    "text1": "Open Food Facts is a collaborative project built by tens of thousands of volunteers and managed by a non-profit organization with 8 employees. We need your donations to fund the Open Food Facts 2024 budget and to continue to develop the project.",
-    "thank_you": "Thank you",
-    "donate": "Donate",
+    "text1": "Ny Open Food Facts dia tetikasa fiaraha-miasa naorin'ireo mpilatsaka an-tsitrapo an'aliny ary tantanin'ny fikambanana tsy mitady tombombarotra misy mpiasa 8. Mila ny fanomezanao izahay mba hamatsiana ny tetibola Open Food Facts 2024 sy hanohizana ny fampandrosoana ny tetikasa.",
+    "thank_you": "Misaotra anao",
+    "donate": "Manomeza",
     "join_the_community": {
-      "discover_our": "Discover our ",
-      "code_of_conduct": "Code of conduct ",
-      "join_us_on": "Join us on ",
+      "discover_our": "Fantaro ny anay ",
+      "code_of_conduct": "Fitsipi-pitondran-tena ",
+      "join_us_on": "Miaraha aminay ",
       "forum": "Forum",
-      "subscribe_to_our": "Subscribe to our ",
-      "newsletter": "newsletter"
+      "subscribe_to_our": "Misorata anarana amin'ny ",
+      "newsletter": "vaovao an-taratasy"
     },
-    "discover_the_project": "Discover the project",
-    "Who_we_are": "Who we are",
-    "Vision_Mission_Values_and_Programs": "Vision, Mission, Values and Programs",
-    "FAQS": "FAQS",
-    "open_Food_Facts_blog": "Open Food Facts blog",
+    "discover_the_project": "Fantaro ny tetikasa",
+    "Who_we_are": "Iza izahay",
+    "Vision_Mission_Values_and_Programs": "Vina, Iraka, Soatoavina ary Fandaharana",
+    "FAQS": "FAQ",
+    "open_Food_Facts_blog": "Open Food Facts",
     "Press": "Press",
     "Open_Food_Facts_wiki": "Open Food Facts wiki (en)",
-    "Translators": "Translators",
-    "Partners": "Partners",
-    "Open_Beauty_Facts": "Open Beauty Facts - Cosmetics",
-    "text2": "A collaborative, free and open database of food products from around the world."
+    "Translators": "Mpandika teny",
+    "Partners": "Mpiara-miasa",
+    "Open_Beauty_Facts": "Open Beauty Facts - cosmetics",
+    "text2": "Angon-drakitra miara-miasa, maimaim-poana ary misokatra momba ny vokatra sakafo avy amin'ny lafivalon'izao tontolo izao."
   },
   "helper": {
     "welcome": {
       "page1": {
-        "title": "Welcome to Hunger Games",
+        "title": "Tongasoa eto amin'ny Hunger Games",
         "text1": "Hunger Games is a collection of mini-games that help contribute to Open Food Facts in many ways. You can play our really exciting games from anywhere. Here is a guided tour of the entire website which will get you started.",
         "text2": "Make sure to login to the Open Food Facts website to get credit for your contributions. If you make a mistake, please take the time to correct it by heading to the website.",
-        "text3": "In case of any doubt about the games, click on the question mark icon at the top right of the page, and you can reach us on slack at the #hunger-games channel"
+        "text3": "Raha misy fisalasalana momba ny lalao dia tsindrio ny sary marika fanontaniana eo an-tampon'ny havanana amin'ny pejy, ary azonao atao ny manatona anay ao amin'ny fantsona #hunger-games"
       },
       "page2": {
-        "title": "Questions Game",
-        "text1": "Does the food product belong to this brand?",
-        "text2": "Simply answer with a <strong>Yes/No</strong>! Don't know the answer? That's alright, just skip it.",
-        "text3": "You can also use your keyboard shortcuts: y,n and k.",
-        "text4": "You can <strong>filter</strong> the products based on country, brands, popularity and much more!",
-        "text5": "If you don't want to do this every single time, you can also <strong>save the filters</strong> by clicking on the star. Next time you come back, find the saved filters on the home page itself"
+        "title": "Lalao Fanontaniana",
+        "text1": "An'ity marika ity ve ny vokatra sakafo?",
+        "text2": "Valio amin'ny <strong>Eny/Tsia</strong>! Tsy fantatrao ny valiny? Tsy maninona, dingano fotsiny.",
+        "text3": "Azonao atao koa ny mampiasa ny hitsin-dàlanao amin'ny fitendry: y,n ary k.",
+        "text4": "Azonao atao ny <strong>sivana</strong> ny vokatra mifototra amin'ny firenena, marika, laza ary maro hafa!",
+        "text5": "Raha tsy te-hanao izany ianao isaky ny mandeha dia azonao atao koa ny <strong>mitahiry ny sivana</strong> amin'ny fipihana ny kintana. Rehefa miverina ianao amin'ny manaraka dia tadiavo ao amin'ny pejy fandraisana ireo sivana voatahiry"
       },
       "page3": {
         "title": "Logos Game",
-        "text1": "Another popular game is the logos game where you have to <strong>select all the logos</strong> you feel are the same.",
-        "text2": "As shown in the example, once you select all the similar logos, just type their value and select where it is a brand, a label or something else. It's that simple!"
+        "text1": "Lalao malaza iray hafa dia ny lalao logos izay tsy maintsy <strong>mifidy ny logos rehetra</strong> tsapanao fa mitovy.",
+        "text2": "Araka ny asehon'ny ohatra, rehefa misafidy ny logo mitovy amin'izany ianao dia soraty fotsiny ny sandany ary safidio ny toerana misy marika, marika na zavatra hafa. Tsotra izany!"
       },
       "page4": {
         "title": "Eco-Score Questions Game",
-        "text1": "Help us finish the remaining questions in the most high priority labels!",
+        "text1": "Ampio izahay hamita ny fanontaniana sisa amin'ny etikety ambony indrindra!",
         "text2": "These cards are linked to labels used in the computation of the Eco-Score.",
         "text3": "<strong>What is Eco-Score?</strong>",
         "text4": "Eco-Score captures the total environmental footprint, making it easier for consumers to compare products and decide which is better for the environment."
       },
       "page5": {
-        "title": "Settings",
-        "text1": "Set your preferred language, and report issues from our settings page.",
+        "title": "Fikiràna",
+        "text1": "Mametraha fiteny tianao, ary mitadiava olana avy amin'ny pejin-kiranay.",
         "text2": "If you're a developer, you can also explore our database content using our dev mode."
       },
       "page6": {
         "title": "Tour",
-        "text1": "Got stuck somewhere? Want to take the tour again?",
-        "text2": "Just click on the question mark and start the journey again!"
+        "text1": "Nihitsoka tany ho any? Te hanao fitetezam-paritra indray?",
+        "text2": "Kitio fotsiny ny marika fanontaniana ary atombohy indray ny dia!"
       }
     },
     "logos": {
       "page1": {
         "title": "Selection",
-        "text1": "Select the crops of a same logo by clicking on them",
+        "text1": "Safidio ny vokatra amin'ny famantarana iray ihany amin'ny fipihana azy ireo",
         "text2": "Selected logos go to the top of the page, you can unselect them by clicking again on them"
       },
       "page2": {
-        "title": "Warning",
-        "text1": "If the crop contains multiple logos, do not select it.",
-        "text2": "If the crop contains only a partial part of a logo, you can select it."
+        "title": "Fampitandremana",
+        "text1": "Raha misy famantarana maromaro ny vokatra dia aza misafidy izany.",
+        "text2": "Raha ampahany amin'ny famantarana ihany no hita amin'ny vokatra dia azonao atao ny misafidy izany."
       },
       "page3": {
-        "title": "Validate",
+        "title": "Hanamafy",
         "text1": "Indicate the type of logo (label, brand, QRcode, ...)",
         "text2": "If it is a label or a brand logo, indicate which one it is",
-        "text3": "Now you can submit your selection",
-        "text4": "Thank you :)"
+        "text3": "Afaka manolotra ny safidinao ianao izao",
+        "text4": "Misaotra anao :)"
       }
     },
     "previous": "Prev",
-    "next": "Next",
-    "close": "Close"
+    "next": "Manaraka",
+    "close": "Akaiky"
   },
   "nutrition": {
+    "table_partialy_filled": "Table with already some data",
+    "display_off_values": "Display values from OpenFoodFacts",
+    "nutrients": "Nutrients",
+    "serving_size": "Serving size",
+    "add_nutrient": "-- add nutrient --",
+    "validate_100g": "Validate (100g)",
+    "validate_serving": "Validate (serving)",
+    "skip": "Dingana",
+    "invalid_image": "Invalid image",
+    "pictures": {
+      "picture_date": "Photo uploaded",
+      "selected_as_nutrients": "Selected as nutriment image ✅",
+      "not_selected_as_nutrients": "Not selected as nutriment ❌"
+    },
     "instructions": {
-      "cropTheTable": "Crop the image to simplify your annotation",
-      "verifyNutrimentDetected": "Indicate if the nutriment detected is correct",
-      "selectMissingNutriments": "Add missing nutriments (you can click even if the word has no box)",
-      "selectValue": "Select the nutritional value of: "
-    },
-    "steps": {
-      "1": "Crop",
-      "2": "Special values",
-      "3": "Nutriments Selection",
-      "4": "Values Selection"
-    },
-    "loading": "Loading...",
-    "unknown_brand": "Brand Unknown",
-    "value_missing": "You forgot to input a value.",
-    "next": "Next step",
-    "prev": "Prev step",
-    "skip": "Skip this product",
-    "validate": "Validate Table",
-    "unselect_picture": "No nutrition info",
-    "basis": "data for: ",
-    "servingSize": "serving size",
-    "value": "Value",
-    "unit": "Unit",
-    "nutriments": {
-      "nutriment_energy-kj": "Energy (kJ)",
-      "nutriment_energy-kcal": "Energy (kCal)",
-      "nutriment_fat": "Fat",
-      "nutriment_saturated-fat": "Saturated fat",
-      "nutriment_carbohydrates": "Carbohydrates",
-      "nutriment_sugars": "Sugar",
-      "nutriment_proteins": "Protein content",
-      "nutriment_fiber": "Fibres",
-      "nutriment_salt": "Salt",
-      "nutriment_sodium": "Sodium"
-    },
-    "history": {
-      "title": "Session History",
-      "status": "status",
-      "product name": "product name",
-      "view": "view page",
-      "edit": "edit page",
-      "SKIP": "ignored",
-      "VALIDATED": "edited",
-      "WRONG_IMAGE": "unselected picture",
-      "close": "close",
-      "open": "open history"
+      "open_button": "Open instructions",
+      "title": "How to use the interface",
+      "chose_between_empty_and_partially_filled": "You can chose between products for which OpenFoodFacts (OFF) has no data about the nutrients. Or product with partially filled nutrient table.",
+      "picture_date_is_display": "The date of the picture is displayed on top of it. Allowing you to check if it's a recent one.",
+      "indicate_not_provided_value": "Empty inputs are ignored. If fibers are not present in the table, you can put \"-\" to specify the value is not available.",
+      "validate_one_column": "Fidio ny habe aseho eo amin'ny sary. Raha manana 100g sy haben'ny fanompoana ianao dia fidio azafady ny 100g satria format efa mahazatra izy io.",
+      "skip_button": "If you don't know how to deal with an image, or you just don't want to do it, press \"skip\". Other user will be able to handle it.",
+      "invalid_image_button": "If the pictures is not a nutritional table, press \"Invalid image\" to remove it from the list of the images to verify",
+      "close": "Akaiky"
     }
   },
   "notfound": {
     "image_alt": "404 not found",
     "nopage": "Whoops! The page you're looking for can't be found.",
-    "redirect1": "Want to play some games?",
-    "redirect2": "Click here"
+    "redirect1": "Te hilalao?",
+    "redirect2": "Tsindrio eto"
   },
   "nutriscore": {
-    "image_alt": "cropped image",
+    "image_alt": "sary notapahina",
     "label": "Annotate Nutri-Score logo detection by batch.",
-    "description": "To do so, select all the images showing the correct/wrong Nutri-Score value ({{label}}), and click on the bottom buttons to say if you selected a set correct or wrong ones.",
+    "description": "Mba hanaovana izany, safidio ny sary rehetra mampiseho ny sanda Nutri-Score marina/diso ({{label}}), ary tsindrio eo amin'ny bokotra ambany mba hilazana raha toa ianao ka nisafidy napetraka marina na diso.",
     "images_remaining": "Still {{remaining}} to annotate",
-    "image_sizes": "Image sizes",
+    "image_sizes": "Haben'ny sary",
     "zoom_on_logo": "Zoom on logo",
-    "select_all": "Select all",
-    "deselect_all": "Unselect all",
-    "incorrect": "Wrong",
-    "correct": "Correct ({{label}})"
+    "select_all": "Fidio daholo",
+    "deselect_all": "Esory daholo",
+    "incorrect": "Diso",
+    "correct": "Ahitsio ({{label}})"
   },
-  "eco-score": {
+  "green-score": {
     "description": "Here is a summary of questions that could improve Eco-Score computation",
-    "countryLabel": "Country"
+    "countryLabel": "Firenena"
   },
   "ingredients": {
-    "description": "This game allows you to validate the pre-selection of images of ingredients lists in various languages for a product, and validate the extracted ingredients.",
-    "current_text": "text from off",
-    "confidence_score": "language confidence",
-    "revert": "Revert",
+    "description": "Ity lalao ity dia ahafahanao manamarina ny fisafidianana mialoha ny sarin'ny lisitry ny akora amin'ny fiteny samihafa ho an'ny vokatra iray, ary manamarina ireo akora nalaina.",
+    "current_text": "lahatsoratra avy eny",
+    "confidence_score": "fahatokiana fiteny",
+    "revert": "Hiverina",
     "parsing": "Get server understanding",
-    "send": "Validate & send",
-    "skip": "Skip this product",
-    "getRobotoffPrediciton": "Get predictions from Robotoff"
+    "send": "Manamarina & mandefa",
+    "skip": "Alefaso ity vokatra ity",
+    "getRobotoffPrediciton": "Mahazoa faminaniana avy amin'ny Robotoff"
   },
   "footer": {
     "appStore": {
@@ -401,7 +382,7 @@
     },
     "playStore": {
       "title": "Play Store",
-      "subtitle": "Get it on"
+      "subtitle": "Ataovy izany"
     },
     "microsoft": {
       "title": "Microsoft",

@@ -11,7 +11,7 @@
           "title": "Logo",
           "description": "Temukan semua dan samakan dengan logo yang telah diberikan"
         },
-        "eco_score": {
+        "green_score": {
           "title": "Eco-score",
           "description": "Beri keterangan pada pertanyaan dengan nilai tertinggi"
         }
@@ -70,6 +70,8 @@
     "countries": "Negara - negara",
     "view": "Lihat",
     "edit": "Sunting",
+    "remaining": "Tersisa: {{count}}",
+    "remaining_other": "Tersisa: >100",
     "hide_images": "Sembunyikan gambar (memuat lebih cepat)",
     "display_images": "Tampilkan gambar",
     "annotations": "Anotasi",
@@ -129,9 +131,11 @@
     "logos-deep-search": "Anotasi tanpa batas",
     "manage": "Kelola",
     "insights": "Wawasan",
-    "nutritions": "Informasi nilai gizi",
+    "nutritions": "kandungan nutrisi",
+    "ingredient-spellcheck": "Pemeriksa ejaan bahan",
+    "ingredient-detection": "Deteksi bahan",
     "settings": "Pengaturan",
-    "eco-score": "Eco-score",
+    "green-score": "Green-Score",
     "dashboard": "Dasbor logo",
     "tour": "Perlihatkan Tur",
     "logged_in_user": "Masuk sebagai {{userName}}",
@@ -247,7 +251,7 @@
     "Open_Food_Facts_wiki": "Wiki Open Food Facts (Inggris)",
     "Translators": "Para penerjemah",
     "Partners": "Para mitra",
-    "Open_Beauty_Facts": "Open Beauty Facts - Kosmetik",
+    "Open_Beauty_Facts": "Open Beauty Facts - kosmetik",
     "text2": "Sebuah basis data kolaboratif, bebas, dan terbuka mengenai produk makanan dari seluruh dunia."
   },
   "helper": {
@@ -313,53 +317,30 @@
     "close": "Tutup"
   },
   "nutrition": {
+    "table_partialy_filled": "Tabel dengan beberapa data",
+    "display_off_values": "Menampilkan nilai dari OpenFoodFacts",
+    "nutrients": "Nutrisi",
+    "serving_size": "Takaran saji",
+    "add_nutrient": "-- tambah nutrisi --",
+    "validate_100g": "Validasi (100g)",
+    "validate_serving": "Validasi (penyajian)",
+    "skip": "Lewati",
+    "invalid_image": "Gambar tidak valid",
+    "pictures": {
+      "picture_date": "Foto terunggah",
+      "selected_as_nutrients": "Dipilih sebagai gambar nutrisi ✅",
+      "not_selected_as_nutrients": "Tidak dipilih sebagai nutrisi ❌"
+    },
     "instructions": {
-      "cropTheTable": "Potong gambar untuk menyederhanakan anotasi Anda",
-      "verifyNutrimentDetected": "Tunjukkan jika makanan bergizi yang terdeteksi benar",
-      "selectMissingNutriments": "Tambahkan nutrisi yang hilang (Anda bisa mengklik bahkan jika katanya tidak memiliki kotak)",
-      "selectValue": "Pilih nilai gizi dari: "
-    },
-    "steps": {
-      "1": "Gambar terpotong",
-      "2": "Nilai - nilai khusus",
-      "3": "Pilihan nutrisi",
-      "4": "Pilihan Nilai"
-    },
-    "loading": "Memuat...",
-    "unknown_brand": "Merek Tidak Dikenal",
-    "value_missing": "Anda lupa memasukkan nilai.",
-    "next": "Langkah selanjutnya",
-    "prev": "Langkah sebelumnya",
-    "skip": "Lewati produk ini",
-    "validate": "Validasikan Tabel",
-    "unselect_picture": "Tidak ada informasi gizi",
-    "basis": "data untuk: ",
-    "servingSize": "takaran saji",
-    "value": "Nilai",
-    "unit": "Unit",
-    "nutriments": {
-      "nutriment_energy-kj": "Energi (kJ)",
-      "nutriment_energy-kcal": "Energi (kKal)",
-      "nutriment_fat": "Lemak",
-      "nutriment_saturated-fat": "Lemak jenuh",
-      "nutriment_carbohydrates": "Karbohidrat",
-      "nutriment_sugars": "Gula",
-      "nutriment_proteins": "Kandungan protein",
-      "nutriment_fiber": "Serat",
-      "nutriment_salt": "Garam",
-      "nutriment_sodium": "Natrium"
-    },
-    "history": {
-      "title": "Riwayat Sesi",
-      "status": "status",
-      "product name": "nama produk",
-      "view": "lihat halaman",
-      "edit": "sunting halaman",
-      "SKIP": "diabaikan",
-      "VALIDATED": "tersunting",
-      "WRONG_IMAGE": "gambar yang tak dipilih",
-      "close": "tutup",
-      "open": "buka riwayat"
+      "open_button": "Buka instruksi",
+      "title": "How to use the interface",
+      "chose_between_empty_and_partially_filled": "Anda dapat memilih antara produk yang OpenFoodFacts (OFF) tidak memiliki data tentang nutrisinya. Atau produk dengan tabel nutrisi yang terisi sebagian.",
+      "picture_date_is_display": "Tanggal gambar ditampilkan di atasnya. Memungkinkan Anda memeriksa apakah gambar tersebut adalah yang terbaru.",
+      "indicate_not_provided_value": "Input kosong akan diabaikan. Jika serat tidak ada dalam tabel, Anda dapat meletakkan “-” untuk menentukan nilai tidak tersedia.",
+      "validate_one_column": "Pilih ukuran yang ditampilkan pada gambar. Jika Anda memiliki 100g dan ukuran penyajian, silakan pilih 100g karena ini adalah format yang dinormalkan.",
+      "skip_button": "Jika Anda tidak tahu cara menangani suatu gambar, atau Anda tidak ingin melakukannya, tekan “lewati”. Pengguna lain akan dapat menanganinya.",
+      "invalid_image_button": "Jika gambar bukan merupakan tabel nutrisi, tekan “Gambar tidak valid” untuk menghapusnya dari daftar gambar yang akan diverifikasi",
+      "close": "Tutup"
     }
   },
   "notfound": {
@@ -380,7 +361,7 @@
     "incorrect": "Salah",
     "correct": "Benar ({{label}})"
   },
-  "eco-score": {
+  "green-score": {
     "description": "Berikut ini adalah ringkasan pertanyaan yang dapat meningkatkan penghitungan Eco-Score",
     "countryLabel": "Negara"
   },

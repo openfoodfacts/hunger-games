@@ -11,7 +11,7 @@
           "title": "Logo",
           "description": "Jwenn logo ki sanble ak logo yo bay la"
         },
-        "eco_score": {
+        "green_score": {
           "title": "Eco-score",
           "description": "Annotate the questions with the highest value"
         }
@@ -52,7 +52,7 @@
   "questions": {
     "category": "kategori",
     "categories": "Kategori",
-    "label": "labèl",
+    "label": "etikèt",
     "labels": "Etikèt",
     "brand": "mak",
     "brands": "Mak",
@@ -70,6 +70,8 @@
     "countries": "Peyi",
     "view": "View",
     "edit": "Modifye",
+    "remaining": "Remaining: {{count}}",
+    "remaining_other": "Remaining: >100",
     "hide_images": "Kache imaj yo (chaje pi vit)",
     "display_images": "Montre imaj yo",
     "annotations": "Annotations",
@@ -90,25 +92,25 @@
       "long_label": {
         "type": "Kalite Kesyon",
         "value": "Proposed Value",
-        "country": "Product Country",
+        "country": "Peyi pwodwi",
         "brand": "Mak pwodwi",
         "popularity": "Triye pa popilarite",
         "edit": "",
-        "campaign": "Campaign"
+        "campaign": "Kanpay"
       },
       "placeholders": {
-        "value": "Value (Fanta, en:organic,...)",
+        "value": "Valè (Fanta, en:organic,...)",
         "brand": "Auchan, Danone, Herta, ...",
         "campaign": "Annotation campaigns"
       },
       "actions": {
-        "edit": "Edit Filters",
+        "edit": "Modifye filtè",
         "cancel": "Anile",
         "apply": "Aplike"
       }
     },
     "other_questions": "Lòt kesyon",
-    "send": "Send",
+    "send": "Voye",
     "flag": "Something wrong? Report/flag the image!",
     "unflag": "Unflag the image",
     "reset_filters": "Reset filters",
@@ -129,9 +131,11 @@
     "logos-deep-search": "Infinite annotation",
     "manage": "Manage",
     "insights": "Insights",
-    "nutritions": "Nutrition facts",
-    "settings": "Settings",
-    "eco-score": "Eco-score",
+    "nutritions": "Nutrition",
+    "ingredient-spellcheck": "Verifikasyon òtograf engredyan",
+    "ingredient-detection": "Deteksyon engredyan",
+    "settings": "Paramèt",
+    "green-score": "Green-Score",
     "dashboard": "Logos dashboard",
     "tour": "Show tour",
     "logged_in_user": "Konekte kòm {{userName}}",
@@ -160,12 +164,12 @@
     "count": "Count",
     "id": "Id",
     "value": "Valè",
-    "created_at": "Created at",
-    "completed_at": "Completed at",
+    "created_at": "Dat li kreye",
+    "completed_at": "Dat li konplete",
     "automatic": "Otomatik",
-    "human_required": "Human required",
+    "human_required": "Moun mande",
     "edit_product": "Open product edit",
-    "view_product": "Open product page",
+    "view_product": "Paj open product",
     "view_crops_for_this_product": "Annotate product logos"
   },
   "logos": {
@@ -186,7 +190,7 @@
     "category": "Kategori",
     "nutrition_label": "Etikèt nitrisyon",
     "no_logo": "Pa yon logo",
-    "store": "Store",
+    "store": "Magazen",
     "detail": "Detay logo a",
     "id": "Logo ID:",
     "barcode": "Kòd ba:",
@@ -197,10 +201,10 @@
     "number_of_results": "Kantite rezilta:",
     "loading": "Chaje…",
     "refresh": "Rafrechi",
-    "search_specific": "Search specific logo",
+    "search_specific": "Chèche yon logo spesifik",
     "load_more": "Chaje plis",
     "no_results": "Pa gen logo jwenn",
-    "result_count": "Shows {{showing}} on {{available}} available",
+    "result_count": "Montre {{showing}} sou {{available}} ki disponib",
     "flag": "Something wrong? Report/flag the image!",
     "unflag": "Unflag the image",
     "crop_image_title": "crop of the logo",
@@ -219,7 +223,7 @@
     }
   },
   "settings": {
-    "settings": "Settings",
+    "settings": "Paramèt",
     "language": "Lang",
     "save": "Anrejistre",
     "reportIssue": "Ou jwenn yon bug? Tanpri fè nou konnen.",
@@ -240,21 +244,21 @@
     },
     "discover_the_project": "Dekouvri pwojè a",
     "Who_we_are": "Kiyès nou ye",
-    "Vision_Mission_Values_and_Programs": "Vision, Mission, Values and Programs",
+    "Vision_Mission_Values_and_Programs": "Vizyon, Misyon, Valè ak Pwogram",
     "FAQS": "FAQS",
-    "open_Food_Facts_blog": "Open Food Facts blog",
-    "Press": "Press",
+    "open_Food_Facts_blog": "Blog Open Food Facts",
+    "Press": "Laprès",
     "Open_Food_Facts_wiki": "Open Food Facts wiki (en)",
     "Translators": "Tradiktè",
     "Partners": "Patenè",
-    "Open_Beauty_Facts": "Open Beauty Facts - Kosmetik",
+    "Open_Beauty_Facts": "Open Beauty Facts - cosmetics",
     "text2": "A collaborative, free and open database of food products from around the world."
   },
   "helper": {
     "welcome": {
       "page1": {
         "title": "Byenveni nan Hunger Games",
-        "text1": "Hunger Games is a collection of mini-games that help contribute to Open Food Facts in many ways. You can play our really exciting games from anywhere. Here is a guided tour of the entire website which will get you started.",
+        "text1": "Hunger Games se yon koleksyon mini-jwèt ki ede kontribye nan Open Food Facts nan plizyè fason. Ou ka jwe jwèt reyèlman enteresan nou yo soti nan nenpòt kote. Isit la se yon vizit gide nan sit entènèt la ki pral fèw kòmanse.",
         "text2": "Make sure to login to the Open Food Facts website to get credit for your contributions. If you make a mistake, please take the time to correct it by heading to the website.",
         "text3": "In case of any doubt about the games, click on the question mark icon at the top right of the page, and you can reach us on slack at the #hunger-games channel"
       },
@@ -279,7 +283,7 @@
         "text4": "Eco-Score captures the total environmental footprint, making it easier for consumers to compare products and decide which is better for the environment."
       },
       "page5": {
-        "title": "Settings",
+        "title": "Paramèt",
         "text1": "Set your preferred language, and report issues from our settings page.",
         "text2": "If you're a developer, you can also explore our database content using our dev mode."
       },
@@ -313,57 +317,34 @@
     "close": "Fèmen"
   },
   "nutrition": {
+    "table_partialy_filled": "Table with already some data",
+    "display_off_values": "Display values from OpenFoodFacts",
+    "nutrients": "Nutrients",
+    "serving_size": "Serving size",
+    "add_nutrient": "-- add nutrient --",
+    "validate_100g": "Validate (100g)",
+    "validate_serving": "Validate (serving)",
+    "skip": "Pase",
+    "invalid_image": "Invalid image",
+    "pictures": {
+      "picture_date": "Photo uploaded",
+      "selected_as_nutrients": "Selected as nutriment image ✅",
+      "not_selected_as_nutrients": "Not selected as nutriment ❌"
+    },
     "instructions": {
-      "cropTheTable": "Crop the image to simplify your annotation",
-      "verifyNutrimentDetected": "Indicate if the nutriment detected is correct",
-      "selectMissingNutriments": "Add missing nutriments (you can click even if the word has no box)",
-      "selectValue": "Select the nutritional value of: "
-    },
-    "steps": {
-      "1": "Crop",
-      "2": "Valè espesyal",
-      "3": "Nutriments Selection",
-      "4": "Values Selection"
-    },
-    "loading": "Chaje...",
-    "unknown_brand": "Mak Enkoni",
-    "value_missing": "Ou bliye antre yon valè.",
-    "next": "Pwochen etap",
-    "prev": "Etap avan",
-    "skip": "Sote pwodwi sa a",
-    "validate": "Validate Table",
-    "unselect_picture": "Pa gen enfòmasyon sou nitrisyon",
-    "basis": "done pou: ",
-    "servingSize": "serving size",
-    "value": "Valè",
-    "unit": "Unit",
-    "nutriments": {
-      "nutriment_energy-kj": "Enèji (kJ)",
-      "nutriment_energy-kcal": "Enèji (kCal)",
-      "nutriment_fat": "Grès",
-      "nutriment_saturated-fat": "Saturated fat",
-      "nutriment_carbohydrates": "Carbohydrates",
-      "nutriment_sugars": "Sik",
-      "nutriment_proteins": "Protein content",
-      "nutriment_fiber": "Fibres",
-      "nutriment_salt": "Sèl",
-      "nutriment_sodium": "Sodyòm"
-    },
-    "history": {
-      "title": "Session History",
-      "status": "estati",
-      "product name": "non pwodwi",
-      "view": "view page",
-      "edit": "edit page",
-      "SKIP": "ignored",
-      "VALIDATED": "edited",
-      "WRONG_IMAGE": "unselected picture",
-      "close": "fèmen",
-      "open": "open history"
+      "open_button": "Open instructions",
+      "title": "How to use the interface",
+      "chose_between_empty_and_partially_filled": "You can chose between products for which OpenFoodFacts (OFF) has no data about the nutrients. Or product with partially filled nutrient table.",
+      "picture_date_is_display": "The date of the picture is displayed on top of it. Allowing you to check if it's a recent one.",
+      "indicate_not_provided_value": "Empty inputs are ignored. If fibers are not present in the table, you can put \"-\" to specify the value is not available.",
+      "validate_one_column": "Chwazi gwosè ki parèt nan foto a. Si ou gen 100g epi ou gen yon pòsyon, tanpri chwazi 100g paske se yon fòma nòmal.",
+      "skip_button": "If you don't know how to deal with an image, or you just don't want to do it, press \"skip\". Other user will be able to handle it.",
+      "invalid_image_button": "If the pictures is not a nutritional table, press \"Invalid image\" to remove it from the list of the images to verify",
+      "close": "Fèmen"
     }
   },
   "notfound": {
-    "image_alt": "404 not found",
+    "image_alt": "404 pa egziste",
     "nopage": "Whoops! The page you're looking for can't be found.",
     "redirect1": "Want to play some games?",
     "redirect2": "Klike la"
@@ -372,15 +353,15 @@
     "image_alt": "cropped image",
     "label": "Annotate Nutri-Score logo detection by batch.",
     "description": "To do so, select all the images showing the correct/wrong Nutri-Score value ({{label}}), and click on the bottom buttons to say if you selected a set correct or wrong ones.",
-    "images_remaining": "Still {{remaining}} to annotate",
-    "image_sizes": "Image sizes",
-    "zoom_on_logo": "Zoom on logo",
+    "images_remaining": "Toujou {{remaining}} pou annote",
+    "image_sizes": "Gwosè imaj",
+    "zoom_on_logo": "Agrandi logo a",
     "select_all": "Chwazi tout",
     "deselect_all": "Deseleksyone tout",
-    "incorrect": "Wrong",
+    "incorrect": "Pa bon",
     "correct": "Kòrèk ({{label}})"
   },
-  "eco-score": {
+  "green-score": {
     "description": "Here is a summary of questions that could improve Eco-Score computation",
     "countryLabel": "Peyi"
   },
@@ -388,7 +369,7 @@
     "description": "This game allows you to validate the pre-selection of images of ingredients lists in various languages for a product, and validate the extracted ingredients.",
     "current_text": "text from off",
     "confidence_score": "language confidence",
-    "revert": "Revert",
+    "revert": "Retounen",
     "parsing": "Get server understanding",
     "send": "Validate & send",
     "skip": "Sote pwodwi sa a",

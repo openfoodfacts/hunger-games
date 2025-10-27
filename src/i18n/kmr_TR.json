@@ -11,7 +11,7 @@
           "title": "Logos",
           "description": "Find all the logos matching the given logo"
         },
-        "eco_score": {
+        "green_score": {
           "title": "Eco-score",
           "description": "Annotate the questions with the highest value"
         }
@@ -70,6 +70,8 @@
     "countries": "Countries",
     "view": "View",
     "edit": "Edit",
+    "remaining": "Remaining: {{count}}",
+    "remaining_other": "Remaining: >100",
     "hide_images": "Hide images (faster loading)",
     "display_images": "Display images",
     "annotations": "Annotations",
@@ -129,9 +131,11 @@
     "logos-deep-search": "Infinite annotation",
     "manage": "Manage",
     "insights": "Insights",
-    "nutritions": "Xwarin û rast",
+    "nutritions": "Xwarin û",
+    "ingredient-spellcheck": "Kontrolkirina rastnivîsê ya pêkhateyan",
+    "ingredient-detection": "Tesbîtkirina pêkhateyan",
     "settings": "Ligorî",
-    "eco-score": "Eco-score",
+    "green-score": "Green-Score",
     "dashboard": "Logos dashboard",
     "tour": "Show tour",
     "logged_in_user": "Logged as {{userName}}",
@@ -247,7 +251,7 @@
     "Open_Food_Facts_wiki": "Open Food Facts wiki (en)",
     "Translators": "وەرگێڕەکان",
     "Partners": "Partners",
-    "Open_Beauty_Facts": "Open Beauty Facts - Cosmetics",
+    "Open_Beauty_Facts": "Open Beauty Facts - cosmetics",
     "text2": "A collaborative, free and open database of food products from around the world."
   },
   "helper": {
@@ -313,53 +317,30 @@
     "close": "Close"
   },
   "nutrition": {
+    "table_partialy_filled": "Table with already some data",
+    "display_off_values": "Display values from OpenFoodFacts",
+    "nutrients": "Nutrients",
+    "serving_size": "Serving size",
+    "add_nutrient": "-- add nutrient --",
+    "validate_100g": "Validate (100g)",
+    "validate_serving": "Validate (serving)",
+    "skip": "Skip",
+    "invalid_image": "Invalid image",
+    "pictures": {
+      "picture_date": "Photo uploaded",
+      "selected_as_nutrients": "Selected as nutriment image ✅",
+      "not_selected_as_nutrients": "Not selected as nutriment ❌"
+    },
     "instructions": {
-      "cropTheTable": "Crop the image to simplify your annotation",
-      "verifyNutrimentDetected": "Indicate if the nutriment detected is correct",
-      "selectMissingNutriments": "Add missing nutriments (you can click even if the word has no box)",
-      "selectValue": "Select the nutritional value of: "
-    },
-    "steps": {
-      "1": "Crop",
-      "2": "Special values",
-      "3": "Nutriments Selection",
-      "4": "Values Selection"
-    },
-    "loading": "Loading...",
-    "unknown_brand": "Brand Unknown",
-    "value_missing": "You forgot to input a value.",
-    "next": "Next step",
-    "prev": "Prev step",
-    "skip": "Skip this product",
-    "validate": "Validate Table",
-    "unselect_picture": "No nutrition info",
-    "basis": "data for: ",
-    "servingSize": "serving size",
-    "value": "Value",
-    "unit": "Unit",
-    "nutriments": {
-      "nutriment_energy-kj": "Calories (kJ)",
-      "nutriment_energy-kcal": "Energy (kCal)",
-      "nutriment_fat": "Rûn",
-      "nutriment_saturated-fat": "Saturated fat",
-      "nutriment_carbohydrates": "Karbohîratê",
-      "nutriment_sugars": "Sugar",
-      "nutriment_proteins": "Protein content",
-      "nutriment_fiber": "Fibres",
-      "nutriment_salt": "Xwê",
-      "nutriment_sodium": "Sodyum"
-    },
-    "history": {
-      "title": "Session History",
-      "status": "status",
-      "product name": "product name",
-      "view": "view page",
-      "edit": "edit page",
-      "SKIP": "ignored",
-      "VALIDATED": "edited",
-      "WRONG_IMAGE": "unselected picture",
-      "close": "close",
-      "open": "open history"
+      "open_button": "Open instructions",
+      "title": "How to use the interface",
+      "chose_between_empty_and_partially_filled": "You can chose between products for which OpenFoodFacts (OFF) has no data about the nutrients. Or product with partially filled nutrient table.",
+      "picture_date_is_display": "The date of the picture is displayed on top of it. Allowing you to check if it's a recent one.",
+      "indicate_not_provided_value": "Empty inputs are ignored. If fibers are not present in the table, you can put \"-\" to specify the value is not available.",
+      "validate_one_column": "Mezinahiya ku di wêneyê de tê xuyang kirin hilbijêre. Heke 100g û mezinahiya servîsê we hebe, ji kerema xwe 100g hilbijêrin ji ber ku ew formateke normalîzekirî ye.",
+      "skip_button": "If you don't know how to deal with an image, or you just don't want to do it, press \"skip\". Other user will be able to handle it.",
+      "invalid_image_button": "If the pictures is not a nutritional table, press \"Invalid image\" to remove it from the list of the images to verify",
+      "close": "Close"
     }
   },
   "notfound": {
@@ -380,7 +361,7 @@
     "incorrect": "Wrong",
     "correct": "Correct ({{label}})"
   },
-  "eco-score": {
+  "green-score": {
     "description": "Here is a summary of questions that could improve Eco-Score computation",
     "countryLabel": "Country"
   },

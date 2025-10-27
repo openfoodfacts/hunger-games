@@ -5,87 +5,89 @@
       "cards": {
         "questions": {
           "title": "Ερωτήσεις",
-          "description": "Tell us if the given image answers the questions"
+          "description": "Πείτε μας εάν η εικόνα που δίνεται απαντά στις ερωτήσεις"
         },
         "logos": {
-          "title": "Logos",
-          "description": "Find all the logos matching the given logo"
+          "title": "Λογότυπα",
+          "description": "Βρείτε όλα τα λογότυπα που ταιριάζουν με το συγκεκριμένο λογότυπο"
         },
-        "eco_score": {
-          "title": "Eco-score",
-          "description": "Annotate the questions with the highest value"
+        "green_score": {
+          "title": "Εκο-σκόρ",
+          "description": "Σημειώστε τις ερωτήσεις με την υψηλότερη αξία"
         }
       }
     },
     "account_band": {
-      "title": "Want to make your contribution count? Create an account or sign in on Open Food Facts!",
-      "log_in": "Όνομα χρήστη",
-      "sign_up": "Εγγραφείτε",
-      "contribution_details": "Learn why your contribution matters"
+      "title": "Θέλετε να κάνετε τη συνεισφορά σας να μετράει; Δημιουργήστε έναν λογαριασμό ή συνδεθείτε στο Open Food Facts!",
+      "log_in": "Σύνδεση",
+      "sign_up": "Εγγραφή",
+      "contribution_details": "Μάθετε γιατί η συνεισφορά σας είναι σημαντική"
     },
-    "saved_filters": "Saved Filters",
+    "saved_filters": "Αποθηκευμένα Φίλτρα",
     "contribution_modal": {
-      "title": "Your contribution matters",
-      "information": "Hunger Games is an effort to leverage the results of our OCR and artificial intelligence. When you use Hunger Games by Open Food Facts, you improve our entire database which helps the community make better food choices. We gather your annotations and use them to make Open Food Facts more accurate and efficient.",
-      "thank_you": "Thank you for helping us improve Open Food Facts so that more people can use it easily."
+      "title": "Η συνεισφορά σας έχει σημασία",
+      "information": "Οι Αγώνες Πείνας είναι μια προσπάθεια αξιοποίησης των αποτελεσμάτων του OCR και της τεχνητής νοημοσύνης μας. Όταν χρησιμοποιείτε τους Αγώνες Πείνας από το Open Food Facts, βελτιώνετε ολόκληρη τη βάση δεδομένων μας, η οποία βοηθά την κοινότητα να κάνει καλύτερες επιλογές τροφίμων. Συγκεντρώνουμε τους σχολιασμούς σας και τους χρησιμοποιούμε για να κάνουμε τα Open Food Facts πιο ακριβή και αποτελεσματικά.",
+      "thank_you": "Σας ευχαριστούμε που μας βοηθήσατε να βελτιώσουμε τα Open Food Facts, ώστε περισσότεροι άνθρωποι να μπορούν να το χρησιμοποιούν εύκολα."
     },
     "statistics": {
-      "title": "{{userName}} statistics:",
+      "title": "Στατιστικά {{userName}}:",
       "editorCount": {
-        "title": "Editor",
-        "description": "Number of editions done"
+        "title": "Συντάκτης",
+        "description": "Αριθμός εκδόσεων που έγιναν"
       },
       "contributorCount": {
-        "title": "Συντελεστης",
-        "description": "Adding a new product"
+        "title": "Συνεισφέρων",
+        "description": "Προσθήκη νέου προϊόντος"
       },
       "photographerCount": {
-        "title": "Photographer",
-        "description": "Taking photos for a product"
+        "title": "Φωτογράφος",
+        "description": "Λήψη φωτογραφιών για ένα προϊόν"
       }
     }
   },
   "flagged_images": {
-    "title": "Images flagged by users",
-    "loading": "Loading"
+    "title": "Εικόνες που έχουν επισημανθεί από χρήστες",
+    "loading": "Φόρτωση"
   },
   "questions": {
-    "category": "κατηγορια",
+    "category": "κατηγορία",
     "categories": "Κατηγορίες",
-    "label": "ετικετα",
+    "label": "ετικέτα",
     "labels": "Ετικέτες",
-    "brand": "μαρκα",
+    "brand": "μάρκα",
     "brands": "Μάρκες",
-    "packaging": "συσκευασια",
+    "packaging": "συσκευασία",
     "quantity": "Ποσότητα",
-    "insightTypeLabel": "Only shows",
+    "insightTypeLabel": "Δείχνει μόνο",
     "ingredients": "Συστατικά",
     "product_weight": "βάρος προϊόντος",
     "popularity_sort": "Ταξινόμηση κατά δημοτικότητα",
     "see_examples": "Δείτε παραδείγματα αυτού ",
     "no": "Όχι",
-    "skip": "Skip",
+    "skip": "Παράλειψη",
     "yes": "Ναι",
     "no_questions_remaining": "Δεν απομένουν ερωτήσεις",
     "countries": "Χώρες",
     "view": "Προβολή",
     "edit": "Επεξεργασία",
+    "remaining": "Απομένουν: {{count}}",
+    "remaining_other": "Απομένουν: >100",
     "hide_images": "Απόκρυψη εικόνων (ταχύτερη φόρτωση)",
     "display_images": "Εμφάνιση εικόνων",
-    "annotations": "Annotations",
+    "annotations": "Σχολιασμοί",
     "last_annotations": "Τελευταίοι σχολιασμοί",
-    "remaining_annotations": "Remaining questions",
+    "remaining_annotations": "Υπολειπόμενες ερωτήσεις",
     "annotated_annotations": "Σχολιάστηκε",
     "filters": {
-      "active_filter_number": "+{{count}} filters",
-      "active_filter_number_one": "+{{count}} filter",
-      "active_filter_number_zero": "no filter",
+      "active_filter_number": "+{{count}} φίλτρα",
+      "active_filter_number_one": "+{{count}} φίλτρο",
+      "active_filter_number_zero": "χωρίς φίλτρο",
       "short_label": {
-        "value": "value",
-        "country": "χωρα",
-        "brand": "μαρκα",
-        "popularity": "popularity",
-        "campaign": "camp"
+        "value": "τιμή",
+        "country": "χώρα",
+        "brand": "μάρκα",
+        "popularity": "δημοτικότητα",
+        "campaign": "καμπ"
       },
       "long_label": {
         "type": "Τύπος Ερώτησης",
@@ -94,12 +96,12 @@
         "brand": "Μάρκα προϊόντος",
         "popularity": "Ταξινόμηση κατά δημοτικότητα",
         "edit": "",
-        "campaign": "Campaign"
+        "campaign": "Καμπάνια"
       },
       "placeholders": {
-        "value": "Value (Fanta, en:organic,...)",
+        "value": "Τιμή (Fanta, ελ:οργανική,...)",
         "brand": "Auchan, Danone, Herta, ...",
-        "campaign": "Annotation campaigns"
+        "campaign": "Καμπάνιες σχολιασμού"
       },
       "actions": {
         "edit": "Επεξεργασία Φίλτρων",
@@ -107,309 +109,288 @@
         "apply": "Εφαρμογή"
       }
     },
-    "other_questions": "Other questions",
-    "send": "Send",
-    "flag": "Something wrong? Report/flag the image!",
-    "unflag": "Unflag the image",
-    "reset_filters": "Reset filters",
-    "log_in": "Όνομα χρήστη",
-    "sign_up": "Εγγραφείτε",
-    "login_title": "Make your annotation count",
-    "login_description": "You are not currently logged into Open Food Facts. To get your answers directly applied to products, and associated to your account, consider logging in to your Open Food Facts account, or creating one",
-    "please_wait_while_we_fetch_the_question": "Please wait while we fetch the question!"
+    "other_questions": "Άλλες ερωτήσεις",
+    "send": "Αποστολή",
+    "flag": "Υπάρχει κάποιο πρόβλημα; Αναφορά/επισήμανση της εικόνας!",
+    "unflag": "Αναίρεση επισήμανσης της εικόνας",
+    "reset_filters": "Επαναφορά φίλτρων",
+    "log_in": "Σύνδεση",
+    "sign_up": "Εγγραφή",
+    "login_title": "Κάντε τον σχολιασμό σας να μετράει",
+    "login_description": "Δεν έχετε συνδεθεί αυτήν τη στιγμή στο Open Food Facts. Για να εφαρμόζονται απευθείας απαντήσεις σας σε προϊόντα και να συσχετίζονται με τον λογαριασμό σας, σκεφτείτε να συνδεθείτε στον λογαριασμό σας Open Food Facts ή να δημιουργήσετε έναν",
+    "please_wait_while_we_fetch_the_question": "Περιμένετε μέχρι να φέρουμε την ερώτηση!"
   },
   "menu": {
-    "title": "Hunger Games",
+    "title": "Αγώνες Πείνας",
     "games": "Παιχνίδια",
     "questions": "Ερωτήσεις",
-    "logos": "Logos",
-    "logos-annotation": "Logos annotation",
-    "logos-search": "Logos search",
-    "logos-product-search": "Annotation per products",
-    "logos-deep-search": "Infinite annotation",
+    "logos": "Λογότυπα",
+    "logos-annotation": "Σχολιασμός λογότυπων",
+    "logos-search": "Αναζήτηση λογότυπων",
+    "logos-product-search": "Σχολιασμός ανά προϊόν",
+    "logos-deep-search": "Άπειρος σχολιασμός",
     "manage": "Διαχείριση",
-    "insights": "Insights",
-    "nutritions": "Διατροφικά στοιχεία",
+    "insights": "Διαπιστώσεις",
+    "nutritions": "Διατροφική Αξία",
+    "ingredient-spellcheck": "Ορθογραφικός έλεγχος συστατικών",
+    "ingredient-detection": "Ανίχνευση συστατικών",
     "settings": "Ρυθμίσεις",
-    "eco-score": "Eco-score",
-    "dashboard": "Logos dashboard",
-    "tour": "Show tour",
-    "logged_in_user": "Logged as {{userName}}",
-    "log_in": "Click to login"
+    "green-score": "Green-Score",
+    "dashboard": "Πίνακας λογότυπων",
+    "tour": "Εμφάνιση ξενάγησης",
+    "logged_in_user": "Έχετε συνδεθεί ως {{userName}}",
+    "log_in": "Κάντε κλικ για να συνδεθείτε"
   },
   "insights": {
-    "insights": "Insights",
-    "barcode": "Barcode",
-    "barcode_placeholder": "barcode",
-    "value_tag": "Value tag",
-    "value_placeholder": "ex: en:mueslis, bjorg,...",
-    "type": "Type",
+    "insights": "Διαπιστώσεις",
+    "barcode": "Γραμμικός κωδικός",
+    "barcode_placeholder": "γραμμωτός κωδικός",
+    "value_tag": "Ετικέτα τιμής",
+    "value_placeholder": "πχ: en:mueslis, bjorg,...",
+    "type": "Τύπος",
     "annotated": "Σχολιάστηκε",
-    "annotation": "Annotation",
-    "not_annotated": "Not annotated",
+    "annotation": "Σχολιασμός",
+    "not_annotated": "Χωρίς σχολιασμό",
     "all": "Όλα",
-    "label": "Ετικετα",
-    "product_weight": "Product weight",
+    "label": "Ετικέτα",
+    "product_weight": "Βάρος προϊόντος",
     "category": "Κατηγορία",
-    "expiration_date": "Expiration date",
-    "packager_code": "Packager code",
-    "skipped": "Skipped (-1)",
-    "rejected": "Rejected (0)",
-    "accepted": "Accepted (1)",
+    "expiration_date": "Ημερομηνία λήξης",
+    "packager_code": "Κωδικός συσκευαστή",
+    "skipped": "Παραλήφθηκε (-1)",
+    "rejected": "Απορρίφθηκε (0)",
+    "accepted": "Αποδέχτηκε (1)",
     "search": "Αναζήτηση",
-    "count": "Count",
-    "id": "Id",
-    "value": "Value",
-    "created_at": "Created at",
-    "completed_at": "Completed at",
-    "automatic": "Automatic",
-    "human_required": "Human required",
-    "edit_product": "Open product edit",
-    "view_product": "Open product page",
-    "view_crops_for_this_product": "Annotate product logos"
+    "count": "Πλήθος",
+    "id": "Αναγνωριστικό",
+    "value": "Τιμή",
+    "created_at": "Δημιουργήθηκε στις",
+    "completed_at": "Ολοκληρώθηκε στις",
+    "automatic": "Αυτόματο",
+    "human_required": "Απαιτείται άνθρωπος",
+    "edit_product": "Άνοιγμα επεξεργασίας προϊόντος",
+    "view_product": "Άνοιγμα σελίδας προϊόντος",
+    "view_crops_for_this_product": "Σχολιασμός λογότυπων προϊόντων"
   },
   "logos": {
-    "annotation": "Annotation: ",
-    "annotations": "Logo annotations",
-    "task_description": "Select all logos that are exactly the same, and give them a name like \"en:EU Organic\" and a type like \"label\".",
-    "select_all": "Select all",
-    "unselect_all": "Unselect all",
-    "distance": "Distance:",
-    "value": "Value",
-    "submit": "Submit",
-    "type": "Type",
-    "label": "Ετικετα",
+    "annotation": "Σχολιασμός: ",
+    "annotations": "Σχολιασμοί λογοτύπου",
+    "task_description": "Επιλέξτε όλα τα λογότυπα που είναι ακριβώς τα ίδια και δώστε τους ένα όνομα όπως \"en:EU Organic\" και έναν τύπο όπως \"ετικέτα\".",
+    "select_all": "Επιλογή όλων",
+    "unselect_all": "Αποεπιλογή όλων",
+    "distance": "Απόσταση:",
+    "value": "Τιμή",
+    "submit": "Υποβολή",
+    "type": "Τύπος",
+    "label": "Ετικέτα",
     "brand": "Μάρκα",
-    "packager_code": "Packager code",
+    "packager_code": "Κωδικός συσκευαστή",
     "packaging": "Συσκευασία",
-    "qr_code": "QR code",
+    "qr_code": "Κωδικός QR",
     "category": "Κατηγορία",
-    "nutrition_label": "Nutrition label",
-    "no_logo": "Not a logo",
+    "nutrition_label": "Διατροφική ετικέτα",
+    "no_logo": "Δεν είναι λογότυπο",
     "store": "Κατάστημα",
-    "detail": "Logo detail",
-    "id": "Logo ID:",
-    "barcode": "Barcode:",
-    "full_image": "Full image",
-    "update": "Update",
-    "no_found": "No logo found",
+    "detail": "Λεπτομέρειες λογότυπου",
+    "id": "Αναγνωριστικό λογότυπου:",
+    "barcode": "Γραμμωτός κωδικός:",
+    "full_image": "Πλήρης εικόνα",
+    "update": "Ενημέρωση",
+    "no_found": "Δεν βρέθηκε λογότυπο",
     "search": "Αναζήτηση",
-    "number_of_results": "Number of results:",
+    "number_of_results": "Αριθμός αποτελεσμάτων:",
     "loading": "Φόρτωση…",
     "refresh": "Ανανέωση",
-    "search_specific": "Search specific logo",
-    "load_more": "Load more",
-    "no_results": "No logo found",
-    "result_count": "Shows {{showing}} on {{available}} available",
-    "flag": "Something wrong? Report/flag the image!",
-    "unflag": "Unflag the image",
-    "crop_image_title": "crop of the logo",
-    "no_more_questions": "No more questions about this logo. You can try to find more logos with the following game.",
+    "search_specific": "Αναζήτηση συγκεκριμένου λογότυπου",
+    "load_more": "Φόρτωση περισσοτέρων",
+    "no_results": "Δεν βρέθηκε λογότυπο",
+    "result_count": "Εμφανίζει το {{showing}} διαθέσιμο στο {{available}}",
+    "flag": "Υπάρχει κάποιο πρόβλημα; Αναφορά/επισήμανση της εικόνας!",
+    "unflag": "Αναίρεση επισήμανσης της εικόνας",
+    "crop_image_title": "περικοπή του λογότυπου",
+    "no_more_questions": "Δεν υπάρχουν άλλες ερωτήσεις σχετικά με αυτό το λογότυπο. Μπορείτε να προσπαθήσετε να βρείτε περισσότερα λογότυπα με το παρακάτω παιχνίδι.",
     "loading_messages": {
-      "pending_reference_logos": "We are loading some logos examples to initialise the search",
-      "failed_reference_logos": "We did not find any logos with this annotation. Try to use the following game to annotate some of them."
+      "pending_reference_logos": "Φορτώνουμε μερικά παραδείγματα λογότυπων για να αρχικοποιήσουμε την αναζήτηση",
+      "failed_reference_logos": "Δεν βρήκαμε κανένα λογότυπο με αυτόν τον σχολιασμό. Προσπαθήστε να χρησιμοποιήσετε το παρακάτω παιχνίδι για να σχολιάσετε μερικά από αυτά."
     },
     "deep_search": {
-      "title": "Logo search",
-      "description": "Select a logo you want to look for, and let's go to catch them all. For every logo you annotate, we will fetch it's neighbors such that you might never stop to annotate. (Press Shift to select range of logos)",
-      "ref_logos": "Reference logos (logo already annotated with this value)",
-      "remaining": "Remaining to annotate",
-      "select_all": "Select All",
-      "unselect_all": "Deselect All"
+      "title": "Αναζήτηση λογότυπων",
+      "description": "Επιλέξτε ένα λογότυπο που θέλετε να αναζητήσετε και πάμε να τα πιάσουμε όλα. Για κάθε λογότυπο που σχολιάζετε, θα φέρουμε τους γείτονές του έτσι ώστε να μην σταματήσετε ποτέ να σχολιάζετε. (Πατήστε Shift για να επιλέξετε εύρος λογότυπων)",
+      "ref_logos": "Λογότυπα αναφοράς (το λογότυπο έχει ήδη σχολιαστεί με αυτήν την τιμή)",
+      "remaining": "Απομένουν για σχολιασμό",
+      "select_all": "Επιλογή όλων",
+      "unselect_all": "Αποεπιλογή όλων"
     }
   },
   "settings": {
     "settings": "Ρυθμίσεις",
-    "language": "Languages",
+    "language": "Γλώσσες",
     "save": "Αποθήκευση",
-    "reportIssue": "Found a bug? Please let us know.",
-    "dev_mode_title": "To get more options, activate the dev mode",
-    "dev_mode_label": "Dev Mode",
-    "dev_page_toggle": "Show {{name}} page",
+    "reportIssue": "Βρήκατε ένα σφάλμα; Παρακαλούμε ενημερώστε μας.",
+    "dev_mode_title": "Για περισσότερες επιλογές, ενεργοποιήστε τη λειτουργία προγραμματιστή",
+    "dev_mode_label": "Λειτουργία Προγραμματιστή",
+    "dev_page_toggle": "Εμφάνιση σελίδας {{name}}",
     "join_community": "Γίνετε μέλος της κοινότητας",
-    "text1": "Open Food Facts is a collaborative project built by tens of thousands of volunteers and managed by a non-profit organization with 8 employees. We need your donations to fund the Open Food Facts 2024 budget and to continue to develop the project.",
-    "thank_you": "Thank you",
+    "text1": "Το Open Food Facts είναι ένα συλλογικό έργο που δημιουργήθηκε από δεκάδες χιλιάδες εθελοντές και το οποίο διαχειρίζεται ένας μη κερδοσκοπικός οργανισμός με 8 υπαλλήλους. Χρειαζόμαστε τις δωρεές σας για να χρηματοδοτήσουμε τον προϋπολογισμό Open Food Facts 2024 και να συνεχίσουμε να αναπτύσσουμε το έργο.",
+    "thank_you": "Ευχαριστούμε",
     "donate": "Κάντε Δωρεά",
     "join_the_community": {
-      "discover_our": "Discover our ",
-      "code_of_conduct": "Code of conduct ",
-      "join_us_on": "Join us on ",
-      "forum": "Forum",
-      "subscribe_to_our": "Subscribe to our ",
-      "newsletter": "newsletter"
+      "discover_our": "Ανακαλύψτε τα ",
+      "code_of_conduct": "Κώδικας δεοντολογίας ",
+      "join_us_on": "Ακολουθήστε μας στο ",
+      "forum": "Φόρουμ",
+      "subscribe_to_our": "Εγγραφείτε στο δικό μας ",
+      "newsletter": "ενημερωτικό δελτίο"
     },
     "discover_the_project": "Ανακαλύψτε το έργο",
     "Who_we_are": "Ποιοι είμαστε",
-    "Vision_Mission_Values_and_Programs": "Vision, Mission, Values and Programs",
-    "FAQS": "FAQS",
-    "open_Food_Facts_blog": "Open Food Facts blog",
-    "Press": "Πρέσα",
+    "Vision_Mission_Values_and_Programs": "Όραμα, Αποστολή, Αξίες και Προγράμματα",
+    "FAQS": "Συχνές ερωτήσεις",
+    "open_Food_Facts_blog": "Ιστολόγιο Open Food Facts",
+    "Press": "Τύπος",
     "Open_Food_Facts_wiki": "Open Food Facts wiki (en)",
-    "Translators": "Translators",
-    "Partners": "Partners",
-    "Open_Beauty_Facts": "Open Beauty Facts - Cosmetics",
+    "Translators": "Μεταφραστές",
+    "Partners": "Συνεργάτες",
+    "Open_Beauty_Facts": "Open Beauty Facts - καλλυντικά",
     "text2": "Μια συλλογική, ελεύθερη και ανοιχτή βάση δεδομένων των προϊόντων τροφίμων από όλο τον κόσμο."
   },
   "helper": {
     "welcome": {
       "page1": {
-        "title": "Welcome to Hunger Games",
-        "text1": "Hunger Games is a collection of mini-games that help contribute to Open Food Facts in many ways. You can play our really exciting games from anywhere. Here is a guided tour of the entire website which will get you started.",
-        "text2": "Make sure to login to the Open Food Facts website to get credit for your contributions. If you make a mistake, please take the time to correct it by heading to the website.",
-        "text3": "In case of any doubt about the games, click on the question mark icon at the top right of the page, and you can reach us on slack at the #hunger-games channel"
+        "title": "Καλώς ήλθατε στους Αγώνες Πείνας",
+        "text1": "Οι Αγώνες Πείνας είναι μια συλλογή από μίνι-παιχνίδια που συμβάλλουν με πολλούς τρόπους στα Open Food Facts. Μπορείτε να παίξετε τα πραγματικά συναρπαστικά παιχνίδια μας από οπουδήποτε. Ακολουθεί μια ξενάγηση σε ολόκληρο τον ιστότοπο που θα σας βοηθήσει να ξεκινήσετε.",
+        "text2": "Βεβαιωθείτε ότι έχετε συνδεθεί στον ιστότοπο Open Food Facts για να λάβετε πίστωση για τις συνεισφορές σας. Εάν κάνετε κάποιο λάθος, αφιερώστε χρόνο για να το διορθώσετε μεταβαίνοντας στον ιστότοπο.",
+        "text3": "Σε περίπτωση αμφιβολίας σχετικά με τα παιχνίδια, κάντε κλικ στο εικονίδιο με το ερωτηματικό στην επάνω δεξιά γωνία της σελίδας και μπορείτε να επικοινωνήσετε μαζί μας στο κανάλι #hunger-games στο slack"
       },
       "page2": {
-        "title": "Questions Game",
-        "text1": "Does the food product belong to this brand?",
-        "text2": "Simply answer with a <strong>Yes/No</strong>! Don't know the answer? That's alright, just skip it.",
-        "text3": "You can also use your keyboard shortcuts: y,n and k.",
-        "text4": "You can <strong>filter</strong> the products based on country, brands, popularity and much more!",
-        "text5": "If you don't want to do this every single time, you can also <strong>save the filters</strong> by clicking on the star. Next time you come back, find the saved filters on the home page itself"
+        "title": "Παιχνίδι Ερωτήσεων",
+        "text1": "Το προϊόν διατροφής ανήκει σε αυτό το εμπορικό σήμα;",
+        "text2": "Απλώς απαντήστε με ένα <strong>Ναι/Όχι</strong>! Δεν ξέρετε την απάντηση; Δεν πειράζει, απλώς παραλείψτε το.",
+        "text3": "Μπορείτε επίσης να χρησιμοποιήσετε τις συντομεύσεις πληκτρολογίου σας: y,n και k.",
+        "text4": "Μπορείτε να <strong>φιλτράρετε</strong> τα προϊόντα με βάση τη χώρα, τις μάρκες, τη δημοτικότητα και πολλά άλλα!",
+        "text5": "Εάν δεν θέλετε να το κάνετε αυτό κάθε φορά, μπορείτε επίσης να <strong>αποθηκεύσετε τα φίλτρα</strong> κάνοντας κλικ στο αστέρι. Την επόμενη φορά που θα επιστρέψετε, βρείτε τα αποθηκευμένα φίλτρα στην ίδια την αρχική σελίδα"
       },
       "page3": {
-        "title": "Logos Game",
-        "text1": "Another popular game is the logos game where you have to <strong>select all the logos</strong> you feel are the same.",
-        "text2": "As shown in the example, once you select all the similar logos, just type their value and select where it is a brand, a label or something else. It's that simple!"
+        "title": "Παιχνίδι Λογότυπων",
+        "text1": "Ένα άλλο δημοφιλές παιχνίδι είναι το παιχνίδι λογότυπων όπου πρέπει να <strong>να επιλέξετε όλα τα λογότυπα</strong> που πιστεύετε ότι είναι ίδια.",
+        "text2": "Όπως φαίνεται στο παράδειγμα, αφού επιλέξετε όλα τα παρόμοια λογότυπα, απλώς πληκτρολογήστε την τιμή τους και επιλέξτε αν είναι μια επωνυμία, μια ετικέτα ή κάτι άλλο. Είναι τόσο απλό!"
       },
       "page4": {
-        "title": "Eco-Score Questions Game",
-        "text1": "Help us finish the remaining questions in the most high priority labels!",
-        "text2": "These cards are linked to labels used in the computation of the Eco-Score.",
-        "text3": "<strong>What is Eco-Score?</strong>",
-        "text4": "Eco-Score captures the total environmental footprint, making it easier for consumers to compare products and decide which is better for the environment."
+        "title": "Παιχνίδι Ερωτήσεων Eco-Score",
+        "text1": "Βοηθήστε μας να ολοκληρώσουμε τις υπόλοιπες ερωτήσεις στις ετικέτες πιο υψηλής προτεραιότητας!",
+        "text2": "Αυτές οι κάρτες συνδέονται με ετικέτες που χρησιμοποιούνται για τον υπολογισμό του Eco-Score.",
+        "text3": "<strong>Τι είναι το Eco-Score;</strong>",
+        "text4": "Το Eco-Score αποτυπώνει το συνολικό περιβαλλοντικό αποτύπωμα, διευκολύνοντας τους καταναλωτές να συγκρίνουν τα προϊόντα και να αποφασίσουν ποιο είναι καλύτερο για το περιβάλλον."
       },
       "page5": {
         "title": "Ρυθμίσεις",
-        "text1": "Set your preferred language, and report issues from our settings page.",
-        "text2": "If you're a developer, you can also explore our database content using our dev mode."
+        "text1": "Ορίστε τη γλώσσα που προτιμάτε και αναφέρετε προβλήματα από τη σελίδα ρυθμίσεών μας.",
+        "text2": "Εάν είστε προγραμματιστής, μπορείτε επίσης να εξερευνήσετε το περιεχόμενο της βάσης δεδομένων μας χρησιμοποιώντας τη λειτουργία προγραμματιστή."
       },
       "page6": {
-        "title": "Tour",
-        "text1": "Got stuck somewhere? Want to take the tour again?",
-        "text2": "Just click on the question mark and start the journey again!"
+        "title": "Περιήγηση",
+        "text1": "Έχετε κολλήσει κάπου; Θέλετε να κάνετε την ξενάγηση και πάλι;",
+        "text2": "Απλά κάντε κλικ στο ερωτηματικό και ξεκινήστε ξανά το ταξίδι!"
       }
     },
     "logos": {
       "page1": {
-        "title": "Selection",
-        "text1": "Select the crops of a same logo by clicking on them",
-        "text2": "Selected logos go to the top of the page, you can unselect them by clicking again on them"
+        "title": "Επιλογή",
+        "text1": "Επιλέξτε τις περικοπές του ίδιου λογότυπου κάνοντας κλικ πάνω τους",
+        "text2": "Τα επιλεγμένα λογότυπα πηγαίνουν στην κορυφή της σελίδας, μπορείτε να τα αποεπιλέξετε κάνοντας ξανά κλικ σε αυτά"
       },
       "page2": {
-        "title": "Warning",
-        "text1": "If the crop contains multiple logos, do not select it.",
-        "text2": "If the crop contains only a partial part of a logo, you can select it."
+        "title": "Προσοχή",
+        "text1": "Εάν η περικοπή περιέχει πολλά λογότυπα, μην την επιλέξετε.",
+        "text2": "Εάν η περικοπή περιέχει μόνο ένα μέρος ενός λογότυπου, μπορείτε να το επιλέξετε."
       },
       "page3": {
-        "title": "Validate",
-        "text1": "Indicate the type of logo (label, brand, QRcode, ...)",
-        "text2": "If it is a label or a brand logo, indicate which one it is",
-        "text3": "Now you can submit your selection",
-        "text4": "Thank you :)"
+        "title": "Επικύρωση",
+        "text1": "Υποδείξτε τον τύπο του λογότυπου (ετικέτα, μάρκα, QRcode, ...)",
+        "text2": "Εάν πρόκειται για ετικέτα ή λογότυπο επωνυμίας, υποδείξτε ποιο είναι",
+        "text3": "Τώρα μπορείτε να υποβάλετε την επιλογή σας",
+        "text4": "Σας ευχαριστούμε :)"
       }
     },
-    "previous": "Prev",
+    "previous": "Προηγ",
     "next": "Επόμενο",
     "close": "Κλείσιμο"
   },
   "nutrition": {
+    "table_partialy_filled": "Πίνακας με κάποια δεδομένα",
+    "display_off_values": "Εμφάνιση τιμών από το OpenFoodFacts",
+    "nutrients": "Θρεπτικά συστατικά",
+    "serving_size": "Μέγεθος μερίδας",
+    "add_nutrient": "-- προσθήκη θρεπτικού συστατικού --",
+    "validate_100g": "Επικύρωση (100g)",
+    "validate_serving": "Επικύρωση (μερίδα)",
+    "skip": "Παράλειψη",
+    "invalid_image": "Mη έγκυρη εικόνα",
+    "pictures": {
+      "picture_date": "Η φωτογραφία μεταφορτώθηκε",
+      "selected_as_nutrients": "Επιλέχθηκε ως εικόνα θρεπτικού στοιχείου ✅",
+      "not_selected_as_nutrients": "Δεν έχει επιλεγεί ως θρεπτικό συστατικό ❌"
+    },
     "instructions": {
-      "cropTheTable": "Crop the image to simplify your annotation",
-      "verifyNutrimentDetected": "Indicate if the nutriment detected is correct",
-      "selectMissingNutriments": "Add missing nutriments (you can click even if the word has no box)",
-      "selectValue": "Select the nutritional value of: "
-    },
-    "steps": {
-      "1": "Crop",
-      "2": "Special values",
-      "3": "Nutriments Selection",
-      "4": "Values Selection"
-    },
-    "loading": "Loading...",
-    "unknown_brand": "Brand Unknown",
-    "value_missing": "You forgot to input a value.",
-    "next": "Next step",
-    "prev": "Prev step",
-    "skip": "Skip this product",
-    "validate": "Validate Table",
-    "unselect_picture": "No nutrition info",
-    "basis": "data for: ",
-    "servingSize": "serving size",
-    "value": "Value",
-    "unit": "Unit",
-    "nutriments": {
-      "nutriment_energy-kj": "Ενέργεια (kJ)",
-      "nutriment_energy-kcal": "Energy (kCal)",
-      "nutriment_fat": "Λίπη",
-      "nutriment_saturated-fat": "Κορεσμένα λιπαρά",
-      "nutriment_carbohydrates": "Υδατάνθρακας",
-      "nutriment_sugars": "Sugar",
-      "nutriment_proteins": "Protein content",
-      "nutriment_fiber": "Fibres",
-      "nutriment_salt": "Αλάτι",
-      "nutriment_sodium": "Νάτριο"
-    },
-    "history": {
-      "title": "Session History",
-      "status": "status",
-      "product name": "product name",
-      "view": "view page",
-      "edit": "edit page",
-      "SKIP": "ignored",
-      "VALIDATED": "edited",
-      "WRONG_IMAGE": "unselected picture",
-      "close": "close",
-      "open": "open history"
+      "open_button": "Άνοιγμα οδηγιών",
+      "title": "Πώς να χρησιμοποιήσετε τη διεπαφή",
+      "chose_between_empty_and_partially_filled": "Μπορείτε να επιλέξετε μεταξύ προϊόντων για τα οποία το OpenFoodFacts (OFF) δεν έχει δεδομένα σχετικά με τα θρεπτικά συστατικά. Ή προϊόν με μερικώς γεμάτο θρεπτικό πίνακα.",
+      "picture_date_is_display": "Η ημερομηνία της εικόνας εμφανίζεται πάνω της. Σας επιτρέπει να ελέγξετε αν είναι πρόσφατη.",
+      "indicate_not_provided_value": "Οι κενές είσοδοι αγνοούνται. Εάν δεν υπάρχουν ίνες στον πίνακα, μπορείτε να βάλετε \"-\" για να καθορίσετε ότι η τιμή δεν είναι διαθέσιμη.",
+      "validate_one_column": "Επιλέξτε το μέγεθος που εμφανίζεται στην εικόνα. Εάν έχετε 100 γρ. και μέγεθος μερίδας, επιλέξτε 100 γρ. επειδή είναι μια κανονικοποιημένη μορφή.",
+      "skip_button": "Εάν δεν ξέρετε πώς να χειριστείτε μια εικόνα ή απλά δεν θέλετε να το κάνετε, πατήστε \"παράλειψη\". Άλλος χρήστης θα μπορεί να το χειριστεί.",
+      "invalid_image_button": "Εάν οι εικόνες δεν είναι διατροφικός πίνακας, πατήστε \"Μη έγκυρη εικόνα\" για να την αφαιρέσετε από τη λίστα των εικόνων για επαλήθευση",
+      "close": "Κλείσιμο"
     }
   },
   "notfound": {
-    "image_alt": "404 not found",
-    "nopage": "Whoops! The page you're looking for can't be found.",
-    "redirect1": "Want to play some games?",
-    "redirect2": "Click here"
+    "image_alt": "404 δεν βρέθηκε",
+    "nopage": "Ωχ! Η σελίδα που ψάχνετε δεν μπορεί να βρεθεί.",
+    "redirect1": "Θέλετε να παίξετε μερικά παιχνίδια;",
+    "redirect2": "Κάντε κλικ εδώ"
   },
   "nutriscore": {
-    "image_alt": "cropped image",
-    "label": "Annotate Nutri-Score logo detection by batch.",
-    "description": "To do so, select all the images showing the correct/wrong Nutri-Score value ({{label}}), and click on the bottom buttons to say if you selected a set correct or wrong ones.",
-    "images_remaining": "Still {{remaining}} to annotate",
-    "image_sizes": "Image sizes",
-    "zoom_on_logo": "Zoom on logo",
-    "select_all": "Select all",
-    "deselect_all": "Unselect all",
-    "incorrect": "Wrong",
-    "correct": "Correct ({{label}})"
+    "image_alt": "κομμένη εικόνα",
+    "label": "Σημειώστε τον εντοπισμό λογότυπου Nutri-Score ανά παρτίδα.",
+    "description": "Για να το κάνετε αυτό, επιλέξτε όλες τις εικόνες που δείχνουν τη σωστή/λανθασμένη τιμή Nutri-Score ({{label}}) και κάντε κλικ στα κάτω κουμπιά για να πείτε εάν επιλέξατε ένα σύνολο σωστών ή λαθών.",
+    "images_remaining": "Ακόμα {{remaining}} για σχολιασμό",
+    "image_sizes": "Μεγέθη εικόνας",
+    "zoom_on_logo": "Μεγέθυνση στο λογότυπο",
+    "select_all": "Επιλογή όλων",
+    "deselect_all": "Αποεπιλογή όλων",
+    "incorrect": "Λάθος",
+    "correct": "Σωστό ({{label}})"
   },
-  "eco-score": {
-    "description": "Here is a summary of questions that could improve Eco-Score computation",
-    "countryLabel": "Country"
+  "green-score": {
+    "description": "Ακολουθεί μια σύνοψη ερωτήσεων που θα μπορούσαν να βελτιώσουν τον υπολογισμό του Eco-Score",
+    "countryLabel": "Χώρα"
   },
   "ingredients": {
-    "description": "This game allows you to validate the pre-selection of images of ingredients lists in various languages for a product, and validate the extracted ingredients.",
-    "current_text": "text from off",
-    "confidence_score": "language confidence",
-    "revert": "Revert",
-    "parsing": "Get server understanding",
-    "send": "Validate & send",
-    "skip": "Skip this product",
-    "getRobotoffPrediciton": "Get predictions from Robotoff"
+    "description": "Αυτό το παιχνίδι σάς επιτρέπει να επικυρώσετε την προεπιλογή εικόνων των λιστών συστατικών σε διάφορες γλώσσες για ένα προϊόν και να επικυρώσετε τα εξαγόμενα συστατικά.",
+    "current_text": "κείμενο από off",
+    "confidence_score": "αυτοπεποίθηση στη γλώσσα",
+    "revert": "Επαναφορά",
+    "parsing": "Λήψη κατανόησης διακομιστή",
+    "send": "Επικύρωση & αποστολή",
+    "skip": "Παράλειψη αυτού του προϊόντος",
+    "getRobotoffPrediciton": "Λάβετε προβλέψεις από το Robotoff"
   },
   "footer": {
     "appStore": {
       "title": "App Store",
-      "subtitle": "Download on the"
+      "subtitle": "Λήψη στο"
     },
     "playStore": {
       "title": "Play Store",
-      "subtitle": "Get it on"
+      "subtitle": "Αποκτήστε το στο"
     },
     "microsoft": {
       "title": "Microsoft",
-      "subtitle": "Get it from"
+      "subtitle": "Αποκτήστε το από"
     },
     "androidAPK": {
       "title": "Android APK",
-      "subtitle": "Download"
+      "subtitle": "Λήψη"
     }
   }
 }

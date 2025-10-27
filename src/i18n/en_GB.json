@@ -11,7 +11,7 @@
           "title": "Logos",
           "description": "Find all the logos matching the given logo"
         },
-        "eco_score": {
+        "green_score": {
           "title": "Eco-score",
           "description": "Annotate the questions with the highest value"
         }
@@ -70,6 +70,8 @@
     "countries": "Countries",
     "view": "View",
     "edit": "Edit",
+    "remaining": "Remaining: {{count}}",
+    "remaining_other": "Remaining: >100",
     "hide_images": "Hide images (faster loading)",
     "display_images": "Display images",
     "annotations": "Annotations",
@@ -97,7 +99,7 @@
         "campaign": "Campaign"
       },
       "placeholders": {
-        "value": "Value (Fanta, en:organic,...)",
+        "value": "Value (Fanta, en:organic...)",
         "brand": "Auchan, Danone, Herta, ...",
         "campaign": "Annotation campaigns"
       },
@@ -115,7 +117,7 @@
     "log_in": "Login",
     "sign_up": "Sign up",
     "login_title": "Make your annotation count",
-    "login_description": "You are not currently logged into Open Food Facts. To get your answers directly applied to products, and associated with your account, consider logging into your Open Food Facts account, or creating a new one",
+    "login_description": "You are not currently logged into Open Food Facts. To get your answers directly applied to products and associated to your account, consider logging in to your Open Food Facts account, or creating one",
     "please_wait_while_we_fetch_the_question": "Please wait while we fetch the question!"
   },
   "menu": {
@@ -124,17 +126,18 @@
     "questions": "Questions",
     "logos": "Logos",
     "logos-annotation": "Logo annotation",
-    "logos-search": "Logo search",
+    "logos-search": "Logos search",
     "logos-product-search": "Annotation per products",
     "logos-deep-search": "Infinite annotation",
     "manage": "Manage",
     "insights": "Insights",
-    "nutritions": "Nutrition facts",
+    "nutritions": "Nutrition",
+    "ingredient-spellcheck": "Ingredient spellcheck",
+    "ingredient-detection": "Ingredient detection",
     "settings": "Settings",
-    "eco-score": "Eco-score",
+    "green-score": "Green-Score",
     "dashboard": "Logos dashboard",
     "tour": "Show tour",
-    "ingredient-spellcheck": "Ingredient spellcheck",
     "logged_in_user": "Logged as {{userName}}",
     "log_in": "Click to login"
   },
@@ -143,7 +146,7 @@
     "barcode": "Barcode",
     "barcode_placeholder": "barcode",
     "value_tag": "Value tag",
-    "value_placeholder": "ex: en:mueslis, bjorg,...",
+    "value_placeholder": "ex: en: mueslis, bjorg,...",
     "type": "Type",
     "annotated": "Annotated",
     "annotation": "Annotation",
@@ -196,7 +199,7 @@
     "no_found": "No logo found",
     "search": "Search",
     "number_of_results": "Number of results:",
-    "loading": "Loading…",
+    "loading": "Loading...",
     "refresh": "Refresh",
     "search_specific": "Search specific logo",
     "load_more": "Load more",
@@ -228,7 +231,7 @@
     "dev_mode_label": "Dev Mode",
     "dev_page_toggle": "Show {{name}} page",
     "join_community": "Join the community",
-    "text1": "Open Food Facts is a collaborative project built by tens of thousands of volunteers and managed by a non-profit organization with 8 employees. We need your donations to fund the Open Food Facts 2024 budget and to continue to develop the project.",
+    "text1": "Open Food Facts is a collaborative project built by tens of thousands of volunteers and managed by a non-profit organisation with 8 employees. We need your donations to fund the Open Food Facts 2024 budget and to continue to develop the project.",
     "thank_you": "Thank you",
     "donate": "Donate",
     "join_the_community": {
@@ -314,53 +317,30 @@
     "close": "Close"
   },
   "nutrition": {
+    "table_partialy_filled": "Table with already some data",
+    "display_off_values": "Display values from OpenFoodFacts",
+    "nutrients": "Nutrients",
+    "serving_size": "Serving size",
+    "add_nutrient": "-- add nutrient --",
+    "validate_100g": "Validate (100g)",
+    "validate_serving": "Validate (serving)",
+    "skip": "Skip",
+    "invalid_image": "Invalid image",
+    "pictures": {
+      "picture_date": "Photo uploaded",
+      "selected_as_nutrients": "Selected as nutriment image ✅",
+      "not_selected_as_nutrients": "Not selected as nutriment ❌"
+    },
     "instructions": {
-      "cropTheTable": "Crop the image to simplify your annotation",
-      "verifyNutrimentDetected": "Indicate if the nutriment detected is correct",
-      "selectMissingNutriments": "Add missing nutriments (you can click even if the word has no box)",
-      "selectValue": "Select the nutritional value of: "
-    },
-    "steps": {
-      "1": "Crop",
-      "2": "Special values",
-      "3": "Nutriments Selection",
-      "4": "Values Selection"
-    },
-    "loading": "Loading...",
-    "unknown_brand": "Brand Unknown",
-    "value_missing": "You forgot to input a value.",
-    "next": "Next step",
-    "prev": "Prev step",
-    "skip": "Skip this product",
-    "validate": "Validate Table",
-    "unselect_picture": "No nutrition info",
-    "basis": "data for: ",
-    "servingSize": "serving size",
-    "value": "Value",
-    "unit": "Unit",
-    "nutriments": {
-      "nutriment_energy-kj": "Energy (kJ)",
-      "nutriment_energy-kcal": "Energy (kCal)",
-      "nutriment_fat": "Fat",
-      "nutriment_saturated-fat": "Saturated fat",
-      "nutriment_carbohydrates": "Carbohydrates",
-      "nutriment_sugars": "Sugar",
-      "nutriment_proteins": "Protein content",
-      "nutriment_fiber": "Fibres",
-      "nutriment_salt": "Salt",
-      "nutriment_sodium": "Sodium"
-    },
-    "history": {
-      "title": "Session History",
-      "status": "status",
-      "product name": "product name",
-      "view": "view page",
-      "edit": "edit page",
-      "SKIP": "ignored",
-      "VALIDATED": "edited",
-      "WRONG_IMAGE": "unselected picture",
-      "close": "close",
-      "open": "open history"
+      "open_button": "Open instructions",
+      "title": "How to use the interface",
+      "chose_between_empty_and_partially_filled": "You can chose between products for which OpenFoodFacts (OFF) has no data about the nutrients. Or product with partially filled nutrient table.",
+      "picture_date_is_display": "The date of the picture is displayed on top of it. Allowing you to check if it's a recent one.",
+      "indicate_not_provided_value": "Empty inputs are ignored. If fibers are not present in the table, you can put \"-\" to specify the value is not available.",
+      "validate_one_column": "Choose the size it is displayed in the picture. If you have 100g and serving size, please choose 100g because it's a normalized format.",
+      "skip_button": "If you don't know how to deal with an image, or you just don't want to do it, press \"skip\". Other user will be able to handle it.",
+      "invalid_image_button": "If the pictures is not a nutritional table, press \"Invalid image\" to remove it from the list of the images to verify",
+      "close": "Close"
     }
   },
   "notfound": {
@@ -381,7 +361,7 @@
     "incorrect": "Wrong",
     "correct": "Correct ({{label}})"
   },
-  "eco-score": {
+  "green-score": {
     "description": "Here is a summary of questions that could improve Eco-Score computation",
     "countryLabel": "Country"
   },

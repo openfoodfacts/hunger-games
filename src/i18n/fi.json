@@ -11,7 +11,7 @@
           "title": "Logot",
           "description": "Etsi kaikki logot, jotka vastaavat annettua logoa"
         },
-        "eco_score": {
+        "green_score": {
           "title": "Ekopisteet",
           "description": "Valitse korkea-arvoisimmat kysymykset"
         }
@@ -19,20 +19,20 @@
     },
     "account_band": {
       "title": "Haluatko tukea meitä? Luo tili tai kirjaudu Open Food Factsiin!",
-      "log_in": "Käyttäjätunnus",
+      "log_in": "Kirjaudu",
       "sign_up": "Rekisteröidy",
       "contribution_details": "Opi miksi panoksellasi on merkitystä"
     },
     "saved_filters": "Tallennetut suodattimet",
     "contribution_modal": {
-      "title": "Tukesi vaikuttaa",
+      "title": "Panoksesi on tärkeä",
       "information": "Hunger Games on yritys hyödyntää OCR:n ja tekoälyn tuloksia. Kun käytät Open Food Factsin Hunger Gamesia, parannat koko tietokantaamme, mikä auttaa yhteisöä tekemään parempia ruokavalintoja. Keräämme annotaatiosi ja teemme niillä Open Food Factsista tarkemman ja tehokkaamman.",
       "thank_you": "Kiitos Open Food Factsille antamastasi panoksesta."
     },
     "statistics": {
-      "title": "{{userName}} tilastot:",
+      "title": "Käyttäjän {{userName}} tilastot:",
       "editorCount": {
-        "title": "Toimittaja",
+        "title": "Muokkaaja",
         "description": "Muokkausten määrä"
       },
       "contributorCount": {
@@ -41,7 +41,7 @@
       },
       "photographerCount": {
         "title": "Valokuvaaja",
-        "description": "Kuvien ottaminen tuotteelle"
+        "description": "Tuotekuvien ottaminen"
       }
     }
   },
@@ -56,7 +56,7 @@
     "labels": "Merkit",
     "brand": "tuotemerkki",
     "brands": "Tuotemerkit",
-    "packaging": "pakkaukset",
+    "packaging": "pakkaus",
     "quantity": "Määrä",
     "insightTypeLabel": "Näytä vain",
     "ingredients": "Ainesosat",
@@ -70,6 +70,8 @@
     "countries": "Maat",
     "view": "Näytä",
     "edit": "Muokkaa",
+    "remaining": "Jäljellä: {{count}}",
+    "remaining_other": "Jäljellä: >100",
     "hide_images": "Piilota kuvat (nopeampi lataus)",
     "display_images": "Näytä kuvat",
     "annotations": "Merkinnät",
@@ -112,7 +114,7 @@
     "flag": "Onko jokin vialla? Ilmoita kuvasta!",
     "unflag": "Poista kuvan valinta",
     "reset_filters": "Tyhjennä suodattimet",
-    "log_in": "Käyttäjätunnus",
+    "log_in": "Kirjaudu",
     "sign_up": "Rekisteröidy",
     "login_title": "Tee annotoinnistasi merkityksellistä",
     "login_description": "Et ole tällä hetkellä kirjautunut Open Food Factsiin. Jos haluat, että vastauksesi käytetään suoraan tuotteisiin ja liitetään tiliisi, harkitse kirjautumista Open Food Facts -tilillesi tai sellaisen luomista",
@@ -129,9 +131,11 @@
     "logos-deep-search": "Loputon annotointi",
     "manage": "Hallitse",
     "insights": "Oivallukset",
-    "nutritions": "Ravintosisältö",
+    "nutritions": "Ravinto",
+    "ingredient-spellcheck": "Ainesosien oikeinkirjoituksen tarkistus",
+    "ingredient-detection": "Ainesosien tunnistus",
     "settings": "Asetukset",
-    "eco-score": "Ekopisteet",
+    "green-score": "Green-Score",
     "dashboard": "Logokojelauta",
     "tour": "Näytä esittely",
     "logged_in_user": "Kirjautuneena käyttäjällä {{userName}}",
@@ -184,7 +188,7 @@
     "packaging": "Pakkaus",
     "qr_code": "QR-koodi",
     "category": "Tuoteluokka",
-    "nutrition_label": "Ravintomerkki",
+    "nutrition_label": "Ravitsemusmerkki",
     "no_logo": "Ei ole logo",
     "store": "Myymälä",
     "detail": "Logon yksityiskohdat",
@@ -247,7 +251,7 @@
     "Open_Food_Facts_wiki": "Open Food Facts -wiki (en)",
     "Translators": "Kääntäjät",
     "Partners": "Kumppanit",
-    "Open_Beauty_Facts": "Open Beauty Facts - Kosmetiikka",
+    "Open_Beauty_Facts": "Open Beauty Facts - kosmetiikka",
     "text2": "Yhteistyöhön perustuva, vapaa ja avoin tietokanta elintarvikkeista ympäri maailmaa."
   },
   "helper": {
@@ -313,53 +317,30 @@
     "close": "Sulje"
   },
   "nutrition": {
+    "table_partialy_filled": "Taulukko, jossa on jo hieman tietoaineistoa",
+    "display_off_values": "Näytä OpenFoodFactsin arvot",
+    "nutrients": "Ravintoaineet",
+    "serving_size": "Annoskoko",
+    "add_nutrient": "-- lisää ravintoaine --",
+    "validate_100g": "Vahvista (100g)",
+    "validate_serving": "Vahvista (annos)",
+    "skip": "Ohita",
+    "invalid_image": "Kuva ei kelpaa",
+    "pictures": {
+      "picture_date": "Kuva ladattu",
+      "selected_as_nutrients": "Valittu ravitsemustietokuvaksi ✅",
+      "not_selected_as_nutrients": "Ei valittuna ravitsemustietokuvaksi ❌"
+    },
     "instructions": {
-      "cropTheTable": "Rajaa kuvaa yksinkertaistaaksesi annotaatiota",
-      "verifyNutrimentDetected": "Ilmoita, onko havaittu ravintoaine oikea",
-      "selectMissingNutriments": "Lisää puuttuvat ravintoaineet (voit klikata, vaikka sanalla ei olisi ruutua)",
-      "selectValue": "Valitse ravintoarvo: "
-    },
-    "steps": {
-      "1": "Rajaa",
-      "2": "Erikoisarvot",
-      "3": "Ravintoaineiden valinta",
-      "4": "Arvojen valinta"
-    },
-    "loading": "Ladataan...",
-    "unknown_brand": "Tuntematon tuotemerkki",
-    "value_missing": "Unohdit syöttää arvon.",
-    "next": "Seuraava vaihe",
-    "prev": "Edellinen vaihe",
-    "skip": "Ohita tämä tuote",
-    "validate": "Vahvista taulukko",
-    "unselect_picture": "Ei ravitsemustietoja",
-    "basis": "tiedot kohteelle: ",
-    "servingSize": "annoskoko",
-    "value": "Arvo",
-    "unit": "Yksikkö",
-    "nutriments": {
-      "nutriment_energy-kj": "Energia (kJ)",
-      "nutriment_energy-kcal": "Kalorit (kCal)",
-      "nutriment_fat": "Rasva",
-      "nutriment_saturated-fat": "Tyydyttynyt rasva",
-      "nutriment_carbohydrates": "Hiilihydraatit",
-      "nutriment_sugars": "Sokeria",
-      "nutriment_proteins": "Proteiinia",
-      "nutriment_fiber": "Ravintokuitua",
-      "nutriment_salt": "Suola",
-      "nutriment_sodium": "Natrium"
-    },
-    "history": {
-      "title": "Istuntohistoria",
-      "status": "tila",
-      "product name": "tuotenimi",
-      "view": "näytä sivu",
-      "edit": "muokkaa sivua",
-      "SKIP": "ohitetut",
-      "VALIDATED": "muokattu",
-      "WRONG_IMAGE": "valitsematon kuva",
-      "close": "sulje",
-      "open": "avaa historia"
+      "open_button": "Avaa ohjeet",
+      "title": "Käyttöliittymän käyttö",
+      "chose_between_empty_and_partially_filled": "Voit valita tuotteiden välillä, joiden ravintoaineista OpenFoodFactsilla (OFF) ei ole tietoa tai joiden ravinnetaulukko on osittain täytetty.",
+      "picture_date_is_display": "Kuvan päivämäärä näytetään sen yläpuolella, jotta voit tarkistaa, onko se tuore.",
+      "indicate_not_provided_value": "Tyhjät syötteet sivuutetaan. Jos kuituja ei ole taulukossa, voit merkitä \"-\" määrittääksesi, että arvo ei ole saatavilla.",
+      "validate_one_column": "Valitse kuvassa näkyvä koko. Jos sinulla on 100 g ja annoskoko, valitse 100 g, koska se on normalisoitu muoto.",
+      "skip_button": "Jos et osaa tai halua tarkistaa kuvia, napauta \"ohita\". Muut käyttäjät voivat huolehtia niistä.",
+      "invalid_image_button": "Jos kuva ei ole ravintoarvotaulukosta, poista se vahvistettavien kuvien listalta napauttamalla \"Kuva ei kelpaa\" -painiketta.",
+      "close": "Sulje"
     }
   },
   "notfound": {
@@ -380,7 +361,7 @@
     "incorrect": "Väärin",
     "correct": "Oikein ({{label}})"
   },
-  "eco-score": {
+  "green-score": {
     "description": "Tässä on yhteenveto kysymyksistä, jotka voivat parantaa Eco-Score-laskentaa",
     "countryLabel": "Maa"
   },

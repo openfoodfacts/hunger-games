@@ -11,7 +11,7 @@
           "title": "Logo",
           "description": "Găsiți toate siglele care se potrivesc cu logo-ul dat"
         },
-        "eco_score": {
+        "green_score": {
           "title": "Eco-scor",
           "description": "Notează întrebările cu cea mai mare valoare"
         }
@@ -70,6 +70,8 @@
     "countries": "Țări",
     "view": "Vizualizare",
     "edit": "Modificare",
+    "remaining": "",
+    "remaining_other": "Rămase: >100",
     "hide_images": "Ascunde imagini (încărcare mai rapidă)",
     "display_images": "Afișează imagini",
     "annotations": "Adnotări",
@@ -129,9 +131,11 @@
     "logos-deep-search": "Adnotare infinită",
     "manage": "Administrează",
     "insights": "Perspective",
-    "nutritions": "Valori nutriționale",
+    "nutritions": "Informații nutriționale",
+    "ingredient-spellcheck": "Verificare ortografică a ingredientelor",
+    "ingredient-detection": "Detectarea ingredientelor",
     "settings": "Configurări",
-    "eco-score": "Eco-scor",
+    "green-score": "Scor Ecologic",
     "dashboard": "Tabloul de bord cu sigle",
     "tour": "Arată tur",
     "logged_in_user": "Înregistrat ca {{userName}}",
@@ -166,7 +170,7 @@
     "human_required": "Necesar uman",
     "edit_product": "Deschideți editarea produsului",
     "view_product": "Deschideți pagina produsului",
-    "view_crops_for_this_product": "Annotate product logos"
+    "view_crops_for_this_product": "Adnotează logo-urile produselor"
   },
   "logos": {
     "annotation": "Adnotare: ",
@@ -247,14 +251,14 @@
     "Open_Food_Facts_wiki": "Open Food Facts wiki (en)",
     "Translators": "Traducători",
     "Partners": "Parteneri",
-    "Open_Beauty_Facts": "Open Beauty Facts - Cosmetice",
+    "Open_Beauty_Facts": "Open Beauty Facts - cosmetice",
     "text2": "O bază de date colaborativă, liberă și deschisă a produselor alimentare din întreaga lume."
   },
   "helper": {
     "welcome": {
       "page1": {
         "title": "Bun venit la Jocurile Foamei",
-        "text1": "Hunger Games is a collection of mini-games that help contribute to Open Food Facts in many ways. You can play our really exciting games from anywhere. Here is a guided tour of the entire website which will get you started.",
+        "text1": "Jocurile Foamei este o colecție de mini-jocuri care contribuie la Open Food Facts în multe feluri. Puteți juca jocuri cu adevărat interesante de oriunde. Iată un tur ghidat al întregului site, care vă va ajuta să începeți.",
         "text2": "Asigurați-vă că vă conectați la site-ul Open Food Facts pentru a obține credit pentru contribuțiile dvs. Dacă faceți o greșeală, vă rugăm să faceți timp pentru a o corecta, accesând site-ul web.",
         "text3": "În caz de îndoială cu privire la jocuri, faceți clic pe pictograma semn de întrebare din dreapta sus a paginii și ne puteți contacta pe canalul #hunger-games."
       },
@@ -313,53 +317,30 @@
     "close": "Închidere"
   },
   "nutrition": {
+    "table_partialy_filled": "Tabel cu unele date deja",
+    "display_off_values": "Afișați valorile din OpenFoodFacts",
+    "nutrients": "Nutrienți",
+    "serving_size": "Cantitatea unei porții",
+    "add_nutrient": "-- adaugă nutrient --",
+    "validate_100g": "Validați (100g)",
+    "validate_serving": "Validare (servire)",
+    "skip": "Omitere",
+    "invalid_image": "Imagine nevalidă",
+    "pictures": {
+      "picture_date": "Fotografie încărcată",
+      "selected_as_nutrients": "Selectat ca imagine de nutrient ✅",
+      "not_selected_as_nutrients": "Nu este selectat ca nutrient ❌"
+    },
     "instructions": {
-      "cropTheTable": "Decupați imaginea pentru a simplifica adnotarea",
-      "verifyNutrimentDetected": "Indicați dacă nutrientul detectat este corect",
-      "selectMissingNutriments": "Adăugați nutrienții lipsă (puteți da click chiar dacă cuvântul nu are casetă)",
-      "selectValue": "Selectați valoarea nutritivă a: "
-    },
-    "steps": {
-      "1": "Decupaţi",
-      "2": "Valori speciale",
-      "3": "Selecția nutrienților",
-      "4": "Selectarea valorilor"
-    },
-    "loading": "Se încarcă...",
-    "unknown_brand": "Marcă necunoscută",
-    "value_missing": "Ați uitat să introduceți o valoare.",
-    "next": "Următorul pas",
-    "prev": "Pasul anterior",
-    "skip": "Sari peste acest produs",
-    "validate": "Validați tabelul",
-    "unselect_picture": "Fără informații nutriționale",
-    "basis": "date pentru: ",
-    "servingSize": "mărimea porției",
-    "value": "Valoare",
-    "unit": "Unitate",
-    "nutriments": {
-      "nutriment_energy-kj": "Valoare energetică (kJ)",
-      "nutriment_energy-kcal": "Energie (kCal)",
-      "nutriment_fat": "Grăsimi",
-      "nutriment_saturated-fat": "Acizi grași saturați",
-      "nutriment_carbohydrates": "Glucide",
-      "nutriment_sugars": "Sugar",
-      "nutriment_proteins": "Protein content",
-      "nutriment_fiber": "Fibres",
-      "nutriment_salt": "Sare",
-      "nutriment_sodium": "Sodiu"
-    },
-    "history": {
-      "title": "Istoricul Sesiunii",
-      "status": "Stare",
-      "product name": "Numele produsului",
-      "view": "Vezi pagină",
-      "edit": "Editați pagina",
-      "SKIP": "Ignoră",
-      "VALIDATED": "editat",
-      "WRONG_IMAGE": "imagine neselectată",
-      "close": "Închideți",
-      "open": "deschide istoric"
+      "open_button": "Deschideți instrucțiunile",
+      "title": "Cum se utilizează interfața",
+      "chose_between_empty_and_partially_filled": "Puteți alege dintre produsele pentru care OpenFoodFacts (OFF) nu are date despre nutrienți. Sau produs cu tabel de nutrienți parțial umplut.",
+      "picture_date_is_display": "Data fotografiei este afișată deasupra ei. Vă permite să verificați dacă este recentă.",
+      "indicate_not_provided_value": "Intrările goale sunt ignorate. Dacă fibrele nu sunt prezente în tabel, puteți pune „-” pentru a specifica că valoarea nu este disponibilă.",
+      "validate_one_column": "Alegeți dimensiunea așa cum este afișată în imagine. Dacă aveți 100g și o porție, vă rugăm să alegeți 100g deoarece este un format normalizat.",
+      "skip_button": "Dacă nu știi cum să te descurci cu o imagine, sau pur și simplu nu vrei să o faci, apasă pe „săriți”. Alţi utilizatori vor putea descurca.",
+      "invalid_image_button": "Dacă imaginile nu sunt un tabel nutrițional, apăsați pe „Imagine invalidă” pentru a o elimina din lista de imagini de verificat",
+      "close": "Închidere"
     }
   },
   "notfound": {
@@ -380,32 +361,32 @@
     "incorrect": "Greșit",
     "correct": "Corect ({{label}})"
   },
-  "eco-score": {
+  "green-score": {
     "description": "Iată un rezumat al întrebărilor care ar putea îmbunătăți calculul Eco-Score",
     "countryLabel": "Țară"
   },
   "ingredients": {
-    "description": "This game allows you to validate the pre-selection of images of ingredients lists in various languages for a product, and validate the extracted ingredients.",
-    "current_text": "text from off",
-    "confidence_score": "language confidence",
-    "revert": "Revert",
-    "parsing": "Get server understanding",
-    "send": "Validate & send",
+    "description": "Acest joc vă permite să validați preselecția imaginilor listelor de ingrediente în diferite limbi pentru un produs și să validați ingredientele extrase.",
+    "current_text": "text dezactivat",
+    "confidence_score": "încredere în limbaj",
+    "revert": "Revenire",
+    "parsing": "Obțineți înțelegerea serverului",
+    "send": "Validați și trimiteți",
     "skip": "Sari peste acest produs",
-    "getRobotoffPrediciton": "Get predictions from Robotoff"
+    "getRobotoffPrediciton": "Obțineți predicții de la Robotoff"
   },
   "footer": {
     "appStore": {
-      "title": "App Store",
-      "subtitle": "Download on the"
+      "title": "Magazin de aplicații",
+      "subtitle": "Descarcă din"
     },
     "playStore": {
       "title": "Play Store",
-      "subtitle": "Get it on"
+      "subtitle": "Obține-o din"
     },
     "microsoft": {
       "title": "Microsoft",
-      "subtitle": "Get it from"
+      "subtitle": "Obține-o din"
     },
     "androidAPK": {
       "title": "Android APK",

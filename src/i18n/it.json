@@ -5,29 +5,29 @@
       "cards": {
         "questions": {
           "title": "Domande",
-          "description": "Dicci se l'immagine data risponde alle domande"
+          "description": "Dicci se l'immagine fornita risponde alle domande"
         },
         "logos": {
           "title": "Loghi",
-          "description": "Trova tutti i loghi corrispondenti al logo dato"
+          "description": "Trova tutti i loghi corrispondenti al logo specificato"
         },
-        "eco_score": {
+        "green_score": {
           "title": "Eco-score",
           "description": "Annota la domanda con il valore più alto"
         }
       }
     },
     "account_band": {
-      "title": "Vuoi far contare il tuo contributo? Crea un account o accedi a Open Food Facts!",
-      "log_in": "Nome utente",
+      "title": "Vuoi che il tuo contributo conti? Crea un account o accedi a Open Food Facts!",
+      "log_in": "Accedi",
       "sign_up": "Registrati",
       "contribution_details": "Scopri perché il tuo contributo è importante"
     },
     "saved_filters": "Filtri salvati",
     "contribution_modal": {
-      "title": "I tuoi contributi sono importanti",
-      "information": "Hunger Games è uno sforzo per sfruttare i risultati del nostro OCR e della nostra intelligenza artificiale. Quando utilizzi Hunger Games di Open Food Facts, migliori il nostro intero database, contribuendo a una migliore presa decisionale sugli alimenti, da parte della community. Raccogliamo le tue annotazioni e le utilizziamo per rendere Open Food Facts più accurato ed efficiente.",
-      "thank_you": "Grazie per aiutarci a migliorare Open Food Facts in modo che più persone possano usarlo facilmente."
+      "title": "Il tuo contributo è importante",
+      "information": "Hunger Games è un tentativo di sfruttare i risultati del nostro OCR e dell'intelligenza artificiale. Quando utilizzi Hunger Games di Open Food Facts, migliori il nostro intero database, il che aiuta la comunità a fare scelte alimentari migliori. Raccogliamo le tue annotazioni e le utilizziamo per rendere Open Food Facts più accurato ed efficiente.",
+      "thank_you": "Grazie per averci aiutato a migliorare Open Food Facts in modo che più persone possano usarlo facilmente."
     },
     "statistics": {
       "title": "Statistiche di {{userName}}:",
@@ -36,7 +36,7 @@
         "description": "Numero di modifiche effettuate"
       },
       "contributorCount": {
-        "title": "Contributore",
+        "title": "Collaboratori",
         "description": "Aggiungere un nuovo prodotto"
       },
       "photographerCount": {
@@ -60,7 +60,7 @@
     "quantity": "Quantità",
     "insightTypeLabel": "Mostra solo",
     "ingredients": "Ingredienti",
-    "product_weight": "peso del prodotto",
+    "product_weight": "Peso del prodotto",
     "popularity_sort": "Ordina per popolarità",
     "see_examples": "Vedi esempi di questo ",
     "no": "No",
@@ -70,6 +70,8 @@
     "countries": "Paesi",
     "view": "Mostra",
     "edit": "Modifica",
+    "remaining": "Restanti: {{count}}",
+    "remaining_other": "Rimanenti: >100",
     "hide_images": "Nascondi immagini (caricamento più veloce)",
     "display_images": "Mostra immagini",
     "annotations": "Annotazioni",
@@ -90,7 +92,7 @@
       "long_label": {
         "type": "Tipo di domanda",
         "value": "Valore proposto",
-        "country": "Paese del Prodotto",
+        "country": "Paese del prodotto",
         "brand": "Marca del prodotto",
         "popularity": "Ordina per popolarità",
         "edit": "",
@@ -109,13 +111,13 @@
     },
     "other_questions": "Altre domande",
     "send": "Invia",
-    "flag": "Qualcosa è sbagliato? Segnala l'immagine!",
-    "unflag": "Deseleziona l'immagine",
-    "reset_filters": "Cancella filtri",
-    "log_in": "Nome utente",
+    "flag": "Qualcosa di sbagliato? Segnala l'immagine!",
+    "unflag": "Rimuovi la segnalazione dall'immagine",
+    "reset_filters": "Reimposta filtri",
+    "log_in": "Accedi",
     "sign_up": "Registrati",
     "login_title": "Fai contare la tua annotazione",
-    "login_description": "Al momento non sei connesso a Open Food Facts. Per far si che le tue risposte siano direttamente applicate ai prodotti e associate al tuo account, accedi al tuo account Open Food Facts o creane uno",
+    "login_description": "Al momento non sei connesso a Open Food Facts. Per far sì che le tue risposte siano direttamente applicate ai prodotti e associate al tuo account, accedi al tuo account Open Food Facts o creane uno",
     "please_wait_while_we_fetch_the_question": "Sei pregato di attendere mentre recuperiamo la domanda!"
   },
   "menu": {
@@ -129,10 +131,11 @@
     "logos-deep-search": "Annotazioni infinite",
     "manage": "Gestisci",
     "insights": "Approfondimenti",
-    "nutritions": "Valori nutrizionali",
-    "ingredient-spellcheck": "Verifica ortografica degli ingredienti",
+    "nutritions": "Nutrizione",
+    "ingredient-spellcheck": "Controllo ortografico degli ingredienti",
+    "ingredient-detection": "Rilevamento degli ingredienti",
     "settings": "Impostazioni",
-    "eco-score": "Eco-score",
+    "green-score": "Green-Score",
     "dashboard": "Pannello di controllo dei loghi",
     "tour": "Mostra tour",
     "logged_in_user": "Accesso effettuato come {{userName}}",
@@ -143,7 +146,7 @@
     "barcode": "Codice a Barre",
     "barcode_placeholder": "codice a barre",
     "value_tag": "Etichetta valore",
-    "value_placeholder": "ex: en:muesli, bjorg,...",
+    "value_placeholder": "Ex: muesli, bjorg, ...",
     "type": "Tipo",
     "annotated": "Annotato",
     "annotation": "Annotazione",
@@ -152,8 +155,8 @@
     "label": "Etichetta",
     "product_weight": "Peso del prodotto",
     "category": "Categoria",
-    "expiration_date": "Fine effetto",
-    "packager_code": "Codice Packager",
+    "expiration_date": "Data di scadenza",
+    "packager_code": "Codice del confezionatore",
     "skipped": "Saltato (-1)",
     "rejected": "Rifiutato (0)",
     "accepted": "Accettato (1)",
@@ -161,8 +164,8 @@
     "count": "Quantità",
     "id": "Id",
     "value": "Valore",
-    "created_at": "Creato con",
-    "completed_at": "Completato a",
+    "created_at": "Creato il",
+    "completed_at": "Completato il",
     "automatic": "Automatico",
     "human_required": "Richiesto intervento umano",
     "edit_product": "Modifica il prodotto",
@@ -171,8 +174,8 @@
   },
   "logos": {
     "annotation": "Annotazione: ",
-    "annotations": "Annotazioni logo",
-    "task_description": "Seleziona tutti i loghi che sono esattamente gli stessi e assegna loro un nome come \"en:EU Organic\" e un tipo come \"etichetta\".",
+    "annotations": "Annotazioni del logo",
+    "task_description": "Seleziona tutti i loghi che sono esattamente gli stessi e assegna loro un nome come \"EU Biologico\" e un tipo come \"etichetta\".",
     "select_all": "Seleziona tutto",
     "unselect_all": "Deseleziona tutto",
     "distance": "Distanza:",
@@ -181,8 +184,8 @@
     "type": "Tipo",
     "label": "Etichetta",
     "brand": "Marche",
-    "packager_code": "Codice Packager",
-    "packaging": "Confezionamento",
+    "packager_code": "Codice del confezionatore",
+    "packaging": "Imballaggio",
     "qr_code": "Codice QR",
     "category": "Categoria",
     "nutrition_label": "Etichetta nutrizionale",
@@ -202,13 +205,13 @@
     "load_more": "Scarica altro",
     "no_results": "Nessun logo trovato",
     "result_count": "Mostra {{showing}} su {{available}} disponibili",
-    "flag": "Qualcosa è sbagliato? Segnala l'immagine!",
-    "unflag": "Deseleziona l'immagine",
-    "crop_image_title": "ritaglio del logo",
+    "flag": "Qualcosa di sbagliato? Segnala l'immagine!",
+    "unflag": "Rimuovi la segnalazione dall'immagine",
+    "crop_image_title": "Ritaglio del logo",
     "no_more_questions": "Nessun altra domanda su questo logo. Puoi provare a trovare altri loghi con il seguente gioco.",
     "loading_messages": {
       "pending_reference_logos": "Stiamo caricando degli esempi di loghi, per inizializzare la ricerca",
-      "failed_reference_logos": "Non abbiamo trovato alcun logo con questaa nota. Prova a utilizzare il seguente gioco per annotarne qualcuno."
+      "failed_reference_logos": "Non abbiamo trovato alcun logo con questa nota. Prova a utilizzare il seguente gioco per annotarne qualcuno."
     },
     "deep_search": {
       "title": "Ricerca logo",
@@ -223,7 +226,7 @@
     "settings": "Impostazioni",
     "language": "Lingue",
     "save": "Salva",
-    "reportIssue": "Hai trovato un bug? Faccelo sapere!",
+    "reportIssue": "Hai trovato un bug? Faccelo sapere.",
     "dev_mode_title": "Per ottenere più opzioni, attivare la modalità sviluppatore",
     "dev_mode_label": "Modalità sviluppatore",
     "dev_page_toggle": "Mostra pagina {{name}}",
@@ -248,13 +251,13 @@
     "Open_Food_Facts_wiki": "Wiki di Open Food Facts (en)",
     "Translators": "Traduttori",
     "Partners": "Partner",
-    "Open_Beauty_Facts": "Open Beauty Facts - Cosmetici",
+    "Open_Beauty_Facts": "Open Beauty Facts - cosmetici",
     "text2": "Un database collaborativo, libero e aperto di prodotti alimentari provenienti da tutto il mondo."
   },
   "helper": {
     "welcome": {
       "page1": {
-        "title": "Benvenuto su Hunger Games",
+        "title": "Benvenuto su Hunger Game",
         "text1": "Hunger Games è una raccolta di minigiochi che aiutano a contribuire a Open Food Facts in molti modi. Puoi giocare a giochi davvero divertenti in qualsiasi luogo. Ecco una tour guidato dell'intero sito per iniziare.",
         "text2": "Assicuratevi di connettervi al sito di Open Food Facts per ottenere il riconoscimento dei vostri contributi. Se commettete un errore, prendetevi il tempo di correggerlo collegandovi al sito web.",
         "text3": "In caso di dubbi sui giochi, cliccate sul punto interrogativo in alto a destra della pagina e contattateci su slack al canale #hunger-games"
@@ -273,10 +276,10 @@
         "text2": "Come mostrato nell'esempio, una volta selezionati tutti i loghi simili, basta digitarne il valore e selezionare dove si tratta di un marchio, di un'etichetta o di qualcos'altro. È così semplice!"
       },
       "page4": {
-        "title": "Gioco di domande su ecoscore",
+        "title": "Gioco di domande su Eco-Score",
         "text1": "Aiutaci a finire le restanti domande delle etichette con la priorità più alta!",
         "text2": "Queste schede sono collegate alle etichette utilizzate nel calcolo dell'Eco-Score.",
-        "text3": "<strong>Che cos'è l'ecoscore?</strong>",
+        "text3": "<strong>Che cos'è l'Eco-Score?</strong>",
         "text4": "Eco-Score calcola l'impronta ambientale totale, rendendo più facile per i consumatori confrontare i prodotti e decidere quale è meglio per l'ambiente."
       },
       "page5": {
@@ -299,7 +302,7 @@
       "page2": {
         "title": "Attenzione",
         "text1": "Se il ritaglio contiene più loghi, non selezionarlo.",
-        "text2": "Se il ritglio contiene solo una parte parziale di un logo, puoi selezionarlo."
+        "text2": "Se il ritaglio contiene solo una parte parziale di un logo, puoi selezionarlo."
       },
       "page3": {
         "title": "Convalida",
@@ -314,53 +317,30 @@
     "close": "Chiudi"
   },
   "nutrition": {
+    "table_partialy_filled": "Tabella già con alcuni dati",
+    "display_off_values": "Visualizza i valori da OpenFoodFacts",
+    "nutrients": "Nutrienti",
+    "serving_size": "Porzione",
+    "add_nutrient": "Aggiungi nutrienti",
+    "validate_100g": "Convalida (100g)",
+    "validate_serving": "Convalida (porzione)",
+    "skip": "Salta",
+    "invalid_image": "Immagine non valida",
+    "pictures": {
+      "picture_date": "Foto caricata",
+      "selected_as_nutrients": "Seleziona immagine dei nutrienti",
+      "not_selected_as_nutrients": "Non selezionato come nutrimento ❌"
+    },
     "instructions": {
-      "cropTheTable": "Ritaglia l'immagine per semplificare la tua annotazione",
-      "verifyNutrimentDetected": "Indica se il nutriente rilevato è corretto",
-      "selectMissingNutriments": "Aggiungi i nutrienti mancanti (puoi cliccarli anche se la parola non ha una casella)",
-      "selectValue": "Seleziona il valore nutrizionale di: "
-    },
-    "steps": {
-      "1": "Ritaglia",
-      "2": "Valori speciali",
-      "3": "Selezione dei Nutrienti",
-      "4": "Selezione dei Valori"
-    },
-    "loading": "Scaricamento...",
-    "unknown_brand": "Marca sconosciuta",
-    "value_missing": "Hai dimenticato di inserire un valore.",
-    "next": "Passo successivo",
-    "prev": "Passo precedente",
-    "skip": "Salta questo prodotto",
-    "validate": "Convalida la Tabella",
-    "unselect_picture": "Nessun'informazione nutrizionale",
-    "basis": "dati per: ",
-    "servingSize": "porzione",
-    "value": "Valore",
-    "unit": "Unità",
-    "nutriments": {
-      "nutriment_energy-kj": "Energia (kJ)",
-      "nutriment_energy-kcal": "Energia (kCal)",
-      "nutriment_fat": "Grassi",
-      "nutriment_saturated-fat": "Grassi saturi",
-      "nutriment_carbohydrates": "Carboidrati",
-      "nutriment_sugars": "Zuccheri",
-      "nutriment_proteins": "Proteine",
-      "nutriment_fiber": "Fibre",
-      "nutriment_salt": "Sale",
-      "nutriment_sodium": "Sodio"
-    },
-    "history": {
-      "title": "Cronologia delle Sessioni",
-      "status": "stato",
-      "product name": "nome del prodotto",
-      "view": "visualizza pagina",
-      "edit": "modifica pagina",
-      "SKIP": "ignorata",
-      "VALIDATED": "modificata",
-      "WRONG_IMAGE": "immagine non selezionata",
-      "close": "chiudi",
-      "open": "apri cronologia"
+      "open_button": "Apri le istruzioni",
+      "title": "Come utilizzare l'interfaccia",
+      "chose_between_empty_and_partially_filled": "Puoi scegliere tra i prodotti per i quali OpenFoodFacts (OFF) non ha dati sui nutrienti. O prodotti con una tabella di valori nutrizionali parzialmente riempita.",
+      "picture_date_is_display": "Sopra viene visualizzata la data dell'immagine. Questo ti permette di controllare se è recente.",
+      "indicate_not_provided_value": "Gli input vuoti vengono ignorati. Se le fibre non sono presenti nella tabella, puoi inserire \"-\" per specificare che il valore non è disponibile.",
+      "validate_one_column": "Scegli la dimensione mostrata nell'immagine. Se hai una porzione da 100 g, scegli 100 g perché è un formato standard.",
+      "skip_button": "Se non sai come gestire un'immagine, o semplicemente non vuoi farlo, premi \"salta\". Altri utenti saranno in grado di gestirla.",
+      "invalid_image_button": "Se le foto non sono una tabella nutrizionale, premi \"immagine non valida\" per rimuoverla dalla lista delle immagini da verificare",
+      "close": "Chiudi"
     }
   },
   "notfound": {
@@ -371,7 +351,7 @@
   },
   "nutriscore": {
     "image_alt": "Immagine ritagliata",
-    "label": "Annota il rilevamento del logo Nutriscore in blocchi.",
+    "label": "Annota il rilevamento del logo Nutri-Score in blocchi.",
     "description": "Per farlo, seleziona tutte le immagini che mostrano il valore corretto/errato del Nutri-Score ({{label}}) e clicca sui pulsanti in basso per indicare se ne hai selezionato una serie corretta o errata.",
     "images_remaining": "Ancora {{remaining}} da annotare",
     "image_sizes": "Dimensioni dell'immagine",
@@ -381,12 +361,12 @@
     "incorrect": "Sbagliato",
     "correct": "Corretto ({{label}})"
   },
-  "eco-score": {
-    "description": "Ecco un riepilogo delle domande che potrebbero migliorare il calcolo del Ecoscore",
+  "green-score": {
+    "description": "Ecco un riepilogo delle domande che potrebbero migliorare il calcolo dell'Eco-Score",
     "countryLabel": "Paese"
   },
   "ingredients": {
-    "description": "Questo gioco consente di convalidare la preselezione di immagini di elenchi di ingredienti in varie lingue per un prodotto, e convalidare gli ingredienti estratti.",
+    "description": "Questo gioco consente di convalidare la preselezione di immagini delle liste di ingredienti in varie lingue per un prodotto, e convalidare gli ingredienti estratti.",
     "current_text": "testo da OpenFoodFacts",
     "confidence_score": "fiducia linguistica",
     "revert": "Ripristina",

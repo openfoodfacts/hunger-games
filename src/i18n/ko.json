@@ -11,14 +11,14 @@
           "title": "로고",
           "description": "주어진 로고와 일치하는 모든 로고 찾기"
         },
-        "eco_score": {
+        "green_score": {
           "title": "친환경 점수",
           "description": "가장 높은 값으로 질문에 주석 달기"
         }
       }
     },
     "account_band": {
-      "title": "귀하의 기여를 중요하게 생각하십니까? Open Food Facts에 계정을 만들거나 로그인하세요!",
+      "title": "귀하의 기여를 보다 더 값지게 만들고 싶으신가요? Open Food Facts에서 계정을 만들거나 로그인하세요!",
       "log_in": "Username",
       "sign_up": "회원 가입",
       "contribution_details": "기여가 중요한 이유 알아보기"
@@ -70,6 +70,8 @@
     "countries": "국가",
     "view": "뷰",
     "edit": "수정",
+    "remaining": "Remaining: {{count}}",
+    "remaining_other": "Remaining: >100",
     "hide_images": "사진 숨기기 (더 빨리 로딩)",
     "display_images": "사진 표시",
     "annotations": "주석",
@@ -129,13 +131,15 @@
     "logos-deep-search": "Infinite annotation",
     "manage": "관리",
     "insights": "인사이트",
-    "nutritions": "영양 성분 표시",
+    "nutritions": "영양",
+    "ingredient-spellcheck": "재료 철자 검사",
+    "ingredient-detection": "성분 검출",
     "settings": "설정",
-    "eco-score": "친환경 점수",
+    "green-score": "친환경 점수",
     "dashboard": "Logos dashboard",
     "tour": "Show tour",
     "logged_in_user": "Logged as {{userName}}",
-    "log_in": "Click to login"
+    "log_in": "클릭하여 로그인하기"
   },
   "insights": {
     "insights": "인사이트",
@@ -241,13 +245,13 @@
     "discover_the_project": "프로젝트보세요",
     "Who_we_are": "누가 우리가",
     "Vision_Mission_Values_and_Programs": "비전, 사명, 가치 및 프로그램",
-    "FAQS": "FAQS",
+    "FAQS": "자주 묻는 질문",
     "open_Food_Facts_blog": "Open Food Facts blog",
     "Press": "프레스",
     "Open_Food_Facts_wiki": "Open Food Facts wiki (en)",
     "Translators": "번역에 도움을 주신 분들",
     "Partners": "파트너",
-    "Open_Beauty_Facts": "Open Beauty Facts - 화장품",
+    "Open_Beauty_Facts": "Open Beauty Facts - cosmetics",
     "text2": "세계 각국에서 식품의 협업 무료 오픈 데이터베이스."
   },
   "helper": {
@@ -313,53 +317,30 @@
     "close": "닫기"
   },
   "nutrition": {
+    "table_partialy_filled": "Table with already some data",
+    "display_off_values": "Display values from OpenFoodFacts",
+    "nutrients": "영양소",
+    "serving_size": "서빙 사이즈",
+    "add_nutrient": "-- add nutrient --",
+    "validate_100g": "Validate (100g)",
+    "validate_serving": "Validate (serving)",
+    "skip": "건너뛰기",
+    "invalid_image": "유효하지 않은 이미지",
+    "pictures": {
+      "picture_date": "사진 업로드됨",
+      "selected_as_nutrients": "Selected as nutriment image ✅",
+      "not_selected_as_nutrients": "Not selected as nutriment ❌"
+    },
     "instructions": {
-      "cropTheTable": "주석을 쉽게 생성하기 위해 사진을 자르세요",
-      "verifyNutrimentDetected": "인식된 영양소가 정확한지 검증해주세요",
-      "selectMissingNutriments": "누락된 영양소를 추가하세요 (단어 상자가 없어도 클릭 가능)",
-      "selectValue": "아래 항목들의 영양학적 가치를 선택하세요: "
-    },
-    "steps": {
-      "1": "자르기",
-      "2": "특별한 가치",
-      "3": "영양소 선택",
-      "4": "가치 선택"
-    },
-    "loading": "불러오는 중…",
-    "unknown_brand": "브랜드 알 수 없음",
-    "value_missing": "You forgot to input a value.",
-    "next": "Next step",
-    "prev": "Prev step",
-    "skip": "이 상품 건너뛰기",
-    "validate": "표 \b검사",
-    "unselect_picture": "영양 정보 없음",
-    "basis": "데이터 목적: ",
-    "servingSize": "1회 제공량",
-    "value": "값",
-    "unit": "단위",
-    "nutriments": {
-      "nutriment_energy-kj": "에너지 (kJ)",
-      "nutriment_energy-kcal": "열량 (kcal)",
-      "nutriment_fat": "지방",
-      "nutriment_saturated-fat": "포화 지방",
-      "nutriment_carbohydrates": "탄수화물",
-      "nutriment_sugars": "Sugar",
-      "nutriment_proteins": "Protein content",
-      "nutriment_fiber": "Fibres",
-      "nutriment_salt": "소금",
-      "nutriment_sodium": "나트륨"
-    },
-    "history": {
-      "title": "세션 내역",
-      "status": "상태",
-      "product name": "제품명",
-      "view": "페이지 보기",
-      "edit": "페이지 수정",
-      "SKIP": "무시함",
-      "VALIDATED": "편집함",
-      "WRONG_IMAGE": "선택되지 않은 사진",
-      "close": "닫기",
-      "open": "내역 열기"
+      "open_button": "Open instructions",
+      "title": "인터페이스 사용 방법",
+      "chose_between_empty_and_partially_filled": "OpenFoodFacts(OFF)에서 영양소 정보가 없는 제품이나, 표에서 부분적으로만 작성된 제품을 선택하실 수 있습니다.",
+      "picture_date_is_display": "사진 상단엔 날짜가 표시되어있어, 사진이 최근의 것인지 확인할 수 있습니다.",
+      "indicate_not_provided_value": "Empty inputs are ignored. If fibers are not present in the table, you can put \"-\" to specify the value is not available.",
+      "validate_one_column": "그림에 표시된 크기를 선택하세요. 100g 용량의 경우, 표준화된 형식이므로 100g을 선택하세요.",
+      "skip_button": "If you don't know how to deal with an image, or you just don't want to do it, press \"skip\". Other user will be able to handle it.",
+      "invalid_image_button": "If the pictures is not a nutritional table, press \"Invalid image\" to remove it from the list of the images to verify",
+      "close": "닫기"
     }
   },
   "notfound": {
@@ -380,7 +361,7 @@
     "incorrect": "잘못된",
     "correct": "정답 ({{label}})"
   },
-  "eco-score": {
+  "green-score": {
     "description": "다음은 에코 점수 계산을 개선할 수 있는 질문 요약입니다.",
     "countryLabel": "국가"
   },
@@ -396,15 +377,15 @@
   },
   "footer": {
     "appStore": {
-      "title": "App Store",
+      "title": "앱스토어",
       "subtitle": "Download on the"
     },
     "playStore": {
-      "title": "Play Store",
+      "title": "Play 스토어",
       "subtitle": "Get it on"
     },
     "microsoft": {
-      "title": "Microsoft",
+      "title": "마이크로소프트",
       "subtitle": "Get it from"
     },
     "androidAPK": {

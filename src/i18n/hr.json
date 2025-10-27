@@ -5,101 +5,103 @@
       "cards": {
         "questions": {
           "title": "Pitanja",
-          "description": "Tell us if the given image answers the questions"
+          "description": "Recite nam ako zadana slika odgovara na pitanja"
         },
         "logos": {
-          "title": "Logos",
-          "description": "Find all the logos matching the given logo"
+          "title": "Logotipi",
+          "description": "Pronađi sve logotipe koji odgovaraju zadanom logotipu"
         },
-        "eco_score": {
-          "title": "Eco-score",
-          "description": "Annotate the questions with the highest value"
+        "green_score": {
+          "title": "Eko-bod",
+          "description": "Označi pitanja s najvećom vrijednošću"
         }
       }
     },
     "account_band": {
-      "title": "Want to make your contribution count? Create an account or sign in on Open Food Facts!",
-      "log_in": "Login",
-      "sign_up": "Sign up",
-      "contribution_details": "Learn why your contribution matters"
+      "title": "Želite li da vaš doprinos bude vrijedan? Izradite račun ili se prijavite na Open Food Facts!",
+      "log_in": "Registracija",
+      "sign_up": "Prijava",
+      "contribution_details": "Nauči zašto tvoj doprinos znači"
     },
-    "saved_filters": "Saved Filters",
+    "saved_filters": "Spremljeni filtri",
     "contribution_modal": {
-      "title": "Your contribution matters",
-      "information": "Hunger Games is an effort to leverage the results of our OCR and artificial intelligence. When you use Hunger Games by Open Food Facts, you improve our entire database which helps the community make better food choices. We gather your annotations and use them to make Open Food Facts more accurate and efficient.",
-      "thank_you": "Thank you for helping us improve Open Food Facts so that more people can use it easily."
+      "title": "Vaš doprinos je važan",
+      "information": "Igre gladi pokušaj su iskorištavanja rezultata našeg OCR-a i umjetne inteligencije. Kada koristite Igre gladi od Open Food Facts, poboljšavate cijelu našu bazu podataka što pomaže zajednici da napravi bolji izbor hrane. Prikupljamo vaše bilješke i koristimo ih kako bismo Open Food Facts učinili točnijim i učinkovitijim.",
+      "thank_you": "Hvala vam što nam pomažete poboljšati Open Food Facts kako bi ga više ljudi moglo jednostavno koristiti"
     },
     "statistics": {
       "title": "{{userName}} statistics:",
       "editorCount": {
-        "title": "Editor",
-        "description": "Number of editions done"
+        "title": "Uređivač",
+        "description": "Broj uređenih izdanja"
       },
       "contributorCount": {
-        "title": "Contributor",
-        "description": "Adding a new product"
+        "title": "Suradnik",
+        "description": "Dodavanje novog proizvoda"
       },
       "photographerCount": {
-        "title": "Photographer",
-        "description": "Taking photos for a product"
+        "title": "Fotograf",
+        "description": "Slikanje za proizvod"
       }
     }
   },
   "flagged_images": {
-    "title": "Images flagged by users",
-    "loading": "Loading"
+    "title": "Slike koje su označili korisnici",
+    "loading": "Učitavanje"
   },
   "questions": {
     "category": "kategorija",
     "categories": "Kategorije",
-    "label": "label",
+    "label": "oznaka",
     "labels": "Labels",
     "brand": "brend",
     "brands": "Marke",
-    "packaging": "packaging",
-    "quantity": "Quantity",
-    "insightTypeLabel": "Only shows",
+    "packaging": "pakiranje",
+    "quantity": "Količina",
+    "insightTypeLabel": "Samo emisije",
     "ingredients": "Sastojci",
-    "product_weight": "product weight",
-    "popularity_sort": "Sort by popularity",
-    "see_examples": "See examples of this ",
+    "product_weight": "težina proizvoda",
+    "popularity_sort": "Poredano po popularnosti",
+    "see_examples": "Pogledajte primjere ovoga ",
     "no": "Ne",
-    "skip": "Skip",
+    "skip": "Preskočiti",
     "yes": "Da",
     "no_questions_remaining": "Nema preostalih pitanja",
-    "countries": "Countries",
+    "countries": "Zemlje",
     "view": "Pogledaj",
-    "edit": "Edit",
+    "edit": "Urediti",
+    "remaining": "Preostalo: {{izbrojiti}}",
+    "remaining_other": "Preostalo: >100",
     "hide_images": "Sakrij slike (brže učitavanje)",
     "display_images": "Prikaži slike",
-    "annotations": "Annotations",
-    "last_annotations": "Last annotations",
-    "remaining_annotations": "Remaining questions",
-    "annotated_annotations": "Annotated",
+    "annotations": "Primjedbe",
+    "last_annotations": "Posljednje primjedbe",
+    "remaining_annotations": "Preostala pitanja",
+    "annotated_annotations": "Anotirano",
     "filters": {
       "active_filter_number": "+{{count}} filters",
       "active_filter_number_one": "+{{count}} filter",
-      "active_filter_number_zero": "no filter",
+      "active_filter_number_zero": "bez filtra",
       "short_label": {
-        "value": "value",
-        "country": "country",
+        "value": "vrijednost",
+        "country": "zemlja",
         "brand": "brend",
-        "popularity": "popularity",
-        "campaign": "camp"
+        "popularity": "popularnost",
+        "campaign": "kamp"
       },
       "long_label": {
         "type": "Vrsta pitanja",
         "value": "Predložena vrijednost",
         "country": "Zemlja porijekla",
-        "brand": "Product Brand",
-        "popularity": "Sort by popularity",
+        "brand": "Marka proizvoda",
+        "popularity": "Poredano po popularnosti",
         "edit": "",
-        "campaign": "Campaign"
+        "campaign": "Kampanja"
       },
       "placeholders": {
-        "value": "Value (Fanta, en:organic,...)",
-        "brand": "Auchan, Danone, Herta, ...",
-        "campaign": "Annotation campaigns"
+        "value": "Vrijednost",
+        "brand": "...",
+        "campaign": ""
       },
       "actions": {
         "edit": "Edit Filters",
@@ -112,8 +114,8 @@
     "flag": "Something wrong? Report/flag the image!",
     "unflag": "Unflag the image",
     "reset_filters": "Reset filters",
-    "log_in": "Login",
-    "sign_up": "Sign up",
+    "log_in": "Registracija",
+    "sign_up": "Prijava",
     "login_title": "Make your annotation count",
     "login_description": "You are not currently logged into Open Food Facts. To get your answers directly applied to products, and associated to your account, consider logging in to your Open Food Facts account, or creating one",
     "please_wait_while_we_fetch_the_question": "Please wait while we fetch the question!"
@@ -122,16 +124,18 @@
     "title": "Hunger Games",
     "games": "Igre",
     "questions": "Pitanja",
-    "logos": "Logos",
+    "logos": "Logotipi",
     "logos-annotation": "Logos annotation",
     "logos-search": "Logos search",
     "logos-product-search": "Annotation per products",
     "logos-deep-search": "Infinite annotation",
     "manage": "Manage",
     "insights": "Statistika",
-    "nutritions": "Nutritivne vrijednosti",
+    "nutritions": "Nutrition",
+    "ingredient-spellcheck": "Provjera pravopisa sastojaka",
+    "ingredient-detection": "Detekcija sastojaka",
     "settings": "Settings",
-    "eco-score": "Eco-score",
+    "green-score": "Green-Score",
     "dashboard": "Logos dashboard",
     "tour": "Show tour",
     "logged_in_user": "Logged as {{userName}}",
@@ -144,7 +148,7 @@
     "value_tag": "Value tag",
     "value_placeholder": "ex: en:mueslis, bjorg,...",
     "type": "Type",
-    "annotated": "Annotated",
+    "annotated": "Anotirano",
     "annotation": "Annotation",
     "not_annotated": "Not annotated",
     "all": "All",
@@ -247,7 +251,7 @@
     "Open_Food_Facts_wiki": "Open Food Facts wiki (en)",
     "Translators": "Prevoditelji",
     "Partners": "Partners",
-    "Open_Beauty_Facts": "Open Beauty Facts - Cosmetics",
+    "Open_Beauty_Facts": "Open Beauty Facts - cosmetics",
     "text2": "A collaborative, free and open database of food products from around the world."
   },
   "helper": {
@@ -313,53 +317,30 @@
     "close": "Zatvori"
   },
   "nutrition": {
+    "table_partialy_filled": "Table with already some data",
+    "display_off_values": "Display values from OpenFoodFacts",
+    "nutrients": "Nutrients",
+    "serving_size": "Serving size",
+    "add_nutrient": "-- add nutrient --",
+    "validate_100g": "Validate (100g)",
+    "validate_serving": "Validate (serving)",
+    "skip": "Preskočiti",
+    "invalid_image": "Invalid image",
+    "pictures": {
+      "picture_date": "Photo uploaded",
+      "selected_as_nutrients": "Selected as nutriment image ✅",
+      "not_selected_as_nutrients": "Not selected as nutriment ❌"
+    },
     "instructions": {
-      "cropTheTable": "Crop the image to simplify your annotation",
-      "verifyNutrimentDetected": "Indicate if the nutriment detected is correct",
-      "selectMissingNutriments": "Add missing nutriments (you can click even if the word has no box)",
-      "selectValue": "Select the nutritional value of: "
-    },
-    "steps": {
-      "1": "Crop",
-      "2": "Special values",
-      "3": "Nutriments Selection",
-      "4": "Values Selection"
-    },
-    "loading": "Loading...",
-    "unknown_brand": "Brand Unknown",
-    "value_missing": "You forgot to input a value.",
-    "next": "Next step",
-    "prev": "Prev step",
-    "skip": "Skip this product",
-    "validate": "Validate Table",
-    "unselect_picture": "No nutrition info",
-    "basis": "data for: ",
-    "servingSize": "serving size",
-    "value": "Value",
-    "unit": "Unit",
-    "nutriments": {
-      "nutriment_energy-kj": "Energy (kJ)",
-      "nutriment_energy-kcal": "Energy (kCal)",
-      "nutriment_fat": "Masnoće",
-      "nutriment_saturated-fat": "Saturated fat",
-      "nutriment_carbohydrates": "Ugljikohidrati",
-      "nutriment_sugars": "Sugar",
-      "nutriment_proteins": "Protein content",
-      "nutriment_fiber": "Fibres",
-      "nutriment_salt": "Sol",
-      "nutriment_sodium": "Natrij"
-    },
-    "history": {
-      "title": "Session History",
-      "status": "status",
-      "product name": "product name",
-      "view": "view page",
-      "edit": "edit page",
-      "SKIP": "ignored",
-      "VALIDATED": "edited",
-      "WRONG_IMAGE": "unselected picture",
-      "close": "close",
-      "open": "open history"
+      "open_button": "Open instructions",
+      "title": "How to use the interface",
+      "chose_between_empty_and_partially_filled": "You can chose between products for which OpenFoodFacts (OFF) has no data about the nutrients. Or product with partially filled nutrient table.",
+      "picture_date_is_display": "The date of the picture is displayed on top of it. Allowing you to check if it's a recent one.",
+      "indicate_not_provided_value": "Empty inputs are ignored. If fibers are not present in the table, you can put \"-\" to specify the value is not available.",
+      "validate_one_column": "Odaberite veličinu prikazanu na slici. Ako imate 100 g i veličinu porcije, odaberite 100 g jer je to normalizirani format.",
+      "skip_button": "If you don't know how to deal with an image, or you just don't want to do it, press \"skip\". Other user will be able to handle it.",
+      "invalid_image_button": "If the pictures is not a nutritional table, press \"Invalid image\" to remove it from the list of the images to verify",
+      "close": "Zatvori"
     }
   },
   "notfound": {
@@ -380,7 +361,7 @@
     "incorrect": "Wrong",
     "correct": "Correct ({{label}})"
   },
-  "eco-score": {
+  "green-score": {
     "description": "Here is a summary of questions that could improve Eco-Score computation",
     "countryLabel": "Country"
   },
