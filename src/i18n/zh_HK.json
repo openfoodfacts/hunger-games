@@ -12,8 +12,8 @@
           "description": "請找出與指定表章匹配的所有表章"
         },
         "green_score": {
-          "title": "環保評分",
-          "description": "註釋最具價值的問題"
+          "title": "Eco-score",
+          "description": "Annotate the questions with the highest value"
         }
       }
     },
@@ -363,7 +363,7 @@
   },
   "green-score": {
     "description": "Here is a summary of questions that could improve Eco-Score computation",
-    "countryLabel": "地區"
+    "countryLabel": "Country"
   },
   "ingredients": {
     "description": "This game allows you to validate the pre-selection of images of ingredients lists in various languages for a product, and validate the extracted ingredients.",
