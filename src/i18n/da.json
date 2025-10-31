@@ -12,8 +12,8 @@
           "description": "Find alle logoer matchende det givne logo"
         },
         "green_score": {
-          "title": "Øko-Score",
-          "description": "Anmærk spørgsmålene med den højeste værdi"
+          "title": "Eco-score",
+          "description": "Annotate the questions with the highest value"
         }
       }
     },
@@ -362,8 +362,8 @@
     "correct": "Korrekt ({{label}})"
   },
   "green-score": {
-    "description": "Her er en oversigt over spørgsmål, som kunne forbedre Øko-Score beregningen",
-    "countryLabel": "Land"
+    "description": "Here is a summary of questions that could improve Eco-Score computation",
+    "countryLabel": "Country"
   },
   "ingredients": {
     "description": "Dette spil lader dig validere forvalget af billeder af ingredienslister på forskellige sprog for et produkt og validere de udtrukne ingredienser.",
