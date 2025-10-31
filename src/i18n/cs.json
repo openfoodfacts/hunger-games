@@ -12,8 +12,8 @@
           "description": "Najděte všechna loga odpovídající danému logu"
         },
         "green_score": {
-          "title": "Eko-skóre",
-          "description": "Označte otázky s nejvyšší hodnotou"
+          "title": "Eco-score",
+          "description": "Annotate the questions with the highest value"
         }
       }
     },
@@ -362,8 +362,8 @@
     "correct": "Správně ({{label}})"
   },
   "green-score": {
-    "description": "Zde je souhrn otázek, které by mohly zlepšit výpočet Eco-score",
-    "countryLabel": "Země"
+    "description": "Here is a summary of questions that could improve Eco-Score computation",
+    "countryLabel": "Country"
   },
   "ingredients": {
     "description": "Tato hra vám umožňuje ověřit předvýběr obrázků seznamů přísad v různých jazycích pro produkt a ověřit extrahované přísady.",
