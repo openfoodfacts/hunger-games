@@ -12,8 +12,8 @@
           "description": "Βρείτε όλα τα λογότυπα που ταιριάζουν με το συγκεκριμένο λογότυπο"
         },
         "green_score": {
-          "title": "Εκο-σκόρ",
-          "description": "Σημειώστε τις ερωτήσεις με την υψηλότερη αξία"
+          "title": "Eco-score",
+          "description": "Annotate the questions with the highest value"
         }
       }
     },
@@ -362,8 +362,8 @@
     "correct": "Σωστό ({{label}})"
   },
   "green-score": {
-    "description": "Ακολουθεί μια σύνοψη ερωτήσεων που θα μπορούσαν να βελτιώσουν τον υπολογισμό του Eco-Score",
-    "countryLabel": "Χώρα"
+    "description": "Here is a summary of questions that could improve Eco-Score computation",
+    "countryLabel": "Country"
   },
   "ingredients": {
     "description": "Αυτό το παιχνίδι σάς επιτρέπει να επικυρώσετε την προεπιλογή εικόνων των λιστών συστατικών σε διάφορες γλώσσες για ένα προϊόν και να επικυρώσετε τα εξαγόμενα συστατικά.",
