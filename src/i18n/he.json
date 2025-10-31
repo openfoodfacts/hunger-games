@@ -12,8 +12,8 @@
           "description": "איתור כל הלוגואים שתואמים ללוגו המוצג"
         },
         "green_score": {
-          "title": "Eco-Score",
-          "description": "תיוג השאלות עם הערך הגבוה ביותר"
+          "title": "Eco-score",
+          "description": "Annotate the questions with the highest value"
         }
       }
     },
@@ -362,8 +362,8 @@
     "correct": "נכון ({{label}})"
   },
   "green-score": {
-    "description": "הנה תקציר לשאלות שיכולות לשפר את החישוב של Eco-Score",
-    "countryLabel": "מדינה"
+    "description": "Here is a summary of questions that could improve Eco-Score computation",
+    "countryLabel": "Country"
   },
   "ingredients": {
     "description": "המשחק הזה מאפשר לך לאמת אוסף של תמונות שנבחר מראש של רשימות רכיבים במגוון שפות למוצר ולאמת את הרכיבים שחולצו.",
