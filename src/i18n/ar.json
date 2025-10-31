@@ -12,8 +12,8 @@
           "description": "أوجد جميع الشعارات التي تطابق الشعار المعطى"
         },
         "green_score": {
-          "title": "العلامة البيئية Eco-score",
-          "description": "علق على الأسئلة بجودة أعلى"
+          "title": "Eco-score",
+          "description": "Annotate the questions with the highest value"
         }
       }
     },
@@ -362,8 +362,8 @@
     "correct": "صحيح ({{label}})"
   },
   "green-score": {
-    "description": "إليك ملخص للأسئلة التي قد تحسن حساب درجة البيئة",
-    "countryLabel": "البلد"
+    "description": "Here is a summary of questions that could improve Eco-Score computation",
+    "countryLabel": "Country"
   },
   "ingredients": {
     "description": "تتيح لك هذه اللعبة التحقق من صحة اختيار الصور لقوائم المكونات بلغات مختلفة لمنتج معين، والتأكد من صحة المكونات المستخرجة.",
