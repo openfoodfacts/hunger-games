@@ -13,7 +13,7 @@
         },
         "green_score": {
           "title": "Eco-score",
-          "description": "最も価値のある質問に注釈をつけてください"
+          "description": "Annotate the questions with the highest value"
         }
       }
     },
@@ -362,8 +362,8 @@
     "correct": "正しい ({{label}})"
   },
   "green-score": {
-    "description": "こちらがEco-Scoreの計算を向上させられる可能性のある質問の概要です。",
-    "countryLabel": "国"
+    "description": "Here is a summary of questions that could improve Eco-Score computation",
+    "countryLabel": "Country"
   },
   "ingredients": {
     "description": "このゲームでは、製品のさまざまな言語で原材料リストの画像の事前選択を検証し、抽出された原材料を検証することができます。",
