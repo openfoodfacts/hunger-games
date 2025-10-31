@@ -12,8 +12,8 @@
           "description": "Encuentra todos los logotipos que coincidan con el que se muestra"
         },
         "green_score": {
-          "title": "Eco-Score",
-          "description": "Toma notas en las preguntas con el valor más alto"
+          "title": "Eco-score",
+          "description": "Annotate the questions with the highest value"
         }
       }
     },
@@ -362,8 +362,8 @@
     "correct": "Correcto ({{label}})"
   },
   "green-score": {
-    "description": "Aquí tienes un resumen de las preguntas que podrían mejorar el cálculo del Eco-Score.",
-    "countryLabel": "País"
+    "description": "Here is a summary of questions that could improve Eco-Score computation",
+    "countryLabel": "Country"
   },
   "ingredients": {
     "description": "Este juego te permite validar la preselección de imágenes de los ingredientes de un producto en diferentes idiomas, además de poder validar los ingredientes extraídos.",
