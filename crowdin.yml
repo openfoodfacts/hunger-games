@@ -1,7 +1,7 @@
 project_id_env: CROWDIN_PROJECT_ID
 api_token_env: CROWDIN_PERSONAL_TOKEN
 pull_request_body: '### What\x0A- Automated pull request pulling in new or updated translations from Crowdin (https://translate.openfoodfacts.org).\x0A## Checklist\x0A- [ ] Check that they are no bad translations. If there are, correct them directly in Crowdin so that they are not resynced again. Then you can correct them here as well, or wait 24 hours for the sync to happen automatically.\x0A- [ ] Put extra attention on Acholi, which is used mistakenly as a sandbox by people discovering the self-service translation button on Open Food Facts\x0A- [ ] Once you are happy, that automated checks pass, you can approve the PR and merge it.\x0A### Part of\x0A- Translations'
-pull_request_title: "feat: New translations for Hunger Games"
+pull_request_title: 'feat: New translations for Hunger Games'
 files:
   - source: /src/i18n/common.json
     translation: /src/i18n/%two_letters_code%.json
