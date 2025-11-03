@@ -12,8 +12,8 @@
           "description": "Vind alle logo's die overeenkomen met het gegeven logo"
         },
         "green_score": {
-          "title": "Eco-score",
-          "description": "Annotate the questions with the highest value"
+          "title": "Ecoscore",
+          "description": "Vragen"
         }
       }
     },
@@ -362,7 +362,7 @@
     "correct": "Juist ({{label}})"
   },
   "green-score": {
-    "description": "Here is a summary of questions that could improve Eco-Score computation",
+    "description": "Hier is een samenvatting van vragen die de Ecoscore berekening kunnen verbeteren",
     "countryLabel": "Country"
   },
   "ingredients": {
