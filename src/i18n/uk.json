@@ -13,7 +13,7 @@
         },
         "green_score": {
           "title": "Eco-score",
-          "description": "Annotate the questions with the highest value"
+          "description": "Додайте коментарі до питань з найвищим значенням"
         }
       }
     },
@@ -362,8 +362,8 @@
     "correct": "Правильно ({{label}})"
   },
   "green-score": {
-    "description": "Here is a summary of questions that could improve Eco-Score computation",
-    "countryLabel": "Country"
+    "description": "Ось короткий підсумок питань, які можуть покращити розрахунок Eco-Score",
+    "countryLabel": "Країна"
   },
   "ingredients": {
     "description": "Ця гра дозволяє перевіряти попередньо вибрані зображення інгредієнтів на різних мовах для товару та підтверджувати видобуті інгредієнти.",
