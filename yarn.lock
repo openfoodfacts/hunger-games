@@ -3627,7 +3627,7 @@ __metadata:
     react-i18next: "npm:^12.3.1"
     react-map-interaction: "npm:^2.1.0"
     react-redux: "npm:^8.1.3"
-    react-router-dom: "npm:^7.9.5"
+    react-router: "npm:^7.9.5"
     react-zoom-pan-pinch: "npm:^2.5.0"
     reactour: "npm:^1.19.4"
     redux: "npm:^4.2.0"
@@ -4947,19 +4947,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-router-dom@npm:^7.9.5":
-  version: 7.9.5
-  resolution: "react-router-dom@npm:7.9.5"
-  dependencies:
-    react-router: "npm:7.9.5"
-  peerDependencies:
-    react: ">=18"
-    react-dom: ">=18"
-  checksum: 10c0/e54fdfa211e356bd89e3c12b1f89537058357ef21b6a05f55456e0defaab8e77b7495e035ff6999b17a9a2e6f8204d46cf5897fe56e5d3db9458109a014efc4d
-  languageName: node
-  linkType: hard
-
-"react-router@npm:7.9.5":
+"react-router@npm:^7.9.5":
   version: 7.9.5
   resolution: "react-router@npm:7.9.5"
   dependencies:

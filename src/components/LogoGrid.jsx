@@ -10,7 +10,7 @@ import IconButton from "@mui/material/IconButton";
 import Tooltip from "@mui/material/Tooltip";
 import Checkbox from "@mui/material/Checkbox";
 
-import { Link } from "react-router-dom";
+import { Link } from "react-router";
 
 import { useTranslation } from "react-i18next";
 import EditIcon from "@mui/icons-material/Edit";
