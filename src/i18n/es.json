@@ -13,7 +13,7 @@
         },
         "green_score": {
           "title": "Eco-score",
-          "description": "Annotate the questions with the highest value"
+          "description": "Anota las preguntas con el valor más alto"
         }
       }
     },
@@ -362,8 +362,8 @@
     "correct": "Correcto ({{label}})"
   },
   "green-score": {
-    "description": "Here is a summary of questions that could improve Eco-Score computation",
-    "countryLabel": "Country"
+    "description": "Aquí tienes un resumen de las preguntas que podrían mejorar el cálculo del Eco-Score",
+    "countryLabel": "País"
   },
   "ingredients": {
     "description": "Este juego te permite validar la preselección de imágenes de los ingredientes de un producto en diferentes idiomas, además de poder validar los ingredientes extraídos.",
