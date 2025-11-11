@@ -134,7 +134,7 @@ const InsightGrid = ({ filterState = {}, setFilterState }) => {
       {
         field: "actions",
         type: "actions",
-        getActions: (params) => (
+        getActions: (params) => [
           <React.Fragment>
             <GridActionsCellItem
               component="a"
@@ -169,8 +169,8 @@ const InsightGrid = ({ filterState = {}, setFilterState }) => {
               }
             />
             ,
-          </React.Fragment>
-        ),
+          </React.Fragment>,
+        ],
       },
       {
         field: "type",
