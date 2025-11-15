@@ -12,8 +12,8 @@
           "description": "Etsi kaikki logot, jotka vastaavat annettua logoa"
         },
         "green_score": {
-          "title": "Ekopisteet",
-          "description": "Valitse korkea-arvoisimmat kysymykset"
+          "title": "Eco-score",
+          "description": "Annotate the questions with the highest value"
         }
       }
     },
@@ -362,8 +362,8 @@
     "correct": "Oikein ({{label}})"
   },
   "green-score": {
-    "description": "Tässä on yhteenveto kysymyksistä, jotka voivat parantaa Eco-Score-laskentaa",
-    "countryLabel": "Maa"
+    "description": "Here is a summary of questions that could improve Eco-Score computation",
+    "countryLabel": "Country"
   },
   "ingredients": {
     "description": "Tämän pelin avulla voit vahvistaa tuotteen ainesosaluetteloiden kuvien esivalinnan eri kielillä ja validoida otetut ainesosat.",

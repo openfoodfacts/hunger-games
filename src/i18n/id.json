@@ -13,7 +13,7 @@
         },
         "green_score": {
           "title": "Eco-score",
-          "description": "Beri keterangan pada pertanyaan dengan nilai tertinggi"
+          "description": "Annotate the questions with the highest value"
         }
       }
     },
@@ -362,8 +362,8 @@
     "correct": "Benar ({{label}})"
   },
   "green-score": {
-    "description": "Berikut ini adalah ringkasan pertanyaan yang dapat meningkatkan penghitungan Eco-Score",
-    "countryLabel": "Negara"
+    "description": "Here is a summary of questions that could improve Eco-Score computation",
+    "countryLabel": "Country"
   },
   "ingredients": {
     "description": "Permainan ini memungkinkan Anda untuk memvalidasi pra-pemilihan gambar daftar bahan dalam berbagai bahasa untuk suatu produk, dan memvalidasi bahan yang diekstrak.",

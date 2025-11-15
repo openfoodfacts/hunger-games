@@ -12,8 +12,8 @@
           "description": "주어진 로고와 일치하는 모든 로고 찾기"
         },
         "green_score": {
-          "title": "친환경 점수",
-          "description": "가장 높은 값으로 질문에 주석 달기"
+          "title": "Eco-score",
+          "description": "Annotate the questions with the highest value"
         }
       }
     },
@@ -362,8 +362,8 @@
     "correct": "정답 ({{label}})"
   },
   "green-score": {
-    "description": "다음은 에코 점수 계산을 개선할 수 있는 질문 요약입니다.",
-    "countryLabel": "국가"
+    "description": "Here is a summary of questions that could improve Eco-Score computation",
+    "countryLabel": "Country"
   },
   "ingredients": {
     "description": "This game allows you to validate the pre-selection of images of ingredients lists in various languages for a product, and validate the extracted ingredients.",

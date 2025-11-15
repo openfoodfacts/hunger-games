@@ -99,7 +99,7 @@
         "campaign": "Campaign"
       },
       "placeholders": {
-        "value": "Value (Fanta, en:organic,...)",
+        "value": "Value (Fanta, en:organic...)",
         "brand": "Auchan, Danone, Herta, ...",
         "campaign": "Annotation campaigns"
       },
@@ -117,7 +117,7 @@
     "log_in": "Login",
     "sign_up": "Sign up",
     "login_title": "Make your annotation count",
-    "login_description": "You are not currently logged into Open Food Facts. To get your answers directly applied to products, and associated to your account, consider logging in to your Open Food Facts account, or creating one",
+    "login_description": "You are not currently logged into Open Food Facts. To get your answers directly applied to products and associated to your account, consider logging in to your Open Food Facts account, or creating one",
     "please_wait_while_we_fetch_the_question": "Please wait while we fetch the question!"
   },
   "menu": {
@@ -125,19 +125,18 @@
     "games": "Games",
     "questions": "Questions",
     "logos": "Logos",
-    "logos-annotation": "Logos annotation",
+    "logos-annotation": "Logo annotation",
     "logos-search": "Logos search",
     "logos-product-search": "Annotation per products",
     "logos-deep-search": "Infinite annotation",
     "manage": "Manage",
     "insights": "Insights",
     "nutritions": "Nutrition",
-    "ingredients": "Ingredients",
     "ingredient-spellcheck": "Ingredient spellcheck",
     "ingredient-detection": "Ingredient detection",
     "settings": "Settings",
-    "green-score": "Categories & Labels",
-    "dashboard": "Labels & Claims",
+    "green-score": "Green-Score",
+    "dashboard": "Logos dashboard",
     "tour": "Show tour",
     "logged_in_user": "Logged as {{userName}}",
     "log_in": "Click to login"
@@ -147,7 +146,7 @@
     "barcode": "Barcode",
     "barcode_placeholder": "barcode",
     "value_tag": "Value tag",
-    "value_placeholder": "ex: en:mueslis, bjorg,...",
+    "value_placeholder": "ex: en: mueslis, bjorg,...",
     "type": "Type",
     "annotated": "Annotated",
     "annotation": "Annotation",

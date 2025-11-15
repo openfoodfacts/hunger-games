@@ -13,7 +13,7 @@
         },
         "green_score": {
           "title": "Eco-Score",
-          "description": "Annoteer de vragen met de hoogste waarde"
+          "description": "Vragen"
         }
       }
     },
@@ -362,8 +362,8 @@
     "correct": "Correct ({{label}})"
   },
   "green-score": {
-    "description": "Hier is een samenvatting van vragen die de berekening van de Eco-score kunnen verbeteren",
-    "countryLabel": "Land"
+    "description": "Hier is een samenvatting van vragen die de Ecoscore berekening kunnen verbeteren",
+    "countryLabel": "Country"
   },
   "ingredients": {
     "description": "Met dit spel kun je de voorselectie van afbeeldingen van ingrediëntenlijsten in verschillende talen voor een product valideren en de geëxtraheerde ingrediënten valideren.",

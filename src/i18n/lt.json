@@ -12,8 +12,8 @@
           "description": "Raskite visus logotipus, atitinkančius pateiktą logotipą"
         },
         "green_score": {
-          "title": "Ekologinis balas",
-          "description": "Anotuoti klausimus, kurių vertė yra didžiausia"
+          "title": "Eco-score",
+          "description": "Annotate the questions with the highest value"
         }
       }
     },
@@ -362,8 +362,8 @@
     "correct": "Teisingai ({{label}})"
   },
   "green-score": {
-    "description": "Čia pateikiama klausimų, kurie galėtų pagerinti Eco-Score skaičiavimą, suvestinė",
-    "countryLabel": "Šalis"
+    "description": "Here is a summary of questions that could improve Eco-Score computation",
+    "countryLabel": "Country"
   },
   "ingredients": {
     "description": "Šis žaidimas leidžia patvirtinti išankstinį ingredientų sąrašų vaizdų pasirinkimą įvairiomis gaminio kalbomis ir patvirtinti išgautas sudedamąsias dalis.",
