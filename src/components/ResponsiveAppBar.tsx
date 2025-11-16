@@ -239,7 +239,7 @@ const ResponsiveAppBar = () => {
                 open={Boolean(anchorElNav)}
                 onClose={handleCloseNavMenu}
                 sx={{
-                  display: { xs: "block", md: "none" },
+                  display: { xs: "block", lg: "none" },
                 }}
               >
                 {displayedPages.map((page) => {
