@@ -215,9 +215,8 @@ const robotoff = {
   },
 
   getLogosImages(logoIds: string[]) {
-    const params = new URLSearchParams({
-      logo_ids: logoIds.join(","),
-    });
+    const params = new URLSearchParams();
+    logoIds.forEach((id) => params.append("logo_ids", id));
 
     return axios.get(`${ROBOTOFF_API_URL}/images/logos?${params.toString()}`);
   },
