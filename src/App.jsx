@@ -23,9 +23,8 @@ import ColorModeContext from "./contexts/colorMode";
 import Loader from "./pages/loader";
 import { CountryProvider } from "./contexts/CountryProvider";
 
-import QuestionsPage from "./pages/questions";
 
-const EcoScorePage = React.lazy(() => import("./pages/eco-score"));
+const GreenScorePage = React.lazy(() => import("./pages/green-score"));
 const LogoAnnotationPage = React.lazy(
   () => import("./pages/logos/LogoAnnotation"),
 );
@@ -36,6 +35,7 @@ const ProductLogoAnnotationPage = React.lazy(
   () => import("./pages/logos/ProductLogoAnnotations"),
 );
 const SettingsPage = React.lazy(() => import("./pages/settings"));
+const QuestionsPage = React.lazy(() => import("./pages/questions"));
 const InsightsPage = React.lazy(() => import("./pages/insights"));
 const NotFoundPage = React.lazy(() => import("./pages/not-found"));
 const Home = React.lazy(() => import("./pages/home"));
@@ -200,7 +200,8 @@ export default function App() {
                   <ResponsiveAppBar />
                   <Routes>
                     <Route path="/" element={<Home />} />
-                    <Route path="/eco-score" element={<EcoScorePage />} />
+                    <Route path="/eco-score" element={<GreenScorePage />} />
+                    <Route path="/green-score" element={<GreenScorePage />} />
                     <Route
                       path="/logos"
                       element={

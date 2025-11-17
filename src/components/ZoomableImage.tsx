@@ -16,9 +16,20 @@ import OpenInFullIcon from "@mui/icons-material/OpenInFull";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { useTheme } from "@mui/material/styles";
 
-const ZoomableImage = (props) => {
-  const { src, srcFull, zoomIn, imageProps, ...other } = props;
+type ZoomableImageProps = {
+  src: string;
+  srcFull?: string;
+  zoomIn?: boolean;
+  imageProps?: React.ImgHTMLAttributes<HTMLImageElement>;
+} & React.HTMLAttributes<HTMLDivElement>;
 
+const ZoomableImage = ({
+  src,
+  srcFull,
+  zoomIn,
+  imageProps,
+  ...other
+}: ZoomableImageProps) => {
   const apiRef = React.useRef(null);
   const [rotation, setRotation] = React.useState(0);
   const [isOpen, setIsOpen] = React.useState(false);

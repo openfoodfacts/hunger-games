@@ -11,7 +11,7 @@
           "title": "Logoer",
           "description": "Finn alle logoene som samsvarer med den angitte logoen"
         },
-        "eco_score": {
+        "green_score": {
           "title": "Eco-score",
           "description": "Merk spørsmålene med høyest verdi"
         }
@@ -70,6 +70,8 @@
     "countries": "Land",
     "view": "Vis",
     "edit": "Rediger ",
+    "remaining": "Gjenværende: {{count}}",
+    "remaining_other": "Remaining: >100",
     "hide_images": "Skjul bilder (raskere lasting av innhold)",
     "display_images": "Vis bilder",
     "annotations": "Merknader",
@@ -129,9 +131,11 @@
     "logos-deep-search": "Uendelig merknad",
     "manage": "Administrer",
     "insights": "Innsikter",
-    "nutritions": "Ernæringsinnhold",
+    "nutritions": "Ernæring",
+    "ingredient-spellcheck": "Ingredient stavekontroll",
+    "ingredient-detection": "Oppdagelse av ingrediens",
     "settings": "Innstillinger",
-    "eco-score": "Eco-score",
+    "green-score": "Green-Score",
     "dashboard": "Logopanel",
     "tour": "Vis omvisning",
     "logged_in_user": "Logget som {{userName}}",
@@ -247,7 +251,7 @@
     "Open_Food_Facts_wiki": "Open Food Facts wiki (no)",
     "Translators": "Oversettere",
     "Partners": "Partnere",
-    "Open_Beauty_Facts": "Open Beauty Facts - Kosmetikk",
+    "Open_Beauty_Facts": "Open Beauty Facts - kosmetikk",
     "text2": "En felles, gratis og åpen database med matvarer fra hele verden."
   },
   "helper": {
@@ -313,53 +317,30 @@
     "close": "Lukk"
   },
   "nutrition": {
+    "table_partialy_filled": "Tabell er delvis fylt ut",
+    "display_off_values": "Vis verdier fra OpenFoodFacts",
+    "nutrients": "Næringsstoffer",
+    "serving_size": "Porsjonstørrelse",
+    "add_nutrient": "-- Legg til næringsstoff --",
+    "validate_100g": "Bekreft (100g)",
+    "validate_serving": "Bekreft (servering)",
+    "skip": "Hopp over",
+    "invalid_image": "Ugyldig bilde",
+    "pictures": {
+      "picture_date": "Bilde lastet opp",
+      "selected_as_nutrients": "Valgt som næringsbilde ✅",
+      "not_selected_as_nutrients": "Ikke valgt som næringstoff ❌"
+    },
     "instructions": {
-      "cropTheTable": "Beskjær bildet for å forenkle kommentaren",
-      "verifyNutrimentDetected": "Angi om det oppdagede næringsstoffet er riktig",
-      "selectMissingNutriments": "Legg til manglende næringsstoffer (du kan klikke selv om ordet ikke har noen boks)",
-      "selectValue": "Velg næringsverdien av: "
-    },
-    "steps": {
-      "1": "Beskjær",
-      "2": "Spesielle verdier",
-      "3": "Valg av næringsstoffer",
-      "4": "Valg av verdier"
-    },
-    "loading": "Laster...",
-    "unknown_brand": "Merke ukjent",
-    "value_missing": "Du glemte å legge inn en verdi.",
-    "next": "Neste steg",
-    "prev": "Forrige steg",
-    "skip": "Hopp over dette produktet",
-    "validate": "Godkjenningstabell",
-    "unselect_picture": "Ingen ernæringsinformasjon",
-    "basis": "data for: ",
-    "servingSize": "porsjonsstørrelse",
-    "value": "Verdi",
-    "unit": "Enhet",
-    "nutriments": {
-      "nutriment_energy-kj": "Energi (kJ)",
-      "nutriment_energy-kcal": "Energi (kCal)",
-      "nutriment_fat": "Fett",
-      "nutriment_saturated-fat": "Mettet fett",
-      "nutriment_carbohydrates": "Karbohydrater",
-      "nutriment_sugars": "Sukker",
-      "nutriment_proteins": "Proteininnhold",
-      "nutriment_fiber": "Fibre",
-      "nutriment_salt": "Salt",
-      "nutriment_sodium": "Natrium"
-    },
-    "history": {
-      "title": "Sesjonshistorikk",
-      "status": "status",
-      "product name": "produktnavn",
-      "view": "se side",
-      "edit": "rediger side",
-      "SKIP": "ignorert",
-      "VALIDATED": "redigert",
-      "WRONG_IMAGE": "avmerket bilde",
-      "close": "lukk",
-      "open": "åpne historikk"
+      "open_button": "Åpne instruksjoner",
+      "title": "Hvordan bruke grensesnittet",
+      "chose_between_empty_and_partially_filled": "Du kan velge mellom produkter hvor OpenFoodFacts (OFF) ikke har data om næringsstoffene. Eller produkter med delvis fylt ut næringsstofftabell.",
+      "picture_date_is_display": "Bildets dato er vist oppå bildet. Det gir deg muligheten til å se om det var nylig tatt.",
+      "indicate_not_provided_value": "Tomme inputer er ignorert. Hvis fibre finnes ikke i tabellen, kan du plassere \"-\" for en verdi som ikke er tilgjengelig.",
+      "validate_one_column": "Velg størrelsen den vises i bildet. Hvis du har 100g og serverer størrelse, kan du velge 100g fordi det er et normalisert format.",
+      "skip_button": "Om du ikke vet hvordan du skal håndtere bilder, eller om du ikke har lyst til, press \"skip\". En annen bruker vil klare å håndtere det.",
+      "invalid_image_button": "Hvis bildene ikke er næringstabell, press \"Ugyldig bilde\" for å fjerne det fra listen av bilder å bekrefte",
+      "close": "Lukk"
     }
   },
   "notfound": {
@@ -370,8 +351,8 @@
   },
   "nutriscore": {
     "image_alt": "beskjært bilde",
-    "label": "Annotate Nutri-Score logo detection by batch.",
-    "description": "To do so, select all the images showing the correct/wrong Nutri-Score value ({{label}}), and click on the bottom buttons to say if you selected a set correct or wrong ones.",
+    "label": "Annoter Nutri-Score logo gjenkjennelse i mengde.",
+    "description": "For å gjøre det, velg alle bildene som viser rett/feil Nutri-Score verdi ({{label}}), og trykk på knappene på bunnen for å si at du har valgt et sett med riktige eller feile verdier.",
     "images_remaining": "Fortsatt {{remaining}} å kommentere",
     "image_sizes": "Bildestørrelser",
     "zoom_on_logo": "Zoom på logo",
@@ -380,19 +361,19 @@
     "incorrect": "Feil",
     "correct": "Riktig ({{label}})"
   },
-  "eco-score": {
+  "green-score": {
     "description": "Her er et sammendrag av spørsmål som kan forbedre Eco-Score-beregningen",
     "countryLabel": "Land"
   },
   "ingredients": {
     "description": "Dette spillet lar deg validere forhåndsutvalget for bilder av ingredienslister på ulike språk for et produkt, og godkjenne ingrediensene som ble henta ut.",
-    "current_text": "text from off",
-    "confidence_score": "language confidence",
-    "revert": "Revert",
-    "parsing": "Get server understanding",
+    "current_text": "tekst fra off",
+    "confidence_score": "språkstillit",
+    "revert": "Tilbake",
+    "parsing": "Få server forståelse",
     "send": "Bekreft og send",
     "skip": "Hopp over dette produktet",
-    "getRobotoffPrediciton": "Get predictions from Robotoff"
+    "getRobotoffPrediciton": "Få spådommer fra Robotoff"
   },
   "footer": {
     "appStore": {

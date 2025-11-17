@@ -9,7 +9,7 @@ on:
 jobs:
   add-to-project:
     name: Add issue to Hunger Games GitHub project
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-slim
     steps:
       - uses: actions/add-to-project@main
         with:
@@ -19,7 +19,7 @@ jobs:
 
   add-to-design-project:
     name: 🎨 Add issue to the openfoodfacts-design project
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-slim
     steps:
       - uses: actions/add-to-project@main
         with:

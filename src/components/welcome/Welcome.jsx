@@ -189,7 +189,7 @@ export const getSteps = ({ t, withSelector, theme }) => [
       ...modalStyles,
       backgroundColor: theme?.palette?.background?.paper,
     },
-    selector: withSelector ? '[data-welcome-tour="eco-score"]' : undefined,
+    selector: withSelector ? '[data-welcome-tour="green-score"]' : undefined,
     content: () => (
       <Box>
         <Box sx={{ display: "flex" }}>

@@ -11,7 +11,7 @@
           "title": "Logos",
           "description": "Finden Sie alle Logos, die mit dem angegebenen Logo übereinstimmen"
         },
-        "eco_score": {
+        "green_score": {
           "title": "Eco-Score",
           "description": "Kommentiere die Fragen mit dem höchsten Wert"
         }
@@ -19,7 +19,7 @@
     },
     "account_band": {
       "title": "Möchten Sie einen wichtigen Beitrag leisten? Erstellen Sie ein Konto oder melden Sie sich bei Open Food Facts an!",
-      "log_in": "Benutzername",
+      "log_in": "Anmelden",
       "sign_up": "Registrieren",
       "contribution_details": "Erfahren Sie, warum Ihr Beitrag wichtig ist"
     },
@@ -27,7 +27,7 @@
     "contribution_modal": {
       "title": "Ihr Beitrag ist wichtig",
       "information": "Hunger Games ist ein Versuch, die Ergebnisse unserer OCR und künstlichen Intelligenz zu nutzen. Wenn Sie die Hunger Games von Open Food Facts nutzen, verbessern Sie unsere gesamte Datenbank, die der Gemeinschaft hilft, bessere Lebensmittelentscheidungen zu treffen. Wir nehmen Ihre Anmerkungen auf und nutzen sie, um Open Food Facts noch genauer und effizienter zu machen.",
-      "thank_you": "Vielen Dank, dass Sie uns helfen, Open Food Facts zu verbessern, damit mehr Menschen es leicht nutzen können."
+      "thank_you": "Vielen Dank, dass Sie uns helfen, Open Food Facts zu verbessern, damit mehr Menschen es einfacher nutzen können."
     },
     "statistics": {
       "title": "{{userName}} Statistiken:",
@@ -37,11 +37,11 @@
       },
       "contributorCount": {
         "title": "Mitwirkende(r)",
-        "description": "Neues Produkt wird hinzugefügt"
+        "description": "Ein neues Produkt hinzufügen"
       },
       "photographerCount": {
-        "title": "Fotograf",
-        "description": "Foto für ein Produkt wird aufgenommen"
+        "title": "Fotograf(in)",
+        "description": "Fotografien für ein Produkt aufnehmen"
       }
     }
   },
@@ -56,13 +56,13 @@
     "labels": "Labels",
     "brand": "Marke",
     "brands": "Marken",
-    "packaging": "Verpackungsarten",
-    "quantity": "Mengenangabe",
+    "packaging": "Verpackung",
+    "quantity": "Menge",
     "insightTypeLabel": "Zeigt nur",
     "ingredients": "Zutaten",
     "product_weight": "Produktgewicht",
     "popularity_sort": "Nach Beliebtheit sortieren",
-    "see_examples": "Beispiele hierfür sind ",
+    "see_examples": "Siehe Beispiele für diese ",
     "no": "Nein",
     "skip": "Überspringen",
     "yes": "Ja",
@@ -70,25 +70,27 @@
     "countries": "Länder",
     "view": "Anzeigen",
     "edit": "Bearbeiten",
+    "remaining": "Verbleibend: {{count}}",
+    "remaining_other": "Verbleibend: >100",
     "hide_images": "Abbildungen ausblenden (für schnelleres Laden)",
     "display_images": "Abbildungen anzeigen",
     "annotations": "Anmerkungen",
-    "last_annotations": "Neueste Anmerkungen",
+    "last_annotations": "Letzte Anmerkungen",
     "remaining_annotations": "Verbleibende Fragen",
     "annotated_annotations": "Kommentiert",
     "filters": {
-      "active_filter_number": "mehr als {{count}} Filter",
-      "active_filter_number_one": "mehr als {{count}} Filter",
-      "active_filter_number_zero": "Kein Filter",
+      "active_filter_number": "+{{count}} Filter",
+      "active_filter_number_one": "+{{count}} Filter",
+      "active_filter_number_zero": "Ohne Filter",
       "short_label": {
-        "value": "Wert",
+        "value": "Werte",
         "country": "Land",
         "brand": "Marke",
         "popularity": "Beliebtheit",
         "campaign": "Kampagne"
       },
       "long_label": {
-        "type": "Fragentyp",
+        "type": "Art der Frage",
         "value": "Vorgeschlagener Wert",
         "country": "Produktionsland",
         "brand": "Marke des Produkts",
@@ -97,8 +99,8 @@
         "campaign": "Kampagne"
       },
       "placeholders": {
-        "value": "Wert (Fanta, de:bio,...)",
-        "brand": "Aldi, Landliebe, Rügenwalder Mühle...",
+        "value": "Wert (Fanta, de: biologisch, ...)",
+        "brand": "Rewe, Danone, Herta, ...",
         "campaign": "Kampagnen kommentieren"
       },
       "actions": {
@@ -112,7 +114,7 @@
     "flag": "Stimmt etwas nicht? Melden/Kennzeichnen Sie das Bild!",
     "unflag": "Kennzeichnung des Bildes aufheben",
     "reset_filters": "Filter zurücksetzen",
-    "log_in": "Benutzername",
+    "log_in": "Anmelden",
     "sign_up": "Registrieren",
     "login_title": "Bringen Sie Ihre Anmerkungen zum Tragen",
     "login_description": "Sie sind derzeit nicht bei Open Food Facts angemeldet. Um Ihre Antworten direkt auf Produkte anzuwenden und Ihrem Konto zuzuordnen, melden Sie sich bitte bei Ihrem Open Food Facts-Konto an oder erstellen Sie eines.",
@@ -130,8 +132,10 @@
     "manage": "Verwalten",
     "insights": "Erkenntnisse",
     "nutritions": "Nährwertangaben",
+    "ingredient-spellcheck": "Rechtschreibprüfung für Zutaten",
+    "ingredient-detection": "Zutatenerkennung",
     "settings": "Einstellungen",
-    "eco-score": "Eco-Score",
+    "green-score": "Green-Score",
     "dashboard": "Logo-Übersicht",
     "tour": "Tour anzeigen",
     "logged_in_user": "Angemeldet als {{userName}}",
@@ -247,7 +251,7 @@
     "Open_Food_Facts_wiki": "Open Food Facts - Wiki (en)",
     "Translators": "Übersetzer",
     "Partners": "Partner",
-    "Open_Beauty_Facts": "Open Beauty Facts - Kosmetik",
+    "Open_Beauty_Facts": "Open Beauty Facts - Kosmetika",
     "text2": "Eine gemeinsame, freie und offene Datenbank von Lebensmittelprodukten aus der ganzen Welt."
   },
   "helper": {
@@ -313,53 +317,30 @@
     "close": "Schließen"
   },
   "nutrition": {
+    "table_partialy_filled": "Tabelle mit bereits vorhandenen Daten",
+    "display_off_values": "Werte aus OpenFoodFacts anzeigen",
+    "nutrients": "Nährstoffe",
+    "serving_size": "Portionsgröße",
+    "add_nutrient": "-- Nährstoff hinzufügen --",
+    "validate_100g": "Bestätigen (100g)",
+    "validate_serving": "Bestätigen (Portion)",
+    "skip": "Überspringen",
+    "invalid_image": "Bild ungültig",
+    "pictures": {
+      "picture_date": "Foto hochgeladen",
+      "selected_as_nutrients": "Als Nährwertbild ausgewählt ✅",
+      "not_selected_as_nutrients": "Nicht als Nährwert ausgewählt ❌"
+    },
     "instructions": {
-      "cropTheTable": "Beschneiden Sie das Foto, um Ihre Anmerkungen zu vereinfachen.",
-      "verifyNutrimentDetected": "Geben Sie an, ob der ermittelte Nährwert korrekt ist",
-      "selectMissingNutriments": "Fügen Sie fehlende Nährstoffe hinzu (Sie können klicken, auch wenn das Wort kein Feld hat)",
-      "selectValue": "Nährwert auswählen von: "
-    },
-    "steps": {
-      "1": "Zuschneiden",
-      "2": "Sonderwerte",
-      "3": "Nährstoffauswahl",
-      "4": "Werteauswahl"
-    },
-    "loading": "Wird geladen …",
-    "unknown_brand": "Unbekannte Marke",
-    "value_missing": "Sie haben vergessen, einen Wert einzugeben.",
-    "next": "Weiter",
-    "prev": "Zurück",
-    "skip": "Dieses Produkt überspringen",
-    "validate": "Tabelle überprüfen",
-    "unselect_picture": "Keine Nährwertangaben",
-    "basis": "Daten zu:",
-    "servingSize": "Portionsgröße",
-    "value": "Wert",
-    "unit": "Einheit",
-    "nutriments": {
-      "nutriment_energy-kj": "Energie (kJ)",
-      "nutriment_energy-kcal": "Energie (kcal)",
-      "nutriment_fat": "Fett",
-      "nutriment_saturated-fat": "Gesättigte Fettsäuren",
-      "nutriment_carbohydrates": "Kohlenhydrate",
-      "nutriment_sugars": "Zucker",
-      "nutriment_proteins": "Proteingehalt",
-      "nutriment_fiber": "Ballaststoffe",
-      "nutriment_salt": "Salz",
-      "nutriment_sodium": "Natrium"
-    },
-    "history": {
-      "title": "Sitzungsverlauf",
-      "status": "Status",
-      "product name": "Produktname",
-      "view": "Seite anzeigen",
-      "edit": "Seite bearbeiten",
-      "SKIP": "Übersprungen",
-      "VALIDATED": "Bearbeitet",
-      "WRONG_IMAGE": "Nicht ausgewähltes Foto",
-      "close": "Schließen",
-      "open": "Verlauf öffnen"
+      "open_button": "Anleitung öffnen",
+      "title": "So verwenden Sie die Schnittstelle",
+      "chose_between_empty_and_partially_filled": "Sie können zwischen Produkten wählen, für die OpenFoodFacts (OFF) keine Daten über die Nährstoffe hat. Oder Produkte mit teilweise gefüllter Nährstofftabelle.",
+      "picture_date_is_display": "Das Datum des Fotos wird oben auf dem Bild angezeigt. So können Sie überprüfen, ob es sich um ein aktuelles Foto handelt.",
+      "indicate_not_provided_value": "Leere Eingaben werden ignoriert. Wenn keine Ballaststoffe in der Tabelle vorhanden sind, können Sie „-“ eingeben, um anzugeben, dass der Wert nicht verfügbar ist.",
+      "validate_one_column": "Wählen Sie die Größe, die auf dem Bild angezeigt wird. Wenn Sie 100 g und eine Portionsgröße haben, wählen Sie bitte 100 g, da dies ein normalisiertes Format ist.",
+      "skip_button": "Wenn Sie nicht wissen, wie Sie mit einem Bild umgehen sollen, oder wenn Sie es einfach nicht tun wollen, drücken Sie „Überspringen“. Andere Benutzer können das dann vervollständigen.",
+      "invalid_image_button": "Wenn es sich bei dem Bild nicht um eine Nährwerttabelle handelt, drücken Sie auf „Ungültiges Bild“, um es aus der Liste der zu überprüfenden Bilder zu entfernen",
+      "close": "Schließen"
     }
   },
   "notfound": {
@@ -380,7 +361,7 @@
     "incorrect": "Falsch",
     "correct": "Richtig ({{label}})"
   },
-  "eco-score": {
+  "green-score": {
     "description": "Hier ist eine Zusammenfassung von Fragen, die die Berechnung des Eco-Score verbessern könnten",
     "countryLabel": "Land"
   },

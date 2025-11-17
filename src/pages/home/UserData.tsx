@@ -1,4 +1,5 @@
-import * as React from "react";
+import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 import axios from "axios";
 
 import Box from "@mui/material/Box";
@@ -6,11 +7,11 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import Stack from "@mui/material/Stack";
-import { useTranslation } from "react-i18next";
+import { CircularProgress } from "@mui/material";
 
 import { OFF_URL } from "../../const";
 
-const fetchUserData = async (userName) => {
+const fetchUserData = async (userName: string) => {
   const editorPromise = axios
     .get(`${OFF_URL}/editor/${userName}.json?fields=count`)
     .then(({ data }) => {
@@ -71,30 +72,50 @@ const CountCard = (props) => {
 
 const UserData = ({ userName }) => {
   const { t } = useTranslation();
-  const [counts, setCounts] = React.useState({});
 
-  React.useEffect(() => {
+  const [data, setData] = useState({});
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    setLoading(true);
     fetchUserData(userName)
-      .then((counts) => {
-        setCounts(counts);
+      .then((counts) => setData(counts))
+      .catch(() => {
+        setError("Failed to fetch user data");
       })
-      .catch(() => {});
+      .finally(() => setLoading(false));
   }, [userName]);
 
   return (
     <Box sx={{ p: 2, mb: 10 }}>
       <Typography component="h3" variant="h5" sx={{ pb: 3 }}>
-        {t("home.statistics.title", { userName })}
+        {t("home.statistics.title", { userName: userName || "<unknown>" })}
       </Typography>
-      <Stack direction={{ xs: "column", sm: "row" }} spacing={2}>
-        {Object.keys(counts).map((countType) => (
-          <CountCard
-            key={countType}
-            translationKey={countType}
-            value={counts[countType]}
-          />
-        ))}
-      </Stack>
+
+      {loading ? (
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <CircularProgress />
+        </Box>
+      ) : error ? (
+        <Typography color="error">{error}</Typography>
+      ) : (
+        <Stack direction={{ xs: "column", sm: "row" }} spacing={2}>
+          {Object.entries(data).map(([countType, value]) => (
+            <CountCard
+              key={countType}
+              translationKey={countType}
+              value={value ?? "N/A"}
+            />
+          ))}
+        </Stack>
+      )}
     </Box>
   );
 };

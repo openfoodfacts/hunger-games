@@ -16,7 +16,7 @@ import countryNames from "../../assets/countries.json";
 import { OFF_DOMAIN } from "../../const";
 import { useCountry } from "../../contexts/CountryProvider";
 
-const ecoScoreCards = [
+const greenScoreCards = [
   {
     filterState: {
       ...DEFAULT_FILTER_STATE,
@@ -136,7 +136,7 @@ const ecoScoreCards = [
   },
 ];
 
-export default function EcoScore() {
+export default function GreenScore() {
   const { t } = useTranslation();
   const [country, setCountry] = useCountry();
 
@@ -148,7 +148,7 @@ export default function EcoScore() {
           padding: 5,
         }}
       >
-        <Typography>{t("eco-score.description")}</Typography>
+        <Typography>{t("green-score.description")}</Typography>
         <Box
           sx={{
             display: "grid",
@@ -156,7 +156,7 @@ export default function EcoScore() {
             gridGap: "10px 50px",
           }}
         >
-          {ecoScoreCards.map((props) => (
+          {greenScoreCards.map((props) => (
             <Box key={props.title}>
               <SmallQuestionCard {...props} />
             </Box>
@@ -166,7 +166,7 @@ export default function EcoScore() {
         <Divider />
         <TextField
           select
-          label={t("eco-score.countryLabel")}
+          label={t("green-score.countryLabel")}
           value={country}
           onChange={(event) => {
             setCountry(event.target.value, "page");

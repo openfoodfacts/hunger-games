@@ -8,10 +8,10 @@
           "description": "Tell us if the given image answers the questions"
         },
         "logos": {
-          "title": "Logos",
+          "title": "Logoioù",
           "description": "Find all the logos matching the given logo"
         },
-        "eco_score": {
+        "green_score": {
           "title": "Eco-score",
           "description": "Annotate the questions with the highest value"
         }
@@ -20,7 +20,7 @@
     "account_band": {
       "title": "Want to make your contribution count? Create an account or sign in on Open Food Facts!",
       "log_in": "Anv arveriad",
-      "sign_up": "Sign up",
+      "sign_up": "En em enskrivañ",
       "contribution_details": "Learn why your contribution matters"
     },
     "saved_filters": "Saved Filters",
@@ -47,7 +47,7 @@
   },
   "flagged_images": {
     "title": "Images flagged by users",
-    "loading": "Loading"
+    "loading": "O kargañ"
   },
   "questions": {
     "category": "rummad",
@@ -58,10 +58,10 @@
     "brands": "Merkoù",
     "packaging": "enpakañ",
     "quantity": "Kementad",
-    "insightTypeLabel": "Only shows",
+    "insightTypeLabel": "Diskouezet hepken",
     "ingredients": "Aozennoù",
-    "product_weight": "product weight",
-    "popularity_sort": "Sort by popularity",
+    "product_weight": "pouez ar produ",
+    "popularity_sort": "Silañ dre vrud",
     "see_examples": "See examples of this ",
     "no": "Ket",
     "skip": "Skip",
@@ -70,6 +70,8 @@
     "countries": "Broioù",
     "view": "View",
     "edit": "Aozañ",
+    "remaining": "Remaining: {{count}}",
+    "remaining_other": "Remaining: >100",
     "hide_images": "Hide images (faster loading)",
     "display_images": "Display images",
     "annotations": "Annotations",
@@ -92,7 +94,7 @@
         "value": "Proposed Value",
         "country": "Product Country",
         "brand": "Product Brand",
-        "popularity": "Sort by popularity",
+        "popularity": "Silañ dre vrud",
         "edit": "",
         "campaign": "Campaign"
       },
@@ -104,16 +106,16 @@
       "actions": {
         "edit": "Edit Filters",
         "cancel": "Nullañ",
-        "apply": "Apply"
+        "apply": "Aplikañ"
       }
     },
-    "other_questions": "Other questions",
-    "send": "Send",
+    "other_questions": "Goulennoù all",
+    "send": "Kas",
     "flag": "Something wrong? Report/flag the image!",
     "unflag": "Unflag the image",
     "reset_filters": "Reset filters",
     "log_in": "Anv arveriad",
-    "sign_up": "Sign up",
+    "sign_up": "En em enskrivañ",
     "login_title": "Make your annotation count",
     "login_description": "You are not currently logged into Open Food Facts. To get your answers directly applied to products, and associated to your account, consider logging in to your Open Food Facts account, or creating one",
     "please_wait_while_we_fetch_the_question": "Please wait while we fetch the question!"
@@ -122,16 +124,18 @@
     "title": "Hunger Games",
     "games": "C'hoarioù",
     "questions": "Questions",
-    "logos": "Logos",
+    "logos": "Logoioù",
     "logos-annotation": "Logos annotation",
     "logos-search": "Logos search",
     "logos-product-search": "Annotation per products",
     "logos-deep-search": "Infinite annotation",
     "manage": "Merañ",
     "insights": "Insights",
-    "nutritions": "Nutrition facts",
+    "nutritions": "Nutrition",
+    "ingredient-spellcheck": "Gwiriañ reizhskrivadur ar c'hementad",
+    "ingredient-detection": "Detektañ elfennoù",
     "settings": "Arventennoù",
-    "eco-score": "Eco-score",
+    "green-score": "Green-Score",
     "dashboard": "Logos dashboard",
     "tour": "Show tour",
     "logged_in_user": "Logged as {{userName}}",
@@ -247,7 +251,7 @@
     "Open_Food_Facts_wiki": "Open Food Facts wiki (en)",
     "Translators": "Troerien",
     "Partners": "Partners",
-    "Open_Beauty_Facts": "Open Beauty Facts - Cosmetics",
+    "Open_Beauty_Facts": "Open Beauty Facts - cosmetics",
     "text2": "A collaborative, free and open database of food products from around the world."
   },
   "helper": {
@@ -313,53 +317,30 @@
     "close": "Serriñ"
   },
   "nutrition": {
+    "table_partialy_filled": "Table with already some data",
+    "display_off_values": "Display values from OpenFoodFacts",
+    "nutrients": "Nutrients",
+    "serving_size": "Serving size",
+    "add_nutrient": "-- add nutrient --",
+    "validate_100g": "Validate (100g)",
+    "validate_serving": "Validate (serving)",
+    "skip": "Skip",
+    "invalid_image": "Invalid image",
+    "pictures": {
+      "picture_date": "Photo uploaded",
+      "selected_as_nutrients": "Selected as nutriment image ✅",
+      "not_selected_as_nutrients": "Not selected as nutriment ❌"
+    },
     "instructions": {
-      "cropTheTable": "Crop the image to simplify your annotation",
-      "verifyNutrimentDetected": "Indicate if the nutriment detected is correct",
-      "selectMissingNutriments": "Add missing nutriments (you can click even if the word has no box)",
-      "selectValue": "Select the nutritional value of: "
-    },
-    "steps": {
-      "1": "Crop",
-      "2": "Special values",
-      "3": "Nutriments Selection",
-      "4": "Values Selection"
-    },
-    "loading": "Loading...",
-    "unknown_brand": "Brand Unknown",
-    "value_missing": "You forgot to input a value.",
-    "next": "Next step",
-    "prev": "Prev step",
-    "skip": "Skip this product",
-    "validate": "Validate Table",
-    "unselect_picture": "No nutrition info",
-    "basis": "data for: ",
-    "servingSize": "serving size",
-    "value": "Talvoudegezh",
-    "unit": "Unit",
-    "nutriments": {
-      "nutriment_energy-kj": "Energy (kJ)",
-      "nutriment_energy-kcal": "Energy (kCal)",
-      "nutriment_fat": "Fat",
-      "nutriment_saturated-fat": "Saturated fat",
-      "nutriment_carbohydrates": "Carbohydrate",
-      "nutriment_sugars": "Sugar",
-      "nutriment_proteins": "Protein content",
-      "nutriment_fiber": "Fibres",
-      "nutriment_salt": "Holen",
-      "nutriment_sodium": "Sodium"
-    },
-    "history": {
-      "title": "Session History",
-      "status": "status",
-      "product name": "product name",
-      "view": "view page",
-      "edit": "edit page",
-      "SKIP": "ignored",
-      "VALIDATED": "edited",
-      "WRONG_IMAGE": "unselected picture",
-      "close": "close",
-      "open": "open history"
+      "open_button": "Open instructions",
+      "title": "How to use the interface",
+      "chose_between_empty_and_partially_filled": "You can chose between products for which OpenFoodFacts (OFF) has no data about the nutrients. Or product with partially filled nutrient table.",
+      "picture_date_is_display": "The date of the picture is displayed on top of it. Allowing you to check if it's a recent one.",
+      "indicate_not_provided_value": "Empty inputs are ignored. If fibers are not present in the table, you can put \"-\" to specify the value is not available.",
+      "validate_one_column": "Dibabit ar ment a vo diskouezet er skeudenn. Ma 'z eus 100g ganeoc'h ha ment ar servij, dibabit 100g mar plij rak ur stumm normalaet eo.",
+      "skip_button": "If you don't know how to deal with an image, or you just don't want to do it, press \"skip\". Other user will be able to handle it.",
+      "invalid_image_button": "If the pictures is not a nutritional table, press \"Invalid image\" to remove it from the list of the images to verify",
+      "close": "Serriñ"
     }
   },
   "notfound": {
@@ -380,7 +361,7 @@
     "incorrect": "Wrong",
     "correct": "Correct ({{label}})"
   },
-  "eco-score": {
+  "green-score": {
     "description": "Here is a summary of questions that could improve Eco-Score computation",
     "countryLabel": "Country"
   },

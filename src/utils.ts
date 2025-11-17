@@ -18,7 +18,7 @@ const reformatTagMapping = {
   ü: "u",
 };
 
-export const reformatValueTag = (value: string) => {
+export const reformatValueTag = (value: string | undefined) => {
   if (!value) {
     return value;
   }
@@ -30,7 +30,7 @@ export const reformatValueTag = (value: string) => {
   return output;
 };
 
-export const removeEmptyKeys = (obj: object) => {
+export const removeEmptyKeys = <T extends Record<string, unknown>>(obj: T) => {
   Object.keys(obj).forEach(
     (key) => (obj[key] == null || obj[key] === "") && delete obj[key],
   );

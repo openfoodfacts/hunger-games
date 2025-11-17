@@ -11,14 +11,14 @@
           "title": "Logolar",
           "description": "Verilen logoyla eşleşen tüm logoları bulun"
         },
-        "eco_score": {
+        "green_score": {
           "title": "Eko-skor",
-          "description": "En yüksek değerli sorulara açıklama ekleyin"
+          "description": "En yüksek değere sahip sorulara açıklama ekleyin"
         }
       }
     },
     "account_band": {
-      "title": "Katkılarınızı saymak ister misiniz? Bir hesap oluşturun veya Open Food Facts'te oturum açın!",
+      "title": "Katkınızın sayılmasını ister misiniz? Bir hesap oluşturun veya Open Food Facts'te oturum açın!",
       "log_in": "Oturumu Başlat",
       "sign_up": "Kaydol",
       "contribution_details": "Katkınızın neden önemli olduğunu öğrenin"
@@ -59,7 +59,7 @@
     "packaging": "paketleme",
     "quantity": "Miktar",
     "insightTypeLabel": "Sadece göster",
-    "ingredients": "İçindekiler",
+    "ingredients": "Malzemeler",
     "product_weight": "ürün ağırlığı",
     "popularity_sort": "Popülerliğe göre sırala",
     "see_examples": "Bunun örneklerine bakın ",
@@ -70,6 +70,8 @@
     "countries": "Ülkeler",
     "view": "Görüntüle",
     "edit": "Düzenle",
+    "remaining": "Kalan: {{count}}",
+    "remaining_other": "Kalan: >100",
     "hide_images": "Resimleri gizle (daha hızlı yükleme)",
     "display_images": "Resimleri görüntüle",
     "annotations": "3. Ek Açıklamalar",
@@ -129,9 +131,11 @@
     "logos-deep-search": "Sonsuz açıklama",
     "manage": "Yönet",
     "insights": "Yönelimler",
-    "nutritions": "Beslenme gerçekleri",
+    "nutritions": "Beslenme",
+    "ingredient-spellcheck": "Malzeme yazım denetimi",
+    "ingredient-detection": "İçerik tespiti",
     "settings": "Ayarlar",
-    "eco-score": "Eko-skor",
+    "green-score": "Green-Score",
     "dashboard": "Logo panosu",
     "tour": "Gösteri Turu",
     "logged_in_user": "{{userName}} olarak günlüğe kaydedildi",
@@ -158,7 +162,7 @@
     "accepted": "Kabul edildi (1)",
     "search": "Ara",
     "count": "Miktar",
-    "id": "Id",
+    "id": "Kimlik",
     "value": "Değer",
     "created_at": "Oluşturulma tarihi",
     "completed_at": "Tamamlanma tarihi",
@@ -184,7 +188,7 @@
     "packaging": "Ambalaj",
     "qr_code": "QR kodu",
     "category": "Kategori",
-    "nutrition_label": "Besin Değerleri",
+    "nutrition_label": "Besin Etiketi",
     "no_logo": "Logo değil",
     "store": "Mağaza",
     "detail": "Logo detayı",
@@ -223,7 +227,7 @@
     "language": "Diller",
     "save": "Kaydet",
     "reportIssue": "Bir hata mı buldunuz? Lütfen bize bildirin.",
-    "dev_mode_title": "Daha fazla seçenek elde etmek için geliştirme modunu etkinleştirin",
+    "dev_mode_title": "Daha fazla seçenek elde etmek için geliştirici modunu etkinleştirin",
     "dev_mode_label": "Geliştirici Modu",
     "dev_page_toggle": "{{name}} sayfayı göster",
     "join_community": "Topluluğa katılın",
@@ -247,7 +251,7 @@
     "Open_Food_Facts_wiki": "Open Food Facts vikipedia (ing)",
     "Translators": "Çevirmenler",
     "Partners": "Partnerler",
-    "Open_Beauty_Facts": "Open Beauty Facts - Kozmetik ürünleri",
+    "Open_Beauty_Facts": "Açık Güzellik Gerçekleri - kozmetikler",
     "text2": "Dünyanın dört bir yanından katılımcı, özgür ve açık gıda ürünleri veritabanı."
   },
   "helper": {
@@ -313,53 +317,30 @@
     "close": "Kapat"
   },
   "nutrition": {
+    "table_partialy_filled": "Zaten bazı veriler içeren tablo",
+    "display_off_values": "OpenFoodFacts'ten değerleri görüntüle",
+    "nutrients": "Besin Maddeleri",
+    "serving_size": "Porsiyon ölçüsü",
+    "add_nutrient": "-- besin maddesi ekle --",
+    "validate_100g": "Doğrula (100g)",
+    "validate_serving": "Doğrulama (hizmet)",
+    "skip": "Atla",
+    "invalid_image": "Geçersiz resim",
+    "pictures": {
+      "picture_date": "Fotoğraf yüklendi",
+      "selected_as_nutrients": "Besin görseli olarak seçildi ✅",
+      "not_selected_as_nutrients": "Besin olarak seçilmedi ❌"
+    },
     "instructions": {
-      "cropTheTable": "Ek açıklamanızı basitleştirmek için resmi kırpın",
-      "verifyNutrimentDetected": "Tespit edilen besinin doğru olup olmadığını belirtin",
-      "selectMissingNutriments": "Eksik besinleri ekleyin (kelimenin kutusu olmasa bile tıklayabilirsiniz)",
-      "selectValue": "Besin değerini seçin: "
-    },
-    "steps": {
-      "1": "Kırp",
-      "2": "Özel değerler",
-      "3": "Besinlerin Seçimi",
-      "4": "Değerlerin Seçimi"
-    },
-    "loading": "Yükleniyor...",
-    "unknown_brand": "Marka Bilinmiyor",
-    "value_missing": "Bir değer girmeyi unuttunuz.",
-    "next": "Sonraki adım",
-    "prev": "Önceki adım",
-    "skip": "Bu ürünü atla",
-    "validate": "Tabloyu Doğrula",
-    "unselect_picture": "Besin değeri yok",
-    "basis": "için veri: ",
-    "servingSize": "porsiyon ölçüsü",
-    "value": "Değer",
-    "unit": "Birim",
-    "nutriments": {
-      "nutriment_energy-kj": "Enerji (kJ)",
-      "nutriment_energy-kcal": "Enerji (kCal)",
-      "nutriment_fat": "Yağ",
-      "nutriment_saturated-fat": "Doymuş yağ",
-      "nutriment_carbohydrates": "Karbonhidrat",
-      "nutriment_sugars": "Şeker",
-      "nutriment_proteins": "Protein içerikli",
-      "nutriment_fiber": "Lifler",
-      "nutriment_salt": "Tuz",
-      "nutriment_sodium": "Sodyum"
-    },
-    "history": {
-      "title": "Oturum Geçmişi",
-      "status": "durum",
-      "product name": "ürün ismi",
-      "view": "sayfayı görüntüle",
-      "edit": "sayfayı düzenle",
-      "SKIP": "yoksayıldı",
-      "VALIDATED": "düzenlendi",
-      "WRONG_IMAGE": "seçilmemiş resim",
-      "close": "kapat",
-      "open": "geçmişi aç"
+      "open_button": "Tarifleri aç",
+      "title": "Arayüz nasıl kullanılır",
+      "chose_between_empty_and_partially_filled": "OpenFoodFacts'in (OFF) besin değerleri hakkında verisi olmayan ürünler arasından seçim yapabilirsiniz. Ya da besin tablosu kısmen doldurulmuş ürün.",
+      "picture_date_is_display": "Fotoğrafların çekilme tarihleri üzerinde yazar, bu şekilde yeni olup olmadığını kontrol edebilirsiniz.",
+      "indicate_not_provided_value": "Boş girdiler göz ardı edilir. Tabloda lifler yoksa, değerin mevcut olmadığını belirtmek için \"-\" koyabilirsiniz.",
+      "validate_one_column": "Resimde gösterilen boyutu seçin. 100g ve porsiyon boyutunuz varsa, lütfen 100g'ı seçin çünkü bu normalleştirilmiş bir formattır.",
+      "skip_button": "Bir görüntü ile nasıl başa çıkacağınızı bilmiyorsanız veya sadece yapmak istemiyorsanız, \"atla\" tuşuna basın. Diğer kullanıcı bunu halledebilecektir.",
+      "invalid_image_button": "Resim bir beslenme tablosu değilse, doğrulamak için resim listesinden kaldırmak üzere \"Geçersiz resim\"e tıklayın.",
+      "close": "Kapat"
     }
   },
   "notfound": {
@@ -380,7 +361,7 @@
     "incorrect": "Yanlış",
     "correct": "Doğru ({{label}})"
   },
-  "eco-score": {
+  "green-score": {
     "description": "Eko-Skor hesaplamasını iyileştirebilecek soruların bir özetini burada bulabilirsiniz",
     "countryLabel": "Ülke"
   },

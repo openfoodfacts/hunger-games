@@ -9,8 +9,8 @@ updates:
       include: "scope"
     open-pull-requests-limit: 20
     groups:
+      # Define patterns to include dependencies in the group (based on dependency name)
       mui-packages:
-        # Define patterns to include dependencies in the group (based on dependency name)
         patterns:
           - "@mui/*"
       i18n:
@@ -24,7 +24,10 @@ updates:
           - "@types/react-dom"
           - "react"
           - "react-dom"
+          - "react-router-dom" # TODO: remove this when removing react-router-dom
           - "typescript"
+          - "axios"
+          - "globals"
       emotion:
         patterns:
           - "@emotion/*"
@@ -35,7 +38,9 @@ updates:
       eslint:
         patterns:
           - "@typescript-eslint/*"
+          - "typescript-eslint"
           - "eslint"
+          - "eslint-plugin-*"
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:

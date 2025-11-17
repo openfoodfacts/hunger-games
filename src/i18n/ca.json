@@ -11,7 +11,7 @@
           "title": "Logotips",
           "description": "Trobeu totes les imatges que encaixin amb el logo donat"
         },
-        "eco_score": {
+        "green_score": {
           "title": "Eco-Score",
           "description": "Anoteu les preguntes amb els valors més alts"
         }
@@ -70,6 +70,8 @@
     "countries": "Països",
     "view": "Vista",
     "edit": "Edita",
+    "remaining": "Remaining: {{count}}",
+    "remaining_other": "Remaining: >100",
     "hide_images": "Amaga les imatges (es carrega més ràpid)",
     "display_images": "Mostra imatges",
     "annotations": "Anotacions",
@@ -129,9 +131,11 @@
     "logos-deep-search": "Anotació infinita",
     "manage": "Gestiona",
     "insights": "Més detalls",
-    "nutritions": "Informació nutricional",
+    "nutritions": "Nutrició",
+    "ingredient-spellcheck": "Corrector ortogràfic d'ingredients",
+    "ingredient-detection": "Detecció d'ingredients",
     "settings": "Preferències",
-    "eco-score": "Eco-Score",
+    "green-score": "Green-Score",
     "dashboard": "Tauler de control de logotips",
     "tour": "Mostra tour",
     "logged_in_user": "Registrat com a {{userName}}",
@@ -247,14 +251,14 @@
     "Open_Food_Facts_wiki": "Viquipèdia d'Open Food Facts (anglès)",
     "Translators": "Traducció",
     "Partners": "Socis",
-    "Open_Beauty_Facts": "Open Beauty Facts- Cosmètics",
+    "Open_Beauty_Facts": "Open Beauty Facts - cosmetics",
     "text2": "Una base de dades col·laborativa, lliure i oberta dels productes alimentaris de tot el món."
   },
   "helper": {
     "welcome": {
       "page1": {
         "title": "Us donem la benvinguda als Jocs de la fam",
-        "text1": "Hunger Games is a collection of mini-games that help contribute to Open Food Facts in many ways. You can play our really exciting games from anywhere. Here is a guided tour of the entire website which will get you started.",
+        "text1": "Hunger Games és una col·lecció de minijocs que ajuden a contribuir a Open Food Facts de moltes maneres. Pots jugar als nostres jocs realment emocionants des de qualsevol lloc. Aquí teniu una visita guiada per tot el lloc web que us ajudarà a començar.",
         "text2": "Assegureu-vos d'iniciar sessió al lloc web d'Open Food Facts per obtenir crèdit per les vostres contribucions. Si cometeu un error, preneu-vos el temps per corregir-lo dirigint-vos al lloc web.",
         "text3": "Si teniu qualsevol dubte sobre els jocs, premeu la icona de l'interrogant a dalt a l'esquerra i podeu comunicar-vos amb nosaltres al canal de #hunger-games a Slack"
       },
@@ -313,53 +317,30 @@
     "close": "Tanca"
   },
   "nutrition": {
+    "table_partialy_filled": "Table with already some data",
+    "display_off_values": "Display values from OpenFoodFacts",
+    "nutrients": "Nutrients",
+    "serving_size": "Mida de la porció",
+    "add_nutrient": "-- add nutrient --",
+    "validate_100g": "Validate (100g)",
+    "validate_serving": "Validate (serving)",
+    "skip": "Omet",
+    "invalid_image": "Imatge invàlida",
+    "pictures": {
+      "picture_date": "Photo uploaded",
+      "selected_as_nutrients": "Selected as nutriment image ✅",
+      "not_selected_as_nutrients": "Not selected as nutriment ❌"
+    },
     "instructions": {
-      "cropTheTable": "Retalleu la imatge per simplificar l'anotació",
-      "verifyNutrimentDetected": "Indiqueu si el nutrient detectat és correcte",
-      "selectMissingNutriments": "Afegiu els nutrients que falten (podeu clicar encara que la paraula no tingui cap quadre)",
-      "selectValue": "Seleccioneu el valor nutricional de: "
-    },
-    "steps": {
-      "1": "Escapça",
-      "2": "Característiques especials",
-      "3": "Selecció de nutrients",
-      "4": "Selecció de valors"
-    },
-    "loading": "Carregant...",
-    "unknown_brand": "Marca desconeguda",
-    "value_missing": "T'has oblidat d'introduir un valor.",
-    "next": "Següent pas",
-    "prev": "Pas anterior",
-    "skip": "Ometeu el producte",
-    "validate": "Valida la graella",
-    "unselect_picture": "Sense dades nutricionals",
-    "basis": "dades per a: ",
-    "servingSize": "ració",
-    "value": "Valor",
-    "unit": "Unitat",
-    "nutriments": {
-      "nutriment_energy-kj": "Energia (kJ)",
-      "nutriment_energy-kcal": "Energia (kcal)",
-      "nutriment_fat": "Greixos",
-      "nutriment_saturated-fat": "Greixos saturats",
-      "nutriment_carbohydrates": "Carbohidrat",
-      "nutriment_sugars": "Sucre",
-      "nutriment_proteins": "Contingut de proteïnes",
-      "nutriment_fiber": "Fibres",
-      "nutriment_salt": "Sal",
-      "nutriment_sodium": "Sodi"
-    },
-    "history": {
-      "title": "Historial de la sessió",
-      "status": "estat",
-      "product name": "nom del producte",
-      "view": "visualitza la pàgina",
-      "edit": "edita la pàgina",
-      "SKIP": "ignorat",
-      "VALIDATED": "modificat",
-      "WRONG_IMAGE": "imatge no seleccionada",
-      "close": "tanca",
-      "open": "obre l'historial"
+      "open_button": "Open instructions",
+      "title": "How to use the interface",
+      "chose_between_empty_and_partially_filled": "You can chose between products for which OpenFoodFacts (OFF) has no data about the nutrients. Or product with partially filled nutrient table.",
+      "picture_date_is_display": "The date of the picture is displayed on top of it. Allowing you to check if it's a recent one.",
+      "indicate_not_provided_value": "Empty inputs are ignored. If fibers are not present in the table, you can put \"-\" to specify the value is not available.",
+      "validate_one_column": "Trieu la mida que es mostra a la imatge. Si teniu 100 g i una mida de ració, trieu 100 g perquè és un format normalitzat.",
+      "skip_button": "Si no saps com tractar amb una imatge, o simplement no ho vols fer, prem \"saltar\". Un altre usuari podrà gestionar-la.",
+      "invalid_image_button": "If the pictures is not a nutritional table, press \"Invalid image\" to remove it from the list of the images to verify",
+      "close": "Tanca"
     }
   },
   "notfound": {
@@ -380,24 +361,24 @@
     "incorrect": "equivocat",
     "correct": "({{label}}) Correcte"
   },
-  "eco-score": {
+  "green-score": {
     "description": "Aquí hi ha un qüestionari que pot millora la puntuació de l'Eco-Cura",
     "countryLabel": "País"
   },
   "ingredients": {
-    "description": "This game allows you to validate the pre-selection of images of ingredients lists in various languages for a product, and validate the extracted ingredients.",
-    "current_text": "text from off",
-    "confidence_score": "language confidence",
-    "revert": "Revert",
-    "parsing": "Get server understanding",
-    "send": "Validate & send",
+    "description": "Aquest joc permet validar la preselecció d'imatges de llistes d'ingredients en diversos idiomes per a un producte, i validar els ingredients extrets.",
+    "current_text": "text des de off",
+    "confidence_score": "confiança lingüística",
+    "revert": "Reverteix",
+    "parsing": "Obté la comprensió del servidor",
+    "send": "Valida i envia",
     "skip": "Ometeu el producte",
-    "getRobotoffPrediciton": "Get predictions from Robotoff"
+    "getRobotoffPrediciton": "Obté prediccions de Robotoff"
   },
   "footer": {
     "appStore": {
       "title": "App Store",
-      "subtitle": "Download on the"
+      "subtitle": "Descarrega al"
     },
     "playStore": {
       "title": "Play Store",

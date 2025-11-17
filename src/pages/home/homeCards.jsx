@@ -9,7 +9,7 @@ import Typography from "@mui/material/Typography";
 import Stack from "@mui/material/Stack";
 import home_questions from "../../assets/home_questions.png";
 import home_logos from "../../assets/home_logos.png";
-import home_ecoscore from "../../assets/home_ecoscore.png";
+import home_greenscore from "../../assets/home_greenscore.png";
 
 const cards = [
   {
@@ -21,14 +21,14 @@ const cards = [
   {
     title: "home.game_selector.cards.logos.title",
     desc: "home.game_selector.cards.logos.description",
-    link: "/logos",
+    link: "/logos/deep-search",
     image: home_logos,
   },
   {
-    title: "home.game_selector.cards.eco_score.title",
-    desc: "home.game_selector.cards.eco_score.description",
-    link: "/eco-score",
-    image: home_ecoscore,
+    title: "home.game_selector.cards.green_score.title",
+    desc: "home.game_selector.cards.green_score.description",
+    link: "/green-score",
+    image: home_greenscore,
   },
 ];
 

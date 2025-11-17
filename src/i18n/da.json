@@ -11,7 +11,7 @@
           "title": "Logoer",
           "description": "Find alle logoer matchende det givne logo"
         },
-        "eco_score": {
+        "green_score": {
           "title": "Øko-Score",
           "description": "Anmærk spørgsmålene med den højeste værdi"
         }
@@ -70,6 +70,8 @@
     "countries": "Lande",
     "view": "Vis",
     "edit": "Redigér",
+    "remaining": "Tilbage: {{count}}",
+    "remaining_other": "Resterende: >100",
     "hide_images": "Skjul billeder (hurtigere indlæsning)",
     "display_images": "Vis billeder",
     "annotations": "Anmærkninger",
@@ -97,7 +99,7 @@
         "campaign": "Kampagne"
       },
       "placeholders": {
-        "value": "Værdi (Fanta, da: organisk,...)",
+        "value": "Værdi (Fanta, da:økologisk,...)",
         "brand": "Auchan, Danone, Herta, …",
         "campaign": "Anmærkningskampagner"
       },
@@ -129,9 +131,11 @@
     "logos-deep-search": "Uendelig annotering",
     "manage": "Håndtér",
     "insights": "Indblik",
-    "nutritions": "Ernæringsfakta",
+    "nutritions": "Ernæring",
+    "ingredient-spellcheck": "Stavekontrol af ingredienser",
+    "ingredient-detection": "Ingrediensdetektion",
     "settings": "Indstillinger",
-    "eco-score": "Øko-Score",
+    "green-score": "Øko-Score",
     "dashboard": "Logokontrolpanel",
     "tour": "Rundvisning",
     "logged_in_user": "Logget ind som {{userName}}",
@@ -241,13 +245,13 @@
     "discover_the_project": "Gå på opdagelse i projektet",
     "Who_we_are": "Hvem vi er",
     "Vision_Mission_Values_and_Programs": "Vision, Mission, Værdier og Programmer",
-    "FAQS": "FAQS",
+    "FAQS": "Ofte stillede spørgsmål",
     "open_Food_Facts_blog": "Åbn Food Facts-blog",
     "Press": "Presse",
     "Open_Food_Facts_wiki": "Open Food Facts wiki (en)",
     "Translators": "Oversættere",
     "Partners": "Partnere",
-    "Open_Beauty_Facts": "Open Beauty Facts - Kosmetik",
+    "Open_Beauty_Facts": "Open Beauty Facts - kosmetik",
     "text2": "En fællesskabsdrevet, gratis og åben database med fødevareprodukter for hele verden."
   },
   "helper": {
@@ -313,53 +317,30 @@
     "close": "Luk"
   },
   "nutrition": {
+    "table_partialy_filled": "Tabel med allerede nogle data",
+    "display_off_values": "Vis værdier fra OpenFoodFacts",
+    "nutrients": "Næringsstoffer",
+    "serving_size": "Portionsstørrelse",
+    "add_nutrient": "-- tilføj næringsstof --",
+    "validate_100g": "Valider (100 g)",
+    "validate_serving": "Valider (servering)",
+    "skip": "Spring over",
+    "invalid_image": "Ugyldigt billede",
+    "pictures": {
+      "picture_date": "Billede uploadet",
+      "selected_as_nutrients": "Valgt som næringsbillede ✅",
+      "not_selected_as_nutrients": "Ikke valgt som næringsstof ❌"
+    },
     "instructions": {
-      "cropTheTable": "Beskær billedet for at forenkle annotationen",
-      "verifyNutrimentDetected": "Angiv, om det registrerede næringsstof er korrekt",
-      "selectMissingNutriments": "Tilføj manglende næringsstoffer (der kan klikkes, selv hvis ordet intet felt har)",
-      "selectValue": "Vælg næringsværdien af: "
-    },
-    "steps": {
-      "1": "Beskær",
-      "2": "Særlige værdier",
-      "3": "Næringsstofvalg",
-      "4": "Vværdivalg"
-    },
-    "loading": "Indlæser...",
-    "unknown_brand": "Mærke ukendt",
-    "value_missing": "Værdi er obligatorisk.",
-    "next": "Næste trin",
-    "prev": "Foreg. trin",
-    "skip": "Overspring dette produkt",
-    "validate": "Bekræft tabel",
-    "unselect_picture": "Ingen ernæringsinfo",
-    "basis": "data til: ",
-    "servingSize": "portionsstørrelse",
-    "value": "Værdi",
-    "unit": "Enhed",
-    "nutriments": {
-      "nutriment_energy-kj": "Energi (kJ)",
-      "nutriment_energy-kcal": "Energi (kcal)",
-      "nutriment_fat": "Fedt",
-      "nutriment_saturated-fat": "Mættet fedt",
-      "nutriment_carbohydrates": "Kulhydrat",
-      "nutriment_sugars": "Sukker",
-      "nutriment_proteins": "Proteinindhold",
-      "nutriment_fiber": "Fibre",
-      "nutriment_salt": "Salt",
-      "nutriment_sodium": "Natrium"
-    },
-    "history": {
-      "title": "Sessionshistorik",
-      "status": "status",
-      "product name": "produktnavn",
-      "view": "vis side",
-      "edit": "redigér side",
-      "SKIP": "ignoreret",
-      "VALIDATED": "redigeret",
-      "WRONG_IMAGE": "fravalgt billede",
-      "close": "luk",
-      "open": "åbn historik"
+      "open_button": "Åbn instruktioner",
+      "title": "Sådan bruger du grænsefladen",
+      "chose_between_empty_and_partially_filled": "Du kan vælge mellem produkter, som OpenFoodFacts (OFF) ikke har næringsdata for, eller produkter med delvist udfyldt næringstabel.",
+      "picture_date_is_display": "Datoen for billedet vises oven på det, så du kan se, om det er nyligt.",
+      "indicate_not_provided_value": "Tomme felter ignoreres. Hvis kostfibre ikke er angivet i tabellen, kan du skrive \"-\" for at angive, at værdien ikke er tilgængelig.",
+      "validate_one_column": "Vælg den størrelse, der vises på billedet. Hvis du har en portionsstørrelse på 100 g, skal du vælge 100 g, da det er et normaliseret format.",
+      "skip_button": "Hvis du ikke ved, hvordan man gør med et billede – eller bare ikke har lyst – så tryk på \"spring over\". En anden bruger kan gøre det.",
+      "invalid_image_button": "Hvis billederne ikke er en ernæringstabel, så tryk på \"Ugyldigt billede\" for at fjerne det fra listen over de billeder, der skal verificeres",
+      "close": "Luk"
     }
   },
   "notfound": {
@@ -380,19 +361,19 @@
     "incorrect": "Forkert",
     "correct": "Korrekt ({{label}})"
   },
-  "eco-score": {
+  "green-score": {
     "description": "Her er en oversigt over spørgsmål, som kunne forbedre Øko-Score beregningen",
     "countryLabel": "Land"
   },
   "ingredients": {
     "description": "Dette spil lader dig validere forvalget af billeder af ingredienslister på forskellige sprog for et produkt og validere de udtrukne ingredienser.",
-    "current_text": "text from off",
-    "confidence_score": "language confidence",
-    "revert": "Revert",
-    "parsing": "Get server understanding",
+    "current_text": "tekst fra off",
+    "confidence_score": "sproglig sikkerhed",
+    "revert": "Tilbagefør",
+    "parsing": "Få serverforståelse",
     "send": "Bekræft og send",
     "skip": "Overspring dette produkt",
-    "getRobotoffPrediciton": "Get predictions from Robotoff"
+    "getRobotoffPrediciton": "Få forudsigelser fra Robotoff"
   },
   "footer": {
     "appStore": {

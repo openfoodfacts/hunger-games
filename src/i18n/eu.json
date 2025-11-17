@@ -1,17 +1,17 @@
 {
   "home": {
     "game_selector": {
-      "title": "What game would you like to play?",
+      "title": "Zein joko jokatu nahi zenuke?",
       "cards": {
         "questions": {
-          "title": "Questions",
-          "description": "Tell us if the given image answers the questions"
+          "title": "Galderak",
+          "description": "Esaguzu emandako irudiak galderei erantzuten dien"
         },
         "logos": {
           "title": "Logoak",
           "description": "Find all the logos matching the given logo"
         },
-        "eco_score": {
+        "green_score": {
           "title": "Eco-score",
           "description": "Annotate the questions with the highest value"
         }
@@ -21,7 +21,7 @@
       "title": "Want to make your contribution count? Create an account or sign in on Open Food Facts!",
       "log_in": "Erabiltzaile-izena",
       "sign_up": "Eman izena",
-      "contribution_details": "Learn why your contribution matters"
+      "contribution_details": "Ezagutu zergatik den garrantzitsua zure ekarpena"
     },
     "saved_filters": "Saved Filters",
     "contribution_modal": {
@@ -70,6 +70,8 @@
     "countries": "Countries",
     "view": "View",
     "edit": "Editatu",
+    "remaining": "Remaining: {{count}}",
+    "remaining_other": "Remaining: >100",
     "hide_images": "Hide images (faster loading)",
     "display_images": "Display images",
     "annotations": "Annotations",
@@ -121,7 +123,7 @@
   "menu": {
     "title": "Hunger Games",
     "games": "Games",
-    "questions": "Questions",
+    "questions": "Galderak",
     "logos": "Logoak",
     "logos-annotation": "Logos annotation",
     "logos-search": "Logos search",
@@ -129,9 +131,11 @@
     "logos-deep-search": "Ohar mugagabea",
     "manage": "Manage",
     "insights": "Insights",
-    "nutritions": "Nutrition facts",
+    "nutritions": "Elikadura",
+    "ingredient-spellcheck": "Osagaien ortografia-egiaztatzailea",
+    "ingredient-detection": "Osagaien detekzioa",
     "settings": "Ezarpenak",
-    "eco-score": "Eco-score",
+    "green-score": "Green-Score",
     "dashboard": "Logos dashboard",
     "tour": "Ikustaldia",
     "logged_in_user": "{{userName}} gisa erregistratua",
@@ -247,7 +251,7 @@
     "Open_Food_Facts_wiki": "Open Food Facts wikia (en)",
     "Translators": "Translators",
     "Partners": "Partners",
-    "Open_Beauty_Facts": "Open Beauty Facts - Cosmetics",
+    "Open_Beauty_Facts": "Open Beauty Facts - cosmetics",
     "text2": "Mundu osoko elikagaiei buruzko datu-base kolaboratzailea, libre eta irekia."
   },
   "helper": {
@@ -313,53 +317,30 @@
     "close": "Itxi"
   },
   "nutrition": {
+    "table_partialy_filled": "Table with already some data",
+    "display_off_values": "Display values from OpenFoodFacts",
+    "nutrients": "Nutrients",
+    "serving_size": "Serving size",
+    "add_nutrient": "-- add nutrient --",
+    "validate_100g": "Validate (100g)",
+    "validate_serving": "Validate (serving)",
+    "skip": "Saltatu",
+    "invalid_image": "Invalid image",
+    "pictures": {
+      "picture_date": "Photo uploaded",
+      "selected_as_nutrients": "Selected as nutriment image ✅",
+      "not_selected_as_nutrients": "Not selected as nutriment ❌"
+    },
     "instructions": {
-      "cropTheTable": "Crop the image to simplify your annotation",
-      "verifyNutrimentDetected": "Indicate if the nutriment detected is correct",
-      "selectMissingNutriments": "Add missing nutriments (you can click even if the word has no box)",
-      "selectValue": "Select the nutritional value of: "
-    },
-    "steps": {
-      "1": "Moztu",
-      "2": "Balio bereziak",
-      "3": "Nutriments Selection",
-      "4": "Values Selection"
-    },
-    "loading": "Loading...",
-    "unknown_brand": "Marka ezezaguna",
-    "value_missing": "You forgot to input a value.",
-    "next": "Hurrengo urratsa",
-    "prev": "Aurreko urratsa",
-    "skip": "Skip this product",
-    "validate": "Validate Table",
-    "unselect_picture": "No nutrition info",
-    "basis": "honentzako datuak: ",
-    "servingSize": "anoaren tamaina",
-    "value": "Balioa",
-    "unit": "Unitatea",
-    "nutriments": {
-      "nutriment_energy-kj": "Energia (kJ)",
-      "nutriment_energy-kcal": "Energia (kcal)",
-      "nutriment_fat": "Gantza",
-      "nutriment_saturated-fat": "Gantz saturatua",
-      "nutriment_carbohydrates": "Karbohidratoak",
-      "nutriment_sugars": "Sugar",
-      "nutriment_proteins": "Protein content",
-      "nutriment_fiber": "Fibres",
-      "nutriment_salt": "Gatza",
-      "nutriment_sodium": "Sodioa"
-    },
-    "history": {
-      "title": "Saioaren historia",
-      "status": "egoera",
-      "product name": "produktuaren izena",
-      "view": "ikusi orrialdea",
-      "edit": "edit page",
-      "SKIP": "ignored",
-      "VALIDATED": "edited",
-      "WRONG_IMAGE": "unselected picture",
-      "close": "close",
-      "open": "open history"
+      "open_button": "Open instructions",
+      "title": "How to use the interface",
+      "chose_between_empty_and_partially_filled": "You can chose between products for which OpenFoodFacts (OFF) has no data about the nutrients. Or product with partially filled nutrient table.",
+      "picture_date_is_display": "The date of the picture is displayed on top of it. Allowing you to check if it's a recent one.",
+      "indicate_not_provided_value": "Empty inputs are ignored. If fibers are not present in the table, you can put \"-\" to specify the value is not available.",
+      "validate_one_column": "Aukeratu irudian agertzen den tamaina. 100g badituzu eta anoa baten tamaina baduzu, aukeratu 100g, formatu normalizatua baita.",
+      "skip_button": "If you don't know how to deal with an image, or you just don't want to do it, press \"skip\". Other user will be able to handle it.",
+      "invalid_image_button": "If the pictures is not a nutritional table, press \"Invalid image\" to remove it from the list of the images to verify",
+      "close": "Itxi"
     }
   },
   "notfound": {
@@ -380,7 +361,7 @@
     "incorrect": "Wrong",
     "correct": "Correct ({{label}})"
   },
-  "eco-score": {
+  "green-score": {
     "description": "Here is a summary of questions that could improve Eco-Score computation",
     "countryLabel": "Country"
   },

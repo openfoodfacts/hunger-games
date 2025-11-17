@@ -35,11 +35,20 @@ import { OFF_URL } from "../const";
 import { useCountry } from "../contexts/CountryProvider";
 import countryNames from "../assets/countries.json";
 
+type Page = {
+  translationKey: string;
+  url?: string;
+  devModeOnly?: boolean;
+  mobileOnly?: boolean;
+  desktopOnly?: boolean;
+  children?: Page[];
+};
+
 // Object with no url are subheader in the menu
-const pages = [
+const PAGES: Page[] = [
   { translationKey: "menu.games" },
   { url: "questions", translationKey: "menu.questions" },
-  { url: "eco-score", translationKey: "menu.eco-score" },
+  { url: "green-score", translationKey: "menu.green-score" },
   {
     translationKey: "menu.logos",
     children: [
@@ -68,6 +77,19 @@ const pages = [
     desktopOnly: true,
   },
   { translationKey: "menu.manage" },
+  {
+    translationKey: "menu.ingredients",
+    children: [
+      {
+        url: "ingredient-spellcheck",
+        translationKey: "menu.ingredient-spellcheck",
+      },
+      {
+        url: "ingredient-detection",
+        translationKey: "menu.ingredient-detection",
+      },
+    ],
+  },
   { url: "insights", translationKey: "menu.insights", devModeOnly: true },
   { url: "dashboard", translationKey: "menu.dashboard" },
   { url: "settings", translationKey: "menu.settings", mobileOnly: true },
@@ -78,6 +100,11 @@ const MultiPagesButton = ({
   children,
   isOpen,
   toggleIsOpen,
+}: {
+  translationKey: string;
+  children: Page[];
+  isOpen: boolean;
+  toggleIsOpen: () => void;
 }) => {
   const { t } = useTranslation();
   const anchorEl = React.useRef(null);
@@ -136,7 +163,12 @@ const ResponsiveAppBar = () => {
   const { devMode: isDevMode, visiblePages } = React.useContext(DevModeContext);
   const [menuOpenState, setMenuOpenState] = React.useState({});
 
-  const isPageVisible = (page) => {
+  const isPageVisible = (page: {
+    devModeOnly?: boolean;
+    mobileOnly?: boolean;
+    desktopOnly?: boolean;
+    url?: string;
+  }) => {
     if (page.devModeOnly) {
       return isDevMode && visiblePages[page.url];
     }
@@ -149,19 +181,17 @@ const ResponsiveAppBar = () => {
     return true;
   };
 
-  const displayedPages = pages
-    .map((page) => {
-      if (!page.children) {
-        return page;
-      }
-      return { ...page, children: page.children.filter(isPageVisible) };
-    })
-    .filter((page) => {
-      if (page.children !== undefined && page.children.length === 0) {
-        return false;
-      }
-      return isPageVisible(page);
-    });
+  const displayedPages = PAGES.map((page) => {
+    if (!page.children) {
+      return page;
+    }
+    return { ...page, children: page.children.filter(isPageVisible) };
+  }).filter((page) => {
+    if (page.children !== undefined && page.children.length === 0) {
+      return false;
+    }
+    return isPageVisible(page);
+  });
 
   return (
     <AppBar
@@ -177,7 +207,7 @@ const ResponsiveAppBar = () => {
           <Box
             sx={{
               flexGrow: 1,
-              display: { xs: "flex", md: "none" },
+              display: { xs: "flex", lg: "none" },
               alignItems: "center",
               justifyContent: "space-between",
               maxWidth: "100%",
@@ -193,106 +223,109 @@ const ResponsiveAppBar = () => {
             >
               <MenuIcon />
             </IconButton>
-            <Menu
-              id="menu-appbar"
-              anchorEl={anchorElNav}
-              anchorOrigin={{
-                vertical: "bottom",
-                horizontal: "left",
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: "top",
-                horizontal: "left",
-              }}
-              open={Boolean(anchorElNav)}
-              onClose={handleCloseNavMenu}
-              sx={{
-                display: { xs: "block", md: "none" },
-              }}
-            >
-              {displayedPages.map((page) => {
-                if (page.url) {
-                  return (
-                    <MenuItem
-                      key={`Mobile-${page.translationKey}`}
-                      onClick={handleCloseNavMenu}
-                      component={Link}
-                      to={`/${page.url}`}
-                    >
-                      <Typography textAlign="center">
-                        {t(page.translationKey)}
-                      </Typography>
-                    </MenuItem>
-                  );
-                }
-                if (page.children) {
-                  return (
-                    <List
-                      component="div"
-                      disablePadding
-                      key={page.translationKey}
-                    >
+            {anchorElNav && (
+              <Menu
+                id="menu-appbar"
+                anchorEl={anchorElNav}
+                anchorOrigin={{
+                  vertical: "bottom",
+                  horizontal: "left",
+                }}
+                // keepMounted
+                transformOrigin={{
+                  vertical: "top",
+                  horizontal: "left",
+                }}
+                open={Boolean(anchorElNav)}
+                onClose={handleCloseNavMenu}
+                sx={{
+                  display: { xs: "block", lg: "none" },
+                }}
+              >
+                {displayedPages.map((page) => {
+                  if (page.url) {
+                    return (
                       <MenuItem
-                        onClick={() =>
-                          setMenuOpenState((prev) => ({
-                            ...prev,
-                            [`Mobile-${page.translationKey}`]:
-                              !prev[`Mobile-${page.translationKey}`],
-                          }))
-                        }
+                        key={`Mobile-${page.translationKey}`}
+                        onClick={handleCloseNavMenu}
+                        component={Link}
+                        to={`/${page.url}`}
                       >
                         <Typography textAlign="center">
                           {t(page.translationKey)}
                         </Typography>
-
-                        {menuOpenState[`Mobile-${page.translationKey}`] ? (
-                          <ExpandLess />
-                        ) : (
-                          <ExpandMore />
-                        )}
                       </MenuItem>
-                      <Collapse
-                        in={menuOpenState[`Mobile-${page.translationKey}`]}
-                        timeout="auto"
-                        unmountOnExit
+                    );
+                  }
+                  if (page.children) {
+                    return (
+                      <List
+                        component="div"
+                        disablePadding
+                        key={page.translationKey}
                       >
-                        <List component="div" disablePadding>
-                          {page.children.map((subPage) => (
-                            <MenuItem
-                              sx={{ pl: 4 }}
-                              key={subPage.translationKey}
-                              onClick={handleCloseNavMenu}
-                              component={Link}
-                              to={`/${subPage.url}`}
-                            >
-                              <Typography textAlign="center">
-                                {t(subPage.translationKey)}
-                              </Typography>
-                            </MenuItem>
-                          ))}
-                        </List>
-                      </Collapse>
-                    </List>
+                        <MenuItem
+                          onClick={() =>
+                            setMenuOpenState((prev) => ({
+                              ...prev,
+                              [`Mobile-${page.translationKey}`]:
+                                !prev[`Mobile-${page.translationKey}`],
+                            }))
+                          }
+                        >
+                          <Typography textAlign="center">
+                            {t(page.translationKey)}
+                          </Typography>
+
+                          {menuOpenState[`Mobile-${page.translationKey}`] ? (
+                            <ExpandLess />
+                          ) : (
+                            <ExpandMore />
+                          )}
+                        </MenuItem>
+                        <Collapse
+                          in={menuOpenState[`Mobile-${page.translationKey}`]}
+                          timeout="auto"
+                          unmountOnExit
+                        >
+                          <List component="div" disablePadding>
+                            {page.children.map((subPage) => (
+                              <MenuItem
+                                sx={{ pl: 4 }}
+                                key={subPage.translationKey}
+                                onClick={handleCloseNavMenu}
+                                component={Link}
+                                to={`/${subPage.url}`}
+                              >
+                                <Typography textAlign="center">
+                                  {t(subPage.translationKey)}
+                                </Typography>
+                              </MenuItem>
+                            ))}
+                          </List>
+                        </Collapse>
+                      </List>
+                    );
+                  }
+                  return (
+                    <ListSubheader key={`Mobile-${page.translationKey}`}>
+                      {t(page.translationKey)}
+                    </ListSubheader>
                   );
-                }
-                return (
-                  <ListSubheader key={`Mobile-${page.translationKey}`}>
-                    {t(page.translationKey)}
-                  </ListSubheader>
-                );
-              })}
-              <MenuItem
-                component="button"
-                color="inherit"
-                onClick={() => {
-                  setIsTourOpen(true);
-                  handleCloseNavMenu();
-                }}
-              >
-                <Typography textAlign="center">{t("menu.tour")}</Typography>
-              </MenuItem>
-            </Menu>
+                })}
+                <MenuItem
+                  component="button"
+                  color="inherit"
+                  onClick={() => {
+                    setIsTourOpen(true);
+                    handleCloseNavMenu();
+                  }}
+                >
+                  <Typography textAlign="center">{t("menu.tour")}</Typography>
+                </MenuItem>
+              </Menu>
+            )}
+
             <Typography
               variant="h5"
               noWrap
@@ -329,7 +362,7 @@ const ResponsiveAppBar = () => {
           {/* Desktop content */}
           <Box
             sx={{
-              display: { xs: "none", md: "flex" },
+              display: { xs: "none", lg: "flex" },
               flexDirection: "row",
               alignItems: "center",
               width: "100%",
@@ -338,9 +371,9 @@ const ResponsiveAppBar = () => {
           >
             <Box
               sx={{
-                display: { xs: "none", md: "flex" },
+                display: "flex",
                 flexDirection: "row",
-                alignItems: "baseline",
+                alignItems: "center",
               }}
             >
               <MuiLink
@@ -357,7 +390,6 @@ const ResponsiveAppBar = () => {
               </MuiLink>
               <Typography
                 variant="h6"
-                noWrap
                 component={Link}
                 to="/"
                 sx={{
@@ -389,10 +421,12 @@ const ResponsiveAppBar = () => {
                   );
                 }
 
-                if (page.children) {
+                const children = page.children;
+                if (children != null) {
                   return (
                     <MultiPagesButton
                       {...page}
+                      children={children}
                       key={page.translationKey}
                       isOpen={!!menuOpenState[`Desktop-${page.translationKey}`]}
                       toggleIsOpen={() =>
@@ -421,12 +455,12 @@ const ResponsiveAppBar = () => {
             >
               <Select
                 value={country || "world"}
-                onChange={(event) =>
+                onChange={(event) => {
                   setCountry(
                     event.target.value === "world" ? "" : event.target.value,
                     "global",
-                  )
-                }
+                  );
+                }}
                 variant="outlined"
                 sx={{ fieldset: { border: "none" } }}
               >

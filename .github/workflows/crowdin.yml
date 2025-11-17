@@ -7,13 +7,13 @@ on:
 jobs:
   sync:
     name: Sync translations
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-slim
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Sync Crowdin translations
-        uses: crowdin/github-action@v2.7.0
+        uses: crowdin/github-action@v2.12.0
         with:
           upload_translations: false # default is false
           # Use this option to upload translations for a single specified language

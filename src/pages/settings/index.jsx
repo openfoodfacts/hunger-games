@@ -82,7 +82,7 @@ export default function Settings() {
 
         <TextField
           select
-          label={t("eco-score.countryLabel")}
+          label={t("green-score.countryLabel")}
           value={country}
           onChange={handleCountryChange}
           sx={{ width: 200 }}

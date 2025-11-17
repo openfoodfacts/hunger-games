@@ -22,10 +22,21 @@ import logo from "../assets/logo.png";
 import { getQuestionSearchParams } from "./QuestionFilter";
 import { useTranslation } from "react-i18next";
 
-const QuestionCard = (props) => {
-  const { filterState, imageSrc, title, showFilterResume, editableTitle } =
-    props;
+type QuestionCardProps = {
+  filterState: any;
+  imageSrc: any;
+  title: any;
+  showFilterResume: any;
+  editableTitle: any;
+};
 
+const QuestionCard = ({
+  filterState,
+  imageSrc,
+  title,
+  showFilterResume,
+  editableTitle,
+}: QuestionCardProps) => {
   const { t } = useTranslation();
 
   const targetUrl = `/questions?${getQuestionSearchParams(filterState)}`;

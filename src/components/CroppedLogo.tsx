@@ -3,7 +3,7 @@ import * as React from "react";
 import robotoff from "../robotoff";
 import off from "../off";
 
-const fetchData = async (insightId) => {
+const fetchData = async (insightId: string) => {
   const response = await robotoff.insightDetail(insightId);
 
   if (!response) {
@@ -44,9 +44,11 @@ const getCroppedLogoUrl = (
 const CroppedLogo = (props) => {
   const { insightId, ...other } = props;
   const [logoUrl, setLogoUrl] = React.useState(null);
+  const [loading, setLoading] = React.useState(true);
 
   React.useEffect(() => {
     let isValid = true;
+    setLoading(true);
 
     fetchData(insightId)
       .then(getCroppedLogoUrl)
@@ -55,14 +57,17 @@ const CroppedLogo = (props) => {
           setLogoUrl(url);
         }
       })
-      .catch(() => {});
+      .catch(() => {})
+      .finally(() => {
+        setLoading(false);
+      });
 
     return () => {
       isValid = false;
     };
   }, [insightId]);
 
-  if (!logoUrl) {
+  if (loading || !logoUrl) {
     return null;
   }
   return <img alt="logo used in prediction" src={logoUrl} {...other} />;

@@ -106,7 +106,7 @@ export const getLang = () => {
   );
 };
 
-export const getColor = () => {
+export const getColor = (): "light" | "dark" => {
   const settings = localSettings.fetch();
 
   const browserSetting =
@@ -114,6 +114,7 @@ export const getColor = () => {
     window.matchMedia("(prefers-color-scheme: dark)").matches
       ? "dark"
       : "light";
+
   return settings[localSettingsKeys.colorMode] || browserSetting || "light";
 };
 

@@ -11,7 +11,7 @@
           "title": "Емблеми",
           "description": "Намери всички емблеми, съответстващи на дадената емблема"
         },
-        "eco_score": {
+        "green_score": {
           "title": "Eco-score",
           "description": "Коментирай въпросите с най-висока стойност"
         }
@@ -70,6 +70,8 @@
     "countries": "Страни",
     "view": "Преглед",
     "edit": "Редактирай",
+    "remaining": "Оставащи: {{count}}",
+    "remaining_other": "Остават: >100",
     "hide_images": "Скриване на снимките (по-бързо зареждане)",
     "display_images": "Покажи снимките",
     "annotations": "Пояснения",
@@ -130,8 +132,10 @@
     "manage": "Управление",
     "insights": "Задълбочен анализ",
     "nutritions": "Хранителни стойности",
+    "ingredient-spellcheck": "Проверка на правописа на съставките",
+    "ingredient-detection": "Откриване на съставки",
     "settings": "Настройки",
-    "eco-score": "Eco-score",
+    "green-score": "Зелен-Резултат",
     "dashboard": "Табло с емблеми",
     "tour": "Турне",
     "logged_in_user": "Влязъл като {{userName}}",
@@ -207,11 +211,11 @@
     "no_more_questions": "Няма повече въпроси за тази емблема. Можете да опитате да намерите повече емблеми със следната игра.",
     "loading_messages": {
       "pending_reference_logos": "Зареждаме някои примерни логота, за да осъществим търсенето",
-      "failed_reference_logos": "We did not find any logos with this annotation. Try to use the following game to annotate some of them."
+      "failed_reference_logos": "Не намерихме емблеми с тази забележка. Опитайте се да използвате следната игра, за да коментирате някои от тях."
     },
     "deep_search": {
       "title": "Търсене на логота",
-      "description": "Select a logo you want to look for, and let's go to catch them all. For every logo you annotate, we will fetch it's neighbors such that you might never stop to annotate. (Press Shift to select range of logos)",
+      "description": "Изберете емблема, която искате да търсите, и нека да ги хванем всички. За всяко лого, което коментирате, ние ще извлечем неговите съседи, така че може никога да не спрете да коментирате. (Натиснете Shift, за да изберете редица от емблеми)",
       "ref_logos": "Лога за справка (логото вече е анотирано с тази стойност)",
       "remaining": "Останали за поясняване",
       "select_all": "Избери всички",
@@ -247,7 +251,7 @@
     "Open_Food_Facts_wiki": "Open Food Facts wiki (en)",
     "Translators": "Преводачи",
     "Partners": "Партньори",
-    "Open_Beauty_Facts": "Open Beauty Facts - Козметика",
+    "Open_Beauty_Facts": "Open Beauty Facts - козметика",
     "text2": "Съвместна, безплатна и отворена база данни за съставки и информация за хранителни продукти от света."
   },
   "helper": {
@@ -268,13 +272,13 @@
       },
       "page3": {
         "title": "Игра с емблеми",
-        "text1": "Another popular game is the logos game where you have to <strong>select all the logos</strong> you feel are the same.",
+        "text1": "Друга популярна игра е играта с емблеми, където трябва <strong>да изберете всички емблеми</strong> , които смятате, че са еднакви.",
         "text2": "Както е показано в примера, след като изберете всички подобни емблеми, просто въведете тяхната стойност и изберете къде е марка, етикет или нещо друго. Толкова е просто!"
       },
       "page4": {
         "title": "Игра с въпроси за Eco-Score",
         "text1": "Помогнете ни да завършим оставащите въпроси в етикетите с най-висок приоритет!",
-        "text2": "These cards are linked to labels used in the computation of the Eco-Score.",
+        "text2": "Тези карти са свързани с етикети, използвани при изчисляването на Eco-Score.",
         "text3": "<strong>Какво е Eco-Score?</strong>",
         "text4": "Eco-Score улавя общия отпечатък върху околната среда, което улеснява потребителите да сравняват продуктите и да решават кой е по-добър за околната среда."
       },
@@ -313,53 +317,30 @@
     "close": "Затвори"
   },
   "nutrition": {
+    "table_partialy_filled": "Таблица с някои данни",
+    "display_off_values": "Показване на стойности от OpenFoodFacts",
+    "nutrients": "Хранителни вещества",
+    "serving_size": "Размер на порция",
+    "add_nutrient": "-- добавете хранителни вещества --",
+    "validate_100g": "Потвърдете (100г)",
+    "validate_serving": "Потвърдете (порция)",
+    "skip": "Пропусни",
+    "invalid_image": "Невалидна снимка",
+    "pictures": {
+      "picture_date": "Снимката е качена",
+      "selected_as_nutrients": "Избрано като хранително изображение ✅",
+      "not_selected_as_nutrients": "Не е избрано като хранително вещество ❌"
+    },
     "instructions": {
-      "cropTheTable": "Изрежи снимката, за да опростиш пояснението си",
-      "verifyNutrimentDetected": "Посочи дали откритото хранително вещество е правилно",
-      "selectMissingNutriments": "Добави липсващите хранителни вещества (можеш да щракнеш, дори ако думата няма поле)",
-      "selectValue": "Избери хранителната стойност на: "
-    },
-    "steps": {
-      "1": "Изрежи",
-      "2": "Специални стойности",
-      "3": "Избор на хранителни вещества",
-      "4": "Избор на стойности"
-    },
-    "loading": "Зареждане...",
-    "unknown_brand": "Марка Неизвестна",
-    "value_missing": "Забрави да въведеш стойност.",
-    "next": "Следваща стъпка",
-    "prev": "Предишна стъпка",
-    "skip": "Пропусни този продукт",
-    "validate": "Потвърди таблицата",
-    "unselect_picture": "Няма хранителна стойност",
-    "basis": "данни за: ",
-    "servingSize": "размер на порция",
-    "value": "Стойност",
-    "unit": "Мерна единица",
-    "nutriments": {
-      "nutriment_energy-kj": "Енергия (kJ)",
-      "nutriment_energy-kcal": "Енергия (kcal)",
-      "nutriment_fat": "Мазнини",
-      "nutriment_saturated-fat": "Наситени мазнини",
-      "nutriment_carbohydrates": "Въглехидрати",
-      "nutriment_sugars": "Захари",
-      "nutriment_proteins": "Белтъци",
-      "nutriment_fiber": "Фибри",
-      "nutriment_salt": "Сол",
-      "nutriment_sodium": "Натрий"
-    },
-    "history": {
-      "title": "История на сесиите",
-      "status": "статус",
-      "product name": "име на продукта",
-      "view": "преглед на страницата",
-      "edit": "редактирай страницата",
-      "SKIP": "игнорирано",
-      "VALIDATED": "редактирано",
-      "WRONG_IMAGE": "неизбрана снимка",
-      "close": "затвори",
-      "open": "отвори историята"
+      "open_button": "Отворете инструкциите",
+      "title": "Как да използвате интерфейса",
+      "chose_between_empty_and_partially_filled": "Можете да избирате между продукти, за които OpenFoodFacts (OFF) няма данни за хранителните вещества. Или продукт с частично попълнена таблица с хранителни вещества.",
+      "picture_date_is_display": "Датата на снимката се показва отгоре. Позволява ви да проверите дали е скорошна.",
+      "indicate_not_provided_value": "Празните входни данни се пренебрегват. Ако влакната не присъстват в таблицата, можете да поставите \"-\", за да укажете, че стойността не е налична.",
+      "validate_one_column": "Изберете размера, показан на снимката. Ако имате 100 г и размер на порцията, моля, изберете 100 г, защото това е нормализиран формат.",
+      "skip_button": "Ако не знаете как да се справите с дадено изображение или просто не искате да го правите, натиснете „пропускане“. Друг потребител ще може да се справи с него.",
+      "invalid_image_button": "Ако снимките не са хранителна таблица, натиснете „Невалидно изображение“, за да го премахнете от списъка с изображения за проверка",
+      "close": "Затвори"
     }
   },
   "notfound": {
@@ -380,32 +361,32 @@
     "incorrect": "Грешно",
     "correct": "Правилно ({{label}})"
   },
-  "eco-score": {
+  "green-score": {
     "description": "Ето обобщение на въпросите, които биха могли да подобрят изчисляването на Eco-Score",
     "countryLabel": "Страна"
   },
   "ingredients": {
     "description": "Тази игра позволява да валидирате избраните изображения от списъци от съставки за избран продукт на разлини езици, и да потвърдите избраните съставки.",
-    "current_text": "text from off",
-    "confidence_score": "language confidence",
-    "revert": "Revert",
-    "parsing": "Get server understanding",
-    "send": "Validate & send",
+    "current_text": "текст от изкл",
+    "confidence_score": "езикова увереност",
+    "revert": "Връщане",
+    "parsing": "Получете разбиране от сървъра",
+    "send": "Потвърдете и изпратете",
     "skip": "Пропусни този продукт",
-    "getRobotoffPrediciton": "Get predictions from Robotoff"
+    "getRobotoffPrediciton": "Вземете прогнози от Robotoff"
   },
   "footer": {
     "appStore": {
       "title": "App Store",
-      "subtitle": "Download on the"
+      "subtitle": "Изтегляне на"
     },
     "playStore": {
       "title": "Play Store",
-      "subtitle": "Get it on"
+      "subtitle": "Включете го"
     },
     "microsoft": {
       "title": "Microsoft",
-      "subtitle": "Get it from"
+      "subtitle": "Вземете го от"
     },
     "androidAPK": {
       "title": "APK за Android",

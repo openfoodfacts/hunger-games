@@ -38,6 +38,7 @@ import {
 } from "./utils";
 import useQuestions from "../../hooks/useQuestions";
 import { useProductData } from "../../hooks/useProduct";
+import { useTheme } from "@mui/material/styles";
 
 const ProductInformation = () => {
   const { t } = useTranslation();
@@ -47,6 +48,7 @@ const ProductInformation = () => {
   const [devCustomization] = React.useState(
     () => getPageCustomization().questionPage,
   );
+  const theme = useTheme();
 
   const { question } = useQuestions();
   const { data: productData } = useProductData(question?.barcode);
@@ -180,7 +182,17 @@ const ProductInformation = () => {
                   {t(`questions.${i18nKey}`)}
                 </TableCell>
                 {Array.isArray(value) ? (
-                  <TableCell>
+                  <TableCell
+                    sx={{
+                      "& a": {
+                        color:
+                          theme.palette.mode === "dark" ? "white" : "black",
+                        textDecoration: "none",
+                        fontWeight: 500,
+                        "&:hover": { textDecoration: "underline" },
+                      },
+                    }}
+                  >
                     {getLink
                       ? value.map((name, index) => (
                           <React.Fragment key={name}>

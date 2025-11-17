@@ -11,7 +11,7 @@
           "title": "Logotyper",
           "description": "Hitta alla logotyper som matchar den givna logotypen"
         },
-        "eco_score": {
+        "green_score": {
           "title": "Eco-Score",
           "description": "Anteckna frågorna med högst värde"
         }
@@ -70,6 +70,8 @@
     "countries": "Länder",
     "view": "Visa",
     "edit": "Redigera",
+    "remaining": "Återstående: {{count}}",
+    "remaining_other": "Återstående: >100",
     "hide_images": "Dölj bilder (snabbare laddning)",
     "display_images": "Visa bilder",
     "annotations": "Anteckningar",
@@ -85,7 +87,7 @@
         "country": "land",
         "brand": "varumärke",
         "popularity": "popularitet",
-        "campaign": "camp"
+        "campaign": "kamp"
       },
       "long_label": {
         "type": "Frågetyp",
@@ -94,12 +96,12 @@
         "brand": "Produktmärke",
         "popularity": "Sortera efter popularitet",
         "edit": "",
-        "campaign": "Campaign"
+        "campaign": "Kampanj"
       },
       "placeholders": {
-        "value": "Value (Fanta, en:organic,...)",
+        "value": "Värde (fanta, sv:ekologiskt,...)",
         "brand": "Auchan, Danone, Herta, ...",
-        "campaign": "Annotation campaigns"
+        "campaign": "Noteringskampanjer"
       },
       "actions": {
         "edit": "Redigera filter",
@@ -107,35 +109,37 @@
         "apply": "Verkställ"
       }
     },
-    "other_questions": "Other questions",
+    "other_questions": "Andra frågor",
     "send": "Skicka",
     "flag": "Något fel? Rapportera/flagga bilden!",
-    "unflag": "Unflag the image",
+    "unflag": "Ta bort flaggan för bilden",
     "reset_filters": "Återställ filter",
     "log_in": "Användarnamn",
     "sign_up": "Registrera dig",
-    "login_title": "Make your annotation count",
-    "login_description": "You are not currently logged into Open Food Facts. To get your answers directly applied to products, and associated to your account, consider logging in to your Open Food Facts account, or creating one",
-    "please_wait_while_we_fetch_the_question": "Please wait while we fetch the question!"
+    "login_title": "Låt din notering räknas",
+    "login_description": "Du är för närvarande inte inloggad på Open Food Facts. För att få dina svar direkt tillämpade på produkter och kopplade till ditt konto, överväg att logga in på ditt Open Food Fact-konto eller skapa ett",
+    "please_wait_while_we_fetch_the_question": "Vänta medan vi hämtar frågan!"
   },
   "menu": {
     "title": "Hunger Games",
     "games": "Spel",
     "questions": "Frågor",
     "logos": "Logotyper",
-    "logos-annotation": "Logos annotation",
-    "logos-search": "Logos search",
-    "logos-product-search": "Annotation per products",
-    "logos-deep-search": "Infinite annotation",
+    "logos-annotation": "Logotypnotering",
+    "logos-search": "Sök på logotyper",
+    "logos-product-search": "Notering per produkt",
+    "logos-deep-search": "Oändlig notering",
     "manage": "Hantera",
     "insights": "Insikter",
-    "nutritions": "Näringsfakta",
+    "nutritions": "Näring",
+    "ingredient-spellcheck": "Stavningskontroll för ingredienser",
+    "ingredient-detection": "Ingrediensdetektering",
     "settings": "Inställningar",
-    "eco-score": "Eco-Score",
-    "dashboard": "Logos dashboard",
-    "tour": "Show tour",
+    "green-score": "Green-Score",
+    "dashboard": "Logotyppanel",
+    "tour": "Visa rundtur",
     "logged_in_user": "Inloggad som {{userName}}",
-    "log_in": "Click to login"
+    "log_in": "Klicka för att logga in"
   },
   "insights": {
     "insights": "Insikter",
@@ -163,15 +167,15 @@
     "created_at": "Skapad den",
     "completed_at": "Slutfördes den",
     "automatic": "Automatisk",
-    "human_required": "Human required",
-    "edit_product": "Open product edit",
+    "human_required": "Mänskligt krav",
+    "edit_product": "Öppna produktredigering",
     "view_product": "Öppna produktsida",
-    "view_crops_for_this_product": "Annotate product logos"
+    "view_crops_for_this_product": "Notera produktlogotyper"
   },
   "logos": {
     "annotation": "Anteckning: ",
     "annotations": "Senaste anteckningar",
-    "task_description": "Select all logos that are exactly the same, and give them a name like \"en:EU Organic\" and a type like \"label\".",
+    "task_description": "Välj alla logotyper som är exakt samma och ge dem ett namn som \"sv:EU Ekologiskt\" och en typ som \"etikett\".",
     "select_all": "Markera alla",
     "unselect_all": "Avmarkera alla",
     "distance": "Avstånd:",
@@ -198,55 +202,55 @@
     "loading": "Laddar…",
     "refresh": "Uppdatera",
     "search_specific": "Sök efter specifik logotyp",
-    "load_more": "Load more",
+    "load_more": "Ladda fler",
     "no_results": "Ingen logotyp hittades",
-    "result_count": "Shows {{showing}} on {{available}} available",
+    "result_count": "Visar {{showing}} på {{available}} tillgängliga",
     "flag": "Något fel? Rapportera/flagga bilden!",
-    "unflag": "Unflag the image",
-    "crop_image_title": "crop of the logo",
-    "no_more_questions": "No more questions about this logo. You can try to find more logos with the following game.",
+    "unflag": "Ta bort flaggan för bilden",
+    "crop_image_title": "beskärning av logotypen",
+    "no_more_questions": "Inga fler frågor om denna logotyp. Du kan försöka hitta fler logotyper med följande spel.",
     "loading_messages": {
-      "pending_reference_logos": "We are loading some logos examples to initialise the search",
-      "failed_reference_logos": "We did not find any logos with this annotation. Try to use the following game to annotate some of them."
+      "pending_reference_logos": "Vi laddar några exempel på logotyper för att initiera sökningen",
+      "failed_reference_logos": "Vi hittade inga logotyper med denna notering. Försök att använda följande spel för att notera några av dem."
     },
     "deep_search": {
-      "title": "Logo search",
-      "description": "Select a logo you want to look for, and let's go to catch them all. For every logo you annotate, we will fetch it's neighbors such that you might never stop to annotate. (Press Shift to select range of logos)",
-      "ref_logos": "Reference logos (logo already annotated with this value)",
-      "remaining": "Remaining to annotate",
-      "select_all": "Select All",
-      "unselect_all": "Deselect All"
+      "title": "Sök på logotyp",
+      "description": "Välj en logotyp du vill leta efter, och låt oss klara av dem allihop. För varje logotyp du noterar kommer vi att hämta dess grannar så att du kanske aldrig slutar att notera. (Tryck på Shift för att välja ett antal logotyper)",
+      "ref_logos": "Referenslogotyper (logotypen redan noterad med detta värde)",
+      "remaining": "Återstår att notera",
+      "select_all": "Markera alla",
+      "unselect_all": "Avmarkera alla"
     }
   },
   "settings": {
     "settings": "Inställningar",
     "language": "Språk",
     "save": "Spara",
-    "reportIssue": "Found a bug? Please let us know.",
-    "dev_mode_title": "To get more options, activate the dev mode",
-    "dev_mode_label": "Dev Mode",
-    "dev_page_toggle": "Show {{name}} page",
+    "reportIssue": "Hittat en bugg? Vänligen meddela oss.",
+    "dev_mode_title": "För att få fler alternativ, aktivera utvecklingsläget",
+    "dev_mode_label": "Utvecklingsläge",
+    "dev_page_toggle": "Visa sidan {{name}}",
     "join_community": "Gå med i communityt",
-    "text1": "Open Food Facts is a collaborative project built by tens of thousands of volunteers and managed by a non-profit organization with 8 employees. We need your donations to fund the Open Food Facts 2024 budget and to continue to develop the project.",
-    "thank_you": "Thank you",
+    "text1": "Open Food Facts är ett samarbetsprojekt byggt av tiotusentals volontärer och drivs av en ideell organisation med 8 anställda. Vi behöver era donationer för att finansiera Open Food Facts 2024 budget och för att fortsätta utveckla projektet.",
+    "thank_you": "Tack",
     "donate": "Donera",
     "join_the_community": {
-      "discover_our": "Discover our ",
-      "code_of_conduct": "Code of conduct ",
-      "join_us_on": "Join us on ",
+      "discover_our": "Upptäck vår ",
+      "code_of_conduct": "uppförandekod ",
+      "join_us_on": "Anslut till oss på ",
       "forum": "Forum",
       "subscribe_to_our": "Prenumerera på vårt ",
       "newsletter": "nyhetsbrev"
     },
     "discover_the_project": "Upptäck projektet",
     "Who_we_are": "Vilka vi är",
-    "Vision_Mission_Values_and_Programs": "Vision, Mission, Values and Programs",
-    "FAQS": "FAQS",
+    "Vision_Mission_Values_and_Programs": "Vision, uppdrag, värden och program",
+    "FAQS": "Vanliga frågor",
     "open_Food_Facts_blog": "Open Food Facts Blogg",
     "Press": "Press",
     "Open_Food_Facts_wiki": "Open Food Facts wiki (en)",
     "Translators": "Översättare",
-    "Partners": "Partners",
+    "Partners": "Partner",
     "Open_Beauty_Facts": "Open Beauty Facts - Kosmetika",
     "text2": "En kollaborativ, fri och öppen databas över livsmedelsprodukter från hela världen."
   },
@@ -254,39 +258,39 @@
     "welcome": {
       "page1": {
         "title": "Välkommen till Hunger Games",
-        "text1": "Hunger Games is a collection of mini-games that help contribute to Open Food Facts in many ways. You can play our really exciting games from anywhere. Here is a guided tour of the entire website which will get you started.",
-        "text2": "Make sure to login to the Open Food Facts website to get credit for your contributions. If you make a mistake, please take the time to correct it by heading to the website.",
-        "text3": "In case of any doubt about the games, click on the question mark icon at the top right of the page, and you can reach us on slack at the #hunger-games channel"
+        "text1": "Hunger Games är en samling minispel som bidrar till Open Food Facts på många sätt. Du kan spela våra riktigt spännande spel var som helst. Här är en guidad rundtur på hela webbplatsen som hjälper dig att komma igång.",
+        "text2": "Se till att logga in på Open Food Facts-webbplatsen för att få erkännande för dina bidrag. Om du gör ett misstag, vänligen ta dig tid att rätta till det genom att gå till webbplatsen.",
+        "text3": "Om du är osäker på spelen, klicka på frågetecknet längst upp till höger på sidan, och nå oss på slack på #hunger-games-kanalen"
       },
       "page2": {
-        "title": "Questions Game",
-        "text1": "Does the food product belong to this brand?",
-        "text2": "Simply answer with a <strong>Yes/No</strong>! Don't know the answer? That's alright, just skip it.",
-        "text3": "You can also use your keyboard shortcuts: y,n and k.",
-        "text4": "You can <strong>filter</strong> the products based on country, brands, popularity and much more!",
-        "text5": "If you don't want to do this every single time, you can also <strong>save the filters</strong> by clicking on the star. Next time you come back, find the saved filters on the home page itself"
+        "title": "Frågespel",
+        "text1": "Tillhör livsmedelsprodukten detta varumärke?",
+        "text2": "Svara helt enkelt med ett <strong>Ja/Nej</strong>! Vet du inte svaret? Det är okej, bara hoppa över det.",
+        "text3": "Du kan också använda dina kortkommandon: y, n och k.",
+        "text4": "Du kan <strong>filtrera</strong> produkterna baserat på land, varumärken, popularitet och mycket mer!",
+        "text5": "Om du inte vill göra detta varje gång kan du också <strong>spara filtren</strong> genom att klicka på stjärnan. Nästa gång du kommer tillbaka hittar du de sparade filtren på själva hemsidan"
       },
       "page3": {
-        "title": "Logos Game",
-        "text1": "Another popular game is the logos game where you have to <strong>select all the logos</strong> you feel are the same.",
-        "text2": "As shown in the example, once you select all the similar logos, just type their value and select where it is a brand, a label or something else. It's that simple!"
+        "title": "Logotypspel",
+        "text1": "Ett annat populärt spel är logotypspelet där du måste <strong>välja alla logotyper</strong> som du tycker är likadana.",
+        "text2": "Som visas i exemplet, när du väl har valt alla liknande logotyper skriver du bara deras värde och väljer var det är ett varumärke, en etikett eller något annat. Så enkelt är det!"
       },
       "page4": {
-        "title": "Eco-Score Questions Game",
-        "text1": "Help us finish the remaining questions in the most high priority labels!",
-        "text2": "These cards are linked to labels used in the computation of the Eco-Score.",
+        "title": "Eco-Score-frågespel",
+        "text1": "Hjälp oss avsluta de återstående frågorna i de högst prioriterade etiketterna!",
+        "text2": "Dessa kort är kopplade till etiketter som används vid beräkningen av Eco-Score.",
         "text3": "<strong>Vad är Eco-Score?</strong>",
-        "text4": "Eco-Score captures the total environmental footprint, making it easier for consumers to compare products and decide which is better for the environment."
+        "text4": "Eco-Score fångar upp det totala miljöavtrycket, vilket gör det lättare för konsumenter att jämföra produkter och avgöra vilken som är bättre för miljön."
       },
       "page5": {
         "title": "Inställningar",
-        "text1": "Set your preferred language, and report issues from our settings page.",
-        "text2": "If you're a developer, you can also explore our database content using our dev mode."
+        "text1": "Ställ in ditt föredragna språk och rapportera problem från vår inställningssida.",
+        "text2": "Om du är utvecklare kan du även utforska vårt databasinnehåll med hjälp av vårt utvecklarläge."
       },
       "page6": {
-        "title": "Tour",
-        "text1": "Got stuck somewhere? Want to take the tour again?",
-        "text2": "Just click on the question mark and start the journey again!"
+        "title": "Rundtur",
+        "text1": "Har du fastnat någonstans? Vill du ta rundturen igen?",
+        "text2": "Klicka bara på frågetecknet och börja resan igen!"
       }
     },
     "logos": {
@@ -297,8 +301,8 @@
       },
       "page2": {
         "title": "Varning",
-        "text1": "If the crop contains multiple logos, do not select it.",
-        "text2": "If the crop contains only a partial part of a logo, you can select it."
+        "text1": "Om beskärningen innehåller flera logotyper, välj den inte.",
+        "text2": "Om beskärningen endast innehåller en del av en logotyp kan du välja den."
       },
       "page3": {
         "title": "Validera",
@@ -313,99 +317,76 @@
     "close": "Stäng"
   },
   "nutrition": {
+    "table_partialy_filled": "Tabell med redan en del data",
+    "display_off_values": "Visa värden från OpenFoodFacts",
+    "nutrients": "Näringsämnen",
+    "serving_size": "Portionsstorlek",
+    "add_nutrient": "-- lägg till näringsämne --",
+    "validate_100g": "Validera (100 g)",
+    "validate_serving": "Validera (portion)",
+    "skip": "Hoppa over",
+    "invalid_image": "Ogiltig bild",
+    "pictures": {
+      "picture_date": "Foto uppladdat",
+      "selected_as_nutrients": "Vald som näringsbild ✅",
+      "not_selected_as_nutrients": "Ej vald som näringsämne ❌"
+    },
     "instructions": {
-      "cropTheTable": "Beskär bilden för att förenkla din anteckning",
-      "verifyNutrimentDetected": "Ange om det upptäckta näringsämnet är korrekt",
-      "selectMissingNutriments": "Lägg till saknade näringsämnen (du kan klicka även om ordet inte har någon ruta)",
-      "selectValue": "Välj näringsvärde för: "
-    },
-    "steps": {
-      "1": "Beskär",
-      "2": "Särskilda värden",
-      "3": "Val av näringsämnen",
-      "4": "Valda värden"
-    },
-    "loading": "Laddar...",
-    "unknown_brand": "Brand Unknown",
-    "value_missing": "You forgot to input a value.",
-    "next": "Next step",
-    "prev": "Prev step",
-    "skip": "Hoppa över denna produkt",
-    "validate": "Validera tabell",
-    "unselect_picture": "Ingen näringsinformation",
-    "basis": "data för: ",
-    "servingSize": "portion storlek",
-    "value": "Värde",
-    "unit": "Enhet",
-    "nutriments": {
-      "nutriment_energy-kj": "Energi (kJ)",
-      "nutriment_energy-kcal": "Energi (kcal)",
-      "nutriment_fat": "Fett",
-      "nutriment_saturated-fat": "Mättat fett",
-      "nutriment_carbohydrates": "Kolhydrater",
-      "nutriment_sugars": "Sugar",
-      "nutriment_proteins": "Protein content",
-      "nutriment_fiber": "Fibres",
-      "nutriment_salt": "Salt",
-      "nutriment_sodium": "Natrium"
-    },
-    "history": {
-      "title": "Sessionshistorik",
-      "status": "status",
-      "product name": "produktnamn",
-      "view": "visa sida",
-      "edit": "redigera sida",
-      "SKIP": "ignorerad",
-      "VALIDATED": "redigerad",
-      "WRONG_IMAGE": "avmarkerad bild",
-      "close": "stäng",
-      "open": "öppna historik"
+      "open_button": "Öppna instruktioner",
+      "title": "Hur man använder gränssnittet",
+      "chose_between_empty_and_partially_filled": "Du kan välja mellan produkter som OpenFoodFacts (OFF) inte har några uppgifter om näringsämnena. Eller produkt med delvis ifylld näringstabell.",
+      "picture_date_is_display": "Datumet för bilden visas ovanför. Det gör att du kan kontrollera om det är en ny bild.",
+      "indicate_not_provided_value": "Tomma indata ignoreras. Om fibrer inte finns i tabellen, kan du ange att värdet inte är tillgängligt genom att ange \"-\".",
+      "validate_one_column": "Välj den storlek som visas på bilden. Om du har en portionsstorlek på 100 g, vänligen välj 100 g eftersom det är ett normaliserat format.",
+      "skip_button": "Om du inte vet hur du ska hantera en bild, eller om du helt enkelt inte vill göra det, tryck på \"hoppa över\". Andra användare kan hantera det.",
+      "invalid_image_button": "Om bilderna inte är en näringstabell, tryck på \"Ogiltig bild\" för att ta bort den från listan över bilder för att verifiera",
+      "close": "Stäng"
     }
   },
   "notfound": {
-    "image_alt": "404 not found",
-    "nopage": "Whoops! The page you're looking for can't be found.",
-    "redirect1": "Want to play some games?",
-    "redirect2": "Click here"
+    "image_alt": "404 hittades inte",
+    "nopage": "Hoppsan! Sidan du letar efter kan inte hittas.",
+    "redirect1": "Vill du spela några spel?",
+    "redirect2": "Klicka här"
   },
   "nutriscore": {
-    "image_alt": "cropped image",
-    "label": "Annotate Nutri-Score logo detection by batch.",
-    "description": "To do so, select all the images showing the correct/wrong Nutri-Score value ({{label}}), and click on the bottom buttons to say if you selected a set correct or wrong ones.",
-    "images_remaining": "Still {{remaining}} to annotate",
-    "image_sizes": "Image sizes",
-    "zoom_on_logo": "Zoom on logo",
+    "image_alt": "beskuren bild",
+    "label": "Notera Nutri-Score logotypupptäckt efter batch.",
+    "description": "För att göra det, välj alla bilder som visar korrekt/felaktigt Nutri-Score-värde ({{label}}), och klicka på de nedre knapparna för att säga om du valt en uppsättning korrekta eller felaktiga.",
+    "images_remaining": "Fortfarande {{remaining}} att notera",
+    "image_sizes": "Bildstorlekar",
+    "zoom_on_logo": "Zooma på logotyp",
     "select_all": "Markera alla",
     "deselect_all": "Avmarkera alla",
-    "incorrect": "Wrong",
-    "correct": "Correct ({{label}})"
+    "incorrect": "Felaktig",
+    "correct": "Korrekt ({{label}})"
   },
-  "eco-score": {
-    "description": "Here is a summary of questions that could improve Eco-Score computation",
+  "green-score": {
+    "description": "Här är en sammanfattning av frågor som kan förbättra Eco-Score-beräkningen",
     "countryLabel": "Land"
   },
   "ingredients": {
-    "description": "This game allows you to validate the pre-selection of images of ingredients lists in various languages for a product, and validate the extracted ingredients.",
-    "current_text": "text from off",
-    "confidence_score": "language confidence",
-    "revert": "Revert",
-    "parsing": "Get server understanding",
-    "send": "Validate & send",
+    "description": "Detta spel låter dig validera förvalet av bilder av ingredienslistor på olika språk för en produkt, och validera de extraherade ingredienserna.",
+    "current_text": "text från av",
+    "confidence_score": "språkförtroende",
+    "revert": "Återgå",
+    "parsing": "Få serverförståelse",
+    "send": "Validera och skicka",
     "skip": "Hoppa över denna produkt",
-    "getRobotoffPrediciton": "Get predictions from Robotoff"
+    "getRobotoffPrediciton": "Få förutsägelser från Robotoff"
   },
   "footer": {
     "appStore": {
       "title": "App Store",
-      "subtitle": "Download on the"
+      "subtitle": "Ladda ner på"
     },
     "playStore": {
       "title": "Play Store",
-      "subtitle": "Get it on"
+      "subtitle": "Få det på"
     },
     "microsoft": {
       "title": "Microsoft",
-      "subtitle": "Get it from"
+      "subtitle": "Få det från"
     },
     "androidAPK": {
       "title": "Android APK",

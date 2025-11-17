@@ -2610,8 +2610,8 @@ export const DASHBOARD: DashBoardTheme[] = [
     ],
   },
   {
-    tag: "eco-score",
-    title: "EcoScore",
+    tag: "green-score",
+    title: "Green Score",
     logos: [
       "en:organic",
       "en:eu-organic",
