@@ -1,7 +1,7 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://static.openfoodfacts.org/images/logos/off-logo-horizontal-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://static.openfoodfacts.org/images/logos/off-logo-horizontal-light.svg">
-  <img height="100" src="https://static.openfoodfacts.org/images/logos/off-logo-horizontal-light.png">
+  <source media="(prefers-color-scheme: dark)" srcset="https://images.openfoodfacts.org/images/logos/off-logo-horizontal-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://images.openfoodfacts.org/images/logos/off-logo-horizontal-light.svg">
+  <img height="100" src="https://images.openfoodfacts.org/images/logos/off-logo-horizontal-light.png">
 </picture>
 
 # Hunger Games: Annotation games for Open Food Facts
