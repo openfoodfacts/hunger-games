@@ -12,6 +12,18 @@ import axios from "axios";
 
 const BARCODE_REGEX = /(...)(...)(...)(.*)$/;
 
+interface Product {
+  product_name?: string;
+  brands?: string[];
+  ingredients_text?: string;
+  countries_tags?: string[];
+  images?: any;
+  categories?: string[];
+  categories_tags?: string[];
+  labels_tags?: string;
+  quantity?: string;
+}
+
 class OffService {
   private readonly axios: typeof axios = axios;
 
@@ -69,7 +81,7 @@ class OffService {
   getProduct(barcode: string) {
     const lang = getLang();
 
-    return axios.get(
+    return axios.get<{ code: string; product: Product }>(
       `${OFF_API_URL}/product/${barcode}.json?fields=${[
         "product_name",
         "brands",
@@ -183,7 +195,7 @@ class OffService {
     countryCode?: string;
     fields?: string;
   }) {
-    const searchParams = {
+    const searchParams: Record<string, string> = {
       page: page.toString(),
       page_size: pageSize.toString(),
       json: "true",
@@ -226,10 +238,7 @@ class OffService {
       fields: "ingredients",
       lc: lang,
       tags_lc: lang,
-      product: {
-        lang,
-        [`ingredients_text_${lang}`]: text,
-      },
+      product: { lang, [`ingredients_text_${lang}`]: text },
     });
   }
 }

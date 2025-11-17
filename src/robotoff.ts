@@ -1,6 +1,6 @@
 import axios from "axios";
 
-import { ROBOTOFF_API_URL, IS_DEVELOPMENT_MODE } from "./const";
+import { ROBOTOFF_API_URL } from "./const";
 import { getLang } from "./localeStorageManager";
 import { reformatValueTag, removeEmptyKeys } from "./utils";
 
@@ -10,6 +10,7 @@ export interface QuestionInterface {
   insight_type: string;
   question: string;
   source_image_url?: string;
+  ref_image_url?: string;
   type: string;
   value: string;
   value_tag: string;
@@ -18,24 +19,14 @@ export interface QuestionInterface {
 type GetQuestionsResponse = { count: number; questions: QuestionInterface[] };
 
 const robotoff = {
-  annotate(insightId: string, annotation) {
-    if (IS_DEVELOPMENT_MODE) {
-      console.log(
-        `Annotated, ${ROBOTOFF_API_URL}/insights/annotate`,
-        new URLSearchParams(
-          `insight_id=${insightId}&annotation=${annotation}&update=1`,
-        ),
-        { withCredentials: true },
-      );
-    } else {
-      return axios.post(
-        `${ROBOTOFF_API_URL}/insights/annotate`,
-        new URLSearchParams(
-          `insight_id=${insightId}&annotation=${annotation}&update=1`,
-        ),
-        { withCredentials: true },
-      );
-    }
+  annotate(insightId: string, annotation: -1 | 0 | 1) {
+    return axios.post(
+      `${ROBOTOFF_API_URL}/insights/annotate`,
+      new URLSearchParams(
+        `insight_id=${insightId}&annotation=${annotation}&update=1`,
+      ),
+      { withCredentials: true },
+    );
   },
 
   async questionsByProductCode(code: string) {
@@ -89,12 +80,7 @@ const robotoff = {
     const lang = getLang();
 
     return axios.get<GetQuestionsResponse>(`${ROBOTOFF_API_URL}/questions/`, {
-      params: removeEmptyKeys({
-        ...searchParams,
-        lang,
-        count,
-        page,
-      }),
+      params: removeEmptyKeys({ ...searchParams, lang, count, page }),
     });
   },
 
@@ -109,10 +95,7 @@ const robotoff = {
   updateLogo(logoId: string, value: string, type: string) {
     return axios.put(
       `${ROBOTOFF_API_URL}/images/logos/${logoId}`,
-      removeEmptyKeys({
-        value,
-        type,
-      }),
+      removeEmptyKeys({ value, type }),
       { withCredentials: true },
     );
   },
@@ -156,9 +139,7 @@ const robotoff = {
   annotateLogos(annotations) {
     return axios.post(
       `${ROBOTOFF_API_URL}/images/logos/annotate`,
-      removeEmptyKeys({
-        annotations,
-      }),
+      removeEmptyKeys({ annotations }),
       { withCredentials: true },
     );
   },

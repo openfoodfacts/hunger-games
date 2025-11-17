@@ -18,7 +18,7 @@ const reformatTagMapping = {
   ü: "u",
 };
 
-export const reformatValueTag = (value: string) => {
+export const reformatValueTag = (value: string | undefined) => {
   if (!value) {
     return value;
   }

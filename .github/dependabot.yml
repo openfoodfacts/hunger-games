@@ -24,17 +24,13 @@ updates:
           - "@types/react-dom"
           - "react"
           - "react-dom"
-          - "react-router-dom" # TODO: remove this when removing react-router-dom
+          - "react-router"
           - "typescript"
           - "axios"
           - "globals"
       emotion:
         patterns:
           - "@emotion/*"
-      redux:
-        patterns:
-          - "@reduxjs/toolkit"
-          - "react-redux"
       vite:
         patterns:
           - "@vitejs/plugin-react"

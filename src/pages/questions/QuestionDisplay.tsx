@@ -17,36 +17,34 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 import Loader from "../loader";
 
 import { useTranslation } from "react-i18next";
-import { useDispatch, useSelector } from "react-redux";
 import {
   CORRECT_INSIGHT,
   WRONG_INSIGHT,
   SKIPPED_INSIGHT,
   OFF_DOMAIN,
 } from "../../const";
-import { DEFAULT_FILTER_STATE } from "../../components/QuestionFilter/const";
-import {
-  filterStateSelector,
-  isLoadingSelector,
-  updateFilter,
-  answerQuestion as answerQuestionAction,
-} from "./store";
-import { useMatomoTrackAnswerQuestion } from "../../hooks/matomoEvents";
 import {
   getFullSizeImage,
   getValueTagExamplesURL,
-  getValueTagQuestionsURL,
   getNbOfQuestionForValue,
 } from "./utils";
+import { getValueTagQuestionsURL } from "./utils/getValueTagQuestionsURL";
+import useQuestions, { AnswerQuestionParams } from "../../hooks/useQuestions";
 
-import { getShortcuts } from "../../l10n-shortcuts";
-import { useFilterSearch } from "../../components/QuestionFilter/useFilterSearch";
+import { useKeyboardShortcuts } from "./useKeyboardShortcuts";
 import CroppedLogo from "../../components/CroppedLogo";
 import ZoomableImage from "../../components/ZoomableImage";
+import { useFilterState, FilterParams } from "../../hooks/useFilterState";
+import { QuestionInterface } from "../../robotoff";
+import { useProductData } from "../../hooks/useProduct";
 
-const usePotentialQuestionNumber = (filterState, question) => {
-  const [nbOfPotentialQuestion, setNbOfPotentialQuestions] =
-    React.useState(null);
+const usePotentialQuestionNumber = (
+  filterState: FilterParams,
+  question: QuestionInterface | null,
+) => {
+  const [nbOfPotentialQuestion, setNbOfPotentialQuestions] = React.useState<
+    number | null
+  >(null);
 
   React.useEffect(() => {
     if (
@@ -80,77 +78,15 @@ const usePotentialQuestionNumber = (filterState, question) => {
   return nbOfPotentialQuestion;
 };
 
-const useKeyboardShortcuts = (question, answerQuestion) => {
-  const shortcuts = getShortcuts();
-
-  React.useEffect(() => {
-    function handleShortCut(event) {
-      const preventShortCut = event.target.tagName.toUpperCase() === "INPUT";
-      if (question?.insight_id && !preventShortCut) {
-        switch (event.key) {
-          case shortcuts.skip:
-            answerQuestion({
-              value: SKIPPED_INSIGHT,
-              insight_id: question.insight_id,
-            });
-            break;
-          case shortcuts.yes:
-            answerQuestion({
-              value: CORRECT_INSIGHT,
-              insight_id: question.insight_id,
-            });
-            break;
-          case shortcuts.no:
-            answerQuestion({
-              value: WRONG_INSIGHT,
-              insight_id: question.insight_id,
-            });
-            break;
-          default:
-            break;
-        }
-      }
-    }
-
-    window.addEventListener("keydown", handleShortCut);
-    return () => window.removeEventListener("keydown", handleShortCut);
-  }, [
-    question?.insight_id,
-    answerQuestion,
-    shortcuts.skip,
-    shortcuts.yes,
-    shortcuts.no,
-  ]);
-
-  return shortcuts;
-};
-const QuestionDisplay = ({ question, productData }) => {
+export default function QuestionDisplay() {
   const { t } = useTranslation();
 
-  const { answerQuestions: matomoTrackAnswerQuestions } =
-    useMatomoTrackAnswerQuestion();
-  const filterState = useSelector(filterStateSelector);
-  const isLoading = useSelector(isLoadingSelector);
-  const dispatch = useDispatch();
+  const [filterState, setFilterState] = useFilterState();
+  const { question, status, answerQuestion, questions, questionsCount } =
+    useQuestions(filterState);
 
-  const [, setSearchParams] = useFilterSearch();
-
-  const updateSearchParams = (newParams) => {
-    setSearchParams(newParams);
-    dispatch(updateFilter(newParams));
-  };
-
-  const resetFilters = () => {
-    updateSearchParams(DEFAULT_FILTER_STATE);
-  };
-
-  const answerQuestion = React.useCallback(
-    ({ insight_id, value }) => {
-      dispatch(answerQuestionAction({ insight_id, value }));
-      matomoTrackAnswerQuestions(value);
-    },
-    [dispatch, matomoTrackAnswerQuestions],
-  );
+  console.log({ questions, questionsCount });
+  const { data: productData } = useProductData(question?.barcode);
 
   const valueTagQuestionsURL = getValueTagQuestionsURL(filterState, question);
   const valueTagExamplesURL = getValueTagExamplesURL(question);
@@ -165,7 +101,7 @@ const QuestionDisplay = ({ question, productData }) => {
   const shortcuts = useKeyboardShortcuts(question, answerQuestion);
 
   if (question === null) {
-    if (isLoading) {
+    if (status === "pending") {
       return (
         <Box sx={{ width: "100%", textAlign: "center", py: 10, m: 0 }}>
           <Typography variant="subtitle1">
@@ -176,10 +112,23 @@ const QuestionDisplay = ({ question, productData }) => {
         </Box>
       );
     }
+    if (status === "error") {
+      return (
+        <Box sx={{ width: "100%", textAlign: "center", py: 10, m: 0 }}>
+          <Typography variant="subtitle1">
+            {t("questions.an_error_occurred")}
+          </Typography>
+        </Box>
+      );
+    }
     return (
       <Stack direction="row" alignItems="center" spacing={1}>
         <p>{t("questions.no_questions_remaining")}</p>
-        <Button size="small" variant="contained" onClick={resetFilters}>
+        <Button
+          size="small"
+          variant="contained"
+          onClick={() => setFilterState({})}
+        >
           {t("questions.reset_filters")}
         </Button>
       </Stack>
@@ -188,18 +137,9 @@ const QuestionDisplay = ({ question, productData }) => {
 
   return (
     <Stack
-      sx={{
-        textAlign: "center",
-        flexGrow: 1,
-        flexBasis: 0,
-        flexShrink: 1,
-      }}
+      sx={{ textAlign: "center", flexGrow: 1, flexBasis: 0, flexShrink: 1 }}
     >
-      <Stack
-        sx={{
-          alignItems: "center",
-        }}
-      >
+      <Stack sx={{ alignItems: "center" }}>
         <Typography>{question?.question}</Typography>
         <Box sx={{ display: "flex", alignItems: "center" }}>
           {valueTagQuestionsURL ? (
@@ -255,26 +195,23 @@ const QuestionDisplay = ({ question, productData }) => {
           position: "relative",
         }}
       >
-        <ZoomableImage
-          src={
-            question.source_image_url ||
-            `https://static.${OFF_DOMAIN}/images/image-placeholder.png`
-          }
-          srcFull={getFullSizeImage(question.source_image_url)}
-          alt=""
-          style={{
-            height: isDesktop ? "100%" : "calc(100% - 24px)",
-            display: "inline-block",
-          }}
-          imageProps={{
-            style: {
-              maxHeight: "100%",
-              maxWidth: "100%",
-            },
-          }}
-        />
+        {question.source_image_url ? (
+          <ZoomableImage
+            src={question.source_image_url}
+            srcFull={getFullSizeImage(question.source_image_url)}
+            alt=""
+            style={{
+              height: isDesktop ? "100%" : "calc(100% - 24px)",
+              display: "inline-block",
+            }}
+            imageProps={{ style: { maxHeight: "100%", maxWidth: "100%" } }}
+          />
+        ) : (
+          <Typography sx={{ marginTop: 20 }}>Image not found</Typography>
+        )}
         {isDesktop ? (
           <CroppedLogo
+            key={question.insight_id}
             insightId={question.insight_id}
             style={{
               position: "absolute",
@@ -285,13 +222,8 @@ const QuestionDisplay = ({ question, productData }) => {
             }}
           />
         ) : (
-          <Typography
-            sx={{
-              position: "absolute",
-              bottom: 0,
-            }}
-          >
-            {productData?.productName}
+          <Typography sx={{ position: "absolute", bottom: 0 }}>
+            {productData?.product_name}
           </Typography>
         )}
       </Box>
@@ -299,8 +231,8 @@ const QuestionDisplay = ({ question, productData }) => {
         <Button
           onClick={() =>
             answerQuestion({
-              value: WRONG_INSIGHT,
-              insight_id: question?.insight_id,
+              answer: WRONG_INSIGHT,
+              question,
             })
           }
           color="error"
@@ -314,8 +246,8 @@ const QuestionDisplay = ({ question, productData }) => {
         <Button
           onClick={() =>
             answerQuestion({
-              value: CORRECT_INSIGHT,
-              insight_id: question?.insight_id,
+              answer: CORRECT_INSIGHT,
+              question,
             })
           }
           startIcon={<DoneIcon />}
@@ -330,8 +262,8 @@ const QuestionDisplay = ({ question, productData }) => {
       <Button
         onClick={() =>
           answerQuestion({
-            value: SKIPPED_INSIGHT,
-            insight_id: question?.insight_id,
+            answer: SKIPPED_INSIGHT,
+            question,
           })
         }
         color="secondary"
@@ -344,5 +276,4 @@ const QuestionDisplay = ({ question, productData }) => {
       </Button>
     </Stack>
   );
-};
-export default QuestionDisplay;
+}
