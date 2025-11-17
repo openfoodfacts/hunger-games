@@ -19,7 +19,7 @@ import off from "../../off";
 import { useTranslation } from "react-i18next";
 import useData from "./useData";
 import ImageAnnotation from "./ImageAnnotation";
-import { useSearchParams } from "react-router-dom";
+import { useSearchParams } from "react-router";
 import { localSettings } from "../../localeStorageManager";
 import countryNames from "../../assets/countries.json";
 import { getCountryId } from "../../utils/getCountryId";

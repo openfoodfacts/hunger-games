@@ -1,7 +1,7 @@
 import * as React from "react";
 import useLocalStorageState from "../../utils/useLocalStorageState";
 import CountryContext, { CountryCallback } from "./CountryContext";
-import { useSearchParams } from "react-router-dom";
+import { useSearchParams } from "react-router";
 import countries from "../../assets/countries.json";
 
 const ValidCountryCodes = new Set(countries.map((c) => c.countryCode));

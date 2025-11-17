@@ -14,7 +14,7 @@ import Slider from "@mui/material/Slider";
 import Typography from "@mui/material/Typography";
 import FormControlLabel from "@mui/material/FormControlLabel";
 
-import { useParams } from "react-router-dom";
+import { useParams } from "react-router";
 import { Provider, useDispatch, useSelector } from "react-redux";
 
 import store, {

@@ -36,7 +36,7 @@ import {
 } from "../../components/QuestionFilter/const";
 import { capitaliseName } from "../../utils";
 import { filterStateSelector, updateFilter } from "./store";
-import { useSearchParams } from "react-router-dom";
+import { useSearchParams } from "react-router";
 
 const getChipsParams = (filterState, setSearchParams, t) =>
   [

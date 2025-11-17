@@ -8,7 +8,7 @@ import { useTheme } from "@mui/material/styles";
 
 import { LOGOS, DASHBOARD } from "./dashboardDefinition";
 import DashboardCard from "./DashboardCard";
-import { Link, useParams } from "react-router-dom";
+import { Link, useParams } from "react-router";
 
 interface TabPanelProps {
   children?: React.ReactNode;
