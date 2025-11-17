@@ -35,17 +35,12 @@
     -->
     <script>
       if ("serviceWorker" in navigator) {
-        navigator.serviceWorker.getRegistrations().then((registrations) => {
-          for (const registration of registrations) {
-            registration.unregister();
-          }
+        window.addEventListener("load", () => {
+          navigator.serviceWorker
+            .register("/serviceWorker.js")
+            .then((reg) => console.log("Success: ", reg.scope))
+            .catch((err) => console.log("Failure: ", err));
         });
-        // window.addEventListener("load", () => {
-        //   navigator.serviceWorker
-        //     .register("/serviceWorker.js")
-        //     .then((reg) => console.log("Success: ", reg.scope))
-        //     .catch((err) => console.log("Failure: ", err));
-        // });
       }
     </script>
     <script src="/src/index.tsx" type="module"></script>

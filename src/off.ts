@@ -12,7 +12,6 @@ import axios from "axios";
 
 const BARCODE_REGEX = /(...)(...)(...)(.*)$/;
 
-
 interface Product {
   product_name?: string;
   brands?: string[];
@@ -102,14 +101,16 @@ class OffService {
 
   getProductUrl(barcode: string) {
     const lang = getLang();
-    return `https://world${lang === "en" ? "" : "-" + lang
-      }.${OFF_DOMAIN}/product/${barcode}`;
+    return `https://world${
+      lang === "en" ? "" : "-" + lang
+    }.${OFF_DOMAIN}/product/${barcode}`;
   }
 
   getProductEditUrl(barcode: string) {
     const lang = getLang();
-    return `https://world${lang === "en" ? "" : "-" + lang
-      }.${OFF_DOMAIN}/cgi/product.pl?type=edit&code=${barcode}`;
+    return `https://world${
+      lang === "en" ? "" : "-" + lang
+    }.${OFF_DOMAIN}/cgi/product.pl?type=edit&code=${barcode}`;
   }
 
   getLogoCropsByBarcodeUrl(barcode: string) {
@@ -163,17 +164,21 @@ class OffService {
       categoryTagNumber += 1;
     }
 
-    return `${OFF_SEARCH}?json=true&${page ? `page=${page}&` : ""
-      }fields=code,states,lang,image_nutrition_url,product_name,nutriments,images,creator,countries&action=process&sort_by=last_modified_t&tagtype_0=states&tag_contains_0=contains&tag_0=photos-validated&tagtype_1=states&tag_contains_1=contains&tag_1=nutrition-facts-to-be-completed${country
+    return `${OFF_SEARCH}?json=true&${
+      page ? `page=${page}&` : ""
+    }fields=code,states,lang,image_nutrition_url,product_name,nutriments,images,creator,countries&action=process&sort_by=last_modified_t&tagtype_0=states&tag_contains_0=contains&tag_0=photos-validated&tagtype_1=states&tag_contains_1=contains&tag_1=nutrition-facts-to-be-completed${
+      country
         ? `&tagtype_2=countries&tag_contains_2=contains&tag_2=${country}`
         : ""
-      }${creator
+    }${
+      creator
         ? `&tagtype_${creatorTagNumber}=creator&tag_contains_${creatorTagNumber}=contains&tag_${creatorTagNumber}=${creator}`
         : ""
-      }
-      ${category
-        ? `&tagtype_${categoryTagNumber}=categories&tag_contains_${categoryTagNumber}=contains&tag_${categoryTagNumber}=${category}`
-        : ""
+    }
+      ${
+        category
+          ? `&tagtype_${categoryTagNumber}=categories&tag_contains_${categoryTagNumber}=contains&tag_${categoryTagNumber}=${category}`
+          : ""
       }`;
   }
 

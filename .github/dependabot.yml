@@ -24,7 +24,7 @@ updates:
           - "@types/react-dom"
           - "react"
           - "react-dom"
-          - "react-router-dom" # TODO: remove this when removing react-router-dom
+          - "react-router"
           - "typescript"
           - "axios"
           - "globals"
