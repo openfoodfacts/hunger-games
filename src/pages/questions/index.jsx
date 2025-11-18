@@ -9,7 +9,6 @@ import Divider from "@mui/material/Divider";
 import Stack from "@mui/material/Stack";
 import Grid from "@mui/material/Grid";
 
-
 function QuestionsConsumer() {
   return (
     <Grid container spacing={2} p={2}>

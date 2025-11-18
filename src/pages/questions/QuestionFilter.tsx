@@ -21,12 +21,12 @@ import { SetURLSearchParams, useSearchParams } from "react-router";
 
 import { useFavorite } from "../../components/QuestionFilter/useFavorite";
 import { insightTypesNames } from "../../components/QuestionFilter/const";
-import { capitaliseName } from "../../utils";
 import FilterDialog from "./FilterDialog";
 import {
   FilterParams,
   getFilterParams,
 } from "../../hooks/useFilterState/getFilterParams";
+import { getCountryName } from "../../utils/getCountryName";
 
 const getChipsParams = (
   filterState: FilterParams,
@@ -51,7 +51,7 @@ const getChipsParams = (
     {
       key: "countryFilter",
       display: !!filterState.country,
-      label: `${t("questions.filters.short_label.country")}: ${capitaliseName(
+      label: `${t("questions.filters.short_label.country")}: ${getCountryName(
         filterState.country,
       )}`,
       onDelete: () => {

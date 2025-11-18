@@ -9,9 +9,9 @@ const ANSWERS_MEMORY_SIZE = 25;
 
 export interface AnswerQuestionParams {
   answer:
-  | typeof SKIPPED_INSIGHT
-  | typeof CORRECT_INSIGHT
-  | typeof WRONG_INSIGHT;
+    | typeof SKIPPED_INSIGHT
+    | typeof CORRECT_INSIGHT
+    | typeof WRONG_INSIGHT;
   question: QuestionInterface;
 }
 
@@ -148,7 +148,6 @@ export default function useQuestions(
       return await fetchQuestions();
     },
     onSuccess: (data, variables) => {
-
       queryClient.setQueryData<{
         questions: QuestionInterface[];
         count: number;
