@@ -208,7 +208,7 @@
     "result_count": "{{showing}} पर {{available}} उपलब्ध दिखाता है",
     "flag": "कुछ गड़बड़ है क्या? छवि की रिपोर्ट करें/ध्वजांकित करें!",
     "unflag": "छवि को अनफ़्लैग करें",
-    "crop_image_title": "crop of the logo",
+    "crop_image_title": "लोगो की क्रॉप",
     "no_more_questions": "इस लोगो के बारे में कोई और प्रश्न नहीं. आप निम्नलिखित गेम के साथ अधिक लोगो ढूंढने का प्रयास कर सकते हैं।",
     "loading_messages": {
       "pending_reference_logos": "हम खोज आरंभ करने के लिए कुछ लोगो उदाहरण लोड कर रहे हैं",
@@ -269,7 +269,7 @@
         "text2": "Simply answer with a <strong>Yes/No</strong>! Don't know the answer? That's alright, just skip it.",
         "text3": "You can also use your keyboard shortcuts: y,n and k.",
         "text4": "You can <strong>filter</strong> the products based on country, brands, popularity and much more!",
-        "text5": "If you don't want to do this every single time, you can also <strong>save the filters</strong> by clicking on the star. Next time you come back, find the saved filters on the home page itself"
+        "text5": "यदि आप हर बार यह नहीं करना चाहते हैं, तो आप स्टार पर क्लिक करके <strong>फ़िल्टर को सेव कर</strong> सकते हैं। अगली बार जब आप वापस आएं, तो होम पेज पर ही सेव किए गए फ़िल्टर ढूंढ़ें"
       },
       "page3": {
         "title": "Logos Game",
@@ -291,13 +291,13 @@
       "page6": {
         "title": "Tour",
         "text1": "Got stuck somewhere? Want to take the tour again?",
-        "text2": "Just click on the question mark and start the journey again!"
+        "text2": "बस प्रश्न चिह्न पर क्लिक करें और यात्रा फिर से शुरू करें!"
       }
     },
     "logos": {
       "page1": {
-        "title": "Selection",
-        "text1": "Select the crops of a same logo by clicking on them",
+        "title": "चयन",
+        "text1": "एक ही लोगो के क्रॉप्स पर क्लिक करके उन्हें चुनें",
         "text2": "Selected logos go to the top of the page, you can unselect them by clicking again on them"
       },
       "page2": {
