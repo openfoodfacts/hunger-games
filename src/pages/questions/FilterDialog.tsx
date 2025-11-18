@@ -34,12 +34,15 @@ interface CountryObject {
   countryCode: string;
 }
 
-function getCountryObject(countryId: string): CountryObject | null {
-  if (!countryId) {
+function getCountryObject(countryCode: string): CountryObject | null {
+  if (!countryCode) {
     return null;
   }
-  return countries.find((country) => country.id === countryId) ?? null;
+  return (
+    countries.find((country) => country.countryCode === countryCode) ?? null
+  );
 }
+
 interface FilterDialogProps {
   open: boolean;
   onClose: () => void;
@@ -88,7 +91,7 @@ export default function FilterDialog(props: FilterDialogProps) {
     setGlobalValue({
       insightType: innerInsightType,
       valueTag: innerValueTag,
-      country: innerCountryObject?.id,
+      country: innerCountryObject?.countryCode,
       brand: innerBrandFilter,
       campaign: innerCampaign,
       sorted: innerSortByPopularity,

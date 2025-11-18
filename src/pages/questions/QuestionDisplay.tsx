@@ -85,7 +85,6 @@ export default function QuestionDisplay() {
   const { question, status, answerQuestion, questions, questionsCount } =
     useQuestions(filterState);
 
-  console.log({ questions, questionsCount });
   const { data: productData } = useProductData(question?.barcode);
 
   const valueTagQuestionsURL = getValueTagQuestionsURL(filterState, question);
