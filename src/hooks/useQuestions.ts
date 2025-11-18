@@ -9,9 +9,9 @@ const ANSWERS_MEMORY_SIZE = 25;
 
 export interface AnswerQuestionParams {
   answer:
-    | typeof SKIPPED_INSIGHT
-    | typeof CORRECT_INSIGHT
-    | typeof WRONG_INSIGHT;
+  | typeof SKIPPED_INSIGHT
+  | typeof CORRECT_INSIGHT
+  | typeof WRONG_INSIGHT;
   question: QuestionInterface;
 }
 
@@ -29,7 +29,7 @@ interface UseQuestionsOptions {
    */
   forcedParams?: Partial<FilterParams>;
   /**
-   * The number opf question per page.
+   * The number of questions per page.
    * @default 20
    */
   pageSize?: number;
@@ -57,11 +57,6 @@ export default function useQuestions(
 
   const sortByPopularity = params.sorted !== "false";
   const fetchQuestions = async () => {
-    console.log(`
-      
-      fetch question
-      
-      `);
     const { data } = await robotoff.questions(
       {
         insightType: params.insightType,
@@ -105,7 +100,7 @@ export default function useQuestions(
         }
 
         if (data.count > data.questions.length && data.questions.length <= 5) {
-          // Still have other questions on server but lest than 5 on client.
+          // Still have other questions on server but less than 5 on client.
           if (!mutation.isPending) {
             // Avoid multiple requests
             mutation.mutate(keys);
@@ -153,13 +148,11 @@ export default function useQuestions(
       return await fetchQuestions();
     },
     onSuccess: (data, variables) => {
-      console.log("onSuccess", data);
 
       queryClient.setQueryData<{
         questions: QuestionInterface[];
         count: number;
       }>(variables, (currentQuestions) => {
-        console.log("set values", currentQuestions);
         if (!currentQuestions) {
           return {
             questions: data.questions,
@@ -170,10 +163,6 @@ export default function useQuestions(
         const seenIds = new Set([
           ...currentQuestions.questions.map((q) => q.insight_id),
         ]);
-        console.log({
-          prev: currentQuestions.questions.map((q) => q.insight_id),
-          next: data.questions.map((q) => q.insight_id),
-        });
         return {
           questions: [
             ...currentQuestions.questions,

@@ -9,7 +9,6 @@ import Divider from "@mui/material/Divider";
 import Stack from "@mui/material/Stack";
 import Grid from "@mui/material/Grid";
 
-import Loader from "../loader";
 
 function QuestionsConsumer() {
   return (
