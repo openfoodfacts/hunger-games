@@ -19,13 +19,13 @@ import { DialogActions, DialogContent } from "@mui/material";
 import { useTranslation } from "react-i18next";
 
 import LabelFilter from "../../components/QuestionFilter/LabelFilter";
-import brands from "../../assets/brands.json";
 import countries from "../../assets/countries.json";
 import {
   insightTypesNames,
   campagnes,
 } from "../../components/QuestionFilter/const";
 import { useFilterState } from "../../hooks/useFilterState";
+import { BrandFilter } from "../../components/QuestionFilter/BrandFilter";
 
 interface CountryObject {
   id: string;
@@ -152,6 +152,8 @@ export default function FilterDialog(props: FilterDialogProps) {
               placeholder={t("questions.filters.placeholders.value")}
               size="small"
             />
+          ) : innerInsightType === "brand" ? (
+            <BrandFilter value={innerValueTag} onChange={setInnerValueTag} />
           ) : (
             <TextField
               value={innerValueTag}
@@ -176,21 +178,9 @@ export default function FilterDialog(props: FilterDialogProps) {
             )}
           />
 
-          <Autocomplete
-            freeSolo
+          <BrandFilter
             value={innerBrandFilter}
-            onChange={(event, newValue: string | null) =>
-              setInnerBrandFilter(newValue ?? "")
-            }
-            options={brands}
-            renderInput={(params) => (
-              <TextField
-                {...params}
-                label={t("questions.filters.long_label.brand")}
-                placeholder={t("questions.filters.placeholders.brand")}
-                size="small"
-              />
-            )}
+            onChange={setInnerBrandFilter}
           />
 
           <TextField
