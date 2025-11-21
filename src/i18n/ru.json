@@ -13,7 +13,7 @@
         },
         "green_score": {
           "title": "Eco-score",
-          "description": "Annotate the questions with the highest value"
+          "description": "Аннотируйте вопросы с наивысшим значением"
         }
       }
     },
@@ -363,8 +363,8 @@
     "correct": "Правильно ({{label}})"
   },
   "green-score": {
-    "description": "Here is a summary of questions that could improve Eco-Score computation",
-    "countryLabel": "Country"
+    "description": "Вот сводка вопросов, которые могут улучшить вычисления Eco-Score",
+    "countryLabel": "Страна"
   },
   "ingredients": {
     "description": "Эта игра позволяет вам проверить предварительный выбор изображений списков ингредиентов на различных языках для продукта и подтвердить извлеченные ингредиенты.",
