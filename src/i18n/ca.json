@@ -12,8 +12,8 @@
           "description": "Trobeu totes les imatges que encaixin amb el logo donat"
         },
         "green_score": {
-          "title": "Eco-Score",
-          "description": "Anoteu les preguntes amb els valors més alts"
+          "title": "Eco-score",
+          "description": "Annotate the questions with the highest value"
         }
       }
     },
@@ -67,6 +67,7 @@
     "skip": "Omet",
     "yes": "Si",
     "no_questions_remaining": "No hi ha mes preguntes",
+    "an_error_occurred": "S'ha produït un error. Torna a carregar, prova-ho més tard o contacta amb l'equip.",
     "countries": "Països",
     "view": "Vista",
     "edit": "Edita",
@@ -362,8 +363,8 @@
     "correct": "({{label}}) Correcte"
   },
   "green-score": {
-    "description": "Aquí hi ha un qüestionari que pot millora la puntuació de l'Eco-Cura",
-    "countryLabel": "País"
+    "description": "Here is a summary of questions that could improve Eco-Score computation",
+    "countryLabel": "Country"
   },
   "ingredients": {
     "description": "Aquest joc permet validar la preselecció d'imatges de llistes d'ingredients en diversos idiomes per a un producte, i validar els ingredients extrets.",

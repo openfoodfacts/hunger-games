@@ -67,6 +67,7 @@
     "skip": "Skip",
     "yes": "Jah",
     "no_questions_remaining": "Rohkem küsimusi pole",
+    "an_error_occurred": "Tekkis viga. Palun laadige uuesti, proovige hiljem või võtke ühendust meeskonnaga.",
     "countries": "Riigid",
     "view": "Vaata",
     "edit": "Muuda",
@@ -320,7 +321,7 @@
     "table_partialy_filled": "Table with already some data",
     "display_off_values": "Display values from OpenFoodFacts",
     "nutrients": "Nutrients",
-    "serving_size": "Serving size",
+    "serving_size": "Portsjoni suurus",
     "add_nutrient": "-- add nutrient --",
     "validate_100g": "Validate (100g)",
     "validate_serving": "Validate (serving)",
@@ -363,7 +364,7 @@
   },
   "green-score": {
     "description": "Here is a summary of questions that could improve Eco-Score computation",
-    "countryLabel": "Riik"
+    "countryLabel": "Country"
   },
   "ingredients": {
     "description": "This game allows you to validate the pre-selection of images of ingredients lists in various languages for a product, and validate the extracted ingredients.",

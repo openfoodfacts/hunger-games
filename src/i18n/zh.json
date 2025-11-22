@@ -4,97 +4,100 @@
       "title": "你想玩什么游戏？",
       "cards": {
         "questions": {
-          "title": "常見問答",
-          "description": "請讓我們知道這圖片是否回答了那些問題。"
+          "title": "问题",
+          "description": "告诉我们给出的图像是否回答了问题"
         },
         "logos": {
-          "title": "標誌",
-          "description": "請找出與指定表章匹配的所有表章"
+          "title": "标志",
+          "description": "查找符合给定标志的所有标志"
         },
-        "eco_score": {
-          "title": "環保評分",
-          "description": "註釋最具價值的問題"
+        "green_score": {
+          "title": "Eco-score",
+          "description": "Annotate the questions with the highest value"
         }
       }
     },
     "account_band": {
-      "title": "想要讓您的貢獻有所價值嗎？在Open Food Facts上創建帳戶或登入吧！",
-      "log_in": "用戶名",
-      "sign_up": "註冊",
-      "contribution_details": "了解為何您的貢獻很重要"
+      "title": "想让你的贡献有价值吗？在食品产品数据库上创建或登陆一个账户！",
+      "log_in": "用户名",
+      "sign_up": "注册",
+      "contribution_details": "了解为什么您的贡献很重要"
     },
-    "saved_filters": "已儲存的篩選器",
+    "saved_filters": "已保存的筛选器",
     "contribution_modal": {
-      "title": "您的貢獻很重要",
-      "information": "「飢餓遊戲」是我們運用OCR（光學字符識別）和人工智能的一項成果。當您使用Open Food Facts的「飢餓遊戲」時，您可以幫助我們改善整個資料庫，從而替社區做出更好的飲食選擇。我們將會收集您的註解，並將使用它們，以使Open Food Facts變得更加準確和高效。",
-      "thank_you": "感謝您協助我們改進Open Food Facts，讓更多人能夠更輕鬆地使用它。"
+      "title": "你的贡献很重要",
+      "information": "“饥饿游戏”致力于充分利用我们的光学字符识别（OCR）和人工智能的成果。当您使用 Open Food Facts 的“饥饿游戏”时，您将改进我们的整个数据库，从而帮助社区做出更好的食物选择。我们会收集您的注释，并利用它们来提高 Open Food Facts 的准确性和效率。",
+      "thank_you": "感谢您帮助我们改进 Open Food Facts，以便更多人可以轻松使用它。"
     },
     "statistics": {
       "title": "{{userName}} 的統計資料：",
       "editorCount": {
-        "title": "編輯",
-        "description": "已完成版本數"
+        "title": "编辑",
+        "description": "完成的版本数量"
       },
       "contributorCount": {
-        "title": "貢獻者",
+        "title": "贡献者",
         "description": "新增新商品"
       },
       "photographerCount": {
-        "title": "攝影師",
-        "description": "為產品拍攝照片"
+        "title": "摄影师",
+        "description": "为产品拍照"
       }
     }
   },
   "flagged_images": {
-    "title": "由用戶標記的圖片",
-    "loading": "載入中"
+    "title": "用户标记的图片",
+    "loading": "正在加载"
   },
   "questions": {
-    "category": "分類",
-    "categories": "類別",
-    "label": "標籤",
+    "category": "类别",
+    "categories": "类别",
+    "label": "标签",
     "labels": "标签",
     "brand": "品牌",
     "brands": "品牌",
-    "packaging": "包裝",
-    "quantity": "數量",
-    "insightTypeLabel": "僅顯示",
+    "packaging": "包装",
+    "quantity": "数量",
+    "insightTypeLabel": "仅显示",
     "ingredients": "成分",
-    "product_weight": "產品重量",
-    "popularity_sort": "依熱門程度排序",
-    "see_examples": "查看此 的例子",
+    "product_weight": "产品重量",
+    "popularity_sort": "按受欢迎程度排序",
+    "see_examples": "参见此示例 ",
     "no": "否",
-    "skip": "略過",
+    "skip": "跳过",
     "yes": "是",
-    "no_questions_remaining": "沒有待處理的問題",
-    "countries": "國家地區",
-    "view": "檢視",
-    "edit": "編輯",
-    "hide_images": "隱藏圖片（載入較快）",
-    "display_images": "顯示圖片",
-    "annotations": "3. Annotations",
-    "last_annotations": "上一次注解",
-    "remaining_annotations": "剩餘問題",
-    "annotated_annotations": "已注解",
+    "no_questions_remaining": "没有剩余问题",
+    "an_error_occurred": "发生错误。请重新加载页面，稍后再试，或联系团队。",
+    "countries": "国家/地区",
+    "view": "查看",
+    "edit": "编辑",
+    "remaining": "剩余： {{count}}",
+    "remaining_other": "剩余：>100",
+    "hide_images": "隐藏图像 （页面更快加载）",
+    "display_images": "显示图像",
+    "annotations": "注释",
+    "last_annotations": "最新注释",
+    "remaining_annotations": "剩余问题",
+    "annotated_annotations": "已注释",
     "filters": {
-      "active_filter_number": "+{{count}} 篩選器",
-      "active_filter_number_one": "+{{count}} 篩選器",
-      "active_filter_number_zero": "沒有篩選器",
+      "active_filter_number": "+{{count}} 个 过滤器",
+      "active_filter_number_one": "+{{count}} 个 过滤器",
+      "active_filter_number_zero": "无过滤器",
       "short_label": {
         "value": "值",
         "country": "國家",
         "brand": "品牌",
-        "popularity": "人氣",
+        "popularity": "受欢迎程度",
         "campaign": "展銷"
       },
       "long_label": {
-        "type": "問題類型",
-        "value": "建議值",
-        "country": "產地",
-        "brand": "產品品牌",
-        "popularity": "依熱門程度排序",
+        "type": "问题类型",
+        "value": "建议值",
+        "country": "产地",
+        "brand": "产品品牌",
+        "popularity": "按受欢迎程度排序",
         "edit": "",
-        "campaign": "展銷活動"
+        "campaign": "活动"
       },
       "placeholders": {
         "value": "价值(芬达，有机的…)",
@@ -102,9 +105,9 @@
         "campaign": "标注活动"
       },
       "actions": {
-        "edit": "編輯篩選器",
+        "edit": "编辑筛选器",
         "cancel": "取消",
-        "apply": "套用"
+        "apply": "应用"
       }
     },
     "other_questions": "其他问题",
@@ -112,94 +115,96 @@
     "flag": "有什么问题？报告或标记图像！",
     "unflag": "取消图像标记",
     "reset_filters": "重置过滤器",
-    "log_in": "用戶名",
-    "sign_up": "註冊",
+    "log_in": "用户名",
+    "sign_up": "注册",
     "login_title": "让你的注释有价值",
-    "login_description": "目前您没有登录 Open Food Facts。要将您的回答直接应用于产品并关联到您的帐户，请登录您的 Open Food Facts 帐户，或创建一个新账户",
+    "login_description": "目前您没有登录 Open Food Facts。要将您的提交内容直接应用于产品并关联到您的帐户，请登录您的 Open Food Facts 帐户，或创建一个新账户",
     "please_wait_while_we_fetch_the_question": "我们正在处理问题中，请稍等！"
   },
   "menu": {
-    "title": "飢餓遊戲",
-    "games": "遊戲",
-    "questions": "常見問答",
-    "logos": "標誌",
+    "title": "饥饿游戏",
+    "games": "游戏",
+    "questions": "问题",
+    "logos": "标志",
     "logos-annotation": "徽标（Logo）注释",
     "logos-search": "查找徽标",
     "logos-product-search": "每个产品的注释",
     "logos-deep-search": "无限注解",
     "manage": "管理",
-    "insights": "深層研析",
-    "nutritions": "營養成分",
-    "settings": "設定",
-    "eco-score": "環保評分",
+    "insights": "洞察",
+    "nutritions": "营养",
+    "ingredient-spellcheck": "成分拼写检查",
+    "ingredient-detection": "成分检测",
+    "settings": "设置",
+    "green-score": "Green-Score",
     "dashboard": "标志选项列表",
     "tour": "导览演示",
     "logged_in_user": "以 {{用户名}} 身份登录",
     "log_in": "点击登录"
   },
   "insights": {
-    "insights": "深層研析",
-    "barcode": "條碼",
-    "barcode_placeholder": "條碼",
-    "value_tag": "值標籤",
+    "insights": "洞察",
+    "barcode": "条形码",
+    "barcode_placeholder": "条形码",
+    "value_tag": "值标签",
     "value_placeholder": "例如： en:mueslis, bjorg,...",
-    "type": "類型",
-    "annotated": "已注解",
+    "type": "类型",
+    "annotated": "已注释",
     "annotation": "注解",
     "not_annotated": "未注解",
     "all": "全部",
-    "label": "標籤",
-    "product_weight": "產品重量",
-    "category": "分類",
-    "expiration_date": "過期日",
-    "packager_code": "包裝商代碼",
-    "skipped": "跳過 (-1)",
-    "rejected": "退回 (0)",
-    "accepted": "接受 (1)",
-    "search": "搜尋",
+    "label": "标签",
+    "product_weight": "产品重量",
+    "category": "类别",
+    "expiration_date": "有效期",
+    "packager_code": "包装代码",
+    "skipped": "已跳过 (-1)",
+    "rejected": "已拒绝 (0)",
+    "accepted": "已接受 (1)",
+    "search": "搜索",
     "count": "次數",
-    "id": "識別碼",
+    "id": "编号",
     "value": "值",
-    "created_at": "創建於",
-    "completed_at": "完成於",
-    "automatic": "自動",
+    "created_at": "创建于",
+    "completed_at": "完成于",
+    "automatic": "自动",
     "human_required": "人类需求",
     "edit_product": "打开产品编辑",
     "view_product": "打开产品页面",
-    "view_crops_for_this_product": "Annotate product logos"
+    "view_crops_for_this_product": "批注产品标志"
   },
   "logos": {
     "annotation": "注解： ",
-    "annotations": "標誌注解",
+    "annotations": "徽标标注",
     "task_description": "选择所有完全相同的标志，并给他们一个名称，比如\"欧盟有机\"，并给出一个类型，比如\"标签\"",
-    "select_all": "選取全部",
-    "unselect_all": "取消選取全部",
-    "distance": "距離：",
+    "select_all": "全选",
+    "unselect_all": "取消全选",
+    "distance": "距离:",
     "value": "值",
-    "submit": "送出",
-    "type": "類型",
-    "label": "標籤",
+    "submit": "提交",
+    "type": "类型",
+    "label": "标签",
     "brand": "品牌",
-    "packager_code": "包裝商代碼",
+    "packager_code": "包装代码",
     "packaging": "包装",
-    "qr_code": "QR 代碼",
-    "category": "分類",
-    "nutrition_label": "營養標示貼標",
-    "no_logo": "不是标志",
+    "qr_code": "二维码",
+    "category": "类别",
+    "nutrition_label": "营养标签",
+    "no_logo": "不是徽标",
     "store": "商店",
-    "detail": "標誌詳細說明",
-    "id": "標誌 ID：",
-    "barcode": "條碼：",
-    "full_image": "完整圖片",
+    "detail": "徽标详情",
+    "id": "徽标编号：",
+    "barcode": "条形码:",
+    "full_image": "完整图像",
     "update": "更新",
-    "no_found": "未發現標誌",
-    "search": "搜尋",
-    "number_of_results": "結果總數：",
-    "loading": "載入中…",
-    "refresh": "重新整理",
-    "search_specific": "搜索指定标志",
-    "load_more": "載入更多",
-    "no_results": "未發現標誌",
+    "no_found": "未找到徽标",
+    "search": "搜索",
+    "number_of_results": "结果数量：",
+    "loading": "正在加载…",
+    "refresh": "刷新",
+    "search_specific": "搜索特定徽标",
+    "load_more": "显示更多",
+    "no_results": "未找到徽标",
     "result_count": "在 {{available}} 可用时显示 {{showing}}",
     "flag": "有什么问题？报告或标记图像！",
     "unflag": "取消图像标记",
@@ -212,16 +217,16 @@
     "deep_search": {
       "title": "查找徽标",
       "description": "选择一个你想要找的图标，然后将它们全部捕获。对于你注释的每个图标，我们会获取他相邻的图标这样你就不用停下注释了。（按shift键来选中一系列图标）",
-      "ref_logos": "Reference logos (logo already annotated with this value)",
-      "remaining": "Remaining to annotate",
+      "ref_logos": "参考徽标（徽标已用该值注释）",
+      "remaining": "尚待注释",
       "select_all": "全选",
       "unselect_all": "取消全选"
     }
   },
   "settings": {
-    "settings": "設定",
-    "language": "語言",
-    "save": "儲存",
+    "settings": "设置",
+    "language": "语言",
+    "save": "保存",
     "reportIssue": "发现错误？请告诉我们",
     "dev_mode_title": "要获得更多选项，请激活开发模式",
     "dev_mode_label": "开发模式",
@@ -229,7 +234,7 @@
     "join_community": "加入社群",
     "text1": "Open Food Facts 是一个由数万名志愿者建立的协作项目，由一家拥有 8 名员工的非营利组织管理。我们需要您的捐款来资助 Open Food Facts 2024 预算并继续开发该项目。",
     "thank_you": "谢谢",
-    "donate": "贊助/捐款",
+    "donate": "捐赠",
     "join_the_community": {
       "discover_our": "探索我们的 ",
       "code_of_conduct": "行为准则 ",
@@ -242,10 +247,10 @@
     "Who_we_are": "我們是誰",
     "Vision_Mission_Values_and_Programs": "希望、任务、价值和项目",
     "FAQS": "常见问题",
-    "open_Food_Facts_blog": "Open Food Facts博客",
-    "Press": "傳媒",
-    "Open_Food_Facts_wiki": "Open Food Facts维基百科(英文)",
-    "Translators": "翻譯員",
+    "open_Food_Facts_blog": "Open Food Facts 博客",
+    "Press": "媒体报道",
+    "Open_Food_Facts_wiki": "Open Food Facts 维基百科（英文）",
+    "Translators": "翻译人员",
     "Partners": "合作伙伴",
     "Open_Beauty_Facts": "Open Beauty Facts - 化妝品",
     "text2": "來自全世界共同協作、自由且開放的食品資料庫。"
@@ -254,7 +259,7 @@
     "welcome": {
       "page1": {
         "title": "歡迎來到《飢餓遊戲》",
-        "text1": "Hunger Games is a collection of mini-games that help contribute to Open Food Facts in many ways. You can play our really exciting games from anywhere. Here is a guided tour of the entire website which will get you started.",
+        "text1": "Hunger Games（饥饿游戏）是一系列迷你游戏的集合，它们以多种方式为“Open Food Facts”项目做出贡献。您可以随时随地畅玩我们精彩刺激的游戏。以下是网站全貌的导览，助您快速入门。",
         "text2": "这些操作简单有趣，动动手指就能完成。别忘了登录 Open Food Facts 网站领取您的贡献荣誉。如果出现操作失误，请登录网站改正相关信息。",
         "text3": "如果對遊戲有任何疑問，請點擊頁面右上角的問號圖標，您可以通過 Slack 上的 #hunger-games 頻道聯繫我們。"
       },
@@ -262,7 +267,7 @@
         "title": "问答游戏",
         "text1": "这款食品属于这个品牌吗？",
         "text2": "只需回答 <strong>是/否</strong>即可！不知道答案？没关系，跳过就行。",
-        "text3": "你也可以使用键盘快捷键：y，n和k。",
+        "text3": "您也可以使用键盘快捷键：y、n 和 k。",
         "text4": "您可以根据国家、品牌、受欢迎程度等信息 <strong>过滤</strong> 产品！",
         "text5": "如果您不想每次都这样做，您也可以通过单击星号来 <strong>保存过滤器</strong> 。下次您回来时，可在主页上找到已保存的过滤器"
       },
@@ -279,19 +284,19 @@
         "text4": "生态得分记录了总体环境足迹，使消费者更容易比较产品并决定哪种产品对环境更有利。"
       },
       "page5": {
-        "title": "設定",
+        "title": "设置",
         "text1": "选择您的首选语言，并从我们的设置页面报告问题。",
         "text2": "如果您是开发人员，您还可以使用我们的开发模式浏览我们的数据库内容。"
       },
       "page6": {
         "title": "游览",
-        "text1": "有什么地方卡住了吗？想要再次观看导览？",
+        "text1": "遇到问题了吗？想要再次观看教程导览？",
         "text2": "只需点击问号即可重新开始旅程！"
       }
     },
     "logos": {
       "page1": {
-        "title": "選項",
+        "title": "选择",
         "text1": "点击具有相同徽标的裁剪图",
         "text2": "选定的徽标会转到页面顶部，您可以再次点击以取消选中"
       },
@@ -301,11 +306,11 @@
         "text2": "如果裁剪图仅包含部分徽标，则可以选中"
       },
       "page3": {
-        "title": "驗證",
+        "title": "验证",
         "text1": "指明徽标的类型 (标签、品牌、二维码...)",
         "text2": "如果是标签或品牌徽标，请指明是哪一个",
         "text3": "现在可以提交您的选择",
-        "text4": "謝謝您！:D"
+        "text4": "谢谢 :)"
       }
     },
     "previous": "上一步",
@@ -313,53 +318,30 @@
     "close": "關閉"
   },
   "nutrition": {
+    "table_partialy_filled": "已包含一些数据的表格",
+    "display_off_values": "",
+    "nutrients": "营养成分",
+    "serving_size": "份量",
+    "add_nutrient": "-- 添加营养素 --",
+    "validate_100g": "Validate (100g)",
+    "validate_serving": "Validate (serving)",
+    "skip": "跳过",
+    "invalid_image": "无效的图片",
+    "pictures": {
+      "picture_date": "图片已上传",
+      "selected_as_nutrients": "被选为营养成分的图像✅",
+      "not_selected_as_nutrients": "未被选为营养品 ❌"
+    },
     "instructions": {
-      "cropTheTable": "裁剪图像以简化标注",
-      "verifyNutrimentDetected": "指明检测的营养成分是否正确",
-      "selectMissingNutriments": "添加缺失的营养成分 (即使单词没有方框也可以点击)",
-      "selectValue": "選取欲查看營養值的成分："
-    },
-    "steps": {
-      "1": "裁切",
-      "2": "特殊值",
-      "3": "营养成分选择",
-      "4": "值选择"
-    },
-    "loading": "載入中...",
-    "unknown_brand": "未知品牌",
-    "value_missing": "您忘了输入数值",
-    "next": "下一步",
-    "prev": "上一步",
-    "skip": "跳过此产品",
-    "validate": "验证表",
-    "unselect_picture": "无营养成分信息",
-    "basis": "数据用于： ",
-    "servingSize": "份量",
-    "value": "值",
-    "unit": "單位",
-    "nutriments": {
-      "nutriment_energy-kj": "能量（kJ）",
-      "nutriment_energy-kcal": "卡路里 (kcal)",
-      "nutriment_fat": "脂肪",
-      "nutriment_saturated-fat": "飽和脂肪",
-      "nutriment_carbohydrates": "碳水化合物",
-      "nutriment_sugars": "糖",
-      "nutriment_proteins": "蛋白质含量",
-      "nutriment_fiber": "纤维",
-      "nutriment_salt": "鹽",
-      "nutriment_sodium": "鈉"
-    },
-    "history": {
-      "title": "会话历史",
-      "status": "狀態",
-      "product name": "产品名称",
-      "view": "查看页面",
-      "edit": "编辑页面",
-      "SKIP": "已忽略",
-      "VALIDATED": "已编辑",
-      "WRONG_IMAGE": "未选中的图片",
-      "close": "關閉",
-      "open": "打开历史记录"
+      "open_button": "打开说明",
+      "title": "如何使用界面",
+      "chose_between_empty_and_partially_filled": "You can chose between products for which OpenFoodFacts (OFF) has no data about the nutrients. Or product with partially filled nutrient table.",
+      "picture_date_is_display": "照片的日期显示在上方。方便您检查它是否是最近的照片。",
+      "indicate_not_provided_value": "空白输入将被忽略。如果表中不存在纤维，您可以输入“-”符号来指定该值不可用。",
+      "validate_one_column": "选择图片中显示的尺寸。如果您有100克的份量，请选择100克，因为这是标准尺寸。",
+      "skip_button": "如果您不知道如何处理某个图像，或者您不想处理，请点击“跳过”。其他用户将能够处理它。",
+      "invalid_image_button": "如果图片不是营养表，请按“无效图片”将其从图片列表中删除以进行验证",
+      "close": "關閉"
     }
   },
   "notfound": {
@@ -375,40 +357,40 @@
     "images_remaining": "{{remaining}} 仍待注释",
     "image_sizes": "图像大小",
     "zoom_on_logo": "放大标志",
-    "select_all": "選取全部",
-    "deselect_all": "取消選取全部",
+    "select_all": "全选",
+    "deselect_all": "取消全选",
     "incorrect": "错误",
     "correct": "正确 ({{label}})"
   },
-  "eco-score": {
-    "description": "以下是可以改进Eco-Score计算的问题总结",
-    "countryLabel": "地區"
+  "green-score": {
+    "description": "Here is a summary of questions that could improve Eco-Score computation",
+    "countryLabel": "Country"
   },
   "ingredients": {
-    "description": "This game allows you to validate the pre-selection of images of ingredients lists in various languages for a product, and validate the extracted ingredients.",
-    "current_text": "text from off",
+    "description": "这个游戏可以让你验证某个产品的各种语言配料表图像预选区域，并验证提取的配料表内容。",
+    "current_text": "",
     "confidence_score": "language confidence",
-    "revert": "Revert",
+    "revert": "复原",
     "parsing": "Get server understanding",
-    "send": "Validate & send",
+    "send": "验证并发送",
     "skip": "跳过此产品",
-    "getRobotoffPrediciton": "Get predictions from Robotoff"
+    "getRobotoffPrediciton": "从 Robotoff 服务获取预测"
   },
   "footer": {
     "appStore": {
-      "title": "应用商城",
-      "subtitle": "Download on the"
+      "title": "应用商店",
+      "subtitle": "下载在"
     },
     "playStore": {
-      "title": "Play商店",
-      "subtitle": "Get it on"
+      "title": "Google Play 应用商店",
+      "subtitle": "下载"
     },
     "microsoft": {
       "title": "微软",
       "subtitle": "下载地址："
     },
     "androidAPK": {
-      "title": "Android APK",
+      "title": "Android APK文件",
       "subtitle": "下载"
     }
   }

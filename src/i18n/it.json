@@ -13,7 +13,7 @@
         },
         "green_score": {
           "title": "Eco-score",
-          "description": "Annota la domanda con il valore più alto"
+          "description": "Annotate the questions with the highest value"
         }
       }
     },
@@ -67,6 +67,7 @@
     "skip": "Salta",
     "yes": "Sì",
     "no_questions_remaining": "Nessuna domanda rimanente",
+    "an_error_occurred": "Si è verificato un errore. Ricarica la pagina, riprova più tardi o contatta il team.",
     "countries": "Paesi",
     "view": "Mostra",
     "edit": "Modifica",
@@ -362,8 +363,8 @@
     "correct": "Corretto ({{label}})"
   },
   "green-score": {
-    "description": "Ecco un riepilogo delle domande che potrebbero migliorare il calcolo dell'Eco-Score",
-    "countryLabel": "Paese"
+    "description": "Here is a summary of questions that could improve Eco-Score computation",
+    "countryLabel": "Country"
   },
   "ingredients": {
     "description": "Questo gioco consente di convalidare la preselezione di immagini delle liste di ingredienti in varie lingue per un prodotto, e convalidare gli ingredienti estratti.",

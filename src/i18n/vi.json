@@ -12,8 +12,8 @@
           "description": "Tìm tất cả các logo phù hợp với logo đã cho"
         },
         "green_score": {
-          "title": "Điểm sinh thái",
-          "description": "Chú thích các câu hỏi có giá trị cao nhất"
+          "title": "Eco-score",
+          "description": "Annotate the questions with the highest value"
         }
       }
     },
@@ -67,6 +67,7 @@
     "skip": "Bỏ qua",
     "yes": "Có",
     "no_questions_remaining": "Không còn câu hỏi nào",
+    "an_error_occurred": "Đã xảy ra lỗi. Vui lòng tải lại, thử lại sau hoặc liên hệ với nhóm.",
     "countries": "Quốc gia",
     "view": "Hiển thị",
     "edit": "Chỉnh sửa",
@@ -362,8 +363,8 @@
     "correct": "Đúng ({{label}})"
   },
   "green-score": {
-    "description": "Đây là bản tóm tắt các câu hỏi có thể cải thiện phần tính toán Điểm sinh thái",
-    "countryLabel": "Quốc gia"
+    "description": "Here is a summary of questions that could improve Eco-Score computation",
+    "countryLabel": "Country"
   },
   "ingredients": {
     "description": "Trò chơi này cho phép bạn xác nhận hình ảnh các thành phần từ nhiều ngôn ngữ khác nhau cho một sản phẩm và xác nhận các thành phần đã được trích xuất.",

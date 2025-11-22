@@ -12,7 +12,7 @@
           "description": "Find alle logoer matchende det givne logo"
         },
         "green_score": {
-          "title": "Øko-Score",
+          "title": "Eco-score",
           "description": "Anmærk spørgsmålene med den højeste værdi"
         }
       }
@@ -67,6 +67,7 @@
     "skip": "Spring over",
     "yes": "Ja",
     "no_questions_remaining": "Ingen resterende spørgsmål",
+    "an_error_occurred": "Der opstod en fejl. Genindlæs venligst, prøv senere, eller kontakt teamet.",
     "countries": "Lande",
     "view": "Vis",
     "edit": "Redigér",
@@ -362,7 +363,7 @@
     "correct": "Korrekt ({{label}})"
   },
   "green-score": {
-    "description": "Her er en oversigt over spørgsmål, som kunne forbedre Øko-Score beregningen",
+    "description": "Her er en samling af spørgsmål, der kunne forbedre Eco-Score-beregning",
     "countryLabel": "Land"
   },
   "ingredients": {

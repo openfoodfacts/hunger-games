@@ -12,8 +12,8 @@
           "description": "Pronađi sve logotipe koji odgovaraju zadanom logotipu"
         },
         "green_score": {
-          "title": "Eko-bod",
-          "description": "Označi pitanja s najvećom vrijednošću"
+          "title": "Eco-score",
+          "description": "Annotate the questions with the highest value"
         }
       }
     },
@@ -67,6 +67,7 @@
     "skip": "Preskočiti",
     "yes": "Da",
     "no_questions_remaining": "Nema preostalih pitanja",
+    "an_error_occurred": "Došlo je do pogreške. Molimo vas da ponovno učitate stranicu, pokušate kasnije ili kontaktirate tim.",
     "countries": "Zemlje",
     "view": "Pogledaj",
     "edit": "Urediti",
@@ -135,7 +136,7 @@
     "ingredient-spellcheck": "Provjera pravopisa sastojaka",
     "ingredient-detection": "Detekcija sastojaka",
     "settings": "Settings",
-    "green-score": "Green-Score",
+    "green-score": "Zeleni rezultat",
     "dashboard": "Logos dashboard",
     "tour": "Show tour",
     "logged_in_user": "Logged as {{userName}}",
@@ -390,7 +391,7 @@
     },
     "androidAPK": {
       "title": "Android APK",
-      "subtitle": "Download"
+      "subtitle": "Preuzmi"
     }
   }
 }

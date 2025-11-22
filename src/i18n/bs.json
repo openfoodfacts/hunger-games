@@ -12,8 +12,8 @@
           "description": "Pronađite sve logotipe koji odgovaraju datom logotipu"
         },
         "green_score": {
-          "title": "Eko-rezultat",
-          "description": "Obilježite pitanja s najvećom vrijednošću"
+          "title": "Eco-score",
+          "description": "Annotate the questions with the highest value"
         }
       }
     },
@@ -67,6 +67,7 @@
     "skip": "Preskočite",
     "yes": "Da",
     "no_questions_remaining": "Nema preostalih pitanja",
+    "an_error_occurred": "Došlo je do greške. Molimo vas da ponovo učitate stranicu, pokušate kasnije ili kontaktirate tim.",
     "countries": "Zemlje",
     "view": "Prikaz",
     "edit": "Uredi",

@@ -67,6 +67,7 @@
     "skip": "Pase",
     "yes": "Wi",
     "no_questions_remaining": "Pa gen kesyon ki rete",
+    "an_error_occurred": "Yon erè rive. Tanpri rechaje, eseye pita oswa kontakte ekip la.",
     "countries": "Peyi",
     "view": "View",
     "edit": "Modifye",
@@ -363,7 +364,7 @@
   },
   "green-score": {
     "description": "Here is a summary of questions that could improve Eco-Score computation",
-    "countryLabel": "Peyi"
+    "countryLabel": "Country"
   },
   "ingredients": {
     "description": "This game allows you to validate the pre-selection of images of ingredients lists in various languages for a product, and validate the extracted ingredients.",

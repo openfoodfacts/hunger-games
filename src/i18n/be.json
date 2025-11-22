@@ -12,7 +12,7 @@
           "description": "Знайдзіце ўсе лагатыпы, якія адпавядаюць дадзенаму лагатыпу"
         },
         "green_score": {
-          "title": "Eco-ацэнка",
+          "title": "Eco-score",
           "description": "Annotate the questions with the highest value"
         }
       }
@@ -67,6 +67,7 @@
     "skip": "Skip",
     "yes": "Yes",
     "no_questions_remaining": "Пытаньняў не засталося",
+    "an_error_occurred": "Узнікла памылка. Перазагрузіце старонку, паспрабуйце пазней або звяжыцеся з камандай.",
     "countries": "Краіны",
     "view": "Прагляд",
     "edit": "Edit",

@@ -12,8 +12,8 @@
           "description": "Găsiți toate siglele care se potrivesc cu logo-ul dat"
         },
         "green_score": {
-          "title": "Eco-scor",
-          "description": "Notează întrebările cu cea mai mare valoare"
+          "title": "Eco-score",
+          "description": "Annotate the questions with the highest value"
         }
       }
     },
@@ -67,6 +67,7 @@
     "skip": "Omitere",
     "yes": "Da",
     "no_questions_remaining": "Nu au mai rămas întrebări",
+    "an_error_occurred": "A apărut o eroare. Vă rugăm să reîncărcați pagina, să încercați mai târziu sau să contactați echipa.",
     "countries": "Țări",
     "view": "Vizualizare",
     "edit": "Modificare",
@@ -362,8 +363,8 @@
     "correct": "Corect ({{label}})"
   },
   "green-score": {
-    "description": "Iată un rezumat al întrebărilor care ar putea îmbunătăți calculul Eco-Score",
-    "countryLabel": "Țară"
+    "description": "Here is a summary of questions that could improve Eco-Score computation",
+    "countryLabel": "Country"
   },
   "ingredients": {
     "description": "Acest joc vă permite să validați preselecția imaginilor listelor de ingrediente în diferite limbi pentru un produs și să validați ingredientele extrase.",
