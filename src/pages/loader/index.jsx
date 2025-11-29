@@ -6,10 +6,15 @@ export default function Loader() {
     <React.Fragment>
       <CssBaseline />
       <Stack
-        sx={(theme) => ({ bgcolor: theme.palette.paper, height: "100vh" })}
-        justifyContent="center"
-        alignItems="center"
-      >
+  sx={(theme) => ({
+    bgcolor: theme.palette.paper,
+    height: "100vh",
+    p: 3, // Added padding
+  })}
+  justifyContent="center"
+  alignItems="center"
+>
+
         <CircularProgress />
       </Stack>
     </React.Fragment>
