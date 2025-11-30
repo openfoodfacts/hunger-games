@@ -45,11 +45,13 @@ const QuestionCard = ({
 
   React.useEffect(() => {
     let isValid = true;
-    robotoff.questions(filterState, 1, 1).then(({ data }) => {
-      if (isValid) {
-        setQuestionNumber(data?.count ?? 0);
-      }
-    });
+    robotoff
+      .questions({ ...filterState, with_image: true }, 1, 1)
+      .then(({ data }) => {
+        if (isValid) {
+          setQuestionNumber(data?.count ?? 0);
+        }
+      });
     return () => {
       isValid = false;
     };

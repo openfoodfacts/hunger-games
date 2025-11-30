@@ -53,6 +53,7 @@ const robotoff = {
       sortByPopularity: boolean;
       campaign: string;
       predictor: string;
+      with_image?: boolean;
     }>,
     count = 10,
     page = 1,
@@ -65,6 +66,7 @@ const robotoff = {
       sortByPopularity,
       campaign,
       predictor,
+      with_image,
     } = filterState;
 
     const searchParams = {
@@ -74,6 +76,7 @@ const robotoff = {
       countries: countryFilter,
       campaign,
       predictor,
+      with_image,
       order_by: sortByPopularity ? "popularity" : "random",
     };
 
