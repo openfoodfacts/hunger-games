@@ -66,6 +66,7 @@ export default function useQuestions(
         countryFilter: params.country,
         campaign: params.campaign,
         predictor: params.predictor,
+        with_image: true,
       },
       pageSize,
       1,
