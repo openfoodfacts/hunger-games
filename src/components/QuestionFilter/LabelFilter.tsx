@@ -2,86 +2,56 @@ import * as React from "react";
 import Autocomplete from "@mui/material/Autocomplete";
 import TextField from "@mui/material/TextField";
 import { getLang } from "../../localeStorageManager";
-import axios from "axios";
-import { URL_ORIGINE } from "../../const";
+import { SearchApi } from "@openfoodfacts/openfoodfacts-nodejs";
 
-// Otherwise fallback on english
-const AVAILABLE_OPTIONS = ["de", "es", "fr", "hr", "nl", "sv"];
+import { useQuery } from "@tanstack/react-query";
 
-const cleanName = (name: string) =>
-  name
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")
-    .toLowerCase()
-    .replace(/[^0-9a-z]/gi, " ");
+const offClient = new SearchApi(window.fetch);
 
-const useOptionFetching = (insightType, inputValue, lang) => {
-  const [options, setOptions] = React.useState([]);
-  const fetchedKeysRef = React.useRef({});
-
-  React.useEffect(() => {
-    setOptions([]);
-    fetchedKeysRef.current = {};
-  }, [insightType]);
-
-  React.useEffect(() => {
-    let keyToFetch = inputValue.toLowerCase();
-    if (/^[a-z][a-z]:/.test(keyToFetch)) {
-      keyToFetch = keyToFetch.slice(3);
-    }
-    keyToFetch = keyToFetch.replace(/[^0-9a-z]/gi, "-");
-
-    [
-      keyToFetch.slice(0, 1),
-      keyToFetch.slice(0, 2),
-      keyToFetch.slice(0, 3),
-    ].forEach((key) => {
-      if (key.length > 0 && !fetchedKeysRef.current[key]) {
-        fetchedKeysRef.current[key] = true;
-        axios
-          .get(
-            `${URL_ORIGINE}/data/${
-              AVAILABLE_OPTIONS.includes(lang) ? lang : "en"
-            }/${insightType}/${key}.json`,
-          )
-          .then(({ data }) => {
-            setOptions((prevOptions) => {
-              const existingKeys = prevOptions.map((x) => x.key);
-              return [
-                ...prevOptions,
-                ...data
-                  .filter(({ key }) => !existingKeys.includes(key))
-                  .map((option) => ({
-                    ...option,
-                    cleanName: cleanName(option.name),
-                  })),
-              ];
-            });
-          })
-          .catch(() => {});
-      }
-    });
-  }, [inputValue, insightType, lang]);
-
-  return options;
+type TaxonomyOption = {
+  id: string;
+  taxonomy_name: string;
+  text: string;
 };
 
-const LabelFilter = (props) => {
+const LabelFilter = (props: any) => {
   const { showKey, onChange, value, insightType, fullWidth, ...other } = props;
 
-  const [innerValue, setInnerValue] = React.useState(null);
+  const [innerValue, setInnerValue] = React.useState<
+    string | TaxonomyOption | null
+  >(null);
   const [inputValue, setInputValue] = React.useState("");
 
   const lang = getLang();
 
-  const options = useOptionFetching(insightType, inputValue, lang);
+  const { data: options } = useQuery({
+    queryKey: ["autocomplete", insightType, inputValue, lang],
+    queryFn: async () => {
+      if (inputValue.length < 2) {
+        return [];
+      }
+
+      const response = (await offClient.autocomplete({
+        q: inputValue,
+        taxonomy_names: insightType,
+        lang,
+        size: 20,
+      })) as {
+        data?: {
+          options?: TaxonomyOption[];
+        };
+      };
+
+      return response?.data?.options ?? [];
+    },
+  });
 
   React.useEffect(() => {
     setInnerValue((prev) => {
-      if (typeof prev === "object" && prev?.key === value) {
+      if (typeof prev === "object" && prev?.id === value) {
         return prev;
       }
-      const solution = options.find((option) => option.key === value);
+      const solution = options?.find((option) => option.id === value);
 
       if (solution) {
         return solution;
@@ -96,7 +66,7 @@ const LabelFilter = (props) => {
       freeSolo
       onChange={(_, newValue) => {
         setInnerValue(newValue);
-        onChange(newValue?.key ?? newValue);
+        onChange(typeof newValue === "object" ? newValue?.id : newValue);
       }}
       onInputChange={(e, newInputValue) => {
         setInputValue(newInputValue);
@@ -105,7 +75,7 @@ const LabelFilter = (props) => {
         const isSelectedValue =
           typeof innerValue === "string"
             ? innerValue === inputValue
-            : innerValue.name === inputValue;
+            : innerValue?.text === inputValue;
         if (!isSelectedValue) {
           setInnerValue(inputValue);
           onChange(inputValue);
@@ -113,26 +83,23 @@ const LabelFilter = (props) => {
       }}
       inputValue={inputValue}
       value={innerValue}
-      options={options}
-      getOptionLabel={(option) => option?.name ?? option}
+      options={options ?? []}
+      getOptionLabel={(option) =>
+        typeof option === "object" ? option.text : option
+      }
       renderInput={(params) => (
         <TextField
           {...params}
           {...other}
           helperText={
             showKey &&
-            (innerValue?.key ||
+            ((typeof innerValue === "object" && innerValue?.id) ||
               (innerValue !== "" &&
                 innerValue !== null &&
                 `⚠️ unknown: "${innerValue}"`))
           }
         />
       )}
-      filterOptions={(options, state) => {
-        return options.filter((option) =>
-          option?.cleanName.includes(cleanName(state.inputValue)),
-        );
-      }}
     />
   );
 };

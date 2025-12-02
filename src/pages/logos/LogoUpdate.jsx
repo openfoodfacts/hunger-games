@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import { useParams } from "react-router-dom";
+import { useParams } from "react-router";
 
 import LogoForm from "../../components/LogoForm";
 import robotoff from "../../robotoff";

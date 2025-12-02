@@ -1,43 +1,15 @@
 import * as React from "react";
 
 import QuestionFilter from "../../components/QuestionFilter";
-
 import QuestionDisplay from "./QuestionDisplay";
 import ProductInformation from "./ProductInformation";
 import UserData from "./UserData";
-import { useProductData } from "./utils";
 
 import Divider from "@mui/material/Divider";
 import Stack from "@mui/material/Stack";
 import Grid from "@mui/material/Grid";
 
-import store, {
-  fetchQuestions,
-  nbOfQuestionsInBufferSelector,
-  currentQuestionSelector,
-  nextImagesSelector,
-  nextPageSelector,
-} from "./store";
-import { Provider, useDispatch, useSelector } from "react-redux";
-import Loader from "../loader";
-
 function QuestionsConsumer() {
-  const dispatch = useDispatch();
-
-  const remainingQuestionNb = useSelector(nbOfQuestionsInBufferSelector);
-  const nextPage = useSelector(nextPageSelector);
-  const nextImages = useSelector(nextImagesSelector);
-
-  React.useEffect(() => {
-    if (remainingQuestionNb < 5) {
-      dispatch(fetchQuestions());
-    }
-  }, [dispatch, remainingQuestionNb, nextPage]);
-
-  const question = useSelector(currentQuestionSelector);
-
-  const productData = useProductData(question?.barcode);
-
   return (
     <Grid container spacing={2} p={2}>
       <Grid item xs={12} md={5}>
@@ -49,30 +21,24 @@ function QuestionsConsumer() {
         >
           <QuestionFilter />
           <Divider sx={{ margin: "1rem" }} />
-          <QuestionDisplay question={question} productData={productData} />
+          <QuestionDisplay />
         </Stack>
       </Grid>
       <Grid item xs={12} md={5}>
-        <ProductInformation question={question} productData={productData} />
+        <ProductInformation />
       </Grid>
       <Grid item xs={12} md={2}>
         <UserData />
       </Grid>
 
       {/* pre-fetch images of the next question */}
-      {nextImages.map((source_image_url) => (
+      {/* {nextImages.map((source_image_url) => (
         <link rel="prefetch" key={source_image_url} href={source_image_url} />
-      ))}
+      ))} */}
     </Grid>
   );
 }
 
 export default function Questions() {
-  return (
-    <React.Suspense fallback={<Loader />}>
-      <Provider store={store}>
-        <QuestionsConsumer />
-      </Provider>
-    </React.Suspense>
-  );
+  return <QuestionsConsumer />;
 }

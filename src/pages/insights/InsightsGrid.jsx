@@ -134,43 +134,38 @@ const InsightGrid = ({ filterState = {}, setFilterState }) => {
       {
         field: "actions",
         type: "actions",
-        getActions: (params) => (
-          <React.Fragment>
-            <GridActionsCellItem
-              component="a"
-              href={getProductEditUrl(params.row.barcode)}
-              label={t("insights.edit_product")}
-              icon={
-                <Tooltip title={t("insights.edit_product")}>
-                  <EditIcon />
-                </Tooltip>
-              }
-            />
-            ,
-            <GridActionsCellItem
-              component="a"
-              href={getProductUrl(params.row.barcode)}
-              label={t("insights.view_product")}
-              icon={
-                <Tooltip title={t("insights.view_product")}>
-                  <VisibilityIcon />
-                </Tooltip>
-              }
-            />
-            ,
-            <GridActionsCellItem
-              component="a"
-              href={getLogoCropsByBarcodeUrl(params.row.barcode)}
-              label={t("insights.view_crops_for_this_product")}
-              icon={
-                <Tooltip title={t("insights.view_crops_for_this_product")}>
-                  <VisibilityIcon />
-                </Tooltip>
-              }
-            />
-            ,
-          </React.Fragment>
-        ),
+        getActions: (params) => [
+          <GridActionsCellItem
+            component="a"
+            href={getProductEditUrl(params.row.barcode)}
+            label={t("insights.edit_product")}
+            icon={
+              <Tooltip title={t("insights.edit_product")}>
+                <EditIcon />
+              </Tooltip>
+            }
+          />,
+          <GridActionsCellItem
+            component="a"
+            href={getProductUrl(params.row.barcode)}
+            label={t("insights.view_product")}
+            icon={
+              <Tooltip title={t("insights.view_product")}>
+                <VisibilityIcon />
+              </Tooltip>
+            }
+          />,
+          <GridActionsCellItem
+            component="a"
+            href={getLogoCropsByBarcodeUrl(params.row.barcode)}
+            label={t("insights.view_crops_for_this_product")}
+            icon={
+              <Tooltip title={t("insights.view_crops_for_this_product")}>
+                <VisibilityIcon />
+              </Tooltip>
+            }
+          />,
+        ],
       },
       {
         field: "type",

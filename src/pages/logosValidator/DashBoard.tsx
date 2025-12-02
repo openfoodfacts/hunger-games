@@ -8,7 +8,7 @@ import { useTheme } from "@mui/material/styles";
 
 import { LOGOS, DASHBOARD } from "./dashboardDefinition";
 import DashboardCard from "./DashboardCard";
-import { Link, useParams } from "react-router-dom";
+import { Link, useParams } from "react-router";
 
 interface TabPanelProps {
   children?: React.ReactNode;
@@ -31,7 +31,7 @@ function TabPanel(props: TabPanelProps) {
       hidden={value !== index}
       id={`vertical-tabpanel-${index}`}
       aria-labelledby={`vertical-tab-${index}`}
-      sx={{ flexGrow: 1 }}
+      sx={{ flexGrow: 1, overflow: "auto", height: "100%" }}
       {...other}
     >
       {hasBeenVisible && (
@@ -87,8 +87,9 @@ export default function VerticalTabs() {
           bgcolor: "background.paper",
           display: "flex",
           flexDirection: isDesktop ? "row" : "column",
-          height: isDesktop ? "calc( 100vh - 100px)" : undefined,
+          height: isDesktop ? "calc(100vh - 100px)" : undefined,
           width: isDesktop ? undefined : "100vw",
+          overflow: isDesktop ? "hidden" : undefined,
         }}
       >
         <Tabs
@@ -98,7 +99,9 @@ export default function VerticalTabs() {
           onChange={handleChange}
           aria-label="Logo categories"
           sx={{
-            ...(isDesktop ? { borderRight: 1 } : { borderBottom: 1 }),
+            ...(isDesktop
+              ? { position: "sticky", top: 0, borderRight: 1 }
+              : { borderBottom: 1 }),
             borderColor: "divider",
           }}
         >

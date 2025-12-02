@@ -13,27 +13,18 @@ import Button from "@mui/material/Button";
 
 import CancelOutlinedIcon from "@mui/icons-material/CancelOutlined";
 import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
-import IconButton from "@mui/material/IconButton";
-import CancelScheduleSendIcon from "@mui/icons-material/CancelScheduleSend";
 
 import { useTranslation } from "react-i18next";
-import { useSelector } from "react-redux";
 
 import { CORRECT_INSIGHT, WRONG_INSIGHT, OFF_URL } from "../../const";
 import offService from "../../off";
 import LoginContext from "../../contexts/login";
-import {
-  answeredQuestionsSelector,
-  numberOfQuestionsAvailableSelector,
-} from "./store";
+import useQuestions from "../../hooks/useQuestions";
 
-const NB_DISPLAYED_QUESTIONS = 30;
 const UserData = () => {
   const { t } = useTranslation();
-  const numberOfQuestionsAvailable = useSelector(
-    numberOfQuestionsAvailableSelector,
-  );
-  const answered = useSelector(answeredQuestionsSelector);
+
+  const { questionsCount, recentAnswers } = useQuestions();
 
   const [loginAlreadyProposed, setLoginAlreadyProposed] = React.useState(false);
   const [loginModalOpen, setLoginModalOpen] = React.useState(false);
@@ -41,53 +32,27 @@ const UserData = () => {
   const { isLoggedIn } = React.useContext(LoginContext);
 
   React.useEffect(() => {
-    if (answered.length > 3 && !isLoggedIn && !loginAlreadyProposed) {
+    if (recentAnswers.length > 3 && !isLoggedIn && !loginAlreadyProposed) {
       setLoginModalOpen(true);
     }
-  }, [answered.length, isLoggedIn, loginAlreadyProposed]);
-
-  let displayedAnswers = answered.filter(
-    (question) => question.validationValue !== -1,
-  );
-
-  displayedAnswers = displayedAnswers.slice(
-    Math.max(0, displayedAnswers.length - NB_DISPLAYED_QUESTIONS),
-    displayedAnswers.length,
-  );
+  }, [recentAnswers.length, isLoggedIn, loginAlreadyProposed]);
 
   return (
     <Box>
       <Stack spacing={1}>
         <Typography sx={{ my: 2 }}>
-          {t("questions.remaining_annotations")}: {numberOfQuestionsAvailable}
+          {t("questions.remaining_annotations")}: {questionsCount}
         </Typography>
-        {displayedAnswers.map(
-          ({
-            insight_id,
-            barcode,
-            value,
-            insight_type,
-            validationValue,
-            isPending,
-          }) => (
+        {recentAnswers.map(
+          ({ insight_id, barcode, value, insight_type, answer }) => (
             <Stack key={insight_id} direction="row" alignItems="center">
-              {isPending && (
-                <IconButton
-                  size="small"
-                  sx={{ mr: 1 }}
-                  // Prevent sending logos could be reintroduce if done sever side
-                  // onClick={() => preventAnnotation(insight_id)}
-                >
-                  <CancelScheduleSendIcon fontSize="inherit" />
-                </IconButton>
-              )}
               <Link href={offService.getProductEditUrl(barcode)}>
                 {insight_type}: {value}
               </Link>
-              {validationValue === WRONG_INSIGHT && (
+              {answer === WRONG_INSIGHT && (
                 <CancelOutlinedIcon color="error" sx={{ ml: 2 }} />
               )}
-              {validationValue === CORRECT_INSIGHT && (
+              {answer === CORRECT_INSIGHT && (
                 <CheckCircleOutlineIcon color="success" sx={{ ml: 2 }} />
               )}
             </Stack>
