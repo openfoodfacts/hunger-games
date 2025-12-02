@@ -9,7 +9,7 @@ export default function Loader() {
         sx={(theme) => ({
           bgcolor: theme.palette.paper,
           height: "100vh",
-          p: 3, // Added padding
+          p: 3,
         })}
         justifyContent="center"
         alignItems="center"
