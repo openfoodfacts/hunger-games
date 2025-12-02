@@ -33,7 +33,7 @@ export const ADDITIONAL_INFO_TRANSLATION = {
   quantity: { i18nKey: "quantity" },
 };
 
-// src looks like: "https://static.openfoodfacts.org/images/products/004/900/053/2258/1.jpg"
+// src looks like: "https://images.openfoodfacts.org/images/products/004/900/053/2258/1.jpg"
 export const getImageId = (src: string) => {
   const file = src.split("/").at(-1)!;
   const imageId = file.replace(/\..+$/, "");
@@ -85,7 +85,7 @@ export const useFlagImage = (barcode?: string) => {
 
 export const getFullSizeImage = (src?: string) => {
   if (!src) {
-    return `https://static.${OFF_DOMAIN}/images/image-placeholder.png`;
+    return `https://images.${OFF_DOMAIN}/images/image-placeholder.png`;
   }
   const needsFull = /\/[a-z_]+.[0-9]*.400.jpg$/gm.test(src);
 
