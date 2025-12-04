@@ -10,7 +10,7 @@ import logosGame from "../../assets/logosGame.png";
 import questionsGame from "../../assets/questionsGame.png";
 import ecoScoreGame from "../../assets/ecoScoreGame.png";
 
-import Tour from "reactour";
+import { Tour } from "@reactour/tour";
 import {
   localSettings,
   localSettingsKeys,
