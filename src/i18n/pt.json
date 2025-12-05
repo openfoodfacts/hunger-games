@@ -11,9 +11,9 @@
           "title": "Logótipos",
           "description": "Encontre todos os logótipos que correspondem ao logótipo indicado"
         },
-        "eco_score": {
-          "title": "Eco-Score",
-          "description": "Anote as perguntas mais relevantes"
+        "green_score": {
+          "title": "Eco-score",
+          "description": "Annotate the questions with the highest value"
         }
       }
     },
@@ -67,9 +67,12 @@
     "skip": "Ignorar",
     "yes": "Sim",
     "no_questions_remaining": "Não restam perguntas",
+    "an_error_occurred": "Ocorreu um erro. Recarregue a página, tente novamente mais tarde ou contacte a equipa.",
     "countries": "Países",
     "view": "Ver",
     "edit": "Editar",
+    "remaining": "Restante: {{count}}",
+    "remaining_other": "Restante: >100",
     "hide_images": "Ocultar imagens (carregamento mais rápido)",
     "display_images": "Mostrar imagens",
     "annotations": "Anotações",
@@ -129,9 +132,11 @@
     "logos-deep-search": "Anotação infinita",
     "manage": "Gerir",
     "insights": "Vista geral detalhada",
-    "nutritions": "Dados nutricionais",
+    "nutritions": "Nutrição",
+    "ingredient-spellcheck": "Verificação ortográfica de ingredientes",
+    "ingredient-detection": "Detecção de ingredientes",
     "settings": "Definições",
-    "eco-score": "Eco-Score",
+    "green-score": "Green-Score",
     "dashboard": "Painel de logótipos",
     "tour": "Mostrar demonstração",
     "logged_in_user": "Iniciou sessão como {{userName}}",
@@ -247,7 +252,7 @@
     "Open_Food_Facts_wiki": "Wiki Open Food Facts (en)",
     "Translators": "Tradutores",
     "Partners": "Parceiros",
-    "Open_Beauty_Facts": "Open Beauty Facts - Cosméticos",
+    "Open_Beauty_Facts": "Open Beauty Facts - cosméticos",
     "text2": "Uma base de dados colaborativa, livre e aberta sobre produtos alimentares de todo o mundo."
   },
   "helper": {
@@ -313,53 +318,30 @@
     "close": "Fechar"
   },
   "nutrition": {
+    "table_partialy_filled": "Tabela já com alguns dados",
+    "display_off_values": "Mostrar valores do OpenFoodFacts",
+    "nutrients": "Nutrientes",
+    "serving_size": "Tamanho da porção",
+    "add_nutrient": "-- adicionar nutriente --",
+    "validate_100g": "Validar (100g)",
+    "validate_serving": "Validar (porção)",
+    "skip": "Ignorar",
+    "invalid_image": "Imagem inválida",
+    "pictures": {
+      "picture_date": "Foto enviada",
+      "selected_as_nutrients": "Selecionado como imagem de nutrientes ✅",
+      "not_selected_as_nutrients": "Não selecionado como nutriente ❌"
+    },
     "instructions": {
-      "cropTheTable": "Recorte a imagem para simplificar a sua anotação",
-      "verifyNutrimentDetected": "Indique se o nutriente detetado está correto",
-      "selectMissingNutriments": "Adicione os nutrientes que faltam (pode clicar mesmo que a palavra não tenha caixa)",
-      "selectValue": "Selecione o valor nutricional de: "
-    },
-    "steps": {
-      "1": "Recortar",
-      "2": "Valores especiais",
-      "3": "Seleção de nutrientes",
-      "4": "Seleção de valores"
-    },
-    "loading": "A carregar...",
-    "unknown_brand": "Marca desconhecida",
-    "value_missing": "Esqueceu-se de inserir um valor.",
-    "next": "Próximo passo",
-    "prev": "Passo anterior",
-    "skip": "Ignorar este produto",
-    "validate": "Validar tabela",
-    "unselect_picture": "Sem informação nutricional",
-    "basis": "dados para: ",
-    "servingSize": "tamanho da porção",
-    "value": "Valor",
-    "unit": "Unidade",
-    "nutriments": {
-      "nutriment_energy-kj": "Energia (kJ)",
-      "nutriment_energy-kcal": "Energia (kCal)",
-      "nutriment_fat": "Lípidos",
-      "nutriment_saturated-fat": "Lípidos saturados",
-      "nutriment_carbohydrates": "Hidratos de carbono",
-      "nutriment_sugars": "Açúcar",
-      "nutriment_proteins": "Teor de proteínas",
-      "nutriment_fiber": "Fibras",
-      "nutriment_salt": "Sal",
-      "nutriment_sodium": "Sódio (Na+)"
-    },
-    "history": {
-      "title": "Histórico da sessão",
-      "status": "estado",
-      "product name": "nome do produto",
-      "view": "ver página",
-      "edit": "editar página",
-      "SKIP": "ignorado",
-      "VALIDATED": "editado",
-      "WRONG_IMAGE": "imagem não selecionada",
-      "close": "fechar",
-      "open": "abrir histórico"
+      "open_button": "Abrir instruções",
+      "title": "Como usar a interface",
+      "chose_between_empty_and_partially_filled": "Pode escolher entre produtos para os quais o OpenFoodFacts (OFF) não tem dados sobre os nutrientes. Ou produtos com tabela de nutrientes parcialmente preenchida.",
+      "picture_date_is_display": "A data da fotografia é mostrada em cima dela. Permitindo que verifique se é recente.",
+      "indicate_not_provided_value": "As entradas vazias são ignoradas. Se as fibras não estiverem presentes na tabela, pode colocar \"-\" para especificar que o valor não está disponível.",
+      "validate_one_column": "Escolha o tamanho que é apresentado na imagem. Se tiver 100g e tamanho de porção, escolha 100g porque é um formato normalizado.",
+      "skip_button": "Se não sabe como lidar com uma imagem ou simplesmente não quer fazê-lo, pressione \"ignorar\". Outro utilizador poderá lidar com isso.",
+      "invalid_image_button": "Se as imagens não forem de uma tabela nutricional, pressione \"Imagem inválida\" para removê-la da lista de imagens a verificar",
+      "close": "Fechar"
     }
   },
   "notfound": {
@@ -380,9 +362,9 @@
     "incorrect": "Errado",
     "correct": "Correto ({{label}})"
   },
-  "eco-score": {
-    "description": "Aqui está um resumo das questões que poderiam melhorar o cálculo do Eco-Score",
-    "countryLabel": "País"
+  "green-score": {
+    "description": "Here is a summary of questions that could improve Eco-Score computation",
+    "countryLabel": "Country"
   },
   "ingredients": {
     "description": "Este jogo permite-lhe validar a pré-seleção de imagens de listas de ingredientes em vários idiomas para um produto e validar os ingredientes extraídos.",

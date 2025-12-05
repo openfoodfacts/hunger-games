@@ -12,7 +12,7 @@
           "description": "Temukan semua dan samakan dengan logo yang telah diberikan"
         },
         "green_score": {
-          "title": "Eco-score",
+          "title": "Eco-Score",
           "description": "Beri keterangan pada pertanyaan dengan nilai tertinggi"
         }
       }
@@ -67,6 +67,7 @@
     "skip": "Lewati",
     "yes": "Ya",
     "no_questions_remaining": "Tidak ada pertanyaan yang tersisa",
+    "an_error_occurred": "Terjadi kesalahan. Silakan muat ulang, coba lagi nanti, atau hubungi tim.",
     "countries": "Negara - negara",
     "view": "Lihat",
     "edit": "Sunting",
@@ -362,7 +363,7 @@
     "correct": "Benar ({{label}})"
   },
   "green-score": {
-    "description": "Berikut ini adalah ringkasan pertanyaan yang dapat meningkatkan penghitungan Eco-Score",
+    "description": "Berikut ringkasan pertanyaan yang dapat meningkatkan perhitungan Eco-Score",
     "countryLabel": "Negara"
   },
   "ingredients": {

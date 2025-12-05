@@ -13,7 +13,7 @@
         },
         "green_score": {
           "title": "Eko-skor",
-          "description": "En yüksek değere sahip sorulara açıklama ekleyin"
+          "description": "Annotate the questions with the highest value"
         }
       }
     },
@@ -67,6 +67,7 @@
     "skip": "Atla",
     "yes": "Evet",
     "no_questions_remaining": "Kalan soru yok",
+    "an_error_occurred": "Bir hata oluştu. Lütfen yeniden yükleyin, daha sonra deneyin veya ekiple iletişime geçin.",
     "countries": "Ülkeler",
     "view": "Görüntüle",
     "edit": "Düzenle",
@@ -362,7 +363,7 @@
     "correct": "Doğru ({{label}})"
   },
   "green-score": {
-    "description": "Eko-Skor hesaplamasını iyileştirebilecek soruların bir özetini burada bulabilirsiniz",
+    "description": "Here is a summary of questions that could improve Eco-Score computation",
     "countryLabel": "Ülke"
   },
   "ingredients": {

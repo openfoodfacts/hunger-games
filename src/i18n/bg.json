@@ -13,7 +13,7 @@
         },
         "green_score": {
           "title": "Eco-score",
-          "description": "Коментирай въпросите с най-висока стойност"
+          "description": "Annotate the questions with the highest value"
         }
       }
     },
@@ -67,6 +67,7 @@
     "skip": "Пропусни",
     "yes": "Да",
     "no_questions_remaining": "Няма повече въпроси",
+    "an_error_occurred": "Възникна грешка. Моля, презаредете, опитайте по-късно или се свържете с екипа.",
     "countries": "Страни",
     "view": "Преглед",
     "edit": "Редактирай",
@@ -362,8 +363,8 @@
     "correct": "Правилно ({{label}})"
   },
   "green-score": {
-    "description": "Ето обобщение на въпросите, които биха могли да подобрят изчисляването на Eco-Score",
-    "countryLabel": "Страна"
+    "description": "Here is a summary of questions that could improve Eco-Score computation",
+    "countryLabel": "Country"
   },
   "ingredients": {
     "description": "Тази игра позволява да валидирате избраните изображения от списъци от съставки за избран продукт на разлини езици, и да потвърдите избраните съставки.",

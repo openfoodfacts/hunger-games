@@ -12,8 +12,8 @@
           "description": "Finden Sie alle Logos, die mit dem angegebenen Logo übereinstimmen"
         },
         "green_score": {
-          "title": "Eco-Score",
-          "description": "Kommentiere die Fragen mit dem höchsten Wert"
+          "title": "Eco-score",
+          "description": "Annotate the questions with the highest value"
         }
       }
     },
@@ -67,6 +67,7 @@
     "skip": "Überspringen",
     "yes": "Ja",
     "no_questions_remaining": "Keine offenen Fragen",
+    "an_error_occurred": "Es ist ein Fehler aufgetreten. Bitte laden Sie die Seite neu, versuchen Sie es später erneut oder kontaktieren Sie das Team.",
     "countries": "Länder",
     "view": "Anzeigen",
     "edit": "Bearbeiten",
@@ -362,8 +363,8 @@
     "correct": "Richtig ({{label}})"
   },
   "green-score": {
-    "description": "Hier ist eine Zusammenfassung von Fragen, die die Berechnung des Eco-Score verbessern könnten",
-    "countryLabel": "Land"
+    "description": "Here is a summary of questions that could improve Eco-Score computation",
+    "countryLabel": "Country"
   },
   "ingredients": {
     "description": "Mit diesem Spiel können Sie die Vorauswahl der Bilder von Zutatenlisten in verschiedenen Sprachen für ein Produkt überprüfen und die ausgelesenen Zutaten bewerten.",

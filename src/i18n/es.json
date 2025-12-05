@@ -12,8 +12,8 @@
           "description": "Encuentra todos los logotipos que coincidan con el que se muestra"
         },
         "green_score": {
-          "title": "Eco-Score",
-          "description": "Toma notas en las preguntas con el valor más alto"
+          "title": "Eco-score",
+          "description": "Anota las preguntas con el valor más alto"
         }
       }
     },
@@ -67,6 +67,7 @@
     "skip": "Omitir",
     "yes": "Sí",
     "no_questions_remaining": "No quedan preguntas",
+    "an_error_occurred": "Se ha producido un error. Recarga la página, inténtalo más tarde o ponte en contacto con el equipo.",
     "countries": "Países",
     "view": "Ver",
     "edit": "Editar",
@@ -362,7 +363,7 @@
     "correct": "Correcto ({{label}})"
   },
   "green-score": {
-    "description": "Aquí tienes un resumen de las preguntas que podrían mejorar el cálculo del Eco-Score.",
+    "description": "Aquí tienes un resumen de las preguntas que podrían mejorar el cálculo del Eco-Score",
     "countryLabel": "País"
   },
   "ingredients": {

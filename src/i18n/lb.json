@@ -67,6 +67,7 @@
     "skip": "Iwwersprangen",
     "yes": "Jo",
     "no_questions_remaining": "No questions remaining",
+    "an_error_occurred": "E Feeler ass opgetrueden. Luet w.e.g. nei, probéiert et méi spéit oder kontaktéiert d'Team.",
     "countries": "Länner",
     "view": "View",
     "edit": "Änneren",
@@ -363,7 +364,7 @@
   },
   "green-score": {
     "description": "Here is a summary of questions that could improve Eco-Score computation",
-    "countryLabel": "Land"
+    "countryLabel": "Country"
   },
   "ingredients": {
     "description": "This game allows you to validate the pre-selection of images of ingredients lists in various languages for a product, and validate the extracted ingredients.",

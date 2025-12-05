@@ -12,8 +12,8 @@
           "description": "Nájdite všetky logá zodpovedajúce danému logu"
         },
         "green_score": {
-          "title": "Eko-skóre",
-          "description": "Označte otázky s najvyššou hodnotou"
+          "title": "Eco-score",
+          "description": "Annotate the questions with the highest value"
         }
       }
     },
@@ -67,6 +67,7 @@
     "skip": "Preskočiť",
     "yes": "Áno",
     "no_questions_remaining": "Žiadne zostávajúce otázky",
+    "an_error_occurred": "Vyskytla sa chyba. Znova načítajte stránku, skúste to neskôr alebo kontaktujte tím.",
     "countries": "Krajiny",
     "view": "Zobrazenie",
     "edit": "Upraviť",
@@ -362,8 +363,8 @@
     "correct": "Správne ({{label}})"
   },
   "green-score": {
-    "description": "Tu je súhrn otázok, ktoré by mohli zlepšiť výpočet ekologického skóre",
-    "countryLabel": "Krajina"
+    "description": "Here is a summary of questions that could improve Eco-Score computation",
+    "countryLabel": "Country"
   },
   "ingredients": {
     "description": "Táto hra vám umožňuje overiť predbežný výber obrázkov zoznamov prísad v rôznych jazykoch pre produkt a overiť extrahované prísady.",

@@ -12,8 +12,8 @@
           "description": "Keresse meg az összes logót, amely megfelel az adott logónak"
         },
         "green_score": {
-          "title": "Eco-Score",
-          "description": "Jelölje meg a legmagasabb értékű kérdéseket"
+          "title": "Eco-score",
+          "description": "Annotate the questions with the highest value"
         }
       }
     },
@@ -67,6 +67,7 @@
     "skip": "Kihagyás",
     "yes": "Igen",
     "no_questions_remaining": "Nincs több kérdés",
+    "an_error_occurred": "Hiba történt. Kérjük, töltse újra az oldalt, próbálja meg később, vagy vegye fel a kapcsolatot a csapattal.",
     "countries": "Országok",
     "view": "Megtekintés",
     "edit": "Szerkesztés",
@@ -362,8 +363,8 @@
     "correct": "Helyes ({{label}})"
   },
   "green-score": {
-    "description": "Alább látható egy összefoglaló azokról a kérdésekről, amelyek javíthatják az Eco-Score számítást",
-    "countryLabel": "Ország"
+    "description": "Here is a summary of questions that could improve Eco-Score computation",
+    "countryLabel": "Country"
   },
   "ingredients": {
     "description": "Ez a játék lehetővé teszi, hogy érvényesítse egy termék különböző nyelvű összetevőlista képeinek előzetes kiválasztását, és érvényesítse a kinyert összetevőket.",
