@@ -100,7 +100,7 @@
         "campaign": "Campaign"
       },
       "placeholders": {
-        "value": "Value (Fanta, en:organic...)",
+        "value": "Value (Fanta, en:organic,…)",
         "brand": "Auchan, Danone, Herta, ...",
         "campaign": "Annotation campaigns"
       },
@@ -133,6 +133,7 @@
     "manage": "Manage",
     "insights": "Insights",
     "nutritions": "Nutrition",
+    "ingredients": "Ingredients",
     "ingredient-spellcheck": "Ingredient spellcheck",
     "ingredient-detection": "Ingredient detection",
     "settings": "Settings",
