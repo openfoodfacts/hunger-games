@@ -100,7 +100,7 @@
         "campaign": "Campaign"
       },
       "placeholders": {
-        "value": "Value (Fanta, en:organic,…)",
+        "value": "Value (Fanta, en:organic...)",
         "brand": "Auchan, Danone, Herta, ...",
         "campaign": "Annotation campaigns"
       },
@@ -133,12 +133,11 @@
     "manage": "Manage",
     "insights": "Insights",
     "nutritions": "Nutrition",
-    "ingredients": "Ingredients",
     "ingredient-spellcheck": "Ingredient spellcheck",
     "ingredient-detection": "Ingredient detection",
     "settings": "Settings",
-    "green-score": "Categories & Labels",
-    "dashboard": "Labels & Claims",
+    "green-score": "Green-Score",
+    "dashboard": "Logos dashboard",
     "tour": "Show tour",
     "logged_in_user": "Logged as {{userName}}",
     "log_in": "Click to login"
@@ -148,7 +147,7 @@
     "barcode": "Barcode",
     "barcode_placeholder": "barcode",
     "value_tag": "Value tag",
-    "value_placeholder": "ex: en:mueslis, bjorg,...",
+    "value_placeholder": "ex: en: mueslis, bjorg,...",
     "type": "Type",
     "annotated": "Annotated",
     "annotation": "Annotation",
