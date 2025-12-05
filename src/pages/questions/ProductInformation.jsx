@@ -39,6 +39,7 @@ import {
 import useQuestions from "../../hooks/useQuestions";
 import { useProductData } from "../../hooks/useProduct";
 import { useTheme } from "@mui/material/styles";
+import Slider from "../../components/Slider";
 
 const ProductInformation = () => {
   const { t } = useTranslation();
@@ -123,38 +124,13 @@ const ProductInformation = () => {
         labelPlacement="end"
       />
       {!hideImages && productData?.images && (
-        <Grid container rowSpacing={1.5} spacing={1}>
-          {getImagesUrls(productData.images, question.barcode).map((src) => (
-            <Grid
-              item
-              key={src}
-              style={{ display: "inline-flex", alignItems: "flex-start" }}
-            >
-              <ZoomableImage
-                src={src}
-                imageProps={{
-                  loading: "lazy",
-                  style: { maxWidth: 300, maxHeight: 300 },
-                }}
-              />
-              {flagged.includes(getImageId(src)) ? (
-                <Tooltip title={t("questions.unflag")}>
-                  <IconButton
-                    onClick={() => deleteFlagImage(src, question.barcode)}
-                  >
-                    <FlagIcon />
-                  </IconButton>
-                </Tooltip>
-              ) : (
-                <Tooltip title={t("questions.flag")}>
-                  <IconButton onClick={() => flagImage(src, question.barcode)}>
-                    <OutlinedFlagIcon />
-                  </IconButton>
-                </Tooltip>
-              )}
-            </Grid>
-          ))}
-        </Grid>
+        <Slider
+          productData={productData}
+          question={question}
+          flagged={flagged}
+          flagImage={flagImage}
+          deleteFlagImage={deleteFlagImage}
+        />
       )}
 
       {/* Remaining info */}
