@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-slim
 
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
 
       - name: Sync Crowdin translations
         uses: crowdin/github-action@v2.12.0
