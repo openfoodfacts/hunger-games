@@ -82,8 +82,7 @@ export default function QuestionDisplay() {
   const { t } = useTranslation();
 
   const [filterState, setFilterState] = useFilterState();
-  const { question, status, answerQuestion, questions, questionsCount } =
-    useQuestions(filterState);
+  const { question, status, answerQuestion } = useQuestions(filterState);
 
   const { data: productData } = useProductData(question?.barcode);
 
