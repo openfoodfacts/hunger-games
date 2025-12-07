@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import { ErrorBoundary } from "../taxonomyWalk/Error";
+import { ErrorBoundary } from "../../components/ErrorBoundary";
 import Instructions from "./Instructions";
 import { RobotoffNutrientExtraction } from "../../components/OffWebcomponents";
 import { Box } from "@mui/material";
