@@ -1,20 +1,27 @@
 import axios, { AxiosResponse } from "axios";
 
-type TagType = "categories";
+type TagType = "categories" | "labels" | "brands";
 
 export type TaxonomyItem = {
-  id: string;
-  text: string;
-  taxonomy_name: string;
+  /**
+   * The unique identifier of the taxonomy item
+   * Format [lg]:[id]
+   */
+  children?: string[];
+  /**
+   * The unique identifier of the taxonomy item
+   * Format [lg]:[id]
+   */
+  parents?: string[];
 };
 
 export type GetTaxonomyParams = {
   /**
    * @default "categories"
    */
-  categories?: TagType;
+  taxonomy?: string;
   /**
-   * @default ["fr", "en"]
+   * @default []
    */
   languages?: string[];
   /**
@@ -22,14 +29,31 @@ export type GetTaxonomyParams = {
    */
   tag: string;
 };
-export default function getTaxonomy(
-  params: GetTaxonomyParams,
-): Promise<AxiosResponse<{ options?: TaxonomyItem[] }>> {
-  const { categories = "categories", tag, languages = ["fr", "en"] } = params;
 
-  return axios.get(
-    `https://world.openfoodfacts.org/api/v2/taxonomy?tagtype=${categories}&tags=${tag}&lc=${languages.join(
-      ",",
-    )}`,
-  );
+/**
+ * Translate our internal categories naming to OFF API taxonomy naming
+ */
+const categoryTranslator = {
+  label: "labels",
+  category: "categories",
+  brand: "brands",
+};
+
+export default async function getTaxonomy(
+  params: GetTaxonomyParams,
+): Promise<Record<string, TaxonomyItem>> {
+  const { taxonomy, tag, languages = [] } = params;
+
+  const tagtype =
+    categoryTranslator[taxonomy as keyof typeof categoryTranslator];
+  if (!tagtype || !tag) {
+    return {};
+  }
+  return await axios
+    .get(
+      `https://world.openfoodfacts.org/api/v2/taxonomy?tagtype=${tagtype}&tags=${tag}${
+        languages && languages.length > 0 ? `&lc=${languages.join(",")}` : ""
+      }`,
+    )
+    .then((response) => response.data);
 }

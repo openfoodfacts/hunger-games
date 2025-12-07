@@ -37,6 +37,9 @@ import ZoomableImage from "../../components/ZoomableImage";
 import { useFilterState, FilterParams } from "../../hooks/useFilterState";
 import { QuestionInterface } from "../../robotoff";
 import { useProductData } from "../../hooks/useProduct";
+import getTaxonomy from "../../offTaxonomy";
+import { useQuery } from "@tanstack/react-query";
+import { SimilarQuestions } from "./SimilarQuestions";
 
 const usePotentialQuestionNumber = (
   filterState: FilterParams,
@@ -120,16 +123,10 @@ export default function QuestionDisplay() {
       );
     }
     return (
-      <Stack direction="row" alignItems="center" spacing={1}>
-        <p>{t("questions.no_questions_remaining")}</p>
-        <Button
-          size="small"
-          variant="contained"
-          onClick={() => setFilterState({})}
-        >
-          {t("questions.reset_filters")}
-        </Button>
-      </Stack>
+      <SimilarQuestions
+        filterState={filterState}
+        setFilterState={setFilterState}
+      />
     );
   }
 

@@ -36,6 +36,51 @@ interface UseQuestionsOptions {
 }
 
 /**
+ * Helper ensuring consistency between the keys of the main useQuestions hook and the useQuestionsQuery hook
+ */
+const getQuestionKeys = (params: FilterParams) => [
+  "questions",
+  params.insightType,
+  params.valueTag,
+  params.sorted !== "false",
+  params.brand,
+  params.country,
+  params.campaign,
+  params.predictor,
+];
+
+export function useQuestionsQuery(valueTag: string) {
+  const [filterParams] = useFilterState();
+
+  const sortByPopularity = filterParams.sorted !== "false";
+  const fetchQuestions = async () => {
+    const { data } = await robotoff.questions(
+      {
+        insightType: filterParams.insightType,
+        valueTag,
+        sortByPopularity,
+        brandFilter: filterParams.brand,
+        countryFilter: filterParams.country,
+        campaign: filterParams.campaign,
+        predictor: filterParams.predictor,
+        with_image: true,
+      },
+      20,
+      1,
+    );
+    return data;
+  };
+
+  const { data, status, isFetching } = useQuery({
+    queryKey: getQuestionKeys({ ...filterParams, valueTag }),
+    queryFn: fetchQuestions,
+  });
+  return {
+    status,
+    count: data?.count,
+  };
+}
+/**
  * Infinitely fetch questions according to some filter params.
  * Params can either be passed as to the hook.
  * If not the params will be derived from the URLSearchParameters
@@ -74,19 +119,7 @@ export default function useQuestions(
     return data;
   };
 
-  const keys = React.useMemo(
-    () => [
-      "questions",
-      params.insightType,
-      params.valueTag,
-      sortByPopularity,
-      params.brand,
-      params.country,
-      params.campaign,
-      params.predictor,
-    ],
-    [params],
-  );
+  const keys = React.useMemo(() => getQuestionKeys(params), [params]);
 
   const answerQuestion = React.useCallback(
     ({ question, answer }: AnswerQuestionParams) => {
