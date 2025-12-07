@@ -8,7 +8,11 @@ import Divider from "@mui/material/Divider";
 import IconButton from "@mui/material/IconButton";
 import CloseIcon from "@mui/icons-material/Close";
 import { alpha } from "@mui/material/styles";
-import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
+import {
+  TransformWrapper,
+  TransformComponent,
+  ReactZoomPanPinchRef,
+} from "react-zoom-pan-pinch";
 
 import RotateLeftIcon from "@mui/icons-material/RotateLeft";
 import RotateRightIcon from "@mui/icons-material/RotateRight";
@@ -30,7 +34,7 @@ const ZoomableImage = ({
   imageProps,
   ...other
 }: ZoomableImageProps) => {
-  const apiRef = React.useRef(null);
+  const apiRef = React.useRef<ReactZoomPanPinchRef>(null);
   const [rotation, setRotation] = React.useState(0);
   const [isOpen, setIsOpen] = React.useState(false);
 

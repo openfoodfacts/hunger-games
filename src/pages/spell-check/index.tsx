@@ -2,7 +2,7 @@ import * as React from "react";
 import { useRobotoffPredictions } from "./useRobotoffPredictions";
 
 import { Box, Typography } from "@mui/material";
-import { ErrorBoundary } from "../taxonomyWalk/Error";
+import { ErrorBoundary } from "../../components/ErrorBoundary";
 import ShowImage from "./ShowImage";
 // import LinksToProduct from "../nutrition/LinksToProduct";
 import { TextCorrection } from "./TextCorrection/TextCorrection";
