@@ -97,23 +97,17 @@ const ZoomableImage = ({
             position: "relative",
           }}
         >
-          <Box position="relative">
+          <Box>
             <TransformWrapper limitToBounds={false} ref={apiRef}>
               <TransformComponent>
                 <img
                   src={showFullResolution && srcFull ? srcFull : src}
                   alt=""
-                  loading="lazy"
                   style={{
-                    maxHeight: "80vh",
+                    maxHeight: "calc(100vh - 160px )",
                     maxWidth: "100%",
-                    width: "100%",
-                    height: "auto",
-                    objectFit: "contain",
                     transform: `rotate(${rotation * 90}deg)`,
                     transformOrigin: "center",
-                    display: "block",
-                    margin: "auto",
                   }}
                 />
               </TransformComponent>
