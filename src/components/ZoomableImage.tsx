@@ -20,6 +20,7 @@ import OpenInFullIcon from "@mui/icons-material/OpenInFull";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { useTheme } from "@mui/material/styles";
 import Loader from "../pages/loader";
+import { useTranslation } from "react-i18next";
 
 type ZoomableImageProps = {
   src: string;
@@ -38,16 +39,18 @@ const ZoomableImage = ({
   const apiRef = React.useRef<ReactZoomPanPinchRef>(null);
   const [rotation, setRotation] = React.useState(0);
   const [isOpen, setIsOpen] = React.useState(false);
-  const [useFullResolution, setUseFullResolution] = React.useState(false);
-  const [loadingFullResolution, setLoadingFullResolution] =
-    React.useState(false);
+  const [showFullResolution, setShowFullResolution] = React.useState(false);
+  const [fullResolutionStatus, setFullResolutionStatus] = React.useState<
+    "none" | "loading" | "available"
+  >("none");
+  const { t } = useTranslation();
 
   const theme = useTheme();
   const fullScreen = useMediaQuery(theme.breakpoints.down("md"));
 
   React.useEffect(() => {
-    setUseFullResolution(false);
-    setLoadingFullResolution(false);
+    setShowFullResolution(false);
+    setFullResolutionStatus("none");
   }, [src]);
 
   return (
@@ -81,30 +84,12 @@ const ZoomableImage = ({
         open={isOpen}
         onClose={() => {
           setIsOpen(false);
-          setUseFullResolution(false);
-          setLoadingFullResolution(false);
+          setShowFullResolution(false);
+          setFullResolutionStatus("none");
         }}
         maxWidth="xl"
         fullScreen={fullScreen}
       >
-        {loadingFullResolution && (
-          <Box
-            sx={{
-              position: "absolute",
-              inset: 0,
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              backgroundColor: "rgba(0, 0, 0, 0.6)",
-              zIndex: 10,
-            }}
-          >
-            <IconButton onClick={() => setIsOpen(false)}>
-              <CloseIcon />
-            </IconButton>
-            <Loader />
-          </Box>
-        )}
         <Divider />
         <DialogContent
           sx={{
@@ -112,41 +97,58 @@ const ZoomableImage = ({
             position: "relative",
           }}
         >
-          <TransformWrapper limitToBounds={false} ref={apiRef}>
-            <TransformComponent>
-              <img
-                src={useFullResolution && srcFull ? srcFull : src}
-                alt=""
-                loading="lazy"
-                style={{
-                  maxHeight: "calc(100vh - 160px)",
-                  maxWidth: "100%",
-                  width: "100%",
-                  height: "auto",
-                  objectFit: "contain",
-                  transform: `rotate(${rotation * 90}deg)`,
-                  transformOrigin: "center",
-                  display: "block",
-                  margin: "auto",
+          <Box position="relative">
+            <TransformWrapper limitToBounds={false} ref={apiRef}>
+              <TransformComponent>
+                <img
+                  src={showFullResolution && srcFull ? srcFull : src}
+                  alt=""
+                  loading="lazy"
+                  style={{
+                    maxHeight: "80vh",
+                    maxWidth: "100%",
+                    width: "100%",
+                    height: "auto",
+                    objectFit: "contain",
+                    transform: `rotate(${rotation * 90}deg)`,
+                    transformOrigin: "center",
+                    display: "block",
+                    margin: "auto",
+                  }}
+                />
+              </TransformComponent>
+            </TransformWrapper>
+            {fullResolutionStatus === "loading" && (
+              <Box
+                sx={{
+                  position: "absolute",
+                  inset: 0,
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  backgroundColor: "rgba(0, 0, 0, 0.6)",
+                  zIndex: 10,
                 }}
-              />
-            </TransformComponent>
-          </TransformWrapper>
+              >
+                <Loader />
+              </Box>
+            )}
+          </Box>
           {srcFull && (
             <Button
-              disabled={loadingFullResolution}
-              variant={useFullResolution ? "contained" : "outlined"}
+              disabled={fullResolutionStatus === "loading"}
+              variant="outlined"
               onClick={() => {
-                if (!useFullResolution && srcFull) {
-                  setLoadingFullResolution(true);
+                if (!showFullResolution && srcFull) {
+                  setFullResolutionStatus("loading");
                   const img = new Image();
                   img.src = srcFull;
                   img.onload = () => {
-                    setLoadingFullResolution(false);
-                    setUseFullResolution(true);
+                    setFullResolutionStatus("available");
+                    setShowFullResolution(true);
                   };
                 } else {
-                  setUseFullResolution(false);
+                  setShowFullResolution(false);
                 }
               }}
               sx={{
@@ -160,7 +162,11 @@ const ZoomableImage = ({
                 },
               }}
             >
-              {useFullResolution ? "Compressed" : "Load Original"}
+              {t(
+                showFullResolution
+                  ? "image_viewer.compressed"
+                  : "image_viewer.load_original",
+              )}
             </Button>
           )}
         </DialogContent>
