@@ -195,7 +195,7 @@ const ProductInformation = () => {
                   loading: "lazy",
                   style: {
                     maxWidth: 300,
-                    height: 300,
+                    maxHeight: 300,
                     borderRadius: "3px",
                   },
                 }}
