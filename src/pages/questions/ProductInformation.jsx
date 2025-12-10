@@ -39,6 +39,7 @@ import {
 import useQuestions from "../../hooks/useQuestions";
 import { useProductData } from "../../hooks/useProduct";
 import { useTheme } from "@mui/material/styles";
+import UserData from "./UserData";
 
 const ProductInformation = () => {
   const { t } = useTranslation();
@@ -67,40 +68,53 @@ const ProductInformation = () => {
   return (
     <Box>
       {/* Main information about the product */}
-      <Typography>{productData?.productName}</Typography>
-      <Button
-        size="small"
-        component={Link}
-        target="_blank"
-        href={offService.getProductUrl(question.barcode)}
-        variant="outlined"
-        startIcon={<VisibilityIcon />}
-        sx={{ minWidth: 150 }}
+      <Box
+        sx={{
+          display: "flex",
+          alignItems: "center",
+          flexWrap: "wrap", // optional
+          gap: 2,
+          my: 1,
+        }}
       >
-        {t("questions.view")}
-      </Button>
-      <Button
-        size="small"
-        component={Link}
-        target="_blank"
-        href={offService.getProductEditUrl(question.barcode)}
-        variant="contained"
-        startIcon={<EditIcon />}
-        sx={{ ml: 2, minWidth: 150 }}
-      >
-        {t("questions.edit")}
-      </Button>
-      <Button
-        size="small"
-        component={Link}
-        target="_blank"
-        href={offService.getLogoCropsByBarcodeUrl(question.barcode)}
-        variant="contained"
-        startIcon={<EditIcon />}
-        sx={{ ml: 2, minWidth: 150 }}
-      >
-        {t("insights.view_crops_for_this_product")}
-      </Button>
+        <Typography>{productData?.productName}</Typography>
+        <Button
+          size="small"
+          component={Link}
+          target="_blank"
+          href={offService.getProductUrl(question.barcode)}
+          variant="outlined"
+          startIcon={<VisibilityIcon />}
+          sx={{ minWidth: 100 }}
+        >
+          {t("questions.view")}
+        </Button>
+        <Button
+          size="small"
+          component={Link}
+          target="_blank"
+          href={offService.getProductEditUrl(question.barcode)}
+          variant="contained"
+          startIcon={<EditIcon />}
+          sx={{ ml: 2, minWidth: 100 }}
+        >
+          {t("questions.edit")}
+        </Button>
+        <Button
+          size="small"
+          component={Link}
+          target="_blank"
+          href={offService.getLogoCropsByBarcodeUrl(question.barcode)}
+          variant="contained"
+          startIcon={<EditIcon />}
+          sx={{ ml: 2, minWidth: 100 }}
+        >
+          {t("insights.view_crops_for_this_product")}
+        </Button>
+        <Grid item xs="auto" md="auto" sx={{ py: 1 }}>
+          <UserData />
+        </Grid>
+      </Box>
       {
         /* Other questions */
 
@@ -123,18 +137,67 @@ const ProductInformation = () => {
         labelPlacement="end"
       />
       {!hideImages && productData?.images && (
-        <Grid container rowSpacing={1.5} spacing={1}>
+        <Box
+          sx={{
+            display: "grid",
+            gridColumnGap: "100px",
+            gridRowGap: "30px",
+            gridTemplateColumns: "repeat(auto-fill, minmax(13rem, 1fr))",
+            backgroundColor: "#201f1ff5",
+            maxHeight: "36rem",
+            overflowY: "scroll",
+            ml: "1px",
+            mt: "2px",
+            pl: "10px",
+            py: "10px",
+            borderRadius: "10px",
+            justifyContent: { xs: "center", md: "center" },
+
+            /* Scrollbar styles (Chrome, Edge, Safari) */
+            "&::-webkit-scrollbar": {
+              width: "8px",
+            },
+            "&::-webkit-scrollbar-track": {
+              background: "#201f1f",
+              borderRadius: "10px",
+            },
+            "&::-webkit-scrollbar-thumb": {
+              backgroundColor: "#888",
+              borderRadius: "10px",
+            },
+            "&::-webkit-scrollbar-thumb:hover": {
+              background: "#aaa",
+            },
+
+            /* Firefox */
+            scrollbarWidth: "thin",
+            scrollbarColor: "#888 #201f1f",
+          }}
+        >
           {getImagesUrls(productData.images, question.barcode).map((src) => (
-            <Grid
+            <Box
               item
               key={src}
-              style={{ display: "inline-flex", alignItems: "flex-start" }}
+              sx={{
+                width: "100%",
+                display: "flex",
+                alignItems: "flex-start",
+                justifyContent: {
+                  xs: "center",
+                  sm: "normal",
+                  lg: "normal",
+                },
+              }}
             >
               <ZoomableImage
                 src={src}
                 imageProps={{
                   loading: "lazy",
-                  style: { maxWidth: 300, maxHeight: 300 },
+                  style: {
+                    maxWidth: 300,
+                    height: 300,
+                    borderRadius: "3px",
+                  },
                 }}
               />
               {flagged.includes(getImageId(src)) ? (
@@ -152,70 +215,79 @@ const ProductInformation = () => {
                   </IconButton>
                 </Tooltip>
               )}
-            </Grid>
+            </Box>
           ))}
-        </Grid>
+        </Box>
       )}
 
       {/* Remaining info */}
       <Divider />
+      <div
+        md={{
+          position: "absolute",
+          width: "40rem",
+          left: "0px",
+          top: "99vh",
+          padding: "2rem",
+        }}
+      >
+        <Table size="small">
+          <TableBody
+            sx={{
+              " td, th": { border: "none" },
+              th: { verticalAlign: "top", pr: 0 },
+            }}
+          >
+            {Object.keys(ADDITIONAL_INFO_TRANSLATION).map((infoKey) => {
+              const { i18nKey, translatedKey, getLink } =
+                ADDITIONAL_INFO_TRANSLATION[infoKey];
 
-      <Table size="small">
-        <TableBody
-          sx={{
-            " td, th": { border: "none" },
-            th: { verticalAlign: "top", pr: 0 },
-          }}
-        >
-          {Object.keys(ADDITIONAL_INFO_TRANSLATION).map((infoKey) => {
-            const { i18nKey, translatedKey, getLink } =
-              ADDITIONAL_INFO_TRANSLATION[infoKey];
+              const value =
+                (translatedKey && productData?.[translatedKey]) ??
+                productData?.[infoKey] ??
+                "?";
 
-            const value =
-              (translatedKey && productData?.[translatedKey]) ??
-              productData?.[infoKey] ??
-              "?";
-
-            return (
-              <TableRow key={infoKey}>
-                <TableCell component="th" scope="row">
-                  {t(`questions.${i18nKey}`)}
-                </TableCell>
-                {Array.isArray(value) ? (
-                  <TableCell
-                    sx={{
-                      "& a": {
-                        color:
-                          theme.palette.mode === "dark" ? "white" : "black",
-                        textDecoration: "none",
-                        fontWeight: 500,
-                        "&:hover": { textDecoration: "underline" },
-                      },
-                    }}
-                  >
-                    {getLink
-                      ? value.map((name, index) => (
-                          <React.Fragment key={name}>
-                            <a
-                              href={getLink(name)}
-                              target="_blank"
-                              rel="noreferrer"
-                            >
-                              {name}
-                            </a>
-                            {index < value.length - 1 ? ", " : ""}
-                          </React.Fragment>
-                        ))
-                      : value.join(", ")}
+              return (
+                <TableRow key={infoKey}>
+                  <TableCell component="th" scope="row">
+                    {t(`questions.${i18nKey}`)}
                   </TableCell>
-                ) : (
-                  <TableCell>{value}</TableCell>
-                )}
-              </TableRow>
-            );
-          })}
-        </TableBody>
-      </Table>
+                  {Array.isArray(value) ? (
+                    <TableCell
+                      sx={{
+                        "& a": {
+                          color:
+                            theme.palette.mode === "dark" ? "white" : "black",
+                          textDecoration: "none",
+                          fontWeight: 500,
+                          "&:hover": { textDecoration: "underline" },
+                        },
+                      }}
+                    >
+                      {getLink
+                        ? value.map((name, index) => (
+                            <React.Fragment key={name}>
+                              <a
+                                href={getLink(name)}
+                                target="_blank"
+                                rel="noreferrer"
+                              >
+                                {name}
+                              </a>
+                              {index < value.length - 1 ? ", " : ""}
+                            </React.Fragment>
+                          ))
+                        : value.join(", ")}
+                    </TableCell>
+                  ) : (
+                    <TableCell>{value}</TableCell>
+                  )}
+                </TableRow>
+              );
+            })}
+          </TableBody>
+        </Table>
+      </div>
       {isDevMode && devCustomization.showDebug && (
         <DebugQuestion insightId={question.insight_id} />
       )}
