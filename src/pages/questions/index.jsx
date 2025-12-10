@@ -12,7 +12,7 @@ import Grid from "@mui/material/Grid";
 function QuestionsConsumer() {
   return (
     <Grid container spacing={2} p={2}>
-      <Grid item xs={12} md={6}>
+      <Grid item xs={12} md={5}>
         <Stack
           direction="column"
           sx={{
@@ -24,12 +24,12 @@ function QuestionsConsumer() {
           <QuestionDisplay />
         </Stack>
       </Grid>
-      <Grid item xs={12} md={6}>
+      <Grid item xs={12} md={5}>
         <ProductInformation />
       </Grid>
-      {/* <Grid item xs={12} md={2}>
+      <Grid item xs={12} md={2}>
         <UserData />
-      </Grid> */}
+      </Grid>
 
       {/* pre-fetch images of the next question */}
       {/* {nextImages.map((source_image_url) => (
