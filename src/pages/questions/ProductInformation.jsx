@@ -140,18 +140,17 @@ const ProductInformation = () => {
         <Box
           sx={{
             display: "grid",
-            gridColumnGap: "100px",
-            gridRowGap: "30px",
-            gridTemplateColumns: "repeat(auto-fill, minmax(13rem, 1fr))",
+            gridGap: "20px",
+            gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))",
+
             backgroundColor: "#201f1ff5",
-            maxHeight: "36rem",
+            maxHeight: "32rem",
             overflowY: "scroll",
             ml: "1px",
             mt: "2px",
             pl: "10px",
             py: "10px",
             borderRadius: "10px",
-            justifyContent: { xs: "center", md: "center" },
 
             /* Scrollbar styles (Chrome, Edge, Safari) */
             "&::-webkit-scrollbar": {
@@ -171,7 +170,7 @@ const ProductInformation = () => {
 
             /* Firefox */
             scrollbarWidth: "thin",
-            scrollbarColor: "#888 #201f1f",
+            scrollbarColor: "#4e4d4dff #201f1f",
           }}
         >
           {getImagesUrls(productData.images, question.barcode).map((src) => (
@@ -182,11 +181,6 @@ const ProductInformation = () => {
                 width: "100%",
                 display: "flex",
                 alignItems: "flex-start",
-                justifyContent: {
-                  xs: "center",
-                  sm: "normal",
-                  lg: "normal",
-                },
               }}
             >
               <ZoomableImage
@@ -194,9 +188,11 @@ const ProductInformation = () => {
                 imageProps={{
                   loading: "lazy",
                   style: {
+                    width: "100%",
+                    height: "auto",
                     maxWidth: 300,
                     maxHeight: 300,
-                    borderRadius: "3px",
+                    borderRadius: "2px",
                   },
                 }}
               />
