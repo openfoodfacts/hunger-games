@@ -19,6 +19,8 @@ import RotateRightIcon from "@mui/icons-material/RotateRight";
 import OpenInFullIcon from "@mui/icons-material/OpenInFull";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { useTheme } from "@mui/material/styles";
+import Loader from "../pages/loader";
+import { useTranslation } from "react-i18next";
 
 type ZoomableImageProps = {
   src: string;
@@ -37,9 +39,19 @@ const ZoomableImage = ({
   const apiRef = React.useRef<ReactZoomPanPinchRef>(null);
   const [rotation, setRotation] = React.useState(0);
   const [isOpen, setIsOpen] = React.useState(false);
+  const [showFullResolution, setShowFullResolution] = React.useState(false);
+  const [fullResolutionStatus, setFullResolutionStatus] = React.useState<
+    "none" | "loading" | "available"
+  >("none");
+  const { t } = useTranslation();
 
   const theme = useTheme();
   const fullScreen = useMediaQuery(theme.breakpoints.down("md"));
+
+  React.useEffect(() => {
+    setShowFullResolution(false);
+    setFullResolutionStatus("none");
+  }, [src]);
 
   return (
     <>
@@ -72,41 +84,85 @@ const ZoomableImage = ({
         open={isOpen}
         onClose={() => {
           setIsOpen(false);
+          setShowFullResolution(false);
+          setFullResolutionStatus("none");
         }}
         maxWidth="xl"
         fullScreen={fullScreen}
       >
-        <Box
-          sx={{
-            p: 1,
-            display: "flex",
-            flexDirection: "row-reverse",
-          }}
-        >
-          <IconButton onClick={() => setIsOpen(false)}>
-            <CloseIcon />
-          </IconButton>
-        </Box>
         <Divider />
         <DialogContent
           sx={{
             p: { xs: 1, md: 2 },
+            position: "relative",
           }}
         >
-          <TransformWrapper limitToBounds={false} ref={apiRef}>
-            <TransformComponent>
-              <img
-                src={srcFull ?? src}
-                alt=""
-                style={{
-                  maxHeight: "calc(100vh - 160px )",
-                  maxWidth: "min(100%, 1400px)",
-                  transform: `rotate(${rotation * 90}deg)`,
-                  transformOrigin: "center",
+          <Box>
+            <TransformWrapper limitToBounds={false} ref={apiRef}>
+              <TransformComponent>
+                <img
+                  src={showFullResolution && srcFull ? srcFull : src}
+                  alt=""
+                  style={{
+                    maxHeight: "calc(100vh - 160px )",
+                    maxWidth: "100%",
+                    transform: `rotate(${rotation * 90}deg)`,
+                    transformOrigin: "center",
+                  }}
+                />
+              </TransformComponent>
+            </TransformWrapper>
+            {fullResolutionStatus === "loading" && (
+              <Box
+                sx={{
+                  position: "absolute",
+                  inset: 0,
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  backgroundColor: "rgba(0, 0, 0, 0.6)",
+                  zIndex: 10,
                 }}
-              />
-            </TransformComponent>
-          </TransformWrapper>
+              >
+                <Loader />
+              </Box>
+            )}
+          </Box>
+          {srcFull && (
+            <Button
+              disabled={fullResolutionStatus === "loading"}
+              variant="outlined"
+              onClick={() => {
+                if (!showFullResolution && srcFull) {
+                  setFullResolutionStatus("loading");
+                  const img = new Image();
+                  img.src = srcFull;
+                  img.onload = () => {
+                    setFullResolutionStatus("available");
+                    setShowFullResolution(true);
+                  };
+                } else {
+                  setShowFullResolution(false);
+                }
+              }}
+              sx={{
+                position: "absolute",
+                bottom: 16,
+                right: 16,
+                zIndex: 10,
+                backgroundColor: alpha(theme.palette.background.paper, 0.7),
+                "&:hover": {
+                  backgroundColor: alpha(theme.palette.background.paper, 0.9),
+                },
+              }}
+            >
+              {t(
+                showFullResolution
+                  ? "image_viewer.compressed"
+                  : "image_viewer.load_original",
+              )}
+            </Button>
+          )}
         </DialogContent>
         <DialogActions>
           <Button
