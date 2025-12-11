@@ -188,12 +188,11 @@ export default function QuestionDisplay() {
           <ZoomableImage
             src={question.source_image_url}
             srcFull={getFullSizeImage(question.source_image_url)}
-            alt=""
             style={{
               height: isDesktop ? "100%" : "calc(100% - 24px)",
               display: "inline-block",
             }}
-            imageProps={{ style: { maxHeight: "100%", maxWidth: "100%" } }}
+            imageProps={{ alt: "", style: { maxHeight: "100%", maxWidth: "100%" } }}
           />
         ) : (
           <Typography sx={{ marginTop: 20 }}>Image not found</Typography>
