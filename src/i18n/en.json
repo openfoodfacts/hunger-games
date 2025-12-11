@@ -328,6 +328,7 @@
     "validate_serving": "Validate (serving)",
     "skip": "Skip",
     "invalid_image": "Invalid image",
+    "robotOffPredictionError": "Nutrition information is temporarily unavailable. Please try again in a few minutes.",
     "pictures": {
       "picture_date": "Photo uploaded",
       "selected_as_nutrients": "Selected as nutriment image ✅",
@@ -375,7 +376,8 @@
     "parsing": "Get server understanding",
     "send": "Validate & send",
     "skip": "Skip this product",
-    "getRobotoffPrediciton": "Get predictions from Robotoff"
+    "getRobotoffPrediciton": "Get predictions from Robotoff",
+    "robotOffPredictionError": "Ingredient detection is temporarily unavailable. Please try again in a few minutes."
   },
   "footer": {
     "appStore": {
