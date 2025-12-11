@@ -6,7 +6,6 @@ import Divider from "@mui/material/Divider";
 import Checkbox from "@mui/material/Checkbox";
 import Typography from "@mui/material/Typography";
 import FormControlLabel from "@mui/material/FormControlLabel";
-import Grid from "@mui/material/Grid";
 import EditIcon from "@mui/icons-material/Edit";
 import VisibilityIcon from "@mui/icons-material/Visibility";
 import Table from "@mui/material/Table";
@@ -75,7 +74,7 @@ const ProductInformation = () => {
         href={offService.getProductUrl(question.barcode)}
         variant="outlined"
         startIcon={<VisibilityIcon />}
-        sx={{ minWidth: 150 }}
+        sx={{ minWidth: 100 }}
       >
         {t("questions.view")}
       </Button>
@@ -86,7 +85,7 @@ const ProductInformation = () => {
         href={offService.getProductEditUrl(question.barcode)}
         variant="contained"
         startIcon={<EditIcon />}
-        sx={{ ml: 2, minWidth: 150 }}
+        sx={{ ml: 2, minWidth: 100 }}
       >
         {t("questions.edit")}
       </Button>
@@ -97,7 +96,7 @@ const ProductInformation = () => {
         href={offService.getLogoCropsByBarcodeUrl(question.barcode)}
         variant="contained"
         startIcon={<EditIcon />}
-        sx={{ ml: 2, minWidth: 150 }}
+        sx={{ ml: 2, minWidth: 100 }}
       >
         {t("insights.view_crops_for_this_product")}
       </Button>
@@ -123,18 +122,48 @@ const ProductInformation = () => {
         labelPlacement="end"
       />
       {!hideImages && productData?.images && (
-        <Grid container rowSpacing={1.5} spacing={1}>
+        <Box
+          sx={{
+            display: "grid",
+            width: "100%",
+            gridGap: "30px",
+            gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))",
+
+            backgroundColor:
+              theme.palette.mode === "dark" ? "#201f1ff5" : "white",
+            maxHeight: "32rem",
+            overflowY: "scroll",
+            ml: "1px",
+            mt: "2px",
+            pl: "10px",
+            py: "10px",
+            borderRadius: "10px",
+            scrollbarWidth: "thin",
+            scrollbarColor:
+              theme.palette.mode === "dark" ? "#4e4d4dff #201f1f" : "",
+          }}
+        >
           {getImagesUrls(productData.images, question.barcode).map((src) => (
-            <Grid
+            <Box
               item
               key={src}
-              style={{ display: "inline-flex", alignItems: "flex-start" }}
+              sx={{
+                width: "100%",
+                display: "flex",
+                alignItems: "flex-start",
+              }}
             >
               <ZoomableImage
                 src={src}
                 imageProps={{
                   loading: "lazy",
-                  style: { maxWidth: 300, maxHeight: 300 },
+                  style: {
+                    width: "100%",
+                    height: "auto",
+                    maxWidth: 300,
+                    maxHeight: 300,
+                    borderRadius: "2px",
+                  },
                 }}
               />
               {flagged.includes(getImageId(src)) ? (
@@ -152,14 +181,13 @@ const ProductInformation = () => {
                   </IconButton>
                 </Tooltip>
               )}
-            </Grid>
+            </Box>
           ))}
-        </Grid>
+        </Box>
       )}
 
       {/* Remaining info */}
       <Divider />
-
       <Table size="small">
         <TableBody
           sx={{
