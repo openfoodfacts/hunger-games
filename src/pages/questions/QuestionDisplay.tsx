@@ -15,6 +15,7 @@ import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 
 import Loader from "../loader";
+import QuestionSkeleton from "./QuestionSkeleton";
 
 import { useTranslation } from "react-i18next";
 import {
@@ -71,7 +72,7 @@ const usePotentialQuestionNumber = (
           setNbOfPotentialQuestions(nbQuestions);
         }
       })
-      .catch(() => {});
+      .catch(() => { });
 
     return () => {
       validRequest = false;
@@ -104,13 +105,7 @@ export default function QuestionDisplay() {
   if (question === null) {
     if (status === "pending") {
       return (
-        <Box sx={{ width: "100%", textAlign: "center", py: 10, m: 0 }}>
-          <Typography variant="subtitle1">
-            {t("questions.please_wait_while_we_fetch_the_question")}
-          </Typography>
-          <br />
-          <Loader />
-        </Box>
+        <QuestionSkeleton />
       );
     }
     if (status === "error") {
@@ -174,9 +169,8 @@ export default function QuestionDisplay() {
             rel="noreferrer"
             sx={{ mb: 2, display: { xs: "none", md: "inherit" } }}
           >
-            <div>{`${t("questions.see_examples")} ${
-              question.insight_type
-            }`}</div>
+            <div>{`${t("questions.see_examples")} ${question.insight_type
+              }`}</div>
           </MuiLink>
         )}
       </Stack>
@@ -194,12 +188,11 @@ export default function QuestionDisplay() {
           <ZoomableImage
             src={question.source_image_url}
             srcFull={getFullSizeImage(question.source_image_url)}
-            alt=""
             style={{
               height: isDesktop ? "100%" : "calc(100% - 24px)",
               display: "inline-block",
             }}
-            imageProps={{ style: { maxHeight: "100%", maxWidth: "100%" } }}
+            imageProps={{ alt: "", style: { maxHeight: "100%", maxWidth: "100%" } }}
           />
         ) : (
           <Typography sx={{ marginTop: 20 }}>Image not found</Typography>
