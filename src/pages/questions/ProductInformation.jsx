@@ -147,7 +147,6 @@ const ProductInformation = () => {
             .reverse()
             .map((src) => (
               <Box>
-                {src.uploaded_t}
                 <Box
                   item
                   key={src.imageUrl}
@@ -192,6 +191,7 @@ const ProductInformation = () => {
                     </Tooltip>
                   )}
                 </Box>
+                <Typography variant="caption">{src.uploaded_t}</Typography>
               </Box>
             ))}
         </Box>

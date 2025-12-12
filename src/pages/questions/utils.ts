@@ -40,15 +40,12 @@ export const getImageId = (src: string) => {
   return Number(imageId);
 };
 
-const getUploadedTime = (data: number) => {
-  const date = new Date(data * 1000).toLocaleDateString(undefined, {
+const getUploadedTime = (data: number) =>
+  new Date(data * 1000).toLocaleDateString(undefined, {
     year: "numeric",
     month: "short",
     day: "numeric",
   });
-
-  return date;
-};
 
 export const getImagesUrls = (images?: any, barcode?: any) => {
   if (!images || !barcode) {
