@@ -143,46 +143,57 @@ const ProductInformation = () => {
               theme.palette.mode === "dark" ? "#4e4d4dff #201f1f" : "",
           }}
         >
-          {getImagesUrls(productData.images, question.barcode).map((src) => (
-            <Box
-              item
-              key={src}
-              sx={{
-                width: "100%",
-                display: "flex",
-                alignItems: "flex-start",
-              }}
-            >
-              <ZoomableImage
-                src={src}
-                imageProps={{
-                  loading: "lazy",
-                  style: {
+          {getImagesUrls(productData.images, question.barcode)
+            .reverse()
+            .map((src) => (
+              <Box>
+                <Box
+                  item
+                  key={src.imageUrl}
+                  sx={{
                     width: "100%",
-                    height: "auto",
-                    maxWidth: 300,
-                    maxHeight: 300,
-                    borderRadius: "2px",
-                  },
-                }}
-              />
-              {flagged.includes(getImageId(src)) ? (
-                <Tooltip title={t("questions.unflag")}>
-                  <IconButton
-                    onClick={() => deleteFlagImage(src, question.barcode)}
-                  >
-                    <FlagIcon />
-                  </IconButton>
-                </Tooltip>
-              ) : (
-                <Tooltip title={t("questions.flag")}>
-                  <IconButton onClick={() => flagImage(src, question.barcode)}>
-                    <OutlinedFlagIcon />
-                  </IconButton>
-                </Tooltip>
-              )}
-            </Box>
-          ))}
+                    display: "flex",
+                    alignItems: "flex-start",
+                  }}
+                >
+                  <ZoomableImage
+                    src={src.imageUrl}
+                    imageProps={{
+                      loading: "lazy",
+                      style: {
+                        width: "100%",
+                        height: "auto",
+                        maxWidth: 300,
+                        maxHeight: 300,
+                        borderRadius: "2px",
+                      },
+                    }}
+                  />
+                  {flagged.includes(getImageId(src.imageUrl)) ? (
+                    <Tooltip title={t("questions.unflag")}>
+                      <IconButton
+                        onClick={() =>
+                          deleteFlagImage(src.imageUrl, question.barcode)
+                        }
+                      >
+                        <FlagIcon />
+                      </IconButton>
+                    </Tooltip>
+                  ) : (
+                    <Tooltip title={t("questions.flag")}>
+                      <IconButton
+                        onClick={() =>
+                          flagImage(src.imageUrl, question.barcode)
+                        }
+                      >
+                        <OutlinedFlagIcon />
+                      </IconButton>
+                    </Tooltip>
+                  )}
+                </Box>
+                <Typography variant="caption">{src.uploaded_t}</Typography>
+              </Box>
+            ))}
         </Box>
       )}
 

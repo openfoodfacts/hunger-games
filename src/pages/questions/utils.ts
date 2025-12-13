@@ -40,6 +40,13 @@ export const getImageId = (src: string) => {
   return Number(imageId);
 };
 
+const getUploadedTime = (data: number) =>
+  new Date(data * 1000).toLocaleDateString(undefined, {
+    year: "numeric",
+    month: "short",
+    day: "numeric",
+  });
+
 export const getImagesUrls = (images?: any, barcode?: any) => {
   if (!images || !barcode) {
     return [];
@@ -48,7 +55,10 @@ export const getImagesUrls = (images?: any, barcode?: any) => {
   const rootImageUrl = offService.getImageUrl(formattedCode);
   return Object.keys(images)
     .filter((key) => !isNaN(Number.parseInt(key)))
-    .map((key) => `${rootImageUrl}/${key}.400.jpg`);
+    .map((key) => ({
+      imageUrl: `${rootImageUrl}/${key}.400.jpg`,
+      uploaded_t: getUploadedTime(images[key].uploaded_t),
+    }));
 };
 
 export const useFlagImage = (barcode?: string) => {
