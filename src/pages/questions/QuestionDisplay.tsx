@@ -99,6 +99,10 @@ export default function QuestionDisplay() {
     filterState,
     question,
   );
+  const [imageLoaded, setImageLoaded] = React.useState(false);
+  React.useEffect(() => {
+    setImageLoaded(false);
+  }, [question?.source_image_url]);
   const shortcuts = useKeyboardShortcuts(question, answerQuestion);
 
   if (question === null) {
@@ -191,16 +195,31 @@ export default function QuestionDisplay() {
         }}
       >
         {question.source_image_url ? (
-          <ZoomableImage
-            src={question.source_image_url}
-            srcFull={getFullSizeImage(question.source_image_url)}
-            alt=""
-            style={{
-              height: isDesktop ? "100%" : "calc(100% - 24px)",
-              display: "inline-block",
-            }}
-            imageProps={{ style: { maxHeight: "100%", maxWidth: "100%" } }}
-          />
+          <>
+            {!imageLoaded && (
+              <Box
+                sx={{
+                  height: isDesktop ? "100%" : "calc(100% - 24px)",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+              >
+                <Loader />
+              </Box>
+            )}
+            <ZoomableImage
+              src={question.source_image_url}
+              srcFull={getFullSizeImage(question.source_image_url)}
+              alt=""
+              onLoad={() => setImageLoaded(true)}
+              style={{
+                height: isDesktop ? "100%" : "calc(100% - 24px)",
+                display: imageLoaded ? "inline-block" : "none",
+              }}
+              imageProps={{ style: { maxHeight: "100%", maxWidth: "100%" } }}
+            />
+          </>
         ) : (
           <Typography sx={{ marginTop: 20 }}>Image not found</Typography>
         )}
