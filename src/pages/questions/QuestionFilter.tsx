@@ -99,6 +99,19 @@ const getChipsParams = (
         });
       },
     },
+    {
+      key: "predictor",
+      display: !!filterState.predictor,
+      label: `${t(
+        "questions.filters.short_label.predictor",
+      )}: ${filterState.predictor}`,
+      onDelete: () => {
+        setSearchParams((prev) => {
+          prev.delete("predictor");
+          return prev;
+        });
+      },
+    },
   ].filter((item) => item.display);
 
 export const QuestionFilter = () => {
