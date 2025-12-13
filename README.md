@@ -44,6 +44,12 @@ The main goal is: Every Open Food Facts user can annotate products in a few minu
 
 ## 👩‍💻 Development
 
+### Other projects that Hunger Games is built upon
+
+Hunger Games is built upon the following projects. Contributions to these projects will benefit Hunger Games, and they use the same technologies (JavaScript):
+- https://github.com/openfoodfacts/openfoodfacts-js
+- https://github.com/openfoodfacts/openfoodfacts-webcomponents
+
 ### Requirements:
 
 - [Node](https://nodejs.org)
