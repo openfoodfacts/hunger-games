@@ -88,7 +88,8 @@
         "country": "country",
         "brand": "brand",
         "popularity": "popularity",
-        "campaign": "camp"
+        "campaign": "camp",
+        "predictor": "predictor nisqa"
       },
       "long_label": {
         "type": "Question Type",
@@ -97,12 +98,26 @@
         "brand": "Product Brand",
         "popularity": "Sort by popularity",
         "edit": "",
-        "campaign": "Campaign"
+        "campaign": "Campaign",
+        "predictor": "Willakuq (Pukyu) ."
       },
       "placeholders": {
         "value": "Value (Fanta, en:organic,...)",
         "brand": "Auchan, Danone, Herta, ...",
-        "campaign": "Annotation campaigns"
+        "campaign": "Annotation campaigns",
+        "predictor": "universal-logotipo-detector, regex, ..."
+      },
+      "all_predictors": "Tukuy willakkuna",
+      "predictor": {
+        "ridge_model_ml": "Ridge Modelo ML",
+        "neural": "Neural nisqa",
+        "matcher": "Matcher",
+        "google_cloud_vision": "Google Puyu Rikuy",
+        "regex": "Regex",
+        "flashtext": "FlashTexto nisqa",
+        "nutriscore": "Nutriscore nisqa",
+        "universal_logo_detector": "Universal Logotipo Detector nisqa",
+        "ocr": "OCR"
       },
       "actions": {
         "edit": "Edit Filters",
