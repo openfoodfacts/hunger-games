@@ -88,7 +88,8 @@
         "country": "land",
         "brand": "kjede",
         "popularity": "popularitet",
-        "campaign": "kamp"
+        "campaign": "kamp",
+        "predictor": "forutsiger"
       },
       "long_label": {
         "type": "Type spørsmål",
@@ -97,12 +98,26 @@
         "brand": "Produsent/merke",
         "popularity": "Sorter etter popularitet",
         "edit": "",
-        "campaign": "Kampanje"
+        "campaign": "Kampanje",
+        "predictor": "Forutsett (kilde)"
       },
       "placeholders": {
         "value": "Verdi (Fanta, en:organic,...)",
         "brand": "Tine, Gilde, Coca-Cola, ...",
-        "campaign": "Kommenteringskampanjer"
+        "campaign": "Kommenteringskampanjer",
+        "predictor": "universal-logo-detector, regex, ..."
+      },
+      "all_predictors": "Alle forutsigere",
+      "predictor": {
+        "ridge_model_ml": "Ridge Model ML",
+        "neural": "Nybegynner",
+        "matcher": "Matcher",
+        "google_cloud_vision": "Google Sky syn",
+        "regex": "Regex",
+        "flashtext": "FlashText",
+        "nutriscore": "Ernæring",
+        "universal_logo_detector": "Universal Logo Detektor",
+        "ocr": "OCR"
       },
       "actions": {
         "edit": "Rediger filtre",
