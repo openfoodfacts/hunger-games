@@ -88,7 +88,8 @@
         "country": "zemlja",
         "brand": "brend",
         "popularity": "popularnost",
-        "campaign": "kamp"
+        "campaign": "kamp",
+        "predictor": "prediktor"
       },
       "long_label": {
         "type": "Vrsta pitanja",
@@ -97,12 +98,26 @@
         "brand": "Marka proizvoda",
         "popularity": "Poredano po popularnosti",
         "edit": "",
-        "campaign": "Kampanja"
+        "campaign": "Kampanja",
+        "predictor": "Prediktor (Izvor)"
       },
       "placeholders": {
         "value": "Vrijednost",
         "brand": "...",
-        "campaign": ""
+        "campaign": "",
+        "predictor": "univerzalni detektor logotipa, regex, ..."
+      },
+      "all_predictors": "Svi prediktori",
+      "predictor": {
+        "ridge_model_ml": "Ridge Model ML",
+        "neural": "Neuralni",
+        "matcher": "Matcher",
+        "google_cloud_vision": "Google Cloud Vision",
+        "regex": "Regex",
+        "flashtext": "FlashText",
+        "nutriscore": "Nutriscore",
+        "universal_logo_detector": "Univerzalni detektor logotipa",
+        "ocr": "Optičko prepoznavanje znakova (OCR)"
       },
       "actions": {
         "edit": "Edit Filters",
