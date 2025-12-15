@@ -314,8 +314,17 @@ const ResponsiveAppBar = () => {
                   );
                 })}
                 <MenuItem
+                  color="inherit"
+                  sx={{ display: "block" }}
+                  component={Link}
+                  to={`https://nutripatrol.openfoodfacts.org`}
+                >
+                  <Typography textAlign="left">{"Moderation"}</Typography>
+                </MenuItem>
+                <MenuItem
                   component="button"
                   color="inherit"
+                  sx={{ mt: -1 }}
                   onClick={() => {
                     setIsTourOpen(true);
                     handleCloseNavMenu();
@@ -442,6 +451,14 @@ const ResponsiveAppBar = () => {
 
                 return null;
               })}
+              <Button
+                color="inherit"
+                sx={{ display: "block" }}
+                component={Link}
+                to={`https://nutripatrol.openfoodfacts.org`}
+              >
+                <Typography>{"Moderation"}</Typography>
+              </Button>
             </Box>
             <Box
               sx={{
