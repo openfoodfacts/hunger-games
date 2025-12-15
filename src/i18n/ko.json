@@ -234,15 +234,15 @@
       "description": "Select a logo you want to look for, and let's go to catch them all. For every logo you annotate, we will fetch it's neighbors such that you might never stop to annotate. (Press Shift to select range of logos)",
       "ref_logos": "Reference logos (logo already annotated with this value)",
       "remaining": "Remaining to annotate",
-      "select_all": "Select All",
-      "unselect_all": "Deselect All"
+      "select_all": "모두 선택",
+      "unselect_all": "모두 삭제"
     }
   },
   "settings": {
     "settings": "설정",
     "language": "언어",
     "save": "저장",
-    "reportIssue": "Found a bug? Please let us know.",
+    "reportIssue": "오류를 발견하셨나요? 제보해주세요.",
     "dev_mode_title": "더 많은 옵션을 얻으려면 개발자 모드를 활성화하세요",
     "dev_mode_label": "개발자 모드",
     "dev_page_toggle": "{{name}} 페이지 보기",
