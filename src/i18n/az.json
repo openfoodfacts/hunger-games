@@ -88,7 +88,8 @@
         "country": "ölkə",
         "brand": "brend",
         "popularity": "populyarlıq",
-        "campaign": "camp"
+        "campaign": "camp",
+        "predictor": "proqnozlaşdırıcı"
       },
       "long_label": {
         "type": "Sualın növü",
@@ -97,12 +98,26 @@
         "brand": "Məhsulun Markası",
         "popularity": "Populyarlığa görə sırala",
         "edit": "",
-        "campaign": "Kampaniya"
+        "campaign": "Kampaniya",
+        "predictor": "Proqnozlaşdırıcı (Mənbə)"
       },
       "placeholders": {
         "value": "Dəyər (Fanta, en:organic,...)",
         "brand": "Auchan, Danone, Herta, ...",
-        "campaign": "Annotasiya kampaniyaları"
+        "campaign": "Annotasiya kampaniyaları",
+        "predictor": "universal-loqo-detektor, regex, ..."
+      },
+      "all_predictors": "Bütün proqnozlaşdırıcılar",
+      "predictor": {
+        "ridge_model_ml": "Ridge Model ML",
+        "neural": "Neyron",
+        "matcher": "Uyğunlaşdırıcı",
+        "google_cloud_vision": "Google Cloud Vision",
+        "regex": "Regex",
+        "flashtext": "FlashText",
+        "nutriscore": "Nutriscore",
+        "universal_logo_detector": "Universal Loqo Detektoru",
+        "ocr": "OCR"
       },
       "actions": {
         "edit": "Filterləri dəyiş",
