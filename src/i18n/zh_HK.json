@@ -88,7 +88,8 @@
         "country": "國家",
         "brand": "品牌",
         "popularity": "人氣",
-        "campaign": "展銷"
+        "campaign": "展銷",
+        "predictor": "predictor"
       },
       "long_label": {
         "type": "問題類型",
@@ -97,12 +98,26 @@
         "brand": "產品品牌",
         "popularity": "依熱門程度排序",
         "edit": "",
-        "campaign": "展銷活動"
+        "campaign": "展銷活動",
+        "predictor": "Predictor (Source)"
       },
       "placeholders": {
         "value": "Value (Fanta, en:organic,...)",
         "brand": "Auchan, Danone, Herta, ...",
-        "campaign": "Annotation campaigns"
+        "campaign": "Annotation campaigns",
+        "predictor": "universal-logo-detector, regex, ..."
+      },
+      "all_predictors": "All predictors",
+      "predictor": {
+        "ridge_model_ml": "Ridge Model ML",
+        "neural": "Neural",
+        "matcher": "Matcher",
+        "google_cloud_vision": "Google Cloud Vision",
+        "regex": "Regex",
+        "flashtext": "FlashText",
+        "nutriscore": "Nutriscore",
+        "universal_logo_detector": "Universal Logo Detector",
+        "ocr": "OCR"
       },
       "actions": {
         "edit": "編輯篩選器",
