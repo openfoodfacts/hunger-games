@@ -88,7 +88,8 @@
         "country": "국가",
         "brand": "브랜드",
         "popularity": "인기도",
-        "campaign": "캠프"
+        "campaign": "캠프",
+        "predictor": "예언자"
       },
       "long_label": {
         "type": "질문 유형",
@@ -97,12 +98,26 @@
         "brand": "제품 제조사",
         "popularity": "인기순 정렬",
         "edit": "",
-        "campaign": "캠페인"
+        "campaign": "캠페인",
+        "predictor": "예측 변수(출처)"
       },
       "placeholders": {
         "value": "Value (Fanta, en:organic,...)",
         "brand": "Auchan, Danone, Herta, ...",
-        "campaign": "주석 캠페인"
+        "campaign": "주석 캠페인",
+        "predictor": "범용 로고 감지기, 정규 표현식, ..."
+      },
+      "all_predictors": "모든 예측 변수",
+      "predictor": {
+        "ridge_model_ml": "릿지 모델 ML",
+        "neural": "신경",
+        "matcher": "매처",
+        "google_cloud_vision": "구글 클라우드 비전",
+        "regex": "정규 표현식",
+        "flashtext": "플래시텍스트",
+        "nutriscore": "뉴트리스코어",
+        "universal_logo_detector": "범용 로고 감지기",
+        "ocr": "OCR"
       },
       "actions": {
         "edit": "필터 수정",
