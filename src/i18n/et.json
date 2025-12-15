@@ -88,7 +88,8 @@
         "country": "riik",
         "brand": "kaubamärk",
         "popularity": "popularity",
-        "campaign": "camp"
+        "campaign": "camp",
+        "predictor": "ennustaja"
       },
       "long_label": {
         "type": "Küsimuse tüüp",
@@ -97,12 +98,26 @@
         "brand": "Toote kaubamärk",
         "popularity": "Sordi populaarsuse alusel",
         "edit": "",
-        "campaign": "Kampaania"
+        "campaign": "Kampaania",
+        "predictor": "Ennustaja (allikas)"
       },
       "placeholders": {
         "value": "Value (Fanta, en:organic,...)",
         "brand": "Auchan, Danone, Herta, ...",
-        "campaign": "Annotation campaigns"
+        "campaign": "Annotation campaigns",
+        "predictor": "universaalne logodetektor, regulaaravaldis, ..."
+      },
+      "all_predictors": "Kõik ennustajad",
+      "predictor": {
+        "ridge_model_ml": "Ridge Model ML",
+        "neural": "Neuraalne",
+        "matcher": "Sobitaja",
+        "google_cloud_vision": "Google Cloud Vision",
+        "regex": "Regulaaravaldis",
+        "flashtext": "FlashText",
+        "nutriscore": "Nutriscore",
+        "universal_logo_detector": "Universaalne logodetektor",
+        "ocr": "OCR"
       },
       "actions": {
         "edit": "Edit Filters",
