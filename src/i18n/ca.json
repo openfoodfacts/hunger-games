@@ -88,7 +88,8 @@
         "country": "país",
         "brand": "marca",
         "popularity": "popularitat",
-        "campaign": "camp"
+        "campaign": "camp",
+        "predictor": "predictor"
       },
       "long_label": {
         "type": "Tipus de pregunta",
@@ -97,12 +98,26 @@
         "brand": "Marca del producte",
         "popularity": "Ordena per popularitat",
         "edit": "",
-        "campaign": "Campanya"
+        "campaign": "Campanya",
+        "predictor": "Predictor (Font)"
       },
       "placeholders": {
         "value": "Valor (Fanta, en:organic,...)",
         "brand": "Auchan, Danone, Herta,...",
-        "campaign": "Campanya d'anotacions"
+        "campaign": "Campanya d'anotacions",
+        "predictor": "detector-de-logotips-universal, expressió-regular, ..."
+      },
+      "all_predictors": "Tots els predictors",
+      "predictor": {
+        "ridge_model_ml": "Model de cresta ML",
+        "neural": "Neural",
+        "matcher": "Coincidència",
+        "google_cloud_vision": "Google Cloud Vision",
+        "regex": "Expressió regular",
+        "flashtext": "TextFlash",
+        "nutriscore": "Nutriscore",
+        "universal_logo_detector": "Detector de logotips universal",
+        "ocr": "OCR"
       },
       "actions": {
         "edit": "Edita els filtres",
