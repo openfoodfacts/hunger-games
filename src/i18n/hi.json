@@ -88,7 +88,8 @@
         "country": "देश",
         "brand": "ब्रांड",
         "popularity": "लोकप्रियता",
-        "campaign": "शिविर"
+        "campaign": "शिविर",
+        "predictor": "भविष्यवक्ता"
       },
       "long_label": {
         "type": "प्रश्न प्रकार",
@@ -97,12 +98,26 @@
         "brand": "उत्पाद का ब्रांड",
         "popularity": "लोकप्रियता के आधार पर क्रमबद्ध करें",
         "edit": "",
-        "campaign": "अभियान"
+        "campaign": "अभियान",
+        "predictor": "भविष्यवक्ता (स्रोत)"
       },
       "placeholders": {
         "value": "मूल्य (फैंटा, एन:ऑर्गेनिक,...)",
         "brand": "औचन, डैनोन, हर्टा, ...",
-        "campaign": "टिप्पणि अभियान"
+        "campaign": "टिप्पणि अभियान",
+        "predictor": "यूनिवर्सल-लोगो-डिटेक्टर, रेगुलर एक्सप्रेशन, ..."
+      },
+      "all_predictors": "सभी भविष्यवक्ता",
+      "predictor": {
+        "ridge_model_ml": "रिज मॉडल एमएल",
+        "neural": "तंत्रिका",
+        "matcher": "मिलान",
+        "google_cloud_vision": "गूगल क्लाउड विज़न",
+        "regex": "regex",
+        "flashtext": "फ्लैशटेक्स्ट",
+        "nutriscore": "न्यूट्रिस्कोर",
+        "universal_logo_detector": "यूनिवर्सल लोगो डिटेक्टर",
+        "ocr": "ओसीआर"
       },
       "actions": {
         "edit": "फ़िल्टर संपादित करें",
