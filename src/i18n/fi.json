@@ -88,7 +88,8 @@
         "country": "maa",
         "brand": "tuotemerkki",
         "popularity": "suosio",
-        "campaign": "leiri"
+        "campaign": "leiri",
+        "predictor": "ennustaja"
       },
       "long_label": {
         "type": "Kysymystyyppi",
@@ -97,12 +98,26 @@
         "brand": "Tuotemerkki",
         "popularity": "Lajittele suosion mukaan",
         "edit": "",
-        "campaign": "Kampanja"
+        "campaign": "Kampanja",
+        "predictor": "Ennustaja (Lähde)"
       },
       "placeholders": {
         "value": "Arvo (Fanta, fi:luomu,...)",
         "brand": "Pirkka, Valio, Fazer, ...",
-        "campaign": "Merkintäkampanjat"
+        "campaign": "Merkintäkampanjat",
+        "predictor": "universaali-logo-ilmaisin, regex, ..."
+      },
+      "all_predictors": "Kaikki ennustajat",
+      "predictor": {
+        "ridge_model_ml": "Harjamalli ML",
+        "neural": "Neuraalinen",
+        "matcher": "Yhdistäjä",
+        "google_cloud_vision": "Google Cloud Vision",
+        "regex": "Regex",
+        "flashtext": "FlashText",
+        "nutriscore": "Nutriscore",
+        "universal_logo_detector": "Universaali logonilmaisin",
+        "ocr": "OCR-tekstintunnistus"
       },
       "actions": {
         "edit": "Muokkaa suodattimia",
