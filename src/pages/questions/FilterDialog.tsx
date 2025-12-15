@@ -77,6 +77,9 @@ export default function FilterDialog(props: FilterDialogProps) {
   const [innerSortByPopularity, setInnerSortByPopularity] = React.useState(
     globalValues.sorted,
   );
+  const [innerPredictor, setInnerPredictor] = React.useState(
+    globalValues.predictor,
+  );
 
   const resetFilter = React.useCallback(() => {
     setInnerInsightType(globalValues.insightType);
@@ -85,6 +88,7 @@ export default function FilterDialog(props: FilterDialogProps) {
     setInnerBrandFilter(globalValues.brand);
     setInnerCampaign(globalValues.campaign);
     setInnerSortByPopularity(globalValues.sorted);
+    setInnerPredictor(globalValues.predictor);
   }, [globalValues]);
 
   const applyFilter = React.useCallback(() => {
@@ -95,6 +99,7 @@ export default function FilterDialog(props: FilterDialogProps) {
       brand: innerBrandFilter,
       campaign: innerCampaign,
       sorted: innerSortByPopularity,
+      predictor: innerPredictor,
     });
     onClose();
   }, [
@@ -104,6 +109,7 @@ export default function FilterDialog(props: FilterDialogProps) {
     innerBrandFilter,
     innerCampaign,
     innerSortByPopularity,
+    innerPredictor,
     onClose,
   ]);
 
@@ -196,6 +202,46 @@ export default function FilterDialog(props: FilterDialogProps) {
                 {val}
               </MenuItem>
             ))}
+          </TextField>
+
+          <TextField
+            select
+            value={innerPredictor}
+            onChange={(event) => setInnerPredictor(event.target.value)}
+            label={t("questions.filters.long_label.predictor")}
+            placeholder={t("questions.filters.placeholders.predictor")}
+            size="small"
+          >
+            <MenuItem value="">
+              <em>{t("questions.filters.all_predictors")}</em>
+            </MenuItem>
+            <MenuItem value="ridge_model-ml">
+              {t("questions.filters.predictor.ridge_model_ml")}
+            </MenuItem>
+            <MenuItem value="neural">
+              {t("questions.filters.predictor.neural")}
+            </MenuItem>
+            <MenuItem value="matcher">
+              {t("questions.filters.predictor.matcher")}
+            </MenuItem>
+            <MenuItem value="google-could-vision">
+              {t("questions.filters.predictor.google_cloud_vision")}
+            </MenuItem>
+            <MenuItem value="regex">
+              {t("questions.filters.predictor.regex")}
+            </MenuItem>
+            <MenuItem value="flashtext">
+              {t("questions.filters.predictor.flashtext")}
+            </MenuItem>
+            <MenuItem value="nutriscore">
+              {t("questions.filters.predictor.nutriscore")}
+            </MenuItem>
+            <MenuItem value="universal-logo-detector">
+              {t("questions.filters.predictor.universal_logo_detector")}
+            </MenuItem>
+            <MenuItem value="ocr">
+              {t("questions.filters.predictor.ocr")}
+            </MenuItem>
           </TextField>
 
           <FormControlLabel
