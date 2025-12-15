@@ -88,7 +88,8 @@
         "country": "страна",
         "brand": "марка",
         "popularity": "популярност",
-        "campaign": "лагер"
+        "campaign": "лагер",
+        "predictor": "предсказващ фактор"
       },
       "long_label": {
         "type": "Тип на въпроса",
@@ -97,12 +98,26 @@
         "brand": "Марка на продукта",
         "popularity": "Сортирай по популярност",
         "edit": "",
-        "campaign": "Кампания"
+        "campaign": "Кампания",
+        "predictor": "Предсказващ (източник)"
       },
       "placeholders": {
         "value": "Стойност (Fanta, bg:био,...)",
         "brand": "Фантастико, Кауфланд, Лидл, ...",
-        "campaign": "Кампания за коментари"
+        "campaign": "Кампания за коментари",
+        "predictor": "универсален детектор на лого, регекс, ..."
+      },
+      "all_predictors": "Всички предсказващи фактори",
+      "predictor": {
+        "ridge_model_ml": "Модел на Ридж ML",
+        "neural": "Невронни",
+        "matcher": "Съвпадение",
+        "google_cloud_vision": "Google Cloud Vision",
+        "regex": "Регекс",
+        "flashtext": "FlashText",
+        "nutriscore": "Нутрискор",
+        "universal_logo_detector": "Универсален детектор на лого",
+        "ocr": "OCR"
       },
       "actions": {
         "edit": "Редакция на филтри",
