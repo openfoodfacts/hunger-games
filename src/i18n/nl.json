@@ -88,7 +88,8 @@
         "country": "land",
         "brand": "merk",
         "popularity": "populariteit",
-        "campaign": "kamp"
+        "campaign": "kamp",
+        "predictor": "voorspeller"
       },
       "long_label": {
         "type": "Vraagtype",
@@ -97,12 +98,26 @@
         "brand": "Productmerk",
         "popularity": "Sorteren op populariteit",
         "edit": "",
-        "campaign": "Campagne"
+        "campaign": "Campagne",
+        "predictor": "Voorspeller (Bron)"
       },
       "placeholders": {
         "value": "Waarde (Fanta, nl:biologisch,...)",
         "brand": "Auchan, Danone, Herta, ...",
-        "campaign": "Annotatiecampagnes"
+        "campaign": "Annotatiecampagnes",
+        "predictor": "universele-logo-detector, regex, ..."
+      },
+      "all_predictors": "Alle voorspellers",
+      "predictor": {
+        "ridge_model_ml": "Ridge Model ML",
+        "neural": "Neuraal",
+        "matcher": "Matcher",
+        "google_cloud_vision": "Google Cloud Vision",
+        "regex": "Reguliere expressie",
+        "flashtext": "FlashText",
+        "nutriscore": "Nutriscore",
+        "universal_logo_detector": "Universele logo-detector",
+        "ocr": "OCR"
       },
       "actions": {
         "edit": "Filters bewerken",
