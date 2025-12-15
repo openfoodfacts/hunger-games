@@ -88,7 +88,8 @@
         "country": "šalis",
         "brand": "prekės ženklas",
         "popularity": "populiarumas",
-        "campaign": "kamp."
+        "campaign": "kamp.",
+        "predictor": "prognozuotojas"
       },
       "long_label": {
         "type": "Klausimo tipas",
@@ -97,12 +98,26 @@
         "brand": "Produkto prekės ženklas",
         "popularity": "Rikiuoti pagal populiarumą",
         "edit": "",
-        "campaign": "Kampanija"
+        "campaign": "Kampanija",
+        "predictor": "Prognozatorius (šaltinis)"
       },
       "placeholders": {
         "value": "Vertė (Fanta, en:organic,...)",
         "brand": "Javinė, Rokiškio, Biovela, ...",
-        "campaign": "Anotacijų kampanijos"
+        "campaign": "Anotacijų kampanijos",
+        "predictor": "universalus logotipo detektorius, reguliarioji išraiška, ..."
+      },
+      "all_predictors": "Visi prognozuotojai",
+      "predictor": {
+        "ridge_model_ml": "Ridge Model ML",
+        "neural": "Neuroninis",
+        "matcher": "Derintojas",
+        "google_cloud_vision": "„Google Cloud Vision“",
+        "regex": "Reguliarioji išraiška",
+        "flashtext": "FlashText",
+        "nutriscore": "„Nutriscore“",
+        "universal_logo_detector": "Universalus logotipo detektorius",
+        "ocr": "OCR"
       },
       "actions": {
         "edit": "Redaguoti filtrus",
