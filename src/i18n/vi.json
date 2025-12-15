@@ -88,7 +88,8 @@
         "country": "nước",
         "brand": "nhãn hiệu",
         "popularity": "mức phổ biến",
-        "campaign": "camp"
+        "campaign": "camp",
+        "predictor": "yếu tố dự báo"
       },
       "long_label": {
         "type": "Loại câu hỏi",
@@ -97,12 +98,26 @@
         "brand": "Thương hiệu sản xuất",
         "popularity": "Sắp xếp theo mức độ phổ biến",
         "edit": "",
-        "campaign": "Chiến dịch"
+        "campaign": "Chiến dịch",
+        "predictor": "Công cụ dự đoán (Nguồn)"
       },
       "placeholders": {
         "value": "Giá trị (Fanta, en:organic,...)",
         "brand": "Auchan, Danone, Herta, ...",
-        "campaign": "Chiến dịch chú thích"
+        "campaign": "Chiến dịch chú thích",
+        "predictor": "công cụ phát hiện logo phổ quát, biểu thức chính quy, ..."
+      },
+      "all_predictors": "Tất cả các yếu tố dự báo",
+      "predictor": {
+        "ridge_model_ml": "Mô hình Ridge ML",
+        "neural": "Thần kinh",
+        "matcher": "Bộ ghép",
+        "google_cloud_vision": "Tầm nhìn về đám mây của Google",
+        "regex": "Biểu thức chính quy",
+        "flashtext": "Văn bản nhanh",
+        "nutriscore": "Nutriscore",
+        "universal_logo_detector": "Công cụ dò logo đa năng",
+        "ocr": "OCR"
       },
       "actions": {
         "edit": "Chỉnh sửa bộ lọc",
