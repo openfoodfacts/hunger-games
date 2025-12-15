@@ -88,7 +88,8 @@
         "country": "země",
         "brand": "značka",
         "popularity": "oblíbenost",
-        "campaign": "kampaň"
+        "campaign": "kampaň",
+        "predictor": "prediktor"
       },
       "long_label": {
         "type": "Typ otázky",
@@ -97,12 +98,26 @@
         "brand": "Značka produktu",
         "popularity": "Třídit dle oblíbenosti",
         "edit": "",
-        "campaign": "Kampaň"
+        "campaign": "Kampaň",
+        "predictor": "Prediktor (zdroj)"
       },
       "placeholders": {
         "value": "Hodnota (Fanta, en:organic,...)",
         "brand": "Auchan, Danone, Herta,...",
-        "campaign": "Anotační kampaně"
+        "campaign": "Anotační kampaně",
+        "predictor": "univerzální detektor log, regulární výraz, ..."
+      },
+      "all_predictors": "Všechny prediktory",
+      "predictor": {
+        "ridge_model_ml": "Ridge Model ML",
+        "neural": "Neurální",
+        "matcher": "Porovnávač",
+        "google_cloud_vision": "Vize Google Cloudu",
+        "regex": "Regex",
+        "flashtext": "FlashText",
+        "nutriscore": "Nutriscore",
+        "universal_logo_detector": "Univerzální detektor log",
+        "ocr": "OCR"
       },
       "actions": {
         "edit": "Upravit filtry",
