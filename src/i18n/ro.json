@@ -88,7 +88,8 @@
         "country": "tara",
         "brand": "marca",
         "popularity": "popularitate",
-        "campaign": "tabără"
+        "campaign": "tabără",
+        "predictor": "predictor"
       },
       "long_label": {
         "type": "Tip de întrebare",
@@ -97,12 +98,26 @@
         "brand": "Marca de produs",
         "popularity": "Sortați după popularitate",
         "edit": "",
-        "campaign": "Campanie"
+        "campaign": "Campanie",
+        "predictor": "Predictor (Sursă)"
       },
       "placeholders": {
         "value": "Valoare (Fanta, en:organic,...)",
         "brand": "Auchan, Danone, Herta,...",
-        "campaign": "Campanii de adnotare"
+        "campaign": "Campanii de adnotare",
+        "predictor": "detector-universal-de-logo, expresie-regulată, ..."
+      },
+      "all_predictors": "Toți predictorii",
+      "predictor": {
+        "ridge_model_ml": "Modelul Ridge ML",
+        "neural": "Neuronal",
+        "matcher": "Potrivitor",
+        "google_cloud_vision": "Viziunea Google Cloud",
+        "regex": "Regex",
+        "flashtext": "FlashText",
+        "nutriscore": "Nutriscore",
+        "universal_logo_detector": "Detector universal de logo-uri",
+        "ocr": "OCR"
       },
       "actions": {
         "edit": "Editați filtrele",
