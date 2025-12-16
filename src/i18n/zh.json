@@ -88,7 +88,8 @@
         "country": "國家",
         "brand": "品牌",
         "popularity": "受欢迎程度",
-        "campaign": "展銷"
+        "campaign": "展銷",
+        "predictor": "预测器"
       },
       "long_label": {
         "type": "问题类型",
@@ -97,12 +98,26 @@
         "brand": "产品品牌",
         "popularity": "按受欢迎程度排序",
         "edit": "",
-        "campaign": "活动"
+        "campaign": "活动",
+        "predictor": "预测器（来源）"
       },
       "placeholders": {
         "value": "价值(芬达，有机的…)",
         "brand": "欧尚、达能、赫塔，...",
-        "campaign": "标注活动"
+        "campaign": "标注活动",
+        "predictor": "通用徽标检测器、正则表达式、……"
+      },
+      "all_predictors": "所有预测因子",
+      "predictor": {
+        "ridge_model_ml": "岭模型机器学习",
+        "neural": "神经",
+        "matcher": "匹配器",
+        "google_cloud_vision": "Google Cloud Vision",
+        "regex": "正则表达式",
+        "flashtext": "FlashText",
+        "nutriscore": "营养评分",
+        "universal_logo_detector": "通用标志检测器",
+        "ocr": "OCR"
       },
       "actions": {
         "edit": "编辑筛选器",

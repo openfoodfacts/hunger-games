@@ -88,7 +88,8 @@
         "country": "краіна",
         "brand": "брэнд",
         "popularity": "popularity",
-        "campaign": "camp"
+        "campaign": "camp",
+        "predictor": "прадказальнік"
       },
       "long_label": {
         "type": "Тып пытання",
@@ -97,12 +98,26 @@
         "brand": "Гандлёвая марка прадукту",
         "popularity": "Сартаваць паводле папулярнасьці",
         "edit": "",
-        "campaign": "Кампанія"
+        "campaign": "Кампанія",
+        "predictor": "Прадказальнік (крыніца)"
       },
       "placeholders": {
         "value": "Value (Fanta, en:organic,...)",
         "brand": "Auchan, Danone, Herta, ...",
-        "campaign": "Annotation campaigns"
+        "campaign": "Annotation campaigns",
+        "predictor": "універсальны дэтэктар лагатыпаў, рэгулярны выраз, ..."
+      },
+      "all_predictors": "Усе прадказальнікі",
+      "predictor": {
+        "ridge_model_ml": "Мадэль Рыдж ML",
+        "neural": "Нейронны",
+        "matcher": "Супастаўленне",
+        "google_cloud_vision": "Воблачнае бачанне Google",
+        "regex": "Рэгулярны выраз",
+        "flashtext": "Флэш-тэкст",
+        "nutriscore": "Нутрыскор",
+        "universal_logo_detector": "Універсальны дэтэктар лагатыпаў",
+        "ocr": "Аптычнае распазнаванне сімвалаў"
       },
       "actions": {
         "edit": "Змяніць фільтры",

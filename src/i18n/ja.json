@@ -88,7 +88,8 @@
         "country": "国",
         "brand": "ブランド",
         "popularity": "人気",
-        "campaign": "運動"
+        "campaign": "運動",
+        "predictor": "予測子"
       },
       "long_label": {
         "type": "質問タイプ",
@@ -97,12 +98,26 @@
         "brand": "製品ブランド",
         "popularity": "人気順",
         "edit": "",
-        "campaign": "キャンペーン"
+        "campaign": "キャンペーン",
+        "predictor": "予測子（出典）"
       },
       "placeholders": {
         "value": "キーワード(ファンタ, ja: オーガニック,…)",
         "brand": "オーシャン、ダノン、ヘルタ、...",
-        "campaign": "アノテーションキャンペーン"
+        "campaign": "アノテーションキャンペーン",
+        "predictor": "universal-logo-detector、正規表現、..."
+      },
+      "all_predictors": "すべての予測因子",
+      "predictor": {
+        "ridge_model_ml": "リッジモデル ML",
+        "neural": "ニューラル",
+        "matcher": "マッチャー",
+        "google_cloud_vision": "Google クラウドビジョン",
+        "regex": "正規表現",
+        "flashtext": "フラッシュテキスト",
+        "nutriscore": "ニュートリスコア",
+        "universal_logo_detector": "ユニバーサルロゴ検出器",
+        "ocr": "OCR"
       },
       "actions": {
         "edit": "フィルタを編集",

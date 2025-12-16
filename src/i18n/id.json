@@ -88,7 +88,8 @@
         "country": "negara",
         "brand": "merek",
         "popularity": "popularitas",
-        "campaign": "kemping"
+        "campaign": "kemping",
+        "predictor": "prediktor"
       },
       "long_label": {
         "type": "Tipe Pertanyaan",
@@ -97,12 +98,26 @@
         "brand": "Merek Produk",
         "popularity": "Urutkan berdasarkan popularitas",
         "edit": "",
-        "campaign": "Kampanye"
+        "campaign": "Kampanye",
+        "predictor": "Prediktor (Sumber)"
       },
       "placeholders": {
         "value": "Nilai (Fanta, en:organik,...)",
         "brand": "Auchan, Danone, Herta, ...",
-        "campaign": "Kampanye anotasi"
+        "campaign": "Kampanye anotasi",
+        "predictor": "pendeteksi logo universal, regex, ..."
+      },
+      "all_predictors": "Semua prediktor",
+      "predictor": {
+        "ridge_model_ml": "Model Punggungan ML",
+        "neural": "Saraf",
+        "matcher": "Pencocok",
+        "google_cloud_vision": "Visi Awan Google",
+        "regex": "Ekspresi reguler",
+        "flashtext": "FlashText",
+        "nutriscore": "Nutriscore",
+        "universal_logo_detector": "Detektor Logo Universal",
+        "ocr": "OCR"
       },
       "actions": {
         "edit": "Ubah Penyaringan",

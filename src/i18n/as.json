@@ -88,7 +88,8 @@
         "country": "country",
         "brand": "brand",
         "popularity": "popularity",
-        "campaign": "camp"
+        "campaign": "camp",
+        "predictor": "ভৱিষ্যদ্বাণীকাৰী"
       },
       "long_label": {
         "type": "Question Type",
@@ -97,12 +98,26 @@
         "brand": "Product Brand",
         "popularity": "Sort by popularity",
         "edit": "",
-        "campaign": "Campaign"
+        "campaign": "Campaign",
+        "predictor": "ভৱিষ্যদ্বাণীকাৰী (উৎস)"
       },
       "placeholders": {
         "value": "Value (Fanta, en:organic,...)",
         "brand": "Auchan, Danone, Herta, ...",
-        "campaign": "Annotation campaigns"
+        "campaign": "Annotation campaigns",
+        "predictor": "ইউনিভাৰ্চেল-লোগো-ডিটেক্টৰ, regex, ..."
+      },
+      "all_predictors": "সকলো ভৱিষ্যদ্বাণীকাৰী",
+      "predictor": {
+        "ridge_model_ml": "ৰিজ মডেল এম এল",
+        "neural": "স্নায়ু",
+        "matcher": "মেচাৰ",
+        "google_cloud_vision": "গুগল ক্লাউড ভিজন",
+        "regex": "ৰেগেক্স",
+        "flashtext": "ফ্লেচটেক্সট",
+        "nutriscore": "নিউট্ৰিস্কোৰ",
+        "universal_logo_detector": "ইউনিভাৰ্চেল ল'গ' ডিটেক্টৰ",
+        "ocr": "অ’চিআৰ"
       },
       "actions": {
         "edit": "Edit Filters",

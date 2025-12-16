@@ -88,7 +88,8 @@
         "country": "firenena",
         "brand": "marika",
         "popularity": "laza",
-        "campaign": "camp"
+        "campaign": "camp",
+        "predictor": "mpilaza mialoha"
       },
       "long_label": {
         "type": "Karazana fanontaniana",
@@ -97,12 +98,26 @@
         "brand": "Mariky ny vokatra",
         "popularity": "Alahatra araka ny lazany",
         "edit": "",
-        "campaign": "Fanentanana"
+        "campaign": "Fanentanana",
+        "predictor": "Mpamantatra (Loharano)"
       },
       "placeholders": {
         "value": "Sanda (Fanta, en:organika,...)",
         "brand": "Auchan, Danone, Herta, ...",
-        "campaign": "Fanamarihan'ny fanentanana"
+        "campaign": "Fanamarihan'ny fanentanana",
+        "predictor": "mpitsikilo-logo-iraisam-pirenena, regex, ..."
+      },
+      "all_predictors": "Ireo mpanombana rehetra",
+      "predictor": {
+        "ridge_model_ml": "Modely Ridge ML",
+        "neural": "Neural",
+        "matcher": "Mpampifanandrina",
+        "google_cloud_vision": "Fahitana Google Cloud",
+        "regex": "My Notes",
+        "flashtext": "FlashText",
+        "nutriscore": "Nutriscore",
+        "universal_logo_detector": "Mpitsikilo Logo Iraisam-pirenena",
+        "ocr": "OCR"
       },
       "actions": {
         "edit": "Ovaina ny sivana",

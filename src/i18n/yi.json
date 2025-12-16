@@ -88,7 +88,8 @@
         "country": "country",
         "brand": "brand",
         "popularity": "popularity",
-        "campaign": "camp"
+        "campaign": "camp",
+        "predictor": "פּרעדיקטאָר"
       },
       "long_label": {
         "type": "Question Type",
@@ -97,12 +98,26 @@
         "brand": "Product Brand",
         "popularity": "Sort by popularity",
         "edit": "",
-        "campaign": "Campaign"
+        "campaign": "Campaign",
+        "predictor": "פּרעדיקטאָר (מקור)"
       },
       "placeholders": {
         "value": "Value (Fanta, en:organic,...)",
         "brand": "Auchan, Danone, Herta, ...",
-        "campaign": "Annotation campaigns"
+        "campaign": "Annotation campaigns",
+        "predictor": "אוניווערסאַל-לאָגאָ-דעטעקטאָר, רעגעקס, ..."
+      },
+      "all_predictors": "אַלע פאָרויסזאָגער",
+      "predictor": {
+        "ridge_model_ml": "רידזש מאָדעל ML",
+        "neural": "נעוראַל",
+        "matcher": "מאַטשער",
+        "google_cloud_vision": "גוגל קלאָוד וויזשאַן",
+        "regex": "רעגעקס",
+        "flashtext": "פלאַשטעקסט",
+        "nutriscore": "נוטריסקאָור",
+        "universal_logo_detector": "אוניווערסאַל לאָגאָ דעטעקטאָר",
+        "ocr": "אָקר"
       },
       "actions": {
         "edit": "Edit Filters",

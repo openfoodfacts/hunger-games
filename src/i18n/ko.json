@@ -88,7 +88,8 @@
         "country": "국가",
         "brand": "브랜드",
         "popularity": "인기도",
-        "campaign": "캠프"
+        "campaign": "캠프",
+        "predictor": "예언자"
       },
       "long_label": {
         "type": "질문 유형",
@@ -97,12 +98,26 @@
         "brand": "제품 제조사",
         "popularity": "인기순 정렬",
         "edit": "",
-        "campaign": "캠페인"
+        "campaign": "캠페인",
+        "predictor": "예측 변수(출처)"
       },
       "placeholders": {
         "value": "Value (Fanta, en:organic,...)",
         "brand": "Auchan, Danone, Herta, ...",
-        "campaign": "주석 캠페인"
+        "campaign": "주석 캠페인",
+        "predictor": "범용 로고 감지기, 정규 표현식, ..."
+      },
+      "all_predictors": "모든 예측 변수",
+      "predictor": {
+        "ridge_model_ml": "릿지 모델 ML",
+        "neural": "신경",
+        "matcher": "매처",
+        "google_cloud_vision": "구글 클라우드 비전",
+        "regex": "정규 표현식",
+        "flashtext": "플래시텍스트",
+        "nutriscore": "뉴트리스코어",
+        "universal_logo_detector": "범용 로고 감지기",
+        "ocr": "OCR"
       },
       "actions": {
         "edit": "필터 수정",
@@ -219,15 +234,15 @@
       "description": "Select a logo you want to look for, and let's go to catch them all. For every logo you annotate, we will fetch it's neighbors such that you might never stop to annotate. (Press Shift to select range of logos)",
       "ref_logos": "Reference logos (logo already annotated with this value)",
       "remaining": "Remaining to annotate",
-      "select_all": "Select All",
-      "unselect_all": "Deselect All"
+      "select_all": "모두 선택",
+      "unselect_all": "모두 삭제"
     }
   },
   "settings": {
     "settings": "설정",
     "language": "언어",
     "save": "저장",
-    "reportIssue": "Found a bug? Please let us know.",
+    "reportIssue": "오류를 발견하셨나요? 제보해주세요.",
     "dev_mode_title": "더 많은 옵션을 얻으려면 개발자 모드를 활성화하세요",
     "dev_mode_label": "개발자 모드",
     "dev_page_toggle": "{{name}} 페이지 보기",

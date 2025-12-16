@@ -88,7 +88,8 @@
         "country": "country",
         "brand": "brand",
         "popularity": "popularity",
-        "campaign": "camp"
+        "campaign": "camp",
+        "predictor": "predictor"
       },
       "long_label": {
         "type": "Question Type",
@@ -97,12 +98,26 @@
         "brand": "Product Brand",
         "popularity": "Sort by popularity",
         "edit": "",
-        "campaign": "Campaign"
+        "campaign": "Campaign",
+        "predictor": "Predictor (Source)"
       },
       "placeholders": {
-        "value": "Value (Fanta, en:organic,…)",
+        "value": "Value (Fanta, en:organic...)",
         "brand": "Auchan, Danone, Herta, ...",
-        "campaign": "Annotation campaigns"
+        "campaign": "Annotation campaigns",
+        "predictor": "universal-logo-detector, regex, ..."
+      },
+      "all_predictors": "All predictors",
+      "predictor": {
+        "ridge_model_ml": "Ridge Model ML",
+        "neural": "Neural",
+        "matcher": "Matcher",
+        "google_cloud_vision": "Google Cloud Vision",
+        "regex": "Regex",
+        "flashtext": "FlashText",
+        "nutriscore": "Nutriscore",
+        "universal_logo_detector": "Universal Logo Detector",
+        "ocr": "OCR"
       },
       "actions": {
         "edit": "Edit Filters",
@@ -133,11 +148,10 @@
     "manage": "Manage",
     "insights": "Insights",
     "nutritions": "Nutrition",
-    "ingredients": "Ingredients",
     "ingredient-spellcheck": "Ingredient spellcheck",
     "ingredient-detection": "Ingredient detection",
     "settings": "Settings",
-    "green-score": "Categories & Labels",
+    "green-score": "Green-Score",
     "dashboard": "Labels & Claims",
     "tour": "Show tour",
     "logged_in_user": "Logged as {{userName}}",

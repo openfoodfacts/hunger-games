@@ -88,7 +88,8 @@
         "country": "país",
         "brand": "marca",
         "popularity": "popularidad",
-        "campaign": "camp."
+        "campaign": "camp.",
+        "predictor": "vaticinador"
       },
       "long_label": {
         "type": "Preguntas sobre",
@@ -97,12 +98,26 @@
         "brand": "Marca del producto",
         "popularity": "Ordenar por popularidad",
         "edit": "",
-        "campaign": "Campaña"
+        "campaign": "Campaña",
+        "predictor": "Predictor (Fuente)"
       },
       "placeholders": {
         "value": "Valor (Fanta, es:ecológico…)",
         "brand": "Hacendado, Danone, Campofrío…",
-        "campaign": "Campañas de anotación"
+        "campaign": "Campañas de anotación",
+        "predictor": "detector de logotipos universal, expresiones regulares, ..."
+      },
+      "all_predictors": "Todos los predictores",
+      "predictor": {
+        "ridge_model_ml": "Modelo Ridge ML",
+        "neural": "Neural",
+        "matcher": "Comparador",
+        "google_cloud_vision": "Visión de Google Cloud",
+        "regex": "Expresión regular",
+        "flashtext": "Texto Flash",
+        "nutriscore": "Nutriscore",
+        "universal_logo_detector": "Detector de logotipos universal",
+        "ocr": "LOC"
       },
       "actions": {
         "edit": "Editar filtros",

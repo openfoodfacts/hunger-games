@@ -88,7 +88,8 @@
         "country": "pays",
         "brand": "marque",
         "popularity": "popularité",
-        "campaign": "camp"
+        "campaign": "camp",
+        "predictor": "prédicteur"
       },
       "long_label": {
         "type": "Type de question",
@@ -97,12 +98,26 @@
         "brand": "Marque du produit",
         "popularity": "Trier par popularité",
         "edit": "",
-        "campaign": "Campagne"
+        "campaign": "Campagne",
+        "predictor": "Prédicteur (Source)"
       },
       "placeholders": {
         "value": "Valeur (Fanta, en:organic,...)",
         "brand": "Auchan, Danone, Herta...",
-        "campaign": "Campagnes d'annotations"
+        "campaign": "Campagnes d'annotations",
+        "predictor": "détecteur de logo universel, expression régulière, ..."
+      },
+      "all_predictors": "Tous les prédicteurs",
+      "predictor": {
+        "ridge_model_ml": "Modèle Ridge ML",
+        "neural": "Neural",
+        "matcher": "Matcher",
+        "google_cloud_vision": "Google Cloud Vision",
+        "regex": "Expression régulière",
+        "flashtext": "Texte Flash",
+        "nutriscore": "Nutriscore",
+        "universal_logo_detector": "Détecteur de logo universel",
+        "ocr": "OCR"
       },
       "actions": {
         "edit": "Modifier les filtres",
