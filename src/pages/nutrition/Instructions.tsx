@@ -47,6 +47,9 @@ export default function Instructions() {
               )}
             </Typography>
             <Typography>
+              {t("nutrition.instructions.picture_date_is_display")}
+            </Typography>
+            <Typography>
               {t("nutrition.instructions.validate_one_column")}
             </Typography>
 
