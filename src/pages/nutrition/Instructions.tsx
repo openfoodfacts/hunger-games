@@ -46,9 +46,7 @@ export default function Instructions() {
                 "nutrition.instructions.chose_between_empty_and_partially_filled",
               )}
             </Typography>
-            <Typography>
-              {t("nutrition.instructions.picture_date_is_display")}
-            </Typography>
+            
             <Typography>
               {t("nutrition.instructions.validate_one_column")}
             </Typography>
