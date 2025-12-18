@@ -93,17 +93,23 @@ const PAGES: Page[] = [
   { url: "insights", translationKey: "menu.insights", devModeOnly: true },
   { url: "dashboard", translationKey: "menu.dashboard" },
   { url: "settings", translationKey: "menu.settings", mobileOnly: true },
+  {
+    url: "https://nutripatrol.openfoodfacts.org",
+    translationKey: "menu.moderation",
+  },
 ];
 
 const MultiPagesButton = ({
   translationKey,
   children,
   isOpen,
+  isExternalUrl,
   toggleIsOpen,
 }: {
   translationKey: string;
   children: Page[];
   isOpen: boolean;
+  isExternalUrl: (url?: string) => boolean;
   toggleIsOpen: () => void;
 }) => {
   const { t } = useTranslation();
@@ -125,19 +131,34 @@ const MultiPagesButton = ({
         onClose={toggleIsOpen}
         sx={{ display: { xs: "none", md: "flex" } }}
       >
-        {children.map((subPage) => (
-          <MenuItem
-            sx={{ pl: 4 }}
-            key={subPage.translationKey}
-            onClick={toggleIsOpen}
-            component={Link}
-            to={`/${subPage.url}`}
-          >
-            <Typography textAlign="center">
-              {t(subPage.translationKey)}
-            </Typography>
-          </MenuItem>
-        ))}
+        {children.map((subPage) =>
+          isExternalUrl(subPage.url) ? (
+            <MenuItem
+              sx={{ pl: 4 }}
+              key={subPage.translationKey}
+              onClick={toggleIsOpen}
+              component={"a"}
+              target="_blank"
+              href={subPage.url}
+            >
+              <Typography textAlign="center">
+                {t(subPage.translationKey)}
+              </Typography>
+            </MenuItem>
+          ) : (
+            <MenuItem
+              sx={{ pl: 4 }}
+              key={subPage.translationKey}
+              onClick={toggleIsOpen}
+              component={Link}
+              to={`/${subPage.url}`}
+            >
+              <Typography textAlign="center">
+                {t(subPage.translationKey)}
+              </Typography>
+            </MenuItem>
+          ),
+        )}
       </Menu>
     </>
   );
@@ -180,6 +201,9 @@ const ResponsiveAppBar = () => {
     }
     return true;
   };
+
+  const isExternalUrl = (url?: string): boolean =>
+    Boolean(url?.trim().startsWith("http"));
 
   const displayedPages = PAGES.map((page) => {
     if (!page.children) {
@@ -244,7 +268,19 @@ const ResponsiveAppBar = () => {
               >
                 {displayedPages.map((page) => {
                   if (page.url) {
-                    return (
+                    return isExternalUrl(page.url) ? (
+                      <MenuItem
+                        color="inherit"
+                        sx={{ display: "block" }}
+                        component={"a"}
+                        target="_blank"
+                        href={page.url}
+                      >
+                        <Typography textAlign="left">
+                          {t(page.translationKey)}
+                        </Typography>
+                      </MenuItem>
+                    ) : (
                       <MenuItem
                         key={`Mobile-${page.translationKey}`}
                         onClick={handleCloseNavMenu}
@@ -313,14 +349,6 @@ const ResponsiveAppBar = () => {
                     </ListSubheader>
                   );
                 })}
-                <MenuItem
-                  color="inherit"
-                  sx={{ display: "block" }}
-                  component={Link}
-                  to={`https://nutripatrol.openfoodfacts.org`}
-                >
-                  <Typography textAlign="left">{"Moderation"}</Typography>
-                </MenuItem>
                 <MenuItem
                   component="button"
                   color="inherit"
@@ -415,7 +443,20 @@ const ResponsiveAppBar = () => {
 
               {displayedPages.map((page) => {
                 if (page.url) {
-                  return (
+                  return isExternalUrl(page.url) ? (
+                    <Button
+                      color="inherit"
+                      key={page.url}
+                      onClick={handleCloseNavMenu}
+                      sx={{ my: 2, display: "block" }}
+                      component={"a"}
+                      href={page.url}
+                      target="_blank"
+                      data-welcome-tour={page.url}
+                    >
+                      {t(page.translationKey)}
+                    </Button>
+                  ) : (
                     <Button
                       color="inherit"
                       key={page.url}
@@ -437,6 +478,7 @@ const ResponsiveAppBar = () => {
                       {...page}
                       children={children}
                       key={page.translationKey}
+                      isExternalUrl={isExternalUrl}
                       isOpen={!!menuOpenState[`Desktop-${page.translationKey}`]}
                       toggleIsOpen={() =>
                         setMenuOpenState((prev) => ({
@@ -451,14 +493,6 @@ const ResponsiveAppBar = () => {
 
                 return null;
               })}
-              <Button
-                color="inherit"
-                sx={{ display: "block" }}
-                component={Link}
-                to={`https://nutripatrol.openfoodfacts.org`}
-              >
-                <Typography>{"Moderation"}</Typography>
-              </Button>
             </Box>
             <Box
               sx={{
