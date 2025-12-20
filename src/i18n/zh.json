@@ -12,8 +12,8 @@
           "description": "查找符合给定标志的所有标志"
         },
         "green_score": {
-          "title": "Eco-score",
-          "description": "Annotate the questions with the highest value"
+          "title": "生态评分",
+          "description": "优先标注价值最高的问题"
         }
       }
     },
@@ -338,7 +338,7 @@
     "nutrients": "营养成分",
     "serving_size": "份量",
     "add_nutrient": "-- 添加营养素 --",
-    "validate_100g": "Validate (100g)",
+    "validate_100g": "验证（100克）",
     "validate_serving": "Validate (serving)",
     "skip": "跳过",
     "invalid_image": "无效的图片",
@@ -378,12 +378,12 @@
   },
   "green-score": {
     "description": "Here is a summary of questions that could improve Eco-Score computation",
-    "countryLabel": "Country"
+    "countryLabel": "国家/地区"
   },
   "ingredients": {
     "description": "这个游戏可以让你验证某个产品的各种语言配料表图像预选区域，并验证提取的配料表内容。",
     "current_text": "",
-    "confidence_score": "language confidence",
+    "confidence_score": "语言置信度",
     "revert": "复原",
     "parsing": "Get server understanding",
     "send": "验证并发送",
