@@ -6,7 +6,6 @@ import { useQuery } from "@tanstack/react-query";
 import Loader from "../loader";
 import { useQuestionsQuery } from "../../hooks/useQuestions";
 import { getValueTagQuestionsURL } from "./utils/getValueTagQuestionsURL";
-import { t } from "i18next";
 
 export function SimilarQuestions({
   filterState,
@@ -62,6 +61,7 @@ export function SimilarQuestions({
 }
 
 function LabelWithNumber({ tag }: { tag: string }) {
+  const { t } = useTranslation();
   const [filterState] = useFilterState();
 
   const valueTagQuestionsURL = getValueTagQuestionsURL(filterState, {
