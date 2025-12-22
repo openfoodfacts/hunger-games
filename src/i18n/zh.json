@@ -12,8 +12,8 @@
           "description": "查找符合给定标志的所有标志"
         },
         "green_score": {
-          "title": "Eco-score",
-          "description": "Annotate the questions with the highest value"
+          "title": "生态评分",
+          "description": "优先标注价值最高的问题"
         }
       }
     },
@@ -151,7 +151,7 @@
     "ingredient-spellcheck": "成分拼写检查",
     "ingredient-detection": "成分检测",
     "settings": "设置",
-    "green-score": "Green-Score",
+    "green-score": "绿色评分",
     "dashboard": "标志选项列表",
     "tour": "导览演示",
     "logged_in_user": "以 {{用户名}} 身份登录",
@@ -338,8 +338,8 @@
     "nutrients": "营养成分",
     "serving_size": "份量",
     "add_nutrient": "-- 添加营养素 --",
-    "validate_100g": "Validate (100g)",
-    "validate_serving": "Validate (serving)",
+    "validate_100g": "验证（100克）",
+    "validate_serving": "验证每份数据",
     "skip": "跳过",
     "invalid_image": "无效的图片",
     "pictures": {
@@ -350,8 +350,7 @@
     "instructions": {
       "open_button": "打开说明",
       "title": "如何使用界面",
-      "chose_between_empty_and_partially_filled": "You can chose between products for which OpenFoodFacts (OFF) has no data about the nutrients. Or product with partially filled nutrient table.",
-      "picture_date_is_display": "照片的日期显示在上方。方便您检查它是否是最近的照片。",
+      "chose_between_empty_and_partially_filled": "您可以选择两种产品：一种是 OpenFoodFacts (OFF) 没有营养成分数据的产品；另一种是营养成分表部分填写的产品。",
       "indicate_not_provided_value": "空白输入将被忽略。如果表中不存在纤维，您可以输入“-”符号来指定该值不可用。",
       "validate_one_column": "选择图片中显示的尺寸。如果您有100克的份量，请选择100克，因为这是标准尺寸。",
       "skip_button": "如果您不知道如何处理某个图像，或者您不想处理，请点击“跳过”。其他用户将能够处理它。",
@@ -378,15 +377,15 @@
     "correct": "正确 ({{label}})"
   },
   "green-score": {
-    "description": "Here is a summary of questions that could improve Eco-Score computation",
-    "countryLabel": "Country"
+    "description": "以下是可以改进 生态评分 计算的问题总结",
+    "countryLabel": "国家/地区"
   },
   "ingredients": {
     "description": "这个游戏可以让你验证某个产品的各种语言配料表图像预选区域，并验证提取的配料表内容。",
     "current_text": "",
-    "confidence_score": "language confidence",
+    "confidence_score": "语言置信度",
     "revert": "复原",
-    "parsing": "Get server understanding",
+    "parsing": "获取服务器解析结果",
     "send": "验证并发送",
     "skip": "跳过此产品",
     "getRobotoffPrediciton": "从 Robotoff 服务获取预测"

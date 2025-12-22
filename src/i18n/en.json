@@ -152,7 +152,7 @@
     "ingredient-detection": "Ingredient detection",
     "settings": "Settings",
     "green-score": "Green-Score",
-    "dashboard": "Labels & Claims",
+    "dashboard": "Logos dashboard",
     "tour": "Show tour",
     "logged_in_user": "Logged as {{userName}}",
     "log_in": "Click to login"
@@ -162,7 +162,7 @@
     "barcode": "Barcode",
     "barcode_placeholder": "barcode",
     "value_tag": "Value tag",
-    "value_placeholder": "ex: en:mueslis, bjorg,...",
+    "value_placeholder": "ex: en: mueslis, bjorg,...",
     "type": "Type",
     "annotated": "Annotated",
     "annotation": "Annotation",
@@ -407,9 +407,5 @@
       "title": "Android APK",
       "subtitle": "Download"
     }
-  },
-   "image_viewer": {
-    "load_original": "Load original",
-    "compressed": "Compressed"
   }
 }
