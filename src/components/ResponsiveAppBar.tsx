@@ -131,34 +131,20 @@ const MultiPagesButton = ({
         onClose={toggleIsOpen}
         sx={{ display: { xs: "none", md: "flex" } }}
       >
-        {children.map((subPage) =>
-          isExternalUrl(subPage.url) ? (
-            <MenuItem
-              sx={{ pl: 4 }}
-              key={subPage.translationKey}
-              onClick={toggleIsOpen}
-              component={"a"}
-              target="_blank"
-              href={subPage.url}
-            >
-              <Typography textAlign="center">
-                {t(subPage.translationKey)}
-              </Typography>
-            </MenuItem>
-          ) : (
-            <MenuItem
-              sx={{ pl: 4 }}
-              key={subPage.translationKey}
-              onClick={toggleIsOpen}
-              component={Link}
-              to={`/${subPage.url}`}
-            >
-              <Typography textAlign="center">
-                {t(subPage.translationKey)}
-              </Typography>
-            </MenuItem>
-          ),
-        )}
+        {children.map((subPage) => (
+          <MenuItem
+            sx={{ pl: 4 }}
+            key={subPage.translationKey}
+            onClick={toggleIsOpen}
+            {...(isExternalUrl(subPage.url)
+              ? { component: "a", target: "_blank", href: subPage.url }
+              : { component: Link, to: `/${subPage.url}` })}
+          >
+            <Typography textAlign="center">
+              {t(subPage.translationKey)}
+            </Typography>
+          </MenuItem>
+        ))}
       </Menu>
     </>
   );
@@ -268,26 +254,15 @@ const ResponsiveAppBar = () => {
               >
                 {displayedPages.map((page) => {
                   if (page.url) {
-                    return isExternalUrl(page.url) ? (
+                    return (
                       <MenuItem
                         color="inherit"
                         sx={{ display: "block" }}
-                        component={"a"}
-                        target="_blank"
-                        href={page.url}
+                        {...(isExternalUrl(page.url)
+                          ? { component: "a", target: "_blank", href: page.url }
+                          : { component: Link, to: `/${page.url}` })}
                       >
                         <Typography textAlign="left">
-                          {t(page.translationKey)}
-                        </Typography>
-                      </MenuItem>
-                    ) : (
-                      <MenuItem
-                        key={`Mobile-${page.translationKey}`}
-                        onClick={handleCloseNavMenu}
-                        component={Link}
-                        to={`/${page.url}`}
-                      >
-                        <Typography textAlign="center">
                           {t(page.translationKey)}
                         </Typography>
                       </MenuItem>
