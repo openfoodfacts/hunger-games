@@ -93,17 +93,23 @@ const PAGES: Page[] = [
   { url: "insights", translationKey: "menu.insights", devModeOnly: true },
   { url: "dashboard", translationKey: "menu.dashboard" },
   { url: "settings", translationKey: "menu.settings", mobileOnly: true },
+  {
+    url: "https://nutripatrol.openfoodfacts.org",
+    translationKey: "menu.moderation",
+  },
 ];
 
 const MultiPagesButton = ({
   translationKey,
   children,
   isOpen,
+  isExternalUrl,
   toggleIsOpen,
 }: {
   translationKey: string;
   children: Page[];
   isOpen: boolean;
+  isExternalUrl: (url?: string) => boolean;
   toggleIsOpen: () => void;
 }) => {
   const { t } = useTranslation();
@@ -130,8 +136,9 @@ const MultiPagesButton = ({
             sx={{ pl: 4 }}
             key={subPage.translationKey}
             onClick={toggleIsOpen}
-            component={Link}
-            to={`/${subPage.url}`}
+            {...(isExternalUrl(subPage.url)
+              ? { component: "a", target: "_blank", href: subPage.url }
+              : { component: Link, to: `/${subPage.url}` })}
           >
             <Typography textAlign="center">
               {t(subPage.translationKey)}
@@ -180,6 +187,9 @@ const ResponsiveAppBar = () => {
     }
     return true;
   };
+
+  const isExternalUrl = (url?: string): boolean =>
+    Boolean(url?.trim().startsWith("http"));
 
   const displayedPages = PAGES.map((page) => {
     if (!page.children) {
@@ -246,12 +256,13 @@ const ResponsiveAppBar = () => {
                   if (page.url) {
                     return (
                       <MenuItem
-                        key={`Mobile-${page.translationKey}`}
-                        onClick={handleCloseNavMenu}
-                        component={Link}
-                        to={`/${page.url}`}
+                        color="inherit"
+                        sx={{ display: "block" }}
+                        {...(isExternalUrl(page.url)
+                          ? { component: "a", target: "_blank", href: page.url }
+                          : { component: Link, to: `/${page.url}` })}
                       >
-                        <Typography textAlign="center">
+                        <Typography textAlign="left">
                           {t(page.translationKey)}
                         </Typography>
                       </MenuItem>
@@ -316,6 +327,7 @@ const ResponsiveAppBar = () => {
                 <MenuItem
                   component="button"
                   color="inherit"
+                  sx={{ mt: -1 }}
                   onClick={() => {
                     setIsTourOpen(true);
                     handleCloseNavMenu();
@@ -406,7 +418,20 @@ const ResponsiveAppBar = () => {
 
               {displayedPages.map((page) => {
                 if (page.url) {
-                  return (
+                  return isExternalUrl(page.url) ? (
+                    <Button
+                      color="inherit"
+                      key={page.url}
+                      onClick={handleCloseNavMenu}
+                      sx={{ my: 2, display: "block" }}
+                      component={"a"}
+                      href={page.url}
+                      target="_blank"
+                      data-welcome-tour={page.url}
+                    >
+                      {t(page.translationKey)}
+                    </Button>
+                  ) : (
                     <Button
                       color="inherit"
                       key={page.url}
@@ -428,6 +453,7 @@ const ResponsiveAppBar = () => {
                       {...page}
                       children={children}
                       key={page.translationKey}
+                      isExternalUrl={isExternalUrl}
                       isOpen={!!menuOpenState[`Desktop-${page.translationKey}`]}
                       toggleIsOpen={() =>
                         setMenuOpenState((prev) => ({
