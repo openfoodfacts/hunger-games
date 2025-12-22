@@ -67,6 +67,9 @@
     "skip": "Skip",
     "yes": "Yes",
     "no_questions_remaining": "No questions remaining",
+    "similar_questions": "Similar questions",
+    "no_similar_questions": "No similar questions found",
+    "remaining_questions_count": "{{count}} remaining questions",
     "an_error_occurred": "An error occurred. Please reload, try later or contact the team.",
     "countries": "Countries",
     "view": "View",
@@ -408,7 +411,7 @@
       "subtitle": "Download"
     }
   },
-   "image_viewer": {
+  "image_viewer": {
     "load_original": "Load original",
     "compressed": "Compressed"
   }

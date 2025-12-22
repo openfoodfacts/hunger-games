@@ -6,6 +6,7 @@ import { useQuery } from "@tanstack/react-query";
 import Loader from "../loader";
 import { useQuestionsQuery } from "../../hooks/useQuestions";
 import { getValueTagQuestionsURL } from "./utils/getValueTagQuestionsURL";
+import { t } from "i18next";
 
 export function SimilarQuestions({
   filterState,
@@ -77,8 +78,11 @@ function LabelWithNumber({ tag }: { tag: string }) {
   return (
     <li>
       <a href={valueTagQuestionsURL}>
-        {tag} ({status === "pending" ? "..." : (count ?? "")} questions
-        restantes)
+        {tag} (
+        {status === "pending"
+          ? "..."
+          : t("questions.remaining_questions_count", { count: count ?? 0 })}
+        )
       </a>
     </li>
   );
