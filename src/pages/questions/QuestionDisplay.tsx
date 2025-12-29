@@ -71,7 +71,7 @@ const usePotentialQuestionNumber = (
           setNbOfPotentialQuestions(nbQuestions);
         }
       })
-      .catch(() => {});
+      .catch(() => { });
 
     return () => {
       validRequest = false;
@@ -178,9 +178,8 @@ export default function QuestionDisplay() {
             rel="noreferrer"
             sx={{ mb: 2, display: { xs: "none", md: "inherit" } }}
           >
-            <div>{`${t("questions.see_examples")} ${
-              question.insight_type
-            }`}</div>
+            <div>{`${t("questions.see_examples")} ${question.insight_type
+              }`}</div>
           </MuiLink>
         )}
       </Stack>
@@ -211,7 +210,7 @@ export default function QuestionDisplay() {
             <ZoomableImage
               src={question.source_image_url}
               srcFull={getFullSizeImage(question.source_image_url)}
-              alt=""
+              // alt="Image"
               onLoad={() => setImageLoaded(true)}
               style={{
                 height: isDesktop ? "100%" : "calc(100% - 24px)",

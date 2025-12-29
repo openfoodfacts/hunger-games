@@ -61,6 +61,7 @@ export function SimilarQuestions({
 }
 
 function LabelWithNumber({ tag }: { tag: string }) {
+  const { t } = useTranslation();
   const [filterState] = useFilterState();
 
   const valueTagQuestionsURL = getValueTagQuestionsURL(filterState, {
@@ -77,8 +78,11 @@ function LabelWithNumber({ tag }: { tag: string }) {
   return (
     <li>
       <a href={valueTagQuestionsURL}>
-        {tag} ({status === "pending" ? "..." : (count ?? "")} questions
-        restantes)
+        {tag} (
+        {status === "pending"
+          ? "..."
+          : t("questions.remaining_questions_count", { count: count ?? 0 })}
+        )
       </a>
     </li>
   );
