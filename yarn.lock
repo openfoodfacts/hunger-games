@@ -1542,9 +1542,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@openfoodfacts/openfoodfacts-webcomponents@npm:1.14.2":
-  version: 1.14.2
-  resolution: "@openfoodfacts/openfoodfacts-webcomponents@npm:1.14.2"
+"@openfoodfacts/openfoodfacts-webcomponents@npm:1.15.1":
+  version: 1.15.1
+  resolution: "@openfoodfacts/openfoodfacts-webcomponents@npm:1.15.1"
   dependencies:
     "@lit-labs/signals": "npm:^0.1.2"
     "@lit/localize": "npm:^0.12.2"
@@ -1556,7 +1556,7 @@ __metadata:
     lit: "npm:^3.3.0"
     lit-html: "npm:^3.3.0"
     marked: "npm:^16.2.1"
-  checksum: 10/085c81c24070c28441ca0ba046fc54bf90cc21a2b0ad221355aae99561e21bd3bdf4e76a2712bd2902d18e6e49fa316dca57efa5caeaa527011ceb437044dc36
+  checksum: 10/6e6c878e9031efa5e9e95f56c12e6ac77a8921b1c218c4b35544564bee6893bf2f8d14a3264cea459dccb7185665957d0d650e1eda4645511e0d6beddb460c55
   languageName: node
   linkType: hard
 
@@ -4084,7 +4084,7 @@ __metadata:
     "@mui/material": "npm:^5.14.16"
     "@mui/x-data-grid": "npm:^6.18.0"
     "@openfoodfacts/openfoodfacts-nodejs": "npm:^2.0.0-alpha.19"
-    "@openfoodfacts/openfoodfacts-webcomponents": "npm:1.14.2"
+    "@openfoodfacts/openfoodfacts-webcomponents": "npm:1.15.1"
     "@reduxjs/toolkit": "npm:^1.9.7"
     "@tanstack/react-query": "npm:^5.75.1"
     "@types/node": "npm:^24.9.2"
