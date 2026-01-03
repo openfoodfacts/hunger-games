@@ -3,7 +3,6 @@ export const addImageFlag = (opts: {
   barcode: string | undefined;
   imgid: number | undefined;
 }) => {
-  // TODO: Replace this with NutriPatrol
   const {barcode, imgid} = opts;
   const imgidStr = imgid?.toString() || '';
   const NutriPatrolURL = 'https://nutripatrol.openfoodfacts.org/flag/image/?'+
@@ -15,7 +14,7 @@ export const addImageFlag = (opts: {
   try {
     window.open(NutriPatrolURL, '_blank', 'noopener,noreferrer');
   } catch (error) {
-    throw new Error("Could not open NutriPatrol");
+    throw new Error("Could not open NutriPatrol, error: " + error);
   }
 };
 
