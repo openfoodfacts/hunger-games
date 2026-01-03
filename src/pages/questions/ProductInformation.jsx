@@ -183,7 +183,7 @@ const ProductInformation = () => {
                     <Tooltip title={t("questions.flag")}>
                       <IconButton
                         onClick={() =>
-                          flagImage(src.imageUrl, question.barcode)
+                          flagImage(src.imageUrl)
                         }
                       >
                         <OutlinedFlagIcon />

@@ -67,7 +67,7 @@ export const useFlagImage = (barcode?: string) => {
   const flagImage = React.useCallback(
     (src: string) => {
       const imgid = getImageId(src);
-      externalApi.addImageFlag({ barcode, imgid, url: src });
+      externalApi.addImageFlag({ barcode, imgid });
       setFlagged((prev) => [...prev, imgid]);
     },
     [barcode],
