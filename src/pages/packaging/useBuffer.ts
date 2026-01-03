@@ -82,7 +82,8 @@ export const useBuffer = ({
     let isValid = true;
     axios.get(url).then(({ data }) => {
       if (isValid) {
-        setData(data.products ?? [data.product]);
+        const products = data.products ?? [data.product];
+        setData(products);
         setMaxPage(Math.floor(data.count / data.page_size) + 1);
         canReset.current = true;
       }
@@ -90,7 +91,7 @@ export const useBuffer = ({
     return () => {
       isValid = false;
     };
-  }, [url]);
+  }, [url, country]);
 
   const next = () =>
     setData((prev) => (prev && prev.length > 0 ? prev.slice(1) : prev));
