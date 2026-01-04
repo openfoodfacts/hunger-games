@@ -1,12 +1,16 @@
 import * as React from "react";
-import useLocalStorageState from "../../utils/useLocalStorageState";
-import CountryContext, { CountryCallback } from "./CountryContext";
 import { useSearchParams } from "react-router";
+
+import useLocalStorageState from "../../utils/useLocalStorageState";
+import { CountryContext, CountryCallback } from "./CountryContext";
+
 import countries from "../../assets/countries.json";
 
 const ValidCountryCodes = new Set(countries.map((c) => c.countryCode));
 
-export function CountryProvider({ children }) {
+type CountryProviderProps = { children: React.ReactNode };
+
+export function CountryProvider({ children }: CountryProviderProps) {
   const [country, setCountry] = useLocalStorageState("country", "");
   const [searchParams, setSearchParams] = useSearchParams();
 
@@ -23,33 +27,28 @@ export function CountryProvider({ children }) {
         return prev;
       });
     },
-    [setSearchParams],
+    [setCountry, setSearchParams],
   );
 
   const value = React.useMemo(() => {
-    // Try from:
-    // - searchParams
-    // - localStorage
-    // - empty
+    // Priority order: searchParams > localStorage > empty string
+    let resolvedCountry = "";
 
-    const lowercasedCountry = ValidCountryCodes.has(searchParamsCountry)
-      ? searchParamsCountry
-      : ValidCountryCodes.has(country?.toLocaleLowerCase())
-        ? country?.toLocaleLowerCase()
-        : "";
+    if (searchParamsCountry && ValidCountryCodes.has(searchParamsCountry)) {
+      resolvedCountry = searchParamsCountry;
+    } else if (country) {
+      const lowercasedCountry = country.toLocaleLowerCase();
+      if (ValidCountryCodes.has(lowercasedCountry)) {
+        resolvedCountry = lowercasedCountry;
+      }
+    }
 
     return {
-      country: lowercasedCountry,
+      country: resolvedCountry,
       setCountry: updateCountry,
     };
   }, [country, searchParamsCountry, updateCountry]);
   return (
     <CountryContext.Provider value={value}>{children}</CountryContext.Provider>
   );
-}
-
-export function useCountry(): [string, CountryCallback] {
-  const { country, setCountry } = React.useContext(CountryContext);
-
-  return [country, setCountry];
 }

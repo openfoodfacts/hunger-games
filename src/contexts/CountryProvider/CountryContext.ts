@@ -14,12 +14,17 @@ export type CountryCallback = (
   scope: "page" | "global",
 ) => void;
 
-const CountryContext = React.createContext<{
+export const CountryContext = React.createContext<{
   setCountry: CountryCallback;
   country: string;
 }>({
   country: "world",
   setCountry: () => {},
 });
+
+export function useCountry(): [string, CountryCallback] {
+  const { country, setCountry } = React.useContext(CountryContext);
+  return [country, setCountry];
+}
 
 export default CountryContext;
