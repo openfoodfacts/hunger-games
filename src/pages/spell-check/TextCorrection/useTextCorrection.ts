@@ -45,7 +45,9 @@ export function useTextCorrection(
   original: string,
   correction: string,
 ): UseTextCorrectionReturnValue {
-  const [suggestionChoices, setSuggestionChoices] = React.useState([]);
+  const [suggestionChoices, setSuggestionChoices] = React.useState<boolean[]>(
+    [],
+  );
   const [diff, suggestions] = useDiffComputation(original, correction);
 
   const suggestionIndex = React.useMemo(
@@ -86,13 +88,13 @@ export function useTextCorrection(
     setSuggestionChoices((p) =>
       p.length === suggestions.length ? p : [...p, true],
     );
-  }, []);
+  }, [suggestions]);
 
   const ignoreSuggestion = React.useCallback(() => {
     setSuggestionChoices((p) =>
       p.length === suggestions.length ? p : [...p, false],
     );
-  }, []);
+  }, [suggestions]);
 
   const ignoreAllRemainingSuggestions = React.useCallback(() => {
     setSuggestionChoices((p) =>
@@ -106,7 +108,7 @@ export function useTextCorrection(
             ),
           ],
     );
-  }, []);
+  }, [suggestions]);
 
   const revertLastSuggestion = React.useCallback(() => {
     setSuggestionChoices((p) => p.slice(0, p.length - 1));
