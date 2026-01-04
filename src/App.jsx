@@ -47,8 +47,12 @@ const PackagingPage = React.lazy(() => import("./pages/packaging"));
 const LogoQuestionValidator = React.lazy(
   () => import("./pages/logosValidator/LogoQuestionValidator"),
 );
-const IngredientDetectionPage = React.lazy(() => import("./pages/ingredient-detection"));
-const IngredientSpellcheckPage = React.lazy(() => import("./pages/ingredient-spellcheck"));
+const IngredientDetectionPage = React.lazy(
+  () => import("./pages/ingredient-detection"),
+);
+const IngredientSpellcheckPage = React.lazy(
+  () => import("./pages/ingredient-spellcheck"),
+);
 const DashBoard = React.lazy(() => import("./pages/logosValidator/DashBoard"));
 const GalaBoard = React.lazy(() => import("./pages/GalaPage"));
 const IngredientPage = React.lazy(() => import("./pages/ingredients"));
@@ -262,8 +266,14 @@ export default function App() {
                       }
                     />
 
-                    <Route path="/ingredient-detection" element={<IngredientDetectionPage />} />
-                    <Route path="/ingredient-spellcheck" element={<IngredientSpellcheckPage />} />
+                    <Route
+                      path="/ingredient-detection"
+                      element={<IngredientDetectionPage />}
+                    />
+                    <Route
+                      path="/ingredient-spellcheck"
+                      element={<IngredientSpellcheckPage />}
+                    />
                     <Route path="/brandinator" element={<Brandinator />} />
                     <Route path="/settings" element={<SettingsPage />} />
                     <Route path="/questions" element={<QuestionsPage />} />

@@ -21,14 +21,12 @@ export function useRobotoffPredictions() {
   }>({});
 
   const [country] = useCountry();
-
   React.useEffect(() => {
     if (isLoading || insights.length > 0) {
       return;
     }
     let valid = true;
     setIsLoading(true);
-
     robotoff
       .getInsights(
         "",
@@ -54,7 +52,7 @@ export function useRobotoffPredictions() {
     return () => {
       valid = false;
     };
-  }, [insights]);
+  }, [insights, country]);
 
   React.useEffect(() => {
     const barecodeToImport = insights

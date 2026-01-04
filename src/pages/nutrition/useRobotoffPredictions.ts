@@ -81,7 +81,7 @@ export function useRobotoffPredictions(partiallyFilled: boolean) {
     return () => {
       valid = false;
     };
-  }, [insightIndex, insights, campaign]);
+  }, [insightIndex, insights, campaign, country]);
 
   React.useEffect(() => {
     const barecodeToImport = insights.data

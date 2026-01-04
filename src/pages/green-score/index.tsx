@@ -169,7 +169,7 @@ export default function GreenScore() {
           label={t("green-score.countryLabel")}
           value={country}
           onChange={(event) => {
-            setCountry(event.target.value, "page");
+            setCountry(event.target.value, "global");
           }}
           sx={{ width: 200 }}
         >
