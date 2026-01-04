@@ -29,7 +29,7 @@ export function getDiff(
   const words2 = text2.split("");
 
   // Comput the cost for each substring alignment.
-  const computedCost = {};
+  const computedCost: Record<string, number> = {};
 
   computedCost["-1_-1"] = 0;
   for (let i = 0; i < words1.length; i += 1) {
@@ -56,7 +56,7 @@ export function getDiff(
   let j = words2.length - 1;
 
   // Back path used to deduce modification from the cost matrix.
-  const updates = [];
+  const updates: UpdateType[] = [];
   while (i >= 0 && j >= 0) {
     const word1 = words1[i];
     const word2 = words2[j];
@@ -112,8 +112,9 @@ export function getDiff(
     const currentUpdate = updates[nextUpdateIndex];
 
     if (
-      currentUpdate &&
-      (currentUpdate.index1 === i1 || currentUpdate.index2 === i2)
+      "index1" in currentUpdate
+        ? currentUpdate.index1 === i1
+        : currentUpdate.index2 === i2
     ) {
       // We are matching with an update
       nextUpdateIndex += 1;
