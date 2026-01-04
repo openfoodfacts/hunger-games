@@ -110,6 +110,7 @@ export default function FilterDialog(props: FilterDialogProps) {
     innerCampaign,
     innerSortByPopularity,
     innerPredictor,
+    setGlobalValue,
     onClose,
   ]);
 
