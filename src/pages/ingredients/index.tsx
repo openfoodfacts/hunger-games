@@ -138,10 +138,7 @@ function ProductInterface(props) {
 export default function IngredientsPage() {
   const { t } = useTranslation();
   const [country] = useCountry();
-  const selectedCountryCode = country;
-
-  const [data, removeHead, isLoading] = useData(selectedCountryCode);
-  // console.log("Data is ",data);
+  const [data, removeHead, isLoading] = useData(country);
   return (
     <React.Suspense fallback={<Loader />}>
       <Stack
