@@ -1,11 +1,13 @@
+import { NUTRI_PATROL_URL } from "./const";
+
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 export const addImageFlag = (opts: {
-  barcode: string | undefined;
-  imgid: number | undefined;
+  barcode: string;
+  imgid: number;
 }) => {
   const {barcode, imgid} = opts;
   const imgidStr = imgid?.toString() || '';
-  const NutriPatrolURL = 'https://nutripatrol.openfoodfacts.org/flag/image/?'+
+  const NutriPatrolURL = `${NUTRI_PATROL_URL}?` +
   new URLSearchParams({
     barcode: barcode || '',
     image_id: imgidStr || '',
