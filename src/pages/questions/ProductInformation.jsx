@@ -181,11 +181,7 @@ const ProductInformation = () => {
                     </Tooltip>
                   ) : (
                     <Tooltip title={t("questions.flag")}>
-                      <IconButton
-                        onClick={() =>
-                          flagImage(src.imageUrl)
-                        }
-                      >
+                      <IconButton onClick={() => flagImage(src.imageUrl)}>
                         <OutlinedFlagIcon />
                       </IconButton>
                     </Tooltip>
