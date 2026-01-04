@@ -8,8 +8,7 @@ import ShowImage from "./ShowImage";
 import { TextCorrection } from "./TextCorrection/TextCorrection";
 
 export default function Nutrition() {
-  const { isLoading, insight, nextItem, count, product } =
-    useRobotoffPredictions();
+  const { isLoading, insight, nextItem, product } = useRobotoffPredictions();
 
   const { original, correction } = insight?.data ?? {};
 
