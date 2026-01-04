@@ -3,8 +3,6 @@ import Tooltip from "@mui/material/Tooltip";
 
 import { useTheme } from "@mui/material";
 
-import off from "../../../off";
-
 type BooleanEstimation = "no" | "yes" | "maybe";
 type ParsedIngredientsType = {
   ciqual_proxy_food_code?: string;
@@ -100,31 +98,17 @@ function ColorText({
   ];
 }
 
-export function useIngredientParsing() {
-  const [isLoading, setLoading] = React.useState(false);
-  const [parsings, setParsing] = React.useState({});
+type IngeredientDisplayProps = {
+  text: string;
+  onChange: React.ChangeEventHandler<HTMLTextAreaElement>;
+  parsings: Record<string, ParsedIngredientsType[] | undefined>;
+};
 
-  async function fetchIngredients(text: string, lang: string) {
-    if (parsings[text] !== undefined) {
-      return;
-    }
-
-    setLoading(true);
-    const parsing = await off.getIngedrientParsing({
-      text,
-      lang,
-    });
-    const ingredients = parsing.data?.product?.ingredients;
-    setParsing((prev) => ({ ...prev, [text]: ingredients }));
-    setLoading(false);
-  }
-
-  return { isLoading, fetchIngredients, parsings };
-}
-
-export function IngeredientDisplay(props) {
-  const { text, onChange, parsings } = props;
-
+export function IngeredientDisplay({
+  text,
+  onChange,
+  parsings,
+}: IngeredientDisplayProps) {
   const theme = useTheme();
   const isDark = theme.palette.mode === "dark";
 

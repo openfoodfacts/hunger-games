@@ -7,7 +7,8 @@ import Popper from "@mui/material/Popper";
 import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
 import { DiffPrint } from "./DiffPrint";
-import { IngeredientDisplay, useIngredientParsing } from "./IngeredientDisplay";
+import { IngeredientDisplay } from "./IngeredientDisplay";
+import { useIngredientParsing } from "./ingredients";
 
 interface TextCorrectionProps {
   original: string;
@@ -29,6 +30,7 @@ export function TextCorrection(props: TextCorrectionProps) {
     suggestionIndex,
     actions,
   } = useTextCorrection(props.original, props.correction);
+
   const { isLoading, fetchIngredients, parsings } = useIngredientParsing();
 
   const hasSuggestion = suggestion != null;
@@ -39,7 +41,7 @@ export function TextCorrection(props: TextCorrectionProps) {
     } else {
       fetchIngredients(text.before, "fr");
     }
-  }, [hasSuggestion]);
+  }, [fetchIngredients, hasSuggestion, text.before]);
 
   return (
     <Box>
