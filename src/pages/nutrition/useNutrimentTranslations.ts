@@ -6,12 +6,14 @@ interface Nutri {
   name?: string;
   nutrients?: Nutri[];
 }
-function parseNutrients(data: undefined | Nutri[]): Record<string, string> {
-  const rep = {};
 
+function parseNutrients(data: undefined | Nutri[]): Record<string, string> {
   if (data === undefined) {
     return {};
   }
+
+  const rep: Record<string, string> = {};
+
   data.forEach((item) => {
     const { id, name, nutrients } = item;
 
@@ -52,7 +54,7 @@ export default function useNutrimentTranslations(lc: string) {
           [language]: parseNutrients(data.nutrients),
         }));
       });
-  }, [lc]);
+  }, [lc, translations]);
 
   return translations;
 }
