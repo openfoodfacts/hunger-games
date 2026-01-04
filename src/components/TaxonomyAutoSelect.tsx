@@ -19,14 +19,22 @@ type TaxonomyAutoSelectProps = Omit<TextFieldProps, "value" | "onChange"> & {
   lang?: string;
 };
 
-const isOptionEqualToValue = (option: string | TaxonomyItem, value: string) =>
-  (typeof option === "string" ? option : option.text) === value;
+const isOptionEqualToValue = (
+  option: string | TaxonomyItem,
+  value: string | TaxonomyItem,
+) => {
+  const optObj = typeof option === "string" ? option : option.text;
+  const valObj = typeof value === "string" ? value : value.text;
+  return optObj === valObj;
+};
 
 export default function TaxonomyAutoSelect(props: TaxonomyAutoSelectProps) {
   const { taxonomy, value, onChange, showKey, fullWidth, lang, ...other } =
     props;
   const [inputValue, setInputValue] = React.useState("");
-  const [selectedValue, setSelectedValue] = React.useState(null);
+  const [selectedValue, setSelectedValue] = React.useState<TaxonomyItem | null>(
+    null,
+  );
   const [options, setOptions] = React.useState<
     readonly (string | TaxonomyItem)[]
   >([]);
@@ -46,7 +54,7 @@ export default function TaxonomyAutoSelect(props: TaxonomyAutoSelectProps) {
         },
         400,
       ),
-    [language],
+    [language, taxonomy],
   );
 
   React.useEffect(() => {
@@ -94,10 +102,12 @@ export default function TaxonomyAutoSelect(props: TaxonomyAutoSelectProps) {
       }
       isOptionEqualToValue={isOptionEqualToValue}
       // noOptionsText="No locations"
-      onChange={(event: any, newValue: TaxonomyItem | null | string) => {
+      onChange={(event, newValue) => {
         if (typeof newValue === "object") {
-          onChange(newValue.text, newValue);
-          setSelectedValue(newValue);
+          if (newValue != null) {
+            onChange(newValue.text, newValue);
+            setSelectedValue(newValue);
+          }
           return;
         }
         onChange(newValue);
