@@ -16,26 +16,22 @@ export default function ProductOtherQuestions({
 }) {
   const { t } = useTranslation();
 
-  const [answers, setAnswers] = React.useState<
-    Record<
-      string,
-      {
-        value: typeof WRONG_INSIGHT | typeof CORRECT_INSIGHT | null;
-        sent: boolean;
-      }
-    >
-  >({});
   const { data, status } = useProductQuestions(question.barcode);
 
-  const filteredData = React.useMemo(
-    () =>
-      data?.filter(
-        (q) =>
-          q.insight_id !== question.insight_id && // Not the main question
-          !answers[q.insight_id]?.sent, // Not already answered
-      ) ?? [],
-    [question.insight_id, data],
-  );
+  type Answer = {
+    value: typeof WRONG_INSIGHT | typeof CORRECT_INSIGHT | null;
+    sent: boolean;
+  };
+
+  const [answers, setAnswers] = React.useState<Record<string, Answer>>({});
+
+  const filteredData = React.useMemo(() => {
+    const dataFilter = (q: QuestionInterface): boolean =>
+      q.insight_id !== question.insight_id && // Not the main question
+      !answers[q.insight_id]?.sent;
+
+    return data?.filter(dataFilter) ?? [];
+  }, [data, question.insight_id, answers]);
 
   // Reset the pending answer for new data
   React.useEffect(() => {
