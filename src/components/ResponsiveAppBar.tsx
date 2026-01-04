@@ -113,11 +113,12 @@ const MultiPagesButton = ({
   toggleIsOpen: () => void;
 }) => {
   const { t } = useTranslation();
-  const anchorEl = React.useRef(null);
+  const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
+
   return (
     <>
       <Button
-        ref={anchorEl}
+        ref={setAnchorEl}
         color="inherit"
         key={translationKey}
         onClick={toggleIsOpen}
@@ -126,7 +127,7 @@ const MultiPagesButton = ({
         {t(translationKey)}
       </Button>
       <Menu
-        anchorEl={anchorEl.current}
+        anchorEl={anchorEl}
         open={isOpen}
         onClose={toggleIsOpen}
         sx={{ display: { xs: "none", md: "flex" } }}
@@ -152,13 +153,17 @@ const MultiPagesButton = ({
 
 const ResponsiveAppBar = () => {
   const { t } = useTranslation();
-  const [anchorElNav, setAnchorElNav] = React.useState(null);
+  const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
+    null,
+  );
   const [isTourOpen, setIsTourOpen] = React.useState(false);
   const [country, setCountry] = useCountry();
   const theme = useTheme();
   const isDesktop = useMediaQuery(theme.breakpoints.up("md"));
 
-  const handleOpenNavMenu = (event) => {
+  const handleOpenNavMenu: React.MouseEventHandler<HTMLButtonElement> = (
+    event,
+  ) => {
     setAnchorElNav(event.currentTarget);
   };
 
@@ -168,7 +173,9 @@ const ResponsiveAppBar = () => {
 
   const { isLoggedIn, userName, refresh } = React.useContext(LoginContext);
   const { devMode: isDevMode, visiblePages } = React.useContext(DevModeContext);
-  const [menuOpenState, setMenuOpenState] = React.useState({});
+  const [menuOpenState, setMenuOpenState] = React.useState<
+    Record<string, boolean>
+  >({});
 
   const isPageVisible = (page: {
     devModeOnly?: boolean;
@@ -177,7 +184,11 @@ const ResponsiveAppBar = () => {
     url?: string;
   }) => {
     if (page.devModeOnly) {
-      return isDevMode && visiblePages[page.url];
+      return (
+        isDevMode &&
+        page.url &&
+        visiblePages[page.url as keyof typeof visiblePages]
+      );
     }
     if (page.mobileOnly) {
       return !isDesktop;
@@ -211,7 +222,7 @@ const ResponsiveAppBar = () => {
         color: theme.palette.cafeCreme.contrastText,
       })}
     >
-      <Container maxWidth={null}>
+      <Container maxWidth={false}>
         <Toolbar disableGutters>
           {/* Mobile content */}
           <Box
@@ -362,7 +373,7 @@ const ResponsiveAppBar = () => {
                 onClick={async () => {
                   const isLoggedIn = await refresh();
                   if (!isLoggedIn) {
-                    window.open(`${OFF_URL}/cgi/login.pl`, "_blank").focus();
+                    window.open(`${OFF_URL}/cgi/login.pl`, "_blank")?.focus();
                   }
                 }}
               >
@@ -532,7 +543,7 @@ const ResponsiveAppBar = () => {
                       if (!isLoggedIn) {
                         window
                           .open(`${OFF_URL}/cgi/login.pl`, "_blank")
-                          .focus();
+                          ?.focus();
                       }
                     }}
                   >
