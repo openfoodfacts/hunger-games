@@ -81,7 +81,7 @@ export function useRobotoffPredictions(partiallyFilled: boolean) {
     return () => {
       valid = false;
     };
-  }, [insightIndex, insights, campaign, country]);
+  }, [insightIndex, insights, campaign, country, isLoading]);
 
   React.useEffect(() => {
     const barecodeToImport = insights.data
@@ -99,7 +99,7 @@ export function useRobotoffPredictions(partiallyFilled: boolean) {
           setOffData((prev) => ({ ...prev, [code]: product }));
         });
     });
-  }, [insightIndex, insights.data]);
+  }, [insightIndex, insights.data, offData]);
 
   const nextItem = React.useCallback(() => {
     setInsightIndex((p) => p + 1);
