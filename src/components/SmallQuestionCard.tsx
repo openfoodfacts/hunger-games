@@ -1,23 +1,41 @@
-import * as React from "react";
+import { useEffect, useState } from "react";
 
-import Card from "@mui/material/Card";
-import CardActionArea from "@mui/material/CardActionArea";
-import CardMedia from "@mui/material/CardMedia";
-import Badge from "@mui/material/Badge";
-import Link from "@mui/material/Link";
+import {
+  CircularProgress,
+  Badge,
+  CardActionArea,
+  CardMedia,
+  Card,
+  Link,
+} from "@mui/material";
 
 import robotoff from "../robotoff";
 import logo from "../assets/logo.png";
 import { getQuestionSearchParams } from "./QuestionFilter";
 
-const SmallQuestionCard = (props) => {
-  const { filterState, imageSrc } = props;
+type SmallQuestionCardProps = {
+  filterState: Partial<{
+    insightType: string;
+    brandFilter: string;
+    valueTag: string;
+    countryFilter: string;
+    sortByPopularity: boolean;
+    campaign: string;
+    predictor: string;
+    with_image?: boolean;
+  }>;
+  imageSrc?: string;
+};
 
+export default function SmallQuestionCard({
+  filterState,
+  imageSrc,
+}: SmallQuestionCardProps) {
   const targetUrl = `/questions?${getQuestionSearchParams(filterState)}`;
 
-  const [questionNumber, setQuestionNumber] = React.useState("?");
+  const [questionNumber, setQuestionNumber] = useState<null | number>(null);
 
-  React.useEffect(() => {
+  useEffect(() => {
     let isValid = true;
     robotoff
       .questions({ ...filterState, with_image: true }, 1, 1)
@@ -40,10 +58,12 @@ const SmallQuestionCard = (props) => {
           minHeight: "2rem",
         },
       }}
-      badgeContent={questionNumber}
+      badgeContent={
+        questionNumber ?? <CircularProgress size={15} sx={{ color: "white" }} />
+      }
       showZero
       color={
-        questionNumber === "?"
+        questionNumber == null
           ? "info"
           : questionNumber > 0
             ? "error"
@@ -63,6 +83,4 @@ const SmallQuestionCard = (props) => {
       </Card>
     </Badge>
   );
-};
-
-export default SmallQuestionCard;
+}
