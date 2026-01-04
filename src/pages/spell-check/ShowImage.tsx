@@ -13,19 +13,20 @@ export default function ShowImage(props: ShowImageProps) {
   const { barcode, images } = props;
   const [country] = useCountry();
 
-  const [selectedImageId, setSelectedImageId] = React.useState(null);
-  const availableIngredientImages = React.useMemo<
-    { country: string; imgid: number }[]
-  >(
+  const [selectedImageId, setSelectedImageId] = React.useState<null | number>(
+    null,
+  );
+
+  type AvailableIngredientImage = { country: string; imgid: number };
+
+  const availableIngredientImages = React.useMemo<AvailableIngredientImage[]>(
     () =>
-      Object.keys(images ?? {})
-        .map((key) => {
-          if (key.startsWith("ingredients_")) {
-            return { country: key.split("_")[1], imgid: images[key].imgid };
-          }
-          return null;
-        })
-        .filter(Boolean),
+      Object.entries(images ?? {})
+        .filter(([key]) => key.startsWith("ingredients_"))
+        .map(([key, value]) => ({
+          country: key.split("_")[1],
+          imgid: value.imgid,
+        })),
     [images],
   );
 
@@ -35,7 +36,7 @@ export default function ShowImage(props: ShowImageProps) {
     } else {
       setSelectedImageId(availableIngredientImages[0]?.imgid ?? null);
     }
-  }, [images, availableIngredientImages]);
+  }, [images, availableIngredientImages, country]);
 
   const availableImgids = React.useMemo(() => {
     const ids = Object.values(images ?? {})
@@ -46,11 +47,10 @@ export default function ShowImage(props: ShowImageProps) {
     return ids.filter((id, index) => !ids.slice(0, index).includes(id));
   }, [images]);
 
-  const imageUrl = selectedImageId
-    ? `${OFF_IMAGE_URL}/${off.getFormatedBarcode(
-        barcode,
-      )}/${selectedImageId}.jpg`
-    : "";
+  const barcodeUrl = (id: number, size?: number) => {
+    const sizePart = size ? `.${size}` : "";
+    return `${OFF_IMAGE_URL}/${off.getFormatedBarcode(barcode)}/${id}${sizePart}.jpg`;
+  };
 
   return (
     <div>
@@ -70,8 +70,8 @@ export default function ShowImage(props: ShowImageProps) {
         <TransformComponent>
           <div style={{ width: "50vw", height: "70vh" }}>
             <img
-              key={imageUrl}
-              src={imageUrl}
+              key={((id: number) => barcodeUrl(id))(selectedImageId!)}
+              src={((id: number) => barcodeUrl(id))(selectedImageId!)}
               alt=""
               style={{
                 maxWidth: "100%",
@@ -82,23 +82,27 @@ export default function ShowImage(props: ShowImageProps) {
         </TransformComponent>
       </TransformWrapper>
       <Stack direction="row">
-        {availableImgids.map((id) => (
-          <button
-            key={id}
-            style={{
-              backgroundColor: selectedImageId === id ? "lightblue" : undefined,
-            }}
-            onClick={() => setSelectedImageId(id)}
-          >
-            <img
-              src={`${OFF_IMAGE_URL}/${off.getFormatedBarcode(
-                barcode,
-              )}/${id}.100.jpg`}
-              alt=""
-              style={{ maxHeight: 100, maxWidth: 100 }}
-            />
-          </button>
-        ))}
+        {availableImgids.map((id) => {
+          const thumbUrl = barcodeUrl(id, 100);
+
+          return (
+            <button
+              key={id}
+              style={{
+                backgroundColor:
+                  selectedImageId === id ? "lightblue" : undefined,
+              }}
+              onClick={() => setSelectedImageId(id)}
+              title={thumbUrl}
+            >
+              <img
+                src={thumbUrl}
+                alt=""
+                style={{ maxHeight: 100, maxWidth: 100 }}
+              />
+            </button>
+          );
+        })}
       </Stack>
     </div>
   );
