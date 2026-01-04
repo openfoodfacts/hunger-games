@@ -1,0 +1,194 @@
+.altLight0 {
+  color: gray;
+}
+.altLight1 {
+  color: black;
+}
+.altDark0 {
+  color: lightgray;
+}
+.altDark1 {
+  color: white;
+}
+
+.ingredientDisplayLight {
+  position: relative;
+  text-align: left;
+  box-sizing: border-box;
+  padding: 0;
+  overflow: hidden;
+  font-size: 0.8125rem;
+  line-height: 1.5;
+  letter-spacing: 0;
+  font-family: Menlo, Consolas, "Droid Sans Mono", monospace;
+  font-weight: 400;
+  float: left;
+  min-width: 100%;
+  min-height: 3rem;
+  border: solid black 1px;
+}
+.ingredientDisplayDark {
+  position: relative;
+  text-align: left;
+  box-sizing: border-box;
+  padding: 0;
+  overflow: hidden;
+  font-size: 0.8125rem;
+  line-height: 1.5;
+  letter-spacing: 0;
+  font-family: Menlo, Consolas, "Droid Sans Mono", monospace;
+  font-weight: 400;
+  float: left;
+  min-width: 100%;
+  min-height: 3rem;
+  border: solid white 1px;
+}
+.ingredientTextareaLight {
+  margin: 0;
+  border: 0;
+  background: none;
+  box-sizing: inherit;
+  display: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  font-variant-ligatures: inherit;
+  font-weight: inherit;
+  letter-spacing: inherit;
+  line-height: inherit;
+  tab-size: inherit;
+  text-indent: inherit;
+  text-rendering: inherit;
+  text-transform: inherit;
+  white-space: pre-wrap;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  resize: none;
+  overflow: hidden;
+  padding: 16px;
+  color: black;
+  -webkit-text-fill-color: transparent;
+}
+.ingredientTextareaDark {
+  margin: 0;
+  border: 0;
+  background: none;
+  box-sizing: inherit;
+  display: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  font-variant-ligatures: inherit;
+  font-weight: inherit;
+  letter-spacing: inherit;
+  line-height: inherit;
+  tab-size: inherit;
+  text-indent: inherit;
+  text-rendering: inherit;
+  text-transform: inherit;
+  white-space: pre-wrap;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  resize: none;
+  overflow: hidden;
+  padding: 16px;
+  color: white;
+  -webkit-text-fill-color: transparent;
+}
+.ingredientDisplay {
+  position: relative;
+  text-align: left;
+  box-sizing: border-box;
+  padding: 0;
+  overflow: hidden;
+  font-size: 0.8125rem;
+  line-height: 1.5;
+  letter-spacing: 0;
+  font-family: Menlo, Consolas, "Droid Sans Mono", monospace;
+  font-weight: 400;
+  --webkit-font-smooth: subpixel-antialiased;
+  -moz-osx-font-smooth: auto;
+  float: left;
+  min-width: 100%;
+  min-height: 3rem;
+  border: solid var(--ingredientDisplay-border-color) 1px;
+}
+
+.ingredientPre {
+  margin: 0;
+  border: 0;
+  background: none;
+  box-sizing: inherit;
+  display: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  font-variant-ligatures: inherit;
+  font-weight: inherit;
+  letter-spacing: inherit;
+  line-height: inherit;
+  tab-size: inherit;
+  text-indent: inherit;
+  text-rendering: inherit;
+  text-transform: inherit;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+  position: relative;
+  padding: 16px;
+  white-space: pre-wrap;
+}
+
+.ingredientTextarea {
+  margin: 0;
+  border: 0;
+  background: none;
+  box-sizing: inherit;
+  display: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  font-variant-ligatures: inherit;
+  font-weight: inherit;
+  letter-spacing: inherit;
+  line-height: inherit;
+  tab-size: inherit;
+  text-indent: inherit;
+  text-rendering: inherit;
+  text-transform: inherit;
+  white-space: pre-wrap;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  resize: none;
+  overflow: hidden;
+  padding: 16px;
+  color: var(--ingredientTextarea-color);
+  -webkit-text-fill-color: transparent;
+}
+
+.ingredient-green {
+  color: green;
+}
+.ingredient-lightgreen {
+  color: lightgreen;
+}
+.ingredient-blue {
+  color: blue;
+}
+.ingredient-orange {
+  color: orange;
+}

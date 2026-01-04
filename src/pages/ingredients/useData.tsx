@@ -2,6 +2,8 @@ import * as React from "react";
 import off from "../../off";
 import { ROBOTOFF_API_URL } from "../../const";
 
+import { Product } from "@openfoodfacts/openfoodfacts-nodejs";
+
 const imagesToRead = [
   {
     tagtype: "states",
@@ -27,6 +29,60 @@ const getIngredientExtractionUrl = (base: string, id: string) => {
   return `${ROBOTOFF_API_URL}/predict/ingredient_list?ocr_url=${base}${id}.json`;
 };
 
+// TODO: Replace this type with OFF-SDK types
+type ProductStub = {
+  code: Product["code"];
+  lang: Product["lang"];
+  image_ingredients_url: string;
+  product_name: string;
+  ingredient: unknown;
+  images: Record<
+    string,
+    {
+      uploader?: string;
+      uploaded_t?: number;
+      geometry: string;
+      imgid: string;
+      sizes: { full: { w: string; h: string } };
+      x1?: number;
+      x2?: number;
+      y1?: number;
+      y2?: number;
+    }
+  >;
+  scans_n: unknown;
+  [x: string]: unknown;
+};
+
+// TODO: Replace this type with OFF-SDK types
+type FormattedProductStub = {
+  code: Product["code"];
+  lang: Product["lang"];
+  image_ingredients_url: string;
+  product_name: string;
+  ingredient: unknown;
+  scans_n: unknown;
+
+  selectedImages: {
+    imgId: string;
+    countryCode: string;
+    imageUrl: string;
+    fetchDataUrl: string;
+    uploaded_t: number | undefined;
+    uploader: string | undefined;
+    x: number;
+    y: number;
+    w: number;
+    h: number;
+    x1: number | undefined;
+    x2: number | undefined;
+    y1: number | undefined;
+    y2: number | undefined;
+    geometry: string;
+  }[];
+  [key: string]: unknown;
+};
+
 const formatData = ({
   code,
   lang,
@@ -36,16 +92,7 @@ const formatData = ({
   images,
   scans_n,
   ...other
-}: {
-  code: string;
-  lang: string;
-  image_ingredients_url: string;
-  product_name: string;
-  ingredient: any;
-  images: any;
-  scans_n: any;
-  [x: string]: unknown;
-}) => {
+}: ProductStub): FormattedProductStub => {
   const baseImageUrl = image_ingredients_url.replace(/ingredients.*/, "");
 
   const selectedImages = Object.keys(images)
@@ -81,12 +128,11 @@ const formatData = ({
         geometry: images[key].geometry,
       };
     });
-  const ingredientTexts = {};
-  Object.entries(other).forEach(([key, value]) => {
-    if (key.startsWith("ingredient")) {
-      ingredientTexts[key] = value;
-    }
-  });
+
+  const ingredientTexts = Object.fromEntries(
+    Object.entries(other).filter(([key]) => key.startsWith("ingredient")),
+  );
+
   return {
     code,
     lang,
@@ -100,16 +146,19 @@ const formatData = ({
   };
 };
 
-export default function useData(countryCode): [any[], () => void, boolean] {
-  const [data, setData] = React.useState([]);
+export default function useData(
+  countryCode: string,
+): [FormattedProductStub[], () => void, boolean] {
   const prevCountry = React.useRef(countryCode);
+  const seenCodes = React.useRef(new Set<string>());
+
+  const [data, setData] = React.useState<FormattedProductStub[]>([]);
   const [isLoading, setIsLoading] = React.useState(true);
   const [page, setPage] = React.useState(() => {
     return 0;
     // Seems that API fails for large page number
     //return new Date().getMilliseconds() % 50;
   });
-  const seenCodes = React.useRef([]);
 
   React.useEffect(() => {
     let isValid = true;
@@ -120,19 +169,20 @@ export default function useData(countryCode): [any[], () => void, boolean] {
       try {
         const {
           data: { products },
-        } = await off.searchProducts({
+        } = (await off.searchProducts({
           page,
           pageSize: 25,
           filters: imagesToRead,
           fields: "all",
           countryCode: countryCode || "world",
-        });
+        })) as { data: { products: ProductStub[] } };
+
         if (isValid) {
           const rep = products
             .filter((p) => {
-              const isNew = !seenCodes.current[p.code]; // prevent from adding products already seen
+              const isNew = !seenCodes.current.has(p.code); // prevent from adding products already seen
               if (isNew) {
-                seenCodes.current[p.code] = true;
+                seenCodes.current.add(p.code);
               }
 
               return isNew;
