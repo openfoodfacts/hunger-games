@@ -61,7 +61,7 @@ const Home = () => {
       </Box>
 
       {isLoggedIn ? (
-        <UserData userName={userName} />
+        <UserData username={userName} />
       ) : (
         <React.Fragment>
           <Box

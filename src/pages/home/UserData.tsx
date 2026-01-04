@@ -40,7 +40,12 @@ const fetchUserData = async (userName: string) => {
   return { editorCount, contributorCount, photographerCount };
 };
 
-const CountCard = (props) => {
+type CountCardProps = {
+  translationKey: string;
+  value: number | string;
+};
+
+function CountCard(props: CountCardProps) {
   const { translationKey, value } = props;
 
   const { t } = useTranslation();
@@ -68,29 +73,41 @@ const CountCard = (props) => {
       </CardContent>
     </Card>
   );
-};
+}
 
-const UserData = ({ userName }) => {
+export default function UserData({ username }: { username: string }) {
   const { t } = useTranslation();
 
-  const [data, setData] = useState({});
+  type DataType = {
+    editorCount?: number;
+    contributorCount?: number;
+    photographerCount?: number;
+  };
+
+  const [data, setData] = useState<DataType>({});
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
+  const [error, setError] = useState<null | string>(null);
+
+  const loadData = async (username: string) => {
+    setLoading(true);
+    try {
+      const counts = await fetchUserData(username);
+      setData(counts);
+    } catch {
+      setError("Failed to fetch user data");
+    } finally {
+      setLoading(false);
+    }
+  };
 
   useEffect(() => {
-    setLoading(true);
-    fetchUserData(userName)
-      .then((counts) => setData(counts))
-      .catch(() => {
-        setError("Failed to fetch user data");
-      })
-      .finally(() => setLoading(false));
-  }, [userName]);
+    loadData(username);
+  }, [username]);
 
   return (
     <Box sx={{ p: 2, mb: 10 }}>
       <Typography component="h3" variant="h5" sx={{ pb: 3 }}>
-        {t("home.statistics.title", { userName: userName || "<unknown>" })}
+        {t("home.statistics.title", { userName: username || "<unknown>" })}
       </Typography>
 
       {loading ? (
@@ -118,5 +135,4 @@ const UserData = ({ userName }) => {
       )}
     </Box>
   );
-};
-export default UserData;
+}
