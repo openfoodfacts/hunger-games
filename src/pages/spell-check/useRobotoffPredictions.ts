@@ -52,7 +52,7 @@ export function useRobotoffPredictions() {
     return () => {
       valid = false;
     };
-  }, [insights, country]);
+  }, [isLoading, insights, country]);
 
   React.useEffect(() => {
     const barecodeToImport = insights
@@ -70,7 +70,7 @@ export function useRobotoffPredictions() {
           setOffData((prev) => ({ ...prev, [code]: product }));
         });
     });
-  }, [insights]);
+  }, [insights, offData]);
 
   const nextItem = React.useCallback(() => {
     setInsights((p) => p.slice(1));
