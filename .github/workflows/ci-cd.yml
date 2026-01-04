@@ -1,29 +1,54 @@
-name: CI
+name: "CI/CD"
 
 on:
-  # Triggers the workflow on push or pull request events but only for the master branch
   push:
     branches: [master]
 
   pull_request:
     branches: [master]
 
-  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
-permissions:
-  pages: write
-  id-token: write
-
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
+  lint:
+    name: Lint
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: actions/setup-node@v6
+        with:
+          node-version-file: ".nvmrc"
+
+      - name: Enable corepack
+        run: corepack enable
+
+      - name: Get Yarn cache directory
+        id: yarn-cache-dir
+        run: echo "yarn-cache-folder=$(yarn config get cacheFolder)" >> $GITHUB_OUTPUT
+
+      - name: Cache Yarn dependencies
+        uses: actions/cache@v5
+        with:
+          path: ${{ steps.yarn-cache-dir.outputs.yarn-cache-folder }}
+          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
+
+      - name: Install dependencies
+        run: yarn install --immutable
+
+      - name: Run linters
+        run: yarn lint
+
   build-and-deploy:
     name: Build and Deploy
     runs-on: ubuntu-latest
 
-    # Steps represent a sequence of tasks that will be executed as part of the job
+    # Allow deployment to GitHub Pages
+    permissions:
+      pages: write
+      id-token: write
+
     steps:
       - uses: actions/checkout@v6
 
