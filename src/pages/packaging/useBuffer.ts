@@ -18,14 +18,15 @@ type Packaging = {
 
 type ProductDescription = {
   code: number;
-  states: any;
+  states: unknown;
   lang: string;
   image_packaging_url: string;
   packagings: Packaging[];
   product_name: string;
-  images: any;
+  images: unknown;
   creator: string;
 };
+
 function getProductsToAnnotateUrl({
   page = 1,
   country = "en:france",
@@ -59,12 +60,12 @@ export const useBuffer = ({
   code,
 }: Omit<Parameters, "page">): [ProductDescription[], () => void] => {
   const [page, setPage] = React.useState(() => Math.ceil(Math.random() * 100));
-  const [data, setData] = React.useState<ProductDescription[]>(null);
+  const [data, setData] = React.useState<ProductDescription[]>([]);
   const [maxPage, setMaxPage] = React.useState<number>(100);
 
-  const url = getProductsToAnnotateUrl({ page, country, creator, code });
-
   const canReset = React.useRef(false);
+
+  // Reset data and page when country or creator changes
   React.useEffect(() => {
     if (canReset.current) {
       setData([]);
@@ -72,11 +73,15 @@ export const useBuffer = ({
     }
   }, [country, creator]);
 
+  // Increment page when data is empty
   React.useEffect(() => {
-    if (data != null && data.length === 0) {
+    if (data.length === 0) {
       setPage((p) => Math.min(maxPage, p + 1));
     }
   }, [data, maxPage]);
+
+  // Fetch data when URL changes
+  const url = getProductsToAnnotateUrl({ page, country, creator, code });
 
   React.useEffect(() => {
     let isValid = true;
@@ -95,5 +100,6 @@ export const useBuffer = ({
 
   const next = () =>
     setData((prev) => (prev && prev.length > 0 ? prev.slice(1) : prev));
+
   return [data, next];
 };
