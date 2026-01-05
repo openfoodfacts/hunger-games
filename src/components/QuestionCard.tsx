@@ -1,4 +1,7 @@
-import { MouseEventHandler, useEffect, useState } from "react";
+import * as React from "react";
+import { useQuery } from "@tanstack/react-query";
+import { useTranslation } from "react-i18next";
+
 import Card from "@mui/material/Card";
 import CardActionArea from "@mui/material/CardActionArea";
 import CardMedia from "@mui/material/CardMedia";
@@ -19,7 +22,6 @@ import robotoff from "../robotoff";
 import { localFavorites } from "../localeStorageManager";
 import logo from "../assets/logo.png";
 import { getQuestionSearchParams } from "./QuestionFilter";
-import { useTranslation } from "react-i18next";
 
 type FilterState = {
   insightType?: string;
@@ -30,32 +32,18 @@ type FilterState = {
   campaign?: string;
 };
 
-const useQuestionCount = (filterState: FilterState) => {
-  const [questionCount, setQuestionCount] = useState<number | null>(null);
-
-  useEffect(() => {
-    let isValid = true;
-
-    robotoff
-      .questions({ ...filterState, with_image: true }, 1, 1)
-      .then(({ data }) => {
-        if (isValid) {
-          setQuestionCount(data?.count ?? 0);
-        }
-      })
-      .catch(() => {
-        if (isValid) {
-          setQuestionCount(null);
-        }
-      });
-
-    return () => {
-      isValid = false;
-    };
-  }, [filterState]);
-
-  return questionCount;
-};
+const useQuestionCount = (filterState: FilterState) =>
+  useQuery({
+    queryKey: ["questionCount", filterState],
+    queryFn: async () => {
+      const { data } = await robotoff.questions(
+        { ...filterState, with_image: true },
+        1,
+        1,
+      );
+      return data?.count ?? 0;
+    },
+  });
 
 type EditableCardTitleProps = {
   title: string;
@@ -68,15 +56,15 @@ function EditableCardTitle({
   editable,
   onSave,
 }: EditableCardTitleProps) {
-  const [isEditMode, setIsEditMode] = useState(false);
-  const [innerTitle, setInnerTitle] = useState(title);
+  const [isEditMode, setIsEditMode] = React.useState(false);
+  const [innerTitle, setInnerTitle] = React.useState(title);
 
-  useEffect(() => {
+  React.useEffect(() => {
     setInnerTitle(title);
   }, [title]);
 
-  const handleStartEdit: MouseEventHandler = (event) => {
-    event.stopPropagation();
+  const handleStartEdit: React.MouseEventHandler = (event) => {
+    event.preventDefault();
     setIsEditMode(true);
   };
 
@@ -233,7 +221,7 @@ export default function QuestionCard({
   showFilterResume = false,
   editableTitle = false,
 }: QuestionCardProps) {
-  const questionCount = useQuestionCount(filterState);
+  const { data: questionCount } = useQuestionCount(filterState);
   const targetUrl = `/questions?${getQuestionSearchParams(filterState)}`;
 
   const handleTitleSave = (newTitle: string) => {
@@ -241,7 +229,7 @@ export default function QuestionCard({
   };
 
   return (
-    <QuestionCountBadge count={questionCount}>
+    <QuestionCountBadge count={questionCount ?? null}>
       <Card sx={{ minWidth: 200, maxWidth: 350 }}>
         <CardContent>
           <EditableCardTitle
