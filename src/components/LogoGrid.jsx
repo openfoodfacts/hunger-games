@@ -42,9 +42,7 @@ const LogoCard = React.memo(
 
     const updateLogo = React.useCallback(
       async (data) => {
-        if (data == null) {
-          return;
-        }
+        if (data == null) return;
         const { type, value } = data;
         if (!IS_DEVELOPMENT_MODE) {
           await robotoff.updateLogo(id, value, type);
@@ -68,15 +66,20 @@ const LogoCard = React.memo(
     return (
       <Card
         sx={{
-          width: 180,
-          margin: "20px auto 0 auto",
+          width: {
+            xs: "100%",
+            sm: 180,
+          },
+          margin: {
+            xs: 0,
+            sm: "20px auto 0 auto",
+          },
           boxSizing: "border-box",
           backgroundColor: selected
             ? theme.palette.action.selected
             : annotation_type
               ? theme.palette.action.disabledBackground
               : undefined,
-          // border: selected ? `solid ${theme.palette.primary.main} ${theme.spacing(1)}` : undefined,
           position: "relative",
         }}
       >
@@ -94,26 +97,26 @@ const LogoCard = React.memo(
             </IconButton>
           </Tooltip>
         </Box>
+
         <Divider />
+
         <CardActionArea
           disabled={readOnly || !!annotation_type}
           onClick={handleClick}
-          sx={{ flexGrow: 1 }}
         >
           <CardMedia
             component="img"
-            height="150px"
-            width="180px"
+            height="150"
             loading="lazy"
             image={image}
             sx={{ objectFit: "contain" }}
           />
         </CardActionArea>
+
         <Typography sx={{ padding: 1 }} variant="caption">
           {distance !== undefined &&
             `${t("logos.distance")} ${distance.toFixed(1)}`}
         </Typography>
-        <br />
 
         {editOpen || editing ? (
           <LogoForm
@@ -126,21 +129,21 @@ const LogoCard = React.memo(
                 flexDirection: "column",
               },
               "& .MuiTextField-root, & .MuiButtonBase-root, & .MuiAutocomplete-root":
-                {
-                  minWidth: 0,
-                  width: "100%",
-                  margin: 0,
-                },
+              {
+                minWidth: 0,
+                width: "100%",
+                margin: 0,
+              },
             }}
           />
         ) : (
           <Typography sx={{ padding: 1 }} variant="caption">
             {(annotation_type || annotation_value) &&
-              `${t("logos.annotation")} ${annotation_value || ""} (${
-                annotation_type || ""
+              `${t("logos.annotation")} ${annotation_value || ""} (${annotation_type || ""
               })`}
           </Typography>
         )}
+
         {!readOnly && (
           <Checkbox
             checked={selected}
@@ -155,58 +158,57 @@ const LogoCard = React.memo(
   },
 );
 
-const LogoGrid = (props) => {
-  const {
-    logos,
-    toggleLogoSelection,
-    setLogoSelectionRange,
-    readOnly,
-    sx,
-    editOpen,
-  } = props;
-
+const LogoGrid = ({
+  logos,
+  toggleLogoSelection,
+  setLogoSelectionRange,
+  readOnly,
+  sx,
+  editOpen,
+}) => {
   const [lastClicked, setLastClicked] = React.useState(null);
   const selectionApiRef = React.useRef({});
-
   const [logoIds, setLogoIds] = React.useState([]);
 
   React.useEffect(() => {
-    if (
-      JSON.stringify(logoIds) !== JSON.stringify(logos.map((logo) => logo.id))
-    ) {
-      // Reset lastClick when logos ret reordered or modified
-      setLogoIds(logos.map((logo) => logo.id));
+    const ids = logos.map((logo) => logo.id);
+    if (JSON.stringify(ids) !== JSON.stringify(logoIds)) {
+      setLogoIds(ids);
       setLastClicked(null);
     }
-  }, [logoIds, logos]);
+  }, [logos, logoIds]);
 
   React.useEffect(() => {
     selectionApiRef.current = {
       rangeSelection: (index, id, selected) => {
-        if (setLogoSelectionRange === undefined) {
+        if (!setLogoSelectionRange) {
           toggleLogoSelection(id);
           return;
         }
         if (lastClicked === null) {
           toggleLogoSelection(id);
           setLastClicked({ selected: !selected, index });
+          return;
         }
 
         const newSelectionState =
           selected === lastClicked.selected
             ? !lastClicked.selected
             : lastClicked.selected;
-        const minIndex = Math.min(index, lastClicked.index);
-        const maxIndex = Math.max(index, lastClicked.index);
+
+        const min = Math.min(index, lastClicked.index);
+        const max = Math.max(index, lastClicked.index);
+
         setLogoSelectionRange(
-          logoIds.slice(minIndex, maxIndex + 1),
+          logoIds.slice(min, max + 1),
           newSelectionState,
         );
         setLastClicked({ selected: newSelectionState, index });
       },
+
       singleSelection: (index, id, selected) => {
         toggleLogoSelection(id);
-        if (setLogoSelectionRange !== undefined) {
+        if (setLogoSelectionRange) {
           setLastClicked({ selected: !selected, index });
         }
       },
@@ -218,16 +220,21 @@ const LogoGrid = (props) => {
       sx={{
         paddingTop: 5,
         display: "grid",
-        gridTemplateColumns: "repeat(auto-fill, minmax(200px, 1fr))",
+        gridTemplateColumns: {
+          xs: "1fr",
+          sm: "repeat(auto-fill, minmax(200px, 1fr))",
+        },
+        gap: { xs: 2, sm: 0 },
+        px: { xs: 2, sm: 0 },
         alignItems: "center",
         justifyContent: "center",
         ...sx,
       }}
     >
-      {logos.map((logo, logoIndex) => (
+      {logos.map((logo, index) => (
         <LogoCard
           key={logo.id}
-          index={logoIndex}
+          index={index}
           selected={logo.selected || false}
           id={logo.id}
           annotation_value={logo.annotation_value}
