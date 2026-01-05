@@ -16,6 +16,20 @@ export interface QuestionInterface {
   value_tag: string;
 }
 
+export type FilterState = {
+  insightType?: string;
+  brandFilter?: string;
+  country?: string;
+  brand?: string;
+  valueTag?: string;
+  countryFilter?: string;
+  sortByPopularity?: boolean;
+  campaign?: string;
+  predictor?: string;
+  with_image?: boolean;
+  sorted?: string;
+};
+
 type GetQuestionsResponse = { count: number; questions: QuestionInterface[] };
 
 const robotoff = {
@@ -45,20 +59,7 @@ const robotoff = {
   },
 
   questions(
-    filterState: Partial<{
-      insightType: string;
-      brandFilter: string;
-      valueTag: string;
-      countryFilter: string;
-      sortByPopularity: boolean;
-      campaign: string;
-      predictor: string;
-      with_image?: boolean;
-    }>,
-    count = 10,
-    page = 1,
-  ) {
-    const {
+    {
       insightType,
       brandFilter,
       valueTag,
@@ -67,8 +68,10 @@ const robotoff = {
       campaign,
       predictor,
       with_image,
-    } = filterState;
-
+    }: FilterState,
+    count = 10,
+    page = 1,
+  ) {
     const searchParams = {
       insight_types: insightType,
       value_tag: valueTag,
