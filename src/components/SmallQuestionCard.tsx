@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import * as React from "react";
 
 import {
   CircularProgress,
@@ -9,21 +9,12 @@ import {
   Link,
 } from "@mui/material";
 
-import robotoff from "../robotoff";
+import robotoff, { FilterState } from "../robotoff";
 import logo from "../assets/logo.png";
 import { getQuestionSearchParams } from "./QuestionFilter";
 
 type SmallQuestionCardProps = {
-  filterState: Partial<{
-    insightType: string;
-    brandFilter: string;
-    valueTag: string;
-    countryFilter: string;
-    sortByPopularity: boolean;
-    campaign: string;
-    predictor: string;
-    with_image?: boolean;
-  }>;
+  filterState: FilterState;
   imageSrc?: string;
 };
 
@@ -33,9 +24,11 @@ export default function SmallQuestionCard({
 }: SmallQuestionCardProps) {
   const targetUrl = `/questions?${getQuestionSearchParams(filterState)}`;
 
-  const [questionNumber, setQuestionNumber] = useState<null | number>(null);
+  const [questionNumber, setQuestionNumber] = React.useState<null | number>(
+    null,
+  );
 
-  useEffect(() => {
+  React.useEffect(() => {
     let isValid = true;
     robotoff
       .questions({ ...filterState, with_image: true }, 1, 1)
