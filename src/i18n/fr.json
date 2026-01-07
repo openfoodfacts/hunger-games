@@ -12,8 +12,8 @@
           "description": "Trouver tous les logos correspondant au logo donné"
         },
         "green_score": {
-          "title": "",
-          "description": "Annotate the questions with the highest value"
+          "title": "Éco-Score",
+          "description": "Annotez les questions avec la valeur la plus élevée"
         }
       }
     },
@@ -76,7 +76,7 @@
     "hide_images": "Masquer les images (chargement plus rapide)",
     "display_images": "Afficher les images",
     "annotations": "Annotations",
-    "last_annotations": "Dernière annotations",
+    "last_annotations": "Dernières annotations",
     "remaining_annotations": "Questions restantes",
     "annotated_annotations": "Annoté",
     "filters": {
@@ -379,7 +379,7 @@
     "correct": "Correct ({{label}})"
   },
   "green-score": {
-    "description": "Here is a summary of questions that could improve Eco-Score computation",
+    "description": "Voici un résumé de questions qui pourraient améliorer le calcul de l’Éco-Score",
     "countryLabel": "Pays"
   },
   "ingredients": {
