@@ -88,8 +88,8 @@
         "country": "negara",
         "brand": "merek",
         "popularity": "popularitas",
-        "campaign": "kemping",
-        "predictor": "prediktor"
+        "campaign": "kemah",
+        "predictor": "peramal"
       },
       "long_label": {
         "type": "Tipe Pertanyaan",
@@ -167,7 +167,7 @@
     "value_placeholder": "cth: en:mueslis, bjorg,...",
     "type": "Tipe",
     "annotated": "Teranotasi",
-    "annotation": "Anotasi",
+    "annotation": "Annotation",
     "not_annotated": "Tidak beranotasi",
     "all": "Semua",
     "label": "Label",
@@ -243,8 +243,8 @@
   "settings": {
     "settings": "Pengaturan",
     "language": "Bahasa",
-    "save": "menyimpan ",
-    "reportIssue": "Menemukan bug? Beri tahu kami.",
+    "save": "Simpan",
+    "reportIssue": "Menemukan masalah? Beri tahu kami.",
     "dev_mode_title": "Untuk mendapatkan lebih banyak opsi, aktifkan mode dev",
     "dev_mode_label": "Mode Dev",
     "dev_page_toggle": "Tampilkan halaman {{name}}",
@@ -325,7 +325,7 @@
       "page3": {
         "title": "Validasikan",
         "text1": "Tunjukkan tipe logo (label, merek, kode QR ...)",
-        "text2": "Jika itu adalah label atau logo merek, tunjukkan salah satu dari keduanya",
+        "text2": "Jika itu adalah label atau logo merek, tunjukkan yang mana",
         "text3": "Sekarang Anda bisa mengirimkan pilihan Anda",
         "text4": "Terima kasih :)"
       }
