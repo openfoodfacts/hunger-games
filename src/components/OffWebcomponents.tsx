@@ -42,7 +42,6 @@ export const RobotoffNutrientExtraction = ({
     window.fetch = function (...args) {
       const url = args[0];
       const urlString = typeof url === "string" ? url : url.toString();
-
       if (
         productCode &&
         urlString.includes(`${ROBOTOFF_API_URL}/insights`) &&
