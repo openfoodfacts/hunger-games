@@ -11,10 +11,11 @@ import LinkIcon from "@mui/icons-material/Link";
 import DeleteIcon from "@mui/icons-material/Delete";
 import DoneIcon from "@mui/icons-material/Done";
 import MuiLink from "@mui/material/Link";
+import Skeleton from "@mui/material/Skeleton";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 
-import Loader from "../loader";
+
 
 import { useTranslation } from "react-i18next";
 import {
@@ -71,7 +72,7 @@ const usePotentialQuestionNumber = (
           setNbOfPotentialQuestions(nbQuestions);
         }
       })
-      .catch(() => {});
+      .catch(() => { });
 
     return () => {
       validRequest = false;
@@ -108,13 +109,61 @@ export default function QuestionDisplay() {
   if (question === null) {
     if (status === "pending") {
       return (
-        <Box sx={{ width: "100%", textAlign: "center", py: 10, m: 0 }}>
-          <Typography variant="subtitle1">
-            {t("questions.please_wait_while_we_fetch_the_question")}
-          </Typography>
-          <br />
-          <Loader />
-        </Box>
+        <Stack
+          spacing={2}
+          sx={{
+            textAlign: "center",
+            flexGrow: 1,
+            flexBasis: 0,
+            flexShrink: 1,
+            height: "100%",
+            p: 2,
+          }}
+        >
+          {/* Question text placeholder */}
+          <Skeleton
+            variant="text"
+            height={40}
+            width="80%"
+            sx={{ mx: "auto" }}
+          />
+
+          {/* Value tag placeholder */}
+          <Skeleton
+            variant="rounded"
+            height={36}
+            width={120}
+            sx={{ mx: "auto" }}
+          />
+
+          <Divider />
+
+          {/* Image area placeholder */}
+          <Box
+            sx={{
+              flexGrow: 1,
+              width: "100%",
+              height: `calc(100vh - ${isDesktop ? 461 : 445}px)`,
+              position: "relative",
+              overflow: "hidden",
+              borderRadius: 1,
+            }}
+          >
+            <Skeleton
+              variant="rectangular"
+              width="100%"
+              height="100%"
+              animation="wave"
+            />
+          </Box>
+
+          {/* Buttons placeholder */}
+          <Stack direction="row" spacing={2} justifyContent="center">
+            <Skeleton variant="rounded" width="50%" height={60} />
+            <Skeleton variant="rounded" width="50%" height={60} />
+          </Stack>
+          <Skeleton variant="rounded" width="100%" height={40} />
+        </Stack>
       );
     }
     if (status === "error") {
@@ -178,9 +227,8 @@ export default function QuestionDisplay() {
             rel="noreferrer"
             sx={{ mb: 2, display: { xs: "none", md: "inherit" } }}
           >
-            <div>{`${t("questions.see_examples")} ${
-              question.insight_type
-            }`}</div>
+            <div>{`${t("questions.see_examples")} ${question.insight_type
+              }`}</div>
           </MuiLink>
         )}
       </Stack>
@@ -197,16 +245,13 @@ export default function QuestionDisplay() {
         {question.source_image_url ? (
           <>
             {!imageLoaded && (
-              <Box
-                sx={{
-                  height: isDesktop ? "100%" : "calc(100% - 24px)",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                }}
-              >
-                <Loader />
-              </Box>
+              <Skeleton
+                variant="rectangular"
+                width="100%"
+                height={isDesktop ? "100%" : "calc(100% - 24px)"}
+                animation="wave"
+                sx={{ borderRadius: 1 }}
+              />
             )}
             <ZoomableImage
               src={question.source_image_url}
