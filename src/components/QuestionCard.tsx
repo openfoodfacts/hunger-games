@@ -1,4 +1,6 @@
 import * as React from "react";
+import { useQuery } from "@tanstack/react-query";
+import { useTranslation } from "react-i18next";
 
 import Card from "@mui/material/Card";
 import CardActionArea from "@mui/material/CardActionArea";
@@ -10,8 +12,8 @@ import Link from "@mui/material/Link";
 import Stack from "@mui/material/Stack";
 import Chip from "@mui/material/Chip";
 import TextField from "@mui/material/TextField";
-import { Box, IconButton } from "@mui/material";
-
+import Box from "@mui/material/Box";
+import IconButton from "@mui/material/IconButton";
 import EditIcon from "@mui/icons-material/Edit";
 import DoneIcon from "@mui/icons-material/Done";
 import ClearIcon from "@mui/icons-material/Clear";
@@ -20,61 +22,172 @@ import robotoff from "../robotoff";
 import { localFavorites } from "../localeStorageManager";
 import logo from "../assets/logo.png";
 import { getQuestionSearchParams } from "./QuestionFilter";
-import { useTranslation } from "react-i18next";
 
-type QuestionCardProps = {
-  filterState: any;
-  imageSrc: any;
-  title: any;
-  showFilterResume: any;
-  editableTitle: any;
+type FilterState = {
+  insightType?: string;
+  valueTag?: string;
+  countryFilter?: string;
+  brandFilter?: string;
+  sortByPopularity?: boolean;
+  campaign?: string;
 };
 
-const QuestionCard = ({
-  filterState,
-  imageSrc,
+const useQuestionCount = (filterState: FilterState) =>
+  useQuery({
+    queryKey: ["questionCount", filterState],
+    queryFn: async () => {
+      const { data } = await robotoff.questions(
+        { ...filterState, with_image: true },
+        1,
+        1,
+      );
+      return data?.count ?? 0;
+    },
+  });
+
+type EditableCardTitleProps = {
+  title: string;
+  editable: boolean;
+  onSave: (newTitle: string) => void;
+};
+
+function EditableCardTitle({
   title,
-  showFilterResume,
-  editableTitle,
-}: QuestionCardProps) => {
-  const { t } = useTranslation();
-
-  const targetUrl = `/questions?${getQuestionSearchParams(filterState)}`;
-
-  const [questionNumber, setQuestionNumber] = React.useState("?");
-
-  React.useEffect(() => {
-    let isValid = true;
-    robotoff
-      .questions({ ...filterState, with_image: true }, 1, 1)
-      .then(({ data }) => {
-        if (isValid) {
-          setQuestionNumber(data?.count ?? 0);
-        }
-      });
-    return () => {
-      isValid = false;
-    };
-  }, [filterState]);
-
+  editable,
+  onSave,
+}: EditableCardTitleProps) {
   const [isEditMode, setIsEditMode] = React.useState(false);
   const [innerTitle, setInnerTitle] = React.useState(title);
+
   React.useEffect(() => {
     setInnerTitle(title);
   }, [title]);
 
-  const startEdition = () => {
+  const handleStartEdit: React.MouseEventHandler = (event) => {
+    event.preventDefault();
     setIsEditMode(true);
   };
-  const validateEdition = () => {
-    localFavorites.addQuestion(filterState, imageSrc, innerTitle);
 
+  const handleSave = () => {
+    onSave(innerTitle);
     setIsEditMode(false);
   };
-  const stopEdition = () => {
+
+  const handleCancel = () => {
     setInnerTitle(title);
     setIsEditMode(false);
   };
+
+  const handleKeyDown = (event: React.KeyboardEvent) => {
+    if (event.key === "Enter") {
+      handleSave();
+    } else if (event.key === "Escape") {
+      handleCancel();
+    }
+  };
+
+  if (isEditMode) {
+    return (
+      <Stack spacing={1} direction="row" alignItems="center">
+        <TextField
+          variant="standard"
+          value={innerTitle}
+          fullWidth
+          onChange={(event) => setInnerTitle(event.target.value)}
+          onKeyDown={handleKeyDown}
+          autoFocus
+        />
+        <IconButton onClick={handleSave} size="small">
+          <DoneIcon />
+        </IconButton>
+        <IconButton onClick={handleCancel} size="small">
+          <ClearIcon />
+        </IconButton>
+      </Stack>
+    );
+  }
+
+  return (
+    <Stack spacing={1} direction="row" alignItems="center">
+      <Typography>{innerTitle}</Typography>
+      {editable && (
+        <IconButton onClick={handleStartEdit} size="small">
+          <EditIcon />
+        </IconButton>
+      )}
+    </Stack>
+  );
+}
+
+type FilterSummaryChipsProps = {
+  filterState: FilterState;
+};
+
+function FilterSummaryChips({ filterState }: FilterSummaryChipsProps) {
+  const { t } = useTranslation();
+
+  const filters = [
+    {
+      condition: filterState.insightType,
+      label: `${t("questions.filters.short_label.value")}: ${filterState.insightType}`,
+    },
+    {
+      condition: filterState.valueTag,
+      label: `${t("questions.filters.short_label.value")}: ${filterState.valueTag}`,
+    },
+    {
+      condition: filterState.countryFilter,
+      label: `${t("questions.filters.short_label.country")}: ${filterState.countryFilter}`,
+    },
+    {
+      condition: filterState.brandFilter,
+      label: `${t("questions.filters.short_label.brand")}: ${filterState.brandFilter}`,
+    },
+    {
+      condition: filterState.sortByPopularity,
+      label: t("questions.filters.short_label.popularity"),
+    },
+    {
+      condition: filterState.campaign,
+      label: `${t("questions.filters.short_label.campaign")}: ${filterState.campaign}`,
+    },
+  ];
+
+  const activeFilters = filters.filter((filter) => filter.condition);
+
+  if (activeFilters.length === 0) {
+    return null;
+  }
+
+  return (
+    <Box
+      sx={{
+        mt: 1,
+        display: "flex",
+        flexDirection: "row",
+        flexWrap: "wrap",
+        justifyContent: "flex-start",
+        "& .MuiChip-root": { mr: 1, mt: 0.5 },
+      }}
+    >
+      {activeFilters.map((filter, index) => (
+        <Chip key={index} size="small" label={filter.label} />
+      ))}
+    </Box>
+  );
+}
+
+type QuestionCountBadgeProps = {
+  count: number | null;
+  children: React.ReactNode;
+};
+
+function QuestionCountBadge({ count, children }: QuestionCountBadgeProps) {
+  const getBadgeColor = () => {
+    if (count === null) return "info";
+    return count > 0 ? "error" : "success";
+  };
+
   return (
     <Badge
       sx={{
@@ -84,65 +197,46 @@ const QuestionCard = ({
           minHeight: "2rem",
         },
       }}
-      badgeContent={questionNumber}
+      badgeContent={count ?? "?"}
       showZero
-      color={
-        questionNumber === "?"
-          ? "info"
-          : questionNumber > 0
-            ? "error"
-            : "success"
-      }
+      color={getBadgeColor()}
     >
+      {children}
+    </Badge>
+  );
+}
+
+type QuestionCardProps = {
+  filterState: FilterState;
+  imageSrc?: string;
+  title: string;
+  showFilterResume?: boolean;
+  editableTitle?: boolean;
+};
+
+export default function QuestionCard({
+  filterState,
+  imageSrc,
+  title,
+  showFilterResume = false,
+  editableTitle = false,
+}: QuestionCardProps) {
+  const { data: questionCount } = useQuestionCount(filterState);
+  const targetUrl = `/questions?${getQuestionSearchParams(filterState)}`;
+
+  const handleTitleSave = (newTitle: string) => {
+    localFavorites.addQuestion(filterState, imageSrc, newTitle);
+  };
+
+  return (
+    <QuestionCountBadge count={questionCount ?? null}>
       <Card sx={{ minWidth: 200, maxWidth: 350 }}>
         <CardContent>
-          <Stack spacing={1} direction="row" alignItems="center">
-            {isEditMode ? (
-              <>
-                <TextField
-                  variant="standard"
-                  value={innerTitle}
-                  fullWidth
-                  onChange={(event) => {
-                    setInnerTitle(event.target.value);
-                  }}
-                  onKeyDown={(event) => {
-                    switch (event.key) {
-                      case "Enter":
-                        validateEdition();
-                        break;
-                      case "Escape":
-                        stopEdition();
-                        break;
-                      default:
-                        break;
-                    }
-                  }}
-                  autoFocus
-                />
-                <IconButton onClick={validateEdition}>
-                  <DoneIcon />
-                </IconButton>
-                <IconButton onClick={stopEdition}>
-                  <ClearIcon />
-                </IconButton>
-              </>
-            ) : (
-              <>
-                <Typography>{innerTitle}</Typography>
-                {editableTitle && (
-                  <IconButton
-                    onClick={(event) => {
-                      startEdition();
-                      event.stopPropagation();
-                    }}
-                  >
-                    <EditIcon />
-                  </IconButton>
-                )}
-              </>
-            )}
-          </Stack>
+          <EditableCardTitle
+            title={title}
+            editable={editableTitle}
+            onSave={handleTitleSave}
+          />
         </CardContent>
         <CardActionArea component={Link} href={targetUrl}>
           <CardMedia
@@ -154,70 +248,11 @@ const QuestionCard = ({
           />
           <CardContent>
             {showFilterResume && (
-              <Box
-                spacing={1}
-                sx={{
-                  mt: 1,
-                  display: "flex",
-                  flexDirection: "row",
-                  flexWrap: "wrap",
-                  justifyContent: "flex-start",
-                  "& .MuiChip-root": { mr: 1, mt: 0.5 },
-                }}
-              >
-                {filterState?.insightType && (
-                  <Chip
-                    size="small"
-                    label={`${t("questions.filters.short_label.value")}: ${
-                      filterState?.insightType
-                    }`}
-                  />
-                )}
-                {filterState?.valueTag && (
-                  <Chip
-                    size="small"
-                    label={`${t("questions.filters.short_label.value")}: ${
-                      filterState?.valueTag
-                    }`}
-                  />
-                )}
-                {filterState?.countryFilter && (
-                  <Chip
-                    size="small"
-                    label={`${t("questions.filters.short_label.country")}: ${
-                      filterState?.countryFilter
-                    }`}
-                  />
-                )}
-                {filterState?.brandFilter && (
-                  <Chip
-                    size="small"
-                    label={`${t("questions.filters.short_label.brand")}: ${
-                      filterState?.brandFilter
-                    }`}
-                  />
-                )}
-                {filterState?.sortByPopularity && (
-                  <Chip
-                    size="small"
-                    label={`${t("questions.filters.short_label.popularity")}`}
-                  />
-                )}
-                {filterState?.campaign && (
-                  <Chip
-                    size="small"
-                    label={`${t("questions.filters.short_label.campaign")}: ${
-                      filterState?.campaign
-                    }`}
-                  />
-                )}
-              </Box>
+              <FilterSummaryChips filterState={filterState} />
             )}
           </CardContent>
         </CardActionArea>
       </Card>
-    </Badge>
+    </QuestionCountBadge>
   );
-};
-
-export default QuestionCard;
+}
