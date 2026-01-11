@@ -17,19 +17,14 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 import Loader from "../loader";
 
 import { useTranslation } from "react-i18next";
-import {
-  CORRECT_INSIGHT,
-  WRONG_INSIGHT,
-  SKIPPED_INSIGHT,
-  OFF_DOMAIN,
-} from "../../const";
+import { CORRECT_INSIGHT, WRONG_INSIGHT, SKIPPED_INSIGHT } from "../../const";
 import {
   getFullSizeImage,
   getValueTagExamplesURL,
   getNbOfQuestionForValue,
 } from "./utils";
 import { getValueTagQuestionsURL } from "./utils/getValueTagQuestionsURL";
-import useQuestions, { AnswerQuestionParams } from "../../hooks/useQuestions";
+import useQuestions from "../../hooks/useQuestions";
 
 import { useKeyboardShortcuts } from "./useKeyboardShortcuts";
 import CroppedLogo from "../../components/CroppedLogo";
@@ -37,8 +32,6 @@ import ZoomableImage from "../../components/ZoomableImage";
 import { useFilterState, FilterParams } from "../../hooks/useFilterState";
 import { QuestionInterface } from "../../robotoff";
 import { useProductData } from "../../hooks/useProduct";
-import getTaxonomy from "../../offTaxonomy";
-import { useQuery } from "@tanstack/react-query";
 import { SimilarQuestions } from "./SimilarQuestions";
 
 const usePotentialQuestionNumber = (
