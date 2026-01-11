@@ -57,6 +57,7 @@ export const getImagesUrls = (images?: any, barcode?: any) => {
     .filter((key) => !isNaN(Number.parseInt(key)))
     .map((key) => ({
       imageUrl: `${rootImageUrl}/${key}.400.jpg`,
+      imageUrlFull: `${rootImageUrl}/${key}.jpg`,
       uploaded_t: getUploadedTime(images[key].uploaded_t),
     }));
 };

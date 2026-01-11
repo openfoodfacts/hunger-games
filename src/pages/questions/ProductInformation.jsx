@@ -158,6 +158,7 @@ const ProductInformation = () => {
                 >
                   <ZoomableImage
                     src={src.imageUrl}
+                    srcFull={src.imageUrlFull}
                     imageProps={{
                       loading: "lazy",
                       style: {
