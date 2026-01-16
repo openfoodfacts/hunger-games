@@ -1,14 +1,11 @@
 import * as React from "react";
-import {
-  FilterParams,
-  getFilterParams,
-  setFilterParams,
-} from "./getFilterParams";
+import { getFilterParams, setFilterParams } from "./getFilterParams";
+import { FilterState } from "../../robotoff";
 import { useSearchParams } from "react-router";
 
 export function useFilterState(): [
-  FilterParams,
-  (params: Partial<FilterParams>) => void,
+  FilterState,
+  (params: Partial<FilterState>) => void,
 ] {
   const [searchParams, setSearchParams] = useSearchParams();
 
@@ -16,11 +13,14 @@ export function useFilterState(): [
     return getFilterParams(searchParams);
   }, [searchParams]);
 
-  const setter = React.useCallback((update: Partial<FilterParams>) => {
-    setSearchParams((prev) => {
-      return setFilterParams(prev, update);
-    });
-  }, []);
+  const setter = React.useCallback(
+    (update: Partial<FilterState>) => {
+      setSearchParams((prev) => {
+        return setFilterParams(prev, update);
+      });
+    },
+    [setSearchParams],
+  );
 
   return [value, setter];
 }
