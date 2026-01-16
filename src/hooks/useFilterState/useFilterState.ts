@@ -13,11 +13,14 @@ export function useFilterState(): [
     return getFilterParams(searchParams);
   }, [searchParams]);
 
-  const setter = React.useCallback((update: Partial<FilterState>) => {
-    setSearchParams((prev) => {
-      return setFilterParams(prev, update);
-    });
-  }, [setSearchParams]);
+  const setter = React.useCallback(
+    (update: Partial<FilterState>) => {
+      setSearchParams((prev) => {
+        return setFilterParams(prev, update);
+      });
+    },
+    [setSearchParams],
+  );
 
   return [value, setter];
 }
