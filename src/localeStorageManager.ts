@@ -1,4 +1,4 @@
-import isEqual from "lodash.isequal";
+import { isEqual } from "lodash";
 
 // Parameters added and to take in consideration to avoid breaking al the saved filter state
 const ADDED_PARAMS = {
