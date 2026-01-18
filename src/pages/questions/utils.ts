@@ -1,7 +1,5 @@
-import * as React from "react";
 
 import { NO_QUESTION_LEFT, OFF_DOMAIN, OFF_URL } from "../../const";
-import externalApi from "../../externalApi";
 import offService from "../../off";
 import robotoff, { QuestionInterface } from "../../robotoff";
 import { reformatValueTag } from "../../utils";
