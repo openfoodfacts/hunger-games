@@ -34,7 +34,8 @@ import useQuestions, { AnswerQuestionParams } from "../../hooks/useQuestions";
 import { useKeyboardShortcuts } from "./useKeyboardShortcuts";
 import CroppedLogo from "../../components/CroppedLogo";
 import ZoomableImage from "../../components/ZoomableImage";
-import { useFilterState, FilterParams } from "../../hooks/useFilterState";
+import { useFilterState } from "../../hooks/useFilterState";
+import { FilterState } from "../../robotoff";
 import { QuestionInterface } from "../../robotoff";
 import { useProductData } from "../../hooks/useProduct";
 import getTaxonomy from "../../offTaxonomy";
@@ -42,7 +43,7 @@ import { useQuery } from "@tanstack/react-query";
 import { SimilarQuestions } from "./SimilarQuestions";
 
 const usePotentialQuestionNumber = (
-  filterState: FilterParams,
+  filterState: FilterState,
   question: QuestionInterface | null,
 ) => {
   const [nbOfPotentialQuestion, setNbOfPotentialQuestions] = React.useState<

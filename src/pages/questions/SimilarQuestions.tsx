@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
-import { FilterParams, useFilterState } from "../../hooks/useFilterState";
+import { useFilterState } from "../../hooks/useFilterState";
+import { FilterState } from "../../robotoff";
 import getTaxonomy from "../../offTaxonomy";
 import { Stack, Button } from "@mui/material";
 import { useQuery } from "@tanstack/react-query";
@@ -11,8 +12,8 @@ export function SimilarQuestions({
   filterState,
   setFilterState,
 }: {
-  filterState: FilterParams;
-  setFilterState: (params: Partial<FilterParams>) => void;
+  filterState: FilterState;
+  setFilterState: (params: Partial<FilterState>) => void;
 }) {
   const { t } = useTranslation();
 

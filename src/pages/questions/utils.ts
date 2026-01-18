@@ -5,7 +5,7 @@ import externalApi from "../../externalApi";
 import offService from "../../off";
 import robotoff, { QuestionInterface } from "../../robotoff";
 import { reformatValueTag } from "../../utils";
-import { FilterParams } from "../../hooks/useFilterState";
+import { FilterState } from "../../robotoff";
 
 export const ADDITIONAL_INFO_TRANSLATION = {
   brands: { i18nKey: "brands" },
@@ -119,7 +119,7 @@ export const getValueTagExamplesURL = (question: QuestionInterface | null) => {
   return "";
 };
 
-export const getNbOfQuestionForValue = async (filterState: FilterParams) => {
+export const getNbOfQuestionForValue = async (filterState: FilterState) => {
   const { data: dataFetched } = await robotoff.questions(filterState, 1);
   return dataFetched.count;
 };
