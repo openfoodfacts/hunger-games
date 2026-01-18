@@ -13,11 +13,13 @@ export function useRobotoffPredictions() {
   const [isLoading, setIsLoading] = React.useState(false);
   const [count, setCount] = React.useState(0);
 
-  const [insights, setInsights] = React.useState<{
-    original: string;
-    correction: string;
-    barcode: string;
-  }[]>([]);
+  const [insights, setInsights] = React.useState<
+    {
+      original: string;
+      correction: string;
+      barcode: string;
+    }[]
+  >([]);
 
   const [offData, setOffData] = React.useState<{
     [barecode: string]: "loading" | ProductType;
@@ -55,7 +57,7 @@ export function useRobotoffPredictions() {
     return () => {
       valid = false;
     };
-  }, [insights, country,]);
+  }, [insights, country]);
 
   React.useEffect(() => {
     const barecodeToImport = insights

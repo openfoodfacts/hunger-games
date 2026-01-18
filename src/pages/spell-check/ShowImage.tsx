@@ -13,7 +13,9 @@ export default function ShowImage(props: ShowImageProps) {
   const { barcode, images } = props;
   const [country] = useCountry();
 
-  const [selectedImageId, setSelectedImageId] = React.useState<number | null>(null);
+  const [selectedImageId, setSelectedImageId] = React.useState<number | null>(
+    null,
+  );
   const availableIngredientImages = React.useMemo<
     { country: string; imgid: number }[]
   >(

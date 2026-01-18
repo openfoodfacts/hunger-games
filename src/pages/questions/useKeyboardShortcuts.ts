@@ -44,13 +44,7 @@ export const useKeyboardShortcuts = (
 
     window.addEventListener("keydown", handleShortCut);
     return () => window.removeEventListener("keydown", handleShortCut);
-  }, [
-    question,
-    answerQuestion,
-    shortcuts.skip,
-    shortcuts.yes,
-    shortcuts.no,
-  ]);
+  }, [question, answerQuestion, shortcuts.skip, shortcuts.yes, shortcuts.no]);
 
   return shortcuts;
 };

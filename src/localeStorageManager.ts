@@ -7,7 +7,10 @@ const ADDED_PARAMS = {
   campaign: "",
 };
 
-const areSameFilterState = (filterState: FilterState, memFilterState: FilterState) =>
+const areSameFilterState = (
+  filterState: FilterState,
+  memFilterState: FilterState,
+) =>
   isEqual(
     { ...ADDED_PARAMS, ...memFilterState },
     { ...ADDED_PARAMS, ...filterState },
@@ -60,14 +63,14 @@ export const getVisiblePages: () => {
   nutriscore: boolean;
   insights: boolean;
 } = () => {
-  const settings = localSettings.fetch<undefined | Record<string, boolean | undefined>>();
-  return (
-    {
-      nutriscore: true,
-      insights: true,
-      ...settings[localSettingsKeys.visiblePages]
-    }
-  );
+  const settings = localSettings.fetch<
+    undefined | Record<string, boolean | undefined>
+  >();
+  return {
+    nutriscore: true,
+    insights: true,
+    ...settings[localSettingsKeys.visiblePages],
+  };
 };
 
 export const getPageCustomization: () => {
@@ -115,7 +118,7 @@ export const getColor = (): "light" | "dark" => {
 
   const browserSetting =
     window.matchMedia &&
-      window.matchMedia("(prefers-color-scheme: dark)").matches
+    window.matchMedia("(prefers-color-scheme: dark)").matches
       ? "dark"
       : "light";
 

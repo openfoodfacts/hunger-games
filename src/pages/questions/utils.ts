@@ -47,7 +47,10 @@ const getUploadedTime = (data: number) =>
     day: "numeric",
   });
 
-export const getImagesUrls = (images: Record<string, { uploaded_t: number }>, barcode: string) => {
+export const getImagesUrls = (
+  images: Record<string, { uploaded_t: number }>,
+  barcode: string,
+) => {
   if (!images || !barcode) {
     return [];
   }
