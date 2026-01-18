@@ -17,7 +17,6 @@ import {
 import RotateLeftIcon from "@mui/icons-material/RotateLeft";
 import RotateRightIcon from "@mui/icons-material/RotateRight";
 import OpenInFullIcon from "@mui/icons-material/OpenInFull";
-import useMediaQuery from "@mui/material/useMediaQuery";
 import { useTheme } from "@mui/material/styles";
 import Loader from "../pages/loader";
 import { useTranslation } from "react-i18next";
