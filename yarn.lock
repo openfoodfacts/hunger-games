@@ -1914,7 +1914,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/lodash@npm:^4":
+"@types/lodash@npm:^4.17.23":
   version: 4.17.23
   resolution: "@types/lodash@npm:4.17.23"
   checksum: 10/05935534a44aadef67c2158b2fb4a042a226970088106a40ddc67e4f063783149fe5cf02279d7dd4a1e72c98d9189b9430face659645dbf77270f8c4c3e387f5
@@ -4174,7 +4174,7 @@ __metadata:
     "@openfoodfacts/openfoodfacts-webcomponents": "npm:^1.15.1"
     "@reduxjs/toolkit": "npm:^1.9.7"
     "@tanstack/react-query": "npm:^5.75.1"
-    "@types/lodash": "npm:^4"
+    "@types/lodash": "npm:^4.17.23"
     "@types/node": "npm:^24.9.2"
     "@types/react": "npm:^19.2.2"
     "@types/react-dom": "npm:^19.2.2"

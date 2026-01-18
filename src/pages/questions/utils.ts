@@ -47,7 +47,7 @@ const getUploadedTime = (data: number) =>
     day: "numeric",
   });
 
-export const getImagesUrls = (images?: any, barcode?: any) => {
+export const getImagesUrls = (images: Record<string, { uploaded_t: number }>, barcode: string) => {
   if (!images || !barcode) {
     return [];
   }
@@ -60,38 +60,6 @@ export const getImagesUrls = (images?: any, barcode?: any) => {
       imageUrlFull: `${rootImageUrl}/${key}.jpg`,
       uploaded_t: getUploadedTime(images[key].uploaded_t),
     }));
-};
-
-export const useFlagImage = (barcode?: string) => {
-  const [flagged, setFlagged] = React.useState<number[]>([]);
-
-  const flagImage = React.useCallback(
-    (src: string) => {
-      const imgid = getImageId(src);
-      externalApi.addImageFlag({ barcode, imgid });
-      setFlagged((prev) => [...prev, imgid]);
-    },
-    [barcode],
-  );
-
-  const deleteFlagImage = React.useCallback(
-    (src: string) => {
-      const imgid = getImageId(src);
-      externalApi.removeImageFlag({ barcode, imgid });
-
-      setFlagged((prev) =>
-        prev.filter((flaggedImageId) => flaggedImageId !== imgid),
-      );
-    },
-    [barcode],
-  );
-
-  // Reset flags
-  React.useEffect(() => {
-    setFlagged([]);
-  }, [barcode]);
-
-  return [flagged, flagImage, deleteFlagImage];
 };
 
 export const getFullSizeImage = (src?: string) => {

@@ -10,7 +10,7 @@ import { TextCorrection } from "./TextCorrection/TextCorrection";
 export default function Nutrition() {
   const { isLoading, insight, nextItem, product } = useRobotoffPredictions();
 
-  const { original, correction } = insight?.data ?? {};
+  const { original, correction } = insight ?? {};
 
   if (isLoading) {
     return <Typography>Loading</Typography>;

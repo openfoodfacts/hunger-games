@@ -34,7 +34,7 @@ export default function ProductOtherQuestions({
           q.insight_id !== question.insight_id && // Not the main question
           !answers[q.insight_id]?.sent, // Not already answered
       ) ?? [],
-    [question.insight_id, data],
+    [data, question.insight_id, answers],
   );
 
   // Reset the pending answer for new data

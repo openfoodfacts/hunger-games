@@ -13,19 +13,19 @@ export default function ShowImage(props: ShowImageProps) {
   const { barcode, images } = props;
   const [country] = useCountry();
 
-  const [selectedImageId, setSelectedImageId] = React.useState(null);
+  const [selectedImageId, setSelectedImageId] = React.useState<number | null>(null);
   const availableIngredientImages = React.useMemo<
     { country: string; imgid: number }[]
   >(
     () =>
       Object.keys(images ?? {})
         .map((key) => {
-          if (key.startsWith("ingredients_")) {
-            return { country: key.split("_")[1], imgid: images[key].imgid };
+          if (key.startsWith("ingredients_") && images?.[key]) {
+            return { country: key.split("_")[1], imgid: images?.[key].imgid };
           }
           return null;
         })
-        .filter(Boolean),
+        .filter((p) => p !== null),
     [images],
   );
 
@@ -35,7 +35,7 @@ export default function ShowImage(props: ShowImageProps) {
     } else {
       setSelectedImageId(availableIngredientImages[0]?.imgid ?? null);
     }
-  }, [images, availableIngredientImages]);
+  }, [images, availableIngredientImages, country]);
 
   const availableImgids = React.useMemo(() => {
     const ids = Object.values(images ?? {})

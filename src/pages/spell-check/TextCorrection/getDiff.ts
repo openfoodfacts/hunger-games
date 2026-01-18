@@ -29,7 +29,7 @@ export function getDiff(
   const words2 = text2.split("");
 
   // Comput the cost for each substring alignment.
-  const computedCost = {};
+  const computedCost: Record<string, number> = {};
 
   computedCost["-1_-1"] = 0;
   for (let i = 0; i < words1.length; i += 1) {
@@ -65,16 +65,16 @@ export function getDiff(
       computedCost[`${i}_${j}`] ===
       COST_REMOVE * word1.length + computedCost[`${i - 1}_${j}`]
     ) {
-      updates.push({ type: "REMOVED_1", index1: i });
+      updates.push({ type: "REMOVED_1" as const, index1: i });
       i = i - 1;
     } else if (
       computedCost[`${i}_${j}`] ===
       COST_REMOVE * word2.length + computedCost[`${i}_${j - 1}`]
     ) {
-      updates.push({ type: "REMOVED_2", index2: j });
+      updates.push({ type: "REMOVED_2" as const, index2: j });
       j = j - 1;
     } else if (word1 !== word2) {
-      updates.push({ type: "MODIFY", index1: i, index2: j });
+      updates.push({ type: "MODIFY" as const, index1: i, index2: j });
       i = i - 1;
       j = j - 1;
     } else {
@@ -84,11 +84,11 @@ export function getDiff(
   }
 
   while (i > 0) {
-    updates.push({ type: "REMOVED_1", index1: i });
+    updates.push({ type: "REMOVED_1" as const, index1: i });
     i = i - 1;
   }
   while (j > 0) {
-    updates.push({ type: "REMOVED_2", index2: j });
+    updates.push({ type: "REMOVED_2" as const, index2: j });
     j = j - 1;
   }
 
