@@ -33,7 +33,6 @@ import {
   ADDITIONAL_INFO_TRANSLATION,
   getImageId,
   getImagesUrls,
-  useFlagImage,
 } from "./utils";
 import useQuestions from "../../hooks/useQuestions";
 import { useProductData } from "../../hooks/useProduct";
@@ -51,8 +50,6 @@ const ProductInformation = () => {
 
   const { question } = useQuestions();
   const { data: productData } = useProductData(question?.barcode);
-
-  const [flagged, flagImage, deleteFlagImage] = useFlagImage(question?.barcode);
 
   const handleHideImages = (event) => {
     setHideImages(event.target.checked);
@@ -158,6 +155,7 @@ const ProductInformation = () => {
                 >
                   <ZoomableImage
                     src={src.imageUrl}
+                    srcFull={src.imageUrlFull}
                     imageProps={{
                       loading: "lazy",
                       style: {
@@ -181,7 +179,14 @@ const ProductInformation = () => {
                     </Tooltip>
                   ) : (
                     <Tooltip title={t("questions.flag")}>
-                      <IconButton onClick={() => flagImage(src.imageUrl)}>
+                      <IconButton
+                        onClick={() =>
+                          externalApi.addImageFlag({
+                            barcode: question.barcode,
+                            imgid: getImageId(src.imageUrl),
+                          })
+                        }
+                      >
                         <OutlinedFlagIcon />
                       </IconButton>
                     </Tooltip>

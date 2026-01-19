@@ -5,9 +5,9 @@ import { InsightType } from "./insight.types";
 import { useCountry } from "../../contexts/CountryProvider";
 
 export type ProductType = {
-  images: Record<string, any>;
-  serving_size?: any;
-  nutriments?: any;
+  images: Record<string, unknown>;
+  serving_size?: unknown;
+  nutriments?: unknown;
 };
 
 export function useRobotoffPredictions(partiallyFilled: boolean) {

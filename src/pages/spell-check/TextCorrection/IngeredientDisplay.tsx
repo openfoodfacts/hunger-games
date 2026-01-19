@@ -2,23 +2,7 @@ import * as React from "react";
 import Tooltip from "@mui/material/Tooltip";
 
 import { useTheme } from "@mui/material";
-
-import off from "../../../off";
-
-type BooleanEstimation = "no" | "yes" | "maybe";
-type ParsedIngredientsType = {
-  ciqual_proxy_food_code?: string;
-  id: string;
-  ingredients?: ParsedIngredientsType[];
-  is_in_taxonomy: 0 | 1;
-  origins?: string;
-  percent_estimate: number;
-  percent_max: number;
-  percent_min: number;
-  text: string;
-  vegan: BooleanEstimation;
-  vegetarian: BooleanEstimation;
-};
+import { ParsedIngredientsType } from "./ingredients.types";
 
 function getColor(ingredient: ParsedIngredientsType) {
   if (ingredient.is_in_taxonomy === 1) return "green";
@@ -36,6 +20,7 @@ function getTitle(ingredient: ParsedIngredientsType) {
   if (ingredient.ingredients !== undefined) return "contains sub ingredients";
   return `unknown ingredient: ${ingredient.text}"`;
 }
+
 function ColorText({
   text,
   ingredients,
@@ -82,6 +67,8 @@ function ColorText({
 
       const prefix = text.slice(lastIndex, startIndex);
       const ingredientName = text.slice(startIndex, endIndex);
+
+      // eslint-disable-next-line react-hooks/immutability
       lastIndex = endIndex;
 
       return (
@@ -100,29 +87,11 @@ function ColorText({
   ];
 }
 
-export function useIngredientParsing() {
-  const [isLoading, setLoading] = React.useState(false);
-  const [parsings, setParsing] = React.useState({});
-
-  async function fetchIngredients(text: string, lang: string) {
-    if (parsings[text] !== undefined) {
-      return;
-    }
-
-    setLoading(true);
-    const parsing = await off.getIngedrientParsing({
-      text,
-      lang,
-    });
-    const ingredients = parsing.data?.product?.ingredients;
-    setParsing((prev) => ({ ...prev, [text]: ingredients }));
-    setLoading(false);
-  }
-
-  return { isLoading, fetchIngredients, parsings };
-}
-
-export function IngeredientDisplay(props) {
+export function IngeredientDisplay(props: {
+  text: string;
+  onChange: (e: React.ChangeEvent<HTMLTextAreaElement>) => void;
+  parsings: { [key: string]: ParsedIngredientsType[] };
+}) {
   const { text, onChange, parsings } = props;
 
   const theme = useTheme();
