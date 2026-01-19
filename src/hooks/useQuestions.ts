@@ -96,10 +96,7 @@ export default function useQuestions(
   const [filterParams] = useFilterState();
 
   // Fallback on searchParams if not provided to the hook.
-  const params = React.useMemo(
-    () => ({ ...(inParams ?? filterParams), ...forcedParams }),
-    [inParams, filterParams, forcedParams],
-  );
+  const params = { ...(inParams ?? filterParams), ...forcedParams };
 
   const queryClient = useQueryClient();
 
