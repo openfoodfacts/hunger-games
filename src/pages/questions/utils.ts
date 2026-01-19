@@ -1,4 +1,3 @@
-
 import { NO_QUESTION_LEFT, OFF_DOMAIN, OFF_URL } from "../../const";
 import offService from "../../off";
 import robotoff, { QuestionInterface } from "../../robotoff";
