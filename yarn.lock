@@ -1921,12 +1921,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^24.9.2":
-  version: 24.9.2
-  resolution: "@types/node@npm:24.9.2"
+"@types/node@npm:^25.0.9":
+  version: 25.0.9
+  resolution: "@types/node@npm:25.0.9"
   dependencies:
     undici-types: "npm:~7.16.0"
-  checksum: 10/3e76ad89cca317c0886deedab0245b6b2a04ef6c47362bd3918020296f3e9630334795af9cee8c6633eae774c85d848ff2e6bed5a7c3133fc94968364fc3ee36
+  checksum: 10/2c16f137ed3a952903b7641df5ce16663ad00911dc6a9010156602251420da127bf7dbd32d22aac9eda0cc430381164d55a36240039b7d06ab693b9aad5c3f23
   languageName: node
   linkType: hard
 
@@ -1951,12 +1951,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-dom@npm:^19.2.2":
-  version: 19.2.2
-  resolution: "@types/react-dom@npm:19.2.2"
+"@types/react-dom@npm:^19.2.3":
+  version: 19.2.3
+  resolution: "@types/react-dom@npm:19.2.3"
   peerDependencies:
     "@types/react": ^19.2.0
-  checksum: 10/73d5671e57ab73cb3f2acd7992faee8f90d5b4d155b972e76e91fa13e5871ebb5e224960b05039d57ea502cb3370746eb98beda5fa44e9712b4aee52653c237a
+  checksum: 10/616c4a8aee250ea05fb1e7b98e7e00475dd3a6c1c30d7be18b4b93caba832f4203106b3a496a6b147e5acc2da14575eca47bce234c633bca1f8430ef8ffb234a
   languageName: node
   linkType: hard
 
@@ -1980,12 +1980,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:^19.2.2":
-  version: 19.2.2
-  resolution: "@types/react@npm:19.2.2"
+"@types/react@npm:^19.2.8":
+  version: 19.2.8
+  resolution: "@types/react@npm:19.2.8"
   dependencies:
-    csstype: "npm:^3.0.2"
-  checksum: 10/d6adf8fd4bb23a7e04da5700d96b15dc0f59653727a9c6e940c151d7232fa1dbbab98417d5ac830dcfb6cba3f206efbd4cd83647e6f9a688d7363a90e607f6bf
+    csstype: "npm:^3.2.2"
+  checksum: 10/688e7605876e2729c25fdfd2c131d7080cb8e98db528aedccab89005bcbca097a6149fa6e137ae4f1807bdc44220e0c5c7b4a968b5b681dadb7761968bac6de5
   languageName: node
   linkType: hard
 
@@ -2420,14 +2420,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"axios@npm:^1.13.1":
-  version: 1.13.1
-  resolution: "axios@npm:1.13.1"
+"axios@npm:^1.13.2":
+  version: 1.13.2
+  resolution: "axios@npm:1.13.2"
   dependencies:
     follow-redirects: "npm:^1.15.6"
     form-data: "npm:^4.0.4"
     proxy-from-env: "npm:^1.1.0"
-  checksum: 10/8046c15f3ffb5d5d45ce33074f69a9226d4c4312b205307d8a8f0d38bd549fdec7612b307a092b82d7af51d8f3a211ae27589f56a65643655acd01c6ee9bfdac
+  checksum: 10/ae4e06dcd18289f2fd18179256d550d27f9a53ecb2f9c59f2ccc4efd1d7151839ba8c3e0fb533dac793e4a59a576ca8689a19244dce5c396680837674a47a867
   languageName: node
   linkType: hard
 
@@ -2770,6 +2770,13 @@ __metadata:
   version: 3.1.2
   resolution: "csstype@npm:3.1.2"
   checksum: 10/1f39c541e9acd9562996d88bc9fb62d1cb234786ef11ed275567d4b2bd82e1ceacde25debc8de3d3b4871ae02c2933fa02614004c97190711caebad6347debc2
+  languageName: node
+  linkType: hard
+
+"csstype@npm:^3.2.2":
+  version: 3.2.3
+  resolution: "csstype@npm:3.2.3"
+  checksum: 10/ad41baf7e2ffac65ab544d79107bf7cd1a4bb9bab9ac3302f59ab4ba655d5e30942a8ae46e10ba160c6f4ecea464cc95b975ca2fefbdeeacd6ac63f12f99fe1f
   languageName: node
   linkType: hard
 
@@ -3946,10 +3953,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"globals@npm:^16.5.0":
-  version: 16.5.0
-  resolution: "globals@npm:16.5.0"
-  checksum: 10/f9e8a2a13f50222c127030a619e283e7bbfe32966316bdde0715af1d15a7e40cb9c24ff52cad59671f97762ed8b515353c2f8674f560c63d9385f19ee26735a6
+"globals@npm:^17.0.0":
+  version: 17.0.0
+  resolution: "globals@npm:17.0.0"
+  checksum: 10/af6213db9bf5f599b8a609061984c4d5fedb23db336228b866eba70819fe13ea3d11ca507b4799e8afc888331d0f7e5760d01507e38cb988fff9ad3a9635b312
   languageName: node
   linkType: hard
 
@@ -4175,25 +4182,25 @@ __metadata:
     "@reduxjs/toolkit": "npm:^1.9.7"
     "@tanstack/react-query": "npm:^5.75.1"
     "@types/lodash": "npm:^4.17.23"
-    "@types/node": "npm:^24.9.2"
-    "@types/react": "npm:^19.2.2"
-    "@types/react-dom": "npm:^19.2.2"
+    "@types/node": "npm:^25.0.9"
+    "@types/react": "npm:^19.2.8"
+    "@types/react-dom": "npm:^19.2.3"
     "@typescript-eslint/eslint-plugin": "npm:^8.46.2"
     "@typescript-eslint/parser": "npm:^8.46.2"
     "@vitejs/plugin-react": "npm:^5.1.2"
-    axios: "npm:^1.13.1"
+    axios: "npm:^1.13.2"
     eslint: "npm:^9.39.1"
     eslint-plugin-prettier: "npm:^5.5.4"
     eslint-plugin-react: "npm:^7.37.5"
     eslint-plugin-react-hooks: "npm:^7.0.1"
     eslint-plugin-react-refresh: "npm:^0.4.24"
-    globals: "npm:^16.5.0"
+    globals: "npm:^17.0.0"
     husky: "npm:^9.1.7"
     i18next: "npm:^23.6.0"
     lodash: "npm:^4.17.21"
     prettier: "npm:^3.6.2"
-    react: "npm:^19.2.0"
-    react-dom: "npm:^19.2.0"
+    react: "npm:^19.2.3"
+    react-dom: "npm:^19.2.3"
     react-i18next: "npm:^12.3.1"
     react-map-interaction: "npm:^2.1.0"
     react-router: "npm:^7.12.0"
@@ -5547,14 +5554,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-dom@npm:^19.2.0":
-  version: 19.2.0
-  resolution: "react-dom@npm:19.2.0"
+"react-dom@npm:^19.2.3":
+  version: 19.2.3
+  resolution: "react-dom@npm:19.2.3"
   dependencies:
     scheduler: "npm:^0.27.0"
   peerDependencies:
-    react: ^19.2.0
-  checksum: 10/3dbba071b9b1e7a19eae55f05c100f6b44f88c0aee72397d719ae338248ca66ed5028e6964c1c14870cc3e1abcecc91b22baba6dc2072f819dea81a9fd72f2fd
+    react: ^19.2.3
+  checksum: 10/5780f6d4c8e8ece09f82c5500ba2d55e01c30b5273f9281734d7d3b65013cd1fa52ec4e4436e5248c0a9e5bc340836044051168bbad8d7eac4d33ee6c2a867a1
   languageName: node
   linkType: hard
 
@@ -5675,10 +5682,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react@npm:^19.2.0":
-  version: 19.2.0
-  resolution: "react@npm:19.2.0"
-  checksum: 10/e13bcdb8e994c3cfa922743cb75ca8deb60531bf02f584d2d8dab940a8132ce8a2e6ef16f8ed7f372b4072e7a7eeff589b2812dabbedfa73e6e46201dac8a9d0
+"react@npm:^19.2.3":
+  version: 19.2.3
+  resolution: "react@npm:19.2.3"
+  checksum: 10/d16b7f35c0d35a56f63d9d1693819762e4abc479c57dd6310298920bed3820fcec7e17a99d44983416d8f5049143ea45b8005d3ab8324bae8973224400502b08
   languageName: node
   linkType: hard
 
