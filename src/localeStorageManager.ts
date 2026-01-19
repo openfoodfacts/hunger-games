@@ -1,4 +1,5 @@
 import { isEqual } from "lodash";
+import { FilterState } from "./robotoff";
 
 // Parameters added and to take in consideration to avoid breaking al the saved filter state
 const ADDED_PARAMS = {
@@ -6,7 +7,10 @@ const ADDED_PARAMS = {
   campaign: "",
 };
 
-const areSameFilterState = (filterState, memFilterState) =>
+const areSameFilterState = (
+  filterState: FilterState,
+  memFilterState: FilterState,
+) =>
   isEqual(
     { ...ADDED_PARAMS, ...memFilterState },
     { ...ADDED_PARAMS, ...filterState },
@@ -27,29 +31,31 @@ export const localSettingsKeys = {
 };
 
 export const localSettings = {
-  fetch: function () {
+  fetch: function <T>(): Record<string, T | undefined> {
     let storedValue = {};
 
     try {
       storedValue = JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}");
-    } catch (e) {
+    } catch (error: any) {
+      console.error(error);
       /* empty */
     }
 
     return typeof storedValue === "object" ? storedValue : {};
   },
-  save: function (settings) {
+
+  save: function <T>(settings: T): void {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(settings));
   },
-  update: function (key, value) {
-    const settings = this.fetch();
+  update: function <T>(key: string, value: T): void {
+    const settings = this.fetch<T>();
     settings[key] = value;
     this.save(settings);
   },
 };
 
-export const getIsDevMode: () => boolean = () => {
-  const settings = localSettings.fetch();
+export const getIsDevMode = (): boolean => {
+  const settings = localSettings.fetch<boolean | undefined>();
   return settings[localSettingsKeys.isDevMode] ?? false;
 };
 
@@ -57,13 +63,14 @@ export const getVisiblePages: () => {
   nutriscore: boolean;
   insights: boolean;
 } = () => {
-  const settings = localSettings.fetch();
-  return (
-    settings[localSettingsKeys.visiblePages] ?? {
-      nutriscore: true,
-      insights: true,
-    }
-  );
+  const settings = localSettings.fetch<
+    undefined | Record<string, boolean | undefined>
+  >();
+  return {
+    nutriscore: true,
+    insights: true,
+    ...settings[localSettingsKeys.visiblePages],
+  };
 };
 
 export const getPageCustomization: () => {
@@ -107,7 +114,7 @@ export const getLang = () => {
 };
 
 export const getColor = (): "light" | "dark" => {
-  const settings = localSettings.fetch();
+  const settings = localSettings.fetch<"light" | "dark">();
 
   const browserSetting =
     window.matchMedia &&
