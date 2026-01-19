@@ -34,7 +34,9 @@ interface CountryObject {
   countryCode: string;
 }
 
-function getCountryObject(countryCode: string): CountryObject | null {
+function getCountryObject(
+  countryCode: string | null | undefined,
+): CountryObject | null {
   if (!countryCode) {
     return null;
   }
@@ -103,9 +105,10 @@ export default function FilterDialog(props: FilterDialogProps) {
     });
     onClose();
   }, [
+    setGlobalValue,
     innerInsightType,
     innerValueTag,
-    innerCountryObject,
+    innerCountryObject?.countryCode,
     innerBrandFilter,
     innerCampaign,
     innerSortByPopularity,
@@ -148,7 +151,8 @@ export default function FilterDialog(props: FilterDialogProps) {
             </RadioGroup>
           </FormControl>
 
-          {["category", "label"].includes(innerInsightType) ? (
+          {innerInsightType &&
+          ["category", "label"].includes(innerInsightType) ? (
             <LabelFilter
               value={innerValueTag}
               valueTag
