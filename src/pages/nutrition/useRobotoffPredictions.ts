@@ -3,7 +3,7 @@ import axios from "axios";
 import robotoff from "../../robotoff";
 import { InsightType } from "./insight.types";
 import { useCountry } from "../../contexts/CountryProvider";
-
+import { useTranslation } from "react-i18next";
 export type ProductType = {
   images: Record<string, unknown>;
   serving_size?: unknown;
@@ -13,6 +13,8 @@ export type ProductType = {
 export function useRobotoffPredictions(partiallyFilled: boolean) {
   const [isLoading, setIsLoading] = React.useState(false);
   const [count, setCount] = React.useState(0);
+  const [error, setError] = React.useState<null | string>(null);
+  const { t } = useTranslation();
 
   const campaign = partiallyFilled
     ? "incomplete-nutrition"
@@ -41,7 +43,6 @@ export function useRobotoffPredictions(partiallyFilled: boolean) {
     }
     let valid = true;
     setIsLoading(true);
-
     robotoff
       .getInsights(
         "",
@@ -57,7 +58,6 @@ export function useRobotoffPredictions(partiallyFilled: boolean) {
         if (!valid) {
           return;
         }
-
         setCount(data.count);
         setInsights((prev) => {
           if (campaign === prev.campaign) {
@@ -74,8 +74,13 @@ export function useRobotoffPredictions(partiallyFilled: boolean) {
             data: data.insights,
           };
         });
-
         setIsLoading(false);
+        setError(null);
+      })
+      .catch((error) => {
+        if (!valid) return;
+        setIsLoading(false);
+        setError(t("nutrition.robotOffPredictionError"));
       });
 
     return () => {
@@ -116,5 +121,6 @@ export function useRobotoffPredictions(partiallyFilled: boolean) {
     nextItem,
     count,
     product: product === "loading" ? undefined : product,
+    error,
   };
 }
