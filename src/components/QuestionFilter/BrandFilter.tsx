@@ -3,7 +3,12 @@ import TextField from "@mui/material/TextField";
 import { useTranslation } from "react-i18next";
 import brands from "../../assets/brands.json";
 
-export function BrandFilter(props: any) {
+interface BrandFilterProps {
+  value: string;
+  onChange: (value: string) => void;
+}
+
+export function BrandFilter(props: BrandFilterProps) {
   const { value, onChange } = props;
 
   const { t } = useTranslation();

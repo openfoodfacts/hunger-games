@@ -1,7 +1,10 @@
 import * as React from "react";
 import { localFavorites } from "../../localeStorageManager";
+import { FilterState } from "../../robotoff";
 
-export const useFavorite = (filterState: any): [boolean, () => void] => {
+export const useFavorite = (
+  filterState: FilterState,
+): [boolean, () => void] => {
   const [isFavorite, setIsFavorite] = React.useState(
     localFavorites.isSaved(filterState),
   );
