@@ -119,7 +119,6 @@ export default function useQuestions(
     return data;
   };
 
-  const keys = React.useMemo(() => getQuestionKeys(params), [params]);
   const mutation = useMutation({
     mutationFn: fetchQuestions,
 
