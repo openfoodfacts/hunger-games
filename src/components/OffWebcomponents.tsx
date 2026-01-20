@@ -33,36 +33,6 @@ export const RobotoffNutrientExtraction = ({
 }: {
   productCode?: string;
 }) => {
-  React.useEffect(() => {
-    if (!productCode) {
-      return;
-    }
-
-    const originalFetch = window.fetch;
-    window.fetch = function (...args) {
-      const url = args[0];
-      const urlString = typeof url === "string" ? url : url.toString();
-      if (
-        productCode &&
-        urlString.includes(`${ROBOTOFF_API_URL}/insights`) &&
-        urlString.includes(`barcode=${productCode}`)
-      ) {
-        const urlObj = new URL(urlString);
-        urlObj.searchParams.delete("lc");
-        urlObj.searchParams.delete("lang");
-        const cleanedUrl = urlObj.toString();
-
-        return originalFetch(cleanedUrl, args[1]);
-      }
-
-      return originalFetch.apply(this, args);
-    };
-
-    return () => {
-      window.fetch = originalFetch;
-    };
-  }, [productCode]);
-
   return (
     <div>
       <robotoff-nutrient-extraction
