@@ -1,10 +1,9 @@
 import { getQuestionSearchParams } from "../../../components/QuestionFilter";
 import { NO_QUESTION_LEFT } from "../../../const";
-import { QuestionInterface } from "../../../robotoff";
-import { FilterParams } from "../../../hooks/useFilterState/getFilterParams";
+import { QuestionInterface, FilterState } from "../../../robotoff";
 
 export const getValueTagQuestionsURL = (
-  filterState: FilterParams,
+  filterState: FilterState,
   question: Pick<
     QuestionInterface,
     "insight_id" | "insight_type" | "value_tag"
@@ -21,5 +20,6 @@ export const getValueTagQuestionsURL = (
       valueTag: question.value_tag,
     })}`;
   }
+
   return null;
 };

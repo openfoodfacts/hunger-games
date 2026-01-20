@@ -1,6 +1,5 @@
 import { NUTRI_PATROL_URL } from "./const";
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
 export const addImageFlag = (opts: { barcode: string; imgid: number }) => {
   const { barcode, imgid } = opts;
   const imgidStr = imgid?.toString() || "";
@@ -19,15 +18,8 @@ export const addImageFlag = (opts: { barcode: string; imgid: number }) => {
   }
 };
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-export const removeImageFlag = (opts: { barcode: string; imgid: string }) => {
-  // TODO: Replace this with NutriPatrol
-  throw new Error("This function is not implemented yet");
-};
-
 const externalApi = {
   addImageFlag,
-  removeImageFlag,
 };
 
 export default externalApi;
