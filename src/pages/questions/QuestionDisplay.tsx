@@ -210,6 +210,7 @@ export default function QuestionDisplay() {
               style={{
                 height: isDesktop ? "100%" : "calc(100% - 24px)",
                 display: imageLoaded ? "inline-block" : "none",
+                zIndex: 9,
               }}
               imageProps={{ style: { maxHeight: "100%", maxWidth: "100%" } }}
             />
