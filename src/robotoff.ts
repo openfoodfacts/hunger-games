@@ -76,9 +76,7 @@
       count = 10,
       page = 1,
     ) {
-      // EDGE CASE FIX: Ensuring count and page are positive integers
-      const safeCount = Math.max(1, Math.floor(count));
-      const safePage = Math.max(1, Math.floor(page));
+
 
       const searchParams = {
         insight_types: insightType,
@@ -98,8 +96,8 @@
         params: removeEmptyKeys({
           ...searchParams,
           lang,
-          count: safeCount,
-          page: safePage,
+          count,
+          page,
         }),
       });
     },
