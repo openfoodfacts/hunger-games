@@ -12,8 +12,8 @@
           "description": "Pronađite sve logotipe koji odgovaraju datom logotipu"
         },
         "green_score": {
-          "title": "Eco-score",
-          "description": "Annotate the questions with the highest value"
+          "title": "Eko-rezultat",
+          "description": "Obilježite pitanja s najvećom vrijednošću"
         }
       }
     },
@@ -71,8 +71,8 @@
     "countries": "Zemlje",
     "view": "Prikaz",
     "edit": "Uredi",
-    "remaining": "Remaining: {{count}}",
-    "remaining_other": "Remaining: >100",
+    "remaining": "Preostalo: {{count}}",
+    "remaining_other": "Preostalo: >100",
     "hide_images": "Sakrij slike (brže učitavanje)",
     "display_images": "Prikaži slike",
     "annotations": "Bilješke",
@@ -229,27 +229,27 @@
     "no_more_questions": "Nema više pitanja o ovom logotipu. Možete pokušati pronaći više logotipa sa sljedećom igrom.",
     "loading_messages": {
       "pending_reference_logos": "Učitavamo neke primjere logotipa da inicijaliziramo pretragu",
-      "failed_reference_logos": "We did not find any logos with this annotation. Try to use the following game to annotate some of them."
+      "failed_reference_logos": "Nismo pronašli nijedan logotip s ovom napomenom. Pokušajte koristiti sljedeću igru da biste napomenuli neke od njih."
     },
     "deep_search": {
-      "title": "Logo search",
-      "description": "Select a logo you want to look for, and let's go to catch them all. For every logo you annotate, we will fetch it's neighbors such that you might never stop to annotate. (Press Shift to select range of logos)",
-      "ref_logos": "Reference logos (logo already annotated with this value)",
-      "remaining": "Remaining to annotate",
-      "select_all": "Select All",
-      "unselect_all": "Deselect All"
+      "title": "Pretraga logotipa",
+      "description": "Odaberite logo koji želite tražiti i hajde da ih sve uhvatimo. Za svaki logo koji označite, mi ćemo preuzeti njegove susjedne logotipe tako da se nikada nećete zaustaviti da biste označili. (Pritisnite Shift da biste odabrali raspon logotipa)",
+      "ref_logos": "Referentni logotipi (logotip je već označen ovom vrijednošću)",
+      "remaining": "Preostalo je za označiti",
+      "select_all": "Označi sve",
+      "unselect_all": "Poništi izbor svega"
     }
   },
   "settings": {
     "settings": "Postavke",
-    "language": "Languages",
-    "save": "Save",
-    "reportIssue": "Found a bug? Please let us know.",
-    "dev_mode_title": "To get more options, activate the dev mode",
-    "dev_mode_label": "Dev Mode",
-    "dev_page_toggle": "Show {{name}} page",
-    "join_community": "Join the community",
-    "text1": "Open Food Facts is a collaborative project built by tens of thousands of volunteers and managed by a non-profit organization with 8 employees. We need your donations to fund the Open Food Facts 2024 budget and to continue to develop the project.",
+    "language": "Jezici",
+    "save": "Sačuvaj",
+    "reportIssue": "Pronašli ste grešku? Molimo vas da nas obavijestite.",
+    "dev_mode_title": "Da biste dobili više opcija, aktivirajte način rada za razvojne programere",
+    "dev_mode_label": "Programerski način rada",
+    "dev_page_toggle": "Prikaži {{name}} stranicu",
+    "join_community": "Pridruži se zajednici",
+    "text1": "Open Food Facts je zajednički projekat koji su izgradile desetine hiljada volontera, a kojim upravlja neprofitna organizacija sa 8 zaposlenih. Potrebne su nam vaše donacije za finansiranje budžeta Open Food Facts za 2024. godinu i za nastavak razvoja projekta.",
     "thank_you": "Hvala vam",
     "donate": "Donirajte",
     "join_the_community": {
@@ -269,14 +269,14 @@
     "Open_Food_Facts_wiki": "Open Food Facts wiki (en)",
     "Translators": "Prevodioci",
     "Partners": "Partneri",
-    "Open_Beauty_Facts": "Open Beauty Facts - cosmetics",
+    "Open_Beauty_Facts": "Otvorene činjenice o ljepoti - kozmetika",
     "text2": "Kolaborativna, besplatna i otvorena baza podataka prehrambenih proizvoda iz cijelog svijeta."
   },
   "helper": {
     "welcome": {
       "page1": {
         "title": "Dobrodošli u Igre gladi",
-        "text1": "Hunger Games is a collection of mini-games that help contribute to Open Food Facts in many ways. You can play our really exciting games from anywhere. Here is a guided tour of the entire website which will get you started.",
+        "text1": "Igre gladi su kolekcija mini-igara koje na mnogo načina doprinose Otvorenim činjenicama o hrani. Možete igrati zaista uzbudljive igre s bilo kojeg mjesta. Evo obilaska cijele web stranice s vodičem koji će vam pomoći da počnete.",
         "text2": "Obavezno se prijavite na web stranicu Open Food Facts kako biste dobili zasluge za svoje doprinose. Ako napravite grešku, odvojite vrijeme da je ispravite tako što ćete otići na web stranicu.",
         "text3": "U slučaju bilo kakve sumnje u vezi igara, kliknite na ikonu upitnika u gornjem desnom kutu stranice i možete nas kontaktirati na slack na kanalu #hunger-games"
       },
@@ -285,125 +285,125 @@
         "text1": "Da li prehrambeni proizvod pripada ovoj marki?",
         "text2": "Jednostavno odgovorite sa <strong>Da/Ne</strong>! Ne znate odgovor? U redu je, samo preskočite.",
         "text3": "Možete koristiti i prečice na tastaturi: y,n i k.",
-        "text4": "You can <strong>filter</strong> the products based on country, brands, popularity and much more!",
-        "text5": "If you don't want to do this every single time, you can also <strong>save the filters</strong> by clicking on the star. Next time you come back, find the saved filters on the home page itself"
+        "text4": "Možete <strong>filtrirati</strong> proizvode na osnovu države, brendova, popularnosti i još mnogo toga!",
+        "text5": "Ako ne želite ovo raditi svaki put, možete i <strong>sačuvati filtere</strong> klikom na zvjezdicu. Sljedeći put kada se vratite, sačuvane filtere ćete pronaći na samoj početnoj stranici"
       },
       "page3": {
-        "title": "Logos Game",
-        "text1": "Another popular game is the logos game where you have to <strong>select all the logos</strong> you feel are the same.",
-        "text2": "As shown in the example, once you select all the similar logos, just type their value and select where it is a brand, a label or something else. It's that simple!"
+        "title": "Igra s logotipima",
+        "text1": "Još jedna popularna igra je igra s logotipima u kojoj morate <strong>odabrati sve logotipe</strong> za koje smatrate da su isti.",
+        "text2": "Kao što je prikazano u primjeru, kada odaberete sve slične logotipe, samo unesite njihovu vrijednost i odaberite da li se radi o brendu, naljepnici ili nečem drugom. Toliko je jednostavno!"
       },
       "page4": {
-        "title": "Eco-Score Questions Game",
-        "text1": "Help us finish the remaining questions in the most high priority labels!",
-        "text2": "These cards are linked to labels used in the computation of the Eco-Score.",
-        "text3": "<strong>What is Eco-Score?</strong>",
-        "text4": "Eco-Score captures the total environmental footprint, making it easier for consumers to compare products and decide which is better for the environment."
+        "title": "Igra s pitanjima za eko-rezultate",
+        "text1": "Pomozite nam da završimo preostala pitanja u oznakama s najvišim prioritetom!",
+        "text2": "Ove kartice su povezane s oznakama koje se koriste u izračunavanju Eko-rezultata.",
+        "text3": "<strong>Šta je Eko-rezultat?</strong>",
+        "text4": "Eco-Score obuhvata ukupni ekološki otisak, što potrošačima olakšava poređenje proizvoda i odlučivanje koji je bolji za okolinu."
       },
       "page5": {
         "title": "Postavke",
-        "text1": "Set your preferred language, and report issues from our settings page.",
-        "text2": "If you're a developer, you can also explore our database content using our dev mode."
+        "text1": "Postavite željeni jezik i prijavite probleme s naše stranice s postavkama.",
+        "text2": "Ako ste programer, možete istražiti i sadržaj naše baze podataka koristeći naš dev mod."
       },
       "page6": {
-        "title": "Tour",
-        "text1": "Got stuck somewhere? Want to take the tour again?",
-        "text2": "Just click on the question mark and start the journey again!"
+        "title": "Obilazak",
+        "text1": "Zaglavili ste negdje? Želite li ponovo ići u obilazak?",
+        "text2": "Samo kliknite na upitnik i započnite putovanje ponovo!"
       }
     },
     "logos": {
       "page1": {
-        "title": "Selection",
-        "text1": "Select the crops of a same logo by clicking on them",
-        "text2": "Selected logos go to the top of the page, you can unselect them by clicking again on them"
+        "title": "Izbor",
+        "text1": "Odaberite usjeve istog logotipa klikom na njih",
+        "text2": "Odabrani logotipi idu na vrh stranice, možete ih poništiti ponovnim klikom na njih"
       },
       "page2": {
-        "title": "Warning",
-        "text1": "If the crop contains multiple logos, do not select it.",
-        "text2": "If the crop contains only a partial part of a logo, you can select it."
+        "title": "Upozorenje",
+        "text1": "Ako izrez sadrži više logotipa, nemojte ga odabrati.",
+        "text2": "Ako izrez sadrži samo djelomičan dio logotipa, možete ga odabrati."
       },
       "page3": {
-        "title": "Validate",
-        "text1": "Indicate the type of logo (label, brand, QRcode, ...)",
-        "text2": "If it is a label or a brand logo, indicate which one it is",
-        "text3": "Now you can submit your selection",
-        "text4": "Thank you :)"
+        "title": "Potvrdi",
+        "text1": "Navedite vrstu logotipa (etiketa, brend, QR kod, ...)",
+        "text2": "Ako se radi o etiketi ili logotipu brenda, navedite koji je to",
+        "text3": "Sada možete poslati svoj izbor",
+        "text4": "Hvala vam :)"
       }
     },
-    "previous": "Prev",
-    "next": "Next",
-    "close": "Close"
+    "previous": "Prethodno",
+    "next": "Sljedeće",
+    "close": "Zatvori"
   },
   "nutrition": {
-    "table_partialy_filled": "Table with already some data",
-    "display_off_values": "Display values from OpenFoodFacts",
-    "nutrients": "Nutrients",
+    "table_partialy_filled": "Tabela sa već nekim podacima",
+    "display_off_values": "Prikaz vrijednosti iz OpenFoodFacts",
+    "nutrients": "Hranjive tvari",
     "serving_size": "Serving size",
-    "add_nutrient": "-- add nutrient --",
-    "validate_100g": "Validate (100g)",
-    "validate_serving": "Validate (serving)",
+    "add_nutrient": "-- dodajte hranjive tvari --",
+    "validate_100g": "Potvrdi (100g)",
+    "validate_serving": "Potvrdi (porcija)",
     "skip": "Preskočite",
-    "invalid_image": "Invalid image",
+    "invalid_image": "Nevažeća slika",
     "pictures": {
-      "picture_date": "Photo uploaded",
-      "selected_as_nutrients": "Selected as nutriment image ✅",
-      "not_selected_as_nutrients": "Not selected as nutriment ❌"
+      "picture_date": "Fotografija je otpremljena",
+      "selected_as_nutrients": "Odabrano kao slika nutritivnih vrijednosti ✅",
+      "not_selected_as_nutrients": "Nije odabrano kao hranjiva tvar ❌"
     },
     "instructions": {
-      "open_button": "Open instructions",
-      "title": "How to use the interface",
-      "chose_between_empty_and_partially_filled": "You can chose between products for which OpenFoodFacts (OFF) has no data about the nutrients. Or product with partially filled nutrient table.",
-      "indicate_not_provided_value": "Empty inputs are ignored. If fibers are not present in the table, you can put \"-\" to specify the value is not available.",
+      "open_button": "Otvori uputstvo",
+      "title": "Kako koristiti interfejs",
+      "chose_between_empty_and_partially_filled": "Možete birati između proizvoda za koje OpenFoodFacts (OFF) nema podatke o hranjivim tvarima. Ili proizvoda s djelomično popunjenom tablicom hranjivih tvari.",
+      "indicate_not_provided_value": "Prazni unosi se ignorišu. Ako vlakna nisu prisutna u tabeli, možete staviti \"-\" da biste naznačili da vrijednost nije dostupna.",
       "validate_one_column": "Odaberite veličinu prikazanu na slici. Ako imate 100 g i veličinu porcije, odaberite 100 g jer je to normalizirani format.",
-      "skip_button": "If you don't know how to deal with an image, or you just don't want to do it, press \"skip\". Other user will be able to handle it.",
-      "invalid_image_button": "If the pictures is not a nutritional table, press \"Invalid image\" to remove it from the list of the images to verify",
-      "close": "Close"
+      "skip_button": "Ako ne znate kako da se nosite sa slikom ili jednostavno ne želite da to uradite, pritisnite \"preskoči\". Drugi korisnik će moći da se pobrine za to.",
+      "invalid_image_button": "Ako slika nije nutritivna tabela, pritisnite \"Nevažeća slika\" da biste je uklonili sa liste slika za provjeru",
+      "close": "Zatvori"
     }
   },
   "notfound": {
-    "image_alt": "404 not found",
-    "nopage": "Whoops! The page you're looking for can't be found.",
-    "redirect1": "Want to play some games?",
-    "redirect2": "Click here"
+    "image_alt": "404 nije pronađeno",
+    "nopage": "Ups! Stranica koju tražite nije pronađena.",
+    "redirect1": "Želiš li igrati neke igre?",
+    "redirect2": "Kliknite ovdje"
   },
   "nutriscore": {
-    "image_alt": "cropped image",
-    "label": "Annotate Nutri-Score logo detection by batch.",
-    "description": "To do so, select all the images showing the correct/wrong Nutri-Score value ({{label}}), and click on the bottom buttons to say if you selected a set correct or wrong ones.",
-    "images_remaining": "Still {{remaining}} to annotate",
-    "image_sizes": "Image sizes",
-    "zoom_on_logo": "Zoom on logo",
+    "image_alt": "izrezana slika",
+    "label": "Označi detekciju Nutri-Rezultat logotipa po grupama.",
+    "description": "Da biste to uradili, odaberite sve slike koje prikazuju tačnu/netačnu vrijednost Nutri-Score-a ({{label}}) i kliknite na donja dugmad da biste rekli da li ste odabrali tačan ili netačan skup.",
+    "images_remaining": "Još uvijek {{remaining}} za komentiranje",
+    "image_sizes": "Veličine slika",
+    "zoom_on_logo": "Zumiraj logo",
     "select_all": "Označi sve",
     "deselect_all": "Poništi odabir svih",
-    "incorrect": "Wrong",
-    "correct": "Correct ({{label}})"
+    "incorrect": "Pogrešno",
+    "correct": "Tačno ({{label}})"
   },
   "green-score": {
-    "description": "Here is a summary of questions that could improve Eco-Score computation",
-    "countryLabel": "Country"
+    "description": "Evo sažetka pitanja koja bi mogla poboljšati izračunavanje Eco-Score-a",
+    "countryLabel": "Država"
   },
   "ingredients": {
-    "description": "This game allows you to validate the pre-selection of images of ingredients lists in various languages for a product, and validate the extracted ingredients.",
-    "current_text": "text from off",
-    "confidence_score": "language confidence",
-    "revert": "Revert",
-    "parsing": "Get server understanding",
-    "send": "Validate & send",
-    "skip": "Skip this product",
-    "getRobotoffPrediciton": "Get predictions from Robotoff"
+    "description": "Ova igra vam omogućava da potvrdite prethodni odabir slika sa listama sastojaka na raznim jezicima za proizvod i da potvrdite izdvojene sastojke.",
+    "current_text": "poruka od isključenog",
+    "confidence_score": "samopouzdanje u jeziku",
+    "revert": "Vrati",
+    "parsing": "Razumijevanje servera",
+    "send": "Potvrdi i pošalji",
+    "skip": "Preskoči ovaj proizvod",
+    "getRobotoffPrediciton": "Dobijte predviđanja od Robotoffa"
   },
   "footer": {
     "appStore": {
-      "title": "App Store",
-      "subtitle": "Download on the"
+      "title": "Trgovina aplikacija",
+      "subtitle": "Preuzmite na"
     },
     "playStore": {
-      "title": "Play Store",
-      "subtitle": "Get it on"
+      "title": "Plej Trgovina",
+      "subtitle": "Nabavi to"
     },
     "microsoft": {
-      "title": "Microsoft",
-      "subtitle": "Get it from"
+      "title": "Mikrosoft",
+      "subtitle": "Preuzmite ga od"
     },
     "androidAPK": {
       "title": "Android APK",
