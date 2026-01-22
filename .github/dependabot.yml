@@ -28,6 +28,14 @@ updates:
           - "typescript"
           - "axios"
           - "globals"
+      tanstack:
+        patterns:
+          - "@tanstack/*"
+      redux:
+        patterns:
+          - "redux"
+          - "react-redux"
+          - "@reduxjs/*"
       emotion:
         patterns:
           - "@emotion/*"
@@ -35,12 +43,14 @@ updates:
         patterns:
           - "@vitejs/plugin-react"
           - "vite"
-      eslint:
+      development-tools:
         patterns:
           - "@typescript-eslint/*"
           - "typescript-eslint"
           - "eslint"
           - "eslint-plugin-*"
+          - "@eslint/*"
+          - "prettier"
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
