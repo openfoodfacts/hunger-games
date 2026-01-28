@@ -17,10 +17,10 @@ import {
 import RotateLeftIcon from "@mui/icons-material/RotateLeft";
 import RotateRightIcon from "@mui/icons-material/RotateRight";
 import OpenInFullIcon from "@mui/icons-material/OpenInFull";
-import useMediaQuery from "@mui/material/useMediaQuery";
 import { useTheme } from "@mui/material/styles";
 import Loader from "../pages/loader";
 import { useTranslation } from "react-i18next";
+import { Stack } from "@mui/material";
 
 type ZoomableImageProps = {
   src: string;
@@ -46,7 +46,6 @@ const ZoomableImage = ({
   const { t } = useTranslation();
 
   const theme = useTheme();
-  const fullScreen = useMediaQuery(theme.breakpoints.down("md"));
 
   React.useEffect(() => {
     setShowFullResolution(false);
@@ -87,14 +86,25 @@ const ZoomableImage = ({
           setShowFullResolution(false);
           setFullResolutionStatus("none");
         }}
-        maxWidth="xl"
-        fullScreen={fullScreen}
+        fullScreen
       >
+        <Stack direction="row" justifyContent="flex-end" sx={{ p: 1 }}>
+          <IconButton
+            onClick={() => {
+              setIsOpen(false);
+            }}
+          >
+            <CloseIcon />
+          </IconButton>
+        </Stack>
         <Divider />
         <DialogContent
           sx={{
             p: { xs: 1, md: 2 },
             position: "relative",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
           }}
         >
           <Box>

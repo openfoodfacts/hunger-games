@@ -7,7 +7,8 @@ import Popper from "@mui/material/Popper";
 import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
 import { DiffPrint } from "./DiffPrint";
-import { IngeredientDisplay, useIngredientParsing } from "./IngeredientDisplay";
+import { IngeredientDisplay } from "./IngeredientDisplay";
+import { useIngredientParsing } from "./useIngredientParsing";
 
 interface TextCorrectionProps {
   original: string;
@@ -17,9 +18,9 @@ interface TextCorrectionProps {
 }
 
 export function TextCorrection(props: TextCorrectionProps) {
-  const [anchorEl, setAnchorEl] = React.useState(null);
+  const [anchorEl, setAnchorEl] = React.useState<HTMLSpanElement | null>(null);
 
-  const [editedText, setEditedText] = React.useState(null);
+  const [editedText, setEditedText] = React.useState<string | null>(null);
 
   const {
     text,
@@ -39,7 +40,7 @@ export function TextCorrection(props: TextCorrectionProps) {
     } else {
       fetchIngredients(text.before, "fr");
     }
-  }, [hasSuggestion]);
+  }, [fetchIngredients, hasSuggestion, text.before]);
 
   return (
     <Box>

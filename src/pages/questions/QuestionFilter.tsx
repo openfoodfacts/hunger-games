@@ -22,14 +22,12 @@ import { SetURLSearchParams, useSearchParams } from "react-router";
 import { useFavorite } from "../../components/QuestionFilter/useFavorite";
 import { insightTypesNames } from "../../components/QuestionFilter/const";
 import FilterDialog from "./FilterDialog";
-import {
-  FilterParams,
-  getFilterParams,
-} from "../../hooks/useFilterState/getFilterParams";
+import { getFilterParams } from "../../hooks/useFilterState/getFilterParams";
+import { FilterState } from "../../robotoff";
 import { getCountryName } from "../../utils/getCountryName";
 
 const getChipsParams = (
-  filterState: FilterParams,
+  filterState: FilterState,
   setSearchParams: SetURLSearchParams,
   t: TFunction<"translation", undefined>,
 ) =>
