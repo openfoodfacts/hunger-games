@@ -110,10 +110,10 @@
       "all_predictors": "Alle voorspellers",
       "predictor": {
         "ridge_model_ml": "Ridge Model ML",
-        "neural": "Neuraal",
-        "matcher": "Matcher",
+        "neural": "",
+        "matcher": "",
         "google_cloud_vision": "Google Cloud Vision",
-        "regex": "Reguliere expressie",
+        "regex": "",
         "flashtext": "FlashText",
         "nutriscore": "Nutriscore",
         "universal_logo_detector": "Universele logo-detector",
@@ -379,7 +379,7 @@
     "correct": "Juist ({{label}})"
   },
   "green-score": {
-    "description": "Hier is een samenvatting van vragen die de Ecoscore berekening kunnen verbeteren",
+    "description": "Hier is een samenvatting van vragen die de Eco-Score berekening kunnen verbeteren",
     "countryLabel": "Land"
   },
   "ingredients": {
