@@ -1,53 +1,53 @@
 {
   "home": {
     "game_selector": {
-      "title": "What game would you like to play?",
+      "title": "Kādu spēli tu vēlētos spēlēt?",
       "cards": {
         "questions": {
-          "title": "Questions",
-          "description": "Tell us if the given image answers the questions"
+          "title": "Jautājumi",
+          "description": "Pastāstiet mums, vai dotais attēls atbild uz jautājumiem"
         },
         "logos": {
-          "title": "Logos",
-          "description": "Find all the logos matching the given logo"
+          "title": "Logotipi",
+          "description": "Atrodiet visus logotipus, kas atbilst dotajam logotipam"
         },
         "green_score": {
-          "title": "Eco-score",
-          "description": "Annotate the questions with the highest value"
+          "title": "Eko-vērtējums",
+          "description": "Anotējiet jautājumus ar augstāko vērtību"
         }
       }
     },
     "account_band": {
-      "title": "Want to make your contribution count? Create an account or sign in on Open Food Facts!",
-      "log_in": "Login",
+      "title": "Vai vēlaties, lai jūsu ieguldījums būtu nozīmīgs? Izveidojiet kontu vai piesakieties Open Food Facts platformā!",
+      "log_in": "Pieteikšanās",
       "sign_up": "Reģistrēties",
-      "contribution_details": "Learn why your contribution matters"
+      "contribution_details": "Uzziniet, kāpēc jūsu ieguldījums ir svarīgs"
     },
-    "saved_filters": "Saved Filters",
+    "saved_filters": "Saglabātie filtri",
     "contribution_modal": {
-      "title": "Your contribution matters",
-      "information": "Hunger Games is an effort to leverage the results of our OCR and artificial intelligence. When you use Hunger Games by Open Food Facts, you improve our entire database which helps the community make better food choices. We gather your annotations and use them to make Open Food Facts more accurate and efficient.",
-      "thank_you": "Thank you for helping us improve Open Food Facts so that more people can use it easily."
+      "title": "Jūsu ieguldījums ir svarīgs",
+      "information": "“Bada spēles” ir mēģinājums izmantot mūsu OCR un mākslīgā intelekta rezultātus. Izmantojot “Bada spēles” no “Open Food Facts”, jūs uzlabojat visu mūsu datubāzi, kas palīdz kopienai izdarīt labākas izvēles par pārtiku. Mēs apkopojam jūsu anotācijas un izmantojam tās, lai padarītu “Open Food Facts” precīzāku un efektīvāku.",
+      "thank_you": "Paldies, ka palīdzat mums uzlabot Open Food Facts, lai vairāk cilvēku to varētu ērti izmantot."
     },
     "statistics": {
-      "title": "{{userName}} statistics:",
+      "title": "{{userName}} statistika:",
       "editorCount": {
         "title": "Redaktors",
-        "description": "Number of editions done"
+        "description": "Izpildīto izdevumu skaits"
       },
       "contributorCount": {
         "title": "Atbalstītājs",
-        "description": "Adding a new product"
+        "description": "Jauna produkta pievienošana"
       },
       "photographerCount": {
-        "title": "Photographer",
-        "description": "Taking photos for a product"
+        "title": "Fotogrāfs",
+        "description": "Produkta fotografēšana"
       }
     }
   },
   "flagged_images": {
-    "title": "Images flagged by users",
-    "loading": "Loading"
+    "title": "Lietotāju atzīmētie attēli",
+    "loading": "Ielādēšana"
   },
   "questions": {
     "category": "kategorija",
@@ -58,53 +58,53 @@
     "brands": "Zīmoli",
     "packaging": "iepakojums",
     "quantity": "Daudzums",
-    "insightTypeLabel": "Only shows",
+    "insightTypeLabel": "Tikai rāda",
     "ingredients": "Sastāvdaļas",
-    "product_weight": "product weight",
-    "popularity_sort": "Sort by popularity",
-    "see_examples": "See examples of this ",
+    "product_weight": "produkta svars",
+    "popularity_sort": "Kārtot pēc popularitātes",
+    "see_examples": "Skatiet šī piemērus ",
     "no": "Nē",
-    "skip": "Skip",
+    "skip": "Izlaist",
     "yes": "Jā",
-    "no_questions_remaining": "No questions remaining",
+    "no_questions_remaining": "Nav palicis neviens jautājums",
     "an_error_occurred": "Radās kļūda. Lūdzu, ielādējiet atkārtoti, mēģiniet vēlāk vai sazinieties ar komandu.",
-    "countries": "Countries",
-    "view": "View",
+    "countries": "Valstis",
+    "view": "Skatīt",
     "edit": "Rediģēt",
-    "remaining": "Remaining: {{count}}",
-    "remaining_other": "Remaining: >100",
-    "hide_images": "Hide images (faster loading)",
-    "display_images": "Display images",
-    "annotations": "Annotations",
-    "last_annotations": "Last annotations",
-    "remaining_annotations": "Remaining questions",
-    "annotated_annotations": "Annotated",
+    "remaining": "Atlikušais: {{count}}",
+    "remaining_other": "Atlikušie: >100",
+    "hide_images": "Slēpt attēlus (ātrāka ielāde)",
+    "display_images": "Attēlu attēlošana",
+    "annotations": "Anotācijas",
+    "last_annotations": "Pēdējās anotācijas",
+    "remaining_annotations": "Atlikušie jautājumi",
+    "annotated_annotations": "Anotēts",
     "filters": {
-      "active_filter_number": "+{{count}} filters",
-      "active_filter_number_one": "+{{count}} filter",
-      "active_filter_number_zero": "no filter",
+      "active_filter_number": "+{{count}} filtri",
+      "active_filter_number_one": "+{{count}} filtrs",
+      "active_filter_number_zero": "bez filtra",
       "short_label": {
         "value": "vērtība",
         "country": "valsts",
         "brand": "Zīmols",
-        "popularity": "popularity",
-        "campaign": "camp",
+        "popularity": "popularitāte",
+        "campaign": "nometne",
         "predictor": "prognozētājs"
       },
       "long_label": {
-        "type": "Question Type",
-        "value": "Proposed Value",
-        "country": "Product Country",
-        "brand": "Product Brand",
-        "popularity": "Sort by popularity",
+        "type": "Jautājuma veids",
+        "value": "Piedāvātā vērtība",
+        "country": "Produkta valsts",
+        "brand": "Produkta zīmols",
+        "popularity": "Kārtot pēc popularitātes",
         "edit": "",
-        "campaign": "Campaign",
+        "campaign": "Kampaņa",
         "predictor": "Prognozētājs (avots)"
       },
       "placeholders": {
-        "value": "Value (Fanta, en:organic,...)",
+        "value": "Vērtība (Fanta, en:organic,...)",
         "brand": "Auchan, Danone, Herta, ...",
-        "campaign": "Annotation campaigns",
+        "campaign": "Anotāciju kampaņas",
         "predictor": "universāls logotipa detektors, regulārā izteiksme, ..."
       },
       "all_predictors": "Visi prognozētāji",
@@ -120,290 +120,290 @@
         "ocr": "OCR"
       },
       "actions": {
-        "edit": "Edit Filters",
-        "cancel": "Cancel",
-        "apply": "Apply"
+        "edit": "Rediģēt filtrus",
+        "cancel": "Atcelt",
+        "apply": "Pieteikties"
       }
     },
-    "other_questions": "Other questions",
-    "send": "Send",
-    "flag": "Something wrong? Report/flag the image!",
-    "unflag": "Unflag the image",
-    "reset_filters": "Reset filters",
-    "log_in": "Login",
+    "other_questions": "Citi jautājumi",
+    "send": "Sūtīt",
+    "flag": "Kaut kas nav kārtībā? Ziņojiet par attēlu/atzīmējiet to ar karodziņu!",
+    "unflag": "Noņemt attēla karodziņu",
+    "reset_filters": "Atiestatīt filtrus",
+    "log_in": "Pieteikšanās",
     "sign_up": "Reģistrēties",
-    "login_title": "Make your annotation count",
-    "login_description": "You are not currently logged into Open Food Facts. To get your answers directly applied to products, and associated to your account, consider logging in to your Open Food Facts account, or creating one",
-    "please_wait_while_we_fetch_the_question": "Please wait while we fetch the question!"
+    "login_title": "Padariet savu anotāciju nozīmīgu",
+    "login_description": "Jūs pašlaik neesat pieteicies Open Food Facts platformā. Lai jūsu atbildes tiktu tieši piemērotas produktiem un saistītas ar jūsu kontu, apsveriet iespēju pieteikties savā Open Food Facts kontā vai izveidot jaunu.",
+    "please_wait_while_we_fetch_the_question": "Lūdzu, uzgaidiet, kamēr mēs ielādējam jautājumu!"
   },
   "menu": {
-    "title": "Hunger Games",
-    "games": "Games",
-    "questions": "Questions",
-    "logos": "Logos",
-    "logos-annotation": "Logos annotation",
-    "logos-search": "Logos search",
-    "logos-product-search": "Annotation per products",
-    "logos-deep-search": "Infinite annotation",
-    "manage": "Manage",
-    "insights": "Insights",
+    "title": "Bada spēles",
+    "games": "Spēles",
+    "questions": "Jautājumi",
+    "logos": "Logotipi",
+    "logos-annotation": "Logotipu anotācija",
+    "logos-search": "Logotipu meklēšana",
+    "logos-product-search": "Anotācija katram produktam",
+    "logos-deep-search": "Bezgalīga anotācija",
+    "manage": "Pārvaldīt",
+    "insights": "Ieskats",
     "nutritions": "Uzturs",
     "ingredient-spellcheck": "Sastāvdaļu pareizrakstības pārbaude",
     "ingredient-detection": "Sastāvdaļu noteikšana",
     "settings": "Iestatījumi",
     "green-score": "Zaļais rādītājs",
-    "dashboard": "Logos dashboard",
-    "tour": "Show tour",
-    "logged_in_user": "Logged as {{userName}}",
-    "log_in": "Click to login",
+    "dashboard": "Logotipu informācijas panelis",
+    "tour": "Rādīt tūri",
+    "logged_in_user": "Reģistrēts kā {{userName}}",
+    "log_in": "Noklikšķiniet, lai pieteiktos",
     "moderation": "Moderācija",
     "ingredients": "Sastāvdaļas"
   },
   "insights": {
-    "insights": "Insights",
+    "insights": "Ieskats",
     "barcode": "Svītrkods",
-    "barcode_placeholder": "barcode",
-    "value_tag": "Value tag",
-    "value_placeholder": "ex: en:mueslis, bjorg,...",
-    "type": "Type",
-    "annotated": "Annotated",
-    "annotation": "Annotation",
-    "not_annotated": "Not annotated",
-    "all": "All",
+    "barcode_placeholder": "svītrkods",
+    "value_tag": "Vērtības tags",
+    "value_placeholder": "piemēram: en:mueslis, bjorg,...",
+    "type": "Tips",
+    "annotated": "Anotēts",
+    "annotation": "Anotācija",
+    "not_annotated": "Nav anotēts",
+    "all": "Visi",
     "label": "Uzlīme",
-    "product_weight": "Product weight",
+    "product_weight": "Produkta svars",
     "category": "Kategorija",
-    "expiration_date": "Expiration date",
-    "packager_code": "Packager code",
-    "skipped": "Skipped (-1)",
-    "rejected": "Rejected (0)",
-    "accepted": "Accepted (1)",
+    "expiration_date": "Derīguma termiņš",
+    "packager_code": "Iepakotāja kods",
+    "skipped": "Izlaists (-1)",
+    "rejected": "Noraidīts (0)",
+    "accepted": "Pieņemts (1)",
     "search": "Meklēt",
-    "count": "Count",
-    "id": "Id",
-    "value": "Value",
-    "created_at": "Created at",
-    "completed_at": "Completed at",
-    "automatic": "Automatic",
-    "human_required": "Human required",
-    "edit_product": "Open product edit",
-    "view_product": "Open product page",
-    "view_crops_for_this_product": "Annotate product logos"
+    "count": "Grāfs",
+    "id": "ID",
+    "value": "Vērtība",
+    "created_at": "Izveidots plkst.",
+    "completed_at": "Pabeigts plkst.",
+    "automatic": "Automātiska",
+    "human_required": "Nepieciešams cilvēks",
+    "edit_product": "Atvērt produkta rediģēšanu",
+    "view_product": "Atvērt produkta lapu",
+    "view_crops_for_this_product": "Anotēt produktu logotipus"
   },
   "logos": {
-    "annotation": "Annotation: ",
-    "annotations": "Logo annotations",
-    "task_description": "Select all logos that are exactly the same, and give them a name like \"en:EU Organic\" and a type like \"label\".",
-    "select_all": "Select all",
-    "unselect_all": "Unselect all",
-    "distance": "Distance:",
-    "value": "Value",
-    "submit": "Submit",
-    "type": "Type",
+    "annotation": "Anotācija: ",
+    "annotations": "Logotipa anotācijas",
+    "task_description": "Atlasiet visus logotipus, kas ir pilnīgi vienādi, un piešķiriet tiem nosaukumu, piemēram, \"lv:EU Organic\", un tipu, piemēram, \"etiķete\".",
+    "select_all": "Atlasīt visu",
+    "unselect_all": "Noņemt visu atlasi",
+    "distance": "Attālums:",
+    "value": "Vērtība",
+    "submit": "Iesniegt",
+    "type": "Tips",
     "label": "Uzlīme",
     "brand": "Zīmols",
-    "packager_code": "Packager code",
+    "packager_code": "Iepakotāja kods",
     "packaging": "Iepakojums",
-    "qr_code": "QR code",
+    "qr_code": "QR kods",
     "category": "Kategorija",
-    "nutrition_label": "Nutrition label",
-    "no_logo": "Not a logo",
+    "nutrition_label": "Uzturvērtības marķējums",
+    "no_logo": "Nav logotips",
     "store": "Veikals",
-    "detail": "Logo detail",
-    "id": "Logo ID:",
-    "barcode": "Barcode:",
-    "full_image": "Full image",
-    "update": "Update",
-    "no_found": "No logo found",
+    "detail": "Logotipa detaļas",
+    "id": "Logotipa ID:",
+    "barcode": "Svītrkods:",
+    "full_image": "Pilns attēls",
+    "update": "Atjauninājums",
+    "no_found": "Nav atrasts logotips",
     "search": "Meklēt",
-    "number_of_results": "Number of results:",
+    "number_of_results": "Rezultātu skaits:",
     "loading": "Ielādē…",
-    "refresh": "Refresh",
-    "search_specific": "Search specific logo",
-    "load_more": "Load more",
-    "no_results": "No logo found",
-    "result_count": "Shows {{showing}} on {{available}} available",
-    "flag": "Something wrong? Report/flag the image!",
-    "unflag": "Unflag the image",
-    "crop_image_title": "crop of the logo",
-    "no_more_questions": "No more questions about this logo. You can try to find more logos with the following game.",
+    "refresh": "Atsvaidzināt",
+    "search_specific": "Meklēt konkrētu logotipu",
+    "load_more": "Ielādēt vairāk",
+    "no_results": "Nav atrasts logotips",
+    "result_count": "Pieejami {{showing}} raidījumi vietnē {{available}}",
+    "flag": "Kaut kas nav kārtībā? Ziņojiet par attēlu/atzīmējiet to ar karodziņu!",
+    "unflag": "Noņemt attēla karodziņu",
+    "crop_image_title": "logotipa apgriešana",
+    "no_more_questions": "Vairs nav jautājumu par šo logotipu. Varat mēģināt atrast citus logotipus, izmantojot šo spēli.",
     "loading_messages": {
-      "pending_reference_logos": "We are loading some logos examples to initialise the search",
-      "failed_reference_logos": "We did not find any logos with this annotation. Try to use the following game to annotate some of them."
+      "pending_reference_logos": "Mēs ielādējam dažus logotipu piemērus, lai sāktu meklēšanu.",
+      "failed_reference_logos": "Mēs neatradām nevienu logotipu ar šo anotāciju. Mēģiniet izmantot šo spēli, lai anotētu dažus no tiem."
     },
     "deep_search": {
-      "title": "Logo search",
-      "description": "Select a logo you want to look for, and let's go to catch them all. For every logo you annotate, we will fetch it's neighbors such that you might never stop to annotate. (Press Shift to select range of logos)",
-      "ref_logos": "Reference logos (logo already annotated with this value)",
-      "remaining": "Remaining to annotate",
-      "select_all": "Select All",
-      "unselect_all": "Deselect All"
+      "title": "Logotipa meklēšana",
+      "description": "Atlasiet logotipu, kuru vēlaties meklēt, un sāksim tos visus meklēt. Katram jūsu anotētajam logotipam mēs iegūsim tā blakus esošos, lai jums nebūtu jāapstājas, lai veiktu anotācijas. (Nospiediet Shift, lai atlasītu logotipu diapazonu.)",
+      "ref_logos": "Atsauces logotipi (logotips jau ir anotēts ar šo vērtību)",
+      "remaining": "Atliek anotēt",
+      "select_all": "Atlasīt visu",
+      "unselect_all": "Noņemt atlasi visam"
     }
   },
   "settings": {
     "settings": "Iestatījumi",
-    "language": "Languages",
+    "language": "Valodas",
     "save": "Saglabāt",
-    "reportIssue": "Found a bug? Please let us know.",
-    "dev_mode_title": "To get more options, activate the dev mode",
-    "dev_mode_label": "Dev Mode",
-    "dev_page_toggle": "Show {{name}} page",
+    "reportIssue": "Atradi kļūdu? Lūdzu, paziņo mums.",
+    "dev_mode_title": "Lai iegūtu vairāk opciju, aktivizējiet izstrādātāja režīmu.",
+    "dev_mode_label": "Izstrādātāja režīms",
+    "dev_page_toggle": "Rādīt {{name}} lapu",
     "join_community": "Pievienojies kopienai",
-    "text1": "Open Food Facts is a collaborative project built by tens of thousands of volunteers and managed by a non-profit organization with 8 employees. We need your donations to fund the Open Food Facts 2024 budget and to continue to develop the project.",
-    "thank_you": "Thank you",
+    "text1": "“Open Food Facts” ir sadarbības projekts, ko izveidojuši desmitiem tūkstošu brīvprātīgo un ko pārvalda bezpeļņas organizācija ar 8 darbiniekiem. Mums ir nepieciešami jūsu ziedojumi, lai finansētu “Open Food Facts” 2024. gada budžetu un turpinātu attīstīt projektu.",
+    "thank_you": "Paldies",
     "donate": "Ziedot",
     "join_the_community": {
-      "discover_our": "Discover our ",
-      "code_of_conduct": "Code of conduct ",
-      "join_us_on": "Join us on ",
-      "forum": "Forum",
-      "subscribe_to_our": "Subscribe to our ",
-      "newsletter": "newsletter"
+      "discover_our": "Atklājiet mūsu ",
+      "code_of_conduct": "Rīcības kodekss ",
+      "join_us_on": "Pievienojieties mums vietnē ",
+      "forum": "Forums",
+      "subscribe_to_our": "Abonējiet mūsu ",
+      "newsletter": "informatīvais biļetens"
     },
     "discover_the_project": "Atklājiet projektu",
     "Who_we_are": "Kas mēs esam",
-    "Vision_Mission_Values_and_Programs": "Vision, Mission, Values and Programs",
-    "FAQS": "FAQS",
-    "open_Food_Facts_blog": "Open Food Facts blog",
+    "Vision_Mission_Values_and_Programs": "Vīzija, misija, vērtības un programmas",
+    "FAQS": "Bieži uzdotie jautājumi",
+    "open_Food_Facts_blog": "Atvērts pārtikas faktu emuārs",
     "Press": "Nospiediet",
-    "Open_Food_Facts_wiki": "Open Food Facts wiki (en)",
+    "Open_Food_Facts_wiki": "Atvērtā pārtikas faktu vikipēdija (lv)",
     "Translators": "Tulkotāji",
-    "Partners": "Partners",
-    "Open_Beauty_Facts": "Open Beauty Facts - cosmetics",
+    "Partners": "Partneri",
+    "Open_Beauty_Facts": "Atklāti skaistumkopšanas fakti — kosmētika",
     "text2": "Kopīga, bezmaksas un atvērta pārtikas produktu datu bāze no visas pasaules."
   },
   "helper": {
     "welcome": {
       "page1": {
-        "title": "Welcome to Hunger Games",
-        "text1": "Hunger Games is a collection of mini-games that help contribute to Open Food Facts in many ways. You can play our really exciting games from anywhere. Here is a guided tour of the entire website which will get you started.",
-        "text2": "Make sure to login to the Open Food Facts website to get credit for your contributions. If you make a mistake, please take the time to correct it by heading to the website.",
-        "text3": "In case of any doubt about the games, click on the question mark icon at the top right of the page, and you can reach us on slack at the #hunger-games channel"
+        "title": "Laipni lūgti Bada spēlēs",
+        "text1": "“Bada spēles” ir mini spēļu kolekcija, kas dažādos veidos palīdz papildināt “Open Food Facts” vietni. Mūsu aizraujošās spēles var spēlēt no jebkuras vietas. Šeit ir sniegta detalizēta visas vietnes apskate, kas palīdzēs jums sākt darbu.",
+        "text2": "Lai saņemtu atsauci par savu ieguldījumu, noteikti piesakieties Open Food Facts tīmekļa vietnē. Ja pieļaujat kļūdu, lūdzu, veltiet laiku tās labošanai, apmeklējot tīmekļa vietni.",
+        "text3": "Ja rodas šaubas par spēlēm, noklikšķiniet uz jautājuma zīmes ikonas lapas augšējā labajā stūrī, un jūs varat sazināties ar mums Slack platformā #hunger-games kanālā."
       },
       "page2": {
-        "title": "Questions Game",
-        "text1": "Does the food product belong to this brand?",
-        "text2": "Simply answer with a <strong>Yes/No</strong>! Don't know the answer? That's alright, just skip it.",
-        "text3": "You can also use your keyboard shortcuts: y,n and k.",
-        "text4": "You can <strong>filter</strong> the products based on country, brands, popularity and much more!",
-        "text5": "If you don't want to do this every single time, you can also <strong>save the filters</strong> by clicking on the star. Next time you come back, find the saved filters on the home page itself"
+        "title": "Jautājumu spēle",
+        "text1": "Vai pārtikas produkts pieder šim zīmolam?",
+        "text2": "Vienkārši atbildiet ar <strong>Jā/Nē</strong>! Nezināt atbildi? Tas ir labi, vienkārši izlaidiet to.",
+        "text3": "Varat arī izmantot īsinājumtaustiņus: y, n un k.",
+        "text4": "Jūs varat <strong>filtrēt</strong> produktus pēc valsts, zīmola, popularitātes un daudz kā cita!",
+        "text5": "Ja nevēlaties to darīt katru reizi, varat arī <strong>saglabāt filtrus</strong> , noklikšķinot uz zvaigznītes. Nākamreiz, kad atgriezīsieties, saglabātos filtrus atradīsiet pašā sākumlapā."
       },
       "page3": {
-        "title": "Logos Game",
-        "text1": "Another popular game is the logos game where you have to <strong>select all the logos</strong> you feel are the same.",
-        "text2": "As shown in the example, once you select all the similar logos, just type their value and select where it is a brand, a label or something else. It's that simple!"
+        "title": "Logotipu spēle",
+        "text1": "Vēl viena populāra spēle ir logotipu spēle, kurā jums ir <strong>jāatlasa visi logotipi</strong> , kas, jūsuprāt, ir vienādi.",
+        "text2": "Kā parādīts piemērā, kad esat atlasījis visus līdzīgos logotipus, vienkārši ierakstiet to vērtību un atlasiet, vai tas ir zīmols, etiķete vai kas cits. Tik vienkārši!"
       },
       "page4": {
-        "title": "Eco-Score Questions Game",
-        "text1": "Help us finish the remaining questions in the most high priority labels!",
-        "text2": "These cards are linked to labels used in the computation of the Eco-Score.",
-        "text3": "<strong>What is Eco-Score?</strong>",
-        "text4": "Eco-Score captures the total environmental footprint, making it easier for consumers to compare products and decide which is better for the environment."
+        "title": "Eko-rezultāta jautājumu spēle",
+        "text1": "Palīdziet mums pabeigt atlikušos jautājumus ar visaugstākās prioritātes etiķetēm!",
+        "text2": "Šīs kartītes ir saistītas ar etiķetēm, ko izmanto eko-rādītāja aprēķināšanā.",
+        "text3": "<strong>Kas ir eko-rādītājs?</strong>",
+        "text4": "Ekovērtējums atspoguļo kopējo ietekmi uz vidi, atvieglojot patērētājiem produktu salīdzināšanu un lēmumu pieņemšanu par videi draudzīgāku."
       },
       "page5": {
         "title": "Iestatījumi",
-        "text1": "Set your preferred language, and report issues from our settings page.",
-        "text2": "If you're a developer, you can also explore our database content using our dev mode."
+        "text1": "Iestatiet vēlamo valodu un ziņojiet par problēmām mūsu iestatījumu lapā.",
+        "text2": "Ja esat izstrādātājs, varat arī izpētīt mūsu datubāzes saturu, izmantojot mūsu izstrādātāja režīmu."
       },
       "page6": {
-        "title": "Tour",
-        "text1": "Got stuck somewhere? Want to take the tour again?",
-        "text2": "Just click on the question mark and start the journey again!"
+        "title": "Ekskursija",
+        "text1": "Iestrēga kaut kur? Vai vēlaties vēlreiz apmeklēt ekskursiju?",
+        "text2": "Vienkārši noklikšķiniet uz jautājuma zīmes un sāciet ceļojumu no jauna!"
       }
     },
     "logos": {
       "page1": {
-        "title": "Selection",
-        "text1": "Select the crops of a same logo by clicking on them",
-        "text2": "Selected logos go to the top of the page, you can unselect them by clicking again on them"
+        "title": "Izlase",
+        "text1": "Atlasiet viena un tā paša logotipa apgriešanas elementus, noklikšķinot uz tiem.",
+        "text2": "Atlasītie logotipi tiek parādīti lapas augšdaļā; tos var noņemt, vēlreiz noklikšķinot uz tiem."
       },
       "page2": {
         "title": "Brīdinājums",
-        "text1": "If the crop contains multiple logos, do not select it.",
-        "text2": "If the crop contains only a partial part of a logo, you can select it."
+        "text1": "Ja apgriešanas vienumā ir vairāki logotipi, to neatlasiet.",
+        "text2": "Ja apgriešana satur tikai daļēju logotipa daļu, varat to atlasīt."
       },
       "page3": {
-        "title": "Validate",
-        "text1": "Indicate the type of logo (label, brand, QRcode, ...)",
-        "text2": "If it is a label or a brand logo, indicate which one it is",
-        "text3": "Now you can submit your selection",
-        "text4": "Thank you :)"
+        "title": "Validēt",
+        "text1": "Norādiet logotipa veidu (etiķete, zīmols, QR kods utt.)",
+        "text2": "Ja tā ir etiķete vai zīmola logotips, norādiet, kurš tas ir",
+        "text3": "Tagad jūs varat iesniegt savu izvēli",
+        "text4": "Paldies :)"
       }
     },
-    "previous": "Prev",
+    "previous": "Iepriekšējais",
     "next": "Nākamais",
     "close": "Aizvērt"
   },
   "nutrition": {
-    "table_partialy_filled": "Table with already some data",
-    "display_off_values": "Display values from OpenFoodFacts",
-    "nutrients": "Nutrients",
+    "table_partialy_filled": "Tabula ar jau esošajiem datiem",
+    "display_off_values": "Attēlot vērtības no OpenFoodFacts",
+    "nutrients": "Uzturvielas",
     "serving_size": "Porcijas lielums",
-    "add_nutrient": "-- add nutrient --",
-    "validate_100g": "Validate (100g)",
-    "validate_serving": "Validate (serving)",
-    "skip": "Skip",
-    "invalid_image": "Invalid image",
+    "add_nutrient": "-- pievienot barības vielu --",
+    "validate_100g": "Validēt (100 g)",
+    "validate_serving": "Validēt (rādīt)",
+    "skip": "Izlaist",
+    "invalid_image": "Nederīgs attēls",
     "pictures": {
-      "picture_date": "Photo uploaded",
-      "selected_as_nutrients": "Selected as nutriment image ✅",
-      "not_selected_as_nutrients": "Not selected as nutriment ❌"
+      "picture_date": "Fotoattēls augšupielādēts",
+      "selected_as_nutrients": "Atlasīts kā uztura attēls ✅",
+      "not_selected_as_nutrients": "Nav izvēlēts kā uzturviela ❌"
     },
     "instructions": {
-      "open_button": "Open instructions",
-      "title": "How to use the interface",
-      "chose_between_empty_and_partially_filled": "You can chose between products for which OpenFoodFacts (OFF) has no data about the nutrients. Or product with partially filled nutrient table.",
-      "indicate_not_provided_value": "Empty inputs are ignored. If fibers are not present in the table, you can put \"-\" to specify the value is not available.",
+      "open_button": "Atvērt instrukcijas",
+      "title": "Kā lietot saskarni",
+      "chose_between_empty_and_partially_filled": "Jūs varat izvēlēties starp produktiem, par kuriem OpenFoodFacts (OFF) nav datu par uzturvielām. Vai arī produktu ar daļēji aizpildītu uzturvielu tabulu.",
+      "indicate_not_provided_value": "Tukšas ievades vērtības tiek ignorētas. Ja tabulā nav šķiedru, varat ievietot \"-\", lai norādītu, ka vērtība nav pieejama.",
       "validate_one_column": "Izvēlieties attēlā redzamo izmēru. Ja jums ir 100 g porcijas lielums, lūdzu, izvēlieties 100 g, jo tas ir normalizēts formāts.",
-      "skip_button": "If you don't know how to deal with an image, or you just don't want to do it, press \"skip\". Other user will be able to handle it.",
-      "invalid_image_button": "If the pictures is not a nutritional table, press \"Invalid image\" to remove it from the list of the images to verify",
+      "skip_button": "Ja nezināt, kā rīkoties ar attēlu, vai vienkārši nevēlaties to darīt, nospiediet \"izlaist\". Citi lietotāji varēs ar to rīkoties.",
+      "invalid_image_button": "Ja attēli nav uzturvērtības tabula, nospiediet \"Nederīgs attēls\", lai to noņemtu no pārbaudāmo attēlu saraksta.",
       "close": "Aizvērt"
     }
   },
   "notfound": {
-    "image_alt": "404 not found",
-    "nopage": "Whoops! The page you're looking for can't be found.",
-    "redirect1": "Want to play some games?",
-    "redirect2": "Click here"
+    "image_alt": "404 nav atrasts",
+    "nopage": "Ak vai! Lapu, kuru meklējat, nevar atrast.",
+    "redirect1": "Vai vēlaties uzspēlēt dažas spēles?",
+    "redirect2": "Noklikšķiniet šeit"
   },
   "nutriscore": {
-    "image_alt": "cropped image",
-    "label": "Annotate Nutri-Score logo detection by batch.",
-    "description": "To do so, select all the images showing the correct/wrong Nutri-Score value ({{label}}), and click on the bottom buttons to say if you selected a set correct or wrong ones.",
-    "images_remaining": "Still {{remaining}} to annotate",
-    "image_sizes": "Image sizes",
-    "zoom_on_logo": "Zoom on logo",
-    "select_all": "Select all",
-    "deselect_all": "Unselect all",
-    "incorrect": "Wrong",
-    "correct": "Correct ({{label}})"
+    "image_alt": "apgriezts attēls",
+    "label": "Anotēt Nutri-Score logotipa noteikšanu pa partijām.",
+    "description": "Lai to izdarītu, atlasiet visus attēlus, kuros redzama pareizā/nepareizā Nutri-Score vērtība ({{label}}), un noklikšķiniet uz apakšējām pogām, lai norādītu, vai izvēlētais komplekts ir pareizs vai nepareizs.",
+    "images_remaining": "Joprojām {{remaining}} , lai anotētu",
+    "image_sizes": "Attēlu izmēri",
+    "zoom_on_logo": "Logotipa tuvināšana",
+    "select_all": "Atlasīt visu",
+    "deselect_all": "Noņemt visu atlasi",
+    "incorrect": "Nepareizi",
+    "correct": "Pareizi ({{label}})"
   },
   "green-score": {
-    "description": "Here is a summary of questions that could improve Eco-Score computation",
-    "countryLabel": "Country"
+    "description": "Šeit ir kopsavilkums par jautājumiem, kas varētu uzlabot eko-rādītāju aprēķināšanu.",
+    "countryLabel": "Valsts"
   },
   "ingredients": {
-    "description": "This game allows you to validate the pre-selection of images of ingredients lists in various languages for a product, and validate the extracted ingredients.",
-    "current_text": "text from off",
-    "confidence_score": "language confidence",
-    "revert": "Revert",
-    "parsing": "Get server understanding",
-    "send": "Validate & send",
-    "skip": "Skip this product",
-    "getRobotoffPrediciton": "Get predictions from Robotoff"
+    "description": "Šī spēle ļauj apstiprināt sastāvdaļu sarakstu attēlu iepriekšēju atlasi dažādās valodās produktam un apstiprināt iegūtās sastāvdaļas.",
+    "current_text": "īsziņa no ārpuses",
+    "confidence_score": "valodas pārliecība",
+    "revert": "Atjaunot",
+    "parsing": "Iegūstiet izpratni par serveri",
+    "send": "Validēt un nosūtīt",
+    "skip": "Izlaist šo produktu",
+    "getRobotoffPrediciton": "Saņemiet prognozes no Robotoff"
   },
   "footer": {
     "appStore": {
-      "title": "App Store",
-      "subtitle": "Download on the"
+      "title": "Lietotņu veikals",
+      "subtitle": "Lejupielādēt vietnē"
     },
     "playStore": {
-      "title": "Play Store",
-      "subtitle": "Get it on"
+      "title": "Play veikals",
+      "subtitle": "Iegūstiet to"
     },
     "microsoft": {
       "title": "Microsoft",
-      "subtitle": "Get it from"
+      "subtitle": "Iegūstiet to no"
     },
     "androidAPK": {
       "title": "Android APK",
