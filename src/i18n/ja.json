@@ -12,8 +12,8 @@
           "description": "与えられたロゴに一致するすべてのロゴを見つけてください"
         },
         "green_score": {
-          "title": "Eco-score",
-          "description": "Annotate the questions with the highest value"
+          "title": "エコスコア",
+          "description": "最も価値の高い質問に注釈を付ける"
         }
       }
     },
@@ -269,7 +269,7 @@
     "Open_Food_Facts_wiki": "Open Food Facts wiki (en)",
     "Translators": "翻訳者",
     "Partners": "パートナー",
-    "Open_Beauty_Facts": "Open Beauty Facts - cosmetics",
+    "Open_Beauty_Facts": "オープンビューティーファクト - 化粧品",
     "text2": "世界中から食品の、共同のフリーでオープンなデータベース。"
   },
   "helper": {
@@ -335,27 +335,27 @@
     "close": "閉じる"
   },
   "nutrition": {
-    "table_partialy_filled": "Table with already some data",
-    "display_off_values": "Display values from OpenFoodFacts",
+    "table_partialy_filled": "すでにいくつかのデータがあるテーブル",
+    "display_off_values": "OpenFoodFactsからの値を表示",
     "nutrients": "栄養素",
     "serving_size": "一人前の分量",
     "add_nutrient": "-- 栄養素を追加 --",
-    "validate_100g": "Validate (100g)",
-    "validate_serving": "Validate (serving)",
+    "validate_100g": "検証（100g）",
+    "validate_serving": "検証（提供）",
     "skip": "スキップ",
-    "invalid_image": "Invalid image",
+    "invalid_image": "無効な画像",
     "pictures": {
-      "picture_date": "Photo uploaded",
-      "selected_as_nutrients": "Selected as nutriment image ✅",
+      "picture_date": "写真をアップロードしました",
+      "selected_as_nutrients": "栄養画像として選択されました✅",
       "not_selected_as_nutrients": "栄養素として選択されていません❌"
     },
     "instructions": {
       "open_button": "説明を開く",
       "title": "インターフェースの使い方",
-      "chose_between_empty_and_partially_filled": "You can chose between products for which OpenFoodFacts (OFF) has no data about the nutrients. Or product with partially filled nutrient table.",
-      "indicate_not_provided_value": "Empty inputs are ignored. If fibers are not present in the table, you can put \"-\" to specify the value is not available.",
+      "chose_between_empty_and_partially_filled": "OpenFoodFacts (OFF) に栄養成分データがない製品、または栄養成分表の一部が記入されている製品を選択できます。",
+      "indicate_not_provided_value": "空の入力は無視されます。テーブルにファイバーが存在しない場合は、「-」を入力して値が利用できないことを指定できます。",
       "validate_one_column": "写真に表示されているサイズをお選びください。100gと1食分量がある場合は、標準化された形式のため、100gをお選びください。",
-      "skip_button": "If you don't know how to deal with an image, or you just don't want to do it, press \"skip\". Other user will be able to handle it.",
+      "skip_button": "画像の扱い方がわからない場合、または扱いたくない場合は、「スキップ」を押してください。他のユーザーが処理します。",
       "invalid_image_button": "写真が栄養表ではない場合は、「無効な画像」を押して画像リストから削除して確認してください",
       "close": "閉じる"
     }
@@ -379,18 +379,18 @@
     "correct": "正しい ({{label}})"
   },
   "green-score": {
-    "description": "Here is a summary of questions that could improve Eco-Score computation",
+    "description": "エコスコアの計算を改善できる質問の要約は次のとおりです。",
     "countryLabel": "国"
   },
   "ingredients": {
     "description": "このゲームでは、製品のさまざまな言語で原材料リストの画像の事前選択を検証し、抽出された原材料を検証することができます。",
     "current_text": "オフからのテキスト",
-    "confidence_score": "language confidence",
-    "revert": "Revert",
-    "parsing": "Get server understanding",
-    "send": "Validate & send",
+    "confidence_score": "言語への自信",
+    "revert": "元に戻す",
+    "parsing": "サーバーの理解を深める",
+    "send": "検証して送信",
     "skip": "この製品をスキップする",
-    "getRobotoffPrediciton": "Get predictions from Robotoff"
+    "getRobotoffPrediciton": "Robotoffからの予測を入手"
   },
   "footer": {
     "appStore": {
