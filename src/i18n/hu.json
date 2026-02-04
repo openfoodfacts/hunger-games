@@ -13,7 +13,7 @@
         },
         "green_score": {
           "title": "Eco-score",
-          "description": "Annotate the questions with the highest value"
+          "description": "Jelölje meg a legmagasabb értékű kérdéseket"
         }
       }
     },
@@ -62,7 +62,7 @@
     "ingredients": "Összetevők",
     "product_weight": "termék súlya",
     "popularity_sort": "Rendezés népszerűség szerint",
-    "see_examples": "További példák erre ",
+    "see_examples": "További példák erre: ",
     "no": "Nem",
     "skip": "Kihagyás",
     "yes": "Igen",
@@ -336,7 +336,7 @@
   },
   "nutrition": {
     "table_partialy_filled": "Már néhány adatot tartalmazó táblázat",
-    "display_off_values": "Display values from OpenFoodFacts",
+    "display_off_values": "Értékek megjelenítése az OpenFoodFactsből",
     "nutrients": "Tápanyag",
     "serving_size": "Adag",
     "add_nutrient": "– tápanyag hozzáadása –",
