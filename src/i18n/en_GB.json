@@ -133,7 +133,7 @@
     "log_in": "Login",
     "sign_up": "Sign up",
     "login_title": "Make your annotation count",
-    "login_description": "You are not currently logged into Open Food Facts. To get your answers directly applied to products, and associated with your account, consider logging into your Open Food Facts account, or creating a new one",
+    "login_description": "You are not currently logged into Open Food Facts. To get your answers directly applied to products, and associated to your account, consider logging in to your Open Food Facts account, or creating one",
     "please_wait_while_we_fetch_the_question": "Please wait while we fetch the question!"
   },
   "menu": {
@@ -141,8 +141,8 @@
     "games": "Games",
     "questions": "Questions",
     "logos": "Logos",
-    "logos-annotation": "Logo annotation",
-    "logos-search": "Logo search",
+    "logos-annotation": "Logos annotation",
+    "logos-search": "Logos search",
     "logos-product-search": "Annotation per products",
     "logos-deep-search": "Infinite annotation",
     "manage": "Manage",
@@ -249,7 +249,7 @@
     "dev_mode_label": "Dev Mode",
     "dev_page_toggle": "Show {{name}} page",
     "join_community": "Join the community",
-    "text1": "Open Food Facts is a collaborative project built by tens of thousands of volunteers and managed by a non-profit organization with 8 employees. We need your donations to fund the Open Food Facts 2024 budget and to continue to develop the project.",
+    "text1": "Open Food Facts is a collaborative project built by tens of thousands of volunteers and managed by a non-profit organisation with 8 employees. We need your donations to fund the Open Food Facts 2024 budget and to continue to develop the project.",
     "thank_you": "Thank you",
     "donate": "Donate",
     "join_the_community": {
@@ -354,7 +354,7 @@
       "title": "How to use the interface",
       "chose_between_empty_and_partially_filled": "You can chose between products for which OpenFoodFacts (OFF) has no data about the nutrients. Or product with partially filled nutrient table.",
       "indicate_not_provided_value": "Empty inputs are ignored. If fibers are not present in the table, you can put \"-\" to specify the value is not available.",
-      "validate_one_column": "Choose the size it is displayed in the picture. If you have 100g and serving size, please choose 100g because it's a normalized format.",
+      "validate_one_column": "Choose the size it is displayed in the picture. If you have 100g and serving size, please choose 100g because it's a normalised format.",
       "skip_button": "If you don't know how to deal with an image, or you just don't want to do it, press \"skip\". Other user will be able to handle it.",
       "invalid_image_button": "If the pictures is not a nutritional table, press \"Invalid image\" to remove it from the list of the images to verify",
       "close": "Close"
