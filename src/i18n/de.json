@@ -12,8 +12,8 @@
           "description": "Finden Sie alle Logos, die mit dem angegebenen Logo übereinstimmen"
         },
         "green_score": {
-          "title": "Eco-score",
-          "description": "Annotate the questions with the highest value"
+          "title": "Öko-Score",
+          "description": "Die Fragen mit dem höchsten Wert mit Anmerkungen versehen"
         }
       }
     },
@@ -67,7 +67,7 @@
     "skip": "Überspringen",
     "yes": "Ja",
     "no_questions_remaining": "Keine offenen Fragen",
-    "an_error_occurred": "Es ist ein Fehler aufgetreten. Bitte laden Sie die Seite neu, versuchen Sie es später erneut oder kontaktieren Sie das Team.",
+    "an_error_occurred": "Ein Fehler ist aufgetreten. Bitte laden Sie die Seite neu, versuchen Sie es später erneut oder wenden Sie sich an das Team.",
     "countries": "Länder",
     "view": "Anzeigen",
     "edit": "Bearbeiten",
@@ -105,12 +105,12 @@
         "value": "Wert (Fanta, de: biologisch, ...)",
         "brand": "Rewe, Danone, Herta, ...",
         "campaign": "Kampagnen kommentieren",
-        "predictor": "universeller Logo-Detektor, regulärer Ausdruck, ..."
+        "predictor": "Universal-Logo-Detektor, regulärer Ausdruck, ..."
       },
       "all_predictors": "Alle Prädiktoren",
       "predictor": {
         "ridge_model_ml": "Ridge-Modell ML",
-        "neural": "Neuronal",
+        "neural": "Neural",
         "matcher": "Matcher",
         "google_cloud_vision": "Google Cloud Vision",
         "regex": "Regex",
@@ -133,7 +133,7 @@
     "log_in": "Anmelden",
     "sign_up": "Registrieren",
     "login_title": "Bringen Sie Ihre Anmerkungen zum Tragen",
-    "login_description": "Sie sind derzeit nicht bei Open Food Facts angemeldet. Um Ihre Antworten direkt auf Produkte anzuwenden und Ihrem Konto zuzuordnen, melden Sie sich bitte bei Ihrem Open Food Facts-Konto an oder erstellen Sie eines.",
+    "login_description": "Sie sind derzeit nicht bei Open Food Facts angemeldet. Um Ihre Antworten direkt auf Produkte anzuwenden und mit Ihrem Konto zu verknüpfen, melden Sie sich bitte bei Ihrem Open Food Facts-Konto an oder erstellen Sie ein neues Konto",
     "please_wait_while_we_fetch_the_question": "Bitte warten Sie, während Ihre Frage abgerufen wird!"
   },
   "menu": {
@@ -148,7 +148,7 @@
     "manage": "Verwalten",
     "insights": "Erkenntnisse",
     "nutritions": "Nährwertangaben",
-    "ingredient-spellcheck": "Rechtschreibprüfung für Zutaten",
+    "ingredient-spellcheck": "Zutaten-Rechtschreibprüfung",
     "ingredient-detection": "Zutatenerkennung",
     "settings": "Einstellungen",
     "green-score": "Green-Score",
@@ -156,7 +156,7 @@
     "tour": "Tour anzeigen",
     "logged_in_user": "Angemeldet als {{userName}}",
     "log_in": "Anklicken zum Anmelden",
-    "moderation": "Mäßigung",
+    "moderation": "Moderation",
     "ingredients": "Zutaten"
   },
   "insights": {
@@ -315,7 +315,7 @@
       "page1": {
         "title": "Auswahl",
         "text1": "Wählen Sie die Ausschnitte des gleichen Logos durch Anklicken aus",
-        "text2": "Ausgewählte Logos werden ganz oben auf der Seite angezeigt. Sie können die Auswahl aufheben, indem Sie sie erneut anklicken."
+        "text2": "Ausgewählte Logos werden oben auf der Seite angezeigt. Sie können die Auswahl aufheben, indem Sie erneut darauf klicken"
       },
       "page2": {
         "title": "Warnhinweis",
@@ -354,7 +354,7 @@
       "title": "So verwenden Sie die Schnittstelle",
       "chose_between_empty_and_partially_filled": "Sie können zwischen Produkten wählen, für die OpenFoodFacts (OFF) keine Daten über die Nährstoffe hat. Oder Produkte mit teilweise gefüllter Nährstofftabelle.",
       "indicate_not_provided_value": "Leere Eingaben werden ignoriert. Wenn keine Ballaststoffe in der Tabelle vorhanden sind, können Sie „-“ eingeben, um anzugeben, dass der Wert nicht verfügbar ist.",
-      "validate_one_column": "Wählen Sie die Größe, die auf dem Bild angezeigt wird. Wenn Sie 100 g und eine Portionsgröße haben, wählen Sie bitte 100 g, da dies ein normalisiertes Format ist.",
+      "validate_one_column": "Wählen Sie die Größe, die auf dem Bild angezeigt wird. Wenn Sie 100 g und eine Portionsgröße haben, wählen Sie bitte 100 g, da dies ein standardisiertes Format ist.",
       "skip_button": "Wenn Sie nicht wissen, wie Sie mit einem Bild umgehen sollen, oder wenn Sie es einfach nicht tun wollen, drücken Sie „Überspringen“. Andere Benutzer können das dann vervollständigen.",
       "invalid_image_button": "Wenn es sich bei dem Bild nicht um eine Nährwerttabelle handelt, drücken Sie auf „Ungültiges Bild“, um es aus der Liste der zu überprüfenden Bilder zu entfernen",
       "close": "Schließen"
@@ -379,7 +379,7 @@
     "correct": "Richtig ({{label}})"
   },
   "green-score": {
-    "description": "Here is a summary of questions that could improve Eco-Score computation",
+    "description": "Hier finden Sie eine Zusammenfassung der Fragen, die zur Verbesserung der Berechnung des Eco-Scores beitragen könnten",
     "countryLabel": "Land"
   },
   "ingredients": {
