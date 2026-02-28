@@ -167,7 +167,7 @@ const ProductInformation = () => {
                       },
                     }}
                   />
-                  {flagged.includes(getImageId(src.imageUrl)) ? (
+                  {/* {flagged.includes(getImageId(src.imageUrl)) ? (
                     <Tooltip title={t("questions.unflag")}>
                       <IconButton
                         onClick={() =>
@@ -190,7 +190,7 @@ const ProductInformation = () => {
                         <OutlinedFlagIcon />
                       </IconButton>
                     </Tooltip>
-                  )}
+                  )} */}
                 </Box>
                 <Typography variant="caption">{src.uploaded_t}</Typography>
               </Box>
