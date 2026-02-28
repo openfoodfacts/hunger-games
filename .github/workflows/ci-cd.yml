@@ -94,6 +94,9 @@ jobs:
           name: dist
           path: dist
 
+      - name: Enable corepack
+        run: corepack enable
+
       - name: Deploy
         run: yarn deploy
 
