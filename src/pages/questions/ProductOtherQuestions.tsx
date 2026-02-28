@@ -7,7 +7,7 @@ import { CORRECT_INSIGHT, WRONG_INSIGHT } from "../../const";
 import robotoff, { QuestionInterface } from "../../robotoff";
 import { useProductQuestions } from "../../hooks/useProductQuestions";
 
-const noop = () => {};
+const noop = () => { };
 
 export default function ProductOtherQuestions({
   question,
@@ -83,22 +83,22 @@ export default function ProductOtherQuestions({
       pendingAnswer === CORRECT_INSIGHT || pendingAnswer === WRONG_INSIGHT;
     const sendAnswer = valueIsSet
       ? () => {
-          robotoff.annotate(insight_id, pendingAnswer);
-          setAnswers((prev) => ({
-            ...prev,
-            [insight_id]: {
-              ...prev[insight_id],
-              sent: true,
-            },
-          }));
-        }
+        robotoff.annotate(insight_id, pendingAnswer);
+        setAnswers((prev) => ({
+          ...prev,
+          [insight_id]: {
+            ...prev[insight_id],
+            sent: true,
+          },
+        }));
+      }
       : noop;
 
     return (
       <Stack
         direction="row"
         key={otherQuestion.insight_id}
-        sx={{ mt: 1, alignItems: "flex-start" }}
+        sx={{ mt: 1, alignItems: "flex-start", flexWrap: "wrap", gap: 1 }}
       >
         <Typography key={otherQuestion.insight_id}>
           {otherQuestion.question} ({otherQuestion.value})
@@ -108,7 +108,6 @@ export default function ProductOtherQuestions({
           variant={pendingAnswer === CORRECT_INSIGHT ? "contained" : "outlined"}
           color="success"
           size="small"
-          sx={{ ml: 1 }}
         >
           {t("questions.yes")}
         </Button>
@@ -126,7 +125,6 @@ export default function ProductOtherQuestions({
           color="secondary"
           variant="contained"
           size="small"
-          sx={{ ml: 1 }}
         >
           {t("questions.send")}
         </Button>

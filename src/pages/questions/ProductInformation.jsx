@@ -14,6 +14,8 @@ import TableCell from "@mui/material/TableCell";
 import TableRow from "@mui/material/TableRow";
 import OutlinedFlagIcon from "@mui/icons-material/OutlinedFlag";
 import FlagIcon from "@mui/icons-material/Flag";
+import Skeleton from "@mui/material/Skeleton";
+import Stack from "@mui/material/Stack";
 import { useTranslation } from "react-i18next";
 import { NO_QUESTION_LEFT } from "../../const";
 import offService from "../../off";
@@ -48,13 +50,57 @@ const ProductInformation = () => {
   );
   const theme = useTheme();
 
-  const { question } = useQuestions();
-  const { data: productData } = useProductData(question?.barcode);
+  const { question, status } = useQuestions();
+  const { data: productData, isLoading } = useProductData(question?.barcode);
 
   const handleHideImages = (event) => {
     setHideImages(event.target.checked);
     localSettings.update(localSettingsKeys.hideImages, event.target.checked);
   };
+
+  if (status === "pending" || isLoading) {
+    return (
+      <Box>
+        <Skeleton variant="text" height={40} width="60%" />
+        <Stack direction="row" spacing={2} sx={{ mt: 1, mb: 2 }}>
+          <Skeleton variant="rounded" width={100} height={32} />
+          <Skeleton variant="rounded" width={100} height={32} />
+          <Skeleton variant="rounded" width={100} height={32} />
+        </Stack>
+        <Divider sx={{ my: 1 }} />
+        <Skeleton variant="text" height={32} width="40%" />
+        <Stack spacing={1} sx={{ mt: 1 }}>
+          <Skeleton variant="text" width="100%" />
+          <Skeleton variant="text" width="100%" />
+        </Stack>
+        <Divider sx={{ my: 1 }} />
+        <Skeleton variant="text" height={32} width="30%" />
+        <Box
+          sx={{
+            mt: 2,
+            display: "grid",
+            gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))",
+            gap: "30px",
+          }}
+        >
+          <Skeleton
+            variant="rectangular"
+            height={200}
+            sx={{ borderRadius: "10px" }}
+          />
+        </Box>
+        <Divider sx={{ my: 2 }} />
+        <Stack spacing={1}>
+          {[1, 2, 3, 4, 5].map((i) => (
+            <Stack key={i} direction="row" justifyContent="space-between">
+              <Skeleton variant="text" width="30%" />
+              <Skeleton variant="text" width="60%" />
+            </Stack>
+          ))}
+        </Stack>
+      </Box>
+    );
+  }
 
   if (!question || question.insight_id === NO_QUESTION_LEFT) {
     return null;
@@ -64,39 +110,41 @@ const ProductInformation = () => {
     <Box>
       {/* Main information about the product */}
       <Typography>{productData?.productName}</Typography>
-      <Button
-        size="small"
-        component={Link}
-        target="_blank"
-        href={offService.getProductUrl(question.barcode)}
-        variant="outlined"
-        startIcon={<VisibilityIcon />}
-        sx={{ minWidth: 100 }}
-      >
-        {t("questions.view")}
-      </Button>
-      <Button
-        size="small"
-        component={Link}
-        target="_blank"
-        href={offService.getProductEditUrl(question.barcode)}
-        variant="contained"
-        startIcon={<EditIcon />}
-        sx={{ ml: 2, minWidth: 100 }}
-      >
-        {t("questions.edit")}
-      </Button>
-      <Button
-        size="small"
-        component={Link}
-        target="_blank"
-        href={offService.getLogoCropsByBarcodeUrl(question.barcode)}
-        variant="contained"
-        startIcon={<EditIcon />}
-        sx={{ ml: 2, minWidth: 100 }}
-      >
-        {t("insights.view_crops_for_this_product")}
-      </Button>
+      <Stack direction="row" spacing={2} useFlexGap flexWrap="wrap" sx={{ mt: 1 }}>
+        <Button
+          size="small"
+          component={Link}
+          target="_blank"
+          href={offService.getProductUrl(question.barcode)}
+          variant="outlined"
+          startIcon={<VisibilityIcon />}
+          sx={{ minWidth: 100 }}
+        >
+          {t("questions.view")}
+        </Button>
+        <Button
+          size="small"
+          component={Link}
+          target="_blank"
+          href={offService.getProductEditUrl(question.barcode)}
+          variant="contained"
+          startIcon={<EditIcon />}
+          sx={{ minWidth: 100 }}
+        >
+          {t("questions.edit")}
+        </Button>
+        <Button
+          size="small"
+          component={Link}
+          target="_blank"
+          href={offService.getLogoCropsByBarcodeUrl(question.barcode)}
+          variant="contained"
+          startIcon={<EditIcon />}
+          sx={{ minWidth: 100 }}
+        >
+          {t("insights.view_crops_for_this_product")}
+        </Button>
+      </Stack>
       {
         /* Other questions */
 
@@ -235,17 +283,17 @@ const ProductInformation = () => {
                   >
                     {getLink
                       ? value.map((name, index) => (
-                          <React.Fragment key={name}>
-                            <a
-                              href={getLink(name)}
-                              target="_blank"
-                              rel="noreferrer"
-                            >
-                              {name}
-                            </a>
-                            {index < value.length - 1 ? ", " : ""}
-                          </React.Fragment>
-                        ))
+                        <React.Fragment key={name}>
+                          <a
+                            href={getLink(name)}
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            {name}
+                          </a>
+                          {index < value.length - 1 ? ", " : ""}
+                        </React.Fragment>
+                      ))
                       : value.join(", ")}
                   </TableCell>
                 ) : (
