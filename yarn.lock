@@ -1869,21 +1869,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tanstack/query-core@npm:5.75.0":
-  version: 5.75.0
-  resolution: "@tanstack/query-core@npm:5.75.0"
-  checksum: 10/4dd986efe81a36816998dcf2cc535e6f21b4453d967e568f44999fdc6e022dc5997383bd6fb5a427b1b7d582a468cebdb79cfae09c9d07c7cecd09b596c7bbe4
+"@tanstack/query-core@npm:5.90.20":
+  version: 5.90.20
+  resolution: "@tanstack/query-core@npm:5.90.20"
+  checksum: 10/25e38f4382442bc15e0f6cce8d787e9df8d8822c61d3f3e9427e89e01b1e2506f848292e086dae29aeb55f8ce71b097c34221f3c5eda37fb4a688b5ceca5d1b3
   languageName: node
   linkType: hard
 
-"@tanstack/react-query@npm:^5.75.1":
-  version: 5.75.1
-  resolution: "@tanstack/react-query@npm:5.75.1"
+"@tanstack/react-query@npm:^5.90.21":
+  version: 5.90.21
+  resolution: "@tanstack/react-query@npm:5.90.21"
   dependencies:
-    "@tanstack/query-core": "npm:5.75.0"
+    "@tanstack/query-core": "npm:5.90.20"
   peerDependencies:
     react: ^18 || ^19
-  checksum: 10/0131145e7b9fc0e0eea8fe42cab1cd62ec6772946358540d16c783e0ed6db6b880859d0c3e4449cac66bdf9d36d493d067b10e884dc132de54d0d61222e0c75c
+  checksum: 10/5bb4b6be7ac34a7423aca60484f1e35a0c7f8b2f86ef6656a3b6757943417561a50d9a159e2bff9d97a57a82ecec920df067b507c2ec6488beb286635b25e518
   languageName: node
   linkType: hard
 
@@ -4201,7 +4201,7 @@ __metadata:
     "@openfoodfacts/openfoodfacts-nodejs": "npm:^2.0.0-alpha.19"
     "@openfoodfacts/openfoodfacts-webcomponents": "npm:^1.15.1"
     "@reduxjs/toolkit": "npm:^1.9.7"
-    "@tanstack/react-query": "npm:^5.75.1"
+    "@tanstack/react-query": "npm:^5.90.21"
     "@types/lodash": "npm:^4.17.23"
     "@types/node": "npm:^24.9.2"
     "@types/react": "npm:^19.2.2"
