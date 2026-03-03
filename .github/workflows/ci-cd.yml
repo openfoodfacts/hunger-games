@@ -73,6 +73,9 @@ jobs:
       - name: Build
         run: yarn build
 
+      - name: Deploy
+        run: yarn deploy
+
       - name: Upload pages artifact
         uses: actions/upload-pages-artifact@v4
         with:
