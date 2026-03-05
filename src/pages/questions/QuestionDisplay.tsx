@@ -246,10 +246,10 @@ export default function QuestionDisplay() {
           }
           color="error"
           variant="contained"
-          size="large"
-          sx={{ display: "flex", flexDirection: "column", flexGrow: 1 }}
+          size="medium"
+          startIcon={<DeleteIcon />}
+          sx={{ flexGrow: 1 }}
         >
-          <DeleteIcon />
           {t("questions.no")} ({shortcuts.no})
         </Button>
         <Button
@@ -262,8 +262,8 @@ export default function QuestionDisplay() {
           startIcon={<DoneIcon />}
           color="success"
           variant="contained"
-          size="large"
-          sx={{ display: "flex", flexDirection: "column", flexGrow: 1 }}
+          size="medium"
+          sx={{ flexGrow: 1 }}
         >
           {t("questions.yes")} ({shortcuts.yes})
         </Button>
@@ -275,11 +275,9 @@ export default function QuestionDisplay() {
             question,
           })
         }
-        color="secondary"
-        variant="contained"
-        size="medium"
-        autoFocus
-        sx={{ py: "1rem" }}
+        variant="outlined"
+        size="small"
+        sx={{ mt: 1 }}
       >
         {t("questions.skip")} ({shortcuts.skip})
       </Button>
