@@ -34,13 +34,15 @@ type GetQuestionsResponse = { count: number; questions: QuestionInterface[] };
 
 const robotoff = {
   annotate(insightId: string, annotation: -1 | 0 | 1) {
-    return axios.post(
-      `${ROBOTOFF_API_URL}/insights/annotate`,
-      new URLSearchParams(
-        `insight_id=${insightId}&annotation=${annotation}&update=1`,
-      ),
-      { withCredentials: true },
-    );
+    const body = new URLSearchParams({
+      insight_id: insightId,
+      annotation: annotation.toString(),
+      update: "1",
+    });
+
+    return axios.post(`${ROBOTOFF_API_URL}/insights/annotate`, body, {
+      withCredentials: true,
+    });
   },
 
   async questionsByProductCode(code: string) {
