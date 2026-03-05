@@ -73,7 +73,7 @@ const ZoomableImage = ({
             color: "white",
             backgroundColor: alpha(theme.palette.secondary.main, 0.5),
             bottom: 5,
-            right: 5,
+            left: 5,
           })}
         >
           <OpenInFullIcon />
