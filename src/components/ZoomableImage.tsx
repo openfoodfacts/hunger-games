@@ -26,14 +26,18 @@ type ZoomableImageProps = {
   src: string;
   srcFull?: string;
   zoomIn?: boolean;
+  alt?: string;
+  onLoad?: React.ReactEventHandler<HTMLImageElement>;
   imageProps?: React.ImgHTMLAttributes<HTMLImageElement>;
-} & React.HTMLAttributes<HTMLDivElement>;
+} & Omit<React.HTMLAttributes<HTMLDivElement>, "onLoad">;
 
 const ZoomableImage = ({
   src,
   srcFull,
   zoomIn,
   imageProps,
+  alt = "",
+  onLoad,
   ...other
 }: ZoomableImageProps) => {
   const apiRef = React.useRef<ReactZoomPanPinchRef>(null);
@@ -58,11 +62,11 @@ const ZoomableImage = ({
         {zoomIn ? (
           <TransformWrapper>
             <TransformComponent>
-              <img src={src} alt="" {...imageProps} />
+              <img src={src} alt={alt} onLoad={onLoad} {...imageProps} />
             </TransformComponent>
           </TransformWrapper>
         ) : (
-          <img src={src} alt="" {...imageProps} />
+          <img src={src} alt={alt} onLoad={onLoad} {...imageProps} />
         )}
         <IconButton
           onClick={() => {
@@ -112,7 +116,7 @@ const ZoomableImage = ({
               <TransformComponent>
                 <img
                   src={showFullResolution && srcFull ? srcFull : src}
-                  alt=""
+                  alt={alt}
                   style={{
                     maxHeight: "calc(100vh - 160px )",
                     maxWidth: "100%",
