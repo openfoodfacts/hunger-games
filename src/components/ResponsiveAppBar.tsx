@@ -126,7 +126,7 @@ const MultiPagesButton = ({
         {t(translationKey)}
       </Button>
       <Menu
-        anchorEl={anchorEl.current}
+        anchorEl={() => anchorEl.current}
         open={isOpen}
         onClose={toggleIsOpen}
         sx={{ display: { xs: "none", md: "flex" } }}
