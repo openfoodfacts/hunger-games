@@ -113,22 +113,36 @@ const MultiPagesButton = ({
   toggleIsOpen: () => void;
 }) => {
   const { t } = useTranslation();
-  const anchorEl = React.useRef(null);
+  const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
+
+  React.useEffect(() => {
+    if (!isOpen) setAnchorEl(null);
+  }, [isOpen]);
+
+  const handleOpen = (event: React.MouseEvent<HTMLElement>) => {
+    setAnchorEl(event.currentTarget);
+    if (!isOpen) toggleIsOpen();
+  };
+
+  const handleClose = () => {
+    setAnchorEl(null);
+    if (isOpen) toggleIsOpen();
+  };
+
   return (
     <>
       <Button
-        ref={anchorEl}
         color="inherit"
         key={translationKey}
-        onClick={toggleIsOpen}
+        onClick={handleOpen}
         sx={{ my: 2, display: "block" }}
       >
         {t(translationKey)}
       </Button>
       <Menu
-        anchorEl={anchorEl.current}
+        anchorEl={anchorEl}
         open={isOpen}
-        onClose={toggleIsOpen}
+        onClose={handleClose}
         sx={{ display: { xs: "none", md: "flex" } }}
       >
         {children.map((subPage) => (
