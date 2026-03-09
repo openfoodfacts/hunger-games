@@ -133,7 +133,7 @@ const robotoff = {
       }) as Parameters<Robotoff["insights"]>[0],
     );
   },
-  
+
   questions(
     {
       insightType,
