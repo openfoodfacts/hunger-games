@@ -15,7 +15,7 @@ export const ADDITIONAL_INFO_TRANSLATION = {
     i18nKey: "categories",
     translatedKey: "translatedCategories",
     getLink: (name: string) =>
-      `https://world.openfoodfacts.org/category/${name
+      `https://world.openfoodfacts.org/facets/categories/${name
         .toLowerCase()
         .replaceAll(" ", "-")}`,
   },
@@ -23,7 +23,7 @@ export const ADDITIONAL_INFO_TRANSLATION = {
     i18nKey: "labels",
     translatedKey: "translatedLabels_tags",
     getLink: (name: string) =>
-      `https://world.openfoodfacts.org/label/${name
+      `https://world.openfoodfacts.org/facets/labels/${name
         .toLowerCase()
         .replaceAll(" ", "-")}`,
   },
