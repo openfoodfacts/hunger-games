@@ -1,5 +1,64 @@
 # Changelog
 
+## [1.1.0](https://github.com/openfoodfacts/hunger-games/compare/v1.0.0...v1.1.0) (2026-02-28)
+
+
+### Features
+
+* add german meat, welfare and organic labels to Germany dashboard ([#1348](https://github.com/openfoodfacts/hunger-games/issues/1348)) ([a9efbec](https://github.com/openfoodfacts/hunger-games/commit/a9efbec316be26bbb1d1c8e36ead4e14d586e9d7))
+* Add predictor value filtering for questions ([#1356](https://github.com/openfoodfacts/hunger-games/issues/1356)) ([443face](https://github.com/openfoodfacts/hunger-games/commit/443faceea71f1aee6da98fa6dfe32e2c8ccc2837))
+* add robotoff ingredients ([#1184](https://github.com/openfoodfacts/hunger-games/issues/1184)) ([f953c63](https://github.com/openfoodfacts/hunger-games/commit/f953c6391981a22a83489cf5954bc8fc7905eff2))
+* Allow to add nutriments ([#1094](https://github.com/openfoodfacts/hunger-games/issues/1094)) ([84c0bba](https://github.com/openfoodfacts/hunger-games/commit/84c0bba259a17f4eddc0f5698c32fdf81e40e5c7))
+* Avoid questions without images ([#1333](https://github.com/openfoodfacts/hunger-games/issues/1333)) ([564fcd4](https://github.com/openfoodfacts/hunger-games/commit/564fcd4b0545aaec293adaa973f7cae49a417522))
+* centralize country state across all games using useCountry() hook ([#1382](https://github.com/openfoodfacts/hunger-games/issues/1382)) ([30b0ff3](https://github.com/openfoodfacts/hunger-games/commit/30b0ff3dff719d8918bd9b6ba5f8220110178d51))
+* Make homepage redirect link to easier logo game ([#1295](https://github.com/openfoodfacts/hunger-games/issues/1295)) ([fcbbf40](https://github.com/openfoodfacts/hunger-games/commit/fcbbf40e5ac3b5c0b48ec8556461571a07fbbc0c))
+* New translations for Hunger Games ([#1300](https://github.com/openfoodfacts/hunger-games/issues/1300)) ([39feb30](https://github.com/openfoodfacts/hunger-games/commit/39feb30b66a171d21512b9b4174aa3fa466f58cc))
+* New translations for Hunger Games ([#1301](https://github.com/openfoodfacts/hunger-games/issues/1301)) ([fc5c539](https://github.com/openfoodfacts/hunger-games/commit/fc5c5392405ce724df8268f01327ca3d3d7c12b7))
+* New translations for Hunger Games ([#1347](https://github.com/openfoodfacts/hunger-games/issues/1347)) ([e02299a](https://github.com/openfoodfacts/hunger-games/commit/e02299a8d42c99c42c9cd79cf75000d029c93ba4))
+* replace nutrition facts by webcomponent one ([#1179](https://github.com/openfoodfacts/hunger-games/issues/1179)) ([57461f0](https://github.com/openfoodfacts/hunger-games/commit/57461f081377be457f8c982842a6fbe0dae908e3))
+* switch Hunger Games image reporting/flagging to Nutri-Patrol [#1036](https://github.com/openfoodfacts/hunger-games/issues/1036) ([#1381](https://github.com/openfoodfacts/hunger-games/issues/1381)) ([a110f67](https://github.com/openfoodfacts/hunger-games/commit/a110f672265a2d498b2d559a275403be9224f3b9))
+* Test a first UI for ingredients spellcheck ([#1106](https://github.com/openfoodfacts/hunger-games/issues/1106)) ([4d76ec3](https://github.com/openfoodfacts/hunger-games/commit/4d76ec3c673be537bc9dc799ae8435e25437fa37))
+* up webcomponent to 1.7.0 to add robotoff-ingredient-detection ([#1192](https://github.com/openfoodfacts/hunger-games/issues/1192)) ([4a959b7](https://github.com/openfoodfacts/hunger-games/commit/4a959b7e6f6dc28f191cb5c64b8494a35f96e023))
+* up webcomponent to 1.7.0 to add robotoff-ingredient-detection and fix other names ([4a959b7](https://github.com/openfoodfacts/hunger-games/commit/4a959b7e6f6dc28f191cb5c64b8494a35f96e023))
+* When no no more questions, show child/parent values ([#1349](https://github.com/openfoodfacts/hunger-games/issues/1349)) ([b72b7a1](https://github.com/openfoodfacts/hunger-games/commit/b72b7a1665069c48f10131ab4bc24713a1676980))
+
+
+### Bug Fixes
+
+* 1267 Remove misleading instruction about picture date ([#1361](https://github.com/openfoodfacts/hunger-games/issues/1361)) ([4cf430b](https://github.com/openfoodfacts/hunger-games/commit/4cf430b162368a657a525c23663994ca32d74e9f))
+* 1283 Images section now shows newest images first along with date.  ([#1354](https://github.com/openfoodfacts/hunger-games/issues/1354)) ([75b592e](https://github.com/openfoodfacts/hunger-games/commit/75b592e6f0cd691b14599b67e59e7fb3c386c4fa))
+* Allow Opening Full-Quality Image for Questions ([#1040](https://github.com/openfoodfacts/hunger-games/issues/1040)) ([#1350](https://github.com/openfoodfacts/hunger-games/issues/1350)) ([d631267](https://github.com/openfoodfacts/hunger-games/commit/d63126788542f7eb1e9324fb73808f3a15ac6e98))
+* anchor tag color adapts to light/dark theme ([#1299](https://github.com/openfoodfacts/hunger-games/issues/1299)) ([ece812b](https://github.com/openfoodfacts/hunger-games/commit/ece812b40592353cf34230763ba56c567fb85451))
+* **appbar:** resolve menu not showing at md breakpoint([#1243](https://github.com/openfoodfacts/hunger-games/issues/1243)) ([#1315](https://github.com/openfoodfacts/hunger-games/issues/1315)) ([3142bc5](https://github.com/openfoodfacts/hunger-games/commit/3142bc52c60e717c07331a83b270334acb93960f))
+* Avoid duplicated nutriments ([#1104](https://github.com/openfoodfacts/hunger-games/issues/1104)) ([c510487](https://github.com/openfoodfacts/hunger-games/commit/c510487274eba0bea2bb4faca3d3ad176b2adc74))
+* axios to avoid build crash and fix node version with .nvmrc ([#1180](https://github.com/openfoodfacts/hunger-games/issues/1180)) ([d494d29](https://github.com/openfoodfacts/hunger-games/commit/d494d294124fbd4a6c56b44e59a9abac4082b0e0))
+* Clean nutriments generation ([#1112](https://github.com/openfoodfacts/hunger-games/issues/1112)) ([9fa6f01](https://github.com/openfoodfacts/hunger-games/commit/9fa6f013211f4d8fc70b77c9426d5f1962be957c))
+* copy asset before building ([#1196](https://github.com/openfoodfacts/hunger-games/issues/1196)) ([29934fb](https://github.com/openfoodfacts/hunger-games/commit/29934fb104b910e659b70ea4511af0d073f309c9))
+* fixed issue 1211. Added Moderation link in navbar ([#1357](https://github.com/openfoodfacts/hunger-games/issues/1357)) ([99607fc](https://github.com/openfoodfacts/hunger-games/commit/99607fcea8c16a08a7f9485d251de3cc9800bfaf))
+* fixes for footer - Update DownloadOpenFoodFacts.jsx ([#960](https://github.com/openfoodfacts/hunger-games/issues/960)) ([4e99381](https://github.com/openfoodfacts/hunger-games/commit/4e9938100ac5c54a10a305d03ccc0dadce6b97d3))
+* Fixes issue 1368, added i18n translation for ingredients link in navbar ([7d28c33](https://github.com/openfoodfacts/hunger-games/commit/7d28c33624eddbaf695c46fab4906d9f65d84a07))
+* Fixes issue 1368, added i18n translation for ingredients link in navbar. ([#1369](https://github.com/openfoodfacts/hunger-games/issues/1369)) ([7d28c33](https://github.com/openfoodfacts/hunger-games/commit/7d28c33624eddbaf695c46fab4906d9f65d84a07))
+* **i18n:** add missing translations for similar questions and localize remaining count ([#1364](https://github.com/openfoodfacts/hunger-games/issues/1364)) ([4aab3e2](https://github.com/openfoodfacts/hunger-games/commit/4aab3e253124c6bc1c32d24b34480054eafaecfb))
+* ingredient-spellcheck and ingredient-detection giving 404 page! [#1366](https://github.com/openfoodfacts/hunger-games/issues/1366) ([#1367](https://github.com/openfoodfacts/hunger-games/issues/1367)) ([4931d25](https://github.com/openfoodfacts/hunger-games/commit/4931d25a0766f545a9e6e1b5fbaa4db6b4272967))
+* issue 1343 Increasing number of Images breaks the UI of questions page ([#1344](https://github.com/openfoodfacts/hunger-games/issues/1344)) ([a7bb03b](https://github.com/openfoodfacts/hunger-games/commit/a7bb03b5f00854f805c47ce94dd212528551d12f))
+* logo question annotator ([#1431](https://github.com/openfoodfacts/hunger-games/issues/1431)) ([6d16e06](https://github.com/openfoodfacts/hunger-games/commit/6d16e06a7e9401928966251d3b2ef31ead62f468))
+* make world an empty country code ([#1100](https://github.com/openfoodfacts/hunger-games/issues/1100)) ([dc9c601](https://github.com/openfoodfacts/hunger-games/commit/dc9c601f0ca20e86a94ec2c1864516e97fe68485))
+* Prevent global country update to go back to home page ([#1113](https://github.com/openfoodfacts/hunger-games/issues/1113)) ([db3b743](https://github.com/openfoodfacts/hunger-games/commit/db3b743d71f6364dbfb094b66f57af9a66bd0f74))
+* Rename 'eco-score' to 'green-score' in en.json ([976c034](https://github.com/openfoodfacts/hunger-games/commit/976c03443bd2986c77ab8df406c9a405c7f472e3))
+* replace invalid FilterParams import with FilterState ([#1400](https://github.com/openfoodfacts/hunger-games/issues/1400)) ([5bb0488](https://github.com/openfoodfacts/hunger-games/commit/5bb0488b8c1a587f3a504818f1426116acab8321))
+* replace node-version by node-version-file ([#1183](https://github.com/openfoodfacts/hunger-games/issues/1183)) ([cc92bc7](https://github.com/openfoodfacts/hunger-games/commit/cc92bc74b6555759f09d61a61d11c3274e6f01b6))
+* replace non-existing FilterParams usages with FilterState ([#1405](https://github.com/openfoodfacts/hunger-games/issues/1405)) ([ce69fc4](https://github.com/openfoodfacts/hunger-games/commit/ce69fc43bd57c3fcd3c51b3c703c5f8c02c1530f))
+* resolves issue [#1296](https://github.com/openfoodfacts/hunger-games/issues/1296) ([#1313](https://github.com/openfoodfacts/hunger-games/issues/1313)) ([80cbc87](https://github.com/openfoodfacts/hunger-games/commit/80cbc871c985fe754efc63ce4943e953e68045fc))
+* resolves issue [#1297](https://github.com/openfoodfacts/hunger-games/issues/1297) ([#1312](https://github.com/openfoodfacts/hunger-games/issues/1312)) ([109ce1c](https://github.com/openfoodfacts/hunger-games/commit/109ce1c0f282165fbadb297514ad8fa0b7d4e381))
+* Small rename of menus before a more thorough rework (en.json) ([#1216](https://github.com/openfoodfacts/hunger-games/issues/1216)) ([ffa77f7](https://github.com/openfoodfacts/hunger-games/commit/ffa77f78231038a61e38ee6198b5beed2e89f9e2))
+* **ui:** Fix dashboard sidebar scrolling issue on desktop ([9fd2f80](https://github.com/openfoodfacts/hunger-games/commit/9fd2f80fa3d4a4e8a4559b418acce9bcaf6a285a))
+* **UI:** Fix dashboard sidebar scrolling issue on desktop ([#1335](https://github.com/openfoodfacts/hunger-games/issues/1335)) ([9fd2f80](https://github.com/openfoodfacts/hunger-games/commit/9fd2f80fa3d4a4e8a4559b418acce9bcaf6a285a))
+* update off wc to fix lang problem ([#1195](https://github.com/openfoodfacts/hunger-games/issues/1195)) ([799e40b](https://github.com/openfoodfacts/hunger-games/commit/799e40bad8320c7ee305e9c7b32e6ffe78879e07))
+* update react-router version ([#1402](https://github.com/openfoodfacts/hunger-games/issues/1402)) ([4c1db8e](https://github.com/openfoodfacts/hunger-games/commit/4c1db8efd3a4a40ba8595a06244aae4072c35fcf))
+* Update README.md ([bbfba41](https://github.com/openfoodfacts/hunger-games/commit/bbfba41dcb06bf520f7b2222e95e931d4815f078))
+* use images.openfoodfacts.org to serve images ([#1054](https://github.com/openfoodfacts/hunger-games/issues/1054)) ([440754f](https://github.com/openfoodfacts/hunger-games/commit/440754fb87cf6bab37ac7263a032f8815471edc9))
+* webcomponent language code and update to new version 1.8.3 ([#1193](https://github.com/openfoodfacts/hunger-games/issues/1193)) ([774feab](https://github.com/openfoodfacts/hunger-games/commit/774feab722b0f7baeb900e1b3a0c272ea05f2fef))
+
 ## 1.0.0 (2024-09-26)
 
 ### Features
