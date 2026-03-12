@@ -166,7 +166,9 @@ const MultiPagesButton = ({
 
 const ResponsiveAppBar = () => {
   const { t } = useTranslation();
-  const [anchorElNav, setAnchorElNav] = React.useState<HTMLElement | null>(null);
+  const [anchorElNav, setAnchorElNav] = React.useState<HTMLElement | null>(
+    null,
+  );
   const [isTourOpen, setIsTourOpen] = React.useState(false);
   const [country, setCountry] = useCountry();
   const theme = useTheme();
@@ -182,7 +184,9 @@ const ResponsiveAppBar = () => {
 
   const { isLoggedIn, userName, refresh } = React.useContext(LoginContext);
   const { devMode: isDevMode, visiblePages } = React.useContext(DevModeContext);
-  const [menuOpenState, setMenuOpenState] = React.useState<Record<string, boolean>>({});
+  const [menuOpenState, setMenuOpenState] = React.useState<
+    Record<string, boolean>
+  >({});
 
   const isPageVisible = (page: {
     devModeOnly?: boolean;
@@ -191,7 +195,11 @@ const ResponsiveAppBar = () => {
     url?: string;
   }) => {
     if (page.devModeOnly) {
-      return isDevMode && !!page.url && visiblePages[page.url as keyof typeof visiblePages];
+      return (
+        isDevMode &&
+        !!page.url &&
+        visiblePages[page.url as keyof typeof visiblePages]
+      );
     }
     if (page.mobileOnly) {
       return !isDesktop;
