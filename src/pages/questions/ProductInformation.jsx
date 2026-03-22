@@ -6,6 +6,7 @@ import Divider from "@mui/material/Divider";
 import Checkbox from "@mui/material/Checkbox";
 import Typography from "@mui/material/Typography";
 import FormControlLabel from "@mui/material/FormControlLabel";
+import Stack from "@mui/material/Stack";
 import EditIcon from "@mui/icons-material/Edit";
 import VisibilityIcon from "@mui/icons-material/Visibility";
 import Table from "@mui/material/Table";
@@ -64,52 +65,43 @@ const ProductInformation = () => {
     <Box>
       {/* Main information about the product */}
       <Typography>{productData?.productName}</Typography>
-      <Button
-        size="small"
-        component={Link}
-        target="_blank"
-        href={offService.getProductUrl(question.barcode)}
-        variant="outlined"
-        startIcon={<VisibilityIcon />}
-        sx={{ minWidth: 100 }}
-      >
-        {t("questions.view")}
-      </Button>
-      <Button
-        size="small"
-        component={Link}
-        target="_blank"
-        href={offService.getProductEditUrl(question.barcode)}
-        variant="contained"
-        startIcon={<EditIcon />}
-        sx={{ ml: 2, minWidth: 100 }}
-      >
-        {t("questions.edit")}
-      </Button>
-      <Button
-        size="small"
-        component={Link}
-        target="_blank"
-        href={offService.getLogoCropsByBarcodeUrl(question.barcode)}
-        variant="contained"
-        startIcon={<EditIcon />}
-        sx={{ ml: 2, minWidth: 100 }}
-      >
-        {t("insights.view_crops_for_this_product")}
-      </Button>
-      {
-        /* Other questions */
-
-        true && (
-          <>
-            <Divider sx={{ my: 1 }} />
-            <Typography variant="h5">
-              {t("questions.other_questions")}
-            </Typography>
-            <ProductOtherQuestions question={question} />
-          </>
-        )
-      }
+      <Stack direction="row" spacing={{ xs: 1, sm: 2 }} sx={{ mb: 1 }}>
+        <Button
+          size="small"
+          component={Link}
+          target="_blank"
+          href={offService.getProductUrl(question.barcode)}
+          variant="outlined"
+          startIcon={<VisibilityIcon />}
+          sx={{ flex: 1 }}
+        >
+          {t("questions.view")}
+        </Button>
+        <Button
+          size="small"
+          component={Link}
+          target="_blank"
+          href={offService.getProductEditUrl(question.barcode)}
+          variant="contained"
+          startIcon={<EditIcon />}
+          sx={{ flex: 1 }}
+        >
+          {t("questions.edit")}
+        </Button>
+      </Stack>
+      <Stack direction="row" spacing={{ xs: 1, sm: 2 }}>
+        <Button
+          size="small"
+          component={Link}
+          target="_blank"
+          href={offService.getLogoCropsByBarcodeUrl(question.barcode)}
+          variant="contained"
+          startIcon={<EditIcon />}
+          sx={{ flex: 1 }}
+        >
+          {t("insights.view_crops_for_this_product")}
+        </Button>
+      </Stack>
       <Divider sx={{ my: 1 }} />
 
       {/* Image display section */}
@@ -214,7 +206,7 @@ const ProductInformation = () => {
             const value =
               (translatedKey && productData?.[translatedKey]) ??
               productData?.[infoKey] ??
-              "?";
+              "Unknown";
 
             return (
               <TableRow key={infoKey}>
