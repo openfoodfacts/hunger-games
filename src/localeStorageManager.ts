@@ -89,7 +89,7 @@ export const getPageCustomization: () => {
 };
 
 /** Questions page: returns a boolean for hiding the images. Uses local storage.  */
-export const getHideImages = () => {
+export const getHideImages = (): boolean => {
   const settings = localSettings.fetch();
   return settings[localSettingsKeys.hideImages] ?? true;
 };
