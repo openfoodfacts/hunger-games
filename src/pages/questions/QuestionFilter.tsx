@@ -6,7 +6,7 @@ import MenuItem from "@mui/material/MenuItem";
 import Stack from "@mui/material/Stack";
 import Chip from "@mui/material/Chip";
 import Box from "@mui/material/Box";
-import { useTheme } from "@mui/material/styles";
+import { SxProps, Theme, useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import IconButton from "@mui/material/IconButton";
 
@@ -112,7 +112,7 @@ const getChipsParams = (
     },
   ].filter((item) => item.display);
 
-export const QuestionFilter = () => {
+export const QuestionFilter = ({ sx }: { sx?: SxProps<Theme> }) => {
   const { t } = useTranslation();
   const theme = useTheme();
   const isDesktop = useMediaQuery(theme.breakpoints.up("md"));
@@ -132,7 +132,7 @@ export const QuestionFilter = () => {
   );
 
   return (
-    <Box>
+    <Box sx={sx}>
       {/* Chip indicating the current state of the filtering */}
       <Stack direction="row" spacing={1} alignItems="center">
         <TextField
