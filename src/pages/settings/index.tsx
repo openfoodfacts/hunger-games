@@ -1,5 +1,5 @@
 import * as React from "react";
-import messages from "../../i18n/messages";
+
 import TextField from "@mui/material/TextField";
 import MenuItem from "@mui/material/MenuItem";
 import Typography from "@mui/material/Typography";
@@ -12,11 +12,11 @@ import Divider from "@mui/material/Divider";
 import Brightness4Icon from "@mui/icons-material/Brightness4";
 import Brightness7Icon from "@mui/icons-material/Brightness7";
 
-import Loader from "../loader";
-
 import { useTheme } from "@mui/material/styles";
-
 import { useTranslation } from "react-i18next";
+
+import Loader from "../loader";
+import messages from "../../i18n/messages";
 
 import DevModeContext from "../../contexts/devMode";
 import ColorModeContext from "../../contexts/colorMode";
@@ -36,27 +36,29 @@ export default function Settings() {
 
   const [country, setCountry] = useCountry();
 
-  const handleDevModeChange = (event) => {
-    localSettings.update(localSettingsKeys.isDevMode, event.target.checked);
-    setDevMode(event.target.checked);
+  const handleDevModeChange = (_: React.SyntheticEvent, checked: boolean) => {
+    localSettings.update(localSettingsKeys.isDevMode, checked);
+    setDevMode(checked);
   };
 
-  const handleVisiblePagesChange = (pageUrl) => (event) => {
-    const newVisiblePages = {
-      ...visiblePages,
-      [pageUrl]: event.target.checked,
+  const handleVisiblePagesChange =
+    (pageUrl: string) => (_: React.SyntheticEvent, checked: boolean) => {
+      const newVisiblePages = { ...visiblePages, [pageUrl]: checked };
+      localSettings.update(localSettingsKeys.visiblePages, newVisiblePages);
+      setVisiblePages(newVisiblePages);
     };
-    localSettings.update(localSettingsKeys.visiblePages, newVisiblePages);
-    setVisiblePages(newVisiblePages);
-  };
 
-  const handleLangChange = (e) => {
+  const handleLangChange: React.ChangeEventHandler<
+    HTMLInputElement | HTMLTextAreaElement
+  > = (e) => {
     localSettings.update(localSettingsKeys.language, e.target.value);
     i18n.changeLanguage(e.target.value);
     setLanguage(e.target.value);
   };
 
-  const handleCountryChange = (e) => {
+  const handleCountryChange: React.ChangeEventHandler<
+    HTMLInputElement | HTMLTextAreaElement
+  > = (e) => {
     setCountry(e.target.value, "global");
   };
 
