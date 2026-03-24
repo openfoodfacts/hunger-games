@@ -113,17 +113,24 @@ export const getLang = () => {
   );
 };
 
-export const getColor = (): "light" | "dark" => {
+export const getStoredColorPreference = (): "light" | "dark" | undefined => {
   const settings = localSettings.fetch<"light" | "dark">();
+  return settings[localSettingsKeys.colorMode];
+};
+
+
+export const getColor = (): "light" | "dark" => {
+  const storedPreference = getStoredColorPreference();
 
   const browserSetting =
     window.matchMedia &&
-    window.matchMedia("(prefers-color-scheme: dark)").matches
+      window.matchMedia("(prefers-color-scheme: dark)").matches
       ? "dark"
       : "light";
 
-  return settings[localSettingsKeys.colorMode] || browserSetting || "light";
+  return storedPreference || browserSetting || "light";
 };
+
 
 const FAVORITE_STORAGE_KEY = "hunger-game-favorites";
 
