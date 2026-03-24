@@ -185,7 +185,6 @@ export default function App() {
           return newMode;
         });
       },
-
     }),
     [],
   );
@@ -205,7 +204,6 @@ export default function App() {
       mediaQuery.removeEventListener("change", handleChange);
     };
   }, []);
-
 
   const theme = createTheme(getToken(mode));
 
