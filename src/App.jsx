@@ -12,9 +12,11 @@ import {
   getColor,
   getIsDevMode,
   getVisiblePages,
+  getStoredColorPreference,
   localSettingsKeys,
   localSettings,
 } from "./localeStorageManager";
+
 import LoginContext from "./contexts/login";
 import off from "./off";
 import { IS_DEVELOPMENT_MODE, OFF_URL } from "./const";
@@ -186,6 +188,22 @@ export default function App() {
     }),
     [],
   );
+
+  React.useEffect(() => {
+    const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
+
+    const handleChange = (event) => {
+      if (!getStoredColorPreference()) {
+        setMode(event.matches ? "dark" : "light");
+      }
+    };
+
+    mediaQuery.addEventListener("change", handleChange);
+
+    return () => {
+      mediaQuery.removeEventListener("change", handleChange);
+    };
+  }, []);
 
   const theme = createTheme(getToken(mode));
 
