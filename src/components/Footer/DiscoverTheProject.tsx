@@ -1,5 +1,4 @@
-import { Button, Chip, Divider, Typography } from "@mui/material";
-import { Box } from "@mui/system";
+import { Box, Button, Chip, Divider, Typography } from "@mui/material";
 import { useTranslation } from "react-i18next";
 
 const discover = [

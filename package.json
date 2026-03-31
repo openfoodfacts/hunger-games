@@ -13,7 +13,6 @@
     "@mui/x-data-grid": "^6.18.0",
     "@openfoodfacts/openfoodfacts-nodejs": "2.0.0-alpha.29",
     "@openfoodfacts/openfoodfacts-webcomponents": "^1.15.1",
-    "@reduxjs/toolkit": "^1.9.7",
     "@tanstack/react-query": "^5.75.1",
     "axios": "^1.13.5",
     "i18next": "^23.6.0",
@@ -29,24 +28,21 @@
     "web-vitals": "^5.1.0"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "^3.3.1",
     "@eslint/js": "^9.37.0",
     "@types/lodash": "^4.17.23",
-    "@types/node": "^24.9.2",
+    "@types/node": "^25.5.0",
     "@types/react": "^19.2.2",
     "@types/react-dom": "^19.2.2",
-    "@typescript-eslint/eslint-plugin": "^8.46.2",
-    "@typescript-eslint/parser": "^8.46.2",
     "@vitejs/plugin-react": "^5.1.2",
     "eslint": "^9.39.1",
-    "eslint-plugin-prettier": "^5.5.4",
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^7.0.1",
     "eslint-plugin-react-refresh": "^0.4.24",
     "globals": "^16.5.0",
     "husky": "^9.1.7",
+    "knip": "^6.1.0",
     "prettier": "^3.6.2",
-    "typescript": "^5.9.3",
+    "typescript": "^6.0.2",
     "typescript-eslint": "^8.46.2",
     "vite": "^7.3.0",
     "vite-plugin-static-copy": "^3.1.4"
@@ -61,7 +57,8 @@
     "test": "react-scripts test",
     "deploy": "bash deploy.sh",
     "lint": "prettier --check . && eslint .",
-    "prepare": "husky"
+    "prepare": "husky",
+    "knip": "knip"
   },
   "eslintConfig": {
     "extends": [

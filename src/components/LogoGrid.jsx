@@ -15,7 +15,7 @@ import { Link } from "react-router";
 import { useTranslation } from "react-i18next";
 import EditIcon from "@mui/icons-material/Edit";
 import LinkIcon from "@mui/icons-material/Link";
-import { useTheme } from "@mui/system";
+import { useTheme } from "@mui/material/styles";
 import LogoForm from "../components/LogoForm";
 import { IS_DEVELOPMENT_MODE } from "../const";
 import robotoff from "../robotoff";
