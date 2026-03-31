@@ -1,5 +1,4 @@
-import { Chip, Divider, Step, StepLabel, Stepper } from "@mui/material";
-import { Box } from "@mui/system";
+import { Box, Chip, Divider, Step, StepLabel, Stepper } from "@mui/material";
 import Link from "@mui/material/Link";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import { useTranslation } from "react-i18next";
