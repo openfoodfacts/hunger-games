@@ -32,7 +32,7 @@
     "@eslint/eslintrc": "^3.3.1",
     "@eslint/js": "^9.37.0",
     "@types/lodash": "^4.17.23",
-    "@types/node": "^24.9.2",
+    "@types/node": "^25.5.0",
     "@types/react": "^19.2.2",
     "@types/react-dom": "^19.2.2",
     "@typescript-eslint/eslint-plugin": "^8.46.2",
@@ -45,8 +45,9 @@
     "eslint-plugin-react-refresh": "^0.4.24",
     "globals": "^16.5.0",
     "husky": "^9.1.7",
+    "knip": "^6.1.0",
     "prettier": "^3.6.2",
-    "typescript": "^5.9.3",
+    "typescript": "^6.0.2",
     "typescript-eslint": "^8.46.2",
     "vite": "^7.3.0",
     "vite-plugin-static-copy": "^3.1.4"
@@ -61,7 +62,8 @@
     "test": "react-scripts test",
     "deploy": "bash deploy.sh",
     "lint": "prettier --check . && eslint .",
-    "prepare": "husky"
+    "prepare": "husky",
+    "knip": "knip"
   },
   "eslintConfig": {
     "extends": [
