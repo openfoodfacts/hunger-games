@@ -4500,7 +4500,7 @@ __metadata:
     globals: "npm:^16.5.0"
     husky: "npm:^9.1.7"
     i18next: "npm:^23.6.0"
-    knip: "npm:^6.1.0"
+    knip: "npm:^6.1.1"
     lodash: "npm:^4.17.21"
     prettier: "npm:^3.6.2"
     react: "npm:^19.2.0"
@@ -5120,9 +5120,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"knip@npm:^6.1.0":
-  version: 6.1.0
-  resolution: "knip@npm:6.1.0"
+"knip@npm:^6.1.1":
+  version: 6.1.1
+  resolution: "knip@npm:6.1.1"
   dependencies:
     "@nodelib/fs.walk": "npm:^1.2.3"
     fast-glob: "npm:^3.3.3"
@@ -5142,7 +5142,7 @@ __metadata:
   bin:
     knip: bin/knip.js
     knip-bun: bin/knip-bun.js
-  checksum: 10/e748ca17957216498fce0789ae5126e836063144682419998139c89b8ab56ff4d0887056f90572390db97d06e80f96553d772c5077883c871f83cf0fcd8db992
+  checksum: 10/85381bd83956ecda6ad30a61229f8a3d9510053d4bece132334158bbda827047f72da294ad54e841f98da69ead1aec29cbe80c287568f11c3d97490ed36b17c5
   languageName: node
   linkType: hard
 
