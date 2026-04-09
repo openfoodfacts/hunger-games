@@ -52,7 +52,7 @@ export default function Settings() {
     HTMLInputElement | HTMLTextAreaElement
   > = (e) => {
     localSettings.update(localSettingsKeys.language, e.target.value);
-    i18n.changeLanguage(e.target.value);
+    void i18n.changeLanguage(e.target.value);
     setLanguage(e.target.value);
   };
 
