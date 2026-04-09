@@ -100,17 +100,26 @@ export const getTour = () => {
 };
 
 export const getLang = () => {
-  const settings = localSettings.fetch();
-
+  // 1. Check URL params
   const urlParams = new URLSearchParams(window.location.search);
   const urlLanguage = urlParams.has("language") && urlParams.get("language");
+  if (urlLanguage) {
+    return urlLanguage;
+  }
 
-  return (
-    urlLanguage ||
-    settings[localSettingsKeys.language] ||
-    // @ts-expect-error Property 'userLanguage' does not exist on type 'Navigator'.
-    (navigator.language || navigator.userLanguage).split("-")[0]
-  );
+  // 2. Check local storage
+  const settings = localSettings.fetch<string | undefined>();
+  const settingsLanguage = settings[localSettingsKeys.language];
+  if (settingsLanguage) {
+    return settingsLanguage;
+  }
+
+  // 3. Use browser language
+  if (navigator && navigator.language) {
+    return navigator.language.split("-")[0];
+  }
+
+  return undefined;
 };
 
 export const getStoredColorPreference = (): "light" | "dark" | undefined => {
