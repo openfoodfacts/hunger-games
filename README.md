@@ -64,6 +64,29 @@ Hunger Games is built upon the following projects. Contributions to these projec
 - Install libraries: `yarn install`
 - run the project locally `yarn dev`
 
+#### Use local version of openfoodfacts-webcomponents
+
+Assuming both `openfoodfacts-webcomponents` and `hunger-sames` repositories have been cloned in the same parent folder:
+```
+parent-folder/
+|-hunger-games/
+|-openfoodfacts-webcomponents/
+|--package.json
+```
+
+- In openfoodfacts-webcomponents/web-components, run: `npm run build`
+
+- In hunger-games, in the file `package.json`, replace:
+>    "@openfoodfacts/openfoodfacts-webcomponents": "^1.15.1",
+
+by (update path if needed):
+>    "@openfoodfacts/openfoodfacts-webcomponents": "file:../openfoodfacts-webcomponents/web-components",
+
+
+- Install libraries: `yarn install`
+- run the project locally `yarn dev`
+
+
 #### Build with Yarn
 
 ```
