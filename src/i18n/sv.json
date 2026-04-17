@@ -12,8 +12,8 @@
           "description": "Hitta alla logotyper som matchar den givna logotypen"
         },
         "green_score": {
-          "title": "Eco-score",
-          "description": "Annotate the questions with the highest value"
+          "title": "Miljöpoäng",
+          "description": "Annotera frågorna med högst värde"
         }
       }
     },
@@ -379,7 +379,7 @@
     "correct": "Korrekt ({{label}})"
   },
   "green-score": {
-    "description": "Here is a summary of questions that could improve Eco-Score computation",
+    "description": "Här är en sammanfattning av frågorna som kan förbättra beräkningen av miljöpoäng",
     "countryLabel": "Land"
   },
   "ingredients": {
