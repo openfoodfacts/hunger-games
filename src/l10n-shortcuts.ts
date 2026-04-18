@@ -6,12 +6,7 @@ type Shortcuts = {
   skip: string;
 };
 
-type ShortcutLocalization = {
-  en: Shortcuts;
-  [locale: string]: Partial<Shortcuts>;
-};
-
-const SHORTCUT_LOCALISATION = {
+const SHORTCUT_LOCALISATION: Record<string, Shortcuts> = {
   en: {
     yes: "y",
     no: "n",
@@ -25,8 +20,12 @@ const SHORTCUT_LOCALISATION = {
 };
 
 export const getShortcuts = (lang?: string): Shortcuts => {
-  return {
-    ...SHORTCUT_LOCALISATION.en,
-    ...SHORTCUT_LOCALISATION[lang ?? getLang()],
-  };
+  const base: Shortcuts = SHORTCUT_LOCALISATION.en;
+  // Ensure we never use undefined as an index
+  const resolvedLang = lang ?? getLang() ?? "en";
+  const local = SHORTCUT_LOCALISATION[resolvedLang];
+  if (local) {
+    return { ...base, ...local };
+  }
+  return base;
 };

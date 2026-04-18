@@ -1,6 +1,4 @@
-import axios, { AxiosResponse } from "axios";
-
-type TagType = "categories" | "labels" | "brands";
+import axios, {} from "axios";
 
 export type TaxonomyItem = {
   /**
@@ -47,7 +45,7 @@ export default async function getTaxonomy(
   const tagtype =
     categoryTranslator[taxonomy as keyof typeof categoryTranslator];
   if (!tagtype || !tag) {
-    return {};
+    return {} as Record<string, TaxonomyItem>;
   }
   return await axios
     .get(
@@ -55,5 +53,5 @@ export default async function getTaxonomy(
         languages && languages.length > 0 ? `&lc=${languages.join(",")}` : ""
       }`,
     )
-    .then((response) => response.data);
+    .then((response) => response.data as Record<string, TaxonomyItem>);
 }

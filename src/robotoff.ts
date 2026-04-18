@@ -34,7 +34,7 @@ export type FilterState = {
 type GetQuestionsResponse = { count: number; questions: QuestionInterface[] };
 
 const robotoffClient = new Robotoff(
-  (input, init) => fetch(input, { ...init, credentials: "include" }),
+  (input: RequestInfo, init?: RequestInit) => fetch(input, { ...init, credentials: "include" }),
   { baseUrl: ROBOTOFF_API_URL },
 );
 
