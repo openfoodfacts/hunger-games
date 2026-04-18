@@ -30,29 +30,13 @@ export const RobotoffNutrientExtraction = ({
   productCode?: string;
   countryCode?: string;
 }) => {
-  const setRef = React.useCallback(
-    (element: any) => {
-      if (element) {
-        // Set the property directly on the element
-        if (countryCode) {
-          element.countryCode = countryCode;
-          element.setAttribute("country-codes", countryCode);
-        } else {
-          element.countryCode = undefined;
-          element.removeAttribute("country-codes");
-        }
-      }
-    },
-    [countryCode],
-  );
-
   return (
     <robotoff-nutrient-extraction
-      ref={setRef}
       display-product-link
       product-code={productCode}
+      country-codes={countryCode}
       key={`${productCode}-${countryCode || "all"}`}
-    ></robotoff-nutrient-extraction>
+    />
   );
 };
 export const RobotoffIngredientSpellcheck = () => {
