@@ -70,7 +70,9 @@ export function useRobotoffPredictions() {
       void axios
         .get<{
           product?: ProductType;
-        }>(`https://world.openfoodfacts.org/api/v2/product/${code}.json?fields=serving_size,nutriments,images`)
+        }>(
+          `https://world.openfoodfacts.org/api/v2/product/${code}.json?fields=serving_size,nutriments,images`,
+        )
         .then(({ data }) => {
           const product =
             data && typeof data === "object" && "product" in data
