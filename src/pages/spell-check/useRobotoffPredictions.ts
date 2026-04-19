@@ -68,11 +68,14 @@ export function useRobotoffPredictions() {
     barecodeToImport.forEach((code) => {
       setOffData((prev) => ({ ...prev, [code]: "loading" }));
       void axios
-        .get<{ product?: ProductType }>(
-          `https://world.openfoodfacts.org/api/v2/product/${code}.json?fields=serving_size,nutriments,images`,
-        )
+        .get<{
+          product?: ProductType;
+        }>(`https://world.openfoodfacts.org/api/v2/product/${code}.json?fields=serving_size,nutriments,images`)
         .then(({ data }) => {
-          const product = data && typeof data === "object" && "product" in data ? data.product : undefined;
+          const product =
+            data && typeof data === "object" && "product" in data
+              ? data.product
+              : undefined;
           setOffData((prev) => ({ ...prev, [code]: product as ProductType }));
         });
     });

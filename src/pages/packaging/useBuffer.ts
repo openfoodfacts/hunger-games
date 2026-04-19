@@ -95,7 +95,11 @@ export const useBuffer = ({
           products = [data.product];
         }
         setData(products);
-        if (typeof data.count === "number" && typeof data.page_size === "number" && data.page_size > 0) {
+        if (
+          typeof data.count === "number" &&
+          typeof data.page_size === "number" &&
+          data.page_size > 0
+        ) {
           setMaxPage(Math.floor(data.count / data.page_size) + 1);
         } else {
           setMaxPage(1);

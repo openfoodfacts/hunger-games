@@ -1,5 +1,3 @@
-
-
 import QuestionFilter from "../../components/QuestionFilter";
 import QuestionDisplay from "./QuestionDisplay";
 import ProductInformation from "./ProductInformation";

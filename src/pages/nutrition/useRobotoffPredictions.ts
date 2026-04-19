@@ -66,10 +66,7 @@ export function useRobotoffPredictions(partiallyFilled: boolean) {
             }
             return {
               ...prev,
-              data: [
-                ...prev.data,
-                ...((data.insights as InsightType[]) ?? []),
-              ],
+              data: [...prev.data, ...((data.insights as InsightType[]) ?? [])],
             };
           }
           return {
@@ -100,14 +97,18 @@ export function useRobotoffPredictions(partiallyFilled: boolean) {
         )
         .then(({ data: { product } }) => {
           // Only assign if product is an object (not null, not array, not string)
-          if (product && typeof product === "object" && !Array.isArray(product)) {
+          if (
+            product &&
+            typeof product === "object" &&
+            !Array.isArray(product)
+          ) {
             setOffData((prev) => ({ ...prev, [code]: product as ProductType }));
           } else {
             setOffData((prev) => ({ ...prev, [code]: undefined }));
           }
         });
     });
-    }, [insightIndex, insights.data, offData]);
+  }, [insightIndex, insights.data, offData]);
 
   const nextItem = React.useCallback(() => {
     setInsightIndex((p) => p + 1);

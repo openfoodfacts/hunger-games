@@ -9,7 +9,10 @@ import { Option } from "../../hooks/useOptions";
 type CustomProps = {
   options: Option[];
   value: Option | null;
-  onChange: (event: React.SyntheticEvent<Element, Event>, value: Option | null) => void;
+  onChange: (
+    event: React.SyntheticEvent<Element, Event>,
+    value: Option | null,
+  ) => void;
 };
 
 /**
@@ -17,7 +20,10 @@ type CustomProps = {
  * @param synonyms
  * @param motif
  */
-const firstSynonymMatching = (synonyms: string[] = [], motif: string): string | undefined => {
+const firstSynonymMatching = (
+  synonyms: string[] = [],
+  motif: string,
+): string | undefined => {
   if (!motif) return undefined;
   const normalizedMotif = motif
     .toLowerCase()
@@ -75,7 +81,12 @@ type RowProps = {
   packagingMaterials: Option[];
   packagingShapes: Option[];
   packagingRecycling: Option[];
-  updateRow: (row: { material?: string | null; number?: string | null; recycling?: string | null; shape?: string | null }) => void;
+  updateRow: (row: {
+    material?: string | null;
+    number?: string | null;
+    recycling?: string | null;
+    shape?: string | null;
+  }) => void;
   material?: string | null;
   number_of_units?: string | null;
   recycling?: string | null;
@@ -107,8 +118,8 @@ const Row: React.FC<RowProps> = (props) => {
     setInnerNumber(number);
   }, [number]);
 
-  const [innerRecycling, setInnerRecycling] = React.useState<Option | null>(() =>
-    getOption(packagingRecycling, recycling),
+  const [innerRecycling, setInnerRecycling] = React.useState<Option | null>(
+    () => getOption(packagingRecycling, recycling),
   );
   React.useEffect(() => {
     setInnerRecycling(getOption(packagingRecycling, recycling));

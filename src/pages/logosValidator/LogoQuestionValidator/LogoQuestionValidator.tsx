@@ -25,7 +25,6 @@ import { LogoQuestionCard } from "./LogoQuestionCard";
 function LogoQuestionValidator() {
   const { t } = useTranslation();
 
-
   type ControlledState = {
     imageSize: number | string;
     zoomOnLogo: boolean | string;
@@ -39,9 +38,10 @@ function LogoQuestionValidator() {
     {},
   ) as [ControlledState, React.Dispatch<React.SetStateAction<ControlledState>>];
 
-  const imageSize = typeof controlledState.imageSize === "number"
-    ? controlledState.imageSize
-    : Number.parseInt(controlledState.imageSize);
+  const imageSize =
+    typeof controlledState.imageSize === "number"
+      ? controlledState.imageSize
+      : Number.parseInt(controlledState.imageSize);
   const zoomOnLogo =
     typeof controlledState.zoomOnLogo === "boolean"
       ? controlledState.zoomOnLogo

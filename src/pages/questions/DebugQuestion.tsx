@@ -24,20 +24,39 @@ const fetchData = (insightId?: string) => async () => {
   }
   const response = await robotoff.insightDetail(insightId);
 
-  if (!response || typeof response !== 'object' || !('data' in response)) {
+  if (!response || typeof response !== "object" || !("data" in response)) {
     return null;
   }
 
   const data = response.data as Record<string, unknown>;
-  let bounding_box = (data?.bounding_box as [number, number, number, number] | undefined);
-  const source_image = typeof data?.source_image === 'string' ? data.source_image : undefined;
-  const logo_id = typeof (data?.data && (data.data as Record<string, unknown>).logo_id) === 'string' ? (data.data as Record<string, unknown>).logo_id : undefined;
+  let bounding_box = data?.bounding_box as
+    | [number, number, number, number]
+    | undefined;
+  const source_image =
+    typeof data?.source_image === "string" ? data.source_image : undefined;
+  const logo_id =
+    typeof (data?.data && (data.data as Record<string, unknown>).logo_id) ===
+    "string"
+      ? (data.data as Record<string, unknown>).logo_id
+      : undefined;
 
   if (source_image && logo_id && !bounding_box) {
     const logoData = await robotoff.getLogosImages([logo_id]);
-    const logosArr = logoData?.data && Array.isArray((logoData.data as { logos: Array<{ bounding_box?: [number, number, number, number] }> }).logos)
-      ? (logoData.data as { logos: Array<{ bounding_box?: [number, number, number, number] }> }).logos
-      : [];
+    const logosArr =
+      logoData?.data &&
+      Array.isArray(
+        (
+          logoData.data as {
+            logos: Array<{ bounding_box?: [number, number, number, number] }>;
+          }
+        ).logos,
+      )
+        ? (
+            logoData.data as {
+              logos: Array<{ bounding_box?: [number, number, number, number] }>;
+            }
+          ).logos
+        : [];
     bounding_box = logosArr[0]?.bounding_box;
   }
 

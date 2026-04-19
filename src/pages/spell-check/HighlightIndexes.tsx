@@ -1,5 +1,3 @@
-
-
 interface HighlightItem {
   color: string;
   index: number;

@@ -101,8 +101,16 @@ const Page = () => {
     {},
   );
   let searchState: { creator?: string; code?: string } = {};
-  if (Array.isArray(urlParamsResult) && urlParamsResult.length > 0 && typeof urlParamsResult[0] === "object" && urlParamsResult[0] !== null) {
-    const { creator, code } = urlParamsResult[0] as { creator?: string; code?: string };
+  if (
+    Array.isArray(urlParamsResult) &&
+    urlParamsResult.length > 0 &&
+    typeof urlParamsResult[0] === "object" &&
+    urlParamsResult[0] !== null
+  ) {
+    const { creator, code } = urlParamsResult[0] as {
+      creator?: string;
+      code?: string;
+    };
     searchState = { creator, code };
   }
 
@@ -114,16 +122,24 @@ const Page = () => {
     country: countryId,
   });
 
-  const product: Product | null = Array.isArray(data) && data.length > 0 && typeof data[0] === "object" && data[0] !== null ? (data[0] as Product) : null;
+  const product: Product | null =
+    Array.isArray(data) &&
+    data.length > 0 &&
+    typeof data[0] === "object" &&
+    data[0] !== null
+      ? (data[0] as Product)
+      : null;
   React.useEffect(() => {
     if (product && Array.isArray(product.packagings)) {
-      const newRows: PackagingRow[] = product.packagings.map((item: Partial<PackagingRow>, index: number) => ({
-        id: index,
-        material: item.material ?? null,
-        number: item.number ?? null,
-        recycling: item.recycling ?? null,
-        shape: item.shape ?? null,
-      }));
+      const newRows: PackagingRow[] = product.packagings.map(
+        (item: Partial<PackagingRow>, index: number) => ({
+          id: index,
+          material: item.material ?? null,
+          number: item.number ?? null,
+          recycling: item.recycling ?? null,
+          shape: item.shape ?? null,
+        }),
+      );
       setRows(newRows);
       setInnerRows(newRows);
     }
@@ -135,7 +151,9 @@ const Page = () => {
   return (
     <React.Suspense fallback={<Loader />}>
       <Stack direction="row" spacing={1} sx={{ overflow: "auto" }}>
-        {product && Array.isArray(product.images) && typeof product.code === "string"
+        {product &&
+        Array.isArray(product.images) &&
+        typeof product.code === "string"
           ? getImagesUrls(product.images, product.code).map((src: string) => (
               <ZoomableImage
                 key={src}
@@ -184,8 +202,8 @@ const Page = () => {
                     updateRow={(toUpsert: Partial<PackagingRow>) => {
                       setInnerRows((prev) =>
                         prev.map((r) =>
-                          r.id !== row.id ? r : { ...r, ...toUpsert }
-                        )
+                          r.id !== row.id ? r : { ...r, ...toUpsert },
+                        ),
                       );
                     }}
                     {...row}
@@ -228,7 +246,10 @@ const Page = () => {
         >
           <Button
             sx={{ width: 150 }}
-            onClick={() => { next(); return undefined; }}
+            onClick={() => {
+              next();
+              return undefined;
+            }}
             variant="contained"
           >
             Skip
