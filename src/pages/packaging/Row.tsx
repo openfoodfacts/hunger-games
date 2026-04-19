@@ -9,7 +9,7 @@ import { Option } from "../../hooks/useOptions";
 type CustomProps = {
   options: Option[];
   value: Option | null;
-  onChange: any;
+  onChange: (event: React.SyntheticEvent<Element, Event>, value: Option | null) => void;
 };
 
 /**
@@ -17,7 +17,8 @@ type CustomProps = {
  * @param synonyms
  * @param motif
  */
-const firstSynonymMatching = (synonyms, motif) => {
+const firstSynonymMatching = (synonyms: string[] = [], motif: string): string | undefined => {
+  if (!motif) return undefined;
   const normalizedMotif = motif
     .toLowerCase()
     .normalize("NFD")
@@ -59,50 +60,61 @@ const CustomAutoComplet = (props: CustomProps) => {
   );
 };
 
-const getOption = (options: Option[], key: string | null) => {
+const getOption = (options: Option[], key: string | null): Option | null => {
   if (!key) {
     return null;
   }
   const index = options.findIndex((option) => option.value === key);
-
   if (index >= 0) {
     return options[index];
   }
   return null;
 };
 
-const Row = (props) => {
+type RowProps = {
+  packagingMaterials: Option[];
+  packagingShapes: Option[];
+  packagingRecycling: Option[];
+  updateRow: (row: { material?: string | null; number?: string | null; recycling?: string | null; shape?: string | null }) => void;
+  material?: string | null;
+  number_of_units?: string | null;
+  recycling?: string | null;
+  shape?: string | null;
+  number?: string | null;
+};
+
+const Row: React.FC<RowProps> = (props) => {
   const {
     packagingMaterials,
     packagingShapes,
     packagingRecycling,
     updateRow,
     material = null,
-    number_of_units: number = null,
     recycling = null,
     shape = null,
+    number = null,
   } = props;
 
-  const [innerMaterial, setInnerMaterial] = React.useState(() =>
+  const [innerMaterial, setInnerMaterial] = React.useState<Option | null>(() =>
     getOption(packagingMaterials, material),
   );
   React.useEffect(() => {
     setInnerMaterial(getOption(packagingMaterials, material));
   }, [material, packagingMaterials]);
 
-  const [innerNumber, setInnerNumber] = React.useState(number);
+  const [innerNumber, setInnerNumber] = React.useState<string | null>(number);
   React.useEffect(() => {
     setInnerNumber(number);
   }, [number]);
 
-  const [innerRecycling, setInnerRecycling] = React.useState(() =>
+  const [innerRecycling, setInnerRecycling] = React.useState<Option | null>(() =>
     getOption(packagingRecycling, recycling),
   );
   React.useEffect(() => {
     setInnerRecycling(getOption(packagingRecycling, recycling));
   }, [packagingRecycling, recycling]);
 
-  const [innerShape, setInnerShape] = React.useState(() =>
+  const [innerShape, setInnerShape] = React.useState<Option | null>(() =>
     getOption(packagingShapes, shape),
   );
   React.useEffect(() => {
@@ -126,7 +138,7 @@ const Row = (props) => {
       <TableCell>
         <TextField
           value={innerNumber || ""}
-          onChange={(event) => {
+          onChange={(event: React.ChangeEvent<HTMLInputElement>) => {
             setInnerNumber(event.target.value);
             updateRow({ number: event.target.value });
           }}
@@ -138,7 +150,7 @@ const Row = (props) => {
         <CustomAutoComplet
           options={packagingShapes}
           value={innerShape}
-          onChange={(event, newValue) => {
+          onChange={(_event, newValue) => {
             updateRow({ shape: newValue && newValue.value });
             setInnerShape(newValue);
           }}
@@ -149,7 +161,7 @@ const Row = (props) => {
         <CustomAutoComplet
           options={packagingMaterials}
           value={innerMaterial}
-          onChange={(event, newValue) => {
+          onChange={(_event, newValue) => {
             updateRow({ material: newValue && newValue.value });
             setInnerMaterial(newValue);
           }}
@@ -160,7 +172,7 @@ const Row = (props) => {
         <CustomAutoComplet
           options={packagingRecycling}
           value={innerRecycling}
-          onChange={(event, newValue) => {
+          onChange={(_event, newValue) => {
             updateRow({ recycling: newValue && newValue.value });
             setInnerRecycling(newValue);
           }}
@@ -171,10 +183,10 @@ const Row = (props) => {
         <Button
           onClick={reset}
           disabled={
-            material === innerMaterial &&
+            material === innerMaterial?.value &&
             number === innerNumber &&
-            recycling === innerRecycling &&
-            shape === innerShape
+            recycling === innerRecycling?.value &&
+            shape === innerShape?.value
           }
         >
           Reset

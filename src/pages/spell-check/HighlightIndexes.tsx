@@ -1,18 +1,26 @@
-import * as React from "react";
 
-export default function Highlight({ text, highlight }) {
+
+interface HighlightItem {
+  color: string;
+  index: number;
+}
+
+interface HighlightProps {
+  text: string;
+  highlight: HighlightItem[];
+}
+
+export default function Highlight({ text, highlight }: HighlightProps) {
   let rep = "";
-  // console.log(highlight);
   let lastIndex = 0;
   highlight.forEach(({ color, index }) => {
-    rep =
-      rep +
+    rep +=
       text.slice(lastIndex, index) +
-      `<span class="${color}">${text[index]}</span>`;
+      `<span class="${color}">${text.slice(index, index + 1)}</span>`;
     lastIndex = index + 1;
   });
 
-  rep = rep + text.slice(lastIndex);
+  rep += text.slice(lastIndex);
 
   return <p dangerouslySetInnerHTML={{ __html: rep }} />;
 }

@@ -42,7 +42,7 @@ export function useRobotoffPredictions(partiallyFilled: boolean) {
     let valid = true;
     setIsLoading(true);
 
-    robotoff
+    void robotoff
       .getInsights(
         "",
         "nutrient_extraction",
@@ -66,12 +66,15 @@ export function useRobotoffPredictions(partiallyFilled: boolean) {
             }
             return {
               ...prev,
-              data: [...prev.data, ...data.insights],
+              data: [
+                ...prev.data,
+                ...((data.insights as InsightType[]) ?? []),
+              ],
             };
           }
           return {
             campaign,
-            data: data.insights,
+            data: (data.insights as InsightType[]) ?? [],
           };
         });
 
@@ -81,7 +84,7 @@ export function useRobotoffPredictions(partiallyFilled: boolean) {
     return () => {
       valid = false;
     };
-  }, [insightIndex, insights, campaign, country]);
+  }, [insightIndex, insights, campaign, country, isLoading]);
 
   React.useEffect(() => {
     const barecodeToImport = insights.data
@@ -91,15 +94,20 @@ export function useRobotoffPredictions(partiallyFilled: boolean) {
 
     barecodeToImport.forEach((code) => {
       setOffData((prev) => ({ ...prev, [code]: "loading" }));
-      axios
+      void axios
         .get(
           `https://world.openfoodfacts.org/api/v2/product/${code}.json?fields=serving_size,nutriments,images`,
         )
         .then(({ data: { product } }) => {
-          setOffData((prev) => ({ ...prev, [code]: product }));
+          // Only assign if product is an object (not null, not array, not string)
+          if (product && typeof product === "object" && !Array.isArray(product)) {
+            setOffData((prev) => ({ ...prev, [code]: product as ProductType }));
+          } else {
+            setOffData((prev) => ({ ...prev, [code]: undefined }));
+          }
         });
     });
-  }, [insightIndex, insights.data]);
+    }, [insightIndex, insights.data, offData]);
 
   const nextItem = React.useCallback(() => {
     setInsightIndex((p) => p + 1);
@@ -109,6 +117,13 @@ export function useRobotoffPredictions(partiallyFilled: boolean) {
   const insight = insights.data[insightIndex];
 
   const product = insight !== undefined ? offData[insight.barcode] : undefined;
+  const product =
+    insight !== undefined &&
+    offData[insight.barcode] &&
+    typeof offData[insight.barcode] === "object" &&
+    !Array.isArray(offData[insight.barcode])
+      ? (offData[insight.barcode] as ProductType)
+      : undefined;
 
   return {
     isLoading,

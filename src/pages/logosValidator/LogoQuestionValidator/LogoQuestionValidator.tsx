@@ -25,16 +25,27 @@ import { LogoQuestionCard } from "./LogoQuestionCard";
 function LogoQuestionValidator() {
   const { t } = useTranslation();
 
+
+  type ControlledState = {
+    imageSize: number | string;
+    zoomOnLogo: boolean | string;
+  };
+
   const [controlledState, setControlledState] = useUrlParams(
     {
       imageSize: 200,
       zoomOnLogo: true,
     },
     {},
-  );
+  ) as [ControlledState, React.Dispatch<React.SetStateAction<ControlledState>>];
 
-  const imageSize = Number.parseInt(controlledState.imageSize);
-  const zoomOnLogo = JSON.parse(controlledState.zoomOnLogo);
+  const imageSize = typeof controlledState.imageSize === "number"
+    ? controlledState.imageSize
+    : Number.parseInt(controlledState.imageSize);
+  const zoomOnLogo =
+    typeof controlledState.zoomOnLogo === "boolean"
+      ? controlledState.zoomOnLogo
+      : controlledState.zoomOnLogo === "true";
 
   const [filterState] = useFilterState();
 
@@ -194,12 +205,15 @@ function LogoQuestionValidator() {
           <Slider
             aria-label={t("nutriscore.image_sizes")}
             value={imageSize}
-            onChangeCommitted={(event, newValue) =>
-              setControlledState((prev: any) => ({
+            onChangeCommitted={(
+              event: React.SyntheticEvent | Event,
+              newValue: number | number[],
+            ) => {
+              setControlledState((prev) => ({
                 ...prev,
-                imageSize: newValue,
-              }))
-            }
+                imageSize: Array.isArray(newValue) ? newValue[0] : newValue,
+              }));
+            }}
             valueLabelDisplay="auto"
             step={50}
             marks
@@ -213,8 +227,8 @@ function LogoQuestionValidator() {
           control={
             <Checkbox
               checked={zoomOnLogo}
-              onChange={(event) =>
-                setControlledState((prev: any) => ({
+              onChange={(event: React.ChangeEvent<HTMLInputElement>) =>
+                setControlledState((prev) => ({
                   ...prev,
                   zoomOnLogo: event.target.checked,
                 }))

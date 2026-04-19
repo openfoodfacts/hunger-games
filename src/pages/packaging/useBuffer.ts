@@ -18,12 +18,12 @@ type Packaging = {
 
 type ProductDescription = {
   code: number;
-  states: any;
+  states: string | null;
   lang: string;
   image_packaging_url: string;
   packagings: Packaging[];
   product_name: string;
-  images: any;
+  images: Record<string, unknown>;
   creator: string;
 };
 function getProductsToAnnotateUrl({
@@ -59,7 +59,7 @@ export const useBuffer = ({
   code,
 }: Omit<Parameters, "page">): [ProductDescription[], () => void] => {
   const [page, setPage] = React.useState(() => Math.ceil(Math.random() * 100));
-  const [data, setData] = React.useState<ProductDescription[]>(null);
+  const [data, setData] = React.useState<ProductDescription[] | null>(null);
   const [maxPage, setMaxPage] = React.useState<number>(100);
 
   const url = getProductsToAnnotateUrl({ page, country, creator, code });
@@ -80,11 +80,26 @@ export const useBuffer = ({
 
   React.useEffect(() => {
     let isValid = true;
-    axios.get(url).then(({ data }) => {
+    type ApiResponse = {
+      products?: ProductDescription[];
+      product?: ProductDescription;
+      count?: number;
+      page_size?: number;
+    };
+    void axios.get<ApiResponse>(url).then(({ data }) => {
       if (isValid) {
-        const products = data.products ?? [data.product];
+        let products: ProductDescription[] = [];
+        if (Array.isArray(data.products)) {
+          products = data.products;
+        } else if (data.product) {
+          products = [data.product];
+        }
         setData(products);
-        setMaxPage(Math.floor(data.count / data.page_size) + 1);
+        if (typeof data.count === "number" && typeof data.page_size === "number" && data.page_size > 0) {
+          setMaxPage(Math.floor(data.count / data.page_size) + 1);
+        } else {
+          setMaxPage(1);
+        }
         canReset.current = true;
       }
     });

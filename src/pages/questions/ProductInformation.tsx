@@ -164,16 +164,20 @@ const ProductInfoTable = ({
               },
             }}
           >
-            {getLink
-              ? value.map((name, index) => (
-                  <React.Fragment key={name}>
-                    <a href={getLink(name)} target="_blank" rel="noreferrer">
-                      {name}
-                    </a>
-                    {index < value.length - 1 ? ", " : ""}
-                  </React.Fragment>
-                ))
-              : value.join(", ")}
+            {getLink && Array.isArray(value)
+              ? value
+                  .filter((name): name is string => typeof name === "string")
+                  .map((name, index) => (
+                    <React.Fragment key={name}>
+                      <a href={getLink(name)} target="_blank" rel="noreferrer">
+                        {name}
+                      </a>
+                      {index < value.length - 1 ? ", " : ""}
+                    </React.Fragment>
+                  ))
+              : Array.isArray(value)
+              ? value.filter((name): name is string => typeof name === "string").join(", ")
+              : null}
           </TableCell>
         ) : typeof value === "string" ? (
           <TableCell>{value}</TableCell>
@@ -208,13 +212,10 @@ const ProductInformation = () => {
 
   // Hide images
   const [hideImages, setHideImages] = React.useState<boolean>(getHideImages);
-  const handleHideImages = (
-    _: React.ChangeEvent<HTMLInputElement>,
-    checked: boolean,
-  ) => {
+  const handleHideImages = React.useCallback((_: React.ChangeEvent<HTMLInputElement>, checked: boolean) => {
     setHideImages(checked);
     localSettings.update(localSettingsKeys.hideImages, checked);
-  };
+  }, []);
 
   const [devCustomization] = React.useState(
     () => getPageCustomization().questionPage,
@@ -311,10 +312,12 @@ const ProductInformation = () => {
               {t("questions.no_images")}
             </Typography>
           ) : (
-            <ProductImagesGrid
-              images={productData.images}
-              barcode={question.barcode}
-            />
+            typeof productData.images === "object" && productData.images !== null ? (
+              <ProductImagesGrid
+                images={productData.images as Record<string, { uploaded_t: number }>}
+                barcode={question.barcode}
+              />
+            ) : null
           ))}
       </>
 
