@@ -60,6 +60,17 @@ export default function useRobotoffPrediction(
         setIsLoading(false);
         setError(null);
         setData(rep);
+      })
+      .catch((err) => {
+        setIsLoading(false);
+        let errorMsg = 'Unknown error';
+        if (err && typeof err === 'object' && 'message' in err && typeof (err as { message?: unknown }).message === 'string') {
+          errorMsg = (err as { message: string }).message;
+        } else if (typeof err === 'string') {
+          errorMsg = err;
+        }
+        setError(errorMsg);
+        setData(null);
       });
   }, [fetchUrl]);
 

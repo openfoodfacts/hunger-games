@@ -1,4 +1,3 @@
-import * as React from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router";
 import Card from "@mui/material/Card";
@@ -75,3 +74,4 @@ const HomeCards = () => {
 };
 
 export default HomeCards;
+// ...existing code...

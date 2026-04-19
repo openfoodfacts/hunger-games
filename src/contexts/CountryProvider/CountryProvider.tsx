@@ -19,11 +19,10 @@ export function CountryProvider({ children }) {
       }
       setSearchParams((prev) => {
         prev.set("country", newCountry);
-
         return prev;
       });
     },
-    [setSearchParams],
+    [setCountry, setSearchParams],
   );
 
   const value = React.useMemo(() => {
@@ -48,8 +47,4 @@ export function CountryProvider({ children }) {
   );
 }
 
-export function useCountry(): [string, CountryCallback] {
-  const { country, setCountry } = React.useContext(CountryContext);
 
-  return [country, setCountry];
-}

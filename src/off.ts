@@ -17,7 +17,7 @@ interface Product {
   brands?: string[];
   ingredients_text?: string;
   countries_tags?: string[];
-  images?: any;
+  images?: Record<string, unknown>;
   categories?: string[];
   categories_tags?: string[];
   labels_tags?: string;

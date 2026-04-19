@@ -27,6 +27,31 @@ const getIngredientExtractionUrl = (base: string, id: string) => {
   return `${ROBOTOFF_API_URL}/predict/ingredient_list?ocr_url=${base}${id}.json`;
 };
 
+type IngredientImage = {
+  imgid: string;
+  geometry: string;
+  sizes: {
+    full: { w: string; h: string };
+  };
+  x1?: number;
+  x2?: number;
+  y1?: number;
+  y2?: number;
+};
+
+type ImagesMap = Record<string, IngredientImage>;
+
+type Product = {
+  code: string;
+  lang: string;
+  image_ingredients_url: string;
+  product_name: string;
+  ingredient?: string;
+  images: ImagesMap;
+  scans_n?: number;
+  [x: string]: unknown;
+};
+
 const formatData = ({
   code,
   lang,
@@ -36,30 +61,22 @@ const formatData = ({
   images,
   scans_n,
   ...other
-}: {
-  code: string;
-  lang: string;
-  image_ingredients_url: string;
-  product_name: string;
-  ingredient: any;
-  images: any;
-  scans_n: any;
-  [x: string]: unknown;
-}) => {
+}: Product) => {
   const baseImageUrl = image_ingredients_url.replace(/ingredients.*/, "");
 
-  const selectedImages = Object.keys(images)
+  const selectedImages = Object.keys(images ?? {})
     .filter((key) => key.startsWith("ingredients"))
     .map((key) => {
-      const imageData = images[key];
-      // eslint-disable-next-line @typescript-eslint/no-unused-vars
-      const [_, x, y] = images[key].geometry.split("-");
+          const imageData = images[key];
+      const [, x, y] = typeof imageData.geometry === 'string' ? imageData.geometry.split("-") : [undefined, undefined, undefined];
 
       const countryCode = key.startsWith("ingredients_")
         ? key.slice("ingredients_".length)
         : "";
 
-      const { uploaded_t, uploader } = images[imageData.imgid];
+      // Defensive: images[imageData.imgid] may not exist
+      const uploadedInfo = imageData.imgid && images[imageData.imgid] ? images[imageData.imgid] : {};
+      const { uploaded_t, uploader } = uploadedInfo;
       return {
         imgId: imageData.imgid,
         countryCode,
@@ -68,20 +85,20 @@ const formatData = ({
           baseImageUrl.replace("images.", "static."),
           imageData.imgid,
         ),
-        uploaded_t,
-        uploader,
-        x: Number.parseFloat(x),
-        y: Number.parseFloat(y),
-        w: Number.parseFloat(imageData.sizes.full.w),
-        h: Number.parseFloat(imageData.sizes.full.h),
-        x1: images[key].x1,
-        x2: images[key].x2,
-        y1: images[key].y1,
-        y2: images[key].y2,
-        geometry: images[key].geometry,
+        x: x ? Number.parseFloat(x) : undefined,
+        y: y ? Number.parseFloat(y) : undefined,
+        w: imageData.sizes?.full?.w ? Number.parseFloat(imageData.sizes.full.w) : undefined,
+        h: imageData.sizes?.full?.h ? Number.parseFloat(imageData.sizes.full.h) : undefined,
+        x1: imageData.x1,
+        x2: imageData.x2,
+        y1: imageData.y1,
+        y2: imageData.y2,
+        geometry: imageData.geometry,
+        uploaded_t: typeof uploaded_t === "number" ? uploaded_t : undefined,
+        uploader: typeof uploader === "string" ? uploader : undefined
       };
     });
-  const ingredientTexts = {};
+  const ingredientTexts: Record<string, unknown> = {};
   Object.entries(other).forEach(([key, value]) => {
     if (key.startsWith("ingredient")) {
       ingredientTexts[key] = value;
@@ -100,41 +117,52 @@ const formatData = ({
   };
 };
 
-export default function useData(countryCode): [any[], () => void, boolean] {
-  const [data, setData] = React.useState([]);
+type FormattedData = ReturnType<typeof formatData>;
+
+export default function useData(countryCode: string): [FormattedData[], () => void, boolean] {
+  const [data, setData] = React.useState<FormattedData[]>([]);
   const prevCountry = React.useRef(countryCode);
   const [isLoading, setIsLoading] = React.useState(true);
-  const [page, setPage] = React.useState(() => {
+  const [page, setPage] = React.useState<number>(() => {
     return 0;
     // Seems that API fails for large page number
     //return new Date().getMilliseconds() % 50;
   });
-  const seenCodes = React.useRef([]);
+  const seenCodes = React.useRef<Record<string, boolean>>({});
 
   React.useEffect(() => {
     let isValid = true;
+
 
     const load = async () => {
       setIsLoading(true);
 
       try {
-        const {
-          data: { products },
-        } = await off.searchProducts({
+        const response = await off.searchProducts({
           page,
           pageSize: 25,
           filters: imagesToRead,
           fields: "all",
           countryCode: countryCode || "world",
         });
+        let products: Product[] = [];
+        if (
+          response &&
+          typeof response === 'object' &&
+          'data' in response &&
+          response.data &&
+          typeof response.data === 'object' &&
+          Array.isArray((response.data as { products?: unknown }).products)
+        ) {
+          products = (response.data as { products: Product[] }).products ?? [];
+        }
         if (isValid) {
           const rep = products
             .filter((p) => {
-              const isNew = !seenCodes.current[p.code]; // prevent from adding products already seen
-              if (isNew) {
+              const isNew = p.code && !seenCodes.current[p.code]; // prevent from adding products already seen
+              if (isNew && p.code) {
                 seenCodes.current[p.code] = true;
               }
-
               return isNew;
             })
             .map(formatData);
@@ -152,7 +180,7 @@ export default function useData(countryCode): [any[], () => void, boolean] {
       }
     };
 
-    load();
+    void load();
     return () => {
       isValid = false;
     };
