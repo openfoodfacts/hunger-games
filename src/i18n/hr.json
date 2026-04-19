@@ -233,8 +233,8 @@
     },
     "deep_search": {
       "title": "Pretraga logotipa",
-      "description": "Select a logo you want to look for, and let's go to catch them all. For every logo you annotate, we will fetch it's neighbors such that you might never stop to annotate. (Press Shift to select range of logos)",
-      "ref_logos": "Reference logos (logo already annotated with this value)",
+      "description": "Odaberite logo koji želite tražiti i hajde da ih sve uhvatimo. Za svaki logo koji označite, mi ćemo preuzeti njegove susjedne logotipe tako da se nikada nećete zaustaviti da biste označili. (Pritisnite Shift da biste odabrali raspon logotipa)",
+      "ref_logos": "Referentni logotipi (logotip je već označen ovom vrijednošću)",
       "remaining": "Remaining to annotate",
       "select_all": "Select All",
       "unselect_all": "Deselect All"
