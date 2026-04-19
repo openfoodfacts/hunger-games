@@ -141,29 +141,29 @@ const InsightGrid = ({ filterState = {}, setFilterState }) => {
             href={getProductEditUrl(params.row.barcode)}
             label={t("insights.edit_product")}
             icon={
-              <Tooltip title={t("insights.edit_product")}> 
+              <Tooltip title={t("insights.edit_product")}>
                 <EditIcon />
               </Tooltip>
             }
-          />, 
+          />,
           <GridActionsCellItem
             key="view"
             component="a"
             href={getProductUrl(params.row.barcode)}
             label={t("insights.view_product")}
             icon={
-              <Tooltip title={t("insights.view_product")}> 
+              <Tooltip title={t("insights.view_product")}>
                 <VisibilityIcon />
               </Tooltip>
             }
-          />, 
+          />,
           <GridActionsCellItem
             key="crops"
             component="a"
             href={getLogoCropsByBarcodeUrl(params.row.barcode)}
             label={t("insights.view_crops_for_this_product")}
             icon={
-              <Tooltip title={t("insights.view_crops_for_this_product")}> 
+              <Tooltip title={t("insights.view_crops_for_this_product")}>
                 <VisibilityIcon />
               </Tooltip>
             }

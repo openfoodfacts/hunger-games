@@ -20,7 +20,9 @@ export const useOptions = (fileName: Files, lang: string) => {
       };
     };
     axios
-      .get<TaxonomyData>(`https://static.${OFF_DOMAIN}/data/taxonomies/${fileName}.full.json`)
+      .get<TaxonomyData>(
+        `https://static.${OFF_DOMAIN}/data/taxonomies/${fileName}.full.json`,
+      )
       .then(({ data }) => {
         const newOptions: Option[] = Object.keys(data)
           .map((key) => {

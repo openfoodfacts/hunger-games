@@ -106,8 +106,14 @@ const LabelFilter = (props: LabelFilterProps) => {
           helperText={
             showKey &&
             ((typeof innerValue === "object" && innerValue?.id) ||
-              (typeof innerValue === "string" && innerValue !== "" && innerValue !== null && `⚠️ unknown: "${innerValue}"`) ||
-              (typeof innerValue === "object" && innerValue !== null && !innerValue.id && `⚠️ unknown object`))
+              (typeof innerValue === "string" &&
+                innerValue !== "" &&
+                innerValue !== null &&
+                `⚠️ unknown: "${innerValue}"`) ||
+              (typeof innerValue === "object" &&
+                innerValue !== null &&
+                !innerValue.id &&
+                `⚠️ unknown object`))
           }
         />
       )}

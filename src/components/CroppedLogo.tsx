@@ -17,11 +17,15 @@ type LogosImagesResponse = {
   };
 };
 
-const fetchData = async (insightId: string): Promise<
-  | { source_image?: string; bounding_box?: [number, number, number, number] }
-  | null
-> => {
-  const response = (await robotoff.insightDetail(insightId)) as InsightDetailResponse | null;
+const fetchData = async (
+  insightId: string,
+): Promise<{
+  source_image?: string;
+  bounding_box?: [number, number, number, number];
+} | null> => {
+  const response = (await robotoff.insightDetail(
+    insightId,
+  )) as InsightDetailResponse | null;
 
   if (!response) {
     return null;
@@ -32,7 +36,9 @@ const fetchData = async (insightId: string): Promise<
   const logo_id = response.data?.data?.logo_id;
 
   if (source_image && logo_id && !bounding_box) {
-    const logoData = (await robotoff.getLogosImages([logo_id])) as LogosImagesResponse | null;
+    const logoData = (await robotoff.getLogosImages([
+      logo_id,
+    ])) as LogosImagesResponse | null;
     bounding_box = logoData?.data?.logos?.[0]?.bounding_box;
   }
 
@@ -40,7 +46,10 @@ const fetchData = async (insightId: string): Promise<
 };
 
 const getCroppedLogoUrl = (
-  debugResponse: null | { source_image?: string; bounding_box?: [number, number, number, number] },
+  debugResponse: null | {
+    source_image?: string;
+    bounding_box?: [number, number, number, number];
+  },
 ): string | null => {
   if (!debugResponse) {
     return null;

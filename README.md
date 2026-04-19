@@ -73,6 +73,7 @@ yarn build
 #### Before to push your code
 
 Run lint:
+
 ```
 yarn lint
 ```

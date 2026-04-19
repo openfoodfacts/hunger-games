@@ -1638,9 +1638,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@openfoodfacts/openfoodfacts-webcomponents@file:../openfoodfacts-webcomponents/web-components::locator=hunger-game%40workspace%3A.":
+"@openfoodfacts/openfoodfacts-webcomponents@npm:^1.15.1":
   version: 1.16.0
-  resolution: "@openfoodfacts/openfoodfacts-webcomponents@file:../openfoodfacts-webcomponents/web-components#../openfoodfacts-webcomponents/web-components::hash=383a19&locator=hunger-game%40workspace%3A."
+  resolution: "@openfoodfacts/openfoodfacts-webcomponents@npm:1.16.0"
   dependencies:
     "@lit-labs/signals": "npm:^0.1.2"
     "@lit/localize": "npm:^0.12.2"
@@ -1652,7 +1652,7 @@ __metadata:
     lit: "npm:^3.3.0"
     lit-html: "npm:^3.3.0"
     marked: "npm:^16.2.1"
-  checksum: 10/f10b91f3cc54fdd1303bfb18496ee39bdcaa157e11f2ab442d580eb408a3266bf8344fde7f2bff9187e2f9ce6bbcc6294d197ba23473c3e858b2e2fb534fe515
+  checksum: 10/e51cdcf335dbc15cf1dec149a97d90ffdd7641a2956865d4fbcbead7ed06e2aae03be7c7fd70bbac1e4ec05434567a6e7898314d7e83a62e5bdd612da98d3243
   languageName: node
   linkType: hard
 
@@ -4518,7 +4518,7 @@ __metadata:
     "@mui/material": "npm:^5.14.16"
     "@mui/x-data-grid": "npm:^6.18.0"
     "@openfoodfacts/openfoodfacts-nodejs": "npm:2.0.0-alpha.29"
-    "@openfoodfacts/openfoodfacts-webcomponents": "file:../openfoodfacts-webcomponents/web-components"
+    "@openfoodfacts/openfoodfacts-webcomponents": "npm:^1.15.1"
     "@tanstack/react-query": "npm:^5.75.1"
     "@types/lodash": "npm:^4.17.23"
     "@types/node": "npm:^25.5.0"

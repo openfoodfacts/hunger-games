@@ -15,7 +15,10 @@ type AnnotateLogoModalProps = {
   logos: Array<Logo>;
   closeAnnotation: () => void;
   toggleLogoSelection: (id: string) => void;
-  afterAnnotation?: (logos: Logo[], annotation: { value: string; type: string }) => void;
+  afterAnnotation?: (
+    logos: Logo[],
+    annotation: { value: string; type: string },
+  ) => void;
   value?: string;
   type?: string;
   game?: string;
@@ -48,7 +51,13 @@ const AnnotateLogoModal = (props: AnnotateLogoModalProps) => {
   const { annotateLogo: matomoTrackLogoAnnotation } =
     useMatomoTrackAnswerQuestion();
 
-  const sendAnnotation = async ({ type, value }: { type: string; value: string }) => {
+  const sendAnnotation = async ({
+    type,
+    value,
+  }: {
+    type: string;
+    value: string;
+  }) => {
     try {
       if (!IS_DEVELOPMENT_MODE) {
         await robotoff.annotateLogos(

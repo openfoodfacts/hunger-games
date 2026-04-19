@@ -70,7 +70,10 @@ export function TextCorrection(props: TextCorrectionProps) {
           />
           <button
             onClick={() => {
-              void fetchIngredients(editedText ? editedText : text.before, "fr");
+              void fetchIngredients(
+                editedText ? editedText : text.before,
+                "fr",
+              );
             }}
           >
             fetch{isLoading ? " ..." : ""}
