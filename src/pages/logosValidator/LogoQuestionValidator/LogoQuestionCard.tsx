@@ -22,8 +22,12 @@ interface LogosImagesResponse {
   };
 }
 
-const fetchData = async (insightId: string): Promise<{ source_image?: string; bounding_box?: BoundingBox }> => {
-  const response = (await robotoff.insightDetail(insightId)) as InsightDetailResponse | undefined;
+const fetchData = async (
+  insightId: string,
+): Promise<{ source_image?: string; bounding_box?: BoundingBox }> => {
+  const response = (await robotoff.insightDetail(insightId)) as
+    | InsightDetailResponse
+    | undefined;
   if (!response || !response.data) {
     return { source_image: undefined, bounding_box: undefined };
   }
@@ -31,10 +35,15 @@ const fetchData = async (insightId: string): Promise<{ source_image?: string; bo
   const source_image = response.data.source_image;
   const logo_id = response.data.data?.logo_id;
   if (source_image && logo_id && !bounding_box) {
-    const logoData = (await robotoff.getLogosImages([logo_id])) as LogosImagesResponse | undefined;
-    bounding_box = logoData?.data?.logos && Array.isArray(logoData.data.logos) && logoData.data.logos[0]?.bounding_box
-      ? logoData.data.logos[0].bounding_box
-      : undefined;
+    const logoData = (await robotoff.getLogosImages([logo_id])) as
+      | LogosImagesResponse
+      | undefined;
+    bounding_box =
+      logoData?.data?.logos &&
+      Array.isArray(logoData.data.logos) &&
+      logoData.data.logos[0]?.bounding_box
+        ? logoData.data.logos[0].bounding_box
+        : undefined;
   }
   return { source_image, bounding_box };
 };
@@ -67,7 +76,9 @@ export const LogoQuestionCard = (props: LogoQuestionCardProps) => {
     let isValidQuery = true;
 
     const getImageUrl = async () => {
-      const { source_image, bounding_box } = await fetchData(question.insight_id);
+      const { source_image, bounding_box } = await fetchData(
+        question.insight_id,
+      );
       if (!isValidQuery) {
         return;
       }

@@ -67,15 +67,21 @@ const formatData = ({
   const selectedImages = Object.keys(images ?? {})
     .filter((key) => key.startsWith("ingredients"))
     .map((key) => {
-          const imageData = images[key];
-      const [, x, y] = typeof imageData.geometry === 'string' ? imageData.geometry.split("-") : [undefined, undefined, undefined];
+      const imageData = images[key];
+      const [, x, y] =
+        typeof imageData.geometry === "string"
+          ? imageData.geometry.split("-")
+          : [undefined, undefined, undefined];
 
       const countryCode = key.startsWith("ingredients_")
         ? key.slice("ingredients_".length)
         : "";
 
       // Defensive: images[imageData.imgid] may not exist
-      const uploadedInfo = imageData.imgid && images[imageData.imgid] ? images[imageData.imgid] : {};
+      const uploadedInfo =
+        imageData.imgid && images[imageData.imgid]
+          ? images[imageData.imgid]
+          : {};
       const { uploaded_t, uploader } = uploadedInfo;
       return {
         imgId: imageData.imgid,
@@ -87,15 +93,19 @@ const formatData = ({
         ),
         x: x ? Number.parseFloat(x) : undefined,
         y: y ? Number.parseFloat(y) : undefined,
-        w: imageData.sizes?.full?.w ? Number.parseFloat(imageData.sizes.full.w) : undefined,
-        h: imageData.sizes?.full?.h ? Number.parseFloat(imageData.sizes.full.h) : undefined,
+        w: imageData.sizes?.full?.w
+          ? Number.parseFloat(imageData.sizes.full.w)
+          : undefined,
+        h: imageData.sizes?.full?.h
+          ? Number.parseFloat(imageData.sizes.full.h)
+          : undefined,
         x1: imageData.x1,
         x2: imageData.x2,
         y1: imageData.y1,
         y2: imageData.y2,
         geometry: imageData.geometry,
         uploaded_t: typeof uploaded_t === "number" ? uploaded_t : undefined,
-        uploader: typeof uploader === "string" ? uploader : undefined
+        uploader: typeof uploader === "string" ? uploader : undefined,
       };
     });
   const ingredientTexts: Record<string, unknown> = {};
@@ -119,7 +129,9 @@ const formatData = ({
 
 type FormattedData = ReturnType<typeof formatData>;
 
-export default function useData(countryCode: string): [FormattedData[], () => void, boolean] {
+export default function useData(
+  countryCode: string,
+): [FormattedData[], () => void, boolean] {
   const [data, setData] = React.useState<FormattedData[]>([]);
   const prevCountry = React.useRef(countryCode);
   const [isLoading, setIsLoading] = React.useState(true);
@@ -132,7 +144,6 @@ export default function useData(countryCode: string): [FormattedData[], () => vo
 
   React.useEffect(() => {
     let isValid = true;
-
 
     const load = async () => {
       setIsLoading(true);
@@ -148,10 +159,10 @@ export default function useData(countryCode: string): [FormattedData[], () => vo
         let products: Product[] = [];
         if (
           response &&
-          typeof response === 'object' &&
-          'data' in response &&
+          typeof response === "object" &&
+          "data" in response &&
           response.data &&
-          typeof response.data === 'object' &&
+          typeof response.data === "object" &&
           Array.isArray((response.data as { products?: unknown }).products)
         ) {
           products = (response.data as { products: Product[] }).products ?? [];

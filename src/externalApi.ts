@@ -14,7 +14,10 @@ export const addImageFlag = (opts: { barcode: string; imgid: number }) => {
   try {
     window.open(NutriPatrolURL, "_blank", "noopener,noreferrer");
   } catch (error) {
-    throw new Error("Could not open NutriPatrol, error: " + (error instanceof Error ? error.message : String(error)));
+    throw new Error(
+      "Could not open NutriPatrol, error: " +
+        (error instanceof Error ? error.message : String(error)),
+    );
   }
 };
 
