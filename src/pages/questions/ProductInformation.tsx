@@ -164,16 +164,22 @@ const ProductInfoTable = ({
               },
             }}
           >
-            {getLink
-              ? value.map((name, index) => (
-                  <React.Fragment key={name}>
-                    <a href={getLink(name)} target="_blank" rel="noreferrer">
-                      {name}
-                    </a>
-                    {index < value.length - 1 ? ", " : ""}
-                  </React.Fragment>
-                ))
-              : value.join(", ")}
+            {getLink && Array.isArray(value)
+              ? value
+                  .filter((name): name is string => typeof name === "string")
+                  .map((name, index) => (
+                    <React.Fragment key={name}>
+                      <a href={getLink(name)} target="_blank" rel="noreferrer">
+                        {name}
+                      </a>
+                      {index < value.length - 1 ? ", " : ""}
+                    </React.Fragment>
+                  ))
+              : Array.isArray(value)
+                ? value
+                    .filter((name): name is string => typeof name === "string")
+                    .join(", ")
+                : null}
           </TableCell>
         ) : typeof value === "string" ? (
           <TableCell>{value}</TableCell>
@@ -208,13 +214,13 @@ const ProductInformation = () => {
 
   // Hide images
   const [hideImages, setHideImages] = React.useState<boolean>(getHideImages);
-  const handleHideImages = (
-    _: React.ChangeEvent<HTMLInputElement>,
-    checked: boolean,
-  ) => {
-    setHideImages(checked);
-    localSettings.update(localSettingsKeys.hideImages, checked);
-  };
+  const handleHideImages = React.useCallback(
+    (_: React.ChangeEvent<HTMLInputElement>, checked: boolean) => {
+      setHideImages(checked);
+      localSettings.update(localSettingsKeys.hideImages, checked);
+    },
+    [],
+  );
 
   const [devCustomization] = React.useState(
     () => getPageCustomization().questionPage,
@@ -310,12 +316,15 @@ const ProductInformation = () => {
             <Typography variant="body2" color="text.secondary">
               {t("questions.no_images")}
             </Typography>
-          ) : (
+          ) : typeof productData.images === "object" &&
+            productData.images !== null ? (
             <ProductImagesGrid
-              images={productData.images}
+              images={
+                productData.images as Record<string, { uploaded_t: number }>
+              }
               barcode={question.barcode}
             />
-          ))}
+          ) : null)}
       </>
 
       <Divider sx={{ my: 1 }} />

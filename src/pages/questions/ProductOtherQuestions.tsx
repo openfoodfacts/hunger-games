@@ -83,7 +83,7 @@ export default function ProductOtherQuestions({
       pendingAnswer === CORRECT_INSIGHT || pendingAnswer === WRONG_INSIGHT;
     const sendAnswer = valueIsSet
       ? () => {
-          robotoff.annotate(insight_id, pendingAnswer);
+          void robotoff.annotate(insight_id, pendingAnswer);
           setAnswers((prev) => ({
             ...prev,
             [insight_id]: {

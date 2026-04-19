@@ -32,7 +32,7 @@ export function useRobotoffPredictions() {
     }
     let valid = true;
     setIsLoading(true);
-    robotoff
+    void robotoff
       .getInsights(
         "",
         "ingredient_spellcheck",
@@ -57,7 +57,7 @@ export function useRobotoffPredictions() {
     return () => {
       valid = false;
     };
-  }, [insights, country]);
+  }, [insights, country, isLoading]);
 
   React.useEffect(() => {
     const barecodeToImport = insights
@@ -67,15 +67,21 @@ export function useRobotoffPredictions() {
 
     barecodeToImport.forEach((code) => {
       setOffData((prev) => ({ ...prev, [code]: "loading" }));
-      axios
-        .get(
+      void axios
+        .get<{
+          product?: ProductType;
+        }>(
           `https://world.openfoodfacts.org/api/v2/product/${code}.json?fields=serving_size,nutriments,images`,
         )
-        .then(({ data: { product } }) => {
-          setOffData((prev) => ({ ...prev, [code]: product }));
+        .then(({ data }) => {
+          const product =
+            data && typeof data === "object" && "product" in data
+              ? data.product
+              : undefined;
+          setOffData((prev) => ({ ...prev, [code]: product as ProductType }));
         });
     });
-  }, [insights]);
+  }, [insights, offData]);
 
   const nextItem = React.useCallback(() => {
     setInsights((p) => p.slice(1));

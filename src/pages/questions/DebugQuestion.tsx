@@ -24,20 +24,43 @@ const fetchData = (insightId?: string) => async () => {
   }
   const response = await robotoff.insightDetail(insightId);
 
-  if (!response) {
+  if (!response || typeof response !== "object" || !("data" in response)) {
     return null;
   }
 
-  let bounding_box = response.data?.bounding_box;
-  const source_image = response.data?.source_image;
-  const logo_id = response.data?.data?.logo_id;
+  const data = response.data as Record<string, unknown>;
+  let bounding_box = data?.bounding_box as
+    | [number, number, number, number]
+    | undefined;
+  const source_image =
+    typeof data?.source_image === "string" ? data.source_image : undefined;
+  const logo_id =
+    typeof (data?.data && (data.data as Record<string, unknown>).logo_id) ===
+    "string"
+      ? (data.data as Record<string, unknown>).logo_id
+      : undefined;
 
   if (source_image && logo_id && !bounding_box) {
     const logoData = await robotoff.getLogosImages([logo_id]);
-    bounding_box = logoData?.data?.logos?.[0]?.bounding_box;
+    const logosArr =
+      logoData?.data &&
+      Array.isArray(
+        (
+          logoData.data as {
+            logos: Array<{ bounding_box?: [number, number, number, number] }>;
+          }
+        ).logos,
+      )
+        ? (
+            logoData.data as {
+              logos: Array<{ bounding_box?: [number, number, number, number] }>;
+            }
+          ).logos
+        : [];
+    bounding_box = logosArr[0]?.bounding_box;
   }
 
-  return { source_image, bounding_box, data: response.data };
+  return { source_image, bounding_box, data };
 };
 
 const getCroppedLogoUrl = (

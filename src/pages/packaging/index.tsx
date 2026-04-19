@@ -31,22 +31,42 @@ import useUrlParams from "../../hooks/useUrlParams";
 import Loader from "../loader";
 import { useCountry } from "../../contexts/CountryProvider";
 import { getCountryId } from "../../utils/getCountryId";
-const formatData = (innerRows) => {
+
+interface PackagingRow {
+  id: number;
+  material: string | null;
+  number: string | null;
+  recycling: string | null;
+  shape: string | null;
+}
+
+interface Product {
+  code: number;
+  states: string | null;
+  lang: string;
+  image_packaging_url: string;
+  packagings: PackagingRow[];
+  product_name: string;
+  images: Record<string, unknown>;
+  creator: string;
+}
+
+const formatData = (innerRows: PackagingRow[]): Record<string, unknown> => {
   const packagings = innerRows
     .map(({ material, number, recycling, shape }) => {
-      const rep = {};
+      const rep: Record<string, unknown> = {};
 
       if (number && !isNaN(Number.parseInt(number))) {
         rep["number_of_units"] = Number.parseInt(number);
       }
       if (shape) {
-        rep[`shape`] = { id: shape };
+        rep["shape"] = { id: shape };
       }
       if (material) {
-        rep[`material`] = { id: material };
+        rep["material"] = { id: material };
       }
       if (recycling) {
-        rep[`recycling`] = { id: recycling };
+        rep["recycling"] = { id: recycling };
       }
 
       if (Object.keys(rep).length > 0) {
@@ -54,7 +74,7 @@ const formatData = (innerRows) => {
       }
       return null;
     })
-    .filter((x) => x !== null);
+    .filter((x): x is Record<string, unknown> => x !== null);
 
   if (packagings.length === 0) {
     return {};
@@ -73,29 +93,53 @@ const Page = () => {
   const packagingMaterials = useOptions("packaging_materials", lang);
   const packagingShapes = useOptions("packaging_shapes", lang);
   const packagingRecycling = useOptions("packaging_recycling", lang);
-  const [searchState] = useUrlParams(
+  const urlParamsResult = useUrlParams(
     {
       creator: undefined,
       code: "",
     },
     {},
   );
+  let searchState: { creator?: string; code?: string } = {};
+  if (
+    Array.isArray(urlParamsResult) &&
+    urlParamsResult.length > 0 &&
+    typeof urlParamsResult[0] === "object" &&
+    urlParamsResult[0] !== null
+  ) {
+    const { creator, code } = urlParamsResult[0] as {
+      creator?: string;
+      code?: string;
+    };
+    searchState = { creator, code };
+  }
 
-  const [rows, setRows] = React.useState([]);
-  const [innerRows, setInnerRows] = React.useState([]);
+  const [rows, setRows] = React.useState<PackagingRow[]>([]);
+  const [innerRows, setInnerRows] = React.useState<PackagingRow[]>([]);
 
   const [data, next] = useBuffer({
-    ...searchState,
+    ...(searchState as Omit<Parameters, "page">),
     country: countryId,
   });
 
-  const product = data?.[0] ?? null;
+  const product: Product | null =
+    Array.isArray(data) &&
+    data.length > 0 &&
+    typeof data[0] === "object" &&
+    data[0] !== null
+      ? (data[0] as Product)
+      : null;
   React.useEffect(() => {
-    if (product) {
-      const newRows = product.packagings.map((item, index) => ({
-        id: index,
-        ...item,
-      }));
+    if (product && Array.isArray(product.packagings)) {
+      const newRows: PackagingRow[] = product.packagings.map(
+        (item: Partial<PackagingRow>, index: number) => ({
+          id: index,
+          material: item.material ?? null,
+          number: item.number ?? null,
+          recycling: item.recycling ?? null,
+          shape: item.shape ?? null,
+        }),
+      );
       setRows(newRows);
       setInnerRows(newRows);
     }
@@ -107,16 +151,20 @@ const Page = () => {
   return (
     <React.Suspense fallback={<Loader />}>
       <Stack direction="row" spacing={1} sx={{ overflow: "auto" }}>
-        {getImagesUrls(product.images, product.code).map((src) => (
-          <ZoomableImage
-            key={src}
-            src={src}
-            imageProps={{
-              loading: "lazy",
-              style: { maxWidth: 300, maxHeight: 300 },
-            }}
-          />
-        ))}
+        {product &&
+        Array.isArray(product.images) &&
+        typeof product.code === "string"
+          ? getImagesUrls(product.images, product.code).map((src: string) => (
+              <ZoomableImage
+                key={src}
+                src={src}
+                imageProps={{
+                  loading: "lazy",
+                  style: { maxWidth: 300, maxHeight: 300 },
+                }}
+              />
+            ))
+          : null}
       </Stack>
 
       <Box>
@@ -128,7 +176,9 @@ const Page = () => {
           }}
           direction={{ xs: "column", md: "row" }}
         >
-          <img src={product.image_packaging_url} alt="" />
+          {typeof product.image_packaging_url === "string" && (
+            <img src={product.image_packaging_url} alt="" />
+          )}
           <TableContainer component={Paper}>
             <Table>
               <TableHead>
@@ -149,15 +199,12 @@ const Page = () => {
                     packagingMaterials={packagingMaterials}
                     packagingShapes={packagingShapes}
                     packagingRecycling={packagingRecycling}
-                    updateRow={(toUpsert) => {
-                      setInnerRows((prev) => {
-                        return prev.map((r) => {
-                          if (r.id !== row.id) {
-                            return r;
-                          }
-                          return { ...r, ...toUpsert };
-                        });
-                      });
+                    updateRow={(toUpsert: Partial<PackagingRow>) => {
+                      setInnerRows((prev) =>
+                        prev.map((r) =>
+                          r.id !== row.id ? r : { ...r, ...toUpsert },
+                        ),
+                      );
                     }}
                     {...row}
                   />
@@ -199,7 +246,10 @@ const Page = () => {
         >
           <Button
             sx={{ width: 150 }}
-            onClick={() => next()}
+            onClick={() => {
+              next();
+              return undefined;
+            }}
             variant="contained"
           >
             Skip
@@ -207,7 +257,7 @@ const Page = () => {
           <Button
             sx={{ width: 150 }}
             onClick={() => {
-              axios.patch(
+              void axios.patch(
                 `${OFF_API_URL_V3}/product/${product.code}`,
                 formatData(innerRows),
                 { withCredentials: true },
@@ -223,28 +273,32 @@ const Page = () => {
       </Box>
       <Stack direction="row" spacing={2}>
         <Typography>{product?.product_name}</Typography>
-        <Button
-          size="small"
-          component={Link}
-          target="_blank"
-          href={`${offService.getProductUrl(product.code)}#environment`}
-          variant="outlined"
-          startIcon={<VisibilityIcon />}
-          sx={{ minWidth: 150 }}
-        >
-          {t("questions.view")}
-        </Button>
-        <Button
-          size="small"
-          component={Link}
-          target="_blank"
-          href={offService.getProductEditUrl(product.code)}
-          variant="contained"
-          startIcon={<EditIcon />}
-          sx={{ ml: 2, minWidth: 150 }}
-        >
-          {t("questions.edit")}
-        </Button>
+        {typeof product.code === "string" && (
+          <>
+            <Button
+              size="small"
+              component={Link}
+              target="_blank"
+              href={`${offService.getProductUrl(product.code)}#environment`}
+              variant="outlined"
+              startIcon={<VisibilityIcon />}
+              sx={{ minWidth: 150 }}
+            >
+              {t("questions.view")}
+            </Button>
+            <Button
+              size="small"
+              component={Link}
+              target="_blank"
+              href={offService.getProductEditUrl(product.code)}
+              variant="contained"
+              startIcon={<EditIcon />}
+              sx={{ ml: 2, minWidth: 150 }}
+            >
+              {t("questions.edit")}
+            </Button>
+          </>
+        )}
       </Stack>
     </React.Suspense>
   );

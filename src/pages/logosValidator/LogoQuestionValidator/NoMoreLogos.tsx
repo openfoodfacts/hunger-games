@@ -1,4 +1,4 @@
-import * as React from "react";
+// ...existing code...
 import { useTranslation } from "react-i18next";
 
 import Button from "@mui/material/Button";
