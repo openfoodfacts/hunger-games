@@ -30,13 +30,13 @@ function LogoQuestionValidator() {
     zoomOnLogo: boolean | string;
   };
 
-  const [controlledState, setControlledState] = useUrlParams(
+  const [controlledState, setControlledState] = useUrlParams<ControlledState>(
     {
       imageSize: 200,
       zoomOnLogo: true,
     },
     {},
-  ) as [ControlledState, React.Dispatch<React.SetStateAction<ControlledState>>];
+  );
 
   const imageSize =
     typeof controlledState.imageSize === "number"
