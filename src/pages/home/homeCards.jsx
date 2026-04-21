@@ -73,5 +73,4 @@ const HomeCards = () => {
   );
 };
 
-export default HomeCards;
-// ...existing code...
+export default HomeCards;g
