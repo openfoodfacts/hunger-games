@@ -1,17 +1,12 @@
 import * as React from "react";
 import { OFF_IMAGE_URL, OFF_URL, ROBOTOFF_API_URL } from "../const";
-import { useCountry } from "../contexts/CountryProvider";
-import { getCountryLanguageCode } from "../pages/nutrition/utils";
+import { useTranslation } from "react-i18next";
 import "@openfoodfacts/openfoodfacts-webcomponents";
 
-const useLanguageCode = () => {
-  const [country]: [string, unknown] = useCountry();
-
-  return getCountryLanguageCode(country);
-};
-
 export const OffWebcomponentsConfiguration = () => {
-  const languageCode = useLanguageCode();
+  const { i18n } = useTranslation();
+  // Ensure we have a valid 2-letter language code
+  const languageCode = i18n.language?.substring(0, 2) || "en";
 
   const robotoffConfiguration = JSON.stringify({
     apiUrl: ROBOTOFF_API_URL,
@@ -30,16 +25,18 @@ export const OffWebcomponentsConfiguration = () => {
 
 export const RobotoffNutrientExtraction = ({
   productCode,
+  countryCode,
 }: {
   productCode?: string;
+  countryCode?: string;
 }) => {
   return (
-    <div>
-      <robotoff-nutrient-extraction
-        display-product-link
-        product-code={productCode}
-      ></robotoff-nutrient-extraction>
-    </div>
+    <robotoff-nutrient-extraction
+      display-product-link
+      product-code={productCode}
+      country-codes={countryCode}
+      key={`${productCode}-${countryCode || "all"}`}
+    />
   );
 };
 export const RobotoffIngredientSpellcheck = () => {
