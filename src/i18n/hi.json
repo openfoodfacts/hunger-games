@@ -253,7 +253,7 @@
     "thank_you": "धन्यवाद,",
     "donate": "दान करें",
     "join_the_community": {
-      "discover_our": "Discover our ",
+      "discover_our": " \n\"Discover our games\"\nहमारे गेम्स खोजें\n\n\"Discover our features\"\nहमारी विशेषताएँ जानें\n\n\"Discover our contributions\"\nहमारे योगदान जानें\n\n\"Discover our website\"\nहमारी वेबसाइट देखें",
       "code_of_conduct": "आचार संहिता ",
       "join_us_on": "हमसे जुड़ें ",
       "forum": "फोरम",
@@ -276,26 +276,26 @@
     "welcome": {
       "page1": {
         "title": "हंगर गेम्स में आपका स्वागत है",
-        "text1": "Hunger Games is a collection of mini-games that help contribute to Open Food Facts in many ways. You can play our really exciting games from anywhere. Here is a guided tour of the entire website which will get you started.",
-        "text2": "Make sure to login to the Open Food Facts website to get credit for your contributions. If you make a mistake, please take the time to correct it by heading to the website.",
-        "text3": "In case of any doubt about the games, click on the question mark icon at the top right of the page, and you can reach us on slack at the #hunger-games channel"
+        "text1": "हंगर गेम्स मिनी-गेम्स का एक संग्रह है जो कई तरह से ओपन फूड फैक्ट्स में योगदान देने में मदद करता है। आप हमारे बेहद रोमांचक गेम्स कहीं से भी खेल सकते हैं। यहाँ पूरी वेबसाइट का एक निर्देशित भ्रमण है जो आपको शुरुआत करने में मदद करेगा।",
+        "text2": "ओपन फूड फैक्ट्स वेबसाइट पर अपने योगदान का श्रेय पाने के लिए लॉगिन करना सुनिश्चित करें। यदि आपसे कोई गलती हो जाए, तो कृपया वेबसाइट पर जाकर उसे सुधारने का समय निकालें।",
+        "text3": "गेम्स के बारे में किसी भी संदेह की स्थिति में, पृष्ठ के ऊपरी दाईं ओर प्रश्न चिह्न आइकन पर क्लिक करें, और आप स्लैक पर #hunger-games चैनल पर हम तक पहुँच सकते हैं।"
       },
       "page2": {
-        "title": "Questions Game",
-        "text1": "Does the food product belong to this brand?",
-        "text2": "Simply answer with a <strong>Yes/No</strong>! Don't know the answer? That's alright, just skip it.",
-        "text3": "You can also use your keyboard shortcuts: y,n and k.",
-        "text4": "You can <strong>filter</strong> the products based on country, brands, popularity and much more!",
+        "title": "सवाल-जवाब गेम",
+        "text1": "क्या यह खाद्य उत्पाद इस ब्रांड का है?",
+        "text2": "बस एक <strong>हाँ/नहीं</strong> में जवाब दें! जवाब नहीं पता? कोई बात नहीं, बस इसे छोड़ दें।",
+        "text3": "आप कीबोर्ड शॉर्टकट भी उपयोग कर सकते हैं: y, n और k",
+        "text4": "आप देश, ब्रांड, लोकप्रियता और बहुत कुछ के आधार पर उत्पादों को <strong>फ़िल्टर</strong> कर सकते हैं!",
         "text5": "यदि आप हर बार यह नहीं करना चाहते हैं, तो आप स्टार पर क्लिक करके <strong>फ़िल्टर को सेव कर</strong> सकते हैं। अगली बार जब आप वापस आएं, तो होम पेज पर ही सेव किए गए फ़िल्टर ढूंढ़ें"
       },
       "page3": {
-        "title": "Logos Game",
-        "text1": "Another popular game is the logos game where you have to <strong>select all the logos</strong> you feel are the same.",
-        "text2": "As shown in the example, once you select all the similar logos, just type their value and select where it is a brand, a label or something else. It's that simple!"
+        "title": "लोगो गेम",
+        "text1": "एक और लोकप्रिय गेम है लोगो गेम, जहाँ आपको उन सभी लोगो को <strong>चुनना होता है</strong> जो आपको एक जैसे लगते हैं।",
+        "text2": "जैसा उदाहरण में दिखाया गया है, एक बार जब आप सभी समान लोगो चुन लें, तो बस उनका मान टाइप करें और चुनें कि यह एक ब्रांड है, एक लेबल है या कुछ और। बस इतना ही आसान है!"
       },
       "page4": {
-        "title": "Eco-Score Questions Game",
-        "text1": "Help us finish the remaining questions in the most high priority labels!",
+        "title": "ईको-स्कोर सवाल-जवाब गेम",
+        "text1": "सबसे उच्च प्राथमिकता वाले लेबल्स में शेष प्रश्नों को पूरा करने में हमारी मदद करें!",
         "text2": "These cards are linked to labels used in the computation of the Eco-Score.",
         "text3": "<strong>What is Eco-Score?</strong>",
         "text4": "Eco-Score captures the total environmental footprint, making it easier for consumers to compare products and decide which is better for the environment."
