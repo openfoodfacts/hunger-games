@@ -9,7 +9,7 @@
         },
         "logos": {
           "title": "Logo",
-          "description": "Temukan semua dan samakan dengan logo yang telah diberikan"
+          "description": "Cari semua logo yang cocok dengan logo yang diberikan"
         },
         "green_score": {
           "title": "Eco-Score",
@@ -23,10 +23,10 @@
       "sign_up": "Daftar",
       "contribution_details": "Pelajari mengapa kontribusi Anda penting"
     },
-    "saved_filters": "Filter yang disimpan",
+    "saved_filters": "Filter Tersimpan",
     "contribution_modal": {
       "title": "Kontribusi Anda sangat berarti",
-      "information": "Hunger Games merupakan upaya pemanfaatan hasil OCR dan kecerdasan buatan kami. Saat menggunakan Hunger Games dari Open Food Facts, Anda meningkatkan seluruh basis data kami dan membantu komunitas membuat pilihan makanan yang lebih baik. Kami mengumpulkan anotasi Anda dan menggunakannya agar Open Food Facts lebih akurat dan efisien.",
+      "information": "Hunger Games adalah cara untuk memanfaatkan hasil OCR dan kecerdasan buatan. Dengan menggunakan Hunger Games dari Open Food Facts, kamu ikut membantu memperbaiki seluruh basis data kami sehingga komunitas bisa membuat pilihan makanan yang lebih baik. Catatan yang kamu tambahkan akan kami kumpulkan dan dipakai untuk membuat Open Food Facts jadi lebih akurat dan efisien.",
       "thank_you": "Terima kasih telah membantu kami meningkatkan Open Food Facts sehingga lebih banyak orang dapat menggunakannya dengan mudah."
     },
     "statistics": {
@@ -55,20 +55,20 @@
     "label": "label",
     "labels": "Label - label",
     "brand": "merek",
-    "brands": "Merek - merek",
+    "brands": "Merek",
     "packaging": "kemasan",
     "quantity": "Kuantitas",
-    "insightTypeLabel": "Hanya menampilkan",
+    "insightTypeLabel": "Hanya tampilkan",
     "ingredients": "bahan",
     "product_weight": "berat produk",
     "popularity_sort": "Urutkan berdasarkan popularitas",
-    "see_examples": "Lihat contoh-contohnya ",
+    "see_examples": "Lihat contohnya ",
     "no": "Tidak",
     "skip": "Lewati",
     "yes": "Ya",
-    "no_questions_remaining": "Tidak ada pertanyaan yang tersisa",
+    "no_questions_remaining": "Tidak ada pertanyaan lagi",
     "an_error_occurred": "Terjadi kesalahan. Silakan muat ulang, coba lagi nanti, atau hubungi tim.",
-    "countries": "Negara - negara",
+    "countries": "Negara",
     "view": "Lihat",
     "edit": "Sunting",
     "remaining": "Tersisa: {{count}}",
@@ -76,7 +76,7 @@
     "hide_images": "Sembunyikan gambar (memuat lebih cepat)",
     "display_images": "Tampilkan gambar",
     "annotations": "Anotasi",
-    "last_annotations": "Anotasi - anotasi terakhir",
+    "last_annotations": "Catatan terakhir",
     "remaining_annotations": "Pertanyaan yang tersisa",
     "annotated_annotations": "Teranotasi",
     "filters": {
