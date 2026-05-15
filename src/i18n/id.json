@@ -88,8 +88,8 @@
         "country": "negara",
         "brand": "merek",
         "popularity": "popularitas",
-        "campaign": "kemah",
-        "predictor": "peramal"
+        "campaign": "kampanye",
+        "predictor": "prediktor"
       },
       "long_label": {
         "type": "Tipe Pertanyaan",
@@ -109,10 +109,10 @@
       },
       "all_predictors": "Semua prediktor",
       "predictor": {
-        "ridge_model_ml": "Model Punggungan ML",
+        "ridge_model_ml": "Model Ridge",
         "neural": "Saraf",
         "matcher": "Pencocok",
-        "google_cloud_vision": "Visi Awan Google",
+        "google_cloud_vision": "Google Cloud Vision",
         "regex": "Ekspresi reguler",
         "flashtext": "FlashText",
         "nutriscore": "Nutriscore",
@@ -133,8 +133,8 @@
     "log_in": "Masuk",
     "sign_up": "Daftar",
     "login_title": "Jadikan anotasi Anda berarti",
-    "login_description": "Saat ini Anda belum masuk ke Open Food Facts. Untuk mendapatkan jawaban Anda yang langsung diterapkan pada produk, dan dikaitkan dengan akun Anda, pertimbangkan untuk masuk ke akun Open Food Facts Anda, atau buatlah akun baru",
-    "please_wait_while_we_fetch_the_question": "Mohon tunggu sementara kami mengambil pertanyaannya!"
+    "login_description": "Anda saat ini tidak masuk ke Open Food Facts. Untuk membuat jawaban Anda langsung diterapkan pada produk dan dikaitkan dengan akun Anda, pertimbangkan untuk masuk ke akun Open Food Facts Anda, atau membuat akun baru",
+    "please_wait_while_we_fetch_the_question": "Mohon tunggu sementara kami memuat pertanyaannya!"
   },
   "menu": {
     "title": "Hunger Games",
@@ -162,7 +162,7 @@
   "insights": {
     "insights": "Wawasan",
     "barcode": "Kode batang",
-    "barcode_placeholder": "kode batangan",
+    "barcode_placeholder": "kode batang",
     "value_tag": "Label nilai",
     "value_placeholder": "cth: en:mueslis, bjorg,...",
     "type": "Tipe",
@@ -186,8 +186,8 @@
     "completed_at": "Diselesaikan pada",
     "automatic": "Otomatis",
     "human_required": "Manusia dibutuhkan",
-    "edit_product": "Buka suntingan produk",
-    "view_product": "Buka halaman produk",
+    "edit_product": "Edit produk",
+    "view_product": "Halaman produk",
     "view_crops_for_this_product": "Beri anotasi pada logo produk"
   },
   "logos": {
@@ -225,15 +225,15 @@
     "result_count": "Menampilkan {{showing}} pada {{available}} tersedia",
     "flag": "Ada yang salah? Laporkan/tandai gambar tersebut!",
     "unflag": "Hapus tanda pada gambar",
-    "crop_image_title": "memotong logo",
+    "crop_image_title": "potong logo",
     "no_more_questions": "Tidak ada lagi pertanyaan tentang logo ini. Anda dapat mencoba menemukan lebih banyak logo dengan permainan berikut.",
     "loading_messages": {
-      "pending_reference_logos": "Kami memuat beberapa contoh logo untuk menginisialisasi pencarian",
-      "failed_reference_logos": "Kami tidak menemukan logo apa pun dengan anotasi ini. Coba gunakan permainan berikut ini untuk membuat anotasi beberapa di antaranya."
+      "pending_reference_logos": "Kami sedang memuat beberapa contoh logo untuk memulai pencarian",
+      "failed_reference_logos": "Kami tidak menemukan logo dengan anotasi ini. Cobalah gunakan permainan berikut untuk memberi anotasi pada beberapa di antaranya."
     },
     "deep_search": {
       "title": "Pencarian logo",
-      "description": "Pilih logo yang ingin Anda cari, dan mari kita tangkap semuanya. Untuk setiap logo yang Anda beri anotasi, kami akan mengambil logo tetangganya sehingga Anda tidak akan pernah berhenti membuat anotasi. (Tekan Shift untuk memilih kisaran logo)",
+      "description": "Pilih logo yang ingin Anda cari, dan mari kita tangkap semuanya. Untuk setiap logo yang Anda anotasi, kami akan mengambil logo tetangganya sehingga Anda mungkin tidak akan berhenti memberi anotasi. (Tekan Shift untuk memilih rentang logo)",
       "ref_logos": "Logo referensi (logo yang sudah diberi keterangan dengan nilai ini)",
       "remaining": "Sisa untuk dibuat anotasi",
       "select_all": "Pilih semua",
@@ -244,7 +244,7 @@
     "settings": "Pengaturan",
     "language": "Bahasa",
     "save": "Simpan",
-    "reportIssue": "Menemukan masalah? Beri tahu kami.",
+    "reportIssue": "Menemukan bug? Beri tahu kami.",
     "dev_mode_title": "Untuk mendapatkan lebih banyak opsi, aktifkan mode dev",
     "dev_mode_label": "Mode Dev",
     "dev_page_toggle": "Tampilkan halaman {{name}}",
@@ -257,7 +257,7 @@
       "code_of_conduct": "Kode etik ",
       "join_us_on": "Bergabung dengan kami di ",
       "forum": "Forum",
-      "subscribe_to_our": "Berlanganan ",
+      "subscribe_to_our": "Berlangganan ",
       "newsletter": "buletin"
     },
     "discover_the_project": "Temukan proyeknya",
@@ -286,11 +286,11 @@
         "text2": "Cukup jawab dengan <strong>Ya/Tidak</strong>! Tidak tahu jawabannya? Tidak apa-apa, lewati saja.",
         "text3": "Anda juga dapat menggunakan pintasan keyboard Anda: y, n, dan k.",
         "text4": "Anda dapat <strong>menyaring</strong> produk berdasarkan negara, merek, popularitas, dan masih banyak lagi!",
-        "text5": "Jika Anda tidak ingin melakukan hal ini setiap saat, Anda juga dapat <strong>menyimpan filter</strong> dengan mengeklik bintang. Saat Anda kembali lagi, Anda dapat menemukan filter yang tersimpan di halaman beranda"
+        "text5": "Jika Anda tidak ingin melakukan ini setiap kali, Anda juga dapat <strong>menyimpan filter</strong> dengan mengklik ikon bintang. Saat kembali nanti, filter yang disimpan bisa langsung ditemukan di halaman utama"
       },
       "page3": {
         "title": "Permainan Logo",
-        "text1": "Permainan populer lainnya adalah permainan logo di mana Anda harus <strong>memilih semua logo</strong> yang menurut Anda sama.",
+        "text1": "Permainan populer lainnya adalah permainan logo, di mana Anda harus <strong>memilih semua logo</strong> yang menurut Anda sama.",
         "text2": "Seperti yang ditunjukkan pada contoh, setelah Anda memilih semua logo yang mirip, ketik saja nilainya dan pilih apakah logo tersebut merupakan merek, label, atau yang lainnya. Sesederhana itu!"
       },
       "page4": {
@@ -298,7 +298,7 @@
         "text1": "Bantu kami menyelesaikan pertanyaan yang tersisa di label prioritas paling tinggi!",
         "text2": "Kartu-kartu ini terhubung dengan label yang digunakan dalam penghitungan Eco-Score.",
         "text3": "<strong>Apa itu Eco-Score?</strong>",
-        "text4": "Eco-Score menangkap total jejak lingkungan, sehingga memudahkan konsumen untuk membandingkan produk dan memutuskan produk mana yang lebih baik untuk lingkungan."
+        "text4": "Eco‑Score mencatat jejak lingkungan secara keseluruhan, sehingga memudahkan konsumen untuk membandingkan produk dan menentukan mana yang lebih baik bagi lingkungan."
       },
       "page5": {
         "title": "Pengaturan",
@@ -307,7 +307,7 @@
       },
       "page6": {
         "title": "Tur",
-        "text1": "Terjebak di suatu tempat? Ingin mengikuti tur lagi?",
+        "text1": "Terjebak di suatu bagian? Ingin mengikuti tur lagi?",
         "text2": "Cukup klik pada tanda tanya dan mulai perjalanan lagi!"
       }
     },
@@ -319,8 +319,8 @@
       },
       "page2": {
         "title": "Peringatan",
-        "text1": "Jika krop berisi beberapa logo, jangan pilih logo tersebut.",
-        "text2": "Jika gambar terpotongnya memiliki hanya sebagian dari logo, Anda boleh memilihnya."
+        "text1": "Jika hasil potongan berisi beberapa logo, jangan dipilih.",
+        "text2": "Jika potongan hanya berisi sebagian dari logo, Anda boleh memilihnya."
       },
       "page3": {
         "title": "Validasikan",
@@ -355,7 +355,7 @@
       "chose_between_empty_and_partially_filled": "Anda dapat memilih antara produk yang OpenFoodFacts (OFF) tidak memiliki data tentang nutrisinya. Atau produk dengan tabel nutrisi yang terisi sebagian.",
       "indicate_not_provided_value": "Input kosong akan diabaikan. Jika serat tidak ada dalam tabel, Anda dapat meletakkan “-” untuk menentukan nilai tidak tersedia.",
       "validate_one_column": "Pilih ukuran yang ditampilkan pada gambar. Jika Anda memiliki 100g dan ukuran penyajian, silakan pilih 100g karena ini adalah format yang dinormalkan.",
-      "skip_button": "Jika Anda tidak tahu cara menangani suatu gambar, atau Anda tidak ingin melakukannya, tekan “lewati”. Pengguna lain akan dapat menanganinya.",
+      "skip_button": "Jika Anda tidak tahu cara menangani gambar, atau Anda memang tidak ingin melakukannya, tekan ‘lewati’. Pengguna lain akan bisa menanganinya.",
       "invalid_image_button": "Jika gambar bukan merupakan tabel nutrisi, tekan “Gambar tidak valid” untuk menghapusnya dari daftar gambar yang akan diverifikasi",
       "close": "Tutup"
     }
@@ -369,8 +369,8 @@
   "nutriscore": {
     "image_alt": "gambar yang dipotong",
     "label": "Membuat anotasi deteksi logo Nutri-Score berdasarkan batch.",
-    "description": "Untuk melakukannya, pilih semua gambar yang menunjukkan nilai Nutri-Score yang benar/salah ({{label}}), dan klik tombol di bagian bawah untuk mengetahui apakah Anda memilih nilai yang benar atau salah.",
-    "images_remaining": "Masih tersisa {{remaining}} untuk diberi keterangan",
+    "description": "Untuk melakukannya, pilih semua gambar yang menunjukkan nilai Nutri‑Score benar/salah ({{label}}), lalu klik tombol di bagian bawah untuk menandai apakah set yang kamu pilih benar atau salah.",
+    "images_remaining": "Masih ada {{remaining}} yang perlu dianotasi",
     "image_sizes": "Ukuran gambar",
     "zoom_on_logo": "Perbesar logo",
     "select_all": "Pilih semua",
@@ -383,9 +383,9 @@
     "countryLabel": "Negara"
   },
   "ingredients": {
-    "description": "Permainan ini memungkinkan Anda untuk memvalidasi pra-pemilihan gambar daftar bahan dalam berbagai bahasa untuk suatu produk, dan memvalidasi bahan yang diekstrak.",
-    "current_text": "teks dari mati",
-    "confidence_score": "kepercayaan diri berbahasa",
+    "description": "Game ini memungkinkan kamu memvalidasi pilihan awal gambar daftar bahan dalam berbagai bahasa untuk sebuah produk, sekaligus memvalidasi bahan yang sudah diekstrak.",
+    "current_text": "teks dari off",
+    "confidence_score": "kepercayaan deteksi bahasa",
     "revert": "Kembalikan",
     "parsing": "Dapatkan pemahaman mengenai server",
     "send": "Validasi & kirim",
