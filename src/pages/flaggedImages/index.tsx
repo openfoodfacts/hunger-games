@@ -68,7 +68,7 @@ export default function FlaggedImages() {
                 <td>
                   <IconButton
                     onClick={() => {
-                      axios.delete(flagImageUrl + code, {
+                      void axios.delete(flagImageUrl + code, {
                         data: {
                           imgid,
                         },

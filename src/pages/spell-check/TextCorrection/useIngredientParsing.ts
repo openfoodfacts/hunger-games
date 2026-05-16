@@ -18,7 +18,16 @@ export function useIngredientParsing() {
       text,
       lang,
     });
-    const ingredients = parsing.data?.product?.ingredients;
+    // Type guard for axios response
+    type IngredientResponse = {
+      data?: {
+        product?: {
+          ingredients?: ParsedIngredientsType[];
+        };
+      };
+    };
+    const safeParsing = parsing as IngredientResponse;
+    const ingredients = safeParsing.data?.product?.ingredients ?? [];
     setParsing((prev) => ({ ...prev, [text]: ingredients }));
     setLoading(false);
   }

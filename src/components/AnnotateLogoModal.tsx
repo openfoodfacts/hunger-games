@@ -1,4 +1,3 @@
-import * as React from "react";
 import Dialog from "@mui/material/Dialog";
 import DialogContent from "@mui/material/DialogContent";
 import DialogActions from "@mui/material/DialogActions";
@@ -11,7 +10,33 @@ import robotoff from "../robotoff";
 import { IS_DEVELOPMENT_MODE } from "../const";
 import { useMatomoTrackAnswerQuestion } from "../hooks/matomoEvents";
 
-const AnnotateLogoModal = (props) => {
+type AnnotateLogoModalProps = {
+  isOpen: boolean;
+  logos: Array<Logo>;
+  closeAnnotation: () => void;
+  toggleLogoSelection: (id: string) => void;
+  afterAnnotation?: (
+    logos: Logo[],
+    annotation: { value: string; type: string },
+  ) => void;
+  value?: string;
+  type?: string;
+  game?: string;
+};
+
+type Logo = {
+  id: number;
+  distance: number;
+  annotation_type?: string | null;
+  annotation_value?: string | null;
+  selected: boolean;
+  image: {
+    source_image: string;
+    src: string;
+  };
+};
+
+const AnnotateLogoModal = (props: AnnotateLogoModalProps) => {
   const {
     isOpen,
     logos,
@@ -26,7 +51,13 @@ const AnnotateLogoModal = (props) => {
   const { annotateLogo: matomoTrackLogoAnnotation } =
     useMatomoTrackAnswerQuestion();
 
-  const sendAnnotation = async ({ type, value }) => {
+  const sendAnnotation = async ({
+    type,
+    value,
+  }: {
+    type: string;
+    value: string;
+  }) => {
     try {
       if (!IS_DEVELOPMENT_MODE) {
         await robotoff.annotateLogos(
@@ -48,7 +79,7 @@ const AnnotateLogoModal = (props) => {
       logos
         .filter((logo) => logo.selected)
         .forEach(({ id }) => {
-          toggleLogoSelection(id);
+          toggleLogoSelection(String(id));
         });
       closeAnnotation();
       afterAnnotation?.(

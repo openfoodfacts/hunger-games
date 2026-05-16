@@ -93,6 +93,14 @@ by (update path if needed):
 yarn build
 ```
 
+#### Before to push your code
+
+Run lint:
+
+```
+yarn lint
+```
+
 #### Ensure you don't run into CORS issues
 
 - You may encounter CORS issues while testing Hunger Games on your localhost. You can use an extension to overcome those CORS exceptions on localhost. [You can use this one](https://chromewebstore.google.com/detail/moesif-origincors-changer/digfbfaphojjndkpccljibejjbppifbc?pli=1), for no particular reason (we haven't checked it's safe to use)
