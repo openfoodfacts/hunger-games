@@ -1,4 +1,4 @@
-import * as React from "react";
+import { useQuery } from "@tanstack/react-query";
 import axios from "axios";
 
 type Entities = {
@@ -33,35 +33,31 @@ export type DataType = {
 export default function useRobotoffPrediction(
   fetchUrl: string,
 ): [null | DataType, () => void, boolean, null | string] {
-  const [isLoading, setIsLoading] = React.useState(false);
-  const [error, setError] = React.useState(null);
-  const [data, setData] = React.useState<null | DataType>(null);
-
-  const getData = React.useCallback(() => {
-    setIsLoading(true);
-
-    axios
-      .get<
+  const { data, refetch, isFetching, error } = useQuery({
+    queryKey: ["robotoff-prediction", fetchUrl],
+    queryFn: async () => {
+      const result = await axios.get<
         GetIngredientsResponse | GetIngredientsError // That's not clean, but errors return a 200
-      >(fetchUrl)
-      .then((result) => {
-        if (isError(result.data)) {
-          setIsLoading(false);
-          setError(result.data.error);
-          setData(null);
-          return;
-        }
+      >(fetchUrl);
 
-        const rep: DataType = { fullText: result.data.text, detections: {} };
-        result.data.entities.map(({ text, start, end, score, lang }) => {
-          rep.detections[lang.lang] = { text, start, end, score };
-        });
+      if (isError(result.data)) {
+        throw new Error(result.data.error);
+      }
 
-        setIsLoading(false);
-        setError(null);
-        setData(rep);
+      const rep: DataType = { fullText: result.data.text, detections: {} };
+      result.data.entities.forEach(({ text, start, end, score, lang }) => {
+        rep.detections[lang.lang] = { text, start, end, score };
       });
-  }, [fetchUrl]);
 
-  return [data, getData, isLoading, error];
+      return rep;
+    },
+    enabled: false,
+  });
+
+  return [
+    data ?? null,
+    refetch,
+    isFetching,
+    error instanceof Error ? error.message : null,
+  ];
 }
