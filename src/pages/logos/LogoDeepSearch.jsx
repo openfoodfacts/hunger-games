@@ -131,7 +131,7 @@ export default function LogoSearch() {
           ];
         });
         // eslint-disable-next-line no-empty
-      } catch (error) {}
+      } catch {}
     };
 
     setIsLoadingAnnotatedLogos(true);

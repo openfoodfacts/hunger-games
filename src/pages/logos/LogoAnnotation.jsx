@@ -16,28 +16,7 @@ import LogoGrid from "../../components/LogoGrid";
 import BackToTop from "../../components/BackToTop";
 import useUrlParams from "../../hooks/useUrlParams";
 import AnnotateLogoModal from "../../components/AnnotateLogoModal";
-
-export const getQuestionSearchParams = (logoSearchState) => {
-  const urlParams = new URLSearchParams(window.location.search);
-
-  Object.keys(DEFAULT_LOGO_SEARCH_STATE).forEach((key) => {
-    if (urlParams.get(key) !== undefined && !logoSearchState[key]) {
-      urlParams.delete(key);
-    } else if (
-      logoSearchState[key] &&
-      urlParams.get(key) !== logoSearchState[key]
-    ) {
-      urlParams.set(key, logoSearchState[key]);
-    }
-  });
-  return urlParams.toString();
-};
-
-const DEFAULT_LOGO_SEARCH_STATE = {
-  count: 50,
-  logo_id: "",
-  index: "",
-};
+import { DEFAULT_LOGO_SEARCH_STATE } from "./logoAnnotationUtils";
 
 const loadLogos = async (
   targetLogoId,
