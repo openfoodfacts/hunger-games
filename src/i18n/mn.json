@@ -88,7 +88,8 @@
         "country": "улс",
         "brand": "брэнд",
         "popularity": "хандалт",
-        "campaign": "camp"
+        "campaign": "camp",
+        "predictor": "урьдчилан таамаглагч"
       },
       "long_label": {
         "type": "Асуултын төрөл",
@@ -97,12 +98,26 @@
         "brand": "Бүтээгдэхүүний брэнд",
         "popularity": "Хандалтын тоогоор ангилах",
         "edit": "",
-        "campaign": "Кампанит ажил"
+        "campaign": "Кампанит ажил",
+        "predictor": "Урьдчилан таамаглагч (Эх сурвалж)"
       },
       "placeholders": {
         "value": "Value (Fanta, en:organic,...)",
         "brand": "Auchan, Danone, Herta, ...",
-        "campaign": "Annotation campaigns"
+        "campaign": "Annotation campaigns",
+        "predictor": "бүх нийтийн лого илрүүлэгч, тогтмол код, ..."
+      },
+      "all_predictors": "Бүх таамаглагчид",
+      "predictor": {
+        "ridge_model_ml": "Ridge Model ML",
+        "neural": "Мэдрэлийн",
+        "matcher": "Тохируулагч",
+        "google_cloud_vision": "Google Cloud Vision",
+        "regex": "Регекс",
+        "flashtext": "ФлашТекст",
+        "nutriscore": "Nutriscore",
+        "universal_logo_detector": "Бүх нийтийн лого илрүүлэгч",
+        "ocr": "OCR"
       },
       "actions": {
         "edit": "Edit Filters",

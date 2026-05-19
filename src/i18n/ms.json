@@ -88,7 +88,8 @@
         "country": "negara",
         "brand": "jenama",
         "popularity": "popularity",
-        "campaign": "camp"
+        "campaign": "camp",
+        "predictor": "peramal"
       },
       "long_label": {
         "type": "Question Type",
@@ -97,12 +98,26 @@
         "brand": "Product Brand",
         "popularity": "Isih mengikut populariti",
         "edit": "",
-        "campaign": "Campaign"
+        "campaign": "Campaign",
+        "predictor": "Peramal (Sumber)"
       },
       "placeholders": {
         "value": "Value (Fanta, en:organic,...)",
         "brand": "Auchan, Danone, Herta, ...",
-        "campaign": "Annotation campaigns"
+        "campaign": "Annotation campaigns",
+        "predictor": "pengesan-logo-universal, regex, ..."
+      },
+      "all_predictors": "Semua peramal",
+      "predictor": {
+        "ridge_model_ml": "Model Ridge ML",
+        "neural": "Neural",
+        "matcher": "Pemadan",
+        "google_cloud_vision": "Visi Awan Google",
+        "regex": "Regex",
+        "flashtext": "FlashText",
+        "nutriscore": "Nutriscore",
+        "universal_logo_detector": "Pengesan Logo Universal",
+        "ocr": "OCR"
       },
       "actions": {
         "edit": "Edit Filters",

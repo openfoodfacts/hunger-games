@@ -1,34 +1,37 @@
 import * as React from "react";
 import axios from "axios";
 import robotoff from "../../robotoff";
-import { InsightType } from "./insight.types";
 import { useCountry } from "../../contexts/CountryProvider";
 
 export type ProductType = {
-  images: Record<string, any>;
-  serving_size?: any;
-  nutriments?: any;
+  images?: Record<string, { imgid: number }>;
+  serving_size?: unknown;
+  nutriments?: unknown;
 };
 
 export function useRobotoffPredictions() {
   const [isLoading, setIsLoading] = React.useState(false);
   const [count, setCount] = React.useState(0);
 
-  const [insights, setInsights] = React.useState<InsightType[]>([]);
+  const [insights, setInsights] = React.useState<
+    {
+      original: string;
+      correction: string;
+      barcode: string;
+    }[]
+  >([]);
 
   const [offData, setOffData] = React.useState<{
     [barecode: string]: "loading" | ProductType;
   }>({});
 
   const [country] = useCountry();
-
   React.useEffect(() => {
     if (isLoading || insights.length > 0) {
       return;
     }
     let valid = true;
     setIsLoading(true);
-
     robotoff
       .getInsights(
         "",
@@ -54,7 +57,7 @@ export function useRobotoffPredictions() {
     return () => {
       valid = false;
     };
-  }, [insights]);
+  }, [insights, country]);
 
   React.useEffect(() => {
     const barecodeToImport = insights

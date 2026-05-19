@@ -88,7 +88,8 @@
         "country": "ország",
         "brand": "márkanév",
         "popularity": "népszerűség",
-        "campaign": "kampány"
+        "campaign": "kampány",
+        "predictor": "előrejelző"
       },
       "long_label": {
         "type": "Kérdés típusa",
@@ -97,12 +98,26 @@
         "brand": "Termék márkája",
         "popularity": "Rendezés népszerűség szerint",
         "edit": "",
-        "campaign": "Kampány"
+        "campaign": "Kampány",
+        "predictor": "Előrejelző (Forrás)"
       },
       "placeholders": {
         "value": "Érték (Fanta, en:organic, …)",
         "brand": "Auchan, Danone, Herta, …",
-        "campaign": "Annotációs kampányok"
+        "campaign": "Annotációs kampányok",
+        "predictor": "univerzális logódetektor, regex, ..."
+      },
+      "all_predictors": "Minden prediktor",
+      "predictor": {
+        "ridge_model_ml": "Ridge Model ML",
+        "neural": "Idegi",
+        "matcher": "Párosító",
+        "google_cloud_vision": "Google Cloud Vision",
+        "regex": "Reguláris kifejezés",
+        "flashtext": "FlashText",
+        "nutriscore": "Nutriscore",
+        "universal_logo_detector": "Univerzális logódetektor",
+        "ocr": "OCR"
       },
       "actions": {
         "edit": "Szűrők módosítása",

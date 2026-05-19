@@ -88,7 +88,8 @@
         "country": "χώρα",
         "brand": "μάρκα",
         "popularity": "δημοτικότητα",
-        "campaign": "καμπ"
+        "campaign": "καμπ",
+        "predictor": "προφήτης"
       },
       "long_label": {
         "type": "Τύπος Ερώτησης",
@@ -97,12 +98,26 @@
         "brand": "Μάρκα προϊόντος",
         "popularity": "Ταξινόμηση κατά δημοτικότητα",
         "edit": "",
-        "campaign": "Καμπάνια"
+        "campaign": "Καμπάνια",
+        "predictor": "Προγνωστικό (Πηγή)"
       },
       "placeholders": {
         "value": "Τιμή (Fanta, ελ:οργανική,...)",
         "brand": "Auchan, Danone, Herta, ...",
-        "campaign": "Καμπάνιες σχολιασμού"
+        "campaign": "Καμπάνιες σχολιασμού",
+        "predictor": "ανιχνευτής καθολικού λογότυπου, regex, ..."
+      },
+      "all_predictors": "Όλοι οι προγνωστικοί παράγοντες",
+      "predictor": {
+        "ridge_model_ml": "Μοντέλο Ridge ML",
+        "neural": "Νευρικός",
+        "matcher": "Ταίριασμα",
+        "google_cloud_vision": "Google Cloud Vision",
+        "regex": "Regex",
+        "flashtext": "FlashText",
+        "nutriscore": "Nutriscore",
+        "universal_logo_detector": "Ανιχνευτής λογότυπου γενικής χρήσης",
+        "ocr": "OCR"
       },
       "actions": {
         "edit": "Επεξεργασία Φίλτρων",

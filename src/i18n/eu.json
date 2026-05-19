@@ -88,7 +88,8 @@
         "country": "herrialdea",
         "brand": "marka",
         "popularity": "popularity",
-        "campaign": "camp"
+        "campaign": "camp",
+        "predictor": "aurreikusle"
       },
       "long_label": {
         "type": "Question Type",
@@ -97,12 +98,26 @@
         "brand": "Product Brand",
         "popularity": "Sort by popularity",
         "edit": "",
-        "campaign": "Campaign"
+        "campaign": "Campaign",
+        "predictor": "Aurreikuslea (Iturria)"
       },
       "placeholders": {
         "value": "Value (Fanta, en:organic,...)",
         "brand": "Auchan, Danone, Herta, ...",
-        "campaign": "Annotation campaigns"
+        "campaign": "Annotation campaigns",
+        "predictor": "logotipo-detektagailu unibertsala, regex, ..."
+      },
+      "all_predictors": "Aurreikusle guztiak",
+      "predictor": {
+        "ridge_model_ml": "Gandor Eredua ML",
+        "neural": "Neuronala",
+        "matcher": "Parekatzailea",
+        "google_cloud_vision": "Google Cloud Vision",
+        "regex": "Errege-adierazpena",
+        "flashtext": "FlashText",
+        "nutriscore": "Nutriscore",
+        "universal_logo_detector": "Logotipo Unibertsalaren Detektagailua",
+        "ocr": "OCR"
       },
       "actions": {
         "edit": "Edit Filters",

@@ -88,7 +88,8 @@
         "country": "land",
         "brand": "varemærke",
         "popularity": "popularitet",
-        "campaign": "kamp."
+        "campaign": "kamp.",
+        "predictor": "prædiktor"
       },
       "long_label": {
         "type": "Spørgsmålstype",
@@ -97,12 +98,26 @@
         "brand": "Produktmærke",
         "popularity": "Sortér efter popularitet",
         "edit": "",
-        "campaign": "Kampagne"
+        "campaign": "Kampagne",
+        "predictor": "Prædiktor (kilde)"
       },
       "placeholders": {
         "value": "Værdi (Fanta, da:økologisk,...)",
         "brand": "Auchan, Danone, Herta, …",
-        "campaign": "Anmærkningskampagner"
+        "campaign": "Anmærkningskampagner",
+        "predictor": "universel-logo-detektor, regex, ..."
+      },
+      "all_predictors": "Alle prædiktorer",
+      "predictor": {
+        "ridge_model_ml": "Ridge Model ML",
+        "neural": "Neurale",
+        "matcher": "Matcher",
+        "google_cloud_vision": "Google Cloud Vision",
+        "regex": "Regex",
+        "flashtext": "FlashText",
+        "nutriscore": "Nutriscore",
+        "universal_logo_detector": "Universel logo-detektor",
+        "ocr": "OCR"
       },
       "actions": {
         "edit": "Redigér filtre",

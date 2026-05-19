@@ -1,14 +1,6 @@
-export interface FilterParams {
-  insightType: string;
-  valueTag: string;
-  country: string;
-  brand: string;
-  campaign: string;
-  sorted: string;
-  predictor: string;
-}
+import { FilterState } from "../../robotoff";
 
-export function getFilterParams(searchParams: URLSearchParams): FilterParams {
+export function getFilterParams(searchParams: URLSearchParams): FilterState {
   return {
     insightType: searchParams.get("type") ?? "",
     valueTag: searchParams.get("value_tag") ?? "",
@@ -33,7 +25,7 @@ function updateParams(
 }
 export function setFilterParams(
   searchParams: URLSearchParams,
-  newParams: Partial<FilterParams>,
+  newParams: Partial<FilterState>,
 ): URLSearchParams {
   const newSearchParams = new URLSearchParams(searchParams);
 

@@ -88,7 +88,8 @@
         "country": "zemlja",
         "brand": "brend",
         "popularity": "popularnost",
-        "campaign": "kamp"
+        "campaign": "kamp",
+        "predictor": "prediktor"
       },
       "long_label": {
         "type": "Vrsta pitanja",
@@ -97,12 +98,26 @@
         "brand": "Marka proizvoda",
         "popularity": "Poredaj po popularnosti",
         "edit": "",
-        "campaign": "Kampanja"
+        "campaign": "Kampanja",
+        "predictor": "Prediktor (Izvor)"
       },
       "placeholders": {
         "value": "Vrijednost (Fanta, en:organsko,...)",
         "brand": "Auchan, Danone, Herta,...",
-        "campaign": "Kampanje za komentare"
+        "campaign": "Kampanje za komentare",
+        "predictor": "univerzalni detektor loga, regex, ..."
+      },
+      "all_predictors": "Svi prediktori",
+      "predictor": {
+        "ridge_model_ml": "Ridge Model ML",
+        "neural": "Neuralni",
+        "matcher": "Uparivač",
+        "google_cloud_vision": "Google Cloud Vision",
+        "regex": "Regeks",
+        "flashtext": "FlashText",
+        "nutriscore": "Nutriscore",
+        "universal_logo_detector": "Univerzalni detektor logotipa",
+        "ocr": "Optičko prepoznavanje znakova (OCR)"
       },
       "actions": {
         "edit": "Uredi filtere",

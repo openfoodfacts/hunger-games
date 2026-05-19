@@ -88,7 +88,8 @@
         "country": "מדינה",
         "brand": "מותג",
         "popularity": "פופולריות",
-        "campaign": "פרסום"
+        "campaign": "פרסום",
+        "predictor": "מְנַבֵּא"
       },
       "long_label": {
         "type": "סוג שאלה",
@@ -97,12 +98,26 @@
         "brand": "מותג המוצר",
         "popularity": "מיון לפי פופולריות",
         "edit": "",
-        "campaign": "מסע פרסום"
+        "campaign": "מסע פרסום",
+        "predictor": "מנבא (מקור)"
       },
       "placeholders": {
         "value": "ערך (פאנטה, en:organic,…)",
         "brand": "טרה, אסם, צבר, …",
-        "campaign": "מסעות פרסום לתיוג"
+        "campaign": "מסעות פרסום לתיוג",
+        "predictor": "גלאי לוגו אוניברסלי, ביטוי רגולרי, ..."
+      },
+      "all_predictors": "כל המנבאים",
+      "predictor": {
+        "ridge_model_ml": "דגם רידג' ML",
+        "neural": "עֲצַבִּי",
+        "matcher": "מאחזר",
+        "google_cloud_vision": "גוגל קלאוד ויז'ן",
+        "regex": "רֶגֶקס",
+        "flashtext": "טקסט פלאש",
+        "nutriscore": "נוטריסקור",
+        "universal_logo_detector": "גלאי לוגו אוניברסלי",
+        "ocr": "זיהוי תווים אופטי (OCR)"
       },
       "actions": {
         "edit": "עריכת מסננים",

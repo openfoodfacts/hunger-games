@@ -88,7 +88,8 @@
         "country": "страна",
         "brand": "марка",
         "popularity": "популярность",
-        "campaign": "лагерь"
+        "campaign": "лагерь",
+        "predictor": "предиктор"
       },
       "long_label": {
         "type": "Тип вопроса",
@@ -97,12 +98,26 @@
         "brand": "Марка продукта",
         "popularity": "Сортировка по популярности",
         "edit": "",
-        "campaign": "Кампания"
+        "campaign": "Кампания",
+        "predictor": "Предиктор (Источник)"
       },
       "placeholders": {
         "value": "Ценность(фанта, en:organic)",
         "brand": "Auchan, Danone, Herta, ...",
-        "campaign": "Аннотационные кампании"
+        "campaign": "Аннотационные кампании",
+        "predictor": "universal-logo-detector, regex, ..."
+      },
+      "all_predictors": "Все предикторы",
+      "predictor": {
+        "ridge_model_ml": "Модель Ридж ML",
+        "neural": "Нейронный",
+        "matcher": "Совместитель",
+        "google_cloud_vision": "Google Cloud Vision",
+        "regex": "Регулярное выражение",
+        "flashtext": "Флэштекст",
+        "nutriscore": "Nutriscore",
+        "universal_logo_detector": "Универсальный детектор логотипов",
+        "ocr": "ОКР"
       },
       "actions": {
         "edit": "Редактировать фильтры",

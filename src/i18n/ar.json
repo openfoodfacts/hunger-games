@@ -88,7 +88,8 @@
         "country": "الدولة",
         "brand": "3alama-tijariya",
         "popularity": "شعبية",
-        "campaign": "مخيم"
+        "campaign": "مخيم",
+        "predictor": "المتنبئ"
       },
       "long_label": {
         "type": "نوع السؤال",
@@ -97,12 +98,26 @@
         "brand": "العلامة التجارية للمنتج",
         "popularity": "التصنيف عبر الشعبية",
         "edit": "",
-        "campaign": "حملة"
+        "campaign": "حملة",
+        "predictor": "المتنبئ (المصدر)"
       },
       "placeholders": {
         "value": "القيمة (فانتا، إن:عضوية،...)",
         "brand": "أوشان، دانون، هيرتا، ...",
-        "campaign": "حملات التعليقات التوضيحية"
+        "campaign": "حملات التعليقات التوضيحية",
+        "predictor": "كاشف الشعارات العالمي، التعبيرات النمطية، ..."
+      },
+      "all_predictors": "جميع المؤشرات التنبؤية",
+      "predictor": {
+        "ridge_model_ml": "ريدج موديل ML",
+        "neural": "عصبي",
+        "matcher": "المطابق",
+        "google_cloud_vision": "رؤية جوجل كلاود",
+        "regex": "التعبير النمطي",
+        "flashtext": "نص فلاش",
+        "nutriscore": "نوتريسكور",
+        "universal_logo_detector": "كاشف الشعارات العالمي",
+        "ocr": "التعرف الضوئي على الأحرف"
       },
       "actions": {
         "edit": "تعديل الفلاتر",

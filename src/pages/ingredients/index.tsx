@@ -11,7 +11,7 @@ import TabPanel from "@mui/lab/TabPanel";
 import Link from "@mui/material/Link";
 import TextField from "@mui/material/TextField";
 import MenuItem from "@mui/material/MenuItem";
-
+import { useCountry } from "../../contexts/CountryProvider";
 import { MapInteractionCSS } from "react-map-interaction";
 
 import Loader from "../loader";
@@ -19,10 +19,6 @@ import off from "../../off";
 import { useTranslation } from "react-i18next";
 import useData from "./useData";
 import ImageAnnotation from "./ImageAnnotation";
-import { useSearchParams } from "react-router";
-import { localSettings } from "../../localeStorageManager";
-import countryNames from "../../assets/countries.json";
-import { getCountryId } from "../../utils/getCountryId";
 import { OFF_URL } from "../../const";
 
 function ProductInterface(props) {
@@ -141,27 +137,8 @@ function ProductInterface(props) {
 
 export default function IngredientsPage() {
   const { t } = useTranslation();
-
-  const localData = localSettings.fetch();
-  const [searchParams, setSearchParams] = useSearchParams();
-  const [selectedCountry, setSelectedCountry] = React.useState(
-    getCountryId(searchParams.get("cc")) || localData["country"] || "en:france",
-  );
-
-  React.useEffect(() => {
-    setSearchParams({ cc: selectedCountry });
-  }, [selectedCountry, searchParams]);
-
-  const selectedCountryCode = React.useMemo(() => {
-    const country = countryNames.find(({ id }) => id === selectedCountry);
-    if (!country) {
-      return undefined;
-    }
-    return country.countryCode;
-  }, [selectedCountry]);
-
-  const [data, removeHead, isLoading] = useData(selectedCountryCode);
-
+  const [country] = useCountry();
+  const [data, removeHead, isLoading] = useData(country);
   return (
     <React.Suspense fallback={<Loader />}>
       <Stack
@@ -173,22 +150,6 @@ export default function IngredientsPage() {
         }}
       >
         <Typography>{t("ingredients.description")}</Typography>
-        <TextField
-          select
-          size="small"
-          label={t("green-score.countryLabel")}
-          value={selectedCountry}
-          onChange={(event) => {
-            setSelectedCountry(event.target.value);
-          }}
-          sx={{ width: 200 }}
-        >
-          {countryNames.map((country) => (
-            <MenuItem value={country.id} key={country.id}>
-              {country.label}
-            </MenuItem>
-          ))}
-        </TextField>
       </Stack>
       {/* <IngeredientDisplay /> */}
       {isLoading ? (

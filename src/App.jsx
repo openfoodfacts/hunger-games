@@ -12,9 +12,11 @@ import {
   getColor,
   getIsDevMode,
   getVisiblePages,
+  getStoredColorPreference,
   localSettingsKeys,
   localSettings,
 } from "./localeStorageManager";
+
 import LoginContext from "./contexts/login";
 import off from "./off";
 import { IS_DEVELOPMENT_MODE, OFF_URL } from "./const";
@@ -22,6 +24,7 @@ import ColorModeContext from "./contexts/colorMode";
 
 import Loader from "./pages/loader";
 import { CountryProvider } from "./contexts/CountryProvider";
+import { OffWebcomponentsConfiguration } from "./components/OffWebcomponents";
 
 const GreenScorePage = React.lazy(() => import("./pages/green-score"));
 const LogoAnnotationPage = React.lazy(
@@ -44,8 +47,14 @@ const ShouldLoggedinPage = React.lazy(
   () => import("./pages/shouldLoggedinPage"),
 );
 const PackagingPage = React.lazy(() => import("./pages/packaging"));
-const LogoQuestionValidator = React.lazy(
-  () => import("./pages/logosValidator/LogoQuestionValidator"),
+// const LogoQuestionValidator = React.lazy(
+//   () => import("./pages/logosValidator/LogoQuestionValidator"),
+// );
+const IngredientDetectionPage = React.lazy(
+  () => import("./pages/ingredient-detection"),
+);
+const IngredientSpellcheckPage = React.lazy(
+  () => import("./pages/ingredient-spellcheck"),
 );
 const DashBoard = React.lazy(() => import("./pages/logosValidator/DashBoard"));
 const GalaBoard = React.lazy(() => import("./pages/GalaPage"));
@@ -181,6 +190,22 @@ export default function App() {
     [],
   );
 
+  React.useEffect(() => {
+    const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
+
+    const handleChange = (event) => {
+      if (!getStoredColorPreference()) {
+        setMode(event.matches ? "dark" : "light");
+      }
+    };
+
+    mediaQuery.addEventListener("change", handleChange);
+
+    return () => {
+      mediaQuery.removeEventListener("change", handleChange);
+    };
+  }, []);
+
   const theme = createTheme(getToken(mode));
 
   return (
@@ -194,6 +219,7 @@ export default function App() {
               >
                 <QueryClientProvider client={queryClient}>
                   <CssBaseline />
+                  <OffWebcomponentsConfiguration />
                   <ResponsiveAppBar />
                   <Routes>
                     <Route path="/" element={<Home />} />
@@ -260,14 +286,22 @@ export default function App() {
                       }
                     />
 
+                    <Route
+                      path="/ingredient-detection"
+                      element={<IngredientDetectionPage />}
+                    />
+                    <Route
+                      path="/ingredient-spellcheck"
+                      element={<IngredientSpellcheckPage />}
+                    />
                     <Route path="/brandinator" element={<Brandinator />} />
                     <Route path="/settings" element={<SettingsPage />} />
                     <Route path="/questions" element={<QuestionsPage />} />
                     <Route path="/insights" element={<InsightsPage />} />
                     <Route path="*" element={<NotFoundPage />} />
-                    <Route path="/logoQuestion/" elemnt={<DashBoard />} />
-                    <Route
-                      path="/logoQuestion/:valueTag"
+                    {/* <Route path="/logoQuestion/" element={<DashBoard />} /> */}
+                    {/* <Route
+                      path="/logoQuestion"
                       element={
                         userState.isLoggedIn ? (
                           <LogoQuestionValidator />
@@ -275,7 +309,7 @@ export default function App() {
                           <ShouldLoggedinPage />
                         )
                       }
-                    />
+                    /> */}
 
                     <Route path="/dashboard/" element={<DashBoard />} />
                     <Route

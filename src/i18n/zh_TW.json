@@ -88,7 +88,8 @@
         "country": "國家 ",
         "brand": "品牌 ",
         "popularity": "人氣 ",
-        "campaign": "展銷 "
+        "campaign": "展銷 ",
+        "predictor": "預測器"
       },
       "long_label": {
         "type": "問題類型 ",
@@ -97,12 +98,26 @@
         "brand": "產品品牌 ",
         "popularity": "按照熱門程度排序",
         "edit": "",
-        "campaign": "展銷活動 "
+        "campaign": "展銷活動 ",
+        "predictor": "預測器（來源）"
       },
       "placeholders": {
         "value": "值(芬達，英文：有機的，…)",
         "brand": "歐尚（Auchan）、達能（Danone）和爾塔（Herta）…",
-        "campaign": "標注活動"
+        "campaign": "標注活動",
+        "predictor": "通用徽標偵測器、正規表示式、…"
+      },
+      "all_predictors": "所有預測因子",
+      "predictor": {
+        "ridge_model_ml": "嶺模型機器學習",
+        "neural": "神經",
+        "matcher": "匹配器",
+        "google_cloud_vision": "Google Cloud Vision",
+        "regex": "正規表示式",
+        "flashtext": "FlashText",
+        "nutriscore": "營養評分",
+        "universal_logo_detector": "通用標誌偵測器",
+        "ocr": "OCR"
       },
       "actions": {
         "edit": "編輯篩選器 ",

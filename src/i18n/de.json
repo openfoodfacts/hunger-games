@@ -88,7 +88,8 @@
         "country": "Land",
         "brand": "Marke",
         "popularity": "Beliebtheit",
-        "campaign": "Kampagne"
+        "campaign": "Kampagne",
+        "predictor": "Prädiktor"
       },
       "long_label": {
         "type": "Art der Frage",
@@ -97,12 +98,26 @@
         "brand": "Marke des Produkts",
         "popularity": "Nach Beliebtheit sortieren",
         "edit": "",
-        "campaign": "Kampagne"
+        "campaign": "Kampagne",
+        "predictor": "Prädiktor (Quelle)"
       },
       "placeholders": {
         "value": "Wert (Fanta, de: biologisch, ...)",
         "brand": "Rewe, Danone, Herta, ...",
-        "campaign": "Kampagnen kommentieren"
+        "campaign": "Kampagnen kommentieren",
+        "predictor": "universeller Logo-Detektor, regulärer Ausdruck, ..."
+      },
+      "all_predictors": "Alle Prädiktoren",
+      "predictor": {
+        "ridge_model_ml": "Ridge-Modell ML",
+        "neural": "Neuronal",
+        "matcher": "Matcher",
+        "google_cloud_vision": "Google Cloud Vision",
+        "regex": "Regex",
+        "flashtext": "FlashText",
+        "nutriscore": "Nutriscore",
+        "universal_logo_detector": "Universeller Logo-Detektor",
+        "ocr": "OCR"
       },
       "actions": {
         "edit": "Filter bearbeiten",

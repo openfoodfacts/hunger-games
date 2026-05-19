@@ -88,7 +88,8 @@
         "country": "kraj",
         "brand": "marka",
         "popularity": "popularność",
-        "campaign": "kampania"
+        "campaign": "kampania",
+        "predictor": "urządzenie prognozujące"
       },
       "long_label": {
         "type": "Rodzaj Pytania",
@@ -97,12 +98,26 @@
         "brand": "Marka Produktu",
         "popularity": "Sortuj według popularności",
         "edit": "",
-        "campaign": "Kampania"
+        "campaign": "Kampania",
+        "predictor": "Predyktor (Źródło)"
       },
       "placeholders": {
         "value": "Wartość (Fanta, pl:organiczna,...)",
         "brand": "Auchan, Danone, Herta, ...",
-        "campaign": "Kampanie adnotacyjne"
+        "campaign": "Kampanie adnotacyjne",
+        "predictor": "uniwersalny-detektor-logo, wyrażenie regularne, ..."
+      },
+      "all_predictors": "Wszystkie predyktory",
+      "predictor": {
+        "ridge_model_ml": "Model grzbietowy ML",
+        "neural": "Nerwowy",
+        "matcher": "Matcher",
+        "google_cloud_vision": "Wizja Google Cloud",
+        "regex": "Wyrażenie regularne",
+        "flashtext": "FlashText",
+        "nutriscore": "Nutriscore",
+        "universal_logo_detector": "Uniwersalny detektor logo",
+        "ocr": "OCR"
       },
       "actions": {
         "edit": "Edytuj Filtry",

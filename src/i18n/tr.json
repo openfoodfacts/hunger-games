@@ -88,7 +88,8 @@
         "country": "ülke",
         "brand": "marka",
         "popularity": "popülerlik",
-        "campaign": "kamp"
+        "campaign": "kamp",
+        "predictor": "tahminci"
       },
       "long_label": {
         "type": "Soru Tipi",
@@ -97,12 +98,26 @@
         "brand": "Ürünün Markası",
         "popularity": "Popülerliğe göre sırala",
         "edit": "",
-        "campaign": "Kampanya"
+        "campaign": "Kampanya",
+        "predictor": "Tahminci (Kaynak)"
       },
       "placeholders": {
         "value": "Değer (fanta, en:organic,...)",
         "brand": "Auchan, Danone, Herta, ...",
-        "campaign": "Yorumlama kampanyaları"
+        "campaign": "Yorumlama kampanyaları",
+        "predictor": "evrensel logo dedektörü, regex, ..."
+      },
+      "all_predictors": "Tüm tahminciler",
+      "predictor": {
+        "ridge_model_ml": "Ridge Model ML",
+        "neural": "Sinirsel",
+        "matcher": "Eşleştirici",
+        "google_cloud_vision": "Google Cloud Vision",
+        "regex": "Regex",
+        "flashtext": "Flaş Metin",
+        "nutriscore": "Nutriscore",
+        "universal_logo_detector": "Evrensel Logo Dedektörü",
+        "ocr": "OCR"
       },
       "actions": {
         "edit": "Süzgeçleri Düzenle",
@@ -363,7 +378,7 @@
     "correct": "Doğru ({{label}})"
   },
   "green-score": {
-    "description": "Here is a summary of questions that could improve Eco-Score computation",
+    "description": "İşte Eco-Score hesaplamasını iyileştirebilecek soruların bir özeti",
     "countryLabel": "Ülke"
   },
   "ingredients": {

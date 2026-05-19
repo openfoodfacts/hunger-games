@@ -44,6 +44,13 @@ The main goal is: Every Open Food Facts user can annotate products in a few minu
 
 ## 👩‍💻 Development
 
+### Other projects that Hunger Games is built upon
+
+Hunger Games is built upon the following projects. Contributions to these projects will benefit Hunger Games, and they use the same technologies (JavaScript):
+
+- https://github.com/openfoodfacts/openfoodfacts-js
+- https://github.com/openfoodfacts/openfoodfacts-webcomponents
+
 ### Requirements:
 
 - [Node](https://nodejs.org)
@@ -54,6 +61,29 @@ The main goal is: Every Open Food Facts user can annotate products in a few minu
 
 - [Install Node](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
 - [Install yarn](https://classic.yarnpkg.com/lang/en/docs/install/)
+- Install libraries: `yarn install`
+- run the project locally `yarn dev`
+
+#### Use local version of openfoodfacts-webcomponents
+
+Assuming both `openfoodfacts-webcomponents` and `hunger-games` repositories have been cloned in the same parent folder:
+
+```
+parent-folder/
+|-hunger-games/
+|-openfoodfacts-webcomponents/
+|--package.json
+```
+
+- In openfoodfacts-webcomponents/web-components, run: `npm run build`
+
+- In hunger-games, in the file `package.json`, replace:
+  > "@openfoodfacts/openfoodfacts-webcomponents": "^1.15.1",
+
+by (update path if needed):
+
+> "@openfoodfacts/openfoodfacts-webcomponents": "file:../openfoodfacts-webcomponents/web-components",
+
 - Install libraries: `yarn install`
 - run the project locally `yarn dev`
 

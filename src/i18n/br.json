@@ -88,7 +88,8 @@
         "country": "bro",
         "brand": "merk",
         "popularity": "poblekelezh",
-        "campaign": "camp"
+        "campaign": "camp",
+        "predictor": "rakweler"
       },
       "long_label": {
         "type": "Question Type",
@@ -97,12 +98,26 @@
         "brand": "Product Brand",
         "popularity": "Silañ dre vrud",
         "edit": "",
-        "campaign": "Campaign"
+        "campaign": "Campaign",
+        "predictor": "Rakweler (Mammenn)"
       },
       "placeholders": {
         "value": "Value (Fanta, en:organic,...)",
         "brand": "Auchan, Danone, Herta, ...",
-        "campaign": "Annotation campaigns"
+        "campaign": "Annotation campaigns",
+        "predictor": "universal-logo-detector, regex, ..."
+      },
+      "all_predictors": "An holl rakwelerion",
+      "predictor": {
+        "ridge_model_ml": "Ridge Model ML",
+        "neural": "Neurel",
+        "matcher": "Matcher",
+        "google_cloud_vision": "Google Cloud Vision",
+        "regex": "Regex",
+        "flashtext": "Testenn Flash",
+        "nutriscore": "Nutriscore",
+        "universal_logo_detector": "Detektour logo hollvedel",
+        "ocr": "OCR"
       },
       "actions": {
         "edit": "Edit Filters",

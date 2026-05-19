@@ -1,5 +1,7 @@
 import * as React from "react";
 import { Link } from "react-router";
+import { useTranslation } from "react-i18next";
+import { useTheme } from "@mui/material/styles";
 
 import Button from "@mui/material/Button";
 import Badge from "@mui/material/Badge";
@@ -11,39 +13,30 @@ import LinkIcon from "@mui/icons-material/Link";
 import DeleteIcon from "@mui/icons-material/Delete";
 import DoneIcon from "@mui/icons-material/Done";
 import MuiLink from "@mui/material/Link";
-import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 
 import Loader from "../loader";
 import QuestionSkeleton from "./QuestionSkeleton";
+import CroppedLogo from "../../components/CroppedLogo";
+import ZoomableImage from "../../components/ZoomableImage";
+import { SimilarQuestions } from "./SimilarQuestions";
 
-import { useTranslation } from "react-i18next";
-import {
-  CORRECT_INSIGHT,
-  WRONG_INSIGHT,
-  SKIPPED_INSIGHT,
-  OFF_DOMAIN,
-} from "../../const";
+import type { QuestionInterface, FilterState } from "../../robotoff";
+
+import useQuestions from "../../hooks/useQuestions";
+import { useKeyboardShortcuts } from "./useKeyboardShortcuts";
+import { useFilterState } from "../../hooks/useFilterState";
+import { useProductData } from "../../hooks/useProduct";
+import { CORRECT_INSIGHT, WRONG_INSIGHT, SKIPPED_INSIGHT } from "../../const";
+import { getValueTagQuestionsURL } from "./utils/getValueTagQuestionsURL";
 import {
   getFullSizeImage,
   getValueTagExamplesURL,
   getNbOfQuestionForValue,
 } from "./utils";
-import { getValueTagQuestionsURL } from "./utils/getValueTagQuestionsURL";
-import useQuestions, { AnswerQuestionParams } from "../../hooks/useQuestions";
-
-import { useKeyboardShortcuts } from "./useKeyboardShortcuts";
-import CroppedLogo from "../../components/CroppedLogo";
-import ZoomableImage from "../../components/ZoomableImage";
-import { useFilterState, FilterParams } from "../../hooks/useFilterState";
-import { QuestionInterface } from "../../robotoff";
-import { useProductData } from "../../hooks/useProduct";
-import getTaxonomy from "../../offTaxonomy";
-import { useQuery } from "@tanstack/react-query";
-import { SimilarQuestions } from "./SimilarQuestions";
 
 const usePotentialQuestionNumber = (
-  filterState: FilterParams,
+  filterState: FilterState,
   question: QuestionInterface | null,
 ) => {
   const [nbOfPotentialQuestion, setNbOfPotentialQuestions] = React.useState<
@@ -82,6 +75,131 @@ const usePotentialQuestionNumber = (
   return nbOfPotentialQuestion;
 };
 
+type AnswerType =
+  | typeof WRONG_INSIGHT
+  | typeof CORRECT_INSIGHT
+  | typeof SKIPPED_INSIGHT;
+
+/**
+ * Layout containing the three buttons to answer the question (yes, no, skip)
+ * and their associated keyboard shortcuts.
+ */
+function QuestionAnswerButtons({
+  shortcuts,
+  onAnswerQuestion,
+}: {
+  shortcuts: ReturnType<typeof useKeyboardShortcuts>;
+  onAnswerQuestion: (answer: AnswerType) => void;
+}) {
+  const { t } = useTranslation();
+
+  return (
+    <>
+      <Stack direction="row" justifyContent="center" spacing={2} sx={{ mb: 1 }}>
+        <Button
+          onClick={() => onAnswerQuestion(WRONG_INSIGHT)}
+          color="error"
+          variant="contained"
+          size="large"
+          sx={{ display: "flex", flexDirection: "column", flexGrow: 1 }}
+        >
+          <DeleteIcon />
+          {t("questions.no")} ({shortcuts.no})
+        </Button>
+        <Button
+          onClick={() => onAnswerQuestion(CORRECT_INSIGHT)}
+          startIcon={<DoneIcon />}
+          color="success"
+          variant="contained"
+          size="large"
+          sx={{ display: "flex", flexDirection: "column", flexGrow: 1 }}
+        >
+          {t("questions.yes")} ({shortcuts.yes})
+        </Button>
+      </Stack>
+      <Button
+        onClick={() => onAnswerQuestion(SKIPPED_INSIGHT)}
+        color="secondary"
+        variant="contained"
+        size="medium"
+        autoFocus
+        sx={{ py: "1rem" }}
+      >
+        {t("questions.skip")} ({shortcuts.skip})
+      </Button>
+    </>
+  );
+}
+
+/**
+ * Component to display an image with a loader while the image is loading.
+ */
+function QuestionImage({
+  src,
+  alt = "Question Image",
+}: {
+  src: string;
+  alt?: string;
+}) {
+  const theme = useTheme();
+  const isDesktop = useMediaQuery(theme.breakpoints.up("md"));
+  const [loadedSrc, setLoadedSrc] = React.useState<string | null>(null);
+
+  const imageHeight = isDesktop ? "100%" : "calc(100% - 24px)";
+  const loaded = loadedSrc === src;
+
+  return (
+    <>
+      {!loaded && (
+        <Box
+          sx={{
+            height: imageHeight,
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          <Loader />
+        </Box>
+      )}
+      <ZoomableImage
+        src={src}
+        srcFull={getFullSizeImage(src)}
+        onLoad={() => setLoadedSrc(src)}
+        style={{
+          height: imageHeight,
+          display: loaded ? "inline-block" : "none",
+          zIndex: 9,
+        }}
+        imageProps={{
+          style: { maxHeight: "100%", maxWidth: "100%" },
+          alt: alt,
+        }}
+      />
+    </>
+  );
+}
+
+export function QuestionStatusMessage({
+  message,
+  showLoader = false,
+}: {
+  message: string;
+  showLoader?: boolean;
+}) {
+  return (
+    <Box sx={{ width: "100%", textAlign: "center", py: 10 }}>
+      <Typography variant="subtitle1">{message}</Typography>
+      {showLoader && (
+        <>
+          <br />
+          <Loader />
+        </>
+      )}
+    </Box>
+  );
+}
+
 export default function QuestionDisplay() {
   const { t } = useTranslation();
 
@@ -100,23 +218,29 @@ export default function QuestionDisplay() {
     filterState,
     question,
   );
+
   const shortcuts = useKeyboardShortcuts(question, answerQuestion);
 
   if (question === null) {
     if (status === "pending") {
       return (
         <QuestionSkeleton />
+        <QuestionStatusMessage
+          message={t("questions.please_wait_while_we_fetch_the_question")}
+          showLoader
+        />
       );
     }
+
     if (status === "error") {
       return (
-        <Box sx={{ width: "100%", textAlign: "center", py: 10, m: 0 }}>
-          <Typography variant="subtitle1">
-            {t("questions.an_error_occurred")}
-          </Typography>
-        </Box>
+        <QuestionStatusMessage
+          message={t("questions.an_error_occurred")}
+          showLoader={false}
+        />
       );
     }
+
     return (
       <SimilarQuestions
         filterState={filterState}
@@ -129,6 +253,7 @@ export default function QuestionDisplay() {
     <Stack
       sx={{ textAlign: "center", flexGrow: 1, flexBasis: 0, flexShrink: 1 }}
     >
+      {/* Header */}
       <Stack sx={{ alignItems: "center" }}>
         <Typography>{question?.question}</Typography>
         <Box sx={{ display: "flex", alignItems: "center" }}>
@@ -174,7 +299,10 @@ export default function QuestionDisplay() {
           </MuiLink>
         )}
       </Stack>
+
       <Divider />
+
+      {/* Image display */}
       <Box
         flexGrow={1}
         flexShrink={1}
@@ -185,14 +313,9 @@ export default function QuestionDisplay() {
         }}
       >
         {question.source_image_url ? (
-          <ZoomableImage
+          <QuestionImage
+            key={question.source_image_url}
             src={question.source_image_url}
-            srcFull={getFullSizeImage(question.source_image_url)}
-            style={{
-              height: isDesktop ? "100%" : "calc(100% - 24px)",
-              display: "inline-block",
-            }}
-            imageProps={{ alt: "", style: { maxHeight: "100%", maxWidth: "100%" } }}
           />
         ) : (
           <Typography sx={{ marginTop: 20 }}>Image not found</Typography>
@@ -215,53 +338,12 @@ export default function QuestionDisplay() {
           </Typography>
         )}
       </Box>
-      <Stack direction="row" justifyContent="center" spacing={2} sx={{ mb: 1 }}>
-        <Button
-          onClick={() =>
-            answerQuestion({
-              answer: WRONG_INSIGHT,
-              question,
-            })
-          }
-          color="error"
-          variant="contained"
-          size="large"
-          sx={{ display: "flex", flexDirection: "column", flexGrow: 1 }}
-        >
-          <DeleteIcon />
-          {t("questions.no")} ({shortcuts.no})
-        </Button>
-        <Button
-          onClick={() =>
-            answerQuestion({
-              answer: CORRECT_INSIGHT,
-              question,
-            })
-          }
-          startIcon={<DoneIcon />}
-          color="success"
-          variant="contained"
-          size="large"
-          sx={{ display: "flex", flexDirection: "column", flexGrow: 1 }}
-        >
-          {t("questions.yes")} ({shortcuts.yes})
-        </Button>
-      </Stack>
-      <Button
-        onClick={() =>
-          answerQuestion({
-            answer: SKIPPED_INSIGHT,
-            question,
-          })
-        }
-        color="secondary"
-        variant="contained"
-        size="medium"
-        autoFocus
-        sx={{ py: "1rem" }}
-      >
-        {t("questions.skip")} ({shortcuts.skip})
-      </Button>
+
+      {/* Footer */}
+      <QuestionAnswerButtons
+        shortcuts={shortcuts}
+        onAnswerQuestion={(answer) => answerQuestion({ question, answer })}
+      />
     </Stack>
   );
 }

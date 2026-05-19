@@ -88,7 +88,8 @@
         "country": "country",
         "brand": "brand",
         "popularity": "popularity",
-        "campaign": "camp"
+        "campaign": "camp",
+        "predictor": "პროგნოზირებადი"
       },
       "long_label": {
         "type": "Question Type",
@@ -97,12 +98,26 @@
         "brand": "Product Brand",
         "popularity": "Sort by popularity",
         "edit": "",
-        "campaign": "Campaign"
+        "campaign": "Campaign",
+        "predictor": "პროგნოზიორი (წყარო)"
       },
       "placeholders": {
         "value": "Value (Fanta, en:organic,...)",
         "brand": "Auchan, Danone, Herta, ...",
-        "campaign": "Annotation campaigns"
+        "campaign": "Annotation campaigns",
+        "predictor": "უნივერსალური ლოგოს დეტექტორი, რეგულარული ლოგო, ..."
+      },
+      "all_predictors": "ყველა პროგნოზირებადი",
+      "predictor": {
+        "ridge_model_ml": "Ridge Model ML",
+        "neural": "ნევრალური",
+        "matcher": "შესატყვისი",
+        "google_cloud_vision": "Google Cloud Vision",
+        "regex": "რეგექსი",
+        "flashtext": "ფლეშტექსტი",
+        "nutriscore": "ნუტრისქორი",
+        "universal_logo_detector": "უნივერსალური ლოგოს დეტექტორი",
+        "ocr": "OCR"
       },
       "actions": {
         "edit": "Edit Filters",

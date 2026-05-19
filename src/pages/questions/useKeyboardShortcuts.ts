@@ -14,8 +14,8 @@ export const useKeyboardShortcuts = (
 
   React.useEffect(() => {
     function handleShortCut(event: KeyboardEvent) {
-      // @ts-ignore
-      const preventShortCut = event.target.tagName.toUpperCase() === "INPUT";
+      // @ts-expect-error tagName exists on event.target
+      const preventShortCut = event.target?.tagName.toUpperCase() === "INPUT";
       if (question?.insight_id && !preventShortCut) {
         switch (event.key) {
           case shortcuts.skip:
@@ -44,13 +44,7 @@ export const useKeyboardShortcuts = (
 
     window.addEventListener("keydown", handleShortCut);
     return () => window.removeEventListener("keydown", handleShortCut);
-  }, [
-    question?.insight_id,
-    answerQuestion,
-    shortcuts.skip,
-    shortcuts.yes,
-    shortcuts.no,
-  ]);
+  }, [question, answerQuestion, shortcuts.skip, shortcuts.yes, shortcuts.no]);
 
   return shortcuts;
 };

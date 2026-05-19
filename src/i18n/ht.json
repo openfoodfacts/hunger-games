@@ -88,7 +88,8 @@
         "country": "peyi",
         "brand": "mak",
         "popularity": "popilarite",
-        "campaign": "camp"
+        "campaign": "camp",
+        "predictor": "prediktè"
       },
       "long_label": {
         "type": "Kalite Kesyon",
@@ -97,12 +98,26 @@
         "brand": "Mak pwodwi",
         "popularity": "Triye pa popilarite",
         "edit": "",
-        "campaign": "Kanpay"
+        "campaign": "Kanpay",
+        "predictor": "Prediktè (Sous)"
       },
       "placeholders": {
         "value": "Valè (Fanta, en:organic,...)",
         "brand": "Auchan, Danone, Herta, ...",
-        "campaign": "Annotation campaigns"
+        "campaign": "Annotation campaigns",
+        "predictor": "detektè-logo-inivèsèl, regex, ..."
+      },
+      "all_predictors": "Tout prediktè yo",
+      "predictor": {
+        "ridge_model_ml": "Modèl Ridge ML",
+        "neural": "Neral",
+        "matcher": "Matcher",
+        "google_cloud_vision": "Vizyon Google Cloud",
+        "regex": "Regèks",
+        "flashtext": "FlashText",
+        "nutriscore": "Nutriscore",
+        "universal_logo_detector": "Detektè Logo Inivèsèl",
+        "ocr": "OCR"
       },
       "actions": {
         "edit": "Modifye filtè",

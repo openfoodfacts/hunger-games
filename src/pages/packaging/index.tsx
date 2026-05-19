@@ -29,7 +29,8 @@ import { OFF_API_URL_V3 } from "../../const";
 import { useTranslation } from "react-i18next";
 import useUrlParams from "../../hooks/useUrlParams";
 import Loader from "../loader";
-
+import { useCountry } from "../../contexts/CountryProvider";
+import { getCountryId } from "../../utils/getCountryId";
 const formatData = (innerRows) => {
   const packagings = innerRows
     .map(({ material, number, recycling, shape }) => {
@@ -62,6 +63,11 @@ const formatData = (innerRows) => {
 };
 
 const Page = () => {
+  const [country] = useCountry();
+  const countryId = React.useMemo(
+    () => getCountryId(country) || "en:france",
+    [country],
+  );
   const { t } = useTranslation();
   const lang = getLang();
   const packagingMaterials = useOptions("packaging_materials", lang);
@@ -69,7 +75,6 @@ const Page = () => {
   const packagingRecycling = useOptions("packaging_recycling", lang);
   const [searchState] = useUrlParams(
     {
-      country: "en:france",
       creator: undefined,
       code: "",
     },
@@ -79,7 +84,10 @@ const Page = () => {
   const [rows, setRows] = React.useState([]);
   const [innerRows, setInnerRows] = React.useState([]);
 
-  const [data, next] = useBuffer(searchState);
+  const [data, next] = useBuffer({
+    ...searchState,
+    country: countryId,
+  });
 
   const product = data?.[0] ?? null;
   React.useEffect(() => {
