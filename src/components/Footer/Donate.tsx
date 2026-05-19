@@ -1,6 +1,5 @@
-import { Button, Typography } from "@mui/material";
+import { Box, Button, Typography } from "@mui/material";
 import VolunteerActivismIcon from "@mui/icons-material/VolunteerActivism";
-import { Box } from "@mui/system";
 import { useTranslation } from "react-i18next";
 
 const Donate = () => {

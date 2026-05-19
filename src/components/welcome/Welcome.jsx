@@ -3,7 +3,6 @@ import { Trans, useTranslation } from "react-i18next";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import { useTheme } from "@mui/material/styles";
-import useControlled from "@mui/utils/useControlled";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import logo from "../../assets/logo.png";
 import logosGame from "../../assets/logosGame.png";
@@ -25,7 +24,7 @@ const modalStyles = {
   transform: "translate(-50%, -50%)",
 };
 
-export const getSteps = ({ t, withSelector, theme }) => [
+const getSteps = ({ t, withSelector, theme }) => [
   {
     style: {
       ...modalStyles,
@@ -312,12 +311,7 @@ const Welcome = (props) => {
   const theme = useTheme();
   const isDesktop = useMediaQuery(theme.breakpoints.up("md"));
 
-  const [isTourOpen, setIsTourOpen] = useControlled({
-    controlled: isOpen,
-    default: false,
-    name: "Welcome",
-    state: "isOpen",
-  });
+  const [isTourOpen, setIsTourOpen] = React.useState(false);
 
   const handleCloseTour = () => {
     setIsOpen?.(false);

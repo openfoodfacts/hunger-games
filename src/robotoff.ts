@@ -1,4 +1,5 @@
 import axios from "axios";
+import { Robotoff } from "@openfoodfacts/openfoodfacts-nodejs";
 
 import { ROBOTOFF_API_URL } from "./const";
 import { getLang } from "./localeStorageManager";
@@ -32,30 +33,105 @@ export type FilterState = {
 
 type GetQuestionsResponse = { count: number; questions: QuestionInterface[] };
 
+const robotoffClient = new Robotoff(
+  (input, init) => fetch(input, { ...init, credentials: "include" }),
+  { baseUrl: ROBOTOFF_API_URL },
+);
+
 const robotoff = {
   annotate(insightId: string, annotation: -1 | 0 | 1) {
-    return axios.post(
-      `${ROBOTOFF_API_URL}/insights/annotate`,
-      new URLSearchParams(
-        `insight_id=${insightId}&annotation=${annotation}&update=1`,
-      ),
-      { withCredentials: true },
-    );
+    return robotoffClient.annotate({
+      insight_id: insightId,
+      annotation: annotation,
+      update: 1,
+    });
   },
 
   async questionsByProductCode(code: string) {
-    const result = await axios.get<GetQuestionsResponse>(
-      `${ROBOTOFF_API_URL}/questions/${code}`,
-    );
-
+    const result = await robotoffClient.questionsByProductCode(Number(code));
     return {
       ...result,
       data: {
         ...result.data,
         // Filter out questions without image
-        questions: result.data.questions.filter((q) => q.source_image_url),
+        questions:
+          (result.data?.questions as unknown as QuestionInterface[])?.filter(
+            (q) => q.source_image_url,
+          ) ?? [],
       },
     };
+  },
+
+  insightDetail(insight_id: string) {
+    return robotoffClient.insightDetail(insight_id);
+  },
+
+  loadLogo(logoId: string) {
+    return robotoffClient.loadLogo(logoId);
+  },
+
+  searchLogos(
+    barcode: string,
+    value: string,
+    type: string,
+    count = 25,
+    random = false,
+  ) {
+    const formattedValue = /^[a-z][a-z]:/.test(value)
+      ? { taxonomy_value: value }
+      : { value };
+
+    return robotoffClient.searchLogos(
+      removeEmptyKeys({
+        barcode,
+        type,
+        count,
+        random,
+        ...formattedValue,
+      }),
+    );
+  },
+
+  annotateLogos(annotations: Parameters<Robotoff["annotateLogos"]>[0]) {
+    return robotoffClient.annotateLogos(annotations);
+  },
+
+  getLogoAnnotations(logoId: string, index: number, count = 25) {
+    return robotoffClient.getLogoAnnotations(
+      logoId.length > 0 ? Number(logoId) : undefined,
+      index,
+      count,
+    );
+  },
+
+  getInsights(
+    barcode = "",
+    insightType = "",
+    valueTag = "",
+    annotation = "",
+    page = 1,
+    count = 25,
+    campaigns = "",
+    country = "",
+  ) {
+    let annotated: string | undefined;
+    if (annotation.length && annotation === "not_annotated") {
+      annotated = "0";
+      annotation = "";
+    }
+    return robotoffClient.insights(
+      removeEmptyKeys({
+        barcode: barcode ? Number(barcode) : undefined,
+        insight_types: insightType,
+        value_tag: valueTag,
+        annotation: annotation ? Number(annotation) : undefined,
+        page,
+        annotated: annotated ? Boolean(Number(annotated)) : undefined,
+        count,
+        campaigns,
+        countries: country,
+      }) as Parameters<Robotoff["insights"]>[0],
+    );
   },
 
   questions(
@@ -90,94 +166,12 @@ const robotoff = {
     });
   },
 
-  insightDetail(insight_id: string) {
-    return axios.get(`${ROBOTOFF_API_URL}/insights/detail/${insight_id}`);
-  },
-
-  loadLogo(logoId: string) {
-    return axios.get(`${ROBOTOFF_API_URL}/images/logos/${logoId}`);
-  },
-
   updateLogo(logoId: string, value: string, type: string) {
     return axios.put(
       `${ROBOTOFF_API_URL}/images/logos/${logoId}`,
       removeEmptyKeys({ value, type }),
       { withCredentials: true },
     );
-  },
-
-  searchLogos(
-    barcode: string,
-    value: string,
-    type: string,
-    count = 25,
-    random = false,
-  ) {
-    const formattedValue = /^[a-z][a-z]:/.test(value)
-      ? { taxonomy_value: value }
-      : { value };
-
-    return axios.get(`${ROBOTOFF_API_URL}/images/logos/search/`, {
-      params: removeEmptyKeys({
-        barcode,
-        type,
-        count,
-        random,
-        ...formattedValue,
-      }),
-    });
-  },
-
-  getLogoAnnotations(logoId: string, index: number, count = 25) {
-    let url = `${ROBOTOFF_API_URL}/ann/search`;
-    if (logoId.length > 0) {
-      url += `/${logoId}`;
-    }
-
-    return axios.get(url, {
-      params: removeEmptyKeys({
-        index,
-        count,
-      }),
-    });
-  },
-
-  annotateLogos(annotations) {
-    return axios.post(
-      `${ROBOTOFF_API_URL}/images/logos/annotate`,
-      removeEmptyKeys({ annotations }),
-      { withCredentials: true },
-    );
-  },
-
-  getInsights(
-    barcode = "",
-    insightType = "",
-    valueTag = "",
-    annotation = "",
-    page = 1,
-    count = 25,
-    campaigns = "",
-    country = "",
-  ) {
-    let annotated;
-    if (annotation.length && annotation === "not_annotated") {
-      annotated = "0";
-      annotation = "";
-    }
-    return axios.get(`${ROBOTOFF_API_URL}/insights`, {
-      params: removeEmptyKeys({
-        barcode,
-        insight_types: insightType,
-        value_tag: valueTag,
-        annotation,
-        page,
-        annotated,
-        count,
-        campaigns,
-        countries: country,
-      }),
-    });
   },
 
   getUserStatistics(username: string) {

@@ -40,7 +40,7 @@ const getFormattedValues = ({ type, value }) => {
   return { type, value: formattedValue };
 };
 
-export const useLogoForm = (value, type, request) => {
+const useLogoForm = (value, type, request) => {
   const [isSending, setIsSending] = React.useState(false);
   const [innerValue, setInnerValue] = React.useState(value);
   const [innerType, setInnerType] = React.useState(type);

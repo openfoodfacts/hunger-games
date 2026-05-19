@@ -77,11 +77,11 @@ jobs:
         run: yarn deploy
 
       - name: Upload pages artifact
-        uses: actions/upload-pages-artifact@v4
+        uses: actions/upload-pages-artifact@v5
         with:
           path: "dist"
 
       - name: Deploy to github pages 🚀
         if: github.ref == 'refs/heads/master'
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5

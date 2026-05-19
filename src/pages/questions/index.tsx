@@ -19,7 +19,7 @@ function QuestionsConsumer() {
             height: { xs: "calc(100vh - 76px)", md: "calc(100vh - 110px)" },
           }}
         >
-          <QuestionFilter />
+          <QuestionFilter sx={{ mb: 1 }} />
           <Divider sx={{ margin: "1rem" }} />
           <QuestionDisplay />
         </Stack>

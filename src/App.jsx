@@ -12,9 +12,11 @@ import {
   getColor,
   getIsDevMode,
   getVisiblePages,
+  getStoredColorPreference,
   localSettingsKeys,
   localSettings,
 } from "./localeStorageManager";
+
 import LoginContext from "./contexts/login";
 import off from "./off";
 import { IS_DEVELOPMENT_MODE, OFF_URL } from "./const";
@@ -22,6 +24,7 @@ import ColorModeContext from "./contexts/colorMode";
 
 import Loader from "./pages/loader";
 import { CountryProvider } from "./contexts/CountryProvider";
+import { OffWebcomponentsConfiguration } from "./components/OffWebcomponents";
 
 const GreenScorePage = React.lazy(() => import("./pages/green-score"));
 const LogoAnnotationPage = React.lazy(
@@ -187,6 +190,22 @@ export default function App() {
     [],
   );
 
+  React.useEffect(() => {
+    const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
+
+    const handleChange = (event) => {
+      if (!getStoredColorPreference()) {
+        setMode(event.matches ? "dark" : "light");
+      }
+    };
+
+    mediaQuery.addEventListener("change", handleChange);
+
+    return () => {
+      mediaQuery.removeEventListener("change", handleChange);
+    };
+  }, []);
+
   const theme = createTheme(getToken(mode));
 
   return (
@@ -200,6 +219,7 @@ export default function App() {
               >
                 <QueryClientProvider client={queryClient}>
                   <CssBaseline />
+                  <OffWebcomponentsConfiguration />
                   <ResponsiveAppBar />
                   <Routes>
                     <Route path="/" element={<Home />} />

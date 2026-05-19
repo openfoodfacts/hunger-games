@@ -4,7 +4,13 @@ import robotoff, { QuestionInterface } from "../../robotoff";
 import { reformatValueTag } from "../../utils";
 import { FilterState } from "../../robotoff";
 
-export const ADDITIONAL_INFO_TRANSLATION = {
+type AdditionalInfoType = {
+  i18nKey: string;
+  translatedKey?: string;
+  getLink?: (name: string) => string;
+};
+
+export const ADDITIONAL_INFO_TRANSLATION: Record<string, AdditionalInfoType> = {
   brands: { i18nKey: "brands" },
   ingredientsText: { i18nKey: "ingredients" },
   countriesTags: {
@@ -15,7 +21,7 @@ export const ADDITIONAL_INFO_TRANSLATION = {
     i18nKey: "categories",
     translatedKey: "translatedCategories",
     getLink: (name: string) =>
-      `https://world.openfoodfacts.org/category/${name
+      `https://world.openfoodfacts.org/facets/categories/${name
         .toLowerCase()
         .replaceAll(" ", "-")}`,
   },
@@ -23,7 +29,7 @@ export const ADDITIONAL_INFO_TRANSLATION = {
     i18nKey: "labels",
     translatedKey: "translatedLabels_tags",
     getLink: (name: string) =>
-      `https://world.openfoodfacts.org/label/${name
+      `https://world.openfoodfacts.org/facets/labels/${name
         .toLowerCase()
         .replaceAll(" ", "-")}`,
   },
