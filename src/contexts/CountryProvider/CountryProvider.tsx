@@ -33,28 +33,23 @@ export function CountryProvider({ children }: { children: React.ReactNode }) {
     // - searchParams
     // - localStorage
     // - empty
-    let retCountry = "";
+    let country = "";
 
     const searchParamsCountry = searchParams.get("country")?.toLowerCase();
-    if (
-      searchParamsCountry != null &&
-      searchParamsCountry !== "" &&
-      ValidCountryCodes.has(searchParamsCountry)
-    ) {
-      retCountry = searchParamsCountry;
+    if (searchParamsCountry && ValidCountryCodes.has(searchParamsCountry)) {
+      country = searchParamsCountry;
     }
 
     if (
-      retCountry === "" &&
-      localStorageCountry != null &&
-      localStorageCountry !== "" &&
+      country === "" &&
+      localStorageCountry &&
       ValidCountryCodes.has(localStorageCountry?.toLocaleLowerCase())
     ) {
-      retCountry = localStorageCountry.toLocaleLowerCase();
+      country = localStorageCountry.toLocaleLowerCase();
     }
 
     return {
-      country: retCountry,
+      country: country,
       setCountry: updateCountry,
     };
   }, [localStorageCountry, searchParams, updateCountry]);
