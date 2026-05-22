@@ -85,7 +85,7 @@
       "active_filter_number_zero": "nessun filtro",
       "short_label": {
         "value": "valore",
-        "country": "paese",
+        "country": "Paese",
         "brand": "marca",
         "popularity": "popolarità",
         "campaign": "campagna",
@@ -120,7 +120,7 @@
         "ocr": "OCR"
       },
       "actions": {
-        "edit": "Modifica Filtri",
+        "edit": "Modifica filtri",
         "cancel": "Annulla",
         "apply": "Applica"
       }
@@ -134,7 +134,7 @@
     "sign_up": "Registrati",
     "login_title": "Fai valere la tua annotazione",
     "login_description": "Al momento non sei connesso a Open Food Facts. Per far sì che le tue risposte siano direttamente applicate ai prodotti e associate al tuo account, accedi al tuo account Open Food Facts o creane uno",
-    "please_wait_while_we_fetch_the_question": "Sei pregato di attendere mentre recuperiamo la domanda!"
+    "please_wait_while_we_fetch_the_question": "Per favore attendi mentre recuperiamo la domanda!"
   },
   "menu": {
     "title": "Hunger Games",
@@ -161,7 +161,7 @@
   },
   "insights": {
     "insights": "Approfondimenti",
-    "barcode": "Codice a Barre",
+    "barcode": "Codice a barre",
     "barcode_placeholder": "codice a barre",
     "value_tag": "Etichetta valore",
     "value_placeholder": "es: it:muesli, bjorg,...",
