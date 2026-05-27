@@ -18,6 +18,21 @@ export const DEFAULT_FILTER_STATE: FilterState = {
 
 export const campagnes = ["agribalyse-category"];
 
+// Drives both the FilterDialog dropdown and the chip-display check in
+// QuestionFilter. `labelKey` resolves under the i18n namespace
+// `questions.filters.predictor.<labelKey>`.
+export const predictors = [
+  { value: "ridge_model-ml", labelKey: "ridge_model_ml" },
+  { value: "neural", labelKey: "neural" },
+  { value: "matcher", labelKey: "matcher" },
+  { value: "google-could-vision", labelKey: "google_cloud_vision" },
+  { value: "regex", labelKey: "regex" },
+  { value: "flashtext", labelKey: "flashtext" },
+  { value: "nutriscore", labelKey: "nutriscore" },
+  { value: "universal-logo-detector", labelKey: "universal_logo_detector" },
+  { value: "ocr", labelKey: "ocr" },
+];
+
 export const countryNames = [
   "",
   "en:australia",
