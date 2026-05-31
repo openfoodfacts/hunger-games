@@ -45,6 +45,9 @@ export default function Nutrition() {
               setCountry(newValue?.countryCode || "", "page");
             }}
             options={countries}
+            isOptionEqualToValue={(option, value) =>
+              option.countryCode === value.countryCode
+            }
             getOptionLabel={(option) => option.label}
             renderInput={(params) => (
               <TextField
