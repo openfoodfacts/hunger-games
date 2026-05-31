@@ -16,6 +16,7 @@ interface CountryOption {
   countryCode: string;
 }
 
+// Find selected country, filter out empty string and "world"
 function isValidCountryCode(countryCode?: string | null): countryCode is string {
   return !!countryCode && countryCode !== "world" && countryCode !== "";
 }
