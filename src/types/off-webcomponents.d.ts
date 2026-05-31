@@ -8,8 +8,14 @@ declare namespace JSX {
       },
       HTMLElement
     >;
+
     "robotoff-nutrient-extraction": React.DetailedHTMLProps<
-      React.HTMLAttributes<HTMLElement>,
+      React.HTMLAttributes<HTMLElement> & {
+        "product-code"?: string;
+        "country-codes"?: string;
+        "language-codes"?: string;
+        "display-product-link"?: boolean;
+      },
       HTMLElement
     >;
     "robotoff-ingredient-spellcheck": React.DetailedHTMLProps<

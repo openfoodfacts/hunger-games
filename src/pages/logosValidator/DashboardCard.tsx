@@ -7,7 +7,8 @@ import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import CardActions from "@mui/material/CardActions";
 import Button from "@mui/material/Button";
-import Link from "@mui/material/Link";
+import { default as MuiLink } from "@mui/material/Link";
+import { Link } from "react-router";
 
 import robotoff from "../../robotoff";
 import { getQuestionSearchParams } from "../../components/QuestionFilter";
@@ -21,8 +22,8 @@ const DashboardCard = (props: LogoDefinition) => {
     insightType: type,
     valueTag: tag,
   })}`;
-  const logoQuestionsUrl = `/logoQuestion/${tag}`;
-  // const logoAnnotationUrl = `/logos/deep-search?type=label&value=${tag}`;
+  // const logoQuestionsUrl = `/logoQuestion/${tag}`;
+
   const logoAnnotationUrl = `/logos/deep-search?type=${type}&value=${tag}`;
 
   const [questionNumber, setQuestionNumber] = React.useState<"?" | number>("?");
@@ -90,7 +91,7 @@ const DashboardCard = (props: LogoDefinition) => {
               {label}
             </Typography>
             <Typography variant="body2" color="text.secondary">
-              {message} {link && <Link href={link}>More info</Link>}
+              {message} {link && <MuiLink href={link}>More info</MuiLink>}
             </Typography>
           </CardContent>
           <CardActions>
@@ -98,25 +99,25 @@ const DashboardCard = (props: LogoDefinition) => {
               variant="outlined"
               size="small"
               component={Link}
-              href={questionsUrl}
+              to={questionsUrl}
             >
               Questions
             </Button>
 
-            <Button
+            {/* <Button
               variant="outlined"
               size="small"
               component={Link}
-              href={logoQuestionsUrl}
+              to={logoQuestionsUrl}
             >
-              ANnotation
-            </Button>
+              Annotation
+            </Button> */}
 
             <Button
               variant="outlined"
               size="small"
               component={Link}
-              href={logoAnnotationUrl}
+              to={logoAnnotationUrl}
             >
               Search
             </Button>

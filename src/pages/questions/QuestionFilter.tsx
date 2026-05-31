@@ -6,7 +6,7 @@ import MenuItem from "@mui/material/MenuItem";
 import Stack from "@mui/material/Stack";
 import Chip from "@mui/material/Chip";
 import Box from "@mui/material/Box";
-import { useTheme } from "@mui/material/styles";
+import { SxProps, Theme, useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import IconButton from "@mui/material/IconButton";
 
@@ -20,16 +20,19 @@ import { TFunction } from "i18next/typescript/t";
 import { SetURLSearchParams, useSearchParams } from "react-router";
 
 import { useFavorite } from "../../components/QuestionFilter/useFavorite";
-import { insightTypesNames } from "../../components/QuestionFilter/const";
-import FilterDialog from "./FilterDialog";
 import {
-  FilterParams,
-  getFilterParams,
-} from "../../hooks/useFilterState/getFilterParams";
+  insightTypesNames,
+  campagnes,
+  predictors,
+} from "../../components/QuestionFilter/const";
+import countries from "../../assets/countries.json";
+import FilterDialog from "./FilterDialog";
+import { getFilterParams } from "../../hooks/useFilterState/getFilterParams";
+import { FilterState } from "../../robotoff";
 import { getCountryName } from "../../utils/getCountryName";
 
 const getChipsParams = (
-  filterState: FilterParams,
+  filterState: FilterState,
   setSearchParams: SetURLSearchParams,
   t: TFunction<"translation", undefined>,
 ) =>
@@ -50,7 +53,11 @@ const getChipsParams = (
 
     {
       key: "countryFilter",
-      display: !!filterState.country,
+      // Show the chip only when the URL value matches a dropdown country
+      // (its ISO `countryCode`)
+      display:
+        !!filterState.country &&
+        countries.some((c) => c.countryCode === filterState.country),
       label: `${t("questions.filters.short_label.country")}: ${getCountryName(
         filterState.country,
       )}`,
@@ -88,7 +95,8 @@ const getChipsParams = (
     },
     {
       key: "campaign",
-      display: !!filterState.campaign,
+      display:
+        !!filterState.campaign && campagnes.includes(filterState.campaign),
       label: `${t(
         "questions.filters.short_label.campaign",
       )}: ${filterState.campaign}`,
@@ -101,7 +109,7 @@ const getChipsParams = (
     },
     {
       key: "predictor",
-      display: !!filterState.predictor,
+      display: predictors.some((p) => p.value === filterState.predictor),
       label: `${t(
         "questions.filters.short_label.predictor",
       )}: ${filterState.predictor}`,
@@ -114,7 +122,7 @@ const getChipsParams = (
     },
   ].filter((item) => item.display);
 
-export const QuestionFilter = () => {
+export const QuestionFilter = ({ sx }: { sx?: SxProps<Theme> }) => {
   const { t } = useTranslation();
   const theme = useTheme();
   const isDesktop = useMediaQuery(theme.breakpoints.up("md"));
@@ -134,7 +142,7 @@ export const QuestionFilter = () => {
   );
 
   return (
-    <Box>
+    <Box sx={sx}>
       {/* Chip indicating the current state of the filtering */}
       <Stack direction="row" spacing={1} alignItems="center">
         <TextField

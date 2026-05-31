@@ -14,7 +14,19 @@ type TaxonomyOption = {
   text: string;
 };
 
-const LabelFilter = (props: any) => {
+interface LabelFilterProps {
+  showKey?: boolean;
+  onChange: (value: string) => void;
+  value: string;
+  insightType?: string;
+  fullWidth?: boolean;
+  label?: string;
+  placeholder?: string;
+  size?: "small" | "medium";
+  [key: string]: unknown;
+}
+
+const LabelFilter = (props: LabelFilterProps) => {
   const { showKey, onChange, value, insightType, fullWidth, ...other } = props;
 
   const [innerValue, setInnerValue] = React.useState<

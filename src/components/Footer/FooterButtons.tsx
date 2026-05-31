@@ -1,5 +1,4 @@
-import { Button, IconButton, Typography } from "@mui/material";
-import { Stack } from "@mui/system";
+import { Stack, Button, IconButton, Typography } from "@mui/material";
 
 type FooterButtonsProps = {
   title: string;

@@ -1,13 +1,16 @@
-import * as React from "react";
-
 import { NO_QUESTION_LEFT, OFF_DOMAIN, OFF_URL } from "../../const";
-import externalApi from "../../externalApi";
 import offService from "../../off";
 import robotoff, { QuestionInterface } from "../../robotoff";
 import { reformatValueTag } from "../../utils";
-import { FilterParams } from "../../hooks/useFilterState";
+import { FilterState } from "../../robotoff";
 
-export const ADDITIONAL_INFO_TRANSLATION = {
+type AdditionalInfoType = {
+  i18nKey: string;
+  translatedKey?: string;
+  getLink?: (name: string) => string;
+};
+
+export const ADDITIONAL_INFO_TRANSLATION: Record<string, AdditionalInfoType> = {
   brands: { i18nKey: "brands" },
   ingredientsText: { i18nKey: "ingredients" },
   countriesTags: {
@@ -18,7 +21,7 @@ export const ADDITIONAL_INFO_TRANSLATION = {
     i18nKey: "categories",
     translatedKey: "translatedCategories",
     getLink: (name: string) =>
-      `https://world.openfoodfacts.org/category/${name
+      `https://world.openfoodfacts.org/facets/categories/${name
         .toLowerCase()
         .replaceAll(" ", "-")}`,
   },
@@ -26,7 +29,7 @@ export const ADDITIONAL_INFO_TRANSLATION = {
     i18nKey: "labels",
     translatedKey: "translatedLabels_tags",
     getLink: (name: string) =>
-      `https://world.openfoodfacts.org/label/${name
+      `https://world.openfoodfacts.org/facets/labels/${name
         .toLowerCase()
         .replaceAll(" ", "-")}`,
   },
@@ -47,7 +50,10 @@ const getUploadedTime = (data: number) =>
     day: "numeric",
   });
 
-export const getImagesUrls = (images?: any, barcode?: any) => {
+export const getImagesUrls = (
+  images: Record<string, { uploaded_t: number }>,
+  barcode: string,
+) => {
   if (!images || !barcode) {
     return [];
   }
@@ -57,40 +63,9 @@ export const getImagesUrls = (images?: any, barcode?: any) => {
     .filter((key) => !isNaN(Number.parseInt(key)))
     .map((key) => ({
       imageUrl: `${rootImageUrl}/${key}.400.jpg`,
+      imageUrlFull: `${rootImageUrl}/${key}.jpg`,
       uploaded_t: getUploadedTime(images[key].uploaded_t),
     }));
-};
-
-export const useFlagImage = (barcode?: string) => {
-  const [flagged, setFlagged] = React.useState<number[]>([]);
-
-  const flagImage = React.useCallback(
-    (src: string) => {
-      const imgid = getImageId(src);
-      externalApi.addImageFlag({ barcode, imgid, url: src });
-      setFlagged((prev) => [...prev, imgid]);
-    },
-    [barcode],
-  );
-
-  const deleteFlagImage = React.useCallback(
-    (src: string) => {
-      const imgid = getImageId(src);
-      externalApi.removeImageFlag({ barcode, imgid });
-
-      setFlagged((prev) =>
-        prev.filter((flaggedImageId) => flaggedImageId !== imgid),
-      );
-    },
-    [barcode],
-  );
-
-  // Reset flags
-  React.useEffect(() => {
-    setFlagged([]);
-  }, [barcode]);
-
-  return [flagged, flagImage, deleteFlagImage];
 };
 
 export const getFullSizeImage = (src?: string) => {
@@ -119,7 +94,7 @@ export const getValueTagExamplesURL = (question: QuestionInterface | null) => {
   return "";
 };
 
-export const getNbOfQuestionForValue = async (filterState: FilterParams) => {
+export const getNbOfQuestionForValue = async (filterState: FilterState) => {
   const { data: dataFetched } = await robotoff.questions(filterState, 1);
   return dataFetched.count;
 };

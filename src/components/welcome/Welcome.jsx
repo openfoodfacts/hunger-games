@@ -2,8 +2,8 @@ import * as React from "react";
 import { Trans, useTranslation } from "react-i18next";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
+import GlobalStyles from "@mui/material/GlobalStyles";
 import { useTheme } from "@mui/material/styles";
-import useControlled from "@mui/utils/useControlled";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import logo from "../../assets/logo.png";
 import logosGame from "../../assets/logosGame.png";
@@ -25,7 +25,7 @@ const modalStyles = {
   transform: "translate(-50%, -50%)",
 };
 
-export const getSteps = ({ t, withSelector, theme }) => [
+const getSteps = ({ t, withSelector, theme }) => [
   {
     style: {
       ...modalStyles,
@@ -312,12 +312,7 @@ const Welcome = (props) => {
   const theme = useTheme();
   const isDesktop = useMediaQuery(theme.breakpoints.up("md"));
 
-  const [isTourOpen, setIsTourOpen] = useControlled({
-    controlled: isOpen,
-    default: false,
-    name: "Welcome",
-    state: "isOpen",
-  });
+  const [isTourOpen, setIsTourOpen] = React.useState(false);
 
   const handleCloseTour = () => {
     setIsOpen?.(false);
@@ -337,8 +332,38 @@ const Welcome = (props) => {
     [t, isDesktop, theme],
   );
 
+  const isDark = theme.palette.mode === "dark";
+
   return (
     <>
+      {isDark && (
+        <GlobalStyles
+          styles={{
+            "#___reactour .reactour__close": {
+              color: theme.palette.text.secondary,
+              "&:hover": {
+                color: theme.palette.text.primary,
+              },
+            },
+            "#___reactour [data-tour-elem='left-arrow']": {
+              color: theme.palette.text.secondary,
+              "&:hover": {
+                color: theme.palette.text.primary,
+              },
+            },
+            "#___reactour [data-tour-elem='right-arrow']": {
+              color: theme.palette.text.secondary,
+              "&:hover": {
+                color: theme.palette.text.primary,
+              },
+            },
+            "#___reactour [data-tour-elem='dot']": {
+              color: theme.palette.text.secondary,
+              borderColor: theme.palette.text.secondary,
+            },
+          }}
+        />
+      )}
       <Tour
         steps={steps}
         startAt={0}

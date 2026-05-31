@@ -1,8 +1,8 @@
 import * as React from "react";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
-import robotoff, { QuestionInterface } from "../robotoff";
 import { useMatomoTrackAnswerQuestion } from "./matomoEvents";
-import { useFilterState, FilterParams } from "./useFilterState";
+import robotoff, { QuestionInterface, FilterState } from "../robotoff";
+import { useFilterState } from "./useFilterState";
 import { SKIPPED_INSIGHT, CORRECT_INSIGHT, WRONG_INSIGHT } from "../const";
 
 const ANSWERS_MEMORY_SIZE = 25;
@@ -27,7 +27,7 @@ interface UseQuestionsOptions {
    * Filter params tha override either the one passed as argument, or the one from the URLSearchParams.
    * @default {}
    */
-  forcedParams?: Partial<FilterParams>;
+  forcedParams?: Partial<FilterState>;
   /**
    * The number of questions per page.
    * @default 20
@@ -38,7 +38,7 @@ interface UseQuestionsOptions {
 /**
  * Helper ensuring consistency between the keys of the main useQuestions hook and the useQuestionsQuery hook
  */
-const getQuestionKeys = (params: FilterParams) => [
+const getQuestionKeys = (params: FilterState) => [
   "questions",
   params.insightType,
   params.valueTag,
@@ -86,7 +86,7 @@ export function useQuestionsQuery(valueTag: string) {
  * If not the params will be derived from the URLSearchParameters
  */
 export default function useQuestions(
-  inParams?: FilterParams,
+  inParams?: FilterState,
   options?: UseQuestionsOptions,
 ) {
   const { forcedParams = {}, pageSize = 20 } = options ?? {};

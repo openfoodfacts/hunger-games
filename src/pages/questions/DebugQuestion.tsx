@@ -43,7 +43,7 @@ const fetchData = (insightId?: string) => async () => {
 const getCroppedLogoUrl = (
   debugResponse?: null | {
     source_image?: string;
-    bounding_box?: number[];
+    bounding_box?: [number, number, number, number];
   },
 ) => {
   if (!debugResponse) {
