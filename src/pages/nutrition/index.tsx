@@ -16,6 +16,10 @@ interface CountryOption {
   countryCode: string;
 }
 
+function isValidCountryCode(countryCode?: string | null): countryCode is string {
+  return !!countryCode && countryCode !== "world" && countryCode !== "";
+}
+
 export default function Nutrition() {
   const [searchParams] = useSearchParams();
   const productCode = searchParams.get("code") || undefined;
@@ -24,15 +28,14 @@ export default function Nutrition() {
 
   // Find selected country, filter out empty string and "world"
   const selectedCountry = React.useMemo(() => {
-    if (!country || country === "world" || country === "") {
+    if (!isValidCountryCode(country)) {
       return null;
     }
     return countries.find((c) => c.countryCode === country) || null;
   }, [country]);
 
   // Only pass countryCode to webcomponent if it's a real country (not empty or "world")
-  const filterCountryCode =
-    country && country !== "world" && country !== "" ? country : undefined;
+  const filterCountryCode = isValidCountryCode(country) ? country : undefined;
 
   return (
     <React.Suspense>
