@@ -24,6 +24,7 @@ import ColorModeContext from "./contexts/colorMode";
 
 import Loader from "./pages/loader";
 import { CountryProvider } from "./contexts/CountryProvider";
+import { OffWebcomponentsConfiguration } from "./components/OffWebcomponents";
 
 const GreenScorePage = React.lazy(() => import("./pages/green-score"));
 const LogoAnnotationPage = React.lazy(
@@ -218,6 +219,7 @@ export default function App() {
               >
                 <QueryClientProvider client={queryClient}>
                   <CssBaseline />
+                  <OffWebcomponentsConfiguration />
                   <ResponsiveAppBar />
                   <Routes>
                     <Route path="/" element={<Home />} />
