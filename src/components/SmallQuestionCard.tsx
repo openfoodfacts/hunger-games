@@ -30,7 +30,7 @@ export default function SmallQuestionCard({
 
   React.useEffect(() => {
     let isValid = true;
-    robotoff
+    void robotoff
       .questions({ ...filterState, with_image: true }, 1, 1)
       .then(({ data }) => {
         if (isValid) {

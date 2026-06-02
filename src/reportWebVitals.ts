@@ -5,13 +5,13 @@ const reportWebVitals = async (
     return;
   }
 
-  const { onCLS, onFID, onFCP, onLCP, onTTFB } = await import("web-vitals");
+  const { onCLS, onFCP, onINP, onLCP, onTTFB } = await import("web-vitals");
 
-  onCLS(onPerfEntry);
-  onFID(onPerfEntry);
-  onFCP(onPerfEntry);
-  onLCP(onPerfEntry);
-  onTTFB(onPerfEntry);
+  (onCLS as (cb: (metric: unknown) => void) => void)(onPerfEntry);
+  (onFCP as (cb: (metric: unknown) => void) => void)(onPerfEntry);
+  (onINP as (cb: (metric: unknown) => void) => void)(onPerfEntry);
+  (onLCP as (cb: (metric: unknown) => void) => void)(onPerfEntry);
+  (onTTFB as (cb: (metric: unknown) => void) => void)(onPerfEntry);
 };
 
 export default reportWebVitals;

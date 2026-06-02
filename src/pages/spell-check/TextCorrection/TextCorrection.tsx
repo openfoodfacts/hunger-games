@@ -38,7 +38,7 @@ export function TextCorrection(props: TextCorrectionProps) {
       // Make sure that each time we are using suggestion the only source of truth is the textCorrection hook.
       setEditedText(null);
     } else {
-      fetchIngredients(text.before, "fr");
+      void fetchIngredients(text.before, "fr");
     }
   }, [fetchIngredients, hasSuggestion, text.before]);
 
@@ -69,9 +69,12 @@ export function TextCorrection(props: TextCorrectionProps) {
             parsings={parsings}
           />
           <button
-            onClick={() =>
-              fetchIngredients(editedText ? editedText : text.before, "fr")
-            }
+            onClick={() => {
+              void fetchIngredients(
+                editedText ? editedText : text.before,
+                "fr",
+              );
+            }}
           >
             fetch{isLoading ? " ..." : ""}
           </button>

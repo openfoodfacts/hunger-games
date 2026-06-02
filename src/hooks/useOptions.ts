@@ -14,27 +14,34 @@ export const useOptions = (fileName: Files, lang: string) => {
   const [options, setOptions] = React.useState<Option[]>([]);
 
   React.useEffect(() => {
+    type TaxonomyData = {
+      [key: string]: {
+        synonyms: Record<string, string[]>;
+      };
+    };
     axios
-      .get(`https://static.${OFF_DOMAIN}/data/taxonomies/${fileName}.full.json`)
+      .get<TaxonomyData>(
+        `https://static.${OFF_DOMAIN}/data/taxonomies/${fileName}.full.json`,
+      )
       .then(({ data }) => {
         const newOptions: Option[] = Object.keys(data)
           .map((key) => {
-            const synonyms: undefined | string[] =
-              data[key].synonyms[lang] ??
-              data[key].synonyms["xx"] ??
-              data[key].synonyms["en"];
+            const synonyms: string[] | undefined =
+              data[key]?.synonyms?.[lang] ??
+              data[key]?.synonyms?.["xx"] ??
+              data[key]?.synonyms?.["en"];
 
-            if (synonyms === undefined) {
+            if (!synonyms) {
               return null;
             }
             return { value: key, synonyms, label: synonyms[0] };
           })
-          .filter((o) => o !== null)
+          .filter((o): o is Option => o !== null)
           .sort((a, b) => a.label.localeCompare(b.label));
 
         setOptions(newOptions);
       })
-      .catch((error) => {
+      .catch((error: unknown) => {
         console.log(error);
       });
   }, [fileName, lang]);

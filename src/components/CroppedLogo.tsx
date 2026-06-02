@@ -3,8 +3,29 @@ import * as React from "react";
 import robotoff from "../robotoff";
 import off from "../off";
 
-const fetchData = async (insightId: string) => {
-  const response = await robotoff.insightDetail(insightId);
+type InsightDetailResponse = {
+  data?: {
+    bounding_box?: [number, number, number, number];
+    source_image?: string;
+    data?: { logo_id?: string };
+  };
+};
+
+type LogosImagesResponse = {
+  data?: {
+    logos?: Array<{ bounding_box?: [number, number, number, number] }>;
+  };
+};
+
+const fetchData = async (
+  insightId: string,
+): Promise<{
+  source_image?: string;
+  bounding_box?: [number, number, number, number];
+} | null> => {
+  const response = (await robotoff.insightDetail(
+    insightId,
+  )) as InsightDetailResponse | null;
 
   if (!response) {
     return null;
@@ -15,7 +36,9 @@ const fetchData = async (insightId: string) => {
   const logo_id = response.data?.data?.logo_id;
 
   if (source_image && logo_id && !bounding_box) {
-    const logoData = await robotoff.getLogosImages([logo_id]);
+    const logoData = (await robotoff.getLogosImages([
+      logo_id,
+    ])) as LogosImagesResponse | null;
     bounding_box = logoData?.data?.logos?.[0]?.bounding_box;
   }
 
@@ -25,9 +48,9 @@ const fetchData = async (insightId: string) => {
 const getCroppedLogoUrl = (
   debugResponse: null | {
     source_image?: string;
-    bounding_box?: number[];
+    bounding_box?: [number, number, number, number];
   },
-) => {
+): string | null => {
   if (!debugResponse) {
     return null;
   }
@@ -41,10 +64,15 @@ const getCroppedLogoUrl = (
   return robotoff.getCroppedImageUrl(sourceImage, bounding_box);
 };
 
-const CroppedLogo = (props) => {
+type CroppedLogoProps = {
+  insightId: string;
+  [key: string]: unknown;
+};
+
+const CroppedLogo: React.FC<CroppedLogoProps> = (props) => {
   const { insightId, ...other } = props;
-  const [logoUrl, setLogoUrl] = React.useState(null);
-  const [loading, setLoading] = React.useState(true);
+  const [logoUrl, setLogoUrl] = React.useState<string | null>(null);
+  const [loading, setLoading] = React.useState<boolean>(true);
 
   React.useEffect(() => {
     let isValid = true;
