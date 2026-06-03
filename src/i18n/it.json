@@ -12,7 +12,7 @@
           "description": "Trova tutti i loghi corrispondenti al logo specificato"
         },
         "green_score": {
-          "title": "Punteggio di sostenibilità",
+          "title": "Eco-score",
           "description": "Annota le domande con il valore più alto"
         }
       }
@@ -379,7 +379,7 @@
     "correct": "Corretto ({{label}})"
   },
   "green-score": {
-    "description": "Ecco un riepilogo delle domande che potrebbero migliorare il calcolo del punteggio di sostenibilità",
+    "description": "Ecco un riepilogo delle domande che potrebbero migliorare il calcolo dell'Eco-Score",
     "countryLabel": "Paese"
   },
   "ingredients": {
@@ -387,7 +387,7 @@
     "current_text": "testo da OpenFoodFacts",
     "confidence_score": "fiducia linguistica",
     "revert": "Ripristina",
-    "parsing": "Ottieni la comprensione del server",
+    "parsing": "Acquisisci informazioni sul server",
     "send": "Convalida e invia",
     "skip": "Salta questo prodotto",
     "getRobotoffPrediciton": "Ottieni previsioni da Robotoff"
@@ -395,11 +395,11 @@
   "footer": {
     "appStore": {
       "title": "App Store",
-      "subtitle": "Scaricala su"
+      "subtitle": "Scarica da"
     },
     "playStore": {
       "title": "Play Store",
-      "subtitle": "Scaricala su"
+      "subtitle": "Ottienila su"
     },
     "microsoft": {
       "title": "Microsoft",
