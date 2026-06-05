@@ -1,12 +1,15 @@
 import * as React from "react";
 import { useSearchParams } from "react-router";
+import { useTranslation } from "react-i18next";
+
+import { Box, Autocomplete, TextField } from "@mui/material";
 
 import { ErrorBoundary } from "../../components/ErrorBoundary";
-import Instructions from "./Instructions";
 import { RobotoffNutrientExtraction } from "../../components/OffWebcomponents";
-import { Box, Autocomplete, TextField } from "@mui/material";
 import { useCountry } from "../../contexts/CountryProvider";
-import { useTranslation } from "react-i18next";
+
+import Instructions from "./Instructions";
+
 import countries from "../../assets/countries.json";
 
 interface CountryOption {
@@ -16,8 +19,10 @@ interface CountryOption {
   countryCode: string;
 }
 
-// Find selected country, filter out empty string and "world"
-function isValidCountryCode(countryCode?: string | null): countryCode is string {
+// Returns true if countryCode is a "valid" country code, i.e. not empty and not "world"
+function isValidCountryCode(
+  countryCode?: string | null,
+): countryCode is string {
   return !!countryCode && countryCode !== "world" && countryCode !== "";
 }
 
