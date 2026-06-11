@@ -1,12 +1,15 @@
 import * as React from "react";
 import { useSearchParams } from "react-router";
+import { useTranslation } from "react-i18next";
+
+import { Box, Autocomplete, TextField } from "@mui/material";
 
 import { ErrorBoundary } from "../../components/ErrorBoundary";
-import Instructions from "./Instructions";
 import { RobotoffNutrientExtraction } from "../../components/OffWebcomponents";
-import { Box, Autocomplete, TextField } from "@mui/material";
 import { useCountry } from "../../contexts/CountryProvider";
-import { useTranslation } from "react-i18next";
+
+import Instructions from "./Instructions";
+
 import countries from "../../assets/countries.json";
 
 interface CountryOption {
@@ -14,6 +17,13 @@ interface CountryOption {
   label: string;
   languageCode: string;
   countryCode: string;
+}
+
+// Returns true if countryCode is a "valid" country code, i.e. not empty and not "world"
+function isValidCountryCode(
+  countryCode?: string | null,
+): countryCode is string {
+  return !!countryCode && countryCode !== "world" && countryCode !== "";
 }
 
 export default function Nutrition() {
@@ -24,15 +34,14 @@ export default function Nutrition() {
 
   // Find selected country, filter out empty string and "world"
   const selectedCountry = React.useMemo(() => {
-    if (!country || country === "world" || country === "") {
+    if (!isValidCountryCode(country)) {
       return null;
     }
     return countries.find((c) => c.countryCode === country) || null;
   }, [country]);
 
   // Only pass countryCode to webcomponent if it's a real country (not empty or "world")
-  const filterCountryCode =
-    country && country !== "world" && country !== "" ? country : undefined;
+  const filterCountryCode = isValidCountryCode(country) ? country : undefined;
 
   return (
     <React.Suspense>
@@ -45,6 +54,9 @@ export default function Nutrition() {
               setCountry(newValue?.countryCode || "", "page");
             }}
             options={countries}
+            isOptionEqualToValue={(option, value) =>
+              option.countryCode === value.countryCode
+            }
             getOptionLabel={(option) => option.label}
             renderInput={(params) => (
               <TextField
