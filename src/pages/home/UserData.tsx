@@ -1,6 +1,4 @@
-import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
-import axios from "axios";
 
 import Box from "@mui/material/Box";
 import Card from "@mui/material/Card";
@@ -9,13 +7,8 @@ import Typography from "@mui/material/Typography";
 import Stack from "@mui/material/Stack";
 import { CircularProgress } from "@mui/material";
 
-import { OFF_URL } from "../../const";
-
-type UserCounts = {
-  editorCount: number | null | undefined;
-  contributorCount: number | null | undefined;
-  photographerCount: number | null | undefined;
-};
+import { offClient } from "../../off";
+import { useQuery } from "@tanstack/react-query";
 
 type CountCardProps = {
   translationKey: string;
@@ -27,29 +20,18 @@ type UserDataProps = {
 };
 
 const fetchUserData = async (userName: string) => {
-  const editorPromise = axios
-    .get(`${OFF_URL}/facets/editor/${userName}.json?fields=count`, {
-      withCredentials: true,
-    })
-    .then(({ data }: { data: { count: number } }): number | null => {
-      return data?.count ?? null;
-    })
+  const editorPromise = offClient
+    .getFacetValue("editor", userName, {})
+    .then((value) => value.count)
     .catch(() => undefined);
-  const contributorPromise = axios
-    .get(`${OFF_URL}/facets/contributor/${userName}.json?fields=count`, {
-      withCredentials: true,
-    })
-    .then(({ data }: { data: { count: number } }): number | null => {
-      return data?.count ?? null;
-    })
+
+  const contributorPromise = offClient
+    .getFacetValue("contributor", userName, {})
+    .then((value) => value.count)
     .catch(() => undefined);
-  const photographerPromise = axios
-    .get(`${OFF_URL}/facets/photographer/${userName}.json?fields=count`, {
-      withCredentials: true,
-    })
-    .then(({ data }: { data: { count: number } }): number | null => {
-      return data?.count ?? null;
-    })
+  const photographerPromise = offClient
+    .getFacetValue("photographer", userName, {})
+    .then((value) => value.count)
     .catch(() => undefined);
 
   const [editorCount, contributorCount, photographerCount] = await Promise.all([
@@ -93,24 +75,13 @@ const CountCard = (props: CountCardProps) => {
 
 const UserData = ({ userName }: UserDataProps) => {
   const { t } = useTranslation();
-
-  const [data, setData] = useState<UserCounts>({
-    editorCount: undefined,
-    contributorCount: undefined,
-    photographerCount: undefined,
+  const { data, isLoading, error } = useQuery({
+    queryKey: ["userStats", userName],
+    queryFn: async () => {
+      const data = await fetchUserData(userName);
+      return data;
+    },
   });
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
-
-  useEffect(() => {
-    setLoading(true);
-    fetchUserData(userName)
-      .then((counts) => setData(counts))
-      .catch(() => {
-        setError("Failed to fetch user data");
-      })
-      .finally(() => setLoading(false));
-  }, [userName]);
 
   return (
     <Box sx={{ p: 2, mb: 10 }}>
@@ -118,7 +89,7 @@ const UserData = ({ userName }: UserDataProps) => {
         {t("home.statistics.title", { userName: userName || "<unknown>" })}
       </Typography>
 
-      {loading ? (
+      {isLoading ? (
         <Box
           sx={{
             display: "flex",
@@ -129,10 +100,10 @@ const UserData = ({ userName }: UserDataProps) => {
           <CircularProgress />
         </Box>
       ) : error ? (
-        <Typography color="error">{error}</Typography>
+        <Typography color="error">{error.message}</Typography>
       ) : (
         <Stack direction={{ xs: "column", sm: "row" }} spacing={2}>
-          {Object.entries(data).map(([countType, value]) => (
+          {Object.entries(data ?? {}).map(([countType, value]) => (
             <CountCard
               key={countType}
               translationKey={countType}
