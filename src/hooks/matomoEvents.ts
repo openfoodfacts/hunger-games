@@ -1,5 +1,6 @@
 import { useMatomo } from "@jonkoops/matomo-tracker-react";
 import { CORRECT_INSIGHT, WRONG_INSIGHT, SKIPPED_INSIGHT } from "../const";
+import { useCallback } from "react";
 
 const mapValueToAction = {
   [CORRECT_INSIGHT]: "yes",
@@ -36,4 +37,21 @@ export const useMatomoTrackAnswerQuestion = () => {
       });
     },
   };
+};
+
+export const useMatomoTrackInvalidUrlParam = () => {
+  const { trackEvent } = useMatomo();
+
+  const reportInvalidUrlParam = useCallback(
+    ({ param, value }: { param: string; value: string }) => {
+      trackEvent({
+        category: "question-filter",
+        action: "invalid-url-param",
+        name: `${param}: ${value}`,
+      });
+    },
+    [trackEvent],
+  );
+
+  return { reportInvalidUrlParam };
 };
