@@ -13,19 +13,25 @@ import { OFF_URL } from "../../const";
 
 const fetchUserData = async (userName: string) => {
   const editorPromise = axios
-    .get(`${OFF_URL}/editor/${userName}.json?fields=count`)
+    .get(`${OFF_URL}/facets/editor/${userName}.json?fields=count`, {
+      withCredentials: true,
+    })
     .then(({ data }) => {
       return data?.count;
     })
     .catch(() => undefined);
   const contributorPromise = axios
-    .get(`${OFF_URL}/contributor/${userName}.json?fields=count`)
+    .get(`${OFF_URL}/facets/contributor/${userName}.json?fields=count`, {
+      withCredentials: true,
+    })
     .then(({ data }) => {
       return data?.count;
     })
     .catch(() => undefined);
   const photographerPromise = axios
-    .get(`${OFF_URL}/photographer/${userName}.json?fields=count`)
+    .get(`${OFF_URL}/facets/photographer/${userName}.json?fields=count`, {
+      withCredentials: true,
+    })
     .then(({ data }) => {
       return data?.count;
     })
