@@ -3,24 +3,28 @@ import EmailIcon from "@mui/icons-material/Email";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import FacebookIcon from "@mui/icons-material/Facebook";
+import YouTubeIcon from "@mui/icons-material/YouTube";
+import {
+  TikTokIcon,
+  MastodonIcon,
+  ThreadsIcon,
+  BlueskyIcon,
+} from "./SocialIcons";
+
 import { useTranslation } from "react-i18next";
 
 const socialMedia = [
+  { icon: <EmailIcon />, link: "mailto:contact@openfoodfacts.org" },
+  { icon: <TwitterIcon />, link: "https://x.com/OpenFoodFacts" },
+  { icon: <InstagramIcon />, link: "https://instagram.com/openfoodfacts" },
+  { icon: <FacebookIcon />, link: "https://facebook.com/openfoodfacts" },
+  { icon: <YouTubeIcon />, link: "https://www.youtube.com/user/openfoodfacts" },
+  { icon: <TikTokIcon />, link: "https://www.tiktok.com/@openfoodfacts" },
+  { icon: <ThreadsIcon />, link: "https://www.threads.net/@open.food.facts" },
+  { icon: <MastodonIcon />, link: "https://mastodon.social/@openfoodfacts" },
   {
-    icon: <EmailIcon />,
-    link: "mailto:contact@openfoodfacts.org",
-  },
-  {
-    icon: <TwitterIcon />,
-    link: "https://twitter.com/openfoodfacts",
-  },
-  {
-    icon: <InstagramIcon />,
-    link: "https://www.instagram.com/open.food.facts/",
-  },
-  {
-    icon: <FacebookIcon />,
-    link: "https://www.facebook.com/OpenFoodFacts",
+    icon: <BlueskyIcon />,
+    link: "https://bsky.app/profile/openfoodfacts.bsky.social",
   },
 ];
 

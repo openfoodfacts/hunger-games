@@ -29,7 +29,7 @@ const content = [
 function CustomStepIcon() {
   return (
     <div>
-      <CheckCircleIcon sx={{ color: "#a08d84" }} />
+      <CheckCircleIcon sx={{ color: "secondary.main" }} />
     </div>
   );
 }
