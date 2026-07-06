@@ -34,7 +34,7 @@ export default function useRobotoffPrediction(
   fetchUrl: string,
 ): [null | DataType, () => void, boolean, null | string] {
   const [isLoading, setIsLoading] = React.useState(false);
-  const [error, setError] = React.useState(null);
+  const [error, setError] = React.useState<string | null>(null);
   const [data, setData] = React.useState<null | DataType>(null);
 
   const getData = React.useCallback(() => {

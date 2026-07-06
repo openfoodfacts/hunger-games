@@ -71,7 +71,7 @@ export function useQuestionsQuery(valueTag: string) {
     return data;
   };
 
-  const { data, status, isFetching } = useQuery({
+  const { data, status } = useQuery({
     queryKey: getQuestionKeys({ ...filterParams, valueTag }),
     queryFn: fetchQuestions,
   });
@@ -173,12 +173,12 @@ export default function useQuestions(
     queryKey: ["recent-answers"],
     queryFn: (): AnsweredQuestion[] => [],
   });
-  const { data, status, isFetching } = useQuery({
+  const { data, status } = useQuery({
     queryKey: keys,
     queryFn: fetchQuestions,
   });
   const mutation = useMutation({
-    mutationFn: async (keys: (string | boolean)[]) => {
+    mutationFn: async (_: (string | boolean)[]) => {
       return await fetchQuestions();
     },
     onSuccess: (data, variables) => {

@@ -1,9 +1,8 @@
-import axios from "axios";
 import { Robotoff } from "@openfoodfacts/openfoodfacts-nodejs";
 
 import { ROBOTOFF_API_URL } from "./const";
 import { getLang } from "./localeStorageManager";
-import { reformatValueTag, removeEmptyKeys } from "./utils";
+import { reformatValueTag } from "./utils";
 
 export interface QuestionInterface {
   barcode: string;
@@ -12,9 +11,9 @@ export interface QuestionInterface {
   question: string;
   source_image_url?: string;
   ref_image_url?: string;
-  type: string;
+  type?: string;
   value: string;
-  value_tag: string;
+  value_tag?: string;
 }
 
 export type FilterState = {
@@ -31,10 +30,9 @@ export type FilterState = {
   sorted?: string;
 };
 
-type GetQuestionsResponse = { count: number; questions: QuestionInterface[] };
-
 const robotoffClient = new Robotoff(
-  (input, init) => fetch(input, { ...init, credentials: "include" }),
+  (input: RequestInfo | URL, init?: RequestInit) =>
+    fetch(input, { ...init, credentials: "include" }),
   { baseUrl: ROBOTOFF_API_URL },
 );
 
@@ -81,15 +79,13 @@ const robotoff = {
       ? { taxonomy_value: value }
       : { value };
 
-    return robotoffClient.searchLogos(
-      removeEmptyKeys({
-        barcode,
-        type,
-        count,
-        random,
-        ...formattedValue,
-      }),
-    );
+    return robotoffClient.searchLogos({
+      barcode,
+      type,
+      count,
+      random,
+      ...formattedValue,
+    });
   },
 
   annotateLogos(annotations: Parameters<Robotoff["annotateLogos"]>[0]) {
@@ -119,22 +115,20 @@ const robotoff = {
       annotated = "0";
       annotation = "";
     }
-    return robotoffClient.insights(
-      removeEmptyKeys({
-        barcode: barcode ? Number(barcode) : undefined,
-        insight_types: insightType,
-        value_tag: valueTag,
-        annotation: annotation ? Number(annotation) : undefined,
-        page,
-        annotated: annotated ? Boolean(Number(annotated)) : undefined,
-        count,
-        campaigns,
-        countries: country,
-      }) as Parameters<Robotoff["insights"]>[0],
-    );
+    return robotoffClient.insights({
+      barcode: barcode ? Number(barcode) : undefined,
+      insight_types: insightType,
+      value_tag: valueTag,
+      annotation: annotation ? Number(annotation) : undefined,
+      page,
+      annotated: annotated ? Boolean(Number(annotated)) : undefined,
+      count,
+      campaigns,
+      countries: country,
+    } as Parameters<Robotoff["insights"]>[0]);
   },
 
-  questions(
+  async questions(
     {
       insightType,
       brandFilter,
@@ -148,63 +142,56 @@ const robotoff = {
     count = 10,
     page = 1,
   ) {
-    const searchParams = {
-      insight_types: insightType,
-      value_tag: valueTag,
-      brands: reformatValueTag(brandFilter),
-      countries: countryFilter,
-      campaign,
-      predictor,
-      with_image,
-      order_by: sortByPopularity ? "popularity" : "random",
-    };
-
     const lang = getLang();
 
-    return axios.get<GetQuestionsResponse>(`${ROBOTOFF_API_URL}/questions/`, {
-      params: removeEmptyKeys({ ...searchParams, lang, count, page }),
-    });
+    const result = await robotoffClient.questions(
+      {
+        insight_types: insightType,
+        value_tag: valueTag,
+        brands: reformatValueTag(brandFilter),
+        countries: countryFilter,
+        campaigns: campaign,
+        predictor,
+        with_image,
+        order_by: sortByPopularity ? "popularity" : "random",
+        lang,
+      },
+      page,
+      count,
+    );
+
+    return {
+      ...result,
+      data: {
+        questions: (result.data?.questions ?? []) as QuestionInterface[],
+        count: result.data?.count ?? 0,
+      },
+    };
   },
 
   updateLogo(logoId: string, value: string, type: string) {
-    return axios.put(
-      `${ROBOTOFF_API_URL}/images/logos/${logoId}`,
-      removeEmptyKeys({ value, type }),
-      { withCredentials: true },
-    );
+    return robotoffClient.updateLogo(Number(logoId), { value, type });
   },
 
   getUserStatistics(username: string) {
-    return axios.get(`${ROBOTOFF_API_URL}/users/statistics/${username}`);
+    return robotoffClient.getUserStatistics(username);
   },
 
   getCroppedImageUrl(
     imageUrl: string,
     boundingBox: [number, number, number, number],
   ) {
-    const [y_min, x_min, y_max, x_max] = boundingBox;
-
-    const params = new URLSearchParams({
-      image_url: imageUrl,
-      y_min: y_min.toString(),
-      x_min: x_min.toString(),
-      y_max: y_max.toString(),
-      x_max: x_max.toString(),
-    });
-
-    return `${ROBOTOFF_API_URL}/images/crop?${params.toString()}`;
+    return robotoffClient.getCroppedImageUrl(imageUrl, boundingBox);
   },
 
   getLogosImages(logoIds: string[]) {
-    const params = new URLSearchParams();
-    logoIds.forEach((id) => params.append("logo_ids", id));
-
-    return axios.get(`${ROBOTOFF_API_URL}/images/logos?${params.toString()}`);
+    return robotoffClient.fetchLogos(logoIds);
   },
 
   getUnansweredValues({
     page = 1,
     countryCode,
+    campaign,
     ...other
   }: {
     type: "label" | "brand" | "category";
@@ -213,17 +200,12 @@ const robotoff = {
     page?: number;
     count?: number;
   }) {
-    return axios.get(
-      `${ROBOTOFF_API_URL}/questions/unanswered/?${Object.entries(
-        removeEmptyKeys({
-          ...other,
-          countries: countryCode,
-          page: page >= 1 ? page : 1,
-        }),
-      )
-        .map(([key, value]) => `${key}=${value}`)
-        .join("&")}`,
-    );
+    return robotoffClient.getQuestionsUnanswered({
+      ...other,
+      campaigns: campaign,
+      countries: countryCode,
+      page: page >= 1 ? page : 1,
+    });
   },
 };
 

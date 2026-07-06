@@ -15,12 +15,12 @@ const fetchData = async (insightId: string) => {
     return response;
   }
 
-  let bounding_box = response.data?.bounding_box;
+  let bounding_box = response.data?.data?.bounding_box;
   const source_image = response.data?.source_image;
   const logo_id = response.data?.data?.logo_id;
 
   if (source_image && logo_id && !bounding_box) {
-    const logoData = await robotoff.getLogosImages([logo_id]);
+    const logoData = await robotoff.getLogosImages([String(logo_id)]);
     bounding_box = logoData?.data?.logos?.[0]?.bounding_box;
   }
 
@@ -63,11 +63,11 @@ export const LogoQuestionCard = (props: LogoQuestionCardProps) => {
         return;
       }
 
-      if (bounding_box && source_image) {
+      if (bounding_box && bounding_box.length === 4 && source_image) {
         setCroppedImageUrl(
           robotoff.getCroppedImageUrl(
             off.getImageUrl(source_image),
-            bounding_box,
+            bounding_box as [number, number, number, number],
           ),
         );
       }

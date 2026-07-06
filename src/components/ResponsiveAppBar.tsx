@@ -195,11 +195,7 @@ const ResponsiveAppBar = () => {
     url?: string;
   }) => {
     if (page.devModeOnly) {
-      return (
-        isDevMode &&
-        !!page.url &&
-        visiblePages[page.url as keyof typeof visiblePages]
-      );
+      return isDevMode && !!page.url && visiblePages[page.url];
     }
     if (page.mobileOnly) {
       return !isDesktop;

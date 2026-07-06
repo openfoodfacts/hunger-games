@@ -44,15 +44,16 @@ export function useRobotoffPredictions() {
         country,
       )
       .then(({ data }) => {
-        if (!valid) {
+        if (!valid || !data) {
           return;
         }
 
-        setCount(data.count);
+        setCount(data.count ?? 0);
         setInsights(data.insights);
 
         setIsLoading(false);
-      });
+      })
+      .catch(() => {});
 
     return () => {
       valid = false;
@@ -73,7 +74,8 @@ export function useRobotoffPredictions() {
         )
         .then(({ data: { product } }) => {
           setOffData((prev) => ({ ...prev, [code]: product }));
-        });
+        })
+        .catch(() => {});
     });
   }, [insights]);
 

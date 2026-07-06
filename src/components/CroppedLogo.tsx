@@ -10,13 +10,16 @@ const fetchData = async (insightId: string) => {
     return null;
   }
 
-  let bounding_box = response.data?.bounding_box;
-  const source_image = response.data?.source_image;
-  const logo_id = response.data?.data?.logo_id;
+  let bounding_box: [number, number, number, number] | undefined = response
+    ?.data?.data?.bounding_box as [number, number, number, number] | undefined;
+  const source_image = response?.data?.source_image;
+  const logo_id = response?.data?.data?.logo_id;
 
   if (source_image && logo_id && !bounding_box) {
-    const logoData = await robotoff.getLogosImages([logo_id]);
-    bounding_box = logoData?.data?.logos?.[0]?.bounding_box;
+    const logoData = await robotoff.getLogosImages([`${logo_id}`]);
+    bounding_box = logoData?.data?.logos?.[0]?.bounding_box as
+      | [number, number, number, number]
+      | undefined;
   }
 
   return { source_image, bounding_box };
@@ -25,7 +28,7 @@ const fetchData = async (insightId: string) => {
 const getCroppedLogoUrl = (
   debugResponse: null | {
     source_image?: string;
-    bounding_box?: number[];
+    bounding_box?: [number, number, number, number];
   },
 ) => {
   if (!debugResponse) {
@@ -41,9 +44,13 @@ const getCroppedLogoUrl = (
   return robotoff.getCroppedImageUrl(sourceImage, bounding_box);
 };
 
-const CroppedLogo = (props) => {
+interface CroppedLogoProps extends React.ImgHTMLAttributes<HTMLImageElement> {
+  insightId: string;
+}
+
+const CroppedLogo = (props: CroppedLogoProps) => {
   const { insightId, ...other } = props;
-  const [logoUrl, setLogoUrl] = React.useState(null);
+  const [logoUrl, setLogoUrl] = React.useState<string | null>(null);
   const [loading, setLoading] = React.useState(true);
 
   React.useEffect(() => {
@@ -52,7 +59,7 @@ const CroppedLogo = (props) => {
 
     fetchData(insightId)
       .then(getCroppedLogoUrl)
-      .then((url) => {
+      .then((url: string | null) => {
         if (isValid) {
           setLogoUrl(url);
         }

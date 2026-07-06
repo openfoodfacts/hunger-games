@@ -28,22 +28,26 @@ const fetchData = (insightId?: string) => async () => {
     return null;
   }
 
-  let bounding_box = response.data?.bounding_box;
+  let bounding_box = response.data?.data?.bounding_box;
   const source_image = response.data?.source_image;
   const logo_id = response.data?.data?.logo_id;
 
   if (source_image && logo_id && !bounding_box) {
-    const logoData = await robotoff.getLogosImages([logo_id]);
+    const logoData = await robotoff.getLogosImages([String(logo_id)]);
     bounding_box = logoData?.data?.logos?.[0]?.bounding_box;
   }
 
-  return { source_image, bounding_box, data: response.data };
+  const data = response.data as
+    | (typeof response.data & { predictor?: string; timestamp?: string })
+    | undefined;
+
+  return { source_image, bounding_box, data };
 };
 
 const getCroppedLogoUrl = (
   debugResponse?: null | {
     source_image?: string;
-    bounding_box?: [number, number, number, number];
+    bounding_box?: number[];
   },
 ) => {
   if (!debugResponse) {
@@ -51,12 +55,15 @@ const getCroppedLogoUrl = (
   }
   const { bounding_box, source_image } = debugResponse;
 
-  if (!source_image || !bounding_box) {
+  if (!source_image || !bounding_box || bounding_box.length !== 4) {
     return null;
   }
 
   const sourceImage = off.getImageUrl(source_image);
-  return robotoff.getCroppedImageUrl(sourceImage, bounding_box);
+  return robotoff.getCroppedImageUrl(
+    sourceImage,
+    bounding_box as [number, number, number, number],
+  );
 };
 
 interface DebugQuestionProps {
@@ -122,7 +129,9 @@ const DebugQuestion = (props: DebugQuestionProps) => {
                         timestamp
                       </TableCell>
                       <TableCell>
-                        {new Date(data?.data?.timestamp).toLocaleString()}
+                        {data?.data?.timestamp
+                          ? new Date(data.data.timestamp).toLocaleString()
+                          : ""}
                       </TableCell>
                     </TableRow>
                   </TableBody>

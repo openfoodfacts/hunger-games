@@ -1629,12 +1629,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@openfoodfacts/openfoodfacts-nodejs@npm:2.0.0-alpha.29":
-  version: 2.0.0-alpha.29
-  resolution: "@openfoodfacts/openfoodfacts-nodejs@npm:2.0.0-alpha.29"
+"@openfoodfacts/openfoodfacts-nodejs@npm:2.0.0-alpha.32":
+  version: 2.0.0-alpha.32
+  resolution: "@openfoodfacts/openfoodfacts-nodejs@npm:2.0.0-alpha.32"
   dependencies:
-    openapi-fetch: "npm:^0.15.0"
-  checksum: 10/9ec17a3540a78d2cd8c12aceadb1ff527c71983da72444fc839748606274105098dff12d6eafe512cfd37b218048d362e73925ed7ad46d7ecfe8bbe481b1a878
+    jwt-decode: "npm:4.0.0"
+    openapi-fetch: "npm:^0.17.0"
+  checksum: 10/d795f4f70ec7b2f43f14285b52f24dfc16b1e5a0cfe0923cb289fb89428f316d9acad5e2bf93550283d997a96fd8f2311106374fcd37bf5739afb10d78cb59a9
   languageName: node
   linkType: hard
 
@@ -4517,7 +4518,7 @@ __metadata:
     "@mui/lab": "npm:^5.0.0-alpha.151"
     "@mui/material": "npm:^5.14.16"
     "@mui/x-data-grid": "npm:^6.18.0"
-    "@openfoodfacts/openfoodfacts-nodejs": "npm:2.0.0-alpha.29"
+    "@openfoodfacts/openfoodfacts-nodejs": "npm:2.0.0-alpha.32"
     "@openfoodfacts/openfoodfacts-webcomponents": "npm:^1.15.1"
     "@tanstack/react-query": "npm:^5.75.1"
     "@types/lodash": "npm:^4.17.23"
@@ -5156,6 +5157,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"jwt-decode@npm:4.0.0":
+  version: 4.0.0
+  resolution: "jwt-decode@npm:4.0.0"
+  checksum: 10/87b569e4a9a0067fb0d592bcf3b2ac3e638e49beee28620eeb07bef1b4470f4077dea68c15d191dd68e076846c3af8394be3bcaecffedc6e97433b221fdbbcf3
+  languageName: node
+  linkType: hard
+
 "keyv@npm:^4.5.4":
   version: 4.5.4
   resolution: "keyv@npm:4.5.4"
@@ -5653,19 +5661,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"openapi-fetch@npm:^0.15.0":
-  version: 0.15.2
-  resolution: "openapi-fetch@npm:0.15.2"
+"openapi-fetch@npm:^0.17.0":
+  version: 0.17.0
+  resolution: "openapi-fetch@npm:0.17.0"
   dependencies:
-    openapi-typescript-helpers: "npm:^0.0.15"
-  checksum: 10/22b523ee14620e8968c8195fd5f352e05cd4821990d867c4ec4f2fa4596a8829bb77a7986e62f39d25bf451cb5814ef9b0729240170f2816feabc556c722fb96
+    openapi-typescript-helpers: "npm:^0.1.0"
+  checksum: 10/5bcf4ae379c3e5894acb66605b433bfeffaadf8fb23f64c305a4bb53ec724cd9440b0235f37fa0bef0fb8b9d1226ac51d82bfda24b0f2407d6cb101e8b45f231
   languageName: node
   linkType: hard
 
-"openapi-typescript-helpers@npm:^0.0.15":
-  version: 0.0.15
-  resolution: "openapi-typescript-helpers@npm:0.0.15"
-  checksum: 10/63f8f0b8464aed3e5c6910428bd14839bd5c1dd6ddf841bcea9d5f536a6e03e942a028202920da1a8b1ed9e4304c6fca14943d01a8adff2942d1254a229b8c70
+"openapi-typescript-helpers@npm:^0.1.0":
+  version: 0.1.0
+  resolution: "openapi-typescript-helpers@npm:0.1.0"
+  checksum: 10/c3c9047da1b31f8561bc13952eca53d6f43419d3dc794122c45f14c31f325d79b53e9d83b6b8452ceb36a110d0c7a91af15623723057c297205e07628356e2a5
   languageName: node
   linkType: hard
 
