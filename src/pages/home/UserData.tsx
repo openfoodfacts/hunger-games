@@ -11,23 +11,44 @@ import { CircularProgress } from "@mui/material";
 
 import { OFF_URL } from "../../const";
 
+type UserCounts = {
+  editorCount: number | null | undefined;
+  contributorCount: number | null | undefined;
+  photographerCount: number | null | undefined;
+};
+
+type CountCardProps = {
+  translationKey: string;
+  value: number | null | undefined;
+};
+
+type UserDataProps = {
+  userName: string;
+};
+
 const fetchUserData = async (userName: string) => {
   const editorPromise = axios
-    .get(`${OFF_URL}/editor/${userName}.json?fields=count`)
-    .then(({ data }) => {
-      return data?.count;
+    .get(`${OFF_URL}/facets/editor/${userName}.json?fields=count`, {
+      withCredentials: true,
+    })
+    .then(({ data }: { data: { count: number } }): number | null => {
+      return data?.count ?? null;
     })
     .catch(() => undefined);
   const contributorPromise = axios
-    .get(`${OFF_URL}/contributor/${userName}.json?fields=count`)
-    .then(({ data }) => {
-      return data?.count;
+    .get(`${OFF_URL}/facets/contributor/${userName}.json?fields=count`, {
+      withCredentials: true,
+    })
+    .then(({ data }: { data: { count: number } }): number | null => {
+      return data?.count ?? null;
     })
     .catch(() => undefined);
   const photographerPromise = axios
-    .get(`${OFF_URL}/photographer/${userName}.json?fields=count`)
-    .then(({ data }) => {
-      return data?.count;
+    .get(`${OFF_URL}/facets/photographer/${userName}.json?fields=count`, {
+      withCredentials: true,
+    })
+    .then(({ data }: { data: { count: number } }): number | null => {
+      return data?.count ?? null;
     })
     .catch(() => undefined);
 
@@ -40,7 +61,7 @@ const fetchUserData = async (userName: string) => {
   return { editorCount, contributorCount, photographerCount };
 };
 
-const CountCard = (props) => {
+const CountCard = (props: CountCardProps) => {
   const { translationKey, value } = props;
 
   const { t } = useTranslation();
@@ -63,19 +84,23 @@ const CountCard = (props) => {
           {t(`home.statistics.${translationKey}.description`)}
         </Typography>
         <Typography variant="h3" color="text.primary" component="div">
-          {value?.toLocaleString()}
+          {typeof value === "number" ? value.toLocaleString() : "N/A"}
         </Typography>
       </CardContent>
     </Card>
   );
 };
 
-const UserData = ({ userName }) => {
+const UserData = ({ userName }: UserDataProps) => {
   const { t } = useTranslation();
 
-  const [data, setData] = useState({});
+  const [data, setData] = useState<UserCounts>({
+    editorCount: undefined,
+    contributorCount: undefined,
+    photographerCount: undefined,
+  });
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
+  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     setLoading(true);
@@ -111,7 +136,7 @@ const UserData = ({ userName }) => {
             <CountCard
               key={countType}
               translationKey={countType}
-              value={value ?? "N/A"}
+              value={value}
             />
           ))}
         </Stack>
