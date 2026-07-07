@@ -155,7 +155,9 @@
     "dashboard": "標誌儀表板",
     "tour": "展示導覽",
     "logged_in_user": "登入為“用戶名稱” {{userName}}",
-    "log_in": "點擊登录"
+    "log_in": "點擊登录",
+    "moderation": "適度",
+    "ingredients": "成分 "
   },
   "insights": {
     "insights": "深層研析 ",
@@ -351,7 +353,6 @@
       "open_button": "打開指示",
       "title": "如何操作介面",
       "chose_between_empty_and_partially_filled": "您可以選擇 OpenFoodFacts (OFF) 沒有其營養成分資料的產品。或營養表未完全填寫的產品。",
-      "picture_date_is_display": "圖片的日期顯示在它上面。便於您檢查它是否是最近的。",
       "indicate_not_provided_value": "輸入為空的欄位將被忽略。如果表中不存在纖維，則可以輸入“-”來指出該值不可用。",
       "validate_one_column": "選擇圖片中顯示的尺寸。如果您有 100g 的份量，請選擇 100g，因為這是標準化格式。",
       "skip_button": "如果您不知道如何處理圖像，或者您只是不想這樣做，請按“跳過”。其他用戶將能夠處理它。",
@@ -379,7 +380,7 @@
   },
   "green-score": {
     "description": "Here is a summary of questions that could improve Eco-Score computation",
-    "countryLabel": "Country"
+    "countryLabel": "國家"
   },
   "ingredients": {
     "description": "這個遊戲可以讓你驗證某個產品的各種語言成分清單圖像的預選，並驗證提取的成分。",

@@ -13,13 +13,13 @@
         },
         "green_score": {
           "title": "Eko-skor",
-          "description": "Annotate the questions with the highest value"
+          "description": "En yüksek değerli sorulara açıklama ekleyin"
         }
       }
     },
     "account_band": {
       "title": "Katkınızın sayılmasını ister misiniz? Bir hesap oluşturun veya Open Food Facts'te oturum açın!",
-      "log_in": "Oturumu Başlat",
+      "log_in": "Giriş yap",
       "sign_up": "Kaydol",
       "contribution_details": "Katkınızın neden önemli olduğunu öğrenin"
     },
@@ -75,7 +75,7 @@
     "remaining_other": "Kalan: >100",
     "hide_images": "Resimleri gizle (daha hızlı yükleme)",
     "display_images": "Resimleri görüntüle",
-    "annotations": "3. Ek Açıklamalar",
+    "annotations": "Ek Açıklamalar",
     "last_annotations": "Son ek açıklamalar",
     "remaining_annotations": "Kalan sorular",
     "annotated_annotations": "Açıklandı",
@@ -130,7 +130,7 @@
     "flag": "Ters giden birşey mi var? Resmi rapor edin/işaretleyin!",
     "unflag": "Resmin işaretini kaldır",
     "reset_filters": "Filtreleri sıfırla",
-    "log_in": "Oturumu Başlat",
+    "log_in": "Giriş yap",
     "sign_up": "Kaydol",
     "login_title": "Ek açıklama sayınızı yapın",
     "login_description": "Şu anda Open Food Facts'e giriş yapmadınız. Yanıtlarınızın doğrudan ürünlere uygulanmasını ve hesabınızla ilişkilendirilmesini sağlamak için Open Food Facts hesabınıza giriş yapmayı veya bir tane oluşturmayı düşünün",
@@ -155,7 +155,9 @@
     "dashboard": "Logo panosu",
     "tour": "Gösteri Turu",
     "logged_in_user": "{{userName}} olarak günlüğe kaydedildi",
-    "log_in": "Giriş yapmak için tıklayın"
+    "log_in": "Giriş yapmak için tıklayın",
+    "moderation": "Ilımlılık",
+    "ingredients": "Malzemeler"
   },
   "insights": {
     "insights": "Yönelimler",
@@ -351,7 +353,6 @@
       "open_button": "Tarifleri aç",
       "title": "Arayüz nasıl kullanılır",
       "chose_between_empty_and_partially_filled": "OpenFoodFacts'in (OFF) besin değerleri hakkında verisi olmayan ürünler arasından seçim yapabilirsiniz. Ya da besin tablosu kısmen doldurulmuş ürün.",
-      "picture_date_is_display": "Fotoğrafların çekilme tarihleri üzerinde yazar, bu şekilde yeni olup olmadığını kontrol edebilirsiniz.",
       "indicate_not_provided_value": "Boş girdiler göz ardı edilir. Tabloda lifler yoksa, değerin mevcut olmadığını belirtmek için \"-\" koyabilirsiniz.",
       "validate_one_column": "Resimde gösterilen boyutu seçin. 100g ve porsiyon boyutunuz varsa, lütfen 100g'ı seçin çünkü bu normalleştirilmiş bir formattır.",
       "skip_button": "Bir görüntü ile nasıl başa çıkacağınızı bilmiyorsanız veya sadece yapmak istemiyorsanız, \"atla\" tuşuna basın. Diğer kullanıcı bunu halledebilecektir.",

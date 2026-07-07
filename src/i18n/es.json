@@ -133,7 +133,7 @@
     "log_in": "Iniciar sesión",
     "sign_up": "Registrarse",
     "login_title": "Haz que tus anotaciones valgan la pena",
-    "login_description": "No has iniciado sesión en Open Food Facts. Para que tus anotaciones se apliquen directamente a los productos y se vinculen a tu cuenta, inicia sesión en Open Food Facts o crea una cuenta.",
+    "login_description": "No has iniciado sesión en Open Food Facts. Para que tus anotaciones se apliquen directamente a los productos y se asocien a tu cuenta, inicia sesión en Open Food Facts o crea una cuenta.",
     "please_wait_while_we_fetch_the_question": "Espera mientras buscamos la pregunta."
   },
   "menu": {
@@ -155,7 +155,9 @@
     "dashboard": "Panel de logotipos",
     "tour": "Ver visita guiada",
     "logged_in_user": "Sesión iniciada como {{userName}}",
-    "log_in": "Haz clic para iniciar sesión"
+    "log_in": "Haz clic para iniciar sesión",
+    "moderation": "Moderación",
+    "ingredients": "Ingredientes"
   },
   "insights": {
     "insights": "Vista general",
@@ -184,7 +186,7 @@
     "completed_at": "Completado el",
     "automatic": "Automático",
     "human_required": "Humano requerido",
-    "edit_product": "Editar producto",
+    "edit_product": "Abrir editor del producto",
     "view_product": "Abrir página del producto",
     "view_crops_for_this_product": "Anotar logotipos de productos"
   },
@@ -337,8 +339,8 @@
     "display_off_values": "Mostrar valores de OpenFoodFacts",
     "nutrients": "Nutrientes",
     "serving_size": "Tamaño de la porción",
-    "add_nutrient": "-- agregar nutriente --",
-    "validate_100g": "Validar (100g)",
+    "add_nutrient": "-- añadir nutriente --",
+    "validate_100g": "Validar (100 g)",
     "validate_serving": "Validar (porción)",
     "skip": "Omitir",
     "invalid_image": "Imagen no válida",
@@ -351,7 +353,6 @@
       "open_button": "Abrir instrucciones",
       "title": "Cómo utilizar la interfaz",
       "chose_between_empty_and_partially_filled": "Puede elegir entre productos para los cuales OpenFoodFacts (OFF) no tiene datos sobre los nutrientes. O producto con tabla de nutrientes parcialmente rellenada.",
-      "picture_date_is_display": "La fecha de la imagen se muestra encima. Permitiéndole comprobar si es reciente.",
       "indicate_not_provided_value": "Las entradas vacías se ignoran. Si las fibras no están presentes en la tabla, puede escribir \"-\" para especificar que el valor no está disponible.",
       "validate_one_column": "Seleccione el tamaño que se muestra en la imagen. Si tiene 100 g y una porción, seleccione 100 g, ya que es un formato normalizado.",
       "skip_button": "Si no sabes cómo manejar una imagen, o simplemente no quieres hacerlo, presiona \"saltar\". Otro usuario podrá manejarla.",
