@@ -1,4 +1,4 @@
-import { isEqual } from "lodash";
+import { isEqual } from "lodash-es";
 import { FilterState } from "./robotoff";
 
 // Parameters added and to take in consideration to avoid breaking al the saved filter state

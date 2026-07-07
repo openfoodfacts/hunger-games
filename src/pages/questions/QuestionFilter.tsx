@@ -20,7 +20,12 @@ import { TFunction } from "i18next/typescript/t";
 import { SetURLSearchParams, useSearchParams } from "react-router";
 
 import { useFavorite } from "../../components/QuestionFilter/useFavorite";
-import { insightTypesNames } from "../../components/QuestionFilter/const";
+import {
+  insightTypesNames,
+  campagnes,
+  predictors,
+} from "../../components/QuestionFilter/const";
+import countries from "../../assets/countries.json";
 import FilterDialog from "./FilterDialog";
 import { getFilterParams } from "../../hooks/useFilterState/getFilterParams";
 import { FilterState } from "../../robotoff";
@@ -48,7 +53,11 @@ const getChipsParams = (
 
     {
       key: "countryFilter",
-      display: !!filterState.country,
+      // Show the chip only when the URL value matches a dropdown country
+      // (its ISO `countryCode`)
+      display:
+        !!filterState.country &&
+        countries.some((c) => c.countryCode === filterState.country),
       label: `${t("questions.filters.short_label.country")}: ${getCountryName(
         filterState.country,
       )}`,
@@ -86,7 +95,8 @@ const getChipsParams = (
     },
     {
       key: "campaign",
-      display: !!filterState.campaign,
+      display:
+        !!filterState.campaign && campagnes.includes(filterState.campaign),
       label: `${t(
         "questions.filters.short_label.campaign",
       )}: ${filterState.campaign}`,
@@ -99,7 +109,7 @@ const getChipsParams = (
     },
     {
       key: "predictor",
-      display: !!filterState.predictor,
+      display: predictors.some((p) => p.value === filterState.predictor),
       label: `${t(
         "questions.filters.short_label.predictor",
       )}: ${filterState.predictor}`,

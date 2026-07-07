@@ -64,6 +64,29 @@ Hunger Games is built upon the following projects. Contributions to these projec
 - Install libraries: `yarn install`
 - run the project locally `yarn dev`
 
+#### Use local version of openfoodfacts-webcomponents
+
+Assuming both `openfoodfacts-webcomponents` and `hunger-games` repositories have been cloned in the same parent folder:
+
+```
+parent-folder/
+|-hunger-games/
+|-openfoodfacts-webcomponents/
+|--package.json
+```
+
+- In openfoodfacts-webcomponents/web-components, run: `npm run build`
+
+- In hunger-games, in the file `package.json`, replace:
+  > "@openfoodfacts/openfoodfacts-webcomponents": "^1.15.1",
+
+by (update path if needed):
+
+> "@openfoodfacts/openfoodfacts-webcomponents": "file:../openfoodfacts-webcomponents/web-components",
+
+- Install libraries: `yarn install`
+- run the project locally `yarn dev`
+
 #### Build with Yarn
 
 ```
@@ -115,10 +138,7 @@ You can also help by improving [translation in your language](https://translate.
 
 ## 📆 Weekly meetings (joint with the ML/Robotoff meeting)
 
-- We e-meet every Tuesday at 11:00 Paris Time (10:00 London Time, 15:30 IST, 02:00 AM PT)
-- ![Google Meet](https://img.shields.io/badge/Google%20Meet-00897B?logo=google-meet&logoColor=white) Video call link: https://meet.google.com/qvv-grzm-gzb
-- Join by phone: https://tel.meet/qvv-grzm-gzb?pin=9965177492770
-- Add the Event to your Calendar by [adding the Open Food Facts community calendar to your calendar](https://wiki.openfoodfacts.org/Events)
+- We e-meet some Tuesdays at 11:00 Paris Time (10:00 London Time, 15:30 IST, 02:00 AM PT)
 - [Weekly Agenda](https://drive.google.com/open?id=1RUfmWHjtFVaBcvQ17YfXu6FW6oRFWg-2lncljG0giKI): please add the Agenda items as early as you can. Make sure to check the Agenda items in advance of the meeting, so that we have the most informed discussions possible.
 - The meeting will handle Agenda items first, and if time permits, collaborative bug triage.
 - We strive to timebox the core of the meeting (decision making) to 30 minutes, with an optional free discussion/live debugging afterwards.
