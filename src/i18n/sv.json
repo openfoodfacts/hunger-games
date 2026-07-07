@@ -12,8 +12,8 @@
           "description": "Hitta alla logotyper som matchar den givna logotypen"
         },
         "green_score": {
-          "title": "Eco-score",
-          "description": "Annotate the questions with the highest value"
+          "title": "Miljöpoäng",
+          "description": "Annotera frågorna med högst värde"
         }
       }
     },
@@ -151,11 +151,13 @@
     "ingredient-spellcheck": "Stavningskontroll för ingredienser",
     "ingredient-detection": "Ingrediensdetektering",
     "settings": "Inställningar",
-    "green-score": "Green-Score",
+    "green-score": "Grön poäng",
     "dashboard": "Logotyppanel",
     "tour": "Visa rundtur",
     "logged_in_user": "Inloggad som {{userName}}",
-    "log_in": "Klicka för att logga in"
+    "log_in": "Klicka för att logga in",
+    "moderation": "Måtta",
+    "ingredients": "Ingredienser"
   },
   "insights": {
     "insights": "Insikter",
@@ -252,7 +254,7 @@
     "donate": "Donera",
     "join_the_community": {
       "discover_our": "Upptäck vår ",
-      "code_of_conduct": "uppförandekod ",
+      "code_of_conduct": "Uppförandekod ",
       "join_us_on": "Anslut till oss på ",
       "forum": "Forum",
       "subscribe_to_our": "Prenumerera på vårt ",
@@ -338,7 +340,7 @@
     "nutrients": "Näringsämnen",
     "serving_size": "Portionsstorlek",
     "add_nutrient": "-- lägg till näringsämne --",
-    "validate_100g": "Validera (100 g)",
+    "validate_100g": "Validera (100g)",
     "validate_serving": "Validera (portion)",
     "skip": "Hoppa over",
     "invalid_image": "Ogiltig bild",
@@ -351,9 +353,8 @@
       "open_button": "Öppna instruktioner",
       "title": "Hur man använder gränssnittet",
       "chose_between_empty_and_partially_filled": "Du kan välja mellan produkter som OpenFoodFacts (OFF) inte har några uppgifter om näringsämnena. Eller produkt med delvis ifylld näringstabell.",
-      "picture_date_is_display": "Datumet för bilden visas ovanför. Det gör att du kan kontrollera om det är en ny bild.",
       "indicate_not_provided_value": "Tomma indata ignoreras. Om fibrer inte finns i tabellen, kan du ange att värdet inte är tillgängligt genom att ange \"-\".",
-      "validate_one_column": "Välj den storlek som visas på bilden. Om du har en portionsstorlek på 100 g, vänligen välj 100 g eftersom det är ett normaliserat format.",
+      "validate_one_column": "Välj den storlek som visas på bilden. Om du har en portionsstorlek på 100g, vänligen välj 100g eftersom det är ett normaliserat format.",
       "skip_button": "Om du inte vet hur du ska hantera en bild, eller om du helt enkelt inte vill göra det, tryck på \"hoppa över\". Andra användare kan hantera det.",
       "invalid_image_button": "Om bilderna inte är en näringstabell, tryck på \"Ogiltig bild\" för att ta bort den från listan över bilder för att verifiera",
       "close": "Stäng"
@@ -378,8 +379,8 @@
     "correct": "Korrekt ({{label}})"
   },
   "green-score": {
-    "description": "Here is a summary of questions that could improve Eco-Score computation",
-    "countryLabel": "Country"
+    "description": "Här är en sammanfattning av frågorna som kan förbättra beräkningen av miljöpoäng",
+    "countryLabel": "Land"
   },
   "ingredients": {
     "description": "Detta spel låter dig validera förvalet av bilder av ingredienslistor på olika språk för en produkt, och validera de extraherade ingredienserna.",

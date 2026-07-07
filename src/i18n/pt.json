@@ -12,8 +12,8 @@
           "description": "Encontre todos os logótipos que correspondem ao logótipo indicado"
         },
         "green_score": {
-          "title": "Eco-score",
-          "description": "Annotate the questions with the highest value"
+          "title": "Pontuação ecológica",
+          "description": "Assinale as perguntas com maior relevância"
         }
       }
     },
@@ -155,7 +155,9 @@
     "dashboard": "Painel de logótipos",
     "tour": "Mostrar demonstração",
     "logged_in_user": "Iniciou sessão como {{userName}}",
-    "log_in": "Clique para iniciar sessão"
+    "log_in": "Clique para iniciar sessão",
+    "moderation": "Moderação",
+    "ingredients": "Ingredientes"
   },
   "insights": {
     "insights": "Vista geral detalhada",
@@ -351,7 +353,6 @@
       "open_button": "Abrir instruções",
       "title": "Como usar a interface",
       "chose_between_empty_and_partially_filled": "Pode escolher entre produtos para os quais o OpenFoodFacts (OFF) não tem dados sobre os nutrientes. Ou produtos com tabela de nutrientes parcialmente preenchida.",
-      "picture_date_is_display": "A data da fotografia é mostrada em cima dela. Permitindo que verifique se é recente.",
       "indicate_not_provided_value": "As entradas vazias são ignoradas. Se as fibras não estiverem presentes na tabela, pode colocar \"-\" para especificar que o valor não está disponível.",
       "validate_one_column": "Escolha o tamanho que é apresentado na imagem. Se tiver 100g e tamanho de porção, escolha 100g porque é um formato normalizado.",
       "skip_button": "Se não sabe como lidar com uma imagem ou simplesmente não quer fazê-lo, pressione \"ignorar\". Outro utilizador poderá lidar com isso.",
@@ -378,8 +379,8 @@
     "correct": "Correto ({{label}})"
   },
   "green-score": {
-    "description": "Here is a summary of questions that could improve Eco-Score computation",
-    "countryLabel": "Country"
+    "description": "Aqui está um resumo de perguntas que podem melhorar o cálculo do Eco‑Score",
+    "countryLabel": "País"
   },
   "ingredients": {
     "description": "Este jogo permite-lhe validar a pré-seleção de imagens de listas de ingredientes em vários idiomas para um produto e validar os ingredientes extraídos.",
