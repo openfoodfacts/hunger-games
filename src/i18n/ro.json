@@ -12,7 +12,7 @@
           "description": "Găsiți toate siglele care se potrivesc cu logo-ul dat"
         },
         "green_score": {
-          "title": "Eco-score",
+          "title": "Eco-Scor",
           "description": "Annotate the questions with the highest value"
         }
       }
@@ -151,11 +151,13 @@
     "ingredient-spellcheck": "Verificare ortografică a ingredientelor",
     "ingredient-detection": "Detectarea ingredientelor",
     "settings": "Configurări",
-    "green-score": "Scor Ecologic",
+    "green-score": "Green-Score",
     "dashboard": "Tabloul de bord cu sigle",
     "tour": "Arată tur",
     "logged_in_user": "Înregistrat ca {{userName}}",
-    "log_in": "Faceți clic pentru a vă autentifica"
+    "log_in": "Faceți clic pentru a vă autentifica",
+    "moderation": "Moderare",
+    "ingredients": "Ingrediente"
   },
   "insights": {
     "insights": "Perspective",
@@ -351,7 +353,6 @@
       "open_button": "Deschideți instrucțiunile",
       "title": "Cum se utilizează interfața",
       "chose_between_empty_and_partially_filled": "Puteți alege dintre produsele pentru care OpenFoodFacts (OFF) nu are date despre nutrienți. Sau produs cu tabel de nutrienți parțial umplut.",
-      "picture_date_is_display": "Data fotografiei este afișată deasupra ei. Vă permite să verificați dacă este recentă.",
       "indicate_not_provided_value": "Intrările goale sunt ignorate. Dacă fibrele nu sunt prezente în tabel, puteți pune „-” pentru a specifica că valoarea nu este disponibilă.",
       "validate_one_column": "Alegeți dimensiunea așa cum este afișată în imagine. Dacă aveți 100g și o porție, vă rugăm să alegeți 100g deoarece este un format normalizat.",
       "skip_button": "Dacă nu știi cum să te descurci cu o imagine, sau pur și simplu nu vrei să o faci, apasă pe „săriți”. Alţi utilizatori vor putea descurca.",
@@ -379,7 +380,7 @@
   },
   "green-score": {
     "description": "Here is a summary of questions that could improve Eco-Score computation",
-    "countryLabel": "Country"
+    "countryLabel": "Țară"
   },
   "ingredients": {
     "description": "Acest joc vă permite să validați preselecția imaginilor listelor de ingrediente în diferite limbi pentru un produs și să validați ingredientele extrase.",
