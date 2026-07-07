@@ -115,7 +115,7 @@ You can also help by improving [translation in your language](https://translate.
 
 ## 📆 Weekly meetings (joint with the ML/Robotoff meeting)
 
-- We e-meet some Tuesday at 11:00 Paris Time (10:00 London Time, 15:30 IST, 02:00 AM PT)
+- We e-meet some Tuesdays at 11:00 Paris Time (10:00 London Time, 15:30 IST, 02:00 AM PT)
 - [Weekly Agenda](https://drive.google.com/open?id=1RUfmWHjtFVaBcvQ17YfXu6FW6oRFWg-2lncljG0giKI): please add the Agenda items as early as you can. Make sure to check the Agenda items in advance of the meeting, so that we have the most informed discussions possible.
 - The meeting will handle Agenda items first, and if time permits, collaborative bug triage.
 - We strive to timebox the core of the meeting (decision making) to 30 minutes, with an optional free discussion/live debugging afterwards.
