@@ -1,3 +1,4 @@
+import { OpenFoodFacts } from "@openfoodfacts/openfoodfacts-nodejs";
 import { getLang } from "./localeStorageManager";
 import {
   OFF_DOMAIN,
@@ -23,6 +24,11 @@ interface Product {
   labels_tags?: string;
   quantity?: string;
 }
+
+export const offClient = new OpenFoodFacts(
+  (input: RequestInfo | URL, init: RequestInit | undefined) =>
+    fetch(input, { ...init, credentials: "include" }),
+);
 
 class OffService {
   private readonly axios: typeof axios = axios;
