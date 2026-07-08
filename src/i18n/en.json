@@ -12,7 +12,7 @@
           "description": "Find all the logos matching the given logo"
         },
         "green_score": {
-          "title": "Eco-score",
+          "title": "Green-score",
           "description": "Annotate the questions with the highest value"
         }
       }
@@ -67,9 +67,6 @@
     "skip": "Skip",
     "yes": "Yes",
     "no_questions_remaining": "No questions remaining",
-    "similar_questions": "Similar questions",
-    "no_similar_questions": "No similar questions found",
-    "remaining_questions_count": "{{count}} remaining questions",
     "an_error_occurred": "An error occurred. Please reload, try later or contact the team.",
     "countries": "Countries",
     "view": "View",
@@ -77,8 +74,6 @@
     "remaining": "Remaining: {{count}}",
     "remaining_other": "Remaining: >100",
     "hide_images": "Hide images (faster loading)",
-    "no_images": "No images available for this product",
-    "no_additional_info": "No additional info available for this product",
     "display_images": "Display images",
     "annotations": "Annotations",
     "last_annotations": "Last annotations",
@@ -157,12 +152,12 @@
     "ingredient-detection": "Ingredient detection",
     "settings": "Settings",
     "green-score": "Green-Score",
-    "dashboard": "Labels & Claims",
+    "dashboard": "Logos dashboard",
     "tour": "Show tour",
     "logged_in_user": "Logged as {{userName}}",
     "log_in": "Click to login",
-    "moderation":"Moderation",
-    "ingredients":"Ingredients"
+    "moderation": "Moderation",
+    "ingredients": "Ingredients"
   },
   "insights": {
     "insights": "Insights",
@@ -299,11 +294,11 @@
         "text2": "As shown in the example, once you select all the similar logos, just type their value and select where it is a brand, a label or something else. It's that simple!"
       },
       "page4": {
-        "title": "Eco-Score Questions Game",
+        "title": "Green-Score Questions Game",
         "text1": "Help us finish the remaining questions in the most high priority labels!",
-        "text2": "These cards are linked to labels used in the computation of the Eco-Score.",
-        "text3": "<strong>What is Eco-Score?</strong>",
-        "text4": "Eco-Score captures the total environmental footprint, making it easier for consumers to compare products and decide which is better for the environment."
+        "text2": "These cards are linked to labels used in the computation of the Green-Score.",
+        "text3": "<strong>What is Green-Score?</strong>",
+        "text4": "Green-Score captures the total environmental footprint, making it easier for consumers to compare products and decide which is better for the environment."
       },
       "page5": {
         "title": "Settings",
@@ -384,7 +379,7 @@
     "correct": "Correct ({{label}})"
   },
   "green-score": {
-    "description": "Here is a summary of questions that could improve Eco-Score computation",
+    "description": "Here is a summary of questions that could improve Green-Score computation",
     "countryLabel": "Country"
   },
   "ingredients": {
@@ -414,9 +409,5 @@
       "title": "Android APK",
       "subtitle": "Download"
     }
-  },
-  "image_viewer": {
-    "load_original": "Load original",
-    "compressed": "Compressed"
   }
 }
