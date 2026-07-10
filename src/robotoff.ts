@@ -151,7 +151,7 @@ const robotoff = {
   ) {
     const searchParams = {
       insight_types: insightType,
-      value_tag: valueTag,
+      value_tag: reformatValueTag(valueTag),
       brands: reformatValueTag(brandFilter),
       countries: countryFilter,
       campaign,
