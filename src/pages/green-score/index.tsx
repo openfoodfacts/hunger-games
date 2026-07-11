@@ -6,6 +6,9 @@ import TextField from "@mui/material/TextField";
 import MenuItem from "@mui/material/MenuItem";
 import Divider from "@mui/material/Divider";
 import Typography from "@mui/material/Typography";
+import Button from "@mui/material/Button";
+import { Link } from "react-router";
+
 
 import { useTranslation } from "react-i18next";
 
@@ -17,9 +20,22 @@ import { useCountry } from "../../contexts/CountryProvider";
 import countryNames from "../../assets/countries.json";
 import greenScoreCards from "./cards";
 
+const COUNTRY_LOGOS_DASHBOARD: Record<string, string> = {
+  fr: "origin-france",
+  uk: "united-kingdom",
+  au: "australia",
+  us: "united-states",
+  de: "germany",
+  ch: "switzerland",
+};
+
 export default function GreenScore() {
   const { t } = useTranslation();
   const [country, setCountry] = useCountry();
+  const dashboardTag = COUNTRY_LOGOS_DASHBOARD[country];
+  const countryLabel =
+  countryNames.find((c) => c.countryCode === country)?.label ?? "";
+
 
   return (
     <React.Suspense fallback={<Loader />}>
@@ -60,7 +76,16 @@ export default function GreenScore() {
             </MenuItem>
           ))}
         </TextField>
-
+        {dashboardTag && (
+          <Button
+            component={Link}
+            to={`/dashboard/${dashboardTag}`}
+            variant="outlined"
+            sx={{ alignSelf: "flex-start" }}
+          >
+            {t("green-score.logosDashboardLink", { country: countryLabel })}
+          </Button>
+        )}
         <Opportunities
           type="category"
           countryCode={country}
