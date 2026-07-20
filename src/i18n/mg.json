@@ -49,6 +49,10 @@
     "title": "Sary nasehon'ny mpampiasa",
     "loading": "Loading"
   },
+  "image_viewer": {
+    "compressed": "Compressed",
+    "load_original": "Load original"
+  },
   "questions": {
     "category": "sokajy",
     "categories": "Sokajy",
@@ -79,6 +83,10 @@
     "last_annotations": "Fanazavana farany",
     "remaining_annotations": "Fanontaniana sisa",
     "annotated_annotations": "Annotated",
+    "similar_questions": "Similar questions",
+    "no_similar_questions": "No similar questions",
+    "no_images": "No images available",
+    "no_additional_info": "No additional information",
     "filters": {
       "active_filter_number": "+{{count}} sivana",
       "active_filter_number_one": "+{{count}} sivana",
