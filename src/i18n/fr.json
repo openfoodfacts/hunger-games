@@ -49,6 +49,10 @@
     "title": "Images signalées par les utilisateurs",
     "loading": "Chargement"
   },
+  "image_viewer": {
+    "compressed": "Compressed",
+    "load_original": "Load original"
+  },
   "questions": {
     "category": "catégorie",
     "categories": "Catégories",
@@ -79,6 +83,10 @@
     "last_annotations": "Dernières annotations",
     "remaining_annotations": "Questions restantes",
     "annotated_annotations": "Annoté",
+    "similar_questions": "Similar questions",
+    "no_similar_questions": "No similar questions",
+    "no_images": "No images available",
+    "no_additional_info": "No additional information",
     "filters": {
       "active_filter_number": "+{{count}} filtres",
       "active_filter_number_one": "+{{count}} filtre",
