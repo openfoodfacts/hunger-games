@@ -49,6 +49,10 @@
     "title": "Lietotāju atzīmētie attēli",
     "loading": "Ielādēšana"
   },
+  "image_viewer": {
+    "compressed": "Compressed",
+    "load_original": "Load original"
+  },
   "questions": {
     "category": "kategorija",
     "categories": "Kategorijas",
@@ -79,6 +83,10 @@
     "last_annotations": "Pēdējās anotācijas",
     "remaining_annotations": "Atlikušie jautājumi",
     "annotated_annotations": "Anotēts",
+    "similar_questions": "Similar questions",
+    "no_similar_questions": "No similar questions",
+    "no_images": "No images available",
+    "no_additional_info": "No additional information",
     "filters": {
       "active_filter_number": "+{{count}} filtri",
       "active_filter_number_one": "+{{count}} filtrs",
