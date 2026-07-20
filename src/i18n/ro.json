@@ -49,6 +49,10 @@
     "title": "Imagini semnalate de utilizatori",
     "loading": "Se încarcă"
   },
+  "image_viewer": {
+    "compressed": "Compressed",
+    "load_original": "Load original"
+  },
   "questions": {
     "category": "categorie",
     "categories": "Categorii",
@@ -79,6 +83,10 @@
     "last_annotations": "Ultimele adnotări",
     "remaining_annotations": "Întrebări rămase",
     "annotated_annotations": "Adnotat",
+    "similar_questions": "Similar questions",
+    "no_similar_questions": "No similar questions",
+    "no_images": "No images available",
+    "no_additional_info": "No additional information",
     "filters": {
       "active_filter_number": "+{{count}} filtre",
       "active_filter_number_one": "+{{count}} filtru",
