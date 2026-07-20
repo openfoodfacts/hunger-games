@@ -49,6 +49,10 @@
     "title": "תמונות שסומנו על ידי משתמשים",
     "loading": "בטעינה"
   },
+  "image_viewer": {
+    "compressed": "Compressed",
+    "load_original": "Load original"
+  },
   "questions": {
     "category": "קטגוריה",
     "categories": "קטגוריות",
@@ -79,6 +83,10 @@
     "last_annotations": "הערות אחרונות",
     "remaining_annotations": "שאלות שנותרו",
     "annotated_annotations": "נכתבו הערות",
+    "similar_questions": "Similar questions",
+    "no_similar_questions": "No similar questions",
+    "no_images": "No images available",
+    "no_additional_info": "No additional information",
     "filters": {
       "active_filter_number": "+{{count}} מסננים",
       "active_filter_number_one": "+ מסנן",
