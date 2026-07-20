@@ -49,6 +49,10 @@
     "title": "Obrázky označené uživateli",
     "loading": "Načítání"
   },
+  "image_viewer": {
+    "compressed": "Compressed",
+    "load_original": "Load original"
+  },
   "questions": {
     "category": "kategorie",
     "categories": "Kategorie",
@@ -79,6 +83,10 @@
     "last_annotations": "Poslední anotace",
     "remaining_annotations": "Zbývající otázky",
     "annotated_annotations": "Komentováno",
+    "similar_questions": "Similar questions",
+    "no_similar_questions": "No similar questions",
+    "no_images": "No images available",
+    "no_additional_info": "No additional information",
     "filters": {
       "active_filter_number": "+{{count}} filtrů",
       "active_filter_number_one": "+{{count}} filtr",
