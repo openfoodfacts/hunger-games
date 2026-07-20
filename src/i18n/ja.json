@@ -49,6 +49,10 @@
     "title": "ユーザーによってフラグが付けられた画像",
     "loading": "読み込み中"
   },
+  "image_viewer": {
+    "compressed": "Compressed",
+    "load_original": "Load original"
+  },
   "questions": {
     "category": "カテゴリー",
     "categories": "カテゴリー",
@@ -79,6 +83,10 @@
     "last_annotations": "最後の注釈",
     "remaining_annotations": "残りの質問",
     "annotated_annotations": "注釈付き",
+    "similar_questions": "Similar questions",
+    "no_similar_questions": "No similar questions",
+    "no_images": "No images available",
+    "no_additional_info": "No additional information",
     "filters": {
       "active_filter_number": "+{{count}} 個のフィルタ",
       "active_filter_number_one": "+{{count}} 個のフィルタ",
