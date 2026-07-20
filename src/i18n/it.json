@@ -49,6 +49,10 @@
     "title": "Immagini segnalate dagli utenti",
     "loading": "Caricamento"
   },
+  "image_viewer": {
+    "compressed": "Compressed",
+    "load_original": "Load original"
+  },
   "questions": {
     "category": "categoria",
     "categories": "Categorie",
@@ -79,6 +83,10 @@
     "last_annotations": "Annotazioni recenti",
     "remaining_annotations": "Domande rimanenti",
     "annotated_annotations": "Annotato",
+    "similar_questions": "Similar questions",
+    "no_similar_questions": "No similar questions",
+    "no_images": "No images available",
+    "no_additional_info": "No additional information",
     "filters": {
       "active_filter_number": "+{{count}} filtri",
       "active_filter_number_one": "+{{count}} filtro",
