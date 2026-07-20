@@ -49,6 +49,10 @@
     "title": "Изображения, отмеченные пользователями",
     "loading": "Загрузка"
   },
+  "image_viewer": {
+    "compressed": "Compressed",
+    "load_original": "Load original"
+  },
   "questions": {
     "category": "категория",
     "categories": "Категории",
@@ -79,6 +83,10 @@
     "last_annotations": "Последние аннотации",
     "remaining_annotations": "Оставшиеся вопросы",
     "annotated_annotations": "Помеченный",
+    "similar_questions": "Similar questions",
+    "no_similar_questions": "No similar questions",
+    "no_images": "No images available",
+    "no_additional_info": "No additional information",
     "filters": {
       "active_filter_number": "+{{count}} фильтра",
       "active_filter_number_one": "+{{count}} фильтр",
