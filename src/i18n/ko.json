@@ -49,6 +49,10 @@
     "title": "사용자가 신고한 이미지",
     "loading": "로딩중…"
   },
+  "image_viewer": {
+    "compressed": "Compressed",
+    "load_original": "Load original"
+  },
   "questions": {
     "category": "카테고리",
     "categories": "카테고리",
@@ -79,6 +83,10 @@
     "last_annotations": "마지막 주석",
     "remaining_annotations": "남은 질문",
     "annotated_annotations": "주석 달기",
+    "similar_questions": "Similar questions",
+    "no_similar_questions": "No similar questions",
+    "no_images": "No images available",
+    "no_additional_info": "No additional information",
     "filters": {
       "active_filter_number": "+{{count}} 필터",
       "active_filter_number_one": "+{{count}} 필터",

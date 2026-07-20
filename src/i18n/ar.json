@@ -49,6 +49,10 @@
     "title": "الصور التي تم الإبلاغ عنها من قبل المستخدمين",
     "loading": "تحميل"
   },
+  "image_viewer": {
+    "compressed": "Compressed",
+    "load_original": "Load original"
+  },
   "questions": {
     "category": "atassnifate",
     "categories": "الفئات",
@@ -79,6 +83,10 @@
     "last_annotations": "الشروح الأخيرة",
     "remaining_annotations": "الأسئلة المتبقية",
     "annotated_annotations": "مشروح",
+    "similar_questions": "Similar questions",
+    "no_similar_questions": "No similar questions",
+    "no_images": "No images available",
+    "no_additional_info": "No additional information",
     "filters": {
       "active_filter_number": "+{{count}} فلاتر",
       "active_filter_number_one": "+{{count}} فلتر",

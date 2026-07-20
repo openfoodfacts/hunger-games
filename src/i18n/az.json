@@ -49,6 +49,10 @@
     "title": "İstifadəçilər tərəfindən işarələnmiş şəkillər",
     "loading": "Yüklənir"
   },
+  "image_viewer": {
+    "compressed": "Compressed",
+    "load_original": "Load original"
+  },
   "questions": {
     "category": "kateqoriya",
     "categories": "Kateqoriyalar",
@@ -79,6 +83,10 @@
     "last_annotations": "Son annotasiyalar",
     "remaining_annotations": "Qalan suallar",
     "annotated_annotations": "Annotasiya edilmiş",
+    "similar_questions": "Similar questions",
+    "no_similar_questions": "No similar questions",
+    "no_images": "No images available",
+    "no_additional_info": "No additional information",
     "filters": {
       "active_filter_number": "+{{count}} filtrləri",
       "active_filter_number_one": "+{{count}} filtr",
@@ -407,7 +415,7 @@
     },
     "androidAPK": {
       "title": "Android APK",
-      "subtitle": "Download"
+      "subtitle": "Yükləyin"
     }
   }
 }

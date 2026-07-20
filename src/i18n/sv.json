@@ -49,6 +49,10 @@
     "title": "Bilder flaggade av användare",
     "loading": "Läser in"
   },
+  "image_viewer": {
+    "compressed": "Compressed",
+    "load_original": "Load original"
+  },
   "questions": {
     "category": "kategori",
     "categories": "Kategorier",
@@ -79,6 +83,10 @@
     "last_annotations": "Senaste anteckningar",
     "remaining_annotations": "Återstående frågor",
     "annotated_annotations": "Antecknad",
+    "similar_questions": "Similar questions",
+    "no_similar_questions": "No similar questions",
+    "no_images": "No images available",
+    "no_additional_info": "No additional information",
     "filters": {
       "active_filter_number": "+{{count}} aktiva filter",
       "active_filter_number_one": "+{{count}} aktiva filter",

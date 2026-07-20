@@ -49,6 +49,10 @@
     "title": "用户标记的图片",
     "loading": "正在加载"
   },
+  "image_viewer": {
+    "compressed": "Compressed",
+    "load_original": "Load original"
+  },
   "questions": {
     "category": "类别",
     "categories": "类别",
@@ -79,6 +83,10 @@
     "last_annotations": "最新注释",
     "remaining_annotations": "剩余问题",
     "annotated_annotations": "已注释",
+    "similar_questions": "Similar questions",
+    "no_similar_questions": "No similar questions",
+    "no_images": "No images available",
+    "no_additional_info": "No additional information",
     "filters": {
       "active_filter_number": "+{{count}} 个 过滤器",
       "active_filter_number_one": "+{{count}} 个 过滤器",

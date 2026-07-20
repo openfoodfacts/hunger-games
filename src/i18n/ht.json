@@ -49,6 +49,10 @@
     "title": "Images flagged by users",
     "loading": "Chaje"
   },
+  "image_viewer": {
+    "compressed": "Compressed",
+    "load_original": "Load original"
+  },
   "questions": {
     "category": "kategori",
     "categories": "Kategori",
@@ -79,6 +83,10 @@
     "last_annotations": "Last annotations",
     "remaining_annotations": "Remaining questions",
     "annotated_annotations": "Annotated",
+    "similar_questions": "Similar questions",
+    "no_similar_questions": "No similar questions",
+    "no_images": "No images available",
+    "no_additional_info": "No additional information",
     "filters": {
       "active_filter_number": "+{{count}} filtè",
       "active_filter_number_one": "+{{count}} filtè",
@@ -203,7 +211,7 @@
     "label": "Etikèt",
     "brand": "Mak",
     "packager_code": "Packager code",
-    "packaging": "Packaging",
+    "packaging": "Anbalaj",
     "qr_code": "QR kòd",
     "category": "Kategori",
     "nutrition_label": "Etikèt nitrisyon",
@@ -232,10 +240,10 @@
       "failed_reference_logos": "We did not find any logos with this annotation. Try to use the following game to annotate some of them."
     },
     "deep_search": {
-      "title": "Logo search",
-      "description": "Select a logo you want to look for, and let's go to catch them all. For every logo you annotate, we will fetch it's neighbors such that you might never stop to annotate. (Press Shift to select range of logos)",
-      "ref_logos": "Reference logos (logo already annotated with this value)",
-      "remaining": "Remaining to annotate",
+      "title": "Rechèch logo",
+      "description": "Chwazi yon logo ou vle chèche, epi ann al chache yo tout. Pou chak logo ou mete anotasyon, n ap chèche vwazen li yo pou ou pa janm ka rete pou mete anotasyon. (Peze Shift pou chwazi yon seri logo)",
+      "ref_logos": "Logo referans (logo deja gen anotasyon ak valè sa a)",
+      "remaining": "Rete pou anote",
       "select_all": "Chwazi tout",
       "unselect_all": "Deseleksyone tout"
     }
@@ -323,7 +331,7 @@
         "text2": "If the crop contains only a partial part of a logo, you can select it."
       },
       "page3": {
-        "title": "Validate",
+        "title": "Valide",
         "text1": "Indicate the type of logo (label, brand, QRcode, ...)",
         "text2": "If it is a label or a brand logo, indicate which one it is",
         "text3": "Now you can submit your selection",

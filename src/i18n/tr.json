@@ -49,6 +49,10 @@
     "title": "Kullanıcılar tarafından işaretlenen resimler",
     "loading": "Yükleniyor"
   },
+  "image_viewer": {
+    "compressed": "Compressed",
+    "load_original": "Load original"
+  },
   "questions": {
     "category": "kategori",
     "categories": "Kategoriler",
@@ -79,6 +83,10 @@
     "last_annotations": "Son ek açıklamalar",
     "remaining_annotations": "Kalan sorular",
     "annotated_annotations": "Açıklandı",
+    "similar_questions": "Similar questions",
+    "no_similar_questions": "No similar questions",
+    "no_images": "No images available",
+    "no_additional_info": "No additional information",
     "filters": {
       "active_filter_number": "+{{count}} filtreler",
       "active_filter_number_one": "+{{count}} filtre",

@@ -49,6 +49,10 @@
     "title": "उपयोगकर्ताओं द्वारा चिह्नित छवियाँ",
     "loading": "लोड हो रहा है"
   },
+  "image_viewer": {
+    "compressed": "Compressed",
+    "load_original": "Load original"
+  },
   "questions": {
     "category": "वर्ग",
     "categories": "श्रेणियाँ",
@@ -79,6 +83,10 @@
     "last_annotations": "अंतिम टिप्पणियाँ",
     "remaining_annotations": "शेष प्रश्न",
     "annotated_annotations": "टिप्पणी",
+    "similar_questions": "Similar questions",
+    "no_similar_questions": "No similar questions",
+    "no_images": "No images available",
+    "no_additional_info": "No additional information",
     "filters": {
       "active_filter_number": "+{{count}} फिल्टर",
       "active_filter_number_one": "+{{count}} फिल्टर",
@@ -253,7 +261,7 @@
     "thank_you": "धन्यवाद,",
     "donate": "दान करें",
     "join_the_community": {
-      "discover_our": " Discover our ",
+      "discover_our": "Discover our ",
       "code_of_conduct": "आचार संहिता ",
       "join_us_on": "हमसे जुड़ें ",
       "forum": "फोरम",

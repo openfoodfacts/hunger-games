@@ -49,6 +49,10 @@
     "title": "Images flagged by users",
     "loading": "Loading"
   },
+  "image_viewer": {
+    "compressed": "Compressed",
+    "load_original": "Load original"
+  },
   "questions": {
     "category": "শ্রেণীসমূহ",
     "categories": "শ্রেণীসমূহ",
@@ -79,6 +83,10 @@
     "last_annotations": "Last annotations",
     "remaining_annotations": "Remaining questions",
     "annotated_annotations": "Annotated",
+    "similar_questions": "Similar questions",
+    "no_similar_questions": "No similar questions",
+    "no_images": "No images available",
+    "no_additional_info": "No additional information",
     "filters": {
       "active_filter_number": "+{{count}} filters",
       "active_filter_number_one": "+{{count}} filter",

@@ -49,6 +49,10 @@
     "title": "Снимки, маркирани от потребители",
     "loading": "Зареждане"
   },
+  "image_viewer": {
+    "compressed": "Compressed",
+    "load_original": "Load original"
+  },
   "questions": {
     "category": "категория",
     "categories": "Категории",
@@ -79,6 +83,10 @@
     "last_annotations": "Последни пояснения",
     "remaining_annotations": "Оставащи въпроси",
     "annotated_annotations": "Пояснено",
+    "similar_questions": "Similar questions",
+    "no_similar_questions": "No similar questions",
+    "no_images": "No images available",
+    "no_additional_info": "No additional information",
     "filters": {
       "active_filter_number": "+{{count}} филтъра",
       "active_filter_number_one": "+{{count}} филтър",
