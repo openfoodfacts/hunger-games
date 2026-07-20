@@ -49,6 +49,10 @@
     "title": "Felhasználók által megjelölt képek",
     "loading": "Betöltés"
   },
+  "image_viewer": {
+    "compressed": "Compressed",
+    "load_original": "Load original"
+  },
   "questions": {
     "category": "kategória",
     "categories": "Kategóriák",
@@ -79,6 +83,10 @@
     "last_annotations": "Legutóbbi megjegyzések",
     "remaining_annotations": "Hátralévő kérdések",
     "annotated_annotations": "Annotált",
+    "similar_questions": "Similar questions",
+    "no_similar_questions": "No similar questions",
+    "no_images": "No images available",
+    "no_additional_info": "No additional information",
     "filters": {
       "active_filter_number": "+{{count}} szűrő",
       "active_filter_number_one": "+{{count}} szűrő",
