@@ -388,7 +388,8 @@
   },
   "green-score": {
     "description": "Here is a summary of questions that could improve Green-Score computation",
-    "countryLabel": "Country"
+    "countryLabel": "Country",
+    "logosDashboardLink": "See the Logos Dashboard for {{country}}"
   },
   "ingredients": {
     "description": "This game allows you to validate the pre-selection of images of ingredients lists in various languages for a product, and validate the extracted ingredients.",
