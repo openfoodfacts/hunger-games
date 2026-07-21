@@ -6,8 +6,9 @@ export const OFF_API_URL_V2 = `${OFF_URL}/api/v2`;
 export const OFF_API_URL_V3 = `${OFF_URL}/api/v3`;
 export const OFF_IMAGE_URL = `https://images.${OFF_DOMAIN}/images/products`;
 export const OFF_SEARCH = `${OFF_URL}/cgi/search.pl`;
-export const OFF_SEARCH_A_LISIOUS =
+export const OFF_SEARCH_A_LICIOUS =
   "https://search.openfoodfacts.org/autocomplete";
+export const OFF_SEARCH_A_LISIOUS = OFF_SEARCH_A_LICIOUS;
 export const IS_DEVELOPMENT_MODE = import.meta.env.DEV;
 export const URL_ORIGINE = IS_DEVELOPMENT_MODE
   ? "http://localhost:5173"
