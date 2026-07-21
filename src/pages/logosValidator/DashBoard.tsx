@@ -115,7 +115,7 @@ export default function VerticalTabs() {
             />
           ))}
         </Tabs>
-        {DASHBOARD.map(({ tag, title }, index) => (
+        {DASHBOARD.map((_, index) => (
           <TabPanel value={value} key={index} index={index} />
         ))}
       </Box>

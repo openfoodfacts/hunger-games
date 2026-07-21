@@ -21,7 +21,6 @@ export function CountryProvider({ children }: { children: React.ReactNode }) {
       }
       setSearchParams((prev) => {
         prev.set("country", newCountry);
-
         return prev;
       });
     },

@@ -306,7 +306,7 @@ const getSteps = ({ t, withSelector, theme }) => [
 ];
 
 const Welcome = (props) => {
-  const { isOpen, setIsOpen } = props;
+  const { setIsOpen } = props;
 
   const { t } = useTranslation();
   const theme = useTheme();
@@ -325,7 +325,7 @@ const Welcome = (props) => {
       setIsOpen?.(true);
       setIsTourOpen(true);
     }
-  });
+  }, [setIsOpen]);
 
   const steps = React.useMemo(
     () => getSteps({ t, withSelector: isDesktop, theme }),

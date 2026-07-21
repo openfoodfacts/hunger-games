@@ -8,22 +8,43 @@ import Typography from "@mui/material/Typography";
 
 import robotoff, { QuestionInterface } from "../../../robotoff";
 import off from "../../../off";
-const fetchData = async (insightId: string) => {
-  const response = await robotoff.insightDetail(insightId);
+type BoundingBox = [number, number, number, number];
+interface InsightDetailResponse {
+  data?: {
+    bounding_box?: BoundingBox;
+    source_image?: string;
+    data?: { logo_id?: string };
+  };
+}
+interface LogosImagesResponse {
+  data?: {
+    logos?: Array<{ bounding_box?: BoundingBox }>;
+  };
+}
 
-  if (!response) {
-    return response;
+const fetchData = async (
+  insightId: string,
+): Promise<{ source_image?: string; bounding_box?: BoundingBox }> => {
+  const response = (await robotoff.insightDetail(insightId)) as
+    | InsightDetailResponse
+    | undefined;
+  if (!response || !response.data) {
+    return { source_image: undefined, bounding_box: undefined };
   }
-
-  let bounding_box = response.data?.bounding_box;
-  const source_image = response.data?.source_image;
-  const logo_id = response.data?.data?.logo_id;
-
+  let bounding_box = response.data.bounding_box;
+  const source_image = response.data.source_image;
+  const logo_id = response.data.data?.logo_id;
   if (source_image && logo_id && !bounding_box) {
-    const logoData = await robotoff.getLogosImages([logo_id]);
-    bounding_box = logoData?.data?.logos?.[0]?.bounding_box;
+    const logoData = (await robotoff.getLogosImages([logo_id])) as
+      | LogosImagesResponse
+      | undefined;
+    bounding_box =
+      logoData?.data?.logos &&
+      Array.isArray(logoData.data.logos) &&
+      logoData.data.logos[0]?.bounding_box
+        ? logoData.data.logos[0].bounding_box
+        : undefined;
   }
-
   return { source_image, bounding_box };
 };
 
@@ -58,12 +79,16 @@ export const LogoQuestionCard = (props: LogoQuestionCardProps) => {
       const { source_image, bounding_box } = await fetchData(
         question.insight_id,
       );
-
       if (!isValidQuery) {
         return;
       }
-
-      if (bounding_box && source_image) {
+      if (
+        bounding_box &&
+        source_image &&
+        Array.isArray(bounding_box) &&
+        bounding_box.length === 4 &&
+        bounding_box.every((n) => typeof n === "number")
+      ) {
         setCroppedImageUrl(
           robotoff.getCroppedImageUrl(
             off.getImageUrl(source_image),
@@ -72,8 +97,7 @@ export const LogoQuestionCard = (props: LogoQuestionCardProps) => {
         );
       }
     };
-    getImageUrl().catch(() => {});
-
+    void getImageUrl();
     return () => {
       isValidQuery = false;
     };

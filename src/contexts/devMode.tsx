@@ -12,9 +12,9 @@ type DevModeContextType = {
   setVisiblePages: React.Dispatch<
     React.SetStateAction<Record<string, boolean>>
   >;
-  pageCustomization: Record<string, any>;
+  pageCustomization: Record<string, unknown>;
   setPageCustomization: React.Dispatch<
-    React.SetStateAction<Record<string, any>>
+    React.SetStateAction<Record<string, unknown>>
   >;
 };
 

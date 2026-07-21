@@ -92,7 +92,7 @@ export default function LogoSearch() {
       });
 
     return () => (isValidRequest = false);
-  }, [searchState]);
+  }, [searchState, filterStateHasValue]);
 
   return (
     <Box sx={{ padding: 2 }}>
