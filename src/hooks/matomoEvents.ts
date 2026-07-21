@@ -1,4 +1,4 @@
-import { useMatomo } from "@jonkoops/matomo-tracker-react";
+import { useMatomo } from "./matomo";
 import { CORRECT_INSIGHT, WRONG_INSIGHT, SKIPPED_INSIGHT } from "../const";
 
 const mapValueToAction = {
