@@ -26,7 +26,7 @@
     "saved_filters": "Filtros salvos",
     "contribution_modal": {
       "title": "Sua contribuição é importante",
-      "information": "Jogos Vorazes é uma iniciativa para aprimorar os resultados da nossa OCR e inteligência artificial. Ao usar o Jogos Vorazes da Open Food Facts, você melhora todo o nosso banco de dados, o que ajuda a comunidade a fazer melhores escolhas alimentares. Nós reunimos suas anotações e as utilizamos para tornar o Open Food Facts mais preciso e eficaz.",
+      "information": "Jogos Vorazes é uma iniciativa para aprimorar os resultados da nossa OCR e inteligência artificial. Ao usar o Jogos Vorazes do Open Food Facts, você melhora todo o nosso banco de dados, o que ajuda a comunidade a fazer melhores escolhas alimentares. Nós reunimos suas anotações e as utilizamos para tornar o Open Food Facts mais preciso e eficaz.",
       "thank_you": "Obrigado por nos ajudar a melhorar o Open Food Facts para que mais pessoas possam usá-lo facilmente."
     },
     "statistics": {
@@ -387,11 +387,11 @@
     "correct": "Correto ({{label}})"
   },
   "green-score": {
-    "description": "Aqui está um resumo de perguntas que podem melhorar o cálculo da Pontuação Ecológica",
+    "description": "Aqui está um resumo das perguntas que podem melhorar o cálculo do Eco-Score",
     "countryLabel": "País"
   },
   "ingredients": {
-    "description": "Este jogo permite que você valide a pré-seleção de imagens de ingredientes em vários idiomas para um produto, e valide os ingredientes extraídos.",
+    "description": "Este jogo permite que você valide a pré-seleção de imagens de listas de ingredientes em vários idiomas para um produto, e valide os ingredientes extraídos.",
     "current_text": "texto de off",
     "confidence_score": "confiança no idioma",
     "revert": "Reverter",
@@ -403,7 +403,7 @@
   "footer": {
     "appStore": {
       "title": "App Store",
-      "subtitle": "Faça o download na"
+      "subtitle": "Baixar na"
     },
     "playStore": {
       "title": "Play Store",
