@@ -87,7 +87,7 @@ const useTranslation = (toTranslate) => {
         })
         .catch(() => {});
     }
-  }, [toTranslate]);
+  }, [toTranslate, translation]);
 
   return translation;
 };
