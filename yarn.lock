@@ -4522,7 +4522,7 @@ __metadata:
     typescript: "npm:^6.0.3"
     typescript-eslint: "npm:^8.58.1"
     vite: "npm:^7.3.5"
-    vite-plugin-static-copy: "npm:^3.1.4"
+    vite-plugin-static-copy: "npm:^4.1.1"
     web-vitals: "npm:^5.3.0"
   languageName: unknown
   linkType: soft
@@ -5827,10 +5827,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"p-map@npm:^7.0.3":
-  version: 7.0.3
-  resolution: "p-map@npm:7.0.3"
-  checksum: 10/2ef48ccfc6dd387253d71bf502604f7893ed62090b2c9d73387f10006c342606b05233da0e4f29388227b61eb5aeface6197e166520c465c234552eeab2fe633
+"p-map@npm:^7.0.4":
+  version: 7.0.5
+  resolution: "p-map@npm:7.0.5"
+  checksum: 10/1061b8ac47088f5f6c665d4ff99991c296b7fd5d622bcb8dad5e7c863ef991a181c54c54c5167513c427fd67751c75f1b96c59c9fd9853dc2d5fb5f9c8abeb14
   languageName: node
   linkType: hard
 
@@ -7294,17 +7294,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite-plugin-static-copy@npm:^3.1.4":
-  version: 3.1.4
-  resolution: "vite-plugin-static-copy@npm:3.1.4"
+"vite-plugin-static-copy@npm:^4.1.1":
+  version: 4.1.1
+  resolution: "vite-plugin-static-copy@npm:4.1.1"
   dependencies:
     chokidar: "npm:^3.6.0"
-    p-map: "npm:^7.0.3"
+    p-map: "npm:^7.0.4"
     picocolors: "npm:^1.1.1"
-    tinyglobby: "npm:^0.2.15"
+    tinyglobby: "npm:^0.2.17"
   peerDependencies:
-    vite: ^5.0.0 || ^6.0.0 || ^7.0.0
-  checksum: 10/9e9fbdbd30fdb437d2b10821ccaa61ceaf020263ac7e59875b1b8cccbc04015496a7e1bce938191e958b4acad4b3adb6baba2be493355ede9f28994b073bd5c8
+    vite: ^6.0.0 || ^7.0.0 || ^8.0.0
+  checksum: 10/49c227f1d5b68a70feb0ab59d888cf9780b0aaa639255f4e630818f11a6f9a5abfcfded8b4b77445fd6f68f13468b0b458e927bc551a02f0e6995cf8e0803fc4
   languageName: node
   linkType: hard
 
