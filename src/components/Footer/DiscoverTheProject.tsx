@@ -45,7 +45,7 @@ export default function DiscoverTheProject() {
   return (
     <Box sx={{ width: { xs: "100%", sm: "50%" } }} className="OFF-discover">
       <Divider light>
-        <Chip label="Discover the project" />
+        <Chip label={t("settings.discover_the_project")} />
       </Divider>
       <br />
       <Box
@@ -60,10 +60,7 @@ export default function DiscoverTheProject() {
           return (
             <Button
               key={content.text}
-              sx={{
-                backgroundColor: "#a08d84",
-                "&:hover": { backgroundColor: "#887369" },
-              }}
+              color="secondary"
               variant="contained"
               href={content.url}
               target="_blank"
