@@ -2,7 +2,10 @@ import { Box } from "@mui/material";
 
 export default function DownloadOpenFoodFacts() {
   return (
-    <Box className="OFF-download" sx={{ display: "flex", justifyContent: "center" }}>
+    <Box
+      className="OFF-download"
+      sx={{ display: "flex", justifyContent: "center" }}
+    >
       <Box
         sx={{
           // light panel so the badge's black text stays readable in dark mode
