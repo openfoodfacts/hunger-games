@@ -13,7 +13,7 @@
         },
         "green_score": {
           "title": "Eco-Score",
-          "description": "Annotate the questions with the highest value"
+          "description": "Adnotuj pytania o największej wartości"
         }
       }
     },
@@ -50,8 +50,8 @@
     "loading": "Ładowanie"
   },
   "image_viewer": {
-    "compressed": "Compressed",
-    "load_original": "Load original"
+    "compressed": "Skompresowano",
+    "load_original": "Załaduj oryginał"
   },
   "questions": {
     "category": "kategoria",
@@ -83,10 +83,10 @@
     "last_annotations": "Ostatnie adnotacje",
     "remaining_annotations": "Pozostałe pytania",
     "annotated_annotations": "Z adnotacjami",
-    "similar_questions": "Similar questions",
-    "no_similar_questions": "No similar questions",
-    "no_images": "No images available",
-    "no_additional_info": "No additional information",
+    "similar_questions": "Podobne pytania",
+    "no_similar_questions": "Brak podobnych pytań",
+    "no_images": "Brak dostępnych obrazów",
+    "no_additional_info": "Brak dodatkowych informacji",
     "filters": {
       "active_filter_number": "+{{count}} filtrów",
       "active_filter_number_one": "+{{count}} filtr",
@@ -387,7 +387,7 @@
     "correct": "Poprawnie ({{label}})"
   },
   "green-score": {
-    "description": "Here is a summary of questions that could improve Eco-Score computation",
+    "description": "Oto podsumowanie pytań, które mogą poprawić obliczenia Eco-Score",
     "countryLabel": "Kraj"
   },
   "ingredients": {
