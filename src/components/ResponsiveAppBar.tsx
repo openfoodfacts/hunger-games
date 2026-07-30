@@ -8,7 +8,8 @@ import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
-import Select from "@mui/material/Select";
+import Autocomplete from "@mui/material/Autocomplete";
+import TextField from "@mui/material/TextField";
 import MenuItem from "@mui/material/MenuItem";
 import ListSubheader from "@mui/material/ListSubheader";
 import Tooltip from "@mui/material/Tooltip";
@@ -20,7 +21,7 @@ import SettingsIcon from "@mui/icons-material/Settings";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import ExpandLess from "@mui/icons-material/ExpandLess";
 import ExpandMore from "@mui/icons-material/ExpandMore";
-import QuestionMarkIcon from "@mui/icons-material/QuestionMark";
+import HelpOutlineIcon from "@mui/icons-material/HelpOutline";
 
 import DevModeContext from "../contexts/devMode";
 import LoginContext from "../contexts/login";
@@ -501,24 +502,29 @@ const ResponsiveAppBar = () => {
                 },
               }}
             >
-              <Select
-                value={country || "world"}
-                onChange={(event) => {
-                  setCountry(
-                    event.target.value === "world" ? "" : event.target.value,
-                    "global",
-                  );
-                }}
-                variant="outlined"
-                sx={{ fieldset: { border: "none" } }}
-              >
-                {countryNames.map(({ label, countryCode }) => (
-                  <MenuItem value={countryCode || "world"} key={countryCode}>
-                    {label}
-                    {countryCode && ` (${countryCode})`}
-                  </MenuItem>
-                ))}
-              </Select>
+              <Autocomplete
+                disableClearable
+                options={countryNames}
+                getOptionLabel={(option) =>
+                  option.countryCode
+                    ? `${option.label} (${option.countryCode})`
+                    : option.label
+                }
+                isOptionEqualToValue={(option, value) =>
+                  option.countryCode === value.countryCode
+                }
+                value={
+                  countryNames.find((c) => c.countryCode === country) ??
+                  countryNames.find((c) => c.countryCode === "")
+                }
+                onChange={(_, newValue) =>
+                  setCountry(newValue?.countryCode ?? "", "global")
+                }
+                sx={{ width: 220, fieldset: { border: "none" } }}
+                renderInput={(params) => (
+                  <TextField {...params} variant="outlined" />
+                )}
+              />
               <IconButton
                 color="inherit"
                 onClick={handleCloseNavMenu}
@@ -536,7 +542,7 @@ const ResponsiveAppBar = () => {
                 }}
                 data-welcome-tour="tour"
               >
-                <QuestionMarkIcon />
+                <HelpOutlineIcon />
               </IconButton>
               <Tooltip
                 title={

@@ -49,6 +49,10 @@
     "title": "Images flagged by users",
     "loading": "Chaje"
   },
+  "image_viewer": {
+    "compressed": "Compressed",
+    "load_original": "Load original"
+  },
   "questions": {
     "category": "kategori",
     "categories": "Kategori",
@@ -79,6 +83,10 @@
     "last_annotations": "Last annotations",
     "remaining_annotations": "Remaining questions",
     "annotated_annotations": "Annotated",
+    "similar_questions": "Similar questions",
+    "no_similar_questions": "No similar questions",
+    "no_images": "No images available",
+    "no_additional_info": "No additional information",
     "filters": {
       "active_filter_number": "+{{count}} filtè",
       "active_filter_number_one": "+{{count}} filtè",
@@ -155,7 +163,9 @@
     "dashboard": "Logos dashboard",
     "tour": "Show tour",
     "logged_in_user": "Konekte kòm {{userName}}",
-    "log_in": "Klike pou w konekte"
+    "log_in": "Klike pou w konekte",
+    "moderation": "Moderasyon",
+    "ingredients": "Engredyan"
   },
   "insights": {
     "insights": "Insights",
@@ -201,7 +211,7 @@
     "label": "Etikèt",
     "brand": "Mak",
     "packager_code": "Packager code",
-    "packaging": "Packaging",
+    "packaging": "Anbalaj",
     "qr_code": "QR kòd",
     "category": "Kategori",
     "nutrition_label": "Etikèt nitrisyon",
@@ -230,10 +240,10 @@
       "failed_reference_logos": "We did not find any logos with this annotation. Try to use the following game to annotate some of them."
     },
     "deep_search": {
-      "title": "Logo search",
-      "description": "Select a logo you want to look for, and let's go to catch them all. For every logo you annotate, we will fetch it's neighbors such that you might never stop to annotate. (Press Shift to select range of logos)",
-      "ref_logos": "Reference logos (logo already annotated with this value)",
-      "remaining": "Remaining to annotate",
+      "title": "Rechèch logo",
+      "description": "Chwazi yon logo ou vle chèche, epi ann al chache yo tout. Pou chak logo ou mete anotasyon, n ap chèche vwazen li yo pou ou pa janm ka rete pou mete anotasyon. (Peze Shift pou chwazi yon seri logo)",
+      "ref_logos": "Logo referans (logo deja gen anotasyon ak valè sa a)",
+      "remaining": "Rete pou anote",
       "select_all": "Chwazi tout",
       "unselect_all": "Deseleksyone tout"
     }
@@ -321,7 +331,7 @@
         "text2": "If the crop contains only a partial part of a logo, you can select it."
       },
       "page3": {
-        "title": "Validate",
+        "title": "Valide",
         "text1": "Indicate the type of logo (label, brand, QRcode, ...)",
         "text2": "If it is a label or a brand logo, indicate which one it is",
         "text3": "Now you can submit your selection",
@@ -351,7 +361,6 @@
       "open_button": "Open instructions",
       "title": "How to use the interface",
       "chose_between_empty_and_partially_filled": "You can chose between products for which OpenFoodFacts (OFF) has no data about the nutrients. Or product with partially filled nutrient table.",
-      "picture_date_is_display": "The date of the picture is displayed on top of it. Allowing you to check if it's a recent one.",
       "indicate_not_provided_value": "Empty inputs are ignored. If fibers are not present in the table, you can put \"-\" to specify the value is not available.",
       "validate_one_column": "Chwazi gwosè ki parèt nan foto a. Si ou gen 100g epi ou gen yon pòsyon, tanpri chwazi 100g paske se yon fòma nòmal.",
       "skip_button": "If you don't know how to deal with an image, or you just don't want to do it, press \"skip\". Other user will be able to handle it.",
@@ -379,7 +388,7 @@
   },
   "green-score": {
     "description": "Here is a summary of questions that could improve Eco-Score computation",
-    "countryLabel": "Country"
+    "countryLabel": "Peyi"
   },
   "ingredients": {
     "description": "This game allows you to validate the pre-selection of images of ingredients lists in various languages for a product, and validate the extracted ingredients.",

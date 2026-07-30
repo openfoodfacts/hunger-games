@@ -26,5 +26,13 @@ declare namespace JSX {
       React.HTMLAttributes<HTMLElement>,
       HTMLElement
     >;
+    "donation-banner": React.DetailedHTMLProps<
+      React.HTMLAttributes<HTMLElement>,
+      HTMLElement
+    >;
+    "mobile-badges": React.DetailedHTMLProps<
+      React.HTMLAttributes<HTMLElement>,
+      HTMLElement
+    >;
   }
 }

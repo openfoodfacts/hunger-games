@@ -1,6 +1,4 @@
-import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
-import axios from "axios";
 
 import Box from "@mui/material/Box";
 import Card from "@mui/material/Card";
@@ -9,26 +7,31 @@ import Typography from "@mui/material/Typography";
 import Stack from "@mui/material/Stack";
 import { CircularProgress } from "@mui/material";
 
-import { OFF_URL } from "../../const";
+import { offClient } from "../../off";
+import { useQuery } from "@tanstack/react-query";
+
+type CountCardProps = {
+  translationKey: string;
+  value: number | null | undefined;
+};
+
+type UserDataProps = {
+  userName: string;
+};
 
 const fetchUserData = async (userName: string) => {
-  const editorPromise = axios
-    .get(`${OFF_URL}/editor/${userName}.json?fields=count`)
-    .then(({ data }) => {
-      return data?.count;
-    })
+  const editorPromise = offClient
+    .getFacetValue("editor", userName, {})
+    .then((value) => value.count)
     .catch(() => undefined);
-  const contributorPromise = axios
-    .get(`${OFF_URL}/contributor/${userName}.json?fields=count`)
-    .then(({ data }) => {
-      return data?.count;
-    })
+
+  const contributorPromise = offClient
+    .getFacetValue("contributor", userName, {})
+    .then((value) => value.count)
     .catch(() => undefined);
-  const photographerPromise = axios
-    .get(`${OFF_URL}/photographer/${userName}.json?fields=count`)
-    .then(({ data }) => {
-      return data?.count;
-    })
+  const photographerPromise = offClient
+    .getFacetValue("photographer", userName, {})
+    .then((value) => value.count)
     .catch(() => undefined);
 
   const [editorCount, contributorCount, photographerCount] = await Promise.all([
@@ -40,7 +43,7 @@ const fetchUserData = async (userName: string) => {
   return { editorCount, contributorCount, photographerCount };
 };
 
-const CountCard = (props) => {
+const CountCard = (props: CountCardProps) => {
   const { translationKey, value } = props;
 
   const { t } = useTranslation();
@@ -63,29 +66,22 @@ const CountCard = (props) => {
           {t(`home.statistics.${translationKey}.description`)}
         </Typography>
         <Typography variant="h3" color="text.primary" component="div">
-          {value?.toLocaleString()}
+          {typeof value === "number" ? value.toLocaleString() : "N/A"}
         </Typography>
       </CardContent>
     </Card>
   );
 };
 
-const UserData = ({ userName }) => {
+const UserData = ({ userName }: UserDataProps) => {
   const { t } = useTranslation();
-
-  const [data, setData] = useState({});
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
-
-  useEffect(() => {
-    setLoading(true);
-    fetchUserData(userName)
-      .then((counts) => setData(counts))
-      .catch(() => {
-        setError("Failed to fetch user data");
-      })
-      .finally(() => setLoading(false));
-  }, [userName]);
+  const { data, isLoading, error } = useQuery({
+    queryKey: ["userStats", userName],
+    queryFn: async () => {
+      const data = await fetchUserData(userName);
+      return data;
+    },
+  });
 
   return (
     <Box sx={{ p: 2, mb: 10 }}>
@@ -93,7 +89,7 @@ const UserData = ({ userName }) => {
         {t("home.statistics.title", { userName: userName || "<unknown>" })}
       </Typography>
 
-      {loading ? (
+      {isLoading ? (
         <Box
           sx={{
             display: "flex",
@@ -104,14 +100,14 @@ const UserData = ({ userName }) => {
           <CircularProgress />
         </Box>
       ) : error ? (
-        <Typography color="error">{error}</Typography>
+        <Typography color="error">{error.message}</Typography>
       ) : (
         <Stack direction={{ xs: "column", sm: "row" }} spacing={2}>
-          {Object.entries(data).map(([countType, value]) => (
+          {Object.entries(data ?? {}).map(([countType, value]) => (
             <CountCard
               key={countType}
               translationKey={countType}
-              value={value ?? "N/A"}
+              value={value}
             />
           ))}
         </Stack>

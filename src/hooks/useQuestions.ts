@@ -1,4 +1,3 @@
-import * as React from "react";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import { useMatomoTrackAnswerQuestion } from "./matomoEvents";
 import robotoff, { QuestionInterface, FilterState } from "../robotoff";
@@ -24,7 +23,7 @@ interface AnsweredQuestion extends QuestionInterface {
  */
 interface UseQuestionsOptions {
   /**
-   * Filter params tha override either the one passed as argument, or the one from the URLSearchParams.
+   * Filter params that override either the one passed as argument, or the one from the URLSearchParams.
    * @default {}
    */
   forcedParams?: Partial<FilterState>;
@@ -71,7 +70,7 @@ export function useQuestionsQuery(valueTag: string) {
     return data;
   };
 
-  const { data, status, isFetching } = useQuery({
+  const { data, status } = useQuery({
     queryKey: getQuestionKeys({ ...filterParams, valueTag }),
     queryFn: fetchQuestions,
   });
@@ -119,66 +118,66 @@ export default function useQuestions(
     return data;
   };
 
-  const keys = React.useMemo(() => getQuestionKeys(params), [params]);
+  const keys = getQuestionKeys(params);
 
-  const answerQuestion = React.useCallback(
-    ({ question, answer }: AnswerQuestionParams) => {
-      robotoff.annotate(question.insight_id, answer);
+  const answerQuestion = ({ question, answer }: AnswerQuestionParams) => {
+    robotoff.annotate(question.insight_id, answer).catch((err) => {
+      console.error("Error while answering question", err);
+    });
 
-      queryClient.setQueryData<{
-        questions: QuestionInterface[];
-        count: number;
-      }>(keys, (data) => {
-        if (!data) {
-          return data;
-        }
-
-        if (data.count > data.questions.length && data.questions.length <= 5) {
-          // Still have other questions on server but less than 5 on client.
-          if (!mutation.isPending) {
-            // Avoid multiple requests
-            mutation.mutate(keys);
-          }
-        }
-        return {
-          questions: data.questions.filter(
-            (q) => q.insight_id !== question.insight_id,
-          ),
-          count: data.count !== 100 ? data.count - 1 : 100,
-        };
-      });
-
-      if (answer === CORRECT_INSIGHT || answer === WRONG_INSIGHT) {
-        //Ignore the skip action
-        queryClient.setQueryData<AnsweredQuestion[]>(
-          ["recent-answers"],
-          (data) => {
-            if (!data) {
-              return data;
-            }
-            if (data.length < ANSWERS_MEMORY_SIZE) {
-              return [{ ...question, answer }, ...data];
-            }
-            return [{ ...question, answer }, ...data.slice(0, data.length - 1)];
-          },
-        );
+    queryClient.setQueryData<{
+      questions: QuestionInterface[];
+      count: number;
+    }>(keys, (data) => {
+      if (!data) {
+        return data;
       }
 
-      matomoTrackAnswerQuestions(answer);
-    },
-    [],
-  );
+      if (data.count > data.questions.length && data.questions.length <= 5) {
+        // Still have other questions on server but less than 5 on client.
+        if (!mutation.isPending) {
+          // Avoid multiple requests
+          mutation.mutate(keys);
+        }
+      }
+      return {
+        questions: data.questions.filter(
+          (q) => q.insight_id !== question.insight_id,
+        ),
+        count: data.count !== 100 ? data.count - 1 : 100,
+      };
+    });
+
+    if (answer === CORRECT_INSIGHT || answer === WRONG_INSIGHT) {
+      //Ignore the skip action
+      queryClient.setQueryData<AnsweredQuestion[]>(
+        ["recent-answers"],
+        (data) => {
+          if (!data) {
+            return data;
+          }
+          if (data.length < ANSWERS_MEMORY_SIZE) {
+            return [{ ...question, answer }, ...data];
+          }
+          return [{ ...question, answer }, ...data.slice(0, data.length - 1)];
+        },
+      );
+    }
+
+    matomoTrackAnswerQuestions(answer);
+  };
 
   const { data: recentAnswers } = useQuery({
     queryKey: ["recent-answers"],
     queryFn: (): AnsweredQuestion[] => [],
   });
-  const { data, status, isFetching } = useQuery({
+  const { data, status } = useQuery({
     queryKey: keys,
     queryFn: fetchQuestions,
   });
+
   const mutation = useMutation({
-    mutationFn: async (keys: (string | boolean)[]) => {
+    mutationFn: async (_keys: (string | boolean | undefined)[]) => {
       return await fetchQuestions();
     },
     onSuccess: (data, variables) => {

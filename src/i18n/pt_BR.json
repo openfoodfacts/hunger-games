@@ -49,6 +49,10 @@
     "title": "Imagens marcadas pelos usuários",
     "loading": "Carregando"
   },
+  "image_viewer": {
+    "compressed": "Compressed",
+    "load_original": "Load original"
+  },
   "questions": {
     "category": "categoria",
     "categories": "Categorias",
@@ -79,6 +83,10 @@
     "last_annotations": "Últimas anotações",
     "remaining_annotations": "Perguntas restantes",
     "annotated_annotations": "Anotado",
+    "similar_questions": "Similar questions",
+    "no_similar_questions": "No similar questions",
+    "no_images": "No images available",
+    "no_additional_info": "No additional information",
     "filters": {
       "active_filter_number": "+{{count}} filtros",
       "active_filter_number_one": "+{{count}} filtro",
@@ -151,11 +159,13 @@
     "ingredient-spellcheck": "Verificação ortográfica de ingredientes",
     "ingredient-detection": "Detecção de ingredientes",
     "settings": "Definições",
-    "green-score": "Eco-Pontuação",
+    "green-score": "Green-Score",
     "dashboard": "Painel de Logos",
     "tour": "Mostrar tour",
     "logged_in_user": "Logado como {{userName}}",
-    "log_in": "Clique para acessar"
+    "log_in": "Clique para acessar",
+    "moderation": "Moderação",
+    "ingredients": "Ingredientes"
   },
   "insights": {
     "insights": "Percepções",
@@ -351,7 +361,6 @@
       "open_button": "Abrir instruções",
       "title": "Como usar a interface",
       "chose_between_empty_and_partially_filled": "Você pode escolher entre produtos para os quais o OpenFoodFacts (OFF) não tem dados sobre os nutrientes. Ou produtos com tabela de nutrientes parcialmente preenchida.",
-      "picture_date_is_display": "A data da imagem é exibida no topo. Isso permite que você verifique se é recente.",
       "indicate_not_provided_value": "Entradas vazias são ignoradas. Se fibras não estão presentes na tabela, você pode colocar \"-\" para especificar o valor não está disponível.",
       "validate_one_column": "Selecione o tamanho exibido na imagem. Se você tiver 100g e o tamanho da porção, escolha 100g, pois é um formato padrão.",
       "skip_button": "Se você não sabe como lidar com uma imagem, ou simplesmente não quer fazê-lo, pressione \"pular\". Outro usuário poderá lidar com isso.",
