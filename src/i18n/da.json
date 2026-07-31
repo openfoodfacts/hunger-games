@@ -12,7 +12,7 @@
           "description": "Find alle logoer matchende det givne logo"
         },
         "green_score": {
-          "title": "Eco-score",
+          "title": "Green-score",
           "description": "Anmærk spørgsmålene med den højeste værdi"
         }
       }
@@ -387,7 +387,7 @@
     "correct": "Korrekt ({{label}})"
   },
   "green-score": {
-    "description": "Her er en samling af spørgsmål, der kunne forbedre Eco-Score-beregning",
+    "description": "Her er en samling af spørgsmål, der kunne forbedre Green-Score-beregning",
     "countryLabel": "Land"
   },
   "ingredients": {

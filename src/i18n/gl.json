@@ -12,7 +12,7 @@
           "description": "Busca todo-los logotipos que coincidan co logo indicado"
         },
         "green_score": {
-          "title": "Eco-score",
+          "title": "Green-score",
           "description": "Annotate the questions with the highest value"
         }
       }
@@ -304,9 +304,9 @@
       "page4": {
         "title": "Xogo de preguntas de puntuación ecolóxica",
         "text1": "Axúdanos a rematar as preguntas restantes nas etiquetas de maior prioridade!",
-        "text2": "Estas tarxetas están ligadas a etiquetas utilizadas no cálculo do Eco-Score.",
-        "text3": "<strong>Que é o Eco-Score?</strong>",
-        "text4": "Eco-Score recolle a pegada ambiental total, facilitando aos consumidores comparar produtos e decidir cal é mellor para o medio ambiente."
+        "text2": "Estas tarxetas están ligadas a etiquetas utilizadas no cálculo do Green-Score.",
+        "text3": "<strong>Que é o Green-Score?</strong>",
+        "text4": "Green-Score recolle a pegada ambiental total, facilitando aos consumidores comparar produtos e decidir cal é mellor para o medio ambiente."
       },
       "page5": {
         "title": "Axustes",
@@ -387,7 +387,7 @@
     "correct": "Correcto ({{label}})"
   },
   "green-score": {
-    "description": "Here is a summary of questions that could improve Eco-Score computation",
+    "description": "Here is a summary of questions that could improve Green-Score computation",
     "countryLabel": "País"
   },
   "ingredients": {

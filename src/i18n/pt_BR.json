@@ -302,11 +302,11 @@
         "text2": "Como mostrado no exemplo, assim que você selecionar todos os logotipos similares, é só digitar seu valor e selecionar se é marca, rótulo ou outra coisa. Simples assim!"
       },
       "page4": {
-        "title": "Jogo de perguntas Eco-Score",
+        "title": "Jogo de perguntas Green-Score",
         "text1": "Ajude-nos a concluir as perguntas restantes nos rótulos de maior prioridade!",
-        "text2": "Esses cartões estão vinculados aos rótulos usados no cálculo do Eco-Score.",
-        "text3": "<strong>O que é Eco-Score?</strong>",
-        "text4": "O Eco-Score captura a pegada ambiental total, facilitando aos consumidores a comparação de produtos e a decisão sobre qual é a melhor opção para o meio ambiente."
+        "text2": "Esses cartões estão vinculados aos rótulos usados no cálculo do Green-Score.",
+        "text3": "<strong>O que é Green-Score?</strong>",
+        "text4": "O Green-Score captura a pegada ambiental total, facilitando aos consumidores a comparação de produtos e a decisão sobre qual é a melhor opção para o meio ambiente."
       },
       "page5": {
         "title": "Configurações",
@@ -387,7 +387,7 @@
     "correct": "Correto ({{label}})"
   },
   "green-score": {
-    "description": "Aqui está um resumo das perguntas que podem melhorar o cálculo do Eco-Score",
+    "description": "Aqui está um resumo das perguntas que podem melhorar o cálculo do Green-Score",
     "countryLabel": "País"
   },
   "ingredients": {

@@ -12,7 +12,7 @@
           "description": "請找出所有與給出標識相匹配的標識"
         },
         "green_score": {
-          "title": "Eco-score",
+          "title": "Green-score",
           "description": "Annotate the questions with the highest value"
         }
       }
@@ -387,7 +387,7 @@
     "correct": "正確的"
   },
   "green-score": {
-    "description": "Here is a summary of questions that could improve Eco-Score computation",
+    "description": "Here is a summary of questions that could improve Green-Score computation",
     "countryLabel": "國家"
   },
   "ingredients": {

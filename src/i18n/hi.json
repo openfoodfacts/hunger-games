@@ -304,9 +304,9 @@
       "page4": {
         "title": "ईको-स्कोर सवाल-जवाब गेम",
         "text1": "सबसे उच्च प्राथमिकता वाले लेबल्स में शेष प्रश्नों को पूरा करने में हमारी मदद करें!",
-        "text2": "These cards are linked to labels used in the computation of the Eco-Score.",
-        "text3": "<strong>What is Eco-Score?</strong>",
-        "text4": "Eco-Score captures the total environmental footprint, making it easier for consumers to compare products and decide which is better for the environment."
+        "text2": "These cards are linked to labels used in the computation of the Green-Score.",
+        "text3": "<strong>What is Green-Score?</strong>",
+        "text4": "Green-Score captures the total environmental footprint, making it easier for consumers to compare products and decide which is better for the environment."
       },
       "page5": {
         "title": "सेटिंग्स",
@@ -387,7 +387,7 @@
     "correct": "Correct ({{label}})"
   },
   "green-score": {
-    "description": "Here is a summary of questions that could improve Eco-Score computation",
+    "description": "Here is a summary of questions that could improve Green-Score computation",
     "countryLabel": "Country"
   },
   "ingredients": {

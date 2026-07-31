@@ -12,7 +12,7 @@
           "description": "Najděte všechna loga odpovídající danému logu"
         },
         "green_score": {
-          "title": "Eco-score",
+          "title": "Green-score",
           "description": "Označte otázky s nejvyšší hodnotou"
         }
       }
@@ -159,7 +159,7 @@
     "ingredient-spellcheck": "Kontrola pravopisu ingrediencí",
     "ingredient-detection": "Detekce složek",
     "settings": "Nastavení",
-    "green-score": "Eco-score",
+    "green-score": "Green-score",
     "dashboard": "Panel logotypů",
     "tour": "Zobrazit prohlídku",
     "logged_in_user": "Přihlášen jako {{userName}}",
@@ -302,11 +302,11 @@
         "text2": "Jak je znázorněno v příkladu, jakmile vyberete všechna podobná loga, stačí zadat jejich hodnotu a vybrat, kde se jedná o značku, štítek nebo něco jiného. Je to tak jednoduché!"
       },
       "page4": {
-        "title": "Hra s otázkami o ekologickém skóre Eco-Score",
+        "title": "Hra s otázkami o ekologickém skóre Green-Score",
         "text1": "Pomozte nám dokončit zbývající otázky ve štítcích s nejvyšší prioritou!",
-        "text2": "Tyto karty jsou spojeny s štítky používanými při výpočtu Eco-Score.",
-        "text3": "<strong>Co je to Eco-Score?</strong>",
-        "text4": "Eco-Score zachycuje celkovou ekologickou stopu, což spotřebitelům usnadňuje porovnávat produkty a rozhodovat se, co je pro životní prostředí lepší."
+        "text2": "Tyto karty jsou spojeny s štítky používanými při výpočtu Green-Score.",
+        "text3": "<strong>Co je to Green-Score?</strong>",
+        "text4": "Green-Score zachycuje celkovou ekologickou stopu, což spotřebitelům usnadňuje porovnávat produkty a rozhodovat se, co je pro životní prostředí lepší."
       },
       "page5": {
         "title": "Nastavení",
@@ -387,7 +387,7 @@
     "correct": "Správně ({{label}})"
   },
   "green-score": {
-    "description": "Zde je souhrn otázek, které by mohly zlepšit výpočet Eco-score",
+    "description": "Zde je souhrn otázek, které by mohly zlepšit výpočet Green-score",
     "countryLabel": "Země"
   },
   "ingredients": {

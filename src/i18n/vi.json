@@ -12,7 +12,7 @@
           "description": "Tìm tất cả các logo phù hợp với logo đã cho"
         },
         "green_score": {
-          "title": "Eco-score",
+          "title": "Green-score",
           "description": "Annotate the questions with the highest value"
         }
       }
@@ -387,7 +387,7 @@
     "correct": "Đúng ({{label}})"
   },
   "green-score": {
-    "description": "Here is a summary of questions that could improve Eco-Score computation",
+    "description": "Here is a summary of questions that could improve Green-Score computation",
     "countryLabel": "Quốc gia"
   },
   "ingredients": {

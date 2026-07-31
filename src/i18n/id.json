@@ -12,7 +12,7 @@
           "description": "Cari semua logo yang cocok dengan logo yang diberikan"
         },
         "green_score": {
-          "title": "Eco-Score",
+          "title": "Green-Score",
           "description": "Beri keterangan pada pertanyaan dengan nilai tertinggi"
         }
       }
@@ -302,10 +302,10 @@
         "text2": "Seperti yang ditunjukkan pada contoh, setelah Anda memilih semua logo yang mirip, ketik saja nilainya dan pilih apakah logo tersebut merupakan merek, label, atau yang lainnya. Sesederhana itu!"
       },
       "page4": {
-        "title": "Permainan Pertanyaan Eco-Score",
+        "title": "Permainan Pertanyaan Green-Score",
         "text1": "Bantu kami menyelesaikan pertanyaan yang tersisa di label prioritas paling tinggi!",
-        "text2": "Kartu-kartu ini terhubung dengan label yang digunakan dalam penghitungan Eco-Score.",
-        "text3": "<strong>Apa itu Eco-Score?</strong>",
+        "text2": "Kartu-kartu ini terhubung dengan label yang digunakan dalam penghitungan Green-Score.",
+        "text3": "<strong>Apa itu Green-Score?</strong>",
         "text4": "Eco‑Score mencatat jejak lingkungan secara keseluruhan, sehingga memudahkan konsumen untuk membandingkan produk dan menentukan mana yang lebih baik bagi lingkungan."
       },
       "page5": {
@@ -387,7 +387,7 @@
     "correct": "Benar ({{label}})"
   },
   "green-score": {
-    "description": "Berikut ringkasan pertanyaan yang dapat meningkatkan perhitungan Eco-Score",
+    "description": "Berikut ringkasan pertanyaan yang dapat meningkatkan perhitungan Green-Score",
     "countryLabel": "Negara"
   },
   "ingredients": {

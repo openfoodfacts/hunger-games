@@ -12,7 +12,7 @@
           "description": "Trova tutti i loghi corrispondenti al logo specificato"
         },
         "green_score": {
-          "title": "Eco-score",
+          "title": "Green-score",
           "description": "Annota le domande con il valore più alto"
         }
       }
@@ -302,11 +302,11 @@
         "text2": "Come mostrato nell'esempio, una volta selezionati tutti i loghi simili, basta digitarne il valore e selezionare se si tratta di una marca, di un'etichetta o di qualcos'altro. È così semplice!"
       },
       "page4": {
-        "title": "Il Gioco delle Domande sull'Eco-Score",
+        "title": "Il Gioco delle Domande sull'Green-Score",
         "text1": "Aiutaci a rispondere alle restanti domande sulle etichette con la priorità più alta!",
-        "text2": "Queste schede sono collegate alle etichette utilizzate nel calcolo dell'Eco-Score.",
-        "text3": "<strong>Che cos'è l'Eco-Score?</strong>",
-        "text4": "L'Eco-Score calcola l'impronta ambientale totale, rendendo più facile per i consumatori confrontare i prodotti e decidere quale è meglio per l'ambiente."
+        "text2": "Queste schede sono collegate alle etichette utilizzate nel calcolo dell'Green-Score.",
+        "text3": "<strong>Che cos'è l'Green-Score?</strong>",
+        "text4": "L'Green-Score calcola l'impronta ambientale totale, rendendo più facile per i consumatori confrontare i prodotti e decidere quale è meglio per l'ambiente."
       },
       "page5": {
         "title": "Impostazioni",
@@ -387,7 +387,7 @@
     "correct": "Corretto ({{label}})"
   },
   "green-score": {
-    "description": "Ecco un riepilogo delle domande che potrebbero migliorare il calcolo dell'Eco-Score",
+    "description": "Ecco un riepilogo delle domande che potrebbero migliorare il calcolo dell'Green-Score",
     "countryLabel": "Paese"
   },
   "ingredients": {

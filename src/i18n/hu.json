@@ -12,7 +12,7 @@
           "description": "Keresse meg az összes logót, amely megfelel az adott logónak"
         },
         "green_score": {
-          "title": "Eco-score",
+          "title": "Green-score",
           "description": "Jelölje meg a legmagasabb értékű kérdéseket"
         }
       }
@@ -302,11 +302,11 @@
         "text2": "Amint a példában látható, miután kiválasztotta az összes hasonló logót, csak írja be az értéküket, és válassza ki, hogy az egy márka, címke vagy valami más. Ilyen egyszerű!"
       },
       "page4": {
-        "title": "Eco-Score kérdések játéka",
+        "title": "Green-Score kérdések játéka",
         "text1": "Segítsen befejezni a legmagasabb prioritású címkék hátralévő kérdéseit!",
-        "text2": "Ezek a kártyák az Eco-Score kiszámításához használt címkékhez kapcsolódnak.",
-        "text3": "<strong>Mi az Eco-Score?</strong>",
-        "text4": "Az Eco-Score a teljes környezeti lábnyomot mutatja, így a fogyasztók könnyebben összehasonlíthatják a termékeket, és eldönthetik, melyik a jobb a környezetre gyakorolt hatás szempontjából."
+        "text2": "Ezek a kártyák az Green-Score kiszámításához használt címkékhez kapcsolódnak.",
+        "text3": "<strong>Mi az Green-Score?</strong>",
+        "text4": "Az Green-Score a teljes környezeti lábnyomot mutatja, így a fogyasztók könnyebben összehasonlíthatják a termékeket, és eldönthetik, melyik a jobb a környezetre gyakorolt hatás szempontjából."
       },
       "page5": {
         "title": "Beállítások",
@@ -387,7 +387,7 @@
     "correct": "Helyes ({{label}})"
   },
   "green-score": {
-    "description": "Alább látható egy összefoglaló azokról a kérdésekről, amelyek javíthatják az Eco-Score számítást",
+    "description": "Alább látható egy összefoglaló azokról a kérdésekről, amelyek javíthatják az Green-Score számítást",
     "countryLabel": "Ország"
   },
   "ingredients": {

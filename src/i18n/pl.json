@@ -12,7 +12,7 @@
           "description": "Znajdź wszystkie loga pasujące do danego logo"
         },
         "green_score": {
-          "title": "Eco-Score",
+          "title": "Green-Score",
           "description": "Adnotuj pytania o największej wartości"
         }
       }
@@ -302,11 +302,11 @@
         "text2": "Jak pokazano w przykładzie, po wybraniu wszystkich podobnych nazw po prostu wpisz ich wartość i wybierz, gdzie jest to marka, etykieta lub coś innego. To takie proste!"
       },
       "page4": {
-        "title": "Gra Pytania o Eco-Score",
+        "title": "Gra Pytania o Green-Score",
         "text1": "Pomóż nam dokończyć pozostałe pytania w etykietach o najwyższym priorytecie!",
-        "text2": "Karty te są powiązane z etykietami używanymi do obliczania wyniku Eco-Score.",
-        "text3": "<strong>Co to jest Eco-Score?</strong>",
-        "text4": "Eco-Score uwzględnia całkowity ślad ekologiczny, ułatwiając konsumentom porównywanie produktów i podejmowanie decyzji, które są lepsze dla środowiska."
+        "text2": "Karty te są powiązane z etykietami używanymi do obliczania wyniku Green-Score.",
+        "text3": "<strong>Co to jest Green-Score?</strong>",
+        "text4": "Green-Score uwzględnia całkowity ślad ekologiczny, ułatwiając konsumentom porównywanie produktów i podejmowanie decyzji, które są lepsze dla środowiska."
       },
       "page5": {
         "title": "Ustawienia",
@@ -387,7 +387,7 @@
     "correct": "Poprawnie ({{label}})"
   },
   "green-score": {
-    "description": "Oto podsumowanie pytań, które mogą poprawić obliczenia Eco-Score",
+    "description": "Oto podsumowanie pytań, które mogą poprawić obliczenia Green-Score",
     "countryLabel": "Kraj"
   },
   "ingredients": {

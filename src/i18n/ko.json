@@ -12,7 +12,7 @@
           "description": "주어진 로고와 일치하는 모든 로고 찾기"
         },
         "green_score": {
-          "title": "Eco-score",
+          "title": "Green-score",
           "description": "Annotate the questions with the highest value"
         }
       }
@@ -304,7 +304,7 @@
       "page4": {
         "title": "에코 점수 질문 게임",
         "text1": "가장 우선 순위가 높은 라벨의 나머지 질문을 완료할 수 있도록 도와주세요!",
-        "text2": "These cards are linked to labels used in the computation of the Eco-Score.",
+        "text2": "These cards are linked to labels used in the computation of the Green-Score.",
         "text3": "<strong>에코 점수란?</strong>",
         "text4": "에코 점수는 총 환경 발자국을 포착하여 소비자가 제품을 비교하고 어느 것이 환경에 더 좋은지 쉽게 결정할 수 있도록 합니다."
       },
@@ -387,7 +387,7 @@
     "correct": "정답 ({{label}})"
   },
   "green-score": {
-    "description": "Here is a summary of questions that could improve Eco-Score computation",
+    "description": "Here is a summary of questions that could improve Green-Score computation",
     "countryLabel": "국가"
   },
   "ingredients": {

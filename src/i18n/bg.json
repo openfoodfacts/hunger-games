@@ -12,7 +12,7 @@
           "description": "Намери всички емблеми, съответстващи на дадената емблема"
         },
         "green_score": {
-          "title": "Eco-score",
+          "title": "Green-score",
           "description": "Annotate the questions with the highest value"
         }
       }
@@ -302,11 +302,11 @@
         "text2": "Както е показано в примера, след като изберете всички подобни емблеми, просто въведете тяхната стойност и изберете къде е марка, етикет или нещо друго. Толкова е просто!"
       },
       "page4": {
-        "title": "Игра с въпроси за Eco-Score",
+        "title": "Игра с въпроси за Green-Score",
         "text1": "Помогнете ни да завършим оставащите въпроси в етикетите с най-висок приоритет!",
-        "text2": "Тези карти са свързани с етикети, използвани при изчисляването на Eco-Score.",
-        "text3": "<strong>Какво е Eco-Score?</strong>",
-        "text4": "Eco-Score улавя общия отпечатък върху околната среда, което улеснява потребителите да сравняват продуктите и да решават кой е по-добър за околната среда."
+        "text2": "Тези карти са свързани с етикети, използвани при изчисляването на Green-Score.",
+        "text3": "<strong>Какво е Green-Score?</strong>",
+        "text4": "Green-Score улавя общия отпечатък върху околната среда, което улеснява потребителите да сравняват продуктите и да решават кой е по-добър за околната среда."
       },
       "page5": {
         "title": "Настройки",
@@ -387,7 +387,7 @@
     "correct": "Правилно ({{label}})"
   },
   "green-score": {
-    "description": "Here is a summary of questions that could improve Eco-Score computation",
+    "description": "Here is a summary of questions that could improve Green-Score computation",
     "countryLabel": "Страна"
   },
   "ingredients": {

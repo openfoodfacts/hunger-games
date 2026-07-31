@@ -12,7 +12,7 @@
           "description": "Vind alle logo's die overeenkomen met het gegeven logo"
         },
         "green_score": {
-          "title": "Eco-Score",
+          "title": "Green-Score",
           "description": "Label de vragen met de hoogste waarde"
         }
       }
@@ -302,11 +302,11 @@
         "text2": "Zoals in het voorbeeld wordt getoond, typt u, zodra u alle vergelijkbare logo's hebt geselecteerd, hun waarde en selecteert u of het een merk, een label of iets anders is. Het is zo simpel!"
       },
       "page4": {
-        "title": "Eco-Score Vragen Spel",
+        "title": "Green-Score Vragen Spel",
         "text1": "Help ons de resterende vragen met de hoogste prioriteit af te ronden!",
-        "text2": "Deze kaarten zijn gekoppeld aan labels die gebruikt worden bij de berekening van de eco-score.",
-        "text3": "<strong>Wat is de Eco-score?</strong>",
-        "text4": "Eco-Score legt de totale ecologische voetafdruk vast, waardoor het voor consumenten gemakkelijker wordt om producten te vergelijken en te beslissen welke beter is voor het milieu."
+        "text2": "Deze kaarten zijn gekoppeld aan labels die gebruikt worden bij de berekening van de Green-score.",
+        "text3": "<strong>Wat is de Green-score?</strong>",
+        "text4": "Green-Score legt de totale ecologische voetafdruk vast, waardoor het voor consumenten gemakkelijker wordt om producten te vergelijken en te beslissen welke beter is voor het milieu."
       },
       "page5": {
         "title": "Instellingen",
@@ -387,7 +387,7 @@
     "correct": "Correct ({{label}})"
   },
   "green-score": {
-    "description": "Hier is een samenvatting van vragen die de Eco-Score berekening kunnen verbeteren",
+    "description": "Hier is een samenvatting van vragen die de Green-Score berekening kunnen verbeteren",
     "countryLabel": "Land"
   },
   "ingredients": {

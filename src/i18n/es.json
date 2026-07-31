@@ -12,7 +12,7 @@
           "description": "Encuentra todos los logotipos que coincidan con el que se muestra"
         },
         "green_score": {
-          "title": "Eco-score",
+          "title": "Green-score",
           "description": "Anota las preguntas con el valor más alto"
         }
       }
@@ -302,11 +302,11 @@
         "text2": "Como se muestra en el ejemplo, después de seleccionar todos los logotipos similares, escribe su valor y selecciona si pertenecen a una marca, un sello o a otro tipo. ¡Así de sencillo!"
       },
       "page4": {
-        "title": "Juego de preguntas Eco-Score",
+        "title": "Juego de preguntas Green-Score",
         "text1": "Ayúdanos a responder a las preguntas que faltan sobre los sellos más prioritarios.",
-        "text2": "Estas tarjetas están vinculadas al etiquetado utilizado en el cálculo del Eco-Score.",
-        "text3": "<strong>¿Qué es el Eco-Score?</strong>",
-        "text4": "El Eco-Score refleja la huella ambiental total de un producto y ayuda a las personas a comparar productos y a decidir cuál es mejor para el medioambiente."
+        "text2": "Estas tarjetas están vinculadas al etiquetado utilizado en el cálculo del Green-Score.",
+        "text3": "<strong>¿Qué es el Green-Score?</strong>",
+        "text4": "El Green-Score refleja la huella ambiental total de un producto y ayuda a las personas a comparar productos y a decidir cuál es mejor para el medioambiente."
       },
       "page5": {
         "title": "Configuración",
@@ -387,7 +387,7 @@
     "correct": "Correcto ({{label}})"
   },
   "green-score": {
-    "description": "Aquí tienes un resumen de las preguntas que podrían mejorar el cálculo del Eco-Score",
+    "description": "Aquí tienes un resumen de las preguntas que podrían mejorar el cálculo del Green-Score",
     "countryLabel": "País"
   },
   "ingredients": {
