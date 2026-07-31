@@ -10,7 +10,6 @@ import Stack from "@mui/material/Stack";
 import home_questions from "../../assets/home_questions.png";
 import home_logos from "../../assets/home_logos.png";
 
-
 const cards = [
   {
     title: "home.game_selector.cards.questions.title",
@@ -28,7 +27,8 @@ const cards = [
     title: "home.game_selector.cards.green_score.title",
     desc: "home.game_selector.cards.green_score.description",
     link: "/green-score",
-    image: "https://static.openfoodfacts.org/images/attributes/dist/green-score-a.svg",
+    image:
+      "https://static.openfoodfacts.org/images/attributes/dist/green-score-a.svg",
   },
 ];
 
