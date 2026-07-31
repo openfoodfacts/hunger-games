@@ -12,7 +12,7 @@
           "description": "Hitta alla logotyper som matchar den givna logotypen"
         },
         "green_score": {
-          "title": "Miljöpoäng",
+          "title": "Green-score",
           "description": "Annotera frågorna med högst värde"
         }
       }
@@ -306,7 +306,7 @@
         "text1": "Hjälp oss avsluta de återstående frågorna i de högst prioriterade etiketterna!",
         "text2": "Dessa kort är kopplade till etiketter som används vid beräkningen av Green-Score.",
         "text3": "<strong>Vad är Green-Score?</strong>",
-        "text4": "Green-Score fångar upp det totala miljöavtrycket, vilket gör det lättare för konsumenter att jämföra produkter och avgöra vilken som är bättre för miljön."
+        "text4": "Green-Score samlar det totala miljöavtrycket, vilket gör det lättare för konsumenter att jämföra produkter och avgöra vilken som är bättre för miljön."
       },
       "page5": {
         "title": "Inställningar",
@@ -387,7 +387,7 @@
     "correct": "Korrekt ({{label}})"
   },
   "green-score": {
-    "description": "Här är en sammanfattning av frågorna som kan förbättra beräkningen av miljöpoäng",
+    "description": "Här är en sammanfattning av frågorna som kan förbättra beräkningen av Green-Score",
     "countryLabel": "Land"
   },
   "ingredients": {
