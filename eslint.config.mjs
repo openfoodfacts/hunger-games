@@ -49,7 +49,7 @@ export default defineConfig([
       globals: globals.browser,
     },
     settings: {
-      react: { version: "detect" },
+      react: { version: "19.2" },
     },
     rules: {
       "react/prop-types": "off",

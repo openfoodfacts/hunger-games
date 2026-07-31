@@ -75,9 +75,7 @@ const usePotentialQuestionNumber = (
 };
 
 type AnswerType =
-  | typeof WRONG_INSIGHT
-  | typeof CORRECT_INSIGHT
-  | typeof SKIPPED_INSIGHT;
+  typeof WRONG_INSIGHT | typeof CORRECT_INSIGHT | typeof SKIPPED_INSIGHT;
 
 /**
  * Layout containing the three buttons to answer the question (yes, no, skip)
