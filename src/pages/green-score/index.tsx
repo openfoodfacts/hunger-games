@@ -9,7 +9,6 @@ import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import { Link } from "react-router";
 
-
 import { useTranslation } from "react-i18next";
 
 import SmallQuestionCard from "../../components/SmallQuestionCard";
@@ -34,8 +33,7 @@ export default function GreenScore() {
   const [country, setCountry] = useCountry();
   const dashboardTag = COUNTRY_LOGOS_DASHBOARD[country];
   const countryLabel =
-  countryNames.find((c) => c.countryCode === country)?.label ?? "";
-
+    countryNames.find((c) => c.countryCode === country)?.label ?? "";
 
   return (
     <React.Suspense fallback={<Loader />}>
