@@ -12,7 +12,7 @@
           "description": "Atrodiet visus logotipus, kas atbilst dotajam logotipam"
         },
         "green_score": {
-          "title": "Eko-vērtējums",
+          "title": "Green-score",
           "description": "Anotējiet jautājumus ar augstāko vērtību"
         }
       }
@@ -302,11 +302,11 @@
         "text2": "Kā parādīts piemērā, kad esat atlasījis visus līdzīgos logotipus, vienkārši ierakstiet to vērtību un atlasiet, vai tas ir zīmols, etiķete vai kas cits. Tik vienkārši!"
       },
       "page4": {
-        "title": "Eko-rezultāta jautājumu spēle",
+        "title": "Green-Score Questions Game",
         "text1": "Palīdziet mums pabeigt atlikušos jautājumus ar visaugstākās prioritātes etiķetēm!",
-        "text2": "Šīs kartītes ir saistītas ar etiķetēm, ko izmanto eko-rādītāja aprēķināšanā.",
-        "text3": "<strong>Kas ir eko-rādītājs?</strong>",
-        "text4": "Ekovērtējums atspoguļo kopējo ietekmi uz vidi, atvieglojot patērētājiem produktu salīdzināšanu un lēmumu pieņemšanu par videi draudzīgāku."
+        "text2": "These cards are linked to labels used in the computation of the Green-Score.",
+        "text3": "<strong>What is Green-Score?</strong>",
+        "text4": "Green-Score captures the total environmental footprint, making it easier for consumers to compare products and decide which is better for the environment."
       },
       "page5": {
         "title": "Iestatījumi",
@@ -387,7 +387,7 @@
     "correct": "Pareizi ({{label}})"
   },
   "green-score": {
-    "description": "Šeit ir kopsavilkums par jautājumiem, kas varētu uzlabot eko-rādītāju aprēķināšanu.",
+    "description": "Here is a summary of questions that could improve Green-Score computation",
     "countryLabel": "Valsts"
   },
   "ingredients": {

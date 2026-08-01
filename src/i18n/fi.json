@@ -302,11 +302,11 @@
         "text2": "Kuten esimerkistä näkyy, kun olet valinnut kaikki samankaltaiset logot, kirjoita vain niiden arvo, ja valitse onko se tuotemerkki, merkki tai jokin muu. Se on niin yksinkertaista!"
       },
       "page4": {
-        "title": "Ympäristöystävällisyyspisteiden kysymyspeli",
+        "title": "Green-Score Questions Game",
         "text1": "Auta viimeistelemään jäljellä olevat kysymykset tärkeimmillä merkinnöillä!",
-        "text2": "Kortit liittyvät ympäristöystävällisyyspisteiden laskennassa käytettyihin etiketteihin.",
-        "text3": "<strong>Mitä ekopisteet ovat?</strong>",
-        "text4": "Ekopisteet ottavat huomioon ympäristöjalanjäljen kokonaisuudessaan, jolloin kuluttajien on helpompi vertailla tuotteita ja päättää, mikä on ympäristön kannalta parempaa."
+        "text2": "These cards are linked to labels used in the computation of the Green-Score.",
+        "text3": "<strong>What is Green-Score?</strong>",
+        "text4": "Green-Score captures the total environmental footprint, making it easier for consumers to compare products and decide which is better for the environment."
       },
       "page5": {
         "title": "Asetukset",
@@ -387,7 +387,7 @@
     "correct": "Oikein ({{label}})"
   },
   "green-score": {
-    "description": "Tässä on yhteenveto kysymyksistä, jotka voivat auttaa Green-Scoren laskennassa",
+    "description": "Here is a summary of questions that could improve Green-Score computation",
     "countryLabel": "Maa"
   },
   "ingredients": {
