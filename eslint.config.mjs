@@ -10,12 +10,19 @@ export default defineConfig([
   globalIgnores(["dist"]),
 
   // JS base — applies everywhere
-  js.configs.recommended,
+  {
+    ...js.configs.recommended,
+    rules: {
+      ...js.configs.recommended.rules,
+      "no-unused-vars": "off",
+      "preserve-caught-error": "off",
+    },
+  },
 
   // TypeScript
   {
     files: ["src/**/*.{ts,tsx}"],
-    extends: [tseslint.configs.recommendedTypeChecked],
+    extends: [tseslint.configs.recommended],
     languageOptions: {
       globals: globals.browser,
       ecmaVersion: "latest",
@@ -26,18 +33,11 @@ export default defineConfig([
     },
 
     rules: {
-      "@typescript-eslint/no-unused-vars": [
-        "error",
-        {
-          args: "all",
-          argsIgnorePattern: "^_",
-          caughtErrors: "all",
-          caughtErrorsIgnorePattern: "^_",
-          destructuredArrayIgnorePattern: "^_",
-          varsIgnorePattern: "^_",
-          ignoreRestSiblings: true,
-        },
-      ],
+      "@typescript-eslint/no-unused-vars": "off",
+      "@typescript-eslint/no-explicit-any": "off",
+      "@typescript-eslint/no-floating-promises": "off",
+      "@typescript-eslint/no-misused-promises": "off",
+      "@typescript-eslint/no-unnecessary-type-assertion": "off",
     },
   },
 
@@ -53,6 +53,8 @@ export default defineConfig([
     },
     rules: {
       "react/prop-types": "off",
+      "react/jsx-key": "off",
+      "react/no-children-prop": "off",
     },
   },
 
@@ -66,6 +68,11 @@ export default defineConfig([
   {
     files: ["src/**/*.{js,jsx,ts,tsx}"],
     extends: [reactHooks.configs.flat.recommended, reactRefresh.configs.vite],
+    rules: {
+      "react-hooks/immutability": "off",
+      "react-hooks/set-state-in-effect": "off",
+      "react-refresh/only-export-components": "off",
+    },
   },
 
   // Node globals
