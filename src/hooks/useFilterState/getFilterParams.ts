@@ -1,10 +1,14 @@
 import { FilterState } from "../../robotoff";
 
 export function getFilterParams(searchParams: URLSearchParams): FilterState {
+  let country = searchParams.get("country") ?? "";
+  if (country === "en:world") {
+    country = "";
+  }
   return {
     insightType: searchParams.get("type") ?? "",
     valueTag: searchParams.get("value_tag") ?? "",
-    country: searchParams.get("country") ?? "",
+    country,
     brand: searchParams.get("brand") ?? "",
     campaign: searchParams.get("campaign") ?? "",
     predictor: searchParams.get("predictor") ?? "",
