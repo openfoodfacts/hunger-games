@@ -4272,12 +4272,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"html-parse-stringify@npm:^3.0.1":
-  version: 3.0.1
-  resolution: "html-parse-stringify@npm:3.0.1"
-  dependencies:
-    void-elements: "npm:3.1.0"
-  checksum: 10/8743b76cc50e46d1956c1ad879d18eb9613b0d2d81e24686d633f9f69bb26b84676f64a926973de793cca479997017a63219278476d617b6c42d68246d7c07fe
+"html-parse-stringify@npm:^4.0.1":
+  version: 4.0.1
+  resolution: "html-parse-stringify@npm:4.0.1"
+  checksum: 10/c30ce1fbc81c32c87808d8a527519a7524c73499b223cf2002e9fddd49ecf98626ee8c13bb011a3cc283803831d67fdb75ae9f566666d05c915e460d5b5016cc
   languageName: node
   linkType: hard
 
@@ -4346,14 +4344,14 @@ __metadata:
     eslint-plugin-react-refresh: "npm:^0.5.3"
     globals: "npm:^17.8.0"
     husky: "npm:^9.1.7"
-    i18next: "npm:^26.3.4"
+    i18next: "npm:^26.3.6"
     i18next-resources-to-backend: "npm:^1.2.1"
     knip: "npm:^6.31.0"
     lodash-es: "npm:^4.18.1"
     prettier: "npm:^3.9.6"
     react: "npm:^19.2.8"
     react-dom: "npm:^19.2.8"
-    react-i18next: "npm:^17.0.8"
+    react-i18next: "npm:^17.0.11"
     react-map-interaction: "npm:^2.1.0"
     react-router: "npm:^8.3.0"
     react-zoom-pan-pinch: "npm:^2.5.0"
@@ -4385,15 +4383,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"i18next@npm:^26.3.4":
-  version: 26.3.4
-  resolution: "i18next@npm:26.3.4"
+"i18next@npm:^26.3.6":
+  version: 26.3.6
+  resolution: "i18next@npm:26.3.6"
   peerDependencies:
-    typescript: ^5 || ^6
+    typescript: ^5 || ^6 || ^7
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: 10/133ba9a5f76c1d57337f0dcc1b0ab0ff987714a1863813dcc95024531074c6d92603a19b0bac9c16a6b04c734742d8d098da0c222bef5a9562bdde231ea4b221
+  checksum: 10/529f1dbfae6b0fe98d997af98af5d6d0a0e27ddf5b91b81c5dfccad94e3a66dceeba2d1b7327f0045085bc4d552abbf4a1efbfadd4bbb98d13a54e3310eae428
   languageName: node
   linkType: hard
 
@@ -5888,17 +5886,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-i18next@npm:^17.0.8":
-  version: 17.0.8
-  resolution: "react-i18next@npm:17.0.8"
+"react-i18next@npm:^17.0.11":
+  version: 17.0.11
+  resolution: "react-i18next@npm:17.0.11"
   dependencies:
     "@babel/runtime": "npm:^7.29.2"
-    html-parse-stringify: "npm:^3.0.1"
+    html-parse-stringify: "npm:^4.0.1"
     use-sync-external-store: "npm:^1.6.0"
   peerDependencies:
     i18next: ">= 26.2.0"
     react: ">= 16.8.0"
-    typescript: ^5 || ^6
+    typescript: ^5 || ^6 || ^7
   peerDependenciesMeta:
     react-dom:
       optional: true
@@ -5906,7 +5904,7 @@ __metadata:
       optional: true
     typescript:
       optional: true
-  checksum: 10/7ac39b9b38ae2e572b6ffcf1e2e3ef9479daef9cd4c51e2e16464b5e0e641a55d16b2a5988fc99da8f749a63c8bb21a6ebf810182c22fb63cc7a18fbbd6334dd
+  checksum: 10/9c810cc32b976faeab765983984721142347c93564e844bad1b9efa58a5a8c8d735086bbebcd0872e1ca2c4c76c2474f93a7f49a6ac35756330abb9ca4cfc00c
   languageName: node
   linkType: hard
 
@@ -7154,13 +7152,6 @@ __metadata:
   bin:
     vite: bin/vite.js
   checksum: 10/2e1337510d6b81948b035f8b096c9be22daf1101fc52ad3d06cad9e090057ba1c1396e5e12cbaac2485f9c6cdcc854f978fe862280bdfe1a9a4149c60734c125
-  languageName: node
-  linkType: hard
-
-"void-elements@npm:3.1.0":
-  version: 3.1.0
-  resolution: "void-elements@npm:3.1.0"
-  checksum: 10/0390f818107fa8fce55bb0a5c3f661056001c1d5a2a48c28d582d4d847347c2ab5b7f8272314cac58acf62345126b6b09bea623a185935f6b1c3bbce0dfd7f7f
   languageName: node
   linkType: hard
 
