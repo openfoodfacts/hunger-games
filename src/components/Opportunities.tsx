@@ -7,7 +7,15 @@ import CardActionArea from "@mui/material/CardActionArea";
 import CardContent from "@mui/material/CardContent";
 import Box from "@mui/material/Box";
 import Skeleton from "@mui/material/Skeleton";
-import Button from "@mui/material/Button";
+import TextField from "@mui/material/TextField";
+import FormControlLabel from "@mui/material/FormControlLabel";
+import Switch from "@mui/material/Switch";
+import ToggleButton from "@mui/material/ToggleButton";
+import ToggleButtonGroup from "@mui/material/ToggleButtonGroup";
+import SortByAlphaIcon from "@mui/icons-material/SortByAlpha";
+import FormatListNumberedIcon from "@mui/icons-material/FormatListNumbered";
+
+import { useTranslation as useI18nTranslation } from "react-i18next";
 
 import Loader from "../pages/loader";
 
@@ -16,10 +24,68 @@ import off from "../off";
 import { getQuestionSearchParams } from "./QuestionFilter/useFilterSearch";
 import { getLang } from "../localeStorageManager";
 
-const pageSize = 25;
+const pageSize = 100;
 
-const OpportunityCard = (props) => {
-  const { type, value, name, campaign, countryCode, questionNumber } = props;
+type SortOrder = "count" | "alpha";
+
+// Lazily loads the count for one card when it scrolls into view
+const LazyCount = ({
+  value,
+  countMap,
+}: {
+  value: string;
+  countMap: Record<string, number | null>;
+}) => {
+  const ref = React.useRef<HTMLDivElement>(null);
+  const [visible, setVisible] = React.useState(false);
+
+  React.useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setVisible(true);
+          observer.disconnect();
+        }
+      },
+      { rootMargin: "200px" },
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, []);
+
+  const count = countMap[value];
+
+  return (
+    <div ref={ref}>
+      {!visible || count === undefined ? (
+        <Skeleton
+          variant="rectangular"
+          width={80}
+          height={32}
+          sx={{ mt: 1, ml: "auto" }}
+        />
+      ) : count === null ? null : (
+        <Typography sx={{ textAlign: "end", mt: 1, fontSize: "1.5rem" }}>
+          {count.toLocaleString()}
+        </Typography>
+      )}
+    </div>
+  );
+};
+
+const OpportunityCard = (props: {
+  type: string;
+  value: string;
+  name: string;
+  campaign: string;
+  countryCode: string;
+  showCounts: boolean;
+  countMap: Record<string, number | null>;
+}) => {
+  const { type, value, name, campaign, countryCode, showCounts, countMap } =
+    props;
 
   const targetUrl = `/questions?${getQuestionSearchParams({
     valueTag: value,
@@ -30,48 +96,29 @@ const OpportunityCard = (props) => {
   })}`;
 
   return (
-    <React.Suspense fallback={<Loader />}>
-      <Card
-        sx={{
-          minWidth: 250,
-        }}
-        variant="outlined"
-      >
-        <CardActionArea component={Link} to={targetUrl} sx={{ height: "100%" }}>
-          <CardContent>
-            <Typography variant="h6">{name}</Typography>
-            <Typography sx={{ textAlign: "end", mt: 3, fontSize: "1.5rem" }}>
-              {questionNumber.toLocaleString()}
-            </Typography>
-          </CardContent>
-        </CardActionArea>
-      </Card>
-    </React.Suspense>
+    <Card sx={{ minWidth: 250 }} variant="outlined">
+      <CardActionArea component={Link} to={targetUrl} sx={{ height: "100%" }}>
+        <CardContent>
+          <Typography variant="h6">{name}</Typography>
+          {showCounts && <LazyCount value={value} countMap={countMap} />}
+        </CardContent>
+      </CardActionArea>
+    </Card>
   );
 };
 
 const CardSkeleton = () => (
-  <React.Suspense fallback={<Loader />}>
-    <Card
-      sx={{
-        minWidth: 250,
-      }}
-    >
-      <CardContent>
-        <Skeleton variant="rectangular" width={200} height={40} />
-        <Skeleton
-          variant="rectangular"
-          width={100}
-          height={50}
-          sx={{ mt: 3, ml: "auto", fontSize: "1.5rem" }}
-        />
-      </CardContent>
-    </Card>
-  </React.Suspense>
+  <Card sx={{ minWidth: 250 }}>
+    <CardContent>
+      <Skeleton variant="rectangular" width={200} height={40} />
+    </CardContent>
+  </Card>
 );
 
-const useTranslation = (toTranslate) => {
-  const [translation, setTranslation] = React.useState({});
+const useCategoryTranslation = (toTranslate: string[]) => {
+  const [translation, setTranslation] = React.useState<
+    Record<string, { name?: Record<string, string> }>
+  >({});
 
   React.useEffect(() => {
     const remaining = toTranslate.filter((key) => !translation[key]);
@@ -87,62 +134,175 @@ const useTranslation = (toTranslate) => {
         })
         .catch(() => {});
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [toTranslate]);
 
   return translation;
 };
 
-const Opportunities = (props) => {
-  const { type, campaign, countryCode } = props;
-  const [remainingQuestions, setRemainingQuestions] = React.useState([]);
+// Fetch all pages of unanswered values without counts, then build countMap
+const useAllValues = (
+  type: string,
+  campaign: string,
+  countryCode: string,
+): {
+  values: string[];
+  countMap: Record<string, number | null>;
+  isLoading: boolean;
+} => {
+  const [values, setValues] = React.useState<string[]>([]);
+  const [countMap, setCountMap] = React.useState<Record<string, number | null>>(
+    {},
+  );
   const [isLoading, setIsLoading] = React.useState(true);
-  const [page, setPage] = React.useState(1);
 
   React.useEffect(() => {
-    setRemainingQuestions([]);
-  }, [type, campaign, countryCode]);
-
-  React.useEffect(() => {
-    let isValid = true;
+    setValues([]);
+    setCountMap({});
     setIsLoading(true);
 
-    robotoff
-      .getUnansweredValues({
-        type,
+    let cancelled = false;
+
+    const fetchPage = async (page: number) => {
+      const { data } = await robotoff.getUnansweredValues({
+        type: type as "label" | "brand" | "category",
         campaign,
         countryCode,
         page,
         count: pageSize,
-      })
-      .then(({ data }) => {
-        if (isValid) {
-          setRemainingQuestions((prev) => [
-            ...prev,
-            ...(data?.questions ?? []),
-          ]);
-          setIsLoading(false);
-        }
-      })
-      .catch(() => {
-        setIsLoading(false);
       });
 
-    return () => {
-      isValid = false;
-    };
-  }, [type, campaign, countryCode, page]);
+      if (cancelled) return;
 
-  const translation = useTranslation(
-    remainingQuestions.map(([value]) => value),
+      const questions: [string, number][] = data?.questions ?? [];
+
+      // Accumulate values immediately for rendering
+      setValues((prev) => [...prev, ...questions.map(([v]) => v)]);
+
+      // Store counts too (for sort-by-count and show-counts)
+      setCountMap((prev) => {
+        const next = { ...prev };
+        questions.forEach(([v, n]) => {
+          next[v] = n;
+        });
+        return next;
+      });
+
+      if (questions.length === pageSize) {
+        // There may be more pages
+        await fetchPage(page + 1);
+      } else {
+        if (!cancelled) setIsLoading(false);
+      }
+    };
+
+    fetchPage(1).catch(() => {
+      if (!cancelled) setIsLoading(false);
+    });
+
+    return () => {
+      cancelled = true;
+    };
+  }, [type, campaign, countryCode]);
+
+  return { values, countMap, isLoading };
+};
+
+const Opportunities = (props: {
+  type: string;
+  campaign: string;
+  countryCode: string;
+}) => {
+  const { type, campaign, countryCode } = props;
+  const { t } = useI18nTranslation();
+
+  const { values, countMap, isLoading } = useAllValues(
+    type,
+    campaign,
+    countryCode,
   );
 
+  const [showCounts, setShowCounts] = React.useState(false);
+  const [filter, setFilter] = React.useState("");
+  const [sortOrder, setSortOrder] = React.useState<SortOrder>("count");
+
+  const translation = useCategoryTranslation(values);
   const lang = getLang();
+
+  const displayedItems = React.useMemo(() => {
+    let items = values.map((value) => ({
+      value,
+      name:
+        translation[value]?.name?.[lang] ??
+        translation[value]?.name?.en ??
+        value,
+      count: countMap[value] ?? 0,
+    }));
+
+    if (filter.trim()) {
+      const needle = filter.trim().toLowerCase();
+      items = items.filter(
+        ({ name, value }) =>
+          name.toLowerCase().includes(needle) ||
+          value.toLowerCase().includes(needle),
+      );
+    }
+
+    if (sortOrder === "alpha") {
+      items.sort((a, b) => a.name.localeCompare(b.name));
+    } else {
+      items.sort((a, b) => b.count - a.count);
+    }
+
+    return items;
+  }, [values, translation, lang, filter, sortOrder, countMap]);
+
   return (
     <React.Suspense fallback={<Loader />}>
       <Box sx={{ mt: 2, px: 2 }}>
-        <Typography variant="h6" component="h3">
-          {type}
-        </Typography>
+        <Box
+          sx={{
+            display: "flex",
+            flexWrap: "wrap",
+            gap: 2,
+            alignItems: "center",
+            mb: 2,
+          }}
+        >
+          <TextField
+            size="small"
+            label={t("opportunities.filter")}
+            value={filter}
+            onChange={(e) => setFilter(e.target.value)}
+            sx={{ flex: "1 1 200px", maxWidth: 400 }}
+          />
+          <ToggleButtonGroup
+            value={sortOrder}
+            exclusive
+            onChange={(_, v) => v && setSortOrder(v)}
+            size="small"
+            aria-label={t("opportunities.sortOrder")}
+          >
+            <ToggleButton value="count" aria-label={t("opportunities.sortByCount")}>
+              <FormatListNumberedIcon fontSize="small" sx={{ mr: 0.5 }} />
+              {t("opportunities.sortByCount")}
+            </ToggleButton>
+            <ToggleButton value="alpha" aria-label={t("opportunities.sortAlpha")}>
+              <SortByAlphaIcon fontSize="small" sx={{ mr: 0.5 }} />
+              {t("opportunities.sortAlpha")}
+            </ToggleButton>
+          </ToggleButtonGroup>
+          <FormControlLabel
+            control={
+              <Switch
+                checked={showCounts}
+                onChange={(e) => setShowCounts(e.target.checked)}
+              />
+            }
+            label={t("opportunities.showCounts")}
+          />
+        </Box>
+
         <Box
           sx={{
             display: "grid",
@@ -150,36 +310,22 @@ const Opportunities = (props) => {
             gridGap: "10px 50px",
           }}
         >
-          {remainingQuestions.map(([value, questionNumber]) => {
-            const name =
-              translation[value]?.name?.[lang] ??
-              translation[value]?.name?.en ??
-              value;
-            return (
-              <OpportunityCard
-                key={value}
-                value={value}
-                name={name}
-                type={type}
-                campaign={campaign}
-                countryCode={countryCode}
-                questionNumber={questionNumber}
-              />
-            );
-          })}
+          {displayedItems.map(({ value, name }) => (
+            <OpportunityCard
+              key={value}
+              value={value}
+              name={name}
+              type={type}
+              campaign={campaign}
+              countryCode={countryCode}
+              showCounts={showCounts}
+              countMap={countMap}
+            />
+          ))}
           {isLoading &&
-            [
-              0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18,
-              19, 20, 21, 22, 23, 24,
-            ].map((id) => <CardSkeleton key={id} />)}
-          <Button
-            disabled={isLoading}
-            variant="contained"
-            fullWidth
-            onClick={() => setPage((p) => p + 1)}
-          >
-            Load more
-          </Button>
+            Array.from({ length: 25 }, (_, id) => (
+              <CardSkeleton key={id} />
+            ))}
         </Box>
       </Box>
     </React.Suspense>
