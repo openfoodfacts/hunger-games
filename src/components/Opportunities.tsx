@@ -115,10 +115,13 @@ const CardSkeleton = () => (
   </Card>
 );
 
-const useCategoryTranslation = (toTranslate: string[]) => {
+const useCategoryTranslation = (
+  toTranslate: string[],
+  seed?: Record<string, { name?: Record<string, string> }>,
+) => {
   const [translation, setTranslation] = React.useState<
     Record<string, { name?: Record<string, string> }>
-  >({});
+  >(seed ?? {});
 
   React.useEffect(() => {
     const remaining = toTranslate.filter((key) => !translation[key]);
@@ -140,24 +143,28 @@ const useCategoryTranslation = (toTranslate: string[]) => {
   return translation;
 };
 
-// Fetch all pages of unanswered values without counts, then build countMap
+// Fetch all pages of unanswered values without counts, then build countMap.
+// When cachedIds is provided, the values list is initialized from the cache
+// and the API results are used only to build the countMap and add any
+// extra values not present in the cache.
 const useAllValues = (
   type: string,
   campaign: string,
   countryCode: string,
+  cachedIds?: string[],
 ): {
   values: string[];
   countMap: Record<string, number | null>;
   isLoading: boolean;
 } => {
-  const [values, setValues] = React.useState<string[]>([]);
+  const [apiValues, setApiValues] = React.useState<string[]>([]);
   const [countMap, setCountMap] = React.useState<Record<string, number | null>>(
     {},
   );
   const [isLoading, setIsLoading] = React.useState(true);
 
   React.useEffect(() => {
-    setValues([]);
+    setApiValues([]);
     setCountMap({});
     setIsLoading(true);
 
@@ -176,10 +183,10 @@ const useAllValues = (
 
       const questions: [string, number][] = data?.questions ?? [];
 
-      // Accumulate values immediately for rendering
-      setValues((prev) => [...prev, ...questions.map(([v]) => v)]);
+      // Accumulate values from API (only used when no cache)
+      setApiValues((prev) => [...prev, ...questions.map(([v]) => v)]);
 
-      // Store counts too (for sort-by-count and show-counts)
+      // Store counts (for sort-by-count and show-counts)
       setCountMap((prev) => {
         const next = { ...prev };
         questions.forEach(([v, n]) => {
@@ -205,6 +212,15 @@ const useAllValues = (
     };
   }, [type, campaign, countryCode]);
 
+  // When using cached IDs, merge: show cached IDs first, then append any
+  // extra values returned by the API that were not in the cache.
+  const values = React.useMemo(() => {
+    if (!cachedIds) return apiValues;
+    const cachedSet = new Set(cachedIds);
+    const extras = apiValues.filter((v) => !cachedSet.has(v));
+    return [...cachedIds, ...extras];
+  }, [cachedIds, apiValues]);
+
   return { values, countMap, isLoading };
 };
 
@@ -212,21 +228,35 @@ const Opportunities = (props: {
   type: string;
   campaign: string;
   countryCode: string;
+  /** When provided, these category IDs are used as the initial list from cache */
+  cachedCategoryIds?: string[];
+  /** Pre-seeded name translations from a local cache, keyed by category ID */
+  cachedCategoryNames?: Record<string, { name?: Record<string, string> }>;
 }) => {
-  const { type, campaign, countryCode } = props;
+  const { type, campaign, countryCode, cachedCategoryIds, cachedCategoryNames } =
+    props;
   const { t } = useI18nTranslation();
+
+  const [showAllCategories, setShowAllCategories] = React.useState(false);
+
+  // When "show all" is off and we have a cache, use the cached IDs.
+  // When "show all" is on (or no cache available), fetch everything from the API.
+  const cachedIds =
+    !showAllCategories && cachedCategoryIds ? cachedCategoryIds : undefined;
 
   const { values, countMap, isLoading } = useAllValues(
     type,
     campaign,
     countryCode,
+    cachedIds,
   );
 
   const [showCounts, setShowCounts] = React.useState(false);
   const [filter, setFilter] = React.useState("");
   const [sortOrder, setSortOrder] = React.useState<SortOrder>("count");
 
-  const translation = useCategoryTranslation(values);
+  // Seed translations from the local cache so we avoid an API call for known categories
+  const translation = useCategoryTranslation(values, cachedCategoryNames);
   const lang = getLang();
 
   const displayedItems = React.useMemo(() => {
@@ -301,6 +331,17 @@ const Opportunities = (props: {
             }
             label={t("opportunities.showCounts")}
           />
+          {cachedCategoryIds && (
+            <FormControlLabel
+              control={
+                <Switch
+                  checked={showAllCategories}
+                  onChange={(e) => setShowAllCategories(e.target.checked)}
+                />
+              }
+              label={t("opportunities.showAllCategories")}
+            />
+          )}
         </Box>
 
         <Box
