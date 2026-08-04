@@ -15,6 +15,7 @@ import Loader from "../loader";
 import { useCountry } from "../../contexts/CountryProvider";
 
 import countryNames from "../../assets/countries.json";
+import agribalyseCategories from "../../assets/agribalyse-categories.json";
 import greenScoreCards from "./cards";
 
 export default function GreenScore() {
@@ -65,6 +66,10 @@ export default function GreenScore() {
           type="category"
           countryCode={country}
           campaign="agribalyse-category"
+          cachedCategoryIds={agribalyseCategories.map((c) => c.id)}
+          cachedCategoryNames={Object.fromEntries(
+            agribalyseCategories.map((c) => [c.id, { name: c.name }]),
+          )}
         />
       </Stack>
     </React.Suspense>
