@@ -5,10 +5,10 @@ const reportWebVitals = async (
     return;
   }
 
-  const { onCLS, onFID, onFCP, onLCP, onTTFB } = await import("web-vitals");
+  const { onCLS, onINP, onFCP, onLCP, onTTFB } = await import("web-vitals");
 
   onCLS(onPerfEntry);
-  onFID(onPerfEntry);
+  onINP(onPerfEntry);
   onFCP(onPerfEntry);
   onLCP(onPerfEntry);
   onTTFB(onPerfEntry);

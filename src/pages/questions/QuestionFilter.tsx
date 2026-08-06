@@ -28,8 +28,32 @@ import {
 import countries from "../../assets/countries.json";
 import FilterDialog from "./FilterDialog";
 import { getFilterParams } from "../../hooks/useFilterState/getFilterParams";
+import { useMatomoTrackInvalidUrlParam } from "../../hooks/matomoEvents";
 import { FilterState } from "../../robotoff";
 import { getCountryName } from "../../utils/getCountryName";
+
+const isValidCountry = (value: string) =>
+  countries.some((c) => c.countryCode === value);
+const isValidCampaign = (value: string) => campagnes.includes(value);
+const isValidPredictor = (value: string) =>
+  predictors.some((p) => p.value === value);
+
+const getInvalidParams = (filterState: FilterState) =>
+  [
+    { param: "country", value: filterState.country, isValid: isValidCountry },
+    {
+      param: "campaign",
+      value: filterState.campaign,
+      isValid: isValidCampaign,
+    },
+    {
+      param: "predictor",
+      value: filterState.predictor,
+      isValid: isValidPredictor,
+    },
+  ]
+    .filter(({ value, isValid }) => !!value && !isValid(value))
+    .map(({ param, value }) => ({ param, value: String(value) }));
 
 const getChipsParams = (
   filterState: FilterState,
@@ -53,11 +77,7 @@ const getChipsParams = (
 
     {
       key: "countryFilter",
-      // Show the chip only when the URL value matches a dropdown country
-      // (its ISO `countryCode`)
-      display:
-        !!filterState.country &&
-        countries.some((c) => c.countryCode === filterState.country),
+      display: !!filterState.country && isValidCountry(filterState.country),
       label: `${t("questions.filters.short_label.country")}: ${getCountryName(
         filterState.country,
       )}`,
@@ -95,8 +115,7 @@ const getChipsParams = (
     },
     {
       key: "campaign",
-      display:
-        !!filterState.campaign && campagnes.includes(filterState.campaign),
+      display: !!filterState.campaign && isValidCampaign(filterState.campaign),
       label: `${t(
         "questions.filters.short_label.campaign",
       )}: ${filterState.campaign}`,
@@ -109,7 +128,8 @@ const getChipsParams = (
     },
     {
       key: "predictor",
-      display: predictors.some((p) => p.value === filterState.predictor),
+      display:
+        !!filterState.predictor && isValidPredictor(filterState.predictor),
       label: `${t(
         "questions.filters.short_label.predictor",
       )}: ${filterState.predictor}`,
@@ -140,6 +160,19 @@ export const QuestionFilter = ({ sx }: { sx?: SxProps<Theme> }) => {
     () => getChipsParams(filterState, setSearchParams, t),
     [filterState, setSearchParams, t],
   );
+
+  const { reportInvalidUrlParam } = useMatomoTrackInvalidUrlParam();
+  const reportedRef = React.useRef(new Set<string>());
+
+  React.useEffect(() => {
+    getInvalidParams(filterState).forEach(({ param, value }) => {
+      const key = `${param}=${value}`;
+      if (!reportedRef.current.has(key)) {
+        reportedRef.current.add(key);
+        reportInvalidUrlParam({ param, value });
+      }
+    });
+  }, [filterState, reportInvalidUrlParam]);
 
   return (
     <Box sx={sx}>
