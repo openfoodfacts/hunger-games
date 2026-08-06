@@ -208,6 +208,14 @@ export default function App() {
   }, []);
 
   const theme = createTheme(getToken(mode));
+  const themeColor = theme.palette.cafeCreme.main;
+  React.useEffect(() => {
+    const metaThemeColor = document.head.querySelector(
+      'meta[name="theme-color"]',
+    );
+    if (!metaThemeColor) return;
+    metaThemeColor.setAttribute("content", themeColor);
+  }, [themeColor]);
 
   return (
     <React.Suspense fallback={<Loader />}>
