@@ -30,7 +30,7 @@ const DashboardCard = (props: LogoDefinition) => {
 
   React.useEffect(() => {
     let isValid = true;
-    robotoff
+    void robotoff
       .questions(
         {
           insightType: "label",
