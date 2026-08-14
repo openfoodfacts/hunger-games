@@ -59,14 +59,14 @@ const LazyCount = ({
 
   return (
     <div ref={ref}>
-      {!visible || count === undefined ? (
+      {!visible ? (
         <Skeleton
           variant="rectangular"
           width={80}
           height={32}
           sx={{ mt: 1, ml: "auto" }}
         />
-      ) : count === null ? null : (
+      ) : count === null || count === undefined ? null : (
         <Typography sx={{ textAlign: "end", mt: 1, fontSize: "1.5rem" }}>
           {count.toLocaleString()}
         </Typography>
@@ -151,7 +151,9 @@ const useAllValues = (
   type: string,
   campaign: string,
   countryCode: string,
-  cachedIds?: string[],
+  initialValues?: string[],
+  initialCountMap?: Record<string, number>,
+  skipApiFetch?: boolean,
 ): {
   values: string[];
   countMap: Record<string, number | null>;
@@ -159,14 +161,20 @@ const useAllValues = (
 } => {
   const [apiValues, setApiValues] = React.useState<string[]>([]);
   const [countMap, setCountMap] = React.useState<Record<string, number | null>>(
-    {},
+    {
+      ...(initialCountMap ?? {}),
+    },
   );
-  const [isLoading, setIsLoading] = React.useState(true);
+  const [isLoading, setIsLoading] = React.useState(!skipApiFetch);
 
   React.useEffect(() => {
     setApiValues([]);
-    setCountMap({});
-    setIsLoading(true);
+    setCountMap({ ...(initialCountMap ?? {}) });
+    setIsLoading(!skipApiFetch);
+
+    if (skipApiFetch) {
+      return;
+    }
 
     let cancelled = false;
 
@@ -210,16 +218,16 @@ const useAllValues = (
     return () => {
       cancelled = true;
     };
-  }, [type, campaign, countryCode]);
+  }, [type, campaign, countryCode, initialCountMap, skipApiFetch]);
 
-  // When using cached IDs, merge: show cached IDs first, then append any
+  // When using initial values, merge: show initial values first, then append any
   // extra values returned by the API that were not in the cache.
   const values = React.useMemo(() => {
-    if (!cachedIds) return apiValues;
-    const cachedSet = new Set(cachedIds);
+    if (!initialValues) return apiValues;
+    const cachedSet = new Set(initialValues);
     const extras = apiValues.filter((v) => !cachedSet.has(v));
-    return [...cachedIds, ...extras];
-  }, [cachedIds, apiValues]);
+    return [...initialValues, ...extras];
+  }, [initialValues, apiValues]);
 
   return { values, countMap, isLoading };
 };
@@ -232,23 +240,49 @@ const Opportunities = (props: {
   cachedCategoryIds?: string[];
   /** Pre-seeded name translations from a local cache, keyed by category ID */
   cachedCategoryNames?: Record<string, { name?: Record<string, string> }>;
+  /** Optional full category cache used when toggling "all categories" */
+  allCategoryIds?: string[];
+  allCategoryNames?: Record<string, { name?: Record<string, string> }>;
+  /** Optional precomputed counts for the current country */
+  cachedCountMap?: Record<string, number>;
 }) => {
-  const { type, campaign, countryCode, cachedCategoryIds, cachedCategoryNames } =
-    props;
+  const {
+    type,
+    campaign,
+    countryCode,
+    cachedCategoryIds,
+    cachedCategoryNames,
+    allCategoryIds,
+    allCategoryNames,
+    cachedCountMap,
+  } = props;
   const { t } = useI18nTranslation();
 
   const [showAllCategories, setShowAllCategories] = React.useState(false);
 
-  // When "show all" is off and we have a cache, use the cached IDs.
-  // When "show all" is on (or no cache available), fetch everything from the API.
-  const cachedIds =
-    !showAllCategories && cachedCategoryIds ? cachedCategoryIds : undefined;
+  const selectedCachedIds =
+    type === "category"
+      ? showAllCategories
+        ? allCategoryIds
+        : cachedCategoryIds
+      : undefined;
+
+  const selectedCachedNames =
+    type === "category"
+      ? showAllCategories
+        ? allCategoryNames
+        : cachedCategoryNames
+      : undefined;
+
+  const shouldSkipApiFetch = Boolean(type === "category" && selectedCachedIds);
 
   const { values, countMap, isLoading } = useAllValues(
     type,
     campaign,
     countryCode,
-    cachedIds,
+    selectedCachedIds,
+    cachedCountMap,
+    shouldSkipApiFetch,
   );
 
   const [showCounts, setShowCounts] = React.useState(false);
@@ -256,7 +290,7 @@ const Opportunities = (props: {
   const [sortOrder, setSortOrder] = React.useState<SortOrder>("count");
 
   // Seed translations from the local cache so we avoid an API call for known categories
-  const translation = useCategoryTranslation(values, cachedCategoryNames);
+  const translation = useCategoryTranslation(values, selectedCachedNames);
   const lang = getLang();
 
   const displayedItems = React.useMemo(() => {
@@ -313,11 +347,17 @@ const Opportunities = (props: {
             size="small"
             aria-label={t("opportunities.sortOrder")}
           >
-            <ToggleButton value="count" aria-label={t("opportunities.sortByCount")}>
+            <ToggleButton
+              value="count"
+              aria-label={t("opportunities.sortByCount")}
+            >
               <FormatListNumberedIcon fontSize="small" sx={{ mr: 0.5 }} />
               {t("opportunities.sortByCount")}
             </ToggleButton>
-            <ToggleButton value="alpha" aria-label={t("opportunities.sortAlpha")}>
+            <ToggleButton
+              value="alpha"
+              aria-label={t("opportunities.sortAlpha")}
+            >
               <SortByAlphaIcon fontSize="small" sx={{ mr: 0.5 }} />
               {t("opportunities.sortAlpha")}
             </ToggleButton>
@@ -331,7 +371,7 @@ const Opportunities = (props: {
             }
             label={t("opportunities.showCounts")}
           />
-          {cachedCategoryIds && (
+          {allCategoryIds && cachedCategoryIds && (
             <FormControlLabel
               control={
                 <Switch
@@ -364,9 +404,7 @@ const Opportunities = (props: {
             />
           ))}
           {isLoading &&
-            Array.from({ length: 25 }, (_, id) => (
-              <CardSkeleton key={id} />
-            ))}
+            Array.from({ length: 25 }, (_, id) => <CardSkeleton key={id} />)}
         </Box>
       </Box>
     </React.Suspense>
