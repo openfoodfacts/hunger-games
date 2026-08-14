@@ -16,11 +16,21 @@ import { useCountry } from "../../contexts/CountryProvider";
 
 import countryNames from "../../assets/countries.json";
 import agribalyseCategories from "../../assets/agribalyse-categories.json";
+import allCategories from "../../assets/categories.json";
+import categoryInsightCounts from "../../assets/category-insight-counts.json";
 import greenScoreCards from "./cards";
 
 export default function GreenScore() {
   const { t } = useTranslation();
   const [country, setCountry] = useCountry();
+  const cachedCountMap = React.useMemo(() => {
+    const worldCounts = categoryInsightCounts.world ?? {};
+    const countryCounts =
+      country && categoryInsightCounts.countries?.[country]
+        ? categoryInsightCounts.countries[country]
+        : {};
+    return { ...worldCounts, ...countryCounts };
+  }, [country]);
 
   return (
     <React.Suspense fallback={<Loader />}>
@@ -70,6 +80,11 @@ export default function GreenScore() {
           cachedCategoryNames={Object.fromEntries(
             agribalyseCategories.map((c) => [c.id, { name: c.name }]),
           )}
+          allCategoryIds={allCategories.map((c) => c.id)}
+          allCategoryNames={Object.fromEntries(
+            allCategories.map((c) => [c.id, { name: c.name }]),
+          )}
+          cachedCountMap={cachedCountMap}
         />
       </Stack>
     </React.Suspense>
