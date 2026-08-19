@@ -51,7 +51,7 @@
   },
   "image_viewer": {
     "compressed": "Compressed",
-    "load_original": "Load original"
+    "load_original": "मूल लोड करें या असली लोड करें"
   },
   "questions": {
     "category": "वर्ग",
@@ -71,8 +71,8 @@
     "skip": "स्किप करें",
     "yes": "हाँ",
     "no_questions_remaining": "कोई प्रश्न शेष नहीं",
-    "similar_questions": "Similar questions",
-    "no_similar_questions": "No similar questions",
+    "similar_questions": "समान प्रश्न",
+    "no_similar_questions": "कोई समान प्रश्न नहीं",
     "remaining_questions_count_one": "1 question remaining",
     "remaining_questions_count_other": "{{count}} questions remaining",
     "an_error_occurred": "एक त्रुटि हुई। कृपया पुनः लोड करें, बाद में प्रयास करें या टीम से संपर्क करें।",
@@ -87,8 +87,8 @@
     "last_annotations": "अंतिम टिप्पणियाँ",
     "remaining_annotations": "शेष प्रश्न",
     "annotated_annotations": "टिप्पणी",
-    "no_images": "No images available",
-    "no_additional_info": "No additional information",
+    "no_images": "कोई छवि उपलब्ध नहीं या कोई फोटो उपलब्ध नहीं",
+    "no_additional_info": "कोई अतिरिक्त जानकारी नहीं",
     "filters": {
       "active_filter_number": "+{{count}} फिल्टर",
       "active_filter_number_one": "+{{count}} फिल्टर",
