@@ -82,8 +82,9 @@ function LabelWithNumber({ tag }: { tag: string }) {
         {tag} (
         {status === "pending"
           ? "..."
-          : t("questions.remaining_questions_count", { count: count ?? 0 })}
-        )
+          : t("questions.remaining_questions_count", {
+            count: count !== undefined && count >= 99 ? "100+" : count ?? 0,
+          })}
       </a>
     </li>
   );
