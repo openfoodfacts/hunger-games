@@ -51,7 +51,7 @@
   },
   "image_viewer": {
     "compressed": "Komprimované",
-    "load_original": "Load original"
+    "load_original": "Nahraj originál"
   },
   "questions": {
     "category": "Kategória",
@@ -71,10 +71,10 @@
     "skip": "Preskočiť",
     "yes": "Áno",
     "no_questions_remaining": "Žiadne zostávajúce otázky",
-    "similar_questions": "Similar questions",
-    "no_similar_questions": "No similar questions",
-    "remaining_questions_count_one": "1 question remaining",
-    "remaining_questions_count_other": "{{count}} questions remaining",
+    "similar_questions": "Podobné otázky",
+    "no_similar_questions": "Žiadne podobné otázky",
+    "remaining_questions_count_one": "Zostáva 1 otázka",
+    "remaining_questions_count_other": "Zostáva {{count}} otázok",
     "an_error_occurred": "Vyskytla sa chyba. Znova načítajte stránku, skúste to neskôr alebo kontaktujte tím.",
     "countries": "Krajiny",
     "view": "Zobrazenie",
@@ -87,8 +87,8 @@
     "last_annotations": "Posledné anotácie",
     "remaining_annotations": "Zostávajúce otázky",
     "annotated_annotations": "Komentované",
-    "no_images": "No images available",
-    "no_additional_info": "No additional information",
+    "no_images": "Nie sú k dispozícii žiadne obrázky",
+    "no_additional_info": "Žiadne ďalšie informácie",
     "filters": {
       "active_filter_number": "+{{count}} filtrov",
       "active_filter_number_one": "+{{count}} filter",
