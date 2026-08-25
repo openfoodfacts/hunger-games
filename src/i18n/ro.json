@@ -13,7 +13,7 @@
         },
         "green_score": {
           "title": "Green-Scor",
-          "description": "Annotate the questions with the highest value"
+          "description": "Adnotează întrebările cu cea mai mare valoare"
         }
       }
     },
@@ -50,8 +50,8 @@
     "loading": "Se încarcă"
   },
   "image_viewer": {
-    "compressed": "Compressed",
-    "load_original": "Load original"
+    "compressed": "Comprimat",
+    "load_original": "Încarcă original"
   },
   "questions": {
     "category": "categorie",
@@ -83,10 +83,10 @@
     "last_annotations": "Ultimele adnotări",
     "remaining_annotations": "Întrebări rămase",
     "annotated_annotations": "Adnotat",
-    "similar_questions": "Similar questions",
-    "no_similar_questions": "No similar questions",
-    "no_images": "No images available",
-    "no_additional_info": "No additional information",
+    "similar_questions": "Întrebări similare",
+    "no_similar_questions": "Nicio întrebare similară",
+    "no_images": "Nicio imagine disponibilă",
+    "no_additional_info": "Nicio informație suplimentară",
     "filters": {
       "active_filter_number": "+{{count}} filtre",
       "active_filter_number_one": "+{{count}} filtru",
@@ -387,7 +387,7 @@
     "correct": "Corect ({{label}})"
   },
   "green-score": {
-    "description": "Here is a summary of questions that could improve Green-Score computation",
+    "description": "Iată un rezumat al întrebărilor care ar putea îmbunătăți calculul Green-Score",
     "countryLabel": "Țară"
   },
   "ingredients": {

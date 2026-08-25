@@ -1,8 +1,11 @@
 import * as React from "react";
 
 import { useTranslation } from "react-i18next";
-import { useTheme } from "@mui/material/styles";
+import { useTheme, alpha } from "@mui/material/styles";
 
+import IconButton from "@mui/material/IconButton";
+import Tooltip from "@mui/material/Tooltip";
+import OutlinedFlagIcon from "@mui/icons-material/OutlinedFlag";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Link from "@mui/material/Link";
@@ -23,6 +26,7 @@ import ZoomableImage from "../../components/ZoomableImage";
 
 import { NO_QUESTION_LEFT } from "../../const";
 import offService from "../../off";
+import externalApi from "../../externalApi";
 import {
   localSettings,
   localSettingsKeys,
@@ -31,7 +35,11 @@ import {
   getIsDevMode,
 } from "../../localeStorageManager";
 
-import { ADDITIONAL_INFO_TRANSLATION, getImagesUrls } from "./utils";
+import {
+  ADDITIONAL_INFO_TRANSLATION,
+  getImageId,
+  getImagesUrls,
+} from "./utils";
 import useQuestions from "../../hooks/useQuestions";
 import { useProductData } from "../../hooks/useProduct";
 import { Skeleton } from "@mui/material";
@@ -43,6 +51,7 @@ const ProductImagesGrid = ({
   images: Record<string, { uploaded_t: number }>;
   barcode: string;
 }) => {
+  const { t } = useTranslation();
   const theme = useTheme();
   const imageUrls = getImagesUrls(images, barcode).reverse();
 
@@ -71,6 +80,7 @@ const ProductImagesGrid = ({
         <Box key={src.imageUrl}>
           <Box
             sx={{
+              position: "relative",
               width: "100%",
               aspectRatio: "1 / 1",
               overflow: "hidden",
@@ -93,30 +103,25 @@ const ProductImagesGrid = ({
                 },
               }}
             />
-            {/* {flagged.includes(getImageId(src.imageUrl)) ? (
-            <Tooltip title={t("questions.unflag")}>
-              <IconButton
-                onClick={() =>
-                  deleteFlagImage(src.imageUrl, question.barcode)
-                }
-              >
-                <FlagIcon />
-              </IconButton>
-            </Tooltip>
-          ) : (
             <Tooltip title={t("questions.flag")}>
               <IconButton
                 onClick={() =>
                   externalApi.addImageFlag({
-                    barcode: question.barcode,
+                    barcode,
                     imgid: getImageId(src.imageUrl),
                   })
                 }
+                sx={{
+                  position: "absolute",
+                  color: "white",
+                  backgroundColor: alpha(theme.palette.secondary.main, 0.5),
+                  bottom: 5,
+                  right: 5,
+                }}
               >
                 <OutlinedFlagIcon />
               </IconButton>
             </Tooltip>
-          )} */}
           </Box>
           <Typography variant="caption">{src.uploaded_t}</Typography>
         </Box>

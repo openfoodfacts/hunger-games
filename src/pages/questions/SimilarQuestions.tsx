@@ -18,6 +18,7 @@ export function SimilarQuestions({
   const { t } = useTranslation();
 
   const valueTag = filterState.valueTag || "";
+  const prefixlessTag = valueTag.includes(":") ? valueTag.substring(valueTag.indexOf(":") + 1) : null;
 
   const { data: similars, isPending } = useQuery({
     queryKey: ["taxonomy", filterState.insightType, valueTag],
@@ -37,6 +38,16 @@ export function SimilarQuestions({
   return (
     <Stack direction="column" alignItems="center" spacing={1}>
       <p>{t("questions.no_questions_remaining")}</p>
+
+      {prefixlessTag && (
+        <Button
+          size="small"
+          variant="contained"
+          onClick={() => setFilterState({ valueTag: prefixlessTag })}
+        >
+          {t("questions.search_without_prefix", { tag: prefixlessTag })}
+        </Button>
+      )}
 
       <p>{t("questions.similar_questions")}</p>
       {isPending ? (
