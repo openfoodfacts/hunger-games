@@ -41,7 +41,7 @@ const UserData = () => {
     <Box>
       <Stack spacing={1}>
         <Typography sx={{ my: 2 }}>
-          {t("questions.remaining_annotations")}: {questionsCount}
+          {t("questions.remaining_annotations")}: {questionsCount !== null && questionsCount >= 99 ? "100+" : (questionsCount ?? 0)}
         </Typography>
         {recentAnswers.map(
           ({ insight_id, barcode, value, insight_type, answer }) => (
