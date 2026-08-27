@@ -14,6 +14,7 @@ import Checkbox from "@mui/material/Checkbox";
 import Typography from "@mui/material/Typography";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import EditIcon from "@mui/icons-material/Edit";
+import AddCircleOutlineIcon from "@mui/icons-material/AddCircleOutline";
 import VisibilityIcon from "@mui/icons-material/Visibility";
 import Table from "@mui/material/Table";
 import TableBody from "@mui/material/TableBody";
@@ -132,8 +133,10 @@ const ProductImagesGrid = ({
 
 const ProductInfoTable = ({
   product,
+  barcode,
 }: {
   product: Record<string, unknown>;
+  barcode: string;
 }) => {
   const { t } = useTranslation();
   const theme = useTheme();
@@ -141,17 +144,46 @@ const ProductInfoTable = ({
   function ProductInfoRow({
     product,
     infoKey,
+    barcode,
   }: {
     product: Record<string, unknown>;
     infoKey: string;
+    barcode: string;
   }) {
-    const { i18nKey, translatedKey, getLink } =
+    const { i18nKey, translatedKey, getLink, editAnchor } =
       ADDITIONAL_INFO_TRANSLATION[infoKey];
 
-    // Try translated key first, then fallback to original key, then "?" if not found
-    const value =
-      (translatedKey ? product?.[translatedKey] : product?.[infoKey]) ??
-      ("?" as unknown);
+    const value = translatedKey ? product?.[translatedKey] : product?.[infoKey];
+
+    const isMissing =
+      value == null ||
+      (typeof value === "string" && value.trim() === "") ||
+      (Array.isArray(value) && value.length === 0);
+
+    if (isMissing) {
+      return (
+        <TableRow>
+          <TableCell component="th" scope="row">
+            {t(`questions.${i18nKey}`)}
+          </TableCell>
+          <TableCell>
+            <Button
+              size="small"
+              component={Link}
+              target="_blank"
+              rel="noreferrer"
+              href={`${offService.getProductEditUrl(barcode)}${
+                editAnchor ? `#${editAnchor}` : ""
+              }`}
+              startIcon={<AddCircleOutlineIcon />}
+              sx={{ py: 0, minWidth: 0 }}
+            >
+              {t("questions.add_missing_info")}
+            </Button>
+          </TableCell>
+        </TableRow>
+      );
+    }
 
     return (
       <TableRow>
@@ -199,7 +231,12 @@ const ProductInfoTable = ({
       >
         {Object.keys(ADDITIONAL_INFO_TRANSLATION).map((infoKey) => {
           return (
-            <ProductInfoRow key={infoKey} product={product} infoKey={infoKey} />
+            <ProductInfoRow
+              key={infoKey}
+              product={product}
+              infoKey={infoKey}
+              barcode={barcode}
+            />
           );
         })}
       </TableBody>
@@ -333,7 +370,7 @@ const ProductInformation = () => {
           {t("questions.no_additional_info")}
         </Typography>
       ) : (
-        <ProductInfoTable product={productData} />
+        <ProductInfoTable product={productData} barcode={question.barcode} />
       )}
 
       {isDevMode && devCustomization.showDebug && (

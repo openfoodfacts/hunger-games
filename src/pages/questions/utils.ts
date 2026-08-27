@@ -8,18 +8,21 @@ type AdditionalInfoType = {
   i18nKey: string;
   translatedKey?: string;
   getLink?: (name: string) => string;
+  editAnchor?: string;
 };
 
 export const ADDITIONAL_INFO_TRANSLATION: Record<string, AdditionalInfoType> = {
-  brands: { i18nKey: "brands" },
-  ingredientsText: { i18nKey: "ingredients" },
+  brands: { i18nKey: "brands", editAnchor: "brands" },
+  ingredientsText: { i18nKey: "ingredients", editAnchor: "ingredients" },
   countriesTags: {
     i18nKey: "countries",
     translatedKey: "translatedCountriesTags",
+    editAnchor: "countries",
   },
   categories: {
     i18nKey: "categories",
     translatedKey: "translatedCategories",
+    editAnchor: "categories",
     getLink: (name: string) =>
       `https://world.openfoodfacts.org/facets/categories/${name
         .toLowerCase()
@@ -28,12 +31,13 @@ export const ADDITIONAL_INFO_TRANSLATION: Record<string, AdditionalInfoType> = {
   labels_tags: {
     i18nKey: "labels",
     translatedKey: "translatedLabels_tags",
+    editAnchor: "labels",
     getLink: (name: string) =>
       `https://world.openfoodfacts.org/facets/labels/${name
         .toLowerCase()
         .replaceAll(" ", "-")}`,
   },
-  quantity: { i18nKey: "quantity" },
+  quantity: { i18nKey: "quantity", editAnchor: "quantity" },
 };
 
 // src looks like: "https://images.openfoodfacts.org/images/products/004/900/053/2258/1.jpg"
