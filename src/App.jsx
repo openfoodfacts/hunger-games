@@ -3,7 +3,7 @@ import CssBaseline from "@mui/material/CssBaseline";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { Routes, Route, useLocation } from "react-router";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { useMatomo } from "@jonkoops/matomo-tracker-react";
+import { useMatomo } from "./hooks/matomo";
 import axios from "axios";
 
 import ResponsiveAppBar from "./components/ResponsiveAppBar";
@@ -165,6 +165,7 @@ export default function App() {
     refresh();
   }, [refresh]);
 
+  // Matomo page view tracking
   const location = useLocation();
   const { trackPageView } = useMatomo();
 
@@ -207,6 +208,14 @@ export default function App() {
   }, []);
 
   const theme = createTheme(getToken(mode));
+  const themeColor = theme.palette.cafeCreme.main;
+  React.useEffect(() => {
+    const metaThemeColor = document.head.querySelector(
+      'meta[name="theme-color"]',
+    );
+    if (!metaThemeColor) return;
+    metaThemeColor.setAttribute("content", themeColor);
+  }, [themeColor]);
 
   return (
     <React.Suspense fallback={<Loader />}>

@@ -12,7 +12,7 @@
           "description": "Tadiavo ny famantarana rehetra mifanaraka amin'ny famantarana nomena"
         },
         "green_score": {
-          "title": "Eco-score",
+          "title": "Green-score",
           "description": "Annotate the questions with the highest value"
         }
       }
@@ -49,6 +49,10 @@
     "title": "Sary nasehon'ny mpampiasa",
     "loading": "Loading"
   },
+  "image_viewer": {
+    "compressed": "Compressed",
+    "load_original": "Load original"
+  },
   "questions": {
     "category": "sokajy",
     "categories": "Sokajy",
@@ -79,6 +83,10 @@
     "last_annotations": "Fanazavana farany",
     "remaining_annotations": "Fanontaniana sisa",
     "annotated_annotations": "Annotated",
+    "similar_questions": "Similar questions",
+    "no_similar_questions": "No similar questions",
+    "no_images": "No images available",
+    "no_additional_info": "No additional information",
     "filters": {
       "active_filter_number": "+{{count}} sivana",
       "active_filter_number_one": "+{{count}} sivana",
@@ -294,11 +302,11 @@
         "text2": "Araka ny asehon'ny ohatra, rehefa misafidy ny logo mitovy amin'izany ianao dia soraty fotsiny ny sandany ary safidio ny toerana misy marika, marika na zavatra hafa. Tsotra izany!"
       },
       "page4": {
-        "title": "Eco-Score Questions Game",
+        "title": "Green-Score Questions Game",
         "text1": "Ampio izahay hamita ny fanontaniana sisa amin'ny etikety ambony indrindra!",
-        "text2": "These cards are linked to labels used in the computation of the Eco-Score.",
-        "text3": "<strong>What is Eco-Score?</strong>",
-        "text4": "Eco-Score captures the total environmental footprint, making it easier for consumers to compare products and decide which is better for the environment."
+        "text2": "These cards are linked to labels used in the computation of the Green-Score.",
+        "text3": "<strong>What is Green-Score?</strong>",
+        "text4": "Green-Score captures the total environmental footprint, making it easier for consumers to compare products and decide which is better for the environment."
       },
       "page5": {
         "title": "Fikiràna",
@@ -379,7 +387,7 @@
     "correct": "Ahitsio ({{label}})"
   },
   "green-score": {
-    "description": "Here is a summary of questions that could improve Eco-Score computation",
+    "description": "Here is a summary of questions that could improve Green-Score computation",
     "countryLabel": "Firenena"
   },
   "ingredients": {

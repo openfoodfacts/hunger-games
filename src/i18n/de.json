@@ -49,6 +49,10 @@
     "title": "Von Nutzern gekennzeichnete Bilder",
     "loading": "Wird geladen"
   },
+  "image_viewer": {
+    "compressed": "Compressed",
+    "load_original": "Load original"
+  },
   "questions": {
     "category": "Kategorie",
     "categories": "Kategorien",
@@ -79,6 +83,10 @@
     "last_annotations": "Letzte Anmerkungen",
     "remaining_annotations": "Verbleibende Fragen",
     "annotated_annotations": "Kommentiert",
+    "similar_questions": "Similar questions",
+    "no_similar_questions": "No similar questions",
+    "no_images": "No images available",
+    "no_additional_info": "No additional information",
     "filters": {
       "active_filter_number": "+{{count}} Filter",
       "active_filter_number_one": "+{{count}} Filter",
@@ -294,11 +302,11 @@
         "text2": "Wenn Sie, wie im Beispiel gezeigt, alle ähnlichen Logos ausgewählt haben, geben Sie einfach deren Wert ein und wählen aus, ob es sich um eine Marke, ein Etikett oder etwas anderes handelt. So einfach ist das!"
       },
       "page4": {
-        "title": "Eco-Score-Fragenspiel",
+        "title": "Green-Score-Fragenspiel",
         "text1": "Helfen Sie uns, die verbleibenden Fragen in den Etiketten mit der höchsten Priorität abzuschließen!",
-        "text2": "Diese Karten sind mit Etiketten verknüpft, die bei der Berechnung des Eco-Score verwendet werden.",
-        "text3": "<strong>Was ist der Eco-Score?</strong>",
-        "text4": "Eco-Score erfasst den gesamten ökologischen Fußabdruck und macht es den Verbrauchern leichter, Produkte zu vergleichen und zu entscheiden, welches Produkt besser für die Umwelt ist."
+        "text2": "Diese Karten sind mit Etiketten verknüpft, die bei der Berechnung des Green-Score verwendet werden.",
+        "text3": "<strong>Was ist der Green-Score?</strong>",
+        "text4": "Green-Score erfasst den gesamten ökologischen Fußabdruck und macht es den Verbrauchern leichter, Produkte zu vergleichen und zu entscheiden, welches Produkt besser für die Umwelt ist."
       },
       "page5": {
         "title": "Einstellungen",
@@ -379,7 +387,7 @@
     "correct": "Richtig ({{label}})"
   },
   "green-score": {
-    "description": "Hier finden Sie eine Zusammenfassung der Fragen, die zur Verbesserung der Berechnung des Eco-Scores beitragen könnten",
+    "description": "Hier finden Sie eine Zusammenfassung der Fragen, die zur Verbesserung der Berechnung des Green-Scores beitragen könnten",
     "countryLabel": "Land"
   },
   "ingredients": {

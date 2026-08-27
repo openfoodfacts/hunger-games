@@ -12,7 +12,7 @@
           "description": "Hitta alla logotyper som matchar den givna logotypen"
         },
         "green_score": {
-          "title": "Miljöpoäng",
+          "title": "Green-score",
           "description": "Annotera frågorna med högst värde"
         }
       }
@@ -49,6 +49,10 @@
     "title": "Bilder flaggade av användare",
     "loading": "Läser in"
   },
+  "image_viewer": {
+    "compressed": "Komprimerad",
+    "load_original": "Ladda original"
+  },
   "questions": {
     "category": "kategori",
     "categories": "Kategorier",
@@ -64,7 +68,7 @@
     "popularity_sort": "Sortera efter popularitet",
     "see_examples": "Se exempel på detta ",
     "no": "Nej",
-    "skip": "Hoppa over",
+    "skip": "Hoppa över",
     "yes": "Ja",
     "no_questions_remaining": "Inga frågor återstår",
     "an_error_occurred": "Ett fel uppstod. Vänligen ladda om, försök senare eller kontakta teamet.",
@@ -79,6 +83,10 @@
     "last_annotations": "Senaste anteckningar",
     "remaining_annotations": "Återstående frågor",
     "annotated_annotations": "Antecknad",
+    "similar_questions": "Liknande frågor",
+    "no_similar_questions": "Inga liknande frågor",
+    "no_images": "Inga bilder tillgängliga",
+    "no_additional_info": "Ingen ytterligare information",
     "filters": {
       "active_filter_number": "+{{count}} aktiva filter",
       "active_filter_number_one": "+{{count}} aktiva filter",
@@ -294,11 +302,11 @@
         "text2": "Som visas i exemplet, när du väl har valt alla liknande logotyper skriver du bara deras värde och väljer var det är ett varumärke, en etikett eller något annat. Så enkelt är det!"
       },
       "page4": {
-        "title": "Eco-Score-frågespel",
+        "title": "Green-Score-frågespel",
         "text1": "Hjälp oss avsluta de återstående frågorna i de högst prioriterade etiketterna!",
-        "text2": "Dessa kort är kopplade till etiketter som används vid beräkningen av Eco-Score.",
-        "text3": "<strong>Vad är Eco-Score?</strong>",
-        "text4": "Eco-Score fångar upp det totala miljöavtrycket, vilket gör det lättare för konsumenter att jämföra produkter och avgöra vilken som är bättre för miljön."
+        "text2": "Dessa kort är kopplade till etiketter som används vid beräkningen av Green-Score.",
+        "text3": "<strong>Vad är Green-Score?</strong>",
+        "text4": "Green-Score samlar det totala miljöavtrycket, vilket gör det lättare för konsumenter att jämföra produkter och avgöra vilken som är bättre för miljön."
       },
       "page5": {
         "title": "Inställningar",
@@ -342,7 +350,7 @@
     "add_nutrient": "-- lägg till näringsämne --",
     "validate_100g": "Validera (100g)",
     "validate_serving": "Validera (portion)",
-    "skip": "Hoppa over",
+    "skip": "Hoppa över",
     "invalid_image": "Ogiltig bild",
     "pictures": {
       "picture_date": "Foto uppladdat",
@@ -379,7 +387,7 @@
     "correct": "Korrekt ({{label}})"
   },
   "green-score": {
-    "description": "Här är en sammanfattning av frågorna som kan förbättra beräkningen av miljöpoäng",
+    "description": "Här är en sammanfattning av frågorna som kan förbättra beräkningen av Green-Score",
     "countryLabel": "Land"
   },
   "ingredients": {

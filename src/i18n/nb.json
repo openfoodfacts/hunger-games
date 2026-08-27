@@ -12,7 +12,7 @@
           "description": "Finn alle logoene som samsvarer med den angitte logoen"
         },
         "green_score": {
-          "title": "Eco-score",
+          "title": "Green-score",
           "description": "Annotate the questions with the highest value"
         }
       }
@@ -49,6 +49,10 @@
     "title": "Bilder flagget av brukere",
     "loading": "Laster"
   },
+  "image_viewer": {
+    "compressed": "Compressed",
+    "load_original": "Load original"
+  },
   "questions": {
     "category": "kategori",
     "categories": "Kategorier",
@@ -79,6 +83,10 @@
     "last_annotations": "Siste merknader",
     "remaining_annotations": "Gjenstående spørsmål",
     "annotated_annotations": "Markert",
+    "similar_questions": "Similar questions",
+    "no_similar_questions": "No similar questions",
+    "no_images": "No images available",
+    "no_additional_info": "No additional information",
     "filters": {
       "active_filter_number": "+{{count}} filtre",
       "active_filter_number_one": "+{{count}} filter",
@@ -294,11 +302,11 @@
         "text2": "Som vist i eksempelet, når du har valgt alle de lignende logoene, skriver du bare inn verdien deres og velger hvor det er et merke, en etikett eller noe annet. Det er så enkelt!"
       },
       "page4": {
-        "title": "Eco-Score spørsmålsspill",
+        "title": "Green-Score spørsmålsspill",
         "text1": "Hjelp oss med å fullføre de gjenværende spørsmålene i etikettene med høyest prioritet!",
-        "text2": "Disse kortene er knyttet til etiketter som brukes i beregningen av Eco-Score.",
-        "text3": "<strong>Hva er Eco-Score?</strong>",
-        "text4": "Eco-Score fanger opp det helhetlige miljøavtrykket, som gjør det enklere for forbrukere å sammenligne produkter og bestemme hvilket som er bedre for miljøet."
+        "text2": "Disse kortene er knyttet til etiketter som brukes i beregningen av Green-Score.",
+        "text3": "<strong>Hva er Green-Score?</strong>",
+        "text4": "Green-Score fanger opp det helhetlige miljøavtrykket, som gjør det enklere for forbrukere å sammenligne produkter og bestemme hvilket som er bedre for miljøet."
       },
       "page5": {
         "title": "Innstillinger",
@@ -379,7 +387,7 @@
     "correct": "Riktig ({{label}})"
   },
   "green-score": {
-    "description": "Here is a summary of questions that could improve Eco-Score computation",
+    "description": "Here is a summary of questions that could improve Green-Score computation",
     "countryLabel": "Land"
   },
   "ingredients": {

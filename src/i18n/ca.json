@@ -12,7 +12,7 @@
           "description": "Trobeu totes les imatges que encaixin amb el logo donat"
         },
         "green_score": {
-          "title": "Eco-score",
+          "title": "Green-score",
           "description": "Annotate the questions with the highest value"
         }
       }
@@ -49,6 +49,10 @@
     "title": "Imatges marcades pels usuaris",
     "loading": "Carregant"
   },
+  "image_viewer": {
+    "compressed": "Compressed",
+    "load_original": "Load original"
+  },
   "questions": {
     "category": "categoria",
     "categories": "Categories",
@@ -79,6 +83,10 @@
     "last_annotations": "Darreres anotacions",
     "remaining_annotations": "Preguntes restants",
     "annotated_annotations": "Anotat",
+    "similar_questions": "Similar questions",
+    "no_similar_questions": "No similar questions",
+    "no_images": "No images available",
+    "no_additional_info": "No additional information",
     "filters": {
       "active_filter_number": "+{{count}} filtres",
       "active_filter_number_one": "+{{count}} filtre",
@@ -294,11 +302,11 @@
         "text2": "Com es mostra a l'exemple, un cop seleccionats tots els logotips similars, només cal que escriviu el seu valor i seleccioneu si és una marca, una etiqueta o una altra cosa. Així de senzill!"
       },
       "page4": {
-        "title": "Joc de preguntes sobre l'Eco-Score",
+        "title": "Joc de preguntes sobre l'Green-Score",
         "text1": "Ajuda'ns a completar les preguntes restants a les etiquetes de màxima prioritat!",
-        "text2": "Aquestes targetes estan vinculades a les etiquetes utilitzades en el càlcul de l'Eco-Score.",
-        "text3": "<strong>Què és Eco-Score?</strong>",
-        "text4": "L'Eco-Score captura la petjada ambiental total, facilitant als consumidors comparar productes i decidir quin és millor per al medi ambient."
+        "text2": "Aquestes targetes estan vinculades a les etiquetes utilitzades en el càlcul de l'Green-Score.",
+        "text3": "<strong>Què és Green-Score?</strong>",
+        "text4": "L'Green-Score captura la petjada ambiental total, facilitant als consumidors comparar productes i decidir quin és millor per al medi ambient."
       },
       "page5": {
         "title": "Preferències",
@@ -379,7 +387,7 @@
     "correct": "({{label}}) Correcte"
   },
   "green-score": {
-    "description": "Here is a summary of questions that could improve Eco-Score computation",
+    "description": "Here is a summary of questions that could improve Green-Score computation",
     "countryLabel": "País"
   },
   "ingredients": {

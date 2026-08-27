@@ -376,7 +376,7 @@ const ResponsiveAppBar = () => {
                 textAlign: "center",
               }}
             >
-              {t("menu.title")}
+              Hunger Games
             </Typography>
             {isLoggedIn ? (
               <AccountCircleIcon color="success" />
@@ -436,7 +436,7 @@ const ResponsiveAppBar = () => {
                   textDecoration: "none",
                 }}
               >
-                {t("menu.title")}
+                Hunger Games
               </Typography>
 
               {displayedPages.map((page) => {

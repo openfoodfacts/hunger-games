@@ -12,7 +12,7 @@
           "description": "Vind alle logo's die overeenkomen met het gegeven logo"
         },
         "green_score": {
-          "title": "Eco-Score",
+          "title": "Green-Score",
           "description": "Label de vragen met de hoogste waarde"
         }
       }
@@ -49,6 +49,10 @@
     "title": "Afbeeldingen gemarkeerd door gebruikers",
     "loading": "Aan het laden"
   },
+  "image_viewer": {
+    "compressed": "Compressed",
+    "load_original": "Load original"
+  },
   "questions": {
     "category": "categorie",
     "categories": "Categorieën",
@@ -79,6 +83,10 @@
     "last_annotations": "Laatste aantekeningen",
     "remaining_annotations": "Resterende vragen",
     "annotated_annotations": "Geannoteerd",
+    "similar_questions": "Similar questions",
+    "no_similar_questions": "No similar questions",
+    "no_images": "No images available",
+    "no_additional_info": "No additional information",
     "filters": {
       "active_filter_number": "+{{count}} filters",
       "active_filter_number_one": "+{{count}} filter",
@@ -110,10 +118,10 @@
       "all_predictors": "Alle voorspellers",
       "predictor": {
         "ridge_model_ml": "Ridge Model ML",
-        "neural": "",
+        "neural": "Neuraal",
         "matcher": "",
         "google_cloud_vision": "Google Cloud Vision",
-        "regex": "Reguliere expressie",
+        "regex": "Regex",
         "flashtext": "FlashText",
         "nutriscore": "Nutriscore",
         "universal_logo_detector": "Universele logo-detector",
@@ -294,11 +302,11 @@
         "text2": "Zoals in het voorbeeld wordt getoond, typt u, zodra u alle vergelijkbare logo's hebt geselecteerd, hun waarde en selecteert u of het een merk, een label of iets anders is. Het is zo simpel!"
       },
       "page4": {
-        "title": "Eco-Score Vragen Spel",
+        "title": "Green-Score Vragen Spel",
         "text1": "Help ons de resterende vragen met de hoogste prioriteit af te ronden!",
-        "text2": "Deze kaarten zijn gekoppeld aan labels die gebruikt worden bij de berekening van de eco-score.",
-        "text3": "<strong>Wat is de Eco-score?</strong>",
-        "text4": "Eco-Score legt de totale ecologische voetafdruk vast, waardoor het voor consumenten gemakkelijker wordt om producten te vergelijken en te beslissen welke beter is voor het milieu."
+        "text2": "Deze kaarten zijn gekoppeld aan labels die gebruikt worden bij de berekening van de Green-score.",
+        "text3": "<strong>Wat is de Green-score?</strong>",
+        "text4": "Green-Score legt de totale ecologische voetafdruk vast, waardoor het voor consumenten gemakkelijker wordt om producten te vergelijken en te beslissen welke beter is voor het milieu."
       },
       "page5": {
         "title": "Instellingen",
@@ -379,7 +387,7 @@
     "correct": "Juist ({{label}})"
   },
   "green-score": {
-    "description": "Hier is een samenvatting van vragen die de Eco-Score berekening kunnen verbeteren",
+    "description": "Hier is een samenvatting van vragen die de Green-Score berekening kunnen verbeteren",
     "countryLabel": "Land"
   },
   "ingredients": {

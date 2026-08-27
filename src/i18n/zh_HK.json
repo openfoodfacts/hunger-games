@@ -12,7 +12,7 @@
           "description": "請找出與指定表章匹配的所有表章"
         },
         "green_score": {
-          "title": "Eco-score",
+          "title": "Green-score",
           "description": "Annotate the questions with the highest value"
         }
       }
@@ -49,6 +49,10 @@
     "title": "由用戶標記的圖片",
     "loading": "載入中"
   },
+  "image_viewer": {
+    "compressed": "Compressed",
+    "load_original": "Load original"
+  },
   "questions": {
     "category": "分類",
     "categories": "類別",
@@ -79,6 +83,10 @@
     "last_annotations": "上一次注解",
     "remaining_annotations": "剩餘問題",
     "annotated_annotations": "已注解",
+    "similar_questions": "Similar questions",
+    "no_similar_questions": "No similar questions",
+    "no_images": "No images available",
+    "no_additional_info": "No additional information",
     "filters": {
       "active_filter_number": "+{{count}} 篩選器",
       "active_filter_number_one": "+{{count}} 篩選器",
@@ -294,11 +302,11 @@
         "text2": "As shown in the example, once you select all the similar logos, just type their value and select where it is a brand, a label or something else. It's that simple!"
       },
       "page4": {
-        "title": "Eco-Score Questions Game",
+        "title": "Green-Score Questions Game",
         "text1": "Help us finish the remaining questions in the most high priority labels!",
-        "text2": "These cards are linked to labels used in the computation of the Eco-Score.",
-        "text3": "<strong>What is Eco-Score?</strong>",
-        "text4": "Eco-Score captures the total environmental footprint, making it easier for consumers to compare products and decide which is better for the environment."
+        "text2": "These cards are linked to labels used in the computation of the Green-Score.",
+        "text3": "<strong>What is Green-Score?</strong>",
+        "text4": "Green-Score captures the total environmental footprint, making it easier for consumers to compare products and decide which is better for the environment."
       },
       "page5": {
         "title": "設定",
@@ -379,7 +387,7 @@
     "correct": "Correct ({{label}})"
   },
   "green-score": {
-    "description": "Here is a summary of questions that could improve Eco-Score computation",
+    "description": "Here is a summary of questions that could improve Green-Score computation",
     "countryLabel": "國家"
   },
   "ingredients": {

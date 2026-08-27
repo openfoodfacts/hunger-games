@@ -12,7 +12,7 @@
           "description": "Знайдзіце ўсе лагатыпы, якія адпавядаюць дадзенаму лагатыпу"
         },
         "green_score": {
-          "title": "Eco-score",
+          "title": "Green-score",
           "description": "Annotate the questions with the highest value"
         }
       }
@@ -49,6 +49,10 @@
     "title": "Выявы, пазначаныя карыстальнікамі",
     "loading": "Загрузка"
   },
+  "image_viewer": {
+    "compressed": "Compressed",
+    "load_original": "Load original"
+  },
   "questions": {
     "category": "катэгорыя",
     "categories": "Катэгорыі",
@@ -79,6 +83,10 @@
     "last_annotations": "Апошнія анатацыі",
     "remaining_annotations": "Remaining questions",
     "annotated_annotations": "З анатацыямі",
+    "similar_questions": "Similar questions",
+    "no_similar_questions": "No similar questions",
+    "no_images": "No images available",
+    "no_additional_info": "No additional information",
     "filters": {
       "active_filter_number": "+{{count}} filters",
       "active_filter_number_one": "+{{count}} фільтр",
@@ -296,7 +304,7 @@
       "page4": {
         "title": "Гульня «Пытанні па Eco-ацэнцы»",
         "text1": "Help us finish the remaining questions in the most high priority labels!",
-        "text2": "These cards are linked to labels used in the computation of the Eco-Score.",
+        "text2": "These cards are linked to labels used in the computation of the Green-Score.",
         "text3": "<strong>Што такое Eco-ацэнка?</strong>",
         "text4": "Eco-ацэнка ахоплівае агульны ўплыў на навакольнае асяроддзе, што палягчае спажыўцам параўноўваць прадукты і вырашаць, якія з іх менш шкодныя для навакольнага асяроддзя."
       },
@@ -379,7 +387,7 @@
     "correct": "Correct ({{label}})"
   },
   "green-score": {
-    "description": "Here is a summary of questions that could improve Eco-Score computation",
+    "description": "Here is a summary of questions that could improve Green-Score computation",
     "countryLabel": "Country"
   },
   "ingredients": {

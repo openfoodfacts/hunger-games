@@ -24,6 +24,21 @@ export default defineConfig([
         tsconfigRootDir: import.meta.dirname,
       },
     },
+
+    rules: {
+      "@typescript-eslint/no-unused-vars": [
+        "error",
+        {
+          args: "all",
+          argsIgnorePattern: "^_",
+          caughtErrors: "all",
+          caughtErrorsIgnorePattern: "^_",
+          destructuredArrayIgnorePattern: "^_",
+          varsIgnorePattern: "^_",
+          ignoreRestSiblings: true,
+        },
+      ],
+    },
   },
 
   // React
@@ -34,7 +49,7 @@ export default defineConfig([
       globals: globals.browser,
     },
     settings: {
-      react: { version: "detect" },
+      react: { version: "19.2" },
     },
     rules: {
       "react/prop-types": "off",

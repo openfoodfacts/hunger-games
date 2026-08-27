@@ -12,8 +12,8 @@
           "description": "Znajdź wszystkie loga pasujące do danego logo"
         },
         "green_score": {
-          "title": "Eco-Score",
-          "description": "Annotate the questions with the highest value"
+          "title": "Green-Score",
+          "description": "Adnotuj pytania o największej wartości"
         }
       }
     },
@@ -49,6 +49,10 @@
     "title": "Zdjęcia oznaczone przez użytkowników",
     "loading": "Ładowanie"
   },
+  "image_viewer": {
+    "compressed": "Skompresowano",
+    "load_original": "Załaduj oryginał"
+  },
   "questions": {
     "category": "kategoria",
     "categories": "Kategorie",
@@ -79,6 +83,10 @@
     "last_annotations": "Ostatnie adnotacje",
     "remaining_annotations": "Pozostałe pytania",
     "annotated_annotations": "Z adnotacjami",
+    "similar_questions": "Podobne pytania",
+    "no_similar_questions": "Brak podobnych pytań",
+    "no_images": "Brak dostępnych obrazów",
+    "no_additional_info": "Brak dodatkowych informacji",
     "filters": {
       "active_filter_number": "+{{count}} filtrów",
       "active_filter_number_one": "+{{count}} filtr",
@@ -294,11 +302,11 @@
         "text2": "Jak pokazano w przykładzie, po wybraniu wszystkich podobnych nazw po prostu wpisz ich wartość i wybierz, gdzie jest to marka, etykieta lub coś innego. To takie proste!"
       },
       "page4": {
-        "title": "Gra Pytania o Eco-Score",
+        "title": "Gra Pytania o Green-Score",
         "text1": "Pomóż nam dokończyć pozostałe pytania w etykietach o najwyższym priorytecie!",
-        "text2": "Karty te są powiązane z etykietami używanymi do obliczania wyniku Eco-Score.",
-        "text3": "<strong>Co to jest Eco-Score?</strong>",
-        "text4": "Eco-Score uwzględnia całkowity ślad ekologiczny, ułatwiając konsumentom porównywanie produktów i podejmowanie decyzji, które są lepsze dla środowiska."
+        "text2": "Karty te są powiązane z etykietami używanymi do obliczania wyniku Green-Score.",
+        "text3": "<strong>Co to jest Green-Score?</strong>",
+        "text4": "Green-Score uwzględnia całkowity ślad ekologiczny, ułatwiając konsumentom porównywanie produktów i podejmowanie decyzji, które są lepsze dla środowiska."
       },
       "page5": {
         "title": "Ustawienia",
@@ -379,7 +387,7 @@
     "correct": "Poprawnie ({{label}})"
   },
   "green-score": {
-    "description": "Here is a summary of questions that could improve Eco-Score computation",
+    "description": "Oto podsumowanie pytań, które mogą poprawić obliczenia Green-Score",
     "countryLabel": "Kraj"
   },
   "ingredients": {

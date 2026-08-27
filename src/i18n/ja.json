@@ -49,6 +49,10 @@
     "title": "ユーザーによってフラグが付けられた画像",
     "loading": "読み込み中"
   },
+  "image_viewer": {
+    "compressed": "Compressed",
+    "load_original": "Load original"
+  },
   "questions": {
     "category": "カテゴリー",
     "categories": "カテゴリー",
@@ -79,6 +83,10 @@
     "last_annotations": "最後の注釈",
     "remaining_annotations": "残りの質問",
     "annotated_annotations": "注釈付き",
+    "similar_questions": "Similar questions",
+    "no_similar_questions": "No similar questions",
+    "no_images": "No images available",
+    "no_additional_info": "No additional information",
     "filters": {
       "active_filter_number": "+{{count}} 個のフィルタ",
       "active_filter_number_one": "+{{count}} 個のフィルタ",
@@ -294,11 +302,11 @@
         "text2": "例に示すように、類似したロゴをすべて選択したら、それらの値を入力して、それがブランドなのか、ラベルなのか、またはその他のものなのかを選択してください。簡単でしょう！"
       },
       "page4": {
-        "title": "Eco-Score質問ゲーム",
+        "title": "Green-Score質問ゲーム",
         "text1": "最も優先度の高いラベルに関する、残っている質問を完成させるのを手伝ってください！",
-        "text2": "これらのカードはEco-Scoreの計算に使用されるラベルに紐づいています。",
-        "text3": "<strong>Eco-Scoreとは？</strong>",
-        "text4": "Eco-Scoreは環境フットプリントの合計を把握し、消費者が製品を比較してどちらが環境に良いかを判断しやすくするものです。"
+        "text2": "これらのカードはGreen-Scoreの計算に使用されるラベルに紐づいています。",
+        "text3": "<strong>Green-Scoreとは？</strong>",
+        "text4": "Green-Scoreは環境フットプリントの合計を把握し、消費者が製品を比較してどちらが環境に良いかを判断しやすくするものです。"
       },
       "page5": {
         "title": "設定",

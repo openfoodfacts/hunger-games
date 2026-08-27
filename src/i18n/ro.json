@@ -12,8 +12,8 @@
           "description": "Găsiți toate siglele care se potrivesc cu logo-ul dat"
         },
         "green_score": {
-          "title": "Eco-Scor",
-          "description": "Annotate the questions with the highest value"
+          "title": "Green-Scor",
+          "description": "Adnotează întrebările cu cea mai mare valoare"
         }
       }
     },
@@ -49,6 +49,10 @@
     "title": "Imagini semnalate de utilizatori",
     "loading": "Se încarcă"
   },
+  "image_viewer": {
+    "compressed": "Comprimat",
+    "load_original": "Încarcă original"
+  },
   "questions": {
     "category": "categorie",
     "categories": "Categorii",
@@ -79,6 +83,10 @@
     "last_annotations": "Ultimele adnotări",
     "remaining_annotations": "Întrebări rămase",
     "annotated_annotations": "Adnotat",
+    "similar_questions": "Întrebări similare",
+    "no_similar_questions": "Nicio întrebare similară",
+    "no_images": "Nicio imagine disponibilă",
+    "no_additional_info": "Nicio informație suplimentară",
     "filters": {
       "active_filter_number": "+{{count}} filtre",
       "active_filter_number_one": "+{{count}} filtru",
@@ -294,11 +302,11 @@
         "text2": "După cum se arată în exemplu, odată ce ați selectat toate logo-urile similare, introduceți valoarea acestora și selectați unde este o marcă, o etichetă sau altceva. Este atat de simplu!"
       },
       "page4": {
-        "title": "Joc Întrebări Eco-Scor",
+        "title": "Joc Întrebări Green-Scor",
         "text1": "Ajutați-ne să terminăm întrebările rămase în etichetele cu cea mai mare prioritate!",
-        "text2": "Aceste carduri sunt legate de etichetele utilizate în calculul Eco-Score.",
-        "text3": "<strong>Ce este Eco-Score?</strong>",
-        "text4": "EcoScorul surprinde totalitatea amprentei de mediu, facilitând compararea produselor şi luarea deciziilor care sunt mai bune pentru mediu."
+        "text2": "Aceste carduri sunt legate de etichetele utilizate în calculul Green-Score.",
+        "text3": "<strong>Ce este Green-Score?</strong>",
+        "text4": "GreenScorul surprinde totalitatea amprentei de mediu, facilitând compararea produselor şi luarea deciziilor care sunt mai bune pentru mediu."
       },
       "page5": {
         "title": "Configurări",
@@ -379,7 +387,7 @@
     "correct": "Corect ({{label}})"
   },
   "green-score": {
-    "description": "Here is a summary of questions that could improve Eco-Score computation",
+    "description": "Iată un rezumat al întrebărilor care ar putea îmbunătăți calculul Green-Score",
     "countryLabel": "Țară"
   },
   "ingredients": {

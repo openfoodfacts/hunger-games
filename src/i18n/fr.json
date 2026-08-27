@@ -49,6 +49,10 @@
     "title": "Images signalées par les utilisateurs",
     "loading": "Chargement"
   },
+  "image_viewer": {
+    "compressed": "Compressé",
+    "load_original": "Charger l'original"
+  },
   "questions": {
     "category": "catégorie",
     "categories": "Catégories",
@@ -67,6 +71,7 @@
     "skip": "Ignorer",
     "yes": "Oui",
     "no_questions_remaining": "Plus de questions",
+    "search_without_prefix": "Chercher sans le préfixe ({{tag}})",
     "an_error_occurred": "Une erreur s'est produite. Veuillez recharger la page, réessayer plus tard ou contacter l'équipe.",
     "countries": "Pays",
     "view": "Voir",
@@ -79,6 +84,10 @@
     "last_annotations": "Dernières annotations",
     "remaining_annotations": "Questions restantes",
     "annotated_annotations": "Annoté",
+    "similar_questions": "Questions similaires",
+    "no_similar_questions": "Aucune question similaire",
+    "no_images": "Aucune image disponible",
+    "no_additional_info": "Aucune information supplémentaire",
     "filters": {
       "active_filter_number": "+{{count}} filtres",
       "active_filter_number_one": "+{{count}} filtre",
@@ -294,11 +303,11 @@
         "text2": "Comme le montre l'exemple, une fois que vous avez sélectionné tous les logos similaires, saisissez simplement leur valeur et sélectionnez s'il s'agit d'une marque, d'un label ou autre chose. Ce n'est pas plus compliqué."
       },
       "page4": {
-        "title": "Jeu de questions sur l'Éco-Score",
+        "title": "Jeu de questions sur l'Green-Score",
         "text1": "Aidez-nous à terminer les questions restantes dans les labels les plus prioritaires !",
-        "text2": "Ces cartes sont liées à des labels utilisés dans le calcul de l'éco-score.",
-        "text3": "<strong>Qu'est-ce que l'Eco-Score ?</strong>",
-        "text4": "Eco-Score capture l'empreinte environnementale totale, ce qui permet aux consommateurs de comparer plus facilement les produits et de décider lequel est le meilleur pour l'environnement."
+        "text2": "Ces cartes sont liées à des labels utilisés dans le calcul de l'Green-score.",
+        "text3": "<strong>Qu'est-ce que l'Green-Score ?</strong>",
+        "text4": "Green-Score capture l'empreinte environnementale totale, ce qui permet aux consommateurs de comparer plus facilement les produits et de décider lequel est le meilleur pour l'environnement."
       },
       "page5": {
         "title": "Paramètres",

@@ -12,7 +12,7 @@
           "description": "أوجد جميع الشعارات التي تطابق الشعار المعطى"
         },
         "green_score": {
-          "title": "العلامة البيئية Eco-score",
+          "title": "العلامة البيئية Green-score",
           "description": "علق على الأسئلة بجودة أعلى"
         }
       }
@@ -49,6 +49,10 @@
     "title": "الصور التي تم الإبلاغ عنها من قبل المستخدمين",
     "loading": "تحميل"
   },
+  "image_viewer": {
+    "compressed": "Compressed",
+    "load_original": "Load original"
+  },
   "questions": {
     "category": "atassnifate",
     "categories": "الفئات",
@@ -79,6 +83,10 @@
     "last_annotations": "الشروح الأخيرة",
     "remaining_annotations": "الأسئلة المتبقية",
     "annotated_annotations": "مشروح",
+    "similar_questions": "Similar questions",
+    "no_similar_questions": "No similar questions",
+    "no_images": "No images available",
+    "no_additional_info": "No additional information",
     "filters": {
       "active_filter_number": "+{{count}} فلاتر",
       "active_filter_number_one": "+{{count}} فلتر",
@@ -294,7 +302,7 @@
         "text2": "كما هو موضح في المثال، بمجرد تحديد جميع الشعارات المشابهة، ما عليك سوى كتابة قيمتها وتحديد مكان العلامة التجارية أو الملصق أو أي شيء آخر. بكل بساطة!"
       },
       "page4": {
-        "title": "لُعْبَة أسئلة Eco-Score",
+        "title": "لُعْبَة أسئلة Green-Score",
         "text1": "ساعدونا في إنهاء الأسئلة المتبقية في التصنيفات ذات الأولوية القصوى!",
         "text2": "ترتبط هذه البطاقات بالتسميات المستخدمة في حساب النتيجة البيئية.",
         "text3": "<strong>ما هي النتيجة البيئية؟</strong>",

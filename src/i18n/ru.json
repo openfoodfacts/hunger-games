@@ -12,7 +12,7 @@
           "description": "Найдите все логотипы, соответствующие данному логотипу"
         },
         "green_score": {
-          "title": "Eco-score",
+          "title": "Green-score",
           "description": "Аннотируйте вопросы с наивысшим значением"
         }
       }
@@ -49,6 +49,10 @@
     "title": "Изображения, отмеченные пользователями",
     "loading": "Загрузка"
   },
+  "image_viewer": {
+    "compressed": "Compressed",
+    "load_original": "Load original"
+  },
   "questions": {
     "category": "категория",
     "categories": "Категории",
@@ -79,6 +83,10 @@
     "last_annotations": "Последние аннотации",
     "remaining_annotations": "Оставшиеся вопросы",
     "annotated_annotations": "Помеченный",
+    "similar_questions": "Similar questions",
+    "no_similar_questions": "No similar questions",
+    "no_images": "No images available",
+    "no_additional_info": "No additional information",
     "filters": {
       "active_filter_number": "+{{count}} фильтра",
       "active_filter_number_one": "+{{count}} фильтр",
@@ -294,11 +302,11 @@
         "text2": "Как показано в примере, после того как вы выберете всех похожие логотипы, просто введите их значение и укажите, бренд ли это, этикетка или что-нибудь еще. Это настолько просто!"
       },
       "page4": {
-        "title": "Игра \"Вопросы Eco-Score\"",
+        "title": "Игра \"Вопросы Green-Score\"",
         "text1": "Помогите нам ответить на оставшиеся вопросы в этикетках с самым высоким приоритетом!",
-        "text2": "Эти карточки связаны с этикетками, используемыми в вычислении Eco-Score.",
-        "text3": "<strong>Что такое Eco-Score?</strong>",
-        "text4": "Eco-Score отражает общий экологический след, облегчая покупателям сравнение продуктов и выбор лучшего для окружающей среды."
+        "text2": "Эти карточки связаны с этикетками, используемыми в вычислении Green-Score.",
+        "text3": "<strong>Что такое Green-Score?</strong>",
+        "text4": "Green-Score отражает общий экологический след, облегчая покупателям сравнение продуктов и выбор лучшего для окружающей среды."
       },
       "page5": {
         "title": "Настройки",
@@ -379,7 +387,7 @@
     "correct": "Правильно ({{label}})"
   },
   "green-score": {
-    "description": "Вот сводка вопросов, которые могут улучшить вычисления Eco-Score",
+    "description": "Вот сводка вопросов, которые могут улучшить вычисления Green-Score",
     "countryLabel": "Страна"
   },
   "ingredients": {

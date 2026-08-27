@@ -49,6 +49,10 @@
     "title": "Imagens sinalizadas pelos utilizadores",
     "loading": "A carregar"
   },
+  "image_viewer": {
+    "compressed": "Compressed",
+    "load_original": "Load original"
+  },
   "questions": {
     "category": "categoria",
     "categories": "Categorias",
@@ -79,6 +83,10 @@
     "last_annotations": "Últimas anotações",
     "remaining_annotations": "Perguntas restantes",
     "annotated_annotations": "Anotados",
+    "similar_questions": "Similar questions",
+    "no_similar_questions": "No similar questions",
+    "no_images": "No images available",
+    "no_additional_info": "No additional information",
     "filters": {
       "active_filter_number": "+{{count}} filtros",
       "active_filter_number_one": "+{{count}} filtro",
@@ -294,11 +302,11 @@
         "text2": "Conforme mostrado no exemplo, depois de selecionar todos os logótipos semelhantes, basta digitar o valor e selecionar onde é uma marca, um rótulo ou outra coisa. É simples!"
       },
       "page4": {
-        "title": "Jogo de perguntas Eco-Score",
+        "title": "Jogo de perguntas Green-Score",
         "text1": "Ajude-nos a terminar as perguntas restantes nas etiquetas de alta prioridade!",
-        "text2": "Estes cartões estão ligados aos rótulos utilizados no cálculo do Eco-Score.",
-        "text3": "<strong>O que é o Eco-Score?</strong>",
-        "text4": "O Eco-Score capta a pegada ambiental total, tornando mais fácil para os consumidores comparar produtos e decidir qual é o melhor para o meio ambiente."
+        "text2": "Estes cartões estão ligados aos rótulos utilizados no cálculo do Green-Score.",
+        "text3": "<strong>O que é o Green-Score?</strong>",
+        "text4": "O Green-Score capta a pegada ambiental total, tornando mais fácil para os consumidores comparar produtos e decidir qual é o melhor para o meio ambiente."
       },
       "page5": {
         "title": "Definições",

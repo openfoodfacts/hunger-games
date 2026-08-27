@@ -12,7 +12,7 @@
           "description": "Verilmiş loqoya uyğun gələn bütün loqoları tapın"
         },
         "green_score": {
-          "title": "Eco-score",
+          "title": "Green-score",
           "description": "Annotate the questions with the highest value"
         }
       }
@@ -49,6 +49,10 @@
     "title": "İstifadəçilər tərəfindən işarələnmiş şəkillər",
     "loading": "Yüklənir"
   },
+  "image_viewer": {
+    "compressed": "Compressed",
+    "load_original": "Load original"
+  },
   "questions": {
     "category": "kateqoriya",
     "categories": "Kateqoriyalar",
@@ -79,6 +83,10 @@
     "last_annotations": "Son annotasiyalar",
     "remaining_annotations": "Qalan suallar",
     "annotated_annotations": "Annotasiya edilmiş",
+    "similar_questions": "Similar questions",
+    "no_similar_questions": "No similar questions",
+    "no_images": "No images available",
+    "no_additional_info": "No additional information",
     "filters": {
       "active_filter_number": "+{{count}} filtrləri",
       "active_filter_number_one": "+{{count}} filtr",
@@ -294,11 +302,11 @@
         "text2": "As shown in the example, once you select all the similar logos, just type their value and select where it is a brand, a label or something else. It's that simple!"
       },
       "page4": {
-        "title": "Eco-Score Questions Game",
+        "title": "Green-Score Questions Game",
         "text1": "Help us finish the remaining questions in the most high priority labels!",
-        "text2": "These cards are linked to labels used in the computation of the Eco-Score.",
-        "text3": "<strong>What is Eco-Score?</strong>",
-        "text4": "Eco-Score captures the total environmental footprint, making it easier for consumers to compare products and decide which is better for the environment."
+        "text2": "These cards are linked to labels used in the computation of the Green-Score.",
+        "text3": "<strong>What is Green-Score?</strong>",
+        "text4": "Green-Score captures the total environmental footprint, making it easier for consumers to compare products and decide which is better for the environment."
       },
       "page5": {
         "title": "Tənzimləmələr",
@@ -379,7 +387,7 @@
     "correct": "Correct ({{label}})"
   },
   "green-score": {
-    "description": "Here is a summary of questions that could improve Eco-Score computation",
+    "description": "Here is a summary of questions that could improve Green-Score computation",
     "countryLabel": "Country"
   },
   "ingredients": {
@@ -407,7 +415,7 @@
     },
     "androidAPK": {
       "title": "Android APK",
-      "subtitle": "Download"
+      "subtitle": "Yükləyin"
     }
   }
 }

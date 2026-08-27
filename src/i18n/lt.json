@@ -12,7 +12,7 @@
           "description": "Raskite visus logotipus, atitinkančius pateiktą logotipą"
         },
         "green_score": {
-          "title": "Eco-score",
+          "title": "Green-score",
           "description": "Annotate the questions with the highest value"
         }
       }
@@ -49,6 +49,10 @@
     "title": "Naudotojų pažymėti vaizdai",
     "loading": "Įkeliama"
   },
+  "image_viewer": {
+    "compressed": "Compressed",
+    "load_original": "Load original"
+  },
   "questions": {
     "category": "kategorija",
     "categories": "Kategorijos",
@@ -79,6 +83,10 @@
     "last_annotations": "Paskutinės anotacijos",
     "remaining_annotations": "Likę klausimai",
     "annotated_annotations": "Anotuotas",
+    "similar_questions": "Similar questions",
+    "no_similar_questions": "No similar questions",
+    "no_images": "No images available",
+    "no_additional_info": "No additional information",
     "filters": {
       "active_filter_number": "+{{count}} filtrai",
       "active_filter_number_one": "+{{count}} filtras",
@@ -294,11 +302,11 @@
         "text2": "Kaip parodyta pavyzdyje, kai pasirenkate visus panašius logotipus, tiesiog įveskite jų vertę ir pasirinkite, kur tai yra prekės ženklas, etiketė ar kažkas kita. Tai taip paprasta!"
       },
       "page4": {
-        "title": "Eco-Score klausimų žaidimas",
+        "title": "Green-Score klausimų žaidimas",
         "text1": "Padėkite mums užbaigti likusius klausimus didžiausio prioriteto etiketėse!",
-        "text2": "Šios kortelės yra susietos su etiketėmis, naudojamomis apskaičiuojant „Eco-Score“.",
-        "text3": "<strong>Kas yra Eco-Score?</strong>",
-        "text4": "„Eco-Score“ fiksuoja bendrą ekologinį pėdsaką, todėl vartotojams lengviau palyginti produktus ir nuspręsti, kurie produktai yra geresni aplinkai."
+        "text2": "Šios kortelės yra susietos su etiketėmis, naudojamomis apskaičiuojant „Green-Score“.",
+        "text3": "<strong>Kas yra Green-Score?</strong>",
+        "text4": "„Green-Score“ fiksuoja bendrą ekologinį pėdsaką, todėl vartotojams lengviau palyginti produktus ir nuspręsti, kurie produktai yra geresni aplinkai."
       },
       "page5": {
         "title": "Nustatymai",
@@ -379,7 +387,7 @@
     "correct": "Teisingai ({{label}})"
   },
   "green-score": {
-    "description": "Here is a summary of questions that could improve Eco-Score computation",
+    "description": "Here is a summary of questions that could improve Green-Score computation",
     "countryLabel": "Šalis"
   },
   "ingredients": {

@@ -49,6 +49,10 @@
     "title": "Images flagged by users",
     "loading": "Loading"
   },
+  "image_viewer": {
+    "compressed": "Compressed",
+    "load_original": "Load original"
+  },
   "questions": {
     "category": "category",
     "categories": "Categories",
@@ -67,6 +71,11 @@
     "skip": "Skip",
     "yes": "Yes",
     "no_questions_remaining": "No questions remaining",
+    "search_without_prefix": "Search without prefix ({{tag}})",
+    "similar_questions": "Similar questions",
+    "no_similar_questions": "No similar questions",
+    "remaining_questions_count_one": "1 question remaining",
+    "remaining_questions_count_other": "{{count}} questions remaining",
     "an_error_occurred": "An error occurred. Please reload, try later or contact the team.",
     "countries": "Countries",
     "view": "View",
@@ -79,6 +88,10 @@
     "last_annotations": "Last annotations",
     "remaining_annotations": "Remaining questions",
     "annotated_annotations": "Annotated",
+    "similar_questions": "Similar questions",
+    "no_similar_questions": "No similar questions",
+    "no_images": "No images available",
+    "no_additional_info": "No additional information",
     "filters": {
       "active_filter_number": "+{{count}} filters",
       "active_filter_number_one": "+{{count}} filter",

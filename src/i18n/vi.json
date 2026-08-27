@@ -12,7 +12,7 @@
           "description": "Tìm tất cả các logo phù hợp với logo đã cho"
         },
         "green_score": {
-          "title": "Eco-score",
+          "title": "Green-score",
           "description": "Annotate the questions with the highest value"
         }
       }
@@ -49,6 +49,10 @@
     "title": "Hình ảnh do người dùng gắn cờ",
     "loading": "Đang tải"
   },
+  "image_viewer": {
+    "compressed": "Compressed",
+    "load_original": "Load original"
+  },
   "questions": {
     "category": "danh mục",
     "categories": "Thể loại",
@@ -79,6 +83,10 @@
     "last_annotations": "Chú thích mới nhất",
     "remaining_annotations": "Câu hỏi đang có",
     "annotated_annotations": "Chú thích",
+    "similar_questions": "Similar questions",
+    "no_similar_questions": "No similar questions",
+    "no_images": "No images available",
+    "no_additional_info": "No additional information",
     "filters": {
       "active_filter_number": "+{{count}} bộ lọc",
       "active_filter_number_one": "+{{count}} bộ lọc",
@@ -379,7 +387,7 @@
     "correct": "Đúng ({{label}})"
   },
   "green-score": {
-    "description": "Here is a summary of questions that could improve Eco-Score computation",
+    "description": "Here is a summary of questions that could improve Green-Score computation",
     "countryLabel": "Quốc gia"
   },
   "ingredients": {

@@ -49,6 +49,10 @@
     "title": "Slike koje su označili korisnici",
     "loading": "Učitavanje"
   },
+  "image_viewer": {
+    "compressed": "Compressed",
+    "load_original": "Load original"
+  },
   "questions": {
     "category": "kategorija",
     "categories": "Kategorije",
@@ -79,6 +83,10 @@
     "last_annotations": "Posljednje napomene",
     "remaining_annotations": "Preostala pitanja",
     "annotated_annotations": "Zabilježeno",
+    "similar_questions": "Similar questions",
+    "no_similar_questions": "No similar questions",
+    "no_images": "No images available",
+    "no_additional_info": "No additional information",
     "filters": {
       "active_filter_number": "+{{count}} filteri",
       "active_filter_number_one": "+{{count}} filter",
@@ -298,7 +306,7 @@
         "text1": "Pomozite nam da završimo preostala pitanja u oznakama s najvišim prioritetom!",
         "text2": "Ove kartice su povezane s oznakama koje se koriste u izračunavanju Eko-rezultata.",
         "text3": "<strong>Šta je Eko-rezultat?</strong>",
-        "text4": "Eco-Score obuhvata ukupni ekološki otisak, što potrošačima olakšava poređenje proizvoda i odlučivanje koji je bolji za okolinu."
+        "text4": "Green-Score obuhvata ukupni ekološki otisak, što potrošačima olakšava poređenje proizvoda i odlučivanje koji je bolji za okolinu."
       },
       "page5": {
         "title": "Postavke",
@@ -379,7 +387,7 @@
     "correct": "Tačno ({{label}})"
   },
   "green-score": {
-    "description": "Evo sažetka pitanja koja bi mogla poboljšati izračunavanje Eco-Score-a",
+    "description": "Evo sažetka pitanja koja bi mogla poboljšati izračunavanje Green-Score-a",
     "countryLabel": "Država"
   },
   "ingredients": {
