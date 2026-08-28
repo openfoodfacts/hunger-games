@@ -18,7 +18,9 @@ export function SimilarQuestions({
   const { t } = useTranslation();
 
   const valueTag = filterState.valueTag || "";
-  const prefixlessTag = valueTag.includes(":") ? valueTag.substring(valueTag.indexOf(":") + 1) : null;
+  const prefixlessTag = valueTag.includes(":")
+    ? valueTag.substring(valueTag.indexOf(":") + 1)
+    : null;
 
   const { data: similars, isPending } = useQuery({
     queryKey: ["taxonomy", filterState.insightType, valueTag],

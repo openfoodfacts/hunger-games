@@ -6,10 +6,9 @@ import GlobalStyles from "@mui/material/GlobalStyles";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import logo from "../../assets/logo.png";
-import logosGame from "../../assets/home_logos.svg";
-import questionsGame from "../../assets/home_questions.svg";
-const ecoScoreGame =
-  "https://static.openfoodfacts.org/images/attributes/dist/green-score-a.svg";
+import logosGame from "../../assets/logosGame.png";
+import questionsGame from "../../assets/questionsGame.png";
+import ecoScoreGame from "../../assets/ecoScoreGame.png";
 
 import Tour from "reactour";
 import {
