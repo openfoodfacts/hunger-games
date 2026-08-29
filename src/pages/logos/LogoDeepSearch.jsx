@@ -78,6 +78,19 @@ const FailedReferecnceLogos = ({ type, value }) => {
       >
         Search
       </Button>
+      <Box sx={{ mt: 3, p: 2, bgcolor: "background.paper", borderRadius: 1, border: "1px solid", borderColor: "divider" }}>
+        <Typography variant="body2" color="text.secondary">
+          {t("logos.deep_search.taxonomy_encourage")}{" "}
+          <Link href="https://slack.openfoodfacts.org" target="_blank" rel="noreferrer">
+            {t("logos.deep_search.taxonomy_slack")}
+          </Link>{" "}
+          {t("logos.deep_search.taxonomy_and_or")}{" "}
+          <Link href="https://wiki.openfoodfacts.org/Global_taxonomies" target="_blank" rel="noreferrer">
+            {t("logos.deep_search.taxonomy_wiki")}
+          </Link>
+          {". "}{t("logos.deep_search.taxonomy_thanks")}
+        </Typography>
+      </Box>
     </Box>
   );
 };
@@ -131,7 +144,7 @@ export default function LogoSearch() {
           ];
         });
         // eslint-disable-next-line no-empty
-      } catch (error) {}
+      } catch (error) { }
     };
 
     setIsLoadingAnnotatedLogos(true);
@@ -257,12 +270,12 @@ export default function LogoSearch() {
 
       return logos.map((logo) =>
         shouldBeSet[logo.id] &&
-        logo.annotation_type === null &&
-        logo.annotation_value === null
+          logo.annotation_type === null &&
+          logo.annotation_value === null
           ? {
-              ...logo,
-              selected: newSelectedState,
-            }
+            ...logo,
+            selected: newSelectedState,
+          }
           : logo,
       );
     });
