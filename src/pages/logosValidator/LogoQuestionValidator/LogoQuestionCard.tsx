@@ -44,11 +44,13 @@ export const LogoQuestionCard = (props: LogoQuestionCardProps) => {
   const { t } = useTranslation();
   const { question, onClick, checked, imageSize, zoomOnLogo } = props;
 
-  const [croppedImageUrl, setCroppedImageUrl] = React.useState("");
+  const [fetchedCropUrl, setFetchedCropUrl] = React.useState("");
+  const croppedImageUrl = zoomOnLogo
+    ? fetchedCropUrl
+    : (question.source_image_url ?? "");
 
   React.useEffect(() => {
-    if (!zoomOnLogo && question.source_image_url) {
-      setCroppedImageUrl(question.source_image_url);
+    if (!zoomOnLogo) {
       return;
     }
 
@@ -64,7 +66,7 @@ export const LogoQuestionCard = (props: LogoQuestionCardProps) => {
       }
 
       if (bounding_box && source_image) {
-        setCroppedImageUrl(
+        setFetchedCropUrl(
           robotoff.getCroppedImageUrl(
             off.getImageUrl(source_image),
             bounding_box,
