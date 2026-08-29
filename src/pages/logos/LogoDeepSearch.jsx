@@ -112,6 +112,7 @@ export default function LogoSearch() {
   React.useEffect(() => {
     let isValid = true;
     const fetchMoreAnnotatedLogos = async () => {
+      setIsLoadingAnnotatedLogos(true);
       try {
         const { logos } = await request({
           ...searchState,
@@ -134,7 +135,6 @@ export default function LogoSearch() {
       } catch {}
     };
 
-    setIsLoadingAnnotatedLogos(true);
     fetchMoreAnnotatedLogos()
       .then(() => {
         if (isValid) {
@@ -157,6 +157,7 @@ export default function LogoSearch() {
   React.useEffect(() => {
     let isValid = true;
     const fetchLogosToAnnotate = async () => {
+      setIsLoadingToAnnotateLogos(true);
       if ((page + 1) * pageSize <= logosToAnnotate.length) {
         // We already have one page in advance
         return;
@@ -215,7 +216,6 @@ export default function LogoSearch() {
       });
     };
 
-    setIsLoadingToAnnotateLogos(true);
     fetchLogosToAnnotate()
       .then(() => {
         if (isValid) {

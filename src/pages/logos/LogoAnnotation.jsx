@@ -17,22 +17,6 @@ import BackToTop from "../../components/BackToTop";
 import useUrlParams from "../../hooks/useUrlParams";
 import AnnotateLogoModal from "../../components/AnnotateLogoModal";
 
-export const getQuestionSearchParams = (logoSearchState) => {
-  const urlParams = new URLSearchParams(window.location.search);
-
-  Object.keys(DEFAULT_LOGO_SEARCH_STATE).forEach((key) => {
-    if (urlParams.get(key) !== undefined && !logoSearchState[key]) {
-      urlParams.delete(key);
-    } else if (
-      logoSearchState[key] &&
-      urlParams.get(key) !== logoSearchState[key]
-    ) {
-      urlParams.set(key, logoSearchState[key]);
-    }
-  });
-  return urlParams.toString();
-};
-
 const DEFAULT_LOGO_SEARCH_STATE = {
   count: 50,
   logo_id: "",
@@ -122,12 +106,15 @@ export default function LogoAnnotation() {
 
   React.useEffect(() => {
     let isValid = true;
-    setLogoState({ isLoading: true, ...DEFAULT_LOGO_STATE });
-    loadLogos(
-      logoSearchParams.logo_id,
-      logoSearchParams.index,
-      logoSearchParams.count,
-    )
+    const fetchLogos = async () => {
+      setLogoState({ isLoading: true, ...DEFAULT_LOGO_STATE });
+      return loadLogos(
+        logoSearchParams.logo_id,
+        logoSearchParams.index,
+        logoSearchParams.count,
+      );
+    };
+    fetchLogos()
       .then((logoData) => {
         if (!isValid) return;
         setLogoState({

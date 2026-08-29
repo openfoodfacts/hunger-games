@@ -85,27 +85,31 @@ const useLogoFetching = (filter) => {
   const requestedProductsRef = React.useRef({});
 
   React.useEffect(() => {
-    setProductPage(1);
-    setCanLoadMore(true);
-    setFetchedProducts([]);
-    setLogos([]);
-    requestedProductsRef.current = {};
+    let isCurrent = true;
+    queueMicrotask(() => {
+      if (!isCurrent) return;
+      setProductPage(1);
+      setCanLoadMore(true);
+      setFetchedProducts([]);
+      setLogos([]);
+      requestedProductsRef.current = {};
+    });
+    return () => {
+      isCurrent = false;
+    };
   }, [filter]);
 
   React.useEffect(() => {
-    const filterStateIsIncomplet = !filter.tagtype || !filter.tag;
-    if (filterStateIsIncomplet) {
-      // Avoid fetching data if no value to filter
-      return () => {};
-    }
-
     let isValid = true;
-    setIsLoading(true);
-    setCanLoadMore(false);
-    fetchProducts({
-      page: productPage,
-      filter,
-    })
+    const loadProducts = async () => {
+      if (!filter.tagtype || !filter.tag) {
+        return { count: 0, codes: [] };
+      }
+      setIsLoading(true);
+      setCanLoadMore(false);
+      return fetchProducts({ page: productPage, filter });
+    };
+    loadProducts()
       .then(({ count, codes }) => {
         if (isValid) {
           setFetchedProducts((prev) => [...prev, ...codes]);
@@ -203,7 +207,13 @@ export default function AnnotateLogosFromProducts() {
 
   const [internalFilter, setInternalFilter] = React.useState(() => filter);
   React.useEffect(() => {
-    setInternalFilter(filter);
+    let isCurrent = true;
+    queueMicrotask(() => {
+      if (isCurrent) setInternalFilter(filter);
+    });
+    return () => {
+      isCurrent = false;
+    };
   }, [filter]);
 
   const [
