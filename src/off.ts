@@ -84,7 +84,9 @@ class OffService {
 
   getCategoriesTranslations({ categories }: { categories: string[] }) {
     const lang = getLang();
-    return axios.get(
+    return axios.get<
+      Record<string, { name?: Record<string, string | undefined> }>
+    >(
       `${OFF_API_URL_V2}/taxonomy?tagtype=categories&lc=en%2C${lang}&cc=fr&fields=name,wikidata&tags=${categories.join(
         ",",
       )}`,
