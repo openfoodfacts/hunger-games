@@ -69,37 +69,45 @@ function ColorText({
     ({ ingredients, ...ingredient }) => [ingredient, ...(ingredients || [])],
   );
 
-  let lastIndex = 0;
-
-  return [
-    ...flattendIngredients.map((ingredient, i) => {
+  const { parts, lastIndex } = flattendIngredients.reduce<{
+    parts: React.ReactNode[];
+    lastIndex: number;
+  }>(
+    (accumulator, ingredient, i) => {
       // Don't ask me why OFF use this specific character
       const ingredientText = ingredient.text.replace("‚", ",").toLowerCase();
 
-      const startIndex = text.toLowerCase().indexOf(ingredientText, lastIndex);
+      const startIndex = text
+        .toLowerCase()
+        .indexOf(ingredientText, accumulator.lastIndex);
       if (startIndex < 0) {
-        return null;
+        return accumulator;
       }
       const endIndex = startIndex + ingredient.text.length;
 
-      const prefix = text.slice(lastIndex, startIndex);
+      const prefix = text.slice(accumulator.lastIndex, startIndex);
       const ingredientName = text.slice(startIndex, endIndex);
-      lastIndex = endIndex;
 
-      return (
-        <React.Fragment key={i}>
-          <span>{prefix}</span>
+      return {
+        lastIndex: endIndex,
+        parts: [
+          ...accumulator.parts,
+          <React.Fragment key={i}>
+            <span>{prefix}</span>
 
-          <Tooltip title={getTitle(ingredient)} enterDelay={500}>
-            <span style={{ color: getColor(ingredient) }}>
-              {ingredientName}
-            </span>
-          </Tooltip>
-        </React.Fragment>
-      );
-    }),
-    text.slice(lastIndex, text.length),
-  ];
+            <Tooltip title={getTitle(ingredient)} enterDelay={500}>
+              <span style={{ color: getColor(ingredient) }}>
+                {ingredientName}
+              </span>
+            </Tooltip>
+          </React.Fragment>,
+        ],
+      };
+    },
+    { parts: [], lastIndex: 0 },
+  );
+
+  return [...parts, text.slice(lastIndex, text.length)];
 }
 
 export function useIngredientParsing() {
