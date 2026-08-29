@@ -2321,25 +2321,25 @@ const UNTYPED_LOGOS = {
   "en:haltungsform-1.79x90.png": {
     tag: "en:haltungsform-1",
     label: "haltungsform 1",
-    logo: `https://images.${OFF_DOMAIN}/images/lang/de/labels/haltungsform-1.79x90.png`,
+    logo: `https://images.${OFF_DOMAIN}/images/lang/de/labels/haltungsform-1.79x90.svg`,
     type: "label",
   },
   "en:haltungsform-2.79x90.png": {
     tag: "en:haltungsform-2",
     label: "haltungsform 2",
-    logo: `https://images.${OFF_DOMAIN}/images/lang/de/labels/haltungsform-2.79x90.png`,
+    logo: `https://images.${OFF_DOMAIN}/images/lang/de/labels/haltungsform-2.79x90.svg`,
     type: "label",
   },
   "en:haltungsform-3.79x90.png": {
     tag: "en:haltungsform-3",
     label: "haltungsform 3",
-    logo: `https://images.${OFF_DOMAIN}/images/lang/de/labels/haltungsform-3.79x90.png`,
+    logo: `https://images.${OFF_DOMAIN}/images/lang/de/labels/haltungsform-3.79x90.svg`,
     type: "label",
   },
   "en:haltungsform-4.79x90.png": {
     tag: "en:haltungsform-4",
     label: "haltungsform 4",
-    logo: `https://images.${OFF_DOMAIN}/images/lang/de/labels/haltungsform-4.79x90.png`,
+    logo: `https://images.${OFF_DOMAIN}/images/lang/de/labels/haltungsform-4.79x90.svg`,
     type: "label",
   },
   "en:für-mehr-tierschutz-1-star.206x90.png": {
