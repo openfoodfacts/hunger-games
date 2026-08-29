@@ -245,7 +245,7 @@ const robotoff = {
     page?: number;
     count?: number;
   }) {
-    return axios.get(
+    return axios.get<{ questions?: [string, number][] }>(
       `${ROBOTOFF_API_URL}/questions/unanswered/?${Object.entries(
         removeEmptyKeys({
           ...other,
