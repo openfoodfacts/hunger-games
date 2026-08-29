@@ -244,6 +244,14 @@ export default function QuestionCard({
             height="200"
             image={imageSrc || logo}
             alt=""
+            onError={(event: React.SyntheticEvent<HTMLImageElement>) => {
+              const image = event.currentTarget;
+              if (image.dataset.fallbackApplied) {
+                return;
+              }
+              image.dataset.fallbackApplied = "true";
+              image.src = logo;
+            }}
             sx={{ objectFit: "contain" }}
           />
           <CardContent>
