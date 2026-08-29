@@ -17,7 +17,7 @@ import StarBorderIcon from "@mui/icons-material/StarBorder";
 import { useTranslation } from "react-i18next";
 import { TFunction } from "i18next/typescript/t";
 
-import { SetURLSearchParams, useSearchParams } from "react-router";
+import { useSearchParams } from "react-router";
 
 import { useFavorite } from "../../components/QuestionFilter/useFavorite";
 import {
@@ -31,9 +31,18 @@ import { getFilterParams } from "../../hooks/useFilterState/getFilterParams";
 import { FilterState } from "../../robotoff";
 import { getCountryName } from "../../utils/getCountryName";
 
+type SearchParamsSetter = (
+  update: (previous: URLSearchParams) => URLSearchParams,
+) => void;
+
+const useTypedSearchParams = useSearchParams as unknown as () => [
+  URLSearchParams,
+  SearchParamsSetter,
+];
+
 const getChipsParams = (
   filterState: FilterState,
-  setSearchParams: SetURLSearchParams,
+  setSearchParams: SearchParamsSetter,
   t: TFunction<"translation", undefined>,
 ) =>
   [
@@ -129,7 +138,7 @@ export const QuestionFilter = ({ sx }: { sx?: SxProps<Theme> }) => {
   const [isOpen, setIsOpen] = React.useState(false);
 
   // Get filter state from search params
-  const [searchParams, setSearchParams] = useSearchParams();
+  const [searchParams, setSearchParams] = useTypedSearchParams();
   const filterState = React.useMemo(
     () => getFilterParams(searchParams),
     [searchParams],
