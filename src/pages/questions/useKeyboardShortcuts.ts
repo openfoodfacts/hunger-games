@@ -14,9 +14,11 @@ export const useKeyboardShortcuts = (
 
   React.useEffect(() => {
     function handleShortCut(event: KeyboardEvent) {
+      const target = event.target;
       const preventShortCut =
-        event.target instanceof HTMLElement &&
-        event.target.tagName.toUpperCase() === "INPUT";
+        target instanceof HTMLElement &&
+        (target.isContentEditable ||
+          ["INPUT", "TEXTAREA", "SELECT"].includes(target.tagName));
       if (question?.insight_id && !preventShortCut) {
         switch (event.key) {
           case shortcuts.skip:
