@@ -32,7 +32,7 @@ const LabelFilter = (props: LabelFilterProps) => {
   const [selection, setSelection] = React.useState<{
     sourceValue: string;
     value: string | TaxonomyOption | null;
-  }>({ sourceValue: value, value: null });
+  }>({ sourceValue: value, value });
   const [inputValue, setInputValue] = React.useState("");
 
   const lang = getLang();

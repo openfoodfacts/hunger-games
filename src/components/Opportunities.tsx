@@ -8,7 +8,7 @@ import CardContent from "@mui/material/CardContent";
 import Box from "@mui/material/Box";
 import Skeleton from "@mui/material/Skeleton";
 import Button from "@mui/material/Button";
-import { useInfiniteQuery, useQuery } from "@tanstack/react-query";
+import { useInfiniteQuery, useQueries } from "@tanstack/react-query";
 
 import Loader from "../pages/loader";
 
@@ -87,16 +87,41 @@ const CardSkeleton = () => (
   </React.Suspense>
 );
 
-const useCategoryTranslations = (categories: string[]) => {
-  const { data } = useQuery({
-    queryKey: ["category-translations", categories],
-    queryFn: async () => {
-      const response = await off.getCategoriesTranslations({ categories });
-      return response.data;
-    },
-    enabled: categories.length > 0,
+type Opportunity = [string, number];
+type CategoryTranslations = Record<
+  string,
+  { name?: Record<string, string | undefined> }
+>;
+
+const useCategoryTranslations = (pages: Opportunity[][]) => {
+  const lang = getLang() ?? "en";
+  const seen = new Set<string>();
+  const categoryPages = pages.map((page) =>
+    page.flatMap(([category]) => {
+      if (seen.has(category)) return [];
+      seen.add(category);
+      return category;
+    }),
+  );
+
+  return useQueries({
+    queries: categoryPages.map((categories) => ({
+      queryKey: ["category-translations", lang, categories],
+      queryFn: async () => {
+        const response = await off.getCategoriesTranslations({ categories });
+        return response.data;
+      },
+      enabled: categories.length > 0,
+    })),
+    combine: (results) =>
+      results.reduce<CategoryTranslations>(
+        (translations, result) => ({
+          ...translations,
+          ...(result.data ?? {}),
+        }),
+        {},
+      ),
   });
-  return data ?? {};
 };
 
 const Opportunities = (props: OpportunitiesProps) => {
@@ -122,11 +147,7 @@ const Opportunities = (props: OpportunitiesProps) => {
     () => data?.pages.flat() ?? [],
     [data?.pages],
   );
-  const categories = React.useMemo(
-    () => remainingQuestions.map(([value]) => value),
-    [remainingQuestions],
-  );
-  const translation = useCategoryTranslations(categories);
+  const translation = useCategoryTranslations(data?.pages ?? []);
 
   const lang = getLang() ?? "en";
   return (
