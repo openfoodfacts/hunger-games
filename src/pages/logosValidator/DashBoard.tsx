@@ -75,7 +75,7 @@ export default function VerticalTabs() {
     DASHBOARD.findIndex(({ tag }) => tag === dasboardId) || 0,
   );
 
-  const handleChange = (event: React.SyntheticEvent, newValue: number) => {
+  const handleChange = (_event: React.SyntheticEvent, newValue: number) => {
     setValue(newValue);
   };
 
@@ -115,7 +115,7 @@ export default function VerticalTabs() {
             />
           ))}
         </Tabs>
-        {DASHBOARD.map(({ tag, title }, index) => (
+        {DASHBOARD.map((_, index) => (
           <TabPanel value={value} key={index} index={index} />
         ))}
       </Box>
