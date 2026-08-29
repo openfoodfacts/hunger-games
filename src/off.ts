@@ -201,12 +201,14 @@ class OffService {
     filters = [],
     countryCode = "world",
     fields = "code",
+    signal,
   }: {
     page?: number;
     pageSize?: number;
     filters?: { [key: string]: string }[];
     countryCode?: string;
     fields?: string;
+    signal?: AbortSignal;
   }) {
     const searchParams: Record<string, string> = {
       page: page.toString(),
@@ -227,6 +229,7 @@ class OffService {
     const urlParams = new URLSearchParams(searchParams);
     return axios.get<{ products?: T[] }>(
       `${OFF_SEARCH.replace("world", countryCode)}?${urlParams.toString()}`,
+      { signal },
     );
   }
 
