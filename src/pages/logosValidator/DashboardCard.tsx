@@ -84,7 +84,13 @@ const DashboardCard = (props: LogoDefinition) => {
             height="150"
             image={logo}
             alt=""
-            sx={{ objectFit: "contain" }}
+            sx={(theme) => ({
+              objectFit: "contain",
+              ...(theme.palette.mode === "dark" && {
+                backgroundColor: theme.palette.common.white,
+                p: 1,
+              }),
+            })}
           />
           <CardContent sx={{ flexGrow: 1 }}>
             <Typography gutterBottom variant="h5" component="div">
