@@ -267,7 +267,7 @@ const InsightGrid = ({ filterState = {}, setFilterState }) => {
       columns={columns}
       rows={rows}
       disableColumnFilter
-      isLoading={insightsQuery.isFetching}
+      loading={insightsQuery.isFetching}
       page={page - 1}
       pageSize={PAGE_SIZE}
       pageSizeOptions={[PAGE_SIZE]}
