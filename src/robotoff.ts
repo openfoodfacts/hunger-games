@@ -17,6 +17,35 @@ export interface QuestionInterface {
   value_tag: string;
 }
 
+export type BoundingBox = [number, number, number, number];
+
+export interface LogoImage {
+  barcode: string;
+  image_id: string;
+  source_image: string;
+  url?: string;
+}
+
+export interface Logo {
+  id: number;
+  logo_id?: number;
+  annotation_type: string | null;
+  annotation_value: string | null;
+  annotation_value_tag?: string | null;
+  bounding_box: BoundingBox;
+  image: LogoImage;
+}
+
+interface InsightDetailResponse {
+  bounding_box?: BoundingBox;
+  source_image?: string;
+  data?: { logo_id?: string };
+}
+
+interface LogoImagesResponse {
+  logos: Logo[];
+}
+
 export type FilterState = {
   insightType?: string;
   brandFilter?: string;
@@ -63,8 +92,11 @@ const robotoff = {
     };
   },
 
-  insightDetail(insight_id: string) {
-    return robotoffClient.insightDetail(insight_id);
+  async insightDetail(insight_id: string) {
+    const result = await robotoffClient.insightDetail(insight_id);
+    return result as Omit<typeof result, "data"> & {
+      data?: InsightDetailResponse;
+    };
   },
 
   loadLogo(logoId: string) {
@@ -131,7 +163,7 @@ const robotoff = {
         count,
         campaigns,
         countries: country,
-      }) as Parameters<Robotoff["insights"]>[0],
+      }),
     );
   },
 
@@ -179,10 +211,7 @@ const robotoff = {
     return axios.get(`${ROBOTOFF_API_URL}/users/statistics/${username}`);
   },
 
-  getCroppedImageUrl(
-    imageUrl: string,
-    boundingBox: [number, number, number, number],
-  ) {
+  getCroppedImageUrl(imageUrl: string, boundingBox: BoundingBox) {
     const [y_min, x_min, y_max, x_max] = boundingBox;
 
     const params = new URLSearchParams({
@@ -200,7 +229,9 @@ const robotoff = {
     const params = new URLSearchParams();
     logoIds.forEach((id) => params.append("logo_ids", id));
 
-    return axios.get(`${ROBOTOFF_API_URL}/images/logos?${params.toString()}`);
+    return axios.get<LogoImagesResponse>(
+      `${ROBOTOFF_API_URL}/images/logos?${params.toString()}`,
+    );
   },
 
   getUnansweredValues({
@@ -214,7 +245,7 @@ const robotoff = {
     page?: number;
     count?: number;
   }) {
-    return axios.get(
+    return axios.get<{ questions?: [string, number][] }>(
       `${ROBOTOFF_API_URL}/questions/unanswered/?${Object.entries(
         removeEmptyKeys({
           ...other,

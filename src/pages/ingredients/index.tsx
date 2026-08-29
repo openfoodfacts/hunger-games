@@ -9,8 +9,6 @@ import TabContext from "@mui/lab/TabContext";
 import TabList from "@mui/lab/TabList";
 import TabPanel from "@mui/lab/TabPanel";
 import Link from "@mui/material/Link";
-import TextField from "@mui/material/TextField";
-import MenuItem from "@mui/material/MenuItem";
 import { useCountry } from "../../contexts/CountryProvider";
 import { MapInteractionCSS } from "react-map-interaction";
 
@@ -20,20 +18,25 @@ import { useTranslation } from "react-i18next";
 import useData from "./useData";
 import ImageAnnotation from "./ImageAnnotation";
 import { OFF_URL } from "../../const";
+import type { IngredientProduct } from "./useData";
 
-function ProductInterface(props) {
-  const { product, next } = props;
+type ProductInterfaceProps = { product: IngredientProduct; next: () => void };
+
+function ProductInterface({ product, next }: ProductInterfaceProps) {
   const { t } = useTranslation();
 
   const { selectedImages, product_name, code, scans_n } = product;
-  const [imageTab, setImageTab] = React.useState(selectedImages[0].countryCode);
+  const [imageTab, setImageTab] = React.useState(
+    selectedImages[0]?.countryCode ?? "",
+  );
 
-  React.useEffect(() => {
-    setImageTab(selectedImages[0].countryCode);
-  }, [selectedImages]);
-
-  const handleChange = (event: React.SyntheticEvent, newValue: string) => {
+  const handleChange = (_event: React.SyntheticEvent, newValue: string) => {
     setImageTab(newValue);
+  };
+
+  const getIngredientText = (countryCode: string) => {
+    const value = product[`ingredients_text_${countryCode}`];
+    return typeof value === "string" ? value : "";
   };
 
   return (
@@ -114,11 +117,9 @@ function ProductInterface(props) {
                       </Box>
                       <ImageAnnotation
                         fetchDataUrl={fetchDataUrl}
-                        code={code as string}
+                        code={code}
                         imageLang={countryCode}
-                        offText={
-                          product[`ingredients_text_${countryCode}`] ?? ""
-                        }
+                        offText={getIngredientText(countryCode)}
                       />
                     </Stack>
                   </TabPanel>
@@ -138,7 +139,7 @@ function ProductInterface(props) {
 export default function IngredientsPage() {
   const { t } = useTranslation();
   const [country] = useCountry();
-  const [data, removeHead, isLoading] = useData(country);
+  const { data, removeHead, isLoading, error, retry } = useData(country);
   return (
     <React.Suspense fallback={<Loader />}>
       <Stack
@@ -154,10 +155,21 @@ export default function IngredientsPage() {
       {/* <IngeredientDisplay /> */}
       {isLoading ? (
         "loading..."
+      ) : error && data.length === 0 ? (
+        <Stack alignItems="center" spacing={1}>
+          <Typography>Unable to load products: {error}</Typography>
+          <Button onClick={retry} variant="outlined">
+            Retry
+          </Button>
+        </Stack>
       ) : data && data.length === 0 ? (
         "No data"
       ) : (
-        <ProductInterface product={data[0]} next={removeHead} />
+        <ProductInterface
+          key={data[0].code}
+          product={data[0]}
+          next={removeHead}
+        />
       )}
 
       {/* <pre>{JSON.stringify(data, null, 2)}</pre> */}

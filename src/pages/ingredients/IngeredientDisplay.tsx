@@ -7,11 +7,12 @@ import LoadingButton from "@mui/lab/LoadingButton";
 import { useTheme } from "@mui/material";
 
 import { useTranslation } from "react-i18next";
+import { useMutation } from "@tanstack/react-query";
 
 import off from "../../off";
 
 type BooleanEstimation = "no" | "yes" | "maybe";
-type ParsedIngredientsType = {
+export type ParsedIngredientsType = {
   ciqual_proxy_food_code?: string;
   id: string;
   ingredients?: ParsedIngredientsType[];
@@ -69,60 +70,83 @@ function ColorText({
     ({ ingredients, ...ingredient }) => [ingredient, ...(ingredients || [])],
   );
 
-  let lastIndex = 0;
-
-  return [
-    ...flattendIngredients.map((ingredient, i) => {
+  const { parts, lastIndex } = flattendIngredients.reduce<{
+    parts: React.ReactNode[];
+    lastIndex: number;
+  }>(
+    (accumulator, ingredient, i) => {
       // Don't ask me why OFF use this specific character
       const ingredientText = ingredient.text.replace("‚", ",").toLowerCase();
 
-      const startIndex = text.toLowerCase().indexOf(ingredientText, lastIndex);
+      const startIndex = text
+        .toLowerCase()
+        .indexOf(ingredientText, accumulator.lastIndex);
       if (startIndex < 0) {
-        return null;
+        return accumulator;
       }
       const endIndex = startIndex + ingredient.text.length;
 
-      const prefix = text.slice(lastIndex, startIndex);
+      const prefix = text.slice(accumulator.lastIndex, startIndex);
       const ingredientName = text.slice(startIndex, endIndex);
-      lastIndex = endIndex;
 
-      return (
-        <React.Fragment key={i}>
-          <span>{prefix}</span>
+      return {
+        lastIndex: endIndex,
+        parts: [
+          ...accumulator.parts,
+          <React.Fragment key={i}>
+            <span>{prefix}</span>
 
-          <Tooltip title={getTitle(ingredient)} enterDelay={500}>
-            <span style={{ color: getColor(ingredient) }}>
-              {ingredientName}
-            </span>
-          </Tooltip>
-        </React.Fragment>
-      );
-    }),
-    text.slice(lastIndex, text.length),
-  ];
+            <Tooltip title={getTitle(ingredient)} enterDelay={500}>
+              <span style={{ color: getColor(ingredient) }}>
+                {ingredientName}
+              </span>
+            </Tooltip>
+          </React.Fragment>,
+        ],
+      };
+    },
+    { parts: [], lastIndex: 0 },
+  );
+
+  return [...parts, text.slice(lastIndex, text.length)];
 }
 
-export function useIngredientParsing() {
+function useIngredientParsing() {
   const [isLoading, setLoading] = React.useState(false);
-  const [parsings, setParsing] = React.useState({});
+  const [parsings, setParsing] = React.useState<
+    Record<string, ParsedIngredientsType[] | undefined>
+  >({});
 
   async function fetchIngredients(text: string, lang: string) {
     setLoading(true);
-    const parsing = await off.getIngedrientParsing({
-      text,
-      lang,
-    });
-    const ingredients = parsing.data?.product?.ingredients;
-    setParsing((prev) => ({ ...prev, [text]: ingredients }));
-    setLoading(false);
+    try {
+      const parsing = await off.getIngredientParsing<ParsedIngredientsType[]>({
+        text,
+        lang,
+      });
+      const ingredients = parsing.data?.product?.ingredients;
+      setParsing((prev) => ({ ...prev, [text]: ingredients }));
+    } catch (error: unknown) {
+      console.error(error);
+    } finally {
+      setLoading(false);
+    }
   }
 
   return { isLoading, fetchIngredients, parsings };
 }
 
-export function IngeredientDisplay(props) {
-  const { text, onChange, parsings } = props;
+type IngeredientDisplayProps = {
+  text: string;
+  onChange: React.ChangeEventHandler<HTMLTextAreaElement>;
+  parsings: Record<string, ParsedIngredientsType[] | undefined>;
+};
 
+export function IngeredientDisplay({
+  text,
+  onChange,
+  parsings,
+}: IngeredientDisplayProps) {
   const theme = useTheme();
   const isDark = theme.palette.mode === "dark";
 
@@ -225,10 +249,31 @@ export function IngeredientDisplay(props) {
   );
 }
 
-export function IngredientAnotation(props) {
+type Detection = { start: number; end: number; score: number; text: string };
+type IngredientAnotationProps = {
+  lang: string;
+  score: number | null;
+  code: string;
+  setEditedState: React.Dispatch<
+    React.SetStateAction<Record<string, Detection>>
+  >;
+  text: string;
+  detectedText: string;
+};
+
+export function IngredientAnotation({
+  lang,
+  score,
+  code,
+  setEditedState,
+  text,
+  detectedText,
+}: IngredientAnotationProps) {
   const { t } = useTranslation();
-  const { lang, score, code, setEditedState, text, detectedText } = props;
   const { isLoading, fetchIngredients, parsings } = useIngredientParsing();
+  const saveIngredient = useMutation({
+    mutationFn: () => off.setIngedrient({ code, lang, text }),
+  });
 
   return (
     <Stack direction="column" sx={{ mt: 2 }}>
@@ -276,7 +321,7 @@ export function IngredientAnotation(props) {
           {t("ingredients.revert")}
         </Button>
         <LoadingButton
-          onClick={() => fetchIngredients(text, lang)}
+          onClick={() => void fetchIngredients(text, lang)}
           fullWidth
           loading={isLoading}
           disabled={!text}
@@ -284,16 +329,22 @@ export function IngredientAnotation(props) {
         >
           {t("ingredients.parsing")}
         </LoadingButton>
-        <Button
-          onClick={() => off.setIngedrient({ code, lang, text })}
+        <LoadingButton
+          onClick={() => saveIngredient.mutate()}
           variant="contained"
           disabled={!text}
+          loading={saveIngredient.isPending}
           color="success"
           fullWidth
         >
           {t("ingredients.send")}
-        </Button>
+        </LoadingButton>
       </Stack>
+      {saveIngredient.error && (
+        <Typography color="error">
+          Unable to save ingredients: {saveIngredient.error.message}
+        </Typography>
+      )}
     </Stack>
   );
 }

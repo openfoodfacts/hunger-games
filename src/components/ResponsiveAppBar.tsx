@@ -116,10 +116,6 @@ const MultiPagesButton = ({
   const { t } = useTranslation();
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
 
-  React.useEffect(() => {
-    if (!isOpen) setAnchorEl(null);
-  }, [isOpen]);
-
   const handleOpen = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorEl(event.currentTarget);
     if (!isOpen) toggleIsOpen();
@@ -153,7 +149,10 @@ const MultiPagesButton = ({
             onClick={handleClose}
             {...(isExternalUrl(subPage.url)
               ? { component: "a", target: "_blank", href: subPage.url }
-              : { component: Link, to: `/${subPage.url}` })}
+              : {
+                  component: Link as React.ElementType,
+                  to: `/${subPage.url}`,
+                })}
           >
             <Typography textAlign="center">
               {t(subPage.translationKey)}
@@ -196,11 +195,7 @@ const ResponsiveAppBar = () => {
     url?: string;
   }) => {
     if (page.devModeOnly) {
-      return (
-        isDevMode &&
-        !!page.url &&
-        visiblePages[page.url as keyof typeof visiblePages]
-      );
+      return isDevMode && !!page.url && visiblePages[page.url];
     }
     if (page.mobileOnly) {
       return !isDesktop;
@@ -279,11 +274,15 @@ const ResponsiveAppBar = () => {
                   if (page.url) {
                     return (
                       <MenuItem
+                        key={page.translationKey}
                         color="inherit"
                         sx={{ display: "block" }}
                         {...(isExternalUrl(page.url)
                           ? { component: "a", target: "_blank", href: page.url }
-                          : { component: Link, to: `/${page.url}` })}
+                          : {
+                              component: Link as React.ElementType,
+                              to: `/${page.url}`,
+                            })}
                       >
                         <Typography textAlign="left">
                           {t(page.translationKey)}
@@ -328,7 +327,7 @@ const ResponsiveAppBar = () => {
                                 sx={{ pl: 4 }}
                                 key={subPage.translationKey}
                                 onClick={handleCloseNavMenu}
-                                component={Link}
+                                component={Link as React.ElementType}
                                 to={`/${subPage.url}`}
                               >
                                 <Typography textAlign="center">
@@ -364,7 +363,7 @@ const ResponsiveAppBar = () => {
             <Typography
               variant="h5"
               noWrap
-              component={Link}
+              component={Link as React.ElementType}
               to="/"
               sx={{
                 flexGrow: 0,
@@ -382,12 +381,14 @@ const ResponsiveAppBar = () => {
               <AccountCircleIcon color="success" />
             ) : (
               <IconButton
-                onClick={async () => {
-                  const isLoggedIn = await refresh();
-                  if (!isLoggedIn) {
-                    window.open(`${OFF_URL}/cgi/login.pl`, "_blank")?.focus();
-                  }
-                }}
+                onClick={() =>
+                  void (async () => {
+                    const isLoggedIn = await refresh();
+                    if (!isLoggedIn) {
+                      window.open(`${OFF_URL}/cgi/login.pl`, "_blank")?.focus();
+                    }
+                  })()
+                }
               >
                 <AccountCircleIcon color="error" />
               </IconButton>
@@ -425,7 +426,7 @@ const ResponsiveAppBar = () => {
               </MuiLink>
               <Typography
                 variant="h6"
-                component={Link}
+                component={Link as React.ElementType}
                 to="/"
                 sx={{
                   mr: 2,
@@ -460,7 +461,7 @@ const ResponsiveAppBar = () => {
                       key={page.url}
                       onClick={handleCloseNavMenu}
                       sx={{ my: 2, display: "block" }}
-                      component={Link}
+                      component={Link as React.ElementType}
                       to={`/${page.url}`}
                       data-welcome-tour={page.url}
                     >
@@ -474,7 +475,6 @@ const ResponsiveAppBar = () => {
                   return (
                     <MultiPagesButton
                       {...page}
-                      children={children}
                       key={page.translationKey}
                       isExternalUrl={isExternalUrl}
                       isOpen={!!menuOpenState[`Desktop-${page.translationKey}`]}
@@ -485,7 +485,9 @@ const ResponsiveAppBar = () => {
                             !prev[`Desktop-${page.translationKey}`],
                         }))
                       }
-                    />
+                    >
+                      {children}
+                    </MultiPagesButton>
                   );
                 }
 
@@ -529,7 +531,7 @@ const ResponsiveAppBar = () => {
                 color="inherit"
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2 }}
-                component={Link}
+                component={Link as React.ElementType}
                 to={`/settings`}
                 data-welcome-tour="settings"
               >
@@ -555,14 +557,16 @@ const ResponsiveAppBar = () => {
                   <AccountCircleIcon color="success" />
                 ) : (
                   <IconButton
-                    onClick={async () => {
-                      const isLoggedIn = await refresh();
-                      if (!isLoggedIn) {
-                        window
-                          .open(`${OFF_URL}/cgi/login.pl`, "_blank")
-                          ?.focus();
-                      }
-                    }}
+                    onClick={() =>
+                      void (async () => {
+                        const isLoggedIn = await refresh();
+                        if (!isLoggedIn) {
+                          window
+                            .open(`${OFF_URL}/cgi/login.pl`, "_blank")
+                            ?.focus();
+                        }
+                      })()
+                    }
                   >
                     <AccountCircleIcon color="error" />
                   </IconButton>
