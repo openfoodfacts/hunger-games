@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import robotoff from "../robotoff";
+import robotoff, { BoundingBox } from "../robotoff";
 import off from "../off";
 
 const fetchData = async (insightId: string) => {
@@ -25,7 +25,7 @@ const fetchData = async (insightId: string) => {
 const getCroppedLogoUrl = (
   debugResponse: null | {
     source_image?: string;
-    bounding_box?: number[];
+    bounding_box?: BoundingBox;
   },
 ) => {
   if (!debugResponse) {
@@ -41,14 +41,16 @@ const getCroppedLogoUrl = (
   return robotoff.getCroppedImageUrl(sourceImage, bounding_box);
 };
 
-const CroppedLogo = (props) => {
-  const { insightId, ...other } = props;
-  const [logoUrl, setLogoUrl] = React.useState(null);
+type CroppedLogoProps = Omit<React.ComponentPropsWithoutRef<"img">, "src"> & {
+  insightId: string;
+};
+
+const CroppedLogoImage = ({ insightId, ...other }: CroppedLogoProps) => {
+  const [logoUrl, setLogoUrl] = React.useState<string | null>(null);
   const [loading, setLoading] = React.useState(true);
 
   React.useEffect(() => {
     let isValid = true;
-    setLoading(true);
 
     fetchData(insightId)
       .then(getCroppedLogoUrl)
@@ -59,7 +61,9 @@ const CroppedLogo = (props) => {
       })
       .catch(() => {})
       .finally(() => {
-        setLoading(false);
+        if (isValid) {
+          setLoading(false);
+        }
       });
 
     return () => {
@@ -72,5 +76,9 @@ const CroppedLogo = (props) => {
   }
   return <img alt="logo used in prediction" src={logoUrl} {...other} />;
 };
+
+const CroppedLogo = (props: CroppedLogoProps) => (
+  <CroppedLogoImage key={props.insightId} {...props} />
+);
 
 export default CroppedLogo;

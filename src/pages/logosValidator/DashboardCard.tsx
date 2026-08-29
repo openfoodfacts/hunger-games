@@ -43,6 +43,11 @@ const DashboardCard = (props: LogoDefinition) => {
         if (isValid) {
           setQuestionNumber(data?.count ?? 0);
         }
+      })
+      .catch(() => {
+        if (isValid) {
+          setQuestionNumber(0);
+        }
       });
     return () => {
       isValid = false;
@@ -104,7 +109,7 @@ const DashboardCard = (props: LogoDefinition) => {
             <Button
               variant="outlined"
               size="small"
-              component={Link}
+              component={Link as React.ElementType}
               to={questionsUrl}
             >
               Questions
@@ -113,7 +118,7 @@ const DashboardCard = (props: LogoDefinition) => {
             {/* <Button
               variant="outlined"
               size="small"
-              component={Link}
+              component={Link as React.ElementType}
               to={logoQuestionsUrl}
             >
               Annotation
@@ -122,7 +127,7 @@ const DashboardCard = (props: LogoDefinition) => {
             <Button
               variant="outlined"
               size="small"
-              component={Link}
+              component={Link as React.ElementType}
               to={logoAnnotationUrl}
             >
               Search
