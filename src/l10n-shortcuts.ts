@@ -6,11 +6,6 @@ type Shortcuts = {
   skip: string;
 };
 
-type ShortcutLocalization = {
-  en: Shortcuts;
-  [locale: string]: Partial<Shortcuts>;
-};
-
 const SHORTCUT_LOCALISATION = {
   en: {
     yes: "y",

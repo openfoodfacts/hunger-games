@@ -78,7 +78,7 @@ export function useFilterSearch() {
       if (isSaved) {
         localFavorites.removeQuestion(exposedParameters);
       } else {
-        localFavorites.addQuestion(exposedParameters, logo, title);
+        localFavorites.addQuestion(exposedParameters, imageSrc, title);
       }
 
       setIsFavorite(!isSaved);

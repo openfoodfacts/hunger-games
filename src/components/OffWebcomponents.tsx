@@ -1,4 +1,3 @@
-import * as React from "react";
 import { OFF_IMAGE_URL, OFF_URL, ROBOTOFF_API_URL } from "../const";
 import { useTranslation } from "react-i18next";
 import "@openfoodfacts/openfoodfacts-webcomponents";
