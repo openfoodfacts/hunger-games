@@ -18,20 +18,25 @@ import { useTranslation } from "react-i18next";
 import useData from "./useData";
 import ImageAnnotation from "./ImageAnnotation";
 import { OFF_URL } from "../../const";
+import type { IngredientProduct } from "./useData";
 
-function ProductInterface(props) {
-  const { product, next } = props;
+type ProductInterfaceProps = { product: IngredientProduct; next: () => void };
+
+function ProductInterface({ product, next }: ProductInterfaceProps) {
   const { t } = useTranslation();
 
   const { selectedImages, product_name, code, scans_n } = product;
-  const [imageTab, setImageTab] = React.useState(selectedImages[0].countryCode);
-
-  React.useEffect(() => {
-    setImageTab(selectedImages[0].countryCode);
-  }, [selectedImages]);
+  const [imageTab, setImageTab] = React.useState(
+    selectedImages[0]?.countryCode ?? "",
+  );
 
   const handleChange = (_event: React.SyntheticEvent, newValue: string) => {
     setImageTab(newValue);
+  };
+
+  const getIngredientText = (countryCode: string) => {
+    const value = product[`ingredients_text_${countryCode}`];
+    return typeof value === "string" ? value : "";
   };
 
   return (
@@ -112,11 +117,9 @@ function ProductInterface(props) {
                       </Box>
                       <ImageAnnotation
                         fetchDataUrl={fetchDataUrl}
-                        code={code as string}
+                        code={code}
                         imageLang={countryCode}
-                        offText={
-                          product[`ingredients_text_${countryCode}`] ?? ""
-                        }
+                        offText={getIngredientText(countryCode)}
                       />
                     </Stack>
                   </TabPanel>
@@ -155,7 +158,11 @@ export default function IngredientsPage() {
       ) : data && data.length === 0 ? (
         "No data"
       ) : (
-        <ProductInterface product={data[0]} next={removeHead} />
+        <ProductInterface
+          key={data[0].code}
+          product={data[0]}
+          next={removeHead}
+        />
       )}
 
       {/* <pre>{JSON.stringify(data, null, 2)}</pre> */}
