@@ -3,6 +3,7 @@ import * as React from "react";
 import axios from "axios";
 import { useTranslation } from "react-i18next";
 import Box from "@mui/material/Box";
+import Alert from "@mui/material/Alert";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 import DeleteOutlineIcon from "@mui/icons-material/DeleteOutline";
@@ -28,6 +29,7 @@ const getImageUrl = (code: string, imgid: number) =>
 export default function FlaggedImages() {
   const { t } = useTranslation();
   const [data, setData] = React.useState<FlaggedImage[] | null>(null);
+  const [deleteError, setDeleteError] = React.useState(false);
 
   React.useEffect(() => {
     axios
@@ -46,6 +48,13 @@ export default function FlaggedImages() {
       <Box>
         <Box sx={{ padding: 2 }}>
           <Typography>{t("flagged_images.title")}</Typography>
+          {deleteError && (
+            <Alert severity="error">
+              {t("flagged_images.delete_error", {
+                defaultValue: "Could not delete the flagged image. Try again.",
+              })}
+            </Alert>
+          )}
           <table>
             {data.map(({ code, imgid }) => (
               <tr key={`${code}-${imgid}`}>
@@ -68,6 +77,7 @@ export default function FlaggedImages() {
                 <td>
                   <IconButton
                     onClick={() => {
+                      setDeleteError(false);
                       axios
                         .delete(flagImageUrl + code, {
                           data: {
@@ -82,7 +92,7 @@ export default function FlaggedImages() {
                             ),
                           );
                         })
-                        .catch(() => {});
+                        .catch(() => setDeleteError(true));
                     }}
                   >
                     <DeleteOutlineIcon

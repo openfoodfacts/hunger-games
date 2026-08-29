@@ -21,6 +21,7 @@ interface CountryOption {
 
 const useTypedSearchParams = useSearchParams as unknown as () => [
   URLSearchParams,
+  unknown,
 ];
 
 // Returns true if countryCode is a "valid" country code, i.e. not empty and not "world"

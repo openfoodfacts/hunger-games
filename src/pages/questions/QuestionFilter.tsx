@@ -40,6 +40,17 @@ const useTypedSearchParams = useSearchParams as unknown as () => [
   SearchParamsSetter,
 ];
 
+const updateSearchParams = (
+  setSearchParams: SearchParamsSetter,
+  update: (searchParams: URLSearchParams) => void,
+) => {
+  setSearchParams((previous) => {
+    const next = new URLSearchParams(previous);
+    update(next);
+    return next;
+  });
+};
+
 const getChipsParams = (
   filterState: FilterState,
   setSearchParams: SearchParamsSetter,
@@ -53,10 +64,7 @@ const getChipsParams = (
         "questions.filters.short_label.value",
       )}: ${filterState?.valueTag}`,
       onDelete: () => {
-        setSearchParams((prev) => {
-          prev.delete("value_tag");
-          return prev;
-        });
+        updateSearchParams(setSearchParams, (next) => next.delete("value_tag"));
       },
     },
 
@@ -71,10 +79,7 @@ const getChipsParams = (
         filterState.country,
       )}`,
       onDelete: () => {
-        setSearchParams((prev) => {
-          prev.delete("country");
-          return prev;
-        });
+        updateSearchParams(setSearchParams, (next) => next.delete("country"));
       },
     },
 
@@ -85,10 +90,7 @@ const getChipsParams = (
         "questions.filters.short_label.brand",
       )}: ${filterState.brand}`,
       onDelete: () => {
-        setSearchParams((prev) => {
-          prev.delete("brand");
-          return prev;
-        });
+        updateSearchParams(setSearchParams, (next) => next.delete("brand"));
       },
     },
     {
@@ -96,10 +98,9 @@ const getChipsParams = (
       display: !!filterState.sorted && filterState.sorted !== "false",
       label: t("questions.filters.short_label.popularity"),
       onDelete: () => {
-        setSearchParams((prev) => {
-          prev.set("sorted", "false");
-          return prev;
-        });
+        updateSearchParams(setSearchParams, (next) =>
+          next.set("sorted", "false"),
+        );
       },
     },
     {
@@ -110,10 +111,7 @@ const getChipsParams = (
         "questions.filters.short_label.campaign",
       )}: ${filterState.campaign}`,
       onDelete: () => {
-        setSearchParams((prev) => {
-          prev.delete("campaign");
-          return prev;
-        });
+        updateSearchParams(setSearchParams, (next) => next.delete("campaign"));
       },
     },
     {
@@ -123,10 +121,7 @@ const getChipsParams = (
         "questions.filters.short_label.predictor",
       )}: ${filterState.predictor}`,
       onDelete: () => {
-        setSearchParams((prev) => {
-          prev.delete("predictor");
-          return prev;
-        });
+        updateSearchParams(setSearchParams, (next) => next.delete("predictor"));
       },
     },
   ].filter((item) => item.display);
@@ -160,10 +155,9 @@ export const QuestionFilter = ({ sx }: { sx?: SxProps<Theme> }) => {
           sx={{ width: { xs: "130px", md: 150 } }}
           value={filterState.insightType}
           onChange={(event) =>
-            setSearchParams((prev) => {
-              prev.set("type", event.target.value);
-              return prev;
-            })
+            updateSearchParams(setSearchParams, (next) =>
+              next.set("type", event.target.value),
+            )
           }
           label={t(`questions.insightTypeLabel`)}
         >
