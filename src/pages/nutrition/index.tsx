@@ -50,7 +50,7 @@ export default function Nutrition() {
         <Box sx={{ mb: 2, px: 2 }}>
           <Autocomplete<CountryOption>
             value={selectedCountry}
-            onChange={(event, newValue) => {
+            onChange={(_event, newValue) => {
               setCountry(newValue?.countryCode || "", "page");
             }}
             options={countries}

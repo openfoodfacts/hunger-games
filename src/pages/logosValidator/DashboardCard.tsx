@@ -43,6 +43,9 @@ const DashboardCard = (props: LogoDefinition) => {
         if (isValid) {
           setQuestionNumber(data?.count ?? 0);
         }
+      })
+      .catch(() => {
+        // Keep the unknown state distinct from a successful zero count.
       });
     return () => {
       isValid = false;
@@ -84,7 +87,13 @@ const DashboardCard = (props: LogoDefinition) => {
             height="150"
             image={logo}
             alt=""
-            sx={{ objectFit: "contain" }}
+            sx={(theme) => ({
+              objectFit: "contain",
+              ...(theme.palette.mode === "dark" && {
+                backgroundColor: theme.palette.common.white,
+                p: 1,
+              }),
+            })}
           />
           <CardContent sx={{ flexGrow: 1 }}>
             <Typography gutterBottom variant="h5" component="div">
@@ -98,7 +107,7 @@ const DashboardCard = (props: LogoDefinition) => {
             <Button
               variant="outlined"
               size="small"
-              component={Link}
+              component={Link as React.ElementType}
               to={questionsUrl}
             >
               Questions
@@ -107,7 +116,7 @@ const DashboardCard = (props: LogoDefinition) => {
             {/* <Button
               variant="outlined"
               size="small"
-              component={Link}
+              component={Link as React.ElementType}
               to={logoQuestionsUrl}
             >
               Annotation
@@ -116,7 +125,7 @@ const DashboardCard = (props: LogoDefinition) => {
             <Button
               variant="outlined"
               size="small"
-              component={Link}
+              component={Link as React.ElementType}
               to={logoAnnotationUrl}
             >
               Search
