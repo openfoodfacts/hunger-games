@@ -195,7 +195,7 @@ class OffService {
       }`;
   }
 
-  searchProducts({
+  searchProducts<T = unknown>({
     page = 1,
     pageSize = 25,
     filters = [],
@@ -225,7 +225,7 @@ class OffService {
     });
 
     const urlParams = new URLSearchParams(searchParams);
-    return axios.get(
+    return axios.get<{ products?: T[] }>(
       `${OFF_SEARCH.replace("world", countryCode)}?${urlParams.toString()}`,
     );
   }
@@ -244,15 +244,21 @@ class OffService {
     });
   }
 
-  async getIngedrientParsing(editionParams: { text: string; lang: string }) {
+  getIngedrientParsing<T = unknown>(editionParams: {
+    text: string;
+    lang: string;
+  }) {
     const { lang, text } = editionParams;
 
-    return await axios.patch(`${OFF_API_URL_V3}/product/test`, {
-      fields: "ingredients",
-      lc: lang,
-      tags_lc: lang,
-      product: { lang, [`ingredients_text_${lang}`]: text },
-    });
+    return axios.patch<{ product?: { ingredients?: T } }>(
+      `${OFF_API_URL_V3}/product/test`,
+      {
+        fields: "ingredients",
+        lc: lang,
+        tags_lc: lang,
+        product: { lang, [`ingredients_text_${lang}`]: text },
+      },
+    );
   }
 }
 
