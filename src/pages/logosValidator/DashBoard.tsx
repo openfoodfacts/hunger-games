@@ -66,13 +66,14 @@ function a11yProps(index: number) {
 }
 
 export default function VerticalTabs() {
-  const dasboardId = window.location.pathname.split("/").at(-1);
+  const dasboardId = window.location.pathname.split("/").filter(Boolean).at(-1);
 
   const theme = useTheme();
   const isDesktop = useMediaQuery(theme.breakpoints.up("md"));
 
+  const dashboardIndex = DASHBOARD.findIndex(({ tag }) => tag === dasboardId);
   const [value, setValue] = React.useState(
-    DASHBOARD.findIndex(({ tag }) => tag === dasboardId) || 0,
+    dashboardIndex >= 0 ? dashboardIndex : 0,
   );
 
   const handleChange = (_event: React.SyntheticEvent, newValue: number) => {
