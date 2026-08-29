@@ -7,6 +7,7 @@ import LoadingButton from "@mui/lab/LoadingButton";
 import { useTheme } from "@mui/material";
 
 import { useTranslation } from "react-i18next";
+import { useMutation } from "@tanstack/react-query";
 
 import off from "../../off";
 
@@ -270,6 +271,9 @@ export function IngredientAnotation({
 }: IngredientAnotationProps) {
   const { t } = useTranslation();
   const { isLoading, fetchIngredients, parsings } = useIngredientParsing();
+  const saveIngredient = useMutation({
+    mutationFn: () => off.setIngedrient({ code, lang, text }),
+  });
 
   return (
     <Stack direction="column" sx={{ mt: 2 }}>
@@ -325,16 +329,22 @@ export function IngredientAnotation({
         >
           {t("ingredients.parsing")}
         </LoadingButton>
-        <Button
-          onClick={() => void off.setIngedrient({ code, lang, text })}
+        <LoadingButton
+          onClick={() => saveIngredient.mutate()}
           variant="contained"
           disabled={!text}
+          loading={saveIngredient.isPending}
           color="success"
           fullWidth
         >
           {t("ingredients.send")}
-        </Button>
+        </LoadingButton>
       </Stack>
+      {saveIngredient.error && (
+        <Typography color="error">
+          Unable to save ingredients: {saveIngredient.error.message}
+        </Typography>
+      )}
     </Stack>
   );
 }
