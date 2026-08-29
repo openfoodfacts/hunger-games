@@ -68,16 +68,21 @@ export default function FlaggedImages() {
                 <td>
                   <IconButton
                     onClick={() => {
-                      axios.delete(flagImageUrl + code, {
-                        data: {
-                          imgid,
-                        },
-                      });
-                      setData((prev) =>
-                        prev.filter(
-                          (line) => line.code !== code || line.imgid !== imgid,
-                        ),
-                      );
+                      axios
+                        .delete(flagImageUrl + code, {
+                          data: {
+                            imgid,
+                          },
+                        })
+                        .then(() => {
+                          setData((prev) =>
+                            prev.filter(
+                              (line) =>
+                                line.code !== code || line.imgid !== imgid,
+                            ),
+                          );
+                        })
+                        .catch(() => {});
                     }}
                   >
                     <DeleteOutlineIcon
