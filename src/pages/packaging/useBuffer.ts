@@ -38,10 +38,19 @@ type SearchResponse = {
 
 type BufferState = {
   data: ProductDescription[] | null;
+  error: string | null;
   maxPage: number;
   page: number;
+  requestId: number;
   searchKey: string;
 };
+
+type BufferResult = [
+  ProductDescription[] | null,
+  () => void,
+  string | null,
+  () => void,
+];
 
 function getProductsToAnnotateUrl({
   page = 1,
@@ -74,23 +83,39 @@ export const useBuffer = ({
   country,
   creator,
   code,
-}: Omit<Parameters, "page">): [ProductDescription[] | null, () => void] => {
+}: Omit<Parameters, "page">): BufferResult => {
   const searchKey = `${country ?? ""}:${creator ?? ""}:${code ?? ""}`;
   const [state, setState] = React.useState<BufferState>(() => ({
     data: null,
+    error: null,
     maxPage: 100,
     page: Math.ceil(Math.random() * 100),
+    requestId: 0,
     searchKey,
   }));
 
   if (state.searchKey !== searchKey) {
-    setState({ data: null, maxPage: 100, page: 1, searchKey });
+    setState({
+      data: null,
+      error: null,
+      maxPage: 100,
+      page: 1,
+      requestId: 0,
+      searchKey,
+    });
   }
 
   const activeState =
     state.searchKey === searchKey
       ? state
-      : { data: null, maxPage: 100, page: 1, searchKey };
+      : {
+          data: null,
+          error: null,
+          maxPage: 100,
+          page: 1,
+          requestId: 0,
+          searchKey,
+        };
   const url = getProductsToAnnotateUrl({
     page: activeState.page,
     country,
@@ -109,15 +134,29 @@ export const useBuffer = ({
         const products = data.products ?? (data.product ? [data.product] : []);
         const pageSize = data.page_size ?? 1;
         const maxPage = Math.max(1, Math.ceil((data.count ?? 0) / pageSize));
-        setState((previous) => ({ ...previous, data: products, maxPage }));
+        setState((previous) => ({
+          ...previous,
+          data: products,
+          error: null,
+          maxPage,
+        }));
       })
       .catch((error: unknown) => {
         console.error(error);
+        if (isValid) {
+          setState((previous) => ({
+            ...previous,
+            error:
+              error instanceof Error
+                ? error.message
+                : "The product request failed.",
+          }));
+        }
       });
     return () => {
       isValid = false;
     };
-  }, [url]);
+  }, [url, activeState.requestId]);
 
   const next = () => {
     setState((previous) => {
@@ -127,10 +166,20 @@ export const useBuffer = ({
       return {
         ...previous,
         data: null,
+        error: null,
         page: Math.min(previous.maxPage, previous.page + 1),
       };
     });
   };
 
-  return [activeState.data, next];
+  const retry = () => {
+    setState((previous) => ({
+      ...previous,
+      data: null,
+      error: null,
+      requestId: previous.requestId + 1,
+    }));
+  };
+
+  return [activeState.data, next, activeState.error, retry];
 };

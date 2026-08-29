@@ -270,12 +270,23 @@ const Page = () => {
         : "",
   };
 
-  const [data, next] = useBuffer({
+  const [data, next, error, retry] = useBuffer({
     ...searchState,
     country: countryId,
   });
 
   const product = data?.[0] ?? null;
+  if (error !== null) {
+    return (
+      <Stack spacing={2} alignItems="flex-start">
+        <Typography color="error">Unable to load a product: {error}</Typography>
+        <Button variant="contained" onClick={retry}>
+          Retry
+        </Button>
+      </Stack>
+    );
+  }
+
   if (product === null) {
     return <p>Loading...</p>;
   }
