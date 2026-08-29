@@ -119,7 +119,7 @@ function useIngredientParsing() {
   async function fetchIngredients(text: string, lang: string) {
     setLoading(true);
     try {
-      const parsing = await off.getIngedrientParsing<ParsedIngredientsType[]>({
+      const parsing = await off.getIngredientParsing<ParsedIngredientsType[]>({
         text,
         lang,
       });
