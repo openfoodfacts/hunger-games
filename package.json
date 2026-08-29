@@ -40,6 +40,7 @@
     "eslint-plugin-react-hooks": "^7.1.1",
     "eslint-plugin-react-refresh": "^0.5.3",
     "globals": "^17.8.0",
+    "happy-dom": "^20.12.0",
     "husky": "^9.1.7",
     "i18next-resources-to-backend": "^1.2.3",
     "knip": "^6.31.0",
@@ -48,7 +49,8 @@
     "typescript": "^6.0.3",
     "typescript-eslint": "^8.65.0",
     "vite": "^8.2.2",
-    "vite-plugin-static-copy": "^4.1.1"
+    "vite-plugin-static-copy": "^4.1.1",
+    "vitest": "^4.1.11"
   },
   "scripts": {
     "dev": "vite",
@@ -57,7 +59,8 @@
     "prettier": "prettier --write .",
     "countries": "node update-countries.js",
     "nutriments": "node update-nutriments.js",
-    "test": "react-scripts test",
+    "test": "vitest run",
+    "test:watch": "vitest",
     "deploy": "bash deploy.sh",
     "lint": "prettier --check . && eslint .",
     "prepare": "husky",
