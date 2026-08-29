@@ -12,8 +12,8 @@
           "description": "Vind alle logo's die overeenkomen met het gegeven logo"
         },
         "green_score": {
-          "title": "Eco-Score",
-          "description": "Vragen"
+          "title": "Green-Score",
+          "description": "Label de vragen met de hoogste waarde"
         }
       }
     },
@@ -49,6 +49,10 @@
     "title": "Afbeeldingen gemarkeerd door gebruikers",
     "loading": "Aan het laden"
   },
+  "image_viewer": {
+    "compressed": "Compressed",
+    "load_original": "Load original"
+  },
   "questions": {
     "category": "categorie",
     "categories": "Categorieën",
@@ -79,6 +83,10 @@
     "last_annotations": "Laatste aantekeningen",
     "remaining_annotations": "Resterende vragen",
     "annotated_annotations": "Geannoteerd",
+    "similar_questions": "Similar questions",
+    "no_similar_questions": "No similar questions",
+    "no_images": "No images available",
+    "no_additional_info": "No additional information",
     "filters": {
       "active_filter_number": "+{{count}} filters",
       "active_filter_number_one": "+{{count}} filter",
@@ -111,9 +119,9 @@
       "predictor": {
         "ridge_model_ml": "Ridge Model ML",
         "neural": "Neuraal",
-        "matcher": "Matcher",
+        "matcher": "",
         "google_cloud_vision": "Google Cloud Vision",
-        "regex": "Reguliere expressie",
+        "regex": "Regex",
         "flashtext": "FlashText",
         "nutriscore": "Nutriscore",
         "universal_logo_detector": "Universele logo-detector",
@@ -155,7 +163,9 @@
     "dashboard": "Logo's-dashboard",
     "tour": "Toon rondleiding",
     "logged_in_user": "Ingelogd als {{userName}}",
-    "log_in": "Klik om in te loggen"
+    "log_in": "Klik om in te loggen",
+    "moderation": "Moderatie",
+    "ingredients": "Ingrediënten"
   },
   "insights": {
     "insights": "Inzichten",
@@ -292,11 +302,11 @@
         "text2": "Zoals in het voorbeeld wordt getoond, typt u, zodra u alle vergelijkbare logo's hebt geselecteerd, hun waarde en selecteert u of het een merk, een label of iets anders is. Het is zo simpel!"
       },
       "page4": {
-        "title": "Eco-Score Vragen Spel",
+        "title": "Green-Score Vragen Spel",
         "text1": "Help ons de resterende vragen met de hoogste prioriteit af te ronden!",
-        "text2": "Deze kaarten zijn gekoppeld aan labels die gebruikt worden bij de berekening van de eco-score.",
-        "text3": "<strong>Wat is de Eco-score?</strong>",
-        "text4": "Eco-Score legt de totale ecologische voetafdruk vast, waardoor het voor consumenten gemakkelijker wordt om producten te vergelijken en te beslissen welke beter is voor het milieu."
+        "text2": "Deze kaarten zijn gekoppeld aan labels die gebruikt worden bij de berekening van de Green-score.",
+        "text3": "<strong>Wat is de Green-score?</strong>",
+        "text4": "Green-Score legt de totale ecologische voetafdruk vast, waardoor het voor consumenten gemakkelijker wordt om producten te vergelijken en te beslissen welke beter is voor het milieu."
       },
       "page5": {
         "title": "Instellingen",
@@ -351,7 +361,6 @@
       "open_button": "Open instructies",
       "title": "Hoe de interface te gebruiken",
       "chose_between_empty_and_partially_filled": "U kunt kiezen tussen producten waarvoor OpenFoodFacts (OFF) geen gegevens heeft over de voedingsstoffen. Of producten met een gedeeltelijk gevulde voedingstabel.",
-      "picture_date_is_display": "De datum van de foto wordt erboven getoond. Zo kunt u controleren of het een recente foto is.",
       "indicate_not_provided_value": "Lege invoer wordt genegeerd. Als er geen vezels in de tabel aangegeven worden, kunt u \"-\" gebruiken om aan te geven dat de waarde niet gespecifieerd wordt.",
       "validate_one_column": "Kies de grootte die op de afbeelding wordt weergegeven. Als u 100g en een portiegrootte heeft, kies dan 100g, omdat dit een genormaliseerd formaat is.",
       "skip_button": "Als je niet weet hoe je met een afbeelding om moet gaan, of je wilt deze gewoon niet doen, druk dan op “skip”. Een andere gebruiker kan het dan afhandelen.",
@@ -378,7 +387,7 @@
     "correct": "Juist ({{label}})"
   },
   "green-score": {
-    "description": "Hier is een samenvatting van vragen die de Ecoscore berekening kunnen verbeteren",
+    "description": "Hier is een samenvatting van vragen die de Green-Score berekening kunnen verbeteren",
     "countryLabel": "Land"
   },
   "ingredients": {

@@ -12,8 +12,8 @@
           "description": "Znajdź wszystkie loga pasujące do danego logo"
         },
         "green_score": {
-          "title": "Eco-score",
-          "description": "Annotate the questions with the highest value"
+          "title": "Green-Score",
+          "description": "Adnotuj pytania o największej wartości"
         }
       }
     },
@@ -49,6 +49,10 @@
     "title": "Zdjęcia oznaczone przez użytkowników",
     "loading": "Ładowanie"
   },
+  "image_viewer": {
+    "compressed": "Skompresowano",
+    "load_original": "Załaduj oryginał"
+  },
   "questions": {
     "category": "kategoria",
     "categories": "Kategorie",
@@ -79,6 +83,10 @@
     "last_annotations": "Ostatnie adnotacje",
     "remaining_annotations": "Pozostałe pytania",
     "annotated_annotations": "Z adnotacjami",
+    "similar_questions": "Podobne pytania",
+    "no_similar_questions": "Brak podobnych pytań",
+    "no_images": "Brak dostępnych obrazów",
+    "no_additional_info": "Brak dodatkowych informacji",
     "filters": {
       "active_filter_number": "+{{count}} filtrów",
       "active_filter_number_one": "+{{count}} filtr",
@@ -155,7 +163,9 @@
     "dashboard": "Pulpit logowania",
     "tour": "Pokaż przewodnik",
     "logged_in_user": "Zalogowano jako {{userName}}",
-    "log_in": "Kliknij, aby zalogować"
+    "log_in": "Kliknij, aby zalogować",
+    "moderation": "Umiar",
+    "ingredients": "Składniki"
   },
   "insights": {
     "insights": "Spostrzeżenia",
@@ -292,11 +302,11 @@
         "text2": "Jak pokazano w przykładzie, po wybraniu wszystkich podobnych nazw po prostu wpisz ich wartość i wybierz, gdzie jest to marka, etykieta lub coś innego. To takie proste!"
       },
       "page4": {
-        "title": "Gra Pytania o Eco-Score",
+        "title": "Gra Pytania o Green-Score",
         "text1": "Pomóż nam dokończyć pozostałe pytania w etykietach o najwyższym priorytecie!",
-        "text2": "Karty te są powiązane z etykietami używanymi do obliczania wyniku Eco-Score.",
-        "text3": "<strong>Co to jest Eco-Score?</strong>",
-        "text4": "Eco-Score uwzględnia całkowity ślad ekologiczny, ułatwiając konsumentom porównywanie produktów i podejmowanie decyzji, które są lepsze dla środowiska."
+        "text2": "Karty te są powiązane z etykietami używanymi do obliczania wyniku Green-Score.",
+        "text3": "<strong>Co to jest Green-Score?</strong>",
+        "text4": "Green-Score uwzględnia całkowity ślad ekologiczny, ułatwiając konsumentom porównywanie produktów i podejmowanie decyzji, które są lepsze dla środowiska."
       },
       "page5": {
         "title": "Ustawienia",
@@ -351,7 +361,6 @@
       "open_button": "Otwórz instrukcje",
       "title": "Jak korzystać z interfejsu",
       "chose_between_empty_and_partially_filled": "Możesz wybierać między produktami, dla których OpenFoodFacts (OFF) nie ma danych o składnikach odżywczych. Lub produktami z częściowo wypełnioną tabelą składników odżywczych.",
-      "picture_date_is_display": "Data zdjęcia jest nad nim wyświetlana. Pozwala to sprawdzić, czy to zdjęcie jest nowe.",
       "indicate_not_provided_value": "Puste pola są ignorowane. Jeśli w tabeli nie ma informacji o błonniku, możesz wpisać „-”, aby zaznaczyć, że wartość jest niedostępna.",
       "validate_one_column": "Wybierz rozmiar, który jest wyświetlany na obrazku. Jeśli masz 100g i wielkość porcji, wybierz 100g, ponieważ jest to znormalizowany format.",
       "skip_button": "Jeśli nie wiesz, jak przetworzyć obraz, lub po prostu nie chcesz tego robić, naciśnij „pomiń”. Inny użytkownik się tym zajmie.",
@@ -378,8 +387,8 @@
     "correct": "Poprawnie ({{label}})"
   },
   "green-score": {
-    "description": "Here is a summary of questions that could improve Eco-Score computation",
-    "countryLabel": "Country"
+    "description": "Oto podsumowanie pytań, które mogą poprawić obliczenia Green-Score",
+    "countryLabel": "Kraj"
   },
   "ingredients": {
     "description": "Ta gra pozwala Ci zweryfikować wstępnie wybrane obrazy list składników w różnych językach dla danego produktu oraz zatwierdzić wyodrębnione składniki.",

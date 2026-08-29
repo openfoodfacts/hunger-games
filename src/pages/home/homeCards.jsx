@@ -1,4 +1,3 @@
-import * as React from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router";
 import Card from "@mui/material/Card";
@@ -9,7 +8,6 @@ import Typography from "@mui/material/Typography";
 import Stack from "@mui/material/Stack";
 import home_questions from "../../assets/home_questions.png";
 import home_logos from "../../assets/home_logos.png";
-import home_greenscore from "../../assets/home_greenscore.png";
 
 const cards = [
   {
@@ -28,7 +26,8 @@ const cards = [
     title: "home.game_selector.cards.green_score.title",
     desc: "home.game_selector.cards.green_score.description",
     link: "/green-score",
-    image: home_greenscore,
+    image:
+      "https://static.openfoodfacts.org/images/attributes/dist/green-score-a.svg",
   },
 ];
 

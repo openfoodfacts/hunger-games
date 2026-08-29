@@ -1,8 +1,11 @@
 import * as React from "react";
 
 import { useTranslation } from "react-i18next";
-import { useTheme } from "@mui/material/styles";
+import { useTheme, alpha } from "@mui/material/styles";
 
+import IconButton from "@mui/material/IconButton";
+import Tooltip from "@mui/material/Tooltip";
+import OutlinedFlagIcon from "@mui/icons-material/OutlinedFlag";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Link from "@mui/material/Link";
@@ -11,6 +14,7 @@ import Checkbox from "@mui/material/Checkbox";
 import Typography from "@mui/material/Typography";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import EditIcon from "@mui/icons-material/Edit";
+import AddCircleOutlineIcon from "@mui/icons-material/AddCircleOutline";
 import VisibilityIcon from "@mui/icons-material/Visibility";
 import Table from "@mui/material/Table";
 import TableBody from "@mui/material/TableBody";
@@ -23,6 +27,7 @@ import ZoomableImage from "../../components/ZoomableImage";
 
 import { NO_QUESTION_LEFT } from "../../const";
 import offService from "../../off";
+import externalApi from "../../externalApi";
 import {
   localSettings,
   localSettingsKeys,
@@ -31,18 +36,24 @@ import {
   getIsDevMode,
 } from "../../localeStorageManager";
 
-import { ADDITIONAL_INFO_TRANSLATION, getImagesUrls } from "./utils";
+import {
+  ADDITIONAL_INFO_TRANSLATION,
+  getImageId,
+  getImagesUrls,
+} from "./utils";
 import useQuestions from "../../hooks/useQuestions";
 import { useProductData } from "../../hooks/useProduct";
+import type { Product } from "../../off";
 import { Skeleton } from "@mui/material";
 
 const ProductImagesGrid = ({
   images,
   barcode,
 }: {
-  images: Record<string, { uploaded_t: number }>;
+  images: NonNullable<Product["images"]>;
   barcode: string;
 }) => {
+  const { t } = useTranslation();
   const theme = useTheme();
   const imageUrls = getImagesUrls(images, barcode).reverse();
 
@@ -71,6 +82,7 @@ const ProductImagesGrid = ({
         <Box key={src.imageUrl}>
           <Box
             sx={{
+              position: "relative",
               width: "100%",
               aspectRatio: "1 / 1",
               overflow: "hidden",
@@ -93,30 +105,25 @@ const ProductImagesGrid = ({
                 },
               }}
             />
-            {/* {flagged.includes(getImageId(src.imageUrl)) ? (
-            <Tooltip title={t("questions.unflag")}>
-              <IconButton
-                onClick={() =>
-                  deleteFlagImage(src.imageUrl, question.barcode)
-                }
-              >
-                <FlagIcon />
-              </IconButton>
-            </Tooltip>
-          ) : (
             <Tooltip title={t("questions.flag")}>
               <IconButton
                 onClick={() =>
                   externalApi.addImageFlag({
-                    barcode: question.barcode,
+                    barcode,
                     imgid: getImageId(src.imageUrl),
                   })
                 }
+                sx={{
+                  position: "absolute",
+                  color: "white",
+                  backgroundColor: alpha(theme.palette.secondary.main, 0.5),
+                  bottom: 5,
+                  right: 5,
+                }}
               >
                 <OutlinedFlagIcon />
               </IconButton>
             </Tooltip>
-          )} */}
           </Box>
           <Typography variant="caption">{src.uploaded_t}</Typography>
         </Box>
@@ -127,33 +134,66 @@ const ProductImagesGrid = ({
 
 const ProductInfoTable = ({
   product,
+  barcode,
 }: {
   product: Record<string, unknown>;
+  barcode: string;
 }) => {
   const { t } = useTranslation();
   const theme = useTheme();
+  const isStringArray = (value: unknown): value is string[] =>
+    Array.isArray(value) && value.every((item) => typeof item === "string");
 
   function ProductInfoRow({
     product,
     infoKey,
+    barcode,
   }: {
     product: Record<string, unknown>;
     infoKey: string;
+    barcode: string;
   }) {
-    const { i18nKey, translatedKey, getLink } =
+    const { i18nKey, translatedKey, getLink, editAnchor } =
       ADDITIONAL_INFO_TRANSLATION[infoKey];
 
-    // Try translated key first, then fallback to original key, then "?" if not found
-    const value =
-      (translatedKey ? product?.[translatedKey] : product?.[infoKey]) ??
-      ("?" as unknown);
+    const value = translatedKey ? product?.[translatedKey] : product?.[infoKey];
+
+    const isMissing =
+      value == null ||
+      (typeof value === "string" && value.trim() === "") ||
+      (isStringArray(value) && value.length === 0);
+
+    if (isMissing) {
+      return (
+        <TableRow>
+          <TableCell component="th" scope="row">
+            {t(`questions.${i18nKey}`)}
+          </TableCell>
+          <TableCell>
+            <Button
+              size="small"
+              component={Link}
+              target="_blank"
+              rel="noreferrer"
+              href={`${offService.getProductEditUrl(barcode)}${
+                editAnchor ? `#${editAnchor}` : ""
+              }`}
+              startIcon={<AddCircleOutlineIcon />}
+              sx={{ py: 0, minWidth: 0 }}
+            >
+              {t("questions.add_missing_info")}
+            </Button>
+          </TableCell>
+        </TableRow>
+      );
+    }
 
     return (
       <TableRow>
         <TableCell component="th" scope="row">
           {t(`questions.${i18nKey}`)}
         </TableCell>
-        {Array.isArray(value) ? (
+        {isStringArray(value) ? (
           <TableCell
             sx={{
               "& a": {
@@ -194,7 +234,12 @@ const ProductInfoTable = ({
       >
         {Object.keys(ADDITIONAL_INFO_TRANSLATION).map((infoKey) => {
           return (
-            <ProductInfoRow key={infoKey} product={product} infoKey={infoKey} />
+            <ProductInfoRow
+              key={infoKey}
+              product={product}
+              infoKey={infoKey}
+              barcode={barcode}
+            />
           );
         })}
       </TableBody>
@@ -328,7 +373,7 @@ const ProductInformation = () => {
           {t("questions.no_additional_info")}
         </Typography>
       ) : (
-        <ProductInfoTable product={productData} />
+        <ProductInfoTable product={productData} barcode={question.barcode} />
       )}
 
       {isDevMode && devCustomization.showDebug && (

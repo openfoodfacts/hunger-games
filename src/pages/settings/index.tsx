@@ -1,16 +1,16 @@
 import * as React from "react";
 
 import TextField from "@mui/material/TextField";
-import MenuItem from "@mui/material/MenuItem";
 import Typography from "@mui/material/Typography";
 import Stack from "@mui/material/Stack";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import Switch from "@mui/material/Switch";
 import Button from "@mui/material/Button";
-import MuiLink from "@mui/material/Link";
 import Divider from "@mui/material/Divider";
 import Brightness4Icon from "@mui/icons-material/Brightness4";
 import Brightness7Icon from "@mui/icons-material/Brightness7";
+import Autocomplete from "@mui/material/Autocomplete";
+import BugReportIcon from "@mui/icons-material/BugReport";
 
 import { useTheme } from "@mui/material/styles";
 import { useTranslation } from "react-i18next";
@@ -48,18 +48,10 @@ export default function Settings() {
       setVisiblePages(newVisiblePages);
     };
 
-  const handleLangChange: React.ChangeEventHandler<
-    HTMLInputElement | HTMLTextAreaElement
-  > = (e) => {
-    localSettings.update(localSettingsKeys.language, e.target.value);
-    void i18n.changeLanguage(e.target.value);
-    setLanguage(e.target.value);
-  };
-
-  const handleCountryChange: React.ChangeEventHandler<
-    HTMLInputElement | HTMLTextAreaElement
-  > = (e) => {
-    setCountry(e.target.value, "global");
+  const handleLangChange = (newLang: string) => {
+    localSettings.update(localSettingsKeys.language, newLang);
+    void i18n.changeLanguage(newLang);
+    setLanguage(newLang);
   };
 
   return (
@@ -68,33 +60,38 @@ export default function Settings() {
         <Typography variant="h4" component="h2" sx={{ mb: 5 }}>
           {t("settings.settings")}
         </Typography>
-        <TextField
-          select
-          sx={{ minWidth: 150 }}
-          label={t("settings.language")}
-          value={language}
-          onChange={handleLangChange}
-        >
-          {Object.keys(messages).map((lang) => (
-            <MenuItem key={lang} value={lang}>
-              {lang.toUpperCase()}
-            </MenuItem>
-          ))}
-        </TextField>
 
-        <TextField
-          select
-          label={t("green-score.countryLabel")}
-          value={country}
-          onChange={handleCountryChange}
-          sx={{ width: 200 }}
-        >
-          {countryNames.map((country) => (
-            <MenuItem value={country.countryCode} key={country.countryCode}>
-              {country.label}
-            </MenuItem>
-          ))}
-        </TextField>
+        <Autocomplete
+          sx={{ width: 150 }}
+          options={Object.keys(messages)}
+          getOptionLabel={(lang) => lang.toUpperCase()}
+          value={language}
+          onChange={(_, newLang) => {
+            if (newLang) {
+              handleLangChange(newLang);
+            }
+          }}
+          disableClearable
+          renderInput={(params) => (
+            <TextField {...params} label={t("settings.language")} />
+          )}
+        />
+
+        <Autocomplete
+          sx={{ width: 260 }}
+          options={countryNames}
+          getOptionLabel={(option) => option.label}
+          value={countryNames.find((c) => c.countryCode === country) ?? null}
+          isOptionEqualToValue={(option, value) =>
+            option.countryCode === value.countryCode
+          }
+          onChange={(_, newValue) =>
+            setCountry(newValue?.countryCode ?? "", "global")
+          }
+          renderInput={(params) => (
+            <TextField {...params} label={t("green-score.countryLabel")} />
+          )}
+        />
 
         <div>
           <p>{t("settings.dev_mode_title")}</p>
@@ -143,14 +140,15 @@ export default function Settings() {
           )}
         </Button>
 
-        <div>
-          <MuiLink
-            href="https://github.com/openfoodfacts/hunger-games/issues"
-            target="_blank"
-          >
-            {t("settings.reportIssue")}
-          </MuiLink>
-        </div>
+        <Button
+          variant="outlined"
+          href="https://github.com/openfoodfacts/hunger-games/issues"
+          target="_blank"
+          rel="noopener noreferrer"
+          startIcon={<BugReportIcon />}
+        >
+          {t("settings.reportIssue")}
+        </Button>
       </Stack>
       <Divider sx={{ width: "100%" }} light />
       <FooterWithLinks />

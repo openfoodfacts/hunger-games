@@ -12,7 +12,7 @@
           "description": "Tadiavo ny famantarana rehetra mifanaraka amin'ny famantarana nomena"
         },
         "green_score": {
-          "title": "Eco-score",
+          "title": "Green-score",
           "description": "Annotate the questions with the highest value"
         }
       }
@@ -49,6 +49,10 @@
     "title": "Sary nasehon'ny mpampiasa",
     "loading": "Loading"
   },
+  "image_viewer": {
+    "compressed": "Compressed",
+    "load_original": "Load original"
+  },
   "questions": {
     "category": "sokajy",
     "categories": "Sokajy",
@@ -79,6 +83,10 @@
     "last_annotations": "Fanazavana farany",
     "remaining_annotations": "Fanontaniana sisa",
     "annotated_annotations": "Annotated",
+    "similar_questions": "Similar questions",
+    "no_similar_questions": "No similar questions",
+    "no_images": "No images available",
+    "no_additional_info": "No additional information",
     "filters": {
       "active_filter_number": "+{{count}} sivana",
       "active_filter_number_one": "+{{count}} sivana",
@@ -155,7 +163,9 @@
     "dashboard": "Logos dashboard",
     "tour": "Show tour",
     "logged_in_user": "Logged as {{userName}}",
-    "log_in": "Click to login"
+    "log_in": "Click to login",
+    "moderation": "fandaminana",
+    "ingredients": "Kanonkanona"
   },
   "insights": {
     "insights": "Fijery",
@@ -292,11 +302,11 @@
         "text2": "Araka ny asehon'ny ohatra, rehefa misafidy ny logo mitovy amin'izany ianao dia soraty fotsiny ny sandany ary safidio ny toerana misy marika, marika na zavatra hafa. Tsotra izany!"
       },
       "page4": {
-        "title": "Eco-Score Questions Game",
+        "title": "Green-Score Questions Game",
         "text1": "Ampio izahay hamita ny fanontaniana sisa amin'ny etikety ambony indrindra!",
-        "text2": "These cards are linked to labels used in the computation of the Eco-Score.",
-        "text3": "<strong>What is Eco-Score?</strong>",
-        "text4": "Eco-Score captures the total environmental footprint, making it easier for consumers to compare products and decide which is better for the environment."
+        "text2": "These cards are linked to labels used in the computation of the Green-Score.",
+        "text3": "<strong>What is Green-Score?</strong>",
+        "text4": "Green-Score captures the total environmental footprint, making it easier for consumers to compare products and decide which is better for the environment."
       },
       "page5": {
         "title": "Fikiràna",
@@ -351,7 +361,6 @@
       "open_button": "Open instructions",
       "title": "How to use the interface",
       "chose_between_empty_and_partially_filled": "You can chose between products for which OpenFoodFacts (OFF) has no data about the nutrients. Or product with partially filled nutrient table.",
-      "picture_date_is_display": "The date of the picture is displayed on top of it. Allowing you to check if it's a recent one.",
       "indicate_not_provided_value": "Empty inputs are ignored. If fibers are not present in the table, you can put \"-\" to specify the value is not available.",
       "validate_one_column": "Fidio ny habe aseho eo amin'ny sary. Raha manana 100g sy haben'ny fanompoana ianao dia fidio azafady ny 100g satria format efa mahazatra izy io.",
       "skip_button": "If you don't know how to deal with an image, or you just don't want to do it, press \"skip\". Other user will be able to handle it.",
@@ -378,8 +387,8 @@
     "correct": "Ahitsio ({{label}})"
   },
   "green-score": {
-    "description": "Here is a summary of questions that could improve Eco-Score computation",
-    "countryLabel": "Country"
+    "description": "Here is a summary of questions that could improve Green-Score computation",
+    "countryLabel": "Firenena"
   },
   "ingredients": {
     "description": "Ity lalao ity dia ahafahanao manamarina ny fisafidianana mialoha ny sarin'ny lisitry ny akora amin'ny fiteny samihafa ho an'ny vokatra iray, ary manamarina ireo akora nalaina.",

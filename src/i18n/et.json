@@ -12,7 +12,7 @@
           "description": "Find all the logos matching the given logo"
         },
         "green_score": {
-          "title": "Eco-score",
+          "title": "Green-score",
           "description": "Annotate the questions with the highest value"
         }
       }
@@ -49,6 +49,10 @@
     "title": "Kasutajate poolt märgistatud pildid",
     "loading": "Laadimine"
   },
+  "image_viewer": {
+    "compressed": "Compressed",
+    "load_original": "Load original"
+  },
   "questions": {
     "category": "kategooria",
     "categories": "Kategooriad",
@@ -56,7 +60,7 @@
     "labels": "Sildid",
     "brand": "kaubamärk",
     "brands": "Kaubamärgid",
-    "packaging": "packaging",
+    "packaging": "pakend",
     "quantity": "Kogus",
     "insightTypeLabel": "Only shows",
     "ingredients": "Koostisosad",
@@ -79,6 +83,10 @@
     "last_annotations": "Last annotations",
     "remaining_annotations": "Remaining questions",
     "annotated_annotations": "Annotated",
+    "similar_questions": "Similar questions",
+    "no_similar_questions": "No similar questions",
+    "no_images": "No images available",
+    "no_additional_info": "No additional information",
     "filters": {
       "active_filter_number": "+{{count}} filters",
       "active_filter_number_one": "+{{count}} filter",
@@ -155,7 +163,9 @@
     "dashboard": "Logos dashboard",
     "tour": "Show tour",
     "logged_in_user": "Sisse logitud kui {{userName}}",
-    "log_in": "Klõpsa sisselogimiseks"
+    "log_in": "Klõpsa sisselogimiseks",
+    "moderation": "Mõõdukus",
+    "ingredients": "Koostisosad"
   },
   "insights": {
     "insights": "Insights",
@@ -201,7 +211,7 @@
     "label": "Silt",
     "brand": "Kaubamärk",
     "packager_code": "Pakendaja kood",
-    "packaging": "Packaging",
+    "packaging": "Pakend",
     "qr_code": "QR kood",
     "category": "Kategooria",
     "nutrition_label": "Toitumisalane märgistus",
@@ -254,9 +264,9 @@
       "discover_our": "Discover our ",
       "code_of_conduct": "Code of conduct ",
       "join_us_on": "Join us on ",
-      "forum": "Forum",
-      "subscribe_to_our": "Subscribe to our ",
-      "newsletter": "newsletter"
+      "forum": "Foorum",
+      "subscribe_to_our": "Telli meie ",
+      "newsletter": "uudiskiri"
     },
     "discover_the_project": "Discover the project",
     "Who_we_are": "Kes me oleme",
@@ -292,11 +302,11 @@
         "text2": "As shown in the example, once you select all the similar logos, just type their value and select where it is a brand, a label or something else. It's that simple!"
       },
       "page4": {
-        "title": "Eco-Score Questions Game",
+        "title": "Green-Score Questions Game",
         "text1": "Help us finish the remaining questions in the most high priority labels!",
-        "text2": "These cards are linked to labels used in the computation of the Eco-Score.",
-        "text3": "<strong>What is Eco-Score?</strong>",
-        "text4": "Eco-Score captures the total environmental footprint, making it easier for consumers to compare products and decide which is better for the environment."
+        "text2": "These cards are linked to labels used in the computation of the Green-Score.",
+        "text3": "<strong>What is Green-Score?</strong>",
+        "text4": "Green-Score captures the total environmental footprint, making it easier for consumers to compare products and decide which is better for the environment."
       },
       "page5": {
         "title": "Seaded",
@@ -351,7 +361,6 @@
       "open_button": "Open instructions",
       "title": "How to use the interface",
       "chose_between_empty_and_partially_filled": "You can chose between products for which OpenFoodFacts (OFF) has no data about the nutrients. Or product with partially filled nutrient table.",
-      "picture_date_is_display": "The date of the picture is displayed on top of it. Allowing you to check if it's a recent one.",
       "indicate_not_provided_value": "Empty inputs are ignored. If fibers are not present in the table, you can put \"-\" to specify the value is not available.",
       "validate_one_column": "Valige pildil kuvatud suurus. Kui teil on 100 g ja portsjoni suurus, valige palun 100 g, kuna see on normaliseeritud formaat.",
       "skip_button": "Kui sa ei tea, kuidas pildiga ümber käia või sa lihtsalt ei taha seda teha, vajuta „Jäta vahele“. Teised kasutajad saavad sellega hakkama.",
@@ -378,8 +387,8 @@
     "correct": "Correct ({{label}})"
   },
   "green-score": {
-    "description": "Here is a summary of questions that could improve Eco-Score computation",
-    "countryLabel": "Country"
+    "description": "Here is a summary of questions that could improve Green-Score computation",
+    "countryLabel": "Riik"
   },
   "ingredients": {
     "description": "This game allows you to validate the pre-selection of images of ingredients lists in various languages for a product, and validate the extracted ingredients.",

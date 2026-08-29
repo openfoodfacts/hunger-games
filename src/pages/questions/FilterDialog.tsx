@@ -176,7 +176,7 @@ export default function FilterDialog(props: FilterDialogProps) {
           )}
           <Autocomplete
             value={innerCountryObject}
-            onChange={(event, newValue) => setInnerCountryObject(newValue)}
+            onChange={(_event, newValue) => setInnerCountryObject(newValue)}
             options={countries}
             getOptionLabel={(country) => country.label}
             isOptionEqualToValue={(country, value) => country.id === value.id}

@@ -12,7 +12,7 @@
           "description": "Nájdite všetky logá zodpovedajúce danému logu"
         },
         "green_score": {
-          "title": "Eco-score",
+          "title": "Eco-skóre",
           "description": "Annotate the questions with the highest value"
         }
       }
@@ -49,10 +49,14 @@
     "title": "Obrázky nahlásené používateľmi",
     "loading": "Načítava sa"
   },
+  "image_viewer": {
+    "compressed": "Compressed",
+    "load_original": "Load original"
+  },
   "questions": {
     "category": "Kategória",
     "categories": "Kategórie",
-    "label": "Štítok",
+    "label": "štítok",
     "labels": "Štítky",
     "brand": "značka",
     "brands": "Značky",
@@ -79,6 +83,10 @@
     "last_annotations": "Posledné anotácie",
     "remaining_annotations": "Zostávajúce otázky",
     "annotated_annotations": "Komentované",
+    "similar_questions": "Similar questions",
+    "no_similar_questions": "No similar questions",
+    "no_images": "No images available",
+    "no_additional_info": "No additional information",
     "filters": {
       "active_filter_number": "+{{count}} filtrov",
       "active_filter_number_one": "+{{count}} filter",
@@ -115,7 +123,7 @@
         "google_cloud_vision": "Google Cloud Vision",
         "regex": "Regex",
         "flashtext": "FlashText",
-        "nutriscore": "Nutriscore",
+        "nutriscore": "Nutričné skóre",
         "universal_logo_detector": "Univerzálny detektor loga",
         "ocr": "OCR"
       },
@@ -155,7 +163,9 @@
     "dashboard": "Panel loga",
     "tour": "Zobraziť prehliadku",
     "logged_in_user": "Prihlásený ako {{userName}}",
-    "log_in": "Kliknutím sa prihláste"
+    "log_in": "Kliknutím sa prihláste",
+    "moderation": "Moderovanie",
+    "ingredients": "Ingrediencie"
   },
   "insights": {
     "insights": "Insight",
@@ -296,7 +306,7 @@
         "text1": "Pomôžte nám dokončiť zostávajúce otázky v štítkoch s najvyššou prioritou!",
         "text2": "Tieto karty sú spojené so štítkami používanými pri výpočte ekologického skóre.",
         "text3": "<strong>Čo je to ekologické skóre?</strong>",
-        "text4": "Eco-Score zachytáva celkovú environmentálnu stopu, vďaka čomu môžu spotrebitelia ľahšie porovnávať produkty a rozhodovať sa, čo je pre životné prostredie lepšie."
+        "text4": "Green-Score zachytáva celkovú environmentálnu stopu, vďaka čomu môžu spotrebitelia ľahšie porovnávať produkty a rozhodovať sa, čo je pre životné prostredie lepšie."
       },
       "page5": {
         "title": "Nastavenia",
@@ -351,7 +361,6 @@
       "open_button": "Otvorte pokyny",
       "title": "Ako používať rozhranie",
       "chose_between_empty_and_partially_filled": "Môžete si vybrať medzi produktmi, pre ktoré OpenFoodFacts (OFF) nemá žiadne údaje o živinách. Alebo produkt s čiastočne vyplnenou nutričnou tabuľkou.",
-      "picture_date_is_display": "V hornej časti obrázka sa zobrazí dátum. Umožňuje vám skontrolovať, či ide o nedávny.",
       "indicate_not_provided_value": "Prázdne vstupy sú ignorované. Ak sa vláknina v tabuľke nenachádza, môžete zadať „-“, aby ste určili, že hodnota nie je k dispozícii.",
       "validate_one_column": "Vyberte veľkosť zobrazenú na obrázku. Ak máte 100 g a veľkosť porcie, vyberte 100 g, pretože ide o normalizovaný formát.",
       "skip_button": "Ak si s obrázkom neviete dať rady, alebo sa vám to jednoducho nechce, stlačte „preskočiť“. Iný používateľ to zvládne.",
@@ -378,8 +387,8 @@
     "correct": "Správne ({{label}})"
   },
   "green-score": {
-    "description": "Here is a summary of questions that could improve Eco-Score computation",
-    "countryLabel": "Country"
+    "description": "Tu je zhrnutie otázok, ktoré môžu spresniť výpočet Green-Score",
+    "countryLabel": "Krajina"
   },
   "ingredients": {
     "description": "Táto hra vám umožňuje overiť predbežný výber obrázkov zoznamov prísad v rôznych jazykoch pre produkt a overiť extrahované prísady.",
