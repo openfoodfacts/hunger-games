@@ -136,6 +136,7 @@ const InsightGrid = ({ filterState = {}, setFilterState }) => {
         type: "actions",
         getActions: (params) => [
           <GridActionsCellItem
+            key="edit"
             component="a"
             href={getProductEditUrl(params.row.barcode)}
             label={t("insights.edit_product")}
@@ -146,6 +147,7 @@ const InsightGrid = ({ filterState = {}, setFilterState }) => {
             }
           />,
           <GridActionsCellItem
+            key="view"
             component="a"
             href={getProductUrl(params.row.barcode)}
             label={t("insights.view_product")}
@@ -156,6 +158,7 @@ const InsightGrid = ({ filterState = {}, setFilterState }) => {
             }
           />,
           <GridActionsCellItem
+            key="crops"
             component="a"
             href={getLogoCropsByBarcodeUrl(params.row.barcode)}
             label={t("insights.view_crops_for_this_product")}

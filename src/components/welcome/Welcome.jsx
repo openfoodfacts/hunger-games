@@ -306,7 +306,7 @@ const getSteps = ({ t, withSelector, theme }) => [
 ];
 
 const Welcome = (props) => {
-  const { isOpen, setIsOpen } = props;
+  const { setIsOpen } = props;
 
   const { t } = useTranslation();
   const theme = useTheme();

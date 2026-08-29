@@ -41,7 +41,7 @@ export default function TaxonomyAutoSelect(props: TaxonomyAutoSelectProps) {
           callback: (results?: readonly TaxonomyItem[]) => void,
         ) => {
           searchTaxonomy[taxonomy](request.input, language).then(({ data }) => {
-            callback((data?.options as TaxonomyItem[]) ?? []);
+            callback(data?.options ?? []);
           });
         },
         400,
@@ -94,7 +94,7 @@ export default function TaxonomyAutoSelect(props: TaxonomyAutoSelectProps) {
       }
       isOptionEqualToValue={isOptionEqualToValue}
       // noOptionsText="No locations"
-      onChange={(event: any, newValue: TaxonomyItem | null | string) => {
+      onChange={(_event: any, newValue: TaxonomyItem | null | string) => {
         if (typeof newValue === "object") {
           onChange(newValue.text, newValue);
           setSelectedValue(newValue);
@@ -102,7 +102,7 @@ export default function TaxonomyAutoSelect(props: TaxonomyAutoSelectProps) {
         }
         onChange(newValue);
       }}
-      onInputChange={(event, newInputValue) => {
+      onInputChange={(_event, newInputValue) => {
         setInputValue(newInputValue);
       }}
       onBlur={() => {
