@@ -194,7 +194,7 @@ function LogoQuestionValidator() {
           <Slider
             aria-label={t("nutriscore.image_sizes")}
             value={imageSize}
-            onChangeCommitted={(event, newValue) =>
+            onChangeCommitted={(_event, newValue) =>
               setControlledState((prev: any) => ({
                 ...prev,
                 imageSize: newValue,

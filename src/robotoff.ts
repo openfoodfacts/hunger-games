@@ -131,7 +131,7 @@ const robotoff = {
         count,
         campaigns,
         countries: country,
-      }) as Parameters<Robotoff["insights"]>[0],
+      }),
     );
   },
 

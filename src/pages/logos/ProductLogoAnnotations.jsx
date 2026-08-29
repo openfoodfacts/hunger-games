@@ -45,7 +45,7 @@ const fetchProducts = async ({ page, filter }) => {
       count,
       codes: products.map((x) => x.code),
     };
-  } catch (error) {
+  } catch {
     return {
       count: 0,
       codes: [],

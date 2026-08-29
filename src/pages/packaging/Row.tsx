@@ -41,7 +41,7 @@ const CustomAutoComplet = (props: CustomProps) => {
       options={options}
       value={value}
       onChange={onChange}
-      onInputChange={(event, newInputValue) => setInputValue(newInputValue)}
+      onInputChange={(_event, newInputValue) => setInputValue(newInputValue)}
       disablePortal
       renderInput={(params) => <TextField {...params} />}
       getOptionLabel={(option) =>
@@ -138,7 +138,7 @@ const Row = (props) => {
         <CustomAutoComplet
           options={packagingShapes}
           value={innerShape}
-          onChange={(event, newValue) => {
+          onChange={(_event, newValue) => {
             updateRow({ shape: newValue && newValue.value });
             setInnerShape(newValue);
           }}
@@ -149,7 +149,7 @@ const Row = (props) => {
         <CustomAutoComplet
           options={packagingMaterials}
           value={innerMaterial}
-          onChange={(event, newValue) => {
+          onChange={(_event, newValue) => {
             updateRow({ material: newValue && newValue.value });
             setInnerMaterial(newValue);
           }}
@@ -160,7 +160,7 @@ const Row = (props) => {
         <CustomAutoComplet
           options={packagingRecycling}
           value={innerRecycling}
-          onChange={(event, newValue) => {
+          onChange={(_event, newValue) => {
             updateRow({ recycling: newValue && newValue.value });
             setInnerRecycling(newValue);
           }}

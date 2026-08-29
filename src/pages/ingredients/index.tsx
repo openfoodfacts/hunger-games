@@ -9,8 +9,6 @@ import TabContext from "@mui/lab/TabContext";
 import TabList from "@mui/lab/TabList";
 import TabPanel from "@mui/lab/TabPanel";
 import Link from "@mui/material/Link";
-import TextField from "@mui/material/TextField";
-import MenuItem from "@mui/material/MenuItem";
 import { useCountry } from "../../contexts/CountryProvider";
 import { MapInteractionCSS } from "react-map-interaction";
 
@@ -32,7 +30,7 @@ function ProductInterface(props) {
     setImageTab(selectedImages[0].countryCode);
   }, [selectedImages]);
 
-  const handleChange = (event: React.SyntheticEvent, newValue: string) => {
+  const handleChange = (_event: React.SyntheticEvent, newValue: string) => {
     setImageTab(newValue);
   };
 

@@ -1,6 +1,4 @@
-import axios, { AxiosResponse } from "axios";
-
-type TagType = "categories" | "labels" | "brands";
+import axios from "axios";
 
 export type TaxonomyItem = {
   /**

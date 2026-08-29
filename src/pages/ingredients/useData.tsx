@@ -52,7 +52,7 @@ const formatData = ({
     .filter((key) => key.startsWith("ingredients"))
     .map((key) => {
       const imageData = images[key];
-      // eslint-disable-next-line @typescript-eslint/no-unused-vars
+
       const [_, x, y] = images[key].geometry.split("-");
 
       const countryCode = key.startsWith("ingredients_")
