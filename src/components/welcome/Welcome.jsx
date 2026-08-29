@@ -312,7 +312,7 @@ const Welcome = (props) => {
   const theme = useTheme();
   const isDesktop = useMediaQuery(theme.breakpoints.up("md"));
 
-  const [isTourOpen, setIsTourOpen] = React.useState(false);
+  const [isTourOpen, setIsTourOpen] = React.useState(getTour);
 
   const handleCloseTour = () => {
     setIsOpen?.(false);
@@ -321,11 +321,10 @@ const Welcome = (props) => {
   };
 
   React.useEffect(() => {
-    if (getTour()) {
-      setIsOpen?.(true);
-      setIsTourOpen(true);
+    if (isTourOpen) {
+      queueMicrotask(() => setIsOpen?.(true));
     }
-  });
+  }, [isTourOpen, setIsOpen]);
 
   const steps = React.useMemo(
     () => getSteps({ t, withSelector: isDesktop, theme }),
