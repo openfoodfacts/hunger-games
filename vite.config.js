@@ -8,8 +8,9 @@ export default defineConfig({
     viteStaticCopy({
       targets: [
         {
-          src: "node_modules/@openfoodfacts/openfoodfacts-webcomponents/dist/assets/**/*",
+          src: "node_modules/@openfoodfacts/openfoodfacts-webcomponents/dist/assets/images/**/*",
           dest: "assets/webcomponents",
+          rename: { stripBase: 6 },
         },
       ],
     }),
