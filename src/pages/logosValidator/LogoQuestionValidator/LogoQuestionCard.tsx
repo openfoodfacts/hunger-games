@@ -46,7 +46,7 @@ export const LogoQuestionCard = (props: LogoQuestionCardProps) => {
 
   const [fetchedCropUrl, setFetchedCropUrl] = React.useState("");
   const croppedImageUrl = zoomOnLogo
-    ? fetchedCropUrl
+    ? fetchedCropUrl || (question.source_image_url ?? "")
     : (question.source_image_url ?? "");
 
   React.useEffect(() => {

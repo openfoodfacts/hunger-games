@@ -32,7 +32,7 @@ function LogoQuestionValidator() {
     },
     {},
   ) as [
-    { imageSize: string; zoomOnLogo: string },
+    { imageSize: string; zoomOnLogo: boolean | string },
     React.Dispatch<
       React.SetStateAction<{
         imageSize: string | number;
@@ -42,7 +42,9 @@ function LogoQuestionValidator() {
   ];
 
   const imageSize = Number.parseInt(controlledState.imageSize);
-  const zoomOnLogo = controlledState.zoomOnLogo === "true";
+  const zoomOnLogo =
+    controlledState.zoomOnLogo === true ||
+    controlledState.zoomOnLogo === "true";
 
   const [filterState] = useFilterState();
 

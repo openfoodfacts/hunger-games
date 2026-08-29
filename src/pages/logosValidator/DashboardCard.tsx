@@ -45,9 +45,7 @@ const DashboardCard = (props: LogoDefinition) => {
         }
       })
       .catch(() => {
-        if (isValid) {
-          setQuestionNumber(0);
-        }
+        // Keep the unknown state distinct from a successful zero count.
       });
     return () => {
       isValid = false;
