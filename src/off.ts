@@ -244,7 +244,7 @@ class OffService {
     });
   }
 
-  getIngedrientParsing<T = unknown>(editionParams: {
+  getIngredientParsing<T = unknown>(editionParams: {
     text: string;
     lang: string;
   }) {
