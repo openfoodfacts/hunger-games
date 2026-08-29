@@ -6,7 +6,7 @@ import { SearchApi } from "@openfoodfacts/openfoodfacts-nodejs";
 
 import { useQuery } from "@tanstack/react-query";
 
-const offClient = new SearchApi(window.fetch);
+const offClient = new SearchApi(window.fetch.bind(window));
 
 type TaxonomyOption = {
   id: string;
@@ -80,7 +80,7 @@ const LabelFilter = (props: LabelFilterProps) => {
         setInnerValue(newValue);
         onChange(typeof newValue === "object" ? newValue?.id : newValue);
       }}
-      onInputChange={(e, newInputValue) => {
+      onInputChange={(_event, newInputValue) => {
         setInputValue(newInputValue);
       }}
       onBlur={() => {
@@ -108,7 +108,7 @@ const LabelFilter = (props: LabelFilterProps) => {
             ((typeof innerValue === "object" && innerValue?.id) ||
               (innerValue !== "" &&
                 innerValue !== null &&
-                `⚠️ unknown: "${innerValue}"`))
+                `⚠️ unknown: "${typeof innerValue === "string" ? innerValue : innerValue.text}"`))
           }
         />
       )}
