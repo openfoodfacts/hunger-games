@@ -4,20 +4,16 @@ import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
 import TableCell from "@mui/material/TableCell";
 import TableRow from "@mui/material/TableRow";
-import { Option } from "../../hooks/useOptions";
+import type { Option } from "../../hooks/useOptions";
+import type { EditablePackaging, PackagingUpdate } from "./useBuffer";
 
 type CustomProps = {
   options: Option[];
   value: Option | null;
-  onChange: any;
+  onChange: (value: Option | null) => void;
 };
 
-/**
- * Returns true if motif is included in one syn
- * @param synonyms
- * @param motif
- */
-const firstSynonymMatching = (synonyms, motif) => {
+const firstSynonymMatching = (synonyms: string[], motif: string) => {
   const normalizedMotif = motif
     .toLowerCase()
     .normalize("NFD")
@@ -32,100 +28,70 @@ const firstSynonymMatching = (synonyms, motif) => {
   });
 };
 
-const CustomAutoComplet = (props: CustomProps) => {
+const CustomAutoComplete = ({ options, value, onChange }: CustomProps) => {
   const [inputValue, setInputValue] = React.useState("");
-  const { options, value, onChange } = props;
 
   return (
     <Autocomplete
       options={options}
       value={value}
-      onChange={onChange}
+      onChange={(_event, newValue) => onChange(newValue)}
       onInputChange={(_event, newInputValue) => setInputValue(newInputValue)}
       disablePortal
       renderInput={(params) => <TextField {...params} />}
       getOptionLabel={(option) =>
-        typeof option === "string"
-          ? option
-          : firstSynonymMatching(option?.synonyms, inputValue)
+        firstSynonymMatching(option.synonyms, inputValue) ?? option.label
       }
-      filterOptions={(options) => {
-        return options.filter(
+      filterOptions={(availableOptions) =>
+        availableOptions.filter(
           (option) => firstSynonymMatching(option.synonyms, inputValue) != null,
-        );
-      }}
-      isOptionEqualToValue={(option, value) => option.value === value.value}
+        )
+      }
+      isOptionEqualToValue={(option, selected) =>
+        option.value === selected.value
+      }
     />
   );
 };
 
-const getOption = (options: Option[], key: string | null) => {
-  if (!key) {
-    return null;
-  }
-  const index = options.findIndex((option) => option.value === key);
+const getOption = (options: Option[], key: string | null) =>
+  options.find((option) => option.value === key) ?? null;
 
-  if (index >= 0) {
-    return options[index];
-  }
-  return null;
+type RowProps = EditablePackaging & {
+  packagingMaterials: Option[];
+  packagingShapes: Option[];
+  packagingRecycling: Option[];
+  updateRow: (update: PackagingUpdate) => void;
 };
 
-const Row = (props) => {
-  const {
-    packagingMaterials,
-    packagingShapes,
-    packagingRecycling,
-    updateRow,
-    material = null,
-    number_of_units: number = null,
-    recycling = null,
-    shape = null,
-  } = props;
-
-  const [innerMaterial, setInnerMaterial] = React.useState(() =>
-    getOption(packagingMaterials, material),
-  );
-  React.useEffect(() => {
-    setInnerMaterial(getOption(packagingMaterials, material));
-  }, [material, packagingMaterials]);
-
+const Row = ({
+  packagingMaterials,
+  packagingShapes,
+  packagingRecycling,
+  updateRow,
+  material,
+  number,
+  recycling,
+  shape,
+}: RowProps) => {
+  const [innerMaterial, setInnerMaterial] = React.useState(material);
   const [innerNumber, setInnerNumber] = React.useState(number);
-  React.useEffect(() => {
-    setInnerNumber(number);
-  }, [number]);
-
-  const [innerRecycling, setInnerRecycling] = React.useState(() =>
-    getOption(packagingRecycling, recycling),
-  );
-  React.useEffect(() => {
-    setInnerRecycling(getOption(packagingRecycling, recycling));
-  }, [packagingRecycling, recycling]);
-
-  const [innerShape, setInnerShape] = React.useState(() =>
-    getOption(packagingShapes, shape),
-  );
-  React.useEffect(() => {
-    setInnerShape(getOption(packagingShapes, shape));
-  }, [packagingShapes, shape]);
+  const [innerRecycling, setInnerRecycling] = React.useState(recycling);
+  const [innerShape, setInnerShape] = React.useState(shape);
 
   const reset = () => {
-    setInnerMaterial(getOption(packagingMaterials, material));
-    setInnerRecycling(getOption(packagingRecycling, recycling));
-    setInnerShape(getOption(packagingShapes, shape));
+    setInnerMaterial(material);
+    setInnerRecycling(recycling);
+    setInnerShape(shape);
     setInnerNumber(number);
-    updateRow({
-      material,
-      number,
-      recycling,
-      shape,
-    });
+    updateRow({ material, number, recycling, shape });
   };
+
   return (
     <TableRow>
       <TableCell>
         <TextField
-          value={innerNumber || ""}
+          value={innerNumber}
           onChange={(event) => {
             setInnerNumber(event.target.value);
             updateRow({ number: event.target.value });
@@ -135,34 +101,37 @@ const Row = (props) => {
       </TableCell>
 
       <TableCell>
-        <CustomAutoComplet
+        <CustomAutoComplete
           options={packagingShapes}
-          value={innerShape}
-          onChange={(_event, newValue) => {
-            updateRow({ shape: newValue && newValue.value });
-            setInnerShape(newValue);
+          value={getOption(packagingShapes, innerShape)}
+          onChange={(newValue) => {
+            const value = newValue?.value ?? null;
+            updateRow({ shape: value });
+            setInnerShape(value);
           }}
         />
       </TableCell>
 
       <TableCell>
-        <CustomAutoComplet
+        <CustomAutoComplete
           options={packagingMaterials}
-          value={innerMaterial}
-          onChange={(_event, newValue) => {
-            updateRow({ material: newValue && newValue.value });
-            setInnerMaterial(newValue);
+          value={getOption(packagingMaterials, innerMaterial)}
+          onChange={(newValue) => {
+            const value = newValue?.value ?? null;
+            updateRow({ material: value });
+            setInnerMaterial(value);
           }}
         />
       </TableCell>
 
       <TableCell>
-        <CustomAutoComplet
+        <CustomAutoComplete
           options={packagingRecycling}
-          value={innerRecycling}
-          onChange={(_event, newValue) => {
-            updateRow({ recycling: newValue && newValue.value });
-            setInnerRecycling(newValue);
+          value={getOption(packagingRecycling, innerRecycling)}
+          onChange={(newValue) => {
+            const value = newValue?.value ?? null;
+            updateRow({ recycling: value });
+            setInnerRecycling(value);
           }}
         />
       </TableCell>
