@@ -139,7 +139,7 @@ function ProductInterface({ product, next }: ProductInterfaceProps) {
 export default function IngredientsPage() {
   const { t } = useTranslation();
   const [country] = useCountry();
-  const [data, removeHead, isLoading] = useData(country);
+  const { data, removeHead, isLoading, error, retry } = useData(country);
   return (
     <React.Suspense fallback={<Loader />}>
       <Stack
@@ -155,6 +155,13 @@ export default function IngredientsPage() {
       {/* <IngeredientDisplay /> */}
       {isLoading ? (
         "loading..."
+      ) : error && data.length === 0 ? (
+        <Stack alignItems="center" spacing={1}>
+          <Typography>Unable to load products: {error}</Typography>
+          <Button onClick={retry} variant="outlined">
+            Retry
+          </Button>
+        </Stack>
       ) : data && data.length === 0 ? (
         "No data"
       ) : (

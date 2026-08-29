@@ -1,4 +1,5 @@
 import * as React from "react";
+import { useInfiniteQuery } from "@tanstack/react-query";
 import off from "../../off";
 import { ROBOTOFF_API_URL } from "../../const";
 
@@ -116,60 +117,81 @@ const formatData = (product: IngredientApiProduct): IngredientProduct => {
   };
 };
 
-export default function useData(
-  countryCode: string,
-): [IngredientProduct[], () => void, boolean] {
-  const [data, setData] = React.useState<IngredientProduct[]>([]);
-  const prevCountry = React.useRef(countryCode);
-  const [isLoading, setIsLoading] = React.useState(true);
-  const [page, setPage] = React.useState(0);
-  const seenCodes = React.useRef(new Set<string>());
+export default function useData(countryCode: string) {
+  const [dismissed, setDismissed] = React.useState<{
+    countryCode: string;
+    codes: Set<string>;
+  }>({ countryCode, codes: new Set() });
+
+  const {
+    data: queryData,
+    error,
+    fetchNextPage,
+    isFetchingNextPage,
+    isPending,
+    refetch,
+  } = useInfiniteQuery<
+    IngredientProduct[],
+    Error,
+    IngredientProduct[],
+    readonly ["ingredient-products", string],
+    number
+  >({
+    queryKey: ["ingredient-products", countryCode],
+    initialPageParam: 0,
+    queryFn: async ({ pageParam, signal }) => {
+      const { data } = await off.searchProducts<IngredientApiProduct>({
+        page: pageParam,
+        pageSize: 25,
+        filters: imagesToRead,
+        fields: "all",
+        countryCode: countryCode || "world",
+        signal,
+      });
+      return (data.products ?? []).map(formatData);
+    },
+    getNextPageParam: (_lastPage, pages) => pages.length,
+    select: ({ pages }) => pages.flat(),
+  });
+
+  const data = React.useMemo(() => {
+    const dismissedCodes =
+      dismissed.countryCode === countryCode
+        ? dismissed.codes
+        : new Set<string>();
+    const seenCodes = new Set<string>();
+    return (queryData ?? []).filter((product) => {
+      if (dismissedCodes.has(product.code) || seenCodes.has(product.code)) {
+        return false;
+      }
+      seenCodes.add(product.code);
+      return true;
+    });
+  }, [countryCode, dismissed, queryData]);
 
   React.useEffect(() => {
-    let isValid = true;
-    const load = async () => {
-      setIsLoading(true);
-      try {
-        const { data: response } =
-          await off.searchProducts<IngredientApiProduct>({
-            page,
-            pageSize: 25,
-            filters: imagesToRead,
-            fields: "all",
-            countryCode: countryCode || "world",
-          });
-        if (!isValid) return;
-        const products = response.products ?? [];
-        const countryChanged = prevCountry.current !== countryCode;
-        if (countryChanged) seenCodes.current.clear();
-        const formattedProducts = products
-          .filter(({ code }) => {
-            if (seenCodes.current.has(code)) return false;
-            seenCodes.current.add(code);
-            return true;
-          })
-          .map(formatData);
-        if (countryChanged) {
-          setData(formattedProducts);
-          prevCountry.current = countryCode;
-        } else if (formattedProducts.length > 0) {
-          setData((previous) => [...previous, ...formattedProducts]);
-        }
-        setIsLoading(false);
-        if (formattedProducts.length < 5) setPage((current) => current + 1);
-      } catch (error: unknown) {
-        console.error(error);
-        if (isValid) setIsLoading(false);
-      }
-    };
-    void load();
-    return () => {
-      isValid = false;
-    };
-  }, [page, countryCode]);
+    if (data.length < 5 && !isPending && !isFetchingNextPage && !error) {
+      void fetchNextPage();
+    }
+  }, [data.length, error, fetchNextPage, isFetchingNextPage, isPending]);
 
   const removeHead = React.useCallback(() => {
-    setData((previous) => previous.slice(1));
-  }, []);
-  return [data, removeHead, isLoading];
+    const head = data[0];
+    if (!head) return;
+    setDismissed((current) => {
+      const codes =
+        current.countryCode === countryCode ? current.codes : new Set<string>();
+      const nextCodes = new Set(codes);
+      nextCodes.add(head.code);
+      return { countryCode, codes: nextCodes };
+    });
+  }, [countryCode, data]);
+
+  return {
+    data,
+    removeHead,
+    isLoading: isPending,
+    error: error instanceof Error ? error.message : null,
+    retry: () => void refetch(),
+  };
 }
