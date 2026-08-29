@@ -43,13 +43,14 @@ import {
 } from "./utils";
 import useQuestions from "../../hooks/useQuestions";
 import { useProductData } from "../../hooks/useProduct";
+import type { Product } from "../../off";
 import { Skeleton } from "@mui/material";
 
 const ProductImagesGrid = ({
   images,
   barcode,
 }: {
-  images: Record<string, { uploaded_t: number }>;
+  images: NonNullable<Product["images"]>;
   barcode: string;
 }) => {
   const { t } = useTranslation();
@@ -140,6 +141,8 @@ const ProductInfoTable = ({
 }) => {
   const { t } = useTranslation();
   const theme = useTheme();
+  const isStringArray = (value: unknown): value is string[] =>
+    Array.isArray(value) && value.every((item) => typeof item === "string");
 
   function ProductInfoRow({
     product,
@@ -158,7 +161,7 @@ const ProductInfoTable = ({
     const isMissing =
       value == null ||
       (typeof value === "string" && value.trim() === "") ||
-      (Array.isArray(value) && value.length === 0);
+      (isStringArray(value) && value.length === 0);
 
     if (isMissing) {
       return (
@@ -190,7 +193,7 @@ const ProductInfoTable = ({
         <TableCell component="th" scope="row">
           {t(`questions.${i18nKey}`)}
         </TableCell>
-        {Array.isArray(value) ? (
+        {isStringArray(value) ? (
           <TableCell
             sx={{
               "& a": {

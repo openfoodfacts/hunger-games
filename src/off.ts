@@ -1,4 +1,7 @@
-import { OpenFoodFacts } from "@openfoodfacts/openfoodfacts-nodejs";
+import {
+  OpenFoodFacts,
+  type Product as SdkProduct,
+} from "@openfoodfacts/openfoodfacts-nodejs";
 import { getLang } from "./localeStorageManager";
 import {
   OFF_DOMAIN,
@@ -13,17 +16,21 @@ import axios from "axios";
 
 const BARCODE_REGEX = /(...)(...)(...)(.*)$/;
 
-interface Product {
-  product_name?: string;
-  brands?: string[];
-  ingredients_text?: string;
-  countries_tags?: string[];
-  images?: any;
-  categories?: string[];
-  categories_tags?: string[];
-  labels_tags?: string;
-  quantity?: string;
-}
+export type ProductImage = { uploaded_t?: number } & Record<string, unknown>;
+
+export type Product = Pick<
+  SdkProduct,
+  | "product_name"
+  | "brands"
+  | "ingredients_text"
+  | "countries_tags"
+  | "categories"
+  | "categories_tags"
+  | "labels_tags"
+  | "quantity"
+> & {
+  images?: Record<string, ProductImage | string>;
+};
 
 export const offClient = new OpenFoodFacts(
   (input: RequestInfo | URL, init: RequestInit | undefined) =>
