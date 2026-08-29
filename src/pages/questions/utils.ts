@@ -1,5 +1,6 @@
 import { NO_QUESTION_LEFT, OFF_DOMAIN, OFF_URL } from "../../const";
 import offService from "../../off";
+import type { Product } from "../../off";
 import robotoff, { QuestionInterface } from "../../robotoff";
 import { reformatValueTag } from "../../utils";
 import { FilterState } from "../../robotoff";
@@ -55,7 +56,7 @@ const getUploadedTime = (data: number) =>
   });
 
 export const getImagesUrls = (
-  images: Record<string, { uploaded_t: number }>,
+  images: NonNullable<Product["images"]>,
   barcode: string,
 ) => {
   if (!images || !barcode) {
@@ -65,11 +66,17 @@ export const getImagesUrls = (
   const rootImageUrl = offService.getImageUrl(formattedCode);
   return Object.keys(images)
     .filter((key) => !isNaN(Number.parseInt(key)))
-    .map((key) => ({
-      imageUrl: `${rootImageUrl}/${key}.400.jpg`,
-      imageUrlFull: `${rootImageUrl}/${key}.jpg`,
-      uploaded_t: getUploadedTime(images[key].uploaded_t),
-    }));
+    .map((key) => {
+      const image = images[key];
+      return {
+        imageUrl: `${rootImageUrl}/${key}.400.jpg`,
+        imageUrlFull: `${rootImageUrl}/${key}.jpg`,
+        uploaded_t:
+          typeof image === "object" && image.uploaded_t !== undefined
+            ? getUploadedTime(image.uploaded_t)
+            : "Unknown",
+      };
+    });
 };
 
 export const getFullSizeImage = (src?: string) => {
