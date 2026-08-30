@@ -3,8 +3,7 @@ import * as React from "react";
 import Stack from "@mui/material/Stack";
 import TextField from "@mui/material/TextField";
 import MenuItem from "@mui/material/MenuItem";
-
-import LoadingButton from "@mui/lab/LoadingButton";
+import Button from "@mui/material/Button";
 
 import { useTranslation } from "react-i18next";
 
@@ -143,7 +142,7 @@ const LogoForm = (props) => {
           size="small"
         />
       )}
-      <LoadingButton
+      <Button
         onClick={send}
         loading={isSending}
         disabled={isLoading || !isValid || (updateMode && !isDifferent)}
@@ -151,7 +150,7 @@ const LogoForm = (props) => {
         color="primary"
       >
         {t("logos.update")}
-      </LoadingButton>
+      </Button>
     </Stack>
   );
 };
