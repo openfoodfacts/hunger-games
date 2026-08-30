@@ -51,7 +51,13 @@ const Home = () => {
             {t("home.saved_filters")}
           </Typography>
         )}
-        <Stack spacing={4} flexWrap="wrap" direction="row">
+        <Stack
+          spacing={4}
+          direction="row"
+          sx={{
+            flexWrap: "wrap",
+          }}
+        >
           {savedQuestions.map((props) => (
             <Box sx={{ marginBottom: 5 }} key={props.title}>
               <QuestionCard showFilterResume editableTitle {...props} />
@@ -65,17 +71,19 @@ const Home = () => {
       ) : (
         <React.Fragment>
           <Box
-            padding={{ xs: "20px", sm: "50px" }}
             sx={{
+              padding: { xs: "20px", sm: "50px" },
               backgroundColor: theme.palette.action.selected,
             }}
           >
             <Stack
               spacing={4}
-              flexWrap="wrap"
               direction={{ xs: "column", sm: "column", md: "row" }}
-              alignItems="center"
-              justifyContent="center"
+              sx={{
+                flexWrap: "wrap",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
             >
               <Typography
                 variant="h5"
@@ -102,7 +110,11 @@ const Home = () => {
               </Stack>
             </Stack>
           </Box>
-          <Box textAlign="center">
+          <Box
+            sx={{
+              textAlign: "center",
+            }}
+          >
             <Button
               onClick={handleOpen}
               sx={{
@@ -121,8 +133,8 @@ const Home = () => {
             aria-describedby="modal-contribution-information"
           >
             <Box
-              width={{ xs: "90%", sm: "50%" }}
               sx={{
+                width: { xs: "90%", sm: "50%" },
                 backgroundColor: theme.palette.secondary.main,
                 color: theme.palette.secondary.contrastText,
                 position: "absolute",
@@ -136,7 +148,9 @@ const Home = () => {
                 id="modal-contribution-title"
                 variant="h6"
                 component="h2"
-                fontWeight={700}
+                sx={{
+                  fontWeight: 700,
+                }}
               >
                 {t("home.contribution_modal.title")}
               </Typography>
@@ -159,7 +173,12 @@ const Home = () => {
         </React.Fragment>
       )}
 
-      <Divider sx={{ width: "100%" }} light />
+      <Divider
+        sx={{
+          width: "100%",
+          opacity: "0.6",
+        }}
+      />
       <FooterWithLinks />
     </React.Suspense>
   );

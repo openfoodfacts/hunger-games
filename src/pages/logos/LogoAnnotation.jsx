@@ -5,7 +5,6 @@ import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import CircularProgress from "@mui/material/CircularProgress";
 import Typography from "@mui/material/Typography";
-import LoadingButton from "@mui/lab/LoadingButton";
 import { useTheme } from "@mui/material/styles";
 
 import { useTranslation } from "react-i18next";
@@ -259,8 +258,8 @@ export default function LogoAnnotation() {
     <React.Suspense fallback={<CircularProgress />}>
       <Box sx={{ margin: "2% 10%" }}>
         <Typography
-          typography="h2"
           sx={{
+            typography: "h2",
             fontSize: "1.5rem",
             fontWeight: 600,
             marginBottom: 2,
@@ -297,14 +296,14 @@ export default function LogoAnnotation() {
             >
               {t("logos.unselect_all")}
             </Button>
-            <LoadingButton
+            <Button
               variant="outlined"
               size="small"
               onClick={refreshData}
               loading={isRefreshing}
             >
               {t("logos.refresh")}
-            </LoadingButton>
+            </Button>
             <div style={{ flexGrow: 1 }} />
             <Button
               size="small"
