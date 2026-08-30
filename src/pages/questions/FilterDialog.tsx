@@ -121,8 +121,10 @@ export default function FilterDialog(props: FilterDialogProps) {
     <Dialog
       open={open}
       onClose={onClose}
-      PaperProps={{ sx: { p: 2 } }}
-      TransitionProps={{ onEnter: resetFilter }}
+      slotProps={{
+        transition: { onEnter: resetFilter },
+        paper: { sx: { p: 2 } },
+      }}
     >
       <DialogContent>
         <Stack spacing={2} sx={{ display: open ? undefined : "none" }}>
@@ -245,7 +247,13 @@ export default function FilterDialog(props: FilterDialogProps) {
         </Stack>
       </DialogContent>
       <DialogActions>
-        <Stack direction="row" justifyContent="flex-end" spacing={1}>
+        <Stack
+          direction="row"
+          spacing={1}
+          sx={{
+            justifyContent: "flex-end",
+          }}
+        >
           <Button
             variant="outlined"
             onClick={() => {

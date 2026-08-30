@@ -99,7 +99,12 @@ const DashboardCard = (props: LogoDefinition) => {
             <Typography gutterBottom variant="h5" component="div">
               {label}
             </Typography>
-            <Typography variant="body2" color="text.secondary">
+            <Typography
+              variant="body2"
+              sx={{
+                color: "text.secondary",
+              }}
+            >
               {message} {link && <MuiLink href={link}>More info</MuiLink>}
             </Typography>
           </CardContent>

@@ -19,14 +19,20 @@ type TaxonomyAutoSelectProps = Omit<TextFieldProps, "value" | "onChange"> & {
   lang?: string;
 };
 
-const isOptionEqualToValue = (option: string | TaxonomyItem, value: string) =>
-  (typeof option === "string" ? option : option.text) === value;
+const isOptionEqualToValue = (
+  option: string | TaxonomyItem,
+  value: string | TaxonomyItem,
+) =>
+  (typeof option === "string" ? option : option.text) ===
+  (typeof value === "string" ? value : value.text);
 
 export default function TaxonomyAutoSelect(props: TaxonomyAutoSelectProps) {
   const { taxonomy, value, onChange, showKey, fullWidth, lang, ...other } =
     props;
   const [inputValue, setInputValue] = React.useState("");
-  const [selectedValue, setSelectedValue] = React.useState(null);
+  const [selectedValue, setSelectedValue] = React.useState<TaxonomyItem | null>(
+    null,
+  );
   const [fetchedOptions, setFetchedOptions] = React.useState<
     readonly (string | TaxonomyItem)[]
   >([]);
@@ -101,12 +107,12 @@ export default function TaxonomyAutoSelect(props: TaxonomyAutoSelectProps) {
         _event: React.SyntheticEvent,
         newValue: TaxonomyItem | null | string,
       ) => {
-        if (typeof newValue === "object") {
+        if (newValue && typeof newValue === "object") {
           onChange(newValue.text, newValue);
           setSelectedValue(newValue);
           return;
         }
-        onChange(newValue);
+        onChange(newValue ?? "");
       }}
       onInputChange={(_event, newInputValue) => {
         setInputValue(newInputValue);

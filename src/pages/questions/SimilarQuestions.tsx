@@ -38,7 +38,13 @@ export function SimilarQuestions({
   });
 
   return (
-    <Stack direction="column" alignItems="center" spacing={1}>
+    <Stack
+      direction="column"
+      spacing={1}
+      sx={{
+        alignItems: "center",
+      }}
+    >
       <p>{t("questions.no_questions_remaining")}</p>
 
       {prefixlessTag && (
