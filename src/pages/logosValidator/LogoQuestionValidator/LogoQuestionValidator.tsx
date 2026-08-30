@@ -31,10 +31,20 @@ function LogoQuestionValidator() {
       zoomOnLogo: true,
     },
     {},
-  );
+  ) as [
+    { imageSize: string; zoomOnLogo: boolean | string },
+    React.Dispatch<
+      React.SetStateAction<{
+        imageSize: string | number;
+        zoomOnLogo: boolean | string;
+      }>
+    >,
+  ];
 
   const imageSize = Number.parseInt(controlledState.imageSize);
-  const zoomOnLogo = JSON.parse(controlledState.zoomOnLogo);
+  const zoomOnLogo =
+    controlledState.zoomOnLogo === true ||
+    controlledState.zoomOnLogo === "true";
 
   const [filterState] = useFilterState();
 
@@ -194,8 +204,8 @@ function LogoQuestionValidator() {
           <Slider
             aria-label={t("nutriscore.image_sizes")}
             value={imageSize}
-            onChangeCommitted={(event, newValue) =>
-              setControlledState((prev: any) => ({
+            onChangeCommitted={(_event, newValue) =>
+              setControlledState((prev) => ({
                 ...prev,
                 imageSize: newValue,
               }))
@@ -214,7 +224,7 @@ function LogoQuestionValidator() {
             <Checkbox
               checked={zoomOnLogo}
               onChange={(event) =>
-                setControlledState((prev: any) => ({
+                setControlledState((prev) => ({
                   ...prev,
                   zoomOnLogo: event.target.checked,
                 }))

@@ -10,19 +10,7 @@ import { useTranslation } from "react-i18next";
 
 import LabelFilter from "../components/QuestionFilter/LabelFilter";
 import { TYPE_WITHOUT_VALUE } from "../const";
-
-const logoTypeOptions = [
-  { value: "", labelKey: "logos.type" },
-  { value: "label", labelKey: "logos.label" },
-  { value: "brand", labelKey: "logos.brand" },
-  { value: "packager_code", labelKey: "logos.packager_code" },
-  { value: "packaging", labelKey: "logos.packaging" },
-  { value: "qr_code", labelKey: "logos.qr_code" },
-  { value: "category", labelKey: "logos.category" },
-  { value: "nutrition_label", labelKey: "logos.nutrition_label" },
-  { value: "store", labelKey: "logos.store" },
-  { value: "no_logo", labelKey: "logos.no_logo" },
-];
+import { logoTypeOptions } from "./logoTypeOptions";
 
 const isValidAnnotation = ({ type, value }) => {
   if (type?.length === 0) return false;
@@ -42,16 +30,26 @@ const getFormattedValues = ({ type, value }) => {
 
 const useLogoForm = (value, type, request) => {
   const [isSending, setIsSending] = React.useState(false);
-  const [innerValue, setInnerValue] = React.useState(value);
-  const [innerType, setInnerType] = React.useState(type);
+  const [draft, setDraft] = React.useState({
+    sourceValue: value,
+    sourceType: type,
+    value,
+    type,
+  });
+  const isCurrentDraft =
+    draft.sourceValue === value && draft.sourceType === type;
+  const innerValue = isCurrentDraft ? draft.value : value;
+  const innerType = isCurrentDraft ? draft.type : type;
 
-  React.useLayoutEffect(() => {
-    setInnerValue(value);
-  }, [value]);
-
-  React.useLayoutEffect(() => {
-    setInnerType(type);
-  }, [type]);
+  const updateDraft = (changes) => {
+    setDraft({
+      sourceValue: value,
+      sourceType: type,
+      value: innerValue,
+      type: innerType,
+      ...changes,
+    });
+  };
 
   const send = React.useCallback(async () => {
     setIsSending(true);
@@ -75,14 +73,14 @@ const useLogoForm = (value, type, request) => {
 
   const typeControl = {
     value: innerType,
-    onChange: (event) => setInnerType(event.target.value),
+    onChange: (event) => updateDraft({ type: event.target.value }),
   };
   const valueControl = {
     insightType: hasAutoComplet ? innerType : undefined,
     value: innerValue,
     onChange: hasAutoComplet
-      ? (newValue) => setInnerValue(newValue)
-      : (event) => setInnerValue(event.target.value),
+      ? (newValue) => updateDraft({ value: newValue })
+      : (event) => updateDraft({ value: event.target.value }),
   };
 
   return {

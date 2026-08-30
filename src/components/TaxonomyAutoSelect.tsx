@@ -27,7 +27,7 @@ export default function TaxonomyAutoSelect(props: TaxonomyAutoSelectProps) {
     props;
   const [inputValue, setInputValue] = React.useState("");
   const [selectedValue, setSelectedValue] = React.useState(null);
-  const [options, setOptions] = React.useState<
+  const [fetchedOptions, setFetchedOptions] = React.useState<
     readonly (string | TaxonomyItem)[]
   >([]);
 
@@ -40,20 +40,21 @@ export default function TaxonomyAutoSelect(props: TaxonomyAutoSelectProps) {
           request: { input: string },
           callback: (results?: readonly TaxonomyItem[]) => void,
         ) => {
-          searchTaxonomy[taxonomy](request.input, language).then(({ data }) => {
-            callback((data?.options as TaxonomyItem[]) ?? []);
-          });
+          searchTaxonomy[taxonomy](request.input, language)
+            .then(({ data }) => {
+              callback(data?.options ?? []);
+            })
+            .catch(() => callback([]));
         },
         400,
       ),
-    [language],
+    [language, taxonomy],
   );
 
   React.useEffect(() => {
     let active = true;
 
     if (inputValue === "") {
-      setOptions(value ? [value] : []);
       return undefined;
     }
 
@@ -69,7 +70,7 @@ export default function TaxonomyAutoSelect(props: TaxonomyAutoSelectProps) {
           newOptions = [...newOptions, ...results];
         }
 
-        setOptions(newOptions);
+        setFetchedOptions(newOptions);
       }
     });
 
@@ -77,6 +78,8 @@ export default function TaxonomyAutoSelect(props: TaxonomyAutoSelectProps) {
       active = false;
     };
   }, [value, inputValue, fetch]);
+
+  const options = inputValue === "" ? (value ? [value] : []) : fetchedOptions;
 
   return (
     <Autocomplete
@@ -94,7 +97,10 @@ export default function TaxonomyAutoSelect(props: TaxonomyAutoSelectProps) {
       }
       isOptionEqualToValue={isOptionEqualToValue}
       // noOptionsText="No locations"
-      onChange={(event: any, newValue: TaxonomyItem | null | string) => {
+      onChange={(
+        _event: React.SyntheticEvent,
+        newValue: TaxonomyItem | null | string,
+      ) => {
         if (typeof newValue === "object") {
           onChange(newValue.text, newValue);
           setSelectedValue(newValue);
@@ -102,7 +108,7 @@ export default function TaxonomyAutoSelect(props: TaxonomyAutoSelectProps) {
         }
         onChange(newValue);
       }}
-      onInputChange={(event, newInputValue) => {
+      onInputChange={(_event, newInputValue) => {
         setInputValue(newInputValue);
       }}
       onBlur={() => {

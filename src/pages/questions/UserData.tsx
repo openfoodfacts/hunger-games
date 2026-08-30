@@ -27,21 +27,19 @@ const UserData = () => {
   const { questionsCount, recentAnswers } = useQuestions();
 
   const [loginAlreadyProposed, setLoginAlreadyProposed] = React.useState(false);
-  const [loginModalOpen, setLoginModalOpen] = React.useState(false);
 
   const { isLoggedIn } = React.useContext(LoginContext);
-
-  React.useEffect(() => {
-    if (recentAnswers.length > 3 && !isLoggedIn && !loginAlreadyProposed) {
-      setLoginModalOpen(true);
-    }
-  }, [recentAnswers.length, isLoggedIn, loginAlreadyProposed]);
+  const loginModalOpen =
+    recentAnswers.length > 3 && !isLoggedIn && !loginAlreadyProposed;
 
   return (
     <Box>
       <Stack spacing={1}>
         <Typography sx={{ my: 2 }}>
-          {t("questions.remaining_annotations")}: {questionsCount}
+          {t("questions.remaining_annotations")}:{" "}
+          {questionsCount !== null && questionsCount >= 99
+            ? "100+"
+            : (questionsCount ?? 0)}
         </Typography>
         {recentAnswers.map(
           ({ insight_id, barcode, value, insight_type, answer }) => (
@@ -62,7 +60,6 @@ const UserData = () => {
       <Dialog
         open={loginModalOpen}
         onClose={() => {
-          setLoginModalOpen(false);
           setLoginAlreadyProposed(true);
         }}
       >
