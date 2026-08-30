@@ -29,9 +29,10 @@ interface LabelFilterProps {
 const LabelFilter = (props: LabelFilterProps) => {
   const { showKey, onChange, value, insightType, fullWidth, ...other } = props;
 
-  const [innerValue, setInnerValue] = React.useState<
-    string | TaxonomyOption | null
-  >(null);
+  const [selection, setSelection] = React.useState<{
+    sourceValue: string;
+    value: string | TaxonomyOption | null;
+  }>({ sourceValue: value, value });
   const [inputValue, setInputValue] = React.useState("");
 
   const lang = getLang();
@@ -58,26 +59,17 @@ const LabelFilter = (props: LabelFilterProps) => {
     },
   });
 
-  React.useEffect(() => {
-    setInnerValue((prev) => {
-      if (typeof prev === "object" && prev?.id === value) {
-        return prev;
-      }
-      const solution = options?.find((option) => option.id === value);
-
-      if (solution) {
-        return solution;
-      }
-      return value;
-    });
-  }, [value, options]);
+  const innerValue =
+    selection.sourceValue === value
+      ? selection.value
+      : (options?.find((option) => option.id === value) ?? value);
 
   return (
     <Autocomplete
       fullWidth={fullWidth}
       freeSolo
       onChange={(_, newValue) => {
-        setInnerValue(newValue);
+        setSelection({ sourceValue: value, value: newValue });
         onChange(typeof newValue === "object" ? newValue?.id : newValue);
       }}
       onInputChange={(_event, newInputValue) => {
@@ -89,7 +81,7 @@ const LabelFilter = (props: LabelFilterProps) => {
             ? innerValue === inputValue
             : innerValue?.text === inputValue;
         if (!isSelectedValue) {
-          setInnerValue(inputValue);
+          setSelection({ sourceValue: value, value: inputValue });
           onChange(inputValue);
         }
       }}

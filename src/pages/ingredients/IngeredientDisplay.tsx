@@ -3,7 +3,6 @@ import Button from "@mui/material/Button";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 import Tooltip from "@mui/material/Tooltip";
-import LoadingButton from "@mui/lab/LoadingButton";
 import { useTheme } from "@mui/material";
 
 import { useTranslation } from "react-i18next";
@@ -320,7 +319,7 @@ export function IngredientAnotation({
         >
           {t("ingredients.revert")}
         </Button>
-        <LoadingButton
+        <Button
           onClick={() => void fetchIngredients(text, lang)}
           fullWidth
           loading={isLoading}
@@ -328,8 +327,8 @@ export function IngredientAnotation({
           variant="outlined"
         >
           {t("ingredients.parsing")}
-        </LoadingButton>
-        <LoadingButton
+        </Button>
+        <Button
           onClick={() => saveIngredient.mutate()}
           variant="contained"
           disabled={!text}
@@ -338,7 +337,7 @@ export function IngredientAnotation({
           fullWidth
         >
           {t("ingredients.send")}
-        </LoadingButton>
+        </Button>
       </Stack>
       {saveIngredient.error && (
         <Typography color="error">

@@ -4,6 +4,7 @@ import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
+import Divider from "@mui/material/Divider";
 import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
@@ -19,9 +20,10 @@ import List from "@mui/material/List";
 
 import SettingsIcon from "@mui/icons-material/Settings";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
+import PublicIcon from "@mui/icons-material/Public";
 import ExpandLess from "@mui/icons-material/ExpandLess";
 import ExpandMore from "@mui/icons-material/ExpandMore";
-import HelpOutlineIcon from "@mui/icons-material/HelpOutline";
+import HelpOutlineIcon from "@mui/icons-material/HelpOutlineOutlined";
 
 import DevModeContext from "../contexts/devMode";
 import LoginContext from "../contexts/login";
@@ -116,10 +118,6 @@ const MultiPagesButton = ({
   const { t } = useTranslation();
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
 
-  React.useEffect(() => {
-    if (!isOpen) setAnchorEl(null);
-  }, [isOpen]);
-
   const handleOpen = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorEl(event.currentTarget);
     if (!isOpen) toggleIsOpen();
@@ -136,7 +134,12 @@ const MultiPagesButton = ({
         color="inherit"
         key={translationKey}
         onClick={handleOpen}
-        sx={{ my: 2, display: "block" }}
+        sx={{
+          my: 1,
+          px: { lg: 1, xl: 1.5 },
+          display: "block",
+          whiteSpace: "nowrap",
+        }}
       >
         {t(translationKey)}
       </Button>
@@ -153,9 +156,16 @@ const MultiPagesButton = ({
             onClick={handleClose}
             {...(isExternalUrl(subPage.url)
               ? { component: "a", target: "_blank", href: subPage.url }
-              : { component: Link, to: `/${subPage.url}` })}
+              : {
+                  component: Link as React.ElementType,
+                  to: `/${subPage.url}`,
+                })}
           >
-            <Typography textAlign="center">
+            <Typography
+              sx={{
+                textAlign: "center",
+              }}
+            >
               {t(subPage.translationKey)}
             </Typography>
           </MenuItem>
@@ -173,7 +183,8 @@ const ResponsiveAppBar = () => {
   const [isTourOpen, setIsTourOpen] = React.useState(false);
   const [country, setCountry] = useCountry();
   const theme = useTheme();
-  const isDesktop = useMediaQuery(theme.breakpoints.up("md"));
+  // Keep page visibility in sync with the breakpoint used by the desktop nav.
+  const isDesktop = useMediaQuery(theme.breakpoints.up("lg"));
 
   const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorElNav(event.currentTarget);
@@ -244,7 +255,9 @@ const ResponsiveAppBar = () => {
           >
             <IconButton
               size="large"
-              aria-label="account of current user"
+              aria-label={t("menu.open_navigation", {
+                defaultValue: "Open navigation menu",
+              })}
               aria-controls="menu-appbar"
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
@@ -280,9 +293,16 @@ const ResponsiveAppBar = () => {
                         sx={{ display: "block" }}
                         {...(isExternalUrl(page.url)
                           ? { component: "a", target: "_blank", href: page.url }
-                          : { component: Link, to: `/${page.url}` })}
+                          : {
+                              component: Link as React.ElementType,
+                              to: `/${page.url}`,
+                            })}
                       >
-                        <Typography textAlign="left">
+                        <Typography
+                          sx={{
+                            textAlign: "left",
+                          }}
+                        >
                           {t(page.translationKey)}
                         </Typography>
                       </MenuItem>
@@ -304,7 +324,11 @@ const ResponsiveAppBar = () => {
                             }))
                           }
                         >
-                          <Typography textAlign="center">
+                          <Typography
+                            sx={{
+                              textAlign: "center",
+                            }}
+                          >
                             {t(page.translationKey)}
                           </Typography>
 
@@ -325,10 +349,14 @@ const ResponsiveAppBar = () => {
                                 sx={{ pl: 4 }}
                                 key={subPage.translationKey}
                                 onClick={handleCloseNavMenu}
-                                component={Link}
+                                component={Link as React.ElementType}
                                 to={`/${subPage.url}`}
                               >
-                                <Typography textAlign="center">
+                                <Typography
+                                  sx={{
+                                    textAlign: "center",
+                                  }}
+                                >
                                   {t(subPage.translationKey)}
                                 </Typography>
                               </MenuItem>
@@ -353,7 +381,13 @@ const ResponsiveAppBar = () => {
                     handleCloseNavMenu();
                   }}
                 >
-                  <Typography textAlign="center">{t("menu.tour")}</Typography>
+                  <Typography
+                    sx={{
+                      textAlign: "center",
+                    }}
+                  >
+                    {t("menu.tour")}
+                  </Typography>
                 </MenuItem>
               </Menu>
             )}
@@ -361,7 +395,7 @@ const ResponsiveAppBar = () => {
             <Typography
               variant="h5"
               noWrap
-              component={Link}
+              component={Link as React.ElementType}
               to="/"
               sx={{
                 flexGrow: 0,
@@ -379,12 +413,15 @@ const ResponsiveAppBar = () => {
               <AccountCircleIcon color="success" />
             ) : (
               <IconButton
-                onClick={async () => {
-                  const isLoggedIn = await refresh();
-                  if (!isLoggedIn) {
-                    window.open(`${OFF_URL}/cgi/login.pl`, "_blank")?.focus();
-                  }
-                }}
+                aria-label={t("menu.log_in")}
+                onClick={() =>
+                  void (async () => {
+                    const isLoggedIn = await refresh();
+                    if (!isLoggedIn) {
+                      window.open(`${OFF_URL}/cgi/login.pl`, "_blank")?.focus();
+                    }
+                  })()
+                }
               >
                 <AccountCircleIcon color="error" />
               </IconButton>
@@ -399,6 +436,7 @@ const ResponsiveAppBar = () => {
               alignItems: "center",
               width: "100%",
               justifyContent: "space-between",
+              minWidth: 0,
             }}
           >
             <Box
@@ -406,6 +444,10 @@ const ResponsiveAppBar = () => {
                 display: "flex",
                 flexDirection: "row",
                 alignItems: "center",
+                minWidth: 0,
+                overflowX: "auto",
+                scrollbarWidth: "none",
+                "&::-webkit-scrollbar": { display: "none" },
               }}
             >
               <MuiLink
@@ -422,7 +464,7 @@ const ResponsiveAppBar = () => {
               </MuiLink>
               <Typography
                 variant="h6"
-                component={Link}
+                component={Link as React.ElementType}
                 to="/"
                 sx={{
                   mr: 2,
@@ -435,6 +477,15 @@ const ResponsiveAppBar = () => {
               >
                 Hunger Games
               </Typography>
+              <Divider
+                orientation="vertical"
+                sx={{
+                  height: 32,
+                  alignSelf: "center",
+                  mx: { lg: 0.5, xl: 1 },
+                  borderColor: "divider",
+                }}
+              />
 
               {displayedPages.map((page) => {
                 if (page.url) {
@@ -443,7 +494,12 @@ const ResponsiveAppBar = () => {
                       color="inherit"
                       key={page.url}
                       onClick={handleCloseNavMenu}
-                      sx={{ my: 2, display: "block" }}
+                      sx={{
+                        my: 1,
+                        px: { lg: 1, xl: 1.5 },
+                        display: "block",
+                        whiteSpace: "nowrap",
+                      }}
                       component={"a"}
                       href={page.url}
                       target="_blank"
@@ -456,8 +512,13 @@ const ResponsiveAppBar = () => {
                       color="inherit"
                       key={page.url}
                       onClick={handleCloseNavMenu}
-                      sx={{ my: 2, display: "block" }}
-                      component={Link}
+                      sx={{
+                        my: 1,
+                        px: { lg: 1, xl: 1.5 },
+                        display: "block",
+                        whiteSpace: "nowrap",
+                      }}
+                      component={Link as React.ElementType}
                       to={`/${page.url}`}
                       data-welcome-tour={page.url}
                     >
@@ -495,45 +556,87 @@ const ResponsiveAppBar = () => {
                 display: "flex",
                 flexDirection: "row",
                 alignItems: "center",
-                "&>*": {
-                  mr: 1.5,
-                },
+                flexShrink: 0,
+                gap: { lg: 0.5, xl: 1 },
+                "& > *": { mr: 0 },
               }}
             >
-              <Autocomplete
-                disableClearable
-                options={countryNames}
-                getOptionLabel={(option) =>
-                  option.countryCode
-                    ? `${option.label} (${option.countryCode})`
-                    : option.label
-                }
-                isOptionEqualToValue={(option, value) =>
-                  option.countryCode === value.countryCode
-                }
-                value={
-                  countryNames.find((c) => c.countryCode === country) ??
-                  countryNames.find((c) => c.countryCode === "")
-                }
-                onChange={(_, newValue) =>
-                  setCountry(newValue?.countryCode ?? "", "global")
-                }
-                sx={{ width: 220, fieldset: { border: "none" } }}
-                renderInput={(params) => (
-                  <TextField {...params} variant="outlined" />
-                )}
-              />
+              <Box
+                title={t("menu.country", { defaultValue: "Country" })}
+                sx={{
+                  display: "flex",
+                  alignItems: "center",
+                  gap: 0.5,
+                  pl: { lg: 1, xl: 1.5 },
+                }}
+              >
+                <Divider
+                  orientation="vertical"
+                  sx={{
+                    height: 32,
+                    alignSelf: "center",
+                    mr: { lg: 0.5, xl: 1 },
+                    borderColor: "divider",
+                  }}
+                />
+                <PublicIcon fontSize="small" aria-hidden="true" />
+                <Autocomplete
+                  disableClearable
+                  options={countryNames}
+                  getOptionLabel={(option) =>
+                    option.countryCode
+                      ? `${option.label} (${option.countryCode})`
+                      : option.label
+                  }
+                  isOptionEqualToValue={(option, value) =>
+                    option.countryCode === value.countryCode
+                  }
+                  value={
+                    countryNames.find((c) => c.countryCode === country) ??
+                    countryNames.find((c) => c.countryCode === "")
+                  }
+                  onChange={(_, newValue) =>
+                    setCountry(newValue?.countryCode ?? "", "global")
+                  }
+                  sx={{
+                    width: { lg: 160, xl: 220 },
+                    fieldset: { border: "none" },
+                    "& .MuiInputBase-root": {
+                      borderRadius: 1,
+                      bgcolor: "action.hover",
+                    },
+                  }}
+                  renderInput={(params) => (
+                    <TextField
+                      {...params}
+                      variant="outlined"
+                      size="small"
+                      slotProps={{
+                        ...params.slotProps,
+                        htmlInput: {
+                          ...params.slotProps.htmlInput,
+                          "aria-label": t("menu.country", {
+                            defaultValue: "Country",
+                          }),
+                        },
+                      }}
+                    />
+                  )}
+                />
+              </Box>
               <IconButton
+                aria-label={t("menu.settings")}
                 color="inherit"
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2 }}
-                component={Link}
+                component={Link as React.ElementType}
                 to={`/settings`}
                 data-welcome-tour="settings"
               >
                 <SettingsIcon />
               </IconButton>
               <IconButton
+                aria-label={t("menu.tour")}
                 color="inherit"
                 onClick={() => {
                   setIsTourOpen(true);
@@ -550,17 +653,30 @@ const ResponsiveAppBar = () => {
                 }
               >
                 {isLoggedIn ? (
-                  <AccountCircleIcon color="success" />
+                  <Box
+                    sx={{
+                      width: 48,
+                      height: 48,
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                    }}
+                  >
+                    <AccountCircleIcon color="success" />
+                  </Box>
                 ) : (
                   <IconButton
-                    onClick={async () => {
-                      const isLoggedIn = await refresh();
-                      if (!isLoggedIn) {
-                        window
-                          .open(`${OFF_URL}/cgi/login.pl`, "_blank")
-                          ?.focus();
-                      }
-                    }}
+                    aria-label={t("menu.log_in")}
+                    onClick={() =>
+                      void (async () => {
+                        const isLoggedIn = await refresh();
+                        if (!isLoggedIn) {
+                          window
+                            .open(`${OFF_URL}/cgi/login.pl`, "_blank")
+                            ?.focus();
+                        }
+                      })()
+                    }
                   >
                     <AccountCircleIcon color="error" />
                   </IconButton>

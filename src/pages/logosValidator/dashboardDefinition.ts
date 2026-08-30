@@ -84,7 +84,7 @@ const UNTYPED_LOGOS = {
   "en:eu-organic": {
     tag: "en:eu-organic",
     label: "Bio Européen",
-    logo: `https://images.${OFF_DOMAIN}/images/lang/fr/labels/bio-europeen.135x90.png`,
+    logo: `https://images.${OFF_DOMAIN}/images/lang/en/labels/eu-organic.135x90.svg`,
     type: "label",
   },
   "en:pdo": {
@@ -1931,7 +1931,7 @@ const UNTYPED_LOGOS = {
   "en:keyhole": {
     tag: "en:keyhole",
     label: "Keyhole",
-    logo: `https://images.${OFF_DOMAIN}/images/lang/en/labels/keyhole.90x90.png`,
+    logo: `https://images.${OFF_DOMAIN}/images/lang/en/labels/keyhole.90x90.svg`,
     type: "label",
   },
   // Australia
@@ -2958,7 +2958,7 @@ export const DASHBOARD: DashBoardTheme[] = [
   // Halal dashboard
   {
     tag: "halal",
-    title: "Halal",
+    title: "حلال Halal",
     logos: [
       "en:halal-food-council-of-europe",
       "fr:societe-francaise-de-controle-de-viande-halal",
@@ -2972,7 +2972,7 @@ export const DASHBOARD: DashBoardTheme[] = [
   // Kosher dashboard
   {
     tag: "kosher",
-    title: "Kosher",
+    title: "🕎 Kosher",
     logos: [
       //   "en:cor-kosher",
       // "en:kosher-check",
@@ -3205,7 +3205,7 @@ export const DASHBOARD: DashBoardTheme[] = [
   // No gluten
   {
     tag: "no-gluten",
-    title: "No Gluten",
+    title: "🚫+🌾 No Gluten",
     logos: [
       "es:sin-tacc",
       "es:sin-gluten",
@@ -3218,7 +3218,7 @@ export const DASHBOARD: DashBoardTheme[] = [
   // Food Awards
   {
     tag: "food-awards",
-    title: "Food Awards",
+    title: "🏆 Food Awards",
     logos: [
       "en:concours-general-agricole",
       "en:medaille-d-argent-du-concours-general-agricole",

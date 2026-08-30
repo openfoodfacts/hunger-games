@@ -13,7 +13,7 @@ import Loader from "../loader";
 import LabelFilter from "../../components/QuestionFilter/LabelFilter";
 import LogoGrid from "../../components/LogoGrid";
 import AnnotateLogoModal from "../../components/AnnotateLogoModal";
-import { logoTypeOptions } from "../../components/LogoSearchForm";
+import { logoTypeOptions } from "../../components/logoTypeOptions";
 import robotoff from "../../robotoff";
 import off from "../../off";
 import useUrlParams from "../../hooks/useUrlParams";
@@ -83,31 +83,47 @@ const useLogoFetching = (filter) => {
   const [fetchedProducts, setFetchedProducts] = React.useState([]);
   const [logos, setLogos] = React.useState([]);
   const requestedProductsRef = React.useRef({});
+  const requestGenerationRef = React.useRef(0);
+  const resetPendingRef = React.useRef(false);
+  const [requestGeneration, setRequestGeneration] = React.useState(0);
 
   React.useEffect(() => {
-    setProductPage(1);
-    setCanLoadMore(true);
-    setFetchedProducts([]);
-    setLogos([]);
-    requestedProductsRef.current = {};
+    let isCurrent = true;
+    requestGenerationRef.current += 1;
+    resetPendingRef.current = true;
+    const nextGeneration = requestGenerationRef.current;
+    queueMicrotask(() => {
+      if (!isCurrent) return;
+      setProductPage(1);
+      setCanLoadMore(true);
+      setFetchedProducts([]);
+      setLogos([]);
+      requestedProductsRef.current = {};
+      resetPendingRef.current = false;
+      setRequestGeneration(nextGeneration);
+    });
+    return () => {
+      isCurrent = false;
+    };
   }, [filter]);
 
   React.useEffect(() => {
-    const filterStateIsIncomplet = !filter.tagtype || !filter.tag;
-    if (filterStateIsIncomplet) {
-      // Avoid fetching data if no value to filter
-      return () => {};
+    if (resetPendingRef.current) {
+      return;
     }
-
     let isValid = true;
-    setIsLoading(true);
-    setCanLoadMore(false);
-    fetchProducts({
-      page: productPage,
-      filter,
-    })
+    const generation = requestGeneration;
+    const loadProducts = async () => {
+      if (!filter.tagtype || !filter.tag) {
+        return { count: 0, codes: [] };
+      }
+      setIsLoading(true);
+      setCanLoadMore(false);
+      return fetchProducts({ page: productPage, filter });
+    };
+    loadProducts()
       .then(({ count, codes }) => {
-        if (isValid) {
+        if (isValid && generation === requestGenerationRef.current) {
           setFetchedProducts((prev) => [...prev, ...codes]);
 
           setIsLoading(false);
@@ -115,7 +131,7 @@ const useLogoFetching = (filter) => {
         }
       })
       .catch(() => {
-        if (isValid) {
+        if (isValid && generation === requestGenerationRef.current) {
           setIsLoading(false);
           setCanLoadMore(false);
         }
@@ -124,9 +140,10 @@ const useLogoFetching = (filter) => {
     return () => {
       isValid = false;
     };
-  }, [filter, productPage]);
+  }, [filter, productPage, requestGeneration]);
 
   React.useEffect(() => {
+    const generation = requestGeneration;
     fetchedProducts.forEach((code) => {
       if (requestedProductsRef.current[code]) {
         return;
@@ -134,11 +151,13 @@ const useLogoFetching = (filter) => {
       requestedProductsRef.current[code] = true;
       requestProductLogos(code)
         .then((logos) => {
-          setLogos((prev) => [...prev, ...logos]);
+          if (generation === requestGenerationRef.current) {
+            setLogos((prev) => [...prev, ...logos]);
+          }
         })
         .catch(() => {});
     });
-  }, [fetchedProducts]);
+  }, [fetchedProducts, requestGeneration]);
 
   const loadMore = React.useCallback(() => {
     setProductPage((prev) => prev + 1);
@@ -203,7 +222,13 @@ export default function AnnotateLogosFromProducts() {
 
   const [internalFilter, setInternalFilter] = React.useState(() => filter);
   React.useEffect(() => {
-    setInternalFilter(filter);
+    let isCurrent = true;
+    queueMicrotask(() => {
+      if (isCurrent) setInternalFilter(filter);
+    });
+    return () => {
+      isCurrent = false;
+    };
   }, [filter]);
 
   const [

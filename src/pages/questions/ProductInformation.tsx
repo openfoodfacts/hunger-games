@@ -14,7 +14,7 @@ import Checkbox from "@mui/material/Checkbox";
 import Typography from "@mui/material/Typography";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import EditIcon from "@mui/icons-material/Edit";
-import AddCircleOutlineIcon from "@mui/icons-material/AddCircleOutline";
+import AddCircleOutlineIcon from "@mui/icons-material/AddCircleOutlineOutlined";
 import VisibilityIcon from "@mui/icons-material/Visibility";
 import Table from "@mui/material/Table";
 import TableBody from "@mui/material/TableBody";
@@ -62,17 +62,14 @@ const ProductImagesGrid = ({
       sx={{
         display: "grid",
         width: "100%",
-        gridGap: "30px",
-        gridTemplateColumns: "repeat(auto-fill, minmax(150px, 1fr))",
+        gap: 1.5,
+        gridTemplateColumns: "repeat(auto-fill, minmax(120px, 1fr))",
 
         backgroundColor: theme.palette.mode === "dark" ? "#201f1ff5" : "white",
         maxHeight: "32rem",
-        overflowY: "scroll",
-        ml: "1px",
-        mt: "2px",
-        pl: "10px",
-        py: "10px",
-        borderRadius: "10px",
+        overflowY: "auto",
+        p: 1,
+        borderRadius: 2,
         scrollbarWidth: "thin",
         scrollbarColor:
           theme.palette.mode === "dark" ? "#4e4d4dff #201f1f" : "",
@@ -280,9 +277,11 @@ const ProductInformation = () => {
       <>
         {/* Product name or code */}
         <Typography
-          variant="h4"
+          variant="h5"
           gutterBottom
-          fontFamily={productData?.product_name ? "inherit" : "monospace"}
+          sx={{
+            fontFamily: productData?.product_name ? "inherit" : "monospace",
+          }}
         >
           {productLoading ? (
             <Skeleton />
@@ -331,7 +330,7 @@ const ProductInformation = () => {
 
       {/* Other questions */}
       <>
-        <Typography variant="h5" gutterBottom>
+        <Typography variant="h6" gutterBottom>
           {t("questions.other_questions")}
         </Typography>
         <ProductOtherQuestions question={question} />
@@ -352,7 +351,12 @@ const ProductInformation = () => {
           (productLoading ? (
             <Skeleton variant="rectangular" width="100%" height={200} />
           ) : !productData?.images ? (
-            <Typography variant="body2" color="text.secondary">
+            <Typography
+              variant="body2"
+              sx={{
+                color: "text.secondary",
+              }}
+            >
               {t("questions.no_images")}
             </Typography>
           ) : (
