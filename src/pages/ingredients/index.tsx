@@ -156,7 +156,12 @@ export default function IngredientsPage() {
       {isLoading ? (
         "loading..."
       ) : error && data.length === 0 ? (
-        <Stack alignItems="center" spacing={1}>
+        <Stack
+          spacing={1}
+          sx={{
+            alignItems: "center",
+          }}
+        >
           <Typography>Unable to load products: {error}</Typography>
           <Button onClick={retry} variant="outlined">
             Retry

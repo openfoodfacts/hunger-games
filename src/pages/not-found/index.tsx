@@ -5,7 +5,7 @@ import Typography from "@mui/material/Typography";
 import Link from "@mui/material/Link";
 import logo from "../../assets/404.png";
 
-export default function Insights() {
+export default function NotFound() {
   const { t } = useTranslation();
 
   return (

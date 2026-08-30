@@ -183,9 +183,14 @@ function LogoQuestionValidator() {
       </Box>
       <Stack
         direction="row"
-        justifyContent="center"
-        alignItems="center"
-        sx={{ pt: 5, px: 5, pb: 0, textAlign: "center" }}
+        sx={{
+          justifyContent: "center",
+          alignItems: "center",
+          pt: 5,
+          px: 5,
+          pb: 0,
+          textAlign: "center",
+        }}
       >
         <Typography sx={{ mx: 3 }}>
           {t("nutriscore.images_remaining", {
@@ -237,9 +242,13 @@ function LogoQuestionValidator() {
       </Stack>
       <Stack
         direction="row"
-        justifyContent="start"
-        alignItems="center"
-        sx={{ px: 5, py: 1, textAlign: "left" }}
+        sx={{
+          justifyContent: "start",
+          alignItems: "center",
+          px: 5,
+          py: 1,
+          textAlign: "left",
+        }}
       >
         <Button onClick={selectAll} size="small" sx={{ mr: 2 }}>
           {t("nutriscore.select_all")}
@@ -290,7 +299,12 @@ function LogoQuestionValidator() {
           marginTop: 2,
         }}
       >
-        <Stack direction="row" justifyContent="end">
+        <Stack
+          direction="row"
+          sx={{
+            justifyContent: "end",
+          }}
+        >
           <Button
             size="large"
             variant="contained"

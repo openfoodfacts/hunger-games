@@ -149,21 +149,22 @@
     "games": "Giochi",
     "questions": "Domande",
     "logos": "Loghi",
-    "logos-annotation": "Annotazione dei loghi",
-    "logos-search": "Ricerca dei loghi",
-    "logos-product-search": "Annotazione per prodotti",
-    "logos-deep-search": "Annotazione infinita",
+    "logos-annotation": "Annota loghi",
+    "logos-search": "Cerca loghi",
+    "logos-product-search": "Annota prodotti",
+    "logos-deep-search": "Ricerca avanzata dei loghi",
     "manage": "Gestisci",
     "insights": "Approfondimenti",
     "nutritions": "Nutrizione",
-    "ingredient-spellcheck": "Controllo ortografico degli ingredienti",
-    "ingredient-detection": "Rilevamento degli ingredienti",
+    "ingredient-spellcheck": "Controllo ortografia ingredienti",
+    "ingredient-detection": "Rileva ingredienti",
     "settings": "Impostazioni",
     "green-score": "Green-Score",
-    "dashboard": "Pannello di controllo dei loghi",
+    "dashboard": "Dashboard dei loghi",
     "tour": "Inizia la visita guidata",
+    "open_navigation": "Apri il menu di navigazione",
     "logged_in_user": "Accesso effettuato come {{userName}}",
-    "log_in": "Clicca per accedere",
+    "log_in": "Accedi",
     "moderation": "Moderazione",
     "ingredients": "Ingredienti"
   },
@@ -401,6 +402,12 @@
     "getRobotoffPrediciton": "Ottieni previsioni da Robotoff"
   },
   "footer": {
+    "social": {
+      "email": "Email Open Food Facts",
+      "twitter": "Open Food Facts su Twitter",
+      "instagram": "Open Food Facts su Instagram",
+      "facebook": "Open Food Facts su Facebook"
+    },
     "appStore": {
       "title": "App Store",
       "subtitle": "Scarica da"
