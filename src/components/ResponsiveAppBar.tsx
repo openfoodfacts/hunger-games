@@ -255,7 +255,9 @@ const ResponsiveAppBar = () => {
           >
             <IconButton
               size="large"
-              aria-label="account of current user"
+              aria-label={t("menu.open_navigation", {
+                defaultValue: "Open navigation menu",
+              })}
               aria-controls="menu-appbar"
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
@@ -411,6 +413,7 @@ const ResponsiveAppBar = () => {
               <AccountCircleIcon color="success" />
             ) : (
               <IconButton
+                aria-label={t("menu.log_in")}
                 onClick={() =>
                   void (async () => {
                     const isLoggedIn = await refresh();
@@ -622,6 +625,7 @@ const ResponsiveAppBar = () => {
                 />
               </Box>
               <IconButton
+                aria-label={t("menu.settings")}
                 color="inherit"
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2 }}
@@ -632,6 +636,7 @@ const ResponsiveAppBar = () => {
                 <SettingsIcon />
               </IconButton>
               <IconButton
+                aria-label={t("menu.tour")}
                 color="inherit"
                 onClick={() => {
                   setIsTourOpen(true);
@@ -661,6 +666,7 @@ const ResponsiveAppBar = () => {
                   </Box>
                 ) : (
                   <IconButton
+                    aria-label={t("menu.log_in")}
                     onClick={() =>
                       void (async () => {
                         const isLoggedIn = await refresh();

@@ -8,18 +8,22 @@ import { useTranslation } from "react-i18next";
 const socialMedia = [
   {
     icon: <EmailIcon />,
+    labelKey: "footer.social.email",
     link: "mailto:contact@openfoodfacts.org",
   },
   {
     icon: <TwitterIcon />,
+    labelKey: "footer.social.twitter",
     link: "https://twitter.com/openfoodfacts",
   },
   {
     icon: <InstagramIcon />,
+    labelKey: "footer.social.instagram",
     link: "https://www.instagram.com/open.food.facts/",
   },
   {
     icon: <FacebookIcon />,
+    labelKey: "footer.social.facebook",
     link: "https://www.facebook.com/OpenFoodFacts",
   },
 ];
@@ -61,7 +65,12 @@ export default function OpenFoodFacts() {
       <Box>
         {socialMedia.map((media) => {
           return (
-            <IconButton key={media.link} href={media.link} target="_blank">
+            <IconButton
+              key={media.link}
+              href={media.link}
+              target="_blank"
+              aria-label={t(media.labelKey)}
+            >
               {media.icon}
             </IconButton>
           );
