@@ -162,7 +162,9 @@ export default function App() {
   }, [userState.isLoggedIn]);
 
   React.useEffect(() => {
-    refresh();
+    Promise.resolve()
+      .then(refresh)
+      .catch(() => {});
   }, [refresh]);
 
   // Matomo page view tracking

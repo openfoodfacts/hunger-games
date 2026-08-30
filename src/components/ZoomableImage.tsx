@@ -39,18 +39,20 @@ const ZoomableImage = ({
   const apiRef = React.useRef<ReactZoomPanPinchRef>(null);
   const [rotation, setRotation] = React.useState(0);
   const [isOpen, setIsOpen] = React.useState(false);
-  const [showFullResolution, setShowFullResolution] = React.useState(false);
-  const [fullResolutionStatus, setFullResolutionStatus] = React.useState<
-    "none" | "loading" | "available"
-  >("none");
+  const [resolutionState, setResolutionState] = React.useState<{
+    source: string;
+    showFullResolution: boolean;
+    status: "none" | "loading" | "available";
+  }>({ source: src, showFullResolution: false, status: "none" });
+  const currentResolutionState =
+    resolutionState.source === src
+      ? resolutionState
+      : { source: src, showFullResolution: false, status: "none" as const };
+  const { showFullResolution, status: fullResolutionStatus } =
+    currentResolutionState;
   const { t } = useTranslation();
 
   const theme = useTheme();
-
-  React.useEffect(() => {
-    setShowFullResolution(false);
-    setFullResolutionStatus("none");
-  }, [src]);
 
   return (
     <>
@@ -83,8 +85,11 @@ const ZoomableImage = ({
         open={isOpen}
         onClose={() => {
           setIsOpen(false);
-          setShowFullResolution(false);
-          setFullResolutionStatus("none");
+          setResolutionState({
+            source: src,
+            showFullResolution: false,
+            status: "none",
+          });
         }}
         fullScreen
       >
@@ -144,15 +149,25 @@ const ZoomableImage = ({
               variant="outlined"
               onClick={() => {
                 if (!showFullResolution && srcFull) {
-                  setFullResolutionStatus("loading");
+                  setResolutionState({
+                    source: src,
+                    showFullResolution: false,
+                    status: "loading",
+                  });
                   const img = new Image();
                   img.src = srcFull;
                   img.onload = () => {
-                    setFullResolutionStatus("available");
-                    setShowFullResolution(true);
+                    setResolutionState({
+                      source: src,
+                      showFullResolution: true,
+                      status: "available",
+                    });
                   };
                 } else {
-                  setShowFullResolution(false);
+                  setResolutionState({
+                    ...currentResolutionState,
+                    showFullResolution: false,
+                  });
                 }
               }}
               sx={{

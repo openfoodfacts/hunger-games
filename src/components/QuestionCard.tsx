@@ -57,11 +57,10 @@ function EditableCardTitle({
   onSave,
 }: EditableCardTitleProps) {
   const [isEditMode, setIsEditMode] = React.useState(false);
-  const [innerTitle, setInnerTitle] = React.useState(title);
-
-  React.useEffect(() => {
-    setInnerTitle(title);
-  }, [title]);
+  const [titleDraft, setTitleDraft] = React.useState({ source: title, title });
+  const innerTitle = titleDraft.source === title ? titleDraft.title : title;
+  const setInnerTitle = (newTitle: string) =>
+    setTitleDraft({ source: title, title: newTitle });
 
   const handleStartEdit: React.MouseEventHandler = (event) => {
     event.preventDefault();

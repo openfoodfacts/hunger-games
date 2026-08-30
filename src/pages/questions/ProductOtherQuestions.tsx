@@ -37,21 +37,6 @@ export default function ProductOtherQuestions({
     [data, question.insight_id, answers],
   );
 
-  // Reset the pending answer for new data
-  React.useEffect(() => {
-    if (!data) {
-      return;
-    }
-    setAnswers(
-      Object.fromEntries(
-        data.map((question) => [
-          question.insight_id,
-          { value: null, sent: false },
-        ]),
-      ),
-    );
-  }, [data]);
-
   if (status === "pending") {
     return <Typography>Loading ...</Typography>;
   }
@@ -83,14 +68,18 @@ export default function ProductOtherQuestions({
       pendingAnswer === CORRECT_INSIGHT || pendingAnswer === WRONG_INSIGHT;
     const sendAnswer = valueIsSet
       ? () => {
-          robotoff.annotate(insight_id, pendingAnswer);
-          setAnswers((prev) => ({
-            ...prev,
-            [insight_id]: {
-              ...prev[insight_id],
-              sent: true,
-            },
-          }));
+          robotoff
+            .annotate(insight_id, pendingAnswer)
+            .then(() => {
+              setAnswers((prev) => ({
+                ...prev,
+                [insight_id]: {
+                  ...prev[insight_id],
+                  sent: true,
+                },
+              }));
+            })
+            .catch(() => {});
         }
       : noop;
 
