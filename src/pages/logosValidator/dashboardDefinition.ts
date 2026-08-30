@@ -84,7 +84,7 @@ const UNTYPED_LOGOS = {
   "en:eu-organic": {
     tag: "en:eu-organic",
     label: "Bio Européen",
-    logo: `https://images.${OFF_DOMAIN}/images/lang/fr/labels/bio-europeen.135x90.png`,
+    logo: `https://images.${OFF_DOMAIN}/images/lang/en/labels/eu-organic.135x90.svg`,
     type: "label",
   },
   "en:pdo": {
@@ -1931,7 +1931,7 @@ const UNTYPED_LOGOS = {
   "en:keyhole": {
     tag: "en:keyhole",
     label: "Keyhole",
-    logo: `https://images.${OFF_DOMAIN}/images/lang/en/labels/keyhole.90x90.png`,
+    logo: `https://images.${OFF_DOMAIN}/images/lang/en/labels/keyhole.90x90.svg`,
     type: "label",
   },
   // Australia
