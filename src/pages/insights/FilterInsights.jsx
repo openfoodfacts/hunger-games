@@ -24,11 +24,17 @@ const annotationOptions = [
 ];
 
 const useControled = (exteriorValue) => {
-  const [innerValue, setInnerValue] = React.useState(exteriorValue ?? "");
-
-  React.useEffect(() => {
-    setInnerValue((v) => (v !== exteriorValue ? exteriorValue : v));
-  }, [exteriorValue]);
+  const normalizedExteriorValue = exteriorValue ?? "";
+  const [draft, setDraft] = React.useState({
+    source: normalizedExteriorValue,
+    value: normalizedExteriorValue,
+  });
+  const innerValue =
+    draft.source === normalizedExteriorValue
+      ? draft.value
+      : normalizedExteriorValue;
+  const setInnerValue = (value) =>
+    setDraft({ source: normalizedExteriorValue, value });
 
   return [innerValue, setInnerValue];
 };

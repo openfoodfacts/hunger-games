@@ -13,7 +13,7 @@ import Loader from "../loader";
 import LabelFilter from "../../components/QuestionFilter/LabelFilter";
 import LogoGrid from "../../components/LogoGrid";
 import AnnotateLogoModal from "../../components/AnnotateLogoModal";
-import { logoTypeOptions } from "../../components/LogoSearchForm";
+import { logoTypeOptions } from "../../components/logoTypeOptions";
 import robotoff from "../../robotoff";
 import off from "../../off";
 import useUrlParams from "../../hooks/useUrlParams";
