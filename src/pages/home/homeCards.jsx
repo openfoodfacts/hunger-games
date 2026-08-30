@@ -37,9 +37,9 @@ const HomeCards = () => {
     <Stack
       spacing={3}
       direction={{ xs: "column", sm: "column", md: "row" }}
-      alignItems="center"
-      justifyContent="center"
       sx={{
+        alignItems: "center",
+        justifyContent: "center",
         marginBottom: "30px",
       }}
     >
@@ -61,7 +61,9 @@ const HomeCards = () => {
                 gutterBottom
                 variant="p"
                 component="div"
-                fontSize={14}
+                sx={{
+                  fontSize: 14,
+                }}
               >
                 {t(cardInfo.desc)}
               </Typography>

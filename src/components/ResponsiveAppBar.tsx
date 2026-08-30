@@ -23,7 +23,7 @@ import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import PublicIcon from "@mui/icons-material/Public";
 import ExpandLess from "@mui/icons-material/ExpandLess";
 import ExpandMore from "@mui/icons-material/ExpandMore";
-import HelpOutlineIcon from "@mui/icons-material/HelpOutline";
+import HelpOutlineIcon from "@mui/icons-material/HelpOutlineOutlined";
 
 import DevModeContext from "../contexts/devMode";
 import LoginContext from "../contexts/login";
@@ -161,7 +161,11 @@ const MultiPagesButton = ({
                   to: `/${subPage.url}`,
                 })}
           >
-            <Typography textAlign="center">
+            <Typography
+              sx={{
+                textAlign: "center",
+              }}
+            >
               {t(subPage.translationKey)}
             </Typography>
           </MenuItem>
@@ -292,7 +296,11 @@ const ResponsiveAppBar = () => {
                               to: `/${page.url}`,
                             })}
                       >
-                        <Typography textAlign="left">
+                        <Typography
+                          sx={{
+                            textAlign: "left",
+                          }}
+                        >
                           {t(page.translationKey)}
                         </Typography>
                       </MenuItem>
@@ -314,7 +322,11 @@ const ResponsiveAppBar = () => {
                             }))
                           }
                         >
-                          <Typography textAlign="center">
+                          <Typography
+                            sx={{
+                              textAlign: "center",
+                            }}
+                          >
                             {t(page.translationKey)}
                           </Typography>
 
@@ -338,7 +350,11 @@ const ResponsiveAppBar = () => {
                                 component={Link as React.ElementType}
                                 to={`/${subPage.url}`}
                               >
-                                <Typography textAlign="center">
+                                <Typography
+                                  sx={{
+                                    textAlign: "center",
+                                  }}
+                                >
                                   {t(subPage.translationKey)}
                                 </Typography>
                               </MenuItem>
@@ -363,7 +379,13 @@ const ResponsiveAppBar = () => {
                     handleCloseNavMenu();
                   }}
                 >
-                  <Typography textAlign="center">{t("menu.tour")}</Typography>
+                  <Typography
+                    sx={{
+                      textAlign: "center",
+                    }}
+                  >
+                    {t("menu.tour")}
+                  </Typography>
                 </MenuItem>
               </Menu>
             )}
@@ -586,11 +608,14 @@ const ResponsiveAppBar = () => {
                       {...params}
                       variant="outlined"
                       size="small"
-                      inputProps={{
-                        ...params.inputProps,
-                        "aria-label": t("menu.country", {
-                          defaultValue: "Country",
-                        }),
+                      slotProps={{
+                        ...params.slotProps,
+                        htmlInput: {
+                          ...params.slotProps.htmlInput,
+                          "aria-label": t("menu.country", {
+                            defaultValue: "Country",
+                          }),
+                        },
                       }}
                     />
                   )}

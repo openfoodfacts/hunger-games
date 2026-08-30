@@ -12,7 +12,7 @@ import DialogActions from "@mui/material/DialogActions";
 import Button from "@mui/material/Button";
 
 import CancelOutlinedIcon from "@mui/icons-material/CancelOutlined";
-import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
+import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutlineOutlined";
 
 import { useTranslation } from "react-i18next";
 
@@ -43,7 +43,13 @@ const UserData = () => {
         </Typography>
         {recentAnswers.map(
           ({ insight_id, barcode, value, insight_type, answer }) => (
-            <Stack key={insight_id} direction="row" alignItems="center">
+            <Stack
+              key={insight_id}
+              direction="row"
+              sx={{
+                alignItems: "center",
+              }}
+            >
               <Link href={offService.getProductEditUrl(barcode)}>
                 {insight_type}: {value}
               </Link>

@@ -74,7 +74,14 @@ function QuestionAnswerButtons({
 
   return (
     <>
-      <Stack direction="row" justifyContent="center" spacing={2} sx={{ mb: 1 }}>
+      <Stack
+        direction="row"
+        spacing={2}
+        sx={{
+          justifyContent: "center",
+          mb: 1,
+        }}
+      >
         <Button
           onClick={() => onAnswerQuestion(WRONG_INSIGHT)}
           color="error"
@@ -283,9 +290,9 @@ export default function QuestionDisplay() {
 
       {/* Image display */}
       <Box
-        flexGrow={1}
-        flexShrink={1}
         sx={{
+          flexGrow: 1,
+          flexShrink: 1,
           height: `calc(100vh - ${isDesktop ? 461 : 445}px)`,
           marginBottom: 1,
           position: "relative",

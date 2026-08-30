@@ -14,7 +14,7 @@ import Checkbox from "@mui/material/Checkbox";
 import Typography from "@mui/material/Typography";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import EditIcon from "@mui/icons-material/Edit";
-import AddCircleOutlineIcon from "@mui/icons-material/AddCircleOutline";
+import AddCircleOutlineIcon from "@mui/icons-material/AddCircleOutlineOutlined";
 import VisibilityIcon from "@mui/icons-material/Visibility";
 import Table from "@mui/material/Table";
 import TableBody from "@mui/material/TableBody";
@@ -282,7 +282,9 @@ const ProductInformation = () => {
         <Typography
           variant="h4"
           gutterBottom
-          fontFamily={productData?.product_name ? "inherit" : "monospace"}
+          sx={{
+            fontFamily: productData?.product_name ? "inherit" : "monospace",
+          }}
         >
           {productLoading ? (
             <Skeleton />
@@ -352,7 +354,12 @@ const ProductInformation = () => {
           (productLoading ? (
             <Skeleton variant="rectangular" width="100%" height={200} />
           ) : !productData?.images ? (
-            <Typography variant="body2" color="text.secondary">
+            <Typography
+              variant="body2"
+              sx={{
+                color: "text.secondary",
+              }}
+            >
               {t("questions.no_images")}
             </Typography>
           ) : (
