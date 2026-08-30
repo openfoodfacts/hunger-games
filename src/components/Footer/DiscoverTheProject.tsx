@@ -44,7 +44,11 @@ export default function DiscoverTheProject() {
   const { t } = useTranslation();
   return (
     <Box sx={{ width: { xs: "100%", sm: "50%" } }} className="OFF-discover">
-      <Divider light>
+      <Divider
+        sx={{
+          opacity: "0.6",
+        }}
+      >
         <Chip label="Discover the project" />
       </Divider>
       <br />

@@ -117,7 +117,12 @@ const FilterForm = ({ filterState = {}, setFilterState }) => {
         </TextField>
       </Stack>
 
-      <Stack direction="row" justifyContent="end">
+      <Stack
+        direction="row"
+        sx={{
+          justifyContent: "end",
+        }}
+      >
         <Button variant="contained" onClick={validateFilter} sx={{ ml: 2 }}>
           {t("insights.search")}
         </Button>

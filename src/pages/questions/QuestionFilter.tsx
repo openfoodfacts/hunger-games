@@ -148,7 +148,13 @@ export const QuestionFilter = ({ sx }: { sx?: SxProps<Theme> }) => {
   return (
     <Box sx={sx}>
       {/* Chip indicating the current state of the filtering */}
-      <Stack direction="row" spacing={1} alignItems="center">
+      <Stack
+        direction="row"
+        spacing={1}
+        sx={{
+          alignItems: "center",
+        }}
+      >
         <TextField
           select
           size="small"

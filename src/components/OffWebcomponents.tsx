@@ -1,9 +1,24 @@
+import * as React from "react";
 import { OFF_IMAGE_URL, OFF_URL, ROBOTOFF_API_URL } from "../const";
 import { useTranslation } from "react-i18next";
-import "@openfoodfacts/openfoodfacts-webcomponents";
+
+let webcomponentsLoadPromise: Promise<unknown> | undefined;
+
+const loadWebcomponents = () => {
+  webcomponentsLoadPromise ??=
+    import("@openfoodfacts/openfoodfacts-webcomponents");
+  return webcomponentsLoadPromise;
+};
 
 export const OffWebcomponentsConfiguration = () => {
   const { i18n } = useTranslation();
+
+  React.useEffect(() => {
+    void loadWebcomponents().catch((error) => {
+      console.error("Failed to load Open Food Facts webcomponents", error);
+    });
+  }, []);
+
   // Ensure we have a valid 2-letter language code
   const languageCode = i18n.language?.substring(0, 2) || "en";
 

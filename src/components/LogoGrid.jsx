@@ -90,7 +90,11 @@ const LogoCard = React.memo(
           </Tooltip>
           <Tooltip title="See similar logos">
             <IconButton size="small" component={Link} to={externalLogoURL(id)}>
-              <LinkIcon fontSize="inherit" />
+              <LinkIcon
+                sx={{
+                  fontSize: "inherit",
+                }}
+              />
             </IconButton>
           </Tooltip>
         </Box>
