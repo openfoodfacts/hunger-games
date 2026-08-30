@@ -50,8 +50,8 @@
     "loading": "Caricamento"
   },
   "image_viewer": {
-    "compressed": "Compressed",
-    "load_original": "Load original"
+    "compressed": "Compressa",
+    "load_original": "Carica l'originale"
   },
   "questions": {
     "category": "categoria",
@@ -71,6 +71,10 @@
     "skip": "Salta",
     "yes": "Sì",
     "no_questions_remaining": "Nessuna domanda rimanente",
+    "similar_questions": "Domande simili",
+    "no_similar_questions": "Nessuna domanda simile",
+    "remaining_questions_count_one": "1 domanda rimanente",
+    "remaining_questions_count_other": "{{count}} domande rimanenti",
     "an_error_occurred": "Si è verificato un errore. Ricarica la pagina, riprova più tardi o contatta il team.",
     "countries": "Paesi",
     "view": "Mostra",
@@ -83,10 +87,9 @@
     "last_annotations": "Annotazioni recenti",
     "remaining_annotations": "Domande rimanenti",
     "annotated_annotations": "Annotato",
-    "similar_questions": "Similar questions",
-    "no_similar_questions": "No similar questions",
-    "no_images": "No images available",
-    "no_additional_info": "No additional information",
+    "no_images": "Nessuna immagine disponibile",
+    "no_additional_info": "Nessuna informazione aggiuntiva",
+    "add_missing_info": "Aggiungi",
     "filters": {
       "active_filter_number": "+{{count}} filtri",
       "active_filter_number_one": "+{{count}} filtro",

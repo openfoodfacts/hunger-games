@@ -50,8 +50,8 @@
     "loading": "लोड हो रहा है"
   },
   "image_viewer": {
-    "compressed": "Compressed",
-    "load_original": "Load original"
+    "compressed": "कम किया हुआ",
+    "load_original": "मूल लोड करें या असली लोड करें"
   },
   "questions": {
     "category": "वर्ग",
@@ -71,6 +71,10 @@
     "skip": "स्किप करें",
     "yes": "हाँ",
     "no_questions_remaining": "कोई प्रश्न शेष नहीं",
+    "similar_questions": "समान प्रश्न",
+    "no_similar_questions": "कोई समान प्रश्न नहीं",
+    "remaining_questions_count_one": "1 question remaining",
+    "remaining_questions_count_other": "{{count}} questions remaining",
     "an_error_occurred": "एक त्रुटि हुई। कृपया पुनः लोड करें, बाद में प्रयास करें या टीम से संपर्क करें।",
     "countries": "देशों",
     "view": "देखें",
@@ -83,10 +87,9 @@
     "last_annotations": "अंतिम टिप्पणियाँ",
     "remaining_annotations": "शेष प्रश्न",
     "annotated_annotations": "टिप्पणी",
-    "similar_questions": "Similar questions",
-    "no_similar_questions": "No similar questions",
-    "no_images": "No images available",
-    "no_additional_info": "No additional information",
+    "no_images": "कोई छवि उपलब्ध नहीं या कोई फोटो उपलब्ध नहीं",
+    "no_additional_info": "कोई अतिरिक्त जानकारी नहीं",
+    "add_missing_info": "जोड़ें",
     "filters": {
       "active_filter_number": "+{{count}} फिल्टर",
       "active_filter_number_one": "+{{count}} फिल्टर",
@@ -261,7 +264,7 @@
     "thank_you": "धन्यवाद,",
     "donate": "दान करें",
     "join_the_community": {
-      "discover_our": "Discover our ",
+      "discover_our": "हमारे बारे में जानें ",
       "code_of_conduct": "आचार संहिता ",
       "join_us_on": "हमसे जुड़ें ",
       "forum": "फोरम",
@@ -306,15 +309,15 @@
         "text1": "सबसे उच्च प्राथमिकता वाले लेबल्स में शेष प्रश्नों को पूरा करने में हमारी मदद करें!",
         "text2": "These cards are linked to labels used in the computation of the Green-Score.",
         "text3": "<strong>What is Green-Score?</strong>",
-        "text4": "Green-Score captures the total environmental footprint, making it easier for consumers to compare products and decide which is better for the environment."
+        "text4": "ग्रीन-स्कोर कुल पर्यावरणीय प्रभाव को दर्शाता है, जिससे उपभोक्ताओं के लिए उत्पादों की तुलना करना और यह तय करना आसान हो जाता है कि कौन सा उत्पाद पर्यावरण के लिए बेहतर है।"
       },
       "page5": {
         "title": "सेटिंग्स",
         "text1": "Set your preferred language, and report issues from our settings page.",
-        "text2": "If you're a developer, you can also explore our database content using our dev mode."
+        "text2": "यदि आप एक डेवलपर हैं, तो आप हमारे देव मोड का उपयोग करके हमारे डेटाबेस की सामग्री का भी पता लगा सकते हैं।"
       },
       "page6": {
-        "title": "Tour",
+        "title": "यात्रा",
         "text1": "Got stuck somewhere? Want to take the tour again?",
         "text2": "बस प्रश्न चिह्न पर क्लिक करें और यात्रा फिर से शुरू करें!"
       }
@@ -334,12 +337,12 @@
         "title": "Validate",
         "text1": "Indicate the type of logo (label, brand, QRcode, ...)",
         "text2": "If it is a label or a brand logo, indicate which one it is",
-        "text3": "Now you can submit your selection",
+        "text3": "अब आप अपना चयन जमा कर सकते हैं",
         "text4": "धन्यवाद :)"
       }
     },
-    "previous": "Prev",
-    "next": "Next",
+    "previous": "पिछला",
+    "next": "अगला",
     "close": "बंद करें"
   },
   "nutrition": {
