@@ -2958,7 +2958,7 @@ export const DASHBOARD: DashBoardTheme[] = [
   // Halal dashboard
   {
     tag: "halal",
-    title: "Halal",
+    title: "حلال Halal",
     logos: [
       "en:halal-food-council-of-europe",
       "fr:societe-francaise-de-controle-de-viande-halal",
@@ -2972,7 +2972,7 @@ export const DASHBOARD: DashBoardTheme[] = [
   // Kosher dashboard
   {
     tag: "kosher",
-    title: "Kosher",
+    title: "🕎 Kosher",
     logos: [
       //   "en:cor-kosher",
       // "en:kosher-check",
