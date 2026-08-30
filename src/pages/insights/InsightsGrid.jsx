@@ -118,7 +118,7 @@ const dateTimeColumn = {
   minWidth: 150,
   maxWidth: 200,
   flex: 1,
-  valueGetter: (params) => (params.value ? new Date(params.value) : null),
+  valueGetter: (value) => (value ? new Date(value) : null),
 };
 
 const PAGE_SIZE = 25;
@@ -126,16 +126,19 @@ const PAGE_SIZE = 25;
 const InsightGrid = ({ filterState = {}, setFilterState }) => {
   const { t } = useTranslation();
 
-  const [page, setPage] = React.useState(1);
+  const [paginationModel, setPaginationModel] = React.useState({
+    page: 0,
+    pageSize: PAGE_SIZE,
+  });
   const insightsQuery = useQuery({
-    queryKey: ["insights", filterState, page],
+    queryKey: ["insights", filterState, paginationModel.page],
     queryFn: () =>
       robotoffService.getInsights(
         filterState.barcode,
         filterState.insightType,
         filterState.valueTag,
         filterState.annotationStatus,
-        page,
+        paginationModel.page + 1,
         PAGE_SIZE,
       ),
     placeholderData: (previousData) => previousData,
@@ -243,7 +246,7 @@ const InsightGrid = ({ filterState = {}, setFilterState }) => {
       {
         field: "automatic_processing",
         type: "boolean",
-        valueGetter: ({ value }) => Boolean(value),
+        valueGetter: (value) => Boolean(value),
         minWidth: 70,
         flex: 1,
         maxWidth: 110,
@@ -268,14 +271,13 @@ const InsightGrid = ({ filterState = {}, setFilterState }) => {
       rows={rows}
       disableColumnFilter
       loading={insightsQuery.isFetching}
-      page={page - 1}
-      pageSize={PAGE_SIZE}
+      paginationModel={paginationModel}
       pageSizeOptions={[PAGE_SIZE]}
-      onPageChange={(newPage) => setPage(newPage + 1)}
+      onPaginationModelChange={setPaginationModel}
       paginationMode="server"
       rowCount={rowCount}
-      density="compact"
       initialState={{
+        density: "compact",
         columns: {
           columnVisibilityModel: {
             id: false,
