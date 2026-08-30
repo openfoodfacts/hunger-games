@@ -19,6 +19,11 @@ interface CountryOption {
   countryCode: string;
 }
 
+const useTypedSearchParams = useSearchParams as unknown as () => [
+  URLSearchParams,
+  unknown,
+];
+
 // Returns true if countryCode is a "valid" country code, i.e. not empty and not "world"
 function isValidCountryCode(
   countryCode?: string | null,
@@ -27,7 +32,7 @@ function isValidCountryCode(
 }
 
 export default function Nutrition() {
-  const [searchParams] = useSearchParams();
+  const [searchParams] = useTypedSearchParams();
   const productCode = searchParams.get("code") || undefined;
   const [country, setCountry] = useCountry();
   const { t } = useTranslation();
