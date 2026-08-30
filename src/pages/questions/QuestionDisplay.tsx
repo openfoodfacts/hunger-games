@@ -73,23 +73,26 @@ function QuestionAnswerButtons({
   const { t } = useTranslation();
 
   return (
-    <>
-      <Stack
-        direction="row"
-        spacing={2}
-        sx={{
-          justifyContent: "center",
-          mb: 1,
-        }}
-      >
+    <Stack
+      spacing={1.25}
+      sx={{
+        position: "sticky",
+        bottom: 0,
+        zIndex: 10,
+        bgcolor: "background.paper",
+        pt: 1,
+        pb: "max(0px, env(safe-area-inset-bottom))",
+      }}
+    >
+      <Stack direction="row" spacing={1.25}>
         <Button
           onClick={() => onAnswerQuestion(WRONG_INSIGHT)}
           color="error"
           variant="contained"
           size="large"
-          sx={{ display: "flex", flexDirection: "column", flexGrow: 1 }}
+          startIcon={<DeleteIcon />}
+          sx={{ flexGrow: 1, minHeight: 52 }}
         >
-          <DeleteIcon />
           {t("questions.no")} ({shortcuts.no})
         </Button>
         <Button
@@ -98,7 +101,7 @@ function QuestionAnswerButtons({
           color="success"
           variant="contained"
           size="large"
-          sx={{ display: "flex", flexDirection: "column", flexGrow: 1 }}
+          sx={{ flexGrow: 1, minHeight: 52 }}
         >
           {t("questions.yes")} ({shortcuts.yes})
         </Button>
@@ -109,11 +112,11 @@ function QuestionAnswerButtons({
         variant="contained"
         size="medium"
         autoFocus
-        sx={{ py: "1rem" }}
+        sx={{ py: 1.25 }}
       >
         {t("questions.skip")} ({shortcuts.skip})
       </Button>
-    </>
+    </Stack>
   );
 }
 
@@ -236,11 +239,17 @@ export default function QuestionDisplay() {
 
   return (
     <Stack
-      sx={{ textAlign: "center", flexGrow: 1, flexBasis: 0, flexShrink: 1 }}
+      sx={{
+        textAlign: "center",
+        flexGrow: 1,
+        minHeight: { xs: 560, md: 0 },
+      }}
     >
       {/* Header */}
       <Stack sx={{ alignItems: "center" }}>
-        <Typography>{question?.question}</Typography>
+        <Typography variant="h6" sx={{ fontWeight: 600, lineHeight: 1.3 }}>
+          {question?.question}
+        </Typography>
         <Box sx={{ display: "flex", alignItems: "center" }}>
           {valueTagQuestionsURL ? (
             <Badge
@@ -293,9 +302,13 @@ export default function QuestionDisplay() {
         sx={{
           flexGrow: 1,
           flexShrink: 1,
-          height: `calc(100vh - ${isDesktop ? 461 : 445}px)`,
-          marginBottom: 1,
+          minHeight: { xs: 300, sm: 360, md: 280 },
+          height: isDesktop ? "calc(100vh - 440px)" : "min(52vh, 520px)",
+          my: 1.5,
           position: "relative",
+          overflow: "hidden",
+          borderRadius: 2,
+          bgcolor: "action.hover",
         }}
       >
         {question.source_image_url ? (

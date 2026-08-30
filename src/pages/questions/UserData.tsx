@@ -34,34 +34,41 @@ const UserData = () => {
 
   return (
     <Box>
-      <Stack spacing={1}>
-        <Typography sx={{ my: 2 }}>
+      <Stack spacing={1.25}>
+        <Typography variant="subtitle1" sx={{ fontWeight: 700 }}>
           {t("questions.remaining_annotations")}:{" "}
           {questionsCount !== null && questionsCount >= 99
             ? "100+"
             : (questionsCount ?? 0)}
         </Typography>
-        {recentAnswers.map(
-          ({ insight_id, barcode, value, insight_type, answer }) => (
-            <Stack
-              key={insight_id}
-              direction="row"
-              sx={{
-                alignItems: "center",
-              }}
-            >
-              <Link href={offService.getProductEditUrl(barcode)}>
-                {insight_type}: {value}
-              </Link>
-              {answer === WRONG_INSIGHT && (
-                <CancelOutlinedIcon color="error" sx={{ ml: 2 }} />
-              )}
-              {answer === CORRECT_INSIGHT && (
-                <CheckCircleOutlineIcon color="success" sx={{ ml: 2 }} />
-              )}
-            </Stack>
-          ),
-        )}
+        <Stack spacing={1} sx={{ maxHeight: 160, overflowY: "auto", pr: 0.5 }}>
+          {recentAnswers.map(
+            ({ insight_id, barcode, value, insight_type, answer }) => (
+              <Stack
+                key={insight_id}
+                direction="row"
+                sx={{
+                  alignItems: "center",
+                  justifyContent: "space-between",
+                  gap: 1,
+                }}
+              >
+                <Link
+                  href={offService.getProductEditUrl(barcode)}
+                  sx={{ overflowWrap: "anywhere", fontSize: "0.875rem" }}
+                >
+                  {insight_type}: {value}
+                </Link>
+                {answer === WRONG_INSIGHT && (
+                  <CancelOutlinedIcon color="error" fontSize="small" />
+                )}
+                {answer === CORRECT_INSIGHT && (
+                  <CheckCircleOutlineIcon color="success" fontSize="small" />
+                )}
+              </Stack>
+            ),
+          )}
+        </Stack>
       </Stack>
       <Dialog
         open={loginModalOpen}
