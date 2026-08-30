@@ -39,6 +39,9 @@ export interface Logo {
 interface InsightDetailResponse {
   bounding_box?: BoundingBox;
   source_image?: string;
+  id?: string;
+  predictor?: string;
+  timestamp?: string | number;
   data?: { logo_id?: string };
 }
 

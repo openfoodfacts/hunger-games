@@ -1,4 +1,5 @@
 import * as React from "react";
+import { useQuery } from "@tanstack/react-query";
 import { Link } from "react-router";
 import { useTranslation } from "react-i18next";
 import { useTheme } from "@mui/material/styles";
@@ -38,40 +39,21 @@ const usePotentialQuestionNumber = (
   filterState: FilterState,
   question: QuestionInterface | null,
 ) => {
-  const [nbOfPotentialQuestion, setNbOfPotentialQuestions] = React.useState<
-    number | null
-  >(null);
+  const insightType = question?.insight_type;
+  const valueTag = question?.value_tag;
+  const enabled = Boolean(!filterState.valueTag && insightType && valueTag);
+  const query = useQuery({
+    queryKey: ["potential-question-count", filterState, insightType, valueTag],
+    queryFn: () =>
+      getNbOfQuestionForValue({
+        ...filterState,
+        insightType,
+        valueTag,
+      }),
+    enabled,
+  });
 
-  React.useEffect(() => {
-    if (
-      filterState.valueTag ||
-      !question?.insight_type ||
-      !question?.value_tag
-    ) {
-      // value is already in the filter so it's a useless information
-      setNbOfPotentialQuestions(null);
-      return;
-    }
-    let validRequest = true;
-
-    getNbOfQuestionForValue({
-      ...filterState,
-      insightType: question?.insight_type,
-      valueTag: question?.value_tag,
-    })
-      .then((nbQuestions) => {
-        if (validRequest) {
-          setNbOfPotentialQuestions(nbQuestions);
-        }
-      })
-      .catch(() => {});
-
-    return () => {
-      validRequest = false;
-    };
-  }, [filterState, question?.insight_type, question?.value_tag]);
-
-  return nbOfPotentialQuestion;
+  return enabled ? (query.data ?? null) : null;
 };
 
 type AnswerType =
@@ -261,7 +243,7 @@ export default function QuestionDisplay() {
             >
               <Button
                 sx={{ paddingX: 4 }}
-                component={Link}
+                component={Link as React.ElementType}
                 to={valueTagQuestionsURL}
                 endIcon={<LinkIcon />}
                 variant="outlined"

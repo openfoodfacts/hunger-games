@@ -117,10 +117,13 @@ export default function FilterDialog(props: FilterDialogProps) {
     onClose,
   ]);
 
-  React.useEffect(resetFilter, [resetFilter]);
-
   return (
-    <Dialog open={open} onClose={onClose} PaperProps={{ sx: { p: 2 } }}>
+    <Dialog
+      open={open}
+      onClose={onClose}
+      PaperProps={{ sx: { p: 2 } }}
+      TransitionProps={{ onEnter: resetFilter }}
+    >
       <DialogContent>
         <Stack spacing={2} sx={{ display: open ? undefined : "none" }}>
           <FormControl>

@@ -1,4 +1,5 @@
 import * as React from "react";
+import { useQuery } from "@tanstack/react-query";
 
 import { DataGrid, GridActionsCellItem } from "@mui/x-data-grid";
 
@@ -125,9 +126,26 @@ const PAGE_SIZE = 25;
 const InsightGrid = ({ filterState = {}, setFilterState }) => {
   const { t } = useTranslation();
 
-  const [pageState, setPageState] = React.useState({ page: 1, rowCount: 0 });
-  const [isLoading, setIsLoading] = React.useState(false);
-  const [rows, setRows] = React.useState([]);
+  const [page, setPage] = React.useState(1);
+  const insightsQuery = useQuery({
+    queryKey: ["insights", filterState, page],
+    queryFn: () =>
+      robotoffService.getInsights(
+        filterState.barcode,
+        filterState.insightType,
+        filterState.valueTag,
+        filterState.annotationStatus,
+        page,
+        PAGE_SIZE,
+      ),
+    placeholderData: (previousData) => previousData,
+  });
+  const rows =
+    insightsQuery.data?.data.insights.map((row) => ({
+      ...row,
+      value_tag: row.value_tag ?? row.value,
+    })) ?? [];
+  const rowCount = insightsQuery.data?.data.count ?? 0;
 
   const columns = React.useMemo(() => {
     return [
@@ -243,67 +261,19 @@ const InsightGrid = ({ filterState = {}, setFilterState }) => {
     ].map((col) => ({ ...col, sortable: false }));
   }, [setFilterState, t]);
 
-  React.useEffect(() => {
-    setIsLoading(true);
-    let isValid = true;
-    robotoffService
-      .getInsights(
-        filterState.barcode,
-        filterState.insightType,
-        filterState.valueTag,
-        filterState.annotationStatus,
-        pageState.page,
-        PAGE_SIZE,
-      )
-      .then((result) => {
-        if (isValid) {
-          const newRowCount = result.data.count;
-          setPageState((prevState) =>
-            newRowCount !== prevState.rowCount
-              ? { ...prevState, rowCount: newRowCount }
-              : prevState,
-          );
-          setRows(
-            result.data.insights.map((row) => ({
-              ...row,
-              value_tag: row.value_tag ?? row.value,
-            })),
-          );
-          setIsLoading(false);
-        }
-      })
-      .catch(() => {
-        if (isValid) {
-          setIsLoading(false);
-        }
-      });
-    return () => {
-      isValid = false;
-    };
-  }, [
-    filterState.barcode,
-    filterState.valueTag,
-    filterState.insightType,
-    filterState.annotationStatus,
-    pageState.page,
-    t,
-  ]);
-
   return (
     <DataGrid
       autoHeight
       columns={columns}
       rows={rows}
       disableColumnFilter
-      isLoading={isLoading}
-      page={pageState.page - 1}
+      loading={insightsQuery.isFetching}
+      page={page - 1}
       pageSize={PAGE_SIZE}
       pageSizeOptions={[PAGE_SIZE]}
-      onPageChange={(page) =>
-        setPageState((prev) => ({ ...prev, page: page + 1 }))
-      }
+      onPageChange={(newPage) => setPage(newPage + 1)}
       paginationMode="server"
-      rowCount={pageState.rowCount}
+      rowCount={rowCount}
       density="compact"
       initialState={{
         columns: {
