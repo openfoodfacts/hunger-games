@@ -258,8 +258,8 @@ export default function LogoAnnotation() {
     <React.Suspense fallback={<CircularProgress />}>
       <Box sx={{ margin: "2% 10%" }}>
         <Typography
-          typography="h2"
           sx={{
+            typography: "h2",
             fontSize: "1.5rem",
             fontWeight: 600,
             marginBottom: 2,

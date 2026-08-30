@@ -93,7 +93,13 @@ const ZoomableImage = ({
         }}
         fullScreen
       >
-        <Stack direction="row" justifyContent="flex-end" sx={{ p: 1 }}>
+        <Stack
+          direction="row"
+          sx={{
+            justifyContent: "flex-end",
+            p: 1,
+          }}
+        >
           <IconButton
             onClick={() => {
               setIsOpen(false);

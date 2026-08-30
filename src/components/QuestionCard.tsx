@@ -87,7 +87,13 @@ function EditableCardTitle({
 
   if (isEditMode) {
     return (
-      <Stack spacing={1} direction="row" alignItems="center">
+      <Stack
+        spacing={1}
+        direction="row"
+        sx={{
+          alignItems: "center",
+        }}
+      >
         <TextField
           variant="standard"
           value={innerTitle}
@@ -107,7 +113,13 @@ function EditableCardTitle({
   }
 
   return (
-    <Stack spacing={1} direction="row" alignItems="center">
+    <Stack
+      spacing={1}
+      direction="row"
+      sx={{
+        alignItems: "center",
+      }}
+    >
       <Typography>{innerTitle}</Typography>
       {editable && (
         <IconButton onClick={handleStartEdit} size="small">

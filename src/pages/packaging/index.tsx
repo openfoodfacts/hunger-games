@@ -151,8 +151,10 @@ const PackagingEditor = ({
       <Box>
         <Stack
           spacing={1}
-          alignItems={{ xs: "flex-start", md: "flex-end" }}
           direction={{ xs: "column", md: "row" }}
+          sx={{
+            alignItems: { xs: "flex-start", md: "flex-end" },
+          }}
         >
           <img src={product.image_packaging_url} alt="" />
           <TableContainer component={Paper}>
@@ -278,7 +280,12 @@ const Page = () => {
   const product = data?.[0] ?? null;
   if (error !== null) {
     return (
-      <Stack spacing={2} alignItems="flex-start">
+      <Stack
+        spacing={2}
+        sx={{
+          alignItems: "flex-start",
+        }}
+      >
         <Typography color="error">Unable to load a product: {error}</Typography>
         <Button variant="contained" onClick={retry}>
           Retry

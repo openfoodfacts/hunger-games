@@ -50,7 +50,12 @@ export default function OpenFoodFacts() {
           alt="openFoodFacts"
         />
       </Button>
-      <Typography textAlign={"center"} variant="caption">
+      <Typography
+        variant="caption"
+        sx={{
+          textAlign: "center",
+        }}
+      >
         {t("settings.text2")}
       </Typography>
       <Box>
