@@ -6,8 +6,8 @@ import CardContent from "@mui/material/CardContent";
 import CardActionArea from "@mui/material/CardActionArea";
 import Typography from "@mui/material/Typography";
 import Stack from "@mui/material/Stack";
-import home_questions from "../../assets/home_questions.png";
-import home_logos from "../../assets/home_logos.png";
+import home_questions from "../../assets/home_questions.svg";
+import home_logos from "../../assets/home_logos.svg";
 
 const cards = [
   {
