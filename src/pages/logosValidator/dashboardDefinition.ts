@@ -3205,7 +3205,7 @@ export const DASHBOARD: DashBoardTheme[] = [
   // No gluten
   {
     tag: "no-gluten",
-    title: "No Gluten",
+    title: "🚫+🌾 No Gluten",
     logos: [
       "es:sin-tacc",
       "es:sin-gluten",
@@ -3218,7 +3218,7 @@ export const DASHBOARD: DashBoardTheme[] = [
   // Food Awards
   {
     tag: "food-awards",
-    title: "Food Awards",
+    title: "🏆 Food Awards",
     logos: [
       "en:concours-general-agricole",
       "en:medaille-d-argent-du-concours-general-agricole",
