@@ -136,7 +136,12 @@
       "actions": {
         "edit": "Edit Filters",
         "cancel": "Cancel",
-        "apply": "Apply"
+        "apply": "Apply",
+        "share": "Share"
+      },
+      "share": {
+        "title": "Hunger Games filtered questions",
+        "copied": "Link copied"
       }
     },
     "other_questions": "Other questions",
