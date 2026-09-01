@@ -3335,7 +3335,7 @@ __metadata:
     react-router: "npm:^8.3.0"
     react-zoom-pan-pinch: "npm:^2.5.0"
     reactour: "npm:^1.19.4"
-    styled-components: "npm:^6.4.4"
+    styled-components: "npm:^6.5.3"
     typescript: "npm:^6.0.3"
     typescript-eslint: "npm:^8.65.0"
     vite: "npm:^8.2.2"
@@ -5481,9 +5481,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"styled-components@npm:^6.4.4":
-  version: 6.4.4
-  resolution: "styled-components@npm:6.4.4"
+"styled-components@npm:^6.5.3":
+  version: 6.5.3
+  resolution: "styled-components@npm:6.5.3"
   dependencies:
     "@emotion/is-prop-valid": "npm:1.4.0"
     css-to-react-native: "npm:3.2.0"
@@ -5501,7 +5501,7 @@ __metadata:
       optional: true
     react-native:
       optional: true
-  checksum: 10/3188c2946740a025dc202d560ec1112318c3be9b14480f4de0832961c556468504677a4dfc458813e234d58a41efab8f209f75bea62a4dd55e5a66ced5dbc1fa
+  checksum: 10/58f19a1ea02d8a2288f865e51ac62961453549969a646936b0ca335038286dbc64d7163f740adc817b5a4e96dc412d919797e246d2cb5a46caabde905929b791
   languageName: node
   linkType: hard
 
