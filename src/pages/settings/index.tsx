@@ -17,7 +17,6 @@ import { useTranslation } from "react-i18next";
 
 import Loader from "../loader";
 
-
 import DevModeContext from "../../contexts/devMode";
 import ColorModeContext from "../../contexts/colorMode";
 import { useCountry } from "../../contexts/CountryProvider";
@@ -31,7 +30,9 @@ export default function Settings() {
   const theme = useTheme();
   const colorMode = React.useContext(ColorModeContext);
   const [language, setLanguage] = React.useState(i18n.language);
-  const languageDisplay = new Intl.DisplayNames([i18n.language], { type: "language" });
+  const languageDisplay = new Intl.DisplayNames([i18n.language], {
+    type: "language",
+  });
   const { devMode, setDevMode, visiblePages, setVisiblePages } =
     React.useContext(DevModeContext);
 
@@ -67,7 +68,9 @@ export default function Settings() {
           options={languageCodes}
           getOptionLabel={(lang) => {
             const name = languageDisplay.of(lang);
-            return name ? `${name} (${lang.toUpperCase()})` : lang.toUpperCase();
+            return name
+              ? `${name} (${lang.toUpperCase()})`
+              : lang.toUpperCase();
           }}
           value={language}
           onChange={(_, newLang) => {
@@ -121,8 +124,9 @@ export default function Settings() {
               checked={visiblePages[pageUrl] ?? false}
               onChange={handleVisiblePagesChange(pageUrl)}
               control={<Switch />}
-              label={`${t("settings.dev_page_toggle", { name: pageName })}${isExperimental ? " (🚧 experimental)" : ""
-                }`}
+              label={`${t("settings.dev_page_toggle", { name: pageName })}${
+                isExperimental ? " (🚧 experimental)" : ""
+              }`}
               labelPlacement="end"
               sx={{
                 marginInlineStart: `${2 * (pageUrl.split("/").length - 1)}px`,
