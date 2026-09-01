@@ -52,20 +52,32 @@ const CountCard = (props: CountCardProps) => {
     <Card sx={{ width: 300 }} elevation={3}>
       <CardContent>
         <Typography
-          sx={{ fontSize: 18, mb: 0 }}
-          color="text.primary"
           gutterBottom
+          sx={{
+            color: "text.primary",
+            fontSize: 18,
+            mb: 0,
+          }}
         >
           {t(`home.statistics.${translationKey}.title`)}
         </Typography>
         <Typography
-          sx={{ fontSize: 15, mb: 1 }}
-          color="text.secondary"
           gutterBottom
+          sx={{
+            color: "text.secondary",
+            fontSize: 15,
+            mb: 1,
+          }}
         >
           {t(`home.statistics.${translationKey}.description`)}
         </Typography>
-        <Typography variant="h3" color="text.primary" component="div">
+        <Typography
+          variant="h3"
+          component="div"
+          sx={{
+            color: "text.primary",
+          }}
+        >
           {typeof value === "number" ? value.toLocaleString() : "N/A"}
         </Typography>
       </CardContent>

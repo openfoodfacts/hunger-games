@@ -16,7 +16,7 @@ export function BrandFilter(props: BrandFilterProps) {
     <Autocomplete
       freeSolo
       value={value}
-      onChange={(event, newValue: string | null) => onChange(newValue ?? "")}
+      onChange={(_event, newValue: string | null) => onChange(newValue ?? "")}
       options={brands}
       renderInput={(params) => (
         <TextField

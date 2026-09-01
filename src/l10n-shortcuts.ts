@@ -6,17 +6,13 @@ type Shortcuts = {
   skip: string;
 };
 
-type ShortcutLocalization = {
-  en: Shortcuts;
-  [locale: string]: Partial<Shortcuts>;
+const DEFAULT_SHORTCUTS: Shortcuts = {
+  yes: "y",
+  no: "n",
+  skip: "k",
 };
 
-const SHORTCUT_LOCALISATION = {
-  en: {
-    yes: "y",
-    no: "n",
-    skip: "k",
-  },
+const SHORTCUT_LOCALISATION: Record<string, Partial<Shortcuts>> = {
   fr: {
     yes: "o",
     no: "n",
@@ -25,8 +21,10 @@ const SHORTCUT_LOCALISATION = {
 };
 
 export const getShortcuts = (lang?: string): Shortcuts => {
+  const localizedShortcuts = SHORTCUT_LOCALISATION[lang ?? getLang() ?? "en"];
   return {
-    ...SHORTCUT_LOCALISATION.en,
-    ...SHORTCUT_LOCALISATION[lang ?? getLang()],
+    yes: localizedShortcuts?.yes ?? DEFAULT_SHORTCUTS.yes,
+    no: localizedShortcuts?.no ?? DEFAULT_SHORTCUTS.no,
+    skip: localizedShortcuts?.skip ?? DEFAULT_SHORTCUTS.skip,
   };
 };
