@@ -153,7 +153,12 @@ export default function Settings() {
           {t("settings.reportIssue")}
         </Button>
       </Stack>
-      <Divider sx={{ width: "100%" }} light />
+      <Divider
+        sx={{
+          width: "100%",
+          opacity: "0.6",
+        }}
+      />
       <FooterWithLinks />
     </React.Suspense>
   );

@@ -91,9 +91,13 @@ const getToken = (colorMode) => ({
     },
     secondary: {
       ...(colorMode === "dark"
-        ? { dark: chocolate, main: cortado, light: mocha }
-        : { light: latte, main: cappucino, dark: latteMacchiato }),
-      contrastText: black,
+        ? { dark: chocolate, main: cortado, light: mocha, contrastText: white }
+        : {
+            light: latte,
+            main: cappucino,
+            dark: latteMacchiato,
+            contrastText: black,
+          }),
     },
     cafeCreme:
       colorMode === "dark"
@@ -162,7 +166,9 @@ export default function App() {
   }, [userState.isLoggedIn]);
 
   React.useEffect(() => {
-    refresh();
+    Promise.resolve()
+      .then(refresh)
+      .catch(() => {});
   }, [refresh]);
 
   // Matomo page view tracking
@@ -208,6 +214,14 @@ export default function App() {
   }, []);
 
   const theme = createTheme(getToken(mode));
+  const themeColor = theme.palette.cafeCreme.main;
+  React.useEffect(() => {
+    const metaThemeColor = document.head.querySelector(
+      'meta[name="theme-color"]',
+    );
+    if (!metaThemeColor) return;
+    metaThemeColor.setAttribute("content", themeColor);
+  }, [themeColor]);
 
   return (
     <React.Suspense fallback={<Loader />}>

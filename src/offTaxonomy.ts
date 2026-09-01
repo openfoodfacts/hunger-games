@@ -1,6 +1,4 @@
-import axios, { AxiosResponse } from "axios";
-
-type TagType = "categories" | "labels" | "brands";
+import axios from "axios";
 
 export type TaxonomyItem = {
   /**
@@ -50,10 +48,10 @@ export default async function getTaxonomy(
     return {};
   }
   return await axios
-    .get(
+    .get<Record<string, TaxonomyItem>>(
       `https://world.openfoodfacts.org/api/v2/taxonomy?tagtype=${tagtype}&tags=${tag}${
         languages && languages.length > 0 ? `&lc=${languages.join(",")}` : ""
       }`,
     )
-    .then((response) => response.data);
+    .then(({ data }) => data);
 }

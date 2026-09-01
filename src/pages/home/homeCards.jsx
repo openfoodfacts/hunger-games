@@ -1,4 +1,3 @@
-import * as React from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router";
 import Card from "@mui/material/Card";
@@ -7,8 +6,8 @@ import CardContent from "@mui/material/CardContent";
 import CardActionArea from "@mui/material/CardActionArea";
 import Typography from "@mui/material/Typography";
 import Stack from "@mui/material/Stack";
-import home_questions from "../../assets/home_questions.png";
-import home_logos from "../../assets/home_logos.png";
+import home_questions from "../../assets/home_questions.svg";
+import home_logos from "../../assets/home_logos.svg";
 
 const cards = [
   {
@@ -38,9 +37,9 @@ const HomeCards = () => {
     <Stack
       spacing={3}
       direction={{ xs: "column", sm: "column", md: "row" }}
-      alignItems="center"
-      justifyContent="center"
       sx={{
+        alignItems: "center",
+        justifyContent: "center",
         marginBottom: "30px",
       }}
     >
@@ -62,7 +61,9 @@ const HomeCards = () => {
                 gutterBottom
                 variant="p"
                 component="div"
-                fontSize={14}
+                sx={{
+                  fontSize: 14,
+                }}
               >
                 {t(cardInfo.desc)}
               </Typography>
