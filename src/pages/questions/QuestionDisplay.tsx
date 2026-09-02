@@ -76,8 +76,6 @@ function QuestionAnswerButtons({
     <Stack
       spacing={1.25}
       sx={{
-        position: "sticky",
-        bottom: 0,
         zIndex: 10,
         bgcolor: "background.paper",
         pt: 1,
