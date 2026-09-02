@@ -1,4 +1,4 @@
-import { defineConfig } from "vite";
+import { defineConfig } from "vitest/config";
 import react from "@vitejs/plugin-react";
 import { viteStaticCopy } from "vite-plugin-static-copy";
 
@@ -17,6 +17,11 @@ export default defineConfig({
   ],
   optimizeDeps: {
     exclude: ["js-big-decimal"],
+  },
+  test: {
+    environment: "happy-dom",
+    include: ["src/**/*.{test,spec}.{js,jsx,ts,tsx}"],
+    restoreMocks: true,
   },
   build: {
     rolldownOptions: {
