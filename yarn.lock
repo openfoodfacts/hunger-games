@@ -3350,7 +3350,7 @@ __metadata:
     typescript-eslint: "npm:^8.65.0"
     vite: "npm:^8.2.2"
     vite-plugin-static-copy: "npm:^4.1.1"
-    web-vitals: "npm:^6.0.1"
+    web-vitals: "npm:^6.2.1"
   languageName: unknown
   linkType: soft
 
@@ -5866,10 +5866,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"web-vitals@npm:^6.0.1":
-  version: 6.0.1
-  resolution: "web-vitals@npm:6.0.1"
-  checksum: 10/d28415c9c4edf240e13e51564feec71fa101b5f28958ffbca3f4905c23fc32da99158ec1ff366c2fd2a45c0c69cd7a3010d35b16d204c4207010f74f0f58cb35
+"web-vitals@npm:^6.2.1":
+  version: 6.2.1
+  resolution: "web-vitals@npm:6.2.1"
+  checksum: 10/bde1b9f39da7718d966fe60f8be4d17d571f381243b69a83cce29f04bd6076a9de20d3129ae9a483e711b94b767e3db9a37a0191890c043dbf121f55c96999c4
   languageName: node
   linkType: hard
 
