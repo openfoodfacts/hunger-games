@@ -50,8 +50,8 @@
     "loading": "تحميل"
   },
   "image_viewer": {
-    "compressed": "Compressed",
-    "load_original": "Load original"
+    "compressed": "مضغوط",
+    "load_original": "تحميل الأصل"
   },
   "questions": {
     "category": "atassnifate",
@@ -71,10 +71,10 @@
     "skip": "تخطي",
     "yes": "نعم",
     "no_questions_remaining": "لم يعد هناك أسئلة",
-    "similar_questions": "Similar questions",
-    "no_similar_questions": "No similar questions",
-    "remaining_questions_count_one": "1 question remaining",
-    "remaining_questions_count_other": "{{count}} questions remaining",
+    "similar_questions": "أسئلة مشابهة",
+    "no_similar_questions": "لا توجد أسئلة مشابهة",
+    "remaining_questions_count_one": "بقي سؤال واحد",
+    "remaining_questions_count_other": "{{count}} أسئلة متبقية",
     "an_error_occurred": "حدث خطأ. يُرجى إعادة التحميل، المحاولة لاحقًا، أو التواصل مع الفريق.",
     "countries": "بلدان",
     "view": "مشاهدة",
@@ -87,8 +87,8 @@
     "last_annotations": "الشروح الأخيرة",
     "remaining_annotations": "الأسئلة المتبقية",
     "annotated_annotations": "مشروح",
-    "no_images": "No images available",
-    "no_additional_info": "No additional information",
+    "no_images": "لا توجد صور متاحة",
+    "no_additional_info": "لا توجد معلومات إضافية",
     "add_missing_info": "إضافة",
     "filters": {
       "active_filter_number": "+{{count}} فلاتر",
