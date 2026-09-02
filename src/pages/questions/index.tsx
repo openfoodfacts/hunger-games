@@ -31,7 +31,6 @@ function QuestionsConsumer() {
                 p: { xs: 1.5, sm: 2 },
                 borderRadius: 3,
                 minHeight: { md: "calc(100vh - 116px)" },
-                height: { md: "calc(100vh - 116px)" },
                 overflow: { md: "hidden" },
               }}
             >
