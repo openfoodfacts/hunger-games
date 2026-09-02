@@ -1,3 +1,4 @@
+import * as React from "react";
 import { useTranslation } from "react-i18next";
 
 import Box from "@mui/material/Box";
@@ -5,14 +6,30 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import Stack from "@mui/material/Stack";
-import { CircularProgress } from "@mui/material";
+import CardActionArea from "@mui/material/CardActionArea";
+import EditIcon from "@mui/icons-material/Edit";
+import PhotoCameraIcon from "@mui/icons-material/PhotoCamera";
+import AddAPhotoIcon from "@mui/icons-material/AddAPhoto";
+import { CircularProgress, SvgIconProps } from "@mui/material";
 
 import { offClient } from "../../off";
+import { OFF_URL } from "../../const";
 import { useQuery } from "@tanstack/react-query";
 
 type CountCardProps = {
   translationKey: string;
   value: number | null | undefined;
+  Icon: React.ComponentType<SvgIconProps>;
+  href?: string;
+};
+
+const STAT_DETAILS: Record<
+  string,
+  { facet: string; Icon: React.ComponentType<SvgIconProps> }
+> = {
+  contributorCount: { facet: "contributors", Icon: AddAPhotoIcon },
+  editorCount: { facet: "editors", Icon: EditIcon },
+  photographerCount: { facet: "photographers", Icon: PhotoCameraIcon },
 };
 
 type UserDataProps = {
@@ -44,43 +61,60 @@ const fetchUserData = async (userName: string) => {
 };
 
 const CountCard = (props: CountCardProps) => {
-  const { translationKey, value } = props;
+  const { translationKey, value, Icon, href } = props;
 
   const { t } = useTranslation();
 
-  return (
-    <Card sx={{ width: 300 }} elevation={3}>
-      <CardContent>
+  const content = (
+    <CardContent>
+      <Stack direction="row" spacing={1} sx={{ alignItems: "center", mb: 0 }}>
+        <Icon fontSize="small" sx={{ color: "text.secondary" }} />
         <Typography
-          gutterBottom
           sx={{
             color: "text.primary",
             fontSize: 18,
-            mb: 0,
           }}
         >
           {t(`home.statistics.${translationKey}.title`)}
         </Typography>
-        <Typography
-          gutterBottom
-          sx={{
-            color: "text.secondary",
-            fontSize: 15,
-            mb: 1,
-          }}
+      </Stack>
+      <Typography
+        gutterBottom
+        sx={{
+          color: "text.secondary",
+          fontSize: 15,
+          mb: 1,
+        }}
+      >
+        {t(`home.statistics.${translationKey}.description`)}
+      </Typography>
+      <Typography
+        variant="h3"
+        component="div"
+        sx={{
+          color: "text.primary",
+        }}
+      >
+        {typeof value === "number" ? value.toLocaleString() : "N/A"}
+      </Typography>
+    </CardContent>
+  );
+
+  return (
+    <Card sx={{ width: 300 }} elevation={3}>
+      {href ? (
+        <CardActionArea
+          component="a"
+          href={href}
+          target="_blank"
+          rel="noreferrer"
+          aria-label={t(`home.statistics.${translationKey}.title`)}
         >
-          {t(`home.statistics.${translationKey}.description`)}
-        </Typography>
-        <Typography
-          variant="h3"
-          component="div"
-          sx={{
-            color: "text.primary",
-          }}
-        >
-          {typeof value === "number" ? value.toLocaleString() : "N/A"}
-        </Typography>
-      </CardContent>
+          {content}
+        </CardActionArea>
+      ) : (
+        content
+      )}
     </Card>
   );
 };
@@ -115,13 +149,22 @@ const UserData = ({ userName }: UserDataProps) => {
         <Typography color="error">{error.message}</Typography>
       ) : (
         <Stack direction={{ xs: "column", sm: "row" }} spacing={2}>
-          {Object.entries(data ?? {}).map(([countType, value]) => (
-            <CountCard
-              key={countType}
-              translationKey={countType}
-              value={value}
-            />
-          ))}
+          {Object.entries(data ?? {}).map(([countType, value]) => {
+            const details = STAT_DETAILS[countType];
+            return (
+              <CountCard
+                key={countType}
+                translationKey={countType}
+                value={value}
+                Icon={details.Icon}
+                href={
+                  userName
+                    ? `${OFF_URL}/facets/${details.facet}/${encodeURIComponent(userName)}`
+                    : undefined
+                }
+              />
+            );
+          })}
         </Stack>
       )}
     </Box>
