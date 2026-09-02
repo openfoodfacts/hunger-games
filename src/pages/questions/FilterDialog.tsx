@@ -12,6 +12,8 @@ import RadioGroup from "@mui/material/RadioGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import Radio from "@mui/material/Radio";
 import Dialog from "@mui/material/Dialog";
+import Snackbar from "@mui/material/Snackbar";
+import ShareIcon from "@mui/icons-material/Share";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { DialogActions, DialogContent } from "@mui/material";
@@ -26,6 +28,7 @@ import {
   predictors,
 } from "../../components/QuestionFilter/const";
 import { useFilterState } from "../../hooks/useFilterState";
+import { setFilterParams } from "../../hooks/useFilterState/getFilterParams";
 import { BrandFilter } from "../../components/QuestionFilter/BrandFilter";
 
 interface CountryObject {
@@ -116,6 +119,51 @@ export default function FilterDialog(props: FilterDialogProps) {
     innerPredictor,
     onClose,
   ]);
+
+  const [linkCopied, setLinkCopied] = React.useState(false);
+
+  const shareUrl = React.useMemo(() => {
+    const params = setFilterParams(new URLSearchParams(), {
+      insightType: innerInsightType,
+      valueTag: innerValueTag,
+      country: innerCountryObject?.countryCode,
+      brand: innerBrandFilter,
+      campaign: innerCampaign,
+      sorted: innerSortByPopularity,
+      predictor: innerPredictor,
+    });
+    const query = params.toString();
+    const { origin, pathname } = window.location;
+    return query ? `${origin}${pathname}?${query}` : `${origin}${pathname}`;
+  }, [
+    innerInsightType,
+    innerValueTag,
+    innerCountryObject?.countryCode,
+    innerBrandFilter,
+    innerCampaign,
+    innerSortByPopularity,
+    innerPredictor,
+  ]);
+
+  const shareFilter = React.useCallback(async () => {
+    const title = t("questions.filters.share.title");
+
+    if (typeof navigator.share === "function") {
+      try {
+        await navigator.share({ title, url: shareUrl });
+        return;
+      } catch {
+        return;
+      }
+    }
+
+    try {
+      await navigator.clipboard.writeText(shareUrl);
+      setLinkCopied(true);
+    } catch {
+      window.prompt(title, shareUrl);
+    }
+  }, [shareUrl, t]);
 
   return (
     <Dialog
@@ -246,7 +294,15 @@ export default function FilterDialog(props: FilterDialogProps) {
           />
         </Stack>
       </DialogContent>
-      <DialogActions>
+      <DialogActions sx={{ justifyContent: "space-between" }}>
+        <Button
+          startIcon={<ShareIcon />}
+          onClick={() => {
+            void shareFilter();
+          }}
+        >
+          {t("questions.filters.actions.share")}
+        </Button>
         <Stack
           direction="row"
           spacing={1}
@@ -268,6 +324,12 @@ export default function FilterDialog(props: FilterDialogProps) {
           </Button>
         </Stack>
       </DialogActions>
+      <Snackbar
+        open={linkCopied}
+        autoHideDuration={3000}
+        onClose={() => setLinkCopied(false)}
+        message={t("questions.filters.share.copied")}
+      />
     </Dialog>
   );
 }
