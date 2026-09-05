@@ -39,7 +39,11 @@ export default function JoinTheCommunity() {
 
   return (
     <div style={{ flexGrow: "1" }} className="OFF-join">
-      <Divider light>
+      <Divider
+        sx={{
+          opacity: "0.6",
+        }}
+      >
         <Chip label={t("settings.join_community")} />
       </Divider>
       <Box

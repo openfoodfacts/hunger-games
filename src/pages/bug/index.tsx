@@ -1,12 +1,21 @@
 import * as React from "react";
-import axios from "axios";
+import axios, { AxiosResponse } from "axios";
 import off from "../../off";
 import { TextField } from "@mui/material";
 import { OFF_URL, OFF_API_URL_V3 } from "../../const";
 
 export default function BugPage() {
   const [text, setText] = React.useState("test ingredient values");
-  const [response, setResponse] = React.useState();
+  const [response, setResponse] = React.useState<unknown>();
+  const sendRequest = (request: Promise<AxiosResponse<unknown>>) => {
+    request
+      .then(({ data }) => setResponse(data))
+      .catch((error: unknown) => {
+        setResponse({
+          error: error instanceof Error ? error.message : "Request failed",
+        });
+      });
+  };
 
   return (
     <div>
@@ -26,8 +35,8 @@ export default function BugPage() {
 
       <button
         onClick={() => {
-          axios
-            .post(
+          sendRequest(
+            axios.post<unknown>(
               `${OFF_URL}/cgi/product_jqm2.pl`,
               {
                 code: "123456789",
@@ -39,31 +48,31 @@ export default function BugPage() {
                   "Content-Type": "application/x-www-form-urlencoded",
                 },
               },
-            )
-            .then(({ data }) => setResponse(data));
+            ),
+          );
         }}
       >
         Test jqm2 with credential
       </button>
       <button
         onClick={() => {
-          axios
-            .post(
+          sendRequest(
+            axios.post<unknown>(
               `${OFF_API_URL_V3}/product/123456789`,
               {
                 ingredients_text_fr: text,
               },
               { withCredentials: true },
-            )
-            .then(({ data }) => setResponse(data));
+            ),
+          );
         }}
       >
         Test v3 with credential
       </button>
       <button
         onClick={() => {
-          axios
-            .post(
+          sendRequest(
+            axios.post<unknown>(
               `${OFF_URL}/cgi/product_jqm2.pl`,
               {
                 code: "123456789",
@@ -74,30 +83,30 @@ export default function BugPage() {
                   "Content-Type": "application/x-www-form-urlencoded",
                 },
               },
-            )
-            .then(({ data }) => setResponse(data));
+            ),
+          );
         }}
       >
         Test jqm2 without credential
       </button>
       <button
         onClick={() => {
-          axios
-            .post(`${OFF_API_URL_V3}product/123456789`, {
+          sendRequest(
+            axios.post<unknown>(`${OFF_API_URL_V3}product/123456789`, {
               ingredients_text_fr: text,
-            })
-            .then(({ data }) => setResponse(data));
+            }),
+          );
         }}
       >
         Test v3 without credential
       </button>
       <button
         onClick={() => {
-          axios
-            .patch(`${OFF_API_URL_V3}product/123456789`, {
+          sendRequest(
+            axios.patch<unknown>(`${OFF_API_URL_V3}product/123456789`, {
               ingredients_text_fr: text,
-            })
-            .then(({ data }) => setResponse(data));
+            }),
+          );
         }}
       >
         Test v3 without credential patch

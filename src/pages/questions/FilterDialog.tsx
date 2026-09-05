@@ -117,10 +117,15 @@ export default function FilterDialog(props: FilterDialogProps) {
     onClose,
   ]);
 
-  React.useEffect(resetFilter, [resetFilter]);
-
   return (
-    <Dialog open={open} onClose={onClose} PaperProps={{ sx: { p: 2 } }}>
+    <Dialog
+      open={open}
+      onClose={onClose}
+      slotProps={{
+        transition: { onEnter: resetFilter },
+        paper: { sx: { p: 2 } },
+      }}
+    >
       <DialogContent>
         <Stack spacing={2} sx={{ display: open ? undefined : "none" }}>
           <FormControl>
@@ -176,7 +181,7 @@ export default function FilterDialog(props: FilterDialogProps) {
           )}
           <Autocomplete
             value={innerCountryObject}
-            onChange={(event, newValue) => setInnerCountryObject(newValue)}
+            onChange={(_event, newValue) => setInnerCountryObject(newValue)}
             options={countries}
             getOptionLabel={(country) => country.label}
             isOptionEqualToValue={(country, value) => country.id === value.id}
@@ -243,7 +248,13 @@ export default function FilterDialog(props: FilterDialogProps) {
         </Stack>
       </DialogContent>
       <DialogActions>
-        <Stack direction="row" justifyContent="flex-end" spacing={1}>
+        <Stack
+          direction="row"
+          spacing={1}
+          sx={{
+            justifyContent: "flex-end",
+          }}
+        >
           <Button
             variant="outlined"
             onClick={() => {

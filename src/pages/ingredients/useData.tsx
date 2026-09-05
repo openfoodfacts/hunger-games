@@ -1,4 +1,5 @@
 import * as React from "react";
+import { useInfiniteQuery } from "@tanstack/react-query";
 import off from "../../off";
 import { ROBOTOFF_API_URL } from "../../const";
 
@@ -15,159 +16,182 @@ const imagesToRead = [
   },
 ];
 
-const getImageUrl = (
-  base: string,
-  id: string,
-  resolution: "100" | "400" | "full",
-) => {
-  return `${base}${id}${resolution === "full" ? "" : `.${resolution}`}.jpg`;
+type SourceImage = { uploaded_t?: number; uploader?: string };
+type SelectedImage = {
+  geometry: string;
+  imgid: string;
+  sizes: { full: { h: number; w: number } };
+  x1?: number;
+  x2?: number;
+  y1?: number;
+  y2?: number;
 };
-
-const getIngredientExtractionUrl = (base: string, id: string) => {
-  return `${ROBOTOFF_API_URL}/predict/ingredient_list?ocr_url=${base}${id}.json`;
-};
-
-const formatData = ({
-  code,
-  lang,
-  image_ingredients_url,
-  product_name,
-  ingredient,
-  images,
-  scans_n,
-  ...other
-}: {
+type IngredientImage = SourceImage | SelectedImage;
+type IngredientApiProduct = {
   code: string;
-  lang: string;
   image_ingredients_url: string;
-  product_name: string;
-  ingredient: any;
-  images: any;
-  scans_n: any;
-  [x: string]: unknown;
-}) => {
+  images: Record<string, IngredientImage>;
+  ingredient?: unknown;
+  lang: string;
+  product_name?: string;
+  scans_n?: number;
+  [key: string]: unknown;
+};
+
+export type IngredientSelectedImage = {
+  countryCode: string;
+  fetchDataUrl: string;
+  imageUrl: string;
+  uploaded_t?: number;
+  uploader?: string;
+};
+export type IngredientProduct = {
+  code: string;
+  ingredient?: unknown;
+  lang: string;
+  product_name?: string;
+  scans_n?: number;
+  selectedImages: IngredientSelectedImage[];
+  [key: `ingredients_text_${string}`]: unknown;
+};
+
+const isSelectedImage = (image: IngredientImage): image is SelectedImage =>
+  "imgid" in image && "geometry" in image && "sizes" in image;
+const getImageUrl = (base: string, id: string) => `${base}${id}.jpg`;
+const getIngredientExtractionUrl = (base: string, id: string) =>
+  `${ROBOTOFF_API_URL}/predict/ingredient_list?ocr_url=${base}${id}.json`;
+
+const formatData = (product: IngredientApiProduct): IngredientProduct => {
+  const {
+    code,
+    lang,
+    image_ingredients_url,
+    product_name,
+    ingredient,
+    images,
+    scans_n,
+    ...other
+  } = product;
   const baseImageUrl = image_ingredients_url.replace(/ingredients.*/, "");
-
-  const selectedImages = Object.keys(images)
-    .filter((key) => key.startsWith("ingredients"))
-    .map((key) => {
-      const imageData = images[key];
-      // eslint-disable-next-line @typescript-eslint/no-unused-vars
-      const [_, x, y] = images[key].geometry.split("-");
-
-      const countryCode = key.startsWith("ingredients_")
-        ? key.slice("ingredients_".length)
-        : "";
-
-      const { uploaded_t, uploader } = images[imageData.imgid];
-      return {
-        imgId: imageData.imgid,
+  const selectedImages = Object.entries(images).flatMap(([key, imageData]) => {
+    if (!key.startsWith("ingredients") || !isSelectedImage(imageData))
+      return [];
+    const sourceImage = images[imageData.imgid];
+    const uploaded_t =
+      sourceImage && "uploaded_t" in sourceImage
+        ? sourceImage.uploaded_t
+        : undefined;
+    const uploader =
+      sourceImage && "uploader" in sourceImage
+        ? sourceImage.uploader
+        : undefined;
+    const countryCode = key.startsWith("ingredients_")
+      ? key.slice("ingredients_".length)
+      : "";
+    return [
+      {
         countryCode,
-        imageUrl: getImageUrl(baseImageUrl, imageData.imgid, "full"),
+        imageUrl: getImageUrl(baseImageUrl, imageData.imgid),
         fetchDataUrl: getIngredientExtractionUrl(
           baseImageUrl.replace("images.", "static."),
           imageData.imgid,
         ),
         uploaded_t,
         uploader,
-        x: Number.parseFloat(x),
-        y: Number.parseFloat(y),
-        w: Number.parseFloat(imageData.sizes.full.w),
-        h: Number.parseFloat(imageData.sizes.full.h),
-        x1: images[key].x1,
-        x2: images[key].x2,
-        y1: images[key].y1,
-        y2: images[key].y2,
-        geometry: images[key].geometry,
-      };
-    });
-  const ingredientTexts = {};
-  Object.entries(other).forEach(([key, value]) => {
-    if (key.startsWith("ingredient")) {
-      ingredientTexts[key] = value;
-    }
+      },
+    ];
   });
+  const ingredientTexts = Object.fromEntries(
+    Object.entries(other).filter(([key]) =>
+      key.startsWith("ingredients_text_"),
+    ),
+  );
   return {
     code,
     lang,
     selectedImages,
-    image_ingredients_url,
     product_name,
     ingredient,
     scans_n,
     ...ingredientTexts,
-    // images,
   };
 };
 
-export default function useData(countryCode): [any[], () => void, boolean] {
-  const [data, setData] = React.useState([]);
-  const prevCountry = React.useRef(countryCode);
-  const [isLoading, setIsLoading] = React.useState(true);
-  const [page, setPage] = React.useState(() => {
-    return 0;
-    // Seems that API fails for large page number
-    //return new Date().getMilliseconds() % 50;
+export default function useData(countryCode: string) {
+  const [dismissed, setDismissed] = React.useState<{
+    countryCode: string;
+    codes: Set<string>;
+  }>({ countryCode, codes: new Set() });
+
+  const {
+    data: queryData,
+    error,
+    fetchNextPage,
+    isFetchingNextPage,
+    isPending,
+    refetch,
+  } = useInfiniteQuery<
+    IngredientProduct[],
+    Error,
+    IngredientProduct[],
+    readonly ["ingredient-products", string],
+    number
+  >({
+    queryKey: ["ingredient-products", countryCode],
+    initialPageParam: 0,
+    queryFn: async ({ pageParam, signal }) => {
+      const { data } = await off.searchProducts<IngredientApiProduct>({
+        page: pageParam,
+        pageSize: 25,
+        filters: imagesToRead,
+        fields: "all",
+        countryCode: countryCode || "world",
+        signal,
+      });
+      return (data.products ?? []).map(formatData);
+    },
+    getNextPageParam: (_lastPage, pages) => pages.length,
+    select: ({ pages }) => pages.flat(),
   });
-  const seenCodes = React.useRef([]);
+
+  const data = React.useMemo(() => {
+    const dismissedCodes =
+      dismissed.countryCode === countryCode
+        ? dismissed.codes
+        : new Set<string>();
+    const seenCodes = new Set<string>();
+    return (queryData ?? []).filter((product) => {
+      if (dismissedCodes.has(product.code) || seenCodes.has(product.code)) {
+        return false;
+      }
+      seenCodes.add(product.code);
+      return true;
+    });
+  }, [countryCode, dismissed, queryData]);
 
   React.useEffect(() => {
-    let isValid = true;
-
-    const load = async () => {
-      setIsLoading(true);
-
-      try {
-        const {
-          data: { products },
-        } = await off.searchProducts({
-          page,
-          pageSize: 25,
-          filters: imagesToRead,
-          fields: "all",
-          countryCode: countryCode || "world",
-        });
-        if (isValid) {
-          const rep = products
-            .filter((p) => {
-              const isNew = !seenCodes.current[p.code]; // prevent from adding products already seen
-              if (isNew) {
-                seenCodes.current[p.code] = true;
-              }
-
-              return isNew;
-            })
-            .map(formatData);
-
-          if (prevCountry.current !== countryCode) {
-            setData(rep);
-            prevCountry.current = countryCode;
-          } else {
-            setData((prev) => [...prev, ...rep]);
-          }
-          setIsLoading(false);
-        }
-      } catch (error) {
-        console.log(error);
-      }
-    };
-
-    load();
-    return () => {
-      isValid = false;
-    };
-  }, [page, countryCode]);
+    if (data.length < 5 && !isPending && !isFetchingNextPage && !error) {
+      void fetchNextPage();
+    }
+  }, [data.length, error, fetchNextPage, isFetchingNextPage, isPending]);
 
   const removeHead = React.useCallback(() => {
-    setData((prev) => [...prev.slice(1)]);
-  }, []);
+    const head = data[0];
+    if (!head) return;
+    setDismissed((current) => {
+      const codes =
+        current.countryCode === countryCode ? current.codes : new Set<string>();
+      const nextCodes = new Set(codes);
+      nextCodes.add(head.code);
+      return { countryCode, codes: nextCodes };
+    });
+  }, [countryCode, data]);
 
-  React.useEffect(() => {
-    // This is dummy but will be ok for a PoC
-    if (data.length < 5 && !isLoading) {
-      setPage((p) => p + 1);
-    }
-  }, [data, isLoading]);
-
-  return [data, removeHead, isLoading];
+  return {
+    data,
+    removeHead,
+    isLoading: isPending,
+    error: error instanceof Error ? error.message : null,
+    retry: () => void refetch(),
+  };
 }

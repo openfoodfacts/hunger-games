@@ -18,7 +18,9 @@ export function SimilarQuestions({
   const { t } = useTranslation();
 
   const valueTag = filterState.valueTag || "";
-  const prefixlessTag = valueTag.includes(":") ? valueTag.substring(valueTag.indexOf(":") + 1) : null;
+  const prefixlessTag = valueTag.includes(":")
+    ? valueTag.substring(valueTag.indexOf(":") + 1)
+    : null;
 
   const { data: similars, isPending } = useQuery({
     queryKey: ["taxonomy", filterState.insightType, valueTag],
@@ -36,7 +38,13 @@ export function SimilarQuestions({
   });
 
   return (
-    <Stack direction="column" alignItems="center" spacing={1}>
+    <Stack
+      direction="column"
+      spacing={1}
+      sx={{
+        alignItems: "center",
+      }}
+    >
       <p>{t("questions.no_questions_remaining")}</p>
 
       {prefixlessTag && (
@@ -93,8 +101,9 @@ function LabelWithNumber({ tag }: { tag: string }) {
         {tag} (
         {status === "pending"
           ? "..."
-          : t("questions.remaining_questions_count", { count: count ?? 0 })}
-        )
+          : t("questions.remaining_questions_count", {
+              count: count !== undefined && count >= 99 ? "100+" : (count ?? 0),
+            })}
       </a>
     </li>
   );
