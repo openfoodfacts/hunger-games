@@ -16,7 +16,7 @@
           "description": "Označte otázky s nejvyšší hodnotou"
         },
         "create_products": {
-          "title": "Create missing products",
+          "title": "Vytvořit chybějící produkty",
           "description": "Add products that are not in the database yet, over on Open Prices"
         }
       }
@@ -118,7 +118,7 @@
       },
       "placeholders": {
         "value": "Hodnota (Fanta, en:organic,...)",
-        "country": "France, Germany, Japan, ...",
+        "country": "Francie, Německo, Japonsko, ...",
         "brand": "Auchan, Danone, Herta,...",
         "campaign": "Anotační kampaně",
         "predictor": "univerzální detektor log, regulární výraz, ..."
