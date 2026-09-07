@@ -6,64 +6,70 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import Stack from "@mui/material/Stack";
+import Skeleton from "@mui/material/Skeleton";
 import CardActionArea from "@mui/material/CardActionArea";
 import EditIcon from "@mui/icons-material/Edit";
 import PhotoCameraIcon from "@mui/icons-material/PhotoCamera";
 import AddAPhotoIcon from "@mui/icons-material/AddAPhoto";
-import { CircularProgress, SvgIconProps } from "@mui/material";
+import { SvgIconProps } from "@mui/material";
 
 import { offClient } from "../../off";
 import { OFF_URL } from "../../const";
 import { useQuery } from "@tanstack/react-query";
 
-type CountCardProps = {
+type StatDetail = {
   translationKey: string;
-  value: number | null | undefined;
+  apiFacet: string;
+  linkFacet: string;
   Icon: React.ComponentType<SvgIconProps>;
-  href?: string;
 };
 
-const STAT_DETAILS: Record<
-  string,
-  { facet: string; Icon: React.ComponentType<SvgIconProps> }
-> = {
-  contributorCount: { facet: "contributors", Icon: AddAPhotoIcon },
-  editorCount: { facet: "editors", Icon: EditIcon },
-  photographerCount: { facet: "photographers", Icon: PhotoCameraIcon },
+type CountCardProps = StatDetail & {
+  userName: string;
 };
 
 type UserDataProps = {
   userName: string;
 };
 
-const fetchUserData = async (userName: string) => {
-  const editorPromise = offClient
-    .getFacetValue("editor", userName, {})
-    .then((value) => value.count)
-    .catch(() => undefined);
-
-  const contributorPromise = offClient
-    .getFacetValue("contributor", userName, {})
-    .then((value) => value.count)
-    .catch(() => undefined);
-  const photographerPromise = offClient
-    .getFacetValue("photographer", userName, {})
-    .then((value) => value.count)
-    .catch(() => undefined);
-
-  const [editorCount, contributorCount, photographerCount] = await Promise.all([
-    editorPromise,
-    contributorPromise,
-    photographerPromise,
-  ]);
-
-  return { editorCount, contributorCount, photographerCount };
-};
+const STATS: StatDetail[] = [
+  {
+    translationKey: "editorCount",
+    apiFacet: "editor",
+    linkFacet: "editors",
+    Icon: EditIcon,
+  },
+  {
+    translationKey: "contributorCount",
+    apiFacet: "contributor",
+    linkFacet: "contributors",
+    Icon: AddAPhotoIcon,
+  },
+  {
+    translationKey: "photographerCount",
+    apiFacet: "photographer",
+    linkFacet: "photographers",
+    Icon: PhotoCameraIcon,
+  },
+];
 
 const CountCard = (props: CountCardProps) => {
-  const { translationKey, value, Icon, href } = props;
+  const { translationKey, apiFacet, linkFacet, Icon, userName } = props;
 
   const { t } = useTranslation();
+
+  const { data: value, isPending } = useQuery({
+    queryKey: ["userStat", apiFacet, userName],
+    queryFn: () =>
+      offClient
+        .getFacetValue(apiFacet, userName, {})
+        .then((response) => response.count)
+        .catch(() => undefined),
+  });
+
+  const href = userName
+    ? `${OFF_URL}/facets/${linkFacet}/${encodeURIComponent(userName)}`
+    : undefined;
 
   const content = (
     <CardContent>
@@ -88,15 +94,19 @@ const CountCard = (props: CountCardProps) => {
       >
         {t(`home.statistics.${translationKey}.description`)}
       </Typography>
-      <Typography
-        variant="h3"
-        component="div"
-        sx={{
-          color: "text.primary",
-        }}
-      >
-        {typeof value === "number" ? value.toLocaleString() : "N/A"}
-      </Typography>
+      {isPending ? (
+        <Skeleton variant="text" width="60%" sx={{ fontSize: "3rem" }} />
+      ) : (
+        <Typography
+          variant="h3"
+          component="div"
+          sx={{
+            color: "text.primary",
+          }}
+        >
+          {typeof value === "number" ? value.toLocaleString() : "N/A"}
+        </Typography>
+      )}
     </CardContent>
   );
 
@@ -121,13 +131,6 @@ const CountCard = (props: CountCardProps) => {
 
 const UserData = ({ userName }: UserDataProps) => {
   const { t } = useTranslation();
-  const { data, isLoading, error } = useQuery({
-    queryKey: ["userStats", userName],
-    queryFn: async () => {
-      const data = await fetchUserData(userName);
-      return data;
-    },
-  });
 
   return (
     <Box sx={{ p: 2, mb: 10 }}>
@@ -135,38 +138,11 @@ const UserData = ({ userName }: UserDataProps) => {
         {t("home.statistics.title", { userName: userName || "<unknown>" })}
       </Typography>
 
-      {isLoading ? (
-        <Box
-          sx={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
-          <CircularProgress />
-        </Box>
-      ) : error ? (
-        <Typography color="error">{error.message}</Typography>
-      ) : (
-        <Stack direction={{ xs: "column", sm: "row" }} spacing={2}>
-          {Object.entries(data ?? {}).map(([countType, value]) => {
-            const details = STAT_DETAILS[countType];
-            return (
-              <CountCard
-                key={countType}
-                translationKey={countType}
-                value={value}
-                Icon={details.Icon}
-                href={
-                  userName
-                    ? `${OFF_URL}/facets/${details.facet}/${encodeURIComponent(userName)}`
-                    : undefined
-                }
-              />
-            );
-          })}
-        </Stack>
-      )}
+      <Stack direction={{ xs: "column", sm: "row" }} spacing={2}>
+        {STATS.map((stat) => (
+          <CountCard key={stat.translationKey} {...stat} userName={userName} />
+        ))}
+      </Stack>
     </Box>
   );
 };
