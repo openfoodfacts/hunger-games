@@ -14,6 +14,10 @@
         "green_score": {
           "title": "Green-score",
           "description": "Annotate the questions with the highest value"
+        },
+        "create_products": {
+          "title": "Create missing products",
+          "description": "Add products that are not in the database yet, over on Open Prices"
         }
       }
     },
@@ -114,6 +118,7 @@
       },
       "placeholders": {
         "value": "值(芬達，英文：有機的，…)",
+        "country": "France, Germany, Japan, ...",
         "brand": "歐尚（Auchan）、達能（Danone）和爾塔（Herta）…",
         "campaign": "標注活動",
         "predictor": "通用徽標偵測器、正規表示式、…"
