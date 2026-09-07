@@ -14,6 +14,10 @@
         "green_score": {
           "title": "Pontuação ecológica",
           "description": "Assinale as perguntas com maior relevância"
+        },
+        "create_products": {
+          "title": "Create missing products",
+          "description": "Add products that are not in the database yet, over on Open Prices"
         }
       }
     },
@@ -114,6 +118,7 @@
       },
       "placeholders": {
         "value": "Valor (Fanta, pt:orgânico,...)",
+        "country": "France, Germany, Japan, ...",
         "brand": "Auchan, Danone, Herta...",
         "campaign": "Campanhas de anotação",
         "predictor": "detector-de-logotipo-universal, regex, ..."
