@@ -14,6 +14,10 @@
         "green_score": {
           "title": "العلامة البيئية Green-score",
           "description": "علق على الأسئلة بجودة أعلى"
+        },
+        "create_products": {
+          "title": "Create missing products",
+          "description": "Add products that are not in the database yet, over on Open Prices"
         }
       }
     },
@@ -114,6 +118,7 @@
       },
       "placeholders": {
         "value": "القيمة (فانتا، إن:عضوية،...)",
+        "country": "France, Germany, Japan, ...",
         "brand": "أوشان، دانون، هيرتا، ...",
         "campaign": "حملات التعليقات التوضيحية",
         "predictor": "كاشف الشعارات العالمي، التعبيرات النمطية، ..."
