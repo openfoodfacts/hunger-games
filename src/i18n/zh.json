@@ -14,6 +14,10 @@
         "green_score": {
           "title": "生态评分",
           "description": "优先标注价值最高的问题"
+        },
+        "create_products": {
+          "title": "Create missing products",
+          "description": "Add products that are not in the database yet, over on Open Prices"
         }
       }
     },
@@ -114,6 +118,7 @@
       },
       "placeholders": {
         "value": "价值(芬达，有机的…)",
+        "country": "France, Germany, Japan, ...",
         "brand": "欧尚、达能、赫塔，...",
         "campaign": "标注活动",
         "predictor": "通用徽标检测器、正则表达式、……"
