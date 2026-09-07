@@ -14,6 +14,10 @@
         "green_score": {
           "title": "Eko-rezultat",
           "description": "Obilježite pitanja s najvećom vrijednošću"
+        },
+        "create_products": {
+          "title": "Create missing products",
+          "description": "Add products that are not in the database yet, over on Open Prices"
         }
       }
     },
@@ -114,6 +118,7 @@
       },
       "placeholders": {
         "value": "Vrijednost (Fanta, en:organsko,...)",
+        "country": "France, Germany, Japan, ...",
         "brand": "Auchan, Danone, Herta,...",
         "campaign": "Kampanje za komentare",
         "predictor": "univerzalni detektor loga, regex, ..."
