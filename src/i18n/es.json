@@ -14,6 +14,10 @@
         "green_score": {
           "title": "Green-score",
           "description": "Anota las preguntas con el valor más alto"
+        },
+        "create_products": {
+          "title": "Create missing products",
+          "description": "Add products that are not in the database yet, over on Open Prices"
         }
       }
     },
@@ -114,6 +118,7 @@
       },
       "placeholders": {
         "value": "Valor (Fanta, es:ecológico…)",
+        "country": "France, Germany, Japan, ...",
         "brand": "Hacendado, Danone, Campofrío…",
         "campaign": "Campañas de anotación",
         "predictor": "detector de logotipos universal, expresiones regulares, ..."
