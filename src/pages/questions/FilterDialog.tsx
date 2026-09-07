@@ -189,6 +189,7 @@ export default function FilterDialog(props: FilterDialogProps) {
               <TextField
                 {...params}
                 label={t("questions.filters.long_label.country")}
+                placeholder={t("questions.filters.placeholders.country")}
                 size="small"
               />
             )}
