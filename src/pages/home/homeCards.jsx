@@ -70,10 +70,12 @@ const HomeCards = () => {
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
+                  backgroundColor: "#f6f3f0",
+                  borderRadius: "8px",
                 }}
               >
                 <cardInfo.Icon
-                  sx={{ fontSize: 96, color: "text.secondary" }}
+                  sx={{ fontSize: 96, color: "#85746c" }}
                   aria-hidden
                 />
               </Box>
