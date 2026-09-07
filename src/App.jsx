@@ -91,9 +91,13 @@ const getToken = (colorMode) => ({
     },
     secondary: {
       ...(colorMode === "dark"
-        ? { dark: chocolate, main: cortado, light: mocha }
-        : { light: latte, main: cappucino, dark: latteMacchiato }),
-      contrastText: black,
+        ? { dark: chocolate, main: cortado, light: mocha, contrastText: white }
+        : {
+            light: latte,
+            main: cappucino,
+            dark: latteMacchiato,
+            contrastText: black,
+          }),
     },
     cafeCreme:
       colorMode === "dark"
