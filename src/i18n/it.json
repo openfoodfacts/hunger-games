@@ -14,6 +14,10 @@
         "green_score": {
           "title": "Green-score",
           "description": "Annota le domande con il valore più alto"
+        },
+        "create_products": {
+          "title": "Create missing products",
+          "description": "Add products that are not in the database yet, over on Open Prices"
         }
       }
     },
@@ -114,6 +118,7 @@
       },
       "placeholders": {
         "value": "Valore (Fanta, it:biologico,...)",
+        "country": "France, Germany, Japan, ...",
         "brand": "Auchan, Danone, Herta, ...",
         "campaign": "Campagne d'annotazione",
         "predictor": "universal-logo-detector, regex, ..."
