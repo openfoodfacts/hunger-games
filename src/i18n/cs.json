@@ -14,6 +14,10 @@
         "green_score": {
           "title": "Green-score",
           "description": "Označte otázky s nejvyšší hodnotou"
+        },
+        "create_products": {
+          "title": "Create missing products",
+          "description": "Add products that are not in the database yet, over on Open Prices"
         }
       }
     },
@@ -114,6 +118,7 @@
       },
       "placeholders": {
         "value": "Hodnota (Fanta, en:organic,...)",
+        "country": "France, Germany, Japan, ...",
         "brand": "Auchan, Danone, Herta,...",
         "campaign": "Anotační kampaně",
         "predictor": "univerzální detektor log, regulární výraz, ..."
