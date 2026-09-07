@@ -14,6 +14,10 @@
         "green_score": {
           "title": "エコスコア",
           "description": "最も価値の高い質問に注釈を付ける"
+        },
+        "create_products": {
+          "title": "Create missing products",
+          "description": "Add products that are not in the database yet, over on Open Prices"
         }
       }
     },
@@ -114,6 +118,7 @@
       },
       "placeholders": {
         "value": "キーワード(ファンタ, ja: オーガニック,…)",
+        "country": "France, Germany, Japan, ...",
         "brand": "オーシャン、ダノン、ヘルタ、...",
         "campaign": "アノテーションキャンペーン",
         "predictor": "universal-logo-detector、正規表現、..."
