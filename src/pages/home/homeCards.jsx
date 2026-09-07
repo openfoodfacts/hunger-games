@@ -71,7 +71,7 @@ const HomeCards = () => {
                   alignItems: "center",
                   justifyContent: "center",
                   backgroundColor: "#f6f3f0",
-                  borderRadius: "8px",
+                  borderRadius: "16px",
                 }}
               >
                 <cardInfo.Icon
