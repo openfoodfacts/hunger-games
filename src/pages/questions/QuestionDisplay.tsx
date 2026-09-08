@@ -167,7 +167,7 @@ function QuestionImage({
   );
 }
 
-export function QuestionStatusMessage({
+function QuestionStatusMessage({
   message,
   showLoader = false,
 }: {

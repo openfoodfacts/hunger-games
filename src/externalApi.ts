@@ -1,6 +1,6 @@
 import { NUTRI_PATROL_URL } from "./const";
 
-export const addImageFlag = (opts: { barcode: string; imgid: number }) => {
+const addImageFlag = (opts: { barcode: string; imgid: number }) => {
   const { barcode, imgid } = opts;
   const imgidStr = imgid?.toString() || "";
   const NutriPatrolURL =

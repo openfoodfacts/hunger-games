@@ -33,25 +33,6 @@ export const predictors = [
   { value: "ocr", labelKey: "ocr" },
 ];
 
-export const countryNames = [
-  "",
-  "en:australia",
-  "en:belgium",
-  "en:canada",
-  "en:croatia",
-  "en:denmark",
-  "en:france",
-  "en:germany",
-  "en:italy",
-  "en:netherlands",
-  "en:portugal",
-  "en:spain",
-  "en:sweden",
-  "en:switzerland",
-  "en:united-kingdom",
-  "en:united-states",
-];
-
 export const insightTypesNames = {
   label: "label",
   category: "category",
@@ -68,10 +49,3 @@ export const key2urlParam = {
   sortByPopularity: "sorted",
   campaign: "campaign",
 };
-
-const urlParams2Key: Record<string, string> = {};
-Object.entries(key2urlParam).forEach(([key, value]) => {
-  urlParams2Key[value] = key;
-});
-
-export { urlParams2Key };

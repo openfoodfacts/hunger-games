@@ -41,12 +41,3 @@ export const removeEmptyKeys = <T extends Record<string, unknown>>(obj: T) => {
 export function sleep(ms: number) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
-
-//to provide capitalised country name; en:france => France
-export const capitaliseName = (string: string | undefined) => {
-  if (!string) {
-    return string;
-  }
-  const name = string.slice(3);
-  return name.charAt(0).toUpperCase() + name.slice(1);
-};

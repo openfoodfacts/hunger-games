@@ -38,7 +38,7 @@ type IngredientApiProduct = {
   [key: string]: unknown;
 };
 
-export type IngredientSelectedImage = {
+type IngredientSelectedImage = {
   countryCode: string;
   fetchDataUrl: string;
   imageUrl: string;
