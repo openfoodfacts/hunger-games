@@ -16,8 +16,8 @@
           "description": "Annotera frågorna med högst värde"
         },
         "create_products": {
-          "title": "Create missing products",
-          "description": "Add products that are not in the database yet, over on Open Prices"
+          "title": "Skapa saknade produkter",
+          "description": "Lägg till produkter som ännu inte finns i databasen, borta på Öppna priser"
         }
       }
     },
@@ -118,7 +118,7 @@
       },
       "placeholders": {
         "value": "Värde (fanta, sv:ekologiskt,...)",
-        "country": "France, Germany, Japan, ...",
+        "country": "Frankrike, Tyskland, Japan, ...",
         "brand": "Auchan, Danone, Herta, ...",
         "campaign": "Noteringskampanjer",
         "predictor": "universell-logotypdetektor, regex, ..."
