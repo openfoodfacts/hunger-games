@@ -6,6 +6,8 @@ import CardContent from "@mui/material/CardContent";
 import CardActionArea from "@mui/material/CardActionArea";
 import Typography from "@mui/material/Typography";
 import Stack from "@mui/material/Stack";
+import Box from "@mui/material/Box";
+import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 import home_questions from "../../assets/home_questions.svg";
 import home_logos from "../../assets/home_logos.svg";
 
@@ -29,6 +31,12 @@ const cards = [
     image:
       "https://static.openfoodfacts.org/images/attributes/dist/green-score-a.svg",
   },
+  {
+    title: "home.game_selector.cards.create_products.title",
+    desc: "home.game_selector.cards.create_products.description",
+    href: "https://prices.openfoodfacts.org/experiments/create-off-product",
+    Icon: AddShoppingCartIcon,
+  },
 ];
 
 const HomeCards = () => {
@@ -45,14 +53,41 @@ const HomeCards = () => {
     >
       {cards.map((cardInfo) => (
         <Card sx={{ width: 350, height: 300 }} key={cardInfo.title}>
-          <CardActionArea component={Link} to={cardInfo.link}>
-            <CardMedia
-              component="img"
-              height="200"
-              image={cardInfo.image}
-              alt={t(cardInfo.title)}
-              sx={{ objectFit: "contain" }}
-            />
+          <CardActionArea
+            {...(cardInfo.href
+              ? {
+                  component: "a",
+                  href: cardInfo.href,
+                  target: "_blank",
+                  rel: "noreferrer",
+                }
+              : { component: Link, to: cardInfo.link })}
+          >
+            {cardInfo.Icon ? (
+              <Box
+                sx={{
+                  height: 200,
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  backgroundColor: "#f6f3f0",
+                  borderRadius: "16px",
+                }}
+              >
+                <cardInfo.Icon
+                  sx={{ fontSize: 96, color: "#85746c" }}
+                  aria-hidden
+                />
+              </Box>
+            ) : (
+              <CardMedia
+                component="img"
+                height="200"
+                image={cardInfo.image}
+                alt={t(cardInfo.title)}
+                sx={{ objectFit: "contain" }}
+              />
+            )}
             <CardContent>
               <Typography variant="h5" component="div">
                 {t(cardInfo.title)}
