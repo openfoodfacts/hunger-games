@@ -433,7 +433,7 @@ const UNTYPED_LOGOS = {
   "en:organic": {
     tag: "en:organic",
     label: "Bio",
-    logo: `https://images.${OFF_DOMAIN}/images/lang/fr/labels/bio.96x90.png`,
+    logo: `https://images.${OFF_DOMAIN}/images/lang/fr/labels/bio.96x90.svg`,
     type: "label",
   },
   "en:eg-oko-verordnung": {
