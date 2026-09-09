@@ -16,8 +16,8 @@
           "description": "תיוג השאלות עם הערך הגבוה ביותר"
         },
         "create_products": {
-          "title": "Create missing products",
-          "description": "Add products that are not in the database yet, over on Open Prices"
+          "title": "יצירת מוצרים חסרים",
+          "description": "הוספת מוצרים שעדיין אינם במסד הנתונים, ב־Open Prices"
         }
       }
     },
@@ -118,7 +118,7 @@
       },
       "placeholders": {
         "value": "ערך (פאנטה, en:organic,…)",
-        "country": "France, Germany, Japan, ...",
+        "country": "צרפת, ישראל, יפן…",
         "brand": "טרה, אסם, צבר, …",
         "campaign": "מסעות פרסום לתיוג",
         "predictor": "גלאי לוגו אוניברסלי, ביטוי רגולרי, ..."
