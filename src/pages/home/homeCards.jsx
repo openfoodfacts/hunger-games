@@ -5,7 +5,6 @@ import CardMedia from "@mui/material/CardMedia";
 import CardContent from "@mui/material/CardContent";
 import CardActionArea from "@mui/material/CardActionArea";
 import Typography from "@mui/material/Typography";
-import Stack from "@mui/material/Stack";
 import Box from "@mui/material/Box";
 import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 import home_questions from "../../assets/home_questions.svg";
@@ -42,17 +41,19 @@ const cards = [
 const HomeCards = () => {
   const { t } = useTranslation();
   return (
-    <Stack
-      spacing={3}
-      direction={{ xs: "column", sm: "column", md: "row" }}
+    <Box
       sx={{
-        alignItems: "center",
-        justifyContent: "center",
+        display: "grid",
+        gridTemplateColumns: "repeat(auto-fill, minmax(300px, 1fr))",
+        gap: 3,
+        maxWidth: 1500,
+        mx: "auto",
+        px: 2,
         marginBottom: "30px",
       }}
     >
       {cards.map((cardInfo) => (
-        <Card sx={{ width: 350, height: 300 }} key={cardInfo.title}>
+        <Card sx={{ width: "100%", height: 300 }} key={cardInfo.title}>
           <CardActionArea
             {...(cardInfo.href
               ? {
@@ -106,7 +107,7 @@ const HomeCards = () => {
           </CardActionArea>
         </Card>
       ))}
-    </Stack>
+    </Box>
   );
 };
 
