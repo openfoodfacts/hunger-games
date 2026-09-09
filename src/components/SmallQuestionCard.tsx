@@ -65,13 +65,11 @@ export default function SmallQuestionCard({
             height="150"
             image={imageSrc || logo}
             alt=""
-            sx={(theme) => ({
+            sx={{
               objectFit: "contain",
-              ...(theme.palette.mode === "dark" && {
-                backgroundColor: theme.palette.common.white,
-                p: 1,
-              }),
-            })}
+              backgroundColor: "common.white",
+              p: 1,
+            }}
           />
         </CardActionArea>
       </Card>
