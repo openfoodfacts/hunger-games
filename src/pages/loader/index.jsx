@@ -8,7 +8,6 @@ export default function Loader({ inline = false }) {
         sx={{
           justifyContent: "center",
           alignItems: "center",
-          width: "100%",
           py: 3,
         }}
       >
