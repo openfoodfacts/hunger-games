@@ -54,13 +54,13 @@
     "loading": "Загрузка"
   },
   "image_viewer": {
-    "compressed": "Compressed",
-    "load_original": "Load original"
+    "compressed": "Сжато",
+    "load_original": "Загрузить оригинал"
   },
   "questions": {
     "category": "категория",
     "categories": "Категории",
-    "label": "маркировка",
+    "label": "этикетка",
     "labels": "Маркировки",
     "brand": "марка",
     "brands": "Марки",
@@ -75,9 +75,9 @@
     "skip": "Пропустить",
     "yes": "Да",
     "no_questions_remaining": "Вопросов не осталось",
-    "similar_questions": "Similar questions",
-    "no_similar_questions": "No similar questions",
-    "remaining_questions_count_one": "1 question remaining",
+    "similar_questions": "Похожие вопросы",
+    "no_similar_questions": "Нет похожих вопросов",
+    "remaining_questions_count_one": "Остался 1 вопрос",
     "remaining_questions_count_other": "{{count}} questions remaining",
     "an_error_occurred": "Произошла ошибка. Пожалуйста, перезагрузите страницу, попробуйте позже или свяжитесь с командой.",
     "countries": "Страны",
@@ -91,8 +91,8 @@
     "last_annotations": "Последние аннотации",
     "remaining_annotations": "Оставшиеся вопросы",
     "annotated_annotations": "Помеченный",
-    "no_images": "No images available",
-    "no_additional_info": "No additional information",
+    "no_images": "Изображение недоступно",
+    "no_additional_info": "Нет дополнительной информации",
     "add_missing_info": "Добавить",
     "filters": {
       "active_filter_number": "+{{count}} фильтра",
