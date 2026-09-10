@@ -17,7 +17,6 @@ import Tooltip from "@mui/material/Tooltip";
 import MuiLink from "@mui/material/Link";
 import Collapse from "@mui/material/Collapse";
 import List from "@mui/material/List";
-
 import SettingsIcon from "@mui/icons-material/Settings";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import PublicIcon from "@mui/icons-material/Public";
@@ -28,7 +27,7 @@ import HelpOutlineIcon from "@mui/icons-material/HelpOutlineOutlined";
 import DevModeContext from "../contexts/devMode";
 import LoginContext from "../contexts/login";
 import logo from "../assets/logo.png";
-import { Link } from "react-router";
+import { Link } from "react-router-dom";
 
 import { useTranslation } from "react-i18next";
 import WelcomeTour from "./welcome/Welcome";
@@ -612,9 +611,8 @@ const ResponsiveAppBar = () => {
                       variant="outlined"
                       size="small"
                       slotProps={{
-                        ...params.slotProps,
                         htmlInput: {
-                          ...params.slotProps.htmlInput,
+                          ...params.inputProps,
                           "aria-label": t("menu.country", {
                             defaultValue: "Country",
                           }),
