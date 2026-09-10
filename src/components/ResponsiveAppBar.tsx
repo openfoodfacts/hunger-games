@@ -27,7 +27,7 @@ import HelpOutlineIcon from "@mui/icons-material/HelpOutlineOutlined";
 import DevModeContext from "../contexts/devMode";
 import LoginContext from "../contexts/login";
 import logo from "../assets/logo.png";
-import { Link } from "react-router-dom";
+import { Link } from "react-router";
 
 import { useTranslation } from "react-i18next";
 import WelcomeTour from "./welcome/Welcome";
@@ -156,9 +156,9 @@ const MultiPagesButton = ({
             {...(isExternalUrl(subPage.url)
               ? { component: "a", target: "_blank", href: subPage.url }
               : {
-                  component: Link as React.ElementType,
-                  to: `/${subPage.url}`,
-                })}
+                component: Link as React.ElementType,
+                to: `/${subPage.url}`,
+              })}
           >
             <Typography
               sx={{
@@ -293,9 +293,9 @@ const ResponsiveAppBar = () => {
                         {...(isExternalUrl(page.url)
                           ? { component: "a", target: "_blank", href: page.url }
                           : {
-                              component: Link as React.ElementType,
-                              to: `/${page.url}`,
-                            })}
+                            component: Link as React.ElementType,
+                            to: `/${page.url}`,
+                          })}
                       >
                         <Typography
                           sx={{
