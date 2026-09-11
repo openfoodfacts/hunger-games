@@ -83,7 +83,7 @@ const FailedReferecnceLogos = ({ type, value }) => {
 };
 
 export default function LogoSearch() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   const [annotatedLogos, setAnnotatedLogos] = React.useState([]);
   const [annotationCount, setAnnotationCount] = React.useState(null);
@@ -332,7 +332,7 @@ export default function LogoSearch() {
           <Typography variant="body2" color="text.secondary" sx={{ mb: 1 }}>
             {t("logos.deep_search.annotation_count", {
               count: annotationCount,
-              formattedCount: annotationCount.toLocaleString(),
+              formattedCount: annotationCount.toLocaleString(i18n.language),
             })}
           </Typography>
         )}
