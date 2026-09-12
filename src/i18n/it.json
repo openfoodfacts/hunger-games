@@ -200,6 +200,17 @@
     "view_crops_for_this_product": "Annota i loghi del prodotto"
   },
   "logos": {
+    "dashboard": {
+      "title": "Dashboard dei loghi",
+      "description": "Esplora le categorie di loghi e aiuta a migliorare i dati dei prodotti.",
+      "category": "Categoria",
+      "categories": "Categorie",
+      "logo_count_one": "{{count}} logo",
+      "logo_count_other": "{{count}} loghi",
+      "more_info": "Maggiori informazioni",
+      "questions": "Domande",
+      "search": "Cerca"
+    },
     "annotation": "Annotazione: ",
     "annotations": "Annotazioni del logo",
     "task_description": "Seleziona tutti i loghi identici e assegna loro un nome, come \"it:UE Biologico\", e un tipo, come \"etichetta\".",
