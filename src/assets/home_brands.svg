@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 200" width="100%" height="100%">
+  <!-- Background Base Container -->
+  <rect width="350" height="200" rx="16" fill="#F8F9FA" />
+
+  <!-- Main Card Surface -->
+  <rect x="12" y="10" width="326" height="180" rx="14" fill="#FFFFFF" stroke="#E5E5E5" stroke-width="1.2" />
+
+  <!-- Top Accent Bar (Open Food Facts Orange) -->
+  <path d="M 12 24 A 14 14 0 0 1 26 10 L 324 10 A 14 14 0 0 1 338 24 L 338 26 L 12 26 Z" fill="#FF8714" />
+
+  <!-- Badge Top Right -->
+  <rect x="190" y="16" width="136" height="18" rx="9" fill="#FFF4E8" />
+  <text x="258" y="29" font-family="Plus Jakarta Sans, sans-serif" font-size="8.5" font-weight="700" fill="#FF8714" text-anchor="middle" letter-spacing="0.5">IDENTIFICATION MARQUE</text>
+
+  <!-- Left: Official OFF Magnifying Glass inspecting Brand -->
+  <g transform="translate(18, 42)">
+    <rect width="104" height="134" rx="10" fill="#FFFBF7" stroke="#FFE8D6" stroke-width="1" />
+
+    <svg x="8" y="12" width="88" height="88" viewBox="0 0 178 178">
+      <defs
+     id="offbrand_defs3066" />
+  <g
+     id="layer1">
+    <g
+       id="offbrand_g2997"
+       transform="translate(-33.85,-30.075)">
+      <g
+         id="offbrand_g2989">
+        <path
+           class="f"
+           d="m 61.62,122.32 c 0,-33.82 27.41,-61.23 61.23,-61.23 33.82,0 61.23,27.41 61.23,61.23 z"
+           id="offbrand_path2979"
+           style="fill:#ff8c14" />
+        <path
+           class="e"
+           d="m 168.55,122.32 c 0,25.24 -20.46,45.71 -45.71,45.71 -25.24,0 -45.71,-20.46 -45.71,-45.71 z"
+           id="offbrand_path2981"
+           style="fill:#ffffff" />
+        <circle
+           class="g"
+           cx="143.58"
+           cy="82.779999"
+           r="3.3699999"
+           id="offbrand_circle2983"
+           style="fill:#8c3c00" />
+        <circle
+           class="g"
+           cx="159.98"
+           cy="97.839996"
+           r="3.3699999"
+           id="offbrand_circle2985"
+           style="fill:#8c3c00" />
+        <circle
+           class="g"
+           cx="141.42999"
+           cy="101.52"
+           r="3.3699999"
+           id="offbrand_circle2987"
+           style="fill:#8c3c00" />
+      </g>
+      <path
+         d="m 93.15,175.84 -10.88,25.97 14.32,6 10.97,-26.19 c 4.89,1.26 10.01,1.93 15.29,1.93 33.76,0 61.23,-27.47 61.23,-61.23 h -15.52 c 0,25.2 -20.5,45.71 -45.71,45.71 -25.21,0 -45.71,-20.5 -45.71,-45.71 H 61.62 c 0,22.99 12.74,43.05 31.53,53.52 z"
+         id="offbrand_path2991" />
+      <path
+         class="c"
+         d="m 148.17,30.34 c -12.04,0 -22.5,6.71 -27.88,16.59 4.14,3.86 7.27,8.79 8.89,14.38 14.01,-3.14 24.53,-15.53 24.77,-30.43 -1.87,-0.35 -3.8,-0.53 -5.78,-0.53 z"
+         id="offbrand_path2993"
+         style="fill:#00641e" />
+      <path
+         class="d"
+         d="m 98.68,38.42 c -2.38,0 -4.7,0.27 -6.94,0.77 3.83,13.23 16.03,22.91 30.5,22.91 2.38,0 4.7,-0.27 6.94,-0.77 C 125.35,48.1 113.15,38.42 98.68,38.42 Z"
+         id="offbrand_path2995"
+         style="fill:#00961e" />
+    </g>
+  </g>
+    </svg>
+
+    <!-- Trademark Symbol Badge -->
+    <rect x="12" y="98" width="80" height="24" rx="6" fill="#FF8714" />
+    <text x="52" y="114" font-family="Plus Jakarta Sans, sans-serif" font-size="9" font-weight="700" fill="#FFFFFF" text-anchor="middle">Marques ®</text>
+  </g>
+
+  <!-- Right: Brand Confirmation Interface -->
+  <g transform="translate(132, 42)">
+    <rect width="192" height="134" rx="10" fill="#F9FAFB" stroke="#E5E7EB" stroke-width="1.2" />
+
+    <text x="14" y="18" font-family="Plus Jakarta Sans, sans-serif" font-size="9.5" font-weight="700" fill="#111827">Est-ce la marque du produit ?</text>
+
+    <!-- Detected Brand Name Badge -->
+    <g transform="translate(14, 28)">
+      <rect width="164" height="34" rx="8" fill="#FFFFFF" stroke="#FF8714" stroke-width="1.5" />
+      <text x="82" y="22" font-family="Plus Jakarta Sans, sans-serif" font-size="12" font-weight="800" fill="#111827" text-anchor="middle" letter-spacing="0.8">BIO VILLAGE ®</text>
+    </g>
+
+    <!-- Action Buttons (Yes / No) -->
+    <g transform="translate(14, 72)">
+      <!-- YES Button -->
+      <g transform="translate(0, 0)">
+        <rect width="78" height="30" rx="6" fill="#00A05A" />
+        <path d="M 22 15 L 27 20 L 36 10" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        <text x="49" y="19" font-family="Plus Jakarta Sans, sans-serif" font-size="9.5" font-weight="700" fill="#FFFFFF" text-anchor="middle">OUI</text>
+      </g>
+
+      <!-- NO Button -->
+      <g transform="translate(86, 0)">
+        <rect width="78" height="30" rx="6" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="1" />
+        <path d="M 24 10 L 34 20 M 34 10 L 24 20" stroke="#6B7280" stroke-width="2" stroke-linecap="round" />
+        <text x="49" y="19" font-family="Plus Jakarta Sans, sans-serif" font-size="9.5" font-weight="700" fill="#6B7280" text-anchor="middle">NON</text>
+      </g>
+    </g>
+
+    <!-- Taxonomy helper note -->
+    <text x="96" y="122" font-family="Plus Jakarta Sans, sans-serif" font-size="7.5" font-weight="500" fill="#9CA3AF" text-anchor="middle">Aide à enrichir la taxonomie des marques</text>
+  </g>
+</svg>

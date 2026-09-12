@@ -2,6 +2,14 @@
   "home": {
     "game_selector": {
       "title": "À quel jeu voulez-vous jouer ?",
+      "external_link": "Lien externe",
+      "categories": {
+        "all": "Tous",
+        "featured": "En vedette",
+        "questions": "Questions par type",
+        "move_products": "Transférer des produits",
+        "open_prices": "Open Prices"
+      },
       "cards": {
         "questions": {
           "title": "Questions",
@@ -15,9 +23,53 @@
           "title": "Green-Score",
           "description": "Annotez les questions avec la valeur la plus élevée"
         },
-        "create_products": {
-          "title": "Create missing products",
-          "description": "Add products that are not in the database yet, over on Open Prices"
+        "ingredient_spellcheck": {
+          "title": "Orthographe des ingrédients",
+          "description": "Corrigez les fautes d'orthographe dans les listes d'ingrédients extraites"
+        },
+        "ingredient_detection": {
+          "title": "Cadrage des ingrédients",
+          "description": "Délimitez et cadrez la zone de la liste des ingrédients sur l'emballage"
+        },
+        "nutrition": {
+          "title": "Jeu de la nutrition",
+          "description": "Extrayez et validez les valeurs nutritionnelles des tableaux sur les emballages"
+        },
+        "prices_validation": {
+          "title": "Validation des prix",
+          "description": "Vérifiez les prix et les tickets de caisse contribués sur Open Prices"
+        },
+        "prices_create_product": {
+          "title": "Créer les produits manquants",
+          "description": "Ajoutez les nouveaux produits identifiés sur les tickets dans Open Food Facts"
+        },
+        "questions_packaging": {
+          "title": "Emballage",
+          "description": "Validez les matériaux, formes et consignes de tri des emballages"
+        },
+        "questions_weights": {
+          "title": "Poids",
+          "description": "Validez le poids net, volume et quantités unitaires sur les photos"
+        },
+        "questions_brands": {
+          "title": "Marques",
+          "description": "Identifiez et vérifiez les marques détectées sur les emballages"
+        },
+        "questions_labels": {
+          "title": "Labels",
+          "description": "Validez les labels bio, qualité, origine et certifications environnementales"
+        },
+        "move_open_beauty_facts": {
+          "title": "Vers Open Beauty Facts",
+          "description": "Identifiez les cosmétiques et produits d'hygiène pour les déplacer vers Open Beauty Facts"
+        },
+        "move_open_pet_food_facts": {
+          "title": "Vers Open Pet Food Facts",
+          "description": "Identifiez la nourriture et soins pour animaux pour les déplacer vers Open Pet Food Facts"
+        },
+        "move_open_products_facts": {
+          "title": "Vers Open Products Facts",
+          "description": "Identifiez les articles non alimentaires pour les déplacer vers Open Products Facts"
         }
       }
     },

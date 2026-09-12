@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 200" width="100%" height="100%">
+  <!-- Background Base Container -->
+  <rect width="350" height="200" rx="16" fill="#F8F9FA" />
+
+  <!-- Main Card Surface -->
+  <rect x="12" y="10" width="326" height="180" rx="14" fill="#FFFFFF" stroke="#E5E5E5" stroke-width="1.2" />
+
+  <!-- Top Accent Bar (Official Organic Green) -->
+  <path d="M 12 24 A 14 14 0 0 1 26 10 L 324 10 A 14 14 0 0 1 338 24 L 338 26 L 12 26 Z" fill="#00803D" />
+
+  <!-- Badge Top Right -->
+  <rect x="190" y="16" width="136" height="18" rx="9" fill="#EDF7EE" />
+  <text x="258" y="29" font-family="Plus Jakarta Sans, sans-serif" font-size="8.5" font-weight="700" fill="#00803D" text-anchor="middle" letter-spacing="0.5">LABELS &amp; CERTIFICATIONS</text>
+
+  <!-- Labels Showcase Row -->
+  <g transform="translate(24, 42)">
+    <!-- Label 1: Euro-leaf (European Organic Label) -->
+    <g transform="translate(0, 0)">
+      <rect width="94" height="74" rx="8" fill="#00803D" stroke="#006428" stroke-width="1" />
+      <!-- Euro Leaf 12 Stars Pattern -->
+      <g fill="#FFFFFF" transform="translate(47, 34) scale(0.7)">
+        <!-- Top star -->
+        <circle cx="0" cy="-30" r="3.2" />
+        <!-- Leaf outline stars -->
+        <circle cx="12" cy="-22" r="3.2" />
+        <circle cx="22" cy="-10" r="3.2" />
+        <circle cx="28" cy="6" r="3.2" />
+        <circle cx="26" cy="22" r="3.2" />
+        <circle cx="16" cy="32" r="3.2" />
+        <circle cx="0" cy="36" r="3.2" />
+        <circle cx="-16" cy="32" r="3.2" />
+        <circle cx="-24" cy="18" r="3.2" />
+        <circle cx="-24" cy="2" r="3.2" />
+        <circle cx="-16" cy="-14" r="3.2" />
+        <!-- Central star -->
+        <circle cx="0" cy="0" r="3.5" />
+      </g>
+      <text x="47" y="66" font-family="Plus Jakarta Sans, sans-serif" font-size="7.5" font-weight="700" fill="#FFFFFF" text-anchor="middle">Bio Européen</text>
+    </g>
+
+    <!-- Label 2: Agriculture Biologique (AB) -->
+    <g transform="translate(104, 0)">
+      <rect width="94" height="74" rx="8" fill="#FFFFFF" stroke="#00803D" stroke-width="1.8" />
+      <circle cx="47" cy="28" r="16" fill="#00803D" />
+      <text x="47" y="34" font-family="Plus Jakarta Sans, sans-serif" font-size="14" font-weight="900" fill="#FFFFFF" text-anchor="middle">AB</text>
+      <text x="47" y="54" font-family="Plus Jakarta Sans, sans-serif" font-size="6" font-weight="800" fill="#00803D" text-anchor="middle">AGRICULTURE</text>
+      <text x="47" y="62" font-family="Plus Jakarta Sans, sans-serif" font-size="6" font-weight="800" fill="#00803D" text-anchor="middle">BIOLOGIQUE</text>
+    </g>
+
+    <!-- Label 3: Fairtrade / Commerce Équitable -->
+    <g transform="translate(208, 0)">
+      <rect width="94" height="74" rx="8" fill="#111827" stroke="#1F2937" stroke-width="1" />
+      <!-- Fairtrade Swirl Badge -->
+      <g transform="translate(47, 28)">
+        <circle cx="0" cy="0" r="16" fill="#0064C8" />
+        <path d="M 0 -16 A 16 16 0 0 1 0 16 A 8 8 0 0 1 0 0 A 8 8 0 0 0 0 -16 Z" fill="#5ABE4B" />
+        <circle cx="0" cy="-8" r="3" fill="#FFFFFF" />
+      </g>
+      <text x="47" y="56" font-family="Plus Jakarta Sans, sans-serif" font-size="6.5" font-weight="800" fill="#FFFFFF" text-anchor="middle">FAIRTRADE</text>
+      <text x="47" y="66" font-family="Plus Jakarta Sans, sans-serif" font-size="6" font-weight="600" fill="#9CA3AF" text-anchor="middle">Max Havelaar</text>
+    </g>
+  </g>
+
+  <!-- Bottom Question Validation Strip -->
+  <g transform="translate(24, 126)">
+    <rect width="302" height="48" rx="8" fill="#F4FAF5" stroke="#D1EADE" stroke-width="1.2" />
+
+    <text x="16" y="20" font-family="Plus Jakarta Sans, sans-serif" font-size="9.5" font-weight="700" fill="#111827">Le produit dispose-t-il d'un label biologique certifié ?</text>
+
+    <!-- Action Pills -->
+    <g transform="translate(16, 26)">
+      <rect width="130" height="18" rx="5" fill="#00803D" />
+      <text x="65" y="13" font-family="Plus Jakarta Sans, sans-serif" font-size="8.5" font-weight="700" fill="#FFFFFF" text-anchor="middle">Oui, certifié bio ✓</text>
+    </g>
+
+    <g transform="translate(156, 26)">
+      <rect width="130" height="18" rx="5" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="1" />
+      <text x="65" y="13" font-family="Plus Jakarta Sans, sans-serif" font-size="8.5" font-weight="600" fill="#4B5563" text-anchor="middle">Non / Aucun label</text>
+    </g>
+  </g>
+</svg>

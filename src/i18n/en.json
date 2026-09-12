@@ -3,6 +3,13 @@
     "game_selector": {
       "title": "What game would you like to play?",
       "external_link": "External link",
+      "categories": {
+        "all": "All",
+        "featured": "Featured",
+        "questions": "Questions by Type",
+        "move_products": "Move Products",
+        "open_prices": "Open Prices"
+      },
       "cards": {
         "questions": {
           "title": "Questions",
@@ -16,9 +23,53 @@
           "title": "Green-score",
           "description": "Annotate the questions with the highest value"
         },
-        "create_products": {
-          "title": "Create missing products",
-          "description": "Add products that are not in the database yet, over on Open Prices"
+        "ingredient_spellcheck": {
+          "title": "Ingredients spellcheck",
+          "description": "Fix spelling mistakes and typos in extracted ingredient lists"
+        },
+        "ingredient_detection": {
+          "title": "Ingredients crop",
+          "description": "Locate and crop the ingredients list bounding box on packaging"
+        },
+        "nutrition": {
+          "title": "Nutrition game",
+          "description": "Extract and validate nutritional values from packaging tables"
+        },
+        "prices_validation": {
+          "title": "Price Validation",
+          "description": "Verify prices and receipts contributed to Open Prices"
+        },
+        "prices_create_product": {
+          "title": "Create Missing Products",
+          "description": "Add new products identified on price receipts to Open Food Facts"
+        },
+        "questions_packaging": {
+          "title": "Packaging",
+          "description": "Validate packaging materials, shapes, and recycling instructions"
+        },
+        "questions_weights": {
+          "title": "Weights",
+          "description": "Validate product net weight, volume, and unit quantities"
+        },
+        "questions_brands": {
+          "title": "Brands",
+          "description": "Identify and verify brand names detected on product packaging"
+        },
+        "questions_labels": {
+          "title": "Labels",
+          "description": "Validate organic, eco, quality, and origin certification labels"
+        },
+        "move_open_beauty_facts": {
+          "title": "Move to Open Beauty Facts",
+          "description": "Identify cosmetics and hygiene items to move them to Open Beauty Facts"
+        },
+        "move_open_pet_food_facts": {
+          "title": "Move to Open Pet Food Facts",
+          "description": "Identify animal food and pet care items to move them to Open Pet Food Facts"
+        },
+        "move_open_products_facts": {
+          "title": "Move to Open Products Facts",
+          "description": "Identify non-food items to move them to Open Products Facts"
         }
       }
     },
