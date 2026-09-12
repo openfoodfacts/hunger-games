@@ -474,6 +474,10 @@
   },
   "green-score": {
     "description": "Here is a summary of questions that could improve Green-Score computation",
+    "labelsDescription": "Answer questions related to these labels to improve Green-Score computation",
+    "categoriesDescription": "Answer questions related to these categories to improve Green-Score computation",
+    "questionCountLabel_one": "question",
+    "questionCountLabel_other": "questions",
     "countryLabel": "Country"
   },
   "ingredients": {

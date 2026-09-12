@@ -1,5 +1,6 @@
 import * as React from "react";
 import { Link } from "react-router";
+import { useTranslation } from "react-i18next";
 
 import Typography from "@mui/material/Typography";
 import Card from "@mui/material/Card";
@@ -8,6 +9,7 @@ import CardContent from "@mui/material/CardContent";
 import Box from "@mui/material/Box";
 import Skeleton from "@mui/material/Skeleton";
 import Button from "@mui/material/Button";
+import Stack from "@mui/material/Stack";
 import { useInfiniteQuery, useQueries } from "@tanstack/react-query";
 
 import Loader from "../pages/loader";
@@ -45,21 +47,39 @@ const OpportunityCard = (props: OpportunityCardProps) => {
   return (
     <React.Suspense fallback={<Loader />}>
       <Card
-        sx={{
-          minWidth: 250,
-        }}
         variant="outlined"
+        sx={(theme) => ({
+          minWidth: 0,
+          height: "100%",
+          borderRadius: 3,
+          boxShadow: "none",
+          transition: theme.transitions.create(["transform", "box-shadow"]),
+          "&:hover": {
+            transform: "translateY(-2px)",
+            boxShadow: theme.shadows[2],
+          },
+        })}
       >
         <CardActionArea
           component={Link as React.ElementType}
           to={targetUrl}
           sx={{ height: "100%" }}
         >
-          <CardContent>
-            <Typography variant="h6">{name}</Typography>
-            <Typography sx={{ textAlign: "end", mt: 3, fontSize: "1.5rem" }}>
-              {questionNumber.toLocaleString()}
+          <CardContent sx={{ p: { xs: 2, sm: 2.5 } }}>
+            <Typography variant="h6" sx={{ fontWeight: 700, lineHeight: 1.25 }}>
+              {name}
             </Typography>
+            <Stack
+              direction="row"
+              sx={{ alignItems: "baseline", justifyContent: "flex-end", mt: 3 }}
+            >
+              <Typography
+                color="primary"
+                sx={{ fontSize: "1.75rem", fontWeight: 800, lineHeight: 1 }}
+              >
+                {questionNumber.toLocaleString()}
+              </Typography>
+            </Stack>
           </CardContent>
         </CardActionArea>
       </Card>
@@ -70,14 +90,13 @@ const OpportunityCard = (props: OpportunityCardProps) => {
 const CardSkeleton = () => (
   <React.Suspense fallback={<Loader />}>
     <Card
-      sx={{
-        minWidth: 250,
-      }}
+      variant="outlined"
+      sx={{ minWidth: 0, borderRadius: 3, boxShadow: "none" }}
     >
-      <CardContent>
-        <Skeleton variant="rectangular" width={200} height={40} />
+      <CardContent sx={{ p: { xs: 2, sm: 2.5 } }}>
+        <Skeleton variant="rounded" width="80%" height={28} />
         <Skeleton
-          variant="rectangular"
+          variant="rounded"
           width={100}
           height={50}
           sx={{ mt: 3, ml: "auto", fontSize: "1.5rem" }}
@@ -126,6 +145,7 @@ const useCategoryTranslations = (pages: Opportunity[][]) => {
 
 const Opportunities = (props: OpportunitiesProps) => {
   const { type, campaign, countryCode } = props;
+  const { t } = useTranslation();
   const { data, isLoading, isFetchingNextPage, fetchNextPage, hasNextPage } =
     useInfiniteQuery({
       queryKey: ["opportunities", type, campaign, countryCode],
@@ -144,7 +164,11 @@ const Opportunities = (props: OpportunitiesProps) => {
         lastPage.length < pageSize ? undefined : pages.length + 1,
     });
   const remainingQuestions = React.useMemo(
-    () => data?.pages.flat() ?? [],
+    () =>
+      [...(data?.pages.flat() ?? [])].sort(
+        ([, firstQuestionNumber], [, secondQuestionNumber]) =>
+          secondQuestionNumber - firstQuestionNumber,
+      ),
     [data?.pages],
   );
   const translation = useCategoryTranslations(data?.pages ?? []);
@@ -152,15 +176,16 @@ const Opportunities = (props: OpportunitiesProps) => {
   const lang = getLang() ?? "en";
   return (
     <React.Suspense fallback={<Loader />}>
-      <Box sx={{ mt: 2, px: 2 }}>
-        <Typography variant="h6" component="h3">
-          {type}
-        </Typography>
+      <Box>
         <Box
           sx={{
             display: "grid",
-            gridTemplateColumns: "repeat(auto-fill, minmax(200px, 1fr))",
-            gridGap: "10px 50px",
+            gridTemplateColumns: {
+              xs: "1fr",
+              sm: "repeat(2, minmax(0, 1fr))",
+              md: "repeat(3, minmax(0, 1fr))",
+            },
+            gap: { xs: 1.5, sm: 2 },
           }}
         >
           {remainingQuestions.map(([value, questionNumber]) => {
@@ -188,10 +213,10 @@ const Opportunities = (props: OpportunitiesProps) => {
           <Button
             disabled={isLoading || isFetchingNextPage || !hasNextPage}
             variant="contained"
-            fullWidth
+            sx={{ gridColumn: "1 / -1", justifySelf: "center", px: 4 }}
             onClick={() => void fetchNextPage()}
           >
-            Load more
+            {t("logos.load_more")}
           </Button>
         </Box>
       </Box>
