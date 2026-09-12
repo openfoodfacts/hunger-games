@@ -1,0 +1,45 @@
+name: Update category insight counts
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  update-category-counts:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: master
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version-file: ".nvmrc"
+
+      - name: Enable corepack
+        run: corepack enable
+
+      - name: Install dependencies
+        run: yarn install --immutable
+
+      - name: Generate category count cache
+        run: |
+          yarn categories
+          yarn category-counts
+
+      - name: Create pull request
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: category-counts
+          base: master
+          commit-message: "chore: update category caches"
+          title: "chore: update category caches"
+          body: "Automated update of category caches (`src/assets/categories.json`, `src/assets/agribalyse-categories.json`, `src/assets/category-insight-counts.json`)."
+          add-paths: |
+            src/assets/categories.json
+            src/assets/agribalyse-categories.json
+            src/assets/category-insight-counts.json

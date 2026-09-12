@@ -57,6 +57,8 @@
     "prettier": "prettier --write .",
     "countries": "node update-countries.js",
     "nutriments": "node update-nutriments.js",
+    "categories": "node update-categories.js",
+    "category-counts": "node update-category-insight-counts.js",
     "test": "react-scripts test",
     "deploy": "bash deploy.sh",
     "lint": "prettier --check . && eslint .",
