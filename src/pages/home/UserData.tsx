@@ -8,14 +8,17 @@ import Typography from "@mui/material/Typography";
 import Stack from "@mui/material/Stack";
 import Skeleton from "@mui/material/Skeleton";
 import CardActionArea from "@mui/material/CardActionArea";
+import Button from "@mui/material/Button";
 import EditIcon from "@mui/icons-material/Edit";
 import PhotoCameraIcon from "@mui/icons-material/PhotoCamera";
 import AddAPhotoIcon from "@mui/icons-material/AddAPhoto";
+import VolunteerActivismIcon from "@mui/icons-material/VolunteerActivism";
 import { SvgIconProps } from "@mui/material";
+import { Link } from "react-router";
 
 import { offClient } from "../../off";
 import { OFF_URL } from "../../const";
-import { useQuery } from "@tanstack/react-query";
+import { useQueries } from "@tanstack/react-query";
 
 type StatDetail = {
   translationKey: string;
@@ -26,6 +29,8 @@ type StatDetail = {
 
 type CountCardProps = StatDetail & {
   userName: string;
+  value?: number;
+  isPending: boolean;
 };
 
 type UserDataProps = {
@@ -53,32 +58,41 @@ const STATS: StatDetail[] = [
   },
 ];
 
-const CountCard = (props: CountCardProps) => {
-  const { translationKey, apiFacet, linkFacet, Icon, userName } = props;
-
+const CountCard = ({
+  translationKey,
+  linkFacet,
+  Icon,
+  userName,
+  value,
+  isPending,
+}: CountCardProps) => {
   const { t } = useTranslation();
-
-  const { data: value, isPending } = useQuery({
-    queryKey: ["userStat", apiFacet, userName],
-    queryFn: () =>
-      offClient
-        .getFacetValue(apiFacet, userName, {})
-        .then((response) => response.count)
-        .catch(() => undefined),
-  });
 
   const href = userName
     ? `${OFF_URL}/facets/${linkFacet}/${encodeURIComponent(userName)}`
     : undefined;
 
   const content = (
-    <CardContent>
-      <Stack direction="row" spacing={1} sx={{ alignItems: "center", mb: 0 }}>
-        <Icon fontSize="small" sx={{ color: "text.secondary" }} />
+    <CardContent sx={{ p: 2.5 }}>
+      <Stack direction="row" spacing={1.5} sx={{ alignItems: "center" }}>
+        <Box
+          sx={{
+            width: 38,
+            height: 38,
+            display: "grid",
+            placeItems: "center",
+            borderRadius: 2,
+            color: "primary.main",
+            backgroundColor: "action.selected",
+          }}
+        >
+          <Icon fontSize="small" />
+        </Box>
         <Typography
           sx={{
             color: "text.primary",
-            fontSize: 18,
+            fontSize: 17,
+            fontWeight: 700,
           }}
         >
           {t(`home.statistics.${translationKey}.title`)}
@@ -89,6 +103,7 @@ const CountCard = (props: CountCardProps) => {
         sx={{
           color: "text.secondary",
           fontSize: 15,
+          mt: 2,
           mb: 1,
         }}
       >
@@ -102,16 +117,25 @@ const CountCard = (props: CountCardProps) => {
           component="div"
           sx={{
             color: "text.primary",
+            fontWeight: 700,
           }}
         >
-          {typeof value === "number" ? value.toLocaleString() : "N/A"}
+          {typeof value === "number" ? value.toLocaleString() : "0"}
         </Typography>
       )}
     </CardContent>
   );
 
   return (
-    <Card sx={{ width: 300 }} elevation={3}>
+    <Card
+      sx={(theme) => ({
+        width: "100%",
+        height: "100%",
+        borderRadius: 3,
+        border: `1px solid ${theme.palette.divider}`,
+        boxShadow: "none",
+      })}
+    >
       {href ? (
         <CardActionArea
           component="a"
@@ -119,6 +143,7 @@ const CountCard = (props: CountCardProps) => {
           target="_blank"
           rel="noreferrer"
           aria-label={t(`home.statistics.${translationKey}.title`)}
+          sx={{ height: "100%" }}
         >
           {content}
         </CardActionArea>
@@ -131,19 +156,125 @@ const CountCard = (props: CountCardProps) => {
 
 const UserData = ({ userName }: UserDataProps) => {
   const { t } = useTranslation();
+  const statQueries = useQueries({
+    queries: STATS.map(({ apiFacet }) => ({
+      queryKey: ["userStat", apiFacet, userName],
+      queryFn: () =>
+        offClient
+          .getFacetValue(apiFacet, userName, {})
+          .then((response) => response.count)
+          .catch(() => undefined),
+    })),
+  });
+  const isPending = statQueries.some((query) => query.isPending);
+  const availableStats = STATS.map((stat, index) => ({
+    ...stat,
+    value: statQueries[index].data,
+  })).filter(({ value }) => typeof value === "number");
 
   return (
-    <Box sx={{ p: 2, mb: 10 }}>
-      <Typography component="h3" variant="h5" sx={{ pb: 3 }}>
-        {t("home.statistics.title", { userName: userName || "<unknown>" })}
+    <Box
+      component="section"
+      aria-labelledby="user-statistics-title"
+      sx={{ mt: 6 }}
+    >
+      <Typography
+        id="user-statistics-title"
+        component="h2"
+        variant="h5"
+        sx={{ pb: 2.5, fontWeight: 700 }}
+      >
+        {t(
+          userName
+            ? "home.statistics.title"
+            : "home.statistics.title_without_name",
+          { userName },
+        )}
       </Typography>
 
-      <Stack direction={{ xs: "column", sm: "row" }} spacing={2}>
-        {STATS.map((stat) => (
-          <CountCard key={stat.translationKey} {...stat} userName={userName} />
-        ))}
-      </Stack>
+      {isPending ? (
+        <StatsGrid>
+          {STATS.map((stat) => (
+            <CountCard
+              key={stat.translationKey}
+              {...stat}
+              userName={userName}
+              isPending
+            />
+          ))}
+        </StatsGrid>
+      ) : availableStats.length > 0 ? (
+        <StatsGrid>
+          {availableStats.map((stat) => (
+            <CountCard
+              key={stat.translationKey}
+              {...stat}
+              userName={userName}
+              isPending={false}
+            />
+          ))}
+        </StatsGrid>
+      ) : (
+        <Box
+          sx={(theme) => ({
+            display: "flex",
+            alignItems: { xs: "flex-start", sm: "center" },
+            flexDirection: { xs: "column", sm: "row" },
+            gap: 2,
+            p: { xs: 2, sm: 2.5 },
+            borderRadius: 3,
+            border: `1px solid ${theme.palette.divider}`,
+            backgroundColor: theme.palette.action.hover,
+          })}
+        >
+          <Box
+            sx={{
+              width: 42,
+              height: 42,
+              display: "grid",
+              placeItems: "center",
+              flexShrink: 0,
+              borderRadius: 2,
+              color: "primary.main",
+              backgroundColor: "action.selected",
+            }}
+          >
+            <VolunteerActivismIcon aria-hidden />
+          </Box>
+          <Box sx={{ flex: 1 }}>
+            <Typography variant="h6" sx={{ fontWeight: 700 }}>
+              {t("home.statistics.empty_state.title")}
+            </Typography>
+            <Typography variant="body2" color="text.secondary" sx={{ mt: 0.5 }}>
+              {t("home.statistics.empty_state.description")}
+            </Typography>
+          </Box>
+          <Button
+            component={Link as React.ElementType}
+            to="/questions"
+            variant="contained"
+            sx={{ flexShrink: 0 }}
+          >
+            {t("home.statistics.empty_state.action")}
+          </Button>
+        </Box>
+      )}
     </Box>
   );
 };
+
+const StatsGrid = ({ children }: { children: React.ReactNode }) => (
+  <Box
+    sx={{
+      display: "grid",
+      gridTemplateColumns: {
+        xs: "1fr",
+        sm: "repeat(3, minmax(0, 1fr))",
+      },
+      gap: 2,
+    }}
+  >
+    {children}
+  </Box>
+);
 export default UserData;
