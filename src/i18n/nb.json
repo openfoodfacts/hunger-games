@@ -2,6 +2,7 @@
   "home": {
     "game_selector": {
       "title": "Hvilket spill vil du spille?",
+      "external_link": "External link",
       "cards": {
         "questions": {
           "title": "Spørsmål",
@@ -28,6 +29,12 @@
       "contribution_details": "Lær hvorfor dine bidrag er viktige"
     },
     "saved_filters": "Lagrede filtre",
+    "saved_filters_delete": "Delete saved filter",
+    "saved_filters_delete_title": "Delete saved filter?",
+    "saved_filters_delete_description": "This saved filter will be removed from this device.",
+    "saved_filters_delete_confirm": "Slett",
+    "saved_filters_pending": "{{count}} products waiting",
+    "saved_filters_pending_unknown": "Products waiting",
     "contribution_modal": {
       "title": "Ditt bidrag betyr noe",
       "information": "Hunger Games er et forsøk på å utnytte resultatene av vår OCR og kunstlig intelligens. Når du bruker Hunger Games av Open Food Facts, forbedrer du hele databasen vår som hjelper fellesskapet med å gjøre bedre matvalg. Vi samler dine kommentarer og bruker dem til å gjøre Open Food Facts mer nøyaktig og effektiv.",
@@ -35,6 +42,12 @@
     },
     "statistics": {
       "title": "{{userName}} statistikk:",
+      "title_without_name": "Your statistics",
+      "empty_state": {
+        "title": "No contributions yet",
+        "description": "Your contribution statistics will appear here once you start helping improve Open Food Facts.",
+        "action": "Start contributing"
+      },
       "editorCount": {
         "title": "Redaktør",
         "description": "Antall utførte redigeringer"
@@ -207,6 +220,17 @@
     "view_crops_for_this_product": "Kommenter produktlogoer"
   },
   "logos": {
+    "dashboard": {
+      "title": "Logo dashboard",
+      "description": "Explore logo categories and help improve product data.",
+      "category": "Kategori",
+      "categories": "Kategorier",
+      "logo_count_one": "{{count}} logo",
+      "logo_count_other": "{{count}} logos",
+      "more_info": "More info",
+      "questions": "Spørsmål",
+      "search": "Søk"
+    },
     "annotation": "Annotering: ",
     "annotations": "Logomerknader",
     "task_description": "Velg alle logoene som er nøyaktig like, og gi dem et navn som \"en:EU Organic\" og en type som \"label\".",
@@ -251,6 +275,8 @@
       "title": "Logosøk",
       "description": "Velg en logo som du vil se etter, og la oss finne dem alle. For hver logo du kommenterer, vil vi hente naboen dens sånn at du aldri trenger å stoppe å kommentere. (Trykk Shift fpr å velge rekkevidde av logoer)",
       "ref_logos": "Referanselogoer (logoen er allerede kommentert med denne verdien)",
+      "annotation_count_one": "Already {{formattedCount}} annotation. You can come back to this logo in a few days if you don't find any matching logos.",
+      "annotation_count_other": "Already {{formattedCount}} annotations. You can come back to this logo in a few days if you don't find any matching logos.",
       "remaining": "Gjenstår å kommentere",
       "select_all": "Velg alle",
       "unselect_all": "Opphev merking"
