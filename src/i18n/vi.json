@@ -2,6 +2,7 @@
   "home": {
     "game_selector": {
       "title": "Bạn muốn chơi trò chơi gì?",
+      "external_link": "External link",
       "cards": {
         "questions": {
           "title": "Câu hỏi",
@@ -28,6 +29,12 @@
       "contribution_details": "Tìm hiểu lý do tại sao đóng góp của bạn lại quan trọng"
     },
     "saved_filters": "Các bộ lọc đã lưu",
+    "saved_filters_delete": "Delete saved filter",
+    "saved_filters_delete_title": "Delete saved filter?",
+    "saved_filters_delete_description": "This saved filter will be removed from this device.",
+    "saved_filters_delete_confirm": "Xóa",
+    "saved_filters_pending": "{{count}} products waiting",
+    "saved_filters_pending_unknown": "Products waiting",
     "contribution_modal": {
       "title": "Đóng góp của bạn rất quan trọng",
       "information": "Hunger Games là một nỗ lực để tận dụng kết quả của bộ công cụ OCR và trí tuệ nhân tạo của chúng tôi. Khi bạn sử dụng Hunger Games của Open Food Facts, bạn sẽ cải thiện toàn bộ cơ sở dữ liệu của chúng tôi và giúp cộng đồng lựa chọn thực phẩm tốt hơn. Chúng tôi thu thập các chú thích của bạn và sử dụng chúng để giúp Open Food Facts chính xác và hiệu quả hơn.",
@@ -35,6 +42,12 @@
     },
     "statistics": {
       "title": "{{userName}} thống kê:",
+      "title_without_name": "Your statistics",
+      "empty_state": {
+        "title": "No contributions yet",
+        "description": "Your contribution statistics will appear here once you start helping improve Open Food Facts.",
+        "action": "Start contributing"
+      },
       "editorCount": {
         "title": "biên tập viên",
         "description": "Số lần chỉnh sửa đã thực hiện"
@@ -207,6 +220,17 @@
     "view_crops_for_this_product": "Chú thích logo sản phẩm"
   },
   "logos": {
+    "dashboard": {
+      "title": "Logo dashboard",
+      "description": "Explore logo categories and help improve product data.",
+      "category": "Danh mục",
+      "categories": "Thể loại",
+      "logo_count_one": "{{count}} logo",
+      "logo_count_other": "{{count}} logos",
+      "more_info": "More info",
+      "questions": "Câu hỏi",
+      "search": "Tìm kiếm"
+    },
     "annotation": "Chú thích: ",
     "annotations": "Chú thích logo",
     "task_description": "Chọn tất cả logo giống hệt nhau, và đặt tên cho chúng như \"en:EU Organic\" và phân loại như \"nhãn\".",
@@ -251,6 +275,8 @@
       "title": "Tìm kiếm logo",
       "description": "Chọn một logo bạn muốn tìm, và chúng ta sẽ cùng đi bắt chúng tất cả. Mỗi khi bạn chú thích một logo, chúng tôi sẽ lấy các logo lân cận để bạn có thể tiếp tục chú thích không ngừng. (Nhấn Shift để chọn một dãy logo)",
       "ref_logos": "Logo tham chiếu (logo đã được chú thích với giá trị này)",
+      "annotation_count_one": "Already {{formattedCount}} annotation. You can come back to this logo in a few days if you don't find any matching logos.",
+      "annotation_count_other": "Already {{formattedCount}} annotations. You can come back to this logo in a few days if you don't find any matching logos.",
       "remaining": "Còn lại để chú thích",
       "select_all": "Chọn tất cả",
       "unselect_all": "Bỏ chọn Tất cả"
