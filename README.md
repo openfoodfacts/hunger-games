@@ -105,13 +105,7 @@ yarn countries
 
 Generates the JSON file `src/assets/countries.json` which contains all the countries available on OFF taxonomy. Data are obtained from static.openfoodfacts.org
 
-#### Update the Taxonomy auto-complete file
-
-```
-node update-taxonomy-suggestions.js
-```
-
-Fetch categories and labels taxonomy from Open Food Facts static files, and generate JSON files used by the `Autocomplete` fields.
+Taxonomy autocomplete suggestions are fetched from Open Food Facts at runtime; no local update command is required.
 
 #### Maintenance - How to define a dashboard
 
@@ -146,7 +140,7 @@ You can also help by improving [translation in your language](https://translate.
 
 ## 👩‍⚖️ Licence
 
-- See [LICENSE.md](./LICENSE.md)
+- See [LICENSE](./LICENSE)
 
 ## Contributors
 

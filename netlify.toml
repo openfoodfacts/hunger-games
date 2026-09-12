@@ -1,5 +1,6 @@
 [build]
-  ignore = "node ignore_build.js"
+  command = "yarn build"
+  publish = "dist"
 
 [[redirects]]
   from = "/*"
