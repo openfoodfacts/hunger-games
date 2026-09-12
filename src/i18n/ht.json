@@ -2,6 +2,7 @@
   "home": {
     "game_selector": {
       "title": "Ki jwèt ou ta renmen jwe?",
+      "external_link": "External link",
       "cards": {
         "questions": {
           "title": "Kesyon",
@@ -28,6 +29,12 @@
       "contribution_details": "Aprann poukisa kontribisyon ou enpòtan"
     },
     "saved_filters": "Saved Filters",
+    "saved_filters_delete": "Delete saved filter",
+    "saved_filters_delete_title": "Delete saved filter?",
+    "saved_filters_delete_description": "This saved filter will be removed from this device.",
+    "saved_filters_delete_confirm": "Delete",
+    "saved_filters_pending": "{{count}} products waiting",
+    "saved_filters_pending_unknown": "Products waiting",
     "contribution_modal": {
       "title": "Kontribisyon ou enpòtan",
       "information": "Hunger Games is an effort to leverage the results of our OCR and artificial intelligence. When you use Hunger Games by Open Food Facts, you improve our entire database which helps the community make better food choices. We gather your annotations and use them to make Open Food Facts more accurate and efficient.",
@@ -35,6 +42,12 @@
     },
     "statistics": {
       "title": "{{userName}} estatistik:",
+      "title_without_name": "Your statistics",
+      "empty_state": {
+        "title": "No contributions yet",
+        "description": "Your contribution statistics will appear here once you start helping improve Open Food Facts.",
+        "action": "Start contributing"
+      },
       "editorCount": {
         "title": "Editor",
         "description": "Number of editions done"
@@ -207,6 +220,17 @@
     "view_crops_for_this_product": "Annotate product logos"
   },
   "logos": {
+    "dashboard": {
+      "title": "Logo dashboard",
+      "description": "Explore logo categories and help improve product data.",
+      "category": "Kategori",
+      "categories": "Kategori",
+      "logo_count_one": "{{count}} logo",
+      "logo_count_other": "{{count}} logos",
+      "more_info": "More info",
+      "questions": "Kesyon",
+      "search": "Rechèch"
+    },
     "annotation": "Annotation: ",
     "annotations": "Logo annotations",
     "task_description": "Select all logos that are exactly the same, and give them a name like \"en:EU Organic\" and a type like \"label\".",
@@ -251,6 +275,8 @@
       "title": "Rechèch logo",
       "description": "Chwazi yon logo ou vle chèche, epi ann al chache yo tout. Pou chak logo ou mete anotasyon, n ap chèche vwazen li yo pou ou pa janm ka rete pou mete anotasyon. (Peze Shift pou chwazi yon seri logo)",
       "ref_logos": "Logo referans (logo deja gen anotasyon ak valè sa a)",
+      "annotation_count_one": "Already {{formattedCount}} annotation. You can come back to this logo in a few days if you don't find any matching logos.",
+      "annotation_count_other": "Already {{formattedCount}} annotations. You can come back to this logo in a few days if you don't find any matching logos.",
       "remaining": "Rete pou anote",
       "select_all": "Chwazi tout",
       "unselect_all": "Deseleksyone tout"
