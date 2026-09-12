@@ -2,6 +2,7 @@
   "home": {
     "game_selector": {
       "title": "A que che apetece xogar?",
+      "external_link": "External link",
       "cards": {
         "questions": {
           "title": "Preguntas",
@@ -28,6 +29,12 @@
       "contribution_details": "Aprende por que é importante a túa contribución"
     },
     "saved_filters": "Filtros gardados",
+    "saved_filters_delete": "Delete saved filter",
+    "saved_filters_delete_title": "Delete saved filter?",
+    "saved_filters_delete_description": "This saved filter will be removed from this device.",
+    "saved_filters_delete_confirm": "Eliminar",
+    "saved_filters_pending": "{{count}} products waiting",
+    "saved_filters_pending_unknown": "Products waiting",
     "contribution_modal": {
       "title": "A túa contribución é importante",
       "information": "Hunger Games é un esforzo para aproveitar os resultados do noso OCR e da intelixencia artificial. Cando utilizas Hunger Games de Open Food Facts, melloras toda a nosa base de datos que axuda á comunidade a escoller mellores alimentos. Recopilamos as túas anotacións e usámolas para facer que Open Food Facts sexa máis preciso e eficiente.",
@@ -35,6 +42,12 @@
     },
     "statistics": {
       "title": "Estatísticas de {{userName}}:",
+      "title_without_name": "Your statistics",
+      "empty_state": {
+        "title": "No contributions yet",
+        "description": "Your contribution statistics will appear here once you start helping improve Open Food Facts.",
+        "action": "Start contributing"
+      },
       "editorCount": {
         "title": "Editor",
         "description": "Número de edicións realizadas"
@@ -207,6 +220,17 @@
     "view_crops_for_this_product": "Annotate product logos"
   },
   "logos": {
+    "dashboard": {
+      "title": "Logo dashboard",
+      "description": "Explore logo categories and help improve product data.",
+      "category": "Categoría",
+      "categories": "Categorías",
+      "logo_count_one": "{{count}} logo",
+      "logo_count_other": "{{count}} logos",
+      "more_info": "More info",
+      "questions": "Preguntas",
+      "search": "Buscar"
+    },
     "annotation": "Anotación: ",
     "annotations": "Anotacións do logotipo",
     "task_description": "Seleccione todos os logotipos que sexan exactamente iguais e ponlle un nome como \"en:EU Organic\" e un tipo como \"label\".",
@@ -251,6 +275,8 @@
       "title": "Busca de logotipos",
       "description": "Selecciona un logotipo que queiras buscar e imos facernos con todos. Por cada logotipo que anotes, buscaremos os seus veciños para que nunca deixes de anotar. (Preme Maiúsculas para seleccionar o rango de logotipos)",
       "ref_logos": "Referencia de logotipo (logotipo xa anotado con este valor)",
+      "annotation_count_one": "Already {{formattedCount}} annotation. You can come back to this logo in a few days if you don't find any matching logos.",
+      "annotation_count_other": "Already {{formattedCount}} annotations. You can come back to this logo in a few days if you don't find any matching logos.",
       "remaining": "Queda por anotar",
       "select_all": "Seleccionar todo",
       "unselect_all": "Desmarcar todo"
