@@ -100,6 +100,116 @@ const PAGES: Page[] = [
   },
 ];
 
+type NavBrandProps = {
+  externalLogo?: boolean;
+  compact?: boolean;
+};
+
+const NavBrand = ({ externalLogo = false, compact = false }: NavBrandProps) => {
+  const { t } = useTranslation();
+
+  const logoMark = (
+    <Box
+      sx={{
+        width: compact ? 32 : 36,
+        height: compact ? 32 : 36,
+        display: "grid",
+        placeItems: "center",
+        flexShrink: 0,
+        borderRadius: compact ? 1.5 : 2,
+      }}
+    >
+      <Box
+        component="img"
+        src={logo}
+        alt=""
+        sx={{ width: "78%", height: "78%", objectFit: "contain" }}
+      />
+    </Box>
+  );
+
+  return (
+    <Box
+      sx={{
+        display: "inline-flex",
+        alignItems: "center",
+        gap: 1,
+        minWidth: 0,
+        borderRadius: 2,
+        px: compact ? 0.5 : 0.75,
+        py: 0.5,
+        color: "inherit",
+        textDecoration: "none",
+        "&:hover": {
+          backgroundColor: "action.hover",
+        },
+      }}
+    >
+      {externalLogo ? (
+        <MuiLink
+          href={OFF_URL}
+          target="_blank"
+          aria-label="Open Food Facts"
+          sx={{ display: "flex" }}
+        >
+          {logoMark}
+        </MuiLink>
+      ) : (
+        <Box
+          component={Link as React.ElementType}
+          to="/"
+          aria-label={t("menu.title")}
+          sx={{ display: "flex" }}
+        >
+          {logoMark}
+        </Box>
+      )}
+      <Box
+        component={Link as React.ElementType}
+        to="/"
+        sx={{
+          minWidth: 0,
+          color: "inherit",
+          textDecoration: "none",
+          lineHeight: 1,
+        }}
+      >
+        <Typography
+          component="span"
+          sx={{
+            display: "block",
+            overflow: "hidden",
+            textOverflow: "ellipsis",
+            whiteSpace: "nowrap",
+            fontSize: compact ? "0.98rem" : "1.05rem",
+            fontWeight: 800,
+            letterSpacing: "-0.025em",
+          }}
+        >
+          {t("menu.title")}
+        </Typography>
+        {!compact && (
+          <Typography
+            component="span"
+            sx={{
+              display: "block",
+              mt: 0.25,
+              fontSize: "0.58rem",
+              fontWeight: 700,
+              letterSpacing: "0.14em",
+              lineHeight: 1,
+              opacity: 0.62,
+              textTransform: "uppercase",
+            }}
+          >
+            Open Food Facts
+          </Typography>
+        )}
+      </Box>
+    </Box>
+  );
+};
+
 const MultiPagesButton = ({
   translationKey,
   children,
@@ -237,17 +347,21 @@ const ResponsiveAppBar = () => {
       sx={(theme) => ({
         backgroundColor: theme.palette.cafeCreme.main,
         color: theme.palette.cafeCreme.contrastText,
+        boxShadow: "none",
+        borderBottom: `1px solid ${theme.palette.divider}`,
       })}
     >
       <Container maxWidth={false}>
-        <Toolbar disableGutters>
+        <Toolbar
+          disableGutters
+          sx={{ minHeight: { xs: 58, lg: 66 }, px: { xs: 0.5, lg: 0 } }}
+        >
           {/* Mobile content */}
           <Box
             sx={{
               flexGrow: 1,
               display: { xs: "flex", lg: "none" },
               alignItems: "center",
-              justifyContent: "space-between",
               maxWidth: "100%",
             }}
           >
@@ -390,28 +504,31 @@ const ResponsiveAppBar = () => {
               </Menu>
             )}
 
-            <Typography
-              variant="h5"
-              noWrap
-              component={Link as React.ElementType}
-              to="/"
+            <Box
               sx={{
-                flexGrow: 0,
-                fontFamily: "monospace",
-                fontWeight: 700,
-                letterSpacing: ".3rem",
-                color: "inherit",
-                textDecoration: "none",
-                textAlign: "center",
+                flex: 1,
+                minWidth: 0,
+                display: "flex",
+                justifyContent: "center",
               }}
             >
-              Hunger Games
-            </Typography>
+              <NavBrand compact />
+            </Box>
             {isLoggedIn ? (
-              <AccountCircleIcon color="success" />
+              <Box
+                sx={{
+                  width: 48,
+                  height: 48,
+                  display: "grid",
+                  placeItems: "center",
+                }}
+              >
+                <AccountCircleIcon color="success" />
+              </Box>
             ) : (
               <IconButton
                 aria-label={t("menu.log_in")}
+                sx={{ width: 48, height: 48 }}
                 onClick={() =>
                   void (async () => {
                     const isLoggedIn = await refresh();
@@ -448,39 +565,13 @@ const ResponsiveAppBar = () => {
                 "&::-webkit-scrollbar": { display: "none" },
               }}
             >
-              <MuiLink
-                sx={{ mr: 1, display: "flex", alignSelf: "center" }}
-                href={OFF_URL}
-                target="_blank"
-              >
-                <img
-                  src={logo}
-                  width="30px"
-                  height="30px"
-                  alt="OpenFoodFact logo"
-                />
-              </MuiLink>
-              <Typography
-                variant="h6"
-                component={Link as React.ElementType}
-                to="/"
-                sx={{
-                  mr: 2,
-                  fontFamily: "monospace",
-                  fontWeight: 700,
-                  letterSpacing: ".3rem",
-                  color: "inherit",
-                  textDecoration: "none",
-                }}
-              >
-                Hunger Games
-              </Typography>
+              <NavBrand externalLogo />
               <Divider
                 orientation="vertical"
                 sx={{
                   height: 32,
                   alignSelf: "center",
-                  mx: { lg: 0.5, xl: 1 },
+                  mx: { lg: 1, xl: 1.5 },
                   borderColor: "divider",
                 }}
               />

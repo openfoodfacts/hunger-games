@@ -8,8 +8,12 @@ export default function DownloadOpenFoodFacts() {
 
   return (
     <Box
-      className="OFF-download"
-      sx={{ display: "flex", justifyContent: "center" }}
+      sx={{
+        display: "flex",
+        justifyContent: "center",
+        minHeight: 56,
+        alignItems: "center",
+      }}
     >
       <Box
         sx={{
