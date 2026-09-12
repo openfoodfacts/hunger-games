@@ -2,6 +2,7 @@
   "home": {
     "game_selector": {
       "title": "A quale gioco vorresti giocare?",
+      "external_link": "Link esterno",
       "cards": {
         "questions": {
           "title": "Domande",
@@ -24,6 +25,12 @@
       "contribution_details": "Scopri perché il tuo contributo è importante"
     },
     "saved_filters": "Filtri salvati",
+    "saved_filters_delete": "Elimina filtro salvato",
+    "saved_filters_delete_title": "Eliminare il filtro salvato?",
+    "saved_filters_delete_description": "Questo filtro salvato verrà rimosso da questo dispositivo.",
+    "saved_filters_delete_confirm": "Elimina",
+    "saved_filters_pending": "{{count}} prodotti in attesa",
+    "saved_filters_pending_unknown": "Prodotti in attesa",
     "contribution_modal": {
       "title": "Il tuo contributo è importante",
       "information": "Hunger Games è un tentativo di sfruttare i risultati del nostro OCR e dell'intelligenza artificiale. Quando utilizzi Hunger Games di Open Food Facts, migliori il nostro intero database, il che aiuta la comunità a fare scelte alimentari migliori. Raccogliamo le tue annotazioni e le utilizziamo per rendere Open Food Facts più accurato ed efficiente.",
@@ -31,6 +38,12 @@
     },
     "statistics": {
       "title": "Statistiche di {{userName}}:",
+      "title_without_name": "Le tue statistiche",
+      "empty_state": {
+        "title": "Ancora nessun contributo",
+        "description": "Le tue statistiche dei contributi appariranno qui quando inizierai ad aiutare a migliorare Open Food Facts.",
+        "action": "Inizia a contribuire"
+      },
       "editorCount": {
         "title": "Editore",
         "description": "Numero di modifiche effettuate"
