@@ -255,7 +255,11 @@ export default function QuestionCard({
             height="200"
             image={imageSrc || logo}
             alt=""
-            sx={{ objectFit: "contain" }}
+            sx={{
+              objectFit: "contain",
+              backgroundColor: "common.white",
+              p: 1,
+            }}
           />
           <CardContent>
             {showFilterResume && (
