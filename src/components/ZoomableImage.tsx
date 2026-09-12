@@ -210,7 +210,7 @@ const ZoomableImage = ({
             fullWidth
             onClick={() => {
               setRotation(0);
-              apiRef.current?.resetTransform();
+              void apiRef.current?.resetTransform();
             }}
           >
             Reset
