@@ -32,8 +32,6 @@
     "@types/node": "^26.4.1",
     "@types/react": "^19.2.18",
     "@types/react-dom": "^19.2.7",
-    "@typescript-eslint/eslint-plugin": "^8.70.0",
-    "@typescript-eslint/parser": "^8.70.0",
     "@vitejs/plugin-react": "^6.1.1",
     "eslint": "^10.10.0",
     "eslint-plugin-react": "^7.37.5",
@@ -57,29 +55,10 @@
     "prettier": "prettier --write .",
     "countries": "node update-countries.js",
     "nutriments": "node update-nutriments.js",
-    "test": "react-scripts test",
     "deploy": "bash deploy.sh",
     "lint": "prettier --check . && eslint .",
     "prepare": "husky",
     "knip": "knip"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
   },
   "packageManager": "yarn@4.18.0",
   "resolutions": {
