@@ -183,7 +183,6 @@
     "green-score": "Green-Score",
     "dashboard": "Dashboard dei loghi",
     "tour": "Inizia la visita guidata",
-    "open_navigation": "Apri il menu di navigazione",
     "logged_in_user": "Accesso effettuato come {{userName}}",
     "log_in": "Accedi",
     "moderation": "Moderazione",
@@ -276,6 +275,8 @@
       "title": "Ricerca logo",
       "description": "Seleziona il logo che vuoi cercare e divertiti a scovarli tutti. Per ogni logo che annoti, recupereremo i suoi simili così che tu non smetta mai di annotare. (Premi Maiusc per selezionare un intervallo di loghi)",
       "ref_logos": "Loghi di riferimento (logo già annotato con questo valore)",
+      "annotation_count_one": "Already {{formattedCount}} annotation. You can come back to this logo in a few days if you don't find any matching logos.",
+      "annotation_count_other": "Already {{formattedCount}} annotations. You can come back to this logo in a few days if you don't find any matching logos.",
       "remaining": "Rimanenti da annotare",
       "select_all": "Seleziona Tutto",
       "unselect_all": "Deseleziona Tutto"
@@ -434,12 +435,6 @@
     "getRobotoffPrediciton": "Ottieni previsioni da Robotoff"
   },
   "footer": {
-    "social": {
-      "email": "Email Open Food Facts",
-      "twitter": "Open Food Facts su Twitter",
-      "instagram": "Open Food Facts su Instagram",
-      "facebook": "Open Food Facts su Facebook"
-    },
     "appStore": {
       "title": "App Store",
       "subtitle": "Scarica da"
