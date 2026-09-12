@@ -2,6 +2,7 @@
   "home": {
     "game_selector": {
       "title": "Hangi oyunu oynamak istersin?",
+      "external_link": "External link",
       "cards": {
         "questions": {
           "title": "Sorular",
@@ -28,6 +29,12 @@
       "contribution_details": "Katkınızın neden önemli olduğunu öğrenin"
     },
     "saved_filters": "Kaydedilen Filtreler",
+    "saved_filters_delete": "Delete saved filter",
+    "saved_filters_delete_title": "Delete saved filter?",
+    "saved_filters_delete_description": "This saved filter will be removed from this device.",
+    "saved_filters_delete_confirm": "Sil",
+    "saved_filters_pending": "{{count}} products waiting",
+    "saved_filters_pending_unknown": "Products waiting",
     "contribution_modal": {
       "title": "Katkınız önemlidir",
       "information": "Açlık Oyunları, OCR (OKT - Optik Karakter Tanıma) ve yapay zekamızın sonuçlarından yararlanma çabasıdır. Open Food Facts yapımı Açlık Oyunları'nı kullandığınızda, topluluğun daha iyi yemek seçimleri yapmasına yardımcı olan veritabanımızın tamamını geliştirirsiniz. Ek açıklamalarınızı topluyoruz ve Open Food Facts'i daha doğru ve verimli hale getirmek için kullanıyoruz.",
@@ -35,6 +42,12 @@
     },
     "statistics": {
       "title": "{{userName}} istatistikler:",
+      "title_without_name": "Your statistics",
+      "empty_state": {
+        "title": "No contributions yet",
+        "description": "Your contribution statistics will appear here once you start helping improve Open Food Facts.",
+        "action": "Start contributing"
+      },
       "editorCount": {
         "title": "Editör",
         "description": "Yapılan baskı sayısı"
@@ -207,6 +220,17 @@
     "view_crops_for_this_product": "Ürün logolarına açıklama ekleyin"
   },
   "logos": {
+    "dashboard": {
+      "title": "Logo dashboard",
+      "description": "Explore logo categories and help improve product data.",
+      "category": "Kategori",
+      "categories": "Kategoriler",
+      "logo_count_one": "{{count}} logo",
+      "logo_count_other": "{{count}} logos",
+      "more_info": "More info",
+      "questions": "Sorular",
+      "search": "Ara"
+    },
     "annotation": "Açıklama: ",
     "annotations": "Logo açıklamaları",
     "task_description": "Tamamen aynı olan tüm logoları seçin ve onlara \"en:EU Organik\" gibi bir ad ve \"etiket\" gibi bir tür verin.",
@@ -251,6 +275,8 @@
       "title": "Logo arama",
       "description": "Aramak istediğiniz logoyu seçin ve hepsini bulmaya başlayalım. İşaretlediğiniz her logo için, komşu logoları da getireceğiz, böylece işaretlemeyi asla bırakmanıza gerek kalmayacak. (Logo aralığını seçmek için Shift tuşuna basın)",
       "ref_logos": "Referans logoları (logo zaten bu değerle açıklanmıştır)",
+      "annotation_count_one": "Already {{formattedCount}} annotation. You can come back to this logo in a few days if you don't find any matching logos.",
+      "annotation_count_other": "Already {{formattedCount}} annotations. You can come back to this logo in a few days if you don't find any matching logos.",
       "remaining": "Açıklama eklemek kaldı",
       "select_all": "Tümünü Seç",
       "unselect_all": "Tüm seçimleri kaldır"
