@@ -12,8 +12,12 @@
           "description": "Găsiți toate siglele care se potrivesc cu logo-ul dat"
         },
         "green_score": {
-          "title": "Green-Scor",
+          "title": "Green-Score",
           "description": "Adnotează întrebările cu cea mai mare valoare"
+        },
+        "create_products": {
+          "title": "Create missing products",
+          "description": "Add products that are not in the database yet, over on Open Prices"
         }
       }
     },
@@ -71,6 +75,10 @@
     "skip": "Omitere",
     "yes": "Da",
     "no_questions_remaining": "Nu au mai rămas întrebări",
+    "similar_questions": "Întrebări similare",
+    "no_similar_questions": "Nicio întrebare similară",
+    "remaining_questions_count_one": "1 question remaining",
+    "remaining_questions_count_other": "{{count}} Întrebări",
     "an_error_occurred": "A apărut o eroare. Vă rugăm să reîncărcați pagina, să încercați mai târziu sau să contactați echipa.",
     "countries": "Țări",
     "view": "Vizualizare",
@@ -83,10 +91,9 @@
     "last_annotations": "Ultimele adnotări",
     "remaining_annotations": "Întrebări rămase",
     "annotated_annotations": "Adnotat",
-    "similar_questions": "Întrebări similare",
-    "no_similar_questions": "Nicio întrebare similară",
     "no_images": "Nicio imagine disponibilă",
     "no_additional_info": "Nicio informație suplimentară",
+    "add_missing_info": "Adaugă",
     "filters": {
       "active_filter_number": "+{{count}} filtre",
       "active_filter_number_one": "+{{count}} filtru",
@@ -111,6 +118,7 @@
       },
       "placeholders": {
         "value": "Valoare (Fanta, en:organic,...)",
+        "country": "France, Germany, Japan, ...",
         "brand": "Auchan, Danone, Herta,...",
         "campaign": "Campanii de adnotare",
         "predictor": "detector-universal-de-logo, expresie-regulată, ..."

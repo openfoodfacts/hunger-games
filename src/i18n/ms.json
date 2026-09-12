@@ -14,6 +14,10 @@
         "green_score": {
           "title": "Green-score",
           "description": "Annotate the questions with the highest value"
+        },
+        "create_products": {
+          "title": "Create missing products",
+          "description": "Add products that are not in the database yet, over on Open Prices"
         }
       }
     },
@@ -71,6 +75,10 @@
     "skip": "Skip",
     "yes": "Ya",
     "no_questions_remaining": "Tiada soalan yang tinggal",
+    "similar_questions": "Similar questions",
+    "no_similar_questions": "No similar questions",
+    "remaining_questions_count_one": "1 question remaining",
+    "remaining_questions_count_other": "{{count}} questions remaining",
     "an_error_occurred": "Ralat berlaku. Sila muat semula, cuba kemudian atau hubungi pasukan.",
     "countries": "Negara-negara",
     "view": "Pandang",
@@ -83,10 +91,9 @@
     "last_annotations": "Anotasi terakhir",
     "remaining_annotations": "Remaining questions",
     "annotated_annotations": "Dianotasikan",
-    "similar_questions": "Similar questions",
-    "no_similar_questions": "No similar questions",
     "no_images": "No images available",
     "no_additional_info": "No additional information",
+    "add_missing_info": "Tambah",
     "filters": {
       "active_filter_number": "+{{count}} filters",
       "active_filter_number_one": "+{{count}} filter",
@@ -111,6 +118,7 @@
       },
       "placeholders": {
         "value": "Value (Fanta, en:organic,...)",
+        "country": "France, Germany, Japan, ...",
         "brand": "Auchan, Danone, Herta, ...",
         "campaign": "Annotation campaigns",
         "predictor": "pengesan-logo-universal, regex, ..."

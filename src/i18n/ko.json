@@ -14,6 +14,10 @@
         "green_score": {
           "title": "Green-score",
           "description": "Annotate the questions with the highest value"
+        },
+        "create_products": {
+          "title": "Create missing products",
+          "description": "Add products that are not in the database yet, over on Open Prices"
         }
       }
     },
@@ -71,6 +75,10 @@
     "skip": "건너뛰기",
     "yes": "예",
     "no_questions_remaining": "남은 질문이 없습니다",
+    "similar_questions": "Similar questions",
+    "no_similar_questions": "No similar questions",
+    "remaining_questions_count_one": "1 question remaining",
+    "remaining_questions_count_other": "{{count}} questions remaining",
     "an_error_occurred": "오류가 발생했습니다. 새로 고침하거나 나중에 다시 시도하거나 팀에 문의하세요.",
     "countries": "국가",
     "view": "뷰",
@@ -83,10 +91,9 @@
     "last_annotations": "마지막 주석",
     "remaining_annotations": "남은 질문",
     "annotated_annotations": "주석 달기",
-    "similar_questions": "Similar questions",
-    "no_similar_questions": "No similar questions",
     "no_images": "No images available",
     "no_additional_info": "No additional information",
+    "add_missing_info": "추가하기",
     "filters": {
       "active_filter_number": "+{{count}} 필터",
       "active_filter_number_one": "+{{count}} 필터",
@@ -111,6 +118,7 @@
       },
       "placeholders": {
         "value": "Value (Fanta, en:organic,...)",
+        "country": "France, Germany, Japan, ...",
         "brand": "Auchan, Danone, Herta, ...",
         "campaign": "주석 캠페인",
         "predictor": "범용 로고 감지기, 정규 표현식, ..."

@@ -14,6 +14,10 @@
         "green_score": {
           "title": "Green-score",
           "description": "Označte otázky s nejvyšší hodnotou"
+        },
+        "create_products": {
+          "title": "Vytvořit chybějící produkty",
+          "description": "Add products that are not in the database yet, over on Open Prices"
         }
       }
     },
@@ -71,6 +75,10 @@
     "skip": "Přeskočit",
     "yes": "Ano",
     "no_questions_remaining": "Nezbývají žádné otázky",
+    "similar_questions": "Podobné otázky",
+    "no_similar_questions": "Žádné podobné otázky",
+    "remaining_questions_count_one": "Zbývá 1 otázka",
+    "remaining_questions_count_other": "Zbývá {{count}} otázek",
     "an_error_occurred": "Došlo k chybě. Znovu načtěte stránku, zkuste to později nebo kontaktujte tým.",
     "countries": "Země",
     "view": "Zobrazit",
@@ -83,10 +91,9 @@
     "last_annotations": "Poslední anotace",
     "remaining_annotations": "Zbývající otázky",
     "annotated_annotations": "Komentováno",
-    "similar_questions": "Podobné otázky",
-    "no_similar_questions": "Žádné podobné otázky",
     "no_images": "Žádné obrázky k dispozici",
     "no_additional_info": "Žádné další informace",
+    "add_missing_info": "Přidat",
     "filters": {
       "active_filter_number": "+{{count}} filtrů",
       "active_filter_number_one": "+{{count}} filtr",
@@ -111,6 +118,7 @@
       },
       "placeholders": {
         "value": "Hodnota (Fanta, en:organic,...)",
+        "country": "Francie, Německo, Japonsko, ...",
         "brand": "Auchan, Danone, Herta,...",
         "campaign": "Anotační kampaně",
         "predictor": "univerzální detektor log, regulární výraz, ..."

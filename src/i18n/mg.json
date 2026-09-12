@@ -14,6 +14,10 @@
         "green_score": {
           "title": "Green-score",
           "description": "Annotate the questions with the highest value"
+        },
+        "create_products": {
+          "title": "Create missing products",
+          "description": "Add products that are not in the database yet, over on Open Prices"
         }
       }
     },
@@ -71,6 +75,10 @@
     "skip": "Dingana",
     "yes": "Eny",
     "no_questions_remaining": "Tsy misy fanontaniana tavela",
+    "similar_questions": "Similar questions",
+    "no_similar_questions": "No similar questions",
+    "remaining_questions_count_one": "1 question remaining",
+    "remaining_questions_count_other": "{{count}} questions remaining",
     "an_error_occurred": "Nisy hadisoana nitranga. Avereno azafady, andramo aoriana kely na mifandraisa amin'ny ekipa.",
     "countries": "Firenena",
     "view": "Jery",
@@ -83,10 +91,9 @@
     "last_annotations": "Fanazavana farany",
     "remaining_annotations": "Fanontaniana sisa",
     "annotated_annotations": "Annotated",
-    "similar_questions": "Similar questions",
-    "no_similar_questions": "No similar questions",
     "no_images": "No images available",
     "no_additional_info": "No additional information",
+    "add_missing_info": "Hanampy",
     "filters": {
       "active_filter_number": "+{{count}} sivana",
       "active_filter_number_one": "+{{count}} sivana",
@@ -111,6 +118,7 @@
       },
       "placeholders": {
         "value": "Sanda (Fanta, en:organika,...)",
+        "country": "France, Germany, Japan, ...",
         "brand": "Auchan, Danone, Herta, ...",
         "campaign": "Fanamarihan'ny fanentanana",
         "predictor": "mpitsikilo-logo-iraisam-pirenena, regex, ..."

@@ -14,6 +14,10 @@
         "green_score": {
           "title": "エコスコア",
           "description": "最も価値の高い質問に注釈を付ける"
+        },
+        "create_products": {
+          "title": "Create missing products",
+          "description": "Add products that are not in the database yet, over on Open Prices"
         }
       }
     },
@@ -71,6 +75,10 @@
     "skip": "スキップ",
     "yes": "はい",
     "no_questions_remaining": "これ以上質問はありません",
+    "similar_questions": "Similar questions",
+    "no_similar_questions": "No similar questions",
+    "remaining_questions_count_one": "1 question remaining",
+    "remaining_questions_count_other": "{{count}} questions remaining",
     "an_error_occurred": "エラーが発生しました。再読み込みするか、しばらくしてからもう一度お試しいただくか、チームにお問い合わせください。",
     "countries": "国",
     "view": "表示",
@@ -83,10 +91,9 @@
     "last_annotations": "最後の注釈",
     "remaining_annotations": "残りの質問",
     "annotated_annotations": "注釈付き",
-    "similar_questions": "Similar questions",
-    "no_similar_questions": "No similar questions",
     "no_images": "No images available",
     "no_additional_info": "No additional information",
+    "add_missing_info": "追加",
     "filters": {
       "active_filter_number": "+{{count}} 個のフィルタ",
       "active_filter_number_one": "+{{count}} 個のフィルタ",
@@ -111,6 +118,7 @@
       },
       "placeholders": {
         "value": "キーワード(ファンタ, ja: オーガニック,…)",
+        "country": "France, Germany, Japan, ...",
         "brand": "オーシャン、ダノン、ヘルタ、...",
         "campaign": "アノテーションキャンペーン",
         "predictor": "universal-logo-detector、正規表現、..."

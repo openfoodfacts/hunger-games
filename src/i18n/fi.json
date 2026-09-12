@@ -14,6 +14,10 @@
         "green_score": {
           "title": "Green-Score",
           "description": "Korosta kysymykset, joilla on korkein arvo"
+        },
+        "create_products": {
+          "title": "Create missing products",
+          "description": "Add products that are not in the database yet, over on Open Prices"
         }
       }
     },
@@ -71,6 +75,10 @@
     "skip": "Ohita",
     "yes": "Kyllä",
     "no_questions_remaining": "Ei kysymyksiä jäljellä",
+    "similar_questions": "Similar questions",
+    "no_similar_questions": "No similar questions",
+    "remaining_questions_count_one": "1 question remaining",
+    "remaining_questions_count_other": "{{count}} questions remaining",
     "an_error_occurred": "Tapahtui virhe. Lataa sivu uudelleen, yritä myöhemmin tai ota yhteyttä tiimiin.",
     "countries": "Maat",
     "view": "Näytä",
@@ -83,10 +91,9 @@
     "last_annotations": "Viimeisimmät merkinnät",
     "remaining_annotations": "Jäljellä olevat kysymykset",
     "annotated_annotations": "Merkitty",
-    "similar_questions": "Similar questions",
-    "no_similar_questions": "No similar questions",
     "no_images": "No images available",
     "no_additional_info": "No additional information",
+    "add_missing_info": "Lisää",
     "filters": {
       "active_filter_number": "+{{count}} suodatinta",
       "active_filter_number_one": "+{{count}} suodatin",
@@ -111,6 +118,7 @@
       },
       "placeholders": {
         "value": "Arvo (Fanta, fi:luomu,...)",
+        "country": "France, Germany, Japan, ...",
         "brand": "Pirkka, Valio, Fazer, ...",
         "campaign": "Merkintäkampanjat",
         "predictor": "universaali-logo-ilmaisin, regex, ..."
