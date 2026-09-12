@@ -2,6 +2,7 @@
   "home": {
     "game_selector": {
       "title": "أي لُعْبَة تفضل أن تلعبها؟",
+      "external_link": "External link",
       "cards": {
         "questions": {
           "title": "أسئلة",
@@ -28,6 +29,12 @@
       "contribution_details": "تعرف لماذا مشاركتك مهمة؟"
     },
     "saved_filters": "فرز محفوظ",
+    "saved_filters_delete": "Delete saved filter",
+    "saved_filters_delete_title": "Delete saved filter?",
+    "saved_filters_delete_description": "This saved filter will be removed from this device.",
+    "saved_filters_delete_confirm": "حذف",
+    "saved_filters_pending": "{{count}} products waiting",
+    "saved_filters_pending_unknown": "Products waiting",
     "contribution_modal": {
       "title": "مساهمتك مهمة",
       "information": "ألعاب الجوع هي محاولة للاستفادة من نتائج التعرف الضوئي على الحروف والذكاء الاصطناعي. عندما تستخدم ألعاب الجوع بواسطة Open Food Facts، فإنك تحسن قاعدة بياناتنا بأكملها مما يساعد المجتمع على اتخاذ خيارات غذائية أفضل. نجمع شروحك ونستخدمها لجعل حقائق الطعام المفتوحة أكثر دقه وكفاءة\n",
@@ -35,6 +42,12 @@
     },
     "statistics": {
       "title": "{{userName}} إحصائيات:",
+      "title_without_name": "Your statistics",
+      "empty_state": {
+        "title": "No contributions yet",
+        "description": "Your contribution statistics will appear here once you start helping improve Open Food Facts.",
+        "action": "Start contributing"
+      },
       "editorCount": {
         "title": "المحرر",
         "description": "عدد الطبعات المنجزة"
@@ -207,6 +220,17 @@
     "view_crops_for_this_product": "علق على شعارات المنتج"
   },
   "logos": {
+    "dashboard": {
+      "title": "Logo dashboard",
+      "description": "Explore logo categories and help improve product data.",
+      "category": "فئة",
+      "categories": "الفئات",
+      "logo_count_one": "{{count}} logo",
+      "logo_count_other": "{{count}} logos",
+      "more_info": "More info",
+      "questions": "أسئلة",
+      "search": "بحث"
+    },
     "annotation": "الشرح: ",
     "annotations": "تفاصيل عن الشعارات",
     "task_description": "حدد جميع الشعارات المتطابقة تمامًا، وأعطها اسمًا مثل \"عضوي\" ونوعًا مثل \"المعلبات\".",
@@ -251,6 +275,8 @@
       "title": "بحث الشعار",
       "description": "حدد الشعار الذي تريد البحث عنه، ودعنا نلتقطهم جميعًا. بالنسبة لكل شعار تضيف إليه تعليقًا توضيحيًا، سنجلب العناصر المجاورة له بحيث قد لا تتوقف أبدًا عن التعليق التوضيحي. (اضغط على Shift لتحديد نطاق الشعارات)",
       "ref_logos": "الشعارات المرجعية (الشعار موضح فعلًا بهذه القيمة)",
+      "annotation_count_one": "Already {{formattedCount}} annotation. You can come back to this logo in a few days if you don't find any matching logos.",
+      "annotation_count_other": "Already {{formattedCount}} annotations. You can come back to this logo in a few days if you don't find any matching logos.",
       "remaining": "بقي للتعليق",
       "select_all": "حدد الكل",
       "unselect_all": "إلغاء تحديد الكل"
