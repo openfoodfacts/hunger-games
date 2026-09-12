@@ -2,7 +2,7 @@
   "home": {
     "game_selector": {
       "title": "Vilket spel skulle du vilja spela?",
-      "external_link": "External link",
+      "external_link": "Extern länk",
       "cards": {
         "questions": {
           "title": "Frågor",
@@ -29,12 +29,12 @@
       "contribution_details": "Ta reda på varför ditt bidrag är viktigt"
     },
     "saved_filters": "Sparade filter",
-    "saved_filters_delete": "Delete saved filter",
-    "saved_filters_delete_title": "Delete saved filter?",
-    "saved_filters_delete_description": "This saved filter will be removed from this device.",
+    "saved_filters_delete": "Ta bort sparat filter",
+    "saved_filters_delete_title": "Ta bort sparat filter?",
+    "saved_filters_delete_description": "Detta sparade filter kommer att tas bort från denna enhet.",
     "saved_filters_delete_confirm": "Radera",
-    "saved_filters_pending": "{{count}} products waiting",
-    "saved_filters_pending_unknown": "Products waiting",
+    "saved_filters_pending": "{{count}} produkter väntar",
+    "saved_filters_pending_unknown": "Produkter som väntar",
     "contribution_modal": {
       "title": "Ditt bidrag är viktigt",
       "information": "Hunger Games är ett försök att utnyttja resultaten av vår OCR och artificiell intelligens. När du använder Hunger Games av Open Food Facts förbättrar du hela vår databas vilket hjälper samhället att göra bättre matval. Vi samlar dina kommentarer och använder dem för att göra Open Food Facts mer exakta och effektiva.",
@@ -42,11 +42,11 @@
     },
     "statistics": {
       "title": "{{userName}} statistik:",
-      "title_without_name": "Your statistics",
+      "title_without_name": "Din statistik",
       "empty_state": {
-        "title": "No contributions yet",
-        "description": "Your contribution statistics will appear here once you start helping improve Open Food Facts.",
-        "action": "Start contributing"
+        "title": "Inga bidrag än",
+        "description": "Din bidragsstatistik kommer att visas här när du börjar hjälpa till att förbättra Open Food Facts.",
+        "action": "Börja bidra"
       },
       "editorCount": {
         "title": "Redaktör",
@@ -221,13 +221,13 @@
   },
   "logos": {
     "dashboard": {
-      "title": "Logo dashboard",
-      "description": "Explore logo categories and help improve product data.",
+      "title": "Logopanel",
+      "description": "Utforska logokategorier och hjälp till att förbättra produktdata.",
       "category": "Kategori",
       "categories": "Kategorier",
       "logo_count_one": "{{count}} logo",
-      "logo_count_other": "{{count}} logos",
-      "more_info": "More info",
+      "logo_count_other": "{{count}} loggor",
+      "more_info": "Mer info",
       "questions": "Frågor",
       "search": "Sök"
     },
