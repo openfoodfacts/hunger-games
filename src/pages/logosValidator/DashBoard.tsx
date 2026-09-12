@@ -13,7 +13,7 @@ import { useTranslation } from "react-i18next";
 
 import { LOGOS, DASHBOARD } from "./dashboardDefinition";
 import DashboardCard from "./DashboardCard";
-import { Link } from "react-router";
+import { Link, useLocation } from "react-router";
 
 interface TabPanelProps {
   children?: React.ReactNode;
@@ -21,6 +21,35 @@ interface TabPanelProps {
   index: number;
   isActive: boolean;
 }
+
+type DashboardState = {
+  value: number;
+  visitedTabs: Set<number>;
+};
+
+type DashboardAction = {
+  type: "routeChanged" | "tabSelected";
+  index: number;
+};
+
+const createDashboardState = (index: number): DashboardState => ({
+  value: index,
+  visitedTabs: new Set([index]),
+});
+
+const dashboardStateReducer = (
+  state: DashboardState,
+  action: DashboardAction,
+): DashboardState => {
+  if (state.value === action.index && state.visitedTabs.has(action.index)) {
+    return state;
+  }
+
+  return {
+    value: action.index,
+    visitedTabs: new Set(state.visitedTabs).add(action.index),
+  };
+};
 
 const TabPanel = React.memo(function TabPanel({
   hasBeenVisible,
@@ -107,28 +136,31 @@ function a11yProps(index: number) {
 }
 
 export default function VerticalTabs() {
-  const dasboardId = window.location.pathname.split("/").filter(Boolean).at(-1);
-
+  const getLocation = useLocation as unknown as () => { pathname: string };
+  const location = getLocation();
   const { t } = useTranslation();
   const theme = useTheme();
   const isDesktop = useMediaQuery(theme.breakpoints.up("md"));
 
+  const dasboardId = location.pathname.split("/").filter(Boolean).at(-1);
   const dashboardIndex = DASHBOARD.findIndex(({ tag }) => tag === dasboardId);
   const initialDashboardIndex = dashboardIndex >= 0 ? dashboardIndex : 0;
-  const [value, setValue] = React.useState(initialDashboardIndex);
-  const [visitedTabs, setVisitedTabs] = React.useState(
-    () => new Set([initialDashboardIndex]),
+  const [{ value, visitedTabs }, dispatch] = React.useReducer(
+    dashboardStateReducer,
+    initialDashboardIndex,
+    createDashboardState,
   );
 
   const handleChange = (_event: React.SyntheticEvent, newValue: number) => {
-    setValue(newValue);
-    setVisitedTabs((previousTabs) => {
-      if (previousTabs.has(newValue)) {
-        return previousTabs;
-      }
-      return new Set(previousTabs).add(newValue);
-    });
+    dispatch({ type: "tabSelected", index: newValue });
   };
+
+  React.useEffect(() => {
+    dispatch({
+      type: "routeChanged",
+      index: initialDashboardIndex,
+    });
+  }, [initialDashboardIndex]);
 
   return (
     <React.Suspense>
