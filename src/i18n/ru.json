@@ -2,6 +2,7 @@
   "home": {
     "game_selector": {
       "title": "В какую игру вы хотели бы сыграть?",
+      "external_link": "External link",
       "cards": {
         "questions": {
           "title": "Вопросы",
@@ -28,6 +29,12 @@
       "contribution_details": "Узнайте, почему ваш вклад имеет важное значение"
     },
     "saved_filters": "Сохраненные фильтры",
+    "saved_filters_delete": "Delete saved filter",
+    "saved_filters_delete_title": "Delete saved filter?",
+    "saved_filters_delete_description": "This saved filter will be removed from this device.",
+    "saved_filters_delete_confirm": "Удалить",
+    "saved_filters_pending": "{{count}} products waiting",
+    "saved_filters_pending_unknown": "Products waiting",
     "contribution_modal": {
       "title": "Ваш вклад имеет значение",
       "information": "«Голодные игры» — это попытка использовать результаты OCR и искусственного интеллекта. Когда вы используете «Голодные игры» от Open Food Facts, вы улучшаете всю нашу базу данных, что помогает сообществу делать лучший выбор продуктов питания. Мы собираем ваши аннотации и используем их, чтобы сделать Open Food Facts более точным и эффективным.",
@@ -35,6 +42,12 @@
     },
     "statistics": {
       "title": "Статистика {{userName}}:",
+      "title_without_name": "Your statistics",
+      "empty_state": {
+        "title": "No contributions yet",
+        "description": "Your contribution statistics will appear here once you start helping improve Open Food Facts.",
+        "action": "Start contributing"
+      },
       "editorCount": {
         "title": "Редактор",
         "description": "Количество правок"
@@ -207,6 +220,17 @@
     "view_crops_for_this_product": "Аннотировать логотипы товаров"
   },
   "logos": {
+    "dashboard": {
+      "title": "Logo dashboard",
+      "description": "Explore logo categories and help improve product data.",
+      "category": "Категория",
+      "categories": "Категории",
+      "logo_count_one": "{{count}} logo",
+      "logo_count_other": "{{count}} logos",
+      "more_info": "More info",
+      "questions": "Вопросы",
+      "search": "Поиск"
+    },
     "annotation": "Заметка: ",
     "annotations": "Аннотация логотипа",
     "task_description": "Выберите все логотипы, которые точно такие же, и дайте им название, например, \"en:EU Organic\" и тип, например, \"этикетка\".",
@@ -251,6 +275,8 @@
       "title": "Поиск логотипа",
       "description": "Выберите логотип, который вы хотите найти, и поехали их всех ловить. Для каждого логотипа, который вы аннотируете, мы найдем его соседей, так что вы можете никогда не остановиться аннотировать. (Нажмите Shift, чтобы выбрать диапазон логотипов)",
       "ref_logos": "Ссылочные логотипы (логотип уже аннотирован этим значением)",
+      "annotation_count_one": "Already {{formattedCount}} annotation. You can come back to this logo in a few days if you don't find any matching logos.",
+      "annotation_count_other": "Already {{formattedCount}} annotations. You can come back to this logo in a few days if you don't find any matching logos.",
       "remaining": "Осталось прокомментировать",
       "select_all": "Выбрать все",
       "unselect_all": "Отменить выбор"
