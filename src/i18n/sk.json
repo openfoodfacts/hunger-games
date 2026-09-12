@@ -2,6 +2,7 @@
   "home": {
     "game_selector": {
       "title": "Akú hru by ste si chceli zahrať?",
+      "external_link": "External link",
       "cards": {
         "questions": {
           "title": "Otázky",
@@ -28,6 +29,12 @@
       "contribution_details": "Zistite, prečo je váš príspevok dôležitý"
     },
     "saved_filters": "Uložené filtre",
+    "saved_filters_delete": "Delete saved filter",
+    "saved_filters_delete_title": "Delete saved filter?",
+    "saved_filters_delete_description": "This saved filter will be removed from this device.",
+    "saved_filters_delete_confirm": "Vymazať",
+    "saved_filters_pending": "{{count}} products waiting",
+    "saved_filters_pending_unknown": "Products waiting",
     "contribution_modal": {
       "title": "Váš príspevok je dôležitý",
       "information": "Hunger Games je snaha využiť výsledky nášho OCR a umelej inteligencie. Keď používate Hunger Games od Open Food Facts, zlepšujete celú našu databázu, čo pomáha komunite lepšie si vyberať jedlo. Zhromažďujeme vaše anotácie a používame ich na to, aby boli Open Food Facts presnejšie a efektívnejšie.",
@@ -35,6 +42,12 @@
     },
     "statistics": {
       "title": "{{userName}} štatistiky:",
+      "title_without_name": "Your statistics",
+      "empty_state": {
+        "title": "No contributions yet",
+        "description": "Your contribution statistics will appear here once you start helping improve Open Food Facts.",
+        "action": "Start contributing"
+      },
       "editorCount": {
         "title": "Editor",
         "description": "Počet vykonaných úprav"
@@ -207,6 +220,17 @@
     "view_crops_for_this_product": "Pridávajte poznámky k logám produktov"
   },
   "logos": {
+    "dashboard": {
+      "title": "Logo dashboard",
+      "description": "Explore logo categories and help improve product data.",
+      "category": "Kategória",
+      "categories": "Kategórie",
+      "logo_count_one": "{{count}} logo",
+      "logo_count_other": "{{count}} logos",
+      "more_info": "More info",
+      "questions": "Otázky",
+      "search": "Vyhľadať"
+    },
     "annotation": "Poznámky: ",
     "annotations": "Anotácie loga",
     "task_description": "Vyberte všetky logá, ktoré sú úplne rovnaké, a pomenujte ich ako „en:EU Organic“ a typ ako „štítok“.",
@@ -251,6 +275,8 @@
       "title": "Vyhľadávanie loga",
       "description": "Vyberte logo, ktoré chcete hľadať, a poďme ich všetky chytiť. Ku každému logu, ktoré anotujete, získame jeho susedov, takže možno nikdy neprestanete anotovať. (Stlačením Shift vyberte rozsah log)",
       "ref_logos": "Referenčné logá (logo už označené touto hodnotou)",
+      "annotation_count_one": "Already {{formattedCount}} annotation. You can come back to this logo in a few days if you don't find any matching logos.",
+      "annotation_count_other": "Already {{formattedCount}} annotations. You can come back to this logo in a few days if you don't find any matching logos.",
       "remaining": "Zostáva anotovať",
       "select_all": "Vybrať všetko",
       "unselect_all": "Odznačiť všetko"
