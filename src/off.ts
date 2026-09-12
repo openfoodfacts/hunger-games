@@ -1,4 +1,7 @@
-import { OpenFoodFacts } from "@openfoodfacts/openfoodfacts-nodejs";
+import {
+  OpenFoodFacts,
+  type Product as SdkProduct,
+} from "@openfoodfacts/openfoodfacts-nodejs";
 import { getLang } from "./localeStorageManager";
 import {
   OFF_DOMAIN,
@@ -13,17 +16,21 @@ import axios from "axios";
 
 const BARCODE_REGEX = /(...)(...)(...)(.*)$/;
 
-interface Product {
-  product_name?: string;
-  brands?: string[];
-  ingredients_text?: string;
-  countries_tags?: string[];
-  images?: any;
-  categories?: string[];
-  categories_tags?: string[];
-  labels_tags?: string;
-  quantity?: string;
-}
+export type ProductImage = { uploaded_t?: number } & Record<string, unknown>;
+
+export type Product = Pick<
+  SdkProduct,
+  | "product_name"
+  | "brands"
+  | "ingredients_text"
+  | "countries_tags"
+  | "categories"
+  | "categories_tags"
+  | "labels_tags"
+  | "quantity"
+> & {
+  images?: Record<string, ProductImage | string>;
+};
 
 export const offClient = new OpenFoodFacts(
   (input: RequestInfo | URL, init: RequestInit | undefined) =>
@@ -77,7 +84,9 @@ class OffService {
 
   getCategoriesTranslations({ categories }: { categories: string[] }) {
     const lang = getLang();
-    return axios.get(
+    return axios.get<
+      Record<string, { name?: Record<string, string | undefined> }>
+    >(
       `${OFF_API_URL_V2}/taxonomy?tagtype=categories&lc=en%2C${lang}&cc=fr&fields=name,wikidata&tags=${categories.join(
         ",",
       )}`,
@@ -188,18 +197,20 @@ class OffService {
       }`;
   }
 
-  searchProducts({
+  searchProducts<T = unknown>({
     page = 1,
     pageSize = 25,
     filters = [],
     countryCode = "world",
     fields = "code",
+    signal,
   }: {
     page?: number;
     pageSize?: number;
     filters?: { [key: string]: string }[];
     countryCode?: string;
     fields?: string;
+    signal?: AbortSignal;
   }) {
     const searchParams: Record<string, string> = {
       page: page.toString(),
@@ -218,8 +229,9 @@ class OffService {
     });
 
     const urlParams = new URLSearchParams(searchParams);
-    return axios.get(
+    return axios.get<{ products?: T[] }>(
       `${OFF_SEARCH.replace("world", countryCode)}?${urlParams.toString()}`,
+      { signal },
     );
   }
 
@@ -237,15 +249,21 @@ class OffService {
     });
   }
 
-  async getIngedrientParsing(editionParams: { text: string; lang: string }) {
+  getIngredientParsing<T = unknown>(editionParams: {
+    text: string;
+    lang: string;
+  }) {
     const { lang, text } = editionParams;
 
-    return await axios.patch(`${OFF_API_URL_V3}/product/test`, {
-      fields: "ingredients",
-      lc: lang,
-      tags_lc: lang,
-      product: { lang, [`ingredients_text_${lang}`]: text },
-    });
+    return axios.patch<{ product?: { ingredients?: T } }>(
+      `${OFF_API_URL_V3}/product/test`,
+      {
+        fields: "ingredients",
+        lc: lang,
+        tags_lc: lang,
+        product: { lang, [`ingredients_text_${lang}`]: text },
+      },
+    );
   }
 }
 

@@ -31,10 +31,20 @@ function LogoQuestionValidator() {
       zoomOnLogo: true,
     },
     {},
-  );
+  ) as [
+    { imageSize: string; zoomOnLogo: boolean | string },
+    React.Dispatch<
+      React.SetStateAction<{
+        imageSize: string | number;
+        zoomOnLogo: boolean | string;
+      }>
+    >,
+  ];
 
   const imageSize = Number.parseInt(controlledState.imageSize);
-  const zoomOnLogo = JSON.parse(controlledState.zoomOnLogo);
+  const zoomOnLogo =
+    controlledState.zoomOnLogo === true ||
+    controlledState.zoomOnLogo === "true";
 
   const [filterState] = useFilterState();
 
@@ -173,9 +183,14 @@ function LogoQuestionValidator() {
       </Box>
       <Stack
         direction="row"
-        justifyContent="center"
-        alignItems="center"
-        sx={{ pt: 5, px: 5, pb: 0, textAlign: "center" }}
+        sx={{
+          justifyContent: "center",
+          alignItems: "center",
+          pt: 5,
+          px: 5,
+          pb: 0,
+          textAlign: "center",
+        }}
       >
         <Typography sx={{ mx: 3 }}>
           {t("nutriscore.images_remaining", {
@@ -194,8 +209,8 @@ function LogoQuestionValidator() {
           <Slider
             aria-label={t("nutriscore.image_sizes")}
             value={imageSize}
-            onChangeCommitted={(event, newValue) =>
-              setControlledState((prev: any) => ({
+            onChangeCommitted={(_event, newValue) =>
+              setControlledState((prev) => ({
                 ...prev,
                 imageSize: newValue,
               }))
@@ -214,7 +229,7 @@ function LogoQuestionValidator() {
             <Checkbox
               checked={zoomOnLogo}
               onChange={(event) =>
-                setControlledState((prev: any) => ({
+                setControlledState((prev) => ({
                   ...prev,
                   zoomOnLogo: event.target.checked,
                 }))
@@ -227,9 +242,13 @@ function LogoQuestionValidator() {
       </Stack>
       <Stack
         direction="row"
-        justifyContent="start"
-        alignItems="center"
-        sx={{ px: 5, py: 1, textAlign: "left" }}
+        sx={{
+          justifyContent: "start",
+          alignItems: "center",
+          px: 5,
+          py: 1,
+          textAlign: "left",
+        }}
       >
         <Button onClick={selectAll} size="small" sx={{ mr: 2 }}>
           {t("nutriscore.select_all")}
@@ -280,7 +299,12 @@ function LogoQuestionValidator() {
           marginTop: 2,
         }}
       >
-        <Stack direction="row" justifyContent="end">
+        <Stack
+          direction="row"
+          sx={{
+            justifyContent: "end",
+          }}
+        >
           <Button
             size="large"
             variant="contained"

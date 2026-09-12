@@ -60,7 +60,7 @@ export function postRobotoff(config: PostRobotoffParams) {
     }
   });
 
-  axios.post(
+  return axios.post(
     `${ROBOTOFF_API_URL}/insights/annotate`,
     new URLSearchParams(
       `insight_id=${insightId}&annotation=2&data=${JSON.stringify({
@@ -78,7 +78,7 @@ export function postRobotoff(config: PostRobotoffParams) {
 export function skipRobotoff(config: Pick<PostRobotoffParams, "insightId">) {
   const { insightId } = config;
 
-  axios.post(
+  return axios.post(
     `${ROBOTOFF_API_URL}/insights/annotate`,
     new URLSearchParams(`insight_id=${insightId}&annotation=-1`),
     { withCredentials: true },
@@ -88,7 +88,7 @@ export function skipRobotoff(config: Pick<PostRobotoffParams, "insightId">) {
 export function deleteRobotoff(config: Pick<PostRobotoffParams, "insightId">) {
   const { insightId } = config;
 
-  axios.post(
+  return axios.post(
     `${ROBOTOFF_API_URL}/insights/annotate`,
     new URLSearchParams(`insight_id=${insightId}&annotation=0`),
     { withCredentials: true },

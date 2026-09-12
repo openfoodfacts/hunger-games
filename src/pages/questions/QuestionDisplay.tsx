@@ -1,4 +1,5 @@
 import * as React from "react";
+import { useQuery } from "@tanstack/react-query";
 import { Link } from "react-router";
 import { useTranslation } from "react-i18next";
 import { useTheme } from "@mui/material/styles";
@@ -38,40 +39,21 @@ const usePotentialQuestionNumber = (
   filterState: FilterState,
   question: QuestionInterface | null,
 ) => {
-  const [nbOfPotentialQuestion, setNbOfPotentialQuestions] = React.useState<
-    number | null
-  >(null);
+  const insightType = question?.insight_type;
+  const valueTag = question?.value_tag;
+  const enabled = Boolean(!filterState.valueTag && insightType && valueTag);
+  const query = useQuery({
+    queryKey: ["potential-question-count", filterState, insightType, valueTag],
+    queryFn: () =>
+      getNbOfQuestionForValue({
+        ...filterState,
+        insightType,
+        valueTag,
+      }),
+    enabled,
+  });
 
-  React.useEffect(() => {
-    if (
-      filterState.valueTag ||
-      !question?.insight_type ||
-      !question?.value_tag
-    ) {
-      // value is already in the filter so it's a useless information
-      setNbOfPotentialQuestions(null);
-      return;
-    }
-    let validRequest = true;
-
-    getNbOfQuestionForValue({
-      ...filterState,
-      insightType: question?.insight_type,
-      valueTag: question?.value_tag,
-    })
-      .then((nbQuestions) => {
-        if (validRequest) {
-          setNbOfPotentialQuestions(nbQuestions);
-        }
-      })
-      .catch(() => {});
-
-    return () => {
-      validRequest = false;
-    };
-  }, [filterState, question?.insight_type, question?.value_tag]);
-
-  return nbOfPotentialQuestion;
+  return enabled ? (query.data ?? null) : null;
 };
 
 type AnswerType =
@@ -91,16 +73,24 @@ function QuestionAnswerButtons({
   const { t } = useTranslation();
 
   return (
-    <>
-      <Stack direction="row" justifyContent="center" spacing={2} sx={{ mb: 1 }}>
+    <Stack
+      spacing={1.25}
+      sx={{
+        zIndex: 10,
+        bgcolor: "background.paper",
+        pt: 1,
+        pb: "max(0px, env(safe-area-inset-bottom))",
+      }}
+    >
+      <Stack direction="row" spacing={1.25}>
         <Button
           onClick={() => onAnswerQuestion(WRONG_INSIGHT)}
           color="error"
           variant="contained"
           size="large"
-          sx={{ display: "flex", flexDirection: "column", flexGrow: 1 }}
+          startIcon={<DeleteIcon />}
+          sx={{ flexGrow: 1, minHeight: 52 }}
         >
-          <DeleteIcon />
           {t("questions.no")} ({shortcuts.no})
         </Button>
         <Button
@@ -109,7 +99,7 @@ function QuestionAnswerButtons({
           color="success"
           variant="contained"
           size="large"
-          sx={{ display: "flex", flexDirection: "column", flexGrow: 1 }}
+          sx={{ flexGrow: 1, minHeight: 52 }}
         >
           {t("questions.yes")} ({shortcuts.yes})
         </Button>
@@ -120,11 +110,11 @@ function QuestionAnswerButtons({
         variant="contained"
         size="medium"
         autoFocus
-        sx={{ py: "1rem" }}
+        sx={{ py: 1.25 }}
       >
         {t("questions.skip")} ({shortcuts.skip})
       </Button>
-    </>
+    </Stack>
   );
 }
 
@@ -247,11 +237,17 @@ export default function QuestionDisplay() {
 
   return (
     <Stack
-      sx={{ textAlign: "center", flexGrow: 1, flexBasis: 0, flexShrink: 1 }}
+      sx={{
+        textAlign: "center",
+        flexGrow: 1,
+        minHeight: { xs: 560, md: 0 },
+      }}
     >
       {/* Header */}
       <Stack sx={{ alignItems: "center" }}>
-        <Typography>{question?.question}</Typography>
+        <Typography variant="h6" sx={{ fontWeight: 600, lineHeight: 1.3 }}>
+          {question?.question}
+        </Typography>
         <Box sx={{ display: "flex", alignItems: "center" }}>
           {valueTagQuestionsURL ? (
             <Badge
@@ -261,7 +257,7 @@ export default function QuestionDisplay() {
             >
               <Button
                 sx={{ paddingX: 4 }}
-                component={Link}
+                component={Link as React.ElementType}
                 to={valueTagQuestionsURL}
                 endIcon={<LinkIcon />}
                 variant="outlined"
@@ -301,12 +297,16 @@ export default function QuestionDisplay() {
 
       {/* Image display */}
       <Box
-        flexGrow={1}
-        flexShrink={1}
         sx={{
-          height: `calc(100vh - ${isDesktop ? 461 : 445}px)`,
-          marginBottom: 1,
+          flexGrow: 1,
+          flexShrink: 1,
+          minHeight: { xs: 300, sm: 360, md: 280 },
+          height: isDesktop ? "calc(100vh - 440px)" : "min(52vh, 520px)",
+          my: 1.5,
           position: "relative",
+          overflow: "hidden",
+          borderRadius: 2,
+          bgcolor: "action.hover",
         }}
       >
         {question.source_image_url ? (

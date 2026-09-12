@@ -1,8 +1,17 @@
+import Box from "@mui/material/Box";
+
 const Donate = () => {
   return (
-    <div className="OFF-donate">
+    <Box
+      sx={{
+        display: "flex",
+        justifyContent: "center",
+        minHeight: 56,
+        alignItems: "center",
+      }}
+    >
       <donation-banner></donation-banner>
-    </div>
+    </Box>
   );
 };
 
