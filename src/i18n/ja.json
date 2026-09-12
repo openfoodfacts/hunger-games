@@ -2,6 +2,7 @@
   "home": {
     "game_selector": {
       "title": "どのゲームをプレイしますか？",
+      "external_link": "External link",
       "cards": {
         "questions": {
           "title": "質問",
@@ -28,6 +29,12 @@
       "contribution_details": "あなたの貢献がなぜ重要かについて学ぶ"
     },
     "saved_filters": "保存したフィルタ",
+    "saved_filters_delete": "Delete saved filter",
+    "saved_filters_delete_title": "Delete saved filter?",
+    "saved_filters_delete_description": "This saved filter will be removed from this device.",
+    "saved_filters_delete_confirm": "削除",
+    "saved_filters_pending": "{{count}} products waiting",
+    "saved_filters_pending_unknown": "Products waiting",
     "contribution_modal": {
       "title": "あなたの貢献は重要です",
       "information": "Hunger Games は、OCR の結果を活用する取り組みです。 Open Food Facts の Hunger Games を使用すると、データベース全体が改善され、コミュニティがより良い食品を選択できるようになります。私たちはあなたの注釈を収集し、Open Food Facts をより正確かつ効率的にするために使用します。",
@@ -35,6 +42,12 @@
     },
     "statistics": {
       "title": "{{userName}} 統計:",
+      "title_without_name": "Your statistics",
+      "empty_state": {
+        "title": "No contributions yet",
+        "description": "Your contribution statistics will appear here once you start helping improve Open Food Facts.",
+        "action": "Start contributing"
+      },
       "editorCount": {
         "title": "編集者",
         "description": "行った編集の数"
@@ -207,6 +220,17 @@
     "view_crops_for_this_product": "製品ロゴに注釈を付ける"
   },
   "logos": {
+    "dashboard": {
+      "title": "Logo dashboard",
+      "description": "Explore logo categories and help improve product data.",
+      "category": "カテゴリー",
+      "categories": "カテゴリー",
+      "logo_count_one": "{{count}} logo",
+      "logo_count_other": "{{count}} logos",
+      "more_info": "More info",
+      "questions": "質問",
+      "search": "検索"
+    },
     "annotation": "注釈: ",
     "annotations": "ロゴの注釈",
     "task_description": "すべての完全に同一なロゴを選択したうえで、「en:EU Organic」のような名前を付け、「ラベル」のような種類を選択してください。",
@@ -251,6 +275,8 @@
       "title": "ロゴ検索",
       "description": "あなたが探したいロゴを選択し、それらをすべてキャッチしましょう。 注釈を付けたすべてのロゴについて、注釈を停止しないように隣人を取得します（ロゴの範囲を選択するにはShiftキーを押してください）",
       "ref_logos": "参照ロゴ (すでにこの値に注釈が付けられているロゴ)",
+      "annotation_count_one": "Already {{formattedCount}} annotation. You can come back to this logo in a few days if you don't find any matching logos.",
+      "annotation_count_other": "Already {{formattedCount}} annotations. You can come back to this logo in a few days if you don't find any matching logos.",
       "remaining": "注釈を残しています",
       "select_all": "すべて選択",
       "unselect_all": "すべての選択を解除"

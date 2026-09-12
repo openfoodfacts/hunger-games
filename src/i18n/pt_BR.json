@@ -2,6 +2,7 @@
   "home": {
     "game_selector": {
       "title": "Que jogo você gostaria de jogar?",
+      "external_link": "External link",
       "cards": {
         "questions": {
           "title": "Perguntas",
@@ -28,6 +29,12 @@
       "contribution_details": "Entenda porque a sua contribuição é importante"
     },
     "saved_filters": "Filtros salvos",
+    "saved_filters_delete": "Delete saved filter",
+    "saved_filters_delete_title": "Delete saved filter?",
+    "saved_filters_delete_description": "This saved filter will be removed from this device.",
+    "saved_filters_delete_confirm": "Eliminar",
+    "saved_filters_pending": "{{count}} products waiting",
+    "saved_filters_pending_unknown": "Products waiting",
     "contribution_modal": {
       "title": "Sua contribuição é importante",
       "information": "Jogos Vorazes é uma iniciativa para aprimorar os resultados da nossa OCR e inteligência artificial. Ao usar o Jogos Vorazes do Open Food Facts, você melhora todo o nosso banco de dados, o que ajuda a comunidade a fazer melhores escolhas alimentares. Nós reunimos suas anotações e as utilizamos para tornar o Open Food Facts mais preciso e eficaz.",
@@ -35,6 +42,12 @@
     },
     "statistics": {
       "title": "{{userName}} estatísticas:",
+      "title_without_name": "Your statistics",
+      "empty_state": {
+        "title": "No contributions yet",
+        "description": "Your contribution statistics will appear here once you start helping improve Open Food Facts.",
+        "action": "Start contributing"
+      },
       "editorCount": {
         "title": "Editor",
         "description": "Número de edições feitas"
@@ -207,6 +220,17 @@
     "view_crops_for_this_product": "Anotar logotipos de produtos"
   },
   "logos": {
+    "dashboard": {
+      "title": "Logo dashboard",
+      "description": "Explore logo categories and help improve product data.",
+      "category": "Categoria",
+      "categories": "Categorias",
+      "logo_count_one": "{{count}} logo",
+      "logo_count_other": "{{count}} logos",
+      "more_info": "More info",
+      "questions": "Perguntas",
+      "search": "Procurar"
+    },
     "annotation": "Anotação: ",
     "annotations": "Anotações de logotipos",
     "task_description": "Selecione todos os logotipos que são exatamente iguais e dê a eles um nome como, por exemplo, \"en:EU Organic\" e um tipo como \"rótulo\".",
@@ -251,6 +275,8 @@
       "title": "Pesquisa de logotipo",
       "description": "Selecione um logotipo que você queira procurar, e vamos pegar todos eles. Para cada logotipo que você anotar, iremos buscar seus vizinhos, de forma que você talvez nunca pare de anotar. (Pressione Shift para selecionar um intervalo de logotipos)",
       "ref_logos": "Logotipos de referência (logotipos já anotados com este valor)",
+      "annotation_count_one": "Already {{formattedCount}} annotation. You can come back to this logo in a few days if you don't find any matching logos.",
+      "annotation_count_other": "Already {{formattedCount}} annotations. You can come back to this logo in a few days if you don't find any matching logos.",
       "remaining": "Restantes para anotar",
       "select_all": "Selecionar tudo",
       "unselect_all": "Limpar seleção"

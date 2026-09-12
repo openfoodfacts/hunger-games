@@ -2,6 +2,7 @@
   "home": {
     "game_selector": {
       "title": "어떤 게임을 하시겠습니까?",
+      "external_link": "External link",
       "cards": {
         "questions": {
           "title": "질문",
@@ -28,6 +29,12 @@
       "contribution_details": "기여가 중요한 이유 알아보기"
     },
     "saved_filters": "저장된 필터",
+    "saved_filters_delete": "Delete saved filter",
+    "saved_filters_delete_title": "Delete saved filter?",
+    "saved_filters_delete_description": "This saved filter will be removed from this device.",
+    "saved_filters_delete_confirm": "삭제",
+    "saved_filters_pending": "{{count}} products waiting",
+    "saved_filters_pending_unknown": "Products waiting",
     "contribution_modal": {
       "title": "귀하의 기여가 중요합니다",
       "information": "Hunger Games is an effort to leverage the results of our OCR and artificial intelligence. When you use Hunger Games by Open Food Facts, you improve our entire database which helps the community make better food choices. We gather your annotations and use them to make Open Food Facts more accurate and efficient.",
@@ -35,6 +42,12 @@
     },
     "statistics": {
       "title": "{{userName}} 통계:",
+      "title_without_name": "Your statistics",
+      "empty_state": {
+        "title": "No contributions yet",
+        "description": "Your contribution statistics will appear here once you start helping improve Open Food Facts.",
+        "action": "Start contributing"
+      },
       "editorCount": {
         "title": "편집자",
         "description": "Number of editions done"
@@ -207,6 +220,17 @@
     "view_crops_for_this_product": "Annotate product logos"
   },
   "logos": {
+    "dashboard": {
+      "title": "Logo dashboard",
+      "description": "Explore logo categories and help improve product data.",
+      "category": "카테고리",
+      "categories": "카테고리",
+      "logo_count_one": "{{count}} logo",
+      "logo_count_other": "{{count}} logos",
+      "more_info": "More info",
+      "questions": "질문",
+      "search": "검색"
+    },
     "annotation": "주석: ",
     "annotations": "로고 주석",
     "task_description": "정확히 동일한 모든 로고를 선택하고 \"en:EU Organic\"과 같은 이름과 라벨과 같은 유형을 지정합니다.",
@@ -251,6 +275,8 @@
       "title": "Logo search",
       "description": "Select a logo you want to look for, and let's go to catch them all. For every logo you annotate, we will fetch it's neighbors such that you might never stop to annotate. (Press Shift to select range of logos)",
       "ref_logos": "Reference logos (logo already annotated with this value)",
+      "annotation_count_one": "Already {{formattedCount}} annotation. You can come back to this logo in a few days if you don't find any matching logos.",
+      "annotation_count_other": "Already {{formattedCount}} annotations. You can come back to this logo in a few days if you don't find any matching logos.",
       "remaining": "Remaining to annotate",
       "select_all": "모두 선택",
       "unselect_all": "모두 삭제"

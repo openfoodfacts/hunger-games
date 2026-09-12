@@ -2,6 +2,7 @@
   "home": {
     "game_selector": {
       "title": "Hvilket spil vil du gerne spille?",
+      "external_link": "External link",
       "cards": {
         "questions": {
           "title": "Spørgsmål",
@@ -28,6 +29,12 @@
       "contribution_details": "Læs, hvorfor individuelle bidrag er vigtige"
     },
     "saved_filters": "Gemte filtre",
+    "saved_filters_delete": "Delete saved filter",
+    "saved_filters_delete_title": "Delete saved filter?",
+    "saved_filters_delete_description": "This saved filter will be removed from this device.",
+    "saved_filters_delete_confirm": "Slet",
+    "saved_filters_pending": "{{count}} products waiting",
+    "saved_filters_pending_unknown": "Products waiting",
     "contribution_modal": {
       "title": "Individuelle bidrag gør en forskel",
       "information": "Hunger Games er et forsøg på at drage bedst mulig fordel af resultaterne fra OCR og kunstig intelligens. Når Hunger Games fra Open Food Facts bruges, forbedres hele databasen, hvilket hjælper fællesskabet med at træffe bedre fødevarevalg. Individuelle anmærkninger indsamles mhp. at gøre Open Food Facts mere præcis og effektiv.",
@@ -35,6 +42,12 @@
     },
     "statistics": {
       "title": "{{userName}}-statistik:",
+      "title_without_name": "Your statistics",
+      "empty_state": {
+        "title": "No contributions yet",
+        "description": "Your contribution statistics will appear here once you start helping improve Open Food Facts.",
+        "action": "Start contributing"
+      },
       "editorCount": {
         "title": "Redaktør",
         "description": "Antal udførte redigeringer"
@@ -207,6 +220,17 @@
     "view_crops_for_this_product": "Annotér produktlogoer"
   },
   "logos": {
+    "dashboard": {
+      "title": "Logo dashboard",
+      "description": "Explore logo categories and help improve product data.",
+      "category": "Kategori",
+      "categories": "Kategorier",
+      "logo_count_one": "{{count}} logo",
+      "logo_count_other": "{{count}} logos",
+      "more_info": "More info",
+      "questions": "Spørgsmål",
+      "search": "Søg"
+    },
     "annotation": "Anmærkning: ",
     "annotations": "Logoanmærkninger",
     "task_description": "Vælg alle logoer, som er nøjagtigt ens, og giv dem et navn og type, såsom \"da:EU Organisk\" og \"etiket\".",
@@ -251,6 +275,8 @@
       "title": "Logosøgning",
       "description": "Vælg et logo, du leder efter, og kom i gang med at fange dem alle. For hvert logo, du annoterer, henter vi dets naboer, så du aldrig stopper med at annotere. (Tryk på Shift for at vælge en række logoer)",
       "ref_logos": "Referencelogoer (logoer, der allerede er annoteret med denne værdi)",
+      "annotation_count_one": "Already {{formattedCount}} annotation. You can come back to this logo in a few days if you don't find any matching logos.",
+      "annotation_count_other": "Already {{formattedCount}} annotations. You can come back to this logo in a few days if you don't find any matching logos.",
       "remaining": "Tilbage at annotere",
       "select_all": "Vælg Alle",
       "unselect_all": "Fravælg Alle"

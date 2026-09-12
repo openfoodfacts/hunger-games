@@ -2,6 +2,7 @@
   "home": {
     "game_selector": {
       "title": "Welk spel zou je willen spelen?",
+      "external_link": "External link",
       "cards": {
         "questions": {
           "title": "Vragen",
@@ -28,6 +29,12 @@
       "contribution_details": "Ontdek waarom uw bijdrage ertoe doet"
     },
     "saved_filters": "Opgeslagen filters",
+    "saved_filters_delete": "Delete saved filter",
+    "saved_filters_delete_title": "Delete saved filter?",
+    "saved_filters_delete_description": "This saved filter will be removed from this device.",
+    "saved_filters_delete_confirm": "Verwijder",
+    "saved_filters_pending": "{{count}} products waiting",
+    "saved_filters_pending_unknown": "Products waiting",
     "contribution_modal": {
       "title": "Jouw bijdrage doet ertoe",
       "information": "Hunger Games is een poging om de resultaten van onze OCR en artificiële intelligentie te benutten. Wanneer u Hunger Games van Open Food Facts gebruikt, verbetert u onze hele database, waardoor de gemeenschap betere voedselkeuzes kan maken. We verzamelen uw annotaties en gebruiken ze om Open Food Facts nauwkeuriger en efficiënter te maken.",
@@ -35,6 +42,12 @@
     },
     "statistics": {
       "title": "{{userName}} statistieken:",
+      "title_without_name": "Your statistics",
+      "empty_state": {
+        "title": "No contributions yet",
+        "description": "Your contribution statistics will appear here once you start helping improve Open Food Facts.",
+        "action": "Start contributing"
+      },
       "editorCount": {
         "title": "Editor",
         "description": "Aantal bewerkingen gedaan"
@@ -207,6 +220,17 @@
     "view_crops_for_this_product": "Annoteer productlogo's"
   },
   "logos": {
+    "dashboard": {
+      "title": "Logo dashboard",
+      "description": "Explore logo categories and help improve product data.",
+      "category": "Categorie",
+      "categories": "Categorieën",
+      "logo_count_one": "{{count}} logo",
+      "logo_count_other": "{{count}} logos",
+      "more_info": "More info",
+      "questions": "Vragen",
+      "search": "Zoeken"
+    },
     "annotation": "Aantekening: ",
     "annotations": "Logo aantekeningen",
     "task_description": "Selecteer alle logo's die exact hetzelfde zijn, en geef ze een naam zoals \"en:EU Organic\" en een type zoals \"label\".",
@@ -251,6 +275,8 @@
       "title": "Logo zoeken",
       "description": "Selecteer een logo waarnaar u wilt op zoek wil gaan en laten we ze allemaal zoeken. Voor elk logo dat u annoteert, halen we naburige op, zodat u nooit hoeft te stoppen met annoteren. (Druk op Shift om een reeks logo's te selecteren)",
       "ref_logos": "Referentielogo's (logo al geannoteerd met deze waarde)",
+      "annotation_count_one": "Already {{formattedCount}} annotation. You can come back to this logo in a few days if you don't find any matching logos.",
+      "annotation_count_other": "Already {{formattedCount}} annotations. You can come back to this logo in a few days if you don't find any matching logos.",
       "remaining": "Nog te annoteren",
       "select_all": "Alles selecteren",
       "unselect_all": "Alles deselecteren"

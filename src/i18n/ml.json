@@ -2,6 +2,7 @@
   "home": {
     "game_selector": {
       "title": "നിങ്ങൾ ഏത് ഗെയിം കളിക്കാൻ താല്പര്യപ്പെടുന്നു?",
+      "external_link": "External link",
       "cards": {
         "questions": {
           "title": "ചോദ്യങ്ങൾ",
@@ -28,6 +29,12 @@
       "contribution_details": "പടിക്കു എന്തുകൊണ്ട് നിങ്ങളുടെ സംഭാവനകൾ പ്രധാനമാണ്"
     },
     "saved_filters": "സേവ് ചെയ്യപ്പെട്ട ഫിൽട്ടറുകൾ",
+    "saved_filters_delete": "Delete saved filter",
+    "saved_filters_delete_title": "Delete saved filter?",
+    "saved_filters_delete_description": "This saved filter will be removed from this device.",
+    "saved_filters_delete_confirm": "Delete",
+    "saved_filters_pending": "{{count}} products waiting",
+    "saved_filters_pending_unknown": "Products waiting",
     "contribution_modal": {
       "title": "നിങ്ങളുടെ സംഭാവനകൾ പ്രധാനമാണ്",
       "information": "ഹംഗർ ഗെയിംസ് എന്നത് OCR- ൻ്റെയും കൃത്രിമബുദ്ധിയുടെയും ഫലത്തെ പൂർണമായി ഉപയോഗപ്പെടുത്താനുള്ള ശ്രമമാണ്. ഓപ്പൺ ഫുഡ് ഫാക്റ്റ്സിൻ്റെ ഹങ്കർ ഗെയിംസ് താങ്കൾ ഉപയോഗിക്കുമ്പോൾ, താങ്കൾ ഞങ്ങളുടെ മുഴവൻ ഡാറ്റാബേസും മെച്ചപ്പെടുത്തുന്നു അതുവഴി സമുദായത്തെ മെച്ചപ്പെട്ട ആഹാര തീരുമാനങ്ങൾ എടുക്കാൻ സഹായിക്കുന്നു. ഞങ്ങൾ നിങ്ങളുടെ Annotations ശേഖരിച്ച് ഓപൺ ഫുഡ് ഫാക്റ്റ്സിനെ കൂടുതൽ കൃത്യവും കാര്യക്ഷമവും ആകാൻ ഉപയോഗിക്കും.",
@@ -35,6 +42,12 @@
     },
     "statistics": {
       "title": "{{userName}} statistics:",
+      "title_without_name": "Your statistics",
+      "empty_state": {
+        "title": "No contributions yet",
+        "description": "Your contribution statistics will appear here once you start helping improve Open Food Facts.",
+        "action": "Start contributing"
+      },
       "editorCount": {
         "title": "Editor",
         "description": "Number of editions done"
@@ -207,6 +220,17 @@
     "view_crops_for_this_product": "Annotate product logos"
   },
   "logos": {
+    "dashboard": {
+      "title": "Logo dashboard",
+      "description": "Explore logo categories and help improve product data.",
+      "category": "Category",
+      "categories": "വിഭാഗങ്ങൾ",
+      "logo_count_one": "{{count}} logo",
+      "logo_count_other": "{{count}} logos",
+      "more_info": "More info",
+      "questions": "ചോദ്യങ്ങൾ",
+      "search": "Search"
+    },
     "annotation": "Annotation: ",
     "annotations": "Logo annotations",
     "task_description": "Select all logos that are exactly the same, and give them a name like \"en:EU Organic\" and a type like \"label\".",
@@ -251,6 +275,8 @@
       "title": "Logo search",
       "description": "Select a logo you want to look for, and let's go to catch them all. For every logo you annotate, we will fetch it's neighbors such that you might never stop to annotate. (Press Shift to select range of logos)",
       "ref_logos": "Reference logos (logo already annotated with this value)",
+      "annotation_count_one": "Already {{formattedCount}} annotation. You can come back to this logo in a few days if you don't find any matching logos.",
+      "annotation_count_other": "Already {{formattedCount}} annotations. You can come back to this logo in a few days if you don't find any matching logos.",
       "remaining": "Remaining to annotate",
       "select_all": "Select All",
       "unselect_all": "Deselect All"

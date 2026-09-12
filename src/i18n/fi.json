@@ -2,6 +2,7 @@
   "home": {
     "game_selector": {
       "title": "Mitä peliä haluaisit pelata?",
+      "external_link": "External link",
       "cards": {
         "questions": {
           "title": "Kysymykset",
@@ -28,6 +29,12 @@
       "contribution_details": "Opi miksi panoksellasi on merkitystä"
     },
     "saved_filters": "Tallennetut suodattimet",
+    "saved_filters_delete": "Delete saved filter",
+    "saved_filters_delete_title": "Delete saved filter?",
+    "saved_filters_delete_description": "This saved filter will be removed from this device.",
+    "saved_filters_delete_confirm": "Poista",
+    "saved_filters_pending": "{{count}} products waiting",
+    "saved_filters_pending_unknown": "Products waiting",
     "contribution_modal": {
       "title": "Panoksesi on tärkeä",
       "information": "Nälkäpeli on yritys hyödyntää OCR:n ja tekoälyn tuloksia. Kun käytät Open Food Factsin Nälkäpeliä, parannat koko tietokantaamme, mikä auttaa yhteisöä tekemään parempia ruokavalintoja. Keräämme annotaatiosi ja teemme niillä Open Food Factsista tarkemman ja tehokkaamman.",
@@ -35,6 +42,12 @@
     },
     "statistics": {
       "title": "Käyttäjän {{userName}} tilastot:",
+      "title_without_name": "Your statistics",
+      "empty_state": {
+        "title": "No contributions yet",
+        "description": "Your contribution statistics will appear here once you start helping improve Open Food Facts.",
+        "action": "Start contributing"
+      },
       "editorCount": {
         "title": "Muokkaaja",
         "description": "Muokkausten määrä"
@@ -207,6 +220,17 @@
     "view_crops_for_this_product": "Merkitse tuotelogot"
   },
   "logos": {
+    "dashboard": {
+      "title": "Logo dashboard",
+      "description": "Explore logo categories and help improve product data.",
+      "category": "Tuoteluokka",
+      "categories": "Tuoteluokat",
+      "logo_count_one": "{{count}} logo",
+      "logo_count_other": "{{count}} logos",
+      "more_info": "More info",
+      "questions": "Kysymykset",
+      "search": "Etsi"
+    },
     "annotation": "Merkintä: ",
     "annotations": "Logomerkinnät",
     "task_description": "Valitse kaikki täsmälleen samat logot, ja anna niille nimi, kuten \"fi:EU Luomu\" ja tyyppi, kuten \"merkki\".",
@@ -251,6 +275,8 @@
       "title": "Logojen etsintä",
       "description": "Valitse logo, jota haluat etsiä, ja napataan ne kaikki. Haemme jokaisen merkitsemäsi logon naapurit, jotta et ehkä koskaan lopeta merkitsemistä. (Valitse logovalikoima painamalla Shift-näppäintä)",
       "ref_logos": "Viitelogot (logoon on jo merkitty tämä arvo)",
+      "annotation_count_one": "Already {{formattedCount}} annotation. You can come back to this logo in a few days if you don't find any matching logos.",
+      "annotation_count_other": "Already {{formattedCount}} annotations. You can come back to this logo in a few days if you don't find any matching logos.",
       "remaining": "Jäljellä merkattavia",
       "select_all": "Valitse kaikki",
       "unselect_all": "Poista kaikki valinnat"

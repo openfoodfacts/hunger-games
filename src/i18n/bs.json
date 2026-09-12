@@ -2,6 +2,7 @@
   "home": {
     "game_selector": {
       "title": "Koju igru biste voljeli igrati?",
+      "external_link": "External link",
       "cards": {
         "questions": {
           "title": "Pitanja",
@@ -28,6 +29,12 @@
       "contribution_details": "Saznajte zašto je vaš doprinos bitan"
     },
     "saved_filters": "Sačuvani filteri",
+    "saved_filters_delete": "Delete saved filter",
+    "saved_filters_delete_title": "Delete saved filter?",
+    "saved_filters_delete_description": "This saved filter will be removed from this device.",
+    "saved_filters_delete_confirm": "Delete",
+    "saved_filters_pending": "{{count}} products waiting",
+    "saved_filters_pending_unknown": "Products waiting",
     "contribution_modal": {
       "title": "Vaš doprinos je važan",
       "information": "Igre gladi su pokušaj da se iskoriste rezultati našeg OCR-a i umjetne inteligencije. Kada koristite Hunger Games by Open Food Facts, poboljšavate cijelu našu bazu podataka koja pomaže zajednici da napravi bolji izbor hrane. Prikupljamo vaše napomene i koristimo ih kako bismo Open Food Facts učinili preciznijim i efikasnijim.",
@@ -35,6 +42,12 @@
     },
     "statistics": {
       "title": "{{userName}} statistika:",
+      "title_without_name": "Your statistics",
+      "empty_state": {
+        "title": "No contributions yet",
+        "description": "Your contribution statistics will appear here once you start helping improve Open Food Facts.",
+        "action": "Start contributing"
+      },
       "editorCount": {
         "title": "Uređivač",
         "description": "Broj urađenih izdanja"
@@ -207,6 +220,17 @@
     "view_crops_for_this_product": "Označite logotipe proizvoda"
   },
   "logos": {
+    "dashboard": {
+      "title": "Logo dashboard",
+      "description": "Explore logo categories and help improve product data.",
+      "category": "Kategorija",
+      "categories": "Kategorije",
+      "logo_count_one": "{{count}} logo",
+      "logo_count_other": "{{count}} logos",
+      "more_info": "More info",
+      "questions": "Pitanja",
+      "search": "Pretraži"
+    },
     "annotation": "Napomena: ",
     "annotations": "Napomene logotipa",
     "task_description": "Odaberite sve logoe koji su potpuno isti, i dajte im naziv poput \"bih:EU Organsko\" i tip poput \"oznaka\".",
@@ -251,6 +275,8 @@
       "title": "Pretraga logotipa",
       "description": "Odaberite logo koji želite tražiti i hajde da ih sve uhvatimo. Za svaki logo koji označite, mi ćemo preuzeti njegove susjedne logotipe tako da se nikada nećete zaustaviti da biste označili. (Pritisnite Shift da biste odabrali raspon logotipa)",
       "ref_logos": "Referentni logotipi (logotip je već označen ovom vrijednošću)",
+      "annotation_count_one": "Already {{formattedCount}} annotation. You can come back to this logo in a few days if you don't find any matching logos.",
+      "annotation_count_other": "Already {{formattedCount}} annotations. You can come back to this logo in a few days if you don't find any matching logos.",
       "remaining": "Preostalo je za označiti",
       "select_all": "Označi sve",
       "unselect_all": "Poništi izbor svega"

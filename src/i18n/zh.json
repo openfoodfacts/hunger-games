@@ -2,6 +2,7 @@
   "home": {
     "game_selector": {
       "title": "你想玩什么游戏？",
+      "external_link": "External link",
       "cards": {
         "questions": {
           "title": "问题",
@@ -28,6 +29,12 @@
       "contribution_details": "了解为什么您的贡献很重要"
     },
     "saved_filters": "已保存的筛选器",
+    "saved_filters_delete": "Delete saved filter",
+    "saved_filters_delete_title": "Delete saved filter?",
+    "saved_filters_delete_description": "This saved filter will be removed from this device.",
+    "saved_filters_delete_confirm": "删除",
+    "saved_filters_pending": "{{count}} products waiting",
+    "saved_filters_pending_unknown": "Products waiting",
     "contribution_modal": {
       "title": "你的贡献很重要",
       "information": "“饥饿游戏”致力于充分利用我们的光学字符识别（OCR）和人工智能的成果。当您使用 Open Food Facts 的“饥饿游戏”时，您将改进我们的整个数据库，从而帮助社区做出更好的食物选择。我们会收集您的注释，并利用它们来提高 Open Food Facts 的准确性和效率。",
@@ -35,6 +42,12 @@
     },
     "statistics": {
       "title": "{{userName}} 的統計資料：",
+      "title_without_name": "Your statistics",
+      "empty_state": {
+        "title": "No contributions yet",
+        "description": "Your contribution statistics will appear here once you start helping improve Open Food Facts.",
+        "action": "Start contributing"
+      },
       "editorCount": {
         "title": "编辑",
         "description": "完成的版本数量"
@@ -207,6 +220,17 @@
     "view_crops_for_this_product": "批注产品标志"
   },
   "logos": {
+    "dashboard": {
+      "title": "Logo dashboard",
+      "description": "Explore logo categories and help improve product data.",
+      "category": "类别",
+      "categories": "类别",
+      "logo_count_one": "{{count}} logo",
+      "logo_count_other": "{{count}} logos",
+      "more_info": "More info",
+      "questions": "问题",
+      "search": "搜索"
+    },
     "annotation": "注解： ",
     "annotations": "徽标标注",
     "task_description": "选择所有完全相同的标志，并给他们一个名称，比如\"欧盟有机\"，并给出一个类型，比如\"标签\"",
@@ -251,6 +275,8 @@
       "title": "查找徽标",
       "description": "选择一个你想要找的图标，然后将它们全部捕获。对于你注释的每个图标，我们会获取他相邻的图标这样你就不用停下注释了。（按shift键来选中一系列图标）",
       "ref_logos": "参考徽标（徽标已用该值注释）",
+      "annotation_count_one": "Already {{formattedCount}} annotation. You can come back to this logo in a few days if you don't find any matching logos.",
+      "annotation_count_other": "Already {{formattedCount}} annotations. You can come back to this logo in a few days if you don't find any matching logos.",
       "remaining": "尚待注释",
       "select_all": "全选",
       "unselect_all": "取消全选"

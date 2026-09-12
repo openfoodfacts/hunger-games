@@ -2,6 +2,7 @@
   "home": {
     "game_selector": {
       "title": "आप कौन सा खेल खेलना चाहेंगे?",
+      "external_link": "External link",
       "cards": {
         "questions": {
           "title": "सवाल",
@@ -28,6 +29,12 @@
       "contribution_details": "जानें कि आपका योगदान क्यों मायने रखता है"
     },
     "saved_filters": "सहेजें गए फिल्टर",
+    "saved_filters_delete": "Delete saved filter",
+    "saved_filters_delete_title": "Delete saved filter?",
+    "saved_filters_delete_description": "This saved filter will be removed from this device.",
+    "saved_filters_delete_confirm": "नष्ट करे",
+    "saved_filters_pending": "{{count}} products waiting",
+    "saved_filters_pending_unknown": "Products waiting",
     "contribution_modal": {
       "title": "आपका योगदान मायने रखता है",
       "information": "हंगर गेम्स हमारे ओसीआर और कृत्रिम बुद्धिमत्ता के परिणामों का लाभ उठाने का एक प्रयास है। जब आप ओपन फूड फैक्ट्स द्वारा हंगर गेम्स का उपयोग करते हैं, तो आप हमारे संपूर्ण डेटाबेस में सुधार करते हैं जो समुदाय को बेहतर भोजन विकल्प चुनने में मदद करता है। हम आपके एनोटेशन एकत्र करते हैं और ओपन फूड फैक्ट्स को अधिक सटीक और कुशल बनाने के लिए उनका उपयोग करते हैं।",
@@ -35,6 +42,12 @@
     },
     "statistics": {
       "title": "{{userName}} आँकड़े:",
+      "title_without_name": "Your statistics",
+      "empty_state": {
+        "title": "No contributions yet",
+        "description": "Your contribution statistics will appear here once you start helping improve Open Food Facts.",
+        "action": "Start contributing"
+      },
       "editorCount": {
         "title": "संपादक",
         "description": "किये गये संस्करणों की संख्या"
@@ -207,6 +220,17 @@
     "view_crops_for_this_product": "उत्पाद लोगो को एनोटेट करें"
   },
   "logos": {
+    "dashboard": {
+      "title": "Logo dashboard",
+      "description": "Explore logo categories and help improve product data.",
+      "category": "श्रेणी",
+      "categories": "श्रेणियाँ",
+      "logo_count_one": "{{count}} logo",
+      "logo_count_other": "{{count}} logos",
+      "more_info": "More info",
+      "questions": "सवाल",
+      "search": "ढूंढें"
+    },
     "annotation": "टिप्पणी: ",
     "annotations": "लोगो टिप्पणि",
     "task_description": "उन सभी लोगो का चयन करें जो बिल्कुल समान हैं, और उन्हें \"en:EU ऑर्गेनिक\" जैसा नाम और \"लेबल\" जैसा एक प्रकार दें।",
@@ -251,6 +275,8 @@
       "title": "लोगो खोजें",
       "description": "एक लोगो चुनें जिसे आप देखना चाहते हैं, और चलिए उन सभी को पकड़ने चलते हैं। आपके द्वारा एनोटेट किए गए प्रत्येक लोगो के लिए, हम उसके पड़ोसियों को इस तरह से लाएंगे कि आपको एनोटेट करना कभी बंद ही न करना पड़े। (लोगो की रेंज चुनने के लिए Shift दबाएँ)",
       "ref_logos": "संदर्भ लोगो (लोगो पहले से ही इस मान के साथ एनोटेट है)",
+      "annotation_count_one": "Already {{formattedCount}} annotation. You can come back to this logo in a few days if you don't find any matching logos.",
+      "annotation_count_other": "Already {{formattedCount}} annotations. You can come back to this logo in a few days if you don't find any matching logos.",
       "remaining": "टिप्पणी करना बाकी है",
       "select_all": "सभी चुनें",
       "unselect_all": "सभी को अचयनित करें"

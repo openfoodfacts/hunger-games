@@ -2,6 +2,7 @@
   "home": {
     "game_selector": {
       "title": "Каква игра би искал да играеш?",
+      "external_link": "External link",
       "cards": {
         "questions": {
           "title": "Въпроси",
@@ -28,6 +29,12 @@
       "contribution_details": "Научи защо твоят принос има значение"
     },
     "saved_filters": "Запазени филтри",
+    "saved_filters_delete": "Delete saved filter",
+    "saved_filters_delete_title": "Delete saved filter?",
+    "saved_filters_delete_description": "This saved filter will be removed from this device.",
+    "saved_filters_delete_confirm": "Изтрий",
+    "saved_filters_pending": "{{count}} products waiting",
+    "saved_filters_pending_unknown": "Products waiting",
     "contribution_modal": {
       "title": "Твоят принос има значение",
       "information": "Игрите на глада са опит да се използват резултатите от нашето OCR и изкуствен интелект. Когато използвате Игрите на глада от Open Food Facts, подобрявате цялата ни база данни, което помага на общността да прави по-добър избор на храна. Ние събираме вашите пояснения и ги използваме, за да направим Open Food Facts по-точни и ефективни.",
@@ -35,6 +42,12 @@
     },
     "statistics": {
       "title": "{{userName}} статистики:",
+      "title_without_name": "Your statistics",
+      "empty_state": {
+        "title": "No contributions yet",
+        "description": "Your contribution statistics will appear here once you start helping improve Open Food Facts.",
+        "action": "Start contributing"
+      },
       "editorCount": {
         "title": "Редактор",
         "description": "Брой извършени редакции"
@@ -207,6 +220,17 @@
     "view_crops_for_this_product": "Добавяне на пояснения към продуктовите емблеми"
   },
   "logos": {
+    "dashboard": {
+      "title": "Logo dashboard",
+      "description": "Explore logo categories and help improve product data.",
+      "category": "Категория",
+      "categories": "Категории",
+      "logo_count_one": "{{count}} logo",
+      "logo_count_other": "{{count}} logos",
+      "more_info": "More info",
+      "questions": "Въпроси",
+      "search": "Търсене"
+    },
     "annotation": "Бележка: ",
     "annotations": "Пояснение към лого",
     "task_description": "Изберете всички емблеми, които са абсолютно еднакви, и им дайте име като „en:EU Organic“ и тип като „етикет“.",
@@ -251,6 +275,8 @@
       "title": "Търсене на логота",
       "description": "Изберете емблема, която искате да търсите, и нека да ги хванем всички. За всяко лого, което коментирате, ние ще извлечем неговите съседи, така че може никога да не спрете да коментирате. (Натиснете Shift, за да изберете редица от емблеми)",
       "ref_logos": "Лога за справка (логото вече е анотирано с тази стойност)",
+      "annotation_count_one": "Already {{formattedCount}} annotation. You can come back to this logo in a few days if you don't find any matching logos.",
+      "annotation_count_other": "Already {{formattedCount}} annotations. You can come back to this logo in a few days if you don't find any matching logos.",
       "remaining": "Останали за поясняване",
       "select_all": "Избери всички",
       "unselect_all": "Откажи всички"
