@@ -84,7 +84,7 @@ const UNTYPED_LOGOS = {
   "en:eu-organic": {
     tag: "en:eu-organic",
     label: "Bio Européen",
-    logo: `https://images.${OFF_DOMAIN}/images/lang/fr/labels/bio-europeen.135x90.png`,
+    logo: `https://images.${OFF_DOMAIN}/images/lang/en/labels/eu-organic.135x90.svg`,
     type: "label",
   },
   "en:pdo": {
@@ -239,7 +239,7 @@ const UNTYPED_LOGOS = {
     tag: "en:max-havelaar-france",
     label: "Max Havelaar France",
     // does not exist
-    logo: `https://images.${OFF_DOMAIN}/images/lang/fr/labels/max-havelaar-france.90x90.svg`,
+    logo: `https://images.${OFF_DOMAIN}/images/lang/fr/labels/max-havelaar.64x90.png`,
     type: "label",
   },
   "fr:sud-de-france": {
@@ -433,7 +433,7 @@ const UNTYPED_LOGOS = {
   "en:organic": {
     tag: "en:organic",
     label: "Bio",
-    logo: `https://images.${OFF_DOMAIN}/images/lang/fr/labels/bio.96x90.png`,
+    logo: `https://images.${OFF_DOMAIN}/images/lang/fr/labels/bio.96x90.svg`,
     type: "label",
   },
   "en:eg-oko-verordnung": {
@@ -825,7 +825,7 @@ const UNTYPED_LOGOS = {
   "en:fsc": {
     tag: "en:fsc",
     label: "FSC",
-    logo: `https://images.${OFF_DOMAIN}/images/lang/en/labels/fsc.90x90.svg`,
+    logo: `https://images.${OFF_DOMAIN}/images/lang/en/packaging/fsc.90x90.svg`,
     type: "label",
   },
   "en:fsc-mix": {
@@ -1931,7 +1931,7 @@ const UNTYPED_LOGOS = {
   "en:keyhole": {
     tag: "en:keyhole",
     label: "Keyhole",
-    logo: `https://images.${OFF_DOMAIN}/images/lang/en/labels/keyhole.90x90.png`,
+    logo: `https://images.${OFF_DOMAIN}/images/lang/en/labels/keyhole.90x90.svg`,
     type: "label",
   },
   // Australia
@@ -1999,134 +1999,134 @@ const UNTYPED_LOGOS = {
   "en:2009-silver-medal-of-the-german-agricultural-society.90x90.png": {
     tag: "en:2009-silver-medal-of-the-german-agricultural-society",
     label: "2009 silver medal of the german agricultural society",
-    logo: `https://images.${OFF_DOMAIN}/images/lang/en/labels/2009-silver-medal-of-the-german-agricultural-society.90x90.png`,
+    logo: `https://images.${OFF_DOMAIN}/images/lang/de/labels/2009-silver-medal-of-the-german-agricultural-society.90x90.png`,
     type: "label",
   },
   "en:2010-gold-medal-of-the-german-agricultural-society.90x90.png": {
     tag: "en:2010-gold-medal-of-the-german-agricultural-society",
     label: "2010 gold medal of the german agricultural society",
-    logo: `https://images.${OFF_DOMAIN}/images/lang/en/labels/2010-gold-medal-of-the-german-agricultural-society.90x90.png`,
+    logo: `https://images.${OFF_DOMAIN}/images/lang/de/labels/2010-gold-medal-of-the-german-agricultural-society.90x90.png`,
     type: "label",
   },
   "en:2010-silver-medal-of-the-german-agricultural-society.90x90.png": {
     tag: "en:2010-silver-medal-of-the-german-agricultural-society",
     label: "2010 silver medal of the german agricultural society",
-    logo: `https://images.${OFF_DOMAIN}/images/lang/en/labels/2010-silver-medal-of-the-german-agricultural-society.90x90.png`,
+    logo: `https://images.${OFF_DOMAIN}/images/lang/de/labels/2010-silver-medal-of-the-german-agricultural-society.90x90.png`,
     type: "label",
   },
   "en:2015-gold-medal-of-the-german-agricultural-society.90x90.png": {
     tag: "en:2015-gold-medal-of-the-german-agricultural-society",
     label: "2015 gold medal of the german agricultural society",
-    logo: `https://images.${OFF_DOMAIN}/images/lang/en/labels/2015-gold-medal-of-the-german-agricultural-society.90x90.png`,
+    logo: `https://images.${OFF_DOMAIN}/images/lang/de/labels/2015-gold-medal-of-the-german-agricultural-society.90x90.png`,
     type: "label",
   },
   "en:2016-bronze-medal-of-the-german-agricultural-society.90x90.png": {
     tag: "en:2016-bronze-medal-of-the-german-agricultural-society",
     label: "2016 bronze medal of the german agricultural society",
-    logo: `https://images.${OFF_DOMAIN}/images/lang/en/labels/2016-bronze-medal-of-the-german-agricultural-society.90x90.png`,
+    logo: `https://images.${OFF_DOMAIN}/images/lang/de/labels/2016-bronze-medal-of-the-german-agricultural-society.90x90.png`,
     type: "label",
   },
   "en:2017-bronze-medal-of-the-german-agricultural-society.90x90.png": {
     tag: "en:2017-bronze-medal-of-the-german-agricultural-society",
     label: "2017 bronze medal of the german agricultural society",
-    logo: `https://images.${OFF_DOMAIN}/images/lang/en/labels/2017-bronze-medal-of-the-german-agricultural-society.90x90.png`,
+    logo: `https://images.${OFF_DOMAIN}/images/lang/de/labels/2017-bronze-medal-of-the-german-agricultural-society.90x90.png`,
     type: "label",
   },
 
   "en:2017-gold-medal-of-the-german-agricultural-society.90x90.png": {
     tag: "en:2017-gold-medal-of-the-german-agricultural-society",
     label: "2017 gold medal of the german agricultural society",
-    logo: `https://images.${OFF_DOMAIN}/images/lang/en/labels/2017-gold-medal-of-the-german-agricultural-society.90x90.png`,
+    logo: `https://images.${OFF_DOMAIN}/images/lang/de/labels/2017-gold-medal-of-the-german-agricultural-society.90x90.png`,
     type: "label",
   },
   "en:2017-silver-medal-of-the-german-agricultural-society.90x90.png": {
     tag: "en:2017-silver-medal-of-the-german-agricultural-society",
     label: "2017 silver medal of the german agricultural society",
-    logo: `https://images.${OFF_DOMAIN}/images/lang/en/labels/2017-silver-medal-of-the-german-agricultural-society.90x90.png`,
+    logo: `https://images.${OFF_DOMAIN}/images/lang/de/labels/2017-silver-medal-of-the-german-agricultural-society.90x90.png`,
     type: "label",
   },
   "en:2018-bronze-medal-of-the-german-agricultural-society.90x90.png": {
     tag: "en:2018-bronze-medal-of-the-german-agricultural-society",
     label: "2018 bronze medal of the german agricultural society",
-    logo: `https://images.${OFF_DOMAIN}/images/lang/en/labels/2018-bronze-medal-of-the-german-agricultural-society.90x90.png`,
+    logo: `https://images.${OFF_DOMAIN}/images/lang/de/labels/2018-bronze-medal-of-the-german-agricultural-society.90x90.png`,
     type: "label",
   },
   "en:2018-gold-medal-of-the-german-agricultural-society.90x90.png": {
     tag: "en:2018-gold-medal-of-the-german-agricultural-society",
     label: "2018 gold medal of the german agricultural society",
-    logo: `https://images.${OFF_DOMAIN}/images/lang/en/labels/2018-gold-medal-of-the-german-agricultural-society.90x90.png`,
+    logo: `https://images.${OFF_DOMAIN}/images/lang/de/labels/2018-gold-medal-of-the-german-agricultural-society.90x90.png`,
     type: "label",
   },
   "en:2018-silver-medal-of-the-german-agricultural-society.90x90.png": {
     tag: "en:2018-silver-medal-of-the-german-agricultural-society",
     label: "2018 silver medal of the german agricultural society",
-    logo: `https://images.${OFF_DOMAIN}/images/lang/en/labels/2018-silver-medal-of-the-german-agricultural-society.90x90.png`,
+    logo: `https://images.${OFF_DOMAIN}/images/lang/de/labels/2018-silver-medal-of-the-german-agricultural-society.90x90.png`,
     type: "label",
   },
   "en:2019-gold-medal-of-the-german-agricultural-society.90x90.png": {
     tag: "en:2019-gold-medal-of-the-german-agricultural-society",
     label: "2019 gold medal of the german agricultural society",
-    logo: `https://images.${OFF_DOMAIN}/images/lang/en/labels/2019-gold-medal-of-the-german-agricultural-society.90x90.png`,
+    logo: `https://images.${OFF_DOMAIN}/images/lang/de/labels/2019-gold-medal-of-the-german-agricultural-society.90x90.png`,
     type: "label",
   },
   "en:2019-silver-medal-of-the-german-agricultural-society.90x90.png": {
     tag: "en:2019-silver-medal-of-the-german-agricultural-society",
     label: "2019 silver medal of the german agricultural society",
-    logo: `https://images.${OFF_DOMAIN}/images/lang/en/labels/2019-silver-medal-of-the-german-agricultural-society.90x90.png`,
+    logo: `https://images.${OFF_DOMAIN}/images/lang/de/labels/2019-silver-medal-of-the-german-agricultural-society.90x90.png`,
     type: "label",
   },
   "en:2020-silver-medal-of-the-german-agricultural-society.90x90.png": {
     tag: "en:2020-silver-medal-of-the-german-agricultural-society",
     label: "2020 silver medal of the german agricultural society",
-    logo: `https://images.${OFF_DOMAIN}/images/lang/en/labels/2020-silver-medal-of-the-german-agricultural-society.90x90.png`,
+    logo: `https://images.${OFF_DOMAIN}/images/lang/de/labels/2020-silver-medal-of-the-german-agricultural-society.90x90.png`,
     type: "label",
   },
   "en:demeter": {
     tag: "en:demeter",
     label: "Demeter",
-    logo: `https://images.${OFF_DOMAIN}/images/lang/en/labels/demeter.90x90.svg`,
+    logo: `https://images.${OFF_DOMAIN}/images/lang/de/labels/demeter.90x90.svg`,
     type: "label",
   },
   "en:bioland": {
     tag: "en:bioland",
     label: "Bioland",
-    logo: `https://images.${OFF_DOMAIN}/images/lang/en/labels/bioland.90x90.svg`,
+    logo: `https://images.${OFF_DOMAIN}/images/lang/de/labels/bioland.90x90.svg`,
     type: "label",
   },
   "en:naturland": {
     tag: "en:naturland",
     label: "Naturland",
-    logo: `https://images.${OFF_DOMAIN}/images/lang/en/labels/naturland.90x90.svg`,
+    logo: `https://images.${OFF_DOMAIN}/images/lang/de/labels/naturland.78x90.svg`,
     type: "label",
   },
   "en:biokreis": {
     tag: "en:biokreis",
     label: "Biokreis",
-    logo: `https://images.${OFF_DOMAIN}/images/lang/en/labels/biokreis.90x90.svg`,
+    logo: `https://images.${OFF_DOMAIN}/images/lang/de/labels/biokreis.90x90.svg`,
     type: "label",
   },
   "en:biopark": {
     tag: "en:biopark",
     label: "Biopark",
-    logo: `https://images.${OFF_DOMAIN}/images/lang/en/labels/biopark.90x90.svg`,
+    logo: `https://images.${OFF_DOMAIN}/images/lang/de/labels/biopark.90x90.svg`,
     type: "label",
   },
   "en:ecoland": {
     tag: "en:ecoland",
     label: "Ecoland",
-    logo: `https://images.${OFF_DOMAIN}/images/lang/en/labels/ecoland.90x90.svg`,
+    logo: `https://images.${OFF_DOMAIN}/images/lang/de/labels/ecoland.90x90.svg`,
     type: "label",
   },
   "en:gaea": {
     tag: "en:gaea",
     label: "Gäa",
-    logo: `https://images.${OFF_DOMAIN}/images/lang/en/labels/gaea.90x90.svg`,
+    logo: `https://images.${OFF_DOMAIN}/images/lang/de/labels/gaea.90x90.svg`,
     type: "label",
   },
   "en:german-organic-seal": {
     tag: "en:german-organic-seal",
     label: "German Bio-Siegel",
-    logo: `https://images.${OFF_DOMAIN}/images/lang/en/labels/bio-siegel.90x90.svg`,
+    logo: `https://images.${OFF_DOMAIN}/images/lang/de/labels/bio-siegel.90x90.svg`,
     type: "label",
   },
   "en:initiative-tierwohl": {
@@ -2138,13 +2138,13 @@ const UNTYPED_LOGOS = {
   "en:regionalfenster": {
     tag: "en:regionalfenster",
     label: "Regionalfenster",
-    logo: `https://images.${OFF_DOMAIN}/images/lang/en/labels/regionalfenster.90x90.svg`,
+    logo: `https://images.${OFF_DOMAIN}/images/lang/de/labels/regionalfenster.90x90.svg`,
     type: "label",
   },
   "en:gqb": {
     tag: "en:gqb",
     label: "GQB (Geprüfte Qualität Bayern)",
-    logo: `https://images.${OFF_DOMAIN}/images/lang/en/labels/gqb.90x90.svg`,
+    logo: `https://images.${OFF_DOMAIN}/images/lang/de/labels/gqb.90x90.svg`,
     type: "label",
   },
 
@@ -2271,13 +2271,13 @@ const UNTYPED_LOGOS = {
   "en:european-vegetarian-union-vegan": {
     tag: "en:european-vegetarian-union-vegan",
     label: "european vegetarian union vegan",
-    logo: `https://images.${OFF_DOMAIN}/images/lang/en/labels/european-vegetarian-union-vegan.90x90.svg`,
+    logo: `https://images.${OFF_DOMAIN}/images/lang/en/labels/european-vegetarian-union-vegan.68x90.png`,
     type: "label",
   },
   "en:european-vegetarian-union-vegetarian": {
     tag: "en:european-vegetarian-union-vegetarian",
     label: "european vegetarian union vegetarian",
-    logo: `https://images.${OFF_DOMAIN}/images/lang/en/labels/european-vegetarian-union-vegetarian.90x90.svg`,
+    logo: `https://images.${OFF_DOMAIN}/images/lang/en/labels/european-vegetarian-union-vegetarian.77x90.png`,
     type: "label",
   },
   "en:european-vegetarian-union": {
@@ -2321,37 +2321,37 @@ const UNTYPED_LOGOS = {
   "en:haltungsform-1.79x90.png": {
     tag: "en:haltungsform-1",
     label: "haltungsform 1",
-    logo: `https://images.${OFF_DOMAIN}/images/lang/en/labels/haltungsform-1.79x90.png`,
+    logo: `https://images.${OFF_DOMAIN}/images/lang/de/labels/haltungsform-1.79x90.svg`,
     type: "label",
   },
   "en:haltungsform-2.79x90.png": {
     tag: "en:haltungsform-2",
     label: "haltungsform 2",
-    logo: `https://images.${OFF_DOMAIN}/images/lang/en/labels/haltungsform-2.79x90.png`,
+    logo: `https://images.${OFF_DOMAIN}/images/lang/de/labels/haltungsform-2.79x90.svg`,
     type: "label",
   },
   "en:haltungsform-3.79x90.png": {
     tag: "en:haltungsform-3",
     label: "haltungsform 3",
-    logo: `https://images.${OFF_DOMAIN}/images/lang/en/labels/haltungsform-3.79x90.png`,
+    logo: `https://images.${OFF_DOMAIN}/images/lang/de/labels/haltungsform-3.79x90.svg`,
     type: "label",
   },
   "en:haltungsform-4.79x90.png": {
     tag: "en:haltungsform-4",
     label: "haltungsform 4",
-    logo: `https://images.${OFF_DOMAIN}/images/lang/en/labels/haltungsform-4.79x90.png`,
+    logo: `https://images.${OFF_DOMAIN}/images/lang/de/labels/haltungsform-4.79x90.svg`,
     type: "label",
   },
   "en:für-mehr-tierschutz-1-star.206x90.png": {
     tag: "en:für-mehr-tierschutz-1-star",
     label: "für mehr tierschutz 1 star",
-    logo: `https://images.${OFF_DOMAIN}/images/lang/en/labels/für-mehr-tierschutz-1-star.206x90.png`,
+    logo: `https://images.${OFF_DOMAIN}/images/lang/de/labels/für-mehr-tierschutz-1-star.206x90.png`,
     type: "label",
   },
   "en:für-mehr-tierschutz-2-stars.206x90.png": {
     tag: "en:für-mehr-tierschutz-2-stars",
     label: "für mehr tierschutz 2 stars",
-    logo: `https://images.${OFF_DOMAIN}/images/lang/en/labels/für-mehr-tierschutz-2-stars.206x90.png`,
+    logo: `https://images.${OFF_DOMAIN}/images/lang/de/labels/für-mehr-tierschutz-2-stars.206x90.png`,
     type: "label",
   },
   // Beers and Wines
@@ -2395,19 +2395,19 @@ const UNTYPED_LOGOS = {
   "en:medaille-d-argent-du-concours-general-agricole": {
     tag: "en:medaille-d-argent-du-concours-general-agricole",
     label: "medaille d argent du concours general agricole",
-    logo: `https://images.${OFF_DOMAIN}/images/lang/en/labels/medaille-d-argent-du-concours-general-agricole.90x90.png`,
+    logo: `https://images.${OFF_DOMAIN}/images/lang/fr/labels/medaille-d-argent-du-concours-general-agricole.90x90.png`,
     type: "label",
   },
   "en:medaille-d-or-du-concours-general-agricole": {
     tag: "en:medaille-d-or-du-concours-general-agricole",
     label: "medaille d or du concours general agricole",
-    logo: `https://images.${OFF_DOMAIN}/images/lang/en/labels/medaille-d-or-du-concours-general-agricole.90x90.png`,
+    logo: `https://images.${OFF_DOMAIN}/images/lang/fr/labels/medaille-d-or-du-concours-general-agricole.90x90.png`,
     type: "label",
   },
   "en:medaille-de-bronze-du-concours-general-agricole": {
     tag: "en:medaille-de-bronze-du-concours-general-agricole",
     label: "medaille de bronze du concours general agricole",
-    logo: `https://images.${OFF_DOMAIN}/images/lang/en/labels/medaille-de-bronze-du-concours-general-agricole.90x90.png`,
+    logo: `https://images.${OFF_DOMAIN}/images/lang/fr/labels/medaille-de-bronze-du-concours-general-agricole.90x90.png`,
     type: "label",
   },
   // Organic
@@ -2415,12 +2415,6 @@ const UNTYPED_LOGOS = {
     tag: "en:soil-association-organic",
     label: "soil association organic",
     logo: `https://images.${OFF_DOMAIN}/images/lang/en/labels/soil-association-organic.89x90.png`,
-    type: "label",
-  },
-  "en:austria-bio-garantie.90x90.png": {
-    tag: "en:austria-bio-garantie",
-    label: "austria bio garantie",
-    logo: `https://images.${OFF_DOMAIN}/images/lang/en/labels/austria-bio-garantie.90x90.png`,
     type: "label",
   },
   "en:bio-austria.67x90.svg": {
@@ -2447,40 +2441,40 @@ const UNTYPED_LOGOS = {
     logo: `https://images.${OFF_DOMAIN}/images/lang/en/labels/ccof-certified-organic.90x90.png`,
     type: "label",
   },
-  "en:biokreis.92x90.png": {
+  "en:biokreis": {
     tag: "en:biokreis",
     label: "biokreis",
-    logo: `https://images.${OFF_DOMAIN}/images/lang/en/labels/biokreis.92x90.png`,
+    logo: `https://images.${OFF_DOMAIN}/images/lang/de/labels/biokreis.90x90.svg`,
     type: "label",
   },
   "en:naturland-fair": {
     tag: "en:naturland-fair",
     label: "naturland fair",
-    logo: `https://images.${OFF_DOMAIN}/images/lang/en/labels/naturland-fair.90x90.png`,
+    logo: `https://images.${OFF_DOMAIN}/images/lang/de/labels/naturland-fair.40x90.svg`,
     type: "label",
   },
-  "en:bioland.90x90.svg": {
+  "en:bioland.90x90": {
     tag: "en:bioland",
     label: "bioland",
-    logo: `https://images.${OFF_DOMAIN}/images/lang/en/labels/bioland.90x90.svg`,
+    logo: `https://images.${OFF_DOMAIN}/images/lang/de/labels/bioland.90x90.svg`,
     type: "label",
   },
-  "en:biogarantie.90x90.svg": {
+  "en:biogarantie.90x90": {
     tag: "en:biogarantie",
-    label: "biogarantie",
-    logo: `https://images.${OFF_DOMAIN}/images/lang/en/labels/biogarantie.90x90.svg`,
+    label: "biogarantie Austria",
+    logo: `https://images.${OFF_DOMAIN}/images/lang/de/labels/bio-garantie-at.90x90.svg`,
     type: "label",
   },
-  "en:biogarantie-bel.90x90.svg": {
+  "en:biogarantie-bel.90x90": {
     tag: "en:biogarantie-bel",
     label: "biogarantie bel",
-    logo: `https://images.${OFF_DOMAIN}/images/lang/en/labels/biogarantie-bel.90x90.svg`,
+    logo: `https://images.${OFF_DOMAIN}/images/lang/fr/labels/biogarantie-bel.90x90.svg`,
     type: "label",
   },
-  "en:biogarantie.90x90.png": {
+  "en:biogarantie.90x90": {
     tag: "en:biogarantie",
     label: "biogarantie",
-    logo: `https://images.${OFF_DOMAIN}/images/lang/en/labels/biogarantie.90x90.png`,
+    logo: `https://images.${OFF_DOMAIN}/images/lang/fr/labels/biogarantie.90x90.svg`,
     type: "label",
   },
   "en:utz-certified": {
@@ -2603,26 +2597,26 @@ const UNTYPED_LOGOS = {
   "en:saveurs-en-or": {
     tag: "en:saveurs-en-or",
     label: "en:saveurs-en-or",
-    logo: "",
+    logo: "https://images.${OFF_DOMAIN}/images/lang/fr/labels/saveurs-en-or.85x90.png",
 
     type: "label",
   },
   "en:gold-medal-of-the-german-agricultural-society": {
     tag: "en:gold-medal-of-the-german-agricultural-society",
     label: "en:gold-medal-of-the-german-agricultural-society",
-    logo: `https://images.${OFF_DOMAIN}/images/lang/en/labels/2010-gold-medal-of-the-german-agricultural-society.90x90.png`,
+    logo: `https://images.${OFF_DOMAIN}/images/lang/de/labels/2010-gold-medal-of-the-german-agricultural-society.90x90.png`,
     type: "label",
   },
   "en:silver-medal-of-the-german-agricultural-society": {
     tag: "en:silver-medal-of-the-german-agricultural-society",
     label: "en:silver-medal-of-the-german-agricultural-society",
-    logo: `https://images.${OFF_DOMAIN}/images/lang/en/labels/2009-silver-medal-of-the-german-agricultural-society.90x90.png`,
+    logo: `https://images.${OFF_DOMAIN}/images/lang/de/labels/2009-silver-medal-of-the-german-agricultural-society.90x90.png`,
     type: "label",
   },
   "en:bronze-medal-of-the-german-agricultural-society": {
     tag: "en:bronze-medal-of-the-german-agricultural-society",
     label: "en:bronze-medal-of-the-german-agricultural-society",
-    logo: `https://images.${OFF_DOMAIN}/images/lang/en/labels/2016-bronze-medal-of-the-german-agricultural-society.90x90.png`,
+    logo: `https://images.${OFF_DOMAIN}/images/lang/de/labels/2016-bronze-medal-of-the-german-agricultural-society.90x90.png`,
 
     type: "label",
   },
@@ -2958,7 +2952,7 @@ export const DASHBOARD: DashBoardTheme[] = [
   // Halal dashboard
   {
     tag: "halal",
-    title: "Halal",
+    title: "حلال Halal",
     logos: [
       "en:halal-food-council-of-europe",
       "fr:societe-francaise-de-controle-de-viande-halal",
@@ -2972,7 +2966,7 @@ export const DASHBOARD: DashBoardTheme[] = [
   // Kosher dashboard
   {
     tag: "kosher",
-    title: "Kosher",
+    title: "🕎 Kosher",
     logos: [
       //   "en:cor-kosher",
       // "en:kosher-check",
@@ -3074,17 +3068,16 @@ export const DASHBOARD: DashBoardTheme[] = [
     title: "Organic",
     logos: [
       "en:soil-association-organic",
-      "en:austria-bio-garantie.90x90.png",
-      "en:bio-austria.67x90.svg",
-      "en:bio-suisse.111x90.svg",
-      "en:biologique-canada-organic.90x90.png",
-      "en:ccof-certified-organic.90x90.png",
-      "en:biokreis.92x90.png",
+      "en:austria-bio-garantie.90x90",
+      "en:bio-austria.67x90",
+      "en:bio-suisse.111x90",
+      "en:biologique-canada-organic.90x90",
+      "en:ccof-certified-organic.90x90",
+      "en:biokreis",
       "en:naturland-fair",
       "en:bioland.90x90.svg",
-      "en:biogarantie.90x90.svg",
-      "en:biogarantie-bel.90x90.svg",
-      "en:biogarantie.90x90.png",
+      "en:biogarantie.90x90",
+      "en:biogarantie-bel.90x90",
       "en:naturland",
     ],
   },
@@ -3205,7 +3198,7 @@ export const DASHBOARD: DashBoardTheme[] = [
   // No gluten
   {
     tag: "no-gluten",
-    title: "No Gluten",
+    title: "🚫+🌾 No Gluten",
     logos: [
       "es:sin-tacc",
       "es:sin-gluten",
@@ -3218,7 +3211,7 @@ export const DASHBOARD: DashBoardTheme[] = [
   // Food Awards
   {
     tag: "food-awards",
-    title: "Food Awards",
+    title: "🏆 Food Awards",
     logos: [
       "en:concours-general-agricole",
       "en:medaille-d-argent-du-concours-general-agricole",

@@ -12,7 +12,7 @@
           "description": "Najděte všechna loga odpovídající danému logu"
         },
         "green_score": {
-          "title": "Eco-score",
+          "title": "Green-score",
           "description": "Označte otázky s nejvyšší hodnotou"
         }
       }
@@ -49,6 +49,10 @@
     "title": "Obrázky označené uživateli",
     "loading": "Načítání"
   },
+  "image_viewer": {
+    "compressed": "Komprimováno",
+    "load_original": "Načíst původní"
+  },
   "questions": {
     "category": "kategorie",
     "categories": "Kategorie",
@@ -79,6 +83,10 @@
     "last_annotations": "Poslední anotace",
     "remaining_annotations": "Zbývající otázky",
     "annotated_annotations": "Komentováno",
+    "similar_questions": "Podobné otázky",
+    "no_similar_questions": "Žádné podobné otázky",
+    "no_images": "Žádné obrázky k dispozici",
+    "no_additional_info": "Žádné další informace",
     "filters": {
       "active_filter_number": "+{{count}} filtrů",
       "active_filter_number_one": "+{{count}} filtr",
@@ -151,11 +159,13 @@
     "ingredient-spellcheck": "Kontrola pravopisu ingrediencí",
     "ingredient-detection": "Detekce složek",
     "settings": "Nastavení",
-    "green-score": "Eco-score",
+    "green-score": "Green-Score",
     "dashboard": "Panel logotypů",
     "tour": "Zobrazit prohlídku",
     "logged_in_user": "Přihlášen jako {{userName}}",
-    "log_in": "Kliknutím se přihlašte"
+    "log_in": "Kliknutím se přihlašte",
+    "moderation": "Umírněnost",
+    "ingredients": "Složení"
   },
   "insights": {
     "insights": "Postřehy",
@@ -292,11 +302,11 @@
         "text2": "Jak je znázorněno v příkladu, jakmile vyberete všechna podobná loga, stačí zadat jejich hodnotu a vybrat, kde se jedná o značku, štítek nebo něco jiného. Je to tak jednoduché!"
       },
       "page4": {
-        "title": "Hra s otázkami o ekologickém skóre Eco-Score",
+        "title": "Hra s otázkami o ekologickém skóre Green-Score",
         "text1": "Pomozte nám dokončit zbývající otázky ve štítcích s nejvyšší prioritou!",
-        "text2": "Tyto karty jsou spojeny s štítky používanými při výpočtu Eco-Score.",
-        "text3": "<strong>Co je to Eco-Score?</strong>",
-        "text4": "Eco-Score zachycuje celkovou ekologickou stopu, což spotřebitelům usnadňuje porovnávat produkty a rozhodovat se, co je pro životní prostředí lepší."
+        "text2": "Tyto karty jsou spojeny s štítky používanými při výpočtu Green-Score.",
+        "text3": "<strong>Co je to Green-Score?</strong>",
+        "text4": "Green-Score zachycuje celkovou ekologickou stopu, což spotřebitelům usnadňuje porovnávat produkty a rozhodovat se, co je pro životní prostředí lepší."
       },
       "page5": {
         "title": "Nastavení",
@@ -351,7 +361,6 @@
       "open_button": "Otevřít pokyny",
       "title": "Jak používat rozhraní",
       "chose_between_empty_and_partially_filled": "Můžete si vybrat mezi produkty, pro které OpenFoodFacts (OFF) nemá žádné údaje o živinách. Nebo produkt s částečně vyplněnou tabulkou živin.",
-      "picture_date_is_display": "Nad ním se zobrazí datum snímku. Umožní vám zkontrolovat, zda se jedná o poslední.",
       "indicate_not_provided_value": "Prázdné vstupy jsou ignorovány. Pokud nejsou vlákna v tabulce přítomna, můžete zadat \"-\" a určit tak, že hodnota není k dispozici.",
       "validate_one_column": "Vyberte velikost zobrazenou na obrázku. Pokud máte 100 g a velikost porce, zvolte prosím 100 g, protože se jedná o normalizovaný formát.",
       "skip_button": "Pokud si s obrázkem nevíte rady, nebo se vám to prostě nechce, stiskněte „přeskočit“. Ostatní uživatelé to zvládnou.",
@@ -378,7 +387,7 @@
     "correct": "Správně ({{label}})"
   },
   "green-score": {
-    "description": "Zde je souhrn otázek, které by mohly zlepšit výpočet Eco-score",
+    "description": "Zde je souhrn otázek, které by mohly zlepšit výpočet Green-score",
     "countryLabel": "Země"
   },
   "ingredients": {

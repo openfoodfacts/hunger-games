@@ -12,7 +12,7 @@
           "description": "Find alle logoer matchende det givne logo"
         },
         "green_score": {
-          "title": "Eco-score",
+          "title": "Green-Score",
           "description": "Anmærk spørgsmålene med den højeste værdi"
         }
       }
@@ -49,6 +49,10 @@
     "title": "Brugermarkerede fotos",
     "loading": "Indlæser"
   },
+  "image_viewer": {
+    "compressed": "Komprimeret",
+    "load_original": "Indlæs original"
+  },
   "questions": {
     "category": "kategori",
     "categories": "Kategorier",
@@ -79,6 +83,10 @@
     "last_annotations": "Seneste anmærkninger",
     "remaining_annotations": "Resterende spørgsmål",
     "annotated_annotations": "Anmærkede",
+    "similar_questions": "Lignende spørgsmål",
+    "no_similar_questions": "Ingen lignende spørgsmål",
+    "no_images": "Ingen billeder tilgængelige",
+    "no_additional_info": "Ingen yderligere oplysninger",
     "filters": {
       "active_filter_number": "+{{count}} filtre",
       "active_filter_number_one": "+{{count}} filter",
@@ -151,11 +159,13 @@
     "ingredient-spellcheck": "Stavekontrol af ingredienser",
     "ingredient-detection": "Ingrediensdetektion",
     "settings": "Indstillinger",
-    "green-score": "Øko-Score",
+    "green-score": "Green-Score",
     "dashboard": "Logokontrolpanel",
     "tour": "Rundvisning",
     "logged_in_user": "Logget ind som {{userName}}",
-    "log_in": "Klik for at logge ind"
+    "log_in": "Klik for at logge ind",
+    "moderation": "Moderering",
+    "ingredients": "Ingredienser"
   },
   "insights": {
     "insights": "Indblik",
@@ -292,11 +302,11 @@
         "text2": "Som vist i eksemplet, når alle lignende logoer er valgt, så skriv blot deres værdi og vælg, hvilke er mærker, etiketter eller andet. Så enkelt er det!"
       },
       "page4": {
-        "title": "Øko-Score Spørgsmålsspil",
+        "title": "Green-Score Spørgsmålsspil",
         "text1": "Hjælp os færdiggøre de resterende spørgsmål i de højest prioriterede etiketter!",
-        "text2": "Disse kort er knyttet til etiketter brugt i beregningen af Øko-Score.",
-        "text3": "<strong>Hvad er Øko-Score?</strong>",
-        "text4": "Øko-Score udtrykker det samlede miljøaftryk, og hjælper dermed forbrugerne med at sammenligne produkter og afgøre, hvad der er bedre for miljøet."
+        "text2": "Disse kort er knyttet til etiketter brugt i beregningen af Green-Score.",
+        "text3": "<strong>Hvad er Green-Score?</strong>",
+        "text4": "Green-Score udtrykker det samlede miljøaftryk, og hjælper dermed forbrugerne med at sammenligne produkter og afgøre, hvad der er bedre for miljøet."
       },
       "page5": {
         "title": "Indstillinger",
@@ -351,7 +361,6 @@
       "open_button": "Åbn instruktioner",
       "title": "Sådan bruger du grænsefladen",
       "chose_between_empty_and_partially_filled": "Du kan vælge mellem produkter, som OpenFoodFacts (OFF) ikke har næringsdata for, eller produkter med delvist udfyldt næringstabel.",
-      "picture_date_is_display": "Datoen for billedet vises oven på det, så du kan se, om det er nyligt.",
       "indicate_not_provided_value": "Tomme felter ignoreres. Hvis kostfibre ikke er angivet i tabellen, kan du skrive \"-\" for at angive, at værdien ikke er tilgængelig.",
       "validate_one_column": "Vælg den størrelse, der vises på billedet. Hvis du har en portionsstørrelse på 100 g, skal du vælge 100 g, da det er et normaliseret format.",
       "skip_button": "Hvis du ikke ved, hvordan man gør med et billede – eller bare ikke har lyst – så tryk på \"spring over\". En anden bruger kan gøre det.",
@@ -378,7 +387,7 @@
     "correct": "Korrekt ({{label}})"
   },
   "green-score": {
-    "description": "Her er en samling af spørgsmål, der kunne forbedre Eco-Score-beregning",
+    "description": "Her er en samling af spørgsmål, der kunne forbedre Green-Score-beregning",
     "countryLabel": "Land"
   },
   "ingredients": {

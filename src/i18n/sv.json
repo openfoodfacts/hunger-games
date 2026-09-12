@@ -12,8 +12,8 @@
           "description": "Hitta alla logotyper som matchar den givna logotypen"
         },
         "green_score": {
-          "title": "Eco-score",
-          "description": "Annotate the questions with the highest value"
+          "title": "Green-score",
+          "description": "Annotera frågorna med högst värde"
         }
       }
     },
@@ -49,6 +49,10 @@
     "title": "Bilder flaggade av användare",
     "loading": "Läser in"
   },
+  "image_viewer": {
+    "compressed": "Komprimerad",
+    "load_original": "Ladda original"
+  },
   "questions": {
     "category": "kategori",
     "categories": "Kategorier",
@@ -64,7 +68,7 @@
     "popularity_sort": "Sortera efter popularitet",
     "see_examples": "Se exempel på detta ",
     "no": "Nej",
-    "skip": "Hoppa over",
+    "skip": "Hoppa över",
     "yes": "Ja",
     "no_questions_remaining": "Inga frågor återstår",
     "an_error_occurred": "Ett fel uppstod. Vänligen ladda om, försök senare eller kontakta teamet.",
@@ -79,6 +83,10 @@
     "last_annotations": "Senaste anteckningar",
     "remaining_annotations": "Återstående frågor",
     "annotated_annotations": "Antecknad",
+    "similar_questions": "Liknande frågor",
+    "no_similar_questions": "Inga liknande frågor",
+    "no_images": "Inga bilder tillgängliga",
+    "no_additional_info": "Ingen ytterligare information",
     "filters": {
       "active_filter_number": "+{{count}} aktiva filter",
       "active_filter_number_one": "+{{count}} aktiva filter",
@@ -151,11 +159,13 @@
     "ingredient-spellcheck": "Stavningskontroll för ingredienser",
     "ingredient-detection": "Ingrediensdetektering",
     "settings": "Inställningar",
-    "green-score": "Green-Score",
+    "green-score": "Grön poäng",
     "dashboard": "Logotyppanel",
     "tour": "Visa rundtur",
     "logged_in_user": "Inloggad som {{userName}}",
-    "log_in": "Klicka för att logga in"
+    "log_in": "Klicka för att logga in",
+    "moderation": "Måtta",
+    "ingredients": "Ingredienser"
   },
   "insights": {
     "insights": "Insikter",
@@ -252,7 +262,7 @@
     "donate": "Donera",
     "join_the_community": {
       "discover_our": "Upptäck vår ",
-      "code_of_conduct": "uppförandekod ",
+      "code_of_conduct": "Uppförandekod ",
       "join_us_on": "Anslut till oss på ",
       "forum": "Forum",
       "subscribe_to_our": "Prenumerera på vårt ",
@@ -292,11 +302,11 @@
         "text2": "Som visas i exemplet, när du väl har valt alla liknande logotyper skriver du bara deras värde och väljer var det är ett varumärke, en etikett eller något annat. Så enkelt är det!"
       },
       "page4": {
-        "title": "Eco-Score-frågespel",
+        "title": "Green-Score-frågespel",
         "text1": "Hjälp oss avsluta de återstående frågorna i de högst prioriterade etiketterna!",
-        "text2": "Dessa kort är kopplade till etiketter som används vid beräkningen av Eco-Score.",
-        "text3": "<strong>Vad är Eco-Score?</strong>",
-        "text4": "Eco-Score fångar upp det totala miljöavtrycket, vilket gör det lättare för konsumenter att jämföra produkter och avgöra vilken som är bättre för miljön."
+        "text2": "Dessa kort är kopplade till etiketter som används vid beräkningen av Green-Score.",
+        "text3": "<strong>Vad är Green-Score?</strong>",
+        "text4": "Green-Score samlar det totala miljöavtrycket, vilket gör det lättare för konsumenter att jämföra produkter och avgöra vilken som är bättre för miljön."
       },
       "page5": {
         "title": "Inställningar",
@@ -338,9 +348,9 @@
     "nutrients": "Näringsämnen",
     "serving_size": "Portionsstorlek",
     "add_nutrient": "-- lägg till näringsämne --",
-    "validate_100g": "Validera (100 g)",
+    "validate_100g": "Validera (100g)",
     "validate_serving": "Validera (portion)",
-    "skip": "Hoppa over",
+    "skip": "Hoppa över",
     "invalid_image": "Ogiltig bild",
     "pictures": {
       "picture_date": "Foto uppladdat",
@@ -351,9 +361,8 @@
       "open_button": "Öppna instruktioner",
       "title": "Hur man använder gränssnittet",
       "chose_between_empty_and_partially_filled": "Du kan välja mellan produkter som OpenFoodFacts (OFF) inte har några uppgifter om näringsämnena. Eller produkt med delvis ifylld näringstabell.",
-      "picture_date_is_display": "Datumet för bilden visas ovanför. Det gör att du kan kontrollera om det är en ny bild.",
       "indicate_not_provided_value": "Tomma indata ignoreras. Om fibrer inte finns i tabellen, kan du ange att värdet inte är tillgängligt genom att ange \"-\".",
-      "validate_one_column": "Välj den storlek som visas på bilden. Om du har en portionsstorlek på 100 g, vänligen välj 100 g eftersom det är ett normaliserat format.",
+      "validate_one_column": "Välj den storlek som visas på bilden. Om du har en portionsstorlek på 100g, vänligen välj 100g eftersom det är ett normaliserat format.",
       "skip_button": "Om du inte vet hur du ska hantera en bild, eller om du helt enkelt inte vill göra det, tryck på \"hoppa över\". Andra användare kan hantera det.",
       "invalid_image_button": "Om bilderna inte är en näringstabell, tryck på \"Ogiltig bild\" för att ta bort den från listan över bilder för att verifiera",
       "close": "Stäng"
@@ -378,8 +387,8 @@
     "correct": "Korrekt ({{label}})"
   },
   "green-score": {
-    "description": "Here is a summary of questions that could improve Eco-Score computation",
-    "countryLabel": "Country"
+    "description": "Här är en sammanfattning av frågorna som kan förbättra beräkningen av Green-Score",
+    "countryLabel": "Land"
   },
   "ingredients": {
     "description": "Detta spel låter dig validera förvalet av bilder av ingredienslistor på olika språk för en produkt, och validera de extraherade ingredienserna.",

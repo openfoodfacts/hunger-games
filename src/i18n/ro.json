@@ -12,8 +12,8 @@
           "description": "Găsiți toate siglele care se potrivesc cu logo-ul dat"
         },
         "green_score": {
-          "title": "Eco-score",
-          "description": "Annotate the questions with the highest value"
+          "title": "Green-Scor",
+          "description": "Adnotează întrebările cu cea mai mare valoare"
         }
       }
     },
@@ -49,6 +49,10 @@
     "title": "Imagini semnalate de utilizatori",
     "loading": "Se încarcă"
   },
+  "image_viewer": {
+    "compressed": "Comprimat",
+    "load_original": "Încarcă original"
+  },
   "questions": {
     "category": "categorie",
     "categories": "Categorii",
@@ -79,6 +83,10 @@
     "last_annotations": "Ultimele adnotări",
     "remaining_annotations": "Întrebări rămase",
     "annotated_annotations": "Adnotat",
+    "similar_questions": "Întrebări similare",
+    "no_similar_questions": "Nicio întrebare similară",
+    "no_images": "Nicio imagine disponibilă",
+    "no_additional_info": "Nicio informație suplimentară",
     "filters": {
       "active_filter_number": "+{{count}} filtre",
       "active_filter_number_one": "+{{count}} filtru",
@@ -151,11 +159,13 @@
     "ingredient-spellcheck": "Verificare ortografică a ingredientelor",
     "ingredient-detection": "Detectarea ingredientelor",
     "settings": "Configurări",
-    "green-score": "Scor Ecologic",
+    "green-score": "Green-Score",
     "dashboard": "Tabloul de bord cu sigle",
     "tour": "Arată tur",
     "logged_in_user": "Înregistrat ca {{userName}}",
-    "log_in": "Faceți clic pentru a vă autentifica"
+    "log_in": "Faceți clic pentru a vă autentifica",
+    "moderation": "Moderare",
+    "ingredients": "Ingrediente"
   },
   "insights": {
     "insights": "Perspective",
@@ -292,11 +302,11 @@
         "text2": "După cum se arată în exemplu, odată ce ați selectat toate logo-urile similare, introduceți valoarea acestora și selectați unde este o marcă, o etichetă sau altceva. Este atat de simplu!"
       },
       "page4": {
-        "title": "Joc Întrebări Eco-Scor",
+        "title": "Joc Întrebări Green-Scor",
         "text1": "Ajutați-ne să terminăm întrebările rămase în etichetele cu cea mai mare prioritate!",
-        "text2": "Aceste carduri sunt legate de etichetele utilizate în calculul Eco-Score.",
-        "text3": "<strong>Ce este Eco-Score?</strong>",
-        "text4": "EcoScorul surprinde totalitatea amprentei de mediu, facilitând compararea produselor şi luarea deciziilor care sunt mai bune pentru mediu."
+        "text2": "Aceste carduri sunt legate de etichetele utilizate în calculul Green-Score.",
+        "text3": "<strong>Ce este Green-Score?</strong>",
+        "text4": "GreenScorul surprinde totalitatea amprentei de mediu, facilitând compararea produselor şi luarea deciziilor care sunt mai bune pentru mediu."
       },
       "page5": {
         "title": "Configurări",
@@ -351,7 +361,6 @@
       "open_button": "Deschideți instrucțiunile",
       "title": "Cum se utilizează interfața",
       "chose_between_empty_and_partially_filled": "Puteți alege dintre produsele pentru care OpenFoodFacts (OFF) nu are date despre nutrienți. Sau produs cu tabel de nutrienți parțial umplut.",
-      "picture_date_is_display": "Data fotografiei este afișată deasupra ei. Vă permite să verificați dacă este recentă.",
       "indicate_not_provided_value": "Intrările goale sunt ignorate. Dacă fibrele nu sunt prezente în tabel, puteți pune „-” pentru a specifica că valoarea nu este disponibilă.",
       "validate_one_column": "Alegeți dimensiunea așa cum este afișată în imagine. Dacă aveți 100g și o porție, vă rugăm să alegeți 100g deoarece este un format normalizat.",
       "skip_button": "Dacă nu știi cum să te descurci cu o imagine, sau pur și simplu nu vrei să o faci, apasă pe „săriți”. Alţi utilizatori vor putea descurca.",
@@ -378,8 +387,8 @@
     "correct": "Corect ({{label}})"
   },
   "green-score": {
-    "description": "Here is a summary of questions that could improve Eco-Score computation",
-    "countryLabel": "Country"
+    "description": "Iată un rezumat al întrebărilor care ar putea îmbunătăți calculul Green-Score",
+    "countryLabel": "Țară"
   },
   "ingredients": {
     "description": "Acest joc vă permite să validați preselecția imaginilor listelor de ingrediente în diferite limbi pentru un produs și să validați ingredientele extrase.",

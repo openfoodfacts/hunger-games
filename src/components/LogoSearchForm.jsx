@@ -9,20 +9,8 @@ import { useTranslation } from "react-i18next";
 
 import LabelFilter from "../components/QuestionFilter/LabelFilter";
 import { TYPE_WITHOUT_VALUE } from "../const";
+import { logoTypeOptions } from "./logoTypeOptions";
 import TaxonomyAutoSelect from "./TaxonomyAutoSelect";
-
-export const logoTypeOptions = [
-  { value: "", labelKey: "logos.type" },
-  { value: "label", labelKey: "logos.label" },
-  { value: "brand", labelKey: "logos.brand" },
-  { value: "packager_code", labelKey: "logos.packager_code" },
-  { value: "packaging", labelKey: "logos.packaging" },
-  { value: "qr_code", labelKey: "logos.qr_code" },
-  { value: "category", labelKey: "logos.category" },
-  { value: "nutrition_label", labelKey: "logos.nutrition_label" },
-  { value: "store", labelKey: "logos.store" },
-  { value: "no_logo", labelKey: "logos.no_logo" },
-];
 
 const getFormattedValues = ({ type, value, count, barcode }) => {
   let formattedValue = value.toLowerCase().trim();
@@ -38,24 +26,38 @@ const LogoSearchForm = (props) => {
   const { value, barcode, type, count, validate, ...other } = props;
   const { t } = useTranslation();
 
-  const [innerValue, setInnerValue] = React.useState(value);
-  const [innerType, setInnerType] = React.useState(type);
-  const [innerCount, setInnerCount] = React.useState(count);
-  const [innerBarcode, setInnerBarcode] = React.useState(barcode);
-
-  React.useLayoutEffect(() => {
-    setInnerValue(value);
-  }, [value]);
-
-  React.useLayoutEffect(() => {
-    setInnerType(type);
-  }, [type]);
-  React.useLayoutEffect(() => {
-    setInnerBarcode(barcode);
-  }, [barcode]);
-  React.useLayoutEffect(() => {
-    setInnerCount(count);
-  }, [count]);
+  const [draft, setDraft] = React.useState({
+    sourceValue: value,
+    sourceType: type,
+    sourceCount: count,
+    sourceBarcode: barcode,
+    value,
+    type,
+    count,
+    barcode,
+  });
+  const isCurrentDraft =
+    draft.sourceValue === value &&
+    draft.sourceType === type &&
+    draft.sourceCount === count &&
+    draft.sourceBarcode === barcode;
+  const currentDraft = isCurrentDraft ? draft : { value, type, count, barcode };
+  const updateDraft = (changes) => {
+    setDraft({
+      sourceValue: value,
+      sourceType: type,
+      sourceCount: count,
+      sourceBarcode: barcode,
+      ...currentDraft,
+      ...changes,
+    });
+  };
+  const {
+    value: innerValue,
+    type: innerType,
+    count: innerCount,
+    barcode: innerBarcode,
+  } = currentDraft;
 
   return (
     <Stack direction="column" spacing={{ xs: 1, sm: 2, md: 4 }} {...other}>
@@ -63,7 +65,7 @@ const LogoSearchForm = (props) => {
         <TextField
           fullWidth
           value={innerType}
-          onChange={(event) => setInnerType(event.target.value)}
+          onChange={(event) => updateDraft({ type: event.target.value })}
           select
           label={t("logos.type")}
           size="small"
@@ -79,7 +81,7 @@ const LogoSearchForm = (props) => {
             showKey
             fullWidth
             value={innerValue}
-            onChange={setInnerValue}
+            onChange={(newValue) => updateDraft({ value: newValue })}
             insightType={innerType}
             label={t("logos.value")}
             size="small"
@@ -88,7 +90,7 @@ const LogoSearchForm = (props) => {
           <TaxonomyAutoSelect
             taxonomy="brand"
             value={innerValue}
-            onChange={setInnerValue}
+            onChange={(newValue) => updateDraft({ value: newValue })}
             showKey
             fullWidth
             size="small"
@@ -98,7 +100,7 @@ const LogoSearchForm = (props) => {
           <TextField
             fullWidth
             value={innerValue}
-            onChange={(event) => setInnerValue(event.target.value)}
+            onChange={(event) => updateDraft({ value: event.target.value })}
             label={t("logos.value")}
             size="small"
           />
@@ -108,14 +110,14 @@ const LogoSearchForm = (props) => {
         <TextField
           fullWidth
           value={innerBarcode}
-          onChange={(event) => setInnerBarcode(event.target.value)}
+          onChange={(event) => updateDraft({ barcode: event.target.value })}
           label={t("logos.barcode")}
           size="small"
         />
         <TextField
           fullWidth
           value={innerCount}
-          onChange={(event) => setInnerCount(event.target.value)}
+          onChange={(event) => updateDraft({ count: event.target.value })}
           label="Max nb"
           type="number"
           size="small"

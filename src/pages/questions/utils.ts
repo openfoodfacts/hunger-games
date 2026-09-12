@@ -1,5 +1,6 @@
 import { NO_QUESTION_LEFT, OFF_DOMAIN, OFF_URL } from "../../const";
 import offService from "../../off";
+import type { Product } from "../../off";
 import robotoff, { QuestionInterface } from "../../robotoff";
 import { reformatValueTag } from "../../utils";
 import { FilterState } from "../../robotoff";
@@ -8,18 +9,21 @@ type AdditionalInfoType = {
   i18nKey: string;
   translatedKey?: string;
   getLink?: (name: string) => string;
+  editAnchor?: string;
 };
 
 export const ADDITIONAL_INFO_TRANSLATION: Record<string, AdditionalInfoType> = {
-  brands: { i18nKey: "brands" },
-  ingredientsText: { i18nKey: "ingredients" },
+  brands: { i18nKey: "brands", editAnchor: "brands" },
+  ingredientsText: { i18nKey: "ingredients", editAnchor: "ingredients" },
   countriesTags: {
     i18nKey: "countries",
     translatedKey: "translatedCountriesTags",
+    editAnchor: "countries",
   },
   categories: {
     i18nKey: "categories",
     translatedKey: "translatedCategories",
+    editAnchor: "categories",
     getLink: (name: string) =>
       `https://world.openfoodfacts.org/facets/categories/${name
         .toLowerCase()
@@ -28,12 +32,13 @@ export const ADDITIONAL_INFO_TRANSLATION: Record<string, AdditionalInfoType> = {
   labels_tags: {
     i18nKey: "labels",
     translatedKey: "translatedLabels_tags",
+    editAnchor: "labels",
     getLink: (name: string) =>
       `https://world.openfoodfacts.org/facets/labels/${name
         .toLowerCase()
         .replaceAll(" ", "-")}`,
   },
-  quantity: { i18nKey: "quantity" },
+  quantity: { i18nKey: "quantity", editAnchor: "quantity" },
 };
 
 // src looks like: "https://images.openfoodfacts.org/images/products/004/900/053/2258/1.jpg"
@@ -51,7 +56,7 @@ const getUploadedTime = (data: number) =>
   });
 
 export const getImagesUrls = (
-  images: Record<string, { uploaded_t: number }>,
+  images: NonNullable<Product["images"]>,
   barcode: string,
 ) => {
   if (!images || !barcode) {
@@ -61,11 +66,17 @@ export const getImagesUrls = (
   const rootImageUrl = offService.getImageUrl(formattedCode);
   return Object.keys(images)
     .filter((key) => !isNaN(Number.parseInt(key)))
-    .map((key) => ({
-      imageUrl: `${rootImageUrl}/${key}.400.jpg`,
-      imageUrlFull: `${rootImageUrl}/${key}.jpg`,
-      uploaded_t: getUploadedTime(images[key].uploaded_t),
-    }));
+    .map((key) => {
+      const image = images[key];
+      return {
+        imageUrl: `${rootImageUrl}/${key}.400.jpg`,
+        imageUrlFull: `${rootImageUrl}/${key}.jpg`,
+        uploaded_t:
+          typeof image === "object" && image.uploaded_t !== undefined
+            ? getUploadedTime(image.uploaded_t)
+            : "Unknown",
+      };
+    });
 };
 
 export const getFullSizeImage = (src?: string) => {

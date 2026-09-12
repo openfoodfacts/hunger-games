@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 200" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bgGradQ2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc" />
+      <stop offset="100%" stop-color="#f1f5f9" />
+    </linearGradient>
+    <linearGradient id="yesGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    <linearGradient id="noGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ef4444" />
+      <stop offset="100%" stop-color="#dc2626" />
+    </linearGradient>
+    <linearGradient id="blueGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#1d4ed8" />
+    </linearGradient>
+    <linearGradient id="productGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#f59e0b" />
+    </linearGradient>
+
+    <!-- Filters -->
+    <filter id="mainShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#0f172a" flood-opacity="0.08" />
+    </filter>
+    <filter id="btnShadow2" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#0f172a" flood-opacity="0.12" />
+    </filter>
+  </defs>
+
+  <!-- Background Base Container -->
+  <rect width="350" height="200" rx="16" fill="url(#bgGradQ2)" />
+
+  <!-- Main Question Card Container -->
+  <g filter="url(#mainShadow)">
+    <rect x="40" y="18" width="270" height="164" rx="16" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5" />
+  </g>
+
+  <!-- Product & Question Header Area -->
+  <g transform="translate(56, 32)">
+    <!-- Food Product Package Icon (Left) -->
+    <rect x="0" y="0" width="38" height="48" rx="8" fill="url(#productGrad)" filter="url(#btnShadow2)" />
+    <!-- Package Details (Nutrition lines & leaf emblem) -->
+    <circle cx="19" cy="18" r="9" fill="#ffffff" opacity="0.9" />
+    <path d="M19 12 C14 12 13 18 19 23 C25 18 24 12 19 12 Z" fill="#059669" />
+    <rect x="8" y="32" width="22" height="3" rx="1.5" fill="#ffffff" opacity="0.8" />
+    <rect x="8" y="38" width="14" height="3" rx="1.5" fill="#ffffff" opacity="0.8" />
+
+    <!-- Speech Bubble / Question Box (Right) -->
+    <rect x="50" y="0" width="188" height="48" rx="12" fill="#eff6ff" stroke="#dbeafe" stroke-width="1.2" />
+    
+    <!-- Question Mark Badge -->
+    <circle cx="68" cy="24" r="13" fill="url(#blueGrad2)" />
+    <text x="68" y="30" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="900" fill="#ffffff" text-anchor="middle">?</text>
+    
+    <!-- Question Prompt Text Lines -->
+    <text x="92" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" fill="#1e40af">Is this organic?</text>
+    <text x="92" y="36" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="500" fill="#64748b">Answer to help validate data</text>
+  </g>
+
+  <!-- Divider Line -->
+  <line x1="56" y1="94" x2="294" y2="94" stroke="#f1f5f9" stroke-width="1.5" />
+
+  <!-- ACTION BUTTON 1: YES (Green Pill Button with Checkmark) -->
+  <g transform="translate(56, 108)" filter="url(#btnShadow2)">
+    <rect x="0" y="0" width="112" height="52" rx="14" fill="url(#yesGrad)" />
+    
+    <!-- White Circle Icon Backdrop -->
+    <circle cx="28" cy="26" r="14" fill="#ffffff" opacity="0.95" />
+    
+    <!-- Checkmark Icon -->
+    <path d="M21 26 L26 31 L35 20" fill="none" stroke="#059669" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+
+    <!-- YES Label -->
+    <text x="74" y="31" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="800" fill="#ffffff" text-anchor="middle" letter-spacing="1">YES</text>
+  </g>
+
+  <!-- ACTION BUTTON 2: NO (Red Pill Button with Cross) -->
+  <g transform="translate(182, 108)" filter="url(#btnShadow2)">
+    <rect x="0" y="0" width="112" height="52" rx="14" fill="url(#noGrad)" />
+    
+    <!-- White Circle Icon Backdrop -->
+    <circle cx="28" cy="26" r="14" fill="#ffffff" opacity="0.95" />
+    
+    <!-- Cross Icon (✕) -->
+    <path d="M21 19 L35 33 M35 19 L21 33" stroke="#dc2626" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+
+    <!-- NO Label -->
+    <text x="74" y="31" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="800" fill="#ffffff" text-anchor="middle" letter-spacing="1">NO</text>
+  </g>
+
+  <!-- Decorative Corner Elements -->
+  <circle cx="24" cy="30" r="4" fill="#3b82f6" opacity="0.3" />
+  <circle cx="328" cy="170" r="5" fill="#10b981" opacity="0.3" />
+  <circle cx="330" cy="28" r="3" fill="#f59e0b" opacity="0.4" />
+</svg>

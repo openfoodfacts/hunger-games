@@ -1,4 +1,4 @@
-import * as React from "react";
+import { useQuery } from "@tanstack/react-query";
 
 import {
   CircularProgress,
@@ -24,23 +24,18 @@ export default function SmallQuestionCard({
 }: SmallQuestionCardProps) {
   const targetUrl = `/questions?${getQuestionSearchParams(filterState)}`;
 
-  const [questionNumber, setQuestionNumber] = React.useState<null | number>(
-    null,
-  );
-
-  React.useEffect(() => {
-    let isValid = true;
-    robotoff
-      .questions({ ...filterState, with_image: true }, 1, 1)
-      .then(({ data }) => {
-        if (isValid) {
-          setQuestionNumber(data?.count ?? 0);
-        }
-      });
-    return () => {
-      isValid = false;
-    };
-  }, [filterState]);
+  const questionCountQuery = useQuery({
+    queryKey: ["question-count", filterState],
+    queryFn: async () => {
+      const { data } = await robotoff.questions(
+        { ...filterState, with_image: true },
+        1,
+        1,
+      );
+      return data?.count ?? 0;
+    },
+  });
+  const questionNumber = questionCountQuery.data ?? null;
 
   return (
     <Badge

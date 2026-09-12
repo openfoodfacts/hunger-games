@@ -7,18 +7,18 @@ import "./i18n";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
-import { MatomoProvider, createInstance } from "@jonkoops/matomo-tracker-react";
+import { MatomoProvider } from "./hooks/matomo";
 
-const instance = createInstance({
+const matomoConfig = {
   urlBase: "https://analytics.openfoodfacts.org/",
   siteId: 3,
-});
+};
 
 const root = ReactDOM.createRoot(document.getElementById("root")!);
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <MatomoProvider value={instance}>
+      <MatomoProvider config={matomoConfig}>
         <App />
       </MatomoProvider>
     </BrowserRouter>
@@ -28,4 +28,4 @@ root.render(
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+void reportWebVitals();

@@ -5,13 +5,8 @@ import { FilterState } from "../../robotoff";
 export const useFavorite = (
   filterState: FilterState,
 ): [boolean, () => void] => {
-  const [isFavorite, setIsFavorite] = React.useState(
-    localFavorites.isSaved(filterState),
-  );
-
-  React.useEffect(() => {
-    setIsFavorite(localFavorites.isSaved(filterState));
-  }, [filterState]);
+  const [, refreshFavorite] = React.useReducer((value: number) => value + 1, 0);
+  const isFavorite = localFavorites.isSaved(filterState);
 
   const toggleFavorite = React.useCallback(
     (imageSrc = "", title = "") => {
@@ -23,7 +18,7 @@ export const useFavorite = (
         localFavorites.addQuestion(filterState, imageSrc, title);
       }
 
-      setIsFavorite(!isSaved);
+      refreshFavorite();
     },
     [filterState],
   );

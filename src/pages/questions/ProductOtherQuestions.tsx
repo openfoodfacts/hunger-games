@@ -37,21 +37,6 @@ export default function ProductOtherQuestions({
     [data, question.insight_id, answers],
   );
 
-  // Reset the pending answer for new data
-  React.useEffect(() => {
-    if (!data) {
-      return;
-    }
-    setAnswers(
-      Object.fromEntries(
-        data.map((question) => [
-          question.insight_id,
-          { value: null, sent: false },
-        ]),
-      ),
-    );
-  }, [data]);
-
   if (status === "pending") {
     return <Typography>Loading ...</Typography>;
   }
@@ -63,74 +48,82 @@ export default function ProductOtherQuestions({
     return <Typography>No other questions</Typography>;
   }
 
-  return filteredData.map((otherQuestion) => {
-    const insight_id = otherQuestion.insight_id;
-    const pendingAnswer = answers[insight_id]?.value ?? null;
+  return (
+    <Stack spacing={2}>
+      {filteredData.map((otherQuestion) => {
+        const insight_id = otherQuestion.insight_id;
+        const pendingAnswer = answers[insight_id]?.value ?? null;
 
-    // Set the value,n or move it to `null` if already set.
-    const toggleValue = (
-      value: typeof WRONG_INSIGHT | typeof CORRECT_INSIGHT,
-    ) =>
-      setAnswers((prev) => ({
-        ...prev,
-        [insight_id]: {
-          value: prev[insight_id]?.value === value ? null : value,
-          sent: false,
-        },
-      }));
-
-    const valueIsSet =
-      pendingAnswer === CORRECT_INSIGHT || pendingAnswer === WRONG_INSIGHT;
-    const sendAnswer = valueIsSet
-      ? () => {
-          robotoff.annotate(insight_id, pendingAnswer);
+        // Set the value,n or move it to `null` if already set.
+        const toggleValue = (
+          value: typeof WRONG_INSIGHT | typeof CORRECT_INSIGHT,
+        ) =>
           setAnswers((prev) => ({
             ...prev,
             [insight_id]: {
-              ...prev[insight_id],
-              sent: true,
+              value: prev[insight_id]?.value === value ? null : value,
+              sent: false,
             },
           }));
-        }
-      : noop;
 
-    return (
-      <Stack
-        direction="row"
-        key={otherQuestion.insight_id}
-        sx={{ mt: 1, alignItems: "flex-start" }}
-      >
-        <Typography key={otherQuestion.insight_id}>
-          {otherQuestion.question} ({otherQuestion.value})
-        </Typography>
-        <Button
-          onClick={() => toggleValue(CORRECT_INSIGHT)}
-          variant={pendingAnswer === CORRECT_INSIGHT ? "contained" : "outlined"}
-          color="success"
-          size="small"
-          sx={{ ml: 1 }}
-        >
-          {t("questions.yes")}
-        </Button>
-        <Button
-          onClick={() => toggleValue(WRONG_INSIGHT)}
-          variant={pendingAnswer === WRONG_INSIGHT ? "contained" : "outlined"}
-          color="error"
-          size="small"
-        >
-          {t("questions.no")}
-        </Button>
-        <Button
-          onClick={sendAnswer}
-          disabled={!valueIsSet}
-          color="secondary"
-          variant="contained"
-          size="small"
-          sx={{ ml: 1 }}
-        >
-          {t("questions.send")}
-        </Button>
-      </Stack>
-    );
-  });
+        const valueIsSet =
+          pendingAnswer === CORRECT_INSIGHT || pendingAnswer === WRONG_INSIGHT;
+        const sendAnswer = valueIsSet
+          ? () => {
+              robotoff
+                .annotate(insight_id, pendingAnswer)
+                .then(() => {
+                  setAnswers((prev) => ({
+                    ...prev,
+                    [insight_id]: {
+                      ...prev[insight_id],
+                      sent: true,
+                    },
+                  }));
+                })
+                .catch(() => {});
+            }
+          : noop;
+
+        return (
+          <Stack spacing={0.75} key={otherQuestion.insight_id}>
+            <Typography key={otherQuestion.insight_id}>
+              {otherQuestion.question} ({otherQuestion.value})
+            </Typography>
+            <Stack direction="row" spacing={1} sx={{ flexWrap: "wrap" }}>
+              <Button
+                onClick={() => toggleValue(CORRECT_INSIGHT)}
+                variant={
+                  pendingAnswer === CORRECT_INSIGHT ? "contained" : "outlined"
+                }
+                color="success"
+                size="small"
+              >
+                {t("questions.yes")}
+              </Button>
+              <Button
+                onClick={() => toggleValue(WRONG_INSIGHT)}
+                variant={
+                  pendingAnswer === WRONG_INSIGHT ? "contained" : "outlined"
+                }
+                color="error"
+                size="small"
+              >
+                {t("questions.no")}
+              </Button>
+              <Button
+                onClick={sendAnswer}
+                disabled={!valueIsSet}
+                color="primary"
+                variant="contained"
+                size="small"
+              >
+                {t("questions.send")}
+              </Button>
+            </Stack>
+          </Stack>
+        );
+      })}
+    </Stack>
+  );
 }

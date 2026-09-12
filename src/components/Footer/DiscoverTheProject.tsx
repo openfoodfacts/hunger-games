@@ -1,5 +1,4 @@
-import { Button, Chip, Divider, Typography } from "@mui/material";
-import { Box } from "@mui/system";
+import { Box, Chip, Typography } from "@mui/material";
 import { useTranslation } from "react-i18next";
 
 const discover = [
@@ -44,33 +43,40 @@ const discover = [
 export default function DiscoverTheProject() {
   const { t } = useTranslation();
   return (
-    <Box sx={{ width: { xs: "100%", sm: "50%" } }} className="OFF-discover">
-      <Divider light>
-        <Chip label="Discover the project" />
-      </Divider>
-      <br />
+    <Box component="section" sx={{ height: "100%" }}>
+      <Typography component="h2" variant="h6" sx={{ mb: 2, fontWeight: 700 }}>
+        {t("settings.discover_the_project")}
+      </Typography>
       <Box
         sx={{
           display: "flex",
           flexWrap: "wrap",
-          gap: "20px",
-          justifyContent: "center",
+          gap: 1,
         }}
       >
         {discover.map((content) => {
           return (
-            <Button
+            <Chip
               key={content.text}
-              sx={{
-                backgroundColor: "#a08d84",
-                "&:hover": { backgroundColor: "#887369" },
-              }}
-              variant="contained"
+              label={t(content.text)}
+              component="a"
               href={content.url}
               target="_blank"
-            >
-              <Typography noWrap>{t(content.text)}</Typography>
-            </Button>
+              rel="noreferrer"
+              clickable
+              variant="outlined"
+              sx={{
+                maxWidth: "100%",
+                height: "auto",
+                borderRadius: 2,
+                py: 0.75,
+                "& .MuiChip-label": {
+                  display: "block",
+                  whiteSpace: "normal",
+                  py: 0.25,
+                },
+              }}
+            />
           );
         })}
       </Box>

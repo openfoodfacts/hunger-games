@@ -1,4 +1,4 @@
-import { isEqual } from "lodash";
+import { isEqual } from "lodash-es";
 import { FilterState } from "./robotoff";
 
 // Parameters added and to take in consideration to avoid breaking al the saved filter state
@@ -28,34 +28,67 @@ export const localSettingsKeys = {
   showDatabase: "showDatabase",
   showNutriscore: "showNutriscore",
   pageCustomization: "pageCustomization",
+} as const;
+
+type VisiblePages = Record<string, boolean | undefined>;
+
+interface LocalSettings {
+  lang: string;
+  colorMode: "light" | "dark";
+  devMode: boolean;
+  visiblePages: VisiblePages;
+  questions_hideImages: boolean;
+  showTour: boolean;
+  showDatabase: boolean;
+  showNutriscore: boolean;
+  pageCustomization: {
+    questionPage?: {
+      showDebug?: boolean;
+      showOtherQuestions?: boolean;
+    };
+  };
+}
+
+type LocalSettingsKey = keyof LocalSettings;
+
+const parseStoredObject = (value: string | null): Record<string, unknown> => {
+  if (value === null) {
+    return {};
+  }
+
+  try {
+    const parsed: unknown = JSON.parse(value);
+    return typeof parsed === "object" &&
+      parsed !== null &&
+      !Array.isArray(parsed)
+      ? (parsed as Record<string, unknown>)
+      : {};
+  } catch (error: unknown) {
+    console.error(error);
+    return {};
+  }
 };
 
 export const localSettings = {
-  fetch: function <T>(): Record<string, T | undefined> {
-    let storedValue = {};
-
-    try {
-      storedValue = JSON.parse(localStorage.getItem(STORAGE_KEY) || "{}");
-    } catch (error: any) {
-      console.error(error);
-      /* empty */
-    }
-
-    return typeof storedValue === "object" ? storedValue : {};
+  fetch(): Partial<LocalSettings> {
+    return parseStoredObject(localStorage.getItem(STORAGE_KEY));
   },
 
-  save: function <T>(settings: T): void {
+  save(settings: Partial<LocalSettings>): void {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(settings));
   },
-  update: function <T>(key: string, value: T): void {
-    const settings = this.fetch<T>();
+  update<Key extends LocalSettingsKey>(
+    key: Key,
+    value: LocalSettings[Key],
+  ): void {
+    const settings = this.fetch();
     settings[key] = value;
     this.save(settings);
   },
 };
 
 export const getIsDevMode = (): boolean => {
-  const settings = localSettings.fetch<boolean | undefined>();
+  const settings = localSettings.fetch();
   return settings[localSettingsKeys.isDevMode] ?? false;
 };
 
@@ -63,9 +96,7 @@ export const getVisiblePages: () => {
   nutriscore: boolean;
   insights: boolean;
 } = () => {
-  const settings = localSettings.fetch<
-    undefined | Record<string, boolean | undefined>
-  >();
+  const settings = localSettings.fetch();
   return {
     nutriscore: true,
     insights: true,
@@ -100,21 +131,30 @@ export const getTour = () => {
 };
 
 export const getLang = () => {
-  const settings = localSettings.fetch();
-
+  // 1. Check URL params
   const urlParams = new URLSearchParams(window.location.search);
   const urlLanguage = urlParams.has("language") && urlParams.get("language");
+  if (urlLanguage) {
+    return urlLanguage;
+  }
 
-  return (
-    urlLanguage ||
-    settings[localSettingsKeys.language] ||
-    // @ts-expect-error Property 'userLanguage' does not exist on type 'Navigator'.
-    (navigator.language || navigator.userLanguage).split("-")[0]
-  );
+  // 2. Check local storage
+  const settings = localSettings.fetch();
+  const settingsLanguage = settings[localSettingsKeys.language];
+  if (settingsLanguage) {
+    return settingsLanguage;
+  }
+
+  // 3. Use browser language
+  if (navigator && navigator.language) {
+    return navigator.language.split("-")[0];
+  }
+
+  return undefined;
 };
 
 export const getStoredColorPreference = (): "light" | "dark" | undefined => {
-  const settings = localSettings.fetch<"light" | "dark">();
+  const settings = localSettings.fetch();
   return settings[localSettingsKeys.colorMode];
 };
 
@@ -132,20 +172,27 @@ export const getColor = (): "light" | "dark" => {
 
 const FAVORITE_STORAGE_KEY = "hunger-game-favorites";
 
+interface FavoriteQuestion {
+  filterState: FilterState;
+  imageSrc?: string;
+  title: string;
+}
+
+interface Favorites {
+  questions: FavoriteQuestion[];
+}
+
 export const localFavorites = {
-  mem: null,
-  fetch: function () {
-    return JSON.parse(localStorage.getItem(FAVORITE_STORAGE_KEY) || "{}");
+  mem: null as Favorites | null,
+  fetch(): Partial<Favorites> {
+    return parseStoredObject(localStorage.getItem(FAVORITE_STORAGE_KEY));
   },
-  save: function (favorites) {
+  save(favorites: Favorites) {
     localStorage.setItem(FAVORITE_STORAGE_KEY, JSON.stringify(favorites));
   },
-  addQuestion: function (filterState, imageSrc, title) {
+  addQuestion(filterState: FilterState, imageSrc: string, title: string) {
     if (this.mem == null) {
-      this.mem = this.fetch();
-    }
-    if (!this.mem.questions) {
-      this.mem.questions = [];
+      this.mem = { questions: this.fetch().questions ?? [] };
     }
 
     const questionIndex = this.mem.questions.findIndex(
@@ -179,12 +226,9 @@ export const localFavorites = {
     }
     this.save(this.mem);
   },
-  removeQuestion: function (filterState) {
+  removeQuestion(filterState: FilterState) {
     if (this.mem == null) {
-      this.mem = this.fetch();
-    }
-    if (!this.mem.questions) {
-      return;
+      this.mem = { questions: this.fetch().questions ?? [] };
     }
     this.mem.questions = this.mem.questions.filter(
       ({ filterState: memFilterState }) =>
@@ -192,13 +236,9 @@ export const localFavorites = {
     );
     this.save(this.mem);
   },
-  isSaved: function (filterState) {
+  isSaved(filterState: FilterState) {
     if (this.mem == null) {
-      this.mem = this.fetch();
-    }
-
-    if (!this.mem.questions) {
-      return false;
+      this.mem = { questions: this.fetch().questions ?? [] };
     }
 
     return (

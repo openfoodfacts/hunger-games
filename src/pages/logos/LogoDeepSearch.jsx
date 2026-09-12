@@ -96,9 +96,10 @@ const FailedReferecnceLogos = ({ type, value }) => {
 };
 
 export default function LogoSearch() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   const [annotatedLogos, setAnnotatedLogos] = React.useState([]);
+  const [annotationCount, setAnnotationCount] = React.useState(null);
   const [logosToAnnotate, setLogosToAnnotate] = React.useState([]);
   // TODO: allows to fetch more when reaching data limit
   const [searchCount] = React.useState(DEFAULT_COUNT);
@@ -118,6 +119,7 @@ export default function LogoSearch() {
   const setNewSearchState = ({ type, value }) => {
     setSearchState(DEFAULT_COUNT);
     setAnnotatedLogos([]);
+    setAnnotationCount(null);
     setLogosToAnnotate([]);
     setSearchState({ type, value });
   };
@@ -125,14 +127,17 @@ export default function LogoSearch() {
   React.useEffect(() => {
     let isValid = true;
     const fetchMoreAnnotatedLogos = async () => {
+      setIsLoadingAnnotatedLogos(true);
       try {
-        const { logos } = await request({
+        const { logos, count } = await request({
           ...searchState,
           count: searchCount,
         });
         if (!isValid) {
           return;
         }
+
+        setAnnotationCount(count ?? null);
 
         setAnnotatedLogos((prev) => {
           const ids = prev.map((logo) => logo.id);
@@ -144,10 +149,9 @@ export default function LogoSearch() {
           ];
         });
         // eslint-disable-next-line no-empty
-      } catch (error) { }
+      } catch {}
     };
 
-    setIsLoadingAnnotatedLogos(true);
     fetchMoreAnnotatedLogos()
       .then(() => {
         if (isValid) {
@@ -170,6 +174,7 @@ export default function LogoSearch() {
   React.useEffect(() => {
     let isValid = true;
     const fetchLogosToAnnotate = async () => {
+      setIsLoadingToAnnotateLogos(true);
       if ((page + 1) * pageSize <= logosToAnnotate.length) {
         // We already have one page in advance
         return;
@@ -228,7 +233,6 @@ export default function LogoSearch() {
       });
     };
 
-    setIsLoadingToAnnotateLogos(true);
     fetchLogosToAnnotate()
       .then(() => {
         if (isValid) {
@@ -336,6 +340,15 @@ export default function LogoSearch() {
         <Typography variant="h5" sx={{ mt: 5, mb: 1 }}>
           {t("logos.deep_search.ref_logos")}
         </Typography>
+
+        {annotationCount != null && (
+          <Typography variant="body2" color="text.secondary" sx={{ mb: 1 }}>
+            {t("logos.deep_search.annotation_count", {
+              count: annotationCount,
+              formattedCount: annotationCount.toLocaleString(i18n.language),
+            })}
+          </Typography>
+        )}
 
         {isLoadingAnnotatedLogos ? (
           <LoadingReferenceLogos />

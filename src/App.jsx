@@ -3,7 +3,7 @@ import CssBaseline from "@mui/material/CssBaseline";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { Routes, Route, useLocation } from "react-router";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { useMatomo } from "@jonkoops/matomo-tracker-react";
+import { useMatomo } from "./hooks/matomo";
 import axios from "axios";
 
 import ResponsiveAppBar from "./components/ResponsiveAppBar";
@@ -24,6 +24,7 @@ import ColorModeContext from "./contexts/colorMode";
 
 import Loader from "./pages/loader";
 import { CountryProvider } from "./contexts/CountryProvider";
+import { OffWebcomponentsConfiguration } from "./components/OffWebcomponents";
 
 const GreenScorePage = React.lazy(() => import("./pages/green-score"));
 const LogoAnnotationPage = React.lazy(
@@ -90,9 +91,13 @@ const getToken = (colorMode) => ({
     },
     secondary: {
       ...(colorMode === "dark"
-        ? { dark: chocolate, main: cortado, light: mocha }
-        : { light: latte, main: cappucino, dark: latteMacchiato }),
-      contrastText: black,
+        ? { dark: chocolate, main: cortado, light: mocha, contrastText: white }
+        : {
+            light: latte,
+            main: cappucino,
+            dark: latteMacchiato,
+            contrastText: black,
+          }),
     },
     cafeCreme:
       colorMode === "dark"
@@ -161,9 +166,12 @@ export default function App() {
   }, [userState.isLoggedIn]);
 
   React.useEffect(() => {
-    refresh();
+    Promise.resolve()
+      .then(refresh)
+      .catch(() => {});
   }, [refresh]);
 
+  // Matomo page view tracking
   const location = useLocation();
   const { trackPageView } = useMatomo();
 
@@ -206,6 +214,14 @@ export default function App() {
   }, []);
 
   const theme = createTheme(getToken(mode));
+  const themeColor = theme.palette.cafeCreme.main;
+  React.useEffect(() => {
+    const metaThemeColor = document.head.querySelector(
+      'meta[name="theme-color"]',
+    );
+    if (!metaThemeColor) return;
+    metaThemeColor.setAttribute("content", themeColor);
+  }, [themeColor]);
 
   return (
     <React.Suspense fallback={<Loader />}>
@@ -218,6 +234,7 @@ export default function App() {
               >
                 <QueryClientProvider client={queryClient}>
                   <CssBaseline />
+                  <OffWebcomponentsConfiguration />
                   <ResponsiveAppBar />
                   <Routes>
                     <Route path="/" element={<Home />} />

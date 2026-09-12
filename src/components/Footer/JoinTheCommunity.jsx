@@ -1,6 +1,4 @@
-import { Chip, Divider, Step, StepLabel, Stepper } from "@mui/material";
-import { Box } from "@mui/system";
-import Link from "@mui/material/Link";
+import { Box, Link, Stack, Typography } from "@mui/material";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import { useTranslation } from "react-i18next";
 
@@ -27,43 +25,38 @@ const content = [
   },
 ];
 
-function CustomStepIcon() {
-  return (
-    <div>
-      <CheckCircleIcon sx={{ color: "#a08d84" }} />
-    </div>
-  );
-}
-
 export default function JoinTheCommunity() {
   const { t } = useTranslation();
 
   return (
-    <div style={{ flexGrow: "1" }} className="OFF-join">
-      <Divider light>
-        <Chip label={t("settings.join_community")} />
-      </Divider>
-      <Box
-        sx={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-        }}
+    <Box component="section" sx={{ height: "100%" }}>
+      <Typography component="h2" variant="h6" sx={{ mb: 2, fontWeight: 700 }}>
+        {t("settings.join_community")}
+      </Typography>
+      <Stack
+        component="ul"
+        spacing={1.5}
+        sx={{ m: 0, p: 0, listStyle: "none" }}
       >
-        <Stepper orientation="vertical">
-          {content.map((step, index) => (
-            <Step active key={index}>
-              <StepLabel StepIconComponent={CustomStepIcon}>
-                {t(step.tag) + " "}
-
-                <Link href={step.url} underline="always">
-                  {t(step.urlText)}
-                </Link>
-              </StepLabel>
-            </Step>
-          ))}
-        </Stepper>
-      </Box>
-    </div>
+        {content.map((step, index) => (
+          <Box
+            component="li"
+            key={`${step.url}-${index}`}
+            sx={{ display: "flex", alignItems: "flex-start", gap: 1 }}
+          >
+            <CheckCircleIcon
+              sx={{ mt: 0.25, color: "primary.main", fontSize: 20 }}
+              aria-hidden
+            />
+            <Typography component="span" variant="body2">
+              {step.tag ? `${t(step.tag)} ` : ""}
+              <Link href={step.url} target="_blank" rel="noreferrer">
+                {t(step.urlText)}
+              </Link>
+            </Typography>
+          </Box>
+        ))}
+      </Stack>
+    </Box>
   );
 }

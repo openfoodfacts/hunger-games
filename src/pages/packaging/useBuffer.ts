@@ -1,6 +1,8 @@
+import type { ProductV3 } from "@openfoodfacts/openfoodfacts-nodejs";
 import axios from "axios";
 import * as React from "react";
 import { OFF_SEARCH, OFF_API_URL_V3 } from "../../const";
+import type { ProductImage } from "../../off";
 
 type Parameters = {
   page: number;
@@ -9,23 +11,47 @@ type Parameters = {
   code?: string;
 };
 
-type Packaging = {
-  material: string;
+export type EditablePackaging = {
+  id: number;
+  material: string | null;
   number: string;
-  recycling: string;
-  shape: string;
+  recycling: string | null;
+  shape: string | null;
 };
 
-type ProductDescription = {
-  code: number;
-  states: any;
-  lang: string;
-  image_packaging_url: string;
-  packagings: Packaging[];
-  product_name: string;
-  images: any;
-  creator: string;
+export type PackagingUpdate = Partial<Omit<EditablePackaging, "id">>;
+
+export type ProductDescription = Pick<
+  ProductV3,
+  "code" | "image_packaging_url" | "packagings" | "product_name"
+> & {
+  code: string;
+  images: Record<string, ProductImage | string>;
 };
+
+type SearchResponse = {
+  products?: ProductDescription[];
+  product?: ProductDescription;
+  count?: number;
+  page_size?: number;
+};
+
+type BufferState = {
+  data: ProductDescription[] | null;
+  error: string | null;
+  maxPage: number;
+  page: number;
+  requestId: number;
+  searchKey: string;
+};
+
+type BufferResult = [
+  ProductDescription[] | null,
+  () => void,
+  string | null,
+  () => void,
+];
+
 function getProductsToAnnotateUrl({
   page = 1,
   country = "en:france",
@@ -57,43 +83,103 @@ export const useBuffer = ({
   country,
   creator,
   code,
-}: Omit<Parameters, "page">): [ProductDescription[], () => void] => {
-  const [page, setPage] = React.useState(() => Math.ceil(Math.random() * 100));
-  const [data, setData] = React.useState<ProductDescription[]>(null);
-  const [maxPage, setMaxPage] = React.useState<number>(100);
+}: Omit<Parameters, "page">): BufferResult => {
+  const searchKey = `${country ?? ""}:${creator ?? ""}:${code ?? ""}`;
+  const [state, setState] = React.useState<BufferState>(() => ({
+    data: null,
+    error: null,
+    maxPage: 100,
+    page: Math.ceil(Math.random() * 100),
+    requestId: 0,
+    searchKey,
+  }));
 
-  const url = getProductsToAnnotateUrl({ page, country, creator, code });
+  if (state.searchKey !== searchKey) {
+    setState({
+      data: null,
+      error: null,
+      maxPage: 100,
+      page: 1,
+      requestId: 0,
+      searchKey,
+    });
+  }
 
-  const canReset = React.useRef(false);
-  React.useEffect(() => {
-    if (canReset.current) {
-      setData([]);
-      setPage(1);
-    }
-  }, [country, creator]);
-
-  React.useEffect(() => {
-    if (data != null && data.length === 0) {
-      setPage((p) => Math.min(maxPage, p + 1));
-    }
-  }, [data, maxPage]);
+  const activeState =
+    state.searchKey === searchKey
+      ? state
+      : {
+          data: null,
+          error: null,
+          maxPage: 100,
+          page: 1,
+          requestId: 0,
+          searchKey,
+        };
+  const url = getProductsToAnnotateUrl({
+    page: activeState.page,
+    country,
+    creator,
+    code,
+  });
 
   React.useEffect(() => {
     let isValid = true;
-    axios.get(url).then(({ data }) => {
-      if (isValid) {
-        const products = data.products ?? [data.product];
-        setData(products);
-        setMaxPage(Math.floor(data.count / data.page_size) + 1);
-        canReset.current = true;
-      }
-    });
+    void axios
+      .get<SearchResponse>(url)
+      .then(({ data }) => {
+        if (!isValid) {
+          return;
+        }
+        const products = data.products ?? (data.product ? [data.product] : []);
+        const pageSize = data.page_size ?? 1;
+        const maxPage = Math.max(1, Math.ceil((data.count ?? 0) / pageSize));
+        setState((previous) => ({
+          ...previous,
+          data: products,
+          error: null,
+          maxPage,
+        }));
+      })
+      .catch((error: unknown) => {
+        console.error(error);
+        if (isValid) {
+          setState((previous) => ({
+            ...previous,
+            error:
+              error instanceof Error
+                ? error.message
+                : "The product request failed.",
+          }));
+        }
+      });
     return () => {
       isValid = false;
     };
-  }, [url, country]);
+  }, [url, activeState.requestId]);
 
-  const next = () =>
-    setData((prev) => (prev && prev.length > 0 ? prev.slice(1) : prev));
-  return [data, next];
+  const next = () => {
+    setState((previous) => {
+      if (previous.data && previous.data.length > 1) {
+        return { ...previous, data: previous.data.slice(1) };
+      }
+      return {
+        ...previous,
+        data: null,
+        error: null,
+        page: Math.min(previous.maxPage, previous.page + 1),
+      };
+    });
+  };
+
+  const retry = () => {
+    setState((previous) => ({
+      ...previous,
+      data: null,
+      error: null,
+      requestId: previous.requestId + 1,
+    }));
+  };
+
+  return [activeState.data, next, activeState.error, retry];
 };

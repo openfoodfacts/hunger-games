@@ -1,12 +1,14 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 import { getLang } from "./localeStorageManager";
-import resources from "./i18n/messages";
+import resourcesToBackend from "i18next-resources-to-backend";
 
-i18n
+void i18n
   .use(initReactI18next) // passes i18n down to react-i18next
+  .use(
+    resourcesToBackend((language: string) => import(`./i18n/${language}.json`)),
+  )
   .init({
-    resources,
     fallbackLng: "en",
     lng: getLang(),
     interpolation: {

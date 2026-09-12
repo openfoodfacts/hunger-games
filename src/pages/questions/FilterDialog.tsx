@@ -23,6 +23,7 @@ import countries from "../../assets/countries.json";
 import {
   insightTypesNames,
   campagnes,
+  predictors,
 } from "../../components/QuestionFilter/const";
 import { useFilterState } from "../../hooks/useFilterState";
 import { BrandFilter } from "../../components/QuestionFilter/BrandFilter";
@@ -116,10 +117,15 @@ export default function FilterDialog(props: FilterDialogProps) {
     onClose,
   ]);
 
-  React.useEffect(resetFilter, [resetFilter]);
-
   return (
-    <Dialog open={open} onClose={onClose} PaperProps={{ sx: { p: 2 } }}>
+    <Dialog
+      open={open}
+      onClose={onClose}
+      slotProps={{
+        transition: { onEnter: resetFilter },
+        paper: { sx: { p: 2 } },
+      }}
+    >
       <DialogContent>
         <Stack spacing={2} sx={{ display: open ? undefined : "none" }}>
           <FormControl>
@@ -175,7 +181,7 @@ export default function FilterDialog(props: FilterDialogProps) {
           )}
           <Autocomplete
             value={innerCountryObject}
-            onChange={(event, newValue) => setInnerCountryObject(newValue)}
+            onChange={(_event, newValue) => setInnerCountryObject(newValue)}
             options={countries}
             getOptionLabel={(country) => country.label}
             isOptionEqualToValue={(country, value) => country.id === value.id}
@@ -183,6 +189,7 @@ export default function FilterDialog(props: FilterDialogProps) {
               <TextField
                 {...params}
                 label={t("questions.filters.long_label.country")}
+                placeholder={t("questions.filters.placeholders.country")}
                 size="small"
               />
             )}
@@ -219,33 +226,11 @@ export default function FilterDialog(props: FilterDialogProps) {
             <MenuItem value="">
               <em>{t("questions.filters.all_predictors")}</em>
             </MenuItem>
-            <MenuItem value="ridge_model-ml">
-              {t("questions.filters.predictor.ridge_model_ml")}
-            </MenuItem>
-            <MenuItem value="neural">
-              {t("questions.filters.predictor.neural")}
-            </MenuItem>
-            <MenuItem value="matcher">
-              {t("questions.filters.predictor.matcher")}
-            </MenuItem>
-            <MenuItem value="google-could-vision">
-              {t("questions.filters.predictor.google_cloud_vision")}
-            </MenuItem>
-            <MenuItem value="regex">
-              {t("questions.filters.predictor.regex")}
-            </MenuItem>
-            <MenuItem value="flashtext">
-              {t("questions.filters.predictor.flashtext")}
-            </MenuItem>
-            <MenuItem value="nutriscore">
-              {t("questions.filters.predictor.nutriscore")}
-            </MenuItem>
-            <MenuItem value="universal-logo-detector">
-              {t("questions.filters.predictor.universal_logo_detector")}
-            </MenuItem>
-            <MenuItem value="ocr">
-              {t("questions.filters.predictor.ocr")}
-            </MenuItem>
+            {predictors.map(({ value, labelKey }) => (
+              <MenuItem key={value} value={value}>
+                {t(`questions.filters.predictor.${labelKey}`)}
+              </MenuItem>
+            ))}
           </TextField>
 
           <FormControlLabel
@@ -263,7 +248,13 @@ export default function FilterDialog(props: FilterDialogProps) {
         </Stack>
       </DialogContent>
       <DialogActions>
-        <Stack direction="row" justifyContent="flex-end" spacing={1}>
+        <Stack
+          direction="row"
+          spacing={1}
+          sx={{
+            justifyContent: "flex-end",
+          }}
+        >
           <Button
             variant="outlined"
             onClick={() => {

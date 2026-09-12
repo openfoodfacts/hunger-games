@@ -20,7 +20,13 @@ export default function Page() {
   return (
     <React.Suspense fallback={<Loader />}>
       <Box sx={{ p: 2 }}>
-        <Stack spacing={4} flexWrap="wrap" direction="row">
+        <Stack
+          spacing={4}
+          direction="row"
+          sx={{
+            flexWrap: "wrap",
+          }}
+        >
           {data.slice(0, maxSize).map((props) => (
             <Box sx={{ marginBottom: 5 }} key={props.title}>
               <QuestionCard showFilterResume editableTitle {...props} />
