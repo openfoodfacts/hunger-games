@@ -2,6 +2,7 @@
   "home": {
     "game_selector": {
       "title": "a quin joc vols jugar?\n",
+      "external_link": "External link",
       "cards": {
         "questions": {
           "title": "Preguntes",
@@ -28,6 +29,12 @@
       "contribution_details": "Aprèn perquè la teva contribució importa"
     },
     "saved_filters": "Filtres desats",
+    "saved_filters_delete": "Delete saved filter",
+    "saved_filters_delete_title": "Delete saved filter?",
+    "saved_filters_delete_description": "This saved filter will be removed from this device.",
+    "saved_filters_delete_confirm": "Elimina",
+    "saved_filters_pending": "{{count}} products waiting",
+    "saved_filters_pending_unknown": "Products waiting",
     "contribution_modal": {
       "title": "La teva contribució és important",
       "information": "Els jocs de la fam són un intent d'aprofitar els resultats del nostre OCR i intel·ligència artificial. Quan feu servir els Jocs de la fam d'Open Food Facts, milloreu tota la nostra base de dades, que alhora ajuda a la comunitat a prendre millors decisions alimentàries. Recollim les vostres anotacions i les utilitzem per fer que Open Food Facts sigui més precís i eficient.",
@@ -35,6 +42,12 @@
     },
     "statistics": {
       "title": "Estadístiques de {{userName}}:",
+      "title_without_name": "Your statistics",
+      "empty_state": {
+        "title": "No contributions yet",
+        "description": "Your contribution statistics will appear here once you start helping improve Open Food Facts.",
+        "action": "Start contributing"
+      },
       "editorCount": {
         "title": "Editor",
         "description": "Nombre d'edicions fetes"
@@ -207,6 +220,17 @@
     "view_crops_for_this_product": "Anotar els logotips dels productes"
   },
   "logos": {
+    "dashboard": {
+      "title": "Logo dashboard",
+      "description": "Explore logo categories and help improve product data.",
+      "category": "Categoria",
+      "categories": "Categories",
+      "logo_count_one": "{{count}} logo",
+      "logo_count_other": "{{count}} logos",
+      "more_info": "More info",
+      "questions": "Preguntes",
+      "search": "Cerca"
+    },
     "annotation": "Anotació: ",
     "annotations": "Indicacions de logo",
     "task_description": "Seleccioneu tots els logotips que siguin exactament iguals i doneu-los un nom com \"en:EU Orgànic\" i un tipus com \"etiqueta\".",
@@ -251,6 +275,8 @@
       "title": "Cerca de logotips",
       "description": "Selecciona un logotip que vulguis buscar, i comença a atrapar-los tots. Per a cada logotip que anotis, buscarem els seus veïns de manera que mai deixaràs d'anotar. (Premeu Majúscules per a seleccionar l'interval dels logotips)",
       "ref_logos": "Logotips de referència (logotip ja anotat amb aquest valor)",
+      "annotation_count_one": "Already {{formattedCount}} annotation. You can come back to this logo in a few days if you don't find any matching logos.",
+      "annotation_count_other": "Already {{formattedCount}} annotations. You can come back to this logo in a few days if you don't find any matching logos.",
       "remaining": "Pendent d'anotar",
       "select_all": "Seleccionar Tot",
       "unselect_all": "Deseleccionar Tot"
