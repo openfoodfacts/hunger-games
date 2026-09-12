@@ -2,6 +2,7 @@
   "home": {
     "game_selector": {
       "title": "Kokį žaidimą norėtumėte žaisti?",
+      "external_link": "External link",
       "cards": {
         "questions": {
           "title": "Klausimai",
@@ -28,6 +29,12 @@
       "contribution_details": "Sužinokite, kodėl jūsų indėlis yra svarbus"
     },
     "saved_filters": "Įrašyti filtrai",
+    "saved_filters_delete": "Delete saved filter",
+    "saved_filters_delete_title": "Delete saved filter?",
+    "saved_filters_delete_description": "This saved filter will be removed from this device.",
+    "saved_filters_delete_confirm": "Ištrinti",
+    "saved_filters_pending": "{{count}} products waiting",
+    "saved_filters_pending_unknown": "Products waiting",
     "contribution_modal": {
       "title": "Jūsų indėlis yra svarbus",
       "information": "„Hunger Games“ – tai pastangos panaudoti mūsų OCR ir dirbtinio intelekto rezultatus. Naudodami „Hunger Games“ pagal „Open Food Facts“, tobulinate visą mūsų duomenų bazę, kuri padeda bendruomenei geriau pasirinkti maistą. Renkame jūsų anotacijas ir naudojame juos, kad „Open Food Facts“ būtų tikslesnis ir veiksmingesnis.",
@@ -35,6 +42,12 @@
     },
     "statistics": {
       "title": "{{userName}} statistika:",
+      "title_without_name": "Your statistics",
+      "empty_state": {
+        "title": "No contributions yet",
+        "description": "Your contribution statistics will appear here once you start helping improve Open Food Facts.",
+        "action": "Start contributing"
+      },
       "editorCount": {
         "title": "Radaguotojas",
         "description": "Atliktų redagavimų skaičius"
@@ -207,6 +220,17 @@
     "view_crops_for_this_product": "Annotate product logos"
   },
   "logos": {
+    "dashboard": {
+      "title": "Logo dashboard",
+      "description": "Explore logo categories and help improve product data.",
+      "category": "Kategorija",
+      "categories": "Kategorijos",
+      "logo_count_one": "{{count}} logo",
+      "logo_count_other": "{{count}} logos",
+      "more_info": "More info",
+      "questions": "Klausimai",
+      "search": "Paieška"
+    },
     "annotation": "Anotacija: ",
     "annotations": "Logotipo anotacijos",
     "task_description": "Pasirinkite visus logotipus, kurie yra visiškai vienodi, ir suteikite jiems pavadinimą, pvz., „en:EU Organic“ ir tipą, pvz., „etiketė“.",
@@ -251,6 +275,8 @@
       "title": "Logotipo paieška",
       "description": "Select a logo you want to look for, and let's go to catch them all. For every logo you annotate, we will fetch it's neighbors such that you might never stop to annotate. (Press Shift to select range of logos)",
       "ref_logos": "Reference logos (logo already annotated with this value)",
+      "annotation_count_one": "Already {{formattedCount}} annotation. You can come back to this logo in a few days if you don't find any matching logos.",
+      "annotation_count_other": "Already {{formattedCount}} annotations. You can come back to this logo in a few days if you don't find any matching logos.",
       "remaining": "Liko komentuoti",
       "select_all": "Pažymėti visus",
       "unselect_all": "Atžymėti visus"
