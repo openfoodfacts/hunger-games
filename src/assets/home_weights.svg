@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="wtBgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc" />
+      <stop offset="100%" stop-color="#e2e8f0" />
+    </linearGradient>
+    <linearGradient id="wtBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#1d4ed8" />
+    </linearGradient>
+    <linearGradient id="wtCyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#0e7490" />
+    </linearGradient>
+    <linearGradient id="wtGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#f59e0b" />
+    </linearGradient>
+    <filter id="wtShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#0f172a" flood-opacity="0.1" />
+    </filter>
+    <filter id="wtScaleShadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#1e293b" flood-opacity="0.15" />
+    </filter>
+  </defs>
+
+  <!-- Background Base Container -->
+  <rect width="350" height="200" rx="16" fill="url(#wtBgGrad)" />
+
+  <!-- Main Card Container -->
+  <g filter="url(#wtShadow)">
+    <rect x="36" y="20" width="278" height="160" rx="14" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" />
+  </g>
+
+  <!-- Header Banner -->
+  <rect x="36" y="20" width="278" height="34" rx="14" fill="#f8fafc" />
+  <rect x="36" y="40" width="278" height="14" fill="#f8fafc" />
+  <line x1="36" y1="54" x2="314" y2="54" stroke="#f1f5f9" stroke-width="1" />
+
+  <g transform="translate(52, 28)">
+    <rect width="20" height="18" rx="5" fill="url(#wtCyan)" />
+    <!-- Scale icon -->
+    <path d="M5 13 H15 M10 7 V13 M6 7 H14" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" />
+    <text x="28" y="14" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" fill="#0f172a">Weights & Measures</text>
+
+    <!-- Question Tag -->
+    <rect x="178" y="2" width="70" height="16" rx="8" fill="#ecfeff" />
+    <text x="213" y="13" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="700" fill="#0891b2" text-anchor="middle">NET WEIGHT</text>
+  </g>
+
+  <!-- Digital Scale & Product Visualization -->
+  <g transform="translate(75, 58)">
+    <!-- Food Product on Scale -->
+    <g transform="translate(50, 6)">
+      <!-- Package Body -->
+      <rect x="0" y="0" width="64" height="48" rx="6" fill="url(#wtGold)" stroke="#d97706" stroke-width="1" />
+      <rect x="8" y="12" width="48" height="24" rx="4" fill="#ffffff" opacity="0.9" />
+      <text x="32" y="27" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="800" fill="#b45309" text-anchor="middle">CEREAL</text>
+      <text x="32" y="42" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8" font-weight="700" fill="#475569" text-anchor="middle">℮ 500 g</text>
+    </g>
+
+    <!-- Kitchen Scale Platform (Plate) -->
+    <g transform="translate(18, 54)">
+      <ellipse cx="82" cy="4" rx="82" ry="6" fill="#e2e8f0" stroke="#94a3b8" stroke-width="1.2" />
+      <ellipse cx="82" cy="2" rx="80" ry="5" fill="#f1f5f9" />
+    </g>
+
+    <!-- Scale Base / Body -->
+    <g transform="translate(30, 60)" filter="url(#wtScaleShadow)">
+      <rect x="0" y="0" width="140" height="42" rx="10" fill="#1e293b" />
+      
+      <!-- Digital LCD Display Panel -->
+      <rect x="35" y="8" width="70" height="26" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1" />
+      
+      <!-- Digital LCD Green Weight Glow -->
+      <text x="66" y="26" font-family="'Courier New', Courier, monospace" font-size="16" font-weight="900" fill="#10b981" text-anchor="middle" letter-spacing="1">500.0</text>
+      <text x="96" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="700" fill="#34d399">g</text>
+
+      <!-- Unit button & Tare buttons -->
+      <circle cx="20" cy="21" r="5" fill="#334155" />
+      <text x="20" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="5" font-weight="700" fill="#94a3b8" text-anchor="middle">TARE</text>
+
+      <circle cx="120" cy="21" r="5" fill="#334155" />
+      <text x="120" y="23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="5" font-weight="700" fill="#94a3b8" text-anchor="middle">UNIT</text>
+    </g>
+  </g>
+
+  <!-- Official 'e' mark badge (Estimated sign) on right -->
+  <g transform="translate(244, 76)" filter="url(#wtScaleShadow)">
+    <circle cx="24" cy="24" r="22" fill="url(#wtBlue)" />
+    <!-- Lowercase bold 'e' -->
+    <text x="24" y="32" font-family="Georgia, serif" font-size="26" font-weight="900" fill="#ffffff" text-anchor="middle">℮</text>
+    <rect x="-4" y="52" width="56" height="16" rx="8" fill="#dbeafe" />
+    <text x="24" y="63" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8" font-weight="800" fill="#1e40af" text-anchor="middle">ACCURATE</text>
+  </g>
+
+  <!-- Decorative Sparkles -->
+  <circle cx="26" cy="36" r="3" fill="#0891b2" opacity="0.4" />
+  <circle cx="326" cy="168" r="4" fill="#3b82f6" opacity="0.5" />
+</svg>

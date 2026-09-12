@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="nuBgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ecfdf5" />
+      <stop offset="100%" stop-color="#d1fae5" />
+    </linearGradient>
+    <linearGradient id="nuEmerald" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    <linearGradient id="nuBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#1d4ed8" />
+    </linearGradient>
+    <filter id="nuShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#064e3b" flood-opacity="0.1" />
+    </filter>
+  </defs>
+
+  <!-- Background Base Container -->
+  <rect width="350" height="200" rx="16" fill="url(#nuBgGrad)" />
+
+  <!-- Main Nutrition Table Card -->
+  <g filter="url(#nuShadow)">
+    <rect x="36" y="16" width="278" height="168" rx="14" fill="#ffffff" stroke="#a7f3d0" stroke-width="1.5" />
+  </g>
+
+  <!-- Table Header Bar -->
+  <rect x="36" y="16" width="278" height="36" rx="14" fill="#065f46" />
+  <rect x="36" y="36" width="278" height="16" fill="#065f46" />
+
+  <!-- Header Title -->
+  <g transform="translate(52, 28)">
+    <circle cx="8" cy="8" r="8" fill="#10b981" />
+    <!-- Leaf / Heart symbol -->
+    <path d="M8 4 C6 4 4 6 8 11 C12 6 10 4 8 4 Z" fill="#ffffff" />
+    <text x="24" y="12" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="900" fill="#ffffff" letter-spacing="0.5">NUTRITION FACTS</text>
+    
+    <!-- Per 100g Pill -->
+    <rect x="180" y="-1" width="68" height="18" rx="9" fill="#047857" />
+    <text x="214" y="12" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="800" fill="#a7f3d0" text-anchor="middle">PER 100g</text>
+  </g>
+
+  <!-- Nutrition Rows -->
+  <g transform="translate(52, 60)">
+    <!-- Row 1: Energy -->
+    <rect x="0" y="0" width="246" height="20" rx="4" fill="#f8fafc" />
+    <text x="8" y="14" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="700" fill="#1e293b">Energy</text>
+    <text x="186" y="14" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="700" fill="#047857" text-anchor="end">1840 kJ / 440 kcal</text>
+    <circle cx="236" cy="10" r="5" fill="#10b981" />
+    <path d="M233 10 L235 12 L239 8" stroke="#ffffff" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+
+    <!-- Row 2: Fat -->
+    <line x1="0" y1="21" x2="246" y2="21" stroke="#f1f5f9" stroke-width="1" />
+    <text x="8" y="34" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="#334155">Fat</text>
+    <text x="186" y="34" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="#334155" text-anchor="end">18 g</text>
+    <circle cx="236" cy="30" r="5" fill="#10b981" />
+    <path d="M233 30 L235 32 L239 28" stroke="#ffffff" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+
+    <!-- Row 3: Carbohydrates & Sugars -->
+    <rect x="0" y="41" width="246" height="20" rx="4" fill="#f8fafc" />
+    <text x="8" y="55" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="#334155">Carbohydrates (Sugars: 24g)</text>
+    <text x="186" y="55" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="#334155" text-anchor="end">64 g</text>
+    <circle cx="236" cy="51" r="5" fill="#10b981" />
+    <path d="M233 51 L235 53 L239 49" stroke="#ffffff" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+
+    <!-- Row 4: Proteins -->
+    <line x1="0" y1="62" x2="246" y2="62" stroke="#f1f5f9" stroke-width="1" />
+    <text x="8" y="75" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="#334155">Proteins</text>
+    <text x="186" y="75" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="#334155" text-anchor="end">7.2 g</text>
+    <circle cx="236" cy="71" r="5" fill="#10b981" />
+    <path d="M233 71 L235 73 L239 69" stroke="#ffffff" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+
+    <!-- Row 5: Salt -->
+    <rect x="0" y="82" width="246" height="20" rx="4" fill="#f8fafc" />
+    <text x="8" y="96" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="#334155">Salt</text>
+    <text x="186" y="96" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="#334155" text-anchor="end">0.45 g</text>
+    <circle cx="236" cy="92" r="5" fill="#10b981" />
+    <path d="M233 92 L235 94 L239 90" stroke="#ffffff" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+  </g>
+
+  <!-- Bottom Verification Footer -->
+  <g transform="translate(52, 166)">
+    <text x="0" y="10" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="600" fill="#059669">✓ 5 / 5 NUTRIENTS EXTRACTED</text>
+  </g>
+
+  <!-- Decorative Corner Dots -->
+  <circle cx="22" cy="28" r="3" fill="#10b981" opacity="0.4" />
+  <circle cx="328" cy="30" r="4" fill="#34d399" opacity="0.5" />
+  <circle cx="324" cy="172" r="3" fill="#059669" opacity="0.4" />
+</svg>

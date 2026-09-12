@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="scBgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f3ff" />
+      <stop offset="100%" stop-color="#ede9fe" />
+    </linearGradient>
+    <linearGradient id="scIndigo" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1" />
+      <stop offset="100%" stop-color="#4f46e5" />
+    </linearGradient>
+    <linearGradient id="scGreen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    <filter id="scShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#1e1b4b" flood-opacity="0.08" />
+    </filter>
+    <filter id="scPopupShadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#312e81" flood-opacity="0.14" />
+    </filter>
+  </defs>
+
+  <!-- Background Base Container -->
+  <rect width="350" height="200" rx="16" fill="url(#scBgGrad)" />
+
+  <!-- Main Note / Text Document Card -->
+  <g filter="url(#scShadow)">
+    <rect x="36" y="20" width="278" height="160" rx="14" fill="#ffffff" stroke="#e0e7ff" stroke-width="1.5" />
+  </g>
+
+  <!-- Document Header Bar -->
+  <rect x="36" y="20" width="278" height="34" rx="14" fill="#f8fafc" />
+  <rect x="36" y="40" width="278" height="14" fill="#f8fafc" />
+  <line x1="36" y1="54" x2="314" y2="54" stroke="#e2e8f0" stroke-width="1" />
+
+  <!-- Document Header Content -->
+  <g transform="translate(52, 28)">
+    <rect width="20" height="18" rx="5" fill="url(#scIndigo)" />
+    <text x="10" y="13" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="900" fill="#ffffff" text-anchor="middle">A</text>
+    <text x="28" y="14" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" fill="#334155">Ingredients List OCR</text>
+    <!-- Badge -->
+    <rect x="182" y="2" width="66" height="16" rx="8" fill="#e0e7ff" />
+    <text x="215" y="13" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="700" fill="#4338ca" text-anchor="middle">SPELLCHECK</text>
+  </g>
+
+  <!-- Simulated OCR text lines with typo and correction -->
+  <g transform="translate(54, 70)">
+    <text x="0" y="14" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="500" fill="#475569">
+      Wheat flour, <tspan font-weight="700" fill="#dc2626">surgar</tspan>, vegetable oil,
+    </text>
+    <!-- Squiggly underline under "surgar" -->
+    <path d="M82 19 Q85 17 88 19 T94 19 T100 19 T106 19 T112 19 T118 19 T124 19" fill="none" stroke="#ef4444" stroke-width="1.8" stroke-linecap="round" />
+
+    <text x="0" y="38" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="400" fill="#64748b">
+      cocoa mass, whole milk powder, salt,
+    </text>
+    <text x="0" y="60" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="400" fill="#94a3b8">
+      emulsifier (soy lecithin), natural flavor.
+    </text>
+  </g>
+
+  <!-- Floating Suggestion Tooltip Bubble -->
+  <g transform="translate(130, 96)" filter="url(#scPopupShadow)">
+    <!-- Tooltip beak -->
+    <polygon points="26,0 20,-7 32,-7" fill="#1e1b4b" />
+    <!-- Tooltip body -->
+    <rect x="0" y="-36" width="138" height="34" rx="10" fill="#1e1b4b" />
+    <!-- Check icon circle -->
+    <circle cx="20" cy="-19" r="9" fill="url(#scGreen)" />
+    <path d="M15 -19 L19 -15 L26 -22" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <!-- Suggestion text -->
+    <text x="36" y="-23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="500" fill="#94a3b8">Replace with:</text>
+    <text x="36" y="-11" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="800" fill="#34d399">sugar</text>
+    <!-- Action key pill -->
+    <rect x="88" y="-28" width="42" height="18" rx="6" fill="#312e81" />
+    <text x="109" y="-16" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="700" fill="#c7d2fe" text-anchor="middle">APPLY ↵</text>
+  </g>
+
+  <!-- Editing Pencil Stylus Tool (Right) -->
+  <g transform="translate(254, 118) rotate(-35)">
+    <rect x="0" y="0" width="12" height="42" rx="3" fill="url(#scIndigo)" />
+    <polygon points="0,42 12,42 6,52" fill="#fbbf24" />
+    <polygon points="4,49 8,49 6,52" fill="#1e293b" />
+    <rect x="0" y="0" width="12" height="8" rx="2" fill="#f43f5e" />
+  </g>
+
+  <!-- Decorative Sparkles -->
+  <circle cx="24" cy="40" r="3" fill="#818cf8" opacity="0.5" />
+  <circle cx="326" cy="30" r="4" fill="#a78bfa" opacity="0.6" />
+  <circle cx="328" cy="172" r="3" fill="#34d399" opacity="0.5" />
+</svg>

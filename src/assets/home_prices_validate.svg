@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="pvBgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#faf5ff" />
+      <stop offset="100%" stop-color="#f3e8ff" />
+    </linearGradient>
+    <linearGradient id="pvPurple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8b5cf6" />
+      <stop offset="100%" stop-color="#6d28d9" />
+    </linearGradient>
+    <linearGradient id="pvGreen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    <linearGradient id="pvGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#f59e0b" />
+    </linearGradient>
+    <filter id="pvShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#4c1d95" flood-opacity="0.12" />
+    </filter>
+    <filter id="pvBadgeShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#0f172a" flood-opacity="0.16" />
+    </filter>
+  </defs>
+
+  <!-- Background Base Container -->
+  <rect width="350" height="200" rx="16" fill="url(#pvBgGrad)" />
+
+  <!-- Paper Receipt (Center Left) -->
+  <g transform="translate(48, 16)" filter="url(#pvShadow)">
+    <!-- Main white receipt body -->
+    <path d="M0 0 H180 V156 L170 166 L160 156 L150 166 L140 156 L130 166 L120 156 L110 166 L100 156 L90 166 L80 156 L70 166 L60 156 L50 166 L40 156 L30 166 L20 156 L10 166 L0 156 Z" fill="#ffffff" stroke="#e9d5ff" stroke-width="1.2" />
+
+    <!-- Store / Header on Receipt -->
+    <text x="90" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="900" fill="#4c1d95" text-anchor="middle" letter-spacing="1">SUPERMARKET RECEIPT</text>
+    <line x1="16" y1="32" x2="164" y2="32" stroke="#f3e8ff" stroke-width="1.5" stroke-dasharray="4 2" />
+
+    <!-- Receipt Line Items with Price Tags -->
+    <g transform="translate(16, 48)">
+      <text x="0" y="0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="500" fill="#475569">Bio Oatmeal 500g</text>
+      <text x="148" y="0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="700" fill="#1e1b4b" text-anchor="end">1.89 €</text>
+
+      <text x="0" y="18" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="500" fill="#475569">Almond Milk 1L</text>
+      <text x="148" y="18" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="700" fill="#1e1b4b" text-anchor="end">2.15 €</text>
+
+      <!-- Highlighted Price in validation box -->
+      <rect x="-4" y="26" width="156" height="24" rx="4" fill="#ede9fe" stroke="#c084fc" stroke-width="1.2" />
+      <text x="4" y="42" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="700" fill="#6d28d9">Orange Juice 1L</text>
+      <text x="148" y="42" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="900" fill="#7c3aed" text-anchor="end">2.49 €</text>
+
+      <text x="0" y="66" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="500" fill="#475569">Dark Chocolate 100g</text>
+      <text x="148" y="66" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="700" fill="#1e1b4b" text-anchor="end">1.60 €</text>
+    </g>
+
+    <!-- Barcode at bottom of receipt -->
+    <g transform="translate(42, 130)" opacity="0.6">
+      <line x1="0" y1="0" x2="0" y2="16" stroke="#1e1b4b" stroke-width="2" />
+      <line x1="5" y1="0" x2="5" y2="16" stroke="#1e1b4b" stroke-width="1" />
+      <line x1="9" y1="0" x2="9" y2="16" stroke="#1e1b4b" stroke-width="3" />
+      <line x1="16" y1="0" x2="16" y2="16" stroke="#1e1b4b" stroke-width="1.5" />
+      <line x1="22" y1="0" x2="22" y2="16" stroke="#1e1b4b" stroke-width="2" />
+      <line x1="28" y1="0" x2="28" y2="16" stroke="#1e1b4b" stroke-width="3.5" />
+      <line x1="35" y1="0" x2="35" y2="16" stroke="#1e1b4b" stroke-width="1" />
+      <line x1="42" y1="0" x2="42" y2="16" stroke="#1e1b4b" stroke-width="2" />
+      <line x1="48" y1="0" x2="48" y2="16" stroke="#1e1b4b" stroke-width="1.5" />
+      <line x1="54" y1="0" x2="54" y2="16" stroke="#1e1b4b" stroke-width="3" />
+      <line x1="62" y1="0" x2="62" y2="16" stroke="#1e1b4b" stroke-width="1.5" />
+      <line x1="70" y1="0" x2="70" y2="16" stroke="#1e1b4b" stroke-width="2.5" />
+      <line x1="78" y1="0" x2="78" y2="16" stroke="#1e1b4b" stroke-width="2" />
+      <line x1="86" y1="0" x2="86" y2="16" stroke="#1e1b4b" stroke-width="1" />
+      <line x1="94" y1="0" x2="94" y2="16" stroke="#1e1b4b" stroke-width="2.5" />
+    </g>
+  </g>
+
+  <!-- Open Prices Brand Pill / Shield (Right Side) -->
+  <g transform="translate(230, 48)" filter="url(#pvBadgeShadow)">
+    <!-- Circular Shield / Stamp -->
+    <circle cx="45" cy="45" r="42" fill="url(#pvPurple)" />
+    <circle cx="45" cy="45" r="37" fill="#ffffff" stroke="#c084fc" stroke-width="2" />
+    <circle cx="45" cy="45" r="32" fill="url(#pvGreen)" />
+
+    <!-- Big Checkmark -->
+    <path d="M33 45 L41 53 L57 37" fill="none" stroke="#ffffff" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" />
+
+    <!-- Verification text below circle -->
+    <g transform="translate(0, 96)">
+      <rect x="0" y="0" width="90" height="22" rx="11" fill="url(#pvPurple)" />
+      <text x="45" y="15" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="900" fill="#ffffff" text-anchor="middle" letter-spacing="0.5">OPEN PRICES</text>
+    </g>
+  </g>
+
+  <!-- Currency Coin Accent -->
+  <g transform="translate(222, 22)" filter="url(#pvBadgeShadow)">
+    <circle cx="14" cy="14" r="14" fill="url(#pvGold)" />
+    <text x="14" y="19" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="900" fill="#78350f" text-anchor="middle">€</text>
+  </g>
+
+  <!-- Decorative Sparkles -->
+  <circle cx="26" cy="36" r="3" fill="#8b5cf6" opacity="0.4" />
+  <circle cx="328" cy="168" r="4" fill="#10b981" opacity="0.5" />
+  <circle cx="330" cy="30" r="3" fill="#c084fc" opacity="0.5" />
+</svg>

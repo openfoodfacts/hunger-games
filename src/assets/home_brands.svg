@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="brBgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff1f2" />
+      <stop offset="100%" stop-color="#ffe4e6" />
+    </linearGradient>
+    <linearGradient id="brRed" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f43f5e" />
+      <stop offset="100%" stop-color="#e11d48" />
+    </linearGradient>
+    <linearGradient id="brGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+    <filter id="brShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#881337" flood-opacity="0.1" />
+    </filter>
+    <filter id="brBadgeShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#9f1239" flood-opacity="0.2" />
+    </filter>
+  </defs>
+
+  <!-- Background Base Container -->
+  <rect width="350" height="200" rx="16" fill="url(#brBgGrad)" />
+
+  <!-- Main Card Container -->
+  <g filter="url(#brShadow)">
+    <rect x="36" y="20" width="278" height="160" rx="14" fill="#ffffff" stroke="#fecdd3" stroke-width="1.5" />
+  </g>
+
+  <!-- Header Banner -->
+  <rect x="36" y="20" width="278" height="34" rx="14" fill="#fff1f2" />
+  <rect x="36" y="40" width="278" height="14" fill="#fff1f2" />
+  <line x1="36" y1="54" x2="314" y2="54" stroke="#fce7f3" stroke-width="1" />
+
+  <g transform="translate(52, 28)">
+    <rect width="20" height="18" rx="5" fill="url(#brRed)" />
+    <!-- Tag icon -->
+    <path d="M6 5 H12 L15 8 L9 14 L6 11 Z" fill="#ffffff" />
+    <circle cx="8" cy="7" r="1" fill="#e11d48" />
+    <text x="28" y="14" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" fill="#0f172a">Brand Recognition</text>
+
+    <!-- Question Tag -->
+    <rect x="186" y="2" width="62" height="16" rx="8" fill="#ffe4e6" />
+    <text x="217" y="13" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="700" fill="#e11d48" text-anchor="middle">BRANDS</text>
+  </g>
+
+  <!-- Center Brand Crest & Shields -->
+  <g transform="translate(68, 64)">
+    <!-- Left Small Brand Ribbon (Rotated) -->
+    <g transform="translate(10, 20) rotate(-6)">
+      <rect width="64" height="68" rx="10" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1.2" />
+      <rect x="0" y="0" width="64" height="18" rx="10" fill="#64748b" />
+      <rect x="0" y="8" width="64" height="10" fill="#64748b" />
+      <text x="32" y="13" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="7" font-weight="800" fill="#ffffff" text-anchor="middle">ORIGINAL</text>
+      <!-- Store icon -->
+      <path d="M22 32 H42 L40 48 H24 Z" fill="#cbd5e1" />
+      <text x="32" y="58" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="7" font-weight="700" fill="#64748b" text-anchor="middle">MAKER</text>
+    </g>
+
+    <!-- Center Grand Brand Shield -->
+    <g transform="translate(68, 0)" filter="url(#brBadgeShadow)">
+      <!-- Crest Shield shape -->
+      <path d="M0 0 H80 V48 C80 68 40 82 40 82 C40 82 0 68 0 48 Z" fill="#ffffff" stroke="#e11d48" stroke-width="2" />
+      <path d="M4 4 H76 V46 C76 64 40 76 40 76 C40 76 4 64 4 46 Z" fill="url(#brRed)" />
+
+      <!-- Gold Star on Crest -->
+      <g transform="translate(40, 26)">
+        <circle cx="0" cy="0" r="14" fill="url(#brGold)" />
+        <polygon points="0,-8 3,-2 9,-1 5,3 6,9 0,6 -6,9 -5,3 -9,-1 -3,-2" fill="#ffffff" />
+      </g>
+
+      <!-- Ribbon at bottom of shield -->
+      <g transform="translate(-10, 52)">
+        <rect x="10" y="0" width="80" height="20" rx="4" fill="#fbbf24" stroke="#d97706" stroke-width="1" />
+        <text x="50" y="14" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="900" fill="#78350f" text-anchor="middle" letter-spacing="1">VERIFIED</text>
+      </g>
+    </g>
+
+    <!-- Right Brand Badge with ® (Registered Trademark) -->
+    <g transform="translate(156, 12)" filter="url(#brBadgeShadow)">
+      <circle cx="26" cy="26" r="24" fill="#ffffff" stroke="#f43f5e" stroke-width="1.8" />
+      <circle cx="26" cy="26" r="20" fill="#ffe4e6" />
+      <!-- Big Registered symbol ® -->
+      <text x="26" y="34" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="22" font-weight="900" fill="#be123c" text-anchor="middle">®</text>
+      <!-- Sub-label -->
+      <rect x="2" y="56" width="48" height="16" rx="8" fill="#fecdd3" />
+      <text x="26" y="67" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="7.5" font-weight="800" fill="#9f1239" text-anchor="middle">TRADEMARK</text>
+    </g>
+  </g>
+
+  <!-- Decorative Sparkles -->
+  <circle cx="24" cy="36" r="3" fill="#f43f5e" opacity="0.4" />
+  <circle cx="328" cy="166" r="4" fill="#fbbf24" opacity="0.5" />
+</svg>

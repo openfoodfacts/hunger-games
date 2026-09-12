@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="pfBgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fffbeb" />
+      <stop offset="100%" stop-color="#fef3c7" />
+    </linearGradient>
+    <linearGradient id="pfAmber" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+    <linearGradient id="pfOrange" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fb923c" />
+      <stop offset="100%" stop-color="#ea580c" />
+    </linearGradient>
+    <filter id="pfShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#78350f" flood-opacity="0.12" />
+    </filter>
+    <filter id="pfBadgeShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#92400e" flood-opacity="0.18" />
+    </filter>
+  </defs>
+
+  <!-- Background Base Container -->
+  <rect width="350" height="200" rx="16" fill="url(#pfBgGrad)" />
+
+  <!-- Main Card Container -->
+  <g filter="url(#pfShadow)">
+    <rect x="36" y="20" width="278" height="160" rx="14" fill="#ffffff" stroke="#fde68a" stroke-width="1.5" />
+  </g>
+
+  <!-- Header Banner -->
+  <rect x="36" y="20" width="278" height="34" rx="14" fill="#fffbeb" />
+  <rect x="36" y="40" width="278" height="14" fill="#fffbeb" />
+  <line x1="36" y1="54" x2="314" y2="54" stroke="#fef3c7" stroke-width="1" />
+
+  <g transform="translate(52, 28)">
+    <rect width="20" height="18" rx="5" fill="url(#pfAmber)" />
+    <!-- Paw icon in small rect -->
+    <ellipse cx="10" cy="11" rx="3.5" ry="2.5" fill="#ffffff" />
+    <circle cx="6.5" cy="7" r="1.2" fill="#ffffff" />
+    <circle cx="9" cy="5.5" r="1.2" fill="#ffffff" />
+    <circle cx="11.5" cy="5.5" r="1.2" fill="#ffffff" />
+    <circle cx="14" cy="7" r="1.2" fill="#ffffff" />
+    <text x="28" y="14" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" fill="#0f172a">Open Pet Food Facts</text>
+
+    <!-- Sister Project Tag -->
+    <rect x="174" y="2" width="74" height="16" rx="8" fill="#fef3c7" />
+    <text x="211" y="13" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="700" fill="#b45309" text-anchor="middle">PET FOOD</text>
+  </g>
+
+  <!-- Pet Items Lineup -->
+  <g transform="translate(52, 64)">
+    <!-- 1. Pet Food Can / Tin (Left) -->
+    <g transform="translate(10, 8)">
+      <!-- Can Body -->
+      <rect x="0" y="8" width="38" height="56" rx="6" fill="#fed7aa" stroke="#f97316" stroke-width="1" />
+      <ellipse cx="19" cy="8" rx="19" ry="4" fill="#ffedd5" stroke="#f97316" stroke-width="1" />
+      <ellipse cx="19" cy="64" rx="19" ry="4" fill="#fb923c" />
+      <!-- Fish silhouette on label -->
+      <rect x="4" y="22" width="30" height="26" rx="3" fill="#ffffff" />
+      <!-- Fish shape -->
+      <path d="M12 35 C17 31 24 31 28 35 C24 39 17 39 12 35 Z M28 35 L32 31 V39 Z" fill="#ea580c" />
+      <circle cx="16" cy="34" r="0.8" fill="#ffffff" />
+    </g>
+
+    <!-- 2. Pet Feeding Bowl with Food (Center) -->
+    <g transform="translate(68, 16)">
+      <!-- Food mound -->
+      <ellipse cx="44" cy="30" rx="32" ry="14" fill="#92400e" />
+      <!-- Kibble bits -->
+      <circle cx="36" cy="24" r="2.5" fill="#b45309" />
+      <circle cx="48" cy="22" r="3" fill="#b45309" />
+      <circle cx="58" cy="26" r="2.5" fill="#78350f" />
+      <circle cx="30" cy="29" r="2" fill="#78350f" />
+      <circle cx="42" cy="28" r="2.8" fill="#b45309" />
+      <!-- Bowl Rim -->
+      <ellipse cx="44" cy="34" rx="42" ry="10" fill="#cbd5e1" stroke="#94a3b8" stroke-width="1" />
+      <ellipse cx="44" cy="33" rx="40" ry="8" fill="#f1f5f9" />
+      <!-- Bowl Body -->
+      <path d="M4 34 L12 58 C12 64 26 68 44 68 C62 68 76 64 76 58 L84 34 Z" fill="url(#pfAmber)" stroke="#d97706" stroke-width="1.2" />
+      <!-- Paw print on Bowl front -->
+      <ellipse cx="44" cy="52" rx="5" ry="3.5" fill="#ffffff" />
+      <circle cx="39" cy="46" r="1.6" fill="#ffffff" />
+      <circle cx="42.5" cy="44" r="1.6" fill="#ffffff" />
+      <circle cx="46" cy="44" r="1.6" fill="#ffffff" />
+      <circle cx="49" cy="46" r="1.6" fill="#ffffff" />
+    </g>
+
+    <!-- 3. Big Gold Paw Medal & Dispatch Pill (Right) -->
+    <g transform="translate(182, 0)" filter="url(#pfBadgeShadow)">
+      <circle cx="28" cy="28" r="26" fill="url(#pfOrange)" />
+      <!-- White Paw Print -->
+      <ellipse cx="28" cy="32" rx="9" ry="6.5" fill="#ffffff" />
+      <circle cx="19" cy="21" r="3.2" fill="#ffffff" />
+      <circle cx="25" cy="17" r="3.2" fill="#ffffff" />
+      <circle cx="31" cy="17" r="3.2" fill="#ffffff" />
+      <circle cx="37" cy="21" r="3.2" fill="#ffffff" />
+
+      <!-- Move Pill Below -->
+      <g transform="translate(4, 64)">
+        <rect width="48" height="22" rx="11" fill="url(#pfAmber)" />
+        <text x="24" y="15" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8.5" font-weight="900" fill="#ffffff" text-anchor="middle">MOVE ➔</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Decorative Sparkles -->
+  <circle cx="24" cy="38" r="3" fill="#f59e0b" opacity="0.4" />
+  <circle cx="328" cy="168" r="4" fill="#ea580c" opacity="0.5" />
+</svg>
