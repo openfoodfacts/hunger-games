@@ -2,6 +2,7 @@
   "home": {
     "game_selector": {
       "title": "Milyen játékot szeretne játszani?",
+      "external_link": "External link",
       "cards": {
         "questions": {
           "title": "Kérdések",
@@ -28,6 +29,12 @@
       "contribution_details": "Tudja meg, miért számít hozzájárulása"
     },
     "saved_filters": "Elmentett szűrők",
+    "saved_filters_delete": "Delete saved filter",
+    "saved_filters_delete_title": "Delete saved filter?",
+    "saved_filters_delete_description": "This saved filter will be removed from this device.",
+    "saved_filters_delete_confirm": "Törlés",
+    "saved_filters_pending": "{{count}} products waiting",
+    "saved_filters_pending_unknown": "Products waiting",
     "contribution_modal": {
       "title": "Számít az ön hozzájárulása",
       "information": "A Hunger Games célja, hogy kihasználja a karakterfelismerés és a mesterséges intelligencia képességeit. A Hunger Games by Open Food Facts használatával javítja a teljes adatbázisunkat, amely segít a közösségnek jobb élelmiszereket választani. Összegyűjtjük a megjegyzéseit, és felhasználjuk őket az Open Food Facts pontosabbá és hatékonyabbá tételéhez.",
@@ -35,6 +42,12 @@
     },
     "statistics": {
       "title": "{{userName}} statisztikája:",
+      "title_without_name": "Your statistics",
+      "empty_state": {
+        "title": "No contributions yet",
+        "description": "Your contribution statistics will appear here once you start helping improve Open Food Facts.",
+        "action": "Start contributing"
+      },
       "editorCount": {
         "title": "Szerkesztő",
         "description": "Elvégzett szerkesztések száma"
@@ -207,6 +220,17 @@
     "view_crops_for_this_product": "Terméklogók annotálása"
   },
   "logos": {
+    "dashboard": {
+      "title": "Logo dashboard",
+      "description": "Explore logo categories and help improve product data.",
+      "category": "Kategória",
+      "categories": "Kategóriák",
+      "logo_count_one": "{{count}} logo",
+      "logo_count_other": "{{count}} logos",
+      "more_info": "More info",
+      "questions": "Kérdések",
+      "search": "Keresés"
+    },
     "annotation": "Annotáció: ",
     "annotations": "Logó annotációk",
     "task_description": "Válassza ki az összes pontosan egyforma logót, és adjon nekik egy nevet, például \"en:EU Organic\" és típust, mint például \"label\".",
@@ -251,6 +275,8 @@
       "title": "Logó keresés",
       "description": "Válassza ki a keresett logót, és próbálja elkapja az összeset. Minden logóhoz, amelyet annotációt készít, lekérjük a szomszédokat, így előfordulhat, hogy soha nem áll meg az annotálással. (Nyomja meg a Shift billentyűt a logók kiválasztásához)",
       "ref_logos": "Referencialogók (ezzel az értékkel már annotált logó)",
+      "annotation_count_one": "Already {{formattedCount}} annotation. You can come back to this logo in a few days if you don't find any matching logos.",
+      "annotation_count_other": "Already {{formattedCount}} annotations. You can come back to this logo in a few days if you don't find any matching logos.",
       "remaining": "Hátralévő annotálandók",
       "select_all": "Összes kijelölése",
       "unselect_all": "Kijelölés megszüntetése"
