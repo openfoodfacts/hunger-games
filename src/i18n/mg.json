@@ -2,6 +2,7 @@
   "home": {
     "game_selector": {
       "title": "Inona no lalao tianao hatao?",
+      "external_link": "External link",
       "cards": {
         "questions": {
           "title": "Fanontaniana",
@@ -28,6 +29,12 @@
       "contribution_details": "Fantaro ny maha zava-dehibe ny fandraisanao anjara"
     },
     "saved_filters": "Sivana voatahiry",
+    "saved_filters_delete": "Delete saved filter",
+    "saved_filters_delete_title": "Delete saved filter?",
+    "saved_filters_delete_description": "This saved filter will be removed from this device.",
+    "saved_filters_delete_confirm": "Delete",
+    "saved_filters_pending": "{{count}} products waiting",
+    "saved_filters_pending_unknown": "Products waiting",
     "contribution_modal": {
       "title": "Zava-dehibe ny fandraisanao anjara",
       "information": "Ny Hunger Games dia ezaka hampiasana ny vokatry ny OCR sy ny faharanitan-tsaina artifisialy. Rehefa mampiasa Hunger Games avy amin'ny Open Food Facts ianao dia manatsara ny angonay manontolo izay manampy ny vondrom-piarahamonina hanao safidy sakafo tsara kokoa. Angoninay ny fanamarihanao ary ampiasainay mba hahatonga ny Open Food Facts ho marina sy mahomby kokoa.",
@@ -35,6 +42,12 @@
     },
     "statistics": {
       "title": "{{userName}} antontan’isa:",
+      "title_without_name": "Your statistics",
+      "empty_state": {
+        "title": "No contributions yet",
+        "description": "Your contribution statistics will appear here once you start helping improve Open Food Facts.",
+        "action": "Start contributing"
+      },
       "editorCount": {
         "title": "Editor",
         "description": "Isan'ny fanontana vita"
@@ -207,6 +220,17 @@
     "view_crops_for_this_product": "Annotate product logos"
   },
   "logos": {
+    "dashboard": {
+      "title": "Logo dashboard",
+      "description": "Explore logo categories and help improve product data.",
+      "category": "Sokajy",
+      "categories": "Sokajy",
+      "logo_count_one": "{{count}} logo",
+      "logo_count_other": "{{count}} logos",
+      "more_info": "More info",
+      "questions": "Fanontaniana",
+      "search": "Karoka"
+    },
     "annotation": "Annotation: ",
     "annotations": "Logo annotations",
     "task_description": "Safidio ny famantarana rehetra mitovy tanteraka, ary omeo anarana toy ny \"en:EU Organic\" sy karazana toy ny \"label\".",
@@ -251,6 +275,8 @@
       "title": "Fikarohana famantarana",
       "description": "Mifidiana famantarana tianao hotadiavina, ary andao haka azy rehetra. Ho an'ny famantarana rehetra apetrakao dia halainay ny mifanakaiky aminy mba tsy hijanonanao manoratra. (Tsindrio ny Shift hisafidianana karazana famantarana)",
       "ref_logos": "Reference logos (logo already annotated with this value)",
+      "annotation_count_one": "Already {{formattedCount}} annotation. You can come back to this logo in a few days if you don't find any matching logos.",
+      "annotation_count_other": "Already {{formattedCount}} annotations. You can come back to this logo in a few days if you don't find any matching logos.",
       "remaining": "Remaining to annotate",
       "select_all": "Fidio daholo",
       "unselect_all": "Esory daholo"
