@@ -2,6 +2,7 @@
   "home": {
     "game_selector": {
       "title": "W jaką grę chciałbyś zagrać?",
+      "external_link": "External link",
       "cards": {
         "questions": {
           "title": "Pytania",
@@ -28,6 +29,12 @@
       "contribution_details": "Dowiedz się, dlaczego Twój wkład ma znaczenie"
     },
     "saved_filters": "Zapisane filtry",
+    "saved_filters_delete": "Delete saved filter",
+    "saved_filters_delete_title": "Delete saved filter?",
+    "saved_filters_delete_description": "This saved filter will be removed from this device.",
+    "saved_filters_delete_confirm": "Usuń",
+    "saved_filters_pending": "{{count}} products waiting",
+    "saved_filters_pending_unknown": "Products waiting",
     "contribution_modal": {
       "title": "Twój wkład ma znaczenie",
       "information": "Igrzyska Śmierci to inicjatywa, w której wykorzystujemy nasze OCR i sztuczną inteligencję. Kiedy używasz Igrzysk Śmierci od Open Food Facts, ulepszasz całą naszą bazę danych, co pomaga społeczności podejmować lepsze wybory żywieniowe. Zbieramy twoje adnotacje i używamy ich, by Open Food Facts było bardziej dokładne i wydajne.",
@@ -35,6 +42,12 @@
     },
     "statistics": {
       "title": "Statystyki {{userName}}:",
+      "title_without_name": "Your statistics",
+      "empty_state": {
+        "title": "No contributions yet",
+        "description": "Your contribution statistics will appear here once you start helping improve Open Food Facts.",
+        "action": "Start contributing"
+      },
       "editorCount": {
         "title": "Edytor",
         "description": "Liczba wykonanych edycji"
@@ -207,6 +220,17 @@
     "view_crops_for_this_product": "Adnotuj loga produktów"
   },
   "logos": {
+    "dashboard": {
+      "title": "Logo dashboard",
+      "description": "Explore logo categories and help improve product data.",
+      "category": "Kategoria",
+      "categories": "Kategorie",
+      "logo_count_one": "{{count}} logo",
+      "logo_count_other": "{{count}} logos",
+      "more_info": "More info",
+      "questions": "Pytania",
+      "search": "Wyszukiwanie"
+    },
     "annotation": "Dodatkowe informacje: ",
     "annotations": "Adnotacje do logo",
     "task_description": "Wybierz wszystkie symbole, które są dokładnie takie same, i nadaj im nazwę, taką jak „en: EU Organiczny” i typ, taki jak „etykieta”.",
@@ -251,6 +275,8 @@
       "title": "Wyszukiwanie logo",
       "description": "Wybierz logo, którego szukasz i \"złap je wszystkie\". Każde oznaczone logo pobierze kolejne, dzięki czemu zawsze będziesz miał coś do oznaczenia. (Naciśnij Shift, aby wybrać zakres logotypów)",
       "ref_logos": "Logo referencyjne (logo jest już opatrzone tą wartością)",
+      "annotation_count_one": "Already {{formattedCount}} annotation. You can come back to this logo in a few days if you don't find any matching logos.",
+      "annotation_count_other": "Already {{formattedCount}} annotations. You can come back to this logo in a few days if you don't find any matching logos.",
       "remaining": "Pozostałe do oznaczenia",
       "select_all": "Zaznacz wszystko",
       "unselect_all": "Odznacz wszystko"
