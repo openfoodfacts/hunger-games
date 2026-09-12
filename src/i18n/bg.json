@@ -14,6 +14,10 @@
         "green_score": {
           "title": "Green-score",
           "description": "Annotate the questions with the highest value"
+        },
+        "create_products": {
+          "title": "Create missing products",
+          "description": "Add products that are not in the database yet, over on Open Prices"
         }
       }
     },
@@ -71,6 +75,10 @@
     "skip": "Пропусни",
     "yes": "Да",
     "no_questions_remaining": "Няма повече въпроси",
+    "similar_questions": "Similar questions",
+    "no_similar_questions": "No similar questions",
+    "remaining_questions_count_one": "1 question remaining",
+    "remaining_questions_count_other": "{{count}} questions remaining",
     "an_error_occurred": "Възникна грешка. Моля, презаредете, опитайте по-късно или се свържете с екипа.",
     "countries": "Страни",
     "view": "Преглед",
@@ -83,10 +91,9 @@
     "last_annotations": "Последни пояснения",
     "remaining_annotations": "Оставащи въпроси",
     "annotated_annotations": "Пояснено",
-    "similar_questions": "Similar questions",
-    "no_similar_questions": "No similar questions",
     "no_images": "No images available",
     "no_additional_info": "No additional information",
+    "add_missing_info": "Добави",
     "filters": {
       "active_filter_number": "+{{count}} филтъра",
       "active_filter_number_one": "+{{count}} филтър",
@@ -111,6 +118,7 @@
       },
       "placeholders": {
         "value": "Стойност (Fanta, bg:био,...)",
+        "country": "France, Germany, Japan, ...",
         "brand": "Фантастико, Кауфланд, Лидл, ...",
         "campaign": "Кампания за коментари",
         "predictor": "универсален детектор на лого, регекс, ..."

@@ -12,8 +12,12 @@
           "description": "Найдите все логотипы, соответствующие данному логотипу"
         },
         "green_score": {
-          "title": "Green-score",
+          "title": "",
           "description": "Аннотируйте вопросы с наивысшим значением"
+        },
+        "create_products": {
+          "title": "Create missing products",
+          "description": "Add products that are not in the database yet, over on Open Prices"
         }
       }
     },
@@ -50,13 +54,13 @@
     "loading": "Загрузка"
   },
   "image_viewer": {
-    "compressed": "Compressed",
-    "load_original": "Load original"
+    "compressed": "Сжато",
+    "load_original": "Загрузить оригинал"
   },
   "questions": {
     "category": "категория",
     "categories": "Категории",
-    "label": "маркировка",
+    "label": "этикетка",
     "labels": "Маркировки",
     "brand": "марка",
     "brands": "Марки",
@@ -71,6 +75,10 @@
     "skip": "Пропустить",
     "yes": "Да",
     "no_questions_remaining": "Вопросов не осталось",
+    "similar_questions": "Похожие вопросы",
+    "no_similar_questions": "Нет похожих вопросов",
+    "remaining_questions_count_one": "Остался 1 вопрос",
+    "remaining_questions_count_other": "{{count}} questions remaining",
     "an_error_occurred": "Произошла ошибка. Пожалуйста, перезагрузите страницу, попробуйте позже или свяжитесь с командой.",
     "countries": "Страны",
     "view": "Вид",
@@ -83,10 +91,9 @@
     "last_annotations": "Последние аннотации",
     "remaining_annotations": "Оставшиеся вопросы",
     "annotated_annotations": "Помеченный",
-    "similar_questions": "Similar questions",
-    "no_similar_questions": "No similar questions",
-    "no_images": "No images available",
-    "no_additional_info": "No additional information",
+    "no_images": "Изображение недоступно",
+    "no_additional_info": "Нет дополнительной информации",
+    "add_missing_info": "Добавить",
     "filters": {
       "active_filter_number": "+{{count}} фильтра",
       "active_filter_number_one": "+{{count}} фильтр",
@@ -111,6 +118,7 @@
       },
       "placeholders": {
         "value": "Ценность(фанта, en:organic)",
+        "country": "France, Germany, Japan, ...",
         "brand": "Auchan, Danone, Herta, ...",
         "campaign": "Аннотационные кампании",
         "predictor": "universal-logo-detector, regex, ..."

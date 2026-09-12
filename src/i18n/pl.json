@@ -14,6 +14,10 @@
         "green_score": {
           "title": "Green-Score",
           "description": "Adnotuj pytania o największej wartości"
+        },
+        "create_products": {
+          "title": "Create missing products",
+          "description": "Add products that are not in the database yet, over on Open Prices"
         }
       }
     },
@@ -71,6 +75,10 @@
     "skip": "Pomiń",
     "yes": "Tak",
     "no_questions_remaining": "Brak pozostałych pytań",
+    "similar_questions": "Podobne pytania",
+    "no_similar_questions": "Brak podobnych pytań",
+    "remaining_questions_count_one": "Pozostało 1 pytanie",
+    "remaining_questions_count_other": "Pozostało {{count}} pytań",
     "an_error_occurred": "Wystąpił błąd. Odśwież stronę, spróbuj później lub skontaktuj się z zespołem.",
     "countries": "Kraje",
     "view": "Zobacz",
@@ -83,10 +91,9 @@
     "last_annotations": "Ostatnie adnotacje",
     "remaining_annotations": "Pozostałe pytania",
     "annotated_annotations": "Z adnotacjami",
-    "similar_questions": "Podobne pytania",
-    "no_similar_questions": "Brak podobnych pytań",
     "no_images": "Brak dostępnych obrazów",
     "no_additional_info": "Brak dodatkowych informacji",
+    "add_missing_info": "Dodaj",
     "filters": {
       "active_filter_number": "+{{count}} filtrów",
       "active_filter_number_one": "+{{count}} filtr",
@@ -111,6 +118,7 @@
       },
       "placeholders": {
         "value": "Wartość (Fanta, pl:organiczna,...)",
+        "country": "France, Germany, Japan, ...",
         "brand": "Auchan, Danone, Herta, ...",
         "campaign": "Kampanie adnotacyjne",
         "predictor": "uniwersalny-detektor-logo, wyrażenie regularne, ..."

@@ -14,6 +14,10 @@
         "green_score": {
           "title": "Green-Score",
           "description": "Beri keterangan pada pertanyaan dengan nilai tertinggi"
+        },
+        "create_products": {
+          "title": "Create missing products",
+          "description": "Add products that are not in the database yet, over on Open Prices"
         }
       }
     },
@@ -71,6 +75,10 @@
     "skip": "Lewati",
     "yes": "Ya",
     "no_questions_remaining": "Tidak ada pertanyaan lagi",
+    "similar_questions": "Pertanyaan serupa",
+    "no_similar_questions": "Tidak ada pertanyaan serupa",
+    "remaining_questions_count_one": "satu pertanyaan tersisa",
+    "remaining_questions_count_other": "{{count}} questions remaining",
     "an_error_occurred": "Terjadi kesalahan. Silakan muat ulang, coba lagi nanti, atau hubungi tim.",
     "countries": "Negara",
     "view": "Lihat",
@@ -83,10 +91,9 @@
     "last_annotations": "Catatan terakhir",
     "remaining_annotations": "Pertanyaan yang tersisa",
     "annotated_annotations": "Teranotasi",
-    "similar_questions": "Pertanyaan serupa",
-    "no_similar_questions": "Tidak ada pertanyaan serupa",
     "no_images": "Tidak ada gambar yang tersedia",
     "no_additional_info": "Tidak ada informasi tambahan",
+    "add_missing_info": "Tambahkan",
     "filters": {
       "active_filter_number": "+{{count}} filter",
       "active_filter_number_one": "+{{count}} filter",
@@ -111,6 +118,7 @@
       },
       "placeholders": {
         "value": "Nilai (Fanta, en:organik,...)",
+        "country": "France, Germany, Japan, ...",
         "brand": "Auchan, Danone, Herta, ...",
         "campaign": "Kampanye anotasi",
         "predictor": "pendeteksi logo universal, regex, ..."
