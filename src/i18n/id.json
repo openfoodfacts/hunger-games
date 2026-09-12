@@ -2,6 +2,7 @@
   "home": {
     "game_selector": {
       "title": "Permainan apa yang ingin kamu mainkan?",
+      "external_link": "External link",
       "cards": {
         "questions": {
           "title": "Pertanyaan",
@@ -28,6 +29,12 @@
       "contribution_details": "Pelajari mengapa kontribusi Anda penting"
     },
     "saved_filters": "Filter Tersimpan",
+    "saved_filters_delete": "Delete saved filter",
+    "saved_filters_delete_title": "Delete saved filter?",
+    "saved_filters_delete_description": "This saved filter will be removed from this device.",
+    "saved_filters_delete_confirm": "Hapus",
+    "saved_filters_pending": "{{count}} products waiting",
+    "saved_filters_pending_unknown": "Products waiting",
     "contribution_modal": {
       "title": "Kontribusi Anda sangat berarti",
       "information": "Hunger Games adalah cara untuk memanfaatkan hasil OCR dan kecerdasan buatan. Dengan menggunakan Hunger Games dari Open Food Facts, kamu ikut membantu memperbaiki seluruh basis data kami sehingga komunitas bisa membuat pilihan makanan yang lebih baik. Catatan yang kamu tambahkan akan kami kumpulkan dan dipakai untuk membuat Open Food Facts jadi lebih akurat dan efisien.",
@@ -35,6 +42,12 @@
     },
     "statistics": {
       "title": "Statistik {{userName}}:",
+      "title_without_name": "Your statistics",
+      "empty_state": {
+        "title": "No contributions yet",
+        "description": "Your contribution statistics will appear here once you start helping improve Open Food Facts.",
+        "action": "Start contributing"
+      },
       "editorCount": {
         "title": "Editor",
         "description": "Jumlah edisi yang dilakukan"
@@ -207,6 +220,17 @@
     "view_crops_for_this_product": "Beri anotasi pada logo produk"
   },
   "logos": {
+    "dashboard": {
+      "title": "Logo dashboard",
+      "description": "Explore logo categories and help improve product data.",
+      "category": "Kategori",
+      "categories": "Kategori",
+      "logo_count_one": "{{count}} logo",
+      "logo_count_other": "{{count}} logos",
+      "more_info": "More info",
+      "questions": "Pertanyaan",
+      "search": "Cari"
+    },
     "annotation": "Anotasi: ",
     "annotations": "Anotasi - anotasi logo",
     "task_description": "Pilih semua logo yang sama persis, dan beri nama seperti \"en:EU Organic\" dan jenis seperti \"label\".",
@@ -251,6 +275,8 @@
       "title": "Pencarian logo",
       "description": "Pilih logo yang ingin Anda cari, dan mari kita tangkap semuanya. Untuk setiap logo yang Anda anotasi, kami akan mengambil logo tetangganya sehingga Anda mungkin tidak akan berhenti memberi anotasi. (Tekan Shift untuk memilih rentang logo)",
       "ref_logos": "Logo referensi (logo yang sudah diberi keterangan dengan nilai ini)",
+      "annotation_count_one": "Already {{formattedCount}} annotation. You can come back to this logo in a few days if you don't find any matching logos.",
+      "annotation_count_other": "Already {{formattedCount}} annotations. You can come back to this logo in a few days if you don't find any matching logos.",
       "remaining": "Sisa untuk dibuat anotasi",
       "select_all": "Pilih semua",
       "unselect_all": "Batalkan semua pilihan"
