@@ -2,6 +2,7 @@
   "home": {
     "game_selector": {
       "title": "Kādu spēli tu vēlētos spēlēt?",
+      "external_link": "External link",
       "cards": {
         "questions": {
           "title": "Jautājumi",
@@ -28,6 +29,12 @@
       "contribution_details": "Uzziniet, kāpēc jūsu ieguldījums ir svarīgs"
     },
     "saved_filters": "Saglabātie filtri",
+    "saved_filters_delete": "Delete saved filter",
+    "saved_filters_delete_title": "Delete saved filter?",
+    "saved_filters_delete_description": "This saved filter will be removed from this device.",
+    "saved_filters_delete_confirm": "Dzēst",
+    "saved_filters_pending": "{{count}} products waiting",
+    "saved_filters_pending_unknown": "Products waiting",
     "contribution_modal": {
       "title": "Jūsu ieguldījums ir svarīgs",
       "information": "“Bada spēles” ir mēģinājums izmantot mūsu OCR un mākslīgā intelekta rezultātus. Izmantojot “Bada spēles” no “Open Food Facts”, jūs uzlabojat visu mūsu datubāzi, kas palīdz kopienai izdarīt labākas izvēles par pārtiku. Mēs apkopojam jūsu anotācijas un izmantojam tās, lai padarītu “Open Food Facts” precīzāku un efektīvāku.",
@@ -35,6 +42,12 @@
     },
     "statistics": {
       "title": "{{userName}} statistika:",
+      "title_without_name": "Your statistics",
+      "empty_state": {
+        "title": "No contributions yet",
+        "description": "Your contribution statistics will appear here once you start helping improve Open Food Facts.",
+        "action": "Start contributing"
+      },
       "editorCount": {
         "title": "Redaktors",
         "description": "Izpildīto izdevumu skaits"
@@ -207,6 +220,17 @@
     "view_crops_for_this_product": "Anotēt produktu logotipus"
   },
   "logos": {
+    "dashboard": {
+      "title": "Logo dashboard",
+      "description": "Explore logo categories and help improve product data.",
+      "category": "Kategorija",
+      "categories": "Kategorijas",
+      "logo_count_one": "{{count}} logo",
+      "logo_count_other": "{{count}} logos",
+      "more_info": "More info",
+      "questions": "Jautājumi",
+      "search": "Meklēt"
+    },
     "annotation": "Anotācija: ",
     "annotations": "Logotipa anotācijas",
     "task_description": "Atlasiet visus logotipus, kas ir pilnīgi vienādi, un piešķiriet tiem nosaukumu, piemēram, \"lv:EU Organic\", un tipu, piemēram, \"etiķete\".",
@@ -251,6 +275,8 @@
       "title": "Logotipa meklēšana",
       "description": "Atlasiet logotipu, kuru vēlaties meklēt, un sāksim tos visus meklēt. Katram jūsu anotētajam logotipam mēs iegūsim tā blakus esošos, lai jums nebūtu jāapstājas, lai veiktu anotācijas. (Nospiediet Shift, lai atlasītu logotipu diapazonu.)",
       "ref_logos": "Atsauces logotipi (logotips jau ir anotēts ar šo vērtību)",
+      "annotation_count_one": "Already {{formattedCount}} annotation. You can come back to this logo in a few days if you don't find any matching logos.",
+      "annotation_count_other": "Already {{formattedCount}} annotations. You can come back to this logo in a few days if you don't find any matching logos.",
       "remaining": "Atliek anotēt",
       "select_all": "Atlasīt visu",
       "unselect_all": "Noņemt atlasi visam"
