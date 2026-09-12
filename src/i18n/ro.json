@@ -2,6 +2,7 @@
   "home": {
     "game_selector": {
       "title": "Ce joc ai vrea să joci?",
+      "external_link": "External link",
       "cards": {
         "questions": {
           "title": "Întrebări",
@@ -28,6 +29,12 @@
       "contribution_details": "Aflați de ce contează contribuția dvs"
     },
     "saved_filters": "Filtre salvate",
+    "saved_filters_delete": "Delete saved filter",
+    "saved_filters_delete_title": "Delete saved filter?",
+    "saved_filters_delete_description": "This saved filter will be removed from this device.",
+    "saved_filters_delete_confirm": "Ştergeţi",
+    "saved_filters_pending": "{{count}} products waiting",
+    "saved_filters_pending_unknown": "Products waiting",
     "contribution_modal": {
       "title": "Contribuția ta contează",
       "information": "Jocurile Foamei este un efort de a valorifica rezultatele OCR și ale inteligenței noastre artificiale. Când utilizați Jocurile Foamei de la Open Food Facts, îmbunătățiți întreaga noastră bază de date, ceea ce ajută comunitatea să facă alegeri alimentare mai bune. Colectăm adnotările dvs. și le folosim pentru a face Open Food Facts mai precis și mai eficient.",
@@ -35,6 +42,12 @@
     },
     "statistics": {
       "title": "{{userName}} statistici:",
+      "title_without_name": "Your statistics",
+      "empty_state": {
+        "title": "No contributions yet",
+        "description": "Your contribution statistics will appear here once you start helping improve Open Food Facts.",
+        "action": "Start contributing"
+      },
       "editorCount": {
         "title": "Editor",
         "description": "Număr de ediții finalizate"
@@ -207,6 +220,17 @@
     "view_crops_for_this_product": "Adnotează logo-urile produselor"
   },
   "logos": {
+    "dashboard": {
+      "title": "Logo dashboard",
+      "description": "Explore logo categories and help improve product data.",
+      "category": "Categorie",
+      "categories": "Categorii",
+      "logo_count_one": "{{count}} logo",
+      "logo_count_other": "{{count}} logos",
+      "more_info": "More info",
+      "questions": "Întrebări",
+      "search": "Caută"
+    },
     "annotation": "Adnotare: ",
     "annotations": "Adnotări de logo",
     "task_description": "Selectați toate siglele care sunt exact aceleași și acordați-le un nume precum „en:EU Organic” și un tip precum „etichetă”.",
@@ -251,6 +275,8 @@
       "title": "Căutare logo",
       "description": "Selectează un logo pe care vrei să-l cauți și hai să îl prindem pe toate. Pentru fiecare logo pe care îl adnotați, îi vom prelua pe vecini astfel încât s-ar putea să nu se oprească niciodată să adnoteze. (Press Shift pentru a selecta raza de sigle)",
       "ref_logos": "Sigle de referință (logo deja adnotat cu această valoare)",
+      "annotation_count_one": "Already {{formattedCount}} annotation. You can come back to this logo in a few days if you don't find any matching logos.",
+      "annotation_count_other": "Already {{formattedCount}} annotations. You can come back to this logo in a few days if you don't find any matching logos.",
       "remaining": "Rămâne de adnotat",
       "select_all": "Selectați-le pe toate",
       "unselect_all": "Deselectați toate"
