@@ -2,6 +2,7 @@
   "home": {
     "game_selector": {
       "title": "Koju igru želite igrati?",
+      "external_link": "External link",
       "cards": {
         "questions": {
           "title": "Pitanja",
@@ -28,6 +29,12 @@
       "contribution_details": "Nauči zašto tvoj doprinos znači"
     },
     "saved_filters": "Spremljeni filtri",
+    "saved_filters_delete": "Delete saved filter",
+    "saved_filters_delete_title": "Delete saved filter?",
+    "saved_filters_delete_description": "This saved filter will be removed from this device.",
+    "saved_filters_delete_confirm": "Izbriši",
+    "saved_filters_pending": "{{count}} products waiting",
+    "saved_filters_pending_unknown": "Products waiting",
     "contribution_modal": {
       "title": "Vaš doprinos je važan",
       "information": "Igre gladi pokušaj su iskorištavanja rezultata našeg OCR-a i umjetne inteligencije. Kada koristite Igre gladi od Open Food Facts, poboljšavate cijelu našu bazu podataka što pomaže zajednici da napravi bolji izbor hrane. Prikupljamo vaše bilješke i koristimo ih kako bismo Open Food Facts učinili točnijim i učinkovitijim.",
@@ -35,6 +42,12 @@
     },
     "statistics": {
       "title": "{{userName}} statistika:",
+      "title_without_name": "Your statistics",
+      "empty_state": {
+        "title": "No contributions yet",
+        "description": "Your contribution statistics will appear here once you start helping improve Open Food Facts.",
+        "action": "Start contributing"
+      },
       "editorCount": {
         "title": "Uređivač",
         "description": "Broj uređenih izdanja"
@@ -207,6 +220,17 @@
     "view_crops_for_this_product": "Označite logotipe proizvoda"
   },
   "logos": {
+    "dashboard": {
+      "title": "Logo dashboard",
+      "description": "Explore logo categories and help improve product data.",
+      "category": "Kategorija",
+      "categories": "Kategorije",
+      "logo_count_one": "{{count}} logo",
+      "logo_count_other": "{{count}} logos",
+      "more_info": "More info",
+      "questions": "Pitanja",
+      "search": "Pretraži"
+    },
     "annotation": "Anotacija: ",
     "annotations": "Napomene uz logotip",
     "task_description": "Odaberite sve logotipe koji su potpuno isti i dajte im naziv poput \"en:EU Organic\" i vrstu poput \"label\".",
@@ -251,6 +275,8 @@
       "title": "Pretraga logotipa",
       "description": "Odaberite logo koji želite tražiti i hajde da ih sve uhvatimo. Za svaki logo koji označite, mi ćemo preuzeti njegove susjedne logotipe tako da se nikada nećete zaustaviti da biste označili. (Pritisnite Shift da biste odabrali raspon logotipa)",
       "ref_logos": "Referentni logotipi (logotip je već označen ovom vrijednošću)",
+      "annotation_count_one": "Already {{formattedCount}} annotation. You can come back to this logo in a few days if you don't find any matching logos.",
+      "annotation_count_other": "Already {{formattedCount}} annotations. You can come back to this logo in a few days if you don't find any matching logos.",
       "remaining": "Ostaje za anotirati",
       "select_all": "Odaberi sve",
       "unselect_all": "Ukloni odabir za sve"
