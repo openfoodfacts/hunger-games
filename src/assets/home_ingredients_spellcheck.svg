@@ -1,91 +1,110 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 200" width="100%" height="100%">
-  <defs>
-    <linearGradient id="scBgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#f5f3ff" />
-      <stop offset="100%" stop-color="#ede9fe" />
-    </linearGradient>
-    <linearGradient id="scIndigo" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#6366f1" />
-      <stop offset="100%" stop-color="#4f46e5" />
-    </linearGradient>
-    <linearGradient id="scGreen" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#10b981" />
-      <stop offset="100%" stop-color="#059669" />
-    </linearGradient>
-    <filter id="scShadow" x="-10%" y="-10%" width="120%" height="120%">
-      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#1e1b4b" flood-opacity="0.08" />
-    </filter>
-    <filter id="scPopupShadow" x="-15%" y="-15%" width="130%" height="130%">
-      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#312e81" flood-opacity="0.14" />
-    </filter>
-  </defs>
-
   <!-- Background Base Container -->
-  <rect width="350" height="200" rx="16" fill="url(#scBgGrad)" />
+  <rect width="350" height="200" rx="16" fill="#F8F9FA" />
 
-  <!-- Main Note / Text Document Card -->
-  <g filter="url(#scShadow)">
-    <rect x="36" y="20" width="278" height="160" rx="14" fill="#ffffff" stroke="#e0e7ff" stroke-width="1.5" />
+  <!-- Main Card Surface -->
+  <rect x="12" y="10" width="326" height="180" rx="14" fill="#FFFFFF" stroke="#E5E5E5" stroke-width="1.2" />
+
+  <!-- Top Accent Bar (Open Food Facts Orange) -->
+  <path d="M 12 24 A 14 14 0 0 1 26 10 L 324 10 A 14 14 0 0 1 338 24 L 338 26 L 12 26 Z" fill="#FF8714" />
+
+  <!-- Badge Top Right -->
+  <rect x="180" y="16" width="146" height="18" rx="9" fill="#FFF4E8" />
+  <text x="253" y="29" font-family="Plus Jakarta Sans, sans-serif" font-size="8.5" font-weight="700" fill="#FF8714" text-anchor="middle" letter-spacing="0.5">ORTHOGRAPHE INGRÉDIENTS</text>
+
+  <!-- Left: Official OFF Icon Magnifier Inspecting -->
+  <g transform="translate(18, 42)">
+    <rect width="100" height="134" rx="10" fill="#FFFBF7" stroke="#FFE8D6" stroke-width="1" />
+
+    <svg x="10" y="12" width="80" height="80" viewBox="0 0 178 178">
+      <defs
+     id="offspell_defs3066" />
+  <g
+     id="layer1">
+    <g
+       id="offspell_g2997"
+       transform="translate(-33.85,-30.075)">
+      <g
+         id="offspell_g2989">
+        <path
+           class="f"
+           d="m 61.62,122.32 c 0,-33.82 27.41,-61.23 61.23,-61.23 33.82,0 61.23,27.41 61.23,61.23 z"
+           id="offspell_path2979"
+           style="fill:#ff8c14" />
+        <path
+           class="e"
+           d="m 168.55,122.32 c 0,25.24 -20.46,45.71 -45.71,45.71 -25.24,0 -45.71,-20.46 -45.71,-45.71 z"
+           id="offspell_path2981"
+           style="fill:#ffffff" />
+        <circle
+           class="g"
+           cx="143.58"
+           cy="82.779999"
+           r="3.3699999"
+           id="offspell_circle2983"
+           style="fill:#8c3c00" />
+        <circle
+           class="g"
+           cx="159.98"
+           cy="97.839996"
+           r="3.3699999"
+           id="offspell_circle2985"
+           style="fill:#8c3c00" />
+        <circle
+           class="g"
+           cx="141.42999"
+           cy="101.52"
+           r="3.3699999"
+           id="offspell_circle2987"
+           style="fill:#8c3c00" />
+      </g>
+      <path
+         d="m 93.15,175.84 -10.88,25.97 14.32,6 10.97,-26.19 c 4.89,1.26 10.01,1.93 15.29,1.93 33.76,0 61.23,-27.47 61.23,-61.23 h -15.52 c 0,25.2 -20.5,45.71 -45.71,45.71 -25.21,0 -45.71,-20.5 -45.71,-45.71 H 61.62 c 0,22.99 12.74,43.05 31.53,53.52 z"
+         id="offspell_path2991" />
+      <path
+         class="c"
+         d="m 148.17,30.34 c -12.04,0 -22.5,6.71 -27.88,16.59 4.14,3.86 7.27,8.79 8.89,14.38 14.01,-3.14 24.53,-15.53 24.77,-30.43 -1.87,-0.35 -3.8,-0.53 -5.78,-0.53 z"
+         id="offspell_path2993"
+         style="fill:#00641e" />
+      <path
+         class="d"
+         d="m 98.68,38.42 c -2.38,0 -4.7,0.27 -6.94,0.77 3.83,13.23 16.03,22.91 30.5,22.91 2.38,0 4.7,-0.27 6.94,-0.77 C 125.35,48.1 113.15,38.42 98.68,38.42 Z"
+         id="offspell_path2995"
+         style="fill:#00961e" />
+    </g>
+  </g>
+    </svg>
+
+    <!-- Spellcheck Badge -->
+    <rect x="10" y="98" width="80" height="24" rx="6" fill="#FF8714" />
+    <text x="50" y="114" font-family="Plus Jakarta Sans, sans-serif" font-size="8.5" font-weight="700" fill="#FFFFFF" text-anchor="middle">Correcteur</text>
   </g>
 
-  <!-- Document Header Bar -->
-  <rect x="36" y="20" width="278" height="34" rx="14" fill="#f8fafc" />
-  <rect x="36" y="40" width="278" height="14" fill="#f8fafc" />
-  <line x1="36" y1="54" x2="314" y2="54" stroke="#e2e8f0" stroke-width="1" />
+  <!-- Right: Ingredients Spellcheck Interface -->
+  <g transform="translate(128, 42)">
+    <rect width="196" height="134" rx="10" fill="#F9FAFB" stroke="#E5E7EB" stroke-width="1.2" />
 
-  <!-- Document Header Content -->
-  <g transform="translate(52, 28)">
-    <rect width="20" height="18" rx="5" fill="url(#scIndigo)" />
-    <text x="10" y="13" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="900" fill="#ffffff" text-anchor="middle">A</text>
-    <text x="28" y="14" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" fill="#334155">Ingredients List OCR</text>
-    <!-- Badge -->
-    <rect x="182" y="2" width="66" height="16" rx="8" fill="#e0e7ff" />
-    <text x="215" y="13" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="700" fill="#4338ca" text-anchor="middle">SPELLCHECK</text>
+    <text x="12" y="18" font-family="Plus Jakarta Sans, sans-serif" font-size="9.5" font-weight="700" fill="#111827">Extrait d'ingrédients à valider :</text>
+
+    <!-- Ingredients Sentence with Underlined Typo -->
+    <text x="12" y="38" font-family="Plus Jakarta Sans, sans-serif" font-size="9" font-weight="500" fill="#4B5563">Farine de blé, sucre, pâte de</text>
+    
+    <!-- Typo Word with Red Wavy Underline -->
+    <text x="12" y="58" font-family="Plus Jakarta Sans, sans-serif" font-size="10.5" font-weight="800" fill="#DC2626">choclat</text>
+    <path d="M 12 62 Q 17 65, 22 62 T 32 62 T 42 62 T 52 62" fill="none" stroke="#DC2626" stroke-width="1.8" />
+    <text x="58" y="58" font-family="Plus Jakarta Sans, sans-serif" font-size="9" font-weight="500" fill="#4B5563">, émulsifiant...</text>
+
+    <!-- Suggestion Popover Tooltip -->
+    <g transform="translate(12, 72)">
+      <rect width="172" height="52" rx="8" fill="#FFFFFF" stroke="#00A05A" stroke-width="1.5" />
+      <text x="10" y="16" font-family="Plus Jakarta Sans, sans-serif" font-size="8" font-weight="600" fill="#6B7280">Orthographe recommandée :</text>
+      
+      <!-- Accept Replacement Button -->
+      <g transform="translate(10, 22)">
+        <rect width="152" height="24" rx="5" fill="#00A05A" />
+        <path d="M 28 12 L 32 16 L 39 8" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        <text x="86" y="16" font-family="Plus Jakarta Sans, sans-serif" font-size="9.5" font-weight="700" fill="#FFFFFF" text-anchor="middle">Remplacer par "chocolat"</text>
+      </g>
+    </g>
   </g>
-
-  <!-- Simulated OCR text lines with typo and correction -->
-  <g transform="translate(54, 70)">
-    <text x="0" y="14" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="500" fill="#475569">
-      Wheat flour, <tspan font-weight="700" fill="#dc2626">surgar</tspan>, vegetable oil,
-    </text>
-    <!-- Squiggly underline under "surgar" -->
-    <path d="M82 19 Q85 17 88 19 T94 19 T100 19 T106 19 T112 19 T118 19 T124 19" fill="none" stroke="#ef4444" stroke-width="1.8" stroke-linecap="round" />
-
-    <text x="0" y="38" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="400" fill="#64748b">
-      cocoa mass, whole milk powder, salt,
-    </text>
-    <text x="0" y="60" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="400" fill="#94a3b8">
-      emulsifier (soy lecithin), natural flavor.
-    </text>
-  </g>
-
-  <!-- Floating Suggestion Tooltip Bubble -->
-  <g transform="translate(130, 96)" filter="url(#scPopupShadow)">
-    <!-- Tooltip beak -->
-    <polygon points="26,0 20,-7 32,-7" fill="#1e1b4b" />
-    <!-- Tooltip body -->
-    <rect x="0" y="-36" width="138" height="34" rx="10" fill="#1e1b4b" />
-    <!-- Check icon circle -->
-    <circle cx="20" cy="-19" r="9" fill="url(#scGreen)" />
-    <path d="M15 -19 L19 -15 L26 -22" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-    <!-- Suggestion text -->
-    <text x="36" y="-23" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="500" fill="#94a3b8">Replace with:</text>
-    <text x="36" y="-11" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="800" fill="#34d399">sugar</text>
-    <!-- Action key pill -->
-    <rect x="88" y="-28" width="42" height="18" rx="6" fill="#312e81" />
-    <text x="109" y="-16" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="700" fill="#c7d2fe" text-anchor="middle">APPLY ↵</text>
-  </g>
-
-  <!-- Editing Pencil Stylus Tool (Right) -->
-  <g transform="translate(254, 118) rotate(-35)">
-    <rect x="0" y="0" width="12" height="42" rx="3" fill="url(#scIndigo)" />
-    <polygon points="0,42 12,42 6,52" fill="#fbbf24" />
-    <polygon points="4,49 8,49 6,52" fill="#1e293b" />
-    <rect x="0" y="0" width="12" height="8" rx="2" fill="#f43f5e" />
-  </g>
-
-  <!-- Decorative Sparkles -->
-  <circle cx="24" cy="40" r="3" fill="#818cf8" opacity="0.5" />
-  <circle cx="326" cy="30" r="4" fill="#a78bfa" opacity="0.6" />
-  <circle cx="328" cy="172" r="3" fill="#34d399" opacity="0.5" />
 </svg>

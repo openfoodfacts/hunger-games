@@ -1,111 +1,83 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 200" width="100%" height="100%">
-  <defs>
-    <linearGradient id="pkBgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#f0f9ff" />
-      <stop offset="100%" stop-color="#e0f2fe" />
-    </linearGradient>
-    <linearGradient id="pkBlue" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0284c7" />
-      <stop offset="100%" stop-color="#0369a1" />
-    </linearGradient>
-    <linearGradient id="pkGreen" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#10b981" />
-      <stop offset="100%" stop-color="#059669" />
-    </linearGradient>
-    <linearGradient id="pkAmber" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#f59e0b" />
-      <stop offset="100%" stop-color="#d97706" />
-    </linearGradient>
-    <filter id="pkShadow" x="-10%" y="-10%" width="120%" height="120%">
-      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#075985" flood-opacity="0.1" />
-    </filter>
-    <filter id="pkBadgeShadow" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#064e3b" flood-opacity="0.18" />
-    </filter>
-  </defs>
-
   <!-- Background Base Container -->
-  <rect width="350" height="200" rx="16" fill="url(#pkBgGrad)" />
+  <rect width="350" height="200" rx="16" fill="#F8F9FA" />
 
-  <!-- Main Card Container -->
-  <g filter="url(#pkShadow)">
-    <rect x="36" y="20" width="278" height="160" rx="14" fill="#ffffff" stroke="#bae6fd" stroke-width="1.5" />
+  <!-- Main Card Surface -->
+  <rect x="12" y="10" width="326" height="180" rx="14" fill="#FFFFFF" stroke="#E5E5E5" stroke-width="1.2" />
+
+  <!-- Top Accent Bar (Open Food Facts Orange) -->
+  <path d="M 12 24 A 14 14 0 0 1 26 10 L 324 10 A 14 14 0 0 1 338 24 L 338 26 L 12 26 Z" fill="#FF8714" />
+
+  <!-- Badge Top Right -->
+  <rect x="190" y="16" width="136" height="18" rx="9" fill="#FFF4E8" />
+  <text x="258" y="29" font-family="Plus Jakarta Sans, sans-serif" font-size="8.5" font-weight="700" fill="#FF8714" text-anchor="middle" letter-spacing="0.5">TYPE D'EMBALLAGE</text>
+
+  <!-- Left: Official Tomato Can & Water Bottle Illustrations -->
+  <g transform="translate(18, 42)">
+    <rect width="136" height="134" rx="10" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1" />
+
+    <!-- Official Tomato Can -->
+    <svg x="10" y="18" width="62" height="98" viewBox="0 0 80 122">
+      <g clip-path="url(#can_clip0_247_423)">
+<path d="M75.974 5.76526H4.02173V116.235H75.974V5.76526Z" fill="white"/>
+<path d="M75.974 4.12109H4.02173V32.3354H75.974V4.12109Z" fill="#F03214"/>
+<path d="M75.974 89.6647H4.02173V117.879H75.974V89.6647Z" fill="#F03214"/>
+<path d="M77.1315 0H2.86846C1.28425 0 0 1.29059 0 2.88261C0 4.47463 1.28425 5.76522 2.86846 5.76522H77.1315C78.7158 5.76522 80 4.47463 80 2.88261C80 1.29059 78.7158 0 77.1315 0Z" fill="#B3B3B3"/>
+<path d="M77.1315 116.235H2.86846C1.28425 116.235 0 117.525 0 119.117C0 120.709 1.28425 122 2.86846 122H77.1315C78.7158 122 80 120.709 80 119.117C80 117.525 78.7158 116.235 77.1315 116.235Z" fill="#B3B3B3"/>
+<path d="M39.9853 80.4411C49.3299 80.4411 56.9087 72.8235 56.9087 63.4216C56.9087 54.0197 49.3341 46.4021 39.9853 46.4021C30.6364 46.4021 23.0618 54.0197 23.0618 63.4216C23.0618 72.8235 30.6364 80.4411 39.9853 80.4411Z" fill="#F03214"/>
+<path d="M30.0998 43.717C29.4492 43.8232 28.8282 43.9974 28.241 44.2311C29.8632 47.6978 33.6146 49.8179 37.5603 49.1891C38.2109 49.0829 38.8319 48.9087 39.4191 48.675C37.7969 45.2082 34.0455 43.0882 30.0998 43.717Z" fill="#00641E"/>
+<path d="M42.9087 41.665C43.5592 41.5588 44.2056 41.5333 44.8351 41.5758C44.3661 45.374 41.4554 48.5646 37.5055 49.1976C36.8549 49.3038 36.2086 49.3293 35.5791 49.2868C36.048 45.4887 38.9587 42.2981 42.9087 41.665Z" fill="#00641E"/>
+<path d="M44.3872 51.1434C45.0378 51.0372 45.6588 50.863 46.246 50.6294C44.6238 47.1626 40.8724 45.0426 36.9267 45.6713C36.2761 45.7776 35.6551 45.9517 35.0679 46.1854C36.6901 49.6522 40.4415 51.7722 44.3872 51.1434Z" fill="#00641E"/>
+<path d="M31.5785 53.1954C30.9279 53.3016 30.2816 53.3271 29.6521 53.2847C30.121 49.4865 33.0317 46.2959 36.9817 45.6628C37.6322 45.5566 38.2786 45.5311 38.9081 45.5736C38.4391 49.3718 35.5284 52.5624 31.5785 53.1954Z" fill="#00641E"/>
+</g>
+<defs>
+<clipPath id="can_clip0_247_423">
+<rect width="80" height="122" fill="white"/>
+</clipPath>
+</defs>
+    </svg>
+
+    <!-- Official Water Bottle -->
+    <svg x="80" y="8" width="46" height="116" viewBox="0 0 62 187">
+      <g clip-path="url(#bottle_clip0_470_777)">
+<path d="M15.7637 187C7.08313 187 0 178.838 0 168.825V81.0748C0 77.7068 1.3262 77.6158 3.58678 75.5525C5.54594 73.7623 5.72679 73.4589 3.97861 71.4563L2.71269 69.9695C0.994652 67.9669 0 65.1754 0 62.3232V38.4741C0 24.7594 7.65581 21.7555 18.2353 17.5986V7.6463H43.7346V17.5986C54.3442 21.7555 62 24.7594 62 38.4741V62.3232C62 65.1451 61.0053 67.9366 59.2873 69.9695L57.9912 71.4563C56.2732 73.4892 56.4541 73.7927 58.3831 75.5525C60.6738 77.6461 62 77.7372 62 81.0748V168.825C62 178.838 54.9169 187 46.2363 187H15.7637Z" fill="#A4CFE6"/>
+<path d="M43.825 0H18.175C15.9944 0 14.2266 1.7796 14.2266 3.97485V4.55135C14.2266 6.7466 15.9944 8.5262 18.175 8.5262H43.825C46.0057 8.5262 47.7735 6.7466 47.7735 4.55135V3.97485C47.7735 1.7796 46.0057 0 43.825 0Z" fill="#00A4FF"/>
+<path d="M62 104.651H0V152.197H62V104.651Z" fill="#00A4FF"/>
+</g>
+<defs>
+<clipPath id="bottle_clip0_470_777">
+<rect width="62" height="187" fill="white"/>
+</clipPath>
+</defs>
+    </svg>
   </g>
 
-  <!-- Header Banner -->
-  <rect x="36" y="20" width="278" height="34" rx="14" fill="#f8fafc" />
-  <rect x="36" y="40" width="278" height="14" fill="#f8fafc" />
-  <line x1="36" y1="54" x2="314" y2="54" stroke="#f1f5f9" stroke-width="1" />
+  <!-- Right: Packaging Question Selection -->
+  <g transform="translate(166, 42)">
+    <rect width="160" height="134" rx="10" fill="#F9FAFB" stroke="#E5E7EB" stroke-width="1.2" />
 
-  <g transform="translate(52, 28)">
-    <rect width="20" height="18" rx="5" fill="url(#pkBlue)" />
-    <!-- Box icon inside small rect -->
-    <path d="M5 6 L10 3 L15 6 L10 9 Z M5 7 L10 10 L10 15 L5 12 Z M15 7 L10 10 L10 15 L15 12 Z" fill="#ffffff" />
-    <text x="28" y="14" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" fill="#0f172a">Packaging & Materials</text>
+    <text x="14" y="18" font-family="Plus Jakarta Sans, sans-serif" font-size="10" font-weight="700" fill="#111827">Matériaux d'emballage :</text>
 
-    <!-- Question Tag -->
-    <rect x="178" y="2" width="70" height="16" rx="8" fill="#e0f2fe" />
-    <text x="213" y="13" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="700" fill="#0284c7" text-anchor="middle">PACKAGING</text>
-  </g>
-
-  <!-- Packaging Shapes Lineup -->
-  <g transform="translate(52, 68)">
-    <!-- 1. Beverage Can (Aluminum) -->
-    <g transform="translate(10, 16)">
-      <!-- Can Body -->
-      <rect x="0" y="8" width="34" height="60" rx="6" fill="#cbd5e1" stroke="#94a3b8" stroke-width="1" />
-      <ellipse cx="17" cy="8" rx="17" ry="4" fill="#e2e8f0" stroke="#94a3b8" stroke-width="1" />
-      <ellipse cx="17" cy="68" rx="17" ry="4" fill="#94a3b8" />
-      <!-- Pull tab -->
-      <ellipse cx="17" cy="8" rx="6" ry="2" fill="#64748b" />
-      <!-- Stripe -->
-      <rect x="0" y="26" width="34" height="18" fill="url(#pkBlue)" opacity="0.85" />
-      <text x="17" y="38" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="7" font-weight="800" fill="#ffffff" text-anchor="middle">CAN</text>
+    <!-- Selected Option: Boîte conserve métal -->
+    <g transform="translate(12, 28)">
+      <rect width="136" height="26" rx="6" fill="#00A05A" />
+      <path d="M 18 13 L 23 18 L 31 8" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      <text x="76" y="17" font-family="Plus Jakarta Sans, sans-serif" font-size="9" font-weight="700" fill="#FFFFFF" text-anchor="middle">Boîte conserve métal</text>
     </g>
 
-    <!-- 2. Glass Bottle (Glass) -->
-    <g transform="translate(68, 6)">
-      <!-- Bottle neck -->
-      <rect x="10" y="0" width="10" height="18" rx="2" fill="#a7f3d0" stroke="#34d399" stroke-width="1" />
-      <!-- Bottle body -->
-      <path d="M10 18 C10 26 0 28 0 38 L0 72 C0 75 4 78 15 78 C26 78 30 75 30 72 L30 38 C30 28 20 26 20 18 Z" fill="#6ee7b7" stroke="#10b981" stroke-width="1.2" opacity="0.8" />
-      <!-- Label -->
-      <rect x="4" y="40" width="22" height="22" rx="3" fill="#ffffff" opacity="0.9" />
-      <text x="15" y="54" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="7" font-weight="800" fill="#047857" text-anchor="middle">GLASS</text>
+    <!-- Option 2: Bouteille plastique -->
+    <g transform="translate(12, 58)">
+      <rect width="136" height="24" rx="6" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="1" />
+      <text x="68" y="16" font-family="Plus Jakarta Sans, sans-serif" font-size="9" font-weight="600" fill="#374151" text-anchor="middle">Bouteille plastique (PET)</text>
     </g>
 
-    <!-- 3. Tetra Pak / Juice Carton (Cardboard) -->
-    <g transform="translate(122, 10)">
-      <!-- Gable top -->
-      <polygon points="0,16 20,0 40,16" fill="#fde68a" stroke="#d97706" stroke-width="1" />
-      <polygon points="20,0 40,16 48,10 28,-4" fill="#f59e0b" />
-      <!-- Carton body -->
-      <rect x="0" y="16" width="40" height="62" rx="3" fill="#fef3c7" stroke="#f59e0b" stroke-width="1" />
-      <!-- Cap -->
-      <ellipse cx="20" cy="8" rx="5" ry="3" fill="#ef4444" />
-      <rect x="6" y="34" width="28" height="24" rx="2" fill="#ffffff" opacity="0.9" />
-      <text x="20" y="48" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="6.5" font-weight="800" fill="#b45309" text-anchor="middle">CARTON</text>
-    </g>
-
-    <!-- 4. Recycling Möbius Loop Badge (Prominent on Right) -->
-    <g transform="translate(186, 6)" filter="url(#pkBadgeShadow)">
-      <circle cx="28" cy="28" r="26" fill="url(#pkGreen)" />
-      <!-- Möbius 3 recycling arrows -->
-      <g transform="translate(28, 28) scale(1.1)">
-        <!-- Arrow 1 (Top) -->
-        <path d="M-8 -12 L4 -12 L1 -15 M4 -12 L1 -9" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
-        <!-- Arrow 2 (Right to Bottom) -->
-        <path d="M12 -4 L7 10 L5 6 M7 10 L11 8" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
-        <!-- Arrow 3 (Bottom to Left) -->
-        <path d="M-4 10 L-12 -2 L-8 -2 M-12 -2 L-13 3" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
-      </g>
-      <!-- "RECYCLE" Label -->
-      <rect x="2" y="60" width="52" height="16" rx="8" fill="#dcfce7" />
-      <text x="28" y="71" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="7.5" font-weight="800" fill="#15803d" text-anchor="middle">RECYCLING</text>
+    <!-- Recycling Moebius Badge -->
+    <g transform="translate(12, 88)">
+      <rect width="136" height="34" rx="6" fill="#E8F7EE" stroke="#A7F3D0" stroke-width="1" />
+      <!-- Recycling Loop Symbol -->
+      <path d="M 22 16 L 26 10 L 30 16 Z M 26 12 L 26 22" fill="none" stroke="#00803D" stroke-width="1.5" stroke-linecap="round" />
+      <text x="78" y="16" font-family="Plus Jakarta Sans, sans-serif" font-size="8.5" font-weight="700" fill="#00803D" text-anchor="middle">Instructions de tri</text>
+      <text x="78" y="27" font-family="Plus Jakarta Sans, sans-serif" font-size="7.5" font-weight="500" fill="#15803D" text-anchor="middle">Bac de tri / Recyclable</text>
     </g>
   </g>
-
-  <!-- Decorative Sparkles -->
-  <circle cx="24" cy="40" r="3" fill="#0284c7" opacity="0.4" />
-  <circle cx="328" cy="168" r="4" fill="#10b981" opacity="0.5" />
 </svg>

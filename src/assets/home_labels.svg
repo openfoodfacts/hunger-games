@@ -1,103 +1,81 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 200" width="100%" height="100%">
-  <defs>
-    <linearGradient id="lbBgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#f0fdf4" />
-      <stop offset="100%" stop-color="#dcfce7" />
-    </linearGradient>
-    <linearGradient id="lbGreen" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#16a34a" />
-      <stop offset="100%" stop-color="#15803d" />
-    </linearGradient>
-    <linearGradient id="lbGold" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#fbbf24" />
-      <stop offset="100%" stop-color="#d97706" />
-    </linearGradient>
-    <linearGradient id="lbBlue" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#3b82f6" />
-      <stop offset="100%" stop-color="#1d4ed8" />
-    </linearGradient>
-    <filter id="lbShadow" x="-10%" y="-10%" width="120%" height="120%">
-      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#14532d" flood-opacity="0.1" />
-    </filter>
-    <filter id="lbBadgeShadow" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0f172a" flood-opacity="0.16" />
-    </filter>
-  </defs>
-
   <!-- Background Base Container -->
-  <rect width="350" height="200" rx="16" fill="url(#lbBgGrad)" />
+  <rect width="350" height="200" rx="16" fill="#F8F9FA" />
 
-  <!-- Main Card Container -->
-  <g filter="url(#lbShadow)">
-    <rect x="36" y="20" width="278" height="160" rx="14" fill="#ffffff" stroke="#bbf7d0" stroke-width="1.5" />
-  </g>
+  <!-- Main Card Surface -->
+  <rect x="12" y="10" width="326" height="180" rx="14" fill="#FFFFFF" stroke="#E5E5E5" stroke-width="1.2" />
 
-  <!-- Header Banner -->
-  <rect x="36" y="20" width="278" height="34" rx="14" fill="#f0fdf4" />
-  <rect x="36" y="40" width="278" height="14" fill="#f0fdf4" />
-  <line x1="36" y1="54" x2="314" y2="54" stroke="#dcfce7" stroke-width="1" />
+  <!-- Top Accent Bar (Official Organic Green) -->
+  <path d="M 12 24 A 14 14 0 0 1 26 10 L 324 10 A 14 14 0 0 1 338 24 L 338 26 L 12 26 Z" fill="#00803D" />
 
-  <g transform="translate(52, 28)">
-    <rect width="20" height="18" rx="5" fill="url(#lbGreen)" />
-    <!-- Leaf icon -->
-    <path d="M10 4 C7 4 5 7 9 12 C13 7 11 4 10 4 Z" fill="#ffffff" />
-    <text x="28" y="14" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" fill="#0f172a">Labels & Certifications</text>
+  <!-- Badge Top Right -->
+  <rect x="190" y="16" width="136" height="18" rx="9" fill="#EDF7EE" />
+  <text x="258" y="29" font-family="Plus Jakarta Sans, sans-serif" font-size="8.5" font-weight="700" fill="#00803D" text-anchor="middle" letter-spacing="0.5">LABELS &amp; CERTIFICATIONS</text>
 
-    <!-- Question Tag -->
-    <rect x="186" y="2" width="62" height="16" rx="8" fill="#dcfce7" />
-    <text x="217" y="13" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="700" fill="#15803d" text-anchor="middle">LABELS</text>
-  </g>
-
-  <!-- Certifications Grid / Seals Collection -->
-  <g transform="translate(56, 66)">
-    <!-- 1. Organic Euro-leaf Seal (Left) -->
-    <g transform="translate(6, 4)" filter="url(#lbBadgeShadow)">
-      <rect width="64" height="74" rx="12" fill="#22c55e" stroke="#16a34a" stroke-width="1.5" />
-      <!-- Stylized Euro-leaf -->
-      <path d="M32 18 C20 18 16 32 32 46 C48 32 44 18 32 18 Z" fill="#ffffff" />
-      <path d="M32 24 L32 42" stroke="#22c55e" stroke-width="1.8" stroke-linecap="round" />
-      <!-- Star dots on leaf -->
-      <circle cx="26" cy="24" r="1.5" fill="#ffffff" />
-      <circle cx="38" cy="24" r="1.5" fill="#ffffff" />
-      <circle cx="22" cy="32" r="1.5" fill="#ffffff" />
-      <circle cx="42" cy="32" r="1.5" fill="#ffffff" />
-      <!-- Label below -->
-      <text x="32" y="62" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8" font-weight="900" fill="#ffffff" text-anchor="middle" letter-spacing="0.5">BIO / ORG</text>
+  <!-- Labels Showcase Row -->
+  <g transform="translate(24, 42)">
+    <!-- Label 1: Euro-leaf (European Organic Label) -->
+    <g transform="translate(0, 0)">
+      <rect width="94" height="74" rx="8" fill="#00803D" stroke="#006428" stroke-width="1" />
+      <!-- Euro Leaf 12 Stars Pattern -->
+      <g fill="#FFFFFF" transform="translate(47, 34) scale(0.7)">
+        <!-- Top star -->
+        <circle cx="0" cy="-30" r="3.2" />
+        <!-- Leaf outline stars -->
+        <circle cx="12" cy="-22" r="3.2" />
+        <circle cx="22" cy="-10" r="3.2" />
+        <circle cx="28" cy="6" r="3.2" />
+        <circle cx="26" cy="22" r="3.2" />
+        <circle cx="16" cy="32" r="3.2" />
+        <circle cx="0" cy="36" r="3.2" />
+        <circle cx="-16" cy="32" r="3.2" />
+        <circle cx="-24" cy="18" r="3.2" />
+        <circle cx="-24" cy="2" r="3.2" />
+        <circle cx="-16" cy="-14" r="3.2" />
+        <!-- Central star -->
+        <circle cx="0" cy="0" r="3.5" />
+      </g>
+      <text x="47" y="66" font-family="Plus Jakarta Sans, sans-serif" font-size="7.5" font-weight="700" fill="#FFFFFF" text-anchor="middle">Bio Européen</text>
     </g>
 
-    <!-- 2. Quality Gold Medal Award (Center Elevated) -->
-    <g transform="translate(86, -4)" filter="url(#lbBadgeShadow)">
-      <!-- Ribbons below medal -->
-      <polygon points="26,44 18,78 30,72 36,44" fill="#1d4ed8" />
-      <polygon points="40,44 48,78 36,72 30,44" fill="#2563eb" />
-
-      <!-- Circular Gold Medal -->
-      <circle cx="33" cy="33" r="26" fill="url(#lbGold)" />
-      <circle cx="33" cy="33" r="22" fill="#fef3c7" stroke="#d97706" stroke-width="1.2" />
-      <!-- Star inside medal -->
-      <polygon points="33,18 36,26 44,27 38,33 40,41 33,37 26,41 28,33 22,27 30,26" fill="url(#lbGold)" />
-      
-      <!-- Label below medal -->
-      <rect x="6" y="80" width="54" height="15" rx="7.5" fill="#fef3c7" stroke="#f59e0b" stroke-width="1" />
-      <text x="33" y="91" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="7.5" font-weight="900" fill="#92400e" text-anchor="middle">PREMIUM</text>
+    <!-- Label 2: Agriculture Biologique (AB) -->
+    <g transform="translate(104, 0)">
+      <rect width="94" height="74" rx="8" fill="#FFFFFF" stroke="#00803D" stroke-width="1.8" />
+      <circle cx="47" cy="28" r="16" fill="#00803D" />
+      <text x="47" y="34" font-family="Plus Jakarta Sans, sans-serif" font-size="14" font-weight="900" fill="#FFFFFF" text-anchor="middle">AB</text>
+      <text x="47" y="54" font-family="Plus Jakarta Sans, sans-serif" font-size="6" font-weight="800" fill="#00803D" text-anchor="middle">AGRICULTURE</text>
+      <text x="47" y="62" font-family="Plus Jakarta Sans, sans-serif" font-size="6" font-weight="800" fill="#00803D" text-anchor="middle">BIOLOGIQUE</text>
     </g>
 
-    <!-- 3. Fair-Trade / Eco Seal (Right) -->
-    <g transform="translate(166, 4)" filter="url(#lbBadgeShadow)">
-      <circle cx="32" cy="37" r="32" fill="#ffffff" stroke="#0284c7" stroke-width="1.8" />
-      <circle cx="32" cy="37" r="27" fill="#f0f9ff" />
-      
-      <!-- Globe / Human Handshake Motif -->
-      <path d="M18 37 C18 29 24 23 32 23 C40 23 46 29 46 37 C46 45 40 51 32 51" fill="none" stroke="#0284c7" stroke-width="2" />
-      <path d="M24 37 L30 43 L42 29" fill="none" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
-
-      <!-- Label below -->
-      <rect x="8" y="74" width="48" height="15" rx="7.5" fill="#e0f2fe" />
-      <text x="32" y="85" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="7.5" font-weight="800" fill="#0369a1" text-anchor="middle">FAIR TRADE</text>
+    <!-- Label 3: Fairtrade / Commerce Équitable -->
+    <g transform="translate(208, 0)">
+      <rect width="94" height="74" rx="8" fill="#111827" stroke="#1F2937" stroke-width="1" />
+      <!-- Fairtrade Swirl Badge -->
+      <g transform="translate(47, 28)">
+        <circle cx="0" cy="0" r="16" fill="#0064C8" />
+        <path d="M 0 -16 A 16 16 0 0 1 0 16 A 8 8 0 0 1 0 0 A 8 8 0 0 0 0 -16 Z" fill="#5ABE4B" />
+        <circle cx="0" cy="-8" r="3" fill="#FFFFFF" />
+      </g>
+      <text x="47" y="56" font-family="Plus Jakarta Sans, sans-serif" font-size="6.5" font-weight="800" fill="#FFFFFF" text-anchor="middle">FAIRTRADE</text>
+      <text x="47" y="66" font-family="Plus Jakarta Sans, sans-serif" font-size="6" font-weight="600" fill="#9CA3AF" text-anchor="middle">Max Havelaar</text>
     </g>
   </g>
 
-  <!-- Decorative Sparkles -->
-  <circle cx="24" cy="40" r="3" fill="#16a34a" opacity="0.4" />
-  <circle cx="328" cy="168" r="4" fill="#fbbf24" opacity="0.5" />
+  <!-- Bottom Question Validation Strip -->
+  <g transform="translate(24, 126)">
+    <rect width="302" height="48" rx="8" fill="#F4FAF5" stroke="#D1EADE" stroke-width="1.2" />
+
+    <text x="16" y="20" font-family="Plus Jakarta Sans, sans-serif" font-size="9.5" font-weight="700" fill="#111827">Le produit dispose-t-il d'un label biologique certifié ?</text>
+
+    <!-- Action Pills -->
+    <g transform="translate(16, 26)">
+      <rect width="130" height="18" rx="5" fill="#00803D" />
+      <text x="65" y="13" font-family="Plus Jakarta Sans, sans-serif" font-size="8.5" font-weight="700" fill="#FFFFFF" text-anchor="middle">Oui, certifié bio ✓</text>
+    </g>
+
+    <g transform="translate(156, 26)">
+      <rect width="130" height="18" rx="5" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="1" />
+      <text x="65" y="13" font-family="Plus Jakarta Sans, sans-serif" font-size="8.5" font-weight="600" fill="#4B5563" text-anchor="middle">Non / Aucun label</text>
+    </g>
+  </g>
 </svg>

@@ -2,7 +2,6 @@ import * as React from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router";
 
-import ArrowForwardRoundedIcon from "@mui/icons-material/ArrowForwardRounded";
 import OpenInNewRoundedIcon from "@mui/icons-material/OpenInNewRounded";
 import Box from "@mui/material/Box";
 import Card from "@mui/material/Card";
@@ -147,20 +146,18 @@ const cards = [
     id: "prices_validation",
     title: "home.game_selector.cards.prices_validation.title",
     desc: "home.game_selector.cards.prices_validation.description",
-    link: "https://prices.openfoodfacts.org/prices/add/validate",
+    href: "https://prices.openfoodfacts.org/prices/add/validate",
     image: home_prices_validate,
     category: "open_prices",
-    isExternal: true,
     badge: "Open Prices",
   },
   {
     id: "prices_create_product",
     title: "home.game_selector.cards.prices_create_product.title",
     desc: "home.game_selector.cards.prices_create_product.description",
-    link: "https://prices.openfoodfacts.org/experiments/create-off-product",
+    href: "https://prices.openfoodfacts.org/experiments/create-off-product",
     image: home_prices_create_product,
     category: "open_prices",
-    isExternal: true,
     badge: "Open Prices",
   },
 ];
@@ -264,26 +261,23 @@ const HomeCard = ({ cardInfo, t }) => {
             {t(desc)}
           </Typography>
         </CardContent>
-        <Stack
-          direction="row"
-          sx={{
-            px: 2.5,
-            pb: 2.25,
-            alignItems: "center",
-            justifyContent: "space-between",
-            color: "primary.main",
-          }}
-        >
-          {cardInfo.href && (
-            <Stack direction="row" spacing={0.5} sx={{ alignItems: "center" }}>
-              <OpenInNewRoundedIcon fontSize="small" aria-hidden />
-              <Typography variant="caption" sx={{ fontWeight: 700 }}>
-                {t("home.game_selector.external_link")}
-              </Typography>
-            </Stack>
-          )}
-          <ArrowForwardRoundedIcon fontSize="small" aria-hidden />
-        </Stack>
+        {cardInfo.href && (
+          <Stack
+            direction="row"
+            spacing={0.5}
+            sx={{
+              px: 2.5,
+              pb: 2.25,
+              alignItems: "center",
+              color: "primary.main",
+            }}
+          >
+            <OpenInNewRoundedIcon fontSize="small" aria-hidden />
+            <Typography variant="caption" sx={{ fontWeight: 700 }}>
+              {t("home.game_selector.external_link")}
+            </Typography>
+          </Stack>
+        )}
       </CardActionArea>
     </Card>
   );

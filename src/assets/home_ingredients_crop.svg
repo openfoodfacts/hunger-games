@@ -1,101 +1,56 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 200" width="100%" height="100%">
-  <defs>
-    <linearGradient id="crBgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#f0fdfa" />
-      <stop offset="100%" stop-color="#ccfbf1" />
-    </linearGradient>
-    <linearGradient id="crTeal" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#14b8a6" />
-      <stop offset="100%" stop-color="#0d9488" />
-    </linearGradient>
-    <linearGradient id="crCyan" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#06b6d4" />
-      <stop offset="100%" stop-color="#0284c7" />
-    </linearGradient>
-    <filter id="crShadow" x="-10%" y="-10%" width="120%" height="120%">
-      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#134e4a" flood-opacity="0.1" />
-    </filter>
-    <filter id="crHandleShadow" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#042f2e" flood-opacity="0.2" />
-    </filter>
-  </defs>
-
   <!-- Background Base Container -->
-  <rect width="350" height="200" rx="16" fill="url(#crBgGrad)" />
+  <rect width="350" height="200" rx="16" fill="#F8F9FA" />
 
-  <!-- Package Backside Container Card -->
-  <g filter="url(#crShadow)">
-    <rect x="40" y="22" width="270" height="156" rx="14" fill="#ffffff" stroke="#99f6e4" stroke-width="1.5" />
-  </g>
+  <!-- Main Card Surface -->
+  <rect x="12" y="10" width="326" height="180" rx="14" fill="#FFFFFF" stroke="#E5E5E5" stroke-width="1.2" />
 
-  <!-- Product Package simulated lines (outer context) -->
-  <g transform="translate(60, 36)" opacity="0.45">
-    <rect x="0" y="0" width="90" height="8" rx="4" fill="#64748b" />
-    <rect x="0" y="14" width="180" height="4" rx="2" fill="#94a3b8" />
-    <rect x="0" y="22" width="140" height="4" rx="2" fill="#94a3b8" />
-    <!-- Barcode simulation at bottom right -->
-    <g transform="translate(160, 94)">
-      <line x1="0" y1="0" x2="0" y2="24" stroke="#475569" stroke-width="2" />
-      <line x1="4" y1="0" x2="4" y2="24" stroke="#475569" stroke-width="1" />
-      <line x1="8" y1="0" x2="8" y2="24" stroke="#475569" stroke-width="3" />
-      <line x1="14" y1="0" x2="14" y2="24" stroke="#475569" stroke-width="1.5" />
-      <line x1="18" y1="0" x2="18" y2="24" stroke="#475569" stroke-width="2" />
-      <line x1="24" y1="0" x2="24" y2="24" stroke="#475569" stroke-width="3.5" />
-      <line x1="30" y1="0" x2="30" y2="24" stroke="#475569" stroke-width="1" />
-      <line x1="36" y1="0" x2="36" y2="24" stroke="#475569" stroke-width="2" />
-      <line x1="42" y1="0" x2="42" y2="24" stroke="#475569" stroke-width="1.5" />
+  <!-- Top Accent Bar (Open Food Facts Orange) -->
+  <path d="M 12 24 A 14 14 0 0 1 26 10 L 324 10 A 14 14 0 0 1 338 24 L 338 26 L 12 26 Z" fill="#FF8714" />
+
+  <!-- Badge Top Right -->
+  <rect x="180" y="16" width="146" height="18" rx="9" fill="#FFF4E8" />
+  <text x="253" y="29" font-family="Plus Jakarta Sans, sans-serif" font-size="8.5" font-weight="700" fill="#FF8714" text-anchor="middle" letter-spacing="0.5">CADRAGE D'INGRÉDIENTS</text>
+
+  <!-- Packaging Photo Background with Cropping Overlay -->
+  <g transform="translate(24, 42)">
+    <!-- Package Photo Canvas -->
+    <rect width="302" height="134" rx="10" fill="#F3F4F6" stroke="#E5E7EB" stroke-width="1" />
+
+    <!-- Distant packaging text placeholders -->
+    <rect x="16" y="12" width="60" height="6" rx="2" fill="#D1D5DB" />
+    <rect x="16" y="24" width="80" height="5" rx="2" fill="#E5E7EB" />
+    <rect x="16" y="34" width="70" height="5" rx="2" fill="#E5E7EB" />
+
+    <!-- Active Crop Area Box with Orange Corners -->
+    <g transform="translate(36, 12)">
+      <!-- Transparent Mask Cutout -->
+      <rect width="230" height="90" fill="#FFFFFF" stroke="#FF8714" stroke-width="1.5" />
+
+      <!-- Rule-of-Thirds Grid Lines -->
+      <line x1="76" y1="0" x2="76" y2="90" stroke="#FF8714" stroke-width="0.8" stroke-dasharray="3 3" opacity="0.6" />
+      <line x1="153" y1="0" x2="153" y2="90" stroke="#FF8714" stroke-width="0.8" stroke-dasharray="3 3" opacity="0.6" />
+      <line x1="0" y1="30" x2="230" y2="30" stroke="#FF8714" stroke-width="0.8" stroke-dasharray="3 3" opacity="0.6" />
+      <line x1="0" y1="60" x2="230" y2="60" stroke="#FF8714" stroke-width="0.8" stroke-dasharray="3 3" opacity="0.6" />
+
+      <!-- 4 Corner Crop Markers in OFF Orange -->
+      <path d="M 0 16 L 0 0 L 16 0" fill="none" stroke="#FF8714" stroke-width="3.5" />
+      <path d="M 214 0 L 230 0 L 230 16" fill="none" stroke="#FF8714" stroke-width="3.5" />
+      <path d="M 0 74 L 0 90 L 16 90" fill="none" stroke="#FF8714" stroke-width="3.5" />
+      <path d="M 214 90 L 230 90 L 230 74" fill="none" stroke="#FF8714" stroke-width="3.5" />
+
+      <!-- Real Ingredients Text Inside Crop Box -->
+      <text x="14" y="20" font-family="Plus Jakarta Sans, sans-serif" font-size="9.5" font-weight="700" fill="#111827">Ingrédients :</text>
+      <text x="14" y="36" font-family="Plus Jakarta Sans, sans-serif" font-size="8" font-weight="500" fill="#374151">Farine de blé 68%, eau, sucre, huile de colza,</text>
+      <text x="14" y="50" font-family="Plus Jakarta Sans, sans-serif" font-size="8" font-weight="500" fill="#374151">levure, arôme naturel, sel, gluten de blé,</text>
+      <text x="14" y="64" font-family="Plus Jakarta Sans, sans-serif" font-size="8" font-weight="500" fill="#374151">conservateur : propionate de calcium.</text>
+      <text x="14" y="78" font-family="Plus Jakarta Sans, sans-serif" font-size="7.5" font-weight="600" fill="#00A05A">Zone de texte détectée avec précision ✓</text>
+    </g>
+
+    <!-- Validate Crop Action Tag Button -->
+    <g transform="translate(86, 106)">
+      <rect width="130" height="22" rx="11" fill="#FF8714" />
+      <text x="65" y="15" font-family="Plus Jakarta Sans, sans-serif" font-size="8.5" font-weight="700" fill="#FFFFFF" text-anchor="middle">Valider le cadrage ✓</text>
     </g>
   </g>
-
-  <!-- Semi-transparent overlay outside crop box -->
-  <rect x="40" y="22" width="270" height="156" rx="14" fill="#0f172a" opacity="0.04" />
-
-  <!-- ACTIVE CROP BOX AREA -->
-  <g transform="translate(68, 64)">
-    <!-- Clear highlighted window -->
-    <rect x="0" y="0" width="214" height="74" rx="4" fill="#ffffff" stroke="url(#crCyan)" stroke-width="2" stroke-dasharray="6 4" />
-    
-    <!-- Inner Ingredients text clearly readable inside crop box -->
-    <g transform="translate(14, 16)">
-      <text x="0" y="10" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="800" fill="#0f766e" letter-spacing="0.5">INGREDIENTS:</text>
-      <text x="0" y="26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="500" fill="#334155">Corn, vegetable oil (sunflower), cheese seasoning</text>
-      <text x="0" y="40" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="500" fill="#334155">(whey powder, milk, salt), sugar, natural spices.</text>
-    </g>
-
-    <!-- Crop Corner Handles (L-shaped grips) -->
-    <!-- Top-Left -->
-    <path d="M-2 14 L-2 -2 L14 -2" fill="none" stroke="#0891b2" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" filter="url(#crHandleShadow)" />
-    <!-- Top-Right -->
-    <path d="M200 -2 L216 -2 L216 14" fill="none" stroke="#0891b2" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" filter="url(#crHandleShadow)" />
-    <!-- Bottom-Left -->
-    <path d="M-2 60 L-2 76 L14 76" fill="none" stroke="#0891b2" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" filter="url(#crHandleShadow)" />
-    <!-- Bottom-Right -->
-    <path d="M200 76 L216 76 L216 60" fill="none" stroke="#0891b2" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" filter="url(#crHandleShadow)" />
-
-    <!-- Center Crosshair reticle -->
-    <circle cx="107" cy="37" r="8" fill="none" stroke="#06b6d4" stroke-width="1.2" opacity="0.6" />
-    <line x1="107" y1="24" x2="107" y2="50" stroke="#06b6d4" stroke-width="1.2" opacity="0.6" />
-    <line x1="94" y1="37" x2="120" y2="37" stroke="#06b6d4" stroke-width="1.2" opacity="0.6" />
-
-    <!-- Floating Crop Badge Tag (Top-Center of crop box) -->
-    <g transform="translate(68, -12)" filter="url(#crHandleShadow)">
-      <rect width="78" height="20" rx="10" fill="url(#crTeal)" />
-      <!-- Scissors icon -->
-      <path d="M12 7 L16 13 M12 13 L16 7" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" />
-      <circle cx="10" cy="6" r="1.5" fill="#ffffff" />
-      <circle cx="10" cy="14" r="1.5" fill="#ffffff" />
-      <text x="47" y="14" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="800" fill="#ffffff" text-anchor="middle" letter-spacing="0.5">BOUNDING BOX</text>
-    </g>
-  </g>
-
-  <!-- Floating Dimensions Badge at Bottom Right -->
-  <g transform="translate(204, 146)">
-    <rect width="90" height="20" rx="6" fill="#ccfbf1" stroke="#5eead4" stroke-width="1" />
-    <text x="45" y="14" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="700" fill="#0f766e" text-anchor="middle">✓ DETECTED 100%</text>
-  </g>
-
-  <!-- Decorative Sparkles -->
-  <circle cx="26" cy="32" r="3" fill="#14b8a6" opacity="0.5" />
-  <circle cx="324" cy="36" r="4" fill="#06b6d4" opacity="0.5" />
-  <circle cx="320" cy="174" r="3" fill="#0d9488" opacity="0.4" />
 </svg>
