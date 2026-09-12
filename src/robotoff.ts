@@ -19,14 +19,14 @@ export interface QuestionInterface {
 
 export type BoundingBox = [number, number, number, number];
 
-export interface LogoImage {
+interface LogoImage {
   barcode: string;
   image_id: string;
   source_image: string;
   url?: string;
 }
 
-export interface Logo {
+interface Logo {
   id: number;
   logo_id?: number;
   annotation_type: string | null;

@@ -1,14 +1,14 @@
 import * as React from "react";
 import { useLocation } from "react-router";
 
-export const setUrlParams = (parameters, defaultParameters) => {
+const setUrlParams = (parameters, defaultParameters) => {
   const newRelativePathQuery = `${
     window.location.pathname
   }?${convertObjectParamsToUrlParams(parameters, defaultParameters)}`;
   window.history.pushState(null, "", newRelativePathQuery);
 };
 
-export const getDefaultizedUrlParams = (defaultParameters, synonyms = {}) => {
+const getDefaultizedUrlParams = (defaultParameters, synonyms = {}) => {
   const parameters = { ...defaultParameters };
   const urlParams = new URLSearchParams(window.location.search);
   Object.keys(defaultParameters).forEach((key) => {

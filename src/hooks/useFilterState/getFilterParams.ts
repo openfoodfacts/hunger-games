@@ -30,8 +30,6 @@ export function getFilterParams(searchParams: URLSearchParams): FilterState {
   };
 }
 
-export { normalizeCountryFilter };
-
 function updateParams(
   searchParams: URLSearchParams,
   key: string,

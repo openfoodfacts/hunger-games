@@ -11,7 +11,7 @@ import { useMutation } from "@tanstack/react-query";
 import off from "../../off";
 
 type BooleanEstimation = "no" | "yes" | "maybe";
-export type ParsedIngredientsType = {
+type ParsedIngredientsType = {
   ciqual_proxy_food_code?: string;
   id: string;
   ingredients?: ParsedIngredientsType[];
@@ -141,7 +141,7 @@ type IngeredientDisplayProps = {
   parsings: Record<string, ParsedIngredientsType[] | undefined>;
 };
 
-export function IngeredientDisplay({
+function IngeredientDisplay({
   text,
   onChange,
   parsings,
