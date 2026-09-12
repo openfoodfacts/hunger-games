@@ -2,6 +2,7 @@
   "home": {
     "game_selector": {
       "title": "你喜歡玩什麼遊戲？",
+      "external_link": "External link",
       "cards": {
         "questions": {
           "title": "常見問题",
@@ -28,6 +29,12 @@
       "contribution_details": "瞭解為何您的貢獻至關重要"
     },
     "saved_filters": "已儲存篩選器",
+    "saved_filters_delete": "Delete saved filter",
+    "saved_filters_delete_title": "Delete saved filter?",
+    "saved_filters_delete_description": "This saved filter will be removed from this device.",
+    "saved_filters_delete_confirm": "刪除",
+    "saved_filters_pending": "{{count}} products waiting",
+    "saved_filters_pending_unknown": "Products waiting",
     "contribution_modal": {
       "title": "您的貢獻至關重要",
       "information": "“飢餓遊戲”（Hunger Games）是一項利用我們的光學字符識別（OCR）和人工智能成果的嘗試。當你使用由 “開放食品事實”（Open Food Facts）推出的 “飢餓遊戲” 時，您會完善我們的整個資料庫，這有助於社區做出更好的食品選擇。我們會收集您所做的標注，並利用它們使 “開放食品事實” 變得更加準確和高效。",
@@ -35,6 +42,12 @@
     },
     "statistics": {
       "title": "{{userName}} 的統計資料：",
+      "title_without_name": "Your statistics",
+      "empty_state": {
+        "title": "No contributions yet",
+        "description": "Your contribution statistics will appear here once you start helping improve Open Food Facts.",
+        "action": "Start contributing"
+      },
       "editorCount": {
         "title": "編輯器",
         "description": "已完成版本數量"
@@ -207,6 +220,17 @@
     "view_crops_for_this_product": "註釋產品標誌"
   },
   "logos": {
+    "dashboard": {
+      "title": "Logo dashboard",
+      "description": "Explore logo categories and help improve product data.",
+      "category": "分類 ",
+      "categories": "種類",
+      "logo_count_one": "{{count}} logo",
+      "logo_count_other": "{{count}} logos",
+      "more_info": "More info",
+      "questions": "常見問题",
+      "search": "搜尋"
+    },
     "annotation": "注解： ",
     "annotations": "標誌注解",
     "task_description": "請選出所有完全相同的標識，並給它們起一個名稱（如 “en:EU Organic” ）和設定一種類型（如“標籤”）。",
@@ -251,6 +275,8 @@
       "title": "標誌搜尋",
       "description": "選擇一個您想要查詢的標識，然後讓我們開始把它們全都找出來。對於您標注的每個標識，我們都會獲取它的相鄰標識，以便你可能就會不停地進行標注了。（按下Shift鍵可選擇標識的範圍）",
       "ref_logos": "參考標識（已用此值進行標注的標識）\n",
+      "annotation_count_one": "Already {{formattedCount}} annotation. You can come back to this logo in a few days if you don't find any matching logos.",
+      "annotation_count_other": "Already {{formattedCount}} annotations. You can come back to this logo in a few days if you don't find any matching logos.",
       "remaining": "待標注的",
       "select_all": "選取全部",
       "unselect_all": "取消全選"
