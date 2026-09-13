@@ -421,6 +421,10 @@
   },
   "green-score": {
     "description": "Ecco un riepilogo delle domande che potrebbero migliorare il calcolo dell'Green-Score",
+    "labelsDescription": "Rispondi alle domande relative a queste etichette per migliorare il calcolo del Green-Score",
+    "categoriesDescription": "Rispondi alle domande relative a queste categorie per migliorare il calcolo del Green-Score",
+    "questionCountLabel_one": "domanda",
+    "questionCountLabel_other": "domande",
     "countryLabel": "Paese"
   },
   "ingredients": {
