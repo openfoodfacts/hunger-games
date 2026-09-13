@@ -14,6 +14,10 @@
         "green_score": {
           "title": "Green-Score",
           "description": "תיוג השאלות עם הערך הגבוה ביותר"
+        },
+        "create_products": {
+          "title": "יצירת מוצרים חסרים",
+          "description": "הוספת מוצרים שעדיין אינם במסד הנתונים, ב־Open Prices"
         }
       }
     },
@@ -71,6 +75,10 @@
     "skip": "דילוג",
     "yes": "כן",
     "no_questions_remaining": "אין עוד שאלות",
+    "similar_questions": "שאלות דומות",
+    "no_similar_questions": "אין שאלות דומות",
+    "remaining_questions_count_one": "נותרה שאלה אחת",
+    "remaining_questions_count_other": "נותרו {{count}} שאלות",
     "an_error_occurred": "אירעה שגיאה. אנא טען מחדש, נסה מאוחר יותר או צור קשר עם הצוות.",
     "countries": "מדינות",
     "view": "הצגה",
@@ -83,10 +91,9 @@
     "last_annotations": "הערות אחרונות",
     "remaining_annotations": "שאלות שנותרו",
     "annotated_annotations": "נכתבו הערות",
-    "similar_questions": "שאלות דומות",
-    "no_similar_questions": "אין שאלות דומות",
     "no_images": "אין תמונות זמינות",
     "no_additional_info": "אין פרטים נוספים",
+    "add_missing_info": "הוספה",
     "filters": {
       "active_filter_number": "+{{count}} מסננים",
       "active_filter_number_one": "+ מסנן",
@@ -111,6 +118,7 @@
       },
       "placeholders": {
         "value": "ערך (פאנטה, en:organic,…)",
+        "country": "צרפת, ישראל, יפן…",
         "brand": "טרה, אסם, צבר, …",
         "campaign": "מסעות פרסום לתיוג",
         "predictor": "גלאי לוגו אוניברסלי, ביטוי רגולרי, ..."
