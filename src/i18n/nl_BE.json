@@ -2,7 +2,7 @@
   "home": {
     "game_selector": {
       "title": "Welk spel zou je willen spelen?",
-      "external_link": "External link",
+      "external_link": "Externe link",
       "cards": {
         "questions": {
           "title": "Vragen",
@@ -17,8 +17,8 @@
           "description": "Label de vragen met de hoogste waarde"
         },
         "create_products": {
-          "title": "Create missing products",
-          "description": "Add products that are not in the database yet, over on Open Prices"
+          "title": "Creëer ontbrekende producten",
+          "description": "Voeg ontbrekende producten die nog niet in de database staan toe via Open Prices"
         }
       }
     },
@@ -29,12 +29,12 @@
       "contribution_details": "Ontdek waarom uw bijdrage ertoe doet"
     },
     "saved_filters": "Opgeslagen filters",
-    "saved_filters_delete": "Delete saved filter",
-    "saved_filters_delete_title": "Delete saved filter?",
-    "saved_filters_delete_description": "This saved filter will be removed from this device.",
+    "saved_filters_delete": "Verwijder opgeslagen filter",
+    "saved_filters_delete_title": "Opgeslagen filter verwijderen?",
+    "saved_filters_delete_description": "Dit opgeslagen filter zal verwijderd worden van dit apparaat.",
     "saved_filters_delete_confirm": "Verwijder",
-    "saved_filters_pending": "{{count}} products waiting",
-    "saved_filters_pending_unknown": "Products waiting",
+    "saved_filters_pending": "{{count}} wachtende producten",
+    "saved_filters_pending_unknown": "Wachtende producten",
     "contribution_modal": {
       "title": "Jouw bijdrage doet ertoe",
       "information": "Hunger Games is een poging om de resultaten van onze OCR en artificiële intelligentie te benutten. Wanneer u Hunger Games van Open Food Facts gebruikt, verbetert u onze hele database, waardoor de gemeenschap betere voedselkeuzes kan maken. We verzamelen uw annotaties en gebruiken ze om Open Food Facts nauwkeuriger en efficiënter te maken.",
@@ -42,11 +42,11 @@
     },
     "statistics": {
       "title": "{{userName}} statistieken:",
-      "title_without_name": "Your statistics",
+      "title_without_name": "Jouw statistieken",
       "empty_state": {
-        "title": "No contributions yet",
-        "description": "Your contribution statistics will appear here once you start helping improve Open Food Facts.",
-        "action": "Start contributing"
+        "title": "Nog geen bijdragen",
+        "description": "Je bijdragestatistieken verschijnen hier zodra je helpt Open Food Facts te verbeteren.",
+        "action": "Begin met bijdragen"
       },
       "editorCount": {
         "title": "Bewerkers",
@@ -67,8 +67,8 @@
     "loading": "Aan het laden"
   },
   "image_viewer": {
-    "compressed": "Compressed",
-    "load_original": "Load original"
+    "compressed": "Gecomprimeerd",
+    "load_original": "Laad origineel"
   },
   "questions": {
     "category": "categorie",
@@ -88,10 +88,10 @@
     "skip": "Overslaan",
     "yes": "Ja",
     "no_questions_remaining": "Geen verdere vragen",
-    "similar_questions": "Similar questions",
-    "no_similar_questions": "No similar questions",
-    "remaining_questions_count_one": "1 question remaining",
-    "remaining_questions_count_other": "{{count}} questions remaining",
+    "similar_questions": "Vergelijkbare vragen",
+    "no_similar_questions": "Geen vergelijkbare vragen",
+    "remaining_questions_count_one": "1 vraag resterend",
+    "remaining_questions_count_other": "{{count}} vragen resterend",
     "an_error_occurred": "Er is een fout opgetreden. Laad de pagina opnieuw, probeer het later opnieuw of neem contact op met het team.",
     "countries": "Landen",
     "view": "Bekijk",
@@ -104,8 +104,8 @@
     "last_annotations": "Laatste aantekeningen",
     "remaining_annotations": "Resterende vragen",
     "annotated_annotations": "Geannoteerd",
-    "no_images": "No images available",
-    "no_additional_info": "No additional information",
+    "no_images": "Geen afbeeldingen beschikbaar",
+    "no_additional_info": "Geen aanvullende informatie",
     "add_missing_info": "Toevoegen",
     "filters": {
       "active_filter_number": "+{{count}} filters",
@@ -131,7 +131,7 @@
       },
       "placeholders": {
         "value": "Waarde (Fanta, nl:biologisch,...)",
-        "country": "France, Germany, Japan, ...",
+        "country": "Frankrijk, Duitsland, Japen, ...",
         "brand": "Auchan, Danone, Herta, ...",
         "campaign": "Annotatiecampagnes",
         "predictor": "universele-logo-detector, regex, ..."
@@ -222,12 +222,12 @@
   "logos": {
     "dashboard": {
       "title": "Logo dashboard",
-      "description": "Explore logo categories and help improve product data.",
+      "description": "Ontdek logo categorieën en help productgegevens te verbeteren.",
       "category": "Categorie",
       "categories": "Categorieën",
       "logo_count_one": "{{count}} logo",
-      "logo_count_other": "{{count}} logos",
-      "more_info": "More info",
+      "logo_count_other": "{{count}} logo's",
+      "more_info": "Meer info",
       "questions": "Vragen",
       "search": "Zoeken"
     },
@@ -275,8 +275,8 @@
       "title": "Logo zoeken",
       "description": "Selecteer een logo waarnaar u wilt op zoek wil gaan en laten we ze allemaal zoeken. Voor elk logo dat u annoteert, halen we naburige op, zodat u nooit hoeft te stoppen met annoteren. (Druk op Shift om een reeks logo's te selecteren)",
       "ref_logos": "Referentielogo's (logo al geannoteerd met deze waarde)",
-      "annotation_count_one": "Already {{formattedCount}} annotation. You can come back to this logo in a few days if you don't find any matching logos.",
-      "annotation_count_other": "Already {{formattedCount}} annotations. You can come back to this logo in a few days if you don't find any matching logos.",
+      "annotation_count_one": "Al {{formattedCount}} annotatie. Je kan na een paar dagen terug komen naar dit logo als je geen vergelijkbare logo's kan vinden.",
+      "annotation_count_other": "Al {{formattedCount}} annotatie. Je kan na een paar dagen terug komen naar dit logo als je geen vergelijkbare logo's kan vinden.",
       "remaining": "Nog te annoteren",
       "select_all": "Alles selecteren",
       "unselect_all": "Alles deselecteren"
