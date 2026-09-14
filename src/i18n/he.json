@@ -2,7 +2,7 @@
   "home": {
     "game_selector": {
       "title": "איזה משחק בא לך לשחק?",
-      "external_link": "External link",
+      "external_link": "קישור חיצוני",
       "cards": {
         "questions": {
           "title": "שאלות",
@@ -29,12 +29,12 @@
       "contribution_details": "הסבר על חשיבות התרומה שלך"
     },
     "saved_filters": "מסננים שמורים",
-    "saved_filters_delete": "Delete saved filter",
-    "saved_filters_delete_title": "Delete saved filter?",
-    "saved_filters_delete_description": "This saved filter will be removed from this device.",
+    "saved_filters_delete": "מחיקת מסנן שמור",
+    "saved_filters_delete_title": "למחוק את המסנן השמור?",
+    "saved_filters_delete_description": "המסנן השמור הזה יוסר מהמכשיר הזה.",
     "saved_filters_delete_confirm": "מחיקה",
-    "saved_filters_pending": "{{count}} products waiting",
-    "saved_filters_pending_unknown": "Products waiting",
+    "saved_filters_pending": "{{count}} מוצרים ממתינים",
+    "saved_filters_pending_unknown": "מוצרים ממתינים",
     "contribution_modal": {
       "title": "התרומות שלך מביאות לשינוי",
       "information": "משחקי הרעב הם מאמץ למנף את תוצאות הסריקה האופטית והבינה המלאכותית שלנו. שימוש במשחקי הרעב של Open Food Facts, תורמים בשיפור מסד הנתונים שלנו, מה שעוזר לקהילה לבחור טוב יותר באוכל. אנו אוספים את התיוגים שלך ומשתמשים בהם כדי להפוך את Open Food Facts למדויק ויעיל יותר.",
@@ -42,11 +42,11 @@
     },
     "statistics": {
       "title": "סטטיסטיקה על {{userName}}:",
-      "title_without_name": "Your statistics",
+      "title_without_name": "הסטטיסטיקה שלך",
       "empty_state": {
-        "title": "No contributions yet",
-        "description": "Your contribution statistics will appear here once you start helping improve Open Food Facts.",
-        "action": "Start contributing"
+        "title": "אין תרומות עדיין",
+        "description": "סטטיסטיקת התרומות שלך תופיע כאן לאחר הגשת סיוע לשיפור Open Food Facts.",
+        "action": "התחלת תרומה"
       },
       "editorCount": {
         "title": "עורך",
@@ -221,13 +221,13 @@
   },
   "logos": {
     "dashboard": {
-      "title": "Logo dashboard",
+      "title": "לוח בקרה ללוגואים",
       "description": "Explore logo categories and help improve product data.",
       "category": "קטגוריה",
       "categories": "קטגוריות",
-      "logo_count_one": "{{count}} logo",
-      "logo_count_other": "{{count}} logos",
-      "more_info": "More info",
+      "logo_count_one": "לוגו",
+      "logo_count_other": "{{count}} לוגואים",
+      "more_info": "פרטים נוספים",
       "questions": "שאלות",
       "search": "חיפוש"
     },
