@@ -343,6 +343,108 @@ class OffService {
       },
     );
   }
+
+  getOcr(barcode: string, imgid: string | number) {
+    const formattedBarcode = this.getFormatedBarcode(barcode);
+    return axios.get<{
+      responses?: Array<{
+        fullTextAnnotation?: {
+          text?: string;
+          pages?: Array<{
+            property?: {
+              detectedLanguages?: Array<{
+                languageCode: string;
+                confidence: number;
+              }>;
+            };
+          }>;
+        };
+      }>;
+    }>(`${OFF_IMAGE_URL}/products/${formattedBarcode}/${imgid}.json`);
+  }
+
+  updateProductLanguageData(editionParams: {
+    code: string;
+    lang?: string;
+    moveOldLangData?: {
+      oldLang: string;
+    };
+    fields?: Record<string, string>;
+    comment?: string;
+  }) {
+    const {
+      code,
+      lang,
+      moveOldLangData,
+      fields = {},
+      comment = "Fix language data quality (Polyglot game)",
+    } = editionParams;
+
+    const params = new URLSearchParams();
+    params.append("code", code);
+    if (lang) {
+      params.append("lang", lang);
+    }
+    if (moveOldLangData?.oldLang) {
+      params.append(
+        `move_${moveOldLangData.oldLang}_data_and_images_to_main_language`,
+        "1",
+      );
+    }
+    Object.entries(fields).forEach(([key, value]) => {
+      params.append(key, value);
+    });
+    params.append("comment", comment);
+
+    return axios.post<{ status: number; status_verbose?: string }>(
+      `${OFF_URL}/cgi/product_jqm.pl`,
+      params,
+      {
+        withCredentials: true,
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      },
+    );
+  }
+
+  setImageLanguage(editionParams: {
+    code: string;
+    imgid: string | number;
+    imageField: string; // e.g. "front_fr", "ingredients_fr", "packaging_fr"
+    angle?: number;
+    coordinates?: { x1: number; y1: number; x2: number; y2: number };
+    comment?: string;
+  }) {
+    const {
+      code,
+      imgid,
+      imageField,
+      angle = 0,
+      coordinates,
+      comment = "Set image language (Polyglot game)",
+    } = editionParams;
+
+    const params = new URLSearchParams();
+    params.append("code", code);
+    params.append("id", imageField);
+    params.append("imgid", imgid.toString());
+    params.append("angle", angle.toString());
+    if (coordinates) {
+      params.append("x1", coordinates.x1.toString());
+      params.append("y1", coordinates.y1.toString());
+      params.append("x2", coordinates.x2.toString());
+      params.append("y2", coordinates.y2.toString());
+    }
+    params.append("comment", comment);
+
+    return axios.post<{ status: number; status_verbose?: string }>(
+      `${OFF_URL}/cgi/product_image_crop.pl`,
+      params,
+      {
+        withCredentials: true,
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      },
+    );
+  }
 }
 
 const offService = new OffService();

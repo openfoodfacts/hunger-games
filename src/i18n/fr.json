@@ -43,6 +43,10 @@
           "title": "Quantités & Poids",
           "description": "Corrigez et complétez les poids, volumes et contenances signalés par les alertes de qualité"
         },
+        "polyglot": {
+          "title": "Polyglot (Langues)",
+          "description": "Remettez chaque photo, texte et ingrédient dans la bonne langue"
+        },
         "prices_validation": {
           "title": "Validation des prix",
           "description": "Vérifiez les prix et les tickets de caisse contribués sur Open Prices"
@@ -560,5 +564,33 @@
     "save_and_next": "Enregistrer et suivant",
     "save_success": "✓ Quantité enregistrée avec succès sur Open Food Facts !",
     "save_error": "Erreur lors de l'enregistrement de la quantité"
+  },
+  "polyglot": {
+    "title": "Polyglot : Le Chasseur de Langues",
+    "subtitle": "Aidez à remettre chaque photo, texte et emballage dans la bonne langue !",
+    "image_front": "Face avant",
+    "image_ingredients": "Ingrédients",
+    "image_packaging": "Emballage",
+    "photo": "Photo",
+    "no_photo": "Aucune photo disponible pour ce produit.",
+    "detected_text_on_photo": "Texte lu sur l'emballage :",
+    "photo_tip": "Utilisez la molette de la souris ou pincez pour zoomer sur la boîte.",
+    "unknown_brand": "Marque inconnue",
+    "unknown_product": "Produit sans nom",
+    "copied": "Copié !",
+    "copy_barcode": "Copier le code-barres",
+    "open_off": "Voir sur Open Food Facts",
+    "login_hint": "Connectez-vous à Open Food Facts pour que vos corrections soient enregistrées sous votre profil.",
+    "login_required": "Veuillez vous connecter à Open Food Facts pour enregistrer vos corrections.",
+    "move_all_action": "⚡ Tout passer en {{lang}} (Nom, ingrédients et photos)",
+    "shared_image_action": "Valable pour {{lang1}} ET {{lang2}} (Emballage commun)",
+    "move_text_action": "Déplacer uniquement les textes vers {{lang}}",
+    "skip_product": "Passer ce produit (S)",
+    "save_success": "Bravo ! Le produit a été mis à jour avec succès.",
+    "save_error": "Erreur lors de l'enregistrement de la correction.",
+    "challenge_label": "Défi de langue",
+    "country_filter": "Pays (optionnel)",
+    "all_solved_title": "Bravo ! Toutes les anomalies de cette sélection sont corrigées",
+    "all_solved_desc": "Vous avez épuisé les produits signalés pour ce filtre. Essayez un autre défi de langue !"
   }
 }

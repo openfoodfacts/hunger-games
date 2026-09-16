@@ -71,6 +71,15 @@ const cards = [
     badge: "Poids / Vol",
   },
   {
+    id: "polyglot",
+    title: "home.game_selector.cards.polyglot.title",
+    desc: "home.game_selector.cards.polyglot.description",
+    link: "/polyglot",
+    image: home_labels,
+    category: "featured",
+    badge: "Langues",
+  },
+  {
     id: "ingredient_spellcheck",
     title: "home.game_selector.cards.ingredient_spellcheck.title",
     desc: "home.game_selector.cards.ingredient_spellcheck.description",

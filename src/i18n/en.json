@@ -43,6 +43,10 @@
           "title": "Weights & Quantities",
           "description": "Fix and complete product weights, volumes and net contents flagged by quality warnings"
         },
+        "polyglot": {
+          "title": "Polyglot (Languages)",
+          "description": "Put each photo, text, and ingredient in the right language"
+        },
         "prices_validation": {
           "title": "Price Validation",
           "description": "Verify prices and receipts contributed to Open Prices"
@@ -596,5 +600,33 @@
     "save_and_next": "Save & Next",
     "save_success": "✓ Quantity successfully saved to Open Food Facts!",
     "save_error": "Error while saving quantity"
+  },
+  "polyglot": {
+    "title": "Polyglot: The Language Hunter",
+    "subtitle": "Help put each photo, text, and packaging in the right language!",
+    "image_front": "Front image",
+    "image_ingredients": "Ingredients",
+    "image_packaging": "Packaging",
+    "photo": "Photo",
+    "no_photo": "No photo available for this product.",
+    "detected_text_on_photo": "Text read on packaging:",
+    "photo_tip": "Use your mouse wheel or pinch to zoom on the box.",
+    "unknown_brand": "Unknown brand",
+    "unknown_product": "Unnamed product",
+    "copied": "Copied!",
+    "copy_barcode": "Copy barcode",
+    "open_off": "View on Open Food Facts",
+    "login_hint": "Sign in to Open Food Facts so your fixes are saved to your profile.",
+    "login_required": "Please sign in to Open Food Facts to save your fixes.",
+    "move_all_action": "⚡ Move everything to {{lang}} (Name, ingredients & photos)",
+    "shared_image_action": "Valid for {{lang1}} AND {{lang2}} (Shared packaging)",
+    "move_text_action": "Move text only to {{lang}}",
+    "skip_product": "Skip this product (S)",
+    "save_success": "Well done! The product was successfully updated.",
+    "save_error": "Error while saving correction.",
+    "challenge_label": "Language challenge",
+    "country_filter": "Country (optional)",
+    "all_solved_title": "Well done! All issues in this selection are resolved",
+    "all_solved_desc": "You have reviewed all reported products for this filter. Try another language challenge!"
   }
 }
