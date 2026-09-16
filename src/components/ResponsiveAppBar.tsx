@@ -79,6 +79,10 @@ const PAGES: Page[] = [
     translationKey: "menu.nutritions",
     desktopOnly: true,
   },
+  {
+    url: "reverso",
+    translationKey: "menu.reverso",
+  },
   { translationKey: "menu.manage" },
   {
     translationKey: "menu.ingredients",
