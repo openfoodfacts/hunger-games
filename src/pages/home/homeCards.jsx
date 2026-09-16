@@ -62,6 +62,15 @@ const cards = [
     category: "featured",
   },
   {
+    id: "quantities",
+    title: "home.game_selector.cards.quantities.title",
+    desc: "home.game_selector.cards.quantities.description",
+    link: "/quantities",
+    image: home_weights,
+    category: "featured",
+    badge: "Poids / Vol",
+  },
+  {
     id: "ingredient_spellcheck",
     title: "home.game_selector.cards.ingredient_spellcheck.title",
     desc: "home.game_selector.cards.ingredient_spellcheck.description",
