@@ -591,6 +591,38 @@
     "challenge_label": "Défi de langue",
     "country_filter": "Pays (optionnel)",
     "all_solved_title": "Bravo ! Toutes les anomalies de cette sélection sont corrigées",
-    "all_solved_desc": "Vous avez épuisé les produits signalés pour ce filtre. Essayez un autre défi de langue !"
+    "all_solved_desc": "Vous avez épuisé les produits signalés pour ce filtre. Essayez un autre défi de langue !",
+    "product_code": "Code",
+    "unnamed_product": "Produit sans nom",
+    "btn_skip": "Passer ce produit",
+    "view_on_off": "Voir la fiche sur Open Food Facts",
+    "modes": {
+      "photos_tab": "1. Tri des photos",
+      "photos_badge": "Tri de photos",
+      "texts_tab": "2. Textes côte-à-côte (Swap)",
+      "texts_badge": "Textes côte-à-côte",
+      "full_tab": "3. Bascule globale"
+    },
+    "photos": {
+      "inspection_title": "Cette photo est-elle bien dans cette langue ?",
+      "currently_assigned_to": "Attribuée à :",
+      "detected_by_ocr": "Texte lu sur l'emballage :",
+      "btn_unselect": "Retirer de {{lang}} (Mauvaise langue)",
+      "btn_transfer": "Transférer vers {{lang}}",
+      "btn_share": "Emballage multilingue (Valider aussi pour {{lang}})",
+      "unselect_success": "Photo retirée de cette langue avec succès !",
+      "transfer_success": "Photo transférée vers la bonne langue !",
+      "share_success": "Photo validée pour l'emballage partagé !"
+    },
+    "texts": {
+      "instruction": "Vérifiez les textes dans chaque langue. Utilisez les boutons pour inverser (Swap) ou déplacer le contenu sans retaper.",
+      "btn_swap": "Inverser {{langA}} ⇄ {{langB}}",
+      "btn_move_a_to_b": "Déplacer {{langA}} ➜ {{langB}}",
+      "reset": "Réinitialiser",
+      "product_name_label": "Nom du produit ({{lang}})",
+      "ingredients_label": "Ingrédients ({{lang}})",
+      "btn_save_changes": "Enregistrer les modifications",
+      "save_success": "Textes mis à jour avec succès !"
+    }
   }
 }

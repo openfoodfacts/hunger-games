@@ -13,10 +13,14 @@ import {
   Snackbar,
   Alert,
   Autocomplete,
+  Tabs,
+  Tab,
 } from "@mui/material";
 import LanguageIcon from "@mui/icons-material/Language";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import WhatshotIcon from "@mui/icons-material/Whatshot";
+import PhotoCameraIcon from "@mui/icons-material/PhotoCamera";
+import TextFieldsIcon from "@mui/icons-material/TextFields";
 
 import { useCountry } from "../../contexts/CountryProvider";
 import LoginContext from "../../contexts/login";
@@ -25,8 +29,14 @@ import countries from "../../assets/countries.json";
 import Loader from "../loader";
 import PolyglotPhotoViewer from "./components/PolyglotPhotoViewer";
 import PolyglotActionPanel from "./components/PolyglotActionPanel";
+import PolyglotPhotoCleaner from "./components/PolyglotPhotoCleaner";
+import PolyglotTextSwapper from "./components/PolyglotTextSwapper";
 import usePolyglotData from "./usePolyglotData";
-import { POLYGLOT_CHALLENGE_OPTIONS, PolyglotChallengeOption } from "./types";
+import {
+  POLYGLOT_CHALLENGE_OPTIONS,
+  PolyglotChallengeOption,
+  PolyglotMode,
+} from "./types";
 
 interface CountryOption {
   id: string;
@@ -49,6 +59,19 @@ export default function PolyglotPage() {
   const [searchParams, setSearchParams] = useTypedSearchParams();
   const barcodeParam = searchParams.get("code") || "";
   const challengeParam = searchParams.get("challenge") || "en-contains-fr";
+  const modeParam = (searchParams.get("mode") as PolyglotMode) || "photos";
+
+  const handleModeChange = (
+    _e: React.SyntheticEvent,
+    newMode: PolyglotMode | null,
+  ) => {
+    if (!newMode) return;
+    setSearchParams((previous) => {
+      const next = new URLSearchParams(previous);
+      next.set("mode", newMode);
+      return next;
+    });
+  };
 
   const [country, setCountry] = useCountry();
   const { isLoggedIn } = React.useContext(LoginContext);
@@ -151,6 +174,190 @@ export default function PolyglotPage() {
           "polyglot.save_success",
           "Bravo ! Le produit a été mis à jour avec succès.",
         ),
+      );
+      setSnackbarSeverity("success");
+    } catch (err: unknown) {
+      console.error(err);
+      setSnackbarMessage(
+        t(
+          "polyglot.save_error",
+          "Erreur lors de l'enregistrement de la correction.",
+        ),
+      );
+      setSnackbarSeverity("error");
+    } finally {
+      setIsSaving(false);
+    }
+  };
+
+  const handleUnselectPhoto = async (imageRole: string) => {
+    if (!currentProduct) return;
+    if (!isLoggedIn) {
+      setSnackbarMessage(
+        t(
+          "polyglot.login_required",
+          "Veuillez vous connecter à Open Food Facts pour enregistrer vos corrections.",
+        ),
+      );
+      setSnackbarSeverity("error");
+      return;
+    }
+
+    setIsSaving(true);
+    try {
+      await off.unselectProductImage({
+        code: currentProduct.code,
+        id: imageRole,
+      });
+      setScore((s) => s + 10);
+      setStreak((st) => st + 1);
+      solveCurrent();
+      setSnackbarMessage(
+        t(
+          "polyglot.photos.unselect_success",
+          "Photo retirée de cette langue avec succès !",
+        ),
+      );
+      setSnackbarSeverity("success");
+    } catch (err: unknown) {
+      console.error(err);
+      setSnackbarMessage(
+        t(
+          "polyglot.save_error",
+          "Erreur lors de l'enregistrement de la correction.",
+        ),
+      );
+      setSnackbarSeverity("error");
+    } finally {
+      setIsSaving(false);
+    }
+  };
+
+  const handleTransferPhoto = async (
+    sourceRole: string,
+    targetRole: string,
+    imgid: string,
+  ) => {
+    if (!currentProduct) return;
+    if (!isLoggedIn) {
+      setSnackbarMessage(
+        t(
+          "polyglot.login_required",
+          "Veuillez vous connecter à Open Food Facts pour enregistrer vos corrections.",
+        ),
+      );
+      setSnackbarSeverity("error");
+      return;
+    }
+
+    setIsSaving(true);
+    try {
+      await off.setImageLanguage({
+        code: currentProduct.code,
+        imgid,
+        imageField: targetRole,
+        comment: `Transférer la photo vers ${targetRole} (Jeu Polyglot)`,
+      });
+      if (sourceRole !== targetRole) {
+        await off.unselectProductImage({
+          code: currentProduct.code,
+          id: sourceRole,
+        });
+      }
+      setScore((s) => s + 15);
+      setStreak((st) => st + 1);
+      solveCurrent();
+      setSnackbarMessage(
+        t(
+          "polyglot.photos.transfer_success",
+          "Photo transférée vers la bonne langue !",
+        ),
+      );
+      setSnackbarSeverity("success");
+    } catch (err: unknown) {
+      console.error(err);
+      setSnackbarMessage(
+        t(
+          "polyglot.save_error",
+          "Erreur lors de l'enregistrement de la correction.",
+        ),
+      );
+      setSnackbarSeverity("error");
+    } finally {
+      setIsSaving(false);
+    }
+  };
+
+  const handleSharePhoto = async (targetRole: string, imgid: string) => {
+    if (!currentProduct) return;
+    if (!isLoggedIn) {
+      setSnackbarMessage(
+        t(
+          "polyglot.login_required",
+          "Veuillez vous connecter à Open Food Facts pour enregistrer vos corrections.",
+        ),
+      );
+      setSnackbarSeverity("error");
+      return;
+    }
+
+    setIsSaving(true);
+    try {
+      await off.setImageLanguage({
+        code: currentProduct.code,
+        imgid,
+        imageField: targetRole,
+        comment: `Valider la photo pour ${targetRole} en emballage partagé (Jeu Polyglot)`,
+      });
+      setScore((s) => s + 10);
+      setStreak((st) => st + 1);
+      solveCurrent();
+      setSnackbarMessage(
+        t(
+          "polyglot.photos.share_success",
+          "Photo validée pour l'emballage partagé !",
+        ),
+      );
+      setSnackbarSeverity("success");
+    } catch (err: unknown) {
+      console.error(err);
+      setSnackbarMessage(
+        t(
+          "polyglot.save_error",
+          "Erreur lors de l'enregistrement de la correction.",
+        ),
+      );
+      setSnackbarSeverity("error");
+    } finally {
+      setIsSaving(false);
+    }
+  };
+
+  const handleSaveFields = async (fields: Record<string, string>) => {
+    if (!currentProduct) return;
+    if (!isLoggedIn) {
+      setSnackbarMessage(
+        t(
+          "polyglot.login_required",
+          "Veuillez vous connecter à Open Food Facts pour enregistrer vos corrections.",
+        ),
+      );
+      setSnackbarSeverity("error");
+      return;
+    }
+
+    setIsSaving(true);
+    try {
+      await off.updateProductLanguageData({
+        code: currentProduct.code,
+        fields,
+        comment: "Mise à jour des textes multilingues (Jeu Polyglot)",
+      });
+      setScore((s) => s + 15);
+      setStreak((st) => st + 1);
+      solveCurrent();
+      setSnackbarMessage(
+        t("polyglot.texts.save_success", "Textes mis à jour avec succès !"),
       );
       setSnackbarSeverity("success");
     } catch (err: unknown) {
@@ -350,6 +557,59 @@ export default function PolyglotPage() {
         </Stack>
       </Paper>
 
+      {/* Micro-Games Mode Tabs */}
+      <Paper
+        elevation={0}
+        sx={{
+          borderRadius: 3,
+          border: "1px solid",
+          borderColor: "divider",
+          mb: 3,
+          overflow: "hidden",
+        }}
+      >
+        <Tabs
+          value={modeParam}
+          onChange={handleModeChange}
+          textColor="primary"
+          indicatorColor="primary"
+          variant="scrollable"
+          scrollButtons="auto"
+          sx={{
+            bgcolor: "background.paper",
+            px: 1,
+            "& .MuiTab-root": {
+              py: 1.5,
+              textTransform: "none",
+              fontWeight: 700,
+              fontSize: "0.95rem",
+            },
+          }}
+        >
+          <Tab
+            value="photos"
+            icon={<PhotoCameraIcon />}
+            iconPosition="start"
+            label={t("polyglot.modes.photos_tab", "1. Démêleur de photos")}
+          />
+          <Tab
+            value="texts"
+            icon={<TextFieldsIcon />}
+            iconPosition="start"
+            label={t(
+              "polyglot.modes.texts_tab",
+              "2. Textes côte-à-côte (Swap)",
+            )}
+          />
+          <Tab
+            value="full"
+            icon={<LanguageIcon />}
+            iconPosition="start"
+            label={t("polyglot.modes.full_tab", "3. Bascule globale")}
+          />
+        </Tabs>
+      </Paper>
+
       {/* Main Content Area */}
       {isLoading ? (
         <Loader />
@@ -406,7 +666,7 @@ export default function PolyglotPage() {
       ) : (
         <Grid container spacing={3} alignItems="flex-start">
           {/* Left: Photo viewer with OCR detection */}
-          <Grid item xs={12} md={6}>
+          <Grid item xs={12} md={modeParam === "texts" ? 5 : 6}>
             <PolyglotPhotoViewer
               product={currentProduct}
               detectedOcr={detectedOcr}
@@ -414,16 +674,41 @@ export default function PolyglotPage() {
             />
           </Grid>
 
-          {/* Right: Contributor action panel */}
-          <Grid item xs={12} md={6}>
-            <PolyglotActionPanel
-              product={currentProduct}
-              detectedOcr={detectedOcr}
-              isLoggedIn={isLoggedIn}
-              isSaving={isSaving}
-              onSave={handleSave}
-              onSkip={handleSkip}
-            />
+          {/* Right: Contributor action panel according to active micro-game */}
+          <Grid item xs={12} md={modeParam === "texts" ? 7 : 6}>
+            {modeParam === "photos" && (
+              <PolyglotPhotoCleaner
+                product={currentProduct}
+                detectedOcr={detectedOcr}
+                challenge={selectedChallenge}
+                isLoggedIn={isLoggedIn}
+                isSaving={isSaving}
+                onUnselect={handleUnselectPhoto}
+                onTransfer={handleTransferPhoto}
+                onShare={handleSharePhoto}
+                onSkip={handleSkip}
+              />
+            )}
+            {modeParam === "texts" && (
+              <PolyglotTextSwapper
+                product={currentProduct}
+                challenge={selectedChallenge}
+                isLoggedIn={isLoggedIn}
+                isSaving={isSaving}
+                onSaveFields={handleSaveFields}
+                onSkip={handleSkip}
+              />
+            )}
+            {modeParam === "full" && (
+              <PolyglotActionPanel
+                product={currentProduct}
+                detectedOcr={detectedOcr}
+                isLoggedIn={isLoggedIn}
+                isSaving={isSaving}
+                onSave={handleSave}
+                onSkip={handleSkip}
+              />
+            )}
           </Grid>
         </Grid>
       )}

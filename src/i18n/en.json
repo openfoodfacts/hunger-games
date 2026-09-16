@@ -627,6 +627,38 @@
     "challenge_label": "Language challenge",
     "country_filter": "Country (optional)",
     "all_solved_title": "Well done! All issues in this selection are resolved",
-    "all_solved_desc": "You have reviewed all reported products for this filter. Try another language challenge!"
+    "all_solved_desc": "You have reviewed all reported products for this filter. Try another language challenge!",
+    "product_code": "Barcode",
+    "unnamed_product": "Unnamed product",
+    "btn_skip": "Skip this product",
+    "view_on_off": "View product on Open Food Facts",
+    "modes": {
+      "photos_tab": "1. Photo Sorter",
+      "photos_badge": "Photo Sorter",
+      "texts_tab": "2. Side-by-side Texts (Swap)",
+      "texts_badge": "Side-by-side Texts",
+      "full_tab": "3. Full Migration"
+    },
+    "photos": {
+      "inspection_title": "Is this photo really in this language?",
+      "currently_assigned_to": "Assigned to:",
+      "detected_by_ocr": "Text read on packaging:",
+      "btn_unselect": "Remove from {{lang}} (Wrong language)",
+      "btn_transfer": "Transfer to {{lang}}",
+      "btn_share": "Multilingual packaging (Also validate for {{lang}})",
+      "unselect_success": "Photo removed from this language successfully!",
+      "transfer_success": "Photo transferred to the correct language!",
+      "share_success": "Photo validated for shared packaging!"
+    },
+    "texts": {
+      "instruction": "Check texts in each language. Use the buttons to Swap or move text without retyping.",
+      "btn_swap": "Swap {{langA}} ⇄ {{langB}}",
+      "btn_move_a_to_b": "Move {{langA}} ➜ {{langB}}",
+      "reset": "Reset",
+      "product_name_label": "Product name ({{lang}})",
+      "ingredients_label": "Ingredients ({{lang}})",
+      "btn_save_changes": "Save changes",
+      "save_success": "Texts updated successfully!"
+    }
   }
 }

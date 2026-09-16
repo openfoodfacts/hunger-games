@@ -445,6 +445,25 @@ class OffService {
       },
     );
   }
+
+  unselectProductImage(editionParams: {
+    code: string;
+    id: string; // e.g. "front_en", "ingredients_de", "packaging_fr"
+  }) {
+    const { code, id } = editionParams;
+    const params = new URLSearchParams();
+    params.append("code", code);
+    params.append("id", id);
+
+    return axios.post<{ status: number | string; status_verbose?: string }>(
+      `${OFF_URL}/cgi/product_image_unselect.pl`,
+      params,
+      {
+        withCredentials: true,
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      },
+    );
+  }
 }
 
 const offService = new OffService();
