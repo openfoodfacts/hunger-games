@@ -631,13 +631,34 @@
     "product_code": "Barcode",
     "unnamed_product": "Unnamed product",
     "btn_skip": "Skip this product",
+    "btn_cancel": "Cancel",
     "view_on_off": "View product on Open Food Facts",
     "modes": {
-      "photos_tab": "1. Photo Sorter",
+      "dispatch_tab": "1. Packaging Dispatcher",
+      "dispatch_badge": "Multilingual Dispatcher",
+      "photos_tab": "2. Photo Sorter",
       "photos_badge": "Photo Sorter",
-      "texts_tab": "2. Side-by-side Texts (Swap)",
+      "texts_tab": "3. Side-by-side Texts (Swap)",
       "texts_badge": "Side-by-side Texts",
-      "full_tab": "3. Full Migration"
+      "full_tab": "4. Full Migration"
+    },
+    "dispatch": {
+      "step1_title": "Step 1: Which languages are present on the packaging?",
+      "step1_desc": "Select the languages detected on the package to create dedicated drop zones for each.",
+      "photos_shelf": "Packaging photos:",
+      "btn_crop_ocr": "Crop & Extract",
+      "btn_split_ar_fr": "⚡ Split Arabic & French in 1 click",
+      "split_success": "Arabic and French texts successfully separated!",
+      "btn_save_all": "Save all multilingual zones",
+      "save_success": "Multilingual product successfully updated!"
+    },
+    "cropper": {
+      "title": "Crop photo & Extract text",
+      "hint": "Drag or resize the rectangle on the photo to target precisely the text (ingredients or name) in the desired language.",
+      "presets": "Quick preset:",
+      "extracted_ocr_text": "Extracted text in area:",
+      "no_text_extracted": "(No text detected in this area)",
+      "btn_validate": "Validate for {{lang}}"
     },
     "photos": {
       "inspection_title": "Is this photo really in this language?",

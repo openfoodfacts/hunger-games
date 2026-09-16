@@ -595,13 +595,34 @@
     "product_code": "Code",
     "unnamed_product": "Produit sans nom",
     "btn_skip": "Passer ce produit",
+    "btn_cancel": "Annuler",
     "view_on_off": "Voir la fiche sur Open Food Facts",
     "modes": {
-      "photos_tab": "1. Tri des photos",
+      "dispatch_tab": "1. Répartiteur d'emballage",
+      "dispatch_badge": "Répartiteur Multilingue",
+      "photos_tab": "2. Démêleur de photos",
       "photos_badge": "Tri de photos",
-      "texts_tab": "2. Textes côte-à-côte (Swap)",
+      "texts_tab": "3. Textes côte-à-côte (Swap)",
       "texts_badge": "Textes côte-à-côte",
-      "full_tab": "3. Bascule globale"
+      "full_tab": "4. Bascule globale"
+    },
+    "dispatch": {
+      "step1_title": "Étape 1 : Quelles langues sont présentes sur l'emballage ?",
+      "step1_desc": "Cochez les langues détectées sur le packaging pour créer leurs zones de rangement dédiées.",
+      "photos_shelf": "Photos de l'emballage :",
+      "btn_crop_ocr": "Recadrer & Extraire",
+      "btn_split_ar_fr": "⚡ Scinder Arabe & Français en 1 clic",
+      "split_success": "Textes arabe et français séparés avec succès !",
+      "btn_save_all": "Enregistrer toutes les zones multilingues",
+      "save_success": "Produit multilingue mis à jour avec succès !"
+    },
+    "cropper": {
+      "title": "Recadrer la photo & Extraire le texte",
+      "hint": "Déplacez ou redimensionnez le rectangle sur la photo pour cibler précisément le texte (ingrédients ou nom) dans la bonne langue.",
+      "presets": "Cadrage rapide :",
+      "extracted_ocr_text": "Texte extrait de la zone :",
+      "no_text_extracted": "(Aucun texte détecté dans cette zone)",
+      "btn_validate": "Valider pour {{lang}}"
     },
     "photos": {
       "inspection_title": "Cette photo est-elle bien dans cette langue ?",

@@ -359,6 +359,15 @@ class OffService {
             };
           }>;
         };
+        textAnnotations?: Array<{
+          description?: string;
+          boundingPoly?: {
+            vertices?: Array<{
+              x?: number;
+              y?: number;
+            }>;
+          };
+        }>;
       }>;
     }>(`${OFF_IMAGE_URL}/products/${formattedBarcode}/${imgid}.json`);
   }

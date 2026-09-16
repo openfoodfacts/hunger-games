@@ -21,6 +21,7 @@ import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import WhatshotIcon from "@mui/icons-material/Whatshot";
 import PhotoCameraIcon from "@mui/icons-material/PhotoCamera";
 import TextFieldsIcon from "@mui/icons-material/TextFields";
+import AutoAwesomeIcon from "@mui/icons-material/AutoAwesome";
 
 import { useCountry } from "../../contexts/CountryProvider";
 import LoginContext from "../../contexts/login";
@@ -31,6 +32,8 @@ import PolyglotPhotoViewer from "./components/PolyglotPhotoViewer";
 import PolyglotActionPanel from "./components/PolyglotActionPanel";
 import PolyglotPhotoCleaner from "./components/PolyglotPhotoCleaner";
 import PolyglotTextSwapper from "./components/PolyglotTextSwapper";
+import PolyglotLanguageZones from "./components/PolyglotLanguageZones";
+import { CropResult } from "./components/PolyglotImageCropperModal";
 import usePolyglotData from "./usePolyglotData";
 import {
   POLYGLOT_CHALLENGE_OPTIONS,
@@ -59,7 +62,7 @@ export default function PolyglotPage() {
   const [searchParams, setSearchParams] = useTypedSearchParams();
   const barcodeParam = searchParams.get("code") || "";
   const challengeParam = searchParams.get("challenge") || "en-contains-fr";
-  const modeParam = (searchParams.get("mode") as PolyglotMode) || "photos";
+  const modeParam = (searchParams.get("mode") as PolyglotMode) || "dispatch";
 
   const handleModeChange = (
     _e: React.SyntheticEvent,
@@ -374,6 +377,55 @@ export default function PolyglotPage() {
     }
   };
 
+  const handleSaveMultilingual = async (data: {
+    fields: Record<string, string>;
+    crops?: CropResult[];
+  }) => {
+    if (!currentProduct) return;
+    if (!isLoggedIn) {
+      setSnackbarMessage(
+        t(
+          "polyglot.login_required",
+          "Veuillez vous connecter à Open Food Facts pour enregistrer vos corrections.",
+        ),
+      );
+      setSnackbarSeverity("error");
+      return;
+    }
+
+    setIsSaving(true);
+    try {
+      if (Object.keys(data.fields).length > 0) {
+        await off.updateProductLanguageData({
+          code: currentProduct.code,
+          fields: data.fields,
+          comment: "Rangement multilingue (Jeu Polyglot)",
+        });
+      }
+      setScore((s) => s + 25);
+      setStreak((st) => st + 1);
+      solveCurrent();
+      setSnackbarMessage(
+        t(
+          "polyglot.dispatch.save_success",
+          "Produit multilingue mis à jour avec succès !",
+        ),
+      );
+      setSnackbarSeverity("success");
+    } catch (err: unknown) {
+      console.error(err);
+      setSnackbarMessage(
+        t(
+          "polyglot.save_error",
+          "Erreur lors de l'enregistrement de la correction.",
+        ),
+      );
+      setSnackbarSeverity("error");
+    } finally {
+      setIsSaving(false);
+    }
+  };
+
   const handleSkip = () => {
     setStreak(0);
     skipCurrent();
@@ -587,10 +639,19 @@ export default function PolyglotPage() {
           }}
         >
           <Tab
+            value="dispatch"
+            icon={<AutoAwesomeIcon />}
+            iconPosition="start"
+            label={t(
+              "polyglot.modes.dispatch_tab",
+              "1. Répartiteur d'emballage",
+            )}
+          />
+          <Tab
             value="photos"
             icon={<PhotoCameraIcon />}
             iconPosition="start"
-            label={t("polyglot.modes.photos_tab", "1. Démêleur de photos")}
+            label={t("polyglot.modes.photos_tab", "2. Démêleur de photos")}
           />
           <Tab
             value="texts"
@@ -598,14 +659,14 @@ export default function PolyglotPage() {
             iconPosition="start"
             label={t(
               "polyglot.modes.texts_tab",
-              "2. Textes côte-à-côte (Swap)",
+              "3. Textes côte-à-côte (Swap)",
             )}
           />
           <Tab
             value="full"
             icon={<LanguageIcon />}
             iconPosition="start"
-            label={t("polyglot.modes.full_tab", "3. Bascule globale")}
+            label={t("polyglot.modes.full_tab", "4. Bascule globale")}
           />
         </Tabs>
       </Paper>
@@ -663,6 +724,16 @@ export default function PolyglotPage() {
             Choisir un autre défi
           </Button>
         </Paper>
+      ) : modeParam === "dispatch" ? (
+        <PolyglotLanguageZones
+          product={currentProduct}
+          detectedOcr={detectedOcr}
+          isLoggedIn={isLoggedIn}
+          isSaving={isSaving}
+          onSaveAll={handleSaveMultilingual}
+          onUnselectPhoto={handleUnselectPhoto}
+          onSkip={handleSkip}
+        />
       ) : (
         <Grid container spacing={3} alignItems="flex-start">
           {/* Left: Photo viewer with OCR detection */}

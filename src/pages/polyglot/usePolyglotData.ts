@@ -165,14 +165,41 @@ export default function usePolyglotData(
         const targetImgId = numericKeys[0] || "1";
         try {
           const res = await off.getOcr(currentProduct.code, targetImgId);
-          const ocrData = res.data?.responses?.[0]?.fullTextAnnotation;
-          const page0Lang =
-            ocrData?.pages?.[0]?.property?.detectedLanguages?.[0];
-          if (page0Lang) {
+          const resp0 = res.data?.responses?.[0];
+          const ocrData = resp0?.fullTextAnnotation;
+          const allLangs =
+            ocrData?.pages?.[0]?.property?.detectedLanguages || [];
+          const page0Lang = allLangs[0];
+
+          // Parse word boxes with bounding polygons
+          const wordBoxes = [];
+          if (resp0?.textAnnotations && resp0.textAnnotations.length > 1) {
+            for (let i = 1; i < resp0.textAnnotations.length; i++) {
+              const item = resp0.textAnnotations[i];
+              const verts = item.boundingPoly?.vertices || [];
+              if (item.description && verts.length >= 2) {
+                const xs = verts.map((v) => v.x ?? 0);
+                const ys = verts.map((v) => v.y ?? 0);
+                wordBoxes.push({
+                  text: item.description,
+                  x0: Math.min(...xs),
+                  y0: Math.min(...ys),
+                  x1: Math.max(...xs),
+                  y1: Math.max(...ys),
+                });
+              }
+            }
+          }
+
+          if (page0Lang || ocrData?.text) {
             return {
-              languageCode: page0Lang.languageCode,
-              confidence: page0Lang.confidence,
+              languageCode: page0Lang?.languageCode || "und",
+              confidence: page0Lang?.confidence || 0,
               sampleText: ocrData?.text?.slice(0, 150),
+              allDetectedLanguages: allLangs,
+              wordBoxes,
+              fullText: ocrData?.text || "",
+              imgid: targetImgId,
             };
           }
         } catch {

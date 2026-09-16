@@ -1,4 +1,12 @@
-export type PolyglotMode = "photos" | "texts" | "full";
+export type PolyglotMode = "dispatch" | "photos" | "texts" | "full";
+
+export interface OcrWordBox {
+  text: string;
+  x0: number; // normalized 0..1 or pixel
+  y0: number;
+  x1: number;
+  y1: number;
+}
 
 export interface PolyglotProduct {
   code: string;
@@ -41,6 +49,10 @@ export interface DetectedLanguageInfo {
   languageCode: string;
   confidence: number;
   sampleText?: string;
+  allDetectedLanguages?: Array<{ languageCode: string; confidence: number }>;
+  wordBoxes?: OcrWordBox[];
+  fullText?: string;
+  imgid?: string;
 }
 
 export interface PolyglotChallengeOption {
@@ -142,6 +154,27 @@ export const POLYGLOT_CHALLENGE_OPTIONS: PolyglotChallengeOption[] = [
     targetLang: "it",
     label: "🇬🇧 Anglais ➜ 🇮🇹 Contient de l'italien",
     description: "Produits déclarés en anglais avec des ingrédients en italien",
+  },
+  {
+    id: "en-contains-ar",
+    tag: "ingredients-language-mismatch-en-contains-ar",
+    mainLang: "en",
+    sourceLang: "en",
+    targetLang: "ar",
+    label: "🇬🇧 Anglais ➜ 🇦🇪 Contient de l'arabe",
+    description:
+      "Produits déclarés en anglais avec des textes ou ingrédients en arabe",
+    badge: "Courant",
+  },
+  {
+    id: "fr-contains-ar",
+    tag: "ingredients-language-mismatch-fr-contains-ar",
+    mainLang: "fr",
+    sourceLang: "fr",
+    targetLang: "ar",
+    label: "🇫🇷 Français ➜ 🇦🇪 Bilingue Arabe",
+    description: "Produits bilingues français / arabe (Maghreb, Moyen-Orient)",
+    badge: "Courant",
   },
   {
     id: "all-language-mismatches",
