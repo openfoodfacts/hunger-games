@@ -79,6 +79,10 @@ const PAGES: Page[] = [
     translationKey: "menu.nutritions",
     desktopOnly: true,
   },
+  {
+    url: "quantities",
+    translationKey: "menu.quantities",
+  },
   { translationKey: "menu.manage" },
   {
     translationKey: "menu.ingredients",

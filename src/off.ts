@@ -265,6 +265,84 @@ class OffService {
       },
     );
   }
+
+  updateProductNutriments(editionParams: {
+    code: string;
+    energyKcal: string | number;
+    energyKj: string | number;
+    nutritionDataPer?: string;
+    energyKcalServing?: string | number;
+    energyKjServing?: string | number;
+    comment?: string;
+  }) {
+    const {
+      code,
+      energyKcal,
+      energyKj,
+      nutritionDataPer = "100g",
+      energyKcalServing,
+      energyKjServing,
+      comment = "Fix reversed energy in kcal and kJ (Reverso game)",
+    } = editionParams;
+
+    const params = new URLSearchParams();
+    params.append("code", code);
+    params.append("nutriment_energy-kcal", energyKcal.toString());
+    params.append("nutriment_energy-kcal_unit", "kcal");
+    params.append("nutriment_energy-kj", energyKj.toString());
+    params.append("nutriment_energy-kj_unit", "kJ");
+    params.append("nutrition_data_per", nutritionDataPer);
+    if (energyKcalServing !== undefined && energyKcalServing !== "") {
+      params.append(
+        "nutriment_energy-kcal_serving",
+        energyKcalServing.toString(),
+      );
+    }
+    if (energyKjServing !== undefined && energyKjServing !== "") {
+      params.append("nutriment_energy-kj_serving", energyKjServing.toString());
+    }
+    params.append("comment", comment);
+
+    return axios.post<{ status: number; status_verbose?: string }>(
+      `${OFF_URL}/cgi/product_jqm.pl`,
+      params,
+      {
+        withCredentials: true,
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      },
+    );
+  }
+
+  updateProductQuantity(editionParams: {
+    code: string;
+    quantity: string;
+    servingSize?: string;
+    comment?: string;
+  }) {
+    const {
+      code,
+      quantity,
+      servingSize,
+      comment = "Fix product quantity warning (Quantities game)",
+    } = editionParams;
+
+    const params = new URLSearchParams();
+    params.append("code", code);
+    params.append("quantity", quantity);
+    if (servingSize !== undefined && servingSize !== "") {
+      params.append("serving_size", servingSize);
+    }
+    params.append("comment", comment);
+
+    return axios.post<{ status: number; status_verbose?: string }>(
+      `${OFF_URL}/cgi/product_jqm.pl`,
+      params,
+      {
+        withCredentials: true,
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      },
+    );
+  }
 }
 
 const offService = new OffService();
