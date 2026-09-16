@@ -18,6 +18,12 @@ import MuiLink from "@mui/material/Link";
 import Collapse from "@mui/material/Collapse";
 import List from "@mui/material/List";
 
+import Dialog from "@mui/material/Dialog";
+import DialogTitle from "@mui/material/DialogTitle";
+import DialogContent from "@mui/material/DialogContent";
+import DialogContentText from "@mui/material/DialogContentText";
+import DialogActions from "@mui/material/DialogActions";
+
 import SettingsIcon from "@mui/icons-material/Settings";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import PublicIcon from "@mui/icons-material/Public";
@@ -291,6 +297,7 @@ const ResponsiveAppBar = () => {
     null,
   );
   const [isTourOpen, setIsTourOpen] = React.useState(false);
+  const [authDialogOpen, setAuthDialogOpen] = React.useState(false);
   const [country, setCountry] = useCountry();
   const theme = useTheme();
   // Keep page visibility in sync with the breakpoint used by the desktop nav.
@@ -305,6 +312,15 @@ const ResponsiveAppBar = () => {
   };
 
   const { isLoggedIn, userName, refresh } = React.useContext(LoginContext);
+  const handleAuthClick = () => {
+    void (async () => {
+      const loggedIn = await refresh();
+
+      if (!loggedIn) {
+        setAuthDialogOpen(true);
+      }
+    })();
+  };
   const { devMode: isDevMode, visiblePages } = React.useContext(DevModeContext);
   const [menuOpenState, setMenuOpenState] = React.useState<
     Record<string, boolean>
@@ -530,15 +546,10 @@ const ResponsiveAppBar = () => {
             ) : (
               <IconButton
                 aria-label={t("menu.log_in")}
+
                 sx={{ width: 48, height: 48 }}
-                onClick={() =>
-                  void (async () => {
-                    const isLoggedIn = await refresh();
-                    if (!isLoggedIn) {
-                      window.open(`${OFF_URL}/cgi/login.pl`, "_blank")?.focus();
-                    }
-                  })()
-                }
+
+                onClick={handleAuthClick}
               >
                 <AccountCircleIcon color="error" />
               </IconButton>
@@ -777,6 +788,39 @@ const ResponsiveAppBar = () => {
           </Box>
         </Toolbar>
       </Container>
+
+      <Dialog open={authDialogOpen} onClose={() => setAuthDialogOpen(false)}>
+        <DialogTitle>{t("questions.login_title")}</DialogTitle>
+
+        <DialogContent>
+          <DialogContentText>
+            {t("questions.login_description")}
+          </DialogContentText>
+        </DialogContent>
+
+        <DialogActions>
+          <Button
+            variant="contained"
+            href={`${OFF_URL}/cgi/login.pl`}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => setAuthDialogOpen(false)}
+          >
+            {t("questions.log_in")}
+          </Button>
+
+          <Button
+            variant="contained"
+            href={`${OFF_URL}/cgi/user.pl`}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => setAuthDialogOpen(false)}
+          >
+            {t("questions.sign_up")}
+          </Button>
+        </DialogActions>
+      </Dialog>
+
       <WelcomeTour isOpen={isTourOpen} setIsOpen={setIsTourOpen} />
     </AppBar>
   );
