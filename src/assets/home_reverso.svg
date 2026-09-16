@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="rev_bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFDF9" />
+      <stop offset="100%" stop-color="#F7F1EB" />
+    </linearGradient>
+    <linearGradient id="rev_accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF5722" />
+      <stop offset="50%" stop-color="#FF9800" />
+      <stop offset="100%" stop-color="#26A69A" />
+    </linearGradient>
+    <linearGradient id="box_kcal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF3E0" />
+      <stop offset="100%" stop-color="#FFE0B2" />
+    </linearGradient>
+    <linearGradient id="box_kj" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E0F2F1" />
+      <stop offset="100%" stop-color="#B2DFDB" />
+    </linearGradient>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#341100" flood-opacity="0.08" />
+    </filter>
+  </defs>
+
+  <!-- Container Base -->
+  <rect width="350" height="200" rx="16" fill="#F8F9FA" />
+
+  <!-- Main Card Surface -->
+  <rect x="12" y="10" width="326" height="180" rx="14" fill="url(#rev_bg)" stroke="#E5DCD3" stroke-width="1.2" filter="url(#shadow)" />
+
+  <!-- Top Accent Bar -->
+  <path d="M 12 24 A 14 14 0 0 1 26 10 L 324 10 A 14 14 0 0 1 338 24 L 338 26 L 12 26 Z" fill="url(#rev_accent)" />
+
+  <!-- Top Right Badge -->
+  <rect x="220" y="16" width="106" height="18" rx="9" fill="#FBE9E7" />
+  <text x="273" y="29" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="700" fill="#D84315" text-anchor="middle" letter-spacing="0.5">KCAL ⇄ KJ</text>
+
+  <!-- Title / Tagline Left -->
+  <text x="32" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="800" fill="#341100">REVERSO</text>
+  <text x="32" y="68" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10.5" font-weight="500" fill="#795548">Fix reversed energy values</text>
+
+  <!-- Visual Central Display: Left Box (kcal), Swap Arrows, Right Box (kJ) -->
+  <g transform="translate(24, 84)">
+    <!-- Left Box: kcal -->
+    <g transform="translate(0, 0)">
+      <rect width="110" height="74" rx="12" fill="url(#box_kcal)" stroke="#FFB74D" stroke-width="1.5" />
+      <rect x="10" y="10" width="42" height="16" rx="4" fill="#FF9800" />
+      <text x="31" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="800" fill="#FFFFFF" text-anchor="middle">kcal</text>
+      <text x="55" y="50" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="700" fill="#E65100" text-anchor="middle">1 599</text>
+      <text x="55" y="64" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8.5" font-weight="600" fill="#BF360C" text-anchor="middle">⚡ Trop élevé !</text>
+    </g>
+
+    <!-- Center: Swap Arrows Button -->
+    <g transform="translate(122, 10)">
+      <circle cx="28" cy="27" r="24" fill="#341100" filter="url(#shadow)" />
+      <!-- Curved Arrows -->
+      <path d="M 18 22 C 22 16, 34 16, 38 21" fill="none" stroke="#FFCC80" stroke-width="3" stroke-linecap="round" />
+      <polygon points="39,16 42,23 35,24" fill="#FFCC80" />
+      <path d="M 38 32 C 34 38, 22 38, 18 33" fill="none" stroke="#80CBC4" stroke-width="3" stroke-linecap="round" />
+      <polygon points="17,38 14,31 21,30" fill="#80CBC4" />
+    </g>
+
+    <!-- Right Box: kJ -->
+    <g transform="translate(192, 0)">
+      <rect width="110" height="74" rx="12" fill="url(#box_kj)" stroke="#4DB6AC" stroke-width="1.5" />
+      <rect x="10" y="10" width="34" height="16" rx="4" fill="#00897B" />
+      <text x="27" y="22" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9" font-weight="800" fill="#FFFFFF" text-anchor="middle">kJ</text>
+      <text x="55" y="50" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="700" fill="#004D40" text-anchor="middle">378</text>
+      <text x="55" y="64" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="8.5" font-weight="600" fill="#00695C" text-anchor="middle">⚡ Trop faible !</text>
+    </g>
+  </g>
+</svg>
