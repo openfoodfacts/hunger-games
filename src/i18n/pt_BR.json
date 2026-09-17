@@ -2,7 +2,7 @@
   "home": {
     "game_selector": {
       "title": "Que jogo você gostaria de jogar?",
-      "external_link": "External link",
+      "external_link": "Link externo",
       "cards": {
         "questions": {
           "title": "Perguntas",
@@ -17,8 +17,8 @@
           "description": "Anote as perguntas com o maior valor"
         },
         "create_products": {
-          "title": "Create missing products",
-          "description": "Add products that are not in the database yet, over on Open Prices"
+          "title": "Criar produtos em falta",
+          "description": "Adicione produtos que ainda não estão no banco de dados, no Open Prices"
         }
       }
     },
@@ -29,11 +29,11 @@
       "contribution_details": "Entenda porque a sua contribuição é importante"
     },
     "saved_filters": "Filtros salvos",
-    "saved_filters_delete": "Delete saved filter",
-    "saved_filters_delete_title": "Delete saved filter?",
-    "saved_filters_delete_description": "This saved filter will be removed from this device.",
+    "saved_filters_delete": "Excluir filtro salvo",
+    "saved_filters_delete_title": "Excluir filtro salvo?",
+    "saved_filters_delete_description": "Este filtro salvo será removido deste dispositivo.",
     "saved_filters_delete_confirm": "Eliminar",
-    "saved_filters_pending": "{{count}} products waiting",
+    "saved_filters_pending": "{{count}} produtos aguardando",
     "saved_filters_pending_unknown": "Products waiting",
     "contribution_modal": {
       "title": "Sua contribuição é importante",
@@ -42,9 +42,9 @@
     },
     "statistics": {
       "title": "{{userName}} estatísticas:",
-      "title_without_name": "Your statistics",
+      "title_without_name": "Suas estatísticas",
       "empty_state": {
-        "title": "No contributions yet",
+        "title": "Ainda não há contribuições",
         "description": "Your contribution statistics will appear here once you start helping improve Open Food Facts.",
         "action": "Start contributing"
       },
