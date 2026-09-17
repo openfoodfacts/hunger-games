@@ -5,7 +5,6 @@ import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import CircularProgress from "@mui/material/CircularProgress";
 import Typography from "@mui/material/Typography";
-import LoadingButton from "@mui/lab/LoadingButton";
 import { useTheme } from "@mui/material/styles";
 
 import { useTranslation } from "react-i18next";
@@ -16,22 +15,6 @@ import LogoGrid from "../../components/LogoGrid";
 import BackToTop from "../../components/BackToTop";
 import useUrlParams from "../../hooks/useUrlParams";
 import AnnotateLogoModal from "../../components/AnnotateLogoModal";
-
-export const getQuestionSearchParams = (logoSearchState) => {
-  const urlParams = new URLSearchParams(window.location.search);
-
-  Object.keys(DEFAULT_LOGO_SEARCH_STATE).forEach((key) => {
-    if (urlParams.get(key) !== undefined && !logoSearchState[key]) {
-      urlParams.delete(key);
-    } else if (
-      logoSearchState[key] &&
-      urlParams.get(key) !== logoSearchState[key]
-    ) {
-      urlParams.set(key, logoSearchState[key]);
-    }
-  });
-  return urlParams.toString();
-};
 
 const DEFAULT_LOGO_SEARCH_STATE = {
   count: 50,
@@ -122,12 +105,15 @@ export default function LogoAnnotation() {
 
   React.useEffect(() => {
     let isValid = true;
-    setLogoState({ isLoading: true, ...DEFAULT_LOGO_STATE });
-    loadLogos(
-      logoSearchParams.logo_id,
-      logoSearchParams.index,
-      logoSearchParams.count,
-    )
+    const fetchLogos = async () => {
+      setLogoState({ isLoading: true, ...DEFAULT_LOGO_STATE });
+      return loadLogos(
+        logoSearchParams.logo_id,
+        logoSearchParams.index,
+        logoSearchParams.count,
+      );
+    };
+    fetchLogos()
       .then((logoData) => {
         if (!isValid) return;
         setLogoState({
@@ -272,8 +258,8 @@ export default function LogoAnnotation() {
     <React.Suspense fallback={<CircularProgress />}>
       <Box sx={{ margin: "2% 10%" }}>
         <Typography
-          typography="h2"
           sx={{
+            typography: "h2",
             fontSize: "1.5rem",
             fontWeight: 600,
             marginBottom: 2,
@@ -310,14 +296,14 @@ export default function LogoAnnotation() {
             >
               {t("logos.unselect_all")}
             </Button>
-            <LoadingButton
+            <Button
               variant="outlined"
               size="small"
               onClick={refreshData}
               loading={isRefreshing}
             >
               {t("logos.refresh")}
-            </LoadingButton>
+            </Button>
             <div style={{ flexGrow: 1 }} />
             <Button
               size="small"

@@ -3,11 +3,20 @@ import { getFilterParams, setFilterParams } from "./getFilterParams";
 import { FilterState } from "../../robotoff";
 import { useSearchParams } from "react-router";
 
+type SearchParamsSetter = (
+  update: (previous: URLSearchParams) => URLSearchParams,
+) => void;
+
+const useTypedSearchParams = useSearchParams as unknown as () => [
+  URLSearchParams,
+  SearchParamsSetter,
+];
+
 export function useFilterState(): [
   FilterState,
   (params: Partial<FilterState>) => void,
 ] {
-  const [searchParams, setSearchParams] = useSearchParams();
+  const [searchParams, setSearchParams] = useTypedSearchParams();
 
   const value = React.useMemo(() => {
     return getFilterParams(searchParams);

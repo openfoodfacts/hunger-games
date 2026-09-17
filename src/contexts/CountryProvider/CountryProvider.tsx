@@ -7,12 +7,21 @@ import countries from "../../assets/countries.json";
 
 const ValidCountryCodes = new Set(countries.map((c) => c.countryCode));
 
+type SearchParamsSetter = (
+  update: (previous: URLSearchParams) => URLSearchParams,
+) => void;
+
+const useTypedSearchParams = useSearchParams as unknown as () => [
+  URLSearchParams,
+  SearchParamsSetter,
+];
+
 export function CountryProvider({ children }: { children: React.ReactNode }) {
   const [localStorageCountry, setLocalStorageCountry] = useLocalStorageState(
     "country",
     "",
   );
-  const [searchParams, setSearchParams] = useSearchParams();
+  const [searchParams, setSearchParams] = useTypedSearchParams();
 
   const updateCountry: CountryCallback = React.useCallback(
     (newCountry, scope) => {
@@ -20,9 +29,9 @@ export function CountryProvider({ children }: { children: React.ReactNode }) {
         setLocalStorageCountry(newCountry);
       }
       setSearchParams((prev) => {
-        prev.set("country", newCountry);
-
-        return prev;
+        const next = new URLSearchParams(prev);
+        next.set("country", newCountry);
+        return next;
       });
     },
     [setLocalStorageCountry, setSearchParams],

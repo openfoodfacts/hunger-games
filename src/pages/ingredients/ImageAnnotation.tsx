@@ -14,9 +14,7 @@ type ImageAnnotationProps = {
 
 type AnnotationProps = {
   code: string;
-  data: null | DataType;
-  error: null | string;
-  isLoading: boolean;
+  data: DataType;
   imageLang: string;
   offText: string;
 };
@@ -42,27 +40,15 @@ const splitText = (d: DataType) => {
   }
   return rep;
 };
-function Annotation({
-  code,
-  data,
-  error,
-  imageLang,
-  offText,
-}: AnnotationProps) {
+function Annotation({ code, data, imageLang, offText }: AnnotationProps) {
   const [showOCR, setShowOCR] = React.useState(false);
-  const [editedState, setEditedState] = React.useState<
-    null | DataType["detections"]
-  >(null);
+  const [editedState, setEditedState] = React.useState(data.detections);
   const [offEditedState, setOffEditedState] = React.useState<
     DataType["detections"]
   >({ [imageLang]: { text: offText, start: 0, end: 0, score: 0 } });
 
-  React.useEffect(() => {
-    setEditedState(data && data.detections);
-  }, [data]);
-
-  const noIngredientFound =
-    editedState !== null && Object.keys(editedState).length === 0;
+  const noIngredientFound = Object.keys(editedState).length === 0;
+  const offEditedText = offEditedState[imageLang]?.text ?? "";
 
   return (
     <React.Fragment>
@@ -71,26 +57,23 @@ function Annotation({
         score={null}
         code={code}
         setEditedState={setOffEditedState}
-        text={offEditedState[imageLang].text}
+        text={offEditedText}
         detectedText={offText}
       />
-      {error !== null && <p>An arror occured</p>}
       {noIngredientFound && <p>No ingredients found</p>}
-      {editedState === null
-        ? null
-        : Object.entries(editedState).map(
-            ([lang, { start, end, score, text }]) => (
-              <IngredientAnotation
-                key={`${start}-${end}`}
-                lang={lang}
-                score={score}
-                code={code}
-                setEditedState={setEditedState}
-                text={text}
-                detectedText={data.detections[lang].text}
-              />
-            ),
-          )}
+      {Object.entries(editedState).map(
+        ([lang, { start, end, score, text }]) => (
+          <IngredientAnotation
+            key={`${start}-${end}`}
+            lang={lang}
+            score={score}
+            code={code}
+            setEditedState={setEditedState}
+            text={text}
+            detectedText={data.detections[lang].text}
+          />
+        ),
+      )}
       {showOCR && (
         <p style={{ marginTop: 5 * 4 }}>
           {splitText(data).map(({ isIngredient, text }, i) => (
@@ -108,16 +91,14 @@ function Annotation({
         </p>
       )}
 
-      {data && (
-        <Button
-          variant="outlined"
-          onClick={() => {
-            setShowOCR((p) => !p);
-          }}
-        >
-          {showOCR ? "Hide OCR" : "Show OCR"}
-        </Button>
-      )}
+      <Button
+        variant="outlined"
+        onClick={() => {
+          setShowOCR((p) => !p);
+        }}
+      >
+        {showOCR ? "Hide OCR" : "Show OCR"}
+      </Button>
     </React.Fragment>
   );
 }
@@ -133,19 +114,21 @@ export default function ImageAnnotation({
 
   return (
     <Box sx={{ px: 1, width: "50%" }}>
-      <Annotation
-        data={data}
-        isLoading={isLoading}
-        error={error}
-        code={code}
-        imageLang={imageLang}
-        offText={offText}
-      />
+      {error !== null && <p>An error occurred: {error}</p>}
+      {data !== null && (
+        <Annotation
+          key={fetchDataUrl}
+          data={data}
+          code={code}
+          imageLang={imageLang}
+          offText={offText}
+        />
+      )}
       <Button
         fullWidth
         sx={{ mt: 5 }}
         disabled={isLoading || error !== null || data !== null}
-        onClick={getData}
+        onClick={() => void getData()}
         variant="outlined"
       >
         {t("ingredients.getRobotoffPrediciton")}

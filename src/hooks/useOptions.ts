@@ -10,12 +10,20 @@ export type Option = {
 
 type Files = "packaging_materials" | "packaging_recycling" | "packaging_shapes";
 
+type TaxonomyEntry = {
+  synonyms: Record<string, string[] | undefined>;
+};
+
+type TaxonomyResponse = Record<string, TaxonomyEntry>;
+
 export const useOptions = (fileName: Files, lang: string) => {
   const [options, setOptions] = React.useState<Option[]>([]);
 
   React.useEffect(() => {
     axios
-      .get(`https://static.${OFF_DOMAIN}/data/taxonomies/${fileName}.full.json`)
+      .get<TaxonomyResponse>(
+        `https://static.${OFF_DOMAIN}/data/taxonomies/${fileName}.full.json`,
+      )
       .then(({ data }) => {
         const newOptions: Option[] = Object.keys(data)
           .map((key) => {

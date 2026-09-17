@@ -14,6 +14,10 @@
         "green_score": {
           "title": "Eko-skor",
           "description": "En yüksek değerli sorulara açıklama ekleyin"
+        },
+        "create_products": {
+          "title": "Eksik ürünleri oluşturun",
+          "description": "Veritabanında henüz bulunmayan ürünleri Open Prices üzerinden ekleyin"
         }
       }
     },
@@ -50,8 +54,8 @@
     "loading": "Yükleniyor"
   },
   "image_viewer": {
-    "compressed": "Compressed",
-    "load_original": "Load original"
+    "compressed": "Sıkıştırılmış",
+    "load_original": "Orijinali yükle"
   },
   "questions": {
     "category": "kategori",
@@ -71,6 +75,10 @@
     "skip": "Atla",
     "yes": "Evet",
     "no_questions_remaining": "Kalan soru yok",
+    "similar_questions": "Benzer sorular",
+    "no_similar_questions": "Benzer soru yok",
+    "remaining_questions_count_one": "1 soru kaldı",
+    "remaining_questions_count_other": "{{count}} soru kaldı",
     "an_error_occurred": "Bir hata oluştu. Lütfen yeniden yükleyin, daha sonra deneyin veya ekiple iletişime geçin.",
     "countries": "Ülkeler",
     "view": "Görüntüle",
@@ -83,10 +91,9 @@
     "last_annotations": "Son ek açıklamalar",
     "remaining_annotations": "Kalan sorular",
     "annotated_annotations": "Açıklandı",
-    "similar_questions": "Similar questions",
-    "no_similar_questions": "No similar questions",
-    "no_images": "No images available",
-    "no_additional_info": "No additional information",
+    "no_images": "Görsel yok",
+    "no_additional_info": "Ek bilgi yok",
+    "add_missing_info": "Ekle",
     "filters": {
       "active_filter_number": "+{{count}} filtreler",
       "active_filter_number_one": "+{{count}} filtre",
@@ -111,6 +118,7 @@
       },
       "placeholders": {
         "value": "Değer (fanta, en:organic,...)",
+        "country": "Fransa, Almanya, Japonya, ...",
         "brand": "Auchan, Danone, Herta, ...",
         "campaign": "Yorumlama kampanyaları",
         "predictor": "evrensel logo dedektörü, regex, ..."
@@ -241,7 +249,7 @@
     },
     "deep_search": {
       "title": "Logo arama",
-      "description": "Aramak istediğiniz logoyu seçin ve hepsini yakalamaya başlayalım. Açıklama eklediğiniz her logo için komşularını getireceğiz, böylece bir daha açıklama yapmayı bırakmazsınız. (Logo aralığını seçmek için Shift tuşuna basın)",
+      "description": "Aramak istediğiniz logoyu seçin ve hepsini bulmaya başlayalım. İşaretlediğiniz her logo için, komşu logoları da getireceğiz, böylece işaretlemeyi asla bırakmanıza gerek kalmayacak. (Logo aralığını seçmek için Shift tuşuna basın)",
       "ref_logos": "Referans logoları (logo zaten bu değerle açıklanmıştır)",
       "remaining": "Açıklama eklemek kaldı",
       "select_all": "Tümünü Seç",
@@ -277,24 +285,24 @@
     "Open_Food_Facts_wiki": "Open Food Facts vikipedia (ing)",
     "Translators": "Çevirmenler",
     "Partners": "Partnerler",
-    "Open_Beauty_Facts": "Açık Güzellik Gerçekleri - kozmetikler",
-    "text2": "Dünyanın dört bir yanından katılımcı, özgür ve açık gıda ürünleri veritabanı."
+    "Open_Beauty_Facts": "Open Beauty Facts - Kozmetik ürünleri",
+    "text2": "Dünyanın dört bir yanındaki ürünlerin bulunduğu işbirlikçi, glütensiz ve açık veritabanı."
   },
   "helper": {
     "welcome": {
       "page1": {
-        "title": "Açlık Oyunları'na hoş geldiniz",
-        "text1": "Açlık Oyunları, Open Food Facts'e birçok yönden katkıda bulunmaya yardımcı olan bir mini oyun koleksiyonudur. Gerçekten heyecan verici oyunlarımızı her yerden oynayabilirsiniz. İşte başlamanıza yardımcı olacak tüm web sitesini kapsayan rehberli bir tur.",
-        "text2": "Katkılarınız için kredi almak için Open Food Facts web sitesine giriş yaptığınızdan emin olun. Bir hata yaparsanız, lütfen web sitesine giderek düzeltmek için zaman ayırın.",
-        "text3": "Oyunlarla ilgili herhangi bir şüpheniz olması durumunda sayfanın sağ üst köşesindeki soru işareti ikonuna tıklayarak bize #açlık-oyunları kanalından slack'ten ulaşabilirsiniz"
+        "title": "Hunger Games'e hoş geldiniz",
+        "text1": "Hunger Games, Open Food Facts'e birçok yönden katkıda bulunmaya yardımcı olan bir mini oyun koleksiyonudur. Gerçekten heyecan verici oyunlarımızı her yerden oynayabilirsiniz. İşte başlamanıza yardımcı olacak tüm web sitesini kapsayan rehberli bir tur.",
+        "text2": "Katkılarınız için kredi almak için Open Food Facts internet sitesine giriş yaptığınızdan emin olun. Bir hata yaparsanız, lütfen internet sitesine giderek düzeltmek için zaman ayırın.",
+        "text3": "Oyunlarla ilgili herhangi bir şüpheniz varsa, sayfanın sağ üst köşesindeki soru işareti simgesine tıklayın ve Slack'teki #hunger-games kanalından bize ulaşabilirsiniz"
       },
       "page2": {
         "title": "Sorular Oyunu",
         "text1": "Gıda ürünü bu markaya mı ait?",
         "text2": "<strong>Evet/Hayır</strong> ile yanıtlamanız yeterlidir! Cevabı bilmiyorsanız atlayın.",
-        "text3": "Klavye kısayollarınızı da kullanabilirsiniz: y,n ve k.",
-        "text4": "Ürünleri ülke, marka, popülerlik ve çok daha fazlasına göre <strong>filtreleyebilirsiniz</strong>!",
-        "text5": "Bunu her seferinde yapmak istemiyorsanız, yıldızı tıklayarak <strong>filtreleri kaydedebilirsiniz</strong>. Bir dahaki sefere geri döndüğünüzde, kayıtlı filtreleri ana sayfanın kendisinde bulun"
+        "text3": "Klavye kısayollarını da kullanabilirsiniz: y,n,k.",
+        "text4": "Ürünleri ülke, marka, popülerlik ve çok daha fazlasına göre <strong>filtrele</strong>!",
+        "text5": "Bunu her seferinde yapmak istemiyorsanız, yıldızı tıklayarak <strong>filtreleri kaydet</strong>. Bir dahaki sefere geri döndüğünüzde, kayıtlı filtreleri ana sayfanın kendisinde bulun"
       },
       "page3": {
         "title": "Logolar Oyunu",
@@ -302,16 +310,16 @@
         "text2": "Örnekte gösterildiği gibi, tüm benzer logoları seçtikten sonra, değerlerini yazın ve nerede bir marka, bir etiket veya başka bir şey olduğunu seçin. Bu kadar basit!"
       },
       "page4": {
-        "title": "Eko-Skor Soruları Oyunu",
+        "title": "Green-Score Soruları Oyunu",
         "text1": "En yüksek öncelikli etiketlerde kalan soruları bitirmemize yardım edin!",
-        "text2": "Bu kartlar, Green-Score'un hesaplanmasında kullanılan etiketlerle bağlantılıdır.",
-        "text3": "<strong>Eko-Skor nedir?</strong>",
-        "text4": "Green-Score, toplam çevresel ayak izini yakalayarak tüketicilerin ürünleri karşılaştırmasını ve hangisinin çevre için daha iyi olduğuna karar vermesini kolaylaştırır."
+        "text2": "Bu kartlar Green-Score hesaplanmasında kullanılan etiketlerle bağlantılıdır.",
+        "text3": "<strong>Green-Score nedir?</strong>",
+        "text4": "Green-Score, toplam çevresel ayak izini hesaplayarak tüketicilerin ürünleri karşılaştırmasını ve hangisinin çevre için daha iyi olduğuna karar vermesini kolaylaştırır."
       },
       "page5": {
         "title": "Ayarlar",
         "text1": "Tercih ettiğiniz dili ayarlayın ve ayarlar sayfamızdan sorunları bildirin.",
-        "text2": "Bir geliştiriciyseniz, geliştirme modumuzu kullanarak veritabanı içeriğimizi de keşfedebilirsiniz."
+        "text2": "Eğer bir geliştiriciyseniz, geliştirici modumuzu kullanarak veritabanımızdaki içeriği de keşfedebilirsiniz."
       },
       "page6": {
         "title": "Tur",
@@ -344,7 +352,7 @@
   },
   "nutrition": {
     "table_partialy_filled": "Zaten bazı veriler içeren tablo",
-    "display_off_values": "OpenFoodFacts'ten değerleri görüntüle",
+    "display_off_values": "Değerleri OpenFoodFacts'ten görüntüle",
     "nutrients": "Besin Maddeleri",
     "serving_size": "Porsiyon ölçüsü",
     "add_nutrient": "-- besin maddesi ekle --",
@@ -360,11 +368,11 @@
     "instructions": {
       "open_button": "Tarifleri aç",
       "title": "Arayüz nasıl kullanılır",
-      "chose_between_empty_and_partially_filled": "OpenFoodFacts'in (OFF) besin değerleri hakkında verisi olmayan ürünler arasından seçim yapabilirsiniz. Ya da besin tablosu kısmen doldurulmuş ürün.",
+      "chose_between_empty_and_partially_filled": "OpenFoodFacts (OFF)'in besin değerleri hakkında verisi bulunmayan ürünler veya besin değerleri tablosu kısmen doldurulmuş ürünler arasından seçim yapabilirsiniz.",
       "indicate_not_provided_value": "Boş girdiler göz ardı edilir. Tabloda lifler yoksa, değerin mevcut olmadığını belirtmek için \"-\" koyabilirsiniz.",
-      "validate_one_column": "Resimde gösterilen boyutu seçin. 100g ve porsiyon boyutunuz varsa, lütfen 100g'ı seçin çünkü bu normalleştirilmiş bir formattır.",
+      "validate_one_column": "Resimde gösterilen boyutu seçin. 100g ve porsiyon boyutunuz varsa, lütfen 100g'ı seçin çünkü bu normalleştirilmiş formattır.",
       "skip_button": "Bir görüntü ile nasıl başa çıkacağınızı bilmiyorsanız veya sadece yapmak istemiyorsanız, \"atla\" tuşuna basın. Diğer kullanıcı bunu halledebilecektir.",
-      "invalid_image_button": "Resim bir beslenme tablosu değilse, doğrulamak için resim listesinden kaldırmak üzere \"Geçersiz resim\"e tıklayın.",
+      "invalid_image_button": "Resim bir beslenme tablosu değilse, doğrulamak için resim listesinden kaldırmak üzere \"Geçersiz resim\"e tıklayın",
       "close": "Kapat"
     }
   },
@@ -376,8 +384,8 @@
   },
   "nutriscore": {
     "image_alt": "kırpılmış görüntü",
-    "label": "Nutri-Score logo algılamasına toplu açıklama ekleyin.",
-    "description": "Bunu yapmak için, doğru/yanlış Nutri-Score değerini ({{label}}) gösteren tüm resimleri seçin ve doğru veya yanlış olanları seçip seçmediğinizi belirtmek için alttaki düğmelere tıklayın.",
+    "label": "Toplu olarak Nutri-Score logosu algılamasına açıklama ekleyin.",
+    "description": "Bunu yapmak için, doğru/yanlış Nutri-Score değerini ({{label}}) gösteren tüm resimleri seçin ve doğru veya yanlış olarak seçtiğinizi \n belirtmek için alttaki düğmelere tıklayın.",
     "images_remaining": "Hala {{remaining}} açıklama eklenecek",
     "image_sizes": "Görüntü boyutları",
     "zoom_on_logo": "Logoyu yakınlaştır",
@@ -387,7 +395,7 @@
     "correct": "Doğru ({{label}})"
   },
   "green-score": {
-    "description": "İşte Green-Score hesaplamasını iyileştirebilecek soruların bir özeti",
+    "description": "Green-Score hesaplamasını iyileştirebilecek soruların bir özetini burada bulabilirsiniz",
     "countryLabel": "Ülke"
   },
   "ingredients": {

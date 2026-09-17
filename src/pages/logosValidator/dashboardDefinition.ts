@@ -84,7 +84,7 @@ const UNTYPED_LOGOS = {
   "en:eu-organic": {
     tag: "en:eu-organic",
     label: "Bio Européen",
-    logo: `https://images.${OFF_DOMAIN}/images/lang/fr/labels/bio-europeen.135x90.png`,
+    logo: `https://images.${OFF_DOMAIN}/images/lang/en/labels/eu-organic.135x90.svg`,
     type: "label",
   },
   "en:pdo": {
@@ -433,7 +433,7 @@ const UNTYPED_LOGOS = {
   "en:organic": {
     tag: "en:organic",
     label: "Bio",
-    logo: `https://images.${OFF_DOMAIN}/images/lang/fr/labels/bio.96x90.png`,
+    logo: `https://images.${OFF_DOMAIN}/images/lang/fr/labels/bio.96x90.svg`,
     type: "label",
   },
   "en:eg-oko-verordnung": {
@@ -1931,7 +1931,7 @@ const UNTYPED_LOGOS = {
   "en:keyhole": {
     tag: "en:keyhole",
     label: "Keyhole",
-    logo: `https://images.${OFF_DOMAIN}/images/lang/en/labels/keyhole.90x90.png`,
+    logo: `https://images.${OFF_DOMAIN}/images/lang/en/labels/keyhole.90x90.svg`,
     type: "label",
   },
   // Australia
@@ -2321,25 +2321,25 @@ const UNTYPED_LOGOS = {
   "en:haltungsform-1.79x90.png": {
     tag: "en:haltungsform-1",
     label: "haltungsform 1",
-    logo: `https://images.${OFF_DOMAIN}/images/lang/de/labels/haltungsform-1.79x90.png`,
+    logo: `https://images.${OFF_DOMAIN}/images/lang/de/labels/haltungsform-1.79x90.svg`,
     type: "label",
   },
   "en:haltungsform-2.79x90.png": {
     tag: "en:haltungsform-2",
     label: "haltungsform 2",
-    logo: `https://images.${OFF_DOMAIN}/images/lang/de/labels/haltungsform-2.79x90.png`,
+    logo: `https://images.${OFF_DOMAIN}/images/lang/de/labels/haltungsform-2.79x90.svg`,
     type: "label",
   },
   "en:haltungsform-3.79x90.png": {
     tag: "en:haltungsform-3",
     label: "haltungsform 3",
-    logo: `https://images.${OFF_DOMAIN}/images/lang/de/labels/haltungsform-3.79x90.png`,
+    logo: `https://images.${OFF_DOMAIN}/images/lang/de/labels/haltungsform-3.79x90.svg`,
     type: "label",
   },
   "en:haltungsform-4.79x90.png": {
     tag: "en:haltungsform-4",
     label: "haltungsform 4",
-    logo: `https://images.${OFF_DOMAIN}/images/lang/de/labels/haltungsform-4.79x90.png`,
+    logo: `https://images.${OFF_DOMAIN}/images/lang/de/labels/haltungsform-4.79x90.svg`,
     type: "label",
   },
   "en:für-mehr-tierschutz-1-star.206x90.png": {
@@ -2417,12 +2417,6 @@ const UNTYPED_LOGOS = {
     logo: `https://images.${OFF_DOMAIN}/images/lang/en/labels/soil-association-organic.89x90.png`,
     type: "label",
   },
-  "en:austria-bio-garantie.90x90.png": {
-    tag: "en:austria-bio-garantie",
-    label: "austria bio garantie",
-    logo: `https://images.${OFF_DOMAIN}/images/lang/en/labels/austria-bio-garantie.90x90.png`,
-    type: "label",
-  },
   "en:bio-austria.67x90.svg": {
     tag: "en:bio-austria",
     label: "bio austria",
@@ -2447,10 +2441,10 @@ const UNTYPED_LOGOS = {
     logo: `https://images.${OFF_DOMAIN}/images/lang/en/labels/ccof-certified-organic.90x90.png`,
     type: "label",
   },
-  "en:biokreis.92x90.png": {
+  "en:biokreis": {
     tag: "en:biokreis",
     label: "biokreis",
-    logo: `https://images.${OFF_DOMAIN}/images/lang/de/labels/biokreis.90x90.png`,
+    logo: `https://images.${OFF_DOMAIN}/images/lang/de/labels/biokreis.90x90.svg`,
     type: "label",
   },
   "en:naturland-fair": {
@@ -2459,28 +2453,28 @@ const UNTYPED_LOGOS = {
     logo: `https://images.${OFF_DOMAIN}/images/lang/de/labels/naturland-fair.40x90.svg`,
     type: "label",
   },
-  "en:bioland.90x90.svg": {
+  "en:bioland.90x90": {
     tag: "en:bioland",
     label: "bioland",
     logo: `https://images.${OFF_DOMAIN}/images/lang/de/labels/bioland.90x90.svg`,
     type: "label",
   },
-  "en:biogarantie.90x90.svg": {
+  "en:biogarantie.90x90": {
     tag: "en:biogarantie",
-    label: "biogarantie",
-    logo: `https://images.${OFF_DOMAIN}/images/lang/de/labels/biogarantie-at.90x90.svg`,
+    label: "biogarantie Austria",
+    logo: `https://images.${OFF_DOMAIN}/images/lang/de/labels/bio-garantie-at.90x90.svg`,
     type: "label",
   },
-  "en:biogarantie-bel.90x90.svg": {
+  "en:biogarantie-bel.90x90": {
     tag: "en:biogarantie-bel",
     label: "biogarantie bel",
-    logo: `https://images.${OFF_DOMAIN}/images/lang/de/labels/biogarantie-bel.90x90.svg`,
+    logo: `https://images.${OFF_DOMAIN}/images/lang/fr/labels/biogarantie-bel.90x90.svg`,
     type: "label",
   },
-  "en:biogarantie.90x90.png": {
+  "en:biogarantie.90x90": {
     tag: "en:biogarantie",
     label: "biogarantie",
-    logo: `https://images.${OFF_DOMAIN}/images/lang/fr/labels/biogarantie.90x90.png`,
+    logo: `https://images.${OFF_DOMAIN}/images/lang/fr/labels/biogarantie.90x90.svg`,
     type: "label",
   },
   "en:utz-certified": {
@@ -2958,7 +2952,7 @@ export const DASHBOARD: DashBoardTheme[] = [
   // Halal dashboard
   {
     tag: "halal",
-    title: "Halal",
+    title: "حلال Halal",
     logos: [
       "en:halal-food-council-of-europe",
       "fr:societe-francaise-de-controle-de-viande-halal",
@@ -2972,7 +2966,7 @@ export const DASHBOARD: DashBoardTheme[] = [
   // Kosher dashboard
   {
     tag: "kosher",
-    title: "Kosher",
+    title: "🕎 Kosher",
     logos: [
       //   "en:cor-kosher",
       // "en:kosher-check",
@@ -3074,17 +3068,16 @@ export const DASHBOARD: DashBoardTheme[] = [
     title: "Organic",
     logos: [
       "en:soil-association-organic",
-      "en:austria-bio-garantie.90x90.png",
-      "en:bio-austria.67x90.svg",
-      "en:bio-suisse.111x90.svg",
-      "en:biologique-canada-organic.90x90.png",
-      "en:ccof-certified-organic.90x90.png",
-      "en:biokreis.92x90.png",
+      "en:austria-bio-garantie.90x90",
+      "en:bio-austria.67x90",
+      "en:bio-suisse.111x90",
+      "en:biologique-canada-organic.90x90",
+      "en:ccof-certified-organic.90x90",
+      "en:biokreis",
       "en:naturland-fair",
       "en:bioland.90x90.svg",
-      "en:biogarantie.90x90.svg",
-      "en:biogarantie-bel.90x90.svg",
-      "en:biogarantie.90x90.png",
+      "en:biogarantie.90x90",
+      "en:biogarantie-bel.90x90",
       "en:naturland",
     ],
   },
@@ -3205,7 +3198,7 @@ export const DASHBOARD: DashBoardTheme[] = [
   // No gluten
   {
     tag: "no-gluten",
-    title: "No Gluten",
+    title: "🚫+🌾 No Gluten",
     logos: [
       "es:sin-tacc",
       "es:sin-gluten",
@@ -3218,7 +3211,7 @@ export const DASHBOARD: DashBoardTheme[] = [
   // Food Awards
   {
     tag: "food-awards",
-    title: "Food Awards",
+    title: "🏆 Food Awards",
     logos: [
       "en:concours-general-agricole",
       "en:medaille-d-argent-du-concours-general-agricole",

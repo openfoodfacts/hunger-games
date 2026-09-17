@@ -157,17 +157,19 @@ export default function LogoUpdate() {
 
   React.useEffect(() => {
     let isValid = true;
-    setFetchedData({
-      annotationValue: "",
-      annotationType: "",
-      imageURL: "",
-      image_id: "",
-      cropURL: "",
-      barcode: "",
-      isLoading: true,
-    });
-    robotoff
-      .loadLogo(logoId)
+    const loadLogo = async () => {
+      setFetchedData({
+        annotationValue: "",
+        annotationType: "",
+        imageURL: "",
+        image_id: "",
+        cropURL: "",
+        barcode: "",
+        isLoading: true,
+      });
+      return robotoff.loadLogo(logoId);
+    };
+    loadLogo()
       .then(({ data }) => {
         if (!isValid) {
           return;

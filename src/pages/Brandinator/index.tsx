@@ -19,7 +19,7 @@ export default function BrandinatorPage() {
   const [filter, setFilter] = React.useState<[number, number]>([1.2, 4.3]);
 
   const handleFilterChage = (
-    event: Event,
+    _event: Event,
     newValue: number | [number, number],
   ) => {
     if (!Array.isArray(newValue)) {

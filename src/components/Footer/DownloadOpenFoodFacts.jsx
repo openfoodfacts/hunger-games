@@ -1,19 +1,26 @@
-import { Box } from "@mui/material";
+import { Box, useMediaQuery, useTheme } from "@mui/material";
 
 export default function DownloadOpenFoodFacts() {
+  const theme = useTheme();
+  const systemPrefersDark = useMediaQuery("(prefers-color-scheme: dark)");
+  const needsLightBackdrop =
+    theme.palette.mode === "dark" && !systemPrefersDark;
+
   return (
     <Box
-      className="OFF-download"
-      sx={{ display: "flex", justifyContent: "center" }}
+      sx={{
+        display: "flex",
+        justifyContent: "center",
+        minHeight: 56,
+        alignItems: "center",
+      }}
     >
       <Box
         sx={{
-          // light panel so the badge's black text stays readable in dark mode
-          bgcolor: (theme) =>
-            theme.palette.mode === "dark" ? "#f5f5f5" : "transparent",
-          borderRadius: "16px",
-          px: 3,
-          py: 2,
+          bgcolor: needsLightBackdrop ? "#f5f5f5" : "transparent",
+          borderRadius: needsLightBackdrop ? "16px" : 0,
+          px: needsLightBackdrop ? 3 : 0,
+          py: needsLightBackdrop ? 2 : 0,
           display: "inline-flex",
         }}
       >

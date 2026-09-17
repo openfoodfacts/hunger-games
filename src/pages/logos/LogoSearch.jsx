@@ -73,9 +73,12 @@ export default function LogoSearch() {
       return () => {};
     }
     let isValidRequest = true;
-    setIsLoading(true);
-    setResult({ logos: [], count: undefined });
-    request(searchState)
+    const fetchLogos = async () => {
+      setIsLoading(true);
+      setResult({ logos: [], count: undefined });
+      return request(searchState);
+    };
+    fetchLogos()
       .then((rep) => {
         if (!isValidRequest) {
           return;
@@ -92,7 +95,7 @@ export default function LogoSearch() {
       });
 
     return () => (isValidRequest = false);
-  }, [searchState]);
+  }, [filterStateHasValue, searchState]);
 
   return (
     <Box sx={{ padding: 2 }}>

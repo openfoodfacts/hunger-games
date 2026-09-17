@@ -81,21 +81,18 @@ export const convertObjectParamsToUrlParams = (
  * @returns [state, setState]
  */
 const useUrlParams = (defaultParams, synonyms) => {
-  const [parameters, setParameters] = React.useState(() =>
-    getDefaultizedUrlParams(defaultParams),
-  );
   const { search } = useLocation();
-
-  React.useEffect(() => {
-    setParameters((prevParams) => {
-      const newParams = getDefaultizedUrlParams(defaultParams, synonyms);
-
-      const shouldUpdate = Object.keys(defaultParams).some(
-        (key) => newParams[key] !== prevParams[key],
-      );
-      return shouldUpdate ? newParams : prevParams;
-    });
-  }, [search, defaultParams, synonyms]);
+  const sourceKey = `${search}:${JSON.stringify(defaultParams)}:${JSON.stringify(
+    synonyms,
+  )}`;
+  const [parameterState, setParameterState] = React.useState(() => ({
+    sourceKey,
+    parameters: getDefaultizedUrlParams(defaultParams, synonyms),
+  }));
+  const parameters =
+    parameterState.sourceKey === sourceKey
+      ? parameterState.parameters
+      : getDefaultizedUrlParams(defaultParams, synonyms);
 
   const updateParameters = React.useCallback(
     (modifier) => {
@@ -105,10 +102,10 @@ const useUrlParams = (defaultParams, synonyms) => {
       } else {
         newParams = modifier;
       }
-      setParameters(newParams);
+      setParameterState({ sourceKey, parameters: newParams });
       setUrlParams(newParams, defaultParams);
     },
-    [parameters, defaultParams],
+    [parameters, defaultParams, sourceKey],
   );
   return [parameters, updateParameters];
 };

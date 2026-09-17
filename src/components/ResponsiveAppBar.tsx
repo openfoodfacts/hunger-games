@@ -4,6 +4,7 @@ import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
+import Divider from "@mui/material/Divider";
 import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
@@ -19,9 +20,10 @@ import List from "@mui/material/List";
 
 import SettingsIcon from "@mui/icons-material/Settings";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
+import PublicIcon from "@mui/icons-material/Public";
 import ExpandLess from "@mui/icons-material/ExpandLess";
 import ExpandMore from "@mui/icons-material/ExpandMore";
-import HelpOutlineIcon from "@mui/icons-material/HelpOutline";
+import HelpOutlineIcon from "@mui/icons-material/HelpOutlineOutlined";
 
 import DevModeContext from "../contexts/devMode";
 import LoginContext from "../contexts/login";
@@ -100,6 +102,116 @@ const PAGES: Page[] = [
   },
 ];
 
+type NavBrandProps = {
+  externalLogo?: boolean;
+  compact?: boolean;
+};
+
+const NavBrand = ({ externalLogo = false, compact = false }: NavBrandProps) => {
+  const { t } = useTranslation();
+
+  const logoMark = (
+    <Box
+      sx={{
+        width: compact ? 32 : 36,
+        height: compact ? 32 : 36,
+        display: "grid",
+        placeItems: "center",
+        flexShrink: 0,
+        borderRadius: compact ? 1.5 : 2,
+      }}
+    >
+      <Box
+        component="img"
+        src={logo}
+        alt=""
+        sx={{ width: "78%", height: "78%", objectFit: "contain" }}
+      />
+    </Box>
+  );
+
+  return (
+    <Box
+      sx={{
+        display: "inline-flex",
+        alignItems: "center",
+        gap: 1,
+        minWidth: 0,
+        borderRadius: 2,
+        px: compact ? 0.5 : 0.75,
+        py: 0.5,
+        color: "inherit",
+        textDecoration: "none",
+        "&:hover": {
+          backgroundColor: "action.hover",
+        },
+      }}
+    >
+      {externalLogo ? (
+        <MuiLink
+          href={OFF_URL}
+          target="_blank"
+          aria-label="Open Food Facts"
+          sx={{ display: "flex" }}
+        >
+          {logoMark}
+        </MuiLink>
+      ) : (
+        <Box
+          component={Link as React.ElementType}
+          to="/"
+          aria-label={t("menu.title")}
+          sx={{ display: "flex" }}
+        >
+          {logoMark}
+        </Box>
+      )}
+      <Box
+        component={Link as React.ElementType}
+        to="/"
+        sx={{
+          minWidth: 0,
+          color: "inherit",
+          textDecoration: "none",
+          lineHeight: 1,
+        }}
+      >
+        <Typography
+          component="span"
+          sx={{
+            display: "block",
+            overflow: "hidden",
+            textOverflow: "ellipsis",
+            whiteSpace: "nowrap",
+            fontSize: compact ? "0.98rem" : "1.05rem",
+            fontWeight: 800,
+            letterSpacing: "-0.025em",
+          }}
+        >
+          {t("menu.title")}
+        </Typography>
+        {!compact && (
+          <Typography
+            component="span"
+            sx={{
+              display: "block",
+              mt: 0.25,
+              fontSize: "0.58rem",
+              fontWeight: 700,
+              letterSpacing: "0.14em",
+              lineHeight: 1,
+              opacity: 0.62,
+              textTransform: "uppercase",
+            }}
+          >
+            Open Food Facts
+          </Typography>
+        )}
+      </Box>
+    </Box>
+  );
+};
+
 const MultiPagesButton = ({
   translationKey,
   children,
@@ -115,10 +227,6 @@ const MultiPagesButton = ({
 }) => {
   const { t } = useTranslation();
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
-
-  React.useEffect(() => {
-    if (!isOpen) setAnchorEl(null);
-  }, [isOpen]);
 
   const handleOpen = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorEl(event.currentTarget);
@@ -136,7 +244,12 @@ const MultiPagesButton = ({
         color="inherit"
         key={translationKey}
         onClick={handleOpen}
-        sx={{ my: 2, display: "block" }}
+        sx={{
+          my: 1,
+          px: { lg: 1, xl: 1.5 },
+          display: "block",
+          whiteSpace: "nowrap",
+        }}
       >
         {t(translationKey)}
       </Button>
@@ -153,9 +266,16 @@ const MultiPagesButton = ({
             onClick={handleClose}
             {...(isExternalUrl(subPage.url)
               ? { component: "a", target: "_blank", href: subPage.url }
-              : { component: Link, to: `/${subPage.url}` })}
+              : {
+                  component: Link as React.ElementType,
+                  to: `/${subPage.url}`,
+                })}
           >
-            <Typography textAlign="center">
+            <Typography
+              sx={{
+                textAlign: "center",
+              }}
+            >
               {t(subPage.translationKey)}
             </Typography>
           </MenuItem>
@@ -173,7 +293,8 @@ const ResponsiveAppBar = () => {
   const [isTourOpen, setIsTourOpen] = React.useState(false);
   const [country, setCountry] = useCountry();
   const theme = useTheme();
-  const isDesktop = useMediaQuery(theme.breakpoints.up("md"));
+  // Keep page visibility in sync with the breakpoint used by the desktop nav.
+  const isDesktop = useMediaQuery(theme.breakpoints.up("lg"));
 
   const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorElNav(event.currentTarget);
@@ -196,11 +317,7 @@ const ResponsiveAppBar = () => {
     url?: string;
   }) => {
     if (page.devModeOnly) {
-      return (
-        isDevMode &&
-        !!page.url &&
-        visiblePages[page.url as keyof typeof visiblePages]
-      );
+      return isDevMode && !!page.url && visiblePages[page.url];
     }
     if (page.mobileOnly) {
       return !isDesktop;
@@ -232,23 +349,29 @@ const ResponsiveAppBar = () => {
       sx={(theme) => ({
         backgroundColor: theme.palette.cafeCreme.main,
         color: theme.palette.cafeCreme.contrastText,
+        boxShadow: "none",
+        borderBottom: `1px solid ${theme.palette.divider}`,
       })}
     >
       <Container maxWidth={false}>
-        <Toolbar disableGutters>
+        <Toolbar
+          disableGutters
+          sx={{ minHeight: { xs: 58, lg: 66 }, px: { xs: 0.5, lg: 0 } }}
+        >
           {/* Mobile content */}
           <Box
             sx={{
               flexGrow: 1,
               display: { xs: "flex", lg: "none" },
               alignItems: "center",
-              justifyContent: "space-between",
               maxWidth: "100%",
             }}
           >
             <IconButton
               size="large"
-              aria-label="account of current user"
+              aria-label={t("menu.open_navigation", {
+                defaultValue: "Open navigation menu",
+              })}
               aria-controls="menu-appbar"
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
@@ -279,13 +402,21 @@ const ResponsiveAppBar = () => {
                   if (page.url) {
                     return (
                       <MenuItem
+                        key={page.translationKey}
                         color="inherit"
                         sx={{ display: "block" }}
                         {...(isExternalUrl(page.url)
                           ? { component: "a", target: "_blank", href: page.url }
-                          : { component: Link, to: `/${page.url}` })}
+                          : {
+                              component: Link as React.ElementType,
+                              to: `/${page.url}`,
+                            })}
                       >
-                        <Typography textAlign="left">
+                        <Typography
+                          sx={{
+                            textAlign: "left",
+                          }}
+                        >
                           {t(page.translationKey)}
                         </Typography>
                       </MenuItem>
@@ -307,7 +438,11 @@ const ResponsiveAppBar = () => {
                             }))
                           }
                         >
-                          <Typography textAlign="center">
+                          <Typography
+                            sx={{
+                              textAlign: "center",
+                            }}
+                          >
                             {t(page.translationKey)}
                           </Typography>
 
@@ -328,10 +463,14 @@ const ResponsiveAppBar = () => {
                                 sx={{ pl: 4 }}
                                 key={subPage.translationKey}
                                 onClick={handleCloseNavMenu}
-                                component={Link}
+                                component={Link as React.ElementType}
                                 to={`/${subPage.url}`}
                               >
-                                <Typography textAlign="center">
+                                <Typography
+                                  sx={{
+                                    textAlign: "center",
+                                  }}
+                                >
                                   {t(subPage.translationKey)}
                                 </Typography>
                               </MenuItem>
@@ -356,38 +495,50 @@ const ResponsiveAppBar = () => {
                     handleCloseNavMenu();
                   }}
                 >
-                  <Typography textAlign="center">{t("menu.tour")}</Typography>
+                  <Typography
+                    sx={{
+                      textAlign: "center",
+                    }}
+                  >
+                    {t("menu.tour")}
+                  </Typography>
                 </MenuItem>
               </Menu>
             )}
 
-            <Typography
-              variant="h5"
-              noWrap
-              component={Link}
-              to="/"
+            <Box
               sx={{
-                flexGrow: 0,
-                fontFamily: "monospace",
-                fontWeight: 700,
-                letterSpacing: ".3rem",
-                color: "inherit",
-                textDecoration: "none",
-                textAlign: "center",
+                flex: 1,
+                minWidth: 0,
+                display: "flex",
+                justifyContent: "center",
               }}
             >
-              Hunger Games
-            </Typography>
+              <NavBrand compact />
+            </Box>
             {isLoggedIn ? (
-              <AccountCircleIcon color="success" />
+              <Box
+                sx={{
+                  width: 48,
+                  height: 48,
+                  display: "grid",
+                  placeItems: "center",
+                }}
+              >
+                <AccountCircleIcon color="success" />
+              </Box>
             ) : (
               <IconButton
-                onClick={async () => {
-                  const isLoggedIn = await refresh();
-                  if (!isLoggedIn) {
-                    window.open(`${OFF_URL}/cgi/login.pl`, "_blank")?.focus();
-                  }
-                }}
+                aria-label={t("menu.log_in")}
+                sx={{ width: 48, height: 48 }}
+                onClick={() =>
+                  void (async () => {
+                    const isLoggedIn = await refresh();
+                    if (!isLoggedIn) {
+                      window.open(`${OFF_URL}/cgi/login.pl`, "_blank")?.focus();
+                    }
+                  })()
+                }
               >
                 <AccountCircleIcon color="error" />
               </IconButton>
@@ -402,6 +553,7 @@ const ResponsiveAppBar = () => {
               alignItems: "center",
               width: "100%",
               justifyContent: "space-between",
+              minWidth: 0,
             }}
           >
             <Box
@@ -409,35 +561,22 @@ const ResponsiveAppBar = () => {
                 display: "flex",
                 flexDirection: "row",
                 alignItems: "center",
+                minWidth: 0,
+                overflowX: "auto",
+                scrollbarWidth: "none",
+                "&::-webkit-scrollbar": { display: "none" },
               }}
             >
-              <MuiLink
-                sx={{ mr: 1, display: "flex", alignSelf: "center" }}
-                href={OFF_URL}
-                target="_blank"
-              >
-                <img
-                  src={logo}
-                  width="30px"
-                  height="30px"
-                  alt="OpenFoodFact logo"
-                />
-              </MuiLink>
-              <Typography
-                variant="h6"
-                component={Link}
-                to="/"
+              <NavBrand externalLogo />
+              <Divider
+                orientation="vertical"
                 sx={{
-                  mr: 2,
-                  fontFamily: "monospace",
-                  fontWeight: 700,
-                  letterSpacing: ".3rem",
-                  color: "inherit",
-                  textDecoration: "none",
+                  height: 32,
+                  alignSelf: "center",
+                  mx: { lg: 1, xl: 1.5 },
+                  borderColor: "divider",
                 }}
-              >
-                Hunger Games
-              </Typography>
+              />
 
               {displayedPages.map((page) => {
                 if (page.url) {
@@ -446,7 +585,12 @@ const ResponsiveAppBar = () => {
                       color="inherit"
                       key={page.url}
                       onClick={handleCloseNavMenu}
-                      sx={{ my: 2, display: "block" }}
+                      sx={{
+                        my: 1,
+                        px: { lg: 1, xl: 1.5 },
+                        display: "block",
+                        whiteSpace: "nowrap",
+                      }}
                       component={"a"}
                       href={page.url}
                       target="_blank"
@@ -459,8 +603,13 @@ const ResponsiveAppBar = () => {
                       color="inherit"
                       key={page.url}
                       onClick={handleCloseNavMenu}
-                      sx={{ my: 2, display: "block" }}
-                      component={Link}
+                      sx={{
+                        my: 1,
+                        px: { lg: 1, xl: 1.5 },
+                        display: "block",
+                        whiteSpace: "nowrap",
+                      }}
+                      component={Link as React.ElementType}
                       to={`/${page.url}`}
                       data-welcome-tour={page.url}
                     >
@@ -474,7 +623,6 @@ const ResponsiveAppBar = () => {
                   return (
                     <MultiPagesButton
                       {...page}
-                      children={children}
                       key={page.translationKey}
                       isExternalUrl={isExternalUrl}
                       isOpen={!!menuOpenState[`Desktop-${page.translationKey}`]}
@@ -485,7 +633,9 @@ const ResponsiveAppBar = () => {
                             !prev[`Desktop-${page.translationKey}`],
                         }))
                       }
-                    />
+                    >
+                      {children}
+                    </MultiPagesButton>
                   );
                 }
 
@@ -497,45 +647,87 @@ const ResponsiveAppBar = () => {
                 display: "flex",
                 flexDirection: "row",
                 alignItems: "center",
-                "&>*": {
-                  mr: 1.5,
-                },
+                flexShrink: 0,
+                gap: { lg: 0.5, xl: 1 },
+                "& > *": { mr: 0 },
               }}
             >
-              <Autocomplete
-                disableClearable
-                options={countryNames}
-                getOptionLabel={(option) =>
-                  option.countryCode
-                    ? `${option.label} (${option.countryCode})`
-                    : option.label
-                }
-                isOptionEqualToValue={(option, value) =>
-                  option.countryCode === value.countryCode
-                }
-                value={
-                  countryNames.find((c) => c.countryCode === country) ??
-                  countryNames.find((c) => c.countryCode === "")
-                }
-                onChange={(_, newValue) =>
-                  setCountry(newValue?.countryCode ?? "", "global")
-                }
-                sx={{ width: 220, fieldset: { border: "none" } }}
-                renderInput={(params) => (
-                  <TextField {...params} variant="outlined" />
-                )}
-              />
+              <Box
+                title={t("menu.country", { defaultValue: "Country" })}
+                sx={{
+                  display: "flex",
+                  alignItems: "center",
+                  gap: 0.5,
+                  pl: { lg: 1, xl: 1.5 },
+                }}
+              >
+                <Divider
+                  orientation="vertical"
+                  sx={{
+                    height: 32,
+                    alignSelf: "center",
+                    mr: { lg: 0.5, xl: 1 },
+                    borderColor: "divider",
+                  }}
+                />
+                <PublicIcon fontSize="small" aria-hidden="true" />
+                <Autocomplete
+                  disableClearable
+                  options={countryNames}
+                  getOptionLabel={(option) =>
+                    option.countryCode
+                      ? `${option.label} (${option.countryCode})`
+                      : option.label
+                  }
+                  isOptionEqualToValue={(option, value) =>
+                    option.countryCode === value.countryCode
+                  }
+                  value={
+                    countryNames.find((c) => c.countryCode === country) ??
+                    countryNames.find((c) => c.countryCode === "")
+                  }
+                  onChange={(_, newValue) =>
+                    setCountry(newValue?.countryCode ?? "", "global")
+                  }
+                  sx={{
+                    width: { lg: 160, xl: 220 },
+                    fieldset: { border: "none" },
+                    "& .MuiInputBase-root": {
+                      borderRadius: 1,
+                      bgcolor: "action.hover",
+                    },
+                  }}
+                  renderInput={(params) => (
+                    <TextField
+                      {...params}
+                      variant="outlined"
+                      size="small"
+                      slotProps={{
+                        ...params.slotProps,
+                        htmlInput: {
+                          ...params.slotProps.htmlInput,
+                          "aria-label": t("menu.country", {
+                            defaultValue: "Country",
+                          }),
+                        },
+                      }}
+                    />
+                  )}
+                />
+              </Box>
               <IconButton
+                aria-label={t("menu.settings")}
                 color="inherit"
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2 }}
-                component={Link}
+                component={Link as React.ElementType}
                 to={`/settings`}
                 data-welcome-tour="settings"
               >
                 <SettingsIcon />
               </IconButton>
               <IconButton
+                aria-label={t("menu.tour")}
                 color="inherit"
                 onClick={() => {
                   setIsTourOpen(true);
@@ -552,17 +744,30 @@ const ResponsiveAppBar = () => {
                 }
               >
                 {isLoggedIn ? (
-                  <AccountCircleIcon color="success" />
+                  <Box
+                    sx={{
+                      width: 48,
+                      height: 48,
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                    }}
+                  >
+                    <AccountCircleIcon color="success" />
+                  </Box>
                 ) : (
                   <IconButton
-                    onClick={async () => {
-                      const isLoggedIn = await refresh();
-                      if (!isLoggedIn) {
-                        window
-                          .open(`${OFF_URL}/cgi/login.pl`, "_blank")
-                          ?.focus();
-                      }
-                    }}
+                    aria-label={t("menu.log_in")}
+                    onClick={() =>
+                      void (async () => {
+                        const isLoggedIn = await refresh();
+                        if (!isLoggedIn) {
+                          window
+                            .open(`${OFF_URL}/cgi/login.pl`, "_blank")
+                            ?.focus();
+                        }
+                      })()
+                    }
                   >
                     <AccountCircleIcon color="error" />
                   </IconButton>

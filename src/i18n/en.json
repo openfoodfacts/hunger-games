@@ -2,6 +2,14 @@
   "home": {
     "game_selector": {
       "title": "What game would you like to play?",
+      "external_link": "External link",
+      "categories": {
+        "all": "All",
+        "featured": "Featured",
+        "questions": "Questions by Type",
+        "move_products": "Move Products",
+        "open_prices": "Open Prices"
+      },
       "cards": {
         "questions": {
           "title": "Questions",
@@ -14,6 +22,54 @@
         "green_score": {
           "title": "Green-score",
           "description": "Annotate the questions with the highest value"
+        },
+        "ingredient_spellcheck": {
+          "title": "Ingredients spellcheck",
+          "description": "Fix spelling mistakes and typos in extracted ingredient lists"
+        },
+        "ingredient_detection": {
+          "title": "Ingredients crop",
+          "description": "Locate and crop the ingredients list bounding box on packaging"
+        },
+        "nutrition": {
+          "title": "Nutrition game",
+          "description": "Extract and validate nutritional values from packaging tables"
+        },
+        "prices_validation": {
+          "title": "Price Validation",
+          "description": "Verify prices and receipts contributed to Open Prices"
+        },
+        "prices_create_product": {
+          "title": "Create Missing Products",
+          "description": "Add new products identified on price receipts to Open Food Facts"
+        },
+        "questions_packaging": {
+          "title": "Packaging",
+          "description": "Validate packaging materials, shapes, and recycling instructions"
+        },
+        "questions_weights": {
+          "title": "Weights",
+          "description": "Validate product net weight, volume, and unit quantities"
+        },
+        "questions_brands": {
+          "title": "Brands",
+          "description": "Identify and verify brand names detected on product packaging"
+        },
+        "questions_labels": {
+          "title": "Labels",
+          "description": "Validate organic, eco, quality, and origin certification labels"
+        },
+        "move_open_beauty_facts": {
+          "title": "Move to Open Beauty Facts",
+          "description": "Identify cosmetics and hygiene items to move them to Open Beauty Facts"
+        },
+        "move_open_pet_food_facts": {
+          "title": "Move to Open Pet Food Facts",
+          "description": "Identify animal food and pet care items to move them to Open Pet Food Facts"
+        },
+        "move_open_products_facts": {
+          "title": "Move to Open Products Facts",
+          "description": "Identify non-food items to move them to Open Products Facts"
         }
       }
     },
@@ -24,6 +80,12 @@
       "contribution_details": "Learn why your contribution matters"
     },
     "saved_filters": "Saved Filters",
+    "saved_filters_delete": "Delete saved filter",
+    "saved_filters_delete_title": "Delete saved filter?",
+    "saved_filters_delete_description": "This saved filter will be removed from this device.",
+    "saved_filters_delete_confirm": "Delete",
+    "saved_filters_pending": "{{count}} products waiting",
+    "saved_filters_pending_unknown": "Products waiting",
     "contribution_modal": {
       "title": "Your contribution matters",
       "information": "Hunger Games is an effort to leverage the results of our OCR and artificial intelligence. When you use Hunger Games by Open Food Facts, you improve our entire database which helps the community make better food choices. We gather your annotations and use them to make Open Food Facts more accurate and efficient.",
@@ -31,6 +93,12 @@
     },
     "statistics": {
       "title": "{{userName}} statistics:",
+      "title_without_name": "Your statistics",
+      "empty_state": {
+        "title": "No contributions yet",
+        "description": "Your contribution statistics will appear here once you start helping improve Open Food Facts.",
+        "action": "Start contributing"
+      },
       "editorCount": {
         "title": "Editor",
         "description": "Number of editions done"
@@ -71,6 +139,10 @@
     "skip": "Skip",
     "yes": "Yes",
     "no_questions_remaining": "No questions remaining",
+    "similar_questions": "Similar questions",
+    "no_similar_questions": "No similar questions",
+    "remaining_questions_count_one": "1 question remaining",
+    "remaining_questions_count_other": "{{count}} questions remaining",
     "an_error_occurred": "An error occurred. Please reload, try later or contact the team.",
     "countries": "Countries",
     "view": "View",
@@ -83,10 +155,9 @@
     "last_annotations": "Last annotations",
     "remaining_annotations": "Remaining questions",
     "annotated_annotations": "Annotated",
-    "similar_questions": "Similar questions",
-    "no_similar_questions": "No similar questions",
     "no_images": "No images available",
     "no_additional_info": "No additional information",
+    "add_missing_info": "Add",
     "filters": {
       "active_filter_number": "+{{count}} filters",
       "active_filter_number_one": "+{{count}} filter",
@@ -111,6 +182,7 @@
       },
       "placeholders": {
         "value": "Value (Fanta, en:organic...)",
+        "country": "France, Germany, Japan, ...",
         "brand": "Auchan, Danone, Herta, ...",
         "campaign": "Annotation campaigns",
         "predictor": "universal-logo-detector, regex, ..."
@@ -149,21 +221,22 @@
     "games": "Games",
     "questions": "Questions",
     "logos": "Logos",
-    "logos-annotation": "Logo annotation",
-    "logos-search": "Logos search",
-    "logos-product-search": "Annotation per products",
-    "logos-deep-search": "Infinite annotation",
+    "logos-annotation": "Annotate logos",
+    "logos-search": "Search logos",
+    "logos-product-search": "Annotate products",
+    "logos-deep-search": "Deep logo search",
     "manage": "Manage",
     "insights": "Insights",
     "nutritions": "Nutrition",
-    "ingredient-spellcheck": "Ingredient spellcheck",
-    "ingredient-detection": "Ingredient detection",
+    "ingredient-spellcheck": "Check ingredient spelling",
+    "ingredient-detection": "Detect ingredients",
     "settings": "Settings",
-    "green-score": "Green-Score",
-    "dashboard": "Logos dashboard",
-    "tour": "Show tour",
-    "logged_in_user": "Logged as {{userName}}",
-    "log_in": "Click to login",
+    "green-score": "Green score",
+    "dashboard": "Logo dashboard",
+    "tour": "Take a tour",
+    "open_navigation": "Open navigation menu",
+    "logged_in_user": "Logged in as {{userName}}",
+    "log_in": "Log in",
     "moderation": "Moderation",
     "ingredients": "Ingredients"
   },
@@ -199,6 +272,17 @@
     "view_crops_for_this_product": "Annotate product logos"
   },
   "logos": {
+    "dashboard": {
+      "title": "Logo dashboard",
+      "description": "Explore logo categories and help improve product data.",
+      "category": "Category",
+      "categories": "Categories",
+      "logo_count_one": "{{count}} logo",
+      "logo_count_other": "{{count}} logos",
+      "more_info": "More info",
+      "questions": "Questions",
+      "search": "Search"
+    },
     "annotation": "Annotation: ",
     "annotations": "Logo annotations",
     "task_description": "Select all logos that are exactly the same, and give them a name like \"en:EU Organic\" and a type like \"label\".",
@@ -243,6 +327,8 @@
       "title": "Logo search",
       "description": "Select a logo you want to look for, and let's go to catch them all. For every logo you annotate, we will fetch it's neighbors such that you might never stop to annotate. (Press Shift to select range of logos)",
       "ref_logos": "Reference logos (logo already annotated with this value)",
+      "annotation_count_one": "Already {{formattedCount}} annotation. You can come back to this logo in a few days if you don't find any matching logos.",
+      "annotation_count_other": "Already {{formattedCount}} annotations. You can come back to this logo in a few days if you don't find any matching logos.",
       "remaining": "Remaining to annotate",
       "select_all": "Select All",
       "unselect_all": "Deselect All"
@@ -257,7 +343,7 @@
     "dev_mode_label": "Dev Mode",
     "dev_page_toggle": "Show {{name}} page",
     "join_community": "Join the community",
-    "text1": "Open Food Facts is a collaborative project built by tens of thousands of volunteers and managed by a non-profit organization with 8 employees. We need your donations to fund the Open Food Facts 2024 budget and to continue to develop the project.",
+    "text1": "Open Food Facts is a collaborative project built by tens of thousands of volunteers and managed by a non-profit organization with 8 employees. We need your donations to fund the Open Food Facts 2027 budget and to continue to develop the project.",
     "thank_you": "Thank you",
     "donate": "Donate",
     "join_the_community": {
@@ -388,6 +474,10 @@
   },
   "green-score": {
     "description": "Here is a summary of questions that could improve Green-Score computation",
+    "labelsDescription": "Answer questions related to these labels to improve Green-Score computation",
+    "categoriesDescription": "Answer questions related to these categories to improve Green-Score computation",
+    "questionCountLabel_one": "question",
+    "questionCountLabel_other": "questions",
     "countryLabel": "Country"
   },
   "ingredients": {
@@ -401,6 +491,12 @@
     "getRobotoffPrediciton": "Get predictions from Robotoff"
   },
   "footer": {
+    "social": {
+      "email": "Email Open Food Facts",
+      "twitter": "Open Food Facts on Twitter",
+      "instagram": "Open Food Facts on Instagram",
+      "facebook": "Open Food Facts on Facebook"
+    },
     "appStore": {
       "title": "App Store",
       "subtitle": "Download on the"

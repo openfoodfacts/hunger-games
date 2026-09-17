@@ -2,6 +2,7 @@
   "home": {
     "game_selector": {
       "title": "A quale gioco vorresti giocare?",
+      "external_link": "Link esterno",
       "cards": {
         "questions": {
           "title": "Domande",
@@ -14,6 +15,10 @@
         "green_score": {
           "title": "Green-score",
           "description": "Annota le domande con il valore più alto"
+        },
+        "create_products": {
+          "title": "Crea prodotti mancanti",
+          "description": "Aggiungi prodotti non ancora nell'archivio, su Open Prices"
         }
       }
     },
@@ -24,6 +29,12 @@
       "contribution_details": "Scopri perché il tuo contributo è importante"
     },
     "saved_filters": "Filtri salvati",
+    "saved_filters_delete": "Elimina filtro salvato",
+    "saved_filters_delete_title": "Eliminare il filtro salvato?",
+    "saved_filters_delete_description": "Questo filtro salvato verrà rimosso da questo dispositivo.",
+    "saved_filters_delete_confirm": "Elimina",
+    "saved_filters_pending": "{{count}} prodotti in attesa",
+    "saved_filters_pending_unknown": "Prodotti in attesa",
     "contribution_modal": {
       "title": "Il tuo contributo è importante",
       "information": "Hunger Games è un tentativo di sfruttare i risultati del nostro OCR e dell'intelligenza artificiale. Quando utilizzi Hunger Games di Open Food Facts, migliori il nostro intero database, il che aiuta la comunità a fare scelte alimentari migliori. Raccogliamo le tue annotazioni e le utilizziamo per rendere Open Food Facts più accurato ed efficiente.",
@@ -31,6 +42,12 @@
     },
     "statistics": {
       "title": "Statistiche di {{userName}}:",
+      "title_without_name": "Le tue statistiche",
+      "empty_state": {
+        "title": "Ancora nessun contributo",
+        "description": "Le tue statistiche dei contributi appariranno qui quando inizierai ad aiutare a migliorare Open Food Facts.",
+        "action": "Inizia a contribuire"
+      },
       "editorCount": {
         "title": "Editore",
         "description": "Numero di modifiche effettuate"
@@ -50,8 +67,8 @@
     "loading": "Caricamento"
   },
   "image_viewer": {
-    "compressed": "Compressed",
-    "load_original": "Load original"
+    "compressed": "Compressa",
+    "load_original": "Carica l'originale"
   },
   "questions": {
     "category": "categoria",
@@ -71,6 +88,10 @@
     "skip": "Salta",
     "yes": "Sì",
     "no_questions_remaining": "Nessuna domanda rimanente",
+    "similar_questions": "Domande simili",
+    "no_similar_questions": "Nessuna domanda simile",
+    "remaining_questions_count_one": "1 domanda rimanente",
+    "remaining_questions_count_other": "{{count}} domande rimanenti",
     "an_error_occurred": "Si è verificato un errore. Ricarica la pagina, riprova più tardi o contatta il team.",
     "countries": "Paesi",
     "view": "Mostra",
@@ -83,10 +104,9 @@
     "last_annotations": "Annotazioni recenti",
     "remaining_annotations": "Domande rimanenti",
     "annotated_annotations": "Annotato",
-    "similar_questions": "Similar questions",
-    "no_similar_questions": "No similar questions",
-    "no_images": "No images available",
-    "no_additional_info": "No additional information",
+    "no_images": "Nessuna immagine disponibile",
+    "no_additional_info": "Nessuna informazione aggiuntiva",
+    "add_missing_info": "Aggiungi",
     "filters": {
       "active_filter_number": "+{{count}} filtri",
       "active_filter_number_one": "+{{count}} filtro",
@@ -111,6 +131,7 @@
       },
       "placeholders": {
         "value": "Valore (Fanta, it:biologico,...)",
+        "country": "Francia, Germania, Giappone...",
         "brand": "Auchan, Danone, Herta, ...",
         "campaign": "Campagne d'annotazione",
         "predictor": "universal-logo-detector, regex, ..."
@@ -149,21 +170,22 @@
     "games": "Giochi",
     "questions": "Domande",
     "logos": "Loghi",
-    "logos-annotation": "Annotazione dei loghi",
-    "logos-search": "Ricerca dei loghi",
-    "logos-product-search": "Annotazione per prodotti",
-    "logos-deep-search": "Annotazione infinita",
+    "logos-annotation": "Annota loghi",
+    "logos-search": "Cerca loghi",
+    "logos-product-search": "Annota prodotti",
+    "logos-deep-search": "Ricerca avanzata dei loghi",
     "manage": "Gestisci",
     "insights": "Approfondimenti",
     "nutritions": "Nutrizione",
-    "ingredient-spellcheck": "Controllo ortografico degli ingredienti",
-    "ingredient-detection": "Rilevamento degli ingredienti",
+    "ingredient-spellcheck": "Controllo ortografia ingredienti",
+    "ingredient-detection": "Rileva ingredienti",
     "settings": "Impostazioni",
     "green-score": "Green-Score",
-    "dashboard": "Pannello di controllo dei loghi",
+    "dashboard": "Dashboard dei loghi",
     "tour": "Inizia la visita guidata",
+    "open_navigation": "Apri il menu di navigazione",
     "logged_in_user": "Accesso effettuato come {{userName}}",
-    "log_in": "Clicca per accedere",
+    "log_in": "Accedi",
     "moderation": "Moderazione",
     "ingredients": "Ingredienti"
   },
@@ -199,6 +221,17 @@
     "view_crops_for_this_product": "Annota i loghi del prodotto"
   },
   "logos": {
+    "dashboard": {
+      "title": "Dashboard dei loghi",
+      "description": "Esplora le categorie di loghi e aiuta a migliorare i dati dei prodotti.",
+      "category": "Categoria",
+      "categories": "Categorie",
+      "logo_count_one": "{{count}} logo",
+      "logo_count_other": "{{count}} loghi",
+      "more_info": "Maggiori informazioni",
+      "questions": "Domande",
+      "search": "Cerca"
+    },
     "annotation": "Annotazione: ",
     "annotations": "Annotazioni del logo",
     "task_description": "Seleziona tutti i loghi identici e assegna loro un nome, come \"it:UE Biologico\", e un tipo, come \"etichetta\".",
@@ -388,6 +421,10 @@
   },
   "green-score": {
     "description": "Ecco un riepilogo delle domande che potrebbero migliorare il calcolo dell'Green-Score",
+    "labelsDescription": "Rispondi alle domande relative a queste etichette per migliorare il calcolo del Green-Score",
+    "categoriesDescription": "Rispondi alle domande relative a queste categorie per migliorare il calcolo del Green-Score",
+    "questionCountLabel_one": "domanda",
+    "questionCountLabel_other": "domande",
     "countryLabel": "Paese"
   },
   "ingredients": {
@@ -401,6 +438,12 @@
     "getRobotoffPrediciton": "Ottieni previsioni da Robotoff"
   },
   "footer": {
+    "social": {
+      "email": "Email Open Food Facts",
+      "twitter": "Open Food Facts su Twitter",
+      "instagram": "Open Food Facts su Instagram",
+      "facebook": "Open Food Facts su Facebook"
+    },
     "appStore": {
       "title": "App Store",
       "subtitle": "Scarica da"

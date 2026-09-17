@@ -15,7 +15,7 @@ const greenScoreCards: CardProps[] = [
       valueTag: "en:organic",
     },
     title: "en:organic",
-    imageSrc: `https://images.${OFF_DOMAIN}/images/lang/fr/labels/bio.96x90.png`,
+    imageSrc: `https://images.${OFF_DOMAIN}/images/lang/fr/labels/bio.96x90.svg`,
   },
   {
     filterState: {

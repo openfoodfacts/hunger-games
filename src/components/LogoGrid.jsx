@@ -90,7 +90,11 @@ const LogoCard = React.memo(
           </Tooltip>
           <Tooltip title="See similar logos">
             <IconButton size="small" component={Link} to={externalLogoURL(id)}>
-              <LinkIcon fontSize="inherit" />
+              <LinkIcon
+                sx={{
+                  fontSize: "inherit",
+                }}
+              />
             </IconButton>
           </Tooltip>
         </Box>
@@ -165,20 +169,22 @@ const LogoGrid = (props) => {
     editOpen,
   } = props;
 
-  const [lastClicked, setLastClicked] = React.useState(null);
+  const logoIds = React.useMemo(() => logos.map((logo) => logo.id), [logos]);
+  const logoIdsKey = React.useMemo(() => JSON.stringify(logoIds), [logoIds]);
+  const [selectionAnchor, setSelectionAnchor] = React.useState({
+    logoIdsKey,
+    lastClicked: null,
+  });
+  const lastClicked =
+    selectionAnchor.logoIdsKey === logoIdsKey
+      ? selectionAnchor.lastClicked
+      : null;
+  const setLastClicked = React.useCallback(
+    (nextLastClicked) =>
+      setSelectionAnchor({ logoIdsKey, lastClicked: nextLastClicked }),
+    [logoIdsKey],
+  );
   const selectionApiRef = React.useRef({});
-
-  const [logoIds, setLogoIds] = React.useState([]);
-
-  React.useEffect(() => {
-    if (
-      JSON.stringify(logoIds) !== JSON.stringify(logos.map((logo) => logo.id))
-    ) {
-      // Reset lastClick when logos ret reordered or modified
-      setLogoIds(logos.map((logo) => logo.id));
-      setLastClicked(null);
-    }
-  }, [logoIds, logos]);
 
   React.useEffect(() => {
     selectionApiRef.current = {
@@ -190,6 +196,7 @@ const LogoGrid = (props) => {
         if (lastClicked === null) {
           toggleLogoSelection(id);
           setLastClicked({ selected: !selected, index });
+          return;
         }
 
         const newSelectionState =
@@ -211,7 +218,13 @@ const LogoGrid = (props) => {
         }
       },
     };
-  }, [lastClicked, logoIds, setLogoSelectionRange, toggleLogoSelection]);
+  }, [
+    lastClicked,
+    logoIds,
+    setLastClicked,
+    setLogoSelectionRange,
+    toggleLogoSelection,
+  ]);
 
   return (
     <Box

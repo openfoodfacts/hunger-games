@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 200" width="100%" height="100%">
+  <!-- Background Base Container -->
+  <rect width="350" height="200" rx="16" fill="#F8F9FA" />
+
+  <!-- Main Card Surface -->
+  <rect x="12" y="10" width="326" height="180" rx="14" fill="#FFFFFF" stroke="#E5E5E5" stroke-width="1.2" />
+
+  <!-- Top Accent Bar (Open Food Facts Orange) -->
+  <path d="M 12 24 A 14 14 0 0 1 26 10 L 324 10 A 14 14 0 0 1 338 24 L 338 26 L 12 26 Z" fill="#FF8714" />
+
+  <!-- Badge Top Right -->
+  <rect x="190" y="16" width="136" height="18" rx="9" fill="#FFF4E8" />
+  <text x="258" y="29" font-family="Plus Jakarta Sans, sans-serif" font-size="8.5" font-weight="700" fill="#FF8714" text-anchor="middle" letter-spacing="0.5">POIDS &amp; QUANTITÉ</text>
+
+  <!-- Left: Official Kitchen Scale Illustration -->
+  <g transform="translate(16, 36)">
+    <svg x="0" y="8" width="144" height="134" viewBox="0 0 164 153">
+      <g clip-path="url(#scale_clip0_490_2957)">
+<path d="M98.65 13.6399H64.94V48.8599H98.65V13.6399Z" fill="#636363"/>
+<path d="M50.12 42.99H113.47C115.21 42.99 116.62 44.4 116.62 46.14V65.44H46.98V46.14C46.98 44.4 48.39 42.99 50.13 42.99H50.12Z" fill="#AAAAAA"/>
+<path d="M154.92 152.4H8.68C3.49 152.4 -0.429998 148.69 0.040002 144.26L6.33 85.61C8.3 67.19 27.34 53.01 49.55 53.01H114.06C136.27 53.01 155.31 67.19 157.28 85.61L163.57 144.26C164.04 148.69 160.12 152.4 154.93 152.4H154.92Z" fill="#FF8714"/>
+<path d="M152.54 0C155.35 0 157.46 2.22 156.99 4.65C154.47 17.5 141.69 27.28 126.3 27.28H37.29C21.9 27.28 9.12 17.5 6.6 4.65C6.13 2.23 8.24 0 11.05 0L152.54 0Z" fill="#AAAAAA"/>
+<path d="M81.8 138.51C99.8763 138.51 114.53 123.856 114.53 105.78C114.53 87.7038 99.8763 73.05 81.8 73.05C63.7237 73.05 49.07 87.7038 49.07 105.78C49.07 123.856 63.7237 138.51 81.8 138.51Z" fill="#AAAAAA"/>
+<path d="M81.8 134.07C97.4241 134.07 110.09 121.404 110.09 105.78C110.09 90.1559 97.4241 77.49 81.8 77.49C66.1759 77.49 53.51 90.1559 53.51 105.78C53.51 121.404 66.1759 134.07 81.8 134.07Z" fill="white"/>
+<path d="M70.641 88.9589C71.4578 88.4174 72.5667 88.6422 73.1081 89.459L81.1583 101.603L78.1911 103.57L70.1409 91.426C69.5994 90.6092 69.8242 89.5004 70.641 88.9589Z" fill="#F03214"/>
+<path d="M81.8 111.37C84.8873 111.37 87.39 108.867 87.39 105.78C87.39 102.693 84.8873 100.19 81.8 100.19C78.7127 100.19 76.21 102.693 76.21 105.78C76.21 108.867 78.7127 111.37 81.8 111.37Z" fill="#AAAAAA"/>
+<path d="M81.8 108.28C83.1807 108.28 84.3 107.161 84.3 105.78C84.3 104.399 83.1807 103.28 81.8 103.28C80.4193 103.28 79.3 104.399 79.3 105.78C79.3 107.161 80.4193 108.28 81.8 108.28Z" fill="white"/>
+<path d="M83.41 80.89C83.41 80.0009 82.6892 79.28 81.8 79.28C80.9108 79.28 80.19 80.0009 80.19 80.89V85.6C80.19 86.4892 80.9108 87.21 81.8 87.21C82.6892 87.21 83.41 86.4892 83.41 85.6V80.89Z" fill="#636363"/>
+<path d="M83.41 125.95C83.41 125.061 82.6892 124.34 81.8 124.34C80.9108 124.34 80.19 125.061 80.19 125.95V130.66C80.19 131.549 80.9108 132.27 81.8 132.27C82.6892 132.27 83.41 131.549 83.41 130.66V125.95Z" fill="#636363"/>
+<path d="M56.92 104.17C56.0308 104.17 55.31 104.891 55.31 105.78C55.31 106.669 56.0308 107.39 56.92 107.39H61.63C62.5192 107.39 63.24 106.669 63.24 105.78C63.24 104.891 62.5192 104.17 61.63 104.17H56.92Z" fill="#636363"/>
+<path d="M101.97 104.17C101.081 104.17 100.36 104.891 100.36 105.78C100.36 106.669 101.081 107.39 101.97 107.39H106.68C107.569 107.39 108.29 106.669 108.29 105.78C108.29 104.891 107.569 104.17 106.68 104.17H101.97Z" fill="#636363"/>
+</g>
+<defs>
+<clipPath id="scale_clip0_490_2957">
+<rect width="163.6" height="152.4" fill="white"/>
+</clipPath>
+</defs>
+    </svg>
+
+    <!-- Product Pack on the Scale -->
+    <g transform="translate(42, 0)">
+      <rect width="60" height="42" rx="6" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="1.5" />
+      <rect x="6" y="6" width="48" height="12" rx="3" fill="#FF8714" />
+      <text x="30" y="15" font-family="Plus Jakarta Sans, sans-serif" font-size="7" font-weight="700" fill="#FFFFFF" text-anchor="middle">FARINE BIO</text>
+      <!-- Estimated Sign ℮ -->
+      <text x="30" y="32" font-family="Plus Jakarta Sans, sans-serif" font-size="11" font-weight="800" fill="#111827" text-anchor="middle">℮ 500 g</text>
+    </g>
+  </g>
+
+  <!-- Right: Weight Question Validation Options -->
+  <g transform="translate(170, 42)">
+    <rect width="156" height="134" rx="10" fill="#F9FAFB" stroke="#E5E7EB" stroke-width="1.2" />
+
+    <text x="14" y="18" font-family="Plus Jakarta Sans, sans-serif" font-size="10" font-weight="700" fill="#111827">Poids net indiqué :</text>
+
+    <!-- Option 1: 250 g -->
+    <g transform="translate(12, 28)">
+      <rect width="132" height="24" rx="6" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="1" />
+      <text x="66" y="16" font-family="Plus Jakarta Sans, sans-serif" font-size="9" font-weight="600" fill="#4B5563" text-anchor="middle">250 g</text>
+    </g>
+
+    <!-- Option 2: 500 g (Selected) -->
+    <g transform="translate(12, 58)">
+      <rect width="132" height="28" rx="6" fill="#00A05A" stroke="#00A05A" stroke-width="1" />
+      <path d="M 28 14 L 34 20 L 44 9" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      <text x="76" y="18" font-family="Plus Jakarta Sans, sans-serif" font-size="10" font-weight="700" fill="#FFFFFF" text-anchor="middle">℮ 500 g</text>
+    </g>
+
+    <!-- Option 3: 1 kg -->
+    <g transform="translate(12, 92)">
+      <rect width="132" height="24" rx="6" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="1" />
+      <text x="66" y="16" font-family="Plus Jakarta Sans, sans-serif" font-size="9" font-weight="600" fill="#4B5563" text-anchor="middle">1 kg (1000 g)</text>
+    </g>
+
+    <text x="78" y="127" font-family="Plus Jakarta Sans, sans-serif" font-size="7.5" font-weight="500" fill="#9CA3AF" text-anchor="middle">Confirmez avec le symbole ℮</text>
+  </g>
+</svg>

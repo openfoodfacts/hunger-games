@@ -1,5 +1,5 @@
 import axios from "axios";
-import * as React from "react";
+import { useQuery } from "@tanstack/react-query";
 
 interface Nutri {
   id?: string;
@@ -28,31 +28,16 @@ function parseNutrients(data: undefined | Nutri[]): Record<string, string> {
 }
 
 export default function useNutrimentTranslations(lc: string) {
-  const [translations, setTranslations] = React.useState<
-    Record<string, Record<string, string>>
-  >({});
+  const query = useQuery({
+    queryKey: ["nutriment-translations", lc],
+    queryFn: async () => {
+      const { data } = await axios.get<{ nutrients?: Nutri[] }>(
+        `https://world.openfoodfacts.org/cgi/nutrients.pl?lc=${lc}`,
+      );
+      return parseNutrients(data.nutrients);
+    },
+    enabled: Boolean(lc && lc !== "en"),
+  });
 
-  React.useEffect(() => {
-    const language = lc;
-    if (
-      !language ||
-      language === "en" ||
-      translations[language] !== undefined
-    ) {
-      return;
-    }
-
-    setTranslations((p) => ({ ...p, [language]: {} }));
-
-    axios
-      .get(`https://world.openfoodfacts.org/cgi/nutrients.pl?lc=${language}`)
-      .then(({ data }) => {
-        setTranslations((p) => ({
-          ...p,
-          [language]: parseNutrients(data.nutrients),
-        }));
-      });
-  }, [lc]);
-
-  return translations;
+  return lc && lc !== "en" ? { [lc]: query.data ?? {} } : {};
 }

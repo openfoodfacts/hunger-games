@@ -1,5 +1,6 @@
 import * as React from "react";
 import { Link } from "react-router";
+import { useTranslation } from "react-i18next";
 
 import Typography from "@mui/material/Typography";
 import Card from "@mui/material/Card";
@@ -20,7 +21,19 @@ import { getLang } from "../localeStorageManager";
 
 const pageSize = 25;
 
-const OpportunityCard = (props) => {
+interface OpportunitiesProps {
+  type: "label" | "brand" | "category";
+  campaign: string;
+  countryCode: string;
+}
+
+interface OpportunityCardProps extends OpportunitiesProps {
+  value: string;
+  name: string;
+  questionNumber: number;
+}
+
+const OpportunityCard = (props: OpportunityCardProps) => {
   const { type, value, name, campaign, countryCode, questionNumber } = props;
 
   const targetUrl = `/questions?${getQuestionSearchParams({
@@ -34,17 +47,39 @@ const OpportunityCard = (props) => {
   return (
     <React.Suspense fallback={<Loader />}>
       <Card
-        sx={{
-          minWidth: 250,
-        }}
         variant="outlined"
+        sx={(theme) => ({
+          minWidth: 0,
+          height: "100%",
+          borderRadius: 3,
+          boxShadow: "none",
+          transition: theme.transitions.create(["transform", "box-shadow"]),
+          "&:hover": {
+            transform: "translateY(-2px)",
+            boxShadow: theme.shadows[2],
+          },
+        })}
       >
-        <CardActionArea component={Link} to={targetUrl} sx={{ height: "100%" }}>
-          <CardContent>
-            <Typography variant="h6">{name}</Typography>
-            <Typography sx={{ textAlign: "end", mt: 3, fontSize: "1.5rem" }}>
-              {questionNumber.toLocaleString()}
+        <CardActionArea
+          component={Link as React.ElementType}
+          to={targetUrl}
+          sx={{ height: "100%" }}
+        >
+          <CardContent sx={{ p: { xs: 2, sm: 2.5 } }}>
+            <Typography variant="h6" sx={{ fontWeight: 700, lineHeight: 1.25 }}>
+              {name}
             </Typography>
+            <Stack
+              direction="row"
+              sx={{ alignItems: "baseline", justifyContent: "flex-end", mt: 3 }}
+            >
+              <Typography
+                color="primary"
+                sx={{ fontSize: "1.75rem", fontWeight: 800, lineHeight: 1 }}
+              >
+                {questionNumber.toLocaleString()}
+              </Typography>
+            </Stack>
           </CardContent>
         </CardActionArea>
       </Card>
@@ -55,14 +90,13 @@ const OpportunityCard = (props) => {
 const CardSkeleton = () => (
   <React.Suspense fallback={<Loader />}>
     <Card
-      sx={{
-        minWidth: 250,
-      }}
+      variant="outlined"
+      sx={{ minWidth: 0, borderRadius: 3, boxShadow: "none" }}
     >
-      <CardContent>
-        <Skeleton variant="rectangular" width={200} height={40} />
+      <CardContent sx={{ p: { xs: 2, sm: 2.5 } }}>
+        <Skeleton variant="rounded" width="80%" height={28} />
         <Skeleton
-          variant="rectangular"
+          variant="rounded"
           width={100}
           height={50}
           sx={{ mt: 3, ml: "auto", fontSize: "1.5rem" }}
@@ -72,109 +106,87 @@ const CardSkeleton = () => (
   </React.Suspense>
 );
 
-const useTranslation = (toTranslate) => {
-  const [translation, setTranslation] = React.useState({});
+type Opportunity = [string, number];
+type CategoryTranslations = Record<
+  string,
+  { name?: Record<string, string | undefined> }
+>;
 
-  React.useEffect(() => {
-    const remaining = toTranslate.filter((key) => !translation[key]);
-
-    if (remaining.length > 0) {
-      const chunkSize = 100;
-      for (let i = 0; i < remaining.length; i += chunkSize) {
-        const chunk = remaining.slice(i, i + chunkSize);
-        off
-          .getCategoriesTranslations({ categories: chunk })
-          .then(({ data }) => {
-            setTranslation((prev) => ({
-              ...prev,
-              ...data,
-            }));
-          })
-          .catch(() => {});
-      }
-    }
-  }, [toTranslate]);
-
-  return translation;
-};
-
-const Opportunities = (props) => {
-  const { type, campaign, countryCode } = props;
-  const [remainingQuestions, setRemainingQuestions] = React.useState([]);
-  const [isLoading, setIsLoading] = React.useState(true);
-  const [searchQuery, setSearchQuery] = React.useState("");
-  const [sortBy, setSortBy] = React.useState("count");
-
-  React.useEffect(() => {
-    setRemainingQuestions([]);
-  }, [type, campaign, countryCode]);
-
-  React.useEffect(() => {
-    let isValid = true;
-    setIsLoading(true);
-
-    robotoff
-      .getUnansweredValues({
-        type,
-        campaign,
-        countryCode,
-        count: 10000,
-      })
-      .then(({ data }) => {
-        if (isValid) {
-          setRemainingQuestions(data?.questions ?? []);
-          setIsLoading(false);
-        }
-      })
-      .catch(() => {
-        setIsLoading(false);
-      });
-
-    return () => {
-      isValid = false;
-    };
-  }, [type, campaign, countryCode]);
-
-  const translation = useTranslation(
-    remainingQuestions.map(([value]) => value),
+const useCategoryTranslations = (pages: Opportunity[][]) => {
+  const lang = getLang() ?? "en";
+  const seen = new Set<string>();
+  const categoryPages = pages.map((page) =>
+    page.flatMap(([category]) => {
+      if (seen.has(category)) return [];
+      seen.add(category);
+      return category;
+    }),
   );
 
-  const lang = getLang();
+  return useQueries({
+    queries: categoryPages.map((categories) => ({
+      queryKey: ["category-translations", lang, categories],
+      queryFn: async () => {
+        const response = await off.getCategoriesTranslations({ categories });
+        return response.data;
+      },
+      enabled: categories.length > 0,
+    })),
+    combine: (results) =>
+      results.reduce<CategoryTranslations>(
+        (translations, result) => ({
+          ...translations,
+          ...(result.data ?? {}),
+        }),
+        {},
+      ),
+  });
+};
 
-  const displayItems = React.useMemo(() => {
-    let items = remainingQuestions.map(([value, questionNumber]) => {
-      const name =
-        translation[value]?.name?.[lang] ??
-        translation[value]?.name?.en ??
-        value;
-      return { value, questionNumber, name };
+const Opportunities = (props: OpportunitiesProps) => {
+  const { type, campaign, countryCode } = props;
+  const { t } = useTranslation();
+  const { data, isLoading, isFetchingNextPage, fetchNextPage, hasNextPage } =
+    useInfiniteQuery({
+      queryKey: ["opportunities", type, campaign, countryCode],
+      initialPageParam: 1,
+      queryFn: async ({ pageParam }) => {
+        const response = await robotoff.getUnansweredValues({
+          type,
+          campaign,
+          countryCode,
+          page: pageParam,
+          count: pageSize,
+        });
+        return response.data.questions ?? [];
+      },
+      getNextPageParam: (lastPage, pages) =>
+        lastPage.length < pageSize ? undefined : pages.length + 1,
     });
+  const remainingQuestions = React.useMemo(
+    () =>
+      [...(data?.pages.flat() ?? [])].sort(
+        ([, firstQuestionNumber], [, secondQuestionNumber]) =>
+          secondQuestionNumber - firstQuestionNumber,
+      ),
+    [data?.pages],
+  );
+  const translation = useCategoryTranslations(data?.pages ?? []);
 
-    if (searchQuery) {
-      const lowerQuery = searchQuery.toLowerCase();
-      items = items.filter((item) =>
-        item.name.toLowerCase().includes(lowerQuery),
-      );
-    }
-
-    if (sortBy === "alphabetically") {
-      items.sort((a, b) => a.name.localeCompare(b.name));
-    } else {
-      items.sort((a, b) => b.questionNumber - a.questionNumber);
-    }
-
-    return items;
-  }, [remainingQuestions, translation, lang, searchQuery, sortBy]);
-
+  const lang = getLang() ?? "en";
   return (
     <React.Suspense fallback={<Loader />}>
-      <Box sx={{ mt: 2, px: 2 }}>
-        <Stack
-          direction={{ xs: "column", sm: "row" }}
-          alignItems={{ xs: "flex-start", sm: "center" }}
-          justifyContent="space-between"
-          spacing={2}
-          sx={{ mb: 2 }}
+      <Box>
+        <Box
+          sx={{
+            display: "grid",
+            gridTemplateColumns: {
+              xs: "1fr",
+              sm: "repeat(2, minmax(0, 1fr))",
+              md: "repeat(3, minmax(0, 1fr))",
+            },
+            gap: { xs: 1.5, sm: 2 },
+          }}
         >
           <Typography variant="h6" component="h3" sx={{ textTransform: "capitalize" }}>
             {type}
@@ -234,9 +246,22 @@ const Opportunities = (props) => {
                 countryCode={countryCode}
                 questionNumber={item.questionNumber}
               />
-            ))}
-          </Box>
-        )}
+            );
+          })}
+          {(isLoading || isFetchingNextPage) &&
+            [
+              0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18,
+              19, 20, 21, 22, 23, 24,
+            ].map((id) => <CardSkeleton key={id} />)}
+          <Button
+            disabled={isLoading || isFetchingNextPage || !hasNextPage}
+            variant="contained"
+            sx={{ gridColumn: "1 / -1", justifySelf: "center", px: 4 }}
+            onClick={() => void fetchNextPage()}
+          >
+            {t("logos.load_more")}
+          </Button>
+        </Box>
       </Box>
     </React.Suspense>
   );
