@@ -7,7 +7,9 @@ import CardActionArea from "@mui/material/CardActionArea";
 import CardContent from "@mui/material/CardContent";
 import Box from "@mui/material/Box";
 import Skeleton from "@mui/material/Skeleton";
-import Button from "@mui/material/Button";
+import TextField from "@mui/material/TextField";
+import MenuItem from "@mui/material/MenuItem";
+import Stack from "@mui/material/Stack";
 
 import Loader from "../pages/loader";
 
@@ -77,15 +79,19 @@ const useTranslation = (toTranslate) => {
     const remaining = toTranslate.filter((key) => !translation[key]);
 
     if (remaining.length > 0) {
-      off
-        .getCategoriesTranslations({ categories: remaining })
-        .then(({ data }) => {
-          setTranslation((prev) => ({
-            ...prev,
-            ...data,
-          }));
-        })
-        .catch(() => {});
+      const chunkSize = 100;
+      for (let i = 0; i < remaining.length; i += chunkSize) {
+        const chunk = remaining.slice(i, i + chunkSize);
+        off
+          .getCategoriesTranslations({ categories: chunk })
+          .then(({ data }) => {
+            setTranslation((prev) => ({
+              ...prev,
+              ...data,
+            }));
+          })
+          .catch(() => {});
+      }
     }
   }, [toTranslate]);
 
@@ -96,7 +102,8 @@ const Opportunities = (props) => {
   const { type, campaign, countryCode } = props;
   const [remainingQuestions, setRemainingQuestions] = React.useState([]);
   const [isLoading, setIsLoading] = React.useState(true);
-  const [page, setPage] = React.useState(1);
+  const [searchQuery, setSearchQuery] = React.useState("");
+  const [sortBy, setSortBy] = React.useState("count");
 
   React.useEffect(() => {
     setRemainingQuestions([]);
@@ -111,15 +118,11 @@ const Opportunities = (props) => {
         type,
         campaign,
         countryCode,
-        page,
-        count: pageSize,
+        count: 10000,
       })
       .then(({ data }) => {
         if (isValid) {
-          setRemainingQuestions((prev) => [
-            ...prev,
-            ...(data?.questions ?? []),
-          ]);
+          setRemainingQuestions(data?.questions ?? []);
           setIsLoading(false);
         }
       })
@@ -130,57 +133,110 @@ const Opportunities = (props) => {
     return () => {
       isValid = false;
     };
-  }, [type, campaign, countryCode, page]);
+  }, [type, campaign, countryCode]);
 
   const translation = useTranslation(
     remainingQuestions.map(([value]) => value),
   );
 
   const lang = getLang();
+
+  const displayItems = React.useMemo(() => {
+    let items = remainingQuestions.map(([value, questionNumber]) => {
+      const name =
+        translation[value]?.name?.[lang] ??
+        translation[value]?.name?.en ??
+        value;
+      return { value, questionNumber, name };
+    });
+
+    if (searchQuery) {
+      const lowerQuery = searchQuery.toLowerCase();
+      items = items.filter((item) =>
+        item.name.toLowerCase().includes(lowerQuery),
+      );
+    }
+
+    if (sortBy === "alphabetically") {
+      items.sort((a, b) => a.name.localeCompare(b.name));
+    } else {
+      items.sort((a, b) => b.questionNumber - a.questionNumber);
+    }
+
+    return items;
+  }, [remainingQuestions, translation, lang, searchQuery, sortBy]);
+
   return (
     <React.Suspense fallback={<Loader />}>
       <Box sx={{ mt: 2, px: 2 }}>
-        <Typography variant="h6" component="h3">
-          {type}
-        </Typography>
-        <Box
-          sx={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fill, minmax(200px, 1fr))",
-            gridGap: "10px 50px",
-          }}
+        <Stack
+          direction={{ xs: "column", sm: "row" }}
+          alignItems={{ xs: "flex-start", sm: "center" }}
+          justifyContent="space-between"
+          spacing={2}
+          sx={{ mb: 2 }}
         >
-          {remainingQuestions.map(([value, questionNumber]) => {
-            const name =
-              translation[value]?.name?.[lang] ??
-              translation[value]?.name?.en ??
-              value;
-            return (
+          <Typography variant="h6" component="h3" sx={{ textTransform: "capitalize" }}>
+            {type}
+          </Typography>
+          <Stack
+            direction="row"
+            spacing={2}
+            sx={{ width: { xs: "100%", sm: "auto" } }}
+          >
+            <TextField
+              size="small"
+              placeholder="Search..."
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              sx={{ minWidth: 200, flexGrow: 1 }}
+            />
+            <TextField
+              select
+              size="small"
+              value={sortBy}
+              onChange={(e) => setSortBy(e.target.value)}
+              sx={{ minWidth: 150 }}
+            >
+              <MenuItem value="count">By count</MenuItem>
+              <MenuItem value="alphabetically">Alphabetically</MenuItem>
+            </TextField>
+          </Stack>
+        </Stack>
+
+        {isLoading ? (
+          <Box
+            sx={{
+              display: "grid",
+              gridTemplateColumns: "repeat(auto-fill, minmax(200px, 1fr))",
+              gridGap: "10px 50px",
+            }}
+          >
+            {[...Array(20)].map((_, id) => (
+              <CardSkeleton key={id} />
+            ))}
+          </Box>
+        ) : (
+          <Box
+            sx={{
+              display: "grid",
+              gridTemplateColumns: "repeat(auto-fill, minmax(200px, 1fr))",
+              gridGap: "10px 50px",
+            }}
+          >
+            {displayItems.map((item) => (
               <OpportunityCard
-                key={value}
-                value={value}
-                name={name}
+                key={item.value}
+                value={item.value}
+                name={item.name}
                 type={type}
                 campaign={campaign}
                 countryCode={countryCode}
-                questionNumber={questionNumber}
+                questionNumber={item.questionNumber}
               />
-            );
-          })}
-          {isLoading &&
-            [
-              0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18,
-              19, 20, 21, 22, 23, 24,
-            ].map((id) => <CardSkeleton key={id} />)}
-          <Button
-            disabled={isLoading}
-            variant="contained"
-            fullWidth
-            onClick={() => setPage((p) => p + 1)}
-          >
-            Load more
-          </Button>
-        </Box>
+            ))}
+          </Box>
+        )}
       </Box>
     </React.Suspense>
   );
