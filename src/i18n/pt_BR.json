@@ -34,7 +34,7 @@
     "saved_filters_delete_description": "Este filtro salvo será removido deste dispositivo.",
     "saved_filters_delete_confirm": "Eliminar",
     "saved_filters_pending": "{{count}} produtos aguardando",
-    "saved_filters_pending_unknown": "Products waiting",
+    "saved_filters_pending_unknown": "Produtos aguardando",
     "contribution_modal": {
       "title": "Sua contribuição é importante",
       "information": "Jogos Vorazes é uma iniciativa para aprimorar os resultados da nossa OCR e inteligência artificial. Ao usar o Jogos Vorazes do Open Food Facts, você melhora todo o nosso banco de dados, o que ajuda a comunidade a fazer melhores escolhas alimentares. Nós reunimos suas anotações e as utilizamos para tornar o Open Food Facts mais preciso e eficaz.",
@@ -45,8 +45,8 @@
       "title_without_name": "Suas estatísticas",
       "empty_state": {
         "title": "Ainda não há contribuições",
-        "description": "Your contribution statistics will appear here once you start helping improve Open Food Facts.",
-        "action": "Start contributing"
+        "description": "Suas estatísticas de contribuição vão aparecer aqui quando você começar a ajudar a melhorar o Open Food Facts.",
+        "action": "Comece a contribuir"
       },
       "editorCount": {
         "title": "Editor",
@@ -131,7 +131,7 @@
       },
       "placeholders": {
         "value": "Valor (Fanta, pt:orgânico,...)",
-        "country": "France, Germany, Japan, ...",
+        "country": "França, Alemanha, Japão, ...",
         "brand": "Auchan, Danone, Herta, ...",
         "campaign": "Campanha de anotações",
         "predictor": "detector-de-logotipo-universal, regex, ..."
@@ -221,8 +221,8 @@
   },
   "logos": {
     "dashboard": {
-      "title": "Logo dashboard",
-      "description": "Explore logo categories and help improve product data.",
+      "title": "Painel de Logotipos",
+      "description": "Explore as categorias de logotipos e ajude a melhorar os dados dos produtos.",
       "category": "Categoria",
       "categories": "Categorias",
       "logo_count_one": "{{count}} logo",
