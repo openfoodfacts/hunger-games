@@ -2,7 +2,7 @@
   "home": {
     "game_selector": {
       "title": "Hangi oyunu oynamak istersin?",
-      "external_link": "External link",
+      "external_link": "Harici bağlantı",
       "cards": {
         "questions": {
           "title": "Sorular",
@@ -42,7 +42,7 @@
     },
     "statistics": {
       "title": "{{userName}} istatistikler:",
-      "title_without_name": "Your statistics",
+      "title_without_name": "İstatistikleriniz",
       "empty_state": {
         "title": "No contributions yet",
         "description": "Your contribution statistics will appear here once you start helping improve Open Food Facts.",
@@ -226,7 +226,7 @@
       "category": "Kategori",
       "categories": "Kategoriler",
       "logo_count_one": "{{count}} logo",
-      "logo_count_other": "{{count}} logos",
+      "logo_count_other": "{{count}} logolar",
       "more_info": "More info",
       "questions": "Sorular",
       "search": "Ara"
