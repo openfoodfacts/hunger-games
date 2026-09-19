@@ -2,7 +2,7 @@
   "home": {
     "game_selector": {
       "title": "Jakou hru byste si chtěli zahrát?",
-      "external_link": "External link",
+      "external_link": "Externí odkaz",
       "cards": {
         "questions": {
           "title": "Otázky",
@@ -18,7 +18,7 @@
         },
         "create_products": {
           "title": "Vytvořit chybějící produkty",
-          "description": "Add products that are not in the database yet, over on Open Prices"
+          "description": "Přidejte produkty, které ještě nejsou v databázi, na stránce Open Prices"
         }
       }
     },
@@ -29,12 +29,12 @@
       "contribution_details": "Přečtěte si, proč je váš příspěvek důležitý"
     },
     "saved_filters": "Uložené filtry",
-    "saved_filters_delete": "Delete saved filter",
-    "saved_filters_delete_title": "Delete saved filter?",
-    "saved_filters_delete_description": "This saved filter will be removed from this device.",
+    "saved_filters_delete": "Smazat uložený filtr",
+    "saved_filters_delete_title": "Smazat uložený filtr?",
+    "saved_filters_delete_description": "Tento uložený filtr bude odstraněn z tohoto zařízení.",
     "saved_filters_delete_confirm": "Odstranit",
     "saved_filters_pending": "{{count}} products waiting",
-    "saved_filters_pending_unknown": "Products waiting",
+    "saved_filters_pending_unknown": "Čekající produkty",
     "contribution_modal": {
       "title": "Na vašem příspěvku záleží",
       "information": "Hunger Games je snaha využít výsledky našeho OCR a umělé inteligence. Když používáte Hunger Games od Open Food Facts, vylepšujete celou naši databázi, což pomáhá komunitě lépe vybírat jídlo. Shromažďujeme vaše anotace a používáme je k tomu, aby byly Open Food Facts přesnější a efektivnější.",
@@ -42,11 +42,11 @@
     },
     "statistics": {
       "title": "{{userName}} statistiky:",
-      "title_without_name": "Your statistics",
+      "title_without_name": "Vaše statistiky",
       "empty_state": {
-        "title": "No contributions yet",
-        "description": "Your contribution statistics will appear here once you start helping improve Open Food Facts.",
-        "action": "Start contributing"
+        "title": "Zatím žádné příspěvky",
+        "description": "Statistiky vašich příspěvků se zobrazí zde, jakmile začnete zlepšovat Open Food Facts.",
+        "action": "Začněte přispívat"
       },
       "editorCount": {
         "title": "Editor",
@@ -222,12 +222,12 @@
   "logos": {
     "dashboard": {
       "title": "Logo dashboard",
-      "description": "Explore logo categories and help improve product data.",
+      "description": "Prozkoumejte kategorie log a pomozte vylepšit produktová data.",
       "category": "Kategorie",
       "categories": "Kategorie",
       "logo_count_one": "{{count}} logo",
       "logo_count_other": "{{count}} logos",
-      "more_info": "More info",
+      "more_info": "Další informace",
       "questions": "Otázky",
       "search": "Vyhledat"
     },
