@@ -2,7 +2,7 @@
   "home": {
     "game_selector": {
       "title": "У яку гру ви хотіли б зіграти?",
-      "external_link": "External link",
+      "external_link": "Зовнішнє посилання",
       "cards": {
         "questions": {
           "title": "Запитання",
@@ -17,8 +17,8 @@
           "description": "Додайте коментарі до питань з найвищим значенням"
         },
         "create_products": {
-          "title": "Create missing products",
-          "description": "Add products that are not in the database yet, over on Open Prices"
+          "title": "Створити відсутні товари",
+          "description": "Додайте товари, яких ще немає в базі даних, на сторінці Open Prices"
         }
       }
     },
@@ -29,12 +29,12 @@
       "contribution_details": "Дізнайтеся, чому ваш внесок важливий"
     },
     "saved_filters": "Збережені фільтри",
-    "saved_filters_delete": "Delete saved filter",
-    "saved_filters_delete_title": "Delete saved filter?",
-    "saved_filters_delete_description": "This saved filter will be removed from this device.",
+    "saved_filters_delete": "Видалити збережений фільтр",
+    "saved_filters_delete_title": "Видалити збережений фільтр?",
+    "saved_filters_delete_description": "Цей збережений фільтр буде видалено з цього пристрою.",
     "saved_filters_delete_confirm": "Видалити",
-    "saved_filters_pending": "{{count}} products waiting",
-    "saved_filters_pending_unknown": "Products waiting",
+    "saved_filters_pending": "{{count}} товарів очікує",
+    "saved_filters_pending_unknown": "Товари, що чекають",
     "contribution_modal": {
       "title": "Ваш внесок має значення",
       "information": "Голодні ігри - це спроба використати результати нашого розпізнавання тексту та штучного інтелекту. Коли ви використовуєте \"Голодні ігри\" від Open Food Facts, ви покращуєте всю нашу базу даних, яка допомагає спільноті робити кращий вибір продуктів харчування. Ми збираємо ваші анотації і використовуємо їх, щоб зробити Open Food Facts більш точними та ефективними.",
@@ -42,11 +42,11 @@
     },
     "statistics": {
       "title": "{{userName}} статистика:",
-      "title_without_name": "Your statistics",
+      "title_without_name": "Ваша статистика",
       "empty_state": {
-        "title": "No contributions yet",
-        "description": "Your contribution statistics will appear here once you start helping improve Open Food Facts.",
-        "action": "Start contributing"
+        "title": "Ще нема внесків",
+        "description": "Ваша статистика внесків з'явиться тут, щойно ви почнете допомагати покращувати Open Food Facts.",
+        "action": "Зробити внесок"
       },
       "editorCount": {
         "title": "Редактор",
@@ -67,8 +67,8 @@
     "loading": "Завантаження"
   },
   "image_viewer": {
-    "compressed": "Compressed",
-    "load_original": "Load original"
+    "compressed": "Стиснуто",
+    "load_original": "Завантажити оригінал"
   },
   "questions": {
     "category": "категорія",
@@ -88,10 +88,10 @@
     "skip": "Пропустити",
     "yes": "Так",
     "no_questions_remaining": "Не залишилось питань",
-    "similar_questions": "Similar questions",
-    "no_similar_questions": "No similar questions",
-    "remaining_questions_count_one": "1 question remaining",
-    "remaining_questions_count_other": "{{count}} questions remaining",
+    "similar_questions": "Схожі запитання",
+    "no_similar_questions": "Немає схожих запитань",
+    "remaining_questions_count_one": "Залишилося 1 питання",
+    "remaining_questions_count_other": "{{count}} запитань залишилося",
     "an_error_occurred": "Сталася помилка. Будь ласка, перезавантажте, спробуйте пізніше або зв’яжіться з командою.",
     "countries": "Країн",
     "view": "Переглянути",
@@ -104,8 +104,8 @@
     "last_annotations": "Останні анотації\n",
     "remaining_annotations": "Запитання, що залишилися",
     "annotated_annotations": "Коментарі",
-    "no_images": "No images available",
-    "no_additional_info": "No additional information",
+    "no_images": "Немає доступних зображень",
+    "no_additional_info": "Немає додаткової інформації",
     "add_missing_info": "Додати",
     "filters": {
       "active_filter_number": "+{{count}} фільтрів",
@@ -131,7 +131,7 @@
       },
       "placeholders": {
         "value": "Ціна (Fanta, en: organic,...)",
-        "country": "France, Germany, Japan, ...",
+        "country": "Франція, Німеччина, Японія, ...",
         "brand": "Auchan, Danone, Herta, ...",
         "campaign": "Анотаційні кампанії",
         "predictor": "універсальний детектор логотипів, регулярний вираз, ..."
@@ -221,13 +221,13 @@
   },
   "logos": {
     "dashboard": {
-      "title": "Logo dashboard",
-      "description": "Explore logo categories and help improve product data.",
+      "title": "Панель з логотипами",
+      "description": "Ознайомтеся з категоріями логотипів і допоможіть покращити дані про продукти.",
       "category": "Категорія",
       "categories": "Категорії",
-      "logo_count_one": "{{count}} logo",
-      "logo_count_other": "{{count}} logos",
-      "more_info": "More info",
+      "logo_count_one": "{{count}} логотип",
+      "logo_count_other": "{{count}} логотипів",
+      "more_info": "Детальніше",
       "questions": "Запитання",
       "search": "Пошук"
     },
@@ -275,8 +275,8 @@
       "title": "Пошук логотипу",
       "description": "Виберіть логотип, який хочете знайти, і давайте збирати їх усі. Для кожного логотипу, який ви анотуєте, ми будемо підбирати сусідні логотипи, щоб ви могли продовжувати анотувати без зупинки. (Натисніть Shift, щоб вибрати діапазон логотипів)",
       "ref_logos": "Еталонні логотипи (логотип уже анотований цим значенням)",
-      "annotation_count_one": "Already {{formattedCount}} annotation. You can come back to this logo in a few days if you don't find any matching logos.",
-      "annotation_count_other": "Already {{formattedCount}} annotations. You can come back to this logo in a few days if you don't find any matching logos.",
+      "annotation_count_one": "Вже є анотація {{formattedCount}}. Ви можете повернутися до цього логотипу через кілька днів, якщо не знайдете відповідних логотипів.",
+      "annotation_count_other": "Вже є анотації {{formattedCount}}. Ви можете повернутися до цього логотипу через кілька днів, якщо не знайдете відповідних логотипів.",
       "remaining": "Залишилося додати анотації",
       "select_all": "Обрати все",
       "unselect_all": "Скасувати вибір"
