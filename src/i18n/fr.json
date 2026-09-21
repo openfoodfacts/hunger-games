@@ -17,8 +17,8 @@
           "description": "Annotez les questions avec la valeur la plus élevée"
         },
         "create_products": {
-          "title": "Create missing products",
-          "description": "Add products that are not in the database yet, over on Open Prices"
+          "title": "Créer les produits manquants",
+          "description": "Ajouter les produits qui ne sont pas encore dans la base de données, sur Open Prices"
         }
       }
     },
@@ -29,12 +29,12 @@
       "contribution_details": "Découvrez pourquoi votre contribution est importante"
     },
     "saved_filters": "Filtres enregistrés",
-    "saved_filters_delete": "Delete saved filter",
-    "saved_filters_delete_title": "Delete saved filter?",
-    "saved_filters_delete_description": "This saved filter will be removed from this device.",
+    "saved_filters_delete": "Supprimer le filtre enregistré",
+    "saved_filters_delete_title": "Supprimer le filtre enregistré ?",
+    "saved_filters_delete_description": "Ce filtre enregistré sera supprimé de cet appareil.",
     "saved_filters_delete_confirm": "Supprimer",
-    "saved_filters_pending": "{{count}} products waiting",
-    "saved_filters_pending_unknown": "Products waiting",
+    "saved_filters_pending": "{{count}} produits en attente",
+    "saved_filters_pending_unknown": "Produits en attente",
     "contribution_modal": {
       "title": "Votre contribution compte",
       "information": "Le jeu Hunger Games est un effort visant à tirer parti des résultats de notre OCR et de notre intelligence artificielle. Lorsque vous utilisez Hunger Games par Open Food Facts, vous améliorez toute notre base de données ce qui aide la communauté à faire de meilleurs choix alimentaires. Nous recueillons vos annotations et les utilisons pour rendre Open Food Facts plus précis et plus efficace.",
@@ -42,11 +42,11 @@
     },
     "statistics": {
       "title": "Statistiques de {{userName}}:",
-      "title_without_name": "Your statistics",
+      "title_without_name": "Vos statistiques",
       "empty_state": {
-        "title": "No contributions yet",
-        "description": "Your contribution statistics will appear here once you start helping improve Open Food Facts.",
-        "action": "Start contributing"
+        "title": "Aucune contribution pour le moment",
+        "description": "Vos statistiques de contribution apparaîtront ici une fois que vous aurez commencé à aider à améliorer Open Food Facts.",
+        "action": "Commencer à contribuer"
       },
       "editorCount": {
         "title": "Éditeur",
@@ -131,7 +131,7 @@
       },
       "placeholders": {
         "value": "Valeur (Fanta, en:organic,...)",
-        "country": "France, Germany, Japan, ...",
+        "country": "France, Allemagne, Japon, ...",
         "brand": "Auchan, Danone, Herta...",
         "campaign": "Campagnes d'annotations",
         "predictor": "détecteur de logo universel, expression régulière, ..."
@@ -221,13 +221,13 @@
   },
   "logos": {
     "dashboard": {
-      "title": "Logo dashboard",
-      "description": "Explore logo categories and help improve product data.",
+      "title": "Tableau de bord des logos",
+      "description": "Explorez les catégories de logos et aidez à améliorer les données produits.",
       "category": "Catégorie",
       "categories": "Catégories",
       "logo_count_one": "{{count}} logo",
       "logo_count_other": "{{count}} logos",
-      "more_info": "More info",
+      "more_info": "Plus d'infos",
       "questions": "Questions",
       "search": "Rechercher"
     },
@@ -275,8 +275,8 @@
       "title": "Recherche de Logo",
       "description": "Sélectionnez un logo que vous voulez rechercher et attrapons-les tous. Pour chaque logo que vous annotez, nous récupérerons ses voisins de telle sorte que vous ne cesserez jamais d'annoter. (Appuyez sur Maj pour sélectionner la plage de logos)",
       "ref_logos": "Logos de référence (logo déjà annoté avec cette valeur)",
-      "annotation_count_one": "Already {{formattedCount}} annotation. You can come back to this logo in a few days if you don't find any matching logos.",
-      "annotation_count_other": "Already {{formattedCount}} annotations. You can come back to this logo in a few days if you don't find any matching logos.",
+      "annotation_count_one": "Déjà {{formattedCount}} annotation. Vous pourrez revenir sur ce logo dans quelques jours si vous ne trouvez aucun logo correspondant.",
+      "annotation_count_other": "Déjà {{formattedCount}} annotations. Vous pourrez revenir sur ce logo dans quelques jours si vous ne trouvez aucun logo correspondant.",
       "remaining": "Reste à annoter",
       "select_all": "Sélectionner tout",
       "unselect_all": "Désélectionner tout"
