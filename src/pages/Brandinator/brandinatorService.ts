@@ -122,30 +122,15 @@ export function getInitialOFFBrands(): BrandItem[] {
   }));
 }
 
+export { ROBOTOFF_CACHE } from "../../const";
+
 /**
- * Fetch Robotoff unanswered brand questions with aggressive local storage caching
+ * Fetch Robotoff unanswered brand questions
  */
 export async function fetchRobotoffBrandOpportunities(
   countryCode?: string,
   count = 200,
 ): Promise<Record<string, number>> {
-  const cacheKey = `brandinator_opportunities_${countryCode || "world"}`;
-  try {
-    const cached = localStorage.getItem(cacheKey);
-    if (cached) {
-      const parsed = JSON.parse(cached) as {
-        timestamp: number;
-        data: Record<string, number>;
-      };
-      // 30 minute cache validity
-      if (Date.now() - parsed.timestamp < 30 * 60 * 1000) {
-        return parsed.data;
-      }
-    }
-  } catch {
-    // ignore localStorage errors
-  }
-
   try {
     const response = await robotoff.getUnansweredValues({
       type: "brand",
@@ -160,15 +145,6 @@ export async function fetchRobotoffBrandOpportunities(
     for (const [tag, num] of questions) {
       resultMap[tag.toLowerCase()] = num;
       resultMap[normalizeBrandKey(tag)] = num;
-    }
-
-    try {
-      localStorage.setItem(
-        cacheKey,
-        JSON.stringify({ timestamp: Date.now(), data: resultMap }),
-      );
-    } catch {
-      // ignore localStorage quota error
     }
 
     return resultMap;
@@ -189,19 +165,6 @@ export async function fetchProjectBrandTaxonomy(
     { name?: Record<string, string>; wikidata?: Record<string, string> }
   >
 > {
-  const cacheKey = `brandinator_taxonomy_${project.id}`;
-  try {
-    const cached = sessionStorage.getItem(cacheKey);
-    if (cached) {
-      return JSON.parse(cached) as Record<
-        string,
-        { name?: Record<string, string>; wikidata?: Record<string, string> }
-      >;
-    }
-  } catch {
-    // ignore
-  }
-
   try {
     const res = await axios.get<
       Record<
@@ -209,11 +172,6 @@ export async function fetchProjectBrandTaxonomy(
         { name?: Record<string, string>; wikidata?: Record<string, string> }
       >
     >(`${project.staticUrl}/data/taxonomies/brands.json`, { timeout: 10000 });
-    try {
-      sessionStorage.setItem(cacheKey, JSON.stringify(res.data));
-    } catch {
-      // ignore
-    }
     return res.data;
   } catch (err) {
     console.warn(`Could not load taxonomy for ${project.id}:`, err);
@@ -228,16 +186,6 @@ export async function fetchProjectFacetsBrands(
   project: ProjectConfig,
   filter?: string,
 ): Promise<BrandItem[]> {
-  const cacheKey = `brandinator_facets_${project.id}_${filter || ""}`;
-  try {
-    const cached = sessionStorage.getItem(cacheKey);
-    if (cached) {
-      return JSON.parse(cached) as BrandItem[];
-    }
-  } catch {
-    // ignore
-  }
-
   const url = filter
     ? `${project.worldUrl}/facets/brands.json?filter=${encodeURIComponent(
         filter,
@@ -259,7 +207,7 @@ export async function fetchProjectFacetsBrands(
 
   const tags = facetsRes.data.tags || [];
 
-  const items: BrandItem[] = tags.map((t) => {
+  return tags.map((t) => {
     const cleanId = t.id.includes(":") ? t.id.split(":", 2)[1] : t.id;
     const taxEntry = taxonomy[t.id] || taxonomy[`xx:${cleanId}`];
     const taxName =
@@ -277,14 +225,4 @@ export async function fetchProjectFacetsBrands(
       imageUrl: getBrandImageUrl(displayName, cleanId),
     };
   });
-
-  try {
-    if (Object.keys(taxonomy).length > 0) {
-      sessionStorage.setItem(cacheKey, JSON.stringify(items));
-    }
-  } catch {
-    // ignore
-  }
-
-  return items;
 }

@@ -54,6 +54,7 @@ import {
   normalizeBrandKey,
   GITHUB_BRAND_IMAGES_UPLOAD_URL,
   TAXONOMY_EDITOR_START_URL,
+  ROBOTOFF_CACHE,
 } from "./brandinatorService";
 
 const PAGE_SIZE = 36;
@@ -92,7 +93,7 @@ export default function BrandinatorPage() {
     queryKey: ["brandinator-opportunities", country],
     queryFn: () => fetchRobotoffBrandOpportunities(country, 300),
     enabled: activeProject.hasRobotoff,
-    staleTime: 1000 * 60 * 30, // 30 minutes
+    staleTime: ROBOTOFF_CACHE,
   });
 
   // Query sister projects facets brands when not Open Food Facts
@@ -100,7 +101,7 @@ export default function BrandinatorPage() {
     queryKey: ["brandinator-sister-brands", projectId],
     queryFn: () => fetchProjectFacetsBrands(activeProject),
     enabled: projectId !== "openfoodfacts",
-    staleTime: 1000 * 60 * 30,
+    staleTime: ROBOTOFF_CACHE,
   });
 
   // Base brand list
