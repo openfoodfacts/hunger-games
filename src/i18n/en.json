@@ -23,6 +23,10 @@
           "title": "Green-score",
           "description": "Annotate the questions with the highest value"
         },
+        "brandinator": {
+          "title": "Brandinator",
+          "description": "Taxonomize brands, validate brand logos, and answer brand annotation questions"
+        },
         "ingredient_spellcheck": {
           "title": "Ingredients spellcheck",
           "description": "Fix spelling mistakes and typos in extracted ingredient lists"
@@ -220,6 +224,8 @@
     "title": "Hunger Games",
     "games": "Games",
     "questions": "Questions",
+    "green-score": "Green score",
+    "brandinator": "Brandinator",
     "logos": "Logos",
     "logos-annotation": "Annotate logos",
     "logos-search": "Search logos",
@@ -231,7 +237,6 @@
     "ingredient-spellcheck": "Check ingredient spelling",
     "ingredient-detection": "Detect ingredients",
     "settings": "Settings",
-    "green-score": "Green score",
     "dashboard": "Logo dashboard",
     "tour": "Take a tour",
     "open_navigation": "Open navigation menu",
@@ -281,7 +286,11 @@
       "logo_count_other": "{{count}} logos",
       "more_info": "More info",
       "questions": "Questions",
-      "search": "Search"
+      "search": "Search",
+      "brandinator_promo_badge": "Dedicated Game & Hub",
+      "brandinator_promo_title": "Looking for more brands? Discover Brandinator!",
+      "brandinator_promo_desc": "Explore 10,000+ brands across Open Food Facts projects. Validate brand logos, answer annotation questions, upload missing logos to GitHub, and link brands to the Taxonomy Editor!",
+      "brandinator_promo_cta": "Open Brandinator"
     },
     "annotation": "Annotation: ",
     "annotations": "Logo annotations",
