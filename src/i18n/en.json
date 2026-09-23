@@ -35,6 +35,10 @@
           "title": "Nutrition game",
           "description": "Extract and validate nutritional values from packaging tables"
         },
+        "reverso": {
+          "title": "Reverso",
+          "description": "Fix products where energy values in kcal and kJ are reversed"
+        },
         "prices_validation": {
           "title": "Price Validation",
           "description": "Verify prices and receipts contributed to Open Prices"
@@ -228,6 +232,7 @@
     "manage": "Manage",
     "insights": "Insights",
     "nutritions": "Nutrition",
+    "reverso": "Reverso",
     "ingredient-spellcheck": "Check ingredient spelling",
     "ingredient-detection": "Detect ingredients",
     "settings": "Settings",
@@ -513,5 +518,38 @@
       "title": "Android APK",
       "subtitle": "Download"
     }
+  },
+  "reverso": {
+    "title": "Reverso",
+    "subtitle": "Fix products where energy values in kcal and kJ are reversed (1 kcal ≈ 4.184 kJ).",
+    "fixed_session": "fixed this session",
+    "total_in_facet": "total in facet",
+    "view_facet": "Facet",
+    "barcode_placeholder": "Filter by barcode...",
+    "clear_filter": "Clear filter",
+    "login_notice": "You can inspect products. To save your fixes directly to Open Food Facts, please log in.",
+    "empty_title": "Well done! No products to fix.",
+    "empty_desc": "All products in this selection have been reviewed or there are no more kcal/kJ inversion errors.",
+    "refresh_all": "Reset and reload",
+    "packaging_photo": "Product photo",
+    "zoom_hint": "Zoom in on the nutritional table to verify the values",
+    "no_photos": "No photo available for this product.",
+    "photo": "Photo",
+    "image_nutrition": "Nutritional table",
+    "image_front": "Front photo",
+    "unnamed_product": "Unnamed product",
+    "unspecified_brand": "Unspecified brand",
+    "edit": "Edit",
+    "error_detected": "Inversion detected in database:",
+    "stored_kcal": "Current kcal:",
+    "stored_kj": "Current kJ:",
+    "proposed_correction": "Proposed correction (per 100g):",
+    "swap_button_tooltip": "Swap kcal ⇄ kJ values",
+    "per_serving": "Per serving",
+    "login_required": "Please log in to Open Food Facts to save changes.",
+    "values_required": "Please provide both kcal and kJ values.",
+    "saving": "Saving...",
+    "save_and_next": "Swap and Save",
+    "save_success": "✓ Product fixed and saved to Open Food Facts!"
   }
 }

@@ -26,6 +26,7 @@ import home_labels from "../../assets/home_labels.svg";
 import home_open_beauty_facts from "../../assets/home_open_beauty_facts.svg";
 import home_open_pet_food_facts from "../../assets/home_open_pet_food_facts.svg";
 import home_open_products_facts from "../../assets/home_open_products_facts.svg";
+import home_reverso from "../../assets/home_reverso.svg";
 
 const cards = [
   // FEATURED / CORE ANNOTATION GAMES
@@ -60,6 +61,15 @@ const cards = [
     link: "/nutrition",
     image: home_nutrition,
     category: "featured",
+  },
+  {
+    id: "reverso",
+    title: "home.game_selector.cards.reverso.title",
+    desc: "home.game_selector.cards.reverso.description",
+    link: "/reverso",
+    image: home_reverso,
+    category: "featured",
+    badge: "kcal ⇄ kJ",
   },
   {
     id: "ingredient_spellcheck",
