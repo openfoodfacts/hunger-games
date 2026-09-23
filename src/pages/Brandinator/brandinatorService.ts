@@ -245,20 +245,15 @@ export async function fetchProjectFacetsBrands(
     : `${project.worldUrl}/facets/brands.json`;
 
   const [facetsRes, taxonomy] = await Promise.all([
-    axios
-      .get<{
-        tags?: {
-          id: string;
-          name: string;
-          products: number;
-          known?: number;
-          url?: string;
-        }[];
-      }>(url, { timeout: 12000 })
-      .catch((err) => {
-        console.warn(`Could not load facets for ${project.id}:`, err);
-        return { data: { tags: [] } };
-      }),
+    axios.get<{
+      tags?: {
+        id: string;
+        name: string;
+        products: number;
+        known?: number;
+        url?: string;
+      }[];
+    }>(url, { timeout: 12000 }),
     fetchProjectBrandTaxonomy(project),
   ]);
 
@@ -284,7 +279,9 @@ export async function fetchProjectFacetsBrands(
   });
 
   try {
-    sessionStorage.setItem(cacheKey, JSON.stringify(items));
+    if (Object.keys(taxonomy).length > 0) {
+      sessionStorage.setItem(cacheKey, JSON.stringify(items));
+    }
   } catch {
     // ignore
   }

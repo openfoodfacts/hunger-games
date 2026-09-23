@@ -51,6 +51,7 @@ import {
   getInitialOFFBrands,
   fetchRobotoffBrandOpportunities,
   fetchProjectFacetsBrands,
+  normalizeBrandKey,
   GITHUB_BRAND_IMAGES_UPLOAD_URL,
   TAXONOMY_EDITOR_START_URL,
 } from "./brandinatorService";
@@ -110,11 +111,12 @@ export default function BrandinatorPage() {
 
       // Update brand opportunities from Robotoff
       return initial.map((b) => {
-        const slugNorm = b.slug.toLowerCase().replace(/[^a-z0-9]/g, "");
         const opp =
-          opportunitiesMap[b.slug.toLowerCase()] ??
-          opportunitiesMap[slugNorm] ??
-          b.opportunities;
+          country === "world"
+            ? b.opportunities
+            : (opportunitiesMap[b.slug.toLowerCase()] ??
+              opportunitiesMap[normalizeBrandKey(b.slug)] ??
+              0);
         return {
           ...b,
           opportunities: opp,
@@ -122,7 +124,7 @@ export default function BrandinatorPage() {
       });
     }
     return sisterProjectBrands || [];
-  }, [projectId, opportunitiesMap, sisterProjectBrands]);
+  }, [projectId, opportunitiesMap, sisterProjectBrands, country]);
 
   // Filter and sort brands
   const filteredBrands = React.useMemo(() => {
