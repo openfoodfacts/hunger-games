@@ -42,6 +42,7 @@ import { Link as RouterLink } from "react-router";
 import Loader from "../loader";
 import { useCountry } from "../../contexts/CountryProvider";
 import countryNames from "../../assets/countries.json";
+import home_brandinator from "../../assets/home_brandinator.png";
 import { BrandCard } from "./BrandCard";
 import {
   PROJECTS,
@@ -50,6 +51,8 @@ import {
   getInitialOFFBrands,
   fetchRobotoffBrandOpportunities,
   fetchProjectFacetsBrands,
+  GITHUB_BRAND_IMAGES_UPLOAD_URL,
+  TAXONOMY_EDITOR_START_URL,
 } from "./brandinatorService";
 
 const PAGE_SIZE = 36;
@@ -227,37 +230,56 @@ export default function BrandinatorPage() {
                 alignItems: { md: "center" },
               }}
             >
-              <Box>
-                <Typography
-                  variant="overline"
+              <Stack
+                direction={{ xs: "column", sm: "row" }}
+                spacing={{ xs: 2, sm: 3 }}
+                sx={{ alignItems: { sm: "center" } }}
+              >
+                <Box
+                  component="img"
+                  src={home_brandinator}
+                  alt="Brandinator"
                   sx={{
-                    fontWeight: 700,
-                    letterSpacing: "0.14em",
-                    color: "primary.main",
+                    width: { xs: 140, sm: 160 },
+                    height: "auto",
+                    borderRadius: 2,
+                    boxShadow: 2,
+                    flexShrink: 0,
                   }}
-                >
-                  DASHBOARD & GAME
-                </Typography>
-                <Typography
-                  variant="h3"
-                  component="h1"
-                  sx={{
-                    fontWeight: 800,
-                    fontSize: { xs: "2rem", sm: "2.75rem" },
-                    lineHeight: 1.1,
-                  }}
-                >
-                  Brandinator
-                </Typography>
-                <Typography
-                  variant="body1"
-                  sx={{ maxWidth: 700, mt: 1, opacity: 0.9 }}
-                >
-                  Explore taxonomized brands, ground truth product counts, and
-                  opportunity questions. Help validate brand logos and complete
-                  annotations across Open Food Facts and sister projects!
-                </Typography>
-              </Box>
+                />
+                <Box>
+                  <Typography
+                    variant="overline"
+                    sx={{
+                      fontWeight: 700,
+                      letterSpacing: "0.14em",
+                      color: "primary.main",
+                    }}
+                  >
+                    DASHBOARD & GAME
+                  </Typography>
+                  <Typography
+                    variant="h3"
+                    component="h1"
+                    sx={{
+                      fontWeight: 800,
+                      fontSize: { xs: "2rem", sm: "2.75rem" },
+                      lineHeight: 1.1,
+                    }}
+                  >
+                    Brandinator
+                  </Typography>
+                  <Typography
+                    variant="body1"
+                    sx={{ maxWidth: 650, mt: 1, opacity: 0.9 }}
+                  >
+                    Explore taxonomized brands, ground truth product counts, and
+                    opportunity questions. Help validate brand logos and
+                    complete annotations across Open Food Facts and sister
+                    projects!
+                  </Typography>
+                </Box>
+              </Stack>
 
               {/* Stats Chips */}
               <Stack
@@ -690,21 +712,32 @@ export default function BrandinatorPage() {
                                 }}
                               />
                             ) : (
-                              <Box
-                                sx={{
-                                  width: 32,
-                                  height: 32,
-                                  borderRadius: 1,
-                                  bgcolor: "primary.main",
-                                  color: "primary.contrastText",
-                                  display: "grid",
-                                  placeItems: "center",
-                                  fontWeight: 700,
-                                  fontSize: "0.85rem",
-                                }}
-                              >
-                                {brand.name.charAt(0).toUpperCase()}
-                              </Box>
+                              <Tooltip title="No logo available - Click to add logo on GitHub">
+                                <Box
+                                  component="a"
+                                  href={GITHUB_BRAND_IMAGES_UPLOAD_URL}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  sx={{
+                                    textDecoration: "none",
+                                    width: 32,
+                                    height: 32,
+                                    borderRadius: 1,
+                                    bgcolor: "primary.main",
+                                    color: "primary.contrastText",
+                                    display: "grid",
+                                    placeItems: "center",
+                                    fontWeight: 700,
+                                    fontSize: "0.85rem",
+                                    transition: "opacity 0.2s",
+                                    "&:hover": {
+                                      opacity: 0.8,
+                                    },
+                                  }}
+                                >
+                                  {brand.name.charAt(0).toUpperCase()}
+                                </Box>
+                              </Tooltip>
                             )}
                             <Box>
                               <Typography
@@ -759,15 +792,29 @@ export default function BrandinatorPage() {
                               variant="outlined"
                             />
                           ) : (
-                            <Chip
-                              icon={
-                                <WarningAmberRoundedIcon fontSize="small" />
-                              }
-                              label="Untaxonomized"
-                              size="small"
-                              color="warning"
-                              variant="outlined"
-                            />
+                            <Tooltip title="Brand not in taxonomy - Click to add in Taxonomy Editor">
+                              <Chip
+                                component="a"
+                                href={TAXONOMY_EDITOR_START_URL}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                clickable
+                                icon={
+                                  <WarningAmberRoundedIcon fontSize="small" />
+                                }
+                                label="Untaxonomized"
+                                size="small"
+                                color="warning"
+                                variant="outlined"
+                                sx={{
+                                  cursor: "pointer",
+                                  "&:hover": {
+                                    bgcolor: "warning.main",
+                                    color: "warning.contrastText",
+                                  },
+                                }}
+                              />
+                            </Tooltip>
                           )}
                         </TableCell>
 

@@ -17,8 +17,14 @@ import OpenInNewRoundedIcon from "@mui/icons-material/OpenInNewRounded";
 import CheckCircleRoundedIcon from "@mui/icons-material/CheckCircleRounded";
 import WarningAmberRoundedIcon from "@mui/icons-material/WarningAmberRounded";
 import LanguageRoundedIcon from "@mui/icons-material/LanguageRounded";
+import AddPhotoAlternateRoundedIcon from "@mui/icons-material/AddPhotoAlternateRounded";
 
-import type { BrandItem, ProjectConfig } from "./brandinatorService";
+import {
+  type BrandItem,
+  type ProjectConfig,
+  GITHUB_BRAND_IMAGES_UPLOAD_URL,
+  TAXONOMY_EDITOR_START_URL,
+} from "./brandinatorService";
 
 interface BrandCardProps {
   brand: BrandItem;
@@ -95,20 +101,61 @@ export const BrandCard = React.memo(function BrandCard({
               }}
             />
           ) : (
-            <Avatar
-              sx={(theme) => ({
-                width: 48,
-                height: 48,
-                fontWeight: 700,
-                fontSize: "1.25rem",
-                borderRadius: 2,
-                bgcolor: theme.palette.primary.main,
-                color: theme.palette.primary.contrastText,
-                flexShrink: 0,
-              })}
-            >
-              {brandInitial}
-            </Avatar>
+            <Tooltip title="No logo available - Click to add logo on GitHub">
+              <Box
+                component="a"
+                href={GITHUB_BRAND_IMAGES_UPLOAD_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                sx={{
+                  textDecoration: "none",
+                  position: "relative",
+                  display: "inline-block",
+                  flexShrink: 0,
+                  "&:hover .add-photo-badge": {
+                    transform: "scale(1.15)",
+                  },
+                }}
+              >
+                <Avatar
+                  sx={(theme) => ({
+                    width: 48,
+                    height: 48,
+                    fontWeight: 700,
+                    fontSize: "1.25rem",
+                    borderRadius: 2,
+                    bgcolor: theme.palette.primary.main,
+                    color: theme.palette.primary.contrastText,
+                    transition: "opacity 0.2s",
+                    "&:hover": {
+                      opacity: 0.85,
+                    },
+                  })}
+                >
+                  {brandInitial}
+                </Avatar>
+                <Box
+                  className="add-photo-badge"
+                  sx={(theme) => ({
+                    position: "absolute",
+                    bottom: -3,
+                    right: -3,
+                    width: 20,
+                    height: 20,
+                    borderRadius: "50%",
+                    bgcolor: theme.palette.secondary.main,
+                    color: theme.palette.secondary.contrastText,
+                    display: "grid",
+                    placeItems: "center",
+                    boxShadow: 1,
+                    border: `1.5px solid ${theme.palette.background.paper}`,
+                    transition: "transform 0.15s ease-in-out",
+                  })}
+                >
+                  <AddPhotoAlternateRoundedIcon sx={{ fontSize: 13 }} />
+                </Box>
+              </Box>
+            </Tooltip>
           )}
 
           <Box sx={{ minWidth: 0, flexGrow: 1 }}>
@@ -205,14 +252,28 @@ export const BrandCard = React.memo(function BrandCard({
               sx={{ fontSize: "0.75rem", fontWeight: 600 }}
             />
           ) : (
-            <Chip
-              icon={<WarningAmberRoundedIcon fontSize="small" />}
-              label="Untaxonomized"
-              size="small"
-              variant="outlined"
-              color="warning"
-              sx={{ fontSize: "0.75rem" }}
-            />
+            <Tooltip title="Brand not in taxonomy - Click to add in Taxonomy Editor">
+              <Chip
+                component="a"
+                href={TAXONOMY_EDITOR_START_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                clickable
+                icon={<WarningAmberRoundedIcon fontSize="small" />}
+                label="Untaxonomized"
+                size="small"
+                variant="outlined"
+                color="warning"
+                sx={{
+                  fontSize: "0.75rem",
+                  cursor: "pointer",
+                  "&:hover": {
+                    bgcolor: "warning.main",
+                    color: "warning.contrastText",
+                  },
+                }}
+              />
+            </Tooltip>
           )}
 
           {brand.wikidata && (

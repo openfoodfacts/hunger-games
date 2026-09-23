@@ -58,6 +58,12 @@ export const PROJECTS: Record<ProjectId, ProjectConfig> = {
   },
 };
 
+export const GITHUB_BRAND_IMAGES_UPLOAD_URL =
+  "https://github.com/openfoodfacts/brand-images/upload/main/xx/brands";
+
+export const TAXONOMY_EDITOR_START_URL =
+  "https://ui.taxonomy.openfoodfacts.org/startproject";
+
 export interface BrandItem {
   name: string;
   slug: string;
