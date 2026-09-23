@@ -20,6 +20,7 @@ import {
   Autocomplete,
   Link as MuiLink,
 } from "@mui/material";
+import { useTheme, alpha } from "@mui/material/styles";
 
 import SwapHorizIcon from "@mui/icons-material/SwapHoriz";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
@@ -68,6 +69,8 @@ export default function ReversoPage() {
   const barcodeParam = searchParams.get("code") || "";
   const [country, setCountry] = useCountry();
   const { isLoggedIn } = React.useContext(LoginContext);
+  const theme = useTheme();
+  const isDark = theme.palette.mode === "dark";
 
   const {
     currentProduct,
@@ -278,13 +281,17 @@ export default function ReversoPage() {
     <Box sx={{ maxWidth: 1400, mx: "auto", p: { xs: 2, md: 3 } }}>
       {/* Header Banner */}
       <Paper
-        elevation={0}
+        elevation={isDark ? 1 : 0}
         sx={{
           p: 3,
           mb: 3,
           borderRadius: 3,
-          background: "linear-gradient(135deg, #FFF9F2 0%, #FFF0E6 100%)",
-          border: "1px solid #FFE0CC",
+          background: isDark
+            ? `linear-gradient(135deg, ${alpha(theme.palette.background.paper, 0.95)} 0%, ${alpha(theme.palette.secondary.dark, 0.35)} 100%)`
+            : "linear-gradient(135deg, #FFF9F2 0%, #FFF0E6 100%)",
+          border: isDark
+            ? `1px solid ${theme.palette.divider}`
+            : "1px solid #FFE0CC",
         }}
       >
         <Stack
@@ -313,7 +320,7 @@ export default function ReversoPage() {
                   variant="h4"
                   component="h1"
                   fontWeight={800}
-                  color="#341100"
+                  color={isDark ? "text.primary" : "#341100"}
                 >
                   {t("reverso.title", "Reverso")}
                 </Typography>
@@ -346,7 +353,7 @@ export default function ReversoPage() {
               size="small"
               variant="text"
               target="_blank"
-              href="https://world.openfoodfacts.org/facets/data-quality-errors/energy-value-in-kcal-and-kj-are-reversed.json"
+              href="https://world.openfoodfacts.org/facets/data-quality-errors/energy-value-in-kcal-and-kj-are-reversed"
               endIcon={<OpenInNewIcon fontSize="small" />}
             >
               {t("reverso.view_facet", "Facette")}
@@ -375,7 +382,12 @@ export default function ReversoPage() {
                 {...params}
                 label={t("questions.filters.long_label.country", "Pays")}
                 size="small"
-                sx={{ bgcolor: "white", borderRadius: 1 }}
+                sx={{
+                  bgcolor: isDark
+                    ? alpha(theme.palette.background.paper, 0.8)
+                    : "white",
+                  borderRadius: 1,
+                }}
               />
             )}
             sx={{ width: { xs: "100%", sm: 260 } }}
@@ -398,7 +410,9 @@ export default function ReversoPage() {
             }}
             sx={{
               width: { xs: "100%", sm: 260 },
-              bgcolor: "white",
+              bgcolor: isDark
+                ? alpha(theme.palette.background.paper, 0.8)
+                : "white",
               borderRadius: 1,
             }}
           />
@@ -455,12 +469,15 @@ export default function ReversoPage() {
         </Alert>
       ) : !currentProduct ? (
         <Paper
+          elevation={isDark ? 1 : 0}
           sx={{
             p: 6,
             textAlign: "center",
             borderRadius: 3,
-            bgcolor: "#FAFAFA",
-            border: "1px dashed #CCC",
+            bgcolor: isDark
+              ? alpha(theme.palette.background.paper, 0.7)
+              : "#FAFAFA",
+            border: `1px dashed ${theme.palette.divider}`,
           }}
         >
           <CheckCircleIcon
@@ -495,20 +512,23 @@ export default function ReversoPage() {
           {/* Left Column: Photos / Packaging viewer */}
           <Grid size={{ xs: 12, md: 6, lg: 7 }}>
             <Card
-              elevation={2}
+              elevation={isDark ? 2 : 1}
               sx={{
                 borderRadius: 3,
                 height: "100%",
                 display: "flex",
                 flexDirection: "column",
                 overflow: "hidden",
+                border: isDark ? `1px solid ${theme.palette.divider}` : "none",
               }}
             >
               <Box
                 sx={{
                   p: 2,
-                  bgcolor: "#FAFAFA",
-                  borderBottom: "1px solid #EAEAEA",
+                  bgcolor: isDark
+                    ? alpha(theme.palette.background.paper, 0.8)
+                    : "#FAFAFA",
+                  borderBottom: `1px solid ${theme.palette.divider}`,
                   display: "flex",
                   justifyContent: "space-between",
                   alignItems: "center",
@@ -531,7 +551,7 @@ export default function ReversoPage() {
                   position: "relative",
                   flexGrow: 1,
                   minHeight: 450,
-                  bgcolor: "#201A17",
+                  bgcolor: isDark ? "#121212" : "#201A17",
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
@@ -577,9 +597,11 @@ export default function ReversoPage() {
                   spacing={1}
                   sx={{
                     p: 1.5,
-                    bgcolor: "#F5F5F5",
+                    bgcolor: isDark
+                      ? alpha(theme.palette.background.default, 0.6)
+                      : "#F5F5F5",
                     overflowX: "auto",
-                    borderTop: "1px solid #EAEAEA",
+                    borderTop: `1px solid ${theme.palette.divider}`,
                   }}
                 >
                   {productImages.map((img, idx) => (
@@ -595,11 +617,13 @@ export default function ReversoPage() {
                         border:
                           activeImageIndex === idx
                             ? "2px solid #FF5722"
-                            : "2px solid transparent",
+                            : `2px solid ${isDark ? theme.palette.divider : "transparent"}`,
                         opacity: activeImageIndex === idx ? 1 : 0.6,
                         transition: "all 0.2s",
                         flexShrink: 0,
-                        bgcolor: "#EEE",
+                        bgcolor: isDark
+                          ? alpha(theme.palette.background.paper, 0.8)
+                          : "#EEE",
                       }}
                     >
                       <img
@@ -621,18 +645,23 @@ export default function ReversoPage() {
           {/* Right Column: Reverso Interactive Correction Panel */}
           <Grid size={{ xs: 12, md: 6, lg: 5 }}>
             <Card
-              elevation={2}
+              elevation={isDark ? 2 : 1}
               sx={{
                 p: 3,
                 borderRadius: 3,
                 display: "flex",
                 flexDirection: "column",
                 gap: 2.5,
+                border: isDark ? `1px solid ${theme.palette.divider}` : "none",
               }}
             >
               {/* Product Details Header */}
               <Box>
-                <Typography variant="h6" fontWeight={800} color="#341100">
+                <Typography
+                  variant="h6"
+                  fontWeight={800}
+                  color={isDark ? "text.primary" : "#341100"}
+                >
                   {currentProduct.product_name ||
                     t("reverso.unnamed_product", "Produit sans nom")}
                 </Typography>
@@ -706,7 +735,12 @@ export default function ReversoPage() {
                 <Typography variant="body2" sx={{ mt: 0.5 }}>
                   • {t("reverso.stored_kcal", "kcal actuel :")}{" "}
                   <strong>{storedKcal || "?"} kcal</strong> (
-                  <span style={{ color: "#D84315" }}>
+                  <span
+                    style={{
+                      color: isDark ? "#FFAB91" : "#D84315",
+                      fontWeight: 600,
+                    }}
+                  >
                     trop grand, correspond à des kJ
                   </span>
                   )
@@ -714,7 +748,12 @@ export default function ReversoPage() {
                 <Typography variant="body2">
                   • {t("reverso.stored_kj", "kJ actuel :")}{" "}
                   <strong>{storedKj || "?"} kJ</strong> (
-                  <span style={{ color: "#D84315" }}>
+                  <span
+                    style={{
+                      color: isDark ? "#FFAB91" : "#D84315",
+                      fontWeight: 600,
+                    }}
+                  >
                     trop faible, correspond à des kcal
                   </span>
                   )
@@ -727,14 +766,18 @@ export default function ReversoPage() {
                 sx={{
                   p: 2.5,
                   borderRadius: 3,
-                  bgcolor: "#FFFDF9",
-                  border: "1.5px solid #FFD8A8",
+                  bgcolor: isDark
+                    ? alpha(theme.palette.warning.dark, 0.12)
+                    : "#FFFDF9",
+                  border: isDark
+                    ? `1.5px solid ${alpha(theme.palette.warning.main, 0.35)}`
+                    : "1.5px solid #FFD8A8",
                 }}
               >
                 <Typography
                   variant="subtitle2"
                   fontWeight={700}
-                  color="#341100"
+                  color={isDark ? "text.primary" : "#341100"}
                   sx={{ mb: 2 }}
                 >
                   {t(
@@ -771,7 +814,12 @@ export default function ReversoPage() {
                           ),
                         },
                       }}
-                      sx={{ bgcolor: "white", borderRadius: 1 }}
+                      sx={{
+                        bgcolor: isDark
+                          ? alpha(theme.palette.background.paper, 0.8)
+                          : "white",
+                        borderRadius: 1,
+                      }}
                     />
                   </Box>
 
@@ -822,7 +870,12 @@ export default function ReversoPage() {
                           ),
                         },
                       }}
-                      sx={{ bgcolor: "white", borderRadius: 1 }}
+                      sx={{
+                        bgcolor: isDark
+                          ? alpha(theme.palette.background.paper, 0.8)
+                          : "white",
+                        borderRadius: 1,
+                      }}
                     />
                   </Box>
                 </Stack>
@@ -849,7 +902,13 @@ export default function ReversoPage() {
                         onChange={(e) => setKcalServing(e.target.value)}
                         type="number"
                         size="small"
-                        sx={{ flex: 1, bgcolor: "white" }}
+                        sx={{
+                          flex: 1,
+                          bgcolor: isDark
+                            ? alpha(theme.palette.background.paper, 0.8)
+                            : "white",
+                          borderRadius: 1,
+                        }}
                       />
                       <TextField
                         label="kJ / portion"
@@ -857,7 +916,13 @@ export default function ReversoPage() {
                         onChange={(e) => setKjServing(e.target.value)}
                         type="number"
                         size="small"
-                        sx={{ flex: 1, bgcolor: "white" }}
+                        sx={{
+                          flex: 1,
+                          bgcolor: isDark
+                            ? alpha(theme.palette.background.paper, 0.8)
+                            : "white",
+                          borderRadius: 1,
+                        }}
                       />
                     </Stack>
                   </Box>
