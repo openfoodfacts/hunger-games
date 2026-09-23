@@ -2,10 +2,11 @@ import * as React from "react";
 import { useSearchParams } from "react-router";
 import { useTranslation } from "react-i18next";
 
-import { Box, Autocomplete, TextField } from "@mui/material";
+import { Box, Autocomplete, TextField, Stack } from "@mui/material";
 
 import { ErrorBoundary } from "../../components/ErrorBoundary";
 import { RobotoffNutrientExtraction } from "../../components/OffWebcomponents";
+import GameOpportunityBadge from "../../components/GameOpportunityBadge";
 import { useCountry } from "../../contexts/CountryProvider";
 
 import Instructions from "./Instructions";
@@ -53,26 +54,38 @@ export default function Nutrition() {
       <ErrorBoundary>
         <Instructions />
         <Box sx={{ mb: 2, px: 2 }}>
-          <Autocomplete<CountryOption>
-            value={selectedCountry}
-            onChange={(_event, newValue) => {
-              setCountry(newValue?.countryCode || "", "page");
-            }}
-            options={countries}
-            isOptionEqualToValue={(option, value) =>
-              option.countryCode === value.countryCode
-            }
-            getOptionLabel={(option) => option.label}
-            renderInput={(params) => (
-              <TextField
-                {...params}
-                label={t("questions.filters.long_label.country")}
-                placeholder={t("questions.filters.placeholders.country")}
-                size="small"
-              />
-            )}
-            sx={{ mb: 2, maxWidth: 400 }}
-          />
+          <Stack
+            direction={{ xs: "column", sm: "row" }}
+            spacing={2}
+            alignItems={{ xs: "stretch", sm: "center" }}
+            justifyContent="space-between"
+            sx={{ mb: 2 }}
+          >
+            <Autocomplete<CountryOption>
+              value={selectedCountry}
+              onChange={(_event, newValue) => {
+                setCountry(newValue?.countryCode || "", "page");
+              }}
+              options={countries}
+              isOptionEqualToValue={(option, value) =>
+                option.countryCode === value.countryCode
+              }
+              getOptionLabel={(option) => option.label}
+              renderInput={(params) => (
+                <TextField
+                  {...params}
+                  label={t("questions.filters.long_label.country")}
+                  placeholder={t("questions.filters.placeholders.country")}
+                  size="small"
+                />
+              )}
+              sx={{ maxWidth: 400, flexGrow: 1 }}
+            />
+            <GameOpportunityBadge
+              game="nutrition"
+              country={filterCountryCode}
+            />
+          </Stack>
           <RobotoffNutrientExtraction
             productCode={productCode}
             countryCode={filterCountryCode}
