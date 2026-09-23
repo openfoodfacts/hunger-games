@@ -83,6 +83,13 @@ export default function QuantitiesPage() {
     return countries.find((c) => c.countryCode === country) || null;
   }, [country]);
 
+  const facetWebUrl = React.useMemo(() => {
+    if (selectedWarningOption.tag) {
+      return `https://world.openfoodfacts.org/data-quality-warning/${selectedWarningOption.tag}`;
+    }
+    return "https://world.openfoodfacts.org/facets/data-quality-warnings?filter=quantity";
+  }, [selectedWarningOption.tag]);
+
   const handleSave = async (newQuantity: string, newServingSize?: string) => {
     if (!currentProduct) return;
 
@@ -200,7 +207,7 @@ export default function QuantitiesPage() {
               size="small"
               variant="text"
               target="_blank"
-              href="https://world.openfoodfacts.org/facets/data-quality-warnings.json?filter=quantity"
+              href={facetWebUrl}
               endIcon={<OpenInNewIcon fontSize="small" />}
             >
               {t("quantities.view_facet", "Facette OFF")}
