@@ -52,6 +52,7 @@ const PAGES: Page[] = [
   { translationKey: "menu.games" },
   { url: "questions", translationKey: "menu.questions" },
   { url: "green-score", translationKey: "menu.green-score" },
+  { url: "brandinator", translationKey: "menu.brandinator" },
   {
     translationKey: "menu.logos",
     children: [

@@ -23,6 +23,10 @@
           "title": "Green-score",
           "description": "Annotate the questions with the highest value"
         },
+        "brandinator": {
+          "title": "Brandinator",
+          "description": "Taxonomize brands, validate brand logos, and answer brand annotation questions"
+        },
         "ingredient_spellcheck": {
           "title": "Ingredients spellcheck",
           "description": "Fix spelling mistakes and typos in extracted ingredient lists"
@@ -220,6 +224,8 @@
     "title": "Hunger Games",
     "games": "Games",
     "questions": "Questions",
+    "green-score": "Green score",
+    "brandinator": "Brandinator",
     "logos": "Logos",
     "logos-annotation": "Annotate logos",
     "logos-search": "Search logos",
@@ -231,7 +237,6 @@
     "ingredient-spellcheck": "Check ingredient spelling",
     "ingredient-detection": "Detect ingredients",
     "settings": "Settings",
-    "green-score": "Green score",
     "dashboard": "Logo dashboard",
     "tour": "Take a tour",
     "open_navigation": "Open navigation menu",

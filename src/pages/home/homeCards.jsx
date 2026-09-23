@@ -54,6 +54,14 @@ const cards = [
     category: "featured",
   },
   {
+    id: "brandinator",
+    title: "home.game_selector.cards.brandinator.title",
+    desc: "home.game_selector.cards.brandinator.description",
+    link: "/brandinator",
+    image: home_brands,
+    category: "featured",
+  },
+  {
     id: "nutrition",
     title: "home.game_selector.cards.nutrition.title",
     desc: "home.game_selector.cards.nutrition.description",
