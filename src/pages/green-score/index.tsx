@@ -7,8 +7,6 @@ import Stack from "@mui/material/Stack";
 import TextField from "@mui/material/TextField";
 import MenuItem from "@mui/material/MenuItem";
 import Paper from "@mui/material/Paper";
-import Card from "@mui/material/Card";
-import Skeleton from "@mui/material/Skeleton";
 import Typography from "@mui/material/Typography";
 
 import { useTranslation } from "react-i18next";
@@ -36,37 +34,6 @@ const typedAllCategories = allCategories as unknown as CategoryTaxonomyItem[];
 const greenScoreImage =
   "https://static.openfoodfacts.org/images/attributes/dist/green-score-a.svg";
 
-function GreenScoreCardSkeleton() {
-  return (
-    <Card
-      variant="outlined"
-      sx={{
-        width: "100%",
-        borderRadius: 3,
-        overflow: "hidden",
-        boxShadow: "none",
-      }}
-    >
-      <Skeleton variant="rectangular" animation="wave" sx={{ height: 150 }} />
-      <Box
-        sx={{
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          justifyContent: "center",
-          gap: 0.25,
-          px: 2,
-          py: 1,
-          minHeight: 66,
-        }}
-      >
-        <Skeleton variant="text" width="42%" height={28} />
-        <Skeleton variant="text" width="68%" height={18} />
-      </Box>
-    </Card>
-  );
-}
-
 export default function GreenScore() {
   const { t } = useTranslation();
   const [country, setCountry] = useCountry();
@@ -83,20 +50,23 @@ export default function GreenScore() {
       },
     })),
   });
-  const greenScoreCardsWithCounts = greenScoreCards.map((card, index) => ({
-    ...card,
-    questionNumber: greenScoreCountQueries[index].data,
-    questionCountLoading: greenScoreCountQueries[index].isLoading,
-  }));
-  const areGreenScoreCountsReady = greenScoreCountQueries.every(
-    (query) => !query.isLoading,
+  const greenScoreCardsWithCounts = React.useMemo(
+    () =>
+      greenScoreCards.map((card, index) => ({
+        ...card,
+        questionNumber: greenScoreCountQueries[index].data,
+        questionCountLoading: greenScoreCountQueries[index].isLoading,
+      })),
+    [greenScoreCountQueries],
   );
-  const displayedGreenScoreCards = areGreenScoreCountsReady
-    ? greenScoreCardsWithCounts.sort(
+  const displayedGreenScoreCards = React.useMemo(
+    () =>
+      [...greenScoreCardsWithCounts].sort(
         (first, second) =>
           (second.questionNumber ?? -1) - (first.questionNumber ?? -1),
-      )
-    : greenScoreCardsWithCounts;
+      ),
+    [greenScoreCardsWithCounts],
+  );
 
   return (
     <React.Suspense fallback={<Loader />}>
@@ -231,13 +201,9 @@ export default function GreenScore() {
                 gap: { xs: 1.5, sm: 2 },
               }}
             >
-              {areGreenScoreCountsReady
-                ? displayedGreenScoreCards.map((props) => (
-                    <SmallQuestionCard key={props.title} {...props} />
-                  ))
-                : greenScoreCards.map(({ title }) => (
-                    <GreenScoreCardSkeleton key={title} />
-                  ))}
+              {displayedGreenScoreCards.map((props) => (
+                <SmallQuestionCard key={props.title} {...props} />
+              ))}
             </Box>
           </Box>
 

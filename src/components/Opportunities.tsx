@@ -28,6 +28,8 @@ import { getQuestionSearchParams } from "./QuestionFilter/useFilterSearch";
 import { getLang } from "../localeStorageManager";
 
 const pageSize = 100;
+const INITIAL_VISIBLE_COUNT = 60;
+const PAGE_INCREMENT = 60;
 
 export interface CategoryTaxonomyItem {
   id: string;
@@ -48,7 +50,8 @@ interface OpportunityCardProps {
   name: string;
   campaign: string;
   countryCode: string;
-  questionNumber: number;
+  questionNumber: number | null;
+  isCountLoading: boolean;
   showCounts: boolean;
 }
 
@@ -60,6 +63,7 @@ const OpportunityCard = (props: OpportunityCardProps) => {
     campaign,
     countryCode,
     questionNumber,
+    isCountLoading,
     showCounts,
   } = props;
 
@@ -107,15 +111,25 @@ const OpportunityCard = (props: OpportunityCardProps) => {
               sx={{
                 alignItems: "baseline",
                 justifyContent: "flex-end",
+                minHeight: 34,
                 mt: 2.5,
               }}
             >
-              <Typography
-                color="primary"
-                sx={{ fontSize: "1.75rem", fontWeight: 800, lineHeight: 1 }}
-              >
-                {questionNumber.toLocaleString()}
-              </Typography>
+              {isCountLoading || questionNumber == null ? (
+                <Skeleton
+                  variant="rounded"
+                  width={64}
+                  height={28}
+                  sx={{ borderRadius: 1.5 }}
+                />
+              ) : (
+                <Typography
+                  color="primary"
+                  sx={{ fontSize: "1.75rem", fontWeight: 800, lineHeight: 1 }}
+                >
+                  {questionNumber.toLocaleString()}
+                </Typography>
+              )}
             </Stack>
           )}
         </CardContent>
@@ -194,8 +208,9 @@ const Opportunities = (props: OpportunitiesProps) => {
   const [sortOrder, setSortOrder] = React.useState<SortOrder>("count");
   const [showCounts, setShowCounts] = React.useState(true);
   const [showAllCategories, setShowAllCategories] = React.useState(false);
+  const [visibleCount, setVisibleCount] = React.useState(INITIAL_VISIBLE_COUNT);
 
-  // Pre-seed taxonomy name lookup map from static assets for instant localization
+  // Pre-seed taxonomy lookup map for instant multilingual name resolution
   const taxonomyMap = React.useMemo(() => {
     const map = new Map<string, Record<string, string>>();
     if (cachedCategories) {
@@ -217,26 +232,31 @@ const Opportunities = (props: OpportunitiesProps) => {
 
   const effectiveCampaign = showAllCategories ? "" : campaign;
 
-  const { data, isLoading, isFetchingNextPage, hasNextPage, fetchNextPage } =
-    useInfiniteQuery({
-      queryKey: ["opportunities", type, effectiveCampaign, countryCode],
-      initialPageParam: 1,
-      queryFn: async ({ pageParam }) => {
-        const response = await robotoff.getUnansweredValues({
-          type,
-          campaign: effectiveCampaign,
-          countryCode,
-          page: pageParam,
-          count: pageSize,
-        });
-        return response.data.questions ?? [];
-      },
-      getNextPageParam: (lastPage, pages) =>
-        lastPage.length < pageSize ? undefined : pages.length + 1,
-      staleTime: 5 * 60 * 1000,
-    });
+  const {
+    data,
+    isLoading: isCountLoading,
+    isFetchingNextPage,
+    hasNextPage,
+    fetchNextPage,
+  } = useInfiniteQuery({
+    queryKey: ["opportunities", type, effectiveCampaign, countryCode],
+    initialPageParam: 1,
+    queryFn: async ({ pageParam }) => {
+      const response = await robotoff.getUnansweredValues({
+        type,
+        campaign: effectiveCampaign,
+        countryCode,
+        page: pageParam,
+        count: pageSize,
+      });
+      return response.data.questions ?? [];
+    },
+    getNextPageParam: (lastPage, pages) =>
+      lastPage.length < pageSize ? undefined : pages.length + 1,
+    staleTime: 5 * 60 * 1000,
+  });
 
-  // Automatically fetch subsequent pages in the background without needing a "Load more" button
+  // Automatically fetch subsequent count pages in the background
   React.useEffect(() => {
     if (hasNextPage && !isFetchingNextPage) {
       void fetchNextPage();
@@ -247,6 +267,15 @@ const Opportunities = (props: OpportunitiesProps) => {
     () => data?.pages.flat() ?? [],
     [data?.pages],
   );
+
+  // Map of known counts returned from Robotoff
+  const countMap = React.useMemo(() => {
+    const map = new Map<string, number>();
+    for (const [category, count] of rawQuestions) {
+      map.set(category, count);
+    }
+    return map;
+  }, [rawQuestions]);
 
   // Extract category IDs that are not present in the local taxonomy cache
   const missingCategories = React.useMemo(() => {
@@ -265,7 +294,7 @@ const Opportunities = (props: OpportunitiesProps) => {
 
   const lang = getLang() ?? "en";
 
-  // Resolve category name: check local taxonomy cache first, then API translations, then fallback to id
+  // Resolve category name: check local taxonomy cache first, then API translations, then fallback to ID
   const getCategoryName = React.useCallback(
     (categoryId: string): string => {
       const cached = taxonomyMap.get(categoryId);
@@ -283,15 +312,52 @@ const Opportunities = (props: OpportunitiesProps) => {
     [taxonomyMap, remoteTranslations, lang],
   );
 
-  const displayedItems = React.useMemo(() => {
-    // Exclude any categories with count <= 0 to prevent phantom opportunities
-    let items = rawQuestions
-      .filter(([, count]) => count > 0)
-      .map(([value, questionNumber]) => ({
-        value,
-        name: getCategoryName(value),
-        questionNumber,
-      }));
+  // Active base taxonomy (Agribalyse or all)
+  const baseTaxonomyItems = React.useMemo(() => {
+    return showAllCategories
+      ? (allCategories ?? cachedCategories ?? [])
+      : (cachedCategories ?? []);
+  }, [showAllCategories, allCategories, cachedCategories]);
+
+  // Build the complete list of items to display:
+  // - Starts with cached categories immediately (names & clickability available on line 1)
+  // - Appends any extra categories returned by Robotoff
+  const allCategoryEntries = React.useMemo(() => {
+    const seen = new Set<string>();
+    const entries: {
+      value: string;
+      name: string;
+      questionNumber: number | null;
+    }[] = [];
+
+    // 1. Add base taxonomy categories
+    for (const item of baseTaxonomyItems) {
+      seen.add(item.id);
+      entries.push({
+        value: item.id,
+        name: getCategoryName(item.id),
+        questionNumber: countMap.get(item.id) ?? null,
+      });
+    }
+
+    // 2. Add extra categories returned by Robotoff that weren't in base taxonomy
+    for (const [category, count] of rawQuestions) {
+      if (!seen.has(category) && count > 0) {
+        seen.add(category);
+        entries.push({
+          value: category,
+          name: getCategoryName(category),
+          questionNumber: count,
+        });
+      }
+    }
+
+    return entries;
+  }, [baseTaxonomyItems, rawQuestions, countMap, getCategoryName]);
+
+  // Filter and sort items
+  const filteredAndSortedItems = React.useMemo(() => {
+    let items = allCategoryEntries;
 
     if (filter.trim()) {
       const needle = filter.trim().toLowerCase();
@@ -303,13 +369,44 @@ const Opportunities = (props: OpportunitiesProps) => {
     }
 
     if (sortOrder === "alpha") {
-      items.sort((a, b) => a.name.localeCompare(b.name));
+      items = [...items].sort((a, b) => a.name.localeCompare(b.name));
     } else {
-      items.sort((a, b) => b.questionNumber - a.questionNumber);
+      // Sort by count: categories with known counts come first sorted descending,
+      // followed by categories whose counts are still loading
+      items = [...items].sort((a, b) => {
+        const countA = a.questionNumber ?? -1;
+        const countB = b.questionNumber ?? -1;
+        if (countA !== countB) return countB - countA;
+        return a.name.localeCompare(b.name);
+      });
     }
 
     return items;
-  }, [rawQuestions, getCategoryName, filter, sortOrder]);
+  }, [allCategoryEntries, filter, sortOrder]);
+
+  // Sentinel ref for infinite-scrolling the visible items
+  const sentinelRef = React.useRef<HTMLDivElement>(null);
+
+  React.useEffect(() => {
+    const el = sentinelRef.current;
+    if (!el) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setVisibleCount((prev) => prev + PAGE_INCREMENT);
+        }
+      },
+      { rootMargin: "300px" },
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, [filteredAndSortedItems.length]);
+
+  const displayedItems = React.useMemo(() => {
+    return filteredAndSortedItems.slice(0, visibleCount);
+  }, [filteredAndSortedItems, visibleCount]);
+
+  const hasMore = visibleCount < filteredAndSortedItems.length;
 
   return (
     <React.Suspense fallback={<Loader />}>
@@ -329,7 +426,10 @@ const Opportunities = (props: OpportunitiesProps) => {
             size="small"
             placeholder={t("opportunities.filter")}
             value={filter}
-            onChange={(e) => setFilter(e.target.value)}
+            onChange={(e) => {
+              setFilter(e.target.value);
+              setVisibleCount(INITIAL_VISIBLE_COUNT);
+            }}
             InputProps={{
               startAdornment: (
                 <InputAdornment position="start">
@@ -400,7 +500,10 @@ const Opportunities = (props: OpportunitiesProps) => {
                 control={
                   <Switch
                     checked={showAllCategories}
-                    onChange={(e) => setShowAllCategories(e.target.checked)}
+                    onChange={(e) => {
+                      setShowAllCategories(e.target.checked);
+                      setVisibleCount(INITIAL_VISIBLE_COUNT);
+                    }}
                     size="small"
                   />
                 }
@@ -415,7 +518,7 @@ const Opportunities = (props: OpportunitiesProps) => {
           </Stack>
         </Stack>
 
-        {/* Categories Grid */}
+        {/* Categories Grid - cards render immediately with localized titles and links */}
         <Box
           sx={{
             display: "grid",
@@ -436,17 +539,22 @@ const Opportunities = (props: OpportunitiesProps) => {
               campaign={effectiveCampaign}
               countryCode={countryCode}
               questionNumber={questionNumber}
+              isCountLoading={isCountLoading}
               showCounts={showCounts}
             />
           ))}
 
-          {/* Skeletons while loading initial page */}
-          {isLoading &&
+          {/* Skeletons only if no categories are cached at all */}
+          {baseTaxonomyItems.length === 0 &&
+            isCountLoading &&
             Array.from({ length: 12 }, (_, id) => <CardSkeleton key={id} />)}
         </Box>
 
+        {/* Scroll Sentinel for progressive loading */}
+        {hasMore && <Box ref={sentinelRef} sx={{ height: 20, my: 2 }} />}
+
         {/* Empty state */}
-        {!isLoading && displayedItems.length === 0 && (
+        {!isCountLoading && displayedItems.length === 0 && (
           <Box sx={{ textAlign: "center", py: 6 }}>
             <Typography variant="body1" color="text.secondary">
               {t("opportunities.noResults")}
