@@ -259,6 +259,21 @@
     "view_crops_for_this_product": "Annoter les logos des produits"
   },
   "logos": {
+    "dashboard": {
+      "title": "Tableau de bord des logos",
+      "description": "Explorez les catégories de logos et contribuez à améliorer les données sur les produits.",
+      "category": "Catégorie",
+      "categories": "Catégories",
+      "logo_count_one": "{{count}} logo",
+      "logo_count_other": "{{count}} logos",
+      "more_info": "Plus d'infos",
+      "questions": "Questions",
+      "search": "Rechercher",
+      "brandinator_promo_badge": "Jeu & Hub dédié",
+      "brandinator_promo_title": "Vous cherchez plus de marques ? Découvrez Brandinator !",
+      "brandinator_promo_desc": "Explorez plus de 10 000 marques à travers les projets Open Food Facts. Validez les logos de marque, répondez aux questions, téléversez les logos manquants sur GitHub et associez les marques à l'éditeur de taxonomie !",
+      "brandinator_promo_cta": "Ouvrir Brandinator"
+    },
     "annotation": "Annotation : ",
     "annotations": "Annotations de logo",
     "task_description": "Sélectionnez tous les logos qui sont exactement les mêmes et donnez-leur un nom comme \"en:EU Organic\" et un type comme \"label\".",
