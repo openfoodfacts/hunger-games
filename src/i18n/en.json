@@ -39,6 +39,10 @@
           "title": "Nutrition game",
           "description": "Extract and validate nutritional values from packaging tables"
         },
+        "select_ingredient_image": {
+          "title": "Select ingredient image",
+          "description": "Quickly identify and select the packaging image showing the ingredients list"
+        },
         "prices_validation": {
           "title": "Price Validation",
           "description": "Verify prices and receipts contributed to Open Prices"
@@ -236,6 +240,7 @@
     "nutritions": "Nutrition",
     "ingredient-spellcheck": "Check ingredient spelling",
     "ingredient-detection": "Detect ingredients",
+    "select-ingredient-image": "Select ingredient image",
     "settings": "Settings",
     "dashboard": "Logo dashboard",
     "tour": "Take a tour",
@@ -522,5 +527,24 @@
       "title": "Android APK",
       "subtitle": "Download"
     }
+  },
+  "opportunities": {
+    "label": "opportunities",
+    "filter": "Filter categories",
+    "sortOrder": "Sort order",
+    "sortByCount": "By count",
+    "sortAlpha": "A-Z",
+    "showCounts": "Show counts",
+    "showAllCategories": "Show all categories",
+    "noResults": "No categories found"
+  },
+  "select_ingredient_image": {
+    "title": "Select Ingredient Image",
+    "description": "Select the photo showing the ingredients list for products that don't have one selected yet.",
+    "choose_prompt": "Which photo contains the ingredients list?",
+    "none_of_these": "No ingredient image",
+    "loading": "Searching for products needing ingredient photo selection...",
+    "no_products_found": "No products currently need an ingredients image selected.",
+    "error_loading": "Failed to load products. Please try again."
   }
 }

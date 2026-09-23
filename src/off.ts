@@ -229,10 +229,43 @@ class OffService {
     });
 
     const urlParams = new URLSearchParams(searchParams);
-    return axios.get<{ products?: T[] }>(
+    return axios.get<{ products?: T[]; count?: number }>(
       `${OFF_SEARCH.replace("world", countryCode)}?${urlParams.toString()}`,
       { signal },
     );
+  }
+
+  selectProductImage({
+    code,
+    imgid,
+    id = "ingredients",
+  }: {
+    code: string;
+    imgid: string | number;
+    id?: string;
+  }) {
+    const formData = new FormData();
+    formData.append("code", code);
+    formData.append("imgid", imgid.toString());
+    formData.append("id", id);
+    return axios.post(`${OFF_URL}/cgi/product_image_crop.pl`, formData, {
+      withCredentials: true,
+    });
+  }
+
+  unselectProductImage({
+    code,
+    id = "ingredients",
+  }: {
+    code: string;
+    id?: string;
+  }) {
+    const formData = new FormData();
+    formData.append("code", code);
+    formData.append("id", id);
+    return axios.post(`${OFF_URL}/cgi/product_image_unselect.pl`, formData, {
+      withCredentials: true,
+    });
   }
 
   setIngedrient(editionParams: { code: string; text: string; lang?: string }) {
