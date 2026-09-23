@@ -14,6 +14,10 @@
         "green_score": {
           "title": "Green-score",
           "description": "Annotate the questions with the highest value"
+        },
+        "create_products": {
+          "title": "Create missing products",
+          "description": "Add products that are not in the database yet, over on Open Prices"
         }
       }
     },
@@ -71,6 +75,10 @@
     "skip": "Saltar",
     "yes": "Si",
     "no_questions_remaining": "Non quedan preguntas",
+    "similar_questions": "Similar questions",
+    "no_similar_questions": "No similar questions",
+    "remaining_questions_count_one": "1 question remaining",
+    "remaining_questions_count_other": "{{count}} questions remaining",
     "an_error_occurred": "Produciuse un erro. Volva cargar, ténteo máis tarde ou contacte co equipo.",
     "countries": "Países",
     "view": "Ver",
@@ -83,10 +91,9 @@
     "last_annotations": "Últimas anotacións",
     "remaining_annotations": "Preguntas restantes",
     "annotated_annotations": "Anotado",
-    "similar_questions": "Similar questions",
-    "no_similar_questions": "No similar questions",
     "no_images": "No images available",
     "no_additional_info": "No additional information",
+    "add_missing_info": "Engadir",
     "filters": {
       "active_filter_number": "+{{count}} filtros",
       "active_filter_number_one": "+{{count}} filtro",
@@ -111,6 +118,7 @@
       },
       "placeholders": {
         "value": "Valor (Fanta, en:organic,...)",
+        "country": "France, Germany, Japan, ...",
         "brand": "Auchan, Danone, Herta,...",
         "campaign": "Campañas de anotación",
         "predictor": "detector-universal-de-logos, expresión regular, ..."

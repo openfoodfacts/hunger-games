@@ -2,6 +2,14 @@
   "home": {
     "game_selector": {
       "title": "What game would you like to play?",
+      "external_link": "External link",
+      "categories": {
+        "all": "All",
+        "featured": "Featured",
+        "questions": "Questions by Type",
+        "move_products": "Move Products",
+        "open_prices": "Open Prices"
+      },
       "cards": {
         "questions": {
           "title": "Questions",
@@ -15,9 +23,57 @@
           "title": "Green-score",
           "description": "Annotate the questions with the highest value"
         },
-        "create_products": {
-          "title": "Create missing products",
-          "description": "Add products that are not in the database yet, over on Open Prices"
+        "brandinator": {
+          "title": "Brandinator",
+          "description": "Taxonomize brands, validate brand logos, and answer brand annotation questions"
+        },
+        "ingredient_spellcheck": {
+          "title": "Ingredients spellcheck",
+          "description": "Fix spelling mistakes and typos in extracted ingredient lists"
+        },
+        "ingredient_detection": {
+          "title": "Ingredients crop",
+          "description": "Locate and crop the ingredients list bounding box on packaging"
+        },
+        "nutrition": {
+          "title": "Nutrition game",
+          "description": "Extract and validate nutritional values from packaging tables"
+        },
+        "prices_validation": {
+          "title": "Price Validation",
+          "description": "Verify prices and receipts contributed to Open Prices"
+        },
+        "prices_create_product": {
+          "title": "Create Missing Products",
+          "description": "Add new products identified on price receipts to Open Food Facts"
+        },
+        "questions_packaging": {
+          "title": "Packaging",
+          "description": "Validate packaging materials, shapes, and recycling instructions"
+        },
+        "questions_weights": {
+          "title": "Weights",
+          "description": "Validate product net weight, volume, and unit quantities"
+        },
+        "questions_brands": {
+          "title": "Brands",
+          "description": "Identify and verify brand names detected on product packaging"
+        },
+        "questions_labels": {
+          "title": "Labels",
+          "description": "Validate organic, eco, quality, and origin certification labels"
+        },
+        "move_open_beauty_facts": {
+          "title": "Move to Open Beauty Facts",
+          "description": "Identify cosmetics and hygiene items to move them to Open Beauty Facts"
+        },
+        "move_open_pet_food_facts": {
+          "title": "Move to Open Pet Food Facts",
+          "description": "Identify animal food and pet care items to move them to Open Pet Food Facts"
+        },
+        "move_open_products_facts": {
+          "title": "Move to Open Products Facts",
+          "description": "Identify non-food items to move them to Open Products Facts"
         }
       }
     },
@@ -28,6 +84,12 @@
       "contribution_details": "Learn why your contribution matters"
     },
     "saved_filters": "Saved Filters",
+    "saved_filters_delete": "Delete saved filter",
+    "saved_filters_delete_title": "Delete saved filter?",
+    "saved_filters_delete_description": "This saved filter will be removed from this device.",
+    "saved_filters_delete_confirm": "Delete",
+    "saved_filters_pending": "{{count}} products waiting",
+    "saved_filters_pending_unknown": "Products waiting",
     "contribution_modal": {
       "title": "Your contribution matters",
       "information": "Hunger Games is an effort to leverage the results of our OCR and artificial intelligence. When you use Hunger Games by Open Food Facts, you improve our entire database which helps the community make better food choices. We gather your annotations and use them to make Open Food Facts more accurate and efficient.",
@@ -35,6 +97,12 @@
     },
     "statistics": {
       "title": "{{userName}} statistics:",
+      "title_without_name": "Your statistics",
+      "empty_state": {
+        "title": "No contributions yet",
+        "description": "Your contribution statistics will appear here once you start helping improve Open Food Facts.",
+        "action": "Start contributing"
+      },
       "editorCount": {
         "title": "Editor",
         "description": "Number of editions done"
@@ -75,7 +143,6 @@
     "skip": "Skip",
     "yes": "Yes",
     "no_questions_remaining": "No questions remaining",
-    "search_without_prefix": "Search without prefix ({{tag}})",
     "similar_questions": "Similar questions",
     "no_similar_questions": "No similar questions",
     "remaining_questions_count_one": "1 question remaining",
@@ -92,8 +159,6 @@
     "last_annotations": "Last annotations",
     "remaining_annotations": "Remaining questions",
     "annotated_annotations": "Annotated",
-    "similar_questions": "Similar questions",
-    "no_similar_questions": "No similar questions",
     "no_images": "No images available",
     "no_additional_info": "No additional information",
     "add_missing_info": "Add",
@@ -159,6 +224,8 @@
     "title": "Hunger Games",
     "games": "Games",
     "questions": "Questions",
+    "green-score": "Green score",
+    "brandinator": "Brandinator",
     "logos": "Logos",
     "logos-annotation": "Annotate logos",
     "logos-search": "Search logos",
@@ -170,7 +237,6 @@
     "ingredient-spellcheck": "Check ingredient spelling",
     "ingredient-detection": "Detect ingredients",
     "settings": "Settings",
-    "green-score": "Green score",
     "dashboard": "Logo dashboard",
     "tour": "Take a tour",
     "open_navigation": "Open navigation menu",
@@ -211,6 +277,21 @@
     "view_crops_for_this_product": "Annotate product logos"
   },
   "logos": {
+    "dashboard": {
+      "title": "Logo dashboard",
+      "description": "Explore logo categories and help improve product data.",
+      "category": "Category",
+      "categories": "Categories",
+      "logo_count_one": "{{count}} logo",
+      "logo_count_other": "{{count}} logos",
+      "more_info": "More info",
+      "questions": "Questions",
+      "search": "Search",
+      "brandinator_promo_badge": "Dedicated Game & Hub",
+      "brandinator_promo_title": "Looking for more brands? Discover Brandinator!",
+      "brandinator_promo_desc": "Explore 10,000+ brands across Open Food Facts projects. Validate brand logos, answer annotation questions, upload missing logos to GitHub, and link brands to the Taxonomy Editor!",
+      "brandinator_promo_cta": "Open Brandinator"
+    },
     "annotation": "Annotation: ",
     "annotations": "Logo annotations",
     "task_description": "Select all logos that are exactly the same, and give them a name like \"en:EU Organic\" and a type like \"label\".",
@@ -255,6 +336,8 @@
       "title": "Logo search",
       "description": "Select a logo you want to look for, and let's go to catch them all. For every logo you annotate, we will fetch it's neighbors such that you might never stop to annotate. (Press Shift to select range of logos)",
       "ref_logos": "Reference logos (logo already annotated with this value)",
+      "annotation_count_one": "Already {{formattedCount}} annotation. You can come back to this logo in a few days if you don't find any matching logos.",
+      "annotation_count_other": "Already {{formattedCount}} annotations. You can come back to this logo in a few days if you don't find any matching logos.",
       "remaining": "Remaining to annotate",
       "select_all": "Select All",
       "unselect_all": "Deselect All"
@@ -400,6 +483,10 @@
   },
   "green-score": {
     "description": "Here is a summary of questions that could improve Green-Score computation",
+    "labelsDescription": "Answer questions related to these labels to improve Green-Score computation",
+    "categoriesDescription": "Answer questions related to these categories to improve Green-Score computation",
+    "questionCountLabel_one": "question",
+    "questionCountLabel_other": "questions",
     "countryLabel": "Country"
   },
   "ingredients": {
@@ -442,6 +529,7 @@
     "sortByCount": "By count",
     "sortAlpha": "A-Z",
     "showCounts": "Show counts",
-    "showAllCategories": "Show all categories"
+    "showAllCategories": "Show all categories",
+    "noResults": "No categories found"
   }
 }

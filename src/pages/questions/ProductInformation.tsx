@@ -33,8 +33,8 @@ import {
   localSettingsKeys,
   getHideImages,
   getPageCustomization,
-  getIsDevMode,
 } from "../../localeStorageManager";
+import DevModeContext from "../../contexts/devMode";
 
 import {
   ADDITIONAL_INFO_TRANSLATION,
@@ -246,7 +246,7 @@ const ProductInfoTable = ({
 
 const ProductInformation = () => {
   const { t } = useTranslation();
-  const isDevMode = getIsDevMode();
+  const { devMode: isDevMode } = React.useContext(DevModeContext);
 
   // Hide images
   const [hideImages, setHideImages] = React.useState<boolean>(getHideImages);

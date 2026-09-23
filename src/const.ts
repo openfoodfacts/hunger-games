@@ -1,4 +1,5 @@
 export const ROBOTOFF_API_URL = "https://robotoff.openfoodfacts.org/api/v1";
+export const ROBOTOFF_CACHE = 1000 * 60 * 30; // 30 minutes
 export const OFF_DOMAIN = "openfoodfacts.org";
 export const OFF_URL = `https://world.${OFF_DOMAIN}`;
 export const OFF_API_URL = `${OFF_URL}/api/v0`;

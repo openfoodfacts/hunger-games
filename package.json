@@ -14,14 +14,14 @@
     "@openfoodfacts/openfoodfacts-nodejs": "2.0.0-alpha.29",
     "@openfoodfacts/openfoodfacts-webcomponents": "^1.16.0",
     "@tanstack/react-query": "^5.102.8",
-    "axios": "^1.19.0",
+    "axios": "^1.20.0",
     "i18next": "^26.4.0",
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
     "react-i18next": "^17.0.12",
     "react-map-interaction": "^2.1.0",
-    "react-router": "^8.3.0",
-    "react-zoom-pan-pinch": "^2.5.0",
+    "react-router": "^8.3.1",
+    "react-zoom-pan-pinch": "^4.2.0",
     "reactour": "^1.19.4",
     "styled-components": "^6.5.3",
     "web-vitals": "^6.2.1"
@@ -29,24 +29,22 @@
   "devDependencies": {
     "@eslint/js": "^10.0.1",
     "@types/lodash-es": "^4",
-    "@types/node": "^26.1.2",
+    "@types/node": "^26.4.1",
     "@types/react": "^19.2.18",
-    "@types/react-dom": "^19.2.4",
-    "@typescript-eslint/eslint-plugin": "^8.65.0",
-    "@typescript-eslint/parser": "^8.65.0",
+    "@types/react-dom": "^19.2.7",
     "@vitejs/plugin-react": "^6.1.1",
-    "eslint": "^10.8.0",
+    "eslint": "^10.10.0",
     "eslint-plugin-react": "^7.37.5",
     "eslint-plugin-react-hooks": "^7.1.1",
-    "eslint-plugin-react-refresh": "^0.5.3",
-    "globals": "^17.8.0",
+    "eslint-plugin-react-refresh": "^0.5.6",
+    "globals": "^17.12.0",
     "husky": "^9.1.7",
     "i18next-resources-to-backend": "^1.2.3",
-    "knip": "^6.31.0",
+    "knip": "^6.34.0",
     "lodash-es": "^4.18.1",
     "prettier": "^3.9.6",
     "typescript": "^6.0.3",
-    "typescript-eslint": "^8.65.0",
+    "typescript-eslint": "^8.70.0",
     "vite": "^8.2.2",
     "vite-plugin-static-copy": "^4.1.1"
   },
@@ -58,30 +56,10 @@
     "countries": "node update-countries.js",
     "nutriments": "node update-nutriments.js",
     "categories": "node update-categories.js",
-    "category-counts": "node update-category-insight-counts.js",
-    "test": "react-scripts test",
     "deploy": "bash deploy.sh",
     "lint": "prettier --check . && eslint .",
     "prepare": "husky",
     "knip": "knip"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
   },
   "packageManager": "yarn@4.18.0",
   "resolutions": {
