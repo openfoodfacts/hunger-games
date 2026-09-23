@@ -217,29 +217,24 @@ const Opportunities = (props: OpportunitiesProps) => {
 
   const effectiveCampaign = showAllCategories ? "" : campaign;
 
-  const {
-    data,
-    isLoading,
-    isFetchingNextPage,
-    hasNextPage,
-    fetchNextPage,
-  } = useInfiniteQuery({
-    queryKey: ["opportunities", type, effectiveCampaign, countryCode],
-    initialPageParam: 1,
-    queryFn: async ({ pageParam }) => {
-      const response = await robotoff.getUnansweredValues({
-        type,
-        campaign: effectiveCampaign,
-        countryCode,
-        page: pageParam,
-        count: pageSize,
-      });
-      return response.data.questions ?? [];
-    },
-    getNextPageParam: (lastPage, pages) =>
-      lastPage.length < pageSize ? undefined : pages.length + 1,
-    staleTime: 5 * 60 * 1000,
-  });
+  const { data, isLoading, isFetchingNextPage, hasNextPage, fetchNextPage } =
+    useInfiniteQuery({
+      queryKey: ["opportunities", type, effectiveCampaign, countryCode],
+      initialPageParam: 1,
+      queryFn: async ({ pageParam }) => {
+        const response = await robotoff.getUnansweredValues({
+          type,
+          campaign: effectiveCampaign,
+          countryCode,
+          page: pageParam,
+          count: pageSize,
+        });
+        return response.data.questions ?? [];
+      },
+      getNextPageParam: (lastPage, pages) =>
+        lastPage.length < pageSize ? undefined : pages.length + 1,
+      staleTime: 5 * 60 * 1000,
+    });
 
   // Automatically fetch subsequent pages in the background without needing a "Load more" button
   React.useEffect(() => {
@@ -342,7 +337,10 @@ const Opportunities = (props: OpportunitiesProps) => {
                 </InputAdornment>
               ),
             }}
-            sx={{ flex: { xs: "1 1 100%", sm: "1 1 240px" }, maxWidth: { sm: 360 } }}
+            sx={{
+              flex: { xs: "1 1 100%", sm: "1 1 240px" },
+              maxWidth: { sm: 360 },
+            }}
           />
 
           <Stack
