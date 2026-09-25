@@ -2,7 +2,7 @@
   "home": {
     "game_selector": {
       "title": "你想玩什么游戏？",
-      "external_link": "External link",
+      "external_link": "外部链接",
       "cards": {
         "questions": {
           "title": "问题",
@@ -17,8 +17,8 @@
           "description": "优先标注价值最高的问题"
         },
         "create_products": {
-          "title": "Create missing products",
-          "description": "Add products that are not in the database yet, over on Open Prices"
+          "title": "创建缺失的产品",
+          "description": "在Open Prices上添加尚未进入数据库的产品"
         }
       }
     },
@@ -29,12 +29,12 @@
       "contribution_details": "了解为什么您的贡献很重要"
     },
     "saved_filters": "已保存的筛选器",
-    "saved_filters_delete": "Delete saved filter",
-    "saved_filters_delete_title": "Delete saved filter?",
+    "saved_filters_delete": "删除已保存的过滤器",
+    "saved_filters_delete_title": "删除已保存的过滤器？",
     "saved_filters_delete_description": "This saved filter will be removed from this device.",
     "saved_filters_delete_confirm": "删除",
     "saved_filters_pending": "{{count}} products waiting",
-    "saved_filters_pending_unknown": "Products waiting",
+    "saved_filters_pending_unknown": "待处理产品",
     "contribution_modal": {
       "title": "你的贡献很重要",
       "information": "“饥饿游戏”致力于充分利用我们的光学字符识别（OCR）和人工智能的成果。当您使用 Open Food Facts 的“饥饿游戏”时，您将改进我们的整个数据库，从而帮助社区做出更好的食物选择。我们会收集您的注释，并利用它们来提高 Open Food Facts 的准确性和效率。",
@@ -42,7 +42,7 @@
     },
     "statistics": {
       "title": "{{userName}} 的統計資料：",
-      "title_without_name": "Your statistics",
+      "title_without_name": "你的数据",
       "empty_state": {
         "title": "No contributions yet",
         "description": "Your contribution statistics will appear here once you start helping improve Open Food Facts.",
