@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import { useContext, useState } from "react";
 import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
 import Typography from "@mui/material/Typography";
@@ -49,7 +49,7 @@ const ShouldLoggedinPage = () => {
         <Typography variant="body1" color="text.secondary" sx={{ mb: 3 }}>
           {t(
             "restricted_page.description",
-            "Advanced games and tools are restricted to connected users. Log in to your Open Food Facts account or create one to proceed."
+            "Advanced games and tools are restricted to connected users. Log in to your Open Food Facts account or create one to proceed.",
           )}
         </Typography>
 
@@ -97,4 +97,3 @@ const ShouldLoggedinPage = () => {
 };
 
 export default ShouldLoggedinPage;
-
