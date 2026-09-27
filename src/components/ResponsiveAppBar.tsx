@@ -698,19 +698,23 @@ const ResponsiveAppBar = () => {
                       bgcolor: "action.hover",
                     },
                   }}
-                  renderInput={(params) => (
-                    <TextField
-                      {...params}
-                      variant="outlined"
-                      size="small"
-                      inputProps={{
-                        ...params.inputProps,
-                        "aria-label": t("menu.country", {
-                          defaultValue: "Country",
-                        }),
-                      }}
-                    />
-                  )}
+                  renderInput={(params) => {
+                    const inputProps =
+                      params.inputProps as React.InputHTMLAttributes<HTMLInputElement>;
+                    return (
+                      <TextField
+                        {...params}
+                        variant="outlined"
+                        size="small"
+                        inputProps={{
+                          ...inputProps,
+                          "aria-label": t("menu.country", {
+                            defaultValue: "Country",
+                          }),
+                        }}
+                      />
+                    );
+                  }}
                 />
               </Box>
               <IconButton
