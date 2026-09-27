@@ -686,9 +686,10 @@ const ResponsiveAppBar = () => {
                     countryNames.find((c) => c.countryCode === country) ??
                     countryNames.find((c) => c.countryCode === "")
                   }
-                  onChange={(_, newValue) =>
-                    setCountry(newValue?.countryCode ?? "", "global")
-                  }
+                  onChange={(
+                    _,
+                    newValue: (typeof countryNames)[number] | null,
+                  ) => setCountry(newValue?.countryCode ?? "", "global")}
                   sx={{
                     width: { lg: 160, xl: 220 },
                     fieldset: { border: "none" },
