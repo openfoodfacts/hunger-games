@@ -702,14 +702,11 @@ const ResponsiveAppBar = () => {
                       {...params}
                       variant="outlined"
                       size="small"
-                      slotProps={{
-                        ...params.slotProps,
-                        htmlInput: {
-                          ...params.slotProps.htmlInput,
-                          "aria-label": t("menu.country", {
-                            defaultValue: "Country",
-                          }),
-                        },
+                      inputProps={{
+                        ...params.inputProps,
+                        "aria-label": t("menu.country", {
+                          defaultValue: "Country",
+                        }),
                       }}
                     />
                   )}

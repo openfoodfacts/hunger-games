@@ -2441,12 +2441,6 @@ const UNTYPED_LOGOS = {
     logo: `https://images.${OFF_DOMAIN}/images/lang/en/labels/ccof-certified-organic.90x90.png`,
     type: "label",
   },
-  "en:biokreis": {
-    tag: "en:biokreis",
-    label: "biokreis",
-    logo: `https://images.${OFF_DOMAIN}/images/lang/de/labels/biokreis.90x90.svg`,
-    type: "label",
-  },
   "en:naturland-fair": {
     tag: "en:naturland-fair",
     label: "naturland fair",
@@ -2471,7 +2465,7 @@ const UNTYPED_LOGOS = {
     logo: `https://images.${OFF_DOMAIN}/images/lang/fr/labels/biogarantie-bel.90x90.svg`,
     type: "label",
   },
-  "en:biogarantie.90x90": {
+  "en:biogarantie": {
     tag: "en:biogarantie",
     label: "biogarantie",
     logo: `https://images.${OFF_DOMAIN}/images/lang/fr/labels/biogarantie.90x90.svg`,
