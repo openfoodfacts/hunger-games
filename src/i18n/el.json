@@ -2,7 +2,7 @@
   "home": {
     "game_selector": {
       "title": "Ποιο παιχνίδι θα θέλατε να παίξετε;",
-      "external_link": "External link",
+      "external_link": "Εξωτερικός σύνδεσμος",
       "cards": {
         "questions": {
           "title": "Ερωτήσεις",
@@ -17,8 +17,8 @@
           "description": "Σημειώστε τις ερωτήσεις με την υψηλότερη αξία"
         },
         "create_products": {
-          "title": "Create missing products",
-          "description": "Add products that are not in the database yet, over on Open Prices"
+          "title": "Προσθήκη προϊόντων που λείπουν",
+          "description": "Προσθέστε προϊόντα που δεν υπάρχουν ακόμη στην βάση δεδομένων, μέσω του Open Prices"
         }
       }
     },
@@ -29,12 +29,12 @@
       "contribution_details": "Μάθετε γιατί η συνεισφορά σας είναι σημαντική"
     },
     "saved_filters": "Αποθηκευμένα Φίλτρα",
-    "saved_filters_delete": "Delete saved filter",
-    "saved_filters_delete_title": "Delete saved filter?",
-    "saved_filters_delete_description": "This saved filter will be removed from this device.",
+    "saved_filters_delete": "Διαγραφή αποθηκευμένου φίλτρου",
+    "saved_filters_delete_title": "Διαγραφή αποθηκευμένου φίλτρου;",
+    "saved_filters_delete_description": "Αυτό το αποθηκευμένο φίλτρο θα αφαιρεθεί από την συσκευή.",
     "saved_filters_delete_confirm": "Διαγραφή",
-    "saved_filters_pending": "{{count}} products waiting",
-    "saved_filters_pending_unknown": "Products waiting",
+    "saved_filters_pending": "{{count}} προϊόντα σε αναμονή",
+    "saved_filters_pending_unknown": "Προϊόντα σε αναμονή",
     "contribution_modal": {
       "title": "Η συνεισφορά σας έχει σημασία",
       "information": "Οι Αγώνες Πείνας είναι μια προσπάθεια αξιοποίησης των αποτελεσμάτων του OCR και της τεχνητής νοημοσύνης. Όταν χρησιμοποιείτε τους Αγώνες Πείνας από το Open Food Facts, βελτιώνετε ολόκληρη τη βάση δεδομένων μας, η οποία βοηθά την κοινότητα να κάνει καλύτερες επιλογές τροφίμων. Συγκεντρώνουμε τους σχολιασμούς σας και τους χρησιμοποιούμε για να κάνουμε τα Open Food Facts πιο ακριβή και αποτελεσματικά.",
@@ -42,9 +42,9 @@
     },
     "statistics": {
       "title": "Στατιστικά {{userName}}:",
-      "title_without_name": "Your statistics",
+      "title_without_name": "Τα στατιστικά σας",
       "empty_state": {
-        "title": "No contributions yet",
+        "title": "Καμία συνεισφορά ακόμη",
         "description": "Your contribution statistics will appear here once you start helping improve Open Food Facts.",
         "action": "Start contributing"
       },
