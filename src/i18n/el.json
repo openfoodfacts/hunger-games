@@ -45,8 +45,8 @@
       "title_without_name": "Τα στατιστικά σας",
       "empty_state": {
         "title": "Καμία συνεισφορά ακόμη",
-        "description": "Your contribution statistics will appear here once you start helping improve Open Food Facts.",
-        "action": "Start contributing"
+        "description": "Οι στατιστικές συνεισφορές σας θα εμφανιστούν εδώ μόλις αρχίσετε να βοηθάτε στην βελτίωση του Open Food Facts.",
+        "action": "Ξεκινήστε να συνεισφέρετε"
       },
       "editorCount": {
         "title": "Συντάκτης",
@@ -90,7 +90,7 @@
     "no_questions_remaining": "Δεν απομένουν ερωτήσεις",
     "similar_questions": "Παρόμοιες ερωτήσεις",
     "no_similar_questions": "Δεν υπάρχουν παρόμοιες ερωτήσεις",
-    "remaining_questions_count_one": "1 question remaining",
+    "remaining_questions_count_one": "1 ερώτηση ακόμη",
     "remaining_questions_count_other": "{{count}} questions remaining",
     "an_error_occurred": "Παρουσιάστηκε σφάλμα. Παρακαλώ ανανεώστε, δοκιμάστε αργότερα ή επικοινωνήστε με την ομάδα.",
     "countries": "Χώρες",
@@ -131,7 +131,7 @@
       },
       "placeholders": {
         "value": "Τιμή (Fanta, ελ:οργανική,...)",
-        "country": "France, Germany, Japan, ...",
+        "country": "Γαλλία, Γερμανία, Ιαπωνία, ...",
         "brand": "Auchan, Danone, Herta, ...",
         "campaign": "Καμπάνιες σχολιασμού",
         "predictor": "ανιχνευτής καθολικού λογότυπου, regex, ..."
@@ -227,7 +227,7 @@
       "categories": "Κατηγορίες",
       "logo_count_one": "{{count}} logo",
       "logo_count_other": "{{count}} logos",
-      "more_info": "More info",
+      "more_info": "Περισσότερες πληροφορίες",
       "questions": "Ερωτήσεις",
       "search": "Αναζήτηση"
     },
