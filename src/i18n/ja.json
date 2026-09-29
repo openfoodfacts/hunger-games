@@ -29,12 +29,12 @@
       "contribution_details": "あなたの貢献がなぜ重要かについて学ぶ"
     },
     "saved_filters": "保存したフィルタ",
-    "saved_filters_delete": "Delete saved filter",
-    "saved_filters_delete_title": "Delete saved filter?",
-    "saved_filters_delete_description": "This saved filter will be removed from this device.",
+    "saved_filters_delete": "保存したフィルターを削除",
+    "saved_filters_delete_title": "保存したフィルターを削除しますか？",
+    "saved_filters_delete_description": "この端末に保存されたフィルターを削除します。",
     "saved_filters_delete_confirm": "削除",
-    "saved_filters_pending": "{{count}} products waiting",
-    "saved_filters_pending_unknown": "Products waiting",
+    "saved_filters_pending": "{{count}}件の商品が待機中",
+    "saved_filters_pending_unknown": "商品が待機中",
     "contribution_modal": {
       "title": "あなたの貢献は重要です",
       "information": "Hunger Games は、OCR の結果を活用する取り組みです。 Open Food Facts の Hunger Games を使用すると、データベース全体が改善され、コミュニティがより良い食品を選択できるようになります。私たちはあなたの注釈を収集し、Open Food Facts をより正確かつ効率的にするために使用します。",
@@ -42,9 +42,9 @@
     },
     "statistics": {
       "title": "{{userName}} 統計:",
-      "title_without_name": "Your statistics",
+      "title_without_name": "あなたの活動状況",
       "empty_state": {
-        "title": "No contributions yet",
+        "title": "活動の記録はまだありません",
         "description": "Your contribution statistics will appear here once you start helping improve Open Food Facts.",
         "action": "Start contributing"
       },
