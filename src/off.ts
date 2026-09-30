@@ -10,6 +10,7 @@ import {
   OFF_API_URL_V3,
   OFF_IMAGE_URL,
   OFF_SEARCH,
+  OFF_URL,
   URL_ORIGINE,
 } from "./const";
 import axios from "axios";
@@ -265,7 +266,6 @@ class OffService {
       },
     );
   }
-
 
   updateProductQuantity(editionParams: {
     code: string;

@@ -35,7 +35,7 @@ export default function QuantityPhotoViewer({
         id: "front",
         url: product.image_front_url,
         urlFull: product.image_front_url.replace(/\.400\.jpg$/, ".jpg"),
-        label: t("quantities.image_front", "Face avant"),
+        label: t("quantities.image_front", "Front face"),
       });
     }
 
@@ -44,7 +44,7 @@ export default function QuantityPhotoViewer({
         id: "nutrition",
         url: product.image_nutrition_url,
         urlFull: product.image_nutrition_url.replace(/\.400\.jpg$/, ".jpg"),
-        label: t("quantities.image_nutrition", "Tableau nutritionnel"),
+        label: t("quantities.image_nutrition", "Nutrition table"),
       });
     }
 
@@ -53,7 +53,7 @@ export default function QuantityPhotoViewer({
         id: "ingredients",
         url: product.image_ingredients_url,
         urlFull: product.image_ingredients_url.replace(/\.400\.jpg$/, ".jpg"),
-        label: t("quantities.image_ingredients", "Ingrédients"),
+        label: t("quantities.image_ingredients", "Ingredients"),
       });
     }
 
@@ -62,7 +62,7 @@ export default function QuantityPhotoViewer({
         id: "packaging",
         url: product.image_packaging_url,
         urlFull: product.image_packaging_url.replace(/\.400\.jpg$/, ".jpg"),
-        label: t("quantities.image_packaging", "Emballage"),
+        label: t("quantities.image_packaging", "Packaging"),
       });
     }
 
@@ -90,7 +90,6 @@ export default function QuantityPhotoViewer({
 
     return list;
   }, [product, t]);
-
 
   const currentImage = images[activeIndex] || images[0];
 
@@ -130,7 +129,7 @@ export default function QuantityPhotoViewer({
       >
         <Typography variant="subtitle2" fontWeight={700}>
           {currentImage?.label ||
-            t("quantities.packaging_photo", "Photos du produit")}
+            t("quantities.packaging_photo", "Product photos")}
           {images.length > 0 && ` (${activeIndex + 1}/${images.length})`}
         </Typography>
 
@@ -138,7 +137,7 @@ export default function QuantityPhotoViewer({
           <Tooltip
             title={t(
               "quantities.zoom_hint",
-              "Zoomez et déplacez l'image pour repérer le poids / volume",
+              "Zoom and pan the image to locate the net weight or volume",
             )}
           >
             <Stack
@@ -152,7 +151,7 @@ export default function QuantityPhotoViewer({
                 variant="caption"
                 sx={{ display: { xs: "none", sm: "inline" } }}
               >
-                {t("quantities.zoom_hint_short", "Zoom molette / clic")}
+                {t("quantities.zoom_hint_short", "Wheel / click zoom")}
               </Typography>
             </Stack>
           </Tooltip>
@@ -182,7 +181,6 @@ export default function QuantityPhotoViewer({
               style={{
                 width: "100%",
                 height: "100%",
-                minHeight: 480,
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
@@ -237,7 +235,7 @@ export default function QuantityPhotoViewer({
             <Typography variant="body2" sx={{ opacity: 0.8 }}>
               {t(
                 "quantities.no_photos",
-                "Aucune photo disponible pour ce produit.",
+                "No photo is available for this product.",
               )}
             </Typography>
           </Stack>

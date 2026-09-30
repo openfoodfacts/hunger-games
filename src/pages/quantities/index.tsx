@@ -97,7 +97,7 @@ export default function QuantitiesPage() {
       setSnackbarMessage(
         t(
           "quantities.login_required",
-          "Veuillez vous connecter à Open Food Facts pour enregistrer vos modifications.",
+          "Please log in to Open Food Facts to save your changes.",
         ),
       );
       setSnackbarSeverity("error");
@@ -115,12 +115,15 @@ export default function QuantitiesPage() {
       if (response.data.status !== 1) {
         throw new Error(
           response.data.status_verbose ||
-            t("quantities.save_error", "Erreur lors de l'enregistrement"),
+            t("quantities.save_error", "Error while saving quantity"),
         );
       }
 
       setSnackbarMessage(
-        t("quantities.save_success", "Quantité enregistrée avec succès !"),
+        t(
+          "quantities.save_success",
+          "✓ Quantity successfully saved to Open Food Facts!",
+        ),
       );
       setSnackbarSeverity("success");
       solveCurrent();
@@ -128,7 +131,7 @@ export default function QuantitiesPage() {
       const msg =
         err instanceof Error
           ? err.message
-          : t("quantities.save_error", "Erreur lors de l'enregistrement");
+          : t("quantities.save_error", "Error while saving quantity");
       setSnackbarMessage(msg);
       setSnackbarSeverity("error");
     } finally {
@@ -177,12 +180,12 @@ export default function QuantitiesPage() {
                   fontWeight={800}
                   color="#341100"
                 >
-                  {t("quantities.title", "Poids & Quantités")}
+                  {t("quantities.title", "Weights & Quantities")}
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
                   {t(
                     "quantities.subtitle",
-                    "Corrigez et normalisez les quantités et contenances de produits signalées par les alertes de qualité.",
+                    "Review and standardize product quantities and net contents flagged by quality warnings.",
                   )}
                 </Typography>
               </Box>
@@ -197,14 +200,14 @@ export default function QuantitiesPage() {
           >
             <Chip
               icon={<CheckCircleIcon />}
-              label={`${solvedCount} ${t("quantities.fixed_session", "corrigés cette session")}`}
+              label={`${solvedCount} ${t("quantities.fixed_session", "fixed this session")}`}
               color="success"
               variant="filled"
               sx={{ fontWeight: 600 }}
             />
             {totalCount > 0 && (
               <Chip
-                label={`${totalCount.toLocaleString()} ${t("quantities.total_in_facet", "au total dans la facette")}`}
+                label={`${totalCount.toLocaleString()} ${t("quantities.total_in_facet", "total in facet")}`}
                 variant="outlined"
                 sx={{ fontWeight: 600 }}
               />
@@ -216,7 +219,7 @@ export default function QuantitiesPage() {
               href={facetWebUrl}
               endIcon={<OpenInNewIcon fontSize="small" />}
             >
-              {t("quantities.view_facet", "Facette OFF")}
+              {t("quantities.view_facet", "OFF Facet")}
             </Button>
           </Stack>
         </Stack>
@@ -229,6 +232,7 @@ export default function QuantitiesPage() {
         >
           {/* Warning Selector */}
           <Autocomplete<QuantityWarningOption>
+            options={QUANTITY_WARNING_OPTIONS}
             value={selectedWarningOption}
             onChange={(_event, newValue) => {
               const newTag = newValue?.tag || "all";
@@ -251,7 +255,7 @@ export default function QuantitiesPage() {
             renderInput={(params) => (
               <TextField
                 {...params}
-                label={t("quantities.filter_warning", "Type d'anomalie")}
+                label={t("quantities.filter_warning", "Warning type")}
                 size="small"
                 sx={{ bgcolor: "white", borderRadius: 1 }}
               />
@@ -273,7 +277,7 @@ export default function QuantitiesPage() {
             renderInput={(params) => (
               <TextField
                 {...params}
-                label={t("questions.filters.long_label.country", "Pays")}
+                label={t("questions.filters.long_label.country", "Country")}
                 size="small"
                 sx={{ bgcolor: "white", borderRadius: 1 }}
               />
@@ -286,7 +290,7 @@ export default function QuantitiesPage() {
             size="small"
             placeholder={t(
               "quantities.barcode_placeholder",
-              "Filtrer par code-barres...",
+              "Filter by barcode...",
             )}
             value={barcodeParam}
             onChange={(e) => {
@@ -317,7 +321,7 @@ export default function QuantitiesPage() {
               }}
               variant="outlined"
             >
-              {t("quantities.clear_filter", "Effacer")}
+              {t("quantities.clear_filter", "Clear filter")}
             </Button>
           )}
         </Stack>
@@ -334,14 +338,14 @@ export default function QuantitiesPage() {
                 href={`${OFF_URL}/cgi/login.pl`}
                 target="_blank"
               >
-                {t("login.title", "Se connecter")}
+                {t("login.title", "Log in")}
               </Button>
             }
             sx={{ mt: 2 }}
           >
             {t(
               "quantities.login_notice_banner",
-              "Pour enregistrer directement vos corrections de quantité sur Open Food Facts, veuillez vous connecter.",
+              "Log in to save your quantity corrections directly to Open Food Facts.",
             )}
           </Alert>
         )}
@@ -355,7 +359,7 @@ export default function QuantitiesPage() {
           severity="error"
           action={
             <Button color="inherit" size="small" onClick={retry}>
-              {t("common.retry", "Réessayer")}
+              {t("common.retry", "Retry")}
             </Button>
           }
         >
@@ -376,7 +380,7 @@ export default function QuantitiesPage() {
             sx={{ fontSize: 64, color: "success.main", mb: 2 }}
           />
           <Typography variant="h5" fontWeight={700} gutterBottom>
-            {t("quantities.empty_title", "Bravo ! Aucun produit à corriger.")}
+            {t("quantities.empty_title", "Well done! No products left to fix.")}
           </Typography>
           <Typography
             color="text.secondary"
@@ -384,7 +388,7 @@ export default function QuantitiesPage() {
           >
             {t(
               "quantities.empty_desc",
-              "Tous les produits de cette sélection ont été examinés ou il n'y a plus d'anomalies de quantité pour ce filtre.",
+              "All products in this selection have been reviewed or there are no more quantity warnings for this filter.",
             )}
           </Typography>
           <Button
@@ -396,14 +400,17 @@ export default function QuantitiesPage() {
               retry();
             }}
           >
-            {t("quantities.refresh_all", "Réinitialiser et recharger")}
+            {t("quantities.refresh_all", "Reset and reload")}
           </Button>
         </Paper>
       ) : (
         <Grid container spacing={3}>
           {/* Left Column: Photos Viewer */}
           <Grid size={{ xs: 12, md: 6, lg: 7 }}>
-            <QuantityPhotoViewer key={currentProduct.code} product={currentProduct} />
+            <QuantityPhotoViewer
+              key={currentProduct.code}
+              product={currentProduct}
+            />
           </Grid>
 
           {/* Right Column: Quantity Edit Panel */}

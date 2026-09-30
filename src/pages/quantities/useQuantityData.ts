@@ -1,4 +1,5 @@
 import * as React from "react";
+import { useTranslation } from "react-i18next";
 import { useInfiniteQuery, useQuery } from "@tanstack/react-query";
 import off from "../../off";
 import { OFF_API_URL } from "../../const";
@@ -30,6 +31,7 @@ export default function useQuantityData(
   warningTag: string = "all",
   specificBarcode?: string,
 ) {
+  const { t } = useTranslation();
   const [dismissedCodes, setDismissedCodes] = React.useState<Set<string>>(
     new Set(),
   );
@@ -47,7 +49,7 @@ export default function useQuantityData(
       if (res.data.product && res.data.product.code) {
         return res.data.product;
       }
-      throw new Error("Produit introuvable");
+      throw new Error(t("quantities.product_not_found", "Product not found"));
     },
     enabled: Boolean(specificBarcode),
   });

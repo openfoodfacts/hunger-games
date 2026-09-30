@@ -174,7 +174,7 @@ export default function QuantityEditPanel({
           sx={{ lineHeight: 1.25 }}
         >
           {product.product_name ||
-            t("quantities.unnamed_product", "Produit sans nom")}
+            t("quantities.unnamed_product", "Unnamed product")}
         </Typography>
 
         <Typography
@@ -184,7 +184,7 @@ export default function QuantityEditPanel({
           sx={{ mt: 0.5 }}
         >
           {product.brands ||
-            t("quantities.unspecified_brand", "Marque non précisée")}
+            t("quantities.unspecified_brand", "Unspecified brand")}
         </Typography>
 
         <Stack
@@ -204,8 +204,8 @@ export default function QuantityEditPanel({
           <Tooltip
             title={
               copiedCode
-                ? t("common.copied", "Copié !")
-                : t("common.copy_barcode", "Copier le code-barres")
+                ? t("common.copied", "Copied!")
+                : t("common.copy_barcode", "Copy barcode")
             }
           >
             <IconButton size="small" onClick={handleCopyBarcode}>
@@ -219,7 +219,7 @@ export default function QuantityEditPanel({
             href={off.getProductUrl(product.code)}
             endIcon={<OpenInNewIcon fontSize="small" />}
           >
-            {t("questions.view", "Voir")}
+            {t("questions.view", "View")}
           </Button>
           <Button
             size="small"
@@ -228,7 +228,7 @@ export default function QuantityEditPanel({
             href={off.getProductEditUrl(product.code)}
             endIcon={<EditIcon fontSize="small" />}
           >
-            {t("quantities.edit", "Éditer")}
+            {t("quantities.edit", "Edit")}
           </Button>
         </Stack>
       </Box>
@@ -243,7 +243,7 @@ export default function QuantityEditPanel({
         }}
       >
         <Typography variant="subtitle2" fontWeight={700}>
-          {t("quantities.detected_issue", "Anomalie détectée sur ce produit :")}
+          {t("quantities.detected_issue", "Issue detected on this product:")}
         </Typography>
 
         <Box sx={{ mt: 0.75, fontSize: "0.875rem" }}>
@@ -261,7 +261,7 @@ export default function QuantityEditPanel({
               •{" "}
               {t(
                 "quantities.quantity_needs_review",
-                "Vérifier et corriger la quantité indiquée sur l'emballage",
+                "Check and correct the quantity shown on the packaging",
               )}
             </Typography>
           )}
@@ -273,12 +273,12 @@ export default function QuantityEditPanel({
           >
             <Box>
               <Typography variant="caption" color="text.secondary">
-                {t("quantities.current_quantity", "Quantité actuelle :")}
+                {t("quantities.current_quantity", "Current quantity:")}
               </Typography>
               <Typography variant="body2" fontWeight={700}>
                 {product.quantity || (
                   <span style={{ color: "#d32f2f", fontStyle: "italic" }}>
-                    {t("quantities.missing", "Non renseignée")}
+                    {t("quantities.missing", "Not specified")}
                   </span>
                 )}
               </Typography>
@@ -287,7 +287,7 @@ export default function QuantityEditPanel({
             {product.serving_size && (
               <Box>
                 <Typography variant="caption" color="text.secondary">
-                  {t("quantities.current_serving", "Portion actuelle :")}
+                  {t("quantities.current_serving", "Current serving size:")}
                 </Typography>
                 <Typography variant="body2" fontWeight={700}>
                   {product.serving_size}
@@ -308,7 +308,7 @@ export default function QuantityEditPanel({
               fontWeight={700}
               color="text.secondary"
             >
-              {t("quantities.suggestions", "Suggestions automatiques :")}
+              {t("quantities.suggestions", "Automatic suggestions:")}
             </Typography>
           </Stack>
 
@@ -338,7 +338,7 @@ export default function QuantityEditPanel({
           <Typography variant="subtitle2" fontWeight={700} sx={{ mb: 1 }}>
             {t(
               "quantities.enter_quantity",
-              "Saisir la quantité exacte (poids ou volume net) :",
+              "Enter the exact quantity (net weight or volume):",
             )}
           </Typography>
 
@@ -348,7 +348,7 @@ export default function QuantityEditPanel({
             size="medium"
             placeholder={t(
               "quantities.quantity_placeholder",
-              "ex: 500 g, 75 cl, 1.5 l, 6 x 25 cl",
+              "e.g. 500 g, 75 cl, 1.5 l, 6 x 25 cl",
             )}
             value={quantityInput}
             onChange={(e) => setQuantityInput(e.target.value)}
@@ -379,7 +379,7 @@ export default function QuantityEditPanel({
           gap={0.5}
         >
           <Typography variant="caption" color="text.secondary" sx={{ mr: 0.5 }}>
-            {t("quantities.append_unit", "Ajouter une unité :")}
+            {t("quantities.append_unit", "Add a unit:")}
           </Typography>
           {COMMON_UNITS.map((unit) => (
             <Button
@@ -415,11 +415,8 @@ export default function QuantityEditPanel({
             sx={{ textTransform: "none", fontSize: "0.85rem", opacity: 0.8 }}
           >
             {showServingInput
-              ? t("quantities.hide_serving", "Masquer la portion")
-              : t(
-                  "quantities.edit_serving",
-                  "Modifier également la portion (serving size)",
-                )}
+              ? t("quantities.hide_serving", "Hide serving size")
+              : t("quantities.edit_serving", "Also edit the serving size")}
           </Button>
 
           <Collapse in={showServingInput}>
@@ -427,8 +424,8 @@ export default function QuantityEditPanel({
               <TextField
                 fullWidth
                 size="small"
-                label={t("quantities.serving_size_label", "Taille de portion")}
-                placeholder="ex: 30 g, 200 ml"
+                label={t("quantities.serving_size_label", "Serving size")}
+                placeholder="e.g. 30 g, 200 ml"
                 value={servingSizeInput}
                 onChange={(e) => setServingSizeInput(e.target.value)}
                 sx={{ bgcolor: "white", borderRadius: 1 }}
@@ -441,14 +438,14 @@ export default function QuantityEditPanel({
         <Stack direction="row" spacing={1.5} sx={{ mt: 1 }}>
           <Button
             variant="outlined"
-            color="secondary"
+            color="primary"
             onClick={onSkip}
             startIcon={<SkipNextIcon />}
             disabled={isSaving}
             sx={{ flex: 1, py: 1.25, fontWeight: 700 }}
           >
-            {t("questions.skip", "Passer")}{" "}
-            {t("quantities.shortcut.escape", "(Échap)")}
+            {t("questions.skip", "Skip")}{" "}
+            {t("quantities.shortcut.escape", "(Esc)")}
           </Button>
 
           <Button
@@ -472,8 +469,8 @@ export default function QuantityEditPanel({
             }}
           >
             {isSaving
-              ? t("quantities.saving", "Enregistrement...")
-              : `${t("quantities.save_and_next", "Enregistrer et suivant")} ${t("quantities.shortcut.enter", "(Entrée)")}`}
+              ? t("quantities.saving", "Saving...")
+              : `${t("quantities.save_and_next", "Save & Next")} ${t("quantities.shortcut.enter", "(Enter)")}`}
           </Button>
         </Stack>
 
@@ -481,7 +478,7 @@ export default function QuantityEditPanel({
           <Alert severity="info" sx={{ mt: 1 }}>
             {t(
               "quantities.login_notice",
-              "Vous pouvez inspecter et corriger les quantités. Pour enregistrer vos modifications sur Open Food Facts, veuillez vous connecter.",
+              "You can inspect and correct quantities. To save your changes on Open Food Facts, please log in.",
             )}
           </Alert>
         )}
