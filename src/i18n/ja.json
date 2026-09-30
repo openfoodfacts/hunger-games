@@ -2,7 +2,7 @@
   "home": {
     "game_selector": {
       "title": "どのゲームをプレイしますか？",
-      "external_link": "External link",
+      "external_link": "外部リンク",
       "cards": {
         "questions": {
           "title": "質問",
@@ -17,8 +17,8 @@
           "description": "最も価値の高い質問に注釈を付ける"
         },
         "create_products": {
-          "title": "Create missing products",
-          "description": "Add products that are not in the database yet, over on Open Prices"
+          "title": "未登録商品を追加",
+          "description": "データベースにまだ登録されていない商品は、Open Pricesで追加できます"
         }
       }
     },
@@ -33,8 +33,8 @@
     "saved_filters_delete_title": "保存したフィルターを削除しますか？",
     "saved_filters_delete_description": "この端末に保存されたフィルターを削除します。",
     "saved_filters_delete_confirm": "削除",
-    "saved_filters_pending": "{{count}}件の商品が待機中",
-    "saved_filters_pending_unknown": "商品が待機中",
+    "saved_filters_pending": "{{count}}件の商品が対応待ち",
+    "saved_filters_pending_unknown": "対応待ちの商品",
     "contribution_modal": {
       "title": "あなたの貢献は重要です",
       "information": "Hunger Games は、OCR の結果を活用する取り組みです。 Open Food Facts の Hunger Games を使用すると、データベース全体が改善され、コミュニティがより良い食品を選択できるようになります。私たちはあなたの注釈を収集し、Open Food Facts をより正確かつ効率的にするために使用します。",
@@ -42,11 +42,11 @@
     },
     "statistics": {
       "title": "{{userName}} 統計:",
-      "title_without_name": "あなたの活動状況",
+      "title_without_name": "あなたの活動実績",
       "empty_state": {
-        "title": "活動の記録はまだありません",
-        "description": "Your contribution statistics will appear here once you start helping improve Open Food Facts.",
-        "action": "Start contributing"
+        "title": "活動実績はまだありません",
+        "description": "Open Food Factsの改善にご協力いただくと、あなたの活動実績がここに表示されます。",
+        "action": "協力を始める"
       },
       "editorCount": {
         "title": "編集者",
@@ -67,8 +67,8 @@
     "loading": "読み込み中"
   },
   "image_viewer": {
-    "compressed": "Compressed",
-    "load_original": "Load original"
+    "compressed": "圧縮版",
+    "load_original": "元の画像を読み込む"
   },
   "questions": {
     "category": "カテゴリー",
@@ -88,10 +88,10 @@
     "skip": "スキップ",
     "yes": "はい",
     "no_questions_remaining": "これ以上質問はありません",
-    "similar_questions": "Similar questions",
-    "no_similar_questions": "No similar questions",
-    "remaining_questions_count_one": "1 question remaining",
-    "remaining_questions_count_other": "{{count}} questions remaining",
+    "similar_questions": "似た質問",
+    "no_similar_questions": "似た質問はありません",
+    "remaining_questions_count_one": "残り１問",
+    "remaining_questions_count_other": "残り{{count}}問",
     "an_error_occurred": "エラーが発生しました。再読み込みするか、しばらくしてからもう一度お試しいただくか、チームにお問い合わせください。",
     "countries": "国",
     "view": "表示",
@@ -104,8 +104,8 @@
     "last_annotations": "最後の注釈",
     "remaining_annotations": "残りの質問",
     "annotated_annotations": "注釈付き",
-    "no_images": "No images available",
-    "no_additional_info": "No additional information",
+    "no_images": "利用できる画像がありません",
+    "no_additional_info": "追加情報はありません",
     "add_missing_info": "追加",
     "filters": {
       "active_filter_number": "+{{count}} 個のフィルタ",
@@ -131,7 +131,7 @@
       },
       "placeholders": {
         "value": "キーワード(ファンタ, ja: オーガニック,…)",
-        "country": "France, Germany, Japan, ...",
+        "country": "フランス、ドイツ、日本、…",
         "brand": "オーシャン、ダノン、ヘルタ、...",
         "campaign": "アノテーションキャンペーン",
         "predictor": "universal-logo-detector、正規表現、..."
@@ -221,13 +221,13 @@
   },
   "logos": {
     "dashboard": {
-      "title": "Logo dashboard",
-      "description": "Explore logo categories and help improve product data.",
+      "title": "ロゴの作業画面",
+      "description": "ロゴのカテゴリーを見て、商品データの充実にご協力ください。",
       "category": "カテゴリー",
       "categories": "カテゴリー",
-      "logo_count_one": "{{count}} logo",
-      "logo_count_other": "{{count}} logos",
-      "more_info": "More info",
+      "logo_count_one": "ロゴ{{count}}件",
+      "logo_count_other": "ロゴ{{count}}件",
+      "more_info": "詳細情報",
       "questions": "質問",
       "search": "検索"
     },
@@ -275,8 +275,8 @@
       "title": "ロゴ検索",
       "description": "あなたが探したいロゴを選択し、それらをすべてキャッチしましょう。 注釈を付けたすべてのロゴについて、注釈を停止しないように隣人を取得します（ロゴの範囲を選択するにはShiftキーを押してください）",
       "ref_logos": "参照ロゴ (すでにこの値に注釈が付けられているロゴ)",
-      "annotation_count_one": "Already {{formattedCount}} annotation. You can come back to this logo in a few days if you don't find any matching logos.",
-      "annotation_count_other": "Already {{formattedCount}} annotations. You can come back to this logo in a few days if you don't find any matching logos.",
+      "annotation_count_one": "すでに{{formattedCount}}件の判定があります。一致するロゴが見つからない場合は、数日後にもう一度このロゴを確認できます。",
+      "annotation_count_other": "すでに{{formattedCount}}件の判定があります。一致するロゴが見つからない場合は、数日後にもう一度このロゴを確認できます。",
       "remaining": "注釈を残しています",
       "select_all": "すべて選択",
       "unselect_all": "すべての選択を解除"
