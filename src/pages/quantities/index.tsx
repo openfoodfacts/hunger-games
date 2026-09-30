@@ -42,7 +42,7 @@ export default function QuantitiesPage() {
   const { t } = useTranslation();
   const [searchParams, setSearchParams] = useSearchParams();
   const barcodeParam = searchParams.get("code") || "";
-  const warningParam = searchParams.get("warning") || "quantity-not-recognized";
+  const warningParam = searchParams.get("warning") || "all";
 
   const [country, setCountry] = useCountry();
   const { isLoggedIn } = React.useContext(LoginContext);
@@ -106,12 +106,18 @@ export default function QuantitiesPage() {
 
     setIsSaving(true);
     try {
-      await off.updateProductQuantity({
+      const response = await off.updateProductQuantity({
         code: currentProduct.code,
         quantity: newQuantity,
         servingSize: newServingSize,
         comment: `Fix quantity (${selectedWarningOption.id}) via Hunger Games`,
       });
+      if (response.data.status !== 1) {
+        throw new Error(
+          response.data.status_verbose ||
+            t("quantities.save_error", "Erreur lors de l'enregistrement"),
+        );
+      }
 
       setSnackbarMessage(
         t("quantities.save_success", "Quantité enregistrée avec succès !"),
@@ -227,15 +233,20 @@ export default function QuantitiesPage() {
             onChange={(_event, newValue) => {
               const newTag = newValue?.tag || "all";
               const next = new URLSearchParams(searchParams);
-              if (newTag === "all" || !newTag) {
-                next.delete("warning");
-              } else {
-                next.set("warning", newTag);
-              }
+              next.set("warning", newTag);
               setSearchParams(next);
             }}
-            options={QUANTITY_WARNING_OPTIONS}
-            getOptionLabel={(opt) => opt.label}
+            getOptionLabel={(opt) => t(opt.labelKey)}
+            renderOption={(props, opt) => (
+              <li {...props}>
+                <Box>
+                  <Typography>{t(opt.labelKey)}</Typography>
+                  <Typography variant="caption" color="text.secondary">
+                    {t(opt.descriptionKey)}
+                  </Typography>
+                </Box>
+              </li>
+            )}
             isOptionEqualToValue={(opt, val) => opt.id === val.id}
             renderInput={(params) => (
               <TextField
@@ -274,7 +285,7 @@ export default function QuantitiesPage() {
           <TextField
             size="small"
             placeholder={t(
-              "reverso.barcode_placeholder",
+              "quantities.barcode_placeholder",
               "Filtrer par code-barres...",
             )}
             value={barcodeParam}
@@ -306,7 +317,7 @@ export default function QuantitiesPage() {
               }}
               variant="outlined"
             >
-              {t("reverso.clear_filter", "Effacer")}
+              {t("quantities.clear_filter", "Effacer")}
             </Button>
           )}
         </Stack>
@@ -385,19 +396,20 @@ export default function QuantitiesPage() {
               retry();
             }}
           >
-            {t("reverso.refresh_all", "Réinitialiser et recharger")}
+            {t("quantities.refresh_all", "Réinitialiser et recharger")}
           </Button>
         </Paper>
       ) : (
         <Grid container spacing={3}>
           {/* Left Column: Photos Viewer */}
           <Grid size={{ xs: 12, md: 6, lg: 7 }}>
-            <QuantityPhotoViewer product={currentProduct} />
+            <QuantityPhotoViewer key={currentProduct.code} product={currentProduct} />
           </Grid>
 
           {/* Right Column: Quantity Edit Panel */}
           <Grid size={{ xs: 12, md: 6, lg: 5 }}>
             <QuantityEditPanel
+              key={currentProduct.code}
               product={currentProduct}
               isLoggedIn={isLoggedIn}
               onSave={handleSave}

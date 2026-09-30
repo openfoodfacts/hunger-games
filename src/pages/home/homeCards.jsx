@@ -68,7 +68,7 @@ const cards = [
     link: "/quantities",
     image: home_weights,
     category: "featured",
-    badge: "Poids / Vol",
+    badge: "home.game_selector.cards.quantities.badge",
   },
   {
     id: "ingredient_spellcheck",
@@ -260,7 +260,7 @@ const HomeCard = ({ cardInfo, t }) => {
             </Typography>
             {badge && (
               <Chip
-                label={badge}
+                label={t(badge)}
                 size="small"
                 sx={{ flexShrink: 0, fontWeight: 700 }}
               />

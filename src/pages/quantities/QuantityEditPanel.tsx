@@ -47,32 +47,32 @@ export default function QuantityEditPanel({
 }: QuantityEditPanelProps) {
   const { t } = useTranslation();
 
-  const [quantityInput, setQuantityInput] = React.useState<string>("");
-  const [servingSizeInput, setServingSizeInput] = React.useState<string>("");
-  const [showServingInput, setShowServingInput] =
-    React.useState<boolean>(false);
+  const [quantityInput, setQuantityInput] = React.useState<string>(
+    () => product.quantity || "",
+  );
+  const [servingSizeInput, setServingSizeInput] = React.useState<string>(
+    () => product.serving_size || "",
+  );
+  const [showServingInput, setShowServingInput] = React.useState<boolean>(() =>
+    (product.data_quality_warnings_tags || []).some((w) =>
+      w.includes("serving"),
+    ),
+  );
   const [copiedCode, setCopiedCode] = React.useState<boolean>(false);
   const quantityInputRef = React.useRef<HTMLInputElement>(null);
 
-  // Initialize input values when product changes
   React.useEffect(() => {
-    setQuantityInput(product.quantity || "");
-    setServingSizeInput(product.serving_size || "");
-
-    const warnings = product.data_quality_warnings_tags || [];
-    const hasServingWarning = warnings.some((w) => w.includes("serving"));
-    setShowServingInput(hasServingWarning);
-
-    // Auto-focus input
-    setTimeout(() => {
+    const timeout = window.setTimeout(() => {
       quantityInputRef.current?.focus();
       quantityInputRef.current?.select();
     }, 50);
-  }, [product]);
+    return () => window.clearTimeout(timeout);
+  }, []);
 
   // Keyboard shortcut: Enter to save, Escape or 's' when not typing in text field to skip
   React.useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.isComposing) return;
       // Ctrl+Enter or Cmd+Enter from anywhere, or plain Enter when in the quantity input
       if (
         (e.key === "Enter" && (e.ctrlKey || e.metaKey)) ||
@@ -80,7 +80,7 @@ export default function QuantityEditPanel({
           document.activeElement === quantityInputRef.current)
       ) {
         e.preventDefault();
-        if (quantityInput.trim()) {
+        if (!isSaving && quantityInput.trim()) {
           void onSave(
             quantityInput.trim(),
             servingSizeInput.trim() || undefined,
@@ -94,14 +94,17 @@ export default function QuantityEditPanel({
 
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [quantityInput, servingSizeInput, onSave, onSkip]);
+  }, [quantityInput, servingSizeInput, onSave, onSkip, isSaving]);
 
   const handleCopyBarcode = () => {
-    if (product.code) {
-      navigator.clipboard.writeText(product.code);
-      setCopiedCode(true);
-      setTimeout(() => setCopiedCode(false), 2000);
-    }
+    if (!product.code) return;
+    void navigator.clipboard
+      .writeText(product.code)
+      .then(() => {
+        setCopiedCode(true);
+        window.setTimeout(() => setCopiedCode(false), 2000);
+      })
+      .catch(() => setCopiedCode(false));
   };
 
   // Generate smart suggestions based on product current values
@@ -147,7 +150,7 @@ export default function QuantityEditPanel({
 
   const handleSubmit = (e?: React.FormEvent) => {
     if (e) e.preventDefault();
-    if (!quantityInput.trim()) return;
+    if (isSaving || !quantityInput.trim()) return;
     void onSave(quantityInput.trim(), servingSizeInput.trim() || undefined);
   };
 
@@ -225,7 +228,7 @@ export default function QuantityEditPanel({
             href={off.getProductEditUrl(product.code)}
             endIcon={<EditIcon fontSize="small" />}
           >
-            {t("reverso.edit", "Éditer")}
+            {t("quantities.edit", "Éditer")}
           </Button>
         </Stack>
       </Box>
@@ -444,14 +447,14 @@ export default function QuantityEditPanel({
             disabled={isSaving}
             sx={{ flex: 1, py: 1.25, fontWeight: 700 }}
           >
-            {t("questions.skip", "Passer")} (Échap)
+            {t("questions.skip", "Passer")}{" "}
+            {t("quantities.shortcut.escape", "(Échap)")}
           </Button>
 
           <Button
             type="submit"
             variant="contained"
             color="primary"
-            onClick={() => handleSubmit()}
             disabled={isSaving || !quantityInput.trim()}
             startIcon={
               isSaving ? (
@@ -470,7 +473,7 @@ export default function QuantityEditPanel({
           >
             {isSaving
               ? t("quantities.saving", "Enregistrement...")
-              : `${t("quantities.save_and_next", "Enregistrer et suivant")} (Entrée)`}
+              : `${t("quantities.save_and_next", "Enregistrer et suivant")} ${t("quantities.shortcut.enter", "(Entrée)")}`}
           </Button>
         </Stack>
 

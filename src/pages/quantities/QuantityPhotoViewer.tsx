@@ -91,10 +91,6 @@ export default function QuantityPhotoViewer({
     return list;
   }, [product, t]);
 
-  // Reset active index when product changes
-  React.useEffect(() => {
-    setActiveIndex(0);
-  }, [product.code]);
 
   const currentImage = images[activeIndex] || images[0];
 

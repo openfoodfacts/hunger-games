@@ -27,7 +27,7 @@ const FIELDS = [
 
 export default function useQuantityData(
   countryCode: string,
-  warningTag: string = "quantity-not-recognized",
+  warningTag: string = "all",
   specificBarcode?: string,
 ) {
   const [dismissedCodes, setDismissedCodes] = React.useState<Set<string>>(
@@ -52,10 +52,7 @@ export default function useQuantityData(
     enabled: Boolean(specificBarcode),
   });
 
-  const activeTag =
-    !warningTag || warningTag === "all"
-      ? "quantity-not-recognized"
-      : warningTag;
+  const activeTag = warningTag || "all";
 
   const {
     data: queryData,
@@ -63,6 +60,7 @@ export default function useQuantityData(
     fetchNextPage,
     isFetchingNextPage,
     isPending,
+    hasNextPage,
     refetch,
   } = useInfiniteQuery<{ products?: QuantityProduct[]; count?: number }, Error>(
     {
@@ -70,13 +68,14 @@ export default function useQuantityData(
       initialPageParam: 1,
       enabled: !specificBarcode,
       queryFn: async ({ pageParam, signal }) => {
-        const filters: { [key: string]: string }[] = [
-          {
+        const filters: { [key: string]: string }[] = [];
+        if (activeTag !== "all") {
+          filters.push({
             tagtype: "data_quality_warnings",
             tag_contains: "contains",
             tag: activeTag,
-          },
-        ];
+          });
+        }
 
         if (countryCode && countryCode !== "world") {
           filters.push({
@@ -97,6 +96,8 @@ export default function useQuantityData(
         return res.data;
       },
       getNextPageParam: (lastPage, pages) => {
+        const lastProducts = lastPage.products ?? [];
+        if (lastProducts.length === 0) return undefined;
         const currentProducts = pages.flatMap((p) => p.products ?? []);
         const totalCount = lastPage.count ?? 0;
         if (currentProducts.length < totalCount) {
@@ -140,6 +141,7 @@ export default function useQuantityData(
       !specificBarcode &&
       queue.length < 5 &&
       !isPending &&
+      hasNextPage &&
       !isFetchingNextPage &&
       !queryError
     ) {
@@ -149,6 +151,7 @@ export default function useQuantityData(
     specificBarcode,
     queue.length,
     isPending,
+    hasNextPage,
     isFetchingNextPage,
     queryError,
     fetchNextPage,
