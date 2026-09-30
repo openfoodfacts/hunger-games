@@ -2,7 +2,7 @@
   "home": {
     "game_selector": {
       "title": "Welches Spiel würden Sie gerne spielen?",
-      "external_link": "External link",
+      "external_link": "Externer Link",
       "cards": {
         "questions": {
           "title": "Fragen",
@@ -17,8 +17,8 @@
           "description": "Die Fragen mit dem höchsten Wert mit Anmerkungen versehen"
         },
         "create_products": {
-          "title": "Create missing products",
-          "description": "Add products that are not in the database yet, over on Open Prices"
+          "title": "Erstelle fehlende Produkte",
+          "description": "Füge Produkte, die noch nicht in der Datenbank sind, über Open Prices hinzu"
         }
       }
     },
@@ -29,12 +29,12 @@
       "contribution_details": "Erfahren Sie, warum Ihr Beitrag wichtig ist"
     },
     "saved_filters": "Gespeicherte Filter",
-    "saved_filters_delete": "Delete saved filter",
+    "saved_filters_delete": "Lösche gespeicherte Filter",
     "saved_filters_delete_title": "Delete saved filter?",
-    "saved_filters_delete_description": "This saved filter will be removed from this device.",
+    "saved_filters_delete_description": "Dieser gespeicherte Filter wird von diesem Gerät entfernt werden.",
     "saved_filters_delete_confirm": "Löschen",
-    "saved_filters_pending": "{{count}} products waiting",
-    "saved_filters_pending_unknown": "Products waiting",
+    "saved_filters_pending": "{{count}} Produkte warten",
+    "saved_filters_pending_unknown": "Produkte warten",
     "contribution_modal": {
       "title": "Ihr Beitrag ist wichtig",
       "information": "Hunger Games ist ein Versuch, die Ergebnisse unserer OCR und künstlichen Intelligenz zu nutzen. Wenn Sie die Hunger Games von Open Food Facts nutzen, verbessern Sie unsere gesamte Datenbank, die der Gemeinschaft hilft, bessere Lebensmittelentscheidungen zu treffen. Wir nehmen Ihre Anmerkungen auf und nutzen sie, um Open Food Facts noch genauer und effizienter zu machen.",
@@ -42,7 +42,7 @@
     },
     "statistics": {
       "title": "{{userName}} Statistiken:",
-      "title_without_name": "Your statistics",
+      "title_without_name": "Deine Statistik",
       "empty_state": {
         "title": "No contributions yet",
         "description": "Your contribution statistics will appear here once you start helping improve Open Food Facts.",
