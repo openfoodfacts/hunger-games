@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import { Link } from "react-router";
 
 import OpenInNewRoundedIcon from "@mui/icons-material/OpenInNewRounded";
+import InsightsIcon from "@mui/icons-material/Insights";
 import Box from "@mui/material/Box";
 import Card from "@mui/material/Card";
 import CardActionArea from "@mui/material/CardActionArea";
@@ -10,6 +11,8 @@ import CardContent from "@mui/material/CardContent";
 import Chip from "@mui/material/Chip";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
+
+import { useGameOpportunities } from "../../hooks/useGameOpportunities";
 
 import home_questions from "../../assets/home_questions.svg";
 import home_logos from "../../assets/home_logos.svg";
@@ -69,6 +72,7 @@ const cards = [
     link: "/nutrition",
     image: home_nutrition,
     category: "featured",
+    opportunityGame: "nutrition",
   },
   {
     id: "ingredient_spellcheck",
@@ -77,6 +81,7 @@ const cards = [
     link: "/ingredient-spellcheck",
     image: home_ingredients_spellcheck,
     category: "featured",
+    opportunityGame: "ingredient-spellcheck",
   },
   {
     id: "ingredient_detection",
@@ -85,6 +90,16 @@ const cards = [
     link: "/ingredient-detection",
     image: home_ingredients_crop,
     category: "featured",
+    opportunityGame: "ingredient-detection",
+  },
+  {
+    id: "select_ingredient_image",
+    title: "home.game_selector.cards.select_ingredient_image.title",
+    desc: "home.game_selector.cards.select_ingredient_image.description",
+    link: "/select-ingredient-image",
+    image: home_ingredients_crop,
+    category: "featured",
+    opportunityGame: "select-ingredient-image",
   },
 
   // QUESTION CHALLENGES BY TYPE
@@ -182,6 +197,32 @@ const CATEGORIES = [
   { id: "open_prices", labelKey: "home.game_selector.categories.open_prices" },
 ];
 
+const HomeCardOpportunityBadge = ({ game }) => {
+  const { t } = useTranslation();
+  const { data: count, isLoading } = useGameOpportunities(game);
+
+  if (isLoading || count === undefined) {
+    return null;
+  }
+
+  return (
+    <Box sx={{ mt: 0.75 }}>
+      <Chip
+        size="small"
+        icon={<InsightsIcon sx={{ "&&": { fontSize: "0.85rem" } }} />}
+        variant={count > 0 ? "filled" : "outlined"}
+        color={count > 0 ? "primary" : "default"}
+        label={`${count.toLocaleString()} ${t("opportunities.label", "opportunities")}`}
+        sx={{
+          height: 22,
+          fontSize: "0.72rem",
+          fontWeight: 600,
+        }}
+      />
+    </Box>
+  );
+};
+
 const HomeCard = ({ cardInfo, t }) => {
   const { title, desc, image, Icon, badge } = cardInfo;
   const actionProps = cardInfo.href
@@ -266,6 +307,9 @@ const HomeCard = ({ cardInfo, t }) => {
               />
             )}
           </Stack>
+          {cardInfo.opportunityGame && (
+            <HomeCardOpportunityBadge game={cardInfo.opportunityGame} />
+          )}
           <Typography variant="body2" color="text.secondary" sx={{ mt: 1 }}>
             {t(desc)}
           </Typography>

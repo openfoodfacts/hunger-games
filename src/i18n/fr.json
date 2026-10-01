@@ -35,6 +35,10 @@
           "title": "Jeu de la nutrition",
           "description": "Extrayez et validez les valeurs nutritionnelles des tableaux sur les emballages"
         },
+        "select_ingredient_image": {
+          "title": "Sélection d'image d'ingrédients",
+          "description": "Identifiez et sélectionnez rapidement l'image de l'emballage contenant la liste des ingrédients"
+        },
         "prices_validation": {
           "title": "Validation des prix",
           "description": "Vérifiez les prix et les tickets de caisse contribués sur Open Prices"
@@ -218,6 +222,7 @@
     "nutritions": "Nutrition",
     "ingredient-spellcheck": "Vérification orthographique des ingrédients",
     "ingredient-detection": "Détection des ingrédients",
+    "select-ingredient-image": "Sélection d'image d'ingrédients",
     "settings": "Paramètres",
     "green-score": "Green-Score",
     "dashboard": "Tableau de bord des logos",
@@ -492,5 +497,17 @@
       "title": "APK Android",
       "subtitle": "Télécharger"
     }
+  },
+  "opportunities": {
+    "label": "opportunités"
+  },
+  "select_ingredient_image": {
+    "title": "Sélection d'image d'ingrédients",
+    "description": "Sélectionnez la photo montrant la liste des ingrédients pour les produits qui n'en ont pas encore de sélectionnée.",
+    "choose_prompt": "Quelle photo contient la liste des ingrédients ?",
+    "none_of_these": "Aucune image d'ingrédient",
+    "loading": "Recherche de produits en attente de sélection d'image d'ingrédients...",
+    "no_products_found": "Aucun produit en attente de sélection d'image d'ingrédients actuellement.",
+    "error_loading": "Échec du chargement des produits. Veuillez réessayer."
   }
 }

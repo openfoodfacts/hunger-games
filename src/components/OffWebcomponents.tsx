@@ -1,6 +1,7 @@
 import * as React from "react";
 import { OFF_IMAGE_URL, OFF_URL, ROBOTOFF_API_URL } from "../const";
 import { useTranslation } from "react-i18next";
+import { useTheme } from "@mui/material/styles";
 
 let webcomponentsLoadPromise: Promise<unknown> | undefined;
 
@@ -37,6 +38,20 @@ export const OffWebcomponentsConfiguration = () => {
   );
 };
 
+const useWebcomponentsThemeStyle = () => {
+  const theme = useTheme();
+  const isDark = theme.palette.mode === "dark";
+  return {
+    "--off-input-bg": isDark ? "#2b2b2b" : "#fafafa",
+    "--off-input-border": isDark ? "#555555" : "#cccccc",
+    "--off-input-color": isDark ? "#eeeeee" : "#333333",
+    "--off-card-bg": isDark ? "#1e1e1e" : "#ffffff",
+    "--off-text-color": isDark ? "#f0f0f0" : "#222222",
+    color: isDark ? "#f0f0f0" : "#222222",
+    width: "100%",
+  } as React.CSSProperties;
+};
+
 export const RobotoffNutrientExtraction = ({
   productCode,
   countryCode,
@@ -44,18 +59,25 @@ export const RobotoffNutrientExtraction = ({
   productCode?: string;
   countryCode?: string;
 }) => {
+  const themeStyle = useWebcomponentsThemeStyle();
+
   return (
-    <robotoff-nutrient-extraction
-      display-product-link
-      product-code={productCode}
-      country-codes={countryCode}
-      key={`${productCode}-${countryCode || "all"}`}
-    />
+    <div style={themeStyle}>
+      <robotoff-nutrient-extraction
+        display-product-link
+        product-code={productCode}
+        country-codes={countryCode}
+        key={`${productCode}-${countryCode || "all"}`}
+      />
+    </div>
   );
 };
+
 export const RobotoffIngredientSpellcheck = () => {
+  const themeStyle = useWebcomponentsThemeStyle();
+
   return (
-    <div>
+    <div style={themeStyle}>
       <robotoff-ingredient-spellcheck
         display-product-link
       ></robotoff-ingredient-spellcheck>
@@ -64,8 +86,10 @@ export const RobotoffIngredientSpellcheck = () => {
 };
 
 export const RobotoffIngredientDetection = () => {
+  const themeStyle = useWebcomponentsThemeStyle();
+
   return (
-    <div>
+    <div style={themeStyle}>
       <robotoff-ingredient-detection
         display-product-link
       ></robotoff-ingredient-detection>

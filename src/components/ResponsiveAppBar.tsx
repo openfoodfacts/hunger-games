@@ -91,6 +91,10 @@ const PAGES: Page[] = [
         url: "ingredient-detection",
         translationKey: "menu.ingredient-detection",
       },
+      {
+        url: "select-ingredient-image",
+        translationKey: "menu.select-ingredient-image",
+      },
     ],
   },
   { url: "insights", translationKey: "menu.insights", devModeOnly: true },

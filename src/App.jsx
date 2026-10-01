@@ -56,6 +56,9 @@ const IngredientDetectionPage = React.lazy(
 const IngredientSpellcheckPage = React.lazy(
   () => import("./pages/ingredient-spellcheck"),
 );
+const SelectIngredientImagePage = React.lazy(
+  () => import("./pages/select-ingredient-image"),
+);
 const DashBoard = React.lazy(() => import("./pages/logosValidator/DashBoard"));
 const GalaBoard = React.lazy(() => import("./pages/GalaPage"));
 const IngredientPage = React.lazy(() => import("./pages/ingredients"));
@@ -308,6 +311,14 @@ export default function App() {
                     <Route
                       path="/ingredient-spellcheck"
                       element={<IngredientSpellcheckPage />}
+                    />
+                    <Route
+                      path="/select-ingredient-image"
+                      element={<SelectIngredientImagePage />}
+                    />
+                    <Route
+                      path="/ingredients-image-selection"
+                      element={<SelectIngredientImagePage />}
                     />
                     <Route path="/brandinator" element={<Brandinator />} />
                     <Route path="/settings" element={<SettingsPage />} />

@@ -69,6 +69,7 @@ export const getImagesUrls = (
     .map((key) => {
       const image = images[key];
       return {
+        imgid: key,
         imageUrl: `${rootImageUrl}/${key}.400.jpg`,
         imageUrlFull: `${rootImageUrl}/${key}.jpg`,
         uploaded_t:
