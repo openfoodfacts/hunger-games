@@ -224,6 +224,11 @@
     "login_description": "You are not currently logged into Open Food Facts. To get your answers directly applied to products and associated to your account, consider logging in to your Open Food Facts account, or creating one",
     "please_wait_while_we_fetch_the_question": "Please wait while we fetch the question!"
   },
+  "restricted_page": {
+    "title": "Restricted page",
+    "description": "Advanced games and moderation tools are restricted to connected Open Food Facts users. Please log in or create an account to continue.",
+    "refresh_status": "Check login status"
+  },
   "menu": {
     "title": "Hunger Games",
     "games": "Games",

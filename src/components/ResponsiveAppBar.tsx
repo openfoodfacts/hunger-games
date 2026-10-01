@@ -686,9 +686,10 @@ const ResponsiveAppBar = () => {
                     countryNames.find((c) => c.countryCode === country) ??
                     countryNames.find((c) => c.countryCode === "")
                   }
-                  onChange={(_, newValue) =>
-                    setCountry(newValue?.countryCode ?? "", "global")
-                  }
+                  onChange={(
+                    _,
+                    newValue: (typeof countryNames)[number] | null,
+                  ) => setCountry(newValue?.countryCode ?? "", "global")}
                   sx={{
                     width: { lg: 160, xl: 220 },
                     fieldset: { border: "none" },
@@ -697,22 +698,23 @@ const ResponsiveAppBar = () => {
                       bgcolor: "action.hover",
                     },
                   }}
-                  renderInput={(params) => (
-                    <TextField
-                      {...params}
-                      variant="outlined"
-                      size="small"
-                      slotProps={{
-                        ...params.slotProps,
-                        htmlInput: {
-                          ...params.slotProps.htmlInput,
+                  renderInput={(params) => {
+                    const inputProps =
+                      params.inputProps as React.InputHTMLAttributes<HTMLInputElement>;
+                    return (
+                      <TextField
+                        {...params}
+                        variant="outlined"
+                        size="small"
+                        inputProps={{
+                          ...inputProps,
                           "aria-label": t("menu.country", {
                             defaultValue: "Country",
                           }),
-                        },
-                      }}
-                    />
-                  )}
+                        }}
+                      />
+                    );
+                  }}
                 />
               </Box>
               <IconButton
