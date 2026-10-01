@@ -86,7 +86,7 @@ export default function QuantityEditPanel({
             servingSizeInput.trim() || undefined,
           );
         }
-      } else if (e.key === "Escape") {
+      } else if (e.key === "Escape" && !isSaving && !e.defaultPrevented) {
         e.preventDefault();
         onSkip();
       }
@@ -108,7 +108,7 @@ export default function QuantityEditPanel({
   };
 
   // Generate smart suggestions based on product current values
-  const smartSuggestions = React.useMemo(() => {
+  const smartSuggestions = React.useMemo<string[]>(() => {
     const suggestions: string[] = [];
     const raw = (product.quantity || "").trim();
 
@@ -134,7 +134,11 @@ export default function QuantityEditPanel({
       suggestions.push(product.serving_size);
     }
 
-    return [...new Set(suggestions)];
+    return suggestions.reduce<string[]>(
+      (unique, suggestion) =>
+        unique.includes(suggestion) ? unique : [...unique, suggestion],
+      [],
+    );
   }, [product.quantity, product.serving_size]);
 
   // Warning tags matching quantity

@@ -38,11 +38,37 @@ interface CountryOption {
   countryCode: string;
 }
 
+type SearchParamsSetter = (
+  update: (previous: URLSearchParams) => URLSearchParams,
+) => void;
+
+const useTypedSearchParams = useSearchParams as unknown as () => [
+  URLSearchParams,
+  SearchParamsSetter,
+];
+
 export default function QuantitiesPage() {
   const { t } = useTranslation();
-  const [searchParams, setSearchParams] = useSearchParams();
+  const [searchParams, setSearchParams] = useTypedSearchParams();
   const barcodeParam = searchParams.get("code") || "";
+  const [barcodeDraft, setBarcodeDraft] = React.useState({
+    source: barcodeParam,
+    value: barcodeParam,
+  });
+  const barcodeInput =
+    barcodeDraft.source === barcodeParam ? barcodeDraft.value : barcodeParam;
   const warningParam = searchParams.get("warning") || "all";
+
+  const commitBarcode = (value: string) => {
+    const code = value.trim();
+    const next = new URLSearchParams(searchParams);
+    if (code) {
+      next.set("code", code);
+    } else {
+      next.delete("code");
+    }
+    setSearchParams(next);
+  };
 
   const [country, setCountry] = useCountry();
   const { isLoggedIn } = React.useContext(LoginContext);
@@ -292,16 +318,16 @@ export default function QuantitiesPage() {
               "quantities.barcode_placeholder",
               "Filter by barcode...",
             )}
-            value={barcodeParam}
-            onChange={(e) => {
-              const val = e.target.value.trim();
-              const next = new URLSearchParams(searchParams);
-              if (val) {
-                next.set("code", val);
-              } else {
-                next.delete("code");
+            value={barcodeInput}
+            onChange={(e) =>
+              setBarcodeDraft({ source: barcodeParam, value: e.target.value })
+            }
+            onBlur={() => commitBarcode(barcodeInput)}
+            onKeyDown={(e) => {
+              if (e.key === "Enter") {
+                e.preventDefault();
+                commitBarcode(barcodeInput);
               }
-              setSearchParams(next);
             }}
             sx={{
               flex: 1,
