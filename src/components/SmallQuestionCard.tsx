@@ -2,7 +2,7 @@ import { useQuery } from "@tanstack/react-query";
 import { useTranslation } from "react-i18next";
 
 import {
-  CircularProgress,
+  Skeleton,
   CardActionArea,
   CardMedia,
   Card,
@@ -100,7 +100,12 @@ export default function SmallQuestionCard({
           })}
         >
           {isQuestionCountLoading || questionNumber == null ? (
-            <CircularProgress size={16} sx={{ color: "text.secondary" }} />
+            <Skeleton
+              variant="rounded"
+              width={54}
+              height={22}
+              sx={{ borderRadius: 1, my: 0.5 }}
+            />
           ) : (
             <>
               <Typography
