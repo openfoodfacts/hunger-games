@@ -39,6 +39,10 @@
           "title": "Nutrition game",
           "description": "Extract and validate nutritional values from packaging tables"
         },
+        "data_quality": {
+          "title": "Data Quality Dashboard",
+          "description": "Fix data quality errors on popular products and help reach the 0.9% error goal"
+        },
         "prices_validation": {
           "title": "Price Validation",
           "description": "Verify prices and receipts contributed to Open Prices"
@@ -247,6 +251,7 @@
     "ingredient-detection": "Detect ingredients",
     "settings": "Settings",
     "dashboard": "Logo dashboard",
+    "data_quality": "Data quality",
     "tour": "Take a tour",
     "open_navigation": "Open navigation menu",
     "logged_in_user": "Logged in as {{userName}}",
