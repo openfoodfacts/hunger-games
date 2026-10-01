@@ -95,6 +95,7 @@ const PAGES: Page[] = [
     ],
   },
   { url: "insights", translationKey: "menu.insights", devModeOnly: true },
+  { url: "data-quality", translationKey: "menu.data_quality" },
   { url: "dashboard", translationKey: "menu.dashboard" },
   { url: "settings", translationKey: "menu.settings", mobileOnly: true },
   {
