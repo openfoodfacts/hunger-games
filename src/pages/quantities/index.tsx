@@ -38,8 +38,14 @@ interface CountryOption {
   countryCode: string;
 }
 
+type SearchParamsInit =
+  | string
+  | [string, string][]
+  | Record<string, string | string[]>
+  | URLSearchParams;
+
 type SearchParamsSetter = (
-  update: (previous: URLSearchParams) => URLSearchParams,
+  update: SearchParamsInit | ((previous: URLSearchParams) => SearchParamsInit),
 ) => void;
 
 const useTypedSearchParams = useSearchParams as unknown as () => [
@@ -61,6 +67,7 @@ export default function QuantitiesPage() {
 
   const commitBarcode = (value: string) => {
     const code = value.trim();
+    setBarcodeDraft({ source: code, value: code });
     const next = new URLSearchParams(searchParams);
     if (code) {
       next.set("code", code);
@@ -324,10 +331,15 @@ export default function QuantitiesPage() {
             }
             onBlur={() => commitBarcode(barcodeInput)}
             onKeyDown={(e) => {
-              if (e.key === "Enter") {
-                e.preventDefault();
-                commitBarcode(barcodeInput);
+              if (
+                e.key !== "Enter" ||
+                e.nativeEvent.isComposing ||
+                e.keyCode === 229
+              ) {
+                return;
               }
+              e.preventDefault();
+              commitBarcode(barcodeInput);
             }}
             sx={{
               flex: 1,
@@ -341,6 +353,7 @@ export default function QuantitiesPage() {
             <Button
               size="small"
               onClick={() => {
+                setBarcodeDraft({ source: "", value: "" });
                 const next = new URLSearchParams(searchParams);
                 next.delete("code");
                 setSearchParams(next);
