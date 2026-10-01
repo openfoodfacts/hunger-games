@@ -194,7 +194,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@base-ui/utils@npm:^0.3.1":
+"@base-ui/utils@npm:^0.3.2":
   version: 0.3.2
   resolution: "@base-ui/utils@npm:0.3.2"
   dependencies:
@@ -956,7 +956,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mui/utils@npm:^9.3.0, @mui/utils@npm:^9.4.0":
+"@mui/utils@npm:^9.4.0":
   version: 9.4.0
   resolution: "@mui/utils@npm:9.4.0"
   dependencies:
@@ -976,18 +976,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mui/x-data-grid@npm:^9.12.0":
-  version: 9.12.0
-  resolution: "@mui/x-data-grid@npm:9.12.0"
+"@mui/x-data-grid@npm:^9.14.0":
+  version: 9.14.0
+  resolution: "@mui/x-data-grid@npm:9.14.0"
   dependencies:
     "@babel/runtime": "npm:^7.29.7"
-    "@base-ui/utils": "npm:^0.3.1"
-    "@mui/utils": "npm:^9.3.0"
-    "@mui/x-internals": "npm:^9.12.0"
-    "@mui/x-virtualizer": "npm:0.7.0"
+    "@base-ui/utils": "npm:^0.3.2"
+    "@mui/utils": "npm:^9.4.0"
+    "@mui/x-internals": "npm:^9.14.0"
+    "@mui/x-virtualizer": "npm:0.7.2"
     clsx: "npm:^2.1.1"
     prop-types: "npm:^15.8.1"
-    use-sync-external-store: "npm:^1.6.0"
+    use-sync-external-store: "npm:^1.7.0"
   peerDependencies:
     "@emotion/react": ^11.9.0
     "@emotion/styled": ^11.8.1
@@ -1000,38 +1000,38 @@ __metadata:
       optional: true
     "@emotion/styled":
       optional: true
-  checksum: 10/7549c0f680bcbb6c0ff1f153206a8025d2b56b0fa75757cff05536ded46b81240bae1fdd191688133fbe1dbcd58dd6827440cc9767bc116a3fdedf59f60cec53
+  checksum: 10/91119e42611f61a1cdd31eda621117e347d13748ebcd5fccbd6ad3399cd62ceb98c7d443f703ed384b9e4a0988d025e10e1d547f6a42d383ab268bc1305b9657
   languageName: node
   linkType: hard
 
-"@mui/x-internals@npm:^9.12.0":
-  version: 9.12.0
-  resolution: "@mui/x-internals@npm:9.12.0"
+"@mui/x-internals@npm:^9.14.0":
+  version: 9.14.0
+  resolution: "@mui/x-internals@npm:9.14.0"
   dependencies:
     "@babel/runtime": "npm:^7.29.7"
-    "@base-ui/utils": "npm:^0.3.1"
-    "@mui/utils": "npm:^9.3.0"
+    "@base-ui/utils": "npm:^0.3.2"
+    "@mui/utils": "npm:^9.4.0"
     reselect: "npm:^5.2.0"
-    use-sync-external-store: "npm:^1.6.0"
+    use-sync-external-store: "npm:^1.7.0"
   peerDependencies:
     react: ^17.0.0 || ^18.0.0 || ^19.0.0
     react-dom: ^17.0.0 || ^18.0.0 || ^19.0.0
-  checksum: 10/2986d8cfaf84bcd7119fd91aaa3c9713b3baa7aaad46c89c2f116b3c887276f1726e40a896c8b67f04be08b8704eb9411f19f867a72ab69dd29a37ca5787e15b
+  checksum: 10/95b76514eae1690df31bc70a0a15e768904b0427e39a834d09206135a44832072f15e6947506598e425021593166f2a697a6ddd6ced016bad4ba25e9706041ff
   languageName: node
   linkType: hard
 
-"@mui/x-virtualizer@npm:0.7.0":
-  version: 0.7.0
-  resolution: "@mui/x-virtualizer@npm:0.7.0"
+"@mui/x-virtualizer@npm:0.7.2":
+  version: 0.7.2
+  resolution: "@mui/x-virtualizer@npm:0.7.2"
   dependencies:
     "@babel/runtime": "npm:^7.29.7"
-    "@base-ui/utils": "npm:^0.3.1"
-    "@mui/utils": "npm:^9.3.0"
-    "@mui/x-internals": "npm:^9.12.0"
+    "@base-ui/utils": "npm:^0.3.2"
+    "@mui/utils": "npm:^9.4.0"
+    "@mui/x-internals": "npm:^9.14.0"
   peerDependencies:
     react: ^17.0.0 || ^18.0.0 || ^19.0.0
     react-dom: ^17.0.0 || ^18.0.0 || ^19.0.0
-  checksum: 10/58a853900f0f9d804199cd7dd47e661e0d7e4216db44e26edc680c300be65cf41e4344d6710a153681b9ea37c77afa78447d5ad0027a568b2bb3076e6029ae44
+  checksum: 10/7d56e0235c0d1105a5f597b7bf037db2743c4b6803eabcfcc24285af42ec366eab405857684a5679a86ed269c5bd00be08fb1d0d30431a70f9ac0031a44f3f8b
   languageName: node
   linkType: hard
 
@@ -3386,7 +3386,7 @@ __metadata:
     "@mui/lab": "npm:^9.0.0-beta.9"
     "@mui/material": "npm:^9.4.0"
     "@mui/system": "npm:^9.4.0"
-    "@mui/x-data-grid": "npm:^9.12.0"
+    "@mui/x-data-grid": "npm:^9.14.0"
     "@openfoodfacts/openfoodfacts-nodejs": "npm:2.0.0-alpha.29"
     "@openfoodfacts/openfoodfacts-webcomponents": "npm:^1.16.0"
     "@tanstack/react-query": "npm:^5.102.8"
@@ -5860,6 +5860,15 @@ __metadata:
   peerDependencies:
     react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
   checksum: 10/b40ad2847ba220695bff2d4ba4f4d60391c0fb4fb012faa7a4c18eb38b69181936f5edc55a522c4d20a788d1a879b73c3810952c9d0fd128d01cb3f22042c09e
+  languageName: node
+  linkType: hard
+
+"use-sync-external-store@npm:^1.7.0":
+  version: 1.7.0
+  resolution: "use-sync-external-store@npm:1.7.0"
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
+  checksum: 10/cc102e193d079dda118846627f97ac8d34059ae7e1112188ed6330bd42a6b31c209cbb39923d4d663ddc42e5969913015778397131fcd3249909756c88ba9906
   languageName: node
   linkType: hard
 
