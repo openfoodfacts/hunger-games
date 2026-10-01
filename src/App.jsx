@@ -60,6 +60,7 @@ const DashBoard = React.lazy(() => import("./pages/logosValidator/DashBoard"));
 const GalaBoard = React.lazy(() => import("./pages/GalaPage"));
 const IngredientPage = React.lazy(() => import("./pages/ingredients"));
 const Brandinator = React.lazy(() => import("./pages/Brandinator"));
+const LogicBombPage = React.lazy(() => import("./pages/logic-bomb"));
 const BugPage = React.lazy(() => import("./pages/bug"));
 
 // OFF colors
@@ -310,6 +311,8 @@ export default function App() {
                       element={<IngredientSpellcheckPage />}
                     />
                     <Route path="/brandinator" element={<Brandinator />} />
+                    <Route path="/logic-bomb" element={<LogicBombPage />} />
+                    <Route path="/logicbomb" element={<LogicBombPage />} />
                     <Route path="/settings" element={<SettingsPage />} />
                     <Route path="/questions" element={<QuestionsPage />} />
                     <Route path="/insights" element={<InsightsPage />} />

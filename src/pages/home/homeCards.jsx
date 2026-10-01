@@ -23,6 +23,7 @@ import home_packaging from "../../assets/home_packaging.svg";
 import home_weights from "../../assets/home_weights.svg";
 import home_brands from "../../assets/home_brands.svg";
 import home_brandinator from "../../assets/home_brandinator.png";
+import home_logic_bomb from "../../assets/home_logic_bomb.svg";
 import home_labels from "../../assets/home_labels.svg";
 import home_open_beauty_facts from "../../assets/home_open_beauty_facts.svg";
 import home_open_pet_food_facts from "../../assets/home_open_pet_food_facts.svg";
@@ -52,6 +53,14 @@ const cards = [
     desc: "home.game_selector.cards.green_score.description",
     link: "/green-score",
     image: home_greenscore,
+    category: "featured",
+  },
+  {
+    id: "logic_bomb",
+    title: "home.game_selector.cards.logic_bomb.title",
+    desc: "home.game_selector.cards.logic_bomb.description",
+    link: "/logic-bomb",
+    image: home_logic_bomb,
     category: "featured",
   },
   {

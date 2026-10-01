@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="lbBgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff7ed" />
+      <stop offset="100%" stop-color="#ffedd5" />
+    </linearGradient>
+    <linearGradient id="bombGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#334155" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <linearGradient id="fireGrad" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="50%" stop-color="#ef4444" />
+      <stop offset="100%" stop-color="#fbbf24" />
+    </linearGradient>
+    <linearGradient id="tagSweetGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ec4899" />
+      <stop offset="100%" stop-color="#db2777" />
+    </linearGradient>
+    <linearGradient id="tagSaltyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0ea5e9" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+    <filter id="lbShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#0f172a" flood-opacity="0.1" />
+    </filter>
+  </defs>
+
+  <!-- Background Base Container -->
+  <rect width="350" height="200" rx="16" fill="url(#lbBgGrad)" />
+
+  <!-- Main Card Container -->
+  <g filter="url(#lbShadow)">
+    <rect x="25" y="16" width="300" height="168" rx="16" fill="#ffffff" stroke="#fed7aa" stroke-width="1.5" />
+  </g>
+
+  <!-- Left: Bomb Illustration -->
+  <g transform="translate(68, 92)">
+    <!-- Fuse Line -->
+    <path d="M 0 -28 C 12 -46, 26 -44, 34 -56" fill="none" stroke="#78350f" stroke-width="3" stroke-linecap="round" />
+    <!-- Spark / Fire -->
+    <g transform="translate(34, -58)">
+      <polygon points="0,-10 3,-3 10,-3 4,2 7,9 0,4 -7,9 -4,2 -10,-3 -3,-3" fill="url(#fireGrad)" />
+      <circle cx="0" cy="0" r="3" fill="#ffffff" />
+    </g>
+
+    <!-- Bomb Body -->
+    <circle cx="0" cy="0" r="36" fill="url(#bombGrad)" />
+    <!-- Bomb Highlights -->
+    <circle cx="-10" cy="-12" r="28" fill="none" stroke="#475569" stroke-width="2.5" stroke-dasharray="14 36" />
+    <!-- Bomb Neck -->
+    <rect x="-10" y="-36" width="20" height="10" rx="3" fill="#1e293b" />
+    <!-- Digital Ticking Face -->
+    <rect x="-18" y="-10" width="36" height="20" rx="4" fill="#020617" stroke="#334155" stroke-width="1" />
+    <text x="0" y="5" font-family="monospace, -apple-system, sans-serif" font-size="12" font-weight="900" fill="#ef4444" text-anchor="middle">00:07</text>
+  </g>
+
+  <!-- Middle: Conflict Thunderbolt ⚡ -->
+  <g transform="translate(138, 76)">
+    <circle cx="18" cy="18" r="16" fill="#fef2f2" stroke="#fecaca" stroke-width="1.5" />
+    <path d="M 19 6 L 12 18 L 18 18 L 16 30 L 25 17 L 19 17 Z" fill="#dc2626" />
+  </g>
+
+  <!-- Right: Conflicting Tags & Defuse Action -->
+  <g transform="translate(182, 38)">
+    <!-- Header -->
+    <text x="0" y="16" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="800" fill="#7c2d12">CONTRADICTION DETECTED</text>
+    
+    <!-- Tag 1: Salty -->
+    <g transform="translate(0, 26)">
+      <rect width="124" height="26" rx="13" fill="url(#tagSaltyGrad)" />
+      <text x="14" y="17" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" fill="#ffffff">salty-snacks</text>
+      <circle cx="108" cy="13" r="7" fill="#ffffff" opacity="0.25" />
+      <text x="108" y="16" font-family="sans-serif" font-size="9" font-weight="900" fill="#ffffff" text-anchor="middle">✕</text>
+    </g>
+
+    <!-- Tag 2: Sweet -->
+    <g transform="translate(0, 58)">
+      <rect width="124" height="26" rx="13" fill="url(#tagSweetGrad)" />
+      <text x="14" y="17" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" fill="#ffffff">sweet-snacks</text>
+      <circle cx="108" cy="13" r="7" fill="#ffffff" opacity="0.25" />
+      <text x="108" y="16" font-family="sans-serif" font-size="9" font-weight="900" fill="#ffffff" text-anchor="middle">✕</text>
+    </g>
+
+    <!-- Defuse Button Pill -->
+    <g transform="translate(0, 93)">
+      <rect width="124" height="24" rx="6" fill="#15803d" />
+      <text x="62" y="16" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10.5" font-weight="800" fill="#ffffff" text-anchor="middle">✂️ DEFUSE LOGIC</text>
+    </g>
+  </g>
+</svg>
