@@ -6,6 +6,7 @@ import Paper from "@mui/material/Paper";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import TextField from "@mui/material/TextField";
+import Typography from "@mui/material/Typography";
 
 import { useTranslation } from "react-i18next";
 import Loader from "../loader";
@@ -17,8 +18,9 @@ import { logoTypeOptions } from "../../components/logoTypeOptions";
 import robotoff from "../../robotoff";
 import off from "../../off";
 import useUrlParams from "../../hooks/useUrlParams";
+import { TYPE_WITHOUT_VALUE } from "../../const";
 
-const PRODUCT_PAGE_SIZE = 2;
+const PRODUCT_PAGE_SIZE = 20;
 
 const OFF_2_ROBOTOFF = {
   categories: "category",
@@ -114,7 +116,8 @@ const useLogoFetching = (filter) => {
     let isValid = true;
     const generation = requestGeneration;
     const loadProducts = async () => {
-      if (!filter.tagtype || !filter.tag) {
+      const requiresTag = !TYPE_WITHOUT_VALUE.includes(filter.tagtype);
+      if (!filter.tagtype || (requiresTag && !filter.tag)) {
         return { count: 0, codes: [] };
       }
       setIsLoading(true);
@@ -216,7 +219,7 @@ export default function AnnotateLogosFromProducts() {
     },
     {
       tag: ["valueTag", "value_tag", "value"],
-      tagType: "type",
+      tagtype: "type",
     },
   );
 
@@ -274,35 +277,44 @@ export default function AnnotateLogosFromProducts() {
             ))}
           </TextField>
 
-          {["categories", "labels"].includes(internalFilter.tagtype) ? (
-            <LabelFilter
-              showKey
-              value={internalFilter.tag}
-              onChange={(newValue) =>
-                setInternalFilter((prev) => ({
-                  ...prev,
-                  tag: newValue,
-                }))
-              }
-              label="tag"
-              sx={{ minWidth: 200 }}
-              insightType={OFF_2_ROBOTOFF[internalFilter.tagtype]}
-            />
-          ) : (
-            <TextField
-              value={internalFilter.tag}
-              onChange={(event) =>
-                setInternalFilter((prev) => ({
-                  ...prev,
-                  tag: event.target.value,
-                }))
-              }
-              label="tag"
-              sx={{ minWidth: 200 }}
-            />
-          )}
+          {!TYPE_WITHOUT_VALUE.includes(internalFilter.tagtype) &&
+            (["categories", "labels"].includes(internalFilter.tagtype) ? (
+              <LabelFilter
+                showKey
+                value={internalFilter.tag}
+                onChange={(newValue) =>
+                  setInternalFilter((prev) => ({
+                    ...prev,
+                    tag: newValue,
+                  }))
+                }
+                label="tag"
+                sx={{ minWidth: 200 }}
+                insightType={OFF_2_ROBOTOFF[internalFilter.tagtype]}
+                error={!internalFilter.tag}
+                helperText={!internalFilter.tag ? "A tag is required" : ""}
+              />
+            ) : (
+              <TextField
+                value={internalFilter.tag}
+                onChange={(event) =>
+                  setInternalFilter((prev) => ({
+                    ...prev,
+                    tag: event.target.value,
+                  }))
+                }
+                label="tag"
+                sx={{ minWidth: 200 }}
+                error={!internalFilter.tag}
+                helperText={!internalFilter.tag ? "A tag is required" : ""}
+              />
+            ))}
 
           <Button
+            disabled={
+              !TYPE_WITHOUT_VALUE.includes(internalFilter.tagtype) &&
+              !internalFilter.tag
+            }
             onClick={() => {
               setFilter(internalFilter);
             }}
@@ -314,6 +326,14 @@ export default function AnnotateLogosFromProducts() {
       {
         <>
           <LogoGrid logos={logos} toggleLogoSelection={toggleSelection} />
+          {!isLoading && logos.length === 0 && filter.tagtype && (
+            <Typography
+              variant="body1"
+              sx={{ textAlign: "center", mt: 4, color: "text.secondary" }}
+            >
+              No logos found for this search.
+            </Typography>
+          )}
           <Paper sx={{ py: 1, position: "sticky", bottom: 0 }}>
             {isLoading && <LinearProgress sx={{ my: 2 }} />}
             <Stack direction="row" spacing={2}>
@@ -330,6 +350,7 @@ export default function AnnotateLogosFromProducts() {
                 variant="contained"
                 color="success"
                 onClick={openAnnotation}
+                disabled={!logos.some((logo) => logo.selected)}
               >
                 Annotate
               </Button>
