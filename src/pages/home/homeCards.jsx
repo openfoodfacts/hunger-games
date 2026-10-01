@@ -27,9 +27,19 @@ import home_labels from "../../assets/home_labels.svg";
 import home_open_beauty_facts from "../../assets/home_open_beauty_facts.svg";
 import home_open_pet_food_facts from "../../assets/home_open_pet_food_facts.svg";
 import home_open_products_facts from "../../assets/home_open_products_facts.svg";
+import home_books from "../../assets/home_books.svg";
 
 const cards = [
   // FEATURED / CORE ANNOTATION GAMES
+  {
+    id: "books_game",
+    title: "home.game_selector.cards.move_books.title",
+    desc: "home.game_selector.cards.move_books.description",
+    link: "/books",
+    image: home_books,
+    category: "featured",
+    badge: "New Game",
+  },
   {
     id: "questions",
     title: "home.game_selector.cards.questions.title",
@@ -148,6 +158,15 @@ const cards = [
     image: home_open_products_facts,
     category: "move_products",
     badge: "Open Products Facts",
+  },
+  {
+    id: "move_books",
+    title: "home.game_selector.cards.move_books.title",
+    desc: "home.game_selector.cards.move_books.description",
+    link: "/books",
+    image: home_books,
+    category: "move_products",
+    badge: "Books (978/979)",
   },
 
   // OPEN PRICES PROMOS

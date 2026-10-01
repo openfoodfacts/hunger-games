@@ -74,6 +74,10 @@
         "move_open_products_facts": {
           "title": "Move to Open Products Facts",
           "description": "Identify non-food items to move them to Open Products Facts"
+        },
+        "move_books": {
+          "title": "Move Books to Open Products Facts",
+          "description": "Identify books (barcodes 978 & 979) to move them to Open Products Facts"
         }
       }
     },
@@ -224,6 +228,7 @@
     "title": "Hunger Games",
     "games": "Games",
     "questions": "Questions",
+    "books": "Books",
     "green-score": "Green score",
     "brandinator": "Brandinator",
     "logos": "Logos",
@@ -522,5 +527,36 @@
       "title": "Android APK",
       "subtitle": "Download"
     }
+  },
+  "books": {
+    "title": "Move Books to Open Products Facts",
+    "subtitle": "Find books wrongly cataloged in Open Food Facts and migrate them using barcode prefixes 978 & 979",
+    "is_it_a_book_question": "Is this a book to move to Open Products Facts?",
+    "yes_move_button": "Yes, move to Open Products Facts",
+    "not_a_book_button": "Not a book (Keep in OFF)",
+    "yes_book": "Yes, it's a book (Move to OPF)",
+    "no_book": "No, not a book (Keep in OFF)",
+    "skip": "Skip / Not sure",
+    "filter_prefix": "Barcode Prefix",
+    "prefix_all": "All (978 & 979)",
+    "custom_barcode": "Lookup barcode (e.g. 978...)",
+    "shortcuts_title": "Keyboard Shortcuts",
+    "books_moved_session": "books moved",
+    "recent_activity": "Recent Session Activity",
+    "unknown_title": "Unknown title / Sans titre",
+    "publisher_brand": "Publisher / Brand",
+    "verify_online": "Verify details online",
+    "no_image": "No photo uploaded yet for this product",
+    "front_cover": "Cover",
+    "status_moved": "Moved to OPF",
+    "status_kept_off": "Kept in OFF",
+    "status_skipped": "Skipped",
+    "loading_books": "Loading books from Open Food Facts...",
+    "loading_facet_desc": "Checking facets codes 978xxxxxxxxxx and 979xxxxxxxxxx",
+    "no_products_left": "No more books in this batch!",
+    "congrats_desc": "You have completed reviewing all available products in this queue. You can reload or change prefix.",
+    "load_more": "Load more products",
+    "toast_moved_success": "Book moved to Open Products Facts! (Category added)",
+    "toast_move_error": "Failed to update Open Food Facts category"
   }
 }

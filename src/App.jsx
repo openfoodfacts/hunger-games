@@ -47,6 +47,7 @@ const ShouldLoggedinPage = React.lazy(
   () => import("./pages/shouldLoggedinPage"),
 );
 const PackagingPage = React.lazy(() => import("./pages/packaging"));
+const BooksPage = React.lazy(() => import("./pages/books"));
 // const LogoQuestionValidator = React.lazy(
 //   () => import("./pages/logosValidator/LogoQuestionValidator"),
 // );
@@ -361,6 +362,16 @@ export default function App() {
                       element={
                         userState.isLoggedIn ? (
                           <PackagingPage />
+                        ) : (
+                          <ShouldLoggedinPage />
+                        )
+                      }
+                    />
+                    <Route
+                      path="/books"
+                      element={
+                        userState.isLoggedIn ? (
+                          <BooksPage />
                         ) : (
                           <ShouldLoggedinPage />
                         )
