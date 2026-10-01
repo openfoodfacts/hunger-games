@@ -35,6 +35,14 @@
           "title": "Jeu de la nutrition",
           "description": "Extrayez et validez les valeurs nutritionnelles des tableaux sur les emballages"
         },
+        "packaging_game": {
+          "title": "Jeu des Emballages",
+          "description": "Complétez les emballages facilement : modèles en 1 clic, prédictions OCR et matériaux simplifiés"
+        },
+        "data_quality": {
+          "title": "Qualité des données",
+          "description": "Corrigez les erreurs de qualité sur les produits populaires et aidez à atteindre l'objectif de 0,9 %"
+        },
         "prices_validation": {
           "title": "Validation des prix",
           "description": "Vérifiez les prix et les tickets de caisse contribués sur Open Prices"
@@ -70,6 +78,10 @@
         "move_open_products_facts": {
           "title": "Vers Open Products Facts",
           "description": "Identifiez les articles non alimentaires pour les déplacer vers Open Products Facts"
+        },
+        "move_books": {
+          "title": "Déplacer les livres vers Open Products Facts",
+          "description": "Identifiez les livres (codes-barres 978 et 979) pour les déplacer vers Open Products Facts"
         }
       }
     },
@@ -207,7 +219,9 @@
   "menu": {
     "title": "Hunger Games",
     "games": "Jeux",
+    "packaging": "Emballages",
     "questions": "Questions",
+    "books": "Livres",
     "logos": "Logos",
     "logos-annotation": "Annotation des logos",
     "logos-search": "Recherche de logos",
@@ -221,6 +235,7 @@
     "settings": "Paramètres",
     "green-score": "Green-Score",
     "dashboard": "Tableau de bord des logos",
+    "data_quality": "Qualité des données",
     "tour": "Afficher la visite",
     "logged_in_user": "Connecté en tant que {{userName}}",
     "log_in": "Cliquez pour vous connecter",
@@ -475,6 +490,99 @@
     "skip": "Ignorer ce produit",
     "getRobotoffPrediciton": "Obtenir les prédictions de Robotoff"
   },
+  "data_quality": {
+    "page": {
+      "category": "Infrastructure & Qualité Open Food Facts",
+      "title": "Tableau de bord de la qualité des données",
+      "description": "Corrigez les erreurs de qualité sur les produits populaires, suivez les progrès vers l'objectif de 0,9 % et découvrez les réussites quotidiennes de la communauté !",
+      "current_errors": "{{pct}} % d'erreurs",
+      "target_goal": "Objectif : < {{goal}} %",
+      "your_fixes": "{{count}} corrigés par vous"
+    },
+    "tabs": {
+      "mission": "Mission du jour (3 produits)",
+      "metrics": "Stats quotidiennes & Objectifs",
+      "leaderboard": "Tableau des contributeurs (5 jours)",
+      "resources": "Fonctionnement & Wiki"
+    },
+    "mission": {
+      "badge": "Mission du jour",
+      "fixed_today": "{{count}} corrigés !",
+      "title": "Voici vos produits à corriger",
+      "subtitle": "Ces produits ont des photos vérifiées et sont fréquemment scannés par les consommateurs. Vos corrections ont un impact immédiat !",
+      "randomize": "Aléatoire",
+      "want_to_be_a_hero": "Envie d'être un héros ? +3 autres",
+      "filter_by": "Filtrer :",
+      "filters": {
+        "all": "Toutes les anomalies",
+        "nutrition": "Erreurs nutritionnelles",
+        "ingredients": "Erreurs d'ingrédients",
+        "popularity": "Plus scannés en premier"
+      },
+      "images": {
+        "nutrition": "Nutrition",
+        "ingredients": "Ingrédients",
+        "front": "Face avant"
+      },
+      "scans_tooltip": "{{count}} scans enregistrés",
+      "no_image": "Aucune photo disponible",
+      "detected_errors": "Anomalie détectée :",
+      "edit_on_off": "Éditer sur Open Food Facts",
+      "open_nutrition_game": "Extraire le tableau nutritionnel IA",
+      "mark_fixed": "Marquer comme corrigé",
+      "fixed": "Corrigé ✓",
+      "view_product": "Voir la fiche produit",
+      "bravo": "Bravo & Merci !",
+      "bravo_desc": "Votre correction rend Open Food Facts meilleur pour tout le monde."
+    },
+    "metrics": {
+      "monthly_event": "Rendez-vous mensuel sur Slack",
+      "error_rate_label": "Taux d'erreur",
+      "of_total_products": "sur {{total}} produits",
+      "goal_label": "Seuil ciblé",
+      "days_remaining": "~{{days}} jours pour atteindre le seuil",
+      "velocity_label": "Net corrigé / jour",
+      "fixed_yesterday": "Corrigés hier ({{newErrors}} nouvelles erreurs)",
+      "scans_impact_label": "Scans avec erreurs",
+      "scans_count": "{{scans}}M scans impactés",
+      "progress_title": "Progression vers l'objectif de qualité (< 0,9 %)",
+      "incoming_products_7d": "Produits créés sur les 7 derniers jours",
+      "seven_day_sparkline": "Sparkline Mirabelle (7 jours)",
+      "rolling_averages_title": "Performances glissantes sur 14 jours & stats du jour",
+      "avg_fixed_per_day": "Moyenne produits corrigés / jour (14j)",
+      "avg_new_errors_per_day": "Moyenne nouvelles erreurs / jour (14j)",
+      "net_fixed_per_day": "Vitesse nette de progression / jour",
+      "modified_yesterday": "Produits modifiés hier",
+      "created_yesterday": "Nouveaux produits créés hier",
+      "active_contributors": "Contributeurs actifs du jour"
+    },
+    "leaderboard": {
+      "title": "Tableau des contributeurs (5 derniers jours)",
+      "quote": "Est-ce que cela peut aider votre motivation ? :-) Cela dit, souvenez-vous qu'il s'agit d'un effort collectif. Chaque correction compte. Mais aucune honte si vous n'avez pas beaucoup de temps pour cela :-)",
+      "your_fixes": "Vos corrections aujourd'hui",
+      "rank": "Rang",
+      "contributor": "Contributeur",
+      "fixed_count": "Produits corrigés",
+      "you": "Vous"
+    },
+    "resources": {
+      "how_it_works_title": "Comment ça marche ?",
+      "how_it_works_desc": "Open Food Facts analyse en continu des millions de codes-barres pour repérer les incohérences nutritionnelles, portions manquantes et erreurs de syntaxe.",
+      "rule_1_title": "Vous êtes missionné sur des produits prioritaires",
+      "rule_1_desc": "Plutôt que d'avoir à trier parmi des millions de lignes, chaque session vous propose des produits immédiatement exploitables.",
+      "rule_2_title": "Des produits solvables avec photos vérifiées",
+      "rule_2_desc": "Tous les produits sélectionnés ont des photos de la table nutritionnelle et de la liste d'ingrédients pour vérifier sans deviner.",
+      "rule_3_title": "Impact maximal priorisé par la popularité",
+      "rule_3_desc": "Les produits sont classés par nombre de scans afin que chaque correction profite immédiatement à des milliers de consommateurs.",
+      "community_title": "Communauté & Entraide",
+      "community_desc": "Difficile de corriger un produit ? Une erreur présente telle quelle sur l'emballage ? La communauté Open Food Facts est là !",
+      "wiki_link": "Wiki : Anomalies qui ne peuvent pas être corrigées",
+      "forum_link": "Forum : Catégorie Database",
+      "slack_link": "Slack : Canal #quality-data",
+      "mirabelle_link": "Tableau de bord Mirabelle",
+      "daily_email_link": "S'abonner à l'email quotidien Data Quality"
+    }
+  },
   "footer": {
     "appStore": {
       "title": "App Store",
@@ -492,5 +600,36 @@
       "title": "APK Android",
       "subtitle": "Télécharger"
     }
+  },
+  "books": {
+    "title": "Déplacer les livres vers Open Products Facts",
+    "subtitle": "Identifiez les livres catalogués par erreur dans Open Food Facts et migrez-les grâce aux préfixes 978 et 979",
+    "is_it_a_book_question": "S'agit-il d'un livre à déplacer vers Open Products Facts ?",
+    "yes_move_button": "Oui, déplacer vers Open Products Facts",
+    "not_a_book_button": "Non (Garder dans OFF)",
+    "yes_book": "Oui, c'est un livre (Vers OPF)",
+    "no_book": "Non, ce n'est pas un livre",
+    "skip": "Passer / Pas sûr",
+    "filter_prefix": "Préfixe code-barres",
+    "prefix_all": "Tous (978 & 979)",
+    "custom_barcode": "Chercher un code-barres (ex. 978...)",
+    "shortcuts_title": "Raccourcis clavier",
+    "books_moved_session": "livres déplacés",
+    "recent_activity": "Activité récente de la session",
+    "unknown_title": "Titre inconnu / Sans titre",
+    "publisher_brand": "Éditeur / Marque",
+    "verify_online": "Vérifier en ligne",
+    "no_image": "Aucune photo téléchargée pour ce produit",
+    "front_cover": "Couverture",
+    "status_moved": "Déplacé vers OPF",
+    "status_kept_off": "Conservé dans OFF",
+    "status_skipped": "Ignoré",
+    "loading_books": "Chargement des livres depuis Open Food Facts...",
+    "loading_facet_desc": "Interrogation des facettes de codes 978xxxxxxxxxx et 979xxxxxxxxxx",
+    "no_products_left": "Aucun autre livre dans cette sélection !",
+    "congrats_desc": "Vous avez terminé d'examiner les produits disponibles dans cette file d'attente.",
+    "load_more": "Charger plus de produits",
+    "toast_moved_success": "Livre déplacé vers Open Products Facts ! (Catégorie ajoutée)",
+    "toast_move_error": "Échec de la mise à jour de la catégorie sur Open Food Facts"
   }
 }

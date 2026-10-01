@@ -47,6 +47,7 @@ const ShouldLoggedinPage = React.lazy(
   () => import("./pages/shouldLoggedinPage"),
 );
 const PackagingPage = React.lazy(() => import("./pages/packaging"));
+const BooksPage = React.lazy(() => import("./pages/books"));
 // const LogoQuestionValidator = React.lazy(
 //   () => import("./pages/logosValidator/LogoQuestionValidator"),
 // );
@@ -60,6 +61,7 @@ const DashBoard = React.lazy(() => import("./pages/logosValidator/DashBoard"));
 const GalaBoard = React.lazy(() => import("./pages/GalaPage"));
 const IngredientPage = React.lazy(() => import("./pages/ingredients"));
 const Brandinator = React.lazy(() => import("./pages/Brandinator"));
+const DataQualityDashboard = React.lazy(() => import("./pages/dataQuality"));
 const BugPage = React.lazy(() => import("./pages/bug"));
 
 // OFF colors
@@ -326,6 +328,11 @@ export default function App() {
                       }
                     /> */}
 
+                    <Route
+                      path="/data-quality"
+                      element={<DataQualityDashboard />}
+                    />
+                    <Route path="/quality" element={<DataQualityDashboard />} />
                     <Route path="/dashboard/" element={<DashBoard />} />
                     <Route
                       path="/dashboard/:dasboardId"
@@ -361,6 +368,16 @@ export default function App() {
                       element={
                         userState.isLoggedIn ? (
                           <PackagingPage />
+                        ) : (
+                          <ShouldLoggedinPage />
+                        )
+                      }
+                    />
+                    <Route
+                      path="/books"
+                      element={
+                        userState.isLoggedIn ? (
+                          <BooksPage />
                         ) : (
                           <ShouldLoggedinPage />
                         )

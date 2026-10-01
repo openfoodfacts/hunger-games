@@ -50,7 +50,9 @@ type Page = {
 // Object with no url are subheader in the menu
 const PAGES: Page[] = [
   { translationKey: "menu.games" },
+  { url: "packaging", translationKey: "menu.packaging" },
   { url: "questions", translationKey: "menu.questions" },
+  { url: "books", translationKey: "menu.books" },
   { url: "green-score", translationKey: "menu.green-score" },
   {
     translationKey: "menu.logos",
@@ -94,6 +96,7 @@ const PAGES: Page[] = [
     ],
   },
   { url: "insights", translationKey: "menu.insights", devModeOnly: true },
+  { url: "data-quality", translationKey: "menu.data_quality" },
   { url: "dashboard", translationKey: "menu.dashboard" },
   { url: "settings", translationKey: "menu.settings", mobileOnly: true },
   {

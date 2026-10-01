@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 200" width="100%" height="100%">
+  <!-- Background Base Container -->
+  <rect width="350" height="200" rx="16" fill="#F8F9FA" />
+
+  <!-- Main Card Surface -->
+  <rect x="12" y="10" width="326" height="180" rx="14" fill="#FFFFFF" stroke="#E5E5E5" stroke-width="1.2" />
+
+  <!-- Top Accent Bar (Open Food Facts Red-Orange / Quality) -->
+  <path d="M 12 24 A 14 14 0 0 1 26 10 L 324 10 A 14 14 0 0 1 338 24 L 338 26 L 12 26 Z" fill="#E65100" />
+
+  <!-- Badge Top Right -->
+  <rect x="186" y="16" width="140" height="18" rx="9" fill="#FFF3E0" />
+  <text x="256" y="29" font-family="Plus Jakarta Sans, sans-serif" font-size="8.5" font-weight="700" fill="#E65100" text-anchor="middle" letter-spacing="0.5">DATA QUALITY DAILY</text>
+
+  <!-- Left: Target / Quality Goal Gauge -->
+  <g transform="translate(24, 42)">
+    <rect width="134" height="134" rx="10" fill="#FBFBFC" stroke="#E5E7EB" stroke-width="1" />
+    
+    <!-- Target icon & circle -->
+    <circle cx="67" cy="52" r="36" fill="#FFF8E1" stroke="#FFB300" stroke-width="2" stroke-dasharray="4 2" />
+    <circle cx="67" cy="52" r="25" fill="#FFE0B2" stroke="#FB8C00" stroke-width="1.5" />
+    <circle cx="67" cy="52" r="14" fill="#E65100" />
+    
+    <!-- Center check / star -->
+    <path d="M 63 52 L 66 55 L 72 48" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+
+    <!-- Goal Badge below -->
+    <rect x="14" y="98" width="106" height="24" rx="6" fill="#E8F5E9" stroke="#A5D6A7" stroke-width="1" />
+    <text x="67" y="114" font-family="Plus Jakarta Sans, sans-serif" font-size="8.5" font-weight="700" fill="#2E7D32" text-anchor="middle">OBJECTIF : &lt; 0.9%</text>
+  </g>
+
+  <!-- Right: 3 Daily Products Checklist Mockup -->
+  <g transform="translate(170, 42)">
+    <rect width="156" height="134" rx="10" fill="#F9FAFB" stroke="#E5E7EB" stroke-width="1.2" />
+
+    <text x="12" y="17" font-family="Plus Jakarta Sans, sans-serif" font-size="9" font-weight="700" fill="#111827">Vos 3 produits à corriger</text>
+    <line x1="12" y1="23" x2="144" y2="23" stroke="#E5E7EB" stroke-width="1" />
+
+    <!-- Product 1 -->
+    <g transform="translate(12, 30)">
+      <rect width="132" height="26" rx="5" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" />
+      <circle cx="12" cy="13" r="6" fill="#FEF3C7" stroke="#F59E0B" stroke-width="1" />
+      <path d="M 12 10 L 12 13 M 12 15 L 12 15.5" stroke="#D97706" stroke-width="1.5" stroke-linecap="round" />
+      <text x="24" y="12" font-family="Plus Jakarta Sans, sans-serif" font-size="7.5" font-weight="700" fill="#1E293B">3017620422003</text>
+      <text x="24" y="20" font-family="Plus Jakarta Sans, sans-serif" font-size="6.5" font-weight="500" fill="#64748B">Portion manquante</text>
+      <rect x="96" y="5" width="30" height="16" rx="3" fill="#E65100" />
+      <text x="111" y="16" font-family="Plus Jakarta Sans, sans-serif" font-size="6.5" font-weight="700" fill="#FFFFFF" text-anchor="middle">Fix</text>
+    </g>
+
+    <!-- Product 2 -->
+    <g transform="translate(12, 62)">
+      <rect width="132" height="26" rx="5" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" />
+      <circle cx="12" cy="13" r="6" fill="#FEF3C7" stroke="#F59E0B" stroke-width="1" />
+      <path d="M 12 10 L 12 13 M 12 15 L 12 15.5" stroke="#D97706" stroke-width="1.5" stroke-linecap="round" />
+      <text x="24" y="12" font-family="Plus Jakarta Sans, sans-serif" font-size="7.5" font-weight="700" fill="#1E293B">5411188110835</text>
+      <text x="24" y="20" font-family="Plus Jakarta Sans, sans-serif" font-size="6.5" font-weight="500" fill="#64748B">Glucides &lt; sucres</text>
+      <rect x="96" y="5" width="30" height="16" rx="3" fill="#E65100" />
+      <text x="111" y="16" font-family="Plus Jakarta Sans, sans-serif" font-size="6.5" font-weight="700" fill="#FFFFFF" text-anchor="middle">Fix</text>
+    </g>
+
+    <!-- Product 3 -->
+    <g transform="translate(12, 94)">
+      <rect width="132" height="26" rx="5" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" />
+      <circle cx="12" cy="13" r="6" fill="#DCFCE7" stroke="#16A34A" stroke-width="1" />
+      <path d="M 9.5 13 L 11.5 15 L 14.5 10.5" fill="none" stroke="#16A34A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+      <text x="24" y="12" font-family="Plus Jakarta Sans, sans-serif" font-size="7.5" font-weight="700" fill="#1E293B">7613034928374</text>
+      <text x="24" y="20" font-family="Plus Jakarta Sans, sans-serif" font-size="6.5" font-weight="500" fill="#16A34A">Corrigé ✓</text>
+      <rect x="96" y="5" width="30" height="16" rx="3" fill="#F1F5F9" />
+      <text x="111" y="16" font-family="Plus Jakarta Sans, sans-serif" font-size="6.5" font-weight="700" fill="#64748B" text-anchor="middle">Done</text>
+    </g>
+  </g>
+</svg>

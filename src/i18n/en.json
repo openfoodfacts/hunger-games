@@ -39,6 +39,14 @@
           "title": "Nutrition game",
           "description": "Extract and validate nutritional values from packaging tables"
         },
+        "packaging_game": {
+          "title": "Packaging Game",
+          "description": "Add structured packaging fast: 1-click presets, OCR text predictions & gentle materials"
+        },
+        "data_quality": {
+          "title": "Data Quality Dashboard",
+          "description": "Fix data quality errors on popular products and help reach the 0.9% error goal"
+        },
         "prices_validation": {
           "title": "Price Validation",
           "description": "Verify prices and receipts contributed to Open Prices"
@@ -74,6 +82,10 @@
         "move_open_products_facts": {
           "title": "Move to Open Products Facts",
           "description": "Identify non-food items to move them to Open Products Facts"
+        },
+        "move_books": {
+          "title": "Move Books to Open Products Facts",
+          "description": "Identify books (barcodes 978 & 979) to move them to Open Products Facts"
         }
       }
     },
@@ -223,7 +235,9 @@
   "menu": {
     "title": "Hunger Games",
     "games": "Games",
+    "packaging": "Packaging",
     "questions": "Questions",
+    "books": "Books",
     "green-score": "Green score",
     "brandinator": "Brandinator",
     "logos": "Logos",
@@ -238,6 +252,7 @@
     "ingredient-detection": "Detect ingredients",
     "settings": "Settings",
     "dashboard": "Logo dashboard",
+    "data_quality": "Data quality",
     "tour": "Take a tour",
     "open_navigation": "Open navigation menu",
     "logged_in_user": "Logged in as {{userName}}",
@@ -499,6 +514,99 @@
     "skip": "Skip this product",
     "getRobotoffPrediciton": "Get predictions from Robotoff"
   },
+  "data_quality": {
+    "page": {
+      "category": "Open Food Facts Infrastructure & Quality",
+      "title": "Data Quality Dashboard",
+      "description": "Fix data quality errors on popular products, track progress toward the 0.9% error goal, and see daily community achievements!",
+      "current_errors": "{{pct}}% errors",
+      "target_goal": "Goal: < {{goal}}%",
+      "your_fixes": "{{count}} fixed by you"
+    },
+    "tabs": {
+      "mission": "Daily Fix Mission (3 Products)",
+      "metrics": "Daily Stats & Goals",
+      "leaderboard": "5-Day Contributors Board",
+      "resources": "How It Works & Wiki"
+    },
+    "mission": {
+      "badge": "Daily Fix Mission",
+      "fixed_today": "{{count}} fixed!",
+      "title": "Below are your products to fix",
+      "subtitle": "These products have verified photos and are frequently scanned by consumers. Fixing them has immediate high impact!",
+      "randomize": "Randomize",
+      "want_to_be_a_hero": "Want to be a hero? +3 more",
+      "filter_by": "Filter:",
+      "filters": {
+        "all": "All Issues",
+        "nutrition": "Nutrition Errors",
+        "ingredients": "Ingredients Errors",
+        "popularity": "Most Scanned First"
+      },
+      "images": {
+        "nutrition": "Nutrition",
+        "ingredients": "Ingredients",
+        "front": "Front"
+      },
+      "scans_tooltip": "{{count}} scans recorded",
+      "no_image": "No photo available",
+      "detected_errors": "Quality Anomaly:",
+      "edit_on_off": "Edit on Open Food Facts",
+      "open_nutrition_game": "Extract Nutrition Table AI",
+      "mark_fixed": "Mark as Fixed",
+      "fixed": "Fixed ✓",
+      "view_product": "View product page",
+      "bravo": "Bravo & Thank You!",
+      "bravo_desc": "Your fix makes Open Food Facts better for everyone."
+    },
+    "metrics": {
+      "monthly_event": "Monthly Meetup on Slack",
+      "error_rate_label": "Error Rate",
+      "of_total_products": "out of {{total}} products",
+      "goal_label": "Target Threshold",
+      "days_remaining": "~{{days}} days to reach threshold",
+      "velocity_label": "Net Fixed / Day",
+      "fixed_yesterday": "Fixed yesterday ({{newErrors}} new errors)",
+      "scans_impact_label": "Scans with Errors",
+      "scans_count": "{{scans}}M scans affected",
+      "progress_title": "Progress towards Quality Goal (< 0.9%)",
+      "incoming_products_7d": "Products Created in Last 7 Days",
+      "seven_day_sparkline": "Mirabelle 7-day sparkline",
+      "rolling_averages_title": "14-Day Rolling Performance & Daily Stats",
+      "avg_fixed_per_day": "Avg. Products Fixed / Day (14d)",
+      "avg_new_errors_per_day": "Avg. New Errors / Day (14d)",
+      "net_fixed_per_day": "Net Progress Velocity / Day",
+      "modified_yesterday": "Products Modified Yesterday",
+      "created_yesterday": "New Products Created Yesterday",
+      "active_contributors": "Active Daily Fixers"
+    },
+    "leaderboard": {
+      "title": "Contributors' Board (Last 5 Days)",
+      "quote": "Can it help your motivation? That said, remember this is a collective effort. Every fix counts. But no shame if you don't have much time for it :-)",
+      "your_fixes": "Your Fixes Today",
+      "rank": "Rank",
+      "contributor": "Contributor",
+      "fixed_count": "Products Fixed",
+      "you": "You"
+    },
+    "resources": {
+      "how_it_works_title": "How does it work?",
+      "how_it_works_desc": "Open Food Facts continuously monitors millions of barcodes for nutritional inconsistencies, missing serving sizes, and invalid syntax.",
+      "rule_1_title": "You are empowered to resolve high-priority items",
+      "rule_1_desc": "Instead of sorting through millions of errors, each session presents actionable products.",
+      "rule_2_title": "Solvable products with verified photos",
+      "rule_2_desc": "All selected items have photos of the nutrition table and ingredient list, so you can check and fix without guessing.",
+      "rule_3_title": "Maximum impact prioritized by scans",
+      "rule_3_desc": "Products are prioritized by consumer scans so every single correction benefits thousands of consumers immediately.",
+      "community_title": "Community & Assistance",
+      "community_desc": "Hard to fix a specific product? Found an error that is actually true to packaging? The Open Food Facts community is here to assist!",
+      "wiki_link": "Wiki: Issues which cannot be fixed",
+      "forum_link": "Forum: Database Category",
+      "slack_link": "Slack: #quality-data channel",
+      "mirabelle_link": "Mirabelle Data Quality Dashboard",
+      "daily_email_link": "Subscribe to Data Quality Daily Email"
+    }
+  },
   "footer": {
     "social": {
       "email": "Email Open Food Facts",
@@ -522,5 +630,36 @@
       "title": "Android APK",
       "subtitle": "Download"
     }
+  },
+  "books": {
+    "title": "Move Books to Open Products Facts",
+    "subtitle": "Find books wrongly cataloged in Open Food Facts and migrate them using barcode prefixes 978 & 979",
+    "is_it_a_book_question": "Is this a book to move to Open Products Facts?",
+    "yes_move_button": "Yes, move to Open Products Facts",
+    "not_a_book_button": "Not a book (Keep in OFF)",
+    "yes_book": "Yes, it's a book (Move to OPF)",
+    "no_book": "No, not a book (Keep in OFF)",
+    "skip": "Skip / Not sure",
+    "filter_prefix": "Barcode Prefix",
+    "prefix_all": "All (978 & 979)",
+    "custom_barcode": "Lookup barcode (e.g. 978...)",
+    "shortcuts_title": "Keyboard Shortcuts",
+    "books_moved_session": "books moved",
+    "recent_activity": "Recent Session Activity",
+    "unknown_title": "Unknown title / Sans titre",
+    "publisher_brand": "Publisher / Brand",
+    "verify_online": "Verify details online",
+    "no_image": "No photo uploaded yet for this product",
+    "front_cover": "Cover",
+    "status_moved": "Moved to OPF",
+    "status_kept_off": "Kept in OFF",
+    "status_skipped": "Skipped",
+    "loading_books": "Loading books from Open Food Facts...",
+    "loading_facet_desc": "Checking facets codes 978xxxxxxxxxx and 979xxxxxxxxxx",
+    "no_products_left": "No more books in this batch!",
+    "congrats_desc": "You have completed reviewing all available products in this queue. You can reload or change prefix.",
+    "load_more": "Load more products",
+    "toast_moved_success": "Book moved to Open Products Facts! (Category added)",
+    "toast_move_error": "Failed to update Open Food Facts category"
   }
 }
