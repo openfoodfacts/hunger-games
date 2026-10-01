@@ -740,13 +740,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@lit-labs/signals@npm:^0.1.2":
-  version: 0.1.2
-  resolution: "@lit-labs/signals@npm:0.1.2"
+"@lit-labs/signals@npm:^0.3.0":
+  version: 0.3.0
+  resolution: "@lit-labs/signals@npm:0.3.0"
   dependencies:
     lit: "npm:^2.0.0 || ^3.0.0"
-    signal-polyfill: "npm:^0.2.0"
-  checksum: 10/e2fa906002465e42b86c5e1baa57a330824c088d8f520700971f8366e48a7206440c49667bd74003879f42f7346b0251d3f300dfea0d37bc0f2bb95f86b7a8f2
+    signal-polyfill: "npm:^0.2.2"
+  checksum: 10/aa2ccae894522b10ec7006a2c276041db22bda7b7142241bc2956fbbc11cb0de77c0ec72c6777484cb6e09dc64d1fb0a0318b2c80f9460eac64381fd953387ad
   languageName: node
   linkType: hard
 
@@ -1079,21 +1079,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@openfoodfacts/openfoodfacts-webcomponents@npm:^1.16.0":
-  version: 1.16.0
-  resolution: "@openfoodfacts/openfoodfacts-webcomponents@npm:1.16.0"
+"@openfoodfacts/openfoodfacts-webcomponents@npm:^1.18.2":
+  version: 1.18.2
+  resolution: "@openfoodfacts/openfoodfacts-webcomponents@npm:1.18.2"
   dependencies:
-    "@lit-labs/signals": "npm:^0.1.2"
+    "@lit-labs/signals": "npm:^0.3.0"
     "@lit/localize": "npm:^0.12.2"
     "@lit/task": "npm:^1.0.2"
     cropperjs: "npm:^2.0.0"
     dayjs: "npm:^1.11.18"
-    diff: "npm:^8.0.1"
+    diff: "npm:^9.0.0"
     dompurify: "npm:^3.2.6"
     lit: "npm:^3.3.0"
     lit-html: "npm:^3.3.0"
-    marked: "npm:^16.2.1"
-  checksum: 10/e51cdcf335dbc15cf1dec149a97d90ffdd7641a2956865d4fbcbead7ed06e2aae03be7c7fd70bbac1e4ec05434567a6e7898314d7e83a62e5bdd612da98d3243
+    marked: "npm:^18.0.3"
+  checksum: 10/935a4b16afb43ad307178cfb164b181602c907ec3e2c79138312bff480da112a1bc896f93a9d61a58c3209363baeb01d46f21e6a7cea06bc5550af6d1edaca86
   languageName: node
   linkType: hard
 
@@ -2456,10 +2456,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"diff@npm:^8.0.1":
-  version: 8.0.4
-  resolution: "diff@npm:8.0.4"
-  checksum: 10/b4036ceda0d1e10683a2313079ed52c5e6b09553ae29da87bce81d98714d9725dbf3c0f6f7c3b1f16eec049fe17087e38ee329e732580fa62f6ec1c2487b2435
+"diff@npm:^9.0.0":
+  version: 9.0.0
+  resolution: "diff@npm:9.0.0"
+  checksum: 10/f8b5e38a6a7ec73d1850ccb7ff19cda1d02502dc0f2c562ada0f40d7211bfb3075c2f3742104619a1f8f47ae333d48a6c77bffb080a2df900db36935080ea4fb
   languageName: node
   linkType: hard
 
@@ -3389,7 +3389,7 @@ __metadata:
     "@mui/system": "npm:^9.4.0"
     "@mui/x-data-grid": "npm:^9.14.0"
     "@openfoodfacts/openfoodfacts-nodejs": "npm:2.0.0-alpha.35"
-    "@openfoodfacts/openfoodfacts-webcomponents": "npm:^1.16.0"
+    "@openfoodfacts/openfoodfacts-webcomponents": "npm:^1.18.2"
     "@tanstack/react-query": "npm:^5.104.0"
     "@types/lodash-es": "npm:^4"
     "@types/node": "npm:^26.4.1"
@@ -4166,12 +4166,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"marked@npm:^16.2.1":
-  version: 16.3.0
-  resolution: "marked@npm:16.3.0"
+"marked@npm:^18.0.3":
+  version: 18.0.14
+  resolution: "marked@npm:18.0.14"
   bin:
     marked: bin/marked.js
-  checksum: 10/60497834b9acfb3b3994222509d359ecb9a197c885dfeb77e2050a287cd2f4ab19f00d5597172b47f9e0c54d9e1e13d8b2dd73322b7838599e1f16d1d6283f5b
+  checksum: 10/d97c79d605ef9f786a379fc86893421f9598f7f05a8e837206279b3a50e9e1f3666769876ea7d8b58b378325da47d2d63758f9d28347440ae25feefbfcf2aeac
   languageName: node
   linkType: hard
 
@@ -5383,7 +5383,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"signal-polyfill@npm:^0.2.0":
+"signal-polyfill@npm:^0.2.2":
   version: 0.2.2
   resolution: "signal-polyfill@npm:0.2.2"
   checksum: 10/a54cbde85a3452086b51cc22872461246abbe60fc76e8519e85a28afd332d41c84a044e2a238414694a808960b0187a0aab7a852657280981f08dae1e41ea65c
