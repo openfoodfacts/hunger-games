@@ -94,7 +94,10 @@ export default function BooksPage() {
         );
       } catch {
         setToastMessage(
-          t("books.toast_move_error", "Failed to update Open Food Facts category"),
+          t(
+            "books.toast_move_error",
+            "Failed to update Open Food Facts category",
+          ),
         );
       }
     })();
@@ -147,7 +150,10 @@ export default function BooksPage() {
           >
             <CircularProgress size={40} sx={{ mb: 2 }} />
             <Typography variant="h6" fontWeight={700}>
-              {t("books.loading_books", "Loading books from Open Food Facts...")}
+              {t(
+                "books.loading_books",
+                "Loading books from Open Food Facts...",
+              )}
             </Typography>
             <Typography variant="body2" color="text.secondary">
               {t(

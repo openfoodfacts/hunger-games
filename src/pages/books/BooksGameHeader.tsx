@@ -95,7 +95,12 @@ export default function BooksGameHeader({
             <MenuBookIcon />
           </Box>
           <Box>
-            <Stack direction="row" spacing={1} alignItems="center" flexWrap="wrap">
+            <Stack
+              direction="row"
+              spacing={1}
+              alignItems="center"
+              flexWrap="wrap"
+            >
               <Typography variant="h6" fontWeight={800} component="h1">
                 {t("books.title", "Move Books to Open Products Facts")}
               </Typography>
@@ -117,7 +122,12 @@ export default function BooksGameHeader({
         </Stack>
 
         {/* Score & Controls */}
-        <Stack direction="row" spacing={1.5} alignItems="center" flexWrap="wrap">
+        <Stack
+          direction="row"
+          spacing={1.5}
+          alignItems="center"
+          flexWrap="wrap"
+        >
           {/* Session score chip */}
           <Chip
             icon={<EmojiEventsIcon sx={{ color: "#f59e0b !important" }} />}
@@ -166,13 +176,22 @@ export default function BooksGameHeader({
               if (val) onPrefixChange(val);
             }}
           >
-            <ToggleButton value="all" sx={{ px: 1.5, py: 0.5, fontWeight: 700 }}>
+            <ToggleButton
+              value="all"
+              sx={{ px: 1.5, py: 0.5, fontWeight: 700 }}
+            >
               {t("books.prefix_all", "All (978 & 979)")}
             </ToggleButton>
-            <ToggleButton value="978" sx={{ px: 1.5, py: 0.5, fontWeight: 700 }}>
+            <ToggleButton
+              value="978"
+              sx={{ px: 1.5, py: 0.5, fontWeight: 700 }}
+            >
               978
             </ToggleButton>
-            <ToggleButton value="979" sx={{ px: 1.5, py: 0.5, fontWeight: 700 }}>
+            <ToggleButton
+              value="979"
+              sx={{ px: 1.5, py: 0.5, fontWeight: 700 }}
+            >
               979
             </ToggleButton>
           </ToggleButtonGroup>
@@ -186,7 +205,10 @@ export default function BooksGameHeader({
         >
           <TextField
             size="small"
-            placeholder={t("books.custom_barcode", "Lookup barcode (e.g. 978...)")}
+            placeholder={t(
+              "books.custom_barcode",
+              "Lookup barcode (e.g. 978...)",
+            )}
             value={searchInput}
             onChange={(e) => setSearchInput(e.target.value)}
             slotProps={{
@@ -198,7 +220,11 @@ export default function BooksGameHeader({
                 ),
                 endAdornment: searchInput ? (
                   <InputAdornment position="end">
-                    <IconButton size="small" onClick={handleClearSearch} edge="end">
+                    <IconButton
+                      size="small"
+                      onClick={handleClearSearch}
+                      edge="end"
+                    >
                       <ClearIcon fontSize="small" />
                     </IconButton>
                   </InputAdornment>
@@ -207,7 +233,12 @@ export default function BooksGameHeader({
             }}
             sx={{ minWidth: 260 }}
           />
-          <Button variant="outlined" size="small" type="submit" sx={{ minHeight: 40 }}>
+          <Button
+            variant="outlined"
+            size="small"
+            type="submit"
+            sx={{ minHeight: 40 }}
+          >
             {t("search", "Search")}
           </Button>
         </Box>

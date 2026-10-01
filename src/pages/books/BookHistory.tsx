@@ -1,4 +1,3 @@
-
 import Box from "@mui/material/Box";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
@@ -81,7 +80,11 @@ export default function BookHistory({ history }: BookHistoryProps) {
                   <Typography variant="body2" fontWeight={700}>
                     {item.productName}
                   </Typography>
-                  <Typography variant="caption" color="text.secondary" fontFamily="monospace">
+                  <Typography
+                    variant="caption"
+                    color="text.secondary"
+                    fontFamily="monospace"
+                  >
                     {item.code}
                   </Typography>
                 </Box>

@@ -32,15 +32,6 @@ import home_books from "../../assets/home_books.svg";
 const cards = [
   // FEATURED / CORE ANNOTATION GAMES
   {
-    id: "books_game",
-    title: "home.game_selector.cards.move_books.title",
-    desc: "home.game_selector.cards.move_books.description",
-    link: "/books",
-    image: home_books,
-    category: "featured",
-    badge: "New Game",
-  },
-  {
     id: "questions",
     title: "home.game_selector.cards.questions.title",
     desc: "home.game_selector.cards.questions.description",

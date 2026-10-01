@@ -224,7 +224,10 @@ export async function moveBookToOpenProductsFacts(
  */
 export function formatIsbn(code: string): string {
   if (!code) return "";
-  if (code.length === 13 && (code.startsWith("978") || code.startsWith("979"))) {
+  if (
+    code.length === 13 &&
+    (code.startsWith("978") || code.startsWith("979"))
+  ) {
     // E.g. 978-2-070-36002-4
     return `${code.slice(0, 3)}-${code.slice(3, 4)}-${code.slice(4, 7)}-${code.slice(7, 12)}-${code.slice(12)}`;
   }

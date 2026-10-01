@@ -1,11 +1,11 @@
 import * as React from "react";
-import {
-  fetchFacetBooks,
-  moveBookToOpenProductsFacts,
-} from "./booksService";
+import { fetchFacetBooks, moveBookToOpenProductsFacts } from "./booksService";
 import type { BookProduct, PrefixFilter, BookActionHistory } from "./types";
 
-export function useBooksGameBuffer(initialPrefix: PrefixFilter = "all", initialCode?: string) {
+export function useBooksGameBuffer(
+  initialPrefix: PrefixFilter = "all",
+  initialCode?: string,
+) {
   const [prefix, setPrefix] = React.useState<PrefixFilter>(initialPrefix);
   const [codeSearch, setCodeSearch] = React.useState<string>(initialCode ?? "");
   const [products, setProducts] = React.useState<BookProduct[]>([]);
@@ -20,7 +20,12 @@ export function useBooksGameBuffer(initialPrefix: PrefixFilter = "all", initialC
 
   // Load products from facet endpoint or barcode
   const loadBooks = React.useCallback(
-    async (targetPrefix: PrefixFilter, targetPage: number, targetCode?: string, append = false) => {
+    async (
+      targetPrefix: PrefixFilter,
+      targetPage: number,
+      targetCode?: string,
+      append = false,
+    ) => {
       if (isFetchingRef.current) return;
       isFetchingRef.current = true;
       setIsLoading(true);
@@ -33,10 +38,14 @@ export function useBooksGameBuffer(initialPrefix: PrefixFilter = "all", initialC
           code: targetCode,
         });
 
-        setProducts((prev) => (append ? [...prev, ...newProducts] : newProducts));
+        setProducts((prev) =>
+          append ? [...prev, ...newProducts] : newProducts,
+        );
       } catch (err) {
         console.error("Error loading books:", err);
-        setError("Failed to load books. Please check your connection or retry.");
+        setError(
+          "Failed to load books. Please check your connection or retry.",
+        );
       } finally {
         setIsLoading(false);
         isFetchingRef.current = false;
@@ -66,7 +75,9 @@ export function useBooksGameBuffer(initialPrefix: PrefixFilter = "all", initialC
       } catch (err) {
         if (active) {
           console.error("Error loading books:", err);
-          setError("Failed to load books. Please check your connection or retry.");
+          setError(
+            "Failed to load books. Please check your connection or retry.",
+          );
           setIsLoading(false);
         }
       }
@@ -79,7 +90,12 @@ export function useBooksGameBuffer(initialPrefix: PrefixFilter = "all", initialC
 
   // Automatic prefetch when buffer is low
   React.useEffect(() => {
-    if (!codeSearch && !isLoading && products.length <= 2 && products.length > 0) {
+    if (
+      !codeSearch &&
+      !isLoading &&
+      products.length <= 2 &&
+      products.length > 0
+    ) {
       const nextPage = pageRef.current + 1;
       pageRef.current = nextPage;
       void Promise.resolve().then(() => {
@@ -102,7 +118,8 @@ export function useBooksGameBuffer(initialPrefix: PrefixFilter = "all", initialC
       setHistory((prev) => [
         {
           code: currentProduct.code,
-          productName: currentProduct.product_name || `Barcode ${currentProduct.code}`,
+          productName:
+            currentProduct.product_name || `Barcode ${currentProduct.code}`,
           action: "moved",
           timestamp: Date.now(),
         },
@@ -124,7 +141,8 @@ export function useBooksGameBuffer(initialPrefix: PrefixFilter = "all", initialC
     setHistory((prev) => [
       {
         code: currentProduct.code,
-        productName: currentProduct.product_name || `Barcode ${currentProduct.code}`,
+        productName:
+          currentProduct.product_name || `Barcode ${currentProduct.code}`,
         action: "not_a_book",
         timestamp: Date.now(),
       },
@@ -139,7 +157,8 @@ export function useBooksGameBuffer(initialPrefix: PrefixFilter = "all", initialC
     setHistory((prev) => [
       {
         code: currentProduct.code,
-        productName: currentProduct.product_name || `Barcode ${currentProduct.code}`,
+        productName:
+          currentProduct.product_name || `Barcode ${currentProduct.code}`,
         action: "skipped",
         timestamp: Date.now(),
       },

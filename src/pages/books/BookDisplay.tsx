@@ -57,7 +57,12 @@ export default function BookDisplay({
     if (product.images) {
       const urls = getImagesUrls(product.images, product.code);
       urls.forEach((u, i) => {
-        if (!list.some((item) => item.url === u.imageUrl || item.urlFull === u.imageUrlFull)) {
+        if (
+          !list.some(
+            (item) =>
+              item.url === u.imageUrl || item.urlFull === u.imageUrlFull,
+          )
+        ) {
           list.push({
             url: u.imageUrl,
             urlFull: u.imageUrlFull,
@@ -83,8 +88,14 @@ export default function BookDisplay({
   const currentImage = images[activeImageTab] ?? null;
 
   // External reference links
-  const links = React.useMemo(() => getBookExternalUrls(product.code), [product.code]);
-  const formattedIsbn = React.useMemo(() => formatIsbn(product.code), [product.code]);
+  const links = React.useMemo(
+    () => getBookExternalUrls(product.code),
+    [product.code],
+  );
+  const formattedIsbn = React.useMemo(
+    () => formatIsbn(product.code),
+    [product.code],
+  );
 
   const is978 = product.code.startsWith("978");
   const is979 = product.code.startsWith("979");
@@ -103,7 +114,12 @@ export default function BookDisplay({
         return;
       }
 
-      if (e.key === "y" || e.key === "Y" || e.key === "Enter" || e.key === "1") {
+      if (
+        e.key === "y" ||
+        e.key === "Y" ||
+        e.key === "Enter" ||
+        e.key === "1"
+      ) {
         e.preventDefault();
         onMoveToOpf();
       } else if (e.key === "n" || e.key === "N" || e.key === "0") {
@@ -141,7 +157,14 @@ export default function BookDisplay({
                 onChange={(_, val: number) => setActiveImageTab(val)}
                 variant="scrollable"
                 scrollButtons="auto"
-                sx={{ minHeight: 36, "& .MuiTab-root": { minHeight: 36, py: 0.5, fontSize: "0.8rem" } }}
+                sx={{
+                  minHeight: 36,
+                  "& .MuiTab-root": {
+                    minHeight: 36,
+                    py: 0.5,
+                    fontSize: "0.8rem",
+                  },
+                }}
               >
                 {images.map((img, idx) => (
                   <Tab key={img.url} label={img.label} value={idx} />
@@ -187,10 +210,17 @@ export default function BookDisplay({
                   }}
                 />
               ) : (
-                <Stack alignItems="center" spacing={1} sx={{ p: 4, color: "text.secondary" }}>
+                <Stack
+                  alignItems="center"
+                  spacing={1}
+                  sx={{ p: 4, color: "text.secondary" }}
+                >
                   <MenuBookRoundedIcon sx={{ fontSize: 64, opacity: 0.4 }} />
                   <Typography variant="body2">
-                    {t("books.no_image", "No photo uploaded yet for this product")}
+                    {t(
+                      "books.no_image",
+                      "No photo uploaded yet for this product",
+                    )}
                   </Typography>
                 </Stack>
               )}
@@ -200,11 +230,19 @@ export default function BookDisplay({
 
         {/* Right: Book Metadata & Decision Controls */}
         <Grid size={{ xs: 12, md: 6, lg: 7 }}>
-          <Stack spacing={2.5} sx={{ height: "100%", justifyContent: "space-between" }}>
+          <Stack
+            spacing={2.5}
+            sx={{ height: "100%", justifyContent: "space-between" }}
+          >
             {/* Top metadata */}
             <Stack spacing={1.5}>
               {/* ISBN prefix badge & barcode */}
-              <Stack direction="row" spacing={1} alignItems="center" flexWrap="wrap">
+              <Stack
+                direction="row"
+                spacing={1}
+                alignItems="center"
+                flexWrap="wrap"
+              >
                 <Chip
                   icon={<AutoStoriesRoundedIcon />}
                   label={
@@ -218,13 +256,22 @@ export default function BookDisplay({
                   size="small"
                   sx={{ fontWeight: 700 }}
                 />
-                <Typography variant="body2" fontFamily="monospace" fontWeight={700}>
+                <Typography
+                  variant="body2"
+                  fontFamily="monospace"
+                  fontWeight={700}
+                >
                   {formattedIsbn}
                 </Typography>
               </Stack>
 
               {/* Book Title */}
-              <Typography variant="h5" fontWeight={800} component="h2" sx={{ lineHeight: 1.25 }}>
+              <Typography
+                variant="h5"
+                fontWeight={800}
+                component="h2"
+                sx={{ lineHeight: 1.25 }}
+              >
                 {product.product_name || (
                   <Typography
                     component="span"
@@ -240,7 +287,11 @@ export default function BookDisplay({
               {/* Publisher / Brands */}
               {product.brands && (
                 <Stack direction="row" spacing={1} alignItems="center">
-                  <Typography variant="body2" color="text.secondary" fontWeight={600}>
+                  <Typography
+                    variant="body2"
+                    color="text.secondary"
+                    fontWeight={600}
+                  >
                     {t("books.publisher_brand", "Publisher / Brand")}:
                   </Typography>
                   <Chip
@@ -255,7 +306,11 @@ export default function BookDisplay({
               {/* Quantity / Pages */}
               {product.quantity && (
                 <Stack direction="row" spacing={1} alignItems="center">
-                  <Typography variant="body2" color="text.secondary" fontWeight={600}>
+                  <Typography
+                    variant="body2"
+                    color="text.secondary"
+                    fontWeight={600}
+                  >
                     {t("quantity", "Quantity / Pages")}:
                   </Typography>
                   <Typography variant="body2">{product.quantity}</Typography>
@@ -273,7 +328,12 @@ export default function BookDisplay({
                   >
                     {t("categories", "Current Categories in OFF")}:
                   </Typography>
-                  <Stack direction="row" spacing={0.75} flexWrap="wrap" useFlexGap>
+                  <Stack
+                    direction="row"
+                    spacing={0.75}
+                    flexWrap="wrap"
+                    useFlexGap
+                  >
                     {product.categories
                       .split(",")
                       .map((cat) => cat.trim())
