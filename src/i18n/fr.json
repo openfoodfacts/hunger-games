@@ -35,6 +35,15 @@
           "title": "Jeu de la nutrition",
           "description": "Extrayez et validez les valeurs nutritionnelles des tableaux sur les emballages"
         },
+        "reverso": {
+          "title": "Reverso",
+          "description": "Corrigez les produits dont les valeurs énergétiques en kcal et kJ sont inversées"
+        },
+        "quantities": {
+          "title": "Quantités & Poids",
+          "description": "Corrigez et complétez les poids, volumes et contenances signalés par les alertes de qualité",
+          "badge": "Poids / Volume"
+        },
         "prices_validation": {
           "title": "Validation des prix",
           "description": "Vérifiez les prix et les tickets de caisse contribués sur Open Prices"
@@ -221,6 +230,8 @@
     "manage": "Gérer",
     "insights": "Aperçu",
     "nutritions": "Nutrition",
+    "reverso": "Reverso",
+    "quantities": "Quantités",
     "ingredient-spellcheck": "Vérification orthographique des ingrédients",
     "ingredient-detection": "Détection des ingrédients",
     "settings": "Paramètres",
@@ -497,6 +508,101 @@
       "title": "APK Android",
       "subtitle": "Télécharger"
     }
+  },
+  "quantities": {
+    "barcode_placeholder": "Filtrer par code-barres...",
+    "clear_filter": "Effacer le filtre",
+    "refresh_all": "Réinitialiser et recharger",
+    "edit": "Éditer",
+    "shortcut": {
+      "escape": "(Échap)",
+      "enter": "(Entrée)"
+    },
+    "warnings": {
+      "all": {
+        "label": "Toutes les anomalies de quantité",
+        "description": "Parcourir l'ensemble des anomalies et alertes sur les quantités"
+      },
+      "quantity_not_recognized": {
+        "label": "Quantité non reconnue (sans unité, typo...)",
+        "description": "La quantité est renseignée mais l'unité est manquante ou le format n'est pas reconnu (ex : 80, 125, 1/2 gallon)"
+      },
+      "serving_over_product": {
+        "label": "Portion supérieure à la quantité totale",
+        "description": "La portion renseignée dépasse le poids ou volume net total du produit (ex : portion de 100 g sur un produit de 30 g)"
+      },
+      "product_over_10kg": {
+        "label": "Quantité > 10 kg (potentielle erreur d'échelle)",
+        "description": "Quantité anormalement élevée, souvent due à une saisie en grammes avec des zéros en trop (ex : 500000 g)"
+      },
+      "product_under_1g": {
+        "label": "Quantité < 1 g (potentielle erreur d'échelle)",
+        "description": "Quantité anormalement faible, souvent due à une mauvaise virgule (ex : 0,05 g au lieu de 50 g)"
+      },
+      "serving_without_product": {
+        "label": "Portion définie mais quantité totale manquante",
+        "description": "Une taille de portion est précisée mais la contenance totale du produit n'est pas renseignée"
+      },
+      "product_in_mg": {
+        "label": "Quantité en mg",
+        "description": "La quantité globale du produit est exprimée en milligrammes au lieu de grammes"
+      },
+      "serving_under_product": {
+        "label": "Portion < Quantité / 1000",
+        "description": "La portion est disproportionnellement petite par rapport au produit total"
+      },
+      "serving_over_500g": {
+        "label": "Portion > 500 g",
+        "description": "La portion individuelle dépasse 500 g, souvent confondue avec le poids du produit entier"
+      },
+      "serving_under_1g": {
+        "label": "Portion < 1 g",
+        "description": "La portion indiquée est inférieure à 1 g"
+      },
+      "serving_not_recognized": {
+        "label": "Portion non reconnue",
+        "description": "La taille de portion n'a pas pu être convertie en valeur chiffrée avec unité"
+      }
+    },
+    "title": "Poids & Quantités",
+    "subtitle": "Corrigez et normalisez les quantités et contenances de produits signalées par les alertes de qualité.",
+    "fixed_session": "corrigés cette session",
+    "total_in_facet": "au total dans la facette",
+    "view_facet": "Facette OFF",
+    "filter_warning": "Type d'anomalie",
+    "login_notice_banner": "Pour enregistrer directement vos corrections de quantité sur Open Food Facts, veuillez vous connecter.",
+    "login_notice": "Vous pouvez inspecter et corriger les quantités. Pour enregistrer vos modifications sur Open Food Facts, veuillez vous connecter.",
+    "login_required": "Veuillez vous connecter à Open Food Facts pour enregistrer vos modifications.",
+    "empty_title": "Bravo ! Aucun produit à corriger.",
+    "empty_desc": "Tous les produits de cette sélection ont été examinés ou il n'y a plus d'anomalies de quantité pour ce filtre.",
+    "packaging_photo": "Photos du produit",
+    "zoom_hint": "Zoomez et déplacez l'image pour repérer le poids / volume net",
+    "zoom_hint_short": "Zoom molette / clic",
+    "no_photos": "Aucune photo disponible pour ce produit.",
+    "photo": "Photo",
+    "image_front": "Face avant",
+    "image_nutrition": "Tableau nutritionnel",
+    "image_ingredients": "Ingrédients",
+    "image_packaging": "Emballage",
+    "unnamed_product": "Produit sans nom",
+    "unspecified_brand": "Marque non précisée",
+    "detected_issue": "Anomalie détectée sur ce produit :",
+    "quantity_needs_review": "Vérifier et corriger la quantité indiquée sur l'emballage",
+    "current_quantity": "Quantité actuelle :",
+    "current_serving": "Portion actuelle :",
+    "missing": "Non renseignée",
+    "suggestions": "Suggestions automatiques :",
+    "enter_quantity": "Saisir la quantité exacte (poids ou volume net) :",
+    "quantity_placeholder": "ex: 500 g, 75 cl, 1.5 l, 6 x 25 cl",
+    "append_unit": "Ajouter une unité :",
+    "edit_serving": "Modifier également la portion (serving size)",
+    "hide_serving": "Masquer la portion",
+    "serving_size_label": "Taille de portion",
+    "saving": "Enregistrement...",
+    "save_and_next": "Enregistrer et suivant",
+    "save_success": "✓ Quantité enregistrée avec succès sur Open Food Facts !",
+    "save_error": "Erreur lors de l'enregistrement de la quantité",
+    "product_not_found": "Produit introuvable"
   },
   "books": {
     "title": "Déplacer les livres vers Open Products Facts",

@@ -72,6 +72,15 @@ const cards = [
     category: "featured",
   },
   {
+    id: "quantities",
+    title: "home.game_selector.cards.quantities.title",
+    desc: "home.game_selector.cards.quantities.description",
+    link: "/quantities",
+    image: home_weights,
+    category: "featured",
+    badge: "home.game_selector.cards.quantities.badge",
+  },
+  {
     id: "ingredient_spellcheck",
     title: "home.game_selector.cards.ingredient_spellcheck.title",
     desc: "home.game_selector.cards.ingredient_spellcheck.description",
@@ -270,7 +279,7 @@ const HomeCard = ({ cardInfo, t }) => {
             </Typography>
             {badge && (
               <Chip
-                label={badge}
+                label={t(badge)}
                 size="small"
                 sx={{ flexShrink: 0, fontWeight: 700 }}
               />
