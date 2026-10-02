@@ -24,7 +24,7 @@ import useQuestions from "../../hooks/useQuestions";
 const UserData = () => {
   const { t } = useTranslation();
 
-  const { questionsCount, recentAnswers } = useQuestions();
+  const { questionsCount, remainingQuestionsCount } = useQuestions();
 
   const [loginAlreadyProposed, setLoginAlreadyProposed] = React.useState(false);
 
@@ -37,9 +37,9 @@ const UserData = () => {
       <Stack spacing={1.25}>
         <Typography variant="subtitle1" sx={{ fontWeight: 700 }}>
           {t("questions.remaining_annotations")}:{" "}
-          {questionsCount !== null && questionsCount >= 99
+          {remainingQuestionsCount !== null && remainingQuestionsCount >= 99
             ? "100+"
-            : (questionsCount ?? 0)}
+            : (remainingQuestionsCount ?? questionsCount ?? 0)}
         </Typography>
         <Stack spacing={1} sx={{ maxHeight: 160, overflowY: "auto", pr: 0.5 }}>
           {recentAnswers.map(

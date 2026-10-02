@@ -12,6 +12,7 @@ import {
   getColor,
   getIsDevMode,
   getVisiblePages,
+  getPageCustomization,
   getStoredColorPreference,
   localSettingsKeys,
   localSettings,
@@ -126,6 +127,8 @@ const queryClient = new QueryClient();
 export default function App() {
   const [devMode, setDevMode] = React.useState(getIsDevMode);
   const [visiblePages, setVisiblePages] = React.useState(getVisiblePages);
+  const [pageCustomization, setPageCustomization] =
+    React.useState(getPageCustomization);
   const [userState, setUserState] = React.useState(() => {
     if (IS_DEVELOPMENT_MODE) {
       return { userName: "", isLoggedIn: true };
@@ -231,7 +234,14 @@ export default function App() {
           <ThemeProvider theme={theme}>
             <LoginContext.Provider value={{ ...userState, refresh }}>
               <DevModeContext.Provider
-                value={{ devMode, setDevMode, visiblePages, setVisiblePages }}
+                value={{
+                  devMode,
+                  setDevMode,
+                  visiblePages,
+                  setVisiblePages,
+                  pageCustomization,
+                  setPageCustomization,
+                }}
               >
                 <QueryClientProvider client={queryClient}>
                   <CssBaseline />
