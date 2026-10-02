@@ -28,6 +28,7 @@ import home_open_beauty_facts from "../../assets/home_open_beauty_facts.svg";
 import home_open_pet_food_facts from "../../assets/home_open_pet_food_facts.svg";
 import home_open_products_facts from "../../assets/home_open_products_facts.svg";
 import home_books from "../../assets/home_books.svg";
+import home_product_name from "../../assets/home_product_name.svg";
 
 const cards = [
   // FEATURED / CORE ANNOTATION GAMES
@@ -85,6 +86,14 @@ const cards = [
     desc: "home.game_selector.cards.ingredient_detection.description",
     link: "/ingredient-detection",
     image: home_ingredients_crop,
+    category: "featured",
+  },
+  {
+    id: "product_name",
+    title: "home.game_selector.cards.product_name.title",
+    desc: "home.game_selector.cards.product_name.description",
+    link: "/product-name",
+    image: home_product_name,
     category: "featured",
   },
 

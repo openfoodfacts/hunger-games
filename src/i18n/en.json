@@ -35,6 +35,10 @@
           "title": "Ingredients crop",
           "description": "Locate and crop the ingredients list bounding box on packaging"
         },
+        "product_name": {
+          "title": "Product name",
+          "description": "Name the products that have no name, or a name that is only a copy of the brand or the category"
+        },
         "nutrition": {
           "title": "Nutrition game",
           "description": "Extract and validate nutritional values from packaging tables"
@@ -230,6 +234,7 @@
     "questions": "Questions",
     "books": "Books",
     "green-score": "Green score",
+    "product-name": "Product name",
     "brandinator": "Brandinator",
     "logos": "Logos",
     "logos-annotation": "Annotate logos",
@@ -558,5 +563,28 @@
     "load_more": "Load more products",
     "toast_moved_success": "Book moved to Open Products Facts! (Category added)",
     "toast_move_error": "Failed to update Open Food Facts category"
+  },
+  "product_name": {
+    "title": "Product name game",
+    "game_title": "What is the name of this product?",
+    "description": "Write the name displayed on the packaging, as it would be written in the language of the product. It must be more precise than the brand or the category alone.",
+    "name_label": "Product name",
+    "name_placeholder": "e.g. Chocolate cereal bars",
+    "helper": "The name is the one printed on the packaging, not the brand or the category.",
+    "brand": "Brand",
+    "category": "Category",
+    "validate": "Validate",
+    "skip": "Skip",
+    "loading": "Loading products to name...",
+    "no_products": "No more products to name for now, come back later!",
+    "retry": "Retry",
+    "success": "Thank you! The product name has been saved.",
+    "save_error": "The product name could not be saved, please try again.",
+    "errors": {
+      "empty": "Please write a product name.",
+      "too_long": "This name is too long, please shorten it.",
+      "same_as_brand": "This name is only the brand. Please add what the product is.",
+      "same_as_category": "This name is only the category. Please add what the product is."
+    }
   }
 }
