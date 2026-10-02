@@ -30,7 +30,7 @@
     },
     "saved_filters": "Gespeicherte Filter",
     "saved_filters_delete": "Lösche gespeicherte Filter",
-    "saved_filters_delete_title": "Delete saved filter?",
+    "saved_filters_delete_title": "Gespeicherte Filter löschen?",
     "saved_filters_delete_description": "Dieser gespeicherte Filter wird von diesem Gerät entfernt werden.",
     "saved_filters_delete_confirm": "Löschen",
     "saved_filters_pending": "{{count}} Produkte warten",
@@ -44,7 +44,7 @@
       "title": "{{userName}} Statistiken:",
       "title_without_name": "Deine Statistik",
       "empty_state": {
-        "title": "No contributions yet",
+        "title": "Noch keine Beiträge",
         "description": "Your contribution statistics will appear here once you start helping improve Open Food Facts.",
         "action": "Start contributing"
       },
@@ -67,8 +67,8 @@
     "loading": "Wird geladen"
   },
   "image_viewer": {
-    "compressed": "Compressed",
-    "load_original": "Load original"
+    "compressed": "Archive",
+    "load_original": "Original laden"
   },
   "questions": {
     "category": "Kategorie",
@@ -88,9 +88,9 @@
     "skip": "Überspringen",
     "yes": "Ja",
     "no_questions_remaining": "Keine offenen Fragen",
-    "similar_questions": "Similar questions",
-    "no_similar_questions": "No similar questions",
-    "remaining_questions_count_one": "1 question remaining",
+    "similar_questions": "Ähnliche Fragen",
+    "no_similar_questions": "Verschiedene Fragen",
+    "remaining_questions_count_one": "1 Frage verbleibend",
     "remaining_questions_count_other": "{{count}} questions remaining",
     "an_error_occurred": "Ein Fehler ist aufgetreten. Bitte laden Sie die Seite neu, versuchen Sie es später erneut oder wenden Sie sich an das Team.",
     "countries": "Länder",
@@ -104,7 +104,7 @@
     "last_annotations": "Letzte Anmerkungen",
     "remaining_annotations": "Verbleibende Fragen",
     "annotated_annotations": "Kommentiert",
-    "no_images": "No images available",
+    "no_images": "Keine Bilder verfügbar",
     "no_additional_info": "No additional information",
     "add_missing_info": "Hinzufügen",
     "filters": {
@@ -131,7 +131,7 @@
       },
       "placeholders": {
         "value": "Wert (Fanta, de: biologisch, ...)",
-        "country": "France, Germany, Japan, ...",
+        "country": "Frankreich, Deutschland, Japan, ...",
         "brand": "Rewe, Danone, Herta, ...",
         "campaign": "Kampagnen kommentieren",
         "predictor": "Universal-Logo-Detektor, regulärer Ausdruck, ..."
@@ -222,12 +222,12 @@
   "logos": {
     "dashboard": {
       "title": "Logo dashboard",
-      "description": "Explore logo categories and help improve product data.",
+      "description": "Entdecke Logo-Kategorien und verbessere Produktdaten.",
       "category": "Kategorie",
       "categories": "Kategorien",
       "logo_count_one": "{{count}} logo",
       "logo_count_other": "{{count}} logos",
-      "more_info": "More info",
+      "more_info": "Mehr erfahren",
       "questions": "Fragen",
       "search": "Suchen"
     },
