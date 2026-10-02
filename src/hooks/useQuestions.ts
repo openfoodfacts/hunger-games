@@ -118,6 +118,31 @@ export default function useQuestions(
 
   const keys = getQuestionKeys(params);
 
+  // Sham: fetch only the count (and an empty questions array) so the
+  // statistics (e.g. remaining annotations) never block the main question
+  // list on the questions page.
+  const fetchQuestionsCount = async () => {
+    const { data } = await robotoff.questions(params, 1);
+    return data;
+  };
+
+  const statsKeys = [
+    "user-statistics",
+    params.insightType,
+    params.valueTag,
+    params.sorted !== "false",
+    params.brand,
+    params.country,
+    params.campaign,
+    params.predictor,
+  ];
+
+  const { data: stats, status: statsStatus } = useQuery({
+    queryKey: statsKeys,
+    queryFn: fetchQuestionsCount,
+    staleTime: Infinity,
+  });
+
   const answerQuestion = ({ question, answer }: AnswerQuestionParams) => {
     robotoff.annotate(question.insight_id, answer).catch((err) => {
       console.error("Error while answering question", err);
@@ -207,10 +232,13 @@ export default function useQuestions(
   const questions = data?.questions ?? [];
   const question = questions[0] ?? null;
   const questionsCount = data?.count ?? null;
+  const userStats = stats?.count ?? null;
   return {
     question,
     questions,
     questionsCount,
+    remainingQuestionsCount: userStats,
+    statsStatus,
     status,
     answerQuestion,
     recentAnswers: recentAnswers ?? [],
