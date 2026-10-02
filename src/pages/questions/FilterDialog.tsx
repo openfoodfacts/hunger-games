@@ -15,6 +15,9 @@ import Dialog from "@mui/material/Dialog";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { DialogActions, DialogContent } from "@mui/material";
+import Chip from "@mui/material/Chip";
+import ContentCopyIcon from "@mui/icons-material/ContentCopy";
+import CheckCircleOutlineOutlined from "@mui/icons-material/CheckCircleOutlineOutlined";
 
 import { useTranslation } from "react-i18next";
 
@@ -27,6 +30,7 @@ import {
 } from "../../components/QuestionFilter/const";
 import { useFilterState } from "../../hooks/useFilterState";
 import { BrandFilter } from "../../components/QuestionFilter/BrandFilter";
+import { getQuestionSearchParams } from "../../components/QuestionFilter";
 
 interface CountryObject {
   id: string;
@@ -83,6 +87,17 @@ export default function FilterDialog(props: FilterDialogProps) {
   const [innerPredictor, setInnerPredictor] = React.useState(
     globalValues.predictor,
   );
+
+  const [shareCopied, setShareCopied] = React.useState(false);
+
+  const handleShare = React.useCallback(() => {
+    const searchParams = getQuestionSearchParams(globalValues);
+    const shareUrl = `${window.location.origin}/questions?${searchParams}`;
+    void navigator.clipboard.writeText(shareUrl).then(() => {
+      setShareCopied(true);
+      setTimeout(() => setShareCopied(false), 2000);
+    });
+  }, [globalValues]);
 
   const resetFilter = React.useCallback(() => {
     setInnerInsightType(globalValues.insightType);
@@ -179,6 +194,7 @@ export default function FilterDialog(props: FilterDialogProps) {
               size="small"
             />
           )}
+
           <Autocomplete
             value={innerCountryObject}
             onChange={(_event, newValue) => setInnerCountryObject(newValue)}
@@ -267,6 +283,22 @@ export default function FilterDialog(props: FilterDialogProps) {
           <Button variant="contained" onClick={applyFilter}>
             {t("questions.filters.actions.apply")}
           </Button>
+          <Button
+            variant="outlined"
+            onClick={handleShare}
+            disabled={false}
+            startIcon={<ContentCopyIcon />}
+          >
+            {t("questions.filters.actions.share")}
+          </Button>
+          {shareCopied && (
+            <Chip
+              label={t("questions.filters.share_copied")}
+              size="small"
+              color="success"
+              icon={<CheckCircleOutlineOutlined />}
+            />
+          )}
         </Stack>
       </DialogActions>
     </Dialog>
