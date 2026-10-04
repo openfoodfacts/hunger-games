@@ -14,6 +14,7 @@ import TextField from "@mui/material/TextField";
 import MenuItem from "@mui/material/MenuItem";
 import ListSubheader from "@mui/material/ListSubheader";
 import Tooltip from "@mui/material/Tooltip";
+import Stack from "@mui/material/Stack";
 import MuiLink from "@mui/material/Link";
 import Collapse from "@mui/material/Collapse";
 import List from "@mui/material/List";
@@ -486,6 +487,32 @@ const ResponsiveAppBar = () => {
                     </ListSubheader>
                   );
                 })}
+                {!isLoggedIn && (
+                  <>
+                    <MenuItem
+                      component="a"
+                      href={`${OFF_URL}/cgi/login.pl`}
+                      target="_blank"
+                      rel="noreferrer"
+                      onClick={handleCloseNavMenu}
+                    >
+                      <Typography sx={{ textAlign: "center" }}>
+                        {t("menu.log_in")}
+                      </Typography>
+                    </MenuItem>
+                    <MenuItem
+                      component="a"
+                      href={`${OFF_URL}/cgi/user.pl`}
+                      target="_blank"
+                      rel="noreferrer"
+                      onClick={handleCloseNavMenu}
+                    >
+                      <Typography sx={{ textAlign: "center" }}>
+                        {t("menu.sign_up")}
+                      </Typography>
+                    </MenuItem>
+                  </>
+                )}
                 <MenuItem
                   component="button"
                   color="inherit"
@@ -736,14 +763,8 @@ const ResponsiveAppBar = () => {
               >
                 <HelpOutlineIcon />
               </IconButton>
-              <Tooltip
-                title={
-                  isLoggedIn
-                    ? t("menu.logged_in_user", { userName })
-                    : t("menu.log_in")
-                }
-              >
-                {isLoggedIn ? (
+              {isLoggedIn ? (
+                <Tooltip title={t("menu.logged_in_user", { userName })}>
                   <Box
                     sx={{
                       width: 48,
@@ -755,24 +776,35 @@ const ResponsiveAppBar = () => {
                   >
                     <AccountCircleIcon color="success" />
                   </Box>
-                ) : (
-                  <IconButton
-                    aria-label={t("menu.log_in")}
-                    onClick={() =>
-                      void (async () => {
-                        const isLoggedIn = await refresh();
-                        if (!isLoggedIn) {
-                          window
-                            .open(`${OFF_URL}/cgi/login.pl`, "_blank")
-                            ?.focus();
-                        }
-                      })()
-                    }
+                </Tooltip>
+              ) : (
+                <Stack
+                  direction="row"
+                  spacing={1}
+                  sx={{ flexShrink: 0, alignItems: "center" }}
+                >
+                  <Button
+                    variant="contained"
+                    size="small"
+                    href={`${OFF_URL}/cgi/login.pl`}
+                    target="_blank"
+                    rel="noreferrer"
+                    sx={{ whiteSpace: "nowrap", fontWeight: 700 }}
                   >
-                    <AccountCircleIcon color="error" />
-                  </IconButton>
-                )}
-              </Tooltip>
+                    {t("menu.log_in")}
+                  </Button>
+                  <Button
+                    variant="outlined"
+                    size="small"
+                    href={`${OFF_URL}/cgi/user.pl`}
+                    target="_blank"
+                    rel="noreferrer"
+                    sx={{ whiteSpace: "nowrap", fontWeight: 700 }}
+                  >
+                    {t("menu.sign_up")}
+                  </Button>
+                </Stack>
+              )}
             </Box>
           </Box>
         </Toolbar>

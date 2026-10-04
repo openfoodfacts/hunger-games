@@ -247,6 +247,7 @@
     "open_navigation": "Open navigation menu",
     "logged_in_user": "Logged in as {{userName}}",
     "log_in": "Log in",
+    "sign_up": "Sign up",
     "moderation": "Moderation",
     "ingredients": "Ingredients"
   },
@@ -503,6 +504,13 @@
     "send": "Validate & send",
     "skip": "Skip this product",
     "getRobotoffPrediciton": "Get predictions from Robotoff"
+  },
+  "login": {
+    "restricted_title": "Log in to play this game",
+    "restricted_description": "This game is reserved for Open Food Facts contributors: your answers are saved on your account and credited to you. Logging in or creating an account only takes a few seconds.",
+    "log_in": "Log in",
+    "sign_up": "Create an account",
+    "redirect_hint": "You will be redirected on the Open Food Facts website, then come back to this page to start playing."
   },
   "footer": {
     "social": {
