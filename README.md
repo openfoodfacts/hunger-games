@@ -34,7 +34,6 @@ The main goal is: Every Open Food Facts user can annotate products in a few minu
 ## 🎨 Design & User interface
 
 - We strive for a playful and refined UI that's very efficient on the Web and on Mobile.
-- The homepage is the game catalogue; the navbar provides game shortcuts, logo search workflows, and a direct dashboard link.
 - [![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?logo=figma&logoColor=white) Mockups on the current app and future plans to discuss](https://www.figma.com/design/pngqJwPkytFik6h4EW396n/Hunger-Games?node-id=801-2&p=f&t=xQnrkht1cbTJGOw9-0)
 - Are you a designer ? [Join the design team](https://github.com/openfoodfacts/openfoodfacts-design)
 
