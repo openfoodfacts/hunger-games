@@ -1,5 +1,11 @@
 # Changelog
 
+## Unreleased
+
+### Features
+
+- Simplify responsive navigation with game shortcuts, logo search menus, and direct dashboard access.
+
 ## [1.1.0](https://github.com/openfoodfacts/hunger-games/compare/v1.0.0...v1.1.0) (2026-02-28)
 
 ### Features

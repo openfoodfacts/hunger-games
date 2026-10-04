@@ -48,6 +48,14 @@ const cards = [
     category: "featured",
   },
   {
+    id: "logo_challenges",
+    title: "home.game_selector.cards.logo_challenges.title",
+    desc: "home.game_selector.cards.logo_challenges.description",
+    link: "/dashboard",
+    image: home_logos,
+    category: "featured",
+  },
+  {
     id: "green_score",
     title: "home.game_selector.cards.green_score.title",
     desc: "home.game_selector.cards.green_score.description",
@@ -260,11 +268,7 @@ const HomeCard = ({ cardInfo, t }) => {
           )}
         </Box>
         <CardContent sx={{ flexGrow: 1, p: 2.5 }}>
-          <Stack
-            direction="row"
-            spacing={1}
-            sx={{ alignItems: "flex-start", justifyContent: "space-between" }}
-          >
+          <Stack spacing={0.75} sx={{ alignItems: "flex-start" }}>
             <Typography component="h3" variant="h6" sx={{ fontWeight: 700 }}>
               {t(title)}
             </Typography>
