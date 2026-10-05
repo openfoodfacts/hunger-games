@@ -12,127 +12,125 @@ import Button from "@mui/material/Button";
 import Autocomplete from "@mui/material/Autocomplete";
 import TextField from "@mui/material/TextField";
 import MenuItem from "@mui/material/MenuItem";
-import ListSubheader from "@mui/material/ListSubheader";
 import Tooltip from "@mui/material/Tooltip";
-import Stack from "@mui/material/Stack";
-import MuiLink from "@mui/material/Link";
+import ListItemIcon from "@mui/material/ListItemIcon";
+import QuizOutlinedIcon from "@mui/icons-material/QuizOutlined";
+import ParkOutlinedIcon from "@mui/icons-material/ParkOutlined";
+import SellOutlinedIcon from "@mui/icons-material/SellOutlined";
+import RestaurantOutlinedIcon from "@mui/icons-material/RestaurantOutlined";
+import SpellcheckIcon from "@mui/icons-material/Spellcheck";
+import FindInPageOutlinedIcon from "@mui/icons-material/FindInPageOutlined";
+import SearchIcon from "@mui/icons-material/Search";
+import Inventory2OutlinedIcon from "@mui/icons-material/Inventory2Outlined";
+import TravelExploreIcon from "@mui/icons-material/TravelExplore";
+import EditOutlinedIcon from "@mui/icons-material/EditOutlined";
+import InsightsIcon from "@mui/icons-material/Insights";
+import AppsIcon from "@mui/icons-material/Apps";
+
 import Collapse from "@mui/material/Collapse";
 import List from "@mui/material/List";
-
 import SettingsIcon from "@mui/icons-material/Settings";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import PublicIcon from "@mui/icons-material/Public";
 import ExpandLess from "@mui/icons-material/ExpandLess";
 import ExpandMore from "@mui/icons-material/ExpandMore";
 import HelpOutlineIcon from "@mui/icons-material/HelpOutlineOutlined";
-
 import DevModeContext from "../contexts/devMode";
 import LoginContext from "../contexts/login";
 import logo from "../assets/logo.png";
 import { Link } from "react-router";
-
 import { useTranslation } from "react-i18next";
 import WelcomeTour from "./welcome/Welcome";
-import { useMediaQuery } from "@mui/material";
-import { useTheme } from "@mui/material/styles";
 import { OFF_URL } from "../const";
 import { useCountry } from "../contexts/CountryProvider";
 import countryNames from "../assets/countries.json";
 
-type Page = {
-  translationKey: string;
-  url?: string;
-  devModeOnly?: boolean;
-  mobileOnly?: boolean;
-  desktopOnly?: boolean;
-  children?: Page[];
+type Page = { translationKey: string; url: string; devModeOnly?: boolean };
+
+const PAGE_ICONS: Record<string, typeof SearchIcon> = {
+  questions: QuizOutlinedIcon,
+  "green-score": ParkOutlinedIcon,
+  brandinator: SellOutlinedIcon,
+  nutrition: RestaurantOutlinedIcon,
+  "ingredient-spellcheck": SpellcheckIcon,
+  "ingredient-detection": FindInPageOutlinedIcon,
+  "logos/search": SearchIcon,
+  "logos/product-search": Inventory2OutlinedIcon,
+  "logos/deep-search": TravelExploreIcon,
+  logos: EditOutlinedIcon,
+  insights: InsightsIcon,
+  "": AppsIcon,
 };
 
-// Object with no url are subheader in the menu
-const PAGES: Page[] = [
-  { translationKey: "menu.games" },
-  { url: "questions", translationKey: "menu.questions" },
-  { url: "green-score", translationKey: "menu.green-score" },
+const NAV_GROUPS: { id: string; pages: Page[] }[] = [
   {
-    translationKey: "menu.logos",
-    children: [
+    id: "games",
+    pages: [
+      { url: "questions", translationKey: "menu.questions" },
+      { url: "green-score", translationKey: "menu.green-score" },
+      { url: "brandinator", translationKey: "menu.brandinator" },
+      {
+        url: "nutrition",
+        translationKey: "home.game_selector.cards.nutrition.title",
+      },
+      {
+        url: "ingredient-spellcheck",
+        translationKey: "home.game_selector.cards.ingredient_spellcheck.title",
+      },
+      {
+        url: "ingredient-detection",
+        translationKey: "home.game_selector.cards.ingredient_detection.title",
+      },
+    ],
+  },
+  {
+    id: "logo_search",
+    pages: [
+      { url: "logos/search", translationKey: "menu.logos-search" },
+      {
+        url: "logos/product-search",
+        translationKey: "menu.logos-product-search",
+      },
+      { url: "logos/deep-search", translationKey: "menu.logos-deep-search" },
       {
         url: "logos",
         translationKey: "menu.logos-annotation",
         devModeOnly: true,
       },
-      {
-        url: "logos/search",
-        translationKey: "menu.logos-search",
-      },
-      {
-        url: "logos/product-search",
-        translationKey: "menu.logos-product-search",
-      },
-      {
-        url: "logos/deep-search",
-        translationKey: "menu.logos-deep-search",
-      },
+      { url: "insights", translationKey: "menu.insights", devModeOnly: true },
     ],
-  },
-  {
-    url: "nutrition",
-    translationKey: "menu.nutritions",
-    desktopOnly: true,
-  },
-  { translationKey: "menu.manage" },
-  {
-    translationKey: "menu.ingredients",
-    children: [
-      {
-        url: "ingredient-spellcheck",
-        translationKey: "menu.ingredient-spellcheck",
-      },
-      {
-        url: "ingredient-detection",
-        translationKey: "menu.ingredient-detection",
-      },
-    ],
-  },
-  { url: "insights", translationKey: "menu.insights", devModeOnly: true },
-  { url: "dashboard", translationKey: "menu.dashboard" },
-  { url: "settings", translationKey: "menu.settings", mobileOnly: true },
-  {
-    url: "https://nutripatrol.openfoodfacts.org",
-    translationKey: "menu.moderation",
   },
 ];
 
-type NavBrandProps = {
-  externalLogo?: boolean;
-  compact?: boolean;
+const menuSlotProps = {
+  paper: {
+    sx: {
+      mt: 1,
+      minWidth: 240,
+      borderRadius: 2,
+      border: "1px solid",
+      borderColor: "divider",
+      boxShadow: "0 8px 28px rgba(0, 0, 0, 0.12)",
+      "& .MuiMenu-list": { p: 0.75 },
+      "& .MuiMenuItem-root": {
+        borderRadius: 1,
+        minHeight: 42,
+        fontSize: "0.9rem",
+        px: 1.5,
+        my: 0.25,
+      },
+      "& .MuiDivider-root": { my: 0.75, mx: 1 },
+    },
+  },
 };
 
-const NavBrand = ({ externalLogo = false, compact = false }: NavBrandProps) => {
+const NavBrand = ({ compact = false }: { compact?: boolean }) => {
   const { t } = useTranslation();
-
-  const logoMark = (
-    <Box
-      sx={{
-        width: compact ? 32 : 36,
-        height: compact ? 32 : 36,
-        display: "grid",
-        placeItems: "center",
-        flexShrink: 0,
-        borderRadius: compact ? 1.5 : 2,
-      }}
-    >
-      <Box
-        component="img"
-        src={logo}
-        alt=""
-        sx={{ width: "78%", height: "78%", objectFit: "contain" }}
-      />
-    </Box>
-  );
-
   return (
     <Box
+      component={Link as React.ElementType}
+      to="/"
+      aria-label={t("menu.title")}
       sx={{
         display: "inline-flex",
         alignItems: "center",
@@ -143,40 +141,21 @@ const NavBrand = ({ externalLogo = false, compact = false }: NavBrandProps) => {
         py: 0.5,
         color: "inherit",
         textDecoration: "none",
-        "&:hover": {
-          backgroundColor: "action.hover",
-        },
+        "&:hover": { backgroundColor: "action.hover" },
       }}
     >
-      {externalLogo ? (
-        <MuiLink
-          href={OFF_URL}
-          target="_blank"
-          aria-label="Open Food Facts"
-          sx={{ display: "flex" }}
-        >
-          {logoMark}
-        </MuiLink>
-      ) : (
-        <Box
-          component={Link as React.ElementType}
-          to="/"
-          aria-label={t("menu.title")}
-          sx={{ display: "flex" }}
-        >
-          {logoMark}
-        </Box>
-      )}
       <Box
-        component={Link as React.ElementType}
-        to="/"
+        component="img"
+        src={logo}
+        alt=""
         sx={{
-          minWidth: 0,
-          color: "inherit",
-          textDecoration: "none",
-          lineHeight: 1,
+          width: compact ? 32 : 36,
+          height: compact ? 32 : 36,
+          objectFit: "contain",
+          flexShrink: 0,
         }}
-      >
+      />
+      <Box sx={{ minWidth: 0, lineHeight: 1 }}>
         <Typography
           component="span"
           sx={{
@@ -213,145 +192,149 @@ const NavBrand = ({ externalLogo = false, compact = false }: NavBrandProps) => {
   );
 };
 
-const MultiPagesButton = ({
-  translationKey,
-  children,
-  isOpen,
-  isExternalUrl,
-  toggleIsOpen,
-}: {
-  translationKey: string;
-  children: Page[];
-  isOpen: boolean;
-  isExternalUrl: (url?: string) => boolean;
-  toggleIsOpen: () => void;
-}) => {
-  const { t } = useTranslation();
-  const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
-
-  const handleOpen = (event: React.MouseEvent<HTMLElement>) => {
-    setAnchorEl(event.currentTarget);
-    if (!isOpen) toggleIsOpen();
-  };
-
-  const handleClose = () => {
-    setAnchorEl(null);
-    if (isOpen) toggleIsOpen();
-  };
-
-  return (
-    <>
-      <Button
-        color="inherit"
-        key={translationKey}
-        onClick={handleOpen}
-        sx={{
-          my: 1,
-          px: { lg: 1, xl: 1.5 },
-          display: "block",
-          whiteSpace: "nowrap",
-        }}
-      >
-        {t(translationKey)}
-      </Button>
-      <Menu
-        anchorEl={anchorEl}
-        open={isOpen}
-        onClose={handleClose}
-        sx={{ display: { xs: "none", md: "flex" } }}
-      >
-        {children.map((subPage) => (
-          <MenuItem
-            sx={{ pl: 4 }}
-            key={subPage.translationKey}
-            onClick={handleClose}
-            {...(isExternalUrl(subPage.url)
-              ? { component: "a", target: "_blank", href: subPage.url }
-              : {
-                  component: Link as React.ElementType,
-                  to: `/${subPage.url}`,
-                })}
-          >
-            <Typography
-              sx={{
-                textAlign: "center",
-              }}
-            >
-              {t(subPage.translationKey)}
-            </Typography>
-          </MenuItem>
-        ))}
-      </Menu>
-    </>
-  );
-};
-
 const ResponsiveAppBar = () => {
   const { t } = useTranslation();
   const [anchorElNav, setAnchorElNav] = React.useState<HTMLElement | null>(
     null,
   );
+  const [groupMenu, setGroupMenu] = React.useState<{
+    id: string;
+    anchor: HTMLElement;
+  } | null>(null);
   const [isTourOpen, setIsTourOpen] = React.useState(false);
   const [country, setCountry] = useCountry();
-  const theme = useTheme();
-  // Keep page visibility in sync with the breakpoint used by the desktop nav.
-  const isDesktop = useMediaQuery(theme.breakpoints.up("lg"));
-
-  const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
-    setAnchorElNav(event.currentTarget);
-  };
-
-  const handleCloseNavMenu = () => {
-    setAnchorElNav(null);
-  };
-
   const { isLoggedIn, userName, refresh } = React.useContext(LoginContext);
-  const { devMode: isDevMode, visiblePages } = React.useContext(DevModeContext);
-  const [menuOpenState, setMenuOpenState] = React.useState<
+  const { devMode, visiblePages } = React.useContext(DevModeContext);
+  const [mobileGroups, setMobileGroups] = React.useState<
     Record<string, boolean>
   >({});
-
-  const isPageVisible = (page: {
-    devModeOnly?: boolean;
-    mobileOnly?: boolean;
-    desktopOnly?: boolean;
-    url?: string;
-  }) => {
-    if (page.devModeOnly) {
-      return isDevMode && !!page.url && visiblePages[page.url];
-    }
-    if (page.mobileOnly) {
-      return !isDesktop;
-    }
-    if (page.desktopOnly) {
-      return isDesktop;
-    }
-    return true;
+  const groups = NAV_GROUPS.map((group) => ({
+    ...group,
+    pages: group.pages.filter(
+      (page) => !page.devModeOnly || (devMode && !!visiblePages[page.url]),
+    ),
+  }));
+  const accountLabel = isLoggedIn
+    ? userName || t("menu.logged_in")
+    : t("menu.log_in");
+  const accountAriaLabel =
+    isLoggedIn && userName
+      ? t("menu.logged_in_user", { userName })
+      : accountLabel;
+  const closeNavigation = () => {
+    setAnchorElNav(null);
+    setGroupMenu(null);
   };
+  const openLogin = () =>
+    void (async () => {
+      if (!(await refresh())) {
+        window.open(`${OFF_URL}/cgi/login.pl`, "_blank")?.focus();
+      }
+    })();
 
-  const isExternalUrl = (url?: string): boolean =>
-    Boolean(url?.trim().startsWith("http"));
+  const countrySelector = (
+    <Box
+      data-welcome-tour="country"
+      sx={{
+        display: "flex",
+        alignItems: "center",
+        gap: { xs: 0, md: 0.5 },
+        px: { xs: 1.5, md: 1 },
+      }}
+    >
+      <Box
+        sx={{
+          display: "flex",
+          alignItems: "center",
+          width: { xs: 34, md: 20 },
+          flexShrink: 0,
+        }}
+      >
+        <PublicIcon sx={{ fontSize: { xs: 24, md: 20 } }} aria-hidden="true" />
+      </Box>
+      <Autocomplete
+        disableClearable
+        options={countryNames}
+        getOptionLabel={(option) =>
+          option.countryCode
+            ? `${option.label} (${option.countryCode})`
+            : option.label
+        }
+        isOptionEqualToValue={(option, value) =>
+          option.countryCode === value.countryCode
+        }
+        value={
+          countryNames.find((item) => item.countryCode === country) ??
+          countryNames.find((item) => item.countryCode === "")
+        }
+        onChange={(_, newValue) =>
+          setCountry(newValue?.countryCode ?? "", "global")
+        }
+        sx={{
+          width: { xs: 220, md: 160, xl: 220 },
+          fieldset: { border: "none" },
+          "& .MuiInputBase-root": {
+            borderRadius: 1,
+          },
+        }}
+        renderInput={(params) => (
+          <TextField
+            {...params}
+            variant="outlined"
+            size="small"
+            slotProps={{
+              ...params.slotProps,
+              htmlInput: {
+                ...params.slotProps.htmlInput,
+                "aria-label": t("menu.country", { defaultValue: "Country" }),
+              },
+            }}
+          />
+        )}
+      />
+    </Box>
+  );
 
-  const displayedPages = PAGES.map((page) => {
-    if (!page.children) {
-      return page;
-    }
-    return { ...page, children: page.children.filter(isPageVisible) };
-  }).filter((page) => {
-    if (page.children !== undefined && page.children.length === 0) {
-      return false;
-    }
-    return isPageVisible(page);
-  });
+  const renderTool = (page: Page, mobile = false) => {
+    const external = page.url.startsWith("http");
+    const Icon = PAGE_ICONS[page.url] ?? SearchIcon;
+    return (
+      <MenuItem
+        key={page.url}
+        onClick={closeNavigation}
+        {...(external
+          ? {
+              component: "a",
+              href: page.url,
+              target: "_blank",
+              rel: "noreferrer",
+            }
+          : { component: Link as React.ElementType, to: `/${page.url}` })}
+        sx={{
+          pl: mobile ? "24px !important" : 1.5,
+          ...(page.url === "" && {
+            color: "primary.main",
+            fontWeight: 700,
+          }),
+        }}
+      >
+        <ListItemIcon sx={{ minWidth: 34, color: "inherit", opacity: 0.75 }}>
+          <Icon fontSize="small" />
+        </ListItemIcon>
+        {t(page.translationKey)}
+        {external ? " ↗" : ""}
+      </MenuItem>
+    );
+  };
 
   return (
     <AppBar
       position="static"
-      sx={(theme) => ({
-        backgroundColor: theme.palette.cafeCreme.main,
-        color: theme.palette.cafeCreme.contrastText,
+      sx={(appTheme) => ({
+        backgroundColor: appTheme.palette.cafeCreme.main,
+        color: appTheme.palette.cafeCreme.contrastText,
         boxShadow: "none",
-        borderBottom: `1px solid ${theme.palette.divider}`,
+        borderBottom: `1px solid ${appTheme.palette.divider}`,
       })}
     >
       <Container maxWidth={false}>
@@ -359,11 +342,10 @@ const ResponsiveAppBar = () => {
           disableGutters
           sx={{ minHeight: { xs: 58, lg: 66 }, px: { xs: 0.5, lg: 0 } }}
         >
-          {/* Mobile content */}
           <Box
             sx={{
               flexGrow: 1,
-              display: { xs: "flex", lg: "none" },
+              display: { xs: "flex", md: "none" },
               alignItems: "center",
               maxWidth: "100%",
             }}
@@ -375,164 +357,91 @@ const ResponsiveAppBar = () => {
               })}
               aria-controls="menu-appbar"
               aria-haspopup="true"
-              onClick={handleOpenNavMenu}
+              onClick={(event) => setAnchorElNav(event.currentTarget)}
               color="inherit"
+              data-welcome-tour="games"
             >
               <MenuIcon />
             </IconButton>
-            {anchorElNav && (
-              <Menu
-                id="menu-appbar"
-                anchorEl={anchorElNav}
-                anchorOrigin={{
-                  vertical: "bottom",
-                  horizontal: "left",
-                }}
-                // keepMounted
-                transformOrigin={{
-                  vertical: "top",
-                  horizontal: "left",
-                }}
-                open={Boolean(anchorElNav)}
-                onClose={handleCloseNavMenu}
-                sx={{
-                  display: { xs: "block", lg: "none" },
-                }}
-              >
-                {displayedPages.map((page) => {
-                  if (page.url) {
-                    return (
-                      <MenuItem
-                        key={page.translationKey}
-                        color="inherit"
-                        sx={{ display: "block" }}
-                        {...(isExternalUrl(page.url)
-                          ? { component: "a", target: "_blank", href: page.url }
-                          : {
-                              component: Link as React.ElementType,
-                              to: `/${page.url}`,
-                            })}
-                      >
-                        <Typography
-                          sx={{
-                            textAlign: "left",
-                          }}
-                        >
-                          {t(page.translationKey)}
-                        </Typography>
-                      </MenuItem>
-                    );
-                  }
-                  if (page.children) {
-                    return (
-                      <List
-                        component="div"
-                        disablePadding
-                        key={page.translationKey}
-                      >
-                        <MenuItem
-                          onClick={() =>
-                            setMenuOpenState((prev) => ({
-                              ...prev,
-                              [`Mobile-${page.translationKey}`]:
-                                !prev[`Mobile-${page.translationKey}`],
-                            }))
-                          }
-                        >
-                          <Typography
-                            sx={{
-                              textAlign: "center",
-                            }}
-                          >
-                            {t(page.translationKey)}
-                          </Typography>
-
-                          {menuOpenState[`Mobile-${page.translationKey}`] ? (
-                            <ExpandLess />
-                          ) : (
-                            <ExpandMore />
-                          )}
-                        </MenuItem>
-                        <Collapse
-                          in={menuOpenState[`Mobile-${page.translationKey}`]}
-                          timeout="auto"
-                          unmountOnExit
-                        >
-                          <List component="div" disablePadding>
-                            {page.children.map((subPage) => (
-                              <MenuItem
-                                sx={{ pl: 4 }}
-                                key={subPage.translationKey}
-                                onClick={handleCloseNavMenu}
-                                component={Link as React.ElementType}
-                                to={`/${subPage.url}`}
-                              >
-                                <Typography
-                                  sx={{
-                                    textAlign: "center",
-                                  }}
-                                >
-                                  {t(subPage.translationKey)}
-                                </Typography>
-                              </MenuItem>
-                            ))}
-                          </List>
-                        </Collapse>
-                      </List>
-                    );
-                  }
-                  return (
-                    <ListSubheader key={`Mobile-${page.translationKey}`}>
-                      {t(page.translationKey)}
-                    </ListSubheader>
-                  );
-                })}
-                {!isLoggedIn && (
-                  <>
-                    <MenuItem
-                      component="a"
-                      href={`${OFF_URL}/cgi/login.pl`}
-                      target="_blank"
-                      rel="noreferrer"
-                      onClick={handleCloseNavMenu}
-                    >
-                      <Typography sx={{ textAlign: "center" }}>
-                        {t("menu.log_in")}
-                      </Typography>
-                    </MenuItem>
-                    <MenuItem
-                      component="a"
-                      href={`${OFF_URL}/cgi/user.pl`}
-                      target="_blank"
-                      rel="noreferrer"
-                      onClick={handleCloseNavMenu}
-                    >
-                      <Typography sx={{ textAlign: "center" }}>
-                        {t("menu.sign_up")}
-                      </Typography>
-                    </MenuItem>
-                  </>
-                )}
-                <MenuItem
-                  component="button"
-                  color="inherit"
-                  sx={{ mt: -1 }}
-                  onClick={() => {
-                    setIsTourOpen(true);
-                    handleCloseNavMenu();
-                  }}
-                >
-                  <Typography
-                    sx={{
-                      textAlign: "center",
-                    }}
+            <Menu
+              slotProps={menuSlotProps}
+              id="menu-appbar"
+              anchorEl={anchorElNav}
+              open={Boolean(anchorElNav)}
+              onClose={closeNavigation}
+            >
+              {groups.map((group) => (
+                <React.Fragment key={group.id}>
+                  <MenuItem
+                    onClick={() =>
+                      setMobileGroups((prev) => ({
+                        ...prev,
+                        [group.id]: !prev[group.id],
+                      }))
+                    }
+                    aria-expanded={!!mobileGroups[group.id]}
+                    sx={{ justifyContent: "space-between", fontWeight: 700 }}
                   >
-                    {t("menu.tour")}
-                  </Typography>
+                    {t(`menu.${group.id}`)}
+                    {mobileGroups[group.id] ? <ExpandLess /> : <ExpandMore />}
+                  </MenuItem>
+                  <Collapse in={!!mobileGroups[group.id]} unmountOnExit>
+                    <List disablePadding>
+                      {group.pages.map((page) => renderTool(page, true))}
+                      {group.id === "games" && <Divider />}
+                      {group.id === "games" &&
+                        renderTool(
+                          { url: "", translationKey: "menu.all_games" },
+                          true,
+                        )}
+                    </List>
+                  </Collapse>
+                </React.Fragment>
+              ))}
+              <MenuItem
+                component={Link as React.ElementType}
+                to="/dashboard"
+                onClick={closeNavigation}
+              >
+                {t("menu.dashboard")}
+              </MenuItem>
+              {!isLoggedIn && (
+                <MenuItem
+                  component="a"
+                  href={`${OFF_URL}/cgi/user.pl`}
+                  target="_blank"
+                  rel="noreferrer"
+                  onClick={closeNavigation}
+                >
+                  {t("menu.sign_up")}
                 </MenuItem>
-              </Menu>
-            )}
-
+              )}
+              <Divider />
+              {countrySelector}
+              <MenuItem
+                component={Link as React.ElementType}
+                to="/settings"
+                onClick={closeNavigation}
+                data-welcome-tour="settings"
+              >
+                <ListItemIcon sx={{ minWidth: 34, color: "inherit" }}>
+                  <SettingsIcon />
+                </ListItemIcon>
+                {t("menu.settings")}
+              </MenuItem>
+              <MenuItem
+                onClick={() => {
+                  closeNavigation();
+                  setIsTourOpen(true);
+                }}
+                data-welcome-tour="tour"
+              >
+                <ListItemIcon sx={{ minWidth: 34, color: "inherit" }}>
+                  <HelpOutlineIcon />
+                </ListItemIcon>
+                {t("menu.tour")}
+              </MenuItem>
+            </Menu>
             <Box
               sx={{
                 flex: 1,
@@ -544,57 +453,53 @@ const ResponsiveAppBar = () => {
               <NavBrand compact />
             </Box>
             {isLoggedIn ? (
-              <Box
-                sx={{
-                  width: 48,
-                  height: 48,
-                  display: "grid",
-                  placeItems: "center",
-                }}
-              >
-                <AccountCircleIcon color="success" />
-              </Box>
+              <Tooltip title={accountAriaLabel}>
+                <Box
+                  role="img"
+                  aria-label={accountAriaLabel}
+                  sx={{
+                    minWidth: 0,
+                    maxWidth: { xs: 120, sm: 180 },
+                    display: "flex",
+                    alignItems: "center",
+                    gap: 0.5,
+                    pl: 1,
+                    pr: 0.5,
+                  }}
+                >
+                  <AccountCircleIcon color="success" />
+                  <Typography
+                    variant="button"
+                    noWrap
+                    sx={{ textTransform: "none" }}
+                  >
+                    {accountLabel}
+                  </Typography>
+                </Box>
+              </Tooltip>
             ) : (
-              <IconButton
+              <Button
+                color="inherit"
                 aria-label={t("menu.log_in")}
-                sx={{ width: 48, height: 48 }}
-                onClick={() =>
-                  void (async () => {
-                    const isLoggedIn = await refresh();
-                    if (!isLoggedIn) {
-                      window.open(`${OFF_URL}/cgi/login.pl`, "_blank")?.focus();
-                    }
-                  })()
-                }
+                onClick={openLogin}
+                startIcon={<AccountCircleIcon color="error" />}
+                sx={{ minWidth: 0, px: 1, whiteSpace: "nowrap" }}
               >
-                <AccountCircleIcon color="error" />
-              </IconButton>
+                {t("menu.log_in")}
+              </Button>
             )}
           </Box>
 
-          {/* Desktop content */}
           <Box
             sx={{
-              display: { xs: "none", lg: "flex" },
-              flexDirection: "row",
+              display: { xs: "none", md: "flex" },
               alignItems: "center",
               width: "100%",
               justifyContent: "space-between",
-              minWidth: 0,
             }}
           >
-            <Box
-              sx={{
-                display: "flex",
-                flexDirection: "row",
-                alignItems: "center",
-                minWidth: 0,
-                overflowX: "auto",
-                scrollbarWidth: "none",
-                "&::-webkit-scrollbar": { display: "none" },
-              }}
-            >
-              <NavBrand externalLogo />
+            <Box sx={{ display: "flex", alignItems: "center", gap: 2 }}>
+              <NavBrand />
               <Divider
                 orientation="vertical"
                 sx={{
@@ -604,206 +509,141 @@ const ResponsiveAppBar = () => {
                   borderColor: "divider",
                 }}
               />
-
-              {displayedPages.map((page) => {
-                if (page.url) {
-                  return isExternalUrl(page.url) ? (
-                    <Button
-                      color="inherit"
-                      key={page.url}
-                      onClick={handleCloseNavMenu}
-                      sx={{
-                        my: 1,
-                        px: { lg: 1, xl: 1.5 },
-                        display: "block",
-                        whiteSpace: "nowrap",
-                      }}
-                      component={"a"}
-                      href={page.url}
-                      target="_blank"
-                      data-welcome-tour={page.url}
-                    >
-                      {t(page.translationKey)}
-                    </Button>
-                  ) : (
-                    <Button
-                      color="inherit"
-                      key={page.url}
-                      onClick={handleCloseNavMenu}
-                      sx={{
-                        my: 1,
-                        px: { lg: 1, xl: 1.5 },
-                        display: "block",
-                        whiteSpace: "nowrap",
-                      }}
-                      component={Link as React.ElementType}
-                      to={`/${page.url}`}
-                      data-welcome-tour={page.url}
-                    >
-                      {t(page.translationKey)}
-                    </Button>
-                  );
-                }
-
-                const children = page.children;
-                if (children != null) {
-                  return (
-                    <MultiPagesButton
-                      {...page}
-                      key={page.translationKey}
-                      isExternalUrl={isExternalUrl}
-                      isOpen={!!menuOpenState[`Desktop-${page.translationKey}`]}
-                      toggleIsOpen={() =>
-                        setMenuOpenState((prev) => ({
-                          ...prev,
-                          [`Desktop-${page.translationKey}`]:
-                            !prev[`Desktop-${page.translationKey}`],
-                        }))
-                      }
-                    >
-                      {children}
-                    </MultiPagesButton>
-                  );
-                }
-
-                return null;
-              })}
-            </Box>
-            <Box
-              sx={{
-                display: "flex",
-                flexDirection: "row",
-                alignItems: "center",
-                flexShrink: 0,
-                gap: { lg: 0.5, xl: 1 },
-                "& > *": { mr: 0 },
-              }}
-            >
-              <Box
-                title={t("menu.country", { defaultValue: "Country" })}
-                sx={{
-                  display: "flex",
-                  alignItems: "center",
-                  gap: 0.5,
-                  pl: { lg: 1, xl: 1.5 },
-                }}
-              >
-                <Divider
-                  orientation="vertical"
+              {groups.map((group) => (
+                <Button
+                  key={group.id}
+                  color="inherit"
+                  aria-haspopup="menu"
+                  aria-controls={
+                    groupMenu?.id === group.id
+                      ? "desktop-navigation-menu"
+                      : undefined
+                  }
+                  aria-expanded={groupMenu?.id === group.id}
+                  onClick={(event) =>
+                    setGroupMenu({ id: group.id, anchor: event.currentTarget })
+                  }
+                  data-welcome-tour={group.id}
+                  endIcon={<ExpandMore />}
                   sx={{
-                    height: 32,
-                    alignSelf: "center",
-                    mr: { lg: 0.5, xl: 1 },
-                    borderColor: "divider",
-                  }}
-                />
-                <PublicIcon fontSize="small" aria-hidden="true" />
-                <Autocomplete
-                  disableClearable
-                  options={countryNames}
-                  getOptionLabel={(option) =>
-                    option.countryCode
-                      ? `${option.label} (${option.countryCode})`
-                      : option.label
-                  }
-                  isOptionEqualToValue={(option, value) =>
-                    option.countryCode === value.countryCode
-                  }
-                  value={
-                    countryNames.find((c) => c.countryCode === country) ??
-                    countryNames.find((c) => c.countryCode === "")
-                  }
-                  onChange={(_, newValue) =>
-                    setCountry(newValue?.countryCode ?? "", "global")
-                  }
-                  sx={{
-                    width: { lg: 160, xl: 220 },
-                    fieldset: { border: "none" },
-                    "& .MuiInputBase-root": {
-                      borderRadius: 1,
-                      bgcolor: "action.hover",
+                    whiteSpace: "nowrap",
+                    minWidth: 0,
+                    pl: 1,
+                    pr: 0.5,
+                    borderRadius: 1.5,
+                    bgcolor:
+                      groupMenu?.id === group.id
+                        ? "action.selected"
+                        : undefined,
+                    "& .MuiButton-endIcon": {
+                      transition: "transform 160ms ease",
+                      transform:
+                        groupMenu?.id === group.id ? "rotate(180deg)" : "none",
+                      "@media (prefers-reduced-motion: reduce)": {
+                        transition: "none",
+                      },
                     },
                   }}
-                  renderInput={(params) => (
-                    <TextField
-                      {...params}
-                      variant="outlined"
-                      size="small"
-                      slotProps={{
-                        ...params.slotProps,
-                        htmlInput: {
-                          ...params.slotProps.htmlInput,
-                          "aria-label": t("menu.country", {
-                            defaultValue: "Country",
-                          }),
-                        },
-                      }}
-                    />
-                  )}
-                />
-              </Box>
-              <IconButton
-                aria-label={t("menu.settings")}
+                >
+                  {t(`menu.${group.id}`)}
+                </Button>
+              ))}
+              <Button
                 color="inherit"
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2 }}
                 component={Link as React.ElementType}
-                to={`/settings`}
-                data-welcome-tour="settings"
+                to="/dashboard"
+                data-welcome-tour="dashboard"
+                sx={{ whiteSpace: "nowrap" }}
               >
-                <SettingsIcon />
-              </IconButton>
-              <IconButton
-                aria-label={t("menu.tour")}
-                color="inherit"
-                onClick={() => {
-                  setIsTourOpen(true);
+                {t("menu.dashboard")}
+              </Button>
+              <Menu
+                slotProps={menuSlotProps}
+                anchorOrigin={{ vertical: "bottom", horizontal: "left" }}
+                transformOrigin={{ vertical: "top", horizontal: "left" }}
+                id="desktop-navigation-menu"
+                anchorEl={groupMenu?.anchor ?? null}
+                open={Boolean(groupMenu)}
+                onClose={() => setGroupMenu(null)}
+              >
+                {groups
+                  .find((group) => group.id === groupMenu?.id)
+                  ?.pages.map((page) => renderTool(page))}
+                {groupMenu?.id === "games" && <Divider />}
+                {groupMenu?.id === "games" &&
+                  renderTool({ url: "", translationKey: "menu.all_games" })}
+              </Menu>
+            </Box>
+            <Box sx={{ display: "flex", alignItems: "center", gap: 0.5 }}>
+              <Divider
+                orientation="vertical"
+                sx={{
+                  height: 32,
+                  alignSelf: "center",
+                  mx: { md: 0.5, lg: 1 },
+                  borderColor: "divider",
                 }}
-                data-welcome-tour="tour"
-              >
-                <HelpOutlineIcon />
-              </IconButton>
-              {isLoggedIn ? (
-                <Tooltip title={t("menu.logged_in_user", { userName })}>
+              />
+              {countrySelector}
+              <Tooltip title={t("menu.settings")}>
+                <IconButton
+                  color="inherit"
+                  aria-label={t("menu.settings")}
+                  component={Link as React.ElementType}
+                  to="/settings"
+                  data-welcome-tour="settings"
+                >
+                  <SettingsIcon />
+                </IconButton>
+              </Tooltip>
+              <Tooltip title={t("menu.help", { defaultValue: "Help" })}>
+                <IconButton
+                  color="inherit"
+                  aria-label={t("menu.help", { defaultValue: "Help" })}
+                  onClick={() => setIsTourOpen(true)}
+                  data-welcome-tour="tour"
+                >
+                  <HelpOutlineIcon />
+                </IconButton>
+              </Tooltip>
+              <Tooltip title={accountAriaLabel}>
+                {isLoggedIn ? (
                   <Box
+                    role="img"
+                    aria-label={accountAriaLabel}
                     sx={{
-                      width: 48,
-                      height: 48,
+                      px: 1,
                       display: "flex",
                       alignItems: "center",
-                      justifyContent: "center",
+                      gap: 0.5,
                     }}
                   >
                     <AccountCircleIcon color="success" />
+                    <Typography variant="button" sx={{ textTransform: "none" }}>
+                      {accountLabel}
+                    </Typography>
                   </Box>
-                </Tooltip>
-              ) : (
-                <Stack
-                  direction="row"
-                  spacing={1}
-                  sx={{ flexShrink: 0, alignItems: "center" }}
+                ) : (
+                  <Button
+                    color="inherit"
+                    onClick={openLogin}
+                    startIcon={<AccountCircleIcon color="error" />}
+                  >
+                    {accountLabel}
+                  </Button>
+                )}
+              </Tooltip>
+              {!isLoggedIn && (
+                <Button
+                  variant="outlined"
+                  size="small"
+                  href={`${OFF_URL}/cgi/user.pl`}
+                  target="_blank"
+                  rel="noreferrer"
+                  sx={{ whiteSpace: "nowrap" }}
                 >
-                  <Button
-                    variant="contained"
-                    size="small"
-                    href={`${OFF_URL}/cgi/login.pl`}
-                    target="_blank"
-                    rel="noreferrer"
-                    sx={{ whiteSpace: "nowrap", fontWeight: 700 }}
-                  >
-                    {t("menu.log_in")}
-                  </Button>
-                  <Button
-                    variant="outlined"
-                    size="small"
-                    href={`${OFF_URL}/cgi/user.pl`}
-                    target="_blank"
-                    rel="noreferrer"
-                    sx={{ whiteSpace: "nowrap", fontWeight: 700 }}
-                  >
-                    {t("menu.sign_up")}
-                  </Button>
-                </Stack>
+                  {t("menu.sign_up")}
+                </Button>
               )}
             </Box>
           </Box>
