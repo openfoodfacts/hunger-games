@@ -550,7 +550,18 @@
     "parsing": "Get server understanding",
     "send": "Validate & send",
     "skip": "Skip this product",
-    "getRobotoffPrediciton": "Get predictions from Robotoff"
+    "getRobotoffPrediciton": "Get predictions from Robotoff",
+    "unselect_photo": "Unselect photo (bad photo)",
+    "unselecting": "Unselecting photo...",
+    "unselect_error": "Failed to unselect photo",
+    "filters": {
+      "country": "Country",
+      "popularity": "Popularity",
+      "all_countries": "All countries (world)",
+      "top_90_percent_2025": "Top 90% scans (2025)",
+      "top_90_percent_2024": "Top 90% scans (2024)",
+      "all_popularity": "All products (no filter)"
+    }
   },
   "login": {
     "restricted_title": "Log in to play this game",
