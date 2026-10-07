@@ -47,6 +47,7 @@ const ShouldLoggedinPage = React.lazy(
   () => import("./pages/shouldLoggedinPage"),
 );
 const PackagingPage = React.lazy(() => import("./pages/packaging"));
+const BooksPage = React.lazy(() => import("./pages/books"));
 // const LogoQuestionValidator = React.lazy(
 //   () => import("./pages/logosValidator/LogoQuestionValidator"),
 // );
@@ -172,6 +173,24 @@ export default function App() {
       .then(refresh)
       .catch(() => {});
   }, [refresh]);
+
+  // The login and signup actions open Open Food Facts in another tab: re-check
+  // the session when the user comes back to this tab, so the current page
+  // unlocks by itself.
+  React.useEffect(() => {
+    if (userState.isLoggedIn) {
+      return undefined;
+    }
+    const recheckSession = () => {
+      Promise.resolve()
+        .then(refresh)
+        .catch(() => {});
+    };
+    window.addEventListener("focus", recheckSession);
+    return () => {
+      window.removeEventListener("focus", recheckSession);
+    };
+  }, [refresh, userState.isLoggedIn]);
 
   // Matomo page view tracking
   const location = useLocation();
@@ -363,6 +382,16 @@ export default function App() {
                       element={
                         userState.isLoggedIn ? (
                           <PackagingPage />
+                        ) : (
+                          <ShouldLoggedinPage />
+                        )
+                      }
+                    />
+                    <Route
+                      path="/books"
+                      element={
+                        userState.isLoggedIn ? (
+                          <BooksPage />
                         ) : (
                           <ShouldLoggedinPage />
                         )

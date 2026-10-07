@@ -22,10 +22,12 @@ import home_prices_create_product from "../../assets/home_prices_create_product.
 import home_packaging from "../../assets/home_packaging.svg";
 import home_weights from "../../assets/home_weights.svg";
 import home_brands from "../../assets/home_brands.svg";
+import home_brandinator from "../../assets/home_brandinator.png";
 import home_labels from "../../assets/home_labels.svg";
 import home_open_beauty_facts from "../../assets/home_open_beauty_facts.svg";
 import home_open_pet_food_facts from "../../assets/home_open_pet_food_facts.svg";
 import home_open_products_facts from "../../assets/home_open_products_facts.svg";
+import home_books from "../../assets/home_books.svg";
 
 const cards = [
   // FEATURED / CORE ANNOTATION GAMES
@@ -46,11 +48,27 @@ const cards = [
     category: "featured",
   },
   {
+    id: "logo_challenges",
+    title: "home.game_selector.cards.logo_challenges.title",
+    desc: "home.game_selector.cards.logo_challenges.description",
+    link: "/dashboard",
+    image: home_logos,
+    category: "featured",
+  },
+  {
     id: "green_score",
     title: "home.game_selector.cards.green_score.title",
     desc: "home.game_selector.cards.green_score.description",
     link: "/green-score",
     image: home_greenscore,
+    category: "featured",
+  },
+  {
+    id: "brandinator",
+    title: "home.game_selector.cards.brandinator.title",
+    desc: "home.game_selector.cards.brandinator.description",
+    link: "/brandinator",
+    image: home_brandinator,
     category: "featured",
   },
   {
@@ -158,6 +176,15 @@ const cards = [
     category: "move_products",
     badge: "Open Products Facts",
   },
+  {
+    id: "move_books",
+    title: "home.game_selector.cards.move_books.title",
+    desc: "home.game_selector.cards.move_books.description",
+    link: "/books",
+    image: home_books,
+    category: "move_products",
+    badge: "Books (978/979)",
+  },
 
   // OPEN PRICES PROMOS
   {
@@ -259,11 +286,7 @@ const HomeCard = ({ cardInfo, t }) => {
           )}
         </Box>
         <CardContent sx={{ flexGrow: 1, p: 2.5 }}>
-          <Stack
-            direction="row"
-            spacing={1}
-            sx={{ alignItems: "flex-start", justifyContent: "space-between" }}
-          >
+          <Stack spacing={0.75} sx={{ alignItems: "flex-start" }}>
             <Typography component="h3" variant="h6" sx={{ fontWeight: 700 }}>
               {t(title)}
             </Typography>
