@@ -74,6 +74,10 @@
         "data_quality": {
           "title": "Qualité des données",
           "description": "Corrigez les erreurs de qualité sur les produits populaires et aidez à atteindre l'objectif de 0,9 %"
+        },
+        "move_books": {
+          "title": "Déplacer les livres vers Open Products Facts",
+          "description": "Identifiez les livres (codes-barres 978 et 979) pour les déplacer vers Open Products Facts"
         }
       }
     },
@@ -212,6 +216,7 @@
     "title": "Hunger Games",
     "games": "Jeux",
     "questions": "Questions",
+    "books": "Livres",
     "logos": "Logos",
     "logos-annotation": "Annotation des logos",
     "logos-search": "Recherche de logos",
@@ -590,5 +595,36 @@
       "mirabelle_link": "Tableau de bord Mirabelle",
       "daily_email_link": "S'abonner à l'email quotidien Data Quality"
     }
+  },
+  "books": {
+    "title": "Déplacer les livres vers Open Products Facts",
+    "subtitle": "Identifiez les livres catalogués par erreur dans Open Food Facts et migrez-les grâce aux préfixes 978 et 979",
+    "is_it_a_book_question": "S'agit-il d'un livre à déplacer vers Open Products Facts ?",
+    "yes_move_button": "Oui, déplacer vers Open Products Facts",
+    "not_a_book_button": "Non (Garder dans OFF)",
+    "yes_book": "Oui, c'est un livre (Vers OPF)",
+    "no_book": "Non, ce n'est pas un livre",
+    "skip": "Passer / Pas sûr",
+    "filter_prefix": "Préfixe code-barres",
+    "prefix_all": "Tous (978 & 979)",
+    "custom_barcode": "Chercher un code-barres (ex. 978...)",
+    "shortcuts_title": "Raccourcis clavier",
+    "books_moved_session": "livres déplacés",
+    "recent_activity": "Activité récente de la session",
+    "unknown_title": "Titre inconnu / Sans titre",
+    "publisher_brand": "Éditeur / Marque",
+    "verify_online": "Vérifier en ligne",
+    "no_image": "Aucune photo téléchargée pour ce produit",
+    "front_cover": "Couverture",
+    "status_moved": "Déplacé vers OPF",
+    "status_kept_off": "Conservé dans OFF",
+    "status_skipped": "Ignoré",
+    "loading_books": "Chargement des livres depuis Open Food Facts...",
+    "loading_facet_desc": "Interrogation des facettes de codes 978xxxxxxxxxx et 979xxxxxxxxxx",
+    "no_products_left": "Aucun autre livre dans cette sélection !",
+    "congrats_desc": "Vous avez terminé d'examiner les produits disponibles dans cette file d'attente.",
+    "load_more": "Charger plus de produits",
+    "toast_moved_success": "Livre déplacé vers Open Products Facts ! (Catégorie ajoutée)",
+    "toast_move_error": "Échec de la mise à jour de la catégorie sur Open Food Facts"
   }
 }
