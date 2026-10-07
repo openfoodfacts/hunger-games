@@ -173,6 +173,24 @@ export default function App() {
       .catch(() => {});
   }, [refresh]);
 
+  // The login and signup actions open Open Food Facts in another tab: re-check
+  // the session when the user comes back to this tab, so the current page
+  // unlocks by itself.
+  React.useEffect(() => {
+    if (userState.isLoggedIn) {
+      return undefined;
+    }
+    const recheckSession = () => {
+      Promise.resolve()
+        .then(refresh)
+        .catch(() => {});
+    };
+    window.addEventListener("focus", recheckSession);
+    return () => {
+      window.removeEventListener("focus", recheckSession);
+    };
+  }, [refresh, userState.isLoggedIn]);
+
   // Matomo page view tracking
   const location = useLocation();
   const { trackPageView } = useMatomo();

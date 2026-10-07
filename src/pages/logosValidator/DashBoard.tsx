@@ -87,7 +87,7 @@ function BrandinatorPromo() {
           flexShrink: 0,
         }}
       />
-      <Box sx={{ flex: 1 }}>
+      <Box sx={{ flex: 1, minWidth: 0, maxWidth: "100%" }}>
         <Stack
           direction="row"
           spacing={1}
@@ -174,7 +174,7 @@ const TabPanel = React.memo(function TabPanel({
             spacing={2}
             sx={{ alignItems: { xs: "flex-start", sm: "center" }, mb: 3 }}
           >
-            <Box sx={{ flex: 1 }}>
+            <Box sx={{ flex: 1, minWidth: 0, maxWidth: "100%" }}>
               <Typography
                 variant="overline"
                 sx={{
@@ -206,7 +206,7 @@ const TabPanel = React.memo(function TabPanel({
             sx={{
               display: "grid",
               gridTemplateColumns: {
-                xs: "1fr",
+                xs: "minmax(0, 1fr)",
                 sm: "repeat(2, minmax(0, 1fr))",
                 md: "repeat(3, minmax(0, 1fr))",
                 lg: "repeat(4, minmax(0, 1fr))",
@@ -274,7 +274,7 @@ export default function VerticalTabs() {
               variant="h3"
               sx={{ fontWeight: 800, lineHeight: 1.1 }}
             >
-              {t("logos.dashboard.title")}
+              {t("logos.dashboard.challenges_title")}
             </Typography>
             <Typography
               variant="body1"
@@ -283,12 +283,21 @@ export default function VerticalTabs() {
             >
               {t("logos.dashboard.description")}
             </Typography>
+            <Button
+              component="a"
+              href="https://nutripatrol.openfoodfacts.org"
+              target="_blank"
+              rel="noreferrer"
+              sx={{ mt: 1 }}
+            >
+              {t("menu.moderation")} ↗
+            </Button>
           </Box>
           <Box
             sx={{
               display: "grid",
               gridTemplateColumns: {
-                xs: "1fr",
+                xs: "minmax(0, 1fr)",
                 md: "220px minmax(0, 1fr)",
               },
               gap: { xs: 2, md: 2.5 },
@@ -299,6 +308,7 @@ export default function VerticalTabs() {
               variant="outlined"
               sx={(theme) => ({
                 p: 1,
+                minWidth: 0,
                 borderRadius: 3,
                 position: { md: "sticky" },
                 top: { md: 16 },
@@ -323,6 +333,8 @@ export default function VerticalTabs() {
               <Tabs
                 orientation={isDesktop ? "vertical" : "horizontal"}
                 variant="scrollable"
+                scrollButtons="auto"
+                allowScrollButtonsMobile
                 value={value}
                 onChange={handleChange}
                 aria-label={t("logos.dashboard.categories")}
@@ -388,7 +400,7 @@ export default function VerticalTabs() {
             </Paper>
             <Paper
               variant="outlined"
-              sx={{ borderRadius: 3, overflow: "hidden" }}
+              sx={{ minWidth: 0, borderRadius: 3, overflow: "hidden" }}
             >
               {DASHBOARD.map((_, index) => (
                 <TabPanel

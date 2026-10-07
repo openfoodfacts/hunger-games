@@ -23,6 +23,10 @@
           "title": "Green-score",
           "description": "Annotate the questions with the highest value"
         },
+        "logo_challenges": {
+          "title": "Logo challenges",
+          "description": "Choose a label/logo category and validate matching products"
+        },
         "brandinator": {
           "title": "Brandinator",
           "description": "Taxonomize brands, validate brand logos, and answer brand annotation questions"
@@ -241,11 +245,12 @@
     "green-score": "Green score",
     "brandinator": "Brandinator",
     "logos": "Logos",
+    "help": "Help",
+    "country": "Country",
     "logos-annotation": "Annotate logos",
     "logos-search": "Search logos",
     "logos-product-search": "Annotate products",
     "logos-deep-search": "Deep logo search",
-    "manage": "Manage",
     "insights": "Insights",
     "nutritions": "Nutrition",
     "reverso": "Reverso",
@@ -253,13 +258,21 @@
     "ingredient-spellcheck": "Check ingredient spelling",
     "ingredient-detection": "Detect ingredients",
     "settings": "Settings",
-    "dashboard": "Logo dashboard",
     "tour": "Take a tour",
     "open_navigation": "Open navigation menu",
     "logged_in_user": "Logged in as {{userName}}",
+    "logged_in": "Logged in",
     "log_in": "Log in",
+    "sign_up": "Sign up",
     "moderation": "Moderation",
-    "ingredients": "Ingredients"
+    "ingredients": "Ingredients",
+    "manage": "Manage",
+    "dashboard": "Dashboard",
+    "logo_search": "Logo search",
+    "all_games": "All games",
+    "nutritions": "Nutrition",
+    "ingredient-spellcheck": "Check ingredient spelling",
+    "ingredient-detection": "Detect ingredients"
   },
   "insights": {
     "insights": "Insights",
@@ -294,8 +307,9 @@
   },
   "logos": {
     "dashboard": {
-      "title": "Logo dashboard",
-      "description": "Explore logo categories and help improve product data.",
+      "title": "Logo challenges",
+      "challenges_title": "Logo challenges",
+      "description": "Choose a logo category and validate products with matching logos.",
       "category": "Category",
       "categories": "Categories",
       "logo_count_one": "{{count}} logo",
@@ -430,6 +444,43 @@
         "text2": "Just click on the question mark and start the journey again!"
       }
     },
+    "navigation_tour": {
+      "intro": {
+        "title": "Welcome to Hunger Games",
+        "text1": "Find games from the homepage catalogue. Choose a card to start playing, then use Games or the Hunger Games brand to return home.",
+        "text2": "Log in to Open Food Facts to get credit for your contributions."
+      },
+      "games": {
+        "title": "Games",
+        "text1": "Open Games to switch between Questions, Green Score, Brandinator, Nutrition, and ingredient games. Choose All games for the full catalogue.",
+        "text2": "Click the Hunger Games logo to return to the full game catalogue."
+      },
+      "tools": {
+        "title": "Logo search",
+        "text1": "Open Logo search to search logos, annotate products, or run a deep logo search.",
+        "text2": "These specialist workflows help you investigate products and logos."
+      },
+      "country": {
+        "title": "Country",
+        "text1": "Choose a country to tailor games that use country-specific data.",
+        "text2": "Your selection is saved and shared with Settings."
+      },
+      "settings": {
+        "title": "Settings",
+        "text1": "Set your preferred language, theme, and other application preferences in Settings.",
+        "text2": "Developer mode and page visibility preferences remain available there."
+      },
+      "help": {
+        "title": "Help",
+        "text1": "Use Help to take this tour again whenever you need it.",
+        "text2": "For game-specific instructions, open the game from the homepage catalogue."
+      },
+      "manage": {
+        "title": "Dashboard",
+        "text1": "Open Dashboard for logo challenges. You can also access moderation through the dashboard.",
+        "text2": "Developer workflows remain available in Logo search when developer mode and page visibility are enabled."
+      }
+    },
     "logos": {
       "page1": {
         "title": "Selection",
@@ -514,6 +565,13 @@
     "send": "Validate & send",
     "skip": "Skip this product",
     "getRobotoffPrediciton": "Get predictions from Robotoff"
+  },
+  "login": {
+    "restricted_title": "Log in to play this game",
+    "restricted_description": "This game is reserved for Open Food Facts contributors: your answers are saved on your account and credited to you. Logging in or creating an account only takes a few seconds.",
+    "log_in": "Log in",
+    "sign_up": "Create an account",
+    "redirect_hint": "You will be redirected on the Open Food Facts website, then come back to this page to start playing."
   },
   "footer": {
     "social": {
