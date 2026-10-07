@@ -43,6 +43,15 @@
           "title": "Nutrition game",
           "description": "Extract and validate nutritional values from packaging tables"
         },
+        "reverso": {
+          "title": "Reverso",
+          "description": "Fix products where energy values in kcal and kJ are reversed"
+        },
+        "quantities": {
+          "title": "Weights & Quantities",
+          "description": "Fix and complete product weights, volumes and net contents flagged by quality warnings",
+          "badge": "Weight / Volume"
+        },
         "prices_validation": {
           "title": "Price Validation",
           "description": "Verify prices and receipts contributed to Open Prices"
@@ -243,6 +252,11 @@
     "logos-product-search": "Annotate products",
     "logos-deep-search": "Deep logo search",
     "insights": "Insights",
+    "nutritions": "Nutrition",
+    "reverso": "Reverso",
+    "quantities": "Quantities",
+    "ingredient-spellcheck": "Check ingredient spelling",
+    "ingredient-detection": "Detect ingredients",
     "settings": "Settings",
     "tour": "Take a tour",
     "open_navigation": "Open navigation menu",
@@ -582,6 +596,101 @@
       "title": "Android APK",
       "subtitle": "Download"
     }
+  },
+  "quantities": {
+    "barcode_placeholder": "Filter by barcode...",
+    "clear_filter": "Clear filter",
+    "refresh_all": "Reset and reload",
+    "edit": "Edit",
+    "shortcut": {
+      "escape": "(Esc)",
+      "enter": "(Enter)"
+    },
+    "warnings": {
+      "all": {
+        "label": "All quantity warnings",
+        "description": "Browse all quantity-related warnings and alerts"
+      },
+      "quantity_not_recognized": {
+        "label": "Unrecognized quantity (missing unit, typo...)",
+        "description": "A quantity is present but its unit is missing or its format is unrecognized (e.g. 80, 125, 1/2 gallon)"
+      },
+      "serving_over_product": {
+        "label": "Serving exceeds total quantity",
+        "description": "The serving size exceeds the product's total net weight or volume (e.g. a 100 g serving for a 30 g product)"
+      },
+      "product_over_10kg": {
+        "label": "Quantity > 10 kg (possible scale error)",
+        "description": "Unusually high quantity, often caused by entering grams with extra zeros (e.g. 500000 g)"
+      },
+      "product_under_1g": {
+        "label": "Quantity < 1 g (possible scale error)",
+        "description": "Unusually low quantity, often caused by a misplaced decimal point (e.g. 0.05 g instead of 50 g)"
+      },
+      "serving_without_product": {
+        "label": "Serving defined but total quantity missing",
+        "description": "A serving size is specified but the product's total contents are missing"
+      },
+      "product_in_mg": {
+        "label": "Quantity in mg",
+        "description": "The product's total quantity is expressed in milligrams instead of grams"
+      },
+      "serving_under_product": {
+        "label": "Serving < quantity / 1000",
+        "description": "The serving size is disproportionately small compared with the total product"
+      },
+      "serving_over_500g": {
+        "label": "Serving > 500 g",
+        "description": "The individual serving exceeds 500 g, often confused with the weight of the whole product"
+      },
+      "serving_under_1g": {
+        "label": "Serving < 1 g",
+        "description": "The specified serving size is less than 1 g"
+      },
+      "serving_not_recognized": {
+        "label": "Unrecognized serving",
+        "description": "The serving size could not be converted to a numeric value with a unit"
+      }
+    },
+    "title": "Weights & Quantities",
+    "subtitle": "Review and standardize product quantities and net contents flagged by quality warnings.",
+    "fixed_session": "fixed this session",
+    "total_in_facet": "total in facet",
+    "view_facet": "OFF Facet",
+    "filter_warning": "Warning type",
+    "login_notice_banner": "To save your quantity corrections directly on Open Food Facts, please log in.",
+    "login_notice": "You can inspect and correct quantities. To save changes to Open Food Facts, please log in.",
+    "login_required": "Please log in to Open Food Facts to save changes.",
+    "empty_title": "Well done! No products left to fix.",
+    "empty_desc": "All products in this selection have been reviewed or there are no more quantity warnings for this filter.",
+    "packaging_photo": "Product photos",
+    "zoom_hint": "Zoom and pan the photo to locate the net weight / volume",
+    "zoom_hint_short": "Wheel / click zoom",
+    "no_photos": "No photos available for this product.",
+    "photo": "Photo",
+    "image_front": "Front face",
+    "image_nutrition": "Nutrition table",
+    "image_ingredients": "Ingredients",
+    "image_packaging": "Packaging",
+    "unnamed_product": "Unnamed product",
+    "unspecified_brand": "Unspecified brand",
+    "detected_issue": "Issue detected on this product:",
+    "quantity_needs_review": "Verify and fix the quantity printed on the packaging",
+    "current_quantity": "Current quantity:",
+    "current_serving": "Current serving size:",
+    "missing": "Not specified",
+    "suggestions": "Automatic suggestions:",
+    "enter_quantity": "Enter exact quantity (net weight or volume):",
+    "quantity_placeholder": "e.g. 500 g, 75 cl, 1.5 l, 6 x 25 cl",
+    "append_unit": "Add a unit:",
+    "edit_serving": "Also edit serving size",
+    "hide_serving": "Hide serving size",
+    "serving_size_label": "Serving size",
+    "saving": "Saving...",
+    "save_and_next": "Save & Next",
+    "save_success": "✓ Quantity successfully saved to Open Food Facts!",
+    "save_error": "Error while saving quantity",
+    "product_not_found": "Product not found"
   },
   "books": {
     "title": "Move Books to Open Products Facts",

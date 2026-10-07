@@ -10,6 +10,7 @@ import {
   OFF_API_URL_V3,
   OFF_IMAGE_URL,
   OFF_SEARCH,
+  OFF_URL,
   URL_ORIGINE,
 } from "./const";
 import axios from "axios";
@@ -262,6 +263,37 @@ class OffService {
         lc: lang,
         tags_lc: lang,
         product: { lang, [`ingredients_text_${lang}`]: text },
+      },
+    );
+  }
+
+  updateProductQuantity(editionParams: {
+    code: string;
+    quantity: string;
+    servingSize?: string;
+    comment?: string;
+  }) {
+    const {
+      code,
+      quantity,
+      servingSize,
+      comment = "Fix product quantity warning (Quantities game)",
+    } = editionParams;
+
+    const params = new URLSearchParams();
+    params.append("code", code);
+    params.append("quantity", quantity);
+    if (servingSize !== undefined && servingSize !== "") {
+      params.append("serving_size", servingSize);
+    }
+    params.append("comment", comment);
+
+    return axios.post<{ status: number; status_verbose?: string }>(
+      `${OFF_URL}/cgi/product_jqm.pl`,
+      params,
+      {
+        withCredentials: true,
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
       },
     );
   }
