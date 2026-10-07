@@ -27,10 +27,20 @@ import home_labels from "../../assets/home_labels.svg";
 import home_open_beauty_facts from "../../assets/home_open_beauty_facts.svg";
 import home_open_pet_food_facts from "../../assets/home_open_pet_food_facts.svg";
 import home_open_products_facts from "../../assets/home_open_products_facts.svg";
+import home_data_quality from "../../assets/home_data_quality.svg";
 import home_books from "../../assets/home_books.svg";
 
 const cards = [
   // FEATURED / CORE ANNOTATION GAMES
+  {
+    id: "data_quality",
+    title: "home.game_selector.cards.data_quality.title",
+    desc: "home.game_selector.cards.data_quality.description",
+    link: "/data-quality",
+    image: home_data_quality,
+    category: "featured",
+    badge: "Quality Dashboard",
+  },
   {
     id: "questions",
     title: "home.game_selector.cards.questions.title",
