@@ -110,11 +110,13 @@ export const getPageCustomization: () => {
     showOtherQuestions: boolean;
   };
 } = () => {
-  // const settings = localSettings.fetch();
+  const storedPageCustomization = localSettings.fetch().pageCustomization;
   return {
     questionPage: {
-      showDebug: true,
+      // Debug panels (raw JSON, AI resume) are opt-in, see #1666
+      showDebug: false,
       showOtherQuestions: true,
+      ...storedPageCustomization?.questionPage,
     },
   };
 };
