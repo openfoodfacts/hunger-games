@@ -42,31 +42,41 @@ const UserData = () => {
             : (questionsCount ?? 0)}
         </Typography>
         <Stack spacing={1} sx={{ maxHeight: 160, overflowY: "auto", pr: 0.5 }}>
-          {recentAnswers.map(
-            ({ insight_id, barcode, value, insight_type, answer }) => (
-              <Stack
-                key={insight_id}
-                direction="row"
-                sx={{
-                  alignItems: "center",
-                  justifyContent: "space-between",
-                  gap: 1,
-                }}
-              >
-                <Link
-                  href={offService.getProductEditUrl(barcode)}
-                  sx={{ overflowWrap: "anywhere", fontSize: "0.875rem" }}
+          {recentAnswers.length === 0 ? (
+            <Typography
+              variant="body2"
+              color="text.disabled"
+              sx={{ opacity: 0.5 }}
+            >
+              {t("questions.no_recent_answers")}
+            </Typography>
+          ) : (
+            recentAnswers.map(
+              ({ insight_id, barcode, value, insight_type, answer }) => (
+                <Stack
+                  key={insight_id}
+                  direction="row"
+                  sx={{
+                    alignItems: "center",
+                    justifyContent: "space-between",
+                    gap: 1,
+                  }}
                 >
-                  {insight_type}: {value}
-                </Link>
-                {answer === WRONG_INSIGHT && (
-                  <CancelOutlinedIcon color="error" fontSize="small" />
-                )}
-                {answer === CORRECT_INSIGHT && (
-                  <CheckCircleOutlineIcon color="success" fontSize="small" />
-                )}
-              </Stack>
-            ),
+                  <Link
+                    href={offService.getProductEditUrl(barcode)}
+                    sx={{ overflowWrap: "anywhere", fontSize: "0.875rem" }}
+                  >
+                    {insight_type}: {value}
+                  </Link>
+                  {answer === WRONG_INSIGHT && (
+                    <CancelOutlinedIcon color="error" fontSize="small" />
+                  )}
+                  {answer === CORRECT_INSIGHT && (
+                    <CheckCircleOutlineIcon color="success" fontSize="small" />
+                  )}
+                </Stack>
+              ),
+            )
           )}
         </Stack>
       </Stack>
