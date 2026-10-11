@@ -3,7 +3,7 @@ import { Robotoff } from "@openfoodfacts/openfoodfacts-nodejs";
 
 import { ROBOTOFF_API_URL } from "./const";
 import { getLang } from "./localeStorageManager";
-import { reformatValueTag, removeEmptyKeys } from "./utils";
+import { editComment, reformatValueTag, removeEmptyKeys } from "./utils";
 
 export interface QuestionInterface {
   barcode: string;
@@ -73,11 +73,17 @@ const robotoffClient = new Robotoff(
 
 const robotoff = {
   annotate(insightId: string, annotation: -1 | 0 | 1) {
-    return robotoffClient.annotate({
+    // `comment` is sent to Robotoff so that the edit it pushes to Open Food
+    // Facts is tagged as a Hunger Games edit. Robotoff does not read it yet,
+    // but ignores unknown form fields, so the request stays valid until it
+    // does (see openfoodfacts/hunger-games#1703).
+    const body: Parameters<Robotoff["annotate"]>[0] & { comment?: string } = {
       insight_id: insightId,
       annotation: annotation,
       update: 1,
-    });
+      comment: editComment("Product annotated"),
+    };
+    return robotoffClient.annotate(body);
   },
 
   async questionsByProductCode(code: string) {

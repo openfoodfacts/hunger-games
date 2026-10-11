@@ -33,6 +33,7 @@ import offService from "../../off";
 import { OFF_API_URL_V3 } from "../../const";
 import { useTranslation } from "react-i18next";
 import useUrlParams from "../../hooks/useUrlParams";
+import { editComment } from "../../utils";
 import Loader from "../loader";
 import { useCountry } from "../../contexts/CountryProvider";
 import { getCountryId } from "../../utils/getCountryId";
@@ -197,7 +198,10 @@ const PackagingEditor = ({
               void axios
                 .patch(
                   `${OFF_API_URL_V3}/product/${product.code}`,
-                  formatData(innerRows),
+                  {
+                    ...formatData(innerRows),
+                    comment: editComment("Packaging updated"),
+                  },
                   { withCredentials: true },
                 )
                 .then(next)

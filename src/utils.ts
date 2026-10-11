@@ -30,6 +30,19 @@ export const reformatValueTag = (value: string | undefined) => {
   return output;
 };
 
+/**
+ * Comment sent to Open Food Facts alongside every edit made from Hunger Games.
+ * The edit stays attributed to the user who made it (that comes from the
+ * session), the comment only tells readers which tool performed it.
+ */
+export const EDIT_SOURCE = "Hunger Games";
+
+/**
+ * Build the edit comment, e.g. `editComment("Packaging updated")` returns
+ * "Packaging updated (Hunger Games)".
+ */
+export const editComment = (action: string) => `${action} (${EDIT_SOURCE})`;
+
 export const removeEmptyKeys = <T extends Record<string, unknown>>(obj: T) => {
   Object.keys(obj).forEach(
     (key) => (obj[key] == null || obj[key] === "") && delete obj[key],

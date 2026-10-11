@@ -13,6 +13,7 @@ import {
   URL_ORIGINE,
 } from "./const";
 import axios from "axios";
+import { editComment } from "./utils";
 
 const BARCODE_REGEX = /(...)(...)(...)(.*)$/;
 
@@ -246,6 +247,7 @@ class OffService {
 
     return axios.patch(`${OFF_API_URL_V3}/product/${code}`, {
       product: { [`ingredients_text${lang ? `_${lang}` : ""}`]: text },
+      comment: editComment("Ingredients updated"),
     });
   }
 
