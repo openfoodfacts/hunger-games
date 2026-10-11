@@ -53,8 +53,7 @@ const LoadingReferenceLogos = () => {
       <Typography variant="subtitle1">
         {t("logos.loading_messages.pending_reference_logos")}
       </Typography>
-      <br />
-      <Loader />
+      <Loader inline />
     </Box>
   );
 };
