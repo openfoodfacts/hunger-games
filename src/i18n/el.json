@@ -91,7 +91,7 @@
     "similar_questions": "Παρόμοιες ερωτήσεις",
     "no_similar_questions": "Δεν υπάρχουν παρόμοιες ερωτήσεις",
     "remaining_questions_count_one": "1 ερώτηση ακόμη",
-    "remaining_questions_count_other": "{{count}} questions remaining",
+    "remaining_questions_count_other": "{{count}} ερωτήσεις ακόμα",
     "an_error_occurred": "Παρουσιάστηκε σφάλμα. Παρακαλώ ανανεώστε, δοκιμάστε αργότερα ή επικοινωνήστε με την ομάδα.",
     "countries": "Χώρες",
     "view": "Προβολή",
@@ -221,12 +221,12 @@
   },
   "logos": {
     "dashboard": {
-      "title": "Logo dashboard",
-      "description": "Explore logo categories and help improve product data.",
+      "title": "Πίνακας λογότυπων",
+      "description": "Εξερευνήστε κατηγορίες λογότυπων και βοηθήστε στη βελτίωση των δεδομένων προϊόντων.",
       "category": "Κατηγορία",
       "categories": "Κατηγορίες",
-      "logo_count_one": "{{count}} logo",
-      "logo_count_other": "{{count}} logos",
+      "logo_count_one": "{{count}} λογότυπο",
+      "logo_count_other": "{{count}} λογότυπα",
       "more_info": "Περισσότερες πληροφορίες",
       "questions": "Ερωτήσεις",
       "search": "Αναζήτηση"
@@ -275,8 +275,8 @@
       "title": "Αναζήτηση λογότυπων",
       "description": "Επιλέξτε ένα λογότυπο που θέλετε να αναζητήσετε και πάμε να τα πιάσουμε όλα. Για κάθε λογότυπο που σχολιάζετε, θα φέρουμε τους γείτονές του έτσι ώστε να μην σταματήσετε ποτέ να σχολιάζετε. (Πατήστε Shift για να επιλέξετε εύρος λογότυπων)",
       "ref_logos": "Λογότυπα αναφοράς (το λογότυπο έχει ήδη σχολιαστεί με αυτήν την τιμή)",
-      "annotation_count_one": "Already {{formattedCount}} annotation. You can come back to this logo in a few days if you don't find any matching logos.",
-      "annotation_count_other": "Already {{formattedCount}} annotations. You can come back to this logo in a few days if you don't find any matching logos.",
+      "annotation_count_one": "Ήδη υπάρχει {{formattedCount}} σημείωση. Μπορείτε να επιστρέψετε σε αυτό το λογότυπο σε λίγες ημέρες, αν δεν βρείτε κανένα αντίστοιχο λογότυπο.",
+      "annotation_count_other": "Ήδη υπάρχουν {{formattedCount}} σημειώσεις. Μπορείτε να επιστρέψετε σε αυτό το λογότυπο σε λίγες ημέρες, αν δεν βρείτε κανένα αντίστοιχο λογότυπο.",
       "remaining": "Απομένουν για σχολιασμό",
       "select_all": "Επιλογή όλων",
       "unselect_all": "Αποεπιλογή όλων"
