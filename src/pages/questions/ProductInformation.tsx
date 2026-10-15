@@ -323,6 +323,19 @@ const ProductInformation = () => {
           >
             {t("insights.view_crops_for_this_product")}
           </Button>
+          <Tooltip title={t("questions.flag_product_tooltip")} describeChild>
+            <Button
+              size="small"
+              component={Link}
+              target="_blank"
+              rel="noopener noreferrer"
+              href={externalApi.getProductFlagUrl(question.barcode)}
+              variant="outlined"
+              startIcon={<OutlinedFlagIcon />}
+            >
+              {t("questions.flag_product")}
+            </Button>
+          </Tooltip>
         </Box>
       </>
 
