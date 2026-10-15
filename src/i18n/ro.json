@@ -2,7 +2,7 @@
   "home": {
     "game_selector": {
       "title": "Ce joc ai vrea să joci?",
-      "external_link": "External link",
+      "external_link": "Link extern",
       "cards": {
         "questions": {
           "title": "Întrebări",
@@ -17,8 +17,8 @@
           "description": "Adnotează întrebările cu cea mai mare valoare"
         },
         "create_products": {
-          "title": "Create missing products",
-          "description": "Add products that are not in the database yet, over on Open Prices"
+          "title": "Creează produse lipsă",
+          "description": "Adaugă în Open Prices produsele care nu se găsesc încă în baza de date"
         }
       }
     },
@@ -29,12 +29,12 @@
       "contribution_details": "Aflați de ce contează contribuția dvs"
     },
     "saved_filters": "Filtre salvate",
-    "saved_filters_delete": "Delete saved filter",
-    "saved_filters_delete_title": "Delete saved filter?",
-    "saved_filters_delete_description": "This saved filter will be removed from this device.",
+    "saved_filters_delete": "Șterge filtrul salvat",
+    "saved_filters_delete_title": "Ștergi filtrul salvat?",
+    "saved_filters_delete_description": "Acest filtru salvat va fi eliminat de pe dispozitiv.",
     "saved_filters_delete_confirm": "Ştergeţi",
-    "saved_filters_pending": "{{count}} products waiting",
-    "saved_filters_pending_unknown": "Products waiting",
+    "saved_filters_pending": "{{count}} produse în așteptare",
+    "saved_filters_pending_unknown": "Produse în așteptare",
     "contribution_modal": {
       "title": "Contribuția ta contează",
       "information": "Jocurile Foamei este un efort de a valorifica rezultatele OCR și ale inteligenței noastre artificiale. Când utilizați Jocurile Foamei de la Open Food Facts, îmbunătățiți întreaga noastră bază de date, ceea ce ajută comunitatea să facă alegeri alimentare mai bune. Colectăm adnotările dvs. și le folosim pentru a face Open Food Facts mai precis și mai eficient.",
@@ -42,10 +42,10 @@
     },
     "statistics": {
       "title": "{{userName}} statistici:",
-      "title_without_name": "Your statistics",
+      "title_without_name": "Statisticile tale",
       "empty_state": {
-        "title": "No contributions yet",
-        "description": "Your contribution statistics will appear here once you start helping improve Open Food Facts.",
+        "title": "Nu există contribuții",
+        "description": "Statisticile privind contribuțiile tale vor apărea aici îndată ce începi să contribui la îmbunătățirea OpenOpen Food Facts.",
         "action": "Start contributing"
       },
       "editorCount": {
@@ -222,7 +222,7 @@
   "logos": {
     "dashboard": {
       "title": "Logo dashboard",
-      "description": "Explore logo categories and help improve product data.",
+      "description": "Explorează categoriile de logo-uri și ajută la îmbunătățirea datelor produselor.",
       "category": "Categorie",
       "categories": "Categorii",
       "logo_count_one": "{{count}} logo",
