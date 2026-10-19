@@ -9,6 +9,7 @@ import reportWebVitals from "./reportWebVitals";
 
 import { initMatomo } from "./hooks/matomo";
 import { MatomoProvider } from "./hooks/matomo/MatomoProvider";
+import { UrlParamsProvider } from "./contexts/UrlParamsProvider";
 
 const matomoConfig = {
   urlBase: "https://analytics.openfoodfacts.org/",
@@ -23,9 +24,11 @@ const root = ReactDOM.createRoot(document.getElementById("root")!);
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <MatomoProvider>
-        <App />
-      </MatomoProvider>
+      <UrlParamsProvider>
+        <MatomoProvider>
+          <App />
+        </MatomoProvider>
+      </UrlParamsProvider>
     </BrowserRouter>
   </React.StrictMode>,
 );

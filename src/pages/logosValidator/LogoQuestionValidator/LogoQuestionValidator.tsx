@@ -31,17 +31,9 @@ function LogoQuestionValidator() {
       zoomOnLogo: true,
     },
     {},
-  ) as [
-    { imageSize: string; zoomOnLogo: boolean | string },
-    React.Dispatch<
-      React.SetStateAction<{
-        imageSize: string | number;
-        zoomOnLogo: boolean | string;
-      }>
-    >,
-  ];
+  );
 
-  const imageSize = Number.parseInt(controlledState.imageSize);
+  const imageSize = Number.parseInt(String(controlledState.imageSize), 10);
   const zoomOnLogo =
     controlledState.zoomOnLogo === true ||
     controlledState.zoomOnLogo === "true";
