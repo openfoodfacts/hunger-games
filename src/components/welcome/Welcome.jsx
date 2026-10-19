@@ -1,26 +1,17 @@
 import * as React from "react";
+import { TourProvider, useTour } from "@reactour/tour";
 import { useTranslation } from "react-i18next";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
-import GlobalStyles from "@mui/material/GlobalStyles";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
-import Tour from "reactour";
 import {
   localSettings,
   localSettingsKeys,
   getTour,
 } from "../../localeStorageManager";
 
-const modalStyles = {
-  minWidth: "min(90%, 800px)",
-  position: "absolute",
-  left: "50%",
-  top: "50%",
-  transform: "translate(-50%, -50%)",
-};
-
-const getSteps = ({ t, withSelector, theme }) => {
+const getSteps = ({ t, withSelector }) => {
   const steps = [
     ["intro", undefined],
     ["games", "games"],
@@ -32,13 +23,9 @@ const getSteps = ({ t, withSelector, theme }) => {
   ];
 
   return steps.map(([page, target]) => ({
-    style: {
-      ...modalStyles,
-      backgroundColor: theme.palette.background.paper,
-    },
-    ...(target && withSelector
-      ? { selector: `[data-welcome-tour="${target}"]` }
-      : {}),
+    selector:
+      target && withSelector ? `[data-welcome-tour="${target}"]` : "body",
+    position: "center",
     content: () => (
       <Box>
         <Typography variant="h6" component="h2">
@@ -55,62 +42,67 @@ const getSteps = ({ t, withSelector, theme }) => {
   }));
 };
 
-const Welcome = ({ setIsOpen }) => {
+const WelcomeTourController = ({ isOpen, setIsOpen }) => {
+  const { isOpen: tourIsOpen, setIsOpen: setTourIsOpen } = useTour();
+
+  React.useEffect(() => {
+    if (isOpen) {
+      setTourIsOpen(true);
+    }
+  }, [isOpen, setTourIsOpen]);
+
+  React.useEffect(() => {
+    if (tourIsOpen) {
+      setIsOpen?.(true);
+    }
+  }, [tourIsOpen, setIsOpen]);
+
+  return null;
+};
+
+const Welcome = ({ isOpen, setIsOpen }) => {
   const { t } = useTranslation();
   const theme = useTheme();
   const isDesktop = useMediaQuery(theme.breakpoints.up("md"));
-  const [isTourOpen, setIsTourOpen] = React.useState(getTour);
-
-  const handleCloseTour = () => {
-    setIsOpen?.(false);
-    setIsTourOpen(false);
-    localSettings.update(localSettingsKeys.showTour, false);
-  };
-
-  React.useEffect(() => {
-    if (isTourOpen) {
-      queueMicrotask(() => setIsOpen?.(true));
-    }
-  }, [isTourOpen, setIsOpen]);
-
   const steps = React.useMemo(
-    () => getSteps({ t, withSelector: isDesktop, theme }),
-    [t, isDesktop, theme],
+    () => getSteps({ t, withSelector: isDesktop }),
+    [t, isDesktop],
+  );
+  const styles = React.useMemo(
+    () => ({
+      popover: (base) => ({
+        ...base,
+        minWidth: "min(90vw, 800px)",
+        backgroundColor: theme.palette.background.paper,
+        color: theme.palette.text.primary,
+      }),
+      close: (base) => ({ ...base, color: theme.palette.text.secondary }),
+      arrow: (base) => ({ ...base, color: theme.palette.text.secondary }),
+      dot: (base) => ({ ...base, color: theme.palette.text.secondary }),
+    }),
+    [theme],
+  );
+  const handleClose = React.useCallback(
+    ({ setIsOpen: setTourIsOpen }) => {
+      setTourIsOpen(false);
+      setIsOpen?.(false);
+      localSettings.update(localSettingsKeys.showTour, false);
+    },
+    [setIsOpen],
   );
 
   return (
-    <>
-      {theme.palette.mode === "dark" && (
-        <GlobalStyles
-          styles={{
-            "#___reactour .reactour__close": {
-              color: theme.palette.text.secondary,
-              "&:hover": { color: theme.palette.text.primary },
-            },
-            "#___reactour [data-tour-elem='left-arrow']": {
-              color: theme.palette.text.secondary,
-              "&:hover": { color: theme.palette.text.primary },
-            },
-            "#___reactour [data-tour-elem='right-arrow']": {
-              color: theme.palette.text.secondary,
-              "&:hover": { color: theme.palette.text.primary },
-            },
-            "#___reactour [data-tour-elem='dot']": {
-              color: theme.palette.text.secondary,
-              borderColor: theme.palette.text.secondary,
-            },
-          }}
-        />
-      )}
-      <Tour
-        steps={steps}
-        startAt={0}
-        isOpen={isTourOpen}
-        showButtons={true}
-        accentColor={theme.palette.primary.main}
-        onRequestClose={handleCloseTour}
-      />
-    </>
+    <TourProvider
+      steps={steps}
+      defaultOpen={getTour()}
+      startAt={0}
+      position="center"
+      styles={styles}
+      onClickClose={handleClose}
+      onClickMask={handleClose}
+    >
+      <WelcomeTourController isOpen={isOpen} setIsOpen={setIsOpen} />
+    </TourProvider>
   );
 };
 
