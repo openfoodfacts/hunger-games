@@ -1,5 +1,11 @@
 import * as React from "react";
-import { TourProvider, useTour } from "@reactour/tour";
+import {
+  TourProvider,
+  useTour,
+  type ProviderProps,
+  type StepType,
+} from "@reactour/tour";
+import type { TFunction } from "i18next";
 import { useTranslation } from "react-i18next";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
@@ -11,8 +17,10 @@ import {
   getTour,
 } from "../../localeStorageManager";
 
-const getSteps = ({ t, withSelector }) => {
-  const steps = [
+type GetStepsProps = { t: TFunction; withSelector: boolean };
+
+const getSteps = ({ t, withSelector }: GetStepsProps): StepType[] => {
+  const steps: Array<readonly [string, string | undefined]> = [
     ["intro", undefined],
     ["games", "games"],
     ["tools", "logo_search"],
@@ -42,7 +50,12 @@ const getSteps = ({ t, withSelector }) => {
   }));
 };
 
-const WelcomeTourController = ({ isOpen, setIsOpen }) => {
+type WelcomeProps = {
+  isOpen: boolean;
+  setIsOpen?: React.Dispatch<React.SetStateAction<boolean>>;
+};
+
+const WelcomeTourController = ({ isOpen, setIsOpen }: WelcomeProps) => {
   const { isOpen: tourIsOpen, setIsOpen: setTourIsOpen } = useTour();
 
   React.useEffect(() => {
@@ -60,7 +73,7 @@ const WelcomeTourController = ({ isOpen, setIsOpen }) => {
   return null;
 };
 
-const Welcome = ({ isOpen, setIsOpen }) => {
+const Welcome = ({ isOpen, setIsOpen }: WelcomeProps) => {
   const { t } = useTranslation();
   const theme = useTheme();
   const isDesktop = useMediaQuery(theme.breakpoints.up("md"));
@@ -68,7 +81,7 @@ const Welcome = ({ isOpen, setIsOpen }) => {
     () => getSteps({ t, withSelector: isDesktop }),
     [t, isDesktop],
   );
-  const styles = React.useMemo(
+  const styles = React.useMemo<NonNullable<ProviderProps["styles"]>>(
     () => ({
       popover: (base) => ({
         ...base,
@@ -82,7 +95,9 @@ const Welcome = ({ isOpen, setIsOpen }) => {
     }),
     [theme],
   );
-  const handleClose = React.useCallback(
+  const handleClose = React.useCallback<
+    NonNullable<ProviderProps["onClickClose"]>
+  >(
     ({ setIsOpen: setTourIsOpen }) => {
       setTourIsOpen(false);
       setIsOpen?.(false);
