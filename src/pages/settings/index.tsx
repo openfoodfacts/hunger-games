@@ -15,7 +15,7 @@ import BugReportIcon from "@mui/icons-material/BugReport";
 import { useTheme } from "@mui/material/styles";
 import { useTranslation } from "react-i18next";
 
-import Loader from "../loader";
+import Loader from "../../components/Loader";
 import messages from "../../i18n/messages";
 
 import DevModeContext from "../../contexts/devMode";

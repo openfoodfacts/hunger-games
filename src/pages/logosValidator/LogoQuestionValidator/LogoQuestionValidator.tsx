@@ -16,7 +16,7 @@ import useUrlParams from "../../../hooks/useUrlParams";
 import { URL_ORIGINE } from "../../../const";
 
 import { LOGOS } from "../dashboardDefinition";
-import Loader from "../../loader";
+import Loader from "../../../components/Loader";
 import useQuestions from "../../../hooks/useQuestions";
 import { useFilterState } from "../../../hooks/useFilterState";
 import NoMoreLogos from "./NoMoreLogos";

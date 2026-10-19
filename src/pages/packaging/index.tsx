@@ -33,7 +33,7 @@ import offService from "../../off";
 import { OFF_API_URL_V3 } from "../../const";
 import { useTranslation } from "react-i18next";
 import useUrlParams from "../../hooks/useUrlParams";
-import Loader from "../loader";
+import Loader from "../../components/Loader";
 import { useCountry } from "../../contexts/CountryProvider";
 import { getCountryId } from "../../utils/getCountryId";
 type PackagingWrite = {

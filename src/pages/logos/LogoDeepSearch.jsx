@@ -16,7 +16,7 @@ import useUrlParams from "../../hooks/useUrlParams";
 import AnnotateLogoModal from "../../components/AnnotateLogoModal";
 import { useTranslation } from "react-i18next";
 
-import Loader from "../loader";
+import Loader from "../../components/Loader";
 
 const DEFAULT_COUNT = 25;
 

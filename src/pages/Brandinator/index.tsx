@@ -39,7 +39,7 @@ import CheckCircleRoundedIcon from "@mui/icons-material/CheckCircleRounded";
 import WarningAmberRoundedIcon from "@mui/icons-material/WarningAmberRounded";
 import { Link as RouterLink } from "react-router";
 
-import Loader from "../loader";
+import Loader from "../../components/Loader";
 import { useCountry } from "../../contexts/CountryProvider";
 import countryNames from "../../assets/countries.json";
 import home_brandinator from "../../assets/home_brandinator.png";
