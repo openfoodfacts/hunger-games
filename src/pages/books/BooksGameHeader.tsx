@@ -74,12 +74,14 @@ export default function BooksGameHeader({
     >
       <Stack
         direction={{ xs: "column", md: "row" }}
-        justifyContent="space-between"
-        alignItems={{ xs: "flex-start", md: "center" }}
         spacing={2}
+        sx={{
+          justifyContent: "space-between",
+          alignItems: { xs: "flex-start", md: "center" },
+        }}
       >
         {/* Title and game info */}
-        <Stack direction="row" spacing={1.5} alignItems="center">
+        <Stack direction="row" spacing={1.5} sx={{ alignItems: "center" }}>
           <Box
             sx={{
               width: 44,
@@ -98,10 +100,9 @@ export default function BooksGameHeader({
             <Stack
               direction="row"
               spacing={1}
-              alignItems="center"
-              flexWrap="wrap"
+              sx={{ alignItems: "center", flexWrap: "wrap" }}
             >
-              <Typography variant="h6" fontWeight={800} component="h1">
+              <Typography variant="h6" component="h1" sx={{ fontWeight: 800 }}>
                 {t("books.title", "Move Books to Open Products Facts")}
               </Typography>
               <Chip
@@ -125,8 +126,7 @@ export default function BooksGameHeader({
         <Stack
           direction="row"
           spacing={1.5}
-          alignItems="center"
-          flexWrap="wrap"
+          sx={{ alignItems: "center", flexWrap: "wrap" }}
         >
           {/* Session score chip */}
           <Chip
@@ -159,13 +159,22 @@ export default function BooksGameHeader({
       <Stack
         direction={{ xs: "column", sm: "row" }}
         spacing={2}
-        alignItems={{ xs: "stretch", sm: "center" }}
-        justifyContent="space-between"
-        sx={{ mt: 2, pt: 2, borderTop: "1px solid", borderColor: "divider" }}
+        sx={{
+          mt: 2,
+          pt: 2,
+          borderTop: "1px solid",
+          borderColor: "divider",
+          alignItems: { xs: "stretch", sm: "center" },
+          justifyContent: "space-between",
+        }}
       >
         {/* Prefix Filter Toggle */}
-        <Stack direction="row" spacing={1} alignItems="center">
-          <Typography variant="caption" fontWeight={700} color="text.secondary">
+        <Stack direction="row" spacing={1} sx={{ alignItems: "center" }}>
+          <Typography
+            variant="caption"
+            color="text.secondary"
+            sx={{ fontWeight: 700 }}
+          >
             {t("books.filter_prefix", "PREFIX")}:
           </Typography>
           <ToggleButtonGroup

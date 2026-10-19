@@ -23,7 +23,11 @@ function QuestionsConsumer() {
       }}
     >
       <Container maxWidth="xl" sx={{ py: { xs: 1.5, sm: 2.5 } }}>
-        <Grid container spacing={{ xs: 2, lg: 3 }} alignItems="flex-start">
+        <Grid
+          container
+          spacing={{ xs: 2, lg: 3 }}
+          sx={{ alignItems: "flex-start" }}
+        >
           <Grid size={{ xs: 12, md: 7, lg: 8 }}>
             <Paper
               variant="outlined"
