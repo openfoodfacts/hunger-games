@@ -86,7 +86,7 @@ export default function FlaggedImages() {
                         })
                         .then(() => {
                           setData((prev) =>
-                            prev.filter(
+                            (prev ?? []).filter(
                               (line) =>
                                 line.code !== code || line.imgid !== imgid,
                             ),

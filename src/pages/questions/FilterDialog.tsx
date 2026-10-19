@@ -65,14 +65,14 @@ export default function FilterDialog(props: FilterDialogProps) {
     globalValues.insightType,
   );
   const [innerValueTag, setInnerValueTag] = React.useState(
-    globalValues.valueTag,
+    globalValues.valueTag ?? "",
   );
   const [innerCountryObject, setInnerCountryObject] =
     React.useState<CountryObject | null>(
       getCountryObject(globalValues.country),
     );
   const [innerBrandFilter, setInnerBrandFilter] = React.useState(
-    globalValues.brand,
+    globalValues.brand ?? "",
   );
   const [innerCampaign, setInnerCampaign] = React.useState(
     globalValues.campaign,
@@ -86,9 +86,9 @@ export default function FilterDialog(props: FilterDialogProps) {
 
   const resetFilter = React.useCallback(() => {
     setInnerInsightType(globalValues.insightType);
-    setInnerValueTag(globalValues.valueTag);
+    setInnerValueTag(globalValues.valueTag ?? "");
     setInnerCountryObject(getCountryObject(globalValues.country));
-    setInnerBrandFilter(globalValues.brand);
+    setInnerBrandFilter(globalValues.brand ?? "");
     setInnerCampaign(globalValues.campaign);
     setInnerSortByPopularity(globalValues.sorted);
     setInnerPredictor(globalValues.predictor);
