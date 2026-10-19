@@ -55,7 +55,10 @@ export default function BookDisplay({
     }
 
     if (product.images) {
-      const urls = getImagesUrls(product.images, product.code);
+      const urls = getImagesUrls(
+        product.images as Parameters<typeof getImagesUrls>[0],
+        product.code,
+      );
       urls.forEach((u, i) => {
         if (
           !list.some(
@@ -211,9 +214,8 @@ export default function BookDisplay({
                 />
               ) : (
                 <Stack
-                  alignItems="center"
                   spacing={1}
-                  sx={{ p: 4, color: "text.secondary" }}
+                  sx={{ p: 4, color: "text.secondary", alignItems: "center" }}
                 >
                   <MenuBookRoundedIcon sx={{ fontSize: 64, opacity: 0.4 }} />
                   <Typography variant="body2">
@@ -240,8 +242,7 @@ export default function BookDisplay({
               <Stack
                 direction="row"
                 spacing={1}
-                alignItems="center"
-                flexWrap="wrap"
+                sx={{ alignItems: "center", flexWrap: "wrap" }}
               >
                 <Chip
                   icon={<AutoStoriesRoundedIcon />}
@@ -258,8 +259,7 @@ export default function BookDisplay({
                 />
                 <Typography
                   variant="body2"
-                  fontFamily="monospace"
-                  fontWeight={700}
+                  sx={{ fontFamily: "monospace", fontWeight: 700 }}
                 >
                   {formattedIsbn}
                 </Typography>
@@ -268,16 +268,15 @@ export default function BookDisplay({
               {/* Book Title */}
               <Typography
                 variant="h5"
-                fontWeight={800}
                 component="h2"
-                sx={{ lineHeight: 1.25 }}
+                sx={{ lineHeight: 1.25, fontWeight: 800 }}
               >
                 {product.product_name || (
                   <Typography
                     component="span"
                     variant="h5"
-                    fontStyle="italic"
                     color="text.secondary"
+                    sx={{ fontStyle: "italic" }}
                   >
                     {t("books.unknown_title", "Unknown title / Sans titre")}
                   </Typography>
@@ -286,11 +285,15 @@ export default function BookDisplay({
 
               {/* Publisher / Brands */}
               {product.brands && (
-                <Stack direction="row" spacing={1} alignItems="center">
+                <Stack
+                  direction="row"
+                  spacing={1}
+                  sx={{ alignItems: "center" }}
+                >
                   <Typography
                     variant="body2"
                     color="text.secondary"
-                    fontWeight={600}
+                    sx={{ fontWeight: 600 }}
                   >
                     {t("books.publisher_brand", "Publisher / Brand")}:
                   </Typography>
@@ -305,11 +308,15 @@ export default function BookDisplay({
 
               {/* Quantity / Pages */}
               {product.quantity && (
-                <Stack direction="row" spacing={1} alignItems="center">
+                <Stack
+                  direction="row"
+                  spacing={1}
+                  sx={{ alignItems: "center" }}
+                >
                   <Typography
                     variant="body2"
                     color="text.secondary"
-                    fontWeight={600}
+                    sx={{ fontWeight: 600 }}
                   >
                     {t("quantity", "Quantity / Pages")}:
                   </Typography>
@@ -323,16 +330,15 @@ export default function BookDisplay({
                   <Typography
                     variant="caption"
                     color="text.secondary"
-                    fontWeight={700}
-                    sx={{ display: "block", mb: 0.5 }}
+                    sx={{ display: "block", mb: 0.5, fontWeight: 700 }}
                   >
                     {t("categories", "Current Categories in OFF")}:
                   </Typography>
                   <Stack
                     direction="row"
                     spacing={0.75}
-                    flexWrap="wrap"
                     useFlexGap
+                    sx={{ flexWrap: "wrap" }}
                   >
                     {product.categories
                       .split(",")
@@ -355,12 +361,16 @@ export default function BookDisplay({
                 <Typography
                   variant="caption"
                   color="text.secondary"
-                  fontWeight={700}
-                  sx={{ display: "block", mb: 0.5 }}
+                  sx={{ display: "block", mb: 0.5, fontWeight: 700 }}
                 >
                   {t("books.verify_online", "Verify details online")}:
                 </Typography>
-                <Stack direction="row" spacing={1} flexWrap="wrap" useFlexGap>
+                <Stack
+                  direction="row"
+                  spacing={1}
+                  useFlexGap
+                  sx={{ flexWrap: "wrap" }}
+                >
                   <Button
                     size="small"
                     variant="outlined"
@@ -427,9 +437,7 @@ export default function BookDisplay({
             >
               <Typography
                 variant="subtitle1"
-                fontWeight={800}
-                textAlign="center"
-                sx={{ mb: 1.5 }}
+                sx={{ mb: 1.5, fontWeight: 800, textAlign: "center" }}
               >
                 {t(
                   "books.is_it_a_book_question",
@@ -440,7 +448,7 @@ export default function BookDisplay({
               <Stack
                 direction={{ xs: "column", sm: "row" }}
                 spacing={1.5}
-                alignItems="stretch"
+                sx={{ alignItems: "stretch" }}
               >
                 {/* YES: Move to Open Products Facts */}
                 <Button
