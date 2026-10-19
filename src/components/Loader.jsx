@@ -12,7 +12,7 @@ export default function Loader() {
             alignItems: "center",
           },
           (theme) => ({
-            bgcolor: theme.palette.paper,
+            bgcolor: theme.palette.background.default,
             height: "100vh",
             p: 3,
           }),

@@ -26,6 +26,8 @@ import Loader from "./components/Loader";
 import { CountryProvider } from "./contexts/CountryProvider";
 import { OffWebcomponentsConfiguration } from "./components/OffWebcomponents";
 
+import Home from "./pages/home";
+
 const GreenScorePage = React.lazy(() => import("./pages/green-score"));
 const LogoAnnotationPage = React.lazy(
   () => import("./pages/logos/LogoAnnotation"),
@@ -40,7 +42,6 @@ const SettingsPage = React.lazy(() => import("./pages/settings"));
 const QuestionsPage = React.lazy(() => import("./pages/questions"));
 const InsightsPage = React.lazy(() => import("./pages/insights"));
 const NotFoundPage = React.lazy(() => import("./pages/not-found"));
-const Home = React.lazy(() => import("./pages/home"));
 const Nutrition = React.lazy(() => import("./pages/nutrition"));
 const FlaggedImages = React.lazy(() => import("./pages/flaggedImages"));
 const ShouldLoggedinPage = React.lazy(
@@ -123,6 +124,19 @@ const ADMINS = [
 
 const queryClient = new QueryClient();
 
+function PageViewTracker() {
+  const location = useLocation();
+  const { trackPageView } = useMatomo();
+
+  React.useEffect(() => {
+    if (!IS_DEVELOPMENT_MODE) {
+      trackPageView();
+    }
+  }, [location, trackPageView]);
+
+  return null;
+}
+
 export default function App() {
   const [devMode, setDevMode] = React.useState(getIsDevMode);
   const [visiblePages, setVisiblePages] = React.useState(getVisiblePages);
@@ -190,16 +204,6 @@ export default function App() {
     };
   }, [refresh, userState.isLoggedIn]);
 
-  // Matomo page view tracking
-  const location = useLocation();
-  const { trackPageView } = useMatomo();
-
-  React.useEffect(() => {
-    if (!IS_DEVELOPMENT_MODE) {
-      trackPageView();
-    }
-  }, [location, trackPageView]);
-
   const showFlaggedImage = ADMINS.includes(userState.userName);
 
   const [mode, setMode] = React.useState(getColor);
@@ -232,7 +236,7 @@ export default function App() {
     };
   }, []);
 
-  const theme = createTheme(getToken(mode));
+  const theme = React.useMemo(() => createTheme(getToken(mode)), [mode]);
   const themeColor = theme.palette.cafeCreme.main;
   React.useEffect(() => {
     const metaThemeColor = document.head.querySelector(
@@ -243,18 +247,21 @@ export default function App() {
   }, [themeColor]);
 
   return (
-    <React.Suspense fallback={<Loader />}>
-      <CountryProvider>
-        <ColorModeContext.Provider value={colorMode}>
-          <ThemeProvider theme={theme}>
-            <LoginContext.Provider value={{ ...userState, refresh }}>
-              <DevModeContext.Provider
-                value={{ devMode, setDevMode, visiblePages, setVisiblePages }}
-              >
-                <QueryClientProvider client={queryClient}>
-                  <CssBaseline />
-                  <OffWebcomponentsConfiguration />
+    <CountryProvider>
+      <ColorModeContext.Provider value={colorMode}>
+        <ThemeProvider theme={theme}>
+          <LoginContext.Provider value={{ ...userState, refresh }}>
+            <DevModeContext.Provider
+              value={{ devMode, setDevMode, visiblePages, setVisiblePages }}
+            >
+              <QueryClientProvider client={queryClient}>
+                <CssBaseline />
+                <OffWebcomponentsConfiguration />
+                <PageViewTracker />
+                <React.Suspense fallback={null}>
                   <ResponsiveAppBar />
+                </React.Suspense>
+                <React.Suspense fallback={<Loader />}>
                   <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/eco-score" element={<GreenScorePage />} />
@@ -398,12 +405,12 @@ export default function App() {
                     <Route path="/gala" element={<GalaBoard />} />
                     <Route path="/bugs" element={<BugPage />} />
                   </Routes>
-                </QueryClientProvider>
-              </DevModeContext.Provider>
-            </LoginContext.Provider>
-          </ThemeProvider>
-        </ColorModeContext.Provider>
-      </CountryProvider>
-    </React.Suspense>
+                </React.Suspense>
+              </QueryClientProvider>
+            </DevModeContext.Provider>
+          </LoginContext.Provider>
+        </ThemeProvider>
+      </ColorModeContext.Provider>
+    </CountryProvider>
   );
 }
