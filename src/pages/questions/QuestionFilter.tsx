@@ -15,7 +15,7 @@ import StarIcon from "@mui/icons-material/Star";
 import StarBorderIcon from "@mui/icons-material/StarBorder";
 
 import { useTranslation } from "react-i18next";
-import { TFunction } from "i18next/typescript/t";
+import type { TFunction } from "i18next";
 
 import { useSearchParams } from "react-router";
 
