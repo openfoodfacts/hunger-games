@@ -159,14 +159,15 @@ const UserData = ({ userName }: UserDataProps) => {
   const statQueries = useQueries({
     queries: STATS.map(({ apiFacet }) => ({
       queryKey: ["userStat", apiFacet, userName],
-      queryFn: () =>
-        offClient
-          .getFacetValue(apiFacet, userName, {})
-          .then((response) => response.count)
-          .catch(() => undefined),
+      queryFn: async () => {
+        const response = await offClient.getFacetValue(apiFacet, userName, {});
+        return response.count;
+      },
+      enabled: Boolean(userName),
     })),
   });
-  const isPending = statQueries.some((query) => query.isPending);
+  const isPending =
+    Boolean(userName) && statQueries.some((query) => query.isPending);
   const availableStats = STATS.map((stat, index) => ({
     ...stat,
     value: statQueries[index].data,
