@@ -31,8 +31,14 @@ export default function Settings() {
   const theme = useTheme();
   const colorMode = React.useContext(ColorModeContext);
   const [language, setLanguage] = React.useState(i18n.language);
-  const { devMode, setDevMode, visiblePages, setVisiblePages } =
-    React.useContext(DevModeContext);
+  const {
+    devMode,
+    setDevMode,
+    visiblePages,
+    setVisiblePages,
+    pageCustomization,
+    setPageCustomization,
+  } = React.useContext(DevModeContext);
 
   const [country, setCountry] = useCountry();
 
@@ -47,6 +53,18 @@ export default function Settings() {
       localSettings.update(localSettingsKeys.visiblePages, newVisiblePages);
       setVisiblePages(newVisiblePages);
     };
+
+  const handleShowDebugChange = (_: React.SyntheticEvent, checked: boolean) => {
+    const newPageCustomization = {
+      ...pageCustomization,
+      questionPage: { ...pageCustomization.questionPage, showDebug: checked },
+    };
+    localSettings.update(
+      localSettingsKeys.pageCustomization,
+      newPageCustomization,
+    );
+    setPageCustomization(newPageCustomization);
+  };
 
   const handleLangChange = (newLang: string) => {
     localSettings.update(localSettingsKeys.language, newLang);
@@ -126,6 +144,15 @@ export default function Settings() {
               }}
             />
           ))}
+        {devMode && (
+          <FormControlLabel
+            checked={pageCustomization.questionPage.showDebug}
+            onChange={handleShowDebugChange}
+            control={<Switch />}
+            label={t("settings.show_debug_panels")}
+            labelPlacement="end"
+          />
+        )}
         {/* color mode */}
         <Button
           sx={{ ml: 1 }}
