@@ -22,7 +22,7 @@ import off from "./off";
 import { IS_DEVELOPMENT_MODE, OFF_URL } from "./const";
 import ColorModeContext from "./contexts/colorMode";
 
-import Loader from "./pages/loader";
+import Loader from "./components/Loader";
 import { CountryProvider } from "./contexts/CountryProvider";
 import { OffWebcomponentsConfiguration } from "./components/OffWebcomponents";
 

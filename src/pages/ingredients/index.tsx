@@ -12,7 +12,7 @@ import Link from "@mui/material/Link";
 import { useCountry } from "../../contexts/CountryProvider";
 import { MapInteractionCSS } from "react-map-interaction";
 
-import Loader from "../loader";
+import Loader from "../../components/Loader";
 import off from "../../off";
 import { useTranslation } from "react-i18next";
 import useData from "./useData";

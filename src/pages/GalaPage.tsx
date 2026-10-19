@@ -6,7 +6,7 @@ import Button from "@mui/material/Button";
 
 import QuestionCard from "../components/QuestionCard";
 
-import Loader from "./loader";
+import Loader from "../components/Loader";
 import data from "./data.json";
 
 const shuffledData = data

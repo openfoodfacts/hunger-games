@@ -25,7 +25,7 @@ import UserData from "./UserData";
 
 import { localFavorites } from "../../localeStorageManager";
 import LoginContext from "../../contexts/login";
-import Loader from "../loader";
+import Loader from "../../components/Loader";
 
 const HomeHero = () => {
   const { t } = useTranslation();

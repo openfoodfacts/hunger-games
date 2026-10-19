@@ -9,7 +9,7 @@ import TextField from "@mui/material/TextField";
 import Typography from "@mui/material/Typography";
 
 import { useTranslation } from "react-i18next";
-import Loader from "../loader";
+import Loader from "../../components/Loader";
 
 import LabelFilter from "../../components/QuestionFilter/LabelFilter";
 import LogoGrid from "../../components/LogoGrid";

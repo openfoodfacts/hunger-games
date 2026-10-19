@@ -7,7 +7,7 @@ import FilterInsights from "./FilterInsights";
 import InsightGrid from "./InsightsGrid";
 import { useTranslation } from "react-i18next";
 
-import Loader from "../loader";
+import Loader from "../../components/Loader";
 
 import useUrlParams from "../../hooks/useUrlParams";
 
