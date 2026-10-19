@@ -32,7 +32,6 @@ import {
   localSettings,
   localSettingsKeys,
   getHideImages,
-  getPageCustomization,
 } from "../../localeStorageManager";
 import DevModeContext from "../../contexts/devMode";
 
@@ -246,7 +245,9 @@ const ProductInfoTable = ({
 
 const ProductInformation = () => {
   const { t } = useTranslation();
-  const { devMode: isDevMode } = React.useContext(DevModeContext);
+  const { devMode: isDevMode, pageCustomization } =
+    React.useContext(DevModeContext);
+  const devCustomization = pageCustomization.questionPage;
 
   // Hide images
   const [hideImages, setHideImages] = React.useState<boolean>(getHideImages);
@@ -257,10 +258,6 @@ const ProductInformation = () => {
     setHideImages(checked);
     localSettings.update(localSettingsKeys.hideImages, checked);
   };
-
-  const [devCustomization] = React.useState(
-    () => getPageCustomization().questionPage,
-  );
 
   const { question } = useQuestions();
   const { data: productData, isLoading: productLoading } = useProductData(
