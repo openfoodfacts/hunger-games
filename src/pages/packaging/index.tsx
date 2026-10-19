@@ -247,7 +247,7 @@ const Page = () => {
     () => getCountryId(country) || "en:france",
     [country],
   );
-  const lang = getLang();
+  const lang = getLang() || "en";
   const packagingMaterials = useOptions("packaging_materials", lang);
   const packagingShapes = useOptions("packaging_shapes", lang);
   const packagingRecycling = useOptions("packaging_recycling", lang);
