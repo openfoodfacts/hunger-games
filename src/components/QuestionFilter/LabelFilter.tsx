@@ -40,7 +40,7 @@ const LabelFilter = (props: LabelFilterProps) => {
   const { data: options } = useQuery({
     queryKey: ["autocomplete", insightType, inputValue, lang],
     queryFn: async () => {
-      if (inputValue.length < 2) {
+      if (inputValue.length < 2 || !insightType) {
         return [];
       }
 
@@ -70,7 +70,11 @@ const LabelFilter = (props: LabelFilterProps) => {
       freeSolo
       onChange={(_, newValue) => {
         setSelection({ sourceValue: value, value: newValue });
-        onChange(typeof newValue === "object" ? newValue?.id : newValue);
+        onChange(
+          typeof newValue === "object" && newValue !== null
+            ? newValue.id
+            : (newValue ?? ""),
+        );
       }}
       onInputChange={(_event, newInputValue) => {
         setInputValue(newInputValue);
@@ -96,7 +100,7 @@ const LabelFilter = (props: LabelFilterProps) => {
           {...params}
           {...other}
           helperText={
-            other.helperText ||
+            (typeof other.helperText === "string" && other.helperText) ||
             (showKey &&
               ((typeof innerValue === "object" && innerValue?.id) ||
                 (innerValue !== "" &&

@@ -26,11 +26,13 @@ export default function BugPage() {
       />
       <p>The request to send</p>
       <pre>
-        {off.setIngedrient({
-          code: "123456789",
-          text,
-          lang: "fr",
-        })}
+        {JSON.stringify(
+          off.setIngedrient({
+            code: "123456789",
+            text,
+            lang: "fr",
+          }),
+        )}
       </pre>
 
       <button
