@@ -1,5 +1,5 @@
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
-import { useMatomoTrackAnswerQuestion } from "./matomoEvents";
+import { useMatomoTrackAnswerQuestion } from "./matomo";
 import robotoff, { QuestionInterface, FilterState } from "../robotoff";
 import { useFilterState } from "./useFilterState";
 import { SKIPPED_INSIGHT, CORRECT_INSIGHT, WRONG_INSIGHT } from "../const";

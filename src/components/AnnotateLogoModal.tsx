@@ -8,7 +8,7 @@ import LogoForm from "./LogoForm";
 import LogoGrid from "./LogoGrid";
 import robotoff from "../robotoff";
 import { IS_DEVELOPMENT_MODE } from "../const";
-import { useMatomoTrackAnswerQuestion } from "../hooks/matomoEvents";
+import { useMatomoTrackAnswerQuestion } from "../hooks/matomo";
 
 type LogoAnnotationType = Parameters<
   typeof robotoff.annotateLogos

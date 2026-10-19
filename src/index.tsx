@@ -7,18 +7,23 @@ import "./i18n";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
-import { MatomoProvider } from "./hooks/matomo";
+import { initMatomo } from "./hooks/matomo";
+import { MatomoProvider } from "./hooks/matomo/MatomoProvider";
 
 const matomoConfig = {
   urlBase: "https://analytics.openfoodfacts.org/",
   siteId: 3,
 };
 
+if (typeof window !== "undefined") {
+  initMatomo(matomoConfig);
+}
+
 const root = ReactDOM.createRoot(document.getElementById("root")!);
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <MatomoProvider config={matomoConfig}>
+      <MatomoProvider>
         <App />
       </MatomoProvider>
     </BrowserRouter>
