@@ -55,14 +55,30 @@ type WelcomeProps = {
   setIsOpen?: React.Dispatch<React.SetStateAction<boolean>>;
 };
 
-const WelcomeTourController = ({ isOpen, setIsOpen }: WelcomeProps) => {
-  const { isOpen: tourIsOpen, setIsOpen: setTourIsOpen } = useTour();
+type WelcomeTourControllerProps = WelcomeProps & { steps: StepType[] };
+
+const WelcomeTourController = ({
+  isOpen,
+  setIsOpen,
+  steps,
+}: WelcomeTourControllerProps) => {
+  const {
+    isOpen: tourIsOpen,
+    setIsOpen: setTourIsOpen,
+    setCurrentStep,
+    setSteps,
+  } = useTour();
+
+  React.useEffect(() => {
+    setSteps?.(steps);
+  }, [steps, setSteps]);
 
   React.useEffect(() => {
     if (isOpen) {
+      setCurrentStep(0);
       setTourIsOpen(true);
     }
-  }, [isOpen, setTourIsOpen]);
+  }, [isOpen, setCurrentStep, setTourIsOpen]);
 
   React.useEffect(() => {
     if (tourIsOpen) {
@@ -105,6 +121,31 @@ const Welcome = ({ isOpen, setIsOpen }: WelcomeProps) => {
     },
     [setIsOpen],
   );
+  const handleKeyDown = React.useCallback<
+    NonNullable<ProviderProps["keyboardHandler"]>
+  >(
+    (event, clickProps, status) => {
+      if (event.keyCode === 27 && !status?.isEscDisabled) {
+        event.preventDefault();
+        if (clickProps) {
+          handleClose(clickProps);
+        }
+        return;
+      }
+
+      if (event.keyCode === 39 && !status?.isRightDisabled) {
+        event.preventDefault();
+        clickProps?.setCurrentStep((step) =>
+          Math.min(step + 1, (clickProps.steps?.length ?? 1) - 1),
+        );
+      }
+      if (event.keyCode === 37 && !status?.isLeftDisabled) {
+        event.preventDefault();
+        clickProps?.setCurrentStep((step) => Math.max(step - 1, 0));
+      }
+    },
+    [handleClose],
+  );
 
   return (
     <TourProvider
@@ -115,8 +156,13 @@ const Welcome = ({ isOpen, setIsOpen }: WelcomeProps) => {
       styles={styles}
       onClickClose={handleClose}
       onClickMask={handleClose}
+      keyboardHandler={handleKeyDown}
     >
-      <WelcomeTourController isOpen={isOpen} setIsOpen={setIsOpen} />
+      <WelcomeTourController
+        isOpen={isOpen}
+        setIsOpen={setIsOpen}
+        steps={steps}
+      />
     </TourProvider>
   );
 };
