@@ -58,13 +58,71 @@ const ZoomableImage = ({
     <>
       <div {...other} style={{ ...other.style, position: "relative" }}>
         {zoomIn ? (
-          <TransformWrapper>
-            <TransformComponent>
-              <img src={src} alt="" {...imageProps} />
+          <TransformWrapper centerOnInit>
+            <TransformComponent
+              wrapperStyle={{
+                width: "100%",
+                height: "100%",
+                containerType: "size",
+              }}
+              contentStyle={{
+                width: "100%",
+                height: "100%",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            >
+              <img
+                src={src}
+                alt=""
+                {...imageProps}
+                style={{
+                  ...imageProps?.style,
+                  ...(Math.abs(rotation) % 2 === 1
+                    ? { maxWidth: "100cqh", maxHeight: "100cqw" }
+                    : {}),
+                  transform: `rotate(${rotation * 90}deg)`,
+                  transformOrigin: "center",
+                  transition: "transform 150ms ease",
+                }}
+              />
             </TransformComponent>
           </TransformWrapper>
         ) : (
           <img src={src} alt="" {...imageProps} />
+        )}
+        {zoomIn && (
+          <Stack
+            direction="row"
+            spacing={0.5}
+            sx={{
+              position: "absolute",
+              right: 5,
+              bottom: 5,
+            }}
+          >
+            <IconButton
+              aria-label={t("image_viewer.rotate_left", "Rotate left")}
+              onClick={() => setRotation((prev) => prev - 1)}
+              sx={(theme) => ({
+                color: "white",
+                backgroundColor: alpha(theme.palette.secondary.main, 0.5),
+              })}
+            >
+              <RotateLeftIcon />
+            </IconButton>
+            <IconButton
+              aria-label={t("image_viewer.rotate_right", "Rotate right")}
+              onClick={() => setRotation((prev) => prev + 1)}
+              sx={(theme) => ({
+                color: "white",
+                backgroundColor: alpha(theme.palette.secondary.main, 0.5),
+              })}
+            >
+              <RotateRightIcon />
+            </IconButton>
+          </Stack>
         )}
         <IconButton
           onClick={() => {
