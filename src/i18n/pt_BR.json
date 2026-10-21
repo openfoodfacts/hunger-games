@@ -225,9 +225,9 @@
       "description": "Explore as categorias de logotipos e ajude a melhorar os dados dos produtos.",
       "category": "Categoria",
       "categories": "Categorias",
-      "logo_count_one": "{{count}} logo",
-      "logo_count_other": "{{count}} logos",
-      "more_info": "More info",
+      "logo_count_one": "{{count}} logotipo",
+      "logo_count_other": "{{count}} logotipos",
+      "more_info": "Mais informações",
       "questions": "Perguntas",
       "search": "Procurar"
     },
@@ -275,8 +275,8 @@
       "title": "Pesquisa de logotipo",
       "description": "Selecione um logotipo que você queira procurar, e vamos pegar todos eles. Para cada logotipo que você anotar, iremos buscar seus vizinhos, de forma que você talvez nunca pare de anotar. (Pressione Shift para selecionar um intervalo de logotipos)",
       "ref_logos": "Logotipos de referência (logotipos já anotados com este valor)",
-      "annotation_count_one": "Already {{formattedCount}} annotation. You can come back to this logo in a few days if you don't find any matching logos.",
-      "annotation_count_other": "Already {{formattedCount}} annotations. You can come back to this logo in a few days if you don't find any matching logos.",
+      "annotation_count_one": "Já existe a anotação {{formattedCount}}. Você pode voltar a este logotipo daqui a alguns dias, caso não encontre nenhum logotipo correspondente.",
+      "annotation_count_other": "Já existem anotações {{formattedCount}}. Você pode voltar a este logotipo daqui a alguns dias, caso não encontre nenhum logotipo correspondente.",
       "remaining": "Restantes para anotar",
       "select_all": "Selecionar tudo",
       "unselect_all": "Limpar seleção"
