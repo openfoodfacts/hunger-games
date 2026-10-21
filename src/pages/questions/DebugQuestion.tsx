@@ -122,7 +122,9 @@ const DebugQuestion = (props: DebugQuestionProps) => {
                         timestamp
                       </TableCell>
                       <TableCell>
-                        {new Date(data?.data?.timestamp).toLocaleString()}
+                        {data?.data?.timestamp
+                          ? new Date(data.data.timestamp).toLocaleString()
+                          : ""}
                       </TableCell>
                     </TableRow>
                   </TableBody>

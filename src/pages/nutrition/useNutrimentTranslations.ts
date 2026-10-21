@@ -7,7 +7,7 @@ interface Nutri {
   nutrients?: Nutri[];
 }
 function parseNutrients(data: undefined | Nutri[]): Record<string, string> {
-  const rep = {};
+  const rep: Record<string, string> = {};
 
   if (data === undefined) {
     return {};

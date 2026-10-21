@@ -149,7 +149,7 @@ export default function BooksPage() {
             }}
           >
             <CircularProgress size={40} sx={{ mb: 2 }} />
-            <Typography variant="h6" fontWeight={700}>
+            <Typography variant="h6" sx={{ fontWeight: 700 }}>
               {t(
                 "books.loading_books",
                 "Loading books from Open Food Facts...",
@@ -189,7 +189,10 @@ export default function BooksPage() {
               bgcolor: "background.paper",
             }}
           >
-            <Stack spacing={2} alignItems="center" maxWidth={480} mx="auto">
+            <Stack
+              spacing={2}
+              sx={{ alignItems: "center", maxWidth: 480, mx: "auto" }}
+            >
               <Box
                 sx={{
                   width: 72,
@@ -204,7 +207,7 @@ export default function BooksPage() {
                 <MenuBookIcon sx={{ fontSize: 36 }} />
               </Box>
 
-              <Typography variant="h5" fontWeight={800}>
+              <Typography variant="h5" sx={{ fontWeight: 800 }}>
                 {t("books.no_products_left", "No more books in this batch!")}
               </Typography>
 

@@ -37,9 +37,9 @@ export default function BookHistory({ history }: BookHistoryProps) {
         bgcolor: "background.paper",
       }}
     >
-      <Stack direction="row" spacing={1} alignItems="center" sx={{ mb: 2 }}>
+      <Stack direction="row" spacing={1} sx={{ mb: 2, alignItems: "center" }}>
         <HistoryRoundedIcon color="primary" />
-        <Typography variant="h6" fontWeight={800}>
+        <Typography variant="h6" sx={{ fontWeight: 800 }}>
           {t("books.recent_activity", "Recent Session Activity")}
         </Typography>
         <Chip label={history.length} size="small" />
@@ -65,7 +65,11 @@ export default function BookHistory({ history }: BookHistoryProps) {
                 gap: 1.5,
               }}
             >
-              <Stack direction="row" spacing={1.5} alignItems="center">
+              <Stack
+                direction="row"
+                spacing={1.5}
+                sx={{ alignItems: "center" }}
+              >
                 {isMoved && (
                   <CheckCircleRoundedIcon color="success" fontSize="small" />
                 )}
@@ -77,20 +81,24 @@ export default function BookHistory({ history }: BookHistoryProps) {
                 )}
 
                 <Box>
-                  <Typography variant="body2" fontWeight={700}>
+                  <Typography variant="body2" sx={{ fontWeight: 700 }}>
                     {item.productName}
                   </Typography>
                   <Typography
                     variant="caption"
                     color="text.secondary"
-                    fontFamily="monospace"
+                    sx={{ fontFamily: "monospace" }}
                   >
                     {item.code}
                   </Typography>
                 </Box>
               </Stack>
 
-              <Stack direction="row" spacing={1.5} alignItems="center">
+              <Stack
+                direction="row"
+                spacing={1.5}
+                sx={{ alignItems: "center" }}
+              >
                 <Chip
                   size="small"
                   label={
