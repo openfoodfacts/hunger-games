@@ -45,8 +45,8 @@
       "title_without_name": "Deine Statistik",
       "empty_state": {
         "title": "Noch keine Beiträge",
-        "description": "Your contribution statistics will appear here once you start helping improve Open Food Facts.",
-        "action": "Start contributing"
+        "description": "Ihre Beitragsstatistik wird hier angezeigt, sobald Sie beginnen, Open Food Facts zu verbessern.",
+        "action": "Beginne mitzuwirken"
       },
       "editorCount": {
         "title": "Bearbeiter",
@@ -91,7 +91,7 @@
     "similar_questions": "Ähnliche Fragen",
     "no_similar_questions": "Verschiedene Fragen",
     "remaining_questions_count_one": "1 Frage verbleibend",
-    "remaining_questions_count_other": "{{count}} questions remaining",
+    "remaining_questions_count_other": "{{count}} verbleibende Fragen",
     "an_error_occurred": "Ein Fehler ist aufgetreten. Bitte laden Sie die Seite neu, versuchen Sie es später erneut oder wenden Sie sich an das Team.",
     "countries": "Länder",
     "view": "Anzeigen",
@@ -105,7 +105,7 @@
     "remaining_annotations": "Verbleibende Fragen",
     "annotated_annotations": "Kommentiert",
     "no_images": "Keine Bilder verfügbar",
-    "no_additional_info": "No additional information",
+    "no_additional_info": "Keine weiteren Informationen",
     "add_missing_info": "Hinzufügen",
     "filters": {
       "active_filter_number": "+{{count}} Filter",
@@ -221,12 +221,12 @@
   },
   "logos": {
     "dashboard": {
-      "title": "Logo dashboard",
+      "title": "Logo-Übersicht",
       "description": "Entdecke Logo-Kategorien und verbessere Produktdaten.",
       "category": "Kategorie",
       "categories": "Kategorien",
-      "logo_count_one": "{{count}} logo",
-      "logo_count_other": "{{count}} logos",
+      "logo_count_one": "{{count}} Logo",
+      "logo_count_other": "{{count}} Logos",
       "more_info": "Mehr erfahren",
       "questions": "Fragen",
       "search": "Suchen"
@@ -275,8 +275,8 @@
       "title": "Logos suchen",
       "description": "Wählen Sie ein Logo aus, nach dem Sie suchen möchten, und los geht's, um sie alle zu erfassen. Für jedes Logo, das Sie mit Anmerkungen versehen, werden wir seine Nachbarn abrufen, so dass Sie vielleicht nie aufhören, Anmerkungen zu machen. (Drücken Sie die Umschalttaste, um einen Bereich von Logos auszuwählen)",
       "ref_logos": "Referenzlogos (Logo bereits mit diesem Wert vermerkt)",
-      "annotation_count_one": "Already {{formattedCount}} annotation. You can come back to this logo in a few days if you don't find any matching logos.",
-      "annotation_count_other": "Already {{formattedCount}} annotations. You can come back to this logo in a few days if you don't find any matching logos.",
+      "annotation_count_one": "Es gibt bereits {{formattedCount}} Anmerkung. Sie können in ein paar Tagen zu diesem Logo zurückkehren, falls Sie keine passenden Logos finden.",
+      "annotation_count_other": "Es gibt bereits {{formattedCount}} Anmerkungen. Sie können in ein paar Tagen zu diesem Logo zurückkehren, falls Sie keine passenden Logos finden.",
       "remaining": "Verbleibend zu kommentieren",
       "select_all": "Alle auswählen",
       "unselect_all": "Alles abwählen"
