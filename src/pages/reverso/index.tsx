@@ -6,7 +6,6 @@ import {
   Stack,
   Typography,
   Card,
-  CardContent,
   Button,
   TextField,
   IconButton,
@@ -18,7 +17,6 @@ import {
   Snackbar,
   CircularProgress,
   Autocomplete,
-  Link as MuiLink,
 } from "@mui/material";
 import { useTheme, alpha } from "@mui/material/styles";
 
@@ -40,7 +38,7 @@ import { OFF_URL } from "../../const";
 import countries from "../../assets/countries.json";
 import ZoomableImage from "../../components/ZoomableImage";
 import Loader from "../loader";
-import useReversoData, { ReversoProduct } from "./useReversoData";
+import useReversoData from "./useReversoData";
 
 interface CountryOption {
   id: string;
@@ -48,9 +46,6 @@ interface CountryOption {
   languageCode: string;
   countryCode: string;
 }
-
-// 1 kcal = 4.184 kJ
-const KCAL_TO_KJ_RATIO = 4.184;
 
 function calculateRatio(kj: number, kcal: number): number | null {
   if (!kcal || kcal <= 0 || !kj || kj <= 0) return null;
@@ -74,7 +69,6 @@ export default function ReversoPage() {
 
   const {
     currentProduct,
-    remainingInQueue,
     totalCount,
     solvedCount,
     isLoading,
@@ -185,19 +179,10 @@ export default function ReversoPage() {
 
   // Swap function
   const handleSwap = () => {
-    setKcalValue((prevKcal) => {
-      const currentKj = kjValue;
-      setKjValue(prevKcal);
-      return currentKj;
-    });
-
-    if (kcalServing || kjServing) {
-      setKcalServing((prevServingKcal) => {
-        const currentServingKj = kjServing;
-        setKjServing(prevServingKcal);
-        return currentServingKj;
-      });
-    }
+    setKcalValue(kjValue);
+    setKjValue(kcalValue);
+    setKcalServing(kjServing);
+    setKjServing(kcalServing);
   };
 
   // Handle Save
@@ -231,7 +216,7 @@ export default function ReversoPage() {
         code: currentProduct.code,
         energyKcal: kcalValue,
         energyKj: kjValue,
-        nutritionDataPer: currentProduct.nutrition_data_per || "100g",
+        nutritionDataPer: "100g",
         energyKcalServing: kcalServing || undefined,
         energyKjServing: kjServing || undefined,
         comment: "Fix reversed kcal/kJ (Reverso game)",
