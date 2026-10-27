@@ -527,7 +527,7 @@
     "error_detected": "Inversion détectée dans la base :",
     "stored_kcal": "kcal actuel :",
     "stored_kj": "kJ actuel :",
-    "proposed_correction": "Correction proposée (pour 100g) :",
+    "proposed_correction": "Correction proposée (pour {{basis}}) :",
     "swap_button_tooltip": "Inverser les valeurs kcal ⇄ kJ",
     "per_serving": "Par portion",
     "login_required": "Veuillez vous connecter à Open Food Facts pour enregistrer la modification.",

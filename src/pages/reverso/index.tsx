@@ -77,6 +77,7 @@ export default function ReversoPage() {
     solveCurrent,
     retry,
   } = useReversoData(country, barcodeParam || undefined);
+  const nutritionDataPer = currentProduct?.nutrition_data_per || "100g";
 
   // Nutriments state for current product
   const [kcalValue, setKcalValue] = React.useState<string>("");
@@ -212,15 +213,22 @@ export default function ReversoPage() {
     setErrorMessage(null);
 
     try {
-      await off.updateProductNutriments({
+      const response = await off.updateProductNutriments({
         code: currentProduct.code,
         energyKcal: kcalValue,
         energyKj: kjValue,
-        nutritionDataPer: "100g",
+        nutritionDataPer,
         energyKcalServing: kcalServing || undefined,
         energyKjServing: kjServing || undefined,
         comment: "Fix reversed kcal/kJ (Reverso game)",
       });
+
+      if (response.data.status !== 1) {
+        throw new Error(
+          response.data.status_verbose ||
+            t("reverso.save_failed", "The product update was rejected."),
+        );
+      }
 
       setSaveSuccess(true);
       solveCurrent();
@@ -767,7 +775,8 @@ export default function ReversoPage() {
                 >
                   {t(
                     "reverso.proposed_correction",
-                    "Correction proposée (pour 100g) :",
+                    "Proposed correction (per {{basis}}):",
+                    { basis: nutritionDataPer },
                   )}
                 </Typography>
 

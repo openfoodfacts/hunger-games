@@ -612,7 +612,7 @@
     "error_detected": "Inversion detected in database:",
     "stored_kcal": "Current kcal:",
     "stored_kj": "Current kJ:",
-    "proposed_correction": "Proposed correction (per 100g):",
+    "proposed_correction": "Proposed correction (per {{basis}}):",
     "swap_button_tooltip": "Swap kcal ⇄ kJ values",
     "per_serving": "Per serving",
     "login_required": "Please log in to Open Food Facts to save changes.",
