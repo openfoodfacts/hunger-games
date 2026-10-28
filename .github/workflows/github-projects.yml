@@ -177,3 +177,9 @@ jobs:
           github-token: ${{ secrets.ADD_TO_PROJECT_PAT }}
           labeled: 🌐 Translations, translations, i18n, Translations
           label-operator: OR
+      - uses: actions/add-to-project@main
+        with:
+          project-url: https://github.com/orgs/openfoodfacts/projects/137 # Add issue to the Javascript across OFF project
+          github-token: ${{ secrets.ADD_TO_PROJECT_PAT }}
+          labeled: JavaScript
+          label-operator: OR
