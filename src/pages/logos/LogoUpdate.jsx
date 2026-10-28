@@ -24,7 +24,7 @@ import { useTranslation } from "react-i18next";
 
 //  Only for testing purpose
 import { sleep } from "../../utils";
-import Loader from "../loader";
+import Loader from "../../components/Loader";
 
 const getImageURL = (logo) => offService.getImageUrl(logo.image.source_image);
 

@@ -1,5 +1,17 @@
 # Changelog
 
+## Unreleased
+
+### Features
+
+- Replace individual navbar links with summarized groups.
+- Add Logo challenges to the homepage catalogue, a Moderation link to the dashboard, and emojis to every dashboard category.
+
+### Bug fixes
+
+- Prevent dashboard category tabs and content from widening the page on mobile; keep category scroll arrows available at narrow widths.
+- Align the country selector icon with the Settings and Help icons in the mobile menu.
+
 ## [1.1.0](https://github.com/openfoodfacts/hunger-games/compare/v1.0.0...v1.1.0) (2026-02-28)
 
 ### Features

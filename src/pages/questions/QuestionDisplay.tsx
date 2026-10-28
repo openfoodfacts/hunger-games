@@ -16,7 +16,7 @@ import DoneIcon from "@mui/icons-material/Done";
 import MuiLink from "@mui/material/Link";
 import useMediaQuery from "@mui/material/useMediaQuery";
 
-import Loader from "../loader";
+import Loader from "../../components/Loader";
 import CroppedLogo from "../../components/CroppedLogo";
 import ZoomableImage from "../../components/ZoomableImage";
 import { SimilarQuestions } from "./SimilarQuestions";

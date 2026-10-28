@@ -12,7 +12,7 @@ import Button from "@mui/material/Button";
 import Stack from "@mui/material/Stack";
 import { useInfiniteQuery, useQueries } from "@tanstack/react-query";
 
-import Loader from "../pages/loader";
+import Loader from "./Loader";
 
 import robotoff from "../robotoff";
 import off from "../off";

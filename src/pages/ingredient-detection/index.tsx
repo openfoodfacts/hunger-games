@@ -2,7 +2,7 @@ import { Suspense } from "react";
 import { Box } from "@mui/material";
 
 import { RobotoffIngredientDetection } from "../../components/OffWebcomponents";
-import Loader from "../loader";
+import Loader from "../../components/Loader";
 
 export default function IngredientDetection() {
   return (

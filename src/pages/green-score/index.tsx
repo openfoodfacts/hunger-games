@@ -15,7 +15,7 @@ import { useTranslation } from "react-i18next";
 
 import SmallQuestionCard from "../../components/SmallQuestionCard";
 import Opportunities from "../../components/Opportunities";
-import Loader from "../loader";
+import Loader from "../../components/Loader";
 import { useCountry } from "../../contexts/CountryProvider";
 import robotoff from "../../robotoff";
 

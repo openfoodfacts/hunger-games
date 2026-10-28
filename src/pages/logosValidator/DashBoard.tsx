@@ -7,10 +7,13 @@ import Chip from "@mui/material/Chip";
 import Container from "@mui/material/Container";
 import Paper from "@mui/material/Paper";
 import Stack from "@mui/material/Stack";
+import Button from "@mui/material/Button";
 import useMediaQuery from "@mui/material/useMediaQuery";
-import { useTheme } from "@mui/material/styles";
+import { useTheme, alpha } from "@mui/material/styles";
 import { useTranslation } from "react-i18next";
+import RocketLaunchRoundedIcon from "@mui/icons-material/RocketLaunchRounded";
 
+import home_brandinator from "../../assets/home_brandinator.png";
 import { LOGOS, DASHBOARD } from "./dashboardDefinition";
 import DashboardCard from "./DashboardCard";
 import { Link, useLocation } from "react-router";
@@ -51,6 +54,98 @@ const dashboardStateReducer = (
   };
 };
 
+function BrandinatorPromo() {
+  const { t } = useTranslation();
+
+  return (
+    <Paper
+      elevation={0}
+      sx={(theme) => ({
+        p: { xs: 2.5, sm: 3 },
+        mb: 3,
+        borderRadius: 3,
+        border: `1px solid ${alpha(theme.palette.primary.main, 0.25)}`,
+        background: `linear-gradient(135deg, ${alpha(theme.palette.primary.main, 0.08)} 0%, ${alpha(theme.palette.secondary.main, 0.08)} 100%)`,
+        display: "flex",
+        flexDirection: { xs: "column", sm: "row" },
+        alignItems: { xs: "flex-start", sm: "center" },
+        gap: { xs: 2, sm: 3 },
+      })}
+    >
+      <Box
+        component="img"
+        src={home_brandinator}
+        alt="Brandinator"
+        sx={{
+          width: { xs: 68, sm: 88 },
+          height: { xs: 68, sm: 88 },
+          objectFit: "contain",
+          borderRadius: 2.5,
+          backgroundColor: "background.paper",
+          p: 0.75,
+          boxShadow: "0 2px 10px rgba(0,0,0,0.06)",
+          flexShrink: 0,
+        }}
+      />
+      <Box sx={{ flex: 1, minWidth: 0, maxWidth: "100%" }}>
+        <Stack
+          direction="row"
+          spacing={1}
+          sx={{ alignItems: "center", mb: 0.5, flexWrap: "wrap", gap: 0.5 }}
+        >
+          <Chip
+            size="small"
+            color="primary"
+            label={t(
+              "logos.dashboard.brandinator_promo_badge",
+              "Dedicated Game & Hub",
+            )}
+            sx={{ fontWeight: 800, fontSize: "0.7rem", height: 22 }}
+          />
+          <Typography variant="h6" sx={{ fontWeight: 800, lineHeight: 1.25 }}>
+            {t(
+              "logos.dashboard.brandinator_promo_title",
+              "Looking for more brands? Discover Brandinator!",
+            )}
+          </Typography>
+        </Stack>
+        <Typography
+          variant="body2"
+          color="text.secondary"
+          sx={{ mb: 1.5, maxWidth: 680, lineHeight: 1.55 }}
+        >
+          {t(
+            "logos.dashboard.brandinator_promo_desc",
+            "Explore 10,000+ brands across Open Food Facts projects. Validate brand logos, answer annotation questions, upload missing logos to GitHub, and link brands to the Taxonomy Editor!",
+          )}
+        </Typography>
+        <Stack
+          direction={{ xs: "column", sm: "row" }}
+          spacing={1.5}
+          sx={{ alignItems: { xs: "stretch", sm: "center" } }}
+        >
+          <Button
+            variant="contained"
+            color="primary"
+            component={Link as React.ElementType}
+            to="/brandinator"
+            endIcon={<RocketLaunchRoundedIcon />}
+            sx={{
+              fontWeight: 700,
+              borderRadius: 2,
+              px: 2.5,
+              py: 0.75,
+              textTransform: "none",
+            }}
+          >
+            {t("logos.dashboard.brandinator_promo_cta", "Open Brandinator")}
+          </Button>
+        </Stack>
+      </Box>
+    </Paper>
+  );
+}
+
 const TabPanel = React.memo(function TabPanel({
   hasBeenVisible,
   isActive,
@@ -79,7 +174,7 @@ const TabPanel = React.memo(function TabPanel({
             spacing={2}
             sx={{ alignItems: { xs: "flex-start", sm: "center" }, mb: 3 }}
           >
-            <Box sx={{ flex: 1 }}>
+            <Box sx={{ flex: 1, minWidth: 0, maxWidth: "100%" }}>
               <Typography
                 variant="overline"
                 sx={{
@@ -106,11 +201,12 @@ const TabPanel = React.memo(function TabPanel({
               sx={{ fontWeight: 700 }}
             />
           </Stack>
+          {dashboard.tag === "brands" && <BrandinatorPromo />}
           <Box
             sx={{
               display: "grid",
               gridTemplateColumns: {
-                xs: "1fr",
+                xs: "minmax(0, 1fr)",
                 sm: "repeat(2, minmax(0, 1fr))",
                 md: "repeat(3, minmax(0, 1fr))",
                 lg: "repeat(4, minmax(0, 1fr))",
@@ -178,7 +274,7 @@ export default function VerticalTabs() {
               variant="h3"
               sx={{ fontWeight: 800, lineHeight: 1.1 }}
             >
-              {t("logos.dashboard.title")}
+              {t("logos.dashboard.challenges_title")}
             </Typography>
             <Typography
               variant="body1"
@@ -187,12 +283,21 @@ export default function VerticalTabs() {
             >
               {t("logos.dashboard.description")}
             </Typography>
+            <Button
+              component="a"
+              href="https://nutripatrol.openfoodfacts.org"
+              target="_blank"
+              rel="noreferrer"
+              sx={{ mt: 1 }}
+            >
+              {t("menu.moderation")} ↗
+            </Button>
           </Box>
           <Box
             sx={{
               display: "grid",
               gridTemplateColumns: {
-                xs: "1fr",
+                xs: "minmax(0, 1fr)",
                 md: "220px minmax(0, 1fr)",
               },
               gap: { xs: 2, md: 2.5 },
@@ -203,6 +308,7 @@ export default function VerticalTabs() {
               variant="outlined"
               sx={(theme) => ({
                 p: 1,
+                minWidth: 0,
                 borderRadius: 3,
                 position: { md: "sticky" },
                 top: { md: 16 },
@@ -227,6 +333,8 @@ export default function VerticalTabs() {
               <Tabs
                 orientation={isDesktop ? "vertical" : "horizontal"}
                 variant="scrollable"
+                scrollButtons="auto"
+                allowScrollButtonsMobile
                 value={value}
                 onChange={handleChange}
                 aria-label={t("logos.dashboard.categories")}
@@ -253,7 +361,35 @@ export default function VerticalTabs() {
               >
                 {DASHBOARD.map(({ tag, title }, index) => (
                   <Tab
-                    label={title}
+                    label={
+                      tag === "brands" ? (
+                        <Box
+                          sx={{
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: "space-between",
+                            width: "100%",
+                            gap: 1,
+                          }}
+                        >
+                          <span>{title}</span>
+                          <Chip
+                            label="NEW"
+                            size="small"
+                            color="primary"
+                            sx={{
+                              height: 18,
+                              fontSize: "0.62rem",
+                              fontWeight: 800,
+                              letterSpacing: "0.04em",
+                              cursor: "inherit",
+                            }}
+                          />
+                        </Box>
+                      ) : (
+                        title
+                      )
+                    }
                     key={tag}
                     {...a11yProps(index)}
                     component={Link as React.ElementType}
@@ -264,7 +400,7 @@ export default function VerticalTabs() {
             </Paper>
             <Paper
               variant="outlined"
-              sx={{ borderRadius: 3, overflow: "hidden" }}
+              sx={{ minWidth: 0, borderRadius: 3, overflow: "hidden" }}
             >
               {DASHBOARD.map((_, index) => (
                 <TabPanel

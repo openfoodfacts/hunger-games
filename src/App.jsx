@@ -22,9 +22,11 @@ import off from "./off";
 import { IS_DEVELOPMENT_MODE, OFF_URL } from "./const";
 import ColorModeContext from "./contexts/colorMode";
 
-import Loader from "./pages/loader";
+import Loader from "./components/Loader";
 import { CountryProvider } from "./contexts/CountryProvider";
 import { OffWebcomponentsConfiguration } from "./components/OffWebcomponents";
+
+import Home from "./pages/home";
 
 const GreenScorePage = React.lazy(() => import("./pages/green-score"));
 const LogoAnnotationPage = React.lazy(
@@ -40,13 +42,13 @@ const SettingsPage = React.lazy(() => import("./pages/settings"));
 const QuestionsPage = React.lazy(() => import("./pages/questions"));
 const InsightsPage = React.lazy(() => import("./pages/insights"));
 const NotFoundPage = React.lazy(() => import("./pages/not-found"));
-const Home = React.lazy(() => import("./pages/home"));
 const Nutrition = React.lazy(() => import("./pages/nutrition"));
 const FlaggedImages = React.lazy(() => import("./pages/flaggedImages"));
 const ShouldLoggedinPage = React.lazy(
   () => import("./pages/shouldLoggedinPage"),
 );
 const PackagingPage = React.lazy(() => import("./pages/packaging"));
+const BooksPage = React.lazy(() => import("./pages/books"));
 // const LogoQuestionValidator = React.lazy(
 //   () => import("./pages/logosValidator/LogoQuestionValidator"),
 // );
@@ -122,6 +124,19 @@ const ADMINS = [
 
 const queryClient = new QueryClient();
 
+function PageViewTracker() {
+  const location = useLocation();
+  const { trackPageView } = useMatomo();
+
+  React.useEffect(() => {
+    if (!IS_DEVELOPMENT_MODE) {
+      trackPageView();
+    }
+  }, [location, trackPageView]);
+
+  return null;
+}
+
 export default function App() {
   const [devMode, setDevMode] = React.useState(getIsDevMode);
   const [visiblePages, setVisiblePages] = React.useState(getVisiblePages);
@@ -171,15 +186,23 @@ export default function App() {
       .catch(() => {});
   }, [refresh]);
 
-  // Matomo page view tracking
-  const location = useLocation();
-  const { trackPageView } = useMatomo();
-
+  // The login and signup actions open Open Food Facts in another tab: re-check
+  // the session when the user comes back to this tab, so the current page
+  // unlocks by itself.
   React.useEffect(() => {
-    if (!IS_DEVELOPMENT_MODE) {
-      trackPageView();
+    if (userState.isLoggedIn) {
+      return undefined;
     }
-  }, [location, trackPageView]);
+    const recheckSession = () => {
+      Promise.resolve()
+        .then(refresh)
+        .catch(() => {});
+    };
+    window.addEventListener("focus", recheckSession);
+    return () => {
+      window.removeEventListener("focus", recheckSession);
+    };
+  }, [refresh, userState.isLoggedIn]);
 
   const showFlaggedImage = ADMINS.includes(userState.userName);
 
@@ -213,7 +236,7 @@ export default function App() {
     };
   }, []);
 
-  const theme = createTheme(getToken(mode));
+  const theme = React.useMemo(() => createTheme(getToken(mode)), [mode]);
   const themeColor = theme.palette.cafeCreme.main;
   React.useEffect(() => {
     const metaThemeColor = document.head.querySelector(
@@ -224,18 +247,21 @@ export default function App() {
   }, [themeColor]);
 
   return (
-    <React.Suspense fallback={<Loader />}>
-      <CountryProvider>
-        <ColorModeContext.Provider value={colorMode}>
-          <ThemeProvider theme={theme}>
-            <LoginContext.Provider value={{ ...userState, refresh }}>
-              <DevModeContext.Provider
-                value={{ devMode, setDevMode, visiblePages, setVisiblePages }}
-              >
-                <QueryClientProvider client={queryClient}>
-                  <CssBaseline />
-                  <OffWebcomponentsConfiguration />
+    <CountryProvider>
+      <ColorModeContext.Provider value={colorMode}>
+        <ThemeProvider theme={theme}>
+          <LoginContext.Provider value={{ ...userState, refresh }}>
+            <DevModeContext.Provider
+              value={{ devMode, setDevMode, visiblePages, setVisiblePages }}
+            >
+              <QueryClientProvider client={queryClient}>
+                <CssBaseline />
+                <OffWebcomponentsConfiguration />
+                <PageViewTracker />
+                <React.Suspense fallback={null}>
                   <ResponsiveAppBar />
+                </React.Suspense>
+                <React.Suspense fallback={<Loader />}>
                   <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/eco-score" element={<GreenScorePage />} />
@@ -366,15 +392,25 @@ export default function App() {
                         )
                       }
                     />
+                    <Route
+                      path="/books"
+                      element={
+                        userState.isLoggedIn ? (
+                          <BooksPage />
+                        ) : (
+                          <ShouldLoggedinPage />
+                        )
+                      }
+                    />
                     <Route path="/gala" element={<GalaBoard />} />
                     <Route path="/bugs" element={<BugPage />} />
                   </Routes>
-                </QueryClientProvider>
-              </DevModeContext.Provider>
-            </LoginContext.Provider>
-          </ThemeProvider>
-        </ColorModeContext.Provider>
-      </CountryProvider>
-    </React.Suspense>
+                </React.Suspense>
+              </QueryClientProvider>
+            </DevModeContext.Provider>
+          </LoginContext.Provider>
+        </ThemeProvider>
+      </ColorModeContext.Provider>
+    </CountryProvider>
   );
 }

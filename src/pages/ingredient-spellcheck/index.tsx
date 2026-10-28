@@ -1,7 +1,7 @@
 import { Suspense } from "react";
 import { Box } from "@mui/material";
 
-import Loader from "../loader";
+import Loader from "../../components/Loader";
 import { RobotoffIngredientSpellcheck } from "../../components/OffWebcomponents";
 
 export default function IngredientSpellcheck() {

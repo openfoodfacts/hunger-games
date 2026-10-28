@@ -4,7 +4,7 @@ import { FilterState } from "../../robotoff";
 import getTaxonomy from "../../offTaxonomy";
 import { Stack, Button } from "@mui/material";
 import { useQuery } from "@tanstack/react-query";
-import Loader from "../loader";
+import Loader from "../../components/Loader";
 import { useQuestionsQuery } from "../../hooks/useQuestions";
 import { getValueTagQuestionsURL } from "./utils/getValueTagQuestionsURL";
 

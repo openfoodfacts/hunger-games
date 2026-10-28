@@ -2644,7 +2644,7 @@ type DashBoardTheme = {
 export const DASHBOARD: DashBoardTheme[] = [
   {
     tag: "nutriscore",
-    title: "Nutrition Scores",
+    title: "🥗 Nutrition Scores",
     logos: [
       "en:nutriscore-grade-a",
       "en:nutriscore-grade-b",
@@ -2666,7 +2666,7 @@ export const DASHBOARD: DashBoardTheme[] = [
   },
   {
     tag: "green-score",
-    title: "Green Score",
+    title: "🌍 Green Score",
     logos: [
       "en:organic",
       "en:eu-organic",
@@ -2688,7 +2688,7 @@ export const DASHBOARD: DashBoardTheme[] = [
   },
   {
     tag: "inao",
-    title: "INAO",
+    title: "🏅 INAO",
     logos: [
       "fr:ab-agriculture-biologique",
       "en:eu-organic",
@@ -2952,7 +2952,7 @@ export const DASHBOARD: DashBoardTheme[] = [
   // Halal dashboard
   {
     tag: "halal",
-    title: "حلال Halal",
+    title: "☪️ حلال Halal",
     logos: [
       "en:halal-food-council-of-europe",
       "fr:societe-francaise-de-controle-de-viande-halal",
@@ -3065,7 +3065,7 @@ export const DASHBOARD: DashBoardTheme[] = [
   // Organic
   {
     tag: "organic",
-    title: "Organic",
+    title: "🌿 Organic",
     logos: [
       "en:soil-association-organic",
       "en:austria-bio-garantie.90x90",
@@ -3166,7 +3166,7 @@ export const DASHBOARD: DashBoardTheme[] = [
   // Climate claims
   {
     tag: "climate-claims",
-    title: "Climate Claims",
+    title: "🌡️ Climate Claims",
     logos: [
       "en:carbon-trust-carbon-neutral.53x90.png",
       "en:carbon-trust-co2-measured.53x90.png",
@@ -3179,7 +3179,7 @@ export const DASHBOARD: DashBoardTheme[] = [
   // Animal Welfare
   {
     tag: "animal-welfare",
-    title: "Animal Welfare",
+    title: "🐾 Animal Welfare",
     logos: [
       "en:haltungsform-1.79x90.png",
       "en:haltungsform-2.79x90.png",
@@ -3192,7 +3192,7 @@ export const DASHBOARD: DashBoardTheme[] = [
   // Brands
   {
     tag: "brands",
-    title: "Brands",
+    title: "🏷️ Brands",
     logos: ["Kroger"],
   },
   // No gluten
