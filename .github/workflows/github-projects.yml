@@ -1,11 +1,47 @@
-name: Add bugs to the relevant GitHub Projects
-
+name: Add issues to the relevant GitHub projects
+permissions:
+  issues: write
+  repository-projects: write
+  contents: read
+  pull-requests: write
 on:
+  pull_request_target:
+    types:
+    - assigned
+    - unassigned
+    - labeled
+    - unlabeled
+    - opened
+    - edited
+    - closed
+    - reopened
+    - synchronize
+    - converted_to_draft
+    - ready_for_review
+    - locked
+    - unlocked
+    - review_requested
+    - review_request_removed
+    - auto_merge_enabled
+    - auto_merge_disabled
   issues:
     types:
       - opened
-      - labeled
+      - edited
+      - deleted
       - transferred
+      - pinned
+      - unpinned
+      - closed
+      - reopened
+      - assigned
+      - unassigned
+      - labeled
+      - unlabeled
+      - locked
+      - unlocked
+      - milestoned
+      - demilestoned
 jobs:
   add-to-project:
     name: Add issue to Hunger Games GitHub project
@@ -110,4 +146,34 @@ jobs:
           project-url: https://github.com/orgs/openfoodfacts/projects/35 # Add issue to the ♿️ accessibility project
           github-token: ${{ secrets.ADD_TO_PROJECT_PAT }}
           labeled: ♿️ accessibility
+          label-operator: OR
+      - uses: actions/add-to-project@main
+        with:
+          project-url: https://github.com/orgs/openfoodfacts/projects/111 # Add issue to the Nutri-Patrol project
+          github-token: ${{ secrets.ADD_TO_PROJECT_PAT }}
+          labeled: Nutri-Patrol
+          label-operator: OR
+      - uses: actions/add-to-project@main
+        with:
+          project-url: https://github.com/orgs/openfoodfacts/projects/84 # Add issue to the Metrics project
+          github-token: ${{ secrets.ADD_TO_PROJECT_PAT }}
+          labeled: 📈 Matomo
+          label-operator: OR
+      - uses: actions/add-to-project@main
+        with:
+          project-url: https://github.com/orgs/openfoodfacts/projects/138 # Add issue to the Donations project
+          github-token: ${{ secrets.ADD_TO_PROJECT_PAT }}
+          labeled: 🎁 Donations
+          label-operator: OR
+      - uses: actions/add-to-project@main
+        with:
+          project-url: https://github.com/orgs/openfoodfacts/projects/133 # Add issue to the Releases project
+          github-token: ${{ secrets.ADD_TO_PROJECT_PAT }}
+          labeled: "autorelease: pending"
+          label-operator: OR
+      - uses: actions/add-to-project@main
+        with:
+          project-url: https://github.com/orgs/openfoodfacts/projects/136 # Add issue to the Translations project
+          github-token: ${{ secrets.ADD_TO_PROJECT_PAT }}
+          labeled: 🌐 Translations, translations, i18n, Translations
           label-operator: OR
