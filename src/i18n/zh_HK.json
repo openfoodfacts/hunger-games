@@ -151,7 +151,12 @@
       "actions": {
         "edit": "編輯篩選器",
         "cancel": "取消",
-        "apply": "套用"
+        "apply": "套用",
+        "share": "推荐给好友"
+      },
+      "share": {
+        "title": "Hunger Games filtered questions",
+        "copied": "Link copied"
       }
     },
     "other_questions": "Other questions",
