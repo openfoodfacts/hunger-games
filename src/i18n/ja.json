@@ -151,7 +151,12 @@
       "actions": {
         "edit": "フィルタを編集",
         "cancel": "取消",
-        "apply": "適用"
+        "apply": "適用",
+        "share": "共有"
+      },
+      "share": {
+        "title": "Hunger Games filtered questions",
+        "copied": "リンクをコピーしました"
       }
     },
     "other_questions": "その他の質問",
