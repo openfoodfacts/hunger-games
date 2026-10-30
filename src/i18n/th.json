@@ -151,7 +151,12 @@
       "actions": {
         "edit": "Edit Filters",
         "cancel": "ยกเลิก",
-        "apply": "ใช้"
+        "apply": "ใช้",
+        "share": "แบ่งปัน"
+      },
+      "share": {
+        "title": "Hunger Games filtered questions",
+        "copied": "Link copied"
       }
     },
     "other_questions": "Other questions",
