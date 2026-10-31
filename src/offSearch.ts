@@ -62,7 +62,12 @@ const taxonomy_names: TaxonomyNames[] = [
   "vitamin",
 ];
 
-const searchTaxonomy = {};
+const searchTaxonomy: Partial<
+  Record<
+    TaxonomyNames,
+    (querry: string, language?: string) => Promise<AxiosResponse<unknown>>
+  >
+> = {};
 
 taxonomy_names.forEach((taxonomy) => {
   searchTaxonomy[taxonomy] = (querry: string, language?: string) =>
