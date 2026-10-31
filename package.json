@@ -52,7 +52,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "prettier": "prettier --write .",
+    "prettier": "prettier --write . --log-level warn",
     "countries": "node update-countries.js",
     "nutriments": "node update-nutriments.js",
     "deploy": "bash deploy.sh",
