@@ -29,12 +29,12 @@
       "contribution_details": "Katkınızın neden önemli olduğunu öğrenin"
     },
     "saved_filters": "Kaydedilen Filtreler",
-    "saved_filters_delete": "Delete saved filter",
-    "saved_filters_delete_title": "Delete saved filter?",
-    "saved_filters_delete_description": "This saved filter will be removed from this device.",
+    "saved_filters_delete": "Kaydedilmiş filtreyi sil",
+    "saved_filters_delete_title": "Kaydedilmiş filtreyi silmek istiyor musunuz?",
+    "saved_filters_delete_description": "Kaydedilen filtre bu cihazdan kaldırılacaktır.",
     "saved_filters_delete_confirm": "Sil",
-    "saved_filters_pending": "{{count}} products waiting",
-    "saved_filters_pending_unknown": "Products waiting",
+    "saved_filters_pending": "{{count}} ürünler beklemede",
+    "saved_filters_pending_unknown": "Ürünler beklemede",
     "contribution_modal": {
       "title": "Katkınız önemlidir",
       "information": "Açlık Oyunları, OCR (OKT - Optik Karakter Tanıma) ve yapay zekamızın sonuçlarından yararlanma çabasıdır. Open Food Facts yapımı Açlık Oyunları'nı kullandığınızda, topluluğun daha iyi yemek seçimleri yapmasına yardımcı olan veritabanımızın tamamını geliştirirsiniz. Ek açıklamalarınızı topluyoruz ve Open Food Facts'i daha doğru ve verimli hale getirmek için kullanıyoruz.",
@@ -44,9 +44,9 @@
       "title": "{{userName}} istatistikler:",
       "title_without_name": "İstatistikleriniz",
       "empty_state": {
-        "title": "No contributions yet",
-        "description": "Your contribution statistics will appear here once you start helping improve Open Food Facts.",
-        "action": "Start contributing"
+        "title": "Henüz katkı yok",
+        "description": "Open Food Facts'i geliştirmeye yardımcı olmaya başladığınızda yaptığınız katkıların istatistiklerini burada görüntüleyebilirsiniz.",
+        "action": "Katkıda bulunmaya başlayın"
       },
       "editorCount": {
         "title": "Editör",
@@ -155,7 +155,7 @@
         "share": "Paylaş"
       },
       "share": {
-        "title": "Hunger Games filtered questions",
+        "title": "Hunger Games filtrelenmiş sorular",
         "copied": "Bağlantı kopyalandı"
       }
     },
@@ -226,13 +226,13 @@
   },
   "logos": {
     "dashboard": {
-      "title": "Logo dashboard",
-      "description": "Explore logo categories and help improve product data.",
+      "title": "Logo kontrol paneli",
+      "description": "Logo kategorilerini keşfedin ve ürün verilerinin iyileştirilmesine yardımcı olun.",
       "category": "Kategori",
       "categories": "Kategoriler",
       "logo_count_one": "{{count}} logo",
       "logo_count_other": "{{count}} logolar",
-      "more_info": "More info",
+      "more_info": "Daha fazla bilgi",
       "questions": "Sorular",
       "search": "Ara"
     },
@@ -280,7 +280,7 @@
       "title": "Logo arama",
       "description": "Aramak istediğiniz logoyu seçin ve hepsini bulmaya başlayalım. İşaretlediğiniz her logo için, komşu logoları da getireceğiz, böylece işaretlemeyi asla bırakmanıza gerek kalmayacak. (Logo aralığını seçmek için Shift tuşuna basın)",
       "ref_logos": "Referans logoları (logo zaten bu değerle açıklanmıştır)",
-      "annotation_count_one": "Already {{formattedCount}} annotation. You can come back to this logo in a few days if you don't find any matching logos.",
+      "annotation_count_one": "Zaten {{formattedCount}} açıklaması mevcut. Eşleşen başka logo bulamazsanız birkaç gün içinde bu logoya geri dönebilirsiniz.",
       "annotation_count_other": "Açıklama {{formattedCount}} zaten mevcut. Eşleşen logolar bulamazsanız birkaç gün içinde bu logoya geri dönebilirsiniz.",
       "remaining": "Açıklama eklemek kaldı",
       "select_all": "Tümünü Seç",
