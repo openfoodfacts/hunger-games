@@ -1,5 +1,11 @@
 import * as React from "react";
-import { TourProvider, useTour } from "@reactour/tour";
+import {
+  TourProvider,
+  useTour,
+  type ProviderProps,
+  type StepType,
+} from "@reactour/tour";
+import type { TFunction } from "i18next";
 import { useTranslation } from "react-i18next";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
@@ -11,8 +17,10 @@ import {
   getTour,
 } from "../../localeStorageManager";
 
-const getSteps = ({ t, withSelector }) => {
-  const steps = [
+type GetStepsProps = { t: TFunction; withSelector: boolean };
+
+const getSteps = ({ t, withSelector }: GetStepsProps): StepType[] => {
+  const steps: Array<readonly [string, string | undefined]> = [
     ["intro", undefined],
     ["games", "games"],
     ["tools", "logo_search"],
@@ -42,14 +50,35 @@ const getSteps = ({ t, withSelector }) => {
   }));
 };
 
-const WelcomeTourController = ({ isOpen, setIsOpen }) => {
-  const { isOpen: tourIsOpen, setIsOpen: setTourIsOpen } = useTour();
+type WelcomeProps = {
+  isOpen: boolean;
+  setIsOpen?: React.Dispatch<React.SetStateAction<boolean>>;
+};
+
+type WelcomeTourControllerProps = WelcomeProps & { steps: StepType[] };
+
+const WelcomeTourController = ({
+  isOpen,
+  setIsOpen,
+  steps,
+}: WelcomeTourControllerProps) => {
+  const {
+    isOpen: tourIsOpen,
+    setIsOpen: setTourIsOpen,
+    setCurrentStep,
+    setSteps,
+  } = useTour();
+
+  React.useEffect(() => {
+    setSteps?.(steps);
+  }, [steps, setSteps]);
 
   React.useEffect(() => {
     if (isOpen) {
+      setCurrentStep(0);
       setTourIsOpen(true);
     }
-  }, [isOpen, setTourIsOpen]);
+  }, [isOpen, setCurrentStep, setTourIsOpen]);
 
   React.useEffect(() => {
     if (tourIsOpen) {
@@ -60,7 +89,7 @@ const WelcomeTourController = ({ isOpen, setIsOpen }) => {
   return null;
 };
 
-const Welcome = ({ isOpen, setIsOpen }) => {
+const Welcome = ({ isOpen, setIsOpen }: WelcomeProps) => {
   const { t } = useTranslation();
   const theme = useTheme();
   const isDesktop = useMediaQuery(theme.breakpoints.up("md"));
@@ -68,7 +97,7 @@ const Welcome = ({ isOpen, setIsOpen }) => {
     () => getSteps({ t, withSelector: isDesktop }),
     [t, isDesktop],
   );
-  const styles = React.useMemo(
+  const styles = React.useMemo<NonNullable<ProviderProps["styles"]>>(
     () => ({
       popover: (base) => ({
         ...base,
@@ -82,13 +111,40 @@ const Welcome = ({ isOpen, setIsOpen }) => {
     }),
     [theme],
   );
-  const handleClose = React.useCallback(
+  const handleClose = React.useCallback<
+    NonNullable<ProviderProps["onClickClose"]>
+  >(
     ({ setIsOpen: setTourIsOpen }) => {
       setTourIsOpen(false);
       setIsOpen?.(false);
       localSettings.update(localSettingsKeys.showTour, false);
     },
     [setIsOpen],
+  );
+  const handleKeyDown = React.useCallback<
+    NonNullable<ProviderProps["keyboardHandler"]>
+  >(
+    (event, clickProps, status) => {
+      if (event.keyCode === 27 && !status?.isEscDisabled) {
+        event.preventDefault();
+        if (clickProps) {
+          handleClose(clickProps);
+        }
+        return;
+      }
+
+      if (event.keyCode === 39 && !status?.isRightDisabled) {
+        event.preventDefault();
+        clickProps?.setCurrentStep((step) =>
+          Math.min(step + 1, (clickProps.steps?.length ?? 1) - 1),
+        );
+      }
+      if (event.keyCode === 37 && !status?.isLeftDisabled) {
+        event.preventDefault();
+        clickProps?.setCurrentStep((step) => Math.max(step - 1, 0));
+      }
+    },
+    [handleClose],
   );
 
   return (
@@ -100,8 +156,13 @@ const Welcome = ({ isOpen, setIsOpen }) => {
       styles={styles}
       onClickClose={handleClose}
       onClickMask={handleClose}
+      keyboardHandler={handleKeyDown}
     >
-      <WelcomeTourController isOpen={isOpen} setIsOpen={setIsOpen} />
+      <WelcomeTourController
+        isOpen={isOpen}
+        setIsOpen={setIsOpen}
+        steps={steps}
+      />
     </TourProvider>
   );
 };
