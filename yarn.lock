@@ -3428,14 +3428,14 @@ __metadata:
     eslint-plugin-react-refresh: "npm:^0.5.7"
     globals: "npm:^17.12.0"
     husky: "npm:^9.1.7"
-    i18next: "npm:^26.4.2"
+    i18next: "npm:^26.5.11"
     i18next-resources-to-backend: "npm:^1.2.3"
     knip: "npm:^6.38.0"
     lodash-es: "npm:^4.18.1"
     prettier: "npm:^3.9.9"
     react: "npm:^19.3.0"
     react-dom: "npm:^19.3.0"
-    react-i18next: "npm:^17.0.15"
+    react-i18next: "npm:^17.1.9"
     react-map-interaction: "npm:^2.1.0"
     react-router: "npm:^8.4.0"
     react-zoom-pan-pinch: "npm:^4.2.0"
@@ -3466,15 +3466,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"i18next@npm:^26.4.2":
-  version: 26.4.2
-  resolution: "i18next@npm:26.4.2"
+"i18next@npm:^26.5.11":
+  version: 26.5.11
+  resolution: "i18next@npm:26.5.11"
   peerDependencies:
     typescript: ^5 || ^6 || ^7
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: 10/7cf060a81682a63d0900c584b03a25557da88afcefebca613ca24c2a1af1322cdf606ba3dffa2d3900b3cf0fa6c3a945d89a0e50517d1b76ac5acb070ac76173
+  checksum: 10/613c219e7312fdb5e0763d596251c8af5fdf922dc575e31a244819a0914db658f9e3f89a10f2707c19ad11bb8d352d72f00c947c8f09b4bb2d12a553fcc993b0
   languageName: node
   linkType: hard
 
@@ -4879,9 +4879,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-i18next@npm:^17.0.15":
-  version: 17.0.15
-  resolution: "react-i18next@npm:17.0.15"
+"react-i18next@npm:^17.1.9":
+  version: 17.1.9
+  resolution: "react-i18next@npm:17.1.9"
   dependencies:
     "@babel/runtime": "npm:^7.29.7"
     html-parse-stringify: "npm:^4.0.1"
@@ -4897,7 +4897,7 @@ __metadata:
       optional: true
     typescript:
       optional: true
-  checksum: 10/c600fd89b3421f75c8cf57cfc2afa8613479da21709ee354f2263a6ee8c04e7be29b43f183bdd2b06ffc461625c658a46f9d36fd082f736f4a28baabf61f5976
+  checksum: 10/8e1f309c94ea5917f57103417ba183ae2bc30820cb664a8ff7089cc0b3cc20257f313b863f2e9f4e805fe583d2b2ffc7d38652f279057d5efbe4ecfcc13ffb52
   languageName: node
   linkType: hard
 
