@@ -1,4 +1,4 @@
-import axios from "axios";
+import { checkedFetch, checkedJsonFetch } from "./utils/checkedFetch";
 import { Robotoff } from "@openfoodfacts/openfoodfacts-nodejs";
 
 import { ROBOTOFF_API_URL } from "./const";
@@ -197,21 +197,32 @@ const robotoff = {
 
     const lang = getLang();
 
-    return axios.get<GetQuestionsResponse>(`${ROBOTOFF_API_URL}/questions/`, {
-      params: removeEmptyKeys({ ...searchParams, lang, count, page }),
-    });
-  },
-
-  updateLogo(logoId: string, value: string, type: string) {
-    return axios.put(
-      `${ROBOTOFF_API_URL}/images/logos/${logoId}`,
-      removeEmptyKeys({ value, type }),
-      { withCredentials: true },
+    const params = new URLSearchParams();
+    for (const [key, value] of Object.entries(
+      removeEmptyKeys({ ...searchParams, lang, count, page }),
+    )) {
+      if (Array.isArray(value)) {
+        value.forEach((item) => params.append(`${key}[]`, String(item)));
+      } else if (value != null) {
+        params.append(key, String(value));
+      }
+    }
+    return checkedJsonFetch<GetQuestionsResponse>(
+      `${ROBOTOFF_API_URL}/questions/?${params}`,
     );
   },
 
+  updateLogo(logoId: string, value: string, type: string) {
+    return checkedFetch(`${ROBOTOFF_API_URL}/images/logos/${logoId}`, {
+      method: "PUT",
+      credentials: "include",
+      body: JSON.stringify(removeEmptyKeys({ value, type })),
+      headers: { "Content-Type": "application/json" },
+    });
+  },
+
   getUserStatistics(username: string) {
-    return axios.get(`${ROBOTOFF_API_URL}/users/statistics/${username}`);
+    return checkedFetch(`${ROBOTOFF_API_URL}/users/statistics/${username}`);
   },
 
   getCroppedImageUrl(imageUrl: string, boundingBox: BoundingBox) {
@@ -232,7 +243,7 @@ const robotoff = {
     const params = new URLSearchParams();
     logoIds.forEach((id) => params.append("logo_ids", id));
 
-    return axios.get<LogoImagesResponse>(
+    return checkedJsonFetch<LogoImagesResponse>(
       `${ROBOTOFF_API_URL}/images/logos?${params.toString()}`,
     );
   },
@@ -248,7 +259,7 @@ const robotoff = {
     page?: number;
     count?: number;
   }) {
-    return axios.get<{ questions?: [string, number][] }>(
+    return checkedJsonFetch<{ questions?: [string, number][] }>(
       `${ROBOTOFF_API_URL}/questions/unanswered/?${Object.entries(
         removeEmptyKeys({
           ...other,

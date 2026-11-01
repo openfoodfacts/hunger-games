@@ -1,5 +1,4 @@
 const fs = require("fs");
-const axios = require("axios");
 
 const idsToIgnore = [
   "energy",
@@ -37,8 +36,13 @@ function parseNutrients(data, depth = 0) {
   });
 }
 
-axios("https://world.openfoodfacts.org/cgi/nutrients.pl")
-  .then(({ data }) => {
+fetch("https://world.openfoodfacts.org/cgi/nutrients.pl")
+  .then((response) => {
+    if (!response.ok)
+      throw new Error(`Request failed with status ${response.status}`);
+    return response.json();
+  })
+  .then((data) => {
     fs.writeFile(
       "./src/assets/nutriments.json",
       JSON.stringify(

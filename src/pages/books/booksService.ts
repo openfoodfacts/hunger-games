@@ -1,4 +1,4 @@
-import axios from "axios";
+import { checkedFetch, checkedJsonFetch } from "../../utils/checkedFetch";
 import { OFF_URL, OFF_API_URL, OFF_API_URL_V3, OPF_URL } from "../../const";
 import type { BookProduct, PrefixFilter } from "./types";
 
@@ -84,12 +84,12 @@ export async function fetchFacetBooks({
   if (code && code.trim().length > 0) {
     const cleanCode = code.trim();
     try {
-      const res = await axios.get<{ product?: BookProduct }>(
+      const res = await checkedJsonFetch<{ product?: BookProduct }>(
         `${OFF_API_URL}/product/${cleanCode}.json?fields=code,product_name,brands,images,image_front_url,image_url,categories,categories_tags,quantity,creator,countries_tags,lang`,
-        { withCredentials: true },
+        { credentials: "include" },
       );
-      if (res.data?.product?.code) {
-        return { products: [res.data.product], count: 1 };
+      if (res?.product?.code) {
+        return { products: [res.product], count: 1 };
       }
     } catch (err) {
       console.warn("Direct product lookup error:", err);
@@ -113,10 +113,13 @@ export async function fetchFacetBooks({
       // Open Food Facts supports both /facets/codes/{facet}/{page}.json and ?page={page}&json=true
       const url = `${OFF_URL}/facets/codes/${facet}.json?page=${page}&page_size=${pageSize}&fields=code,product_name,brands,images,image_front_url,image_url,categories,categories_tags,quantity,creator,countries_tags,lang`;
 
-      const { data } = await axios.get<{
+      const data = await checkedJsonFetch<{
         products?: BookProduct[];
         count?: number;
-      }>(url, { withCredentials: true, timeout: 10000 });
+      }>(url, {
+        credentials: "include",
+        signal: AbortSignal.timeout(10000),
+      });
 
       if (data.products && Array.isArray(data.products)) {
         allFetchedProducts.push(...data.products);
@@ -169,15 +172,19 @@ export async function moveBookToOpenProductsFacts(
 
   // 1. Try API V3 PATCH
   try {
-    const patchRes = await axios.patch(
+    const patchRes = await checkedFetch(
       `${OFF_API_URL_V3}/product/${barcode}`,
       {
-        product: {
-          categories_tags_add: [OPF_CATEGORY_TAG],
-        },
-        comment: "Move book to Open Products Facts (Hunger Games)",
+        method: "PATCH",
+        credentials: "include",
+        body: JSON.stringify({
+          product: {
+            categories_tags_add: [OPF_CATEGORY_TAG],
+          },
+          comment: "Move book to Open Products Facts (Hunger Games)",
+        }),
+        headers: { "Content-Type": "application/json" },
       },
-      { withCredentials: true },
     );
     if (patchRes.status >= 200 && patchRes.status < 300) {
       success = true;
@@ -197,16 +204,14 @@ export async function moveBookToOpenProductsFacts(
         "Move book to Open Products Facts (Hunger Games)",
       );
 
-      const postRes = await axios.post(
-        `${OFF_URL}/cgi/product_jqm2.pl`,
-        formData,
-        {
-          headers: {
-            "Content-Type": "application/x-www-form-urlencoded",
-          },
-          withCredentials: true,
+      const postRes = await checkedFetch(`${OFF_URL}/cgi/product_jqm2.pl`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded",
         },
-      );
+        credentials: "include",
+        body: formData,
+      });
       if (postRes.status >= 200 && postRes.status < 300) {
         success = true;
       }

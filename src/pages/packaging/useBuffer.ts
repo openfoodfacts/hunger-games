@@ -1,8 +1,8 @@
 import type { ProductV3 } from "@openfoodfacts/openfoodfacts-nodejs";
-import axios from "axios";
 import * as React from "react";
 import { OFF_SEARCH, OFF_API_URL_V3 } from "../../const";
 import type { ProductImage } from "../../off";
+import { checkedJsonFetch } from "../../utils/checkedFetch";
 
 type Parameters = {
   page: number;
@@ -125,9 +125,8 @@ export const useBuffer = ({
 
   React.useEffect(() => {
     let isValid = true;
-    void axios
-      .get<SearchResponse>(url)
-      .then(({ data }) => {
+    void checkedJsonFetch<SearchResponse>(url)
+      .then((data) => {
         if (!isValid) {
           return;
         }

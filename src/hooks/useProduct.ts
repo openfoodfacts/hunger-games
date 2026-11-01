@@ -9,13 +9,13 @@ export const useProductData = (barcode?: string) => {
         throw new Error("No Barcode");
       }
       return offService.getProduct(barcode).then((result) => {
-        const product = result.data.product;
+        const product = result.product;
 
         if (!product) {
           throw new Error("No product found");
         }
 
-        return { code: result.data.code, ...product };
+        return { code: result.code, ...product };
       });
     },
   });

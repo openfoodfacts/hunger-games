@@ -40,9 +40,9 @@ const loadLogos = async (
   });
   const filteredResults = results.filter(({ logo_id }) => !seenIds[logo_id]);
 
-  const {
-    data: { logos: logoImages },
-  } = await robotoff.getLogosImages(filteredResults.map((r) => r.logo_id));
+  const { logos: logoImages } = await robotoff.getLogosImages(
+    filteredResults.map((r) => r.logo_id),
+  );
 
   const logoData = filteredResults.map(({ logo_id, distance }) => {
     const annotation = logoImages.find(({ id }) => id === logo_id);

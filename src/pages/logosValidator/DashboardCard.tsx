@@ -69,7 +69,7 @@ const DashboardCard = React.memo(function DashboardCard(props: LogoDefinition) {
         1,
         1,
       )
-      .then(({ data }) => {
+      .then((data) => {
         if (isValid) {
           setQuestionNumber(data?.count ?? 0);
         }

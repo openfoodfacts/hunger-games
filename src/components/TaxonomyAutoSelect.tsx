@@ -7,7 +7,7 @@ import searchTaxonomy, { TaxonomyItem, TaxonomyNames } from "../offSearch";
 
 type TaxonomyAutoSelectProps = Omit<TextFieldProps, "value" | "onChange"> & {
   /**
-   * The taxonly to querry
+   * The taxonomy to query
    */
   taxonomy: TaxonomyNames;
   onChange: (itemId: string, ctx?: object) => void;
@@ -47,7 +47,7 @@ export default function TaxonomyAutoSelect(props: TaxonomyAutoSelectProps) {
           callback: (results?: readonly TaxonomyItem[]) => void,
         ) => {
           searchTaxonomy[taxonomy](request.input, language)
-            .then(({ data }) => {
+            .then((data) => {
               callback(data?.options ?? []);
             })
             .catch(() => callback([]));

@@ -1,4 +1,4 @@
-import axios from "axios";
+import { checkedJsonFetch } from "../../utils/checkedFetch";
 import { useQuery } from "@tanstack/react-query";
 
 interface Nutri {
@@ -31,7 +31,7 @@ export default function useNutrimentTranslations(lc: string) {
   const query = useQuery({
     queryKey: ["nutriment-translations", lc],
     queryFn: async () => {
-      const { data } = await axios.get<{ nutrients?: Nutri[] }>(
+      const data = await checkedJsonFetch<{ nutrients?: Nutri[] }>(
         `https://world.openfoodfacts.org/cgi/nutrients.pl?lc=${lc}`,
       );
       return parseNutrients(data.nutrients);

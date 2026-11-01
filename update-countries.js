@@ -1,8 +1,12 @@
 const fs = require("fs");
-const axios = require("axios");
 
-axios("https://static.openfoodfacts.org/data/taxonomies/countries.json")
-  .then(({ data }) => {
+fetch("https://static.openfoodfacts.org/data/taxonomies/countries.json")
+  .then((response) => {
+    if (!response.ok)
+      throw new Error(`Request failed with status ${response.status}`);
+    return response.json();
+  })
+  .then((data) => {
     fs.writeFile(
       "./src/assets/countries.json",
       JSON.stringify(

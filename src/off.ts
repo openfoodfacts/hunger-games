@@ -12,7 +12,7 @@ import {
   OFF_SEARCH,
   URL_ORIGINE,
 } from "./const";
-import axios from "axios";
+import { checkedFetch, checkedJsonFetch } from "./utils/checkedFetch";
 
 const BARCODE_REGEX = /(...)(...)(...)(.*)$/;
 
@@ -38,8 +38,6 @@ export const offClient = new OpenFoodFacts(
 );
 
 class OffService {
-  private readonly axios: typeof axios = axios;
-
   getCookie(name: string) {
     const cookies = document.cookie
       .split(";")
@@ -84,19 +82,22 @@ class OffService {
 
   getCategoriesTranslations({ categories }: { categories: string[] }) {
     const lang = getLang();
-    return axios.get<
+    const params = new URLSearchParams({
+      tagtype: "categories",
+      lc: `en,${lang}`,
+      cc: "fr",
+      fields: "name,wikidata",
+      tags: categories.join(","),
+    });
+    return checkedJsonFetch<
       Record<string, { name?: Record<string, string | undefined> }>
-    >(
-      `${OFF_API_URL_V2}/taxonomy?tagtype=categories&lc=en%2C${lang}&cc=fr&fields=name,wikidata&tags=${categories.join(
-        ",",
-      )}`,
-    );
+    >(`${OFF_API_URL_V2}/taxonomy?${params}`);
   }
 
   getProduct(barcode: string) {
     const lang = getLang();
 
-    return axios.get<{ code: string; product: Product }>(
+    return checkedJsonFetch<{ code: string; product: Product }>(
       `${OFF_API_URL}/product/${barcode}.json?fields=${[
         "product_name",
         "brands",
@@ -229,7 +230,7 @@ class OffService {
     });
 
     const urlParams = new URLSearchParams(searchParams);
-    return axios.get<{ products?: T[] }>(
+    return checkedJsonFetch<{ products?: T[] }>(
       `${OFF_SEARCH.replace("world", countryCode)}?${urlParams.toString()}`,
       { signal },
     );
@@ -244,8 +245,12 @@ class OffService {
       console.error("setIngedrient: Missing text");
     }
 
-    return axios.patch(`${OFF_API_URL_V3}/product/${code}`, {
-      product: { [`ingredients_text${lang ? `_${lang}` : ""}`]: text },
+    return checkedFetch(`${OFF_API_URL_V3}/product/${code}`, {
+      method: "PATCH",
+      body: JSON.stringify({
+        product: { [`ingredients_text${lang ? `_${lang}` : ""}`]: text },
+      }),
+      headers: { "Content-Type": "application/json" },
     });
   }
 
@@ -255,13 +260,17 @@ class OffService {
   }) {
     const { lang, text } = editionParams;
 
-    return axios.patch<{ product?: { ingredients?: T } }>(
+    return checkedJsonFetch<{ product?: { ingredients?: T } }>(
       `${OFF_API_URL_V3}/product/test`,
       {
-        fields: "ingredients",
-        lc: lang,
-        tags_lc: lang,
-        product: { lang, [`ingredients_text_${lang}`]: text },
+        method: "PATCH",
+        body: JSON.stringify({
+          fields: "ingredients",
+          lc: lang,
+          tags_lc: lang,
+          product: { lang, [`ingredients_text_${lang}`]: text },
+        }),
+        headers: { "Content-Type": "application/json" },
       },
     );
   }

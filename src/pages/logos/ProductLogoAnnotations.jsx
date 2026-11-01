@@ -35,9 +35,7 @@ const ROBOTOFF_2_OFF = {
 
 const fetchProducts = async ({ page, filter }) => {
   try {
-    const {
-      data: { count, products },
-    } = await off.searchProducts({
+    const { count, products } = await off.searchProducts({
       page,
       pageSize: PRODUCT_PAGE_SIZE,
       filters: [filter],

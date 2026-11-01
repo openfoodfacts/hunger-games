@@ -123,7 +123,7 @@ function useIngredientParsing() {
         text,
         lang,
       });
-      const ingredients = parsing.data?.product?.ingredients;
+      const ingredients = parsing?.product?.ingredients;
       setParsing((prev) => ({ ...prev, [text]: ingredients }));
     } catch (error: unknown) {
       console.error(error);

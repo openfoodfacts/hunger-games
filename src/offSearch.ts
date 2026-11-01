@@ -1,4 +1,4 @@
-import axios, { AxiosResponse } from "axios";
+import { checkedJsonFetch } from "./utils/checkedFetch";
 import { OFF_SEARCH_A_LISIOUS } from "./const";
 
 export type TaxonomyNames =
@@ -63,16 +63,13 @@ const taxonomy_names: TaxonomyNames[] = [
 ];
 
 const searchTaxonomy: Partial<
-  Record<
-    TaxonomyNames,
-    (querry: string, language?: string) => Promise<AxiosResponse<unknown>>
-  >
+  Record<TaxonomyNames, (query: string, language?: string) => Promise<unknown>>
 > = {};
 
 taxonomy_names.forEach((taxonomy) => {
-  searchTaxonomy[taxonomy] = (querry: string, language?: string) =>
-    axios.get(
-      `${OFF_SEARCH_A_LISIOUS}?taxonomy_names=${taxonomy}&q=${querry}&lang=${
+  searchTaxonomy[taxonomy] = (query: string, language?: string) =>
+    checkedJsonFetch<unknown>(
+      `${OFF_SEARCH_A_LISIOUS}?taxonomy_names=${taxonomy}&q=${query}&lang=${
         language || "en"
       }`,
     );
@@ -86,8 +83,5 @@ export type TaxonomyItem = {
 
 export default searchTaxonomy as Record<
   TaxonomyNames,
-  (
-    querry: string,
-    language?: string,
-  ) => Promise<AxiosResponse<{ options?: TaxonomyItem[] }>>
+  (query: string, language?: string) => Promise<{ options?: TaxonomyItem[] }>
 >;

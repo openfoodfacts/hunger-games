@@ -1,4 +1,4 @@
-import axios from "axios";
+import { checkedJsonFetch } from "./utils/checkedFetch";
 
 export type TaxonomyItem = {
   /**
@@ -47,11 +47,12 @@ export default async function getTaxonomy(
   if (!tagtype || !tag) {
     return {};
   }
-  return await axios
-    .get<Record<string, TaxonomyItem>>(
-      `https://world.openfoodfacts.org/api/v2/taxonomy?tagtype=${tagtype}&tags=${tag}${
-        languages && languages.length > 0 ? `&lc=${languages.join(",")}` : ""
-      }`,
-    )
-    .then(({ data }) => data);
+
+  const query = new URLSearchParams({ tagtype, tags: tag });
+  if (languages.length > 0) {
+    query.set("lc", languages.join(","));
+  }
+  return checkedJsonFetch<Record<string, TaxonomyItem>>(
+    `https://world.openfoodfacts.org/api/v2/taxonomy?${query}`,
+  );
 }

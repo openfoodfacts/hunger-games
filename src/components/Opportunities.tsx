@@ -128,7 +128,7 @@ const useCategoryTranslations = (pages: Opportunity[][]) => {
       queryKey: ["category-translations", lang, categories],
       queryFn: async () => {
         const response = await off.getCategoriesTranslations({ categories });
-        return response.data;
+        return response;
       },
       enabled: categories.length > 0,
     })),
@@ -158,7 +158,7 @@ const Opportunities = (props: OpportunitiesProps) => {
           page: pageParam,
           count: pageSize,
         });
-        return response.data.questions ?? [];
+        return response.questions ?? [];
       },
       getNextPageParam: (lastPage, pages) =>
         lastPage.length < pageSize ? undefined : pages.length + 1,
