@@ -1069,13 +1069,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@openfoodfacts/openfoodfacts-nodejs@npm:2.0.0-alpha.35":
-  version: 2.0.0-alpha.35
-  resolution: "@openfoodfacts/openfoodfacts-nodejs@npm:2.0.0-alpha.35"
+"@openfoodfacts/openfoodfacts-nodejs@npm:2.0.0-alpha.36":
+  version: 2.0.0-alpha.36
+  resolution: "@openfoodfacts/openfoodfacts-nodejs@npm:2.0.0-alpha.36"
   dependencies:
     jwt-decode: "npm:4.0.0"
     openapi-fetch: "npm:^0.17.0"
-  checksum: 10/3b002d502a62c6fc74b4303045fe08f5309ba1fb2360fe3f3c2d1e0dcac98a2851f60abdaec1629d67f3e84b4a6e63310adfe8ad8183366a29f4e7a8e8869a2d
+  checksum: 10/9ac02ed1711f9a9eb430feaf69f72d8b4c5bce948a851a68108cd972436f2d16b1bd0c07a31cec8006d85e3dc534cd83a236997009d97402bdb0377a66432125
   languageName: node
   linkType: hard
 
@@ -3412,7 +3412,7 @@ __metadata:
     "@mui/material": "npm:^9.4.0"
     "@mui/system": "npm:^9.4.0"
     "@mui/x-data-grid": "npm:^9.14.0"
-    "@openfoodfacts/openfoodfacts-nodejs": "npm:2.0.0-alpha.35"
+    "@openfoodfacts/openfoodfacts-nodejs": "npm:2.0.0-alpha.36"
     "@openfoodfacts/openfoodfacts-webcomponents": "npm:^1.18.2"
     "@reactour/tour": "npm:^3.8.0"
     "@tanstack/react-query": "npm:^5.104.0"
