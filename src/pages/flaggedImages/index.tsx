@@ -1,6 +1,7 @@
 import * as React from "react";
 
-import axios from "axios";
+import { checkedFetch, checkedJsonFetch } from "../../utils/checkedFetch";
+import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import { useTranslation } from "react-i18next";
 import Box from "@mui/material/Box";
 import Alert from "@mui/material/Alert";
@@ -22,25 +23,37 @@ type ApiRequest = {
 };
 
 const flagImageUrl = "https://amathjourney.com/api/off-annotation/flag-image/";
+const flaggedImagesKey = ["flagged-images"] as const;
 
 const getImageUrl = (code: string, imgid: number) =>
   `${OFF_IMAGE_URL}/${off.getFormatedBarcode(code)}/${imgid}.jpg`;
 
 export default function FlaggedImages() {
   const { t } = useTranslation();
-  const [data, setData] = React.useState<FlaggedImage[] | null>(null);
-  const [deleteError, setDeleteError] = React.useState(false);
+  const queryClient = useQueryClient();
+  const { data = [], isPending } = useQuery({
+    queryKey: flaggedImagesKey,
+    queryFn: async () =>
+      (await checkedJsonFetch<ApiRequest>(flagImageUrl)).result,
+    retry: false,
+  });
+  const deleteImage = useMutation({
+    mutationFn: ({ code, imgid }: Pick<FlaggedImage, "code" | "imgid">) =>
+      checkedFetch(flagImageUrl + code, {
+        method: "DELETE",
+        body: JSON.stringify({ imgid }),
+        headers: { "Content-Type": "application/json" },
+      }),
+    onSuccess: (_response, { code, imgid }) => {
+      queryClient.setQueryData<FlaggedImage[]>(flaggedImagesKey, (previous) =>
+        previous?.filter(
+          (image) => image.code !== code || image.imgid !== imgid,
+        ),
+      );
+    },
+  });
 
-  React.useEffect(() => {
-    axios
-      .get<ApiRequest>(flagImageUrl)
-      .then(({ data: { result } }) => setData(result))
-      .catch(() => {
-        setData([]);
-      });
-  }, []);
-
-  if (data === null) {
+  if (isPending) {
     return <p>{t(`flagged_images.loading`)}</p>;
   }
   return (
@@ -48,7 +61,7 @@ export default function FlaggedImages() {
       <Box>
         <Box sx={{ padding: 2 }}>
           <Typography>{t("flagged_images.title")}</Typography>
-          {deleteError && (
+          {deleteImage.isError && (
             <Alert severity="error">
               {t("flagged_images.delete_error", {
                 defaultValue: "Could not delete the flagged image. Try again.",
@@ -76,24 +89,7 @@ export default function FlaggedImages() {
                 </td>
                 <td>
                   <IconButton
-                    onClick={() => {
-                      setDeleteError(false);
-                      axios
-                        .delete(flagImageUrl + code, {
-                          data: {
-                            imgid,
-                          },
-                        })
-                        .then(() => {
-                          setData((prev) =>
-                            (prev ?? []).filter(
-                              (line) =>
-                                line.code !== code || line.imgid !== imgid,
-                            ),
-                          );
-                        })
-                        .catch(() => setDeleteError(true));
-                    }}
+                    onClick={() => deleteImage.mutate({ code, imgid })}
                   >
                     <DeleteOutlineIcon
                       sx={{ cursor: "pointer", color: "red" }}

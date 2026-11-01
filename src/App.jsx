@@ -2,9 +2,13 @@ import React from "react";
 import CssBaseline from "@mui/material/CssBaseline";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { Routes, Route, useLocation } from "react-router";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import {
+  QueryClient,
+  QueryClientProvider,
+  useQuery,
+} from "@tanstack/react-query";
 import { useMatomo } from "./hooks/matomo";
-import axios from "axios";
+import { checkedFetch } from "./utils/checkedFetch";
 
 import ResponsiveAppBar from "./components/ResponsiveAppBar";
 import DevModeContext from "./contexts/devMode";
@@ -140,69 +144,33 @@ function PageViewTracker() {
 export default function App() {
   const [devMode, setDevMode] = React.useState(getIsDevMode);
   const [visiblePages, setVisiblePages] = React.useState(getVisiblePages);
-  const [userState, setUserState] = React.useState(() => {
-    if (IS_DEVELOPMENT_MODE) {
-      return { userName: "", isLoggedIn: true };
-    }
-    return { userName: "", isLoggedIn: false };
-  });
-  const lastSeenCookie = React.useRef(null);
-
-  const refresh = React.useCallback(async () => {
-    if (IS_DEVELOPMENT_MODE) {
-      setUserState({ userName: "", isLoggedIn: true });
-      return true;
-    }
-
-    const sessionCookie = off.getCookie("session");
-    if (sessionCookie === lastSeenCookie.current) {
-      return userState.isLoggedIn;
-    }
-    if (!sessionCookie) {
-      setUserState({ userName: "", isLoggedIn: false });
-      lastSeenCookie.current = sessionCookie;
-      return false;
-    }
-    const isLoggedIn = await axios
-      .get(`${OFF_URL}/cgi/auth.pl`, { withCredentials: true })
-      .then(() => {
-        const cookieUserName = off.getUsername();
-        setUserState({ userName: cookieUserName, isLoggedIn: true });
-        lastSeenCookie.current = sessionCookie;
-        return true;
-      })
-      .catch(() => {
-        setUserState({ userName: "", isLoggedIn: false });
-        lastSeenCookie.current = sessionCookie;
-        return false;
-      });
-
-    return isLoggedIn;
-  }, [userState.isLoggedIn]);
-
-  React.useEffect(() => {
-    Promise.resolve()
-      .then(refresh)
-      .catch(() => {});
-  }, [refresh]);
-
-  // The login and signup actions open Open Food Facts in another tab: re-check
-  // the session when the user comes back to this tab, so the current page
-  // unlocks by itself.
-  React.useEffect(() => {
-    if (userState.isLoggedIn) {
-      return undefined;
-    }
-    const recheckSession = () => {
-      Promise.resolve()
-        .then(refresh)
-        .catch(() => {});
-    };
-    window.addEventListener("focus", recheckSession);
-    return () => {
-      window.removeEventListener("focus", recheckSession);
-    };
-  }, [refresh, userState.isLoggedIn]);
+  const {
+    data: userState = { userName: "", isLoggedIn: IS_DEVELOPMENT_MODE },
+    refetch,
+  } = useQuery(
+    {
+      queryKey: ["login-session"],
+      queryFn: async () => {
+        if (IS_DEVELOPMENT_MODE) return { userName: "", isLoggedIn: true };
+        if (!off.getCookie("session"))
+          return { userName: "", isLoggedIn: false };
+        try {
+          await checkedFetch(`${OFF_URL}/cgi/auth.pl`, {
+            credentials: "include",
+          });
+          return { userName: off.getUsername(), isLoggedIn: true };
+        } catch {
+          return { userName: "", isLoggedIn: false };
+        }
+      },
+      retry: false,
+    },
+    queryClient,
+  );
+  const refresh = async () => {
+    const result = await refetch();
+    return result.data?.isLoggedIn ?? false;
+  };
 
   const showFlaggedImage = ADMINS.includes(userState.userName);
 
