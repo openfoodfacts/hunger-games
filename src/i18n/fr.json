@@ -478,7 +478,18 @@
     "parsing": "Comprendre le serveur",
     "send": "Valider et envoyer",
     "skip": "Ignorer ce produit",
-    "getRobotoffPrediciton": "Obtenir les prédictions de Robotoff"
+    "getRobotoffPrediciton": "Obtenir les prédictions de Robotoff",
+    "unselect_photo": "Désélectionner la photo (mauvaise photo)",
+    "unselecting": "Désélection en cours...",
+    "unselect_error": "Échec de la désélection de la photo",
+    "filters": {
+      "country": "Pays",
+      "popularity": "Popularité",
+      "all_countries": "Tous les pays (monde)",
+      "top_90_percent_2025": "Top 90% des scans (2025)",
+      "top_90_percent_2024": "Top 90% des scans (2024)",
+      "all_popularity": "Tous les produits (aucun filtre)"
+    }
   },
   "footer": {
     "appStore": {
