@@ -16,8 +16,6 @@ import TableRow from "@mui/material/TableRow";
 import EditIcon from "@mui/icons-material/Edit";
 import VisibilityIcon from "@mui/icons-material/Visibility";
 
-import axios from "axios";
-
 import Row from "./Row";
 import {
   useBuffer,
@@ -194,13 +192,20 @@ const PackagingEditor = ({
           <Button
             sx={{ width: 150 }}
             onClick={() => {
-              void axios
-                .patch(
-                  `${OFF_API_URL_V3}/product/${product.code}`,
-                  formatData(innerRows),
-                  { withCredentials: true },
-                )
-                .then(next)
+              void fetch(`${OFF_API_URL_V3}/product/${product.code}`, {
+                method: "PATCH",
+                credentials: "include",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(formatData(innerRows)),
+              })
+                .then((response) => {
+                  if (!response.ok) {
+                    throw new Error(
+                      `Request failed with status ${response.status}`,
+                    );
+                  }
+                  next();
+                })
                 .catch((error: unknown) => {
                   console.error(error);
                 });

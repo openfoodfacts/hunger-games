@@ -63,7 +63,7 @@ export default function GreenScore() {
     queries: greenScoreCards.map(({ filterState }) => ({
       queryKey: ["question-count", filterState],
       queryFn: async () => {
-        const { data } = await robotoff.questions(
+        const data = await robotoff.questions(
           { ...filterState, with_image: true },
           1,
           1,

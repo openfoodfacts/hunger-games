@@ -1,5 +1,5 @@
 import * as React from "react";
-import axios from "axios";
+import { checkedJsonFetch } from "../utils/checkedFetch";
 import { OFF_DOMAIN } from "../const";
 
 export type Option = {
@@ -20,11 +20,10 @@ export const useOptions = (fileName: Files, lang: string) => {
   const [options, setOptions] = React.useState<Option[]>([]);
 
   React.useEffect(() => {
-    axios
-      .get<TaxonomyResponse>(
-        `https://static.${OFF_DOMAIN}/data/taxonomies/${fileName}.full.json`,
-      )
-      .then(({ data }) => {
+    checkedJsonFetch<TaxonomyResponse>(
+      `https://static.${OFF_DOMAIN}/data/taxonomies/${fileName}.full.json`,
+    )
+      .then((data) => {
         const newOptions: Option[] = Object.keys(data)
           .map((key) => {
             const synonyms: undefined | string[] =

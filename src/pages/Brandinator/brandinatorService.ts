@@ -1,5 +1,5 @@
-import axios from "axios";
 import robotoff from "../../robotoff";
+import { checkedJsonFetch } from "../../utils/checkedFetch";
 import rawBrandImagesMap from "./brandImagesMap.json";
 import rawBrandsData from "./brandsData.json";
 
@@ -140,7 +140,7 @@ export async function fetchRobotoffBrandOpportunities(
       count,
     });
 
-    const questions = response.data.questions || [];
+    const questions = response.questions || [];
     const resultMap: Record<string, number> = {};
     for (const [tag, num] of questions) {
       resultMap[tag.toLowerCase()] = num;
@@ -166,13 +166,14 @@ export async function fetchProjectBrandTaxonomy(
   >
 > {
   try {
-    const res = await axios.get<
+    return await checkedJsonFetch<
       Record<
         string,
         { name?: Record<string, string>; wikidata?: Record<string, string> }
       >
-    >(`${project.staticUrl}/data/taxonomies/brands.json`, { timeout: 10000 });
-    return res.data;
+    >(`${project.staticUrl}/data/taxonomies/brands.json`, {
+      signal: AbortSignal.timeout(10000),
+    });
   } catch (err) {
     console.warn(`Could not load taxonomy for ${project.id}:`, err);
     return {};
@@ -193,7 +194,7 @@ export async function fetchProjectFacetsBrands(
     : `${project.worldUrl}/facets/brands.json`;
 
   const [facetsRes, taxonomy] = await Promise.all([
-    axios.get<{
+    checkedJsonFetch<{
       tags?: {
         id: string;
         name: string;
@@ -201,11 +202,11 @@ export async function fetchProjectFacetsBrands(
         known?: number;
         url?: string;
       }[];
-    }>(url, { timeout: 12000 }),
+    }>(url, { signal: AbortSignal.timeout(12000) }),
     fetchProjectBrandTaxonomy(project),
   ]);
 
-  const tags = facetsRes.data.tags || [];
+  const tags = facetsRes.tags || [];
 
   return tags.map((t) => {
     const cleanId = t.id.includes(":") ? t.id.split(":", 2)[1] : t.id;

@@ -180,9 +180,9 @@ export default function LogoSearch() {
       if (!isValid) {
         return;
       }
-      const {
-        data: { logos: logoImages },
-      } = await robotoff.getLogosImages(results.map((r) => r.logo_id));
+      const { logos: logoImages } = await robotoff.getLogosImages(
+        results.map((r) => r.logo_id),
+      );
       if (!isValid) {
         return;
       }

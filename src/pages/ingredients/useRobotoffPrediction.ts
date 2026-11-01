@@ -1,5 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
-import axios from "axios";
+import { checkedJsonFetch } from "../../utils/checkedFetch";
 
 type Entities = {
   start: number;
@@ -36,16 +36,16 @@ export default function useRobotoffPrediction(
   const { data, refetch, isFetching, error } = useQuery({
     queryKey: ["robotoff-prediction", fetchUrl],
     queryFn: async () => {
-      const result = await axios.get<
+      const result = await checkedJsonFetch<
         GetIngredientsResponse | GetIngredientsError // That's not clean, but errors return a 200
       >(fetchUrl);
 
-      if (isError(result.data)) {
-        throw new Error(result.data.error);
+      if (isError(result)) {
+        throw new Error(result.error);
       }
 
-      const rep: DataType = { fullText: result.data.text, detections: {} };
-      result.data.entities.forEach(({ text, start, end, score, lang }) => {
+      const rep: DataType = { fullText: result.text, detections: {} };
+      result.entities.forEach(({ text, start, end, score, lang }) => {
         rep.detections[lang.lang] = { text, start, end, score };
       });
 

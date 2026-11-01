@@ -51,7 +51,7 @@ export function useQuestionsQuery(valueTag: string) {
 
   const sortByPopularity = filterParams.sorted !== "false";
   const fetchQuestions = async () => {
-    const { data } = await robotoff.questions(
+    const data = await robotoff.questions(
       {
         insightType: filterParams.insightType,
         valueTag,
@@ -99,7 +99,7 @@ export default function useQuestions(
 
   const sortByPopularity = params.sorted !== "false";
   const fetchQuestions = async () => {
-    const { data } = await robotoff.questions(
+    const data = await robotoff.questions(
       {
         insightType: params.insightType,
         valueTag: params.valueTag,

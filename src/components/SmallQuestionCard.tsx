@@ -37,7 +37,7 @@ export default function SmallQuestionCard({
     queryKey: ["question-count", filterState],
     enabled: providedQuestionNumber === undefined,
     queryFn: async () => {
-      const { data } = await robotoff.questions(
+      const data = await robotoff.questions(
         { ...filterState, with_image: true },
         1,
         1,

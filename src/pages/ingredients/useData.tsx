@@ -140,7 +140,7 @@ export default function useData(countryCode: string) {
     queryKey: ["ingredient-products", countryCode],
     initialPageParam: 0,
     queryFn: async ({ pageParam, signal }) => {
-      const { data } = await off.searchProducts<IngredientApiProduct>({
+      const data = await off.searchProducts<IngredientApiProduct>({
         page: pageParam,
         pageSize: 25,
         filters: imagesToRead,

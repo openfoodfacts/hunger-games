@@ -116,7 +116,6 @@ Go to `src/pages/logosValidator/dashboardDefinition.ts`. You have two objects to
 
 - React
 - [MUI](mui.com) (UI library based on material design)
-- Axios (HTTP calls)
 
 ### APIs we depend on
 

@@ -15,7 +15,6 @@
     "@openfoodfacts/openfoodfacts-webcomponents": "^1.18.2",
     "@reactour/tour": "^3.8.0",
     "@tanstack/react-query": "^5.104.0",
-    "axios": "^1.20.0",
     "i18next": "^26.4.2",
     "react": "^19.3.0",
     "react-dom": "^19.3.0",
@@ -46,12 +45,14 @@
     "typescript": "^6.0.3",
     "typescript-eslint": "^8.70.1",
     "vite": "^8.3.3",
-    "vite-plugin-static-copy": "^4.1.1"
+    "vite-plugin-static-copy": "^4.1.1",
+    "vitest": "^5.0.5"
   },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
+    "test": "vitest run",
     "prettier": "prettier --write . --log-level warn",
     "countries": "node update-countries.js",
     "nutriments": "node update-nutriments.js",

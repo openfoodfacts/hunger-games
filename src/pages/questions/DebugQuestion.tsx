@@ -34,7 +34,7 @@ const fetchData = (insightId?: string) => async () => {
 
   if (source_image && logo_id && !bounding_box) {
     const logoData = await robotoff.getLogosImages([logo_id]);
-    bounding_box = logoData?.data?.logos?.[0]?.bounding_box;
+    bounding_box = logoData?.logos?.[0]?.bounding_box;
   }
 
   return { source_image, bounding_box, data: response.data };

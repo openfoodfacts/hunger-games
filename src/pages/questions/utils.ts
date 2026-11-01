@@ -106,6 +106,6 @@ export const getValueTagExamplesURL = (question: QuestionInterface | null) => {
 };
 
 export const getNbOfQuestionForValue = async (filterState: FilterState) => {
-  const { data: dataFetched } = await robotoff.questions(filterState, 1);
+  const dataFetched = await robotoff.questions(filterState, 1);
   return dataFetched.count;
 };
