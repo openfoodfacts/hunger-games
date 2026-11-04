@@ -90,7 +90,7 @@
     "no_questions_remaining": "Nu au mai rămas întrebări",
     "similar_questions": "Întrebări similare",
     "no_similar_questions": "Nicio întrebare similară",
-    "remaining_questions_count_one": "1 question remaining",
+    "remaining_questions_count_one": "1 întrebare rămasă",
     "remaining_questions_count_other": "{{count}} Întrebări",
     "an_error_occurred": "A apărut o eroare. Vă rugăm să reîncărcați pagina, să încercați mai târziu sau să contactați echipa.",
     "countries": "Țări",
@@ -131,7 +131,7 @@
       },
       "placeholders": {
         "value": "Valoare (Fanta, en:organic,...)",
-        "country": "France, Germany, Japan, ...",
+        "country": "Franța, Germania, Japonia, ...",
         "brand": "Auchan, Danone, Herta,...",
         "campaign": "Campanii de adnotare",
         "predictor": "detector-universal-de-logo, expresie-regulată, ..."
@@ -232,7 +232,7 @@
       "categories": "Categorii",
       "logo_count_one": "{{count}} logo",
       "logo_count_other": "{{count}} logos",
-      "more_info": "More info",
+      "more_info": "Mai multe informații",
       "questions": "Întrebări",
       "search": "Caută"
     },
@@ -280,8 +280,8 @@
       "title": "Căutare logo",
       "description": "Selectează un logo pe care vrei să-l cauți și hai să îl prindem pe toate. Pentru fiecare logo pe care îl adnotați, îi vom prelua pe vecini astfel încât s-ar putea să nu se oprească niciodată să adnoteze. (Press Shift pentru a selecta raza de sigle)",
       "ref_logos": "Sigle de referință (logo deja adnotat cu această valoare)",
-      "annotation_count_one": "Already {{formattedCount}} annotation. You can come back to this logo in a few days if you don't find any matching logos.",
-      "annotation_count_other": "Already {{formattedCount}} annotations. You can come back to this logo in a few days if you don't find any matching logos.",
+      "annotation_count_one": "Există deja adnotări{{formattedCount}}. Dacă nu găsești niciun logo potrivit, poți reveni peste câteva zile.",
+      "annotation_count_other": "Există deja {{formattedCount}} adnotări. Dacă nu găsești logo-uri potrivite, poți reveni peste câteva zile.",
       "remaining": "Rămâne de adnotat",
       "select_all": "Selectați-le pe toate",
       "unselect_all": "Deselectați toate"
