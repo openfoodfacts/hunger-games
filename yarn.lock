@@ -1079,9 +1079,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@openfoodfacts/openfoodfacts-webcomponents@npm:^1.18.2":
-  version: 1.18.2
-  resolution: "@openfoodfacts/openfoodfacts-webcomponents@npm:1.18.2"
+"@openfoodfacts/openfoodfacts-webcomponents@npm:^1.18.3":
+  version: 1.18.3
+  resolution: "@openfoodfacts/openfoodfacts-webcomponents@npm:1.18.3"
   dependencies:
     "@lit-labs/signals": "npm:^0.3.0"
     "@lit/localize": "npm:^0.12.2"
@@ -1093,7 +1093,7 @@ __metadata:
     lit: "npm:^3.3.0"
     lit-html: "npm:^3.3.0"
     marked: "npm:^18.0.3"
-  checksum: 10/935a4b16afb43ad307178cfb164b181602c907ec3e2c79138312bff480da112a1bc896f93a9d61a58c3209363baeb01d46f21e6a7cea06bc5550af6d1edaca86
+  checksum: 10/734e6db5c839cbe88cdc3436b00a10e982ffbdc0b4a43326aa7e170faf9a45bd718552913dbb81f60a7dc42323572c3bd8cb98a1c95b83032a075e14c1dda708
   languageName: node
   linkType: hard
 
@@ -3413,7 +3413,7 @@ __metadata:
     "@mui/system": "npm:^9.4.0"
     "@mui/x-data-grid": "npm:^9.14.0"
     "@openfoodfacts/openfoodfacts-nodejs": "npm:2.0.0-alpha.35"
-    "@openfoodfacts/openfoodfacts-webcomponents": "npm:^1.18.2"
+    "@openfoodfacts/openfoodfacts-webcomponents": "npm:^1.18.3"
     "@reactour/tour": "npm:^3.8.0"
     "@tanstack/react-query": "npm:^5.104.0"
     "@types/lodash-es": "npm:^4"
