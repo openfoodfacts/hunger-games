@@ -2,7 +2,7 @@
   "home": {
     "game_selector": {
       "title": "Hvilket spil vil du gerne spille?",
-      "external_link": "External link",
+      "external_link": "Eksternt link",
       "cards": {
         "questions": {
           "title": "Spørgsmål",
@@ -17,8 +17,8 @@
           "description": "Anmærk spørgsmålene med den højeste værdi"
         },
         "create_products": {
-          "title": "Create missing products",
-          "description": "Add products that are not in the database yet, over on Open Prices"
+          "title": "Opret manglende produkter",
+          "description": "Tilføj produkter, der endnu ikke er i databasen, på Open Prices"
         }
       }
     },
@@ -29,12 +29,12 @@
       "contribution_details": "Læs, hvorfor individuelle bidrag er vigtige"
     },
     "saved_filters": "Gemte filtre",
-    "saved_filters_delete": "Delete saved filter",
-    "saved_filters_delete_title": "Delete saved filter?",
-    "saved_filters_delete_description": "This saved filter will be removed from this device.",
+    "saved_filters_delete": "Slet gemt filter",
+    "saved_filters_delete_title": "Slet gemt filter?",
+    "saved_filters_delete_description": "Dette gemte filter vil blive fjernet fra denne enhed.",
     "saved_filters_delete_confirm": "Slet",
-    "saved_filters_pending": "{{count}} products waiting",
-    "saved_filters_pending_unknown": "Products waiting",
+    "saved_filters_pending": "{{count}} produkter venter",
+    "saved_filters_pending_unknown": "Produkter venter",
     "contribution_modal": {
       "title": "Individuelle bidrag gør en forskel",
       "information": "Hunger Games er et forsøg på at drage bedst mulig fordel af resultaterne fra OCR og kunstig intelligens. Når Hunger Games fra Open Food Facts bruges, forbedres hele databasen, hvilket hjælper fællesskabet med at træffe bedre fødevarevalg. Individuelle anmærkninger indsamles mhp. at gøre Open Food Facts mere præcis og effektiv.",
@@ -42,11 +42,11 @@
     },
     "statistics": {
       "title": "{{userName}}-statistik:",
-      "title_without_name": "Your statistics",
+      "title_without_name": "Dine statistikker",
       "empty_state": {
-        "title": "No contributions yet",
-        "description": "Your contribution statistics will appear here once you start helping improve Open Food Facts.",
-        "action": "Start contributing"
+        "title": "Ingen bidrag endnu",
+        "description": "Dine bidragsstatistikker vil blive vist her, når du begynder at hjælpe med at forbedre Open Food Facts.",
+        "action": "Begynd at bidrage"
       },
       "editorCount": {
         "title": "Redaktør",
@@ -131,7 +131,7 @@
       },
       "placeholders": {
         "value": "Værdi (Fanta, da:økologisk,...)",
-        "country": "France, Germany, Japan, ...",
+        "country": "Frankrig, Tyskland, Japan, ...",
         "brand": "Auchan, Danone, Herta, …",
         "campaign": "Anmærkningskampagner",
         "predictor": "universel-logo-detektor, regex, ..."
@@ -155,7 +155,7 @@
         "share": "Del"
       },
       "share": {
-        "title": "Hunger Games filtered questions",
+        "title": "Hunger Games-filtrerede spørgsmål",
         "copied": "Link kopieret"
       }
     },
@@ -232,7 +232,7 @@
       "categories": "Kategorier",
       "logo_count_one": "{{count}} logo",
       "logo_count_other": "{{count}} logos",
-      "more_info": "More info",
+      "more_info": "Mere info",
       "questions": "Spørgsmål",
       "search": "Søg"
     },
@@ -280,8 +280,8 @@
       "title": "Logosøgning",
       "description": "Vælg et logo, du leder efter, og kom i gang med at fange dem alle. For hvert logo, du annoterer, henter vi dets naboer, så du aldrig stopper med at annotere. (Tryk på Shift for at vælge en række logoer)",
       "ref_logos": "Referencelogoer (logoer, der allerede er annoteret med denne værdi)",
-      "annotation_count_one": "Already {{formattedCount}} annotation. You can come back to this logo in a few days if you don't find any matching logos.",
-      "annotation_count_other": "Already {{formattedCount}} annotations. You can come back to this logo in a few days if you don't find any matching logos.",
+      "annotation_count_one": "Allerede {{formattedCount}} annotation. Du kan vende tilbage til dette logo om et par dage, hvis du ikke finder nogen matchende logoer.",
+      "annotation_count_other": "Allerede {{formattedCount}} annoteringer. Du kan vende tilbage til dette logo om et par dage, hvis du ikke finder nogen matchende logoer.",
       "remaining": "Tilbage at annotere",
       "select_all": "Vælg Alle",
       "unselect_all": "Fravælg Alle"
