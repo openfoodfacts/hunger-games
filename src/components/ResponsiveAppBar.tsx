@@ -201,7 +201,7 @@ const ResponsiveAppBar = () => {
     id: string;
     anchor: HTMLElement;
   } | null>(null);
-  const [, setIsTourOpen] = React.useState(false);
+  const [isTourOpen, setIsTourOpen] = React.useState(false);
   const [country, setCountry] = useCountry();
   const { isLoggedIn, userName, refresh } = React.useContext(LoginContext);
   const { devMode, visiblePages } = React.useContext(DevModeContext);
@@ -649,7 +649,7 @@ const ResponsiveAppBar = () => {
           </Box>
         </Toolbar>
       </Container>
-      <WelcomeTour setIsOpen={setIsTourOpen} />
+      <WelcomeTour isOpen={isTourOpen} setIsOpen={setIsTourOpen} />
     </AppBar>
   );
 };
