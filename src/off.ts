@@ -265,6 +265,28 @@ class OffService {
       },
     );
   }
+
+  async unselectImage({ code, id }: { code: string; id: string }) {
+    const params = new URLSearchParams();
+    params.append("code", code);
+    params.append("id", id);
+    const response = await axios.post<{
+      status?: string;
+      status_code?: number;
+      imagefield?: string;
+      error?: string;
+    }>(`${OFF_URL}/cgi/product_image_unselect.pl`, params, {
+      withCredentials: true,
+    });
+    if (
+      response.data.status_code !== undefined &&
+      response.data.status_code !== 0 &&
+      response.data.error
+    ) {
+      throw new Error(response.data.error);
+    }
+    return response.data;
+  }
 }
 
 const offService = new OffService();
