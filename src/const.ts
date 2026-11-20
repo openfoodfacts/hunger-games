@@ -21,6 +21,8 @@ export const WRONG_INSIGHT = 0 as const;
 export const SKIPPED_INSIGHT = -1 as const;
 export const NUTRI_PATROL_URL =
   "https://nutripatrol.openfoodfacts.org/flag/image/";
+export const NUTRI_PATROL_PRODUCT_URL =
+  "https://nutripatrol.openfoodfacts.org/flag/product/";
 
 // insight types that do not have an associated value
 export const TYPE_WITHOUT_VALUE = ["packager_code", "qr_code", "no_logo"];
