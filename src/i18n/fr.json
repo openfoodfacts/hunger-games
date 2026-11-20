@@ -84,6 +84,12 @@
       "contribution_details": "Découvrez pourquoi votre contribution est importante"
     },
     "saved_filters": "Filtres enregistrés",
+    "saved_filters_delete": "Supprimer le filtre enregistré",
+    "saved_filters_delete_title": "Supprimer le filtre enregistré ?",
+    "saved_filters_delete_description": "Ce filtre enregistré sera supprimé de cet appareil.",
+    "saved_filters_delete_confirm": "Supprimer",
+    "saved_filters_pending": "{{count}} produits en attente",
+    "saved_filters_pending_unknown": "Produits en attente",
     "contribution_modal": {
       "title": "Votre contribution compte",
       "information": "Le jeu Hunger Games est un effort visant à tirer parti des résultats de notre OCR et de notre intelligence artificielle. Lorsque vous utilisez Hunger Games par Open Food Facts, vous améliorez toute notre base de données ce qui aide la communauté à faire de meilleurs choix alimentaires. Nous recueillons vos annotations et les utilisons pour rendre Open Food Facts plus précis et plus efficace.",
@@ -91,6 +97,12 @@
     },
     "statistics": {
       "title": "Statistiques de {{userName}}:",
+      "title_without_name": "Vos statistiques",
+      "empty_state": {
+        "title": "Aucune contribution pour le moment",
+        "description": "Vos statistiques de contribution apparaîtront ici une fois que vous aurez commencé à aider à améliorer Open Food Facts.",
+        "action": "Commencer à contribuer"
+      },
       "editorCount": {
         "title": "Éditeur",
         "description": "Nombre d'éditions réalisées"
@@ -174,7 +186,7 @@
       },
       "placeholders": {
         "value": "Valeur (Fanta, en:organic,...)",
-        "country": "France, Germany, Japan, ...",
+        "country": "France, Allemagne, Japon, ...",
         "brand": "Auchan, Danone, Herta...",
         "campaign": "Campagnes d'annotations",
         "predictor": "détecteur de logo universel, expression régulière, ..."
@@ -194,7 +206,12 @@
       "actions": {
         "edit": "Modifier les filtres",
         "cancel": "Annuler",
-        "apply": "Appliquer"
+        "apply": "Appliquer",
+        "share": "Partager"
+      },
+      "share": {
+        "title": "Questions filtrées sur Hunger Games",
+        "copied": "Lien copié"
       }
     },
     "other_questions": "Autres questions",
@@ -323,6 +340,8 @@
       "title": "Recherche de Logo",
       "description": "Sélectionnez un logo que vous voulez rechercher et attrapons-les tous. Pour chaque logo que vous annotez, nous récupérerons ses voisins de telle sorte que vous ne cesserez jamais d'annoter. (Appuyez sur Maj pour sélectionner la plage de logos)",
       "ref_logos": "Logos de référence (logo déjà annoté avec cette valeur)",
+      "annotation_count_one": "Déjà {{formattedCount}} annotation. Vous pourrez revenir sur ce logo dans quelques jours si vous ne trouvez aucun logo correspondant.",
+      "annotation_count_other": "Déjà {{formattedCount}} annotations. Vous pourrez revenir sur ce logo dans quelques jours si vous ne trouvez aucun logo correspondant.",
       "remaining": "Reste à annoter",
       "select_all": "Sélectionner tout",
       "unselect_all": "Désélectionner tout"
@@ -330,7 +349,7 @@
   },
   "settings": {
     "settings": "Paramètres",
-    "language": "Langue",
+    "language": "Langues",
     "save": "Enregistrer",
     "reportIssue": "Vous avez trouvé un bug ? Merci de nous le faire savoir.",
     "dev_mode_title": "Pour obtenir plus d'options, activez le mode développeur",
@@ -366,7 +385,7 @@
         "title": "Bienvenue sur Hunger Games",
         "text1": "Hunger Games est une collection de mini-jeux qui aident à contribuer à Open Food Facts de plusieurs façons. Vous pouvez jouer à nos jeux vraiment excitants de n'importe où. Voici une visite guidée de l'ensemble du site Web qui vous permettra de commencer.",
         "text2": "Assurez-vous de vous connecter au site Web Open Food Facts pour être crédité de vos contributions. Si vous faites une erreur, merci de prendre le temps de la corriger en vous rendant sur le site.",
-        "text3": "En cas de doute sur les jeux, cliquez sur l'icône de point d'interrogation en haut à droite de la page, et vous pouvez aussi nous joindre sur slack sur la chaîne #hunger-games"
+        "text3": "En cas de doute sur les jeux, cliquez sur l'icône de point d'interrogation en haut à droite de la page, et vous pouvez aussi nous joindre sur Slack sur la chaîne #hunger-games"
       },
       "page2": {
         "title": "Jeu des questions",
@@ -382,11 +401,11 @@
         "text2": "Comme le montre l'exemple, une fois que vous avez sélectionné tous les logos similaires, saisissez simplement leur valeur et sélectionnez s'il s'agit d'une marque, d'un label ou autre chose. Ce n'est pas plus compliqué."
       },
       "page4": {
-        "title": "Jeu de questions sur l'Green-Score",
+        "title": "Jeu de questions sur le Green-Score",
         "text1": "Aidez-nous à terminer les questions restantes dans les labels les plus prioritaires !",
-        "text2": "Ces cartes sont liées à des labels utilisés dans le calcul de l'Green-score.",
-        "text3": "<strong>Qu'est-ce que l'Green-Score ?</strong>",
-        "text4": "Green-Score capture l'empreinte environnementale totale, ce qui permet aux consommateurs de comparer plus facilement les produits et de décider lequel est le meilleur pour l'environnement."
+        "text2": "Ces cartes sont liées à des labels utilisés dans le calcul du Green-score.",
+        "text3": "<strong>Qu'est-ce que le Green-Score ?</strong>",
+        "text4": "Le Green-Score capture l'empreinte environnementale totale, ce qui permet aux consommateurs de comparer plus facilement les produits et de décider lequel est le meilleur pour l'environnement."
       },
       "page5": {
         "title": "Paramètres",
@@ -396,7 +415,7 @@
       "page6": {
         "title": "Tutoriel",
         "text1": "Vous êtes coincé quelque part ? Envie de refaire le tour ?",
-        "text2": "Cliquez simplement sur le point d'interrogation et recommencez l'introduction!"
+        "text2": "Cliquez simplement sur le point d'interrogation et recommencez l'introduction !"
       }
     },
     "logos": {

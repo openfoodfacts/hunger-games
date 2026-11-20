@@ -2,6 +2,7 @@
   "home": {
     "game_selector": {
       "title": "איזה משחק בא לך לשחק?",
+      "external_link": "קישור חיצוני",
       "cards": {
         "questions": {
           "title": "שאלות",
@@ -28,6 +29,12 @@
       "contribution_details": "הסבר על חשיבות התרומה שלך"
     },
     "saved_filters": "מסננים שמורים",
+    "saved_filters_delete": "מחיקת מסנן שמור",
+    "saved_filters_delete_title": "למחוק את המסנן השמור?",
+    "saved_filters_delete_description": "המסנן השמור הזה יוסר מהמכשיר הזה.",
+    "saved_filters_delete_confirm": "מחיקה",
+    "saved_filters_pending": "{{count}} מוצרים ממתינים",
+    "saved_filters_pending_unknown": "מוצרים ממתינים",
     "contribution_modal": {
       "title": "התרומות שלך מביאות לשינוי",
       "information": "משחקי הרעב הם מאמץ למנף את תוצאות הסריקה האופטית והבינה המלאכותית שלנו. שימוש במשחקי הרעב של Open Food Facts, תורמים בשיפור מסד הנתונים שלנו, מה שעוזר לקהילה לבחור טוב יותר באוכל. אנו אוספים את התיוגים שלך ומשתמשים בהם כדי להפוך את Open Food Facts למדויק ויעיל יותר.",
@@ -35,6 +42,12 @@
     },
     "statistics": {
       "title": "סטטיסטיקה על {{userName}}:",
+      "title_without_name": "הסטטיסטיקה שלך",
+      "empty_state": {
+        "title": "אין תרומות עדיין",
+        "description": "סטטיסטיקת התרומות שלך תופיע כאן לאחר הגשת סיוע לשיפור Open Food Facts.",
+        "action": "התחלת תרומה"
+      },
       "editorCount": {
         "title": "עורך",
         "description": "מספר העריכות שבוצעו"
@@ -138,7 +151,12 @@
       "actions": {
         "edit": "עריכת מסננים",
         "cancel": "ביטול",
-        "apply": "החלה"
+        "apply": "החלה",
+        "share": "שיתוף"
+      },
+      "share": {
+        "title": "שאלות מסוננות של משחקי הרעב",
+        "copied": "הקישור הועתק"
       }
     },
     "other_questions": "שאלות אחרות",
@@ -172,7 +190,7 @@
     "tour": "הצגת סיור",
     "logged_in_user": "נכנסת בשם {{userName}}",
     "log_in": "לחיצה תכניס אותך למערכת",
-    "moderation": "מְתִינוּת",
+    "moderation": "פיקוח",
     "ingredients": "רכיבים"
   },
   "insights": {
@@ -207,6 +225,17 @@
     "view_crops_for_this_product": "סימון לוגואים של מוצרים"
   },
   "logos": {
+    "dashboard": {
+      "title": "לוח בקרה ללוגואים",
+      "description": "אפשר לחקור קטגוריות של לוגואים ולסייע בשיפור נתוני מוצרים.",
+      "category": "קטגוריה",
+      "categories": "קטגוריות",
+      "logo_count_one": "לוגו",
+      "logo_count_other": "{{count}} לוגואים",
+      "more_info": "פרטים נוספים",
+      "questions": "שאלות",
+      "search": "חיפוש"
+    },
     "annotation": "הערה: ",
     "annotations": "הערות על הלוגו",
     "task_description": "יש לבחור את כל הלוגואים הזהים לחלוטין ולתת להם שם כמו „en:EU Organic” וסוג כמו „label” (תווית).",
@@ -251,6 +280,8 @@
       "title": "חיפוש לוגואים",
       "description": "נא לבחור לוגו לחיפוש כדי שנוכל לצאת לתפוס את כולם. על כל לוגו שיתויג נמשוך את השכנים שלו כדי לא לאפשר לך להפסיק אף פעם. (לחיצה על Shift מאפשרת בחירת טווח של לוגואים)",
       "ref_logos": "לוגואים לסימוכין (לוגו שכבר תויג עם הערך הזה)",
+      "annotation_count_one": "Already {{formattedCount}} annotation. You can come back to this logo in a few days if you don't find any matching logos.",
+      "annotation_count_other": "Already {{formattedCount}} annotations. You can come back to this logo in a few days if you don't find any matching logos.",
       "remaining": "נותרו לתיוג",
       "select_all": "בחירה בהכול",
       "unselect_all": "ביטול בחירה"
