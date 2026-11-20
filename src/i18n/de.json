@@ -2,6 +2,7 @@
   "home": {
     "game_selector": {
       "title": "Welches Spiel würden Sie gerne spielen?",
+      "external_link": "Externer Link",
       "cards": {
         "questions": {
           "title": "Fragen",
@@ -16,8 +17,8 @@
           "description": "Die Fragen mit dem höchsten Wert mit Anmerkungen versehen"
         },
         "create_products": {
-          "title": "Create missing products",
-          "description": "Add products that are not in the database yet, over on Open Prices"
+          "title": "Erstelle fehlende Produkte",
+          "description": "Füge Produkte, die noch nicht in der Datenbank sind, über Open Prices hinzu"
         }
       }
     },
@@ -28,6 +29,12 @@
       "contribution_details": "Erfahren Sie, warum Ihr Beitrag wichtig ist"
     },
     "saved_filters": "Gespeicherte Filter",
+    "saved_filters_delete": "Lösche gespeicherte Filter",
+    "saved_filters_delete_title": "Gespeicherte Filter löschen?",
+    "saved_filters_delete_description": "Dieser gespeicherte Filter wird von diesem Gerät entfernt werden.",
+    "saved_filters_delete_confirm": "Löschen",
+    "saved_filters_pending": "{{count}} Produkte warten",
+    "saved_filters_pending_unknown": "Produkte warten",
     "contribution_modal": {
       "title": "Ihr Beitrag ist wichtig",
       "information": "Hunger Games ist ein Versuch, die Ergebnisse unserer OCR und künstlichen Intelligenz zu nutzen. Wenn Sie die Hunger Games von Open Food Facts nutzen, verbessern Sie unsere gesamte Datenbank, die der Gemeinschaft hilft, bessere Lebensmittelentscheidungen zu treffen. Wir nehmen Ihre Anmerkungen auf und nutzen sie, um Open Food Facts noch genauer und effizienter zu machen.",
@@ -35,6 +42,12 @@
     },
     "statistics": {
       "title": "{{userName}} Statistiken:",
+      "title_without_name": "Deine Statistik",
+      "empty_state": {
+        "title": "Noch keine Beiträge",
+        "description": "Ihre Beitragsstatistik wird hier angezeigt, sobald Sie beginnen, Open Food Facts zu verbessern.",
+        "action": "Beginne mitzuwirken"
+      },
       "editorCount": {
         "title": "Bearbeiter",
         "description": "Anzahl der durchgeführten Bearbeitungen"
@@ -54,8 +67,8 @@
     "loading": "Wird geladen"
   },
   "image_viewer": {
-    "compressed": "Compressed",
-    "load_original": "Load original"
+    "compressed": "Archive",
+    "load_original": "Original laden"
   },
   "questions": {
     "category": "Kategorie",
@@ -75,10 +88,10 @@
     "skip": "Überspringen",
     "yes": "Ja",
     "no_questions_remaining": "Keine offenen Fragen",
-    "similar_questions": "Similar questions",
-    "no_similar_questions": "No similar questions",
-    "remaining_questions_count_one": "1 question remaining",
-    "remaining_questions_count_other": "{{count}} questions remaining",
+    "similar_questions": "Ähnliche Fragen",
+    "no_similar_questions": "Verschiedene Fragen",
+    "remaining_questions_count_one": "1 Frage verbleibend",
+    "remaining_questions_count_other": "{{count}} verbleibende Fragen",
     "an_error_occurred": "Ein Fehler ist aufgetreten. Bitte laden Sie die Seite neu, versuchen Sie es später erneut oder wenden Sie sich an das Team.",
     "countries": "Länder",
     "view": "Anzeigen",
@@ -91,8 +104,8 @@
     "last_annotations": "Letzte Anmerkungen",
     "remaining_annotations": "Verbleibende Fragen",
     "annotated_annotations": "Kommentiert",
-    "no_images": "No images available",
-    "no_additional_info": "No additional information",
+    "no_images": "Keine Bilder verfügbar",
+    "no_additional_info": "Keine weiteren Informationen",
     "add_missing_info": "Hinzufügen",
     "filters": {
       "active_filter_number": "+{{count}} Filter",
@@ -118,7 +131,7 @@
       },
       "placeholders": {
         "value": "Wert (Fanta, de: biologisch, ...)",
-        "country": "France, Germany, Japan, ...",
+        "country": "Frankreich, Deutschland, Japan, ...",
         "brand": "Rewe, Danone, Herta, ...",
         "campaign": "Kampagnen kommentieren",
         "predictor": "Universal-Logo-Detektor, regulärer Ausdruck, ..."
@@ -138,7 +151,12 @@
       "actions": {
         "edit": "Filter bearbeiten",
         "cancel": "Abbrechen",
-        "apply": "Übernehmen"
+        "apply": "Übernehmen",
+        "share": "Teilen"
+      },
+      "share": {
+        "title": "Hunger Games gefilterte Fragen",
+        "copied": "Link kopiert"
       }
     },
     "other_questions": "Weitere Fragen",
@@ -207,6 +225,17 @@
     "view_crops_for_this_product": "Produktlogos mit Anmerkungen versehen"
   },
   "logos": {
+    "dashboard": {
+      "title": "Logo-Übersicht",
+      "description": "Entdecke Logo-Kategorien und verbessere Produktdaten.",
+      "category": "Kategorie",
+      "categories": "Kategorien",
+      "logo_count_one": "{{count}} Logo",
+      "logo_count_other": "{{count}} Logos",
+      "more_info": "Mehr erfahren",
+      "questions": "Fragen",
+      "search": "Suchen"
+    },
     "annotation": "Anmerkung: ",
     "annotations": "Anmerkungen zum Logo",
     "task_description": "Wählen Sie alle Logos aus, die genau gleich sind, und geben Sie ihnen einen Namen wie „en:EU Bio” und einen Typ wie „Etikett”.",
@@ -251,6 +280,8 @@
       "title": "Logos suchen",
       "description": "Wählen Sie ein Logo aus, nach dem Sie suchen möchten, und los geht's, um sie alle zu erfassen. Für jedes Logo, das Sie mit Anmerkungen versehen, werden wir seine Nachbarn abrufen, so dass Sie vielleicht nie aufhören, Anmerkungen zu machen. (Drücken Sie die Umschalttaste, um einen Bereich von Logos auszuwählen)",
       "ref_logos": "Referenzlogos (Logo bereits mit diesem Wert vermerkt)",
+      "annotation_count_one": "Es gibt bereits {{formattedCount}} Anmerkung. Sie können in ein paar Tagen zu diesem Logo zurückkehren, falls Sie keine passenden Logos finden.",
+      "annotation_count_other": "Es gibt bereits {{formattedCount}} Anmerkungen. Sie können in ein paar Tagen zu diesem Logo zurückkehren, falls Sie keine passenden Logos finden.",
       "remaining": "Verbleibend zu kommentieren",
       "select_all": "Alle auswählen",
       "unselect_all": "Alles abwählen"
