@@ -359,7 +359,6 @@ const ResponsiveAppBar = () => {
               aria-haspopup="true"
               onClick={(event) => setAnchorElNav(event.currentTarget)}
               color="inherit"
-              data-welcome-tour="games"
             >
               <MenuIcon />
             </IconButton>
