@@ -330,6 +330,7 @@ const ResponsiveAppBar = () => {
   return (
     <AppBar
       position="static"
+      data-welcome-tour="app_bar"
       sx={(appTheme) => ({
         backgroundColor: appTheme.palette.cafeCreme.main,
         color: appTheme.palette.cafeCreme.contrastText,
