@@ -99,7 +99,8 @@ const WelcomeTourController = ({
 const Welcome = ({ isOpen, setIsOpen }: WelcomeProps) => {
   const { t } = useTranslation();
   const theme = useTheme();
-  const isDesktop = useMediaQuery(theme.breakpoints.up("md"));
+  // Same breakpoint as the full menu in ResponsiveAppBar, so the tour only targets visible items
+  const isDesktop = useMediaQuery(theme.breakpoints.up("lg"));
   const steps = React.useMemo(
     () => getSteps({ t, withSelector: isDesktop }),
     [t, isDesktop],
