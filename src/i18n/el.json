@@ -2,6 +2,7 @@
   "home": {
     "game_selector": {
       "title": "Ποιο παιχνίδι θα θέλατε να παίξετε;",
+      "external_link": "Εξωτερικός σύνδεσμος",
       "cards": {
         "questions": {
           "title": "Ερωτήσεις",
@@ -16,8 +17,8 @@
           "description": "Σημειώστε τις ερωτήσεις με την υψηλότερη αξία"
         },
         "create_products": {
-          "title": "Create missing products",
-          "description": "Add products that are not in the database yet, over on Open Prices"
+          "title": "Προσθήκη προϊόντων που λείπουν",
+          "description": "Προσθέστε προϊόντα που δεν υπάρχουν ακόμη στην βάση δεδομένων, μέσω του Open Prices"
         }
       }
     },
@@ -28,6 +29,12 @@
       "contribution_details": "Μάθετε γιατί η συνεισφορά σας είναι σημαντική"
     },
     "saved_filters": "Αποθηκευμένα Φίλτρα",
+    "saved_filters_delete": "Διαγραφή αποθηκευμένου φίλτρου",
+    "saved_filters_delete_title": "Διαγραφή αποθηκευμένου φίλτρου;",
+    "saved_filters_delete_description": "Αυτό το αποθηκευμένο φίλτρο θα αφαιρεθεί από την συσκευή.",
+    "saved_filters_delete_confirm": "Διαγραφή",
+    "saved_filters_pending": "{{count}} προϊόντα σε αναμονή",
+    "saved_filters_pending_unknown": "Προϊόντα σε αναμονή",
     "contribution_modal": {
       "title": "Η συνεισφορά σας έχει σημασία",
       "information": "Οι Αγώνες Πείνας είναι μια προσπάθεια αξιοποίησης των αποτελεσμάτων του OCR και της τεχνητής νοημοσύνης. Όταν χρησιμοποιείτε τους Αγώνες Πείνας από το Open Food Facts, βελτιώνετε ολόκληρη τη βάση δεδομένων μας, η οποία βοηθά την κοινότητα να κάνει καλύτερες επιλογές τροφίμων. Συγκεντρώνουμε τους σχολιασμούς σας και τους χρησιμοποιούμε για να κάνουμε τα Open Food Facts πιο ακριβή και αποτελεσματικά.",
@@ -35,6 +42,12 @@
     },
     "statistics": {
       "title": "Στατιστικά {{userName}}:",
+      "title_without_name": "Τα στατιστικά σας",
+      "empty_state": {
+        "title": "Καμία συνεισφορά ακόμη",
+        "description": "Οι στατιστικές συνεισφορές σας θα εμφανιστούν εδώ μόλις αρχίσετε να βοηθάτε στην βελτίωση του Open Food Facts.",
+        "action": "Ξεκινήστε να συνεισφέρετε"
+      },
       "editorCount": {
         "title": "Συντάκτης",
         "description": "Αριθμός εκδόσεων που έγιναν"
@@ -77,8 +90,8 @@
     "no_questions_remaining": "Δεν απομένουν ερωτήσεις",
     "similar_questions": "Παρόμοιες ερωτήσεις",
     "no_similar_questions": "Δεν υπάρχουν παρόμοιες ερωτήσεις",
-    "remaining_questions_count_one": "1 question remaining",
-    "remaining_questions_count_other": "{{count}} questions remaining",
+    "remaining_questions_count_one": "1 ερώτηση ακόμη",
+    "remaining_questions_count_other": "{{count}} ερωτήσεις ακόμα",
     "an_error_occurred": "Παρουσιάστηκε σφάλμα. Παρακαλώ ανανεώστε, δοκιμάστε αργότερα ή επικοινωνήστε με την ομάδα.",
     "countries": "Χώρες",
     "view": "Προβολή",
@@ -118,7 +131,7 @@
       },
       "placeholders": {
         "value": "Τιμή (Fanta, ελ:οργανική,...)",
-        "country": "France, Germany, Japan, ...",
+        "country": "Γαλλία, Γερμανία, Ιαπωνία, ...",
         "brand": "Auchan, Danone, Herta, ...",
         "campaign": "Καμπάνιες σχολιασμού",
         "predictor": "ανιχνευτής καθολικού λογότυπου, regex, ..."
@@ -138,7 +151,12 @@
       "actions": {
         "edit": "Επεξεργασία Φίλτρων",
         "cancel": "Ακύρωση",
-        "apply": "Εφαρμογή"
+        "apply": "Εφαρμογή",
+        "share": "Κοινοποίηση"
+      },
+      "share": {
+        "title": "Hunger Games filtered questions",
+        "copied": "Ο σύνδεσμος αντιγράφηκε"
       }
     },
     "other_questions": "Άλλες ερωτήσεις",
@@ -207,6 +225,17 @@
     "view_crops_for_this_product": "Σχολιασμός λογότυπων προϊόντων"
   },
   "logos": {
+    "dashboard": {
+      "title": "Πίνακας λογότυπων",
+      "description": "Εξερευνήστε κατηγορίες λογότυπων και βοηθήστε στη βελτίωση των δεδομένων προϊόντων.",
+      "category": "Κατηγορία",
+      "categories": "Κατηγορίες",
+      "logo_count_one": "{{count}} λογότυπο",
+      "logo_count_other": "{{count}} λογότυπα",
+      "more_info": "Περισσότερες πληροφορίες",
+      "questions": "Ερωτήσεις",
+      "search": "Αναζήτηση"
+    },
     "annotation": "Σχολιασμός: ",
     "annotations": "Σχολιασμοί λογοτύπου",
     "task_description": "Επιλέξτε όλα τα λογότυπα που είναι ακριβώς τα ίδια και δώστε τους ένα όνομα όπως \"en:EU Organic\" και έναν τύπο όπως \"ετικέτα\".",
@@ -251,6 +280,8 @@
       "title": "Αναζήτηση λογότυπων",
       "description": "Επιλέξτε ένα λογότυπο που θέλετε να αναζητήσετε και πάμε να τα πιάσουμε όλα. Για κάθε λογότυπο που σχολιάζετε, θα φέρουμε τους γείτονές του έτσι ώστε να μην σταματήσετε ποτέ να σχολιάζετε. (Πατήστε Shift για να επιλέξετε εύρος λογότυπων)",
       "ref_logos": "Λογότυπα αναφοράς (το λογότυπο έχει ήδη σχολιαστεί με αυτήν την τιμή)",
+      "annotation_count_one": "Ήδη υπάρχει {{formattedCount}} σημείωση. Μπορείτε να επιστρέψετε σε αυτό το λογότυπο σε λίγες ημέρες, αν δεν βρείτε κανένα αντίστοιχο λογότυπο.",
+      "annotation_count_other": "Ήδη υπάρχουν {{formattedCount}} σημειώσεις. Μπορείτε να επιστρέψετε σε αυτό το λογότυπο σε λίγες ημέρες, αν δεν βρείτε κανένα αντίστοιχο λογότυπο.",
       "remaining": "Απομένουν για σχολιασμό",
       "select_all": "Επιλογή όλων",
       "unselect_all": "Αποεπιλογή όλων"

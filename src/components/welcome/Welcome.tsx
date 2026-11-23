@@ -19,6 +19,11 @@ import {
 
 type GetStepsProps = { t: TFunction; withSelector: boolean };
 
+// Steps without a target point at the app bar, at the top of the page.
+// The tour scrolls the target into view, and "body" is taller than the screen,
+// so pointing at it scrolled the page to its middle.
+const DEFAULT_SELECTOR = '[data-welcome-tour="app_bar"]';
+
 const getSteps = ({ t, withSelector }: GetStepsProps): StepType[] => {
   const steps: Array<readonly [string, string | undefined]> = [
     ["intro", undefined],
@@ -32,7 +37,9 @@ const getSteps = ({ t, withSelector }: GetStepsProps): StepType[] => {
 
   return steps.map(([page, target]) => ({
     selector:
-      target && withSelector ? `[data-welcome-tour="${target}"]` : "body",
+      target && withSelector
+        ? `[data-welcome-tour="${target}"]`
+        : DEFAULT_SELECTOR,
     position: "center",
     content: () => (
       <Box>

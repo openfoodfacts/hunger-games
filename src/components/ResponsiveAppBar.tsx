@@ -330,6 +330,7 @@ const ResponsiveAppBar = () => {
   return (
     <AppBar
       position="static"
+      data-welcome-tour="app_bar"
       sx={(appTheme) => ({
         backgroundColor: appTheme.palette.cafeCreme.main,
         color: appTheme.palette.cafeCreme.contrastText,
@@ -359,7 +360,6 @@ const ResponsiveAppBar = () => {
               aria-haspopup="true"
               onClick={(event) => setAnchorElNav(event.currentTarget)}
               color="inherit"
-              data-welcome-tour="games"
             >
               <MenuIcon />
             </IconButton>
