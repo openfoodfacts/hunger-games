@@ -343,10 +343,11 @@ const ResponsiveAppBar = () => {
           disableGutters
           sx={{ minHeight: { xs: 58, lg: 66 }, px: { xs: 0.5, lg: 0 } }}
         >
+          {/* The full menu needs about 1100px when logged out, so smaller screens use the menu button */}
           <Box
             sx={{
               flexGrow: 1,
-              display: { xs: "flex", md: "none" },
+              display: { xs: "flex", lg: "none" },
               alignItems: "center",
               maxWidth: "100%",
             }}
@@ -492,7 +493,7 @@ const ResponsiveAppBar = () => {
 
           <Box
             sx={{
-              display: { xs: "none", md: "flex" },
+              display: { xs: "none", lg: "flex" },
               alignItems: "center",
               width: "100%",
               justifyContent: "space-between",
