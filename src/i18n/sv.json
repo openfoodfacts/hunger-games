@@ -2,6 +2,7 @@
   "home": {
     "game_selector": {
       "title": "Vilket spel skulle du vilja spela?",
+      "external_link": "Extern länk",
       "cards": {
         "questions": {
           "title": "Frågor",
@@ -28,6 +29,12 @@
       "contribution_details": "Ta reda på varför ditt bidrag är viktigt"
     },
     "saved_filters": "Sparade filter",
+    "saved_filters_delete": "Ta bort sparat filter",
+    "saved_filters_delete_title": "Ta bort sparat filter?",
+    "saved_filters_delete_description": "Detta sparade filter kommer att tas bort från denna enhet.",
+    "saved_filters_delete_confirm": "Radera",
+    "saved_filters_pending": "{{count}} produkter väntar",
+    "saved_filters_pending_unknown": "Produkter som väntar",
     "contribution_modal": {
       "title": "Ditt bidrag är viktigt",
       "information": "Hunger Games är ett försök att utnyttja resultaten av vår OCR och artificiell intelligens. När du använder Hunger Games av Open Food Facts förbättrar du hela vår databas vilket hjälper samhället att göra bättre matval. Vi samlar dina kommentarer och använder dem för att göra Open Food Facts mer exakta och effektiva.",
@@ -35,6 +42,12 @@
     },
     "statistics": {
       "title": "{{userName}} statistik:",
+      "title_without_name": "Din statistik",
+      "empty_state": {
+        "title": "Inga bidrag än",
+        "description": "Din bidragsstatistik kommer att visas här när du börjar hjälpa till att förbättra Open Food Facts.",
+        "action": "Börja bidra"
+      },
       "editorCount": {
         "title": "Redaktör",
         "description": "Antal ändringar gjorda"
@@ -138,7 +151,12 @@
       "actions": {
         "edit": "Redigera filter",
         "cancel": "Annulera",
-        "apply": "Verkställ"
+        "apply": "Verkställ",
+        "share": "Dela"
+      },
+      "share": {
+        "title": "Hunger Games filtered questions",
+        "copied": "Länk kopierad"
       }
     },
     "other_questions": "Andra frågor",
@@ -207,6 +225,17 @@
     "view_crops_for_this_product": "Notera produktlogotyper"
   },
   "logos": {
+    "dashboard": {
+      "title": "Logopanel",
+      "description": "Utforska logokategorier och hjälp till att förbättra produktdata.",
+      "category": "Kategori",
+      "categories": "Kategorier",
+      "logo_count_one": "{{count}} logo",
+      "logo_count_other": "{{count}} loggor",
+      "more_info": "Mer info",
+      "questions": "Frågor",
+      "search": "Sök"
+    },
     "annotation": "Anteckning: ",
     "annotations": "Logotypannoteringar",
     "task_description": "Välj alla logotyper som är exakt samma och ge dem ett namn som \"sv:EU Ekologiskt\" och en typ som \"etikett\".",
@@ -251,6 +280,8 @@
       "title": "Sök på logotyp",
       "description": "Välj en logotyp du vill leta efter, och låt oss klara av dem allihop. För varje logotyp du noterar kommer vi att hämta dess grannar så att du kanske aldrig slutar att notera. (Tryck på Shift för att välja ett antal logotyper)",
       "ref_logos": "Referenslogotyper (logotypen redan noterad med detta värde)",
+      "annotation_count_one": "Redan {{formattedCount}} annotering. Du kan återkomma till den här logotypen om några dagar om du inte hittar några matchande logotyper.",
+      "annotation_count_other": "Redan {{formattedCount}} annoteringar. Du kan återkomma till den här logotypen om några dagar om du inte hittar några matchande logotyper.",
       "remaining": "Återstår att notera",
       "select_all": "Markera alla",
       "unselect_all": "Avmarkera alla"
