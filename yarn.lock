@@ -3490,14 +3490,14 @@ __metadata:
     eslint-plugin-react-refresh: "npm:^0.5.7"
     globals: "npm:^17.13.0"
     husky: "npm:^9.1.7"
-    i18next: "npm:^26.4.2"
+    i18next: "npm:^27.2.2"
     i18next-resources-to-backend: "npm:^1.2.3"
     knip: "npm:^6.43.0"
     lodash-es: "npm:^4.18.1"
     prettier: "npm:^3.9.10"
     react: "npm:^19.3.1"
     react-dom: "npm:^19.3.1"
-    react-i18next: "npm:^17.0.15"
+    react-i18next: "npm:^18.0.3"
     react-map-interaction: "npm:^2.1.0"
     react-router: "npm:^8.5.1"
     react-zoom-pan-pinch: "npm:^4.2.0"
@@ -3528,15 +3528,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"i18next@npm:^26.4.2":
-  version: 26.4.2
-  resolution: "i18next@npm:26.4.2"
+"i18next@npm:^27.2.2":
+  version: 27.2.2
+  resolution: "i18next@npm:27.2.2"
   peerDependencies:
     typescript: ^5 || ^6 || ^7
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: 10/7cf060a81682a63d0900c584b03a25557da88afcefebca613ca24c2a1af1322cdf606ba3dffa2d3900b3cf0fa6c3a945d89a0e50517d1b76ac5acb070ac76173
+  checksum: 10/367c2903f6fee4a50a1d5854629634c6c1a4e982f09a88fac77a66405e5ba90c9d62e637597458da203b8045be560f04ca5e3904b22e129e0802b08814ba2dbb
   languageName: node
   linkType: hard
 
@@ -4940,25 +4940,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-i18next@npm:^17.0.15":
-  version: 17.0.15
-  resolution: "react-i18next@npm:17.0.15"
+"react-i18next@npm:^18.0.3":
+  version: 18.0.3
+  resolution: "react-i18next@npm:18.0.3"
   dependencies:
-    "@babel/runtime": "npm:^7.29.7"
     html-parse-stringify: "npm:^4.0.1"
-    use-sync-external-store: "npm:^1.6.0"
   peerDependencies:
-    i18next: ">= 26.2.0"
-    react: ">= 16.8.0"
+    "@types/react": "*"
+    i18next: ">= 27.0.1"
+    react: ">= 18.0.0"
     typescript: ^5 || ^6 || ^7
   peerDependenciesMeta:
-    react-dom:
-      optional: true
-    react-native:
+    "@types/react":
       optional: true
     typescript:
       optional: true
-  checksum: 10/c600fd89b3421f75c8cf57cfc2afa8613479da21709ee354f2263a6ee8c04e7be29b43f183bdd2b06ffc461625c658a46f9d36fd082f736f4a28baabf61f5976
+  checksum: 10/94c6f99f194378f6c3a0cfa050647593b9e61655c60396e3ce8cdc0e078caf1769cac465b51aedaf8716e8dbf400ea0518fbc20edc912339a531b587ea4fdadb
   languageName: node
   linkType: hard
 
