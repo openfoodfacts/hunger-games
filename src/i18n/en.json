@@ -632,6 +632,7 @@
     "search_barcode": "Search barcode...",
     "question": "Is this product sold in {{country}}?",
     "question_hint": "Barcode starts with {{prefix}} (GS1 {{country}}), and {{country}} is not currently listed in countries where sold.",
+    "gs1_caveat_warning": "A GS1 prefix does not necessarily mean a product is sold in this country: some barcodes are pooled across countries by multinationals for a given brand, and national brands may use their barcodes for export-only products. A good hint is the language shown on the packaging, if it is not shared across countries (e.g. Czech). Please use your best judgment before answering Yes.",
     "unnamed_product": "Unnamed product",
     "barcode_label": "Barcode:",
     "lang_label": "Product lang",

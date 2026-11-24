@@ -10,6 +10,7 @@ import CircularProgress from "@mui/material/CircularProgress";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Link from "@mui/material/Link";
+import Alert from "@mui/material/Alert";
 import DoneIcon from "@mui/icons-material/Done";
 import CloseIcon from "@mui/icons-material/Close";
 import SkipNextIcon from "@mui/icons-material/SkipNext";
@@ -262,6 +263,15 @@ export default function Gs1ProductDisplay({
                 )}
               </Typography>
             </Box>
+
+            <Alert severity="warning" sx={{ borderRadius: 2 }}>
+              <Typography variant="body2">
+                {t(
+                  "gs1_country.gs1_caveat_warning",
+                  "A GS1 prefix does not necessarily mean a product is sold in this country: some barcodes are pooled across countries by multinationals for a given brand, and national brands may use their barcodes for export-only products. A good hint is the language shown on the packaging, if it is not shared across countries (e.g. Czech). Please use your best judgment before answering Yes.",
+                )}
+              </Typography>
+            </Alert>
 
             {/* Product Details */}
             <Stack spacing={1.5}>
