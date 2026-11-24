@@ -84,8 +84,8 @@
           "description": "Identify books (barcodes 978 & 979) to move them to Open Products Facts"
         },
         "gs1_country": {
-          "title": "GS1 Country Matcher",
-          "description": "Add the missing country where a product is sold based on its GS1 barcode prefix (e.g. 385 → Croatia)"
+          "title": "Passport Control",
+          "description": "Stamp products with their true country of sale based on their GS1 barcode prefix (e.g. 385 → Croatia)"
         }
       }
     },
@@ -243,7 +243,7 @@
     "games": "Games",
     "questions": "Questions",
     "books": "Books",
-    "gs1-country": "GS1 Country",
+    "gs1-country": "Passport Control",
     "green-score": "Green score",
     "brandinator": "Brandinator",
     "logos": "Logos",
@@ -619,9 +619,9 @@
     "toast_move_error": "Failed to update Open Food Facts category"
   },
   "gs1_country": {
-    "title": "GS1 Country Matcher",
-    "badge": "GS1 Prefix",
-    "subtitle": "Confirm if products with a country's GS1 barcode prefix are sold there (often mislabeled as US due to VPNs)",
+    "title": "Passport Control",
+    "badge": "GS1 Passport",
+    "subtitle": "Stamp products with their true country of sale using their GS1 barcode prefix (fixing VPN mismatches like US instead of Croatia)",
     "countries_added_session": "countries added",
     "shortcuts_title": "Keyboard Shortcuts",
     "prefix_label": "GS1 Prefix / Country",

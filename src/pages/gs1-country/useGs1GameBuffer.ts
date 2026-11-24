@@ -3,6 +3,12 @@ import { addCountryToProduct, fetchGs1Products } from "./gs1CountryService";
 import { DEFAULT_GS1_PREFIX, getGs1CountryByPrefix } from "./gs1Prefixes";
 import type { Gs1ActionHistory, Gs1Product, VpnFilterMode } from "./types";
 
+interface BufferState {
+  queryKey: string;
+  items: Gs1Product[];
+  hasMore: boolean;
+}
+
 export function useGs1GameBuffer(
   initialPrefix: string = DEFAULT_GS1_PREFIX,
   initialVpnFilter: VpnFilterMode = "all",
@@ -12,7 +18,14 @@ export function useGs1GameBuffer(
   const [vpnFilter, setVpnFilter] =
     React.useState<VpnFilterMode>(initialVpnFilter);
   const [codeSearch, setCodeSearch] = React.useState<string>(initialCode ?? "");
-  const [products, setProducts] = React.useState<Gs1Product[]>([]);
+
+  const activeQueryKey = `${prefix}|${vpnFilter}|${codeSearch}`;
+  const [bufferState, setBufferState] = React.useState<BufferState>({
+    queryKey: activeQueryKey,
+    items: [],
+    hasMore: true,
+  });
+
   const [isLoading, setIsLoading] = React.useState(true);
   const [isSubmitting, setIsSubmitting] = React.useState(false);
   const [error, setError] = React.useState<string | null>(null);
@@ -21,41 +34,67 @@ export function useGs1GameBuffer(
 
   const pageRef = React.useRef(1);
   const isFetchingRef = React.useRef(false);
+  const queryGenRef = React.useRef(0);
 
   const country = React.useMemo(() => getGs1CountryByPrefix(prefix), [prefix]);
+
+  // Expose products & hasMore only when they belong to the active query
+  const products = React.useMemo(
+    () => (bufferState.queryKey === activeQueryKey ? bufferState.items : []),
+    [bufferState, activeQueryKey],
+  );
+  const hasMore =
+    bufferState.queryKey === activeQueryKey ? bufferState.hasMore : true;
 
   const loadProducts = React.useCallback(
     async (
       targetPrefix: string,
       targetVpnFilter: VpnFilterMode,
       targetPage: number,
-      targetCode?: string,
-      append = false,
+      targetCode: string | undefined,
+      append: boolean,
+      generation: number,
     ) => {
       if (isFetchingRef.current) return;
       isFetchingRef.current = true;
       setIsLoading(true);
       setError(null);
 
+      const targetQueryKey = `${targetPrefix}|${targetVpnFilter}|${targetCode ?? ""}`;
+
       try {
-        const { products: newProducts, nextPage } = await fetchGs1Products({
+        const {
+          products: newProducts,
+          nextPage,
+          hasMore: moreAvailable,
+        } = await fetchGs1Products({
           prefix: targetPrefix,
           vpnFilter: targetVpnFilter,
           page: targetPage,
           code: targetCode,
         });
 
+        if (generation !== queryGenRef.current) return;
+
         pageRef.current = nextPage;
-        setProducts((prev) =>
-          append ? [...prev, ...newProducts] : newProducts,
-        );
+        setBufferState((prev) => ({
+          queryKey: targetQueryKey,
+          items:
+            append && prev.queryKey === targetQueryKey
+              ? [...prev.items, ...newProducts]
+              : newProducts,
+          hasMore: moreAvailable,
+        }));
       } catch (err) {
+        if (generation !== queryGenRef.current) return;
         console.error("Error loading GS1 products:", err);
         setError(
           "Failed to load products. Please check your connection or retry.",
         );
       } finally {
-        setIsLoading(false);
+        if (generation === queryGenRef.current) {
+          setIsLoading(false);
+        }
         isFetchingRef.current = false;
       }
     },
@@ -64,80 +103,86 @@ export function useGs1GameBuffer(
 
   // Initial load or when prefix / vpnFilter / codeSearch changes
   React.useEffect(() => {
-    let active = true;
+    const generation = queryGenRef.current + 1;
+    queryGenRef.current = generation;
     pageRef.current = 1;
+    isFetchingRef.current = false;
 
-    void Promise.resolve().then(async () => {
-      setIsLoading(true);
-      setError(null);
-      try {
-        const { products: newProducts, nextPage } = await fetchGs1Products({
-          prefix,
-          vpnFilter,
-          page: 1,
-          code: codeSearch,
-        });
-        if (active) {
-          pageRef.current = nextPage;
-          setProducts(newProducts);
-          setIsLoading(false);
-        }
-      } catch (err) {
-        if (active) {
-          console.error("Error loading GS1 products:", err);
-          setError(
-            "Failed to load products. Please check your connection or retry.",
-          );
-          setIsLoading(false);
-        }
-      }
+    void Promise.resolve().then(() => {
+      void loadProducts(prefix, vpnFilter, 1, codeSearch, false, generation);
     });
-
-    return () => {
-      active = false;
-    };
-  }, [prefix, vpnFilter, codeSearch]);
+  }, [prefix, vpnFilter, codeSearch, loadProducts]);
 
   // Automatic prefetch when buffer is low
   React.useEffect(() => {
     if (
       !codeSearch &&
       !isLoading &&
+      !error &&
+      hasMore &&
       products.length <= 2 &&
       products.length > 0
     ) {
       const nextPage = pageRef.current;
+      const generation = queryGenRef.current;
       void Promise.resolve().then(() => {
-        void loadProducts(prefix, vpnFilter, nextPage, undefined, true);
+        void loadProducts(
+          prefix,
+          vpnFilter,
+          nextPage,
+          undefined,
+          true,
+          generation,
+        );
       });
     }
-  }, [products.length, codeSearch, isLoading, prefix, vpnFilter, loadProducts]);
+  }, [
+    products.length,
+    codeSearch,
+    isLoading,
+    error,
+    hasMore,
+    prefix,
+    vpnFilter,
+    loadProducts,
+  ]);
 
   const currentProduct = products[0] ?? null;
 
   const confirmSoldInCountry = React.useCallback(async () => {
     if (!currentProduct) return;
+    const capturedGen = queryGenRef.current;
+    const capturedCode = currentProduct.code;
+    const capturedCountry = country;
+
     setIsSubmitting(true);
     try {
-      await addCountryToProduct(currentProduct, country);
+      await addCountryToProduct(currentProduct, capturedCountry);
 
       setSessionCount((c) => c + 1);
       setHistory((prev) => [
         {
-          code: currentProduct.code,
+          code: capturedCode,
           productName:
             currentProduct.product_name ||
             currentProduct.product_name_en ||
-            currentProduct.code,
-          countryName: country.name,
-          countryTag: country.countryTag,
+            capturedCode,
+          countryName: capturedCountry.name,
+          countryTag: capturedCountry.countryTag,
           action: "added",
           timestamp: Date.now(),
         },
         ...prev.slice(0, 29),
       ]);
 
-      setProducts((prev) => prev.slice(1));
+      setBufferState((prev) =>
+        queryGenRef.current === capturedGen
+          ? {
+              ...prev,
+              items: prev.items.filter((p) => p.code !== capturedCode),
+            }
+          : prev,
+      );
     } finally {
       setIsSubmitting(false);
     }
@@ -159,7 +204,10 @@ export function useGs1GameBuffer(
       },
       ...prev.slice(0, 29),
     ]);
-    setProducts((prev) => prev.slice(1));
+    setBufferState((prev) => ({
+      ...prev,
+      items: prev.items.slice(1),
+    }));
   }, [currentProduct, country]);
 
   const skipProduct = React.useCallback(() => {
@@ -178,7 +226,10 @@ export function useGs1GameBuffer(
       },
       ...prev.slice(0, 29),
     ]);
-    setProducts((prev) => prev.slice(1));
+    setBufferState((prev) => ({
+      ...prev,
+      items: prev.items.slice(1),
+    }));
   }, [currentProduct, country]);
 
   const changePrefix = React.useCallback((newPrefix: string) => {
@@ -195,10 +246,18 @@ export function useGs1GameBuffer(
     setCodeSearch(code.trim());
   }, []);
 
+  // Continues from saved cursor (pageRef.current) for both "Load more" and error retry
   const retry = React.useCallback(() => {
-    pageRef.current = 1;
-    void loadProducts(prefix, vpnFilter, 1, codeSearch, false);
-  }, [prefix, vpnFilter, codeSearch, loadProducts]);
+    const generation = queryGenRef.current;
+    void loadProducts(
+      prefix,
+      vpnFilter,
+      pageRef.current,
+      codeSearch,
+      products.length > 0,
+      generation,
+    );
+  }, [prefix, vpnFilter, codeSearch, products.length, loadProducts]);
 
   return {
     country,
@@ -206,6 +265,7 @@ export function useGs1GameBuffer(
     isLoading,
     isSubmitting,
     error,
+    hasMore,
     sessionCount,
     history,
     prefix,

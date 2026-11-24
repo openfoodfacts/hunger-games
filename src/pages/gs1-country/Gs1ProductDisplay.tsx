@@ -110,12 +110,17 @@ export default function Gs1ProductDisplay({
   // Global keyboard shortcuts
   React.useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.defaultPrevented) return;
+
       const target = e.target as HTMLElement | null;
       if (
         target &&
-        (target.tagName === "INPUT" ||
-          target.tagName === "TEXTAREA" ||
-          target.isContentEditable)
+        (target.isContentEditable ||
+          Boolean(
+            target.closest(
+              "input, textarea, select, button, a, [role='button'], [role='tab'], [role='menuitem'], [contenteditable='true']",
+            ),
+          ))
       ) {
         return;
       }

@@ -109,10 +109,10 @@ export default function Gs1GameHeader({
               sx={{ alignItems: "center", flexWrap: "wrap" }}
             >
               <Typography variant="h6" component="h1" sx={{ fontWeight: 800 }}>
-                {t("gs1_country.title", "GS1 Country Matcher")}
+                {t("gs1_country.title", "Passport Control")}
               </Typography>
               <Chip
-                label={t("gs1_country.badge", "GS1 Prefix")}
+                label={t("gs1_country.badge", "GS1 Passport")}
                 size="small"
                 color="primary"
                 variant="outlined"
@@ -122,7 +122,7 @@ export default function Gs1GameHeader({
             <Typography variant="body2" color="text.secondary">
               {t(
                 "gs1_country.subtitle",
-                "Confirm if products with a country's GS1 barcode prefix are sold there (often mislabeled as US due to VPNs)",
+                "Stamp products with their true country of sale using their GS1 barcode prefix (fixing VPN mismatches like US instead of Croatia)",
               )}
             </Typography>
           </Box>

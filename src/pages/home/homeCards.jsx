@@ -100,10 +100,10 @@ const cards = [
     id: "gs1_country",
     title: "home.game_selector.cards.gs1_country.title",
     desc: "home.game_selector.cards.gs1_country.description",
-    link: "/gs1-country",
+    link: "/passport",
     image: home_gs1_country,
     category: "featured",
-    badge: "GS1 Prefix",
+    badge: "GS1 Passport",
   },
 
   // QUESTION CHALLENGES BY TYPE

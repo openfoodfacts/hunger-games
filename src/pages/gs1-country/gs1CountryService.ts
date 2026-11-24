@@ -58,7 +58,12 @@ export async function fetchGs1Products({
   page?: number;
   pageSize?: number;
   code?: string;
-}): Promise<{ products: Gs1Product[]; count: number; nextPage: number }> {
+}): Promise<{
+  products: Gs1Product[];
+  count: number;
+  nextPage: number;
+  hasMore: boolean;
+}> {
   const country = getGs1CountryByPrefix(prefix);
 
   // Direct barcode lookup
@@ -73,15 +78,17 @@ export async function fetchGs1Products({
         products: [res.data.product],
         count: 1,
         nextPage: page + 1,
+        hasMore: false,
       };
     }
-    return { products: [], count: 0, nextPage: page + 1 };
+    return { products: [], count: 0, nextPage: page + 1, hasMore: false };
   }
 
   const facetPattern = getFacetCodePattern(country.prefix);
   const maxPagesToScan = vpnFilter === "us_only" ? 5 : 1;
   let currentPage = page;
   let totalCount = 0;
+  let hasMore = false;
   const collected: Gs1Product[] = [];
 
   for (let attempt = 0; attempt < maxPagesToScan; attempt++) {
@@ -109,9 +116,10 @@ export async function fetchGs1Products({
 
     collected.push(...filtered);
     currentPage += 1;
+    hasMore = rawProducts.length >= pageSize;
 
-    // Stop early if we found enough products or reached the end of results
-    if (collected.length > 0 || rawProducts.length < pageSize) {
+    // Stop early if we found products or reached the end of results
+    if (collected.length > 0 || !hasMore) {
       break;
     }
   }
@@ -123,7 +131,30 @@ export async function fetchGs1Products({
     products: collected,
     count: totalCount || collected.length,
     nextPage: currentPage,
+    hasMore,
   };
+}
+
+interface OffWriteResponse {
+  status?: number | string;
+  status_verbose?: string;
+  errors?: unknown[];
+}
+
+function isWriteSuccess(httpStatus: number, data?: OffWriteResponse): boolean {
+  if (httpStatus < 200 || httpStatus >= 300) {
+    return false;
+  }
+  if (!data) {
+    return true;
+  }
+  if (data.status === 0 || data.status === "0" || data.status === "failure") {
+    return false;
+  }
+  if (Array.isArray(data.errors) && data.errors.length > 0) {
+    return false;
+  }
+  return true;
 }
 
 /**
@@ -141,10 +172,11 @@ export async function addCountryToProduct(
 
   const comment = `Add ${country.name} based on GS1 prefix ${country.prefix} (Hunger Games)`;
   let success = false;
+  let lastErrorMessage = "";
 
   // 1. Try API V3 PATCH
   try {
-    const patchRes = await axios.patch(
+    const patchRes = await axios.patch<OffWriteResponse>(
       `${OFF_API_URL_V3}/product/${barcode}`,
       {
         product: {
@@ -154,8 +186,10 @@ export async function addCountryToProduct(
       },
       { withCredentials: true },
     );
-    if (patchRes.status >= 200 && patchRes.status < 300) {
+    if (isWriteSuccess(patchRes.status, patchRes.data)) {
       success = true;
+    } else if (patchRes.data?.status_verbose) {
+      lastErrorMessage = patchRes.data.status_verbose;
     }
   } catch (err) {
     console.warn("V3 PATCH error, falling back to product_jqm2.pl:", err);
@@ -168,7 +202,7 @@ export async function addCountryToProduct(
     formData.append("add_countries", country.countryTag);
     formData.append("comment", comment);
 
-    const postRes = await axios.post(
+    const postRes = await axios.post<OffWriteResponse>(
       `${OFF_URL}/cgi/product_jqm2.pl`,
       formData,
       {
@@ -178,12 +212,21 @@ export async function addCountryToProduct(
         withCredentials: true,
       },
     );
-    if (postRes.status >= 200 && postRes.status < 300) {
+    if (isWriteSuccess(postRes.status, postRes.data)) {
       success = true;
+    } else {
+      lastErrorMessage =
+        postRes.data?.status_verbose ||
+        lastErrorMessage ||
+        "Failed to update product country";
     }
   }
 
-  return { success };
+  if (!success) {
+    throw new Error(lastErrorMessage || "Failed to update product country");
+  }
+
+  return { success: true };
 }
 
 export function getGs1ExternalUrls(code: string, country: Gs1CountryConfig) {

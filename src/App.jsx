@@ -404,6 +404,16 @@ export default function App() {
                       }
                     />
                     <Route
+                      path="/passport"
+                      element={
+                        userState.isLoggedIn ? (
+                          <Gs1CountryPage />
+                        ) : (
+                          <ShouldLoggedinPage />
+                        )
+                      }
+                    />
+                    <Route
                       path="/gs1-country"
                       element={
                         userState.isLoggedIn ? (
