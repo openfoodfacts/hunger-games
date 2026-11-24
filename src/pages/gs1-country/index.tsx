@@ -18,7 +18,7 @@ import Gs1ProductDisplay from "./Gs1ProductDisplay";
 import Gs1History from "./Gs1History";
 import { useGs1GameBuffer } from "./useGs1GameBuffer";
 import { DEFAULT_GS1_PREFIX, getFacetCodePattern } from "./gs1Prefixes";
-import type { VpnFilterMode } from "./types";
+import type { CountryFilterMode } from "./types";
 
 type SearchParamsSetter = (
   update: (previous: URLSearchParams) => URLSearchParams,
@@ -29,13 +29,19 @@ const useTypedSearchParams = useSearchParams as unknown as () => [
   SearchParamsSetter,
 ];
 
+function parseCountryFilter(value: string | null): CountryFilterMode {
+  if (value === "other_only" || value === "none") {
+    return value;
+  }
+  return "all";
+}
+
 export default function Gs1CountryPage() {
   const { t } = useTranslation();
   const [searchParams, setSearchParams] = useTypedSearchParams();
 
   const initialPrefix = searchParams.get("prefix") || DEFAULT_GS1_PREFIX;
-  const initialVpnFilter: VpnFilterMode =
-    searchParams.get("vpn") === "us_only" ? "us_only" : "all";
+  const initialCountryFilter = parseCountryFilter(searchParams.get("filter"));
   const initialCode = searchParams.get("code") || undefined;
 
   const {
@@ -46,16 +52,16 @@ export default function Gs1CountryPage() {
     error,
     sessionCount,
     history,
-    vpnFilter,
+    countryFilter,
     codeSearch,
     changePrefix,
-    changeVpnFilter,
+    changeCountryFilter,
     searchBarcode,
     confirmSoldInCountry,
     rejectSoldInCountry,
     skipProduct,
     retry,
-  } = useGs1GameBuffer(initialPrefix, initialVpnFilter, initialCode);
+  } = useGs1GameBuffer(initialPrefix, initialCountryFilter, initialCode);
 
   const [toast, setToast] = React.useState<{
     message: string;
@@ -76,14 +82,14 @@ export default function Gs1CountryPage() {
     });
   };
 
-  const handleVpnFilterChange = (newFilter: VpnFilterMode) => {
-    changeVpnFilter(newFilter);
+  const handleCountryFilterChange = (newFilter: CountryFilterMode) => {
+    changeCountryFilter(newFilter);
     setSearchParams((prev) => {
       const next = new URLSearchParams(prev);
       if (newFilter === "all") {
-        next.delete("vpn");
+        next.delete("filter");
       } else {
-        next.set("vpn", newFilter);
+        next.set("filter", newFilter);
       }
       next.delete("code");
       return next;
@@ -139,10 +145,10 @@ export default function Gs1CountryPage() {
         <Gs1GameHeader
           country={country}
           sessionCount={sessionCount}
-          vpnFilter={vpnFilter}
+          countryFilter={countryFilter}
           codeSearch={codeSearch}
           onPrefixChange={handlePrefixChange}
-          onVpnFilterChange={handleVpnFilterChange}
+          onCountryFilterChange={handleCountryFilterChange}
           onSearchBarcode={handleSearchBarcode}
         />
 

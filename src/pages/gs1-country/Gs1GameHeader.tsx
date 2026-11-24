@@ -26,25 +26,25 @@ import ClearIcon from "@mui/icons-material/Clear";
 import PublicIcon from "@mui/icons-material/Public";
 import { useTranslation } from "react-i18next";
 import { GS1_COUNTRIES } from "./gs1Prefixes";
-import type { Gs1CountryConfig, VpnFilterMode } from "./types";
+import type { CountryFilterMode, Gs1CountryConfig } from "./types";
 
 interface Gs1GameHeaderProps {
   country: Gs1CountryConfig;
   sessionCount: number;
-  vpnFilter: VpnFilterMode;
+  countryFilter: CountryFilterMode;
   codeSearch: string;
   onPrefixChange: (prefix: string) => void;
-  onVpnFilterChange: (filter: VpnFilterMode) => void;
+  onCountryFilterChange: (filter: CountryFilterMode) => void;
   onSearchBarcode: (code: string) => void;
 }
 
 export default function Gs1GameHeader({
   country,
   sessionCount,
-  vpnFilter,
+  countryFilter,
   codeSearch,
   onPrefixChange,
-  onVpnFilterChange,
+  onCountryFilterChange,
   onSearchBarcode,
 }: Gs1GameHeaderProps) {
   const { t } = useTranslation();
@@ -122,7 +122,7 @@ export default function Gs1GameHeader({
             <Typography variant="body2" color="text.secondary">
               {t(
                 "gs1_country.subtitle",
-                "Stamp products with their true country of sale using their GS1 barcode prefix (fixing VPN mismatches like US instead of Croatia)",
+                "Stamp products with their true country of sale using their GS1 barcode prefix (fixing missing or mismatched countries)",
               )}
             </Typography>
           </Box>
@@ -204,13 +204,13 @@ export default function Gs1GameHeader({
           />
 
           <ToggleButtonGroup
-            value={vpnFilter}
+            value={countryFilter}
             exclusive
             size="small"
-            onChange={(_, val: VpnFilterMode | null) => {
-              if (val) onVpnFilterChange(val);
+            onChange={(_, val: CountryFilterMode | null) => {
+              if (val) onCountryFilterChange(val);
             }}
-            aria-label={t("gs1_country.vpn_filter_label", "Country Filter")}
+            aria-label={t("gs1_country.country_filter_label", "Country Filter")}
           >
             <ToggleButton
               value="all"
@@ -221,10 +221,16 @@ export default function Gs1GameHeader({
               })}
             </ToggleButton>
             <ToggleButton
-              value="us_only"
+              value="other_only"
               sx={{ textTransform: "none", fontWeight: 700 }}
             >
-              🇺🇸 {t("gs1_country.filter_us", "US listed (VPN)")}
+              {t("gs1_country.filter_other", "Other country listed")}
+            </ToggleButton>
+            <ToggleButton
+              value="none"
+              sx={{ textTransform: "none", fontWeight: 700 }}
+            >
+              {t("gs1_country.filter_none", "No country listed")}
             </ToggleButton>
           </ToggleButtonGroup>
         </Stack>

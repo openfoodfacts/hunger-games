@@ -27,7 +27,7 @@ export interface Gs1Product {
   ingredients_text?: string;
 }
 
-export type VpnFilterMode = "all" | "us_only";
+export type CountryFilterMode = "all" | "other_only" | "none";
 
 export interface Gs1ActionHistory {
   code: string;

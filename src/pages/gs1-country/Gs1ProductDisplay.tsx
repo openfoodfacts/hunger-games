@@ -10,7 +10,6 @@ import CircularProgress from "@mui/material/CircularProgress";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Link from "@mui/material/Link";
-import Alert from "@mui/material/Alert";
 import DoneIcon from "@mui/icons-material/Done";
 import CloseIcon from "@mui/icons-material/Close";
 import SkipNextIcon from "@mui/icons-material/SkipNext";
@@ -21,11 +20,7 @@ import ImageNotSupportedOutlinedIcon from "@mui/icons-material/ImageNotSupported
 import { useTranslation } from "react-i18next";
 
 import ZoomableImage from "../../components/ZoomableImage";
-import {
-  getGs1ExternalUrls,
-  hasUnitedStates,
-  isOnlyUnitedStates,
-} from "./gs1CountryService";
+import { getGs1ExternalUrls } from "./gs1CountryService";
 import type { Gs1CountryConfig, Gs1Product } from "./types";
 import { getImagesUrls } from "../questions/utils";
 
@@ -103,8 +98,6 @@ export default function Gs1ProductDisplay({
     [product.code, country],
   );
 
-  const onlyUs = isOnlyUnitedStates(product);
-  const includesUs = hasUnitedStates(product);
   const prefixMatch = product.code.startsWith(country.prefix);
 
   // Global keyboard shortcuts
@@ -270,19 +263,6 @@ export default function Gs1ProductDisplay({
               </Typography>
             </Box>
 
-            {/* VPN / US highlight */}
-            {onlyUs && (
-              <Alert severity="info" icon={false} sx={{ borderRadius: 2 }}>
-                <Typography variant="body2" sx={{ fontWeight: 700 }}>
-                  🇺🇸{" "}
-                  {t(
-                    "gs1_country.only_us_badge",
-                    "Only United States is currently listed — strong VPN mismatch signal",
-                  )}
-                </Typography>
-              </Alert>
-            )}
-
             {/* Product Details */}
             <Stack spacing={1.5}>
               <Typography variant="h5" sx={{ fontWeight: 800 }}>
@@ -378,11 +358,6 @@ export default function Gs1ProductDisplay({
                         key={tag}
                         size="small"
                         label={formatCountryTag(tag)}
-                        color={
-                          tag === "en:united-states" && includesUs
-                            ? "warning"
-                            : "default"
-                        }
                         variant="outlined"
                         sx={{ textTransform: "capitalize", fontWeight: 600 }}
                       />

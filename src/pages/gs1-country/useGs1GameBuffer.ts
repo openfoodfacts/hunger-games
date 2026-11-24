@@ -1,7 +1,7 @@
 import * as React from "react";
 import { addCountryToProduct, fetchGs1Products } from "./gs1CountryService";
 import { DEFAULT_GS1_PREFIX, getGs1CountryByPrefix } from "./gs1Prefixes";
-import type { Gs1ActionHistory, Gs1Product, VpnFilterMode } from "./types";
+import type { CountryFilterMode, Gs1ActionHistory, Gs1Product } from "./types";
 
 interface BufferState {
   queryKey: string;
@@ -11,15 +11,15 @@ interface BufferState {
 
 export function useGs1GameBuffer(
   initialPrefix: string = DEFAULT_GS1_PREFIX,
-  initialVpnFilter: VpnFilterMode = "all",
+  initialCountryFilter: CountryFilterMode = "all",
   initialCode?: string,
 ) {
   const [prefix, setPrefix] = React.useState<string>(initialPrefix);
-  const [vpnFilter, setVpnFilter] =
-    React.useState<VpnFilterMode>(initialVpnFilter);
+  const [countryFilter, setCountryFilter] =
+    React.useState<CountryFilterMode>(initialCountryFilter);
   const [codeSearch, setCodeSearch] = React.useState<string>(initialCode ?? "");
 
-  const activeQueryKey = `${prefix}|${vpnFilter}|${codeSearch}`;
+  const activeQueryKey = `${prefix}|${countryFilter}|${codeSearch}`;
   const [bufferState, setBufferState] = React.useState<BufferState>({
     queryKey: activeQueryKey,
     items: [],
@@ -49,7 +49,7 @@ export function useGs1GameBuffer(
   const loadProducts = React.useCallback(
     async (
       targetPrefix: string,
-      targetVpnFilter: VpnFilterMode,
+      targetCountryFilter: CountryFilterMode,
       targetPage: number,
       targetCode: string | undefined,
       append: boolean,
@@ -60,7 +60,7 @@ export function useGs1GameBuffer(
       setIsLoading(true);
       setError(null);
 
-      const targetQueryKey = `${targetPrefix}|${targetVpnFilter}|${targetCode ?? ""}`;
+      const targetQueryKey = `${targetPrefix}|${targetCountryFilter}|${targetCode ?? ""}`;
 
       try {
         const {
@@ -69,7 +69,7 @@ export function useGs1GameBuffer(
           hasMore: moreAvailable,
         } = await fetchGs1Products({
           prefix: targetPrefix,
-          vpnFilter: targetVpnFilter,
+          countryFilter: targetCountryFilter,
           page: targetPage,
           code: targetCode,
         });
@@ -101,7 +101,7 @@ export function useGs1GameBuffer(
     [],
   );
 
-  // Initial load or when prefix / vpnFilter / codeSearch changes
+  // Initial load or when prefix / countryFilter / codeSearch changes
   React.useEffect(() => {
     const generation = queryGenRef.current + 1;
     queryGenRef.current = generation;
@@ -109,9 +109,16 @@ export function useGs1GameBuffer(
     isFetchingRef.current = false;
 
     void Promise.resolve().then(() => {
-      void loadProducts(prefix, vpnFilter, 1, codeSearch, false, generation);
+      void loadProducts(
+        prefix,
+        countryFilter,
+        1,
+        codeSearch,
+        false,
+        generation,
+      );
     });
-  }, [prefix, vpnFilter, codeSearch, loadProducts]);
+  }, [prefix, countryFilter, codeSearch, loadProducts]);
 
   // Automatic prefetch when buffer is low
   React.useEffect(() => {
@@ -128,7 +135,7 @@ export function useGs1GameBuffer(
       void Promise.resolve().then(() => {
         void loadProducts(
           prefix,
-          vpnFilter,
+          countryFilter,
           nextPage,
           undefined,
           true,
@@ -143,7 +150,7 @@ export function useGs1GameBuffer(
     error,
     hasMore,
     prefix,
-    vpnFilter,
+    countryFilter,
     loadProducts,
   ]);
 
@@ -237,10 +244,13 @@ export function useGs1GameBuffer(
     setCodeSearch("");
   }, []);
 
-  const changeVpnFilter = React.useCallback((newFilter: VpnFilterMode) => {
-    setVpnFilter(newFilter);
-    setCodeSearch("");
-  }, []);
+  const changeCountryFilter = React.useCallback(
+    (newFilter: CountryFilterMode) => {
+      setCountryFilter(newFilter);
+      setCodeSearch("");
+    },
+    [],
+  );
 
   const searchBarcode = React.useCallback((code: string) => {
     setCodeSearch(code.trim());
@@ -251,13 +261,13 @@ export function useGs1GameBuffer(
     const generation = queryGenRef.current;
     void loadProducts(
       prefix,
-      vpnFilter,
+      countryFilter,
       pageRef.current,
       codeSearch,
       products.length > 0,
       generation,
     );
-  }, [prefix, vpnFilter, codeSearch, products.length, loadProducts]);
+  }, [prefix, countryFilter, codeSearch, products.length, loadProducts]);
 
   return {
     country,
@@ -269,10 +279,10 @@ export function useGs1GameBuffer(
     sessionCount,
     history,
     prefix,
-    vpnFilter,
+    countryFilter,
     codeSearch,
     changePrefix,
-    changeVpnFilter,
+    changeCountryFilter,
     searchBarcode,
     confirmSoldInCountry,
     rejectSoldInCountry,

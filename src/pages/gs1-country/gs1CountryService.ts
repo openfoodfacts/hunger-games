@@ -1,7 +1,7 @@
 import axios from "axios";
 import { OFF_URL, OFF_API_URL, OFF_API_URL_V3 } from "../../const";
 import { getFacetCodePattern, getGs1CountryByPrefix } from "./gs1Prefixes";
-import type { Gs1CountryConfig, Gs1Product, VpnFilterMode } from "./types";
+import type { CountryFilterMode, Gs1CountryConfig, Gs1Product } from "./types";
 
 const PRODUCT_FIELDS = [
   "code",
@@ -21,24 +21,17 @@ const PRODUCT_FIELDS = [
   "ingredients_text",
 ].join(",");
 
-export function isOnlyUnitedStates(product: Gs1Product): boolean {
+export function hasNoCountries(product: Gs1Product): boolean {
   return (
-    Array.isArray(product.countries_tags) &&
-    product.countries_tags.length === 1 &&
-    product.countries_tags[0] === "en:united-states"
+    !Array.isArray(product.countries_tags) ||
+    product.countries_tags.length === 0
   );
 }
 
-export function hasUnitedStates(product: Gs1Product): boolean {
-  return (
-    Array.isArray(product.countries_tags) &&
-    product.countries_tags.includes("en:united-states")
-  );
-}
-
-function getUsPriorityScore(product: Gs1Product): number {
-  if (isOnlyUnitedStates(product)) return 0;
-  if (hasUnitedStates(product)) return 1;
+function getMismatchPriorityScore(product: Gs1Product): number {
+  const count = product.countries_tags?.length ?? 0;
+  if (count === 1) return 0; // Single other country listed (e.g. VPN mismatch)
+  if (count === 0) return 1; // No country listed at all
   return 2;
 }
 
@@ -48,13 +41,13 @@ function getUsPriorityScore(product: Gs1Product): number {
  */
 export async function fetchGs1Products({
   prefix,
-  vpnFilter = "all",
+  countryFilter = "all",
   page = 1,
   pageSize = 24,
   code,
 }: {
   prefix: string;
-  vpnFilter?: VpnFilterMode;
+  countryFilter?: CountryFilterMode;
   page?: number;
   pageSize?: number;
   code?: string;
@@ -85,7 +78,7 @@ export async function fetchGs1Products({
   }
 
   const facetPattern = getFacetCodePattern(country.prefix);
-  const maxPagesToScan = vpnFilter === "us_only" ? 5 : 1;
+  const maxPagesToScan = countryFilter === "all" ? 1 : 5;
   let currentPage = page;
   let totalCount = 0;
   let hasMore = false;
@@ -108,8 +101,11 @@ export async function fetchGs1Products({
       );
       if (alreadyHasCountry) return false;
 
-      if (vpnFilter === "us_only") {
-        return hasUnitedStates(p);
+      if (countryFilter === "none") {
+        return hasNoCountries(p);
+      }
+      if (countryFilter === "other_only") {
+        return !hasNoCountries(p);
       }
       return true;
     });
@@ -124,8 +120,9 @@ export async function fetchGs1Products({
     }
   }
 
-  // Prioritize US-only (likely VPN) products first
-  collected.sort((a, b) => getUsPriorityScore(a) - getUsPriorityScore(b));
+  collected.sort(
+    (a, b) => getMismatchPriorityScore(a) - getMismatchPriorityScore(b),
+  );
 
   return {
     products: collected,
