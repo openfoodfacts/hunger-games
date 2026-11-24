@@ -82,6 +82,10 @@
         "move_books": {
           "title": "Move Books to Open Products Facts",
           "description": "Identify books (barcodes 978 & 979) to move them to Open Products Facts"
+        },
+        "gs1_country": {
+          "title": "GS1 Country Matcher",
+          "description": "Add the missing country where a product is sold based on its GS1 barcode prefix (e.g. 385 → Croatia)"
         }
       }
     },
@@ -239,6 +243,7 @@
     "games": "Games",
     "questions": "Questions",
     "books": "Books",
+    "gs1-country": "GS1 Country",
     "green-score": "Green score",
     "brandinator": "Brandinator",
     "logos": "Logos",
@@ -612,5 +617,46 @@
     "load_more": "Load more products",
     "toast_moved_success": "Book moved to Open Products Facts! (Category added)",
     "toast_move_error": "Failed to update Open Food Facts category"
+  },
+  "gs1_country": {
+    "title": "GS1 Country Matcher",
+    "badge": "GS1 Prefix",
+    "subtitle": "Confirm if products with a country's GS1 barcode prefix are sold there (often mislabeled as US due to VPNs)",
+    "countries_added_session": "countries added",
+    "shortcuts_title": "Keyboard Shortcuts",
+    "prefix_label": "GS1 Prefix / Country",
+    "vpn_filter_label": "Country Filter",
+    "filter_all": "All missing {{country}}",
+    "filter_us": "US listed (VPN)",
+    "search_barcode": "Search barcode...",
+    "question": "Is this product sold in {{country}}?",
+    "question_hint": "Barcode starts with {{prefix}} (GS1 {{country}}), and {{country}} is not currently listed in countries where sold.",
+    "only_us_badge": "Only United States is currently listed — strong VPN mismatch signal",
+    "unnamed_product": "Unnamed product",
+    "barcode_label": "Barcode:",
+    "lang_label": "Product lang",
+    "brands_label": "Brands:",
+    "quantity_label": "Quantity:",
+    "categories_label": "Categories:",
+    "current_countries": "Currently listed countries:",
+    "no_countries_listed": "None listed",
+    "view_on_off": "View on Open Food Facts",
+    "edit_on_off": "Edit on OFF",
+    "view_facet": "Facet list",
+    "front_image": "Front",
+    "no_image": "No product image available",
+    "yes_sold_button": "Yes, sold in {{country}}",
+    "no_sold_button": "No, not sold in {{country}}",
+    "recent_activity": "Recent Session Activity",
+    "status_added": "Added {{country}}",
+    "status_rejected": "Not sold in {{country}}",
+    "status_skipped": "Skipped",
+    "loading_products": "Loading products from Open Food Facts...",
+    "loading_facet_desc": "Checking facet codes {{pattern}} without {{country}}",
+    "no_products_left": "No more products in this batch!",
+    "congrats_desc": "You have reviewed all available products in this queue. Try reloading, switching the filter, or picking another GS1 prefix.",
+    "load_more": "Load more products",
+    "toast_added_success": "Added {{country}} to product!",
+    "toast_added_error": "Failed to update product country on Open Food Facts"
   }
 }

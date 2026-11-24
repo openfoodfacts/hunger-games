@@ -54,6 +54,7 @@ const PAGE_ICONS: Record<string, typeof SearchIcon> = {
   nutrition: RestaurantOutlinedIcon,
   "ingredient-spellcheck": SpellcheckIcon,
   "ingredient-detection": FindInPageOutlinedIcon,
+  "gs1-country": PublicIcon,
   "logos/search": SearchIcon,
   "logos/product-search": Inventory2OutlinedIcon,
   "logos/deep-search": TravelExploreIcon,
@@ -80,6 +81,10 @@ const NAV_GROUPS: { id: string; pages: Page[] }[] = [
       {
         url: "ingredient-detection",
         translationKey: "home.game_selector.cards.ingredient_detection.title",
+      },
+      {
+        url: "gs1-country",
+        translationKey: "menu.gs1-country",
       },
     ],
   },
