@@ -33,7 +33,8 @@ export function useGs1GameBuffer(
   // Tracks products already confirmed, rejected, or skipped in this session
   const reviewedCodesRef = React.useRef<Set<string>>(new Set());
   // Confirmations remove products from the facet and shift later items into earlier pages
-  const confirmedSinceLastFetchRef = React.useRef(false);
+  const confirmationCountRef = React.useRef(0);
+  const acknowledgedConfirmationCountRef = React.useRef(0);
 
   const country = React.useMemo(() => getGs1CountryByPrefix(prefix), [prefix]);
 
@@ -60,7 +61,11 @@ export function useGs1GameBuffer(
       setError(null);
 
       const targetQueryKey = `${targetPrefix}|${targetCountryFilter}|${targetCode ?? ""}`;
-      const startPage = confirmedSinceLastFetchRef.current ? 1 : targetPage;
+      const capturedConfirmationCount = confirmationCountRef.current;
+      const startPage =
+        capturedConfirmationCount > acknowledgedConfirmationCountRef.current
+          ? 1
+          : targetPage;
 
       try {
         const {
@@ -77,7 +82,7 @@ export function useGs1GameBuffer(
 
         if (generation !== queryGenRef.current) return;
 
-        confirmedSinceLastFetchRef.current = false;
+        acknowledgedConfirmationCountRef.current = capturedConfirmationCount;
         pageRef.current = nextPage;
         setBufferState((prev) => {
           const existingItems =
@@ -113,7 +118,7 @@ export function useGs1GameBuffer(
     const generation = queryGenRef.current + 1;
     queryGenRef.current = generation;
     pageRef.current = 1;
-    confirmedSinceLastFetchRef.current = false;
+    acknowledgedConfirmationCountRef.current = confirmationCountRef.current;
     isFetchingRef.current = false;
 
     void Promise.resolve().then(() => {
@@ -175,7 +180,7 @@ export function useGs1GameBuffer(
       await addCountryToProduct(currentProduct, capturedCountry);
 
       reviewedCodesRef.current.add(capturedCode);
-      confirmedSinceLastFetchRef.current = true;
+      confirmationCountRef.current += 1;
       setSessionCount((c) => c + 1);
       setHistory((prev) => [
         {
