@@ -40,9 +40,9 @@ export default function Gs1CountryPage() {
   const { t } = useTranslation();
   const [searchParams, setSearchParams] = useTypedSearchParams();
 
-  const initialPrefix = searchParams.get("prefix") || DEFAULT_GS1_PREFIX;
-  const initialCountryFilter = parseCountryFilter(searchParams.get("filter"));
-  const initialCode = searchParams.get("code") || undefined;
+  const prefix = searchParams.get("prefix") || DEFAULT_GS1_PREFIX;
+  const countryFilter = parseCountryFilter(searchParams.get("filter"));
+  const codeSearch = searchParams.get("code") || "";
 
   const {
     country,
@@ -52,16 +52,11 @@ export default function Gs1CountryPage() {
     error,
     sessionCount,
     history,
-    countryFilter,
-    codeSearch,
-    changePrefix,
-    changeCountryFilter,
-    searchBarcode,
     confirmSoldInCountry,
     rejectSoldInCountry,
     skipProduct,
     retry,
-  } = useGs1GameBuffer(initialPrefix, initialCountryFilter, initialCode);
+  } = useGs1GameBuffer(prefix, countryFilter, codeSearch);
 
   const [toast, setToast] = React.useState<{
     message: string;
@@ -69,7 +64,6 @@ export default function Gs1CountryPage() {
   } | null>(null);
 
   const handlePrefixChange = (newPrefix: string) => {
-    changePrefix(newPrefix);
     setSearchParams((prev) => {
       const next = new URLSearchParams(prev);
       if (newPrefix === DEFAULT_GS1_PREFIX) {
@@ -83,7 +77,6 @@ export default function Gs1CountryPage() {
   };
 
   const handleCountryFilterChange = (newFilter: CountryFilterMode) => {
-    changeCountryFilter(newFilter);
     setSearchParams((prev) => {
       const next = new URLSearchParams(prev);
       if (newFilter === "all") {
@@ -97,11 +90,11 @@ export default function Gs1CountryPage() {
   };
 
   const handleSearchBarcode = (code: string) => {
-    searchBarcode(code);
+    const trimmed = code.trim();
     setSearchParams((prev) => {
       const next = new URLSearchParams(prev);
-      if (code) {
-        next.set("code", code);
+      if (trimmed) {
+        next.set("code", trimmed);
       } else {
         next.delete("code");
       }
@@ -197,7 +190,7 @@ export default function Gs1CountryPage() {
           </Paper>
         )}
 
-        {!isLoading && currentProduct && (
+        {currentProduct && (
           <Gs1ProductDisplay
             key={currentProduct.code}
             product={currentProduct}

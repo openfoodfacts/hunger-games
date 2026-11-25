@@ -1,6 +1,6 @@
 import * as React from "react";
 import { addCountryToProduct, fetchGs1Products } from "./gs1CountryService";
-import { DEFAULT_GS1_PREFIX, getGs1CountryByPrefix } from "./gs1Prefixes";
+import { getGs1CountryByPrefix } from "./gs1Prefixes";
 import type { CountryFilterMode, Gs1ActionHistory, Gs1Product } from "./types";
 
 interface BufferState {
@@ -10,15 +10,10 @@ interface BufferState {
 }
 
 export function useGs1GameBuffer(
-  initialPrefix: string = DEFAULT_GS1_PREFIX,
-  initialCountryFilter: CountryFilterMode = "all",
-  initialCode?: string,
+  prefix: string,
+  countryFilter: CountryFilterMode,
+  codeSearch: string,
 ) {
-  const [prefix, setPrefix] = React.useState<string>(initialPrefix);
-  const [countryFilter, setCountryFilter] =
-    React.useState<CountryFilterMode>(initialCountryFilter);
-  const [codeSearch, setCodeSearch] = React.useState<string>(initialCode ?? "");
-
   const activeQueryKey = `${prefix}|${countryFilter}|${codeSearch}`;
   const [bufferState, setBufferState] = React.useState<BufferState>({
     queryKey: activeQueryKey,
@@ -35,6 +30,10 @@ export function useGs1GameBuffer(
   const pageRef = React.useRef(1);
   const isFetchingRef = React.useRef(false);
   const queryGenRef = React.useRef(0);
+  // Tracks products already confirmed, rejected, or skipped in this session
+  const reviewedCodesRef = React.useRef<Set<string>>(new Set());
+  // Confirmations remove products from the facet and shift later items into earlier pages
+  const confirmedSinceLastFetchRef = React.useRef(false);
 
   const country = React.useMemo(() => getGs1CountryByPrefix(prefix), [prefix]);
 
@@ -61,6 +60,7 @@ export function useGs1GameBuffer(
       setError(null);
 
       const targetQueryKey = `${targetPrefix}|${targetCountryFilter}|${targetCode ?? ""}`;
+      const startPage = confirmedSinceLastFetchRef.current ? 1 : targetPage;
 
       try {
         const {
@@ -70,21 +70,28 @@ export function useGs1GameBuffer(
         } = await fetchGs1Products({
           prefix: targetPrefix,
           countryFilter: targetCountryFilter,
-          page: targetPage,
+          page: startPage,
           code: targetCode,
+          excludedCodes: reviewedCodesRef.current,
         });
 
         if (generation !== queryGenRef.current) return;
 
+        confirmedSinceLastFetchRef.current = false;
         pageRef.current = nextPage;
-        setBufferState((prev) => ({
-          queryKey: targetQueryKey,
-          items:
-            append && prev.queryKey === targetQueryKey
-              ? [...prev.items, ...newProducts]
-              : newProducts,
-          hasMore: moreAvailable,
-        }));
+        setBufferState((prev) => {
+          const existingItems =
+            append && prev.queryKey === targetQueryKey ? prev.items : [];
+          const existingCodes = new Set(existingItems.map((p) => p.code));
+          const uniqueNew = newProducts.filter(
+            (p) => !existingCodes.has(p.code),
+          );
+          return {
+            queryKey: targetQueryKey,
+            items: [...existingItems, ...uniqueNew],
+            hasMore: moreAvailable,
+          };
+        });
       } catch (err) {
         if (generation !== queryGenRef.current) return;
         console.error("Error loading GS1 products:", err);
@@ -101,11 +108,12 @@ export function useGs1GameBuffer(
     [],
   );
 
-  // Initial load or when prefix / countryFilter / codeSearch changes
+  // Reload whenever URL-driven query criteria change
   React.useEffect(() => {
     const generation = queryGenRef.current + 1;
     queryGenRef.current = generation;
     pageRef.current = 1;
+    confirmedSinceLastFetchRef.current = false;
     isFetchingRef.current = false;
 
     void Promise.resolve().then(() => {
@@ -166,6 +174,8 @@ export function useGs1GameBuffer(
     try {
       await addCountryToProduct(currentProduct, capturedCountry);
 
+      reviewedCodesRef.current.add(capturedCode);
+      confirmedSinceLastFetchRef.current = true;
       setSessionCount((c) => c + 1);
       setHistory((prev) => [
         {
@@ -197,6 +207,7 @@ export function useGs1GameBuffer(
 
   const rejectSoldInCountry = React.useCallback(() => {
     if (!currentProduct) return;
+    reviewedCodesRef.current.add(currentProduct.code);
     setHistory((prev) => [
       {
         code: currentProduct.code,
@@ -219,6 +230,7 @@ export function useGs1GameBuffer(
 
   const skipProduct = React.useCallback(() => {
     if (!currentProduct) return;
+    reviewedCodesRef.current.add(currentProduct.code);
     setHistory((prev) => [
       {
         code: currentProduct.code,
@@ -238,23 +250,6 @@ export function useGs1GameBuffer(
       items: prev.items.slice(1),
     }));
   }, [currentProduct, country]);
-
-  const changePrefix = React.useCallback((newPrefix: string) => {
-    setPrefix(newPrefix);
-    setCodeSearch("");
-  }, []);
-
-  const changeCountryFilter = React.useCallback(
-    (newFilter: CountryFilterMode) => {
-      setCountryFilter(newFilter);
-      setCodeSearch("");
-    },
-    [],
-  );
-
-  const searchBarcode = React.useCallback((code: string) => {
-    setCodeSearch(code.trim());
-  }, []);
 
   // Continues from saved cursor (pageRef.current) for both "Load more" and error retry
   const retry = React.useCallback(() => {
@@ -278,12 +273,6 @@ export function useGs1GameBuffer(
     hasMore,
     sessionCount,
     history,
-    prefix,
-    countryFilter,
-    codeSearch,
-    changePrefix,
-    changeCountryFilter,
-    searchBarcode,
     confirmSoldInCountry,
     rejectSoldInCountry,
     skipProduct,

@@ -45,12 +45,14 @@ export async function fetchGs1Products({
   page = 1,
   pageSize = 24,
   code,
+  excludedCodes,
 }: {
   prefix: string;
   countryFilter?: CountryFilterMode;
   page?: number;
   pageSize?: number;
   code?: string;
+  excludedCodes?: Set<string>;
 }): Promise<{
   products: Gs1Product[];
   count: number;
@@ -78,7 +80,7 @@ export async function fetchGs1Products({
   }
 
   const facetPattern = getFacetCodePattern(country.prefix);
-  const maxPagesToScan = countryFilter === "all" ? 1 : 5;
+  const maxPagesToScan = 5;
   let currentPage = page;
   let totalCount = 0;
   let hasMore = false;
@@ -96,6 +98,8 @@ export async function fetchGs1Products({
 
     const filtered = rawProducts.filter((p) => {
       if (!p.code) return false;
+      if (excludedCodes?.has(p.code)) return false;
+
       const alreadyHasCountry = p.countries_tags?.some(
         (tag) => tag.toLowerCase() === country.countryTag.toLowerCase(),
       );
@@ -114,7 +118,7 @@ export async function fetchGs1Products({
     currentPage += 1;
     hasMore = rawProducts.length >= pageSize;
 
-    // Stop early if we found products or reached the end of results
+    // Stop early if we found unreviewed products or reached the end of results
     if (collected.length > 0 || !hasMore) {
       break;
     }
