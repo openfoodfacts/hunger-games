@@ -89,7 +89,9 @@ export function useGs1GameBuffer(
             append && prev.queryKey === targetQueryKey ? prev.items : [];
           const existingCodes = new Set(existingItems.map((p) => p.code));
           const uniqueNew = newProducts.filter(
-            (p) => !existingCodes.has(p.code),
+            (p) =>
+              !existingCodes.has(p.code) &&
+              !reviewedCodesRef.current.has(p.code),
           );
           return {
             queryKey: targetQueryKey,
