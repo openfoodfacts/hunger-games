@@ -1,4 +1,4 @@
-import { NUTRI_PATROL_URL } from "./const";
+import { NUTRI_PATROL_PRODUCT_URL, NUTRI_PATROL_URL } from "./const";
 
 export const addImageFlag = (opts: { barcode: string; imgid: number }) => {
   const { barcode, imgid } = opts;
@@ -18,8 +18,17 @@ export const addImageFlag = (opts: { barcode: string; imgid: number }) => {
   }
 };
 
+export const getProductFlagUrl = (barcode: string) =>
+  `${NUTRI_PATROL_PRODUCT_URL}?` +
+  new URLSearchParams({
+    barcode: barcode || "",
+    source: "web",
+    flavor: "off",
+  }).toString();
+
 const externalApi = {
   addImageFlag,
+  getProductFlagUrl,
 };
 
 export default externalApi;
