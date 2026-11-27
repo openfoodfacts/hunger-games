@@ -28,6 +28,7 @@ import home_open_beauty_facts from "../../assets/home_open_beauty_facts.svg";
 import home_open_pet_food_facts from "../../assets/home_open_pet_food_facts.svg";
 import home_open_products_facts from "../../assets/home_open_products_facts.svg";
 import home_books from "../../assets/home_books.svg";
+import home_gs1_country from "../../assets/home_gs1_country.svg";
 
 const cards = [
   // FEATURED / CORE ANNOTATION GAMES
@@ -94,6 +95,15 @@ const cards = [
     link: "/ingredient-detection",
     image: home_ingredients_crop,
     category: "featured",
+  },
+  {
+    id: "gs1_country",
+    title: "home.game_selector.cards.gs1_country.title",
+    desc: "home.game_selector.cards.gs1_country.description",
+    link: "/passport",
+    image: home_gs1_country,
+    category: "featured",
+    badge: "GS1 Passport",
   },
 
   // QUESTION CHALLENGES BY TYPE

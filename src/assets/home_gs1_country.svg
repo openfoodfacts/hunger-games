@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 160" fill="none">
+  <rect x="24" y="24" width="192" height="112" rx="14" fill="#FFFFFF" stroke="#DCC9C0" stroke-width="2"/>
+  <!-- Barcode -->
+  <g transform="translate(42, 46)">
+    <rect x="0" y="0" width="5" height="52" fill="#341100"/>
+    <rect x="8" y="0" width="2" height="52" fill="#341100"/>
+    <rect x="13" y="0" width="6" height="52" fill="#341100"/>
+    <rect x="22" y="0" width="3" height="52" fill="#341100"/>
+    <rect x="28" y="0" width="4" height="52" fill="#341100"/>
+    <rect x="36" y="0" width="2" height="52" fill="#85746C"/>
+    <rect x="41" y="0" width="5" height="52" fill="#85746C"/>
+    <rect x="49" y="0" width="3" height="52" fill="#85746C"/>
+    <rect x="55" y="0" width="6" height="52" fill="#85746C"/>
+    <rect x="64" y="0" width="2" height="52" fill="#85746C"/>
+    <rect x="69" y="0" width="4" height="52" fill="#85746C"/>
+    <rect x="76" y="0" width="3" height="52" fill="#85746C"/>
+    <rect x="82" y="0" width="5" height="52" fill="#85746C"/>
+    <!-- Highlighted prefix 385 -->
+    <rect x="-4" y="56" width="38" height="20" rx="5" fill="#8bc34a" fill-opacity="0.22" stroke="#8bc34a" stroke-width="1.5"/>
+    <text x="15" y="70" text-anchor="middle" font-family="monospace" font-size="13" font-weight="bold" fill="#2e7d32">385</text>
+    <text x="61" y="70" text-anchor="middle" font-family="monospace" font-size="11" fill="#85746C">xxxxxxxxxx</text>
+  </g>
+  <!-- Arrow -->
+  <path d="M138 78 H156 M151 72 L157 78 L151 84" stroke="#341100" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Globe / Country pin -->
+  <g transform="translate(164, 46)">
+    <circle cx="22" cy="30" r="22" fill="#EDE0DB" stroke="#341100" stroke-width="2"/>
+    <ellipse cx="22" cy="30" rx="10" ry="22" stroke="#341100" stroke-width="1.5"/>
+    <line x1="0" y1="30" x2="44" y2="30" stroke="#341100" stroke-width="1.5"/>
+    <line x1="4" y1="19" x2="40" y2="19" stroke="#341100" stroke-width="1.2"/>
+    <line x1="4" y1="41" x2="40" y2="41" stroke="#341100" stroke-width="1.2"/>
+    <circle cx="38" cy="14" r="9" fill="#8bc34a" stroke="#FFFFFF" stroke-width="2"/>
+    <path d="M34 14 L37 17 L42 11" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>
