@@ -173,7 +173,7 @@ export function useGs1GameBuffer(
 
   const confirmSoldInCountry = React.useCallback(async () => {
     if (!currentProduct) return;
-    const capturedGen = queryGenRef.current;
+    const submittedQueryKey = activeQueryKey;
     const capturedCode = currentProduct.code;
     const capturedCountry = country;
 
@@ -200,7 +200,7 @@ export function useGs1GameBuffer(
       ]);
 
       setBufferState((prev) =>
-        queryGenRef.current === capturedGen
+        prev.queryKey === submittedQueryKey
           ? {
               ...prev,
               items: prev.items.filter((p) => p.code !== capturedCode),
@@ -210,7 +210,7 @@ export function useGs1GameBuffer(
     } finally {
       setIsSubmitting(false);
     }
-  }, [currentProduct, country]);
+  }, [activeQueryKey, currentProduct, country]);
 
   const rejectSoldInCountry = React.useCallback(() => {
     if (!currentProduct) return;

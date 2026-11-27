@@ -135,6 +135,7 @@ export default function Gs1ProductDisplay({
   React.useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.defaultPrevented) return;
+      if (document.querySelector("[data-image-dialog-open]")) return;
 
       const target = e.target as HTMLElement | null;
       if (
@@ -142,7 +143,7 @@ export default function Gs1ProductDisplay({
         (target.isContentEditable ||
           Boolean(
             target.closest(
-              "input, textarea, select, button, a, [role='button'], [role='tab'], [role='menuitem'], [contenteditable='true']",
+              "input, textarea, select, button, a, [role='button'], [role='tab'], [role='menuitem'], [role='dialog'], [contenteditable='true']",
             ),
           ))
       ) {
@@ -247,11 +248,13 @@ export default function Gs1ProductDisplay({
                     src={currentSelectedImage.url}
                     srcFull={currentSelectedImage.urlFull}
                     zoomIn
-                    style={{
-                      width: "100%",
-                      height: "100%",
-                      maxHeight: "400px",
-                      objectFit: "contain",
+                    imageProps={{
+                      style: {
+                        width: "100%",
+                        height: "100%",
+                        maxHeight: "400px",
+                        objectFit: "contain",
+                      },
                     }}
                   />
                 ) : (

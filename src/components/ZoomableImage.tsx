@@ -83,6 +83,7 @@ const ZoomableImage = ({
       </div>
       <Dialog
         open={isOpen}
+        data-image-dialog-open={isOpen ? "" : undefined}
         onClose={() => {
           setIsOpen(false);
           setResolutionState({
