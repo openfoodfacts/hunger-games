@@ -1,7 +1,8 @@
 import * as React from "react";
 import { useInfiniteQuery } from "@tanstack/react-query";
+import axios from "axios";
 import off from "../../off";
-import { ROBOTOFF_API_URL } from "../../const";
+import { OFF_DOMAIN, ROBOTOFF_API_URL } from "../../const";
 
 const imagesToRead = [
   {
@@ -39,6 +40,7 @@ type IngredientApiProduct = {
 };
 
 export type IngredientSelectedImage = {
+  imageField: string;
   countryCode: string;
   fetchDataUrl: string;
   imageUrl: string;
@@ -90,6 +92,7 @@ const formatData = (product: IngredientApiProduct): IngredientProduct => {
       : "";
     return [
       {
+        imageField: key,
         countryCode,
         imageUrl: getImageUrl(baseImageUrl, imageData.imgid),
         fetchDataUrl: getIngredientExtractionUrl(
@@ -117,11 +120,15 @@ const formatData = (product: IngredientApiProduct): IngredientProduct => {
   };
 };
 
-export default function useData(countryCode: string) {
+export default function useData(
+  countryCode: string,
+  popularity: string = "top-90-percent-scans-2025",
+) {
+  const filterKey = `${countryCode}_${popularity}`;
   const [dismissed, setDismissed] = React.useState<{
-    countryCode: string;
+    filterKey: string;
     codes: Set<string>;
-  }>({ countryCode, codes: new Set() });
+  }>({ filterKey, codes: new Set() });
 
   const {
     data: queryData,
@@ -134,18 +141,32 @@ export default function useData(countryCode: string) {
     IngredientProduct[],
     Error,
     IngredientProduct[],
-    readonly ["ingredient-products", string],
+    readonly ["ingredient-products", string, string],
     number
   >({
-    queryKey: ["ingredient-products", countryCode],
+    queryKey: ["ingredient-products", countryCode, popularity],
     initialPageParam: 0,
     queryFn: async ({ pageParam, signal }) => {
+      const domain =
+        countryCode && countryCode !== "world" ? countryCode : "world";
+
+      if (popularity && popularity !== "all") {
+        const page = pageParam + 1;
+        const url = `https://${domain}.${OFF_DOMAIN}/facets/popularity/${encodeURIComponent(
+          popularity,
+        )}/states/Ingredients%20photo%20selected/states/Ingredients%20to%20be%20completed/${page}.json`;
+        const { data } = await axios.get<{
+          products?: IngredientApiProduct[];
+        }>(url, { signal });
+        return (data.products ?? []).map(formatData);
+      }
+
       const { data } = await off.searchProducts<IngredientApiProduct>({
         page: pageParam,
         pageSize: 25,
         filters: imagesToRead,
         fields: "all",
-        countryCode: countryCode || "world",
+        countryCode: domain,
         signal,
       });
       return (data.products ?? []).map(formatData);
@@ -156,9 +177,7 @@ export default function useData(countryCode: string) {
 
   const data = React.useMemo(() => {
     const dismissedCodes =
-      dismissed.countryCode === countryCode
-        ? dismissed.codes
-        : new Set<string>();
+      dismissed.filterKey === filterKey ? dismissed.codes : new Set<string>();
     const seenCodes = new Set<string>();
     return (queryData ?? []).filter((product) => {
       if (dismissedCodes.has(product.code) || seenCodes.has(product.code)) {
@@ -167,7 +186,7 @@ export default function useData(countryCode: string) {
       seenCodes.add(product.code);
       return true;
     });
-  }, [countryCode, dismissed, queryData]);
+  }, [filterKey, dismissed, queryData]);
 
   React.useEffect(() => {
     if (data.length < 5 && !isPending && !isFetchingNextPage && !error) {
@@ -180,12 +199,12 @@ export default function useData(countryCode: string) {
     if (!head) return;
     setDismissed((current) => {
       const codes =
-        current.countryCode === countryCode ? current.codes : new Set<string>();
+        current.filterKey === filterKey ? current.codes : new Set<string>();
       const nextCodes = new Set(codes);
       nextCodes.add(head.code);
-      return { countryCode, codes: nextCodes };
+      return { filterKey, codes: nextCodes };
     });
-  }, [countryCode, data]);
+  }, [filterKey, data]);
 
   return {
     data,
