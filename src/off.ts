@@ -265,6 +265,214 @@ class OffService {
       },
     );
   }
+
+  updateProductNutriments(editionParams: {
+    code: string;
+    energyKcal: string | number;
+    energyKj: string | number;
+    nutritionDataPer?: string;
+    energyKcalServing?: string | number;
+    energyKjServing?: string | number;
+    comment?: string;
+  }) {
+    const {
+      code,
+      energyKcal,
+      energyKj,
+      nutritionDataPer = "100g",
+      energyKcalServing,
+      energyKjServing,
+      comment = "Fix reversed energy in kcal and kJ (Reverso game)",
+    } = editionParams;
+
+    const params = new URLSearchParams();
+    params.append("code", code);
+    params.append("nutriment_energy-kcal", energyKcal.toString());
+    params.append("nutriment_energy-kcal_unit", "kcal");
+    params.append("nutriment_energy-kj", energyKj.toString());
+    params.append("nutriment_energy-kj_unit", "kJ");
+    params.append("nutrition_data_per", nutritionDataPer);
+    if (energyKcalServing !== undefined && energyKcalServing !== "") {
+      params.append(
+        "nutriment_energy-kcal_serving",
+        energyKcalServing.toString(),
+      );
+    }
+    if (energyKjServing !== undefined && energyKjServing !== "") {
+      params.append("nutriment_energy-kj_serving", energyKjServing.toString());
+    }
+    params.append("comment", comment);
+
+    return axios.post<{ status: number; status_verbose?: string }>(
+      `${OFF_URL}/cgi/product_jqm.pl`,
+      params,
+      {
+        withCredentials: true,
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      },
+    );
+  }
+
+  updateProductQuantity(editionParams: {
+    code: string;
+    quantity: string;
+    servingSize?: string;
+    comment?: string;
+  }) {
+    const {
+      code,
+      quantity,
+      servingSize,
+      comment = "Fix product quantity warning (Quantities game)",
+    } = editionParams;
+
+    const params = new URLSearchParams();
+    params.append("code", code);
+    params.append("quantity", quantity);
+    if (servingSize !== undefined && servingSize !== "") {
+      params.append("serving_size", servingSize);
+    }
+    params.append("comment", comment);
+
+    return axios.post<{ status: number; status_verbose?: string }>(
+      `${OFF_URL}/cgi/product_jqm.pl`,
+      params,
+      {
+        withCredentials: true,
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      },
+    );
+  }
+
+  getOcr(barcode: string, imgid: string | number) {
+    const formattedBarcode = this.getFormatedBarcode(barcode);
+    return axios.get<{
+      responses?: Array<{
+        fullTextAnnotation?: {
+          text?: string;
+          pages?: Array<{
+            property?: {
+              detectedLanguages?: Array<{
+                languageCode: string;
+                confidence: number;
+              }>;
+            };
+          }>;
+        };
+        textAnnotations?: Array<{
+          description?: string;
+          boundingPoly?: {
+            vertices?: Array<{
+              x?: number;
+              y?: number;
+            }>;
+          };
+        }>;
+      }>;
+    }>(`${OFF_IMAGE_URL}/products/${formattedBarcode}/${imgid}.json`);
+  }
+
+  updateProductLanguageData(editionParams: {
+    code: string;
+    lang?: string;
+    moveOldLangData?: {
+      oldLang: string;
+    };
+    fields?: Record<string, string>;
+    comment?: string;
+  }) {
+    const {
+      code,
+      lang,
+      moveOldLangData,
+      fields = {},
+      comment = "Fix language data quality (Polyglot game)",
+    } = editionParams;
+
+    const params = new URLSearchParams();
+    params.append("code", code);
+    if (lang) {
+      params.append("lang", lang);
+    }
+    if (moveOldLangData?.oldLang) {
+      params.append(
+        `move_${moveOldLangData.oldLang}_data_and_images_to_main_language`,
+        "1",
+      );
+    }
+    Object.entries(fields).forEach(([key, value]) => {
+      params.append(key, value);
+    });
+    params.append("comment", comment);
+
+    return axios.post<{ status: number; status_verbose?: string }>(
+      `${OFF_URL}/cgi/product_jqm.pl`,
+      params,
+      {
+        withCredentials: true,
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      },
+    );
+  }
+
+  setImageLanguage(editionParams: {
+    code: string;
+    imgid: string | number;
+    imageField: string; // e.g. "front_fr", "ingredients_fr", "packaging_fr"
+    angle?: number;
+    coordinates?: { x1: number; y1: number; x2: number; y2: number };
+    comment?: string;
+  }) {
+    const {
+      code,
+      imgid,
+      imageField,
+      angle = 0,
+      coordinates,
+      comment = "Set image language (Polyglot game)",
+    } = editionParams;
+
+    const params = new URLSearchParams();
+    params.append("code", code);
+    params.append("id", imageField);
+    params.append("imgid", imgid.toString());
+    params.append("angle", angle.toString());
+    if (coordinates) {
+      params.append("x1", coordinates.x1.toString());
+      params.append("y1", coordinates.y1.toString());
+      params.append("x2", coordinates.x2.toString());
+      params.append("y2", coordinates.y2.toString());
+    }
+    params.append("comment", comment);
+
+    return axios.post<{ status: number; status_verbose?: string }>(
+      `${OFF_URL}/cgi/product_image_crop.pl`,
+      params,
+      {
+        withCredentials: true,
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      },
+    );
+  }
+
+  unselectProductImage(editionParams: {
+    code: string;
+    id: string; // e.g. "front_en", "ingredients_de", "packaging_fr"
+  }) {
+    const { code, id } = editionParams;
+    const params = new URLSearchParams();
+    params.append("code", code);
+    params.append("id", id);
+
+    return axios.post<{ status: number | string; status_verbose?: string }>(
+      `${OFF_URL}/cgi/product_image_unselect.pl`,
+      params,
+      {
+        withCredentials: true,
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      },
+    );
+  }
 }
 
 const offService = new OffService();
