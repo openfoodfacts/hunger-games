@@ -135,7 +135,7 @@ export default function Gs1ProductDisplay({
   React.useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.defaultPrevented) return;
-      if (document.querySelector("[data-image-dialog-open]")) return;
+      if (document.querySelector("[role='dialog']")) return;
 
       const target = e.target as HTMLElement | null;
       if (
