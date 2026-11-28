@@ -23,7 +23,7 @@ import { useTranslation } from "react-i18next";
 import ZoomableImage from "../../components/ZoomableImage";
 import { getGs1ExternalUrls } from "./gs1CountryService";
 import type { Gs1CountryConfig, Gs1Product } from "./types";
-import { getImagesUrls } from "../questions/utils";
+import { getFullSizeImage, getImagesUrls } from "../questions/utils";
 
 interface Gs1ProductDisplayProps {
   product: Gs1Product;
@@ -48,51 +48,81 @@ export default function Gs1ProductDisplay({
 }: Gs1ProductDisplayProps) {
   const { t } = useTranslation();
 
-  const images = React.useMemo(() => {
+  // Selected images (Front, Ingredients, Nutrition, Packaging) with full-res URLs
+  const selectedImages = React.useMemo(() => {
     const list: Array<{ url: string; urlFull: string; label: string }> = [];
+    const seen = new Set<string>();
 
-    if (product.image_front_url) {
+    const addImage = (url: string | undefined, label: string) => {
+      if (!url || seen.has(url)) return;
+      seen.add(url);
       list.push({
-        url: product.image_front_url,
-        urlFull: product.image_front_url,
-        label: t("gs1_country.front_image", "Front"),
+        url,
+        urlFull: getFullSizeImage(url),
+        label,
       });
-    }
+    };
 
-    if (product.images) {
-      const urls = getImagesUrls(
-        product.images as Parameters<typeof getImagesUrls>[0],
-        product.code,
-      );
-      urls.forEach((u, i) => {
-        if (
-          !list.some(
-            (item) =>
-              item.url === u.imageUrl || item.urlFull === u.imageUrlFull,
-          )
-        ) {
-          list.push({
-            url: u.imageUrl,
-            urlFull: u.imageUrlFull,
-            label: `${t("image", "Image")} ${i + 1}`,
-          });
+    const categories: Array<{
+      key: "front" | "ingredients" | "nutrition" | "packaging";
+      title: string;
+      fallbackUrl?: string;
+    }> = [
+      {
+        key: "front",
+        title: t("gs1_country.front_image", "Front"),
+        fallbackUrl: product.image_front_url || product.image_url,
+      },
+      {
+        key: "ingredients",
+        title: t("gs1_country.ingredients_image", "Ingredients"),
+        fallbackUrl: product.image_ingredients_url,
+      },
+      {
+        key: "nutrition",
+        title: t("gs1_country.nutrition_image", "Nutrition"),
+        fallbackUrl: product.image_nutrition_url,
+      },
+      {
+        key: "packaging",
+        title: t("gs1_country.packaging_image", "Packaging"),
+        fallbackUrl: product.image_packaging_url,
+      },
+    ];
+
+    for (const cat of categories) {
+      const displayMap = product.selected_images?.[cat.key]?.display;
+      if (displayMap && Object.keys(displayMap).length > 0) {
+        for (const [lang, url] of Object.entries(displayMap)) {
+          addImage(url, `${cat.title} (${lang})`);
         }
-      });
-    }
-
-    if (list.length === 0 && product.image_url) {
-      list.push({
-        url: product.image_url,
-        urlFull: product.image_url,
-        label: t("gs1_country.front_image", "Front"),
-      });
+      } else {
+        addImage(cat.fallbackUrl, cat.title);
+      }
     }
 
     return list;
   }, [product, t]);
 
+  // All uploaded product images in reverse chronological order
+  const allImages = React.useMemo(() => {
+    if (!product.images) return [];
+    return getImagesUrls(
+      product.images as Parameters<typeof getImagesUrls>[0],
+      product.code,
+    ).reverse();
+  }, [product.images, product.code]);
+
   const [activeImageTab, setActiveImageTab] = React.useState(0);
-  const currentImage = images[activeImageTab] ?? null;
+  const currentSelectedImage =
+    selectedImages[activeImageTab] ??
+    (allImages[0]
+      ? {
+          url: allImages[0].imageUrl,
+          urlFull: allImages[0].imageUrlFull,
+          label: t("image", "Image"),
+        }
+      : null);
 
   const links = React.useMemo(
     () => getGs1ExternalUrls(product.code, country),
@@ -105,6 +135,7 @@ export default function Gs1ProductDisplay({
   React.useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.defaultPrevented) return;
+      if (document.querySelector("[role='dialog']")) return;
 
       const target = e.target as HTMLElement | null;
       if (
@@ -112,7 +143,7 @@ export default function Gs1ProductDisplay({
         (target.isContentEditable ||
           Boolean(
             target.closest(
-              "input, textarea, select, button, a, [role='button'], [role='tab'], [role='menuitem'], [contenteditable='true']",
+              "input, textarea, select, button, a, [role='button'], [role='tab'], [role='menuitem'], [role='dialog'], [contenteditable='true']",
             ),
           ))
       ) {
@@ -165,68 +196,139 @@ export default function Gs1ProductDisplay({
       }}
     >
       <Grid container spacing={3}>
-        {/* Left: Product Images */}
+        {/* Left: Selected Images & All Pictures Explorer */}
         <Grid size={{ xs: 12, md: 6, lg: 5 }}>
-          <Stack spacing={1.5}>
-            {images.length > 1 && (
-              <Tabs
-                value={activeImageTab}
-                onChange={(_, val: number) => setActiveImageTab(val)}
-                variant="scrollable"
-                scrollButtons="auto"
-                sx={{
-                  minHeight: 36,
-                  "& .MuiTab-root": {
+          <Stack spacing={2}>
+            <Box>
+              <Typography
+                variant="subtitle2"
+                sx={{ fontWeight: 800, mb: 0.75 }}
+              >
+                {t("gs1_country.selected_images", "Selected Images")}
+              </Typography>
+              {selectedImages.length > 1 && (
+                <Tabs
+                  value={activeImageTab}
+                  onChange={(_, val: number) => setActiveImageTab(val)}
+                  variant="scrollable"
+                  scrollButtons="auto"
+                  sx={{
+                    mb: 1,
                     minHeight: 36,
-                    py: 0.5,
-                    fontSize: "0.8rem",
-                  },
+                    "& .MuiTab-root": {
+                      minHeight: 36,
+                      py: 0.5,
+                      fontSize: "0.8rem",
+                    },
+                  }}
+                >
+                  {selectedImages.map((img) => (
+                    <Tab key={img.url} label={img.label} />
+                  ))}
+                </Tabs>
+              )}
+
+              <Box
+                sx={{
+                  width: "100%",
+                  minHeight: { xs: 280, md: 360 },
+                  maxHeight: { xs: 400, md: 440 },
+                  borderRadius: 2,
+                  overflow: "hidden",
+                  border: "1px solid",
+                  borderColor: "divider",
+                  bgcolor: "action.hover",
+                  display: "grid",
+                  placeItems: "center",
+                  position: "relative",
                 }}
               >
-                {images.map((img, idx) => (
-                  <Tab key={img.url} label={img.label} value={idx} />
-                ))}
-              </Tabs>
-            )}
-
-            <Box
-              sx={{
-                width: "100%",
-                minHeight: { xs: 320, md: 460 },
-                maxHeight: { xs: 450, md: 540 },
-                borderRadius: 2,
-                overflow: "hidden",
-                border: "1px solid",
-                borderColor: "divider",
-                bgcolor: "action.hover",
-                display: "grid",
-                placeItems: "center",
-                position: "relative",
-              }}
-            >
-              {currentImage ? (
-                <ZoomableImage
-                  src={currentImage.url}
-                  srcFull={currentImage.urlFull}
-                  zoomIn
-                  style={{
-                    width: "100%",
-                    height: "100%",
-                    maxHeight: "460px",
-                    objectFit: "contain",
-                  }}
-                />
-              ) : (
-                <Stack spacing={1} sx={{ alignItems: "center", p: 3 }}>
-                  <ImageNotSupportedOutlinedIcon
-                    sx={{ fontSize: 48, color: "text.disabled" }}
+                {currentSelectedImage ? (
+                  <ZoomableImage
+                    src={currentSelectedImage.url}
+                    srcFull={currentSelectedImage.urlFull}
+                    zoomIn
+                    imageProps={{
+                      style: {
+                        width: "100%",
+                        height: "100%",
+                        maxHeight: "400px",
+                        objectFit: "contain",
+                      },
+                    }}
                   />
-                  <Typography variant="body2" color="text.secondary">
-                    {t("gs1_country.no_image", "No product image available")}
-                  </Typography>
-                </Stack>
-              )}
+                ) : (
+                  <Stack spacing={1} sx={{ alignItems: "center", p: 3 }}>
+                    <ImageNotSupportedOutlinedIcon
+                      sx={{ fontSize: 48, color: "text.disabled" }}
+                    />
+                    <Typography variant="body2" color="text.secondary">
+                      {t("gs1_country.no_image", "No product image available")}
+                    </Typography>
+                  </Stack>
+                )}
+              </Box>
             </Box>
+
+            {allImages.length > 0 && (
+              <Box>
+                <Typography
+                  variant="subtitle2"
+                  sx={{ fontWeight: 800, mb: 0.75 }}
+                >
+                  {t(
+                    "gs1_country.all_pictures",
+                    "All Pictures ({{count}}) — click to view full resolution",
+                    { count: allImages.length },
+                  )}
+                </Typography>
+                <Box
+                  sx={{
+                    display: "grid",
+                    width: "100%",
+                    gap: 1,
+                    gridTemplateColumns: "repeat(auto-fill, minmax(96px, 1fr))",
+                    maxHeight: "18rem",
+                    overflowY: "auto",
+                    p: 1,
+                    borderRadius: 2,
+                    border: "1px solid",
+                    borderColor: "divider",
+                    bgcolor: "action.hover",
+                  }}
+                >
+                  {allImages.map((img) => (
+                    <Box
+                      key={img.imageUrl}
+                      sx={{
+                        position: "relative",
+                        width: "100%",
+                        aspectRatio: "1 / 1",
+                        overflow: "hidden",
+                        bgcolor: "background.paper",
+                        borderRadius: 1,
+                        border: "1px solid",
+                        borderColor: "divider",
+                      }}
+                    >
+                      <ZoomableImage
+                        src={img.imageUrl}
+                        srcFull={img.imageUrlFull}
+                        style={{ width: "100%", height: "100%" }}
+                        imageProps={{
+                          loading: "lazy",
+                          style: {
+                            width: "100%",
+                            height: "100%",
+                            objectFit: "contain",
+                          },
+                        }}
+                      />
+                    </Box>
+                  ))}
+                </Box>
+              </Box>
+            )}
           </Stack>
         </Grid>
 
